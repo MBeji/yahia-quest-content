@@ -1,0 +1,195 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: عكس فيثاغورس ومستطيل ثمّ إسقاط موازٍ ومعيّن وتعامد",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 19,
+  "questions": [
+    {
+      "prompt": "ABCD متوازي أضلاع حيث:\nAB = 12 , AC = 20 , BC = 16\nأيّ وصف للمثلّث ABC صحيح مع تعليله ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "قائم في A لأنّ AB² + AC² = BC²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "قائم في B لأنّ AB² + BC² = AC²"
+        },
+        {
+          "id": "c",
+          "text": "قائم في C لأنّ BC² + AC² = AB²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "ليس قائمًا لأنّ AB + BC لا يساوي AC",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الضلع الأطول هو [AC] = 20، فهو الوتر إن كان المثلّث قائمًا، ولذلك يقف وحده في طرف المساواة: AB² + BC² = 12² + 16² = 144 + 256 = 400 = 20² = AC². إذن بعكس نظرية فيثاغورس المثلّث ABC قائم في B ✓. أمّا المساواتان الأخريان فخاطئتان: AB² + AC² = 144 + 400 = 544 لا يساوي BC² = 256، و BC² + AC² = 256 + 400 = 656 لا يساوي AB² = 144. الخطأ الشائع: وضع وتر غير الأطول، أو جمع الأطوال دون تربيعها: 12 + 16 = 28 لا يساوي 20 مع أنّ المثلّث قائم فعلًا.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABCD متوازي أضلاع، و O نقطة تقاطع قطريه.\nنعلم أنّ AB = 12 و BC = 16 و AC = 20، وأنّ المثلّث ABC قائم في B.\nما الحجّة الكافية لإثبات أنّ ABCD مستطيل ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "متوازي أضلاع وقطراه متعامدان",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "b",
+          "text": "متوازي أضلاع وأضلاعه المتقابلة متقايسة",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "متوازي أضلاع ولقطريه المنتصف O نفسه",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "متوازي أضلاع وله زاوية قائمة في B"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ABCD متوازي أضلاع والمثلّث ABC قائم في B، فله زاوية قائمة في B، ومتوازي الأضلاع الذي له زاوية قائمة مستطيل ✓. طريق ثانٍ: O منتصف الوتر [AC]، فالموسّط المتعلّق بالوتر يعطي OB = AC/2 = 10، ومنه BD = 2 × OB = 20 = AC: القطران متقايسان. الخطأ الشائع: الاكتفاء بخاصيّة يحملها كلّ متوازي أضلاع، كتقايس الأضلاع المتقابلة أو المنتصف المشترك للقطرين، وهما لا تخصّان المستطيل. وتعامد القطرين خاصيّة المعيّن، وقطرا هذا المستطيل غير متعامدين لأنّ AB لا يساوي BC.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABCD مستطيل مركزه O و I منتصف [AB]، حيث:\nAB = 12 , BC = 16\nاحسب الطول OI بوحدة الطول نفسها. اكتب قيمته.\n<svg viewBox=\"0 0 215 232\"><title>رسم للوضعية المعطاة</title><path d=\"M47 196 L167 196 L167 36 L47 36 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M47 196 L167 196 L167 36 L47 36 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M47 196 L167 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M167 196 L47 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M107 116 L107 196\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"47\" cy=\"196\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"167\" cy=\"196\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"167\" cy=\"36\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"47\" cy=\"36\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"107\" cy=\"116\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"107\" cy=\"196\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"38\" y=\"212.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"176\" y=\"212.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"176\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"38\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"95\" y=\"115\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"120\" y=\"191.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"107\" y=\"228\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">12</text><text x=\"184\" y=\"121\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">16</text></g></svg>",
+      "answerKey": {
+        "value": 8
+      },
+      "explanation": "O منتصف [AC] لأنّ قطرَي المستطيل يتقاطعان في منتصفيهما، و I منتصف [AB]. في المثلّث ABC القائم في B، الرابط بين منتصفَي [AC] و [AB] يوازي الضلع الثالث (BC) وطوله نصفه: OI = BC/2 = 16/2 = 8 ✓. طريق ثانٍ: (OI) ∥ (BC) و (BC) ⊥ (AB)، فالمثلّث OIA قائم في I، و OA = AC/2 = 10 (بفيثاغورس AC = √(12² + 16²) = 20) و AI = AB/2 = 6، فـ OI² = OA² − AI² = 100 − 36 = 64، ومنه OI = 8 ✓. الخطأ الشائع: نسيان القسمة على 2 (OI = BC = 16)، أو أخذ نصف الضلع الخطأ (AB/2 = 6).",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "تذكير: مسقط نقطة M على المستقيم (AC) وفق منحى المستقيم (BD) هو نقطة تقاطع (AC) مع المستقيم الموازي لـ (BD) المارّ من M. ونقبل أنّ هذا الإسقاط يحافظ على المنتصف: مسقط منتصف قطعة هو منتصف مسقطَي طرفيها.\nABCD مستطيل مركزه O و I منتصف [AB]، حيث:\nAB = 12 , BC = 16 , AC = BD = 20\nالنقطة P هي مسقط I على (AC) وفق منحى (BD)، فما الطول AP ؟\n<svg viewBox=\"0 0 215 232\"><title>رسم للوضعية المعطاة</title><path d=\"M47 196 L167 196 L167 36 L47 36 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M47 196 L167 196 L167 36 L47 36 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M47 196 L167 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M167 196 L47 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"47\" cy=\"196\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"167\" cy=\"196\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"167\" cy=\"36\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"47\" cy=\"36\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"107\" cy=\"116\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"107\" cy=\"196\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"38\" y=\"212.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"176\" y=\"212.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"176\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"38\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"107\" y=\"137.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"120\" y=\"191.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AP = 3,6"
+        },
+        {
+          "id": "b",
+          "text": "AP = 5"
+        },
+        {
+          "id": "c",
+          "text": "AP = 6",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "AP = 10"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نبحث عن مسقطَي طرفَي [AB] بهذا الإسقاط. النقطة A على (AC) فمسقطها A نفسها. والنقطة B تقع على (BD)، فالمستقيم المارّ من B والموازي لـ (BD) هو (BD) نفسه، ويقطع (AC) في O: مسقط B هو O. بما أنّ الإسقاط يحافظ على المنتصف، فمسقط I منتصف [AB] هو منتصف [AO]: P منتصف [AO] و AP = AO/2 = 10/2 = 5 ✓ (AO = AC/2 = 10). تحقّق بالرابط بين المنتصفين: في المثلّث ABO النقطة I منتصف [AB] و (IP) ∥ (BO)، فـ P منتصف [AO]. الخطأ الشائع: الخلط بين الإسقاط الموازي والإسقاط العمودي. المسقط العمودي لـ I على (AC) هو النقطة F حيث AF = AI × AB/AC = 6 × 12/20 = 3,6، وليس P لأنّ (BD) غير عمودي على (AC). ومن ظنّ أنّ الإسقاط يحفظ الأطوال وجد AP = AI = 6، ومن جعل مسقط I مركز المستطيل وجد AP = AO = 10.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "ABCD مستطيل مركزه O و I منتصف [AB]، حيث:\nAB = 12 , BC = 16 , AC = BD = 20\nالنقطة P مسقط I على (AC) وفق منحى (BD)، أي نقطة تقاطع (AC) مع الموازي لـ (BD) المارّ من I؛ والنقطة Q مسقط I على (BD) وفق منحى (AC)، أي نقطة تقاطع (BD) مع الموازي لـ (AC) المارّ من I، كما في الرسم.\nنعلم أنّ P منتصف [AO] وأنّ Q منتصف [BO]، فاختر كلّ العبارات الصحيحة بخصوص الرباعي OPIQ.\n<svg viewBox=\"0 0 215 232\"><title>رسم للوضعية المعطاة</title><path d=\"M107 116 L77 156 L107 196 L137 156 Z\" fill=\"#0f6e56\" opacity=\"0.16\"/><path d=\"M47 196 L167 196 L167 36 L47 36 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M47 196 L167 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M167 196 L47 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M107 116 L77 156 L107 196 L137 156 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"47\" cy=\"196\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"167\" cy=\"196\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"167\" cy=\"36\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"47\" cy=\"36\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"107\" cy=\"116\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"77\" cy=\"156\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"137\" cy=\"156\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"107\" cy=\"196\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"38\" y=\"212.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"176\" y=\"212.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"176\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"38\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"120\" y=\"118\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"65\" y=\"157.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">P</text><text x=\"150\" y=\"157.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">Q</text><text x=\"107\" y=\"217.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "OPIQ متوازي أضلاع"
+        },
+        {
+          "id": "b",
+          "text": "OP = OQ"
+        },
+        {
+          "id": "c",
+          "text": "OPIQ معيّن"
+        },
+        {
+          "id": "d",
+          "text": "OPIQ مستطيل"
+        },
+        {
+          "id": "e",
+          "text": "(IP) ⊥ (AC)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "بحكم التعريف (IP) ∥ (BD) و (IQ) ∥ (AC)، وضلعا OPIQ الآخران محمولان على (AC) و (BD): P على (AC) و Q على (BD) و O على المستقيمين. أضلاعه المتقابلة إذن متوازية مثنى مثنى، فهو متوازي أضلاع ✓. ولأنّ قطرَي المستطيل متقايسان ويتقاطعان في منتصفيهما فإنّ OA = OB = 10، ومنه OP = OA/2 = 5 و OQ = OB/2 = 5، أي OP = OQ ✓؛ ضلعان متتاليان متقايسان في متوازي أضلاع، إذن OPIQ معيّن ✓. وهو ليس مستطيلًا لأنّ الزاوية POQ هي الزاوية AOB وليست قائمة: (AC) و (BD) غير متعامدين لأنّ AB لا يساوي BC. ومن السبب نفسه (IP) ∥ (BD) غير عمودي على (AC): مسقط I الموازي ليس مسقطه العمودي. الخطأ الشائع: الخلط بين الإسقاط الموازي والإسقاط العمودي، فيُظنّ أنّ (IP) عمودي على (AC) وأنّ OPIQ مستطيل.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "OPIQ معيّن قطراه [OI] و [PQ]، و (PQ) ∥ (AB) لأنّ P و Q منتصفا [AO] و [BO] في المثلّث AOB.\nأيّ حجّة تُثبت أنّ (OI) ⊥ (AB) ؟\n<svg viewBox=\"0 0 215 232\"><title>رسم للوضعية المعطاة</title><path d=\"M47 196 L167 196 L167 36 L47 36 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M107 116 L77 156 L107 196 L137 156 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M107 116 L107 196\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M77 156 L137 156\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"47\" cy=\"196\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"167\" cy=\"196\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"167\" cy=\"36\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"47\" cy=\"36\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"107\" cy=\"116\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"77\" cy=\"156\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"137\" cy=\"156\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"107\" cy=\"196\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"38\" y=\"212.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"176\" y=\"212.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"176\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"38\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"120\" y=\"118\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"65\" y=\"157.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">P</text><text x=\"150\" y=\"157.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">Q</text><text x=\"107\" y=\"217.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "قطرا المعيّن OPIQ متعامدان و (PQ) ∥ (AB)"
+        },
+        {
+          "id": "b",
+          "text": "قطرا المعيّن OPIQ لهما المنتصف نفسه و (PQ) ∥ (AB)",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "c",
+          "text": "(PQ) ∥ (AB) و I منتصف [AB]، وهذا يكفي وحده",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "المثلّث OAB قائم في O لأنّ OA = OB",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "قطرا المعيّن OPIQ متعامدان: (OI) ⊥ (PQ). ولأنّ (PQ) ∥ (AB) فإنّ كلّ مستقيم عمودي على (PQ) عمودي أيضًا على (AB)، إذن (OI) ⊥ (AB) ✓. الخطأ الشائع: الاستدلال بخاصيّة يشترك فيها كلّ متوازي أضلاع، كأن يكون للقطرين المنتصف نفسه، بدل خاصيّة المعيّن وهي تعامد القطرين؛ أو الظنّ أنّ التوازي ومنتصف [AB] يكفيان وحدهما؛ ومن جعل المثلّث OAB قائمًا في O لتساوي OA و OB خلط بين تصنيف المثلّث حسب أضلاعه وتصنيفه حسب زواياه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "OPIQ معيّن قطراه [OI] و [PQ]، والنقطتان P و Q منتصفا [AO] و [BO] في المثلّث AOB، حيث:\nOI = 8 , AB = 12\nاحسب مساحة المعيّن OPIQ بوحدة المساحة المناسبة. اكتب قيمتها.\n<svg viewBox=\"0 0 215 232\"><title>رسم للوضعية المعطاة</title><path d=\"M47 196 L167 196 L167 36 L47 36 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M107 116 L77 156 L107 196 L137 156 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M107 116 L107 196\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M77 156 L137 156\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"47\" cy=\"196\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"167\" cy=\"196\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"167\" cy=\"36\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"47\" cy=\"36\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"107\" cy=\"116\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"77\" cy=\"156\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"137\" cy=\"156\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"107\" cy=\"196\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"38\" y=\"212.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"176\" y=\"212.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"176\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"38\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"120\" y=\"118\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"65\" y=\"157.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">P</text><text x=\"150\" y=\"157.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">Q</text><text x=\"107\" y=\"217.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g></svg>",
+      "answerKey": {
+        "value": 24
+      },
+      "explanation": "P و Q منتصفا ضلعين [AO] و [BO] في المثلّث AOB، فبالرابط بين المنتصفين PQ = AB/2 = 6. مساحة المعيّن نصف جداء قطريه: (OI × PQ)/2 = (8 × 6)/2 = 24 ✓. تحقّق بالمثلّثات الأربعة القائمة التي يقسم القطران المعيّن إليها: نصفا القطرين 4 و 3 والضلع 5 لأنّ 3² + 4² = 5² = OP²، ومساحة كلّ مثلّث (4 × 3)/2 = 6، والمجموع 4 × 6 = 24. الخطأ الشائع: نسيان القسمة على 2 (8 × 6 = 48)، أو الخلط مع المحيط 4 × 5 = 20.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.quadrilateres"
+      ]
+    }
+  ]
+}

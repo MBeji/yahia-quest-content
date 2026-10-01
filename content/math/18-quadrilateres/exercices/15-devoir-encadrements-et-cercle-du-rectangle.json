@@ -1,0 +1,216 @@
+{
+  "title": "⭐⭐ تمرين موجّه: لوح مستطيل وأنبوب — حصر ونصف قطر وعدد ناطق",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "ABCD مستطيل مركزه O (نقطة تقاطع قطريه)، حيث AB = 8 و BC = 4. لماذا يكون OA = OB = OC = OD ؟\n<svg viewBox=\"0 0 300 250\"><title>رسم للوضعية المعطاة</title><path d=\"M54 77 L246 77 L246 173 L54 173 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><circle cx=\"150\" cy=\"125\" r=\"107.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><path d=\"M54 77 L246 77 L246 173 L54 173 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M54 77 L246 173\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M246 77 L54 173\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M63 77 L63 86 L54 86\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M246 86 L237 86 L237 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M237 173 L237 164 L246 164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M54 164 L63 164 L63 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"54\" cy=\"77\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"246\" cy=\"77\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"246\" cy=\"173\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"54\" cy=\"173\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"150\" y=\"116\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text><text x=\"42\" y=\"71\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"258\" y=\"71\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"258\" y=\"189\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"42\" y=\"189\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ قطري المستطيل متعامدان ويتقاطعان في منتصفيهما",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ أضلاع المستطيل المتقابلة متقايسة مثنى مثنى",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ O منتصف القطر [AC]، وهذا وحده يكفي",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ قطري المستطيل متقايسان ويتقاطعان في منتصفيهما"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المستطيل قطران متقايسان AC = BD يتقاطعان في منتصفيهما: O منتصف [AC] و [BD] معًا، فـ OA = OC = AC/2 و OB = OD = BD/2، ولأنّ AC = BD فإنّ OA = OB = OC = OD ✓. تقع الرؤوس الأربعة إذن على دائرة مركزها O ونصف قطرها OA. الخطأ الشائع: نسبة التعامد إلى قطرَي المستطيل (وهو خاصيّة المعيّن)، أو الاستدلال بتقايس الأضلاع المتقابلة، وهو صحيح لكنّه لا يقول شيئًا عن بُعد O عن الرؤوس، أو الاكتفاء بأنّ O منتصف قطر واحد.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل مركزه O، حيث AB = 8 و BC = 4. ما نصف قطر الدائرة المارّة من رؤوسه الأربعة ؟\n<svg viewBox=\"0 0 300 250\"><title>رسم للوضعية المعطاة</title><path d=\"M54 77 L246 77 L246 173 L54 173 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><circle cx=\"150\" cy=\"125\" r=\"107.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><path d=\"M54 77 L246 77 L246 173 L54 173 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M54 77 L246 173\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M246 77 L54 173\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M63 77 L63 86 L54 86\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M246 86 L237 86 L237 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M237 173 L237 164 L246 164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M54 164 L63 164 L63 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"54\" cy=\"77\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"246\" cy=\"77\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"246\" cy=\"173\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"54\" cy=\"173\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"150\" y=\"116\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">O</text><text x=\"42\" y=\"71\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">A</text><text x=\"258\" y=\"71\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">B</text><text x=\"258\" y=\"189\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">C</text><text x=\"42\" y=\"189\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">D</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"150\" y=\"68\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">8</text><text x=\"234\" y=\"130\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\">4</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√3",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "2√5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "4√5",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مركز الدائرة O ونصف قطرها OA = AC/2 لأنّ قطري المستطيل متقايسان ويتقاطعان في منتصفيهما. المثلّث ABC قائم الزاوية في B، فبنظرية فيثاغورس AC² = AB² + BC² = 64 + 16 = 80، ومنه AC = √80 = 4√5، ونصف القطر = AC/2 = 2√5 ✓. الخطأ الشائع: إعطاء القطر AC = 4√5 بدل نصف القطر، أو جمع الطولين ثمّ التنصيف (8 + 4)/2 = 6 دون تربيع، أو اعتبار [AB] وترًا فيُطرح المربّعان: AC = √(64 − 16) = 4√3 ونصف القطر 2√3.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "نصف قطر الدائرة المارّة من رؤوس المستطيل هو r = 2√5. نعلم أنّ:\n2,23 ≤ √5 ≤ 2,24\nما حصر r ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,23 ≤ r ≤ 2,24"
+        },
+        {
+          "id": "b",
+          "text": "4,23 ≤ r ≤ 4,24"
+        },
+        {
+          "id": "c",
+          "text": "4,46 ≤ r ≤ 4,48"
+        },
+        {
+          "id": "d",
+          "text": "8,92 ≤ r ≤ 8,96",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "r = 2√5 والضرب في العدد الموجب 2 يحفظ الترتيب: من 2,23 ≤ √5 ≤ 2,24 نستنتج 2 × 2,23 ≤ 2√5 ≤ 2 × 2,24، أي 4,46 ≤ r ≤ 4,48 ✓ (مدى الحصر 0,02 ضعف مدى حصر √5). الخطأ الشائع: نسيان الضرب في 2 فيبقى 2,23 ≤ r ≤ 2,24، أو الجمع بدل الضرب (2 + 2,23 = 4,23)، أو أخذ القطر AC = 4√5 بدل نصف القطر فيُوجد 8,92 ≤ r ≤ 8,96.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نصف القطر الداخلي لأنبوب أسطواني هو العدد الناطق R = 187/36 (بالسنتيمتر). أيّ الحصور التالية صحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,3 ≤ R ≤ 5,4"
+        },
+        {
+          "id": "b",
+          "text": "5,2 ≤ R ≤ 5,3",
+          "misconceptionTag": "math.num.approximation-defaut-exces-confondues"
+        },
+        {
+          "id": "c",
+          "text": "5,1 ≤ R ≤ 5,2"
+        },
+        {
+          "id": "d",
+          "text": "5,0 ≤ R ≤ 5,1",
+          "misconceptionTag": "math.num.approximation-defaut-exces-confondues"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "187 ÷ 36 = 5,1944…، ونتحقّق من الحصر بالضرب في العدد الموجب 36 الذي يحفظ الترتيب: 36 × 5,1 = 183,6 و 36 × 5,2 = 187,2، ولمّا كان 183,6 ≤ 187 ≤ 187,2 فإنّ 5,1 ≤ 187/36 ≤ 5,2 ✓. الخطأ الشائع: الوقوف عند الرقم الأوّل بعد الفاصلة وجعل 5,1 حدًّا أعلى، أو تدوير 5,19 إلى 5,2 وجعله حدًّا أدنى، فالعدد 187/36 أكبر من 5,1 وأصغر من 5,2 معًا؛ أمّا 5,3 ≤ R ≤ 5,4 فنتيجة قسمة خاطئة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\n4,46 ≤ r ≤ 4,48\nما حصر العدد −r ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4,48 ≤ −r ≤ −4,46"
+        },
+        {
+          "id": "b",
+          "text": "−4,46 ≤ −r ≤ −4,48",
+          "misconceptionTag": "math.alg.inequation-sens-non-inverse"
+        },
+        {
+          "id": "c",
+          "text": "−2,24 ≤ −r ≤ −2,23",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "4,46 ≤ −r ≤ 4,48"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الضرب في −1 يقلب الترتيب: نضرب الأطراف الثلاثة في −1 فنجد −4,46 ≥ −r ≥ −4,48، أي −4,48 ≤ −r ≤ −4,46 ✓، ويتبادل الحدّان موقعيهما. الخطأ الشائع: تغيير إشارتي الحدّين فقط دون قلب الترتيب، فيُكتب −4,46 ≤ −r ≤ −4,48 وهو حصر مستحيل لأنّ الحدّ الأدنى المكتوب أكبر من الأعلى؛ ومن ينسى الإشارة يكتب 4,46 ≤ −r ≤ 4,48 وهو موجب مع أنّ −r سالب؛ أمّا −2,24 ≤ −r ≤ −2,23 فهو حصر العدد −√5 لا −r (نسيان العامل 2).",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\n5,1 ≤ R ≤ 5,2\n4,46 ≤ r ≤ 4,48\nما الحصر الذي يصحّ للفرق R − r مهما كانت القيمتان الدقيقتان لـ R و r ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3,86 ≤ R − r ≤ −3,72",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "b",
+          "text": "0,62 ≤ R − r ≤ 0,74"
+        },
+        {
+          "id": "c",
+          "text": "0,64 ≤ R − r ≤ 0,72",
+          "misconceptionTag": "math.num.encadrement-bornes-mal-appariees"
+        },
+        {
+          "id": "d",
+          "text": "9,56 ≤ R − r ≤ 9,68"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "لا نطرح الحصرين طرفًا بطرف: نحصر أوّلًا −r فنجد −4,48 ≤ −r ≤ −4,46، ثمّ نجمع طرفًا بطرف: 5,1 + (−4,48) ≤ R − r ≤ 5,2 + (−4,46)، أي 0,62 ≤ R − r ≤ 0,74 ✓ (المدى 0,12 هو مجموع المديين 0,1 و 0,02). الخطأ الشائع: طرح الحدّين المتناظرين فيُكتب 5,1 − 4,46 = 0,64 و 5,2 − 4,48 = 0,72 وهو حصر أضيق فيبدو أدقّ لكنّه خاطئ: الفرق الحقيقي 187/36 − 2√5 ≈ 0,722 يتجاوز 0,72، ومع R = 5,1 و r = 4,48 يكون الفرق 0,62؛ ومن يجمع الحصرين يجد 9,56 ≤ … ≤ 9,68؛ ومن يطرح قطر الدائرة 2r بدل نصف قطرها يجد حصرًا سالبًا −3,86 ≤ … ≤ −3,72.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "لوح مستطيل تقع رؤوسه الأربعة على دائرة نصف قطرها r، يُدخل في أنبوب أسطواني عموديًّا على محوره، ونصف قطر مقطع الأنبوب الداخلي R. نعلم أنّ:\n4,46 ≤ r ≤ 4,48\n5,1 ≤ R ≤ 5,2\nنريد التأكّد من أنّ اللوح يدخل الأنبوب في كلّ الحالات الممكنة. أيّ الحجج التالية صحيحة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "نعم، لأنّ أكبر قيمة ممكنة لـ r وهي 4,48 أصغر من أصغر قيمة ممكنة لـ R وهي 5,1"
+        },
+        {
+          "id": "b",
+          "text": "نعم، لأنّ أصغر قيمة ممكنة لـ r وهي 4,46 أصغر من أكبر قيمة ممكنة لـ R وهي 5,2",
+          "misconceptionTag": "math.num.encadrement-bornes-mal-appariees"
+        },
+        {
+          "id": "c",
+          "text": "لا نستطيع الجزم، لأنّنا لا نعرف القيمتين الدقيقتين لـ r و R"
+        },
+        {
+          "id": "d",
+          "text": "لا، لأنّ قطر الدائرة 2r أكبر من نصف القطر الداخلي R للأنبوب",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "يدخل اللوح إذا كان r ≤ R. ولكي نتأكّد من ذلك في كلّ الحالات الممكنة نقارن أسوأها: أكبر قيمة ممكنة لـ r هي 4,48 وأصغر قيمة ممكنة لـ R هي 5,1، و 4,48 < 5,1، إذن r < R دائمًا ✓ (وهذا ما يقوله الحصر 0,62 ≤ R − r ≤ 0,74: الفرق موجب مهما كانت القيمتان). الخطأ الشائع: مقارنة أصغر قيمة لـ r بأكبر قيمة لـ R، وهي حالة مواتية لا تضمن شيئًا؛ ولا حاجة إلى القيمتين الدقيقتين: الحصران لا يتقاطعان (4,48 < 5,1)، فالمقارنة محسومة في كلّ الحالات؛ ومقارنة قطر الدائرة 2r ≈ 8,9 بنصف القطر R خلط بين القطر ونصف القطر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.geo.quadrilateres"
+      ]
+    }
+  ]
+}

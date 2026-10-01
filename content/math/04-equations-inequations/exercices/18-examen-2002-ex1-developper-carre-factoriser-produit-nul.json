@@ -1,0 +1,169 @@
+{
+  "title": "🏛️ مناظرة 2002 · التمرين 1 ⭐⭐: قيمة عددية ومعادلة ونشر مربّع ثمّ تفكيك ومعادلة جداء",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 18,
+  "questions": [
+    {
+      "prompt": "نعتبر العبارة A التالية حيث x عدد حقيقي:\nA = 2x − 5\nما القيمة العددية للعبارة A عند x = 0 ثمّ عند x = 3 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "( −5 ; 1 )"
+        },
+        {
+          "id": "b",
+          "text": "( −3 ; 0 )",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "( 5 ; 1 )",
+          "misconceptionTag": "math.int.subtract-smaller-from-larger"
+        },
+        {
+          "id": "d",
+          "text": "( 5 ; 11 )",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نعوّض في A = 2x − 5 ؛ عند x = 0 نجد A = 2 × 0 − 5 = −5 ، وعند x = 3 نجد A = 2 × 3 − 5 = 6 − 5 = 1 ✓؛ أمّا الخطأ الشائع فهو قراءة 2x على أنّها 2 + x فتخرج القيمتان −3 و 0 ، أو طرح الأصغر من الأكبر متجاهلين الإشارة عند x = 0 فتخرج 5 بدل −5 ، أو جمع 5 بدل طرحه فتنقلب العملية كلّها.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "نحلّ في ℝ المعادلة التالية:\n2x − 5 = 0\nاكتب حلّها عددًا عشريًّا.",
+      "answerKey": {
+        "value": 2.5
+      },
+      "explanation": "ننقل العدد 5 إلى الطرف الآخر فنجد 2x = 5 لأنّ إضافة 5 إلى الطرفين تلغي −5 ، ثمّ نقسم الطرفين على معامل المجهول 2 فنجد x = 5/2 = 2,5 ✓ ونتحقّق: 2 × 2,5 − 5 = 5 − 5 = 0 ✓؛ أمّا الخطأ الشائع فهو التوقّف عند 2x = 5 وإعلان 5 حلًّا ، أو نقل العدد 5 دون قلب إشارته فيُكتب 2x = −5 ويخرج الحلّ السالب.",
+      "difficulty": 1,
+      "competencies": [
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "ننشر العبارة التالية حيث x عدد حقيقي:\n(2x − 5)²\nما ناتج النشر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "4x² − 25",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "b",
+          "text": "4x² + 25",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "c",
+          "text": "4x² − 20x − 25",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        },
+        {
+          "id": "d",
+          "text": "4x² − 20x + 25"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المتطابقة (a − b)² = a² − 2ab + b² مع a = 2x و b = 5 تعطي (2x)² = 4x² ثمّ الجداء المضاعف 2 × 2x × 5 = 20x وهو يُطرح ثمّ 5² = 25 وهو يبقى موجبًا، فالناتج 4x² − 20x + 25 ✓؛ أمّا الخطأ الشائع فهو إسقاط الجداء المضاعف فيُكتب 4x² + 25 ، أو تربيع كلّ حدّ على حدة كأنّ المربّع فرق مربّعين فيُكتب 4x² − 25 وفيه الجداء المضاعف مسقط أيضًا ، أو جعل الحدّ الأخير سالبًا فيُكتب 4x² − 20x − 25 وهذا يخالف قاعدة الإشارة في مربّع الفرق.",
+      "difficulty": 1,
+      "competencies": [
+        "math.alg.developpement",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد الحقيقي x ونضع:\nB = (2x − 5)² + 4x² − 25\nونعلم أنّ نشر المربّع يعطي:\n(2x − 5)² = 4x² − 20x + 25\nما الكتابة المختصرة للعبارة B ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "8x⁴ − 20x"
+        },
+        {
+          "id": "b",
+          "text": "8x⁴ − 20x + 50"
+        },
+        {
+          "id": "c",
+          "text": "8x² − 20x"
+        },
+        {
+          "id": "d",
+          "text": "8x² − 20x + 50",
+          "misconceptionTag": "math.int.signe-ignore-dans-somme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نعوّض المربّع بنشره فنكتب B = 4x² − 20x + 25 + 4x² − 25 ؛ نجمع 4x² مع 4x² فنجد 8x² ، ونجمع 25 مع −25 فنجد 0 ، ويبقى الحدّ −20x وحده لأنّه لا يشبه غيره، فتكون B = 8x² − 20x ✓؛ أمّا الخطأ الشائع فهو جمع الأسّين عند جمع الحدّين المتشابهين فيخرج 8x⁴ بدل 8x² ، أو جمع الثابتين 25 و 25 بدل أن يُلغي أحدهما الآخر فيظهر حدّ ثابت زائد ، وقد يجتمع الخطآن فتخرج الكتابة 8x⁴ − 20x + 50 الخاطئة مرّتين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "بعد النشر والاختزال نجد العبارة B التالية حيث x عدد حقيقي:\nB = 8x² − 20x\nما تفكيك B إلى جداء عوامل ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "4(2x − 5)"
+        },
+        {
+          "id": "b",
+          "text": "4x(2x − 5)"
+        },
+        {
+          "id": "c",
+          "text": "4x(2x − 20)",
+          "misconceptionTag": "math.alg.facteur-commun-terme-non-divise"
+        },
+        {
+          "id": "d",
+          "text": "4(2x − 20)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "العامل المشترك الأكبر بين 8x² و 20x هو 4x لأنّ 8 = 4 × 2 و 20 = 4 × 5 و x² = x × x ؛ فنكتب 8x² − 20x = 4x × 2x − 4x × 5 = 4x(2x − 5) ✓ ونتحقّق بالنشر: 4x(2x − 5) = 8x² − 20x ✓؛ أمّا الخطأ الشائع فهو إخراج 4 وحده ونسيان x فيخرج 4(2x − 5) وهذا ينشر إلى 8x − 20 ، أو ترك 20 داخل القوس دون قسمته على 4 فيخرج 4x(2x − 20) وهذا ينشر إلى 8x² − 80x ، وقد يجتمع الخطآن فيخرج 4(2x − 20) وهذا ينشر إلى 8x − 80 فلا يساوي العبارة B أصلًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "نحلّ في ℝ المعادلة التالية:\n(2x − 5)² + 4x² − 25 = 0\nما مجموعة حلولها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{ 0 ; 5/2 }"
+        },
+        {
+          "id": "b",
+          "text": "{ 0 ; −5/2 }",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "c",
+          "text": "{ 5/2 }",
+          "misconceptionTag": "math.alg.division-par-inconnue-perd-solution"
+        },
+        {
+          "id": "d",
+          "text": "{ −5/2 }"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الطرف الأيسر هو العبارة B التي فكّكناها: B = 4x(2x − 5) ، فتصير المعادلة 4x(2x − 5) = 0 ؛ الجداء معدوم إذا وفقط إذا انعدم أحد عامليه ، فإمّا 4x = 0 أي x = 0 وإمّا 2x − 5 = 0 أي 2x = 5 ومنه x = 5/2 ، فمجموعة الحلول { 0 ; 5/2 } ✓ ونتحقّق في المعادلة الأصلية: عند x = 0 نجد (−5)² + 0 − 25 = 0 ، وعند x = 5/2 نجد 0² + 25 − 25 = 0 ✓؛ أمّا الخطأ الشائع فهو قسمة الطرفين على x فتضيع القيمة 0 ويبقى الحلّ 5/2 وحده ، أو قراءة جذر العامل (2x − 5) بإشارته الظاهرة فيخرج حلّ سالب بدل الموجب.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    }
+  ]
+}

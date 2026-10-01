@@ -1,0 +1,253 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: هرم منتظم — علاقات قياسية ومركز ثقل وجه",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "SABCD هرم منتظم قاعدته المربّع ABCD ومركزها O، حيث AB = 6√2 cm والحرف الجانبي SA = 6√2 cm. ما طبيعة المثلّث SAC ؟\n<svg viewBox=\"0 0 261 196\"><path d=\"M129.4 39 L29.6 164.2 L229.2 117.8 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M29.6 164.2 L84.9 117.8 M84.9 117.8 L229.2 117.8 M129.4 39 L84.9 117.8 M173.9 164.2 L84.9 117.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M29.6 164.2 L229.2 117.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M29.6 164.2 L173.9 164.2 M173.9 164.2 L229.2 117.8 M129.4 39 L29.6 164.2 M129.4 39 L173.9 164.2 M129.4 39 L229.2 117.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"39\" r=\"3.4\"/><circle cx=\"29.6\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"173.9\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"229.2\" cy=\"117.8\" r=\"3.4\"/><circle cx=\"84.9\" cy=\"117.8\" r=\"3.4\"/></g><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"141\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"129.4\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"18.6\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"184.9\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"242.2\" y=\"122.8\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"72.9\" y=\"114.8\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"135.4\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "قائم ومتقايس الضلعين في S"
+        },
+        {
+          "id": "b",
+          "text": "متقايس الأضلاع"
+        },
+        {
+          "id": "c",
+          "text": "متقايس الضلعين في S فقط",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "d",
+          "text": "قائم في S وغير متقايس الضلعين"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الهرم منتظم فأحرفه الجانبية متقايسة: SC = SA = 6√2. قطر القاعدة: AC² = AB² + BC² = 72 + 72 = 144، ومنه AC = 12. وفي المثلّث SAC: SA² + SC² = 72 + 72 = 144 = AC²، فهو قائم في S بعكس نظرية بيتاغور، وهو متقايس الضلعين لأنّ SA = SC ✓. وليس متقايس الأضلاع لأنّ AC = 12 أطول من 6√2، أي من 8,5 تقريبًا. الخطأ الشائع الاكتفاء بتقايس الضلعين دون اختبار عكس بيتاغور، فتضيع الزاوية القائمة في S. ومن نسي أنّ الأحرف الجانبية للهرم المنتظم متقايسة لم يرَ أنّ SA = SC.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.esp.solides-espace"
+      ]
+    },
+    {
+      "prompt": "في الهرم المنتظم SABCD: المثلّث SAC قائم في S، حيث SA = SC = 6√2 و AC = 12 (بالصنتمتر)، و O مركز القاعدة. بما أنّ (SO) عمودي على مستوي القاعدة، فإنّ [SO] ارتفاع هذا المثلّث الموافق للوتر. ما قيس SO ؟\n<svg viewBox=\"0 0 261 196\"><path d=\"M29.6 164.2 L84.9 117.8 M84.9 117.8 L229.2 117.8 M129.4 39 L84.9 117.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M29.6 164.2 L229.2 117.8 M129.4 39 L129.4 141\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M29.6 164.2 L173.9 164.2 M173.9 164.2 L229.2 117.8 M129.4 39 L29.6 164.2 M129.4 39 L173.9 164.2 M129.4 39 L229.2 117.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"39\" r=\"3.4\"/><circle cx=\"29.6\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"173.9\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"229.2\" cy=\"117.8\" r=\"3.4\"/><circle cx=\"84.9\" cy=\"117.8\" r=\"3.4\"/></g><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"141\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"129.4\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"18.6\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"184.9\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"242.2\" y=\"122.8\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"72.9\" y=\"114.8\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"135.4\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√3",
+          "misconceptionTag": "math.geo.relation-hauteur-somme-au-lieu-de-produit"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "d",
+          "text": "36",
+          "misconceptionTag": "math.geo.relation-hauteur-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث SAC القائم في S، [SO] هو الارتفاع الموافق للوتر [AC]، فالعلاقة SO × AC = SA × SC تعطي SO × 12 = 6√2 × 6√2 = 72، ومنه SO = 72 ÷ 12 = 6 cm ✓. تحقّق بالعلاقة الثانية: O منتصف [AC] فـ AO = OC = 6، و SO² = AO × OC = 36، أي SO = 6. الخطأ الشائع ضرب الارتفاع في ضلع قائم (SO × SA = SC × AC) فنجد 12؛ والعدد 36 هو SO² قبل الجذر؛ و 2√3 = √(6 + 6) يجمع القطعتين AO و OC بدل ضربهما.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.esp.solides-espace"
+      ]
+    },
+    {
+      "prompt": "في الهرم المنتظم SABCD ذي الارتفاع SO = 6 cm وحرف القاعدة 6√2 cm، النقطة I منتصف [BC] فـ OI = 3√2 cm، والمثلّث SOI قائم في O. ما قيس عمد الهرم SI ؟\n<svg viewBox=\"0 0 261 196\"><path d=\"M29.6 164.2 L84.9 117.8 M84.9 117.8 L229.2 117.8 M129.4 39 L84.9 117.8 M29.6 164.2 L229.2 117.8 M173.9 164.2 L84.9 117.8 M129.4 39 L129.4 141\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M129.4 141 L201.5 141\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M29.6 164.2 L173.9 164.2 M173.9 164.2 L229.2 117.8 M129.4 39 L29.6 164.2 M129.4 39 L173.9 164.2 M129.4 39 L229.2 117.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M129.4 39 L201.5 141\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"39\" r=\"3.4\"/><circle cx=\"29.6\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"173.9\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"229.2\" cy=\"117.8\" r=\"3.4\"/><circle cx=\"84.9\" cy=\"117.8\" r=\"3.4\"/></g><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"141\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"201.5\" cy=\"141\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"129.4\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"18.6\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"184.9\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"242.2\" y=\"122.8\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"72.9\" y=\"114.8\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"135.4\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"213.5\" y=\"147\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "54",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "6 + 3√2",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "6√2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "3√6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(SO) عمودي على مستوي القاعدة فهو يعامد (OI)، والمثلّث SOI قائم في O: SI² = SO² + OI² = 36 + 18 = 54، ومنه SI = √54 = 3√6 cm ✓. تحقّق: الوجه SBC مثلّث متقايس الأضلاع ضلعه 6√2، وارتفاعه (6√2 × √3) ÷ 2 = 3√6. الخطأ الشائع الخلط بين عمد الهرم والحرف الجانبي SB = 6√2؛ والعدد 6 + 3√2 مجموع الطولين، و 54 هو SI² قبل الجذر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.esp.solides-espace"
+      ]
+    },
+    {
+      "prompt": "في المثلّث SOI القائم في O من الهرم المنتظم SABCD: SO = 6 و OI = 3√2 و SI = 3√6 (بالصنتمتر)، و H المسقط العمودي للنقطة O على (SI). ما قيس OH ؟\n<svg viewBox=\"0 0 261 196\"><path d=\"M29.6 164.2 L84.9 117.8 M84.9 117.8 L229.2 117.8 M129.4 39 L84.9 117.8 M29.6 164.2 L229.2 117.8 M173.9 164.2 L84.9 117.8 M129.4 39 L129.4 141\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M129.4 141 L201.5 141 M129.4 141 L177.5 107\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M29.6 164.2 L173.9 164.2 M173.9 164.2 L229.2 117.8 M129.4 39 L29.6 164.2 M129.4 39 L173.9 164.2 M129.4 39 L229.2 117.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M129.4 39 L201.5 141\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"39\" r=\"3.4\"/><circle cx=\"29.6\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"173.9\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"229.2\" cy=\"117.8\" r=\"3.4\"/><circle cx=\"84.9\" cy=\"117.8\" r=\"3.4\"/></g><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"141\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"201.5\" cy=\"141\" r=\"3.6\"/><circle cx=\"177.5\" cy=\"107\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"129.4\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"18.6\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"184.9\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"242.2\" y=\"122.8\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"72.9\" y=\"114.8\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"135.4\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"213.5\" y=\"147\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"190.5\" y=\"105\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9√2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "3√3",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "c",
+          "text": "(3√6)/2",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "d",
+          "text": "2√3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "[OH] هو الارتفاع الموافق للوتر [SI] في المثلّث SOI القائم في O، فالعلاقة OH × SI = SO × OI تعطي OH = (6 × 3√2) ÷ (3√6) = 6√2 ÷ √6 = 6 ÷ √3 = 2√3 cm ✓. الخطأ الشائع ضرب الارتفاع في ضلع قائم (OH × SO = OI × SI) فنجد 3√3. ومن جعل H منتصف [SI] وجد (3√6)/2، و H قدم الارتفاع لا منتصف الوتر. أمّا 9√2 فهو مساحة المثلّث SOI لا طول OH.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.esp.solides-espace"
+      ]
+    },
+    {
+      "prompt": "في الهرم المنتظم SABCD، H المسقط العمودي للنقطة O على (SI)، فالمثلّث OHI قائم في H، حيث OI = 3√2 و OH = 2√3 و SI = 3√6 (بالصنتمتر). ما قيس HI ؟\n<svg viewBox=\"0 0 261 196\"><path d=\"M29.6 164.2 L84.9 117.8 M84.9 117.8 L229.2 117.8 M129.4 39 L84.9 117.8 M29.6 164.2 L229.2 117.8 M173.9 164.2 L84.9 117.8 M129.4 39 L129.4 141\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M129.4 141 L201.5 141 M129.4 141 L177.5 107\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M29.6 164.2 L173.9 164.2 M173.9 164.2 L229.2 117.8 M129.4 39 L29.6 164.2 M129.4 39 L173.9 164.2 M129.4 39 L229.2 117.8 M129.4 39 L177.5 107\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.5 107 L201.5 141\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"39\" r=\"3.4\"/><circle cx=\"29.6\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"173.9\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"229.2\" cy=\"117.8\" r=\"3.4\"/><circle cx=\"84.9\" cy=\"117.8\" r=\"3.4\"/></g><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"141\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"201.5\" cy=\"141\" r=\"3.6\"/><circle cx=\"177.5\" cy=\"107\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"129.4\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"18.6\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"184.9\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"242.2\" y=\"122.8\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"72.9\" y=\"114.8\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"135.4\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"213.5\" y=\"147\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"190.5\" y=\"105\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√2 − 2√3",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "√6"
+        },
+        {
+          "id": "c",
+          "text": "2√6",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث OHI قائم في H: HI² = OI² − OH² = 18 − 12 = 6، ومنه HI = √6 cm ✓. تحقّق بالعلاقة OH² = HS × HI: HS = SI − HI = 3√6 − √6 = 2√6، و 2√6 × √6 = 12 = (2√3)². الخطأ الشائع إعطاء HS = 2√6 بدل HI؛ والعدد 6 هو HI² قبل الجذر، و 3√2 − 2√3 فرق الطولين لا جذر فرق مربّعيهما.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في الهرم المنتظم SABCD: I منتصف [BC]، فالقطعة [SI] موسّط للمثلّث SBC، والنقطة H من [SI] تحقّق HI = √6 و SI = 3√6 (بالصنتمتر). ماذا تمثّل H بالنسبة إلى المثلّث SBC ؟\n<svg viewBox=\"0 0 261 196\"><path d=\"M29.6 164.2 L84.9 117.8 M84.9 117.8 L229.2 117.8 M129.4 39 L84.9 117.8 M29.6 164.2 L229.2 117.8 M173.9 164.2 L84.9 117.8 M129.4 39 L129.4 141 M129.4 141 L201.5 141\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M29.6 164.2 L173.9 164.2 M173.9 164.2 L229.2 117.8 M129.4 39 L29.6 164.2 M129.4 39 L173.9 164.2 M129.4 39 L229.2 117.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M129.4 39 L201.5 141\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"39\" r=\"3.4\"/><circle cx=\"29.6\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"173.9\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"229.2\" cy=\"117.8\" r=\"3.4\"/><circle cx=\"84.9\" cy=\"117.8\" r=\"3.4\"/></g><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"141\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"201.5\" cy=\"141\" r=\"3.6\"/><circle cx=\"177.5\" cy=\"107\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"129.4\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"18.6\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"184.9\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"242.2\" y=\"122.8\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"72.9\" y=\"114.8\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"135.4\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"213.5\" y=\"147\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"190.5\" y=\"105\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "مركز ثقله، لأنّ SH = (2/3) × SI"
+        },
+        {
+          "id": "b",
+          "text": "ليست مركز ثقله، لأنّ مركز الثقل يحقّق SH = (1/2) × SI",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "مركز ثقل المثلّث SOI، لأنّ H تقع على وتره [SI]"
+        },
+        {
+          "id": "d",
+          "text": "ليست مركز ثقله، لأنّ مركز الثقل يحقّق SH = (1/3) × SI",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "HI = √6 = (1/3) × 3√6، أي HI = SI ÷ 3، ومنه SH = SI − HI = 2√6 = (2/3) × SI. ومركز ثقل المثلّث يقع على كلّ موسّط عند ثلثيه انطلاقًا من الرأس، و[SI] موسّط للمثلّث SBC لأنّ I منتصف [BC]: إذن H مركز ثقل المثلّث SBC ✓. الخطأ الشائع انتظار مركز الثقل في منتصف الموسّط فلا نتعرّف عليه، أو عدّ الثلثين انطلاقًا من I. و[SI] ليس موسّطًا في المثلّث SOI بل وتره.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.esp.solides-espace"
+      ]
+    },
+    {
+      "prompt": "في الهرم المنتظم SABCD الذي مركز قاعدته O: K منتصف [AB] و I منتصف [BC]، فـ (OK) يعامد (OI) في O، و H نقطة من [SI]. لماذا المثلّث KOH قائم في O ؟\n<svg viewBox=\"0 0 261 199\"><path d=\"M29.6 164.2 L84.9 117.8 M84.9 117.8 L229.2 117.8 M129.4 39 L84.9 117.8 M29.6 164.2 L229.2 117.8 M173.9 164.2 L84.9 117.8 M129.4 39 L129.4 141 M129.4 141 L201.5 141\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M129.4 141 L177.5 107 M129.4 141 L101.8 164.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M29.6 164.2 L173.9 164.2 M173.9 164.2 L229.2 117.8 M129.4 39 L29.6 164.2 M129.4 39 L173.9 164.2 M129.4 39 L229.2 117.8 M129.4 39 L201.5 141\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"39\" r=\"3.4\"/><circle cx=\"29.6\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"173.9\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"229.2\" cy=\"117.8\" r=\"3.4\"/><circle cx=\"84.9\" cy=\"117.8\" r=\"3.4\"/></g><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"141\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"201.5\" cy=\"141\" r=\"3.6\"/><circle cx=\"177.5\" cy=\"107\" r=\"3.6\"/><circle cx=\"101.8\" cy=\"164.2\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"129.4\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"18.6\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"184.9\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"242.2\" y=\"122.8\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"72.9\" y=\"114.8\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"135.4\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"213.5\" y=\"147\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"190.5\" y=\"105\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"101.8\" y=\"181.2\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ (OK) يعامد (OI) وحده ، و(OI) من المستوي (SOI)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ (SO) يعامد (OK) و(OI) المتقاطعين في O"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ H مركز ثقل الوجه SBC ، و(OK) يوازي (BC)"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ (OK) يعامد (OI) و(SO) المتقاطعين في O"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(SO) عمودي على مستوي القاعدة فهو يعامد (OK) المارّ من O، و(OK) يعامد (OI) أيضًا. إذن (OK) يعامد مستقيمين متقاطعين في O من المستوي (SOI)، فهو عمودي على هذا المستوي، ومنه يعامد كلّ مستقيماته المارّة من O، ومنها (OH) لأنّ H من [SI]: المثلّث KOH قائم في O ✓. إنّها عمودية ثانية مبنيّة على الأولى. الخطأ الشائع الاكتفاء بـ (OI) وحده؛ وتعامد (SO) مع (OK) و(OI) صحيح، لكنّه يجعل (SO) عموديًا على مستوي القاعدة، فيعطي الزاويتين القائمتين SOK و SOI لا الزاوية KOH؛ أمّا كون H مركز ثقل الوجه فلا علاقة له بهذه الزاوية.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.esp.solides-espace"
+      ]
+    },
+    {
+      "prompt": "في الهرم المنتظم SABCD: المثلّث KOH قائم في O، حيث OK = 3√2 و OH = 2√3 (بالصنتمتر). ما قيس KH ؟\n<svg viewBox=\"0 0 261 199\"><path d=\"M29.6 164.2 L84.9 117.8 M84.9 117.8 L229.2 117.8 M129.4 39 L84.9 117.8 M29.6 164.2 L229.2 117.8 M173.9 164.2 L84.9 117.8 M129.4 39 L129.4 141 M129.4 141 L201.5 141\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M129.4 141 L177.5 107 M129.4 141 L101.8 164.2 M101.8 164.2 L177.5 107\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M29.6 164.2 L173.9 164.2 M173.9 164.2 L229.2 117.8 M129.4 39 L29.6 164.2 M129.4 39 L173.9 164.2 M129.4 39 L229.2 117.8 M129.4 39 L201.5 141\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"39\" r=\"3.4\"/><circle cx=\"29.6\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"173.9\" cy=\"164.2\" r=\"3.4\"/><circle cx=\"229.2\" cy=\"117.8\" r=\"3.4\"/><circle cx=\"84.9\" cy=\"117.8\" r=\"3.4\"/></g><g fill=\"#0f172a\"><circle cx=\"129.4\" cy=\"141\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"201.5\" cy=\"141\" r=\"3.6\"/><circle cx=\"177.5\" cy=\"107\" r=\"3.6\"/><circle cx=\"101.8\" cy=\"164.2\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"129.4\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"18.6\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"184.9\" y=\"178.2\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"242.2\" y=\"122.8\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"72.9\" y=\"114.8\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"135.4\" y=\"157\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"213.5\" y=\"147\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"190.5\" y=\"105\" text-anchor=\"middle\" fill=\"#0f6e56\">H</text><text x=\"101.8\" y=\"181.2\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√6",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "√30"
+        },
+        {
+          "id": "c",
+          "text": "3√2 + 2√3",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "30",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "KH² = OK² + OH² = 18 + 12 = 30، ومنه KH = √30 cm ✓، أي 5,5 cm تقريبًا. الخطأ الشائع تطبيق بيتاغور دون إثبات الزاوية القائمة في O، وهي لا تظهر في أيّ وجه: مصدرها العمودية (OK) ⊥ (SOI). والعدد 3√2 + 2√3 مجموع الطولين، و 30 هو KH² قبل الجذر، و √6 = √(18 − 12) يطرح المربّعين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.esp.solides-espace"
+      ]
+    }
+  ]
+}

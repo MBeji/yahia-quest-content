@@ -1,9 +1,9 @@
 # Étude 27 — Enrichissement par sources web tierces (veille, lien sortant curé, génération inspirée)
 
-> **Statut** : en exécution — lot 3 relancé le 2026-09-27 par le propriétaire, re-ciblé sur les maths 9ᵉ (Q-5 arbitrée) ; Q-6 arbitrée le 2026-09-28 (les sujets des examens nationaux sont du corpus officiel, le pilote les lit sans reprise) ; réseau de l'environnement cloud constaté ouvert le 2026-09-28 (RISK-7 levé), pilote en cours
+> **Statut** : en exécution — **sa doctrine (lots 1-2) et son pilote (lot 3) sont fusionnés avec l'étude 12 dans le pipeline de l'[étude 36](../36-gisement-examens-devoirs/ETUDE.md)** (arbitrage du propriétaire, 2026-09-28) : la généralisation à toutes les classes se suit là-bas ; restent ici les lots 4-6 (lien sortant T1, partenariat T2), derrière Q-2/Q-3. Historique : lot 3 relancé le 2026-09-27 sur les maths 9ᵉ (Q-5 arbitrée) ; Q-6 arbitrée le 2026-09-28 (les sujets des examens nationaux sont du corpus officiel) ; réseau ouvert le 2026-09-28 (RISK-7 levé)
 > **Priorité** : 27 · **Valeur** : 🌐 le gisement web tunisien (devoirs de contrôle/synthèse, séries, corrigés alignés sur le programme réel) devient exploitable **sans copier une ligne** — et la ligne rouge du plagiat cesse d'être une promesse pour devenir un **gate déterministe** · **Complexité** : moyenne (doctrine + un petit registre ; **zéro moteur pédagogique nouveau**)
 > **Architecte** : session Claude Code / 2026-08-13 · **Exécuteur cible** : Sonnet (lots 2 et 4) + opéré (lots 1, 3, 5)
-> **Dépend de** : é23 (le patron du lien externe curé — lots 1-4 livrés : allowlist par source, registre versionné, aucune URL libre côté app) · é13 ScribeKit (livrée) · la méthode (§ Profils de source) · **ne dégèle PAS é12** (studio d'ingestion, gelée le 2026-07-20) · **Bloque** : rien
+> **Dépend de** : é23 (le patron du lien externe curé — lots 1-4 livrés : allowlist par source, registre versionné, aucune URL libre côté app) · é13 ScribeKit (livrée) · la méthode (§ Profils de source) · é12 : ne la dégelait pas ; le propriétaire l'a dégelée le 2026-09-28 pour la fusionner avec celle-ci dans l'étude 36 · **Bloque** : rien
 > **Docs normatifs liés** : AGENTS.md, `LICENSE-CONTENT.md`, [`METHODE-GENERATION-CONTENU.md`](../METHODE-GENERATION-CONTENU.md) (§ Profils de source), [`23-videos-explicatives/ETUDE.md`](../23-videos-explicatives/ETUDE.md) (D-2/D-6/D-10, R-2/R-3/R-11), [`12-studio-ingestion/ETUDE.md`](../12-studio-ingestion/ETUDE.md) (R-1/R-2), `.claude/skills/content-ingest/SKILL.md` (R-1…R-7), `docs/xss-rendering-policy.md`
 
 ---
@@ -193,8 +193,9 @@ recherche dans les sites · ressource externe sur un écran de correction (é23 
 
 - [x] Lot 1 — doctrine (profil + tiers + gabarit) — méthode + `content-ingest` R-2, 2026-08-13
 - [x] Lot 2 — gate anti-verbatim — moteur [arena#722](https://github.com/MBeji/yahia-quest-arena/pull/722), mergé le 2026-08-13
-- [ ] Lot 3 — pilote T0+T2′ mesuré, **maths 9ᵉ** — inventaire fait le 2026-09-27 (annexe A.2),
-      réseau constaté ouvert le 2026-09-28 (RISK-7 levé) : pilote en cours
+- [x] Lot 3 — pilote T0+T2′ mesuré, **maths 9ᵉ** — livré : trois trous comblés et publiés
+      (privé#564, privé#570, privé#575), critère de sortie atteint ; la généralisation se suit dans
+      l'étude 36, qui a fusionné ce pilote le 2026-09-28
 - [ ] Lot 4 — T1 moteur (GO humain)
 - [ ] Lot 5 — T1 campagne
 - [ ] Lot 6 — gelé
@@ -477,6 +478,68 @@ réglage revient en arrière.
   Même jour : **le réseau est ouvert.** `curl` rend 200 sur `devoir.tn`, `tunisiecollege.net`,
   `tunitests.tn` et `echoexam.edunet.tn` (302 sur `edunet.tn`), sans rien contourner. RISK-7
   est levé, le pilote démarre.
+
+- **2026-09-28 — Lot 3 : le pilote maths 9ᵉ, mené de bout en bout.** Relancé la veille, il a
+  tourné dès l'ouverture du réseau. Le détail vit dans la fiche du couple
+  ([`web-9eme-base-math`](../../content/programmes-officiels/sources-externes/web-9eme-base-math/fiche.md)) ;
+  ne restent ici que les constats qui décident.
+
+  - **Qualification** (privé#564) : quatre sites, quatre fiches. `devoir.tn` et
+    `tunisiecollege.net` ré-hébergent des devoirs d'enseignants : T2′ au plus, quelle que soit
+    leur bonne volonté. `tunitests.tn` est qualifié sans être échantillonné, ses listes ne disant
+    pas l'année. L'archive du Ministère (`9web.edunet.tn`) donne un sujet de mathématiques par
+    session, de 2001 à 2026.
+  - **Échantillon fixé avant lecture** et mergé sur `main` (privé#564) avant l'ouverture du premier
+    document : 33 documents (5 sujets d'examen 2022-2026, 18 devoirs sur les neuf créneaux, un de
+    collège pilote et un ordinaire par créneau, 10 séries). Deux règles s'ajoutent au protocole,
+    écrites avant le choix : une année scolaire 2012-2013 ou postérieure (programme en vigueur),
+    et **au plus deux devoirs par auteur** — sans ce plafond, huit des neuf devoirs ordinaires
+    venaient du même enseignant.
+  - **Lecture** : six lecteurs, 166 exercices, 1,52 M de jetons (~46 000 par document),
+    22 minutes, presque tout à l'image. La lecture a démenti trois étiquettes des sites (deux
+    devoirs rangés « collège pilote » sans l'être, une série sur les puissances titrée
+    « ensemble ℝ ») : le contenu tranche, pas le rayon.
+  - **Carte** : le sujet d'examen garde la même architecture sur cinq sessions ; le devoir de
+    collège pilote en a le profil (47 % d'exercices d4), le devoir ordinaire plafonne à d3.
+    Trigonométrie, systèmes, fonctions, angles inscrits, vecteurs : **0 exercice sur 166**,
+    sujets d'examen compris — l'évaluation réelle confirme le §6.2 de la fiche programme.
+  - **Écart : trois trous, dont deux de programme.** Le manuel enseigne les relations métriques
+    (ch. 11 §V-VI) et le centre de gravité (ch. 10 §III-2) ; le contenu ne les enseignait pas
+    (une question pour les premières, aucune occurrence du second). Le troisième est un
+    archétype : factoriser, résoudre, écarter la racine qu'une contrainte interdit (4 sessions
+    d'examen sur 5, aucune question du contenu). **Le gisement a trouvé des trous de programme,
+    pas seulement un plafond d'exigence** : c'est le résultat le plus utile du pilote, et celui
+    que l'étude n'avait pas prévu.
+  - **Écriture** : trois auteurs `prof-math-9eme` qui n'ont vu que la carte. 36 questions
+    (12 d2, 6 d3, 18 d4), quatre sections de cours au patron, sept étiquettes d'erreur neuves.
+  - **Preuves.** (a) Gates verts. (b) Contrôle local contre les 33 transcriptions : 0 plage de
+    8 mots commune ; une seule question à trois données communes — les valeurs du triangle 3-4-5
+    (hauteur et segments), celles de tous les manuels —, réécrite quand même, la règle est
+    mécanique. (c) Audit à l'aveugle : 36 questions re-résolues, **0 clé fausse** ; mais trois
+    défauts majeurs au chapitre 04, corrigés avant le push : un indice de forme (la clé était la
+    seule valeur présente dans deux options), une notion testée sans être enseignée, une technique
+    non enseignée dans deux explications. Contre-expertise après correctifs, le 2026-09-29 : 12 clés
+    re-résolues, 0 fausse, 0 défaut critique ou majeur ; ses cinq mineurs corrigés avant le push
+    (privé#575).
+  - **Critère de sortie atteint** : un vrai trou comblé dans chaque chapitre touché (3 sur 3),
+    zéro recouvrement, zéro clé fausse. La chaîne peut entrer dans la méthode et dans
+    `/campagne` ; le propriétaire voulait « tester avant de généraliser », la généralisation lui
+    est laissée (STATUS.md §6.2).
+  - **Q-4, premières mesures réelles.** À 8 mots, 0 faux positif de la garde de CI sur le corpus
+    existant (5 fiches, 1 440 séquences). En contrôle local, les plages communes de 6 mots sont
+    toutes des tournures géométriques standard (« rectangle en … », « projeté orthogonal de …
+    sur … »), sans valeur d'expression : **8 tient, 6 serait trop bas**. La règle des données se
+    déclenche sur les triplets pythagoriciens : à garder, en sachant qu'un signalement n'est pas
+    une preuve de copie.
+  - **Registre** : deux compétences exercées par l'examen n'ont pas d'identifiant, l'orthogonalité
+    dans l'espace (4 sessions sur 5) et le centre de gravité. Les créer touche le moteur de
+    maîtrise : lot à part.
+  - **Coût total** : ~4,3 M de jetons pour 36 questions et quatre sections de cours — lecture
+    1,52 M (33 documents), écriture 2,04 M (trois auteurs, reprise d'audit comprise), audits 0,77 M.
+    L'écriture et ses reprises coûtent plus que la lecture : c'est ce constat qui fixe, dans
+    l'étude 36, des lots d'auteur de 5 à 8 missions. La suite du couple (les devoirs transformés en
+    missions, puis les sujets d'examen repris) se journalise dans l'étude 36, qui a absorbé ce
+    pilote le 2026-09-28.
 
 ---
 

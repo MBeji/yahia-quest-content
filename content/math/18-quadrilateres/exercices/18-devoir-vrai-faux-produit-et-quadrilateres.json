@@ -1,0 +1,265 @@
+{
+  "title": "⭐⭐ تمرين موجّه: صحيح أم خاطئ؟ حصر جداء وقيمة مطلقة ومتراجحة ورباعيات",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 18,
+  "questions": [
+    {
+      "prompt": "x و y عددان حقيقيان يحقّقان الحصرين التاليين:\n−3 ≤ x ≤ −1\n2 ≤ y ≤ 5\nلحصر المجموع x + y كتب تلميذ ما يلي:\n−3 + 2 ≤ x + y ≤ −1 + 5\nما الحكم الصحيح على هذه الكتابة مع تعليله ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "صحيحة، فنجمع الحدّين الأصغرين ثمّ الحدّين الأكبرين"
+        },
+        {
+          "id": "b",
+          "text": "صحيحة، وتصلح الطريقة نفسها لحصر الجداء xy دون شرط",
+          "misconceptionTag": "math.num.produit-conserve-l-ordre-sans-signe"
+        },
+        {
+          "id": "c",
+          "text": "خاطئة، فلا يجوز جمع حصرين ما دام أحد العددين سالبًا"
+        },
+        {
+          "id": "d",
+          "text": "خاطئة، فالجمع مع عدد سالب يقلب اتّجاه المتباينة نفسها",
+          "misconceptionTag": "math.num.ordre-inverse-a-tort"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الجمع طرفًا بطرف مشروع لمتباينتين لهما الاتّجاه نفسه، أيًّا كانت إشارة العددين: الحدّان الأصغران يعطيان −3 + 2 = −1، والحدّان الأكبران يعطيان −1 + 5 = 4، إذن −1 ≤ x + y ≤ 4 ✓ وما كتبه التلميذ صحيح. الخطأ الشائع: ظنّ أنّ إشارة x السالبة تمنع الجمع أو تقلب الاتّجاه، والقلب لا يحدث إلّا عند الضرب في عدد سالب. ومن مدّ الطريقة إلى الجداء دون شرط أخطأ: ضرب حصرين طرفًا بطرف لا يجوز إلّا إذا كانت كلّ الحدود موجبة، وهنا x سالب.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "x و y عددان حقيقيان يحقّقان الحصرين التاليين:\n−3 ≤ x ≤ −1\n2 ≤ y ≤ 5\nولحصر الجداء xy كتب التلميذ ما يلي:\n(−3) × 2 ≤ xy ≤ (−1) × 5\nأيّ زوج (x ; y) يبيّن أنّ هذه الكتابة خاطئة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −3 و y = 2",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        },
+        {
+          "id": "b",
+          "text": "x = −3 و y = 4"
+        },
+        {
+          "id": "c",
+          "text": "x = −2 و y = 3",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        },
+        {
+          "id": "d",
+          "text": "x = −1 و y = 5",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نحسب الجداء في كلّ حالة: (−3) × 2 = −6 و (−2) × 3 = −6 و (−1) × 5 = −5، وكلّها تقع في المجال [−6 ; −5] فلا تنقض ما كتبه التلميذ. أمّا x = −3 و y = 4 فيعطي xy = −12، وهو أصغر من −6: مثال مضادّ ✓، فالكتابة −6 ≤ xy ≤ −5 خاطئة. الخطأ الشائع: عدّ زوج يعطي جداءً يساوي أحد الحدّين −6 و −5 مثالًا مضادًّا، والرمز ≤ يشمل الحدّ نفسه فلا ينقض الكتابة؛ والمثال المضادّ يُبحث عنه بمزج حدٍّ سالب بعيد عن الصفر مع عدد موجب كبير.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "x و y عددان حقيقيان يحقّقان الحصرين التاليين:\n−3 ≤ x ≤ −1\n2 ≤ y ≤ 5\nأيّ حصر للجداء xy صحيح مهما كان x و y في المجالين المعطيين ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−15 ≤ xy ≤ −5"
+        },
+        {
+          "id": "b",
+          "text": "−6 ≤ xy ≤ −5",
+          "misconceptionTag": "math.num.produit-conserve-l-ordre-sans-signe"
+        },
+        {
+          "id": "c",
+          "text": "−15 ≤ xy ≤ −2"
+        },
+        {
+          "id": "d",
+          "text": "2 ≤ xy ≤ 15",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "عند اختلاف الإشارات نحسب الجداءات الأربعة لحدود الحصرين: (−3) × 2 = −6 و (−3) × 5 = −15 و (−1) × 2 = −2 و (−1) × 5 = −5. أصغرها −15 وأكبرها −2، إذن −15 ≤ xy ≤ −2 ✓. الخطأ الشائع: ضرب الحدّين الأصغرين والحدّين الأكبرين (−6 ≤ xy ≤ −5)، وهو مشروع للأعداد الموجبة وحدها. ومن حذف الإشارة وجد 2 ≤ xy ≤ 15، وهو حصر القيمة المطلقة للجداء لا الجداء نفسه، مع أنّ الجداء سالب، ومن نسي الجداء (−1) × 2 وجد الحدّ الأعلى −5 بدل −2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "x و y عددان حقيقيان يحقّقان:\n−3 ≤ x ≤ −1\n2 ≤ y ≤ 5\nاختر كلّ العبارات الصحيحة مهما كان x و y في المجالين المذكورين.",
+      "options": [
+        {
+          "id": "a",
+          "text": "|x| = −x"
+        },
+        {
+          "id": "b",
+          "text": "|y − x| = y − x"
+        },
+        {
+          "id": "c",
+          "text": "|xy| = xy"
+        },
+        {
+          "id": "d",
+          "text": "|x + y| = |x| + |y|"
+        },
+        {
+          "id": "e",
+          "text": "|xy| = |x| × |y|"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "نختبر إشارة ما داخل كلّ قيمة مطلقة قبل حذفها. العدد x سالب فـ |x| = −x ✓. والفرق y − x موجب لأنّ y ≥ 2 و −x ≥ 1، فـ y − x ≥ 3 و |y − x| = y − x ✓. والجداء xy سالب (x سالب و y موجب)، فـ |xy| = −xy لا xy، والمساواة |xy| = xy خاطئة. أمّا قيمة الجداء المطلقة فهي دائمًا جداء القيمتين المطلقتين: |xy| = |x| × |y| ✓. والمساواة |x + y| = |x| + |y| لا تصحّ إلّا لعددين من الإشارة نفسها؛ هنا x سالب و y موجب، ومع x = −3 و y = 2 نجد |x + y| = |−1| = 1 بينما |x| + |y| = 3 + 2 = 5. الخطأ الشائع: حذف القيمة المطلقة دون اختبار الإشارة، وتوزيعها على المجموع.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعتبر المتراجحة التالية:\n4 − 2x ≥ 6\nلأيّ قيم x من المجال [−3 ; −1] تتحقّق هذه المتراجحة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "لا توجد أيّ قيمة منه",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "b",
+          "text": "القيمة −1 وحدها",
+          "misconceptionTag": "math.alg.inequation-sens-non-inverse"
+        },
+        {
+          "id": "c",
+          "text": "القيم من −3 إلى −2 فقط"
+        },
+        {
+          "id": "d",
+          "text": "كلّ قيم المجال"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نحلّ المتراجحة: 4 − 2x ≥ 6 تعطي −2x ≥ 2 بطرح 4 من الطرفين، ثمّ نقسم على −2 وهو سالب فينقلب الاتّجاه: x ≤ −1. وكلّ عدد من المجال [−3 ; −1] يحقّق x ≤ −1، إذن تتحقّق المتراجحة لكلّ قيم المجال ✓. تحقّق: x = −3 يعطي 4 + 6 = 10 ≥ 6، و x = −1 يعطي 4 + 2 = 6 ≥ 6. الخطأ الشائع: نسيان قلب الاتّجاه عند القسمة على −2، فنجد x ≥ −1 ولا يبقى من المجال إلّا −1. ومن نقل العدد 4 دون تغيير إشارته كتب −2x ≥ 10 فوجد x ≤ −5، ولا قيمة من المجال تحقّق ذلك؛ ومن قسم الحدّ 2x وحده على 2 وجد x ≤ −2، فلم يأخذ إلّا القيم من −3 إلى −2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.inequations",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "ABCD رباعي محدّب. اختر كلّ العبارات الصحيحة.",
+      "options": [
+        {
+          "id": "a",
+          "text": "إذا كان لـ [AC] و [BD] المنتصف نفسه فإنّ ABCD متوازي أضلاع"
+        },
+        {
+          "id": "b",
+          "text": "إذا كان (AB) ∥ (CD) فإنّ ABCD متوازي أضلاع مهما كان الضلعان الآخران"
+        },
+        {
+          "id": "c",
+          "text": "إذا كان AB = CD فإنّ ABCD متوازي أضلاع مهما كان الضلعان الآخران"
+        },
+        {
+          "id": "d",
+          "text": "إذا كان (AB) ∥ (CD) و AB = CD معًا فإنّ ABCD متوازي أضلاع"
+        },
+        {
+          "id": "e",
+          "text": "إذا كان AB = CD و AD = BC معًا فإنّ ABCD متوازي أضلاع"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "من طرق إثبات متوازي الأضلاع: قطران لهما نفس المنتصف ✓، أو ضلعان متقابلان متوازيان ومتقايسان معًا ✓، أو أضلاع متقابلة متقايسة مثنى مثنى ✓. أمّا خاصيّة واحدة من هذه فلا تكفي: رباعي له ضلعان متقابلان متوازيان فقط هو شبه منحرف، مثل الرباعي الذي رؤوسه (0 ; 0) و (6 ; 0) و (4 ; 3) و (1 ; 3)؛ ورباعي له ضلعان متقابلان متقايسان فقط قد يكون شبه منحرف متقايس الضلعين، مثل الرباعي الذي رؤوسه (0 ; 0) و (1 ; 3) و (5 ; 3) و (6 ; 0). الخطأ الشائع: عدّ نصف الشرط شرطًا كاملًا، أي الاكتفاء بالتوازي وحده أو بالتقايس وحده.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "قال تلميذ: «لا يمكن أن يكون قطرا مستطيل متعامدين أبدًا». ما التصحيح الصحيح لقوله ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "لا تصحيح، فقطرا المستطيل متقايسان ولا يتعامدان أبدًا"
+        },
+        {
+          "id": "b",
+          "text": "خاطئ، فقطرا كلّ مستطيل متعامدان دائمًا",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "c",
+          "text": "خاطئ، فهذا ممكن إذا كان المستطيل مربّعًا"
+        },
+        {
+          "id": "d",
+          "text": "خاطئ، فالمستطيل الذي يتعامد قطراه معيّن لا مربّع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المربّع مستطيل ومعيّن في آن واحد، فقطراه متقايسان ومتعامدان معًا. فإذا تعامد قطرا مستطيل، وهو متوازي أضلاع، كان معيّنًا أيضًا، أي مربّعًا ✓: الحالة ممكنة، ومثالها مربّع ضلعه 4. الخطأ الشائع: نسبة التعامد إلى قطرَي كلّ مستطيل، وقطرا المستطيل غير المربّع متقايسان وغير متعامدين؛ أو الاكتفاء بوصف «معيّن» مع أنّ الرباعي مستطيل أصلًا، فالوصف الأدقّ «مربّع».",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD رباعي محدّب قطراه [AC] و [BD] متقايسان، و I و J و K و L منتصفات [AB] و [BC] و [CD] و [DA] بالتتالي. استنتج تلميذ: «IJKL مستطيل». ما الحكم الصحيح على استنتاجه ؟\n<svg viewBox=\"0 0 350 205\"><title>رسم للوضعية المعطاة</title><path d=\"M108 160 L276 184 L324 40 L60 64 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/><path d=\"M108 160 L276 184 L324 40 L60 64 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M108 160 L324 40\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M276 184 L60 64\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M217.2 106.2 L211.3 95.7\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M220.7 104.3 L214.8 93.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M172.7 119.7 L166.8 130.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M169.2 117.8 L163.3 128.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"108\" cy=\"160\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"324\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"64\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"192\" cy=\"172\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"300\" cy=\"112\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"192\" cy=\"52\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"84\" cy=\"112\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"95\" y=\"172.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"287.4\" y=\"198.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"337.2\" y=\"37.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"45.9\" y=\"63.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"192\" y=\"190.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"314\" y=\"117\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text><text x=\"192\" y=\"43\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text><text x=\"70\" y=\"117\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "صحيح، فتقايس قطرَي ABCD ينتقل إلى قطرَي IJKL",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "b",
+          "text": "خاطئ، فهو مربّع لأنّ IJ = JK وله زاوية قائمة",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "c",
+          "text": "خاطئ، فهو ليس متوازي أضلاع لأنّ ABCD ليس متوازي أضلاع"
+        },
+        {
+          "id": "d",
+          "text": "خاطئ، فهو معيّن لأنّ IJ = AC/2 و JK = BD/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلّث ABC النقطتان I و J منتصفا ضلعين، فـ IJ = AC/2 و (IJ) ∥ (AC)؛ وفي المثلّث ACD النقطتان L و K منتصفا ضلعين، فـ LK = AC/2 و (LK) ∥ (AC). فـ IJKL متوازي أضلاع دائمًا، وبالمثل JK = BD/2. وبما أنّ AC = BD فإنّ IJ = JK، أي ضلعان متتاليان متقايسان: IJKL معيّن ✓. لا يكون مستطيلًا إلّا إذا تعامد القطران (AC) و (BD)، وهو غير معطى هنا. الخطأ الشائع: نقل خاصيّة القطرين كما هي إلى الرباعي الداخلي، والخاصيّة تنقلب: قطران متقايسان يعطيان معيّنًا، وقطران متعامدان يعطيان مستطيلًا. ومن أضاف زاوية قائمة لا دليل عليها جعله مربّعًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.triangles-base"
+      ]
+    }
+  ]
+}

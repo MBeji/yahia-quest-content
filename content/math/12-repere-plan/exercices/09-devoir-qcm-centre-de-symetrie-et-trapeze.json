@@ -1,0 +1,196 @@
+{
+  "title": "⭐⭐ تمرين موجّه: أسئلة قصيرة — رقم مجهول وجذور ومركز تناظر وشبه منحرف",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "مبلغ فاتورة من أربعة أرقام، 51a4 مليمًا، مُحي منه رقم العشرات a. نعلم أوّلًا أنّ ثلاثة أصدقاء يقتسمون هذا المبلغ بالتساوي دون باقٍ، أي أنّ العدد 51a4 يقبل القسمة على 3. ما كلّ القيم الممكنة للرقم a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1 أو 4 أو 7"
+        },
+        {
+          "id": "c",
+          "text": "2 أو 5 أو 8"
+        },
+        {
+          "id": "d",
+          "text": "0 أو 3 أو 6 أو 9",
+          "misconceptionTag": "math.num.critere-somme-applique-au-chiffre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "يقبل عدد القسمة على 3 إذا كان مجموع كلّ أرقامه مضاعفًا للعدد 3. مجموع الأرقام المعروفة 5 + 1 + 4 = 10، فيجب أن يكون 10 + a مضاعفًا للعدد 3، أي 12 أو 15 أو 18، ومنه a = 2 أو a = 5 أو a = 8 ✓. تحقّق: 5 124 = 3 × 1 708 و 5 154 = 3 × 1 718 و 5 184 = 3 × 1 728 ✓. الخطأ الشائع: تطبيق المعيار على الرقم a وحده بدل مجموع كلّ الأرقام، فتُختار 0 أو 3 أو 6 أو 9، مع أنّ 5 134 مجموع أرقامه 13؛ والاكتفاء بالحلّ الأوّل 2 ينسى القيمتين 5 و 8، والسؤال يطلب كلّ القيم. ومن أخطأ في جمع الأرقام المعروفة فوجد 11 بدل 10 وصل إلى 1 أو 4 أو 7.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ],
+      "acceptedAnswers": [
+        "2 و 5 و 8",
+        "2 ; 5 ; 8",
+        "2,5,8",
+        "a = 2 أو a = 5 أو a = 8"
+      ]
+    },
+    {
+      "prompt": "الفاتورة نفسها، 51a4 مليمًا، تُقتسم الآن بالتساوي دون باقٍ على 12 شخصًا. ما كلّ القيم الممكنة للرقم a في هذه الحالة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "0 أو 6",
+          "misconceptionTag": "math.num.critere-somme-applique-au-chiffre"
+        },
+        {
+          "id": "c",
+          "text": "2 أو 8"
+        },
+        {
+          "id": "d",
+          "text": "2 أو 5 أو 8",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "12 = 3 × 4 والعاملان أوليان فيما بينهما. القسمة على 4: العدد المكوّن من آخر رقمين، أي a4، مضاعف للعدد 4؛ تصلح 04 و 24 و 44 و 64 و 84، ولا تصلح 14 و 34 و 54 و 74 و 94، فالرقم a زوجي. القسمة على 3: مجموع الأرقام 5 + 1 + a + 4 = 10 + a مضاعف للعدد 3، ومنه a = 2 أو a = 5 أو a = 8. المشترك بين الشرطين: a = 2 أو a = 8 ✓، والمبلغان 5 124 = 12 × 427 و 5 184 = 12 × 432 ✓. الخطأ الشائع: الاكتفاء بشرط القسمة على 3 فيخرج 2 أو 5 أو 8؛ وتطبيق معيار 3 على a وحده مع الزوجيّة يعطي 0 أو 6، بينما 5 104 مجموع أرقامه 10 فلا يقبل القسمة على 3. ومن طبّق معيار 4 على الرقم a وحده، أي اشترط أن يكون a مضاعفًا للعدد 4، وجد 8 فقط، بينما 24 مضاعف للعدد 4 مع أنّ 2 ليس كذلك.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ],
+      "acceptedAnswers": [
+        "2 و 8",
+        "2 ; 8",
+        "a = 2 أو a = 8"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد:\nA = √50 + √(32 + 18)\nما الكتابة المبسّطة للعدد A ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√5",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        },
+        {
+          "id": "b",
+          "text": "10√2"
+        },
+        {
+          "id": "c",
+          "text": "12√2",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "d",
+          "text": "20",
+          "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نبدأ بما تحت الجذر الثاني، لأنّ الجذر لا يتوزّع على الجمع: 32 + 18 = 50. إذن A = √50 + √50، و √50 = √(25 × 2) = 5√2، ومنه A = 5√2 + 5√2 = 10√2 ✓. تحقّق تقريبيّ: √50 ≈ 7,07 فـ A ≈ 14,14، و 10√2 ≈ 14,14 ✓. الخطأ الشائع: كتابة √(32 + 18) = √32 + √18 = 4√2 + 3√2 = 7√2، فيخرج 12√2؛ وجذر المجموع ليس مجموع الجذرين: √(9 + 16) = 5 بينما √9 + √16 = 7. أمّا 20 فتأتي من جمع ما تحت الجذرين أيضًا: 5√2 + 5√2 = 10√4 = 20، والصواب جمع المعاملين وحدهما؛ و 4√5 تأتي من إخراج العامل الخطأ: √50 = 5√2 لا 2√5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في معلّم متعامد ومتجانس وحدته 1 m، حديقة على شكل متوازي أضلاع ABCD حيث A(−3 ; −1) و B(3 ; −1) و C(5 ; 3) و D(−1 ; 3). تقع نافورة في النقطة I، مركز تناظر الحديقة. ما إحداثيّتا I ؟\n<svg viewBox=\"0 0 268 180\"><title>الحديقة ABCD على شكل متوازي أضلاع</title><path d=\"M24 156 V24 M46 156 V24 M68 156 V24 M90 156 V24 M112 156 V24 M134 156 V24 M156 156 V24 M178 156 V24 M200 156 V24 M222 156 V24 M244 156 V24 M24 156 H244 M24 134 H244 M24 112 H244 M24 90 H244 M24 68 H244 M24 46 H244 M24 24 H244\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><path d=\"M24 112 H256 M112 156 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M262 112 L252 107.5 L252 116.5 Z M112 6 L107.5 16 L116.5 16 Z\" fill=\"#0f172a\"/><text x=\"134\" y=\"127\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><text x=\"103\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><path d=\"M46 134 L178 134 L222 46 L90 46 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\"/><path d=\"M46 134 L178 134 L222 46 L90 46 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"46\" cy=\"134\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"178\" cy=\"134\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"222\" cy=\"46\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"90\" cy=\"46\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"112\" cy=\"112\" r=\"3\" fill=\"#0f172a\"/><text x=\"102\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">O</text><text x=\"37\" y=\"150\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><text x=\"187\" y=\"150\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">B</text><text x=\"232\" y=\"40\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">C</text><text x=\"82\" y=\"38\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">D</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; 2)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; 3)"
+        },
+        {
+          "id": "d",
+          "text": "(4 ; 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مركز تناظر متوازي الأضلاع هو نقطة تقاطع قطريه، وقطراه يتقاطعان في منتصفيهما. القطران هنا [AC] و [BD]، لأنّ كلًّا منهما يصل رأسين متقابلين، فنحسب منتصف [AC]: I = ((−3 + 5)/2 ; (−1 + 3)/2) = (1 ; 1) ✓. تحقّق بالقطر الآخر: منتصف [BD] = ((3 + (−1))/2 ; (−1 + 3)/2) = (1 ; 1) ✓. الخطأ الشائع: جمع الإحداثيّات دون القسمة على 2 فيخرج (2 ; 2)؛ أو أخذ منتصف ضلع مثل [DC]، وهو (2 ; 3)، أو [BC]، وهو (4 ; 1)، والضلع ليس قطرًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "في الحديقة نفسها ABCD حيث A(−3 ; −1) و B(3 ; −1) و C(5 ; 3) و D(−1 ; 3)، نضع سياجًا على طول القطعة [AM]، حيث M منتصف [DC]. ما طبيعة الرباعي ABCM ؟\n<svg viewBox=\"0 0 268 180\"><title>الحديقة ABCD على شكل متوازي أضلاع</title><path d=\"M24 156 V24 M46 156 V24 M68 156 V24 M90 156 V24 M112 156 V24 M134 156 V24 M156 156 V24 M178 156 V24 M200 156 V24 M222 156 V24 M244 156 V24 M24 156 H244 M24 134 H244 M24 112 H244 M24 90 H244 M24 68 H244 M24 46 H244 M24 24 H244\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><path d=\"M24 112 H256 M112 156 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M262 112 L252 107.5 L252 116.5 Z M112 6 L107.5 16 L116.5 16 Z\" fill=\"#0f172a\"/><text x=\"134\" y=\"127\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><text x=\"103\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><path d=\"M46 134 L178 134 L222 46 L90 46 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\"/><path d=\"M46 134 L178 134 L222 46 L90 46 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"46\" cy=\"134\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"178\" cy=\"134\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"222\" cy=\"46\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"90\" cy=\"46\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"112\" cy=\"112\" r=\"3\" fill=\"#0f172a\"/><text x=\"102\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">O</text><text x=\"37\" y=\"150\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><text x=\"187\" y=\"150\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">B</text><text x=\"232\" y=\"40\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">C</text><text x=\"82\" y=\"38\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">D</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "مستطيل"
+        },
+        {
+          "id": "b",
+          "text": "متوازي أضلاع",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        {
+          "id": "c",
+          "text": "شبه منحرف"
+        },
+        {
+          "id": "d",
+          "text": "رباعي ليس له ضلعان متوازيان",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب M منتصف [DC]: M = ((−1 + 5)/2 ; (3 + 3)/2) = (2 ; 3). للنقطتين A و B الترتيبة نفسها −1، وللنقطتين M و C الترتيبة نفسها 3، فالضلعان [AB] و [MC] أفقيّان، ومنه (AB) ∥ (MC). لكنّ AB = 3 − (−3) = 6 و MC = 5 − 2 = 3، فهذان الضلعان المتقابلان غير متقايسين، والرباعي ليس متوازي أضلاع. له إذن زوج واحد من الأضلاع المتوازية: هو شبه منحرف قاعدتاه [AB] و [MC] ✓. الخطأ الشائع: الحكم بأنّه متوازي أضلاع لمجرّد وجود ضلعين متوازيين، بينما متوازي الأضلاع يحتاج زوجين؛ أو عدم رؤية التوازي لأنّ M ليست رأسًا من رؤوس الحديقة. ولا زاوية قائمة فيه ليكون مستطيلًا، فالضلعان [AM] و [BC] مائلان.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "الجزء ABCM من الحديقة شبه منحرف قاعدتاه [AB] و [MC]، حيث A(−3 ; −1) و B(3 ; −1) و C(5 ; 3) و M(2 ; 3)، والوحدة 1 m. ما مساحة هذا الجزء؟\n<svg viewBox=\"0 0 268 180\"><title>الجزء ABCM من الحديقة وارتفاعه</title><path d=\"M24 156 V24 M46 156 V24 M68 156 V24 M90 156 V24 M112 156 V24 M134 156 V24 M156 156 V24 M178 156 V24 M200 156 V24 M222 156 V24 M244 156 V24 M24 156 H244 M24 134 H244 M24 112 H244 M24 90 H244 M24 68 H244 M24 46 H244 M24 24 H244\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><path d=\"M24 112 H256 M112 156 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M262 112 L252 107.5 L252 116.5 Z M112 6 L107.5 16 L116.5 16 Z\" fill=\"#0f172a\"/><text x=\"134\" y=\"127\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><text x=\"121\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><path d=\"M46 134 L178 134 L222 46 L156 46 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\"/><path d=\"M46 134 L178 134 L222 46 L156 46 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M46 134 L90 46\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M90 46 L156 46\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M156 46 L156 134\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M147 134 V125 H156\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/><circle cx=\"46\" cy=\"134\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"178\" cy=\"134\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"222\" cy=\"46\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"156\" cy=\"46\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"90\" cy=\"46\" r=\"3.5\" fill=\"#94a3b8\"/><circle cx=\"112\" cy=\"112\" r=\"3\" fill=\"#0f172a\"/><text x=\"102\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">O</text><text x=\"37\" y=\"150\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><text x=\"187\" y=\"150\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">B</text><text x=\"232\" y=\"40\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">C</text><text x=\"82\" y=\"38\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">D</text><text x=\"156\" y=\"36\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">M</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 m²"
+        },
+        {
+          "id": "b",
+          "text": "18 m²"
+        },
+        {
+          "id": "c",
+          "text": "24 m²"
+        },
+        {
+          "id": "d",
+          "text": "36 m²",
+          "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "القاعدتان: AB = 3 − (−3) = 6 و MC = 5 − 2 = 3. والارتفاع هو البعد بين المستقيمين الأفقيّين (AB) و (MC)، أي فرق الترتيبتين: 3 − (−1) = 4. مساحة شبه المنحرف هي مجموع القاعدتين مضروبًا في الارتفاع ثمّ مقسومًا على 2: (6 + 3) × 4 ÷ 2 = 18 m² ✓. تحقّق بطريق ثانٍ: مساحة متوازي الأضلاع ABCD هي 6 × 4 = 24 m²، والمثلّث AMD المقتطع منه قاعدته DM = 3 وارتفاعه 4، فمساحته 3 × 4 ÷ 2 = 6 m²، و 24 − 6 = 18 m² ✓. الخطأ الشائع: نسيان القسمة على 2 فيخرج 36 m²؛ أو ضرب قاعدة واحدة في الارتفاع فيخرج 24 m² أو 12 m²، و 24 m² هي أيضًا مساحة الحديقة كلّها لا مساحة الجزء.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires",
+        "math.vec.repere-calculs"
+      ]
+    }
+  ]
+}

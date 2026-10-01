@@ -1,0 +1,245 @@
+{
+  "title": "⭐⭐ تمرين موجّه: سلسلة مجمّعة في فئات — المنوال والمعدّل والوسيط",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "يمثّل المدرّج التكراري مدّة تنقّل 40 تلميذًا من البيت إلى المدرسة (بالدقائق)، مجمّعة في خمس فئات طول كلّ منها 10 دقائق. ما الفئة الأكثر تكرارًا، أي الفئة المنوال؟\n<svg viewBox=\"0 0 290 206\"><path d=\"M34 176 L248 176 M34 176 L34 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M248 176 L242 172 L242 180 Z M34 26 L30 32 L38 32 Z\" fill=\"#0f172a\"/><path d=\"M34 176 L34 44 L74 44 L74 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M74 176 L74 66 L114 66 L114 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M114 176 L114 99 L154 99 L154 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M154 176 L154 99 L194 99 L194 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M194 176 L194 132 L234 132 L234 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><g font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"34\" y=\"193\" text-anchor=\"middle\">0</text><text x=\"74\" y=\"193\" text-anchor=\"middle\">10</text><text x=\"114\" y=\"193\" text-anchor=\"middle\">20</text><text x=\"154\" y=\"193\" text-anchor=\"middle\">30</text><text x=\"194\" y=\"193\" text-anchor=\"middle\">40</text><text x=\"234\" y=\"193\" text-anchor=\"middle\">50</text><text x=\"54\" y=\"38\" text-anchor=\"middle\">12</text><text x=\"94\" y=\"60\" text-anchor=\"middle\">10</text><text x=\"134\" y=\"93\" text-anchor=\"middle\">7</text><text x=\"174\" y=\"93\" text-anchor=\"middle\">7</text><text x=\"214\" y=\"126\" text-anchor=\"middle\">4</text></g><g font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"246\" y=\"193\" text-anchor=\"start\">min</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "[0 ; 10["
+        },
+        {
+          "id": "b",
+          "text": "[10 ; 20["
+        },
+        {
+          "id": "c",
+          "text": "[20 ; 30["
+        },
+        {
+          "id": "d",
+          "text": "[40 ; 50[",
+          "misconceptionTag": "math.stat.mode-et-valeur-maximale-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الفئة المنوال هي صاحبة أعلى تكرار، أي أعلى عمود في المدرّج: [0 ; 10[ بتكرار 12 ✓. المنوال يُقرأ في التكرارات لا في القيم، فالفئة [40 ; 50[ ذات أكبر المدد لا يقع فيها إلّا 4 تلاميذ. والفئة [20 ; 30[ هي الفئة الوسطى في الجدول، والوسط ليس المنوال.",
+      "difficulty": 1,
+      "competencies": [
+        "math.stat.mode"
+      ]
+    },
+    {
+      "prompt": "يمثّل المدرّج التكراري مدّة تنقّل 40 تلميذًا من البيت إلى المدرسة (بالدقائق). ما النسبة المائوية للتلاميذ الذين يصلون في أقلّ من 10 دقائق؟\n<svg viewBox=\"0 0 290 206\"><path d=\"M34 176 L248 176 M34 176 L34 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M248 176 L242 172 L242 180 Z M34 26 L30 32 L38 32 Z\" fill=\"#0f172a\"/><path d=\"M34 176 L34 44 L74 44 L74 176\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M74 176 L74 66 L114 66 L114 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M114 176 L114 99 L154 99 L154 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M154 176 L154 99 L194 99 L194 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M194 176 L194 132 L234 132 L234 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><g font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"34\" y=\"193\" text-anchor=\"middle\">0</text><text x=\"74\" y=\"193\" text-anchor=\"middle\">10</text><text x=\"114\" y=\"193\" text-anchor=\"middle\">20</text><text x=\"154\" y=\"193\" text-anchor=\"middle\">30</text><text x=\"194\" y=\"193\" text-anchor=\"middle\">40</text><text x=\"234\" y=\"193\" text-anchor=\"middle\">50</text><text x=\"54\" y=\"38\" text-anchor=\"middle\">12</text><text x=\"94\" y=\"60\" text-anchor=\"middle\">10</text><text x=\"134\" y=\"93\" text-anchor=\"middle\">7</text><text x=\"174\" y=\"93\" text-anchor=\"middle\">7</text><text x=\"214\" y=\"126\" text-anchor=\"middle\">4</text></g><g font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"246\" y=\"193\" text-anchor=\"start\">min</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 %",
+          "misconceptionTag": "math.stat.effectif-frequence-confondus"
+        },
+        {
+          "id": "b",
+          "text": "25 %"
+        },
+        {
+          "id": "c",
+          "text": "30 %"
+        },
+        {
+          "id": "d",
+          "text": "70 %",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الفئة [0 ; 10[ تكرارها 12 من أصل 40، فتواترها 12/40 = 0,3، أي 30 % ✓. التكرار عدد (12 تلميذًا) والتواتر نسبة، فكتابة 12 % تخلط بينهما. و 70 % هي نسبة التلاميذ الآخرين، الذين يحتاجون 10 دقائق أو أكثر، و 25 % = 10/40 تقرأ عمود الفئة المجاورة.",
+      "difficulty": 1,
+      "competencies": [
+        "math.stat.effectifs-frequences",
+        "math.prop.pourcentages"
+      ]
+    },
+    {
+      "prompt": "مدّة تنقّل 40 تلميذًا (بالدقائق) مجمّعة في الفئات [0 ; 10[ و [10 ; 20[ و [20 ; 30[ و [30 ; 40[ و [40 ; 50[، بالتكرارات 12 و 10 و 7 و 7 و 4 على الترتيب. نعوّض كلّ فئة بمركزها. ما المعدّل الحسابي لمدّة التنقّل؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "15,25",
+          "misconceptionTag": "math.stat.borne-de-classe-au-lieu-du-centre"
+        },
+        {
+          "id": "b",
+          "text": "20,25"
+        },
+        {
+          "id": "c",
+          "text": "25",
+          "misconceptionTag": "math.stat.moyenne-sans-ponderation"
+        },
+        {
+          "id": "d",
+          "text": "25,25",
+          "misconceptionTag": "math.stat.borne-de-classe-au-lieu-du-centre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مراكز الفئات 5 و 15 و 25 و 35 و 45. نضرب كلّ مركز في تكراره ونجمع: 5 × 12 + 15 × 10 + 25 × 7 + 35 × 7 + 45 × 4 = 60 + 150 + 175 + 245 + 180 = 810، ثمّ نقسم على التكرار الكلّي: 810 ÷ 40 = 20,25 دقيقة ✓. الخطأ الشائع حساب معدّل المراكز دون ترجيح: (5 + 15 + 25 + 35 + 45) ÷ 5 = 25. والقيمتان 15,25 و 25,25 تستعملان الحدّ الأدنى أو الحدّ الأعلى لكلّ فئة بدل مركزها.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.moyenne-mediane"
+      ]
+    },
+    {
+      "prompt": "نمثّل مدّة تنقّل 40 تلميذًا بقطاعات دائرية، قطاع لكلّ فئة. الفئة [20 ; 30[ تكرارها 7. ما قيس زاوية قطاعها؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7°"
+        },
+        {
+          "id": "b",
+          "text": "17,5°",
+          "misconceptionTag": "math.stat.pourcentage-et-angle-de-secteur-confondus"
+        },
+        {
+          "id": "c",
+          "text": "63°"
+        },
+        {
+          "id": "d",
+          "text": "72°"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "تواتر الفئة [20 ; 30[ هو 7/40 = 0,175، وزاوية القطاع = التواتر × 360° = 0,175 × 360° = 63° ✓. الخطأ الشائع أخذ النسبة المائوية 17,5 % قيسًا للزاوية، والدائرة كلّها 360° لا 100. والقيمة 72° = 360° ÷ 5 تعطي الفئات الخمس حصصًا متساوية وكأنّ تكراراتها متساوية، و 7° تأخذ التكرار نفسه زاويةً.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.effectifs-frequences",
+        "math.prop.pourcentages",
+        "math.geo.angles-mesure"
+      ]
+    },
+    {
+      "prompt": "يمثّل المدرّج التكراري مدّة تنقّل 40 تلميذًا (بالدقائق)، والفئات مرتّبة تصاعديًّا. ما التكرار المجمّع للفئة [20 ; 30[ ؟\n<svg viewBox=\"0 0 290 206\"><path d=\"M34 176 L248 176 M34 176 L34 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M248 176 L242 172 L242 180 Z M34 26 L30 32 L38 32 Z\" fill=\"#0f172a\"/><path d=\"M34 176 L34 44 L74 44 L74 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M74 176 L74 66 L114 66 L114 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M114 176 L114 99 L154 99 L154 176\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M154 176 L154 99 L194 99 L194 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M194 176 L194 132 L234 132 L234 176\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><g font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"34\" y=\"193\" text-anchor=\"middle\">0</text><text x=\"74\" y=\"193\" text-anchor=\"middle\">10</text><text x=\"114\" y=\"193\" text-anchor=\"middle\">20</text><text x=\"154\" y=\"193\" text-anchor=\"middle\">30</text><text x=\"194\" y=\"193\" text-anchor=\"middle\">40</text><text x=\"234\" y=\"193\" text-anchor=\"middle\">50</text><text x=\"54\" y=\"38\" text-anchor=\"middle\">12</text><text x=\"94\" y=\"60\" text-anchor=\"middle\">10</text><text x=\"134\" y=\"93\" text-anchor=\"middle\">7</text><text x=\"174\" y=\"93\" text-anchor=\"middle\">7</text><text x=\"214\" y=\"126\" text-anchor=\"middle\">4</text></g><g font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"246\" y=\"193\" text-anchor=\"start\">min</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "7",
+          "misconceptionTag": "math.stat.effectif-cumule-non-cumule"
+        },
+        {
+          "id": "b",
+          "text": "18",
+          "misconceptionTag": "math.stat.cumul-croissant-decroissant-confondus"
+        },
+        {
+          "id": "c",
+          "text": "22"
+        },
+        {
+          "id": "d",
+          "text": "29"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "التكرار المجمّع يراكم التكرارات من الفئة الأولى حتّى الفئة المعنيّة: 12 + 10 + 7 = 29 ✓، فـ 29 تلميذًا يصلون في أقلّ من 30 دقيقة. الخطأ الشائع إعطاء تكرار الفئة وحدها 7. والعدد 22 = 12 + 10 يتوقّف عند الفئة السابقة، و 18 = 7 + 7 + 4 يراكم من الجهة المعاكسة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "من بين 40 تلميذًا، يصل 29 تلميذًا إلى المدرسة في أقلّ من 30 دقيقة، وهو التكرار المجمّع للفئة [20 ; 30[. ما النسبة المائوية للتلاميذ الذين يحتاجون 30 دقيقة أو أكثر؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "11 %",
+          "misconceptionTag": "math.stat.effectif-frequence-confondus"
+        },
+        {
+          "id": "b",
+          "text": "17,5 %"
+        },
+        {
+          "id": "c",
+          "text": "27,5 %"
+        },
+        {
+          "id": "d",
+          "text": "72,5 %",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الباقون هم 40 − 29 = 11 تلميذًا، وهم تكرارا الفئتين [30 ; 40[ و [40 ; 50[: 7 + 4 = 11. تواترهم 11/40 = 0,275، أي 27,5 % ✓. والنسبة 72,5 % = 29/40 تخصّ من يصلون في أقلّ من 30 دقيقة، و 11 % تكتب التكرار 11 مكان النسبة، و 17,5 % = 7/40 تنسى الفئة الأخيرة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.effectifs-frequences",
+        "math.prop.pourcentages"
+      ]
+    },
+    {
+      "prompt": "سلسلة مدّة التنقّل تكرارها الكلّي 40، وهو عدد زوجيّ. بعد ترتيب المدد الأربعين تصاعديًّا، عند أيّ رتبة أو رتبتين يُقرأ الوسيط؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "عند الرتبتين 20 و 21"
+        },
+        {
+          "id": "b",
+          "text": "عند الرتبتين 19 و 20"
+        },
+        {
+          "id": "c",
+          "text": "عند الرتبة 20 وحدها",
+          "misconceptionTag": "math.stat.mediane-effectif-pair-sans-moyenne"
+        },
+        {
+          "id": "d",
+          "text": "عند الرتبة 20,5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "عدد القيم 40 زوجيّ، فلا توجد قيمة وسطى وحيدة: الوسيط هو معدّل القيمتين ذواتَي الرتبتين 40 ÷ 2 = 20 و 20 + 1 = 21 ✓، تحت الأولى 19 قيمة وفوق الثانية 19 قيمة. الخطأ الشائع الاكتفاء بالرتبة 20 وحدها. والرتبة (40 + 1) ÷ 2 = 20,5 لا وجود لها، فهي تطبّق قاعدة العدد الفرديّ على عدد زوجيّ، والرتبتان 19 و 20 تنزلان رتبة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.moyenne-mediane"
+      ]
+    },
+    {
+      "prompt": "مدّة تنقّل 40 تلميذًا مجمّعة في الفئات [0 ; 10[ و [10 ; 20[ و [20 ; 30[ و [30 ; 40[ و [40 ; 50[، والتكرارات المجمّعة لهذه الفئات هي على الترتيب 12 و 22 و 29 و 36 و 40. الوسيط هو معدّل القيمتين ذواتَي الرتبتين 20 و 21. إلى أيّ فئة ينتمي الوسيط؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "[0 ; 10[",
+          "misconceptionTag": "math.stat.mode-mediane-confondus"
+        },
+        {
+          "id": "b",
+          "text": "[10 ; 20["
+        },
+        {
+          "id": "c",
+          "text": "[20 ; 30[",
+          "misconceptionTag": "math.stat.mediane-au-milieu-des-extremes"
+        },
+        {
+          "id": "d",
+          "text": "[30 ; 40["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "التكرار المجمّع 12 عند الفئة الأولى أصغر من 20، ثمّ يبلغ 22 عند الفئة [10 ; 20[: فالقيمتان ذواتا الرتبتين 20 و 21 كلتاهما في هذه الفئة، ومعدّلهما، أي الوسيط، ينتمي إليها ✓. الخطأ الشائع قراءة الوسيط دون تجميع التكرارات، بأخذ الفئة الوسطى في الجدول [20 ; 30[ التي تحوي منتصف ما بين أصغر مدّة وأكبرها لا منتصف التلاميذ. والفئة [0 ; 10[ هي الفئة المنوال: المنوال والوسيط سؤالان مختلفان. أمّا الفئة [30 ; 40[ فتضمّ الرتب من 30 إلى 36، بعيدًا عن الرتبتين 20 و 21.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.moyenne-mediane",
+        "math.stat.effectifs-frequences"
+      ]
+    }
+  ]
+}

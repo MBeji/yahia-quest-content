@@ -1,0 +1,246 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: حوض دائري في ركن حديقة — من فيثاغورس إلى معادلة الشعاع",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "ABCD حديقة مربّعة، وشجرة P داخلها تبعد 1 m عن (AB) و 8 m عن (AD). ما المسافة AP بين الركن A والشجرة P بالمتر ؟\n<svg viewBox=\"0 0 300 285\"><title>الشجرة P في الحديقة المربّعة ABCD</title><polygon points=\"22,262 268,262 268,16 22,16\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"22\" y1=\"262\" x2=\"87.6\" y2=\"253.8\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"87.6\" cy=\"253.8\" r=\"3.8\" fill=\"#b91c1c\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12\" y=\"278\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"278\" y=\"278\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"278\" y=\"10\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"12\" y=\"10\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"99.6\" y=\"257.8\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">P</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "√65"
+        },
+        {
+          "id": "c",
+          "text": "65",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "√63",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "النقطة P تبعد 1 m عن (AB) و 8 m عن (AD)، و (AB) ⊥ (AD) في الركن A. المسقطان العموديان للنقطة P على هذين الضلعين يبعدان عن A بـ 8 m و 1 m، فهما ضلعا مثلّث قائم في A وتره [AP]. بفيثاغورس: AP² = 8² + 1² = 65، إذن AP = √65 ≈ 8,06 m ✓. التحقّق: √65 ≈ 8,06 أكبر بقليل من 8، وهذا منتظر لأنّ P قريبة جدًّا من (AB) ✓. الخطأ الشائع: جمع الضلعين بدل مربّعيهما، 8 + 1 = 9؛ أو التوقّف عند AP² = 65 دون جذر؛ أو أخذ أحد الضلعين وترًا، √(8² − 1²) = √63.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABCD حديقة مربّعة الشكل. نحفر في الركن A حوضًا دائريًّا مركزه O وشعاعه r (بالمتر)، وتبعد O عن كلٍّ من (AB) و (AD) مسافة تساوي r. شجرة P تقع على حافّة الحوض، وتبعد 1 m عن (AB) و 8 m عن (AD). نرسم من O العمودي على (AB) ومن P الموازي لـ (AB)، فيتقاطعان في S. بتطبيق نظرية فيثاغورس في المثلّث OSP القائم في S، أيّ مساواة يحقّقها r ؟\n<svg viewBox=\"0 0 290 292\"><title>حديقة مربّعة ABCD وحوض دائري في الركن A تمرّ حافّته من P</title><polygon points=\"26,266 266,266 266,26 26,26\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"86\" cy=\"206\" r=\"60\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f6e56\" stroke-width=\"2.2\"/><line x1=\"86\" y1=\"206\" x2=\"86\" y2=\"266\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"86\" y1=\"206\" x2=\"26\" y2=\"206\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"26\" y1=\"254\" x2=\"122\" y2=\"254\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"122\" y1=\"254\" x2=\"122\" y2=\"266\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"86\" y1=\"206\" x2=\"122\" y2=\"254\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"206\" x2=\"86\" y2=\"254\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"254\" x2=\"122\" y2=\"254\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M 86 246 L 94 246 L 94 254\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"86\" cy=\"206\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"122\" cy=\"254\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"86\" cy=\"254\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"86\" cy=\"266\" r=\"3\" fill=\"#94a3b8\"/><circle cx=\"26\" cy=\"206\" r=\"3\" fill=\"#94a3b8\"/><path d=\"M 26 276 L 122 276 M 26 272 L 26 280 M 122 272 L 122 280\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"16\" y=\"282\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"276\" y=\"282\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"276\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"16\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"75\" y=\"201\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"134\" y=\"248\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"77\" y=\"249\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">S</text><text x=\"56\" y=\"200\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"14\">r</text><text x=\"131\" y=\"264\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">1</text><text x=\"74\" y=\"289\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">8</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(r − 1) + (8 − r) = r",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "r² = 8² + 1²"
+        },
+        {
+          "id": "c",
+          "text": "(r − 1)² + (8 − r)² = r²"
+        },
+        {
+          "id": "d",
+          "text": "(r − 1)² + r² = (8 − r)²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "O على بُعد r من (AB)، و S على بُعد 1 من (AB) لأنّ (PS) ∥ (AB) و P تبعد 1 عنه، فـ OS = r − 1. و P تبعد 8 عن (AD) بينما (OS) على بُعد r منه، فـ SP = |8 − r|، ويكفي تربيعها: (8 − r)². الوتر هو الضلع المقابل للزاوية القائمة في S، أي [OP]، وطوله r لأنّ P على الحوض. إذن OS² + SP² = OP²، أي (r − 1)² + (8 − r)² = r² ✓. التحقّق: التربيع يلغي الإشارة، فلا يهمّ إن كان r − 1 أو 8 − r سالبًا، لأنّ مربّع القيمة المطلقة لعدد هو مربّع العدد نفسه ✓. الخطأ الشائع: جمع الطولين بدل مربّعيهما فيخرج r = 7، وهو لا يحقّق فيثاغورس (36 + 1 ≠ 49)؛ أو اختيار الوتر خطأً، أي أخذ [SP] وترًا؛ أو نسيان أنّ O ليست في الركن فيُستعمل 8 و 1 ضلعين قائمين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.mise-en-equation"
+      ]
+    },
+    {
+      "prompt": "بتطبيق نظرية فيثاغورس وجدنا:\n(r − 1)² + (8 − r)² = r²\nبعد النشر والاختزال، أيّ معادلة نحصل عليها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "r² − 18r + 65 = 0"
+        },
+        {
+          "id": "b",
+          "text": "2r² − 18r + 65 = 0"
+        },
+        {
+          "id": "c",
+          "text": "r² + 18r + 65 = 0",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        },
+        {
+          "id": "d",
+          "text": "r² + 18r − 63 = 0",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ننشر بمتطابقة مربّع الفرق: (r − 1)² = r² − 2r + 1 و (8 − r)² = 64 − 16r + r². المجموع 2r² − 18r + 65، ونطرح r² من الطرفين: 2r² − 18r + 65 = r² فتصير المعادلة r² − 18r + 65 = 0 ✓. التحقّق بقيمة اختبار r = 1: الطرف الأيسر في المعادلة الأصلية 0² + 7² = 49 والأيمن 1، فالفرق 48؛ وفي المعادلة الناتجة 1 − 18 + 65 = 48 ✓. الخطأ الشائع: نسيان نقل r² من الطرف الأيمن فيبقى 2r² − 18r + 65 = 0؛ أو جعل الجداء المضاعف موجبًا في المربّعين فيخرج r² + 18r + 65 = 0؛ أو جعل الحدّ الأخير سالبًا في المربّعين فيخرج r² + 18r − 63 = 0.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "ليكن r عددًا حقيقيًّا. نعلم أنّ:\n(r − 9)² − 16 = r² − 18r + 65\nأيّ جداء عاملين من الدرجة الأولى يساوي r² − 18r + 65 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(r − 13)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "b",
+          "text": "(r − 13)(r − 5)"
+        },
+        {
+          "id": "c",
+          "text": "(r − 25)(r + 7)"
+        },
+        {
+          "id": "d",
+          "text": "(r + 5)(r + 13)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "16 = 4²، فالطرف الأيسر (r − 9)² − 16 = (r − 9)² − 4² فرق مربّعين: a² − b² = (a − b)(a + b) مع a = r − 9 و b = 4. إذن r² − 18r + 65 = (r − 9 − 4)(r − 9 + 4) = (r − 13)(r − 5) ✓. التحقّق بالنشر: (r − 13)(r − 5) = r² − 5r − 13r + 65 = r² − 18r + 65 ✓. الخطأ الشائع: أخذ b = 16 بدل 4 فيخرج (r − 25)(r + 7)، ونشره يعطي r² − 18r − 175؛ أو الخلط بين فرق مربّعين ومربّع فيخرج (r − 13)²؛ أو قلب إشارة r − 9 فيخرج (r + 5)(r + 13).",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "تصير معادلة الشعاع بعد التعميل:\n(r − 13)(r − 5) = 0\nما مجموعة حلول هذه المعادلة في ℝ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "r = 13",
+          "misconceptionTag": "math.alg.produit-nul-une-seule-solution"
+        },
+        {
+          "id": "b",
+          "text": "r = −5 أو r = −13"
+        },
+        {
+          "id": "c",
+          "text": "لا توجد قيمة",
+          "misconceptionTag": "math.alg.produit-nul-et-au-lieu-de-ou"
+        },
+        {
+          "id": "d",
+          "text": "r = 5 أو r = 13"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "جداء عاملين ينعدم إذا انعدم أحدهما. إمّا r − 13 = 0 أي r = 13، وإمّا r − 5 = 0 أي r = 5. للمعادلة حلّان هما 5 و 13 ✓. التحقّق: 5² − 18 × 5 + 65 = 25 − 90 + 65 = 0 و 13² − 18 × 13 + 65 = 169 − 234 + 65 = 0 ✓. الخطأ الشائع: الاكتفاء بأحد العاملين فيبقى حلّ واحد؛ أو قلب إشارتي العددين الظاهرين في القوسين فيخرج −5 و −13، مع أنّ العامل r − 13 ينعدم عند r = 13 لا عند −13؛ أو اشتراط انعدام العاملين معًا فلا يوجد عدد يحقّق الشرطين فيُحكم خطأً بعدم وجود حلّ.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit"
+      ]
+    },
+    {
+      "prompt": "معادلة الشعاع r حلّاها 5 و 13. يجب أن يقع الحوض كلّه داخل الحديقة المربّعة ABCD التي ضلعها 20 m، ومركزه O يبعد r عن كلٍّ من (AB) و (AD). ما قيمة r المقبولة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 m"
+        },
+        {
+          "id": "b",
+          "text": "10 m",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "13 m"
+        },
+        {
+          "id": "d",
+          "text": "5 m أو 13 m",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "حلّا المعادلة 5 و 13، لكنّ الحوض يجب أن يقع كلّه داخل الحديقة، فقطره 2r لا يتجاوز ضلعها 20 m، أي r ≤ 10. القيمة 5 تحقّق الشرط لأنّ قطر الحوض 10 m، والقيمة 13 لا تحقّقه لأنّ قطره 26 m أكبر من 20 m، فنرفضها ✓. إذن r = 5 m. الخطأ الشائع: الاكتفاء بمقارنة 13 بضلع الحديقة (13 < 20) دون مقارنة القطر 26 بها، أو الاحتفاظ بالحلّين لأنّهما يحقّقان المعادلة. أمّا 10 m فهو أكبر شعاع ممكن، لا الحلّ المطلوب.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.mise-en-equation"
+      ]
+    },
+    {
+      "prompt": "حوض دائري مركزه O وشعاعه 5 m، وتبعد O عن كلٍّ من (AB) و (AD) مسافة 5 m. النقطة N هي أقرب نقطة من حافّته إلى الركن A، وتقع على القطعة [AO]. ما طول AN بالمتر ؟\n<svg viewBox=\"0 0 275 258\"><title>الركن A والحوض الدائري الذي شعاعه 5 m</title><path d=\"M28 60 L 28 236 L 237 236\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><circle cx=\"138\" cy=\"126\" r=\"110\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f6e56\" stroke-width=\"2.2\"/><line x1=\"28\" y1=\"236\" x2=\"138\" y2=\"126\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"138\" y1=\"126\" x2=\"138\" y2=\"236\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"138\" y1=\"126\" x2=\"28\" y2=\"126\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"28\" cy=\"236\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"138\" cy=\"126\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"60.22\" cy=\"203.78\" r=\"4\" fill=\"#b91c1c\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"17\" y=\"252\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150\" y=\"122\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"64.22\" y=\"221.78\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5√2 + 5"
+        },
+        {
+          "id": "b",
+          "text": "5√2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "5√2 − 5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المسقطان العموديان للنقطة O على (AB) و (AD) يبعدان 5 عن الركن A، فالمثلّث القائم الذي ضلعاه 5 و 5 وتره [AO]: AO² = 5² + 5² = 50، إذن AO = 5√2 ≈ 7,07 m. النقطة N على [AO] وON = 5 (شعاع)، فـ AN = AO − ON = 5√2 − 5 ≈ 2,07 m ✓. الخطأ الشائع: جمع الضلعين بدل مربّعيهما (AO = 5 + 5 = 10) فيخرج AN = 10 − 5 = 5؛ أو التوقّف عند AO = 5√2 دون طرح الشعاع؛ أو إضافة الشعاع بدل طرحه فيخرج 5√2 + 5، وهو بُعد أبعد نقطة من الحافّة عن A.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "حديقة مربّعة ABCD ضلعها 30 m. نقارن فيها الحوضين الممكنين: الأوّل شعاعه 5 m ومركزه O، والثاني شعاعه 13 m ومركزه L، ويبعد مركز كلّ منهما عن (AB) و (AD) مسافة تساوي شعاعه. ما المسافة OL بالمتر ؟\n<svg viewBox=\"0 0 300 285\"><title>حوضان دائريان في ركن الحديقة</title><polygon points=\"22,262 268,262 268,16 22,16\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"63\" cy=\"221\" r=\"41\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f6e56\" stroke-width=\"2.2\"/><circle cx=\"128.6\" cy=\"155.4\" r=\"106.6\" fill=\"#2563eb\" fill-opacity=\"0.07\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><line x1=\"22\" y1=\"262\" x2=\"268\" y2=\"16\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"63\" cy=\"221\" r=\"3.8\" fill=\"#0f6e56\"/><circle cx=\"128.6\" cy=\"155.4\" r=\"3.8\" fill=\"#2563eb\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12\" y=\"278\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"278\" y=\"278\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"278\" y=\"10\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"12\" y=\"10\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"74\" y=\"217\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"139.6\" y=\"151.4\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "128",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "16",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "8√2"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المركز O يبعد 5 عن كلّ من (AB) و (AD)، والمركز L يبعد 13 عنهما. فالفرق بين بُعديهما عن كلّ ضلع هو 13 − 5 = 8، وOL وتر المثلّث القائم الذي ضلعاه القائمان 8 و 8: OL² = 8² + 8² = 128، إذن OL = √128 = 8√2 ≈ 11,3 m ✓. طريق ثانٍ: المركزان على القطر (AC)، و AO = 5√2 و AL = 13√2، فـ OL = 13√2 − 5√2 = 8√2 ✓. الخطأ الشائع: جمع الضلعين بدل مربّعيهما فيخرج 16؛ أو التوقّف عند OL² = 128 دون جذر؛ أو الاكتفاء بضلع واحد فيخرج 8.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}

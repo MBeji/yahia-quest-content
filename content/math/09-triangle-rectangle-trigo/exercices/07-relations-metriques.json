@@ -1,0 +1,190 @@
+{
+  "title": "⭐⭐ تمرين تطبيقي: العلاقات القياسيّة في المثلّث القائم (نمط امتحان)",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "المثلّث ABC قائم الزاوية في A، و H المسقط العمودي للنقطة A على المستقيم (BC). أيّ المتساويات التالية صحيحة دائمًا؟\n<svg viewBox=\"0 0 300 210\"><path d=\"M115 50 L25 170 L275 170 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M115 50 L25 170 L275 170 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M115 50 L115 170\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M107.2 60.4 L117.6 68.2 L125.4 57.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M115 159 L126 159 L126 170\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"115\" cy=\"50\" r=\"3.5\"/><circle cx=\"25\" cy=\"170\" r=\"3.5\"/><circle cx=\"275\" cy=\"170\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"115\" cy=\"170\" r=\"3.5\"/></g><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"110.8\" y=\"40.6\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">A</text><text x=\"15\" y=\"186\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">B</text><text x=\"285\" y=\"186\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">C</text><text x=\"115\" y=\"190\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f6e56\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AH = BH × CH",
+          "misconceptionTag": "math.geo.relation-hauteur-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "AH² = BH + CH",
+          "misconceptionTag": "math.geo.relation-hauteur-somme-au-lieu-de-produit"
+        },
+        {
+          "id": "c",
+          "text": "AH × AB = AC × BC",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "d",
+          "text": "AH × BC = AB × AC"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المساحة واحدة مهما كانت القاعدة: بالقاعدة [AC] وارتفاعها [AB] نجد (AB × AC) ÷ 2، وبالوتر [BC] وارتفاعه [AH] نجد (BC × AH) ÷ 2، إذن AH × BC = AB × AC. الخطأ الشائع: ضرب الارتفاع في ضلع قائم كما في AH × AB = AC × BC، مع أنّ [AH] عمودي على الوتر لا على [AB]. أمّا العلاقة الثانية فهي AH² = BH × CH: المربّع للارتفاع والجداء لقطعتي الوتر، فلا يصحّ BH + CH (وهو الوتر نفسه)، ولا AH بلا تربيع.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم الزاوية في A حيث AB = 18 cm و AC = 24 cm و BC = 30 cm، و H المسقط العمودي للنقطة A على (BC). ما طول AH؟\n<svg viewBox=\"0 0 300 232\"><path d=\"M115.7 49 L25 170 L277 170 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M115.7 49 L25 170 L277 170 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M115.7 49 L115.7 170\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M107.9 59.4 L118.3 67.2 L126.1 56.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M115.7 159 L126.7 159 L126.7 170\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"115.7\" cy=\"49\" r=\"3.5\"/><circle cx=\"25\" cy=\"170\" r=\"3.5\"/><circle cx=\"277\" cy=\"170\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"115.7\" cy=\"170\" r=\"3.5\"/></g><path d=\"M25 204 L277 204 M25 199 L25 209 M277 199 L277 209\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"111.5\" y=\"39.6\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">A</text><text x=\"15\" y=\"186\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">B</text><text x=\"287\" y=\"186\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">C</text><text x=\"115.7\" y=\"190\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f6e56\">H</text><text x=\"60\" y=\"106.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">18</text><text x=\"204.2\" y=\"104.1\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">24</text><text x=\"151\" y=\"221\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">30</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,2 cm",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        },
+        {
+          "id": "b",
+          "text": "14,4 cm"
+        },
+        {
+          "id": "c",
+          "text": "15 cm",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "d",
+          "text": "22,5 cm",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نحسب مساحة المثلّث مرّتين: (AB × AC) ÷ 2 = (18 × 24) ÷ 2 = 216، و (BC × AH) ÷ 2 = (30 × AH) ÷ 2. المساحة واحدة، إذن 30 × AH = 18 × 24 = 432، ومنه AH = 432 ÷ 30 = 14,4 cm. تحقّق: 14,4 أصغر من 18 ومن 24، فالعمودي أقصر من المائلين ✓. الخطأ الشائع: ضرب الارتفاع في ضلع قائم (AH × AC = AB × BC) فيخرج 22,5 cm، أطول من AB نفسه. ومن نسي القسمة على 2 في أحد الحسابين وجد 216 ÷ 30 = 7,2 cm. أمّا 15 cm فنصف الوتر: هو بُعد A عن منتصف [BC]، لا طول الارتفاع.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم الزاوية في A، و H المسقط العمودي للنقطة A على (BC)، حيث BH = 3 cm و CH = 12 cm. ما طول AH؟\n<svg viewBox=\"0 0 300 185\"><path d=\"M73 38 L22 140 L277 140 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M73 38 L22 140 L277 140 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M73 38 L73 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M67.2 49.6 L78.8 55.4 L84.6 43.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M73 129 L84 129 L84 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"73\" cy=\"38\" r=\"3.5\"/><circle cx=\"22\" cy=\"140\" r=\"3.5\"/><circle cx=\"277\" cy=\"140\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"73\" cy=\"140\" r=\"3.5\"/></g><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"64\" y=\"31\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">A</text><text x=\"12\" y=\"156\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">B</text><text x=\"287\" y=\"156\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">C</text><text x=\"73\" y=\"160\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f6e56\">H</text><text x=\"47.5\" y=\"160\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">3</text><text x=\"175\" y=\"160\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">12</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√15 cm",
+          "misconceptionTag": "math.geo.relation-hauteur-somme-au-lieu-de-produit"
+        },
+        {
+          "id": "b",
+          "text": "6 cm"
+        },
+        {
+          "id": "c",
+          "text": "7,5 cm",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "d",
+          "text": "36 cm",
+          "misconceptionTag": "math.geo.relation-hauteur-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مربّع الارتفاع يساوي جداء قطعتي الوتر: AH² = BH × CH = 3 × 12 = 36، ومنه AH = √36 = 6 cm. تحقّق بفيثاغورس: AB² = 36 + 9 = 45 و AC² = 36 + 144 = 180، و 45 + 180 = 225 = 15² = BC² ✓. الخطأ الشائع: الجمع بدل الجداء (AH² = 3 + 12 = 15، أي √15 cm)، أو التوقّف عند AH² = 36 وكتابة 36 cm. أمّا 7,5 cm فنصف الوتر، لا الارتفاع.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم الزاوية في A، و H المسقط العمودي للنقطة A على (BC)، حيث AH = 7,2 cm و BC = 15 cm و AB = 9 cm. ما طول AC؟\n<svg viewBox=\"0 0 300 220\"><path d=\"M113.8 37.6 L22 160 L277 160 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M113.8 37.6 L22 160 L277 160 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M113.8 37.6 L113.8 160\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M106 48 L116.4 55.8 L124.2 45.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M113.8 149 L124.8 149 L124.8 160\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"113.8\" cy=\"37.6\" r=\"3.5\"/><circle cx=\"22\" cy=\"160\" r=\"3.5\"/><circle cx=\"277\" cy=\"160\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"113.8\" cy=\"160\" r=\"3.5\"/></g><path d=\"M22 194 L277 194 M22 189 L22 199 M277 189 L277 199\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"109.6\" y=\"28.2\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">A</text><text x=\"12\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">B</text><text x=\"287\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">C</text><text x=\"113.8\" y=\"180\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f6e56\">H</text><text x=\"57.5\" y=\"96\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">9</text><text x=\"100.8\" y=\"103.8\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">7,2</text><text x=\"149.5\" y=\"211\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">15</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,32 cm",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "b",
+          "text": "6 cm",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "12 cm"
+        },
+        {
+          "id": "d",
+          "text": "3√34 cm",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المساحة واحدة مهما كانت القاعدة: AB × AC = AH × BC، أي 9 × AC = 7,2 × 15 = 108، ومنه AC = 108 ÷ 9 = 12 cm. تحقّق بفيثاغورس: AC² = 15² − 9² = 225 − 81 = 144، أي AC = 12 ✓. الخطأ الشائع: ضرب الارتفاع في ضلع قائم (AH × AB = AC × BC) فيخرج AC = 64,8 ÷ 15 = 4,32 cm. ومن طرح الطولين بدل مربّعيهما وجد 15 − 9 = 6 cm، ومن جعل [AC] وترًا فجمع المربّعين وجد √306 = 3√34 cm، وهو أطول من الوتر الحقيقي.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم الزاوية في A، و H المسقط العمودي للنقطة A على (BC)، حيث AH = 12 cm و BH = 8 cm. ما طول CH؟\n<svg viewBox=\"0 0 310 200\"><path d=\"M102 35 L22 155 L282 155 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M102 35 L22 155 L282 155 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M102 35 L102 155\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M94.8 45.8 L105.6 53 L112.8 42.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M102 144 L113 144 L113 155\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"102\" cy=\"35\" r=\"3.5\"/><circle cx=\"22\" cy=\"155\" r=\"3.5\"/><circle cx=\"282\" cy=\"155\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"102\" cy=\"155\" r=\"3.5\"/></g><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"96.2\" y=\"26.2\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">A</text><text x=\"12\" y=\"171\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">B</text><text x=\"292\" y=\"171\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">C</text><text x=\"102\" y=\"175\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f6e56\">H</text><text x=\"62\" y=\"175\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">8</text><text x=\"89\" y=\"100\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">12</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "136 cm",
+          "misconceptionTag": "math.geo.relation-hauteur-somme-au-lieu-de-produit"
+        },
+        {
+          "id": "b",
+          "text": "26 cm",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "18 cm"
+        },
+        {
+          "id": "d",
+          "text": "1,5 cm",
+          "misconceptionTag": "math.geo.relation-hauteur-racine-oubliee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "من AH² = BH × CH نجد 144 = 8 × CH، ومنه CH = 144 ÷ 8 = 18 cm. تحقّق: 8 × 18 = 144 = 12² ✓. الخطأ الشائع: الجمع بدل الجداء (144 = 8 + CH) فيخرج 136 cm، أو نسيان أنّ العلاقة تخصّ مربّع الارتفاع (12 = 8 × CH) فيخرج 1,5 cm. أمّا 26 cm فهو الوتر BC = 8 + 18، لا القطعة CH المطلوبة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم الزاوية في A، و H المسقط العمودي للنقطة A على (BC)، حيث BC = 20 cm و BH = 4 cm. ما طول AH؟\n<svg viewBox=\"0 0 300 205\"><path d=\"M75 35 L25 135 L275 135 Z\" fill=\"#0f6e56\" opacity=\"0.08\"/><path d=\"M75 35 L25 135 L275 135 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M75 35 L75 135\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M69.2 46.6 L80.8 52.4 L86.6 40.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M75 124 L86 124 L86 135\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"75\" cy=\"35\" r=\"3.5\"/><circle cx=\"25\" cy=\"135\" r=\"3.5\"/><circle cx=\"275\" cy=\"135\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"75\" cy=\"135\" r=\"3.5\"/></g><path d=\"M25 169 L275 169 M25 164 L25 174 M275 164 L275 174\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"66\" y=\"28\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">A</text><text x=\"15\" y=\"151\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">B</text><text x=\"285\" y=\"151\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f172a\">C</text><text x=\"75\" y=\"155\" text-anchor=\"middle\" font-size=\"15\" fill=\"#0f6e56\">H</text><text x=\"50\" y=\"155\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">4</text><text x=\"150\" y=\"186\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">20</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 cm"
+        },
+        {
+          "id": "b",
+          "text": "4√5 cm"
+        },
+        {
+          "id": "c",
+          "text": "10 cm",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "d",
+          "text": "64 cm",
+          "misconceptionTag": "math.geo.relation-hauteur-racine-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "H بين B و C، إذن CH = BC − BH = 20 − 4 = 16 cm. ثمّ AH² = BH × CH = 4 × 16 = 64، ومنه AH = √64 = 8 cm. تحقّق: AB² = 64 + 16 = 80 و AC² = 64 + 256 = 320، و 80 + 320 = 400 = 20² ✓. الخطأ الشائع: التوقّف عند AH² = 64 وكتابة 64 cm. ومن ضرب BH في الوتر كلّه بدل CH وجد AH² = 4 × 20 = 80، أي 4√5 cm، وهو في الحقيقة طول AB. أمّا 10 cm فنصف الوتر، لا الارتفاع.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    }
+  ]
+}

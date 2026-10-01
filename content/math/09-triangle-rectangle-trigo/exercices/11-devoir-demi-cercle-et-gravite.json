@@ -1,0 +1,251 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: مثلّث في نصف دائرة — علاقات قياسيّة وطاليس ومركز الثقل",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "ABC مثلّث حيث BC = 9 cm والنقطة A تنتمي إلى الدائرة التي قطرها [BC]، ولدينا AB = 3√2 cm. ما طول AC بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 168\"><title>مثلّث ABC مرسوم في نصف دائرة قطرها BC</title><path d=\"M 15 138 A 135 135 0 0 1 285 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"75,25.75 15,138 285,138\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"75\" cy=\"25.75\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"15\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"285\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"75\" y=\"16.75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"4\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"296\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"159.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">9</text><text x=\"56.46\" y=\"92.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3√2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9 − 3√2",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "3√7"
+        },
+        {
+          "id": "c",
+          "text": "3√11",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "63",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "A على الدائرة التي قطرها [BC]، فالمثلّث ABC قائم في A ووتره القطر [BC] (المثلّث المرسوم في نصف دائرة قائم). بنظرية فيثاغورس: AC² = BC² − AB² = 81 − 18 = 63، إذن AC = √63 = 3√7 cm ✓ ≈ 7,94. التحقّق: AB² + AC² = 18 + 63 = 81 = BC² ✓. الخطأ الشائع: جمع المربّعين كأنّ [BC] ضلع قائم، 81 + 18 = 99، فيخرج 3√11، وهو أطول من [BC] نفسه مع أنّ [BC] هو أطول الأضلاع؛ أو طرح الطولين دون تربيع، 9 − 3√2؛ أو التوقّف عند AC² = 63.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "تذكير: ارتفاعات المثلّث الثلاثة تتلاقى في نقطة واحدة تسمّى المركز القائم للمثلّث. المثلّث ABC قائم في A، و H المسقط العمودي للنقطة A على [BC]، و O منتصف [BC]، و G مركز ثقل المثلّث. أين يقع المركز القائم للمثلّث ABC ؟\n<svg viewBox=\"0 0 300 168\"><title>المثلّث القائم ABC والنقاط O و H و G</title><path d=\"M 15 138 A 135 135 0 0 1 285 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"75,25.75 15,138 285,138\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"75\" cy=\"25.75\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"15\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"285\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"75\" y1=\"25.75\" x2=\"150\" y2=\"138\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"138\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"75\" cy=\"138\" r=\"3.5\" fill=\"#0f6e56\"/><circle cx=\"125\" cy=\"100.58\" r=\"4\" fill=\"#b91c1c\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"75\" y=\"16.75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"4\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"296\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"155\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">O</text><text x=\"137\" y=\"104.58\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">G</text><text x=\"75\" y=\"155\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "النقطة O"
+        },
+        {
+          "id": "b",
+          "text": "النقطة H"
+        },
+        {
+          "id": "c",
+          "text": "النقطة A"
+        },
+        {
+          "id": "d",
+          "text": "النقطة G"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الارتفاع الصادر من B هو المستقيم المارّ من B والعمودي على (AC)، وهو (BA) لأنّ الزاوية القائمة في A. والارتفاع الصادر من C هو (CA) لأنّ (CA) ⊥ (AB). المستقيمان (BA) و (CA) يتقاطعان في A، والارتفاع الصادر من A، أي (AH)، يمرّ أيضًا من A، فالمركز القائم هو A ✓. الخطأ الشائع: أخذ H، وهي مجرّد موطئ الارتفاع الصادر من A على الوتر لا نقطة تلاقي الارتفاعات الثلاثة؛ أو الخلط مع مركز الدائرة O ومع مركز الثقل G، وهما نقطتان أخريان تخصّان الموسّطات لا الارتفاعات.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A حيث BC = 9 cm. النقطة A على الدائرة التي قطرها [BC] ومركزها O، و G مركز ثقل المثلّث ABC. ما طول AG بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 168\"><title>المثلّث ABC ومركز الدائرة O ومركز الثقل G</title><path d=\"M 15 138 A 135 135 0 0 1 285 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"75,25.75 15,138 285,138\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"75\" cy=\"25.75\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"15\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"285\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"75\" y1=\"25.75\" x2=\"150\" y2=\"138\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"138\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"125\" cy=\"100.58\" r=\"4\" fill=\"#b91c1c\"/><line x1=\"80.5\" y1=\"142.5\" x2=\"80.5\" y2=\"133.5\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"84.5\" y1=\"142.5\" x2=\"84.5\" y2=\"133.5\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"215.5\" y1=\"142.5\" x2=\"215.5\" y2=\"133.5\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"219.5\" y1=\"142.5\" x2=\"219.5\" y2=\"133.5\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"75\" y=\"16.75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"4\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"296\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"155\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">O</text><text x=\"137\" y=\"104.58\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,5",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "2,25",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "d",
+          "text": "1,5",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "O منتصف [BC] فالقطعة [AO] موسّط في المثلّث ABC، وطولها شعاع الدائرة لأنّ A عليها: AO = 9/2 = 4,5 cm. مركز الثقل G على [AO] عند ثلثيه انطلاقًا من الرأس A، فـ AG = (2/3) × 4,5 = 3 cm ✓، ويبقى GO = 1,5 cm. التحقّق: A و G و O على استقامة واحدة وAG = 2 × GO ✓. الخطأ الشائع: وضع G في منتصف الموسّط فيخرج AG = 4,5/2 = 2,25؛ أو قلب الثلث والثلثين فيخرج 4,5/3 = 1,5 وهو طول GO؛ أو الوقوف عند طول الموسّط كلّه AO = 4,5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A حيث AB = 3√2 cm و AC = 3√7 cm و BC = 9 cm. H المسقط العمودي للنقطة A على (BC). ما طول AH بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 168\"><title>المثلّث القائم ABC والارتفاع AH</title><path d=\"M 15 138 A 135 135 0 0 1 285 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"75,25.75 15,138 285,138\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"75\" cy=\"25.75\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"15\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"285\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"75\" y1=\"25.75\" x2=\"75\" y2=\"138\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"75\" cy=\"138\" r=\"3.5\" fill=\"#0f6e56\"/><path d=\"M 70.76 33.69 L 78.69 37.93 L 82.94 29.99\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 75 130 L 83 130 L 83 138\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"75\" y=\"16.75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"4\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"296\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"75\" y=\"155\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"56.46\" y=\"92.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3√2</text><text x=\"173.4\" y=\"98.72\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3√7</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√14"
+        },
+        {
+          "id": "b",
+          "text": "9/2",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "c",
+          "text": "9√14/2",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "d",
+          "text": "9√14",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المساحة واحدة مهما كانت القاعدة: بالقاعدة [AC] وارتفاعها [AB] نجد (AB × AC)/2، وبالوتر [BC] وارتفاعه [AH] نجد (BC × AH)/2. إذن AH × BC = AB × AC، أي AH = (3√2 × 3√7)/9 = 9√14/9 = √14 cm ✓ ≈ 3,74. التحقّق: 3,74 أصغر من AB ≈ 4,24 ومن AC ≈ 7,94، كما يجب للعمودي. الخطأ الشائع: ضرب الارتفاع في ضلع قائم، AH × AB = AC × BC، فيخرج 9√14/2؛ أو نسيان القسمة على BC فيخرج 9√14؛ أو أخذ الارتفاع موسّطًا، AH = AO = 9/2، مع أنّ H ليس منتصف [BC].",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A حيث AB = 3√2 cm و BC = 9 cm، و H المسقط العمودي للنقطة A على (BC) مع AH = √14 cm. ما طول BH بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 168\"><title>المثلّث القائم ABC والارتفاع AH</title><path d=\"M 15 138 A 135 135 0 0 1 285 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"75,25.75 15,138 285,138\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"75\" cy=\"25.75\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"15\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"285\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"75\" y1=\"25.75\" x2=\"75\" y2=\"138\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"75\" cy=\"138\" r=\"3.5\" fill=\"#0f6e56\"/><path d=\"M 70.76 33.69 L 78.69 37.93 L 82.94 29.99\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 75 130 L 83 130 L 83 138\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"75\" y=\"16.75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"4\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"296\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"75\" y=\"155\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"56.46\" y=\"92.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3√2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "4√2",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "7",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث ABH قائم في H ووتره [AB]. بفيثاغورس: BH² = AB² − AH² = 18 − 14 = 4، إذن BH = √4 = 2 cm ✓. ومنه CH = BC − BH = 9 − 2 = 7 cm. التحقّق بالعلاقة القياسيّة: AH² = BH × CH = 2 × 7 = 14 ✓. الخطأ الشائع: التوقّف عند BH² = 4 وإعطاء 4؛ أو جمع المربّعين كأنّ [AH] وتر، 18 + 14 = 32، فيخرج 4√2؛ أو إعطاء القطعة الأخرى CH = 7.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A حيث AC = 3√7 cm و BC = 9 cm، و H المسقط العمودي للنقطة A على [BC] مع BH = 2 cm. E نقطة من [AB] بحيث (HE) ∥ (AC). ما طول HE بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 168\"><title>المستقيم المارّ من H الموازي لـ AC يقطع AB في E</title><path d=\"M 15 138 A 135 135 0 0 1 285 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"75,25.75 15,138 285,138\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"75\" cy=\"25.75\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"15\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"285\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"75\" y1=\"138\" x2=\"28.33\" y2=\"113.06\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"75\" cy=\"138\" r=\"3.5\" fill=\"#0f6e56\"/><circle cx=\"28.33\" cy=\"113.06\" r=\"3.5\" fill=\"#d97706\"/><line x1=\"54.75\" y1=\"127.18\" x2=\"46.46\" y2=\"127.85\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"54.75\" y1=\"127.18\" x2=\"50.7\" y2=\"119.91\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"183.09\" y1=\"83.52\" x2=\"174.79\" y2=\"84.19\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"183.09\" y1=\"83.52\" x2=\"179.03\" y2=\"76.26\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"75\" y=\"16.75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"4\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"296\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"78\" y=\"155\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"16.33\" y=\"118.06\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">E</text><text x=\"45\" y=\"157.5\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"13\">2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "27√7/2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "7√7/3"
+        },
+        {
+          "id": "c",
+          "text": "6√7/7",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "d",
+          "text": "2√7/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلّث BAC: H على [BC] و E على [BA] و (HE) ∥ (AC)، فبنظرية طاليس انطلاقًا من الرأس B: BH/BC = HE/AC. إذن HE = AC × BH/BC = 3√7 × 2/9 = 2√7/3 cm ✓ ≈ 1,76. التحقّق: النسبة 2/9 صغيرة، فـ HE أقصر بكثير من AC ≈ 7,94 ✓. الخطأ الشائع: قلب النسبة فيخرج 3√7 × 9/2 = 27√7/2، وهو أطول من AC نفسه؛ أو خلط «جزء على كلّ» مع «جزء على جزء» بقسمة BH على CH، فيخرج 3√7 × 2/7 = 6√7/7؛ أو أخذ الجزء الآخر CH بدل BH فيخرج 3√7 × 7/9 = 7√7/3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A حيث AB = 3√2 cm و BC = 9 cm، و H المسقط العمودي للنقطة A على [BC] مع BH = 2 cm، و E نقطة من [AB] بحيث (HE) ∥ (AC). نعلم أنّ AH = √14 cm و HE = 2√7/3 cm. ما طول AE بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 168\"><title>المثلّث AEH والمستقيم (HE) الموازي لـ (AC)</title><path d=\"M 15 138 A 135 135 0 0 1 285 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"75,25.75 15,138 285,138\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"75\" cy=\"25.75\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"15\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"285\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><polygon points=\"75,25.75 28.33,113.06 75,138\" fill=\"#d97706\" fill-opacity=\"0.16\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"25.75\" x2=\"75\" y2=\"138\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"75\" cy=\"138\" r=\"3.5\" fill=\"#0f6e56\"/><circle cx=\"28.33\" cy=\"113.06\" r=\"3.5\" fill=\"#d97706\"/><path d=\"M 70.76 33.69 L 78.69 37.93 L 82.94 29.99\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54.75\" y1=\"127.18\" x2=\"46.46\" y2=\"127.85\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"54.75\" y1=\"127.18\" x2=\"50.7\" y2=\"119.91\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"183.09\" y1=\"83.52\" x2=\"174.79\" y2=\"84.19\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"183.09\" y1=\"83.52\" x2=\"179.03\" y2=\"76.26\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"75\" y=\"16.75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"4\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"296\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"78\" y=\"155\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"16.33\" y=\"118.06\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2/3",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "√14 − 2√7/3",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "7√2/3"
+        },
+        {
+          "id": "d",
+          "text": "√154/3",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(HE) ∥ (AC) و (AC) ⊥ (AB) إذن (HE) ⊥ (AB)، فالمثلّث AEH قائم في E ووتره [AH]. بفيثاغورس: AE² = AH² − HE² = 14 − 28/9 = (126 − 28)/9 = 98/9، إذن AE = √98/3 = 7√2/3 cm ✓ ≈ 3,30. طريق ثانٍ: بطاليس BE = AB × BH/BC = 3√2 × 2/9 = 2√2/3، فـ AE = AB − BE = 3√2 − 2√2/3 = 7√2/3 ✓، وهو الناتج نفسه. الخطأ الشائع: جمع المربّعين كأنّ [AH] ضلع قائم، 14 + 28/9 = 154/9، فيخرج √154/3؛ أو طرح الطولين، √14 − 2√7/3؛ أو إعطاء القطعة الأخرى BE = 2√2/3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A حيث AB = 3√2 cm و BC = 9 cm. النقطة A على الدائرة التي قطرها [BC] ومركزها O، و G مركز ثقل المثلّث ABC. المستقيم المارّ من G والموازي لـ (AB) يقطع (BC) في النقطة Q. ما طول GQ بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 168\"><title>المستقيم المارّ من G الموازي لـ AB يقطع BC في Q</title><path d=\"M 15 138 A 135 135 0 0 1 285 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><polygon points=\"75,25.75 15,138 285,138\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"75\" cy=\"25.75\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"15\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"285\" cy=\"138\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"75\" y1=\"25.75\" x2=\"150\" y2=\"138\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"125\" y1=\"100.58\" x2=\"105\" y2=\"138\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"113.35\" y1=\"122.38\" x2=\"112.68\" y2=\"114.08\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"113.35\" y1=\"122.38\" x2=\"120.62\" y2=\"118.32\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"43.35\" y1=\"84.96\" x2=\"42.68\" y2=\"76.67\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"43.35\" y1=\"84.96\" x2=\"50.62\" y2=\"80.91\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"150\" cy=\"138\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"125\" cy=\"100.58\" r=\"4\" fill=\"#b91c1c\"/><circle cx=\"105\" cy=\"138\" r=\"3.5\" fill=\"#d97706\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"75\" y=\"16.75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"4\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"296\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"154\" y=\"155\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"15\">O</text><text x=\"137\" y=\"97.58\" text-anchor=\"middle\" fill=\"#b91c1c\" font-size=\"15\">G</text><text x=\"105\" y=\"155\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√2",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "b",
+          "text": "2√2",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "c",
+          "text": "3√2/2",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "d",
+          "text": "√2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "G على الموسّط [OA] عند ثلثيه انطلاقًا من A، فـ OG = OA/3. في المثلّث OAB: G على [OA] و Q على [OB] و (GQ) ∥ (AB)، فبنظرية طاليس انطلاقًا من الرأس O: OG/OA = OQ/OB = GQ/AB = 1/3. إذن GQ = AB/3 = 3√2/3 = √2 cm ✓ ≈ 1,41. التحقّق: المثلّث OGQ تصغير للمثلّث OAB بنسبة 1/3، وبالنسبة نفسها OQ = OB/3 = 1,5 cm فيبقى BQ = 3 cm ✓. الخطأ الشائع: وضع G في منتصف [OA] فتصبح النسبة 1/2 ويخرج GQ = 3√2/2؛ أو قلب الثلث والثلثين فتصبح النسبة 2/3 ويخرج GQ = 2√2؛ أو الظنّ أنّ المستقيم الموازي يعطي قطعة مساوية فيخرج GQ = AB = 3√2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base"
+      ]
+    }
+  ]
+}

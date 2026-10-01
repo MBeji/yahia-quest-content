@@ -1,0 +1,197 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: شبه منحرف، منتصفا قطريه ونظرية طاليس",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "ABCD شبه منحرف قاعدتاه [AB] و [DC]، و I منتصف الساق [AD]. المستقيم المارّ من I والموازي لـ (AB) يقطع [BD] في النقطة L. لماذا تكون L منتصف [BD] ؟\n<svg viewBox=\"0 0 277.9 229.6\"><path d=\"M131.2 35.3 L215.2 35.3 L242.9 196.7 L32.9 196.7 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M215.2 35.3 L32.9 196.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M82 116 L124 116\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M167.2 41.3 L173.2 35.3 L167.2 29.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M99.1 122 L105.1 116 L99.1 110\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M111.7 78.7 L101.5 72.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M62.6 159.5 L52.3 153.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"131.2\" cy=\"35.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"215.2\" cy=\"35.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"242.9\" cy=\"196.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"32.9\" cy=\"196.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"82\" cy=\"116\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"124\" cy=\"116\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"122.2\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"224.2\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"253.9\" y=\"209.7\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"21.9\" y=\"209.7\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"70\" y=\"113\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"121\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "في المثلّث BCD: I منتصف [AD] و (IL) ∥ (DC)"
+        },
+        {
+          "id": "b",
+          "text": "في المثلّث ABD: I منتصف [AD] و IL = AB/2"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ قطرَي شبه المنحرف يتقاطعان في منتصفيهما",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "d",
+          "text": "في المثلّث ABD: I منتصف [AD] و (IL) ∥ (AB)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "النقطة I منتصف الضلع [AD] في المثلّث ABD، والمستقيم المارّ منها يوازي حامل الضلع [AB]، فبعكس خاصيّة المنتصفين يمرّ من منتصف الضلع الثالث [BD]: L منتصف [BD] ✓. الخطأ الشائع: البحث عن المنتصف في مثلّث لا تقع I على أضلاعه، مثل BCD. وقطرا شبه المنحرف لا يتقاطعان في منتصفيهما، فتلك خاصيّة متوازي الأضلاع. أمّا IL = AB/2 فنتيجة نصل إليها بعد إثبات المنتصف، لا سبب له.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "في شبه المنحرف ABCD نفسه حيث AB = 4، النقطة L منتصف [BD]، والمستقيم (IL) الموازي للقاعدتين يقطع [AC] في K. اختر كلّ العبارات الصحيحة.\n<svg viewBox=\"0 0 277.9 229.6\"><path d=\"M131.2 35.3 L215.2 35.3 L242.9 196.7 L32.9 196.7 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M215.2 35.3 L32.9 196.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M131.2 35.3 L242.9 196.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M82 116 L187 116\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M167.2 41.3 L173.2 35.3 L167.2 29.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131.9 202.7 L137.9 196.7 L131.9 190.7\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"131.2\" cy=\"35.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"215.2\" cy=\"35.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"242.9\" cy=\"196.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"32.9\" cy=\"196.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"82\" cy=\"116\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"124\" cy=\"116\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"187\" cy=\"116\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"122.2\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"224.2\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"253.9\" y=\"209.7\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"21.9\" y=\"209.7\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"70\" y=\"113\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"121\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text><text x=\"191\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "IL = AB/2 = 2"
+        },
+        {
+          "id": "b",
+          "text": "K منتصف [AC]"
+        },
+        {
+          "id": "c",
+          "text": "IK = DC/2"
+        },
+        {
+          "id": "d",
+          "text": "IK = AB/2"
+        },
+        {
+          "id": "e",
+          "text": "IL = AD/2"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "في المثلّث ABD: I و L منتصفا [AD] و [BD]، فـ IL = AB/2 = 2. وفي المثلّث ADC: I منتصف [AD] و (IK) ∥ (DC)، فـ K منتصف [AC] و IK = DC/2، أي نصف القاعدة الكبيرة لا الصغيرة، لأنّ الضلع الثالث في هذا المثلّث هو [DC]. أمّا AD/2 فهو AI، طول نصف الساق، لا IL.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "على المستقيم (IL) تقع النقاط I و L و K بهذا الترتيب، حيث IL = AB/2 و IK = DC/2. عبّر عن الطول KL بدلالة القاعدتين AB و DC.\n<svg viewBox=\"0 0 277.9 229.6\"><path d=\"M131.2 35.3 L215.2 35.3 L242.9 196.7 L32.9 196.7 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M215.2 35.3 L32.9 196.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M131.2 35.3 L242.9 196.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M82 116 L124 116\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M124 116 L187 116\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"131.2\" cy=\"35.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"215.2\" cy=\"35.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"242.9\" cy=\"196.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"32.9\" cy=\"196.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"82\" cy=\"116\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"124\" cy=\"116\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"187\" cy=\"116\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"122.2\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"224.2\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"253.9\" y=\"209.7\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"21.9\" y=\"209.7\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"70\" y=\"113\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"121\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text><text x=\"191\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(DC − AB)/2"
+        },
+        {
+          "id": "b",
+          "text": "(DC + AB)/2"
+        },
+        {
+          "id": "c",
+          "text": "DC − AB",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        {
+          "id": "d",
+          "text": "DC/2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L بين I و K، فـ KL = IK − IL = DC/2 − AB/2 = (DC − AB)/2 ✓: نطرح لأنّ القطعتين [IL] و [IK] تنطلقان من النقطة نفسها I. الخطأ الشائع: جمع القاعدتين، (DC + AB)/2، وهو طول القطعة الواصلة بين منتصفَي الساقين لا طول [KL]. ونسيان القسمة على 2 يعطي DC − AB، أمّا DC/2 فهو IK لا KL.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "شبه منحرف ABCD قاعدته الصغيرة AB = 4، و K و L منتصفا قطريه [AC] و [BD]، وقسنا KL = 3. احسب طول القاعدة الكبيرة DC.\n<svg viewBox=\"0 0 277.9 229.6\"><path d=\"M131.2 35.3 L215.2 35.3 L242.9 196.7 L32.9 196.7 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M215.2 35.3 L32.9 196.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M131.2 35.3 L242.9 196.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M124 116 L187 116\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"131.2\" cy=\"35.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"215.2\" cy=\"35.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"242.9\" cy=\"196.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"32.9\" cy=\"196.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"124\" cy=\"116\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"187\" cy=\"116\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"173.2\" y=\"27.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">4</text><text x=\"155.5\" y=\"133.6\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"13\">3</text><text x=\"122.2\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"224.2\" y=\"27.3\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"253.9\" y=\"209.7\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"21.9\" y=\"209.7\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"121\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text><text x=\"191\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "14",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "KL = (DC − AB)/2، أي 3 = (DC − 4)/2، ومنه DC − 4 = 6 و DC = 10 ✓. التحقّق: (10 − 4)/2 = 3. الخطأ الشائع: كتابة KL = (DC + AB)/2 بجمع القاعدتين، فنجد DC = 2 × 3 − 4 = 2، أي «قاعدة كبيرة» أصغر من AB، وهذا التناقض يكشف الخطأ. ونسيان القسمتين على 2 يعطي DC = 3 + 4 = 7، أمّا أخذ IL = AB بدل AB/2، أي KL = DC/2 − AB، فيعطي DC = 2 × (3 + 4) = 14.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "حاملا الساقين (AD) و (BC) لشبه المنحرف ABCD يتقاطعان في النقطة S، حيث AB = 4 و DC = 10 و SA = 6. احسب SD.\n<svg viewBox=\"0 0 254.1 303.5\"><path d=\"M120 126.3 L196 126.3 L221.1 272.4 L31.1 272.4 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M179.3 29 L31.1 272.4 L221.1 272.4 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M120 126.3 L196 126.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M152 132.3 L158 126.3 L152 120.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120.1 278.4 L126.1 272.4 L120.1 266.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"179.3\" cy=\"29\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"120\" cy=\"126.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"196\" cy=\"126.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"221.1\" cy=\"272.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"31.1\" cy=\"272.4\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"159.4\" y=\"87.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">6</text><text x=\"158\" y=\"119.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">4</text><text x=\"126.1\" y=\"289.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">10</text><text x=\"179.3\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"111\" y=\"118.3\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"205\" y=\"118.3\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"232.1\" y=\"285.4\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"20.1\" y=\"285.4\" text-anchor=\"middle\" fill=\"#0f172a\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "21",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "2,4",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث SDC: A على [SD] و B على [SC] و (AB) ∥ (DC)، فبنظرية طاليس SA/SD = AB/DC، أي 6/SD = 4/10. بالضرب التقاطعي 4 × SD = 60، ومنه SD = 15 ✓، ثمّ AD = SD − SA = 9. الخطأ الشائع: خلط الشكلين، SA/AD = AB/DC، فنجد AD = 15 و SD = 21، مع أنّ AB/DC نسبة «جزء على كلّ» لا «جزء على الجزء المتبقّي». وقلب النسبة يعطي 2,4، وهو أصغر من SA نفسه، أمّا 12 فتنقل الفرق DC − AB = 6 إلى الساق.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "في شبه المنحرف ABCD حيث AB = 4 و DC = 10، حاملا الساقين يتقاطعان في S حيث SA = 6 و SD = 15. النقطة I منتصف [AD]، والمستقيم المارّ منها والموازي للقاعدتين يقطع [BC] في J. احسب IJ.\n<svg viewBox=\"0 0 254.1 303.5\"><path d=\"M179.3 29 L31.1 272.4 L221.1 272.4 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M120 126.3 L196 126.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M75.6 199.4 L208.6 199.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M152 132.3 L158 126.3 L152 120.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M142.7 205.4 L148.7 199.4 L142.7 193.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120.1 278.4 L126.1 272.4 L120.1 266.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M102.9 166 L92.7 159.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M58.5 239 L48.2 232.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"179.3\" cy=\"29\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"120\" cy=\"126.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"196\" cy=\"126.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"221.1\" cy=\"272.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"31.1\" cy=\"272.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"75.6\" cy=\"199.4\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"208.6\" cy=\"199.4\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"179.3\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"111\" y=\"118.3\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"205\" y=\"118.3\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"232.1\" y=\"285.4\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"20.1\" y=\"285.4\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"63.6\" y=\"196.4\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"220.6\" y=\"196.4\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "14",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "طريقان. الأوّل بالرابط بين المنتصفين: في المثلّث ADC يقطع المستقيم [AC] في منتصفها K و IK = DC/2 = 5، وفي المثلّث ABC يكون (KJ) ∥ (AB) فـ J منتصف [BC] و KJ = AB/2 = 2، إذن IJ = 5 + 2 = 7 ✓، أي (AB + DC)/2. والثاني بنظرية طاليس في المثلّث SDC: SI = SA + AD/2 = 6 + 4,5 = 10,5 و (IJ) ∥ (DC)، فـ IJ/DC = SI/SD = 10,5/15 = 0,7، ومنه IJ = 7. الخطأ الشائع هنا معكوس: من يطرح القاعدتين يجد (10 − 4)/2 = 3، وهو طول [KL] لا [IJ]. ونسيان القسمة على 2 يعطي 14، والتوقّف عند K يعطي IK = 5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.quadrilateres"
+      ]
+    }
+  ]
+}

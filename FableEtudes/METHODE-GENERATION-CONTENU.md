@@ -56,6 +56,7 @@ PORTEE     : tout               # défaut — tous les couples manquants ; l'ORD
                                 # "lycee" (le cycle), "9eme-base / math" (un couple).
 PROFIL     : auto               # auto (défaut) = déduit du niveau et des sources ; sinon forcer :
                                 # ecole-cnp | ecole-secondaire | document-libre | sans-source
+                                # (source-web et examen-national : le gisement, étude 36)
 FICHIERS   : <chemins locaux>   # optionnel — PDF déjà en local (guide et/ou manuel élève, ou le
                                 # document libre), séparés par des espaces. Vide = téléchargement
                                 # depuis le site du CNP, couple par couple.
@@ -256,6 +257,7 @@ publié le chapitre suivant.
 | **ecole-secondaire** | lycée (`1ere-sec` → `bac-*`)                                         | manuel élève du secondaire (`2…`) + programme officiel du ministère s'il est publié ; **manuel seul ⇒ il fait référence** | idem ecole-cnp (les sections sont des nœuds `grades` ; slugs de [`docs/lycee-architecture.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/lycee-architecture.md))    | matrice sections × matières de `docs/lycee-architecture.md` ; **créer** la ligne `_INDEX.md` dans le lot |
 | **document-libre**   | PDF d'enseignant, polycopié, annales papier — tout doc hors corpus   | le document lui-même (**droits R-2 vérifiés** : auteur, origine, autorisation)                                            | école : `programmes-officiels/sources-externes/<slug>/fiche.md` ; hors école : `content/_sources/<theme>/<slug>/fiche.md` — **même gabarit** `_TEMPLATE.md` + en-tête de provenance | — (la PR trace ; pas de ligne `_INDEX.md`)                                                               |
 | **source-web**       | une source **en ligne** : site de devoirs/séries, blog d'enseignant, portail d'annales | la page publique elle-même (**tier déclaré avant tout token**, étude 27 R-1)                                              | école : `programmes-officiels/sources-externes/web-<slug>/fiche.md` ; hors école : `content/_sources/<theme>/web-<slug>/fiche.md` — gabarit `_TEMPLATE.md` + **en-tête de provenance en 8 champs** | — (la PR trace ; jamais de ligne `_INDEX.md` : une source web n'est pas un programme)                     |
+| **examen-national**  | un **sujet officiel** d'examen national : concours de 6ᵉ, concours de 9ᵉ, baccalauréat, toutes sessions | le sujet publié par le Ministère, lu de préférence sur son portail (corpus officiel, R-2 ; étude 27 Q-6) | `programmes-officiels/examens-nationaux/<niveau>/<matière>/<session>.md` — transcription fidèle, en-tête de provenance (étude 36, D-2) | le registre du couple (`sources-externes/web-<niveau>-<matière>/gisement.json`, étude 36) |
 | **sans-source**      | la fiche existe (`[~]`/`[x]`) mais le contenu manque sous `content/` | aucune (la fiche mergée)                                                                                                  | — (sauter le LOT A)                                                                                                                                                                 | `content/CATALOGUE.md` (sujets existants)                                                                |
 
 Notes par profil :
@@ -284,6 +286,12 @@ Notes par profil :
   sont du corpus officiel (R-2), ses corrigés et commentaires sont ceux de son auteur.
 - **source-web.** Voir la section dédiée ci-dessous : le tier se déclare **avant** le premier
   token, et il est opposable pour toute session ultérieure.
+- **examen-national.** Corpus officiel (R-2) : on transcrit le sujet **fidèlement**, données et
+  figures comprises, une session par fichier, et chaque exercice devient une mission qui le
+  **reprend** et le **cite** (`sources[]` : examen, session, exercice). Pas de salle blanche,
+  pas de garde anti-verbatim : la reprise est le but. R-3 tient : un item d'un programme ancien
+  se marque `[hors programme en vigueur]` et ne s'enseigne pas. Le corrigé d'un tiers reste une
+  source tierce. Le pipeline qui l'exploite est § Le gisement.
 - **sans-source.** Vérifier que la fiche est bien à **profondeur de génération** (R-5 — une
   first-pass ne se génère pas), puis dérouler directement le LOT B.
 
@@ -347,6 +355,32 @@ snapshot: YahiaAcademy/sources-web/<slug>/     # hors git + empreinte
 quelle que soit sa bonne volonté. Et l'accès lui-même n'est pas acquis : une session cloud voit
 ces domaines **bloqués par la politique d'egress** (constaté le 2026-08-13) — la qualification se
 fait depuis le poste Windows, ou en autorisant le domaine dans l'environnement.
+
+## Le gisement — examens nationaux et devoirs en ligne → exercices (étude 36)
+
+La fusion des études 12 et 27 (arbitrage du propriétaire, 2026-09-28) : **un pipeline** qui tire
+le maximum d'exercices des sujets officiels d'examen et des devoirs publiés en ligne, couple
+après couple (la 9ᵉ, puis la 6ᵉ, puis les autres classes). Il complète le LOT B d'une matière
+déjà ouverte : il ne crée pas de chapitre, il l'approfondit (doctrine verticale). Spécification
+et décisions : [`36-gisement-examens-devoirs/ETUDE.md`](./36-gisement-examens-devoirs/ETUDE.md) ;
+exécution : le skill `content-ingest`, **mode gisement**, et ses consignes
+`references/gisement-*.md`.
+
+| étage | geste | ce qui reste dans git |
+| ----- | ----- | --------------------- |
+| G0 | qualifier les sites (fiche en 8 champs) et l'archive officielle | fiches `web-<site>` |
+| G1 | fixer l'échantillon **avant** toute lecture | fiche du couple, mergée |
+| G2 | lire : texte d'abord, vision sinon ; SHA-256 ; snapshot **hors git** ; une ligne par exercice ; transcription fidèle d'un examen | `lignes.tsv`, `examens-nationaux/…` |
+| G3 | carte et écart par chapitre | fiche du couple |
+| G4 | plan : placement au chapitre le plus avancé du manifeste, une mission par archétype distinct (devoirs) ou par exercice (examens), lots de 5-8 missions, plages de numéros | `gisement.json` |
+| G5 | écrire : salle blanche pour un devoir, reprise citée pour un examen | missions |
+| G6 | prouver : gates `--tranche`, contrôle local contre les snapshots, audit à l'aveugle | fiche § mesures |
+| G7 | livrer par tranche de ≤4 chapitres, depuis un worktree frais d'`origin/main`, et publier | PR + release |
+| G8 | tenir le registre et mesurer le coût par mission publiée | `gisement.json`, journal |
+
+Trois règles qu'on n'oublie pas : **les devoirs se lisent par vagues jusqu'à saturation** (moins
+de 30 % d'archétypes neufs dans la dernière vague ⇒ on arrête) ; **un chapitre n'a qu'un auteur à
+la fois**, qui reçoit sa plage de numéros ; **une tranche n'est finie qu'en production**.
 
 ## Phase 0 — bootstrap (une fois par campagne, T-6)
 

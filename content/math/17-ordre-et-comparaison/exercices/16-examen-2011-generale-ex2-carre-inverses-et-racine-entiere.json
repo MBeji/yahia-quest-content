@@ -1,0 +1,216 @@
+{
+  "title": "🏛️ مناظرة 2011 · التمرين 2 ⭐⭐⭐: مربّع مجموع ومقارنة ثمّ مقلوبان وجذر صحيح",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 16,
+  "questions": [
+    {
+      "prompt": "نعتبر العدد:\na = (√3 + 2)²\nونذكّر بالمتطابقة:\n(u + v)² = u² + 2uv + v²\nأيّ الكتابات التالية تساوي a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 + 4√3"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "c",
+          "text": "13 + 4√3",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "13"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "بتطبيق المتطابقة مع u = √3 و v = 2: a = (√3)² + 2 × √3 × 2 + 2² = 3 + 4√3 + 4 = 7 + 4√3 ✓. الخطأ الشائع إسقاط الجداء المضاعف فيخرج 3 + 4 = 7 ؛ أو كتابة (√3)² = 3² = 9 فيخرج 9 + 4√3 + 4 = 13 + 4√3 ؛ أو الجمع بين الخطأين فيخرج 9 + 4 = 13.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نُبسّط الجذور في العدد:\nb = 3√18 − √32 + 7\nما الكتابة الصحيحة للعدد b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 + 13√2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "b",
+          "text": "12√2",
+          "misconceptionTag": "math.alg.termes-semblables-par-coefficient"
+        },
+        {
+          "id": "c",
+          "text": "7 + 3√6 − 4√2"
+        },
+        {
+          "id": "d",
+          "text": "7 + 5√2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "√18 = √(9 × 2) = 3√2 و √32 = √(16 × 2) = 4√2 ، فيكون b = 3 × 3√2 − 4√2 + 7 = 9√2 − 4√2 + 7 = 5√2 + 7 ✓. الخطأ الشائع جمع 4√2 بدل طرحه: 9√2 + 4√2 + 7 = 7 + 13√2 ؛ أو جمع 7 مع 5√2 في حدّ واحد: 5√2 + 7 = 12√2 ؛ أو إدخال المعامل 3 تحت الجذر دون تربيعه: 3√18 = √(3 × 18) = √54 = 3√6 فيبقى 7 + 3√6 − 4√2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نقارن العددين 4√3 و 5√2 ثمّ نستنتج مقارنة a و b حيث:\na = 7 + 4√3\nb = 7 + 5√2\nأيّ حكم مع حجّته هو الصحيح؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√3 > 5√2 ، لأنّ (4√3)² = 12 و (5√2)² = 10 ، إذن a > b",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "b",
+          "text": "4√3 < 5√2 ، لأنّ (4√3)² = 16 و (5√2)² = 25 ، إذن a < b",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "c",
+          "text": "4√3 < 5√2 ، لأنّ (4√3)² = 48 و (5√2)² = 50 ، إذن a < b"
+        },
+        {
+          "id": "d",
+          "text": "4√3 > 5√2 ، لأنّ √3 > √2 ، إذن a > b",
+          "misconceptionTag": "math.num.comparaison-radicaux-partie-par-partie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العددان موجبان، فنقارن مربّعيهما: (4√3)² = 4² × 3 = 48 و (5√2)² = 5² × 2 = 50 ، وبما أنّ 48 < 50 فإنّ 4√3 < 5√2. ثمّ نضيف 7 إلى الطرفين والإضافة تحفظ الترتيب: 7 + 4√3 < 7 + 5√2 أي a < b ✓. الخطأ الشائع تربيع المعاملين وحدهما: (4√3)² = 4² = 16 و (5√2)² = 5² = 25 فيبدو الحكم صحيحًا بالمصادفة والحجّة باطلة ؛ أو تربيع الجذرين وحدهما فيخرج (4√3)² = 4 × 3 = 12 و (5√2)² = 5 × 2 = 10 فيُحكم بعكس الصواب ؛ أو الاكتفاء بمقارنة ما تحت الجذرين فيُهمَل المعاملان 4 و 5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العددين:\na = 7 + 4√3\nc = 7 − 4√3\nماذا نستنتج من حساب الجداء a × c ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "c مقابل a ، لأنّ a × c = 48 − 49 = −1"
+        },
+        {
+          "id": "b",
+          "text": "c مقلوب a ، لأنّ a × c = 49 − 48 = 1"
+        },
+        {
+          "id": "c",
+          "text": "c ليس مقلوب a ، لأنّ a × c = 49 − 12 = 37",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "d",
+          "text": "c ليس مقلوب a ، لأنّ a × c = 49 + 48 = 97",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الجداء من الشكل (u + v)(u − v) = u² − v² مع u = 7 و v = 4√3: a × c = 7² − (4√3)² = 49 − 48 = 1 ✓ لأنّ (4√3)² = 16 × 3 = 48 ، وعددان جداؤهما 1 يكون كلّ منهما مقلوب الآخر: c = 1/a. الخطأ الشائع قلب ترتيب الطرح فيخرج 48 − 49 = −1 ثمّ الخلط بين المقلوب والمقابل، والمقابلان مجموعهما 0 لا جداؤهما ؛ أو تربيع الجذر وحده فيُكتب (4√3)² = 4 × 3 = 12 ويخرج 49 − 12 = 37 ؛ أو جمع المربّعين بدل طرحهما فيخرج 49 + 48 = 97 ، فيُحكم في الحالتين خطأً بأنّ العددين غير مقلوبين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر الأعداد:\na = 7 + 4√3\nb = 7 + 5√2\nc = 7 − 4√3\nونعلم أنّ c مقلوب a وأنّ a < b. ما الحكم الصحيح على الجداء b × c مقارنةً بالعدد 1 ، مع حجّته؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "b × c > 1 ، لأنّ b × c = b/a و b > a > 0"
+        },
+        {
+          "id": "b",
+          "text": "b × c < 1 ، لأنّ c ≈ 0,07 و b ≈ 14 وجداؤهما 0,07 × 14 = 0,98"
+        },
+        {
+          "id": "c",
+          "text": "b × c = 1 ، لأنّ a × c = 1"
+        },
+        {
+          "id": "d",
+          "text": "b × c < 1 ، لأنّ b/a < 1 إذ b > a",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "بما أنّ c مقلوب a فإنّ b × c = b/a. والعددان a و b موجبان مع b > a، أي أنّ البسط أكبر من المقام، فالخارج أكبر من 1: b × c > 1 ✓ (تحقّق: b × c ≈ 1,010). الفخّ أنّ الفرق عن 1 ضئيل: التقريبان c ≈ 0,07 و b ≈ 14 يعطيان جداءً أقلّ من 1 فيخدعان ؛ ومن اعتبر b × c = 1 لأنّ a × c = 1 نسي أنّ العامل b ليس a ؛ ومن قرأ الخارج بالعكس كتب b/a < 1 رغم أنّ b > a.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "جداء العددين a و c يساوي 1. ونذكّر بالمتطابقة:\n(u + v)² = u² + 2uv + v²\nاختر الكتابة الصحيحة للمجموع التالي:\na/c + c/a + 2",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² + c²"
+        },
+        {
+          "id": "b",
+          "text": "(a − c)²"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "(a + c)²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "بما أنّ a × c = 1 فإنّ 1/c = a و 1/a = c، إذن a/c = a × (1/c) = a² و c/a = c². ونكتب 2 = 2ac لأنّ ac = 1، فيصبح a/c + c/a + 2 = a² + c² + 2ac = (a + c)² ✓. الخطأ الشائع نسيان الحدّ 2 فيبقى a² + c² ؛ أو استعمال متطابقة الفرق مع أنّ الحدّ 2ac مضاف لا مطروح فيخرج (a − c)² ؛ أو تحويل القسمة إلى ضرب فيُكتب a/c = a × c = 1 ومنه 1 + 1 + 2 = 4.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعتبر العددين:\na = 7 + 4√3\nc = 7 − 4√3\nونعلم أنّ:\na/c + c/a + 2 = (a + c)²\nما قيمة العدد √(a/c + c/a + 2) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "196"
+        },
+        {
+          "id": "b",
+          "text": "14 + √2",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "8√3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "√(a/c + c/a + 2) = √((a + c)²) = |a + c| = a + c لأنّ a + c موجب، و a + c = (7 + 4√3) + (7 − 4√3) = 14 ✓ فالجذران 4√3 و −4√3 يتلاشيان والعدد 14 صحيح طبيعي. الخطأ الشائع نسيان الجذر فيبقى (a + c)² = 196 ؛ أو توزيع الجذر على حدود الجمع: √(a/c + c/a + 2) = √(a/c) + √(c/a) + √2 = a + c + √2 = 14 + √2 ، والجذر لا يُوزَّع على الجمع ؛ أو استعمال الفرق بدل المجموع فيخرج a − c = 8√3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}

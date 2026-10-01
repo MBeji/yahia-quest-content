@@ -1,0 +1,175 @@
+{
+  "title": "⚔️ زعيم الفصل ⭐⭐⭐: التعميل ومعادلات الجداء المعدوم",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "ما مجموعة حلول المعادلة التالية في المجال [−10 ; 5]؟\n4x² = 36x",
+      "options": [
+        { "id": "a", "text": "{0}" },
+        {
+          "id": "b",
+          "text": "{9}",
+          "misconceptionTag": "math.alg.division-par-inconnue-perd-solution"
+        },
+        {
+          "id": "c",
+          "text": "{0 ; 9}",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "d",
+          "text": "لا حلّ لها في هذا المجال",
+          "misconceptionTag": "math.alg.division-par-inconnue-perd-solution"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ننقل 36x إلى الطرف الأوّل ونُخرج العامل المشترك 4x: 4x² − 36x = 4x(x − 9) = 0، إذن x = 0 أو x = 9. العدد 0 ينتمي إلى [−10 ; 5]، أمّا 9 فأكبر من 5: الجواب {0}. تحقّق: 4 × 0² = 0 = 36 × 0 ✓. الخطأ الشائع: قسمة الطرفين على x، فيبقى 4x = 36 أي x = 9 وحده ويضيع الحلّ 0: من لا يراقب المجال بعدها يجيب {9}، ومن يراقبه يجيب «لا حلّ لها في هذا المجال». ومن يحلّ جيّدًا وينسى المجال يجيب {0 ; 9}.",
+      "difficulty": 2,
+      "competencies": ["math.alg.equations-produit", "math.alg.factorisation"]
+    },
+    {
+      "prompt": "نختار العدد x من المجال [−1 ; 3]. ما مجموعة قيمه التي تحقّق المعادلة التالية؟\n(x + 1)(x − 4) + (x + 1)(2x − 2) = 0",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−1}",
+          "misconceptionTag": "math.alg.coefficient-non-divise"
+        },
+        {
+          "id": "b",
+          "text": "{1 ; 2}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "c",
+          "text": "{−1 ; 1}",
+          "misconceptionTag": "math.alg.produit-nul-applique-a-une-somme"
+        },
+        { "id": "d", "text": "{−1 ; 2}" }
+      ],
+      "correctOption": "d",
+      "explanation": "الطرف الأوّل مجموع وليس جداء، فلا نطبّق مبدأ الجداء المعدوم قبل التعميل. العامل (x + 1) مشترك: (x + 1)[(x − 4) + (2x − 2)] = (x + 1)(3x − 6) = 0، ومنه x = −1 أو 3x = 6 أي x = 2. العددان كلاهما في [−1 ; 3] (القوس مغلق عند −1)، فلا نُقصي شيئًا: الجواب {−1 ; 2}. تحقّق عند x = 2: (3)(−2) + (3)(2) = 0 ✓. الخطأ الشائع: جعل كلّ قوس من المجموع معدومًا دون تعميل، فتخرج −1 و 4 و 1، ولا يُبقي المجال إلّا {−1 ; 1}. ومن يتوقّف قبل القسمة على 3 (3x = 6 ثمّ x = 6) يجد 6 خارج المجال فيجيب {−1}، ومن يقرأ جذر العامل (x + 1) كما يظهر في القوس، 1 بدل −1، يجيب {1 ; 2}.",
+      "difficulty": 2,
+      "competencies": ["math.alg.equations-produit", "math.alg.factorisation"]
+    },
+    {
+      "prompt": "نعتبر العبارة E التالية حيث x عدد حقيقي:\nE = (x + 3)(2x − 9) − (x² − 9)\nما حلول المعادلة E = 0 التي تنتمي إلى المجال [−5 ; 15]؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{3 ; 12}",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "b",
+          "text": "{−3 ; 12}",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        { "id": "c", "text": "{−3 ; 6}" },
+        {
+          "id": "d",
+          "text": "{3 ; 6}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نكتب x² − 9 فرقَ مربّعين: x² − 9 = (x − 3)(x + 3)، فيظهر العامل المشترك (x + 3): E = (x + 3)[(2x − 9) − (x − 3)] = (x + 3)(2x − 9 − x + 3) = (x + 3)(x − 6). إذن x = −3 أو x = 6، والعددان كلاهما في [−5 ; 15]: الجواب {−3 ; 6}. تحقّق عند x = 6: (9)(3) − (36 − 9) = 27 − 27 = 0 ✓. الخطأ الشائع: طرح القوس (x − 3) بتغيير إشارة حدّه الأوّل وحده، فيصير العامل الثاني x − 12 ويُجاب {−3 ; 12}. ومن يقرأ جذر العامل (x + 3) كما يظهر في القوس، 3 بدل −3، يجيب {3 ; 6}، ومن يجمع الخطأين يجيب {3 ; 12}.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نبحث في المجال [−4 ; 2] عن الأعداد التي يتساوى عندها طرفا المساواة:\n(3x − 1)² = (x + 5)²\nما هي؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−4}",
+          "misconceptionTag": "math.alg.coefficient-non-divise"
+        },
+        { "id": "b", "text": "{−1}" },
+        {
+          "id": "c",
+          "text": "{3}",
+          "misconceptionTag": "math.num.racine-carree-negative-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "{−1 ; 3}",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ننقل الطرف الثاني فيظهر فرق مربّعين: (3x − 1)² − (x + 5)² = [(3x − 1) − (x + 5)][(3x − 1) + (x + 5)] = (2x − 6)(4x + 4) = 0. إذن 2x = 6 أي x = 3، أو 4x = −4 أي x = −1. العدد 3 أكبر من 2 فهو خارج المجال: الجواب {−1}. تحقّق: (3 × (−1) − 1)² = 16 و (−1 + 5)² = 16 ✓. الخطأ الشائع: أخذ الجذر التربيعي للطرفين بلا ± (3x − 1 = x + 5)، فلا يظهر إلّا x = 3، ومن لا يراقب المجال بعدها يجيب {3}. ومن يحلّ جيّدًا وينسى المجال يجيب {−1 ; 3}، ومن يتوقّف قبل القسمة على المعامل (2x = 6 ثمّ x = 6، و 4x = −4 ثمّ x = −4) لا يُبقي المجال إلّا {−4}.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "لتكن المعادلة:\n5(x + 2)² − 45 = 0\nما حلولها التي تنتمي إلى المجال [−6 ; 2]؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{1}",
+          "misconceptionTag": "math.num.racine-carree-negative-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "{−√5}",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "c",
+          "text": "لا يوجد حلّ في هذا المجال",
+          "misconceptionTag": "math.alg.produit-nul-et-au-lieu-de-ou"
+        },
+        { "id": "d", "text": "{−5 ; 1}" }
+      ],
+      "correctOption": "d",
+      "explanation": "نُخرج العامل المشترك 5 ثمّ نكتب 9 = 3²: 5[(x + 2)² − 3²] = 5(x + 2 − 3)(x + 2 + 3) = 5(x − 1)(x + 5) = 0. إذن x = 1 أو x = −5، والعددان كلاهما في [−6 ; 2]: الجواب {−5 ; 1}. تحقّق: 5(−5 + 2)² − 45 = 45 − 45 = 0 ✓ و 5(1 + 2)² − 45 = 0 ✓. الخطأ الشائع: كتابة (x + 2)² = 9 ثمّ x + 2 = 3 وحدها، فيضيع −5 ويُجاب {1}. ومن ينشر (x + 2)² إلى x² + 4 بإسقاط الجداء المضاعف يصل إلى x² = 5، ولا يُبقي المجال إلّا {−√5}، ومن يشترط انعدام العاملين (x − 1) و (x + 5) معًا يجيب «لا يوجد حلّ في هذا المجال».",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "مربّع طول ضلعه x + 2، ومستطيل بُعداه 2x − 1 و x − 4 (الأطوال بالصنتمتر، وكلّها موجبة قطعًا). للشكلين المساحة نفسها. ما طول ضلع المربّع؟\n<svg viewBox=\"0 0 360 165\"><rect x=\"24\" y=\"42\" width=\"90\" height=\"90\" fill=\"#0f6e56\" opacity=\"0.12\"/><rect x=\"24\" y=\"42\" width=\"90\" height=\"90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"154\" y=\"78\" width=\"150\" height=\"54\" fill=\"#0f6e56\" opacity=\"0.12\"/><rect x=\"154\" y=\"78\" width=\"150\" height=\"54\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"69\" y=\"154\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x + 2</text><text x=\"229\" y=\"154\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2x − 1</text><text x=\"328\" y=\"110\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x − 4</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "11 cm",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        { "id": "b", "text": "15 cm" },
+        {
+          "id": "c",
+          "text": "2 cm أو 11 cm",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "d",
+          "text": "2 cm أو 15 cm",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المساحتان متساويتان: (x + 2)² = (x − 4)(2x − 1)، أي x² + 4x + 4 = 2x² − 9x + 4، ومنه x² − 13x = 0 أي x(x − 13) = 0. إذن x = 0 أو x = 13. عند x = 0 يصير البُعد x − 4 مساويًا لـ −4، فنُقصيه رغم أنّ 0 ليس سالبًا، ويبقى x = 13: ضلع المربّع 13 + 2 = 15 cm. تحقّق: 15² = 225 و 9 × 25 = 225 ✓. الخطأ الشائع: الاحتفاظ بـ x = 0 فيُجاب «2 cm أو 15 cm». ومن ينشر (x + 2)² إلى x² + 4 يصل إلى x² − 9x = 0 أي x = 0 أو x = 9: إن أقصى x = 0 أجاب 11 cm، وإن احتفظ بالحلّين أجاب «2 cm أو 11 cm».",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.equations-produit",
+        "math.alg.identites-remarquables"
+      ]
+    }
+  ]
+}

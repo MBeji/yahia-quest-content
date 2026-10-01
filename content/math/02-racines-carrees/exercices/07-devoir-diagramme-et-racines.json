@@ -1,0 +1,265 @@
+{
+  "title": "⭐⭐ تمرين موجّه: صناديق الأعداد المتداخلة",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "في لعبة ترتيب نضع بطاقات أعداد في خمسة صناديق متداخلة، وكلّ صندوق يحتوي كاملًا الصندوقَ المرسوم داخله. على كلّ صندوق اسم مجموعة من مجموعات الأعداد، لكنّ اسمين مُحيا وعُوِّضا بالرمزين (1) و (2) كما في الشكل. ما المجموعتان المحذوفتان على الترتيب؟\n<svg viewBox=\"0 0 320 200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" rx=\"12\" fill=\"#0f6e56\" fill-opacity=\"0.10\" stroke=\"#0f6e56\" stroke-width=\"2\"/><rect x=\"34\" y=\"38\" width=\"252\" height=\"144\" rx=\"11\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/><rect x=\"58\" y=\"66\" width=\"204\" height=\"108\" rx=\"10\" fill=\"#0f6e56\" fill-opacity=\"0.10\" stroke=\"#0f6e56\" stroke-width=\"2\"/><rect x=\"82\" y=\"94\" width=\"156\" height=\"72\" rx=\"9\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/><rect x=\"106\" y=\"122\" width=\"108\" height=\"36\" rx=\"8\" fill=\"#0f6e56\" fill-opacity=\"0.10\" stroke=\"#0f6e56\" stroke-width=\"2\"/><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"28\" y=\"31\" fill=\"#0f172a\">ℝ</text><text x=\"56\" y=\"59\" fill=\"#b45309\">(1)</text><text x=\"76\" y=\"87\" fill=\"#0f172a\">𝔻</text><text x=\"104\" y=\"115\" fill=\"#b45309\">(2)</text><text x=\"124\" y=\"145\" fill=\"#0f172a\">ℕ</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℚ و ℤ"
+        },
+        {
+          "id": "b",
+          "text": "ℤ و ℚ",
+          "misconceptionTag": "math.num.inclusion-ensembles-inversee"
+        },
+        {
+          "id": "c",
+          "text": "I و ℝ+",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
+        },
+        {
+          "id": "d",
+          "text": "ℚ و ℝ+"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الصناديق مرتّبة من الأكبر في الخارج إلى الأصغر في الداخل، كما في سلسلة الاحتواء ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ. الصندوق (1) يقع بين ℝ و 𝔻 فهو ℚ، والصندوق (2) يقع بين 𝔻 و ℕ فهو ℤ ✓. تبديل الاسمين يقلب سلسلة الاحتواء، لأنّ ℚ لا يمكن أن تكون داخل 𝔻: العدد 1/3 كسري وليس عشريًّا. والمجموعة I لا تحتوي 𝔻 لأنّها لا تضمّ إلّا الأعداد الصمّاء، والمجموعة ℝ+ لا تتّسع داخل 𝔻 لأنّ فيها أعدادًا صمّاء مثل √2.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.ensembles-nombres"
+      ]
+    },
+    {
+      "prompt": "إحدى البطاقات تحمل العدد √1,44. ما قيمة هذا العدد؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,12"
+        },
+        {
+          "id": "b",
+          "text": "0,72",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "c",
+          "text": "1,2"
+        },
+        {
+          "id": "d",
+          "text": "12",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نكتب 1,44 = 144/100، فيكون √1,44 = √144/√100 = 12/10 = 1,2 ✓. التحقّق: (1,2)² = 1,44 والعدد 1,2 موجب. العدد 0,72 نصف 1,44 لا جذره، والعدد 12 جذر 144 بعد إهمال الفاصل، أمّا 0,12 فمربّعه 0,0144 لا 1,44. وبما أنّ 1,2 عدد عشري غير صحيح، فأصغر صندوق يتّسع لهذه البطاقة هو 𝔻.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.racines-definition"
+      ]
+    },
+    {
+      "prompt": "من بين البطاقات الأربع √48/√3 و √1,44 و 5/12 و √0,9، أيّها تحمل عددًا أصمّ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "√48/√3",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        },
+        {
+          "id": "b",
+          "text": "√1,44",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        },
+        {
+          "id": "c",
+          "text": "5/12",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        },
+        {
+          "id": "d",
+          "text": "√0,9"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نكتب 0,9 = 90/100، فيكون √0,9 = √90/10. العدد 90 ليس مربّعًا كاملًا لأنّ 81 < 90 < 100، فالعدد √90 أصمّ، والقسمة على 10 لا تفعل سوى إزاحة الفاصل، فتبقى الكتابة غير متناهية وغير دوريّة: √0,9 أصمّ ✓. الخطأ الشائع كتابة √0,9 = 0,3، لكنّ (0,3)² = 0,09 لا 0,9. أمّا البطاقات الأخرى فكسرية رغم مظهرها: √48/√3 = √16 = 4، و √1,44 = 1,2، و 5/12 = 0,41(6) كتابته دوريّة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ensembles-nombres",
+        "math.num.racines-definition"
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "نضع كلّ بطاقة في أصغر صندوق يتّسع لها من بين الصناديق ℕ و ℤ و 𝔻 و ℚ و ℝ. اربط كلّ بطاقة بصندوقها.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "5/12"
+        },
+        {
+          "id": "l2",
+          "text": "√0,9"
+        },
+        {
+          "id": "l3",
+          "text": "−√49"
+        },
+        {
+          "id": "l4",
+          "text": "√48/√3"
+        },
+        {
+          "id": "l5",
+          "text": "26/65"
+        },
+        {
+          "id": "r1",
+          "text": "ℕ"
+        },
+        {
+          "id": "r2",
+          "text": "ℤ"
+        },
+        {
+          "id": "r3",
+          "text": "𝔻"
+        },
+        {
+          "id": "r4",
+          "text": "ℚ"
+        },
+        {
+          "id": "r5",
+          "text": "ℝ"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r4"
+          ],
+          [
+            "l2",
+            "r5"
+          ],
+          [
+            "l3",
+            "r2"
+          ],
+          [
+            "l4",
+            "r1"
+          ],
+          [
+            "l5",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "نحسب قبل أن نحكم. √48/√3 = √(48/3) = √16 = 4، فمكانه ℕ. و −√49 = −7 عدد صحيح سالب، فمكانه ℤ. و 26/65 = 2/5 = 0,4 كتابته العشرية متناهية، فمكانه 𝔻. و 5/12 = 0,41(6) كتابته دوريّة لا تتوقّف، فمكانه ℚ. و √0,9 أصمّ، فلا يتّسع له إلّا ℝ. كلّ صندوق أكبر يتّسع للبطاقة أيضًا، لكنّ المطلوب أصغرها.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ensembles-nombres",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "بعد تبسيط أعداد البطاقات الستّ نحصل على المجموعة:\nE = {4 ; −7 ; 1,2 ; 0,4 ; 5/12 ; √0,9}\nالمجموعة E ∩ ℚ تضمّ عناصر E التي تنتمي إلى ℚ. ما هي؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{1,2 ; 0,4 ; 5/12}",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
+        },
+        {
+          "id": "b",
+          "text": "{4 ; −7 ; 1,2 ; 0,4}",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        },
+        {
+          "id": "c",
+          "text": "{4 ; −7 ; 1,2 ; 0,4 ; 5/12}"
+        },
+        {
+          "id": "d",
+          "text": "{4 ; −7 ; 1,2 ; 0,4 ; √0,9}",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ℚ تضمّ كلّ الأعداد الكسرية، ومنها الأعداد الصحيحة (4 = 4/1 و −7 = −7/1) والأعداد العشرية (1,2 = 12/10 و 0,4 = 2/5)، والعدد 5/12 كسري رغم أنّ كتابته العشرية دوريّة لا تتوقّف. العنصر الوحيد الذي لا ينتمي إلى ℚ هو √0,9 لأنّه أصمّ. إذن E ∩ ℚ = {4 ; −7 ; 1,2 ; 0,4 ; 5/12} ✓. الخطأ الشائع إبقاء √0,9 بحجّة أنّ 0,9 عدد عشري، مع أنّ جذره أصمّ لأنّ 90 ليس مربّعًا كاملًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ensembles-nombres"
+      ]
+    },
+    {
+      "prompt": "نكتب المجموعة E بأعداد البطاقات كما وردت عليها:\nE = {√48/√3 ; −√49 ; √1,44 ; 26/65 ; 5/12 ; √0,9}\nما المجموعة E ∩ 𝔻، وهي عناصر E التي تنتهي كتابتها العشرية؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{√1,44 ; 26/65 ; 5/12}",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
+        },
+        {
+          "id": "b",
+          "text": "{√48/√3 ; −√49 ; √1,44 ; 26/65}"
+        },
+        {
+          "id": "c",
+          "text": "{√48/√3 ; −√49 ; √1,44 ; 26/65 ; √0,9}",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
+        {
+          "id": "d",
+          "text": "{√48/√3 ; −√49 ; √1,44 ; 26/65 ; 5/12}",
+          "misconceptionTag": "math.num.appartenance-ensemble-confondue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "𝔻 تضمّ الأعداد ذات الكتابة العشرية المتناهية، ومنها كلّ الأعداد الصحيحة لأنّ ℤ ⊂ 𝔻. لدينا √48/√3 = 4 و −√49 = −7 و √1,44 = 1,2 و 26/65 = 0,4، وكلّها تنتمي إلى 𝔻. أمّا 5/12 = 0,41(6) فكتابته دوريّة لا تتوقّف، و √0,9 أصمّ. إذن E ∩ 𝔻 = {√48/√3 ; −√49 ; √1,44 ; 26/65} ✓. الخطأ الشائع إسقاط √48/√3 و −√49 لأنّ قيمتيهما 4 و −7 لا تحملان فاصلًا، أو إدخال √0,9 بعد حسابه خطأً 0,3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ensembles-nombres"
+      ]
+    },
+    {
+      "prompt": "العدد الأصمّ الوحيد في المجموعة E هو √0,9. نضيف إلى E بطاقتين تحملان العددين √0,4 و √0,04. ما مجموعة الأعداد الصمّاء في E بعد الإضافة، وهي E ∩ I ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{√0,9}",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
+        {
+          "id": "b",
+          "text": "{√0,9 ; √0,4 ; √0,04}",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        },
+        {
+          "id": "c",
+          "text": "{√0,9 ; √0,04}"
+        },
+        {
+          "id": "d",
+          "text": "{√0,9 ; √0,4}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "√0,04 = 0,2 لأنّ (0,2)² = 0,04، فهو عشري لا أصمّ. أمّا √0,4 فنكتبه √(40/100) = √40/10، و 40 ليس مربّعًا كاملًا، فهو أصمّ. إذن E ∩ I = {√0,9 ; √0,4} ✓. الخطأ الشائع الخلط بين 0,4 و 0,04: الجذر 0,2 يخصّ 0,04 وحده، لأنّ (0,2)² = 0,04 لا 0,4. ومن أدخل √0,04 حكم بالأصمّ لمجرّد وجود رمز الجذر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ensembles-nombres",
+        "math.num.racines-definition"
+      ]
+    }
+  ]
+}

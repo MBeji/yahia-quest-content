@@ -1,0 +1,203 @@
+{
+  "title": "⭐⭐ تمرين موجّه: أسئلة قصيرة — القوى والقيمة المطلقة والتناظر والكتابة الدوريّة",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "نعتبر العدد:\nN = 7¹³ + 7¹²\nبإخراج أصغر قوّة عاملًا مشتركًا نكتب N = 7¹² × k، حيث k عدد صحيح طبيعي. ما قيمة k ؟ اكتب العدد.",
+      "answerKey": {
+        "value": 8
+      },
+      "explanation": "نكتب القوّة الكبرى بدلالة الصغرى: 7¹³ = 7¹² × 7. ومنه N = 7¹² × 7 + 7¹² × 1 = 7¹² × (7 + 1) = 7¹² × 8، إذن k = 8 ✓. تحقّق على مثال صغير من النوع نفسه: 7³ + 7² = 343 + 49 = 392 = 7² × 8 ✓. الخطأ الشائع: جمع الأسّين فيُكتب N = 7²⁵، والقاعدة التي تجمع الأسس تخصّ الجداء لا المجموع؛ ومن نسي الحدّ 7¹² × 1 وجد k = 7.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\nN = 7¹³ + 7¹² = 7¹² × 8\nمن بين الأعداد المقترحة، ما العدد الذي يقبل N القسمة عليه؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "6",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "16",
+          "misconceptionTag": "math.num.divisibilite-composee-facteurs-non-premiers"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد N = 7¹² × 8 = 7¹² × 2³ جداء عوامل كلّها 2 أو 7: ثلاثة عوامل 2 واثنا عشر عاملًا 7. والعدد 14 = 2 × 7 يأخذ عاملًا 2 من 8 وعاملًا 7 من 7¹²، إذن N يقبل القسمة على 14 ✓، وفعلًا N = 14 × (7¹¹ × 4). أمّا 6 = 2 × 3 و 12 = 4 × 3 فيحتاجان العامل 3، وهو غير موجود: الزوجيّة وحدها لا تكفي للقسمة على 6. و 16 = 2⁴ يحتاج أربعة عوامل 2، و N لا يحوي إلّا ثلاثة: القسمة على 8 وعلى 2 لا تعطي القسمة على 16، لأنّ 8 و 2 ليسا أوليين فيما بينهما. الخطأ الشائع: قراءة الأسّ كأنّه عامل، فيُظنّ أنّ 7¹² يقبل القسمة على 12، بينما 7¹² = 7 × 7 × … × 7 لا يحوي إلّا العامل 7.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite",
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "ليكن x عددًا حقيقيًّا محصورًا بين 1 و 5، أي:\n1 < x < 5\nما الكتابة المبسّطة للعبارة التالية، دون رمز القيمة المطلقة؟\nE = |x − 1| + |x − 5|",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4",
+          "misconceptionTag": "math.num.valeur-absolue-negative"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "2x − 6",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "d",
+          "text": "6 − 2x",
+          "misconceptionTag": "math.num.valeur-absolue-toujours-oppose"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نختبر إشارة ما بداخل كلّ قيمة مطلقة قبل حذفها. بما أنّ x > 1 فإنّ x − 1 موجب، ومنه |x − 1| = x − 1. وبما أنّ x < 5 فإنّ x − 5 سالب، ومنه |x − 5| = −(x − 5) = 5 − x. إذن E = (x − 1) + (5 − x) = 4 ✓. تحقّق بقيمة: من أجل x = 2 نجد E = |1| + |−3| = 1 + 3 = 4 ✓. وللنتيجة معنى: E مجموع بُعدَي العدد x عن 1 وعن 5، وهو 4 دائمًا كلّما وقع x بينهما. الخطأ الشائع: حذف الرمزين دون اختبار الإشارة فيخرج 2x − 6، أو أخذ المقابل في الحالتين فيخرج 6 − 2x. أمّا −4 فمستحيل: مجموع قيمتين مطلقتين لا يكون سالبًا أبدًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نستعمل عادةً القيمة التقريبية √3 ≈ 1,73. ما الكتابة الصحيحة للعدد التالي دون رمز القيمة المطلقة؟\n|√3 − 1,73|",
+      "options": [
+        {
+          "id": "a",
+          "text": "0",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
+        {
+          "id": "b",
+          "text": "√3 − 1,73"
+        },
+        {
+          "id": "c",
+          "text": "1,73 − √3"
+        },
+        {
+          "id": "d",
+          "text": "√3 + 1,73",
+          "misconceptionTag": "math.num.valeur-absolue-somme-additive"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "العدد 1,73 قيمة تقريبية بالنقصان للعدد √3، أي أصغر منه، والدليل مقارنة المربّعين: 1,73² = 2,9929 < 3، ومنه 1,73 < √3. إذن الفرق √3 − 1,73 موجب، وهو قرابة 0,002، والقيمة المطلقة لعدد موجب هي العدد نفسه: |√3 − 1,73| = √3 − 1,73 ✓. الخطأ الشائع: معاملة القيمة التقريبية كأنّها مضبوطة، فيُكتب √3 = 1,73 ويخرج 0، بينما كتابة √3 العشرية لا تتوقّف ولا يساويه أيّ عدد عشري. والكتابة 1,73 − √3 تفترض أنّ الفرق سالب دون اختبار، و √3 + 1,73 توزّع القيمة المطلقة على الفرق، وهذا غير جائز.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "في معلّم متعامد ومتجانس (O ; i ; j)، النقطة A(−4 ; 1) ممثّلة في الشكل، والنقطة B مناظرة A بالنسبة إلى الأصل O، و E(0 ; 3). ما إحداثيّتا منتصف القطعة [BE] ؟\n<svg viewBox=\"0 0 268 158\"><title>النقطة A في معلّم متعامد ومتجانس</title><path d=\"M24 134 V24 M46 134 V24 M68 134 V24 M90 134 V24 M112 134 V24 M134 134 V24 M156 134 V24 M178 134 V24 M200 134 V24 M222 134 V24 M244 134 V24 M24 134 H244 M24 112 H244 M24 90 H244 M24 68 H244 M24 46 H244 M24 24 H244\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><path d=\"M24 90 H256 M134 134 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M262 90 L252 85.5 L252 94.5 Z M134 6 L129.5 16 L138.5 16 Z\" fill=\"#0f172a\"/><path d=\"M46 68 L46 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M46 68 L134 68\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"134\" cy=\"90\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"68\" r=\"4.5\" fill=\"#0f6e56\"/><text x=\"123\" y=\"106\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">O</text><text x=\"37\" y=\"60\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><text x=\"46\" y=\"105\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">−4</text><text x=\"156\" y=\"105\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><text x=\"143\" y=\"63\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 ; 2)",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; −2)",
+          "misconceptionTag": "math.vec.milieu-difference-au-lieu-de-somme"
+        },
+        {
+          "id": "c",
+          "text": "(4 ; 2)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        },
+        {
+          "id": "d",
+          "text": "(2 ; 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المناظرة بالنسبة إلى الأصل تغيّر إشارتَي الإحداثيّتين، لأنّ O منتصف [AB]: B(4 ; −1). ثمّ إحداثيّتا منتصف [BE] هما معدّلا إحداثيّات الطرفين: ((4 + 0)/2 ; (−1 + 3)/2) = (2 ; 1) ✓. التحقّق: 2 في منتصف المسافة بين 0 و 4، و 1 في منتصف المسافة بين −1 و 3 ✓. الخطأ الشائع: نسيان المناظرة وحساب منتصف [AE]، أي (−2 ; 2)؛ أو جمع الإحداثيّات دون القسمة على 2، أي (4 ; 2)؛ أو أخذ نصف الفرقين بدل نصف المجموعين، أي (2 ; −2).",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-coordonnees",
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "في المعلّم نفسه، النقطتان A(−4 ; 1) و Ω(−1 ; 2) ممثّلتان في الشكل. ما إحداثيّتا النقطة C مناظرة A بالنسبة إلى Ω ؟\n<svg viewBox=\"0 0 240 168\"><title>النقطتان A و Ω في معلّم متعامد ومتجانس</title><path d=\"M24 144 V24 M48 144 V24 M72 144 V24 M96 144 V24 M120 144 V24 M144 144 V24 M168 144 V24 M192 144 V24 M216 144 V24 M24 144 H216 M24 120 H216 M24 96 H216 M24 72 H216 M24 48 H216 M24 24 H216\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><path d=\"M24 120 H228 M144 144 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M234 120 L224 115.5 L224 124.5 Z M144 6 L139.5 16 L148.5 16 Z\" fill=\"#0f172a\"/><text x=\"168\" y=\"135\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><text x=\"135\" y=\"100\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><path d=\"M48 96 L120 72\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"144\" cy=\"120\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"48\" cy=\"96\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"120\" cy=\"72\" r=\"4.5\" fill=\"#1d4ed8\"/><text x=\"133\" y=\"136\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">O</text><text x=\"46\" y=\"116\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><text x=\"120\" y=\"62\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1d4ed8\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">Ω</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−7 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "(−2,5 ; 1,5)"
+        },
+        {
+          "id": "c",
+          "text": "(−2 ; 4)",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "(2 ; 3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "النقطة Ω منتصف [AC]، فنعزل الطرف المجهول: xC = 2xΩ − xA = 2 × (−1) − (−4) = −2 + 4 = 2، و yC = 2yΩ − yA = 2 × 2 − 1 = 3، إذن C(2 ; 3) ✓. تحقّق: منتصف [AC] هو ((−4 + 2)/2 ; (1 + 3)/2) = (−1 ; 2)، وهو Ω ✓. الخطأ الشائع: حساب منتصف [AΩ]، وهو (−2,5 ; 1,5)، مع أنّ Ω هي المنتصف لا C؛ أو الوقوف عند 2xΩ و 2yΩ، أي (−2 ; 4)، ونسيان طرح إحداثيّتَي A؛ أمّا (−7 ; 0) فهي مناظرة Ω بالنسبة إلى A: لقد تبادلت النقطتان الدورين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "prompt": "بإنجاز القسمة 11 ÷ 15 نجد 11/15 = 0,7(3). ما طبيعة العدد 15 × 0,7(3) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "عدد صحيح طبيعي"
+        },
+        {
+          "id": "b",
+          "text": "عدد عشري غير صحيح"
+        },
+        {
+          "id": "c",
+          "text": "عدد كسري غير عشري"
+        },
+        {
+          "id": "d",
+          "text": "عدد أصمّ",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب أوّلًا ثمّ نحكم: 15 × 0,7(3) = 15 × 11/15 = 11، وهو عدد صحيح طبيعي ✓. الخطأ الشائع: الحساب بالقيمة التقريبية 0,73 بدل القيمة المضبوطة 0,7(3)، فيخرج 15 × 0,73 = 10,95 ويُظنّ أنّ الناتج عشري غير صحيح. والحكم من شكل الكتابة خطأ آخر: وجود دور في العامل 0,7(3) لا يجعل الجداء كسريًّا غير عشري، والكتابة الدوريّة تخصّ عددًا كسريًّا، فلا يمكن أن تعطي هنا عددًا أصمّ.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ensembles-nombres",
+        "math.frac.sens"
+      ]
+    }
+  ]
+}

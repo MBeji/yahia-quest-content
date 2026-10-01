@@ -1,0 +1,208 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: تعامد وتناظر محوري وموازيات في المعلّم",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "في معلّم متعامد ومتجانس، نعتبر النقاط A(1 ; 1) و B(11 ; 1) و C(7 ; 9). ما المسافة AC ؟\n<svg viewBox=\"0 0 278 242\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V220 M58 22 V220 M76 22 V220 M94 22 V220 M112 22 V220 M130 22 V220 M148 22 V220 M166 22 V220 M184 22 V220 M202 22 V220 M220 22 V220 M238 22 V220 M256 22 V220\"/><path d=\"M22 220 H256 M22 184 H256 M22 166 H256 M22 148 H256 M22 130 H256 M22 112 H256 M22 94 H256 M22 76 H256 M22 58 H256 M22 40 H256 M22 22 H256\"/></g><path d=\"M16 202 H266 M40 226 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M257 197 L267 202 L257 207 Z M35 21 L40 11 L45 21 Z\" fill=\"#0f172a\"/><path d=\"M58 184 L238 184 L166 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M58 184 L166 40\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"58\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"31\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"58\" y=\"217\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"47\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"249\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"166\" y=\"30\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "100",
+          "misconceptionTag": "math.vec.distance-sans-racine"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "2√7",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "AC = √((7 − 1)² + (9 − 1)²) = √(6² + 8²) = √(36 + 64) = √100 = 10 ✓. و AB = 11 − 1 = 10 لأنّ لـ A و B الترتيبة نفسها، إذن AB = AC = 10 والمثلّث ABC متقايس الضلعين قمّته A. الخطأ الشائع: نسيان الجذر (100)، أو جمع الفرقين 6 + 8 = 14 دون تربيع. أمّا 2√7 = √(64 − 36) فيطرح المربّعين كأنّ [AC] ضلع قائم، مع أنّه وتر المثلّث القائم الذي ضلعاه 6 و 8.",
+      "difficulty": 1,
+      "competencies": [
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "النقطة K منتصف القطعة [BC] حيث B(11 ; 1) و C(7 ; 9)، والنقطة A(1 ; 1). احسب إحداثيّات K، ثمّ احسب AK². اكتب قيمة AK².\n<svg viewBox=\"0 0 278 242\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V220 M58 22 V220 M76 22 V220 M94 22 V220 M112 22 V220 M130 22 V220 M148 22 V220 M166 22 V220 M184 22 V220 M202 22 V220 M220 22 V220 M238 22 V220 M256 22 V220\"/><path d=\"M22 220 H256 M22 184 H256 M22 166 H256 M22 148 H256 M22 130 H256 M22 112 H256 M22 94 H256 M22 76 H256 M22 58 H256 M22 40 H256 M22 22 H256\"/></g><path d=\"M16 202 H266 M40 226 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M257 197 L267 202 L257 207 Z M35 21 L40 11 L45 21 Z\" fill=\"#0f172a\"/><path d=\"M58 184 L238 184 L166 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M238 184 L166 40\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"58\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"31\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"58\" y=\"217\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"47\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"249\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"166\" y=\"30\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
+      "answerKey": {
+        "value": 80
+      },
+      "explanation": "K = ((11 + 7)/2 ; (1 + 9)/2) = (9 ; 5). ثمّ AK² = (9 − 1)² + (5 − 1)² = 64 + 16 = 80، أي AK = √80 = 4√5 ✓. نحتفظ بالمربّع AK² = 80 لأنّ عكس نظرية فيثاغورس يقارن المربّعات. الخطأ الشائع: جمع الإحداثيّات دون القسمة على 2، فنجد (18 ; 10) بدل K، ويبتعد AK² كثيرًا عن 80.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABK حيث A(1 ; 1) و B(11 ; 1) و K(9 ; 5) منتصف [BC]، لدينا AK² = 80 و KB² = 20 و AB² = 100. ماذا نستنتج؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "المثلّث ABK قائم الزاوية في A، إذن (AB) ⊥ (AK)",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "المثلّث ABK قائم الزاوية في B، إذن (AB) ⊥ (BC)",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "المثلّث ABK ليس قائم الزاوية، لأنّ AK + KB ≠ AB",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "المثلّث ABK قائم الزاوية في K، إذن (AK) ⊥ (BC)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "أطول أضلاع المثلّث ABK هو [AB]، و AK² + KB² = 80 + 20 = 100 = AB² ✓، فبعكس نظرية فيثاغورس المثلّث قائم الزاوية في K، الرأس المقابل لأطول ضلع. و B و K و C على استقامة واحدة، فالمستقيم (KB) هو (BC)، إذن (AK) ⊥ (BC). الخطأ الشائع: وضع الزاوية القائمة في أحد طرفَي الضلع الأطول، في A أو في B. والجمع دون تربيع يرفض زاوية قائمة موجودة: AK + KB = 4√5 + 2√5 = 6√5، ومقارنته بـ AB = 10 لا معنى لها.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "النقطة K(9 ; 5) منتصف [BC] حيث B(11 ; 1) و C(7 ; 9)، والمستقيم (AK) عمودي على (BC) مع A(1 ; 1). ما إحداثيّات مناظرة النقطة B بالنسبة إلى المستقيم (AK) ؟\n<svg viewBox=\"0 0 278 242\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V220 M58 22 V220 M76 22 V220 M94 22 V220 M112 22 V220 M130 22 V220 M148 22 V220 M166 22 V220 M184 22 V220 M202 22 V220 M220 22 V220 M238 22 V220 M256 22 V220\"/><path d=\"M22 220 H256 M22 184 H256 M22 166 H256 M22 148 H256 M22 130 H256 M22 112 H256 M22 94 H256 M22 76 H256 M22 58 H256 M22 40 H256 M22 22 H256\"/></g><path d=\"M16 202 H266 M40 226 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M257 197 L267 202 L257 207 Z M35 21 L40 11 L45 21 Z\" fill=\"#0f172a\"/><path d=\"M58 184 L238 184 L166 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M16.6 204.7 L261.4 82.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M206 120 L198 124.1 L194 116\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"58\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"202\" cy=\"112\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"31\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"58\" y=\"217\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"47\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"249\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"166\" y=\"30\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"214\" y=\"116\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(9 ; 5)"
+        },
+        {
+          "id": "b",
+          "text": "(−9 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(7 ; 9)"
+        },
+        {
+          "id": "d",
+          "text": "(11 ; −1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المستقيم (AK) عمودي على [BC] في منتصفها K، فهو الموسّط العمودي للقطعة [BC]، والتناظر المحوري الذي محوره الموسّط العمودي لـ [BC] يحوّل B إلى C. إذن مناظرة B بالنسبة إلى (AK) هي C(7 ; 9) ✓. تحقّق: AB = AC = 10 و KB = KC، فالمحور يمرّ من نقطتين متساويتَي البعد عن B و C. الخطأ الشائع: تطبيق قاعدة المناظرة بالنسبة إلى محور الفواصل، فنجد (11 ; −1)، مع أنّ المحور هنا المستقيم المائل (AK). ومن توقّف عند المسقط العمودي للنقطة B على (AK) وجد K(9 ; 5)، وهي منتصف [BC] لا صورة B. أمّا (−9 ; 1) فنظيرة B بالنسبة إلى النقطة A: تناظر مركزي لا محوري.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "prompt": "المستقيم المارّ من K(9 ; 5) والموازي للمستقيم (AC) يقطع المستقيم (AB) في النقطة Q، حيث A(1 ; 1) و B(11 ; 1) و C(7 ; 9)، و K منتصف [BC]. ما إحداثيّات Q ؟\n<svg viewBox=\"0 0 278 242\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V220 M58 22 V220 M76 22 V220 M94 22 V220 M112 22 V220 M130 22 V220 M148 22 V220 M166 22 V220 M184 22 V220 M202 22 V220 M220 22 V220 M238 22 V220 M256 22 V220\"/><path d=\"M22 220 H256 M22 184 H256 M22 166 H256 M22 148 H256 M22 130 H256 M22 112 H256 M22 94 H256 M22 76 H256 M22 58 H256 M22 40 H256 M22 22 H256\"/></g><path d=\"M16 202 H266 M40 226 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M257 197 L267 202 L257 207 Z M35 21 L40 11 L45 21 Z\" fill=\"#0f172a\"/><path d=\"M58 184 L238 184 L166 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M202 112 L177.7 144.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M118.6 113.2 L117.4 104.8 L109 106\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M188.6 139.8 L187.4 131.4 L179 132.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"58\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"202\" cy=\"112\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"31\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"58\" y=\"217\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"47\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"249\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"166\" y=\"30\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"214\" y=\"116\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "(6 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(9 ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "(11 ; 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث ABC، K منتصف [BC] والمستقيم المارّ منها موازٍ لـ (AC)، فبعكس خاصيّة المنتصفين يقطع [AB] في منتصفها: Q = ((1 + 11)/2 ; (1 + 1)/2) = (6 ; 1) ✓. الخطأ الشائع: إسقاط K عموديًّا على (AB) بإبقاء فاصلتها، فنجد (9 ; 1)، مع أنّ الاتّجاه المفروض هو اتّجاه (AC) المائل لا العمودي على (AB). ومن سار في اتّجاه (BC) بقي على (BC) فوصل إلى B(11 ; 1)، ومن سار في اتّجاه (AK) بقي على (AK) فوصل إلى A(1 ; 1).",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "النقاط A(1 ; 1) و B(11 ; 1) و C(7 ; 9)، و K(9 ; 5) منتصف [BC] حيث (AK) ⊥ (BC)، و Q(6 ; 1) منتصف [AB]، و P(4 ; 5) منتصف [AC]. اختر كلّ العبارات الصحيحة.\n<svg viewBox=\"0 0 278 242\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V220 M58 22 V220 M76 22 V220 M94 22 V220 M112 22 V220 M130 22 V220 M148 22 V220 M166 22 V220 M184 22 V220 M202 22 V220 M220 22 V220 M238 22 V220 M256 22 V220\"/><path d=\"M22 220 H256 M22 184 H256 M22 166 H256 M22 148 H256 M22 130 H256 M22 112 H256 M22 94 H256 M22 76 H256 M22 58 H256 M22 40 H256 M22 22 H256\"/></g><path d=\"M16 202 H266 M40 226 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M257 197 L267 202 L257 207 Z M35 21 L40 11 L45 21 Z\" fill=\"#0f172a\"/><path d=\"M58 184 L238 184 L166 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M148 184 L202 112\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M202 112 L112 112\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M148 184 L112 112\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M16.6 204.7 L261.4 82.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><circle cx=\"58\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"202\" cy=\"112\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"148\" cy=\"184\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"112\" cy=\"112\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"31\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"58\" y=\"217\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"47\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"249\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"166\" y=\"30\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"214\" y=\"116\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"148\" y=\"201\" text-anchor=\"middle\" fill=\"#0f6e56\">Q</text><text x=\"100\" y=\"108\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(QP) ∥ (BC)"
+        },
+        {
+          "id": "b",
+          "text": "(QP) ⊥ (AK)"
+        },
+        {
+          "id": "c",
+          "text": "P مناظرة Q بالنسبة إلى المستقيم (AK)"
+        },
+        {
+          "id": "d",
+          "text": "Q هي المسقط العمودي للنقطة K على (AB)"
+        },
+        {
+          "id": "e",
+          "text": "QP = BC"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Q و P منتصفا [AB] و [AC]، فبالرابط بين المنتصفين (QP) ∥ (BC) و QP = BC/2 لا BC. وبما أنّ (AK) ⊥ (BC)، فالمستقيم (QP) الموازي لـ (BC) عمودي على (AK) أيضًا. والتناظر المحوري الذي محوره (AK) يُبقي A في مكانها ويحوّل B إلى C، فيحوّل منتصف [AB] إلى منتصف [AC]: P مناظرة Q. أمّا المسقط العمودي للنقطة K على (AB) فهو (9 ; 1)، لا Q(6 ; 1).",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "الرباعي AQKP حيث A(1 ; 1) و Q(6 ; 1) و K(9 ; 5) و P(4 ; 5)، والمستقيم (QK) يوازي (AC) والمستقيم (KP) يوازي (AB). ما أدقّ وصف للرباعي AQKP ؟\n<svg viewBox=\"0 0 278 242\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V220 M58 22 V220 M76 22 V220 M94 22 V220 M112 22 V220 M130 22 V220 M148 22 V220 M166 22 V220 M184 22 V220 M202 22 V220 M220 22 V220 M238 22 V220 M256 22 V220\"/><path d=\"M22 220 H256 M22 184 H256 M22 166 H256 M22 148 H256 M22 130 H256 M22 112 H256 M22 94 H256 M22 76 H256 M22 58 H256 M22 40 H256 M22 22 H256\"/></g><path d=\"M16 202 H266 M40 226 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M257 197 L267 202 L257 207 Z M35 21 L40 11 L45 21 Z\" fill=\"#0f172a\"/><path d=\"M58 184 L148 184 L202 112 L112 112 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M58 184 L238 184 L166 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/><path d=\"M58 184 L148 184 L202 112 L112 112 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"58\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"184\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"202\" cy=\"112\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"148\" cy=\"184\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"112\" cy=\"112\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"31\" y=\"217\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"58\" y=\"217\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"47\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"249\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"166\" y=\"30\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"214\" y=\"116\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"148\" y=\"201\" text-anchor=\"middle\" fill=\"#0f6e56\">Q</text><text x=\"100\" y=\"108\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "معيّن"
+        },
+        {
+          "id": "b",
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "c",
+          "text": "مستطيل",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "d",
+          "text": "متوازي أضلاع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "أضلاع AQKP متوازية مثنى مثنى: (QK) ∥ (AP) لأنّ P على (AC)، و (KP) ∥ (AQ) لأنّ Q على (AB)، فهو متوازي أضلاع. ثمّ AQ = 6 − 1 = 5 و AP = √((4 − 1)² + (5 − 1)²) = √25 = 5: ضلعان متتاليان متقايسان، فهو معيّن ✓، وقطراه [AK] و [QP] متعامدان. وليس مربّعًا لأنّ قطريه غير متقايسين: AK = √80 = 4√5 و QP = √((4 − 6)² + (5 − 1)²) = √20 = 2√5. الخطأ الشائع: نسبة القطرين المتعامدين إلى المستطيل، أو التوقّف عند متوازي الأضلاع.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    }
+  ]
+}

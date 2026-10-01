@@ -1,0 +1,191 @@
+{
+  "title": "⭐⭐ تمرين موجّه: قيمة مطلقة ومقلوب ومقابل، ثمّ منتصفات ومساحات",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "ما قيمة العدد √((3 − √10)²) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "√10 − 3"
+        },
+        {
+          "id": "b",
+          "text": "3 − √10",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "c",
+          "text": "3 + √10",
+          "misconceptionTag": "math.num.valeur-absolue-somme-additive"
+        },
+        {
+          "id": "d",
+          "text": "−3 − √10",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الجذر التربيعي لمربّع عدد هو القيمة المطلقة لهذا العدد: √((3 − √10)²) = |3 − √10|. ولحذف رمز القيمة المطلقة نختبر إشارة ما بداخله: √10 ≈ 3,16 أكبر من 3، إذن 3 − √10 سالب، فنأخذ مقابله: −(3 − √10) = −3 + √10 = √10 − 3 ✓. التحقّق: √10 − 3 ≈ 0,16 موجب، كما يجب لجذر تربيعي. الخطأ الشائع: كتابة √(a²) = a دون شرط فيخرج 3 − √10، وهو عدد سالب لا يكون جذرًا تربيعيًّا. ومن أخذ المقابل وأدخل الإشارة − على الحدّ الأوّل وحده كتب −3 − √10، أمّا 3 + √10 فيأتي من توزيع القيمة المطلقة على الفرق.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.racines-definition",
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "العدد √10 − 3 غير معدوم. ما مقلوبه بعد إنطاق المقام؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 − √10",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        },
+        {
+          "id": "b",
+          "text": "√10 + 3"
+        },
+        {
+          "id": "c",
+          "text": "(√10 + 3)/7",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
+        {
+          "id": "d",
+          "text": "−√10 − 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مقلوب العدد √10 − 3 هو 1/(√10 − 3). نضرب البسط والمقام في المرافق √10 + 3: 1/(√10 − 3) = (√10 + 3)/((√10 − 3)(√10 + 3)) = (√10 + 3)/(10 − 9) = √10 + 3 ✓، لأنّ (√10)² − 3² = 10 − 9 = 1. التحقّق: (√10 − 3)(√10 + 3) = 1، والجداء 1 هو ما يجعل العددين مقلوبين. الخطأ الشائع: نسيان تربيع الحدّ الثاني فيصير المقام 10 − 3 = 7، أو حساب فرق المربّعين بالترتيب المعكوس، 9 − 10 = −1، فيخرج −√10 − 3، وهو سالب مع أنّ مقلوب عدد موجب موجب. أمّا 3 − √10 فهو مقابل العدد لا مقلوبه: مجموعه معه 0، لا جداؤه 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "ما مقابل العدد 2(3 − √10) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6 − √10",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "b",
+          "text": "6 − 2√10",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "6 + 2√10"
+        },
+        {
+          "id": "d",
+          "text": "2√10 − 6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "مقابل العدد هو العدد نفسه مسبوقًا بالإشارة −: −2(3 − √10). نوزّع العامل −2 على الحدّين كليهما: (−2) × 3 = −6 و (−2) × (−√10) = +2√10، إذن المقابل −6 + 2√10 = 2√10 − 6 ✓. التحقّق: 2(3 − √10) + (2√10 − 6) = 6 − 2√10 + 2√10 − 6 = 0، ومجموع عدد ومقابله صفر. الخطأ الشائع: ضرب الحدّ الأوّل وحده في −2 وترك الحدّ الثاني على حاله فيخرج −6 − √10. أمّا 6 − 2√10 فهو العدد نفسه بعد النشر، لا مقابله، ومن غيّر إشارة الحدّ الثاني وحده وجد 6 + 2√10.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC، النقطة I منتصف [AB] والنقطة J منتصف [AC]، حيث AB = 13 cm و AC = 15 cm و IJ = 7 cm. ما محيط الرباعي IBCJ ؟\n<svg viewBox=\"0 0 320 250\"><path d=\"M130 33 L50 225 L274 225 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M90 129 L202 129\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M104.5 78.7 L115.5 83.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M64.5 174.7 L75.5 179.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M160 83 L169.6 75.8 M162.4 86.2 L172 79\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M232 179 L241.6 171.8 M234.4 182.2 L244 175\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"130\" cy=\"33\" r=\"3.5\"/><circle cx=\"50\" cy=\"225\" r=\"3.5\"/><circle cx=\"274\" cy=\"225\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"90\" cy=\"129\" r=\"3.5\"/><circle cx=\"202\" cy=\"129\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"130\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"38\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"286\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"76\" y=\"131\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"216\" y=\"131\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"146\" y=\"121\" text-anchor=\"middle\" fill=\"#0f6e56\">7</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "24,5 cm",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        {
+          "id": "b",
+          "text": "28 cm",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "35 cm"
+        },
+        {
+          "id": "d",
+          "text": "49 cm"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "I و J منتصفا [AB] و [AC]، فبخاصيّة المستقيم الرابط بين منتصفي ضلعي مثلّث: (IJ) ∥ (BC) و IJ = BC/2، أي أنّ القطعة الرابطة بين المنتصفين نصف الضلع الثالث، فالضلع BC ضعفها: BC = 2 × 7 = 14 cm. ونصفا الضلعين: IB = 13/2 = 6,5 cm و CJ = 15/2 = 7,5 cm. المحيط: IB + BC + CJ + JI = 6,5 + 14 + 7,5 + 7 = 35 cm ✓. الخطأ الشائع: أخذ BC نصف IJ بدل ضعفه، فيخرج 24,5 cm، أو جعل BC = IJ لأنّهما متوازيان، فيخرج 28 cm. أمّا 49 cm فيأخذ الضلعين AB و AC كاملين، مع أنّ الرباعي لا يحمل إلّا نصفيهما.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base",
+        "math.mes.perimetres"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC، النقطة D من [BC] حيث BD = 4 cm و DC = 10 cm. ما نسبة مساحة المثلّث ABD إلى مساحة المثلّث ABC ؟\n<svg viewBox=\"0 0 320 250\"><path d=\"M130 33 L50 225 L114 225 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M130 33 L50 225 L274 225 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130 33 L114 225\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"130\" cy=\"33\" r=\"3.5\"/><circle cx=\"50\" cy=\"225\" r=\"3.5\"/><circle cx=\"274\" cy=\"225\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"114\" cy=\"225\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"130\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"38\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"286\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"114\" y=\"242\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"82\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">4</text><text x=\"194\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">10</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/7"
+        },
+        {
+          "id": "b",
+          "text": "2/5",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "c",
+          "text": "5/7",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "5/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّثان ABD و ABC لهما الارتفاع نفسه، النازل من A على (BC)، وقاعدتاهما BD و BC على المستقيم نفسه. والمساحة (القاعدة × الارتفاع) ÷ 2، فالارتفاع يُختزل ولا تبقى إلّا نسبة القاعدتين: BD/BC = 4/(4 + 10) = 4/14 = 2/7 ✓. الخطأ الشائع: القسمة على DC بدل BC، أي 4/10 = 2/5، وهي نسبة جزء إلى الجزء الباقي لا إلى الكلّ. أمّا 5/7 فهي نسبة المثلّث الآخر ADC إلى ABC، و 5/2 تقارن المثلّثين الصغيرين ADC و ABD، وهي أكبر من 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC نفسه، مساحته 84 cm²، و D من [BC] حيث BD = 4 cm و DC = 10 cm، و J منتصف [AC]. ما مساحة المثلّث ADJ ؟\n<svg viewBox=\"0 0 320 250\"><path d=\"M130 33 L114 225 L202 129 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M130 33 L50 225 L274 225 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130 33 L114 225\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M114 225 L202 129\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M160 83 L169.6 75.8 M162.4 86.2 L172 79\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M232 179 L241.6 171.8 M234.4 182.2 L244 175\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"130\" cy=\"33\" r=\"3.5\"/><circle cx=\"50\" cy=\"225\" r=\"3.5\"/><circle cx=\"274\" cy=\"225\" r=\"3.5\"/></g><g fill=\"#0f6e56\"><circle cx=\"114\" cy=\"225\" r=\"3.5\"/><circle cx=\"202\" cy=\"129\" r=\"3.5\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"130\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"38\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"286\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"114\" y=\"242\" text-anchor=\"middle\" fill=\"#0f6e56\">D</text><text x=\"216\" y=\"131\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"82\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">4</text><text x=\"194\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\">10</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 cm²"
+        },
+        {
+          "id": "b",
+          "text": "30 cm²"
+        },
+        {
+          "id": "c",
+          "text": "42 cm²"
+        },
+        {
+          "id": "d",
+          "text": "60 cm²",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "خطوتان بالحجّة نفسها. أوّلًا المثلّثان ADC و ABC لهما الارتفاع النازل من A، فمساحة ADC تساوي (DC/BC) × 84 = (10/14) × 84 = 60 cm². ثانيًا المثلّثان ADJ و ADC لهما الارتفاع النازل من D على (AC)، و J منتصف [AC]، فمساحة ADJ تساوي (AJ/AC) × 60 = (1/2) × 60 = 30 cm² ✓. التحقّق: مساحة ABD تساوي (4/14) × 84 = 24، ومساحة DJC تساوي مساحة ADJ، و 24 + 30 + 30 = 84 ✓. الخطأ الشائع: التوقّف عند 60 cm²، وهي مساحة ADC لا ADJ، أو أخذ نصف المثلّث كلّه فيخرج 42 cm²، أو أخذ نصف المثلّث ABD فيخرج 12 cm².",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.thales-direct"
+      ]
+    }
+  ]
+}

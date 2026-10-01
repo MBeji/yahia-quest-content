@@ -1,0 +1,225 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: مسافة ومنتصف ونظير، ثمّ مجموعة نقاط",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "في معلّم متعامد ومتجانس، نعتبر النقاط A(2 ; 3) و B(−1 ; −1) و C(7 ; 3). ما المسافة AB ؟\n<svg viewBox=\"0 0 284 188\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V166 M46 22 V166 M94 22 V166 M118 22 V166 M142 22 V166 M166 22 V166 M190 22 V166 M214 22 V166 M238 22 V166 M262 22 V166\"/><path d=\"M22 166 H262 M22 142 H262 M22 94 H262 M22 70 H262 M22 46 H262 M22 22 H262\"/></g><path d=\"M16 118 H272 M70 172 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M263 113 L273 118 L263 123 Z M65 21 L70 11 L75 21 Z\" fill=\"#0f172a\"/><path d=\"M118 46 L46 142 L238 46 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M118 46 L46 142\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"118\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"61\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"94\" y=\"133\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"61\" y=\"98\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"114\" y=\"36\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"33\" y=\"147\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"249\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "25",
+          "misconceptionTag": "math.vec.distance-sans-racine"
+        },
+        {
+          "id": "b",
+          "text": "7",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "√5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نطبّق صيغة المسافة: AB = √((xB − xA)² + (yB − yA)²) = √((−1 − 2)² + (−1 − 3)²) = √((−3)² + (−4)²) = √(9 + 16) = √25 = 5 ✓. وبالطريقة نفسها AC = √((7 − 2)² + (3 − 3)²) = 5، فالمثلّث ABC متقايس الضلعين قمّته A. الخطأ الشائع: التوقّف عند 25 ونسيان الجذر، أو جمع الفرقين 3 + 4 = 7 دون تربيعهما. أمّا √5 فيأتي من جمع الإحداثيّات بدل طرحها: (2 + (−1))² + (3 + (−1))² = 1 + 4 = 5 ثمّ الجذر.",
+      "difficulty": 1,
+      "competencies": [
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "النقاط A(2 ; 3) و B(−1 ; −1) و C(7 ; 3) في معلّم متعامد ومتجانس، و K منتصف القطعة [BC]. ما إحداثيّات K ؟\n<svg viewBox=\"0 0 284 188\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V166 M46 22 V166 M94 22 V166 M118 22 V166 M142 22 V166 M166 22 V166 M190 22 V166 M214 22 V166 M238 22 V166 M262 22 V166\"/><path d=\"M22 166 H262 M22 142 H262 M22 94 H262 M22 70 H262 M22 46 H262 M22 22 H262\"/></g><path d=\"M16 118 H272 M70 172 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M263 113 L273 118 L263 123 Z M65 21 L70 11 L75 21 Z\" fill=\"#0f172a\"/><path d=\"M118 46 L46 142 L238 46 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M46 142 L238 46\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"118\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"61\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"94\" y=\"133\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"61\" y=\"98\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"114\" y=\"36\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"33\" y=\"147\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"249\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 ; 3)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        },
+        {
+          "id": "b",
+          "text": "(3 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(4 ; 2)",
+          "misconceptionTag": "math.vec.milieu-difference-au-lieu-de-somme"
+        },
+        {
+          "id": "d",
+          "text": "(6 ; 2)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المنتصف معدّل الإحداثيّات: xK = (−1 + 7)/2 = 6/2 = 3 و yK = (−1 + 3)/2 = 2/2 = 1، إذن K(3 ; 1) ✓. الخطأ الشائع: جمع الإحداثيّات ونسيان القسمة على 2، فنصل إلى (6 ; 2). والنقطة (4 ; 2) تأتي من قسمة الفرقين 7 − (−1) = 8 و 3 − (−1) = 4 على 2: نصف الفرق لا يعطي المنتصف، بل نصف المجموع. أمّا (1 ; 3) فتقلب الفاصلة والترتيبة.",
+      "difficulty": 1,
+      "competencies": [
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "في المعلّم نفسه، A(2 ; 3) و K(3 ; 1) منتصف [BC]. النقطة D نظيرة A بالنسبة إلى النقطة K. ما إحداثيّات D ؟\n<svg viewBox=\"0 0 284 188\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V166 M46 22 V166 M94 22 V166 M118 22 V166 M142 22 V166 M166 22 V166 M190 22 V166 M214 22 V166 M238 22 V166 M262 22 V166\"/><path d=\"M22 166 H262 M22 142 H262 M22 94 H262 M22 70 H262 M22 46 H262 M22 22 H262\"/></g><path d=\"M16 118 H272 M70 172 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M263 113 L273 118 L263 123 Z M65 21 L70 11 L75 21 Z\" fill=\"#0f172a\"/><path d=\"M118 46 L46 142 L238 46 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M118 46 L142 94\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"118\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"142\" cy=\"94\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"61\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"94\" y=\"133\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"61\" y=\"98\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"114\" y=\"36\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"33\" y=\"147\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"249\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"150\" y=\"109\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 ; −2)"
+        },
+        {
+          "id": "b",
+          "text": "(1 ; 5)"
+        },
+        {
+          "id": "c",
+          "text": "(2,5 ; 2)"
+        },
+        {
+          "id": "d",
+          "text": "(4 ; −1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "D نظيرة A بالنسبة إلى K يعني أنّ K منتصف [AD]: xD = 2xK − xA = 2 × 3 − 2 = 4 و yD = 2yK − yA = 2 × 1 − 3 = −1، إذن D(4 ; −1) ✓. التحقّق: منتصف [AD] هو ((2 + 4)/2 ; (3 + (−1))/2) = (3 ; 1) = K. الخطأ الشائع: الخلط بين النظيرة والمنتصف، فنحسب منتصف [AK] وهو (2,5 ; 2). وقلب الدورين يعطي (1 ; 5)، أي نظيرة K بالنسبة إلى A، أمّا (1 ; −2) فيأتي من طرح إحداثيّتَي A من إحداثيّتَي K، (3 − 2 ; 1 − 3)، وهذا الفرق ليس نقطة من الشكل.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "في المعلّم نفسه، A(2 ; 3) و B(−1 ; −1) و D(4 ; −1) و C(7 ; 3)، والنقطة K(3 ; 1) منتصف [BC] ومنتصف [AD] معًا، و AB = AC = 5. احسب طولَي القطرين [AD] و [BC]، ثمّ اكتب أدقّ وصف للرباعي ABDC.\n<svg viewBox=\"0 0 284 188\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V166 M46 22 V166 M94 22 V166 M118 22 V166 M142 22 V166 M166 22 V166 M190 22 V166 M214 22 V166 M238 22 V166 M262 22 V166\"/><path d=\"M22 166 H262 M22 142 H262 M22 94 H262 M22 70 H262 M22 46 H262 M22 22 H262\"/></g><path d=\"M16 118 H272 M70 172 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M263 113 L273 118 L263 123 Z M65 21 L70 11 L75 21 Z\" fill=\"#0f172a\"/><path d=\"M118 46 L46 142 L166 142 L238 46 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M118 46 L46 142 L166 142 L238 46 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M118 46 L166 142\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M46 142 L238 46\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"118\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"166\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"142\" cy=\"94\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"61\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"94\" y=\"133\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"61\" y=\"98\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"114\" y=\"36\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"33\" y=\"147\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"249\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"176\" y=\"156\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"130\" y=\"88\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "answerKey": {
+        "text": "معيّن"
+      },
+      "acceptedAnswers": [
+        "الرباعي المعيّن"
+      ],
+      "expectedMistakes": [
+        {
+          "text": "متوازي أضلاع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "text": "مستطيل",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        }
+      ],
+      "explanation": "للقطرين [AD] و [BC] المنتصف نفسه K، فالرباعي ABDC متوازي أضلاع، ورأساه A و D متقابلان وكذلك B و C. ثمّ الضلعان [AB] و [AC] يلتقيان في A فهما متتاليان، و AB = AC = 5: متوازي أضلاع له ضلعان متتاليان متقايسان، فهو معيّن ✓: أضلاعه الأربعة متقايسة وقطراه متعامدان. ولا يترقّى إلى مربّع لأنّ قطريه غير متقايسين: AD = √(2² + (−4)²) = √20 = 2√5 بينما BC = √(8² + 4²) = √80 = 4√5. الخطأ الشائع: التوقّف عند «متوازي أضلاع»، وهو وصف صحيح لكنّه ليس الأدقّ.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC حيث A(2 ; 3) و B(−1 ; −1) و C(7 ; 3)، النقطتان E و F منتصفا الضلعين [AB] و [AC]. ما طول القطعة [EF] ؟\n<svg viewBox=\"0 0 284 188\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V166 M46 22 V166 M94 22 V166 M118 22 V166 M142 22 V166 M166 22 V166 M190 22 V166 M214 22 V166 M238 22 V166 M262 22 V166\"/><path d=\"M22 166 H262 M22 142 H262 M22 94 H262 M22 70 H262 M22 46 H262 M22 22 H262\"/></g><path d=\"M16 118 H272 M70 172 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M263 113 L273 118 L263 123 Z M65 21 L70 11 L75 21 Z\" fill=\"#0f172a\"/><path d=\"M118 46 L46 142 L238 46 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M82 94 L178 46\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"118\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"82\" cy=\"94\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"178\" cy=\"46\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"61\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"94\" y=\"133\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"61\" y=\"98\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"114\" y=\"36\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"33\" y=\"147\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"249\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"93\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"181\" y=\"36\" text-anchor=\"middle\" fill=\"#0f6e56\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5",
+          "misconceptionTag": "math.geo.droite-des-milieux-mauvais-cote"
+        },
+        {
+          "id": "b",
+          "text": "2√5"
+        },
+        {
+          "id": "c",
+          "text": "4√5",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        {
+          "id": "d",
+          "text": "8√5",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E و F منتصفا ضلعين في المثلّث ABC، فبالرابط بين المنتصفين (EF) ∥ (BC) و EF = BC/2. ونحسب BC = √((7 − (−1))² + (3 − (−1))²) = √(64 + 16) = √80 = 4√5، إذن EF = 4√5/2 = 2√5 ✓. التحقّق بالإحداثيّات: E(0,5 ; 1) و F(4,5 ; 3)، فـ EF = √(4² + 2²) = √20 = 2√5. الخطأ الشائع: نسيان القسمة على 2 (EF = BC = 4√5) أو الضرب في 2 (8√5). والطول 2,5 نصف AB، أي نصف ضلع يمرّ من E: الرابط يساوي نصف الضلع الثالث [BC] الذي لا يمرّ من E ولا من F.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "في المثلّث ABC نفسه، E و F منتصفا [AB] و [AC]. نأخذ نقطة M من القطعة [BC] تختلف عن B و C، ونسمّي N منتصف [AM]. اختر كلّ العبارات الصحيحة.\n<svg viewBox=\"0 0 284 188\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V166 M46 22 V166 M94 22 V166 M118 22 V166 M142 22 V166 M166 22 V166 M190 22 V166 M214 22 V166 M238 22 V166 M262 22 V166\"/><path d=\"M22 166 H262 M22 142 H262 M22 94 H262 M22 70 H262 M22 46 H262 M22 22 H262\"/></g><path d=\"M16 118 H272 M70 172 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M263 113 L273 118 L263 123 Z M65 21 L70 11 L75 21 Z\" fill=\"#0f172a\"/><path d=\"M118 46 L46 142 L238 46 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M118 46 L118 106\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M82 94 L118 76\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"118\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"82\" cy=\"94\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"118\" cy=\"106\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"118\" cy=\"76\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"61\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"94\" y=\"133\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"61\" y=\"98\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"114\" y=\"36\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"33\" y=\"147\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"249\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"93\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"128\" y=\"121\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"107\" y=\"70\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(EN) ∥ (BC)"
+        },
+        {
+          "id": "b",
+          "text": "N نقطة من المستقيم (EF)"
+        },
+        {
+          "id": "c",
+          "text": "EN = BM/2"
+        },
+        {
+          "id": "d",
+          "text": "N منتصف [EF]"
+        },
+        {
+          "id": "e",
+          "text": "NF = MC"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "في المثلّث ABM، النقطتان E و N منتصفا [AB] و [AM]، فبالرابط بين المنتصفين (EN) ∥ (BM)، أي (EN) ∥ (BC)، و EN = BM/2. ومن E يمرّ مستقيم وحيد موازٍ لـ (BC)، وهو (EF)، فـ N نقطة من (EF). وفي المثلّث AMC تعطي الخاصيّة نفسها NF = MC/2 لا MC. أمّا «N منتصف [EF]» فلا تصحّ إلّا إذا كانت M هي K منتصف [BC]؛ فلنقطة أخرى من [BC] يختلف EN = BM/2 عن NF = MC/2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC نفسه، E و F منتصفا [AB] و [AC]. النقطة M تمسح القطعة [BC]، و N منتصف [AM]. ما مجموعة النقاط N ؟\n<svg viewBox=\"0 0 284 188\"><g stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.6\"><path d=\"M22 22 V166 M46 22 V166 M94 22 V166 M118 22 V166 M142 22 V166 M166 22 V166 M190 22 V166 M214 22 V166 M238 22 V166 M262 22 V166\"/><path d=\"M22 166 H262 M22 142 H262 M22 94 H262 M22 70 H262 M22 46 H262 M22 22 H262\"/></g><path d=\"M16 118 H272 M70 172 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M263 113 L273 118 L263 123 Z M65 21 L70 11 L75 21 Z\" fill=\"#0f172a\"/><path d=\"M118 46 L46 142 L238 46 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M118 46 L190 70\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"118\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"46\" cy=\"142\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"238\" cy=\"46\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"82\" cy=\"94\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"178\" cy=\"46\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"190\" cy=\"70\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"154\" cy=\"58\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"61\" y=\"133\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"94\" y=\"133\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"61\" y=\"98\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"11\">1</text><text x=\"114\" y=\"36\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"33\" y=\"147\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"249\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"93\" y=\"107\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"181\" y=\"36\" text-anchor=\"middle\" fill=\"#0f6e56\">F</text><text x=\"200\" y=\"85\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"164\" y=\"72\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "القطعة [EF]"
+        },
+        {
+          "id": "b",
+          "text": "المستقيم (EF)"
+        },
+        {
+          "id": "c",
+          "text": "القطعة [BC]",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "المستقيم (BC)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "لكلّ موضع للنقطة M، النقطة N على المستقيم (EF) بالرابط بين المنتصفين في المثلّث ABM. لكنّ M لا تمسح إلّا القطعة [BC]: حين تكون M في B تكون N منتصف [AB] أي E، وحين تكون M في C تكون N منتصف [AC] أي F، وبينهما يتزايد EN = BM/2 من 0 إلى BC/2 = EF. إذن N تمسح القطعة [EF] كلّها ولا تخرج عنها ✓. الخطأ الشائع: الإجابة بالمستقيم (EF) كلّه، مع أنّ N لا تتجاوز الطرفين E و F لأنّ M محصورة بين B و C. والقطعة [BC] هي مجموعة النقاط M لا N، والمستقيم (BC) يجمع الخطأين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.droites-perp-para"
+      ]
+    }
+  ]
+}

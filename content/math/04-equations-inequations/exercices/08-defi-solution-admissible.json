@@ -1,0 +1,202 @@
+{
+  "title": "👑 تحدّي النخبة ⭐⭐⭐⭐: الحلول المقبولة لمعادلات الجداء",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "لتكن العبارة:\nE = x² − 6x + 9 − (2x + 1)²\nما قيم x من المجال [−5 ; 1] التي تعدم E؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−4}",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "b",
+          "text": "{−2 ; 2/3}",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "c",
+          "text": "{−2}",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "d",
+          "text": "{−4 ; 2/3}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نتعرّف في x² − 6x + 9 مربّع فرق: x² − 6x + 9 = (x − 3)²، لأنّ 9 = 3² والحدّ الأوسط 2 × x × 3 = 6x. فتصير E فرق مربّعين: E = (x − 3)² − (2x + 1)² = [(x − 3) − (2x + 1)][(x − 3) + (2x + 1)] = (−x − 4)(3x − 2). إذن x = −4 أو x = 2/3، والعددان كلاهما في [−5 ; 1]: الجواب {−4 ; 2/3}. تحقّق عند x = −4: (−7)² − (−7)² = 0 ✓، وعند x = 2/3: (−7/3)² − (7/3)² = 0 ✓. الخطأ الشائع: طرح القوس (2x + 1) بتغيير إشارة حدّه الأوّل وحده، فيصير العامل الأوّل x − 3 − 2x + 1 = −x − 2 ويُجاب {−2 ; 2/3}. ومن يكتب فرق المربّعين مربّعًا واحدًا [(x − 3) − (2x + 1)]² = (x + 4)² لا يجد إلّا {−4}، ومن يجمع الخطأين يصل إلى (x + 2)² فيجيب {−2}.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "قطعة المستقيم [AB] طولها 12 cm، و M نقطة منها حيث AM = x. نريد أن تكون مساحة المربّع المنشأ على [AM] أربعة أضعاف مساحة المربّع المنشأ على [MB]، فنكتب المعادلة:\nx² = 4(12 − x)²\nأيّ الأقوال التالية صحيح؟\n<svg viewBox=\"0 0 320 230\"><rect x=\"40\" y=\"25\" width=\"160\" height=\"160\" fill=\"#0f6e56\" opacity=\"0.12\"/><rect x=\"200\" y=\"105\" width=\"80\" height=\"80\" fill=\"#94a3b8\" opacity=\"0.25\"/><path d=\"M40 185 L40 25 L200 25 L200 185\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M200 105 L280 105 L280 185\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M40 185 L280 185\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"185\" r=\"3.5\"/><circle cx=\"200\" cy=\"185\" r=\"3.5\"/><circle cx=\"280\" cy=\"185\" r=\"3.5\"/></g><text x=\"34\" y=\"207\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><text x=\"200\" y=\"207\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M</text><text x=\"286\" y=\"207\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text><text x=\"120\" y=\"207\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "للمعادلة حلّان هما 8 و 24، ويصلح كلّ واحد منهما موضعًا للنقطة M",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "b",
+          "text": "للمعادلة حلّان هما 8 و 24، ولا يصلح موضعًا للنقطة M إلّا 8"
+        },
+        {
+          "id": "c",
+          "text": "للمعادلة حلّ وحيد هو 8، وهذا العدد يصلح موضعًا للنقطة M",
+          "misconceptionTag": "math.num.racine-carree-negative-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "للمعادلة حلّان هما −24 و −8، ولا يصلح أيّ منهما موضعًا للنقطة M",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "لأنّ MB = 12 − x، تُكتب المعادلة x² − [2(12 − x)]² = 0، وهي فرق مربّعين: (x − 24 + 2x)(x + 24 − 2x) = (3x − 24)(24 − x) = 0، إذن x = 8 أو x = 24: للمعادلة حلّان. لكنّ M نقطة من القطعة [AB]، فيجب أن يكون 0 ≤ x ≤ 12، والعدد 24 يضع M خارج القطعة وراء B. يبقى AM = 8 cm و MB = 4 cm. تحقّق: 8² = 64 = 4 × 4² ✓. الخطأ الشائع: قبول الحلّين لأنّهما موجبان، مع أنّ الشرط هنا هو الانتماء إلى القطعة. ومن يكتفي بـ x = 2(12 − x) يرى حلًّا وحيدًا هو 8 وينسى x = −2(12 − x)، ومن ينقل حدًّا دون أن يقلب إشارته، فيكتب من x = 24 − 2x أنّ x − 2x = 24، ومن x = −24 + 2x أنّ x + 2x = −24، يجد −24 و −8، فيحسب أنّ M لا تقبل أيًّا منهما.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.equations-produit",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل فيه AB = x + 3 و BC = x − 4، وطول قطره AC = x + 5 (الأطوال بالصنتمتر، وكلّها موجبة قطعًا). ما طول القطر AC؟\n<svg viewBox=\"0 0 320 200\"><path d=\"M50 160 L260 160 L260 48 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M50 160 L260 160 L260 48 L50 48 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M50 160 L260 48\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><path d=\"M248 160 L248 148 L260 148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"160\" r=\"3.5\"/><circle cx=\"260\" cy=\"160\" r=\"3.5\"/><circle cx=\"260\" cy=\"48\" r=\"3.5\"/><circle cx=\"50\" cy=\"48\" r=\"3.5\"/></g><text x=\"38\" y=\"178\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><text x=\"272\" y=\"178\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text><text x=\"272\" y=\"40\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">C</text><text x=\"38\" y=\"40\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">D</text><text x=\"155\" y=\"182\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x + 3</text><text x=\"292\" y=\"109\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x − 4</text><text x=\"147.5\" y=\"94.9\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x + 5</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "13 cm",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "17 cm"
+        },
+        {
+          "id": "c",
+          "text": "5 cm أو 13 cm",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "d",
+          "text": "5 cm أو 17 cm",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABC قائم في B، فحسب مبرهنة فيثاغورس: (x − 4)² + (x + 3)² = (x + 5)². ننشر: x² − 8x + 16 + x² + 6x + 9 = x² + 10x + 25، فيبقى x² − 12x = 0 أي x(x − 12) = 0. إذن x = 0 أو x = 12. عند x = 0 يصير BC = −4 فنُقصيه، ويبقى x = 12: القطر AC = 17 cm. تحقّق: 8² + 15² = 64 + 225 = 289 = 17² ✓. الخطأ الشائع: الاحتفاظ بـ x = 0 لأنّه ليس سالبًا — والأعداد −4 و 3 و 5 تحقّق المساواة فعلًا — فيُجاب «5 cm أو 17 cm». ومن ينشر (x + 3)² و (x + 5)² دون الجداء المضاعف يصل إلى x² − 8x = 0 أي x = 0 أو x = 8: إن أقصى x = 0 أجاب 13 cm، وإن احتفظ بالحلّين أجاب «5 cm أو 13 cm».",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.equations-produit",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "ورقة مستطيلة بُعداها 20 cm و 16 cm. نقصّ منها شريطًا عرضه x بمحاذاة أحد طوليها، وشريطًا آخر عرضه x بمحاذاة أحد عرضيها، فيبقى منها مستطيل مساحته 140 cm². عرض الشريط أصغر من عرض الورقة، ونعلم أنّه لكلّ عدد حقيقي x:\nx² − 36x + 180 = (x − 18)² − 144\nما عرض الشريط x؟\n<svg viewBox=\"0 0 310 235\"><rect x=\"100\" y=\"30\" width=\"160\" height=\"120\" fill=\"#0f6e56\" opacity=\"0.14\"/><rect x=\"60\" y=\"150\" width=\"200\" height=\"40\" fill=\"#94a3b8\" opacity=\"0.35\"/><rect x=\"60\" y=\"30\" width=\"40\" height=\"120\" fill=\"#94a3b8\" opacity=\"0.35\"/><rect x=\"60\" y=\"30\" width=\"200\" height=\"160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M100 30 L100 150 L260 150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"6 4\"/><text x=\"160\" y=\"21\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">20</text><text x=\"40\" y=\"115\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">16</text><text x=\"276\" y=\"172\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text><text x=\"80\" y=\"212\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 cm"
+        },
+        {
+          "id": "b",
+          "text": "10 cm",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "30 cm",
+          "misconceptionTag": "math.num.racine-carree-negative-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "6 cm أو 30 cm",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المستطيل الباقي بُعداه 20 − x و 16 − x: (20 − x)(16 − x) = 140، أي x² − 36x + 320 = 140، ومنه x² − 36x + 180 = 0، وحسب المعطى (x − 18)² − 144 = 0. و 144 = 12²، فهو فرق مربّعين: (x − 18 − 12)(x − 18 + 12) = (x − 30)(x − 6) = 0، إذن x = 30 أو x = 6. عرض الشريط أصغر من عرض الورقة، أي 0 < x < 16، فنُقصي 30: عرض الشريط 6 cm. تحقّق: (20 − 6)(16 − 6) = 14 × 10 = 140 ✓. الخطأ الشائع: الاحتفاظ بـ 30 لأنّه موجب — والجداء (20 − 30)(16 − 30) = (−10)(−14) يعطي هو أيضًا 140 — فيُجاب «6 cm أو 30 cm»، مع أنّ شريطًا عرضه 30 cm لا يُقصّ من ورقة عرضها 16 cm. ومن يكتب (x − 18)² = 144 ثمّ x − 18 = 12 وحدها يجد x = 30 وحده، فإن لم يراقب الشرط أجاب 30 cm، ومن يجيب ببُعد المستطيل الباقي يعطي 10 cm.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.equations-produit",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A، فيه AB = 6 − x و AC = x + 1 و BC = x + 2 (الأطوال بالصنتمتر، وكلّها موجبة قطعًا)، ونعلم أنّه لكلّ عدد حقيقي x:\nx² − 14x + 33 = (x − 7)² − 16\nما طول الوتر BC؟\n<svg viewBox=\"0 0 300 225\"><path d=\"M70 185 L230 185 L70 65 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M70 185 L230 185 L70 65 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M84 185 L84 171 L70 171\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"185\" r=\"3.5\"/><circle cx=\"70\" cy=\"65\" r=\"3.5\"/><circle cx=\"230\" cy=\"185\" r=\"3.5\"/></g><text x=\"58\" y=\"203\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><text x=\"58\" y=\"59\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text><text x=\"242\" y=\"203\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">C</text><text x=\"38\" y=\"130\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">6 − x</text><text x=\"150\" y=\"209\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x + 1</text><text x=\"159.6\" y=\"117.2\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x + 2</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "13 cm",
+          "misconceptionTag": "math.num.racine-carree-negative-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "7 cm",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "5 cm"
+        },
+        {
+          "id": "d",
+          "text": "5 cm أو 13 cm",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "حسب مبرهنة فيثاغورس: (6 − x)² + (x + 1)² = (x + 2)²، أي 36 − 12x + x² + x² + 2x + 1 = x² + 4x + 4، ومنه x² − 14x + 33 = 0، وحسب المعطى (x − 7)² − 16 = 0. و 16 = 4²: (x − 7 − 4)(x − 7 + 4) = (x − 11)(x − 3) = 0، إذن x = 11 أو x = 3. عند x = 11 يصير AB = 6 − 11 = −5 فنُقصيه، وإن كان الحلّ الأكبر؛ ويبقى x = 3: AB = 3 و AC = 4 والوتر BC = 5 cm. تحقّق: 3² + 4² = 9 + 16 = 25 = 5² ✓. الخطأ الشائع: الاحتفاظ بـ x = 11 — والأعداد −5 و 12 و 13 تحقّق المساواة فعلًا — فيُجاب «5 cm أو 13 cm». ومن يكتب (x − 7)² = 16 ثمّ x − 7 = 4 وحدها يجد x = 11 وحده، فإن لم يراقب الشرط أجاب 13 cm، ومن يجمع الأطوال بدل مربّعاتها يجد x = 5 ووترًا طوله 7 cm.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.equations-produit",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل فيه AB = 10 cm و BC = 4 cm، و M نقطة من [AB] حيث AM = x، ونعلم أنّه لكلّ عدد حقيقي x:\nx² − 10x + 16 = (x − 5)² − 9\nما مجموعة قيم x التي يكون بها المثلّث DMC قائمًا في M؟\n<svg viewBox=\"0 0 320 200\"><path d=\"M40 64 L124 160 L280 64 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M40 160 L280 160 L280 64 L40 64 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M40 64 L124 160 L280 64\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M52 160 L52 148 L40 148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M268 160 L268 148 L280 148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"160\" r=\"3.5\"/><circle cx=\"280\" cy=\"160\" r=\"3.5\"/><circle cx=\"280\" cy=\"64\" r=\"3.5\"/><circle cx=\"40\" cy=\"64\" r=\"3.5\"/><circle cx=\"124\" cy=\"160\" r=\"3.5\"/></g><text x=\"28\" y=\"178\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text><text x=\"292\" y=\"178\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text><text x=\"292\" y=\"56\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">C</text><text x=\"28\" y=\"56\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">D</text><text x=\"124\" y=\"180\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M</text><text x=\"82\" y=\"180\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "{8}",
+          "misconceptionTag": "math.num.racine-carree-negative-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "{10}",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "{2 ; 8}"
+        },
+        {
+          "id": "d",
+          "text": "لا توجد قيمة تحقّق ذلك",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّثان DAM و MBC قائمان في A و B، فحسب فيثاغورس: DM² = 4² + x² و MC² = (10 − x)² + 4². والمثلّث DMC قائم في M إذا وفقط إذا DM² + MC² = DC² = 10²، أي 16 + x² + 100 − 20x + x² + 16 = 100، ومنه 2x² − 20x + 32 = 0 أي x² − 10x + 16 = 0، وحسب المعطى (x − 5)² − 9 = 0. و 9 = 3²: (x − 5 − 3)(x − 5 + 3) = (x − 8)(x − 2) = 0، إذن x = 8 أو x = 2. العددان كلاهما بين 0 و 10، فالنقطة M تبقى على [AB] في الحالتين: الجواب {2 ; 8}، أي موضعان متناظران للنقطة M. تحقّق عند x = 2: DM² = 20 و MC² = 80 و 20 + 80 = 100 ✓. الخطأ الشائع: كتابة (x − 5)² = 9 ثمّ x − 5 = 3 وحدها، فيضيع الموضع x = 2 ويُجاب {8}. ومن يجعل DM وترًا بدل DC يكتب DM² = MC² + DC² فيجد x = 10، ومن يقرأ الجذرين بإشارتيهما الظاهرتين يجد −8 و −2 فيظنّ أن «لا توجد قيمة تحقّق ذلك».",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.equations-produit",
+        "math.alg.identites-remarquables"
+      ]
+    }
+  ]
+}

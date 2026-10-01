@@ -1,0 +1,127 @@
+{
+  "title": "🏛️ مناظرة 2023 (تقني) · التمرين 1 ⭐⭐: مربّع مجموع، ونسبة مائوية، وقوّة بدليل سالب، وحجم هرم",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 16,
+  "questions": [
+    {
+      "prompt": "ما الكتابة المنشورة للعدد التالي ؟\n(1 + √2)²",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + 2√2"
+        },
+        {
+          "id": "b",
+          "text": "3 + 2√2"
+        },
+        {
+          "id": "c",
+          "text": "3 + √2",
+          "misconceptionTag": "math.alg.double-produit-sans-facteur-2"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "بالمتطابقة (a + b)² = a² + 2ab + b² مع a = 1 و b = √2: (1 + √2)² = 1² + 2 × 1 × √2 + (√2)² = 1 + 2√2 + 2 = 3 + 2√2 ✓. الخطأ الشائع إسقاط الجداء المضاعف: 1² + (√2)² = 3؛ ومن كتب الجداء المضاعف √2 بدل 2√2 وجد 3 + √2؛ ومن نسي أن (√2)² = 2 اكتفى بـ 1 + 2√2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "مؤسّسة تجاريّة رأس مالها 200 ألف دينار. بعد سنة من تأسيسها زاد رأس مالها بنسبة 20% من قيمته الأولى. ما رأس مال هذه المؤسّسة في نهاية السنة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "204 ألف دينار"
+        },
+        {
+          "id": "b",
+          "text": "210 ألف دينار"
+        },
+        {
+          "id": "c",
+          "text": "220 ألف دينار",
+          "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat"
+        },
+        {
+          "id": "d",
+          "text": "240 ألف دينار"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "الزيادة هي 20% من رأس المال الأوّل: 200 × 20/100 = 40 ألف دينار، فرأس المال في نهاية السنة 200 + 40 = 240 ألف دينار ✓ (أو مباشرة 200 × 1,2 = 240). تحقّق: 40 هي خُمس 200 ✓. الخطأ الشائع إضافة العدد 20 كما هو فيخرج 220، والزيادة الحقيقية 40 لا 20؛ ومن قسم 200 على 20 وجد زيادة 10 فكتب 210؛ ومن حوّل 20% إلى 0,02 لا إلى 0,2 وجد زيادة 4 فكتب 204.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prop.pourcentages"
+      ]
+    },
+    {
+      "prompt": "ما قيمة العدد التالي ؟\n(0,001)⁻⁴",
+      "options": [
+        {
+          "id": "a",
+          "text": "10¹²"
+        },
+        {
+          "id": "b",
+          "text": "10⁸",
+          "misconceptionTag": "math.num.notation-scientifique-exposant-decale"
+        },
+        {
+          "id": "c",
+          "text": "10⁻⁷",
+          "misconceptionTag": "math.num.puissances-puissance-exposants-additionnes"
+        },
+        {
+          "id": "d",
+          "text": "10⁻¹²",
+          "misconceptionTag": "math.num.exposant-negatif-donne-nombre-negatif"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نكتب 0,001 = 1/1000 = 10⁻³ (الفاصلة تنتقل ثلاث مراتب). ثمّ (10⁻³)⁻⁴ = 10^((−3) × (−4)) = 10¹² ✓ لأنّ قوّة القوّة تضرب الدليلين، وجداء عددين سالبين موجب. الخطأ الشائع جمع الدليلين −3 + (−4) فيخرج 10⁻⁷؛ أو إهمال إشارة الدليل −4 فيخرج 10⁻¹²؛ أو عدّ الصفرين بعد الفاصلة فقط، أي 0,001 = 10⁻²، فيخرج (10⁻²)⁻⁴ = 10⁸.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "SABCD هرم قاعدته المربّع ABCD، ضلع هذا المربّع 9 وارتفاع الهرم 10.\nحجم الهرم يساوي ثلث جداء مساحة قاعدته في ارتفاعه.\nما حجم الهرم SABCD ؟\n<svg viewBox=\"0 0 300 240\"><title>هرم SABCD قاعدته المربّع ABCD</title><path d=\"M60 190 L190 190 L152.5 56 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M115 152 L245 152 M60 190 L115 152 M115 152 L152.5 56\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M60 190 L190 190 L245 152 M60 190 L152.5 56 M190 190 L152.5 56 M245 152 L152.5 56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M152.5 56 L152.5 171\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\"/><path d=\"M60 199 L60 207 M190 199 L190 207 M60 203 L190 203\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"190\" r=\"3.2\"/><circle cx=\"190\" cy=\"190\" r=\"3.2\"/><circle cx=\"245\" cy=\"152\" r=\"3.2\"/><circle cx=\"115\" cy=\"152\" r=\"3.2\"/><circle cx=\"152.5\" cy=\"56\" r=\"3.2\"/></g><circle cx=\"152.5\" cy=\"171\" r=\"2.6\" fill=\"#0f6e56\"/><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"152.5\" y=\"46\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"47\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"203\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"258\" y=\"156\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"102\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"125\" y=\"223\" text-anchor=\"middle\" fill=\"#0f6e56\">9</text><text x=\"145.5\" y=\"142\" text-anchor=\"end\" fill=\"#0f6e56\">10</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "30",
+          "misconceptionTag": "math.mes.arete-non-elevee-au-carre"
+        },
+        {
+          "id": "b",
+          "text": "120",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "270"
+        },
+        {
+          "id": "d",
+          "text": "810",
+          "misconceptionTag": "math.mes.volume-pyramide-sans-tiers"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "القاعدة مربّع ضلعه 9، فمساحتها 9 × 9 = 81. إذن حجم الهرم (1/3) × 81 × 10 = 810/3 = 270 ✓ (الهرم ثلث الموشور الذي له القاعدة والارتفاع نفسهما، وحجم هذا الموشور 81 × 10 = 810). الخطأ الشائع نسيان الثلث فيخرج 81 × 10 = 810؛ أو أخذ الضلع 9 مكان مساحة القاعدة 81 فيخرج (1/3) × 9 × 10 = 30؛ أو أخذ محيط القاعدة 4 × 9 = 36 مكان مساحتها فيخرج (1/3) × 36 × 10 = 120.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.volumes"
+      ]
+    }
+  ]
+}

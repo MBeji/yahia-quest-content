@@ -56,9 +56,9 @@
   "math.int.produit-signes-negatifs": {
     "subject": "math",
     "labels": {
-      "fr": "Tu te trompes sur le signe d'un produit : le produit de deux nombres négatifs est positif",
-      "en": "You get the sign of a product wrong: the product of two negative numbers is positive",
-      "ar": "تخطئ في إشارة الجداء: جداء عددين سالبين موجب"
+      "fr": "Tu te trompes sur le signe d'un produit ou d'un quotient : deux nombres de même signe donnent un résultat positif, deux nombres de signes contraires un résultat négatif",
+      "en": "You get the sign of a product or a quotient wrong: two numbers of the same sign give a positive result, two numbers of opposite signs give a negative one",
+      "ar": "تخطئ في إشارة الجداء أو خارج القسمة: عددان من الإشارة نفسها يعطيان نتيجة موجبة، وعددان مختلفا الإشارة يعطيان نتيجة سالبة"
     },
     "competency": "math.num.relatifs-operations"
   },
@@ -344,9 +344,9 @@
   "math.num.racine-distribuee-sur-somme": {
     "subject": "math",
     "labels": {
-      "fr": "Tu distribues la racine sur une somme : la règle ne vaut que pour un produit ou un quotient, jamais pour une addition",
-      "en": "You spread the root across a sum: the rule only holds for a product or a quotient, never for an addition",
-      "ar": "توزّع الجذر على مجموع: القاعدة لا تصحّ إلّا مع الجداء أو خارج القسمة، لا مع الجمع"
+      "fr": "Tu distribues la racine sur une somme ou une différence (ou tu fusionnes deux racines ainsi) : la règle ne vaut que pour un produit ou un quotient, jamais pour une addition ni une soustraction",
+      "en": "You spread the root across a sum or a difference (or merge two roots that way): the rule only holds for a product or a quotient, never for an addition or a subtraction",
+      "ar": "توزّع الجذر على مجموع أو فرق (أو تدمج جذرين بهذه الطريقة): القاعدة لا تصحّ إلّا مع الجداء أو خارج القسمة، لا مع الجمع ولا مع الطرح"
     },
     "competency": "math.num.racines-calcul"
   },
@@ -479,9 +479,9 @@
   "math.alg.moins-devant-parenthese": {
     "subject": "math",
     "labels": {
-      "fr": "Tu n'appliques le signe moins qu'au premier terme de la parenthèse : il change le signe de tous les termes",
-      "en": "You apply the minus sign to the first term only: it flips the sign of every term inside the brackets",
-      "ar": "تطبّق إشارة الطرح على الحدّ الأوّل فقط: هي تغيّر إشارة كلّ الحدود داخل القوسين"
+      "fr": "Tu n'appliques le signe moins qu'à une partie des termes de la parenthèse : il change le signe de TOUS les termes",
+      "en": "You apply the minus sign to only some of the terms inside the brackets: it flips the sign of EVERY term inside them",
+      "ar": "تطبّق إشارة الطرح على بعض الحدود داخل القوسين فقط: هي تغيّر إشارة كلّ الحدود داخل القوسين"
     },
     "competency": "math.alg.developpement"
   },
@@ -506,9 +506,9 @@
   "math.alg.carre-somme-sans-double-produit": {
     "subject": "math",
     "labels": {
-      "fr": "Tu oublies le double produit en développant le carré d'une somme",
-      "en": "You drop the cross term when expanding the square of a sum",
-      "ar": "تُسقط الجداء المضاعف عند نشر مربّع المجموع"
+      "fr": "Tu oublies le double produit en développant le carré d'une somme ou d'une différence",
+      "en": "You drop the cross term when expanding the square of a sum or a difference",
+      "ar": "تُسقط الجداء المضاعف عند نشر مربّع مجموع أو فرق"
     },
     "competency": "math.alg.identites-remarquables"
   },
@@ -569,9 +569,9 @@
   "math.alg.transposition-sans-changer-signe": {
     "subject": "math",
     "labels": {
-      "fr": "Tu fais passer un terme de l'autre côté de l'égalité sans changer son signe",
-      "en": "You move a term to the other side of the equation without flipping its sign",
-      "ar": "تنقل حدًّا إلى الطرف الآخر من المساواة دون تغيير إشارته"
+      "fr": "Tu fais passer un terme de l'autre côté de l'égalité ou de l'inégalité sans changer son signe",
+      "en": "You move a term to the other side of the equation or inequality without flipping its sign",
+      "ar": "تنقل حدًّا إلى الطرف الآخر من المساواة أو المتراجحة دون تغيير إشارته"
     },
     "competency": "math.alg.equations-premier-degre"
   },
@@ -848,9 +848,9 @@
   "math.stat.effectif-cumule-non-cumule": {
     "subject": "math",
     "labels": {
-      "fr": "Tu donnes l'effectif de la valeur au lieu de son effectif cumulé : le cumulé additionne tous les effectifs jusqu'à elle",
-      "en": "You give the value's own count instead of its cumulative count: the cumulative adds up every count down to it",
-      "ar": "تعطي تكرار القيمة بدل تكرارها المجمّع: المجمّع يجمع كلّ التكرارات إلى غاية تلك القيمة"
+      "fr": "Tu confonds l'effectif d'une classe (ou d'une valeur) et son effectif cumulé : le cumulé additionne tous les effectifs jusqu'à elle, l'effectif ne compte qu'elle",
+      "en": "You mix up a class's (or a value's) own count with its cumulative count: the cumulative adds up every count up to it, the count covers only itself",
+      "ar": "تخلط بين تكرار الفئة (أو القيمة) وتكرارها المجمّع: المجمّع يجمع كلّ التكرارات إلى غايتها، والتكرار يعدّها وحدها"
     },
     "competency": "math.stat.effectifs-frequences"
   },
@@ -983,9 +983,9 @@
   "math.geo.pythagore-sans-carres": {
     "subject": "math",
     "labels": {
-      "fr": "Tu additionnes les longueurs au lieu de leurs carrés",
-      "en": "You add the lengths instead of their squares",
-      "ar": "تجمع الأطوال بدل مربّعاتها"
+      "fr": "Tu additionnes ou soustrais les longueurs au lieu de leurs carrés : Pythagore relie les CARRÉS des côtés",
+      "en": "You add or subtract the lengths instead of their squares: Pythagoras links the SQUARES of the sides",
+      "ar": "تجمع الأطوال أو تطرحها بدل مربّعاتها: فيثاغورس يربط مربّعات الأضلاع"
     },
     "competency": "math.geo.pythagore"
   },
@@ -1538,9 +1538,9 @@
   "math.num.operation-inverse-appliquee": {
     "subject": "math",
     "labels": {
-      "fr": "Tu fais l'opération contraire de celle demandée : une addition au lieu d'une soustraction, une somme au lieu d'un produit",
-      "en": "You do the opposite operation: an addition instead of a subtraction, a sum instead of a product",
-      "ar": "تُجري العمليّةَ المعاكسةَ للمطلوبة: جمعًا بدل الطرح، أو جمعًا بدل الضرب"
+      "fr": "Tu fais l'opération contraire de celle demandée : une addition au lieu d'une soustraction (ou l'inverse), une somme au lieu d'un produit, une division au lieu d'une multiplication (ou l'inverse)",
+      "en": "You do the opposite operation: an addition instead of a subtraction (or the reverse), a sum instead of a product, a division instead of a multiplication (or the reverse)",
+      "ar": "تُجري العمليّةَ المعاكسةَ للمطلوبة: جمعًا بدل الطرح أو العكس، أو جمعًا بدل الضرب، أو قسمةً بدل الضرب أو العكس"
     },
     "competency": "math.num.operations-entiers"
   },
@@ -6687,5 +6687,364 @@
       "en": "You put the subject line into the salutation: it is only the addressee's title (Monsieur le Directeur,); the subject line goes on the left, above it.",
       "ar": "تضع موضوع الرسالة في صيغة النداء: هي لقب المرسَل إليه فقط (Monsieur le Directeur,)، والموضوع يوضع على اليسار فوقها."
     }
+  },
+  "math.alg.solution-hors-contrainte-gardee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu gardes toutes les solutions de l'équation : le problème en élimine — une longueur est strictement positive, un nombre imposé reste dans son intervalle",
+      "en": "You keep every root of the equation: the problem rules some out — a length is strictly positive, an imposed number stays within its interval",
+      "ar": "تحتفظ بكلّ حلول المعادلة: المسألة تُقصي بعضها — الطول موجب قطعًا، والعدد المفروض يبقى في مجاله"
+    },
+    "competency": "math.alg.equations-produit"
+  },
+  "math.geo.centre-gravite-milieu-mediane": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu places le centre de gravité au milieu de la médiane : il est aux deux tiers de la médiane à partir du sommet, au tiers à partir du milieu du côté",
+      "en": "You put the centroid at the midpoint of the median: it lies two thirds of the way from the vertex, one third from the midpoint of the side",
+      "ar": "تضع مركز الثقل في منتصف الموسّط: إنّه يقع عند ثلثي الموسّط انطلاقًا من الرأس، وعند ثلثه انطلاقًا من منتصف الضلع"
+    },
+    "competency": "math.geo.triangles-base"
+  },
+  "math.geo.centre-gravite-tiers-inverse": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu inverses le tiers et les deux tiers : c'est à partir du SOMMET que le centre de gravité est aux deux tiers de la médiane",
+      "en": "You swap one third and two thirds: the centroid is two thirds of the median from the VERTEX, not from the midpoint of the side",
+      "ar": "تعكس الثلث والثلثين: مركز الثقل يقع عند ثلثي الموسّط انطلاقًا من الرأس، لا من منتصف الضلع"
+    },
+    "competency": "math.geo.triangles-base"
+  },
+  "math.geo.relation-hauteur-somme-au-lieu-de-produit": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu additionnes les deux segments que la hauteur découpe sur l'hypoténuse : le carré de la hauteur est leur PRODUIT (AH² = BH × CH)",
+      "en": "You add the two segments the height cuts on the hypotenuse: the square of the height is their PRODUCT (AH² = BH × CH)",
+      "ar": "تجمع القطعتين اللتين يقسم إليهما الارتفاعُ الوتر: مربّع الارتفاع هو جداؤهما (AH² = BH × CH)"
+    },
+    "competency": "math.geo.relations-metriques"
+  },
+  "math.geo.relation-aire-mauvais-cote": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies la hauteur par un côté de l'angle droit : dans AH × BC = AB × AC, la hauteur relative à l'hypoténuse multiplie l'HYPOTÉNUSE — deux calculs de la même aire",
+      "en": "You multiply the height by a leg: in AH × BC = AB × AC the height to the hypotenuse multiplies the HYPOTENUSE — two ways of computing the same area",
+      "ar": "تضرب الارتفاع في أحد ضلعي الزاوية القائمة: في AH × BC = AB × AC يُضرب الارتفاع الموافق للوتر في الوتر — حسابان لنفس المساحة"
+    },
+    "competency": "math.geo.relations-metriques"
+  },
+  "math.geo.relation-hauteur-racine-oubliee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds AH et AH² : la relation donne le CARRÉ de la hauteur — prends sa racine pour trouver AH, et élève AH au carré avant de le comparer à BH × CH",
+      "en": "You mix up AH and AH²: the relation gives the SQUARE of the height — take its square root to get AH, and square AH before comparing it with BH × CH",
+      "ar": "تخلط بين AH و AH²: العلاقة تعطي مربّع الارتفاع — خذ جذره لتجد AH، وربّع AH قبل أن تقارنه بـ BH × CH"
+    },
+    "competency": "math.geo.relations-metriques"
+  },
+  "math.geo.hauteur-confondue-avec-mediane": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends la hauteur issue de l'angle droit pour la médiane : son pied H n'est pas le milieu de l'hypoténuse, et AH n'en vaut pas la moitié (sauf si le triangle est isocèle)",
+      "en": "You take the height from the right angle for the median: its foot H is not the midpoint of the hypotenuse, and AH is not half of it (unless the triangle is isosceles)",
+      "ar": "تأخذ الارتفاع الصادر من الزاوية القائمة على أنّه الموسّط: مسقطه H ليس منتصف الوتر، و AH لا يساوي نصفه (إلّا إذا كان المثلّث متقايس الضلعين)"
+    },
+    "competency": "math.geo.relations-metriques"
+  },
+  "math.num.exposant-porte-sur-le-coefficient": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu fais porter l'exposant sur le coefficient placé devant la parenthèse : dans 4(√3)⁴, l'exposant ne porte que sur (√3) — le 4 reste devant, sans exposant",
+      "en": "You make the exponent apply to the coefficient in front of the bracket: in 4(√3)⁴ the exponent belongs to (√3) alone — the 4 stays in front, without an exponent",
+      "ar": "تجعل الدليل يشمل العدد الواقف أمام القوس: في 4(√3)⁴ الدليل يخصّ (√3) وحدها ويبقى العدد 4 أمامها دون دليل"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.exposant-porte-sur-un-seul-facteur": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu n'élèves qu'un facteur de la parenthèse : dans (4√3)², l'exposant porte sur les DEUX facteurs, 4 et √3",
+      "en": "You raise only one factor inside the bracket: in (4√3)² the exponent belongs to BOTH factors, 4 and √3",
+      "ar": "ترفع عاملًا واحدًا فقط من القوس: في (4√3)² الدليل يخصّ العاملين معًا، 4 و √3"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.puissance-signe-moins-hors-de-la-base": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds (−a)ⁿ et −aⁿ : sans parenthèses, l'exposant ne porte que sur a, et le signe moins reste devant le résultat",
+      "en": "You confuse (−a)ⁿ with −aⁿ: without brackets the exponent belongs to a alone and the minus sign stays in front of the result",
+      "ar": "تخلط بين (−a)ⁿ و −aⁿ: دون قوسين يخصّ الدليل a وحده وتبقى الإشارة السالبة أمام النتيجة"
+    },
+    "competency": "math.num.puissances"
+  },
+  "math.num.carre-et-racine-entre-zero-et-un": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu crois que le carré agrandit toujours et que la racine rapetisse toujours : pour un nombre strictement compris entre 0 et 1, c'est l'inverse — a² < a < √a",
+      "en": "You think squaring always makes bigger and the root always makes smaller: for a number strictly between 0 and 1 it is the opposite — a² < a < √a",
+      "ar": "تظنّ أنّ التربيع يكبّر دائمًا وأنّ الجذر يصغّر دائمًا: لعدد محصور بين 0 و 1 يحدث العكس — a² < a < √a"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.alg.carre-somme-signe-double-produit": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes le signe moins au double produit dans le carré d'une somme : (a + b)² = a² + 2ab + b²",
+      "en": "You give the cross term a minus sign in the square of a sum: (a + b)² = a² + 2ab + b²",
+      "ar": "تعطي الجداء المضاعف إشارة ناقص في مربّع المجموع: (a + b)² = a² + 2ab + b²"
+    },
+    "competency": "math.alg.identites-remarquables"
+  },
+  "math.frac.soustraction-denominateurs": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu soustrais les dénominateurs : 1/a − 1/b ne vaut pas 1/(a − b), il faut d'abord réduire au même dénominateur",
+      "en": "You subtract the denominators: 1/a − 1/b is not 1/(a − b) — bring both to a common denominator first",
+      "ar": "تطرح المقامين: 1/a − 1/b لا تساوي 1/(a − b)، بل نوحّد المقامات أوّلًا"
+    },
+    "competency": "math.frac.add-sous"
+  },
+  "math.alg.double-produit-sans-facteur-2": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu écris le double produit sans son facteur 2 : dans (a + b)², le terme du milieu vaut 2ab, pas ab",
+      "en": "You write the cross term without its factor 2: in (a + b)², the middle term is 2ab, not ab",
+      "ar": "تكتب الجداء المضاعف دون العامل 2: في (a + b)² الحدّ الأوسط هو 2ab لا ab"
+    },
+    "competency": "math.alg.identites-remarquables"
+  },
+  "math.stat.cumul-croissant-decroissant-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu cumules dans le mauvais sens : le cumul croissant part de la plus petite valeur, le cumul décroissant de la plus grande",
+      "en": "You cumulate in the wrong direction: an ascending cumulative starts from the smallest value, a descending one from the largest",
+      "ar": "تجمّع في الاتجاه المعاكس: التجميع الصاعد يبدأ من أصغر قيمة، والتجميع النازل يبدأ من أكبرها"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.seuil-strict-borne-incluse": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu inclus la borne alors que l'inégalité est stricte : « plus de 3 » exclut 3, « moins de 60 » exclut 60",
+      "en": "You include the bound although the inequality is strict: “more than 3” excludes 3, “less than 60” excludes 60",
+      "ar": "تُدخل الحدّ والمتراجحة صارمة: «أكثر من 3» لا تشمل 3، و«أقلّ من 60» لا تشمل 60"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.borne-de-classe-au-lieu-du-centre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu remplaces chaque classe par l'une de ses bornes au lieu de son centre : le centre est la moyenne des deux bornes",
+      "en": "You replace each class by one of its bounds instead of its centre: the centre is the mean of the two bounds",
+      "ar": "تعوّض كلّ فئة بأحد طرفيها بدل مركزها: مركز الفئة هو معدّل طرفيها"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.stat.interpolation-borne-inferieure-oubliee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu calcules le décalage dans la classe mais oublies d'y ajouter sa borne inférieure",
+      "en": "You work out the offset within the class but forget to add its lower bound",
+      "ar": "تحسب الزيادة داخل الفئة وتنسى إضافة طرفها الأصغر"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.stat.classe-commencant-au-seuil-comptee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes la classe qui commence au seuil : « moins de 60 » s'arrête à la borne 60, la classe qui commence à 60 est au-dessus",
+      "en": "You count the class that starts at the threshold: “less than 60” stops at the bound 60, the class starting at 60 lies above it",
+      "ar": "تحسب الفئة التي تبدأ عند الحدّ: «أقلّ من 60» تتوقّف عند الحدّ 60، والفئة التي تبدأ عند 60 تقع فوقها"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.moyenne-divisee-par-le-nombre-de-valeurs": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu divises la somme des produits par le nombre de valeurs (ou de classes) au lieu de l'effectif total",
+      "en": "You divide the sum of the products by the number of values (or classes) instead of the total frequency",
+      "ar": "تقسم مجموع الجداءات على عدد القيم (أو الفئات) بدل التكرار الكلّي"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.vec.symetrie-centrale-un-seul-signe": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ne changes le signe que d'une coordonnée : c'est un symétrique par rapport à un axe. Le symétrique par rapport à O change les DEUX signes : M(x ; y) donne M′(−x ; −y)",
+      "en": "You only flip the sign of one coordinate: that is a reflection in an axis. The image by the point reflection in O changes BOTH signs: M(x ; y) gives M′(−x ; −y)",
+      "ar": "تغيّر إشارة إحداثيّة واحدة فقط، وهذه مناظرة بالنسبة إلى محور: مناظرة M(x ; y) بالنسبة إلى O هي M′(−x ; −y) ، تتغيّر الإشارتان معًا"
+    },
+    "competency": "math.vec.repere-coordonnees"
+  },
+  "math.num.facteur-racine-sans-carre": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu fais entrer ou sortir un facteur de la racine sans le carrer ou le prendre en racine : 3√2 = √(9 × 2) = √18, pas √(3 × 2) ; √8 = 2√2, pas 4√2",
+      "en": "You move a factor into or out of a root without squaring it or taking its root: 3√2 = √(9 × 2) = √18, not √(3 × 2); √8 = 2√2, not 4√2",
+      "ar": "تُدخل عاملًا تحت الجذر أو تُخرجه دون تربيعه أو أخذ جذره: 3√2 = √(9 × 2) = √18 لا √(3 × 2) ، و √8 = 2√2 لا 4√2"
+    },
+    "competency": "math.num.racines-calcul"
+  },
+  "math.geo.pythagore-egalite-approchee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu acceptes une égalité approchée : dans la réciproque de Pythagore, 61 et 64 sont différents, donc le triangle n'est pas rectangle",
+      "en": "You accept an approximate equality: in the converse of Pythagoras, 61 and 64 are different, so the triangle is not right-angled",
+      "ar": "تقبل مساواة تقريبية: في عكس نظرية فيثاغورس 61 و 64 عددان مختلفان، فالمثلث ليس قائمًا"
+    },
+    "competency": "math.geo.pythagore"
+  },
+  "math.stat.classe-finissant-au-seuil-comptee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes la classe qui se termine au seuil : « 3 heures ou plus » commence à 3, la classe qui finit à 3 est tout entière en dessous",
+      "en": "You count the class that ends at the threshold: “3 hours or more” starts at 3, the class ending at 3 lies entirely below it",
+      "ar": "تحسب الفئة التي تنتهي عند الحدّ: شرط «3 ساعات أو أكثر» يبدأ عند 3، والفئة التي تنتهي عند 3 تقع كلّها دونه"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.classes-concernees-incompletes": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies une partie des classes concernées : toutes les classes situées du bon côté du seuil comptent",
+      "en": "You leave out some of the classes concerned: every class on the required side of the threshold counts",
+      "ar": "تنسى بعض الفئات المعنيّة: كلّ الفئات الواقعة في الجهة المطلوبة من الحدّ تُحسب"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.cumul-decale-d-une-classe": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu décales l'effectif cumulé d'une classe : il compte les valeurs strictement inférieures à sa borne supérieure — ni seulement celles d'avant sa borne inférieure, ni aussi celles de la classe suivante",
+      "en": "You shift the cumulative count by one class: it counts the values strictly below the class's upper bound — neither just those below its lower bound, nor those of the next class as well",
+      "ar": "تُزيح التكرار المجمّع بفئة واحدة: هو يعدّ القيم الأصغر قطعًا من الطرف الأكبر للفئة، لا القيم الأصغر من طرفها الأصغر وحدها، ولا قيم الفئة التالية معها"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.stat.mediane-egale-centre-ou-borne-de-la-classe": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu donnes le centre ou une borne de la classe médiane au lieu de chercher l'abscisse où l'effectif cumulé atteint N/2",
+      "en": "You give the centre or a bound of the median class instead of finding the abscissa where the cumulative count reaches N/2",
+      "ar": "تعطي مركز الفئة التي ينتمي إليها الوسيط أو أحد طرفيها بدل البحث عن الفاصلة التي يبلغ عندها التكرار المجمّع نصف التكرار الكلّي"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.stat.interpolation-mal-posee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu poses mal l'interpolation de la médiane (point de départ, rapport ou largeur de classe) : médiane = borne inférieure + (N/2 − cumulé à cette borne) ÷ effectif de la classe × amplitude",
+      "en": "You set up the median's interpolation wrongly (starting point, ratio or class width): median = lower bound + (N/2 − cumulative at that bound) ÷ class count × class width",
+      "ar": "تُخطئ في حساب الوسيط بالتناسب داخل فئته، سواء في نقطة الانطلاق أو في النسبة أو في عرض الفئة: يُحسب الوسيط بالبدء من الطرف الأصغر للفئة ثمّ إضافة ما ينقص لبلوغ نصف التكرار الكلّي، مقسومًا على تكرار الفئة ومضروبًا في عرضها"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.alg.facteur-commun-terme-non-divise": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu mets un facteur en évidence sans diviser chaque terme par lui : dans 8x² − 20x = 4x(…), 20x ÷ 4x vaut 5, pas 20",
+      "en": "You factor out a common factor without dividing every term by it: in 8x² − 20x = 4x(…), 20x ÷ 4x is 5, not 20",
+      "ar": "تُخرج عاملًا مشتركًا دون أن تقسم كلّ حدّ عليه: في 8x² − 20x = 4x(…) يكون 20x ÷ 4x = 5 وليس 20"
+    },
+    "competency": "math.alg.factorisation"
+  },
+  "math.alg.facteur-commun-signe-change": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu changes le signe d'un terme en mettant en facteur : le signe qui sépare les termes se conserve dans la parenthèse",
+      "en": "You flip the sign of a term when factoring out: the sign between the terms is kept inside the bracket",
+      "ar": "تغيّر إشارة حدّ عند الإخراج: الإشارة التي تفصل بين الحدّين تبقى كما هي داخل القوس"
+    },
+    "competency": "math.alg.factorisation"
+  },
+  "math.alg.inequation-demi-droite-sens-inverse": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu diriges la demi-droite du mauvais côté : x ≥ a se représente vers la droite, x ≤ a vers la gauche",
+      "en": "You point the half-line the wrong way: x ≥ a is drawn towards the right, x ≤ a towards the left",
+      "ar": "تتّجه بنصف المستقيم إلى الجهة الخطأ: x ≥ a يُمثَّل نحو اليمين و x ≤ a نحو اليسار"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.alg.facteur-commun-reste-oublie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies ce qui reste après la mise en facteur : un terme égal au facteur commun laisse 1, et tout ce qui reste doit être regroupé dans la parenthèse",
+      "en": "You lose what remains after factoring out: a term equal to the common factor leaves 1, and everything that remains must be gathered inside the bracket",
+      "ar": "تنسى ما يتبقّى بعد الإخراج: الحدّ المساوي للعامل المشترك يترك العدد 1، ويجب جمع كلّ ما يتبقّى داخل القوس"
+    },
+    "competency": "math.alg.factorisation"
+  },
+  "math.num.comparaison-radicaux-partie-par-partie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares deux radicaux en ne regardant que les coefficients, ou que les nombres sous la racine : compare leurs CARRÉS",
+      "en": "You compare two radicals by looking only at the coefficients, or only at the numbers under the root: compare their SQUARES",
+      "ar": "تقارن عددين جذريّين بالنظر إلى المعاملين وحدهما أو إلى ما تحت الجذرين وحده: قارن مربّعيهما"
+    },
+    "competency": "math.num.ordre-encadrement"
+  },
+  "math.alg.produit-nul-une-seule-solution": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ne gardes qu'une solution : chaque facteur nul du produit en donne une — écris-les toutes, puis n'écarte que celles que l'énoncé exclut",
+      "en": "You keep only one solution: each factor set to zero gives one — write them all down, then discard only those the problem rules out",
+      "ar": "تحتفظ بحلّ واحد فقط: كلّ عامل منعدم يعطي حلًّا — اكتب الحلول كلّها ثمّ لا تُقصِ إلّا ما تستبعده المعطيات"
+    },
+    "competency": "math.alg.equations-produit"
+  },
+  "math.num.rationalisation-denominateur-oublie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies par le conjugué (ou par la racine) sans diviser par le nouveau dénominateur : 1/(√3 − 1) = (√3 + 1)/2, pas √3 + 1",
+      "en": "You multiply by the conjugate (or by the root) without dividing by the new denominator: 1/(√3 − 1) = (√3 + 1)/2, not √3 + 1",
+      "ar": "تضرب في المرافق (أو في الجذر) ولا تقسم على المقام الجديد: 1/(√3 − 1) = (√3 + 1)/2 لا √3 + 1"
+    },
+    "competency": "math.num.racines-calcul"
+  },
+  "math.geo.segment-mal-choisi": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends dans la figure un autre segment que celui que demande la propriété : repère d'abord le bon triangle et ses côtés",
+      "en": "You take a different segment from the figure than the one the property asks for: first identify the correct triangle and its sides",
+      "ar": "تأخذ من الشكل قطعة غير التي تطلبها الخاصية: حدّد أوّلًا المثلّث المناسب وأضلاعه"
+    }
+  },
+  "math.stat.mediane-lue-sans-ranger": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends la valeur du milieu sans avoir rangé la série : la médiane se lit sur la série rangée",
+      "en": "You take the middle value without sorting the series first: the median is read on the sorted series",
+      "ar": "تأخذ القيمة الوسطى قبل ترتيب السلسلة: يُقرأ الوسيط على السلسلة المرتّبة"
+    },
+    "competency": "math.stat.moyenne-mediane"
+  },
+  "math.geo.droite-des-milieux-mauvais-cote": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends la moitié d'un côté qui porte l'un des milieux : le segment qui joint les milieux vaut la moitié du TROISIÈME côté, celui qui ne passe par aucun des deux",
+      "en": "You take half of a side that carries one of the midpoints: the segment joining the midpoints is half of the THIRD side, the one that passes through neither of them",
+      "ar": "تأخذ نصف ضلع يمرّ منه أحد المنتصفين: القطعة الواصلة بين المنتصفين تساوي نصف الضلع الثالث الذي لا يمرّ منه أيّ منهما"
+    },
+    "competency": "math.geo.triangles-base"
+  },
+  "math.vec.milieu-difference-au-lieu-de-somme": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends la moitié de la DIFFÉRENCE des coordonnées (ou la différence entière) : le milieu a pour coordonnées la moitié de leur SOMME",
+      "en": "You take half of the DIFFERENCE of the coordinates (or the whole difference): the coordinates of the midpoint are half of their SUM",
+      "ar": "تأخذ نصف الفرق بين الإحداثيّات (أو الفرق كاملًا): إحداثيّتا المنتصف هما نصف مجموع إحداثيّتي الطرفين"
+    },
+    "competency": "math.vec.repere-calculs"
+  },
+  "math.geo.position-relative-ignoree": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ignores la position relative des points : selon que le point est ENTRE les deux autres ou À L'EXTÉRIEUR (et de quel côté), les longueurs se retranchent ou s'additionnent",
+      "en": "You ignore the relative position of the points: depending on whether a point lies BETWEEN the other two or OUTSIDE them (and on which side), lengths are subtracted or added",
+      "ar": "تُهمل الوضعيّة النسبيّة للنقاط: حسب وقوع النقطة بين النقطتين الأخريين أو خارجهما (وفي أيّ جهة) تُطرح الأطوال أو تُجمع"
+    },
+    "competency": "math.geo.thales-direct"
   }
 }

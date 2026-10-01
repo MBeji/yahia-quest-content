@@ -1,0 +1,224 @@
+{
+  "title": "🏛️ مناظرة 2007 · التمرين 1 ⭐⭐: اختزال عبارة ومتراجحة على مستقيم مدرّج ثمّ تفكيك بقوس مشترك ومعادلة جداء",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 22,
+  "questions": [
+    {
+      "prompt": "نختزل العبارة A المعطاة بما يلي:\nA = (1/2)(2x − 1) + x − 7/2\nأيّ كتابة على شكل ax + b تساوي A لكلّ عدد حقيقي x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x − 9/2",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "b",
+          "text": "2x − 4"
+        },
+        {
+          "id": "c",
+          "text": "2x − 2",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        {
+          "id": "d",
+          "text": "2x + 3",
+          "misconceptionTag": "math.int.signe-ignore-dans-somme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نوزّع 1/2 على حدّي القوس: (1/2)(2x − 1) = x − 1/2 ؛ فتكون A = x − 1/2 + x − 7/2 ، ونجمع الحدّين x + x = 2x ثمّ الحدّين الثابتين −1/2 − 7/2 = −8/2 = −4 ، فنجد A = 2x − 4 ✓ ؛ أمّا الخطأ الشائع فهو توزيع 1/2 على الحدّ الأوّل وحده فيخرج −1 بدل −1/2 ويصير الثابت −9/2 ، أو جمع المقامين 2 + 2 عند جمع −1/2 و −7/2 فيخرج −8/4 = −2 ، أو إهمال إشارة الطرح أمام 7/2 فيصير الثابت موجبًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعوّض في الكتابة المختصرة التالية:\nA = 2x − 4\nأيّ ثنائية تعطي قيمتَي A عند x = 0 ثمّ عند x = −1 على الترتيب ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "( −4 ; −6 )"
+        },
+        {
+          "id": "b",
+          "text": "( −4 ; −2 )"
+        },
+        {
+          "id": "c",
+          "text": "( 4 ; −6 )",
+          "misconceptionTag": "math.int.subtract-smaller-from-larger"
+        },
+        {
+          "id": "d",
+          "text": "( 4 ; −2 )"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نعوّض في A = 2x − 4 ؛ عند x = 0 نجد A = 2 × 0 − 4 = −4 ، وعند x = −1 نجد A = 2 × (−1) − 4 = −2 − 4 = −6 ✓ ؛ أمّا الخطأ الشائع فهو طرح الأصغر من الأكبر متجاهلين الإشارة عند x = 0 فيخرج 4 بدل −4 ، أو إهمال إشارة x عند x = −1 فيُحسب 2 × 1 − 4 = −2 بدل −6 ، وقد يجتمع الخطآن في ثنائية واحدة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "تُكتب مجموعة الأعداد x التي تحقّق المتراجحة الموالية على شكل مجال. ما هو هذا المجال ؟\n2x − 4 ≤ 0",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; −2]",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; 2[",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        },
+        {
+          "id": "c",
+          "text": "]−∞ ; 2]"
+        },
+        {
+          "id": "d",
+          "text": "[−2 ; +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نضيف 4 إلى الطرفين فنجد 2x ≤ 4 ، ثمّ نقسم الطرفين على 2 وهو موجب فلا تنقلب الإشارة ونجد x ≤ 2 ؛ الإشارة ≤ تُبقي العدد 2 ضمن الحلول ، فالمجال ]−∞ ; 2] ✓ ؛ أمّا الخطأ الشائع فهو نقل العدد 4 دون قلب إشارته فيُكتب 2x ≤ −4 ويخرج الحدّ −2 بدل 2 ، أو فتح القوس عند 2 مع الإشارة ≤ فيُقصى العدد 2 من الحلول ، وإن انضاف إلى ذلك عكس الإشارة بلا سبب خرج مجال يمتدّ إلى اليمين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.inequations"
+      ]
+    },
+    {
+      "prompt": "نمثّل على المستقيم المدرّج المرسوم أدناه المجال الموالي:\n]−∞ ; 2]\nأيّ وصف صحيح لهذا التمثيل ؟\n<svg viewBox=\"0 0 360 92\"><title>مستقيم مدرّج يظهر عليه العدد 2</title><line x1=\"14\" y1=\"50.0\" x2=\"336\" y2=\"50.0\" stroke=\"#1f2937\" stroke-width=\"2\"/><line x1=\"30.0\" y1=\"44.0\" x2=\"30.0\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"30.0\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−3</text><line x1=\"65.8\" y1=\"44.0\" x2=\"65.8\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"65.8\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−2</text><line x1=\"101.5\" y1=\"44.0\" x2=\"101.5\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"101.5\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−1</text><line x1=\"137.2\" y1=\"44.0\" x2=\"137.2\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"137.2\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"173.0\" y1=\"44.0\" x2=\"173.0\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"173.0\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"208.8\" y1=\"44.0\" x2=\"208.8\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"208.8\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"244.5\" y1=\"44.0\" x2=\"244.5\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"244.5\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"280.2\" y1=\"44.0\" x2=\"280.2\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"280.2\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"316.0\" y1=\"44.0\" x2=\"316.0\" y2=\"56.0\" stroke=\"#64748b\" stroke-width=\"1.6\"/><text x=\"316.0\" y=\"74.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#1f2937\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"208.8\" y1=\"37.0\" x2=\"208.8\" y2=\"63.0\" stroke=\"#b91c1c\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"208.8\" y=\"32.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "دائرة مفتوحة عند 2 وسهم نحو الأعداد الأكبر من 2"
+        },
+        {
+          "id": "b",
+          "text": "دائرة مفتوحة عند 2 وسهم نحو الأعداد الأصغر من 2",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        },
+        {
+          "id": "c",
+          "text": "دائرة مملوءة عند 2 وسهم نحو الأعداد الأكبر من 2",
+          "misconceptionTag": "math.alg.inequation-demi-droite-sens-inverse"
+        },
+        {
+          "id": "d",
+          "text": "دائرة مملوءة عند 2 وسهم نحو الأعداد الأصغر من 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "القوس المغلق عند 2 يعني أنّ العدد 2 من عناصر المجموعة فنضع عنده دائرة مملوءة ؛ والمجال ]−∞ ; 2] يضمّ الأعداد الأصغر من 2 فنرسم السهم نحوها أي إلى يسار هذه النقطة ✓ ؛ أمّا الخطأ الشائع فهو رسم دائرة مفتوحة مع القوس المغلق فيُقصى العدد 2 من المجموعة ، أو رسم السهم في الجهة المعاكسة فيُمثَّل مجال آخر يبدأ من 2 ويمتدّ نحو الأعداد الأكبر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.inequations",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نريد كتابة العبارة B التالية على شكل جداء عوامل:\nB = (2x − 4)(2x + 2) + x(2x − 4)\nأيّ جداء صحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x(2x − 4)(2x + 2)"
+        },
+        {
+          "id": "b",
+          "text": "(2x − 4)(2x + 2)",
+          "misconceptionTag": "math.alg.facteur-commun-reste-oublie"
+        },
+        {
+          "id": "c",
+          "text": "(2x − 4)(x + 2)"
+        },
+        {
+          "id": "d",
+          "text": "(2x − 4)(3x + 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "القوس (2x − 4) يظهر في الحدّين معًا فهو العامل المشترك ؛ نُخرجه ونجمع ما يبقى من الحدّين داخل قوس واحد: (2x + 2) + x = 3x + 2 ، فنجد B = (2x − 4)(3x + 2) ✓ ؛ أمّا الخطأ الشائع فهو نسيان الحدّ الثاني عند الجمع فيبقى (2x − 4)(2x + 2) ، أو خطأ في إشارة x عند جمعه فيخرج (x + 2) ، أو تحويل علامة الجمع بين الحدّين إلى ضرب فيخرج جداء ثلاثة عوامل.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "مهما يكن العدد الحقيقي x نعلم أنّ العبارة B تساوي الجداء التالي:\nB = (2x − 4)(3x + 2)\nاختر كلّ الكتابات التي تساويها.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2(x − 2)(3x + 2)"
+        },
+        {
+          "id": "b",
+          "text": "(x − 2)(3x + 2)"
+        },
+        {
+          "id": "c",
+          "text": "2(x − 4)(3x + 2)"
+        },
+        {
+          "id": "d",
+          "text": "(x − 2)(6x + 4)"
+        },
+        {
+          "id": "e",
+          "text": "6x² − 8x − 8"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "لدينا 2x − 4 = 2 × x − 2 × 2 = 2(x − 2) ، فنُخرج العامل المشترك 2 من القوس الأوّل ونكتب B = 2(x − 2)(3x + 2) ✓ ؛ والعامل 2 يمكن وضعه في أيّ من القوسين فتكون B = (x − 2) × 2(3x + 2) = (x − 2)(6x + 4) ✓ ؛ وبنشر (x − 2)(6x + 4) نجد 6x² + 4x − 12x − 8 = 6x² − 8x − 8 ✓ ؛ أمّا الكتابة (x − 2)(3x + 2) فينقصها العامل 2 فهي نصف B فقط ، والكتابة 2(x − 4)(3x + 2) تقسم الحدّ الأوّل وحده من القوس على 2 فتخالف العبارة المعطاة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "حلّ تلميذ في مجموعة الأعداد الحقيقية المعادلة التالية:\n(x − 2)(3x + 2) = 0\nوكتب مجموعة الحلول التالية:\n{ 2 ; 2/3 }\nأيّ قول صحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "الحلّ 2 خاطئ لأنّ المعادلة x − 2 = 0 تعطي x = −2",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "b",
+          "text": "الحلّ 2/3 خاطئ لأنّ المعادلة 3x + 2 = 0 تعطي x = −3/2",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
+        {
+          "id": "c",
+          "text": "الحلّان صحيحان لأنّ كلّ عامل ينعدم عند العدد الظاهر في قوسه",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "d",
+          "text": "الحلّ 2/3 خاطئ لأنّ المعادلة 3x + 2 = 0 تعطي x = −2/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "الجداء معدوم إذا وفقط إذا انعدم أحد عامليه ، فإمّا x − 2 = 0 أي x = 2 ، وإمّا 3x + 2 = 0 أي 3x = −2 ومنه x = −2/3 ؛ فمجموعة الحلول الصحيحة { 2 ; −2/3 } ✓ والعدد 2/3 لا يحقّق المعادلة لأنّ 3 × 2/3 + 2 = 4 فلا ينعدم العامل الثاني ؛ أمّا الخطأ الشائع فهو قراءة جذر العامل (3x + 2) بإشارته الظاهرة في القوس ، أو قلب البسط والمقام عند قسمة −2 على 3 فيخرج −3/2 ، ولا يكفي أن يظهر العدد داخل القوس لكي يكون هو الجذر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit"
+      ]
+    }
+  ]
+}

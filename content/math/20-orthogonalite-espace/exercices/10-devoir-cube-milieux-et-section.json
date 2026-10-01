@@ -1,0 +1,249 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: مكعّب ومنتصفات وزاوية قائمة في الفضاء",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "ABCDEFGH مكعّب طول حرفه 4 cm. كتب تلميذ: « (BF) يعامد (FE)، إذن (BF) عمودي على مستوي الوجه (EFG) ». ما الذي ينقص تعليله؟\n<svg viewBox=\"0 0 311 281\"><path d=\"M30.6 96.4 L182.7 96.4 L279.3 36 L127.3 36 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M30.6 248.4 L127.3 188 M127.3 188 L279.3 188 M127.3 188 L127.3 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 248.4 L182.7 248.4 M182.7 248.4 L279.3 188 M30.6 96.4 L182.7 96.4 M182.7 96.4 L279.3 36 M279.3 36 L127.3 36 M127.3 36 L30.6 96.4 M30.6 248.4 L30.6 96.4 M279.3 188 L279.3 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M182.7 248.4 L182.7 96.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"36\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"36\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"192.7\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292.3\" y=\"193\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"114.3\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"98.4\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"191.7\" y=\"111.4\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"291.3\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"117.3\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "أن يعامد (BF) أيضًا (FG) الذي يقطع (FE) في F"
+        },
+        {
+          "id": "b",
+          "text": "لا شيء، فالتعامد مع مستقيم واحد من الوجه يكفي",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "c",
+          "text": "أن يعامد (BF) أيضًا (HG) الموازي لـ (FE)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "d",
+          "text": "أن يكون (FE) عموديًا على (FG)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مستقيم واحد من المستوي لا يكفي أبدًا: حول (FE) عدد لا نهائي من المستقيمات العمودية عليه، وأغلبها مائل على الوجه (EFG). يلزم مستقيم ثانٍ من هذا الوجه يقطع (FE) في F: الوجه BCGF مربّع فـ (BF) يعامد (FG) أيضًا، و(FE) و(FG) متقاطعان في F، إذن (BF) ⊥ (EFG) ✓. والمستقيم (HG) يوازي (FE) فلا يضيف اتّجاهًا جديدًا، ولا يُشترط أن يتعامد المستقيمان المختاران من الوجه في ما بينهما: يكفي أن يتقاطعا في F.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH مكعّب طول حرفه 4 cm، و I منتصف الحرف [EF]. الوجه ABFE مربّع، فالمثلّث BFI قائم في F. ما قيس BI ؟\n<svg viewBox=\"0 0 311 281\"><path d=\"M30.6 248.4 L127.3 188 M127.3 188 L279.3 188 M127.3 188 L127.3 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 248.4 L182.7 248.4 M182.7 248.4 L279.3 188 M182.7 248.4 L182.7 96.4 M30.6 96.4 L182.7 96.4 M182.7 96.4 L279.3 36 M279.3 36 L127.3 36 M127.3 36 L30.6 96.4 M30.6 248.4 L30.6 96.4 M279.3 188 L279.3 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M182.7 248.4 L106.7 96.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"36\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"36\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"106.7\" cy=\"96.4\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"192.7\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292.3\" y=\"193\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"114.3\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"98.4\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"191.7\" y=\"111.4\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"291.3\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"117.3\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"106.7\" y=\"113.4\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√3",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "2√5"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "20",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "FI = EF ÷ 2 = 2 و BF = 4. في المثلّث BFI القائم في F: BI² = BF² + FI² = 16 + 4 = 20، ومنه BI = √20 = 2√5 cm ✓. وبالطريقة نفسها في الوجه BCGF نجد BJ = 2√5، حيث J منتصف [FG]. والعدد 6 = 4 + 2 يجمع الطولين، و 20 هو BI² قبل الجذر، و 2√3 = √(16 − 4) يطرح المربّعين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH مكعّب طول حرفه 4 cm. ما قيس القطر EG للوجه المربّع EFGH ؟\n<svg viewBox=\"0 0 311 281\"><path d=\"M30.6 248.4 L127.3 188 M127.3 188 L279.3 188 M127.3 188 L127.3 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 248.4 L182.7 248.4 M182.7 248.4 L279.3 188 M182.7 248.4 L182.7 96.4 M30.6 96.4 L182.7 96.4 M182.7 96.4 L279.3 36 M279.3 36 L127.3 36 M127.3 36 L30.6 96.4 M30.6 248.4 L30.6 96.4 M279.3 188 L279.3 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M30.6 96.4 L279.3 36\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"36\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"36\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"192.7\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292.3\" y=\"193\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"114.3\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"98.4\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"191.7\" y=\"111.4\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"291.3\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"117.3\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√2"
+        },
+        {
+          "id": "b",
+          "text": "4√3"
+        },
+        {
+          "id": "c",
+          "text": "8",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "32",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث EFG قائم في F: EG² = EF² + FG² = 16 + 16 = 32، ومنه EG = √32 = 4√2 cm ✓. والعدد 8 = 4 + 4 يجمع الطولين، و 32 هو EG² قبل الجذر، و 4√3 هو قطر المكعّب، بأبعاده الثلاثة، لا قطر الوجه.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH مكعّب طول حرفه 4 cm، و I و J منتصفا الحرفين [FE] و[FG] على الترتيب، وقطر الوجه EG = 4√2 cm. ما قيس IJ ؟\n<svg viewBox=\"0 0 311 281\"><path d=\"M30.6 248.4 L127.3 188 M127.3 188 L279.3 188 M127.3 188 L127.3 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 248.4 L182.7 248.4 M182.7 248.4 L279.3 188 M182.7 248.4 L182.7 96.4 M30.6 96.4 L182.7 96.4 M182.7 96.4 L279.3 36 M279.3 36 L127.3 36 M127.3 36 L30.6 96.4 M30.6 248.4 L30.6 96.4 M279.3 188 L279.3 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M30.6 96.4 L279.3 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M106.7 96.4 L231 66.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"36\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"36\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"106.7\" cy=\"96.4\" r=\"3.6\"/><circle cx=\"231\" cy=\"66.2\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"192.7\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292.3\" y=\"193\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"114.3\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"98.4\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"191.7\" y=\"111.4\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"291.3\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"117.3\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"106.7\" y=\"113.4\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"243\" y=\"70.2\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "2√2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "8√2",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث FEG: I منتصف [FE] و J منتصف [FG]، فالمستقيم (IJ) يوازي (EG) و IJ = EG ÷ 2 = 4√2 ÷ 2 = 2√2 cm ✓، وهي خاصيّة المستقيم الرابط بين منتصفي ضلعين. تحقّق: المثلّث FIJ قائم في F و FI = FJ = 2، فـ IJ² = 4 + 4 = 8 و IJ = 2√2. والعدد 8√2 يضاعف EG بدل أن ينصّفه، و 4 = 2 + 2 يجمع FI و FJ، و 2 هو FI لا IJ.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "في المكعّب ABCDEFGH ذي الحرف 4 cm: المثلّث FIJ قائم في F ووتره IJ = 2√2 cm، و K منتصف [IJ]. ما قيس FK ؟\n<svg viewBox=\"0 0 311 281\"><path d=\"M30.6 248.4 L127.3 188 M127.3 188 L279.3 188 M127.3 188 L127.3 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 248.4 L182.7 248.4 M182.7 248.4 L279.3 188 M182.7 248.4 L182.7 96.4 M30.6 96.4 L182.7 96.4 M182.7 96.4 L279.3 36 M279.3 36 L127.3 36 M127.3 36 L30.6 96.4 M30.6 248.4 L30.6 96.4 M279.3 188 L279.3 36 M106.7 96.4 L231 66.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M182.7 96.4 L168.8 81.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"36\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"36\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"106.7\" cy=\"96.4\" r=\"3.6\"/><circle cx=\"231\" cy=\"66.2\" r=\"3.6\"/><circle cx=\"168.8\" cy=\"81.3\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"192.7\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292.3\" y=\"193\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"114.3\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"98.4\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"191.7\" y=\"111.4\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"291.3\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"117.3\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"106.7\" y=\"113.4\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"243\" y=\"70.2\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"164.8\" y=\"72.3\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2",
+          "misconceptionTag": "math.geo.mediane-hypotenuse-demi"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "√2"
+        },
+        {
+          "id": "d",
+          "text": "√6",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "K منتصف الوتر [IJ] في المثلّث FIJ القائم في F، والموسّط الصادر من رأس الزاوية القائمة نصف الوتر: FK = IJ ÷ 2 = 2√2 ÷ 2 = √2 cm ✓. الخطأ الشائع أخذ الوتر كلّه 2√2؛ والعدد 2 هو FI، و √6 = √(FI² + IK²) يطبّق بيتاغور في المثلّث FIK كأنّه قائم في I، وليس كذلك.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "في المكعّب ABCDEFGH: (BF) عمودي على مستوي الوجه (EFG)، و K منتصف [IJ] حيث I و J منتصفا [FE] و[FG]. لماذا المثلّث BFK قائم في F ؟\n<svg viewBox=\"0 0 311 281\"><path d=\"M30.6 248.4 L127.3 188 M127.3 188 L279.3 188 M127.3 188 L127.3 36 M182.7 248.4 L168.8 81.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M30.6 248.4 L182.7 248.4 M182.7 248.4 L279.3 188 M182.7 248.4 L182.7 96.4 M30.6 96.4 L182.7 96.4 M182.7 96.4 L279.3 36 M279.3 36 L127.3 36 M127.3 36 L30.6 96.4 M30.6 248.4 L30.6 96.4 M279.3 188 L279.3 36 M106.7 96.4 L231 66.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M182.7 96.4 L168.8 81.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"36\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"36\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"106.7\" cy=\"96.4\" r=\"3.6\"/><circle cx=\"231\" cy=\"66.2\" r=\"3.6\"/><circle cx=\"168.8\" cy=\"81.3\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"192.7\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292.3\" y=\"193\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"114.3\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"98.4\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"191.7\" y=\"111.4\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"291.3\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"117.3\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"106.7\" y=\"113.4\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"243\" y=\"70.2\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"164.8\" y=\"72.3\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ (BF) يعامد (FI) ، و(FI) من مستوي الوجه (EFG)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ الزاوية IFJ قائمة ، و K نقطة من [IJ]"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ K منتصف [IJ] و FK نصف الوتر في المثلّث FIJ"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ (FK) مستقيم من مستوي الوجه (EFG) يمرّ من F"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المستقيم العمودي على مستوٍ في نقطة يعامد كلّ مستقيمات المستوي المارّة منها. النقطة K من [IJ] فهي من مستوي الوجه (EFG)، و(FK) يمرّ من F: إذن (BF) ⊥ (FK) والمثلّث BFK قائم في F ✓. الخطأ الشائع رؤية هذه الزاوية بديهيّة: K ليست على حرف، فالزاوية لا تظهر في أيّ وجه، ولا يجوز تطبيق بيتاغور في BFK قبل إثباتها. والتعامد مع (FI) وحده لا يعطي التعامد مع (FK)، والزاوية القائمة IFJ تقع في الوجه العلوي ولا تقول شيئًا عن الزاوية BFK، وإن اشتركتا في الرأس F.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "في المكعّب ABCDEFGH ذي الحرف 4 cm: المثلّث BFK قائم في F، حيث BF = 4 و FK = √2 (بالصنتمتر). ما قيس BK ؟\n<svg viewBox=\"0 0 311 281\"><path d=\"M30.6 248.4 L127.3 188 M127.3 188 L279.3 188 M127.3 188 L127.3 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M182.7 248.4 L168.8 81.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M30.6 248.4 L182.7 248.4 M182.7 248.4 L279.3 188 M182.7 248.4 L182.7 96.4 M30.6 96.4 L182.7 96.4 M182.7 96.4 L279.3 36 M279.3 36 L127.3 36 M127.3 36 L30.6 96.4 M30.6 248.4 L30.6 96.4 M279.3 188 L279.3 36 M106.7 96.4 L231 66.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M182.7 96.4 L168.8 81.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"36\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"36\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"106.7\" cy=\"96.4\" r=\"3.6\"/><circle cx=\"231\" cy=\"66.2\" r=\"3.6\"/><circle cx=\"168.8\" cy=\"81.3\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"192.7\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292.3\" y=\"193\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"114.3\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"98.4\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"191.7\" y=\"111.4\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"291.3\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"117.3\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"106.7\" y=\"113.4\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"243\" y=\"70.2\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"164.8\" y=\"72.3\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "18",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "4 + √2",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "3√2"
+        },
+        {
+          "id": "d",
+          "text": "√14",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "BK² = BF² + FK² = 16 + 2 = 18، ومنه BK = √18 = 3√2 cm ✓. تحقّق بطريق ثانٍ: المثلّث BIJ متقايس الضلعين (BI = BJ = 2√5) و K منتصف قاعدته [IJ]، فـ (BK) ⊥ (IJ) و BK² = BI² − IK² = 20 − 2 = 18. والعدد 4 + √2 يجمع الطولين، و 18 هو BK² قبل الجذر، و √14 = √(16 − 2) يطرح المربّعين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.esp.cube-pave"
+      ]
+    },
+    {
+      "prompt": "في المكعّب ABCDEFGH ذي الحرف 4 cm: المثلّث BIJ متقايس الضلعين في B، و K منتصف قاعدته [IJ]، حيث IJ = 2√2 و BK = 3√2 (بالصنتمتر). ما مساحة المثلّث BIJ ؟\n<svg viewBox=\"0 0 311 281\"><path d=\"M182.7 248.4 L106.7 96.4 L231 66.2 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M30.6 248.4 L127.3 188 M127.3 188 L279.3 188 M127.3 188 L127.3 36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M182.7 248.4 L168.8 81.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><path d=\"M30.6 248.4 L182.7 248.4 M182.7 248.4 L279.3 188 M182.7 248.4 L182.7 96.4 M30.6 96.4 L182.7 96.4 M182.7 96.4 L279.3 36 M279.3 36 L127.3 36 M127.3 36 L30.6 96.4 M30.6 248.4 L30.6 96.4 M279.3 188 L279.3 36 M106.7 96.4 L231 66.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M182.7 248.4 L106.7 96.4 M182.7 248.4 L231 66.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30.6\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"248.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"188\" r=\"3.2\"/><circle cx=\"30.6\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"96.4\" r=\"3.2\"/><circle cx=\"279.3\" cy=\"36\" r=\"3.2\"/><circle cx=\"127.3\" cy=\"36\" r=\"3.2\"/></g><g fill=\"#0f6e56\"><circle cx=\"106.7\" cy=\"96.4\" r=\"3.6\"/><circle cx=\"231\" cy=\"66.2\" r=\"3.6\"/><circle cx=\"168.8\" cy=\"81.3\" r=\"3.6\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"19.6\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"192.7\" y=\"263.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"292.3\" y=\"193\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"114.3\" y=\"184\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"18.6\" y=\"98.4\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"191.7\" y=\"111.4\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"291.3\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"117.3\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"106.7\" y=\"113.4\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"243\" y=\"70.2\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"164.8\" y=\"72.3\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 cm²"
+        },
+        {
+          "id": "b",
+          "text": "6 cm²"
+        },
+        {
+          "id": "c",
+          "text": "2√10 cm²"
+        },
+        {
+          "id": "d",
+          "text": "12 cm²",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث BIJ المتقايس الضلعين في B، الموسّط [BK] الصادر من القمّة الرئيسية هو أيضًا الارتفاع: (BK) ⊥ (IJ). المساحة = (1/2) × IJ × BK = (1/2) × 2√2 × 3√2 = (1/2) × 12 = 6 cm² ✓. والعدد 12 ينسى القسمة على 2، و 3 يستعمل نصف القاعدة IK بدل القاعدة كلّها، و 2√10 = (1/2) × 2√2 × 2√5 يأخذ الضلع [BI] ارتفاعًا وهو ليس عموديًا على [IJ].",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.esp.cube-pave"
+      ]
+    }
+  ]
+}
