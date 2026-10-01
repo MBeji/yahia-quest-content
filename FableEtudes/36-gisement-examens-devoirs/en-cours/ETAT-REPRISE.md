@@ -49,6 +49,15 @@
 
 - Rien de lancé ; sondes dans `gisement/6eme-probe` (scratchpad).
 
+## Limites de session (constat du 2026-10-01)
+
+- La limite est « five_hour », par quota consommé et non par durée : quatre agents (deux auditeurs opus + deux auteurs sonnet)
+  l'ont épuisée en ~1 h (09:22 → 10:30 UTC), réouverture à 14:20 UTC. La fenêtre précédente avait tenu 01:10 → 05:20.
+- À la coupure, tous les agents meurent avec « You've hit your session limit · resets <heure> » : les reprendre par
+  `SendMessage` (leur contexte est conservé) APRÈS l'heure de réouverture, en leur demandant d'écrire leurs résultats
+  dans les fichiers de rapport au fil de l'eau (un auditeur coupé avant d'avoir écrit perd tout son travail apparent).
+- Garder le contexte principal léger : pas de sondage, un tour par événement.
+
 ## Pièges à ne pas oublier
 
 - Le pre-push husky ne tourne pas dans un worktree sans `.husky/_` : lancer soi-même lint + typecheck + tests avant de pousser.
