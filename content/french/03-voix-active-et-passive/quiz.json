@@ -2,18 +2,15 @@
   "title": "Quiz de compréhension",
   "questions": [
     {
-      "prompt": "Quelle est la structure du groupe verbal à la voix passive ?",
+      "prompt": "Comment se construit le verbe d'une phrase à la forme passive ?",
       "options": [
-        { "id": "a", "text": "Verbe conjugué normalement" },
-        { "id": "b", "text": "Auxiliaire « avoir » + participe passé" },
-        {
-          "id": "c",
-          "text": "Auxiliaire « être » conjugué + participe passé accordé avec le sujet"
-        },
-        { "id": "d", "text": "Verbe à l'infinitif précédé de « faire »" }
+        { "id": "a", "text": "« avoir » au temps du verbe actif + participe passé" },
+        { "id": "b", "text": "« être » toujours au présent + participe passé" },
+        { "id": "c", "text": "« être » au temps du verbe actif + participe passé" },
+        { "id": "d", "text": "« faire » au temps du verbe actif + infinitif" }
       ],
       "correctOption": "c",
-      "explanation": "La voix passive se construit avec l'auxiliaire « être » conjugué au temps voulu, suivi du participe passé qui s'accorde en genre et en nombre avec le sujet.",
+      "explanation": "À la forme passive, l'auxiliaire « être » se conjugue au temps du verbe actif, puis vient le participe passé, accordé avec le sujet : « La passerelle sera inaugurée ». « avoir » + participe forme un passé composé actif (« ont installé ») ; « être » ne reste pas au présent, il prend le temps de l'actif (« a été », « sera », « aurait été »).",
       "difficulty": 1
     },
     {
@@ -25,23 +22,23 @@
         { "id": "d", "text": "L'attribut du sujet passif" }
       ],
       "correctOption": "b",
-      "explanation": "Règle de transformation : le COD de la phrase active devient le sujet de la phrase passive ; l'ancien sujet actif devient le complément d'agent introduit par « par » ou « de ».",
+      "explanation": "Le COD de la phrase active devient le sujet de la phrase passive : « L'Europe finance l'ouvrage » → « L'ouvrage est financé par l'Europe ». C'est l'ancien SUJET qui devient complément d'agent (après « par » ou « de ») ; le COD ne disparaît pas et ne devient pas attribut : il prend la place de sujet.",
       "difficulty": 1
     },
     {
-      "prompt": "Quel type de verbe NE peut PAS se mettre à la voix passive ?",
+      "prompt": "Quel verbe NE peut PAS se mettre à la forme passive ?",
       "options": [
-        { "id": "a", "text": "Un verbe transitif direct comme « corriger »" },
-        { "id": "b", "text": "Un verbe transitif direct comme « frapper »" },
-        { "id": "c", "text": "Un verbe intransitif comme « dormir »" },
-        { "id": "d", "text": "Un verbe transitif direct comme « lire »" }
+        { "id": "a", "text": "corriger (corriger une copie)" },
+        { "id": "b", "text": "admirer (admirer le champion du monde)" },
+        { "id": "c", "text": "ressembler (ressembler à son père)" },
+        { "id": "d", "text": "oublier (oublier un rendez-vous)" }
       ],
       "correctOption": "c",
-      "explanation": "Seuls les verbes transitifs directs (qui ont un COD) peuvent se mettre à la voix passive. Les verbes intransitifs comme « dormir », « partir » ou « ressembler à » ne le peuvent pas.",
+      "explanation": "« Ressembler à » est un verbe transitif INDIRECT : son complément est introduit par « à », ce n'est pas un COD, et sans COD rien ne peut devenir sujet. « Corriger », « admirer » et « oublier » ont un COD : « La copie est corrigée par le professeur », « Le champion est admiré de tous », « Le rendez-vous a été oublié ».",
       "difficulty": 2
     },
     {
-      "prompt": "Comment transforme-t-on à la voix active la phrase passive « La porte a été fermée. » quand il n'y a pas de complément d'agent ?",
+      "prompt": "Comment met-on à la forme active la phrase passive « La porte a été fermée. », qui n'a pas de complément d'agent ?",
       "options": [
         { "id": "a", "text": "Ils ont fermé la porte." },
         { "id": "b", "text": "La porte ferme." },
@@ -49,19 +46,19 @@
         { "id": "d", "text": "La porte fermait." }
       ],
       "correctOption": "c",
-      "explanation": "Quand la phrase passive n'a pas de complément d'agent, on utilise le sujet indéfini « on » à la voix active : « La porte a été fermée. » → « On a fermé la porte. »",
+      "explanation": "Sans complément d'agent, il n'y a personne à remettre en position de sujet : la phrase active prend le pronom indéfini « on », au même temps (« a été fermée » → « a fermé ») : « On a fermé la porte. » « Ils » inventerait un agent précis que la phrase ne donne pas ; « La porte ferme » et « La porte fermait » font de la porte celle qui agit.",
       "difficulty": 2
     },
     {
-      "prompt": "Quel est l'intérêt stylistique principal de la voix passive ?",
+      "prompt": "Quel est l'intérêt principal de la forme passive ?",
       "options": [
-        { "id": "a", "text": "Elle met en avant celui qui agit (le sujet-agent)." },
-        { "id": "b", "text": "Elle met en avant celui qui subit l'action (l'objet devenu sujet)." },
-        { "id": "c", "text": "Elle simplifie toujours la phrase." },
-        { "id": "d", "text": "Elle exprime une hypothèse." }
+        { "id": "a", "text": "Mettre en avant celui qui agit" },
+        { "id": "b", "text": "Exprimer une hypothèse ou un doute" },
+        { "id": "c", "text": "Rendre toujours la phrase plus courte" },
+        { "id": "d", "text": "Mettre en tête ce qui subit l'action" }
       ],
-      "correctOption": "b",
-      "explanation": "La voix passive met en lumière celui qui subit l'action. Ex. : « La vérité est révélée par le journaliste. » → l'accent est sur la vérité, pas sur le journaliste.",
+      "correctOption": "d",
+      "explanation": "La transformation passive place en position de sujet, donc en tête, ce qui subit l'action : « La vérité est révélée par le journaliste » parle d'abord de la vérité. Mettre en avant celui qui agit, c'est le rôle de la forme active ; le passif n'est pas plus court (« est révélée » a deux mots) et n'exprime pas une hypothèse, rôle du conditionnel.",
       "difficulty": 2
     }
   ]
