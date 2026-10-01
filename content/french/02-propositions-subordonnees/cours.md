@@ -427,7 +427,7 @@ _trop… pour_, _de façon à_, _au point de_ + infinitif. Dans la **phrase comp
 | Construction                                | Subordonnants                             | Exemple                                          |
 | ------------------------------------------- | ----------------------------------------- | ------------------------------------------------ |
 | conséquence **pure et simple**              | de sorte que, de manière que, si bien que | _Il a plu, **si bien que** la route est coupée._ |
-| conséquence liée à un **degré d'intensité** | tellement… que, si… que, à tel point que  | _Il était **tellement** las **qu'il** dormit._ |
+| conséquence liée à un **degré d'intensité** | tellement… que, si… que, à tel point que  | _Il était **tellement** las **qu'il** dormit._   |
 
 ::: exemple classer « Il était si fatigué qu'il s'endormit en classe. »
 

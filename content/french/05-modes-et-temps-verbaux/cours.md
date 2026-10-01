@@ -313,7 +313,7 @@ Le **subjonctif présent** s'emploie dans une subordonnée **complétive** quand
 exprime une **volonté**, un **sentiment**, un **doute**, une **possibilité** ou une **opinion à la
 forme négative ou interrogative** ; et après certains subordonnants de **temps**, de **but**, de
 **concession** et de **condition**. Formation : radical de la 3e personne du pluriel du présent de
-l'indicatif + _-e, -es, -e, -ions, -iez, -ent_ — sauf **quelques verbes irréguliers**, dont les six du manuel ci-dessous.
+l'indicatif + _-e, -es, -e, -ions, -iez, -ent_ — sauf **quelques verbes irréguliers**, dont les six que retient le manuel.
 :::
 
 | Déclencheur                                      | Exemple                                   |

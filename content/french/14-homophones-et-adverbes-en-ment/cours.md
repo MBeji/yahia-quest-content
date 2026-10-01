@@ -64,7 +64,7 @@ _Qu'il_ possible → _qu'elle(s)_ ; sinon _quel_, accordé avec son nom.
 
 ## ⏰ Quand, quant ou qu'en ?
 
-Le commentateur d'un match de handball écrit : _« … à notre gardien, il ne sera remplacé …
+Le commentateur d'un match de handball écrit : _« … à notre gardien, il sera remplacé …
 l'entraîneur l'aura décidé. Ce n'est … défendant ensemble qu'on gagne. »_ Trois trous, un seul
 son, [kɑ̃].
 
@@ -88,7 +88,7 @@ _Quant_ ne s'emploie jamais seul : derrière lui viennent toujours _à_, _au_ ou
 
 1. _« … à notre gardien »_ ← suivi de _à_, et on peut dire _« en ce qui concerne notre
    gardien »_ : **Quant**.
-2. _« il ne sera remplacé … l'entraîneur l'aura décidé »_ ← on peut dire _lorsque_, car c'est
+2. _« il sera remplacé … l'entraîneur l'aura décidé »_ ← on peut dire _lorsque_, car c'est
    un moment : **quand**.
 3. _« Ce n'est … défendant ensemble »_ ← _ce n'est que_ + _en défendant_ (gérondif) : **qu'en**.
 
@@ -193,13 +193,13 @@ exprimée par le verbe (_jouer **doucement**_). La plupart se forment en ajoutan
 féminin** de l'adjectif : _doux → douce → **doucement**_.
 :::
 
-| Cas                                        | Adjectif → adverbe                                                        |
-| ------------------------------------------ | ------------------------------------------------------------------------- |
-| règle générale : féminin + _-ment_         | _vif → vive → **vivement**_ · _fier → fière → **fièrement**_              |
-| masculin en _-ai, -é, -i, -u_ : pas de _e_ | _vrai → **vraiment**_ · _aisé → **aisément**_ · _poli → **poliment**_     |
-| _e_ remplacé par un accent circonflexe     | _assidu → **assidûment**_ · _cru → **crûment**_                           |
-| terminaison _-ément_                       | _profond → **profondément**_ · _énorme → **énormément**_                  |
-| à retenir à part                           | _bref → **brièvement**_ · _gentil → **gentiment**_ · _gai → **gaiement**_ |
+| Cas                                        | Adjectif → adverbe                                                                     |
+| ------------------------------------------ | -------------------------------------------------------------------------------------- |
+| règle générale : féminin + _-ment_         | _vif → vive → **vivement**_ · _fier → fière → **fièrement**_                           |
+| masculin en _-ai, -é, -i, -u_ : pas de _e_ | _vrai → **vraiment**_ · _aisé → **aisément**_ · _poli → **poliment**_                  |
+| _e_ remplacé par un accent circonflexe     | _assidu → **assidûment**_ · _cru → **crûment**_                                        |
+| terminaison _-ément_                       | _profond → **profondément**_ · _énorme → **énormément**_                               |
+| à retenir à part                           | _bref → **brièvement**_ · _gentil → **gentiment**_ · _gai → **gaiement** (ou gaîment)_ |
 
 Chaque ligne part de l'adjectif ; seule la première applique la règle générale telle quelle.
 
