@@ -116,10 +116,12 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
   question antérieure livre la clé par l'ordre d'émission : change ce qu'elle demande.
 - **Un énoncé qui redonne l'étape clé** d'une sous-question (la réécriture (x − √2/2)² − (1/2)² avant
   de demander la factorisation) : donne la donnée brute (− 1/4), pas le résultat de l'étape.
-- **Rendu arabe** : depuis arena#1137, #1138 et #1139, le moteur isole tout seul les formules qui
+- **Rendu arabe** : depuis arena#1137 à #1142, le moteur isole tout seul les formules qui
   s'affichaient à moitié renversées (signe collé à une lettre « −x + 1 », formule qui s'ouvre par un
   nombre puis une lettre « 25 + k = 9 » ou « 1/b », « ∠ABC ») et garde hors de l'isolat la
-  ponctuation et les parenthèses qui les bordent. Écris les énoncés naturellement, sans contorsion.
+  ponctuation et les parenthèses qui les bordent (une « ( » qui ouvre un membre de phrase arabe
+  après une formule à parenthèses : `(80 + 100) ÷ 2 = 90 ✓ (…)` se rend bien depuis #1142).
+  Écris les énoncés naturellement, sans contorsion.
 - **Chaque égalité écrite dans une explication est vraie** (« −2x + 4x = 6x » ne l'est pas) et le
   mécanisme décrit doit PRODUIRE la valeur de l'option (« (√2/2)² = 1/4 : oubli de la racine »
   donnerait √2/4, pas 1/4). Recalcule chaque chaîne d'égalités.
@@ -145,3 +147,8 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
   patron (« لأنّها تجمع تكرارات الفئات كلّها » contre « لأنّ N هو … تكرار »), donne le même patron aux
   quatre options. Un distracteur dont les nombres sont tous multiples d'un même nombre que la clé ne
   partage pas (34, 68, 340 face à 458) la désigne comme intrus.
+- **Un même exercice de sujet reprend ses données dans deux chapitres** (la série de 2013 en 07 et
+  en 10, celle de 2012 en 07 et en 13) : avant de poser une question de calcul sur des données
+  d'examen, cherche dans les missions PUBLIÉES des autres chapitres la même série, la même donnée,
+  le même piège. Si elle existe, change l'angle ou écarte la question — deux audits ont écarté 10 Q3
+  (rang de la médiane) et 13 Q5 (moyenne pondérée) pour ce seul motif.
