@@ -271,7 +271,7 @@ désigner deux personnes, remets le nom — _« Karim dit à Sami que **Sami** p
 :::
 
 ::: verifie
-Rapporte : _Leïla déclara : « **Mes** parents \**m'\**attendent. »_
+Rapporte : _Leïla déclara : « **Mes** parents **m'attendent**. »_
 
 ---
 

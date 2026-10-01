@@ -126,7 +126,7 @@ la même chose. Qu'est-ce qui sépare ces deux temps ?
 ::: definition
 Le **passé simple** et l'**imparfait** sont les deux **temps du récit au passé**. Formation : au
 radical, on ajoute pour le passé simple _-ai, -as, -a, -âmes, -âtes, -èrent_ (1er groupe),
-_-is, -is, -it…_ (2e groupe, _dire, faire, prendre_…), _-us, -us, -ut…_ (_pouvoir, savoir,
+_-is, -is, -it…_ (2e groupe et certains verbes du 3e : _dire, faire, prendre_…), _-us, -us, -ut…_ (_pouvoir, savoir,
 devoir_…) ou _-ins, -ins, -int…_ (_tenir, venir_) ; pour l'imparfait _-ais, -ais, -ait, -ions,
 -iez, -aient_.
 :::
@@ -313,7 +313,7 @@ Le **subjonctif présent** s'emploie dans une subordonnée **complétive** quand
 exprime une **volonté**, un **sentiment**, un **doute**, une **possibilité** ou une **opinion à la
 forme négative ou interrogative** ; et après certains subordonnants de **temps**, de **but**, de
 **concession** et de **condition**. Formation : radical de la 3e personne du pluriel du présent de
-l'indicatif + _-e, -es, -e, -ions, -iez, -ent_ — sauf **six verbes irréguliers**.
+l'indicatif + _-e, -es, -e, -ions, -iez, -ent_ — sauf **quelques verbes irréguliers**, dont les six du manuel ci-dessous.
 :::
 
 | Déclencheur                                      | Exemple                                   |
@@ -330,7 +330,7 @@ l'indicatif + _-e, -es, -e, -ions, -iez, -ent_ — sauf **six verbes irrégulier
    prend le radical de _ils_ au présent.
 2. **Finir** : _ils **finiss**ent_ → _qu'elle **finisse**_, **car** c'est le radical du pluriel,
    pas celui de l'infinitif.
-3. **Pouvoir** fait partie des six irréguliers : la règle donnerait « peuv- », **car** _ils
+3. **Pouvoir** fait partie des irréguliers : la règle donnerait « peuv- », **car** _ils
    peuvent_ ; or le subjonctif est _que je **puisse**_, à apprendre par cœur.
 
 :::

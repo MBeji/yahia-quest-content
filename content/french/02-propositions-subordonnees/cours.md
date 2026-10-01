@@ -352,7 +352,7 @@ Le rapport se lit depuis la principale : avant que (antériorité, subjonctif) ;
 
 ## 🔥 L'expression de la cause
 
-_« Il est resté chez lui **à cause de** la pluie. »_ · _« Il est resté chez lui \**parce qu'\**il
+_« Il est resté chez lui **à cause de** la pluie. »_ · _« Il est resté chez lui **parce qu'il**
 pleuvait. »_ · _« Il a raté le bus, **sous prétexte que** son réveil n'a pas sonné. »_
 
 Les trois donnent une cause, avec ou sans verbe conjugué. Qu'est-ce qui les distingue ?
@@ -412,7 +412,7 @@ sous prétexte que + indicatif (phrase complexe).
 
 ## 💥 L'expression de la conséquence
 
-_« Il a couru, \**si bien qu'\**il est arrivé à l'heure. »_ et _« Il courait \**si vite qu'\**on ne le
+_« Il a couru, **si bien qu'il** est arrivé à l'heure. »_ et _« Il courait **si vite qu'on** ne le
 voyait plus. »_ Les deux annoncent un résultat.
 
 Mais dans la seconde, le résultat vient d'un **degré** : _si vite_. Le manuel sépare-t-il ces
@@ -427,7 +427,7 @@ _trop… pour_, _de façon à_, _au point de_ + infinitif. Dans la **phrase comp
 | Construction                                | Subordonnants                             | Exemple                                          |
 | ------------------------------------------- | ----------------------------------------- | ------------------------------------------------ |
 | conséquence **pure et simple**              | de sorte que, de manière que, si bien que | _Il a plu, **si bien que** la route est coupée._ |
-| conséquence liée à un **degré d'intensité** | tellement… que, si… que, à tel point que  | _Il était **tellement** las \**qu'\**il dormit._ |
+| conséquence liée à un **degré d'intensité** | tellement… que, si… que, à tel point que  | _Il était **tellement** las **qu'il** dormit._ |
 
 ::: exemple classer « Il était si fatigué qu'il s'endormit en classe. »
 
@@ -637,8 +637,8 @@ Tu croiseras dans tes lectures deux tours que le manuel de 9e n'enseigne pas. Il
 reconnaître ; ils ne sont pas évalués.
 
 > 🚀 _« Après qu'il **eut vaincu**, la foule l'acclama »_ : _eut vaincu_ est un **passé
-> antérieur**, temps littéraire du récit. _« \**Bien qu'\**il **soit** blessé, il continue »_ et
-> _« \**Même s'\**il pleut, il partira »_ expriment la **concession** : un obstacle qui n'empêche
+> antérieur**, temps littéraire du récit. _« **Bien qu'il** **soit** blessé, il continue »_ et
+> _« **Même s'il** pleut, il partira »_ expriment la **concession** : un obstacle qui n'empêche
 > rien.
 
 > 🏆 Tu maîtrises maintenant la phrase complexe : principale, relative, complétive et

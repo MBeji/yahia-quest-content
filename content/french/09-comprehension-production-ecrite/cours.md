@@ -425,13 +425,13 @@ contraire : la thèse vient alors **après** l'articulateur d'opposition.
 :::
 
 ::: verifie
-_« On croit souvent que l'argent fait le bonheur. Or les plus heureux sont rarement les plus
+_« On croit souvent que l'argent fait le bonheur. Pourtant, les plus heureux sont rarement les plus
 riches. »_ Quelle est la thèse ?
 
 ---
 
 **L'argent ne fait pas le bonheur.** La première phrase rapporte l'opinion **combattue** ;
-l'articulateur _or_ annonce le point de vue de l'auteur.
+l'articulateur _pourtant_ annonce le point de vue de l'auteur.
 :::
 
 ::: retenir
@@ -458,7 +458,7 @@ arguments. On dit aussi « connecteurs ».
 | **Conséquence**             | donc, si bien que, c'est pourquoi                 |
 | **Addition**                | de plus, en outre, par ailleurs                   |
 | **Énumération, classement** | d'abord, ensuite, d'une part, d'autre part, enfin |
-| **Opposition**              | mais, pourtant, cependant, or                     |
+| **Opposition**              | mais, pourtant, cependant                         |
 | **Exemple**                 | par exemple, ainsi                                |
 
 ::: exemple suivre un raisonnement par ses articulateurs
