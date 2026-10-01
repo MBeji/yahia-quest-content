@@ -16,8 +16,16 @@
     {
       "prompt": "Combien de fois est-il conseillé de lire le texte avant de répondre aux questions ?",
       "options": [
-        { "id": "a", "text": "Une seule fois, en diagonale." },
-        { "id": "b", "text": "Jamais : il faut lire directement les questions." },
+        {
+          "id": "a",
+          "text": "Une seule fois, en diagonale.",
+          "misconceptionTag": "fr.lecture.demarche-desordre"
+        },
+        {
+          "id": "b",
+          "text": "Jamais : il faut lire directement les questions.",
+          "misconceptionTag": "fr.lecture.demarche-desordre"
+        },
         { "id": "c", "text": "Deux fois, la seconde en soulignant les indices." },
         { "id": "d", "text": "Cinq fois au minimum, mot à mot." }
       ],
@@ -28,10 +36,22 @@
     {
       "prompt": "Pour répondre par écrit à une question de compréhension, quelle est la première étape de la démarche du manuel ?",
       "options": [
-        { "id": "a", "text": "Rédiger aussitôt la réponse, de mémoire." },
-        { "id": "b", "text": "Recopier le passage le plus long du texte." },
+        {
+          "id": "a",
+          "text": "Rédiger aussitôt la réponse, de mémoire.",
+          "misconceptionTag": "fr.lecture.demarche-desordre"
+        },
+        {
+          "id": "b",
+          "text": "Recopier le passage le plus long du texte.",
+          "misconceptionTag": "fr.lecture.reponse-non-redigee"
+        },
         { "id": "c", "text": "Analyser la question et ses mots-clés." },
-        { "id": "d", "text": "Relire sa réponse pour en corriger les fautes." }
+        {
+          "id": "d",
+          "text": "Relire sa réponse pour en corriger les fautes.",
+          "misconceptionTag": "fr.lecture.demarche-desordre"
+        }
       ],
       "correctOption": "c",
       "explanation": "La démarche du manuel commence par l'analyse de la question : repérer ses mots-clés et saisir exactement la tâche demandée. Viennent ensuite la relecture du texte, l'organisation des éléments, la rédaction, puis la relecture de la réponse — qui est donc la dernière étape, pas la première. Rédiger de mémoire ou recopier un long passage, c'est sauter l'analyse.",
@@ -77,7 +97,11 @@
       "prompt": "Lisez cette phrase au discours direct :\n\n« Le professeur déclara : “Vous avez bien travaillé.” »\n\nQuelle est la transposition correcte au discours indirect ?",
       "options": [
         { "id": "a", "text": "Le professeur déclara qu'ils avaient bien travaillé." },
-        { "id": "b", "text": "Le professeur déclara : ils ont bien travaillé." },
+        {
+          "id": "b",
+          "text": "Le professeur déclara : ils ont bien travaillé.",
+          "misconceptionTag": "fr.discours.deux-discours-melanges"
+        },
         { "id": "c", "text": "Le professeur déclara qu'avez-vous donc bien travaillé ?" },
         { "id": "d", "text": "Le professeur déclara vous avez bien travaillé." }
       ],

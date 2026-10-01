@@ -11,14 +11,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Le livre papier est condamné à disparaître, remplacé par les écrans."
+          "text": "Le livre papier est condamné à disparaître, remplacé par les écrans.",
+          "misconceptionTag": "fr.lecture.these-opinion-combattue"
         },
-        { "id": "b", "text": "Il faut interdire les livres numériques." },
+        {
+          "id": "b",
+          "text": "Il faut interdire les livres numériques.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
         {
           "id": "c",
           "text": "Le livre papier garde toute sa valeur et coexiste avec le numérique."
         },
-        { "id": "d", "text": "Les écrans sont toujours meilleurs que le papier." }
+        {
+          "id": "d",
+          "text": "Les écrans sont toujours meilleurs que le papier.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        }
       ],
       "correctOption": "c",
       "explanation": "La dernière phrase l'énonce : le papier « n'est donc pas un objet du passé » et reste, « à côté du numérique, un compagnon fidèle » — il garde sa valeur et coexiste avec le numérique. L'idée que le livre est condamné est l'opinion que l'auteur rejette (« C'est aller un peu vite ») ; le texte ne propose aucune interdiction et ne dit pas que les écrans sont meilleurs.",
@@ -27,11 +36,16 @@
     {
       "prompt": "Lisez le texte :\n\n« Certains pensent que le livre papier va bientôt disparaître au profit des écrans. C'est aller un peu vite. Un livre ne s'éteint jamais faute de batterie ; il se prête, s'annote, se transmet d'une génération à l'autre. “Je garde encore les romans de mon père”, confiait récemment une lectrice. Le papier n'est donc pas un objet du passé : il reste, à côté du numérique, un compagnon fidèle de la lecture. »\n\nQuel est le rôle de la phrase « Certains pensent que le livre papier va bientôt disparaître au profit des écrans » ?",
       "options": [
-        { "id": "a", "text": "C'est la thèse que défend l'auteur." },
+        {
+          "id": "a",
+          "text": "C'est la thèse que défend l'auteur.",
+          "misconceptionTag": "fr.lecture.these-opinion-combattue"
+        },
         { "id": "b", "text": "C'est le point de vue contraire, auquel l'auteur s'oppose." },
         {
           "id": "c",
-          "text": "C'est un argument que l'auteur avance pour appuyer sa propre thèse."
+          "text": "C'est un argument que l'auteur avance pour appuyer sa propre thèse.",
+          "misconceptionTag": "fr.argu.argument-contraire-a-la-these"
         },
         { "id": "d", "text": "C'est la conclusion qui résume tout le texte." }
       ],
@@ -46,10 +60,15 @@
           "id": "a",
           "text": "Une lectrice confiait qu'elle gardait encore les romans de son père."
         },
-        { "id": "b", "text": "Une lectrice confiait que je garde encore les romans de mon père." },
+        {
+          "id": "b",
+          "text": "Une lectrice confiait que je garde encore les romans de mon père.",
+          "misconceptionTag": "fr.discours.pronoms-non-transposes"
+        },
         {
           "id": "c",
-          "text": "Une lectrice confiait : elle gardait encore les romans de son père."
+          "text": "Une lectrice confiait : elle gardait encore les romans de son père.",
+          "misconceptionTag": "fr.discours.deux-discours-melanges"
         },
         {
           "id": "d",
@@ -63,7 +82,11 @@
     {
       "prompt": "Lisez le texte :\n\n« Certains pensent que le livre papier va bientôt disparaître au profit des écrans. C'est aller un peu vite. Un livre ne s'éteint jamais faute de batterie ; il se prête, s'annote, se transmet d'une génération à l'autre. “Je garde encore les romans de mon père”, confiait récemment une lectrice. Le papier n'est donc pas un objet du passé : il reste, à côté du numérique, un compagnon fidèle de la lecture. »\n\nOn réécrit une phrase du texte : « Un livre, qui ne s'éteint jamais faute de batterie, se prête et se transmet. » Quelle est la nature de la proposition « qui ne s'éteint jamais faute de batterie » ?",
       "options": [
-        { "id": "a", "text": "Une subordonnée complétive, COD du verbe « se prête »." },
+        {
+          "id": "a",
+          "text": "Une subordonnée complétive, COD du verbe « se prête ».",
+          "misconceptionTag": "fr.subord.completive-relative-confondues"
+        },
         { "id": "b", "text": "Une subordonnée circonstancielle de but." },
         { "id": "c", "text": "Une proposition indépendante coordonnée." },
         { "id": "d", "text": "Une subordonnée relative, expansion du nom « livre »." }
@@ -75,7 +98,11 @@
     {
       "prompt": "Lisez le texte :\n\n« Certains pensent que le livre papier va bientôt disparaître au profit des écrans. C'est aller un peu vite. Un livre ne s'éteint jamais faute de batterie ; il se prête, s'annote, se transmet d'une génération à l'autre. “Je garde encore les romans de mon père”, confiait récemment une lectrice. Le papier n'est donc pas un objet du passé : il reste, à côté du numérique, un compagnon fidèle de la lecture. »\n\nDans la dernière phrase, l'expression « un compagnon fidèle de la lecture » est employée au sens figuré. Que veut dire l'auteur ?",
       "options": [
-        { "id": "a", "text": "Le livre est une personne qui accompagne réellement le lecteur." },
+        {
+          "id": "a",
+          "text": "Le livre est une personne qui accompagne réellement le lecteur.",
+          "misconceptionTag": "fr.lexique.sens-figure-lu-au-propre"
+        },
         { "id": "b", "text": "Le livre trahit souvent ceux qui le lisent." },
         { "id": "c", "text": "Le livre est un animal domestique." },
         { "id": "d", "text": "Le livre reste un objet sur lequel on peut compter." }
@@ -88,9 +115,21 @@
       "prompt": "Vous voulez ajouter au texte un argument qui appuie la thèse de l'auteur. Quelle phrase convient ?",
       "options": [
         { "id": "a", "text": "De plus, un livre ne fatigue pas les yeux comme un écran." },
-        { "id": "b", "text": "En effet, beaucoup de jeunes lisent désormais sur leur téléphone." },
-        { "id": "c", "text": "Donc, les livres encombrent les étagères de toutes les maisons." },
-        { "id": "d", "text": "Par exemple, une liseuse contient des centaines de romans." }
+        {
+          "id": "b",
+          "text": "En effet, beaucoup de jeunes lisent désormais sur leur téléphone.",
+          "misconceptionTag": "fr.argu.argument-contraire-a-la-these"
+        },
+        {
+          "id": "c",
+          "text": "Donc, les livres encombrent les étagères de toutes les maisons.",
+          "misconceptionTag": "fr.argu.argument-contraire-a-la-these"
+        },
+        {
+          "id": "d",
+          "text": "Par exemple, une liseuse contient des centaines de romans.",
+          "misconceptionTag": "fr.argu.argument-contraire-a-la-these"
+        }
       ],
       "correctOption": "a",
       "explanation": "« De plus » ajoute un argument, et celui-ci confirme la thèse (le livre papier garde sa valeur) : il ne fatigue pas les yeux. Les jeunes qui lisent sur téléphone et la liseuse aux centaines de romans appuient plutôt le numérique : ils infirment la thèse ; « Donc, les livres encombrent… » tire une conséquence défavorable au papier.",

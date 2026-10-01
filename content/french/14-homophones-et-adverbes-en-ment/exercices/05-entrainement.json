@@ -10,9 +10,17 @@
       "prompt": "Quels mots complètent la phrase : « Les joueuses savent … ont gagné et … récompense les attend. » ?",
       "options": [
         { "id": "a", "text": "qu'elles / quelle" },
-        { "id": "b", "text": "quelles / qu'elle" },
+        {
+          "id": "b",
+          "text": "quelles / qu'elle",
+          "misconceptionTag": "fr.homophone.quel-qu-elle"
+        },
         { "id": "c", "text": "qu'elle / quelle" },
-        { "id": "d", "text": "qu'elles / qu'elle" }
+        {
+          "id": "d",
+          "text": "qu'elles / qu'elle",
+          "misconceptionTag": "fr.homophone.quel-qu-elle"
+        }
       ],
       "correctOption": "a",
       "explanation": "« savent qu'elles ont gagné » : on peut dire « qu'ils ont gagné », c'est « que » + le pronom sujet « elles », au pluriel comme « les joueuses ». « quelle récompense » : « qu'il récompense » ne veut rien dire ici, le mot se rattache au nom « récompense » (féminin singulier). « qu'elle » oublie le pluriel du pronom ; « quelles » se trompe d'homophone devant le verbe ; « qu'elle récompense » prend le nom pour un verbe.",
@@ -22,9 +30,21 @@
       "prompt": "Quelle correction faut-il apporter à « Quant on veut, on peut » ?",
       "options": [
         { "id": "a", "text": "« Quand », car on peut dire « lorsqu'on veut »" },
-        { "id": "b", "text": "« Qu'en », car on peut dire « que on en veut »" },
-        { "id": "c", "text": "« Quant à », car « quant » est suivi de « à »" },
-        { "id": "d", "text": "Aucune, car « quant » marque ici le temps" }
+        {
+          "id": "b",
+          "text": "« Qu'en », car on peut dire « que on en veut »",
+          "misconceptionTag": "fr.homophone.quand-quant-qu-en"
+        },
+        {
+          "id": "c",
+          "text": "« Quant à », car « quant » est suivi de « à »",
+          "misconceptionTag": "fr.homophone.quand-quant-qu-en"
+        },
+        {
+          "id": "d",
+          "text": "Aucune, car « quant » marque ici le temps",
+          "misconceptionTag": "fr.homophone.quand-quant-qu-en"
+        }
       ],
       "correctOption": "a",
       "explanation": "La phrase exprime un moment : on peut dire « Lorsqu'on veut, on peut » → « Quand ». « Quant » n'existe que dans « quant à, au, aux » (= en ce qui concerne) et ne marque jamais le temps ; « Quant à on veut » n'a aucun sens ; « qu'en » (que + en) ne correspond à rien ici.",
@@ -33,10 +53,24 @@
     {
       "prompt": "Pourquoi écrit-on « sans » dans « Il est entré sans frapper » ?",
       "options": [
-        { "id": "a", "text": "C'est le pronom « se » suivi de « en »" },
-        { "id": "b", "text": "C'est une préposition d'absence devant un infinitif" },
-        { "id": "c", "text": "C'est un pronom réfléchi devant un verbe conjugué" },
-        { "id": "d", "text": "C'est une conjonction de subordination qui marque le temps" }
+        {
+          "id": "a",
+          "text": "C'est le pronom « se » suivi de « en »",
+          "misconceptionTag": "fr.homophone.s-en-sans"
+        },
+        {
+          "id": "b",
+          "text": "C'est une préposition d'absence devant un infinitif"
+        },
+        {
+          "id": "c",
+          "text": "C'est un pronom réfléchi devant un verbe conjugué",
+          "misconceptionTag": "fr.homophone.s-en-sans"
+        },
+        {
+          "id": "d",
+          "text": "C'est une conjonction de subordination qui marque le temps"
+        }
       ],
       "correctOption": "b",
       "explanation": "« Sans » est une préposition qui exprime l'absence (il n'a pas frappé) ; elle précède ici l'infinitif « frapper », et ne change pas avec la personne (« je suis entré sans frapper »). « se + en » et « pronom réfléchi », c'est « s'en », suivi d'un verbe conjugué ; marquer le temps, c'est le rôle de « quand ».",
@@ -45,7 +79,11 @@
     {
       "prompt": "L'alpiniste grimpait (hardi) … sur la paroi glacée. Comment s'écrit l'adverbe tiré de l'adjectif ?",
       "options": [
-        { "id": "a", "text": "hardiement" },
+        {
+          "id": "a",
+          "text": "hardiement",
+          "misconceptionTag": "fr.adverbe.e-feminin-garde"
+        },
         { "id": "b", "text": "hardîment" },
         { "id": "c", "text": "hardiment" },
         { "id": "d", "text": "hardimment" }
@@ -57,9 +95,17 @@
     {
       "prompt": "Quels adverbes complètent la phrase : « Le jury a entendu … (récent) ce violoniste et l'a jugé … (sévère). » ?",
       "options": [
-        { "id": "a", "text": "récentement / sévèrement" },
+        {
+          "id": "a",
+          "text": "récentement / sévèrement",
+          "misconceptionTag": "fr.adverbe.ant-ent-mal-forme"
+        },
         { "id": "b", "text": "récemment / sévérement" },
-        { "id": "c", "text": "récamment / sévèrement" },
+        {
+          "id": "c",
+          "text": "récamment / sévèrement",
+          "misconceptionTag": "fr.adverbe.ant-ent-mal-forme"
+        },
         { "id": "d", "text": "récemment / sévèrement" }
       ],
       "correctOption": "d",
@@ -70,9 +116,21 @@
       "prompt": "Quels mots complètent la phrase : « … joie ! Ma sœur dit … ira au concert … avoir peur. » ?",
       "options": [
         { "id": "a", "text": "Quelle / qu'elle / sans" },
-        { "id": "b", "text": "Qu'elle / quelle / sans" },
-        { "id": "c", "text": "Quelle / qu'elle / s'en" },
-        { "id": "d", "text": "Quel / qu'elle / sans" }
+        {
+          "id": "b",
+          "text": "Qu'elle / quelle / sans",
+          "misconceptionTag": "fr.homophone.quel-qu-elle"
+        },
+        {
+          "id": "c",
+          "text": "Quelle / qu'elle / s'en",
+          "misconceptionTag": "fr.homophone.s-en-sans"
+        },
+        {
+          "id": "d",
+          "text": "Quel / qu'elle / sans",
+          "misconceptionTag": "fr.accord.quel-mal-accorde"
+        }
       ],
       "correctOption": "a",
       "explanation": "« Quelle joie ! » : adjectif exclamatif rattaché au nom « joie » (féminin singulier). « dit qu'elle ira » : on peut dire « qu'il ira », c'est « que » + « elle », sujet de « ira ». « sans avoir peur » : préposition d'absence devant l'infinitif « avoir ». « Quel » oublie le féminin ; inverser « quelle » et « qu'elle » confond les homophones ; « s'en avoir » met un pronom réfléchi devant un verbe qui n'est pas pronominal.",

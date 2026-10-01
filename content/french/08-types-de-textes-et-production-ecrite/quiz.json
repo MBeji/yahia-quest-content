@@ -17,7 +17,11 @@
       "prompt": "Dans le schéma narratif, quel élément rompt l'équilibre initial et déclenche l'histoire ?",
       "options": [
         { "id": "a", "text": "La résolution du problème" },
-        { "id": "b", "text": "Les péripéties" },
+        {
+          "id": "b",
+          "text": "Les péripéties",
+          "misconceptionTag": "fr.recit.element-modificateur"
+        },
         { "id": "c", "text": "L'élément modificateur" },
         { "id": "d", "text": "La situation finale" }
       ],
@@ -28,7 +32,11 @@
     {
       "prompt": "Dans un récit au passé, à quel temps est le plus souvent écrit un passage descriptif ?",
       "options": [
-        { "id": "a", "text": "Le passé simple" },
+        {
+          "id": "a",
+          "text": "Le passé simple",
+          "misconceptionTag": "fr.temps.passe-simple-imparfait"
+        },
         { "id": "b", "text": "L'imparfait" },
         { "id": "c", "text": "Le futur simple" },
         { "id": "d", "text": "Le subjonctif présent" }
@@ -40,10 +48,22 @@
     {
       "prompt": "Quel articulateur logique exprime une relation de conséquence ?",
       "options": [
-        { "id": "a", "text": "cependant" },
-        { "id": "b", "text": "par exemple" },
+        {
+          "id": "a",
+          "text": "cependant",
+          "misconceptionTag": "fr.logique.rapport-logique-confondu"
+        },
+        {
+          "id": "b",
+          "text": "par exemple",
+          "misconceptionTag": "fr.logique.rapport-logique-confondu"
+        },
         { "id": "c", "text": "donc" },
-        { "id": "d", "text": "auparavant" }
+        {
+          "id": "d",
+          "text": "auparavant",
+          "misconceptionTag": "fr.logique.rapport-logique-confondu"
+        }
       ],
       "correctOption": "c",
       "explanation": "« donc » (comme « si bien que », « c'est pourquoi ») introduit une conséquence. « cependant » exprime l'opposition, « par exemple » introduit une illustration, et « auparavant » situe dans le temps.",
@@ -52,7 +72,7 @@
     {
       "prompt": "Dans un texte narratif, quel temps est principalement utilisé pour les actions ponctuelles qui font avancer le récit ?",
       "options": [
-        { "id": "a", "text": "L'imparfait" },
+        { "id": "a", "text": "L'imparfait", "misconceptionTag": "fr.temps.passe-simple-imparfait" },
         { "id": "b", "text": "Le présent de vérité générale" },
         { "id": "c", "text": "Le plus-que-parfait" },
         { "id": "d", "text": "Le passé simple" }
