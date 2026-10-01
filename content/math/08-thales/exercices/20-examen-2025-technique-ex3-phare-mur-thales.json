@@ -1,0 +1,189 @@
+{
+  "title": "🏛️ مناظرة 2025 (تقني) · التمرين 3 ⭐⭐: أضواء سيّارة قُبالة جدار — طاليس وحساب طول في حالتين",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 20,
+  "questions": [
+    {
+      "prompt": "توضع سيّارة قُبالة جدار كما في الرسم التالي ، وهو غير مرسوم بمقياس الرسم. النقطة P مركز الإضاءة ، والمدى MH هو ما يبلغه الضوء على الأرض لو غاب الجدار ، والنقاط M و A و H على استقامة واحدة ، والمستقيمان (AB) و (PH) عموديان على (MH) ، ووحدة الطول هي الصنتمتر.\nAH = 300 ، PH = 60\nإذا كان MH = 3000 فما طول MA ؟\n<svg viewBox=\"0 0 330 224\"><title>رسم غير مقيس : سيّارة قُبالة جدار ، P مركز الإضاءة و H على الأرض تحت P و A عند أسفل الجدار و B على الجدار ، والشعاع الضوئي يخرج من P ويمرّ من B ثمّ يبلغ الأرض في M</title><path d=\"M4 186 L176 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M200 186 L312 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M182 194 L188 178 M192 194 L198 178\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"130\" y=\"52\" width=\"14\" height=\"134\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M130 70 L144 62 M130 92 L144 84 M130 114 L144 106 M130 136 L144 128 M130 158 L144 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><path d=\"M14 170 L14 150 Q14 140 26 138 L34 122 Q37 116 44 116 L54 116 Q58 116 58 121 L60 138 Q60 142 60 148 L60 170 Z\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"28\" cy=\"176\" r=\"9\" fill=\"#0f172a\"/><circle cx=\"50\" cy=\"176\" r=\"9\" fill=\"#0f172a\"/><path d=\"M60 148 L60 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130 186 L130 159.08\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 148 L130 159.08\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130 159.08 L300 186\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M60 177 L69 177 L69 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130 177 L139 177 L139 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"148\" r=\"4.4\"/><circle cx=\"60\" cy=\"186\" r=\"4.4\"/><circle cx=\"130\" cy=\"186\" r=\"4.4\"/><circle cx=\"130\" cy=\"159.08\" r=\"4.4\"/><circle cx=\"300\" cy=\"186\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"76\" y=\"140\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"58\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"126\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"154\" y=\"151.08\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"302\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "300",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "2700"
+        },
+        {
+          "id": "c",
+          "text": "2940"
+        },
+        {
+          "id": "d",
+          "text": "3300",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "النقطة A تقع بين M و H على المستقيم (MH) ، فـ MA = MH − AH = 3000 − 300 = 2700 ✓. الخطأ الشائع: جمع الطولين بدل طرحهما فنجد 3000 + 300 = 3300 ؛ أو الاكتفاء بالمعطى AH فنجد 300 ؛ أو طرح PH بدل AH فنجد 3000 − 60 = 2940.",
+      "difficulty": 1,
+      "competencies": [
+        "math.mes.perimetres",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "في رسم السيّارة والجدار ، وهو غير مرسوم بمقياس الرسم ، المستقيمان (AB) و (PH) عموديان على (MH) ، فما الوضعيّة النسبيّة للمستقيمين (AB) و (PH) ، مع تعليلها ؟\n<svg viewBox=\"0 0 330 224\"><title>رسم غير مقيس : سيّارة قُبالة جدار ، P مركز الإضاءة و H على الأرض تحت P و A عند أسفل الجدار و B على الجدار ، والشعاع الضوئي يخرج من P ويمرّ من B ثمّ يبلغ الأرض في M</title><path d=\"M4 186 L176 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M200 186 L312 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M182 194 L188 178 M192 194 L198 178\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"130\" y=\"52\" width=\"14\" height=\"134\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M130 70 L144 62 M130 92 L144 84 M130 114 L144 106 M130 136 L144 128 M130 158 L144 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><path d=\"M14 170 L14 150 Q14 140 26 138 L34 122 Q37 116 44 116 L54 116 Q58 116 58 121 L60 138 Q60 142 60 148 L60 170 Z\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"28\" cy=\"176\" r=\"9\" fill=\"#0f172a\"/><circle cx=\"50\" cy=\"176\" r=\"9\" fill=\"#0f172a\"/><path d=\"M60 148 L60 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130 186 L130 159.08\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 148 L130 159.08\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130 159.08 L300 186\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M60 177 L69 177 L69 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130 177 L139 177 L139 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"148\" r=\"4.4\"/><circle cx=\"60\" cy=\"186\" r=\"4.4\"/><circle cx=\"130\" cy=\"186\" r=\"4.4\"/><circle cx=\"130\" cy=\"159.08\" r=\"4.4\"/><circle cx=\"300\" cy=\"186\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"76\" y=\"140\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"58\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"126\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"154\" y=\"151.08\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"302\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متوازيان ، لأنّ كلًّا منهما عمودي على (MH)"
+        },
+        {
+          "id": "b",
+          "text": "متعامدان ، لأنّ كلًّا منهما عمودي على (MH)",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
+        {
+          "id": "c",
+          "text": "متقاطعان ، لأنّ كلًّا من (AB) و (PH) يقطع الشعاع الضوئي (PM)"
+        },
+        {
+          "id": "d",
+          "text": "لا يمكن تحديد وضعيّتهما لأنّ الرسم غير مرسوم بمقياس الرسم"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(AB) عمودي على (MH) و (PH) عمودي على (MH) ، والمستقيمان العموديان على مستقيم واحد متوازيان ، فـ (AB) ∥ (PH) ✓ ، وهو ما يبيّنه الرسم أيضًا : كلاهما شاقولي. الخطأ الشائع: الاعتقاد بأنّ المستقيمين العموديين على مستقيم واحد متعامدان ، والصحيح أنّهما متوازيان ؛ أو الحكم بالتقاطع لمجرّد أنّ كلًّا منهما يقطع الشعاع (PM) ؛ أو الامتناع عن الحكم بحجّة أنّ الرسم غير مقيس ، مع أنّ التوازي يُستنتج من المعطيات لا من القياس.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "المستقيمان (AB) و (PH) عموديان على (MH) ، والنقطة A من [MH] والنقطة B من [MP] ، فأيّ مساواة بين النسب تعطيها نظرية طاليس في المثلّث MHP ؟\n<svg viewBox=\"0 0 330 224\"><title>رسم غير مقيس : سيّارة قُبالة جدار ، P مركز الإضاءة و H على الأرض تحت P و A عند أسفل الجدار و B على الجدار ، والشعاع الضوئي يخرج من P ويمرّ من B ثمّ يبلغ الأرض في M</title><path d=\"M4 186 L176 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M200 186 L312 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M182 194 L188 178 M192 194 L198 178\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"130\" y=\"52\" width=\"14\" height=\"134\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M130 70 L144 62 M130 92 L144 84 M130 114 L144 106 M130 136 L144 128 M130 158 L144 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><path d=\"M14 170 L14 150 Q14 140 26 138 L34 122 Q37 116 44 116 L54 116 Q58 116 58 121 L60 138 Q60 142 60 148 L60 170 Z\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><circle cx=\"28\" cy=\"176\" r=\"9\" fill=\"#0f172a\"/><circle cx=\"50\" cy=\"176\" r=\"9\" fill=\"#0f172a\"/><path d=\"M60 148 L60 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130 186 L130 159.08\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 148 L130 159.08\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130 159.08 L300 186\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M60 177 L69 177 L69 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130 177 L139 177 L139 186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"148\" r=\"4.4\"/><circle cx=\"60\" cy=\"186\" r=\"4.4\"/><circle cx=\"130\" cy=\"186\" r=\"4.4\"/><circle cx=\"130\" cy=\"159.08\" r=\"4.4\"/><circle cx=\"300\" cy=\"186\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"76\" y=\"140\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"58\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"126\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"154\" y=\"151.08\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"302\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "MA/AH = AB/PH",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "b",
+          "text": "MA/MH = PH/AB",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "MA/AH = PH/AB"
+        },
+        {
+          "id": "d",
+          "text": "MA/MH = AB/PH"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(AB) و (PH) عموديان على (MH) فهما متوازيان ؛ و M و A و H على استقامة واحدة وكذلك M و B و P ، فنحن في وضعية طاليس ورأسها M : المثلّث الصغير MAB والمثلّث الكبير MHP ، وتعطي النظرية MA/MH = MB/MP = AB/PH ✓ : كلّ نسبة جزء على كلّ انطلاقًا من M. الخطأ الشائع: وضع MA على القطعة المتبقّية AH بدل القطعة الكاملة MH ؛ أو قلب إحدى النسبتين ؛ أو جمع الخطأين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ MA = 2700 و MH = 3000 ، فما قيمة النسبة MA/MH بعد الاختزال ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/10",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "9/10"
+        },
+        {
+          "id": "c",
+          "text": "11/10",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "10/9",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نقسم البسط والمقام على 300 : MA/MH = 2700/3000 = 9/10 ✓ ، وهي نسبة جزء على كلّ فهي أصغر من 1. الخطأ الشائع: كتابة النسبة AH/MH = 300/3000 = 1/10 ؛ أو قلبها فنجد 10/9 ؛ أو اعتبار MA = MH + AH = 3300 فنجد 3300/3000 = 11/10.",
+      "difficulty": 2,
+      "competencies": [
+        "math.frac.equivalence",
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "تتحقّق المساواة التالية بنظرية طاليس :\nMA/MH = AB/PH\nونعلم أنّ MA = 2700 و MH = 3000 و PH = 60 ، فما طول AB ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "600",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-multipliee-au-lieu-de-divisee"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "540",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "54"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "MA/MH = 2700/3000 = 9/10 ، فـ AB/PH = 9/10 ، ومنه AB = 60 × 9/10 : نقسم 60 على 10 فنجد 6 ثمّ نضرب في 9 فنجد 54 cm ✓. الخطأ الشائع: الاكتفاء بنصف الحساب ، أي القسمة على 10 وحدها فنجد 6 ، أو الضرب في 9 وحده فنجد 540 ؛ أو الضرب في المقام بدل القسمة عليه فنجد 60 × 10 = 600.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.frac.mult-entier"
+      ]
+    },
+    {
+      "prompt": "في وضعيّة سيّارة قُبالة جدار ، النقاط M و A و H على استقامة واحدة والنقطة A بين M و H ، ووحدة الطول هي الصنتمتر. نعلم أنّ :\nMH = 4500 ، AH = 300 ، PH = 60\nوأنّ المساواة التالية صحيحة :\nMA/MH = AB/PH\nفما طول AB ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "54",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "56"
+        },
+        {
+          "id": "d",
+          "text": "64",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "MA = MH − AH = 4500 − 300 = 4200 ، فـ MA/MH = 4200/4500 = 14/15 ، ومنه AB = PH × 14/15 = 60 × 14/15 = 56 cm ✓. الخطأ الشائع: استعمال AH بدل MA فنجد AB = 60 × 300/4500 = 4 ؛ أو إبقاء القيمة 54 المحصّلة عندما كان المدى 3000 كأنّ AB لا تتعلّق بالمدى ؛ أو جمع 300 إلى 4500 فنجد MA = 4800 و AB = 60 × 4800/4500 = 64.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.frac.mult-entier"
+      ]
+    }
+  ]
+}
