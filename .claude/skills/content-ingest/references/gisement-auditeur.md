@@ -104,3 +104,11 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
   chiffres-lettres — : rends-la dans Chromium `dir=rtl`, elle s'affiche brouillée. **Coche ✓** collée
   à un distracteur. **Repère** donné sans orientation (unité seule) : la clé n'est unique que par
   les options.
+- **Titre qui livre une clé** ; **rappel dans l'énoncé** qui reprend la formule de deux options seulement (appariement de mots) ;
+  **échelle** employée sans glose dans l'énoncé, ou glose qui donne k² ; **règle donnée puis application directe** (substitution
+  étiquetée d2) ; **option à deux erreurs** portant une étiquette (elle doit rester muette) ; **étiquette** dont le libellé décrit
+  une croyance voisine sans l'erreur exacte ; **distracteur impossible à obtenir** avec les données de l'énoncé (L15 26 Q5 : un
+  segment absent de la question) ; **figure qui marque la clé** (pointillé, point, diagonale tracée) ; **équation « 3 − 2x = … »
+  ou lettre à apostrophe (« M' »)** dans une phrase arabe : rends-les dans Chromium, elles s'affichent brouillées.
+- **Ton propre correctif** (rappel) : sur cinq lots de suite, un texte de remplacement fourni par l'audit a été retrouvé défectueux
+  à la re-vérification : vérifie-le par script ET dans Chromium avant de l'écrire.

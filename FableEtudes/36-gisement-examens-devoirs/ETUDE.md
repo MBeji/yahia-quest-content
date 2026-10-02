@@ -335,3 +335,22 @@ finie ; un doute de droits sur un document ⇒ il sort de l'échantillon, sans d
   garde `content-audit` (issue privé#614) est rouge depuis 01 h 13 UTC — jeton
   `CLAUDE_CODE_OAUTH_TOKEN` invalide ; les lots s'en passent, l'audit en aveugle de chaque lot
   étant rendu par un sous-agent opus de la session avant la fusion.
+- **2026-10-02 (matin) — Quatre lots de plus en production : 104 missions d'examen de maths 9ᵉ ;
+  la SVT 9ᵉ entre au registre.** Les lots L15 (chapitre 18, privé#622), L13 (chapitre 09,
+  privé#624), L09 (chapitre 12, privé#626) et L18 (chapitre 20, privé#628) sont publiés et
+  vérifiés sur les trois étapes d'`apply-content.yml`, puis sur `content-drift.yml` : le registre du
+  couple compte 104 missions d'examen (99 marquées `publiee`, les cinq du lot L18 publiées le
+  matin même et à basculer), 56 de devoirs et 6 d'écart. Restent au plan 32 missions d'examen
+  (lots L14, L16, L17, L20, L21 et L22), dont trois lots en écriture. Les audits de ces lots ont
+  encore nourri le moteur : la carte de donjon s'oriente par la langue du contenu et non plus par
+  la seule couleur de la matière (arena#1149), les équations ouvertes par un coefficient
+  (« 3 − 2x = x − 3 ») et les lettres à apostrophe (« M' ») s'isolent (arena#1150), la coche « ✓ »
+  finale reste hors de l'isolat de la formule (arena#1152 : 785 plages dans 189 fichiers publiés).
+  **SVT 9ᵉ** : les six sessions lues (2020 à 2026) sont versionnées avec leurs 27 lignes
+  anonymes et leurs six documents passés à « lu » (privé#630) ; le premier lot SVT (six
+  missions, 36 questions, chapitres 02, 05 et 07) est écrit et en audit en aveugle. Écueils
+  nouveaux inscrits dans les consignes de l'auteur et de l'auditeur : un titre qui livre une clé,
+  un rappel de règle qui reprend la formule de deux options seulement, une échelle sans glose (ou
+  une glose qui donne k²), une option à deux erreurs qui porte une étiquette, une étiquette voisine
+  mais inexacte, un distracteur impossible à obtenir avec les données, une figure qui marque la
+  clé.
