@@ -48,6 +48,14 @@ distinct sans jamais voir la source.
 Liste machine des examens (sessions, fichiers officiels, empreintes) : [`gisement.json`](./gisement.json).
 L'URL du fichier d'un devoir reste hors git (la fiche pointe la page de liste).
 
+**État de la lecture (lue le 2026-09-29, versionnée le 2026-10-02).** Six sujets d'examen sont lus et
+transcrits : les sessions 2026, 2025, 2024, 2022, 2021 et 2020 (`C01` à `C06`, tous au programme en
+vigueur) — transcriptions sous `programmes-officiels/examens-nationaux/9eme-base/sciences-vie-terre/`,
+et [`lignes.tsv`](./lignes.tsv) en tient une ligne anonyme par exercice (27 lignes ; la colonne des
+chapitres y donne les slugs du manifeste). Les dix-sept autres sessions (`C07` à `C24`, de 2019 à
+2001 : le programme en vigueur se vérifie d'abord) et les six devoirs restent à lire ; la carte, l'écart
+et les mesures ci-dessous s'écrivent quand la lecture est complète.
+
 ## 3. Carte — à la lecture
 
 ## 4. Écart avec le contenu existant — à la lecture
