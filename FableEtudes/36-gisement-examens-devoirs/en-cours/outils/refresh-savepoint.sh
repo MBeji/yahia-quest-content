@@ -6,12 +6,12 @@ SH=/home/user/yahia-quest-content
 cd $SP/wt-sav2 || exit 1
 EC=FableEtudes/36-gisement-examens-devoirs/en-cours
 mkdir -p $EC/plan $EC/audits $EC/etiquettes $EC/outils
-cp $SP/author/exam/assign-L*.md $SP/author/exam/prompt-L*.md $SP/author/exam/prompt-audit-L*.md $SP/author/prompt-G2.md $SP/author/prompt-I.md $EC/plan/ 2>/dev/null
+cp $SP/author/exam/assign-L*.md $SP/author/exam/prompt-L*.md $SP/author/exam/prompt-audit-L*.md $SP/author/exam/prompt-audit-SVT-L*.md $SP/author/prompt-G2.md $SP/author/prompt-I.md $EC/plan/ 2>/dev/null
 cp $SP/gisement/9eme-math/plan-examens-v6.json $EC/plan/
-cp $SP/author/exam/audit-L*.md $SP/author/exam/reverif-L*.md $EC/audits/ 2>/dev/null
+cp $SP/author/exam/audit-L*.md $SP/author/exam/reverif-L*.md $SP/author/exam/audit-SVT-L*.md $SP/author/exam/reverif-SVT-L*.md $EC/audits/ 2>/dev/null; mkdir -p $EC/plan/auditspec && cp $SP/auditspec/*.json $EC/plan/auditspec/ 2>/dev/null
 cp $SP/pending-tags/*.json $EC/etiquettes/
 cp $SP/spec-pub-*.json $SP/mk-pending.py $SP/lint/lot-lint.mjs $SP/fix-L08.py $SP/fix-L10.py $EC/outils/ 2>/dev/null
-cp $SP/add-source-line.py $SP/apply-tags.py $SP/gen-spec-lot.py $SP/gen-exam-assign.py $SP/registre-add.py $SP/registre-docs.py $SP/registre-set.py $SP/deliver-lot.sh $SP/gates-summary.sh $SP/fixlib17.py $SP/widen-labels.py $SP/tags-pass2.py $SP/fix-L07.py $SP/spec-pub-L03L04.json $SP/pass2-notes.md $SP/refresh-savepoint.sh $EC/outils/ 2>/dev/null
+cp $SP/deliver-lot-svt.sh $SP/add-source-line-svt.py $SP/add-source-line.py $SP/apply-tags.py $SP/gen-spec-lot.py $SP/gen-exam-assign.py $SP/registre-add.py $SP/registre-docs.py $SP/registre-set.py $SP/deliver-lot.sh $SP/gates-summary.sh $SP/fixlib17.py $SP/widen-labels.py $SP/tags-pass2.py $SP/fix-L07.py $SP/spec-pub-L03L04.json $SP/pass2-notes.md $SP/refresh-savepoint.sh $EC/outils/ 2>/dev/null
 cp $SH/.claude/skills/content-ingest/references/gisement-auteur-examen.md $SH/.claude/skills/content-ingest/references/gisement-auditeur.md .claude/skills/content-ingest/references/
 # étage de lecture des autres matières de 9e (textes seuls : ni PDF ni rendus)
 G=$SP/gisement
@@ -24,7 +24,7 @@ done
 cp $SP/etat-reprise.md $EC/ETAT-REPRISE.md 2>/dev/null
 mkdir -p $EC/svt && cp $SP/gen-exam-assign-subj.py $SP/gen-prompt-svt.py $EC/outils/ 2>/dev/null; cp $SP/gisement/9eme-svt-plan/plan-examens-v1.json $SP/gisement/9eme-svt-plan/gisement.json $EC/svt/ 2>/dev/null; cp $SP/author/exam/prompt-svt-L*.md $SP/author/exam/assign-svt-L*.md $EC/plan/ 2>/dev/null
 # lots en cours (fichiers d'examen non livrés) : « matière/chapitre NN NN … »
-for spec in "math/12-repere-plan 16 17 18 19 20 21" "math/20-orthogonalite-espace 22 23 24 25 26" "math/09-triangle-rectangle-trigo 36 37 38 39 40 41" "math/03-calcul-litteral 27 28 29 30 31" "sciences-vie-terre/02-al-af3al-al-in3ikasiya 07 08" "sciences-vie-terre/05-al-hadm 07 08" "sciences-vie-terre/07-ad-dawaran 07 08"; do
+for spec in "math/09-triangle-rectangle-trigo 36 37 38 39 40 41" "math/18-quadrilateres 29 30 31 32 33 34 35" "math/03-calcul-litteral 27 28 29 30 31" "sciences-vie-terre/02-al-af3al-al-in3ikasiya 07 08" "sciences-vie-terre/05-al-hadm 07 08" "sciences-vie-terre/07-ad-dawaran 07 08"; do
   set -- $spec; path=$1; shift
   mkdir -p content/$path/exercices
   for nn in "$@"; do

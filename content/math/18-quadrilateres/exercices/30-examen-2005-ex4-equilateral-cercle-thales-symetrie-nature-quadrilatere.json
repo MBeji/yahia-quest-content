@@ -1,0 +1,354 @@
+{
+  "title": "🏛️ مناظرة 2005 · التمرين 4 ⭐⭐⭐⭐: مثلّث متقايس الأضلاع ودائرة قطرها ضلع — طاليس والتناظر المركزي وطبيعة رباعي",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 30,
+  "questions": [
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع طول ضلعه 6 cm، والنقطة O منتصف [BC].\nما طول [AO] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث المتقايس الأضلاع ABC والنقطة O منتصف [BC]</title><polygon points=\"150,34 44.92,216 255.08,216\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 34 L150 216\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M97.46 221.5 L97.46 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M202.54 221.5 L202.54 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"44.92\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"255.08\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"216\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"35.73\" y=\"230.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"264.27\" y=\"230.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"236\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "27",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "3√5",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "3√3"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المثلّث المتقايس الأضلاع ABC الموسّط [AO] هو أيضًا ارتفاع، فالمثلّث AOB قائم في O ووتره [AB] = 6 cm، و OB = BC/2 = 3 cm. بفيثاغورس: AO² = AB² − OB² = 36 − 9 = 27، إذن AO = √27 = 3√3 cm ✓. الخطأ الشائع: جمع المربّعين 36 + 9 = 45 فنجد 3√5؛ أو التوقّف عند AO² = 27؛ أو أخذ AO = OB = 3 بحجّة أنّ O منتصف [BC].",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع، والدائرة التي قطرها [BC] تقطع المستقيم (AB) في النقطتين B وE.\nما طبيعة المثلّث BEC ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABC والدائرة التي قطرها [BC] تقطع (AB) في E</title><circle cx=\"150\" cy=\"152.91\" r=\"67.09\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><polygon points=\"150,36.71 82.91,152.91 217.09,152.91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M217.09 152.91 L116.46 94.81\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"36.71\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"82.91\" cy=\"152.91\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.09\" cy=\"152.91\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"152.91\" r=\"3.4\" fill=\"#0f172a\"/><circle cx=\"116.46\" cy=\"94.81\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"28.71\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"73.72\" y=\"167.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"226.28\" y=\"167.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"171.91\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"103.46\" y=\"99.81\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "قائم الزاوية في E"
+        },
+        {
+          "id": "b",
+          "text": "قائم الزاوية في B"
+        },
+        {
+          "id": "c",
+          "text": "قائم الزاوية في C"
+        },
+        {
+          "id": "d",
+          "text": "متقايس الأضلاع"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "O منتصف [BC] ومركز الدائرة، و E نقطة منها، فـ OE = OB = OC = BC/2 = 3 cm. بعكس خاصيّة الموسّط المتعلّق بالوتر المثلّث BEC قائم في E ووتره القطر [BC]، أي أنّ (EC) عمودي على (EB)، وهو المستقيم (AB) ✓. الخطأ الشائع: وضع الزاوية القائمة في B أو في C، أو الظنّ أنّ BEC متقايس الأضلاع مثل ABC، مع أنّ زاويته في B قيسها 60° وفي E قائمة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع، والنقطة E من المستقيم (AB) حيث (CE) عمودي على (AB).\nلماذا E منتصف [AB] ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABC والمستقيم (CE) العمودي على (AB)</title><polygon points=\"150,34 44.92,216 255.08,216\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M255.08 216 L97.46 125\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M101.96 117.21 L109.76 121.71 L105.26 129.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"44.92\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"255.08\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"97.46\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"35.73\" y=\"230.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"264.27\" y=\"230.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"84.46\" y=\"130\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(CE) ارتفاع المثلّث CAB الصادر من C، وكلّ ارتفاع في أيّ مثلّث يمرّ من منتصف الضلع الذي ينزل عليه",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "b",
+          "text": "AB = AC = BC = 6 cm لأنّ المثلّث ABC متقايس الأضلاع، ومنه AE = BE لأنّ E نقطة من الضلع [AB]"
+        },
+        {
+          "id": "c",
+          "text": "CA = CB فالمثلّث CAB متقايس الضلعين، وفي كلّ مثلّث كهذا يمرّ أيّ مستقيم صادر من رأسه C من منتصف الضلع المقابل",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "CA = CB و (CE) ارتفاع المثلّث CAB الصادر من C، وفي المثلّث المتقايس الضلعين يكون ارتفاع الرأس موسّطًا أيضًا"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المثلّث CAB متقايس الضلعين رأسه C لأنّ CA = CB = 6 cm، والمستقيم (CE) عمودي على (AB) فهو ارتفاعه الصادر من C. وفي المثلّث المتقايس الضلعين يكون الارتفاع الصادر من الرأس موسّطًا أيضًا، إذن E منتصف [AB] ✓. الخطأ الشائع: الاكتفاء بالتعامد وحده أو بتقايس الضلعين وحده: فمستقيم عمودي على [AB] لا يمرّ بالضرورة من منتصفها، ومستقيم مائل صادر من C لا يمرّ منه كذلك.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع طول ضلعه 6 cm، والنقطة O منتصف [BC]، والنقطة E منتصف [AB]، والنقطة F منتصف [OB]، والمستقيم (EF) عمودي على (BC).\nما طول [FE] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABC والنقطتان E منتصف [AB] وF منتصف [OB] مع (EF) عمودي على (BC)</title><polygon points=\"150,34 44.92,216 255.08,216\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M97.46 125 L97.46 216\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M97.46 207 L106.46 207 L106.46 216\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M118.97 76.75 L128.49 82.25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M66.43 167.75 L75.95 173.25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M69.09 221.5 L69.09 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M73.29 221.5 L73.29 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121.63 221.5 L121.63 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M125.83 221.5 L125.83 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"44.92\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"255.08\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"97.46\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"97.46\" cy=\"216\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"35.73\" y=\"230.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"264.27\" y=\"230.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"236\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"84.46\" y=\"130\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"97.46\" y=\"236\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/2",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "3√3/2"
+        },
+        {
+          "id": "c",
+          "text": "3√5/2",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "27/4",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E منتصف [AB] فـ BE = 3 cm، و F منتصف [OB] فـ BF = 1,5 cm، والمثلّث BFE قائم في F ووتره [BE]. بفيثاغورس: FE² = BE² − BF² = 9 − 9/4 = 27/4، إذن FE = √27/2 = 3√3/2 cm ✓. الخطأ الشائع: طرح الطولين 3 − 1,5 = 1,5 بدل طرح مربّعيهما؛ أو جمع المربّعين 9 + 9/4 = 45/4 فنجد 3√5/2؛ أو التوقّف عند FE² = 27/4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABC مثلّث متقايس الأضلاع طول ضلعه 6 cm، والنقطة O منتصف [BC]، والنقطة F منتصف [OB].\nاحسب CF بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABC والنقطتان E منتصف [AB] وF منتصف [OB] مع (EF) عمودي على (BC)</title><polygon points=\"150,34 44.92,216 255.08,216\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M97.46 125 L97.46 216\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M255.08 216 L97.46 216\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M97.46 207 L106.46 207 L106.46 216\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M118.97 76.75 L128.49 82.25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M66.43 167.75 L75.95 173.25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M69.09 221.5 L69.09 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M73.29 221.5 L73.29 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M121.63 221.5 L121.63 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M125.83 221.5 L125.83 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"44.92\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"255.08\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"97.46\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"97.46\" cy=\"216\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"35.73\" y=\"230.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"264.27\" y=\"230.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"236\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"84.46\" y=\"130\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"97.46\" y=\"236\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text></g></svg>",
+      "answerKey": {
+        "value": 4.5,
+        "unit": "cm"
+      },
+      "explanation": "O منتصف [BC] فـ OB = OC = 3 cm، و F منتصف [OB] فـ OF = 1,5 cm. والنقطة O بين F و C على المستقيم (BC)، إذن CF = CO + OF = 3 + 1,5 = 4,5 cm ✓. الخطأ الشائع: طرح OF من CO فنجد 1,5، أو الاكتفاء بـ CO = 3 دون إضافة OF.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع طول ضلعه 6 cm، والنقطة D نظيرة C بالنسبة إلى A.\nلماذا المثلّث BCD قائم في B ؟\n<svg viewBox=\"0 0 300 320\"><title>المثلّث ABC والنقطة D نظيرة C بالنسبة إلى A</title><polygon points=\"150,160 77.25,286 222.75,286\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 160 L77.25 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M77.25 286 L77.25 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M77.25 286 L150 160\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M191.14 220.25 L181.61 225.75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M118.39 94.25 L108.86 99.75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"160\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"77.25\" cy=\"286\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"222.75\" cy=\"286\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"77.25\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"159.19\" y=\"155.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"68.06\" y=\"300.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"231.94\" y=\"300.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"77.25\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "A منتصف [CD] فالمستقيم (BA) موسّط في المثلّث BCD، والمثلّث الذي يصل فيه موسّط رأسًا بمنتصف الضلع المقابل يكون قائمًا في ذلك الرأس",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "b",
+          "text": "BC = CD/2 حيث BC و CD ضلعان من المثلّث BCD، فبعكس خاصيّة الموسّط المتعلّق بالوتر يكون قائمًا في B",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "المثلّث ABC متقايس الأضلاع، فالمثلّث BCD الذي يشترك معه في الرأسين B وC قائم في B"
+        },
+        {
+          "id": "d",
+          "text": "A منتصف [CD] و AB = CD/2، فبعكس خاصيّة الموسّط المتعلّق بالوتر يكون المثلّث BCD قائمًا في B"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "D نظيرة C بالنسبة إلى A فـ A منتصف [CD]، و AC = AD = 6 cm، إذن CD = 12 cm و AB = 6 cm = CD/2. الموسّط [BA] المتعلّق بالضلع [CD] يساوي نصفه، فبعكس خاصيّة الموسّط المتعلّق بالوتر المثلّث BCD قائم في B ✓. الخطأ الشائع: الاكتفاء بأنّ A منتصف [CD]؛ أو مقارنة ضلع من المثلّث BC بنصف [CD] بدل مقارنة الموسّط [BA] به، ومساواة BC = CD/2 هنا لا تثبت شيئًا؛ أو الاستناد إلى المثلّث ABC وحده دون الموسّط.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع طول ضلعه 6 cm، والنقطة D نظيرة C بالنسبة إلى A، والنقطة I منتصف [BD].\nما طول [AI] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 320\"><title>المثلّث DCB والنقطتان A منتصف [DC] وI منتصف [DB]</title><polygon points=\"77.25,34 222.75,286 77.25,286\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 160 L77.25 160\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 160 L77.25 286\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M191.14 220.25 L181.61 225.75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M118.39 94.25 L108.86 99.75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M82.75 225.1 L71.75 225.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M82.75 220.9 L71.75 220.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M82.75 99.1 L71.75 99.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M82.75 94.9 L71.75 94.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"77.25\" cy=\"286\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"222.75\" cy=\"286\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"77.25\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"160\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"77.25\" cy=\"160\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"163\" y=\"165\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">A</text><text x=\"68.06\" y=\"300.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"231.94\" y=\"300.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"77.25\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"64.25\" y=\"165\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "3√3",
+          "misconceptionTag": "math.geo.droite-des-milieux-mauvais-cote"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "misconceptionTag": "math.geo.droite-des-milieux-mauvais-cote"
+        },
+        {
+          "id": "d",
+          "text": "12",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "D نظيرة C بالنسبة إلى A فـ A منتصف [CD]، و I منتصف [BD]. في المثلّث DCB القطعة [AI] تصل بين منتصفَي ضلعين فهي توازي الضلع الثالث [CB] وطولها نصفه: AI = CB/2 = 6/2 = 3 cm ✓. الخطأ الشائع: أخذ نصف ضلع يمرّ منه أحد المنتصفين، [CD] = 12 فنجد 6 أو [BD] = 6√3 فنجد 3√3؛ أو ضرب الضلع الثالث في 2 فنجد 12.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع، والنقطة O منتصف [BC]، والنقطة E منتصف [AB]، والنقطة F المسقط العمودي للنقطة E على المستقيم (BC).\nلماذا F منتصف [OB] ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABC والنقطة E منتصف [AB] ومسقطها العمودي F على (BC)</title><polygon points=\"150,34 44.92,216 255.08,216\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 34 L150 216\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M97.46 125 L97.46 216\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M97.46 207 L106.46 207 L106.46 216\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M118.97 76.75 L128.49 82.25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M66.43 167.75 L75.95 173.25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"44.92\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"255.08\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"97.46\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"97.46\" cy=\"216\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"35.73\" y=\"230.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"264.27\" y=\"230.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"236\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"84.46\" y=\"130\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"97.46\" y=\"236\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(EF) و (AO) عموديان على (BC) فهما متوازيان، و E منتصف [BA]، فبعكس خاصيّة المنتصفين F منتصف [BO]"
+        },
+        {
+          "id": "b",
+          "text": "E منتصف [BA] في المثلّث BAO والنقطة F من [BO]، والمستقيم المارّ من منتصف ضلع يمرّ من منتصف الضلع الثالث، فـ F منتصف [BO]",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "(EF) ∥ (AO) في المثلّث BAO والنقطة E من [BA]، والمستقيم الموازي لضلع يقطع الضلع الثالث في منتصفه، فـ F منتصف [BO]",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "E منتصف [BA] و F نقطة من [BC] في المثلّث BAO، فبخاصيّة المنتصفين المباشرة يكون F منتصف الضلع [BO]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(EF) ⊥ (BC) و (AO) ⊥ (BC) (لأنّ الموسّط [AO] ارتفاع في المثلّث المتقايس الأضلاع)، إذن (EF) ∥ (AO). وفي المثلّث BAO النقطة E منتصف [BA] والمستقيم (EF) يوازي (AO): بعكس خاصيّة المنتصفين يمرّ (EF) من منتصف الضلع الثالث [BO]، أي F منتصف [BO] ✓. الخطأ الشائع: الاكتفاء بأنّ E منتصف [BA] دون التوازي، أو بالتوازي دون المنتصف (فالموازي لـ (AO) من نقطة أخرى يقطع [BO] في موضع آخر)، أو تطبيق خاصيّة المنتصفين المباشرة وهي تشترط منتصفين معًا.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع، والنقطة E منتصف [AB]، والنقطة F المسقط العمودي للنقطة E على (BC)، والنقطة D نظيرة C بالنسبة إلى A، والمثلّث BCD قائم في B. المستقيمان (CE) و (BD) يتقاطعان في H.\nأيّ الحجج التالية تُثبت إثباتًا سليمًا مساواة بين نسب أطوال في المثلّث CBH ؟\n<svg viewBox=\"0 0 300 320\"><title>المثلّث BCD القائم في B والنقطتان E وF والنقطة H تقاطع (CE) و (BD)</title><polygon points=\"150,160 77.25,286 222.75,286\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M222.75 286 L77.25 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M77.25 202 L77.25 34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M150 160 L77.25 34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M77.25 286 L77.25 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113.63 223 L113.63 286\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M86.25 286 L86.25 277 L77.25 277\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113.63 277 L122.63 277 L122.63 286\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"160\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"77.25\" cy=\"286\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"222.75\" cy=\"286\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"77.25\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"113.63\" cy=\"223\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"113.63\" cy=\"286\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"77.25\" cy=\"202\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"163\" y=\"165\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"68.06\" y=\"300.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"231.94\" y=\"300.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"77.25\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"127.63\" y=\"228\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"113.63\" y=\"306\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text><text x=\"64.25\" y=\"207\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(FE) ∥ (BH) لأنّهما عموديان على (BC)، فبمبرهنة طاليس في المثلّث CBH: CB/CF = FE/BH",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "(FE) ∥ (BH) لأنّهما عموديان على (BC)، فبمبرهنة طاليس في المثلّث CBH: CB/CF = BH/FE"
+        },
+        {
+          "id": "c",
+          "text": "E من [CH] و F من [CB]، فبمبرهنة طاليس في المثلّث CBH: CF/CB = BH/FE"
+        },
+        {
+          "id": "d",
+          "text": "E من [CH] و F من [CB]، فبمبرهنة طاليس في المثلّث CBH: CB/CF = BH/FE",
+          "misconceptionTag": "math.geo.thales-sans-verifier-parallelisme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(FE) ⊥ (BC) لأنّ F المسقط العمودي لـ E على (BC)، و (BH) هو (BD) العمودي على (BC) لأنّ المثلّث BCD قائم في B: مستقيمان عموديان على المستقيم نفسه متوازيان، إذن (FE) ∥ (BH). و F من [CB] و E من [CH]، فنحن في وضعية طاليس للمثلّث CBH: CF/CB = CE/CH = FE/BH، أي CB/CF = BH/FE ✓. الخطأ الشائع: قلب إحدى النسبتين فنجد CB/CF = FE/BH؛ أو تطبيق طاليس بمجرّد وقوع النقطتين على الضلعين دون إثبات التوازي؛ أو الجمع بين الخطأين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع طول ضلعه 6 cm، والنقطة O منتصف [BC]، والنقطة E منتصف [AB]، والنقطة F منتصف [OB] مع (EF) عمودي على (BC). النقطة D نظيرة C بالنسبة إلى A، والنقطة H نقطة تقاطع (CE) و (BD)، ونعلم أنّ:\nCB/CF = BH/FE\nما طول [BH] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 320\"><title>المثلّث ABC والنقاط D وE وF وH كما في الشكل</title><polygon points=\"150,160 77.25,286 222.75,286\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M222.75 286 L77.25 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M77.25 202 L77.25 34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M150 160 L77.25 34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M77.25 286 L77.25 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113.63 223 L113.63 286\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 160 L150 286\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"3 4\"/><path d=\"M86.25 286 L86.25 277 L77.25 277\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113.63 277 L122.63 277 L122.63 286\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93.34 291.5 L93.34 280.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M97.54 291.5 L97.54 280.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M129.71 291.5 L129.71 280.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M133.91 291.5 L133.91 280.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M127.05 188.75 L136.58 194.25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M90.68 251.75 L100.2 257.25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"160\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"77.25\" cy=\"286\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"222.75\" cy=\"286\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"77.25\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"286\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"113.63\" cy=\"223\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"113.63\" cy=\"286\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"77.25\" cy=\"202\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"163\" y=\"165\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"68.06\" y=\"300.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"231.94\" y=\"300.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"77.25\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"306\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"127.63\" y=\"228\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"113.63\" y=\"306\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text><text x=\"64.25\" y=\"207\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9√3/8",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "2√3"
+        },
+        {
+          "id": "c",
+          "text": "(3√3 + 3)/2",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "d",
+          "text": "6√3",
+          "misconceptionTag": "math.geo.position-relative-ignoree"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E منتصف [AB] و F منتصف [OB]: BE = 3 cm و BF = 1,5 cm، والمثلّث BFE قائم في F، فـ FE² = 9 − 9/4 = 27/4، أي FE = 3√3/2 cm. والنقطة O بين F و C، فـ CF = CO + OF = 3 + 1,5 = 4,5 cm. المساواة CB/CF = BH/FE تعطي BH = FE × CB/CF = (3√3/2) × 6/4,5 = 2√3 cm ✓. الخطأ الشائع: قلب النسبة فنجد BH = FE × CF/CB = 9√3/8؛ أو مقارنة الفروق بدل النسب BH − FE = CB − CF فنجد BH = (3√3 + 3)/2؛ أو طرح OF من CO فنجد CF = 1,5 ثمّ BH = 6√3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع طول ضلعه 6 cm، والنقطة E منتصف [AB]، والنقطة D نظيرة C بالنسبة إلى A، والنقطة I منتصف [BD]. المستقيم (AI) يقطع المستقيم (CE) في K.\nما طول [AK] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 300\"><title>المثلّث ABC والنقاط D وE وI وK كما في الشكل</title><polygon points=\"183.49,150 116.51,266 250.46,266\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M183.49 150 L116.51 266\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M116.51 266 L116.51 34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M116.51 34 L250.46 266\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M49.54 150 L183.49 150\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M49.54 150 L250.46 266\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M161.98 176.25 L171.51 181.75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M128.49 234.25 L138.02 239.75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"183.49\" cy=\"150\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"116.51\" cy=\"266\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"250.46\" cy=\"266\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"116.51\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"208\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"116.51\" cy=\"150\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"49.54\" cy=\"150\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"192.68\" y=\"145.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"107.32\" y=\"280.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"259.65\" y=\"280.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"116.51\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"159.9\" y=\"222.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"106.61\" y=\"164.9\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"36.54\" y=\"155\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "2√3",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "6√3",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المثلّث DCB: A منتصف [DC] و I منتصف [DB]، فـ (AI) ∥ (CB)، ومنه (AK) ∥ (BC). المستقيمان (AB) و (CK) يتقاطعان في E و (AK) ∥ (BC): وضعية الفراشة لمبرهنة طاليس برأس E، فـ EA/EB = EK/EC = AK/BC. وبما أنّ E منتصف [AB] فـ EA/EB = 1، ومنه AK = BC = 6 cm ✓. الخطأ الشائع: الوقوف عند I فنجد AI = 3 cm؛ أو إقران EA بـ EC بدل EB فنجد AK = 6 × 3/(3√3) = 2√3؛ أو أخذ القطر [CK] = 6√3 بدل الضلع [AK].",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الأضلاع طول ضلعه 6 cm، والنقطة E منتصف [AB] والمستقيم (CE) عمودي على (AB)، والنقطة K من المستقيم (CE) بحيث E منتصف [CK].\nما أدقّ وصف للرباعي ACBK ؟\n<svg viewBox=\"0 0 300 250\"><title>الرباعي ACBK وقطراه [AB] و [CK] يتقاطعان في E</title><polygon points=\"188.67,58.03 266,191.97 111.33,191.97 34,58.03\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M188.67 58.03 L111.33 191.97\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M266 191.97 L34 58.03\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.5 117.21 L162.29 121.71 L157.79 129.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M164.57 88.76 L174.1 94.26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M125.9 155.74 L135.43 161.24\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M212.57 154.77 L207.07 164.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M208.93 152.67 L203.43 162.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M96.57 87.8 L91.07 97.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M92.93 85.7 L87.43 95.23\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"188.67\" cy=\"58.03\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"111.33\" cy=\"191.97\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"266\" cy=\"191.97\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"34\" cy=\"58.03\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"197.86\" y=\"53.84\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"102.14\" y=\"206.16\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"275.19\" y=\"206.16\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"24.81\" y=\"53.84\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"139.39\" y=\"140.61\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متوازي أضلاع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "b",
+          "text": "مستطيل",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "c",
+          "text": "معيّن"
+        },
+        {
+          "id": "d",
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "[AB] و [CK] قطرا الرباعي ACBK، ولهما المنتصف نفسه E (E منتصف [AB] ومنتصف [CK])، فهو متوازي أضلاع. والقطران متعامدان لأنّ (CE) عمودي على (AB)، فهو معيّن. وليس مربّعًا ولا مستطيلًا لأنّ القطرين غير متقايسين: AB = 6 cm بينما CK = 2 × CE = 2 × 3√3 = 6√3 cm ✓. الخطأ الشائع: الاكتفاء بوصف « متوازي أضلاع » وهو صحيح لكنّه ليس الأدقّ؛ أو نسبة تقايس القطرين إلى المستطيل؛ أو إضافة وصف « مربّع » دون أن يتقايس القطران.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}

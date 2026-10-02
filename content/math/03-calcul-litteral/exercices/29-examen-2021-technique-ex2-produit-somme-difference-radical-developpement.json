@@ -1,0 +1,221 @@
+{
+  "title": "🏛️ مناظرة 2021 (تقني) · التمرين 2 ⭐⭐⭐: جداء عددين، ومجموعهما وفرقهما، وكتابة عدد تحت الجذر، ونشر عبارة بحرفين",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 29,
+  "questions": [
+    {
+      "prompt": "نعتبر العددين الحقيقيّين:\na = 2 + √3\nb = 2 − √3\nننشر الجداء a × b حدًّا بحدّ. أيّ الحسابات التالية صحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 − 2√3 + 2√3 + 3 = 7",
+          "misconceptionTag": "math.int.produit-signes-negatifs"
+        },
+        {
+          "id": "b",
+          "text": "4 − 2√3 + 2√3 − √6 = 4 − √6",
+          "misconceptionTag": "math.num.racine-produit-transforme-en-somme"
+        },
+        {
+          "id": "c",
+          "text": "4 − 2√3 − 2√3 − 3 = 1 − 4√3"
+        },
+        {
+          "id": "d",
+          "text": "4 − 2√3 + 2√3 − 3 = 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ننشر حدًّا بحدّ: (2 + √3)(2 − √3) = 2 × 2 + 2 × (−√3) + √3 × 2 + √3 × (−√3) = 4 − 2√3 + 2√3 − 3 = 1 ✓ لأنّ √3 × √3 = 3 وأنّ الحدّين −2√3 و 2√3 متقابلان فيتلاشيان. الخطأ الشائع إعطاء الجداء √3 × (−√3) إشارة موجبة فيخرج 4 + 3 = 7، مع أنّ جداء عددين مختلفي الإشارة سالب؛ أو كتابة √3 × √3 = √(3 + 3) = √6 بجمع ما تحت الجذرين بدل ضربهما فيخرج 4 − √6؛ أو إعطاء الجداء √3 × 2 إشارة سالبة فلا يتلاشى الحدّان الأوسطان ويخرج 4 − 2√3 − 2√3 − 3 = 1 − 4√3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ليكن العددان:\na = 2 + √3\nb = 2 − √3\nما ناتج جمعهما a + b في أبسط صورة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "4√3",
+          "misconceptionTag": "math.alg.termes-semblables-par-coefficient"
+        },
+        {
+          "id": "d",
+          "text": "4 + 2√3",
+          "misconceptionTag": "math.int.signe-ignore-dans-somme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نجمع الحدّين العدديّين والحدّين الجذريّين كلًّا على حدة: a + b = (2 + √3) + (2 − √3) = (2 + 2) + (√3 − √3) = 4 + 0 = 4 ✓، فالجذران √3 و −√3 متقابلان ويتلاشيان. الخطأ الشائع جمع الأعداد كلّها مع معاملات الجذر كأنّها حدود متشابهة فيخرج (2 + 1 + 2 − 1)√3 = 4√3؛ أو إهمال إشارة الطرح في b فيُعدّ −√3 كأنّه +√3 فيخرج 4 + 2√3؛ أو الظنّ أنّ العددين متقابلان لمجرّد اختلاف إشارة الجذر فيكون مجموعهما 0، والمتقابلان يختلفان في إشارة العدد كلّه لا في إشارة جزء منه.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نطرح العدد b من العدد a ثمّ نختزل الناتج إلى أبسط كتابة ممكنة، حيث:\na = 2 + √3\nb = 2 − √3\nأيّ قيمة نحصل عليها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "b",
+          "text": "√6",
+          "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne"
+        },
+        {
+          "id": "c",
+          "text": "2√3"
+        },
+        {
+          "id": "d",
+          "text": "2 + 2√3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نحذف القوسين بقلب إشارة كلّ حدّ في b: a − b = (2 + √3) − (2 − √3) = 2 + √3 − 2 + √3 = 2√3 ✓، فالعددان 2 و −2 يتلاشيان والجذران √3 و √3 متشابهان فتُجمع معاملاتهما 1 + 1 = 2. الخطأ الشائع قلب إشارة الحدّ الأوّل وحده من b فيخرج 2 + √3 − 2 − √3 = 0؛ أو جمع ما تحت الجذرين في √3 + √3 فيخرج √6 بدل 2√3 (فالمعاملان وحدهما يُجمعان)؛ أو نسيان طرح الحدّ 2 من b فيبقى 2 + √3 + √3 = 2 + 2√3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نريد حساب جداء المجموع a + b في الفرق a − b، حيث:\na = 2 + √3\nb = 2 − √3\nونرمز إلى هذا الجداء بالحرف A:\nA = (a + b)(a − b)\nأيّ عدد نجد ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "4 + 2√3",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "8√3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نحسب العاملين: a + b = 4 و a − b = 2√3، فـ A = (a + b)(a − b) = 4 × 2√3 = 8√3 ✓. الخطأ الشائع جمع المربّعين بدل طرحهما في المتطابقة (a + b)(a − b) = a² − b² فيخرج a² + b² = (7 + 4√3) + (7 − 4√3) = 14؛ أو إسقاط الحدّ الأوسط عند تربيع كلّ من a و b فيكون a² = 4 + 3 = 7 و b² = 4 + 3 = 7 ويخرج 7 − 7 = 0؛ أو جمع العاملين بدل ضربهما فيخرج A = 4 + 2√3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "العدد A يساوي 8√3. نريد كتابة هذا العدد تحت جذر تربيعي واحد، أي على الصورة √n حيث n عدد صحيح طبيعي. ما قيمة n ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "24",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        },
+        {
+          "id": "b",
+          "text": "67",
+          "misconceptionTag": "math.num.racine-produit-transforme-en-somme"
+        },
+        {
+          "id": "c",
+          "text": "192"
+        },
+        {
+          "id": "d",
+          "text": "576",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المعادلة √n = 8√3 تعني أنّ n = (8√3)² = 8² × (√3)² = 64 × 3 = 192 ✓. وبصيغة أخرى 8√3 = √64 × √3 = √(64 × 3) = √192، فالعدد 8 يدخل تحت الجذر مربّعًا. الخطأ الشائع إدخال العدد 8 دون تربيعه فيُكتب 8√3 = √(8 × 3) = √24؛ أو جمع ما تحت الجذرين √64 × √3 = √(64 + 3) = √67 بدل ضربهما؛ أو كتابة (√3)² = 3² = 9 فيخرج n = 64 × 9 = 576.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ننشر العبارة B ثمّ نبسّطها، حيث a و b عددان حقيقيّان:\nB = a(b − 1) + (a − 1)\nما الكتابة التي نحصل عليها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "ab − a − 1"
+        },
+        {
+          "id": "b",
+          "text": "ab + a − 2",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "c",
+          "text": "ab + 2a − 1",
+          "misconceptionTag": "math.int.produit-signes-negatifs"
+        },
+        {
+          "id": "d",
+          "text": "ab − 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ننشر a(b − 1) بتوزيع a على حدّي القوس: a(b − 1) = ab − a. ثمّ نضيف (a − 1) فنحصل على B = ab − a + a − 1 = ab − 1 ✓ لأنّ −a و +a متقابلان فيتلاشيان. الخطأ الشائع ضرب الحدّ الأوّل وحده في a فيُكتب a(b − 1) = ab − 1 ويخرج ab − 1 + a − 1 = ab + a − 2؛ أو إعطاء الجداء a × (−1) إشارة موجبة فيُكتب +a بدل −a ويخرج ab + a + a − 1 = ab + 2a − 1؛ أو إهمال الحدّ a في القوس الثاني فيخرج ab − a − 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعوّض a و b بقيمتيهما في العبارة B التالية ثمّ نبسّط الناتج، حيث:\na = 2 + √3\nb = 2 − √3\nB = a(b − 1) + (a − 1)\nما العدد الذي نجده في النهاية ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 − √3",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "1 + √3",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ننشر B: B = ab − a + a − 1 = ab − 1. وبما أنّ a × b = (2 + √3)(2 − √3) = 2² − (√3)² = 4 − 3 = 1 فإنّ B = 1 − 1 = 0 ✓. الخطأ الشائع الاكتفاء بقيمة الجداء ab = 1 وإهمال الطرح؛ أو التوقّف عند a(b − 1) = ab − a = 1 − (2 + √3) = −1 − √3 ونسيان الحدّ (a − 1)؛ أو توزيع a على الحدّ الأوّل وحده فيخرج B = ab + a − 2 = 1 + (2 + √3) − 2 = 1 + √3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.developpement",
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    }
+  ]
+}

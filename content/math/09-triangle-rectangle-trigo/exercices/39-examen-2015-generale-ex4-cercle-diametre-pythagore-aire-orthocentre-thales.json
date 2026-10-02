@@ -20,20 +20,20 @@
         {
           "id": "c",
           "text": "180°",
-          "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre"
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
         },
         {
           "id": "d",
           "text": "360°",
-          "misconceptionTag": "math.geo.angle-inscrit-double-du-centre"
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
         }
       ],
       "correctOption": "b",
-      "explanation": "المثلّث ABC محاط بالدائرة التي قطرها [AB] ، والقطر [AB] أحد أضلاعه ، فهو قائم في الرأس C المقابل للقطر ، أي أنّ قيس الزاوية ACB هو 90° ✓. وبلغة الزوايا: الزاوية المركزية AIB مستقيمة وقيسها 180° ، والزاوية المحيطية ACB التي تحصر القوس نفسه تساوي نصفها. الخطأ الشائع: إعطاء الزاوية المحيطية قيس الزاوية المركزية نفسه فنكتب 180° ؛ أو مضاعفته بدل أخذ النصف فنكتب 360°.",
+      "explanation": "المثلّث ABC محاط بالدائرة التي قطرها [AB] ، والقطر [AB] أحد أضلاعه ، فهو قائم في الرأس C المقابل للقطر ، أي أنّ قيس الزاوية ACB هو 90° ✓. الخطأ الشائع: الخلط بين القياسات المرجعيّة ، فنكتب 180° وهي قيس الزاوية المستقيمة AIB لأنّ A و I و B على استقامة واحدة ، أو 360° وهي قيس الدورة الكاملة حول المركز I ، مع أنّ الزاوية ACB قائمة.",
       "difficulty": 2,
       "competencies": [
         "math.geo.cercle",
-        "math.geo.angles-inscrits"
+        "math.geo.triangles-base"
       ]
     },
     {
@@ -80,7 +80,8 @@
         },
         {
           "id": "c",
-          "text": "6"
+          "text": "6",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
           "id": "d",
@@ -157,12 +158,12 @@
       ]
     },
     {
-      "prompt": "ABC مثلّث قائم في C ، و M نقطة من نصف المستقيم [AB) ، والمستقيم المارّ من M والعمودي على (AB) يقطع المستقيم (AC) في النقطة E ويقطع المستقيم (BC) في النقطة F.\nما العبارة الصحيحة ؟\n<svg viewBox=\"0 0 320 350\"><title>المثلّث ABC والمستقيم العمودي على (AB) المارّ من M ، يقطع (AC) في E و (BC) في F</title><path d=\"M66 287.8 L254 37.13\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M254 37.13 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M122.4 212.6 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 287.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M244 287.8 L244 277.8 L254 277.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"66\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"222.67\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"122.4\" cy=\"212.6\" r=\"3.8\"/><circle cx=\"254\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"254\" cy=\"37.13\" r=\"3.8\"/><circle cx=\"254\" cy=\"311.3\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"53\" y=\"292.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"229.67\" y=\"278.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"109.4\" y=\"206.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"268\" y=\"279.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"268\" y=\"35.13\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"268\" y=\"322.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
+      "prompt": "ABC مثلّث قائم في C ، و M نقطة من نصف المستقيم [AB) ، والمستقيم المارّ من M والعمودي على (AB) يقطع المستقيم (AC) في النقطة E ويقطع المستقيم (BC) في النقطة F.\nما العبارة الصحيحة ؟\n<svg viewBox=\"0 0 320 350\"><title>المثلّث ABC والمستقيم العمودي على (AB) المارّ من M ، يقطع (AC) في E و (BC) في F</title><path d=\"M66 287.8 L254 37.13\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M254 37.13 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M122.4 212.6 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 287.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M244 287.8 L244 277.8 L254 277.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"66\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"222.67\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"122.4\" cy=\"212.6\" r=\"3.8\"/><circle cx=\"254\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"254\" cy=\"37.13\" r=\"3.8\"/><circle cx=\"254\" cy=\"311.3\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"53\" y=\"292.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"229.67\" y=\"278.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"109.4\" y=\"206.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"268\" y=\"279.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"268\" y=\"35.13\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"268\" y=\"322.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
       "options": [
         {
           "id": "a",
-          "text": "المستقيمان (AB) و (AE) متعامدان",
-          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+          "text": "المستقيمان (AE) و (AF) متعامدان",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
         },
         {
           "id": "b",
@@ -179,7 +180,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "E تنتمي إلى المستقيم (AC) ، فالمستقيم (AE) هو المستقيم (AC) نفسه. والمثلّث ABC قائم في C ، أي أنّ (BC) عمودي على (AC) ، إذن (BC) عمودي على (AE) ✓. الخطأ الشائع: اعتبار أنّ مستقيمين يتقاطعان في نقطة متعامدان ، كالمستقيمين (BC) و (EF) اللذين يلتقيان في F دون أن تكون زاويتهما قائمة ؛ أو وضع الزاوية القائمة في الرأس A فنكتب أنّ (AB) عمودي على (AE) ، مع أنّها في الرأس C ؛ ولا يعني تعامد (EF) مع (AB) أنّه عمودي على (AE).",
+      "explanation": "E تنتمي إلى المستقيم (AC) ، فالمستقيم (AE) هو المستقيم (AC) نفسه. والمثلّث ABC قائم في C ، أي أنّ (BC) عمودي على (AC) ، إذن (BC) عمودي على (AE) ✓. الخطأ الشائع: اعتبار أنّ مستقيمين يتقاطعان في نقطة متعامدان ، كالمستقيمين (BC) و (EF) اللذين يلتقيان في F ، أو (AE) و (AF) اللذين يلتقيان في A ، دون أن تكون زاويتهما قائمة ؛ ولا يعني تعامد (EF) مع (AB) أنّه عمودي على (AE).",
       "difficulty": 2,
       "competencies": [
         "math.geo.droites-perp-para",
@@ -216,7 +217,7 @@
       ]
     },
     {
-      "prompt": "ABC مثلّث قائم في C ، و M نقطة من نصف المستقيم [AB) ، والمستقيم المارّ من M والعمودي على (AB) يقطع المستقيم (AC) في النقطة E ويقطع المستقيم (BC) في النقطة F.\nأيّ نقطة من الشكل هي المركز القائم للمثلّث AEF ؟\n<svg viewBox=\"0 0 320 350\"><title>المثلّث AEF داخل الشكل المكوّن من ABC والمستقيم المارّ من M</title><path d=\"M66 287.8 L254 37.13\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M254 37.13 L254 311.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 311.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M122.4 212.6 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 287.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M116.4 220.6 L124.4 226.6 L130.4 218.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M244 287.8 L244 277.8 L254 277.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"66\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"222.67\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"122.4\" cy=\"212.6\" r=\"3.8\"/><circle cx=\"254\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"254\" cy=\"37.13\" r=\"3.8\"/><circle cx=\"254\" cy=\"311.3\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"53\" y=\"292.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"229.67\" y=\"278.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"109.4\" y=\"206.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"268\" y=\"279.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"268\" y=\"35.13\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"268\" y=\"322.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
+      "prompt": "ABC مثلّث قائم في C ، و M نقطة من نصف المستقيم [AB) ، والمستقيم المارّ من M والعمودي على (AB) يقطع المستقيم (AC) في النقطة E ويقطع المستقيم (BC) في النقطة F.\nأيّ نقطة من الشكل هي المركز القائم للمثلّث AEF (نقطة تلاقي ارتفاعاته) ؟\n<svg viewBox=\"0 0 320 350\"><title>المثلّث AEF داخل الشكل المكوّن من ABC والمستقيم المارّ من M</title><path d=\"M66 287.8 L254 37.13\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M254 37.13 L254 311.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 311.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M122.4 212.6 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 287.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M116.4 220.6 L124.4 226.6 L130.4 218.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M244 287.8 L244 277.8 L254 277.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"66\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"222.67\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"122.4\" cy=\"212.6\" r=\"3.8\"/><circle cx=\"254\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"254\" cy=\"37.13\" r=\"3.8\"/><circle cx=\"254\" cy=\"311.3\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"53\" y=\"292.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"229.67\" y=\"278.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"109.4\" y=\"206.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"268\" y=\"279.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"268\" y=\"35.13\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"268\" y=\"322.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
       "options": [
         {
           "id": "a",

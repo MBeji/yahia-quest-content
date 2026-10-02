@@ -25,15 +25,15 @@
 
 - publiés et vérifiés (3 étapes apply-content + content-drift) : L01–L13 sauf L09 flip, L15, L18, L19 ; registre : 161 missions `publiee`.
   Reste à FLIPPER dans le registre (à la prochaine livraison) : L18 → `spec-pub-L18.json` (privé#628 publié). (L09 et L13 sont déjà flippés.)
-- en cours : L14 (ch.09 NN36–41, auteur a703138b8a79595c8), L16 (ch.18 NN29–35, auteur a86e1adf6dd7a4114), L20 (ch.03 NN27–30
-  + le fichier 31 déjà écrit = ex-27 du lot L18, auteur a6b508df10501b321). Un lot = auteur → audit opus en aveugle
-  (`gen-prompt-audit.py` + `auditspec/<LOT>.json`) → tour de corrections de l'auteur (SendMessage) → re-vérification du MÊME
-  auditeur → livraison `deliver-lot.sh` → fusion → apply-content → drift.
+- en cours au 2026-10-02 08h50 UTC : les trois auteurs ont rendu (L14 ch.09 NN36–41 62 Q ; L16 ch.18 NN29–35 73 Q ; L20 ch.03 NN27–31 29 Q dont 31 = ex-L18) ; les trois audits opus en aveugle tournent
+  (L14 a0755e58afc4f234e, L16 a91e1972bd3cca321, L20 a40053c95bd3fbf21 ; prompts `prompt-audit-L*.md`, rapports `audit-L*.md` dans author/exam ; specs `auditspec/L*.json`).
+  À l'audit rendu : arbitrage → SendMessage à l'auteur (L14 a703138b8a79595c8, L16 a86e1adf6dd7a4114, L20 a6b508df10501b321 : ils sont terminés, un envoi les reprend avec leur contexte) → re-vérification ciblée du MÊME auditeur → `deliver-lot.sh` → fusion → apply-content → drift.
+  Livraison L20 : créer aussi l'entrée de registre C34#1 (fichier 31) — `gen-spec-lot.py` la prend du plan v6 (lot L20 = m119 + m123..m130) ; basculer L18 → publiee (`spec-pub-L18.json`).
 - à lancer : L17 (ch.18 NN36–41, après L16), L21 (ch.09 NN47–48, après L14), L22 (ch.07 NN25, ch.12 NN22, ch.18 NN42 : après
   L16/L17) ; devoirs G2 (ch.04 NN29–33), I (ch.09 NN42–46, après L14/L21).
 - suites : refaire le devoir 14 de ch.09, corriger les devoirs 11 et 12 de ch.09 ; cours ch.12 (faux : « repère orthonormé exigé
   pour le milieu » ; (O, I, J) jamais nommé ; enseigne vecteurs et translation) ; cours 04/07/08.
-- moteur (arena) : 3 correctifs d'affichage livrés le 10-02 (#1150 coefficients et lettres primées, #1149 dungeon RTL par la
+- moteur (arena) : correctif en cours `dir=ltr` sur les figures SVG (ancres text-anchor start/end inversées dans une page arabe ; branche t-fig-ltr, worktree wt-arena-fig, verify dans verify-fig.log) ; 3 correctifs d'affichage livrés le 10-02 (#1150 coefficients et lettres primées, #1149 dungeon RTL par la
   langue du contenu le 10-01, #1152 coche ✓ hors isolat).
 
 ## SVT 9ᵉ (matière `sciences-vie-terre`)
@@ -41,7 +41,8 @@
 - Lecture faite : 6 sessions (2020, 2021, 2022, 2024, 2025, 2026) — transcriptions dans `en-cours/lecture-9eme/svt/officiel/`
   (à versionner sous `content/programmes-officiels/examens-nationaux/9eme-base/sciences-vie-terre/<année>.md` à la
   première livraison SVT), lignes dans `lines/`.
-- Lot SVT-L01 (ch.02/05/07 NN7–8, six missions, 36 questions) : auteur FINI (af789b7b2beb04d47), audit opus en cours (ac850d2e96ca57dd5, prompt-audit-SVT-L01.md : l'auditeur peut lire les PDF officiels C03–C06 sous scratchpad/gisement/9eme-sciences-vie-terre/snapshots). À la livraison : copier aussi les transcriptions SVT sous content/programmes-officiels/examens-nationaux/9eme-base/sciences-vie-terre/<année>.md (déjà dans l'arbre partagé), créer le registre web-9eme-base-sciences-vie-terre/gisement.json missions (gen-spec-lot.py est math : à adapter), apply-tags.py met `subject: math` en dur : à adapter pour `bio` ; apply-content subjects=sciences-vie-terre. Plan : 27 missions, 5 lots (`gisement/9eme-svt-plan/plan-examens-v1.json`)
+- SVT, lecture versionnée : privé#630 (six transcriptions `2020…2026-generale.md`, `lignes.tsv` 27 lignes, documents C01–C06 `lu/versionnee`, fiche). Outils SVT prêts : `deliver-lot-svt.sh <lot> <chapitre>:<NN,NN> …` (copie, ligne sources[], registre mergee via `MATIERE=sciences-vie-terre gen-spec-lot.py`, gates), `apply-tags.py` (champ `matiere` du pending : `sciences-vie-terre` → sujet `bio`, sans compétence), `add-source-line-svt.py`.
+- Lot SVT-L01 (ch.02/05/07 NN7–8, six missions, 36 questions) : auteur FINI (af789b7b2beb04d47), audit opus en cours (ac850d2e96ca57dd5, prompt-audit-SVT-L01.md : l'auditeur peut lire les PDF officiels C03–C06 sous scratchpad/gisement/9eme-sciences-vie-terre/snapshots). À la livraison : `deliver-lot-svt.sh`, puis `apply-tags.py` avec `"matiere":"sciences-vie-terre"` dans le pending, CATALOGUE.md régénéré et committé ; publier avec apply-content `subjects=sciences-vie-terre`. Plan : 27 missions, 5 lots (`gisement/9eme-svt-plan/plan-examens-v1.json`)
   prompts `prompt-svt-L01..L05.md`, affectations `assign-svt-L01..L05.md`.
 - Campagne « 9ᵉ au patron » (autre session, privé#569/#620, entrée de synchronisation de l'ETUDE.md §8) : SVT publiée — 14 chapitres
   du programme en 01–14 (les 7 anciens en 15–21, optionnels), famille d'étiquettes **`bio.*` (95 ids)** disponible : les distracteurs

@@ -1,0 +1,248 @@
+{
+  "title": "🏛️ مناظرة 2010 · التمرين 4 ⭐⭐⭐⭐: مستطيل ومستقيم عمودي على قطره — فيثاغورس ومعادلة وإثبات طبيعة رباعي",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 34,
+  "questions": [
+    {
+      "prompt": "ABCD مستطيل مركزه O حيث AB = 8 cm و AD = 4 cm. المستقيم المارّ من O والعمودي على (BD) يقطع (AB) في النقطة I ويقطع (CD) في النقطة J.\nلماذا المثلّث DIB متقايس الضلعين ؟\n<svg viewBox=\"0 0 300 190\"><title>المستطيل ABCD والمستقيم العمودي على (BD) المارّ من مركزه O</title><polygon points=\"34,153 266,153 266,37 34,37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M266 153 L34 37\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M121 153 L179 37\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 37 L121 153\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.02 86.95 L162.07 90.98 L158.05 99.02\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"34\" cy=\"153\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"266\" cy=\"153\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"266\" cy=\"37\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"34\" cy=\"37\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"121\" cy=\"153\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"179\" cy=\"37\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"95\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"24.81\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"275.19\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"275.19\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"24.81\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"121\" y=\"171\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"179\" y=\"29\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text><text x=\"136\" y=\"100\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(OI) ⊥ (BD) والنقطة I من هذا المستقيم، فهي تبعد عن D وعن B المسافة نفسها، إذن ID = IB",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "b",
+          "text": "O منتصف [BD] لأنّ قطرَي المستطيل ينصّف كلّ منهما الآخر، والنقطة I من المستقيم (OI) الذي يمرّ من O، فهي تبعد عن D وعن B المسافة نفسها، إذن ID = IB",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "O منتصف [BD] لأنّ قطرَي المستطيل ينصّف كلّ منهما الآخر، و (OI) ⊥ (BD)، فالمستقيم (OI) هو الموسّط العمودي للقطعة [BD] والنقطة I منه، إذن ID = IB"
+        },
+        {
+          "id": "d",
+          "text": "قطرا المستطيل متقايسان AC = BD، والنقطة I من (OI)، فهي تبعد عن D وعن B المسافة نفسها، إذن ID = IB"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "O منتصف [BD] لأنّ قطرَي المستطيل ينصّف كلّ منهما الآخر، و (OI) عمودي على (BD)؛ فالمستقيم (OI) هو الموسّط العمودي للقطعة [BD]. وكلّ نقطة من الموسّط العمودي لقطعة تبعد عن طرفيها المسافة نفسها، والنقطة I منه، إذن ID = IB: المثلّث DIB متقايس الضلعين رأسه I ✓. الخطأ الشائع: الاكتفاء بأحد الشرطين، فمستقيم عمودي على [BD] دون أن يمرّ من منتصفها لا يعطي نقاطًا متساوية البعد عن D وعن B، وكذلك مستقيم يمرّ من منتصفها دون أن يكون عموديًا عليها؛ أو الاستناد إلى تقايس قطرَي المستطيل وهو لا يخصّ النقطة I.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.droites-perp-para",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل مركزه O حيث AB = 8 cm و AD = 4 cm. المستقيم المارّ من O والعمودي على (BD) يقطع (AB) في النقطة I ويقطع (CD) في النقطة J.\nلماذا تتحقّق المساواة التالية ؟\nIB = DJ\n<svg viewBox=\"0 0 300 190\"><title>المستطيل ABCD ومركزه O والنقطتان I وJ</title><polygon points=\"34,153 266,153 266,37 34,37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M266 153 L34 37\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M121 153 L179 37\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.02 86.95 L162.07 90.98 L158.05 99.02\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"34\" cy=\"153\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"266\" cy=\"153\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"266\" cy=\"37\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"34\" cy=\"37\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"121\" cy=\"153\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"179\" cy=\"37\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"95\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"24.81\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"275.19\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"275.19\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"24.81\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"121\" y=\"171\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"179\" y=\"29\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text><text x=\"136\" y=\"100\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "التناظر المركزي الذي مركزه O يحوّل B إلى D لأنّ O منتصف [BD]، ونظيرة I هي J لأنّ I و J على مستقيم واحد مارّ من O، فنظيرة [IB] هي [JD]، إذن IB = DJ",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "b",
+          "text": "التناظر المركزي الذي مركزه O يحوّل I إلى J لأنّه يحوّل (AB) إلى (CD) ويُبقي (OI) في مكانه، ونظيرة B هي D لأنّ B و D و O على استقامة واحدة، فنظيرة [IB] هي [JD]، إذن IB = DJ",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "المستطيل ABCD فيه AB = CD، وقطعتان على ضلعين متقابلين من مستطيل متقايستان، إذن IB = DJ"
+        },
+        {
+          "id": "d",
+          "text": "التناظر المركزي الذي مركزه O يحوّل B إلى D لأنّ O منتصف [BD]، ويحوّل I إلى J لأنّه يحوّل (AB) إلى (CD) ويُبقي (OI) في مكانه، فنظيرة [IB] هي [JD]، إذن IB = DJ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "O مركز المستطيل فهو منتصف [BD]، والتناظر المركزي الذي مركزه O يحوّل B إلى D وA إلى C، فيحوّل المستقيم (AB) إلى المستقيم (CD). والمستقيم (OI) يمرّ من O فيبقى في مكانه. والنقطة I هي تقاطع (AB) و (OI)، فنظيرتها هي تقاطع (CD) و (OI)، أي J. إذن هذا التناظر يحوّل [IB] إلى [JD] فـ IB = DJ ✓. الخطأ الشائع: افتراض أنّ نظيرة I هي J لمجرّد أنّهما على مستقيم مارّ من O، أو أنّ نظيرة B هي D لمجرّد استقامة النقاط؛ أو التعليل بتقايس الضلعين AB و CD اللذين يخصّان الضلعين كاملين لا جزأيهما.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل مركزه O حيث AB = 8 cm و AD = 4 cm. المستقيم المارّ من O والعمودي على (BD) يقطع (AB) في النقطة I ويقطع (CD) في النقطة J. نعلم أنّ:\nID = IB\nIB = DJ\nما أدقّ وصف للرباعي DIBJ ؟\n<svg viewBox=\"0 0 300 190\"><title>المستطيل ABCD والرباعي DIBJ</title><polygon points=\"34,153 266,153 266,37 34,37\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"34,37 121,153 266,153 179,37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"34\" cy=\"153\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"266\" cy=\"153\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"266\" cy=\"37\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"34\" cy=\"37\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"121\" cy=\"153\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"179\" cy=\"37\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"24.81\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"275.19\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"275.19\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"24.81\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"121\" y=\"171\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"179\" y=\"29\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متوازي أضلاع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "b",
+          "text": "معيّن"
+        },
+        {
+          "id": "c",
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "d",
+          "text": "مستطيل"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المستقيمان (IB) و (DJ) محمولان على الضلعين المتقابلين (AB) و (CD) من المستطيل فهما متوازيان، و IB = DJ، فالرباعي DIBJ متوازي أضلاع. وله ضلعان متتاليان متقايسان ID = IB، فهو معيّن ✓. وليس مربّعًا ولا مستطيلًا: زاويته عند I ليست قائمة، لأنّ [DA] هو العمودي الوحيد على (AB) المارّ من D، والنقطة I ليست A إذ لو كانت I هي A لكان ID = 4 cm و IB = 8 cm. الخطأ الشائع: التوقّف عند متوازي الأضلاع وهو وصف صحيح لكنّه ليس الأدقّ؛ أو إضافة صفة لا شيء يثبتها كالمربّع.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 8 cm و AD = 4 cm، والنقطة I من [AB]. نضع x = AI.\nما عبارة BI² بدلالة x ؟\n<svg viewBox=\"0 0 300 170\"><title>المستطيل ABCD والنقطة I من [AB]</title><polygon points=\"48,136 252,136 252,34 48,34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"48\" cy=\"136\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"136\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"48\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"111.75\" cy=\"136\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"38.81\" y=\"150.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"261.19\" y=\"150.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"261.19\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"38.81\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"111.75\" y=\"154\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(8 + x)²",
+          "misconceptionTag": "math.geo.position-relative-ignoree"
+        },
+        {
+          "id": "b",
+          "text": "64 − x²"
+        },
+        {
+          "id": "c",
+          "text": "8 − x²"
+        },
+        {
+          "id": "d",
+          "text": "(8 − x)²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "I من [AB] فهي بين A و B، إذن BI = AB − AI = 8 − x ومنه BI² = (8 − x)² ✓. الخطأ الشائع: جمع الطولين 8 + x كأنّ I خارج القطعة [AB]؛ أو كتابة 64 − x² أي تربيع كلّ حدّ على حدة؛ أو 8 − x² أي تربيع x وحده.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.mise-en-equation"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 8 cm و AD = 4 cm، والنقطة I من [AB]. نضع x = AI.\nما عبارة DI² بدلالة x ؟\n<svg viewBox=\"0 0 300 170\"><title>المستطيل ABCD والمثلّث DAI</title><polygon points=\"48,136 252,136 252,34 48,34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"48,34 48,136 111.75,136\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M57 136 L57 127 L48 127\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"48\" cy=\"136\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"136\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"48\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"111.75\" cy=\"136\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"38.81\" y=\"150.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"261.19\" y=\"150.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"261.19\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"38.81\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"111.75\" y=\"154\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² + 16"
+        },
+        {
+          "id": "b",
+          "text": "(x + 4)²",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "x² − 16",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "x² + 64",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث DAI قائم في A لأنّ ABCD مستطيل، ووتره [DI]. بفيثاغورس: DI² = DA² + AI² = 4² + x² = x² + 16 ✓. الخطأ الشائع: جمع الطولين فنكتب (x + 4)²؛ أو عدّ [AI] وترًا فنجد x² − 16؛ أو أخذ AB = 8 بدل AD = 4 فنجد x² + 64.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.mise-en-equation"
+      ]
+    },
+    {
+      "prompt": "المثلّث DIB متقايس الضلعين رأسه I، أي DI = BI. نضع x = AI ونعلم أنّ:\nDI² = x² + 16\nBI² = (8 − x)²\nلحلّ المعادلة DI² = BI² ننشر أوّلًا BI².\nما نشر العبارة التالية ؟\n(8 − x)²",
+      "options": [
+        {
+          "id": "a",
+          "text": "64 + x²",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "64 − x²"
+        },
+        {
+          "id": "c",
+          "text": "64 − 16x + x²"
+        },
+        {
+          "id": "d",
+          "text": "64 + 16x + x²",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(8 − x)² مربّع فرق، و (a − b)² = a² − 2ab + b² مع a = 8 و b = x، فـ (8 − x)² = 64 − 2 × 8 × x + x² = 64 − 16x + x² ✓. الخطأ الشائع: نسيان الجداء المضاعف فنكتب 64 + x²؛ أو وضع الإشارة + أمامه كأنّه مربّع مجموع فنجد 64 + 16x + x²؛ أو تربيع كلّ حدّ على حدة فنجد 64 − x².",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABCD مستطيل مركزه O حيث AB = 8 cm و AD = 4 cm. المستقيم المارّ من O والعمودي على (BD) يقطع (AB) في النقطة I ويقطع (CD) في النقطة J، والرباعي DIBJ معيّن حيث AI = 3 cm.\nاحسب محيط المعيّن DIBJ بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 300 190\"><title>المستطيل ABCD والمعيّن DIBJ</title><polygon points=\"34,37 121,153 266,153 179,37\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><polygon points=\"34,153 266,153 266,37 34,37\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"34,37 121,153 266,153 179,37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"34\" cy=\"153\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"266\" cy=\"153\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"266\" cy=\"37\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"34\" cy=\"37\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"121\" cy=\"153\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"179\" cy=\"37\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"24.81\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"275.19\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"275.19\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"24.81\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"121\" y=\"171\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"179\" y=\"29\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text></g></svg>",
+      "answerKey": {
+        "value": 20,
+        "unit": "cm"
+      },
+      "explanation": "I من [AB] فـ IB = AB − AI = 8 − 3 = 5 cm. أضلاع المعيّن DIBJ الأربعة متقايسة، فمحيطه 4 × IB = 4 × 5 = 20 cm ✓. الخطأ الشائع: ضرب AI في 4 فنجد 12، أو ضرب AB في 4 فنجد 32، أو ضرب IB في 3 فنجد 15.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.perimetres",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل مركزه O حيث AB = 8 cm و AD = 4 cm. المستقيم المارّ من O والعمودي على (BD) يقطع (AB) في النقطة I ويقطع (CD) في النقطة J. المستقيمان (JI) و (AD) يتقاطعان في النقطة K.\nلماذا المستقيمان (DI) و (BK) متعامدان ؟\n<svg viewBox=\"0 0 300 330\"><title>المستطيل ABCD والمستقيم (JI) الذي يقطع (AD) في K</title><polygon points=\"49.23,134.77 250.77,134.77 250.77,34 49.23,34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M49.23 134.77 L49.23 285.92\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M250.77 134.77 L49.23 34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M49.23 285.92 L175.19 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M49.23 285.92 L250.77 134.77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M49.23 34 L124.81 134.77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.02 76.33 L162.07 80.36 L158.05 88.41\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"49.23\" cy=\"134.77\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"250.77\" cy=\"134.77\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"250.77\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"49.23\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"124.81\" cy=\"134.77\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"175.19\" cy=\"34\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"84.38\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"49.23\" cy=\"285.92\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"40.04\" y=\"148.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"259.96\" y=\"148.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"259.96\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"40.04\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"134.71\" y=\"149.67\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"175.19\" y=\"26\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text><text x=\"136\" y=\"89.38\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"36.23\" y=\"290.92\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "الرباعي DIBJ معيّن وقطراه متعامدان، وبما أنّ K و I و J على استقامة واحدة فإنّ (DI) ⊥ (BK) لأنّ المعيّن قطراه متعامدان",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "في المثلّث KBD، (BA) ⊥ (KD) لأنّ ABCD مستطيل و (KI) ⊥ (BD)، فالنقطة I تقاطع ارتفاعين أي هي المركز القائم للمثلّث، إذن (DI) ⊥ (BK)"
+        },
+        {
+          "id": "c",
+          "text": "في المثلّث KBD، (KI) ⊥ (BD) لأنّ (KI) هو المستقيم (JI)، فهو ارتفاع في المثلّث والنقطة I منه، فهي تعيّن الارتفاع المارّ من D، إذن (DI) ⊥ (BK)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "في المثلّث KBD، (BA) ⊥ (KD) لأنّ ABCD مستطيل، فهو ارتفاع في المثلّث والنقطة I منه، فهي تعيّن الارتفاع المارّ من D، إذن (DI) ⊥ (BK)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث KBD، المستقيم (BA) عمودي على (KD) لأنّ ABCD مستطيل و K على (AD)، فهو الارتفاع المتعلّق بالرأس B، والنقطة I منه لأنّها على (AB). والمستقيم (KI) هو (JI) العمودي على (BD)، فهو الارتفاع المتعلّق بالرأس K. النقطة I تقاطع ارتفاعين: هي المركز القائم للمثلّث KBD، والارتفاع الثالث المارّ من D هو (DI)، إذن (DI) ⊥ (BK) ✓. الخطأ الشائع: الاكتفاء بارتفاع واحد، فنقطة من ارتفاع لا تكفي لتعيين الارتفاع الثالث؛ أو خلط قطرَي المعيّن DIBJ وهما [DB] و [IJ] بالمستقيمين (DI) و (BK).",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABCD مستطيل حيث AB = 8 cm و AD = 4 cm، والنقطة I من [AB] بحيث يكون المثلّث DIB متقايس الضلعين رأسه I. نضع x = AI.\nاحسب x بالصنتمتر، ثمّ اكتب قيمته.",
+      "answerKey": {
+        "value": 3,
+        "unit": "cm"
+      },
+      "explanation": "المثلّث DAI قائم في A فـ DI² = AD² + AI² = x² + 16. والنقطة I بين A و B فـ BI = 8 − x ومنه BI² = (8 − x)². وبما أنّ DI = BI فإنّ DI² = BI²، أي x² + 16 = (8 − x)² = 64 − 16x + x². نحذف x² من الطرفين فنجد 16x = 48، إذن x = 3 ✓. الخطأ الشائع: نسيان الجداء المضاعف عند نشر (8 − x)² فنصل إلى 16 = 64 ولا نجد قيمة لـ x؛ أو مساواة الطولين مباشرةً x + 4 = 8 − x فنجد x = 2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.equations-premier-degre",
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}
