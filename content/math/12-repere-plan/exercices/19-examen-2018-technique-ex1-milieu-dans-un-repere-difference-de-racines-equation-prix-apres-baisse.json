@@ -1,0 +1,128 @@
+{
+  "title": "🏛️ مناظرة 2018 (تقني) · التمرين 1 ⭐⭐: اختيار من متعدّد — منتصف قطعة في معلّم وفرق جذرين وحلّ معادلة وثمن بعد تخفيض",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 19,
+  "questions": [
+    {
+      "prompt": "في المعلّم (O, I, J) ، النقطة I هي الواحديّة على محور الفواصل والنقطة J هي الواحديّة على محور الترتيبات. نعتبر النقاط\nA(3 ; 1)\nB(−3 ; 1)\nK(0 ; 2)\nأيّ النقاط O و I و J و K هي منتصف القطعة [AB] ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "O"
+        },
+        {
+          "id": "b",
+          "text": "I",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        },
+        {
+          "id": "c",
+          "text": "J"
+        },
+        {
+          "id": "d",
+          "text": "K",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "إحداثيّتا منتصف قطعة هما معدّلا إحداثيّتي طرفيها : ((3 + (−3))/2 ; (1 + 1)/2) = (0 ; 1) ✓. وفي المعلّم (O, I, J) تكون O(0 ; 0) و I(1 ; 0) و J(0 ; 1) ، فمنتصف [AB] هو J. الخطأ الشائع : عكس الفاصلة والترتيبة فنجد (1 ; 0) ، وهي I ؛ أو جمع الإحداثيّتين دون القسمة على 2 فنجد (0 ; 2) ، وهي K ؛ أو الظنّ أنّ فاصلتين متقابلتين تعنيان أنّ المنتصف هو الأصل O ، مع أنّ ترتيبتَي A و B متساويتان وليستا متقابلتين ، فترتيبة المنتصف هي 1 لا 0.",
+      "difficulty": 1,
+      "competencies": [
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "أيّ كتابة تساوي العدد التالي ؟\n√27 − √3",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2√3"
+        },
+        {
+          "id": "b",
+          "text": "2√3"
+        },
+        {
+          "id": "c",
+          "text": "√24",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "d",
+          "text": "8√3",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نخرج المربّع الكامل 9 من √27 : √27 = √(9 × 3) = 3√3 ، فيصير √27 − √3 = 3√3 − √3 = 2√3 ✓ ، لأنّ الجذرين متشابهان فنطرح معاملَيهما 3 − 1 = 2. الخطأ الشائع : طرح ما تحت الجذرين فنجد √(27 − 3) = √24 ، والجذر لا يُوزَّع على الطرح ؛ أو إخراج العدد 9 نفسه بدل جذره 3 فنكتب √27 = 9√3 فنجد 9√3 − √3 = 8√3 ؛ أو عكس ترتيب الطرح فنجد √3 − √27 = −2√3 ، وهو مقابل النتيجة الصحيحة.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في ℝ ، تتحقّق إحدى المعادلات التالية من أجل x = √2. ما هي هذه المعادلة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x + √2 = 2",
+          "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne"
+        },
+        {
+          "id": "b",
+          "text": "x√2 − 1 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x√2 − 1 = 1"
+        },
+        {
+          "id": "d",
+          "text": "x√2 − 1 = 3",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نعوّض x بالعدد √2 في كلّ معادلة ، ونتذكّر أنّ √2 × √2 = 2. في x√2 − 1 = 1 نجد √2 × √2 − 1 = 2 − 1 = 1 ، وهو الطرف الأيمن ✓ ، فالعدد √2 حلّ لها. أمّا x + √2 = 2 فتعطي √2 + √2 = 2√2 وليس 2 ؛ و x√2 − 1 = 0 تعطي 2 − 1 = 1 وليس 0 ؛ و x√2 − 1 = 3 تعطي 2 − 1 = 1 وليس 3. الخطأ الشائع : جمع ما تحت الجذرين فنكتب √2 + √2 = √4 = 2 فتبدو المعادلة x + √2 = 2 محقَّقة ؛ أو كتابة (√2)² = 4 فيصير √2 × √2 − 1 = 3 فتبدو المعادلة x√2 − 1 = 3 محقَّقة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-premier-degre",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ثمن تلفاز 1320 دينارًا ، وبيع بتخفيض نسبته 18 %.\nما ثمن شرائه بالدينار بعد التخفيض ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "237,6",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "1082,4"
+        },
+        {
+          "id": "c",
+          "text": "1302",
+          "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat"
+        },
+        {
+          "id": "d",
+          "text": "1557,6",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مبلغ التخفيض هو 18 % من 1320 : 1320 × 18/100 = 237,6 دينارًا ، فيكون الثمن بعد التخفيض 1320 − 237,6 = 1082,4 دينارًا ✓. وبطريقة مباشرة : الثمن الجديد يمثّل 100 % − 18 % = 82 % من الثمن الأصلي ، أي 1320 × 0,82 = 1082,4. الخطأ الشائع : التوقّف عند مبلغ التخفيض 237,6 والإجابة به ؛ أو اعتبار 18 % هي 18 دينارًا فنطرحها من الثمن ونجد 1320 − 18 = 1302 ؛ أو إضافة المبلغ بدل طرحه فنجد 1320 + 237,6 = 1557,6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prop.pourcentages"
+      ]
+    }
+  ]
+}
