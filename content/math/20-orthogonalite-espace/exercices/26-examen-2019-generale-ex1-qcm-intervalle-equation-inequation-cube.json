@@ -1,0 +1,155 @@
+{
+  "title": "🏛️ مناظرة 2019 · التمرين 1 ⭐⭐: أسئلة اختيار من متعدّد — الانتماء إلى مجال ومعادلة ومتراجحة ومستقيم عمودي على مستوٍ في مكعّب",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 26,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "احسب العدد التالي واكتب نتيجته :\n5⁻² × 2⁻³ × 10³",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "نرمز بـ c إلى هذا العدد ونستعمل 5⁻² = 1/25 و 2⁻³ = 1/8، فيكون:\nc = 10³/(25 × 8)\nc = 1000/200 = 5\nإذن العدد يساوي 5 ✓.\nوبطريقة ثانية: 10³ = 5³ × 2³ فتجتمع القوى ذات الأساس نفسه:\nc = 5¹ × 2⁰ = 5\nالخطأ الشائع: الظنّ أنّ الدليل السالب يعطي عددًا سالبًا.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "احسب الجداء التالي واكتب نتيجته :\n(1 − √3) × (1 + √3)",
+      "answerKey": {
+        "value": -2
+      },
+      "explanation": "نستعمل متطابقة الفرق بين مربّعين:\n(a − b) × (a + b) = a² − b²\nمع a = 1 و b = √3:\n1² − (√3)² = 1 − 3 = −2\nفالجداء يساوي −2 ✓.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "أيّ الأعداد التالية ينتمي إلى المجال [4 ; 5[ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√3",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "b",
+          "text": "|2π − 2|"
+        },
+        {
+          "id": "c",
+          "text": "5⁻² × 2⁻³ × 10³",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        },
+        {
+          "id": "d",
+          "text": "(√3 + 1)²",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نقارن كلّ عدد بحدّي المجال 4 و 5، والقوس مفتوح عند 5.\nالعدد 3√3 يساوي √27 وهو أكبر من √25 = 5، فهو خارج المجال؛ والخطأ الشائع مقارنة 3√3 بالعدد 5 تقديرًا بدل مقارنة مربّعيهما 27 و 25.\nالعدد 2π − 2 موجب فـ |2π − 2| = 2π − 2، ولمّا كان 3 < π < 3,5 فإنّ 4 < 2π − 2 < 5، إذن |2π − 2| ينتمي إلى [4 ; 5[ ✓.\nالعدد 5⁻² × 2⁻³ × 10³ يساوي 5 بالضبط، والمجال مفتوح عند 5 فلا يضمّه.\nوالعدد (√3 + 1)² يساوي 4 + 2√3 وهو أكبر من 6 لأنّ √3 أكبر من 1، فهو خارج المجال؛ والخطأ الشائع هو نسيان الجداء المضاعف 2√3 فنجد 4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "ما حلّ المعادلة التالية في ℝ ؟\n(3/5) × x = (4/5) × (5 − x)",
+      "options": [
+        {
+          "id": "a",
+          "text": "5",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "b",
+          "text": "−20",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "c",
+          "text": "20/3"
+        },
+        {
+          "id": "d",
+          "text": "20/7"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نضرب طرفي المعادلة في 5 لحذف المقامات:\n3 × x = 4 × (5 − x)\n3x = 20 − 4x\n3x + 4x = 20\n7x = 20\nأي x = 20/7 ✓. وللتحقّق: عند x = 20/7 يساوي كلّ من الطرفين 12/7.\nالخطأ الشائع: نقل 4x دون تغيير إشارته فنكتب 3x − 4x = 20 ومنه x = −20؛ أو ضرب 4 في الحدّ الأوّل فقط من (5 − x) فنكتب 3x = 20 − x ومنه x = 5؛ أو إهمال الحدّ 4x فنكتب 3x = 20 ومنه x = 20/3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "ما مجموعة حلول المتراجحة التالية في ℝ ؟\n2x/(1 + √3) ≤ 1 − √3",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; −1]"
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; −2]",
+          "misconceptionTag": "math.alg.coefficient-non-divise"
+        },
+        {
+          "id": "c",
+          "text": "[−1 ; +∞[",
+          "misconceptionTag": "math.num.ordre-inverse-a-tort"
+        },
+        {
+          "id": "d",
+          "text": "[−2 ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "بما أنّ 1 + √3 عدد موجب نضرب طرفي المتراجحة فيه فيبقى اتّجاهها:\n2x ≤ (1 − √3) × (1 + √3)\n2x ≤ 1 − 3 = −2\nثمّ نقسم الطرفين على 2، وهو عدد موجب، فنجد x ≤ −1. المجموعة ]−∞ ; −1] ✓، والقوس مغلق عند −1 لأنّ التراجح غير صارم.\nالخطأ الشائع: التوقّف عند 2x ≤ −2 دون القسمة على 2 فنجد ]−∞ ; −2]؛ أو قلب اتّجاه التراجح دون سبب فنجد [−1 ; +∞[. أمّا [−2 ; +∞[ فتجمع الخطأين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.inequations",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH مكعّب. المستقيم (BF) عمودي على المستوي:\n<svg viewBox=\"0 0 240 210\"><title>مكعّب ABCDEFGH</title><path d=\"M85 140 L195 140 M85 140 L85 30 M40 175 L85 140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M40 175 L150 175 M150 175 L150 65 M150 65 L40 65 M40 65 L40 175 M195 140 L195 30 M195 30 L85 30 M150 175 L195 140 M150 65 L195 30 M40 65 L85 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 175 L150 65\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"175\" r=\"3.2\"/><circle cx=\"150\" cy=\"175\" r=\"3.2\"/><circle cx=\"150\" cy=\"65\" r=\"3.2\"/><circle cx=\"40\" cy=\"65\" r=\"3.2\"/><circle cx=\"85\" cy=\"140\" r=\"3.2\"/><circle cx=\"195\" cy=\"140\" r=\"3.2\"/><circle cx=\"195\" cy=\"30\" r=\"3.2\"/><circle cx=\"85\" cy=\"30\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"161\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"165\" y=\"81\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"28\" y=\"59\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"74\" y=\"154\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"208\" y=\"144\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"208\" y=\"27\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"74\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "المستوي (BFE)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "b",
+          "text": "المستوي (GFA)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "c",
+          "text": "المستوي (HFG)"
+        },
+        {
+          "id": "d",
+          "text": "المستوي (ACG)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الوجهان ABFE و BCGF مربّعان، فالحرف (BF) عمودي على (FE) وعلى (FG)، وهما متقاطعان في F. والمستقيمان (FE) و(FG) محتويان في المستوي (HFG) لأنّ الرؤوس H و F و G من الوجه العلوي، إذن (BF) عمودي على (HFG) ✓.\nأمّا (BFE) فيحوي (BF) نفسه، و(BF) يعامد فيه (AB) و(FE) لكنّهما متوازيان فلا يكفيان. والمستوي (GFA) يحوي (FG) العمودي على (BF)، غير أنّ مستقيمًا واحدًا لا يكفي لأنّ (FA) قطر الوجه ABFE فهو لا يعامد (BF). والمستوي (ACG) يحوي (CG) الموازي لـ (BF)، والنقطتان B و F ليستا منه، فالمستقيم (BF) لا يقطع هذا المستوي أصلًا، والمستقيم العمودي على مستوٍ يقطعه في نقطة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.esp.cube-pave",
+        "math.esp.solides-espace"
+      ]
+    }
+  ]
+}

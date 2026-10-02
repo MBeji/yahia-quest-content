@@ -1,0 +1,156 @@
+{
+  "title": "🏛️ مناظرة 2009 · التمرين 1 ⭐⭐: أسئلة اختيار من متعدّد — نقطتان متناظرتان وحلّ معادلة وقابلية القسمة ومستقيم عمودي على مستوٍ في مكعّب",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 22,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "ما مجموع أرقام العدد التالي ؟ اكتب العدد.\n11 133 557 796",
+      "answerKey": {
+        "value": 48
+      },
+      "explanation": "نجمع أرقام كلّ مجموعة من المجموعات الأربع في العدد: 11 ثمّ 133 ثمّ 557 ثمّ 796، فنجد على التوالي 2 و 7 و 17 و 22. ثمّ نجمع هذه النتائج:\n2 + 7 + 17 + 22 = 48\nفمجموع أرقام العدد هو 48 ✓.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABCD مربّع و[BD] أحد قطريه. ما قيس الزاوية DBC بالدرجة ؟ اكتب العدد.\n<svg viewBox=\"0 0 200 180\"><title>مربّع ABCD وقطره [BD]</title><path d=\"M40 30 L40 150 L160 150 L160 30 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M40 150 L160 30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"30\" r=\"3.2\"/><circle cx=\"40\" cy=\"150\" r=\"3.2\"/><circle cx=\"160\" cy=\"150\" r=\"3.2\"/><circle cx=\"160\" cy=\"30\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"28\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"28\" y=\"166\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"172\" y=\"166\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"172\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">D</text></g></svg>",
+      "answerKey": {
+        "value": 45
+      },
+      "explanation": "الزاوية ABC قائمة والقطر [BD] ينصّفها، فالزاوية DBC نصف 90°، أي 45° ✓. وبطريقة ثانية: المثلث BCD قائم في C ومتقايس الضلعين لأنّ CB = CD، فزاويتاه عند B وعند D متقايستان ومجموعهما 90°.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "في معيّن متعامد (O, I, J) من المستوي، النقطة الواحديّة على محور الفواصل هي I وعلى محور الترتيبات هي J. نعتبر النقطتين:\nA(−2 ; √2 − 1)\nB(2 ; 1 − √2)\nالنقطتان A و B متناظرتان بالنسبة إلى:",
+      "options": [
+        {
+          "id": "a",
+          "text": "المستقيم (OI)",
+          "misconceptionTag": "math.vec.symetrie-regle-confondue"
+        },
+        {
+          "id": "b",
+          "text": "المستقيم (OJ)",
+          "misconceptionTag": "math.vec.symetrie-regle-confondue"
+        },
+        {
+          "id": "c",
+          "text": "النقطة I"
+        },
+        {
+          "id": "d",
+          "text": "النقطة O"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نقارن إحداثيّتي A وإحداثيّتي B: الفاصلتان −2 و 2 متقابلتان، والترتيبتان √2 − 1 و 1 − √2 متقابلتان أيضًا لأنّ −(√2 − 1) = 1 − √2.\nإذن منتصف [AB] هو النقطة (0 ; 0)، أي O، فالنقطتان A و B متناظرتان بالنسبة إلى O ✓. أمّا النقطة I(1 ; 0) فليست منتصف [AB].\nوللتناظر بالنسبة إلى (OI) يلزم أن تتساوى الفاصلتان وتتقابل الترتيبتان، وللتناظر بالنسبة إلى (OJ) يلزم أن تتقابل الفاصلتان وتتساوى الترتيبتان، وكلا الشرطين غير متحقّق هنا.\nالخطأ الشائع: الخلط بين التناظر المحوريّ والتناظر المركزيّ؛ فتغيّر إشارة إحداثيّة واحدة يعطي تناظرًا محوريًّا، وتغيّر الإشارتين معًا يعطي تناظرًا مركزيًّا بالنسبة إلى O.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-coordonnees",
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "x عدد حقيقي يحقّق:\nx/√2 = √2/2\nما قيمة x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "√2",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "misconceptionTag": "math.alg.coefficient-non-divise"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نضرب طرفي المعادلة في √2، وهو عدد غير معدوم، لنعزل x:\nx = (√2/2) × √2\nx = (√2 × √2)/2 = 2/2\nإذن x = 1 ✓. وللتحقّق نعوّض في الطرف الأيسر:\n1/√2 = √2/(√2 × √2) = √2/2\nوهو الطرف الأيمن.\nالخطأ الشائع: القسمة على √2 بدل الضرب فيه فنجد (√2/2) ÷ √2 = 1/2؛ أو كتابة (√2)² على أنّها 2√2 فنجد √2؛ أو التوقّف عند 2x = 2 دون القسمة على 2 فنجد 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-premier-degre",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "العدد التالي قابل للقسمة على :\n11 133 557 796",
+      "options": [
+        {
+          "id": "a",
+          "text": "9",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "18",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد 12 جداء العددين 3 و 4 الأوّليّين فيما بينهما، فيقبل العدد القسمة على 12 إذا قبلها على 3 وعلى 4 معًا.\nمجموع أرقامه 48 وهو مضاعف للعدد 3، وآخر رقمين فيه يكوّنان العدد 96 وهو مضاعف للعدد 4، إذن العدد يقبل القسمة على 12 ✓.\nأمّا 9 و 18 فيلزم لكلّ منهما أن يكون مجموع الأرقام مضاعفًا للعدد 9، والعدد 48 ليس كذلك لأنّه محصور بين 45 و 54؛ و15 يلزمه رقم آحاد 0 أو 5، ورقم آحاد هذا العدد هو 6.\nالخطأ الشائع: الاكتفاء بمعيار واحد أو بمعيار قاسم آخر؛ فقبول القسمة على 3 يوهم بقبول 9 وبقبول 15 وبقبول 18.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "ABCDSPQR مكعّب: قاعدته السفلى ABCD، ورؤوس قاعدته العليا P و Q و R و S تعلو على التوالي B و C و D و A.\nالمستقيم (BD) عمودي على المستوي:\n<svg viewBox=\"0 0 240 210\"><title>مكعّب ABCDSPQR</title><path d=\"M85 140 L195 140 M85 140 L85 30 M40 175 L85 140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M40 175 L150 175 M150 175 L150 65 M150 65 L40 65 M40 65 L40 175 M195 140 L195 30 M195 30 L85 30 M150 175 L195 140 M150 65 L195 30 M40 65 L85 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 175 L195 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"175\" r=\"3.2\"/><circle cx=\"150\" cy=\"175\" r=\"3.2\"/><circle cx=\"150\" cy=\"65\" r=\"3.2\"/><circle cx=\"40\" cy=\"65\" r=\"3.2\"/><circle cx=\"85\" cy=\"140\" r=\"3.2\"/><circle cx=\"195\" cy=\"140\" r=\"3.2\"/><circle cx=\"195\" cy=\"30\" r=\"3.2\"/><circle cx=\"85\" cy=\"30\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"161\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"165\" y=\"81\" text-anchor=\"middle\" fill=\"#0f172a\">Q</text><text x=\"28\" y=\"59\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"74\" y=\"154\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"208\" y=\"144\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"208\" y=\"27\" text-anchor=\"middle\" fill=\"#0f172a\">R</text><text x=\"74\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\">S</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "المستوي (ACQ)"
+        },
+        {
+          "id": "b",
+          "text": "المستوي (ACR)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "c",
+          "text": "المستوي (BAS)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "d",
+          "text": "المستوي (BCQ)",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "لتكن O مركز المربّع ABCD، أي نقطة تقاطع قطريه؛ وهي من (AC) فهي من المستوي (ACQ). قطرا المربّع متعامدان، فالمستقيم (BD) عمودي على (AC) في O. والقطعتان [QB] و[QD] قطران لوجهين من المكعّب فهما متقايستان، فالمثلّث QBD متقايس الضلعين قمّته Q. وبما أنّ O منتصف [BD] فإنّ الموسّط (QO) هو أيضًا ارتفاع له: (BD) عمودي على (QO) في O. إذن (BD) يعامد في النقطة نفسها O مستقيمين متقاطعين (AC) و(QO) من المستوي (ACQ)، فهو عمودي على هذا المستوي ✓.\nولو كان (BD) عموديًّا على (BCQ) لعامد (BC) المارّ من B، والمثلّث BCD قائم في C لا في B؛ وكذلك (BAS): المثلّث BAD قائم في A لا في B.\nأمّا (ACR) فيحوي (AC) العمودي على (BD) في O، لكنّ مستقيمًا واحدًا لا يكفي: لو كان (BD) عموديًّا على (ACR) لعامد (OR) في O، والمثلّث ODR قائم في D لأنّ الحرف (DR) عمودي على مستوي القاعدة، فزاويته عند O حادّة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.esp.cube-pave",
+        "math.esp.solides-espace"
+      ]
+    }
+  ]
+}

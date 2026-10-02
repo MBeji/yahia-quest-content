@@ -1,0 +1,127 @@
+{
+  "title": "🏛️ مناظرة 2012 · التمرين 1 ⭐⭐: أسئلة اختيار من متعدّد — متراجحة وقابلية القسمة ومثلّث في مكعّب",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 24,
+  "questions": [
+    {
+      "prompt": "نحلّ في ℝ المتراجحة التالية:\n6x − 5 < 4x + 1\nما الكتابة المكافئة التي نحصل عليها بعد جمع حدود x في طرف والثوابت في الطرف الآخر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x < 6"
+        },
+        {
+          "id": "b",
+          "text": "10x < 6",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "c",
+          "text": "2x < −4",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "10x < −4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نطرح 4x من الطرفين ونضيف 5 إلى الطرفين، فتصير المتراجحة:\n6x − 4x < 1 + 5\nأي 2x < 6 ✓.\nعند نقل حدّ إلى الطرف الآخر تتغيّر إشارته. نقل 4x دون تغيير إشارته يعطي 10x بدل 2x، ونقل −5 دون تغيير إشارته يعطي الثابت −4 بدل 6؛ والجمع بين الخطأين يعطي 10x < −4.",
+      "difficulty": 1,
+      "competencies": [
+        "math.alg.inequations"
+      ]
+    },
+    {
+      "prompt": "نحلّ في ℝ المتراجحة التالية :\n6x − 5 < 4x + 1\nأيّ المجالات التالية يمثّل مجموعة حلولها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "]3 ; +∞[",
+          "misconceptionTag": "math.num.ordre-inverse-a-tort"
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; 3["
+        },
+        {
+          "id": "c",
+          "text": "]−∞ ; −3[",
+          "misconceptionTag": "math.int.produit-signes-negatifs"
+        },
+        {
+          "id": "d",
+          "text": "]−3 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نجمع الحدود:\n6x − 4x < 1 + 5\n2x < 6\nنقسم الطرفين على 2، وهو عدد موجب، فيبقى اتّجاه التراجح: x < 3. مجموعة الحلول ]−∞ ; 3[ ✓، والقوس مفتوح عند 3 لأنّ التراجح صارم.\nالخطأ الشائع: قلب اتّجاه التراجح دون سبب فنجد ]3 ; +∞[. ومن جمع حدود x في الطرف الأيمن يصل إلى −6 < −2x، ثمّ يقسم على −2 فيقلب الاتّجاه ويجد 3 > x، وهي النتيجة نفسها؛ فإن أخطأ في إشارة خارج القسمة فوجد −3 بدل 3 وصل إلى x < −3 أي ]−∞ ; −3[، وإن نسي فوق ذلك قلب الاتّجاه وجد ]−3 ; +∞[.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.inequations"
+      ]
+    },
+    {
+      "prompt": "العدد التالي يقبل القسمة على :\n2²⁰¹⁰ + 2²⁰¹¹ + 2²⁰¹²",
+      "options": [
+        {
+          "id": "a",
+          "text": "10",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نخرج العامل المشترك الأصغر 2²⁰¹⁰:\n2²⁰¹⁰ × (1 + 2 + 4) = 7 × 2²⁰¹⁰\nوبما أنّ 2²⁰¹⁰ = 2 × 2²⁰⁰⁹ فإنّ:\n7 × 2²⁰¹⁰ = 14 × 2²⁰⁰⁹\nفالعدد مضاعف للعدد 14 ✓.\nوتحليله إلى عوامل أوّليّة لا يحوي إلّا العاملين 2 و 7، فلا يقبل القسمة على 3 ولا على 5، ومنه لا يقبل القسمة على 12 ولا على 15 ولا على 10.\nالخطأ الشائع: الاكتفاء بجزء من الشرط؛ فالعدد زوجي ويقبل القسمة على 4 فيُظنّ أنّه يقبل القسمة على 10 وعلى 12، بينما ينقصه العامل 5 ليقبل القسمة على 10، والعامل 3 ليقبل القسمة على 12.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH مكعّب. ما طبيعة المثلّث CEH ؟\n<svg viewBox=\"0 0 240 210\"><title>مكعّب ABCDEFGH</title><path d=\"M40 65 L85 30 L195 140 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M85 140 L195 140 M85 140 L85 30 M40 175 L85 140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M40 175 L150 175 M150 175 L150 65 M150 65 L40 65 M40 65 L40 175 M195 140 L195 30 M195 30 L85 30 M150 175 L195 140 M150 65 L195 30 M40 65 L85 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 65 L85 30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M85 30 L195 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M40 65 L195 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"175\" r=\"3.2\"/><circle cx=\"150\" cy=\"175\" r=\"3.2\"/><circle cx=\"150\" cy=\"65\" r=\"3.2\"/><circle cx=\"40\" cy=\"65\" r=\"3.2\"/><circle cx=\"85\" cy=\"140\" r=\"3.2\"/><circle cx=\"195\" cy=\"140\" r=\"3.2\"/><circle cx=\"195\" cy=\"30\" r=\"3.2\"/><circle cx=\"85\" cy=\"30\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"161\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"165\" y=\"81\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"28\" y=\"59\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"74\" y=\"154\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"208\" y=\"144\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"208\" y=\"27\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"74\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متقايس الأضلاع"
+        },
+        {
+          "id": "b",
+          "text": "قائم في H"
+        },
+        {
+          "id": "c",
+          "text": "متقايس الضلعين وليس قائمًا"
+        },
+        {
+          "id": "d",
+          "text": "قائم في E",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الحرف (HE) عمودي على الحرفين (HD) و(HG) لأنّ الوجهين EADH و EFGH مربّعان، وهما متقاطعان في H ومحتويان في المستوي (DCGH)، إذن (HE) عمودي على هذا المستوي ومنه يعامد كلّ مستقيماته المارّة من H، ومنها (HC). فالمثلّث CEH قائم في H ✓.\nوللتأكّد بالأطوال، إذا كان حرف المكعّب a فإنّ EH = a و HC = a√2 (قطر وجه) و EC = a√3 (قطر المكعّب). الأطوال الثلاثة مختلفة، فالمثلّث ليس متقايس الضلعين، وأمّا EH² + HC² = a² + 2a² = 3a² = EC² فتثبت أنّه قائم في H بحسب عكس مبرهنة فيثاغورس. ولا يكون قائمًا في E لأنّ وتره سيكون [HC]، وهو ليس أطول الأضلاع.",
+      "difficulty": 2,
+      "competencies": [
+        "math.esp.cube-pave",
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}
