@@ -1,0 +1,129 @@
+{
+  "title": "🏛️ مناظرة 2020 (تقني) · التمرين 1 ⭐⭐: أسئلة اختيار من متعدّد — مربّع مجموع وقوّة قوّة وإشارة فرق وزيادة بنسبة مائوية",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 27,
+  "questions": [
+    {
+      "prompt": "أيّ الكتابات التالية تساوي العدد التالي ؟\n(√5 + 1)²",
+      "options": [
+        {
+          "id": "a",
+          "text": "6",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "2(√5 + 1)",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "c",
+          "text": "6 + 2√5"
+        },
+        {
+          "id": "d",
+          "text": "8√5",
+          "misconceptionTag": "math.alg.termes-semblables-par-coefficient"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نطبّق المتطابقة (a + b)² = a² + 2ab + b² مع a = √5 و b = 1: (√5 + 1)² = (√5)² + 2 × √5 × 1 + 1² = 5 + 2√5 + 1 = 6 + 2√5 ✓ لأنّ (√5)² = 5. الخطأ الشائع إسقاط الحدّ الأوسط 2ab فيبقى 5 + 1 = 6؛ أو ضرب العدد في الأسّ فيُكتب (√5 + 1)² = 2(√5 + 1)، والصواب أنّ الأسّ 2 يعني ضرب العدد في نفسه؛ أو جمع الحدّين 6 و 2√5 كأنّهما متشابهان فيخرج (6 + 2)√5 = 8√5، والعدد 6 لا يُجمع مع معامل الجذر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "أيّ قوّة من القوى التالية تساوي العدد التالي ؟\n(4²)³",
+      "options": [
+        {
+          "id": "a",
+          "text": "4¹²"
+        },
+        {
+          "id": "b",
+          "text": "2¹²"
+        },
+        {
+          "id": "c",
+          "text": "4⁵",
+          "misconceptionTag": "math.num.puissances-puissance-exposants-additionnes"
+        },
+        {
+          "id": "d",
+          "text": "2⁷",
+          "misconceptionTag": "math.num.puissances-puissance-exposants-additionnes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "قوّة القوّة: (aᵐ)ⁿ = a^(m × n)، فالدليلان يُضربان. إذن (4²)³ = 4^(2 × 3) = 4⁶. ولمّا كان 4 = 2² فإنّ 4⁶ = (2²)⁶ = 2^(2 × 6) = 2¹² ✓. الخطأ الشائع جمع الدليلين 2 + 3 بدل ضربهما فيخرج 4⁵؛ ومن كتب 4² = 2⁴ ثمّ جمع الدليلين 4 + 3 وجد 2⁷؛ ومن ضاعف الدليل 6 عند تحويل 4 إلى 2² وأبقى الأساس 4 وجد 4¹²، وهو يساوي 2²⁴ لا 2¹².",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "a و b عددان حقيقيّان يحقّقان:\na − b = 3,14 − π\nأيّ الأحكام التالية صحيح، مع حجّته ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "a < b ، لأنّ π أكبر من 3,14"
+        },
+        {
+          "id": "b",
+          "text": "a = b ، لأنّ π يساوي 3,14",
+          "misconceptionTag": "math.num.irrationnel-traite-comme-rationnel"
+        },
+        {
+          "id": "c",
+          "text": "a > b ، لأنّ π أصغر من 3,14",
+          "misconceptionTag": "math.num.approximation-defaut-exces-confondues"
+        },
+        {
+          "id": "d",
+          "text": "a > b ، لأنّ الفرق π − 3,14 موجب",
+          "misconceptionTag": "math.int.subtract-smaller-from-larger"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحكم بإشارة الفرق: a − b < 0 تعني a < b. ونعلم أنّ 3,14 < π < 3,15، أي أنّ 3,14 قيمة تقريبية بالنقصان للعدد π، فالعدد 3,14 − π سالب. إذن a − b < 0، أي a < b ✓. الخطأ الشائع قلب النقصان والزيادة فاعتبار 3,14 أكبر من π، فيصير الفرق موجبًا ويُستنتج a > b؛ أو عدّ π مساويًا 3,14 تمامًا فيُستنتج a = b، والعدد π أصمّ لا يساويه أيّ عدد عشري؛ أو طرح الأصغر من الأكبر فكتابة π − 3,14 بدل 3,14 − π، فيخرج فرق موجب، مع أنّ a − b هو مقابل هذا الفرق.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "يبلغ المرتّب الشهري لموظّف 1450 دينارًا. بعد زيادة بنسبة 4% في هذا المرتّب، ما مرتّبه الشهري الجديد بالدينار ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "58",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "1454",
+          "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat"
+        },
+        {
+          "id": "c",
+          "text": "1508"
+        },
+        {
+          "id": "d",
+          "text": "1850"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الزيادة هي 4% من المرتّب الأوّل: 1450 × 4/100 = 58 دينارًا، فالمرتّب الجديد هو 1450 + 58 = 1508 دينارًا ✓ (أو مباشرة 1450 × 1,04 = 1508). الخطأ الشائع إضافة العدد 4 كما هو فيخرج 1454، والزيادة الحقيقية 58 لا 4؛ أو الاكتفاء بقيمة الزيادة 58 دون إضافتها إلى المرتّب الأوّل؛ أو تحويل 4% إلى 400 بالضرب في 100 بدل القسمة على 100 فيخرج 1450 + 400 = 1850.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prop.pourcentages"
+      ]
+    }
+  ]
+}

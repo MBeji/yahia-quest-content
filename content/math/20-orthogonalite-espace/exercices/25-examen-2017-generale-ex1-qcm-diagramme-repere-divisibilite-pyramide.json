@@ -70,7 +70,7 @@
         {
           "id": "b",
           "text": "(1/2 ; 1/2)",
-          "misconceptionTag": "math.vec.quadrant-signes-confondus"
+          "misconceptionTag": "math.int.signe-ignore-dans-somme"
         },
         {
           "id": "c",
@@ -125,7 +125,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "نضع n = 20172017 ونحلّل العدد N = n² − 4 بمتطابقة الفرق بين مربّعين:\nN = n² − 2² = (n − 2) × (n + 2)\nأي أنّ N هو جداء العددين 20172015 و 20172019.\nالعدد 20172015 ينتهي بالرقم 5 فيقبل القسمة على 5، ومجموع أرقامه 18 فيقبل القسمة على 3 وعلى 9، إذن هو مضاعف للعدد 15، وبالتالي N مضاعف للعدد 15 ✓.\nوالعدد N فرديّ لأنّه جداء عددين فرديّين، فلا يقبل القسمة على 6 ولا على 18 مع أنّه مضاعف للعدد 9؛ ولا يقبل القسمة على 25 لأنّ رقمي آحاده وعشراته 85.\nالخطأ الشائع: الاكتفاء بمعيار واحد؛ فقبول القسمة على 3 يوهم بقبول 6، وقبول القسمة على 9 يوهم بقبول 18، مع أنّ العدد فرديّ، وانتهاء العدد بالرقم 5 يوهم بقبول 25 مع أنّ آخر رقمين فيه 85.",
+      "explanation": "نضع n = 20172017 ونحلّل العدد N = n² − 4 بمتطابقة الفرق بين مربّعين:\nN = n² − 2² = (n − 2) × (n + 2)\nأي أنّ N هو جداء العددين 20172015 و 20172019.\nالعدد 20172015 ينتهي بالرقم 5 فيقبل القسمة على 5، ومجموع أرقامه 18 فيقبل القسمة على 3 وعلى 9، إذن هو مضاعف للعدد 15، وبالتالي N مضاعف للعدد 15 ✓.\nوالعدد N فرديّ لأنّه جداء عددين فرديّين، فلا يقبل القسمة على 6 ولا على 18 مع أنّه مضاعف للعدد 9.\nولا يقبل القسمة على 25: يقبلها عدد إذا كان العدد المكوّن من رقمَي عشراته وآحاده 00 أو 25 أو 50 أو 75. والرقمان الأخيران من N يُحسبان من الرقمين الأخيرين للعدد 20172017، وهما 17:\n17² − 4 = 289 − 4 = 285\nفالرقمان الأخيران من N هما 85.\nالخطأ الشائع: الاكتفاء بمعيار واحد؛ فقبول القسمة على 3 يوهم بقبول 6، وقبول القسمة على 9 يوهم بقبول 18، مع أنّ العدد فرديّ، وانتهاء العدد بالرقم 5 يوهم بقبول 25 مع أنّ آخر رقمين فيه 85.",
       "difficulty": 2,
       "competencies": [
         "math.num.criteres-divisibilite",
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "prompt": "SABCD هرم منتظم قاعدته المربّع ABCD الذي طول ضلعه a ومركزه O، وطول حرفه SA يساوي a حيث a عدد موجب. ما قيس الارتفاع SO ؟\n<svg viewBox=\"0 0 300 232\"><title>هرم منتظم SABCD</title><path d=\"M157.5 73.1 L115 145 M115 145 L70 185 M115 145 L245 145 M157.5 73.1 L157.5 165 M70 185 L245 145 M200 185 L115 145\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M157.5 73.1 L70 185 L200 185 Z\" fill=\"#0f6e56\" stroke=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.10\"/><path d=\"M157.5 73.1 L70 185 M157.5 73.1 L200 185 M157.5 73.1 L245 145 M70 185 L200 185 M200 185 L245 145\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M157.5 151 L171.5 147.8 L171.5 161.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"185\" r=\"3.4\"/><circle cx=\"200\" cy=\"185\" r=\"3.4\"/><circle cx=\"245\" cy=\"145\" r=\"3.4\"/><circle cx=\"115\" cy=\"145\" r=\"3.4\"/><circle cx=\"157.5\" cy=\"165\" r=\"3.4\"/><circle cx=\"157.5\" cy=\"73.1\" r=\"3.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"157.5\" y=\"64.1\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"58\" y=\"201\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"212\" y=\"201\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"259\" y=\"150\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"103\" y=\"140\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"163.5\" y=\"185\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"135\" y=\"203\" text-anchor=\"middle\" fill=\"#0f6e56\">a</text><text x=\"108.5\" y=\"119.8\" text-anchor=\"middle\" fill=\"#0f6e56\">a</text></g></svg>",
+      "prompt": "SABCD هرم منتظم قاعدته المربّع ABCD الذي طول ضلعه a ومركزه O، وطول حرفه SA يساوي a حيث a عدد موجب. ما قيس الارتفاع SO ؟\n<svg viewBox=\"0 0 300 232\"><title>هرم منتظم SABCD</title><path d=\"M157.5 63 L115 145 M115 145 L70 185 M115 145 L245 145 M157.5 63 L157.5 165 M70 185 L245 145 M200 185 L115 145\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M157.5 63 L70 185 L200 185 Z\" fill=\"#0f6e56\" stroke=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" opacity=\"0.10\"/><path d=\"M157.5 63 L70 185 M157.5 63 L200 185 M157.5 63 L245 145 M70 185 L200 185 M200 185 L245 145\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M157.5 151 L171.5 147.8 L171.5 161.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"185\" r=\"3.4\"/><circle cx=\"200\" cy=\"185\" r=\"3.4\"/><circle cx=\"245\" cy=\"145\" r=\"3.4\"/><circle cx=\"115\" cy=\"145\" r=\"3.4\"/><circle cx=\"157.5\" cy=\"165\" r=\"3.4\"/><circle cx=\"157.5\" cy=\"63\" r=\"3.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"157.5\" y=\"54\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"58\" y=\"201\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"212\" y=\"201\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"259\" y=\"150\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"103\" y=\"140\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"163.5\" y=\"185\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"135\" y=\"203\" text-anchor=\"middle\" fill=\"#0f6e56\">a</text><text x=\"103\" y=\"121\" text-anchor=\"middle\" fill=\"#0f6e56\">a</text></g></svg>",
       "options": [
         {
           "id": "a",
@@ -141,15 +141,18 @@
         },
         {
           "id": "b",
-          "text": "a"
+          "text": "a",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
           "id": "c",
-          "text": "a√3/2"
+          "text": "a√3/2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
           "id": "d",
-          "text": "a√2"
+          "text": "a√2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         }
       ],
       "correctOption": "a",

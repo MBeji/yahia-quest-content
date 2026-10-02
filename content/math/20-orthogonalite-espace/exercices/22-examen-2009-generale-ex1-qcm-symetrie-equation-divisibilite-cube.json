@@ -12,7 +12,7 @@
       "answerKey": {
         "value": 48
       },
-      "explanation": "نجمع أرقام كلّ مجموعة من المجموعات الأربع في العدد: 11 ثمّ 133 ثمّ 557 ثمّ 796، فنجد على التوالي 2 و 7 و 17 و 22. ثمّ نجمع هذه النتائج:\n2 + 7 + 17 + 22 = 48\nفمجموع أرقام العدد هو 48 ✓. هذا المجموع هو الذي نستعمله في معياري القسمة على 3 وعلى 9، أمّا القسمة على 4 فيكفي فيها آخر رقمين.",
+      "explanation": "نجمع أرقام كلّ مجموعة من المجموعات الأربع في العدد: 11 ثمّ 133 ثمّ 557 ثمّ 796، فنجد على التوالي 2 و 7 و 17 و 22. ثمّ نجمع هذه النتائج:\n2 + 7 + 17 + 22 = 48\nفمجموع أرقام العدد هو 48 ✓.",
       "difficulty": 1,
       "competencies": [
         "math.num.criteres-divisibilite"
@@ -20,7 +20,7 @@
     },
     {
       "type": "numeric",
-      "prompt": "ABCD مربّع و[BD] أحد قطريه. ما قيس الزاوية DBC بالدرجة ؟ اكتب العدد.",
+      "prompt": "ABCD مربّع و[BD] أحد قطريه. ما قيس الزاوية DBC بالدرجة ؟ اكتب العدد.\n<svg viewBox=\"0 0 200 180\"><title>مربّع ABCD وقطره [BD]</title><path d=\"M40 30 L40 150 L160 150 L160 30 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M40 150 L160 30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"30\" r=\"3.2\"/><circle cx=\"40\" cy=\"150\" r=\"3.2\"/><circle cx=\"160\" cy=\"150\" r=\"3.2\"/><circle cx=\"160\" cy=\"30\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"28\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"28\" y=\"166\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"172\" y=\"166\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"172\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">D</text></g></svg>",
       "answerKey": {
         "value": 45
       },
@@ -35,11 +35,13 @@
       "options": [
         {
           "id": "a",
-          "text": "المستقيم (OI)"
+          "text": "المستقيم (OI)",
+          "misconceptionTag": "math.vec.symetrie-regle-confondue"
         },
         {
           "id": "b",
-          "text": "المستقيم (OJ)"
+          "text": "المستقيم (OJ)",
+          "misconceptionTag": "math.vec.symetrie-regle-confondue"
         },
         {
           "id": "c",
@@ -120,7 +122,7 @@
       ]
     },
     {
-      "prompt": "ABCDSPQR مكعّب: قاعدته السفلى ABCD، ورؤوس قاعدته العليا P و Q و R و S تعلو على التوالي B و C و D و A.\nنذكّر أنّ مستقيمًا عموديًّا على مستوٍ يعامد كلّ مستقيمات هذا المستوي.\nالمستقيم (BD) عمودي على المستوي:\n<svg viewBox=\"0 0 240 210\"><title>مكعّب ABCDSPQR</title><path d=\"M85 140 L195 140 M85 140 L85 30 M40 175 L85 140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M40 175 L150 175 M150 175 L150 65 M150 65 L40 65 M40 65 L40 175 M195 140 L195 30 M195 30 L85 30 M150 175 L195 140 M150 65 L195 30 M40 65 L85 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 175 L195 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"175\" r=\"3.2\"/><circle cx=\"150\" cy=\"175\" r=\"3.2\"/><circle cx=\"150\" cy=\"65\" r=\"3.2\"/><circle cx=\"40\" cy=\"65\" r=\"3.2\"/><circle cx=\"85\" cy=\"140\" r=\"3.2\"/><circle cx=\"195\" cy=\"140\" r=\"3.2\"/><circle cx=\"195\" cy=\"30\" r=\"3.2\"/><circle cx=\"85\" cy=\"30\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"161\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"165\" y=\"81\" text-anchor=\"middle\" fill=\"#0f172a\">Q</text><text x=\"28\" y=\"59\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"74\" y=\"154\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"208\" y=\"144\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"208\" y=\"27\" text-anchor=\"middle\" fill=\"#0f172a\">R</text><text x=\"74\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\">S</text></g></svg>",
+      "prompt": "ABCDSPQR مكعّب: قاعدته السفلى ABCD، ورؤوس قاعدته العليا P و Q و R و S تعلو على التوالي B و C و D و A.\nالمستقيم (BD) عمودي على المستوي:\n<svg viewBox=\"0 0 240 210\"><title>مكعّب ABCDSPQR</title><path d=\"M85 140 L195 140 M85 140 L85 30 M40 175 L85 140\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M40 175 L150 175 M150 175 L150 65 M150 65 L40 65 M40 65 L40 175 M195 140 L195 30 M195 30 L85 30 M150 175 L195 140 M150 65 L195 30 M40 65 L85 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 175 L195 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"175\" r=\"3.2\"/><circle cx=\"150\" cy=\"175\" r=\"3.2\"/><circle cx=\"150\" cy=\"65\" r=\"3.2\"/><circle cx=\"40\" cy=\"65\" r=\"3.2\"/><circle cx=\"85\" cy=\"140\" r=\"3.2\"/><circle cx=\"195\" cy=\"140\" r=\"3.2\"/><circle cx=\"195\" cy=\"30\" r=\"3.2\"/><circle cx=\"85\" cy=\"30\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"161\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"165\" y=\"81\" text-anchor=\"middle\" fill=\"#0f172a\">Q</text><text x=\"28\" y=\"59\" text-anchor=\"middle\" fill=\"#0f172a\">P</text><text x=\"74\" y=\"154\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"208\" y=\"144\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"208\" y=\"27\" text-anchor=\"middle\" fill=\"#0f172a\">R</text><text x=\"74\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\">S</text></g></svg>",
       "options": [
         {
           "id": "a",
@@ -143,7 +145,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "يكون المستقيم عموديًّا على مستوٍ إذا عامد مستقيمين متقاطعين من هذا المستوي.\nفي المستوي (ACQ): المستقيم (BD) يعامد (AC) لأنّ قطري المربّع ABCD متعامدان، ويعامد (CQ) لأنّ الحرف (CQ) عمودي على مستوي القاعدة الذي يحوي (BD). والمستقيمان (AC) و(CQ) متقاطعان في C، إذن (BD) عمودي على (ACQ) ✓.\nالمستوي (BCQ) يحوي الحرفين (BP) و(CQ) وكلاهما عمودي على (BD)، لكنّهما متوازيان فلا يكفيان؛ وفعلًا لو كان (BD) عموديًّا على (BCQ) لعامد المستقيم (BC) المارّ بالنقطة B، والمثلّث BCD قائم في C لا في B.\nوالمستوي (BAS) يحوي الحرفين المتوازيين (BP) و(AS)، والمثلّث BAD قائم في A لا في B.\nأمّا (ACR) فيحوي (AC) العمودي على (BD)، غير أنّ مستقيمًا واحدًا لا يكفي، و(BD) ليس عموديًّا على (CR) الذي هو قطر الوجه CDRQ.",
+      "explanation": "لتكن O مركز المربّع ABCD، أي نقطة تقاطع قطريه؛ وهي من (AC) فهي من المستوي (ACQ). قطرا المربّع متعامدان، فالمستقيم (BD) عمودي على (AC) في O. والقطعتان [QB] و[QD] قطران لوجهين من المكعّب فهما متقايستان، فالمثلّث QBD متقايس الضلعين قمّته Q. وبما أنّ O منتصف [BD] فإنّ الموسّط (QO) هو أيضًا ارتفاع له: (BD) عمودي على (QO) في O. إذن (BD) يعامد في النقطة نفسها O مستقيمين متقاطعين (AC) و(QO) من المستوي (ACQ)، فهو عمودي على هذا المستوي ✓.\nولو كان (BD) عموديًّا على (BCQ) لعامد (BC) المارّ من B، والمثلّث BCD قائم في C لا في B؛ وكذلك (BAS): المثلّث BAD قائم في A لا في B.\nأمّا (ACR) فيحوي (AC) العمودي على (BD) في O، لكنّ مستقيمًا واحدًا لا يكفي: لو كان (BD) عموديًّا على (ACR) لعامد (OR) في O، والمثلّث ODR قائم في D لأنّ الحرف (DR) عمودي على مستوي القاعدة، فزاويته عند O حادّة.",
       "difficulty": 2,
       "competencies": [
         "math.esp.cube-pave",

@@ -21,27 +21,27 @@
    vérifier « Appliquer le contenu », « Vérifier que le contenu est bien en base », « Journaliser la release » ;
    puis `content-drift.yml` ; l'issue `content-drift` doit être close.
 
-## Lots math 9ᵉ (au 2026-10-01 16 h UTC)
+## Lots math 9ᵉ (au 2026-10-02 07h40 UTC)
 
-- publiés : L01–L08, L10 à L12, L15 (privé#622, publié et vérifié), L19 ; registre : 149 missions `publiee`.
-- livré, en attente de fusion puis de publication : L13 (ch.09 NN30–35, privé#624) — après la fusion : apply-content math,
-  vérifier les 3 étapes, content-drift, puis flip L13 → publiee (`spec-pub-L13.json` à écrire : ids du registre en `mergee`).
-- en cours : L09 (ch.12 NN16–21 : tour de corrections après audit, auteur ac1b96c173174247c, puis re-vérification par
-  l'auditeur a7a8a473446195cd5 ; étiquettes nouvelles à créer par moi : `math.vec.symetrie-regle-confondue`,
-  `math.prop.pourcentage-base-erronee`) ; L18 (ch.20 NN22–26 : audit en cours, agent a90ba4d07602584aa ; la mission 27 est
-  passée au ch.03 NN31, lot L20) ; L14 (ch.09 NN36–41, auteur a703138b8a79595c8).
-- à lancer : L16/L17 (ch.18 NN29+), L20 (ch.03 NN27–31, dont le fichier 31 déjà écrit), L21 (ch.09 NN47–51), L22 (ch.07 NN25,
-  ch.12 NN22, ch.18 NN42) ; devoirs G2 (ch.04 NN29–33), I (ch.09 NN42–46).
+- publiés et vérifiés (3 étapes apply-content + content-drift) : L01–L13 sauf L09 flip, L15, L18, L19 ; registre : 161 missions `publiee`.
+  Reste à FLIPPER dans le registre (à la prochaine livraison) : L18 → `spec-pub-L18.json` (privé#628 publié). (L09 et L13 sont déjà flippés.)
+- en cours : L14 (ch.09 NN36–41, auteur a703138b8a79595c8), L16 (ch.18 NN29–35, auteur a86e1adf6dd7a4114), L20 (ch.03 NN27–30
+  + le fichier 31 déjà écrit = ex-27 du lot L18, auteur a6b508df10501b321). Un lot = auteur → audit opus en aveugle
+  (`gen-prompt-audit.py` + `auditspec/<LOT>.json`) → tour de corrections de l'auteur (SendMessage) → re-vérification du MÊME
+  auditeur → livraison `deliver-lot.sh` → fusion → apply-content → drift.
+- à lancer : L17 (ch.18 NN36–41, après L16), L21 (ch.09 NN47–48, après L14), L22 (ch.07 NN25, ch.12 NN22, ch.18 NN42 : après
+  L16/L17) ; devoirs G2 (ch.04 NN29–33), I (ch.09 NN42–46, après L14/L21).
 - suites : refaire le devoir 14 de ch.09, corriger les devoirs 11 et 12 de ch.09 ; cours ch.12 (faux : « repère orthonormé exigé
-  pour le milieu » ; (O, I, J) jamais nommé ; enseigne vecteurs et translation) ; cours 04/07/08 ; moteur : équations « 3 − 2x = … »
-  et lettres à apostrophe (« M' ») (tâche #53).
+  pour le milieu » ; (O, I, J) jamais nommé ; enseigne vecteurs et translation) ; cours 04/07/08.
+- moteur (arena) : 3 correctifs d'affichage livrés le 10-02 (#1150 coefficients et lettres primées, #1149 dungeon RTL par la
+  langue du contenu le 10-01, #1152 coche ✓ hors isolat).
 
 ## SVT 9ᵉ (matière `sciences-vie-terre`)
 
 - Lecture faite : 6 sessions (2020, 2021, 2022, 2024, 2025, 2026) — transcriptions dans `en-cours/lecture-9eme/svt/officiel/`
   (à versionner sous `content/programmes-officiels/examens-nationaux/9eme-base/sciences-vie-terre/<année>.md` à la
   première livraison SVT), lignes dans `lines/`.
-- Lot S-L01 (ch.02/05/07 NN7–8) : auteur af789b7b2beb04d47 en écriture. Plan : 27 missions, 5 lots (`gisement/9eme-svt-plan/plan-examens-v1.json`, planificateur du moteur, 0 fautive) ;
+- Lot SVT-L01 (ch.02/05/07 NN7–8, six missions, 36 questions) : auteur FINI (af789b7b2beb04d47), audit opus en cours (ac850d2e96ca57dd5, prompt-audit-SVT-L01.md : l'auditeur peut lire les PDF officiels C03–C06 sous scratchpad/gisement/9eme-sciences-vie-terre/snapshots). À la livraison : copier aussi les transcriptions SVT sous content/programmes-officiels/examens-nationaux/9eme-base/sciences-vie-terre/<année>.md (déjà dans l'arbre partagé), créer le registre web-9eme-base-sciences-vie-terre/gisement.json missions (gen-spec-lot.py est math : à adapter), apply-tags.py met `subject: math` en dur : à adapter pour `bio` ; apply-content subjects=sciences-vie-terre. Plan : 27 missions, 5 lots (`gisement/9eme-svt-plan/plan-examens-v1.json`)
   prompts `prompt-svt-L01..L05.md`, affectations `assign-svt-L01..L05.md`.
 - Campagne « 9ᵉ au patron » (autre session, privé#569/#620, entrée de synchronisation de l'ETUDE.md §8) : SVT publiée — 14 chapitres
   du programme en 01–14 (les 7 anciens en 15–21, optionnels), famille d'étiquettes **`bio.*` (95 ids)** disponible : les distracteurs

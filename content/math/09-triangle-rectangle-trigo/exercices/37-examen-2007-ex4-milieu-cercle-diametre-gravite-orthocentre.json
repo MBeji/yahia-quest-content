@@ -1,0 +1,362 @@
+{
+  "title": "🏛️ مناظرة 2007 · التمرين 4 ⭐⭐⭐⭐: مسألة المنتصف والدائرة المرسومة على قطر — فيثاغورس والمستقيم الرابط بين منتصفين ومركز الثقل وطاليس والمركز القائم",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 37,
+  "questions": [
+    {
+      "prompt": "[AB] قطعة مستقيم و O منتصفها ، والمستقيم Δ هو الموسّط العمودي لـ [AB] ، والنقطة P من Δ حيث OP = OA ، ونعلم أنّ الطول AB بالصنتمتر هو:\nAB = 8\nما طول القطعة [AP] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 276\"><title>القطعة [AB] ومنتصفها O والموسّط العمودي Δ والنقطة P من Δ</title><path d=\"M160 210.4 L160 40.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M34 188.35 L286 188.35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 188.35 L160 62.35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M160 188.35 L160 62.35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M97 193.35 L97 183.35\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M223 193.35 L223 183.35\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M165 125.35 L155 125.35\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M170 188.35 L170 178.35 L160 178.35\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"188.35\" r=\"3.8\"/><circle cx=\"286\" cy=\"188.35\" r=\"3.8\"/><circle cx=\"160\" cy=\"188.35\" r=\"3.8\"/><circle cx=\"160\" cy=\"62.35\" r=\"3.8\"/></g><path d=\"M34 214.35 L286 214.35 M34 209.85 L34 218.85 M286 209.85 L286 218.85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"22\" y=\"205.35\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"298\" y=\"205.35\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"174\" y=\"205.35\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"173\" y=\"62.35\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"174\" y=\"44.3\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">Δ</text><text x=\"160\" y=\"233.35\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">8</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "16√5"
+        },
+        {
+          "id": "b",
+          "text": "16√2",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        },
+        {
+          "id": "c",
+          "text": "4√5",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "4√2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "O منتصف [AB] فـ OA = AB ÷ 2 = 4 ، ومنه OP = OA = 4. والنقطة P من Δ وهو عمودي على (AB) في O ، فالمثلّث AOP قائم في O ووتره [AP]. بنظرية فيثاغورس AP² = OA² + OP² = 16 + 16 = 32 ، ومنه AP = √32 = √(16 × 2) = 4√2 ✓. الخطأ الشائع: أخذ [AB] كاملةً ضلعًا قائمًا بدل OA فنجد AP² = 16 + 64 = 80 أي AP = √80 = 4√5 ؛ أو إخراج العامل 16 من الجذر دون أخذ جذره فنجد √32 = 16√2 ؛ أو الخطأين معًا فنجد 16√5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "Δ هو الموسّط العمودي لـ [AB] ، والنقطة P من Δ.\nأيّ خاصية تبرّر المساواة التالية ؟\nPA = PB\n<svg viewBox=\"0 0 320 216\"><title>المثلّث PAB والموسّط العمودي Δ لـ [AB]</title><path d=\"M160 178.9 L160 5.65\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M34 160 L286 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 160 L160 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M286 160 L160 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M170 160 L170 150 L160 150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"160\" r=\"3.8\"/><circle cx=\"286\" cy=\"160\" r=\"3.8\"/><circle cx=\"160\" cy=\"34\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"22\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"298\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"173\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"174\" y=\"9.65\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">Δ</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "كلّ نقطة من منصّف زاوية تبعد المسافة نفسها عن ضلعيها"
+        },
+        {
+          "id": "b",
+          "text": "كلّ نقطة من دائرة تبعد المسافة نفسها عن مركزها"
+        },
+        {
+          "id": "c",
+          "text": "كلّ نقطة من الموسّط العمودي لقطعة تبعد المسافة نفسها عن طرفيها"
+        },
+        {
+          "id": "d",
+          "text": "كلّ نقطة من مستقيم عمودي على قطعة تبعد المسافة نفسها عن طرفيها"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "P نقطة من الموسّط العمودي Δ للقطعة [AB] ، وكلّ نقطة من الموسّط العمودي لقطعة تبعد المسافة نفسها عن طرفيها ، إذن PA = PB ✓. أمّا خاصية المنصّف فتخصّ زاوية وضلعيها ولا علاقة لها بطرفي القطعة [AB] ، وخاصية الدائرة تعطي بعد النقطة عن المركز لا عن A و B ، وأمّا العمودي على القطعة فلا يكفي أن يكون عموديًّا عليها ، بل يجب أن يمرّ من منتصفها. الخطأ الشائع: الاكتفاء بأنّ Δ عمودي على (AB) دون التحقّق من أنّه يمرّ من المنتصف O ، فنطبّق خاصية لا تصحّ إلّا مع الموسّط العمودي.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "في المثلّث PAB نعلم أنّ الأطوال بالصنتمتر هي:\nPA = PB = 4√2\nAB = 8\nكتب تلميذ ما يلي لتحديد طبيعة هذا المثلّث:\nالخطوة 1: PA² = 32 و PB² = 32 و AB² = 64.\nالخطوة 2: PA² + PB² = 64 = AB² ، إذن المثلّث PAB قائم في A.\nالخطوة 3: PA = PB ، إذن المثلّث PAB متقايس الضلعين.\nفي أيّ خطوة يوجد الخطأ ؟\n<svg viewBox=\"0 0 320 248\"><title>المثلّث PAB وأطوال أضلاعه</title><path d=\"M34 160 L286 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 160 L160 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M286 160 L160 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M98.94 102.13 L91.87 95.06 M102.13 98.94 L95.06 91.87\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M228.13 95.06 L221.06 102.13 M224.94 91.87 L217.87 98.94\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"160\" r=\"3.8\"/><circle cx=\"286\" cy=\"160\" r=\"3.8\"/><circle cx=\"160\" cy=\"34\" r=\"3.8\"/></g><path d=\"M34 186 L286 186 M34 181.5 L34 190.5 M286 181.5 L286 190.5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"22\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"298\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"160\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"71\" y=\"93\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">4√2</text><text x=\"249\" y=\"93\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">4√2</text><text x=\"160\" y=\"205\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">8</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "في الخطوة 1"
+        },
+        {
+          "id": "b",
+          "text": "في الخطوة 2"
+        },
+        {
+          "id": "c",
+          "text": "في الخطوة 3"
+        },
+        {
+          "id": "d",
+          "text": "لا يوجد خطأ في هذا الحلّ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "هذا السؤال من نوع اكتشاف الخطأ. الخطوتان 1 و 3 صحيحتان: (4√2)² = 16 × 2 = 32 و 8² = 64 ، وتساوي الضلعين PA و PB يعطي مثلّثًا متقايس الضلعين. أمّا الخطوة 2 ففيها الخطأ: المساواة PA² + PB² = AB² تجعل [AB] هو الوتر ، والوتر يقابل الزاوية القائمة ، فالزاوية القائمة في الرأس P المقابل لـ [AB] لا في A. إذن المثلّث PAB قائم في P ومتقايس الضلعين ✓. الخطأ الشائع: وضع الزاوية القائمة في رأس يمسّ الوتر مع أنّها في الرأس المقابل له.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "[AB] قطعة مستقيم و O منتصفها ، والمستقيم Δ هو الموسّط العمودي لـ [AB] ، والنقطة P من Δ حيث OP = OA ، والمثلّث PAB قائم في P.\nاختر كلّ الحجج التي تثبت أنّ النقطة P تنتمي إلى الدائرة التي قطرها [AB].\n<svg viewBox=\"0 0 320 300\"><title>الدائرة التي قطرها [AB] والمثلّث PAB</title><circle cx=\"160\" cy=\"158.23\" r=\"109.77\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M50.23 158.23 L269.77 158.23\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M50.23 158.23 L160 48.47\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M269.77 158.23 L160 48.47\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M160 158.23 L160 48.47\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M105.12 163.23 L105.12 153.23\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214.88 163.23 L214.88 153.23\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M165 103.35 L155 103.35\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M152.22 56.24 L160 64.02 L167.78 56.24\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50.23\" cy=\"158.23\" r=\"3.8\"/><circle cx=\"269.77\" cy=\"158.23\" r=\"3.8\"/><circle cx=\"160\" cy=\"158.23\" r=\"3.8\"/><circle cx=\"160\" cy=\"48.47\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"37.23\" y=\"163.23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"282.77\" y=\"163.23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"174\" y=\"175.23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"173\" y=\"46.47\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "OP = OA و OA = AB ÷ 2 ، إذن P تنتمي إلى الدائرة"
+        },
+        {
+          "id": "b",
+          "text": "المثلّث PAB قائم في P ووتره [AB] ، إذن P تنتمي إلى الدائرة"
+        },
+        {
+          "id": "c",
+          "text": "PA = PB ، أي أنّ P على بعدين متساويين من A و B ، إذن P تنتمي إلى الدائرة"
+        },
+        {
+          "id": "d",
+          "text": "(OP) عمودي على (AB) في O ، أي أنّ الزاوية AOP قائمة ، إذن P تنتمي إلى الدائرة"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "حجّتان صحيحتان. حجّة البعد عن المركز: الدائرة التي قطرها [AB] مركزها O وشعاعها AB ÷ 2 ، و OP = OA = AB ÷ 2 ، فالنقطة P تبعد عن المركز مسافة الشعاع فهي على الدائرة ✓. وحجّة المثلّث القائم: المثلّث PAB قائم في P ووتره [AB] ، ومركز الدائرة المحيطة بمثلّث قائم هو منتصف وتره ، فالدائرة المحيطة به هي الدائرة التي قطرها [AB] وتمرّ من P ✓. أمّا PA = PB فتقول إنّ P من الموسّط العمودي Δ ولا تقول شيئًا عن بعدها عن O ، وتعامد (OP) و (AB) يتحقّق في كلّ نقاط Δ ولا تنتمي كلّها إلى الدائرة. الخطأ الشائع: الاكتفاء بخاصيّة صحيحة في الشكل (تساوي الضلعين أو التعامد) دون أن تفضي إلى بعد النقطة عن المركز أو إلى كون [AB] وترًا لمثلّث قائم.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABP ، O منتصف [AB] ، والمستقيم المارّ من O والموازي لـ (AP) يقطع (BP) في النقطة M.\nما قيمة النسبة BM/BP ؟\n<svg viewBox=\"0 0 320 194\"><title>المثلّث ABP والمستقيم (OM) الموازي لـ (AP)</title><path d=\"M34 160 L286 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 160 L160 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M286 160 L160 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M97 165 L97 155\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M223 165 L223 155\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M160 160 L223 97\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M98.41 102.66 L99.12 94.88 L91.34 95.59\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M192.91 134.16 L193.62 126.38 L185.84 127.09\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"160\" r=\"3.8\"/><circle cx=\"286\" cy=\"160\" r=\"3.8\"/><circle cx=\"160\" cy=\"160\" r=\"3.8\"/><circle cx=\"160\" cy=\"34\" r=\"3.8\"/><circle cx=\"223\" cy=\"97\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"22\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"298\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"160\" y=\"180\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"173\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"237\" y=\"103\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "c",
+          "text": "2/3"
+        },
+        {
+          "id": "d",
+          "text": "1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلّث BAP النقطة O من [BA] والنقطة M من [BP] و (OM) ∥ (AP) ، فبنظرية طاليس BM/BP = BO/BA = OM/AP. و O منتصف [AB] فـ BO/BA = 1/2 ، ومنه BM/BP = 1/2 ، أي أنّ M منتصف [BP] ✓. الخطأ الشائع: قلب النسبة فنجد BA/BO = 2 ؛ أو أخذ نسبة جزء إلى جزء BO/OA = 1 ، وهي تساوي BM/MP لا BM/BP ؛ أو خلط الحالة بقاعدة مركز الثقل فنقول 2/3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABP ، O منتصف [AB] و M منتصف [BP] ، ونعلم أنّ الطول AP بالصنتمتر هو:\nAP = 4√2\nما طول القطعة [OM] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 194\"><title>المثلّث ABP ومنتصفا [AB] و [BP]</title><path d=\"M34 160 L286 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 160 L160 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M286 160 L160 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M97 165 L97 155\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M223 165 L223 155\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M259.63 126.56 L252.56 133.63 M256.44 123.37 L249.37 130.44\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M196.63 63.56 L189.56 70.63 M193.44 60.37 L186.37 67.44\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M160 160 L223 97\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"160\" r=\"3.8\"/><circle cx=\"286\" cy=\"160\" r=\"3.8\"/><circle cx=\"160\" cy=\"160\" r=\"3.8\"/><circle cx=\"160\" cy=\"34\" r=\"3.8\"/><circle cx=\"223\" cy=\"97\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"22\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"298\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"160\" y=\"180\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"173\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"237\" y=\"103\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"71\" y=\"93\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">4√2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        },
+        {
+          "id": "c",
+          "text": "4√2"
+        },
+        {
+          "id": "d",
+          "text": "8√2",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "O منتصف [AB] و M منتصف [BP] ، فالقطعة [OM] تصل بين منتصفي ضلعين في المثلّث ABP ، وطولها نصف طول الضلع الثالث [AP]: OM = AP ÷ 2 = 4√2 ÷ 2 = 2√2 ✓. الخطأ الشائع: عكس العلاقة فنجد OM = 2 × AP = 8√2 ؛ أو اعتبار القطعتين متساويتين فنجد OM = AP = 4√2 ؛ أو إدخال القسمة على 2 تحت الجذر فنكتب 4√2 = √32 ثمّ √32 ÷ 2 = √16 = 4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "P نقطة من الدائرة التي قطرها [AB] ، و M منتصف [BP] ، والمستقيم (AM) يقطع هذه الدائرة في نقطة ثانية N.\nأيّ استنتاج صحيح ؟\n<svg viewBox=\"0 0 320 300\"><title>الدائرة التي قطرها [AB] والمستقيم (AM) والنقطة N</title><circle cx=\"160\" cy=\"158.23\" r=\"109.77\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M50.23 158.23 L269.77 158.23\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M269.77 158.23 L160 48.47\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M50.23 158.23 L160 48.47\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M50.23 158.23 L247.81 92.37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M269.77 158.23 L247.81 92.37\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M247.45 128.85 L240.38 135.92 M244.27 125.66 L237.2 132.74\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.57 73.96 L185.5 81.03 M189.39 70.78 L182.32 77.85\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50.23\" cy=\"158.23\" r=\"3.8\"/><circle cx=\"269.77\" cy=\"158.23\" r=\"3.8\"/><circle cx=\"160\" cy=\"48.47\" r=\"3.8\"/><circle cx=\"214.88\" cy=\"103.35\" r=\"3.8\"/><circle cx=\"247.81\" cy=\"92.37\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"37.23\" y=\"163.23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"282.77\" y=\"163.23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"160\" y=\"38.47\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"206.88\" y=\"120.35\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"261.81\" y=\"88.37\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "المستقيمان (BN) و (AB) متعامدان"
+        },
+        {
+          "id": "b",
+          "text": "المستقيمان (AM) و (AB) متعامدان"
+        },
+        {
+          "id": "c",
+          "text": "المستقيمان (BN) و (AM) متعامدان"
+        },
+        {
+          "id": "d",
+          "text": "المستقيمان (BN) و (AM) متوازيان",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "N من الدائرة التي قطرها [AB] ، فالمثلّث ANB قائم في N ووتره القطر [AB] ، أي (NA) ⊥ (NB). و N من (AM) فالمستقيم (NA) هو (AM) ، إذن (BN) ⊥ (AM) ✓. الخطأ الشائع: نسيان أنّ المثلّث المحاط بدائرة وأحد أضلاعه قطر لها يكون قائمًا ، أو وضع الزاوية القائمة في A أو في B بدل N فنقول (AM) ⊥ (AB) أو (BN) ⊥ (AB) ؛ أو الخلط بين التعامد والتوازي ، مع أنّ (BN) و (AM) يتقاطعان في N.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABP ، O منتصف [AB] و M منتصف [BP] ، والمستقيم (AM) يقطع المستقيم (OP) في النقطة G ، ونعلم أنّ الطول OP بالصنتمتر هو:\nOP = 4\nما طول القطعة [OG] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 194\"><title>المثلّث ABP والمستقيمان (AM) و (OP) المتقاطعان في G</title><path d=\"M34 160 L286 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 160 L160 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M286 160 L160 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M97 165 L97 155\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M223 165 L223 155\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M160 160 L223 97\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M160 160 L160 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M34 160 L223 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M259.63 126.56 L252.56 133.63 M256.44 123.37 L249.37 130.44\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M196.63 63.56 L189.56 70.63 M193.44 60.37 L186.37 67.44\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"160\" r=\"3.8\"/><circle cx=\"286\" cy=\"160\" r=\"3.8\"/><circle cx=\"160\" cy=\"160\" r=\"3.8\"/><circle cx=\"160\" cy=\"34\" r=\"3.8\"/><circle cx=\"223\" cy=\"97\" r=\"3.8\"/><circle cx=\"160\" cy=\"118\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"22\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"298\" y=\"177\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"160\" y=\"180\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"173\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"237\" y=\"103\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"174\" y=\"122\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "4/3"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "d",
+          "text": "8/3",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(AM) موسّط في المثلّث ABP لأنّ M منتصف [BP] ، و (OP) موسّط فيه لأنّ O منتصف [AB]. فالنقطة G تقاطع موسّطين ، أي أنّها مركز ثقل المثلّث ABP. ومركز الثقل يقع عند ثلثي الموسّط انطلاقًا من الرأس وعند ثلثه انطلاقًا من منتصف الضلع ، فـ OG = (1/3) × OP = 4/3 ✓. الخطأ الشائع: عكس الثلث والثلثين فنجد OG = (2/3) × 4 = 8/3 ؛ أو وضع G في منتصف الموسّط فنجد OG = 4 ÷ 2 = 2 ؛ أو الاكتفاء بالنسبة OG/OP = 1/3 دون ضربها في OP.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "[AB] قطعة مستقيم و O منتصفها ، والمستقيم (OP) عمودي على (AB) في O ، و M منتصف [BP] ، والمستقيم المارّ من M والعمودي على (AB) يقطع (AB) في K ويقطع (AP) في H.\nما قيمة النسبة AP/AH ؟\n<svg viewBox=\"0 0 320 276\"><title>المثلّث ABP والمستقيمان العموديان على (AB) في O وفي K</title><path d=\"M34 223 L286 223\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M286 223 L160 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 223 L223 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M160 223 L160 97\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M223 223 L223 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M97 228 L97 218\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M223 228 L223 218\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M259.63 189.56 L252.56 196.63 M256.44 186.37 L249.37 193.44\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M196.63 126.56 L189.56 133.63 M193.44 123.37 L186.37 130.44\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M170 223 L170 213 L160 213\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M233 223 L233 213 L223 213\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"223\" r=\"3.8\"/><circle cx=\"286\" cy=\"223\" r=\"3.8\"/><circle cx=\"160\" cy=\"223\" r=\"3.8\"/><circle cx=\"160\" cy=\"97\" r=\"3.8\"/><circle cx=\"223\" cy=\"160\" r=\"3.8\"/><circle cx=\"223\" cy=\"223\" r=\"3.8\"/><circle cx=\"223\" cy=\"34\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"22\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"298\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"147\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"147\" y=\"95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"237\" y=\"174\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"236\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"236\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "2/3"
+        },
+        {
+          "id": "c",
+          "text": "4/3"
+        },
+        {
+          "id": "d",
+          "text": "3/2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(MK) و (OP) عموديان على (AB) فهما متوازيان. في المثلّث BOP النقطة M منتصف [BP] والمستقيم (MK) يوازي (OP) ويقطع [BO] في K ، فـ K منتصف [BO] ، أي OK = OB ÷ 2 = 2 ومنه AK = AO + OK = 4 + 2 = 6. وفي المثلّث AKH المستقيمان (OP) و (KH) متوازيان مع O من [AK] و P من [AH] ، فبنظرية طاليس AP/AH = AO/AK = 4/6 = 2/3 ✓. الخطأ الشائع: قلب النسبة فنجد 3/2 ؛ أو اعتبار K هي B فنجد AO/AB = 4/8 = 1/2 ؛ أو الخلط بين الطرفين فنكتب AB/AK = 8/6 = 4/3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "المثلّث AOP قائم في O ، ونعلم أنّ الطولين OA و OP بالصنتمتر هما:\nOA = OP = 4\nوالنقطة H من المستقيم (AP) تحقّق النسبة التالية:\nAP/AH = 2/3\nما طول القطعة [AH] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 290\"><title>المثلّث AOP القائم في O والنقطة H من المستقيم (AP)</title><path d=\"M59.09 235.82 L260.91 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M59.09 235.82 L193.64 235.82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M193.64 235.82 L193.64 101.27\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M126.36 240.82 L126.36 230.82\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M198.64 168.55 L188.64 168.55\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M183.64 235.82 L183.64 225.82 L193.64 225.82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"59.09\" cy=\"235.82\" r=\"3.8\"/><circle cx=\"193.64\" cy=\"235.82\" r=\"3.8\"/><circle cx=\"193.64\" cy=\"101.27\" r=\"3.8\"/><circle cx=\"260.91\" cy=\"34\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.09\" y=\"252.82\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"206.64\" y=\"252.82\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"180.64\" y=\"103.27\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"273.91\" y=\"34\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"126.36\" y=\"271.82\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">4</text><text x=\"204.64\" y=\"173.55\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">4</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "8√2/3",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
+        {
+          "id": "b",
+          "text": "16/3"
+        },
+        {
+          "id": "c",
+          "text": "6√2"
+        },
+        {
+          "id": "d",
+          "text": "12",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المثلّث AOP القائم في O: AP² = OA² + OP² = 16 + 16 = 32 ، ومنه AP = 4√2. ثمّ من AP/AH = 2/3 نجد 2 × AH = 3 × AP ، أي AH = (3/2) × 4√2 = 6√2 ✓. الخطأ الشائع: قلب النسبة فنكتب AH = (2/3) × AP = 8√2/3 ؛ أو حساب الوتر بالجمع AP = 4 + 4 = 8 فنجد AH = (3/2) × 8 = 12 ؛ أو الخطأين معًا فنجد (2/3) × 8 = 16/3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.thales-direct",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "المثلّث PAB قائم في P ، والنقطة M من القطعة [PB] ، والنقطة H من المستقيم (AP) حيث (MH) ⊥ (AB). نريد إثبات أنّ H هي المركز القائم للمثلّث ABM.\nأيّ حجّة تثبت أنّ (AP) ارتفاع في المثلّث ABM ؟\n<svg viewBox=\"0 0 320 276\"><title>المثلّث PAB القائم في P والمستقيم (MH) العمودي على (AB)</title><path d=\"M34 223 L286 223\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M286 223 L160 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 223 L223 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 223 L223 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M223 223 L223 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M152.93 104.07 L160 111.14 L167.07 104.07\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M233 223 L233 213 L223 213\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"223\" r=\"3.8\"/><circle cx=\"286\" cy=\"223\" r=\"3.8\"/><circle cx=\"160\" cy=\"97\" r=\"3.8\"/><circle cx=\"223\" cy=\"160\" r=\"3.8\"/><circle cx=\"223\" cy=\"34\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"22\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"298\" y=\"240\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"147\" y=\"95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text><text x=\"237\" y=\"174\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"236\" y=\"32\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AP) عمودي على (BM) ، لأنّ PAB قائم في P و M من (PB)"
+        },
+        {
+          "id": "b",
+          "text": "(AP) عمودي على (AB) ، لأنّ المثلّث PAB قائم في P"
+        },
+        {
+          "id": "c",
+          "text": "(AP) عمودي على (MH) ، لأنّ المستقيم (MH) عمودي على (AB)"
+        },
+        {
+          "id": "d",
+          "text": "(AP) عمودي على (AM) ، لأنّ M من القطعة [PB]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الارتفاع الصادر من A في المثلّث ABM هو المستقيم المارّ من A والعمودي على الضلع المقابل (BM). والمثلّث PAB قائم في P ، فـ (AP) ⊥ (PB) ، و M من (PB) فالمستقيم (BM) هو (PB) ، إذن (AP) ⊥ (BM) ، فـ (AP) ارتفاع في ABM ✓. وارتفاعه الصادر من M هو (MH) بالتعريف ، و H نقطة تقاطع هذين الارتفاعين ، فهي مركزه القائم. الخطأ الشائع: وضع الزاوية القائمة في A بدل P فنقول (AP) ⊥ (AB) ؛ أو اعتبار أنّ (AP) عمودي على (MH) لمجرّد أنّ (MH) عمودي على (AB) ؛ أو اعتبار (AP) عموديًّا على (AM) لمجرّد أنّ M من [PB].",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "H المركز القائم للمثلّث ABM ، والدائرة التي قطرها [AB] تقطع المستقيم (AM) في نقطة ثانية N.\nأيّ حجّة تثبت أنّ النقاط B و N و H على استقامة واحدة ؟\n<svg viewBox=\"0 0 320 310\"><title>المثلّث ABM ومركزه القائم H والدائرة التي قطرها [AB]</title><circle cx=\"160\" cy=\"185.17\" r=\"92.83\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M67.17 185.17 L252.83 185.17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M252.83 185.17 L206.42 138.75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M67.17 185.17 L206.42 138.75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M67.17 185.17 L206.42 45.92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M206.42 138.75 L206.42 45.92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M252.83 185.17 L206.42 45.92\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.17\" cy=\"185.17\" r=\"3.8\"/><circle cx=\"252.83\" cy=\"185.17\" r=\"3.8\"/><circle cx=\"206.42\" cy=\"138.75\" r=\"3.8\"/><circle cx=\"234.26\" cy=\"129.47\" r=\"3.8\"/><circle cx=\"206.42\" cy=\"45.92\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"54.17\" y=\"190.17\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"265.83\" y=\"190.17\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"198.42\" y=\"155.75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"248.26\" y=\"129.47\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"219.42\" y=\"43.92\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "N منتصف [AM] ، فـ (BN) هو الموسّط الصادر من B ، إذن يمرّ من H"
+        },
+        {
+          "id": "b",
+          "text": "(BN) ينصّف الزاوية ABM ، فهو المنصّف الصادر من B ، إذن يمرّ من H"
+        },
+        {
+          "id": "c",
+          "text": "(BN) عمودي على (AM) في N ، فهو الموسّط العمودي لـ [AM] ، إذن يمرّ من H"
+        },
+        {
+          "id": "d",
+          "text": "(BN) عمودي على (AM) ، فهو الارتفاع الصادر من B ، إذن يمرّ من H"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "N من الدائرة التي قطرها [AB] ، فالمثلّث ANB قائم في N ، أي (BN) ⊥ (AM). فالمستقيم (BN) هو المستقيم المارّ من B والعمودي على الضلع المقابل (AM) في المثلّث ABM ، أي ارتفاعه الصادر من B. والارتفاعات الثلاثة لمثلّث تلتقي في مركزه القائم H ، فـ (BN) يمرّ من H ، أي أنّ B و N و H على استقامة واحدة ✓. الخطأ الشائع: اعتبار (BN) موسّطًا لأنّه يمرّ من N ، مع أنّ N ليست منتصف [AM] ؛ أو الخلط بين الارتفاع والمنصّف ؛ أو الخلط بين الارتفاع والموسّط العمودي ، فالموسّط العمودي يمرّ من منتصف الضلع وN ليست منتصفه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.geo.triangles-base"
+      ]
+    }
+  ]
+}
