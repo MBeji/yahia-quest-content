@@ -23,11 +23,12 @@ for pair in "9eme-sciences-vie-terre:svt" "9eme-svt:svt-liste" "9eme-arabic:arab
 done
 cp $SP/etat-reprise.md $EC/ETAT-REPRISE.md 2>/dev/null
 mkdir -p $EC/svt && cp $SP/gen-exam-assign-subj.py $SP/gen-prompt-svt.py $EC/outils/ 2>/dev/null; cp $SP/gisement/9eme-svt-plan/plan-examens-v1.json $SP/gisement/9eme-svt-plan/gisement.json $EC/svt/ 2>/dev/null; cp $SP/author/exam/prompt-svt-L*.md $SP/author/exam/assign-svt-L*.md $EC/plan/ 2>/dev/null
-# lots en cours (fichiers d'examen non livrés)
-for spec in "08-thales 13 14 15 16 17 18 19 20" "09-triangle-rectangle-trigo 30 31 32 33 34 35 36 37 38 39 40 41" "12-repere-plan 16 17 18 19 20 21" "18-quadrilateres 22 23 24 25 26 27 28" "20-orthogonalite-espace 22 23 24 25 26 27"; do
-  set -- $spec; ch=$1; shift
+# lots en cours (fichiers d'examen non livrés) : « matière/chapitre NN NN … »
+for spec in "math/12-repere-plan 16 17 18 19 20 21" "math/20-orthogonalite-espace 22 23 24 25 26" "math/09-triangle-rectangle-trigo 36 37 38 39 40 41" "math/03-calcul-litteral 27 28 29 30 31" "sciences-vie-terre/02-al-af3al-al-in3ikasiya 07 08" "sciences-vie-terre/05-al-hadm 07 08" "sciences-vie-terre/07-ad-dawaran 07 08"; do
+  set -- $spec; path=$1; shift
+  mkdir -p content/$path/exercices
   for nn in "$@"; do
-    for f in $SH/content/math/$ch/exercices/$nn-examen-*.json; do [ -f "$f" ] && cp "$f" content/math/$ch/exercices/; done
+    for f in $SH/content/$path/exercices/$nn-examen-*.json; do [ -f "$f" ] && cp "$f" content/$path/exercices/; done
   done
 done
 git add -A
