@@ -4,7 +4,7 @@ Auditeur indépendant (consigne `content-ingest/references/gisement-auditeur.md`
 Périmètre : `content/math/03-calcul-litteral/exercices/27…31` (arbre de travail), 29 questions.
 Rien n'est modifié dans le dépôt. Rapport écrit au fil de l'eau.
 
-_En cours — sections ajoutées fichier par fichier._
+_Rapport complet : fichiers 27 à 31, partie transversale et chiffre final._
 
 ## Méthode (rappel court)
 
@@ -73,7 +73,9 @@ Défauts :
 - **[MINEUR · réserve] Q4 — option + donnée = clé.** 1508 est la seule option dont l'écart à la donnée 1450 est
   une autre option (58) : la clé se repère par cohérence sans calculer 4 %. Usage courant du corpus (résultat
   intermédiaire étiqueté `reponse-a-l-autre-inconnue`) ; à garder en connaissance de cause, ou remplacer « 58 »
-  par « 2030 » (4 % lu 40 % : 1450 + 580 ; muette), l'explication disant alors « أو قراءة 4% على أنّها 40% فتخرج زيادة 580 والمرتّب 2030 ».
+  par « 2030 » (4 % lu 40 % : 1450 + 580 ; muette ; écarts à 1450 alors 4, 58, 400, 580, aucun n'est une option),
+  l'explication remplaçant « أو الاكتفاء بقيمة الزيادة 58 دون إضافتها إلى المرتّب الأوّل » par
+  « أو قراءة 4% على أنّها 40% فتخرج زيادة 580 والمرتّب 2030 ».
 
 Verdict 27 : 4/4 clés justes ; 1 majeur (rendu), 2 mineurs. À corriger avant livraison (le majeur seulement est bloquant).
 
@@ -244,7 +246,7 @@ b = (2 − √3)², x(7 + 4√3) = 1 = transcription 2022 technique ex. 2 ; 1a �
 | 4 (multi) | {b, d} | {b, d} | OK · réserve de forme | voir le jugement des cinq arguments |
 | 5 | 7 − 4√3 | d | OK | 1/(7 + 4√3) = 7 − 4√3 (conjugué, ou ab = 1) |
 
-Jugement de chaque argument de Q4, AVANT lecture de la clé : a — invalide (« le différence de deux positifs est
+Jugement de chaque argument de Q4, AVANT lecture de la clé : a — invalide (« la différence de deux positifs est
 toujours positive » est faux : 3 − 5 = −2), conclusion vraie ; b — valide (ab = 1 > 0 ⇒ même signe ; a > 0) ;
 c — invalide et conclusion fausse (4√3 ≈ 6,93, pas 12) ; d — valide (7 et 4√3 positifs, 49 > 48 ⇒ 7 > 4√3) ;
 e — invalide (7 > 4 et √3 > 0 n'entraînent pas 7 > 4√3 : 7 − 4√10 ≈ −5,65 < 0), conclusion vraie. Deux justes,
@@ -300,3 +302,196 @@ Défauts :
   que les formats diffèrent ; à signaler au registre de tranche, sans correctif obligatoire.
 
 Verdict 30 : 5/5 clés justes ; 0 majeur, 2 mineurs. Livrable en l'état (le correctif de longueur est recommandé).
+
+---
+
+## Fichier 31 — `31-examen-2024-technique-ex1-qcm-isolation-pourcentage-carre-difference.json` (autre auteur, jamais audité)
+
+En-tête : d2 · practice · 75/15 · displayOrder 31 · titre « 🏛️ مناظرة 2024 (تقني) · التمرين 1 ⭐⭐: أسئلة اختيار من متعدّد — عزل
+المجهول ونسبة مائوية من كتلة ونشر مربّع فرق » (usage QCM publié, notions seulement). Rampe 1,2,2,2,3.
+Fidélité : 3 − x = 2/3 ; 75 % / 25 % ; 12 غ ; (5 − √5)² = transcription 2024 technique ex. 1, items 1, 2, 3.
+
+Écart sur l'item 4 (patron d'une pyramide) : **justifié**, deux fois. (1) La fiche programme 9ᵉ
+(`programme/9eme-base/maths.md`, ch. 13) l'écrit en toutes lettres : « ⛔ Aucun patron (نشر) : le mot n'apparaît nulle
+part » (l. 9220), et « Ni patron, ni section, ni aire latérale d'un solide » (l. 3083). (2) Un item d'espace n'a pas sa
+place au ch. 03. Les trois items gardés conservent leur substance (isoler, pourcentage d'une masse, carré d'une
+différence à radical) ; les choix officiels sont adaptés : item 1 {1/3, 11/3, 7/3} → Q2 {−1/3, 1/3, −7/3, 7/3}
+(11/3 écarté à raison : avec −7/3 il ferait reconstruire 7/3 par vote — grandeurs 7, 7 ; signe + majoritaire — et
+l'erreur 3 + 2/3 reste en Q1) ; item 2 {7.5, 9, 3} gardés + 16 ; item 3 {30 − 10√5, (√5)², 20} → (√5)² remplacé.
+
+| Q | ma réponse (aveugle) | clé | verdict | motif |
+| --- | --- | --- | --- | --- |
+| 1 | x = 3 − 2/3 | b | OK · étiquettes à revoir | plan 2×2 sur les signes de 3 et 2/3, pas de vote |
+| 2 | 7/3 | d (7/3) | OK · étiquette ambiguë | 9/3 − 2/3 ; plan 2×2 signe × grandeur |
+| 3 | 9 g | c (9 غ) | OK · explication incomplète | 0,75 × 12 |
+| 4 | 5² − 2 × 5 × √5 + (√5)² | a | OK · **doublon de fait avec Q5** | plan 2×2 parfait |
+| 5 | 30 − 10√5 | b | OK · étage gonflé | 25 − 10√5 + 5 ; plan 2×2 parfait |
+
+Recalcul sympy : x = 7/3 (solve) ; options de Q1 = −7/3, 7/3, 11/3, −11/3 ; 1/3 = 3/3 − 2/3 ; −1/3 = 2/3 − 3/3 ;
+9 = 0,75 × 12, 3 = 25 %, 16 = 12 ÷ 0,75 ; (5 − √5)² = 30 − 10√5 ≈ 7,64 ; 30, 20 = 25 − 5, 20 − 10√5. Les quatre options de Q4,
+évaluées, donnent EXACTEMENT les quatre options de Q5 (a → 30 − 10√5, b → 30, c → 20, d → 20 − 10√5).
+
+Étiquettes (libellés `origin/main`) : 2b `frac.entier-converti-en-n-sur-n` (3 = 3/3) exacte ; 3a `reponse-a-l-autre-inconnue`
+(les 25 %) et 3d `operation-inverse-appliquee` (÷ au lieu de ×) exactes ; 4b et 5c `carre-somme-sans-double-produit`,
+4d et 5a `carre-difference-signes` exactes ; 1d `transposition-sans-changer-signe` (3 passé à droite sans changer de
+signe : −x = 2/3 + 3) acceptable. Muets : 2a « −1/3 » (deux erreurs), 3b « 7,5 غ » (geste non reconstructible), 4c
+« 5² − (√5)² » et 5d « 20 » (famille « (a − b)² écrit a² − b² », voir la section transversale).
+
+Programme (R-3) : isoler x dans 3 − x = 2/3 est acquis — `math-7eme/06-equations` (« حلّ معادلةٍ من الشكل ax + b = c »)
+et `math-8eme/04-mua3adalat-daraja-oula` ; pourcentage d'une quantité et coefficient multiplicateur : `math-8eme/05`
+(« حسابُ نسبةٍ مئوية من كمّية ») ; carré d'une différence : ch. 03. Rien n'est hors programme.
+
+Rendu : aucune unité mal ordonnée (Chromium) ; « 3 − x = 2/3 » dans la phrase de Q2 est isolé par `DIGIT_FIRST_FORMULA`
+et s'affiche dans l'ordre ; « 75 % », « 12 غ » se lisent juste. Unité : « غ » (et non « g ») suit l'officiel et le
+précédent publié du gisement (07/14 « كغ ») ; la règle `math-and-notation` (symboles SI) dirait « g » — à trancher une
+fois pour tout le gisement, pas un défaut de ce lot.
+
+Défauts :
+
+- **[MAJEUR] Q4 ↔ Q5 — doublon de fait dans la mission.** Même nombre (5 − √5)², mêmes trois erreurs avec les mêmes
+  étiquettes, options en correspondance un pour un (Q5 = Q4 calculé) : l'élève qui a la clé de l'une a celle de
+  l'autre, et le retour de Q4 (route quête, Q4 avant Q5) livre Q5. L'officiel pose UN item (la valeur). Correctif :
+  **supprimer Q4** et passer Q5 en d2 ; la mission garde 4 questions (rampe 1,2,2,2), comme 27 et 03/16.
+- **[MINEUR] Q5 — difficulté gonflée.** (5 − √5)² est une application directe d'identité, étiquetée d2 partout ailleurs
+  dans la tranche ((√5 + 1)² en 27 Q1, (2 − √3)² en 30 Q2) ; d3 ne tient que par l'ordre. Correctif : `difficulty: 2`
+  (sans objet si Q4 est supprimée, voir ci-dessus).
+- **[MINEUR] Q1/Q2 — étiquettes de transposition.** 1a « x = 2/3 − 3 » et 2c « −7/3 » ont deux chemins : −x passé à
+  droite sans changer de signe (l'étiquette posée) OU −x = 2/3 − 3 puis oubli de la division par −1 — geste nommé
+  exactement par `math.alg.coefficient-non-divise` (« تتوقّف قبل القسمة على معامل المجهول »), et plus fréquent.
+  Règle « deux erreurs, une option » : retirer l'étiquette de 1a et de 2c. À l'inverse 1c « x = 3 + 2/3 », laissée
+  muette, s'obtient par UNE transposition (3 = 2/3 + x, puis 2/3 passé à gauche sans changer de signe : 3 + 2/3 = x) :
+  poser `math.alg.transposition-sans-changer-signe`. Dans l'explication de Q1, remplacer le paragraphe « الخطأ الشائع:
+  نقل −x دون تغيير إشارته … ثمّ إهمال علامة الناقص أمام x. » par
+  « الخطأ الشائع: كتابة −x = 2/3 − 3 ثمّ نسيان القسمة على −1 فيبقى x = 2/3 − 3 (ويعطيه أيضًا نقل −x دون تغيير إشارته)؛ أو نقل 3 دون تغيير إشارته فنكتب −x = 2/3 + 3 ومنه x = −3 − 2/3؛ أو نقل 2/3 دون تغيير إشارته فنكتب 3 + 2/3 = x. »
+  (vérifié : chaque chemin donne l'option nommée ; rendu Chromium sans défaut, « −x », « −1 » et « 3 + 2/3 = x » isolés).
+- **[MINEUR] Q3 — distracteur officiel non expliqué.** L'explication ne dit rien de « 7,5 غ ». Ajouter à la fin :
+  « أمّا 7,5 غ فلا تساوي 75 % من 12 غ، لأنّ 0,75 × 12 = 9. » (vérification seule, sans prêter à l'élève un geste qu'on ne
+  sait pas reconstruire).
+- **[MINEUR · cosmétique] Q2** : l'équation est dans la phrase (« حيث 3 − x = 2/3 فإنّ »), alors que Q1 et l'usage publié
+  (12/20 Q6) la posent seule ; rendu correct, mais pour l'homogénéité : « إذا كان x عددًا حقيقيًّا يحقّق:\n3 − x = 2/3\nفإنّ x يساوي : ».
+- **[NOTE] Q1 → Q2** : Q1 (d1, isoler) donne l'expression dont Q2 (d2) demande la valeur ; acceptable, car Q2 teste un
+  autre geste (9/3 − 2/3, piège 3 = 3/3) et aucune explication de Q1 ne calcule 7/3.
+
+Verdict 31 : 5/5 clés justes ; 1 majeur (Q4/Q5), 3 mineurs + 1 cosmétique. À corriger avant livraison (supprimer Q4).
+
+---
+
+## Partie transversale
+
+### Étiquettes — la famille « (a − b)² développé comme a² − b² »
+
+Occurrences (lues sur `origin/main` + tranche) : **03/22 Q1 c** « (5 + 2√10)/4 » (étiquetée
+`math.alg.difference-carres-confondue`), **09/24 Q5 b** « 12√2 » (même étiquette), **30 Q2 b** « 1 » (muette),
+**31 Q4 c** « 5² − (√5)² » (muette), **31 Q5 d** « 20 » (muette ; l'explication dit « تجمع الخطأين », mais oublier 2ab ET
+rendre +b² négatif, c'est mot pour mot écrire a² − b²), plus **03/25 Q3 c** « b² = 1 » (multi, non étiquetable). Soit
+quatre à cinq questions distinctes étiquetables : le seuil de 3 est franchi, l'erreur se dit en une phrase, et le cours
+du ch. 03 la nomme déjà (« ⚠️ الخلط بين a² − b² و (a − b)² »). Les autres familles muettes de la tranche (conjugué pris
+pour l'opposé, opposé de l'inverse, 4 % lu 400, exposant doublé au changement de base) n'ont qu'une occurrence chacune
+(recherche dans les explications de tout `content/math`) : elles restent muettes.
+
+**L'étiquette posée en 22 Q1 (et en 09/24 Q5) est inexacte** : le libellé de `difference-carres-confondue` (« Tu
+confonds une différence de deux carrés avec un carré : elle se factorise en un produit de la somme par la différence » /
+« تخلط بين فرق مربّعَين والمربّع: فرق المربّعَين يُعمَّل إلى جداء المجموع في الفرق ») corrige le sens de la
+FACTORISATION (a² − b² traité comme un carré) — juste pour 03/12 Q1, 03/18 Q4, 04/28 Q10 — et non le développement
+(a − b)² → a² − b², où l'élève lit une règle de factorisation qui ne répond pas à son geste.
+
+**Nouvelle étiquette proposée** (identifiant libre sur `origin/main`, rendu du libellé arabe vérifié par `splitMathRuns`
+et dans Chromium, même gabarit que `difference-carres-somme-au-lieu-de-difference`) :
+
+```json
+"math.alg.carre-difference-ecrit-difference-carres": {
+  "subject": "math",
+  "labels": {
+    "fr": "Tu développes le carré d'une différence comme une différence de carrés : (a − b)² vaut a² − 2ab + b², pas a² − b²",
+    "en": "You expand the square of a difference as a difference of squares: (a − b)² is a² − 2ab + b², not a² − b²",
+    "ar": "تنشر مربّع الفرق كأنّه فرق مربّعين: (a − b)² تساوي a² − 2ab + b² لا a² − b²"
+  },
+  "competency": "math.alg.identites-remarquables"
+}
+```
+
+À poser sur 30 Q2 b, 31 Q4 c (ou, si Q4 est supprimée, 31 Q5 d, en remplaçant dans son explication « والقيمة 20 تجمع
+الخطأين » par « أو الخلط بين مربّع الفرق وفرق المربّعين فنكتب 5² − (√5)² = 25 − 5 = 20 » — rendu vérifié) ; et, hors tranche,
+à substituer à `difference-carres-confondue` sur 03/22 Q1 c et 09/24 Q5 b (fichiers publiés, à corriger par la session
+de livraison).
+
+Bilan des étiquettes de la tranche : aucune étiquette inventée (toutes dans le registre `origin/main`, `content:check`
+vert) ; inexactes ou ambiguës : 29 Q4 a, 29 Q7 d, 31 Q1 a, 31 Q2 c (à rendre muettes) ; muettes qui méritent une
+étiquette EXISTANTE : 31 Q1 c (`transposition-sans-changer-signe`), 29 Q1 c (`int.produit-signes-negatifs`, sans objet si
+le correctif de vote est pris). Choix déclarés confirmés : 29 Q2 « 0 » muette ; `oppose-inverse-confondus` juste en
+28 Q6 b et 30 Q5 a.
+
+### Programme (R-3) — arbitrages demandés
+
+- (i) 29 Q5 « 8√3 = √n » : technique non enseignée comme telle, mais déductible de deux propriétés enseignées ((√n)² = n
+  au ch. 02 ; (ab)² = a²b² au ch. 16) ; acquis, pas un défaut.
+- (ii) 30 Q5 x(7 + 4√3) = 1, 31 Q1-Q2 (3 − x = 2/3) : équations ax + b = c enseignées en 7ᵉ et 8ᵉ (`math-7eme/06`,
+  `math-8eme/04`), inverse = définition acquise ; acquis.
+- (iii) 27 Q3 : « 3,14 < π < 3,15 … قيمة تقريبية بالنقصان » au ch. 01 (l. 202-203) ; comparaison par le signe de a − b au
+  ch. 17 ; enseigné.
+- Autres : (a ± b)² et a² − b² (ch. 03), conjugué et 1/(√5 + 2) = √5 − 2 (ch. 02, « إنطاق المقام »), signe d'un produit
+  (acquis, relatifs), pourcentage (`math-8eme/05` : « حسابُ نسبةٍ مئوية من كمّية » et coefficient 1 + t/100), puissance
+  de puissance (ch. 16), comparaison par les carrés (ch. 17). **Aucune technique testée n'est ni enseignée ni donnée.**
+
+### Étages
+
+27 practice d2 : juste. 28 boss d3 : juste (Q5, Q7, Q8 vrais d3, Q6 limite). 29 boss d3 : une seule d3 (Q7) et six
+étapes d'un geste — recommandé practice d2 (comme 03/24 et 03/26, même gabarit technique ex. 2), ou justification par
+03/17-18-25. 30 boss d3 : juste (trois vrais d3). 31 practice d2 : juste, mais Q5 d3 est gonflé (→ d2). Rampes toutes
+non décroissantes en ordre de fichier (l'ordre d'émission est donc celui des fichiers).
+
+### Doublons
+
+- Publiés : **28 Q1 = 12-repere-plan/20 Q7** (même (1 + √3)², même clé, 3 options sur 4 identiques) — majeur. Gabarits
+  voisins acceptés (sessions différentes, angles ou options différents) : 27 Q1 ~ 03/16 Q1 et 17/13 Q3 ; 27 Q4 ~ 03/16 Q2 ;
+  29 Q1 ~ 03/25 Q2 ; 30 Q2 ~ 03/25 Q3 ; 30 Q3 ~ 03/19 Q1, 17/16 Q4 ; 28 Q8 ~ 17/10 Q5. Le cadre « نعتبر العدد الحقيقي … ما
+  كتابة … في أبسط صورة ؟ » ne revient PAS dans la tranche (cadres variés ; similarité de cadre max 0,43, 27 Q1 ↔ 17/16 Q1).
+- Internes à une mission : **31 Q4 ↔ Q5** (doublon de fait) — majeur ; 31 Q1 → Q2 acceptable.
+- Entre missions de la tranche : 30 Q4 ↔ 28 Q6 (même tâche, même argument juste) — mineur. Le carré « (p ± √q)² »
+  revient cinq fois (27 Q1, 28 Q1, 30 Q2, 31 Q4, 31 Q5) ; les deux suppressions demandées (28 Q1, 31 Q4) le ramènent à trois
+  items, chacun officiel. Aucune paire de missions ne diffère que par ses nombres.
+- Jaccard de surface (fonctions du moteur, tout `content/math`) : max 0,42 contre le publié (31 Q1 ↔ 04/09 Q6, deux
+  équations différentes) et 0,39 pour 27-30 (28 Q5 ↔ 09/21 Q3) ; 0,36 en interne : conforme à la déclaration de l'auteur,
+  mais la mesure ne voit pas les deux doublons majeurs ci-dessus (énoncés tournés autrement).
+
+### Fuites
+
+Aucune fuite EN AVANT dans 27-30 (ordre d'émission = ordre du fichier ; Q7 de 28 ne livre pas 4 ; Q4 de 29 ne livre pas
+192). 31 Q4 → Q5 en est une (traitée par la suppression de Q4). Au donjon, les prémisses de 28 Q6-Q7 (ab = 1 sur a, b
+génériques), 30 Q4 (a, b, ab = 1 — fait déjà public au corpus) relèvent de la convention des prémisses ; seule celle de
+29 Q5 (« العدد A يساوي 8√3 », lettre de Q4) mérite le petit correctif proposé. Aucune décimale de vérification qui livre
+un verdict ; chaque coche ✓ suit la clé de sa question (27-31 relus).
+
+### Rendu arabe, figures, notation
+
+Un seul défaut d'ordre affiché, **27 Q3 (explication)** : « 3,14 − π » rendu « π − 3,14 ». Cause moteur : `DIGIT_FIRST_FORMULA`
+(arena `src/shared/lib/bidi.ts`) n'admet qu'une lettre latine après l'opérateur. Mesure sur le corpus (`origin/main` + tranche) :
+46 segments arabes « chiffre opérateur … π » non isolés, dont une partie seulement change de sens (les produits et
+sommes « 4 × π », « 12 + 81π » se lisent dans les deux sens ; les différences, non : « 3 − π » en 19/05, « 6 − 2π » en
+09/18, « 3,14 − π » ici) — à remonter côté
+arena (accepter π, σ, Ω dans la classe de lettres), le correctif de contenu de 27 Q3 restant utile tant que le moteur n'a
+pas bougé. Aucune ligne de formule seule refusée par `isDisplayEquation`, aucune paire d'options à virgule arabe, aucun
+« على الشكل التالي » dans un énoncé (les « من الشكل (u + v)(u − v) » des explications de 28 Q5, Q8 et 30 Q3 ne touchent pas
+`FIGURE_REFERENCE`). Aucune figure dans la tranche, et aucune n'y servirait (calcul pur). Balayages : chiffres
+arabo-indiens, LaTeX, `$`, groupes de chiffres à espace simple, radicande arabe, tiret pour moins, virgule arabe en
+notation : 0. `content:check` vert ; `content:qa --strict` : 0 erreur, aucun avertissement sur 27-31 ; clé strictement la
+plus longue : 0/27 (mcq).
+
+---
+
+## Chiffre final
+
+| fichier | questions | clés fausses | critiques | majeurs | mineurs | questions à reprendre |
+| --- | --- | --- | --- | --- | --- | --- |
+| 27 | 4 | 0 | 0 | 1 (Q3 rendu) | 2 | Q3 (obligatoire), Q2 (recommandé), Q4 (au choix) |
+| 28 | 8 | 0 | 0 | 1 (Q1 doublon publié) | 2 | Q1 (supprimer), Q3, Q4 (cosmétique) |
+| 29 | 7 | 0 | 0 | 1 (Q1 vote) | 4 | Q1, Q4, Q5, Q7 + en-tête (étage) |
+| 30 | 5 | 0 | 0 | 0 | 2 | Q4 (longueurs), Q2 (nouvelle étiquette) |
+| 31 | 5 | 0 | 0 | 1 (Q4/Q5 doublon) | 3 (+1 cosmétique) | Q4 (supprimer), Q5, Q1, Q2, Q3 |
+| **total** | **29** | **0** | **0** | **4** | **13** | **4 bloquantes** (27 Q3, 28 Q1, 29 Q1, 31 Q4) ; 15 questions touchées hors options facultatives |
+
+Hors tranche, à transmettre : nouvelle étiquette `math.alg.carre-difference-ecrit-difference-carres` (registre) et
+réétiquetage de 03/22 Q1 c et 09/24 Q5 b ; correctif moteur de `DIGIT_FIRST_FORMULA` (π) ; décision de gisement sur
+« غ / كغ » contre « g / kg ».
+
+Verdict de la tranche : **à corriger avant livraison** (4 majeurs, aucun défaut critique, toutes les clés justes).

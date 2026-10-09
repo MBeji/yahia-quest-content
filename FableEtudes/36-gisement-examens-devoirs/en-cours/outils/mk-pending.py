@@ -11,7 +11,7 @@ json.dump({"lot": lot, "chapitre": d["chapitre"], "nouvelles": d.get("nouvelles"
           open(SP + lot + "-deliver.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 by = {}
 for h in d.get("hors_lot", []):
-    by.setdefault(h["chapitre"], []).append({k: h[k] for k in ("file", "q", "opt", "id", "texte") if k in h})
+    by.setdefault(h["chapitre"], []).append({k: h[k] for k in ("file", "q", "opt", "id", "texte", "remplace") if k in h})
 for ch, o in by.items():
     json.dump({"lot": lot + "-extras", "chapitre": ch, "nouvelles": {}, "options": o},
               open(SP + "%s-extras-%s.json" % (lot, ch[:2]), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
