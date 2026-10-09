@@ -25,7 +25,8 @@
 
 - publiés et vérifiés (3 étapes apply-content + content-drift) : L01–L13 sauf L09 flip, L15, L18, L19 ; registre : 161 missions `publiee`.
   Reste à FLIPPER dans le registre (à la prochaine livraison) : L18 → `spec-pub-L18.json` (privé#628 publié). (L09 et L13 sont déjà flippés.)
-- en cours au 2026-10-02 08h50 UTC : les trois auteurs ont rendu (L14 ch.09 NN36–41 62 Q ; L16 ch.18 NN29–35 73 Q ; L20 ch.03 NN27–31 29 Q dont 31 = ex-L18) ; les trois audits opus en aveugle tournent
+- REPRISE 2026-10-09 13h20 UTC : les quatre agents (auditeurs L14 a0755e58afc4f234e, L16 a91e1972bd3cca321, L20 a40053c95bd3fbf21 ; auteur SVT-L01 af789b7b2beb04d47) ont été coupés le 10-02 ~08h57 UTC par la limite de session (« resets 12pm UTC ») ; renvoyés par SendMessage le 10-09 ~13h20 avec leurs rapports partiels (audit-L14.md 36 ; audit-L16.md 29-31 ; audit-L20.md 27-30 ; SVT : 02/07, 02/08, 05/07 corrigés, reste 05/08, 07/08, ancres, lot-lint, gates, rapport). Aucun commit sur les deux `main` entre-temps. arena#1154 (figures dir=ltr) mergé le 10-02.
+- en cours au 2026-10-02 08h30 UTC : les trois auteurs ont rendu (L14 ch.09 NN36–41 62 Q ; L16 ch.18 NN29–35 73 Q ; L20 ch.03 NN27–31 29 Q dont 31 = ex-L18) ; les trois audits opus en aveugle tournent
   (L14 a0755e58afc4f234e, L16 a91e1972bd3cca321, L20 a40053c95bd3fbf21 ; prompts `prompt-audit-L*.md`, rapports `audit-L*.md` dans author/exam ; specs `auditspec/L*.json`).
   À l'audit rendu : arbitrage → SendMessage à l'auteur (L14 a703138b8a79595c8, L16 a86e1adf6dd7a4114, L20 a6b508df10501b321 : ils sont terminés, un envoi les reprend avec leur contexte) → re-vérification ciblée du MÊME auditeur → `deliver-lot.sh` → fusion → apply-content → drift.
   Livraison L20 : créer aussi l'entrée de registre C34#1 (fichier 31) — `gen-spec-lot.py` la prend du plan v6 (lot L20 = m119 + m123..m130) ; basculer L18 → publiee (`spec-pub-L18.json`).
