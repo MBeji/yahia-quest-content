@@ -354,3 +354,18 @@ finie ; un doute de droits sur un document ⇒ il sort de l'échantillon, sans d
   une glose qui donne k²), une option à deux erreurs qui porte une étiquette, une étiquette voisine
   mais inexacte, un distracteur impossible à obtenir avec les données, une figure qui marque la
   clé.
+- **2026-10-09 — Arabe 9ᵉ : les deux manuels révisés lus, la structure arbitrée (campagne « 9ᵉ au
+  patron »).** Lus à l'image en entier : النّحو العربي **101908** (26 leçons) et أنوار **101909**
+  (le manuel de textes, cinq محاور, tout entier tourné vers le حجاج) ; 11 sujets nationaux relus
+  en image pour vérifier ce qu'évalue l'épreuve (2007–2019 : « الإنشاء », un dialogue argumentatif
+  à rapporter ; 2023–2026 : « دراسة نصّ حجاجيّ » 4 + 6, puis un texte argumentatif de 25 lignes ;
+  **aucune question de بلاغة**). Arbitrages du propriétaire du jour : **la grammaire suit le
+  manuel** (cinq chapitres neufs — relations entre phrases et الحذف, الاستفهام, الشرط, دلالة
+  الزّمان, العدد والمعدود — ; 02, 03, 04, 05, 12–14 réalignés sur leurs leçons ; 01 et 06 en
+  optionnel) ; **la rhétorique est réduite au socle du manuel** (07, 08 ; le reste « للتوسّع »
+  sans item) ; prosodie en section optionnelle ; métalangage du manuel (« حكم المنادى الرّفع »…).
+  **Partage avec le gisement** : la campagne reconstruit **09 (le حجاج du manuel) et 10 (l'étude
+  d'un texte argumentatif au format de l'épreuve)** ; **le chapitre 11 (annales) revient à
+  l'étude 36**, qui y versera les sujets nationaux repris et cités (lot 6) **après la fusion du
+  réalignement**, signalée ici. Les notes de lecture sont sur la branche de sauvegarde
+  `wip/arabe-9eme-lecture-manuels`.
