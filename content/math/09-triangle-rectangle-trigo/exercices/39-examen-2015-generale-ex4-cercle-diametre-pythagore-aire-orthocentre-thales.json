@@ -1,0 +1,339 @@
+{
+  "title": "🏛️ مناظرة 2015 · التمرين 4 ⭐⭐⭐⭐: مسألة الدائرة المرسومة على قطر — فيثاغورس وعلاقة المساحة والمركز القائم وطاليس",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 39,
+  "questions": [
+    {
+      "prompt": "[AB] قطر لدائرة مركزها I ، و C نقطة من هذه الدائرة تخالف A و B.\nما قيس الزاوية ACB ؟\n<svg viewBox=\"0 0 320 300\"><title>دائرة مركزها I وقطرها [AB] ، والنقطة C منها</title><circle cx=\"160\" cy=\"150\" r=\"116\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M44 150 L276 150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M44 150 L127.52 38.64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M276 150 L127.52 38.64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"150\" r=\"3.8\"/><circle cx=\"276\" cy=\"150\" r=\"3.8\"/><circle cx=\"127.52\" cy=\"38.64\" r=\"3.8\"/><circle cx=\"160\" cy=\"150\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"31\" y=\"155\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"289\" y=\"155\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"119.52\" y=\"28.64\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"160\" y=\"168\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "45°"
+        },
+        {
+          "id": "b",
+          "text": "90°"
+        },
+        {
+          "id": "c",
+          "text": "180°",
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
+        },
+        {
+          "id": "d",
+          "text": "360°",
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABC محاط بالدائرة التي قطرها [AB] ، والقطر [AB] أحد أضلاعه ، فهو قائم في الرأس C المقابل للقطر ، أي أنّ قيس الزاوية ACB هو 90° ✓. الخطأ الشائع: الخلط بين القياسات المرجعيّة ، فنكتب 180° وهي قيس الزاوية المستقيمة AIB لأنّ A و I و B على استقامة واحدة ، أو 360° وهي قيس الدورة الكاملة حول المركز I ، مع أنّ الزاوية ACB قائمة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.cercle",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في C ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 5\nAC = 3\nما طول القطعة [BC] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 252\"><title>المثلّث ABC القائم في C</title><path d=\"M34 154.96 L286 154.96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 154.96 L124.72 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M286 154.96 L124.72 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M118.12 42.8 L126.92 49.4 L133.52 40.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"154.96\" r=\"3.8\"/><circle cx=\"286\" cy=\"154.96\" r=\"3.8\"/><circle cx=\"124.72\" cy=\"34\" r=\"3.8\"/></g><path d=\"M34 182.96 L286 182.96 M34 178.46 L34 187.46 M286 178.46 L286 187.46\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"159.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"299\" y=\"159.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"124.72\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"160\" y=\"201.96\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">5</text><text x=\"66.36\" y=\"91.48\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">3</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "16",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "√34",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّث ABC قائم في C ، فوتره الضلع المقابل للزاوية القائمة وهو [AB]. بنظرية فيثاغورس AB² = AC² + BC² ، ومنه BC² = AB² − AC² = 25 − 9 = 16 ، إذن BC = 4 ✓. الخطأ الشائع: اعتبار [AB] ضلعًا قائمًا فنجمع المربّعين ونجد BC² = 25 + 9 = 34 أي BC = √34 ؛ أو التوقّف عند BC² = 16 ونسيان الجذر ؛ أو طرح الطولين مباشرة فنكتب 5 − 3 = 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في C ، و H المسقط العمودي للنقطة C على المستقيم (AB) ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 5\nAC = 3\nBC = 4\nما طول القطعة [CH] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 252\"><title>المثلّث ABC القائم في C والنقطة H المسقط العمودي لـ C على (AB)</title><path d=\"M34 154.96 L286 154.96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 154.96 L124.72 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M286 154.96 L124.72 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M118.12 42.8 L126.92 49.4 L133.52 40.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M124.72 34 L124.72 154.96\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M124.72 144.96 L134.72 144.96 L134.72 154.96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"154.96\" r=\"3.8\"/><circle cx=\"286\" cy=\"154.96\" r=\"3.8\"/><circle cx=\"124.72\" cy=\"34\" r=\"3.8\"/><circle cx=\"124.72\" cy=\"154.96\" r=\"3.8\"/></g><path d=\"M34 188.96 L286 188.96 M34 184.46 L34 193.46 M286 184.46 L286 193.46\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"159.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"299\" y=\"159.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"124.72\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"124.72\" y=\"172.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"160\" y=\"207.96\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">5</text><text x=\"66.36\" y=\"91.48\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">3</text><text x=\"218.36\" y=\"86.48\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">4</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12/5"
+        },
+        {
+          "id": "b",
+          "text": "15/4",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "6/5",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث ABC قائم في C ووتره [AB] ، و [CH] هو الارتفاع الصادر من C لأنّ (CH) ⊥ (AB). نحسب مساحة المثلّث بطريقتين: بالقاعدة [AB] وارتفاعها [CH] ، وبالضلعين القائمين [CA] و [CB] حيث يكون كلّ منهما ارتفاع الآخر. المساحة = (AB × CH) ÷ 2 وهي أيضًا (AC × BC) ÷ 2 ، فنساوي الحسابين ونضرب في 2: AB × CH = AC × BC. ومنه CH = (AC × BC) ÷ AB = (3 × 4) ÷ 5 = 12/5 ✓. الخطأ الشائع: ضرب الارتفاع [CH] في ضلع قائم بدل الوتر ، فنكتب CH × BC = AB × AC ومنه CH = 15/4 ، وهو أطول من [AC] ، وهذا مستحيل لأنّ العمودي أقصر من كلّ مائل ؛ أو القسمة على 2 في أحد الحسابين فقط فنكتب AB × CH = (AC × BC) ÷ 2 ومنه CH = 6/5 ؛ أو التوقّف عند مساحة المثلّث (3 × 4) ÷ 2 = 6 وهي مساحة لا طول.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في C ، و H المسقط العمودي للنقطة C على المستقيم (AB) ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 5\nAC = 3\nBC = 4\nCH = 12/5\nما طول القطعة [BH] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 252\"><title>المثلّث ABC القائم في C والارتفاع [CH]</title><path d=\"M34 154.96 L286 154.96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 154.96 L124.72 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M286 154.96 L124.72 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M118.12 42.8 L126.92 49.4 L133.52 40.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M124.72 34 L124.72 154.96\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M124.72 144.96 L134.72 144.96 L134.72 154.96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"154.96\" r=\"3.8\"/><circle cx=\"286\" cy=\"154.96\" r=\"3.8\"/><circle cx=\"124.72\" cy=\"34\" r=\"3.8\"/><circle cx=\"124.72\" cy=\"154.96\" r=\"3.8\"/></g><path d=\"M34 188.96 L286 188.96 M34 184.46 L34 193.46 M286 184.46 L286 193.46\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"159.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"299\" y=\"159.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"124.72\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"124.72\" y=\"172.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"160\" y=\"207.96\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">5</text><text x=\"66.36\" y=\"91.48\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">3</text><text x=\"218.36\" y=\"86.48\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">4</text><text x=\"146.72\" y=\"99.48\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">12/5</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9/5",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "8/5",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "256/25",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "16/5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(CH) ⊥ (AB) في H ، فالمثلّث BCH قائم في H ووتره [BC]. بنظرية فيثاغورس BH² = BC² − CH² = 16 − 144/25 = 256/25 ، ومنه BH = 16/5 ✓. الخطأ الشائع: حساب [AH] في المثلّث ACH بدل [BH] فنجد AH² = AC² − CH² = 9 − 144/25 = 81/25 أي AH = 9/5 ؛ أو طرح الطولين مباشرة فنكتب BH = BC − CH = 4 − 12/5 = 8/5 ؛ أو التوقّف عند BH² = 256/25 ونسيان الجذر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "[AB] قطر لدائرة مركزها I ، و M نقطة من نصف المستقيم [AB) ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 5\nAM = 6\nما طول القطعة [BM] بالصنتمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "misconceptionTag": "math.geo.position-relative-ignoree"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "7/2",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "M نقطة من نصف المستقيم [AB) ، أي أنّ B و M في الجهة نفسها من A ، و AM = 6 أكبر من AB = 5 ، فالنقطة B تقع بين A و M. إذن AM = AB + BM ، ومنه BM = AM − AB = 6 − 5 = 1 ✓. الخطأ الشائع: جمع الطولين دون النظر إلى موضع النقطتين فنجد BM = 6 + 5 = 11 ، وهذا يضع A بين B و M مع أنّ M على نصف المستقيم [AB) ؛ أو أخذ AM مكان BM ؛ أو قياس البعد من المركز I فنجد IM = AM − AI = 6 − 5/2 = 7/2 لأنّ AI = AB ÷ 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في C ، و M نقطة من نصف المستقيم [AB) ، والمستقيم المارّ من M والعمودي على (AB) يقطع المستقيم (AC) في النقطة E ويقطع المستقيم (BC) في النقطة F.\nما العبارة الصحيحة ؟\n<svg viewBox=\"0 0 320 350\"><title>المثلّث ABC والمستقيم العمودي على (AB) المارّ من M ، يقطع (AC) في E و (BC) في F</title><path d=\"M66 287.8 L254 37.13\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M254 37.13 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M122.4 212.6 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 287.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M244 287.8 L244 277.8 L254 277.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"66\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"222.67\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"122.4\" cy=\"212.6\" r=\"3.8\"/><circle cx=\"254\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"254\" cy=\"37.13\" r=\"3.8\"/><circle cx=\"254\" cy=\"311.3\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"53\" y=\"292.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"229.67\" y=\"278.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"109.4\" y=\"206.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"268\" y=\"279.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"268\" y=\"35.13\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"268\" y=\"322.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "المستقيمان (AE) و (AF) متعامدان",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        },
+        {
+          "id": "b",
+          "text": "المستقيمان (BC) و (EF) متعامدان",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        },
+        {
+          "id": "c",
+          "text": "المستقيمان (AE) و (EF) متعامدان"
+        },
+        {
+          "id": "d",
+          "text": "المستقيمان (BC) و (AE) متعامدان"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "E تنتمي إلى المستقيم (AC) ، فالمستقيم (AE) هو المستقيم (AC) نفسه. والمثلّث ABC قائم في C ، أي أنّ (BC) عمودي على (AC) ، إذن (BC) عمودي على (AE) ✓. الخطأ الشائع: اعتبار أنّ مستقيمين يتقاطعان في نقطة متعامدان ، كالمستقيمين (BC) و (EF) اللذين يلتقيان في F ، أو (AE) و (AF) اللذين يلتقيان في A ، دون أن تكون زاويتهما قائمة ؛ ولا يعني تعامد (EF) مع (AB) أنّه عمودي على (AE).",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في C ، و H المسقط العمودي للنقطة C على المستقيم (AB) ، و M نقطة من نصف المستقيم [AB) ، والمستقيم المارّ من M والعمودي على (AB) يقطع المستقيم (BC) في النقطة F ، والمستقيمان (CH) و (MF) متوازيان.\nأيّ مساواة بين النسب صحيحة بنظرية طاليس ؟\n<svg viewBox=\"0 0 320 200\"><title>المثلّث ABC والنقاط H و M و F ، والمستقيمان (CH) و (MF) المتوازيان</title><path d=\"M34 134.8 L286 134.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 134.8 L109.6 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M109.6 34 L286 166.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M109.6 34 L109.6 134.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M286 134.8 L286 166.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M109.6 124.8 L119.6 124.8 L119.6 134.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M276 134.8 L276 124.8 L286 124.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M104.6 81.4 L109.6 87.4 L114.6 81.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M281 147.55 L286 153.55 L291 147.55\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"244\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"109.6\" cy=\"34\" r=\"3.8\"/><circle cx=\"109.6\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"286\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"286\" cy=\"166.3\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"139.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"106.6\" y=\"152.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"250\" y=\"124.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"106.6\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"300\" y=\"127.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"300\" y=\"174.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "BF/BC = BH/BM",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "BF/BC = BM/BH"
+        },
+        {
+          "id": "c",
+          "text": "BF/BC = HM/BM"
+        },
+        {
+          "id": "d",
+          "text": "BF/BC = BM/HM",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المستقيمان (CF) و (HM) يتقاطعان في B و (CH) ∥ (MF) ، فنحن في وضعيّة الفراشة برأس B: يقابل كلّ ضلع من المثلّث BMF ضلعه المناظر من المثلّث BHC ، فالنسبة BF إلى BC هي نسبة BM إلى BH ، أي BF/BC = BM/BH ✓. الخطأ الشائع: قلب إحدى النسبتين فنكتب BF/BC = BH/BM ؛ أو وضع الطول الكلّي [HM] مكان [BH] فنخلط بين « الجزء على الجزء » و « الجزء على الكلّ » فنكتب BF/BC = BM/HM ؛ أو الخطأين معًا فنكتب BF/BC = HM/BM.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في C ، و M نقطة من نصف المستقيم [AB) ، والمستقيم المارّ من M والعمودي على (AB) يقطع المستقيم (AC) في النقطة E ويقطع المستقيم (BC) في النقطة F.\nأيّ نقطة من الشكل هي المركز القائم للمثلّث AEF (نقطة تلاقي ارتفاعاته) ؟\n<svg viewBox=\"0 0 320 350\"><title>المثلّث AEF داخل الشكل المكوّن من ABC والمستقيم المارّ من M</title><path d=\"M66 287.8 L254 37.13\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M254 37.13 L254 311.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 311.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M122.4 212.6 L254 311.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M66 287.8 L254 287.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M116.4 220.6 L124.4 226.6 L130.4 218.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M244 287.8 L244 277.8 L254 277.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"66\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"222.67\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"122.4\" cy=\"212.6\" r=\"3.8\"/><circle cx=\"254\" cy=\"287.8\" r=\"3.8\"/><circle cx=\"254\" cy=\"37.13\" r=\"3.8\"/><circle cx=\"254\" cy=\"311.3\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"53\" y=\"292.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"229.67\" y=\"278.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"109.4\" y=\"206.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"268\" y=\"279.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"268\" y=\"35.13\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"268\" y=\"322.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "النقطة A"
+        },
+        {
+          "id": "b",
+          "text": "النقطة M"
+        },
+        {
+          "id": "c",
+          "text": "النقطة B"
+        },
+        {
+          "id": "d",
+          "text": "النقطة C"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المركز القائم هو نقطة تلاقي ارتفاعات المثلّث. في المثلّث AEF: المستقيم (AB) يمرّ من الرأس A وهو عمودي على (EF) ، فهو الارتفاع الصادر من A ؛ والمستقيم (BC) يمرّ من الرأس F وهو عمودي على (AC) أي على (AE) ، فهو الارتفاع الصادر من F. وهذان الارتفاعان يتقاطعان في B ، إذن B هي المركز القائم للمثلّث AEF ✓. الخطأ الشائع: الخلط بين المركز القائم وقدم أحد الارتفاعات: M هي قدم الارتفاع الصادر من A على (EF) ، و C هي قدم الارتفاع الصادر من F على (AE) ؛ أو تطبيق قاعدة المثلّث القائم ، أي أنّ المركز القائم هو رأس الزاوية القائمة ، على المثلّث AEF مع أنّه ليس قائمًا في A.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "B هو المركز القائم للمثلّث AEF (النقطة التي تلتقي عندها المستقيمات الثلاثة المارّة من رؤوسه والعمودية على أضلاعه المقابلة) ، والمستقيم (EB) يقطع المستقيم (AF) في النقطة K.\nأيّ حجّة تثبت أنّ K تنتمي إلى الدائرة التي قطرها [AB] ؟\n<svg viewBox=\"0 0 320 350\"><title>المثلّث AEF والمستقيم (EB) والنقطة K والدائرة التي قطرها [AB]</title><circle cx=\"146.76\" cy=\"248.48\" r=\"66.2\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M80.56 248.48 L239.44 36.65\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M239.44 36.65 L239.44 268.34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M80.56 248.48 L239.44 268.34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M239.44 36.65 L210.92 264.77\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M80.56 248.48 L212.96 248.48\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"80.56\" cy=\"248.48\" r=\"3.8\"/><circle cx=\"212.96\" cy=\"248.48\" r=\"3.8\"/><circle cx=\"239.44\" cy=\"36.65\" r=\"3.8\"/><circle cx=\"239.44\" cy=\"268.34\" r=\"3.8\"/><circle cx=\"210.92\" cy=\"264.77\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"67.56\" y=\"253.48\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"201.96\" y=\"240.48\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"253.44\" y=\"34.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"253.44\" y=\"279.34\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"217.92\" y=\"283.77\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(EB) ارتفاع في المثلّث AEF ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في K ووتره [AB]"
+        },
+        {
+          "id": "b",
+          "text": "(EB) ارتفاع في المثلّث AEF ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في B ووتره [AK]",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "c",
+          "text": "(EB) هو الموسّط العمودي لـ [AF] ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في K ووتره [AB]",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "d",
+          "text": "(EB) هو الموسّط العمودي لـ [AF] ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في B ووتره [AK]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "B هو المركز القائم للمثلّث AEF ، أي نقطة تلاقي ارتفاعاته ، والمستقيم (EB) يمرّ من الرأس E ، فهو الارتفاع الصادر من E ، أي عمودي على الضلع المقابل (AF) في K. المثلّث AKB قائم في K ، ووتره الضلع المقابل للزاوية القائمة وهو [AB] ، وكلّ مثلّث قائم تنتمي رأس زاويته القائمة إلى الدائرة التي قطرها وتره ، إذن K تنتمي إلى الدائرة التي قطرها [AB] ✓. الخطأ الشائع: وضع الزاوية القائمة في B فنأخذ [AK] وترًا ، وهذا يقود إلى دائرة قطرها [AK] لا [AB] ؛ أو اعتبار (EB) الموسّط العمودي لـ [AF] لمجرّد أنّه عمودي عليه ، مع أنّ الموسّط العمودي يمرّ من منتصف [AF] وأنّ K ليست منتصفها ، فالمستقيم (EB) ارتفاع.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في C ، و H المسقط العمودي للنقطة C على المستقيم (AB) ، و M نقطة من نصف المستقيم [AB) ، والمستقيم المارّ من M والعمودي على (AB) يقطع المستقيم (BC) في النقطة F ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 5\nAM = 6\nBH = 16/5\nما قيمة النسبة BF/BC ؟\n<svg viewBox=\"0 0 320 278\"><title>المثلّث ABC والنقاط H و M و F مع الأطوال المعطاة</title><path d=\"M34 134.8 L286 134.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 134.8 L109.6 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M109.6 34 L286 166.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M109.6 34 L109.6 134.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M286 134.8 L286 166.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M109.6 124.8 L119.6 124.8 L119.6 134.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M276 134.8 L276 124.8 L286 124.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"244\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"109.6\" cy=\"34\" r=\"3.8\"/><circle cx=\"109.6\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"286\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"286\" cy=\"166.3\" r=\"3.8\"/></g><path d=\"M34 190.8 L244 190.8 M34 186.3 L34 195.3 M244 186.3 L244 195.3\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M34 134.8 L34 190.8 M244 134.8 L244 190.8\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"2 3\" opacity=\"0.75\"/><path d=\"M34 216.8 L286 216.8 M34 212.3 L34 221.3 M286 212.3 L286 221.3\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M34 134.8 L34 216.8 M286 134.8 L286 216.8\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"2 3\" opacity=\"0.75\"/><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"139.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"106.6\" y=\"152.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"250\" y=\"124.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"106.6\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"300\" y=\"127.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"300\" y=\"174.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"139\" y=\"209.8\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">5</text><text x=\"160\" y=\"235.8\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">6</text><text x=\"176.8\" y=\"125.8\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">16/5</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "16/5",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "55/16",
+          "misconceptionTag": "math.geo.position-relative-ignoree"
+        },
+        {
+          "id": "c",
+          "text": "16/55"
+        },
+        {
+          "id": "d",
+          "text": "5/16"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(CH) و (MF) عموديان على (AB) فهما متوازيان. والنقطة M من نصف المستقيم [AB) مع AM = 6 أكبر من AB = 5 ، فالنقطة B بين A و M ، ومنه BM = AM − AB = 1. وبنظرية طاليس في وضعيّة الفراشة برأس B: BF/BC = BM/BH = 1 ÷ (16/5) = 5/16 ✓. الخطأ الشائع: قلب النسبة فنجد BH/BM = 16/5 ؛ أو جمع AM إلى AB دون النظر إلى موضع M فنجد BM = 11 ومنه BF/BC = 11 ÷ (16/5) = 55/16 ؛ أو الخطأين معًا فنجد 16/55.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في C ، و H المسقط العمودي للنقطة C على المستقيم (AB) ، و M نقطة من نصف المستقيم [AB) ، والمستقيم المارّ من M والعمودي على (AB) يقطع المستقيم (BC) في النقطة F ، ونعلم أنّ الأطوال بالصنتمتر هي:\nAB = 5\nAC = 3\nAM = 6\nBH = 16/5\nما طول القطعة [BF] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 278\"><title>المثلّث ABC والنقاط H و M و F مع الأطوال المعطاة</title><path d=\"M34 134.8 L286 134.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M34 134.8 L109.6 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M109.6 34 L286 166.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M109.6 34 L109.6 134.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M286 134.8 L286 166.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M109.6 124.8 L119.6 124.8 L119.6 134.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M276 134.8 L276 124.8 L286 124.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"244\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"109.6\" cy=\"34\" r=\"3.8\"/><circle cx=\"109.6\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"286\" cy=\"134.8\" r=\"3.8\"/><circle cx=\"286\" cy=\"166.3\" r=\"3.8\"/></g><path d=\"M34 190.8 L244 190.8 M34 186.3 L34 195.3 M244 186.3 L244 195.3\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M34 134.8 L34 190.8 M244 134.8 L244 190.8\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"2 3\" opacity=\"0.75\"/><path d=\"M34 216.8 L286 216.8 M34 212.3 L34 221.3 M286 212.3 L286 221.3\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M34 134.8 L34 216.8 M286 134.8 L286 216.8\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"2 3\" opacity=\"0.75\"/><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"21\" y=\"139.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"106.6\" y=\"152.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"250\" y=\"124.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"106.6\" y=\"23\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"300\" y=\"127.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"300\" y=\"174.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"139\" y=\"209.8\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">5</text><text x=\"160\" y=\"235.8\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">6</text><text x=\"176.8\" y=\"125.8\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">16/5</text><text x=\"58.8\" y=\"81.4\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\">3</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "64/5",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "5/4"
+        },
+        {
+          "id": "c",
+          "text": "55/4",
+          "misconceptionTag": "math.geo.position-relative-ignoree"
+        },
+        {
+          "id": "d",
+          "text": "5√34/16",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نحسب BC أوّلًا: المثلّث ABC قائم في C ووتره [AB] ، فـ BC² = AB² − AC² = 25 − 9 = 16 ومنه BC = 4. ثمّ BM = AM − AB = 6 − 5 = 1 لأنّ B بين A و M. و (CH) ∥ (MF) لأنّهما عموديان على (AB) ، فبنظرية طاليس BF/BC = BM/BH = 1 ÷ (16/5) = 5/16. إذن BF = BC × 5/16 = 4 × 5/16 = 5/4 ✓. الخطأ الشائع: قلب النسبة فنجد BF = BC ÷ (5/16) = 64/5 ؛ أو جمع AM إلى AB فنجد BM = 11 ثمّ BF = 4 × 55/16 = 55/4 ؛ أو اعتبار [AB] ضلعًا قائمًا فنجد BC = √34 ثمّ BF = √34 × 5/16 = 5√34/16.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}
