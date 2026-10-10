@@ -1,0 +1,128 @@
+{
+  "title": "🏛️ مناظرة 2024 (تقني) · التمرين 1 ⭐⭐: أسئلة اختيار من متعدّد — عزل المجهول ونسبة مائوية من كتلة ونشر مربّع فرق",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 31,
+  "questions": [
+    {
+      "prompt": "نحلّ المعادلة التالية في ℝ :\n3 − x = 2/3\nأيّ الكتابات التالية تعطي x بعد عزل المجهول ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 2/3 − 3"
+        },
+        {
+          "id": "b",
+          "text": "x = 3 − 2/3"
+        },
+        {
+          "id": "c",
+          "text": "x = 3 + 2/3",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "x = −3 − 2/3",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نريد عزل x في 3 − x = 2/3. نضيف x إلى الطرفين ثمّ نطرح 2/3 منهما، فنجد:\n3 − 2/3 = x\nأي x = 3 − 2/3 ✓.\nالخطأ الشائع: كتابة −x = 2/3 − 3 ثمّ نسيان القسمة على −1 فيبقى x = 2/3 − 3 (ويعطيه أيضًا نقل −x دون تغيير إشارته)؛ أو نقل 3 دون تغيير إشارته فنكتب −x = 2/3 + 3 ومنه x = −3 − 2/3؛ أو نقل 2/3 دون تغيير إشارته فنكتب 3 + 2/3 = x.",
+      "difficulty": 1,
+      "competencies": [
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "إذا كان x عددًا حقيقيًّا يحقّق:\n3 − x = 2/3\nفإنّ x يساوي :",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/3"
+        },
+        {
+          "id": "b",
+          "text": "1/3",
+          "misconceptionTag": "math.frac.entier-converti-en-n-sur-n"
+        },
+        {
+          "id": "c",
+          "text": "−7/3"
+        },
+        {
+          "id": "d",
+          "text": "7/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نعزل x:\nx = 3 − 2/3\nونكتب 3 على شكل كسر مقامه 3، أي 3 = 9/3، فنجد:\nx = 9/3 − 2/3 = 7/3\nإذن x = 7/3 ✓. وللتحقّق:\n3 − 7/3 = 9/3 − 7/3 = 2/3\nالخطأ الشائع: كتابة 3 على شكل 3/3 بدل 9/3 فنجد (3 − 2)/3 = 1/3؛ أو نقل −x دون تغيير إشارته، أو كتابة −x = 2/3 − 3 ثمّ نسيان القسمة على −1، فنجد x = 2/3 − 3 أي −7/3؛ والقيمة −1/3 تجمع الخطأين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-premier-degre",
+        "math.frac.add-sous"
+      ]
+    },
+    {
+      "prompt": "الذهب عيار 18 خليط من الذهب الخالص بنسبة 75 % ومعادن أخرى بنسبة 25 %. قلادة من الذهب عيار 18 وزنها 12 غ. ما كتلة الذهب الخالص فيها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 غ",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "7,5 غ"
+        },
+        {
+          "id": "c",
+          "text": "9 غ"
+        },
+        {
+          "id": "d",
+          "text": "16 غ",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "كتلة الذهب الخالص هي 75 % من وزن القلادة:\n0,75 × 12 = 9\nفكتلة الذهب الخالص 9 غ ✓. وبطريقة ثانية: المعادن الأخرى تمثّل 25 % من 12 غ أي 3 غ، والباقي من القلادة هو الذهب الخالص.\nالخطأ الشائع: إعطاء كتلة المعادن الأخرى 3 غ وهي ليست المطلوبة؛ أو قسمة 12 على 0,75 بدل ضربه فيه فنجد 16 غ، وهي أكبر من وزن القلادة كلّها. أمّا 7,5 غ فلا تساوي 75 % من 12 غ، لأنّ 0,75 × 12 = 9.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prop.pourcentages"
+      ]
+    },
+    {
+      "prompt": "ما قيمة العدد التالي ؟\n(5 − √5)²",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 − 10√5",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        },
+        {
+          "id": "b",
+          "text": "30 − 10√5"
+        },
+        {
+          "id": "c",
+          "text": "30",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "d",
+          "text": "20",
+          "misconceptionTag": "math.alg.carre-difference-ecrit-difference-carres"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نستعمل متطابقة مربّع الفرق (a − b)² = a² − 2ab + b² مع a = 5 و b = √5:\n(5 − √5)² = 25 − 10√5 + 5\n(5 − √5)² = 30 − 10√5\nإذن القيمة هي 30 − 10√5 ✓، لأنّ (√5)² = 5 و 2 × 5 × √5 = 10√5.\nالخطأ الشائع: نسيان الجداء المضاعف 10√5 فنجد 30 فقط وهي مجموع 25 و 5؛ أو إعطاء الحدّ (√5)² إشارة الناقص فنجد 25 − 10√5 − 5 أي 20 − 10√5؛ أو الخلط بين مربّع الفرق وفرق المربّعين فنكتب 5² − (√5)² = 25 − 5 = 20.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}

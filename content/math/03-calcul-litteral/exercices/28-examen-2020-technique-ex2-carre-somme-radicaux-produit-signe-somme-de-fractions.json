@@ -1,0 +1,176 @@
+{
+  "title": "🏛️ مناظرة 2020 (تقني) · التمرين 2 ⭐⭐⭐: نشر مربّع مجموع، واختزال جذور، وجداء عددين، وإشارة عدد، ومجموع كسرين",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 28,
+  "questions": [
+    {
+      "prompt": "اختزل العدد التالي:\na = (1/2)(1 + √3)²\nأيّ كتابة من الكتابات التالية تساويه في أبسط صورة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "2 + √3"
+        },
+        {
+          "id": "c",
+          "text": "2 + 2√3",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "d",
+          "text": "8 + 4√3",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ننشر المربّع بالمتطابقة (u + v)² = u² + 2uv + v²: (1 + √3)² = 1 + 2√3 + 3 = 4 + 2√3. ثمّ نضرب في 1/2 وهو يضرب الحدّين معًا: a = (1/2)(4 + 2√3) = 2 + √3 ✓. الخطأ الشائع إسقاط الحدّ الأوسط فيخرج (1/2)(1 + 3) = 2؛ أو ضرب الحدّ الأوّل وحده في 1/2 فيخرج 2 + 2√3؛ أو قراءة 1/2 كأنّه العامل 2 فيخرج 2(4 + 2√3) = 8 + 4√3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نبسّط العدد b المعرَّف بالعبارة التالية:\nb = (√48 + 3) − (√12 + √27 + 1)\nأيّ الكتابات التالية تساوي b في أبسط صورة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 − √3"
+        },
+        {
+          "id": "b",
+          "text": "√3",
+          "misconceptionTag": "math.alg.termes-semblables-par-coefficient"
+        },
+        {
+          "id": "c",
+          "text": "2 + 3√3",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        },
+        {
+          "id": "d",
+          "text": "4 + 5√3",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نبسّط الجذور بإخراج المربّعات الكاملة: √48 = √(16 × 3) = 4√3 و √12 = 2√3 و √27 = 3√3. ثمّ نحذف القوسين، والإشارة السالبة قبل القوس الثاني تقلب إشارة كلّ حدّ فيه: b = 4√3 + 3 − 2√3 − 3√3 − 1. نجمع الجذور المتشابهة: (4 − 2 − 3)√3 = −√3، ونجمع الحدّين العدديّين: 3 − 1 = 2. إذن العدد 2 − √3 هو قيمة b ✓. الخطأ الشائع تطبيق الإشارة السالبة على الحدّ الأوّل وحده من القوس الثاني فيخرج 4√3 + 3 − 2√3 + 3√3 + 1 = 4 + 5√3؛ أو إخراج المربّع الكامل دون جذره (√48 = 16√3 و √12 = 4√3 و √27 = 9√3) فيخرج 2 + 3√3؛ أو جمع الأعداد كلّها مع معاملات الجذر فيخرج (4 + 3 − 2 − 3 − 1)√3 = √3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "نعتبر العددين الحقيقيّين:\na = (1/2)(1 + √3)²\nb = (√48 + 3) − (√12 + √27 + 1)\nما قيمة الجداء a × b ؟ اكتب الناتج عددًا صحيحًا",
+      "answerKey": {
+        "value": 1
+      },
+      "explanation": "نبسّط العددين أوّلًا. العدد a: بالمتطابقة (u + v)² = u² + 2uv + v² نجد (1 + √3)² = 1 + 2√3 + 3 = 4 + 2√3، ثمّ a = (1/2)(4 + 2√3) = 2 + √3. العدد b: نخرج المربّعات الكاملة √48 = 4√3 و √12 = 2√3 و √27 = 3√3 ونحذف القوسين بقلب إشارة كلّ حدّ في القوس الثاني، فنجد b = 4√3 + 3 − 2√3 − 3√3 − 1 = 2 − √3. ثمّ الجداء من الشكل (u + v)(u − v) = u² − v² مع u = 2 و v = √3: a × b = 2² − (√3)² = 4 − 3 = 1 ✓. الخطأ الشائع إسقاط الحدّ الأوسط عند نشر (1 + √3)² فيصير a = 2 ويخرج الجداء 2(2 − √3) = 4 − 2√3؛ أو جمع المربّعين بدل طرحهما في المتطابقة فيخرج 4 + 3 = 7.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "a و b عددان حقيقيّان، العدد a منهما موجب، ويحقّقان:\na × b = 1\nأيّ الاستدلالات التالية يحدّد إشارة b تحديدًا صحيحًا ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "جداء a و b موجب ، فلهما إشارتان مختلفتان ، وبما أنّ a موجب فإنّ b سالب",
+          "misconceptionTag": "math.int.produit-signes-negatifs"
+        },
+        {
+          "id": "b",
+          "text": "جداء a و b يساوي 1 ، فهما متقابلان ، وبما أنّ a موجب فإنّ b سالب",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        },
+        {
+          "id": "c",
+          "text": "جداء a و b موجب ، فكلّ منهما موجب بالضرورة ، إذن b موجب"
+        },
+        {
+          "id": "d",
+          "text": "جداء a و b موجب ، فلهما الإشارة نفسها ، وبما أنّ a موجب فإنّ b موجب"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "جداء عددين موجب إذا كان لهما الإشارة نفسها. وبما أنّ a × b = 1 وهو عدد موجب، فللعددين a و b الإشارة نفسها، وبما أنّ a موجب فإنّ b موجب أيضًا ✓. الخطأ الشائع الظنّ أنّ الجداء الموجب يقتضي أن يكون العاملان موجبين: هذا غير صحيح لأنّ جداء عددين سالبين موجب أيضًا مثل (−2) × (−3) = 6، فلا نستنتج إشارة b إلّا من إشارة a ومن اتّفاق الإشارتين؛ أو عكس قاعدة الإشارات فيُظنّ أنّ الجداء الموجب يقتضي إشارتين مختلفتين فيخرج b سالبًا؛ أو الخلط بين المقلوب والمقابل: المقابلان مجموعهما 0 لا جداؤهما 1، ولو كان b مقابل a لكان a × b = −a² وهو سالب.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "a و b عددان حقيقيّان يحقّقان:\na × b = 1\nأيّ الكتابات التالية تساوي المجموع التالي مهما كانت قيمتا a و b ؟\n1/a + 1/b",
+      "options": [
+        {
+          "id": "a",
+          "text": "a + b"
+        },
+        {
+          "id": "b",
+          "text": "1/(a + b)",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        {
+          "id": "c",
+          "text": "2/(a + b)",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "بما أنّ a × b = 1 فكلّ من العددين مقلوب الآخر: 1/a = b و 1/b = a، إذن 1/a + 1/b = b + a = a + b ✓. ونجد النتيجة نفسها بتوحيد المقامين: 1/a + 1/b = (b + a)/(a × b) = (a + b)/1 = a + b. الخطأ الشائع جمع المقامين فيُكتب 1/a + 1/b = 1/(a + b)؛ أو جمع البسطين معًا والمقامين معًا فيخرج 2/(a + b)؛ أو توحيد المقامين دون ضرب كلّ بسط في المقام الآخر فيُكتب (1 + 1)/(a × b) = 2/1 = 2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.frac.add-sous"
+      ]
+    },
+    {
+      "prompt": "نجمع الكسرين التاليين:\n1/(2 + √3) + 1/(2 − √3)\nما ناتج هذا الجمع ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        {
+          "id": "b",
+          "text": "4/7",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نوحّد المقامين: 1/(2 + √3) + 1/(2 − √3) = ((2 − √3) + (2 + √3))/((2 + √3)(2 − √3)). البسط يساوي 4 لأنّ √3 و −√3 يتلاشيان، والمقام جداء من الشكل (u + v)(u − v) = u² − v² أي 2² − (√3)² = 4 − 3 = 1. إذن المجموع 4/1 = 4 ✓. الخطأ الشائع جمع البسطين معًا والمقامين معًا فيُكتب (1 + 1)/((2 + √3) + (2 − √3)) = 2/4 = 1/2؛ أو جمع المربّعين بدل طرحهما في المقام فيخرج 4 + 3 = 7 والمجموع 4/7؛ أو توحيد المقامين دون ضرب البسطين في العاملين المناسبين فيُكتب (1 + 1)/1 = 2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables",
+        "math.frac.add-sous"
+      ]
+    }
+  ]
+}
