@@ -231,7 +231,7 @@ fidèles. Résultats officiels recalculés : ABC rectangle en A, EF = x, a = x(8
 
 | Q | d | ma réponse (aveugle) | clé | verdict | motif |
 |---|---|---|---|---|---|
-| 1 | 2 | a | a | réserve | `hypotenuse-mal-choisie` approximatif sur b, c (§ Étiquettes) ; la figure montre l'angle droit en A (non codé) |
+| 1 | 2 | a | a | OK | réciproque : `hypotenuse-mal-choisie` EXACTE sur b, c (l'élève prend [AC] ou [AB] pour hypoténuse), `exposant-porte-sur-un-seul-facteur` exacte sur d ; la figure montre l'angle droit en A (non codé : observation) |
 | 2 | 2 | c (8 − x) | c | réserve | « قائم في A » de l'énoncé inutile au calcul (redonne la clé de Q1) ; question presque d1 |
 | 3 | 2 | b (x) | b | OK | 45° ou Thalès ; trois étiquettes exactes |
 | 4 | 2 | d | d | réserve | plan 2×2 propre ; la figure ne trace pas [AE] : le triangle AEF dont on demande l'aire n'est pas dessiné |
@@ -350,8 +350,8 @@ Défauts 39 :
   قطرها [AB] » (c'est le but posé par l'énoncé) ; options ramenées à ~95 caractères.
 - Observation : Q2, Q3, Q4, Q11 — clé lisible à l'échelle.
 
-Verdict partiel 39 : **11 questions, 0 clé fausse, 0 question à reprendre au fond (Q9 suit le correctif
-R-3 transversal), 1 retouche mineure.**
+Verdict partiel 39 : **11 questions, 0 clé fausse, 1 question à reprendre (Q9, par le correctif R-3
+M-37-6 : ligne de cours ou, à défaut, glose), 1 retouche mineure.**
 
 ---
 
@@ -397,11 +397,12 @@ on peut la lire comme BH = 2, valeur d'un distracteur ; la placer au-dessus de [
 Étage : 4 d3 sur 9 (Q7 et Q8 solides, Q6 et Q9 moyennes) ; base d2 très facile (Q2, Q3). **Challenge
 d4 honnête de justesse** (au niveau numérique des d4 publiées) ; Q3 est une d1.
 
-Défauts 40 : aucun critique ni majeur propre au fichier ; Q1 relève du § Doublons ; Q8 du § systémique
-(« لا يوجد خطأ ») ; Q3 étiquetée d2 pour une d1 (mineur) ; Q9 cosmétique ci-dessus.
+Défauts 40 : **M-40-1 (majeur)** Q1, doublon de 31 Q1 et de 12/06 Q1 — correctif exact au § T1 ;
+Q8 relève du § systémique (« لا يوجد خطأ », correctif d'énoncé en T7) ; Q3 étiquetée d2 pour une d1
+(mineur) ; Q9 cosmétique ci-dessus (mineur).
 
-Verdict partiel 40 : **9 questions, 0 clé fausse, 0 question à reprendre au fond (Q1 selon § Doublons),
-2 retouches mineures.**
+Verdict partiel 40 : **9 questions, 0 clé fausse, 1 question à reprendre (Q1), 3 retouches mineures
+(Q3, Q8, Q9).**
 
 ---
 
@@ -473,3 +474,219 @@ Défauts 41 :
 - Observation : Q2, Q5, Q9, Q10 — clé lisible à l'échelle.
 
 Verdict partiel 41 : **10 questions, 0 clé fausse, 1 question à reprendre (Q7), 1 retouche mineure.**
+
+---
+
+## Partie transversale
+
+### T1. Doublons
+
+Méthode : `content:tranche` (Jaccard des énoncés : aucune paire ≥ 0,45 avec 36–41, confirmé) + un
+détecteur « même clé et ≥ 3 options communes » contre les 2 130 questions publiées de `content/math`
+(`origin/main`) et contre la tranche elle-même, puis lecture des paires.
+
+- **(a) Chapitre 09 publié — M-40-1 (majeur).** 40 Q1 (OB avec AB = 4, AO = 3) a EXACTEMENT les options
+  de 31 Q1 (diagonale BD avec AB = 4, AD = 3) et de 12/06-defi-concours Q1 (distance AB = 5) :
+  {5, 7, 25, √7}, mêmes pièges (somme, racine oubliée, hypoténuse prise pour un côté), explication
+  calquée : « quasi identique » au sens de la consigne. Correctif (plan 2×2 carrés × somme/différence,
+  une option à deux erreurs muette) :
+  - option b « 25 » → « 1 », **retirer** `pythagore-racine-oubliee` ;
+  - explication, fin « الخطأ الشائع: جمع الطولين مباشرة فنكتب 4 + 3 = 7 ؛ أو التوقّف عند OB² = 25 ونسيان
+    الجذر ؛ أو اعتبار [OB] ضلعًا قائمًا فنطرح المربّعين ونجد OB² = 16 − 9 = 7 أي OB = √7. » → « الخطأ
+    الشائع: جمع الطولين مباشرة فنكتب 4 + 3 = 7 ؛ أو اعتبار [OB] ضلعًا قائمًا فنطرح المربّعين ونجد
+    OB² = 16 − 9 = 7 أي OB = √7 ؛ أو الخطأين معًا فنطرح الطولين مباشرة فنجد 4 − 3 = 1. »
+  - Vérifié : votes 2–2 (carrés : 5, √7 / sans : 7, 1 ; somme : 5, 7 / différence : √7, 1) ; rendu propre.
+  36 Q1 partage 5, 7, 25 avec ces trois questions mais a son étape propre (OB = BC/2, piège √73) : non
+  quasi identique. Le 6-8-10 de 36 (CD = 4,8, ED = 3,6) recoupe le devoir 08 #2 (HI = 1,4) : autre
+  question, conforme à la déclaration.
+- **(b) Entre les six missions : aucune paire quasi identique.** Gabarits récurrents, inhérents aux
+  sujets et à configurations, lettres et données différentes : égalité de Thalès à reconnaître (36 Q10,
+  39 Q7, 40 Q5), relation d'aire (36 Q6–Q7, 39 Q3, 41 Q9), angle droit sur un cercle de diamètre donné
+  (36 Q5, 37 Q7, 39 Q1, 40 Q6 — 37 Q7 et 40 Q6 partagent le gabarit « quatre perpendicularités »),
+  droite des milieux (36 Q3, 37 Q5–Q6, 41 Q4), Pythagore 3-4-5 (36 Q1, 39 Q2, 40 Q1). 37 Q5 et 38 Q9
+  ont les mêmes options {1/2, 1, 2, …} mais deux raisonnements sans rapport (Thalès / équation).
+- **(c) Autres chapitres (18, 08, 12, 20, 03).** 41 Q2 a exactement les options de 20/10-devoir-cube Q2
+  ({2√3, 2√5, 6, 20}, même calcul √(2² + 4²), mêmes pièges) : mineur (chapitre 20, postérieur) —
+  à différencier si l'on veut, mais l'erreur double « 4 − 2 = 2 » vaudrait OB, visible ; je ne
+  l'impose pas. 36 Q3 / 08/16 Q5 (même session 2003, autre exercice), 37 Q6 / 20/10 Q4 (même 4√2/2,
+  pièges et explications différents), 39 Q2 / 12/16 Q2 (autre calcul) : pas des doublons.
+
+### T2. Fuites (récapitulatif)
+
+Aucun énoncé ne donne la clé d'une question suivante ; aucune décimale de vérification ne livre un
+verdict ; la coche ✓ suit toujours la clé. Fuite d'explication en avant : une seule, 37 Q5 → Q6
+(m-37-5). Demi-étapes de décomposition (acceptées, à connaître) : 37 Q7 → Q12, 38 Q7 → Q8, 39 Q6 → Q8,
+39 Q7 → Q10, 41 Q9 → Q10 (ordonnée de M). Reprises en arrière : toutes nécessaires, sauf « قائم في A »
+en 38 Q2 et Q4 (m-38-4). Points demandés : 37 Q10 « AP/AH = 2/3 » (clé de Q9) et 39 Q10–Q11
+« BH = 16/5 » (clé de Q4) sont indispensables au calcul et ne livrent la clé d'AUCUNE autre question ;
+risque résiduel donjon seulement (tirage des deux questions dans le même run, dans l'ordre inverse).
+`<title>` des figures : un seul nomme la clé de sa propre question (36 Q2, m-36-3).
+
+### T3. Étiquettes (114 distracteurs étiquetés, 30 identifiants, tous au registre de `origin/main`)
+
+Comptes vérifiés : 249 options, 65 clés (37 Q4 en a 2, 38 Q7 en a 3), 184 distracteurs dont 4 dans
+les `multi` (non étiquetables) → 180 étiquetables, 114 étiquetés, 66 muets : conforme. 16 compétences,
+toutes au registre ; libellés `math.vec.*` sans vocabulaire vectoriel.
+
+Chaque option étiquetée relue contre le libellé : exactes, sauf
+- `hypotenuse-mal-choisie` (approximation déclarée) : **exacte** en 38 Q1 b, c (réciproque : l'élève
+  choisit le mauvais côté comme hypoténuse, comme dans les publiées 17 Q2, 32 Q2, 35 Q5) ; **inexacte**
+  en 36 Q4 a, c, 39 Q9 b, 40 Q6 b (l'angle droit vient d'une perpendicularité ou d'un cercle ; ces
+  options respectent déjà « l'hypoténuse fait face à l'angle droit ») → nouvelle étiquette (T4-a) ;
+- 36 Q8 c (deux erreurs) → retirer (m-36-2) ; 37 Q7 d → partira avec l'option (M-37-1) ; 38 Q8 c (option
+  vraie) → remplacée (B-38-1) ;
+- 38 Q8 a `intervalle-borne-mal-incluse` : libellé sur les crochets, appliqué à une borne non atteinte
+  écrite avec « < » : acceptable.
+
+Muettes qui méritent une étiquette EXISTANTE : 37 Q9 c → `segment-mal-choisi` (m-37-8) ; 38 Q6 c →
+`carre-difference-signes` (m-38-5) ; facultatif : 36 Q3 b « 3 » et 37 Q6 c « 4√2 » (égalité au lieu de la
+moitié) → `droite-des-milieux-facteur-deux`, dont la première phrase (« vaut la MOITIÉ du troisième
+côté ») corrige exactement cette erreur.
+
+### T4. Familles muettes (comptées à la main, tranche + `origin/main`)
+
+**(a) « angle droit au mauvais sommet » hors réciproque — ≥ 3 questions : NOUVELLE étiquette.**
+Tranche : 36 Q4, 37 Q7, 37 Q11, 39 Q9, 40 Q6 (5 questions) ; publiées : 20/02 Q2, 20/07 Q6, 20/08 Q3,
+20/24 Q4, 18/03 Q2 (5 questions). Proposition :
+- id `math.geo.angle-droit-mauvais-sommet`, compétence `math.geo.triangles-base` ;
+- fr « Tu places l'angle droit au mauvais sommet : il est au sommet où se coupent les deux côtés
+  perpendiculaires — dans un cercle, au sommet qui fait face au diamètre » ;
+- en « You put the right angle at the wrong vertex: it is at the vertex where the two perpendicular
+  sides meet — in a circle, at the vertex facing the diameter » ;
+- ar « تضع الزاوية القائمة في الرأس الخطأ: إنّها في الرأس الذي يلتقي فيه الضلعان المتعامدان ، وفي الدائرة في
+  الرأس المقابل للقطر ».
+Placements de la tranche : 36 Q4 a, c ; 39 Q9 b ; 40 Q6 b (au lieu de `hypotenuse-mal-choisie`) ;
+37 Q7 a, b ; 37 Q11 b ; facultatif 40 Q6 d (muettes). Placements publiés à reprendre (aujourd'hui
+`hypotenuse-mal-choisie`) : `20-orthogonalite-espace/exercices/02-boss.json` Q2 b, c ;
+`20-orthogonalite-espace/exercices/07-devoir-inequation-mediane-cube.json` Q6 b ;
+`20-orthogonalite-espace/exercices/08-devoir-pave-diagonale-et-section.json` Q3 b ;
+`20-orthogonalite-espace/exercices/24-examen-2012-generale-ex1-qcm-inequation-puissances-symetrie-cube.json`
+Q4 d ; facultatif `18-quadrilateres/exercices/03-revision.json` Q2 b (aujourd'hui
+`mediane-hypotenuse-demi`). À NE PAS reprendre (réciproque, `hypotenuse-mal-choisie` exacte) : 09/09
+Q4 b, c ; 09/12 Q1 b ; 09/17 Q2 c ; 09/32 Q2 b, c ; 09/35 Q5 a, c ; 12/02 Q4 a, d ; 14/02 Q1 b, c ;
+18/09 Q3 a, b ; 18/19 Q1 a, c ; 20/03 Q6 b, c ; 10/01 Q6 b, c ; ni 38 Q1 b, c.
+
+**(b) « droites remarquables confondues » — ≥ 3 questions : NOUVELLE étiquette.** Tranche : 36 Q5, 37 Q2,
+37 Q12, 39 Q9 (+ 37 Q7 si M-37-1 est retenu) ; publiées : 09/25 Q3, 09/35 Q7, 20/18 Q5. Le registre n'a
+que `hauteur-confondue-avec-mediane` (triangle rectangle, sens hauteur → médiane) : trop étroit pour
+la bissectrice et la médiatrice. Proposition :
+- id `math.geo.droites-remarquables-confondues`, compétence `math.geo.triangles-base` ;
+- fr « Tu confonds les droites remarquables du triangle : la hauteur passe par un sommet
+  perpendiculairement au côté opposé, la médiane joint un sommet au milieu du côté opposé, la médiatrice
+  est perpendiculaire à un côté en son milieu, la bissectrice partage un angle en deux » ;
+- en « You mix up the special lines of a triangle: an altitude goes through a vertex perpendicular to the
+  opposite side, a median joins a vertex to the midpoint of the opposite side, a perpendicular bisector
+  is perpendicular to a side at its midpoint, an angle bisector cuts an angle in half » ;
+- ar « تخلط بين المستقيمات المميّزة في المثلّث: الارتفاع يمرّ من رأس عموديًّا على الضلع المقابل ، والموسّط
+  يصل رأسًا بمنتصف الضلع المقابل ، والموسّط العمودي عمودي على ضلع في منتصفه ، والمنصّف يقسم زاوية إلى نصفين ».
+Placements de la tranche : 36 Q5 a ; 37 Q2 d (et le nouveau b de m-37-3) ; 37 Q12 a, b, c ; 39 Q9 c
+(d reste muette : deux erreurs) ; nouveau 37 Q7 d. Placements publiés à reprendre :
+`09-triangle-rectangle-trigo/exercices/25-examen-2018-generale-ex3-triangle-isocele-centre-gravite-equation-factorisee.json`
+Q3 b, c, d (muettes) ; `09-triangle-rectangle-trigo/exercices/35-examen-2002-ex4-cercle-pythagore-milieux-orthocentre-thales-gravite.json`
+Q7 b, c (muettes) ; `20-orthogonalite-espace/exercices/18-examen-2013-generale-ex5-pyramide-sa-perpendiculaire.json`
+Q5 b (aujourd'hui `hauteur-confondue-avec-mediane`, sens inverse). Garder `hauteur-confondue-avec-mediane`
+là où il est exact (20/20 Q9 a, missions des relations métriques).
+
+**(c) « équidistance prise pour milieu »** : 40 Q8 (options en numéros d'étapes, non étiquetable) ; les
+cas publiés (18/22 Q2 d, 18/13 Q5 b) portent déjà `condition-suffisante-supposee`, 18/23 Q4 est un `multi`
+→ reste muette.
+
+**(d)** « symétrique du mauvais point » (41 Q3 b, d : 1 question, rien de publié trouvé), « égalité au lieu de
+la moitié » (36 Q3, 37 Q6 : 2 questions ; voir l'option facultative T3), « soustraction à l'envers » (38 Q2 a :
+1 question) → restent muettes. **(e)** 38 Q6 a « (x − 4)(x + 4) » : 1 question + 03/22 Q1 (explication
+seulement) → reste muette (`difference-carres-confondue` décrit l'autre sens).
+
+### T5. Programme (R-3) — ordre 15 → 01 → 19 → 02 → 16 → 17 → 03 → 04 → 07 → 12 → 08 → 09, plus 7ᵉ et 8ᵉ
+
+| propriété employée | où elle est enseignée | verdict |
+|---|---|---|
+| médiatrice, équidistance (36, 37 Q2, 40 Q8) | 7ᵉ 09-symetrie-axiale (« أيّ نقطةٍ N عليه تحقّق NA = NB »), 7ᵉ 11-triangles | acquis |
+| cercle de diamètre [AB] ⟺ angle droit (36, 37, 39, 40) | 8ᵉ 12-muthallath-qa2im-wa-da2ira (directe et réciproque) ; rappel 09 | acquis |
+| médiane = moitié de l'hypoténuse (40 Q4) | 8ᵉ 12 ; 08-thales (méthode, « حالة خاصّة ») | acquis |
+| droite des milieux et sa réciproque (36 Q2–Q3, 37 Q5–Q6, 41 Q4) | 08-thales (§ مركز ثقل, étape 1 : Thalès + réciproque) ; énoncé complet au 18 (après 09) | enseignée par Thalès en 08 : suffisant |
+| centre de gravité aux 2/3 (37 Q8) | 08-thales § ⚖️ (+ nommé en 7ᵉ) | enseigné |
+| orthocentre « المركز القائم » (37 Q11–Q12, 39 Q8–Q9) | concours des hauteurs en 7ᵉ 11-triangles, mais le TERME n'est dans aucun cours (7ᵉ, 8ᵉ, 9ᵉ) | glose de 39 Q8 suffisante (options = points) ; 37 Q11–Q12, 39 Q9 : **M-37-6** |
+| relations métriques AH × BC = AB × AC, AH² = BH × CH | 09 (§ 🏹, § 🔗) | enseignées ; AB² = BH × BC n'est PAS au cours mais aucune question ne l'exige (39 Q4, 36 Q8 passent par Pythagore) |
+| réciproques de Pythagore (38 Q1, 41 Q8) et de Thalès | 09 § ⚡, 08 § 🔮 | enseignées |
+| aire du triangle | 7ᵉ 12-quadrilateres-aires ; 09 | acquise |
+| identités, factorisation, encadrement, signe d'un produit (38) | 03 ; 17 (§ الحصر ومداه, ordre et produit) ; 04 (produit nul) | enseignés |
+| repère orthonormé : distance, milieu, symétrique par rapport à O (41) | 12 (milieu, distance) ; 8ᵉ 07-tanazur-markazi (symétrique en coordonnées) | enseignés |
+| 45° dans le triangle rectangle isocèle (38 Q3, explication) | 7ᵉ (somme des angles, triangle isocèle) | acquis |
+
+Position de M en 41 Q10 (« فاصلة M وترتيبتها موجبتان ») : donnée légitime, lue sur la figure du sujet,
+sans laquelle deux points conviennent. Vocabulaire : « معيّن متعامد ومتجانس » (sujets) face à « المعلّم »
+(cours 12) : usage établi des missions publiées, remarque systémique.
+
+### T6. Étages et difficulté par question
+
+| mission | d3 réelles | avis |
+|---|---|---|
+| 36 | 5/11 (Q7–Q11) | challenge d4 honnête |
+| 37 | 5/12 (Q8–Q12) | challenge d4 honnête |
+| 38 | 3/9 (Q7–Q9, Q9 molle) | **non honnête → boss d3 120/30, titre ⭐⭐⭐ (M-38-2)** |
+| 39 | 4/11 (Q8–Q11) | honnête, limite basse |
+| 40 | 4/9 (Q6–Q9 ; Q6 et Q9 moyennes) | honnête de justesse |
+| 41 | 5/10 (Q6–Q10) | challenge d4 honnête |
+
+Rampes toutes non décroissantes en ordre de fichier. Questions étiquetées d2 qui sont des d1 de fait :
+38 Q2 (AF = 8 − x), 40 Q3 (diamètre = 2 × rayon) ; à la frontière d1/d2 : 37 Q2, 39 Q1. d3 molles :
+38 Q9, 40 Q9. Aucune ne casse l'honnêteté de l'en-tête, sauf 38.
+
+### T7. Remarques systémiques (mineures)
+
+- **Clé lisible à l'échelle** : toutes les figures sont exactes à l'échelle des données (c'est leur
+  vérité), si bien que la longueur demandée se lit par report d'une longueur étiquetée : 36 Q1, Q3, Q7,
+  Q8, Q9, Q11 ; 37 Q1, Q6, Q8, Q10 ; 38 Q3 ; 39 Q2, Q3, Q4, Q11 ; 40 Q2, Q3, Q7 ; 41 Q2, Q5, Q9, Q10.
+  Cas les plus nets : distracteurs plus longs que l'hypoténuse ou que le segment entier — 36 Q8, 37 Q1,
+  39 Q3, 41 Q9 (traités pour 39 Q3 et 41 Q9, où c'est le contrôle même du cours qui désigne la clé).
+- **« لا يوجد خطأ » face à un énoncé qui présuppose une erreur** (37 Q3, 40 Q8 ; publiées 32 Q3, 09/14 Q6,
+  08/06 Q3, 08/07 Q5) : l'option nie la présupposition. Correctifs (rendus vérifiés) : 37 Q3 « في أيّ
+  خطوة يوجد الخطأ ؟ » → « هل في هذا الحلّ خطأ ؟ وفي أيّ خطوة ؟ » ; 40 Q8 « في أيّ خطوة يوجد أوّل خطأ ؟ » →
+  « هل في هذا الحلّ خطأ ؟ وفي أيّ خطوة يقع أوّله ؟ ». 38 Q5 (« أوّل خطأ », pas d'option « aucune
+  erreur ») est le modèle.
+- Rendu arabe : aucune chaîne brouillée dans les 62 questions ; seules les chaînes purement numériques
+  (« 3 + 4 = 7 ») et les degrés (« 90° » → « °90 ») suivent le rendu natif, déclaré correct par `bidi.ts` ;
+  aucune ligne de formule refusée, aucune paire d'options à virgule arabe, aucun « على الشكل التالي »
+  orphelin.
+
+---
+
+## Défauts classés
+
+**Critique (1)**
+- B-38-1 — 38 Q8 : deux options vraies (« 0 ≤ a ≤ 8 » et la clé) ; correctif au § 38.
+
+**Majeurs (7)**
+- M-36-1 — 36 Q6 : vote terme à terme ; correctif au § 36.
+- M-37-1 — 37 Q7 : d nie l'énoncé (N commun) + vote ; correctif au § 37.
+- M-37-2 — 37 Q11 : clé seule à deux raisons (réunion de b et d) ; correctif au § 37.
+- M-37-6 — « المركز القائم » non enseigné : 37 Q11 (glose), 37 Q12 (ligne de cours 7ᵉ, pas de glose),
+  39 Q9 (ligne de cours, à défaut glose) ; correctifs aux § 37 et 39.
+- M-38-2 — 38 : en-tête challenge d4 malhonnête → boss d3 120/30.
+- M-40-1 — 40 Q1 : doublon de 31 Q1 et 12/06 Q1 ; correctif au § T1.
+- M-41-1 — 41 Q7 : marqueur de forme (MB = MO/2 dans les trois distracteurs) ; correctif au § 41.
+
+**Action registre (hors sévérité, à router)** — créer les deux étiquettes de T4-a et T4-b et appliquer
+les placements listés ; tant qu'elles n'existent pas, les quatre étiquetages inexacts de la tranche
+(36 Q4 a, c ; 39 Q9 b ; 40 Q6 b) restent faux (mineur, m-36-4 et suivants) et les muettes listées restent
+muettes.
+
+**Mineurs** — m-36-2, m-36-3, m-36-4 (+ 39 Q9 b, 40 Q6 b) ; m-37-3, m-37-4, m-37-5, m-37-7, m-37-8,
+m-37-9 ; m-38-3, m-38-4, m-38-5 ;
+m-39-1 ; m-41-2 ; 40 Q3 (d1 étiquetée d2) ; 40 Q9 (étiquette « 2 ») ; 37 Q3 et 40 Q8 (énoncé des
+chasses à l'erreur) ; 41 Q2 (doublon d'un devoir du chapitre 20) ; options facultatives T3.
+
+Tous les textes de remplacement de ce rapport ont été appliqués à des copies hors dépôt, revérifiés
+par script (valeurs exactes, vérité de chaque option, votes, longueurs) puis rendus dans Chromium
+`dir=rtl` avec le contrôle d'ordre visuel : aucun ne nie une prémisse, aucun n'est vrai sous les
+données, aucun ne rend la clé la plus longue ni ne fuit vers une autre question. Une idée de l'audit
+a été écartée à ce contrôle (38 Q8 « 0 < a ≤ 16 », vraie elle aussi).
+
+## Chiffre final
+
+**62 questions auditées à l'aveugle (6 fichiers, 56 figures refaites par script et rendues) ; 0 clé
+fausse ; 1 question critique (38 Q8, deux réponses justes) ; 8 questions à reprendre au total pour
+critique ou majeur (38 Q8, 36 Q6, 37 Q7, 37 Q11, 37 Q12, 39 Q9, 40 Q1, 41 Q7 — dont 37 Q12 et 39 Q9
+réglées par une seule ligne de cours) ; 1 en-tête à replier (38 → boss d3 120/30) ; 2 étiquettes
+nouvelles proposées au registre ; ~18 retouches mineures.** Verdict : **fix-first** (rien à publier tant
+que B-38-1 et les majeurs ne sont pas traités ; aucune clé n'est à retourner).

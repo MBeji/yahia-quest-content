@@ -22,6 +22,18 @@ Tu es un **auteur** du pipeline « gisement » (étude 36), **sciences de la vie
 8. **`chapter.json`** : si la ligne n'y est pas encore, ajoute à `sources[]` exactement : « Sujets officiels de l'examen national de fin d'études de l'enseignement de base (9ᵉ), Ministère de l'Éducation (corpus officiel, reprise citée, étude 36) — transcriptions : programmes-officiels/examens-nationaux/9eme-base/sciences-vie-terre/ ». Rien d'autre dans ce fichier.
 9. **Écris chaque fichier dès qu'il est prêt**, puis passe au suivant.
 
+10. **Pièges relevés à l'audit du premier lot de SVT (à éviter d'emblée)** :
+   - Un distracteur que l'énoncé dément lui-même (« لم يولّد أيّ أمر » alors que l'énoncé dit que le centre a émis l'ordre ; « chauffer » alors que les deux tubes sont dans le même bain à 37 °C) s'élimine sans rien savoir : relis chaque distracteur contre CHAQUE donnée de l'énoncé et de ses documents.
+   - Deux questions qui partagent la même figure, la même idée-clé et les mêmes pièges sont un doublon, même en d'autres mots : un type d'exercice qui revient d'une session à l'autre ne justifie pas deux questions quasi identiques dans le portail. Cherche aussi dans les missions publiées du chapitre.
+   - Le vote terme à terme : si les quatre options reprennent deux noms et deux fonctions, fais-en un vrai plan 2×2 (nom × fonction, chaque terme deux fois) ; aucune option ne reprend mot pour mot les termes d'une seule autre.
+   - L'explication ne contredit ni le sujet officiel ni une autre question de la mission (une explication qui dit « la villosité ne digère pas » quand le sujet lui donne un rôle dans la digestion est un défaut), et ne reprend jamais une phrase qui n'est plus celle de l'option finale.
+   - Fuite en avant : l'option juste et l'explication d'une question ne livrent pas la clé de la question suivante (la route suit `displayOrder`) ni celle d'une autre question de la mission (le donjon tire au hasard).
+   - Les tableaux Markdown ne sont pas rendus par le portail : une ligne par rangée (« المجموعة أ : … »).
+   - Figures : refais-les d'après le PDF officiel (pas d'une description) et rends-les en Chromium à ~232 px de large ; la convention graphique d'une figure (valve ouverte ou fermée, sens des flèches) doit être celle que pose la question qui la lit ET celle du sujet ; aucun élément de la figure ne désigne la clé. Le moteur pose les figures gauche-à-droite (arena#1154), garde néanmoins `text-anchor="middle"` pour les graduations.
+   - Une question `multi` : le nombre de bonnes réponses ne se lit ni sur la consigne ni sur la forme (pas de paires où une seule option est juste à chaque fois, pas toujours le même nombre de vrais d'une `multi` à l'autre).
+   - Étiquettes : le libellé du registre doit nommer EXACTEMENT l'erreur exécutée ; une option qui exécute deux erreurs reste muette. Une famille d'erreur qui revient dans au moins trois questions distinctes (la tienne et les missions publiées) : NE crée PAS l'identifiant, liste dans ton rapport le libellé proposé (fr, en, ar) et les placements (fichier, question, option, texte) ; je le crée à la livraison.
+   - Un fait que le sujet teste mais qu'aucun cours du chapitre n'enseigne (par exemple l'action des sucs pancréatique et intestinal sur les lipides) : donne-le dans l'énoncé de chaque question qui l'emploie et signale-le dans ton rapport.
+
 D'autres auteurs écrivent en même temps dans d'autres chapitres : n'y touche pas. Un rouge des gates qui ne nomme pas tes fichiers n'est pas le tien.
 
 **Validation**

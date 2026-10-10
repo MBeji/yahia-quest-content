@@ -5,6 +5,7 @@ SP = '/tmp/claude-0/-home-user/b03814da-e5f9-5a74-bf03-e7c23b20207a/scratchpad'
 MAT = os.environ.get('MATIERE', 'math')
 PLAN = {'math': SP + '/gisement/9eme-math/plan-examens-v6.json', 'sciences-vie-terre': SP + '/gisement/9eme-svt-plan/plan-examens-v1.json'}[MAT]
 lot, wt = sys.argv[1], sys.argv[2]
+if MAT == 'sciences-vie-terre' and lot.startswith('SVT-'): lot = lot[4:]   # « SVT-L01 » (nom du worktree) → « L01 » (identifiant du plan et du registre SVT)
 plan = json.load(open(PLAN, encoding='utf8'))
 out = []
 for m in plan['missions']:
