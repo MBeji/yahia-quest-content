@@ -85,12 +85,12 @@
         },
         {
           "id": "d",
-          "text": "20/3",
-          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+          "text": "6/5",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
         }
       ],
       "correctOption": "a",
-      "explanation": "المثلّث ABC قائم في C ووتره [AB] ، و [CH] هو الارتفاع الصادر من C لأنّ (CH) ⊥ (AB). نحسب مساحة المثلّث بطريقتين: بالقاعدة [AB] وارتفاعها [CH] ، وبالضلعين القائمين [CA] و [CB] حيث يكون كلّ منهما ارتفاع الآخر. المساحة = (AB × CH) ÷ 2 وهي أيضًا (AC × BC) ÷ 2 ، فنساوي الحسابين ونضرب في 2: AB × CH = AC × BC. ومنه CH = (AC × BC) ÷ AB = (3 × 4) ÷ 5 = 12/5 ✓. الخطأ الشائع: ضرب الارتفاع [CH] في ضلع قائم بدل الوتر ، فنكتب CH × BC = AB × AC ومنه CH = 15/4 ، أو CH × AC = AB × BC ومنه CH = 20/3 ، وكلتاهما أطول من [AC] ، وهذا مستحيل لأنّ العمودي أقصر من كلّ مائل ؛ أو التوقّف عند مساحة المثلّث (3 × 4) ÷ 2 = 6 وهي مساحة لا طول.",
+      "explanation": "المثلّث ABC قائم في C ووتره [AB] ، و [CH] هو الارتفاع الصادر من C لأنّ (CH) ⊥ (AB). نحسب مساحة المثلّث بطريقتين: بالقاعدة [AB] وارتفاعها [CH] ، وبالضلعين القائمين [CA] و [CB] حيث يكون كلّ منهما ارتفاع الآخر. المساحة = (AB × CH) ÷ 2 وهي أيضًا (AC × BC) ÷ 2 ، فنساوي الحسابين ونضرب في 2: AB × CH = AC × BC. ومنه CH = (AC × BC) ÷ AB = (3 × 4) ÷ 5 = 12/5 ✓. الخطأ الشائع: ضرب الارتفاع [CH] في ضلع قائم بدل الوتر ، فنكتب CH × BC = AB × AC ومنه CH = 15/4 ، وهو أطول من [AC] ، وهذا مستحيل لأنّ العمودي أقصر من كلّ مائل ؛ أو القسمة على 2 في أحد الحسابين فقط فنكتب AB × CH = (AC × BC) ÷ 2 ومنه CH = 6/5 ؛ أو التوقّف عند مساحة المثلّث (3 × 4) ÷ 2 = 6 وهي مساحة لا طول.",
       "difficulty": 2,
       "competencies": [
         "math.geo.relations-metriques"
@@ -245,24 +245,24 @@
       ]
     },
     {
-      "prompt": "B هو المركز القائم للمثلّث AEF ، والمستقيم (EB) يقطع المستقيم (AF) في النقطة K.\nأيّ حجّة تثبت أنّ K تنتمي إلى الدائرة التي قطرها [AB] ؟\n<svg viewBox=\"0 0 320 350\"><title>المثلّث AEF والمستقيم (EB) والنقطة K والدائرة التي قطرها [AB]</title><circle cx=\"146.76\" cy=\"248.48\" r=\"66.2\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M80.56 248.48 L239.44 36.65\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M239.44 36.65 L239.44 268.34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M80.56 248.48 L239.44 268.34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M239.44 36.65 L210.92 264.77\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M80.56 248.48 L212.96 248.48\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"80.56\" cy=\"248.48\" r=\"3.8\"/><circle cx=\"212.96\" cy=\"248.48\" r=\"3.8\"/><circle cx=\"239.44\" cy=\"36.65\" r=\"3.8\"/><circle cx=\"239.44\" cy=\"268.34\" r=\"3.8\"/><circle cx=\"210.92\" cy=\"264.77\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"67.56\" y=\"253.48\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"201.96\" y=\"240.48\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"253.44\" y=\"34.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"253.44\" y=\"279.34\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"217.92\" y=\"283.77\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text></g></svg>",
+      "prompt": "B هو المركز القائم للمثلّث AEF (النقطة التي تلتقي عندها المستقيمات الثلاثة المارّة من رؤوسه والعمودية على أضلاعه المقابلة) ، والمستقيم (EB) يقطع المستقيم (AF) في النقطة K.\nأيّ حجّة تثبت أنّ K تنتمي إلى الدائرة التي قطرها [AB] ؟\n<svg viewBox=\"0 0 320 350\"><title>المثلّث AEF والمستقيم (EB) والنقطة K والدائرة التي قطرها [AB]</title><circle cx=\"146.76\" cy=\"248.48\" r=\"66.2\" fill=\"#0f6e56\" fill-opacity=\"0.05\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M80.56 248.48 L239.44 36.65\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M239.44 36.65 L239.44 268.34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M80.56 248.48 L239.44 268.34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M239.44 36.65 L210.92 264.77\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M80.56 248.48 L212.96 248.48\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"80.56\" cy=\"248.48\" r=\"3.8\"/><circle cx=\"212.96\" cy=\"248.48\" r=\"3.8\"/><circle cx=\"239.44\" cy=\"36.65\" r=\"3.8\"/><circle cx=\"239.44\" cy=\"268.34\" r=\"3.8\"/><circle cx=\"210.92\" cy=\"264.77\" r=\"3.8\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"67.56\" y=\"253.48\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"201.96\" y=\"240.48\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"253.44\" y=\"34.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"253.44\" y=\"279.34\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"217.92\" y=\"283.77\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text></g></svg>",
       "options": [
         {
           "id": "a",
-          "text": "(EB) ارتفاع في المثلّث AEF ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في K ووتره [AB] ، إذن K تنتمي إلى الدائرة التي قطرها [AB]"
+          "text": "(EB) ارتفاع في المثلّث AEF ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في K ووتره [AB]"
         },
         {
           "id": "b",
-          "text": "(EB) ارتفاع في المثلّث AEF ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في B ووتره [AK] ، إذن K تنتمي إلى الدائرة التي قطرها [AB]",
+          "text": "(EB) ارتفاع في المثلّث AEF ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في B ووتره [AK]",
           "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
         },
         {
           "id": "c",
-          "text": "(EB) هو الموسّط العمودي لـ [AF] ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في K ووتره [AB] ، إذن K تنتمي إلى الدائرة التي قطرها [AB]"
+          "text": "(EB) هو الموسّط العمودي لـ [AF] ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في K ووتره [AB]"
         },
         {
           "id": "d",
-          "text": "(EB) هو الموسّط العمودي لـ [AF] ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في B ووتره [AK] ، إذن K تنتمي إلى الدائرة التي قطرها [AB]"
+          "text": "(EB) هو الموسّط العمودي لـ [AF] ، فهو عمودي على (AF) ، أي أنّ المثلّث AKB قائم في B ووتره [AK]"
         }
       ],
       "correctOption": "a",

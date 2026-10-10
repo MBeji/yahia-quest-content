@@ -62,7 +62,8 @@
         },
         {
           "id": "c",
-          "text": "المثلّث BFC قائم في B، وفي كلّ مثلّث قائم زاويتاه الحادّتان BFC و BCF متقايستان"
+          "text": "المثلّث BFC قائم في B، وفي كلّ مثلّث قائم زاويتاه الحادّتان BFC و BCF متقايستان",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
         },
         {
           "id": "d",
@@ -81,12 +82,12 @@
       "options": [
         {
           "id": "a",
-          "text": "[AF] و [EC] ضلعان متقابلان في الرباعي AECF، وهما متقايسان، وكلّ رباعي له ضلعان متقابلان متقايسان فهو متوازي أضلاع",
+          "text": "[AF] و [EC] ضلعان متقابلان في الرباعي AECF، وهما متقايسان و AF = 2 × BF، وكلّ رباعي له ضلعان متقابلان متقايسان فهو متوازي أضلاع",
           "misconceptionTag": "math.geo.condition-suffisante-supposee"
         },
         {
           "id": "b",
-          "text": "[AF] و [EC] ضلعان متقابلان في الرباعي AECF، وهما متوازيان، وكلّ رباعي له ضلعان متقابلان متوازيان فهو متوازي أضلاع",
+          "text": "[AF] و [EC] ضلعان متقابلان في الرباعي AECF، وهما متوازيان و E من [CD]، وكلّ رباعي له ضلعان متقابلان متوازيان فهو متوازي أضلاع",
           "misconceptionTag": "math.geo.condition-suffisante-supposee"
         },
         {
@@ -142,35 +143,35 @@
       "options": [
         {
           "id": "a",
-          "text": "HC = 3 cm"
-        },
-        {
-          "id": "b",
-          "text": "EC = 6 cm"
-        },
-        {
-          "id": "c",
-          "text": "H منتصف [EC]"
-        },
-        {
-          "id": "d",
-          "text": "EH = 3 cm"
-        },
-        {
-          "id": "e",
           "text": "H منتصف [CD]"
         },
         {
-          "id": "f",
+          "id": "b",
+          "text": "HC = 3 cm"
+        },
+        {
+          "id": "c",
+          "text": "EC = 6 cm"
+        },
+        {
+          "id": "d",
           "text": "HC = 6 cm"
+        },
+        {
+          "id": "e",
+          "text": "H منتصف [EC]"
+        },
+        {
+          "id": "f",
+          "text": "EH = 3 cm"
         }
       ],
       "answerKey": {
         "correct": [
-          "a",
           "b",
           "c",
-          "d"
+          "e",
+          "f"
         ]
       },
       "explanation": "BCHF مربّع ضلعه BC = 3 cm، فالطول HC يساوي 3 cm. وAF = AB − BF = 9 − 3 = 6 cm، فالطول EC يساوي 6 cm لأنّ CE = AF. النقطتان E و H من [CD] في جهة C نفسها والطول HC أصغر من EC، فـ H تقع على [EC] وطول [EH] هو EC − HC = 3 cm، أي EH = HC، فالنقطة H هي منتصف القطعة [EC]. فالعبارات الأربع التي تذكر HC وEC وEH ومنتصف [EC] صحيحة ✓. أمّا منتصف [CD] فيبعد عن C بـ 4,5 cm لأنّ CD = 9 cm، فالنقطة H ليست منتصف [CD]، ولا يصحّ القول إنّ HC = 6 cm لأنّ هذا هو طول [EC].",
@@ -210,35 +211,6 @@
       ]
     },
     {
-      "prompt": "ABCD مستطيل حيث AB = 9 cm و AD = 3 cm، والنقطة K من المستقيم (BC) بحيث B منتصف [CK].\nأيّ النقاط التالية، وكلّها على القطعة [AB]، هي مركز ثقل المثلّث ACK ؟\n<svg viewBox=\"0 0 300 230\"><title>المستطيل ABCD والمثلّث ACK حيث B منتصف [CK]</title><polygon points=\"30,115 270,115 270,35 30,35\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"30,115 270,35 270,195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M30 115 L270 115\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M264.5 75 L275.5 75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M264.5 155 L275.5 155\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"115\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"115\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"270\" cy=\"35\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"195\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"35\" r=\"3\" fill=\"#64748b\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20.81\" y=\"129.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"280.61\" y=\"109.39\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">B</text><text x=\"279.19\" y=\"30.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"279.19\" y=\"209.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"20.81\" y=\"30.81\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">D</text></g></svg>",
-      "options": [
-        {
-          "id": "a",
-          "text": "النقطة P حيث AP = 3 cm",
-          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
-        },
-        {
-          "id": "b",
-          "text": "النقطة Q حيث AQ = 4,5 cm",
-          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
-        },
-        {
-          "id": "c",
-          "text": "النقطة R حيث AR = 6 cm"
-        },
-        {
-          "id": "d",
-          "text": "النقطة B"
-        }
-      ],
-      "correctOption": "c",
-      "explanation": "B منتصف [CK]، فالقطعة [AB] هي الموسّط الصادر من الرأس A في المثلّث ACK، ومركز الثقل يقع عليها عند ثلثيها انطلاقًا من الرأس A: AG = (2/3) × AB = (2/3) × 9 = 6 cm ✓، أي النقطة R. الخطأ الشائع: جعل المركز عند ثلث الموسّط انطلاقًا من الرأس A فنجد AP = 3 cm؛ أو وضعه في منتصف الموسّط فنجد AQ = 4,5 cm؛ أو أخذ المنتصف B نفسه.",
-      "difficulty": 2,
-      "competencies": [
-        "math.geo.triangles-base"
-      ]
-    },
-    {
       "prompt": "ABCD مستطيل حيث AB = 9 cm و AD = 3 cm، والنقطة F من [AB] بحيث BF = BC، والنقطة E من [CD] بحيث CE = AF، والنقطة H المسقط العمودي للنقطة F على (CD).\nما طبيعة المثلّث EFC ؟\n<svg viewBox=\"0 0 300 150\"><title>المستطيل ABCD والمثلّث EFC والنقطة H المسقط العمودي لـ F على (CD)</title><polygon points=\"109.33,34.33 190.67,115.67 272,34.33\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><polygon points=\"28,115.67 272,115.67 272,34.33 28,34.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"109.33,34.33 190.67,115.67 272,34.33\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M190.67 115.67 L190.67 34.33\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M190.67 43.33 L199.67 43.33 L199.67 34.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"28\" cy=\"115.67\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"272\" cy=\"115.67\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"272\" cy=\"34.33\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"28\" cy=\"34.33\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"109.33\" cy=\"34.33\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"190.67\" cy=\"115.67\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"190.67\" cy=\"34.33\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"18.81\" y=\"129.86\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"281.19\" y=\"129.86\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"281.19\" y=\"30.14\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"18.81\" y=\"30.14\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"109.33\" y=\"26.33\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"190.67\" y=\"133.67\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text><text x=\"190.67\" y=\"26.33\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
       "options": [
         {
@@ -251,7 +223,7 @@
         },
         {
           "id": "c",
-          "text": "متقايس الأضلاع"
+          "text": "حادّ الزوايا ومختلف الأضلاع"
         },
         {
           "id": "d",
@@ -259,7 +231,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "HC = BC = 3 cm و EC = AF = 6 cm، فـ H منتصف [EC]. (FH) عمودي على (EC) في منتصفه، فهو الموسّط العمودي للقطعة [EC] والنقطة F منه: FE = FC، فالمثلّث متقايس الضلعين رأسه F. وFH = BC = 3 cm = EC/2، فالموسّط [FH] المتعلّق بالضلع [EC] يساوي نصفه، فبعكس خاصيّة الموسّط المتعلّق بالوتر المثلّث EFC قائم في F ✓. وهو ليس متقايس الأضلاع لأنّ EF = FC = 3√2 cm بينما EC = 6 cm. الخطأ الشائع: الاكتفاء بأحد الوصفين، فيُقال متقايس الضلعين دون ملاحظة الزاوية القائمة، أو قائم دون ملاحظة تقايس الضلعين.",
+      "explanation": "HC = BC = 3 cm و EC = AF = 6 cm، فـ H منتصف [EC]. (FH) عمودي على (EC) في منتصفه، فهو الموسّط العمودي للقطعة [EC] والنقطة F منه: FE = FC، فالمثلّث متقايس الضلعين رأسه F. وFH = BC = 3 cm = EC/2، فالموسّط [FH] المتعلّق بالضلع [EC] يساوي نصفه، فبعكس خاصيّة الموسّط المتعلّق بالوتر المثلّث EFC قائم في F ✓. فهو إذن ليس حادّ الزوايا، وليس مختلف الأضلاع لأنّ FE = FC = 3√2 cm، وليس متقايس الأضلاع لأنّ EC = 6 cm. الخطأ الشائع: الاكتفاء بأحد الوصفين، فيُقال متقايس الضلعين دون ملاحظة الزاوية القائمة، أو قائم دون ملاحظة تقايس الضلعين.",
       "difficulty": 3,
       "competencies": [
         "math.geo.triangles-base",
@@ -299,7 +271,7 @@
     },
     {
       "type": "multi",
-      "prompt": "ABCD مستطيل حيث AB = 9 cm و AD = 3 cm، والنقطة F من [AB] بحيث BF = BC، والنقطة E من [CD] بحيث CE = AF. المستقيمان (EF) و (BC) يتقاطعان في النقطة K.\nاختر كلّ العبارات الصحيحة.\n<svg viewBox=\"0 0 300 230\"><title>المستطيل ABCD والنقطتان E وF والمستقيم (EF) يقطع (BC) في K</title><polygon points=\"48,132 252,132 252,64 48,64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M116 64 L252 200\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M252 132 L252 200\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M113.9 137.5 L113.9 126.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M118.1 137.5 L118.1 126.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M181.9 69.5 L181.9 58.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M186.1 69.5 L186.1 58.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M218 126.5 L218 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M257.5 98 L246.5 98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"48\" cy=\"132\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"132\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"64\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"48\" cy=\"64\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"116\" cy=\"64\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"184\" cy=\"132\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"252\" cy=\"200\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"38.81\" y=\"146.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"261.19\" y=\"146.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"261.19\" y=\"59.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"38.81\" y=\"59.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"116\" y=\"56\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"174.81\" y=\"127.81\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text><text x=\"265\" y=\"205\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text></g></svg>",
+      "prompt": "ABCD مستطيل حيث AB = 9 cm و AD = 3 cm، والنقطة F من [AB] بحيث BF = BC، والنقطة E من [CD] بحيث CE = AF. المستقيمان (EF) و (BC) يتقاطعان في النقطة K.\nاختر كلّ العبارات الصحيحة.\n<svg viewBox=\"0 0 300 150\"><title>المستطيل ABCD والنقطتان E وF</title><polygon points=\"28,115.67 272,115.67 272,34.33 28,34.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M109.33 34.33 L190.67 115.67\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M107.23 121.17 L107.23 110.17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M111.43 121.17 L111.43 110.17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M188.57 39.83 L188.57 28.83\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M192.77 39.83 L192.77 28.83\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M231.33 110.17 L231.33 121.17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M277.5 75 L266.5 75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"28\" cy=\"115.67\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"272\" cy=\"115.67\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"272\" cy=\"34.33\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"28\" cy=\"34.33\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"109.33\" cy=\"34.33\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"190.67\" cy=\"115.67\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"18.81\" y=\"129.86\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"281.19\" y=\"129.86\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"281.19\" y=\"30.14\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"18.81\" y=\"30.14\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"109.33\" y=\"26.33\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"190.67\" y=\"133.67\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text></g></svg>",
       "options": [
         {
           "id": "a",
@@ -307,38 +279,67 @@
         },
         {
           "id": "b",
-          "text": "KB = 3 cm"
-        },
-        {
-          "id": "c",
-          "text": "B منتصف [CK]"
-        },
-        {
-          "id": "d",
-          "text": "KC = 6 cm"
-        },
-        {
-          "id": "e",
           "text": "K منتصف [BC]"
         },
         {
-          "id": "f",
+          "id": "c",
+          "text": "KC = 4,5 cm"
+        },
+        {
+          "id": "d",
+          "text": "B منتصف [CK]"
+        },
+        {
+          "id": "e",
           "text": "KB = 1,5 cm"
+        },
+        {
+          "id": "f",
+          "text": "KB = 3 cm"
         }
       ],
       "answerKey": {
         "correct": [
           "a",
-          "b",
-          "c",
-          "d"
+          "d",
+          "f"
         ]
       },
-      "explanation": "المستقيمان (FB) و (EC) متوازيان لأنّهما محمولان على المستقيمين المتوازيين (AB) و (CD). النقطة K تقع على (BC) من جهة B الأخرى عن C، فطول [KC] هو KB + BC. وفي المثلّث KEC بمبرهنة طاليس: KB/KC = FB/EC = 3/6 = 1/2، أي KB/(KB + 3) = 1/2، فـ 2KB = KB + 3 ومنه KB يساوي 3 cm. إذن KC يساوي 3 + 3 = 6 cm، وبما أنّ KB = BC فالنقطة B هي منتصف القطعة [CK]. فمن العبارات المعروضة: توازي (FB) و (EC)، وطولا KB وKC، وكون B منتصف [CK]، كلّها صحيحة ✓.",
+      "explanation": "المستقيمان (FB) و (EC) متوازيان لأنّهما محمولان على المستقيمين المتوازيين (AB) و (CD). النقطة K تقع على (BC) من جهة B الأخرى عن C، فطول [KC] هو KB + BC. وفي المثلّث KEC بمبرهنة طاليس: KB/KC = FB/EC = 3/6 = 1/2، أي KB/(KB + 3) = 1/2، فـ 2KB = KB + 3 ومنه KB = 3 cm لا 1,5 cm. إذن KC = KB + BC = 3 + 3 = 6 cm لا 4,5 cm، وبما أنّ KB = BC فالنقطة B هي منتصف القطعة [CK]، وليست K منتصف [BC]. فالعبارات الصحيحة هي: توازي (FB) و (EC)، و KB = 3 cm، وكون B منتصف [CK] ✓.",
       "difficulty": 3,
       "competencies": [
         "math.geo.thales-direct",
         "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 9 cm و AD = 3 cm، والنقطة F من [AB] بحيث BF = BC، والنقطة E من [CD] بحيث CE = AF. المستقيمان (EF) و (BC) يتقاطعان في النقطة K.\nأيّ النقاط التالية، وكلّها على القطعة [AB]، هي مركز ثقل المثلّث ACK ؟\n<svg viewBox=\"0 0 300 230\"><title>المستطيل ABCD والمثلّث ACK حيث K نقطة تقاطع (EF) و (BC)</title><polygon points=\"30,115 270,115 270,35 30,35\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"30,115 270,35 270,195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M110 35 L270 195\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M107.9 120.5 L107.9 109.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M112.1 120.5 L112.1 109.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M187.9 40.5 L187.9 29.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M192.1 40.5 L192.1 29.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M230 109.5 L230 120.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M275.5 75 L264.5 75\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"115\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"115\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"35\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"35\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"195\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"110\" cy=\"35\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"190\" cy=\"115\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"20.81\" y=\"129.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"283\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"279.19\" y=\"30.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"20.81\" y=\"30.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"279.19\" y=\"209.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"110\" y=\"27\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"180.81\" y=\"129.19\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "النقطة P حيث AP = 3 cm",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "b",
+          "text": "النقطة Q حيث AQ = 4,5 cm",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "النقطة R حيث AR = 6 cm"
+        },
+        {
+          "id": "d",
+          "text": "النقطة B"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(FB) ∥ (EC) لأنّهما محمولان على المستقيمين المتوازيين (AB) و (CD)، فبمبرهنة طاليس في المثلّث KEC: KB/KC = FB/EC = 3/6 = 1/2، أي KB/(KB + 3) = 1/2، ومنه KB = 3 cm = BC. فالنقطة B منتصف [CK]، والقطعة [AB] هي الموسّط الصادر من الرأس A في المثلّث ACK. ومركز الثقل يقع عليها عند ثلثيها انطلاقًا من الرأس A: AG = (2/3) × AB = (2/3) × 9 = 6 cm ✓، أي النقطة R. الخطأ الشائع: جعل المركز عند ثلث الموسّط انطلاقًا من الرأس A فنجد AP = 3 cm؛ أو وضعه في منتصف الموسّط فنجد AQ = 4,5 cm؛ أو أخذ المنتصف B نفسه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.thales-direct"
       ]
     }
   ]
