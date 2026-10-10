@@ -11,11 +11,11 @@
       "options": [
         { "id": "a", "text": "12/13", "misconceptionTag": "math.geo.cosinus-sinus-confondus" },
         { "id": "b", "text": "5/13" },
-        { "id": "c", "text": "5/12", "misconceptionTag": "math.geo.trigo-rapport-inverse" },
-        { "id": "d", "text": "12/5", "misconceptionTag": "math.geo.trigo-rapport-inverse" }
+        { "id": "c", "text": "5/12", "misconceptionTag": "math.geo.hypotenuse-mal-choisie" },
+        { "id": "d", "text": "12/5", "misconceptionTag": "math.geo.fonction-trigo-mal-choisie" }
       ],
       "correctOption": "b",
-      "explanation": "أوّلًا نحسب الوتر بنظرية بيثاغورس: BC² = AB² + AC² = 25 + 144 = 169، إذن BC = 13 cm. بالنسبة للزاوية B في المثلّث القائم في A: الضلع المجاور هو AB والوتر هو BC، إذن جتا(B) = المجاور/الوتر = AB/BC = 5/13. ✓ (5-12-13 ثلاثي فيثاغوري). الخطأ الشائع: أخذ الضلع المقابل AC بدل المجاور (12/13، وهو جا(B))؛ أو حساب ظا = AB/AC = 5/12؛ أو قلب النسبة (12/5).",
+      "explanation": "أوّلًا نحسب الوتر بنظرية بيثاغورس: BC² = AB² + AC² = 25 + 144 = 169، إذن BC = 13 cm. بالنسبة للزاوية B في المثلّث القائم في A: الضلع المجاور هو AB والوتر هو BC، إذن جتا(B) = المجاور/الوتر = AB/BC = 5/13. ✓ (5-12-13 ثلاثي فيثاغوري). الخطأ الشائع: أخذ الضلع المقابل AC بدل المجاور (12/13، وهو جا(B))؛ أو اعتبار [AC] وترًا لأنّه أطول الضلعين المعطيين فنجد AB/AC = 5/12؛ أو حساب ظلّ الزاوية B بدل جيب تمامها، أي AC/AB = 12/5.",
       "difficulty": 2,
       "competencies": ["math.geo.trigonometrie", "math.geo.pythagore"]
     },
@@ -90,7 +90,7 @@
         {
           "id": "b",
           "text": "نعم، جتا = المقابل/المجاور",
-          "misconceptionTag": "math.geo.cosinus-sinus-confondus"
+          "misconceptionTag": "math.geo.fonction-trigo-mal-choisie"
         },
         {
           "id": "c",
