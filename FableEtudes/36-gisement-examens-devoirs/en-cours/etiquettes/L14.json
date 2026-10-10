@@ -73,15 +73,6 @@
    "texte": "المستقيمان (AE) و (AD) متعامدان"
   },
   {
-   "file": "40",
-   "q": 6,
-   "opt": "d",
-   "id": "math.geo.angle-droit-mauvais-sommet",
-   "remplace": null,
-   "texte": "المستقيمان (AD) و (OE) متعامدان",
-   "note": "facultatif (suggéré par l'audit) : angle droit placé au centre O au lieu du sommet E qui fait face au diamètre [AD]"
-  },
-  {
    "file": "36",
    "q": 5,
    "opt": "a",
@@ -290,6 +281,17 @@
    "id": "math.geo.droites-remarquables-confondues",
    "texte": "E منتصف وتر المثلث القائم SAC ، والموسّط المتعلّق بالوتر عمودي عليه",
    "note": "l'erreur exécutée est la médiane prise pour la hauteur ; hauteur-confondue-avec-mediane décrit le sens inverse"
+  },
+  {
+   "chapitre": "18-quadrilateres",
+   "file": "25",
+   "q": 1,
+   "opt": "d",
+   "nom_fichier": "25-examen-2016-technique-ex3-rectangle-parallelogramme-pythagore-thales-aire-echelle.json",
+   "remplace": "math.geo.hypotenuse-mal-choisie",
+   "id": "math.geo.angle-droit-mauvais-sommet",
+   "texte": "المثلّث ADF قائم في A لأنّ ABCD مستطيل، و [DF] وتره، فنطبّق نظرية فيثاغورس",
+   "note": "omission de l'audit relevée à la re-vérification : l'angle droit est mis en A au lieu de D (l'explication publiée le dit : « وضع الزاوية القائمة في A بحجّة أنّ ABCD مستطيل ») ; hypotenuse-mal-choisie y est inexact"
   }
  ],
  "note": [
@@ -299,6 +301,7 @@
   "`hypotenuse-mal-choisie` RESTE exacte (réciproque de Pythagore : l'élève choisit le mauvais côté comme hypoténuse) en 38 Q2 b, c (ex-Q1) et ses usages publiés 09/09 Q4, 09/12 Q1, 09/17 Q2, 09/32 Q2, 09/35 Q5, 12/02 Q4, 14/02 Q1, 18/09 Q3, 18/19 Q1, 20/03 Q6, 10/01 Q6 (liste de l'audit, non relue option par option ici) : à NE PAS remplacer. Elle reste aussi sur 38 Q3 c (x√2), 39 Q2, 39 Q11, 40 Q2, 41 Q2, 41 Q8 (vrai choix de l'hypoténuse dans un calcul).",
   "37 Q2 a, b, d : le contexte est un segment [AB] (côté du triangle PAB de la figure) et non un triangle seul ; les libellés parlent de « côté » et de « médiatrice » : placements retenus, mais b et d sont à poser seulement si la session de livraison accepte « droites remarquables » au sens large (sinon les laisser muettes ; le seuil de 3 questions est franchi sans elles).",
   "Hors lot, à corriger par la session de livraison : remplacer l'étiquette de la colonne « remplace » par la nouvelle sur les options de `hors_lot` (relues sur origin/main 67cf20e4 : texte et étiquette actuelle vérifiés) ; 18/03 Q2 b est facultatif.",
-  "Familles qui restent MUETTES (aucun libellé existant ne nomme l'erreur exacte) : égalité au lieu de la moitié hors droite des milieux ; « symétrique du mauvais point » (41 Q3 b, d) ; soustraction à l'envers x − 8 (38 Q2 a) ; (x − 4)(x + 4) pour x² − 8x + 16 (38 Q6 a : difference-carres-confondue décrit le sens inverse) ; équidistance prise pour milieu (40 Q8, options = numéros d'étapes) ; arrêt au produit ou plusieurs erreurs cumulées (options à deux erreurs des plans 2×2)."
+  "Familles qui restent MUETTES (aucun libellé existant ne nomme l'erreur exacte) : égalité au lieu de la moitié hors droite des milieux ; « symétrique du mauvais point » (41 Q3 b, d) ; soustraction à l'envers x − 8 (38 Q2 a) ; (x − 4)(x + 4) pour x² − 8x + 16 (38 Q6 a : difference-carres-confondue décrit le sens inverse) ; équidistance prise pour milieu (40 Q8, options = numéros d'étapes) ; arrêt au produit ou plusieurs erreurs cumulées (options à deux erreurs des plans 2×2).",
+  "Re-vérification L14 (2026-10-10) : 40 Q6 d (facultatif) écarté — O n'est pas un sommet du triangle ADE et l'explication décrit une confusion diamètre/rayon, pas un angle droit au mauvais sommet ; 18/25 Q1 d ajouté (omission de l'audit)."
  ]
 }

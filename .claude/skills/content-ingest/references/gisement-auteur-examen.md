@@ -178,3 +178,22 @@ manquantes, confirmation de la double résolution, résultat des gates pour tes 
 - **L'en-tête est honnête** : une mission « boss » (d3) compte au moins une question réellement d3 une fois chaque étape redonnée
   avec ses données ; sinon d2 practice. Une figure ne marque pas la clé (pointillé qui fixe la coordonnée, point sur la réponse,
   diagonale tracée qui désigne la solution).
+
+## Pièges relevés aux re-vérifications des lots L14 et L16 (à éviter dès l'écriture)
+
+- **Plan 2×2 : la grille doit être complète case par case.** Quand chaque option combine deux cases (« ce qui est dit de (IK) », « ce qui est dit de (AC) »),
+  chaque valeur de chaque case, juste ou fausse, figure EXACTEMENT deux fois sur les quatre options : clé = (juste, juste), deux options à une seule
+  erreur (juste, fausse) et (fausse, juste), une option à deux erreurs laissée muette. Si une valeur juste figure deux fois et chaque fausse une fois,
+  le vote case par case reconstruit la clé. Une option remplacée après un audit défait souvent la grille : recompte par case avant de rendre.
+- **Toutes les prémisses d'une option restent vraies** ; seule l'inférence est fausse. Une option fausse à l'œil sur la figure à l'échelle
+  (un angle de 108° donné pour droit, une perpendicularité de 45°) ne piège personne.
+- **Une figure se corrige en retirant, jamais en déplaçant.** Un trait de codage déplacé code une égalité fausse (AO = OK), un point déplacé « plus bas »
+  casse un alignement. Si un point ou un trait de la figure livre la clé (H lu sur le dessin, étiquette posée sur une ligne de cote), retire-le.
+- **Un même sommet ou un même mot dans deux options sur quatre** (« قائم في E » en a et d) désigne la clé par le vote : plan sommet × précision.
+- **Une explication ne reprend pas la valeur qu'une question suivante demande** (« a = 8 عند x = 4 » dans l'explication de 38 Q8 livrait l'étape clé de 38 Q9).
+- **Un terme du sujet absent du cours** (المركز القائم) : glose descriptive qui ne partage aucun mot avec la seule option juste (« ارتفاع ») ; sinon l'appariement de mots tranche.
+- **Étiquettes** : lis le registre d'`origin/main` (`git show origin/main:content/misconceptions.json`), jamais celui de l'arbre de travail, périmé.
+  « Angle droit placé au mauvais sommet » = `math.geo.angle-droit-mauvais-sommet` (lot L14) ; `hypotenuse-mal-choisie` reste pour un vrai mauvais choix d'hypoténuse
+  (réciproque de Pythagore, côté le plus long pris pour l'hypoténuse). « Cosinus pris pour la tangente » = `math.geo.fonction-trigo-mal-choisie` (lot L16).
+- **Un doublon d'options avec une mission publiée d'un autre chapitre** (20/10 Q2 : {20, 2√3, 2√5, 6}) est un doublon même si les énoncés diffèrent : change une valeur
+  par un piège réellement exécuté (OB non élevé au carré : 3√2), jamais par une valeur éliminable aux bornes (« الوتر أطول الأضلاع »).
