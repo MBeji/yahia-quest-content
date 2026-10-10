@@ -1,0 +1,65 @@
+{
+  "lot": "L16",
+  "chapitre": "18-quadrilateres",
+  "nouvelles": {
+    "math.geo.fonction-trigo-mal-choisie": {
+      "competency": "math.geo.trigonometrie",
+      "fr": "Tu choisis le mauvais rapport trigonométrique : avec les côtés opposé et adjacent à l'angle, c'est la tangente ; le sinus et le cosinus font intervenir l'hypoténuse",
+      "en": "You pick the wrong trigonometric ratio: the sides opposite and adjacent to the angle call for the tangent; sine and cosine involve the hypotenuse",
+      "ar": "تختار النسبة المثلّثية غير المناسبة: مع الضلعين المقابل والمجاور للزاوية نستعمل الظلّ، أمّا الجيب وجيب التمام فيستعملان الوتر"
+    }
+  },
+  "options": [
+    {
+      "file": "33",
+      "q": 6,
+      "opt": "a",
+      "id": "math.geo.fonction-trigo-mal-choisie",
+      "texte": "3/2"
+    },
+    {
+      "file": "33",
+      "q": 6,
+      "opt": "c",
+      "id": "math.geo.fonction-trigo-mal-choisie",
+      "texte": "3√3/2"
+    }
+  ],
+  "hors_lot": [
+    {
+      "chapitre": "09-triangle-rectangle-trigo",
+      "file": "03",
+      "q": 6,
+      "opt": "a",
+      "id": "math.geo.fonction-trigo-mal-choisie",
+      "texte": "1/2",
+      "note": "muette aujourd'hui ; l'explication publiée nomme l'erreur (« الخلط مع جتا(A) … فجتا(A) = 5/10 = 1/2 ») : cosinus pris pour la tangente"
+    },
+    {
+      "chapitre": "09-triangle-rectangle-trigo",
+      "file": "06",
+      "q": 1,
+      "opt": "c",
+      "id": "math.geo.fonction-trigo-mal-choisie",
+      "texte": "5/12",
+      "remplace": "math.geo.trigo-rapport-inverse",
+      "note": "le libelle de trigo-rapport-inverse parle d'hypotenuse au denominateur : « 5/12 » (AB/AC) n'en contient pas ; l'explication publiee dit « حساب ظا = AB/AC = 5/12 » (rapport des deux cotes de l'angle droit pris pour le cosinus). L'option d « 12/5 » (= AC/AB = tan B exactement) a la meme structure et porte aussi trigo-rapport-inverse : a traiter pareil si le deposant le juge bon."
+    },
+    {
+      "chapitre": "09-triangle-rectangle-trigo",
+      "file": "06",
+      "q": 6,
+      "opt": "b",
+      "id": "math.geo.fonction-trigo-mal-choisie",
+      "texte": "نعم، جتا = المقابل/المجاور",
+      "remplace": "math.geo.cosinus-sinus-confondus",
+      "note": "« المقابل/المجاور » est la definition de la tangente (et non celle du sinus, qui est « المقابل/الوتر ») : cosinus-sinus-confondus est inexact ici ; d (« لا خطأ ») garde cosinus-sinus-confondus, exact"
+    }
+  ],
+  "note": [
+    "Seuil atteint : 4 questions distinctes (33-Q6 ici ; 09/03-Q6, 09/06-Q1, 09/06-Q6 hors lot) -> etiquette nouvelle math.geo.fonction-trigo-mal-choisie (competence math.geo.trigonometrie, verifiee dans content/competences/math.json de origin/main).",
+    "Les deux options du lot (33, « 3/2 » = 3 x sin 30° et « 3√3/2 » = 3 x cos 30°) restent MUETTES dans le fichier tant que l'etiquette n'est pas au registre ; ni misconceptions.json ni les competences ne sont editees par l'auteur.",
+    "Libelles fr/en/ar proposes par l'audit L16, relus : ajout de « trigonométrique » / « trigonometric » / « المثلّثية » pour s'aligner sur trigo-rapport-inverse.",
+    "Raisonnement circulaire « pur » : 2 questions seulement (09/26-Q4 et 32-Q11 a) -> reste muet, aucune etiquette proposee."
+  ]
+}

@@ -1,9 +1,9 @@
 {
-  "title": "🏛️ مناظرة 2010 · التمرين 4 ⭐⭐⭐⭐: مستطيل ومستقيم عمودي على قطره — فيثاغورس ومعادلة وإثبات طبيعة رباعي",
-  "difficulty": 4,
-  "mode": "challenge",
-  "xpReward": 300,
-  "rewardCoins": 60,
+  "title": "🏛️ مناظرة 2010 · التمرين 4 ⭐⭐⭐: مستطيل ومستقيم عمودي على قطره — فيثاغورس ومعادلة وإثبات طبيعة رباعي",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
   "displayOrder": 34,
   "questions": [
     {
@@ -11,7 +11,7 @@
       "options": [
         {
           "id": "a",
-          "text": "(OI) ⊥ (BD) والنقطة I من هذا المستقيم، فهي تبعد عن D وعن B المسافة نفسها، إذن ID = IB",
+          "text": "(OI) ⊥ (BD) والنقطة I من هذا المستقيم ومن الضلع [AB]، فهي تبعد عن D وعن B المسافة نفسها، إذن ID = IB",
           "misconceptionTag": "math.geo.condition-suffisante-supposee"
         },
         {
@@ -52,7 +52,7 @@
         },
         {
           "id": "c",
-          "text": "المستطيل ABCD فيه AB = CD، وقطعتان على ضلعين متقابلين من مستطيل متقايستان، إذن IB = DJ"
+          "text": "التناظر المركزي الذي مركزه O يحوّل B إلى D لأنّ B و D و O على استقامة واحدة، ونظيرة I هي J لأنّ I و J على مستقيم واحد مارّ من O، فنظيرة [IB] هي [JD]، إذن IB = DJ"
         },
         {
           "id": "d",
@@ -60,7 +60,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "O مركز المستطيل فهو منتصف [BD]، والتناظر المركزي الذي مركزه O يحوّل B إلى D وA إلى C، فيحوّل المستقيم (AB) إلى المستقيم (CD). والمستقيم (OI) يمرّ من O فيبقى في مكانه. والنقطة I هي تقاطع (AB) و (OI)، فنظيرتها هي تقاطع (CD) و (OI)، أي J. إذن هذا التناظر يحوّل [IB] إلى [JD] فـ IB = DJ ✓. الخطأ الشائع: افتراض أنّ نظيرة I هي J لمجرّد أنّهما على مستقيم مارّ من O، أو أنّ نظيرة B هي D لمجرّد استقامة النقاط؛ أو التعليل بتقايس الضلعين AB و CD اللذين يخصّان الضلعين كاملين لا جزأيهما.",
+      "explanation": "O مركز المستطيل فهو منتصف [BD]، والتناظر المركزي الذي مركزه O يحوّل B إلى D وA إلى C، فيحوّل المستقيم (AB) إلى المستقيم (CD). والمستقيم (OI) يمرّ من O فيبقى في مكانه. والنقطة I هي تقاطع (AB) و (OI)، فنظيرتها هي تقاطع (CD) و (OI)، أي J. إذن هذا التناظر يحوّل [IB] إلى [JD] فـ IB = DJ ✓. الخطأ الشائع: افتراض أنّ نظيرة I هي J لمجرّد أنّهما على مستقيم مارّ من O، أو أنّ نظيرة B هي D لمجرّد استقامة النقاط؛ أو الجمع بين التعليلين الناقصين.",
       "difficulty": 2,
       "competencies": [
         "math.geo.quadrilateres"
@@ -185,21 +185,7 @@
       ]
     },
     {
-      "type": "numeric",
-      "prompt": "ABCD مستطيل مركزه O حيث AB = 8 cm و AD = 4 cm. المستقيم المارّ من O والعمودي على (BD) يقطع (AB) في النقطة I ويقطع (CD) في النقطة J، والرباعي DIBJ معيّن حيث AI = 3 cm.\nاحسب محيط المعيّن DIBJ بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 300 190\"><title>المستطيل ABCD والمعيّن DIBJ</title><polygon points=\"34,37 121,153 266,153 179,37\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><polygon points=\"34,153 266,153 266,37 34,37\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"34,37 121,153 266,153 179,37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"34\" cy=\"153\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"266\" cy=\"153\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"266\" cy=\"37\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"34\" cy=\"37\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"121\" cy=\"153\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"179\" cy=\"37\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"24.81\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"275.19\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"275.19\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"24.81\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"121\" y=\"171\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"179\" y=\"29\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text></g></svg>",
-      "answerKey": {
-        "value": 20,
-        "unit": "cm"
-      },
-      "explanation": "I من [AB] فـ IB = AB − AI = 8 − 3 = 5 cm. أضلاع المعيّن DIBJ الأربعة متقايسة، فمحيطه 4 × IB = 4 × 5 = 20 cm ✓. الخطأ الشائع: ضرب AI في 4 فنجد 12، أو ضرب AB في 4 فنجد 32، أو ضرب IB في 3 فنجد 15.",
-      "difficulty": 2,
-      "competencies": [
-        "math.mes.perimetres",
-        "math.geo.quadrilateres"
-      ]
-    },
-    {
-      "prompt": "ABCD مستطيل مركزه O حيث AB = 8 cm و AD = 4 cm. المستقيم المارّ من O والعمودي على (BD) يقطع (AB) في النقطة I ويقطع (CD) في النقطة J. المستقيمان (JI) و (AD) يتقاطعان في النقطة K.\nلماذا المستقيمان (DI) و (BK) متعامدان ؟\n<svg viewBox=\"0 0 300 330\"><title>المستطيل ABCD والمستقيم (JI) الذي يقطع (AD) في K</title><polygon points=\"49.23,134.77 250.77,134.77 250.77,34 49.23,34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M49.23 134.77 L49.23 285.92\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M250.77 134.77 L49.23 34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M49.23 285.92 L175.19 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M49.23 285.92 L250.77 134.77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M49.23 34 L124.81 134.77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.02 76.33 L162.07 80.36 L158.05 88.41\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"49.23\" cy=\"134.77\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"250.77\" cy=\"134.77\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"250.77\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"49.23\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"124.81\" cy=\"134.77\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"175.19\" cy=\"34\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"84.38\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"49.23\" cy=\"285.92\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"40.04\" y=\"148.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"259.96\" y=\"148.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"259.96\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"40.04\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"134.71\" y=\"149.67\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"175.19\" y=\"26\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text><text x=\"136\" y=\"89.38\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"36.23\" y=\"290.92\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text></g></svg>",
+      "prompt": "ABCD مستطيل مركزه O حيث AB = 8 cm و AD = 4 cm. المستقيم المارّ من O والعمودي على (BD) يقطع (AB) في النقطة I ويقطع (CD) في النقطة J. المستقيمان (JI) و (AD) يتقاطعان في النقطة K.\nنذكّر بأنّ ارتفاعات أيّ مثلّث تلتقي في نقطة واحدة، تُسمّى المركز القائم للمثلّث.\nلماذا المستقيمان (DI) و (BK) متعامدان ؟\n<svg viewBox=\"0 0 300 330\"><title>المستطيل ABCD والمستقيم (JI) الذي يقطع (AD) في K</title><polygon points=\"49.23,134.77 250.77,134.77 250.77,34 49.23,34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M49.23 134.77 L49.23 285.92\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M250.77 134.77 L49.23 34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M49.23 285.92 L175.19 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M49.23 285.92 L250.77 134.77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M49.23 34 L124.81 134.77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.02 76.33 L162.07 80.36 L158.05 88.41\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"49.23\" cy=\"134.77\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"250.77\" cy=\"134.77\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"250.77\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"49.23\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"124.81\" cy=\"134.77\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"175.19\" cy=\"34\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"84.38\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"49.23\" cy=\"285.92\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"40.04\" y=\"148.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"259.96\" y=\"148.96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"259.96\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"40.04\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"134.71\" y=\"149.67\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"175.19\" y=\"26\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text><text x=\"136\" y=\"89.38\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"36.23\" y=\"290.92\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text></g></svg>",
       "options": [
         {
           "id": "a",
@@ -231,7 +217,7 @@
     },
     {
       "type": "numeric",
-      "prompt": "ABCD مستطيل حيث AB = 8 cm و AD = 4 cm، والنقطة I من [AB] بحيث يكون المثلّث DIB متقايس الضلعين رأسه I. نضع x = AI.\nاحسب x بالصنتمتر، ثمّ اكتب قيمته.",
+      "prompt": "ABCD مستطيل حيث AB = 8 cm و AD = 4 cm، والنقطة I من [AB] بحيث يكون المثلّث DIB متقايس الضلعين رأسه I. نضع x = AI.\nاحسب x بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 300 170\"><title>المستطيل ABCD والنقطة I من [AB]</title><polygon points=\"48,136 252,136 252,34 48,34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"48\" cy=\"136\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"136\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"48\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"111.75\" cy=\"136\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"38.81\" y=\"150.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"261.19\" y=\"150.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"261.19\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"38.81\" y=\"29.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"111.75\" y=\"154\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g></svg>",
       "answerKey": {
         "value": 3,
         "unit": "cm"
@@ -242,6 +228,21 @@
         "math.alg.mise-en-equation",
         "math.alg.equations-premier-degre",
         "math.geo.pythagore"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABCD مستطيل مركزه O حيث AB = 8 cm و AD = 4 cm. المستقيم المارّ من O والعمودي على (BD) يقطع (AB) في النقطة I ويقطع (CD) في النقطة J، والرباعي DIBJ معيّن.\nاحسب محيط المعيّن DIBJ بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 300 190\"><title>المستطيل ABCD والمعيّن DIBJ</title><polygon points=\"34,37 121,153 266,153 179,37\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><polygon points=\"34,153 266,153 266,37 34,37\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"34,37 121,153 266,153 179,37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"34\" cy=\"153\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"266\" cy=\"153\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"266\" cy=\"37\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"34\" cy=\"37\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"121\" cy=\"153\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"179\" cy=\"37\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"24.81\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"275.19\" y=\"167.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"275.19\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"24.81\" y=\"32.81\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"121\" y=\"171\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"179\" y=\"29\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text></g></svg>",
+      "answerKey": {
+        "value": 20,
+        "unit": "cm"
+      },
+      "explanation": "أضلاع المعيّن DIBJ الأربعة متقايسة، فمحيطه 4 × IB. نضع x = AI: DI = BI، و DI² = x² + 16 و BI² = (8 − x)²، ومنه x² + 16 = 64 − 16x + x²، أي 16x = 48 و x = 3 cm، فـ IB = 8 − 3 = 5 cm. إذن المحيط 4 × IB = 4 × 5 = 20 cm ✓. الخطأ الشائع: ضرب AI في 4 فنجد 12، أو ضرب AB في 4 فنجد 32، أو ضرب IB في 3 فنجد 15.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.perimetres",
+        "math.geo.quadrilateres",
+        "math.alg.mise-en-equation"
       ]
     }
   ]

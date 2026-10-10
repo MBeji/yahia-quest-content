@@ -65,20 +65,21 @@
         },
         {
           "id": "c",
-          "text": "2,25",
-          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+          "text": "0,6",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
         },
         {
           "id": "d",
-          "text": "2",
-          "misconceptionTag": "math.geo.pythagore-sans-carres"
+          "text": "3,24",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
         }
       ],
       "correctOption": "a",
-      "explanation": "المثلّث ABC قائم في A و H المسقط العمودي للنقطة A على وتره [BC]، فـ AC² = CH × CB، أي CH = AC²/BC = 9/5 = 1,8 cm ✓. الخطأ الشائع: أخذ AB بدل AC فنجد 16/5 = 3,2؛ أو وضع الضلع AB مكان الوتر فنجد 9/4 = 2,25؛ أو طرح الطولين BC − AC فنجد 2.",
+      "explanation": "AH × BC = AB × AC فـ AH = 12/5 = 2,4 cm. والمثلّث AHC قائم في H ووتره [AC]: CH² = AC² − AH² = 9 − 5,76 = 3,24، إذن CH = 1,8 cm ✓. الخطأ الشائع: طرح الطولين 3 − 2,4 = 0,6؛ أو التوقّف عند CH² = 3,24؛ أو أخذ [BH] = 3,2 بدل [CH].",
       "difficulty": 2,
       "competencies": [
-        "math.geo.relations-metriques"
+        "math.geo.relations-metriques",
+        "math.geo.pythagore"
       ]
     },
     {
@@ -91,8 +92,7 @@
         },
         {
           "id": "b",
-          "text": "1,8",
-          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+          "text": "1,8"
         },
         {
           "id": "c",
@@ -174,36 +174,6 @@
       ]
     },
     {
-      "prompt": "ABC مثلّث قائم الزاوية في A، ومنتصفا [AB] و [BC] هما I و J، و H المسقط العمودي للنقطة A على (BC)، و E نقطة تقاطع (AC) و (IH). نعلم أنّ HI = 2 cm و HC = 1,8 cm و HJ = 0,7 cm، وأنّ:\nHE/HI = HC/HJ\nما طول [HE] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 280\"><title>المثلّث القائم ABC ووضعية الفراشة التي رأسها H</title><polygon points=\"141.23,42.72 32,124.64 202.67,124.64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M141.23 42.72 L141.23 124.64\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M202.67 124.64 L281.66 229.97\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M86.61 83.68 L281.66 229.97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M86.61 83.68 L117.33 124.64\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M134.03 48.12 L139.43 55.32 L146.63 49.92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M141.23 115.64 L150.23 115.64 L150.23 124.64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M112.3 57.54 L118.9 66.34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M108.94 60.06 L115.54 68.86\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M57.69 98.5 L64.29 107.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M54.33 101.02 L60.93 109.82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M74.67 130.14 L74.67 119.14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M160 130.14 L160 119.14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"32\" cy=\"124.64\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"202.67\" cy=\"124.64\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"141.23\" cy=\"42.72\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"141.23\" cy=\"124.64\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"86.61\" cy=\"83.68\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"117.33\" cy=\"124.64\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"281.66\" cy=\"229.97\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"141.23\" y=\"34.72\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"22.81\" y=\"138.83\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"211.86\" y=\"138.83\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"151.13\" y=\"119.74\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"77.42\" y=\"79.49\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"107.43\" y=\"139.54\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text><text x=\"290.85\" y=\"244.16\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text></g></svg>",
-      "options": [
-        {
-          "id": "a",
-          "text": "7/9",
-          "misconceptionTag": "math.geo.thales-rapport-inverse"
-        },
-        {
-          "id": "b",
-          "text": "36/7"
-        },
-        {
-          "id": "c",
-          "text": "18/7",
-          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
-        },
-        {
-          "id": "d",
-          "text": "31/10",
-          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "من المساواة HE/HI = HC/HJ نجد HE = HI × HC/HJ = 2 × 1,8/0,7 = 3,6/0,7 = 36/7 cm ✓. الخطأ الشائع: قلب النسبة فنكتب HE = 2 × 0,7/1,8 = 7/9؛ أو التوقّف عند النسبة HC/HJ = 18/7 دون الضرب في HI؛ أو مساواة فروق الأطوال HE − HI = HC − HJ فنجد 2 + 1,8 − 0,7 = 31/10.",
-      "difficulty": 2,
-      "competencies": [
-        "math.geo.thales-direct"
-      ]
-    },
-    {
       "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 4 cm و AC = 3 cm و BC = 5 cm. النقطتان I و J منتصفا [AB] و [BC]، والنقطة H المسقط العمودي للنقطة A على (BC)، والمستقيمان (AC) و (IH) يتقاطعان في النقطة E.\nلماذا تتحقّق المساواة التالية ؟\nHE/HI = HC/HJ\n<svg viewBox=\"0 0 320 280\"><title>المثلّث القائم ABC ووضعية الفراشة التي رأسها H</title><polygon points=\"141.23,42.72 32,124.64 202.67,124.64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M141.23 42.72 L141.23 124.64\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M202.67 124.64 L281.66 229.97\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M86.61 83.68 L281.66 229.97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M86.61 83.68 L117.33 124.64\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M134.03 48.12 L139.43 55.32 L146.63 49.92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M141.23 115.64 L150.23 115.64 L150.23 124.64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M112.3 57.54 L118.9 66.34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M108.94 60.06 L115.54 68.86\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M57.69 98.5 L64.29 107.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M54.33 101.02 L60.93 109.82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M74.67 130.14 L74.67 119.14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M160 130.14 L160 119.14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"32\" cy=\"124.64\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"202.67\" cy=\"124.64\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"141.23\" cy=\"42.72\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"141.23\" cy=\"124.64\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"86.61\" cy=\"83.68\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"117.33\" cy=\"124.64\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"281.66\" cy=\"229.97\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"141.23\" y=\"34.72\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"22.81\" y=\"138.83\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"211.86\" y=\"138.83\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"151.13\" y=\"119.74\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"77.42\" y=\"79.49\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"107.43\" y=\"139.54\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text><text x=\"290.85\" y=\"244.16\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text></g></svg>",
       "options": [
         {
@@ -257,10 +227,41 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "AB² = BH × BC فـ BH = 16/5 = 3,2 cm، و BJ = BC/2 = 2,5 cm. النقاط B و J و H و C على المستقيم (BC) بهذا الترتيب لأنّ BJ < BH < BC، فـ HJ = BH − BJ = 3,2 − 2,5 = 0,7 cm ✓. الخطأ الشائع: جمع الطولين BH و BJ فنجد 5,7 كأنّ J و H على جهتين من B؛ أو أخذ [HC] أو [BH] بدل [HJ].",
+      "explanation": "AH = 2,4 cm (AH × BC = AB × AC) والمثلّث AHB قائم في H: BH² = AB² − AH² = 16 − 5,76 = 10,24، إذن BH = 3,2 cm، و BJ = BC/2 = 2,5 cm. النقاط B و J و H و C على المستقيم (BC) بهذا الترتيب لأنّ BJ < BH < BC، فـ HJ = BH − BJ = 3,2 − 2,5 = 0,7 cm ✓. الخطأ الشائع: جمع الطولين BH و BJ فنجد 5,7 كأنّ J و H على جهتين من B؛ أو أخذ [HC] أو [BH] بدل [HJ].",
       "difficulty": 3,
       "competencies": [
         "math.geo.relations-metriques",
+        "math.geo.pythagore",
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A حيث AB = 4 cm و AC = 3 cm و BC = 5 cm. النقطتان I و J منتصفا [AB] و [BC]، والنقطة H المسقط العمودي للنقطة A على (BC)، و E نقطة تقاطع (AC) و (IH). نعلم أنّ HI = 2 cm و HC = 1,8 cm، وأنّ:\nHE/HI = HC/HJ\nما طول [HE] بالصنتمتر ؟\n<svg viewBox=\"0 0 320 280\"><title>المثلّث القائم ABC ووضعية الفراشة التي رأسها H</title><polygon points=\"141.23,42.72 32,124.64 202.67,124.64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M141.23 42.72 L141.23 124.64\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M202.67 124.64 L281.66 229.97\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M86.61 83.68 L281.66 229.97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M86.61 83.68 L117.33 124.64\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M134.03 48.12 L139.43 55.32 L146.63 49.92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M141.23 115.64 L150.23 115.64 L150.23 124.64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M112.3 57.54 L118.9 66.34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M108.94 60.06 L115.54 68.86\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M57.69 98.5 L64.29 107.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M54.33 101.02 L60.93 109.82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M74.67 130.14 L74.67 119.14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M160 130.14 L160 119.14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"32\" cy=\"124.64\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"202.67\" cy=\"124.64\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"141.23\" cy=\"42.72\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"141.23\" cy=\"124.64\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"86.61\" cy=\"83.68\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"117.33\" cy=\"124.64\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"281.66\" cy=\"229.97\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"141.23\" y=\"34.72\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"22.81\" y=\"138.83\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"211.86\" y=\"138.83\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"151.13\" y=\"119.74\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"77.42\" y=\"79.49\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"107.43\" y=\"139.54\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text><text x=\"290.85\" y=\"244.16\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/9",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "36/7"
+        },
+        {
+          "id": "c",
+          "text": "18/7",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "31/10",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "BH = BC − HC = 5 − 1,8 = 3,2 cm و BJ = BC/2 = 2,5 cm، والنقطة J بين B و H فـ HJ = BH − BJ = 0,7 cm. ومن المساواة HE/HI = HC/HJ نجد HE = HI × HC/HJ = 2 × 1,8/0,7 = 3,6/0,7 = 36/7 cm ✓. الخطأ الشائع: قلب النسبة فنكتب HE = 2 × 0,7/1,8 = 7/9؛ أو التوقّف عند النسبة HC/HJ = 18/7 دون الضرب في HI؛ أو مساواة فروق الأطوال HE − HI = HC − HJ فنجد 2 + 1,8 − 0,7 = 31/10.",
+      "difficulty": 3,
+      "competencies": [
         "math.geo.thales-direct"
       ]
     },
@@ -274,34 +275,35 @@
         },
         {
           "id": "b",
-          "text": "KJ = AB"
-        },
-        {
-          "id": "c",
           "text": "(KJ) ⊥ (AB)"
         },
         {
-          "id": "d",
-          "text": "الرباعي AKBJ مستطيل"
-        },
-        {
-          "id": "e",
+          "id": "c",
           "text": "AK = BJ"
         },
         {
-          "id": "f",
+          "id": "d",
+          "text": "KJ = AB"
+        },
+        {
+          "id": "e",
           "text": "JA = JB"
+        },
+        {
+          "id": "f",
+          "text": "الرباعي AKBJ معيّن"
         }
       ],
       "answerKey": {
         "correct": [
           "a",
+          "b",
           "c",
           "e",
           "f"
         ]
       },
-      "explanation": "المستقيم (AK) يوازي (BC)، فهو يوازي (BJ). التناظر المركزي الذي مركزه I منتصف [AB] يحوّل A إلى B والمستقيم (AK) إلى المستقيم الموازي له المارّ من B وهو (BC)، ويحوّل (IJ) إلى نفسه، فيحوّل K إلى J: منتصف [KJ] هو I، فالرباعي AKBJ متوازي أضلاع ومنه AK = BJ. والمستقيم (IJ) يوازي (AC) لأنّ I و J منتصفا [AB] و [BC]، و (AC) ⊥ (AB)، فـ (KJ) ⊥ (AB). و J منتصف وتر المثلّث القائم ABC فـ JA = JB = BC/2. أمّا KJ = 2 × IJ = AC = 3 cm بينما AB = 4 cm، فقطرا الرباعي غير متقايسين وليس مستطيلًا. فهذه هي العبارات الصحيحة ✓.",
+      "explanation": "المستقيم (AK) يوازي (BC)، فهو يوازي (BJ). التناظر المركزي الذي مركزه I منتصف [AB] يحوّل A إلى B والمستقيم (AK) إلى المستقيم الموازي له المارّ من B وهو (BC)، ويحوّل (IJ) إلى نفسه، فيحوّل K إلى J: منتصف [KJ] هو I، فالرباعي AKBJ متوازي أضلاع ومنه AK = BJ. والمستقيم (IJ) يوازي (AC) لأنّ I و J منتصفا [AB] و [BC]، و (AC) ⊥ (AB)، فـ (KJ) ⊥ (AB). و J منتصف وتر المثلّث القائم ABC فـ JA = JB = BC/2. والقطران [AB] و [KJ] لهما المنتصف نفسه I ومتعامدان، فالرباعي AKBJ معيّن. أمّا KJ = 2 × IJ = AC = 3 cm بينما AB = 4 cm، فـ KJ ≠ AB: قطرا المعيّن غير متقايسين. فالعبارة الوحيدة الخاطئة هي KJ = AB، وما عداها صحيح ✓.",
       "difficulty": 3,
       "competencies": [
         "math.geo.quadrilateres",

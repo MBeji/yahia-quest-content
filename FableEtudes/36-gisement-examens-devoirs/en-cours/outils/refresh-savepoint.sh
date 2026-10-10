@@ -24,7 +24,7 @@ done
 cp $SP/etat-reprise.md $EC/ETAT-REPRISE.md 2>/dev/null
 mkdir -p $EC/svt && cp $SP/gen-exam-assign-subj.py $SP/gen-prompt-svt.py $EC/outils/ 2>/dev/null; cp $SP/gisement/9eme-svt-plan/plan-examens-v1.json $SP/gisement/9eme-svt-plan/gisement.json $EC/svt/ 2>/dev/null; cp $SP/author/exam/prompt-svt-L*.md $SP/author/exam/assign-svt-L*.md $EC/plan/ 2>/dev/null
 # lots en cours (fichiers d'examen non livrés) : « matière/chapitre NN NN … »
-for spec in "math/09-triangle-rectangle-trigo 36 37 38 39 40 41" "math/18-quadrilateres 29 30 31 32 33 34 35" "math/03-calcul-litteral 27 28 29 30 31" "sciences-vie-terre/03-al-ibsar 07 08 09 10 11" "sciences-vie-terre/08-at-tanaffus 07 08 09 10 11" "sciences-vie-terre/09-al-ikhraj 07 08 09" "sciences-vie-terre/10-an-nudj-al-jinsi 07" "sciences-vie-terre/11-ad-dawra-al-jinsiya 07 08 09" "sciences-vie-terre/12-takawwun-al-janin 07 08 09 10" "sciences-vie-terre/02-al-af3al-al-in3ikasiya 07 08" "sciences-vie-terre/05-al-hadm 07 08" "sciences-vie-terre/07-ad-dawaran 07 08"; do
+for spec in "math/09-triangle-rectangle-trigo 36 37 38 39 40 41" "math/18-quadrilateres 29 30 31 32 33 34 35" "sciences-vie-terre/03-al-ibsar 07 08 09 10 11" "sciences-vie-terre/08-at-tanaffus 07 08 09 10 11" "sciences-vie-terre/09-al-ikhraj 07 08 09" "sciences-vie-terre/10-an-nudj-al-jinsi 07" "sciences-vie-terre/11-ad-dawra-al-jinsiya 07 08 09" "sciences-vie-terre/12-takawwun-al-janin 07 08 09 10"; do
   set -- $spec; path=$1; shift
   mkdir -p content/$path/exercices
   for nn in "$@"; do
