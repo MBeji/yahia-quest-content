@@ -7,6 +7,8 @@
 > **Pages lues : INTÉGRAL — 120/120** (numéros **imprimés = PDF**, offset = 0 ; page de garde = PDF 1, تمهيد p.3 = PDF 3, الفهرست p.120 = PDF 120). Détail : page de garde (PDF 1) ; copyright (p.2) ; **التّمهيد** p.3–5 (objectifs **généraux** + objectifs **spécifiques** p.3 ; remerciements + signature « المؤلّفون » p.5) ; **les 18 دروس, CORPS COMPRIS, p.6–119** — chaque page lue (header + encadré « أهداف الدرس » + نصّ/أمثلة الانطلاق + التّحليل + **chaque encadré « خلاصة » relevé verbatim** + les encadrés « ملاحظة » + les tables d'إعراب) ; **الفهرست complet** (p.120, colonne « الصّفحة » renseignée, relevée intégralement ci-dessous). **Transcrit le** : 2026-06-29 · **lecture intégrale du corps** : **2026-09-18** (rendu 170 dpi — scan sans couche texte, lecture par vision page à page). **Statut** : transcription fidèle **à profondeur de génération pour tout le نحو du guide** (front + التّمهيد + الفهرست + les 18 دروس avec leurs **خلاصات officielles verbatim** — §3.6). Le guide reste **partiel au regard du programme 9ème complet** (aucune صرف, aucune بلاغة, aucun إنتاج كتابي) : §6. **4 titres de دروس et 3 encadrés « أهداف » ont été corrigés** par cette lecture — la première passe les tenait du الفهرست ou d'un rendu 200 dpi (détail §6).
 > **Langue d'enseignement** : `ar` (monolingue — langue d'instruction officielle). **gradeSlug** : `9eme-base`. **subject id** attendu : **`arabic`** (⚠️ id **NON suffixé** — le contenu 9ème vit sous `content/arabic/`, pas `arabic-9eme` ; cf. `content/arabic/subject.json` → `gradeSlug: "9eme-base"`).
 
+> 🔄 **2026-10-10 — les manuels élèves font foi.** Le guide `501902` transcrit ci-dessous est l'édition **non révisée**. Le programme en vigueur est celui des manuels élèves `101908` (lu en entier) et `101909` : synthèse en **§2 ter**, chapitrage refait en **§4**, doutes en **§6**.
+
 ## 1. Cadre & compétences (الأهداف — التّمهيد p.3, texte fidèle)
 
 La 9ème année de base est la **3e (dernière) année du collège / المرحلة الإعداديّة** et une **année de concours national** (`grades.is_concours_national` — اختبار ختم التّعليم الأساسي). Ce guide est le **livre du professeur de النّحو العربي** : « **هذا كتاب في اللّغة وضمانه للأستاذ السّنة التّاسعة من التّعليم الأساسي، و قد جاء مجسّما لما نصّت عليه البرامج الرّسميّة من أهداف عامّة لتدريس اللّغة العربيّة بالمرحلة الثّانية من التّعليم الأساسي، وأهداف خصوصيّة أُعِدّ عليها برنامج تدريس النّحو بالسّنة التّاسعة.** » (p.3). Il **isole le نحو comme علم autonome**, traité linéairement et de façon **inductive** (نصّ انطلاق → ملاحظة → قاعدة → خلاصة → إنجاز).
@@ -273,6 +275,65 @@ avec sa règle de flexion. Le contenu servi les effleure (`المقصور` 1 occ
   entre lectures. Le corpus profane du manuel suffit largement — il n'y avait aucune raison de
   prendre le risque.
 
+## 2 ter. Les deux manuels élèves LUS — la source qui fait foi (campagne « 9ᵉ au patron », 2026-10-09)
+
+> **Lecture.** `101908` (« النّحو العربي — كتاب اللّغة », programme révisé de septembre 2006) **lu en entier à
+> l'image, 176/176 p.** : une note par leçon (نصّ الانطلاق, مدخل, **التّطبيقات** — rubrique neuve du révisé —,
+> **خلاصة verbatim**, تمارين, coquilles). `101909` « أنوار » (manuel de textes, 320 p.) lu **à l'image là où il
+> porte une notion** — p. 3–21, 31–33, 63, 66–67, 99, 140, 212, 228, 291, 313–320 — et le reste **par sa couche
+> texte décodée** (police à encodage propriétaire), qui a permis l'inventaire **exhaustif** de la بلاغة et de la
+> production. S'y ajoutent **11 sujets nationaux de 9ᵉ** (2007–2026 ; corpus officiel depuis le 2026-09-28). Notes
+> complètes, leçon par leçon : `FableEtudes/_campagne-9eme-au-patron/arabe-9eme/`.
+
+### Ce que `101908` enseigne — un نحو **énonciatif**, pas إعرابيّ
+
+| Leçons | Notion (titre imprimé) | Ce qui manquait ou contredisait l'ancien contenu |
+| --- | --- | --- |
+| 1–3 (p. 3–22) | العلاقات بين الجمل في النّصّ : الجملة الابتدائيّة / الاستئنافيّة / الاعتراضيّة ; أدوات الرّبط ومعانيها (1)(2) | La phrase à ناسخ reste **اسميّة** (p. 3, 23). Les روابط se classent par **معنى du حرف** : الواو = « الجمع بدون ترتيب » (et non « ne dit rien »), الفاء (ترتيب / سبب ونتيجة / تفسير), ثمّ (ترتيب وتراخٍ), حتّى (جمع المستبعد), إذ / إذا **الفجائيّة** (jamais سببيّة), أي التّفسيريّة, بل, لكنْ (استدراك) ; استئناف ≠ عطف. Aucun chapitre ne les servait. |
+| 4 (p. 23–28) | الحذف ومواطنه | الجملة المختزلة et son تقدير ; les tours de إغراء / تحذير n'y sont que des **exemples** de جملة مختزلة, sans ces noms. |
+| 5–7 (p. 29–46) | النّداء ; الدّعاء ; الأمر والنّهي | « **حكم المنادى الرّفع** » (علم مفرد, نكرة مقصودة, معرّف بأل) — l'ancien 04 le **sanctionnait** ; outils يا · **أ** · أيْ · أيا · هيا ; الاستغاثة, النّدبة ; أبنية du دعاء ; صيغ du أمر et معاني سياقيّة (إباحة، تحذير، التماس، نصح، دعاء، تمنٍّ، تهديد، تعجيز، تخيير). |
+| 8–10 (p. 47–71) | الاستفهام عن مضمون الجملة ; عن عنصر من العناصر المكوّنة للجملة (+ اسم الاستفهام المقترن بحرف الجرّ) | Sans chapitre jusqu'ici (un fragment dans 04). |
+| 11–13 (p. 72–88) | دلالة الشّرط على الإمكان (حرفا الشّرط إن، لو ; أسماء الشّرط) ; على الافتراض والاستنتاج | Sans chapitre. |
+| 14–17 (p. 89–115) | دلالة صيغ الفعل ; الحروف المقترنة بالفعل ; النّواسخ الفعليّة ; بعض الوظائف (المفعول فيه، الحال) — على الزّمان | L'axe du **زمان** (حدث منقضٍ / غير منقضٍ ; تزامن / أسبقيّة / لاحقيّة) ; l'ancien 03 traitait المفعول فيه et الحال par l'إعراب. |
+| 18–19 (p. 116–127) | العدد والمعدود (1)(2) | Sans chapitre. |
+| صرف 1–3 (p. 129–147) | الاسم المقصور / المنقوص / الممدود | Servi (ch. 12) ; la همزة منقلبة **peut** revenir à son origine (p. 143) — l'ancien piège était faux. |
+| صرف 4–5 (p. 148–163) | معاني المزيد (1)(2) — جدول تأليفي p. 158 (11 أوزان × 21 معنى) | Jamais servi : l'ancien 05 enseignait le ميزان et l'inventaire des حروف الزّيادة. |
+| صرف 6–7 (p. 164–174) | التّصغير ومعانيه ; النّسبة والمصدر الصّناعيّ | Servis (ch. 13–14) ; corrections ponctuelles. |
+
+**Absent du livre de 9ᵉ** (présupposé, ou retiré par la révision) : الإعراب والبناء comme objet, المشتقّات,
+المستثنى, التّمييز, المفعول المطلق et لأجله, التّوابع, التّعجّب, المدح والذّمّ, et les noms إغراء / تحذير / اختصاص.
+
+### Ce que `101909` enseigne — un manuel **du حجاج**
+
+- **Plan** : وحدة تشخيصيّة (سرد، وصف، حوار, p. 6–8) → **وحدة استكشافيّة**, le cours de حجاج (p. 9–13 : أطروحة
+  مثبتة / مدحوضة, la حجّة et ses types, المثال, سيرورة الحجاج, البنية الحجاجيّة, الإقناع / التّأثير, sept familles
+  d'مؤشّرات لغويّة p. 13) → cinq محاور (~78 textes) → وحدة تأليفيّة (canevas du « حوار حجاجيّ مؤطّر سرديّا »,
+  p. 313–315).
+- **Chaque texte** porte les mêmes rubriques : أتهيّأ → أستعدّ → أبني المعنى → أبدي رأيي → أستثمر وأوظّف → أستفيد →
+  **أتعهّد لغتي** (une notion de langue par texte, ~62 encadrés).
+- **La بلاغة n'a aucune leçon** : quatre encadrés (استعارة, أركان التّشبيه et حقيقة / مجاز p. 33 ; سجع p. 99 et
+  228 ; طباق p. 291), une liste « أساليب البيان » p. 13, ~25 questions d'analyse d'image ; **0 occurrence** de
+  جناس, تورية, مجاز مرسل, ni des sous-types d'تشبيه / استعارة ; la كناية est nommée (p. 7, 75), jamais définie.
+
+### Ce qu'évalue l'épreuve nationale (11 sujets lus)
+
+- **2007–2019**, « الإنشاء » : un seul sujet, **rapporter un dialogue argumentatif** — le canevas p. 313–314.
+- **2023–2026**, « العربيّة » : **دراسة نصّ حجاجيّ** (الفهم وبناء المعنى 4 pts + اللّغة 6 pts) puis **إنتاج نصّ
+  حجاجيّ de 25 lignes** (soutenir ou دحض une أطروحة), dans le vocabulaire **exact** de 101909 (الأطروحة المدحوضة,
+  سيرورة الحجاج, نوع الحجّة, المؤشّر اللّغويّ).
+- **Aucune question de بلاغة** ; la partie « لغة » interroge le نحو / صرف du révisé (شرط, استفهام, حذف, دلالة
+  الحروف على الزّمان, استئناف, اعتراض, تصغير, مقصور / ممدود, معنى الزّيادة, مصدر صناعيّ).
+
+### Arbitrages du propriétaire (2026-10-09)
+
+1. La grammaire **suit 101908**, leçon par leçon, dans **son métalangage** ; le terme classique au plus une fois en
+   note, jamais attendu par un item.
+2. Ce que le livre de 9ᵉ n'enseigne pas sort des items ; au plus un encadré « 🚀 للتوسّع (خارج كتاب التّاسعة) »,
+   sans item.
+3. La rhétorique est **réduite au socle de 101909** (التّشبيه et ses أركان, الاستعارة, الحقيقة / المجاز, الطّباق,
+   السّجع) ; la prosodie (الإيقاع) en section optionnelle.
+4. Le chapitre d'annales (`11-annales-subur`) est **partagé avec l'étude 36** (gisement des sujets nationaux).
+
 ## 3. Notes pédagogiques / méthode
 
 ### 3.1 Architecture du guide (التّمهيد + corps)
@@ -465,34 +526,45 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 18
 > 2. **Le guide fournit ses propres pièges (T5).** Chaque درس nomme la confusion qu'il veut empêcher : اعتراض/تقديم (p.11), حتّى استئنافيّة/جارّة (p.15), استئناف/عطف (p.14), نعم/بلى après une négation (p.57), استتار/حذف (p.48), إغراء/أمر مصرّح (p.42), ناقص/تامّ (p.89), اسم شرط/اسم موصول (p.110), لَمْ/لَمَّا (p.83), قد+ماضٍ/قد+مضارع (p.82 vs 95). **Ce sont des pièges sourcés, pas inventés.**
 > 3. **Les exemples sont vocalisés et réutilisables tels quels** : le guide travaille sur des corpus suivis (récit de voyage à صفاقس درس 1 ; الوكيل والعامل دروس 2–3 ; الأمّ والابن درس 4 ; التّاجر والنّجّار درس 5 ; الفُضيل بن عياض والرّشيد دروس 9–10 ; المصباح والرّغيفان درس 18), ce qui donne des séries d'exemples **cohérentes** au lieu de phrases isolées.
 
-## 4. Chapitrage retenu — **ALIGNÉ sur `content/arabic/`** (subject id `arabic`, gradeSlug `9eme-base`)
+## 4. Chapitrage retenu — refait sur les manuels élèves (2026-10-10)
 
-> **⚠️ Alignement, pas proposition** : le contenu 9ème **existe déjà** sous `content/arabic/` (11 chapitres : 10 dossiers pédagogiques + 1 annales). Le tableau ci-dessous **reprend les slugs réels de `content/arabic/`** et **mappe chacun au(x) درس / notion du guide** quand il y a recouvrement. **Constat central** : `content/arabic` couvre **tout le programme 9ème** (نحو/إعراب + صرف + بلاغة + إنتاج كتابي), alors que **le guide `501902P00` ne couvre que le نحو** — et sous une **décomposition différente** (sémantique-énonciative) de celle de `content/arabic` (إعراب classique). Le mapping est donc **partiel et thématique**, pas bijectif. Les **écarts sont détaillés en §6**.
+> Remplace l'alignement du 2026-09-18 sur le guide non révisé (visible dans l'historique git). L'ordre est celui
+> des 26 leçons de `101908`, puis de `101909` ; il est codifié dans `manifest/9eme-base.json` (17 chapitres) et
+> repris par les `displayOrder`. Les slugs sont inchangés : ils datent du découpage classique (`03-al-mansoubat`
+> porte désormais المفعول فيه والحال, `05-sarf-al-mizan` معاني المزيد).
 
-| #   | slug (réel, `content/arabic/`) | titre `chapter.json` (réel)                                   | درس(s) du guide `501902P00` couvrant la notion · page(s)                                                                                                                                                                                                                                                                                                                                                                                                               | recouvrement guide |
-| --- | ------------------------------ | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| 1   | `01-i3rab-wal-bina`            | الإعراب والبناء                                               | **Hors angle du guide** : il n'introduit jamais الإعراب/البناء comme objet. Le métalangage est partout **présupposé** (« مبنيّ » / « معرب » posés sans définition : مَن، ما مبنيّان et أيّ معربة p.61 ; كيف مبنيّ p.62 ; كم اسم مبنيّ مبهم p.64) — acquis 7ème                                                                                                                                                                                                         | ⚠️ marginal        |
-| 2   | `02-an-nawasikh`               | النواسخ : كان وأخواتها وإنّ وأخواتها                          | **FORT — corrigé 2026-09-18** : **درس 7 (p.45–46)** définit **les deux familles** — النّواسخ الفعليّة (كان وأخواتها + أفعال المقاربة + أفعال الشّروع) et النّواسخ الحرفيّة (**إنّ وأخواتها**) ; **درس 13 entier (p.85–89)** traite كان/ليس (كينونة), صار/أصبح/أمسى/بات (صيرورة), ظلّ/مازال/ما برح/ما فتئ/ما انفكّ/ما دام (ديمومة), كاد (مقاربة), أخذ/شرع (شروع), عسى (رجاء) **+ le piège ناقص/تامّ** (p.89). Angle temporel, mais la nomenclature ET les règles y sont | 🟢 fort            |
-| 3   | `03-al-mansoubat`              | المنصوبات (مفعول به/مطلق/لأجله/فيه، حال، تمييز، مستثنى)       | **Partiel — revu 2026-09-18** : **المفعول فيه** et **الحال** en profondeur (درس 14, p.90–96 : les 3 relations temporelles + les 5 moules de حال) ; **المفعول المطلق** (درس 7 p.47–48 ; درس 9 p.62) ; **المفعول لأجله** (دروس 10 §III p.71, 15 §II–III p.100–102) ; **التّمييز** (درس 5 p.34–35 ; درس 9 p.64) ; **المفعول به** partout. ⛔ **المستثنى n'est nulle part dans le guide** → chapitre non générable depuis cette fiche                                      | 🟡 partiel         |
-| 4   | `04-al-asalib`                 | الأساليب النحوية (إغراء، تحذير، اختصاص، نداء، استفهام، تعجّب) | **FORT** : النّداء/الاستغاثة/النّدبة (درس 4, p.25) ; التّعجّب/المدح/الذّمّ (درس 5, p.32) ; الدّعاء/الإغراء/التّحذير (درس 6, p.37) ; الاستفهام (دروس 8–10, p.52–68)                                                                                                                                                                                                                                                                                                     | 🟢 fort            |
-| 5   | `05-sarf-al-mizan`             | الصرف : الميزان الصرفي والمجرّد والمزيد                       | **ABSENT du guide** (aucune صرف dans `501902P00`)                                                                                                                                                                                                                                                                                                                                                                                                                      | 🔴 absent          |
-| 6   | `06-al-mushtaqqat`             | المشتقّات                                                     | **ABSENT du guide** (aucune صرف dans `501902P00`)                                                                                                                                                                                                                                                                                                                                                                                                                      | 🔴 absent          |
-| 7   | `07-as-suwar-al-bayania`       | الصور البيانية (تشبيه، استعارة، كناية، مجاز مرسل)             | **ABSENT du guide** (aucune بلاغة dans `501902P00`)                                                                                                                                                                                                                                                                                                                                                                                                                    | 🔴 absent          |
-| 8   | `08-al-muhassinat-al-badi3ia`  | المحسّنات البديعية                                            | **ABSENT du guide** (aucune بلاغة dans `501902P00`)                                                                                                                                                                                                                                                                                                                                                                                                                    | 🔴 absent          |
-| 9   | `09-al-intaj-al-kitabi`        | الإنتاج الكتابي وأنماط النصوص                                 | **Indirect** : la cohésion textuelle / أدوات الرّبط (دروس 1–3, p.6–24) éclaire la production écrite, mais le guide ne traite pas les أنماط                                                                                                                                                                                                                                                                                                                             | 🟡 indirect        |
-| 10  | `10-fahm-wa-intaj`             | فهم المقروء والإنتاج الكتابي                                  | **Indirect** : العلاقات بين الجمل + أدوات الرّبط (دروس 1–3) servent l'analyse de texte du concours, mais méthodologie de شرح النّص hors guide                                                                                                                                                                                                                                                                                                                          | 🟡 indirect        |
-| 11  | `11-annales-subur`             | سُبُر نموذجيّة ومراجعة                                        | **Transversal** : révision-type concours ; mobilise tout le نحو du guide (أساليب، دلالة الزّمان…) + بلاغة/صرف hors guide                                                                                                                                                                                                                                                                                                                                               | 🟡 transversal     |
+| ordre | slug | titre | source (leçons · pages) | état |
+| --- | --- | --- | --- | --- |
+| 1 | `15-al-alaqat-bayna-al-jumal` | العلاقات بين الجمل: أدوات الرّبط والحذف | 101908 · د 1–4 · p. 3–28 | neuf |
+| 2 | `04-al-asalib` | النّداء والدّعاء والأمر والنّهي | 101908 · د 5–7 · p. 29–46 | réaligné |
+| 3 | `16-al-istifham` | الاستفهام: عن مضمون الجملة وعن عناصرها | 101908 · د 8–10 · p. 47–71 | neuf |
+| 4 | `17-ash-shart` | الشّرط: الإمكان والافتراض والاستنتاج | 101908 · د 11–13 · p. 72–88 | neuf |
+| 5 | `18-dalalat-az-zaman` | دلالة صيغ الفعل والحروف المقترنة به على الزّمان | 101908 · د 14–15 · p. 89–103 | neuf |
+| 6 | `02-an-nawasikh` | النّواسخ الفعليّة ودلالتها على الزّمان | 101908 · د 16 · p. 104–109 | réaligné |
+| 7 | `03-al-mansoubat` | المفعول فيه والحال ودلالتهما على الزّمان | 101908 · د 17 · p. 110–115 | réaligné |
+| 8 | `19-al-adad-wal-madud` | العدد والمعدود | 101908 · د 18–19 · p. 116–127 | neuf |
+| 9 | `12-al-maqsur-wal-manqus-wal-mamdud` | المقصور والمنقوص والممدود | 101908 · صرف 1–3 · p. 129–147 | corrigé |
+| 10 | `05-sarf-al-mizan` | معاني صيغ الزّيادة | 101908 · صرف 4–5 · p. 148–163 | réaligné |
+| 11 | `13-at-tasghir` | التّصغير ومعانيه | 101908 · صرف 6 · p. 164–168 | corrigé |
+| 12 | `14-an-nisba-wal-masdar-as-sinai` | النّسبة والمصدر الصّناعيّ | 101908 · صرف 7 · p. 169–174 | corrigé |
+| 13 | `09-al-intaj-al-kitabi` | الحجاج: الأطروحة والحجج وسيرورة الحجاج | 101909 · p. 6–13, 313–315 | réaligné |
+| 14 | `10-fahm-wa-intaj` | دراسة نصّ حجاجيّ: الفهم وبناء المعنى | 101909 · p. 9–13 ; sujets 2023–2026 | réaligné |
+| 15 | `07-as-suwar-al-bayania` | الصّورة: التّشبيه والاستعارة والحقيقة والمجاز | 101909 · p. 13, 31–33, 212 | réduit au socle |
+| 16 | `08-al-muhassinat-al-badi3ia` | الطّباق والسّجع (+ الإيقاع, optionnel) | 101909 · p. 66, 99, 228, 291 | réduit au socle |
+| 17 | `11-annales-subur` | سُبُر نموذجيّة | sujets nationaux (étude 36) | inchangé ici |
+| 18 | `01-i3rab-wal-bina` | الإعراب والبناء — مراجعة | hors livre de 9ᵉ, hors manifeste | optionnel |
+| 19 | `06-al-mushtaqqat` | المشتقّات — مراجعة | hors livre de 9ᵉ, hors manifeste | optionnel |
 
-> **Lecture du mapping (revue après la lecture intégrale du corps, 2026-09-18)** : **deux chapitres recouvrent fortement le guide** — **les أساليب النحوية (ch.4)** (دروس 4–6 + 8–10) et **les نواسخ (ch.2)** (درس 7 §I pour la nomenclature complète + درس 13 entier) ; **المنصوبات (ch.3)** le recoupent largement mais **pas المستثنى**. Tout le **bloc صرف (ch.5–6)** et le **bloc بلاغة (ch.7–8)** sont **hors guide** (`501902P00` est un guide de **نحو pur**). Inversement, **plusieurs دروس du guide n'ont pas de chapitre dédié dans `content/arabic`** : العلاقات بين الجمل في النّص + أدوات الرّبط (دروس 1–3), دلالة الزّمان (دروس 11–14), الطّلب (درس 15), الشّرط (دروس 16–18) — ces notions sémantiques-énonciatives sont, au mieux, **dispersées** dans ch.1/ch.9/ch.10 mais pas isolées. **Cet écart bidirectionnel est le point n°1 à arbitrer (§6).** Colonne « manuel élève » non renseignée — mais le manuel élève **existe et est identifié** depuis 2026-09-18 : `101908` (نحو عربي, élève) et `101909` (نصوص, élève), tous deux dans le registre `corpus-cnp.json`, **non lus** (§5).
->
-> **Conséquence R-5 (portée par la fiche `suivi/9eme-base.json`)** : la fiche reste **`partielle`** — 6 des 11 chapitres (صرف, بلاغة, إنتاج/فهم) n'ont **aucune** source officielle lue — mais sa `profondeur` passe à **`generation`** (tout ce que le guide couvre est restitué à profondeur de génération, §3.6) et son `chapitresGeneration` déclare **`02-an-nawasikh`** et **`04-al-asalib`** : les deux seuls chapitres dont **chaque notion nommée par leur titre** est traitée par le guide, règle par règle. `03-al-mansoubat` en est volontairement exclu (المستثنى manquant) — l'inclure ferait générer une section sans source.
+> **Conséquence R-5** (`suivi/9eme-base.json`) : `101908` couvert à 100 %, `101909` aux pages qui fondent un
+> chapitre. La fiche reste `partielle` à dessein (101909 est une anthologie, pas lue page à page) et
+> `chapitresGeneration` déclare les **16 chapitres codifiés** hors annales.
 
 ## 5. Sources croisées
 
 - **Guide enseignant** : `501902P00` — « **النّحو العربي — للسّنة التّاسعة من التّعليم الأساسي · كتاب الأستاذ** » (المركز الوطني/القومي البيداغوجي, الرمز 501 902 ; auteurs الصّادق بيّة · عمر بنّور · الأزهر الزّنّاد · خالد ميلاد ; إشراف عبد القادر المهيري). **Autorité de scope نحو 9ème** : التّمهيد (objectifs généraux + **spécifiques** p.3) + **الفهرست intégral des 18 دروس avec pagination** (p.120) + headers + encadrés « أهداف الدرس » des 18 دروس + corps (نصوص انطلاق, déroulés inductifs, خلاصات).
-- **Contenu application** : **`content/arabic/`** (subject id **`arabic`**, gradeSlug `9eme-base`) — **11 chapitres déjà en prod** couvrant le **programme 9ème complet** (نحو/إعراب, صرف, بلاغة, إنتاج كتابي, annales). §4 **aligne** dessus. ⚠️ Le périmètre de `content/arabic` est **plus large** que ce guide (qui ne couvre que le نحو) — le reste (صرف, بلاغة, إنتاج) provient d'**autres sources** (les `sources` de chaque `chapter.json` citent tunisiecollege.net, tadris.tn, et « المنهاج الرسمي … اللغة العربية »).
+- **Contenu application** : **`content/arabic/`** (subject id **`arabic`**, gradeSlug `9eme-base`) — **19 chapitres** depuis le 2026-10-10, dans l'ordre du §4 ; chaque `chapter.json` cite le manuel en premier (`sources[0]` et `manuel` : code + pages). Les sites de révision des anciennes sources ne fondent plus rien.
 - **Frères directs** : `programme/7eme-base/arabe.md` (`501701P00`, fonctions + بابان نحو/صرف) et `programme/8eme-base/arabe.md` (`501802P00`, المركّبات + phrase complexe ; **deux أقسام** إعراب/صرف). **Progression collège** : 7ème = **fonctions & bases صرف** → 8ème = **composition syntaxique (المركّبات) & dérivation صرف** → 9ème = **grammaire sémantique-énonciative (relations textuelles, affects, temps, demande, condition) — نحو pur, sans صرف**. Même collection, même superviseur (عبد القادر المهيري) sur les trois.
-- **Manuels élève 9ème — identifiés 2026-09-18 dans `suivi/corpus-cnp.json`, NON LUS** : **`101908`** « **نحو عربي** » (élève, matière 01) — c'est le **كتاب التّلميذ** que le التّمهيد du guide annonce (§3.3) ; et **`101909`** « **نصوص** » (élève, matière 01) — anthologie de textes. **`101909 نصوص` est le candidat sérieux** pour le bloc **بلاغة / فهم المقروء / أنماط النّصوص** absent du guide de نحو (un recueil de نصوص de 9ème porte l'appareil de شرح النّص). → **Ce sont ces deux-là qu'il faut lire** pour combler l'écart §6, pas un guide d'une autre matière.
+- **Manuels élève 9ème — LUS (2026-10-09)** : **`101908`** « نحو عربي » (176/176 p.) et **`101909`** « نصوص » / « أنوار » (pages qui fondent un chapitre, plus la couche texte décodée) — §2 ter. Ce sont désormais **les sources qui font foi** ; le guide `501902` décrit l'édition d'avant 2006 (§2, §3) et reste une référence de doctrine, pas de périmètre.
 - ⚠️ **Faux indice corrigé (2026-09-18)** : la première rédaction de cette fiche donnait **`521902P00.pdf`** comme « candidat le plus probable » pour le support arabe manquant. **C'est faux** : le registre `corpus-cnp.json` l'identifie **matière 21** — « **الدليل المرجعي في اللغة الفرنسية** » (c'est la source déjà déclarée sur la fiche `francais` du même niveau). Idem pour **`541905P00.pdf`** = matière 41, « **الدليل المرجعي في اللغة الانقليزية** ». Les trois `5xxxxx` de `c9/enseignant/` sont **un الدليل المرجعي par langue** (arabe 01 / français 21 / anglais 41) — **il n'existe donc, dans le corpus CNP de 9ème, aucun autre support ENSEIGNANT d'arabe** que `501902`. Le complément ne peut venir que des manuels **élève** `101908` / `101909`.
 - **Taybah / répartiteur 9ème** : non fourni ici → séquençage trimestriel à vérifier ultérieurement (le guide ne donne **pas** de مخطّط سنوي / répartition par trimestre).
 - **Divergences signalées** : voir §6.
@@ -509,6 +581,22 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 18
 - **Séquençage trimestriel absent** : ce guide n'a **pas** de مخطّط سنوي / répartition par trimestre. Le « quand » devra venir d'un répartiteur 9ème (Taybah collège non fourni).
 - ⛔ **FAUX INDICE CORRIGÉ (2026-09-18)** : cette fiche donnait **`521902P00.pdf`** comme « candidat le plus probable » pour le support arabe manquant. **Vérification faite dans `suivi/corpus-cnp.json` : `521902` est matière 21 — « الدليل المرجعي في اللغة الفرنسية »**, et `541905` est matière 41 — « الدليل المرجعي في اللغة الانقليزية ». Ce sont les guides **français** et **anglais**, pas un second support d'arabe. Les bons candidats, eux aussi vérifiés au registre, sont les **manuels élève** `101908` « نحو عربي » et **`101909` « نصوص »** (§5). **Personne n'aurait trouvé صرف/بلاغة dans un guide de français** — la première passe avait deviné sur la taille du fichier au lieu d'interroger le registre. 📌 **Et l'erreur est symétrique** : la fiche `francais.md` du même niveau désignait, elle, **`501902P00` (ce guide d'arabe) comme « très probablement le manuel élève de français »** — deux fiches, deux devinettes fondées sur la taille du fichier, deux faux indices croisés. Les trois `5xxxxx` de `c9/enseignant/` sont **un الدليل المرجعي par langue** (arabe 01, français 21, anglais 41) et le registre le dit en une requête.
 - **Vocalisation** : التّمهيد + الفهرست lus à 300 dpi (nets) ; headers + objectifs des دروس lus à 200 dpi (nets). Les **intitulés, objectifs et structures** sont **fiables**.
+
+- **2026-10-10 — doutes de la réécriture (à trancher par un relecteur)** :
+  - **Segmentation R-13** : 04 (12 sections), 17 (11), 19 (11), 18 (10) dépassent le seuil d'environ 8 notions,
+    parce qu'un chapitre sert plusieurs leçons. Scissions naturelles : 04 → النّداء / الدّعاء + الأمر والنّهي ;
+    19 → د 18 / د 19 ; 16 → د 8 / د 9–10. Rien n'a été tronqué.
+  - **Doctrine** : « نعم » confirme le négatif et « بلى » seule répond à une question négative (manuel et
+    tradition ; l'usage courant diffère) ; « أيّ » معربة (écart voulu à la lettre de la خلاصة p. 60) ; l'ordinal
+    composé « مبنيّ على الفتح بجزأيه » (le manuel ; certaines grammaires déclinent le premier élément) ; « ما /
+    كيف + معرفة = خبر » (tableaux du manuel) ; « بعد عشر دقائق » analysé خبر (déduit de « أو الخبر » de la خلاصة
+    p. 113) ; la nuance « وقد فعل » (قبيل) / « وكان قد فعل » (قبل) reprise telle quelle de la خلاصة ; la جملة
+    اسميّة **بسيطة / مركّبة** définie par son خبر (L104, critère de l'إسناد الفرعيّ de L3) ; la table p. 33 donne
+    « يا » comme حرف ندبة quand le texte a « وا » (le cours enseigne « وا »).
+  - **Décompte** : la leçon 15 nomme **quinze** حروف مقترنة بالفعل, non quatorze.
+  - **Coquilles des manuels, non reprises** : p. 95–103 (« انقاضاؤه », « المتلّم »…), p. 150 (« افعلال / احمرار »
+    pour « افعيلال / احميرار »), p. 110–115 (« أوعدم », « حينـ(ما) ») ; فهرس de 101909 (« حلّ مشكل » pour
+    « أساهم في إنجاز مشروع » aux محاور 2, 3, 5 ; pas de texte n° 13 au محور 4).
 
 ## Ancres d'audit (faits + page — pour revérification)
 
