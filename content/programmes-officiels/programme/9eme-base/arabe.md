@@ -583,9 +583,13 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 18
 - **Vocalisation** : التّمهيد + الفهرست lus à 300 dpi (nets) ; headers + objectifs des دروس lus à 200 dpi (nets). Les **intitulés, objectifs et structures** sont **fiables**.
 
 - **2026-10-10 — doutes de la réécriture (à trancher par un relecteur)** :
-  - **Segmentation R-13** : 04 (12 sections), 17 (11), 19 (11), 18 (10), 12 (10), 13 (9) dépassent le seuil d'environ 8 notions,
+  - **Segmentation R-13** : 09 (14 sections), 04 (12), 17 (11), 19 (11), 18 (10), 12 (10), 13 (9) dépassent le seuil d'environ 8 notions,
     parce qu'un chapitre sert plusieurs leçons. Scissions naturelles : 04 → النّداء / الدّعاء + الأمر والنّهي ;
-    19 → د 18 / د 19 ; 16 → د 8 / د 9–10. Rien n'a été tronqué.
+    19 → د 18 / د 19 ; 16 → د 8 / د 9–10 ; 09 → le cours du حجاج / la production au format de l'épreuve.
+    Rien n'a été tronqué.
+  - **Les deux manuels divergent sur deux روابط** : 101908 (leçons 2–3, ch. 15) enseigne « إذْ » comme فجائيّة et
+    « حتّى » comme جمع المستبعد ; 101909 (p. 13) range « إذْ » au التّفسير / التّعليل et « حتّى » (+ مضارع = كي) au
+    التّعليل. Le ch. 09 le dit en note ; aucun item ne repose sur ces deux emplois.
   - **Doctrine** : « نعم » confirme le négatif et « بلى » seule répond à une question négative (manuel et
     tradition ; l'usage courant diffère) ; « أيّ » معربة (écart voulu à la lettre de la خلاصة p. 60) ; l'ordinal
     composé « مبنيّ على الفتح بجزأيه » (le manuel ; certaines grammaires déclinent le premier élément) ; « ما /
@@ -599,7 +603,7 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 18
     comme distracteurs ; « المتنبّي » répond à la définition du منقوص, le cours dit seulement que sa ياء n'est
     pas une ياء نسبة ; « ماء » passe la définition du ممدود (piège de la p. 143, non traité).
   - **Coquilles des manuels, non reprises** : p. 95–103 (« انقاضاؤه », « المتلّم »…), p. 150 (« افعلال / احمرار »
-    pour « افعيلال / احميرار »), p. 110–115 (« أوعدم », « حينـ(ما) »), p. 171 (« لَثَة » pour « لِثَة ») ; فهرس de 101909 (« حلّ مشكل » pour
+    pour « افعيلال / احميرار »), p. 110–115 (« أوعدم », « حينـ(ما) »), p. 171 (« لَثَة » pour « لِثَة ») ; 101909 p. 189 (« خلاصة صفوة القول », deux expressions fondues) ; فهرس de 101909 (« حلّ مشكل » pour
     « أساهم في إنجاز مشروع » aux محاور 2, 3, 5 ; pas de texte n° 13 au محور 4).
 
 ## Ancres d'audit (faits + page — pour revérification)
