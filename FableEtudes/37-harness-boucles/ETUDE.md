@@ -1,8 +1,10 @@
 # Étude 37 — Le harness en boucles : de l'événement qui tire à la boucle qui converge
 
 > **Statut** : **brouillon** — rédigée le 2026-10-11 depuis une session cloud, sur un relevé
-> du jour (§2) ; passe `validée` quand Q-1 (où tournent les têtes d'agent) est arbitrée, les
-> lots L0 à L3 ne dépendant pas de cette réponse peuvent démarrer avant.
+> du jour (§2) ; passe `validée` quand le propriétaire valide le plan (Q-1 à Q-4 portent chacune
+> une recommandation). Le jour même, le propriétaire a donné la cause de C-1 — **l'abonnement a
+> été suspendu du 2 au 8 octobre** — ce qui ramène Q-1 à un choix de secours : aucun lot ne
+> l'attend plus.
 > **Priorité** : 37 · **Valeur** : 🔁 chaque mécanisme autonome du harness — la garde après push
 > (DoD §8), les quatre gardes planifiées, la routine hebdomadaire — devient une **boucle de
 > réconciliation** : observer l'état réel, agir, re-observer, sortir sur une **preuve de contenu**,
@@ -222,11 +224,12 @@ nouveau.
 | 10-06 07:29      | `upgrade-guard` : rouge, PR #1157 en draft                                                              | journal du job                                        |
 | 10-09 07:21      | `upgrade-guard` : le message explicite, PR #1158 en draft                                               | journal du job                                        |
 | 10-09 21:01      | `report-triage` : l'agent tourne 23 min, vert ; l'accès est revenu                                       | run                                                   |
-| 10-11 ~17:00     | la cause est nommée — par cette étude, en lisant un journal de job                                      | ici                                                   |
+| 10-11 ~17:00     | le symptôme est nommé — par cette étude, en lisant un journal de job                                    | ici                                                   |
+| 10-11, après rédaction | **le propriétaire donne la cause : l'abonnement Claude a été suspendu du 2 au 8 octobre**         | §3 C-1, §10                                           |
 
-C'est le **mur « réglage hors dépôt »** de `zero-intervention.md`, et l'étude ne prétend pas le
-lever (Q-1). Ce qu'elle refuse, c'est le délai : cinq jours pour une cause qui tenait dans une
-ligne, écrite en clair dans le premier journal rouge.
+C'est un **mur hors dépôt** au sens de `zero-intervention.md` — un événement de compte, pas une
+panne du harness — et l'étude ne prétend pas le lever. Ce qu'elle refuse, c'est le délai : cinq
+jours pour une cause qui tenait dans une ligne, écrite en clair dans le premier journal rouge.
 
 ### 2.3 La seule routine cloud
 
@@ -303,11 +306,18 @@ refusée est une boucle infinie sur un mur**. D'où D-8.
    moteur, une du privé, une routine. Aucun ne sait que les autres existent. → L0 : le registre
    `harness/loops.json` nomme les têtes d'agent et leur support (`actions-oauth`, `routine`,
    `session`) ; L3 : `guard-watch` regroupe par **cause**, pas seulement par workflow.
-3. **La cause est hors dépôt** et le reste (Q-1). Ce que la boucle change : le temps avant que
-   quelqu'un sache **quoi** faire — de cinq jours à une fenêtre de garde — et ce qui se passe au
-   retour de l'accès : aujourd'hui, les lots en draft et la routine attendent le prochain cron ;
-   demain, le réconciliateur de L2 reprend le lot du jour, et la relève de L4 nomme la routine à
-   relancer.
+3. **La cause est hors dépôt** et le reste. Le propriétaire l'a donnée le 2026-10-11, après la
+   rédaction : **l'abonnement Claude a été suspendu du 2 au 8 octobre**. Le message
+   « _organization has disabled…_ » est le symptôme d'un abonnement suspendu, pas d'un réglage
+   qu'un administrateur aurait touché — et les dates concordent : premier symptôme le 02/10 à
+   02:00, dernier le 09/10 à 15:22, premier succès le 09/10 à 21:01 (la réactivation a mis un
+   jour à atteindre les gardes). Ce que ça change : rien à la mécanique, tout à la **classe** —
+   « abonnement suspendu » devient un mur nommé, que L3 cite pour cette signature ; et
+   l'alternative « porter les gardes en routines » (cloud-first, lot 5) n'y échappe pas, une
+   routine tourne sur le même abonnement. Ce que la boucle change : le temps avant que quelqu'un
+   sache **quoi** faire — de cinq jours à une fenêtre de garde — et ce qui se passe au retour de
+   l'accès : aujourd'hui, les lots en draft et la routine attendent le prochain cron ; demain, le
+   réconciliateur de L2 reprend le lot du jour, et la relève de L4 nomme la routine à relancer.
 
 ### C-2 — Des PR sans après
 
@@ -583,16 +593,16 @@ Cases à cocher :
 
 ## 9. Questions ouvertes (pour le propriétaire)
 
-- **Q-1 — Où tournent les têtes d'agent ?** Du 4 au 9 octobre, l'abonnement a été refusé aux
-  gardes Actions et à la routine, puis rendu — sans qu'aucun changement du dépôt l'explique.
-  Trois chemins, à constater d'abord sur claude.ai (réglage d'organisation « subscription access
-  for Claude Code ») : (a) l'abonnement, si le réglage est à nous — rien à changer, L3 nomme la
-  prochaine coupure ; (b) une clé API pour les gardes Actions (`anthropic_api_key` à la place
-  du jeton OAuth, déjà prévue dans les en-têtes des workflows, `models.json` inchangé) — un coût
-  à l'usage, à plafonner ; (c) les têtes en session seulement, en acceptant que `report-triage`
-  n'en ait pas (clé service-role). **Recommandation** : (a) si le réglage est à nous, sinon (b)
-  avec un plafond mensuel ; (c) n'est pas une réponse, c'est un repli. Cite le mur « réglage
-  hors dépôt ». Bloque la partie agent de L2 et la routine de L4, rien d'autre.
+- **Q-1 — Faut-il un support de secours pour les têtes d'agent pendant une suspension ?** La
+  cause de C-1 est connue (propriétaire, 2026-10-11) : l'abonnement a été suspendu du 2 au 8
+  octobre. Le support nominal reste donc l'abonnement, rien à changer. Ce qui reste à choisir :
+  pendant une suspension, les gardes Actions basculent-elles sur une clé API
+  (`anthropic_api_key` à la place du jeton OAuth, déjà prévue dans les en-têtes des workflows,
+  `models.json` inchangé, un coût à l'usage à plafonner), ou **attendent-elles en le disant** (L3
+  nomme le mur « abonnement suspendu » en ≤ 6 h, L2 n'empile aucun lot pendant ce temps) ?
+  **Recommandation** : attendre en le disant — une suspension est un événement de compte, pas
+  une panne du harness, et une clé de secours est une seconde facture à surveiller pour un cas
+  survenu une fois. À rouvrir si une seconde suspension survient. Ne bloque aucun lot.
 - **Q-2 — Les drafts de `regression-guard`.** Un draft que « un humain promeut » est une
   validation manuelle. **Recommandation** : promotion par règle — `verify` vert et diff limité à
   `**/__tests__/**`, `e2e/**`, `supabase/tests/**` → `gh pr ready`, auto-merge normal ; tout
@@ -611,6 +621,7 @@ Cases à cocher :
 | Date       | Lot | Événement                                                                                                                                                                                                                                                                                                  |
 | ---------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 2026-10-11 | —   | Étude rédigée depuis une session cloud sur le relevé du jour (§2) ; mesures brutes en annexe A. Livrée en brouillon par privé#649 (cette étude, la ligne d'index) et moteur #1164 (`STATUS.md` §4, §6.3, journal) — les deux poussées par la session, PR ouvertes par `auto-pr`, gate `verify` vert au `pre-push` (352 fichiers, 4 682 tests). Test du réveil différé : `send_later` posé à 17:33 UTC pour 17:37 (`trig_018dKSt77Ebjht9b3hpHmvnb`). **Reçu** : tiré à 17:37:21, il a attendu dans la file de notifications de la session pendant tout le tour en cours (23 min) et a été lu à 18:00:46, à la fin du tour, avec les six événements GitHub des PR abonnées. **Le chemin H2 fonctionne** malgré le refus des routines « session neuve » du 2026-10-05 : un réveil dans une session existante n'est pas une routine qui crée une session. Deux leçons pour D-2 et L1 : un réveil ne coupe jamais un tour (il attend la fin du tour, donc une boucle H1 qui ne rend pas la main ne sera jamais réveillée par H2) ; et les événements GitHub arrivent par la même file — la boucle les lit d'un coup au réveil, dans l'ordre. |
+| 2026-10-11 | —   | **Le propriétaire donne la cause de C-1 : l'abonnement Claude a été suspendu du 2 au 8 octobre.** C-1, la frise de §2.2 et Q-1 sont mis à jour ; Q-1 se réduit à « une clé API de secours pendant une suspension ? » (recommandation : attendre en le disant) et ne bloque plus aucun lot. L'en-tête ne cite plus Q-1 comme condition : l'étude passe `validée` sur validation du plan. |
 
 ## Annexe A — Relevé brut du 2026-10-11
 
