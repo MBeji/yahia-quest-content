@@ -369,3 +369,26 @@ finie ; un doute de droits sur un document ⇒ il sort de l'échantillon, sans d
   l'étude 36**, qui y versera les sujets nationaux repris et cités (lot 6) **après la fusion du
   réalignement**, signalée ici. Les notes de lecture sont sur la branche de sauvegarde
   `wip/arabe-9eme-lecture-manuels`.
+- **2026-10-10 — Trois lots de maths et le premier lot de SVT en production ; les re-vérifications
+  rattrapent les correctifs.** Les lots L20 (chapitre 03, privé#638), L14 (chapitre 09, privé#642) et
+  L16 (chapitre 18, privé#644) sont publiés et vérifiés sur les trois étapes d'`apply-content.yml`,
+  puis sur `content-drift.yml` : le registre du couple maths compte 122 missions d'examen, 56 de
+  devoirs et 6 d'écart, toutes `publiee` ; restent au plan les lots d'examen L17 (en écriture), L21 et
+  L22, et dix missions de devoirs (chapitres 04 et 09). **SVT 9ᵉ** : le lot L01 (six missions,
+  chapitres 02, 05 et 07, privé#640) est le premier publié ; L02 (chapitre 03) et L03 (chapitre 08)
+  sont écrits et en audit, L04 (chapitres 09 à 11) en écriture, L05 (chapitre 12) planifié.
+  Cinq étiquettes d'erreur naissent de ces lots, chacune sur au moins trois questions distinctes :
+  `math.alg.carre-difference-ecrit-difference-carres`, `math.geo.angle-droit-mauvais-sommet`,
+  `math.geo.droites-remarquables-confondues`, `math.geo.fonction-trigo-mal-choisie` et
+  `bio.dig.eau-sans-enzyme` ; elles sont aussi posées sur 19 options de missions déjà publiées
+  (chapitres 03, 09, 18 et 20), dont 13 portaient une étiquette inexacte. **Ce que les
+  re-vérifications ont trouvé** : à chaque lot, des défauts introduits par le tour de corrections
+  lui-même — un trait de codage déplacé qui codait une égalité fausse (L14), deux plans « 2×2 »
+  incomplets où le vote case par case redonnait la clé (L16) — et une erreur de l'audit sur une
+  mission publiée du chapitre 09 (deux étiquettes inversées, une explication fausse), tous corrigés
+  avant la fusion ; ces pièges sont inscrits dans les consignes de l'auteur et de l'auditeur.
+  Moteur : les figures SVG s'affichent en `dir="ltr"` (les ancres `start`/`end` du texte s'inversaient
+  dans une page arabe, arena#1154) ; une formule ouverte par un nombre puis π, une lettre grecque ou
+  « ° » s'isole (arena#1160) ; trois avis npm corrigés (arena#1159). La limite de session a coupé tous
+  les agents trois fois depuis le 2 octobre (la dernière le 10 vers 18 h 15 UTC) : repris par message
+  après la réouverture, ils n'ont rien perdu de ce qu'ils avaient écrit dans leurs fichiers.
