@@ -112,3 +112,8 @@ fichier** : l'orchestrateur renvoie les correctifs à l'auteur.
   ou lettre à apostrophe (« M' »)** dans une phrase arabe : rends-les dans Chromium, elles s'affichent brouillées.
 - **Ton propre correctif** (rappel) : sur cinq lots de suite, un texte de remplacement fourni par l'audit a été retrouvé défectueux
   à la re-vérification : vérifie-le par script ET dans Chromium avant de l'écrire.
+
+- **Correctifs que tu fournis (L14 et L16)** : recompte tes options case par case (chaque valeur de case exactement deux fois) ; ne propose jamais de DÉPLACER un trait de codage
+  ou un point de figure (retire-le) ; garde toutes les prémisses vraies et l'option non réfutable à l'œil sur la figure à l'échelle ; une option qui ne diffère d'une
+  mission publiée d'un autre chapitre que par l'énoncé est un doublon. Étiquettes : `angle-droit-mauvais-sommet` (angle droit au mauvais sommet), `hypotenuse-mal-choisie`
+  (vrai mauvais choix d'hypoténuse), `fonction-trigo-mal-choisie` (tangente prise pour cosinus ou l'inverse) : lis les libellés sur `origin/main`.
