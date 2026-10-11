@@ -583,7 +583,7 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 18
 - **Vocalisation** : التّمهيد + الفهرست lus à 300 dpi (nets) ; headers + objectifs des دروس lus à 200 dpi (nets). Les **intitulés, objectifs et structures** sont **fiables**.
 
 - **2026-10-10 — doutes de la réécriture (à trancher par un relecteur)** :
-  - **Segmentation R-13** : 04 (12 sections), 17 (11), 19 (11), 18 (10) dépassent le seuil d'environ 8 notions,
+  - **Segmentation R-13** : 04 (12 sections), 17 (11), 19 (11), 18 (10), 12 (10), 13 (9) dépassent le seuil d'environ 8 notions,
     parce qu'un chapitre sert plusieurs leçons. Scissions naturelles : 04 → النّداء / الدّعاء + الأمر والنّهي ;
     19 → د 18 / د 19 ; 16 → د 8 / د 9–10. Rien n'a été tronqué.
   - **Doctrine** : « نعم » confirme le négatif et « بلى » seule répond à une question négative (manuel et
@@ -594,8 +594,12 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 18
     اسميّة **بسيطة / مركّبة** définie par son خبر (L104, critère de l'إسناد الفرعيّ de L3) ; la table p. 33 donne
     « يا » comme حرف ندبة quand le texte a « وا » (le cours enseigne « وا »).
   - **Décompte** : la leçon 15 nomme **quinze** حروف مقترنة بالفعل, non quatorze.
+  - **صرف** : la règle « فَعِيلة ← فَعَليّ » (مدينة ← مَدَنيّ, قبيلة ← قَبَليّ) n'est dans aucune خلاصة, elle est
+    induite des exercices p. 170 — l'usage moderne dit aussi « مدينيّ / قبيليّ / طبيعيّ », que les items évitent
+    comme distracteurs ; « المتنبّي » répond à la définition du منقوص, le cours dit seulement que sa ياء n'est
+    pas une ياء نسبة ; « ماء » passe la définition du ممدود (piège de la p. 143, non traité).
   - **Coquilles des manuels, non reprises** : p. 95–103 (« انقاضاؤه », « المتلّم »…), p. 150 (« افعلال / احمرار »
-    pour « افعيلال / احميرار »), p. 110–115 (« أوعدم », « حينـ(ما) ») ; فهرس de 101909 (« حلّ مشكل » pour
+    pour « افعيلال / احميرار »), p. 110–115 (« أوعدم », « حينـ(ما) »), p. 171 (« لَثَة » pour « لِثَة ») ; فهرس de 101909 (« حلّ مشكل » pour
     « أساهم في إنجاز مشروع » aux محاور 2, 3, 5 ; pas de texte n° 13 au محور 4).
 
 ## Ancres d'audit (faits + page — pour revérification)
