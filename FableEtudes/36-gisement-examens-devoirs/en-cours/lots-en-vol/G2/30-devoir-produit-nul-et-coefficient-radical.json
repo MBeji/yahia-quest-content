@@ -1,0 +1,189 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: معادلات تؤول إلى جداء معدوم ومتراجحات معاملها جذر",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 30,
+  "questions": [
+    {
+      "prompt": "ما التعميل الصحيح للعبارة التالية؟\n4x² − 25",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2x − 5)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "b",
+          "text": "(2x − 5)(2x + 5)"
+        },
+        {
+          "id": "c",
+          "text": "(2x − 25)(2x + 25)"
+        },
+        {
+          "id": "d",
+          "text": "(4x − 5)(4x + 5)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "العبارة فرق مربّعين: 4x² = (2x)² و 25 = 5². إذن 4x² − 25 = (2x − 5)(2x + 5) ✓. تحقّق بالنشر: (2x − 5)(2x + 5) = 4x² + 10x − 10x − 25 = 4x² − 25 ✓. الخطأ الشائع: كتابة فرق المربّعين مربّعًا (2x − 5)². ومن لم يأخذ جذر 25 كتب (2x − 25)(2x + 25) = 4x² − 625، ومن لم يأخذ جذر 4x² كتب (4x − 5)(4x + 5) = 16x² − 25.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ 4x² − 25 = (2x − 5)(2x + 5) لكلّ عدد حقيقي x.\nما مجموعة حلول المعادلة التالية؟\n4x² − 25 = 0",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−25/4 ; 25/4}"
+        },
+        {
+          "id": "b",
+          "text": "{−5 ; 5}",
+          "misconceptionTag": "math.alg.coefficient-non-divise"
+        },
+        {
+          "id": "c",
+          "text": "{−5/2 ; 5/2}"
+        },
+        {
+          "id": "d",
+          "text": "{5/2}",
+          "misconceptionTag": "math.alg.produit-nul-une-seule-solution"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "حسب مبدأ الجداء المعدوم: 2x − 5 = 0 أو 2x + 5 = 0. من الأولى 2x = 5 فـ x = 5/2، ومن الثانية 2x = −5 فـ x = −5/2. مجموعة الحلول {−5/2 ; 5/2} ✓. تحقّق: 4 × 25/4 − 25 = 0 ✓. الخطأ الشائع: التوقّف عند 2x = 5 وإعلان x = 5 دون قسمة على المعامل 2. ومن عمّل ثمّ اكتفى بعامل واحد وجد {5/2}، ومن أخذ x² = 25/4 ثمّ كتب x = ±25/4 نسي الجذر التربيعي.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "أيّ الاستدلالات التالية صحيح لتحديد إشارة العدد √3 − 2 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "موجب، لأنّ 3 أكبر من 2 فيكون √3 أكبر من 2",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "b",
+          "text": "سالب، لأنّ 3 أصغر من 4 فيكون √3 أصغر من 2"
+        },
+        {
+          "id": "c",
+          "text": "سالب، لأنّ √3 أصغر من 3 فيكون √3 − 2 أصغر من 3 − 2 ومن ثمّ سالبًا"
+        },
+        {
+          "id": "d",
+          "text": "موجب، لأنّ √3 − 2 يساوي √(3 − 2) أي 1",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "لمقارنة √3 مع 2 نقارن مربّعيهما: (√3)² = 3 و 2² = 4، وبما أنّ 3 < 4 والعددان موجبان فإنّ √3 < 2 ✓. إذن √3 − 2 سالب. الخطأ الشائع: مقارنة 3 مع 2 مباشرة على أنّها مقارنة √3 مع 2، فيُستنتج موجب. ومن وزّع الجذر على الفرق كتب √3 − 2 = √(3 − 2) = 1، والجذر لا يُوزَّع على فرق. والاستدلال الذي ينتهي بـ «أصغر من 3 − 2» لا يثبت السالبية، لأنّ 3 − 2 = 1 موجب.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما مجموعة حلول المعادلة التالية؟\n(x − 2)² = (2x + 1)²",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−3}",
+          "misconceptionTag": "math.num.racine-carree-negative-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "{−3 ; 1/3}"
+        },
+        {
+          "id": "c",
+          "text": "{3 ; −1/3}",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "لا حلّ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ننقل الكلّ إلى طرف واحد ونعمّل بفرق المربّعين: (x − 2)² − (2x + 1)² = [(x − 2) − (2x + 1)][(x − 2) + (2x + 1)] = (−x − 3)(3x − 1) = 0. إذن x = −3 أو x = 1/3 ✓. تحقّق بـ x = 1/3: (1/3 − 2)² = 25/9 و (2/3 + 1)² = 25/9 ✓. الخطأ الشائع: الاقتصار على x − 2 = 2x + 1، فيخرج x = −3 ويضيع الحلّ المقابل المأخوذ من x − 2 = −(2x + 1). ومن نقل الحدود دون قلب إشارتها وجد {3 ; −1/3}. ومن نشر (x − 2)² على أنّه x² − 4 و (2x + 1)² على أنّه 4x² + 1 وصل إلى 3x² = −5 فأعلن أنّه لا حلّ.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "ما مجموعة حلول المتراجحة التالية؟\n(√3 − 2)x ≥ 1",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≥ −2 − √3"
+        },
+        {
+          "id": "b",
+          "text": "x ≥ 2 + √3"
+        },
+        {
+          "id": "c",
+          "text": "x ≤ −2 − √3"
+        },
+        {
+          "id": "d",
+          "text": "x ≤ 2 + √3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد √3 − 2 سالب لأنّ √3 < 2. نقسم الطرفين عليه، فتنقلب الإشارة: x ≤ 1/(√3 − 2). ننطق المقام بضرب البسط والمقام في (√3 + 2): 1/(√3 − 2) = (√3 + 2)/(3 − 4) = −(√3 + 2) = −2 − √3. الحلّ: x ≤ −2 − √3 ✓. تحقّق بـ x = −4: (√3 − 2)(−4) = 8 − 4√3، وهو أكبر من 1 لأنّ 4√3 < 7 ✓. الخطأ الشائع: نسيان قلب الإشارة عند القسمة على عدد سالب. ومن أضاع إشارة المقام 3 − 4 = −1 وجد 2 + √3 بدل −2 − √3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.inequations",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما أصغر عدد طبيعي يحقّق المتراجحة التالية؟\n(√11 − 3)x > 1",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "7",
+          "misconceptionTag": "math.num.rationalisation-denominateur-oublie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد √11 − 3 موجب لأنّ 11 > 9، فنقسم عليه والإشارة تبقى: x > 1/(√11 − 3). نضرب البسط والمقام في (√11 + 3): 1/(√11 − 3) = (√11 + 3)/(11 − 9) = (√11 + 3)/2. بما أنّ 3 < √11 < 4 فإنّ 6 < √11 + 3 < 7، أي 3 < (√11 + 3)/2 < 3,5. فأصغر عدد طبيعي أكبر قطعًا من هذا العدد هو 4 ✓. الخطأ الشائع: كتابة المقام 11 − 3 = 8 بدل 11 − 9 = 2، فيخرج (√11 + 3)/8 وهو أصغر من 1، وأصغر عدد طبيعي 1. ومن نسي القسمة على المقام الجديد أخذ √11 + 3 بين 6 و 7 فأجاب 7. ومن قلب الإشارة وهو يقسم على موجب وجد x < (√11 + 3)/2 فأجاب 0.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.inequations",
+        "math.num.racines-calcul",
+        "math.num.ordre-encadrement"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: من التعويض والتعميل إلى معادلات ومتراجحات ذات وسيط",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 29,
+  "questions": [
+    {
+      "prompt": "لتكن العبارة التالية:\nA(x) = x² − 6x − 7\nما قيمة A(4) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−23",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
+        },
+        {
+          "id": "b",
+          "text": "−15"
+        },
+        {
+          "id": "c",
+          "text": "−1"
+        },
+        {
+          "id": "d",
+          "text": "33"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نعوّض x بـ 4 في كلّ ظهور له: A(4) = 4² − 6 × 4 − 7 = 16 − 24 − 7 = −15 ✓. الخطأ الشائع: حساب 4² على أنّه 4 × 2 = 8، فيخرج 8 − 24 − 7 = −23، والصواب 4² = 4 × 4 = 16. ومن غيّر إشارة الحدّ الأخير كتب 16 − 24 + 7 = −1، ومن غيّر إشارة الحدّ الأوسط كتب 16 + 24 − 7 = 33.",
+      "difficulty": 1,
+      "competencies": [
+        "math.alg.developpement",
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّه لكلّ عدد حقيقي x:\nA(x) = (x − 3)² − 16\nما التعميل الصحيح للعبارة A(x) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − 7)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "b",
+          "text": "(x − 7)(x + 1)"
+        },
+        {
+          "id": "c",
+          "text": "(x − 19)(x + 13)"
+        },
+        {
+          "id": "d",
+          "text": "(x + 7)(x − 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "العدد 16 يساوي 4²، فالعبارة فرق مربّعين: (x − 3)² − 4² = [(x − 3) − 4][(x − 3) + 4] = (x − 7)(x + 1) ✓. تحقّق بالنشر: (x − 7)(x + 1) = x² + x − 7x − 7 = x² − 6x − 7 ✓. الخطأ الشائع: كتابة فرق المربّعين مربّعًا واحدًا (x − 3 − 4)² = (x − 7)². ومن لم يأخذ جذر 16 وجد (x − 3 − 16)(x − 3 + 16) = (x − 19)(x + 13). ومن قلب إشارتي العاملين وجد (x + 7)(x − 1) = x² + 6x − 7، وحدّه الأوسط +6x لا −6x.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ A(x) = (x − 7)(x + 1) لكلّ عدد حقيقي x.\nما مجموعة حلول المعادلة A(x) = 0 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−7 ; 1}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "b",
+          "text": "{−1 ; 7}"
+        },
+        {
+          "id": "c",
+          "text": "{1 ; 7}"
+        },
+        {
+          "id": "d",
+          "text": "{−1}",
+          "misconceptionTag": "math.alg.produit-nul-une-seule-solution"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "حسب مبدأ الجداء المعدوم: (x − 7)(x + 1) = 0 يعني x − 7 = 0 أو x + 1 = 0، أي x = 7 أو x = −1. مجموعة الحلول {−1 ; 7} ✓. تحقّق: A(7) = 49 − 42 − 7 = 0 و A(−1) = 1 + 6 − 7 = 0 ✓. الخطأ الشائع: قراءة جذر كلّ عامل كما يظهر في القوس، فمن قرأ (x − 7) على أنّه −7 و (x + 1) على أنّه 1 وجد {−7 ; 1}. ومن أخذ عاملًا واحدًا فقط أهمل حلًّا، كمن كتب {−1}.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "ما مجموعة حلول المعادلة التالية؟\n(x − 3)² = 25",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−22 ; 28}"
+        },
+        {
+          "id": "b",
+          "text": "{−8 ; 2}",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "c",
+          "text": "{−2 ; 8}"
+        },
+        {
+          "id": "d",
+          "text": "{8}",
+          "misconceptionTag": "math.num.racine-carree-negative-oubliee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "مربّع العدد x − 3 يساوي 25، فهذا العدد يساوي 5 أو −5، لأنّ 5² = (−5)² = 25. إذن x − 3 = 5 فـ x = 8، أو x − 3 = −5 فـ x = −2. مجموعة الحلول {−2 ; 8} ✓. تحقّق: (8 − 3)² = 25 و (−2 − 3)² = 25 ✓. الخطأ الشائع: الاقتصار على x − 3 = 5 ونسيان العدد المقابل، فيخرج {8}. ومن نقل 3 دون قلب إشارتها وجد 5 − 3 = 2 و −5 − 3 = −8، أي {−8 ; 2}. ومن أبقى 25 دون جذر وجد 3 ± 25، أي {−22 ; 28}.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.alg.equations-produit",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما مجموعة الأعداد x التي تحقّق الحصر التالي؟\n−7 < 3 − 2x ≤ 5",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−5 ; 1]",
+          "misconceptionTag": "math.alg.inequation-sens-non-inverse"
+        },
+        {
+          "id": "b",
+          "text": "[−4 ; 2[",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "c",
+          "text": "]−1 ; 5]",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        },
+        {
+          "id": "d",
+          "text": "[−1 ; 5["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نطرح 3 من الأطراف الثلاثة: −10 < −2x ≤ 2. نقسم الأطراف الثلاثة على −2، وهو عدد سالب، فتنقلب الإشارتان ويتبادل الحدّان موقعيهما: 5 > x ≥ −1، أي −1 ≤ x < 5. المجموعة [−1 ; 5[ ✓، والقوس مغلق عند −1 لأنّ الإشارة ≥ ومفتوح عند 5 لأنّ الإشارة >. تحقّق: x = −1 يعطي 3 − 2(−1) = 5 وهو ≤ 5 ✓، وx = 5 يعطي −7 وهو ليس > −7 ✓. الخطأ الشائع: القسمة على −2 دون قلب الإشارتين، فيخرج ]−5 ; 1]. ومن أضاف 3 بدل طرحها كتب −4 < −2x ≤ 8 فوجد [−4 ; 2[. ومن قلب الإشارتين لكنّه أخطأ في الأقواس وجد ]−1 ; 5].",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.inequations",
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "ما مجموعة حلول المعادلة التالية؟\nx² − 6x − 7 = x − 7",
+      "options": [
+        {
+          "id": "a",
+          "text": "{7}",
+          "misconceptionTag": "math.alg.division-par-inconnue-perd-solution"
+        },
+        {
+          "id": "b",
+          "text": "{0 ; 7}"
+        },
+        {
+          "id": "c",
+          "text": "{−7 ; 0}"
+        },
+        {
+          "id": "d",
+          "text": "{−1 ; 7}"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ننقل كلّ الحدود إلى طرف واحد: x² − 7x = 0، ثمّ نخرج x عاملًا مشتركًا: x(x − 7) = 0. إذن x = 0 أو x = 7، ومجموعة الحلول {0 ; 7} ✓. تحقّق بـ x = 0: الطرف الأيسر −7 والطرف الأيمن −7 ✓. الخطأ الشائع: قسمة الطرفين على x لتبسيط المعادلة، فيخرج x − 7 = 0 ويضيع الحلّ 0 الذي يُعدم x نفسه؛ والصواب أن نعمّل ثمّ نطبّق الجداء المعدوم. ومن أهمل الطرف الأيمن حلّ A(x) = 0 فوجد {−1 ; 7}.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "نعتبر الأعداد الطبيعية n التي تحقّق المتراجحة n ≤ 12. كم عددًا منها لا يحقّق المعادلة التالية؟\nn² − 6n − 7 = n − 7",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "misconceptionTag": "math.alg.division-par-inconnue-perd-solution"
+        },
+        {
+          "id": "d",
+          "text": "13"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الأعداد الطبيعية التي تحقّق n ≤ 12 هي 0 و 1 و … و 12، أي 13 عددًا. المعادلة تؤول إلى n(n − 7) = 0، فحلاها 0 و 7، وكلاهما طبيعي وأصغر من 12 أو يساويه. إذن 13 − 2 = 11 عددًا لا يحقّقها ✓. الخطأ الشائع: قسمة الطرفين على n قبل الحلّ، فيضيع الحلّ 0 ولا يُستثنى إلّا 7، فيُعدّ 12 عددًا. ومن لم يستثنِ شيئًا أجاب 13، ومن عدّ الأعداد من 1 إلى 12 فقط ثمّ استثنى الحلّين أجاب 10.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.inequations",
+        "math.alg.equations-produit"
+      ]
+    },
+    {
+      "prompt": "ما مجموع حلول المعادلة التالية؟\nx² − 6x − 7 = 3(x − 7)",
+      "options": [
+        {
+          "id": "a",
+          "text": "−9"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ننقل ونجمع: x² − 6x − 7 − 3x + 21 = 0. من A(x) = (x − 7)(x + 1) نكتب (x − 7)(x + 1) − 3(x − 7) = 0، فنُخرج العامل (x − 7): (x − 7)(x + 1 − 3) = (x − 7)(x − 2) = 0. الحلّان 7 و 2، ومجموعهما 9 ✓. تحقّق بـ x = 2: 4 − 12 − 7 = −15 و 3 × (2 − 7) = −15 ✓. الخطأ الشائع: قسمة الطرفين على x − 7، وهو عدد قد ينعدم، فيخرج x + 1 = 3 ويضيع الحلّ 7، فيكون المجموع 2. ومن قرأ كلّ جذر كما يظهر في القوس وجد −7 و −2 ومجموعهما −9، ومن طرح الحلّين بدل جمعهما وجد 5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "نتأمّل المعادلة التالية ذات المجهول x، حيث k عدد حقيقي:\nx² − 6x − 7 = k(x − 7)\nما قيمة k التي تجعل لها حلًّا واحدًا فقط؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−8",
+          "misconceptionTag": "math.alg.facteur-commun-signe-change"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نعمّل الطرف الأيسر: (x − 7)(x + 1) = k(x − 7)، فننقل ونُخرج العامل المشترك: (x − 7)(x + 1 − k) = 0. الحلّان هما x = 7 و x = k − 1. يكون الحلّ واحدًا عندما يتطابقان: k − 1 = 7، أي k = 8 ✓. تحقّق: مع k = 8 تصير المعادلة (x − 7)² = 0 وحلّها الوحيد 7. الخطأ الشائع: نقل 1 دون قلب إشارتها فتُكتب k + 1 = 7 ويخرج 6. ومن أخرج العامل وأضاع إشارة k كتب (x − 7)(x + 1 + k) = 0 فوجد −1 − k = 7، أي k = −8.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation",
+        "math.alg.mise-en-equation"
+      ]
+    }
+  ]
+}

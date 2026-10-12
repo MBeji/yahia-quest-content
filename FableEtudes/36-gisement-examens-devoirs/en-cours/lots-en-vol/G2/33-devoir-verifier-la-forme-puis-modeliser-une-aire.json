@@ -1,0 +1,187 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: النشر والجداء المعدوم ثمّ مساحة مستطيل متغيّرة",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 33,
+  "questions": [
+    {
+      "prompt": "ما نشر الجداء التالي؟\n(x − 3)(x + 6)",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − 18"
+        },
+        {
+          "id": "b",
+          "text": "x² + 3x + 18"
+        },
+        {
+          "id": "c",
+          "text": "x² + 3x − 18"
+        },
+        {
+          "id": "d",
+          "text": "x² + 9x − 18"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ننشر بتوزيع كلّ حدّ على كلّ حدّ: (x − 3)(x + 6) = x² + 6x − 3x − 18 = x² + 3x − 18 ✓. تحقّق بـ x = 1: (−2)(7) = −14 و 1 + 3 − 18 = −14 ✓. الخطأ الشائع: ضرب الحدّين الأوّلين والأخيرين فقط، فيخرج x² − 18 ويضيع الحدّ الأوسط. ومن كتب (−3) × 6 = +18 غيّر إشارة الحدّ الأخير، ومن جمع 6x و 3x بدل أن يطرح أحدهما من الآخر وجد 9x.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ x² + 3x − 18 = (x − 3)(x + 6) لكلّ عدد حقيقي x.\nما مجموعة حلول المعادلة التالية؟\nx² + 3x − 18 = 0",
+      "options": [
+        {
+          "id": "a",
+          "text": "{3}"
+        },
+        {
+          "id": "b",
+          "text": "{3 ; 6}"
+        },
+        {
+          "id": "c",
+          "text": "{−3 ; 6}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "d",
+          "text": "{−6 ; 3}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "حسب مبدأ الجداء المعدوم: x − 3 = 0 أو x + 6 = 0، أي x = 3 أو x = −6. مجموعة الحلول {−6 ; 3} ✓. تحقّق: 9 + 9 − 18 = 0 و 36 − 18 − 18 = 0 ✓. الخطأ الشائع: قراءة العاملين كما يظهران في القوسين، أي −3 و 6، فيخرج {−3 ; 6}. ومن أخذ عاملًا واحدًا وجد {3}.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "x عدد حقيقي. نريد رسم مستطيل عرضه x − 1 وطوله x + 4، والقياسان بالمتر.\nما مجموعة قيم x التي يوجد من أجلها مثل هذا المستطيل؟\n<svg viewBox=\"0 0 320 168\"><title>مستطيل عرضه x − 1 وطوله x + 4</title><rect x=\"60\" y=\"20\" width=\"200\" height=\"100\" fill=\"#0f6e56\" opacity=\"0.14\"/><rect x=\"60\" y=\"20\" width=\"200\" height=\"100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"160\" y=\"143\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\">x + 4</text><text x=\"30\" y=\"76\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\">x − 1</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x > −4"
+        },
+        {
+          "id": "b",
+          "text": "x > −1",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "c",
+          "text": "x > 1"
+        },
+        {
+          "id": "d",
+          "text": "x ≥ 1",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المستطيل الحقيقي له بعدان موجبان قطعًا: x − 1 > 0 و x + 4 > 0. الشرط الأوّل يعطي x > 1، والثاني يعطي x > −4. يتحقّق الشرطان معًا عندما x > 1 ✓. تحقّق: x = 1 يعطي عرضًا معدومًا، وهو لا يرسم مستطيلًا. الخطأ الشائع: الاكتفاء بشرط الطول فيخرج x > −4. ومن كتب x − 1 > 0 ثمّ نقل 1 دون قلب إشارتها وجد x > −1، ومن قبل العرض المعدوم كتب x ≥ 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.inequations"
+      ]
+    },
+    {
+      "prompt": "مساحة المستطيل ذي العرض x − 1 والطول x + 4 تساوي 14 m².\nأيّ المعادلات التالية تترجم هذا الشرط؟\n<svg viewBox=\"0 0 320 168\"><title>مستطيل عرضه x − 1 وطوله x + 4 ومساحته 14 m²</title><rect x=\"60\" y=\"20\" width=\"200\" height=\"100\" fill=\"#0f6e56\" opacity=\"0.14\"/><rect x=\"60\" y=\"20\" width=\"200\" height=\"100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"160\" y=\"76\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\">14 m²</text><text x=\"160\" y=\"143\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\">x + 4</text><text x=\"30\" y=\"76\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\">x − 1</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x(x + 4) = 14"
+        },
+        {
+          "id": "b",
+          "text": "(x + 4)(x − 1) = 7",
+          "misconceptionTag": "math.mes.aire-division-par-deux-appliquee-a-tort"
+        },
+        {
+          "id": "c",
+          "text": "2(x + 4) + 2(x − 1) = 14",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "(x + 4)(x − 1) = 14"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "مساحة المستطيل هي الجداء: الطول × العرض. إذن (x + 4)(x − 1) = 14 ✓. ننشر فنجد x² + 3x − 4 = 14. تحقّق بـ x = 3: (3 + 4)(3 − 1) = 14 ✓. الخطأ الشائع: كتابة المحيط 2(x + 4) + 2(x − 1) بدل المساحة، فالمحيط يُجمع على طول الحدود والمساحة تُضرب. ومن قسم المساحة على 2 فكتب 7 طبّق على المستطيل قاعدة المثلّث. ومن نسي إنقاص العرض بـ 1 كتب x(x + 4).",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "مساحة المستطيل ذي العرض x − 1 والطول x + 4 تساوي 14 m²، والقياسان بالمتر.\nما بُعدا المستطيل (العرض أوّلًا ثمّ الطول)؟\n<svg viewBox=\"0 0 320 168\"><title>مستطيل عرضه x − 1 وطوله x + 4 ومساحته 14 m²</title><rect x=\"60\" y=\"20\" width=\"200\" height=\"100\" fill=\"#0f6e56\" opacity=\"0.14\"/><rect x=\"60\" y=\"20\" width=\"200\" height=\"100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"160\" y=\"76\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\">14 m²</text><text x=\"160\" y=\"143\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\">x + 4</text><text x=\"30\" y=\"76\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\">x − 1</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−7 m و −2 m"
+        },
+        {
+          "id": "b",
+          "text": "2 m و 7 m"
+        },
+        {
+          "id": "c",
+          "text": "3 m و 7 m"
+        },
+        {
+          "id": "d",
+          "text": "5 m و 10 m"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المعادلة (x + 4)(x − 1) = 14 تؤول إلى x² + 3x − 18 = 0 أي (x − 3)(x + 6) = 0، فحلّاها x = 3 و x = −6. الشرط x > 1 يُسقط −6، فيبقى x = 3. العرض x − 1 = 2 والطول x + 4 = 7 ✓. تحقّق: 2 × 7 = 14 ✓. الخطأ الشائع: الاحتفاظ بالحلّ −6، فيخرج عرض −7 m وطول −2 m، وجداؤهما 14 لكنّ الطول لا يكون سالبًا. ومن أجاب بـ x نفسه (3 m) وبالطول 7 m أعطى المجهول بدل العرض. ومن قرأ (x + 6) على أنّه يُعدم عند 6 وجد x = 6 فعرضًا 5 m وطولًا 10 m.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.equations-produit",
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "نريد مستطيلًا آخر عرضه x − 1 وطوله x + 4 ومساحته 24 m²، والقياسان بالمتر. نعلم أنّ x² + 3x − 28 = (x − 4)(x + 7) لكلّ عدد حقيقي x.\nما بُعدا هذا المستطيل (العرض أوّلًا ثمّ الطول)؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 m و 8 m"
+        },
+        {
+          "id": "b",
+          "text": "−8 m و −3 m",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "c",
+          "text": "4 m و 8 m",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "6 m و 11 m",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المعادلة (x + 4)(x − 1) = 24 تؤول إلى x² + 3x − 4 = 24، أي x² + 3x − 28 = 0، أي (x − 4)(x + 7) = 0. إذن x = 4 أو x = −7. الشرط x > 1 يُسقط −7، فيبقى x = 4. العرض x − 1 = 3 والطول x + 4 = 8 ✓. تحقّق: 3 × 8 = 24 ✓. الخطأ الشائع: الاحتفاظ بالحلّ −7، فيخرج عرض −8 m وطول −3 m. ومن أعطى x نفسه عرضًا وجد 4 m و 8 m. ومن قرأ العامل (x + 7) على أنّه يُعدم عند 7 وجد x = 7 فعرضًا 6 m وطولًا 11 m.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.mise-en-equation",
+        "math.alg.equations-produit",
+        "math.mes.aires"
+      ]
+    }
+  ]
+}
