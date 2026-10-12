@@ -6,3 +6,4 @@
 - Famille neuve à proposer : hauteur partielle (AK) prise pour hauteur du trapèze.
 - gen.py complet; 3 fichiers écrits. Q4 ch12 : options changées (doublon du 20/22 Q3 : O,(OI),I,(OJ)) -> O,(AB),J,(OJ).
 - Gates: mes 3 fichiers OK (check, qa:strict, tranche, lot-lint, dupscan). Rouges restants = 04 (autres auteurs) + catalogue. Fini : rapport.
+- Tour corrections audit-L22 appliqué (M-1..M-8, m-1..m-4, étiquettes) via patch1/2.py + gen.py; lint/dupscan/bench/gates OK pour mes fichiers.
