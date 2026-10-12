@@ -59,17 +59,17 @@
       "competencies": ["math.num.racines-definition"]
     },
     {
-      "prompt": "في مثلّث قائم الزاوية، ضلعاه القائمان يساويان 6 cm و8 cm. ما طول الوتر؟",
+      "prompt": "مستطيل بُعداه √18 cm و√8 cm. ما مساحته؟",
       "options": [
-        { "id": "a", "text": "√14 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
-        { "id": "b", "text": "7 cm" },
-        { "id": "c", "text": "√48 cm" },
-        { "id": "d", "text": "10 cm" }
+        { "id": "a", "text": "5√2 cm²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
+        { "id": "b", "text": "√26 cm²", "misconceptionTag": "math.num.racine-produit-transforme-en-somme" },
+        { "id": "c", "text": "144 cm²" },
+        { "id": "d", "text": "12 cm²" }
       ],
       "correctOption": "d",
-      "explanation": "بتطبيق نظريّة فيثاغورس: وتر² = 6² + 8² = 36 + 64 = 100، إذن الوتر = √100 = 10 cm. تذكّر المثلث 6-8-10 وهو من مضاعفات المثلث 3-4-5.",
+      "explanation": "المساحة = الطول × العرض = √18 × √8. بخاصيّة جذر الجداء: √18 × √8 = √(18 × 8) = √144 = 12 cm². ويمكن التبسيط أوّلًا: 3√2 × 2√2 = 6 × 2 = 12 ✓. الأخطاء الشائعة: جمع البعدين 3√2 + 2√2 = 5√2 بدل ضربهما ؛ أو جمع ما تحت الجذرين فيُكتب √(18 + 8) = √26 ؛ أو التوقّف عند 144 دون أخذ الجذر.",
       "difficulty": 3,
-      "competencies": ["math.geo.pythagore", "math.num.racines-calcul"]
+      "competencies": ["math.num.racines-calcul", "math.mes.aires"]
     },
     {
       "prompt": "أبسّط: √54 / √6",

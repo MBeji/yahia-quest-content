@@ -33,21 +33,17 @@
       "competencies": ["math.num.racines-calcul"]
     },
     {
-      "prompt": "ليكن x = −3. ما قيمة التعبير √(4x² + 24x + 36) ؟",
+      "prompt": "أيّ العلاقات التالية صحيحة لكلّ عدد حقيقي x ؟",
       "options": [
-        { "id": "a", "text": "0" },
-        { "id": "b", "text": "6" },
-        { "id": "c", "text": "12" },
-        { "id": "d", "text": "3" }
+        { "id": "a", "text": "√(x²) = x لأنّ الجذر يلغي المربّع", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
+        { "id": "b", "text": "(√x)² = x لأنّ المربّع يلغي الجذر", "misconceptionTag": "math.num.racine-negatif-existe" },
+        { "id": "c", "text": "√(x²) = |x| لأنّ الجذر موجب دائمًا" },
+        { "id": "d", "text": "√(x²) = −x لأنّ الجذر يغيّر الإشارة", "misconceptionTag": "math.num.valeur-absolue-toujours-oppose" }
       ],
-      "correctOption": "a",
-      "explanation": "نحلّل التعبير داخل الجذر: 4x² + 24x + 36 = (2x)² + 2×(2x)×6 + 6² = (2x + 6)². إذن √(4x² + 24x + 36) = √((2x+6)²) = |2x + 6|. بتعويض x = −3: 2(−3) + 6 = −6 + 6 = 0، فـ |0| = 0. أمّا 12 فتعويض مباشر خاطئ، و6 حساب 4×9=36 ثمّ الجذر دون تحليل، و3 تجاهل المعامل 4.",
+      "correctOption": "c",
+      "explanation": "الجذر التربيعي موجب أو معدوم دائمًا، فـ √(x²) = |x|: يساوي x إذا كان x موجبًا و−x إذا كان سالبًا. مثال: √((−3)²) = √9 = 3 = |−3|. أمّا (√x)² = x فلا تصحّ إلّا إذا كان x موجبًا أو معدومًا، لأنّ √x غير معرّف في ℝ حين يكون x سالبًا. الأخطاء الشائعة: اعتبار √(x²) = x دائمًا فيُهمل أنّ x قد يكون سالبًا ؛ أو اعتبار √(x²) = −x دائمًا ؛ أو تطبيق (√x)² = x على عدد سالب.",
       "difficulty": 3,
-      "competencies": [
-        "math.num.racines-definition",
-        "math.alg.identites-remarquables",
-        "math.num.ordre-encadrement"
-      ]
+      "competencies": ["math.num.racines-definition"]
     },
     {
       "prompt": "اُنطق مقام الكسر التالي وبسّطه تمامًا (تلميح: استعمل الفرق بين مربّعين): 1 / (√5 + 2)",
@@ -80,21 +76,17 @@
       "competencies": ["math.num.racines-calcul"]
     },
     {
-      "prompt": "في مثلّث قائم الزاوية، ضلعاه القائمان هما √3 cm و√5 cm. ما طول الوتر بالصورة المبسّطة؟",
+      "prompt": "أيّ العبارات التالية تساوي عددًا صحيحًا؟",
       "options": [
-        { "id": "a", "text": "√2 cm" },
-        {
-          "id": "b",
-          "text": "√15 cm",
-          "misconceptionTag": "math.num.racine-produit-transforme-en-somme"
-        },
-        { "id": "c", "text": "2√2 cm" },
-        { "id": "d", "text": "4 cm" }
+        { "id": "a", "text": "√20 + √5", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
+        { "id": "b", "text": "√3 × √6", "misconceptionTag": "math.num.racine-produit-transforme-en-somme" },
+        { "id": "c", "text": "√30 ÷ √5" },
+        { "id": "d", "text": "√3 × √12" }
       ],
-      "correctOption": "c",
-      "explanation": "بتطبيق نظريّة فيثاغورس: وتر² = (√3)² + (√5)² = 3 + 5 = 8. إذن الوتر = √8 = √(4×2) = 2√2 cm. أمّا √2 cm فقد أخذ جذر الفرق، و√15 cm طبّق √(a×b) خطأً، و4 cm جمع الضلعين عوضًا عن مربّعيهما.",
+      "correctOption": "d",
+      "explanation": "نحسب كلّ عبارة بدل أن نحكم عليها من شكلها: √3 × √12 = √36 = 6، وهو عدد صحيح. أمّا √20 + √5 = 2√5 + √5 = 3√5 فعدد أصمّ ، و√3 × √6 = √18 = 3√2 أصمّ ، و√30 ÷ √5 = √6 أصمّ. الأخطاء الشائعة: جمع ما تحت الجذرين فيُكتب √20 + √5 = √25 = 5 ؛ أو √3 × √6 = √(3 + 6) = √9 = 3 ؛ أو √30 ÷ √5 = √(30 − 5) = √25 = 5 — فتبدو هذه العبارات صحيحة وهي ليست كذلك.",
       "difficulty": 3,
-      "competencies": ["math.geo.pythagore", "math.num.racines-calcul"]
+      "competencies": ["math.num.racines-calcul"]
     },
     {
       "type": "short_answer",

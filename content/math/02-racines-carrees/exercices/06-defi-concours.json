@@ -7,17 +7,17 @@
   "displayOrder": 6,
   "questions": [
     {
-      "prompt": "بسّط العبارة: (√7 + √3)² − (√7 − √3)².",
+      "prompt": "ما قيمة العدد التالي؟\n(√13)² + √((−7)²)",
       "options": [
-        { "id": "a", "text": "0", "misconceptionTag": "math.alg.carre-somme-sans-double-produit" },
-        { "id": "b", "text": "4√21" },
-        { "id": "c", "text": "2√21" },
-        { "id": "d", "text": "20" }
+        { "id": "a", "text": "6", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
+        { "id": "b", "text": "62", "misconceptionTag": "math.num.racine-et-carre-confondus" },
+        { "id": "c", "text": "20" },
+        { "id": "d", "text": "176", "misconceptionTag": "math.num.racine-et-carre-confondus" }
       ],
-      "correctOption": "b",
-      "explanation": "نطوّر: (√7 + √3)² = 7 + 2√21 + 3 = 10 + 2√21، و(√7 − √3)² = 10 − 2√21. الفرق: (10 + 2√21) − (10 − 2√21) = 4√21. ✓ (تحقّق بالهويّة: (a+b)² − (a−b)² = 4ab مع a = √7 وb = √3، أي 4√21). الخطأ الشائع: كتابة (√7 ± √3)² = 7 ± 3 بإهمال الحدّ الأوسط 2√21 فيصير الفرق 0؛ أو الاكتفاء بـ 2√21 (نسيان أنّ المعامل 4 لا 2).",
+      "correctOption": "c",
+      "explanation": "(√13)² = 13 لأنّ تربيع الجذر يعيد العدد الموجب نفسه. و√((−7)²) = √49 = 7 = |−7| لأنّ الجذر موجب. إذن المجموع 13 + 7 = 20. الأخطاء الشائعة: اعتبار √((−7)²) = −7 فيخرج 13 + (−7) = 6 ؛ أو حساب 49 دون أخذ الجذر فيخرج 13 + 49 = 62 ؛ أو حساب (√13)² = 169 فيخرج 169 + 7 = 176.",
       "difficulty": 2,
-      "competencies": ["math.num.racines-calcul", "math.alg.identites-remarquables"]
+      "competencies": ["math.num.racines-definition"]
     },
     {
       "prompt": "احسب القيمة المبسّطة للعبارة: √((√5 − 3)²).",
@@ -37,17 +37,17 @@
       "competencies": ["math.num.racines-definition", "math.num.ordre-encadrement"]
     },
     {
-      "prompt": "مستطيل بُعداه √27 cm و√48 cm. ما طول قطره بالصورة المبسّطة؟",
+      "prompt": "مستطيل بُعداه √27 cm و√48 cm. ما محيطه بالصورة المبسّطة؟",
       "options": [
-        { "id": "a", "text": "7√3 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
-        { "id": "b", "text": "5√3 cm" },
-        { "id": "c", "text": "25√3 cm" },
-        { "id": "d", "text": "15 cm" }
+        { "id": "a", "text": "7√3 cm", "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee" },
+        { "id": "b", "text": "10√3 cm", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
+        { "id": "c", "text": "14√6 cm", "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne" },
+        { "id": "d", "text": "14√3 cm" }
       ],
-      "correctOption": "b",
-      "explanation": "بنظرية بيثاغورس، القطر = √((√27)² + (√48)²) = √(27 + 48) = √75. ونبسّط: √75 = √(25 × 3) = 5√3 cm. ✓ (تحقّق: √27 = 3√3 و√48 = 4√3، وهما ضلعا قائم على شاكلة 3 و4، فالوتر 5√3). الخطأ الشائع: جمع الضلعين مباشرةً √27 + √48 = 3√3 + 4√3 = 7√3 (تطبيق القاعدة الخاطئة «جذر المجموع = مجموع الجذرين» بدل بيثاغورس)؛ أو كتابة √75 = 25√3 بنسيان الجذر على 25.",
+      "correctOption": "d",
+      "explanation": "نبسّط البعدين: √27 = 3√3 و√48 = 4√3. المحيط = 2 × (3√3 + 4√3) = 2 × 7√3 = 14√3 cm. الأخطاء الشائعة: نسيان مضاعفة المجموع (للمستطيل طولان وعرضان) فينتج 7√3 ؛ أو جمع ما تحت الجذرين √27 + √48 = √75 = 5√3 ثمّ المضاعفة فينتج 10√3 ؛ أو جمع ما تحت الجذر بعد التبسيط 3√3 + 4√3 = 7√6 فينتج 14√6.",
       "difficulty": 3,
-      "competencies": ["math.geo.pythagore", "math.num.racines-calcul"]
+      "competencies": ["math.num.racines-calcul", "math.mes.perimetres"]
     },
     {
       "prompt": "أنطق مقام الكسر وبسّطه تمامًا: 3 / (√7 − 2).",
@@ -67,21 +67,17 @@
       "competencies": ["math.num.racines-calcul", "math.alg.identites-remarquables"]
     },
     {
-      "prompt": "ليكن x = √3 + 1. احسب قيمة x² − 2x.",
+      "prompt": "ما قيمة العدد التالي؟\n5√3 / (2√27 / 5)",
       "options": [
-        {
-          "id": "a",
-          "text": "2 − 2√3",
-          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
-        },
-        { "id": "b", "text": "4" },
-        { "id": "c", "text": "2" },
-        { "id": "d", "text": "2√3" }
+        { "id": "a", "text": "18", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "b", "text": "5/6" },
+        { "id": "c", "text": "25/6" },
+        { "id": "d", "text": "25√3/6" }
       ],
       "correctOption": "c",
-      "explanation": "x² = (√3 + 1)² = 3 + 2√3 + 1 = 4 + 2√3، و2x = 2√3 + 2. إذن x² − 2x = (4 + 2√3) − (2√3 + 2) = 2. ✓ (تحقّق بالتعميل: x² − 2x = x(x − 2) = (√3 + 1)(√3 − 1) = 3 − 1 = 2). الخطأ الشائع: كتابة (√3 + 1)² = 3 + 1 = 4 بإهمال 2√3 (فيخرج 2 − 2√3)؛ أو نسيان الحدّ 2×1 في 2x فيبقى جذر.",
+      "explanation": "نبسّط أوّلًا: √27 = 3√3 فيكون 2√27 = 6√3 ويصير المقام 6√3 / 5. القسمة على كسر هي الضرب في مقلوبه: 5√3 ÷ (6√3 / 5) = 5√3 × 5 / (6√3) = 25√3 / (6√3) = 25/6، لأنّ √3 يُختصر. الأخطاء الشائعة: الضرب في الكسر بدل القسمة عليه فيخرج 5√3 × (6√3 / 5) = 18 ؛ أو إهمال القسمة على 5 في المقام فيخرج 5/6 ؛ أو إهمال √3 في المقام فلا يُختصر ويخرج 25√3/6.",
       "difficulty": 3,
-      "competencies": ["math.num.racines-calcul", "math.alg.identites-remarquables"]
+      "competencies": ["math.num.racines-calcul"]
     },
     {
       "prompt": "بسّط تلميذ العبارة √50 − √32 + √18 هكذا:\n«√50 = 5√2، √32 = 16√2، √18 = 3√2، إذن الناتج = (5 − 16 + 3)√2 = −8√2»\nما الخطوة الخاطئة؟",
