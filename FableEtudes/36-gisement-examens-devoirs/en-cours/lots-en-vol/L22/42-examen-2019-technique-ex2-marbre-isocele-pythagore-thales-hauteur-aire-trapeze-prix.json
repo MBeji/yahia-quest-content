@@ -1,0 +1,267 @@
+{
+  "title": "🏛️ مناظرة 2019 (تقني) · التمرين 2 ⭐⭐⭐: قطعة رخام على شكل شبه منحرف — فيثاغورس وطاليس والارتفاع والمساحة والثمن",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 42,
+  "questions": [
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين قمّته A ، وO منتصف قاعدته [BC] . الأطوال بالصنتمتر :\nBC = 60\nAB = AC = 50\nما طول [OB] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 232\"><title>المثلّث ABC المتقايس الضلعين ونقطة O من قاعدته</title><polygon points=\"150,32 24,200 276,200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150 32 L150 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><circle cx=\"150\" cy=\"32\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"24\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"12\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"288\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "25"
+        },
+        {
+          "id": "b",
+          "text": "30"
+        },
+        {
+          "id": "c",
+          "text": "50"
+        },
+        {
+          "id": "d",
+          "text": "60"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "النقطة O منتصف [BC]، فالقطعة [OB] نصف [BC]: OB = 60 ÷ 2 = 30 cm ✓.\nالخطأ الشائع: أخذ طول القاعدة كلّها 60، أو أخذ نصف الضلع [AB] فنجد 25، أو أخذ طول الضلع 50.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في المثلّث OAB القائم في O، لدينا OB = 30 و AB = 50 بالصنتمتر.\nما التبرير الذي يعطي المساواة OA² + OB² = AB² ؟\n<svg viewBox=\"0 0 300 232\"><title>المثلّث OAB القائم في O داخل المثلّث ABC</title><polygon points=\"150,32 24,200 276,200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150 32 L150 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M150 190 L160 190 L160 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"150\" cy=\"32\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"24\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"12\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"288\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ [OA] هو وتر المثلّث القائم OAB ، فنطبّق مبرهنة فيثاغورس",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ [AB] هو وتر المثلّث القائم OAB ، فنطبّق مبرهنة طاليس"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ [AB] هو وتر المثلّث القائم OAB ، فنطبّق مبرهنة فيثاغورس"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ [OA] هو وتر المثلّث القائم OAB ، فنطبّق مبرهنة طاليس"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّث OAB قائم في O، فوتره هو الضلع المقابل للزاوية القائمة أي [AB]. ومبرهنة فيثاغورس تعطي: مربّع الوتر يساوي مجموع مربّعَي الضلعين القائمين، أي AB² = OA² + OB² ✓.\nالخطأ الشائع: اعتبار [OA] وترًا (وهو ضلع قائم) فتُكتب المساواة OA² = OB² + AB²؛ أو استدعاء مبرهنة طاليس التي تتعلّق بمستقيمات متوازية وبنسب أطوال، لا بمربّعات أضلاع مثلّث قائم.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "المثلّث OAB قائم في O، وأطوال ضلعيه بالصنتمتر :\nOB = 30\nAB = 50\nما طول [OA] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 232\"><title>المثلّث OAB القائم في O</title><polygon points=\"150,32 24,200 276,200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150 32 L150 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M150 190 L160 190 L160 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"150\" cy=\"32\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"24\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"12\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"288\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3400",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "20",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "40"
+        },
+        {
+          "id": "d",
+          "text": "1600",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الوتر هو [AB]، فبفيثاغورس: OA² = AB² − OB² = 2500 − 900 = 1600، إذن OA = √1600 = 40 cm ✓.\nالخطأ الشائع: طرح الطولين مباشرةً 50 − 30 = 20 دون تربيعهما؛ أو التوقّف عند OA² = 1600؛ أو جمع المربّعين 2500 + 900 = 3400 كأنّ [OA] هو الوتر فنجد √3400.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC، النقطة E من [AB] والنقطة F من [AC]، والمستقيم (EF) يوازي المستقيم (BC).\nما التبرير الذي يفسّر المساواة بين النسب الثلاث التالية ؟\nAE/AB = AF/AC = EF/BC\n<svg viewBox=\"0 0 300 232\"><title>المثلّث ABC والقطعة [EF] الموازية للقاعدة</title><polygon points=\"150,32 24,200 276,200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M112.2 82.4 L187.8 82.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"32\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"24\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"112.2\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"187.8\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"12\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"288\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"100.2\" y=\"91.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"199.8\" y=\"91.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ ABC متقايس الضلعين قمّته A ، فنطبّق مبرهنة طاليس في المثلّث ABC",
+          "misconceptionTag": "math.geo.thales-sans-verifier-parallelisme"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ (EF) // (BC) ، فنطبّق مبرهنة فيثاغورس في المثلّث ABC"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ ABC متقايس الضلعين قمّته A ، فنطبّق مبرهنة فيثاغورس في المثلّث ABC"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ (EF) // (BC) ، فنطبّق مبرهنة طاليس في المثلّث ABC"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المساواة بين النسب الثلاث هي نتيجة مبرهنة طاليس، وشرط تطبيقها أن يوازي (EF) القاعدة (BC) مع E على [AB] وF على [AC] ✓.\nالخطأ الشائع: تطبيق طاليس لمجرّد أنّ المثلّث متقايس الضلعين دون التحقّق من التوازي، أو استدعاء فيثاغورس الذي يتعلّق بالزاوية القائمة لا بالتوازي.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين قمّته A، والنقطة E من [AB] والنقطة F من [AC] حيث (EF) // (BC). الأطوال بالصنتمتر :\nBC = 60\nAB = 50\nAE = 15\nما طول [EF] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 232\"><title>المثلّث ABC والقطعة [EF] الموازية للقاعدة</title><polygon points=\"150,32 24,200 276,200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M112.2 82.4 L187.8 82.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"32\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"24\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"112.2\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"187.8\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"12\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"288\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"100.2\" y=\"91.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"199.8\" y=\"91.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "30"
+        },
+        {
+          "id": "b",
+          "text": "200",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "25",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "بطاليس في المثلّث ABC: EF/BC = AE/AB، أي EF = BC × AE ÷ AB = 60 × 15 ÷ 50 = 18 cm ✓.\nالخطأ الشائع: قلب إحدى النسبتين فنجد 60 × 50 ÷ 15 = 200؛ أو مقارنة الفروق بدل النسب: 60 − (50 − 15) = 25؛ أو افتراض أنّ E منتصف [AB] فنجد EF = 30.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين قمّته A، وO منتصف [BC]، والنقطة E من [AB] حيث المستقيم (EF) يوازي (BC)، ونسمّي K نقطة تقاطع (AO) و(EF). الأطوال بالصنتمتر :\nAB = 50\nAO = 40\nAE = 15\nما طول [AK] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 232\"><title>المثلّث ABC والنقاط E وF وK وO</title><polygon points=\"150,32 24,200 276,200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150 32 L150 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M112.2 82.4 L187.8 82.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"32\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"24\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"112.2\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"187.8\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"12\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"288\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"100.2\" y=\"91.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"199.8\" y=\"91.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"161\" y=\"80.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "5",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "400/3",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "K على [AO] وE على [AB] والمستقيمان (KE) و(OB) متوازيان، فبطاليس في المثلّث ABO: AK/AO = AE/AB = 15/50 = 3/10، إذن AK = 40 × 3/10 = 12 cm ✓.\nالخطأ الشائع: حساب الفرق 40 − (50 − 15) = 5 بدل النسبة؛ أو قلب النسبة فنجد 40 × 50 ÷ 15 = 400/3؛ أو أخذ AK = AE = 15.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "شبه المنحرف EFCB قاعدتاه [EF] و[BC]، وأطوالها بالصنتمتر :\nEF = 18\nBC = 60\nوارتفاعه 28 cm.\nما مساحة شبه المنحرف بالصنتمتر المربّع ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "540"
+        },
+        {
+          "id": "b",
+          "text": "1680",
+          "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme"
+        },
+        {
+          "id": "c",
+          "text": "1092"
+        },
+        {
+          "id": "d",
+          "text": "2184",
+          "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "مساحة شبه المنحرف = (القاعدة الكبرى + القاعدة الصغرى) ÷ 2 × الارتفاع = (60 + 18) ÷ 2 × 28 = 39 × 28 = 1092 cm² ✓.\nالخطأ الشائع: ضرب مجموع القاعدتين في الارتفاع دون القسمة على 2 فنجد 78 × 28 = 2184؛ أو استعمال القاعدة الكبرى وحدها 60 × 28 = 1680؛ أو قسمة جداء القاعدتين على 2: 18 × 60 ÷ 2 = 540.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين قمّته A، وO منتصف [BC] و(AO) عمودي على (BC)، والنقطة E من [AB] والنقطة F من [AC] حيث (EF) // (BC)، ونسمّي K نقطة تقاطع (AO) و(EF). ارتفاع شبه المنحرف EFCB هو المسافة بين قاعدتيه المتوازيتين [EF] و[BC]. الأطوال بالصنتمتر :\nAB = 50\nAO = 40\nAE = 15\nما ارتفاع شبه المنحرف EFCB بالصنتمتر ؟\n<svg viewBox=\"0 0 300 232\"><title>شبه المنحرف EFCB داخل المثلّث ABC</title><polygon points=\"150,32 24,200 276,200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150 32 L150 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M150 190 L160 190 L160 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M112.2 82.4 L187.8 82.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"32\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"24\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"112.2\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"187.8\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"12\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"288\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"100.2\" y=\"91.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"199.8\" y=\"91.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"161\" y=\"80.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "50"
+        },
+        {
+          "id": "d",
+          "text": "28"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المستقيم (AO) عمودي على القاعدتين المتوازيتين، فالمسافة بينهما هي KO. بطاليس: AK/AO = AE/AB = 3/10، إذن KO = AO − AK = 40 × (1 − 3/10) = 40 × 7/10 = 28 cm ✓.\nالخطأ الشائع: اعتماد القطعة [AK] وهي الجزء الأعلى من [AO] وطولها 3/10 منه، لا المسافة بين القاعدتين؛ أو أخذ AE أو الضلع المائل [AB] ارتفاعًا.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "قصّ عامل من قطعة رخام مثلّثة ABC متقايسة الضلعين قمّتها A شبه المنحرف EFCB. نعلم أنّ O منتصف [BC] و(AO) عمودي على (BC) وأنّ (EF) // (BC) حيث E على [AB] وF على [AC]. الأطوال بالصنتمتر :\nBC = 60\nAB = 50\nAO = 40\nAE = 15\nثمن المتر المربّع الواحد من الرخام 100 دينار.\nما ثمن القطعة EFCB بالدينار ؟\n<svg viewBox=\"0 0 300 232\"><title>قطعة الرخام ABC وشبه المنحرف EFCB</title><polygon points=\"150,32 24,200 276,200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150 32 L150 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M150 190 L160 190 L160 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M112.2 82.4 L187.8 82.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"32\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"24\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"200\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"112.2\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"187.8\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"82.4\" r=\"3.6\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"28\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"12\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"288\" y=\"213\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"100.2\" y=\"91.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"199.8\" y=\"91.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"161\" y=\"80.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "109,2"
+        },
+        {
+          "id": "b",
+          "text": "4,68"
+        },
+        {
+          "id": "c",
+          "text": "10,92"
+        },
+        {
+          "id": "d",
+          "text": "21,84",
+          "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "بطاليس: EF = 60 × 15 ÷ 50 = 18 cm، وارتفاع القطعة هو KO = 40 × (1 − 3/10) = 28 cm. المساحة = (60 + 18) ÷ 2 × 28 = 1092 cm² = 0,1092 m²، والثمن = 0,1092 × 100 = 10,92 دينار ✓.\nالخطأ الشائع: اعتماد القطعة [AK] ارتفاعًا فتخرج مساحة 468 cm² وثمن 4,68؛ أو نسيان القسمة على 2 في مساحة شبه المنحرف فنجد 21,84؛ أو تحويل خاطئ من cm² إلى m² بالقسمة على 1000 فنجد 109,2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.mes.aires"
+      ]
+    }
+  ]
+}
