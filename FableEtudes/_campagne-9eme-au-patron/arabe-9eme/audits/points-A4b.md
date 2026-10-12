@@ -1,0 +1,4 @@
+Points de vigilance propres à ton lot (manuel de textes 101909 et sujets nationaux — notes `…/ar9/lecture-n/`) :
+- **07** : le SOCLE seulement (التّشبيه et ses أركان ; الاستعارة telle que la p. 33 la définit ; الحقيقة / المجاز ; l'effet d'une صورة, sa fonction dans le حجاج) — aucun item sur تصريحيّة / مكنيّة, الكناية, المجاز المرسل, les types d'تشبيه ; vers classiques exacts (texte, attribution, vocalisation).
+- **08** : الطّباق (p. 291), السّجع (p. 99, 228) et le أسلوب مرسل, le lien سجع ↔ مقامة ; la section « الإيقاع » est OPTIONNELLE — si un item porte sur la prosodie (قافية، رويّ…), il doit être exact et enseigné ; aucun item sur جناس, مقابلة (comme محسّن), تورية.
+- Cohérence : 07 ↔ 08 (mêmes termes) ; 07/08 ↔ 09 et 10 (fonction argumentative d'une صورة ou d'un محسّن, déjà audités en A4 : rapport `rapport-A4.md`, à ne pas retoucher).
