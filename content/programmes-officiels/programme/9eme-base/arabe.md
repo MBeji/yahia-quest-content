@@ -605,6 +605,12 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 18
     que le manuel fait travailler « فأمّا اليتيمَ فلا تقهرْ » (الضّحى 9) ; la règle de fonction de « أيّ » (ch. 17)
     ne couvre pas « أيَّ خروجٍ تخرجْ أخرجْ » (مفعول مطلق) ; « ألم ترتّب حقيبتك؟ » est classé « تذكير بشيء معلوم »
     selon la dichotomie du manuel, alors qu'il se lit comme un reproche.
+  - **Audit A2 (ch. 18, 02, 03, 19 — 140 questions re-résolues)** : 0 clé fausse ; 7 corrections de cours et
+    d'explications (dont une option en double au 18, un `verifie` faux sur « ليس » au 02, un énoncé qui appelait
+    « الحدث الثّاني » l'événement principal au 03, trois explications fausses au 19) ; deux items de facture du
+    18 (`04-defi` Q2 et Q5) réécrits ; « المفعول لأجله » retiré du 03 (le مدخل de L110 fait nommer la العلّيّة sans
+    imprimer la fonction). Reste : le 19 teste « خبر كان » alors que le 02 range ce terme dans son encadré
+    « للتوسّع » (le manuel dit « خبر النّاسخ ») ; النّسبة apparaît en option au 19 alors qu'elle s'enseigne au 14.
   - **صرف** : la règle « فَعِيلة ← فَعَليّ » (مدينة ← مَدَنيّ, قبيلة ← قَبَليّ) n'est dans aucune خلاصة, elle est
     induite des exercices p. 170 — l'usage moderne dit aussi « مدينيّ / قبيليّ / طبيعيّ », que les items évitent
     comme distracteurs ; « المتنبّي » répond à la définition du منقوص, le cours dit seulement que sa ياء n'est
