@@ -48,8 +48,8 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 
 | Couple | Fiche / manuel | Cours au patron | Étiquettes | Audit | Gisement : examens | Gisement : devoirs | En cours · prochaine action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| maths (`math`) | ✅ 102905 lu | ✅ armé ; ⏳ 01–02 recentrés le 2026-10-12 (pas encore audités ni mergés) | ✅ | ✅ (01–02 : ❌) | ⏳ 184 missions publiées · 10 planifiées (L17, L21, L22 + devoirs G2, I) | ⏳ devoirs du 1ᵉʳ trimestre publiés | recentrage : branche `wip/arabe-9eme-patron` (chemins `content/math/01-*`, `02-*`) → audit puis PR à part · lots : état exact dans `36-gisement-examens-devoirs/en-cours/ETAT-REPRISE.md` (branche `wip/gisement-9eme-lots-en-ecriture`, PR #607) |
-| SVT (`sciences-vie-terre`) | ✅ 105905 lu | ✅ armé le 2026-10-01 (14 ch. + 7 optionnels) | ✅ `bio.*` | ✅ | ⏳ 16 missions (11 publiées, 5 mergées) sur un plan de 27 ; 6 sessions lues (2020–2026), C07–C24 à lire | ❌ D01–D06 | lots SVT-L04 (en écriture au 2026-10-10), SVT-L05 (prêt) : voir ETAT-REPRISE |
+| maths (`math`) | ✅ 102905 lu | ✅ armé ; ⏳ 01–02 recentrés le 2026-10-12 (pas encore audités ni mergés) | ✅ | ✅ (01–02 : ❌) | ⏳ L01–L16, L18–L20 publiés (184 missions) ; **L17** (ch. 18, 63 q) écrit, gates et étiquettes à finir ; L21 (ch. 09), L22 (ch. 07/12/18) planifiés | ⏳ devoirs du 1ᵉʳ trimestre publiés ; G2 (ch. 04) et I (ch. 09, après L21) planifiés — 10 missions `planifiee` | lots : `wip/gisement-9eme-lots-en-ecriture` (PR #607), mode d'emploi dans `36-gisement-examens-devoirs/en-cours/ETAT-REPRISE.md` § « PASSAGE DE RELAIS » ; recentrage 01–02 : `wip/arabe-9eme-patron` → audit puis PR à part |
+| SVT (`sciences-vie-terre`) | ✅ 105905 lu | ✅ armé le 2026-10-01 (14 ch. + 7 optionnels) | ✅ `bio.*` | ✅ | ⏳ L01, L02, L03 publiés (16 missions ; les 5 de L03 à basculer `publiee`) ; **L04** (7 missions, ch. 09–11) audité, corrections arbitrées à appliquer ; **L05** (4 missions, ch. 12) à écrire ; sessions 2019→2001 (C07–C24) à lire | ❌ D01–D06 | même branche et même ETAT-REPRISE que les maths |
 | physique-chimie (`svt`) | ✅ 103902 lu | ✅ armé le 2026-09-28 | ✅ | ✅ | — écarté (é36 D-10 : pas d'épreuve en filière générale) | — | — |
 | arabe (`arabic`) | ✅ 101908 lu en entier, 101909 aux pages utiles (fiche `partielle` à dessein) | ⏳ 19 chapitres réalignés (5 neufs) ; rendu corrigé | ⏳ partie A prête (63 ids, 8 ch. de grammaire) ; partie B ❌ ; 01, 06, 11 ❌ | ⏳ A1, A2, A3 ✅ ; A4 : 09–10 ✅, 07–08 ❌ | ❌ 46 documents échantillonnés, 0 mission (chapitre 11 = annales) | ❌ | branche `wip/arabe-9eme-patron` (PR #637 brouillon) ; notes : `FableEtudes/_campagne-9eme-au-patron/arabe-9eme/` |
 | français (`french`) | ✅ 121905 lu | ✅ armé le 2026-10-01 | ✅ `fr.*` | ✅ | ❌ 50 documents échantillonnés, 0 mission | ❌ | prochain couple du gisement après l'arabe |
@@ -119,5 +119,8 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 ## 6. Historique des sessions
 
 - **2026-10-12 — fusion** demandée par le propriétaire : fermeture des sessions « corriger 9eme cours
-  programme » (campagne 9ᵉ au patron) et « 36-gisement-examens-devoirs » ; une seule session reprend
-  l'ensemble à partir de ce fichier.
+  programme » (campagne 9ᵉ au patron, `session_017DVMtmHBncdZ2yhRVykbu9`) et
+  « 36-gisement-examens-devoirs » (`session_0121C1nDUtcSUvXYZ6KNzYNz`, état poussé sur
+  `wip/gisement-9eme-lots-en-ecriture` à 17 h 06 UTC) ; une seule session reprend l'ensemble à partir
+  de ce fichier : « Contenu scolaire — campagne unique (patron + gisement) »
+  (`session_01V4SP7MGyz9eESCxWQs7CSZ`).
