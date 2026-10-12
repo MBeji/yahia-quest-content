@@ -1,0 +1,278 @@
+{
+  "title": "🏛️ مناظرة 2020 · التمرين 5 ⭐⭐⭐⭐: مستطيل وقطراه — فيثاغورس وطاليس في وضعيّة الفراشة وارتفاعات مثلّث ومساحة",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 41,
+  "questions": [
+    {
+      "prompt": "ABCD مستطيل بعداه AB = 8 cm و BC = 4 cm، والنقطة I من القطعة [CD] حيث CI = 2 cm.\nما طول [BI] بالصنتمتر ؟\n<svg viewBox=\"0 0 330 200\"><title>المستطيل ABCD والنقطة I من [CD] والقطعة [BI]</title><polygon points=\"26,169.5 304,169.5 304,30.5 26,30.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M304 169.5 L234.5 30.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M304 39.5 L295 39.5 L295 30.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"169.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"304\" cy=\"169.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"304\" cy=\"30.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"30.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"234.5\" cy=\"30.5\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"178.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"317.04\" y=\"178.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"307.49\" y=\"22.66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"22.51\" y=\"22.66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"234.5\" y=\"22.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√3",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "c",
+          "text": "2√5"
+        },
+        {
+          "id": "d",
+          "text": "√6",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّث BCI قائم في C لأنّ ABCD مستطيل وI من [CD]، ووتره [BI]. بفيثاغورس: BI² = BC² + CI² = 16 + 4 = 20، إذن BI = √20 = √(4 × 5) = 2√5 cm ✓. الخطأ الشائع: اعتبار [BC] وترًا فنطرح المربّعين 16 − 4 = 12 ونجد 2√3، أو أخذ نصف 20 بدل جذره فنجد 10، أو جمع الطولين تحت الجذر فنجد √(4 + 2) = √6.",
+      "difficulty": 1,
+      "competencies": ["math.geo.pythagore"]
+    },
+    {
+      "prompt": "ABCD مستطيل بعداه AB = 8 cm و BC = 4 cm.\nما طول قطره [AC] بالصنتمتر ؟\n<svg viewBox=\"0 0 330 200\"><title>المستطيل ABCD وقطره [AC]</title><polygon points=\"26,169.5 304,169.5 304,30.5 26,30.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 169.5 L304 30.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M295 169.5 L295 160.5 L304 160.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"169.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"304\" cy=\"169.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"304\" cy=\"30.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"30.5\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"178.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"317.04\" y=\"178.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"307.49\" y=\"22.66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"22.51\" y=\"22.66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√3",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "4√5"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "40",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABC قائم في B لأنّ ABCD مستطيل، ووتره [AC]. بفيثاغورس: AC² = AB² + BC² = 64 + 16 = 80، إذن AC = √80 = √(16 × 5) = 4√5 cm ✓. الخطأ الشائع: جمع الطولين مباشرةً 8 + 4 = 12، أو اعتبار [AB] وترًا فنطرح المربّعين 64 − 16 = 48 ونجد 4√3، أو أخذ نصف 80 بدل جذره فنجد 40.",
+      "difficulty": 1,
+      "competencies": ["math.geo.pythagore"]
+    },
+    {
+      "type": "multi",
+      "prompt": "ABCD مستطيل بعداه AB = 8 cm و BC = 4 cm، والنقطة I من القطعة [CD] حيث CI = 2 cm، والنقطة H نقطة تقاطع المستقيمين (AC) و (BI).\nاختر كلّ الجمل الصحيحة.\n<svg viewBox=\"0 0 330 200\"><title>المستطيل ABCD والمستقيمان (AC) و (BI) المتقاطعان في H وضعيّة الفراشة</title><polygon points=\"248.4,58.3 304,30.5 234.5,30.5\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"248.4,58.3 26,169.5 304,169.5\" fill=\"#64748b\" fill-opacity=\"0.08\" stroke=\"none\"/><polygon points=\"26,169.5 304,169.5 304,30.5 26,30.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 169.5 L304 30.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M304 169.5 L234.5 30.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"169.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"304\" cy=\"169.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"304\" cy=\"30.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"30.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"234.5\" cy=\"30.5\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"248.4\" cy=\"58.3\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"178.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"317.04\" y=\"178.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"307.49\" y=\"22.66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"22.51\" y=\"22.66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"234.5\" y=\"22.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"251.89\" y=\"50.46\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "HC/HA = CI/AB"
+        },
+        {
+          "id": "b",
+          "text": "HC/HA = CI/BC"
+        },
+        {
+          "id": "c",
+          "text": "HI/HB = HC/HA"
+        },
+        {
+          "id": "d",
+          "text": "HC/AC = 1/4"
+        },
+        {
+          "id": "e",
+          "text": "HC/HA = AB/CI"
+        },
+        {
+          "id": "f",
+          "text": "HC/HA = 1/4"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "f"]
+      },
+      "explanation": "ABCD مستطيل فـ (CI) ∥ (AB) لأنّ I من (CD)، والمستقيمان (AC) و (BI) يتقاطعان في H بين هذين المستقيمين المتوازيين: هذه وضعيّة الفراشة ورأسها H. فبنظرية طاليس HC/HA = HI/HB = CI/AB = 2/8 = 1/4. أمّا HC/AC فنسبة جزء إلى القطر كلّه الذي يضمّ HC و HA معًا، فلا تساوي 1/4؛ وCI/BC نسبة إلى ضلع غير موازٍ؛ وAB/CI مقلوب النسبة. فالجمل الثلاث التي تعبّر عن مساواة النسب في الفراشة صحيحة جميعًا ✓.",
+      "difficulty": 2,
+      "competencies": ["math.geo.thales-direct"]
+    },
+    {
+      "prompt": "H نقطة من القطعة [AC] التي طولها 4√5 cm، وتحقّق\nHC/HA = 1/4\nما طول [HC] بالصنتمتر ؟\n<svg viewBox=\"0 0 330 200\"><title>القطر [AC] والنقطة H منه والقطعة [HC]</title><polygon points=\"26,169.5 304,169.5 304,30.5 26,30.5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 169.5 L248.4 58.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M248.4 58.3 L304 30.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"169.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"304\" cy=\"169.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"304\" cy=\"30.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"26\" cy=\"30.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"248.4\" cy=\"58.3\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"178.19\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">A</text><text x=\"317.04\" y=\"178.19\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">B</text><text x=\"307.49\" y=\"22.66\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">C</text><text x=\"22.51\" y=\"22.66\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">D</text><text x=\"241.65\" y=\"51.81\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√5/5"
+        },
+        {
+          "id": "b",
+          "text": "√5",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "c",
+          "text": "16√5/5",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "d",
+          "text": "16√5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "H من [AC] فـ HC + HA = AC. ومن HC/HA = 1/4 نجد HA = 4 × HC، إذن 5 × HC = AC = 4√5، ومنه HC = 4√5/5 cm ✓. الخطأ الشائع: اعتبار 1/4 نسبة HC إلى القطعة [AC] كلّها فنكتب HC = 4√5/4 = √5، مع أنّ 1/4 نسبة جزء إلى جزء؛ أو قلب النسبة بمبادلة HC و HA فنجد HC = 4 × HA أي 16√5/5؛ أو ضرب طول القطر كلّه في 4 فنجد 16√5.",
+      "difficulty": 2,
+      "competencies": ["math.geo.thales-direct"]
+    },
+    {
+      "prompt": "H نقطة من القطعة [BI] التي طولها 2√5 cm، وتحقّق\nHI/HB = 1/4\nما طول [HB] بالصنتمتر ؟\n<svg viewBox=\"0 0 330 200\"><title>القطعة [BI] والنقطة H منها والقطعة [HB]</title><polygon points=\"26,169.5 304,169.5 304,30.5 26,30.5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M234.5 30.5 L248.4 58.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M248.4 58.3 L304 169.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"169.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"304\" cy=\"169.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"304\" cy=\"30.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"26\" cy=\"30.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"234.5\" cy=\"30.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"248.4\" cy=\"58.3\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"178.19\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">A</text><text x=\"317.04\" y=\"178.19\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">B</text><text x=\"307.49\" y=\"22.66\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">C</text><text x=\"22.51\" y=\"22.66\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">D</text><text x=\"234.5\" y=\"22.2\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"260.09\" y=\"56.75\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√5/2",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "b",
+          "text": "2√5/5",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "8√5"
+        },
+        {
+          "id": "d",
+          "text": "8√5/5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "H من [BI] فـ HB + HI = BI. ومن HI/HB = 1/4 نجد HB = 4 × HI، إذن 5 × HI = BI = 2√5، فـ HI = 2√5/5 و HB = 4 × 2√5/5 = 8√5/5 cm ✓. الخطأ الشائع: اعتبار 1/4 نسبة HI إلى [BI] كلّها فنجد HI = 2√5/4 = √5/2 ثمّ HB = 2√5 − √5/2 = 3√5/2؛ أو إعطاء طول [HI] وهو 2√5/5 بدل [HB]؛ أو ضرب طول [BI] كلّه في 4 فنجد HB = 4 × 2√5 = 8√5.",
+      "difficulty": 2,
+      "competencies": ["math.geo.thales-direct"]
+    },
+    {
+      "prompt": "ABCD مستطيل بعداه AB = 8 cm و BC = 4 cm، والنقطة H نقطة تقاطع المستقيمين (AC) و (BI) حيث HC = 4√5/5 cm و HB = 8√5/5 cm.\nأيّ التعليلات التالية يثبت أنّ (AC) ⊥ (BI) ؟\n<svg viewBox=\"0 0 330 200\"><title>المثلّث HBC داخل المستطيل ABCD</title><polygon points=\"26,169.5 304,169.5 304,30.5 26,30.5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"248.4,58.3 304,169.5 304,30.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 169.5 L248.4 58.3\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M248.4 58.3 L234.5 30.5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"169.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"26\" cy=\"30.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"304\" cy=\"169.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"304\" cy=\"30.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"234.5\" cy=\"30.5\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"248.4\" cy=\"58.3\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"178.19\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">A</text><text x=\"22.51\" y=\"22.66\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">D</text><text x=\"317.04\" y=\"178.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"307.49\" y=\"22.66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"234.5\" y=\"22.2\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"15\">I</text><text x=\"251.89\" y=\"50.46\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "في المثلّث HBC القائم في H لأنّ (AC) ⊥ (BI)، فبنظرية فيثاغورس HC² + HB² = BC²، إذن (AC) ⊥ (BI)",
+          "misconceptionTag": "math.geo.pythagore-reciproque-role"
+        },
+        {
+          "id": "b",
+          "text": "في المثلّث HBC: HC² + HB² = 16/5 + 64/5 = 16 = BC²، فبعكس نظرية فيثاغورس يكون قائمًا في H، إذن (AC) ⊥ (BI)"
+        },
+        {
+          "id": "c",
+          "text": "في المثلّث ABC: AB² + BC² = 64 + 16 = 80 = AC²، فبعكس نظرية فيثاغورس يكون قائمًا في B، إذن (AC) ⊥ (BI)",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "في المثلّث HBC: HC² + HB² = 16/5 + 64/5 = 16 = BC²، فبعكس نظرية فيثاغورس يكون قائمًا في B، إذن (AC) ⊥ (BI)",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نحسب HC² = (4√5/5)² = 16 × 5/25 = 16/5 و HB² = (8√5/5)² = 64 × 5/25 = 64/5، فـ HC² + HB² = 80/5 = 16 = BC². بعكس نظرية فيثاغورس المثلّث HBC قائم، وزاويته القائمة عند الرأس المقابل للضلع [BC] أي عند H، فالمستقيمان (HC) و (HB) متعامدان، أي (AC) ⊥ (BI) ✓. الخطأ الشائع: وضع الزاوية القائمة عند رأس غير H، أو استعمال المثلّث ABC الذي زاويته القائمة في B ولا يخصّ تعامد (AC) و (BI)، أو استعمال نظرية فيثاغورس المباشرة التي تفترض التعامد المطلوب إثباته.",
+      "difficulty": 3,
+      "competencies": ["math.geo.pythagore"]
+    },
+    {
+      "prompt": "ABCD مستطيل مركزه O حيث AB = 8 cm و BC = 4 cm، والنقطة J منتصف [BC].\nأيّ التعليلات التالية يثبت أنّ (OJ) ⊥ (BC) ؟\n<svg viewBox=\"0 0 330 200\"><title>المستطيل ABCD ومركزه O ومنتصف J للضلع [BC] والقطعة [OJ]</title><polygon points=\"26,169.5 304,169.5 304,30.5 26,30.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 169.5 L304 30.5\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M165 100 L304 100\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M295 169.5 L295 160.5 L304 160.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"169.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"304\" cy=\"169.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"304\" cy=\"30.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"30.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"165\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"304\" cy=\"100\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"178.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"317.04\" y=\"178.19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"307.49\" y=\"22.66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"22.51\" y=\"22.66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"158.25\" y=\"93.51\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"317.5\" y=\"105.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "O منتصف [AC] و J منتصف [BC]، فبخاصيّة المنتصفين في المثلّث ABC يكون OJ = AB/2 = 4 cm، و (AB) ∥ (DC)، إذن (OJ) ⊥ (BC)"
+        },
+        {
+          "id": "b",
+          "text": "O منتصف [AC] و J منتصف [BC]، فبخاصيّة المنتصفين في المثلّث ABC يكون OJ = AB/2 = 4 cm، و (AB) ⊥ (BC)، إذن (OJ) ⊥ (BC)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "O منتصف [AC] و J منتصف [BC]، فبخاصيّة المنتصفين في المثلّث ABC يكون (OJ) ∥ (AB)، و (AB) ∥ (DC)، إذن (OJ) ⊥ (BC)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "O منتصف [AC] و J منتصف [BC]، فبخاصيّة المنتصفين في المثلّث ABC يكون (OJ) ∥ (AB)، و (AB) ⊥ (BC)، إذن (OJ) ⊥ (BC)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "O مركز المستطيل فهو منتصف القطر [AC]، و J منتصف [BC]. في المثلّث ABC يصل المستقيم (OJ) بين منتصفي ضلعين، فهو يوازي الضلع الثالث [AB]. وبما أنّ (AB) ⊥ (BC) في المستطيل، فإنّ (OJ) ⊥ (BC) ✓. المعطيات في الخيارات الأخرى صحيحة، لكنّ استدلالها غير كافٍ. الخطأ الشائع: الاكتفاء بالطول OJ = AB/2 وهو لا يعطي اتّجاهًا، أو بتوازي (AB) و (DC) الذي لا يخصّ (BC)، أو بتوازي (OJ) و (AB) دون التعامد (AB) ⊥ (BC).",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres", "math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "في المستطيل ABCD الذي مركزه O، النقطة I من [CD] والنقطة J منتصف [BC]، والمستقيمان (BI) و (AC) متعامدان في H، والمستقيمان (OJ) و (BC) متعامدان، والنقطة K نقطة تقاطع (BI) و (OJ). نذكّر بأنّ ارتفاعات أيّ مثلّث تلتقي في نقطة واحدة، تُسمّى المركز القائم للمثلّث.\nأيّ التعليلات التالية يثبت أنّ (CK) ⊥ (OB) ؟\n<svg viewBox=\"0 0 330 200\"><title>المثلّث OBC والمستقيمان (BH) و (OJ) المتقاطعان في K والقطعة [CK]</title><polygon points=\"93,100 237,172 237,28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M237 172 L179.4 56.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93 100 L237 100\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M237 28 L201 100\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M183.42 64.85 L191.47 60.82 L187.45 52.78\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M228 100 L228 109 L237 109\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"93\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"237\" cy=\"172\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"237\" cy=\"28\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"179.4\" cy=\"56.8\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"237\" cy=\"100\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"201\" cy=\"100\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"83.45\" y=\"95.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"250.04\" y=\"180.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"237\" y=\"19.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"172.65\" y=\"50.31\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"250.5\" y=\"105.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">J</text><text x=\"194.25\" y=\"116.89\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(BK) هو (BI) وهو عمودي على (OC) لأنّ (OC) هو (AC)، و (OK) هو (OJ) وهو عمودي على (BC)، فهما ارتفاعان في المثلّث OBC يتقاطعان في K، إذن (CK) ⊥ (OB)"
+        },
+        {
+          "id": "b",
+          "text": "(BK) و (OK) موسّطان في المثلّث OBC يتقاطعان في K، فـ K مركز ثقله وهو على كلّ موسّط، و (CK) هو الموسّط الثالث فيه، إذن (CK) ⊥ (OB)",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "c",
+          "text": "(BK) هو (BI) وهو عمودي على (OC) لأنّ (OC) هو (AC)، فهو ارتفاع في المثلّث OBC يمرّ بالنقطة K، والارتفاع الصادر من C يمرّ بالنقطة K أيضًا، إذن (CK) ⊥ (OB)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "K نقطة تقاطع (BI) و (OJ)، وكلّ مستقيمين يتقاطعان في نقطة من المثلّث OBC ارتفاعان فيه، فـ K نقطة تلاقي ارتفاعاته الثلاثة، إذن (CK) ⊥ (OB)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "K نقطة من (BI) فـ (BK) هو (BI)، وهو عمودي على (AC) أي على (OC) لأنّ O من (AC): فـ (BK) ارتفاع في المثلّث OBC. و (OK) هو (OJ) وهو عمودي على (BC): فـ (OK) ارتفاع ثانٍ في المثلّث OBC. الارتفاعان (BK) و (OK) يتقاطعان في K، وارتفاعات المثلّث الثلاثة متلاقية في نقطة واحدة، فارتفاعه الثالث الصادر من C يمرّ بـ K أيضًا، أي أنّه (CK)، ومنه (CK) ⊥ (OB) ✓. الخطأ الشائع: الخلط بين الارتفاع والموسّط فنعدّ K مركز ثقل، أو الاكتفاء بارتفاع واحد، أو عدّ أيّ مستقيمين متقاطعين ارتفاعين دون التحقّق من تعامدهما مع الضلعين.",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "في المثلّث OBC: OB = OC = 2√5 cm و BC = 4 cm. النقطة J منتصف [BC] و (OJ) عمودي على (BC) حيث OJ = 4 cm، والنقطة L المسقط العمودي للنقطة C على (OB).\nما طول [CL] بالصنتمتر ؟\n<svg viewBox=\"0 0 330 200\"><title>المثلّث OBC والارتفاعان [OJ] و [CL]</title><polygon points=\"91,100 239,174 239,26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M91 100 L239 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M239 26 L179.8 144.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M230 100 L230 109 L239 109\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M183.82 136.35 L175.78 132.33 L171.75 140.38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"91\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"239\" cy=\"174\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"239\" cy=\"26\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"239\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"179.8\" cy=\"144.4\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"81.45\" y=\"95.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"252.04\" y=\"182.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"239\" y=\"17.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"252.5\" y=\"105.2\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">J</text><text x=\"173.05\" y=\"161.29\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√5",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "8√5/5"
+        },
+        {
+          "id": "d",
+          "text": "4√5/5",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب مساحة المثلّث OBC بطريقتين. بالقاعدة [BC] وارتفاعها [OJ]: (BC × OJ)/2 = (4 × 4)/2 = 8 cm². وبالقاعدة [OB] وارتفاعها [CL]: (OB × CL)/2 = (2√5 × CL)/2 = √5 × CL. إذن √5 × CL = 8، ومنه CL = 8/√5 = 8√5/5 cm ✓. الخطأ الشائع: أخذ الارتفاع [OJ] الصادر من O بدل [CL] فنجد 4، أو عدّ [OB] نفسه ارتفاعًا فنجد 2√5، أو نسيان القسمة على 2 في صيغة المساحة الثانية فنساوي 8 = OB × CL ونجد 4√5/5.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires", "math.geo.relations-metriques"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "المثلّث CLB قائم في L حيث BC = 4 cm و CL = 8√5/5 cm.\nاحسب مساحة المثلّث CLB بالسنتمتر المربّع، ثمّ اكتب قيمتها.\n<svg viewBox=\"0 0 300 190\"><title>المثلّث CLB القائم في L</title><polygon points=\"176,30 124,134 176,160\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"176,30 124,134 176,160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M128.02 125.95 L136.07 129.98 L132.05 138.02\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"176\" cy=\"160\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"176\" cy=\"30\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"124\" cy=\"134\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"189.04\" y=\"168.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"176\" y=\"21.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"110.96\" y=\"135.71\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">L</text></g></svg>",
+      "answerKey": {
+        "value": 3.2,
+        "unit": "cm²"
+      },
+      "explanation": "المثلّث CLB قائم في L ووتره [BC]. بفيثاغورس: BL² = BC² − CL² = 16 − 64/5 = 16/5، إذن BL = 4/√5 = 4√5/5 cm. ومساحته (CL × BL)/2 = (8√5/5 × 4√5/5)/2 = (32/5)/2 = 16/5 = 3,2 cm² ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد 32/5 = 6,4، أو جعل [BC] قاعدة و [CL] ارتفاعًا مع أنّ [BC] هو الوتر فنجد (4 × 8√5/5)/2 = 16√5/5.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires", "math.geo.pythagore"]
+    }
+  ]
+}
