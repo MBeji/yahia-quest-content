@@ -392,3 +392,16 @@ finie ; un doute de droits sur un document ⇒ il sort de l'échantillon, sans d
   « ° » s'isole (arena#1160) ; trois avis npm corrigés (arena#1159). La limite de session a coupé tous
   les agents trois fois depuis le 2 octobre (la dernière le 10 vers 18 h 15 UTC) : repris par message
   après la réouverture, ils n'ont rien perdu de ce qu'ils avaient écrit dans leurs fichiers.
+- **2026-10-12 — Fusion avec la campagne « 9ᵉ au patron » : une seule session, un seul passage par
+  couple** (décision du propriétaire). Les deux sessions qui portaient l'une le patron (cours
+  réécrits sur le manuel, étiquetés, armés), l'autre le gisement, sont fermées ; une session unique
+  reprend les deux à partir de [`FableEtudes/PILOTAGE.md`](../PILOTAGE.md), désormais seul point
+  d'entrée (tableau de bord par couple, file d'attente, règles anti-doublon). Pour chaque couple
+  restant, la lecture du manuel, des sujets et des devoirs se fait en une passe, chaque chapitre
+  reçoit en une fois son cours et ses missions, puis une seule passe d'étiquettes, un seul audit et
+  une seule publication. L'état des lots de cette étude reste dans `en-cours/ETAT-REPRISE.md`
+  (branche `wip/gisement-9eme-lots-en-ecriture`) et dans les registres `gisement.json` ; l'arabe 9ᵉ
+  (réalignement fini, audits et étiquettes en cours) est sur `wip/arabe-9eme-patron` — son
+  chapitre 11 et ses missions se feront dans le même passage, après la publication du patron. Le
+  contexte lecteur `en-cours/lecture-9eme/arabe/reader-context.md` liste l'ancien chapitrage : à
+  régénérer depuis le manifeste avant toute lecture de sujet d'arabe.

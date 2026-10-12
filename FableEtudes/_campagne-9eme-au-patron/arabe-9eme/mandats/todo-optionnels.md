@@ -1,0 +1,1 @@
+- 01-i3rab-wal-bina : aligner le classement des phrases à ناسخ sur le manuel (p.23 : la phrase à ناسخ reste اسميّة) — signalé par le ch.15 (04-defi#3).
