@@ -35,24 +35,24 @@
     {
       "prompt": "أيّ العلاقات التالية صحيحة لكلّ عدد حقيقي x ؟",
       "options": [
+        { "id": "a", "text": "√(x²) = |x| لأنّ الجذر موجب دائمًا" },
         {
-          "id": "a",
+          "id": "b",
           "text": "√(x²) = x لأنّ الجذر يلغي المربّع",
           "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
         },
         {
-          "id": "b",
+          "id": "c",
           "text": "(√x)² = x لأنّ المربّع يلغي الجذر",
           "misconceptionTag": "math.num.racine-negatif-existe"
         },
-        { "id": "c", "text": "√(x²) = |x| لأنّ الجذر موجب دائمًا" },
         {
           "id": "d",
           "text": "√(x²) = −x لأنّ الجذر يغيّر الإشارة",
           "misconceptionTag": "math.num.valeur-absolue-toujours-oppose"
         }
       ],
-      "correctOption": "c",
+      "correctOption": "a",
       "explanation": "الجذر التربيعي موجب أو معدوم دائمًا، فـ √(x²) = |x|: يساوي x إذا كان x موجبًا و−x إذا كان سالبًا. مثال: √((−3)²) = √9 = 3 = |−3|. أمّا (√x)² = x فلا تصحّ إلّا إذا كان x موجبًا أو معدومًا، لأنّ √x غير معرّف في ℝ حين يكون x سالبًا. الأخطاء الشائعة: اعتبار √(x²) = x دائمًا فيُهمل أنّ x قد يكون سالبًا ؛ أو اعتبار √(x²) = −x دائمًا ؛ أو تطبيق (√x)² = x على عدد سالب.",
       "difficulty": 3,
       "competencies": ["math.num.racines-definition"]
@@ -100,10 +100,10 @@
           "text": "√3 × √6",
           "misconceptionTag": "math.num.racine-produit-transforme-en-somme"
         },
-        { "id": "c", "text": "√30 ÷ √5" },
-        { "id": "d", "text": "√3 × √12" }
+        { "id": "c", "text": "√3 × √12" },
+        { "id": "d", "text": "√30 ÷ √5" }
       ],
-      "correctOption": "d",
+      "correctOption": "c",
       "explanation": "نحسب كلّ عبارة بدل أن نحكم عليها من شكلها: √3 × √12 = √36 = 6، وهو عدد صحيح. أمّا √20 + √5 = 2√5 + √5 = 3√5 فعدد أصمّ ، و√3 × √6 = √18 = 3√2 أصمّ ، و√30 ÷ √5 = √6 أصمّ. الأخطاء الشائعة: جمع ما تحت الجذرين فيُكتب √20 + √5 = √25 = 5 ؛ أو √3 × √6 = √(3 + 6) = √9 = 3 ؛ أو √30 ÷ √5 = √(30 − 5) = √25 = 5 — فتبدو هذه العبارات صحيحة وهي ليست كذلك.",
       "difficulty": 3,
       "competencies": ["math.num.racines-calcul"]

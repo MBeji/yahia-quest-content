@@ -49,14 +49,14 @@
           "text": "10√3 cm",
           "misconceptionTag": "math.num.racine-distribuee-sur-somme"
         },
+        { "id": "c", "text": "14√3 cm" },
         {
-          "id": "c",
+          "id": "d",
           "text": "14√6 cm",
           "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne"
-        },
-        { "id": "d", "text": "14√3 cm" }
+        }
       ],
-      "correctOption": "d",
+      "correctOption": "c",
       "explanation": "نبسّط البعدين: √27 = 3√3 و√48 = 4√3. المحيط = 2 × (3√3 + 4√3) = 2 × 7√3 = 14√3 cm. الأخطاء الشائعة: نسيان مضاعفة المجموع (للمستطيل طولان وعرضان) فينتج 7√3 ؛ أو جمع ما تحت الجذرين √27 + √48 = √75 = 5√3 ثمّ المضاعفة فينتج 10√3 ؛ أو جمع ما تحت الجذر بعد التبسيط 3√3 + 4√3 = 7√6 فينتج 14√6.",
       "difficulty": 3,
       "competencies": ["math.num.racines-calcul", "math.mes.perimetres"]
@@ -83,14 +83,14 @@
       "competencies": ["math.num.racines-calcul", "math.alg.developpement"]
     },
     {
-      "prompt": "ما قيمة العدد التالي؟\n5√3 / (2√27 / 5)",
+      "prompt": "ما قيمة العدد التالي؟\n(5√3) / ((2√27) / 5)",
       "options": [
         { "id": "a", "text": "18", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "b", "text": "5/6" },
-        { "id": "c", "text": "25/6" },
+        { "id": "b", "text": "25/6" },
+        { "id": "c", "text": "5/6" },
         { "id": "d", "text": "25√3/6" }
       ],
-      "correctOption": "c",
+      "correctOption": "b",
       "explanation": "نبسّط أوّلًا: √27 = 3√3 فيكون 2√27 = 6√3 ويصير المقام 6√3 / 5. القسمة على كسر هي الضرب في مقلوبه: 5√3 ÷ (6√3 / 5) = 5√3 × 5 / (6√3) = 25√3 / (6√3) = 25/6، لأنّ √3 يُختصر. الأخطاء الشائعة: الضرب في الكسر بدل القسمة عليه فيخرج 5√3 × (6√3 / 5) = 18 ؛ أو إهمال القسمة على 5 في المقام فيخرج 5/6 ؛ أو إهمال √3 في المقام فلا يُختصر ويخرج 25√3/6.",
       "difficulty": 3,
       "competencies": ["math.num.racines-calcul"]
