@@ -48,7 +48,7 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 
 | Couple | Fiche / manuel | Cours au patron | Étiquettes | Audit | Gisement : examens | Gisement : devoirs | En cours · prochaine action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| maths (`math`) | ✅ 102905 lu | ✅ armé ; ⏳ 01–02 recentrés le 2026-10-12 (pas encore audités ni mergés) | ✅ | ✅ (01–02 : ❌) | ⏳ L01–L16, L18–L20 publiés (184 missions) ; **L17** (ch. 18, 63 q) écrit, gates et étiquettes à finir ; L21 (ch. 09), L22 (ch. 07/12/18) planifiés | ⏳ devoirs du 1ᵉʳ trimestre publiés ; G2 (ch. 04) et I (ch. 09, après L21) planifiés — 10 missions `planifiee` | **réservé** session unique (2026-10-12) : L17 gates passées (0 erreur qa, clé la plus longue 1/52), audit opus à lancer (`plan/auditspec/L17.json`) ; lots : `wip/gisement-9eme-lots-en-ecriture` (PR #607), mode d'emploi dans `36-gisement-examens-devoirs/en-cours/ETAT-REPRISE.md` § « PASSAGE DE RELAIS » ; recentrage 01–02 : `wip/arabe-9eme-patron` → audit puis PR à part |
+| maths (`math`) | ✅ 102905 lu | ✅ armé ; 01–02 recentrés et audités le 2026-10-12 (PR « maths 9ᵉ 01–02 », publication `math` à vérifier) | ✅ | ✅ (01–02 : audit opus du 2026-10-12, `_campagne-9eme-au-patron/maths-9eme/rapport-audit-recentrage.md`) | ⏳ L01–L16, L18–L20 publiés (184 missions) ; **L17** (ch. 18, 63 q) écrit, gates et étiquettes à finir ; L21 (ch. 09), L22 (ch. 07/12/18) planifiés | ⏳ devoirs du 1ᵉʳ trimestre publiés ; G2 (ch. 04) et I (ch. 09, après L21) planifiés — 10 missions `planifiee` | **réservé** session unique (2026-10-12) : L17 gates passées (0 erreur qa, clé la plus longue 1/52), audit opus à lancer (`plan/auditspec/L17.json`) ; lots : `wip/gisement-9eme-lots-en-ecriture` (PR #607), mode d'emploi dans `36-gisement-examens-devoirs/en-cours/ETAT-REPRISE.md` § « PASSAGE DE RELAIS » |
 | SVT (`sciences-vie-terre`) | ✅ 105905 lu | ✅ armé le 2026-10-01 (14 ch. + 7 optionnels) | ✅ `bio.*` | ✅ | ⏳ L01, L02, L03 publiés (16 missions ; les 5 de L03 à basculer `publiee`) ; **L04** (7 missions, ch. 09–11) audité, corrections arbitrées à appliquer ; **L05** (4 missions, ch. 12) à écrire ; sessions 2019→2001 (C07–C24) à lire | ❌ D01–D06 | **réservé** session unique (2026-10-12) : tour de corrections L04 en cours ; même branche et même ETAT-REPRISE que les maths |
 | physique-chimie (`svt`) | ✅ 103902 lu | ✅ armé le 2026-09-28 | ✅ | ✅ | — écarté (é36 D-10 : pas d'épreuve en filière générale) | — | — |
 | arabe (`arabic`) | ✅ 101908 lu en entier, 101909 aux pages utiles (fiche `partielle` à dessein) | ⏳ 19 chapitres réalignés (5 neufs) ; rendu corrigé | ⏳ partie A prête (63 ids, 8 ch. de grammaire) ; partie B ❌ ; 01, 06, 11 ❌ | ⏳ A1, A2, A3 ✅ ; A4 : 09–10 ✅, 07–08 ❌ | ❌ 46 documents échantillonnés, 0 mission (chapitre 11 = annales) | ❌ | **réservé** session unique (2026-10-12) : audit A4 de 07–08 et vocabulaire partie B (+ 01, 06, 11) en cours ; branche `wip/arabe-9eme-patron` (PR #637 brouillon) ; notes : `FableEtudes/_campagne-9eme-au-patron/arabe-9eme/` |
@@ -84,13 +84,13 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
       registre `web-9eme-base-arabic/gisement.json`). ⚠️ le contexte lecteur
       `en-cours/lecture-9eme/arabe/reader-context.md` (étude 36) liste l'ANCIEN chapitrage : le
       régénérer depuis `manifest/9eme-base.json`.
-2. **Maths 9ᵉ 01–02** : audit indépendant opus du recentrage, puis PR séparée (`content/math/01-*`,
+2. ~~**Maths 9ᵉ 01–02**~~ audité et livré le 2026-10-12 (§4) — reste la publication `subjects=math` après merge ; était : audit indépendant opus du recentrage, puis PR séparée (`content/math/01-*`,
    `02-*` seulement), `apply-content` `subjects=math`. Rapport du recentrage au §4.
 3. **Gisement 9ᵉ restant**, chaque couple en un passage : maths (10 missions planifiées), SVT (L04,
    L05, lecture C07–C24, devoirs D01–D06), puis français, puis anglais.
 4. **6ᵉ** : `english-6eme` puis `french-6eme`, puis le gisement des couples 6ᵉ déjà armés. ⚠️ Mesure du 2026-10-12 : les fiches de maths (23 %), d'éveil (57 %) et d'arabe 6ᵉ (pas en profondeur R-5) sont sous la barre — `programme:etat` y interdit la génération ; leur gisement passe d'abord par le LOT A (compléter la fiche), à confirmer avec le propriétaire avant de l'ouvrir.
 
-## 4. Rapport du recentrage maths 9ᵉ (2026-10-12, non mergé)
+## 4. Rapport du recentrage maths 9ᵉ (2026-10-12, audité et livré le même jour)
 
 - `01-nombres-reels` (ch. 2 du manuel, p. 18–30) : 47 questions, 44 dans le chapitre, 3 hors (calcul
   dans ℝ, identité nommée) réécrites (02-boss#6, #7, 04-defi#5) ; le gros débordement signalé par la
@@ -101,9 +101,17 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
   conjugués reste, par double distributivité, p. 37) ; `coursePitfalls` : retrait de
   `math.geo.pythagore-sans-carres`, ajout de `math.num.radicaux-semblables-radicande-additionne`.
 - Contrôles : `content:qa` 0 erreur 0 avertissement sur math/01–02 ; tranche 0/101 clé la plus longue.
-- **À arbitrer** : « إنطاق المقام / المرافق » gardés (les ex. 16–17 p. 46–47 l'exigent, sans terme ni
-  encadré dans le manuel, ≈ 10 questions) ; missions de l'étude 36 hors chapitre : 01/08-devoir#6 et #7
-  (puissances 3²⁰²¹ → ch. 4), 01/08-devoir#1 (√27 = 3√3, forme a√b du ch. 3).
+- **Audit indépendant (opus, 2026-10-12)** : 92 questions re-résolues, 0 clé fausse ; 3 corrections dans 02
+  (04-defi#4 c « (√5 − 2) / 3 » ; piège de la simplification : « √50 = 2√5 بدل 5√2 » ; encadré 🗡️ sur
+  l'ordre des facteurs). Verdicts : 01 conforme, 02 conforme après corrections.
+- **« إنطاق المقام / المرافق » — tranché par la règle du métalangage du manuel** : le manuel exige la
+  technique (p. 37 n° 4 et 7, p. 46 ex. 16, p. 47 ex. 17) sans jamais nommer ces termes → la technique
+  reste (items de calcul), les termes ne figurent plus qu'en incise (cours, résumé) ; les deux
+  `short_answer` qui les faisaient nommer deviennent des `numeric` (02-pratique#6, 03-revision#7) ;
+  `manuel.pages` = « 27, 37, 39-40, 46-47 ».
+- Missions de l'étude 36 hors chapitre (constat, non touchées) : 01/08-devoir#6 (puissances 3²⁰²¹ → ch. 4)
+  hors chapitre ; #7 et #1 débordent légèrement (résultat donné / explication par √27 = 3√3). À reprendre
+  au prochain passage du gisement maths sur le ch. 01.
 
 ## 5. Pièges connus (cumul des deux campagnes)
 
