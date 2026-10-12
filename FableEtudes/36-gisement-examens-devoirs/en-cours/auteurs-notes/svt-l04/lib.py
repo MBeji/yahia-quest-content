@@ -6,9 +6,9 @@ lettre d'option citée dans une explication, étiquettes déclarées au registre
 """
 import json, os, re, sys
 
-BASE = '/home/user/yahia-quest-content/content/sciences-vie-terre'
+BASE = '/home/user/wt-gis/content/sciences-vie-terre'
 WORK = '/tmp/claude-0/-home-user/b03814da-e5f9-5a74-bf03-e7c23b20207a/scratchpad/svt-l04-work'
-REG = json.load(open(WORK + '/misconceptions.main.json', encoding='utf-8'))
+REG = json.load(open('/tmp/claude-0/-home-user-yahia-quest-content/973107ae-1cd3-5286-9aad-458ef39f3138/scratchpad/misconceptions.main.json', encoding='utf-8'))
 
 DIAC = re.compile('[ً-ٰٟـ]')
 AR_INDIC = re.compile('[٠-٩۰-۹]')

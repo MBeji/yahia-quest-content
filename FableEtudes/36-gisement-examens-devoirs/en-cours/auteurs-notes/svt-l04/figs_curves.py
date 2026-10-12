@@ -91,7 +91,7 @@ def fig_curves():
     b.append(label(246, 26, 'X', 13, DARK, 'start'))
     b.append('<line x1="%s" y1="%s" x2="%s" y2="%s" stroke="%s" stroke-width="3" stroke-dasharray="1.5 4" stroke-linecap="round"/>' % (f(212), f(40), f(238), f(40), GREEN))
     b.append(label(246, 44, 'Y', 13, GREEN, 'start'))
-    t = ('منحنيان لتطوّر تركيز العنصرين X وY بوحدة غرام في اللتر عبر أربع مناطق متتالية على مسار البول، '
+    t = ('منحنيان لتطوّر تركيز العنصرين X وY بوحدة غرام في اللتر عبر أربع مناطق متتالية في الكلية، '
          'من اليسار إلى اليمين: الكبيبة ثمّ المنطقة أ ثمّ المنطقة ب ثمّ القناة الجامعة')
     return svg(W, H, t, ''.join(b))
 
