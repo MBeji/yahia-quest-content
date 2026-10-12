@@ -598,6 +598,11 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 18
     اسميّة **بسيطة / مركّبة** définie par son خبر (L104, critère de l'إسناد الفرعيّ de L3) ; la table p. 33 donne
     « يا » comme حرف ندبة quand le texte a « وا » (le cours enseigne « وا »).
   - **Décompte** : la leçon 15 nomme **quinze** حروف مقترنة بالفعل, non quatorze.
+  - **Chapitre 10 (دراسة نصّ حجاجيّ)** : la division « الأطروحة / سيرورة الحجاج / الاستنتاج » est lue avec
+    l'أطروحة = المدحوضة + المثبتة, convention alignée sur le ch. 09 mais non vérifiée sur un barème officiel ; les
+    items de jugement critique (« أبدي رأيي ») sont par nature moins déterministes, chacun repose sur un critère
+    enseigné (التنوّع، الكفاية، الصلة، ردّ الخصم) — à faire relire par un arabisant ; les chiffres des textes
+    d'appui sont inventés pour l'exercice.
   - **Audit A1 (ch. 15, 04, 16, 17 — 140 questions re-résolues)** : 1 clé fausse et 1 item sans bonne option au
     ch. 17 (un اسم شرط placé après un verbe, ce que la p. 80 exclut), 2 items à double réponse (04, 16) ;
     tout est corrigé. Restent des nuances : التماس = d'égal à égal (une demande polie d'un inférieur à un supérieur
