@@ -40,7 +40,7 @@ Règles qui empêchent le double travail :
    à un `:::` (Prettier le casse) — rendre chaque cours touché avec `renderLesson` et chercher
    `&gt;`, `**`, `:::` résiduels.
 
-## 2. Tableau de bord (état mesuré le 2026-10-12)
+## 2. Tableau de bord (état mesuré le 2026-10-12 ; colonne « Fiche » de la 6ᵉ re-mesurée par `programme:etat` le 2026-10-12 à 17 h UTC)
 
 Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 
@@ -48,10 +48,10 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 
 | Couple | Fiche / manuel | Cours au patron | Étiquettes | Audit | Gisement : examens | Gisement : devoirs | En cours · prochaine action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| maths (`math`) | ✅ 102905 lu | ✅ armé ; ⏳ 01–02 recentrés le 2026-10-12 (pas encore audités ni mergés) | ✅ | ✅ (01–02 : ❌) | ⏳ L01–L16, L18–L20 publiés (184 missions) ; **L17** (ch. 18, 63 q) écrit, gates et étiquettes à finir ; L21 (ch. 09), L22 (ch. 07/12/18) planifiés | ⏳ devoirs du 1ᵉʳ trimestre publiés ; G2 (ch. 04) et I (ch. 09, après L21) planifiés — 10 missions `planifiee` | lots : `wip/gisement-9eme-lots-en-ecriture` (PR #607), mode d'emploi dans `36-gisement-examens-devoirs/en-cours/ETAT-REPRISE.md` § « PASSAGE DE RELAIS » ; recentrage 01–02 : `wip/arabe-9eme-patron` → audit puis PR à part |
-| SVT (`sciences-vie-terre`) | ✅ 105905 lu | ✅ armé le 2026-10-01 (14 ch. + 7 optionnels) | ✅ `bio.*` | ✅ | ⏳ L01, L02, L03 publiés (16 missions ; les 5 de L03 à basculer `publiee`) ; **L04** (7 missions, ch. 09–11) audité, corrections arbitrées à appliquer ; **L05** (4 missions, ch. 12) à écrire ; sessions 2019→2001 (C07–C24) à lire | ❌ D01–D06 | même branche et même ETAT-REPRISE que les maths |
+| maths (`math`) | ✅ 102905 lu | ✅ armé ; ⏳ 01–02 recentrés le 2026-10-12 (pas encore audités ni mergés) | ✅ | ✅ (01–02 : ❌) | ⏳ L01–L16, L18–L20 publiés (184 missions) ; **L17** (ch. 18, 63 q) écrit, gates et étiquettes à finir ; L21 (ch. 09), L22 (ch. 07/12/18) planifiés | ⏳ devoirs du 1ᵉʳ trimestre publiés ; G2 (ch. 04) et I (ch. 09, après L21) planifiés — 10 missions `planifiee` | **réservé** session unique (2026-10-12) : L17 gates passées (0 erreur qa, clé la plus longue 1/52), audit opus à lancer (`plan/auditspec/L17.json`) ; lots : `wip/gisement-9eme-lots-en-ecriture` (PR #607), mode d'emploi dans `36-gisement-examens-devoirs/en-cours/ETAT-REPRISE.md` § « PASSAGE DE RELAIS » ; recentrage 01–02 : `wip/arabe-9eme-patron` → audit puis PR à part |
+| SVT (`sciences-vie-terre`) | ✅ 105905 lu | ✅ armé le 2026-10-01 (14 ch. + 7 optionnels) | ✅ `bio.*` | ✅ | ⏳ L01, L02, L03 publiés (16 missions ; les 5 de L03 à basculer `publiee`) ; **L04** (7 missions, ch. 09–11) audité, corrections arbitrées à appliquer ; **L05** (4 missions, ch. 12) à écrire ; sessions 2019→2001 (C07–C24) à lire | ❌ D01–D06 | **réservé** session unique (2026-10-12) : tour de corrections L04 en cours ; même branche et même ETAT-REPRISE que les maths |
 | physique-chimie (`svt`) | ✅ 103902 lu | ✅ armé le 2026-09-28 | ✅ | ✅ | — écarté (é36 D-10 : pas d'épreuve en filière générale) | — | — |
-| arabe (`arabic`) | ✅ 101908 lu en entier, 101909 aux pages utiles (fiche `partielle` à dessein) | ⏳ 19 chapitres réalignés (5 neufs) ; rendu corrigé | ⏳ partie A prête (63 ids, 8 ch. de grammaire) ; partie B ❌ ; 01, 06, 11 ❌ | ⏳ A1, A2, A3 ✅ ; A4 : 09–10 ✅, 07–08 ❌ | ❌ 46 documents échantillonnés, 0 mission (chapitre 11 = annales) | ❌ | branche `wip/arabe-9eme-patron` (PR #637 brouillon) ; notes : `FableEtudes/_campagne-9eme-au-patron/arabe-9eme/` |
+| arabe (`arabic`) | ✅ 101908 lu en entier, 101909 aux pages utiles (fiche `partielle` à dessein) | ⏳ 19 chapitres réalignés (5 neufs) ; rendu corrigé | ⏳ partie A prête (63 ids, 8 ch. de grammaire) ; partie B ❌ ; 01, 06, 11 ❌ | ⏳ A1, A2, A3 ✅ ; A4 : 09–10 ✅, 07–08 ❌ | ❌ 46 documents échantillonnés, 0 mission (chapitre 11 = annales) | ❌ | **réservé** session unique (2026-10-12) : audit A4 de 07–08 et vocabulaire partie B (+ 01, 06, 11) en cours ; branche `wip/arabe-9eme-patron` (PR #637 brouillon) ; notes : `FableEtudes/_campagne-9eme-au-patron/arabe-9eme/` |
 | français (`french`) | ✅ 121905 lu | ✅ armé le 2026-10-01 | ✅ `fr.*` | ✅ | ❌ 50 documents échantillonnés, 0 mission | ❌ | prochain couple du gisement après l'arabe |
 | anglais (`english`) | ✅ 141906 + 141907 lus | ✅ armé le 2026-09-28 | ✅ | ✅ | ❌ 48 documents échantillonnés, 0 mission | ❌ | après le français |
 
@@ -59,11 +59,11 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 
 | Couple | Fiche / manuel | Cours au patron | Étiquettes | Audit | Gisement | En cours · prochaine action |
 | --- | --- | --- | --- | --- | --- | --- |
-| maths (`math-6eme`) | ✅ (73 %) | ✅ armé | ✅ | ✅ | ❌ | gisement en un passage |
-| arabe (`arabic-6eme`) | ✅ | ✅ armé (19 ch.) | ✅ | ✅ | ❌ | gisement en un passage |
-| éveil scientifique | ✅ | ✅ armé | ✅ | ✅ | ❌ | gisement en un passage |
-| anglais (`english-6eme`) | à vérifier (`programme:etat`) | ⏳ écrit, pas armé | ❌ | ❌ | ❌ | patron + étiquettes + armement + gisement **en un seul passage** |
-| français 6ᵉ | ❌ fiche partielle | ❌ la matière n'existe pas | — | — | ❌ | LOT A, puis tout le reste en un passage |
+| maths (`math-6eme`) | ⚠️ fiche `partielle/mixte`, 23 % (502603 et 102609 à trous) — `programme:etat` : génération interdite, contenu généré sous la barre R-5 | ✅ armé | ✅ | ✅ | ❌ | **LOT A d'abord** (compléter la fiche), puis gisement en un passage |
+| arabe (`arabic-6eme`) | ⚠️ fiche `partielle/generation`, 100 % mais pas en profondeur R-5 — génération interdite | ✅ armé (19 ch.) | ✅ | ✅ | ❌ | profondeur R-5 de la fiche, puis gisement en un passage |
+| éveil scientifique | ⚠️ fiche `partielle/mixte`, 57 % (503604 p. 103–180 à trous) — génération interdite | ✅ armé | ✅ | ✅ | ❌ | **LOT A d'abord**, puis gisement en un passage |
+| anglais (`english-6eme`) | ✅ `validee-r7`, 100 % — génération autorisée | ⏳ écrit (7/7 ch.), pas armé | ❌ | ❌ | ❌ | patron + étiquettes + armement + gisement **en un seul passage** |
+| français 6ᵉ | ❌ fiche `partielle/mixte`, 14 % | ❌ la matière n'existe pas | — | — | ❌ | LOT A, puis tout le reste en un passage |
 
 ## 3. File d'attente (ordre arbitré par le propriétaire : la 9ᵉ finie avant tout, puis la 6ᵉ)
 
@@ -88,7 +88,7 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
    `02-*` seulement), `apply-content` `subjects=math`. Rapport du recentrage au §4.
 3. **Gisement 9ᵉ restant**, chaque couple en un passage : maths (10 missions planifiées), SVT (L04,
    L05, lecture C07–C24, devoirs D01–D06), puis français, puis anglais.
-4. **6ᵉ** : `english-6eme` puis `french-6eme`, puis le gisement des couples 6ᵉ déjà armés.
+4. **6ᵉ** : `english-6eme` puis `french-6eme`, puis le gisement des couples 6ᵉ déjà armés. ⚠️ Mesure du 2026-10-12 : les fiches de maths (23 %), d'éveil (57 %) et d'arabe 6ᵉ (pas en profondeur R-5) sont sous la barre — `programme:etat` y interdit la génération ; leur gisement passe d'abord par le LOT A (compléter la fiche), à confirmer avec le propriétaire avant de l'ouvrir.
 
 ## 4. Rapport du recentrage maths 9ᵉ (2026-10-12, non mergé)
 
