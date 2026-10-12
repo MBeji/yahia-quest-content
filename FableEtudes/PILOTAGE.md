@@ -48,10 +48,10 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 
 | Couple | Fiche / manuel | Cours au patron | Étiquettes | Audit | Gisement : examens | Gisement : devoirs | En cours · prochaine action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| maths (`math`) | ✅ 102905 lu | ✅ armé ; 01–02 recentrés et audités le 2026-10-12 (PR « maths 9ᵉ 01–02 », publication `math` à vérifier) | ✅ | ✅ (01–02 : audit opus du 2026-10-12, `_campagne-9eme-au-patron/maths-9eme/rapport-audit-recentrage.md`) | ⏳ L01–L16, L18–L20 publiés (184 missions) ; **L17** (ch. 18, 6 missions, 63 q) audité (0 clé fausse, 14 majeurs), corrigé, re-vérifié et livré le 2026-10-12 ; **L21** (ch. 09, 5 missions) écrit le 2026-10-12, en audit ; L22 (ch. 07/12/18) planifié | ⏳ devoirs du 1ᵉʳ trimestre publiés ; G2 (ch. 04) et I (ch. 09, après L21) planifiés — 10 missions `planifiee` | **réservé** session unique (2026-10-12) : L21 en audit, L22 après L17 publié ; lots : `wip/gisement-9eme-lots-en-ecriture` (PR #607), mode d'emploi dans `36-gisement-examens-devoirs/en-cours/ETAT-REPRISE.md` § « PASSAGE DE RELAIS » |
-| SVT (`sciences-vie-terre`) | ✅ 105905 lu | ✅ armé le 2026-10-01 (14 ch. + 7 optionnels) | ✅ `bio.*` | ✅ | ⏳ L01, L02, L03 publiés (16 missions `publiee`) ; **L04** (7 missions, ch. 09–11) corrigé, re-vérifié (0 clé fausse, 0 majeur) et livré le 2026-10-12 (PR « SVT-L04 », publication `sciences-vie-terre` à vérifier, puis bascule `publiee`) ; **L05** (4 missions, ch. 12) à écrire ; sessions 2019→2001 (C07–C24) à lire | ❌ D01–D06 | **réservé** session unique (2026-10-12) : L05 à écrire ; ⚠️ **dette mesurée le 2026-10-12** : sur `main`, la clé est strictement l'option la plus longue dans **665/1025 questions (65 %)** de la SVT 9ᵉ (positions a 34 % · b 47 % · c 14 % · d 5 %) — les items d'origine des cours (quiz, `01`–`06`), pas les missions d'examen ; passe de correction (`correction-cle-longue.md`) à faire dans le même passage du couple ; même branche et même ETAT-REPRISE que les maths |
+| maths (`math`) | ✅ 102905 lu | ✅ armé ; 01–02 recentrés, audités et publiés le 2026-10-12 (privé#660) | ✅ | ✅ (01–02 : audit opus du 2026-10-12, `_campagne-9eme-au-patron/maths-9eme/rapport-audit-recentrage.md`) | ⏳ L01–L16, L18–L20 publiés (184 missions) ; **L17** (ch. 18, 6 missions, 63 q) audité (0 clé fausse, 14 majeurs), corrigé, re-vérifié et livré le 2026-10-12 ; **L21** (ch. 09, 5 missions) écrit le 2026-10-12, en audit ; L22 (ch. 07/12/18) planifié | ⏳ devoirs du 1ᵉʳ trimestre publiés ; G2 (ch. 04) et I (ch. 09, après L21) planifiés — 10 missions `planifiee` | **réservé** session unique (2026-10-12) : L21 en audit, L22 après L17 publié ; lots : `wip/gisement-9eme-lots-en-ecriture` (PR #607), mode d'emploi dans `36-gisement-examens-devoirs/en-cours/ETAT-REPRISE.md` § « PASSAGE DE RELAIS » |
+| SVT (`sciences-vie-terre`) | ✅ 105905 lu | ✅ armé le 2026-10-01 (14 ch. + 7 optionnels) | ✅ `bio.*` | ✅ | ⏳ L01, L02, L03 publiés (16 missions `publiee`) ; **L04** (7 missions, ch. 09–11) corrigé, re-vérifié (0 clé fausse, 0 majeur) et publié le 2026-10-12 (privé#662 ; bascule `publiee` à la livraison de L05, `spec-pub-SVT-L04.json`) ; **L05** (4 missions, ch. 12) à écrire ; sessions 2019→2001 (C07–C24) à lire | ❌ D01–D06 | **réservé** session unique (2026-10-12) : L05 à écrire ; ⚠️ **dette mesurée le 2026-10-12** : sur `main`, la clé est strictement l'option la plus longue dans **665/1025 questions (65 %)** de la SVT 9ᵉ (positions a 34 % · b 47 % · c 14 % · d 5 %) — les items d'origine des cours (quiz, `01`–`06`), pas les missions d'examen ; passe de correction (`correction-cle-longue.md`) à faire dans le même passage du couple ; même branche et même ETAT-REPRISE que les maths |
 | physique-chimie (`svt`) | ✅ 103902 lu | ✅ armé le 2026-09-28 | ✅ | ✅ | — écarté (é36 D-10 : pas d'épreuve en filière générale) | — | — |
-| arabe (`arabic`) | ✅ 101908 lu en entier, 101909 aux pages utiles (fiche `partielle` à dessein) | ⏳ 19 chapitres réalignés (5 neufs) ; rendu corrigé | ⏳ partie A prête (63 ids, 8 ch. de grammaire) ; partie B ❌ ; 01, 06, 11 ❌ | ⏳ A1, A2, A3 ✅ ; A4 : 09–10 ✅, 07–08 ❌ | ❌ 46 documents échantillonnés, 0 mission (chapitre 11 = annales) | ❌ | **réservé** session unique (2026-10-12) : audit A4 de 07–08 et vocabulaire partie B (+ 01, 06, 11) en cours ; branche `wip/arabe-9eme-patron` (PR #637 brouillon) ; notes : `FableEtudes/_campagne-9eme-au-patron/arabe-9eme/` |
+| arabe (`arabic`) | ✅ 101908 lu en entier, 101909 aux pages utiles (fiche `partielle` à dessein) | ✅ 19 chapitres réalignés (5 neufs), armé `notion` le 2026-10-12 | ✅ 197 ids `arabe.*` neufs + 17 réutilisés, 1 446 options (73 %), `coursePitfalls` sur les 19 ch. | ✅ A1–A4 + A4b (07–08) ; fusion du vocabulaire relue (opus) | ❌ 46 documents échantillonnés, 0 mission (chapitre 11 = annales) | ❌ | livré le 2026-10-12 (PR « arabe 9ᵉ au patron ») ; **prochaine action : gisement arabe 9ᵉ en un passage** ; doutes ouverts : `etiquettes/rapport-fusion.md` §6 (12 pièges sans distracteur qui les porte), relecture native des 38 libellés neufs ou réécrits souhaitée |
 | français (`french`) | ✅ 121905 lu | ✅ armé le 2026-10-01 | ✅ `fr.*` | ✅ | ❌ 50 documents échantillonnés, 0 mission | ❌ | prochain couple du gisement après l'arabe |
 | anglais (`english`) | ✅ 141906 + 141907 lus | ✅ armé le 2026-09-28 | ✅ | ✅ | ❌ 48 documents échantillonnés, 0 mission | ❌ | après le français |
 
@@ -67,24 +67,14 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 
 ## 3. File d'attente (ordre arbitré par le propriétaire : la 9ᵉ finie avant tout, puis la 6ᵉ)
 
-1. **Arabe 9ᵉ — finir et publier le patron** (`wip/arabe-9eme-patron`) :
-   1. audit A4 des chapitres **07 et 08** (mandat `audits/audit-A4.md` ; 09 et 10 sont faits, voir
-      `rapport-A4.md`) ;
-   2. étiquettes : fusionner `vocab-arabe9-A.json` dans `misconceptions.json` (vérifier les doublons
-      avec les 122 `arabe.*` existants), lancer la partie B (`brief-vocab-B.md` : 12, 05, 13, 14, 09,
-      10, 07, 08) **et y ajouter 01, 06, 11** : l'essai d'armement du 2026-10-12 donne 19 erreurs, toutes
-      « pas de `coursePitfalls` » (C-5), aucune erreur de forme — les 19 chapitres doivent être tagués ;
-      puis la pose par lots (modèle : les mandats `tag-*.md` du français) ;
-   3. armer `coursePattern: "notion"` dans `content/arabic/subject.json`, `content:gates`,
-      `content:catalogue` (committer `CATALOGUE.md`) ;
-   4. livraison propre sur la branche désignée (recomposer : chapitres, programme, registre
-      d'étiquettes, tags, armement, notes), merge, `apply-content` `subjects=arabic`, `content-drift`
-      clos, fermer #634 et #637, ligne arabe 9ᵉ de `STATUS.md` (moteur) et de ce fichier ;
+1. ~~**Arabe 9ᵉ — finir et publier le patron**~~ livré le 2026-10-12 : A4 (07–08), vocabulaire A + B fusionné et
+   complété (02, 03, 19), 1 446 étiquettes, armement `notion`, gates vertes, rendu des 19 cours propre ; reste
+   la publication `subjects=arabic`, `content-drift` clos, fermer #634 et #637, `STATUS.md` du moteur ;
    5. puis le **gisement arabe 9ᵉ en un passage** (chapitre 11 annales + missions par chapitre ;
       registre `web-9eme-base-arabic/gisement.json`). ⚠️ le contexte lecteur
       `en-cours/lecture-9eme/arabe/reader-context.md` (étude 36) liste l'ANCIEN chapitrage : le
       régénérer depuis `manifest/9eme-base.json`.
-2. ~~**Maths 9ᵉ 01–02**~~ audité et livré le 2026-10-12 (§4) — reste la publication `subjects=math` après merge ; était : audit indépendant opus du recentrage, puis PR séparée (`content/math/01-*`,
+2. ~~**Maths 9ᵉ 01–02**~~ audité, livré et publié le 2026-10-12 (§4) ; était : audit indépendant opus du recentrage, puis PR séparée (`content/math/01-*`,
    `02-*` seulement), `apply-content` `subjects=math`. Rapport du recentrage au §4.
 3. **Gisement 9ᵉ restant**, chaque couple en un passage : maths (10 missions planifiées), SVT (L05,
    correction de la clé la plus longue (65 %), lecture C07–C24, devoirs D01–D06), puis français, puis anglais.

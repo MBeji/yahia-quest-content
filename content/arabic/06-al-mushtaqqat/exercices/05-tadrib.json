@@ -25,10 +25,10 @@
       "difficulty": 2,
       "prompt": "ما اسم الفاعل من الفعل «نصرَ»؟",
       "options": [
-        { "id": "a", "text": "مَنصور" },
+        { "id": "a", "text": "مَنصور", "misconceptionTag": "arabe.ishtiqaq.fa3il-maf3ul-ma3na" },
         { "id": "b", "text": "ناصِر" },
-        { "id": "c", "text": "نَصير" },
-        { "id": "d", "text": "نَصّار" }
+        { "id": "c", "text": "نَصير", "misconceptionTag": "arabe.ishtiqaq.sifa-mushabbaha-khalt" },
+        { "id": "d", "text": "نَصّار", "misconceptionTag": "arabe.ishtiqaq.fa3il-mubalagha-khalt" }
       ],
       "correctOption": "b",
       "explanation": "اسم الفاعل من الثلاثي يُصاغ على وزن «فاعِل»، فمن «نصرَ» نقول «ناصِر» (من يقوم بالنصر). أمّا «منصور» فاسم مفعول، و«نصير» صفة مشبّهة، و«نصّار» صيغة مبالغة."
@@ -37,9 +37,17 @@
       "difficulty": 2,
       "prompt": "ما وزن اسم المفعول من الفعل الثلاثي «فهمَ»؟",
       "options": [
-        { "id": "a", "text": "فاهِم (فاعِل)" },
+        {
+          "id": "a",
+          "text": "فاهِم (فاعِل)",
+          "misconceptionTag": "arabe.ishtiqaq.fa3il-maf3ul-ma3na"
+        },
         { "id": "b", "text": "مفهوم (مَفعول)" },
-        { "id": "c", "text": "فهيم (فعيل)" },
+        {
+          "id": "c",
+          "text": "فهيم (فعيل)",
+          "misconceptionTag": "arabe.ishtiqaq.sifa-mushabbaha-khalt"
+        },
         { "id": "d", "text": "مِفهام (مِفعال)" }
       ],
       "correctOption": "b",
@@ -49,10 +57,14 @@
       "difficulty": 1,
       "prompt": "أيّ الكلمات التالية صيغة مبالغة؟",
       "options": [
-        { "id": "a", "text": "عالِم" },
+        { "id": "a", "text": "عالِم", "misconceptionTag": "arabe.ishtiqaq.fa3il-mubalagha-khalt" },
         { "id": "b", "text": "علّامة" },
         { "id": "c", "text": "معلوم" },
-        { "id": "d", "text": "مَعلَم" }
+        {
+          "id": "d",
+          "text": "مَعلَم",
+          "misconceptionTag": "arabe.ishtiqaq.makan-ka-fa3il-aw-maf3ul"
+        }
       ],
       "correctOption": "b",
       "explanation": "«علّامة» على وزن «فعّالة» وهي من صيغ المبالغة الدالّة على كثرة العلم وشدّته. أمّا «عالِم» فاسم فاعل، و«معلوم» اسم مفعول، و«معلَم» اسم مكان."
@@ -62,8 +74,16 @@
       "prompt": "في «هذا الطريقُ مُعبَّدٌ»، ما نوع «مُعبَّد» والفارق بينه وبين «مُعبِّد»؟",
       "options": [
         { "id": "a", "text": "اسم مفعول من «عبّدَ» بفتح ما قبل الآخر، و«مُعبِّد» اسم فاعل بكسره" },
-        { "id": "b", "text": "اسم فاعل بفتح ما قبل الآخر" },
-        { "id": "c", "text": "صفة مشبّهة لا فرق فيها" },
+        {
+          "id": "b",
+          "text": "اسم فاعل بفتح ما قبل الآخر",
+          "misconceptionTag": "arabe.ishtiqaq.mazid-haraka-al-3ayn"
+        },
+        {
+          "id": "c",
+          "text": "صفة مشبّهة لا فرق فيها",
+          "misconceptionTag": "arabe.ishtiqaq.sifa-mushabbaha-khalt"
+        },
         { "id": "d", "text": "صيغة مبالغة" }
       ],
       "correctOption": "a",
@@ -73,9 +93,17 @@
       "difficulty": 3,
       "prompt": "في «مَوعِد» و«مِيزان» و«مَلعَب»، أيّ كلمة منها اسم آلة؟",
       "options": [
-        { "id": "a", "text": "مَوعِد (اسم زمان)" },
+        {
+          "id": "a",
+          "text": "مَوعِد (اسم زمان)",
+          "misconceptionTag": "arabe.ishtiqaq.mim-ala-maftuha"
+        },
         { "id": "b", "text": "مِيزان (اسم آلة على وزن مِفعال)" },
-        { "id": "c", "text": "مَلعَب (اسم مكان)" },
+        {
+          "id": "c",
+          "text": "مَلعَب (اسم مكان)",
+          "misconceptionTag": "arabe.ishtiqaq.mim-ala-maftuha"
+        },
         { "id": "d", "text": "جميعها أسماء آلة" }
       ],
       "correctOption": "b",

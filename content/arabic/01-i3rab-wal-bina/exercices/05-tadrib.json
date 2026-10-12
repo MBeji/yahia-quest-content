@@ -25,10 +25,22 @@
       "difficulty": 2,
       "prompt": "في «سلّمتُ على المعلّمينَ»، ما علامة جرّ «المعلّمينَ»؟",
       "options": [
-        { "id": "a", "text": "الكسرة لأنّه اسم مفرد" },
+        {
+          "id": "a",
+          "text": "الكسرة لأنّه اسم مفرد",
+          "misconceptionTag": "arabe.i3rab.haraka-bada-harf"
+        },
         { "id": "b", "text": "الياء لأنّه جمع مذكّر سالم" },
-        { "id": "c", "text": "الفتحة لأنّه ممنوع من الصرف" },
-        { "id": "d", "text": "الألف لأنّه مثنّى" }
+        {
+          "id": "c",
+          "text": "الفتحة لأنّه ممنوع من الصرف",
+          "misconceptionTag": "arabe.i3rab.mamnu3-sabab-khalt"
+        },
+        {
+          "id": "d",
+          "text": "الألف لأنّه مثنّى",
+          "misconceptionTag": "arabe.i3rab.harf-ghayr-munasib"
+        }
       ],
       "correctOption": "b",
       "explanation": "«المعلّمين» جمع مذكّر سالم مجرور بحرف الجرّ «على»، وعلامة جرّه الياء نيابة عن الكسرة. والكسرة علامة جرّ الاسم المفرد لا الجمع السالم."
@@ -37,8 +49,16 @@
       "difficulty": 2,
       "prompt": "في «لن أتأخّرَ عن الموعدِ»، ما إعراب «أتأخّرَ»؟",
       "options": [
-        { "id": "a", "text": "فعل مضارع مرفوع بالضمّة" },
-        { "id": "b", "text": "فعل مضارع مجزوم بالسكون" },
+        {
+          "id": "a",
+          "text": "فعل مضارع مرفوع بالضمّة",
+          "misconceptionTag": "arabe.fi3l.hukm-bil-haraka"
+        },
+        {
+          "id": "b",
+          "text": "فعل مضارع مجزوم بالسكون",
+          "misconceptionTag": "arabe.fi3l.hukm-bil-haraka"
+        },
         { "id": "c", "text": "فعل مضارع منصوب بالفتحة لأنّ «لن» أداة نصب" },
         { "id": "d", "text": "فعل ماضٍ مبنيّ على الفتح" }
       ],
@@ -49,10 +69,10 @@
       "difficulty": 1,
       "prompt": "أيّ الكلمات التالية مبنيّ من الأسماء؟",
       "options": [
-        { "id": "a", "text": "الكتابُ" },
+        { "id": "a", "text": "الكتابُ", "misconceptionTag": "arabe.i3rab.mabni-mu3rab-khalt" },
         { "id": "b", "text": "هذا" },
-        { "id": "c", "text": "مدرسةٌ" },
-        { "id": "d", "text": "تلميذٌ" }
+        { "id": "c", "text": "مدرسةٌ", "misconceptionTag": "arabe.i3rab.mabni-mu3rab-khalt" },
+        { "id": "d", "text": "تلميذٌ", "misconceptionTag": "arabe.i3rab.mabni-mu3rab-khalt" }
       ],
       "correctOption": "b",
       "explanation": "«هذا» اسم إشارة مبنيّ لا تتغيّر حركته بتغيّر موقعه، وكذلك الضمائر وأسماء الاستفهام والشرط من الأسماء المبنيّة. أمّا «الكتاب» و«مدرسة» و«تلميذ» فأسماء معربة تتغيّر علامتها بحسب الموقع."
@@ -73,13 +93,25 @@
       "difficulty": 3,
       "prompt": "في «المجتهدونَ ينجحونَ»، بِمَ رُفع «المجتهدونَ» وبِمَ رُفع «ينجحونَ»؟",
       "options": [
-        { "id": "a", "text": "كلاهما بالضمّة" },
+        {
+          "id": "a",
+          "text": "كلاهما بالضمّة",
+          "misconceptionTag": "arabe.i3rab.af3al-khamsa-3alama"
+        },
         {
           "id": "b",
           "text": "الأوّل بالواو (جمع مذكّر سالم) والثاني بثبوت النون (من الأفعال الخمسة)"
         },
-        { "id": "c", "text": "الأوّل بالألف والثاني بالواو" },
-        { "id": "d", "text": "الأوّل بثبوت النون والثاني بالواو" }
+        {
+          "id": "c",
+          "text": "الأوّل بالألف والثاني بالواو",
+          "misconceptionTag": "arabe.i3rab.harf-ghayr-munasib"
+        },
+        {
+          "id": "d",
+          "text": "الأوّل بثبوت النون والثاني بالواو",
+          "misconceptionTag": "arabe.i3rab.af3al-khamsa-3alama"
+        }
       ],
       "correctOption": "b",
       "explanation": "«المجتهدون» جمع مذكّر سالم مرفوع بالواو نيابة عن الضمّة. و«ينجحون» فعل مضارع من الأفعال الخمسة (يتّصل به واو الجماعة) مرفوع بثبوت النون نيابة عن الضمّة. فعلامتا الرفع مختلفتان لاختلاف نوع الكلمتين."

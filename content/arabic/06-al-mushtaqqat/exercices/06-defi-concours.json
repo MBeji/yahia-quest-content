@@ -10,8 +10,12 @@
       "prompt": "أيّ الكلمات التالية اسمُ فاعل؟",
       "options": [
         { "id": "a", "text": "كاتِب" },
-        { "id": "b", "text": "مكتوب" },
-        { "id": "c", "text": "مَكتَب" },
+        { "id": "b", "text": "مكتوب", "misconceptionTag": "arabe.ishtiqaq.fa3il-maf3ul-ma3na" },
+        {
+          "id": "c",
+          "text": "مَكتَب",
+          "misconceptionTag": "arabe.ishtiqaq.makan-ka-fa3il-aw-maf3ul"
+        },
         { "id": "d", "text": "كِتاب" }
       ],
       "correctOption": "a",
@@ -22,8 +26,12 @@
       "prompt": "ما اسم المفعول من الفعل «أكرمَ»؟",
       "options": [
         { "id": "a", "text": "مُكرَم (بفتح الراء)" },
-        { "id": "b", "text": "مُكرِم (بكسر الراء)" },
-        { "id": "c", "text": "كريم" },
+        {
+          "id": "b",
+          "text": "مُكرِم (بكسر الراء)",
+          "misconceptionTag": "arabe.ishtiqaq.mazid-haraka-al-3ayn"
+        },
+        { "id": "c", "text": "كريم", "misconceptionTag": "arabe.ishtiqaq.sifa-mushabbaha-khalt" },
         { "id": "d", "text": "مكروم" }
       ],
       "correctOption": "a",
@@ -34,7 +42,11 @@
       "prompt": "أيّ الكلمات التالية صيغةُ مبالغة على وزن «فعّال»؟",
       "options": [
         { "id": "a", "text": "غفّار" },
-        { "id": "b", "text": "غافِر (اسم فاعل)" },
+        {
+          "id": "b",
+          "text": "غافِر (اسم فاعل)",
+          "misconceptionTag": "arabe.ishtiqaq.fa3il-mubalagha-khalt"
+        },
         { "id": "c", "text": "مغفور (اسم مفعول)" },
         { "id": "d", "text": "مَغفِرة (مصدر)" }
       ],
@@ -46,7 +58,11 @@
       "prompt": "الفعل «احمرَّ» يدلّ على لون وهو غير ثلاثيّ، فلا يُصاغ منه اسم تفضيل مباشر. كيف يُعبَّر عن التفضيل منه؟",
       "options": [
         { "id": "a", "text": "بذكر اسم تفضيل مساعد ثمّ مصدره تمييزًا: «أشدُّ احمرارًا»" },
-        { "id": "b", "text": "«أحمرُ» على وزن أفعل التفضيل" },
+        {
+          "id": "b",
+          "text": "«أحمرُ» على وزن أفعل التفضيل",
+          "misconceptionTag": "arabe.ishtiqaq.af3al-tafdil-wa-lawn-khalt"
+        },
         { "id": "c", "text": "«احمرَّ أكثرَ»" },
         { "id": "d", "text": "لا سبيل إلى التفضيل منه إطلاقًا" }
       ],
@@ -58,7 +74,11 @@
       "prompt": "ما نوع كلمة «مِفتاح»، وعلى أيّ وزن هي؟",
       "options": [
         { "id": "a", "text": "اسم آلة، على وزن «مِفعال»" },
-        { "id": "b", "text": "اسم مكان، على وزن «مَفعال»" },
+        {
+          "id": "b",
+          "text": "اسم مكان، على وزن «مَفعال»",
+          "misconceptionTag": "arabe.ishtiqaq.mim-ala-maftuha"
+        },
         { "id": "c", "text": "اسم فاعل، على وزن «فاعِل»" },
         { "id": "d", "text": "مصدر ميميّ، على وزن «مَفعِل»" }
       ],
@@ -73,9 +93,21 @@
           "id": "a",
           "text": "«مَدرسة» اسم مكان على وزن «مَفعَلة»؛ واسم الفاعل من «درَسَ» هو «دارِس»"
         },
-        { "id": "b", "text": "لا خطأ، «مَدرسة» اسم فاعل" },
-        { "id": "c", "text": "«مَدرسة» اسم مفعول" },
-        { "id": "d", "text": "«مَدرسة» صيغة مبالغة" }
+        {
+          "id": "b",
+          "text": "لا خطأ، «مَدرسة» اسم فاعل",
+          "misconceptionTag": "arabe.ishtiqaq.makan-ka-fa3il-aw-maf3ul"
+        },
+        {
+          "id": "c",
+          "text": "«مَدرسة» اسم مفعول",
+          "misconceptionTag": "arabe.ishtiqaq.makan-ka-fa3il-aw-maf3ul"
+        },
+        {
+          "id": "d",
+          "text": "«مَدرسة» صيغة مبالغة",
+          "misconceptionTag": "arabe.ishtiqaq.makan-ka-fa3il-aw-maf3ul"
+        }
       ],
       "correctOption": "a",
       "explanation": "«مَدرسة» اسم مكان (موضع الدراسة) على وزن «مَفعَلة»، لا اسم فاعل؛ واسم الفاعل من الثلاثيّ «درَسَ» هو «دارِس» على وزن «فاعِل». (تمرين «صيد الخطأ».) الخطأ الشائع: عدّ كلّ مبدوءٍ بميمٍ اسمَ فاعل أو مفعول، وإهمال اسم المكان.",
