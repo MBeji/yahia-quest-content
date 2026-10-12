@@ -1,0 +1,27 @@
+{
+ "lot": "SVT-L05",
+ "subject": "sciences-vie-terre",
+ "chapters": [
+  {
+   "chapter": "12-takawwun-al-janin",
+   "nn": [
+    7,
+    8,
+    9,
+    10
+   ]
+  }
+ ],
+ "classe": "9eme-base",
+ "matiere_manifeste": "sciences-vie-terre",
+ "intro_matiere": "SVT 9ᵉ (sciences de la vie et de la terre, matière `sciences-vie-terre`)",
+ "ordre_manifeste": "01-wadhifat-al-ittisal → 02-al-af3al-al-in3ikasiya → 03-al-ibsar → 04-al-hajiyat-al-ghithaiya → 05-al-hadm → 06-dirasat-ad-dam → 07-ad-dawaran → 08-at-tanaffus → 09-al-ikhraj → 10-an-nudj-al-jinsi → 11-ad-dawra-al-jinsiya → 12-takawwun-al-janin → 13-tandhim-al-wiladat → 14-al-amrad-al-manqula",
+ "tmp_exception": " ; ET, en LECTURE SEULE, les PDF des sujets officiels pour juger les figures et documents : télécharge-les toi-même dans `/tmp/claude-0/svt-l05-audit-pdf/` (URL et sha256 dans `/home/user/yahia-quest-content/content/programmes-officiels/sources-externes/web-9eme-base-sciences-vie-terre/gisement.json`, sessions 2026, 2025, 2024, 2022 ; `CURL_CA_BUNDLE=/tmp/cnp-ca.pem` si https) ; plus la lecture UNIQUE de `/tmp/claude-0/-home-user/b03814da-e5f9-5a74-bf03-e7c23b20207a/scratchpad/author/exam/prompt-audit-SVT-L05.md`, qui est ce prompt lui-même",
+ "extra_sources": " **L'auteur a redessiné en SVG les figures d'après les PDF 2024, 2025 et 2026** (gamètes et morula de 2026 ex.2, trois événements de 2025 ex.3, courbes de température A/B et document 5 de 2024 ex.4 — axe des dates en « jour/mois », échelle uniforme alors que celle du PDF ne l'est pas) : juge leur fidélité et leur lisibilité, et que rien n'y livre une clé.",
+ "blind_extra": "Re-résous chaque question à partir des données de l'énoncé (figures, courbes, documents) ET des cours des chapitres 10, 11, 12 et de ceux qui les précèdent (`cours.md`, `resume.md`). Appariements (07 Q1, Q2 ; 09 Q1) : chaque paire, et aucune paire déductible par élimination triviale ; mise en ordre (07 Q6) ; `multi` (09 Q5, 4 vraies sur 6) énoncé par énoncé ; dates (09 Q4 : 14 ; 14-15 ; 21-22) et calendrier (10 Q2 : 28 jours ; 10 Q7 : fécondation entre le 12 et le 13 mai) recalculés sur la figure.",
+ "fidelity": "Correspondance : 07 = 2026 ex.2 (d2, 7 q), 08 = 2022 ex.1 (d2, 4 q), 09 = 2025 ex.3 (d3 boss, 5 q), 10 = 2024 ex.4 (d4 challenge, 7 q). Adaptations déclarées — dis si l'une perd ou déforme une sous-question : 07 Q2 : un repère 4 (acrosome) AJOUTÉ à la figure, absent du sujet, pour équilibrer l'appariement ; 07 Q5 « source + étapes » coupé en deux (source, puis ordre) ; 09 « nom + justification » coupé en Q1/Q2 ; 07 Q7 : « après 4 jours de sa formation » lu comme jour 8 (morula au jour 4) — lecture ambiguë, tranche ; 10 Q7 en d3 (plafond), le d4 porté par l'en-tête ; notions données dans l'énoncé (الكريّة القطبيّة, الخلايا الجريبيّة, 2ᵉ globule polaire détaché après l'entrée du spermatozoïde) : vérifie que chaque question qui les emploie les donne. Figure 2024 : plateau chaud ≈ 17 jours contre 14 jours de phase lutéale au cours ch.11 — aucune question ne demande la durée ; 17 et 20 apparaissent comme distracteurs : est-ce sain ? Chaînes déclarées (la clé de l'une recoupe l'autre) : 09 Q1/Q2, 10 Q5/Q7, 10 Q6/Q7 — dis si l'une livre la clé d'une AUTRE question.",
+ "programme": "Programme en vigueur : une question ne s'appuie que sur son chapitre et les précédents du manifeste (ici 01 à 12) ; une notion qu'aucun cours ne donne se donne dans l'énoncé de CHAQUE question qui l'emploie (le donjon tire les questions seules).",
+ "etiquettes": "Famille `bio.*` (libellés lus SUR `origin/main`). Posées : `bio.repro.lieux-des-gametes-confondus` (07 Q3 ×2 ; 08 Q1 « غدّة تناسليّة تفرز السّائل » — limite selon l'auteur), `bio.repro.plusieurs-spermatozoides-entrent` (07 Q5), `bio.repro.fecondation-dans-l-uterus` (08 Q2), `bio.lecture.valeur-d-une-autre-grandeur` (10 Q2, options 17 et 20). Muettes déclarées : 07 Q4 (maturation de l'ovule au moment de l'ovulation), 08 Q1, 08 Q3 (cristallin / cornée / iris : `bio.vis.*` existe ?), 08 Q4 (urée prise pour une sécrétion : `bio.excr.*` ?), 10 Q3 (montée de température attribuée aux règles), 10 Q5, 10 Q6. Pour chaque option étiquetée : le libellé nomme-t-il EXACTEMENT l'erreur ? Pour chaque muette : une étiquette EXISTANTE convient-elle ? Une famille neuve seulement si elle revient dans ≥ 3 questions distinctes (lot + publié).",
+ "distracteurs_extra": "Plans 2×2 (07 Q3, Q4 ; 08 Q1) : chaque terme deux fois, l'option à deux erreurs muette, aucun vote. Clé jamais strictement la plus longue. Aucune lettre latine comme repère de figure dans une question à options ; aucune question sans figure qui renvoie à une figure (« الوثيقة », « الرّسم », « المنحنى »).",
+ "doublons": "(a) avec les missions publiées des chapitres 10, 11 et 12 de SVT (dont celles du lot SVT-L04 publiées aujourd'hui : 10/07, 11/07–09) et du chapitre 09 (09/07 Q4, sécrétion de NH₃), lues sur `origin/main` ; doublons partiels déclarés : 07 Q4 ↔ 10/07 Q4, 07 Q2 ↔ 11/09 Q3, 08 Q2 ↔ 12/01 Q2, 08 Q4 ↔ 09/07, 09 Q5 ↔ 12/03 Q2 — tranche chacun ; (b) entre les quatre missions de la tranche."
+}

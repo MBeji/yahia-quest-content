@@ -128,8 +128,8 @@ def chart(woman,ox=0,oy=0):
     b+=f'<polygon points="{ox+30},{oy+5} {ox+27},{oy+12} {ox+33},{oy+12}" fill="{INK}"/>'
     for t,lab in ((36.5,'36,5'),(37.0,'37,0'),(37.5,'37,5')):
         b+=f'<line x1="{ox+27}" y1="{oy+Y(t):.1f}" x2="{ox+33}" y2="{oy+Y(t):.1f}" stroke="{INK}" stroke-width="1.2"/>'
-        b+=text(ox+25,oy+Y(t)+3.5,lab,9,'end',weight=500)
-    b+=text(ox+38,oy+10,'°C',9,'start',weight=500)
+        b+=text(ox+23,oy+Y(t)+3.5,lab,9,'end',weight=500)
+    b+=text(ox+40,oy+11,'°C',9,'start',weight=500).replace('<text ','<text direction="ltr" style="unicode-bidi:bidi-override" ')
     for d,lab in ((0,'1/4'),(13,'14/4'),(30,'1/5'),(41,'12/5'),(61,'1/6'),(69,'9/6')):
         x=ox+X(d)
         b+=f'<line x1="{x:.1f}" y1="{oy+98}" x2="{x:.1f}" y2="{oy+102}" stroke="{INK}" stroke-width="1.2"/>'

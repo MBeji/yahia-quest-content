@@ -37,3 +37,4 @@ Demarre: 2026-10-12 ~08:08 UTC.
 - Scripts de génération: svt-l05-work/gen*.py
 - [x] gen.py écrit (svt-l05-work/gen.py + figs.py + svglib.py) ; 4 fichiers générés une 1re fois, reste lint/gates/rendu
 - gates: fresh OK (0 clé longue, positions 5/4/5/4, paires 0); --changed rouge = clés longues des anciennes missions 01-06/quiz ; catalogue = régénéré. lot-lint 0.
+- FINI: 4 missions écrites, lint 0, gates fresh OK, rendu vérifié. Rapport à rendre.
