@@ -1,0 +1,272 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: متراجحة، تعميل ثلاثيّ حدود ثمّ حصر جداء",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 32,
+  "questions": [
+    {
+      "prompt": "ما حلّ المعادلة التالية؟\n3(x + 1) = 7x − 17",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/2",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "b",
+          "text": "9/2",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "20",
+          "misconceptionTag": "math.alg.coefficient-non-divise"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ننشر الطرف الأيسر: 3x + 3 = 7x − 17. ننقل: 3 + 17 = 7x − 3x، أي 20 = 4x، ومنه x = 5 ✓. تحقّق: 3(5 + 1) = 18 و 7 × 5 − 17 = 18 ✓. الخطأ الشائع: نشر الحدّ الأوّل وحده، 3x + 1 = 7x − 17، فيخرج 4x = 18 أي x = 9/2. ومن نقل 3 دون قلب إشارتها كتب −4x = −14 فوجد x = 7/2، ومن توقّف عند 4x = 20 وأعلن 20 لم يقسم على المعامل.",
+      "difficulty": 1,
+      "competencies": [
+        "math.alg.equations-premier-degre",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "ما مجموعة حلول المتراجحة التالية؟\n3(x + 1) ≥ 7x − 9",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≥ 3/2"
+        },
+        {
+          "id": "b",
+          "text": "x ≥ 3",
+          "misconceptionTag": "math.alg.inequation-sens-non-inverse"
+        },
+        {
+          "id": "c",
+          "text": "x ≤ 3/2",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "x ≤ 3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ننشر: 3x + 3 ≥ 7x − 9، ثمّ ننقل: 12 ≥ 4x، أي x ≤ 3 ✓ (القسمة على 4 الموجب لا تقلب الإشارة). تحقّق: x = 0 يعطي 3 ≥ −9 صحيحة، وx = 4 يعطي 15 ≥ 19 خاطئة ✓. الخطأ الشائع: كتابة −4x ≥ −12 ثمّ القسمة على −4 دون قلب الإشارة، فيخرج x ≥ 3، وهو المنطقة المعاكسة. ومن نقل 3 دون تغيير إشارتها كتب −4x ≥ −6 فوجد x ≤ 3/2، ومن جمع الخطأين وجد x ≥ 3/2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.inequations",
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّه لكلّ عدد حقيقي x:\nT(x) = x² − 2x − 24 = (x − 1)² − 25\nما التعميل الصحيح للعبارة T(x) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − 6)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "b",
+          "text": "(x − 6)(x + 4)"
+        },
+        {
+          "id": "c",
+          "text": "(x − 26)(x + 24)"
+        },
+        {
+          "id": "d",
+          "text": "(x + 6)(x − 4)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "العدد 25 يساوي 5²، فالعبارة فرق مربّعين: (x − 1)² − 5² = [(x − 1) − 5][(x − 1) + 5] = (x − 6)(x + 4) ✓. تحقّق بالنشر: (x − 6)(x + 4) = x² + 4x − 6x − 24 = x² − 2x − 24 ✓. الخطأ الشائع: عدم أخذ جذر 25، أي كتابة [(x − 1) − 25][(x − 1) + 25] = (x − 26)(x + 24). ومن كتب فرق المربّعين مربّعًا وجد (x − 6)²، ومن عكس الإشارتين وجد (x + 6)(x − 4) = x² + 2x − 24.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ T(x) = (x − 6)(x + 4) لكلّ عدد حقيقي x.\nما مجموعة حلول المعادلة T(x) = 0 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−6 ; 4}"
+        },
+        {
+          "id": "b",
+          "text": "{−4 ; 6}"
+        },
+        {
+          "id": "c",
+          "text": "{4 ; 6}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "d",
+          "text": "{6}",
+          "misconceptionTag": "math.alg.produit-nul-une-seule-solution"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "حسب مبدأ الجداء المعدوم: x − 6 = 0 أو x + 4 = 0، أي x = 6 أو x = −4. مجموعة الحلول {−4 ; 6} ✓. تحقّق: T(6) = 36 − 12 − 24 = 0 و T(−4) = 16 + 8 − 24 = 0 ✓. الخطأ الشائع: قراءة العامل (x + 4) على أنّه يُعدم عند 4، فيخرج {4 ; 6}؛ والعامل يُعدم عند العدد المقابل −4. ومن اكتفى بعامل واحد وجد {6}.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "نفترض أنّ x يحقّق 0 ≤ x ≤ 3. ما حصر العدد x − 6 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 ≤ x − 6 ≤ 9"
+        },
+        {
+          "id": "b",
+          "text": "−5 ≤ x − 6 ≤ −2"
+        },
+        {
+          "id": "c",
+          "text": "−6 ≤ x − 6 ≤ −3"
+        },
+        {
+          "id": "d",
+          "text": "−3 ≤ x − 6 ≤ −6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نطرح 6 من الأطراف الثلاثة، والطرح لا يغيّر الترتيب: 0 − 6 ≤ x − 6 ≤ 3 − 6، أي −6 ≤ x − 6 ≤ −3 ✓. تحقّق بـ x = 1: x − 6 = −5 يقع بين −6 و −3 ✓. الخطأ الشائع: طرح 5 بدل 6، فيخرج −5 ≤ x − 6 ≤ −2، ومن أضاف 6 بدل طرحها وجد 6 ≤ x − 6 ≤ 9. والحصر −3 ≤ … ≤ −6 فارغ لأنّ −3 أكبر من −6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نفترض أنّ x يحقّق 0 ≤ x ≤ 3. ما إشارة كلّ من العاملين x − 6 و x + 4 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "الأوّل موجب والثاني موجب"
+        },
+        {
+          "id": "b",
+          "text": "الأوّل سالب والثاني سالب"
+        },
+        {
+          "id": "c",
+          "text": "الأوّل سالب والثاني موجب"
+        },
+        {
+          "id": "d",
+          "text": "الأوّل موجب والثاني سالب"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "من الحصر 0 ≤ x ≤ 3 نستنتج −6 ≤ x − 6 ≤ −3، فالعامل x − 6 سالب في كلّ المجال. ونستنتج 4 ≤ x + 4 ≤ 7، فالعامل x + 4 موجب في كلّ المجال ✓. تحقّق بـ x = 1: x − 6 = −5 و x + 4 = 5 ✓. الخطأ الشائع: الحكم على إشارة العاملين من إشارة x وحدها، أي اعتبار x موجبًا فيكون كلّ عامل موجبًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ T(x) = (x − 6)(x + 4) لكلّ عدد حقيقي x.\nما مجموعة الأعداد x التي تحقّق معًا المعادلة T(x) = 0 والمتراجحة التالية؟\n3(x + 1) ≥ 7x − 9",
+      "options": [
+        {
+          "id": "a",
+          "text": "{6}",
+          "misconceptionTag": "math.alg.inequation-sens-non-inverse"
+        },
+        {
+          "id": "b",
+          "text": "{−4 ; 6}",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "c",
+          "text": "{−4}"
+        },
+        {
+          "id": "d",
+          "text": "∅"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "حلّا المعادلة (x − 6)(x + 4) = 0 هما 6 و −4. والمتراجحة: 3x + 3 ≥ 7x − 9 أي 12 ≥ 4x، ومنه x ≤ 3. العدد −4 يحقّق x ≤ 3، أمّا 6 فلا. المجموعة {−4} ✓. تحقّق: 3(−4 + 1) = −9 و 7 × (−4) − 9 = −37، و −9 ≥ −37 صحيحة ✓. الخطأ الشائع: إبقاء حلّي المعادلة معًا دون اختبار المتراجحة. ومن قسم على −4 دون قلب الإشارة وجد x ≥ 3 فاحتفظ بـ 6 وأسقط −4.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.inequations"
+      ]
+    },
+    {
+      "prompt": "نفترض أنّ x يحقّق 0 ≤ x ≤ 3. نحسب الجداءات الأربعة لحدّي حصر x − 6 وحدّي حصر x + 4، ثمّ نستنتج حصرًا للعدد T(x) = (x − 6)(x + 4).\nما هذا الحصر؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 ≤ T(x) ≤ 42"
+        },
+        {
+          "id": "b",
+          "text": "−24 ≤ T(x) ≤ −21",
+          "misconceptionTag": "math.num.produit-conserve-l-ordre-sans-signe"
+        },
+        {
+          "id": "c",
+          "text": "−42 ≤ T(x) ≤ −24"
+        },
+        {
+          "id": "d",
+          "text": "−42 ≤ T(x) ≤ −12"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "لدينا −6 ≤ x − 6 ≤ −3 و 4 ≤ x + 4 ≤ 7. الجداءات الأربعة لحدودهما: (−6) × 4 = −24، و (−6) × 7 = −42، و (−3) × 4 = −12، و (−3) × 7 = −21. أصغرها −42 وأكبرها −12، إذن −42 ≤ T(x) ≤ −12 ✓. الخطأ الشائع: ضرب الحدّين الأصغرين معًا والأكبرين معًا طرفًا بطرف، (−6) × 4 = −24 و (−3) × 7 = −21، فيخرج −24 ≤ T(x) ≤ −21 وهو خاطئ لأنّ T(1) = −25. هذا الضرب لا يصحّ إلّا إذا كانت كلّ الحدود موجبة. ومن نسي الإشارة السالبة للعامل الأوّل وجد 12 ≤ T(x) ≤ 42.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ T(x) = (x − 6)(x + 4) لكلّ عدد حقيقي x.\nنعتبر المجال التالي:\n]−4 ; 6]\nما مجموعة حلول المعادلة T(x) = 0 التي تنتمي إلى هذا المجال؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−4}"
+        },
+        {
+          "id": "b",
+          "text": "{6}"
+        },
+        {
+          "id": "c",
+          "text": "{−4 ; 6}",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        },
+        {
+          "id": "d",
+          "text": "∅",
+          "misconceptionTag": "math.num.intervalle-borne-mal-incluse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "حلّا المعادلة (x − 6)(x + 4) = 0 هما 6 و −4. العدد −4 لا ينتمي إلى المجال لأنّ القوس مفتوح عنده، والعدد 6 ينتمي إليه لأنّ القوس مغلق عنده. المجموعة {6} ✓. تحقّق: T(6) = 0 × 10 = 0 ✓. الخطأ الشائع: الخطأ في قراءة القوسين: من ظنّ أنّ المجال يشمل طرفه −4 أبقى الحلّين معًا، ومن ظنّ أنّه يُقصي طرفه 6 لم يجد أيّ حلّ، ومن عكس القوسين معًا وجد {−4}.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.num.ordre-encadrement"
+      ]
+    }
+  ]
+}
