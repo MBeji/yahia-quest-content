@@ -24,16 +24,28 @@ done
 cp $SP/etat-reprise.md $EC/ETAT-REPRISE.md 2>/dev/null
 mkdir -p $EC/svt && cp $SP/gen-exam-assign-subj.py $SP/gen-prompt-svt.py $EC/outils/ 2>/dev/null; cp $SP/gisement/9eme-svt-plan/plan-examens-v1.json $SP/gisement/9eme-svt-plan/gisement.json $EC/svt/ 2>/dev/null; cp $SP/author/exam/prompt-svt-L*.md $SP/author/exam/assign-svt-L*.md $EC/plan/ 2>/dev/null
 # lots en cours (fichiers d'examen non livrés) : « matière/chapitre NN NN … »
-for spec in "math/09-triangle-rectangle-trigo 36 37 38 39 40 41" "math/18-quadrilateres 29 30 31 32 33 34 35" "sciences-vie-terre/03-al-ibsar 07 08 09 10 11" "sciences-vie-terre/08-at-tanaffus 07 08 09 10 11" "sciences-vie-terre/09-al-ikhraj 07 08 09" "sciences-vie-terre/10-an-nudj-al-jinsi 07" "sciences-vie-terre/11-ad-dawra-al-jinsiya 07 08 09" "sciences-vie-terre/12-takawwun-al-janin 07 08 09 10"; do
+for spec in "math/18-quadrilateres 36 37 38 39 40 41" "sciences-vie-terre/09-al-ikhraj 07 08 09" "sciences-vie-terre/10-an-nudj-al-jinsi 07" "sciences-vie-terre/11-ad-dawra-al-jinsiya 07 08 09" "sciences-vie-terre/12-takawwun-al-janin 07 08 09 10"; do
   set -- $spec; path=$1; shift
   mkdir -p content/$path/exercices
   for nn in "$@"; do
     for f in $SH/content/$path/exercices/$nn-examen-*.json; do [ -f "$f" ] && cp "$f" content/$path/exercices/; done
   done
 done
+# notes d'auteurs, générateurs des missions SVT-L04, arbitrage SVT-L04, outils complémentaires (passage de relais du 10-12)
+mkdir -p $EC/auteurs-notes/svt-l04 $EC/auteurs-notes/l17 $EC/auteurs-notes/svt-l05
+cp $SP/svt-l04-work/NOTES.md $SP/svt-l04-work/gen_m*.py $SP/svt-l04-work/figs_*.py $SP/svt-l04-work/lib.py $SP/svt-l04-work/dump.py $SP/svt-l04-work/sha_before_regen.txt $SP/svt-l04-work/bidi_test.mjs $SP/svt-l04-work/overflow_run.mjs $EC/auteurs-notes/svt-l04/ 2>/dev/null
+cp $SP/l17-work/NOTES.md $SP/l17-work/m3[6-9].py $SP/l17-work/m4[01].py $SP/l17-work/m*_figs.py $SP/l17-work/v3[6-9].py $SP/l17-work/v4[01].py $SP/l17-work/dump.py $SP/l17-work/render_figs.mjs $SP/l17-work/bench-rtl-strict.mjs $EC/auteurs-notes/l17/ 2>/dev/null
+mkdir -p $EC/auteurs-notes/l17/lib && cp $SP/l17-work/lib/*.py $EC/auteurs-notes/l17/lib/ 2>/dev/null
+cp $SP/svt-l05-work/NOTES.md $SP/svt-l05-work/show.py $EC/auteurs-notes/svt-l05/ 2>/dev/null
+cp $SP/arbitrage-SVT-L04.msg.txt $EC/plan/arbitrage-SVT-L04.md 2>/dev/null
+cp $SP/gen-prompt-audit.py $SP/tail-agent.py $SP/engine-env.sh $SP/l16-work/bench-rtl.mjs $EC/outils/ 2>/dev/null
+cp $SP/pending-tags/*.json $EC/etiquettes/ 2>/dev/null
+cp $SP/EN-VOL.md $EC/EN-VOL.md 2>/dev/null
 git add -A
 if git diff --cached --quiet; then echo "rien à sauvegarder"; exit 0; fi
-git commit -q -m "wip(gisement): rafraîchissement du point de sauvegarde (L08, L10, L13, L15, audits, étiquettes)
+git commit -q -m "wip(gisement): passage de relais du 10-12 — lots en vol (SVT-L04 à corriger, L17 à finir, SVT-L05 à écrire), état de reprise, notes d'auteurs
+
+Les 3 auteurs en cours ont été coupés par la limite de session ; SVT-L01 à L03, L14, L16, L20 sont publiés. Voir FableEtudes/36-gisement-examens-devoirs/en-cours/ETAT-REPRISE.md et EN-VOL.md.
 
 Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_0121C1nDUtcSUvXYZ6KNzYNz" && git push -q origin wip/gisement-9eme-lots-en-ecriture 2>&1 | tail -2

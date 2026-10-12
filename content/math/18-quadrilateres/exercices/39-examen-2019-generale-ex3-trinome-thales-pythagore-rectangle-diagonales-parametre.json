@@ -1,0 +1,288 @@
+{
+  "title": "🏛️ مناظرة 2019 · التمرين 3 ⭐⭐⭐⭐: عبارة جبرية ومستطيل داخل مثلّث قائم — المتطابقات الشهيرة وطاليس وفيثاغورس",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 39,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "نعتبر العدد الحقيقي x والعبارة\nE = x² − (32/5)x + 16\nاحسب قيمة E عندما x = 5، ثمّ اكتب القيمة.",
+      "answerKey": {
+        "value": 9
+      },
+      "explanation": "نعوّض x بالعدد 5 في العبارة: E = 5² − (32/5) × 5 + 16 = 25 − 32 + 16 = 9 ✓. الخطأ الشائع: ترك الحدّ الأوسط دون ضربه في x فنحسب 25 − 32/5 + 16 = 173/5، أو كتابة x² على صورة 2 × 5 فنجد 10 − 32 + 16 = −6، أو نسيان إشارة الطرح أمام 32 فنجد 25 + 32 + 16 = 73.",
+      "difficulty": 1,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ المثلّث ABC قائم في A وأنّ AB = 4 cm و AC = 3 cm.\nما طول [BC] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABC القائم في A والوتر [BC]</title><polygon points=\"26,218 274,218 26,32\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M274 218 L26 32\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M35 218 L35 209 L26 209\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"274\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"32\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"226.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"285.69\" y=\"216.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"26\" y=\"23.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√7",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "25",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABC قائم في A فوتره [BC]. بفيثاغورس: BC² = AB² + AC² = 16 + 9 = 25، إذن BC = 5 cm ✓. الخطأ الشائع: جمع الطولين مباشرةً 4 + 3 = 7، أو اعتبار [AB] وترًا فنطرح المربّعين 16 − 9 = 7 ونجد √7، أو التوقّف عند BC² = 25.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "للتحقّق من المساواة\nx² − (32/5)x + 16 = (x − 16/5)² + (12/5)²\nننشر طرفها الأيمن، حيث x عدد حقيقي.\nما نشر (x − 16/5)² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² + 256/25",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "x² − (16/5)x + 256/25",
+          "misconceptionTag": "math.alg.double-produit-sans-facteur-2"
+        },
+        {
+          "id": "c",
+          "text": "x² − 256/25",
+          "misconceptionTag": "math.alg.carre-difference-ecrit-difference-carres"
+        },
+        {
+          "id": "d",
+          "text": "x² − (32/5)x + 256/25"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نطبّق مربّع الفرق (x − y)² = x² − 2xy + y² مع y = 16/5: الحدّ الأوسط هو 2 × x × 16/5 = (32/5)x والحدّ الأخير هو (16/5)² = 256/25، إذن (x − 16/5)² = x² − (32/5)x + 256/25 ✓. وبإضافة (12/5)² يصبح الحدّ الثابت (256 + 144)/25 = 400/25 = 16، فنحصل على x² − (32/5)x + 16. الخطأ الشائع: نسيان الحدّ الأوسط فنكتب x² + 256/25، أو كتابته دون العامل 2 فنجد (16/5)x بدل (32/5)x، أو نشر مربّع الفرق كأنّه فرق مربّعين فنكتب x² − 256/25.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ المثلّث ABC قائم في A وأنّ AB = 4 cm و AC = 3 cm و BC = 5 cm. النقطة M من [BC] حيث BM = a cm، والنقطة H هي المسقط العمودي للنقطة M على (AB)، والمستقيمان (HM) و (AC) متوازيان.\nما طول [HM] بالصنتمتر بدلالة a ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABC والنقطة M من [BC] والمسقط العمودي H على (AB) والقطعة [HM]</title><polygon points=\"26,218 274,218 26,32\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M174.8 218 L174.8 143.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M35 218 L35 209 L26 209\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M165.8 218 L165.8 209 L174.8 209\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"274\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"32\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"174.8\" cy=\"143.6\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"174.8\" cy=\"218\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"226.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"285.69\" y=\"216.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"26\" y=\"23.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"181.55\" y=\"137.11\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text><text x=\"174.8\" y=\"236.7\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3/5)a"
+        },
+        {
+          "id": "b",
+          "text": "(5/3)a",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "(4/5)a",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "a − 2",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "H من [BA] و M من [BC] و (HM) ∥ (AC)، فبنظرية طاليس في المثلّث BAC: BM/BC = HM/AC، أي a/5 = HM/3، ومنه HM = (3/5)a cm ✓. الخطأ الشائع: قلب النسبة فنكتب HM = (5/3)a، أو مقابلة HM بالضلع AB بدل AC فنجد (4/5)a، أو مقارنة الفروق بدل النسب فنكتب BM − HM = BC − AC ونجد HM = a − 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "نعلم أنّ المثلّث ABC قائم في A، والنقطة M من [BC]، والنقطتان H و K هما المسقطان العموديان للنقطة M على (AB) و (AC) على التوالي، فالرباعي AHMK مستطيل.\nاختر كلّ الجمل الصحيحة مهما كان موضع M على [BC].\n<svg viewBox=\"0 0 300 250\"><title>المستطيل AHMK داخل المثلّث ABC وقطراه [AM] و [HK]</title><polygon points=\"26,218 274,218 26,32\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"26,218 174.8,218 174.8,143.6 26,143.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 218 L174.8 143.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M174.8 218 L26 143.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M35 218 L35 209 L26 209\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M165.8 218 L165.8 209 L174.8 209\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M26 152.6 L35 152.6 L35 143.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.8 152.6 L165.8 152.6 L165.8 143.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"274\" cy=\"218\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"26\" cy=\"32\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"174.8\" cy=\"143.6\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"174.8\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"143.6\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"226.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"285.69\" y=\"216.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"26\" y=\"23.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"181.55\" y=\"137.11\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"174.8\" y=\"236.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"12.5\" y=\"148.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AM) ⊥ (HK)"
+        },
+        {
+          "id": "b",
+          "text": "AM = HK"
+        },
+        {
+          "id": "c",
+          "text": "KM = AH"
+        },
+        {
+          "id": "d",
+          "text": "HM = KM"
+        },
+        {
+          "id": "e",
+          "text": "AM = AH + HM"
+        },
+        {
+          "id": "f",
+          "text": "(MK) ∥ (AB)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "c",
+          "f"
+        ]
+      },
+      "explanation": "في المستطيل AHMK يتقايس الضلعان المتقابلان [KM] و [AH] ويتوازيان، ولأنّ H من (AB) فإنّ (MK) ∥ (AB). ويتقايس قطراه [AM] و [HK]، فـ AM = HK. أمّا تعامد القطرين فهو خاصيّة المعيّن، وتساوي الضلعين المتجاورين HM و KM لا يتحقّق إلّا إذا كان المستطيل مربّعًا، أي في موضع واحد فقط للنقطة M، ولا يساوي [AM] مجموع [AH] و [HM] لأنّه وتر المثلّث القائم AHM فهو أقصر من مجموع ضلعيه القائمين. فالجمل الثلاث: تقايس القطرين، وتقايس الضلعين المتقابلين، وتوازي (MK) و (AB) صحيحة جميعًا ✓.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ الرباعي AHMK مستطيل وأنّ AM = 12/5 cm.\nما العلاقة الصحيحة من بين التالية ؟\n<svg viewBox=\"0 0 300 230\"><title>المستطيل AHMK والقطعة [AM] من رأس إلى الرأس المقابل</title><polygon points=\"30,175 270,175 270,55 30,55\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M30 175 L270 55\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M270 175 L30 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M30 166 L39 166 L39 175\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M261 175 L261 166 L270 166\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M270 64 L261 64 L261 55\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 64 L39 64 L39 55\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"30\" cy=\"175\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"175\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"55\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"55\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"16.96\" y=\"183.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"283.04\" y=\"183.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"26.51\" y=\"47.16\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"273.49\" y=\"47.16\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "HM² = 144/25",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "HM = 12/5",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "HK² = 12/5"
+        },
+        {
+          "id": "d",
+          "text": "HK² = 144/25"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "قطرا المستطيل AHMK هما [AM] و [HK]، وهما متقايسان، فـ HK = AM = 12/5 cm، ومنه HK² = (12/5)² = 144/25 ✓. الخطأ الشائع: اعتبار [AM] ضلعًا من أضلاع المستطيل فنكتب HM = 12/5 أو HM² = 144/25 (والضلع أقصر دائمًا من القطر)، أو نسيان التربيع فنكتب HK² = 12/5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ المثلّث ABC قائم في A وأنّ AB = 4 cm و AC = 3 cm و BC = 5 cm. النقطة M من [BC] حيث BM = a cm، والنقطتان H و K هما المسقطان العموديان للنقطة M على (AB) و (AC) على التوالي، فالرباعي AHMK مستطيل.\nما طول [KM] بالصنتمتر بدلالة a ؟\n<svg viewBox=\"0 0 300 250\"><title>المستطيل AHMK داخل المثلّث ABC والضلع [KM]</title><polygon points=\"26,218 274,218 26,32\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"26,218 174.8,218 174.8,143.6 26,143.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 143.6 L174.8 143.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M35 218 L35 209 L26 209\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M165.8 218 L165.8 209 L174.8 209\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M26 152.6 L35 152.6 L35 143.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.8 152.6 L165.8 152.6 L165.8 143.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"274\" cy=\"218\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"26\" cy=\"32\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"174.8\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"143.6\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"174.8\" cy=\"143.6\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"226.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"285.69\" y=\"216.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"26\" y=\"23.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"174.8\" y=\"236.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"12.5\" y=\"148.8\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text><text x=\"181.55\" y=\"137.11\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3/5)(5 − a)",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "4 − a",
+          "misconceptionTag": "math.geo.thales-longueurs-au-lieu-de-rapports"
+        },
+        {
+          "id": "c",
+          "text": "(4/5)(5 − a)"
+        },
+        {
+          "id": "d",
+          "text": "(3/5)a",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المستطيل AHMK يتقايس الضلعان المتقابلان [KM] و [AH]، والنقطة H من [AB]. وبما أنّ (HM) ∥ (AC) فبنظرية طاليس في المثلّث BAC: BH/BA = BM/BC، أي BH/4 = a/5، ومنه BH = (4/5)a. إذن KM = AH = AB − BH = 4 − (4/5)a = (4/5)(5 − a) cm ✓. الخطأ الشائع: أخذ BH = BM = a فنجد KM = 4 − a، أو مقابلة [KM] بالضلع AC بدل AB في نسبة طاليس فنجد (3/5)(5 − a)، أو الاكتفاء بنتيجة الضلع المجاور [HM] فنجد (3/5)a.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ a عدد موجب أصغر من 5 وأنّ AHMK مستطيل حيث HM = (3/5)a cm و KM = (4/5)(5 − a) cm.\nما قيمة HK² بدلالة a ؟\n<svg viewBox=\"0 0 300 230\"><title>المستطيل AHMK والمثلّث HMK القائم في M ووتره [HK]</title><polygon points=\"30,175 270,175 270,55 30,55\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"270,175 270,55 30,55\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M270 64 L261 64 L261 55\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"30\" cy=\"175\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"175\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"30\" cy=\"55\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"270\" cy=\"55\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"16.96\" y=\"183.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"283.04\" y=\"183.69\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"26.51\" y=\"47.16\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text><text x=\"273.49\" y=\"47.16\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² − (32/5)a + 16"
+        },
+        {
+          "id": "b",
+          "text": "a² + 16",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "c",
+          "text": "16 − (7/25)a²",
+          "misconceptionTag": "math.alg.carre-difference-ecrit-difference-carres"
+        },
+        {
+          "id": "d",
+          "text": "−(7/25)a² + (32/5)a − 16",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "زوايا المستطيل قائمة، فالمثلّث HMK قائم في M ووتره [HK]. بفيثاغورس: HK² = HM² + KM² = (9/25)a² + (16/25)(5 − a)². وبنشر (5 − a)² = 25 − 10a + a² نجد HK² = (9/25)a² + 16 − (32/5)a + (16/25)a² = a² − (32/5)a + 16 ✓. الخطأ الشائع: نسيان الحدّ الأوسط في (5 − a)² فنكتب 25 + a² ونجد a² + 16، أو نشره كفرق مربّعين 25 − a² فنجد 16 − (7/25)a²، أو اعتبار [HM] وترًا فنطرح HM² − KM².",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ المثلّث ABC قائم في A وأنّ AB = 4 cm و AC = 3 cm. النقطة M تتحرّك على القطعة [BC]، ونضع a = BM بالصنتمتر، فيكون\nAM² = (a − 16/5)² + (12/5)²\nما الجملة الصحيحة من بين التالية ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABC والنقطة M من [BC] والقطعة [AM]</title><polygon points=\"26,218 274,218 26,32\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 218 L174.8 143.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M35 218 L35 209 L26 209\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"274\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"32\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"174.8\" cy=\"143.6\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"226.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"285.69\" y=\"216.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"26\" y=\"23.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"181.55\" y=\"137.11\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AM ≤ 12/5 مهما كان موضع M"
+        },
+        {
+          "id": "b",
+          "text": "AM = 12/5 مهما كان موضع M"
+        },
+        {
+          "id": "c",
+          "text": "AM ≥ 12/5 مهما كان موضع M"
+        },
+        {
+          "id": "d",
+          "text": "AM = (a − 16/5) + 12/5 مهما كان موضع M",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المربّع (a − 16/5)² لا يكون سالبًا أبدًا، فـ AM² = (a − 16/5)² + (12/5)² ≥ (12/5)²، ومنه AM ≥ 12/5 cm مهما كان موضع M ✓. الخطأ الشائع: عكس اتّجاه المتباينة، أو إهمال الحدّ المتغيّر فنكتب AM = 12/5، أو أخذ جذر المجموع على أنّه مجموع الجذرين فنكتب AM = (a − 16/5) + 12/5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "نعلم أنّ المثلّث ABC قائم في A وأنّ AB = 4 cm و AC = 3 cm. النقطة M من [BC] حيث BM = a cm، و a عدد محصور بين 0 و 5، والرباعي AHMK مستطيل حيث H و K هما المسقطان العموديان للنقطة M على (AB) و (AC) على التوالي، ونعلم أنّ\nHK² = (a − 16/5)² + (12/5)²\nأوجد a بالصنتمتر حيث AM = 12/5 cm، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 300 250\"><title>المستطيل AHMK داخل المثلّث ABC والقطر [AM]</title><polygon points=\"26,218 274,218 26,32\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"26,218 174.8,218 174.8,143.6 26,143.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 218 L174.8 143.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.8 218 L26 143.6\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M35 218 L35 209 L26 209\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M165.8 218 L165.8 209 L174.8 209\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M26 152.6 L35 152.6 L35 143.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.8 152.6 L165.8 152.6 L165.8 143.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"26\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"274\" cy=\"218\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"26\" cy=\"32\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"174.8\" cy=\"218\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"26\" cy=\"143.6\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"174.8\" cy=\"143.6\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"12.96\" y=\"226.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"285.69\" y=\"216.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"26\" y=\"23.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"174.8\" y=\"236.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"12.5\" y=\"148.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"181.55\" y=\"137.11\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "answerKey": {
+        "value": 3.2,
+        "unit": "cm"
+      },
+      "explanation": "قطرا المستطيل AHMK متقايسان، فـ HK = AM = 12/5 cm، أي HK² = (12/5)². فنحصل على المعادلة (a − 16/5)² + (12/5)² = (12/5)²، أي (a − 16/5)² = 0، ومنه a = 16/5 = 3,2 cm، وهي قيمة محصورة بين 0 و 5 ✓. الخطأ الشائع: عدم رؤية أنّ AM = HK فنكتفي بكتابة a = 12/5، أو حذف الحدّ (12/5)² من الطرف الأيسر فنحلّ (a − 16/5)² = (12/5)² ونجد a = 4/5 أو a = 28/5 (وهذه الأخيرة خارج المجال).",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.geo.quadrilateres"
+      ]
+    }
+  ]
+}

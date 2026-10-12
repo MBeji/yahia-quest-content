@@ -1,0 +1,122 @@
+# NOTES L17 (chapitre 18-quadrilateres, fichiers 36 a 41)
+
+Demarrage: prompt + consigne + assign lus.
+Liste:
+- 36 : 2013-generale ex4 (d4, 14 etapes)
+- 37 : 2016-generale ex4 (d4, 18 etapes)
+- 38 : 2018-generale ex4 (d4, 10 etapes)
+- 39 : 2019-generale ex3 (d4, 9 etapes)
+- 40 : 2019-generale ex4 (d4, 10 etapes)
+- 41 : 2020-generale ex5 (d4, 10 etapes)
+
+## Etat (mis a jour 2026-10-11 10:00 UTC, reprise apres coupure de session)
+- [x] skills charges, transcriptions lues, chapitre lu (origin/main), registre origin/main lu, chapter.json deja a jour (rien a ajouter)
+- [x] lib/figlib.py (figures SVG vraies) + lib/geo.py (geometrie exacte sympy) ecrits
+- [x] lib/mission.py (constructeurs mcq/numeric/multi + controles + ecriture JSON) ; render_figs.mjs (planche de figures) ; v36.py (double resolution)
+- [x] 36 ECRIT (2026-10-11 10:30) : 12 questions (d1 x1, d2 x6, d3 x5), lot-lint 0, bench-rtl 0 (400/800), content:check ok, qa:strict seul rouge = tag droites-remarquables-confondues non declare (registre perime), tranche 0 paire proche. Fichier: 36-examen-2013-generale-ex4-symetrique-milieux-gravite-pythagore-parallelogramme.json
+- [x] 37 ECRIT (2026-10-11 ~12:30 UTC) : 12 questions (d1 x1, d2 x4, d3 x7), lot-lint 0, bench 0, check ok, qa seul rouge = tags L14 non declares (registre perime), tranche 0 paire proche. Fichier: 37-examen-2016-generale-ex4-demi-cercles-pythagore-milieu-gravite-parallelogramme-alignement.json
+- [x] 38 ECRIT : 9 questions (d1 x1, d2 x2, d3 x6 dont 1 numeric AJ=3,6), lot-lint 0, bench 0, check ok, qa ok (tags L14 non declares seulement), tranche 0 paire proche. Fichier: 38-examen-2018-generale-ex4-cercle-tangente-relations-metriques-rectangle-gravite.json
+- [x] 39 ECRIT (2026-10-12) : 10 questions (d1 x2, d2 x4, d3 x4 ; 2 numeric, 1 multi, 7 mcq), lot-lint 0, bench 0 (400/800), check ok, qa:strict seul rouge = tag carre-difference-ecrit-difference-carres non declare (registre de l'arbre perime ; present dans origin/main), tranche 0 paire proche pour mes fichiers. Fichier: 39-examen-2019-generale-ex3-trinome-thales-pythagore-rectangle-diagonales-parametre.json
+- [x] 40 ECRIT (2026-10-12) : 10 questions (d1 x1, d2 x4, d3 x5 ; 1 numeric KA=3, 1 multi, 8 mcq), lot-lint 0, bench 0 (400/800), double resolution v40.py ok. Fichier: 40-examen-2019-generale-ex4-repere-milieu-pythagore-parallelogramme-rectangle-cercle.json
+- [x] 41 ECRIT (2026-10-12) : 10 questions (d1 x2, d2 x3, d3 x5 ; 1 numeric aire=3,2 cm², 1 multi, 8 mcq), lot-lint 0, bench 0 (400/800), double resolution v41.py ok. Fichier: 41-examen-2020-generale-ex5-rectangle-pythagore-thales-papillon-hauteurs-aire.json
+- [ ] lot-lint / gates (bac a sable puis commande officielle) / bench-rtl
+- [ ] pending-tags/L17.json
+- [ ] rapport final (SubagentHandback)
+
+## Decisions
+
+## Journal
+- [ok] prompt/consigne/assign lus; skills charges (prof-math-9eme, content-ecole-tn, content-engine + refs).
+- [ok] transcriptions lues: 2013 ex4, 2016 ex4, 2018 ex4, 2019 ex3+ex4, 2020 ex5.
+- [ok] chapter.json de 18-quadrilateres contient DEJA la ligne sources[] (origin/main == arbre) -> rien a ajouter.
+- origin/main a deja 22..35 publies (PR #644 = 2001..2011). Arbre de travail differe pour 22-28 et 33 -> lire origin/main.
+- Dossier: /home/user/yahia-quest-content/content/math/18-quadrilateres/exercices/ ; mes fichiers 36..41 n'existent pas encore.
+- [ok] registre origin/main copie dans l17-work/ref/misconceptions.origin.json (858 etiquettes). Outils: dump.py (lecture compacte), bench-rtl (l16-work, lecture seule), lot-lint.mjs (FableEtudes/36.../outils).
+- [ok] missions publiees 22..35 lues (style: 6 a 12 questions, rampe d1..d3, "pourquoi" a 4 justifications, numeric/mcq/multi, competencies[] par question, SVG avec <title>).
+- Pas d'autres missions d'examen non publiees dans l'arbre (aucun doublon d'exercices 2013ex4/2016ex4/2018ex4/2019ex3-4/2020ex5 dans d'autres chapitres publies).
+
+## Decisions de methode (journal)
+- Gates: `content:gates` REGENERE content/CATALOGUE.md (fichier derive deja modifie avant mon passage ; je ne l'edite pas a la main). Baseline (sans mes fichiers) = 3 etages rouges hors de moi: catalogue, qa:strict (2 erreurs: tag math.geo.angle-droit-mauvais-sommet non declare dans le registre PERIME de l'arbre, fichiers 30 et 32), tranche --changed. => pour mes fichiers, les 3 tags L14/L16 (angle-droit-mauvais-sommet, droites-remarquables-confondues, fonction-trigo-mal-choisie) seront signales "non declare" par le registre perime: attendu, a dire dans le rapport. Pour iterer, bac a sable /l17-work/sandbox (copie content + registre origin/main) ; commande officielle une seule fois a la fin.
+- Cours: 18 (quadrilateres, droite des milieux, mediane/hypotenuse+reciproque, mediatrice, rep. coordonnees), 08 (centre de gravite: AG=2/3 AK, G = point de concours des medianes), 09 (relations metriques: AH*BC=AB*AC ; AH^2=BH*CH ; PAS AB^2=BH*BC), 'orthocentre' (المركز القائم) ABSENT des cours -> glose dans l'enonce.
+- Titre: ne JAMAIS nommer "مركز الثقل" dans le titre de 36 (cle de Q2) ; slug ok.
+
+## PLAN M36 (2013 ex4) — decide, a ne pas refaire
+Coordonnees: O(0,0) A(-3,0) B(3,0) C(0,3) D(3,6) G(1,2) E(3,3). Titre SANS "مركز الثقل" ni "الموسّط" (cles). Slug ...-symetrique-milieux-gravite-pythagore-parallelogramme. d4 challenge 300/60, displayOrder 36.
+12 questions, rampe non decroissante: 
+ 1 d1 mcq: D symetrique de A / C => C milieu de [AD] (c: "D milieu de [AC]" = math.vec.symetrique-confondu-avec-milieu)
+ 2 d2 mcq "pourquoi G centre de gravite de ABD": a cle (BC),(OD) medianes car C,O milieux; b/c = hauteurs/mediatrices (math.geo.droites-remarquables-confondues); d = 2 droites par 2 sommets (condition-suffisante-supposee)
+ 3 d2 multi (6 opt): (AG) mediane de ABD v ; E milieu [BD] v ; BE=ED v ; AG=2xGE v ; (AG) hauteur de A x ; G milieu de [AE] x
+ 4 d2 mcq BD=6 (OC=BD/2): {3 facteur-deux, 6 cle, 3√2 segment-mal-choisi (BC), 6√2 reponse-a-l-autre-inconnue (AD)}
+ 5 d2 mcq AE=3√5 (donne: ABD rect. en B, AB=BD=6, E milieu): {3√3 hyp-mal-choisie, 3√5, 45 racine-oubliee, 6√2 segment-mal-choisi}
+ 6 d3 mcq "quelles 2 faits suffisent pour (AB)⊥(BD)": a (OC)⊥(AB)+(OC)∥(BD) cle ; b ⊥+longueur ; c ∥+longueur ; d deux milieux seuls (condition-suffisante-supposee sur b,c,d)
+ 7 d3 mcq AG (recalcule AE): {√5 tiers-inverse, 4 segment-mal-choisi, 3√5/2 milieu-mediane, 2√5 cle}
+ 8 d3 mcq pourquoi OEDC parallelogramme (4 justifs meme patron; ∥ seul / = seul / diagonales mal ordonnees)
+ 9 d3 mcq propriete des diagonales d'un parallelogramme qui justifie "(OD) passe par le milieu de [EC]" {meme milieu cle ; egales ; perpendiculaires (diagonales-proprietes-mal-attribuees) ; cotes opposes egaux (vrai mais hors sujet)}
+ 10 d3 mcq chasse a l'erreur OECA (preuve en 4 etapes, erreur en etape 1: "OE=AB/2" droite-des-milieux-mauvais-cote)
+ 11 d3 mcq "(EG) pour OEC": mediane de E (cle) / hauteur / mediatrice de [OC] / bissectrice (droites-remarquables-confondues)
+ 12 d3 mcq pourquoi G centre de gravite de OEC: deux medianes (OG),(EG) ; une seule ; G centre de ABD donc de OEC (segment-mal-choisi)
+Regles: pas de fuite avant/arriere: un enonce peut donner un resultat anterieur ("نعلم أنّ"), une explication ne donne jamais la cle d'une question SUIVANTE.
+
+## PLAN autres missions (faits calcules)
+- 37 (2016 ex4): A(0,0) B(6,0) C(8,0) I(3,0) O(4,0) D(3,3) E(4,4) F(4,2) G(3,1) N(2,0) H(2.4,1.2). BD=3√2, EC=4√2, OF=2 (=OE/2), DE=√2, NF=2√2, FG=√2. Fin: (BG)⊥(DN) car G orthocentre de DNB (glose "المركز القائم" dans l'enonce). Piege lecteur: centre de gravite vs orthocentre.
+- 38 (2018 ex4): A(0,0) B(6,0) C(25/6,5√11/6) BC=√11 D(6,6√11/5) CD=11/5 BD=6√11/5 AD=36/5 E(216/25,0) F(216/25,6√11/5) O(183/25,3√11/5) I(3,0) K=(108/25,3√11/5)=milieu AF G=(122/25,... ) = centroid ABF & AED. Relations metriques enseignees: seulement AH*BC=AB*AC et AH²=BH*CH (PAS AB²=BH*BC). Piege: mal choisir le triangle rectangle.
+- 39 (2019 ex3): E(x)=x²-(32/5)x+16 ; E(5)=9 ; E=(x-16/5)²+(12/5)² ; BC=5 ; HM=3a/5 ; KM=(4/5)(5-a) ; HK²=AM²=a²-(32/5)a+16 ; AM=12/5 <=> a=16/5. Piege: diagonales du rectangle egales (HK=AM).
+- 40 (2019 ex4): repere. B(-4,0) C(2,0) K(-1,0) A(0,2√2) P(0,√2) E(-2,2√2) H(-2,0). OB=4 OC=2 BC=6 OA=2√2 AB=2√6 KA=3=KE. Piege: abscisse negative prise pour une longueur.
+- 41 (2020 ex5): A(0,0) B(8,0) C(8,4) D(0,4) O(4,2) I(6,4) H(6.4,3.2) J(8,2) K(7,2) L(6.4,0.8). BI=2√5 AC=4√5 HC/HA=HI/HB=1/4 HC=4√5/5 HB=8√5/5 (AC)⊥(BI) (reciproque Pythagore dans HBC) ; K orthocentre de OBC ; (CK)⊥(OB) ; aire CLB=16/5. Piege: rapport partiel (1/4) confondu avec rapport a la diagonale (1/5).
+
+## M36 — realise (resume pour le rapport)
+Fichier 36, d4 challenge 300/60, displayOrder 36, 12 questions, rampe [1,2,2,2,2,2,2,3,3,3,3,3]. Formes: 8 mcq 'pourquoi/preuve', 2 multi (Q3 E milieu ; Q11 parallelogrammes), mcq calcul BD, AE, AG.
+Adaptations: 2a "E milieu de [BD]" -> multi ; 2b "(AB)⊥(BD) et BD=6" -> Q4 (BD) + Q8 (quelle preuve est sure) ; 2c AE puis AG -> Q5 + Q9 (AG recalcule AE) ; 3a "OEDC parallelogramme + (OG) porte une mediane" -> Q10 + Q6 (propriete des diagonales) ; 3b "OECA parallelogramme" -> inclus dans le multi Q11 (OEDC, OECA, OBEC vrais ; OBDC, ABEC, OEBC faux) ; "(EG) pour OEC" -> Q12 ; 3c -> Q7.
+Pas d'item ecarte, rien d'admis (aucune notion hors programme).
+Etiquettes utilisees (toutes existantes dans le registre origin/main): droites-remarquables-confondues (Q2 b,c ; Q12 a,b,c), condition-suffisante-supposee (Q2 d ; Q7 b ; Q8 a,b,d ; Q10 a,b), segment-mal-choisi (Q4 b,d ; Q5 c ; Q7 c ; Q9 c), droite-des-milieux-facteur-deux (Q4 a), symetrique-confondu-avec-milieu (Q1 b), hypotenuse-mal-choisie (Q5 a), pythagore-racine-oubliee (Q5 d), diagonales-proprietes-mal-attribuees (Q6 a,c), centre-gravite-milieu-mediane (Q7 d ; Q9 b), centre-gravite-tiers-inverse (Q9 a), parallelogramme-sommets-mal-ordonnes (Q10 d).
+Points a faire verifier par l'auditeur: Q8 (cadre « quelle preuve est sure » : b,c,d insuffisantes mais premisses vraies ; piege stem/option corrige apres une 1re version « paires de faits » ambigue car l'enonce donnait deja C sur la mediatrice) ; Q2 b (BC est bien une hauteur ET une mediatrice dans ce triangle isocele en B, mais OD non -> option fausse) ; Q12 (EO≠EC donne la non-coincidence).
+
+## M37 — realise (resume pour le rapport)
+Fichier 37, d4 challenge, 12 questions, rampe [1,2,2,2,2,3,3,3,3,3,3,3]. Q1 nature de ABD (« أدقّ وصف », 2x2 sans union de moities) ; Q2 BD=3√2 ; Q3 pourquoi AEC isocele (45°) ; Q4 EC=4√2 ; Q5 DG=2 (mediane/hypotenuse + centre de gravite) ; Q6 multi OF=2/F milieu de [OE] ; Q7 EFGD parallelogramme (4 arguments) ; Q8 NF=2√2 ; Q9 alignement N,G,F (argument parallele unique) ; Q10 rapport FG/NF=1/2 (G milieu de [NF], chaine radicale 4√2−3√2) ; Q11 « que represente G pour DNB » (orthocentre, glose dans chaque option) ; Q12 H ∈ (BG).
+Adaptations: 1a (rectangle ET isocele en D) -> Q1 ; 1b -> Q2 ; 2a (AEC rectangle isocele) -> Q3 (isocele) [rectangle en E donne dans l'enonce] ; 2b -> Q4 ; 3 (OF, F milieu) -> Q6 multi ; 4 -> Q5 (DG) + Q7 ; 5a -> Q8 + Q9 ; 5b -> Q10 ; 6 -> Q11 + Q12. Pas de 𝒞₁/𝒞₂ (glyphes) : « نصف الدائرة التي قطرها [AB] ».
+Aucun item hors programme / illisible. Orthocentre: glose dans chaque option (Q11) et dans l'enonce (Q12) — « المركز القائم » absent des cours.
+Tags utilises: description-la-plus-precise-manquee (Q1), angle-droit-mauvais-sommet (Q1 b), hypotenuse-mal-choisie (Q2 c, Q4 c), pythagore-racine-oubliee (Q2 d, Q4 d), centre-gravite-tiers-inverse/-milieu-mediane/segment-mal-choisi (Q5), condition-suffisante-supposee (Q7 a,b ; Q12 d), parallelogramme-sommets-mal-ordonnes (Q7 c), droite-des-milieux-mauvais-cote (Q8 a), droite-des-milieux-facteur-deux (Q8 d), condition-suffisante-supposee (Q9 b), segment-mal-choisi + position-relative-ignoree (Q10), droites-remarquables-confondues (Q11 b ; Q12 a). MUETS volontaires: Q11 a « centre de gravite de DNB » (candidate etiquette neuve centre-gravite-orthocentre-confondus, a compter avec M41), Q3 b/c/d, Q9 c/d etc.
+A verifier par l'auditeur: Q3 (45° via E ∈ (AD) ; option d « angle commun » muette) ; Q7 (4 arguments, b = '= seul' ; tag cond sur a/b) ; Q10 (G entre N et F donne dans l'enonce) ; Q11 (« DI » pied de la hauteur de D dans DNB : I ∈ [NB]).
+
+## M38 — realise (resume pour le rapport)
+Fichier 38, d4 challenge, 9 questions, rampe [1,2,2,3,3,3,3,3,3]. Q1 BC=√11 ; Q2 CD=11/5 (relation BC²=CA×CD, piege « mauvais segments » : 11/6, 36/5 ; somme: 6) ; Q3 BD=6√11/5 ; Q4 BDFE rectangle (gradation insuffisante : 1 angle droit / 2 angles droits (trapeze rectangle) / parallele seul / 3 angles droits) ; Q5 A,H,F alignes (cercle de diametre [BF]=[DE]) ; Q6 K milieu de [AF] (medianes de ABF, O milieu de [BF] car centre du rectangle) ; Q7 G centre de gravite de AED (AG=2/3 AO) ; Q8 NUMERIC AJ=3,6 (J milieu de [AD], AD=AC+CD, C entre A et D) ; Q9 J,K,O alignes (deux droites des milieux paralleles a (AE) par J).
+Adaptations: 3b (H) et 4a-4c: reformules en « pourquoi » (arguments) ; 4c cut en Q8 (AJ, intermediaire J milieu de [AD]) + Q9. Pas de 𝒞/𝒞' : « الدائرة التي قطرها [..] ». La tangente en B est donnee comme perpendiculaire a (AB) dans l'enonce (propriete tangente/rayon non reprise au programme du chapitre). Relations metriques: seule BC²=CA×CD (AH²=BH×CH) est utilisee (programme du ch. 09) ; AB²=AC×AD n'est PAS enseignee -> jamais utilisee comme cle.
+Tags utilises: pythagore-sans-carres (Q1 a, Q3 c), hypotenuse-mal-choisie (Q1 c, Q3 a), pythagore-racine-oubliee (Q1 d, Q3 d), segment-mal-choisi (Q2 a,d ; Q5 a ; Q7 a,c ; Q9 c), relation-hauteur-somme-au-lieu-de-produit (Q2 b), condition-suffisante-supposee (Q4 a,b,d ; Q5 b,c ; Q6 c ; Q7 b ; Q9 d), droites-remarquables-confondues (Q6 b).
+A verifier: Q2 (36/5 est aussi la valeur de AD ; ici tagge segment-mal-choisi via AB²=AC×CD) ; Q5 (la cle parle du cercle de diametre [BF], l'enonce du cercle de diametre [DE] : meme cercle, justifie dans l'explication) ; Q8 numeric (donne CD=11/5 comme donnee).
+
+## Reprise 2026-10-12 (apres 2e coupure) — etat verifie
+- 36/37/38 presents (12/12/9 q), lot-lint 0 point sur les trois. Registre origin/main: `git fetch` du remote (main = edb6e79, commits docs etude-37 seulement) -> aucun changement sur misconceptions.json / competences / chapitre 18 depuis #644 : ma copie ref/misconceptions.origin.json (858 tags, avec angle-droit-mauvais-sommet, droites-remarquables-confondues, fonction-trigo-mal-choisie) reste la reference. (ref temporaire supprimee ; le ref origin/main local n'a pas pu etre avance : verrou git d'un autre processus, laisse tel quel.)
+- Reste: 39, 40, 41 ; lot-lint/gates/bench ; pending-tags/L17.json ; rapport.
+
+## PLAN M39 (2019 ex3) — decide
+Titre: 🏛️ مناظرة 2019 · التمرين 3 ⭐⭐⭐⭐: عبارة جبرية ومستطيل داخل مثلّث قائم — المتطابقات الشهيرة وطاليس وفيثاغورس. Slug: trinome-thales-pythagore-rectangle-diagonales-parametre.
+Figure: A(0,0) B(4,0) C(0,3) M(12/5,6/5) [a=2] H(12/5,0) K(0,6/5). Cercle tangent a (AC) remplace par « K = projete orthogonal de M sur (AC) » (propriete tangente/rayon absente des cours) -> a dire dans le rapport.
+10 questions: 1 d1 numeric E(5)=9 ; 2 d1 mcq BC=5 {7 sans-carres, √7 hyp-mal-choisie, 25 racine-oubliee} ; 3 d2 mcq developpement (x-16/5)^2 {x²+256/25 carre-somme-sans-double-produit, x²-(16/5)x+256/25 double-produit-sans-facteur-2, x²-256/25 carre-difference-ecrit-difference-carres} ; 4 d2 mcq HM=(3/5)a {(5/3)a rapport-inverse, (4/5)a segment-mal-choisi, a-2 thales-longueurs-au-lieu-de-rapports} ; 5 d2 multi proprietes du rectangle AHMK (AM=HK vrai ; KM=AH vrai ; (MK)//(AB) vrai ; (AM)⊥(HK) faux ; HM=KM faux ; AM=AH+HM faux) ; 6 d3 mcq KM=(4/5)(5-a) {(3/5)(5-a) segment, (3/5)a reponse-autre-inconnue, 4-a longueurs-au-lieu-de-rapports} ; 7 d3 mcq HK²=a²-(32/5)a+16 {a²+16, 16-(7/25)a², -(7/25)a²+(32/5)a-16} ; 8 d3 mcq pont AM=12/5 => HK²=144/25 (2x2 complet: {HK,cote}x{carre,non carre}) ; 9 d3 mcq plus petit AM = 12/5 {5/2 mediane, 144/25, 16/5} ; 10 d3 numeric a=16/5=3,2.
+Pieges de forme evites: cle jamais « union de moities » (Q6: distracteurs avec (3/5)(5-a), (3/5)a, 4-a ; Q7 vote par composante -> mene a un distracteur) ; pas d'intervalle suivi d'un point.
+
+## M39 — realise (resume pour le rapport)
+Fichier 39, d4 challenge 300/60, displayOrder 39, 10 questions, rampe [1,1,2,2,2,2,3,3,3,3]. Q1 numeric E(5)=9 ; Q2 BC=5 ; Q3 developpement (x−16/5)² (verification de 2) ; Q4 HM=(3/5)a par Thales ((HM)∥(AC) donne dans l'enonce) ; Q5 multi proprietes du rectangle AHMK (AM=HK, KM=AH, (MK)∥(AB) vrais ; (AM)⊥(HK), HM=KM, AM=AH+HM faux) ; Q6 pont AM=12/5 => HK²=144/25 (2x2 complet {HK,HM}x{carre, non carre}) ; Q7 KM=(4/5)(5−a) ; Q8 HK²=a²−(32/5)a+16 ; Q9 lecture de la forme canonique (AM ≥ 12/5) ; Q10 numeric a=16/5=3,2.
+Adaptations: cercle de centre M tangent a (AC) en K remplace par « K = projete orthogonal de M sur (AC) » (la propriete tangente/rayon n'est dans aucun cours : donnee dans l'enonce) ; « montrer que » -> valeur/justification ; 3b (BM/BC=HM/AC puis HM) -> Q4 ; 4a -> Q7 (+ Q5 pour les proprietes du rectangle) ; 4b -> Q8 ; 4c coupe en trois : Q6 (AM=HK), Q9 (lecture de la forme canonique : AM ≥ 12/5 — non demande tel quel par le sujet, c'est la raison d'etre de la forme canonique), Q10 (a). Rien d'ecarte ; rien « admis » (aucun item hors programme).
+Tags: pythagore-sans-carres/hypotenuse-mal-choisie/pythagore-racine-oubliee (Q2), carre-somme-sans-double-produit + double-produit-sans-facteur-2 + carre-difference-ecrit-difference-carres (Q3 ; Q8 a,c), thales-rapport-inverse + segment-mal-choisi + thales-longueurs-au-lieu-de-rapports (Q4 ; Q7 b + segment + reponse-a-l-autre-inconnue), segment-mal-choisi x2 (Q6 a,b), hypotenuse-mal-choisie (Q8 d), racine-distribuee-sur-somme (Q9 d). MUETS: Q6 c (« HK² = 12/5 » : oubli du carre), Q9 a,b (inegalite inversee ; egalite).
+Symbole: ⊥ (U+22A5) et non ⟂ (U+27C2) : le moteur (bidi.ts) ne connait que ⊥ ; avec ⟂ l'option s'affiche a l'envers (vu au banc). Un fichier publie (09-triangle-rectangle-trigo/24-examen-2018-generale-ex2...) contient ⟂ : a signaler.
+A verifier par l'auditeur: Q5/Q6 se recoupent a dessein (reconnaitre / appliquer l'egalite des diagonales) ; Q6 : enonce abstrait (rectangle de diagonale 12/5) : « HM = 12/5 » est impossible car un cote est plus court que la diagonale ; Q9 : l'option d est fausse en general (egale a AM seulement pour a=16/5) ; Q10 : HK² donne en donnee (resultat de 4b), l'egalite AM=HK reste a voir (c'est le piege du lecteur).
+
+## M40 — realise (resume pour le rapport)
+Fichier 40, d4 challenge 300/60, displayOrder 40, 10 questions, rampe [1,2,2,2,2,3,3,3,3,3]. Q1 milieu de [BC] (mcq coordonnees) ; Q2 MULTI abscisse ≠ longueur (piege du lecteur : OB = −4 faux, BC = −2 / OB − OC faux ; fapport B est −4 vrai, OC = 2, BC = 6) ; Q3 OA=2√2 (Pythagore dans OAC rectangle en O) ; Q4 coordonnees de A (OA² = 8 donne) ; Q5 AB=2√6 (formule de distance) ; Q6 OCAE parallelogramme (4 arguments) ; Q7 coordonnees de E (symetrique de C par rapport a P) ; Q8 OAEH rectangle par les coordonnees (milieu commun + diagonales egales) ; Q9 numeric KA=3 ; Q10 E ∈ cercle de diametre [BC] (4 arguments).
+Adaptations: « montrer que » -> valeur/argument ; 1b (OB, OC, BC) -> multi Q2 ; 2a (OA puis coordonnees) -> Q3 + Q4 ; 4a: le sujet ne dit pas comment : preuve par les coordonnees (outil du cours « في المعلّم ») au lieu de « trois angles droits » (deja Q4 de 38) ; 4b -> Q9 (KA) + Q10 (E sur le cercle ; calcul de KE par Pythagore dans KHE). Cercle 𝒞 : glyphe evite (« الدائرة التي قطرها [BC] »). Rien d'ecarte ; rien « admis ». Pas de vecteurs (formules du cours : milieu, distance, symetrique).
+Tags: milieu-sans-moitie (Q1 a), milieu-difference-au-lieu-de-somme (Q1 c,d), pythagore-racine-oubliee (Q3 a ; Q4 d), hypotenuse-mal-choisie (Q3 b ; Q5 b), pythagore-sans-carres (Q3 d), coordonnees-point-inversees (Q4 b), racine-confondue-avec-moitie (Q4 c), distance-sans-racine (Q5 a), racine-extraction-facteur-inversee (Q5 c), condition-suffisante-supposee (Q6 a,d ; Q8 b,c,d ; Q10 a), parallelogramme-sommets-mal-ordonnes (Q6 c ; Q7 a), symetrique-confondu-avec-milieu (Q7 b), segment-mal-choisi (Q10 b,c). MUETS: Q7 d « (4 ; −√2) » (symetrique de P par rapport a C : roles inverses).
+Piege « abscisse negative prise pour une longueur » : Q2 (multi), Q1 (option (3 ; 0) = (4+2)/2 et (2−(−4))/2 : deux causes), explications de Q5/Q8/Q10 (OB = |−4|, OH = 2). Famille a 2 questions seulement avec options etiquetables -> PAS de nouvelle etiquette proposee (a revoir au bilan).
+Banc: version stricte (bench-rtl-strict.mjs dans l17-work : ; et parentheses comptes comme operateurs, chiffres seuls) ne signale que des operations en chiffres seuls (« 12 + 4 = 16 »), laissees volontairement par le moteur (« keeps reading right to left ») ; les n-uplets (O ; I ; J), B(−4 ; 0), [OJ) sont dans le bon ordre.
+A verifier par l'auditeur: Q6/Q8/Q10 (arguments : prémisses vraies, inference invalide ; Q10 c « EH < rayon » ; Q10 b « cercle de [OE] ≠ cercle de [BC] ») ; Q1 : les options 3 et 6 sont hors du segment [BC] (erreurs reelles mais peu plausibles a l'oeil) ; Q4 donne OA² = 8 (resultat intermediaire de Q3) pour isoler « racine puis coordonnees ».
+
+## M41 — realise (resume pour le rapport)
+Fichier 41, d4 challenge 300/60, displayOrder 41, 10 questions, rampe [1,1,2,2,2,3,3,3,3,3]. Q1 BI=2√5 ; Q2 AC=4√5 ; Q3 MULTI rapports de la configuration papillon (HC/HA = CI/AB, HI/HB = HC/HA, HC/HA = 1/4 vrais ; HC/AC = 1/4, HC/HA = CI/BC, HC/HA = AB/CI faux) ; Q4 HC=4√5/5 (piege du lecteur : 1/4 = rapport partie/reste, pas partie/tout) ; Q5 HB=8√5/5 (meme piege, valeur piege 3√5/2) ; Q6 (AC)⊥(BI) par la reciproque de Pythagore dans HBC ; Q7 (OJ)⊥(BC) par la droite des milieux dans ABC ; Q8 (CK)⊥(OB) : K orthocentre de OBC (theoreme « les trois hauteurs sont concourantes » donne dans l'enonce : absent des cours) ; Q9 CL=8√5/5 (aire de OBC de deux facons) ; Q10 NUMERIC aire CLB = 16/5 = 3,2 cm².
+Adaptations: « montrer que » -> valeur / argument ; 2a (rapports) -> multi Q3 (le sujet demande HC/HA = HI/HB = 1/4) ; 2b (HC puis HB) -> Q4 + Q5 (enonces courts : H sur un segment de longueur donnee et rapport 1/4, pour ne pas dupliquer l'enonce) ; 2c -> Q6 ; 3a coupe en deux : (OJ)⊥(BC) Q7, puis (CK)⊥(OB) Q8 ; 3b coupe en deux : CL Q9, aire Q10 (CL donne en donnee dans Q10). « Orthocentre » : le mot n'est pas utilise ; la propriete de concours des hauteurs est rappelee (« نذكّر أنّ ... ») car aucun cours ne l'enseigne. Rien d'ecarte ; rien admis d'autre que ce rappel.
+Tags: hypotenuse-mal-choisie / pythagore-sans-carres / pythagore-racine-oubliee (Q1, Q2), thales-formes-melangees (Q4 b ; Q5 a) = LE piege du lecteur, segment-mal-choisi (Q4 c ; Q5 b ; Q6 c ; Q7 b ; Q9 a,b), thales-rapport-inverse (Q4 d ; Q5 c), pythagore-reciproque-role (Q6 a), angle-droit-mauvais-sommet (Q6 d), condition-suffisante-supposee (Q7 a,c ; Q8 c,d), droites-remarquables-confondues (Q8 b), aire-triangle-sans-moitie (Q9 d). Tous existent dans origin/main.
+A verifier par l'auditeur: Q6 (3 distracteurs a premisses vraies sauf a : « circulaire » ; l'autre route valable HCI rectangle en H est volontairement absente des options) ; Q7 (route valable unique : droite des milieux dans ABC ; la route « mediane/hauteur du triangle isocele OBC » est valable aussi mais n'apparait dans aucune option) ; Q8 b (« K centre de gravite » : fausse identification, famille centre de gravite/orthocentre non proposee comme etiquette neuve : 2 questions seulement, M37 Q11 et celle-ci, et la presente option est une confusion de DROITES) ; Q9 (cle 8√5/5 ni minimum ni maximum des options) ; Q10 numeric donne CL en donnee.
+
+## Retouches finales M37 (2026-10-12, apres relecture adversariale)
+- Q11 option a (« مركز ثقله ») : etiquetee math.geo.droites-remarquables-confondues (meme famille que 09/25-Q3 c deja rangee sous cette etiquette par L14 : hauteurs prises pour mediane/centre de gravite) -> plus de candidate « centre-gravite-orthocentre-confondus » (pas de nouvelle etiquette).
+- Q8 option c « 4 » = OA = OE (cote entier pris pour NF) : etiquetee segment-mal-choisi + ajoutee a l'explication.
+- Q10 option d « 12 » (chaine incoherente) remplacee par « 1/4 » = FG/EA (denominateur EA au lieu de NF) : segment-mal-choisi + explication ; v37 mis a jour.
+- Q1 option d « متقايس الأضلاع » : erreur ajoutee a l'explication (DA = DB pris pour equilateral).

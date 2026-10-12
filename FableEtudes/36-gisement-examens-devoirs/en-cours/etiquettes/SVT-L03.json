@@ -1,0 +1,86 @@
+{
+ "matiere": "sciences-vie-terre",
+ "lot": "SVT-L03",
+ "chapitre": "08-at-tanaffus",
+ "nouvelles": {
+  "bio.resp.appareil-fabrique-l-oxygene": {
+   "fr": "Tu crois que les voies respiratoires ou le poumon fabriquent l'oxygène : ils ne font que le prélever dans l'air (21 %) et le céder au sang à travers la paroi des alvéoles.",
+   "en": "You think the airways or the lungs make oxygen: they only take it from the air (21%) and pass it to the blood across the alveolar wall.",
+   "ar": "تظنّ أنّ المسالك التنفّسيّة أو الرّئة تصنع الأكسيجين: إنّما تأخذه من الهواء (21 %) وتمرّره إلى الدّم عبر جدار السّنخ."
+  },
+  "bio.resp.respiration-photosynthese-confondues": {
+   "fr": "Tu confonds la respiration cellulaire avec la photosynthèse, sa réaction inverse : dans la cellule, le glucose et l'oxygène sont consommés, le dioxyde de carbone et l'eau rejetés, et de l'énergie est libérée.",
+   "en": "You confuse cellular respiration with photosynthesis, its reverse reaction: in the cell, glucose and oxygen are used up, carbon dioxide and water given off, and energy released.",
+   "ar": "تخلط بين التنفّس الخلويّ والتركيب الضوئيّ، وهو التفاعل المعاكس له: داخل الخليّة يُستهلك الجليكوز والأكسيجين، ويُطرح ثنائي أكسيد الكربون والماء، وتتحرّر الطّاقة."
+  }
+ },
+ "options": [
+  {
+   "file": "07",
+   "q": 2,
+   "opt": "a",
+   "id": "bio.resp.appareil-fabrique-l-oxygene",
+   "texte": "البنية 1 : امتصاص المغذّيات الخلويّة ؛ البنية 2 : صنع الأكسيجين الذي تحتاجه الخلايا",
+   "remplace": null
+  },
+  {
+   "file": "07",
+   "q": 5,
+   "opt": "d",
+   "id": "bio.resp.respiration-photosynthese-confondues",
+   "texte": "التركيب الضوئيّ : صنع الجليكوز من ثنائي أكسيد الكربون والماء",
+   "remplace": null
+  }
+ ],
+ "options_id_existant_absent_de_l_arbre": [],
+ "hors_lot": [
+  {
+   "chapitre": "08-at-tanaffus",
+   "file": "01",
+   "nom_fichier": "01-tamrin.json",
+   "q": 6,
+   "opt": "c",
+   "id": "bio.resp.appareil-fabrique-l-oxygene",
+   "texte": "تحويل الهواء إلى أكسيجين",
+   "remplace": null
+  },
+  {
+   "chapitre": "08-at-tanaffus",
+   "file": "06",
+   "nom_fichier": "06-defi-concours.json",
+   "q": 3,
+   "opt": "b",
+   "id": "bio.resp.appareil-fabrique-l-oxygene",
+   "texte": "لأنّ رئته تصنع الأكسيجين",
+   "remplace": null
+  },
+  {
+   "chapitre": "08-at-tanaffus",
+   "file": "quiz",
+   "nom_fichier": "quiz.json",
+   "q": 8,
+   "opt": "b",
+   "id": "bio.resp.respiration-photosynthese-confondues",
+   "texte": "ثنائي أكسيد الكربون + ماء ← جليكوز + أكسيجين",
+   "remplace": null
+  },
+  {
+   "chapitre": "08-at-tanaffus",
+   "file": "04",
+   "nom_fichier": "04-defi.json",
+   "q": 3,
+   "opt": "b",
+   "id": "bio.resp.respiration-photosynthese-confondues",
+   "texte": "ثنائي أكسيد الكربون + ماء ← جليكوز + أكسيجين",
+   "remplace": null
+  }
+ ],
+ "note": [
+  "Fichier 07 = 08-at-tanaffus/exercices/07-examen-2025-ex2-structures-d-echange-cellule-et-equation.json (matière sciences-vie-terre). DEUX étiquettes NOUVELLES, acceptées à l'arbitrage du 2026-10-11 avec les libellés fr/en/ar de audit-SVT-L03.md : les deux options du lot (07 Q2 a, 07 Q5 d) restent MUETTES dans le fichier tant que les identifiants ne sont pas créés au registre ; à poser à la livraison (sans compétence, comme les autres bio.resp.*).",
+  "bio.resp.appareil-fabrique-l-oxygene : trois questions distinctes l'exécutent exactement — 07 Q2 a (« البنية 2 : صنع الأكسيجين الذي تحتاجه الخلايا », une seule erreur ; l'option b la porte avec une seconde erreur et reste muette), publiée 01-tamrin Q6 c (« تحويل الهواء إلى أكسيجين », rôle de l'appareil respiratoire) et publiée 06-defi-concours Q3 b (« لأنّ رئته تصنع الأكسيجين »). L'étiquette primaire eveil.resp.poumons-fabriquent-oxygene existe mais dans l'espace eveil (« الحويصلات » pour les alvéoles) : ne pas la réemployer en SVT.",
+  "bio.resp.respiration-photosynthese-confondues : trois placements — 07 Q5 d (« التركيب الضوئيّ : صنع الجليكوز من ثنائي أكسيد الكربون والماء » donné comme réaction qui libère l'énergie de la cellule), publiée quiz Q8 b et publiée 04-defi Q3 b (équation de la respiration écrite à l'envers = celle de la photosynthèse). 07 Q6 c (équation renversée) n'existe plus : Q6 est devenue une lacune « أكمل المعادلة » (clé « الماء ») après l'audit, donc pas de placement. Hors périmètre exact : quiz Q8 d « أكسيجين + ماء ← جليكوز + ثنائي أكسيد الكربون » mélange O₂ et CO₂ sans être l'équation de la photosynthèse : laissée muette.",
+  "hors_lot : texte et étiquette actuelle lus sur origin/main au commit edb6e7952d9d (2026-10-11 18:54 UTC) ; les quatre options publiées sont aujourd'hui SANS étiquette (remplace = null). La recherche par motifs sur tout le SVT publié (options contenant « تصنع/تنتج/تولّد الأكسيجين », « الهواء إلى أكسيجين », « التركيب الضوئيّ », « ← جليكوز ») ne trouve aucune autre option de ces deux familles.",
+  "Étiquettes EXISTANTES posées par ce lot après l'audit (toutes présentes au registre de l'arbre et d'origin/main) : bio.resp.respiration-combustion (07 Q5 b ; 11 Q8 a), bio.dig.absorption-dans-la-digestion (07 Q2 c ; 09 Q2 d), bio.dig.fragmentation-prise-pour-digestion (09 Q2 b), bio.sang.plasma-transporte-l-oxygene (09 Q3 a ; 10 Q5 d), bio.sang.fonctions-des-cellules-confondues (09 Q3 b), bio.demarche.cause-sans-temoin (10 Q1 b ; 10 Q3 a), bio.lecture.valeur-d-une-autre-grandeur (10 Q4 b,c,d ; 10 Q6 b,c ; 10 Q8 b ; 11 Q1 a ; 11 Q2 d ; 11 Q4 b), bio.alim.valeurs-energetiques-confondues (11 Q1 b,d ; 11 Q2 a,c ; 11 Q3 c,d), bio.alim.quantite-sans-qualite (11 Q4 c ; 11 Q5 b), bio.circ.oreillettes-inversees (08 Q3 a : « الأوردة الرّئويّة بين الرّئة والتجويف 1 » (cavités numérotées 1 à 4 : les pastilles d'options du portail sont déjà A à D), même erreur que 07/01-tamrin Q5 a « الأذينة اليمنى » pour les veines pulmonaires). Retirées sur décision de l'audit : 09 Q2 c bio.dig.specificite-enzyme-ignoree, 10 Q7 c bio.lecture.valeur-d-une-autre-grandeur.",
+  "Remarque de registre, facultative (audit 11) : le libellé de bio.alim.valeurs-energetiques-confondues dit « Tu échanges » (fr) / « You swap » (en), plus étroit que son usage (04/02-tamrin Q1 a « 4 » pour les lipides ; 11 Q1 b et 11 Q2 c « 4 kcal/g pour les trois classes ») ; « Tu confonds » / « You mix up » le couvriraient exactement (l'arabe dit déjà « تخلط »)."
+ ]
+}
