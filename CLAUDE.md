@@ -13,6 +13,12 @@ permission est une validation manuelle. Une ligne « en attente d'un humain » s
 avant d'être crue. Texte canonique :
 [`docs/agents/zero-intervention.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/agents/zero-intervention.md).
 
+🧭 **Pilotage unique du contenu scolaire : [`FableEtudes/PILOTAGE.md`](FableEtudes/PILOTAGE.md)** — à lire
+AVANT toute action de contenu, à mettre à jour DANS la PR qui fait avancer un couple. Depuis le
+2026-10-12, la campagne « 9ᵉ au patron » et le gisement (étude 36) sont fusionnés : un seul passage
+par couple (lecture manuel + sujets + devoirs → cours au patron + exercices + missions → étiquettes →
+audit → armement → publication), une seule session, aucune étape refaite.
+
 - **Propriété intellectuelle** : tous droits réservés (`LICENSE-CONTENT.md` du moteur).
 - **Authoring** : méthode de référence `FableEtudes/METHODE-GENERATION-CONTENU.md`. Ouvrir la
   session ici, `add_repo MBeji/yahia-quest-arena`, éditer `content/`, laisser `content-ci`

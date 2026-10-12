@@ -1,0 +1,2 @@
+# Tranche 4 — pages 1-2, 129-176
+Lis d'abord EN ENTIER /tmp/claude-0/-home-user/8ff73c67-6eab-5a69-a66d-d237b8d69142/scratchpad/ar9/brief-lecture.md. Ta tranche : pages de garde/المقدّمة (1–2), et le bloc صرف : 129 (المقصور), 134 (المنقوص), 140 (الممدود), 148, 154 (معاني المزيد), 164 (التّصغير), 169 (النّسبة والمصدر الصّناعيّ), et le فهرس 175–176. Certaines de ces leçons sont déjà transcrites dans la fiche §2 bis et ont des chapitres récents (12, 13, 14) : vérifie la fiche contre la page plutôt que de la recopier, et lis en entier 148–163 (jamais lues).
