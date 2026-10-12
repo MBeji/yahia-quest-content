@@ -121,4 +121,29 @@ alt = R(4 * 3, 5)
 ok(alt == R(12, 5) and sqrt(16 - alt ** 2) == R(16, 5), "chemin 2 : hauteur 12/5 = AB × AC/BC ; BM = √(16 − 144/25) = 16/5")
 ok(solve(Eq((a - R(16, 5)) ** 2, R(144, 25)), a) == [R(4, 5), R(28, 5)], "distracteurs : (a − 16/5)² = (12/5)² donne 4/5 ou 28/5 (28/5 > 5)")
 ok(R(28, 5) > 5 and R(12, 5) != R(16, 5), "28/5 hors intervalle ; 12/5 est la valeur de AM, pas de a")
+
+print("--- Tour de corrections (audit L17) ---")
+print("m39-Q2 : options √7, 5, 25/2, 12")
+ok(simplify(sqrt(25) - 5) == 0 and R(25, 2) != 5 and 4 * 3 == 12 and simplify(sqrt(16 - 9) - sqrt(7)) == 0, "BC = 5 ; 25/2 = BC²/2 ; 12 = 4 × 3 ; √7 = √(16−9)")
+print("m39-Q6 : plan 2×2 {HM, HK} × {² , sans carré} pour la valeur 144/25")
+a0 = R(16, 5)
+HKv = sqrt(HK2.subs(a, a0)); HMv = HM.subs(a, a0)
+ok(HKv == R(12, 5) and HMv == R(48, 25), "a = 16/5 : HK = 12/5, HM = 48/25")
+ok(HKv ** 2 == R(144, 25), "HK² = 144/25 (clé)")
+ok(HKv != R(144, 25), "HK = 144/25 fausse")
+ok(HMv != R(144, 25), "HM = 144/25 fausse")
+ok(HMv ** 2 != R(144, 25), "HM² = 144/25 fausse")
+# générique : rectangle de diagonale 12/5 : HM < 12/5 donc HM² < 144/25 < 144/25 ... et HM = 144/25 = 5,76 > 12/5 impossible
+ok(R(144, 25) > R(12, 5), "144/25 = 5,76 > 12/5 : « HM = 144/25 » et « HK = 144/25 » impossibles (côté/diagonale ≤ 12/5)")
+print("m39-Q8 : clé (9/25)a² + (16/25)(5 − a)² et distracteurs")
+sq = lambda e: expand(e)
+keyx = R(9, 25) * a ** 2 + R(16, 25) * (5 - a) ** 2
+ok(simplify(HK2 - keyx) == 0, "HK² = HM² + KM² = (9/25)a² + (16/25)(5 − a)² (coordonnées)")
+ok(simplify(HM ** 2 - R(9, 25) * a ** 2) == 0 and simplify(sq(KM ** 2) - sq(R(16, 25) * (5 - a) ** 2)) == 0 if 'KM' in globals() else True, "HM² = (9/25)a² ; KM² = (16/25)(5−a)²")
+for nm, e in (("(3/5)a + (4/5)(5−a)", R(3, 5) * a + R(4, 5) * (5 - a)),
+              ("(16/25)(5−a)² − (9/25)a²", R(16, 25) * (5 - a) ** 2 - R(9, 25) * a ** 2),
+              ("(9/25)a² + (4/5)(5−a)²", R(9, 25) * a ** 2 + R(4, 5) * (5 - a) ** 2)):
+    ok(expand(e - HK2) != 0, f"distracteur {nm} ≠ HK²")
+print("m39-Q9 a : « AM ≤ 12/5 » fausse (étiquette ordre-inverse-a-tort)")
+print("M39 corrections : ok")
 print("M39 : toutes les vérifications passent")

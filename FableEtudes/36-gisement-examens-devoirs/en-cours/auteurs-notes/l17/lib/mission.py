@@ -9,7 +9,7 @@ WORK = os.path.dirname(HERE)
 REG = json.load(open(os.path.join(WORK, "ref", "misconceptions.origin.json"), encoding="utf-8"))
 _comp = json.load(open(os.path.join(WORK, "ref", "competences.origin.json"), encoding="utf-8"))
 COMP = {c["id"] for c in _comp["competencies"]}
-CHAPTER_DIR = "/home/user/yahia-quest-content/content/math/18-quadrilateres/exercices"
+CHAPTER_DIR = os.environ.get("L17_OUT", "/home/user/wt-gis/content/math/18-quadrilateres/exercices")
 
 DIAC = re.compile("[ً-ْٰـ]")
 ARABIC_INDIC = re.compile("[٠-٩۰-۹]")

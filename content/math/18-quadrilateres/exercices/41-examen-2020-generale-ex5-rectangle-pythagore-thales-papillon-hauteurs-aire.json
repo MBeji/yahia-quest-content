@@ -16,8 +16,8 @@
         },
         {
           "id": "b",
-          "text": "6",
-          "misconceptionTag": "math.geo.pythagore-sans-carres"
+          "text": "10",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
         },
         {
           "id": "c",
@@ -25,12 +25,12 @@
         },
         {
           "id": "d",
-          "text": "20",
-          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+          "text": "√6",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
         }
       ],
       "correctOption": "c",
-      "explanation": "المثلّث BCI قائم في C لأنّ ABCD مستطيل وI من [CD]، ووتره [BI]. بفيثاغورس: BI² = BC² + CI² = 16 + 4 = 20، إذن BI = √20 = √(4 × 5) = 2√5 cm ✓. الخطأ الشائع: جمع الطولين مباشرةً 4 + 2 = 6، أو اعتبار [BC] وترًا فنطرح المربّعين 16 − 4 = 12 ونجد 2√3، أو التوقّف عند BI² = 20.",
+      "explanation": "المثلّث BCI قائم في C لأنّ ABCD مستطيل وI من [CD]، ووتره [BI]. بفيثاغورس: BI² = BC² + CI² = 16 + 4 = 20، إذن BI = √20 = √(4 × 5) = 2√5 cm ✓. الخطأ الشائع: اعتبار [BC] وترًا فنطرح المربّعين 16 − 4 = 12 ونجد 2√3، أو أخذ نصف 20 بدل جذره فنجد 10، أو جمع الطولين تحت الجذر فنجد √(4 + 2) = √6.",
       "difficulty": 1,
       "competencies": [
         "math.geo.pythagore"
@@ -55,12 +55,12 @@
         },
         {
           "id": "d",
-          "text": "80",
-          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+          "text": "40",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
         }
       ],
       "correctOption": "b",
-      "explanation": "المثلّث ABC قائم في B لأنّ ABCD مستطيل، ووتره [AC]. بفيثاغورس: AC² = AB² + BC² = 64 + 16 = 80، إذن AC = √80 = √(16 × 5) = 4√5 cm ✓. الخطأ الشائع: جمع الطولين مباشرةً 8 + 4 = 12، أو اعتبار [AB] وترًا فنطرح المربّعين 64 − 16 = 48 ونجد 4√3، أو التوقّف عند AC² = 80.",
+      "explanation": "المثلّث ABC قائم في B لأنّ ABCD مستطيل، ووتره [AC]. بفيثاغورس: AC² = AB² + BC² = 64 + 16 = 80، إذن AC = √80 = √(16 × 5) = 4√5 cm ✓. الخطأ الشائع: جمع الطولين مباشرةً 8 + 4 = 12، أو اعتبار [AB] وترًا فنطرح المربّعين 64 − 16 = 48 ونجد 4√3، أو أخذ نصف 80 بدل جذره فنجد 40.",
       "difficulty": 1,
       "competencies": [
         "math.geo.pythagore"
@@ -123,16 +123,15 @@
         {
           "id": "c",
           "text": "16√5/5",
-          "misconceptionTag": "math.geo.segment-mal-choisi"
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
         },
         {
           "id": "d",
-          "text": "16√5",
-          "misconceptionTag": "math.geo.thales-rapport-inverse"
+          "text": "16√5"
         }
       ],
       "correctOption": "a",
-      "explanation": "H من [AC] فـ HC + HA = AC. ومن HC/HA = 1/4 نجد HA = 4 × HC، إذن 5 × HC = AC = 4√5، ومنه HC = 4√5/5 cm ✓. الخطأ الشائع: اعتبار 1/4 نسبة HC إلى القطعة [AC] كلّها فنكتب HC = 4√5/4 = √5، مع أنّ 1/4 نسبة جزء إلى جزء؛ أو مبادلة HC و HA فنجد 16√5/5؛ أو قلب النسبة فنجد HC = 4 × 4√5 = 16√5.",
+      "explanation": "H من [AC] فـ HC + HA = AC. ومن HC/HA = 1/4 نجد HA = 4 × HC، إذن 5 × HC = AC = 4√5، ومنه HC = 4√5/5 cm ✓. الخطأ الشائع: اعتبار 1/4 نسبة HC إلى القطعة [AC] كلّها فنكتب HC = 4√5/4 = √5، مع أنّ 1/4 نسبة جزء إلى جزء؛ أو قلب النسبة بمبادلة HC و HA فنجد HC = 4 × HA أي 16√5/5؛ أو ضرب طول القطر كلّه في 4 فنجد 16√5.",
       "difficulty": 2,
       "competencies": [
         "math.geo.thales-direct"
@@ -149,12 +148,11 @@
         {
           "id": "b",
           "text": "2√5/5",
-          "misconceptionTag": "math.geo.segment-mal-choisi"
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
         },
         {
           "id": "c",
-          "text": "8√5",
-          "misconceptionTag": "math.geo.thales-rapport-inverse"
+          "text": "8√5"
         },
         {
           "id": "d",
@@ -203,17 +201,16 @@
       "options": [
         {
           "id": "a",
-          "text": "OJ = AB/2 = 4 و BC = 4، فبخاصيّة المنتصفين في المثلّث ABC يكون OJ = BC، إذن (OJ) ⊥ (BC)",
-          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+          "text": "O منتصف [AC] و J منتصف [BC]، فبخاصيّة المنتصفين في المثلّث ABC يكون OJ = AB/2 = 4 cm، و (AB) ∥ (DC)، إذن (OJ) ⊥ (BC)"
         },
         {
           "id": "b",
-          "text": "O منتصف [AC] و J منتصف [BC]، فبخاصيّة المنتصفين في المثلّث ABC يكون (OJ) ∥ (AC)، و (AC) ⊥ (BC)، إذن (OJ) ⊥ (BC)",
-          "misconceptionTag": "math.geo.segment-mal-choisi"
+          "text": "O منتصف [AC] و J منتصف [BC]، فبخاصيّة المنتصفين في المثلّث ABC يكون OJ = AB/2 = 4 cm، و (AB) ⊥ (BC)، إذن (OJ) ⊥ (BC)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
         },
         {
           "id": "c",
-          "text": "O منتصف [AC] و J منتصف [BC]، فبخاصيّة المنتصفين في المثلّث ABC يكون (OJ) ∥ (AB)، إذن (OJ) ⊥ (BC)",
+          "text": "O منتصف [AC] و J منتصف [BC]، فبخاصيّة المنتصفين في المثلّث ABC يكون (OJ) ∥ (AB)، و (AB) ∥ (DC)، إذن (OJ) ⊥ (BC)",
           "misconceptionTag": "math.geo.condition-suffisante-supposee"
         },
         {
@@ -222,7 +219,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "O مركز المستطيل فهو منتصف القطر [AC]، و J منتصف [BC]. في المثلّث ABC يصل المستقيم (OJ) بين منتصفي ضلعين، فهو يوازي الضلع الثالث [AB]. وبما أنّ (AB) ⊥ (BC) في المستطيل، فإنّ (OJ) ⊥ (BC) ✓. الخطأ الشائع: موازاة (OJ) للضلع [AC] الذي يحمل O بدل الضلع الثالث [AB]، أو الاستناد إلى تساوي طولين OJ = BC الذي لا يعطي تعامدًا، أو نسيان الخطوة الأخيرة (AB) ⊥ (BC) التي تنقل التعامد إلى (OJ).",
+      "explanation": "O مركز المستطيل فهو منتصف القطر [AC]، و J منتصف [BC]. في المثلّث ABC يصل المستقيم (OJ) بين منتصفي ضلعين، فهو يوازي الضلع الثالث [AB]. وبما أنّ (AB) ⊥ (BC) في المستطيل، فإنّ (OJ) ⊥ (BC) ✓. المعطيات في الخيارات الأخرى صحيحة، لكنّ استدلالها غير كافٍ. الخطأ الشائع: الاكتفاء بالطول OJ = AB/2 وهو لا يعطي اتّجاهًا، أو بتوازي (AB) و (DC) الذي لا يخصّ (BC)، أو بتوازي (OJ) و (AB) دون التعامد (AB) ⊥ (BC).",
       "difficulty": 3,
       "competencies": [
         "math.geo.quadrilateres",

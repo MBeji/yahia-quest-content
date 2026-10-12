@@ -41,7 +41,8 @@
       "options": [
         {
           "id": "a",
-          "text": "3"
+          "text": "9",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
         },
         {
           "id": "b",
@@ -59,7 +60,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "في المثلّث ABD القائم في D ووتره [AB]: DA² + DB² = AB² = 36. وبما أنّ DA = DB فإنّ 2 × DB² = 36، أي DB² = 18، ومنه DB = √18 = √(9 × 2) = 3√2 cm ✓. الخطأ الشائع: عدّ [AB] ضلعًا قائمًا و [BD] وترًا فنجد BD² = 36 + 36 = 72، أي 6√2؛ أو التوقّف عند BD² = 18؛ أو أخذ نصف الوتر 3.",
+      "explanation": "في المثلّث ABD القائم في D ووتره [AB]: DA² + DB² = AB² = 36. وبما أنّ DA = DB فإنّ 2 × DB² = 36، أي DB² = 18، ومنه DB = √18 = √(9 × 2) = 3√2 cm ✓. الخطأ الشائع: عدّ [AB] ضلعًا قائمًا و [BD] وترًا فنجد BD² = 36 + 36 = 72، أي 6√2؛ أو التوقّف عند BD² = 18؛ أو أخذ نصف 18 بدل جذره فنجد 9.",
       "difficulty": 2,
       "competencies": [
         "math.geo.pythagore"
@@ -99,7 +100,8 @@
       "options": [
         {
           "id": "a",
-          "text": "4"
+          "text": "16",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
         },
         {
           "id": "b",
@@ -117,7 +119,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "E من نصف الدائرة التي قطرها [AC] فالمثلّث AEC قائم في E ووتره [AC] = 8 cm. بفيثاغورس: EA² + EC² = 64، وبما أنّ EA = EC فإنّ 2 × EC² = 64، أي EC² = 32، ومنه EC = √32 = √(16 × 2) = 4√2 cm ✓. الخطأ الشائع: عدّ [AC] ضلعًا قائمًا و [EC] وترًا فنجد EC² = 64 + 64 = 128، أي 8√2؛ أو التوقّف عند EC² = 32؛ أو أخذ نصف الوتر 4.",
+      "explanation": "E من نصف الدائرة التي قطرها [AC] فالمثلّث AEC قائم في E ووتره [AC] = 8 cm. بفيثاغورس: EA² + EC² = 64، وبما أنّ EA = EC فإنّ 2 × EC² = 64، أي EC² = 32، ومنه EC = √32 = √(16 × 2) = 4√2 cm ✓. الخطأ الشائع: عدّ [AC] ضلعًا قائمًا و [EC] وترًا فنجد EC² = 64 + 64 = 128، أي 8√2؛ أو التوقّف عند EC² = 32؛ أو أخذ نصف 32 بدل جذره فنجد 16.",
       "difficulty": 2,
       "competencies": [
         "math.geo.pythagore",
@@ -203,26 +205,25 @@
       "options": [
         {
           "id": "a",
-          "text": "(EF) ∥ (DG) لأنّ كلًّا منهما عمودي على (AC)، فالرباعي EFGD متوازي أضلاع",
-          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+          "text": "(EF) ∥ (DG) لأنّ كلًّا منهما عمودي على (AC)، و EF = FO = 2 cm لأنّ F منتصف [OE]، فالرباعي EFGD متوازي أضلاع",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
         },
         {
           "id": "b",
-          "text": "EF = DG = 2 cm لأنّ F منتصف [OE] وG مركز ثقل المثلّث ABD، فالرباعي EFGD متوازي أضلاع",
+          "text": "(EF) ⊥ (AC) لأنّ AEC متقايس الضلعين رأسه E و O منتصف [AC]، و EF = DG = 2 cm لأنّ F منتصف [OE] و G مركز ثقل المثلّث ABD، فالرباعي EFGD متوازي أضلاع",
           "misconceptionTag": "math.geo.condition-suffisante-supposee"
         },
         {
           "id": "c",
-          "text": "[EF] و [DG] قطران في الرباعي EFGD لهما المنتصف نفسه لأنّ كلًّا منهما عمودي على (AC)، فالرباعي EFGD متوازي أضلاع",
-          "misconceptionTag": "math.geo.parallelogramme-sommets-mal-ordonnes"
+          "text": "(EF) ⊥ (AC) لأنّ AEC متقايس الضلعين رأسه E و O منتصف [AC]، و EF = FO = 2 cm لأنّ F منتصف [OE]، فالرباعي EFGD متوازي أضلاع"
         },
         {
           "id": "d",
-          "text": "(EF) ∥ (DG) لأنّ كلًّا منهما عمودي على (AC)، و EF = DG، فالرباعي EFGD متوازي أضلاع"
+          "text": "(EF) ∥ (DG) لأنّ كلًّا منهما عمودي على (AC)، و EF = DG = 2 cm لأنّ F منتصف [OE] و G مركز ثقل المثلّث ABD، فالرباعي EFGD متوازي أضلاع"
         }
       ],
       "correctOption": "d",
-      "explanation": "(OE) ⊥ (AC) لأنّ AEC متقايس الضلعين رأسه E و O منتصف [AC]، و (DI) ⊥ (AB) لأنّ ABD متقايس الضلعين رأسه D و I منتصف [AB]. والمستقيمان (EF) = (OE) و (DG) = (DI) عموديان على (AC) فهما متوازيان. و EF = OE/2 = 2 cm، و DG = 2 cm لأنّ G عند ثلثَي الموسّط [DI] الذي طوله 3 cm. فللرباعي EFGD ضلعان متقابلان [EF] و [GD] متوازيان ومتقايسان، فهو متوازي أضلاع ✓. الخطأ الشائع: الاكتفاء بالتوازي وحده أو بالتقايس وحده، أو عدّ [EF] و [DG] قطرين وهما ضلعان متقابلان، فالقطران في EFGD هما [EG] و [FD].",
+      "explanation": "(OE) ⊥ (AC) لأنّ AEC متقايس الضلعين رأسه E و O منتصف [AC]، و (DI) ⊥ (AB) لأنّ ABD متقايس الضلعين رأسه D و I منتصف [AB]. والمستقيمان (EF) = (OE) و (DG) = (DI) عموديان على (AC) فهما متوازيان. و EF = OE/2 = 2 cm، و DG = 2 cm لأنّ G عند ثلثَي الموسّط [DI] الذي طوله 3 cm. فللرباعي EFGD ضلعان متقابلان [EF] و [GD] متوازيان ومتقايسان، فهو متوازي أضلاع ✓. الخطأ الشائع: الاكتفاء بتعامد (EF) مع (AC) دون التوازي مع (DG)، أو مقارنة EF بقطعة أخرى غير [DG] (مثل [FO]) بدل مقارنتها بالضلع المقابل لها.",
       "difficulty": 3,
       "competencies": [
         "math.geo.quadrilateres",
@@ -243,7 +244,7 @@
         },
         {
           "id": "c",
-          "text": "4",
+          "text": "8",
           "misconceptionTag": "math.geo.segment-mal-choisi"
         },
         {
@@ -253,7 +254,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "المثلّث AEC قائم ومتقايس الضلعين رأسه E ووتره [AC] = 8 cm: AE² + EC² = 64 و AE = EC، فـ AE² = 32 و AE = 4√2 cm. في المثلّث OAE النقطتان N و F منتصفا الضلعين [OA] و [OE]، فالقطعة [NF] توازي الضلع الثالث [AE] وطولها نصفه: NF = AE/2 = 2√2 cm ✓. الخطأ الشائع: أخذ نصف ضلع يحمل أحد المنتصفين، كنصف [OA] الذي يساوي 2، بدل نصف الضلع الثالث [AE]؛ أو أخذ طول ضلع كامل يحمل أحد المنتصفين كالضلع [OA] فنجد 4؛ أو إهمال القسمة على 2 فنجد NF = AE = 4√2.",
+      "explanation": "المثلّث AEC قائم ومتقايس الضلعين رأسه E ووتره [AC] = 8 cm: AE² + EC² = 64 و AE = EC، فـ AE² = 32 و AE = 4√2 cm. في المثلّث OAE النقطتان N و F منتصفا الضلعين [OA] و [OE]، فالقطعة [NF] توازي الضلع الثالث [AE] وطولها نصفه: NF = AE/2 = 2√2 cm ✓. الخطأ الشائع: أخذ نصف ضلع يحمل أحد المنتصفين، كنصف [OA] الذي يساوي 2، بدل نصف الضلع الثالث [AE]؛ أو أخذ طول الوتر [AC] نفسه فنجد 8؛ أو إهمال القسمة على 2 فنجد NF = AE = 4√2.",
       "difficulty": 3,
       "competencies": [
         "math.geo.triangles-base",
@@ -321,7 +322,7 @@
       ]
     },
     {
-      "prompt": "ABD مثلّث قائم ومتقايس الضلعين رأسه D حيث AB = 6 cm، والنقطة I منتصف [AB]، والنقطة G مركز ثقله. النقطة N من [AB] حيث AN = 2 cm، ونعلم أنّ المستقيم (NG) يوازي (AD).\nماذا تمثّل النقطة G بالنسبة إلى المثلّث DNB ؟\n<svg viewBox=\"0 0 300 190\"><title>المثلّث DNB ومركز ثقل المثلّث ABD النقطة G</title><polygon points=\"119,64 88,157 212,157\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M212 157 A93 93 0 0 0 26 157\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M26 157 L212 157\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polygon points=\"119,64 88,157 212,157\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M119 64 L119 157\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M88 157 L119 126\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"26,157 119,64\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"26\" cy=\"157\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"212\" cy=\"157\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"88\" cy=\"157\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"119\" cy=\"157\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"119\" cy=\"64\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"119\" cy=\"126\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"14.31\" y=\"155.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"223.69\" y=\"155.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"88\" y=\"175.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"119\" y=\"175.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"119\" y=\"55.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"132.5\" y=\"131.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
+      "prompt": "ABD مثلّث قائم ومتقايس الضلعين رأسه D حيث AB = 6 cm، والنقطة I منتصف [AB]، والنقطة G مركز ثقله. النقطة N من [AB] حيث AN = 2 cm، ونعلم أنّ المستقيم (NG) يوازي (AD). نذكّر أنّ موسّطات المثلّث تتلاقى في مركز ثقله، وأنّ موسّطاته العموديّة تتلاقى في مركز دائرته المحيطة، وأنّ ارتفاعاته تتلاقى في مركزه القائم.\nماذا تمثّل النقطة G بالنسبة إلى المثلّث DNB ؟\n<svg viewBox=\"0 0 300 190\"><title>المثلّث DNB ومركز ثقل المثلّث ABD النقطة G</title><polygon points=\"119,64 88,157 212,157\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M212 157 A93 93 0 0 0 26 157\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><path d=\"M26 157 L212 157\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polygon points=\"119,64 88,157 212,157\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M119 64 L119 157\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M88 157 L119 126\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"26,157 119,64\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"26\" cy=\"157\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"212\" cy=\"157\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"88\" cy=\"157\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"119\" cy=\"157\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"119\" cy=\"64\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"119\" cy=\"126\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"14.31\" y=\"155.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"223.69\" y=\"155.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"88\" y=\"175.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"119\" y=\"175.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"119\" y=\"55.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"132.5\" y=\"131.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
       "options": [
         {
           "id": "a",

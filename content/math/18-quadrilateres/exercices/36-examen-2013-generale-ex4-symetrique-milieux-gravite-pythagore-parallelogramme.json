@@ -78,7 +78,7 @@
         },
         {
           "id": "c",
-          "text": "BE = ED"
+          "text": "BE = 2 × ED"
         },
         {
           "id": "d",
@@ -97,11 +97,10 @@
         "correct": [
           "a",
           "b",
-          "c",
           "d"
         ]
       },
-      "explanation": "G مركز ثقل المثلّث ABD فهو نقطة تلاقي موسّطاته الثلاثة، والمستقيم (AG) يمرّ من الرأس A ومن G، فهو الموسّط الصادر من A. والموسّط يصل الرأس بمنتصف الضلع المقابل: E منتصف [BD]، أي BE = ED. ويقع مركز الثقل على ثلثَي الموسّط انطلاقًا من الرأس: AG = (2/3) × AE و GE = (1/3) × AE، ومنه AG = 2 × GE. فهذه العبارات الأربع صحيحة: (AG) موسّط، و E منتصف [BD]، و BE = ED، و AG = 2 × GE ✓. أمّا GE = 2 × AG فمقلوبة، وG ليست منتصف [AE] لأنّها أقرب إلى E منها إلى A.",
+      "explanation": "G مركز ثقل المثلّث ABD فهو نقطة تلاقي موسّطاته الثلاثة، والمستقيم (AG) يمرّ من الرأس A ومن G، فهو الموسّط الصادر من A. والموسّط يصل الرأس بمنتصف الضلع المقابل: E منتصف [BD]، أي BE = ED. ويقع مركز الثقل على ثلثَي الموسّط انطلاقًا من الرأس: AG = (2/3) × AE و GE = (1/3) × AE، ومنه AG = 2 × GE. فهذه العبارات الثلاث صحيحة: (AG) موسّط، و E منتصف [BD]، و AG = 2 × GE ✓. أمّا BE = 2 × ED فخاطئة لأنّ BE = ED، و GE = 2 × AG مقلوبة، وG ليست منتصف [AE] لأنّها أقرب إلى E منها إلى A.",
       "difficulty": 2,
       "competencies": [
         "math.geo.triangles-base"
@@ -156,12 +155,12 @@
         },
         {
           "id": "d",
-          "text": "45",
-          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+          "text": "5√3",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
         }
       ],
       "correctOption": "b",
-      "explanation": "المثلّث ABE قائم في B ووتره [AE]، و BE = BD/2 = 3 cm لأنّ E منتصف [BD]. بفيثاغورس: AE² = AB² + BE² = 36 + 9 = 45، إذن AE = √45 = √(9 × 5) = 3√5 cm ✓. الخطأ الشائع: طرح المربّعين 36 − 9 = 27 فنجد 3√3، أو التوقّف عند AE² = 45، أو استعمال BD كاملًا بدل BE فنجد √72 = 6√2.",
+      "explanation": "المثلّث ABE قائم في B ووتره [AE]، و BE = BD/2 = 3 cm لأنّ E منتصف [BD]. بفيثاغورس: AE² = AB² + BE² = 36 + 9 = 45، إذن AE = √45 = √(9 × 5) = 3√5 cm ✓. الخطأ الشائع: طرح المربّعين 36 − 9 = 27 فنجد 3√3، أو عكس العاملين عند إخراج المربّع الكامل من الجذر فنكتب √45 = 5√3 بدل 3√5، أو استعمال BD كاملًا بدل BE فنجد √72 = 6√2.",
       "difficulty": 2,
       "competencies": [
         "math.geo.pythagore"
@@ -194,36 +193,6 @@
       "difficulty": 2,
       "competencies": [
         "math.geo.quadrilateres"
-      ]
-    },
-    {
-      "prompt": "ABD مثلّث، والنقاط O و E و C منتصفات الأضلاع [AB] و [BD] و [AD] على التوالي. والنقطة G مركز ثقل المثلّث ABD. المستقيم (OG) يحمل الموسّط الصادر من O في المثلّث OEC، والمستقيم (EG) يحمل الموسّط الصادر من E فيه.\nلماذا G مركز ثقل المثلّث OEC ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث OEC والمستقيمان (OG) و (EG)</title><polygon points=\"150,216 241,125 150,125\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"150,216 241,125 150,125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 216 L241 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M241 125 L59 216\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"180.33\" cy=\"155.33\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"254.5\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"170.79\" y=\"150.99\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
-      "options": [
-        {
-          "id": "a",
-          "text": "G على الموسّطين الصادرين من O ومن E معًا، ومركز الثقل هو نقطة تقاطع الموسّطات"
-        },
-        {
-          "id": "b",
-          "text": "G على الموسّط الصادر من O، وكلّ نقطة من موسّط هي مركز ثقل المثلّث الذي يحمل هذا الموسّط",
-          "misconceptionTag": "math.geo.condition-suffisante-supposee"
-        },
-        {
-          "id": "c",
-          "text": "G مركز ثقل المثلّث ABD، والمثلّث OEC رؤوسه على أضلاع ABD، فمركز ثقله هو G أيضًا",
-          "misconceptionTag": "math.geo.segment-mal-choisi"
-        },
-        {
-          "id": "d",
-          "text": "G على الموسّطين الصادرين من O ومن E معًا، وهي منتصف كلّ منهما، فهي مركز ثقل المثلّث OEC",
-          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "المستقيمان (OG) و (EG) يحملان موسّطين مختلفين من موسّطات المثلّث OEC، والنقطة G تنتمي إليهما معًا. ومركز الثقل هو نقطة تقاطع الموسّطات، وموسّطان مختلفان يتقاطعان في نقطة واحدة فقط، فـ G مركز ثقل المثلّث OEC ✓. الخطأ الشائع: الاكتفاء بموسّط واحد، فمركز الثقل يقع على كلّ موسّط لكنّ نقطة من موسّط واحد ليست بالضرورة مركز الثقل؛ أو نقل خاصّية مثلّث إلى مثلّث آخر دون إثبات؛ أو وضع مركز الثقل في منتصف الموسّط بدل ثلثيه انطلاقًا من الرأس.",
-      "difficulty": 2,
-      "competencies": [
-        "math.geo.triangles-base"
       ]
     },
     {
@@ -262,8 +231,8 @@
       "options": [
         {
           "id": "a",
-          "text": "√5",
-          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+          "text": "30",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
         },
         {
           "id": "b",
@@ -281,7 +250,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "(AG) هو الموسّط الصادر من A لأنّ G مركز ثقل المثلّث ABD، فـ E منتصف [BD] و BE = 3 cm. المثلّث ABE قائم في B: AE² = 36 + 9 = 45، أي AE = 3√5 cm. ومركز الثقل عند ثلثَي الموسّط انطلاقًا من الرأس: AG = (2/3) × AE = (2/3) × 3√5 = 2√5 cm ✓. الخطأ الشائع: وضع G عند ثلث الموسّط انطلاقًا من A فنجد √5، أو في منتصفه فنجد 3√5/2، أو تطبيق الثلثين على ضلع آخر مثل [BD] فنجد 4.",
+      "explanation": "(AG) هو الموسّط الصادر من A لأنّ G مركز ثقل المثلّث ABD، فـ E منتصف [BD] و BE = 3 cm. المثلّث ABE قائم في B: AE² = 36 + 9 = 45، أي AE = 3√5 cm. ومركز الثقل عند ثلثَي الموسّط انطلاقًا من الرأس: AG = (2/3) × AE = (2/3) × 3√5 = 2√5 cm ✓. الخطأ الشائع: التوقّف عند AE² = 45 وأخذ ثلثيه فنجد 30 بدل أخذ الجذر أوّلًا، أو وضع G في منتصف الموسّط فنجد 3√5/2، أو تطبيق الثلثين على ضلع آخر مثل [BD] فنجد 4.",
       "difficulty": 3,
       "competencies": [
         "math.geo.pythagore",
@@ -293,26 +262,25 @@
       "options": [
         {
           "id": "a",
-          "text": "[OE] و [DC] ضلعان متقابلان متوازيان لأنّ O و E منتصفا [AB] و [BD] فـ (OE) يوازي (AD)، فالرباعي OEDC متوازي أضلاع",
+          "text": "(OE) ∥ (DC) لأنّ O و E منتصفا [AB] و [BD]، و OC = ED لأنّ OC = BD/2 و E منتصف [BD]، فالرباعي OEDC متوازي أضلاع",
           "misconceptionTag": "math.geo.condition-suffisante-supposee"
         },
         {
           "id": "b",
-          "text": "[OE] و [DC] ضلعان متقابلان متقايسان لأنّ OE = AD/2 بحكم المنتصفين O و E و DC = AD/2 بحكم كون C منتصف [AD]، فالرباعي OEDC متوازي أضلاع",
+          "text": "(EC) ∥ (AB) لأنّ E و C منتصفا [BD] و [AD]، و OE = DC لأنّ OE = AD/2 و C منتصف [AD]، فالرباعي OEDC متوازي أضلاع",
           "misconceptionTag": "math.geo.condition-suffisante-supposee"
         },
         {
           "id": "c",
-          "text": "[OE] و [DC] ضلعان متقابلان متوازيان ومتقايسان لأنّ O و E و C منتصفات فـ (OE) ∥ (AD) و OE = DC = AD/2، فالرباعي OEDC متوازي أضلاع"
+          "text": "(OE) ∥ (DC) لأنّ O و E منتصفا [AB] و [BD]، و OE = DC لأنّ OE = AD/2 و C منتصف [AD]، فالرباعي OEDC متوازي أضلاع"
         },
         {
           "id": "d",
-          "text": "[OE] و [DC] قطران في الرباعي OEDC لهما المنتصف نفسه لأنّ كلًّا منهما يوازي (AD)، فالرباعي OEDC متوازي أضلاع",
-          "misconceptionTag": "math.geo.parallelogramme-sommets-mal-ordonnes"
+          "text": "(EC) ∥ (AB) لأنّ E و C منتصفا [BD] و [AD]، و OC = ED لأنّ OC = BD/2 و E منتصف [BD]، فالرباعي OEDC متوازي أضلاع"
         }
       ],
       "correctOption": "c",
-      "explanation": "O و E منتصفا [AB] و [BD] في المثلّث ABD، فـ (OE) ∥ (AD) و OE = AD/2. و C منتصف [AD] فـ DC = AD/2، والنقطة C من (AD) فـ (DC) هو (AD). إذن [OE] و [DC] ضلعان متقابلان في الرباعي OEDC، متوازيان ومتقايسان، فهو متوازي أضلاع ✓. الخطأ الشائع: الاكتفاء بالتوازي وحده (وشبه المنحرف له ضلعان متقابلان متوازيان فقط) أو بالتقايس وحده؛ أو عدّ [OE] و [DC] قطرين وهما ضلعان متقابلان، فالقطران هنا هما [OD] و [EC].",
+      "explanation": "O و E منتصفا [AB] و [BD] في المثلّث ABD، فـ (OE) ∥ (AD) و OE = AD/2. و C منتصف [AD] فـ DC = AD/2، والنقطة C من (AD) فـ (DC) هو (AD). إذن [OE] و [DC] ضلعان متقابلان في الرباعي OEDC، متوازيان ومتقايسان، فهو متوازي أضلاع ✓. كلّ المعطيات في الخيارات الأخرى صحيحة، لكنّ الاستدلال غير كافٍ. الخطأ الشائع: الجمع بين توازي ضلعين متقابلين وتقايس الضلعين الآخرين (وشبه المنحرف المتقايس الضلعين كذلك)، أو الاستناد إلى [EC] وهو قطر في OEDC لا ضلع.",
       "difficulty": 3,
       "competencies": [
         "math.geo.quadrilateres",
@@ -325,19 +293,19 @@
       "options": [
         {
           "id": "a",
-          "text": "OEDC"
+          "text": "OBDC"
         },
         {
           "id": "b",
-          "text": "OECA"
-        },
-        {
-          "id": "c",
           "text": "OBEC"
         },
         {
+          "id": "c",
+          "text": "ADEO"
+        },
+        {
           "id": "d",
-          "text": "OBDC"
+          "text": "OECA"
         },
         {
           "id": "e",
@@ -350,12 +318,11 @@
       ],
       "answerKey": {
         "correct": [
-          "a",
           "b",
-          "c"
+          "d"
         ]
       },
-      "explanation": "في المثلّث ABD القطع [OE] و [EC] و [CO] تصل بين المنتصفات: (OE) ∥ (AD) و OE = AD/2، و (EC) ∥ (AB) و EC = AB/2، و (CO) ∥ (BD) و CO = BD/2. فالرباعي OEDC له ضلعان متقابلان [OE] و [DC] متوازيان ومتقايسان (DC = AD/2)، والرباعي OECA له ضلعان متقابلان [OE] و [CA] متوازيان ومتقايسان، والرباعي OBEC له ضلعان متقابلان [EC] و [OB] متوازيان ومتقايسان (OB = AB/2). هذه الثلاثة متوازيات أضلاع ✓. أمّا OBDC فضلعاه [OC] و [BD] متوازيان لكنّهما غير متقايسين (OC = BD/2)، وكذلك ABEC حيث [EC] و [AB] متوازيان و EC = AB/2؛ فهما شبها منحرف. والرباعي OEBC مكتوب بترتيب تكون فيه [OB] و [EC] قطرين وليس لهما المنتصف نفسه، فهو رباعي متقاطع الأضلاع.",
+      "explanation": "في المثلّث ABD القطع [OE] و [EC] و [CO] تصل بين المنتصفات: (OE) ∥ (AD) و OE = AD/2، و (EC) ∥ (AB) و EC = AB/2، و (CO) ∥ (BD) و CO = BD/2. الرباعي OBEC له ضلعان متقابلان [EC] و [OB] متوازيان ومتقايسان (OB = AB/2)، والرباعي OECA له ضلعان متقابلان [OE] و [CA] متوازيان ومتقايسان (CA = AD/2). هذان الرباعيان متوازيا أضلاع ✓. أمّا OBDC فضلعاه [OC] و [BD] متوازيان لكنّهما غير متقايسين (OC = BD/2)، وكذلك ABEC حيث [EC] و [AB] متوازيان و EC = AB/2، وكذلك ADEO حيث [OE] و [AD] متوازيان و OE = AD/2؛ فهذه الثلاثة شبه منحرف. والرباعي OEBC مكتوب بترتيب يتقاطع فيه الضلعان [OE] و [BC]، فهو رباعي متقاطع الأضلاع.",
       "difficulty": 3,
       "competencies": [
         "math.geo.quadrilateres",
@@ -386,11 +353,40 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "قطرا متوازي الأضلاع OECA هما [OC] و [EA] ولهما المنتصف نفسه K. والنقطة G من (AE) فالمستقيم (EG) هو المستقيم (EK)، يمرّ من الرأس E ومن K منتصف الضلع [OC]، أي أنّه موسّط المثلّث OEC الصادر من E ✓. وهو ليس ارتفاعًا ولا منصّفًا ولا موسّطًا عموديًّا لأنّ المثلّث OEC ليس متقايس الضلعين رأسه E، فالطولان EO و EC مختلفان: EO = 3√2 cm و EC = 3 cm. والموسّط لا ينطبق على الارتفاع أو المنصّف أو الموسّط العمودي إلّا في المثلّث المتقايس الضلعين من رأسه. الخطأ الشائع: الخلط بين الموسّط والارتفاع والمنصّف والموسّط العمودي لمجرّد أنّ كلًّا منها مستقيم يمرّ من رأس أو من منتصف.",
+      "explanation": "قطرا متوازي الأضلاع OECA هما [OC] و [EA] ولهما المنتصف نفسه K. والنقطة G من (AE) فالمستقيم (EG) هو المستقيم (EK)، يمرّ من الرأس E ومن K منتصف الضلع [OC]، أي أنّه موسّط المثلّث OEC الصادر من E ✓. وهو ليس ارتفاعًا ولا منصّفًا ولا موسّطًا عموديًّا بوجه عامّ، لأنّ الموسّط لا ينطبق على الارتفاع أو المنصّف أو الموسّط العمودي إلّا في مثلّث متقايس الضلعين رأسه E، أي لو كان EO = EC، وهذا غير معطى في المثلّث ABD. الخطأ الشائع: الخلط بين الموسّط والارتفاع والمنصّف والموسّط العمودي لمجرّد أنّ كلًّا منها مستقيم يمرّ من رأس أو من منتصف.",
       "difficulty": 3,
       "competencies": [
         "math.geo.triangles-base",
         "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABD مثلّث، والنقاط O و E و C منتصفات الأضلاع [AB] و [BD] و [AD] على التوالي. والنقطة G مركز ثقل المثلّث ABD. المستقيم (OG) يحمل الموسّط الصادر من O في المثلّث OEC، والمستقيم (EG) يحمل الموسّط الصادر من E فيه.\nلماذا G مركز ثقل المثلّث OEC ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث OEC والمستقيمان (OG) و (EG)</title><polygon points=\"150,216 241,125 150,125\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"150,216 241,125 150,125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 216 L241 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M241 125 L59 216\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"180.33\" cy=\"155.33\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"254.5\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"170.79\" y=\"150.99\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "G على الموسّطين الصادرين من O ومن E معًا، ومركز الثقل هو نقطة تقاطع الموسّطات"
+        },
+        {
+          "id": "b",
+          "text": "G على الموسّط الصادر من O، وكلّ نقطة من موسّط هي مركز ثقل المثلّث الذي يحمل هذا الموسّط",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "G مركز ثقل المثلّث ABD، والمثلّث OEC رؤوسه على أضلاع ABD، فمركز ثقله هو G أيضًا"
+        },
+        {
+          "id": "d",
+          "text": "G على الموسّطين الصادرين من O ومن E معًا، وهي منتصف كلّ منهما، فهي مركز ثقل المثلّث OEC",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المستقيمان (OG) و (EG) يحملان موسّطين مختلفين من موسّطات المثلّث OEC، والنقطة G تنتمي إليهما معًا. ومركز الثقل هو نقطة تقاطع الموسّطات، وموسّطان مختلفان يتقاطعان في نقطة واحدة فقط، فـ G مركز ثقل المثلّث OEC ✓. الخطأ الشائع: الاكتفاء بموسّط واحد، فمركز الثقل يقع على كلّ موسّط لكنّ نقطة من موسّط واحد ليست بالضرورة مركز الثقل؛ أو نقل خاصّية مثلّث إلى مثلّث آخر دون إثبات؛ أو وضع مركز الثقل في منتصف الموسّط بدل ثلثيه انطلاقًا من الرأس.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base"
       ]
     }
   ]

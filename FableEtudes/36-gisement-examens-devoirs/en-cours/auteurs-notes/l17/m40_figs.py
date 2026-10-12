@@ -53,10 +53,10 @@ def frame(f, xr, yr, grid=True, numbers=True, xticks=None, yticks=None, units=Tr
     f.edges.append((a0, a1)); f.edges.append((b0, b1))
     if ticks:
         d = ""
-        for x in xs:
+        for x in (xticks if xticks is not None else xs):
             if x != 0:
                 p = f.P((x, 0)); d += f"M{fnum(p[0])} {fnum(p[1] - 3)} V{fnum(p[1] + 3)} "
-        for y in ys:
+        for y in (yticks if yticks is not None else ys):
             if y != 0:
                 p = f.P((0, y)); d += f"M{fnum(p[0] - 3)} {fnum(p[1])} H{fnum(p[0] + 3)} "
         f.marks.append(f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="1.2"/>')
@@ -87,7 +87,7 @@ def base(xr=(-4.7, 3.5), yr=(-1.0, 3.6), W=330, H_=215, margin=10):
 # ---------------------------------------------------------------------------------------------- Q1 : milieu de [BC]
 def svg_mid():
     f, xr, yr = base(yr=(-1.0, 1.9), H_=150)
-    frame(f, xr, yr, yticks=[-1, 1])
+    frame(f, xr, yr, grid=False, xticks=[-4, 2], yticks=[])   # audit L17 : seules les graduations de B et C, ni grille ni autres traits
     f.seg("B", "C", color=ACC, width=3.0)
     f.dot("B", ACC); f.dot("C", ACC)
     f.label("B", ACC, dir=90); f.label("C", ACC, dir=90)
