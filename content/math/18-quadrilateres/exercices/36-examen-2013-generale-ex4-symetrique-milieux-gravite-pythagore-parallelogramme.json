@@ -1,0 +1,393 @@
+{
+  "title": "🏛️ مناظرة 2013 · التمرين 4 ⭐⭐⭐⭐: نظيرة نقطة ومنتصفات في مثلّث — فيثاغورس والمستقيم الرابط بين منتصفين وإثبات طبيعة رباعي",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 36,
+  "questions": [
+    {
+      "prompt": "A و B نقطتان من المستوي حيث AB = 6 cm، والنقطة O منتصف [AB]. النقطة C من الموسّط العمودي للقطعة [AB] حيث OC = 3 cm، والنقطة D نظيرة A بالنسبة إلى C.\nماذا يعني أنّ D نظيرة A بالنسبة إلى C ؟\n<svg viewBox=\"0 0 300 250\"><title>النقاط A و B و O و C و D في المستوي</title><path d=\"M59 216 L241 216\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 216 L150 125\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M59 216 L241 34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"244.49\" y=\"208.16\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">C</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "C منتصف [AD]"
+        },
+        {
+          "id": "b",
+          "text": "D منتصف [AC]",
+          "misconceptionTag": "math.vec.symetrique-confondu-avec-milieu"
+        },
+        {
+          "id": "c",
+          "text": "A منتصف [CD]"
+        },
+        {
+          "id": "d",
+          "text": "(OC) هو الموسّط العمودي للقطعة [AD]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "العبارة « D نظيرة A بالنسبة إلى C » تعني أنّ C منتصف القطعة [AD]: النقطتان A و D على استقامة واحدة مع C وعلى بعدين متساويين منها، أي AC = CD ✓. الخطأ الشائع: عكس الأدوار، كأن نجعل D منتصف [AC] (فتقع D بين A و C بدل أن تقع في الجهة الأخرى من C) أو نجعل A منتصف [CD]؛ أمّا الموسّط العمودي فيرتبط بالتناظر المحوري، لا بالتناظر بالنسبة إلى نقطة.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "A و B نقطتان من المستوي حيث AB = 6 cm، والنقطة O منتصف [AB]. النقطة C من الموسّط العمودي للقطعة [AB] حيث OC = 3 cm، والنقطة D نظيرة A بالنسبة إلى C. المستقيمان (BC) و (OD) يتقاطعان في النقطة G.\nلماذا G مركز ثقل المثلّث ABD ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABD والمستقيمان (BC) و (OD) المتقاطعان في G</title><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M241 216 L150 125\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 216 L241 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M104.5 210.5 L104.5 221.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M195.5 210.5 L195.5 221.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"180.33\" cy=\"155.33\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"193.37\" y=\"157.04\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "C منتصف [AD] و O منتصف [AB]، فالمستقيمان (BC) و (OD) موسّطان في المثلّث ABD، ومركز الثقل هو نقطة تقاطع الموسّطات"
+        },
+        {
+          "id": "b",
+          "text": "C منتصف [AD] و O منتصف [AB]، فالمستقيمان (BC) و (OD) ارتفاعان في المثلّث ABD، ومركز الثقل هو نقطة تقاطع الارتفاعات",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "c",
+          "text": "C منتصف [AD] و O منتصف [AB]، فالمستقيمان (BC) و (OD) موسّطان عموديّان في المثلّث ABD، ومركز الثقل هو نقطة تقاطع الموسّطات العموديّة",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "d",
+          "text": "(BC) و (OD) مستقيمان يمرّان من الرأسين B و D في المثلّث ABD ويتقاطعان في G، وكلّ نقطة تقاطع مستقيمين يمرّان من رأسين لمثلّث هي مركز ثقله",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "D نظيرة A بالنسبة إلى C فالنقطة C منتصف [AD]، والنقطة O منتصف [AB]. المستقيم الذي يصل رأسًا بمنتصف الضلع المقابل له هو موسّط: (BC) هو الموسّط الصادر من B و (OD) هو الموسّط الصادر من D في المثلّث ABD. ومركز الثقل هو نقطة تقاطع الموسّطات، فـ G مركز ثقل المثلّث ABD ✓. الخطأ الشائع: الخلط بين الموسّط (يصل رأسًا بمنتصف الضلع المقابل) والارتفاع (يعامد الضلع المقابل) والموسّط العمودي (يعامد ضلعًا في منتصفه)؛ أو الاكتفاء بمستقيمين يمرّان من رأسين دون التحقّق من أنّهما موسّطان.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "A و B نقطتان من المستوي حيث AB = 6 cm، والنقطة O منتصف [AB]. النقطة C من الموسّط العمودي للقطعة [AB] حيث OC = 3 cm، والنقطة D نظيرة A بالنسبة إلى C. النقطة G مركز ثقل المثلّث ABD، والمستقيم (AG) يقطع [BD] في النقطة E.\nاختر كلّ العبارات الصحيحة.\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABD ومركز ثقله G والمستقيم (AG) الذي يقطع [BD] في E</title><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M241 216 L150 125\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M150 216 L241 34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M59 216 L241 125\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"180.33\" cy=\"155.33\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"241\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"176.84\" y=\"147.49\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text><text x=\"254.5\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AG) هو الموسّط الصادر من A في المثلّث ABD"
+        },
+        {
+          "id": "b",
+          "text": "E منتصف [BD]"
+        },
+        {
+          "id": "c",
+          "text": "BE = 2 × ED"
+        },
+        {
+          "id": "d",
+          "text": "AG = 2 × GE"
+        },
+        {
+          "id": "e",
+          "text": "GE = 2 × AG"
+        },
+        {
+          "id": "f",
+          "text": "G منتصف [AE]"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "G مركز ثقل المثلّث ABD فهو نقطة تلاقي موسّطاته الثلاثة، والمستقيم (AG) يمرّ من الرأس A ومن G، فهو الموسّط الصادر من A. والموسّط يصل الرأس بمنتصف الضلع المقابل: E منتصف [BD]، أي BE = ED. ويقع مركز الثقل على ثلثَي الموسّط انطلاقًا من الرأس: AG = (2/3) × AE و GE = (1/3) × AE، ومنه AG = 2 × GE. فهذه العبارات الثلاث صحيحة: (AG) موسّط، و E منتصف [BD]، و AG = 2 × GE ✓. أمّا BE = 2 × ED فخاطئة لأنّ BE = ED، و GE = 2 × AG مقلوبة، وG ليست منتصف [AE] لأنّها أقرب إلى E منها إلى A.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "A و B نقطتان من المستوي حيث AB = 6 cm، والنقطة O منتصف [AB]. النقطة C من الموسّط العمودي للقطعة [AB] حيث OC = 3 cm، والنقطة D نظيرة A بالنسبة إلى C.\nما طول [BD] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABD والقطعة [OC] الواصلة بين O و C</title><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 216 L150 125\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M104.5 210.5 L104.5 221.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M195.5 210.5 L195.5 221.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        {
+          "id": "b",
+          "text": "3√2",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "6√2",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "D نظيرة A بالنسبة إلى C فالنقطة C منتصف [AD]، والنقطة O منتصف [AB]. في المثلّث ABD القطعة [OC] تصل بين منتصفي الضلعين [AB] و [AD]، فهي توازي الضلع الثالث [BD] وطولها نصف طوله: OC = BD/2. إذن BD = 2 × OC = 2 × 3 = 6 cm ✓. الخطأ الشائع: إهمال المعامل 2 فنكتب BD = OC = 3، أو حساب طول قطعة أخرى بفيثاغورس بدل [BD]، مثل [BC] (3√2) أو [AD] (6√2).",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABD قائم في B حيث AB = 6 cm و BD = 6 cm، والنقطة E منتصف [BD].\nما طول [AE] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABD القائم في B و E منتصف [BD]</title><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M59 216 L241 125\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M232 216 L232 207 L241 207\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M235.5 170.5 L246.5 170.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M235.5 79.5 L246.5 79.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"254.5\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√3",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "3√5"
+        },
+        {
+          "id": "c",
+          "text": "6√2",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "5√3",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABE قائم في B ووتره [AE]، و BE = BD/2 = 3 cm لأنّ E منتصف [BD]. بفيثاغورس: AE² = AB² + BE² = 36 + 9 = 45، إذن AE = √45 = √(9 × 5) = 3√5 cm ✓. الخطأ الشائع: طرح المربّعين 36 − 9 = 27 فنجد 3√3، أو عكس العاملين عند إخراج المربّع الكامل من الجذر فنكتب √45 = 5√3 بدل 3√5، أو استعمال BD كاملًا بدل BE فنجد √72 = 6√2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "OEDC متوازي أضلاع قطراه [OD] و [EC] يتقاطعان في النقطة M، والنقطة G من المستقيم (OD).\nأيّ خاصيّة لمتوازي الأضلاع نستعملها لنُثبت أنّ (OG) يحمل موسّطًا من موسّطات المثلّث OEC ؟\n<svg viewBox=\"0 0 300 250\"><title>متوازي الأضلاع OEDC وقطراه [OD] و [EC] المتقاطعان في M</title><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"150,216 241,125 241,34 150,125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 216 L241 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M241 125 L150 125\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"195.5\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"254.5\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"188.75\" y=\"118.51\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "القطران [OD] و [EC] متقايسان",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "b",
+          "text": "القطران [OD] و [EC] لهما المنتصف نفسه"
+        },
+        {
+          "id": "c",
+          "text": "القطران [OD] و [EC] متعامدان",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "d",
+          "text": "القطر [OD] يقسم الرباعي OEDC إلى مثلّثين متقايسين"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في متوازي الأضلاع يتقاطع القطران في منتصفيهما: M منتصف [EC]. والمستقيم (OG) هو المستقيم (OD) لأنّ G من (OD)، فهو يمرّ من الرأس O ومن M منتصف الضلع [EC]، أي هو موسّط في المثلّث OEC ✓. تقايس القطرين خاصّية المستطيل، وتعامدهما خاصّية المعيّن، وكلاهما لا يصحّ في متوازي أضلاع عامّ. أمّا تقسيم القطر للرباعي إلى مثلّثين متقايسين فصحيح لكنّه لا يعطي أيّ منتصف على [EC]. الخطأ الشائع: نسبة خاصّية المستطيل أو خاصّية المعيّن إلى كلّ متوازي أضلاع.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "A و B نقطتان من المستوي حيث AB = 6 cm، والنقطة O منتصف [AB]. النقطة C من الموسّط العمودي للقطعة [AB] حيث OC = 3 cm، والنقطة D نظيرة A بالنسبة إلى C.\nأيّ الحجج التالية تُثبت إثباتًا سليمًا أنّ المستقيمين (AB) و (BD) متعامدان ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABD والقطعة [OC] الواصلة بين O و C</title><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 216 L150 125\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(OC) ⊥ (AB) لأنّ C من الموسّط العمودي للقطعة [AB]، و OC = BD/2 لأنّ O و C منتصفا [AB] و [AD]، فـ (BD) ⊥ (AB)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "b",
+          "text": "(OC) ∥ (BD) لأنّ O و C منتصفا [AB] و [AD]، و OC = BD/2 لأنّ طول القطعة الرابطة بين منتصفين هو نصف الضلع الثالث، فـ (BD) ⊥ (AB)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "(OC) ⊥ (AB) لأنّ C من الموسّط العمودي للقطعة [AB]، و (OC) ∥ (BD) لأنّ O و C منتصفا [AB] و [AD]، فـ (BD) ⊥ (AB)"
+        },
+        {
+          "id": "d",
+          "text": "AB = BD لأنّ كلًّا منهما يساوي 6 cm، و OC = BD/2 لأنّ O و C منتصفا [AB] و [AD]، فالمثلّث ABD متقايس الضلعين رأسه B، فـ (BD) ⊥ (AB)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "لنستنتج أنّ (BD) ⊥ (AB) نحتاج إلى مستقيم عمودي على (AB) وإلى توازيه مع (BD). (OC) عمودي على (AB) لأنّ O و C من الموسّط العمودي للقطعة [AB]؛ و (OC) ∥ (BD) لأنّ O و C منتصفا [AB] و [AD] في المثلّث ABD. ومستقيمان متوازيان إذا عامد أحدهما مستقيمًا عامده الآخر، إذن (BD) ⊥ (AB) ✓. أمّا الحجج الأخرى فتنقصها خطوة أو تستند إلى قاعدة خاطئة: العلاقة OC = BD/2 تخصّ الأطوال ولا تعطي أيّ زاوية، والتوازي مع علاقة الأطوال لا يعطي عموديًّا، وتقايس ضلعين في مثلّث لا يجعل زاويته قائمة. الخطأ الشائع: عدّ علاقة بين الأطوال أو تقايس ضلعين دليلًا على زاوية قائمة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABD قائم في B حيث AB = 6 cm و BD = 6 cm، ومركز ثقله G، والمستقيم (AG) يقطع [BD] في النقطة E.\nما طول [AG] بالصنتمتر ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABD القائم في B ومركز ثقله G والمستقيم (AG) الذي يقطع [BD] في E</title><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M59 216 L241 125\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M232 216 L232 207 L241 207\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"180.33\" cy=\"155.33\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"241\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"173.58\" y=\"148.84\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text><text x=\"254.5\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "30",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "3√5/2",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "2√5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(AG) هو الموسّط الصادر من A لأنّ G مركز ثقل المثلّث ABD، فـ E منتصف [BD] و BE = 3 cm. المثلّث ABE قائم في B: AE² = 36 + 9 = 45، أي AE = 3√5 cm. ومركز الثقل عند ثلثَي الموسّط انطلاقًا من الرأس: AG = (2/3) × AE = (2/3) × 3√5 = 2√5 cm ✓. الخطأ الشائع: التوقّف عند AE² = 45 وأخذ ثلثيه فنجد 30 بدل أخذ الجذر أوّلًا، أو وضع G في منتصف الموسّط فنجد 3√5/2، أو تطبيق الثلثين على ضلع آخر مثل [BD] فنجد 4.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABD مثلّث، والنقاط O و E و C منتصفات الأضلاع [AB] و [BD] و [AD] على التوالي.\nلماذا الرباعي OEDC متوازي أضلاع ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABD ومنتصفات أضلاعه O و E و C والرباعي OEDC</title><polygon points=\"150,216 241,125 241,34 150,125\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"150,216 241,125 241,34 150,125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M104.5 210.5 L104.5 221.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M195.5 210.5 L195.5 221.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M235.5 172.2 L246.5 172.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M235.5 168.8 L246.5 168.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M235.5 81.2 L246.5 81.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M235.5 77.8 L246.5 77.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M98.21 169.02 L105.98 176.79\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M100.61 166.61 L108.39 174.39\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M103.02 164.21 L110.79 171.98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M189.21 78.02 L196.98 85.79\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M191.61 75.61 L199.39 83.39\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M194.02 73.21 L201.79 80.98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"150\" cy=\"216\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"241\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"254.5\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(OE) ∥ (DC) لأنّ O و E منتصفا [AB] و [BD]، و OC = ED لأنّ OC = BD/2 و E منتصف [BD]، فالرباعي OEDC متوازي أضلاع",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "b",
+          "text": "(EC) ∥ (AB) لأنّ E و C منتصفا [BD] و [AD]، و OE = DC لأنّ OE = AD/2 و C منتصف [AD]، فالرباعي OEDC متوازي أضلاع",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "(OE) ∥ (DC) لأنّ O و E منتصفا [AB] و [BD]، و OE = DC لأنّ OE = AD/2 و C منتصف [AD]، فالرباعي OEDC متوازي أضلاع"
+        },
+        {
+          "id": "d",
+          "text": "(EC) ∥ (AB) لأنّ E و C منتصفا [BD] و [AD]، و OC = ED لأنّ OC = BD/2 و E منتصف [BD]، فالرباعي OEDC متوازي أضلاع"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "O و E منتصفا [AB] و [BD] في المثلّث ABD، فـ (OE) ∥ (AD) و OE = AD/2. و C منتصف [AD] فـ DC = AD/2، والنقطة C من (AD) فـ (DC) هو (AD). إذن [OE] و [DC] ضلعان متقابلان في الرباعي OEDC، متوازيان ومتقايسان، فهو متوازي أضلاع ✓. كلّ المعطيات في الخيارات الأخرى صحيحة، لكنّ الاستدلال غير كافٍ. الخطأ الشائع: الجمع بين توازي ضلعين متقابلين وتقايس الضلعين الآخرين (وشبه المنحرف المتقايس الضلعين كذلك)، أو الاستناد إلى [EC] وهو قطر في OEDC لا ضلع.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "ABD مثلّث، والنقاط O و E و C منتصفات الأضلاع [AB] و [BD] و [AD] على التوالي.\nاختر كلّ الرباعيات التالية التي هي متوازيات أضلاع.\n<svg viewBox=\"0 0 300 250\"><title>المثلّث ABD ومنتصفات أضلاعه O و E و C والقطع التي تصل بينها</title><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"150,216 241,125 150,125\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M104.5 210.5 L104.5 221.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M195.5 210.5 L195.5 221.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M235.5 172.2 L246.5 172.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M235.5 168.8 L246.5 168.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M235.5 81.2 L246.5 81.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M235.5 77.8 L246.5 77.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M98.21 169.02 L105.98 176.79\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M100.61 166.61 L108.39 174.39\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M103.02 164.21 L110.79 171.98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M189.21 78.02 L196.98 85.79\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M191.61 75.61 L199.39 83.39\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M194.02 73.21 L201.79 80.98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"216\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"241\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"150\" cy=\"125\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"254.5\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">E</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "OBDC"
+        },
+        {
+          "id": "b",
+          "text": "OBEC"
+        },
+        {
+          "id": "c",
+          "text": "ADEO"
+        },
+        {
+          "id": "d",
+          "text": "OECA"
+        },
+        {
+          "id": "e",
+          "text": "ABEC"
+        },
+        {
+          "id": "f",
+          "text": "OEBC"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "في المثلّث ABD القطع [OE] و [EC] و [CO] تصل بين المنتصفات: (OE) ∥ (AD) و OE = AD/2، و (EC) ∥ (AB) و EC = AB/2، و (CO) ∥ (BD) و CO = BD/2. الرباعي OBEC له ضلعان متقابلان [EC] و [OB] متوازيان ومتقايسان (OB = AB/2)، والرباعي OECA له ضلعان متقابلان [OE] و [CA] متوازيان ومتقايسان (CA = AD/2). هذان الرباعيان متوازيا أضلاع ✓. أمّا OBDC فضلعاه [OC] و [BD] متوازيان لكنّهما غير متقايسين (OC = BD/2)، وكذلك ABEC حيث [EC] و [AB] متوازيان و EC = AB/2، وكذلك ADEO حيث [OE] و [AD] متوازيان و OE = AD/2؛ فهذه الثلاثة شبه منحرف. والرباعي OEBC مكتوب بترتيب يتقاطع فيه الضلعان [OE] و [BC]، فهو رباعي متقاطع الأضلاع.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABD مثلّث، والنقاط O و E و C منتصفات الأضلاع [AB] و [BD] و [AD] على التوالي. النقطة G مركز ثقل المثلّث ABD، والرباعي OECA متوازي أضلاع، والنقطة G تنتمي إلى المستقيم (AE).\nماذا يمثّل المستقيم (EG) بالنسبة إلى المثلّث OEC ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث OEC والمستقيم (EG) الذي يمرّ من G</title><polygon points=\"150,216 241,125 150,125\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"150,216 241,125 150,125 59,216\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"150,216 241,125 150,125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M241 125 L59 216\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"180.33\" cy=\"155.33\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"254.5\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"173.58\" y=\"148.84\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ارتفاع المثلّث OEC الصادر من الرأس E",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "b",
+          "text": "منصّف الزاوية في الرأس E للمثلّث OEC",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "c",
+          "text": "الموسّط العمودي للضلع المقابل للرأس E في المثلّث OEC",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "d",
+          "text": "موسّط المثلّث OEC الصادر من الرأس E"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "قطرا متوازي الأضلاع OECA هما [OC] و [EA] ولهما المنتصف نفسه K. والنقطة G من (AE) فالمستقيم (EG) هو المستقيم (EK)، يمرّ من الرأس E ومن K منتصف الضلع [OC]، أي أنّه موسّط المثلّث OEC الصادر من E ✓. وهو ليس ارتفاعًا ولا منصّفًا ولا موسّطًا عموديًّا بوجه عامّ، لأنّ الموسّط لا ينطبق على الارتفاع أو المنصّف أو الموسّط العمودي إلّا في مثلّث متقايس الضلعين رأسه E، أي لو كان EO = EC، وهذا غير معطى في المثلّث ABD. الخطأ الشائع: الخلط بين الموسّط والارتفاع والمنصّف والموسّط العمودي لمجرّد أنّ كلًّا منها مستقيم يمرّ من رأس أو من منتصف.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "ABD مثلّث، والنقاط O و E و C منتصفات الأضلاع [AB] و [BD] و [AD] على التوالي. والنقطة G مركز ثقل المثلّث ABD. المستقيم (OG) يحمل الموسّط الصادر من O في المثلّث OEC، والمستقيم (EG) يحمل الموسّط الصادر من E فيه.\nلماذا G مركز ثقل المثلّث OEC ؟\n<svg viewBox=\"0 0 300 250\"><title>المثلّث OEC والمستقيمان (OG) و (EG)</title><polygon points=\"150,216 241,125 150,125\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"59,216 241,216 241,34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"150,216 241,125 150,125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M150 216 L241 34\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M241 125 L59 216\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"59\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"216\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"241\" cy=\"34\" r=\"3.8\" fill=\"#64748b\"/><circle cx=\"150\" cy=\"216\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"241\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"125\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"180.33\" cy=\"155.33\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47.31\" y=\"214.45\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"254.04\" y=\"224.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"241\" y=\"25.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150\" y=\"234.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"254.5\" y=\"130.2\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"140.45\" y=\"120.65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"170.79\" y=\"150.99\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "G على الموسّطين الصادرين من O ومن E معًا، ومركز الثقل هو نقطة تقاطع الموسّطات"
+        },
+        {
+          "id": "b",
+          "text": "G على الموسّط الصادر من O، وكلّ نقطة من موسّط هي مركز ثقل المثلّث الذي يحمل هذا الموسّط",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "G مركز ثقل المثلّث ABD، والمثلّث OEC رؤوسه على أضلاع ABD، فمركز ثقله هو G أيضًا"
+        },
+        {
+          "id": "d",
+          "text": "G على الموسّطين الصادرين من O ومن E معًا، وهي منتصف كلّ منهما، فهي مركز ثقل المثلّث OEC",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المستقيمان (OG) و (EG) يحملان موسّطين مختلفين من موسّطات المثلّث OEC، والنقطة G تنتمي إليهما معًا. ومركز الثقل هو نقطة تقاطع الموسّطات، وموسّطان مختلفان يتقاطعان في نقطة واحدة فقط، فـ G مركز ثقل المثلّث OEC ✓. الخطأ الشائع: الاكتفاء بموسّط واحد، فمركز الثقل يقع على كلّ موسّط لكنّ نقطة من موسّط واحد ليست بالضرورة مركز الثقل؛ أو نقل خاصّية مثلّث إلى مثلّث آخر دون إثبات؛ أو وضع مركز الثقل في منتصف الموسّط بدل ثلثيه انطلاقًا من الرأس.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    }
+  ]
+}
