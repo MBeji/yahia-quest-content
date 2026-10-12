@@ -31,3 +31,17 @@ Parade 2 : quiz 1, 9 ; 01-tamrin 2, 3 ; 02-tamrin 2, 4, 5, 6 ; 03-boss 1, 5, 6 ;
 
 ## Vérifications finales
 `npx prettier --check` des 21 fichiers : vert ; `content:check` : 120 matières, 0 erreur ; `content:qa:strict --subject sciences-vie-terre` : 0 erreur, 7 avertissements (aucun dans 12-14) ; `content:tranche` : 0/64, 0/46, 0/46.
+
+## Suites appliquées (audit-12-14.md)
+
+Appliqués tels que proposés, après re-résolution et contrôle des longueurs (clé jamais strictement la plus longue) : B12-1, M12-1 à M12-4, M12-6, M12-7, m12-1 à m12-4 (« إعتام » aussi dans `12/cours.md`), M13-1 à M13-4, m13-1 à m13-3, M14-1 à M14-5, m14-2 à m14-4.
+Réécritures complètes (13/03-boss Q1, 14/02 Q2, 14/01 Q4) : `correctOption`, ids, ordre, nombre d'options et `difficulty` vérifiés identiques à l'état d'origine sur les 138 questions des 21 fichiers.
+
+Écarts, avec raison :
+- M12-5 : j'ai aussi donné un seuil chiffré à `d` (« نقص الكلسيوم، إذا نزل عن 300 مغ في اليوم ») : l'audit ne remplaçait que `b` et `c`, ce qui laissait `d` seule sans nombre (indice de forme inversé).
+- Balises `misconceptionTag` retirées de 13/03-boss Q1 option `c` (« اليوم 13 » = 16 − 3, plus la confusion « milieu du cycle ») et de 14/02-tamrin Q2 option `c` (« نحو 25 », plus la confusion agent pathogène) : les tags ne correspondaient plus aux nouveaux textes. La balise de `a` (13/03-boss Q1) est conservée comme demandé.
+- m14-5 : non appliqué, sa condition (« si M14-3 n'est pas appliqué ») n'est pas remplie.
+- m12-5, m13-4, m14-6 (distracteurs éliminés par l'énoncé, préexistants) et m12-6, m13-5, m14-7 (paires proches entre fichiers) : le texte de l'audit les classe « sans urgence / à surveiller » sans proposer de réécriture ; non traités. Après les suites, la tranche ne remonte plus aucune paire proche.
+- `12/resume.md` contient encore « اعتام » (l. 17) : hors périmètre (seule édition .md permise : cours.md), à corriger par l'orchestrateur.
+
+Sorties : Prettier `--check` des .json modifiés vert ; `content:check` 120 matières, 0 erreur ; `content:qa:strict --subject sciences-vie-terre` 0 erreur / 7 avertissements (aucun dans 12-14) ; `content:tranche --chapters 12,13,14` : clé la plus longue 0/156 = 0 %, paires proches 0.
