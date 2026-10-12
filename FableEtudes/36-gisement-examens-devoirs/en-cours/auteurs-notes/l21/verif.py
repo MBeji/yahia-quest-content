@@ -45,3 +45,10 @@ A=(6,0);D=(4,0);B=(0,9);E=(4,3)
 d=lambda p,q: math.dist(p,q)
 assert abs(d(A,D)-2)<1e-12 and abs(d(D,E)-3)<1e-12 and abs(d(A,B)-3*d(A,E))<1e-12 and abs(d(A,(0,0))-6)<1e-12 and abs(d((0,0),B)-9)<1e-12
 print("ALL OK")
+# tour de corrections
+chk("47Q3b",10,[r2(14),28,2*r2(7)]); chk("48Q2b",5,[r2(7),r2(12),49])
+chk("48Q4b",12/5,[2.5,12/7,12/25]); chk("48Q5b",1.8,[0.6,5.4,r2(14.76)])
+SA,SM,SN,SB,MN,AB_,MA=6.5,4.55,4.2,6,1.75,2.5,1.95
+key=(SM/SA,SN/SB,MN/AB_); assert max(key)-min(key)<1e-12
+for o in [(SA/SM,SB/SN,MN/AB_),(SM/MA,SB/SN,AB_/MN),(SA/SM,SN/(6-SN),AB_/MN)]: assert max(o)-min(o)>1e-6
+print("TOUR OK")

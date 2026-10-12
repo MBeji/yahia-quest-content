@@ -16,3 +16,6 @@ Etiquettes neuves a PROPOSER (etiquettes/L21.json) : diametre compte dans le con
 - [x] 48 a 51 ecrits via gen.py ; lot-lint = 0 point ; difficultes croissantes ; cles reparties (rot)
 - reste : verif.py (double resolution), gates, etiquettes/L21.json (propositions), rapport
 - [x] tout ecrit, gates verts sauf catalogue (regenere, a committer) et tranche --changed (paires preexistantes hors lot) ; etiquettes/L21.json propose
+- [x] TOUR DE CORRECTIONS (audit-L21) applique : 47 Q4 (demi-disque colle) + Q2 expl/etiquette + titre ; 48 Q4 (sans BC, options 2,4/2,5/12/7/0,48) + Q7 expl + Q1 "التصميم" ; 50 Q4 (grille recomptee), figure (N, 6 m), Q5 muette puis d1 en 3e position ; 51 practice d2 75/15 rampe 1,1,2,2,2,2, Q3 refaite, etiquettes Q5/Q6 ; 49 titre
+- Ecarts : dupscan -> 47 Q3 (14 -> sqrt14, 100 -> 28), 48 Q2 (jumeau de 09/40 Q2 : options {5,sqrt7,sqrt12,49}), 48 Q5 (3,24 -> 5,4) pour ne plus partager 3 options avec des missions publiees
+- etiquettes/L21.json : marque ECARTEES
