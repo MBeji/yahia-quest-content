@@ -1,0 +1,184 @@
+{
+  "title": "🏛️ مناظرة 2022 (تقني) · التمرين 3 ⭐⭐⭐: مثلّث وعمودي على ضلعه — فيثاغورس والتوازي وطاليس",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 51,
+  "questions": [
+    {
+      "prompt": "المثلّث ADE قائم في D.\nنريد كتابة علاقة بين مربّعات أطوال أضلاعه الثلاثة ، مع تعليلها.\nأيّ تعليل ونتيجة صحيحان ؟\n<svg viewBox=\"0 0 220 124\"><title>المثلّث ADE القائم في D</title><polygon points=\"174,20 126,20 126,92\" fill=\"#0f172a\" fill-opacity=\"0.06\"/><polygon points=\"174,20 126,20 126,92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M137 20 L137 31 L126 31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"174\" cy=\"20\" r=\"3.8\"/><circle cx=\"126\" cy=\"20\" r=\"3.8\"/><circle cx=\"126\" cy=\"92\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"188\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"118\" y=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"118\" y=\"108\" text-anchor=\"middle\" fill=\"#0f172a\">E</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "نظرية فيثاغورس: AD² = AE² + DE²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "عكس نظرية فيثاغورس: AE² = AD² + DE²",
+          "misconceptionTag": "math.geo.pythagore-reciproque-role"
+        },
+        {
+          "id": "c",
+          "text": "نظرية فيثاغورس: AE² = AD² + DE²"
+        },
+        {
+          "id": "d",
+          "text": "عكس نظرية فيثاغورس: AD² = AE² + DE²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّث ADE قائم في D ، فوتره [AE] المقابل للزاوية القائمة ، والزاوية القائمة معلومة ، فنطبّق نظرية فيثاغورس المباشرة: AE² = AD² + DE² ✓. الخطأ الشائع: وضع مربّع [AD] وحده في طرف كأنّ [AD] هو الوتر ؛ أو استعمال عكس النظرية ، وهي تُثبت أنّ مثلّثًا قائم انطلاقًا من أطواله ، ولا تُستعمل حين تكون الزاوية القائمة معلومة.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "المثلّث ADE قائم في D ، ونعلم أنّ الأطوال بالسنتمتر هي:\nAD = 2\nDE = 3\nما طول القطعة [AE] بالسنتمتر ؟\n<svg viewBox=\"0 0 220 124\"><title>المثلّث ADE القائم في D</title><polygon points=\"174,20 126,20 126,92\" fill=\"#0f172a\" fill-opacity=\"0.06\"/><polygon points=\"174,20 126,20 126,92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M137 20 L137 31 L126 31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"174\" cy=\"20\" r=\"3.8\"/><circle cx=\"126\" cy=\"20\" r=\"3.8\"/><circle cx=\"126\" cy=\"92\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"188\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"118\" y=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"118\" y=\"108\" text-anchor=\"middle\" fill=\"#0f172a\">E</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150\" y=\"12\" text-anchor=\"middle\" fill=\"#64748b\">2 cm</text><text x=\"104\" y=\"60\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√13"
+        },
+        {
+          "id": "b",
+          "text": "13",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "√5",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "√10"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث ADE قائم في D ، فوتره [AE] ، وبنظرية فيثاغورس AE² = AD² + DE² = 4 + 9 = 13 ، إذن AE = √13 cm ✓. الخطأ الشائع: التوقّف عند AE² = 13 ؛ أو عدّ [DE] وترًا فنجد AE² = 9 − 4 = 5 أي √5 ؛ أو مضاعفة الطولين بدل تربيعهما فنجد AE² = 2 × 2 + 3 × 2 = 10 أي √10.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "المثلّث ADE قائم في D ، والنقطة B من نصف المستقيم [AE) ، والمستقيم العمودي على (AD) والمارّ من B يقطع (AD) في C.\nما الوضعيّة النسبيّة للمستقيمين (DE) و (CB) ، وما تعليلها ؟\n<svg viewBox=\"0 0 220 262\"><title>الشكل: (CA) و (CB) متعامدان ، و [DE] عمودي على (CA)</title><path d=\"M30 20 L174 20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M30 20 L30 236\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M174 20 L30 236\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M126 20 L126 92\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M41 20 L41 31 L30 31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137 20 L137 31 L126 31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30\" cy=\"20\" r=\"3.8\"/><circle cx=\"174\" cy=\"20\" r=\"3.8\"/><circle cx=\"126\" cy=\"20\" r=\"3.8\"/><circle cx=\"30\" cy=\"236\" r=\"3.8\"/><circle cx=\"126\" cy=\"92\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"16\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"188\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"126\" y=\"10\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"16\" y=\"252\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"142\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متعامدان ، لأنّ كلًّا منهما عمودي على (AD)",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
+        {
+          "id": "b",
+          "text": "متوازيان ، لأنّ كلًّا منهما عمودي على (AD)"
+        },
+        {
+          "id": "c",
+          "text": "متعامدان ، لأنّ E من [AB]"
+        },
+        {
+          "id": "d",
+          "text": "متوازيان ، لأنّ E من [AB]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ADE قائم في D ، فالمستقيم (DE) عمودي على (AD). و (CB) عمودي على (AD) بالإنشاء. وكلّ مستقيمين عموديين على مستقيم واحد متوازيان ، إذن (DE) ∥ (CB) ✓ ، وهذا التوازي شرط تطبيق نظرية طاليس. الخطأ الشائع: الاستنتاج أنّ المستقيمين متعامدان ، والصواب أنّ العموديّين على مستقيم واحد متوازيان ؛ أو الاكتفاء بأنّ E من [AB] ، وهذا لا يعطي التوازي وحده: فلو نقلنا النقطة E على [AB] لما بقي (DE) موازيًا لـ (CB).",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "في الشكل التالي ، (DE) ∥ (CB) ، والنقطة D من [AC] والنقطة E من [AB].\nأيّ سلسلة مساواة بين النسب صحيحة بنظرية طاليس ؟\n<svg viewBox=\"0 0 220 262\"><title>الشكل: (CA) و (CB) متعامدان ، و [DE] عمودي على (CA)</title><path d=\"M30 20 L174 20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M30 20 L30 236\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M174 20 L30 236\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M126 20 L126 92\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M41 20 L41 31 L30 31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137 20 L137 31 L126 31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30\" cy=\"20\" r=\"3.8\"/><circle cx=\"174\" cy=\"20\" r=\"3.8\"/><circle cx=\"126\" cy=\"20\" r=\"3.8\"/><circle cx=\"30\" cy=\"236\" r=\"3.8\"/><circle cx=\"126\" cy=\"92\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"16\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"188\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"126\" y=\"10\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"16\" y=\"252\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"142\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AC/CD = AB/BE = CB/DE",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "CD/AD = BE/AE = CB/DE",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        },
+        {
+          "id": "c",
+          "text": "AD/AC = AB/AE = CB/DE",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "d",
+          "text": "AC/AD = AB/AE = CB/DE"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(DE) ∥ (CB) والنقطتان D و E من [AC] و [AB] ، فبنظرية طاليس في المثلّث ACB: AD/AC = AE/AB = DE/CB ، أي بقلب النسب الثلاث معًا AC/AD = AB/AE = CB/DE ✓. الخطأ الشائع: قلب نسبة واحدة فقط ؛ أو أخذ القطعة الجزئيّة CD أو BE بدل القطعة الكاملة AC أو AB في النسبة ؛ أو مزج نسبة الجزء على الباقي (CD/AD) مع نسبة الكلّ على الجزء (CB/DE).",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "في الشكل التالي ، (DE) ∥ (CB) ، والنقطة D من [AC] والنقطة E من [AB] ، ونعلم أنّ الأطوال بالسنتمتر تحقّق:\nAD = 2\nAB = 3 × AE\nما طول القطعة [AC] بالسنتمتر ؟\n<svg viewBox=\"0 0 220 262\"><title>الشكل: (CA) و (CB) متعامدان ، و [DE] عمودي على (CA)</title><path d=\"M30 20 L174 20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M30 20 L30 236\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M174 20 L30 236\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M126 20 L126 92\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M41 20 L41 31 L30 31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137 20 L137 31 L126 31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30\" cy=\"20\" r=\"3.8\"/><circle cx=\"174\" cy=\"20\" r=\"3.8\"/><circle cx=\"126\" cy=\"20\" r=\"3.8\"/><circle cx=\"30\" cy=\"236\" r=\"3.8\"/><circle cx=\"126\" cy=\"92\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"16\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"188\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"126\" y=\"10\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"16\" y=\"252\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"142\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "2/3",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(DE) ∥ (CB) ، فبنظرية طاليس AC/AD = AB/AE. وAB = 3 × AE ، فـ AB/AE = 3 ، إذن AC/2 = 3 ، ومنه AC = 2 × 3 = 6 cm ✓. الخطأ الشائع: قلب النسبة فنجد AC = 2 ÷ 3 = 2/3 ؛ أو إعطاء القطعة الجزئيّة CD بدل القطعة الكاملة [AC] ، وهي CD = AC − AD = 4 ؛ أو الجمع بدل الضرب في النسبة 3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "نعتبر المثلّث ACB ، وقاعدته [CB] توازيها القطعة [DE] حيث D من [AC] و E من [AB].\nإذا كان طول [DE] ثلاثة سنتمترات ، وكان:\nAE = AB ÷ 3\nفما طول القاعدة [CB] بالسنتمتر ؟\n<svg viewBox=\"0 0 220 262\"><title>الشكل: (CA) و (CB) متعامدان ، و [DE] عمودي على (CA)</title><path d=\"M30 20 L174 20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M30 20 L30 236\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M174 20 L30 236\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M126 20 L126 92\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M41 20 L41 31 L30 31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137 20 L137 31 L126 31\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"30\" cy=\"20\" r=\"3.8\"/><circle cx=\"174\" cy=\"20\" r=\"3.8\"/><circle cx=\"126\" cy=\"20\" r=\"3.8\"/><circle cx=\"30\" cy=\"236\" r=\"3.8\"/><circle cx=\"126\" cy=\"92\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"16\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"188\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"126\" y=\"10\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"16\" y=\"252\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"142\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,5"
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "1",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(DE) ∥ (CB) ، فبنظرية طاليس CB/DE = AB/AE = 3 ، ومنه CB = 3 × DE = 3 × 3 = 9 cm ✓. الخطأ الشائع: قلب النسبة فنجد CB = 3 ÷ 3 = 1 ؛ أو إعطاء القطعة الجزئيّة BE بدل القطعة الكاملة: BE/AE = 2 فنجد 6 ؛ أو استعمال النسبة AB/BE بدل AB/AE ، وهي تساوي 3/2 ، فنجد 3 × 3/2 = 4,5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "title": "🏛️ مناظرة 2020 (تقني) · التمرين 3 ⭐⭐⭐: قطعة أرض مقسّمة — فيثاغورس والارتفاع والمساحة والسلّم",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 48,
+  "questions": [
+    {
+      "prompt": "تمثّل الخطّة التالية قطعة أرض على شكل مثلّث ABC قائم في A ، ونريد إكمال المساواة:\nBC² = … + AC²\nأيّ إكمال صحيح ، مع تبريره ؟\n<svg viewBox=\"0 0 230 214\"><title>المثلّث ABC القائم في A</title><polygon points=\"60,184 180,184 60,24\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"60,184 180,184 60,24\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M71 184 L71 173 L60 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"184\" r=\"3.8\"/><circle cx=\"180\" cy=\"184\" r=\"3.8\"/><circle cx=\"60\" cy=\"24\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"44\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"194\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"60\" y=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "نظرية فيثاغورس ، والحدّ الناقص هو AB",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "عكس نظرية فيثاغورس ، والحدّ الناقص هو AB"
+        },
+        {
+          "id": "c",
+          "text": "نظرية فيثاغورس ، والحدّ الناقص هو AB²"
+        },
+        {
+          "id": "d",
+          "text": "عكس نظرية فيثاغورس ، والحدّ الناقص هو AB²",
+          "misconceptionTag": "math.geo.pythagore-reciproque-role"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّث ABC قائم في A ، فوتره [BC] ، والزاوية القائمة معلومة ، فنطبّق نظرية فيثاغورس المباشرة: BC² = AB² + AC² ✓ ، والمساواة تربط مربّعات الأطوال لا الأطوال نفسها. الخطأ الشائع: استعمال عكس النظرية ، وهي تُثبت أنّ المثلّث قائم انطلاقًا من أطوال أضلاعه ، ولا تُستعمل حين تكون الزاوية القائمة معلومة ؛ أو كتابة AB بدل AB² فتصير المساواة مجموعًا للأطوال.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "يمثّل التصميم التالي قطعة أرض على شكل مثلّث ABC قائم في A ، ونعلم أنّ الأطوال على التصميم بالسنتمتر هي:\nAB = 3\nAC = 4\nما طول القطعة [BC] على التصميم بالسنتمتر ؟\n<svg viewBox=\"0 0 230 214\"><title>المثلّث ABC القائم في A</title><polygon points=\"60,184 180,184 60,24\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"60,184 180,184 60,24\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M71 184 L71 173 L60 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"184\" r=\"3.8\"/><circle cx=\"180\" cy=\"184\" r=\"3.8\"/><circle cx=\"60\" cy=\"24\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"44\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"194\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"60\" y=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"32\" y=\"108\" text-anchor=\"middle\" fill=\"#64748b\">4 cm</text><text x=\"120\" y=\"204\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√7",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "25",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABC قائم في A ، فوتره [BC] ، وبنظرية فيثاغورس BC² = AB² + AC² = 9 + 16 = 25 ، إذن BC = √25 = 5 cm ✓. الخطأ الشائع: الجمع المباشر 3 + 4 = 7 ؛ أو التوقّف عند BC² = 25 ؛ أو عدّ [AC] وترًا فنجد BC² = 16 − 9 = 7 أي BC = √7.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في قطعة أرض على شكل مثلّث ABC قائم في A ، النقطة H من القطعة [BC] حيث (AH) ⟂ (BC).\nنريد تبرير المساواة التالية:\nAH × BC = AB × AC\nأيّ تعليل صحيح ؟\n<svg viewBox=\"0 0 230 214\"><title>المثلّث ABC القائم في A</title><polygon points=\"60,184 180,184 60,24\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"60,184 180,184 60,24\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M60 184 L136.8 126.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M128 133 L121.4 124.2 L130.2 117.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M71 184 L71 173 L60 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"184\" r=\"3.8\"/><circle cx=\"180\" cy=\"184\" r=\"3.8\"/><circle cx=\"60\" cy=\"24\" r=\"3.8\"/><circle cx=\"136.8\" cy=\"126.4\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"44\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"194\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"60\" y=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"150.8\" y=\"124.4\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "مساحة المثلّث ABC تساوي BC × AH ÷ 2 وتساوي أيضًا BC × AC ÷ 2"
+        },
+        {
+          "id": "b",
+          "text": "مساحة المثلّث ABC تساوي AB × AH ÷ 2 وتساوي أيضًا AB × AC ÷ 2",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "c",
+          "text": "مساحة المثلّث ABC تساوي AB × AH ÷ 2 وتساوي أيضًا BC × AC ÷ 2"
+        },
+        {
+          "id": "d",
+          "text": "مساحة المثلّث ABC تساوي BC × AH ÷ 2 وتساوي أيضًا AB × AC ÷ 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نحسب مساحة المثلّث ABC بطريقتين. بالقاعدة [BC] وارتفاعها [AH] لأنّ (AH) ⟂ (BC) تكون المساحة:\nBC × AH ÷ 2\nوبالقاعدة [AB] وارتفاعها [AC] لأنّ المثلّث قائم في A تكون المساحة:\nAB × AC ÷ 2\nالمساحة واحدة ، فنساوي الحسابين ونضرب في 2 فنجد:\nAH × BC = AB × AC\nوهذا هو المطلوب ✓\n الخطأ الشائع: ضرب الارتفاع [AH] في ضلع من ضلعي الزاوية القائمة ، مع أنّ [AH] ارتفاع الوتر [BC] لا ارتفاع [AB] ؛ أو اعتبار [AC] ارتفاعًا للقاعدة [BC] ، وهو ليس عموديًّا عليها.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "في قطعة أرض على شكل مثلّث ABC قائم في A ، النقطة H من القطعة [BC] حيث (AH) ⟂ (BC) ، ونعلم أنّ الأطوال بالسنتمتر هي:\nAB = 3\nAC = 4\nBC = 5\nما طول القطعة [AH] بالسنتمتر ؟\n<svg viewBox=\"0 0 230 214\"><title>المثلّث ABC القائم في A</title><polygon points=\"60,184 180,184 60,24\" fill=\"#0f172a\" fill-opacity=\"0.04\"/><polygon points=\"60,184 180,184 60,24\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M60 184 L136.8 126.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M128 133 L121.4 124.2 L130.2 117.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M71 184 L71 173 L60 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"184\" r=\"3.8\"/><circle cx=\"180\" cy=\"184\" r=\"3.8\"/><circle cx=\"60\" cy=\"24\" r=\"3.8\"/><circle cx=\"136.8\" cy=\"126.4\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"44\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"194\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"60\" y=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"150.8\" y=\"124.4\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"32\" y=\"108\" text-anchor=\"middle\" fill=\"#64748b\">4 cm</text><text x=\"120\" y=\"204\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,4"
+        },
+        {
+          "id": "b",
+          "text": "2,5",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "c",
+          "text": "3,75",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "d",
+          "text": "12",
+          "misconceptionTag": "math.alg.coefficient-non-divise"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب مساحة المثلّث ABC بطريقتين: AH × BC = AB × AC ، أي AH × 5 = 3 × 4 = 12 ، ومنه AH = 12 ÷ 5 = 2,4 cm ✓. الخطأ الشائع: التوقّف عند AH × 5 = 12 وإعطاء 12 دون قسمة ؛ أو اعتبار [AH] ميانة فنجد نصف الوتر 5 ÷ 2 = 2,5 ، مع أنّ H ليس منتصف [BC] ؛ أو ضرب الارتفاع في [AC] فنكتب AH × 4 = 3 × 5 ثمّ AH = 15 ÷ 4 = 3,75.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABH قائم في H ، ونعلم أنّ الأطوال بالسنتمتر هي:\nAB = 3\nAH = 2,4\nما طول القطعة [HB] بالسنتمتر ؟\n<svg viewBox=\"0 0 230 214\"><title>المثلّث ABH القائم في H</title><polygon points=\"60,184 180,184 136.8,126.4\" fill=\"#0f172a\" fill-opacity=\"0.08\"/><polygon points=\"60,184 180,184 136.8,126.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M128 133 L134.6 141.8 L143.4 135.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"184\" r=\"3.8\"/><circle cx=\"180\" cy=\"184\" r=\"3.8\"/><circle cx=\"136.8\" cy=\"126.4\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"44\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"194\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"150.8\" y=\"122.4\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"120\" y=\"204\" text-anchor=\"middle\" fill=\"#64748b\">3 cm</text><text x=\"82.4\" y=\"135.2\" text-anchor=\"middle\" fill=\"#64748b\">2,4 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,6",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "1,8"
+        },
+        {
+          "id": "c",
+          "text": "3,24",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "√14,76",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABH قائم في H ، فوتره [AB] ، وبنظرية فيثاغورس AB² = AH² + HB² ، أي 9 = 5,76 + HB² ، ومنه HB² = 9 − 5,76 = 3,24 ، إذن HB = √3,24 = 1,8 cm ✓. الخطأ الشائع: طرح الطولين مباشرة فنجد 3 − 2,4 = 0,6 ؛ أو التوقّف عند HB² = 3,24 ؛ أو عدّ [AB] ضلعًا قائمًا فنجد HB² = 9 + 5,76 = 14,76.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABH قائم في H ، ونعلم أنّ الأطوال على التصميم بالسنتمتر هي:\nHB = 1,8\nAH = 2,4\nما مساحة المثلّث ABH على التصميم بالسنتمتر المربّع ؟\n<svg viewBox=\"0 0 230 214\"><title>المثلّث ABH القائم في H</title><polygon points=\"60,184 180,184 136.8,126.4\" fill=\"#0f172a\" fill-opacity=\"0.08\"/><polygon points=\"60,184 180,184 136.8,126.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M128 133 L134.6 141.8 L143.4 135.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"184\" r=\"3.8\"/><circle cx=\"180\" cy=\"184\" r=\"3.8\"/><circle cx=\"136.8\" cy=\"126.4\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"44\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"194\" y=\"202\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"150.8\" y=\"122.4\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g><g font-size=\"13\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"82.4\" y=\"135.2\" text-anchor=\"middle\" fill=\"#64748b\">2,4 cm</text><text x=\"182.4\" y=\"141.2\" text-anchor=\"middle\" fill=\"#64748b\">1,8 cm</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,16"
+        },
+        {
+          "id": "b",
+          "text": "3,6"
+        },
+        {
+          "id": "c",
+          "text": "4,2",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "4,32",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث ABH قائم في H ، فضلعاه القائمان [HB] و [AH] أحدهما قاعدة والآخر ارتفاع ، ومساحته HB × AH ÷ 2 = 1,8 × 2,4 ÷ 2 = 4,32 ÷ 2 = 2,16 cm² ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد 4,32 ؛ أو جمع الطولين كما في المحيط فنجد 1,8 + 2,4 = 4,2 ؛ أو ضرب الوتر [AB] في [AH] ثمّ القسمة على 2 فنجد 3 × 2,4 ÷ 2 = 3,6 ، مع أنّ [AB] ليس عموديًّا على [AH].",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "رُسمت قطعة أرض على تصميم سلّمه 1/1000 ، أي أنّ كلّ 1 cm على التصميم يمثّل 1000 cm في الواقع. جزؤها الأوّل مثلّث ABH قائم في H ، وطولا ضلعيه القائمين على التصميم بالسنتمتر هما:\nHB = 1,8\nAH = 2,4\nما المساحة الحقيقيّة لهذا الجزء بالمتر المربّع ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,216",
+          "misconceptionTag": "math.mes.echelle-aire-rapport-non-carre"
+        },
+        {
+          "id": "b",
+          "text": "21,6",
+          "misconceptionTag": "math.mes.echelle-aire-rapport-non-carre"
+        },
+        {
+          "id": "c",
+          "text": "216"
+        },
+        {
+          "id": "d",
+          "text": "2160"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "على التصميم تساوي مساحة المثلّث ABH:\n1,8 × 2,4 ÷ 2 = 2,16\nأي 2,16 سنتمتر مربّع. كلّ 1 cm على التصميم يمثّل 1000 cm في الواقع ، أي 10 m ، فكلّ سنتمتر مربّع على التصميم هو مربّع ضلعه 10 أمتار ، ومساحته:\n10 × 10 = 100\nأي 100 متر مربّع. إذن المساحة الحقيقيّة:\n2,16 × 100 = 216\nأي 216 مترًا مربّعًا ✓.\n الخطأ الشائع: تطبيق نسبة الأطوال على المساحة دون تربيعها: الضرب في 10 فنجد 21,6 ، أو الضرب في 1000 ثمّ التحويل إلى المتر المربّع بالقسمة على 10 000 فنجد 0,216.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires"
+      ]
+    }
+  ]
+}

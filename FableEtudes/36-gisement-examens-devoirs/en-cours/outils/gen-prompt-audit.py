@@ -14,7 +14,7 @@ files = []
 for C in chapters:
     ch = C['chapter']
     for n in C['nn']:
-        g = glob.glob(f'/home/user/yahia-quest-content/content/{subj}/{ch}/exercices/{n:02d}-*.json')
+        g = glob.glob(os.environ.get('CORPUS','/home/user/wt-gis')+f'/content/{subj}/{ch}/exercices/{n:02d}-*.json')
         assert len(g) == 1, (ch, n, g)
         d = json.load(open(g[0], encoding='utf-8'))
         qs = d['questions']
@@ -36,7 +36,7 @@ txt = f"""Tu es l'auditeur indépendant d'une tranche du gisement : {S['intro_ma
 - **Consigne à suivre à la lettre** : `/home/user/yahia-quest-content/.claude/skills/content-ingest/references/gisement-auditeur.md` (lis-la EN ENTIER : elle porte les « pièges relevés » sur les tranches précédentes, à chercher en priorité). Invoque d'abord le skill `content-audit`.
 - Tu n'as rien écrit de ce que tu audites. N'ouvre rien sous `/tmp/claude-0/` (le SEUL chemin que tu y touches : écrire ton rapport dans `{SP}/author/exam/audit-{lot}.md`, à créer{S.get('tmp_exception','')}), ni sous `content/programmes-officiels/sources-externes/`.
 
-**Périmètre exact** : dépôt `/home/user/yahia-quest-content`, arbre de travail tel quel (d'autres fichiers y sont en cours d'écriture ou de correction : ignore-les). {('Chapitres ' + ', '.join('`content/%s/%s/`' % (subj, C['chapter']) for C in chapters)) if multi else ('Chapitre `content/%s/%s/`' % (subj, chapters[0]['chapter']))}, dossier `exercices/` ({len(files)} fichiers, {tot} questions) :
+**Périmètre exact** : dépôt `{os.environ.get('CORPUS','/home/user/wt-gis')}`, arbre de travail tel quel (d'autres fichiers y sont en cours d'écriture ou de correction : ignore-les). {('Chapitres ' + ', '.join('`content/%s/%s/`' % (subj, C['chapter']) for C in chapters)) if multi else ('Chapitre `content/%s/%s/`' % (subj, chapters[0]['chapter']))}, dossier `exercices/` ({len(files)} fichiers, {tot} questions) :
 {flist}
 
 Ce sont les seuls fichiers de l'auteur (les numéros inférieurs sont publiés). `chapter.json` n'est pas modifié par l'auteur (la ligne `sources[]` des sujets officiels est ajoutée à la livraison ; ne la juge pas). Chaque mission reprend un exercice dont la **transcription officielle** est sous `content/programmes-officiels/examens-nationaux/{classe}/{S['matiere_manifeste']}/` : {trans}.{S.get('extra_sources','')}

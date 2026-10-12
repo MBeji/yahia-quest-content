@@ -1,0 +1,128 @@
+{
+  "title": "🏛️ مناظرة 2021 (تقني) · التمرين 1 ⭐⭐: الجذور التربيعيّة والمقابل والقيمة المطلقة وضلع ناقص في مثلّث قائم",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 49,
+  "questions": [
+    {
+      "prompt": "احسب ثمّ اختصر الناتج:\n√2 × (√8 − √2)",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "2√3",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "c",
+          "text": "4 − √2",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "d",
+          "text": "2√2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نوزّع √2 على الحدّين: √2 × √8 − √2 × √2 = √16 − 2 = 4 − 2 = 2 ✓. طريقة ثانية: √8 = 2√2 ، فالقوس يساوي 2√2 − √2 = √2 ، وجداء √2 في √2 يساوي 2. الخطأ الشائع: دمج √8 − √2 في √6 فنجد √2 × √6 = √12 = 2√3 ؛ أو ضرب √2 في الحدّ الأوّل فقط فنجد 4 − √2.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما مقابل العدد التالي ؟\n1 − √3",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 − √3",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "b",
+          "text": "1 + √3",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "c",
+          "text": "√3 − 1"
+        },
+        {
+          "id": "d",
+          "text": "1/(1 − √3)",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "مقابل عدد هو العدد الذي يجمع معه صفرًا ، وهو يغيّر إشارة كلّ حدّ: −(1 − √3) = −1 + √3 = √3 − 1 ✓ ، وفعلًا (1 − √3) + (√3 − 1) = 0. الخطأ الشائع: تغيير إشارة حدّ واحد فقط فنجد −1 − √3 أو 1 + √3 ؛ أو أخذ المقلوب بدل المقابل فنجد 1/(1 − √3).",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما قيمة العدد التالي ؟\n|1 − √2| − √2",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "1 − 2√2",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "d",
+          "text": "2√2 − 1",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "√2 أكبر من 1 لأنّ 2 أكبر من 1 ، فالعدد 1 − √2 سالب ، وقيمته المطلقة هي مقابله: |1 − √2| = √2 − 1. إذن |1 − √2| − √2 = √2 − 1 − √2 = −1 ✓. الخطأ الشائع: رفع الشريطين دون اختبار الإشارة فنجد (1 − √2) − √2 = 1 − 2√2 ؛ أو جمع √2 بدل طرحه فنجد (√2 − 1) + √2 = 2√2 − 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A ، ونعلم أنّ الأطوال بالمتر هي:\nAB = 40\nBC = 50\nما طول القطعة [AC] بالمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "10",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "30"
+        },
+        {
+          "id": "c",
+          "text": "900",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "√4100",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABC قائم في A ، فوتره [BC] ، وبنظرية فيثاغورس BC² = AB² + AC² ، أي 2500 = 1600 + AC² ، ومنه AC² = 2500 − 1600 = 900 ، إذن AC = √900 = 30 m ✓. الخطأ الشائع: طرح الطولين مباشرة فنجد 50 − 40 = 10 ؛ أو التوقّف عند AC² = 900 ؛ أو جمع المربّعين كأنّ [BC] ضلع قائم فنجد AC² = 1600 + 2500 = 4100.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}

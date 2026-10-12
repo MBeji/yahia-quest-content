@@ -1,0 +1,132 @@
+math.num.valeur-absolue-negative | Tu crois qu'une valeur absolue peut être négative : c'est une distance à zéro, donc toujours positive ou nulle
+math.num.valeur-absolue-toujours-oppose | Tu prends l'opposé dans tous les cas : la valeur absolue ne change le signe que si le nombre est négatif
+math.num.valeur-absolue-solution-unique | Tu ne gardes qu'une solution à |x| = a : il y en a DEUX, opposées, dès que a est strictement positif
+math.num.valeur-absolue-signe-du-contenu-non-teste | Tu enlèves les barres sans tester le signe de ce qu'elles contiennent : |a − b| vaut b − a quand a est plus petit que b
+math.num.valeur-absolue-somme-additive | Tu distribues la valeur absolue sur une somme : |a + b| n'est pas |a| + |b| en général — elle ne se distribue que sur un produit ou un quotient
+math.num.oppose-inverse-confondus | Tu confonds l'opposé et l'inverse : l'opposé change le signe, l'inverse retourne la fraction
+math.num.racine-carre-sans-valeur-absolue | Tu simplifies la racine d'un carré sans condition : le résultat est la valeur absolue, car une racine carrée n'est jamais négative
+math.num.racine-negatif-existe | Tu prends la racine carrée d'un nombre négatif : elle n'existe pas dans l'ensemble des réels
+math.num.racine-confondue-avec-moitie | Tu prends la moitié du nombre au lieu de sa racine carrée : la racine de 64 est 8, pas 32
+math.num.racine-et-carre-confondus | Tu confonds la racine carrée et le carré : l'une défait l'autre, elles ne donnent pas le même résultat
+math.num.racine-carree-negative-oubliee | Tu ne gardes qu'une solution à x² = a : un carré positif a deux racines opposées
+math.num.racine-distribuee-sur-somme | Tu distribues la racine sur une somme ou une différence (ou tu fusionnes deux racines ainsi) : la règle ne vaut que pour un produit ou un quotient, ja
+math.num.racine-produit-transforme-en-somme | Tu additionnes les nombres sous les racines au lieu de les multiplier : √a × √b vaut √(a × b)
+math.num.radicaux-semblables-radicande-additionne | Tu additionnes aussi les nombres sous la racine : entre radicaux semblables, seuls les coefficients s'additionnent
+math.num.racine-simplification-additive | Tu décomposes le nombre sous la racine en une somme : pour simplifier, il faut en extraire un carré parfait en facteur
+math.num.racine-extraction-facteur-inversee | Tu échanges le facteur sorti de la racine et celui qui reste dessous : c'est le carré parfait qui sort, √50 = 5√2 et non 2√5
+math.alg.moins-devant-parenthese | Tu n'appliques le signe moins qu'à une partie des termes de la parenthèse : il change le signe de TOUS les termes
+math.alg.distribution-partielle | Tu ne multiplies que le premier terme de la parenthèse : le facteur se distribue sur tous les termes
+math.alg.termes-semblables-par-coefficient | Tu regroupes les termes selon leur coefficient : ce sont ceux de même partie littérale qui se regroupent
+math.alg.carre-somme-sans-double-produit | Tu oublies le double produit en développant le carré d'une somme ou d'une différence
+math.alg.carre-difference-signes | Tu te trompes de signes dans le carré d'une différence : seul le double produit est négatif, le dernier terme reste positif
+math.alg.difference-carres-confondue | Tu confonds une différence de deux carrés avec un carré : elle se factorise en un produit de la somme par la différence
+math.alg.difference-carres-somme-au-lieu-de-difference | Tu additionnes les deux carrés au lieu de les soustraire : (a + b)(a − b) vaut a² − b², jamais a² + b²
+math.alg.difference-carres-second-terme-non-eleve-au-carre | Tu retranches le second terme sans l'élever au carré : dans (√7 − 2)(√7 + 2) le dénominateur vaut 7 − 4, pas 7 − 2
+math.alg.factoriser-et-developper-confondus | Tu développes là où on demande de factoriser : factoriser transforme une somme en produit, développer fait l'inverse
+math.alg.factorisation-partielle | Tu n'extrais qu'une partie du facteur commun : il doit être le plus grand possible, sinon l'expression reste factorisable
+math.alg.transposition-sans-changer-signe | Tu fais passer un terme de l'autre côté de l'égalité ou de l'inégalité sans changer son signe
+math.alg.coefficient-non-divise | Tu t'arrêtes avant de diviser par le coefficient de l'inconnue : 2x = 8 donne x = 4, pas x = 8
+math.alg.produit-nul-et-au-lieu-de-ou | Tu exiges que les deux facteurs soient nuls : un produit est nul dès que l'un OU l'autre l'est
+math.alg.produit-nul-racine-signe-non-oppose | Tu lis la racine telle qu'elle apparaît dans la parenthèse : (x − 4) s'annule pour x = 4, mais (x + 2) s'annule pour x = −2
+math.alg.produit-nul-applique-a-une-somme | Tu appliques la règle du produit nul à une somme : elle ne vaut que pour un produit de facteurs
+math.alg.division-par-inconnue-perd-solution | Tu divises les deux membres par l'inconnue : tu perds la solution zéro, il faut factoriser puis appliquer la règle du produit nul
+math.alg.inequation-sens-non-inverse | Tu multiplies ou divises par un nombre négatif sans inverser le sens de l'inégalité
+math.alg.inequation-solution-unique | Tu cherches une solution unique à une inéquation : sa solution est un intervalle, pas un seul nombre
+math.alg.systeme-equations-traitees-separement | Tu résous chaque équation du système à part : le couple cherché doit vérifier les deux en même temps
+math.alg.systeme-methodes-confondues | Tu appliques les gestes de la méthode par combinaison à la méthode par substitution : la substitution commence par isoler un inconnu, elle ne multipli
+math.alg.systeme-verification-partielle | Tu vérifies le couple solution dans une seule équation : il faut le substituer dans les deux
+math.alg.systeme-impossible-et-indetermine-confondus | Tu confonds une jonction impossible et une jonction indéterminée : deux équations proportionnelles dont les constantes ne le sont pas n'ont AUCUN coup
+math.geo.thales-sans-verifier-parallelisme | Tu appliques le théorème sans vérifier que les droites sont parallèles : c'est sa condition d'entrée
+math.geo.thales-rapport-inverse | Tu inverses un des rapports : les trois doivent aller dans le même sens, petit triangle sur grand triangle
+math.geo.thales-formes-melangees | Tu mélanges les deux écritures : « partie sur tout » et « partie sur reste » ne se combinent pas dans une même égalité
+math.geo.thales-longueurs-au-lieu-de-rapports | Tu compares des longueurs ou leurs différences au lieu des rapports : Thalès met en jeu des QUOTIENTS égaux, pas des segments égaux
+math.geo.thales-reciproque-role | Tu te trompes sur le rôle de la réciproque : elle prouve un parallélisme, elle ne calcule pas une longueur
+math.geo.hypotenuse-mal-choisie | Tu prends le mauvais côté comme hypoténuse : c'est toujours celui opposé à l'angle droit
+math.geo.pythagore-sans-carres | Tu additionnes ou soustrais les longueurs au lieu de leurs carrés : Pythagore relie les CARRÉS des côtés
+math.geo.pythagore-racine-oubliee | Tu t'arrêtes au carré : Pythagore donne le CARRÉ de la longueur, il reste à en prendre la racine
+math.geo.cosinus-sinus-confondus | Tu confonds cosinus et sinus : le cosinus utilise le côté adjacent, le sinus le côté opposé
+math.geo.valeurs-remarquables-confondues | Tu confonds les valeurs remarquables : 30°, 45° et 60° n'ont pas les mêmes sinus, cosinus ni tangentes
+math.geo.trigo-rapport-inverse | Tu inverses le rapport trigonométrique : pour le sinus et le cosinus, l'hypoténuse est au dénominateur
+math.geo.identite-trigo-sans-carres | Tu oublies les carrés dans l'identité fondamentale : c'est sin²x + cos²x qui vaut 1, pas sin x + cos x
+math.geo.angle-inscrit-egal-au-centre | Tu donnes à l'angle inscrit la même mesure que l'angle au centre : il en vaut la moitié
+math.geo.angle-inscrit-double-du-centre | Tu doubles au lieu de diviser : c'est l'angle au centre qui vaut le double de l'angle inscrit, pas l'inverse
+math.geo.angles-inscrits-cotes-opposes | Tu appliques l'égalité des angles inscrits alors que les deux sommets sont de part et d'autre de la corde : ils sont alors supplémentaires
+math.geo.quadrilatere-inscrit-angles-opposes | Dans un quadrilatère inscrit dans un cercle, les angles opposés sont SUPPLÉMENTAIRES, pas égaux : leur somme fait 180°
+math.geo.angle-inscrit-arc-oppose-ignore | Tu prends toujours la moitié de l'angle au centre : quand le sommet est sur le PETIT arc, l'angle inscrit intercepte l'arc opposé
+math.geo.diagonales-proprietes-mal-attribuees | Tu attribues à un quadrilatère les diagonales d'un autre : même milieu pour tout parallélogramme, égales pour le rectangle, perpendiculaires pour le l
+math.geo.condition-suffisante-supposee | Tu prends une seule propriété pour une preuve : il faut toutes les conditions — par exemple, des diagonales perpendiculaires ne suffisent pas au losan
+math.geo.description-la-plus-precise-manquee | Tu t'arrêtes à une description vraie mais pas la plus précise — ou tu en ajoutes une que rien ne prouve : un carré est un losange, l'inverse est faux
+math.geo.droite-des-milieux-facteur-deux | Le segment qui joint deux milieux vaut la MOITIÉ du troisième côté : le côté est son double, pas sa moitié
+math.geo.mediane-hypotenuse-demi | Dans un triangle rectangle, la médiane issue de l'angle droit vaut la MOITIÉ de l'hypoténuse — et le milieu de l'hypoténuse est à égale distance des t
+math.mes.volume-pyramide-sans-tiers | Tu oublies le tiers dans le volume d'une pyramide ou d'un cône
+math.mes.tiers-applique-a-tort | Tu divises par 3 un volume de prisme ou de cylindre : le tiers ne concerne que la pyramide et le cône
+math.mes.aire-utilisee-comme-volume | Tu utilises une formule d'aire là où on demande un volume : un volume fait intervenir trois dimensions
+math.mes.volume-utilise-comme-aire | Tu donnes un volume là où on demande une aire : une aire est en cm², un volume en cm³
+math.mes.formules-solides-confondues | Tu appliques la formule d'un autre solide : chaque solide a la sienne, et un r³ ne remplace pas un r²h
+math.mes.rayon-non-eleve-au-carre | Tu oublies d'élever le rayon au carré : l'aire du disque vaut πr², donc le volume du cylindre πr²h et non πrh
+math.mes.agrandissement-volume-non-cube | Tu multiplies le volume par le rapport d'agrandissement : un volume est multiplié par le CUBE de ce rapport
+math.mes.aire-et-perimetre-confondus | Tu confonds l'aire et le périmètre : le périmètre s'additionne le long du contour, l'aire se calcule en multipliant deux dimensions
+math.mes.aire-triangle-sans-moitie | Tu oublies de diviser par 2 l'aire du triangle : c'est la moitié du produit de la base par la hauteur
+math.mes.aire-trapeze-sans-demi-somme | L'aire d'un trapèze est la DEMI-somme des deux bases multipliée par la hauteur : une seule base, ou la somme entière, ne convient pas
+math.mes.aire-losange-sans-moitie | L'aire d'un losange est le DEMI-produit de ses diagonales : oublier la moitié double le résultat
+math.alg.reponse-a-l-autre-inconnue | Tu donnes une autre grandeur que celle demandée — l'autre inconnue, ou un résultat intermédiaire : relis la question avant de choisir
+math.num.operation-inverse-appliquee | Tu fais l'opération contraire de celle demandée : une addition au lieu d'une soustraction (ou l'inverse), une somme au lieu d'un produit, une division
+math.prop.vitesse-grandeurs-additionnees | Tu additionnes la distance et la durée : ce sont deux grandeurs différentes, elles ne s'ajoutent pas — la vitesse est un quotient
+math.prop.formule-vitesse-inversee | Tu inverses la formule : la vitesse est la distance DIVISÉE par la durée, jamais la durée divisée par la distance
+math.prop.pourcentage-recopie-comme-resultat | Tu recopies un nombre de l'énoncé au lieu de calculer : 20 % de 80 n'est pas 20, c'est une part de 80
+math.prop.additive-au-lieu-de-multiplicative | Tu ajoutes la différence au lieu de multiplier : dans une situation de proportionnalité, si la quantité double, le prix double
+math.geo.symboles-perpendiculaire-parallele-confondus | Tu confonds les deux symboles : ⊥ marque la perpendicularité, ∥ marque le parallélisme
+math.geo.perpendiculaire-et-parallele-confondus | Tu confonds les deux positions : des droites parallèles ne se coupent jamais, des perpendiculaires se coupent à angle droit
+math.geo.intersection-prise-pour-perpendicularite | Se couper ne suffit pas : deux droites ne sont perpendiculaires que si l'angle formé est DROIT
+math.geo.regle-perpendiculaire-parallele-inversee | Tu conclus au parallélisme là où il y a perpendicularité, ou l'inverse : deux droites perpendiculaires à une même droite sont parallèles entre elles
+math.geo.type-d-angle-confondu | Tu te trompes de type : sous 90° l'angle est aigu, à 90° il est droit, entre 90° et 180° il est obtus, à 180° il est plat
+math.geo.valeur-angle-de-reference-confondue | Tu confonds les mesures de référence : l'angle droit vaut 90°, l'angle plat 180°, le tour complet 360°
+math.geo.classement-triangle-par-cotes-errone | Compare les trois longueurs : trois côtés égaux → équilatéral, deux seulement → isocèle, aucun → scalène
+math.geo.classement-triangle-par-angles-errone | Regarde le plus grand angle : un angle droit → triangle rectangle, un angle obtus → obtusangle, sinon acutangle
+math.geo.classements-triangle-melanges | Tu réponds sur les angles quand la question porte sur les côtés (ou l'inverse) : un triangle se classe des DEUX façons, séparément
+math.geo.quadrilatere-mal-identifie | Reprends les deux critères : les angles sont-ils droits ? les quatre côtés sont-ils égaux ? c'est leur croisement qui nomme le quadrilatère
+math.geo.paires-de-cotes-paralleles-mal-comptees | Compte les paires parallèles : le trapèze n'en a qu'UNE, le parallélogramme en a DEUX
+math.mes.perimetre-nombre-de-cotes-errone | Tu multiplies par le mauvais nombre de côtés : un carré et un losange en ont 4, un triangle équilatéral en a 3
+math.mes.perimetre-rectangle-somme-non-doublee | Tu additionnes la longueur et la largeur sans doubler : le rectangle a DEUX longueurs et DEUX largeurs
+math.mes.conversion-aire-facteur-errone | Une unité d'aire se convertit par 100, pas par 10 : 1 m² = 100 dm² = 10 000 cm²
+math.geo.rayon-et-diametre-confondus | Tu confonds rayon et diamètre : le diamètre passe par le centre et vaut le DOUBLE du rayon
+math.geo.formules-cercle-perimetre-et-aire-confondues | Tu confonds les deux formules : le périmètre vaut 2 × π × r, l'aire du disque π × r × r
+math.geo.valeur-de-pi-erronee | La valeur approchée retenue est π ≈ 3,14 — ni 3, ni 3,41
+math.geo.cercle-et-disque-confondus | Le cercle est la ligne courbe — il a un périmètre ; le disque est la surface pleine — il a une aire
+math.geo.facteur-pi-omis | Tu as oublié de multiplier par π : sans lui, tu ne calcules qu'une longueur de côtés, pas un cercle
+math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop | Le 2 va avec le RAYON, pas avec le diamètre : périmètre = 2 × π × r = π × d — jamais les deux à la fois
+math.mes.aire-division-par-deux-appliquee-a-tort | Tu divises par 2 une aire de rectangle ou de parallélogramme : la moitié ne concerne que le triangle, le trapèze et le losange
+math.mes.duree-convertie-en-base-cent | Le temps ne se convertit ni par 10 ni par 100 : la minute vaut 60 secondes et l'heure 60 minutes
+math.mes.duree-retenue-de-soixante-non-faite | Une durée ne garde jamais 60 minutes ou plus : 3 h 75 min s'écrit 4 h 15 min
+math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite | Chaque unité de temps a SA constante : 60 pour la minute et l'heure, 24 pour le jour, 7 pour la semaine, 12 pour l'année
+math.geo.solide-faces-aretes-sommets-confondus | Tu confonds faces, arêtes et sommets : le cube et le pavé ont 6 faces, 12 arêtes et 8 sommets
+math.mes.cube-coefficient-quatre-et-six-echanges | Le cube a 4 faces latérales et 6 faces en tout : le 4 est pour l'aire latérale, le 6 pour l'aire totale
+math.mes.solide-une-seule-face-comptee | Tu n'as compté qu'une seule face : l'aire d'un solide additionne toutes ses faces, pas une
+math.mes.arete-non-elevee-au-carre | Tu oublies d'élever l'arête au carré : une face de cube vaut arête × arête, pas l'arête seule
+math.mes.aire-laterale-et-totale-confondues | Tu confonds aire latérale et aire totale : la totale ajoute les DEUX bases à la latérale
+math.alg.solution-hors-contrainte-gardee | Tu gardes toutes les solutions de l'équation : le problème en élimine — une longueur est strictement positive, un nombre imposé reste dans son interva
+math.geo.centre-gravite-milieu-mediane | Tu places le centre de gravité au milieu de la médiane : il est aux deux tiers de la médiane à partir du sommet, au tiers à partir du milieu du côté
+math.geo.centre-gravite-tiers-inverse | Tu inverses le tiers et les deux tiers : c'est à partir du SOMMET que le centre de gravité est aux deux tiers de la médiane
+math.geo.relation-hauteur-somme-au-lieu-de-produit | Tu additionnes les deux segments que la hauteur découpe sur l'hypoténuse : le carré de la hauteur est leur PRODUIT (AH² = BH × CH)
+math.geo.relation-aire-mauvais-cote | Tu multiplies la hauteur par un côté de l'angle droit : dans AH × BC = AB × AC, la hauteur relative à l'hypoténuse multiplie l'HYPOTÉNUSE — deux calcu
+math.geo.relation-hauteur-racine-oubliee | Tu confonds AH et AH² : la relation donne le CARRÉ de la hauteur — prends sa racine pour trouver AH, et élève AH au carré avant de le comparer à BH × 
+math.geo.hauteur-confondue-avec-mediane | Tu prends la hauteur issue de l'angle droit pour la médiane : son pied H n'est pas le milieu de l'hypoténuse, et AH n'en vaut pas la moitié (sauf si l
+math.alg.carre-somme-signe-double-produit | Tu donnes le signe moins au double produit dans le carré d'une somme : (a + b)² = a² + 2ab + b²
+math.alg.double-produit-sans-facteur-2 | Tu écris le double produit sans son facteur 2 : dans (a + b)², le terme du milieu vaut 2ab, pas ab
+math.geo.pythagore-egalite-approchee | Tu acceptes une égalité approchée : dans la réciproque de Pythagore, 61 et 64 sont différents, donc le triangle n'est pas rectangle
+math.alg.facteur-commun-terme-non-divise | Tu mets un facteur en évidence sans diviser chaque terme par lui : dans 8x² − 20x = 4x(…), 20x ÷ 4x vaut 5, pas 20
+math.alg.facteur-commun-signe-change | Tu changes le signe d'un terme en mettant en facteur : le signe qui sépare les termes se conserve dans la parenthèse
+math.alg.inequation-demi-droite-sens-inverse | Tu diriges la demi-droite du mauvais côté : x ≥ a se représente vers la droite, x ≤ a vers la gauche
+math.alg.facteur-commun-reste-oublie | Tu oublies ce qui reste après la mise en facteur : un terme égal au facteur commun laisse 1, et tout ce qui reste doit être regroupé dans la parenthès
+math.alg.produit-nul-une-seule-solution | Tu ne gardes qu'une solution : chaque facteur nul du produit en donne une — écris-les toutes, puis n'écarte que celles que l'énoncé exclut
+math.geo.segment-mal-choisi | Tu prends dans la figure un autre segment que celui que demande la propriété : repère d'abord le bon triangle et ses côtés
+math.geo.droite-des-milieux-mauvais-cote | Tu prends la moitié d'un côté qui porte l'un des milieux : le segment qui joint les milieux vaut la moitié du TROISIÈME côté, celui qui ne passe par a
+math.geo.position-relative-ignoree | Tu ignores la position relative des points : selon que le point est ENTRE les deux autres ou À L'EXTÉRIEUR (et de quel côté), les longueurs se retranc
+math.mes.echelle-aire-rapport-non-carre | Tu appliques à une aire le rapport des longueurs : à l'échelle 1/k, chaque longueur est multipliée par k, donc une aire est multipliée par k × k
+math.geo.parallelogramme-sommets-mal-ordonnes | Tu ordonnes mal les sommets du parallélogramme : dans ABCD, les diagonales joignent les sommets opposés, [AC] et [BD], et ce sont elles qui ont le mêm
+math.geo.pythagore-reciproque-role | Tu confonds Pythagore et sa réciproque : le théorème part d'un triangle rectangle pour donner l'égalité des carrés ; la réciproque part de l'égalité p
+math.prop.pourcentage-base-erronee | Tu calcules le pourcentage sur la mauvaise base : une baisse ou une hausse se rapporte au prix de DÉPART, pas au prix final
+math.alg.carre-difference-ecrit-difference-carres | Tu développes le carré d'une différence comme une différence de carrés : (a − b)² vaut a² − 2ab + b², pas a² − b²
+math.geo.angle-droit-mauvais-sommet | Tu places l'angle droit au mauvais sommet : il est au sommet où se coupent les deux côtés perpendiculaires — dans un cercle, au sommet qui fait face a
+math.geo.droites-remarquables-confondues | Tu confonds les droites remarquables du triangle : la hauteur passe par un sommet perpendiculairement au côté opposé, la médiane joint un sommet au mi
+math.geo.fonction-trigo-mal-choisie | Tu choisis le mauvais rapport trigonométrique : avec les côtés opposé et adjacent à l'angle, c'est la tangente ; le sinus et le cosinus font interveni
