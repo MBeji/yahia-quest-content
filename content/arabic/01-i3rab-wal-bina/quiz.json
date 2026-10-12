@@ -5,7 +5,11 @@
       "difficulty": 1,
       "prompt": "ما الفرق الجوهري بين الكلمة المُعرَبة والكلمة المبنيّة؟",
       "options": [
-        { "id": "a", "text": "المعربة لا تتغيّر حركة آخرها، والمبنية تتغيّر" },
+        {
+          "id": "a",
+          "text": "المعربة لا تتغيّر حركة آخرها، والمبنية تتغيّر",
+          "misconceptionTag": "arabe.i3rab.mabni-mu3rab-khalt"
+        },
         { "id": "b", "text": "المعربة تتغيّر حركة آخرها بتغيّر موقعها، والمبنية تلزم حالة واحدة" },
         { "id": "c", "text": "المعربة هي الحروف فقط، والمبنية هي الأسماء فقط" },
         { "id": "d", "text": "المعربة لا تدخل في الجملة الفعلية، والمبنية تدخل في كليهما" }
@@ -19,7 +23,7 @@
       "options": [
         { "id": "a", "text": "الرفع" },
         { "id": "b", "text": "النصب" },
-        { "id": "c", "text": "الجرّ" },
+        { "id": "c", "text": "الجرّ", "misconceptionTag": "arabe.i3rab.jarr-jazm-khalt" },
         { "id": "d", "text": "الجزم" }
       ],
       "correctOption": "d",
@@ -29,10 +33,10 @@
       "difficulty": 2,
       "prompt": "ما علامة الإعراب الفرعية لرفع جمع المذكّر السالم؟",
       "options": [
-        { "id": "a", "text": "الضمّة" },
-        { "id": "b", "text": "الألف" },
+        { "id": "a", "text": "الضمّة", "misconceptionTag": "arabe.i3rab.haraka-bada-harf" },
+        { "id": "b", "text": "الألف", "misconceptionTag": "arabe.i3rab.harf-ghayr-munasib" },
         { "id": "c", "text": "الواو" },
-        { "id": "d", "text": "النون" }
+        { "id": "d", "text": "النون", "misconceptionTag": "arabe.i3rab.harf-ghayr-munasib" }
       ],
       "correctOption": "c",
       "explanation": "جمع المذكّر السالم يُرفع بالواو نيابةً عن الضمّة، كـ«المعلّمونَ»."
@@ -41,10 +45,10 @@
       "difficulty": 2,
       "prompt": "أيٌّ من الكلمات التالية مبنيّة لا معربة؟",
       "options": [
-        { "id": "a", "text": "كتابٌ" },
-        { "id": "b", "text": "مدرسةٌ" },
+        { "id": "a", "text": "كتابٌ", "misconceptionTag": "arabe.i3rab.mabni-mu3rab-khalt" },
+        { "id": "b", "text": "مدرسةٌ", "misconceptionTag": "arabe.i3rab.mabni-mu3rab-khalt" },
         { "id": "c", "text": "الذي" },
-        { "id": "d", "text": "معلّمٌ" }
+        { "id": "d", "text": "معلّمٌ", "misconceptionTag": "arabe.i3rab.mabni-mu3rab-khalt" }
       ],
       "correctOption": "c",
       "explanation": "«الذي» اسم موصول، والأسماء الموصولة مبنيّة تلزم حالة واحدة مهما تغيّر موقعها."
@@ -53,10 +57,14 @@
       "difficulty": 3,
       "prompt": "في «مررتُ بمساجدَ»، جُرَّت كلمة «مساجدَ» بالفتحة لأنّها:",
       "options": [
-        { "id": "a", "text": "اسم مقصور" },
+        { "id": "a", "text": "اسم مقصور", "misconceptionTag": "arabe.i3rab.mamnu3-sabab-khalt" },
         { "id": "b", "text": "ممنوعة من الصرف" },
-        { "id": "c", "text": "مثنّى" },
-        { "id": "d", "text": "جمع مذكّر سالم" }
+        { "id": "c", "text": "مثنّى", "misconceptionTag": "arabe.i3rab.mamnu3-sabab-khalt" },
+        {
+          "id": "d",
+          "text": "جمع مذكّر سالم",
+          "misconceptionTag": "arabe.i3rab.mamnu3-sabab-khalt"
+        }
       ],
       "correctOption": "b",
       "explanation": "الممنوع من الصرف يُجرّ بالفتحة نيابةً عن الكسرة، و«مساجدَ» ممنوعة من الصرف لكونها جمع تكسير على صيغة منتهى الجموع."
