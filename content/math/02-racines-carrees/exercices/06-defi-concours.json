@@ -10,11 +10,11 @@
       "prompt": "ما قيمة العدد التالي؟\n(√13)² + √((−7)²)",
       "options": [
         { "id": "a", "text": "6", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
-        { "id": "b", "text": "62", "misconceptionTag": "math.num.racine-et-carre-confondus" },
-        { "id": "c", "text": "20" },
+        { "id": "b", "text": "20" },
+        { "id": "c", "text": "62", "misconceptionTag": "math.num.racine-et-carre-confondus" },
         { "id": "d", "text": "176", "misconceptionTag": "math.num.racine-et-carre-confondus" }
       ],
-      "correctOption": "c",
+      "correctOption": "b",
       "explanation": "(√13)² = 13 لأنّ تربيع الجذر يعيد العدد الموجب نفسه. و√((−7)²) = √49 = 7 = |−7| لأنّ الجذر موجب. إذن المجموع 13 + 7 = 20. الأخطاء الشائعة: اعتبار √((−7)²) = −7 فيخرج 13 + (−7) = 6 ؛ أو حساب 49 دون أخذ الجذر فيخرج 13 + 49 = 62 ؛ أو حساب (√13)² = 169 فيخرج 169 + 7 = 176.",
       "difficulty": 2,
       "competencies": ["math.num.racines-definition"]
@@ -39,9 +39,21 @@
     {
       "prompt": "مستطيل بُعداه √27 cm و√48 cm. ما محيطه بالصورة المبسّطة؟",
       "options": [
-        { "id": "a", "text": "7√3 cm", "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee" },
-        { "id": "b", "text": "10√3 cm", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
-        { "id": "c", "text": "14√6 cm", "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne" },
+        {
+          "id": "a",
+          "text": "7√3 cm",
+          "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee"
+        },
+        {
+          "id": "b",
+          "text": "10√3 cm",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "c",
+          "text": "14√6 cm",
+          "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne"
+        },
         { "id": "d", "text": "14√3 cm" }
       ],
       "correctOption": "d",
@@ -53,7 +65,11 @@
       "prompt": "أنطق مقام الكسر وبسّطه تمامًا: 3 / (√7 − 2).",
       "options": [
         { "id": "a", "text": "√7 − 2" },
-        { "id": "b", "text": "3√7 + 6", "misconceptionTag": "math.num.rationalisation-denominateur-oublie" },
+        {
+          "id": "b",
+          "text": "3√7 + 6",
+          "misconceptionTag": "math.num.rationalisation-denominateur-oublie"
+        },
         {
           "id": "c",
           "text": "(3√7 + 6) / 5",
@@ -62,9 +78,9 @@
         { "id": "d", "text": "√7 + 2" }
       ],
       "correctOption": "d",
-      "explanation": "نضرب البسط والمقام في المرافق (√7 + 2): 3(√7 + 2) / [(√7 − 2)(√7 + 2)]. المقام فرق مربّعين: (√7)² − 2² = 7 − 4 = 3. إذن العبارة = 3(√7 + 2) / 3 = √7 + 2. ✓ الخطأ الشائع: حساب المقام 7 − 2 = 5 بدل (√7)² − 2² = 3 (فيخرج (3√7 + 6)/5)؛ أو نسيان القسمة على 3 (فيخرج 3√7 + 6)؛ أو الضرب في (√7 − 2) فلا يُنطَق المقام.",
+      "explanation": "نضرب البسط والمقام في المرافق (√7 + 2): 3(√7 + 2) / [(√7 − 2)(√7 + 2)]. وننشر المقام بتوزيع الضرب: (√7 − 2)(√7 + 2) = 7 + 2√7 − 2√7 − 4 = 7 − 4 = 3. إذن العبارة = 3(√7 + 2) / 3 = √7 + 2. ✓ الخطأ الشائع: حساب المقام 7 − 2 = 5 بدل 7 − 4 = 3 بنسيان أنّ الحدّ الثاني يُضرب في نفسه 2 × 2 = 4 (فيخرج (3√7 + 6)/5)؛ أو نسيان القسمة على 3 (فيخرج 3√7 + 6)؛ أو الضرب في (√7 − 2) فلا يُنطَق المقام.",
       "difficulty": 3,
-      "competencies": ["math.num.racines-calcul", "math.alg.identites-remarquables"]
+      "competencies": ["math.num.racines-calcul", "math.alg.developpement"]
     },
     {
       "prompt": "ما قيمة العدد التالي؟\n5√3 / (2√27 / 5)",
@@ -100,7 +116,7 @@
       "expectedMistakes": [
         { "text": "عدد أصمّ", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" }
       ],
-      "explanation": "بفرق المربّعين: (√5)² − 2² = 5 − 4 = 1. الجذر يختفي، والناتج 1 ينتمي إلى ℕ. وهذا بالضبط ما يجعل الضرب في المرافق مفيدًا لإنطاق المقام: هو يحوّل عبارة بجذر إلى عدد بلا جذر.",
+      "explanation": "ننشر بتوزيع الضرب: (√5 + 2)(√5 − 2) = 5 − 2√5 + 2√5 − 4 = 1. الحدّان الأوسطان متقابلان فيزولان، والجذر يختفي، والناتج 1 ينتمي إلى ℕ. وهذا بالضبط ما يجعل الضرب في المرافق مفيدًا لإنطاق المقام: هو يحوّل عبارة بجذر إلى عدد بلا جذر.",
       "difficulty": 3,
       "competencies": ["math.num.racines-calcul"]
     }

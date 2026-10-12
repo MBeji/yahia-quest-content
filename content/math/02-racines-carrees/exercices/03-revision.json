@@ -11,7 +11,11 @@
       "options": [
         { "id": "a", "text": "9√5" },
         { "id": "b", "text": "3√15" },
-        { "id": "c", "text": "5√3", "misconceptionTag": "math.num.racine-extraction-facteur-inversee" },
+        {
+          "id": "c",
+          "text": "5√3",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        },
         { "id": "d", "text": "3√5" }
       ],
       "correctOption": "d",
@@ -41,14 +45,18 @@
         { "id": "d", "text": "2√26" }
       ],
       "correctOption": "c",
-      "explanation": "نبسّط كلّ جذر: √8 = √(4×2) = 2√2 ، و√18 = √(9×2) = 3√2. إذن √8 + √18 = 2√2 + 3√2 = 5√2. أمّا √26 فخاطئ لأنّ √(a)+√(b) ≠ √(a+b).",
+      "explanation": "نبسّط كلّ جذر: √8 = √(4×2) = 2√2 ، و√18 = √(9×2) = 3√2. إذن √8 + √18 = 2√2 + 3√2 = 5√2. أمّا √26 فخاطئ لأنّ √a + √b ≠ √(a + b).",
       "difficulty": 3,
       "competencies": ["math.num.racines-calcul"]
     },
     {
       "prompt": "ما قيمة √((−5)²) ؟",
       "options": [
-        { "id": "a", "text": "−5", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
+        {
+          "id": "a",
+          "text": "−5",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
         { "id": "b", "text": "5" },
         { "id": "c", "text": "25", "misconceptionTag": "math.num.racine-et-carre-confondus" },
         { "id": "d", "text": "−25" }
@@ -61,8 +69,16 @@
     {
       "prompt": "مستطيل بُعداه √18 cm و√8 cm. ما مساحته؟",
       "options": [
-        { "id": "a", "text": "5√2 cm²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
-        { "id": "b", "text": "√26 cm²", "misconceptionTag": "math.num.racine-produit-transforme-en-somme" },
+        {
+          "id": "a",
+          "text": "5√2 cm²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "b",
+          "text": "√26 cm²",
+          "misconceptionTag": "math.num.racine-produit-transforme-en-somme"
+        },
         { "id": "c", "text": "144 cm²" },
         { "id": "d", "text": "12 cm²" }
       ],

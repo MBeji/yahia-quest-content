@@ -35,10 +35,22 @@
     {
       "prompt": "أيّ العلاقات التالية صحيحة لكلّ عدد حقيقي x ؟",
       "options": [
-        { "id": "a", "text": "√(x²) = x لأنّ الجذر يلغي المربّع", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
-        { "id": "b", "text": "(√x)² = x لأنّ المربّع يلغي الجذر", "misconceptionTag": "math.num.racine-negatif-existe" },
+        {
+          "id": "a",
+          "text": "√(x²) = x لأنّ الجذر يلغي المربّع",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "b",
+          "text": "(√x)² = x لأنّ المربّع يلغي الجذر",
+          "misconceptionTag": "math.num.racine-negatif-existe"
+        },
         { "id": "c", "text": "√(x²) = |x| لأنّ الجذر موجب دائمًا" },
-        { "id": "d", "text": "√(x²) = −x لأنّ الجذر يغيّر الإشارة", "misconceptionTag": "math.num.valeur-absolue-toujours-oppose" }
+        {
+          "id": "d",
+          "text": "√(x²) = −x لأنّ الجذر يغيّر الإشارة",
+          "misconceptionTag": "math.num.valeur-absolue-toujours-oppose"
+        }
       ],
       "correctOption": "c",
       "explanation": "الجذر التربيعي موجب أو معدوم دائمًا، فـ √(x²) = |x|: يساوي x إذا كان x موجبًا و−x إذا كان سالبًا. مثال: √((−3)²) = √9 = 3 = |−3|. أمّا (√x)² = x فلا تصحّ إلّا إذا كان x موجبًا أو معدومًا، لأنّ √x غير معرّف في ℝ حين يكون x سالبًا. الأخطاء الشائعة: اعتبار √(x²) = x دائمًا فيُهمل أنّ x قد يكون سالبًا ؛ أو اعتبار √(x²) = −x دائمًا ؛ أو تطبيق (√x)² = x على عدد سالب.",
@@ -46,7 +58,7 @@
       "competencies": ["math.num.racines-definition"]
     },
     {
-      "prompt": "اُنطق مقام الكسر التالي وبسّطه تمامًا (تلميح: استعمل الفرق بين مربّعين): 1 / (√5 + 2)",
+      "prompt": "اُنطق مقام الكسر التالي وبسّطه تمامًا (تلميح: اضرب في المرافق وانشر بتوزيع الضرب): 1 / (√5 + 2)",
       "options": [
         { "id": "a", "text": "√5 + 2" },
         { "id": "b", "text": "1 / (√5 − 2)" },
@@ -58,9 +70,9 @@
         { "id": "d", "text": "√5 − 2" }
       ],
       "correctOption": "d",
-      "explanation": "نضرب البسط والمقام في المرافق (√5 − 2): 1 / (√5 + 2) = (√5 − 2) / ((√5 + 2)(√5 − 2)) = (√5 − 2) / ((√5)² − 2²) = (√5 − 2) / (5 − 4) = √5 − 2. أمّا √5 + 2 فقد نسي تغيير الإشارة، و(√5 + 2) / 3 حسب المقام 5 − 2 = 3 ناسيًا تربيع العدد 2، و1 / (√5 − 2) لم يُجرِ أيّ تبسيط.",
+      "explanation": "نضرب البسط والمقام في المرافق (√5 − 2): 1 / (√5 + 2) = (√5 − 2) / ((√5 + 2)(√5 − 2)). وننشر المقام بتوزيع الضرب: (√5 + 2)(√5 − 2) = 5 − 2√5 + 2√5 − 4 = 5 − 4 = 1، لأنّ الحدّين الأوسطين متقابلان. إذن النتيجة √5 − 2. أمّا √5 + 2 فقد نسي تغيير الإشارة، و(√5 + 2) / 3 حسب المقام 5 − 2 = 3 ناسيًا أنّ الحدّ الثاني يُضرب في نفسه: 2 × 2 = 4 لا 2، و1 / (√5 − 2) لم يُجرِ أيّ تبسيط.",
       "difficulty": 3,
-      "competencies": ["math.num.racines-calcul", "math.alg.identites-remarquables"]
+      "competencies": ["math.num.racines-calcul", "math.alg.developpement"]
     },
     {
       "prompt": "اُحسب قيمة التعبير A ثمّ عيّن قيمة A² حيث: A = √50 + √8 − √18",
@@ -78,8 +90,16 @@
     {
       "prompt": "أيّ العبارات التالية تساوي عددًا صحيحًا؟",
       "options": [
-        { "id": "a", "text": "√20 + √5", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
-        { "id": "b", "text": "√3 × √6", "misconceptionTag": "math.num.racine-produit-transforme-en-somme" },
+        {
+          "id": "a",
+          "text": "√20 + √5",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "b",
+          "text": "√3 × √6",
+          "misconceptionTag": "math.num.racine-produit-transforme-en-somme"
+        },
         { "id": "c", "text": "√30 ÷ √5" },
         { "id": "d", "text": "√3 × √12" }
       ],
