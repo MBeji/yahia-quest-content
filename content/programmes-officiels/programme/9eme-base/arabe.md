@@ -616,6 +616,15 @@ Chiffres **latins 0–9** partout — le guide numérote ses دروس **1 … 18
     18 (`04-defi` Q2 et Q5) réécrits ; « المفعول لأجله » retiré du 03 (le مدخل de L110 fait nommer la العلّيّة sans
     imprimer la fonction). Reste : le 19 teste « خبر كان » alors que le 02 range ce terme dans son encadré
     « للتوسّع » (le manuel dit « خبر النّاسخ ») ; النّسبة apparaît en option au 19 alors qu'elle s'enseigne au 14.
+  - **Audit A3 (ch. 12, 05, 13, 14 — 140 questions re-résolues)** : 0 clé fausse, mais plusieurs règles fausses dans
+    les cours, corrigées : féminin de أفعل (فَعْلاء pour اللون **ou** la صفة — حوراء —, فُعْلى pour le تفضيل), جرّ du
+    ممدود (بالكسرة s'il est معرّف بأل ou مضاف), « أكفاءٌ » (la coquille de vocalisation vient du manuel p. 146),
+    تنوين des mots en ألف تأنيث, opération inverse du تصغير (ياء منقلبة إلى أصلها), accord de la نسبة, « ضَوْء » n'est
+    pas un ممدود ; cinq distracteurs défendables au 14 remplacés (يَدِيّ، سَماءيّ، فاطميّة…). Reste : « مدينيّ /
+    قبيليّ » est attesté (le cours dit « الأفصح على قاعدة الكتاب ») ; la règle du ردّ de la لام المحذوفة est
+    facultative pour يد، دم، شفة، لثة ; l'heuristique « نوع الجذر يختار المعنى » du 05 est propre au chapitre ;
+    la preuve « عصا ← عصوات » du 12 est circulaire. Le mandat d'audit rangeait à tort « المعرّي » parmi les mots
+    qui ne sont pas des نسبة (c'en est une, p. 172) : le cours du 14 avait raison.
   - **صرف** : la règle « فَعِيلة ← فَعَليّ » (مدينة ← مَدَنيّ, قبيلة ← قَبَليّ) n'est dans aucune خلاصة, elle est
     induite des exercices p. 170 — l'usage moderne dit aussi « مدينيّ / قبيليّ / طبيعيّ », que les items évitent
     comme distracteurs ; « المتنبّي » répond à la définition du منقوص, le cours dit seulement que sa ياء n'est
