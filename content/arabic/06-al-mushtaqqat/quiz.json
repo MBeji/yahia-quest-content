@@ -20,10 +20,22 @@
       "difficulty": 2,
       "prompt": "اسم الفاعل من الفعل غير الثلاثي (كـ«دَرَّسَ») يُبنى بـ:",
       "options": [
-        { "id": "a", "text": "وزن فَاعِل" },
-        { "id": "b", "text": "وزن مَفعُول" },
+        {
+          "id": "a",
+          "text": "وزن فَاعِل",
+          "misconceptionTag": "arabe.ishtiqaq.wazn-fa3il-lil-mazid"
+        },
+        {
+          "id": "b",
+          "text": "وزن مَفعُول",
+          "misconceptionTag": "arabe.ishtiqaq.fa3il-maf3ul-ma3na"
+        },
         { "id": "c", "text": "ضمّ أوّله وكسر ما قبل آخره" },
-        { "id": "d", "text": "ضمّ أوّله وفتح ما قبل آخره" }
+        {
+          "id": "d",
+          "text": "ضمّ أوّله وفتح ما قبل آخره",
+          "misconceptionTag": "arabe.ishtiqaq.mazid-haraka-al-3ayn"
+        }
       ],
       "correctOption": "c",
       "explanation": "اسم الفاعل من غير الثلاثي يُبنى بضمّ أوّله وكسر ما قبل آخره، كـ«دَرَّسَ ← مُدَرِّس» و«استَعمَلَ ← مُستَعمِل»."
@@ -44,11 +56,20 @@
       "difficulty": 3,
       "prompt": "ما الفرق الدلالي بين اسم الفاعل والصفة المشبّهة؟",
       "options": [
-        { "id": "a", "text": "لا فرق بينهما في الدلالة" },
-        { "id": "b", "text": "اسم الفاعل يُبنى من الرباعي فقط، والصفة المشبّهة من الثلاثي" },
+        {
+          "id": "a",
+          "text": "لا فرق بينهما في الدلالة",
+          "misconceptionTag": "arabe.ishtiqaq.sifa-mushabbaha-khalt"
+        },
+        {
+          "id": "b",
+          "text": "اسم الفاعل يُبنى من الرباعي فقط، والصفة المشبّهة من الثلاثي",
+          "misconceptionTag": "arabe.ishtiqaq.sifa-mushabbaha-khalt"
+        },
         {
           "id": "c",
-          "text": "اسم الفاعل يدلّ على صفة ثابتة دائمة، والصفة المشبّهة تدلّ على حدث مؤقّت"
+          "text": "اسم الفاعل يدلّ على صفة ثابتة دائمة، والصفة المشبّهة تدلّ على حدث مؤقّت",
+          "misconceptionTag": "arabe.ishtiqaq.sifa-mushabbaha-khalt"
         },
         {
           "id": "d",
@@ -62,10 +83,10 @@
       "difficulty": 1,
       "prompt": "اسم الآلة «مِفتَاح» على أيّ وزن جاء؟",
       "options": [
-        { "id": "a", "text": "مِفعَل" },
-        { "id": "b", "text": "مِفعَلة" },
+        { "id": "a", "text": "مِفعَل", "misconceptionTag": "arabe.ishtiqaq.wazn-ala-khalt" },
+        { "id": "b", "text": "مِفعَلة", "misconceptionTag": "arabe.ishtiqaq.wazn-ala-khalt" },
         { "id": "c", "text": "مِفعَال" },
-        { "id": "d", "text": "فَعَّال" }
+        { "id": "d", "text": "فَعَّال", "misconceptionTag": "arabe.ishtiqaq.wazn-ala-khalt" }
       ],
       "correctOption": "c",
       "explanation": "«مِفتاح» اسم آلة على وزن «مِفعَال»، وهو أحد الأوزان القياسية الثلاثة لأسماء الآلة."
