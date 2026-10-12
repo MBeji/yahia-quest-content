@@ -25,12 +25,20 @@
         { "id": "a", "text": "A عدد صحيح طبيعي يساوي 6" },
         { "id": "b", "text": "A عدد عشري كتابته العشرية متناهية" },
         { "id": "c", "text": "A عدد كسري كتابته العشرية دوريّة" },
-        { "id": "d", "text": "A عدد أصمّ لأنّ في كتابته رمز الجذر", "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel" }
+        {
+          "id": "d",
+          "text": "A عدد أصمّ لأنّ في كتابته رمز الجذر",
+          "misconceptionTag": "math.num.rationnel-traite-comme-irrationnel"
+        }
       ],
       "correctOption": "c",
       "explanation": "أوّلًا √36 = 6 لأنّ 6² = 36، إذن A = 6 + 1/3 = 19/3. وقسمة 19 على 3 تعطي 6,333… أي 6,(3): كتابة دوريّة غير متناهية، فالعدد A كسري وليس عشريًّا. الأخطاء الشائعة: إهمال الجزء 1/3 والاكتفاء بالعدد 6، أو الظنّ أنّ وجود رمز الجذر يجعل A أصمّ مع أنّ 36 مربّع كامل.",
       "difficulty": 3,
-      "competencies": ["math.num.ensembles-nombres", "math.num.racines-definition", "math.frac.sens"]
+      "competencies": [
+        "math.num.ensembles-nombres",
+        "math.num.racines-definition",
+        "math.frac.sens"
+      ]
     },
     {
       "prompt": "أيّ من علاقات الاحتواء التالية صحيحة؟",
@@ -74,7 +82,11 @@
     {
       "prompt": "ما العددان الحقيقيان اللذان مربّعهما 16 ؟",
       "options": [
-        { "id": "a", "text": "4 فقط", "misconceptionTag": "math.num.racine-carree-negative-oubliee" },
+        {
+          "id": "a",
+          "text": "4 فقط",
+          "misconceptionTag": "math.num.racine-carree-negative-oubliee"
+        },
         { "id": "b", "text": "4 و−4" },
         { "id": "c", "text": "16 و−16" },
         { "id": "d", "text": "8 و−8" }

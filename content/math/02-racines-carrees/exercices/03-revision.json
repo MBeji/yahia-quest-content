@@ -11,7 +11,11 @@
       "options": [
         { "id": "a", "text": "9√5" },
         { "id": "b", "text": "3√15" },
-        { "id": "c", "text": "5√3", "misconceptionTag": "math.num.racine-extraction-facteur-inversee" },
+        {
+          "id": "c",
+          "text": "5√3",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        },
         { "id": "d", "text": "3√5" }
       ],
       "correctOption": "d",
@@ -20,7 +24,7 @@
       "competencies": ["math.num.racines-calcul"]
     },
     {
-      "prompt": "اُنطق مقام الكسر 3/√3 (أي اكتبه بدون جذر في المقام):",
+      "prompt": "اكتب الكسر 3/√3 بدون جذر في المقام:",
       "options": [
         { "id": "a", "text": "√3" },
         { "id": "b", "text": "3√3" },
@@ -41,14 +45,18 @@
         { "id": "d", "text": "2√26" }
       ],
       "correctOption": "c",
-      "explanation": "نبسّط كلّ جذر: √8 = √(4×2) = 2√2 ، و√18 = √(9×2) = 3√2. إذن √8 + √18 = 2√2 + 3√2 = 5√2. أمّا √26 فخاطئ لأنّ √(a)+√(b) ≠ √(a+b).",
+      "explanation": "نبسّط كلّ جذر: √8 = √(4×2) = 2√2 ، و√18 = √(9×2) = 3√2. إذن √8 + √18 = 2√2 + 3√2 = 5√2. أمّا √26 فخاطئ لأنّ √a + √b ≠ √(a + b).",
       "difficulty": 3,
       "competencies": ["math.num.racines-calcul"]
     },
     {
       "prompt": "ما قيمة √((−5)²) ؟",
       "options": [
-        { "id": "a", "text": "−5", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" },
+        {
+          "id": "a",
+          "text": "−5",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
         { "id": "b", "text": "5" },
         { "id": "c", "text": "25", "misconceptionTag": "math.num.racine-et-carre-confondus" },
         { "id": "d", "text": "−25" }
@@ -59,17 +67,25 @@
       "competencies": ["math.num.racines-definition"]
     },
     {
-      "prompt": "في مثلّث قائم الزاوية، ضلعاه القائمان يساويان 6 cm و8 cm. ما طول الوتر؟",
+      "prompt": "مستطيل بُعداه √18 cm و√8 cm. ما مساحته؟",
       "options": [
-        { "id": "a", "text": "√14 cm", "misconceptionTag": "math.geo.pythagore-sans-carres" },
-        { "id": "b", "text": "7 cm" },
-        { "id": "c", "text": "√48 cm" },
-        { "id": "d", "text": "10 cm" }
+        {
+          "id": "a",
+          "text": "5√2 cm²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "b",
+          "text": "√26 cm²",
+          "misconceptionTag": "math.num.racine-produit-transforme-en-somme"
+        },
+        { "id": "c", "text": "144 cm²" },
+        { "id": "d", "text": "12 cm²" }
       ],
       "correctOption": "d",
-      "explanation": "بتطبيق نظريّة فيثاغورس: وتر² = 6² + 8² = 36 + 64 = 100، إذن الوتر = √100 = 10 cm. تذكّر المثلث 6-8-10 وهو من مضاعفات المثلث 3-4-5.",
+      "explanation": "المساحة = الطول × العرض = √18 × √8. بخاصيّة جذر الجداء: √18 × √8 = √(18 × 8) = √144 = 12 cm². ويمكن التبسيط أوّلًا: 3√2 × 2√2 = 6 × 2 = 12 ✓. الأخطاء الشائعة: جمع البعدين 3√2 + 2√2 = 5√2 بدل ضربهما ؛ أو جمع ما تحت الجذرين فيُكتب √(18 + 8) = √26 ؛ أو التوقّف عند 144 دون أخذ الجذر.",
       "difficulty": 3,
-      "competencies": ["math.geo.pythagore", "math.num.racines-calcul"]
+      "competencies": ["math.num.racines-calcul", "math.mes.aires"]
     },
     {
       "prompt": "أبسّط: √54 / √6",
@@ -85,11 +101,10 @@
       "competencies": ["math.num.racines-calcul"]
     },
     {
-      "type": "short_answer",
-      "prompt": "نضرب البسط والمقام في العبارة نفسها حتّى يزول الجذر من المقام، فنكتب\n1/√2 = √2/2\nماذا نسمّي هذه العملية؟",
-      "answerKey": { "text": "إنطاق المقام" },
-      "acceptedAnswers": ["الإنطاق", "إنطاق المقامات", "جعل المقام ناطقًا"],
-      "explanation": "المقام الذي يحمل جذرًا يصعب حسابه وتقديره، فنضرب الطرفين في العدد نفسه أو في المرافق حتّى يصير المقام عددًا ناطقًا. مثالان: 1/√2 = (1 × √2)/(√2 × √2) = √2/2، و1/(√5 + 2) = (√5 − 2)/((√5 + 2)(√5 − 2)) = √5 − 2 لأنّ المقام يصبح 5 − 4 = 1.",
+      "type": "numeric",
+      "prompt": "بعد التخلّص من الجذر في مقام الكسر 5/√10 نجد 5/√10 = √10/k. احسب العدد k.",
+      "answerKey": { "value": 2 },
+      "explanation": "نضرب البسط والمقام في √10 فلا تتغيّر قيمة الكسر: 5/√10 = (5 × √10)/(√10 × √10) = 5√10/10، لأنّ √10 × √10 = 10. ثمّ نختصر بالعدد 5 فنجد √10/2.",
       "difficulty": 3,
       "competencies": ["math.num.racines-calcul"]
     }

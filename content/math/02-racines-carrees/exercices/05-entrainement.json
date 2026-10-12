@@ -37,7 +37,7 @@
       "competencies": ["math.num.racines-calcul"]
     },
     {
-      "prompt": "اُنطق مقام الكسر 10/√5 (اكتبه بدون جذر في المقام):",
+      "prompt": "اكتب الكسر 10/√5 بدون جذر في المقام:",
       "options": [
         { "id": "a", "text": "2√5" },
         { "id": "b", "text": "10√5" },
@@ -58,7 +58,7 @@
         { "id": "d", "text": "−8", "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue" }
       ],
       "correctOption": "c",
-      "explanation": "√(x²) = |x| وليس x: هنا √((−4)²) = √16 = 4 = |−4|. إذن √(x²) + x = 4 + (−4) = 0 ✓. الخطأ الشائع: كتابة √(x²) = x فيُحصل خطأً على −4 + (−4) = −8؛ و(a) حسب x² = 16 دون أخذ الجذر، و(b) نسي إضافة x.",
+      "explanation": "√(x²) = |x| وليس x: هنا √((−4)²) = √16 = 4 = |−4|. إذن √(x²) + x = 4 + (−4) = 0 ✓. الخطأ الشائع: كتابة √(x²) = x فيُحصل خطأً على −4 + (−4) = −8؛ أمّا 12 فمن حساب x² = 16 دون أخذ الجذر ثمّ جمع x، وأمّا 4 فمن نسيان إضافة x.",
       "difficulty": 2,
       "competencies": ["math.num.racines-definition", "math.num.ordre-encadrement"]
     },
@@ -71,13 +71,13 @@
         {
           "id": "d",
           "text": "14",
-          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+          "misconceptionTag": "math.int.produit-signes-negatifs"
         }
       ],
       "correctOption": "a",
-      "explanation": "هذا فرق مربّعين: (a+b)(a−b) = a² − b² مع a = 3 وb = √5. إذن = 3² − (√5)² = 9 − 5 = 4 ✓. الخطأ الشائع: جمع المربّعين بدل طرحهما (9 + 5 = 14)، أو حساب (√5)² = 25 بدل 5.",
+      "explanation": "ننشر بتوزيع الضرب: (3 + √5)(3 − √5) = 9 − 3√5 + 3√5 − 5. الحدّان الأوسطان متقابلان فيزولان، ويبقى 9 − 5 = 4 ✓. الخطأ الشائع: اعتبار جداء √5 و−√5 موجبًا، أي −√5 × √5 = +5، فيُكتب 9 + 5 = 14 ؛ أو حساب (√5)² = 25 بدل 5.",
       "difficulty": 3,
-      "competencies": ["math.num.racines-calcul", "math.alg.identites-remarquables"]
+      "competencies": ["math.num.racines-calcul", "math.alg.developpement"]
     },
     {
       "prompt": "مربّع مساحته 32 cm². ما طول ضلعه بالصورة المبسّطة؟",

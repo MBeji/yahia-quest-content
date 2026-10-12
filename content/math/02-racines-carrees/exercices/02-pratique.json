@@ -1,5 +1,5 @@
 {
-  "title": "⭐⭐ تمرين: إنطاق المقام والجمع",
+  "title": "⭐⭐ تمرين: مقام خالٍ من الجذر والجمع",
   "difficulty": 2,
   "mode": "practice",
   "xpReward": 75,
@@ -7,7 +7,7 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "بعد إنطاق المقام، يصبح الكسر 1/√2 مساويًا لـ:",
+      "prompt": "بعد التخلّص من الجذر في المقام، يصبح الكسر 1/√2 مساويًا لـ:",
       "options": [
         { "id": "a", "text": "√2/2" },
         { "id": "b", "text": "2/√2" },
@@ -15,14 +15,18 @@
         { "id": "d", "text": "1/2" }
       ],
       "correctOption": "a",
-      "explanation": "لإنطاق المقام نتخلّص من الجذر بضرب البسط والمقام في الجذر نفسه √2: (1×√2)/(√2×√2) = √2/(√2)² = √2/2، لأنّ (√2)² = 2. النتيجة 1/√2 = √2/2 وقيمتها لم تتغيّر (نفس العدد ≈ 0,707).",
+      "explanation": "للتخلّص من الجذر في المقام نضرب البسط والمقام في الجذر نفسه √2: (1×√2)/(√2×√2) = √2/(√2)² = √2/2، لأنّ (√2)² = 2. النتيجة 1/√2 = √2/2 وقيمتها لم تتغيّر (نفس العدد ≈ 0,707).",
       "difficulty": 2,
       "competencies": ["math.num.racines-calcul"]
     },
     {
       "prompt": "ما ناتج 3√2 + 5√2 ؟",
       "options": [
-        { "id": "a", "text": "8√4", "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne" },
+        {
+          "id": "a",
+          "text": "8√4",
+          "misconceptionTag": "math.num.radicaux-semblables-radicande-additionne"
+        },
         { "id": "b", "text": "15√2" },
         { "id": "c", "text": "8" },
         { "id": "d", "text": "8√2" }
@@ -35,7 +39,11 @@
     {
       "prompt": "ما هو الشكل المبسّط للعدد √75 ؟",
       "options": [
-        { "id": "a", "text": "3√5", "misconceptionTag": "math.num.racine-extraction-facteur-inversee" },
+        {
+          "id": "a",
+          "text": "3√5",
+          "misconceptionTag": "math.num.racine-extraction-facteur-inversee"
+        },
         { "id": "b", "text": "5√3" },
         { "id": "c", "text": "15" },
         { "id": "d", "text": "25√3" }
@@ -62,8 +70,16 @@
       "prompt": "هل يمكن جمع √2 + √3 في عدد واحد على شكل k√n ؟",
       "options": [
         { "id": "a", "text": "لا، لأنّ الجذرين غير متشابهين" },
-        { "id": "b", "text": "نعم، يساوي √5 لأنّ 2 + 3 = 5", "misconceptionTag": "math.num.racine-distribuee-sur-somme" },
-        { "id": "c", "text": "نعم، يساوي √6 لأنّ 2 × 3 = 6", "misconceptionTag": "math.num.racine-produit-transforme-en-somme" },
+        {
+          "id": "b",
+          "text": "نعم، يساوي √5 لأنّ 2 + 3 = 5",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "c",
+          "text": "نعم، يساوي √6 لأنّ 2 × 3 = 6",
+          "misconceptionTag": "math.num.racine-produit-transforme-en-somme"
+        },
         { "id": "d", "text": "لا، لأنّ الجذور لا تُجمع مطلقًا ولو كانت متشابهة" }
       ],
       "correctOption": "a",
@@ -72,11 +88,10 @@
       "competencies": ["math.num.racines-calcul", "math.num.racines-definition"]
     },
     {
-      "type": "short_answer",
-      "prompt": "لإزالة الجذر من مقام الكسر 1/(√7 − 2) نضرب البسط والمقام في العبارة √7 + 2. ماذا نسمّي العبارة √7 + 2 بالنسبة إلى √7 − 2؟",
-      "answerKey": { "text": "المرافق" },
-      "acceptedAnswers": ["العبارة المرافقة", "مرافق المقام", "المرافق للمقام"],
-      "explanation": "جداء العبارتين يعطي فرق مربّعين: (√7 − 2)(√7 + 2) = 7 − 4 = 3، فيختفي الجذر من المقام. القاعدة العامّة: نغيّر إشارة الحدّ الثاني فقط. ومنه 1/(√7 − 2) = (√7 + 2)/3.",
+      "type": "numeric",
+      "prompt": "لإزالة الجذر من مقام الكسر 1/(√7 − 2) نضرب البسط والمقام في العبارة √7 + 2. احسب المقام الجديد (√7 − 2)(√7 + 2).",
+      "answerKey": { "value": 3 },
+      "explanation": "ننشر جداء العبارتين بتوزيع الضرب: (√7 − 2)(√7 + 2) = 7 + 2√7 − 2√7 − 4 = 7 − 4 = 3، فيختفي الجذر من المقام لأنّ الحدّين الأوسطين متقابلان. ومنه 1/(√7 − 2) = (√7 + 2)/3.",
       "difficulty": 3,
       "competencies": ["math.num.racines-calcul"]
     }
