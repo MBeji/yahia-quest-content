@@ -1,5 +1,5 @@
 {
-  "title": "⭐⭐ تمرين موجّه: أسئلة قصيرة في التعداد والأرقام الدورية وفاصلة نقطة والقوى المتجاورة",
+  "title": "⭐⭐ تمرين موجّه: أسئلة قصيرة في التعداد وقابلية القسمة وحساب القوى",
   "difficulty": 2,
   "mode": "practice",
   "xpReward": 75,
@@ -25,11 +25,12 @@
         },
         {
           "id": "d",
-          "text": "20"
+          "text": "20",
+          "misconceptionTag": "math.prob.denombrement-repetition-ignoree"
         }
       ],
       "correctOption": "b",
-      "explanation": "رقم الآحاد ثابت وهو 0. بقيت الأرقام 1 و 3 و 6 و 8، فلرقم المئات 4 اختيارات، ثمّ يبقى 3 اختيارات لرقم العشرات بعد استعمال رقم المئات. شجرة الاختيار تعطي 4 × 3 = 12 عددًا ✓. الخطأ الشائع جمع الاختيارات بدل ضربها فيخرج 4 + 3 = 7، أو نسيان أنّ رقم العشرات لا يكرّر رقم المئات فيخرج 4 × 4 = 16. ومن أعاد استعمال الصفر لرقم المئات وجد 5 × 4 = 20.",
+      "explanation": "رقم الآحاد ثابت وهو 0. بقيت الأرقام 1 و 3 و 6 و 8، فلرقم المئات 4 اختيارات، ثمّ يبقى 3 اختيارات لرقم العشرات بعد استعمال رقم المئات. شجرة الاختيار تعطي 4 × 3 = 12 عددًا ✓. الخطأ الشائع جمع الاختيارات بدل ضربها فيخرج 4 + 3 = 7، أو نسيان أنّ رقم العشرات لا يكرّر رقم المئات فيخرج 4 × 4 = 16. ومن سمح بتكرار الأرقام كلّها، حتى الصفر الثابت، وجد 4 × 5 = 20.",
       "difficulty": 1,
       "competencies": [
         "math.prob.denombrement-issues"
@@ -49,7 +50,8 @@
         },
         {
           "id": "c",
-          "text": "36"
+          "text": "36",
+          "misconceptionTag": "math.prob.denombrement-zero-en-tete-compte"
         },
         {
           "id": "d",
@@ -61,33 +63,6 @@
       "difficulty": 2,
       "competencies": [
         "math.prob.denombrement-issues"
-      ]
-    },
-    {
-      "prompt": "نجري القسمة 1 ÷ 14 فنحصل على الكتابة العشرية الدوريّة التالية:\n1/14 = 0,0(714285)\nما الرقم الذي رتبته 2027 بعد الفاصل ؟",
-      "options": [
-        {
-          "id": "a",
-          "text": "2"
-        },
-        {
-          "id": "b",
-          "text": "4"
-        },
-        {
-          "id": "c",
-          "text": "5"
-        },
-        {
-          "id": "d",
-          "text": "8"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "الصفر الأوّل يسبق الدور، فالدور 714285 وطوله 6 يبدأ من الرتبة 2. نطرح 1 من الرتبة ثمّ نقسم على 6: 2027 − 1 = 2026 = 6 × 337 + 4، والباقي 4 يدلّ على الرقم الرابع من الدور 714285 وهو 2 ✓. الخطأ الشائع نسيان الصفر الذي يسبق الدور: 2027 = 6 × 337 + 5 فيُؤخذ الرقم الخامس 8. ومن عدّ هذا الصفر جزءًا من الدور جعل طوله 7 فكتب 2027 = 7 × 289 + 4 وأخذ الرقم الرابع من 0714285 فوجد 4. ومن قرأ الباقي 5 على أنّه رتبة تبدأ من 0 أخذ الرقم السادس من الدور وهو 5.",
-      "difficulty": 2,
-      "competencies": [
-        "math.num.ensembles-nombres"
       ]
     },
     {
@@ -121,64 +96,59 @@
       ]
     },
     {
-      "prompt": "المثلّث ORS قائم في R ومتقايس الضلعين، وطول كلّ من ضلعيه القائمين OR و RS هو 2 وحدة تدريج، ووتره [OS] محمول على مستقيم مدرّج كما في الرسم. نذكّر بأنّ مربّع الوتر في المثلّث القائم يساوي مجموع مربّعي ضلعيه القائمين. ما الطول OS ؟\n<svg viewBox=\"0 0 230 130\"><title>رسم للمثلّث ORS ووتره على المستقيم المدرّج</title><path d=\"M30.0 100.0 L86.6 43.4 L143.1 100.0 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M12 100.0 L205 100.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M199 95.0 L206 100.0 L199 105.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30.0 100.0 L86.6 43.4 L143.1 100.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M79.5 50.5 L86.6 57.6 L93.6 50.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"30.0\" cy=\"100.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"143.1\" cy=\"100.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"86.6\" cy=\"43.4\" r=\"4\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"30.0\" y=\"119.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"143.1\" y=\"119.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">S</text><text x=\"86.6\" y=\"34.4\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">R</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"46.3\" y=\"67.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">2</text><text x=\"126.9\" y=\"67.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">2</text></g></svg>",
+      "prompt": "أيّ الأعداد التالية هو الأكبر دون استعمال آلة حاسبة ؟",
       "options": [
         {
           "id": "a",
-          "text": "8",
-          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+          "text": "16³"
         },
         {
           "id": "b",
-          "text": "4",
-          "misconceptionTag": "math.geo.pythagore-sans-carres"
+          "text": "8⁵"
         },
         {
           "id": "c",
-          "text": "2 + √2",
-          "misconceptionTag": "math.num.operation-inverse-appliquee"
+          "text": "4⁷"
         },
         {
           "id": "d",
-          "text": "2√2"
+          "text": "2¹³"
         }
       ],
-      "correctOption": "d",
-      "explanation": "بفيثاغورس: OS² = OR² + RS² = 2² + 2² = 4 + 4 = 8، ومنه OS = √8 = √(4 × 2) = 2√2 ✓. الخطأ الشائع جمع الطولين دون تربيعهما فيخرج 2 + 2 = 4، أو التوقّف عند OS² = 8 دون أخذ الجذر. ومن كتب الوتر 2 + √2 جمع حيث يجب أن يضرب: وتر المثلّث القائم المتقايس الضلعين يساوي طول ضلعه القائم مضروبًا في √2.",
+      "correctOption": "b",
+      "explanation": "الأساسات 4 و 8 و 16 كلّها قوى للعدد 2، فنوحّد الأساس لنقارن الأدلّة: 4⁷ = (2²)⁷ = 2¹⁴، و 8⁵ = (2³)⁵ = 2¹⁵، و 16³ = (2⁴)³ = 2¹²، أمّا 2¹³ فمكتوب بالأساس 2 أصلًا. وبما أنّ الأساس 2 أكبر من 1 فأكبر هذه القوى أكبرها دليلًا، أي 2¹⁵ = 8⁵ ✓. الخطأ الشائع المقارنة بين الدليلين الظاهرين دون توحيد الأساس فيُختار 2¹³ لأنّ دليله 13 هو الأكبر، وكذلك من جمع الدليلين بدل ضربهما في قوّة القوّة فوجد 2⁹ و 2⁸ و 2⁷ واختار 2¹³. ومن نظر إلى الأساس الأكبر وحده اختار 16³.",
       "difficulty": 2,
       "competencies": [
-        "math.geo.pythagore",
-        "math.num.racines-calcul"
+        "math.num.puissances",
+        "math.num.ordre-encadrement"
       ]
     },
     {
-      "prompt": "المثلّث ORS قائم في R ومتقايس الضلعين، ووتره [OS] محمول على مستقيم مدرّج، حيث فاصلة O هي −1 والنقطة S على يمين O. نعلم أنّ OS = 2√2. ما فاصلة S ؟",
+      "prompt": "نكتب العدد 2⁴ × 5⁶ كما يلي، حيث k عدد صحيح طبيعي:\n2⁴ × 5⁶ = k × 10⁴\nما قيمة k ؟",
       "options": [
         {
           "id": "a",
-          "text": "2√2 + 1",
-          "misconceptionTag": "math.int.signe-ignore-dans-somme"
+          "text": "2"
         },
         {
           "id": "b",
-          "text": "2√2",
-          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+          "text": "10",
+          "misconceptionTag": "math.num.puissance-confondue-avec-produit"
         },
         {
           "id": "c",
-          "text": "2√2 − 1"
+          "text": "16"
         },
         {
           "id": "d",
-          "text": "√2 − 1"
+          "text": "25"
         }
       ],
-      "correctOption": "c",
-      "explanation": "S على يمين O، وفاصلتها هي فاصلة O مضافًا إليها البعد OS: −1 + 2√2 = 2√2 − 1 ✓. الخطأ الشائع إهمال إشارة فاصلة O وإضافة 2√2 إلى 1 فتخرج 2√2 + 1. ومن أعطى البعد OS نفسه أهمل فاصلة O فكتب 2√2، ومن أخذ OS = √2 ونسي العامل 2 وجد √2 − 1.",
+      "correctOption": "d",
+      "explanation": "نفصل 5⁶ = 5⁴ × 5² لنجمع القوّتين اللتين لهما الدليل نفسه: 2⁴ × 5⁴ = (2 × 5)⁴ = 10⁴. فيصير 2⁴ × 5⁶ = 10⁴ × 5² = 10⁴ × 25. إذن k = 25 ✓. الخطأ الشائع حساب 5² على أنّه 5 × 2 = 10 فيخرج k = 10، وهو خلط بين القوّة والجداء. ومن أخذ 2⁴ = 16 على أنّه العامل الباقي بدل 5² وجد k = 16. ومن أخذ فرق الدليلين 6 − 4 = 2 على أنّه k وجد 2.",
       "difficulty": 2,
       "competencies": [
-        "math.num.racines-calcul",
-        "math.num.relatifs-operations"
+        "math.num.puissances"
       ]
     },
     {
@@ -198,11 +168,11 @@
         },
         {
           "id": "d",
-          "text": "5 + a"
+          "text": "13 + a"
         }
       ],
       "correctOption": "a",
-      "explanation": "نكتب كلّ حدّ بدلالة 3²²: 3²⁴ = 3² × 3²² = 9 × 3²² و 3²³ = 3 × 3²². فيصير S = 4 × 9 × 3²² + a × 3 × 3²² + 1 × 3²² = 3²² × (36 + 3a + 1) = 3²² × (37 + 3a) ✓. الخطأ الشائع نسيان الفرق بين الأسّين ومعاملة الحدود كأنّها بالقوّة نفسها، فيخرج 4 + a + 1 = 5 + a. ومن أخذ 3²⁴ = 3 × 3²² وجد 4 × 3 + 3a + 1 = 13 + 3a، ومن أهمل العامل 3 في الحدّ a × 3²³ وجد 37 + a.",
+      "explanation": "نكتب كلّ حدّ بدلالة 3²²: 3²⁴ = 3² × 3²² = 9 × 3²² و 3²³ = 3 × 3²². فيصير S = 4 × 9 × 3²² + a × 3 × 3²² + 1 × 3²² = 3²² × (36 + 3a + 1) = 3²² × (37 + 3a) ✓. الخطأ الشائع الخلط بين الأسّين: من أخذ 3²⁴ = 3 × 3²² وجد 4 × 3 + 3a + 1 = 13 + 3a، ومن أهمل العامل 3 في الحدّ a × 3²³ وجد 37 + a. ومن ارتكب الخطأين معًا وجد 4 × 3 + a + 1 = 13 + a.",
       "difficulty": 2,
       "competencies": [
         "math.num.puissances"
