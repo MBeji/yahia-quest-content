@@ -15,3 +15,8 @@
 ## Fin (2026-10-14)
 - 6 missions écrites (07–12, 43 questions), sources[] ajoutée au chapter.json. check/qa/tranche/lot-lint/prettier verts ; rendu rtl Chromium fait (aperçu).
 - Reste à l'auditeur : voir rapport final.
+
+## Tour de corrections (audit-arabe-L01.md)
+- Appliqués : M-1 à M-12, m-1 à m-20, C-1/C-2/C-3/C-5 + cas limite de la حجّة السلطة (cours ch.10, ch.09 cours/resume), sources[3]/[5].
+- Écarts : 08 Q8 c réécrit (le texte de l'auditeur « الحظ » laissait deux réponses défendables : la nouvelle option nie la nécessité des معارف, que le texte contredit) ; 11 Q1 : QCM + QCM « يزاحم » = 8 questions au lieu de 7 ; 09 Q6/Q3 et 07 Q7 longueurs réajustées.
+- Contrôles : check/qa/tranche (0 clé la plus longue, positions 21/21/20/20, 0 paire proche), lot-lint propre, clé la plus courte 9/30, prettier json ok, renderLesson/Summary sans ** ni :::.
