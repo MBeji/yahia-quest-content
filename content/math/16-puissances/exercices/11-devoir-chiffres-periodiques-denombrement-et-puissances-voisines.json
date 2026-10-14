@@ -1,0 +1,242 @@
+{
+  "title": "⭐⭐ تمرين موجّه: أسئلة قصيرة في التعداد والأرقام الدورية وفاصلة نقطة والقوى المتجاورة",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "نكوّن أعدادًا من ثلاثة أرقام مختلفة باستعمال الأرقام 0 و 1 و 3 و 6 و 8، ولا يُستعمل الرقم الواحد أكثر من مرّة في العدد الواحد. إذا ثبّتنا رقم الآحاد 0 فكم عددًا نحصل عليه ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7",
+          "misconceptionTag": "math.prob.denombrement-somme-au-lieu-de-produit"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "misconceptionTag": "math.prob.denombrement-repetition-ignoree"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "رقم الآحاد ثابت وهو 0. بقيت الأرقام 1 و 3 و 6 و 8، فلرقم المئات 4 اختيارات، ثمّ يبقى 3 اختيارات لرقم العشرات بعد استعمال رقم المئات. شجرة الاختيار تعطي 4 × 3 = 12 عددًا ✓. الخطأ الشائع جمع الاختيارات بدل ضربها فيخرج 4 + 3 = 7، أو نسيان أنّ رقم العشرات لا يكرّر رقم المئات فيخرج 4 × 4 = 16. ومن أعاد استعمال الصفر لرقم المئات وجد 5 × 4 = 20.",
+      "difficulty": 1,
+      "competencies": [
+        "math.prob.denombrement-issues"
+      ]
+    },
+    {
+      "prompt": "تحمل خمس بطاقات الأرقام 0 و 1 و 3 و 6 و 8. نسحب منها ثلاث بطاقات واحدة تلو الأخرى دون إرجاع، ونضعها من اليسار إلى اليمين لنقرأ عددًا من ثلاثة أرقام، ولا نقبل العدد الذي يبدأ بالصفر. كم عددًا زوجيًّا يمكن الحصول عليه بهذه الطريقة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "60",
+          "misconceptionTag": "math.prob.denombrement-repetition-ignoree"
+        },
+        {
+          "id": "b",
+          "text": "48"
+        },
+        {
+          "id": "c",
+          "text": "36"
+        },
+        {
+          "id": "d",
+          "text": "30"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "رقم الآحاد في العدد الزوجي هو 0 أو 6 أو 8، ونفصل الحالات. إذا كان رقم الآحاد 0 فنجد 4 × 3 = 12 عددًا. وإذا كان 6 فرقم المئات يُختار من 1 و 3 و 8 فقط، لأنّه لا يكون 0 ولا 6: ثلاثة اختيارات، ثمّ 3 اختيارات للعشرات، أي 3 × 3 = 9 أعداد. وكذلك 9 أعداد عندما يكون رقم الآحاد 8. المجموع 12 + 9 + 9 = 30 ✓. الخطأ الشائع السماح بالصفر لرقم المئات، فيصير لكلّ رقم آحاد 4 × 3 = 12 عددًا ويخرج 36. ومن أهمل شرط الزوجيّة عدّ كلّ الأعداد: 4 × 4 × 3 = 48. ومن سمح بإعادة البطاقة وجد 4 × 5 × 3 = 60.",
+      "difficulty": 2,
+      "competencies": [
+        "math.prob.denombrement-issues"
+      ]
+    },
+    {
+      "prompt": "نجري القسمة 1 ÷ 14 فنحصل على الكتابة العشرية الدوريّة التالية:\n1/14 = 0,0(714285)\nما الرقم الذي رتبته 2027 بعد الفاصل ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الصفر الأوّل يسبق الدور، فالدور 714285 وطوله 6 يبدأ من الرتبة 2. نطرح 1 من الرتبة ثمّ نقسم على 6: 2027 − 1 = 2026 = 6 × 337 + 4، والباقي 4 يدلّ على الرقم الرابع من الدور 714285 وهو 2 ✓. الخطأ الشائع نسيان الصفر الذي يسبق الدور: 2027 = 6 × 337 + 5 فيُؤخذ الرقم الخامس 8. ومن عدّ هذا الصفر جزءًا من الدور جعل طوله 7 فكتب 2027 = 7 × 289 + 4 وأخذ الرقم الرابع من 0714285 فوجد 4. ومن قرأ الباقي 5 على أنّه رتبة تبدأ من 0 أخذ الرقم السادس من الدور وهو 5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ensembles-nombres"
+      ]
+    },
+    {
+      "prompt": "نكتب العدد الصحيح الطبيعي N بأرقامه كما يلي، حيث b رقم مجهول:\nN = 47b2\nنعلم أنّ N يقبل القسمة على 4 وعلى 6 معًا. ما قيمة الرقم b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "misconceptionTag": "math.num.critere-somme-applique-au-chiffre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "يجب أن يتحقّق معيارا القسمة على 4 وعلى 6 معًا. معيار 4 يخصّ العدد المكوّن من آخر رقمين b2، ولا يكون مضاعفًا للعدد 4 إلّا إذا كان b فرديًّا: 12 و 32 و 52 و 72 و 92. ومعيار 6 يتطلّب أن يكون N زوجيًّا، وهذا متحقّق لأنّ آحاده 2، وأن يكون مجموع أرقامه 4 + 7 + b + 2 = 13 + b مضاعفًا للعدد 3، أي b = 2 أو 5 أو 8. القيمة المشتركة الوحيدة هي b = 5 ✓، والتحقّق: 4752 = 12 × 396. الخطأ الشائع الاكتفاء بمعيار واحد: معيار 4 وحده يقبل b = 1 مع أنّ 4712 لا يقبل القسمة على 3، ومعيار 6 وحده يقبل b = 2 مع أنّ 4722 لا يقبل القسمة على 4. ومن طبّق معيار 3 على الرقم b وحده اختار b = 9 لأنّه مضاعف للعدد 3، مع أنّ مجموع أرقام 4792 هو 22.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "المثلّث ORS قائم في R ومتقايس الضلعين، وطول كلّ من ضلعيه القائمين OR و RS هو 2 وحدة تدريج، ووتره [OS] محمول على مستقيم مدرّج كما في الرسم. نذكّر بأنّ مربّع الوتر في المثلّث القائم يساوي مجموع مربّعي ضلعيه القائمين. ما الطول OS ؟\n<svg viewBox=\"0 0 230 130\"><title>رسم للمثلّث ORS ووتره على المستقيم المدرّج</title><path d=\"M30.0 100.0 L86.6 43.4 L143.1 100.0 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M12 100.0 L205 100.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M199 95.0 L206 100.0 L199 105.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30.0 100.0 L86.6 43.4 L143.1 100.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M79.5 50.5 L86.6 57.6 L93.6 50.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"30.0\" cy=\"100.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"143.1\" cy=\"100.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"86.6\" cy=\"43.4\" r=\"4\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"30.0\" y=\"119.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"143.1\" y=\"119.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">S</text><text x=\"86.6\" y=\"34.4\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">R</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"46.3\" y=\"67.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">2</text><text x=\"126.9\" y=\"67.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "8",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "2 + √2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "2√2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "بفيثاغورس: OS² = OR² + RS² = 2² + 2² = 4 + 4 = 8، ومنه OS = √8 = √(4 × 2) = 2√2 ✓. الخطأ الشائع جمع الطولين دون تربيعهما فيخرج 2 + 2 = 4، أو التوقّف عند OS² = 8 دون أخذ الجذر. ومن كتب الوتر 2 + √2 جمع حيث يجب أن يضرب: وتر المثلّث القائم المتقايس الضلعين يساوي طول ضلعه القائم مضروبًا في √2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "المثلّث ORS قائم في R ومتقايس الضلعين، ووتره [OS] محمول على مستقيم مدرّج، حيث فاصلة O هي −1 والنقطة S على يمين O. نعلم أنّ OS = 2√2. ما فاصلة S ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2 + 1",
+          "misconceptionTag": "math.int.signe-ignore-dans-somme"
+        },
+        {
+          "id": "b",
+          "text": "2√2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "2√2 − 1"
+        },
+        {
+          "id": "d",
+          "text": "√2 − 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "S على يمين O، وفاصلتها هي فاصلة O مضافًا إليها البعد OS: −1 + 2√2 = 2√2 − 1 ✓. الخطأ الشائع إهمال إشارة فاصلة O وإضافة 2√2 إلى 1 فتخرج 2√2 + 1. ومن أعطى البعد OS نفسه أهمل فاصلة O فكتب 2√2، ومن أخذ OS = √2 ونسي العامل 2 وجد √2 − 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد التالي حيث a رقم:\nS = 4 × 3²⁴ + a × 3²³ + 3²²\nنُخرج القوّة 3²² عاملًا مشتركًا فنكتب:\nS = 3²² × k\nما عبارة k بدلالة a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "37 + 3a"
+        },
+        {
+          "id": "b",
+          "text": "37 + a"
+        },
+        {
+          "id": "c",
+          "text": "13 + 3a"
+        },
+        {
+          "id": "d",
+          "text": "5 + a"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نكتب كلّ حدّ بدلالة 3²²: 3²⁴ = 3² × 3²² = 9 × 3²² و 3²³ = 3 × 3²². فيصير S = 4 × 9 × 3²² + a × 3 × 3²² + 1 × 3²² = 3²² × (36 + 3a + 1) = 3²² × (37 + 3a) ✓. الخطأ الشائع نسيان الفرق بين الأسّين ومعاملة الحدود كأنّها بالقوّة نفسها، فيخرج 4 + a + 1 = 5 + a. ومن أخذ 3²⁴ = 3 × 3²² وجد 4 × 3 + 3a + 1 = 13 + 3a، ومن أهمل العامل 3 في الحدّ a × 3²³ وجد 37 + a.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العدد S يُكتب كما يلي حيث a رقم:\nS = 3²² × (37 + 3a)\nما قيمة الرقم a التي تجعل S مضاعفًا للعدد 10 × 3²² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "S = 3²² × (37 + 3a) مضاعف للعدد 10 × 3²² إذا وفقط إذا كان 37 + 3a مضاعفًا للعدد 10، أي ينتهي بالرقم 0. نجرّب الأرقام من 0 إلى 9 فنجد 37 و 40 و 43 و 46 و 49 و 52 و 55 و 58 و 61 و 64، والعدد 40 هو الوحيد الذي ينتهي بـ 0، فـ a = 1 ✓. الخطأ الشائع تطبيق معيار واحد: a = 6 يعطي 55 وهو مضاعف للعدد 5 لا للعدد 10، و a = 9 يعطي 64 وهو زوجي لا ينتهي بـ 0. ومن أهمل الحدّ 37 وقرأ 3a وحده اختار a = 0.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances",
+        "math.num.criteres-divisibilite"
+      ]
+    }
+  ]
+}

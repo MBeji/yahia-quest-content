@@ -1,0 +1,128 @@
+{
+  "title": "⭐⭐ تمرين موجّه: القسمة الإقليدية بخارج حرفي ثمّ انتقال قابلية القسمة",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "عدد صحيح طبيعي n، قسمته الإقليدية على 6 تعطي خارجًا a وباقيًا 5. ما كتابة n بدلالة a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "5a + 6",
+          "misconceptionTag": "math.frac.partie-entiere-quotient-et-reste-inverses"
+        },
+        {
+          "id": "b",
+          "text": "6a + 5"
+        },
+        {
+          "id": "c",
+          "text": "6(a + 5)"
+        },
+        {
+          "id": "d",
+          "text": "a + 11"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "القسمة الإقليدية تعني أنّ المقسوم يساوي المقسوم عليه مضروبًا في الخارج مضافًا إليه الباقي. هنا المقسوم عليه 6 والخارج a والباقي 5، إذن n = 6 × a + 5 = 6a + 5 ✓، والباقي 5 أصغر من 6 كما يجب. الخطأ الشائع تبديل دوري الخارج والباقي فيُكتب 5a + 6، مع أنّ الذي يُضرب في الخارج هو المقسوم عليه لا الباقي.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.multiples-diviseurs",
+        "math.num.operations-entiers"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ n = 6a + 5 حيث a عدد صحيح طبيعي. ما الجداء الذي يساويه العدد n + 1 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "6(a + 1)"
+        },
+        {
+          "id": "b",
+          "text": "6(a + 6)",
+          "misconceptionTag": "math.alg.facteur-commun-terme-non-divise"
+        },
+        {
+          "id": "c",
+          "text": "12a",
+          "misconceptionTag": "math.alg.termes-semblables-par-coefficient"
+        },
+        {
+          "id": "d",
+          "text": "36a",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "n + 1 = 6a + 5 + 1 = 6a + 6 = 6 × a + 6 × 1 = 6(a + 1) ✓، وهو جداء العدد 6 في العدد الصحيح a + 1، فـ n + 1 مضاعف للعدد 6. الخطأ الشائع عند إخراج العامل المشترك: ترك الحدّ 6 كما هو دون قسمته على 6 فيُكتب 6(a + 6) وهو يساوي 6a + 36. ومن جمع 6a و 6 كأنّهما حدّان متشابهان كتب 12a، ومن ضربهما كتب 36a.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.multiples-diviseurs",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ n + 1 = 6(a + 1)، حيث a عدد صحيح طبيعي فرديّ، أي a = 2k + 1 مع k عدد صحيح طبيعي. أيّ هذه الأعداد يقسم n + 1 مهما كانت قيمة k ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "24"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نعوّض a = 2k + 1: n + 1 = 6(2k + 1 + 1) = 6(2k + 2) = 6 × 2 × (k + 1) = 12(k + 1) ✓، فهو مضاعف للعدد 12 مهما كان k. أمّا 10 و 18 و 24 فلا تقسم n + 1 دائمًا: من أجل k = 0 نجد a = 1 و n + 1 = 6 × 2 = 12، ولا يقبل 12 القسمة على أيّ منها. الخطأ الشائع عدّ الزوجيّة مرّتين فيُكتب 6 × 2 × 2 = 24، أو الظنّ أنّ فرديّة a تُدخل العامل 3 فيُكتب 6 × 3 = 18.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.multiples-diviseurs",
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ n + 1 = 12(k + 1) حيث k عدد صحيح طبيعي. ما باقي القسمة الإقليدية للعدد n على 12 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "13"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "1",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "0",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "n + 1 = 12(k + 1) إذن n = 12(k + 1) − 1 = 12k + 12 − 1 = 12k + 11 ✓، والباقي 11 أصغر من 12 كما يجب. الخطأ الشائع إعطاء باقي العدد n + 1 وهو 0 بدل باقي n. ومن جمع 1 بدل أن يطرحه كتب n = 12(k + 1) + 1 فوجد الباقي 1، وإن أبقى 12k + 13 دون اختزال وجد الباقي 13 وهو أكبر من القاسم.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.multiples-diviseurs",
+        "math.num.operations-entiers"
+      ]
+    }
+  ]
+}

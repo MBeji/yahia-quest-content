@@ -1,0 +1,190 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: أقواس متداخلة وقيم مطلقة ثمّ معادلة بقيمة مطلقة",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 32,
+  "questions": [
+    {
+      "prompt": "نريد تبسيط العبارة A التالية حيث x عدد حقيقي:\nA = x − [√80 − (√5 + 6 − √16)]\nنبدأ بالجزء الذي بين المعقوفتين ونسمّيه K:\nK = √80 − (√5 + 6 − √16)\nما الكتابة المبسّطة للعدد K ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√5 − 2"
+        },
+        {
+          "id": "b",
+          "text": "3√5 + 2",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "c",
+          "text": "3√5 + 10"
+        },
+        {
+          "id": "d",
+          "text": "15√5 − 2",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نبسّط الجذور أوّلًا: √80 = √(16 × 5) = 4√5 و √16 = 4. ما بين القوسين الصغيرين يصير √5 + 6 − 4 = √5 + 2. فنجد K = 4√5 − (√5 + 2) = 4√5 − √5 − 2 = 3√5 − 2 ✓، لأنّ الإشارة − أمام القوس تغيّر إشارة كلّ حدوده. الخطأ الشائع تغيير إشارة الحدّ الأوّل وحده: 4√5 − √5 + 2 = 3√5 + 2. ومن أخرج 16 بدل 4 من √80 فكتب √80 = 16√5 وجد 15√5 − 2، ومن ترك √16 = 16 وجد 3√5 + 10.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد A حيث x عدد حقيقي، ونعلم أنّه بعد تبسيط ما بين المعقوفتين:\nA = x − [3√5 − 2]\nما الكتابة المختزلة للعدد A ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x − 2 − 3√5",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "b",
+          "text": "x + 2 − 3√5"
+        },
+        {
+          "id": "c",
+          "text": "x − 2 + 3√5"
+        },
+        {
+          "id": "d",
+          "text": "x + 2 + 3√5",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الإشارة − أمام المعقوفتين تغيّر إشارة كلّ حدّ بداخلهما: −[3√5 − 2] = −3√5 + 2. إذن A = x − 3√5 + 2 = x + 2 − 3√5 ✓. الخطأ الشائع تغيير إشارة حدّ واحد فقط: من غيّر الحدّ الأوّل وحده وجد x − 3√5 − 2، ومن غيّر الحدّ الثاني وحده وجد x + 3√5 + 2، ومن تجاهل الإشارة − وجد x + 3√5 − 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد B حيث y عدد حقيقي:\nB = 4|√5 − 2| + |√5 − 3| + 3 − y\nنعلم أنّ 2,2 < √5 < 2,3. ما الكتابة المختزلة للعدد B ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√5 + 4 − y",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "b",
+          "text": "5√5 − 8 − y",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "c",
+          "text": "3√5 − 2 − y"
+        },
+        {
+          "id": "d",
+          "text": "14 − 5√5 − y",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نختبر إشارة ما داخل كلّ قيمة مطلقة. بما أنّ 2,2 < √5 < 2,3 فإنّ √5 − 2 موجب فنحتفظ به: |√5 − 2| = √5 − 2. و √5 − 3 سالب فنأخذ مقابله: |√5 − 3| = 3 − √5. إذن B = 4(√5 − 2) + (3 − √5) + 3 − y = 4√5 − 8 + 3 − √5 + 3 − y = 3√5 − 2 − y ✓. الخطأ الشائع حذف الرمز دون دراسة الإشارة: |√5 − 3| = √5 − 3 فيخرج 5√5 − 8 − y. ومن قلب الفرق دائمًا (|a − b| = b − a) وجد 14 − 5√5 − y، ومن نسي توزيع المعامل 4 على الحدّين وجد 3√5 + 4 − y.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العددين A و B يُكتبان بعد الاختزال هكذا:\nA = x + 2 − 3√5\nB = 3√5 − 2 − y\nنضع x = y. ما قيمة المجموع A + B ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6√5",
+          "misconceptionTag": "math.int.signe-ignore-dans-somme"
+        },
+        {
+          "id": "b",
+          "text": "4 − 6√5"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "misconceptionTag": "math.int.signe-ignore-dans-somme"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "عند x = y: A + B = (x + 2 − 3√5) + (3√5 − 2 − y) = (x − y) + (2 − 2) + (−3√5 + 3√5) = 0 ✓. إذن A و B متقابلان: B = −A. الخطأ الشائع إهمال إشارة أحد الحدّين: من جمع 2 و 2 بدل 2 و −2 وجد 4، ومن جمع −3√5 و −3√5 بدل −3√5 و 3√5 وجد −6√5، ومن ارتكب الخطأين معًا وجد 4 − 6√5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.developpement",
+        "math.num.relatifs-operations"
+      ]
+    },
+    {
+      "prompt": "نريد حلّ المعادلة التالية في ℝ:\n|x + 2 − 3√5| = √20\nأيّ جملة تكافئ هذه المعادلة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x + 2 − 3√5 = √20 أو x + 2 − 3√5 = −√20"
+        },
+        {
+          "id": "b",
+          "text": "x + 2 − 3√5 = √20",
+          "misconceptionTag": "math.num.valeur-absolue-solution-unique"
+        },
+        {
+          "id": "c",
+          "text": "x = √20 أو x = −√20"
+        },
+        {
+          "id": "d",
+          "text": "x + 2 − 3√5 = √20 و x + 2 − 3√5 = −√20 معًا"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "قاعدة القيمة المطلقة تنطبق على العبارة كلّها: |X| = r مع r > 0 تعني X = r أو X = −r. هنا X = x + 2 − 3√5 و r = √20 > 0، فالمعادلة تكافئ x + 2 − 3√5 = √20 أو x + 2 − 3√5 = −√20 ✓. الخطأ الشائع الاكتفاء بحالة واحدة مع أنّ البعد نفسه تحقّقه نقطتان. ومن كتب x = ±√20 أهمل الحدّين 2 و −3√5 داخل القيمة المطلقة. ومن ربط الحالتين بـ «و» طلب أن يساوي العبارة نفسها √20 و −√20 معًا، وهذا مستحيل.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "نعتبر المساواة التالية حيث x عدد حقيقي:\n|x + 2 − 3√5| = √20\nما هي كلّ قيم x التي تحقّقها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{5√5 − 2}",
+          "misconceptionTag": "math.num.valeur-absolue-solution-unique"
+        },
+        {
+          "id": "b",
+          "text": "{3 ; √65 − 2}",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "c",
+          "text": "{2 − 5√5 ; 2 − √5}",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "{√5 − 2 ; 5√5 − 2}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "حسب الجملة المكافئة: x + 2 − 3√5 = √20 أو x + 2 − 3√5 = −√20. نبسّط √20 = √(4 × 5) = 2√5 ثمّ نحلّ: x = −2 + 3√5 + 2√5 = 5√5 − 2، أو x = −2 + 3√5 − 2√5 = √5 − 2. إذن الحلّان {√5 − 2 ; 5√5 − 2} ✓. التحقّق: من أجل x = √5 − 2 نجد x + 2 − 3√5 = −2√5 وقيمته المطلقة 2√5 = √20، ومن أجل x = 5√5 − 2 نجد 2√5 وقيمته المطلقة √20 أيضًا. الخطأ الشائع الاكتفاء بالحلّ الأوّل. ومن نقل الحدّين 2 و −3√5 دون تغيير إشارتيهما وجد {2 − 5√5 ; 2 − √5}. ومن جمع الجذور تحت جذر واحد كتب 3√5 + √20 = √45 + √20 = √65 و 3√5 − √20 = √(45 − 20) = 5 فوجد {3 ; √65 − 2}.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.racines-calcul",
+        "math.alg.equations-premier-degre"
+      ]
+    }
+  ]
+}

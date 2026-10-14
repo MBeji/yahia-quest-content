@@ -1,0 +1,276 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: معلّم على الوتر ونظير نقطة وطبيعة رباعي ومساقط",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 43,
+  "questions": [
+    {
+      "prompt": "المثلّث EFG قائم ومتقايس الضلعين في E، وطول كلّ من ضلعيه القائمين يساوي وحدة التدريج على المستقيم (FG) الذي تزداد فواصله من F نحو G. ونرمز بـ xF و xK إلى فاصلتي النقطتين F و K من هذا المستقيم، حيث:\nxF = 1 − √2\nxK = √2 − 1\nما البعد KG ؟\n<svg viewBox=\"0 0 240 195\"><title>رسم للوضعية المعطاة</title><path d=\"M120.0 48.4 L63.4 105.0 L176.6 105.0 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M12.0 105.0 L228.0 105.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M221.0 100.0 L229.0 105.0 L221.0 110.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120.0 48.4 L63.4 105.0 L176.6 105.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M112.9 55.5 L120.0 62.6 L127.1 55.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"120.0\" cy=\"48.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"63.4\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"176.6\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"120.0\" y=\"38.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"60.4\" y=\"125.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"179.6\" y=\"125.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"80.7\" y=\"73.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">1</text><text x=\"159.3\" y=\"73.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 − √2"
+        },
+        {
+          "id": "b",
+          "text": "√2 − 2",
+          "misconceptionTag": "math.num.valeur-absolue-negative"
+        },
+        {
+          "id": "c",
+          "text": "2√2 − 2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "4 − 2√2",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الوتر [FG] في المثلّث القائم الذي ضلعاه القائمان طولهما 1: FG² = 1² + 1² = 2، إذن FG = √2. وبما أنّ الفواصل تزداد من F نحو G فإنّ xG = xF + FG = 1 − √2 + √2 = 1. وبما أنّ √2 < 2 فإنّ xK = √2 − 1 < 1، أي K على يسار G، ومنه KG = xG − xK = 1 − (√2 − 1) = 2 − √2 ✓. الخطأ الشائع جمع الضلعين القائمين بدل أخذ جذر مجموع مربّعيهما: FG = 2 فتصير xG = 3 − √2 ويخرج KG = 4 − 2√2. ومن طرح الفاصلتين بالترتيب المعاكس وجد √2 − 2 وهو سالب والبعد لا يكون سالبًا، ومن حسب FK بدل KG وجد 2√2 − 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-coordonnees",
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في المثلّث EFG القائم ومتقايس الضلعين في E، ندرّج المستقيم (FG) بوحدة هي الطول EF بحيث تزداد الفواصل من F نحو G، وفاصلة G هي 1. تقع النقطة M على نصف المستقيم [GF) وتبعد عن G المسافة √2/2. ما فاصلة M ؟\n<svg viewBox=\"0 0 240 195\"><title>رسم للوضعية المعطاة</title><path d=\"M120.0 48.4 L63.4 105.0 L176.6 105.0 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M12.0 105.0 L228.0 105.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M221.0 100.0 L229.0 105.0 L221.0 110.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120.0 48.4 L63.4 105.0 L176.6 105.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M112.9 55.5 L120.0 62.6 L127.1 55.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"120.0\" cy=\"48.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"63.4\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"176.6\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"120.0\" y=\"38.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"60.4\" y=\"125.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"179.6\" y=\"125.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"80.7\" y=\"73.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">1</text><text x=\"159.3\" y=\"73.7\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">1</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 − √2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "1 − √2/2"
+        },
+        {
+          "id": "c",
+          "text": "1 + √2/2",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "d",
+          "text": "1 + √2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "M تقع على المستقيم المدرّج وتبعد عن G المسافة √2/2، فـ |xM − 1| = √2/2، أي xM = 1 + √2/2 أو xM = 1 − √2/2. نصف المستقيم [GF) يبدأ من G ويتّجه نحو F، أي نحو الفواصل الأصغر لأنّ الفواصل تزداد من F نحو G. فالحلّ 1 + √2/2 الأكبر من 1 مرفوض، ونحتفظ بـ xM = 1 − √2/2 ✓. الخطأ الشائع الاحتفاظ بالحلّ المرفوض، لأنّ شرط الانتماء إلى نصف المستقيم يُسقط أحد الحلّين. ومن أخذ البعد √2 بدل √2/2 وجد 1 − √2 وهي فاصلة F.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-coordonnees",
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "على المستقيم المدرّج (FG) الذي تزداد فواصله من F نحو G، نعلم أنّ:\nxF = 1 − √2\nxG = 1\nxM = 1 − √2/2\nنحسب المقدار التالي:\nT = xM − (xF + xG)/2\nما قيمة T ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−√2",
+          "misconceptionTag": "math.int.signe-ignore-dans-somme"
+        },
+        {
+          "id": "b",
+          "text": "1 − √2",
+          "misconceptionTag": "math.vec.milieu-difference-au-lieu-de-somme"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "√2/2 − 1",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "معدّل الفاصلتين هو (xF + xG)/2 = (1 − √2 + 1)/2 = (2 − √2)/2 = 1 − √2/2. إذن T = (1 − √2/2) − (1 − √2/2) = 0 ✓، أي أنّ xM = (xF + xG)/2: فاصلة M هي معدّل فاصلتي الطرفين F و G، فالنقطة M منتصف [FG]. الخطأ الشائع نسيان القسمة على 2: فيُستعمل المجموع xF + xG = 2 − √2 ويخرج T = √2/2 − 1. ومن أهمل إشارة xF فاستعمل (1 + 1 + √2)/2 = 1 + √2/2 وجد T = −√2. ومن أخذ نصف الفرق (xG − xF)/2 = √2/2 وجد T = 1 − √2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "المثلّث EFG قائم ومتقايس الضلعين في E، وطول كلّ من ضلعيه القائمين EF و EG يساوي 1. النقطة M منتصف [FG]، والنقطة H نظيرة E بالنسبة إلى M. ما الطول EH ؟\n<svg viewBox=\"0 0 240 195\"><title>رسم للوضعية المعطاة</title><path d=\"M120.0 48.4 L63.4 105.0 L176.6 105.0 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M12.0 105.0 L228.0 105.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M221.0 100.0 L229.0 105.0 L221.0 110.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120.0 48.4 L63.4 105.0 L176.6 105.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M112.9 55.5 L120.0 62.6 L127.1 55.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M120.0 48.4 L120.0 161.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"120.0\" cy=\"161.6\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"120.0\" cy=\"105.0\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"120.0\" cy=\"48.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"63.4\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"176.6\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"120.0\" y=\"38.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"60.4\" y=\"125.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"179.6\" y=\"125.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"120.0\" y=\"181.6\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"132.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2/2",
+          "misconceptionTag": "math.vec.symetrique-confondu-avec-milieu"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "√2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "بفيثاغورس في المثلّث EFG القائم في E: FG² = 1² + 1² = 2، فـ FG = √2. M منتصف الوتر [FG]، والموسط EM المتعلّق بالوتر يساوي نصفه: EM = FG/2. وبما أنّ H نظيرة E بالنسبة إلى M فإنّ M منتصف [EH]، ومنه EH = 2 × EM = FG = √2 ✓. الخطأ الشائع التوقّف عند المنتصف: الطول EM هو نصف EH لا EH نفسه، فيخرج نصف الطول الصحيح. ومن ظنّ أنّ H على بعد EF من E وجد 1، ومن جمع الضلعين القائمين وجد 2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "المثلّث EFG قائم في E ومتقايس الضلعين، والنقطة M منتصف [FG]، والنقطة H نظيرة E بالنسبة إلى M. نعلم أنّ EH = FG. أيّ جواب يعطي أدقّ وصف للرباعي EFHG مع حجّة تكفي بالخاصيّات المذكورة فيها وحدها ؟\n<svg viewBox=\"0 0 240 195\"><title>رسم للوضعية المعطاة</title><path d=\"M120.0 48.4 L63.4 105.0 L120.0 161.6 L176.6 105.0 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M120.0 48.4 L63.4 105.0 L120.0 161.6 L176.6 105.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M112.9 55.5 L120.0 62.6 L127.1 55.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"120.0\" cy=\"48.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"63.4\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"120.0\" cy=\"161.6\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"176.6\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"120.0\" cy=\"105.0\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"120.0\" y=\"38.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"53.4\" y=\"110.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"120.0\" y=\"181.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"186.6\" y=\"110.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"132.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "مستطيل، لأنّ للقطرين المنتصف نفسه M، وزاوية E قائمة، و EH = FG",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "b",
+          "text": "مربّع، لأنّ للقطرين المنتصف نفسه M، وزاوية E قائمة، و EH = FG",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "مربّع، لأنّ للقطرين المنتصف نفسه M، وزاوية E قائمة، و EF = EG"
+        },
+        {
+          "id": "d",
+          "text": "مستطيل، لأنّ للقطرين المنتصف نفسه M، وزاوية E قائمة، و EF = EG",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "M منتصف [EH] لأنّ H نظيرة E بالنسبة إلى M، وهي منتصف [FG] أيضًا، فللقطرين المنتصف نفسه M والرباعي EFHG متوازي أضلاع. له زاوية قائمة في E فهو مستطيل. وله ضلعان متتاليان متقايسان EF = EG فهو معيّن أيضًا، أي مستطيل ومعيّن في آن واحد: مربّع ✓. الخطأ الشائع الاكتفاء بما يثبت المستطيل فقط: كلّ مستطيل قطراه متقايسان EH = FG، فهذه الخاصيّة مع الزاوية القائمة لا تثبت التربيع. ومن توقّف عند وصف «مستطيل» قال شيئًا صحيحًا لكنّه ليس الأدقّ، لأنّ تساوي الضلعين المتتاليين EF = EG يرقّيه إلى مربّع.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "الرباعي EFHG مربّع مركزه M، ورؤوسه E و F و H و G متتالية، وطول ضلعه EF = 1. ما المسافة بين النقطة E والمستقيم (FG) ؟\n<svg viewBox=\"0 0 240 195\"><title>رسم للوضعية المعطاة</title><path d=\"M120.0 48.4 L63.4 105.0 L120.0 161.6 L176.6 105.0 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M63.4 105.0 L176.6 105.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M120.0 48.4 L63.4 105.0 L120.0 161.6 L176.6 105.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M112.9 55.5 L120.0 62.6 L127.1 55.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"120.0\" cy=\"48.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"63.4\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"120.0\" cy=\"161.6\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"176.6\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"120.0\" cy=\"105.0\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"120.0\" y=\"38.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"53.4\" y=\"110.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"120.0\" y=\"181.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"186.6\" y=\"110.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"132.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2/2"
+        },
+        {
+          "id": "b",
+          "text": "1/2",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "c",
+          "text": "√3/2"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في المربّع القطران [EH] و [FG] متعامدان ويتقاطعان في M، فـ (EM) ⊥ (FG) و M تنتمي إلى (FG): النقطة M هي المسقط العمودي للنقطة E على (FG)، والمسافة المطلوبة هي EM. المثلّث EFG قائم في E، فـ FG² = 1² + 1² = 2 و FG = √2؛ وقطرا المربّع متقايسان، فـ EH = FG = √2 ومنه EM = EH/2 = √2/2 ✓. الخطأ الشائع عدّ الضلع [EF] هو المسافة فيُكتب 1، مع أنّه مائل على (FG). ومن حسب مساحة المثلّث EFG وهي 1/2 أعطى مساحة بدل مسافة، ومن استعمل ارتفاع مثلّث متقايس الأضلاع وجد √3/2 مع أنّ زاويتي F و G هنا 45°.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "الرباعي EFHG مربّع مركزه M، ورؤوسه E و F و H و G متتالية، والنقطة N منتصف [HG]. مسقط نقطة T على المستقيم (FG) وفق منحى المستقيم (EF) هو نقطة تقاطع (FG) مع المستقيم المارّ من T والموازي لـ (EF). ما مسقط N على (FG) وفق منحى (EF) ؟\n<svg viewBox=\"0 0 240 195\"><title>رسم للوضعية المعطاة</title><path d=\"M120.0 48.4 L63.4 105.0 L120.0 161.6 L176.6 105.0 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M12.0 105.0 L228.0 105.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M120.0 48.4 L63.4 105.0 L120.0 161.6 L176.6 105.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M112.9 55.5 L120.0 62.6 L127.1 55.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"148.3\" cy=\"133.3\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"120.0\" cy=\"48.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"63.4\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"120.0\" cy=\"161.6\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"176.6\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"120.0\" cy=\"105.0\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"120.0\" y=\"38.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"53.4\" y=\"110.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"120.0\" y=\"181.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"186.6\" y=\"110.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"132.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text><text x=\"161.3\" y=\"137.3\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "النقطة F"
+        },
+        {
+          "id": "b",
+          "text": "النقطة G"
+        },
+        {
+          "id": "c",
+          "text": "النقطة M"
+        },
+        {
+          "id": "d",
+          "text": "منتصف [MG]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المربّع الضلعان المتقابلان متوازيان: (HG) ∥ (EF). النقطة N تنتمي إلى (HG)، فالمستقيم المارّ من N والموازي لـ (EF) هو (HG) نفسه، ويقطع (FG) في G. إذن مسقط N على (FG) وفق منحى (EF) هو G ✓. الخطأ الشائع الخلط بين المنحيين أو الاكتفاء بالإسقاط العمودي: الإسقاط وفق منحى (EG) يعطي M، والإسقاط العمودي للنقطة N على (FG) يعطي منتصف [MG]، وليس أيّ منهما المطلوب.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.quadrilateres",
+        "math.geo.droites-perp-para"
+      ]
+    },
+    {
+      "prompt": "الرباعي EFHG مربّع مركزه M، ورؤوسه E و F و H و G متتالية. مسقط نقطة T على المستقيم (FG) وفق منحى المستقيم (EF) هو نقطة تقاطع (FG) مع المستقيم المارّ من T والموازي لـ (EF). ما مجموعة النقاط T من المستوي التي مسقطها على (FG) وفق منحى (EF) هو M ؟\n<svg viewBox=\"0 0 240 195\"><title>رسم للوضعية المعطاة</title><path d=\"M120.0 48.4 L63.4 105.0 L120.0 161.6 L176.6 105.0 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M12.0 105.0 L228.0 105.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M120.0 48.4 L63.4 105.0 L120.0 161.6 L176.6 105.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M112.9 55.5 L120.0 62.6 L127.1 55.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"120.0\" cy=\"48.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"63.4\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"120.0\" cy=\"161.6\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"176.6\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"120.0\" cy=\"105.0\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"120.0\" y=\"38.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"53.4\" y=\"110.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"120.0\" y=\"181.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"186.6\" y=\"110.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"132.0\" y=\"97.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "المستقيم المارّ من M والموازي لـ (EG)"
+        },
+        {
+          "id": "b",
+          "text": "المستقيم المارّ من M والعمودي على (FG)"
+        },
+        {
+          "id": "c",
+          "text": "القطعة [MP] حيث P نقطة تقاطع المستقيم المارّ من M والموازي لـ (EF) مع (EG)"
+        },
+        {
+          "id": "d",
+          "text": "المستقيم المارّ من M والموازي لـ (EF)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "للنقطة T المسقط M إذا وفقط إذا قطع المستقيم المارّ من T والموازي لـ (EF) المستقيم (FG) في M، أي إذا كانت T على المستقيم الموازي لـ (EF) والمارّ من M. هذا المستقيم كلّه يصلح، لا قطعة منه: كلّ نقطة منه، قريبة من M أو بعيدة عنها، مسقطها M نفسها ✓. الخطأ الشائع جعل المجموعة قطعة بدل مستقيم كامل، أو تعويض منحى (EF) بمنحى العمودي على (FG) فيكون إسقاطًا عموديًّا، أو بمنحى (EG).",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.droites-perp-para",
+        "math.geo.quadrilateres"
+      ]
+    },
+    {
+      "prompt": "المثلّث EFG قائم ومتقايس الضلعين في E، والنقطة M منتصف [FG]. المستقيم المارّ من M والموازي لـ (EF) يقطع (EG) في النقطة P. أيّ حجّة من الحجج التالية تكفي بخاصيّاتها المذكورة وحدها لإثبات أنّ P منتصف [EG] ؟\n<svg viewBox=\"0 0 240 195\"><title>رسم للوضعية المعطاة</title><path d=\"M120.0 48.4 L63.4 105.0 L176.6 105.0 Z\" fill=\"#0f6e56\" opacity=\"0.09\"/><path d=\"M12.0 105.0 L228.0 105.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M221.0 100.0 L229.0 105.0 L221.0 110.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120.0 48.4 L63.4 105.0 L176.6 105.0 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M112.9 55.5 L120.0 62.6 L127.1 55.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M103.0 122.0 L157.3 67.7\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"120.0\" cy=\"105.0\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"148.3\" cy=\"76.7\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"120.0\" cy=\"48.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"63.4\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"176.6\" cy=\"105.0\" r=\"4\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\"><text x=\"120.0\" y=\"38.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"60.4\" y=\"125.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"179.6\" y=\"125.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"131.0\" y=\"123.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">M</text><text x=\"161.3\" y=\"73.7\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">P</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ M منتصف [FG] و EM = FG/2",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ (MP) ∥ (EF) والمثلّث EFG متقايس الضلعين",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ M منتصف [FG] و (MP) ∥ (EF)"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ المثلّث EFG متقايس الضلعين و EM = FG/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المثلّث EFG، M منتصف الضلع [FG] والمستقيم (MP) يوازي حامل الضلع [EF]. والمستقيم المارّ من منتصف ضلع والموازي لحامل ضلع ثانٍ يمرّ من منتصف الضلع الثالث، إذن P منتصف [EG] ✓. الخطأ الشائع الاكتفاء بشرط واحد من الشرطين أو بمعطيات صحيحة لا علاقة لها بالتوازي: التوازي وحده لا يحدّد موضع P دون معرفة أنّ M منتصف، وكون M منتصفًا وحده لا يكفي دون التوازي، وكون المثلّث متقايس الضلعين أو EM = FG/2 معطيات صحيحة لكنّها لا تعيّن P.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.triangles-base",
+        "math.geo.droites-perp-para"
+      ]
+    }
+  ]
+}
