@@ -28,3 +28,34 @@
 - `content:check` : 120 matières validées, 0 erreur. `content:qa:strict` (SVT) : 0 erreur, 7 avertissements tous hors 09–11 (renvois par lettre en 02/04/05, domaine de `07-annales-subur`). `prettier --check` vert.
 - `content:tranche` : 09 = 0/55, 10 = 0/50, 11 = 0/56 ; paires proches 0.
 - Missions d'examen `07…09-examen-*` non touchées ; aucun fichier hors `{09,10,11}/quiz.json` et `exercices/0[1-6]-*.json`.
+
+## Suites appliquées (audit `audit-09-11.md`)
+
+Tout est appliqué : le BLOCKER, les 10 MAJOR et tous les MINOR. Chaque texte de l'auditeur a été vérifié avant écriture : résolution à l'aveugle, longueurs, indices de forme, cohérence avec le cours. Trois textes ont été corrigés :
+
+- **B09-1 (09 `06` Q2)** : l'énoncé devient « شخص سليم » et `d` est remplacé par l'erreur franche proposée. Mais avec le nouveau `d`, la clé serait restée le seul « لا » face à trois « نعم », soit l'indice de polarité relevé en 12–14. `c` devient donc un « لا » à raison fausse : « لا: التّوازن يُقاس بالشّرب وحده والفارق صغير جدًّا ». Il y a désormais deux « نعم » et deux « لا ».
+- **m10-1 (10 `01-tamrin` Q6)** : le nouvel énoncé dit que le pavillon a capté l'ovule, ce qui élimine à vue « في جريب المبيض ». `c` devient « في عنق الرّحم ». L'explication réfute aussi le col et le vagin.
+- **m09-4 (09 `06` Q6, appliqué malgré « sans urgence »)** :
+  - `b` devient « الخلل في قلّة الشّرب؛ ويكفي أن يشرب المريض أكثر » ;
+  - `d` devient « الخلل في الحالبين؛ ويكفي علاج الكلية لتدفع البول بقوّة » (bon lieu, mauvais traitement) ;
+  - l'explication est récrite. L'analogie de la cécité est supprimée. Elle dit maintenant que moins de 400 mL par jour est un signe d'insuffisance, pas une valeur normale.
+
+Le reste est appliqué tel que proposé :
+
+- **Récrits** : M09-1 à M09-4, M10-1, M10-2, M11-1 à M11-4. Les questions `quiz` Q5, Q7 et Q10 du 11 sont entièrement réécrites, la clé au même identifiant et les étiquettes conservées.
+- **Corrigés** : m09-1 à m09-3, m10-2 à m10-7, m11-1 à m11-5 (l'étiquette est retirée de 11 `04-defi` Q1 `c`).
+- **Non fait** : l'étiquette « possible » de m11-4 n'a pas été ajoutée, car le mandat interdit de toucher aux étiquettes.
+
+**Explications.** Toutes les explications que j'avais allongées en queue ont été récrites en phrases complètes, sans fragments ni redites. Cela concerne environ 35 questions sur les trois chapitres. Les ajouts redondants sont supprimés (10 `02-tamrin` Q5, 10 `04-defi` Q5, 11 `quiz` Q9).
+
+**`cours.md` du 09** : « السّامة » devient « السّامّة ».
+
+**Points restants, non modifiés (hors mandat) :**
+- `resume.md` du 09 porte la même faute (« السّامة »).
+- L'énoncé de 10 `06` Q3 dit « ويومين بعدها », ce que le cours ne dit pas. À vérifier dans le manuel.
+
+**Contrôles :**
+- `content:check` : vert.
+- `content:qa:strict` : 0 erreur, 6 avertissements, aucun dans 09–11.
+- `tranche --chapters 09,10,11` : 0/161 clé la plus longue, 0 paire proche.
+- `prettier --check` : vert.
