@@ -264,7 +264,8 @@ bidi à signaler.
 | 01 / 07 | 7 | 0 | 0 | 3 (M11–M13) | 2 |
 | **total** | **49** | **0** | **2** | **13** | **10** |
 
-Questions auditées : 49, toutes résolues à l'aveugle. Clés fausses : 0. Questions à reprendre : 21 (dont 5 de M10
-qui relèvent d'un arbitrage de placement, sans changement de texte).
+Questions auditées : 49, toutes résolues à l'aveugle. Clés fausses : 0. Questions à reprendre : 22 (12 : Q4, Q6 ;
+05/07 : Q3 ; 05/08 : Q1, Q4, Q5, Q6 ; 13 : Q1, Q3, Q4, Q6, Q7 ; 14 : Q1, Q3, Q4, Q5 ; 06 : Q4 ; 01 : Q1, Q2, Q3, Q6,
+Q7), plus 5 items de 06 en arbitrage de placement (M10), sans changement de texte.
 **Verdict : à corriger avant fusion** (deux items à double réponse, fuites en avant systématiques au 13, et un
 doublon au 01).
