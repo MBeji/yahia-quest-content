@@ -1,0 +1,15 @@
+# Notes auteur — lot arabe L05 (chapitres 12, 05 ×2, 13, 14, 06, 01) — au fil de l'eau
+
+Écrit le 2026-10-14. Générateur Python dans le scratchpad (`.../scratchpad/g/`, un module par mission) → JSON sous `/home/user/wt-argis/content/arabic/<chapitre>/exercices/`.
+
+## État
+- [x] Prompt, consigne gisement-auteur-examen, PLAN, assign L05, transcriptions (2020–2026), cours 12, 05, 13, 14, 06, 01 lus ; registre `arabe.*` lu.
+- [x] 12 (fichier 06) écrit (6 q.)
+- [ ] 05 (07, 08) · 13 (06) · 14 (06) · 06 (07) · 01 (07)
+- [ ] `sources[]` des 6 chapter.json · contrôles moteur · lot-lint · double résolution · rendu rtl · rapport
+
+## Choix et points à vérifier par l'auditeur
+- ch.02 déclare « إنّ وأخواتها » hors cours : 14 Q6 (كان → إنّ) donne la règle (إنّ تنصب المبتدأ وترفع الخبر) dans l'énoncé.
+- ch.01 n'enseigne ni les cinq verbes ni le relatif duel : le relatif et l'accord se donnent dans l'énoncé ; la règle des cinq verbes est posée dans l'énoncé de la question qui l'emploie.
+- ch.06 n'enseigne pas le nom d'action ; il vient du ch.05 (tableau des participes/noms d'action), d'où l'ordre 05 → 06. Le nom d'action d'un trilitère (حُلْم) est samāʿī : non demandé (2024 T Q6 « أحلم » remplacée par l'ism al-fāʿil de «حَلَمَ»).
+- 2025 G Q5 : la phrase officielle porte « قَبْلَ سَنَوَاتٍ عَدِيدَةٍ » (qurb vs « nombreuses années ») ; sens demandé sur un autre contexte (بُعَيْدَ الظُّهْرِ) pour ne pas doubler 13/03-revision.

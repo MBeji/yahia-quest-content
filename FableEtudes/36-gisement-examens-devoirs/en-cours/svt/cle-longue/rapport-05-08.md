@@ -977,3 +977,31 @@ $ npm run -s content:tranche -- --subject sciences-vie-terre --chapters 05|06|07
 07 : ✓ 0/79 = 0 %   · paires 2 (03-wiratha/03-boss#6 ↔ 01-sujet#2 0,53 ; 03-wiratha/03-boss#4 ↔ quiz#4 0,47)
 08 : ✓ 0/75 = 0 %   · paires 1 (quiz#4 ↔ 02-tamrin#5 0,48)
 ```
+
+## Suites appliquées (audit `audit-05-08.md`)
+
+Scripts : `/tmp/claude-0/cle-longue/suites/p05h.py`, `p05b.py`, `p05b2.py`, `p06d.py`, `p06s.py`, `p07d.py`, `p07a.py`, `p08.py` ; état avant suites sauvegardé dans `/tmp/claude-0/cle-longue/suites/<chapitre>/`. Chaque texte de l'auditeur a été relu avant écriture (re-résolution, grille 2×2 case par case, longueurs, indices de forme, notions enseignées). Les `misconceptionTag` des options qui changent de sens ont été retirés (05-al-hadm `03-boss` Q2 c ; 06-dirasat `03-boss` Q2 a/c ; 06-safaih `05-tadrib` Q3 b ; 07-ad-dawaran `03-boss` Q2 d, Q4 a/c ; 08 `06-defi-concours` Q1 b, Q3 b) ; les autres tags restent au même sens.
+
+**Appliqué tel que proposé** : les 2 clés inexactes (07-ad-dawaran `04-defi` Q4 b, `quiz` Q9 b + explication) ; l'explication fausse (06-dirasat `04-defi` Q4) ; tous les MAJOR — grilles 2×2 (05-al-hadm `05-tadrib` Q1 ; 06-dirasat `05-tadrib` Q1, `03-boss` Q5, `03-boss` Q6, `04-defi` Q5 ; 07-ad-dawaran `03-boss` Q1 ; 07-annales `quiz` Q3, `03-defi` Q6 ; 08 `06-defi-concours` Q1), doublons réécrits côté exercice clé au même identifiant (05-barakin `05-tadrib` Q1, Q5, Q6 ; 06-dirasat `04-defi` Q6, `03-boss` Q2 ; 06-safaih `05-tadrib` Q5 (Islande), Q3 ; 07-ad-dawaran `03-boss` Q2, Q4, `01-tamrin` Q4 ; 07-annales `quiz` Q8 ; 08 `05-tadrib` Q6), notions non enseignées (05-barakin `05-tadrib` Q2 ; 06-safaih `04-defi` Q2 : prémisse mise dans l'énoncé), distracteurs éliminés par l'énoncé (05-al-hadm `03-boss` Q2 ; 05-barakin `quiz` Q5, `04-defi` Q4 ; 06-dirasat `06-defi-concours` Q2 ; 06-safaih `04-defi` Q5, `06-defi-concours` Q4, `03-boss` Q3 ; 08 `06-defi-concours` Q3), indice « + » (05-barakin `quiz` Q6), explication orpheline (05-barakin `03-boss` Q1) ; paires P1 (`01-sujet` Q2 → gamète 22 + X) et P2 (`quiz` Q4 → croisement a//a × A//A) ; P3 gardée (exercice parallèle). Tous les MINOR, dont les retouches d'explications recollées ou redondantes, « يليه » → « تليه », « وتزداد » → « ويزداد », « فبـ مقارنته » → « فبمقارنته », « والقيمتان » → « والقيم », les fuites inverses (05-al-hadm `quiz` Q9 ; 06-safaih `05-tadrib` Q1 ; 07-annales `01-sujet` Q1, `02-sujet` Q1), 06-dirasat `06-defi-concours` Q6 (jeûne d'une journée), 07-ad-dawaran `05-tadrib` Q5 a et Q6 (énoncé).
+
+**Écarts motivés** :
+- 05-al-hadm `04-defi` Q5 b : non pas « عبر الأوردة الكبرى » (le cours ne dit pas « veines grandes ») mais `تصبّ الأوعية اللّمفاويّة الكبرى في الأوردة` (41), mot pour mot le cours.
+- 05-barakin `05-tadrib` Q6 : la réécriture de l'auditeur (clé « تلوّث الهواء بالغازات », distracteur « خصوبة التربة البركانية ») recopiait les options de `quiz` Q8 retouché selon m05b-1 : `content:tranche` a remonté une paire 0,46. Clé devenue `الاختناق بالرماد` (16), `b` → `ينابيع المياه الساخنة` ; paire disparue.
+- 05-barakin `05-tadrib` Q6 et Q5 : explications écrites sans les chaddas ajoutées par l'auditeur (« الحراريّة الأرضيّة ») pour suivre la vocalisation du chapitre.
+- 06-safaih `quiz` Q4 : « لوراسيا » (non enseigné) remplacé par `أستراليا` ; explication en conséquence.
+- 06-dirasat `03-boss` Q2 : nombres à espaces séparés par U+00A0 (règle QA RTL).
+- MINOR « à reprendre plus tard » traités aussi, avec des distracteurs que le cours réfute : 05-barakin `02-tamrin` Q6 (explication adaptée aux nouveaux c/d), `04-defi` Q5 d (« الماء الجوفيّ »), `06-defi-concours` Q5 b/d ; 05-barakin harmonisation « الصهارة اللزجة » dans `06-defi-concours` Q1 (explication), Q2 (énoncé, options b/c/d, explication), Q6 (explication) — les énoncés qui citent un élève ou décrivent une coulée en surface gardent « اللابة » ; 06-dirasat `04-defi` Q3 a, `06-defi-concours` Q3 d, Q5 b, Q6 a ; 06-safaih `04-defi` Q6 b/c ; 07-annales `02-sujet` Q6 c ; 08 `05-tadrib` Q5 a/d, `06-defi-concours` Q4 b, Q5 d. Chaque nouveau distracteur est réfuté dans l'explication.
+- Gardé tel quel : 07-annales `03-defi` Q1 (« الإباضة », terme), 08 `04-defi` Q3 (l'allonger le rendrait le plus long), paires « à surveiller » de l'audit.
+
+### Sorties après suites (depuis `/home/user/eng-svtkey`)
+
+```
+content:check            → Validated 120 subject(s): 1058 chapters, 4747 exercises, 28834 questions.
+content:qa:strict (svt)  → Content QA: 0 error(s), 1 warning(s) to review.  (07-annales sans domain, chapter.json, préexistant)
+content:tranche 05 → ✓ 0/98 = 0 % · paires 0
+content:tranche 06 → ✓ 0/90 = 0 % · paires 0
+content:tranche 07 → ✓ 0/79 = 0 % · paires 0   (P1 et P2 résolues)
+content:tranche 08 → ✓ 0/75 = 0 % · paires 1   (P3, exercice parallèle gardé)
+prettier --check (0[5-8]-*/quiz.json, exercices/0[1-6]-*.json) → All matched files use Prettier code style!
+Clé strictement la plus courte : 2 à 7 par chapitre.
+```
