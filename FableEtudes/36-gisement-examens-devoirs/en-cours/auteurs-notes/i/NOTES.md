@@ -8,3 +8,9 @@
 - Plafond : 6 à 8 questions par mission (la carte en annonce 3 à 11 « étapes » : regroupées).
 - Étiquettes muettes (erreur exécutée sans id exact au registre) : 42 Q7 « 1/√3 » ; 46 Q4 « 4 < x² < 9 » (posée sur carre-conserve-l-ordre faute de mieux, voir etiquettes/T23-I.json) ; 43 Q3 intervalle vide « 18/13 < CH < 9/7 » posé sur inverse-conserve-l-ordre.
 - Réécritures après dupscan : divisibilité de 42 Q2 (28 divise D), cube d'arête 7, A(−9 ; 12), 44 Q4 et Q5 : options changées contre le publié.
+
+## Tour de corrections (audit T23-I appliqué)
+- M1 à M10 et mineurs appliqués par script depuis le § 7 de l'audit (champs remplacés tels quels, figures SVG43 et SVG46 insérées ; 43 Q1/Q4 et 46 Q5/Q6 portent SVG43 / SVG46 ; 44 Q5 sans le point G, 44 Q6 étiquette « L » à x = 138). Titres de 44 (m7) et 45 (M10) changés. Familles neuves marquées « écartées » dans etiquettes/T23-I.json.
+- Vérifié à part (sympy et coordonnées) : toutes les clés des nouveaux textes, chaque distracteur faux, figure 43 (AB ⟂ AC en A, H à 256,4 px, AH = 77,8 px), pas de somme/différence d'options, dupscan et recoupement contre tout le publié, y compris wt-m21 (47-51) : aucun doublon d'options.
+- ÉCART : 46 Q4 option a de l'audit (« 0 ≤ x² < 13 ») est VRAIE (x² < 9 < 13), donc un faux distracteur. Remplacée par « −2 < x² < 3 » (bornes recopiées sur x², erreur réelle, fausse pour x = 2,5), explication ajustée. Aucun autre texte d'audit défectueux trouvé.
+- Les fichiers ne sont plus régénérables par build.py (corrections appliquées directement aux JSON).
