@@ -380,3 +380,32 @@ _31 questions touchées._
 - `06-defi-concours` Q6 — clé raccourcie ; distracteurs étoffés/remplacés b,c,d — clé a : « عدد الضحايا يتعلّق بالشدّة المحلّية وكثافة السكّان ومتانة البناء وساعة الوقوع، لا بالمقدار وحده » (95) → « الضحايا يتعلّقون بالشدّة وكثافة السكّان ومتانة البناء » (53)
 
 _33 questions touchées._
+
+## Suites appliquées (audit-01-04.md)
+
+Tous les MAJOR et MINOR de l'audit sont appliqués (patch `patches/p_audit.py`, `p_fix9.py`), dossiers 01-04 uniquement,
+`cours.md` intact. Chaque texte de l'auditeur a été revérifié contre le `cours.md` et le dossier entier (faits enseignés :
+cycle sismique, ondes S, alerte précoce, kyste/pus, soi/non-soi, allèles, autosomes, cervelet « خلف المخ », tache aveugle, etc.).
+
+- **Clés inexactes / incomplètes / tautologiques** : 01-takathur `03-boss` Q5, `04-defi` Q3, 04-hajiyat quiz Q10 et `06` Q6 (énoncé raccourci),
+  04-zalazil `01-tamrin` Q5, 02-af3al `03-boss` Q1 (plus de guillemets) — appliqués.
+- **Doublons réécrits (clé au même id, étiquettes ajustées)** : 01-takathur `02-tamrin` Q3 (nombre d'ovules par cycle), Q4 (durée de la grossesse),
+  `05-tadrib` Q5 (date des règles suivantes) ; 01-wadhifat `02-tamrin` Q3, `06` Q6 ; 02-af3al `02-tamrin` Q1, Q2, Q5 ; 02-manaa `05-tadrib` Q1, Q5,
+  `06` Q2, Q4, `03-boss` Q6 ; 03-al-ibsar `01-tamrin` Q1, Q2 (difficulté 2), `02-tamrin` Q2, `03-boss` Q6 ; 03-wiratha `05-tadrib` Q1, Q3, Q5, Q6, `02-tamrin` Q1 ;
+  04-hajiyat `01-tamrin` Q4, `02-tamrin` Q6 ; 04-zalazil `06` Q1, `05-tadrib` Q3, Q4, Q5, Q6, `04-defi` Q3. Plus, mes propres ajouts hors liste :
+  01-wadhifat `01-tamrin` Q6 (cervelet), 04-hajiyat `02-tamrin` Q1 (« مكوّن غذائيّ ») et Q3 (120 g / 40 g, quiz Q5 ↔ Q3).
+- **Indices de forme** : 01-takathur quiz Q7 (noms nus, plus de parenthèse ni glose), 01-wadhifat `01-tamrin` Q3 (tanwīn), 04-hajiyat `05-tadrib` Q5
+  (tous à deux termes), 03-wiratha quiz Q4 (clé sans « ADN » : le « ADN » n'apparaît plus que dans l'explication).
+- **Notion absente du cours** : 02-af3al `06` Q4 (freinage du réflexe) récrite sur le réflexe du dormeur chatouillé (verifie du cours), sans toucher au cours.
+- **Divergences avec l'auditeur (texte corrigé avant écriture)** :
+  - 01-takathur `04-defi` Q3 : « كي لا يختلّ… » donnait une clé à l'amorce unique (« كي ») ; remplacée par « لأنّ دخول نطفتين يُفسد عدد الصبغيّات » (même sens, amorce « لأنّ »).
+  - 03-wiratha quiz Q4 : sa suggestion « من البروتينات وحدها بلا ADN » emploie une notion absente du cours (protéines) ; j'ai plutôt retiré « ADN » de la clé.
+  - 03-al-ibsar `03-boss` Q6 : sa version recréait une paire (0,54) avec quiz Q8 (mêmes quatre étapes) ; options changées en éléments (« مستقبلات الشّبكيّة », « العصب البصريّ »…).
+  - 02-af3al `06` Q4 : options du dormeur chatouillé écrites par moi (les distracteurs b/d plus longs que la clé) ; explication en phrases complètes.
+  - 02-af3al quiz Q1 et 01-takathur `06-defi-concours` Q6 : expl. refaite en phrase complète (« وبلا منبّه لا يحدث أيّ فعل انعكاسيّ »).
+- **Défauts préexistants signalés** : 01-wadhifat quiz Q5 d, 01-takathur `04-defi` Q2 (b/d), 04-hajiyat `04-defi` Q2 b, ADN 03-wiratha — corrigés. Position de la clé : toujours hors mandat.
+- **Laissés (acceptés par l'auditeur)** : 01-takathur `04-defi` Q1 ↔ `06` Q2 ; 03-al-ibsar quiz Q7 ↔ `03-boss` Q1 (0,50) ; 04-hajiyat `01-tamrin` Q1 ↔ `05-tadrib` Q1 et `03-boss` Q5 ↔ `05-tadrib` Q6 ; 03-wiratha `03-boss` Q6 ↔ 07-annales.
+  Notions hors cours (LH / corps jaune, 01-takathur `06` Q1/Q3) : signalées, non traitées (cohérence d'ordre de chapitres).
+
+Vérifications finales : `content:check` 0 erreur ; `qa:strict` 0 erreur (1 avertissement hors périmètre, 07-annales sans domaine) ;
+`tranche` 01-04 : 0/90, 0/99, 0/105, 0/90 en « clé la plus longue » ; paires restantes : 1, 0, 1, 2 (toutes justifiées) ; Prettier `--check` vert.
