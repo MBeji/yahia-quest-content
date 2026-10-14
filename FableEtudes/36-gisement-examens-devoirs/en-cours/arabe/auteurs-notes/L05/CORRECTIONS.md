@@ -28,3 +28,9 @@ Appliquées dans `/home/user/wt-argis/content/arabic/` (générateurs du scratch
 
 ## Contrôles
 content:check vert · content:qa 0 erreur · lot-lint propre · 0 clé strictement la plus longue (caractères bruts) sur mes QCM, tranche 05/12/13/14 à 0 % (01 et 06 : alertes sur du publié) · prettier OK · renderLesson/renderSummary du 06 sans erreur.
+
+## Re-vérification (reverif-arabe-L05.md) — appliqué
+- R-1 : corps de la section du 06/cours.md remplacé mot pour mot (propriete + exemple « حَاوَرَ » + verifie « تَعَارَفَ », sans « الفصل الخامس ») ; ligne du resume.md remplacée. **Écart** : le gate qa (é35 C-2) refuse une section qui s'ouvre sur sa règle ; ajout d'une phrase d'ancrage d'une ligne (question) avant le bloc.
+- R-2 : 06 Q4 option d « حِلْمٌ » + explication. R-3 : 01 Q5 d et 05/08 Q4 d. R-4 : 01 Q2 option d « وَحِيدَتَا… » + explication. R-5 : exemples 12 Q5, 13 Q6, 13 Q7. R-6 : 14 Q2.
+- Mesures : aucune clé ni la plus longue ni la plus courte sur les options remplacées. Résidu hors périmètre : 13 Q4 (فُعَيْلٌ) est la plus courte en caractères bruts seulement (non retouchée, non signalée par l'auditeur).
+- Contrôles : content:check vert, qa 0 erreur, lot-lint propre, prettier OK, tranche 05/12/13/14 à 0 %, renderLesson/renderSummary du 06 : section, exemple, verifie et ligne du résumé présents dans le HTML.
