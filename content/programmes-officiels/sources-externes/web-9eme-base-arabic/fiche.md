@@ -48,8 +48,108 @@ distinct sans jamais voir la source.
 Liste machine des examens (sessions, fichiers officiels, empreintes) : [`gisement.json`](./gisement.json).
 L'URL du fichier d'un devoir reste hors git (la fiche pointe la page de liste).
 
-## 3. Carte — à la lecture
+## 3. Carte et écart — les sujets d'examen 2020–2026 (lus le 2026-10-14)
 
-## 4. Écart avec le contenu existant — à la lecture
+Lu : les **12 sujets** de 2020 à 2026 (C01–C12, filières générale et technique), **118 lignes**,
+tous en vision (scans). Les transcriptions fidèles sont versionnées sous
+[`examens-nationaux/9eme-base/arabic/`](../../examens-nationaux/9eme-base/arabic/) ; les sessions
+2002–2019 (C13–C40) et les devoirs D01–D06 restent à l'état `echantillon`, non lus. Tout ce qui
+suit est dit dans nos mots, depuis les lignes des lecteurs : seules les consignes officielles sont
+nommées, aucun devoir n'y entre.
+
+### 3.1 L'architecture de l'épreuve
+
+| filière, sessions | durée, coefficient | parties (barème) | texte support |
+| --- | --- | --- | --- |
+| générale, format actuel (2023–2026, 4 sujets) | 2 h, coef. 2 | **دراسة نصّ حجاجيّ** (10) = ❖ الفهم وبناء المعنى (4 questions, 4 pts) + ❖ الوعي بنظام اللّغة (6 questions à 1 pt, une leçon du manuel chacune, souvent en deux sous-items) ; **إنتاج نصّ حجاجيّ** (10, environ 25 lignes) | argumentatif (2023, 2025, 2026) ; narratif à visée argumentative (2024) |
+| générale 2020 (format ancien) | 2 h, coef. 2 | « الإنشاء العربي » : un sujet unique de production (dialogue argumentatif), sans texte ni compréhension ni langue | — |
+| technique (2020–2026, 7 sujets) | 1 h, coef. 1 | **الأسئلة** (14 : environ quatre questions de compréhension puis trois de langue) ; **تحرير فقرة** (6, environ 10 lignes) | narratif ou descriptif, jamais argumentatif |
+
+La générale a la même ossature de 2023 à 2026 (la partie de langue s'intitule « اللّغة » en 2024).
+La technique garde la sienne de 2020 à 2026, mais sa langue porte surtout sur des **acquis de
+7ᵉ–8ᵉ** : sur 2023–2026, des 26,5 points de langue, 10 vont à des questions entièrement hors du
+programme de 9ᵉ (`HP` : compléments absolu et de but, pluriels, accord et conjugaison avec les
+pronoms, passif, prépositions) et 9 à des questions mêlées ; en 2020–2022, 8,5 points sur 17 sont `HP`.
+
+### 3.2 Par chapitre du manuel
+
+Une question qui mobilise deux chapitres compte dans chacun ; « questions » = questions notées
+(lignes du lecteur).
+
+| chapitre | générale 2023–26 | technique 2023–26 | technique 2020–22 | étage | ce qu'on y fait faire |
+| --- | --- | --- | --- | --- | --- |
+| `10` فهم وبناء معنى | 16 (4 sur 4 sujets) | 16 (4 sur 4) | 17 (3 sur 3) | d1–d2, d3 rare | synonyme **en contexte** (9 textes sur 11), thèse réfutée ou défendue, structure argumentative, indices (قرائن), titre ou thème (technique), **avis justifié** (11 sur 11) |
+| `09` حجاج وإنتاج | 4 productions + 10 questions de compréhension argumentative | 4 paragraphes + 4 avis | 3 paragraphes + 3 avis | d3–d4 (production), d2 | réfuter, nuancer, blâmer et convaincre ; type d'argument et indicateur ; dialogue argumentatif (2020) |
+| `16` الاستفهام | 5 (4 sur 4) | — | — | d2–d3 | réponse elliptique et **fonction de l'élément omis** ; interrogation négative et sa réponse (بلى) ; question sur un constituant ; interrogatif d'objet |
+| `17` الشّرط | 5 (4 sur 4) | — | — | d2–d3 | introduire un outil jussif et **ajuster la phrase** ; outil **imposé par le sens** (possible, impossible, temps) ; لولا ; condition remise au présent |
+| `05` معاني صيغ الزّيادة | 5 (3 sur 4) | — | 1 | d2–d3 | schème et sens de l'augmentation d'un verbe du texte ; produire une phrase à sens imposé (réciprocité, effort) ; mots de même sens qu'une forme |
+| `18` دلالة الزّمان | 2 | — | 1 | d2 | nature et valeur temporelle d'une particule jointe au verbe ; futur probable ou certain lointain ; négation du futur |
+| `15` العلاقات بين الجمل | 3 (2 sur 4) | — | — | d2–d3 | relever une **incise**, son type, les fonctions qu'elle sépare ; connecteurs de reprise ; connecteur de rectification |
+| `12` المقصور والمنقوص والممدود | 3 (2 sur 4) | — | — | d2–d3 | duel et pluriel **vocalisés** de noms du texte ; nom mamdud dérivé d'un verbe |
+| `13` التّصغير | 2 (2 sur 4) | — | — | d2 | diminutif d'un nom ou d'un adverbe de temps, schème, sens |
+| `14` النّسبة والمصدر الصّناعيّ | 2 (2 sur 4) | — | — | d1–d3 | nom abstrait d'un adjectif ; même mot en nom de relation puis en nom abstrait |
+| `19` العدد والمعدود | 1 (2025) | — | — | d3 | nombres composés **écrits en lettres**, accordés au dénombré |
+| `02` النّواسخ | 1 (2024) | — | — | d3 | auxiliaire verbal remplacé par une particule, cas à ajuster |
+| `04` الأساليب | — | — | 1 (2022) | d2 | formuler un ordre et une interdiction |
+| `03` المفعول فيه والحال | — | 5 | 2 | d2 | fonction d'un groupe ; **enrichir** une phrase d'un état ou d'un complément de temps (toujours mêlé, dans la même consigne, à des compléments `HP`) |
+| `06` المشتقّات (révision) | — | 3 | 1 | d2–d3 | tableau de dérivation vocalisé : participes actif et passif, nom d'action, de verbes simples et augmentés |
+| `01` الإعراب والبناء (révision) | — | 3 | 1 | d3 | passer au duel et accorder (l'accord lui-même est `HP`) |
+| `07`, `08` | — | — | — | — | jamais interrogés directement (un sens de phrase symbolique en 2024, lu comme compréhension) |
+
+**Consignes officielles qui reviennent** : ايتِ بمرادف / صِلْ بالمرادف حسب السّياق ؛ صُغْ بعبارتك
+الأطروحة ؛ حدّد نوع الحجّة ومعنى المؤشّر ؛ قسّم النّصّ وفق بنيته الحجاجيّة ؛ أَبْدِ رأيك وعلّله ؛
+أجب إجابة مختزلة وعيّن وظيفة المحذوف ؛ أدخِلْ / اجعلْ … وغيّر ما يجب تغييره ؛ كوّن جملة شرطيّة ؛
+أكمل تعمير الجدول (مشكولًا) ؛ صُغِ التّصغير ؛ اشتقّ … واستعمله في جملة ؛ أثْرِ / أغْنِ الجملة
+بالمطلوب. Le geste dominant de la langue est **produire ou transformer sur le texte** (vocaliser,
+ajuster l'accord, employer dans une phrase), non reconnaître.
+
+**Pièges qui reviennent** (nos mots) : confondre la thèse avec la thèse adverse, un argument ou la conclusion (2023, 2025, 2026) ;
+avis sans justification argumentée (les 11 textes) ; synonyme hors contexte (9) ; oublier le jussif ou le
+subjonctif après l'outil (4) ; outil de condition contraire au sens demandé (3) ; mauvais traitement
+de l'alif ou de la hamza finale (2) ; confondre sens de la forme augmentée et sens lexical (3) ;
+complément de lieu pris pour un complément de temps (2025) ; inverser les voyelles des deux participes (2).
+
+### 3.3 Écart avec le contenu existant (562 questions, toutes des QCM à réponse unique)
+
+Recherche par archétype dans les questions des chapitres (`exercices/*.json`, état de `main` au
+2026-10-14) :
+
+| archétype d'examen | sujets | questions existantes du chapitre qui le travaillent |
+| --- | --- | --- |
+| synonyme **en contexte** d'un mot d'un texte (10) | 9 sur 11 | 4 sur 36, aucune sur un texte officiel |
+| découper un texte selon sa structure argumentative (10) | 1 | 3, sans appariement ni mise en ordre |
+| avis justifié (10) | 11 sur 11 | présent (le mot « رأي » dans 19 sur 36) |
+| analyser la consigne d'une production, planifier le texte (09) | 12 sur 12 | **0** sur 29 |
+| nuancer (تعديل) une position, par opposition à réfuter (09) | 1 | **0** |
+| réponse elliptique et fonction de l'élément omis (16) | 2 | **0** au chapitre 16 (l'ellipse n'est traitée qu'au 15) |
+| لولا et corrélation (17) | 1 | **0** (« لو » : 11) |
+| écrire un nombre en lettres, accord du composé (19) | 1 | **0** de production ; la reconnaissance du composé est dense (19 sur 30) |
+| duel et pluriel vocalisés de maqsur et mamdud (12) | 2 | présent (8 et 12 sur 30) |
+| diminutif et sens de proximité d'un adverbe de temps (13) | 2 | présent (6) |
+| particule et valeur temporelle (18) | 3 | « سوف » 2, « لن » 5 : mince |
+| incise et fonctions qu'elle sépare (15) | 1 | 3 |
+| enrichir une phrase d'un complément de temps (03) | 5 | 10 sur le complément de temps, mais aucune consigne d'enrichissement |
+| tableau de dérivation avec le nom d'action (06) | 4 | 5 sur le nom d'action |
+| appariement, mise en ordre, plusieurs réponses | consignes « صِلْ », « قسّم », « اختر ثلاث » | **0** : aucun type natif autre que le QCM dans toute la matière |
+
+**Les trous réels** : (1) la **production** n'a aucune préparation sur une consigne d'examen —
+les 29 questions du chapitre 09 travaillent la notion, jamais l'analyse d'un sujet ; (2) le
+**synonyme en contexte** et l'**avis justifié**, présents dans presque chaque texte, ne sont jamais
+travaillés sur un texte officiel ; (3) la **réponse elliptique** du chapitre 16 et l'**écriture des
+nombres** du 19 ; (4) les consignes de **transformation** (« غيّر ما يجب تغييره ») se réduisent
+partout à un choix entre phrases déjà écrites. **Pas des trous** : la reconnaissance des schèmes
+(05 : 24 questions sur 30), du diminutif, du maqsur et du mamdud, du complément de temps et de
+l'état, déjà travaillés à d2–d4 en quantité supérieure aux sujets.
+
+## 4. Plan — les sujets deviennent des missions
+
+Plan écrit le 2026-10-14 (règles, lots, écarts : `FableEtudes/36-gisement-examens-devoirs/en-cours/arabe/PLAN.md`) :
+**32 missions** à l'état `planifiee` dans [`gisement.json`](./gisement.json), en cinq lots —
+11 de compréhension (une par texte, chapitre 10), 7 de production convertie (chapitre 09),
+14 de langue (au chapitre de la notion, questions de plusieurs sessions regroupées). Treize
+questions entièrement `HP` ne sont pas placées.
+
+**Contrôle local de cette fiche** (`content:gisement:controle` contre les 12 transcriptions) :
+0 plage de 8 mots, 0 de 6 mots ; les seules données communes sont des années et le « 256 » de SHA-256 (en-têtes), sans objet.
 
 ## 5. Mesures — à la lecture
