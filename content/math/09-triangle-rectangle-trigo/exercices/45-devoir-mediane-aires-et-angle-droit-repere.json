@@ -1,0 +1,184 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: موسّط الوتر، مقارنة مساحتين، ومربّعات المسافات في المعلّم",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 45,
+  "questions": [
+    {
+      "prompt": "المثلّث DEF قائم في D، و M منتصف وتره [EF]، و EF = 36 cm. ما طول الموسّط [DM] بالسنتيمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "72"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "36",
+          "misconceptionTag": "math.geo.mediane-hypotenuse-demi"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المثلّث القائم الموسّط الصادر من رأس الزاوية القائمة يساوي نصف الوتر: DM = EF / 2 = 36 / 2 = 18 ✓. الخطأ الشائع: إعطاء الوتر نفسه دون القسمة على 2؛ أو مضاعفته بدل قسمته؛ أو أخذ ثلثه كأنّ M مركز ثقل.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "المثلّث DEF قائم في D، و M منتصف وتره [EF]، ونعلم بالسنتيمتر أنّ:\nDE = 7\nDM = 12,5\nما طول الضلع [DF] بالسنتيمتر ؟\n<svg viewBox=\"0 0 310 170\"><title>مثلّث DEF القائم في D وموسّطه DM</title><polygon points=\"30,60 30,130 270,60\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M 30 69 L 39 69 L 39 60\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"30\" y1=\"60\" x2=\"150\" y2=\"95\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M 87 117 L 93 107 M 207 83 L 213 73\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"0\"/><line x1=\"88.32\" y1=\"106.74\" x2=\"91.68\" y2=\"118.26\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"208.32\" y1=\"71.74\" x2=\"211.68\" y2=\"83.26\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"60\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"30\" cy=\"130\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"270\" cy=\"60\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"95\" r=\"3.5\" fill=\"#d97706\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"18\" y=\"54\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"18\" y=\"146\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"282\" y=\"56\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"160\" y=\"114\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "24"
+        },
+        {
+          "id": "b",
+          "text": "25"
+        },
+        {
+          "id": "c",
+          "text": "√674",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "18",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الموسّط [DM] يساوي نصف الوتر، فـ EF = 2 × 12,5 = 25. بنظرية فيثاغورس في DEF القائم في D: DF² = EF² − DE² = 625 − 49 = 576، إذن DF = 24 ✓. الخطأ الشائع: طرح الطولين دون تربيعهما، 25 − 7 = 18؛ أو جمع المربّعين، 625 + 49، كأنّ [DF] هو الوتر؛ أو التوقّف عند طول الوتر 25.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "المثلّث XYZ قائم في X، ونعلم بالسنتيمتر أنّ:\nXY = 21\nXZ = 72\nما طول الوتر [YZ] بالسنتيمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "93",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "5625",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "√4743",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "75"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "بنظرية فيثاغورس في المثلّث XYZ القائم في X: YZ² = XY² + XZ² = 441 + 5184 = 5625، إذن YZ = √5625 = 75 ✓. الخطأ الشائع: جمع الطولين دون تربيعهما فيخرج 93؛ أو التوقّف عند YZ² = 5625؛ أو طرح المربّعين كأنّ [XZ] هو الوتر فيخرج √4743.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "المثلّث DEF قائم في D وفيه DE = 7 و DF = 24، والمثلّث XYZ قائم في X وفيه XY = 21 و XZ = 72. ما نسبة مساحة XYZ إلى مساحة DEF ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "misconceptionTag": "math.mes.echelle-aire-rapport-non-carre"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "1/9"
+        },
+        {
+          "id": "d",
+          "text": "1/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مساحة DEF هي (7 × 24)/2 = 84، ومساحة XYZ هي (21 × 72)/2 = 756. النسبة 756 ÷ 84 = 9 ✓. فكلّ ضلع قائم في XYZ هو ثلاثة أضعاف نظيره في DEF، والمساحة نصف جداء طولين فتُضرب في 3 × 3 = 9. الخطأ الشائع: إعطاء النسبة 3، وهي نسبة الأطوال ونسبة المحيطين، كأنّها نسبة المساحتين؛ أو قلب النسبة فيخرج 1/9 أو 1/3.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "في معلّم متعامد ومتجانس (O, I, J) وحدة الطول فيه السنتيمتر، نعلم أنّ:\nA(−2 ; −2)\nC(9 ; −4)\nما طول القطعة [AC] بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 215\"><title>معلّم متعامد ومتجانس والنقطتان A و C</title><line x1=\"0\" y1=\"200\" x2=\"0\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"200\" x2=\"20\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"200\" x2=\"40\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"200\" x2=\"60\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"200\" x2=\"80\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"200\" x2=\"100\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"200\" x2=\"120\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"200\" x2=\"140\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"200\" x2=\"160\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"200\" x2=\"180\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"200\" y1=\"200\" x2=\"200\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"200\" x2=\"220\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"240\" y1=\"200\" x2=\"240\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"200\" x2=\"260\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"280\" y1=\"200\" x2=\"280\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"200\" x2=\"280\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"180\" x2=\"280\" y2=\"180\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"160\" x2=\"280\" y2=\"160\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"140\" x2=\"280\" y2=\"140\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"120\" x2=\"280\" y2=\"120\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"100\" x2=\"280\" y2=\"100\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"80\" x2=\"280\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"60\" x2=\"280\" y2=\"60\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"40\" x2=\"280\" y2=\"40\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"20\" x2=\"280\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"100\" x2=\"286\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"200\" x2=\"80\" y2=\"14\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"96\" x2=\"100\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"80\" x2=\"84\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"140\" x2=\"260\" y2=\"180\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"40\" cy=\"140\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"260\" cy=\"180\" r=\"4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"71\" y=\"115\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">O</text><text x=\"100\" y=\"117\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">I</text><text x=\"70\" y=\"84\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">J</text><text x=\"28\" y=\"156\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">A</text><text x=\"272\" y=\"196\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5√5"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "125",
+          "misconceptionTag": "math.vec.distance-sans-racine"
+        },
+        {
+          "id": "d",
+          "text": "√85"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مسافة بين نقطتين: AC² = (9 − (−2))² + (−4 − (−2))² = 11² + (−2)² = 121 + 4 = 125. إذن AC = √125 = √(25 × 5) = 5√5 ✓. الخطأ الشائع: التوقّف عند AC² = 125 دون الجذر؛ أو جمع الفرقين 11 و 2 دون تربيعهما فيخرج 13؛ أو جمع الإحداثيّات بدل طرحها، 7² + 6² = 85.",
+      "difficulty": 3,
+      "competencies": [
+        "math.vec.repere-calculs"
+      ]
+    },
+    {
+      "prompt": "في معلّم متعامد ومتجانس (O, I, J) وحدة الطول فيه السنتيمتر، نعلم أنّ:\nA(−2 ; −2)\nB(1 ; 2)\nC(9 ; −4)\nأيّ الاستدلالات التالية صحيح ؟\n<svg viewBox=\"0 0 300 215\"><title>معلّم متعامد ومتجانس والنقاط A و B و C</title><line x1=\"0\" y1=\"200\" x2=\"0\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"200\" x2=\"20\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"200\" x2=\"40\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"200\" x2=\"60\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"200\" x2=\"80\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"200\" x2=\"100\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"200\" x2=\"120\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"200\" x2=\"140\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"200\" x2=\"160\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"200\" x2=\"180\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"200\" y1=\"200\" x2=\"200\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"200\" x2=\"220\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"240\" y1=\"200\" x2=\"240\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"200\" x2=\"260\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"280\" y1=\"200\" x2=\"280\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"200\" x2=\"280\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"180\" x2=\"280\" y2=\"180\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"160\" x2=\"280\" y2=\"160\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"140\" x2=\"280\" y2=\"140\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"120\" x2=\"280\" y2=\"120\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"100\" x2=\"280\" y2=\"100\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"80\" x2=\"280\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"60\" x2=\"280\" y2=\"60\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"40\" x2=\"280\" y2=\"40\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"20\" x2=\"280\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"0\" y1=\"100\" x2=\"286\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"200\" x2=\"80\" y2=\"14\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"96\" x2=\"100\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"76\" y1=\"80\" x2=\"84\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"140\" x2=\"100\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"100\" y1=\"60\" x2=\"260\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"140\" x2=\"260\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"40\" cy=\"140\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"100\" cy=\"60\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"260\" cy=\"180\" r=\"4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"71\" y=\"115\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">O</text><text x=\"100\" y=\"117\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">I</text><text x=\"70\" y=\"84\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">J</text><text x=\"28\" y=\"156\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">A</text><text x=\"98\" y=\"50\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">B</text><text x=\"272\" y=\"196\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB² + AC² ≠ BC²، إذن المثلّث ABC ليس قائمًا",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "AB + BC ≠ AC، إذن المثلّث ABC ليس قائمًا",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "AB² + BC² = AC²، إذن المثلّث ABC قائم في B"
+        },
+        {
+          "id": "d",
+          "text": "AB² + BC² = AC²، إذن المثلّث ABC قائم في A",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب مربّعات الأضلاع بقاعدة المسافة: AB² = (1 + 2)² + (2 + 2)² = 9 + 16 = 25، و BC² = (9 − 1)² + (−4 − 2)² = 64 + 36 = 100، و AC² = (9 + 2)² + (−4 + 2)² = 121 + 4 = 125. أطول ضلع هو [AC] لأنّ مربّعه 125 هو الأكبر، و AB² + BC² = 25 + 100 = 125 = AC². المساواة محقّقة، فبعكس نظرية فيثاغورس المثلّث قائم، وزاويته القائمة مقابلة للوتر [AC]، أي في الرأس B ✓. الخطأ الشائع: وضع الزاوية القائمة في الرأس A؛ أو مقارنة مجموع مربّعين يدخل فيهما الوتر مع مربّع ضلع قصير، AB² + AC² = 150 وهو يخالف BC²؛ أو جمع الأطوال دون تربيعها، 5 + 10 = 15 وهو يخالف AC.",
+      "difficulty": 3,
+      "competencies": [
+        "math.vec.repere-calculs",
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}

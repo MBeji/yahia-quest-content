@@ -1,0 +1,214 @@
+{
+  "title": "⭐⭐ تمرين موجّه: الفرق بين مربّعين، مناظرات في المعلّم، وأطوال في مكعّب",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 42,
+  "questions": [
+    {
+      "prompt": "العدد D معرَّف كما يلي:\nD = 37² − 33²\nأيّ كتابة تعطي D بعد التعميل ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(37 − 33)(37² + 33²)"
+        },
+        {
+          "id": "b",
+          "text": "(37 − 33)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "c",
+          "text": "(37 − 33)(37 + 33)"
+        },
+        {
+          "id": "d",
+          "text": "(37 + 33)²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "هذا فرق بين مربّعين، ومتطابقته: a² − b² = (a − b)(a + b) مع a = 37 و b = 33. إذن D = (37 − 33)(37 + 33) ✓. الخطأ الشائع: كتابة الفرق بين مربّعين على شكل مربّع فرق (37 − 33)²، فيغيب العامل (37 + 33)؛ أو على شكل مربّع مجموع، وهو يضيف جداءً مضاعفًا لا وجود له في D؛ أو وضع مجموع المربّعين مكان المجموع في العامل الثاني.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.criteres-divisibilite",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "العدد D معرَّف كما يلي:\nD = 37² − 33²\nأيّ عدد من الأعداد التالية يقسم D ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "28"
+        },
+        {
+          "id": "b",
+          "text": "30",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "c",
+          "text": "42",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب D = 37² − 33² = 1369 − 1089 = 280، ثمّ نفكّكه إلى عوامل أوّلية: 280 = 2³ × 5 × 7. العدد 28 يساوي 2² × 7 وعاملاه موجودان في التفكيك، فهو قاسم لـ D ✓. أمّا 30 = 2 × 3 × 5 و 42 = 2 × 3 × 7 فكلّ منهما يحتاج العامل 3 وهو غائب، و 16 = 2⁴ يحتاج أربعة عوامل 2 بينما في D ثلاثة فقط. الخطأ الشائع: التحقّق من بعض العوامل فقط، كأن نرى 2 و 5 في 30 أو 2 و 7 في 42 ونحكم بالقسمة دون السؤال عن العامل 3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "في معلّم متعامد ومتجانس (O, I, J) نعلم أنّ:\nA(−9 ; 12)\nالنقطة B مناظرة A بالنسبة إلى محور الفواصل (OI).\nما إحداثيّتا B ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(9 ; −12)"
+        },
+        {
+          "id": "b",
+          "text": "(9 ; 12)",
+          "misconceptionTag": "math.vec.symetrie-regle-confondue"
+        },
+        {
+          "id": "c",
+          "text": "(−12 ; −9)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        },
+        {
+          "id": "d",
+          "text": "(−9 ; −12)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "محور الفواصل (OI) هو المحور الأفقي. المناظرة بالنسبة إليه تُبقي الفاصلة وتغيّر إشارة الترتيبة فقط: (x ; y) ↦ (x ; −y)، إذن B(−9 ; −12) ✓. الخطأ الشائع: تغيير إشارة الفاصلة بدل الترتيبة، وهي قاعدة المحور (OJ)، فيخرج (9 ; 12)؛ أو تغيير الإشارتين معًا، وهو يعطي مناظرة بالنسبة إلى المبدإ O؛ أو تبديل مكان الإحداثيّتين، وهو خطأ في كتابة الزوج.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "prompt": "وحدة الطول في معلّم متعامد ومتجانس هي السنتيمتر، ونعلم أنّ:\nA(−9 ; 12)\nالنقطة C مناظرة A بالنسبة إلى محور التراتيب (OJ). ما طول القطعة [AC] بالسنتيمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "24",
+          "misconceptionTag": "math.vec.symetrie-regle-confondue"
+        },
+        {
+          "id": "d",
+          "text": "30",
+          "misconceptionTag": "math.vec.symetrie-regle-confondue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المناظرة بالنسبة إلى محور التراتيب (OJ) تُبقي الترتيبة وتغيّر إشارة الفاصلة فقط، فـ C(9 ; 12). للنقطتين A و C الترتيبة نفسها 12، فالقطعة [AC] أفقيّة وطولها فرق الفاصلتين: AC = 9 − (−9) = 18 ✓. الخطأ الشائع: الخلط بين المحورين فيخرج 24؛ أو تغيير الإشارتين معًا كأنّها مناظرة بالنسبة إلى المبدإ O فيخرج 30؛ أو أخذ المسافة OA بدل AC، وهي 15.",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH مكعّب طول حرفه 7 cm، والمثلّث ABC قائم في B.\nما طول القطر [AC] للوجه ABCD بالسنتيمتر ؟\n<svg viewBox=\"0 0 234 210\"><title>مكعّب ABCDEFGH مع القطرين AC و AG</title><polygon points=\"34,176 144,176 144,66 34,66\" fill=\"#0f6e56\" fill-opacity=\"0.08\" stroke=\"none\"/><line x1=\"34\" y1=\"176\" x2=\"84\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"84\" y1=\"140\" x2=\"194\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"84\" y1=\"140\" x2=\"84\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"34\" y1=\"176\" x2=\"144\" y2=\"176\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"176\" x2=\"194\" y2=\"140\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"194\" y1=\"140\" x2=\"194\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"176\" x2=\"34\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"176\" x2=\"144\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"66\" x2=\"144\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"66\" x2=\"194\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"194\" y1=\"30\" x2=\"84\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"66\" x2=\"84\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"176\" x2=\"194\" y2=\"140\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"194\" y1=\"140\" x2=\"194\" y2=\"30\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"176\" x2=\"194\" y2=\"30\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"34\" cy=\"176\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"144\" cy=\"176\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"194\" cy=\"140\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"84\" cy=\"140\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"34\" cy=\"66\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"144\" cy=\"66\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"194\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"84\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"23\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"156\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"207\" y=\"145\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"81\" y=\"131\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"23\" y=\"61\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"156\" y=\"61\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"207\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"81\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "98",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "7√2"
+        },
+        {
+          "id": "d",
+          "text": "49√2",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّث ABC قائم في B وضلعاه القائمان AB = BC = 7. بنظرية فيثاغورس: AC² = AB² + BC² = 49 + 49 = 98، إذن AC = √98 = √(49 × 2) = 7√2 ✓. الخطأ الشائع: جمع الطولين دون تربيعهما فيخرج 14؛ أو التوقّف عند AC² = 98؛ أو إخراج العدد 49 من الجذر دون أخذ جذره، فيُكتب √98 = 49√2 وهو خطأ.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في المكعّب ABCDEFGH ذي الحرف 7 cm نعلم أنّ المثلّث ACG قائم في C، وأنّ:\nAC = 7√2\nCG = 7\nما طول القطر [AG] للمكعّب بالسنتيمتر ؟\n<svg viewBox=\"0 0 234 210\"><title>مكعّب ABCDEFGH مع القطرين AC و AG</title><polygon points=\"34,176 144,176 144,66 34,66\" fill=\"#0f6e56\" fill-opacity=\"0.08\" stroke=\"none\"/><line x1=\"34\" y1=\"176\" x2=\"84\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"84\" y1=\"140\" x2=\"194\" y2=\"140\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"84\" y1=\"140\" x2=\"84\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"34\" y1=\"176\" x2=\"144\" y2=\"176\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"176\" x2=\"194\" y2=\"140\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"194\" y1=\"140\" x2=\"194\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"176\" x2=\"34\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"176\" x2=\"144\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"66\" x2=\"144\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"66\" x2=\"194\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"194\" y1=\"30\" x2=\"84\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"66\" x2=\"84\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"176\" x2=\"194\" y2=\"140\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"194\" y1=\"140\" x2=\"194\" y2=\"30\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"176\" x2=\"194\" y2=\"30\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"34\" cy=\"176\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"144\" cy=\"176\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"194\" cy=\"140\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"84\" cy=\"140\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"34\" cy=\"66\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"144\" cy=\"66\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"194\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"84\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"23\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"156\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"207\" y=\"145\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"81\" y=\"131\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"23\" y=\"61\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"156\" y=\"61\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"207\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"81\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "7√3"
+        },
+        {
+          "id": "b",
+          "text": "7√2 + 7",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "147",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "7",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الوتر في المثلّث ACG القائم في C هو [AG]. بنظرية فيثاغورس: AG² = AC² + CG² = 98 + 49 = 147، إذن AG = √147 = √(49 × 3) = 7√3 ✓. الخطأ الشائع: اعتبار [AC] هو الوتر فتُطرح المربّعات، 98 − 49 = 49 فيخرج 7؛ أو جمع الطولين دون تربيعهما؛ أو التوقّف عند AG² = 147.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "في المكعّب ABCDEFGH نعلم أنّ:\nAG = 7√3\nCG = 7\nما قيمة النسبة التالية مكتوبةً دون جذر في المقام ؟\nCG / AG",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3",
+          "misconceptionTag": "math.num.rationalisation-denominateur-oublie"
+        },
+        {
+          "id": "b",
+          "text": "1/3"
+        },
+        {
+          "id": "c",
+          "text": "1/√3"
+        },
+        {
+          "id": "d",
+          "text": "√3/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "CG / AG = 7 / (7√3) = 1/√3. للتخلّص من الجذر في المقام نضرب البسط والمقام في √3: (1 × √3) / (√3 × √3) = √3/3 ✓. الخطأ الشائع: ترك الكسر 1/√3 كما هو وفي مقامه جذر؛ أو الضرب في √3 دون القسمة على المقام الجديد 3 فيخرج √3؛ أو حذف الجذر كلّيًّا فيخرج 1/3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}
