@@ -11,3 +11,7 @@
 ## Points relevés en lisant (à vérifier par l'auditeur)
 - cours ch.10 range « قد » dans la famille التوكيد (tableau des مؤشّرات) alors que le ch.18 l'enseigne comme احتمال avec le présent ; 07 Q6 suit le ch.18 et le dit dans l'énoncé du contexte (« قد » + مضارع).
 - 2026 G Q3 : le type de l'argument « ابن الرومي » n'est pas tranché par le cours (سلطة, شاهد d'un مرجع أدبي, retenu ; تاريخيّة et واقعيّة en distracteurs).
+
+## Fin (2026-10-14)
+- 6 missions écrites (07–12, 43 questions), sources[] ajoutée au chapter.json. check/qa/tranche/lot-lint/prettier verts ; rendu rtl Chromium fait (aperçu).
+- Reste à l'auditeur : voir rapport final.
