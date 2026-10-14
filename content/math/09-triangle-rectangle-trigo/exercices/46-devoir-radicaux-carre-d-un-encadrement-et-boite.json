@@ -1,0 +1,183 @@
+{
+  "title": "⭐⭐ تمرين موجّه: جذور، مربّع حصر، وأطوال في علبة",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 46,
+  "questions": [
+    {
+      "prompt": "ما ناتج الحساب التالي في أبسط شكل ؟\n√48 + √12",
+      "options": [
+        {
+          "id": "a",
+          "text": "8√3"
+        },
+        {
+          "id": "b",
+          "text": "24"
+        },
+        {
+          "id": "c",
+          "text": "√60",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "d",
+          "text": "6√3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نخرج أكبر مربّع كامل من كلّ جذر: √48 = √(16 × 3) = 4√3، و √12 = √(4 × 3) = 2√3. الجذران متشابهان فنجمع المعاملين: 4√3 + 2√3 = 6√3 ✓. الخطأ الشائع: جمع ما تحت الجذرين، √48 + √12 = √60، وهذه القاعدة لا تصحّ إلّا مع الجداء. وضرب المعاملين 4 × 2 = 8 مع الإبقاء على √3 يعطي 8√3، وهو خلط بين الجمع والضرب؛ وضرب الجذرين √48 × √12 = √576 = 24 يحسب الجداء لا المجموع.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما قيمة الجداء التالي ؟\n(2√5 − 3)(2√5 + 3)",
+      "options": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "17",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        },
+        {
+          "id": "c",
+          "text": "29",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "d",
+          "text": "4√5 − 9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "هذا جداء مرافقين: (a − b)(a + b) = a² − b² مع a = 2√5 و b = 3. إذن (2√5)² − 3² = 20 − 9 = 11 ✓. الخطأ الشائع: جمع المربّعين بدل طرحهما فيخرج 29؛ أو عدم تربيع الحدّ الثاني فيخرج 17؛ أو ضرب 2√5 في نفسه على أنّه 4√5.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "x عدد حقيقي يحقّق:\nx < −2\nأيّ المتراجحات التالية صحيحة بالضرورة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² > 16"
+        },
+        {
+          "id": "b",
+          "text": "x² < 4",
+          "misconceptionTag": "math.num.carre-conserve-l-ordre"
+        },
+        {
+          "id": "c",
+          "text": "x² > 4"
+        },
+        {
+          "id": "d",
+          "text": "x² < 16"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد x سالب وأبعد عن الصفر من −2، وعلى الأعداد السالبة يقلب التربيع الترتيب: من x < −2 < 0 نستنتج x² > (−2)² = 4 ✓. فمثلًا x = −3 يعطي x² = 9، وهو أكبر من 4 وأصغر من 16، وx = −10 يعطي 100 وهو أكبر من 16. الخطأ الشائع: تربيع طرفي المتراجحة مع الاحتفاظ بالاتّجاه نفسه فيخرج x² < 4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "x عدد حقيقي يحقّق:\n−2 < x < 3\nنميّز حالتين:\n−2 < x < 0\n0 ≤ x < 3\nأيّ حصر للعدد x² صحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2 < x² < 3"
+        },
+        {
+          "id": "b",
+          "text": "0 ≤ x² < 9"
+        },
+        {
+          "id": "c",
+          "text": "4 < x² < 9",
+          "misconceptionTag": "math.num.carre-conserve-l-ordre"
+        },
+        {
+          "id": "d",
+          "text": "0 ≤ x² < 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في الحالة الأولى −2 < x < 0 العددان سالبان، والتربيع يقلب ترتيب السالبين: 0 < x² < 4. وفي الحالة الثانية 0 ≤ x < 3 العددان موجبان، والتربيع يحفظ ترتيب الموجبين: 0 ≤ x² < 9. العدد x² يقع في إحدى الحالتين، وكلتاهما داخل الحصر 0 ≤ x² < 9، إذن 0 ≤ x² < 9 ✓، والقيمة 0 تُبلَغ عند x = 0. الخطأ الشائع: تربيع حدّي الحصر مباشرة فيخرج 4 < x² < 9 مع أنّ x = 0 مسموح به؛ أو الاكتفاء بالحالة الأولى فيخرج 0 ≤ x² < 4 مع أنّ x = 2,5 يعطي 6,25؛ أو نقل حدّي الحصر كما هما إلى x² فيخرج −2 < x² < 3، وهو مستحيل لأنّ المربّع لا يكون سالبًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH علبة على شكل متوازي مستطيلات، قاعدتها ABCD مربّعة، والمثلّث ABC قائم في B والمثلّث ACG قائم في C. بتطبيق نظرية فيثاغورس مرّتين، أيّ عبارة تعطي AG² ؟\n<svg viewBox=\"0 0 254 246\"><title>علبة ABCDEFGH قاعدتها مربّعة</title><polygon points=\"34,212 154,212 154,72 34,72\" fill=\"#0f6e56\" fill-opacity=\"0.08\" stroke=\"none\"/><line x1=\"34\" y1=\"212\" x2=\"94\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"94\" y1=\"170\" x2=\"214\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"94\" y1=\"170\" x2=\"94\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"34\" y1=\"212\" x2=\"154\" y2=\"212\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"154\" y1=\"212\" x2=\"214\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"214\" y1=\"170\" x2=\"214\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"212\" x2=\"34\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"154\" y1=\"212\" x2=\"154\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"72\" x2=\"154\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"154\" y1=\"72\" x2=\"214\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"214\" y1=\"30\" x2=\"94\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"72\" x2=\"94\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"212\" x2=\"214\" y2=\"170\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214\" y1=\"170\" x2=\"214\" y2=\"30\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"212\" x2=\"214\" y2=\"30\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"34\" cy=\"212\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"154\" cy=\"212\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"214\" cy=\"170\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"94\" cy=\"170\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"34\" cy=\"72\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"154\" cy=\"72\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"214\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"94\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"23\" y=\"228\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"166\" y=\"228\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"227\" y=\"175\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"106\" y=\"161\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"23\" y=\"67\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"143\" y=\"64\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"227\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"91\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB² + BC² − CG²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "(AB + BC + CG)²",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "AB² + CG²",
+          "misconceptionTag": "math.esp.diagonale-du-pave-en-deux-dimensions"
+        },
+        {
+          "id": "d",
+          "text": "AB² + BC² + CG²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلّث ABC القائم في B: AC² = AB² + BC². وفي المثلّث ACG القائم في C ووتره [AG]: AG² = AC² + CG². بالتعويض: AG² = AB² + BC² + CG² ✓. الخطأ الشائع: استعمال بعدين فقط، AB² + CG²، وهو يهمل البعد الثالث؛ أو طرح المربّعات كأنّ [AG] ضلع قائم؛ أو تربيع مجموع الأطوال.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABCDEFGH علبة على شكل متوازي مستطيلات قاعدتها ABCD مربّعة، والمثلّث ABC قائم في B والمثلّث ACG قائم في C. نعلم بالسنتيمتر أنّ:\nAB = 6\nBC = 6\nCG = 7\nما طول القطر [AG] بالسنتيمتر ؟\n<svg viewBox=\"0 0 254 246\"><title>علبة ABCDEFGH قاعدتها مربّعة</title><polygon points=\"34,212 154,212 154,72 34,72\" fill=\"#0f6e56\" fill-opacity=\"0.08\" stroke=\"none\"/><line x1=\"34\" y1=\"212\" x2=\"94\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"94\" y1=\"170\" x2=\"214\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"94\" y1=\"170\" x2=\"94\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"34\" y1=\"212\" x2=\"154\" y2=\"212\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"154\" y1=\"212\" x2=\"214\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"214\" y1=\"170\" x2=\"214\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"212\" x2=\"34\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"154\" y1=\"212\" x2=\"154\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"72\" x2=\"154\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"154\" y1=\"72\" x2=\"214\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"214\" y1=\"30\" x2=\"94\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"72\" x2=\"94\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"212\" x2=\"214\" y2=\"170\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214\" y1=\"170\" x2=\"214\" y2=\"30\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"34\" y1=\"212\" x2=\"214\" y2=\"30\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"34\" cy=\"212\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"154\" cy=\"212\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"214\" cy=\"170\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"94\" cy=\"170\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"34\" cy=\"72\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"154\" cy=\"72\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"214\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"94\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"23\" y=\"228\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"166\" y=\"228\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"227\" y=\"175\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"106\" y=\"161\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"23\" y=\"67\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"143\" y=\"64\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"227\" y=\"24\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"91\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "19",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "121",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "√85",
+          "misconceptionTag": "math.esp.diagonale-du-pave-en-deux-dimensions"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "AC² = AB² + BC² = 36 + 36 = 72، ثمّ AG² = AC² + CG² = 72 + 49 = 121، إذن AG = √121 = 11 ✓. الخطأ الشائع: استعمال بعدين فقط، 36 + 49 = 85 فيخرج √85؛ أو جمع الأبعاد الثلاثة دون تربيعها فيخرج 19؛ أو التوقّف عند AG² = 121.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}

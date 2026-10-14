@@ -1,0 +1,213 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: مربّعات الأضلاع ثمّ مركز ثقل ومساحة",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 44,
+  "questions": [
+    {
+      "prompt": "أطوال أضلاع المثلّث ABC بالسنتيمتر:\nAB = 27\nAC = 36\nBC = 45\nأيّ الاستدلالات التالية صحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB + AC = 27 + 36 = 63، وهو يخالف BC، إذن المثلّث ليس قائمًا",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "AB² + AC² = 729 + 1296 = 2025 = BC²، إذن المثلّث قائم في A"
+        },
+        {
+          "id": "c",
+          "text": "AB² + AC² = 729 + 1296 = 2025 = BC²، إذن المثلّث قائم في B",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "d",
+          "text": "AB² + BC² = 729 + 2025 = 2754، وهو يخالف AC²، إذن المثلّث ليس قائمًا",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في عكس نظرية فيثاغورس نقارن مربّع أطول ضلع بمجموع مربّعي الضلعين الآخرين. أطول ضلع هو [BC]: AB² + AC² = 729 + 1296 = 2025 و BC² = 2025، فالمساواة محقّقة والمثلّث قائم ✓. والزاوية القائمة تقابل الوتر [BC]، فهي إذن في الرأس A المقابل له. الخطأ الشائع: وضع الزاوية القائمة في أحد طرفي الوتر؛ أو مقارنة مربّع ضلع قصير مع مجموع مربّعين يدخل فيهما الوتر؛ أو جمع الأطوال دون تربيعها.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A، والنقطة H المسقط العمودي للنقطة A على (BC)، ونعلم بالسنتيمتر أنّ:\nAB = 27\nAC = 36\nBC = 45\nما طول الارتفاع [AH] بالسنتيمتر ؟\n<svg viewBox=\"0 0 330 230\"><title>مثلّث ABC القائم في A</title><polygon points=\"117.2,70.4 20,200 290,200\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"117.2\" y1=\"70.4\" x2=\"117.2\" y2=\"200\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M 111.8 77.6 L 119 83 L 124.4 75.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 109.2 200 L 109.2 192 L 117.2 192\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><circle cx=\"117.2\" cy=\"70.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"20\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"290\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"117.2\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"113.2\" y=\"59.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"14\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"301\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"117.2\" y=\"219\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "43,2"
+        },
+        {
+          "id": "b",
+          "text": "60",
+          "misconceptionTag": "math.geo.relation-aire-mauvais-cote"
+        },
+        {
+          "id": "c",
+          "text": "972"
+        },
+        {
+          "id": "d",
+          "text": "21,6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نحسب مساحة المثلّث ABC بطريقتين: (AH × BC)/2 و (AB × AC)/2. إذن AH × BC = AB × AC، أي AH × 45 = 27 × 36 = 972، ومنه AH = 972 ÷ 45 = 21,6 ✓. الخطأ الشائع: ضرب الارتفاع في ضلع قائم بدل الوتر، AH × AB = AC × BC، فيخرج 60؛ أو التوقّف عند الجداء 972 دون القسمة؛ أو نسيان القسمة على 2 في أحد الطرفين، (AH × BC)/2 = AB × AC، فيخرج 43,2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A، و AB = 27 و AC = 36 بالسنتيمتر. ما مساحة المثلّث ABC بالسنتيمتر المربّع ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "486"
+        },
+        {
+          "id": "b",
+          "text": "607,5"
+        },
+        {
+          "id": "c",
+          "text": "810"
+        },
+        {
+          "id": "d",
+          "text": "972",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في المثلّث القائم يمكن أخذ أحد الضلعين القائمين قاعدةً والآخر ارتفاعًا: S = (AB × AC)/2 = (27 × 36)/2 = 486 ✓. الخطأ الشائع: نسيان القسمة على 2 فيخرج 972؛ أو أخذ الوتر قاعدةً مع ضلع قائم ارتفاعًا، وهما غير متعامدين، فيخرج 810 أو 607,5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A، و K منتصف وتره [BC]، ونعلم بالسنتيمتر أنّ:\nAB = 27\nAC = 36\nBC = 45\nما طول الموسّط [AK] بالسنتيمتر ؟\n<svg viewBox=\"0 0 330 230\"><title>مثلّث ABC القائم في A</title><polygon points=\"117.2,70.4 20,200 290,200\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"117.2\" y1=\"70.4\" x2=\"117.2\" y2=\"200\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M 111.8 77.6 L 119 83 L 124.4 75.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 109.2 200 L 109.2 192 L 117.2 192\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><line x1=\"117.2\" y1=\"70.4\" x2=\"155\" y2=\"200\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"155\" cy=\"200\" r=\"3.5\" fill=\"#d97706\"/><circle cx=\"117.2\" cy=\"70.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"20\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"290\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"117.2\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"113.2\" y=\"59.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"14\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"301\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"117.2\" y=\"219\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"157\" y=\"219\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "11,25"
+        },
+        {
+          "id": "b",
+          "text": "21,6",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "c",
+          "text": "22,5"
+        },
+        {
+          "id": "d",
+          "text": "45",
+          "misconceptionTag": "math.geo.mediane-hypotenuse-demi"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المثلّث القائم الموسّط الصادر من رأس الزاوية القائمة يساوي نصف الوتر: AK = BC / 2 = 45 / 2 = 22,5 ✓. الخطأ الشائع: خلط الموسّط بالارتفاع الصادر من الرأس نفسه، وهما قطعتان مختلفتان لأنّ الارتفاع لا يصل إلى المنتصف؛ أو نسيان القسمة على 2؛ أو القسمة على 2 مرّتين فيخرج 11,25.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A، و BC = 45 cm، و K منتصف [BC]، و G مركز ثقل المثلّث ABC. ما طول القطعة [AG] بالسنتيمتر ؟\n<svg viewBox=\"0 0 330 230\"><title>مثلّث ABC القائم في A</title><polygon points=\"117.2,70.4 20,200 290,200\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"117.2\" y1=\"70.4\" x2=\"117.2\" y2=\"200\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M 111.8 77.6 L 119 83 L 124.4 75.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 109.2 200 L 109.2 192 L 117.2 192\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><line x1=\"117.2\" y1=\"70.4\" x2=\"155\" y2=\"200\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"155\" cy=\"200\" r=\"3.5\" fill=\"#d97706\"/><circle cx=\"117.2\" cy=\"70.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"20\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"290\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"117.2\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"113.2\" y=\"59.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"14\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"301\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"117.2\" y=\"219\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"157\" y=\"219\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "11,25",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "33,75"
+        },
+        {
+          "id": "d",
+          "text": "7,5",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الموسّط [AK] الصادر من رأس الزاوية القائمة يساوي نصف الوتر: AK = 22,5. ومركز الثقل G يقع على [AK] عند ثلثيه انطلاقًا من الرأس A: AG = (2/3) × 22,5 = 15 ✓، وبقية الموسّط GK = 7,5. الخطأ الشائع: وضع G في منتصف الموسّط فيخرج 11,25؛ أو عدّ الثلث من الرأس A بدل منتصف الضلع فيخرج 7,5؛ أو استعمال النسبة 3/2 بدل 2/3 فيخرج 33,75.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A، و AH ارتفاعه، و K منتصف [BC]، و G مركز ثقله، و L المسقط العمودي للنقطة G على (BC)، والمستقيمان (GL) و (AH) متوازيان. نعلم بالسنتيمتر أنّ:\nAH = 21,6\nBC = 45\nما طول GL بالسنتيمتر ؟\n<svg viewBox=\"0 0 330 230\"><title>مثلّث ABC القائم في A</title><polygon points=\"117.2,70.4 20,200 290,200\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"117.2\" y1=\"70.4\" x2=\"117.2\" y2=\"200\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M 111.8 77.6 L 119 83 L 124.4 75.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 109.2 200 L 109.2 192 L 117.2 192\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><line x1=\"117.2\" y1=\"70.4\" x2=\"155\" y2=\"200\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"155\" cy=\"200\" r=\"3.5\" fill=\"#d97706\"/><circle cx=\"142.4\" cy=\"156.8\" r=\"4.5\" fill=\"#d97706\"/><line x1=\"142.4\" y1=\"156.8\" x2=\"142.4\" y2=\"200\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"142.4\" cy=\"200\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"117.2\" cy=\"70.4\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"20\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"290\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"117.2\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"113.2\" y=\"59.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"14\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"301\" y=\"219\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"117.2\" y=\"219\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text><text x=\"157\" y=\"219\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">K</text><text x=\"154.4\" y=\"152.8\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"15\">G</text><text x=\"138\" y=\"219\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"14\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,5"
+        },
+        {
+          "id": "b",
+          "text": "10,8",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "14,4",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "d",
+          "text": "7,2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "النقاط K و G و A على استقامة واحدة، والنقاط K و L و H على (BC)، و (GL) ∥ (AH). بنظرية طاليس في المثلّث KAH: GL/AH = KG/KA. ومركز الثقل يجعل KG ثلث الموسّط KA، فـ GL = AH/3 = 21,6 ÷ 3 = 7,2 ✓. الخطأ الشائع: استعمال النسبة 2/3 المأخوذة من الرأس A بدل 1/3 المأخوذة من منتصف الضلع فيخرج 14,4؛ أو وضع G في منتصف الموسّط فيخرج 10,8؛ أو أخذ GL مساويًا القطعة المائلة GK، وهي ثلث الموسّط 22,5، فيخرج 7,5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث قائم في A و BC = 45 cm، و K منتصف [BC]، و G مركز ثقله، و L المسقط العمودي للنقطة G على (BC)، ونعلم أنّ GL = 7,2 cm. ما مساحة المثلّث GBC بالسنتيمتر المربّع ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "162"
+        },
+        {
+          "id": "b",
+          "text": "168,75"
+        },
+        {
+          "id": "c",
+          "text": "324",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        },
+        {
+          "id": "d",
+          "text": "337,5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مساحة مثلّث هي نصف جداء قاعدته في ارتفاعه، والارتفاع الموافق للقاعدة [BC] هو GL العمودي عليها: S = (BC × GL)/2 = (45 × 7,2)/2 = 162 ✓. الخطأ الشائع: نسيان القسمة على 2 فيخرج 324؛ أو أخذ القطعة المائلة GK، وهي ثلث الموسّط 22,5 أي 7,5، مكان الارتفاع GL فيخرج 168,75، ومع نسيان القسمة على 2 أيضًا 337,5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}

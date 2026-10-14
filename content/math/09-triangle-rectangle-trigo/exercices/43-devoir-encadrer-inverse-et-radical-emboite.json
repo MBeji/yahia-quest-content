@@ -1,0 +1,241 @@
+{
+  "title": "👑 تحدّي الفرض ⭐⭐⭐⭐: حصر وعلاقات قياسية وجذر متداخل في مثلّث قائم",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 43,
+  "questions": [
+    {
+      "prompt": "ABC مثلّث قائم في A، و H المسقط العمودي للنقطة A على القطعة [BC]. نعلم بالسنتيمتر أنّ:\nBH = 9 + 2√14\nCH = 9 − 2√14\nما طول الارتفاع [AH] بالسنتيمتر ؟\n<svg viewBox=\"0 0 330 175\"><title>مثلّث ABC القائم في A وارتفاعه AH</title><polygon points=\"276.4,72.2 20,150 300,150\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"276.4\" y1=\"72.2\" x2=\"276.4\" y2=\"150\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M 267.8 74.8 L 270.4 83.4 L 279 80.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 268.4 150 L 268.4 142 L 276.4 142\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><circle cx=\"276.4\" cy=\"72.2\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"20\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"300\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"276.4\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"272.4\" y=\"61\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"14\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"314\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"272.4\" y=\"169\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "√137",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "25",
+          "misconceptionTag": "math.geo.relation-hauteur-racine-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "3√2",
+          "misconceptionTag": "math.geo.relation-hauteur-somme-au-lieu-de-produit"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "علاقة الارتفاع في المثلّث القائم: AH² = BH × CH. إذن AH² = (9 + 2√14)(9 − 2√14) = 81 − 56 = 25، لأنّ (2√14)² = 4 × 14 = 56، ومنه AH = √25 = 5 ✓. الخطأ الشائع: جمع القطعتين بدل ضربهما، AH² = 18 فيخرج √18 = 3√2؛ أو جمع المربّعين في جداء المرافقين، 81 + 56 = 137 فيخرج √137؛ أو التوقّف عند AH² = 25 دون أخذ الجذر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العدد √14 محصور كما يلي:\n3 < √14 < 4\nأيّ حصر للعدد BH = 9 + 2√14 صحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "27 < BH < 41"
+        },
+        {
+          "id": "b",
+          "text": "11 < BH < 12",
+          "misconceptionTag": "math.num.racine-distribuee-sur-somme"
+        },
+        {
+          "id": "c",
+          "text": "15 < BH < 17"
+        },
+        {
+          "id": "d",
+          "text": "12 < BH < 13"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نضرب أطراف الحصر في 2 الموجب فلا يتغيّر الترتيب: 6 < 2√14 < 8. ثمّ نضيف 9 إلى الأطراف الثلاثة، والإضافة لا تغيّر الترتيب: 9 + 6 < 9 + 2√14 < 9 + 8، أي 15 < BH < 17 ✓. الخطأ الشائع: نسيان المعامل 2 فيُضاف 9 إلى حصر √14 وحده، فيخرج 12 < BH < 13؛ أو تربيع الحدّين، 9 + 2 × 9 و 9 + 2 × 16، فيخرج 27 < BH < 41؛ أو إدخال 9 و 2√14 تحت جذر واحد، √81 + √56 كأنّه √137، والجذر لا يُجمع هكذا، فيُحصر √137 بين 11 و 12.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\nBH = 9 + 2√14\n3 < √14 < 4\nBH × CH = 25\nأيّ حصر للطول CH صحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "5/3 < CH < 25/17",
+          "misconceptionTag": "math.num.inverse-conserve-l-ordre"
+        },
+        {
+          "id": "b",
+          "text": "375 < CH < 425"
+        },
+        {
+          "id": "c",
+          "text": "8 < CH < 10"
+        },
+        {
+          "id": "d",
+          "text": "25/17 < CH < 5/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نحصر BH أوّلًا: من 3 < √14 < 4 نجد 6 < 2√14 < 8 ثمّ 15 < BH < 17. ومن BH × CH = 25 نكتب CH = 25 / BH. المرور إلى المقلوب يقلب الترتيب بين عددين موجبين: 1/17 < 1/BH < 1/15. نضرب الأطراف في 25 الموجب فلا يتغيّر الترتيب: 25/17 < CH < 25/15، أي 25/17 < CH < 5/3 ✓. الخطأ الشائع: الحفاظ على الترتيب نفسه عند المقلوب، فيُكتب 5/3 < CH < 25/17 وهو مجال فارغ لأنّ 5/3 أكبر من 25/17؛ أو ضرب الحدّين في 25 دون قسمة فيخرج 375 < CH < 425؛ أو طرح BH من 25 فيخرج 8 < CH < 10.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC القائم في A، والنقطة H المسقط العمودي للنقطة A على [BC]، نعلم بالسنتيمتر أنّ:\nAH = 5\nBH = 9 + 2√14\nما قيمة AB² ؟\n<svg viewBox=\"0 0 330 175\"><title>مثلّث ABC القائم في A وارتفاعه AH</title><polygon points=\"276.4,72.2 20,150 300,150\" fill=\"#0f6e56\" fill-opacity=\"0.09\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"276.4\" y1=\"72.2\" x2=\"276.4\" y2=\"150\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M 267.8 74.8 L 270.4 83.4 L 279 80.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 268.4 150 L 268.4 142 L 276.4 142\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\"/><circle cx=\"276.4\" cy=\"72.2\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"20\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"300\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"276.4\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"272.4\" y=\"61\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"14\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"314\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"272.4\" y=\"169\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "162",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "162 + 36√14"
+        },
+        {
+          "id": "c",
+          "text": "112"
+        },
+        {
+          "id": "d",
+          "text": "112 + 36√14",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث AHB قائم في H ووتره [AB]. بنظرية فيثاغورس: AB² = AH² + BH² = 25 + (9 + 2√14)² = 25 + 81 + 36√14 + 56 = 162 + 36√14 ✓. الخطأ الشائع: اعتبار [BH] هو الوتر فتُطرح المربّعات، 137 + 36√14 − 25، فيخرج 112 + 36√14؛ أو نسيان الجداء المضاعف عند نشر مربّع المجموع فيخرج 162؛ أو الخطآن معًا فيخرج 112.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ:\nAB² = 162 + 36√14\nأيّ العبارات التالية تساوي AB دون جذر متداخل ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "9 + 2√14"
+        },
+        {
+          "id": "b",
+          "text": "18 + √14"
+        },
+        {
+          "id": "c",
+          "text": "2 + 9√14"
+        },
+        {
+          "id": "d",
+          "text": "6 + 3√14"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نبحث عن عبارة a + b√14 مربّعها a² + 14b² + 2ab√14، فيلزم 2ab = 36 و a² + 14b² = 162. نتحقّق بالتربيع: (6 + 3√14)² = 36 + 36√14 + 126 = 162 + 36√14 ✓، والعدد 6 + 3√14 موجب فهو AB. أمّا العبارات الأخرى فتحقّق 2ab = 36 دون الشرط الثاني: (9 + 2√14)² = 137 + 36√14، و (18 + √14)² = 338 + 36√14، و (2 + 9√14)² = 1138 + 36√14. الخطأ الشائع: الاكتفاء بالجداء المضاعف 36√14 دون التحقّق من الحدّ الناطق 162؛ ومنه اعتبار AB = BH مع أنّ الوتر [AB] أطول من الضلع [BH] في المثلّث AHB.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC القائم في A نعلم أنّ:\nAC² = 162 − 36√14\nما طول AC بالسنتيمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√14 − 6"
+        },
+        {
+          "id": "b",
+          "text": "9 − 2√14"
+        },
+        {
+          "id": "c",
+          "text": "6 − 3√14",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "d",
+          "text": "9√14 − 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نلاحظ أنّ (3√14 − 6)² = 126 − 36√14 + 36 = 162 − 36√14 ✓، وكذلك (6 − 3√14)² يعطي العدد نفسه. الجذر التربيعي لمربّع عدد هو قيمته المطلقة: AC = |6 − 3√14|. وبما أنّ (3√14)² = 126 أكبر من 6² = 36 فإنّ 3√14 > 6، والعدد 6 − 3√14 سالب، إذن AC = 3√14 − 6 ✓. الخطأ الشائع: كتابة √(a²) = a دون اختبار الإشارة فيخرج عدد سالب لا يصلح طولًا؛ أو الاكتفاء بالجداء المضاعف 36√14 دون التحقّق من الحدّ الناطق، فـ (9 − 2√14)² = 137 − 36√14 و (9√14 − 2)² = 1138 − 36√14.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعلم بالسنتيمتر أنّ:\nAB = 3√14 + 6\nAC = 3√14 − 6\nما قيمة الجداء AB × AC ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "162",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "90"
+        },
+        {
+          "id": "d",
+          "text": "120",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "هذا جداء مرافقين: (a + b)(a − b) = a² − b² مع a = 3√14 و b = 6. إذن AB × AC = (3√14)² − 6² = 126 − 36 = 90 ✓. الخطأ الشائع: جمع المربّعين بدل طرحهما فيخرج 162؛ أو عدم تربيع الحدّ الثاني فيخرج 126 − 6 = 120؛ أو تربيع الجذر وحده كأنّه 3 × 14 فيخرج 42 − 36 = 6.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "في المثلّث ABC القائم في A، والنقطة H المسقط العمودي للنقطة A على القطعة [BC]، نعلم بالسنتيمتر أنّ:\nAB = 3√14 + 6\nAC = 3√14 − 6\nBH = 9 + 2√14\nCH = 9 − 2√14\nما محيط المثلّث ABC بالسنتيمتر ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "6√14"
+        },
+        {
+          "id": "b",
+          "text": "18 + 6√14"
+        },
+        {
+          "id": "c",
+          "text": "30 + 6√14"
+        },
+        {
+          "id": "d",
+          "text": "24√14"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "H تقع على القطعة [BC] فـ BC = BH + CH = (9 + 2√14) + (9 − 2√14) = 18. المحيط هو AB + AC + BC = (3√14 + 6) + (3√14 − 6) + 18 = 6√14 + 18 ✓، فالحدّان 6 و −6 يتلاشيان. الخطأ الشائع: نسيان الضلع BC فيخرج 6√14؛ أو أخذ الضلع AC مساويًا AB فيخرج 30 + 6√14؛ أو جمع 18 و 6√14 كأنّهما حدّان متشابهان فيخرج 24√14.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.relations-metriques",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}
