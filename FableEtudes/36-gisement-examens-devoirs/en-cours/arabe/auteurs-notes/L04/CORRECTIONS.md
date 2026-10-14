@@ -26,3 +26,9 @@ Tour de corrections d'après `audit-arabe-L04.md` et les décisions du pilote (2
 - 18 Q1 (M-14) APPLIQUÉ : fin d'explication remplacée (plus de « سَوْفَ » ni « لَنْ » nommés : clés de Q2 et Q4).
 - 18 Q2 (m-6) APPLIQUÉ : « وتنصب المضارع بعدها («يَزِيدَ») » retiré de l'explication (touchait Q3). Fuite « لَنْ = عدم الوقوع » de Q1 supprimée par M-14 ; l'appariement lui-même est inchangé.
 - 18 Q3 (M-15a) APPLIQUÉ côté cours seulement, item inchangé : voir la ligne cours ci-dessous.
+- 18 cours.md + resume.md (M-15a, décision pilote 2) APPLIQUÉ : une ligne « > 🗡️ » sous le tableau لم/لمّا/لن (nasb après « لن », chute de la nûn devant واو الجماعة / ألف الاثنين / ياء المخاطَبة, « السين وسوف » n'agissent pas) et une phrase au résumé. Le manuel 101908 n'ayant pas de leçon sur ce point (aucune occurrence dans les notes de lecture), phrasing du patron de la leçon, sans le terme « الأفعال الخمسة » absent du manuel.
+- 03 Q4 (M-16) APPLIQUÉ : « وَقَدْ ابْتَسَمَ » → « وَقَدِ ابْتَسَمَ » et « وَكَانَ قَدْ ابْتَسَمَ » → « وَكَانَ قَدِ ابْتَسَمَ » (options a, b) ; explication réécrite sans « قبيل / قبل » (clé de Q9).
+- 03 Q2 (m-7) APPLIQUÉ : « المركّبات » → « الكلمات » (mots seuls) ; d2→d1 comme le suggère l'audit (indice « سيقع في المستقبل » conservé : c'est la consigne officielle).
+- 03 Q9 (m-8) APPLIQUÉ : d3→d2 (lecture directe du tableau du cours).
+- 03 Q7 (M-17) APPLIQUÉ : SUPPRIMÉE (doublon de 03/06-defi-concours Q4, décision pilote 1 ; 2025 reste représentée par Q2). Mission : 9 → 8 questions.
+- 03 cours.md + resume.md (M-15b, décision pilote 2) APPLIQUÉ : une ligne « > 🗡️ » sous le bloc définition de « الحال » (حال مفردة منصوبة, accord en genre avec son صاحب) et une phrase au résumé (puce « الحال غير المنقضية المزامنة »). Phrasing du patron ; 03 Q3 inchangée.
