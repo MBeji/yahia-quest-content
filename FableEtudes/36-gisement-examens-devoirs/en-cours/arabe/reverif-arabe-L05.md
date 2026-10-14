@@ -168,3 +168,12 @@ Q1 — les cinq verbes — transportée à tort sur le nom ; longueurs 28, 44, 2
 - **Écarts de l'auteur :** 1 à 4 acceptés ; 5 refusé en partie (R-4 en donne un texte qui lève l'objection).
 - **Rendu :** propre (Chromium `dir=rtl`).
 - **Verdict :** à fusionner après R-1 ; les mineurs peuvent passer dans la même retouche.
+
+## Suite donnée par le pilote (2026-10-14)
+
+R-1 à R-6 et ligne du résumé appliqués mot pour mot par l'auteur. Écart accepté : ancrage de deux
+paragraphes (« سَاعَدَ ») avant le bloc `propriete`, exigé par le gate qa (é35 C-2) ; « سَاعَدَ »/« مُسَاعَدَة »
+n'apparaissent dans aucune mission des ch. 05–06 (grep). Tranche 01, 05, 06, 12–14 : aucune clé
+strictement la plus longue dans les missions d'examen ; les 36/84 du 01+06 sont la dette des missions
+publiées (patron), hors lot. Paire 0,45 01/07#3 ↔ 06/07#9 (seuil) : même savoir-faire, autres données,
+gardée. **L05 prêt à livrer.**
