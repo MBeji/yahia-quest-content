@@ -36,3 +36,30 @@
 - HP : l'exercice 4 (8 points) est entièrement HP:genetique (hors des 14 chapitres actuels), balisé dans la transcription par la mention « [hors programme en vigueur : ... ] ». Programme du document : « ancien (notions HP dominantes) » au sens des 8 points sur 20 ; les 12 points de la première partie restent en vigueur.
 - Exactitude : QCM 4 « الإخصاب » (au lieu d'« الإلقاح ») avec deux propositions presque équivalentes (« قمع فالوب » et « الثلث العلوي لقناة البيض ») : clé ambiguë ; terme d'époque.
 - Transcription : 2008-generale.md (le registre indique filière « generale » ; le document n'en porte pas la mention) ; lignes C17.tsv (4) ; officiel/C17.md ; snapshot C17.txt.
+
+## C18 (2007) — lu en vision, 4 pages, bonne lisibilité
+- Épreuve « العلوم الطبيعية » ; en-tête page 1, cadres d'identification page 2 ; première partie 12 points (3 x 4, intitulés « السؤال »), seconde partie 8 points (bloc de trois questions) : exercice 4.
+- Ex. 1 tableau « unité structurale » du poumon, du rein et de l'intestin avec fonctions et facteurs favorables aux échanges (la cellule « unité structurale » de l'intestin est laissée vide à l'impression) ; ex. 2 organes et fonctions (testicule, ovaire, nerf optique, nerf sciatique, cœur) ; ex. 3 réflexe de retrait du pied et sensation douloureuse ; ex. 4 digestion de l'amidon par la salive (tubes avec liqueur de Fehling), rédaction et hypothèse sur la salive d'une autre personne.
+- Aucun HP stricto sensu. Exactitude : ex. 2 les « deux fonctions » de la gonade (production des gamètes et des hormones) : la fonction hormonale est approchée par le chapitre 10, à vérifier avant reprise (HP partiel possible : hormones sexuelles) ; ex. 4 q.3 (salive contenant déjà du sucre réducteur) hypothèse ouverte (« salive d'une personne ayant mangé »).
+- Transcription : 2007-generale.md ; lignes C18.tsv (4) ; officiel/C18.md ; snapshot C18.txt.
+
+## C19 (2006) — lu en vision, 4 pages, bonne lisibilité
+- Épreuve « العلوم الطبيعية », sans pagination imprimée ; première partie 12 points (3 x 4, « السؤال »), seconde partie 8 points (un bloc de trois questions) : exercice 4.
+- Ex. 1 QCM (aliments non digestibles, sécrétion du néphron, composition du plasma, carence en vitamine D) ; ex. 2 appareil respiratoire et cœur (8 repères), adaptations de l'alvéole, sens du sang dans les veines ; ex. 3 quatre stades de la fécondation (globules polaires), lieu de fécondation, destin de l'œuf, contraception ; ex. 4 GÉNÉTIQUE : croisements de souris (noir x blanc), dominance, génotypes, gamètes, échiquier.
+- HP : l'exercice 4 (8 points) est HP:genetique ; transcrit avec la mention de hors programme.
+- Correction à la relecture : lors de la première transcription, le poumon ouvert (arbre bronchique) a été placé à droite du dessin ; l'image montre qu'il est à gauche. Corrigé dans 2006-generale.md.
+- Exactitude : QCM 1 « الأغذية التي لا تقبل الهضم » (l'eau, les vitamines et les sels minéraux ne sont pas digérés) ; QCM 2 « يفرز النيفرون » : plusieurs propositions défendables (urée / ammoniac / acide urique), la clé dépend du programme d'époque ; la fécondation décrite avec « الكرية القطبية الأولى » et « الثانية » : notions de globules polaires absentes du manuel actuel (HP partiel : ovogenèse détaillée).
+- Transcription : 2006-generale.md ; lignes C19.tsv (4) ; officiel/C19.md ; snapshot C19.txt.
+
+## C20 (2005) — lu en vision, 8 pages, lisibilité partielle (basse résolution)
+- Le PDF compte 8 pages (le registre en annonçait 4) : pages 1 à 4 = sujet vierge, pages 5 à 8 = copie annotée du même sujet avec corrigé et barème manuscrits (cercles de points en marge). Seul le sujet imprimé est transcrit dans le fichier versionné ; le corrigé manuscrit est résumé uniquement dans le snapshot local (hors git), pour vérifier mes lignes. Le champ `pages` du registre (4) est donc à corriger en 8.
+- Épreuve « العلوم الطبيعية » ; première partie 12 points (3 x 4, « السؤال »), seconde partie 8 points (bloc de trois questions) : exercice 4. Pagination imprimée « 4\3 », « 4\4 » en pied de pages 3 et 4 (la 1 et la 2 sans pagination).
+- Ex. 1 phrases à compléter avec propositions (8 items : veines pulmonaires, centre visuel, cristallin, nombre de chromosomes, absorption lymphatique des acides gras, vitamines, réabsorption du glucose) ; ex. 2 trois unités fonctionnelles (alvéole, neurone, néphron) ; ex. 3 frottis sanguin ; ex. 4 muscle/cœur/respiration : repos et effort, marche à vitesse croissante, rédaction avec mots-clés.
+- HP : un seul item (ex. 1 q4, nombre de chromosomes des cellules sexuelles : HP:chromosomes), balisé dans la transcription ; le reste est en vigueur.
+- Exactitude : « الصبغيات » désigne les chromosomes ; ex. 4 : unités mixtes (« ملّلتر » par minute et litres par heure) à normaliser avant toute reprise ; les Documents 3 et 4 portent sur deux sportifs différents (pas de contradiction).
+- Transcription : 2005-generale.md ; lignes C20.tsv (4) ; officiel/C20.md ; snapshot C20.txt.
+
+## Bilan C13-C20
+- 8 documents lus, 8 sha256 conformes au registre, 8 transcriptions versionnées (2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005), 8 jeux de lignes, 8 méta, 8 officiel/<id>.md, 8 snapshots.
+- Aucun document introuvable. C16 à C20 : PDF recomposés ou de basse résolution, bandeau du site de diffusion sur C16 et C17 ; C20 = 8 pages au lieu de 4.
+- C17 (2008) et C19 (2006) : exercice 4 (8 points) entièrement HP:genetique ; C20 : un item HP:chromosomes.
