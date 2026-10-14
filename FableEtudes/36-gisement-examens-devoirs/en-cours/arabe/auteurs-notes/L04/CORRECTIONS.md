@@ -22,7 +22,7 @@ Tour de corrections d'après `audit-arabe-L04.md` et les décisions du pilote (2
 - 17 Q6 (m-5) APPLIQUÉ : demi-phrase sur la kasra ajoutée à l'explication.
 - 17 Q8 (M-13) APPLIQUÉ : SUPPRIMÉE (hors examen, doublon de 17/01-pratique Q2, décision pilote 1). Mission : 8 → 7 questions.
 - 17 Q4 (étiquettes a, d) : déjà muettes. Aucune des 6 familles proposées dans etiquettes-L04.json n'est créée ni posée.
-- 18 Q5 (C-1) APPLIQUÉ : clé d→a (لام الأمر + طلب). Vérifié par moi dans 2026 générale : le texte porte « فَلْنَطْمَئِنَّ » (§ dernier) et la question officielle isole « لِـنَطْمئنَّ » en tête de phrase indépendante. Explication de l'audit reprise. Étiquettes : a aucune, b et c = arabe.zaman.harf-ma3na-khalt (décision pilote : c ajoutée), d muette. Aucune famille neuve créée. Longueurs 41/43/43/45 : clé non la plus longue.
+- 18 Q5 (C-1) APPLIQUÉ : clé d→a (لام الأمر + طلب). Vérifié par moi dans 2026 générale : le texte porte « فَلْنَطْمَئِنَّ » (§ dernier) et la question officielle isole « لِـنَطْمئنَّ » en tête de phrase indépendante. Explication de l'audit reprise. Étiquettes : a aucune, b et c = arabe.zaman.harf-ma3na-khalt (décision pilote : c ajoutée), d muette. Aucune famille neuve créée. Longueurs 46/48/45/47 : clé non la plus longue.
 - 18 Q1 (M-14) APPLIQUÉ : fin d'explication remplacée (plus de « سَوْفَ » ni « لَنْ » nommés : clés de Q2 et Q4).
 - 18 Q2 (m-6) APPLIQUÉ : « وتنصب المضارع بعدها («يَزِيدَ») » retiré de l'explication (touchait Q3). Fuite « لَنْ = عدم الوقوع » de Q1 supprimée par M-14 ; l'appariement lui-même est inchangé.
 - 18 Q3 (M-15a) APPLIQUÉ côté cours seulement, item inchangé : voir la ligne cours ci-dessous.
@@ -32,3 +32,10 @@ Tour de corrections d'après `audit-arabe-L04.md` et les décisions du pilote (2
 - 03 Q9 (m-8) APPLIQUÉ : d3→d2 (lecture directe du tableau du cours).
 - 03 Q7 (M-17) APPLIQUÉ : SUPPRIMÉE (doublon de 03/06-defi-concours Q4, décision pilote 1 ; 2025 reste représentée par Q2). Mission : 9 → 8 questions.
 - 03 cours.md + resume.md (M-15b, décision pilote 2) APPLIQUÉ : une ligne « > 🗡️ » sous le bloc définition de « الحال » (حال مفردة منصوبة, accord en genre avec son صاحب) et une phrase au résumé (puce « الحال غير المنقضية المزامنة »). Phrasing du patron ; 03 Q3 inchangée.
+- 19 Q6 (M-21, m-10) APPLIQUÉ : d→« تِسْعَةَ عَشَرَ مَهَارَاتٍ » (muette), explication de l'audit ; « ( …… ) » retiré de l'énoncé (inversion bidi). Grille 2×2 nombre × معدود : chaque forme deux fois ; longueurs 39/38/38/39 pour Q5... (voir ligne Q5) ; Q6 : 37/38/37/38, clé c non strictement la plus longue.
+- 19 Q5 (M-20) APPLIQUÉ : c (« خُبَرَاءَ ») → « بِثَلَاثَةِ عَشَرَ خَبِيرٍ » (muette), fin d'explication de l'audit ; grille 2×2 cas du 1er élément × cas du معدود. Le jeu de tags passe de 2 à 1 option étiquetée de ce type (b garde hukm-al-ma3dud-khalt, a murakkab-mazji-i3rab). Prémisse « تقول الشركة » : phrase de patron déclarée (pas officielle), inchangée.
+- 19 Q3 (m-10) APPLIQUÉ : « ( …… ) » retiré de l'énoncé. Item gardé tel quel pour le reste (décision pilote 3, phrase officielle).
+- 19 Q2 (M-18) APPLIQUÉ : l'énoncé n'affiche plus « تِسْعَةَ عَشَرَ تَخَصُّصًا » (clé de Q1). m-11 (distracteur d « مفعول به ثانٍ ») : sans action (mineur, l'audit ne donne pas de remplacement ; Q2 d est écarté par le texte de l'explication).
+- 19 Q1 (M-22) APPLIQUÉ : fin d'explication remplacée (plus de « صورة المؤنّث », qui livrait la clé de Q6). Item gardé (décision pilote 3).
+- 19 Q4 (M-19) APPLIQUÉ : SUPPRIMÉE (doublon de gabarit de 19/02-boss Q1, résout Q6, décision pilote 1). Mission : 6 → 5 questions.
+- 15 Q1 / Q4 ÉCART (resserrage de longueur) : le contrôle tranche a relevé 2 clés strictement les plus longues. Q1 : a et c deviennent « … والثّاني مبتدأٌ جديدٌ » (longueurs 40/37/39/38, clé 38) ; Q4 : option c allongée en « … لا تكون إلّا اسميّةً لا فعليّةً » (59/52/67/62, clé 62). Les votes de termes restent équilibrés.
