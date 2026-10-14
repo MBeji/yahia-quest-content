@@ -17,3 +17,6 @@
 ## Fin (2026-10-14)
 - Les 7 missions sont écrites (12/06, 05/07, 05/08, 13/06, 14/06, 06/07, 01/07), `sources[]` posée sur les 6 chapter.json. content:check vert, qa 0 erreur, lot-lint vide, tranche : 0 clé strictement la plus longue, rendu rtl sans formule brouillée, prettier OK.
 - Adaptations : 06 Q4 (حَلَمَ → اسم الفاعل à la place du nom d'action samāʿī) ; 05/08 Q5 production « اشتقّ + employer » réduite à la dérivation ; 05/07 Q3 (« حمل » → تحمّل) sans le volet « phrase » ; 13 Q5 sens du diminutif posé sur « بُعَيْدَ » ; 14 Q6 règle d'inna donnée dans l'énoncé ; 01 Q3 règle des cinq verbes donnée dans l'énoncé.
+
+## Exception (pilote, 2026-10-14)
+06/07 garde les items de مصدر du verbe augmenté (enseigné au 05) ; rappel ajouté au cours et au résumé du 06. Détail : CORRECTIONS.md.
