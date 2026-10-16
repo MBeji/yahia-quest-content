@@ -18,3 +18,12 @@ Générateurs : /tmp/claude-0/fr-gis/L01/m001..m006.py.
 5. m005 « côte à côte » : citation sans l'appel de note ² (« studieuses² années »).
 6. m004 Frank = entraîneur : déduit (camarades nommés Charly, Théo, Loïc ; l'entraîneur est le seul à annoncer le stage).
 7. m006 Q3 : infirmier (déjà cité au 08/04 Q5 et 08/01) : suivi de l'audit, geste différent (raison vs description).
+
+## Suite (reverif-francais-L01.md)
+- m002 Q7 : nouvel énoncé et options du rapport (salaire / fatigue / équilibre-harmonie / promotion).
+- m003 Q1 b, d : « Je fixais cette porte » à la place de « Il faut sauver le gardien ! » ; Q2 e : « la chaleur était devenue insupportable » ; explications ajustées. Q6 : l'explication cite « Ils ont éteint l'incendie, puis ils ont emmené Yves ».
+- m004 Q5 (Frank) supprimée : 6 questions.
+- m006 Q3 : thème agriculteur, options du rapport.
+- 09/05 Q2 : option a « Un camion s'est renversé à Kairouan, chauffeur indemne. ».
+- Écart : m006 Q7 (conclusion, pas citée au rapport) : la clé était strictement la plus courte (82 car.) ; elle devient « …précieux pour moi comme pour les autres. » (88, entre 84 et 92).
+- Remesure : aucune clé strictement la plus longue ni la plus courte dans 05 et 06-11. Gates : check vert, qa:strict 0, tranche 0/67, lot-lint rien.

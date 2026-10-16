@@ -123,3 +123,9 @@ indemne."` (55 ; b 52, c 57, d 55). Optionnel.
 - **Écarts de l'auteur** : 1, 2 et 3 acceptés ; 4 : supprimer la question ; 5 : refusé, nouveau texte agriculteur.
 - **Verdict : à corriger, puis prêt.** Il ne reste que des correctifs de texte, sans nouvel audit complet ; un
   contrôle rapide des cinq points suffit.
+
+## Suite donnée par le pilote (2026-10-16)
+
+Les 5 majeurs et le mineur optionnel (09/05 Q2) appliqués mot pour mot par l'auteur ; écart accepté : m006 Q7,
+clé de conclusion allongée (82 → 88 car.) pour ne plus être strictement la plus courte, sens inchangé. Gates verts
+(`content:check`, `qa:strict` 0 erreur, tranche 09 : 0/67). **L01 prêt à livrer.**
