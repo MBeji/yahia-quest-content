@@ -166,3 +166,8 @@ du corpus, sans lien avec ce lot. Les ajouts de l'auteur, sans traits bas, y éc
   rien d'exploitable sur les huit autres ; 7, aucune clé livrée.
 - **Verdict : bon pour merge après les mineurs.** Ce sont des retouches de texte, sans re-résolution
   nécessaire : relancer `content:tranche` suffit.
+
+## Suite donnée par le pilote (2026-10-16)
+
+M-1 à M-5 appliqués mot pour mot ; fichiers m008 et m010 renommés (`git mv`) et `fichier` du registre mis à jour ;
+gates verts (`qa:strict` 0 erreur ; paire 02/06 Q1/Q2 à 0,76 justifiée comme parallèle voulu). **L02 prêt à livrer.**
