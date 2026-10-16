@@ -9,7 +9,7 @@ Lot : C07 2023 générale, C08 2023 technique, C09 2022 générale, C10 2022 tec
 
 ## Conventions propres au français (à reprendre par les autres lots)
 - **Texte support** : page 1 de chaque sujet, transcrit en tête sous `## Texte` (chapeau en italique, notes numérotées par exposants Unicode, source), puis `## Exercice 1 — Compréhension`, `## Exercice 2 — Langue`, `## Exercice 3 — Production écrite`, avec le barème de la partie dans le titre. Le texte n'est pas noté : il n'a pas de ligne.
-- **Lignes** : une ligne par **question notée** (compréhension et langue), une ligne pour la **production**. `n°exo` = `partie.question` (`1.3` = compréhension, question 3 ; `2.2` = langue, question 2 ; `3` = production). Barème en points avec un point décimal (`1.5`), sous-questions a/b fusionnées dans la ligne de leur question.
+- **Lignes (réécrites sur le § 0 de `JOURNAL-lecture-C01-C06.md`, validateur)** : compréhension = UNE ligne (n°exo 1, chapitre 09 seul, étapes = nombre de questions) ; langue = une ligne par question imprimée, n°exo = rang (2, 3, 4…) ; production = une ligne, la dernière ; barème entier. La convention initiale `partie.question` est abandonnée.
 - **Chapitres** : toute la compréhension, y compris le relevé d'indices, va à `09-comprehension-production-ecrite` ; production écrite à `08-types-de-textes-et-production-ecrite` (+ `04-discours-direct-et-indirect` quand le sujet impose de rapporter un dialogue). `10-annales-sujets-types` jamais employé. Pas de registre de compétences : colonne `-`.
 - **Mot-nombre** : le contrôle SVT interdit aussi « deux », « trois », « quatre »… dans archétype et piège ; reformulé en « des », « plusieurs ».
 - **Cases et lignes** : case vide `[ ]`, ligne de réponse `……`, soulignés `<u>…</u>`.
@@ -30,7 +30,7 @@ Lot : C07 2023 générale, C08 2023 technique, C09 2022 générale, C10 2022 tec
 | 2021 générale | équivalent d'une locution dans le paragraphe (07) ; cause et but (02) ; passé simple ou imparfait (05+06) ; ni / n'y (14) |
 | 2021 technique | sens d'un verbe en contexte, deux QCM (07) ; connecteurs et locution temporelle remplacés par un équivalent (07+02) ; remplacement de groupes nominaux par des pronoms (12) |
 - Le programme est celui en vigueur : aucune notion `HP:`, aucune ligne `HP`. Notions jamais testées sur ces six sessions : `13-les-accords` hors 2023 technique, `15-article-de-presse-et-lettre`, figures de style (chapitre 07 réduit au lexique), `04` hors production.
-- Les productions imposent le discours rapporté en récit (2023, 2022, 2021 générales) ; les techniques demandent un récit descriptif (portrait au travail, patron, sentiments).
+- Lignes finales : C07 6, C08 5, C09 6, C10 5, C11 6, C12 5 (33 lignes). Les productions imposent le discours rapporté en récit (2023, 2022, 2021 générales) ; les techniques demandent un récit descriptif (portrait au travail, patron, sentiments).
 
 ## Points d'exactitude et difficultés
 1. **C07 3.a** : « après que nous (évaluer) … vous (pouvoir) … » attend un futur antérieur puis un futur simple ; le futur antérieur n'est pas dans la liste du manifeste, rattaché à 05 par prudence : à confirmer au programme avant reprise.
