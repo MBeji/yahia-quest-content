@@ -4,3 +4,4 @@
 - m025 (13/07) écrit : 11 q, d2 (6 tout + 5 participes ; 2013 2 q, 2001 2 q).
 - À faire : m026 (04/06), m027 (08/06), chapter.json sources, gates, rapport.
 - m026 (04/06) écrit : 10 q d3 (5 d2 + 5 d3)
+- m027 (08/06) écrit : 10 q d3. chapter.json sources ajoutées (4). Gates : check/qa verts, tranche : 0 clé-longue, paires proches propres à mon lot = 0, lot-lint rien. Rapport rendu.
