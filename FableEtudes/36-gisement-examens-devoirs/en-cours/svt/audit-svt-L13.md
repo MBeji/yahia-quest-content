@@ -7,7 +7,7 @@ Auditeur indépendant (consigne `content-ingest/references/gisement-auditeur.md`
 Sources lues : transcriptions officielles des sessions citées ; PDF officiels (2010, 2015, 2016, 2018, 2019 ;
 2002 et 2005 : l'URL renvoie une page HTML, pas de PDF) ; `cours.md` des chapitres 07, 08, 09 sur `origin/main`.
 
-Rapport écrit au fil de l'eau (état : en cours).
+Rapport écrit au fil de l’eau (état : terminé).
 
 ## m038 — `08-at-tanaffus/exercices/12-examens-2019-ex3-et-annales-alveole-frottis-hemoglobine.json`
 
@@ -400,4 +400,72 @@ qui laisse à Q7 la fonction : mais Q3 devient alors une conséquence directe de
 **[MINOR] m043 Q2 ↔ 01/07 Q1 (L11, même vague) : recouvrement.** La moitié « neurone » (المحور, التغصّنات sur un
 dessin) est demandée par 01/07 Q1. Elle reste ici parce que le sujet 2005 l'impose (repères 3–4) et qu'elle est
 mêlée aux gaz : à garder, mais l'orchestrateur doit savoir que les deux lots posent ce couple.
+
+## Transversal
+
+### Étiquettes
+
+Toutes les étiquettes employées existent sur `origin/main:content/misconceptions.json` (le `misconceptions.json` de
+la branche a 43 lignes de retard sur `main` : à rebaser avant la PR, sans effet sur ce lot). Libellés relus un à
+un ; écarts : m039 Q2 (à déplacer de `a` vers `b`), m042 Q7 (de `d`, deux erreurs, vers `c`), m041 Q8 `c` (à rendre
+muette). Les autres nomment exactement l'erreur exécutée.
+
+**Les deux familles proposées par l'auteur.** Je n'ouvre pas les notes d'auteur (consigne) ; je juge sur les
+distracteurs non étiquetés du lot, où deux erreurs reviennent, et qui correspondent aux pièges du lecteur :
+1. « un organe s'accélère de lui-même, sans lien avec la demande du muscle » : m040 Q2 `b` (le cœur), m040 Q6 `b`
+   (les poumons) et `d` — **2 questions distinctes** ;
+2. « ce que perd le sang du rein part dans l'urine / le rein élimine le glucose » : m041 Q7 `a`, m042 Q3 `c` et `d`
+   — **2 questions distinctes**.
+Aucune n'atteint 3 questions distinctes dans le lot : **pas de création** sur ce seul lot. La famille 2 recouvre en
+partie `bio.excr.etape-du-nephron-confondue` (pour m042 Q3 `c`/`d`, qui disent « يُرشَّح ثمّ يُخرَج في البول » :
+c'est la réabsorption ignorée, donc une étape oubliée) ; la famille 1 n'a pas d'équivalent au registre. Si l'auteur
+en montre une troisième occurrence ailleurs (patron 07 ou 08), la famille 1 est la plus défendable ; son libellé
+devra nommer l'erreur exacte (« تظنّ أنّ القلب أو الرّئتين تسرّع نشاطها من تلقاء نفسها: إنّما يتبع تسارعها حاجة العضلات
+إلى الأكسيجين والجليكوز »). Si les familles proposées sont autres, l'orchestrateur me les renvoie.
+
+### Doublons
+
+- Internes : m038 Q1 ↔ Q8, m041 Q2 ↔ Q3, m043 Q3 ↔ Q7 (majeurs, ci-dessus).
+- Vers le publié : m038 Q2 ↔ 08/02-tamrin Q6 (corrigé par le texte de clé), m039 Q6 ↔ quiz 08 Q1 (résiduel
+  mineur), m039 Q3 ↔ 08/05-tadrib Q1 (moitié), m038 Q6 ↔ chapitre 06, m038 Q7 ↔ 07/02-tamrin Q5 (moitié).
+- Vers la vague 2, autres lots : m043 Q2 ↔ 01/07 Q1 (L11).
+- Entre missions du lot : aucun gabarit commun (`content:tranche` : 0 groupe gabarit, une paire proche hors lot :
+  quiz 08 #4 ↔ 08/02-tamrin #5). Les données 2005 ex.4 (m040) et 2010 ex.4 q4 ne sont posées qu'une fois.
+
+### Gates et rendu
+
+`content:check` vert (0 erreur) ; `content:qa:strict` : 0 erreur, aucun avertissement sur les six fichiers ;
+`content:tranche --chapters 08,09` : clé strictement la plus longue 0/165. Toutes les chaînes chiffrées du lot
+passées dans `isolateLtrRuns` et rendues dans Chromium `dir=rtl` : un seul brouillage (m040 Q5–Q6, corrigé
+ci-dessus). Figures rendues à 232 px : deux défauts (m039 cloche, m038 Q5 flèche 2), corrigés ci-dessus.
+
+### Divers
+
+- `sources[]` des `chapter.json` 08 et 09 : la ligne « Sujets officiels de l'examen national … transcriptions :
+  programmes-officiels/examens-nationaux/9eme-base/sciences-vie-terre/ » est déjà présente (vague 1) et couvre
+  les sessions du lot : OK.
+- Étages : m038 Q10 d3 dans une d2 (mineur), m041 d4 sans question d4 (majeur) ; m039, m040, m042, m043 honnêtes.
+- Titres : conformes au patron (« مناظرة / مناظرتا / مناظرات », étoiles de l'étage) ; m038 à reprendre (mineur) ;
+  m043 à reprendre si Q7 est retirée.
+- Notions : rien hors du chapitre ou d'un chapitre antérieur, sauf « النّيفرونات » en distracteur de m038 Q8
+  (option d'origine du sujet 2010, notion du 09) — sans objet si Q8 est retirée.
+
+## Bilan
+
+| mission | questions | clés fausses | majeurs | mineurs |
+| --- | ---: | ---: | ---: | ---: |
+| m038 (08/12) | 10 | 0 | 3 | 6 |
+| m039 (08/13) | 6 | 0 | 3 | 3 |
+| m040 (08/14) | 7 | 0 | 4 | 1 |
+| m041 (09/10) | 8 | 0 | 3 | 4 |
+| m042 (09/11) | 9 | 0 | 2 | 1 |
+| m043 (09/12) | 7 | 0 | 3 | 2 |
+| **total** | **47** | **0** | **18** | **17** |
+
+Questions à reprendre (texte, figure, étiquette ou retrait) : m038 Q2, Q3, Q4, Q5, Q8 (retrait), Q10 et le titre ;
+m039 Q1, Q2, Q3, Q4, Q5, Q6 ; m040 Q2, Q3, Q5, Q6 ; m041 Q1, Q3 (retrait), Q4, Q5, Q7, Q8 ; m042 Q7, Q8 ;
+m043 Q2, Q4, Q7 (retrait) et le titre — **26 questions** (dont 3 retraits) sur 47.
+
+**Verdict : à corriger avant publication** (aucune clé fausse ; 18 majeurs, tous avec texte de remplacement
+vérifié). Après retraits : m038 9 questions, m041 7, m043 6 (au plancher).
 
