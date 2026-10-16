@@ -102,10 +102,18 @@ _« Il **ne** dort **pas**. »_ — à l'écrit, la négation garde **ses deux m
 
 ::: propriete
 La négation encadre le **verbe conjugué** ; à un temps composé, elle encadre l'**auxiliaire** :
-_« La porte **n'a pas** été fermée. »_ Cas-limite : quand _personne_ ou _rien_ est
+_« La porte **n'a pas** été fermée. »_ Un pronom placé devant le verbe reste **à l'intérieur** de la négation : « Il **ne** s'est **pas** levé », « Il **ne** me parle **pas** ». Cas-limite : quand _personne_ ou _rien_ est
 **sujet**, il passe en tête et garde _ne_ : _« **Personne n'est** venu. »_ Attention, _« Tout le
 monde n'est pas venu »_ dit « pas tous », ce n'est pas le contraire de _« Tout le monde est
 venu »_.
+:::
+
+::: propriete
+Après la négation, l'article **un, une, des** ou **du, de la, de l'** devant le COD devient
+**de** (_d'_ devant une voyelle) : « Il a **une** voiture » → « Il n'a **pas de** voiture » ; « Il boit **du** lait » → « Il ne boit
+**pas de** lait ». Cas-limite : après _être_, l'article reste (« Ce n'est **pas une** voiture ») ;
+un adverbe de quantité garde son _de_ (« pas **beaucoup de** temps ») ; un nom sans article
+reste sans article (« Il n'a **pas** faim »).
 :::
 
 ::: verifie
