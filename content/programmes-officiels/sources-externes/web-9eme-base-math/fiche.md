@@ -100,6 +100,20 @@ versionné à côté de cette fiche : [`gisement.json`](./gisement.json) (docume
 missions et leur état) et [`lignes.tsv`](./lignes.tsv) (une ligne anonyme par exercice lu ; la
 colonne des chapitres y donne les slugs du manifeste, déduits des compétences).
 
+**Addendum — 2026-10-14, un devoir fourni par le propriétaire (`D34`).** Un devoir de contrôle 1
+de collège pilote (année scolaire 2018-2019, deux pages photographiées) est transmis par le
+propriétaire avec la consigne de le porter au portail. Il entre au registre **hors échantillon des
+vagues** — la règle des vagues choisit parmi des listes de sites ; ici, c'est le propriétaire qui
+a choisi le document — et suit la même salle blanche que les autres devoirs : l'orchestrateur le
+lit à l'image (transcription hors git, empreintes des deux photographies au registre), en tire
+cinq lignes (l'exercice 2 a deux parties indépendantes), et l'auteur `prof-math-9eme` n'écrit que
+depuis la carte. Placement par `content:gisement:plan` : chapitres 15, 02, 16, 03 et 18. Deux
+lignes recoupent des signatures déjà au registre (classer des réels puis intersections ; réduire
+des crochets puis opposés) : leurs missions prennent un autre angle (piège de la racine d'un
+décimal, équation à valeur absolue finale). Contrôle local : 0 plage de 8 mots, 0 question à trois
+données communes ; une donnée trop proche (un diviseur et un triplet pythagoricien de même
+famille) a été changée par précaution avant l'audit.
+
 ## 3. Carte — ce que les documents font faire
 
 Lu le 2026-09-28 : les 33 documents, **166 exercices** (25 dans les cinq sujets d'examen, 67
