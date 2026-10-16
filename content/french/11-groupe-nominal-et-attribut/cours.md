@@ -26,6 +26,8 @@ complètent ou précisent son sens : ce sont les **expansions du nom**. On parle
 
 Chaque expansion se rattache à un nom, le **noyau** du GN : c'est lui qu'elle précise.
 
+Pour analyser une expansion, on donne sa **nature** — ce qu'elle est : adjectif, groupe prépositionnel, proposition subordonnée relative — puis sa **fonction** — le rôle qu'elle joue auprès du nom : épithète, complément du nom ; la relative, elle, complète son antécédent. _De la voiture_ : nature, groupe prépositionnel ; fonction, complément du nom _capot_.
+
 ::: exemple analyser le GN _« la vieille maison en pierre que mon grand-père a bâtie »_
 
 1. **Trouve le noyau** : _maison_ ← c'est le nom que tous les autres mots précisent.

@@ -23,39 +23,13 @@
         },
         {
           "id": "d",
-          "text": "fasse"
+          "text": "fasse",
+          "misconceptionTag": "fr.mode.subjonctif-abusif"
         }
       ],
       "correctOption": "b",
       "explanation": "« Pendant que » marque la simultanéité : deux actions réelles qui se déroulent en même temps, donc l'indicatif présent, « fait ». Le subjonctif « fasse » ne suit pas « pendant que », et le futur et le conditionnel ne s'accordent pas avec le présent de la phrase.",
       "difficulty": 1
-    },
-    {
-      "prompt": "« Sofia range le salon avant que sa cousine ___ (venir). » Quelle forme convient ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "vient",
-          "misconceptionTag": "fr.mode.subjonctif-oublie"
-        },
-        {
-          "id": "b",
-          "text": "viendrait",
-          "misconceptionTag": "fr.mode.subjonctif-oublie"
-        },
-        {
-          "id": "c",
-          "text": "vienne"
-        },
-        {
-          "id": "d",
-          "text": "viendra",
-          "misconceptionTag": "fr.mode.subjonctif-oublie"
-        }
-      ],
-      "correctOption": "c",
-      "explanation": "« Avant que » marque l'antériorité : la cousine n'est pas encore arrivée quand Sofia range. Le verbe se met au subjonctif présent, « vienne ». « vient » est un indicatif, « viendra » un futur et « viendrait » un conditionnel : aucun ne suit « avant que ».",
-      "difficulty": 2
     },
     {
       "prompt": "Complète : « Pendant que Yanis ___ (prendre) des photos, ses amis déplient la table avant qu'il ___ (pleuvoir). »",
@@ -71,7 +45,8 @@
         },
         {
           "id": "c",
-          "text": "prenne ; pleuve"
+          "text": "prenne ; pleuve",
+          "misconceptionTag": "fr.mode.subjonctif-abusif"
         },
         {
           "id": "d",
@@ -110,30 +85,29 @@
       "difficulty": 2
     },
     {
-      "prompt": "Dans un récit au passé : « Quand Karim arriva à la gare, le train ___ (partir) depuis dix minutes. » Quelle forme convient ?",
+      "prompt": "Dans un récit au passé : « Quand Karim arriva au cinéma, le film ___ (commencer) depuis dix minutes. » Quelle forme convient ?",
       "options": [
         {
           "id": "a",
-          "text": "venait de partir",
-          "misconceptionTag": "fr.temps.anteriorite-non-marquee"
+          "text": "venait de commencer"
         },
         {
           "id": "b",
-          "text": "est parti",
+          "text": "a commencé",
           "misconceptionTag": "fr.temps.recit-discours-melanges"
         },
         {
           "id": "c",
-          "text": "était parti"
+          "text": "avait commencé"
         },
         {
           "id": "d",
-          "text": "partait",
+          "text": "commençait",
           "misconceptionTag": "fr.temps.anteriorite-non-marquee"
         }
       ],
       "correctOption": "c",
-      "explanation": "Le départ du train est achevé avant l'arrivée de Karim : une action déjà accomplie se met au plus-que-parfait, « était parti ». « Partait » présenterait le départ comme encore en cours, « partit » comme un événement de premier plan au même niveau que l'arrivée ; « est parti » est un temps du discours, qui ne convient pas à ce récit.",
+      "explanation": "Le début du film est achevé avant l'arrivée de Karim : une action déjà accomplie se met au plus-que-parfait, « avait commencé ». « Commençait » présenterait le début comme encore en cours ; « a commencé » est un temps du discours, qui ne convient pas à ce récit ; « venait de commencer » dirait que le film vient juste de commencer, ce que dément « depuis dix minutes ».",
       "difficulty": 2
     },
     {
@@ -142,11 +116,11 @@
       "options": [
         {
           "id": "l1",
-          "text": "Pourriez-vous baisser la musique, s'il vous plaît ?"
+          "text": "Il vaudrait mieux que tu relises ta lettre avant de l'envoyer."
         },
         {
           "id": "l2",
-          "text": "Si nous avions un jardin, nous planterions un olivier."
+          "text": "Avec un peu plus de temps, nous finirions le puzzle."
         },
         {
           "id": "l3",
@@ -162,7 +136,7 @@
         },
         {
           "id": "r3",
-          "text": "Une demande adoucie"
+          "text": "Un conseil, c'est-à-dire un ordre adouci"
         }
       ],
       "answerKey": {
@@ -181,34 +155,32 @@
           ]
         ]
       },
-      "explanation": "« Pourriez-vous… » adoucit une demande : c'est une politesse. La phrase en « si » + imparfait présente un jardin imaginaire, soumis à une condition. Dans la troisième, le verbe principal est au passé et « arriverait » est le futur vu depuis ce moment passé, sans aucune hypothèse.",
+      "explanation": "« Il vaudrait mieux que tu relises… » adoucit un ordre : c'est un conseil. Avec « avec un peu plus de temps », finir le puzzle dépend d'une condition qui n'est pas remplie : c'est un fait imaginaire. Dans « Samia pensait qu'elle arriverait », le verbe principal est au passé et « arriverait » est le futur vu depuis ce moment passé, sans aucune hypothèse.",
       "difficulty": 2
     },
     {
-      "prompt": "Dans un récit au passé : « Quand Salma ouvrit la boîte, elle ___ (comprendre) que son frère ___ (manger) tous les gâteaux. » Quelles formes conviennent, dans l'ordre ?",
+      "prompt": "Dans un récit au passé : « Quand Salma rentra, son frère ___ (terminer) déjà ses devoirs, et sa sœur ___ (terminer) encore les siens. » Quelles formes conviennent, dans l'ordre ?",
       "options": [
         {
           "id": "a",
-          "text": "comprenait ; mangeait",
-          "misconceptionTag": "fr.temps.anteriorite-non-marquee"
+          "text": "terminait ; avait terminé"
         },
         {
           "id": "b",
-          "text": "comprenait ; avait mangé",
-          "misconceptionTag": "fr.temps.passe-simple-imparfait"
+          "text": "avait terminé ; avait terminé"
         },
         {
           "id": "c",
-          "text": "comprit ; mangeait",
+          "text": "terminait ; terminait",
           "misconceptionTag": "fr.temps.anteriorite-non-marquee"
         },
         {
           "id": "d",
-          "text": "comprit ; avait mangé"
+          "text": "avait terminé ; terminait"
         }
       ],
       "correctOption": "d",
-      "explanation": "La compréhension est l'événement de premier plan qui suit l'ouverture de la boîte : passé simple, « comprit ». Les gâteaux ont été mangés avant, l'action est déjà accomplie : plus-que-parfait, « avait mangé ». L'imparfait ferait durer la compréhension ou laisserait l'action antérieure inachevée.",
+      "explanation": "Le frère a fini avant le retour de Salma, et « déjà » le confirme : action accomplie, plus-que-parfait, « avait terminé ». La sœur travaille encore à ce moment, et « encore » le dit : action en cours, imparfait, « terminait ». L'imparfait au premier blanc laisse l'action antérieure inachevée ; le plus-que-parfait au second dirait que la sœur avait déjà fini, ce que dément « encore ».",
       "difficulty": 3
     },
     {

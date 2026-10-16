@@ -1,6 +1,7 @@
 # 📜 Résumé : Le groupe nominal et l'attribut du sujet
 
 - **GN étendu** : nom + **expansions** qui précisent son sens, en général supprimables. Quatre sortes : épithète, complément du nom, apposition, relative (_la vieille maison en pierre que mon grand-père a bâtie_). Le déterminant n'est pas une expansion.
+- **Nature / fonction** : la nature dit ce qu'est l'expansion (adjectif, groupe prépositionnel, relative), la fonction le rôle qu'elle joue auprès du nom (épithète, complément du nom, complément de l'antécédent).
 - **Épithète** : adjectif collé au nom, sans verbe, avant ou après (_un vélo **très léger**_ = groupe adjectival) ; il s'accorde avec le nom. Séparé par un verbe d'état, l'adjectif est attribut (_Ce vélo est léger._).
 - **Complément du nom** : préposition + nom, GN, pronom ou infinitif, après un **nom** (_une table **en bois**_, _une machine **à coudre**_) ; _de Sousse_ dans _revient de Sousse_ complète un verbe, pas un nom.
 - **Apposition** : adjectif ou GN **détaché par des virgules**, souvent mobile (_**Concentré**, le gardien fixe le tireur._) ; le GN apposé désigne la même réalité que le nom (_Tunis, **la capitale**_).
