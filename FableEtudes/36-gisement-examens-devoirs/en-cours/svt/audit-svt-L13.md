@@ -29,6 +29,28 @@ Rapport écrit au fil de l'eau (état : en cours).
 
 Re-résolution : 10/10 clés justes, aucune ambiguïté de clé.
 
+### Faits signalés
+
+**Repère 1 de 2019 (شعيبة ou bronche ?) — شعيبة هوائيّة, clé `c` juste.** Sur le PDF (page 2, document 3, 300 dpi),
+la flèche « 1 » vise l'extrémité supérieure d'un tube gris qui se divise en tubes plus fins, chacun terminé par une
+grappe ; « 2 » touche une sphère au bord d'une grappe (سنخ) ; l'accolade « 3 » embrasse une grappe entière
+(حويصلة). Le tube porte, collées, les légendes « شريان رئوي » et « وريد رئوي » : c'est la شعيبة du schéma classique
+du manuel, pas une شعبة (qui porterait plusieurs lobules). Sur le PDF, le tube visé se ramifie encore, ce qui, au
+regard du cours 08 (« شعيبات … تنتهي كلّ واحدة بحويصلة »), aurait rendu « شعبة » défendable ; la mission place
+la flèche 1 sur un tube **terminal** qui finit sur une grappe (rendu vérifié à 232 px), ce qui rend la clé
+univoque. Écart de figure à **déclarer** dans le rapport d'auteur (repère 1 déplacé d'un cran vers l'aval ;
+légendes des vaisseaux et repère 3 retirés). Les deux vaisseaux de la figure ne portent pas de nom : la couleur
+inversée du PDF (artère pulmonaire en rouge) ne peut plus induire en erreur ; la consigne « redessiner l'artère en
+bleu » est sans objet.
+
+**Équation de l'hémoglobine donnée dans l'énoncé (Q3, Q4) — acceptable.** Le sujet 2019 q3-b fait compléter
+« ……… ⇄ ……… + أكسيجين », flèche du haut « 1 » vers l'oxyhémoglobine, flèche du bas « 2 » vers la dissociation
+(lu sur le PDF, page 3). La mission donne les deux réactions écrites séparément avec cette même numérotation et
+fait trouver le lieu de chacune (q3-c) : l'équation n'est pas demandée seule (plan ; 08/07 Q6 et quiz Q8 posent
+déjà une équation à compléter), et la donner ne livre ni la clé de Q3 ni celle de Q4. Rendu RTL vérifié : la
+flèche « ← » pointe dans le sens de lecture, vers le produit.
+
+
 ### Défauts
 
 **[MAJOR] m038 Q8 ↔ Q1 : doublon interne et fuites croisées.** Q1 fait distinguer le سنخ (un sac) de la
@@ -67,6 +89,10 @@ monte d3 (`boss` 120/30), ce que l'assignation n'a pas prévu.
 **[MINOR] m038 Q6 et Q7 : recouvrement.** Q6 reprend trois faits posés au chapitre 06 (01-tamrin Q5, 03-boss Q3
 et Q6), Q7 la moitié de 07/02-tamrin Q5 (paroi). Ces questions sont prévues par le plan (2005 q3 et 2006 q3) et
 leur forme (appariement, 2×2 avec le sens du sang) est neuve : aucun correctif exigé.
+
+**[MINOR] m038 : titre.** « من السّنخ الرّئويّ إلى الكريّة الحمراء » met « السّنخ » sous les yeux de l'élève avant
+Q1 (élément 2 : سنخ ou حويصلة) et Q8 (أسناخ). Titre de remplacement :
+`🏛️ مناظرات 2002–2019 · من الرّئة إلى الكريّة الحمراء ⭐⭐`.
 
 Observations sans défaut : Q8 garde le distracteur « النّيفرونات » du sujet 2010 (notion du chapitre 09, mais
 c'est l'option d'origine et elle reste fausse) ; « الأساخ » → « الأسناخ » est une coquille corrigée, pas une
@@ -152,7 +178,7 @@ moitié « volume » est neuve et la 2×2 est propre : sans correctif.
 | 2 | d | d | OK, réserve | clé strictement la plus courte (48 contre 52–58) |
 | 3 | b (44,08/2,04 ≈ 21,6) | b | réserve (majeur) | distracteur « 10 » impossible à obtenir : l'oxygène n'est pas dans l'énoncé |
 | 4 | a | a | OK | |
-| 5 | d | d | OK, réserve | clé strictement la plus courte (49 contre 56–60) |
+| 5 | d | d | réserve (majeur) | clé strictement la plus courte (49 contre 56–60) ; ligne de données brouillée au rendu RTL |
 | 6 | c | c | réserve (majeur) | clé imprécise (« طرح الفائض », poumons qui « font » les mouvements) ; la plus courte ; accord fautif en `b` |
 | 7 | a → b → c → d → e | idem | OK | ordre unique ; les sept mots imposés du sujet sont présents |
 
@@ -188,6 +214,16 @@ alors exacte ; aucune fuite : les valeurs de repos sont déjà dans l'énoncé d
   sanctionne ; « وطرح الفائض » ne dit pas de quoi (l'oxygène « en trop » est une lecture possible).
   Dans l'explication de Q6, remplacer « فتزيد الرئتان من عدد حركات الشّهيق والزّفير لتجدّد الأكسيجين في الدم وتتخلّص من
   الفائض » par `فتتسارع حركات الشّهيق والزّفير لتجدّد الأكسيجين في الدم وتطرح ثنائي أكسيد الكربون الزائد`.
+
+**[MAJOR] m040 Q5 et Q6 : ligne de données brouillée au rendu.** La ligne
+« 2 ← 15 ؛ 4 ← 19 ؛ 6 ← 22 ؛ 8 ← 27 » est isolée en un seul bloc LTR par `isolateLtrRuns` ; rendue dans Chromium
+`dir=rtl`, elle s'affiche « 8 ← 27؛ 6 ← 22 ؛ 4 ← 19 ؛2 ← 15 » : un lecteur arabe lit d'abord « 15 », puis la flèche,
+puis « 2 » — soit l'inverse de l'en-tête « (سرعة المشي … ← الإيقاع …) », qui s'affiche, lui, en RTL. Les couples
+vitesse / rythme se lisent à l'envers. Correctif vérifié (rendu Chromium, `isolateLtrRuns`, ordre affiché = ordre
+source) : dans Q5 et Q6, remplacer les deux premières lignes de l'énoncé par
+`(مناظرة 2005) الوثيقة 4 : رياضيّ يمشي بسرعة متزايدة، وقيس إيقاعه التنفّسي :`
+puis quatre lignes `عند 2 كم/س : 15 حركة في الدقيقة` · `عند 4 كم/س : 19 حركة في الدقيقة` ·
+`عند 6 كم/س : 22 حركة في الدقيقة` · `عند 8 كم/س : 27 حركة في الدقيقة` (Q6 garde ensuite sa ligne sur l'oxygène).
 
 **[MINOR] m040 Q6 `b` : accord.** « تكثّف الرئتان حركاتها » → `تكثّف الرئتان حركاتهما` (80 caractères ; l'option
 reste fausse et plus longue que la clé corrigée d'au plus 2 caractères, sans en être une marque).
@@ -315,4 +351,53 @@ Aucune fuite : Q9 dit seulement que l'urine est six fois plus concentrée que le
 **[MINOR] m042 Q9 : niveau de simplification.** « لا يُعاد امتصاصه » est la thèse du cours 09 (« إخراج مواد سامّة
 كالبولة والحمض البوليّ ») ; en physiologie réelle l'acide urique est en partie réabsorbé. La clé est juste au niveau
 du manuel ; aucune correction de l'item, mais ne pas réemployer `c` comme distracteur hors de ce cadre.
+
+## m043 — `09-al-ikhraj/exercices/12-examens-2005-ex2-2007-ex1-2001-ex3-unites-structurales-fonctionnelles.json`
+
+Étage d2 (`practice` 75/15) ; 7 questions, toutes d2. Comparé aux transcriptions 2005 ex.2, 2007 ex.1, 2001 ex.3
+(PDF 2005 non servi). Figure commune à Q1–Q3 : fidèle au document 1 de 2005 (sac à paroi cellulaire avec les
+flèches « خروج دم غني بـ 1 » / « دخول دم غني بـ 2 », neurone étoilé à prolongement unique, néphron en peloton) ;
+lisible à 232 px.
+
+| Q | session | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2005 | A alvéole, B neurone, C néphron | idem | OK | |
+| 2 | 2005 | 1 O₂, 2 CO₂, 3 axone, 4 dendrites | idem | réserve (majeur) | l'énoncé nomme « السنخ » : clé de Q1 ; moitié « neurone » = 01/07 Q1 (L11) |
+| 3 | 2005 | A respiration, B influx, C urine | idem | OK | |
+| 4 | 2007 | a + b + c | a + b + c | réserve (majeur) | une option par organe, toutes justes ; `d`, `e` inverses du cours : 3 se déduit |
+| 5 | 2007 | c (absorption, cavité → sang) | c | OK | 2×2 propre ; étiquette exacte sur `d` |
+| 6 | 2007 | d (déchets toxiques, constance) | d | OK | 2×2 propre |
+| 7 | 2001 | excrétion ↔ rein : néphron ; influx ↔ moelle : neurone ; gaz ↔ poumon : alvéole | idem | réserve (majeur) | mêmes trois couples unité ↔ fonction que Q3 |
+
+Re-résolution : 7/7 clés justes. « قرابة المليون » néphrons par rein et « 700 مليون » alvéoles : cours 09 l. 111 et
+cours 08 l. 177. « المحور », « التغصّنات » : cours 01.
+
+### Défauts
+
+**[MAJOR] m043 Q2 → Q1 : l'énoncé donne la clé.** « السّهم 1 يمثّل خروج دم غنيّ بغاز من السنخ » nomme l'unité A,
+que Q1 fait reconnaître. Remplacer par
+`السّهم 1 يمثّل خروج دم غنيّ بغاز من جدار الوحدة A، والسّهم 2 يمثّل دخول دم غنيّ بغاز آخر إليه.`
+et, dans l'explication, « الدم الذي يخرج من السنخ » → `الدم الذي يخرج من جدار الوحدة A` et « يدخل جدار السنخ » →
+`يدخل جدارها`. Résiduel inévitable (**[MINOR]**) : les options « المحور » / « التغصّنات » désignent un neurone.
+
+**[MAJOR] m043 Q7 ↔ Q3 : doublon interne.** Q3 apparie dessin ↔ « fonction : système », Q7 apparie fonction ↔
+« organe : unité » ; ce sont les mêmes trois couples unité ↔ fonction (alvéole / échanges gazeux, neurone /
+influx, néphron / urine), et chacune résout l'autre dès que Q1 est faite. Le plan demandait que chaque question
+parte d'un dessin ou d'une fonction ; Q7 part bien d'une fonction mais n'ajoute que l'organe. Correctif : **retirer
+Q7** (la mission passe à 6 questions, au plancher de R5) ; le titre devient
+`🏛️ مناظرتا 2005 و2007 · الوحدات التّركيبيّة والوظيفيّة ⭐⭐` et la ligne de registre de la mission perd la source
+2001 ex.3. À défaut (si l'orchestrateur veut garder 2001), réduire Q3 au seul appariement dessin ↔ système, ce
+qui laisse à Q7 la fonction : mais Q3 devient alors une conséquence directe de Q1 ; le retrait est préférable.
+
+**[MAJOR] m043 Q4 : nombre de bonnes réponses déductible.** Chaque organe a une option (`a` poumon, `b` intestin,
+`c` rein), toutes justes ; `d` et `e` sont les contraires mot pour mot de la triade du cours (« رقّة الجدار »,
+« شبكة كثيفة من الشعيرات ») : on élimine à vue et on compte 3. Correctif : remplacer `e` par
+`سعة المثانة التي يتجمّع فيها البول` (fausse : la vessie stocke, elle n'échange pas ; cours 09 l. 67, « خزن
+مؤقّت ») ; le système urinaire porte alors une option juste et une fausse, le décompte ne se lit plus par organe.
+`correct` inchangé (`a`, `b`, `c`). Explication : remplacer la dernière phrase par
+`أمّا غلظ الجدار فيعيق التبادل لأنّ الجدار الفاصل يكون رقيقًا، والمثانة تخزن البول مؤقّتًا ولا يتمّ فيها أيّ تبادل مع الدم.`
+
+**[MINOR] m043 Q2 ↔ 01/07 Q1 (L11, même vague) : recouvrement.** La moitié « neurone » (المحور, التغصّنات sur un
+dessin) est demandée par 01/07 Q1. Elle reste ici parce que le sujet 2005 l'impose (repères 3–4) et qu'elle est
+mêlée aux gaz : à garder, mais l'orchestrateur doit savoir que les deux lots posent ce couple.
 
