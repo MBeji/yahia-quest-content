@@ -454,18 +454,18 @@ ci-dessus). Figures rendues à 232 px : deux défauts (m039 cloche, m038 Q5 flè
 
 | mission | questions | clés fausses | majeurs | mineurs |
 | --- | ---: | ---: | ---: | ---: |
-| m038 (08/12) | 10 | 0 | 3 | 6 |
+| m038 (08/12) | 10 | 0 | 3 | 5 |
 | m039 (08/13) | 6 | 0 | 3 | 3 |
-| m040 (08/14) | 7 | 0 | 4 | 1 |
-| m041 (09/10) | 8 | 0 | 3 | 4 |
+| m040 (08/14) | 7 | 0 | 3 | 1 |
+| m041 (09/10) | 8 | 0 | 3 | 5 |
 | m042 (09/11) | 9 | 0 | 2 | 1 |
 | m043 (09/12) | 7 | 0 | 3 | 2 |
-| **total** | **47** | **0** | **18** | **17** |
+| **total** | **47** | **0** | **17** | **17** |
 
 Questions à reprendre (texte, figure, étiquette ou retrait) : m038 Q2, Q3, Q4, Q5, Q8 (retrait), Q10 et le titre ;
 m039 Q1, Q2, Q3, Q4, Q5, Q6 ; m040 Q2, Q3, Q5, Q6 ; m041 Q1, Q3 (retrait), Q4, Q5, Q7, Q8 ; m042 Q7, Q8 ;
-m043 Q2, Q4, Q7 (retrait) et le titre — **26 questions** (dont 3 retraits) sur 47.
+m043 Q2, Q4, Q7 (retrait) et le titre — **27 questions** (dont 3 retraits) sur 47.
 
-**Verdict : à corriger avant publication** (aucune clé fausse ; 18 majeurs, tous avec texte de remplacement
+**Verdict : à corriger avant publication** (aucune clé fausse ; 17 majeurs, tous avec texte de remplacement
 vérifié). Après retraits : m038 9 questions, m041 7, m043 6 (au plancher).
 
