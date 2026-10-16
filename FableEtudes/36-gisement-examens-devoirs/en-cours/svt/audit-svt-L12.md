@@ -380,3 +380,95 @@ restent un fait du cours, acceptable. Explications de Q4/Q5 vers Q1 : sans objet
 sinon, sur la route Q1 (d2) passe avant, et seules les options de Q5 posaient problème. Q8 → Q9 :
 **acceptable** : Q8 garde deux hypothèses (grossesse **et** retard), elle ne tranche pas ; Q9 tranche par le
 corps jaune plus volumineux, donnée absente de Q8.
+
+---
+
+## Constats transversaux
+
+### Clé la plus courte (indice de forme inverse)
+
+`content:tranche` (05, 11, 12) : 0 % de clés strictement les plus longues, la longueur ne fuit plus par le
+haut. Mais, sur les 25 mcq du lot, **12 clés sont strictement les plus courtes (48 %, hasard 25 %)** : m034
+Q3, Q5, Q8 ; m035 Q3, Q5, Q7, Q9 ; m036 Q2, Q5 ; m037 Q5, Q6, Q7. Les écarts criants (m035 Q9 42 contre 84+,
+m036 Q2 37 contre 64+, m037 Q5 29 contre 51+, m036 Q5 47 contre 63+) sont corrigés ou supprimés ci-dessus.
+Après correctifs, il reste 6 clés strictement les plus courtes sur 20 mcq (30 %), toutes à 7 caractères ou
+moins de l'option suivante et sans marqueur : niveau du hasard, **[MINOR]** au total. L'auteur a allongé ses
+distracteurs pour fuir la clé longue ; la mesure est à faire dans les deux sens.
+
+### Point signalé : proximité des questions d'absorption avec 05/08 Q6–Q7
+
+Le chapitre 05 compterait quatre questions « baisse dans l'intestin, hausse dans le sang → absorption » :
+05/08 Q6–Q7 (glucose, barres 80/50/10), m033 Q5 (acides aminés, courbes avec latence de 30 min), m034 Q5
+(100/100/5 g, invariance dans l'estomac), m035 Q7 (bilan 95 → 12 / 5 → 88, égalité 83 = 83). Tranché :
+**acceptable**, car chaque session officielle apporte une donnée et un raisonnement que 05/08 n'a pas (la
+latence, l'estomac sans effet, le bilan chiffré), et le plan a réduit chaque reprise à une seule question.
+Ce qui ne l'était pas, c'est le recyclage du même jeu de distracteurs (« passage du sang vers l'intestin :
+sécrétion », « stockage dans la paroi ») : deux d'entre eux niaient la donnée (m033 Q5 b, m035 Q7 d). Les
+correctifs ci-dessus les remplacent par des erreurs distinctes (deux courbes sans lien ; vocabulaire
+absorption/sécrétion).
+
+### Étiquettes `bio.*`
+
+Toutes les étiquettes employées existent sur `origin/main` et nomment l'erreur exécutée, avec deux
+réserves : m037 Q4 b (deux erreurs : comptage depuis la fin des règles **et** + 14 jours) doit rester muette
+(sans objet si Q4 est supprimée) ; m034 Q1 a (suc gastrique actif sur l'amidon, salive inactive) est une
+inversion plus qu'une généralisation, mais le libellé « تجعل الأنزيم يعمل على أيّ غذاء » la couvre. **Aucune
+famille nouvelle** n'est proposée par ce lot : le contrôle « au moins 3 questions distinctes » est sans objet.
+Nouvelles étiquettes portées par les correctifs : m034 Q10 (mcq calcium) `bio.alim.reactifs-confondus` ×3 ;
+m037 Q9 c `bio.cycle.uterus-autonome`.
+
+### Doublons avec le publié
+
+| question | doublon de | décision |
+| --- | --- | --- |
+| m034 Q2 | 05/02-tamrin Q4 (amidon + salive → سكّر الشّعير) | supprimer |
+| m034 Q8 | 05/02-tamrin Q2, quiz 05 Q4 (spécificité d'enzyme) | supprimer |
+| m036 Q6 | 11/05-tadrib Q3, quiz 11 Q4 (phase du شبيك ; « ne pas redemander » de l'affectation) | supprimer |
+| m037 Q1, Q4 | 11/09 Q5–Q6 (calendrier → 26 jours → jour 12, mêmes nombres) | supprimer |
+| m033 Q2 / m034 Q2 | mêmes quatre options (maltose, glucose, acides aminés, glycérol) | réglé par la suppression de m034 Q2 |
+| m035 Q9 | aucune source officielle | supprimer |
+
+### Gates
+
+`content:check` vert ; `content:qa --strict` : 0 erreur, aucun avertissement sur les cinq fichiers ;
+`content:tranche` vert. Aucun chiffre arabo-indien, aucun groupe « \d \d{3} », pas de LaTeX. Rendus Chromium
+`dir=rtl` des chaînes de correctif à chiffres (« (83 غ) », « 85 − 40 = 45 غ ») : ordre conforme au texte.
+`chapter.json` 05, 11, 12 : la ligne `sources[]` des sujets officiels (vague 1) couvre les nouvelles
+missions ; rien à ajouter.
+
+---
+
+## Bilan
+
+| mission | questions auditées | clés fausses | majeurs | mineurs | à supprimer | taille après correctifs |
+| --- | ---: | ---: | ---: | ---: | --- | ---: |
+| m033 | 8 | 0 | 4 | 2 | — | 8 |
+| m034 | 10 | 0 | 5 | 3 | Q2, Q8 | 8 |
+| m035 | 9 | 0 | 4 | 1 | Q6, Q9 | 7 |
+| m036 | 7 | 0 | 3 | 2 | Q6 | 6 |
+| m037 | 11 | 0 | 6 | 2 | Q1, Q4 | 9 |
+| **total** | **45** | **0** | **22** | **10** | **7** | **38** |
+
+Questions à reprendre (hors suppressions) : m033 Q1, Q2, Q3, Q4, Q5, Q7, Q8 ; m034 Q3 (explication), Q5, Q6,
+Q9, Q10 ; m035 Q2, Q7, Q8 ; m036 Q1 (figure), Q2, Q5, Q7 ; m037 Q2, Q5, Q6, Q8, Q9, Q10, Q11 (figure).
+
+**Verdict : à corriger avant fusion.** Aucune clé fausse, données fidèles aux dix transcriptions, figures
+fidèles et lisibles. Les défauts sont des fuites entre questions (énoncés qui portent la clé d'une autre),
+des doublons du publié, une question inventée (m035 Q9), des options qui nient une prémisse et des clés
+nettement les plus courtes. Tous les correctifs sont donnés en texte exact, longueurs comptées.
+
+## Résumé court
+
+Lot L12 (m033–m037), 45 questions re-résolues à l'aveugle. **Clés fausses : 0.** **Majeurs : 22** :
+fuites d'énoncé à énoncé (m033 glose = clé de Q1 ; m036 Q7 → Q4 ; m037 Q6 contient sa clé, Q9 → Q7, Q10 → Q9),
+doublons du publié (m034 Q2, Q8 ; m036 Q6 ; m037 Q1, Q4 = 11/09 Q5–Q6 avec les mêmes nombres), question
+inventée attribuée à 2016 (m035 Q9, juste sur le fond mais sans source), options qui nient la prémisse
+(m033 Q5 b, Q8 a ; m034 Q5 b ; m035 Q7 d ; m037 Q9 c), duel qui annonce le compte (m037 Q8), appariement
+résolu par le produit seul (m035 Q8), clés les plus courtes de moitié (m036 Q2, m037 Q5). **Mineurs : 10.**
+**Étiquettes** : toutes existantes et justes, une à rendre muette (m037 Q4 b) ; aucune famille nouvelle.
+**Doublons** : 5 questions du publié reprises, plus 1 sans source ; 7 suppressions proposées, toutes les
+missions restent à 6 questions ou plus. **Points signalés** : calendrier 2018 et dates 13 mai, 16 avril, 16 mai
+justes ; hypothèse de mai déclarée, honnête ; absorption : proximité acceptable, distracteurs à diversifier ;
+phases utérines : Q4 gardée, Q6 doublon ; mises en ordre : fuites évitables vers Q2/Q4 (m034) et Q9 (m037) ;
+Q8 → Q9 acceptable ; « غليسيرول » juste, mais à déclarer (ou sans objet avec le correctif de Q8).
+**Verdict : à corriger avant fusion.**
