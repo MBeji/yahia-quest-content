@@ -87,13 +87,4 @@ Peter
 
 N.B : PLEASE DO NOT WRITE YOUR NAME.
 
-## Corrigé manuscrit (pages 5 à 8 du PDF, écriture à la main sur un exemplaire vierge)
-
-- I.1 : b (street boys). I.2 : a. slim ; b. appearance.
-- I.3 : ⓐ Just outside the city / Verona ; ⓑ Selling strawberries ; ⓒ Outside / in front / near the hotel ; ⓔ At the bus station ; ⓕ Selling newspapers.
-- I.4 : a. Yes, he did. He bought their biggest basket of strawberries. b. No, they didn't. They were still in the street / selling papers by midnight. They slept by / after midnight / very late. c. No, he wasn't. He was with a friend. d. It arrived at / around / after / by midnight.
-- I.5 : a. the driver ; b. the bus / the last bus.
-- II.1 : ⓐ carefully ; ⓑ lights ; ⓒ from / in ; ⓓ ran ; ⓔ jumped ; ⓕ were.
-- II.2 : 2 + a ; 3 + c ; 4 + f ; 5 + b.
-- II.3 : ⓐ can ; ⓑ tall ; ⓒ long ; ⓓ neck ; ⓔ leaves ; ⓕ trees.
-- III (grille de notation manuscrite dans le cadre d'écriture) : Adherence to task and organization : 2 marks ; Language (grammar accuracy and lexical appropriacy) : 2 marks ; Mechanical accuracy (spelling, punctuation and capitalization) : 1 mark.
+> Les pages 5 à 8 du PDF sont un exemplaire rempli à la main (corrigé non officiel) : non transcrites.
