@@ -90,7 +90,7 @@ pour 10 (dialogue imposé), le 15 pour une (lettre, 2011 technique).
 | 03 voix passive | 1 | 6 | **7** | actif ↔ passif, temps conservé, sans agent, sujet « on » ; aucune depuis 2023 |
 | 04 discours rapporté | 0 | 0 | **0** | jamais en langue ; seulement le dialogue imposé dans dix productions |
 | 05 modes et temps | 8 | 29 | **37** | subjonctif ou indicatif selon le verbe introducteur ; transposition (présent, imparfait, futur, passé composé) |
-| 06 temps du récit | 8 | 16 | **24** | imparfait / passé simple / plus-que-parfait ; futur simple / futur antérieur ; présent / passé composé |
+| 06 temps du récit | 8 | 16 | **24** | choix entre passé simple, imparfait et plus-que-parfait ; futur simple / futur antérieur ; présent / passé composé |
 | 07 lexique | 13 | 12 | **25** | synonyme et emploi ; sens en contexte (QCM en technique) ; autre sens du mot ; jamais de figure de style |
 | 08 types de textes | 1 | 0 | **1** | connecteurs temporels d'un récit (2024 technique) |
 | 11 groupe nominal | 2 | 4 | **6** | enrichir un GN (épithète, complément du nom, relative) ; relative → adjectif |
