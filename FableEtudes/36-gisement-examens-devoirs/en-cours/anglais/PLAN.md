@@ -1,4 +1,9 @@
-# Gisement 9ᵉ × anglais : plan des missions d'examen et du lot devoirs (G3–G4, étude 36)
+# Gisement 9ᵉ × anglais : plan des missions d'examen et du lot devoirs (G3–G4, étude 36) — v2
+
+> **v2 (2026-10-16)** : décisions du pilote sur le § 6 — P1, P2, P3 acceptées (lot **L06** au 07 : trois
+> textes de cours, trois puces du résumé, missions `m022`–`m024`) ; pas de vague 2 de devoirs ; passif écarté ;
+> nommage 06/07 du manifeste inchangé (suivi du propriétaire). Les cartes L01–L04 ne changent pas ; seule la
+> carte devoirs `D04#4` (L05) voit sa liste « ne pas redemander » renvoyer à `m022`, `m024`.
 
 Écrit le 2026-10-16 par le planificateur. Entrées : les 41 sujets lus (`C01`–`C42`, sans `C39` : 2004,
 introuvable ; 2014 absente de l'archive), leurs transcriptions
@@ -12,14 +17,14 @@ Sorties :
 
 - carte et écart : `content/programmes-officiels/sources-externes/web-9eme-base-english/fiche.md` § 3
   (sujets officiels seulement) ;
-- plan : [`plan-examens-v1.json`](./plan-examens-v1.json) — 21 missions d'examen (`m001`–`m021`, lots
-  `L01`–`L04`), 2 missions de devoirs (lot `L05`, clé `devoirs`), le sort de ce qui est écarté (`ecartes`,
+- plan : [`plan-examens-v2.json`](./plan-examens-v2.json) (v1 gardé pour l'historique) — 24 missions d'examen
+  (`m001`–`m024`, lots `L01`–`L04` et `L06`), les textes de cours du lot L06 (`coursL06`), 2 missions de devoirs (lot `L05`, clé `devoirs`), le sort de ce qui est écarté (`ecartes`,
   `devoirs.ecartes`) et les trois propositions soumises au pilote (`propositionsPilote`) ;
-- registre : `…/web-9eme-base-english/gisement.json` — 23 missions `planifiee` (id = la source de base ;
+- registre : `…/web-9eme-base-english/gisement.json` — 26 missions `planifiee` (id = la source de base ;
   `sources` liste toutes les sources fusionnées ; `note` donne l'id du plan) ; la section `documents` n'est pas
   touchée ;
 - affectations : [`assign-anglais-L01.md`](./assign-anglais-L01.md) … [`assign-anglais-L04.md`](./assign-anglais-L04.md),
-  [`assign-anglais-devoirs.md`](./assign-anglais-devoirs.md).
+  [`assign-anglais-L06.md`](./assign-anglais-L06.md) (cours et missions du 07), [`assign-anglais-devoirs.md`](./assign-anglais-devoirs.md).
 
 Contrôle local : voir § 8.
 
@@ -78,15 +83,15 @@ sinon → 09 (description, persuasion, lettre).
 - 2024 T, « Los Angles », 2010 T, « fourty-five », 2026 G/T, « DOT NOT » : coquilles imprimées citées avec
   [sic], jamais reproduites dans une option.
 
-**R7 — Notions hors chapitres (décision du pilote).** Aucune mission ne prend pour cible la dérivation
-(`HP:word-formation`), le gérondif (`HP:gerund`) ni les pronoms (`HP:object-pronoun`, `HP:reflexive-pronoun`) :
-un item de ces familles est écarté, ou sa forme est donnée dans l'énoncé quand la phrase sert une autre
-question. Le passif (non enseigné) est écarté. Les propositions du § 6 attendent l'arbitrage du pilote ; si
-elles sont acceptées, le plan v2 ajoute les missions au 07, rien d'autre ne change.
+**R7 — Notions hors chapitres (tranché par le pilote, v2).** Le gérondif (et verbe + to + base), les pronoms
+(compléments, réfléchis, possessifs) et la dérivation vont au **07** (contenu publié « Word Building & Linking
+Words »), lot **L06** seul : trois textes de cours puis trois missions (`m022`–`m024`). Dans les lots L01–L05,
+un item de ces familles n'est jamais la cible d'une question : il est laissé à L06, ou sa forme est donnée dans
+l'énoncé quand la phrase sert une autre question. Le passif (non enseigné) est écarté.
 
 **R8 — Taille, étage, en-tête, reprise.** 12 questions au plus ; étage = celui de la ligne la plus haute de la
-mission, jamais d1 (d1 → d2), d3 au plus. En-tête : d2 practice 75/15, d3 boss 120/30. Bilan : 16 d2, 5 d3 ;
-environ 210 questions d'examen et 16 de devoirs. `chapter.json`, `sources[]` de chaque chapitre touché :
+mission, jamais d1 (d1 → d2), d3 au plus. En-tête : d2 practice 75/15, d3 boss 120/30. Bilan : 17 d2, 7 d3 ;
+environ 250 questions d'examen et 16 de devoirs. `chapter.json`, `sources[]` de chaque chapitre touché :
 « Sujets officiels de l'examen national de fin d'études de l'enseignement de base (9ᵉ), Ministère de
 l'Éducation (corpus officiel, reprise citée, étude 36) — transcriptions :
 programmes-officiels/examens-nationaux/9eme-base/english/ ». Étiquettes : la famille `english.*` de
@@ -117,9 +122,12 @@ ordre des faits), `multi` (« relève deux… », arguments) ; `short_answer` se
 | `09` | 14 | m019 matching sentence parts | 2026 G ; 2025 T, 2024 T, 2021 G, 2018 G, 2015 G, 2013 T, 2006, 2003, 2001 | d2 | 10 |
 | `09` | 15 | m020 writing prepared: describe, persuade, opinion | 2025 G ; 2025 T, 2021 G, 2021 T, 2020 G, 2017 G, 2015 G, 2001 | d3 | 10 |
 | `09` | 16 | m021 writing prepared: letters and e-mails | 2019 T ; 2018 T, 2013 T, 2012 G, 2011 G, 2010 T, 2007, 2005, 2009 G | d3 | 12 |
-| `03`, `06`, `07`, `10` | — | aucune mission d'examen | `03` : deux items de futur, versés dans `m010` ; `06` : les trois passifs sont hors programme (§ 4) ; `07` : en attente du § 6 ; `10` : sujets types inventés, le plan ne compose pas de sujet complet | | |
+| `07-reported-speech` | 06 | m022 the gerund or to + base | 2025 T ; 2025 G, 2024 T, 2023 T, 2022 G, 2022 T, 2019 T, 2018 G, 2016 T, 2015 G, 2003, 2002 | d3 | 12 |
+| `07` | 07 | m023 pronouns: object, reflexive, possessive | 2023 T ; 2021 T, 2021 G, 2019 G, 2018 T, 2015 G, 2013 T, 2012 T, 2010 G, 2009 T, 2007 | d2 | 12 |
+| `07` | 08 | m024 one root, several words | 2022 G ; 2026 G, 2026 T, 2025 G, 2025 T, 2024 T, 2022 T, 2019 G, 2018 G, 2011 G | d3 | 12 |
+| `03`, `06`, `10` | — | aucune mission d'examen | `03` : deux items de futur, versés dans `m010` ; `06` : les trois passifs sont hors programme (§ 4) ; `10` : sujets types inventés, le plan ne compose pas de sujet complet | | |
 
-**21 missions d'examen, environ 210 questions**, tirées des 41 sujets : chaque famille au programme a sa mission,
+**24 missions d'examen, environ 250 questions**, tirées des 41 sujets : chaque famille au programme a sa mission,
 aucune ne répète une autre ni le patron.
 
 ## 3. Lots
@@ -131,6 +139,7 @@ aucune ne répète une autre ni le patron.
 | L03 | `04` (06–07), `08` (06–08) | m011–m015 (5) | avec L01, L02 |
 | L04 | `09` (11–16) | m016–m021 (6) | **après** L01 (même chapitre : un auteur à la fois) ; en parallèle de L02, L03 |
 | L05 (devoirs) | `08` (09), `09` (17) | 2 | **après** L03 et L04 |
+| L06 | `07` : cours (C1–C3), résumé (R1–R3), missions (06–08) | m022–m024 (3) + cours | avec tous les autres (seul lot au 07) ; cours **avant** missions |
 
 Skill : `prof-anglais-9eme` puis `content-langue-anglais` et `content-ecole-tn` ; consigne :
 `gisement-auteur-examen.md` (L01–L04, reprise citée, avec la transcription de chaque session citée) et
@@ -139,15 +148,15 @@ L05 n'a que deux missions : la vague 1 n'apporte pas plus (§ 5).
 
 ## 4. Ce qui est écarté, et pourquoi
 
-Le détail machine est dans `plan-examens-v1.json` (`ecartes`, `devoirs.ecartes`).
+Le détail machine est dans `plan-examens-v2.json` (`ecartes`, `devoirs.ecartes`).
 
 | écarté | quoi | pourquoi |
 | --- | --- | --- |
 | 36 compréhensions | tous les textes sauf 2026 G, 2025 G, 2024 G, 2026 T, 2024 T | R2 : mêmes consignes d'un texte à l'autre ; les deux valeurs de modal utiles passent dans `m011` |
 | 16 productions | sujets qui répètent un des quatre archétypes | R3 |
 | passif (2025 G, 2017 T, 2025 T) | can be found, considered, gets educated | non enseigné en 9ᵉ ; le 06 publié enseigne les fonctions ; 3 sessions |
-| dérivation, gérondif, pronoms | une cinquantaine d'items | R7, décision du pilote ; § 6 |
-| verbe + to + base (2023 T, 2018 G, 2002) | deciding to, need to, let … cross | non enseigné ; ligne de cours proposée avec P1 |
+| dérivation, gérondif, pronoms non retenus | items de suffixe ou de pronom déjà représentés ; « doing » (participe) | `m022`–`m024` en gardent douze chacune |
+| let … cross (2002) | let + base | non enseigné (decide / need + to + base sont dans `m022`, cours C1) |
 | what / where / who interrogatifs (2023 G, 2026 T) | relatifs libres ou mots interrogatifs | seuls who / which / that sujets sont au programme |
 | « so that he would » (2024 G) | would de but | non enseigné |
 | « used to » (2010 G) | used to + base | non enseigné en 9ᵉ ; la question de sens de 2024 T reste dans `m005` sans règle |
@@ -175,39 +184,41 @@ participiale et le participe passif de D03 (hors programme).
 **Mesure des signatures neuves (règle des 30 %, D-4).** Signature = famille d'archétype + chapitres de la
 ligne (jetons `HP:` ôtés), comparée aux 205 lignes d'examen : **8 signatures neuves sur 29 lignes (28 %)**, dont
 3 sont les écoutes ; **hors écoute, 5 sur 26 (19 %)**. Rapportées au plan et au patron, il en reste **2 sur 26
-(8 %)**. Sous le seuil de 30 % dans les trois comptes : **pas de vague 2 proposée**. Le pilote décide. Pour une
+(8 %)**. Sous le seuil de 30 % dans les trois comptes : **pas de vague 2** (décision du pilote, v2). Pour une
 vague 2, le plafond exclut Fraoua ; l'alternance pilote / ordinaire a été rompue (D04 et D05 sont d'un collège
 pilote d'après leur en-tête, le registre dit ordinaire).
 
-## 6. Propositions au pilote — notions hors chapitres revenues dans au moins six sessions
+## 6. Notions hors chapitres — tranché par le pilote (v2, 2026-10-16)
 
-**Constat préalable : les slugs 06 et 07 ne disent pas leur contenu.** Le manifeste et la fiche de contexte
-des lecteurs nomment `06-passive-voice` « Passive voice » et `07-reported-speech` « Reported speech » ; le
-contenu publié est « Communicative Functions » (06) et « Word Building & Linking Words » (07). Les lecteurs ont
-donc jeté `HP:` des notions que le 07 publié enseigne (gérondif, réfléchis, possessifs), et rangé au 06 trois
-passifs que rien n'enseigne. Je n'ai réécrit aucune ligne ; ce plan suit la décision du pilote (R7) et lui
-soumet trois propositions. Chacune ajoute au plus une mission au 07 (plan v2, lot L06 au 07, en parallèle de
-tout le reste) ; sans réponse, rien ne change.
+Constat (v1) : les slugs `06-passive-voice` et `07-reported-speech` portent « Communicative Functions » et
+« Word Building & Linking Words » ; les lecteurs ont jeté `HP:` des notions que le 07 publié enseigne. Le
+manifeste n'est pas touché (suivi du propriétaire). Décisions :
 
-| | famille | sessions | constat | proposition | recommandation |
-| --- | --- | ---: | --- | --- | --- |
-| **P1** | gérondif (`HP:gerund`) | 12 (10 au programme) | enseigné : SB p. 97 (Module 4, Lesson 5, encadré « The gerund » : sujet, après like / enjoy / finish / hate / dislike, après une préposition, nom composé) et cours 07 § « The gerund » ; seul « verbe + to + base » (decide, need) ne l'est pas | reclasser au 07 les items de gérondif et ouvrir `07/06-exams-2002-2025-the-gerund-in-exam-texts.json` (d2, 10 questions : 2025 G, 2025 T, 2024 T, 2022 G, 2022 T, 2019 T, 2016 T, 2015 G, 2003, 2002) ; ligne de cours au 07, § The gerund : « After decide, want, need and would like, the verb takes to + base: She decided to join the club. — Do not confuse it with the gerund after enjoy or a preposition. » | oui |
-| **P2** | pronoms (`HP:object-pronoun`, `HP:reflexive-pronoun`, possessifs) | 13 | harmonisé : compléments dans 9 sessions (2023 T, 2021 T, 2018 T, 2015 G, 2013 T, 2012 T, 2010 G, 2007, 2002), réfléchis dans 5 (2021 G, 2019 G, 2015 G, 2009 T, 2008) ; réfléchis (SB p. 38) et possessifs (SB p. 33) enseignés et au cours 07 ; compléments non enseignés (révision 7ᵉ–8ᵉ) | reclasser au 07 ; ligne de cours au 07, avant « Reflexive pronouns » : « After a verb or a preposition, use the object pronoun: me, you, him, her, it, us, them. » (tableau sujet → complément, rattaché au tableau des pronoms personnels, SB p. 33) ; puis `07/07-exams-2002-2023-pronouns-in-exam-texts.json` (d2, 12 questions) | oui |
-| **P3** | dérivation (`HP:word-formation`) | 15 | 14 au jeton, 15 avec 2016 G ; cinq des six derniers sujets ; le manuel n'enseigne que les noms composés (SB p. 78, Module 3 Lesson 5, « Noun formation 2 ») et laisse les suffixes de côté | soit une section au cours 07 après « Compound nouns » : « One root, several words — a noun names (employment, construction, choice), an adjective describes (social, careful, exciting), an adverb tells how (clearly, slowly, significantly). Look at the words before and after the gap to know which one you need. » (déclarée au-delà du manuel, rattachée à SB p. 78), puis `07/08-exams-2010-2026-one-root-several-words.json` (d3, 12 questions) ; soit l'écart | ligne de cours (l'examen la demande chaque année depuis 2022) ; le pilote tranche |
+| | famille | sessions | décision | réalisation (lot L06, `assign-anglais-L06.md`) |
+| --- | --- | ---: | --- | --- |
+| **P1** | gérondif + verbe + to + base | 12 | acceptée | cours C1 (bloc `propriete` dans « The gerund » : decide / want / need / hope / learn / would like + to + base ; SB p. 97 et p. 52), résumé R3 ; mission `m022` (07/06, d3, 12 q.) |
+| **P2** | pronoms compléments, réfléchis, possessifs | 13 | acceptée | cours C2 (tableau sujet / complément / réfléchi et paragraphe ; SB p. 33 et p. 38), résumé R1 ; mission `m023` (07/07, d2, 12 q.) |
+| **P3** | dérivation | 15 | acceptée, section limitée aux suffixes exigés | cours C3 (section « One root, several words », entre Compound nouns et The gerund ; ligne 🎯 qui cite l'examen comme source de l'exigence ; SB p. 78), résumé R2 ; mission `m024` (07/08, d3, 12 q.) |
 
-Sous le seuil (moins de six sessions) : passif (3) et fonctions de communication en langue (1) → écart.
+Suffixes que les sujets exigent réellement (et seuls retenus dans C3) : nom **-ment** (2025 G, 2025 T), **-tion**
+(2024 T), **-er / -ist** de personne (2026 T, 2026 G) ; adjectif **-al** (2026 G, 2019 G, 2010 G), **-ful**
+(2011 G), **-ous** (2022 G), **-ing / -ed** (2022 G, 2020 G, 2013 G, 2025 T) ; adverbe **-ly** (2025 G, 2023 G,
+2022 G, 2011 G) ; changements de forme choose → choice (2022 T), advise → advice (2018 G), beauty → beautiful
+(2022 G). Aucun sujet ne demande -ness, -ity ou -able.
+
+Passif (3 sessions) et fonction de communication en langue (1) : écartés.
 
 ## 7. Arbitrages pour le propriétaire
 
-Aucun ne bloque l'écriture des lots L01–L05 ; chacun est réversible lot par lot.
+Aucun ne bloque l'écriture ; chacun est réversible lot par lot.
 
-1. **Les propositions P1–P3 (§ 6)** : trois missions au 07 et deux ou trois lignes de cours, ou l'écart.
-2. **Le libellé des chapitres 06 et 07 au manifeste** (« Passive voice », « Reported speech ») ne dit pas leur
-   contenu publié : à corriger dans le manifeste et dans la fiche de contexte des lecteurs, hors de ce plan.
-3. **La production convertie (R3)** plutôt qu'écartée : quatre missions (`m009`, `m012`, `m020`, `m021`) ; si le
-   propriétaire préfère l'écarter, elles tombent sans toucher au reste ; leur placement (R5) au 02 et au 04
-   est réversible par leur seul `nn`.
-4. **Cinq compréhensions seulement (R2).**
+1. **Le libellé des chapitres 06 et 07 au manifeste** (« Passive voice », « Reported speech ») ne dit pas leur
+   contenu publié : suivi noté par le pilote, rien n'est changé ici.
+2. **La production convertie (R3)** plutôt qu'écartée : quatre missions (`m009`, `m012`, `m020`, `m021`) ; leur
+   placement (R5) au 02 et au 04 est réversible par leur seul `nn`.
+3. **Cinq compréhensions seulement (R2).**
+4. **La section C3 va au-delà du manuel** (suffixes) : déclarée par sa ligne 🎯 ; à retirer avec `m024` si le
+   propriétaire s'en tient au manuel.
 
 ## 8. Contrôle local
 
@@ -226,3 +237,10 @@ affectations d'examen et l'affectation des devoirs :
   officiel, reprise citée), que l'auteur doit retrouver ; l'affectation des devoirs, 0.
 - `content:check` et `content:qa -- --subject english` : verts (registre lu, garde anti-verbatim des fiches
   comprise).
+
+**v2 (même jour, après les décisions du pilote)** : contre les snapshots de devoirs, **0 plage de 8 mots**
+partout, `assign-anglais-L06.md` compris (0 plage de 6 : les textes de cours C1–C3 sont neufs) ; données
+communes = années de session et nombres 10, faux positif. Contre les transcriptions : fiche et plan, 0 plage
+de 8 mots ; `assign-anglais-L06.md`, 26 plages de 8 mots, toutes des phrases officielles citées à dessein dans
+les consignes de tri (aucune dans les textes de cours). `content:check` et `content:qa -- --subject english`
+verts.
