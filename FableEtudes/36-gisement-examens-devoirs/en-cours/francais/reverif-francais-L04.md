@@ -169,3 +169,27 @@ la plus longue reste « l'aider à se relever »).
     `plan-examens-v1.json`.
 - **Verdict : à corriger** (deux majeurs simples, sans nouvelle rédaction). Une fois R1 et R2 appliqués,
   le lot est bon pour fusion.
+
+## Corrections appliquées (2026-10-16)
+
+- **R1** : 14/06 Q1, Q4, Q6, Q7 réécrites avec les énoncés du rapport, vérifiés contre `2025-generale.md` (l. 70) et `2024-generale.md` (l. 68) : adjectifs, phrases et sessions fidèles. Options inchangées.
+- **R2** : 14/07 Q7 (2009 G) supprimée, l'ancienne Q8 devient Q7 ; le fichier compte 7 questions. Registre : m021 `etapes` 8 → 7.
+- **R3** : 14/07 (ancienne Q8, 2008) option c `qu'ils` → `quelle`, sans étiquette ; dernière phrase de l'explication remplacée par celle du rapport.
+- **R4** : 07/07 Q5, option `la saluer` → `la gronder`. Q3 (« lent ») laissée telle quelle, comme le rapport le tolère.
+- **Registre** (`gisement.json`, relu juste avant l'écriture, édition ciblée) : `note` de m018, m019, m021, m022 complétée par « sessions lues, écartées (aucune question retenue) » (m018 : 2018 T ; m019 : 2020 G, 2018 G, 2016 G, 2016 T, 2015 G ; m021 : 2011 G, 2019 G, 2018 G, 2009 G ; m022 : 2001, 2015 T, 2010 T, 2012 T). `sources` intact.
+- **Traçabilité** : `plan-examens-v1.json`, deux noms de fichiers du ch. 07 mis à jour (m018 → `06-examens-2019-2026-…`, m019 → `07-examens-2019-2026-…`).
+
+**Gates** (`/home/user/eng-svtses`) :
+- `content:check` : vert, 120 sujets, 29 536 questions.
+- `content:qa:strict` : 0 erreur, 506 alertes ; aucune ne vise `french/07`, `french/12` ou `french/14` (celles lues sont des cours d'autres matières).
+- `content:gisement:lignes` : il n'y a pas de `lignes.tsv` français dans `wt-fr` ; lancé sur les 49 fichiers `lecture-9eme/francais/lines/*.tsv` (`--subject french --grade 9eme-base`) : 271 lignes valides, 0 fautive.
+
+**Écarts**
+- Q1 de 14/06 : la phrase officielle continue (« … des plats qu'ils dégustent (savoureux) »). Le texte du rapport finissait par « des plats. », ce qui tronque et ferme la citation. J'ai écrit « des plats […]. » (le reste du texte est celui du rapport). Je ne cite pas « savoureux » pour ne pas ajouter un autre adverbe du lot.
+- Le titre de 14/07 garde « qu'elle » alors qu'aucune question ne le porte plus (le rapport dit que le titre reste juste). À revoir si on veut un titre exact.
+- `plan-examens-v1.json` l. 731 (m022, ch. 12, `…2001-2021…`) garde son ancien nom : hors du périmètre demandé (ch. 07 seulement).
+- Je n'ai pas relancé `content:tranche` (non demandé) ; la suppression de Q7 ne touche pas les positions des clés des autres questions de façon vérifiée.
+
+## Verdict du pilote (2026-10-16)
+
+R1 vérifié contre 2025-generale.md l. 70 et 2024-generale.md l. 68 ; R2 à R4 contrôlés. **L04 prêt à livrer.**
