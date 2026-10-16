@@ -1,0 +1,176 @@
+{
+  "title": "📝 Exercice de devoir ⭐⭐ : passer au passif quand c'est possible",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Parmi ces phrases actives, laquelle peut être mise à la forme passive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les enfants ont dessiné la fresque du préau."
+        },
+        {
+          "id": "b",
+          "text": "Nos voisins profitent de ce beau temps d'automne.",
+          "misconceptionTag": "fr.voix.passif-sans-cod"
+        },
+        {
+          "id": "c",
+          "text": "Ma tante répond à tous ses courriers chaque soir.",
+          "misconceptionTag": "fr.voix.passif-sans-cod"
+        },
+        {
+          "id": "d",
+          "text": "Les athlètes sont arrivés au stade avant midi.",
+          "misconceptionTag": "fr.voix.passif-sans-cod"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Seul « dessiner » est suivi d'un COD, « la fresque du préau », qui peut devenir sujet : « La fresque du préau a été dessinée par les enfants. » « Profiter de » et « répondre à » ont un complément indirect, et « arriver » n'a aucun complément d'objet : rien ne peut devenir sujet du passif.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans cette série, sélectionne chaque phrase qui peut passer à la forme passive.",
+      "type": "multi",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un photographe a surpris le héron en plein vol."
+        },
+        {
+          "id": "b",
+          "text": "Cette maison appartient à mon grand-père."
+        },
+        {
+          "id": "c",
+          "text": "Les invités sont partis avant minuit."
+        },
+        {
+          "id": "d",
+          "text": "Mon frère a repeint la clôture ce week-end."
+        },
+        {
+          "id": "e",
+          "text": "Ma sœur téléphone à son amie chaque soir."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "« Surprendre le héron » et « repeindre la clôture » ont un COD, qui devient sujet : « Le héron a été surpris par un photographe », « La clôture a été repeinte par mon frère ». « Appartenir à » et « téléphoner à » ont un complément indirect, et « partir » est intransitif : ces trois phrases n'ont pas de COD.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle transformation de la phrase active en phrase passive est possible et correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le maire a répondu à la lettre. → La lettre a été répondue par le maire.",
+          "misconceptionTag": "fr.voix.passif-sans-cod"
+        },
+        {
+          "id": "b",
+          "text": "Les maçons ont terminé le mur. → Le mur a été terminé par les maçons."
+        },
+        {
+          "id": "c",
+          "text": "Léa a téléphoné au médecin. → Le médecin a été téléphoné par Léa.",
+          "misconceptionTag": "fr.voix.passif-sans-cod"
+        },
+        {
+          "id": "d",
+          "text": "Les élèves ont parlé de cette visite. → Cette visite a été parlée par les élèves.",
+          "misconceptionTag": "fr.voix.passif-sans-cod"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Terminer » a pour COD « le mur » : il devient sujet, « ont terminé » donne « a été terminé » et le participe s'accorde avec le nouveau sujet masculin singulier. « Répondre à », « téléphoner à » et « parler de » se construisent avec « à » ou « de » : leur complément n'est pas un COD, la transformation est impossible.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Mets à la forme passive : « Les gardiennes ont prévenu les visiteurs. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les visiteurs ont été prévenues par les gardiennes."
+        },
+        {
+          "id": "b",
+          "text": "Les gardiennes ont été prévenus par les visiteurs.",
+          "misconceptionTag": "fr.voix.roles-inverses"
+        },
+        {
+          "id": "c",
+          "text": "Les visiteurs ont été prévenus par les gardiennes."
+        },
+        {
+          "id": "d",
+          "text": "Les visiteurs ont été prévenu par les gardiennes.",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le COD « les visiteurs » devient sujet, le sujet « les gardiennes » devient complément d'agent. « Ont prévenu » est un passé composé, donc « ont été ». Le participe s'accorde avec le sujet, masculin pluriel : « prévenus », et non avec le complément d'agent féminin.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Voici une phrase active : « Les orages avaient détruit les récoltes. » Quelle phrase passive lui correspond ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les récoltes ont été détruites par les violents orages.",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
+        },
+        {
+          "id": "b",
+          "text": "Les récoltes avaient été détruite par les orages.",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "Les récoltes ont été détruite par les orages."
+        },
+        {
+          "id": "d",
+          "text": "Les récoltes avaient été détruites par les orages."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le COD « les récoltes » devient sujet. « Avaient détruit » est un plus-que-parfait : « être » prend le même temps, « avaient été ». Le participe s'accorde avec le sujet féminin pluriel : « détruites ». Changer le temps en « ont été » ou laisser le participe invariable sont deux erreurs distinctes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève écrit : « Ses cousines ont été téléphonées par elle. » à partir de « Elle a téléphoné à ses cousines. » Quelle est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le verbe n'a pas de COD, donc la phrase n'a pas de passif."
+        },
+        {
+          "id": "b",
+          "text": "Le temps n'est pas conservé : il fallait « sont téléphonées ».",
+          "misconceptionTag": "fr.voix.temps-non-conserve"
+        },
+        {
+          "id": "c",
+          "text": "Le participe « téléphonées » devrait rester invariable.",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        },
+        {
+          "id": "d",
+          "text": "Le complément d'agent devrait ouvrir la phrase passive."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Téléphoner à » est suivi d'un complément introduit par « à » : « ses cousines » n'est pas un COD et ne peut pas devenir sujet. L'accord « téléphonées » et le temps « ont été » suivent bien les règles du passif ; c'est la transformation elle-même qui est impossible.",
+      "difficulty": 3
+    }
+  ]
+}
