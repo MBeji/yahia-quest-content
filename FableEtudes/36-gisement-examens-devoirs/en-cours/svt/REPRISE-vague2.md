@@ -13,3 +13,12 @@
   `mergee`, `lignes.tsv` à compléter des 72 lignes C07–C24, `fiche.md`, PILOTAGE) → merge →
   `apply-content` `subjects=sciences-vie-terre` → drift → bascule `publiee`.
 - **Moteur** : `/home/user/eng-svtses` lit `/home/user/wt-svtses/content`.
+
+## Reprise du 2026-10-16
+
+- Vérifié avant reprise : aucune autre session sur la SVT 9ᵉ (PR ouvertes, branches, `main` depuis le
+  2026-10-14 : seul le devoir maths D34, livré #691/#693). Réservation tracée dans `PILOTAGE.md`
+  (PR `claude/reservation-svt-9eme-vague2`).
+- Audits opus L11, L12, L13 relancés (rapports `audit-svt-L1N.md`).
+- Devoirs D01–D06 : lecteur lancé (salle blanche — lignes `lecture-9eme/svt/lines/D0N.tsv`, journal
+  `JOURNAL-lecture-devoirs.md`, snapshots locaux `/tmp/claude-0/devoirs-snapshots/svt/`, hors dépôt).
