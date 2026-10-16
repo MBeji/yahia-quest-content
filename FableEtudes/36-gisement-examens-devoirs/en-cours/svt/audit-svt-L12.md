@@ -226,3 +226,157 @@ juste sans déclaration.
 
 **Point signalé : la 9ᵉ question (anse avec maltose seul).** Juste et fidèle à l'esprit, mais sans source
 et étiquetée 2016 : à supprimer (ci-dessus).
+
+---
+
+## m036 : `11-ad-dawra-al-jinsiya/exercices/10-examens-2015-ex3-2009-ex3-cycle-endometre-phases-synchronie.json` (d2, 7 q.)
+
+Fidélité : 2009 ex. 3 (doc. 2 : huit repères, dont six gardés et renumérotés : col et cavité retirés ;
+doc. 3 : coupe à glande enroulée et vaisseau sinueux), 2015 ex. 3 (intervalles 1–5, 5–14, 14–28 ; repères
+1 = glandes, 2 = vaisseaux), 2017 ex. 1 item 2 (coupe à glandes tubulaires et vaisseaux, clé « تتزامن مع
+الطّور اللّوتيني »), 2009 ex. 1 item 4 (reprise des quatre propositions) : conformes. Rendu Chromium à
+232 px (figures de Q1, Q3, Q4, Q6) : lisibles. **Les figures de Q3 et Q6 sont le même dessin** (Q3 avec
+repères, Q6 sans).
+
+| Q | type | ma réponse | clé | verdict | motif court |
+| --- | --- | --- | --- | --- | --- |
+| 1 | matching d2 | 1-قناة البيض, 2-المبيض, 3-القمع, 4-المهبل, 5-العضليّة, 6-البطانة | idem | réserve | le trait du repère 6 s'arrête pile sur la limite muscle/muqueuse |
+| 2 | mcq d2 | a | a | réserve | clé de 37 car. contre 64–75 : la plus courte de loin ; c ajoute « في الرّحم » qui n'est pas dans le sujet |
+| 3 | matching d2 | 1-غدّة, 2-وعاء, 3-العضليّة, 4-التّجويف | idem | réserve | repères 3 et 4 ajoutés au dessin de 2015 (acceptable : couches dessinées) ; l'explication décrit la coupe de Q6 |
+| 4 | mcq d2 | b | b | réserve | la clé est livrée par les items de Q7 (« طور ما بعد الحيض (من اليوم 5 إلى 14) »…) |
+| 5 | mcq d2 | c | c | réserve | clé de 47 car. contre 63–68 ; l'énoncé décrit le شبيك et sa période (fuite partielle vers Q6) |
+| 6 | mcq d3 | a | a | ERREUR de doublon | = 11/05-tadrib Q3 (« الشّبيك… يتكوّن في ») et quiz Q4, que la consigne interdit de redemander ; même dessin que Q3 dont l'explication donne la justification |
+| 7 | matching d3 | l1-r2, l2-r3, l3-r1 | idem | réserve | ses membres gauches nomment les phases avec leurs jours : clé de Q4 |
+
+Étage d2 avec Q6–Q7 en d3 : conforme à l'usage (07/07, 08/12 de la vague 1). Rampe 2-2-2-2-2-3-3 : OK.
+Notions : toutes au cours 10 ou 11 (« قمع فالوب » au cours 10 § tableau des organes ; « الشّبيك » au cours
+11 § phases utérines).
+
+### Défauts m036
+
+- **[MAJOR] Q6 : doublon interdit.** Une coupe à « glandes tubulaires sinueuses entourées d'un réseau dense
+  de vaisseaux » → « طور ما قبل الحيض » : c'est 11/05-tadrib Q3 (« الشّبيك الرّحمي — غدد أنبوبيّة ملتوية تحيط
+  بها شبكة كثيفة من الأوعية — يتكوّن في ») et le quiz Q4, que l'affectation nomme dans « ne pas
+  redemander ». La moitié « justification » du 2×2 n'ajoute rien : la figure est celle de Q3, dont
+  l'explication dit « أنبوب طويل ملتوٍ… وهو كثيف في هذه البطانة », et l'énoncé de Q5 la décrit aussi. La
+  variante 2017 (« تتزامن مع الطّور اللّوتيني ») ne sauve pas la question : 11/07 Q4 (2025) et 11/04-defi Q5
+  la posent déjà, et Q7 aussi. Correctif : **supprimer Q6** ; titre : « 🏛️ مناظرتا 2009 و2015 · بطانة الرّحم
+  وطوراها المتزامنان ⭐⭐ » ; retirer 2017 ex. 1 item 2 des sources de la mission dans `gisement.json` (item
+  écarté comme doublon). La mission garde 6 questions (Q1–Q5, Q7) : le minimum de R5 est tenu.
+- **[MAJOR] Q7 → Q4.** Les membres gauches « طور ما بعد الحيض (من اليوم 5 إلى 14) » et « طور ما قبل الحيض
+  (من اليوم 14 إلى 28) » donnent les noms des intervalles ب et ج que Q4 demande. Correctif : l1 « طور
+  الحيض », l2 « طور ما بعد الحيض », l3 « طور ما قبل الحيض » (sans les jours) ; énoncé inchangé (il ne
+  nomme aucune phase). Les paires restent uniques.
+- **[MAJOR] Q2 : clé la plus courte de moitié.** 37 car. contre 64, 74 et 75 : les distracteurs ont été
+  allongés, la clé est restée nue. Correctif, reprendre les propositions du sujet 2009 :
+  b « تتميّز بحركة ذاتيّة » (19) · c « تتكوّن خلال الطّور اللّوتيني » (28) · d « تعيش أسبوعًا في المسالك
+  الجنسيّة الأنثويّة » (42) ; clé a inchangée (37) : 3ᵉ sur 4. Cela retire aussi l'ajout « في الرّحم » de c,
+  qui n'est pas dans le sujet et le rendait faux deux fois. L'explication reste juste.
+- **[MINOR] Q5 : clé la plus courte** (47 contre 63–68). Correctif : c = « تهيّئ البطانة لاستقبال مضغة
+  وتثبيتها فيها وتغذيتها إن حدث إلقاح » (63 car. : à égalité avec b, sous a et d 68).
+- **[MINOR] Q1 : repère 6 ambigu.** Le trait (`x2="124" y2="140"`) s'arrête sur le bord gauche de la
+  muqueuse (x ≈ 123 à y = 140), à égale distance de la musculeuse (5). Correctif : `x2="131" y2="142"`
+  (dans la bande claire, entre le bord ≈ 123 et la cavité ≈ 140). Aucun déplacement d'organe.
+
+**Point signalé : proximité des phases utérines avec 11/05 Q3 et le quiz Q4.** Tranché : **Q4** (nommer
+les trois phases sur une courbe d'épaisseur découpée en intervalles) n'est pas un doublon : ni 05-tadrib Q3
+ni le quiz Q4 ne demandent de lire la courbe, et 02-tamrin Q6 ne pose que la phase de reconstruction. **Q6**
+en est un (ci-dessus, à supprimer). **Q5** frôle le même fait (le شبيك) mais demande son intérêt : c'est
+la question 3 de 2015, à garder.
+
+---
+
+## m037 : `12-takawwun-al-janin/exercices/11-examens-2018-ex4-2013-ex5-calendrier-ovaire-endometre-grossesse.json` (d4, 11 q.)
+
+Fidélité : 2018 ex. 4 (calendrier : avril 6–9, mai 2–5 et 28–31, juin sans règles ; femme mariée de 30 ans ;
+dessins d'ovaire : avril, follicules à cavité de tailles voisines, ni corps jaune ni ovule ; mai, follicule
+mûr, ovule hors de l'ovaire, corps jaune ; juin, corps jaune plus volumineux ; tableau d'épaisseur 4 → 7,4 mm
+sur les jours impairs 1–29), 2013 ex. 5 (règles 1–5 avril et 1–5 mai ; plateau ~5,2 mm vers le 20 avril,
+~5,3 mm vers le 21 mai, sans baisse au-delà du 30 mai) : conformes. SVG de Q3 (tous les points du tableau)
+et de Q11 (chutes à ~1 mm vers le jour 6, plateaux, bandes de règles 1–5) rendus à 232 px : fidèles et
+lisibles ; en Q11, les étiquettes de mois « 4 » et « 5 » au-dessus de la courbe se lisent comme des valeurs
+d'épaisseur : [MINOR], écrire « أفريل » et « ماي » (l'énoncé les nomme déjà).
+
+| Q | type | ma réponse | clé | verdict | motif court |
+| --- | --- | --- | --- | --- | --- |
+| 1 | mcq d2 | a (26 j) | a | ERREUR de doublon | = 11/09 Q5 (calendrier → cycle de **26** jours), même geste, même nombre |
+| 2 | multi d2 | a, b | a, b | réserve | l'énoncé « لا ينضج أيّ منها » livre Q6 ; les deux clés ont le même gabarit de phrase, les trois distracteurs non |
+| 3 | multi d2 | a, b, c | a, b, c | OK | 3 sur 6 ; +1 contre +0,4 vérifié ; 6 ≠ 3,7 |
+| 4 | mcq d3 | c (13 mai) | c | ERREUR de doublon | = 11/09 Q6 (cycle de 26 jours → jour 12) ; b porte une étiquette alors qu'elle exécute deux erreurs |
+| 5 | mcq d3 | b (23 juin) | b | réserve | clé de 29 car. contre 51–56 ; b et c affichent « زائد 26 يومًا » : livrent Q1 |
+| 6 | mcq d3 | a | a | ERREUR de fuite | l'énoncé contient la clé (« جريبات… لا ينضج منها شيء » → « لم ينضج أيّ جريب ») |
+| 7 | mcq d3 | b (juin) | b | réserve | clé livrée par l'énoncé de Q9 (« قيس سمك بطانة الرّحم في جوان… فتزايد باستمرار ») |
+| 8 | multi d3 | a, b | a, b | réserve | « أيّ الفرضيّتين » annonce deux bonnes réponses |
+| 9 | mcq d3 | d (حامل) | d | réserve | énoncé qui livre Q7 ; c (« في طور الحيض ») nie la prémisse « دون أن يظهر » |
+| 10 | ordering d3 | a b c d e | a b c d e | réserve | ordre unique (nidation vers J+7, avant l'échéance du corps jaune) ; l'énoncé « لدى امرأة حامل… في جوان » donne la clé de Q9 |
+| 11 | mcq d3 | c (16 avril, 16 mai) | c | OK | 2×2 propre (jour 16 contre jour du plateau) ; hypothèse déclarée |
+
+Étage d4, rampe 2-2-2-3-…-3 : OK (usage vague 1). Notions : toutes au cours 11 (durée du cycle, J = durée −
+14, facteurs « نفسيّة أو صحّيّة أو مناخيّة » au § 1, corps jaune, règles par baisse des hormones) et 12
+(fécondation, nidation vers le 7ᵉ jour).
+
+### Défauts m037
+
+- **[MAJOR] Q1 et Q4 : doublons de gabarit de 11/09 Q5–Q6.** Calendrier de règles → cycle de 26 jours → ovulation
+  au jour 12 : 11/09 (2021) pose exactement ces deux gestes avec **les mêmes nombres** (26 jours, jour 12),
+  et 11/06-defi-concours Q1 le même calcul sur d'autres dates. Le plan a écarté le calendrier de 2012 pour
+  ce motif ; celui de 2018 tombe sous la même règle pour ces deux questions. Correctif : **supprimer Q1 et
+  Q4.** Q5 garde le calendrier (elle exige la durée du cycle, puis la prévision : geste neuf), et les
+  explications de Q4/Q5 qui livraient « 26 » à Q1 n'ont plus de cible. La mission garde 9 questions.
+  (Si l'orchestrateur garde Q4 : retirer l'étiquette de b, « اليوم 18… 19 ماي » = fin des règles + 14 jours,
+  soit deux erreurs, qui doit rester muette.)
+- **[MAJOR] Q6 : la clé est dans l'énoncé (et dans celui de Q2).** « جريبات متقاربة الحجم لا ينضج منها شيء »
+  puis la clé « لم ينضج أيّ جريب ». « Aucun ne mûrit » est l'inférence demandée, pas une donnée du dessin
+  (la transcription dit : follicules à cavité, tailles voisines). Correctif :
+  - Q6 énoncé : « (مناظرة 2018) تبيّن رسوم المبيض لهذه المرأة في أفريل عدّة جريبات ذات تجويف متقاربة الحجم، ولا
+    جسم أصفر في المبيض ولا بويضة خارجه، بينما يظهر في رسوم ماي جريب ناضج كبير التّجويف، رغم أنّ حيضها ظهر في
+    أفريل أيّام 6 و7 و8 و9. ما السّبب المباشر لغياب الإباضة في أفريل؟ » (options inchangées) ;
+  - Q2, ligne d'avril : « في أفريل: عدّة جريبات ذات تجويف متقاربة الحجم، ولا جسم أصفر في المبيض ولا بويضة خارجه ».
+  Toutes ces données sont garanties par la transcription.
+- **[MAJOR] Q9 → Q7, et Q10 → Q9.** L'énoncé de Q9 dit que l'épaisseur a été mesurée « في جوان » et croît
+  sans baisse : c'est la clé de Q7. L'énoncé de Q10 dit « غياب الحيض في جوان لدى امرأة حامل » : c'est la clé
+  de Q9. Correctifs :
+  - Q9 énoncé (180 car.) : « (مناظرة 2018) هذه المرأة منتظمة الدّورة، ومرّ الموعد المنتظر للحيض في جوان دون أن
+    يظهر، وظهر في رسم مبيضها لشهر جوان جسم أصفر أكبر حجمًا منه في ماي. ما حالتها الفيزيولوجيّة الأرجح؟ »
+    (le corps jaune plus volumineux suffit à trancher entre retard et grossesse ; la transcription le garantit) ;
+  - Q10 énoncé : « (مناظرة 2018) رتّب الأحداث التي تؤدّي إلى غياب الحيض عند حدوث حمل، من أوّلها إلى آخرها. »
+    (items inchangés : l'ordre reste unique).
+- **[MAJOR] Q9 c nie la prémisse.** « في طور الحيض » quand l'énoncé pose que les règles ne sont pas venues.
+  Correctif (84 car. ; clé d 78, b 77, a 88 : la clé reste 2ᵉ plus courte) :
+  c = « حامل: البطانة هي التي تفرز الهرمونات فتحافظ على الجسم الأصفر وتمنع ضموره فيغيب الحيض »
+  (étiquette `bio.cycle.uterus-autonome` : l'utérus qui commande l'ovaire). Dans l'explication, remplacer
+  « وطور الحيض يتهدّم فيه السّمك لا يتزايد » par « والمبيض هو الذي يقود البطانة بهرموناته، لا العكس ».
+- **[MAJOR] Q8 : le duel annonce le nombre de bonnes réponses.** « أيّ الفرضيّتين » : on coche deux cases
+  sans réfléchir au compte. Correctif : « …أيّ العبارات التّالية فرضيّة وجيهة تفسّر غياب الحيض في جوان؟ »
+  (options inchangées).
+- **[MINOR] Q2 : gabarit commun aux deux clés.** a et b suivent « يظهر في ماي … ولا يظهر في أفريل », aucun
+  distracteur. Correctif pour e : « تظهر في أفريل بويضة خارج المبيض ولا تظهر في ماي » (même gabarit, faux :
+  inversion des mois ; 2 bonnes sur 5 inchangé).
+- **[MAJOR] Q5 : clé la plus courte de moitié, et vote sur « 26 ».** Clé b « 23 جوان: 28 ماي زائد 26 يومًا »
+  (29 car.) contre 51–56 ; b et c affichent « زائد 26 يومًا » (la durée du cycle, clé de Q1). Correctif :
+  options en dates nues, a « 25 جوان », b « 23 جوان » (clé), c « 26 جوان » (étiquette
+  `bio.cycle.compte-depuis-la-fin-des-regles` gardée : 31 mai + 26), d « 28 جوان » ; toutes de 7 car. Le
+  calcul reste dans l'explication, inchangée.
+
+**Points signalés : le calendrier 2018.** Tranché. Le cycle d'avril dure bien 26 jours (6 avril → 2 mai :
+24 + 2), comme celui de mai (2 → 28 mai) ; la mission ne l'utilise nulle part, et la « régularité » que pose
+Q5 est confirmée par ces deux durées égales. L'absence d'ovulation en avril ne peut se lire que sur le
+dessin (le calendrier montre un cycle d'avril normal, terminé par les règles du 2 mai) : c'est bien ce que
+demande le sujet (« بالاعتماد على معطيات الوثيقة 3 وعلى إجابتك السابقة » : la comparaison des ovaires), donc
+justification acceptable, **à condition** que l'énoncé décrive le dessin et non l'inférence (correctif de
+Q6 ci-dessus).
+
+**Points signalés : les dates calculées.** 13 mai : 28 − 2 = 26 jours, 26 − 14 = jour 12, jour 1 = 2 mai →
+13 mai : **juste** (mais question à supprimer, doublon). 16 avril : règles le 1ᵉʳ avril puis le 1ᵉʳ mai,
+cycle de 30 jours (avril en a 30), 30 − 14 = jour 16 → 16 avril : **juste**. 16 mai : la grossesse empêche
+de mesurer le cycle de mai ; l'hypothèse « cycle de mai = cycle d'avril » est la seule qui permette la
+réponse, elle est **déclarée dans l'énoncé** (« نفترض أنّ دورة ماي تدوم 30 يومًا مثل دورة أفريل ») et
+conforme à « دورة منتظمة » : **juste et honnête**. Le distracteur « 20 أفريل و21 ماي » (début du plateau)
+exécute une vraie erreur de lecture.
+
+**Points signalés : les fuites jugées inévitables.** Mise en ordre de m037 (Q10) : sa fuite vers Q9 venait
+de l'énoncé (« امرأة حامل… جوان »), **évitable** (correctif ci-dessus) ; ses items (corps jaune maintenu)
+restent un fait du cours, acceptable. Explications de Q4/Q5 vers Q1 : sans objet si Q1 et Q4 sont supprimées ;
+sinon, sur la route Q1 (d2) passe avant, et seules les options de Q5 posaient problème. Q8 → Q9 :
+**acceptable** : Q8 garde deux hypothèses (grossesse **et** retard), elle ne tranche pas ; Q9 tranche par le
+corps jaune plus volumineux, donnée absente de Q8.
