@@ -1,0 +1,190 @@
+{
+  "title": "⚔️ Boss de devoir ⭐⭐⭐ : du complément de temps à la subordonnée",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Hatem guide un groupe de randonneurs. Associe chaque phrase au rapport que l'action de sa proposition principale entretient avec celle de sa subordonnée.",
+      "type": "matching",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Hatem attend sous le chêne jusqu'à ce que les randonneurs reviennent."
+        },
+        {
+          "id": "l2",
+          "text": "Hatem prépare le thé pendant que les randonneurs se reposent."
+        },
+        {
+          "id": "l3",
+          "text": "Hatem éteint le feu aussitôt que les randonneurs repartent."
+        },
+        {
+          "id": "r1",
+          "text": "Postériorité"
+        },
+        {
+          "id": "r2",
+          "text": "Antériorité"
+        },
+        {
+          "id": "r3",
+          "text": "Simultanéité"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r3"
+          ],
+          [
+            "l3",
+            "r1"
+          ]
+        ]
+      },
+      "explanation": "Le rapport se lit depuis la principale. Hatem attend avant le retour des randonneurs : son attente précède l'action de la subordonnée, c'est une antériorité. Préparer le thé et se reposer se déroulent en même temps : simultanéité. Hatem éteint le feu après le départ des randonneurs, dont il est la suite immédiate : c'est une postériorité, et non une simultanéité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Hatem note dans son carnet : « Le groupe a dîné dès que le feu a pris, mais avant que la lune se lève. » Remets dans l'ordre où elles se produisent les trois actions de cette phrase.",
+      "type": "ordering",
+      "options": [
+        {
+          "id": "a",
+          "text": "La lune se lève."
+        },
+        {
+          "id": "b",
+          "text": "Le groupe dîne."
+        },
+        {
+          "id": "c",
+          "text": "Le feu prend."
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "b",
+          "a"
+        ]
+      },
+      "explanation": "« Dès que le feu a pris » place le dîner après la prise du feu, aussitôt : le feu prend en premier. « Avant que la lune se lève » place le dîner avant le lever de la lune, qui vient donc en dernier. Le dîner occupe le milieu de la suite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Hatem veut remplacer le complément de temps par une subordonnée, sans changer le sens : « Dès le lever du jour, il réveille le groupe. » Quelle phrase convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avant que le jour se lève, il réveille le groupe.",
+          "misconceptionTag": "fr.temps.rapport-temporel-confondu"
+        },
+        {
+          "id": "b",
+          "text": "Tandis que le jour se lève, il réveille le groupe.",
+          "misconceptionTag": "fr.temps.rapport-temporel-confondu"
+        },
+        {
+          "id": "c",
+          "text": "Dès que le jour se lève, il réveille le groupe."
+        },
+        {
+          "id": "d",
+          "text": "Jusqu'à ce que le jour se lève, il réveille le groupe.",
+          "misconceptionTag": "fr.temps.rapport-temporel-confondu"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Dès » marque un enchaînement immédiat : le réveil suit aussitôt le lever du jour, c'est une postériorité, rendue par « dès que » + indicatif. « Avant que » et « jusqu'à ce que » placeraient le réveil avant le lever du jour ; « tandis que » le ferait coïncider avec lui sans qu'il en soit la suite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Hatem réécrit « Après l'arrivée du car au refuge, Hatem compte les sacs. » en gardant le sens. Quelle phrase est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avant que le car arrive au refuge, Hatem compte les sacs.",
+          "misconceptionTag": "fr.temps.rapport-temporel-confondu"
+        },
+        {
+          "id": "b",
+          "text": "Pendant que le car arrive au refuge, Hatem compte les sacs.",
+          "misconceptionTag": "fr.temps.rapport-temporel-confondu"
+        },
+        {
+          "id": "c",
+          "text": "Après que le car soit arrivé au refuge, Hatem compte les sacs.",
+          "misconceptionTag": "fr.mode.subjonctif-abusif"
+        },
+        {
+          "id": "d",
+          "text": "Après que le car est arrivé au refuge, Hatem compte les sacs."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'arrivée du car vient d'abord, le comptage ensuite : c'est une postériorité, donc « après que ». Cette conjonction se construit avec l'indicatif, ici le passé composé « est arrivé » qui marque l'action achevée. Le subjonctif « soit arrivé » est une erreur de mode ; « avant que » et « pendant que » changeraient l'ordre des actions.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "« Avant de servir le thé, Hatem lave les verres. » Quelle phrase reprend ce sens avec un verbe conjugué à la place de l'infinitif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Après qu'il serve le thé, Hatem lave les verres."
+        },
+        {
+          "id": "b",
+          "text": "Avant qu'il serve le thé, Hatem lave les verres."
+        },
+        {
+          "id": "c",
+          "text": "Après qu'il a servi le thé, Hatem lave les verres.",
+          "misconceptionTag": "fr.temps.rapport-temporel-confondu"
+        },
+        {
+          "id": "d",
+          "text": "Avant qu'il sert le thé, Hatem lave les verres.",
+          "misconceptionTag": "fr.mode.subjonctif-oublie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Hatem lave les verres avant de servir : l'action de la principale précède celle de la subordonnée, c'est une antériorité, donc « avant que » suivi du subjonctif présent, « qu'il serve ». « Après que » inverserait l'ordre des actions. Et l'indicatif « sert » ne suit pas « avant que », comme le subjonctif « serve » ne suivrait pas « après que ».",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Hatem relit sa phrase : « Avant que les alpinistes atteignent le col, le brouillard est tombé. » Quelle affirmation est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les alpinistes atteignent le col en premier : l'action de la principale suit celle de la subordonnée.",
+          "misconceptionTag": "fr.temps.rapport-temporel-confondu"
+        },
+        {
+          "id": "b",
+          "text": "Le brouillard est tombé en premier : l'action de la principale suit celle de la subordonnée."
+        },
+        {
+          "id": "c",
+          "text": "Le brouillard est tombé en premier : l'action de la principale précède celle de la subordonnée."
+        },
+        {
+          "id": "d",
+          "text": "Les alpinistes atteignent le col en premier : l'action de la principale précède celle de la subordonnée."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Avant que » place l'action de la principale avant celle de la subordonnée : le brouillard tombe d'abord, et les alpinistes n'atteignent le col qu'ensuite. Lire le rapport depuis la subordonnée inverse les rôles. Les deux affirmations mêlées sont incohérentes : elles nomment une action première puis décrivent l'autre rapport.",
+      "difficulty": 3
+    }
+  ]
+}

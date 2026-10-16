@@ -82,6 +82,14 @@ passé**. Il présente l'action comme **achevée**.
 Le temps de l'auxiliaire donne le nom du temps composé : _avait_ est à l'imparfait, donc _avait
 chanté_ est au plus-que-parfait.
 
+::: propriete
+Le choix de l'auxiliaire : la plupart des verbes prennent _avoir_ (_j'ai couru_, _il a marché_) ;
+prennent _être_ les verbes **pronominaux** (_il s'est levé_) et quelques verbes de **mouvement** ou de
+changement d'état : _aller, venir, arriver, partir, entrer, sortir, monter, descendre, tomber, rester,
+naître, mourir, devenir_ — _je suis allé_, _elles sont venues_. Cas-limite : avec un COD, _sortir_,
+_monter_ et _descendre_ reprennent _avoir_ : _il a sorti la voiture_.
+:::
+
 ::: exemple ce que l'auxiliaire ajoute exactement
 
 1. _Il **chante**._ → l'action est en cours maintenant, **car** le présent la saisit dans son
@@ -355,7 +363,10 @@ six verbes ne se forment **pas** sur _ils peuvent, ils font, ils savent_ : on é
 ::: propriete
 Cas-limites : avec _nous_ et _vous_, certains verbes reprennent le radical de _nous_ au présent —
 _que nous **venions**_, _que vous **preniez**_ (et non « viennions »). Et une opinion **affirmative**
-garde l'indicatif : _Je pense qu'il **a** raison_ / _Je ne pense pas qu'il **ait** raison._
+garde l'indicatif : _Je pense qu'il **a** raison_ / _Je ne pense pas qu'il **ait** raison._ Deux verbes
+trompeurs gardent eux aussi l'**indicatif**, parce qu'ils donnent le fait pour attendu ou pour certain :
+_espérer que_ et _être sûr que_ — _J'espère qu'il **viendra**_ (mais _Je souhaite qu'il **vienne**_), _Je
+suis sûr qu'il **viendra**._
 :::
 
 ::: verifie
