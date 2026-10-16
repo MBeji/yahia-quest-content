@@ -265,3 +265,7 @@ premières lignes de `prompt` à reprendre :
 
 R5 et R6 sont facultatifs. Une fois R1 à R4 appliqués tels quels, le lot est **prêt à livrer**, sans nouvelle
 re-vérification : aucune clé, aucune option et aucune étiquette ne change.
+
+## Verdict du pilote (2026-10-16)
+
+R1–R4 et R6 appliqués (journal fr-L03/CORRECTIONS.md), registre contrôlé contre les fichiers (etapes 10/10/12/8/8). **L03 prêt à livrer.**

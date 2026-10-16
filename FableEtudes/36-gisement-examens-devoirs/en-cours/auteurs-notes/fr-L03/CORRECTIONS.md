@@ -19,3 +19,11 @@ Générateurs : /tmp/claude-0/fr-gis/L03/gen_m013..m017.py (réécrivent les fic
 3. Risque de défendabilité accepté sur avis d'audit : m016 Q1 « finira ; montera » (deux futurs simples après « quand ») une fois la règle retirée, couvert par la consigne officielle « selon le cas » et le modèle du cours 06 ; m015 Q11 « m'apprenait » (imparfait de l'enseignement antérieur) ; m017 Q6 options « invitait » (imparfait, jugé faux avec « Hier soir »).
 4. Fuite mineure déclarée : m015 Q11 (« avait appris ») et Q12 (« avait apprises ») portent le même verbe ; Q12 teste l'imparfait/passé simple et l'accord, non la forme du plus-que-parfait.
 5. m013 Q6 (2003 a) : « puissent » figure aussi dans Q9 (triple 2018) ; accepté par l'audit.
+
+## Corrections R1–R4, R6 (re-vérification)
+- R1 : gisement.json relu juste avant l'écriture, seules les entrées C19#4, C03#4, C02#4, C05#4 modifiées (etapes 10 / 8 / 8 ; sources et notes de C03#4 et C05#4 comme prescrit) ; JSON revalidé.
+- R2 : m016, question 2006 : prompt entier remplacé (consigne officielle « au mode et au temps qui conviennent », une seule question). Texte vérifié contre 2006-unique.md.
+- R3 : m015 Q11 : explication remplacée par le texte du rapport.
+- R4 : m015 Q9 (2012 G) : consigne officielle « aux temps qui conviennent » + « débarquer » déclaré (vérifié contre 2012-generale.md).
+- R6 : m013 Q2 (« présente le fait comme attendu ») et m017 (accord félicité) : « Angel » retiré.
+- Aucune clé, option ni étiquette modifiée. Gates : content:check vert ; qa:strict 4 erreurs (ch. 03, autre lot, ignorées) ; tranche 05+06 inchangée (1 clé la plus longue structurelle m017, 1 paire proche 0,50 déclarée) ; lot-lint idem. R5 non faite.
