@@ -1,5 +1,5 @@
 {
-  "title": "🏛️ Examens 2001–2021 · remplacer un groupe nominal par le pronom qui convient ⭐⭐",
+  "title": "🏛️ Examens 2003–2021 · remplacer un groupe nominal par le pronom qui convient ⭐⭐",
   "difficulty": 2,
   "mode": "practice",
   "xpReward": 75,
@@ -25,11 +25,12 @@
         },
         {
           "id": "d",
-          "text": "Ses paroles les ont réconforté."
+          "text": "Ses paroles y ont réconforté.",
+          "misconceptionTag": "fr.pronom.y-pour-personne"
         }
       ],
       "correctOption": "b",
-      "explanation": "« Réconforter quelqu'un » : on réconforte l'enfant, sans préposition. Le groupe est un COD, on le remplace par le pronom « le », qui devient « l' » devant la voyelle. Le pronom se place devant l'auxiliaire : « l'ont réconforté ». « Lui » remplace un COI introduit par « à ».",
+      "explanation": "« Réconforter quelqu'un » : on réconforte l'enfant, sans préposition. Le groupe est un COD, on le remplace par le pronom « le », qui devient « l' » devant la voyelle. Le pronom se place devant l'auxiliaire : « l'ont réconforté ». « Lui » remplace un COI introduit par « à », et « y » ne reprend pas une personne.",
       "difficulty": 1
     },
     {
@@ -47,7 +48,7 @@
         },
         {
           "id": "c",
-          "text": "… pour cacher lui.",
+          "text": "… pour cacher le.",
           "misconceptionTag": "fr.pronom.place-apres-verbe"
         },
         {
@@ -181,11 +182,11 @@
         },
         {
           "id": "d",
-          "text": "leur"
+          "text": "lui"
         }
       ],
       "correctOption": "a",
-      "explanation": "On consacre un livre « à quelque chose » : « à ces témoignages » est une chose introduite par « à », qu'on remplace par « y » : « Elle y consacre tout un livre ». « En » remplace un complément introduit par « de », « les » un COD, et « leur » ne reprend pas des choses.",
+      "explanation": "On consacre un livre « à quelque chose » : « à ces témoignages » est une chose introduite par « à », qu'on remplace par « y » : « Elle y consacre tout un livre ». « En » remplace un complément introduit par « de », « les » un COD, et « lui », singulier, ne peut pas reprendre des témoignages.",
       "difficulty": 2
     },
     {
@@ -228,12 +229,12 @@
         },
         {
           "id": "c",
-          "text": "Pourtant ils laissent faire elle.",
-          "misconceptionTag": "fr.pronom.place-apres-verbe"
+          "text": "Pourtant ils laissent faire elle."
         },
         {
           "id": "d",
-          "text": "Pourtant ils laissent la faire."
+          "text": "Pourtant ils laissent la faire.",
+          "misconceptionTag": "fr.pronom.place-apres-verbe"
         }
       ],
       "correctOption": "b",
@@ -241,55 +242,29 @@
       "difficulty": 2
     },
     {
-      "prompt": "(Examen 2015 technique) Khalid est un jardinier généreux : « Lorsqu'un mendiant vient frapper à la porte de Khalid, Khalid nourrit toujours le mendiant. » On remplace le second « Khalid » et « le mendiant » par des pronoms. Quelle fin de phrase est correcte ?",
+      "prompt": "(Examen 2021 technique) Mary raconte : « Ma mère aime mes poèmes. Ma mère m'encourage à réciter mes poèmes devant nos proches. » Dans la seconde phrase, on remplace « Ma mère » et « mes poèmes » par des pronoms. Quelle seconde phrase est correcte ?",
       "options": [
         {
           "id": "a",
-          "text": "… il lui nourrit toujours.",
-          "misconceptionTag": "fr.pronom.cod-coi-confondus"
+          "text": "Elle m'encourage à les réciter devant nos proches."
         },
         {
           "id": "b",
-          "text": "… il nourrit toujours le.",
+          "text": "Elle m'encourage à réciter les devant nos proches.",
           "misconceptionTag": "fr.pronom.place-apres-verbe"
         },
         {
           "id": "c",
-          "text": "… le nourrit il toujours."
-        },
-        {
-          "id": "d",
-          "text": "… il le nourrit toujours."
-        }
-      ],
-      "correctOption": "d",
-      "explanation": "Le sujet « Khalid » est remplacé par « il ». « Nourrir quelqu'un » : « le mendiant » est un COD, remplacé par « le », qui se place devant le verbe : « il le nourrit toujours ». « Lui » remplace un COI introduit par « à ». L'ordre sujet, pronom, verbe ne s'inverse pas dans une phrase déclarative.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "(Examen 2021 technique) Mary raconte : « Ma mère aime mes poèmes. Ma mère m'encourage à réciter mes poèmes devant nos proches. » On remplace « ma mère » et « mes poèmes » par des pronoms. Quelles phrases sont correctes ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Elle les aime. Elle m'encourage à les réciter devant nos proches."
-        },
-        {
-          "id": "b",
-          "text": "Elle les aime. Elle m'encourage à réciter les devant nos proches.",
-          "misconceptionTag": "fr.pronom.place-apres-verbe"
-        },
-        {
-          "id": "c",
-          "text": "Elle leur aime. Elle m'encourage à les réciter devant nos proches.",
+          "text": "Elle m'encourage à leur réciter devant nos proches.",
           "misconceptionTag": "fr.pronom.cod-coi-confondus"
         },
         {
           "id": "d",
-          "text": "Elle leur aime. Elle m'encourage à réciter les devant nos proches."
+          "text": "Elle m'encourage à réciter leur devant nos proches."
         }
       ],
       "correctOption": "a",
-      "explanation": "« Aimer quelque chose » : « mes poèmes » est un COD pluriel, remplacé par « les ». Dans la seconde phrase, « mes poèmes » est le COD de l'infinitif « réciter » : le pronom se place devant cet infinitif, « à les réciter ». « Leur » remplace un COI introduit par « à ». « Ma mère » devient « elle ».",
+      "explanation": "« Elle » reprend « Ma mère », nommée dans la première phrase. « Mes poèmes » est le COD de l'infinitif « réciter » (réciter quelque chose) : on le remplace par « les », placé devant cet infinitif, « à les réciter ». « Leur » remplace un complément introduit par « à » qui désigne des personnes.",
       "difficulty": 2
     },
     {
