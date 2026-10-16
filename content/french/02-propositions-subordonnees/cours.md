@@ -89,6 +89,9 @@ l'antécédent **et prend sa fonction** dans la subordonnée.
    reprend un groupe en _de_. Résultat : _« L'épée **dont** il se sert est magique. »_
 3. **Refais le test** : _« j'ai confiance **en** cet ami »_ ; la préposition est _en_ et
    l'antécédent est une personne, donc **en qui** : _« un ami **en qui** j'ai confiance »_.
+4. **Avec une chose après une préposition** : « il s'assoit **sur** cette chaise » ; la
+   préposition est _sur_ et l'antécédent une chose, donc **lequel**, accordé avec _chaise_
+   (féminin singulier) : « la chaise **sur laquelle** il s'assoit ».
 
 :::
 

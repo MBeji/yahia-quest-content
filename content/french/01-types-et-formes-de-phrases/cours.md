@@ -117,6 +117,14 @@ reste sans article (« Il n'a **pas** faim »).
 :::
 
 ::: verifie
+Mets à la forme négative : « Elle mange des dattes. »
+
+---
+
+« Elle **ne** mange **pas de** dattes. » _Des_ précède le COD _dattes_ : après _pas_, il devient _de_.
+:::
+
+::: verifie
 Dis le contraire exact : _« Quelqu'un frappe encore à la porte. »_
 
 ---
