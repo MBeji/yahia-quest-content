@@ -23,7 +23,7 @@ lecture: vision
 
 ## Texte support (page 1, « THE TEXT »)
 
-- Référence imprimée : *Adapted from www.dailymail.co.uk/ (20 February 2020)* ; trois paragraphes repérés ①②③ ; environ 250 mots.
+- Référence imprimée : *Adapted from www.dailymail.co.uk/ (20 February 2020)* ; trois paragraphes repérés ①②③ ; environ 235 mots.
 - Résumé : une mère qui dirige une entreprise de nettoyage, excédée par le désordre de ses deux fils adolescents, leur fait signer un contrat qui prévoit une amende en argent pour chaque règle enfreinte (lit non fait, boissons ou déchets dans la chambre). Passée à la télévision, elle affirme que ces amendes apprennent aux enfants à se débrouiller ; certains téléspectateurs approuvent, d'autres jugent la méthode injuste. Depuis l'introduction des règles, la situation s'est améliorée et elle estime que le contrat a aidé ses fils à respecter les biens.
 - Citation utile à une question (paragraphe 3) : « I think the contract helped do that. »
 - Texte intégral : PDF officiel, sha256 au registre.
@@ -72,6 +72,6 @@ Write your post in the space provided below.
 
 DO NOT WRITE YOUR NAME. DO NOT MENTION YOUR SCHOOL.
 
-[cadre de rédaction de dix lignes de pointillés]
+[cadre de rédaction à lignes pointillées]
 
 Grille de notation imprimée : Adherence to task and content adequacy …/2 · Lexical appropriacy and grammar accuracy …/2 · Mechanical accuracy (punctuation, spelling and capitalization) …/2

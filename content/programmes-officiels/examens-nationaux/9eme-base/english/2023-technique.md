@@ -21,7 +21,7 @@ lecture: vision
 
 ## Texte support (page 1, « THE TEXT »)
 
-- Référence imprimée : *Adapted from https://www.herzindagi.com (Jan 12, 2022)* ; trois paragraphes repérés ①②③ ; environ 205 mots.
+- Référence imprimée : *Adapted from https://www.herzindagi.com (Jan 12, 2022)* ; trois paragraphes repérés ①②③ ; environ 165 mots.
 - Résumé : une électricienne de dix-neuf ans, fille d'un chauffeur, s'inscrit à une formation d'apprentie pour aider sa famille en difficulté financière ; elle a toujours aimé explorer les appareils électriques, et la formation lui permettra de poursuivre ses études et d'obtenir un diplôme de technologie. Elle travaille ensuite pour une compagnie d'électricité, seule femme de son lieu de travail, sans jamais se sentir traitée différemment. Elle rêve de devenir ingénieure en chef et conseille de ne jamais laisser la société décider à sa place.
 - Citation utile à une question (paragraphe 3) : « You should never let society decide for you. »
 - Texte intégral : PDF officiel, sha256 au registre.
@@ -87,4 +87,4 @@ Write an **eight**-line article for your school club magazine in which you descr
 
 DO NOT WRITE YOUR NAME. DO NOT MENTION YOUR SCHOOL. [encadré]
 
-[cadre de rédaction de huit lignes de pointillés]
+[cadre de rédaction à lignes pointillées]

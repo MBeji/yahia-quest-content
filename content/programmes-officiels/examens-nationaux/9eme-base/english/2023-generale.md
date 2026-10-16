@@ -84,4 +84,4 @@ Write a **ten**-line article for your school magazine in which you advise them t
 
 DO NOT WRITE YOUR NAME. DO NOT MENTION YOUR SCHOOL. [encadré]
 
-[cadre de rédaction de dix lignes de pointillés]
+[cadre de rédaction à lignes pointillées]
