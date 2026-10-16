@@ -73,3 +73,156 @@ l'énoncé, à juste titre) ; « أغذية بنّاءة » est au cours 04 (§ 
   فالزّيادة 85 − 40 = 45 غ. الخطأ الشّائع: أخذ الفرق بين اليومين 80 و100 (25 غ) أو بين اليومين 40 و120 (70 غ). »
 
 **Point signalé : proximité de l'absorption avec 05/08 Q6–Q7.** Voir § fin (tranché avec m034 Q5).
+
+---
+
+## m034 : `05-al-hadm/exercices/10-examens-2017-ex4-et-annales-amidon-salive-suc-gastrique-intestinal.json` (d3, 10 q.)
+
+Fidélité : 2017 ex. 4 (tubes 1–4, courbes A/B : 20 → ~17 g/L à 20 min puis 0 à 60 min, croisement vers
+30 min à ~15 g/L, tableau 100/100/5), 2009 ex. 4 (tableau +/−, 15 min, source de A = la bouche), 2007 ex. 4
+q3 (salive + eau distillée, 15 min, eau iodée jaune, Fehling rouge brique), 2015 ex. 1 item 3 (oxalate) :
+conformes. SVG de Q4 recalculé : courbe 1 à 17,0 g/L à 20 min, croisement vers 28–30 min à ~15 g/L,
+courbe 2 à ~20 g/L à 60 min : fidèle. Unités d'axe en latin (« g/L », « min ») dans un SVG arabe : usage
+déjà admis en vague 1, pas un défaut.
+
+| Q | type | ma réponse | clé | verdict | motif court |
+| --- | --- | --- | --- | --- | --- |
+| 1 | mcq d2 | b | b | OK | 2×2 propre ; d (« إلى بروتيدات ») faible |
+| 2 | mcq d2 | a | a | ERREUR de doublon | = patron 05/02-tamrin Q4 (« ما النّاتج في أنبوب النّشا مع اللّعاب في 37 درجة؟ ») ; mêmes 4 options que m033 Q2 |
+| 3 | mcq d2 | c | c | réserve | clé la plus courte (69 contre 76–79) ; fuite reçue de Q10 (« فهلنق السّاخن ↔ الجليكوز وسكّر الشّعير ») |
+| 4 | mcq d3 | d | d | OK | 2×2 propre (nom de B × rôle du suc), option à deux erreurs (c) muette |
+| 5 | mcq d3 | a | a | réserve | b (« إلى مغذّيات أبسط منه ») nie la prémisse « مغذٍّ بسيط » de l'énoncé ; clé la plus courte (90 contre 106–122) |
+| 6 | ordering d3 | a b c d e | a b c d e | réserve | ordre unique ; items a, d, e livrent Q2 (سكّر الشّعير), Q4 (جليكوز + العصارة المعويّة), Q5 (امتصاص) |
+| 7 | mcq d3 | c | c | OK | 2×2 propre (A × B), deux options à deux moitiés fausses muettes |
+| 8 | mcq d3 | a | a | ERREUR de doublon | même fait que 05/02-tamrin Q2 (amylase sur blanc d'œuf) et quiz Q4 (trypsine sur amidon) ; son énoncé livre la moitié de Q7 ; clé la plus courte (73 contre 82–87) |
+| 9 | mcq d3 | b | b | réserve | a (« يحتوي أصلًا على نشا ») recouvre en partie la clé (des restes d'un repas amylacé) |
+| 10 | matching d3 | l1-r3, l2-r4, l3-r1, l4-r2 | idem | réserve | livre la clé de Q3 (« محلول فهلنق السّاخن ↔ الجليكوز وسكّر الشّعير ») ; trois paires sur quatre déjà posées en 04 |
+
+Étage d3, rampe 2-2-2-3-3-3-3-3-3-3 : OK. Notions : « سكّر مختزل » (Q9, explication de Q3) n'est pas au
+cours (04 et 05 disent « سكّر » ou « جليكوز ») : [MINOR], écrire « سكّر » ou « سكّر كالجليكوز ».
+
+### Défauts m034
+
+- **[MAJOR] Q2 : doublon du patron.** 05/02-tamrin Q4 pose le même fait (amidon + salive à 37 degrés → سكّر
+  الشّعير), avec trois des quatre mêmes options ; les quatre options sont aussi celles de m033 Q2 (clé
+  différente). Correctif : **supprimer Q2** (Q3 garde « عنصر جديد أ » défini dans son énoncé et reste
+  autonome). La mission passe à 9 questions, puis à 8 avec le point suivant.
+- **[MAJOR] Q8 : doublon de fait et fuite vers Q7.** « La salive ne digère pas les protides parce que son
+  enzyme est spécifique » est déjà posé par 05/02-tamrin Q2 et le quiz Q4 (même geste, autre enzyme), et
+  Q7 conclut déjà « لكلّ عصارة مادّتها ». Son énoncé (« عصارة هاضمة أ مصدرها الفم… اختفى النّشا… بقيت
+  البروتيدات ») donne la première moitié de Q7. Correctif : **supprimer Q8** (2009 reste représenté par Q7).
+- **[MAJOR] Q10 → Q3 (et Q3 → Q10).** La paire « محلول فهلنق السّاخن ↔ الجليكوز وسكّر الشّعير » donne la clé
+  de Q3 (Fehling, et chauffé, contre d « دون تسخين ») ; l'explication de Q3 (« ونترات الفضّة كاشف أملاح
+  الكلور… ماء اليود فكاشف النّشا ») donne trois paires de Q10. Correctif : remplacer l'appariement par
+  l'item officiel de 2015 tel quel, en `mcq` d3 :
+  - énoncé : « (مناظرة 2015) نكشف عن أملاح الكلسيوم بإضافة: »
+  - options : a « محلول فهلنق السّاخن » (étiquette `bio.alim.reactifs-confondus`) · b « ماء اليود »
+    (`bio.alim.reactifs-confondus`) · c « أكسلات الأمونيوم » (clé) · d « نترات الفضّة »
+    (`bio.alim.reactifs-confondus`) ; longueurs 19 / 9 / 17 / 12 : la clé n'est ni la plus longue ni la
+    plus courte ;
+  - explication : « أكسلات الأمونيوم تعطي مع أملاح الكلسيوم راسبًا أبيض لا يسودّ في الضّوء. أمّا نترات
+    الفضّة فراسبها الأبيض يسودّ في الضّوء، وماء اليود ومحلول فهلنق لا يعطيان راسبًا أبيض. الخطأ الشّائع:
+    الخلط بين الرّاسبين الأبيضين. » (ne dit pas ce que révèle Fehling : aucune fuite vers Q3).
+  Et, dans l'explication de Q3, remplacer « ونترات الفضّة كاشف أملاح الكلور » par « ونترات الفضّة لا تكشف
+  عن السّكّر ».
+  Remarque : l'item est en mcq comme 04/05-tadrib Q1 (chlorures), mais sur un autre fait (calcium), que
+  rien ne pose encore en clé : pas un doublon.
+- **[MAJOR] Q6 : l'ordre livre Q2 et Q4.** Les items nomment le produit de la salive et celui du suc
+  intestinal, donc les clés de Q2 et de Q4 (moitié « جليكوز ») dans le donjon. Ce n'est pas inévitable.
+  Correctif (ordre a-b-c-d-e inchangé et toujours unique ; 54 à 74 car.) :
+  - a « يبدأ اللّعاب في الفم تفكيك جزء من النّشا إلى ناتج وسيط »
+  - b « يعبر ما بقي من النّشا المعدة دون أن تفكّكه العصارة المعديّة » (inchangé)
+  - c « تواصل أنزيمات المعي الدّقيق تفكيك ما بقي من النّشا إلى النّاتج الوسيط نفسه »
+  - d « يُفكَّك النّاتج الوسيط في المعي الدّقيق إلى الوحدة التّركيبيّة للنّشا »
+  - e « تعبر الوحدة التّركيبيّة للنّشا جدار المعي الدّقيق إلى الأوعية الدّمويّة »
+  La fuite résiduelle de b vers Q1 et de e vers Q5 est un fait du cours (05 § « تتبّع الخبز »), pas une
+  donnée de l'expérience : acceptable. L'explication de Q6 peut garder les noms (elle vient après Q1–Q5
+  sur la route).
+- **[MAJOR] Q5 : b nie la prémisse.** L'énoncé dit « مغذٍّ بسيط » ; b « تفكّكه… إلى مغذّيات أبسط منه » s'écarte
+  à vue, et la clé est la plus courte de 16 caractères. Correctif :
+  - énoncé : « (مناظرة 2017) ابتلع شخص 100 غ من سكّر ذائب في الماء (العنصر ب)، ثمّ قيست كمّيّة هذا العنصر في
+    مواضع من الأنبوب الهضميّ: » (suite inchangée) ;
+  - a (clé, 102 car.) : « العنصر ب لا يتغيّر في المعدة لأنّه بسيط، ثمّ يعبر معظمه جدار المعي الدّقيق إلى الأوعية: ظاهرة الامتصاص » ;
+  - c (106 car.) : « يبقى معظمه مخزّنًا في جدار المعي الدّقيق ولا يبلغ الدّم، فتنقص كمّيّته في تجويفه: ظاهرة التّخزين في الجدار » ;
+  - b (109) et d (106) inchangés. La clé n'est plus en tête courte que de 4 caractères, sans marqueur.
+- **[MINOR] Q9 a recouvre la clé.** « لعاب هذا الشّخص يحتوي أصلًا على نشا » peut se lire comme des restes du
+  repas. Correctif (105 car. ; clé b 85, c 88, d 82 : la clé reste 2ᵉ plus courte) :
+  a = « تفرز الغدد اللّعابيّة لهذا الشّخص نشا مع اللّعاب، وقد حوّله أنزيمه كلّه إلى سكّر خلال الدّقائق الخمس عشرة ».
+- **[MINOR] Q3 : clé la plus courte** (69 contre 76–79). À garder : la clé est la seule, avec d, sans
+  « يدلّ على » ; l'allonger de « يدلّ على السّكّر » la rendrait strictement la plus longue (86). Voir le
+  constat transversal sur les clés courtes.
+
+**Point signalé : les fuites « inévitables » de la mise en ordre.** Tranché : évitables pour Q2 et Q4
+(correctif ci-dessus), résiduelles et acceptables pour Q1 et Q5 (faits du cours).
+
+---
+
+## m035 : `05-al-hadm/exercices/11-examens-2016-ex4-2011-ex4-2012-ex2-anse-ligaturee-roles-intestin.json` (d3, 9 q.)
+
+Fidélité : 2016 ex. 4 (20 mL + 20 mL, tableau −/−, −/−, −/+, −/+, deux heures), 2011 ex. 4 (tableau des trois
+tubes ; 95 → 12 g et 5 → 88 g en 90 min), 2012 ex. 2 q1–q2, 2012 ex. 1 item 1 : conformes. Q9 n'a **aucune
+source** (voir plus bas).
+
+| Q | type | ma réponse | clé | verdict | motif court |
+| --- | --- | --- | --- | --- | --- |
+| 1 | multi d2 | a, b, e | a, b, e | OK | 3 sur 6 ; chaque énoncé vérifié contre le tableau |
+| 2 | mcq d2 | c | c | réserve | d (« الأنزيمات الموجودة في الأنبوب ») suppose des enzymes que le tube 1 n'a pas ; « عديد البيتيد » non glosé |
+| 3 | mcq d2 | b | b | OK | définition du cours 05 mot pour mot (« الخميلات: انثناءات دقيقة للغشاء السّيتوبلازميّ ») |
+| 4 | mcq d2 | d | d | OK | définition du cours 05 |
+| 5 | mcq d3 | a | a | réserve | clé = réunion des clés a + b de Q6 (fuite croisée) |
+| 6 | multi d3 | a, b | a, b | ERREUR de fuite | ses deux énoncés justes sont les deux moitiés de la clé de Q5, et l'explication de Q5 les nomme (« هضم » ، « امتصاص ») |
+| 7 | mcq d3 | b | b | réserve | d (« فتزايدت كمّيّتها فيه ») contredit le tableau (le contenu de l'intestin baisse) ; clé la plus courte |
+| 8 | matching d3 | l1-r3, l2-r1, l3-r2 | idem | réserve | chaque membre droit finit par son produit (« ← جليكوز ») : l'appariement se fait sur le produit seul, la séquence des sucs ne sert à rien ; « غليسيرول » mis pour « كحول دهنيّة » sans déclaration |
+| 9 | mcq d3 | a | a | ERREUR de source | expérience inventée, étiquetée « (مناظرة 2016) » ; clé de 42 car. contre 84–94, seule sans « لأنّ » |
+
+Étage d3, rampe 2-2-2-2-3-3-3-3-3 : OK. Q3 : la clé b est celle du cours 05 (« الخميلات » = microvillosités ;
+« انثناء مجهريّ لمخاطيّة » = خملة) ; le plan disait « repli de la muqueuse », c'était une lecture du mot
+« villosité » ; avec le vocabulaire du cours, b est la seule juste et le terme de 2012 est respecté.
+
+### Défauts m035
+
+- **[MAJOR] Q9 : question inventée attribuée à la session 2016.** Le sujet 2016 n'a qu'une expérience
+  (maltose + polypeptide). Une deuxième anse « avec maltose seul » n'est pas dans la transcription : la
+  mission présente comme officielle une donnée qui ne l'est pas (consigne G6 § 2 : « chaque donnée de la
+  mission est celle de la transcription »). Sur le fond, la prédiction est **juste** (la maltase de la
+  paroi donne du glucose, qui traverse ; pas d'acides aminés sans protide) et **dans l'esprit** de 2016,
+  mais elle redit Q1/Q5 (son énoncé recopie les résultats de la première expérience), et sa clé est la
+  plus courte de moitié (42 contre 84–94, seule sans justification « لأنّ ») : marqueur de forme.
+  Correctif : **supprimer Q9**.
+- **[MAJOR] Q5 ↔ Q6 : fuite croisée.** Les énoncés justes de Q6 (a « تُفكَّك فيه المغذّيات المعقّدة… »,
+  b « تعبر جداره المغذّيات الخلويّة نحو الأوعية ») sont les deux moitiés de la clé de Q5 ; dans le donjon,
+  l'une résout l'autre, et sur la route l'explication de Q5 résout Q6. Correctif : **supprimer Q6** (la clé
+  de Q5 porte déjà les deux rôles, dans l'ordre hydrolyse puis passage). La mission garde 7 questions :
+  Q1, Q2, Q3, Q4, Q5, Q7, Q8.
+- **[MAJOR] Q8 : appariement résolu par le produit final.** Les produits (« ← أحماض أمينيّة », « ← غليسيرول
+  وأحماض دهنيّة », « ← جليكوز ») sont un rappel de 01-tamrin Q4 / quiz Q6 et suffisent à apparier ; la
+  séquence des sucs, objet de la question selon le plan (« les protides digérés en deux temps »), n'est
+  jamais nécessaire. Correctif :
+  - énoncé : « (مناظرة 2012) تتحوّل الأغذية داخل القناة الهضميّة بمفعول العصارات الهاضمة. أنسب كلّ غذاء إلى العصارات التي تعمل عليه بالتّتابع. »
+  - r1 « العصارة المعديّة في المعدة ثمّ العصارتان المعثكليّة والمعويّة في المعي »
+  - r2 « العصارتان المعثكليّة والمعويّة في المعي وحدهما »
+  - r3 « اللّعاب في الفم ثمّ العصارتان المعثكليّة والمعويّة في المعي »
+  (paires inchangées ; chaque membre droit n'a plus qu'une séquence ; unique). L'explication peut garder
+  les produits.
+- **[MAJOR] Q7 d contredit le tableau.** « انتقلت المغذّيات من الدّم إلى تجويف المعي… فتزايدت كمّيّتها
+  فيه » alors que l'intestin passe de 95 à 12 g. Correctif (la clé n'est plus la plus courte) :
+  - b (clé, 98 car.) : « ما فقده المعي (83 غ) يساوي ما كسبه الدّم (83 غ): فالمغذّيات عبرت جدار المعي إلى الدّم، أي الامتصاص »
+  - d (97 car., sans étiquette) : « ما فقده المعي (83 غ) يساوي ما كسبه الدّم (83 غ): فالمغذّيات عبرت جدار المعي إلى الدّم، أي الإفراز »
+  - a (94) et c (92) inchangés. Plan 2×2 : lecture du bilan (juste en b/d, fausse en c) × nom du phénomène
+    (juste en b seulement) ; d exécute la confusion de vocabulaire absorption/sécrétion.
+  Dans l'explication, remplacer la fin par « …الامتصاص، لا الإفراز الذي تصبّ به الغدد عصاراتها في
+  التّجويف. الخطأ الشّائع: أخذ القيمة النّهائيّة 88 مكان التّغيّر 83، أو تسمية العبور إلى الدّم إفرازًا. »
+- **[MINOR] Q2.** d présuppose « الأنزيمات الموجودة في الأنبوب » quand le tube 1 n'en a aucune ; et
+  « عديد البيتيد » (absent du cours) n'est pas glosé. Correctif : d = « لأنّه بلا عصارة هاضمة، والماء الذي
+  فيه يوقف تفكيك المغذّيات المعقّدة ولو أُضيفت إليه الأنزيمات لاحقًا » (101 car. ; clé c 90, a 87, b 99 : la
+  clé reste 2ᵉ plus courte) ; glose après le tableau : « (عديد البيتيد: جزيئة أقصر من جزيئة البروتيد) ».
+
+**Point signalé : « غليسيرول » pour « كحول دهنيّة ».** Juste : le glycérol est un alcool (trialcool), et
+« كحول دهنيّة » désigne aujourd'hui de longs alcools gras qui ne sont pas des produits de la digestion ; le
+cours 05 (tableau des unités) dit « الغليسيرول والأحماض الدّهنيّة ». Mais R7 exige que la modernisation soit
+dite dans l'énoncé (« بلغة الكتاب المدرسيّ الحاليّ : … »), et Q8 ne la dit pas. Avec le correctif de Q8
+ci-dessus, les produits sortent des options : le terme ne reste que dans l'explication, où « غليسيرول » est
+juste sans déclaration.
+
+**Point signalé : la 9ᵉ question (anse avec maltose seul).** Juste et fidèle à l'esprit, mais sans source
+et étiquetée 2016 : à supprimer (ci-dessus).
