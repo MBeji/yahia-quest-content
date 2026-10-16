@@ -57,12 +57,12 @@ intitulé imprimé en français (« Examen du Diplôme de Fin de l'Enseignement 
 
 | id | session | filière | sha256 (= registre) | pages | lecture | lignes | transcription |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| C01 | 2026 | générale | 5cafa2e4…702c2c | 4 | vision | 6 | `french/2026-generale.md` |
-| C02 | 2026 | technique | 78f39014…bfb460 | 4 | vision | 5 | `french/2026-technique.md` |
-| C03 | 2025 | générale | 1fa230c2…c67643 | 4 | vision | 6 | `french/2025-generale.md` |
-| C04 | 2025 | technique | 410e7dd9…37b55e8 | 4 | vision | 5 | `french/2025-technique.md` |
-| C05 | 2024 | générale | e38d3a4a…96858a | 4 | vision | 6 | `french/2024-generale.md` |
-| C06 | 2024 | technique | 4cfedc88…cac98bfef | 4 | vision | 5 | `french/2024-technique.md` |
+| C01 | 2026 | générale | 5cafa2e4ae3eac1a9d7574de6d573236536d7efa3280700f1dca0ce557702c2c | 4 | vision | 6 | `french/2026-generale.md` |
+| C02 | 2026 | technique | 78f39014f46cdbfb460cd0fa2e28ec8ef675567e3eb7a0bb0bbb724989afe922 | 4 | vision | 5 | `french/2026-technique.md` |
+| C03 | 2025 | générale | 1fa230c20ea00dceddbc66aefbd25369341ec5ab88feb8f9ebc1ec6e06c67643 | 4 | vision | 6 | `french/2025-generale.md` |
+| C04 | 2025 | technique | 410e7dd9b5e85b7f9698e50f41dcf581f8492659bca24d6ebd91c0afd37b55e8 | 4 | vision | 5 | `french/2025-technique.md` |
+| C05 | 2024 | générale | e38d3a4a45526c9814a046c1a19b98b41e128e07259f27117e0810c696d6858a | 4 | vision | 6 | `french/2024-generale.md` |
+| C06 | 2024 | technique | 4cfedc88ecd719c6085fa54a404581959830cf086ef74ba33c2b0e6cac98bfef | 4 | vision | 5 | `french/2024-technique.md` |
 
 Transcriptions sous `/home/user/wt-fr/content/programmes-officiels/examens-nationaux/9eme-base/french/`.
 Snapshots locaux : `/tmp/claude-0/frlec/snapshots/C0{1..6}.txt`. Lignes : `lines/C0{1..6}.tsv` + `.meta`
