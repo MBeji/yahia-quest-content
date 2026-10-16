@@ -3,7 +3,7 @@
 - Convention : `JOURNAL-lecture-C01-C06.md` n'existait pas au démarrage (vérifié dans francais/ ; seuls les journaux SVT existent) : conventions reprises du lot SVT (journal par document, lecture, structure, notions, HP, points d'attention, fichiers produits).
 - Téléchargement http (curl -g) dans /tmp/claude-0/frlec/src/ : 6 fichiers, HTTP 200. sha256 identiques au registre pour les six (C13 à C18).
 - pdftotext : 4 octets par fichier, aucune couche texte (scans). Lecture en vision, rendu 150 DPI (A4), 4 pages chacun.
-- Conventions françaises fixées ici : (1) le texte support se transcrit en tête sous `## Texte`, notes de bas de page numérotées reprises ; (2) alignement final sur les lignes déjà produites par le lot C01-C06 (lines/C01.tsv à C06.tsv, lues ; son journal n'existait pas encore) : compréhension = une ligne, chaque question numérotée de la langue = une ligne, essai = une ligne, n°exo séquentiel ; (3) barème décimal noté avec un point (1.5) ; (4) barème en points de l'item ; (5) les lignes décrivent des opérations sur le texte (relever, justifier) sans nommer le contenu du texte.
+- Conventions françaises fixées ici : (1) le texte support se transcrit en tête sous `## Texte`, notes de bas de page numérotées reprises ; (2) alignement final sur les lignes déjà produites par le lot C01-C06 (lines/C01.tsv à C06.tsv, lues ; son journal n'existait pas encore) : compréhension = une ligne, chaque question numérotée de la langue = une ligne, essai = une ligne, n°exo séquentiel ; (3) barème entier (voir mise en conformité en fin de journal) ; (4) barème en points de l'item ; (5) les lignes décrivent des opérations sur le texte (relever, justifier) sans nommer le contenu du texte.
 
 ## C13 (2020 générale) — lu en vision, 4 pages, bonne lisibilité
 - Format : durée 2 h, coefficient 1 ; texte narratif autobiographique (page 1), puis I. Compréhension 7 points (4 questions : vrai/faux sur tableau, cause, deux raisons avec indice textuel, talent + phrase à relever), II. Langue 6 points (synonyme + réemploi ; subordonnants ; conjugaison futur/antériorité et imparfait/passé simple de rupture ; quand / quant / qu'en), III. Essai 7 points (raconter une réussite et préciser les qualités : récit + portrait).
@@ -48,3 +48,8 @@
 - Part HP : nulle.
 - Convention propre au français : le texte support s'écrit au début de la transcription, en plusieurs écritures de quelques phrases ; les lignes ne décrivent que les opérations demandées, jamais le contenu du texte.
 - Aucune ligne n'a été écrite dans gisement.json, lignes.tsv ni content/french/.
+
+## Mise en conformité avec le § 0 de JOURNAL-lecture-C01-C06.md
+- Lignes réalignées : compréhension n°exo 1 (étage d1, étapes = questions numérotées), une ligne par question de langue (rang), production en dernière ligne (d3), barème entier.
+- C17 : II.3 et II.4 (1.5 point chacune) fusionnées en une ligne (barème 3, chapitres 05+14), seul moyen d'éviter un barème décimal ; C17 compte donc 5 lignes et 5 exercices. Totaux : 6, 5, 6, 5, 5, 5 = 32 lignes.
+- Validation `content:gisement:lignes` (french, 9eme-base) : 6 fichiers, 32 lignes valides, 0 fautive.
