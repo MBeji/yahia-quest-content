@@ -388,10 +388,10 @@ corps jaune plus volumineux, donnée absente de Q8.
 ### Clé la plus courte (indice de forme inverse)
 
 `content:tranche` (05, 11, 12) : 0 % de clés strictement les plus longues, la longueur ne fuit plus par le
-haut. Mais, sur les 25 mcq du lot, **12 clés sont strictement les plus courtes (48 %, hasard 25 %)** : m034
+haut. Mais, sur les 31 mcq du lot, **12 clés sont strictement les plus courtes (39 %, hasard 25 %)** : m034
 Q3, Q5, Q8 ; m035 Q3, Q5, Q7, Q9 ; m036 Q2, Q5 ; m037 Q5, Q6, Q7. Les écarts criants (m035 Q9 42 contre 84+,
 m036 Q2 37 contre 64+, m037 Q5 29 contre 51+, m036 Q5 47 contre 63+) sont corrigés ou supprimés ci-dessus.
-Après correctifs, il reste 6 clés strictement les plus courtes sur 20 mcq (30 %), toutes à 7 caractères ou
+Après correctifs et suppressions, il reste 6 clés strictement les plus courtes sur 26 mcq (23 %), toutes à 7 caractères ou
 moins de l'option suivante et sans marqueur : niveau du hasard, **[MINOR]** au total. L'auteur a allongé ses
 distracteurs pour fuir la clé longue ; la mesure est à faire dans les deux sens.
 
