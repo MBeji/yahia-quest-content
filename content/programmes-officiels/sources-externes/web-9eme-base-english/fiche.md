@@ -55,7 +55,7 @@ de l'examen national : 41 sujets lus (`C01`–`C42`, sans `C39` : 2004, introuva
 l'archive), 205 lignes (41 compréhensions, 123 exercices de langue, 41 productions), et, pour la langue, chaque
 blanc relu un à un dans les transcriptions. Aucun devoir, aucun corrigé de tiers, aucun site tiers dans cette
 section. « Format actuel » = 2021–2026 (12 sujets) ; « formats anciens » = 2001–2020 (29 sujets). Le plan qui en
-sort : `FableEtudes/36-gisement-examens-devoirs/en-cours/anglais/plan-examens-v1.json` et `PLAN.md` (même dossier).
+sort : `FableEtudes/36-gisement-examens-devoirs/en-cours/anglais/plan-examens-v2.json` et `PLAN.md` (même dossier).
 
 ### 3.1 Architecture de l'épreuve — les créneaux
 
@@ -87,14 +87,16 @@ Le compte « items » est fait blanc par blanc dans les transcriptions.
 | 04 modals | 2 | 7 | **9** | 11 | modal + base, possibilité, capacité ; valeur d'un modal en compréhension |
 | 05 conditionals | 1 | 1 | **2** | 2 | if en lacune, will du résultat |
 | 06 « passive voice » | 1 | 1 | **2** | 0 | trois passifs, hors programme (voir la note) |
-| 07 « reported speech » | 0 | 0 | **0** | 0 | jamais |
+| 07 « reported speech » | 0 | 0 | **0** | ≈ 50 | aucune ligne au slug ; au contenu publié (word building) : gérondif, pronoms, dérivation (ci-dessous, reclassés par le pilote) |
 | 08 relatives & comparatives | 12 | 15 | **27** | 32 | who / which / that selon l'antécédent ; comparatif ou superlatif selon l'indice ; formes -er / -est / more / as … as |
 | 09 reading & writing | 32 | 87 | **119** | — | vocabulaire en contexte, prépositions, connecteurs, appariements |
 
 **Hors chapitres** (jetons `HP:` des lecteurs, harmonisés) : dérivation (classe de mot tirée d'une racine)
 dans 15 sessions, dont cinq des six derniers sujets ; gérondif et forme verbale après un verbe ou une
 préposition dans 12 ; pronoms (compléments, réfléchis, possessifs) dans 13 ; passif dans 3 ; fonction de
-communication dans 1. Aucune ligne n'est entièrement hors chapitres.
+communication dans 1. Aucune ligne n'est entièrement hors chapitres. Décision du pilote (2026-10-16) : gérondif, pronoms et dérivation
+sont reclassés au 07 publié, avec trois ajouts de cours (verbe + to + base, pronoms compléments, suffixes exigés
+par les sujets) ; le passif reste écarté.
 
 **Note sur les slugs 06 et 07.** Le manifeste nomme `06-passive-voice` « Passive voice » et
 `07-reported-speech` « Reported speech » ; le contenu publié de ces deux chapitres est autre :
@@ -144,9 +146,9 @@ redemander » de chaque mission du plan) :
 **Compréhension** : le 09 et le 10 n'ont aucune question sur un texte officiel ; leurs textes sont inventés et
 courts. **Le 10 (sujets types)** reste tel quel : le plan ne compose pas de sujet complet.
 
-**Bilan de l'écart** : 21 missions d'examen (plan v1), dont 5 de compréhension, 4 de production préparée et 12
-de langue ; rien de ce que le patron pose déjà n'est redemandé. Restent sans mission, en attente de l'arbitrage
-du pilote : la dérivation, le gérondif et les pronoms (`PLAN.md` § 6). Les devoirs, lus en salle blanche, sont
+**Bilan de l'écart** : 24 missions d'examen (plan v2), dont 5 de compréhension, 4 de production préparée et 15
+de langue (trois au 07 : gérondif, pronoms, dérivation, avec leurs ajouts de cours) ; rien de ce que le patron
+pose déjà n'est redemandé ; aucune famille au programme ne reste sans mission. Les devoirs, lus en salle blanche, sont
 traités à part (§ 5 du plan, lot `L05`).
 
 ## 4. Mesures — à la lecture
