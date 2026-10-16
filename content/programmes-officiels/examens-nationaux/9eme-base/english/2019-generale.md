@@ -23,7 +23,7 @@ lecture: vision
 
 ## Texte support (page 1, « THE TEXT »)
 
-- Référence imprimée : *John Kurczewski, Reader's Digest (adapted)* ; trois paragraphes repérés ①②③ ; environ 275 mots, à la première personne.
+- Référence imprimée : *John Kurczewski, Reader's Digest (adapted)* ; trois paragraphes repérés ①②③ ; environ 260 mots, à la première personne.
 - Résumé : en conduisant à la campagne par beau temps, le narrateur, journaliste, voit une vieille dame arrêter sa voiture et descendre dans le fossé ; il s'arrête pour proposer son aide et découvre qu'elle ramasse les déchets jetés par des voyageurs. Elle refuse qu'il cite son nom : elle ne le fait pas pour la reconnaissance mais pour garder son pays beau. Le dernier paragraphe invite les lecteurs à ramasser eux aussi les ordures au bord des routes.
 - Citation utile à une question (paragraphe 2) : « …I try to do my little part to help keep it that way. »
 - Texte intégral : PDF officiel, sha256 au registre.

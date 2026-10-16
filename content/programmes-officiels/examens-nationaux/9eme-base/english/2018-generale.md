@@ -22,7 +22,7 @@ lecture: vision
 
 ## Texte support (page 1, « THE TEXT »)
 
-- Référence imprimée : *Adapted from* Chicken Soup for the Soul, *Jack Canfield* ; quatre paragraphes repérés ①②③④ ; environ 245 mots, à la première personne (enseignant).
+- Référence imprimée : *Adapted from* Chicken Soup for the Soul, *Jack Canfield* ; quatre paragraphes repérés ①②③④ ; environ 235 mots, à la première personne (enseignant).
 - Résumé : un enseignant raconte qu'un élève de dix ans a avoué en classe n'avoir jamais reçu de cadeau. Quand l'élève s'absente à l'époque de l'échange de cadeaux de la classe, les élèves proposent d'acheter des cadeaux pour lui à la place. L'enseignant apprend que la famille a déménagé après la perte d'emploi du père ; il appelle l'élève, lui explique l'histoire puis l'aide à remplir sa chambre de cadeaux emballés. Il se dit reconnaissant d'avoir participé à une « leçon » importante pour ses élèves.
 - Citation utile à une question (paragraphe 2) : « As we were talking about the event… »
 - Texte intégral : PDF officiel, sha256 au registre.
