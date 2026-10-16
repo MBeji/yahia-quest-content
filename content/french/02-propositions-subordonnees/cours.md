@@ -79,6 +79,7 @@ l'antécédent **et prend sa fonction** dans la subordonnée.
 | **dont**                           | complément introduit par _de_       | L'épée _dont il se sert_ est magique.  |
 | **où**                             | complément de lieu ou de temps      | La forêt _où il entra_ était sombre.   |
 | préposition + **qui** (_en qui_ …) | complément prépositionnel, personne | Un ami _en qui j'ai confiance_.        |
+| préposition + **lequel** (_auquel_, _duquel_…) | complément prépositionnel, surtout une chose | La chaise _sur laquelle il s'assoit_. |
 
 ::: exemple choisir le pronom relatif en deux étapes
 
@@ -88,6 +89,9 @@ l'antécédent **et prend sa fonction** dans la subordonnée.
    reprend un groupe en _de_. Résultat : _« L'épée **dont** il se sert est magique. »_
 3. **Refais le test** : _« j'ai confiance **en** cet ami »_ ; la préposition est _en_ et
    l'antécédent est une personne, donc **en qui** : _« un ami **en qui** j'ai confiance »_.
+4. **Avec une chose après une préposition** : « il s'assoit **sur** cette chaise » ; la
+   préposition est _sur_ et l'antécédent une chose, donc **lequel**, accordé avec _chaise_
+   (féminin singulier) : « la chaise **sur laquelle** il s'assoit ».
 
 :::
 
@@ -103,6 +107,15 @@ test tranche : on dit _« j'ai besoin **de** la chose »_, groupe en _de_, donc 
 Le pronom relatif se choisit d'après la **construction du verbe** de la subordonnée, jamais
 d'après l'antécédent seul. Cas-limite : _dont_ peut compléter un **nom** — _« le roman **dont**
 les personnages me fascinent »_ = les personnages **de ce roman**.
+:::
+
+::: propriete
+**Lequel** est un pronom relatif **composé** : il suit une préposition et s'accorde avec
+l'antécédent — _lequel, laquelle, lesquels, lesquelles_. Avec **à** et **de**, il se soude :
+_à + lequel_ → **auquel**, _à + lesquels_ → **auxquels**, _à + lesquelles_ → **auxquelles** ;
+_de + lequel_ → **duquel**, _de + lesquels_ → **desquels**, _de + lesquelles_ → **desquelles**
+(mais _à laquelle_, _de laquelle_). Cas-limite : après une locution qui finit par _de_ (_près de_, _au milieu de_), on garde
+la locution — la maison **près de laquelle** j'habite —, jamais _dont_.
 :::
 
 ::: verifie
@@ -396,6 +409,8 @@ La subordonnée de cause est toujours à l'**indicatif**, car la cause est prés
 fait. Cas-limite : _sous prétexte que_ garde l'indicatif même quand la cause est jugée fausse —
 c'est le locuteur qui doute, pas le mode.
 :::
+
+> 💡 _Car_ et _donc_ ne sont pas des subordonnants : ces **mots de liaison** (chapitre 8) relient deux propositions. _Car_ annonce la **cause** de ce qui précède (« Il resta, **car** il pleuvait ») ; _donc_ en annonce la **conséquence** (« Il pleuvait, **donc** il resta »).
 
 ::: verifie
 _« … de temps, il n'a pas fini son devoir. »_ — _à cause de_, _faute de_ ou _grâce à_ ?
