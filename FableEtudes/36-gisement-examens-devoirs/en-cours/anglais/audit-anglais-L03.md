@@ -288,6 +288,9 @@ L01 / L06 : 01/06 Q6 → « A mother describes how her 15-year-old daughter uses
 **[MINEUR] Q3 — « that they » sans étiquette** : ajouter `english.rel.sujet-en-double` (seule erreur : second
 sujet, *that* convenant à une chose).
 
+**[MINEUR] Clé la plus courte** en Q1, Q5, Q6 (« who », 3 lettres) : inhérent au couple who / which, non
+reconnaissable puisque la clé alterne who / which / that dans la mission.
+
 **[MINEUR] Q4 — relative non déterminative.** Le cours dit « that fits always » dans les groupes qui définissent ;
 ici la relative est entre virgules, mais *that* n'est pas proposé : sans effet sur la clé.
 
@@ -376,10 +379,11 @@ journée au camp, Q12 « where they live ») résument fidèlement le texte offi
   Énoncé : « (Exam 2015, general) At a summer camp in Germany for children who spend too much time on the internet,
   the children swim, do aerobics and eat a healthy lunch, and many promise to limit the time they spend on their
   computers at home. "Children who attend the camp say they feel much ___ by the end of it." Tip: good → better →
-  the best; bad → worse → the worst. Which word completes the sentence? » Options (clé `a`) : « better » · « worse »
-  (muet) · « best » (`english.comp.comparatif-et-superlatif-confondus`) · « worst » (muet, deux erreurs).
+  the best; bad → worse → the worst. Which word completes the sentence? » Options (clé `a`) : « better » (6 car.) · « worse »
+  (muet) · « the best » (8, `english.comp.comparatif-et-superlatif-confondus`) · « worst » (muet, deux erreurs) —
+  « best » nu aurait laissé la clé strictement la plus longue.
   Explanation : « The camp helps the children, so they feel better than before: better is the comparative of good.
-  "Best" is a superlative: it would need "the" and a group. "Worse" is the comparative of bad and says the opposite
+  "The best" is a superlative: it would need a group, and "much" cannot come before it. "Worse" is the comparative of bad and says the opposite
   of what the camp achieves, and "worst" is both the opposite and a superlative. » Difficulté : d2 (le texte donne
   les formes). L'énoncé n'écrit plus « the same camp » (autonomie, défaut majeur ci-dessous).
 - **Q2, « bigger » appuyé sur un contexte ajouté.** Le contexte (« for the inhabitants of his town ») est fidèle
@@ -493,10 +497,10 @@ font porter l'erreur à « that he / that they ») :
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | m011 (04/06) | 11 | 0 | 0 | 8 | 3 | 3 (Q2, Q7, Q11) | 8 q., d2 |
 | m012 (04/07) | 10 | 0 | 1 (Q8) | 3 | 5 | 0 | 10 q., d3 |
-| m013 (08/06) | 8 | 0 | 0 | 4 | 2 | 0 | 8 q., d2 |
+| m013 (08/06) | 8 | 0 | 0 | 4 | 3 | 0 | 8 q., d2 |
 | m014 (08/07) | 9 | 0 (2 doubles réponses) | 2 (Q1, Q5) | 2 | 0 | 2 (Q1, Q5) | 7 q., d2 |
 | m015 (08/08) | 12 | 0 | 0 | 6 | 1 | 0 | 12 q., d3 |
-| **total** | **50** | **0** | **3** | **23** | **11** | **5** | **45 q.** |
+| **total** | **50** | **0** | **3** | **23** | **12** | **5** | **45 q.** |
 
 Fuites entre lots à transmettre : 01/06 Q6 et 07/07 Q2 (« her daughter, who… » → clé de m013 Q4) ; m011 Q1 →
 m022 Q4 (« passion for working »). Suivi pilote : l'item 2012 T ② (« would like to ») peut rejoindre m022.
