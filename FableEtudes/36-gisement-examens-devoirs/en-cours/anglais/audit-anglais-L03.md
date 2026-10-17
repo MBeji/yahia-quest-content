@@ -121,3 +121,96 @@ not a verb, so it cannot follow a modal. »
 `must-pour-possibilite`, `fonction-confondue` — chacune exacte sur l'option qui la porte (vérifié option par
 option ; « making » n'exécute que l'erreur -ing, *could make* étant juste).
 
+---
+
+## m012 — 04/07 « writing prepared: advise, warn, set rules » (d3 boss 120/30, 10 q.)
+
+| Q | session | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2026 G | a (mustn't) | a | réserve | jeu d'options calqué sur 04/05 Q1 (mustn't / … / mustn't to / can) |
+| 2 | 2026 T | d | d | OK | consigne citée fidèlement |
+| 3 | 2016 T | c | c | réserve | consigne entre guillemets mais paraphrasée ; leurre d nie le sentiment (éliminable) |
+| 4 | 2011 T | c | c | OK | lignes inventées, mot d'aide officiel « protective clothes » |
+| 5 | 2026 G | b, d, f | b, d, f | **défaut** | la consigne citée (« at least 3 ») annonce le nombre de bonnes réponses ; citation altérée (« warn people ») |
+| 6 | 2024 G | c, a, d, b | c, a, d, b | OK (citation) | ordre unique ; citation altérée (« for the association's Facebook page ») |
+| 7 | 2022 T | b | b | OK | — |
+| 8 | 2019 G | **ambigu** | l1-r4, l2-r2, l3-r1, l4-r3 | **ERREUR** | « Eat less fat… » convient aussi au poids, « Play sport… » au cœur : deux appariements défendables |
+| 9 | 2016 T | b | b | réserve | doublon de geste de 04 quiz Q3 et 04/02 Q6 (should to / ought sans to) ; d porte deux erreurs étiquetées |
+| 10 | 2011 T | a | a | OK (mineur) | geste de forme déjà publié, mais prévu par l'affectation et adossé à la consigne officielle |
+
+Fidélité : consignes 2026 T, 2022 T, 2019 G, 2011 T citées mot pour mot ; 2016 T, 2024 G et 2026 G altérées entre
+guillemets (correctifs ci-dessous).
+
+### Points tranchés
+
+- **Retrait de 2009 G (lettre au correspondant fumeur) — validé.** L'affectation elle-même interdit de reprendre
+  le thème du tabac (09/02 Q1, Q5). Conséquence : plus aucune question ne cite 2009. **[MINEUR]** Titre et fichier :
+  « 🏛️ Exams 2011–2026 · writing prepared: advise, warn, set rules ⭐⭐⭐ » et
+  `07-exams-2011-2026-writing-advise-warn-set-rules.json` (fichier neuf, renommage libre avant livraison) ; la
+  ligne de registre de m012 ne doit plus lister 2009 G.
+- **Ordre.** La question de la session de base (2026 G, Q1) reste en tête ; le `multi` 2026 G (Q5) passe en d3 par
+  le tri. Accepté.
+
+### Défauts et correctifs
+
+**[CRITIQUE] Q8 — appariement non unique.** Moins de gras protège le poids autant que le cœur, le sport aussi.
+Remplacer les quatre éléments de droite (gauche inchangée, clé inchangée l1-r4, l2-r2, l3-r1, l4-r3) :
+- r1 « Eat less fat to keep your blood vessels clear. »
+- r2 « Drink water instead of sugary drinks and brush your teeth after meals. » (inchangé)
+- r3 « Go to bed early and eat breakfast to have energy in the morning. »
+- r4 « Play sport or walk every day to burn calories. »
+
+Chaque but (vaisseaux sanguins → cœur, calories → poids, dents, énergie → fatigue) désigne un seul risque.
+Explanation : « Each way names what it protects. Burning calories with sport or walking stops people gaining too much
+weight. Water instead of sugary drinks and brushing protect the teeth. Clear blood vessels look after the heart, so
+less fat goes with heart problems. An early bedtime and a good breakfast give energy and fight tiredness in class. »
+
+**[MAJEUR] Q5 — nombre de bonnes réponses annoncé par la consigne (« at least 3 »)** ; les trois clés sont aussi
+les trois options les plus longues. Passer à quatre bonnes réponses et rallonger les deux leurres :
+- Task : « An increasing number of people rely on online shopping to make their lives easier. Write a 10-line
+  article for a local magazine to warn them against the possible dangers of online shopping. State at least 3 sound
+  arguments. » (citation exacte) ;
+- a « You can compare prices from many shops without leaving your home. » (65 car.) · b inchangé (66) ·
+  c « Many shops in the town centre are closed on Sundays and holidays. » (64) · d inchangé (54) ·
+  e « Some websites sell fake products that break after a few days. » (61) · f inchangé (66) ;
+- answerKey `["b", "d", "e", "f"]` ;
+- explanation : « The article must warn, so a sound argument names a real danger of buying online: stolen card
+  details, goods paid for but never sent, fake products and overspending. Comparing prices is an advantage, and the
+  Sunday closing of shops is off the topic: neither warns anyone of a danger. »
+
+**[MAJEUR] Q1 — option set calqué sur 04/05 Q1** (« ne pas redemander »). Options (clé `a` inchangée) :
+`a` « You mustn't give your card number to a website you don't know. » (62) · `b` « Many people give their card
+number to websites they don't know. » (63, muet : décrit le danger sans dire quoi faire) · `c` « You can give your
+card number to any website you like. » (54, `english.modal.fonction-confondue`) · `d` « You might lose money on a
+website you don't know. » (49, muet : dit un possible, ne met pas en garde). Explanation : « A warning tells readers
+what not to do, and "mustn't" + base verb forbids the dangerous action. One sentence only describes what many people
+do, another only says that something bad is possible, and "can" allows the very thing the article warns against. »
+
+**[MAJEUR] Q9 — doublon de 04 quiz Q3 / 04/02 Q6, et option d à deux erreurs étiquetée** (« might » + « near »).
+Nouvel énoncé : « (Exam 2016, technical) After a classmate cut his finger in the carpentry workshop, you give your
+schoolmates some advice on how to keep safe. Which piece of advice fits the article? » Options (clé `a`) :
+`a` « You should keep your fingers away from the blade. » (49) · `b` « You should buy a bigger saw for the whole
+workshop. » (51, muet : conseil hors sujet) · `c` « You might keep your fingers away from the blade. » (48,
+`english.modal.fonction-confondue`) · `d` « You mustn't tell the teacher about an accident. » (47, muet).
+Explanation : « The task asks for advice on keeping safe, so should + base verb and a safety tip: keep your fingers
+away from the blade. A bigger saw does not keep anyone safe, "might" only says that something is possible instead
+of advising, and hiding an accident from the teacher is the opposite of safe. »
+
+**[MINEUR] Q3 — citation paraphrasée entre guillemets ; leurre d éliminable à vue.** Task exacte : « While working
+in a carpentry workshop at your technical school, one of your classmates had a small accident and cut his finger.
+You have decided to write an article for your school magazine to show how sorry you are and to give your
+schoolmates some advice on how to keep safe. » Option d : « I hope our classmate will come back to school soon. »
+(51, souhait, pas regret). Explanation, dernière phrase : « …and the last one expresses a wish, not regret. »
+Note : la clé reprend le mot « sorry » de la consigne ; la question reste un repérage de tâche (d2), acceptable.
+
+**[MINEUR] Q6 — citation altérée.** Task exacte : « As a member of Go Green association, write a 10-line post to be
+shared on the association's Facebook page. Suggest at least three ways to reduce pollution and protect the
+environment. »
+
+**[MINEUR] Q10 — geste de forme (Don't leaving, must to, mustn't leaves)** déjà présent au 04 (quiz Q1, 04/05 Q1) ;
+gardé parce que prévu par l'affectation et adossé à la consigne 2011 T. **[MINEUR] Q1 ↔ Q5** : la clé de Q1 (carte
+bancaire) illustre l'argument b de Q5 ; sans effet sur la clé de Q5 (b reste évident), signalé seulement.
+
+Étiquettes m012 : `fonction-confondue`, `to-en-trop`, `to-oublie`, `base-verbale-deformee` — exactes, hormis Q9 d
+(deux erreurs, corrigé ci-dessus).
+
