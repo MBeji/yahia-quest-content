@@ -15,3 +15,9 @@ touche les URL et les progressions en base) pour qu'il dise ce que les chapitres
 Section de cours ajoutée au 07 sur décision du pilote : 15 sessions d'examen l'exigent alors que le manuel (SB
 p. 78) ne traite que les noms composés. Réversible : la section cite les sujets officiels comme source de
 l'exigence.
+
+## S3 — Livraison : étiquettes existantes modifiées
+
+Le script de livraison ne recopie de la wip que les étiquettes NEUVES (absentes de la base commune). L02 élargit
+le libellé d'une étiquette déjà sur `main` : `english.tense.present-avec-marqueur-passe`. La livraison doit
+recopier aussi les entrées MODIFIÉES `english.*` (diff de valeur entre base commune et wip), et seulement elles.
