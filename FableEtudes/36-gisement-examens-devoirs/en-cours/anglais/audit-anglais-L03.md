@@ -65,6 +65,11 @@ ajoutées (« Prohibition » en Q3, « Advice » en Q4) sont fausses et ne chang
 
 Après retrait : 8 questions (6 d2, 2 d3), étage d2 inchangé, rampe 2→3 honnête.
 
+**[MINEUR] Titre et fichier après retrait** (plus aucune question de 2001 ni de 2012 T ; sessions restantes
+2005–2023) : « 🏛️ Exams 2005–2023 · modals in exam texts: meaning and form ⭐⭐ » et
+`06-exams-2005-2023-modals-meaning-and-form.json` (fichier neuf) ; la ligne de registre de m011 ne liste plus 2012 T
+ni 2001.
+
 **[MAJEUR] Q6 — vote « could / could to » ; passé de could non dit.** Options et explication :
 
 - options : `a` « must » (`english.modal.must-sans-passe-ni-futur`) · `b` « was able » (`english.modal.to-oublie`) ·
@@ -289,3 +294,213 @@ ici la relative est entre virgules, mais *that* n'est pas proposé : sans effet 
 Étiquettes m013 : `who-et-which-confondus`, `what-comme-relatif`, `sujet-en-double` — exactes sur chaque option qui
 les porte (Q7 « who » pour des animaux : le cours range l'animal avec *which*, étiquette juste).
 
+---
+
+## m014 — 08/07 « comparative or superlative: read the clue » (d2 practice 75/15, 9 q.)
+
+| Q | session | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2024 T | **most / more** | b most | **ERREUR (double réponse)** | « one of the more successful women » est de l'anglais standard (« parmi les femmes plutôt réussies ») |
+| 2 | 2023 G | more | d | OK | options officielles + « many » |
+| 3 | 2021 G | cheaper | a | OK | — |
+| 4 | 2017 G | biggest | c | réserve | option officielle « big » retirée (l'affectation demande les options officielles) ; doublon de m015 Q1 |
+| 5 | 2016 G | **most / many** | a most | **ERREUR (double réponse)** | « one of the many endangered animals » est grammatical et sensé ; doublon du geste de Q1 |
+| 6 | 2011 G | fun | b | OK | — |
+| 7 | 2002 | more | a | OK | « faster » leurre officiel de la banque |
+| 8 | 2025 G | less | c | OK | clé par le sens (sooner → less), dit dans l'explication |
+| 9 | 2008 | the most | d | réserve | le contexte ajouté (« for her children and for herself ») pose DEUX choses : « the more important thing » devient défendable |
+
+Fidélité : phrases et options officielles conformes (sauf Q4, ci-dessous). Le texte 2008 est celui d'une mère qui
+arrête de fumer : l'énoncé n'en dit rien (bien), à garder ainsi.
+
+### Points tranchés
+
+- **Trois doublons retirés (2022 T « more time than », 2019 G « one of the most », 2010 G « more than that ») —
+  validé.** 2022 T et 2010 G refont le geste de Q2 (« more … than » de quantité) ; 2019 G refaisait celui de Q1 et
+  porte en plus le même défaut (« one of the more significant values » est juste en anglais standard).
+- **« one of the » + degré (Q1, Q5) — retirer les deux.** Avec les options officielles, chacune garde un leurre
+  défendable (« more » en Q1, « many » en Q5) ; Q5 refait de plus le geste de Q1. C'est le cas R6 du plan (consigne
+  officielle ambiguë → écartée) : à déclarer au registre comme les autres écarts R6. L'archétype « one of the » n'a
+  pas d'item officiel sans double réponse dans le corpus.
+- **Ordre.** La base (2025 G, Q8) est d3 et passe après les d2 : le tri par difficulté ne peut pas la placer en
+  tête sans mentir sur l'étage. Accepté (l'ordre de la base est gardé à l'intérieur de son étage).
+
+Après retrait : 7 questions (5 d2, 2 d3), étage d2, titre inchangé (2002–2025).
+
+### Défauts et correctifs
+
+**[CRITIQUE] Q1 et Q5 — double réponse.** Retirer (voir ci-dessus).
+
+**[MAJEUR] Q9 — contexte ajouté qui rend « the more » défendable.** Nouvel énoncé : « (Exam 2008) A mother has
+given up a bad habit. She feels healthier and she saves money, then she adds: "But ___ important thing is that I
+want to be around for my kids for as long as possible." Which words complete the sentence? » Trois bienfaits →
+superlatif ; « the least » démenti par « But » ; options, clé et explication inchangées (l'explication dit déjà
+« the top of all the reasons »). Ne pas écrire « feels better » : *better* est la clé de m015 Q10.
+
+**[MAJEUR] Q4 — option officielle « big » retirée ; doublon de m015 Q1** (même clé « biggest », trois options
+sur quatre communes). Options (clé `c`) : `a` « bigger » (`english.comp.comparatif-et-superlatif-confondus`) · `b`
+« big » (muet) · `c` « biggest » · `d` « most big » (`english.comp.forme-selon-longueur`). Explanation : « The clue
+is "the" in front of the blank and a group of values: the value at the top of all of them takes the superlative of
+a short adjective, the + -est, with a double g: biggest. "Bigger" compares only two things, "big" compares nothing,
+and "most big" uses "most" with a short adjective. » (L'orthographe « bigest » passe à m015 Q1, ci-dessous.)
+
+Étiquettes m014 : exactes ; nouvelles familles F1 (Q6, Q8) et F2 (Q2, Q7, Q8) ci-dessous.
+
+---
+
+## m015 — 08/08 « building the comparison: -er, -est, more, as … as » (d3 boss 120/30, 12 q.)
+
+| Q | session | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2021 G | biggest | d | réserve | doublon de m014 Q4 (même clé, options communes) |
+| 2 | 2016 G | bigger | a | réserve | vote « bigger / more bigger » ; contexte ajouté fidèle (« his town ») |
+| 3 | 2015 G | as | b | OK | — |
+| 4 | 2011 G | longer | d | OK | « faster » leurre officiel |
+| 5 | 2009 G | newest | b | réserve | vote « newest / most newest » |
+| 6 | 2005 | tall | c | OK | ⓐ caché (« … »), il va à m011 |
+| 7 | 2025 G | more fashionable | more fashionable | réserve | « Type the missing words » annonce deux mots ; variantes acceptées absentes ; explication sans la réponse |
+| 8 | 2026 G | wisest | b | réserve | « their own wisest » sans *the* : le cours dit « the is never missing » |
+| 9 | 2016 T | larger | c | OK | « smaller » plus haut, « colder » leurre officiel |
+| 10 | 2015 G | better | a | réserve | *better* = « Going further, not tested » ; énoncé qui renvoie à Q3 (« At the same camp ») |
+| 11 | 2006 | easiest | a | OK | y → i enseigné |
+| 12 | 2002 | largest | d | réserve | vote « largest / most largest » |
+
+Fidélité : toutes les phrases sont celles des transcriptions ; les contextes ajoutés (Q2 « his town », Q10 la
+journée au camp, Q12 « where they live ») résument fidèlement le texte officiel.
+
+### Points tranchés
+
+- **Q10, « better » irrégulier.** Le cours le range en « Going further (beyond the 9th-grade book, not tested) ».
+  Garder l'item officiel (better / worse est un choix de sens), mais donner les formes dans l'énoncé et remplacer
+  « gooder » / « more good », éliminables à vue une fois les formes données, par un plan 2×2 sens × degré.
+  Énoncé : « (Exam 2015, general) At a summer camp in Germany for children who spend too much time on the internet,
+  the children swim, do aerobics and eat a healthy lunch, and many promise to limit the time they spend on their
+  computers at home. "Children who attend the camp say they feel much ___ by the end of it." Tip: good → better →
+  the best; bad → worse → the worst. Which word completes the sentence? » Options (clé `a`) : « better » · « worse »
+  (muet) · « best » (`english.comp.comparatif-et-superlatif-confondus`) · « worst » (muet, deux erreurs).
+  Explanation : « The camp helps the children, so they feel better than before: better is the comparative of good.
+  "Best" is a superlative: it would need "the" and a group. "Worse" is the comparative of bad and says the opposite
+  of what the camp achieves, and "worst" is both the opposite and a superlative. » Difficulté : d2 (le texte donne
+  les formes). L'énoncé n'écrit plus « the same camp » (autonomie, défaut majeur ci-dessous).
+- **Q2, « bigger » appuyé sur un contexte ajouté.** Le contexte (« for the inhabitants of his town ») est fidèle
+  au texte et la clé ne dépend pas de lui : « a ___ city » exclut le superlatif, les autres options sont mal
+  formées. Accepté ; seul le vote est à corriger (ci-dessous).
+- **Q7, `short_answer` « more fashionable ».** Clé unique (« less fashionable » contredit « they meet-up online »).
+  La normalisation du moteur (`normalizeRecallText` : casse, ponctuation, espaces) absorbe « More fashionable. » et
+  « morefashionable ». Variante manquante : l'élève qui recopie l'adverbe donné, « far more fashionable ».
+  Correctif : `acceptedAnswers: ["far more fashionable"]` ; ajouter à `expectedMistakes` « the most fashionable »
+  (`english.comp.comparatif-et-superlatif-confondus`). Rien d'autre n'est juste (*much more* doublerait *far*).
+- **Ordre.** La base (2025 G, Q7) est d3 : même jugement qu'en m014, accepté.
+
+### Défauts et correctifs
+
+**[MAJEUR] Q7 — l'énoncé annonce la forme** (« Type the missing **words** » : deux mots → *more* + adjectif).
+Remplacer la fin de l'énoncé par : « Type the right form of the word in brackets. » Explanation (elle ne nomme pas
+la réponse) : « "Fashionable" has four syllables, so it is a long adjective: it takes "more" before it, and "than"
+follows because two ways of meeting are compared: far more fashionable. "Fashionabler" puts an -er ending on a long
+adjective, "more fashionabler" marks the comparison twice, and "most fashionable" is a superlative, which cannot go
+with "than". »
+
+**[MAJEUR] Q10 — énoncé non autonome** (« At the same camp » renvoie à Q3, tirées au hasard dans le donjon) :
+corrigé par le nouvel énoncé ci-dessus.
+
+**[MAJEUR] Q8 — superlatif sans *the*, contraire au cours.** Ajouter après la citation : « Here "their own" takes
+the place of "the". » (Clé, options inchangées.)
+
+**[MAJEUR] Vote « clé + double marque » (Q2, Q5, Q12)** : le leurre « double marque » contient la clé (more
+bigger, most newest, most largest). Plans 2×2 de remplacement :
+- Q2 (clé « bigger ») : « bigger » · « biggest » (`comparatif-et-superlatif-confondus`) · « more big »
+  (`forme-selon-longueur`) · « biger » (`english.spell.suffixe-sans-regle-orthographique`). Explanation, fin :
+  « "Biggest" is a superlative and cannot follow "a", "more big" uses "more" with a short adjective, and "biger"
+  forgets to double the g. »
+- Q5 (clé « newest ») : « newer » (`comparatif-et-superlatif-confondus`) · « newest » · « most new »
+  (`forme-selon-longueur`) · « more new » (muet, deux erreurs). Explanation, fin : « "Newer" compares only two
+  things, "most new" uses "most" with a short adjective, and "more new" is a wrong comparative. »
+- Q12 (clé « largest ») : « larger » (`comparatif-et-superlatif-confondus`) · « most large »
+  (`forme-selon-longueur`) · « more large » (muet, deux erreurs) · « largest ». Explanation, fin : « "Larger"
+  compares two things, "most large" uses "most" with a short adjective, and "more large" is a wrong comparative. »
+
+Vérifié : chaque clé n'apparaît qu'une fois, aucune n'est la plus longue ; la marque double reste représentée par
+« biggerest » (Q1) et l'attendu « more fashionabler » (Q7).
+
+**[MAJEUR] Q1 — doublon de m014 Q4.** Faire de Q1 une question de forme (le degré est donné par « The … one » et
+« a few problems ») : options (clé `a`) « biggest » · « bigest » (`english.spell.suffixe-sans-regle-orthographique`)
+· « most big » (`forme-selon-longueur`) · « biggerest » (`double-marque`). Explanation : « The text speaks of a few
+problems and picks the one at the top of the list, so the + superlative. "Big" ends with one vowel + one consonant,
+so the g doubles: biggest. "Bigest" forgets the double consonant, "most big" uses "most" with a short adjective,
+and "biggerest" marks the degree twice. » Après correctif, m014 Q4 et m015 Q1 ne partagent que « biggest » et
+« most big », pour deux gestes distincts (degré / forme) ; m014 Q4 et m015 Q2 ne partagent que « bigger » et
+« biggest ».
+
+**[MINEUR] Q5 — « the newer model »** se dit en anglais courant de deux versions ; « of everything » oriente vers
+le superlatif : gardé, risque faible.
+
+---
+
+## Les quatre familles d'étiquettes proposées
+
+Registre lu : `origin/main:content/misconceptions.json` (famille `english.*`). Comptes faits APRÈS les correctifs
+ci-dessus ; aucune ne porte sur un `multi` ni un `matching`.
+
+**F1 — comparatif ou superlatif sans comparaison : ACCEPTÉE.** Trois questions distinctes, une erreur par option :
+m014 Q6 (« funnier », « funniest », « most fun »), m014 Q8 (« least » : superlatif sans groupe), m015 Q6
+(« taller », « tallest » ; « more tall » reste muet, deux erreurs). Ne double ni
+`comp.comparatif-et-superlatif-confondus` (choix entre deux degrés) ni `comp.inegalite-pour-egalite` (égalité).
+Id proposé : `english.comp.degre-sans-comparaison`.
+- fr : « Tu mets un comparatif ou un superlatif alors que rien n'est comparé (ni than, ni the avec un groupe) :
+  l'adjectif reste simple (It can be fun, 6 meters tall). »
+- en : « You use a comparative or a superlative when nothing is compared (no than, no the with a group): the
+  adjective stays plain (It can be fun, 6 meters tall). »
+- ar : « تستعمل صيغة المقارنة أو التفضيل مع أنّه لا مقارنة في الجملة (لا than ولا the مع مجموعة): تبقى الصفة في
+  صيغتها البسيطة (It can be fun, 6 meters tall). »
+
+**F2 — much ou many à la place de more : ACCEPTÉE, libellé élargi à « less ».** Après retrait de m014 Q1 et Q5,
+trois questions distinctes : m014 Q2 (« much », « many » au lieu de *more*), m014 Q7 (« much wonderful than »),
+m014 Q8 (« much to do » là où la phrase compare : *sooner* → *less*). Une erreur par option. Ne double aucune
+`english.*`. Id proposé : `english.comp.much-many-au-lieu-du-comparatif`.
+- fr : « Tu mets much ou many là où la phrase compare (than, sooner…) : much et many disent une quantité, la
+  comparaison se fait avec more ou less (more than we believe, more wonderful than). »
+- en : « You use much or many where the sentence compares (than, sooner…): much and many tell an amount, and a
+  comparison takes more or less (more than we believe, more wonderful than). »
+- ar : « تستعمل much أو many حيث تقارن الجملة (than، sooner…): ‏much وmany تدلّان على الكمّية، والمقارنة تكون بـ
+  more أو less ‏(more wonderful than). »
+
+**F3 — relatif sans lien avec l'antécédent : REJETÉE.** Pour *who / which*, c'est exactement
+`english.rel.who-et-which-confondus` ; pour *whose* et *where*, le cours les range en « Going further, not tested »
+: un libellé qui les enseigne citerait une notion hors programme. Option de rechange, si le pilote veut étiqueter
+« when » et « where » (m013 Q2, Q3, Q4, Q6 : 4 questions distinctes) : élargir le libellé existant
+`english.rel.what-comme-relatif` (le cours, § propriété, nomme déjà *what* et *when*) :
+- fr : « Tu mets what, when ou where après un nom comme pronom relatif : pour une personne ou une chose, on dit
+  who, which ou that. »
+- en : « You use what, when or where after a noun as a relative pronoun: for a person or a thing, use who, which or
+  that. »
+- ar : « تستعمل what أو when أو where بعد الاسم كاسم موصول: للشخص أو الشيء نستعمل who أو which أو that. »
+
+**F4 — sujet après that : REJETÉE (doublon).** C'est l'erreur de `english.rel.sujet-en-double` (« Tu ajoutes un
+sujet après who ou which »). Élargir ce libellé à *that* (nécessaire aussi pour les correctifs m013 Q1, Q3, Q6, qui
+font porter l'erreur à « that he / that they ») :
+- fr : « Tu ajoutes un sujet après who, which ou that (a lorry which it was…) : le pronom relatif est déjà le
+  sujet. »
+- en : « You add a subject after who, which or that (a lorry which it was…): the relative pronoun is already the
+  subject. »
+- ar : « تضيف فاعلًا بعد who أو which أو that ‏(a lorry which it was…): الاسم الموصول هو الفاعل أصلًا. »
+
+---
+
+## Bilan
+
+| mission | q. auditées | clés fausses | critiques | majeurs | mineurs | à retirer | après correctifs |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| m011 (04/06) | 11 | 0 | 0 | 8 | 3 | 3 (Q2, Q7, Q11) | 8 q., d2 |
+| m012 (04/07) | 10 | 0 | 1 (Q8) | 3 | 5 | 0 | 10 q., d3 |
+| m013 (08/06) | 8 | 0 | 0 | 4 | 2 | 0 | 8 q., d2 |
+| m014 (08/07) | 9 | 0 (2 doubles réponses) | 2 (Q1, Q5) | 2 | 0 | 2 (Q1, Q5) | 7 q., d2 |
+| m015 (08/08) | 12 | 0 | 0 | 6 | 1 | 0 | 12 q., d3 |
+| **total** | **50** | **0** | **3** | **23** | **11** | **5** | **45 q.** |
+
+Fuites entre lots à transmettre : 01/06 Q6 et 07/07 Q2 (« her daughter, who… » → clé de m013 Q4) ; m011 Q1 →
+m022 Q4 (« passion for working »). Suivi pilote : l'item 2012 T ② (« would like to ») peut rejoindre m022.
+
+**Verdict : à corriger avant livraison** (aucune clé fausse, mais un appariement ambigu, deux doubles réponses et
+des votes systémiques). Tous les textes de remplacement ci-dessus ont été recomptés (longueur de la clé, unicité de
+la valeur, aucune fuite vers une autre question de la tranche).
