@@ -11,17 +11,18 @@
       "options": [
         {
           "id": "a",
-          "text": "bigger",
-          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+          "text": "bigest",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
         },
         {
           "id": "b",
-          "text": "biggerest",
-          "misconceptionTag": "english.comp.double-marque"
+          "text": "most big",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
         },
         {
           "id": "c",
-          "text": "more big"
+          "text": "biggerest",
+          "misconceptionTag": "english.comp.double-marque"
         },
         {
           "id": "d",
@@ -29,7 +30,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "The text speaks of a few problems and picks the one at the top of the list, so it needs the superlative of the short adjective \"big\": the + biggest, with a double g. \"Bigger\" compares only two things, \"biggerest\" marks the degree twice, and \"more big\" is not a form of a short adjective.",
+      "explanation": "The text speaks of a few problems and picks the one at the top of the list, so the + superlative. \"Big\" ends with one vowel + one consonant, so the g doubles: biggest. \"Bigest\" forgets the double consonant, \"most big\" uses \"most\" with a short adjective, and \"biggerest\" marks the degree twice.",
       "difficulty": 2
     },
     {
@@ -51,12 +52,12 @@
         },
         {
           "id": "d",
-          "text": "more bigger",
-          "misconceptionTag": "english.comp.double-marque"
+          "text": "biger",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
         }
       ],
       "correctOption": "a",
-      "explanation": "The writer compares the city with his own town, so it is a comparison between two places: the comparative of the short adjective \"big\", with a double g and the ending -er. \"Biggest\" is a superlative and cannot follow \"a\", \"more big\" uses \"more\" with a short adjective, and \"more bigger\" marks the comparison twice.",
+      "explanation": "The writer compares the city with his own town, so it is a comparison between two places: the comparative of the short adjective \"big\", with a double g and the ending -er. \"Biggest\" is a superlative and cannot follow \"a\", \"more big\" uses \"more\" with a short adjective, and \"biger\" forgets to double the g.",
       "difficulty": 2
     },
     {
@@ -81,6 +82,31 @@
       ],
       "correctOption": "b",
       "explanation": "The expression is \"as much ... as possible\": the first \"as\" opens the equality and the second one closes it. \"So\", \"than\" and \"more\" cannot open this fixed expression. After \"as much\" the phrase always closes with \"as\", never with \"than\".",
+      "difficulty": 2
+    },
+    {
+      "prompt": "(Exam 2015, general) At a summer camp in Germany for children who spend too much time on the internet, the children swim, do aerobics and eat a healthy lunch, and many promise to limit the time they spend on their computers at home. \"Children who attend the camp say they feel much ___ by the end of it.\" Tip: good → better → the best; bad → worse → the worst. Which word completes the sentence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "better"
+        },
+        {
+          "id": "b",
+          "text": "worse"
+        },
+        {
+          "id": "c",
+          "text": "the best",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
+        {
+          "id": "d",
+          "text": "worst"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "The camp helps the children, so they feel better than before: better is the comparative of good. \"The best\" is a superlative: it would need a group, and \"much\" cannot come before it. \"Worse\" is the comparative of bad and says the opposite of what the camp achieves, and \"worst\" is both the opposite and a superlative.",
       "difficulty": 2
     },
     {
@@ -123,8 +149,8 @@
         },
         {
           "id": "c",
-          "text": "most newest",
-          "misconceptionTag": "english.comp.double-marque"
+          "text": "most new",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
         },
         {
           "id": "d",
@@ -132,7 +158,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "The model is compared with every other model of everything, so the superlative of the short adjective \"new\" is needed after \"the\": the newest, with no change of spelling. \"Newer\" compares only two things, \"most newest\" marks the degree twice, and \"more new\" is not a form of a short adjective.",
+      "explanation": "The model is compared with every other model of everything, so the superlative of the short adjective \"new\" is needed after \"the\": the newest, with no change of spelling. \"Newer\" compares only two things, \"most new\" uses \"most\" with a short adjective, and \"more new\" is a wrong comparative.",
       "difficulty": 2
     },
     {
@@ -140,11 +166,13 @@
       "options": [
         {
           "id": "a",
-          "text": "taller"
+          "text": "taller",
+          "misconceptionTag": "english.comp.degre-sans-comparaison"
         },
         {
           "id": "b",
-          "text": "tallest"
+          "text": "tallest",
+          "misconceptionTag": "english.comp.degre-sans-comparaison"
         },
         {
           "id": "c",
@@ -161,10 +189,13 @@
     },
     {
       "type": "short_answer",
-      "prompt": "(Exam 2025, general) A text about teenagers and technology says: \"That's mainly because they meet-up online. It's far (fashionable) ___ to chat online than meet-up!\" Put the word in brackets in the right form. Type the missing words.",
+      "prompt": "(Exam 2025, general) A text about teenagers and technology says: \"That's mainly because they meet-up online. It's far (fashionable) ___ to chat online than meet-up!\" Type the right form of the word in brackets.",
       "answerKey": {
         "text": "more fashionable"
       },
+      "acceptedAnswers": [
+        "far more fashionable"
+      ],
       "expectedMistakes": [
         {
           "text": "fashionabler",
@@ -177,13 +208,17 @@
         {
           "text": "most fashionable",
           "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
+        {
+          "text": "the most fashionable",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
         }
       ],
-      "explanation": "\"Fashionable\" has four syllables, so it is a long adjective: the comparison is made with a word placed before it, not with an ending, and the sentence goes on with \"than\" because two ways of meeting are compared. An -er ending or a superlative form would both be wrong here.",
+      "explanation": "\"Fashionable\" has four syllables, so it is a long adjective: it takes \"more\" before it, and \"than\" follows because two ways of meeting are compared: far more fashionable. \"Fashionabler\" puts an -er ending on a long adjective, \"more fashionabler\" marks the comparison twice, and \"most fashionable\" is a superlative, which cannot go with \"than\".",
       "difficulty": 3
     },
     {
-      "prompt": "(Exam 2026, general) A text about \"democratic learning\" says that the students \"are also encouraged to listen to their own ___ and most compassionate voices\". Which word completes the sentence?",
+      "prompt": "(Exam 2026, general) A text about \"democratic learning\" says that the students \"are also encouraged to listen to their own ___ and most compassionate voices\". Here \"their own\" takes the place of \"the\". Which word completes the sentence?",
       "options": [
         {
           "id": "a",
@@ -235,30 +270,6 @@
       "difficulty": 3
     },
     {
-      "prompt": "(Exam 2015, general) At the same camp the children swim, do aerobics and eat a healthy lunch, and many promise to limit the time they spend on their computers at home. \"Children who attend the camp say they feel much ___ by the end of it.\" Which word completes the sentence?",
-      "options": [
-        {
-          "id": "a",
-          "text": "better"
-        },
-        {
-          "id": "b",
-          "text": "worse"
-        },
-        {
-          "id": "c",
-          "text": "gooder"
-        },
-        {
-          "id": "d",
-          "text": "more good"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "The camp helps the children, so they feel better, the comparative of \"good\". This adjective has its own irregular comparative: it does not take -er or \"more\". \"Worse\" is the comparative of \"bad\" and would say the opposite of what the camp achieves, and \"gooder\" and \"more good\" apply the regular rules to a word that does not follow them.",
-      "difficulty": 3
-    },
-    {
       "prompt": "(Exam 2006) A text about sharing housework says: \"Many husbands don't mind giving a hand but others would never like to do the ___ routines like the washing-up or the ironing.\" Which word completes the sentence?",
       "options": [
         {
@@ -299,8 +310,7 @@
         },
         {
           "id": "c",
-          "text": "most largest",
-          "misconceptionTag": "english.comp.double-marque"
+          "text": "more large"
         },
         {
           "id": "d",
@@ -308,7 +318,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Tigers are compared with all the other meat-eating animals on land, so the sentence needs the superlative of the short adjective \"large\": the + largest, with only an -st because the word already ends in -e. \"Larger\" compares two things, \"most large\" uses \"most\" with a short adjective, and \"most largest\" marks the degree twice.",
+      "explanation": "Tigers are compared with all the other meat-eating animals on land, so the sentence needs the superlative of the short adjective \"large\": the + largest, with only an -st because the word already ends in -e. \"Larger\" compares two things, \"most large\" uses \"most\" with a short adjective, and \"more large\" is a wrong comparative.",
       "difficulty": 3
     }
   ]
