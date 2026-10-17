@@ -95,6 +95,8 @@ Adjective + noun (_our car_) · pronoun alone (_ours_) · name + **'s** (_my cou
 
 Edge case: a plural noun ending in **-s** only takes the apostrophe: _my teachers'_ advice (several teachers). And **its** is only an adjective: _The cat drinks **its** milk._ — never a pronoun alone, and never with an apostrophe (_it's_ means _it is_).
 
+To stress that a thing belongs to its owner and nobody else, put **own** between the possessive adjective and the noun: _Lina has her **own** room._
+
 :::
 
 ::: verifie
@@ -122,15 +124,17 @@ A **reflexive pronoun** ends in **-self** (singular) or **-selves** (plural). It
 
 :::
 
-| Subject | Reflexive pronoun     |
-| ------- | --------------------- |
-| I       | myself                |
-| you     | yourself / yourselves |
-| he      | himself               |
-| she     | herself               |
-| it      | itself                |
-| we      | ourselves             |
-| they    | themselves            |
+| Subject | Object pronoun | Reflexive pronoun     |
+| ------- | -------------- | --------------------- |
+| I       | me             | myself                |
+| you     | you            | yourself / yourselves |
+| he      | him            | himself               |
+| she     | her            | herself               |
+| it      | it             | itself                |
+| we      | us             | ourselves             |
+| they    | them           | themselves            |
+
+After a verb or a preposition, a pronoun takes its **object** form: _The teacher helped **us**._ — _Sami played with **them**._ When the object is the **same person** as the subject, the object form becomes the reflexive one: _We helped **ourselves**._
 
 ::: exemple
 Build the sentence about Jamila, step by step:
@@ -265,6 +269,59 @@ Main word last, kind first: flower pot, taxi driver, driving licence, wind surfi
 
 :::
 
+## 🔧 One root, several words — noun, adjective or adverb
+
+Rania worked hard all year. Her teacher writes three sentences on the board: "Rania is a ___ pupil." — "She passed her exam ___." — "Her ___ makes her parents proud." Each missing word comes from the same root, **success** — but not in the same form.
+
+How do you know which form the gap needs?
+
+> 🎯 The book teaches compound nouns; the national exam goes one step further. Every year since 2022, its language part asks for the right form of a word built on a root — in a choice of three forms or with a word in brackets.
+
+::: definition
+Many English words are built on a **root** and a **suffix** (an ending). The suffix tells the **class** of the word: a **noun** names, an **adjective** describes a noun, an **adverb** tells **how** an action is done.
+
+:::
+
+| Class                      | Suffix                                            | Root → word                                                       |
+| -------------------------- | ------------------------------------------------- | ----------------------------------------------------------------- |
+| noun (a thing, an action)  | **-ment**, **-tion**                              | develop → develop**ment**, protect → protec**tion**                |
+| noun (a person)            | **-er**, **-ist**                                 | teach → teach**er**, science → scient**ist**                       |
+| adjective                  | **-al**, **-ful**, **-ous**                       | nature → natur**al**, help → help**ful**, danger → danger**ous**   |
+| adjective (a feeling)      | **-ing** (what causes it), **-ed** (who feels it) | a bor**ing** film, a bor**ed** pupil                               |
+| adverb (how?)              | adjective + **-ly**                               | quick → quick**ly**, natural → natural**ly**                       |
+
+::: exemple
+Fill the three gaps about Rania, step by step:
+
+1. "a ___ pupil": the gap comes **before a noun**, so it needs an **adjective** → _success_ + **-ful** → _a **successful** pupil_.
+2. "She passed her exam ___.": the gap tells **how** she passed → an **adverb**, the adjective + **-ly** → **successfully**.
+3. "Her ___ makes her parents proud": after _her_ and before the verb, the gap is the **subject** → a **noun**: _Her **success** makes her parents proud._
+
+:::
+
+> ⚠️ **Common mistake**: _She speaks English very **good**._ ✗ — an adjective cannot tell **how** someone does something. You need the adverb: _She speaks English very **well**._ ✓ Some words also change more than their ending: _good → well_, _succeed → success_, _believe → belief_.
+
+::: propriete
+Look at the words **around** the gap: after _a, the, his, her_ when no noun follows the gap, or as the subject of a verb → **noun**; before a noun, or after _be, become, feel_ → **adjective**; next to a verb, telling how → **adverb**.
+
+Edge case: before a noun, a **noun** can also say what kind, as in a compound noun: a _history lesson_ is a kind of lesson. And the **-ly** adverb is built on the **adjective**, not on the noun: _nature → natural → naturally_ (one **l** from **-al**, one from **-ly**).
+
+:::
+
+::: verifie
+Complete with the right form of the word in brackets: "The museum guide was very (help) ___, and he spoke (slow) ___ about the (protect) ___ of old buildings."
+
+---
+
+_The museum guide was very **helpful**, and he spoke **slowly** about the **protection** of old buildings._ — after _very_ and _be_, the gap describes the guide: an adjective in **-ful**; the second gap tells **how** he spoke: adjective + **-ly**; after _the_, the third gap is a noun in **-tion**.
+
+:::
+
+::: retenir
+Noun: -ment, -tion, -er, -ist · adjective: -al, -ful, -ous, -ing / -ed · adverb: adjective + -ly — the words around the gap choose the class.
+
+:::
+
 ## 🏊 The gerund — a verb that works as a noun
 
 Your friend asks what you do on Sundays. You answer: _I like to swim._ Then you say: _Swimming is my favourite sport._
@@ -305,6 +362,13 @@ Edge case: two vowels before the last consonant → no doubling (_rain → raini
 
 :::
 
+::: propriete
+Not every verb takes the gerund. After **decide**, **want**, **need**, **hope**, **learn** and **would like**, the next verb takes **to + base**, as after **intend** (_I intend to study medicine_): _She decided **to join** the club._ — _We need **to buy** a new map._
+
+Edge case: after a **preposition**, it is always the gerund, whatever the verb before: _She thought **of joining** the club._
+
+:::
+
 ::: verifie
 Complete: "___ (run) is good for your health, and my brother hates ___ (stop) before the end."
 
@@ -315,7 +379,7 @@ _**Running** is good for your health, and my brother hates **stopping** before t
 :::
 
 ::: retenir
-Gerund = verb + ing: subject, after like / enjoy / finish / hate / dislike, after a preposition — double, drop the e, or no change.
+Gerund = verb + ing: subject, after like / enjoy / finish / hate / dislike, after a preposition — double, drop the e, or no change. But decide / want / need / hope / learn / would like + **to + base**.
 
 :::
 
