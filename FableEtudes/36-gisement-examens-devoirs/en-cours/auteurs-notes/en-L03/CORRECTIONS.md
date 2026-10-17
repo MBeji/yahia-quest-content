@@ -16,3 +16,5 @@ m015 : 2021 G devient orthographe (bigest) ; plans 2×2 pour 2016 G, 2009 G, 200
 Registre (/home/user/wt-en/content/misconceptions.json) : créés english.comp.degre-sans-comparaison et english.comp.much-many-au-lieu-du-comparatif ; libellé de english.rel.sujet-en-double élargi à « that » ; what-comme-relatif inchangé (when / where restent muets).
 
 Gates : content:check, content:qa:strict (0 erreur), content:tranche (0 clé la plus longue, 0 paire proche), lot-lint : verts.
+
+Retouches finales (reverif) : m012 Q3, Q7, Q10 sans désignation par la place ; virgule arabe du libellé ar de much-many remplacée par une virgule latine. content:check et content:qa:strict verts.
