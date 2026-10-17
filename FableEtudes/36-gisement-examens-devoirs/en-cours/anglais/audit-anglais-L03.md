@@ -334,6 +334,15 @@ Après retrait : 7 questions (5 d2, 2 d3), étage d2, titre inchangé (2002–20
 
 **[CRITIQUE] Q1 et Q5 — double réponse.** Retirer (voir ci-dessus).
 
+**[MAJEUR] Q1 — fuite vers L02 (relevée par la re-vérification de L02, confirmée).** L'énoncé « After graduating,
+she **began** a new job in building and **became** one of the… » donne la clé de m008 Q4 (*began*) et le prétérit de
+m008 Q5 (*became*). Correctif principal : le retrait de Q1 (double réponse, ci-dessus) l'efface. Si le pilote garde
+Q1 malgré tout, le texte proposé au § 3 de `reverif-anglais-L02.md` (« she rose to the top of her trade ») est
+**refusé** : « the top » annonce le superlatif et désigne la clé. Énoncé de remplacement vérifié (aucun verbe au
+passé, aucun mot de degré) : « (Exam 2024, technical) A text about a woman builder describes her place in the
+industry: "…one of the (much / more / most) successful women in the industry." Which word completes the
+sentence? » — il laisse entier le défaut de double réponse (« more »).
+
 **[MAJEUR] Q9 — contexte ajouté qui rend « the more » défendable.** Nouvel énoncé : « (Exam 2008) A mother has
 given up a bad habit. She feels healthier and she saves money, then she adds: "But ___ important thing is that I
 want to be around for my kids for as long as possible." Which words complete the sentence? » Trois bienfaits →
@@ -498,12 +507,16 @@ font porter l'erreur à « that he / that they ») :
 | m011 (04/06) | 11 | 0 | 0 | 8 | 3 | 3 (Q2, Q7, Q11) | 8 q., d2 |
 | m012 (04/07) | 10 | 0 | 1 (Q8) | 3 | 5 | 0 | 10 q., d3 |
 | m013 (08/06) | 8 | 0 | 0 | 4 | 3 | 0 | 8 q., d2 |
-| m014 (08/07) | 9 | 0 (2 doubles réponses) | 2 (Q1, Q5) | 2 | 0 | 2 (Q1, Q5) | 7 q., d2 |
+| m014 (08/07) | 9 | 0 (2 doubles réponses) | 2 (Q1, Q5) | 3 | 0 | 2 (Q1, Q5) | 7 q., d2 |
 | m015 (08/08) | 12 | 0 | 0 | 6 | 1 | 0 | 12 q., d3 |
-| **total** | **50** | **0** | **3** | **23** | **12** | **5** | **45 q.** |
+| **total** | **50** | **0** | **3** | **24** | **12** | **5** | **45 q.** |
 
 Fuites entre lots à transmettre : 01/06 Q6 et 07/07 Q2 (« her daughter, who… » → clé de m013 Q4) ; m011 Q1 →
-m022 Q4 (« passion for working »). Suivi pilote : l'item 2012 T ② (« would like to ») peut rejoindre m022.
+m022 Q4 (« passion for working ») ; m014 Q1 → m008 Q4–Q5 (« began », « became », relevée par L02). Suivi pilote : l'item 2012 T ② (« would like to ») peut rejoindre m022.
+
+Contrôle des fuites par script, dans les deux sens (phrase officielle + clé, contre toutes les missions et tous
+les quiz de `content/english/`) : seules les deux fuites L03 → m008 et L03 → m022 ressortent ; la fuite vers m013 Q4
+(« her daughter, who ») a été trouvée à la lecture.
 
 **Verdict : à corriger avant livraison** (aucune clé fausse, mais un appariement ambigu, deux doubles réponses et
 des votes systémiques). Tous les textes de remplacement ci-dessus ont été recomptés (longueur de la clé, unicité de
