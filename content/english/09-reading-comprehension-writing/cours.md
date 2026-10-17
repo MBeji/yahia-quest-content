@@ -316,6 +316,8 @@ Look for the same kind of word, then test it: it must replace the meaning withou
 
 Edge cases: a contrast word gives the **opposite** — _Our old flat was tiny, whereas the new one is spacious_ → _spacious_ means big. The **parts** of a word help too: _tire + less + ly_ → _tirelessly_ means without getting tired. And an expression can mean more than its words: _the hand that holds it_ means the person who uses it.
 
+A word often brings its **own preposition**, and it is rarely the one French or Arabic would choose: learn the word and its preposition as one block — _take part **in**_, _look **after**_ (= take care of), _approve **of**_, _interested **in**_ (Student's Book p. 6, p. 97, p. 99).
+
 :::
 
 ::: verifie
@@ -401,8 +403,8 @@ A **linker** (a linking word) shows the relation between two ideas: a cause, a c
 | ----------- | -------------------------------------- | --------------------------------------------------- |
 | cause       | because                                | We stayed in because it was raining.                |
 | consequence | so, therefore, as a result, that's why | It was raining, so we stayed in.                    |
-| contrast    | but, while, whereas                    | Salah is talkative, whereas his twin is quiet.      |
-| addition    | and, also                              | Walking is free. It is also good for the heart.     |
+| contrast    | but, however, while, whereas, although | Salah is talkative, whereas his twin is quiet.      |
+| addition    | and, also, besides                     | Walking is free. It is also good for the heart.     |
 | order       | first, then, finally                   | First, sort the rubbish. Then, take it to the bins. |
 
 The linker is the arrow between the two ideas: _because_ points back to the cause, _so_ points forward to the consequence.
@@ -423,6 +425,8 @@ Join _Farmers spray pesticides on vegetables_ and _Many people get stomachaches_
 
 Edge case: _while_ and _whereas_ join two **opposite** ideas, never two similar ones — _While buses are cheap, taxis are expensive_ ✓, but not _While buses are cheap, trains are cheap_. At the start of a sentence, _while_ takes a comma after its first idea.
 
+**However,** and **Besides,** open a new sentence, followed by a comma: _The bus is cheap. However, it is slow._ (contrast) · _The bus is cheap. Besides, it is fast._ (one more point in the same direction). **Although** works like _while_: it opens the first idea, and a comma closes it — _Although the bus is cheap, many people drive._
+
 :::
 
 ::: verifie
@@ -435,7 +439,7 @@ Complete with one linker each: "The bus was full, ___ we walked to school." — 
 :::
 
 ::: retenir
-**because** → cause · **so / therefore / as a result / that's why** → consequence · **but / while / whereas** → contrast.
+**because** → cause · **so / therefore / as a result / that's why** → consequence · **but / however / while / whereas / although** → contrast · **and / also / besides** → addition.
 
 :::
 
