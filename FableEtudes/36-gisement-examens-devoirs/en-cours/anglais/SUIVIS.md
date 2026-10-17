@@ -31,3 +31,15 @@ Chaque correctif est vérifié par la re-vérification du lot qui porte le fichi
 - L03 m011 Q1 (« passion for working ») → L06 m022 Q4 : correctif dans l'audit L03.
 - L02 m006 (01/06) Q6 et L06 m023 (07/07) Q2 (« her daughter, who… ») → L03 m013 Q4 : textes dans l'audit L03 ;
   m006 Q6 (lot L02, déclaré prêt) à reprendre par le pilote avec le texte de l'audit L03, puis contrôle.
+
+## S5 — Moteur (relevé par l'audit L06, hors lot)
+
+`renderLesson` ajoute `<p></table></p>` après chaque tableau ; la section « The gerund » publiée du 07 affiche des
+soulignés bruts. À reprendre côté moteur (arena), pas dans le gisement.
+
+## S6 — Décisions du pilote sur les audits L04 et L06 (2026-10-17)
+
+- L04 : lignes de cours au 09 (prépositions dans « Word meaning from context » ; « Linking ideas » : although,
+  however, besides), m018 Q12 « I wish » remplacée, étages revus, étiquette `english.prep.preposition-calquee` créée.
+- L06 : C3 réécrit (rendu, règle), ligne de cours « own », étiquette `english.pron.sujet-apres-verbe-ou-preposition`
+  créée ; famille « -ing ou base après decide… » rejetée, `english.modal.to-oublie` NON élargi (options muettes).
