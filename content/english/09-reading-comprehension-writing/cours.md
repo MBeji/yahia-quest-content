@@ -316,7 +316,7 @@ Look for the same kind of word, then test it: it must replace the meaning withou
 
 Edge cases: a contrast word gives the **opposite** — _Our old flat was tiny, whereas the new one is spacious_ → _spacious_ means big. The **parts** of a word help too: _tire + less + ly_ → _tirelessly_ means without getting tired. And an expression can mean more than its words: _the hand that holds it_ means the person who uses it.
 
-A word often brings its **own preposition**, and it is rarely the one French or Arabic would choose: learn the word and its preposition as one block — _take part **in**_, _look **after**_ (= take care of), _approve **of**_, _interested **in**_ (Student's Book p. 6, p. 97, p. 99).
+A word often brings its **own preposition**, and it is rarely the one French or Arabic would choose: learn the word and its preposition as one block — _take part **in**_, _look **after**_ (= take care of), _approve **of**_, _interested **in**_ (Student's Book p. 6 and p. 99, Activity Book p. 97).
 
 :::
 
