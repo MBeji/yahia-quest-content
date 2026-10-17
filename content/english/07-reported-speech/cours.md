@@ -95,6 +95,8 @@ Adjective + noun (_our car_) · pronoun alone (_ours_) · name + **'s** (_my cou
 
 Edge case: a plural noun ending in **-s** only takes the apostrophe: _my teachers'_ advice (several teachers). And **its** is only an adjective: _The cat drinks **its** milk._ — never a pronoun alone, and never with an apostrophe (_it's_ means _it is_).
 
+To stress that a thing belongs to its owner and nobody else, put **own** between the possessive adjective and the noun: _Lina has her **own** room._
+
 :::
 
 ::: verifie
@@ -269,7 +271,7 @@ Main word last, kind first: flower pot, taxi driver, driving licence, wind surfi
 
 ## 🔧 One root, several words — noun, adjective or adverb
 
-Rania worked hard all year. Her teacher writes three sentences on the board: _Rania is a ___ pupil. — She passed her exam ___. — Her ___ makes her parents proud._ Each missing word comes from the same root, **success** — but not in the same form.
+Rania worked hard all year. Her teacher writes three sentences on the board: "Rania is a ___ pupil." — "She passed her exam ___." — "Her ___ makes her parents proud." Each missing word comes from the same root, **success** — but not in the same form.
 
 How do you know which form the gap needs?
 
@@ -291,18 +293,18 @@ Many English words are built on a **root** and a **suffix** (an ending). The suf
 ::: exemple
 Fill the three gaps about Rania, step by step:
 
-1. _a ___ pupil_: the gap comes **before a noun**, so it needs an **adjective** → _success_ + **-ful** → _a **successful** pupil_.
-2. _She passed her exam ___._: the gap tells **how** she passed → an **adverb**, the adjective + **-ly** → _**successfully**_.
-3. _Her ___ makes her parents proud_: after _her_ and before the verb, the gap is the **subject** → a **noun**: _Her **success** makes her parents proud._
+1. "a ___ pupil": the gap comes **before a noun**, so it needs an **adjective** → _success_ + **-ful** → _a **successful** pupil_.
+2. "She passed her exam ___.": the gap tells **how** she passed → an **adverb**, the adjective + **-ly** → **successfully**.
+3. "Her ___ makes her parents proud": after _her_ and before the verb, the gap is the **subject** → a **noun**: _Her **success** makes her parents proud._
 
 :::
 
 > ⚠️ **Common mistake**: _She speaks English very **good**._ ✗ — an adjective cannot tell **how** someone does something. You need the adverb: _She speaks English very **well**._ ✓ Some words also change more than their ending: _good → well_, _succeed → success_, _believe → belief_.
 
 ::: propriete
-Look at the words **around** the gap: after _a, the, his, her_ or as the subject of a verb → **noun**; before a noun, or after _be, become, feel_ → **adjective**; next to a verb, telling how → **adverb**.
+Look at the words **around** the gap: after _a, the, his, her_ when no noun follows the gap, or as the subject of a verb → **noun**; before a noun, or after _be, become, feel_ → **adjective**; next to a verb, telling how → **adverb**.
 
-Edge case: the **-ly** adverb is built on the **adjective**, not on the noun: _nature → natural → naturally_ (one **l** from _-al_, one from _-ly_).
+Edge case: before a noun, a **noun** can also say what kind, as in a compound noun: a _history lesson_ is a kind of lesson. And the **-ly** adverb is built on the **adjective**, not on the noun: _nature → natural → naturally_ (one **l** from **-al**, one from **-ly**).
 
 :::
 

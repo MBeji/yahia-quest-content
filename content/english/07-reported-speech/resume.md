@@ -1,7 +1,7 @@
 # 📜 Summary: Word Building & Linking Words
 
 - **Question words** — **who** (person), **what** (thing), **when** (time), **where** (place), **how** (manner), **why** (reason) + do / does / did + subject + **base verb**: _Where does Omar live?_ With **be**, no _do_: _Who is Mr Slim?_
-- **Possessives and 's** — adjective + noun (**my, your, his, her, its, our, their** book); pronoun alone (**mine, yours, his, hers, ours, theirs**); name + **'s** (_Sami's_), plural in -s + **'** (_my teachers'_). **its** is only an adjective; _hers, yours_ never take an apostrophe.
+- **Possessives and 's** — adjective + noun (**my, your, his, her, its, our, their** book); pronoun alone (**mine, yours, his, hers, ours, theirs**); name + **'s** (_Sami's_), plural in -s + **'** (_my teachers'_). **its** is only an adjective; _hers, yours_ never take an apostrophe. **own** stresses "nobody else's" (_her own room_).
 - **Object and reflexive pronouns** — after a verb or a preposition: **me, you, him, her, it, us, them** (_Sami played with them_). When the object is the subject: **myself, yourself / yourselves, himself, herself, itself, ourselves, themselves** (_He hurt himself_), or "with no help" (_I made it myself_).
 - **Compound adjectives** — joined by a hyphen, before the noun: adjective-noun**ed** (_high-heeled_), adjective-verb**ing** (_hard-working_), adverb-past participle (_well-made_); number-noun stays singular (_a five-dinar coin_).
 - **Compound nouns** — main word **last**, kind first: noun + noun (_flower pot_), noun + -er noun (_taxi driver_), gerund + noun (_driving licence_), noun + gerund (_wind surfing_).
