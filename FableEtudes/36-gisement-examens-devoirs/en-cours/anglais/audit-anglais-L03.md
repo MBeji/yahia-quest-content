@@ -214,3 +214,78 @@ bancaire) illustre l'argument b de Q5 ; sans effet sur la clé de Q5 (b reste é
 Étiquettes m012 : `fonction-confondue`, `to-en-trop`, `to-oublie`, `base-verbale-deformee` — exactes, hormis Q9 d
 (deux erreurs, corrigé ci-dessus).
 
+---
+
+## m013 — 08/06 « relative pronouns in exam texts: who, which, that » (d2 practice 75/15, 8 q.)
+
+| Q | session | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2025 T | who | a | réserve | vote « who / who he » |
+| 2 | 2024 G | which | d | réserve | relatif **complément** (« which **he** has learned ») : non enseigné, et contraire à la règle du cours « never followed by he, she, it » |
+| 3 | 2021 T | which | b | OK (mineur) | « that they » sans étiquette |
+| 4 | 2012 T | who | c | réserve | vote « who / who she » ; clé donnée par 01/06 Q6 et 07/07 Q2 (fuite entre lots) |
+| 5 | 2011 G | who | a | OK | « those » = réponse officielle de ⓕ, faux ici |
+| 6 | 2003 | who | d | réserve | vote « who / who they » |
+| 7 | 2002 | that | b | OK | ① caché (« … »), il va à m015 |
+| 8 | 2026 G | which | c | réserve | « which » repris sur une idée : non enseigné ; la méthode du cours (le nom à gauche) donne « who » ; vote « which / which it » |
+
+Fidélité : les huit phrases sont celles des transcriptions (2026 G ex. 1, banque avec « who » intrus officiel ;
+2025 T, 2024 G, 2012 T options officielles ; 2021 T, 2011 G, 2003, 2002 blancs uniques). Aucun item écarté
+(« what », mots interrogatifs) n'est devenu question. Huit questions : conforme (le corpus n'en a pas plus).
+
+### Points tranchés
+
+- **Q8, « which » repris sur une idée.** Le cours 08 n'enseigne que le relatif qui définit le nom placé juste avant ;
+  appliqué ici, il donne « who » (*children*), c'est-à-dire le leurre. La clé ne se justifie que par l'accord
+  *teaches* (singulier) et par la reprise d'une idée, non enseignée. Garder l'item (c'est la session de base) avec
+  une définition dans l'énoncé qui ne nomme pas le pronom, et le passer en d2 pour qu'il reprenne la tête (ordre
+  de la base). Nouvel énoncé : « (Exam 2026, general) A text about "democratic learning" groups says: "The groups
+  hold meetings where children, along with the teachers, discuss what will be taught. These are chaired by
+  children, ___ teaches them to exchange ideas and listen to others' points of view." Tip: after a comma, a
+  relative pronoun can stand for the whole idea before it, not only for the last noun. Which word completes the
+  sentence? »
+- **Q2, relatif complément.** Le choix *which* ne dépend que de « skills = choses » (enseigné), mais la phrase
+  montre « which he », que le cours interdit et que trois leurres de la mission (« who he », « who they »,
+  « which it ») font juger faux : l'élève est pris entre deux règles. Garder avec une définition dans l'énoncé :
+  ajouter après la citation « Here "he" is the subject of "has learned"; the blank stands for the skills he
+  learned. » et dans l'explication : « Here the pronoun is not the subject of the verb, "he" is, so "he" may follow
+  it — unlike the sentences where who or which is the subject. »
+- **Ordre.** Le tri par difficulté renvoyait la session de base (2026 G) en dernière place ; avec Q8 en d2, elle
+  revient en tête (`displayOrder` des questions : 2026 G d'abord). Toute la mission est alors d2 : étage d2
+  inchangé, titre ⭐⭐ juste.
+
+### Défauts et correctifs
+
+**[MAJEUR] Vote « clé + pronom sujet » (Q1, Q4, Q6, Q8).** Dans quatre questions sur cinq, le leurre « sujet en
+double » est construit sur la clé (who he, who she, who they, which it) : la clé est l'option qui revient deux fois.
+Remplacer :
+- Q1 `d` « who he » → « that he » (`english.rel.sujet-en-double` : *that* convient à une personne, seule erreur le
+  second sujet) ; explanation, fin : « …and "that he" adds a second subject after the pronoun. »
+- Q4 `d` « who she » → « she » (muet : pronom personnel à la place du relatif ; *that she* aurait deux erreurs dans
+  une relative entre virgules) ; explanation, fin : « "She" is an ordinary pronoun: it cannot link the two parts of
+  the sentence. »
+- Q6 `c` « who they » → « that they » (`english.rel.sujet-en-double`) ; explanation, fin : « "That they" repeats
+  the subject, while the pronoun already is the subject of "don't agree". »
+- Q8 `d` « which it » → « it » (muet) ; explanation : « The verb "teaches" is singular, so its subject cannot be
+  "children": the pronoun stands for the whole idea before the comma — the fact that children chair the meetings.
+  An idea is a thing, so the pronoun is "which". "Who" is for people, "what" is not a relative pronoun after a
+  noun, and "it" is an ordinary pronoun that cannot link the two parts of the sentence. »
+
+Vérifié : chaque clé n'apparaît plus qu'une fois ; aucune clé n'est la plus longue (who 3 / which 5 face à
+« that he », « that they », « which »).
+
+**[MAJEUR] Fuite entre lots vers Q4 (« My daughter, ___ is 15 »).** `01-present-tenses/exercices/06-…` Q6 écrit
+« A mother describes how her daughter, **who** is 15, uses the Internet » et `07-…/07-exams-2007-2023-pronouns…` Q2
+« A mother writes about her daughter, **who** chats… » : la phrase même de Q4 avec sa clé. À transmettre aux lots
+L01 / L06 : 01/06 Q6 → « A mother describes how her 15-year-old daughter uses the Internet every day. » ; 07/07 Q2
+→ « A mother writes about her teenage daughter and the Internet: ».
+
+**[MINEUR] Q3 — « that they » sans étiquette** : ajouter `english.rel.sujet-en-double` (seule erreur : second
+sujet, *that* convenant à une chose).
+
+**[MINEUR] Q4 — relative non déterminative.** Le cours dit « that fits always » dans les groupes qui définissent ;
+ici la relative est entre virgules, mais *that* n'est pas proposé : sans effet sur la clé.
+
+Étiquettes m013 : `who-et-which-confondus`, `what-comme-relatif`, `sujet-en-double` — exactes sur chaque option qui
+les porte (Q7 « who » pour des animaux : le cours range l'animal avec *which*, étiquette juste).
+
