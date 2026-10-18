@@ -59,3 +59,25 @@ Réécritures : 03 quiz#3 (un distracteur rallongé), 01#6 (« She enjoys ___ »
 - Étiquettes « mot-voisin » : 22 au 03 (dont 13 sur les questions existantes : mois, saisons, vêtements ; 6 en m007, 3 en m020) et 9 au 04 (jobs et corvées). Posées seulement quand un indice de l'énoncé tranche ; sans elles le 03 tomberait à 51 % et le 04 à 45 %.
 - m010 Q3 : la clé « express » vaut pour le texte ; « show » serait aussi défendable pour le sujet officiel.
 - `content/CATALOGUE.md` (régénéré par `content:catalogue`) n'est pas touché : à régénérer par l'orchestrateur, les chapitres ayant des exercices en plus.
+
+## Corrections après audit (audit-B2.md)
+
+Relancés verts : `content:check`, `content:qa -- --subject english-6eme`, `content:tranche --fresh --strict-longest` (clé la plus longue 0, paires 0, gabarits 0 ; seul avertissement : positions de clé sur les 59 questions modifiées, d = 13 %), `lot-lint`, `prettier --check`, rendu `renderLesson` / `renderSummary` du cours et du résumé 04 (vitest jetable, supprimé).
+
+| défaut | fait |
+| --- | --- |
+| C-1 m008 Q7 ordre non unique | phrases b (« In the morning we drink hot milk… ») et f (« In the afternoon we enjoy walking… ») réécrites, ordre e,a,c,b,f,d, explication de l'auditeur |
+| M-1 m010 Q3 | citations des paragraphes 1 et 3, paires `decided/organize … show/did`, explication de l'auditeur (le mot « illisible » de mon rapport était faux : show est lisible) |
+| M-2 m010 Q6, Q7 | libellé `(Exam 2026 — reading text)` |
+| M-3 m011 Q6 | « find becomes found » dans l'énoncé, d2, explication complétée |
+| M-4 04/02-boss#1 | réécrit avec « the strongest » (étiquettes a, c, d) |
+| M-5 cook / cooker | ajout au bloc `::: piege` et au `::: retenir` de `04-caring/cours.md`, ligne de `resume.md` |
+| m-1, m-2 m007 Q6, Q8 | libellés de session corrigés |
+| m-3 m007 Q2, Q4 | « Choose the opposite of » |
+| m-4 m007 Q4 | option « outside » remplacée par « behind » (mot-voisin), explication ajustée |
+| m-5 m007 Q5 | explication de « funny » de l'auditeur |
+| m-6 m010 Q4 | « What does the word they refer to? » |
+| m-7 m011 Q2 | option c et explication « four things » |
+| doute 6 | étiquettes ajoutées : « the most big » (02-boss#3), « the most clean » devenu « the most strong » (02-boss#1), « hottest » (m009 Q3, mot-de-sens-inverse) ; les trois `mot-voisin` de 04/03-revision#1 retirés |
+
+Non appliqués : m-8 (aucune action exigée) ; m-9 m020 Q2–Q4 (l'auditeur ne donne pas de texte de remplacement, seulement une option : réserve laissée à l'orchestrateur) ; m-10 et le libellé `suffixe-sans-regle-orthographique` (déjà faits par le pilote) ; m-11 et m-12 (hors défauts, à déclarer exercices parallèles voulus : 04 quiz#4 ↔ 04-defi#1, 02-boss#6 ↔ 05#6). Tags corrigés : mot-voisin du 04 = 6 ; m010 Q6 (pas Q5) porte `premier-mot-cle`. Taux final : 03 = 104/159 (65 %), 04 = 82/162 (51 %).

@@ -7,19 +7,23 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Every street of the city is clean, but yours beats them all. Complete: \"My street is ___ street in the city.\"",
+      "prompt": "All the boys in the team are strong, but Sami beats them all. Complete: \"Sami is ___ boy in the team.\"",
       "options": [
         {
           "id": "a",
-          "text": "the cleaner",
+          "text": "the stronger",
           "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
         },
-        { "id": "b", "text": "the cleanest" },
-        { "id": "c", "text": "cleanest", "misconceptionTag": "english.comp.superlatif-sans-the" },
-        { "id": "d", "text": "the most clean" }
+        { "id": "b", "text": "the strongest" },
+        { "id": "c", "text": "strongest", "misconceptionTag": "english.comp.superlatif-sans-the" },
+        {
+          "id": "d",
+          "text": "the most strong",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        }
       ],
       "correctOption": "b",
-      "explanation": "One street above the whole city calls for the superlative: the + clean + est = the cleanest. The form \"the cleaner\" compares only two streets, \"cleanest\" forgets the word the, which a superlative always carries, and \"the most clean\" is the form of long adjectives, not of a short one like clean.",
+      "explanation": "Sami is above all the other boys of the team, so the sentence needs the superlative: the + strong + est = the strongest. The stronger compares only two boys, strongest without the forgets the word that always opens a superlative, and strong is a short adjective, so it takes -est and never the most.",
       "difficulty": 2
     },
     {
@@ -43,7 +47,11 @@
           "text": "the bigest",
           "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
         },
-        { "id": "c", "text": "the most big" },
+        {
+          "id": "c",
+          "text": "the most big",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        },
         { "id": "d", "text": "biggest", "misconceptionTag": "english.comp.superlatif-sans-the" }
       ],
       "correctOption": "a",

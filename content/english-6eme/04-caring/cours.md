@@ -230,6 +230,8 @@ A **carpenter**, a **doctor** and a **vet** are job names too, but there is no v
 
 The rule works the other way round only: from a **real verb** (farm, build, teach) you may build the person. ✓
 
+And a real verb does not always give the person: the person who cooks is a **cook** — a _cooker_ ✗ is the machine in the kitchen.
+
 :::
 
 ::: verifie
@@ -242,7 +244,7 @@ _She is a **driver**._ — the verb is _drive_, and the person is the verb + the
 :::
 
 ::: retenir
-**verb + er = the person**: farmer, builder, teacher, cleaner, gardener, player, driver — but a carpenter, a doctor and a vet come from no verb at all.
+**verb + er = the person**: farmer, builder, teacher, cleaner, gardener, player, driver — but a carpenter, a doctor and a vet come from no verb at all, and the person who cooks is a cook (a cooker is a machine).
 
 :::
 
