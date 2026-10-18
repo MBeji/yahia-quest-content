@@ -72,3 +72,27 @@ Notions données dans l'énoncé : « the exam asks for a 5-sentence e-mail » (
 - Étiquette `english.vocab.mot-voisin-du-meme-champ` posée sur les verbes de loisir, aliments et lieux de 01 `01-pratique#1`, `03-revision#1`, `05-entrainement#1` et 02 `quiz#1`, `03-revision#1` : à valider (E7).
 - `english.verb.ing-oublie` posée sur « dislike + base verbale » (01 `05-entrainement#2`) : le libellé du registre nomme like, love, hate, pas dislike.
 - 02 `05-entrainement#1` : `english.sound.lettre-pour-son` sur trois mots à voyelle brève (un francophone lit « i » comme /iː/) : lecture honnête mais indirecte.
+
+## 7. Corrections après audit (`audits/audit-B1.md`)
+
+Tous les textes de l'auditeur appliqués tels quels (script `/tmp/claude-0/en6-gis/B1/fix-audit.py`). Gates relancés : `content:check`, `content:qa`, `content:tranche --fresh --strict-longest` (0 clé la plus longue, 0 paire), `lot-lint`, `prettier --check` : verts.
+
+| défaut | fait |
+| --- | --- |
+| C-1 m002 q1 (« and » défendable) | énoncé reformulé (« says why… »), « from the box » retiré |
+| C-2 01/01-pratique#4 | énoncé « Why do you enjoy gardening? » + début d'explication |
+| M-1 m005 matching inventé | remplacé par le QCM fidèle « ___ playgrounds are there? » (d1, How much étiqueté) |
+| M-2 m005 multi « extra » | supprimé ; m005 passe à 6 questions |
+| M-3 m006 q2/q6/q8 doublons | nouveaux contenus (sommeil, marcher à l'école, écrans) |
+| M-4 m004 q7 | énoncé, options c (étiquetée) et d, explication |
+| M-5 m004 q2 | phrase du volleyball citée, option d et explication |
+| M-6 orderings m001 q7/q10, m005 ordering | premier mot imposé, point final |
+| m-1 | « from the box » retiré (m001 q2, q5) |
+| m-3, m-4 | m003 q1 option b reformulée ; m003 q5 « At the end… » retiré |
+| m-6 | m006 q4 « says we should » + « cousin Ali » ; q5 « Doctor James's advice » |
+| m-7, m-8, m-9 | 01/quiz#5 « they're » ; 01/03-revision#4 « Yes, I like it a lot. » ; 02/04-defi#1 d |
+| E-1 | `lettre-pour-son` rendue muette : 01/03-revision#6 (restaurant, let's), 01/04-defi#2 c, 02/05-entrainement#1 (rabbit) |
+| E-3 | muettes : 02/01-pratique#3 d, #5 c, #6 b |
+
+Laissés comme l'audit les accepte : m-2 et E-2 (déjà faits par le pilote), m-5 (m004 q4 reste d2), m-10 (gabarits).
+Tag rates (m004 q7 gagne une étiquette, les 7 retraits en perdent) : à remesurer par l'auditeur.

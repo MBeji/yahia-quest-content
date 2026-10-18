@@ -59,28 +59,28 @@
       "difficulty": 1
     },
     {
-      "type": "multi",
-      "prompt": "(Exam 2023) The exam gives a box of five words: many, always, much, stomachache, never. They must complete the text below, and some of them are extra.\n\nAshley can't keep fit. She ___ eats unhealthy food. Today, she's not feeling well. She has a ___ . The doctor says that she must drink ___ water and eat vegetables.\n\nSelect ALL the extra words.",
+      "prompt": "(Exam 2020) A pupil writes a question about his school. Which words complete it?\n\n\"___ playgrounds are there?\"",
       "options": [
-        { "id": "a", "text": "stomachache" },
-        { "id": "b", "text": "many" },
-        { "id": "c", "text": "never" },
-        { "id": "d", "text": "always" },
-        { "id": "e", "text": "much" }
+        { "id": "a", "text": "How many" },
+        {
+          "id": "b",
+          "text": "How much",
+          "misconceptionTag": "english.quant.many-much-confondus"
+        },
+        { "id": "c", "text": "How often" },
+        { "id": "d", "text": "How old" }
       ],
-      "answerKey": {
-        "correct": ["b", "c"]
-      },
-      "explanation": "Each blank takes one word of the box, and the words that fit no blank stay extra. Many goes with things you can count, so it cannot stand before water, and never would say the opposite of what the first sentences tell about a person who cannot keep fit.",
-      "difficulty": 2
+      "correctOption": "a",
+      "explanation": "Playgrounds carry an -s and you can count them one by one, so the question word is How many: How many playgrounds are there? How much is for things you cannot count, How often asks about a habit, and How old asks about age.",
+      "difficulty": 1
     },
     {
       "type": "ordering",
-      "prompt": "(Exam 2025) Jane cannot do the housework today. Reorder what the exam gives (help / stomachache / Jane / because / a / cleaning / has / with / can't / she) to say what she cannot do and why.",
+      "prompt": "(Exam 2025) Jane cannot do the housework today. Reorder what the exam gives (help / stomachache / Jane / because / a / cleaning / has / with / can't / she) to say what she cannot do and why. The sentence starts with Jane.",
       "options": [
         { "id": "a", "text": "because" },
         { "id": "b", "text": "Jane" },
-        { "id": "c", "text": "she has a stomachache" },
+        { "id": "c", "text": "she has a stomachache." },
         { "id": "d", "text": "help with cleaning" },
         { "id": "e", "text": "can't" }
       ],
@@ -104,27 +104,6 @@
       ],
       "correctOption": "a",
       "explanation": "The rain makes the sea impossible, so the word is can't, which says that they are not able to, and the verb stays bare after it: they can't go. The words aren't and haven't are not followed by the bare verb go, and can't to adds a to that a modal never takes.",
-      "difficulty": 2
-    },
-    {
-      "type": "matching",
-      "prompt": "(Exam 2020) The exam asks to match the beginning of a question with its end, for example How many playgrounds + are there? Match each beginning with the end that fits it.",
-      "options": [
-        { "id": "l1", "text": "How many playgrounds" },
-        { "id": "l2", "text": "How much milk" },
-        { "id": "l3", "text": "How many eggs" },
-        { "id": "r1", "text": "are there in the basket?" },
-        { "id": "r2", "text": "are there in your school?" },
-        { "id": "r3", "text": "is there in the fridge?" }
-      ],
-      "answerKey": {
-        "pairs": [
-          ["l1", "r2"],
-          ["l2", "r3"],
-          ["l3", "r1"]
-        ]
-      },
-      "explanation": "Playgrounds and eggs are counted one by one, so they take How many and the plural are there: the places decide between them, playgrounds in a school and eggs in a basket. Milk cannot be counted, so it takes How much and is there: How much milk is there in the fridge?",
       "difficulty": 2
     }
   ]

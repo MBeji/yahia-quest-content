@@ -23,7 +23,7 @@
       "difficulty": 1
     },
     {
-      "prompt": "(Exam 2023, reading, question 1a) A text says about Zoey: \"But her favourite hobby is drawing. She always draws pictures of her friends jumping and swinging.\"\n\nThe exam asks: True or False? \"Zoey plays on the swing with her friends.\" Which answer is right?",
+      "prompt": "(Exam 2023, reading, question 1a) A text says about Zoey: \"She enjoys flying kites and playing volleyball in the playground. But her favourite hobby is drawing. She always draws pictures of her friends jumping and swinging.\"\n\nThe exam asks: True or False? \"Zoey plays on the swing with her friends.\" Which answer is right?",
       "options": [
         {
           "id": "a",
@@ -40,11 +40,11 @@
         },
         {
           "id": "d",
-          "text": "False: her favourite hobby is drawing, so she never plays outside"
+          "text": "False: she never plays in the playground, she only draws"
         }
       ],
       "correctOption": "a",
-      "explanation": "The text says that Zoey draws pictures of her friends swinging: she is the artist, not one of the children on the swing, so the statement is False. A True answer built on the drawings reads the words but not the sentence, and a True answer built on what usually happens in a playground is not an answer from the text. The idea that she never plays outside goes too far: the sentences say that drawing is her favourite hobby, not that she does nothing else.",
+      "explanation": "The text says that Zoey draws pictures of her friends swinging: she is the artist, not one of the children on the swing, so the statement is False. A True answer built on the drawings reads the words but not the sentence, and a True answer built on what usually happens in a playground is not an answer from the text. The idea that she never plays in the playground is false: the text says that she plays volleyball there.",
       "difficulty": 2
     },
     {
@@ -137,7 +137,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "(Exam 2023, reading) At the end of the text, \"Her teachers and friends hug her and tell her: 'we are proud of you, Zoey!'\" after the headmistress calls her the best artist of the school. Why do they hug her?",
+      "prompt": "(Exam 2023, reading) At the end of the text, the headmistress says: \"let's welcome the best artist of our school, Zoey!\" Then Zoey's teachers and friends hug her and tell her: \"we are proud of you, Zoey!\" Why are they proud of her?",
       "options": [
         {
           "id": "a",
@@ -145,11 +145,18 @@
           "misconceptionTag": "english.read.reponse-sans-appui-dans-le-texte"
         },
         { "id": "b", "text": "because she is the best artist of the school" },
-        { "id": "c", "text": "because she is sad" },
-        { "id": "d", "text": "because she flew a kite" }
+        {
+          "id": "c",
+          "text": "because she plays volleyball very well",
+          "misconceptionTag": "english.read.reponse-sans-appui-dans-le-texte"
+        },
+        {
+          "id": "d",
+          "text": "because she helps the art teachers get ready for the event"
+        }
       ],
       "correctOption": "b",
-      "explanation": "They tell her that they are proud of her, and the headmistress has just named her the best artist of the school: this is the reason of the hug. A birthday, sadness or the kite are reasons that are not in the text, and a hug at the end of a competition does not show that someone is sad.",
+      "explanation": "They tell her that they are proud of her, and the headmistress has just named her the best artist of the school: this is the reason of the hug. A birthday, playing volleyball very well or helping the teachers are not the reason the text gives: the headmistress has just named her the best artist of the school.",
       "difficulty": 2
     }
   ]
