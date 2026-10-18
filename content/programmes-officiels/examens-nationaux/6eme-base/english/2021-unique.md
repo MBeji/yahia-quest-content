@@ -1,6 +1,6 @@
 ---
 source: officiel
-examen: Concours d'entrée aux collèges pilotes (6ᵉ année de base) — « مناظرة الدخول إلى المدارس الإعدادية النموذجية »
+examen: concours d'entrée aux collèges pilotes (6ᵉ année de base) — « مناظرة الدخول إلى المدارس الإعدادية النموذجية »
 matiere: Anglais
 session: 2021
 filiere: unique
@@ -72,3 +72,5 @@ My classroom is big. It ( has / have / is ) twenty tables and many chairs. There
 What do you wear? / What do you eat and drink? / What do you do in the party?/ What presents do you get?
 
 [cadre de messagerie : To Patricia2009@gmail.com — Subject : My birthday party — « Dear Patricia, » — pointillés — « Yours, Sami(a) »]
+
+[coquille imprimée : le texte nomme « Mr John », l'item vrai/faux de la partie I écrit « Mr Jack » — conservé tel quel]

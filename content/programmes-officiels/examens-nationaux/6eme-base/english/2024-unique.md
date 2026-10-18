@@ -1,6 +1,6 @@
 ---
 source: officiel
-examen: Concours d'entrée aux collèges pilotes (6ᵉ année de base) — « مناظرة الدخول إلى المدارس الإعدادية النموذجية »
+examen: concours d'entrée aux collèges pilotes (6ᵉ année de base) — « مناظرة الدخول إلى المدارس الإعدادية النموذجية »
 matiere: Anglais
 session: 2024
 filiere: unique
