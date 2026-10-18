@@ -324,3 +324,41 @@ l'adverbe (avant le verbe) et pour « because » (devant la cause).
 trois ordres non uniques, une matching inventée qui redemande le quiz, un multi déductible et trois doublons d'items
 « ne pas redemander » en m006. Tous les correctifs ci-dessus sont des textes de remplacement vérifiés (clé ni la plus longue
 ni unique au vote, aucune fuite créée). Une contre-vérification rapide suffira après la correction.
+
+## 7. Re-vérification (commit `f2043dc5`)
+
+J'ai re-résolu à l'aveugle les 25 questions modifiées depuis `2aa89cc4`, et toutes les clés concordent. Les gates passent depuis
+`/home/user/eng-deliver` :
+- `content:check` : vert ;
+- `content:qa -- --subject english-6eme` : aucune clé suspecte ;
+- `content:tranche --chapters 01,02 --fresh --strict-longest` : clé la plus longue 0/54, aucune paire proche, mêmes 2 gabarits, acceptés (m-10).
+
+| défaut | état | contrôle |
+| --- | --- | --- |
+| C-1 m002 q1 | corrigé | le « why » est posé : « because » est la seule réponse, et « from the box » est retiré |
+| C-2 01/01-pratique#4 | corrigé | prompt « Why do you enjoy gardening? » et explication conformes |
+| M-1 m005 matching | corrigé | QCM 2020 « ___ playgrounds are there? », clé How many (8 / 8 / 9 / 7), en d1 après q3 ; la matching est retirée |
+| M-2 m005 multi | corrigé | supprimé ; m005 compte 6 questions (d1 ×4, ordering d2, d2), rampe croissante |
+| M-3 m006 q2, q6, q8 | corrigé | textes conformes ; plus de reprise de 02/03-revision#3 ni de 02/quiz#2 ; q2 ne contient plus « walk » ni « TV » |
+| M-4 m004 q7 | corrigé | la cause n'est plus dans la narration ; c et d sont plausibles ; clé b (44) au milieu (59 / 38 / 58) |
+| M-5 m004 q2 | corrigé | la phrase volleyball est citée ; d se réfute par le texte ; clé 66 < b 74 |
+| M-6 ordering m001 q7, q10, m005 q5 | corrigé | premier mot imposé et dernier segment ponctué : ordre unique |
+| m-1 « from the box » | corrigé | m001 q2 et q5 |
+| m-2 `sources[]` | corrigé (pilote) | « concours d'entrée aux collèges pilotes (6ᵉ année de base) » dans les deux `chapter.json` |
+| m-3 m003 q1 | corrigé | b « He makes a suggestion, like Let's play. » |
+| m-4 m003 q5 | corrigé | « At the end of the conversation » est retiré |
+| m-5 m004 q4 | laissé (accepté) | la question reste d2 : facile, mais l'énoncé doit se suffire |
+| m-6 m006 q4, q5 | corrigé | clé 48 < d 49 ; « Doctor James's advice » |
+| m-7 01/quiz#5 | corrigé | « they're » et explication |
+| m-8 01/03-revision#4 | corrigé | « Yes, I like it a lot. » et explication |
+| m-9 02/04-defi#1 | corrigé | d « You mustn't eat sweets before you go to bed. » est correct ; c reste l'unique fautive |
+| E-1 | corrigé | 01/03-revision#6 c et d, 01/04-defi#2 c, 02/05-entrainement#1 rabbit sont muets |
+| E-2 | corrigé (pilote) | libellé `english.verb.ing-oublie` élargi à « dislike » en fr, en et ar |
+| E-3 | corrigé | 02/01-pratique#3 d, #5 c, #6 b sont muets |
+
+Il reste un seul point, mineur et non bloquant : la première phrase de l'explication de m004 q7 dit encore « the reason of the hug »,
+alors que la question porte sur la fierté, et la fin répète cette même phrase. Texte proposé :
+`They tell her that they are proud of her, and the headmistress has just named her the best artist of the school: that is why they are proud. A birthday, playing volleyball very well or helping the art teachers are reasons that the text does not give.`
+
+**Verdict final : prêt à armer.** Aucune clé n'est fausse, aucun défaut critique ou majeur ne reste, et la retouche de l'explication
+de m004 q7 est facultative.
