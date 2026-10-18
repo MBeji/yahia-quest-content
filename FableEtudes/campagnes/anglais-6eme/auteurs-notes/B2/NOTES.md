@@ -7,3 +7,4 @@
   - m010 : « vrai/faux + phrase qui prouve » en UNE question par affirmation (verdict + raison dans les options), pour ne citer que 1–2 phrases du texte par question ; deux questions de lecture ajoutées (date de la fête, titre) pour garder 7 questions.
   - m010 Q2 (mot du paragraphe 3) : le mot attendu au 2026 n'est pas lisible dans le sujet (express est au paragraphe 2, show au 3) → question en paires de mots du texte, sans numéro de paragraphe.
   - Quelques étiquettes hors liste de la carte mais au registre et exactes : spell.suffixe-sans-regle-orthographique (ch04, bigest/happyest), verb.s-oublie-3e-personne (m011), write.phrase-cle-trop-etroite (m011).
+- 2026-10-18 fin : 6 missions écrites, parties 2 et 3 faites, gates verts. Rapport : ../../rapports/rapport-B2.md.
