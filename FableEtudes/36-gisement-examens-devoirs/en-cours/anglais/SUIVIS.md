@@ -7,8 +7,11 @@
 réalité « Communicative Functions » et « Word Building & Linking Words ». Conséquences : les lecteurs ont rangé hors
 chapitres (HP) le gérondif, les réfléchis et les possessifs que le 07 enseigne, et au 06 des passifs que rien
 n'enseigne. Le gisement suit le contenu publié (décision du pilote : P1–P3 placés au 07, passif écarté) et ne
-touche ni au manifeste ni aux slugs. À trancher hors gisement : renommer le manifeste (et/ou les slugs, ce qui
-touche les URL et les progressions en base) pour qu'il dise ce que les chapitres enseignent.
+touche ni au manifeste ni aux slugs.
+
+**Tranché par le propriétaire le 2026-10-18** : on garde le nommage du programme officiel et on ajoute un
+commentaire sur le contenu réel. Fait : champ `commentaire` des chapitres 06 et 07 du manifeste
+`9eme-base.json` (PR `claude/manifeste-anglais-06-07-commentaire`) ; aucun slug ni titre ne change.
 
 ## S2 — Dérivation par suffixes (P3)
 
