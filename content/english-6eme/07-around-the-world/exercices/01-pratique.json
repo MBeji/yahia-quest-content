@@ -7,27 +7,27 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "Tunisia is at the bottom of the drawing and Italy is above it. Choose the correct sentence.",
+      "prompt": "Italy is drawn above Tunisia on a map. Choose the correct sentence.",
       "options": [
-        { "id": "a", "text": "Italy is north of Tunisia." },
+        {
+          "id": "a",
+          "text": "Tunisia lies north of Italy.",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
         {
           "id": "b",
-          "text": "Italy is south of Tunisia.",
+          "text": "Tunisia lies east of Italy.",
           "misconceptionTag": "english.vocab.directions-confondues"
         },
-        {
-          "id": "c",
-          "text": "Italy is east of Tunisia.",
-          "misconceptionTag": "english.vocab.directions-confondues"
-        },
+        { "id": "c", "text": "Tunisia lies south of Italy." },
         {
           "id": "d",
-          "text": "Italy is west of Tunisia.",
+          "text": "Tunisia lies west of Italy.",
           "misconceptionTag": "english.vocab.directions-confondues"
         }
       ],
-      "correctOption": "a",
-      "explanation": "The top of a map is the north, so Italy, drawn above Tunisia, is north of it. The south is the bottom of the map, and the east and the west are its right and left sides, which say nothing about what is higher.",
+      "correctOption": "c",
+      "explanation": "The top of a map is the north, so Italy, drawn above Tunisia, is north of it, and Tunisia, drawn below, lies south of Italy. The east and the west are the right and left sides of the map, which say nothing about what is higher, and north would put Tunisia above Italy.",
       "difficulty": 1
     },
     {
@@ -106,7 +106,11 @@
       "prompt": "Your family is choosing a country for the holidays. Which sentence suggests the journey correctly?",
       "options": [
         { "id": "a", "text": "Let's travel to Italy." },
-        { "id": "b", "text": "Let's to travel to Italy." },
+        {
+          "id": "b",
+          "text": "Let's to travel to Italy.",
+          "misconceptionTag": "english.modal.to-en-trop"
+        },
         {
           "id": "c",
           "text": "How about travel to Italy?",

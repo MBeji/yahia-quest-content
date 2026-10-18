@@ -48,3 +48,25 @@ Sous les 60 % de la carte, volontairement (E7) : je n'ai posé `mot-voisin-du-me
 5. m019#3 : l'option « a old … an big » (deux erreurs) et m021#2 « At the top, on the right » restent muettes (plan 2×2 complet).
 6. 09#3 : « key » (ey, /i/ long) est un piège de lettres, non enseigné dans la section ; il est expliqué dans la réponse.
 7. Le cours 07 dit que le y final dit /i/ dans un mot long et /ai/ dans un mot court, July étant l'exception du guide ; aucune autre exception (reply, apply) n'est posée en question.
+
+## Corrections après audit (audit-B4.md)
+
+| défaut | fait |
+| --- | --- |
+| C1 04#3 double réponse | option b → « How about travelling by plane by Spain? » (étiquette by/to) ; explication remplacée |
+| C2 05#1 | remplacé par la carte au trésor (puits / palmier, south, 3 étiquettes directions) |
+| M1 libellé a/an | fait par le pilote ; ni `misconceptions.json` ni les étiquettes a/an touchés |
+| M2 09#3 « key » | → « very » (étiquette son) ; explication remplacée |
+| M3, m1 m018#2 et #1 | citations élargies au texte du PDF (avec « […] » en #2) |
+| M4 m018#4 | extrait du paragraphe 3 ajouté au prompt de l'ordering |
+| M5 01#1 | renvoi au dessin retiré. La paire quiz#1 ↔ 01#1 repassant à 0,45, j'ai écrit l'énoncé « Italy is drawn above Tunisia… » et les options « Tunisia lies … of Italy » (clé south) |
+| M6 05#2 | scène Maori (clé touch of the noses) ; la paire avec quiz#2 revenait à 0,53 : options reformulées en groupes nominaux (« A warm handshake. »…), clé non la plus longue |
+| M7 cours, tableaux | remplacés tels quels par l'audit (2 tableaux à 2 colonnes, étiquettes en phrase) ; rendu vitest : 2 tables, plus de « 1 · The s » |
+| M8 verifie a/an/the | remplacé (pont / fontaine à Rome) |
+| m2 02#4 b ; m5 m019#4 | étiquette retirée ; `expectedMistakes` retirés |
+| m3, m4 03#3 d, 03#6 | coat ; énoncé « Last summer I visited ___ country in Europe: Spain. » |
+| m6 | deux étiquettes ajoutées : 01#6 b → `modal.to-en-trop`, 02#6 b → `spell.suffixe-sans-regle-orthographique` |
+| m7 diff éclaté | non corrigé : c'est prettier (options longues + étiquette), `prettier --check` l'exige |
+| m8 « Three spellings » | → « Four spellings to watch » |
+
+Effet de bord : `prettier --write` a réaligné les tableaux de tout `cours.md` (diff de forme, pas de fond). Taux d'étiquetage final : 87 / 153 = 57 % (existants 54 / 105 avant les deux ajouts du pilote, 56 / 105 avec). Gates : `content:check`, `content:qa` (0 erreur), `content:tranche --fresh --strict-longest` (clé la plus longue 0, paires 0, gabarit 0), `lot-lint`, `prettier --check` : verts.

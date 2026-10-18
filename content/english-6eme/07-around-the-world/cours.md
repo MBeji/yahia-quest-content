@@ -128,12 +128,12 @@ You already know how it is done at home. But your hand, your cheek and your head
 ::: definition
 To **greet** somebody is to say hello when you meet. Four ways of greeting travel around the world:
 
-| Country                | People greet each other by…                      |
-| ---------------------- | ------------------------------------------------ |
-| England, the USA       | **shaking hands**                                 |
-| Tunisia, France, Spain | giving a **kiss** on each **cheek**               |
-| Japan                  | **bowing** — they bend the head and the back      |
-| New Zealand (Maori)    | **touching** noses and foreheads gently           |
+| Country                | People greet each other by…                  |
+| ---------------------- | -------------------------------------------- |
+| England, the USA       | **shaking hands**                            |
+| Tunisia, France, Spain | giving a **kiss** on each **cheek**          |
+| Japan                  | **bowing** — they bend the head and the back |
+| New Zealand (Maori)    | **touching** noses and foreheads gently      |
 
 The words to build the sentences: people **greet each other**, they **use** their hands or their heads, and what they **think** is polite at home may surprise a traveller.
 
@@ -210,11 +210,11 @@ The right forms: _**an** amphitheatre_ ✓ and _**a** cape_ ✓
 :::
 
 ::: verifie
-Complete: "In Spain I watched ___ dancer in ___ street, and ___ festival began at midnight."
+Complete: "In Rome I saw ___ old bridge and ___ fountain. ___ fountain was full of coins."
 
 ---
 
-_In Spain I watched **a** dancer in **a** street, and **the** festival began at midnight._ — _dancer_ and _street_ both begin with a consonant and are new for the listener, so both take **a**; the **festival** is the one the whole sentence is about, already known, so it takes **the**.
+_In Rome I saw **an** old bridge and **a** fountain. **The** fountain was full of coins._ — _old_ begins with the vowel o, so it takes **an**; _fountain_ begins with a consonant and is new for the listener, so it takes **a**; the second time the fountain is already known, so it takes **the**.
 
 :::
 
@@ -237,10 +237,10 @@ Two prepositions never change:
 
 And to say which one you choose, the verb **prefer** takes two shapes, both correct:
 
-| Structure                    | Example                            |
-| ---------------------------- | ---------------------------------- |
-| **prefer to** + verb         | I **prefer to travel** by plane.   |
-| **prefer** + verb + **ing**  | I **prefer travelling** by plane.  |
+| Structure                   | Example                           |
+| --------------------------- | --------------------------------- |
+| **prefer to** + verb        | I **prefer to travel** by plane.  |
+| **prefer** + verb + **ing** | I **prefer travelling** by plane. |
 
 A plane is **fast**, a boat is **slow**, and on a long journey you **spend** many hours inside.
 
@@ -319,14 +319,14 @@ To compare **two** things, a short adjective takes **-er**, and the second thing
 
 _A plane is **faster than** a boat._ — _Italy is **bigger than** Tunisia._
 
-Three spellings to watch:
+Four spellings to watch:
 
-| The adjective ends in…              | You add…         | Example                    |
-| ----------------------------------- | ---------------- | -------------------------- |
-| a normal consonant                  | **-er**          | old → old**er**            |
-| **-e**                              | only **-r**      | nice → nice**r**           |
-| consonant + **-y**                  | **-ier**         | easy → eas**ier**          |
-| one short consonant-vowel-consonant | double + **-er** | big → bi**gger**           |
+| The adjective ends in…              | You add…         | Example           |
+| ----------------------------------- | ---------------- | ----------------- |
+| a normal consonant                  | **-er**          | old → old**er**   |
+| **-e**                              | only **-r**      | nice → nice**r**  |
+| consonant + **-y**                  | **-ier**         | easy → eas**ier** |
+| one short consonant-vowel-consonant | double + **-er** | big → bi**gger**  |
 
 :::
 
@@ -379,13 +379,13 @@ The spellings of the comparative come back, unchanged: old → **the oldest** ·
 
 The five monuments of this unit:
 
-| Monument               | Country | Town    | Age                     |
-| ---------------------- | ------- | ------- | ----------------------- |
-| the pyramids           | Egypt   | Giza    | about 4500 years old    |
-| the amphitheatre       | Tunisia | El Jem  | built about 1800 years ago |
-| Big Ben                | England | London  | finished in 1859        |
-| the Eiffel Tower       | France  | Paris   | finished in 1889        |
-| the Great Wall         | China   | —       | the longest wall on Earth |
+| Monument         | Country | Town   | Age                        |
+| ---------------- | ------- | ------ | -------------------------- |
+| the pyramids     | Egypt   | Giza   | about 4500 years old       |
+| the amphitheatre | Tunisia | El Jem | built about 1800 years ago |
+| Big Ben          | England | London | finished in 1859           |
+| the Eiffel Tower | France  | Paris  | finished in 1889           |
+| the Great Wall   | China   | —      | the longest wall on Earth  |
 
 :::
 
@@ -452,12 +452,12 @@ A **custom** is something the people of a country have done for a very long time
 
 Four customs of **Spain**:
 
-| Custom            | What happens                                                                 |
-| ----------------- | ---------------------------------------------------------------------------- |
-| paella            | a dish of rice with **seafood**, vegetables and red **pepper**                |
-| flamenco          | a **dancer** claps, stamps and turns to the sound of a guitar                 |
-| La Tomatina       | a **festival** where people **throw** tomatoes at each other for one morning  |
-| the corrida       | a man with a red **cape** **fights** a **bull** in a round arena              |
+| Custom      | What happens                                                                 |
+| ----------- | ---------------------------------------------------------------------------- |
+| paella      | a dish of rice with **seafood**, vegetables and red **pepper**               |
+| flamenco    | a **dancer** claps, stamps and turns to the sound of a guitar                |
+| La Tomatina | a **festival** where people **throw** tomatoes at each other for one morning |
+| the corrida | a man with a red **cape** **fights** a **bull** in a round arena             |
 
 The **flag** of Spain is red and yellow.
 
@@ -504,21 +504,19 @@ Say _books_, then _bags_. Both plurals end with the same letter, **s**, and your
 You met the hissing and the buzzing **s** in Unit I. This last unit asks you to listen to it again at the end of the plural, and to a second letter that hides two sounds.
 
 ::: propriete
-**1 · The s of the plural** says **/s/** or **/z/**, and the sound just before it decides:
+The first letter: the **s** of the plural says **/s/** or **/z/**, and the sound just before it decides.
 
-| Sound   | The word ends with…                          | Words of this unit                         |
-| ------- | -------------------------------------------- | ------------------------------------------ |
-| **/s/** | a quiet sound: p, t, k                       | books · cats · cups · students             |
-| **/z/** | a sound that shakes the throat, or a vowel   | cars · bags · stars · friends · greetings  |
+| **/s/** — after a quiet sound: p, t, k | **/z/** — after a sound that shakes the throat, or a vowel |
+| -------------------------------------- | ---------------------------------------------------------- |
+| books · cats · cups · students         | cars · bags · stars · friends · greetings                  |
 
 The test is the same as in Unit I: put your hand on your throat — with **/z/** it shakes, with **/s/** it stays quiet.
 
-**2 · The y at the end of a word** says **/i/** or **/ai/**, and the length of the word decides:
+The second letter: the **y** at the end of a word says **/i/** or **/ai/**, and the length of the word decides.
 
-| Sound    | The word is…                    | Words of this unit                                       |
-| -------- | ------------------------------- | -------------------------------------------------------- |
-| **/i/**  | long (two syllables or more)    | study · sunny · funny · puppy · cloudy · country · family · many · very |
-| **/ai/** | short (one syllable)            | try · fly · my · sky · why — and **July**, the one long word that joins them |
+| **/i/** — a long word (two syllables or more)                           | **/ai/** — a short word (one syllable)                                       |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| study · sunny · funny · puppy · cloudy · country · family · many · very | try · fly · my · sky · why — and **July**, the one long word that joins them |
 
 Your teacher's book writes these two sounds **/i/** and **/ai/**.
 
