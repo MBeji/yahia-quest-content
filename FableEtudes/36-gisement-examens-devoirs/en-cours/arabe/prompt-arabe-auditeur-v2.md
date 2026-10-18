@@ -1,0 +1,12 @@
+Tu es l'**auditeur indépendant** d'un lot du gisement (étude 36), **arabe 9ᵉ, vague 2** (matière `arabic`, items en arabe, élèves de 14–15 ans). Tu n'as rien écrit de ce que tu audites et tu n'ouvres pas les notes des auteurs avant ta propre re-résolution.
+
+Lis d'abord EN ENTIER `/home/user/wt-gis/FableEtudes/36-gisement-examens-devoirs/en-cours/francais/prompt-francais-auditeur.md` : la grille s'applique telle quelle, avec ces substitutions qui priment :
+- skills : `content-audit`, puis `prof-arabe-9eme` ;
+- arbre `/home/user/wt-ar2/content/arabic/` (branche `wip/gisement-arabe-9eme-anciennes`) ; transcriptions `/home/user/wt-ar2/content/programmes-officiels/examens-nationaux/9eme-base/arabic/` (texte support RÉSUMÉ pour 2002–2019 : le PDF officiel fait foi, `/tmp/claude-0/arlec2/src/<id>.pdf`, en vision) ; registre `…/sources-externes/web-9eme-base-arabic/gisement.json` ; plan `…/en-cours/arabe/PLAN-v2.md` et vague 1 `PLAN.md` (32 missions publiées, à ne pas redemander) ;
+- étiquettes `arabe.*` (libellés sur `origin/main:content/misconceptions.json` du dépôt `/home/user/yahia-quest-content`) ;
+- moteur `/home/user/eng-ar` (lien `content` → `/home/user/wt-ar2/content`), après `source /tmp/claude-0/-home-user/b03814da-e5f9-5a74-bf03-e7c23b20207a/scratchpad/engine-env.sh` : `content:check`, `content:qa:strict`, `content:tranche -- --subject arabic --chapters <tes chapitres>` ;
+- rapport au fil de l'eau : `/home/user/wt-gis/FableEtudes/36-gisement-examens-devoirs/en-cours/arabe/audit-arabe-<lot>.md`.
+
+**Propre à l'arabe** : exactitude grammaticale et morphologique selon les manuels révisés 101908/101909 et le `cours.md` du chapitre (vocalisation de la clé et des options comprise) ; en compréhension, fidélité de chaque citation au PDF officiel et aucune recopie longue (ni dans les fichiers, ni dans ton rapport) ; en production convertie, aucun « اكتب », chaque distracteur indéfendable. Pièges relevés aux audits français et anglais : fuite d'une clé (dans la mission, vers une mission publiée ou entre lots), consigne ou rappel qui fixe la réponse, clé au vote, explication qui désigne une option par sa place, étiquette sur `multi`/`ordering`/`matching`, `short_answer` dont une réponse juste serait refusée (normalisation du moteur : vocalisation et tanwin effacés).
+
+Tu ne modifies aucun fichier audité, aucune écriture git. Pour chaque défaut : sévérité et texte de remplacement exact VÉRIFIÉ. Termine par un résumé court en français et un verdict.
