@@ -4,7 +4,7 @@
     {
       "prompt": "Complete the sentence: \"Every child ___ the right to education.\"",
       "options": [
-        { "id": "a", "text": "have" },
+        { "id": "a", "text": "have", "misconceptionTag": "english.verb.auxiliaire-mal-accorde" },
         { "id": "b", "text": "has" },
         { "id": "c", "text": "having" },
         { "id": "d", "text": "is" }
@@ -17,7 +17,7 @@
       "prompt": "Complete the sentence: \"Yesterday, we ___ the classroom for Teacher's Day.\"",
       "options": [
         { "id": "a", "text": "decorated" },
-        { "id": "b", "text": "decorate" },
+        { "id": "b", "text": "decorate", "misconceptionTag": "english.tense.present-avec-marqueur-passe" },
         { "id": "c", "text": "decorates" },
         { "id": "d", "text": "will decorate" }
       ],
@@ -26,22 +26,22 @@
       "difficulty": 1
     },
     {
-      "prompt": "Complete the sentence: \"Last Sunday, my father ___ a necklace for my mother.\"",
+      "prompt": "Complete the sentence: \"Yesterday, my grandmother ___ a big cake for the party.\"",
       "options": [
-        { "id": "a", "text": "buy" },
-        { "id": "b", "text": "buys" },
-        { "id": "c", "text": "buyed" },
-        { "id": "d", "text": "bought" }
+        { "id": "a", "text": "make" },
+        { "id": "b", "text": "makes", "misconceptionTag": "english.tense.present-avec-marqueur-passe" },
+        { "id": "c", "text": "maked", "misconceptionTag": "english.tense.ed-sur-verbe-irregulier" },
+        { "id": "d", "text": "made" }
       ],
       "correctOption": "d",
-      "explanation": "Last Sunday is over, and buy is an irregular verb: its simple past is bought. The forms \"buy\" and \"buys\" stay in the present, and \"buyed\" adds the regular -ed ending to a verb that refuses it.",
+      "explanation": "Yesterday is over, and make is an irregular verb: its simple past is made. The forms \"make\" and \"makes\" stay in the present, and \"maked\" adds the regular -ed ending to a verb that refuses it.",
       "difficulty": 2
     },
     {
       "prompt": "Complete both blanks: \"The clown ___ very funny and the children ___ excited.\"",
       "options": [
-        { "id": "a", "text": "was / was" },
-        { "id": "b", "text": "were / were" },
+        { "id": "a", "text": "was / was", "misconceptionTag": "english.verb.auxiliaire-mal-accorde" },
+        { "id": "b", "text": "were / were", "misconceptionTag": "english.verb.auxiliaire-mal-accorde" },
         { "id": "c", "text": "was / were" },
         { "id": "d", "text": "were / was" }
       ],
@@ -52,10 +52,10 @@
     {
       "prompt": "In which of these past verbs does the final -ed add a whole new syllable, the sound /ɪd/?",
       "options": [
-        { "id": "a", "text": "talked" },
-        { "id": "b", "text": "played" },
+        { "id": "a", "text": "talked", "misconceptionTag": "english.sound.ed-toujours-syllabe" },
+        { "id": "b", "text": "played", "misconceptionTag": "english.sound.ed-toujours-syllabe" },
         { "id": "c", "text": "waited" },
-        { "id": "d", "text": "hugged" }
+        { "id": "d", "text": "hugged", "misconceptionTag": "english.sound.ed-toujours-syllabe" }
       ],
       "correctOption": "c",
       "explanation": "The verb wait already ends in the sound t, and nothing can be glued to a t, so a whole little syllable appears: wait-ed. In talked the ending is the quiet /t/, and in played and hugged it is the /d/ that shakes your throat, and none of the three adds a syllable.",
