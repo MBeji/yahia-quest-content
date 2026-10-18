@@ -4,10 +4,22 @@
     {
       "prompt": "On a map of the world, which direction is at the top?",
       "options": [
-        { "id": "a", "text": "east" },
+        {
+          "id": "a",
+          "text": "east",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
         { "id": "b", "text": "north" },
-        { "id": "c", "text": "south" },
-        { "id": "d", "text": "west" }
+        {
+          "id": "c",
+          "text": "south",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
+        {
+          "id": "d",
+          "text": "west",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        }
       ],
       "correctOption": "b",
       "explanation": "The top of every world map is the north, which is why Italy, drawn above Tunisia, is north of it. The south is at the bottom, the east on the right and the west on the left.",
@@ -31,7 +43,11 @@
         { "id": "a", "text": "by" },
         { "id": "b", "text": "in" },
         { "id": "c", "text": "on" },
-        { "id": "d", "text": "to" }
+        {
+          "id": "d",
+          "text": "to",
+          "misconceptionTag": "english.prep.travel-by-to-confondus"
+        }
       ],
       "correctOption": "a",
       "explanation": "A means of transport always takes by, with no little word behind it: travel by plane, by train, by car, by boat. The word to belongs to the place you go to, and in and on put you inside or above the plane instead of naming the way you travel.",
@@ -40,10 +56,18 @@
     {
       "prompt": "Which pair of little words is correct?",
       "options": [
-        { "id": "a", "text": "a egg ... a cape" },
+        {
+          "id": "a",
+          "text": "a egg ... a cape",
+          "misconceptionTag": "english.article.a-an-selon-la-lettre"
+        },
         { "id": "b", "text": "a egg ... an cape" },
         { "id": "c", "text": "an egg ... a cape" },
-        { "id": "d", "text": "an egg ... an cape" }
+        {
+          "id": "d",
+          "text": "an egg ... an cape",
+          "misconceptionTag": "english.article.a-an-selon-la-lettre"
+        }
       ],
       "correctOption": "c",
       "explanation": "The word egg begins with the vowel e, so it takes an; the word cape begins with the consonant c, so it takes a. The choice never comes from the meaning, only from the first letter of the word that follows.",
@@ -52,10 +76,22 @@
     {
       "prompt": "Big Ben was finished in 1859 and the Eiffel Tower in 1889. Complete: \"Big Ben is ___ the Eiffel Tower.\"",
       "options": [
-        { "id": "a", "text": "more old than" },
+        {
+          "id": "a",
+          "text": "more old than",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        },
         { "id": "b", "text": "older than" },
-        { "id": "c", "text": "the oldest of" },
-        { "id": "d", "text": "the oldest than" }
+        {
+          "id": "c",
+          "text": "the oldest of",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
+        {
+          "id": "d",
+          "text": "the oldest than",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        }
       ],
       "correctOption": "b",
       "explanation": "Two monuments are compared, so the short adjective takes -er and the second one follows than: Big Ben is older than the Eiffel Tower, because 1859 comes before 1889. A short English adjective never takes more in front of it, and the ending -est is for one thing above a whole group.",

@@ -1,0 +1,97 @@
+{
+  "title": "🏛️ Exams 2013–2025 · greetings, a and an, north and south ⭐⭐",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "(Exam 2016 — language, question 2)\nThe exam gives: \"London is a small city with many new houses.\" and asks for the opposite of the word new.\n\nWhich word is the opposite of new?",
+      "options": [
+        {
+          "id": "a",
+          "text": "young",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        { "id": "b", "text": "old" },
+        { "id": "c", "text": "big" },
+        { "id": "d", "text": "modern" }
+      ],
+      "correctOption": "b",
+      "explanation": "New and old are opposites: a new house was built recently and an old house was built long ago, like the old monuments of this unit. Young belongs to the same family of words about age but speaks of living things, modern means nearly the same as new, and big is the opposite of small, the other word the exam asks about.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "(Exam 2015 — language, question 1)\nThe exam asks to circle the right word: \"Hello. My name is John Smith. I am ___ England.\"\n\nWhich word completes the sentence?",
+      "options": [
+        { "id": "a", "text": "on" },
+        { "id": "b", "text": "of" },
+        { "id": "c", "text": "with" },
+        { "id": "d", "text": "from" }
+      ],
+      "correctOption": "d",
+      "explanation": "To say the country you come from, English uses from: I am from England. The word on names a place where something is, with says who is beside you, and of joins two nouns, as in the capital of England, so none of them tells where a person comes from.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "(Exam 2013 — writing, question 1)\nThe exam gives a sentence with mistakes to correct. Here is the part about the little words a and an: \"There are five rooms, a old garage and a big garden.\"\n\nWhich version is correct?",
+      "options": [
+        { "id": "a", "text": "an old garage and a big garden" },
+        {
+          "id": "b",
+          "text": "a old garage and a big garden",
+          "misconceptionTag": "english.article.a-an-selon-la-lettre"
+        },
+        {
+          "id": "c",
+          "text": "an old garage and an big garden",
+          "misconceptionTag": "english.article.a-an-selon-la-lettre"
+        },
+        { "id": "d", "text": "a old garage and an big garden" }
+      ],
+      "correctOption": "a",
+      "explanation": "The word old begins with a vowel, so it needs an, and the word big begins with a consonant, so it keeps a. Keeping a in front of old leaves the mistake of the exam, and putting an in front of big puts the vowel word where the consonant word is: the choice always follows the first letter of the next word.",
+      "difficulty": 2
+    },
+    {
+      "type": "short_answer",
+      "prompt": "(Exam 2018 — writing, question 1)\nThe exam gives a sentence with a word whose letters are mixed up: \"Manchester is a big town. It is in the ___ of England.\" The five letters of the missing word are: t n h r o.\n\nType the missing word.",
+      "answerKey": {
+        "text": "north"
+      },
+      "expectedMistakes": [
+        {
+          "text": "south",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
+        {
+          "text": "east",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
+        {
+          "text": "west",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        }
+      ],
+      "explanation": "Put the five letters in order to write the direction that is at the top of a map. Manchester lies in the upper part of England, so this word fits the gap, and no other direction of the map can be written with the same five letters.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "(Exam 2025 — writing, question 1c)\nThe words of a sentence are mixed up. Put these groups of words in the right order to get a meaningful sentence.",
+      "options": [
+        { "id": "a", "text": "of greeting" },
+        { "id": "b", "text": "People around the world" },
+        { "id": "c", "text": "different ways" },
+        { "id": "d", "text": "each other" },
+        { "id": "e", "text": "have" }
+      ],
+      "answerKey": {
+        "order": ["b", "e", "c", "a", "d"]
+      },
+      "explanation": "The sentence starts with the people it speaks about, then comes the verb have, then what they have: different ways. The way itself closes the sentence, of greeting each other, and the verb after the word of takes -ing.",
+      "difficulty": 2
+    }
+  ]
+}

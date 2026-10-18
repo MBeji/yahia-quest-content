@@ -7,33 +7,61 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "Three of these sentences are correct. Which one is NOT correct?",
+      "prompt": "A pupil writes about her holidays. Which sentence is correct?",
       "options": [
-        { "id": "a", "text": "I saw a cape in the shop." },
-        { "id": "b", "text": "I met a Indian on the train." },
-        { "id": "c", "text": "I saw an amphitheatre in Rome." },
-        { "id": "d", "text": "I visited the pyramids of Egypt." }
+        {
+          "id": "a",
+          "text": "I met a Indian on the train.",
+          "misconceptionTag": "english.article.a-an-selon-la-lettre"
+        },
+        {
+          "id": "b",
+          "text": "I saw an cape in the shop.",
+          "misconceptionTag": "english.article.a-an-selon-la-lettre"
+        },
+        { "id": "c", "text": "I saw an island from a boat." },
+        {
+          "id": "d",
+          "text": "I saw a amphitheatre in Rome.",
+          "misconceptionTag": "english.article.a-an-selon-la-lettre"
+        }
       ],
-      "correctOption": "b",
-      "explanation": "The faulty sentence is I met a Indian on the train: the word Indian begins with the vowel i, so it needs an. The three other sentences follow the same rule from the other side, with a before the consonant of cape, an before the vowel of amphitheatre, and the before pyramids that everybody already knows.",
+      "correctOption": "c",
+      "explanation": "The word island begins with the vowel i, so it takes an. Indian and amphitheatre begin with a vowel and need an, and cape begins with a consonant and needs a: the choice never comes from the meaning, only from the first letter of the word that follows.",
       "difficulty": 2
     },
     {
       "prompt": "The unit names five monuments. Which sentence about the pyramids is correct?",
       "options": [
-        { "id": "a", "text": "The pyramids are older of the five." },
-        { "id": "b", "text": "The pyramids are oldest of the five." },
-        { "id": "c", "text": "The pyramids are the older of the five." },
+        {
+          "id": "a",
+          "text": "The pyramids are older of the five.",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
+        {
+          "id": "b",
+          "text": "The pyramids are the most old of the five.",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        },
+        {
+          "id": "c",
+          "text": "The pyramids are the older of the five.",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
         { "id": "d", "text": "The pyramids are the oldest of the five." }
       ],
       "correctOption": "d",
-      "explanation": "Five monuments make a whole group, and the first place of a group needs both ends of the tool: the in front and -est behind, so the pyramids are the oldest of the five. The ending -er belongs to two things compared, and the superlative never drops its the.",
+      "explanation": "Five monuments make a whole group, and the first place of a group needs both ends of the tool: the in front and -est behind, so the pyramids are the oldest of the five. The ending -er belongs to two things compared, and a short adjective never takes most in front of it.",
       "difficulty": 2
     },
     {
       "prompt": "Which sentence is completely correct?",
       "options": [
-        { "id": "a", "text": "How about travel by plane to Spain?" },
+        {
+          "id": "a",
+          "text": "How about travel by plane to Spain?",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
         { "id": "b", "text": "How about travelling by plane in Spain?" },
         { "id": "c", "text": "How about travelling by plane to Spain?" },
         { "id": "d", "text": "Let's travelling by plane to Spain?" }
@@ -43,21 +71,40 @@
       "difficulty": 3
     },
     {
-      "prompt": "Read: \"Big Ben was finished in 1859, the Eiffel Tower in 1889, and the amphitheatre of El Jem was built about 1800 years ago.\" Which sentence is true?",
+      "prompt": "Read: \"The road from Tunis to Sousse is 140 kilometres long, and the road from Tunis to Gabes is 400 kilometres long.\" Which sentence is correct?",
       "options": [
-        { "id": "a", "text": "Big Ben is older than the Eiffel Tower." },
-        { "id": "b", "text": "Big Ben is the oldest of the three." },
-        { "id": "c", "text": "The Eiffel Tower is older than Big Ben." },
-        { "id": "d", "text": "The amphitheatre of El Jem is the newest of the three." }
+        {
+          "id": "a",
+          "text": "The road to Sousse is shorter than the road to Gabes."
+        },
+        {
+          "id": "b",
+          "text": "The road to Sousse is more short than the road to Gabes.",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        },
+        {
+          "id": "c",
+          "text": "The road to Sousse is shorter that the road to Gabes.",
+          "misconceptionTag": "english.comp.that-au-lieu-de-than"
+        },
+        {
+          "id": "d",
+          "text": "The road to Sousse is the shortest than the road to Gabes.",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        }
       ],
       "correctOption": "a",
-      "explanation": "1859 comes before 1889, so Big Ben is older than the Eiffel Tower, and two monuments compared take the ending -er with than. Big Ben is not the oldest of the group, because the amphitheatre of El Jem is about 1800 years old, which also makes it the oldest and not the newest of the three.",
+      "explanation": "Two roads are compared, and 140 kilometres is less than 400, so the road to Sousse is the shorter one: the short adjective takes -er and the second road follows than. A short adjective never takes more in front of it, a comparison is closed by than and not by that, and the ending -est belongs to a whole group and refuses than.",
       "difficulty": 3
     },
     {
       "prompt": "Which sentence describes a custom of Spain correctly?",
       "options": [
-        { "id": "a", "text": "In Spain, people are eating paella." },
+        {
+          "id": "a",
+          "text": "In Spain, people are eating paella.",
+          "misconceptionTag": "english.tense.continu-pour-habitude"
+        },
         { "id": "b", "text": "In Spain, people ate paella." },
         { "id": "c", "text": "In Spain, people eat paella." },
         { "id": "d", "text": "In Spain, people will eat paella." }
@@ -70,7 +117,11 @@
       "prompt": "Read: \"Karim lives in Tunis. First he travels to Gabes, in the south of the country, and then to Tabarka, in the north-west.\" In which direction does Karim travel first?",
       "options": [
         { "id": "a", "text": "east" },
-        { "id": "b", "text": "north" },
+        {
+          "id": "b",
+          "text": "north",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
         { "id": "c", "text": "north-west" },
         { "id": "d", "text": "south" }
       ],

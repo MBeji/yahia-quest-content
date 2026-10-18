@@ -497,4 +497,55 @@ A **custom** belongs to a country and comes back every year (paella, flamenco, L
 
 :::
 
+## 🔊 Let's pronounce — the s of the plural and the y at the end
+
+Say _books_, then _bags_. Both plurals end with the same letter, **s**, and your throat does two different things. Now say _sunny_, then _fly_: both words end with the letter **y**, and your mouth finishes them on two different sounds.
+
+You met the hissing and the buzzing **s** in Unit I. This last unit asks you to listen to it again at the end of the plural, and to a second letter that hides two sounds.
+
+::: propriete
+**1 · The s of the plural** says **/s/** or **/z/**, and the sound just before it decides:
+
+| Sound   | The word ends with…                          | Words of this unit                         |
+| ------- | -------------------------------------------- | ------------------------------------------ |
+| **/s/** | a quiet sound: p, t, k                       | books · cats · cups · students             |
+| **/z/** | a sound that shakes the throat, or a vowel   | cars · bags · stars · friends · greetings  |
+
+The test is the same as in Unit I: put your hand on your throat — with **/z/** it shakes, with **/s/** it stays quiet.
+
+**2 · The y at the end of a word** says **/i/** or **/ai/**, and the length of the word decides:
+
+| Sound    | The word is…                    | Words of this unit                                       |
+| -------- | ------------------------------- | -------------------------------------------------------- |
+| **/i/**  | long (two syllables or more)    | study · sunny · funny · puppy · cloudy · country · family · many · very |
+| **/ai/** | short (one syllable)            | try · fly · my · sky · why — and **July**, the one long word that joins them |
+
+Your teacher's book writes these two sounds **/i/** and **/ai/**.
+
+:::
+
+::: exemple
+Find the sound of the s in _pigs_ and in _ducks_, then the sound of the y in _silly_ and in _by_, step by step:
+
+1. _pig_ ends with g, a sound that shakes the throat → the s of _pigs_ buzzes: **/z/**.
+2. _duck_ ends with k, a quiet sound → the s of _ducks_ hisses: **/s/**.
+3. _silly_ is a long word of two syllables → its y says **/i/**; _by_ is a short word of one syllable → its y says **/ai/**.
+4. The spelling is the same in both pairs, so only your **ear** decides, never your eye.
+
+:::
+
+::: verifie
+Two quick checks. (1) In which of these plurals does the s buzz: _books_, _bags_, _tests_? (2) Which of these words ends with the sound /ai/: _sunny_, _my_, _family_?
+
+---
+
+(1) **bags** — _bag_ ends with g, a sound that shakes the throat, so the s buzzes: /z/. In _books_ and _tests_ the s follows a quiet sound, k and t, so it hisses: /s/. (2) **my** — it is a short word of one syllable, so its y says /ai/; _sunny_ and _family_ are long words, so their y says /i/.
+
+:::
+
+::: retenir
+The **s** of a plural: **/s/** after a quiet sound (books, cats, cups) · **/z/** after a sound that shakes the throat (cars, bags, friends). The **y** at the end of a word: **/i/** in a long word (sunny, family) · **/ai/** in a short one (fly, sky, why) and in July.
+
+:::
+
 > 🏆 The seventh and last gate is cleared. You started the year naming what you do on a free afternoon; you end it reading a world map, suggesting a journey, greeting people who do not greet the way you do, comparing the monuments of five countries and describing your own customs to a stranger. That is a whole year of English — and it is only the first one.

@@ -7,15 +7,19 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Three of these sentences are correct. Which one is NOT correct?",
+      "prompt": "Mina tells her cousin how she likes to go to Italy. Which sentence is correct?",
       "options": [
-        { "id": "a", "text": "I prefer to travel by boat." },
-        { "id": "b", "text": "I prefer to travel to Italy." },
-        { "id": "c", "text": "I prefer to travelling by boat." },
-        { "id": "d", "text": "I prefer travelling by boat." }
+        {
+          "id": "a",
+          "text": "I prefer travelling to boat.",
+          "misconceptionTag": "english.prep.travel-by-to-confondus"
+        },
+        { "id": "b", "text": "I prefer to travelling by boat." },
+        { "id": "c", "text": "I prefer to travel by boat." },
+        { "id": "d", "text": "I prefer travel by boat." }
       ],
       "correctOption": "c",
-      "explanation": "The faulty sentence is I prefer to travelling by boat: prefer accepts to plus the bare verb, or the verb with -ing, but never the two together. That is why I prefer to travel and I prefer travelling are both correct, and why by carries the boat and to carries Italy.",
+      "explanation": "Prefer takes to plus the bare verb (I prefer to travel) or the verb with -ing (I prefer travelling), never the two together and never the bare verb alone. The boat is a vehicle, so it takes by: the sentence with to in front of the boat puts the word of the place where the word of the vehicle belongs.",
       "difficulty": 2
     },
     {
@@ -33,7 +37,11 @@
     {
       "prompt": "The Eiffel Tower is 330 metres high, the Great Pyramid of Giza 139 metres and the tower of Big Ben 96 metres. Which sentence is correct?",
       "options": [
-        { "id": "a", "text": "The Eiffel Tower is taller than the three." },
+        {
+          "id": "a",
+          "text": "The Eiffel Tower is taller than the three.",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
         { "id": "b", "text": "The Eiffel Tower is the tallest of the three." },
         { "id": "c", "text": "The Great Pyramid is the tallest of the three." },
         { "id": "d", "text": "Big Ben is the tallest of the three." }
@@ -45,10 +53,22 @@
     {
       "prompt": "Which sentence is completely correct?",
       "options": [
-        { "id": "a", "text": "We travelled by Italy by boat." },
-        { "id": "b", "text": "We travelled by Italy to boat." },
+        {
+          "id": "a",
+          "text": "We travelled by Italy by boat.",
+          "misconceptionTag": "english.prep.travel-by-to-confondus"
+        },
+        {
+          "id": "b",
+          "text": "We travelled by Italy to boat.",
+          "misconceptionTag": "english.prep.travel-by-to-confondus"
+        },
         { "id": "c", "text": "We travelled to Italy by boat." },
-        { "id": "d", "text": "We travelled to Italy to boat." }
+        {
+          "id": "d",
+          "text": "We travelled to Italy to boat.",
+          "misconceptionTag": "english.prep.travel-by-to-confondus"
+        }
       ],
       "correctOption": "c",
       "explanation": "Sort the two little words by what follows them: Italy is a place, so it takes to, and a boat is a vehicle, so it takes by. Only We travelled to Italy by boat puts each word where it belongs; the others send the traveller by a country or to a vehicle.",
@@ -59,7 +79,11 @@
       "options": [
         { "id": "a", "text": "a ... a" },
         { "id": "b", "text": "a ... the" },
-        { "id": "c", "text": "an ... the" },
+        {
+          "id": "c",
+          "text": "an ... the",
+          "misconceptionTag": "english.article.a-an-selon-la-lettre"
+        },
         { "id": "d", "text": "the ... the" }
       ],
       "correctOption": "b",
@@ -71,8 +95,16 @@
       "options": [
         { "id": "a", "text": "easier than" },
         { "id": "b", "text": "easyer than" },
-        { "id": "c", "text": "more easy than" },
-        { "id": "d", "text": "the easiest than" }
+        {
+          "id": "c",
+          "text": "more easy than",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        },
+        {
+          "id": "d",
+          "text": "the easiest than",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        }
       ],
       "correctOption": "a",
       "explanation": "Easy ends in a consonant plus -y, so the y becomes i before the ending: easier than. The spelling easyer keeps the y the rule changes, more never joins a short adjective, and the ending -est needs a whole group and refuses than.",

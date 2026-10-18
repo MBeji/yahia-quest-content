@@ -7,39 +7,67 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "On the map, Tunisia is at the bottom and Italy is above it. Complete: \"Italy is ___ of Tunisia.\"",
+      "prompt": "Tunisia is at the bottom of the drawing and Italy is above it. Choose the correct sentence.",
       "options": [
-        { "id": "a", "text": "east" },
-        { "id": "b", "text": "north" },
-        { "id": "c", "text": "south" },
-        { "id": "d", "text": "west" }
-      ],
-      "correctOption": "b",
-      "explanation": "What is drawn above on a map is in the north, so Italy is north of Tunisia and Tunisia is south of Italy. The east is on the right of the map and the west on its left, so neither of them says anything about what is higher.",
-      "difficulty": 1
-    },
-    {
-      "prompt": "Complete: \"Every morning my father travels ___ train.\"",
-      "options": [
-        { "id": "a", "text": "by" },
-        { "id": "b", "text": "in" },
-        { "id": "c", "text": "on" },
-        { "id": "d", "text": "with" }
+        { "id": "a", "text": "Italy is north of Tunisia." },
+        {
+          "id": "b",
+          "text": "Italy is south of Tunisia.",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
+        {
+          "id": "c",
+          "text": "Italy is east of Tunisia.",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
+        {
+          "id": "d",
+          "text": "Italy is west of Tunisia.",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        }
       ],
       "correctOption": "a",
-      "explanation": "The word of the vehicle is by, and nothing comes between it and the train: travel by train. The forms in, on and with say where a thing is or who is beside you, and none of them names the way you travel.",
+      "explanation": "The top of a map is the north, so Italy, drawn above Tunisia, is north of it. The south is the bottom of the map, and the east and the west are its right and left sides, which say nothing about what is higher.",
       "difficulty": 1
     },
     {
-      "prompt": "In England, two people who meet put their right hands together. What are they doing?",
+      "prompt": "Complete: \"In the holidays my family travels ___ Tabarka by car.\"",
       "options": [
-        { "id": "a", "text": "They bow to each other." },
-        { "id": "b", "text": "They kiss each other on the cheek." },
-        { "id": "c", "text": "They shake hands." },
-        { "id": "d", "text": "They touch noses and foreheads." }
+        { "id": "a", "text": "to" },
+        { "id": "b", "text": "in" },
+        {
+          "id": "c",
+          "text": "by",
+          "misconceptionTag": "english.prep.travel-by-to-confondus"
+        },
+        { "id": "d", "text": "at" }
       ],
-      "correctOption": "c",
-      "explanation": "Putting the right hands together and moving them is called shaking hands, and it is the greeting of England and the USA. Bowing bends the head and the back without touching, and the kiss on the cheek and the touching of noses use the face, not the hands.",
+      "correctOption": "a",
+      "explanation": "Tabarka is a place, and a place takes to: travel to Tabarka. The word by is already used for the vehicle in by car, and in or at would say where the family stays, not where it is going.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Which verb means \"to say hello when you meet\", in any country and in any way?",
+      "options": [
+        {
+          "id": "a",
+          "text": "bow",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "b",
+          "text": "touch",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "c",
+          "text": "kiss",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        { "id": "d", "text": "greet" }
+      ],
+      "correctOption": "d",
+      "explanation": "To greet somebody is to say hello when you meet, whatever the custom. To bow, to touch and to kiss each name only one way of doing it: the bend of the head and the back, the contact of the noses, the kiss on the cheek.",
       "difficulty": 1
     },
     {
@@ -59,8 +87,16 @@
       "options": [
         { "id": "a", "text": "fast than" },
         { "id": "b", "text": "faster than" },
-        { "id": "c", "text": "more fast than" },
-        { "id": "d", "text": "the fastest than" }
+        {
+          "id": "c",
+          "text": "more fast than",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        },
+        {
+          "id": "d",
+          "text": "the fastest than",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        }
       ],
       "correctOption": "b",
       "explanation": "Two things are compared, so the short adjective takes -er and the second one follows than: a plane is faster than a boat. The bare adjective forgets the comparison, more never stands in front of a short English adjective, and the ending -est is kept for one thing above a whole group.",
@@ -71,7 +107,11 @@
       "options": [
         { "id": "a", "text": "Let's travel to Italy." },
         { "id": "b", "text": "Let's to travel to Italy." },
-        { "id": "c", "text": "How about travel to Italy?" },
+        {
+          "id": "c",
+          "text": "How about travel to Italy?",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
         { "id": "d", "text": "Let's travelling to Italy." }
       ],
       "correctOption": "a",

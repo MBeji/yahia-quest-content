@@ -9,9 +9,21 @@
     {
       "prompt": "Which letter on a map stands for the direction west?",
       "options": [
-        { "id": "a", "text": "E" },
-        { "id": "b", "text": "N" },
-        { "id": "c", "text": "S" },
+        {
+          "id": "a",
+          "text": "E",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
+        {
+          "id": "b",
+          "text": "N",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
+        {
+          "id": "c",
+          "text": "S",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
         { "id": "d", "text": "W" }
       ],
       "correctOption": "d",
@@ -23,23 +35,23 @@
       "options": [
         { "id": "a", "text": "China" },
         { "id": "b", "text": "Egypt" },
-        { "id": "c", "text": "France" },
+        { "id": "c", "text": "England" },
         { "id": "d", "text": "Tunisia" }
       ],
       "correctOption": "d",
-      "explanation": "The amphitheatre of El Jem is a Roman monument built about 1800 years ago in Tunisia. Egypt is the country of the pyramids, France the country of the Eiffel Tower, and China the country of the Great Wall.",
+      "explanation": "The amphitheatre of El Jem is a Roman monument built about 1800 years ago in Tunisia. Egypt is the country of the pyramids, England the country of Big Ben, and China the country of the Great Wall.",
       "difficulty": 2
     },
     {
       "prompt": "Which custom belongs to Spain?",
       "options": [
-        { "id": "a", "text": "eating couscous on Friday" },
+        { "id": "a", "text": "eating couscous with the family on Friday" },
         { "id": "b", "text": "throwing tomatoes at a festival" },
         { "id": "c", "text": "touching noses to say hello" },
-        { "id": "d", "text": "wearing a blazer to school" }
+        { "id": "d", "text": "wearing a blazer to go to school" }
       ],
       "correctOption": "b",
-      "explanation": "Throwing tomatoes at a festival is La Tomatina, a custom of Spain. Eating couscous on Friday is a Tunisian custom, touching noses to say hello is the Maori greeting of New Zealand, and wearing a blazer is a school habit and not the custom of any country.",
+      "explanation": "Throwing tomatoes at a festival is La Tomatina, a custom of Spain. Eating couscous with the family on Friday is a Tunisian custom, touching noses to say hello is the Maori greeting of New Zealand, and wearing a blazer to go to school is a school habit and not the custom of any country.",
       "difficulty": 2
     },
     {
@@ -57,10 +69,22 @@
     {
       "prompt": "Complete: \"The Great Wall of China is ___ wall on Earth.\"",
       "options": [
-        { "id": "a", "text": "longest than" },
-        { "id": "b", "text": "the longer" },
+        {
+          "id": "a",
+          "text": "longest than",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
+        {
+          "id": "b",
+          "text": "the longer",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
         { "id": "c", "text": "the longest" },
-        { "id": "d", "text": "the most long" }
+        {
+          "id": "d",
+          "text": "the most long",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        }
       ],
       "correctOption": "c",
       "explanation": "Every wall on Earth makes one big group, and for the first place of a group a short adjective takes the in front and -est behind: the longest wall on Earth. The form the longer compares two walls only, longest than mixes the two tools, and most never joins a short English adjective.",
@@ -70,7 +94,11 @@
       "prompt": "Complete: \"Spain is ___ country in the south-west of Europe.\"",
       "options": [
         { "id": "a", "text": "a" },
-        { "id": "b", "text": "an" },
+        {
+          "id": "b",
+          "text": "an",
+          "misconceptionTag": "english.article.a-an-selon-la-lettre"
+        },
         { "id": "c", "text": "of" },
         { "id": "d", "text": "the" }
       ],
