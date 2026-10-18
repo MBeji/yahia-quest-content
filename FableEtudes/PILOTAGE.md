@@ -62,7 +62,7 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 | maths (`math-6eme`) | ⚠️ fiche `partielle/mixte`, 23 % (502603 et 102609 à trous) — `programme:etat` : génération interdite, contenu généré sous la barre R-5 | ✅ armé | ✅ | ✅ | ❌ | **LOT A d'abord** (compléter la fiche), puis gisement en un passage |
 | arabe (`arabic-6eme`) | ⚠️ fiche `partielle/generation`, 100 % mais pas en profondeur R-5 — génération interdite | ✅ armé (19 ch.) | ✅ | ✅ | ❌ | profondeur R-5 de la fiche, puis gisement en un passage |
 | éveil scientifique | ⚠️ fiche `partielle/mixte`, 57 % (503604 p. 103–180 à trous) — génération interdite | ✅ armé | ✅ | ✅ | ❌ | **LOT A d'abord**, puis gisement en un passage |
-| anglais (`english-6eme`) | ✅ `validee-r7`, 100 % — génération autorisée | ⏳ écrit (7/7 ch.), pas armé | ❌ | ❌ | ❌ | patron + étiquettes + armement + gisement **en un seul passage** |
+| anglais (`english-6eme`) | ✅ `validee-r7`, 100 % — génération autorisée | ⏳ écrit (7/7 ch.), pas armé | ❌ | ❌ | ❌ | 🔒 **réservé** session unique (2026-10-18) : patron + étiquettes + armement + gisement en un passage, branche `wip/anglais-6eme-un-passage`, notes `FableEtudes/campagnes/anglais-6eme/` ; patron + étiquettes + armement + gisement **en un seul passage** |
 | français 6ᵉ | ❌ fiche `partielle/mixte`, 14 % | ❌ la matière n'existe pas | — | — | ❌ | LOT A, puis tout le reste en un passage |
 
 ## 3. File d'attente (ordre arbitré par le propriétaire : la 9ᵉ finie avant tout, puis la 6ᵉ)
