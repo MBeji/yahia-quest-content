@@ -4,9 +4,17 @@
     {
       "prompt": "The months June, July and August belong to which season?",
       "options": [
-        { "id": "a", "text": "spring" },
+        {
+          "id": "a",
+          "text": "spring",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
         { "id": "b", "text": "summer" },
-        { "id": "c", "text": "autumn" },
+        {
+          "id": "c",
+          "text": "autumn",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
         { "id": "d", "text": "winter" }
       ],
       "correctOption": "b",
@@ -17,8 +25,16 @@
       "prompt": "There are clouds all over the sky this morning. Complete: \"It is a ___ day.\"",
       "options": [
         { "id": "a", "text": "cloudy" },
-        { "id": "b", "text": "cloud" },
-        { "id": "c", "text": "clouds" },
+        {
+          "id": "b",
+          "text": "cloud",
+          "misconceptionTag": "english.word.nom-au-lieu-de-l-adjectif"
+        },
+        {
+          "id": "c",
+          "text": "clouds",
+          "misconceptionTag": "english.word.nom-au-lieu-de-l-adjectif"
+        },
         { "id": "d", "text": "clouding" }
       ],
       "correctOption": "a",
@@ -30,20 +46,28 @@
       "options": [
         { "id": "a", "text": "It sunny." },
         { "id": "b", "text": "I'm sunny." },
-        { "id": "c", "text": "It's sun." },
+        {
+          "id": "c",
+          "text": "It's sun and wind.",
+          "misconceptionTag": "english.word.nom-au-lieu-de-l-adjectif"
+        },
         { "id": "d", "text": "It's sunny." }
       ],
       "correctOption": "d",
-      "explanation": "The fixed answer opens with It's and is followed by the adjective: It's sunny. The answer without a verb has no is at all, the answer with I'm describes you and not the weather, and sun is the noun, not the adjective that describes the day.",
+      "explanation": "The fixed answer opens with It's and is followed by the adjective: It's sunny. The answer without a verb has no is at all, the answer with I'm describes you and not the weather, and sun and wind are nouns, not the adjectives that describe the day.",
       "difficulty": 1
     },
     {
       "prompt": "Complete: \"Next summer she ___ to the beach every day.\"",
       "options": [
-        { "id": "a", "text": "will goes" },
-        { "id": "b", "text": "will to go" },
+        {
+          "id": "a",
+          "text": "will goes",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
+        { "id": "b", "text": "will to go", "misconceptionTag": "english.modal.to-en-trop" },
         { "id": "c", "text": "will go" },
-        { "id": "d", "text": "wills go" }
+        { "id": "d", "text": "wills go", "misconceptionTag": "english.modal.s-sur-le-modal" }
       ],
       "correctOption": "c",
       "explanation": "Next summer is after today, so the sentence takes will, and after will the verb stays bare: she will go. The -s of she belongs to what happens every day, not to a verb after will, and neither will itself nor a to ever comes between them.",
@@ -52,9 +76,17 @@
     {
       "prompt": "You compare two months. Complete: \"January is ___ April.\"",
       "options": [
-        { "id": "a", "text": "more cold than" },
+        {
+          "id": "a",
+          "text": "more cold than",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        },
         { "id": "b", "text": "colder than" },
-        { "id": "c", "text": "colder that" },
+        {
+          "id": "c",
+          "text": "colder that",
+          "misconceptionTag": "english.comp.that-au-lieu-de-than"
+        },
         { "id": "d", "text": "cold than" }
       ],
       "correctOption": "b",

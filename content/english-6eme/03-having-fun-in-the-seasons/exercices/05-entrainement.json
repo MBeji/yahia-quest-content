@@ -7,27 +7,29 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "Which month comes just after August?",
+      "prompt": "Which month comes just before September?",
       "options": [
         {
           "id": "a",
-          "text": "July"
+          "text": "July",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
         },
         {
           "id": "b",
-          "text": "September"
+          "text": "August"
         },
         {
           "id": "c",
-          "text": "October"
+          "text": "October",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
         },
         {
           "id": "d",
-          "text": "June"
+          "text": "November"
         }
       ],
       "correctOption": "b",
-      "explanation": "August is the last month of summer, and the month that follows it is September, which opens autumn. July comes just before August, October comes one month later, and June opens the summer.",
+      "explanation": "September is the first month of autumn, and the month that comes just before it is August, the last month of summer. July comes one month earlier than August, October comes just after September, and November comes later still.",
       "difficulty": 1
     },
     {
@@ -35,11 +37,13 @@
       "options": [
         {
           "id": "a",
-          "text": "teeth"
+          "text": "teeth",
+          "misconceptionTag": "english.sound.lettre-pour-son"
         },
         {
           "id": "b",
-          "text": "three"
+          "text": "three",
+          "misconceptionTag": "english.sound.lettre-pour-son"
         },
         {
           "id": "c",
@@ -47,7 +51,8 @@
         },
         {
           "id": "d",
-          "text": "thanks"
+          "text": "thanks",
+          "misconceptionTag": "english.sound.lettre-pour-son"
         }
       ],
       "correctOption": "c",
@@ -59,11 +64,13 @@
       "options": [
         {
           "id": "a",
-          "text": "sun and hot"
+          "text": "sun and hot",
+          "misconceptionTag": "english.word.nom-au-lieu-de-l-adjectif"
         },
         {
           "id": "b",
-          "text": "a sun and hot"
+          "text": "a sun and hot",
+          "misconceptionTag": "english.word.nom-au-lieu-de-l-adjectif"
         },
         {
           "id": "c",
@@ -95,7 +102,8 @@
         },
         {
           "id": "d",
-          "text": "will be ... will not to be"
+          "text": "will be ... will not to be",
+          "misconceptionTag": "english.modal.to-en-trop"
         }
       ],
       "correctOption": "b",
@@ -103,7 +111,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "Which sentence about December is completely correct?",
+      "prompt": "Which description of December has no mistake?",
       "options": [
         {
           "id": "a",
@@ -119,11 +127,12 @@
         },
         {
           "id": "d",
-          "text": "December is colder that March, and it is a snowy month."
+          "text": "December is colder that March, and it is a snowy month.",
+          "misconceptionTag": "english.comp.that-au-lieu-de-than"
         }
       ],
       "correctOption": "c",
-      "explanation": "Two rules meet here: a short adjective compares with -er and than, which gives colder than March, and a month is described by the adjective built with a y, which gives a snowy month. Each of the other sentences breaks exactly one of them, with more cold, with a bare cold, with that, or with the noun snow.",
+      "explanation": "Two rules meet here: a short adjective compares with -er and than, which gives colder than March, and a month is described by the adjective built with a y, which gives a snowy month. Every other sentence breaks at least one of them: more cold and the noun snow in one, a bare cold in another, and that instead of than in the third.",
       "difficulty": 3
     },
     {
@@ -131,23 +140,24 @@
       "options": [
         {
           "id": "a",
-          "text": "swimming, running, playing"
+          "text": "swimming, walking, playing"
         },
         {
           "id": "b",
-          "text": "swiming, runing, playing"
+          "text": "swiming, walkking, playing",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
         },
         {
           "id": "c",
-          "text": "swimming, runing, plaing"
+          "text": "swimming, walking, plaing"
         },
         {
           "id": "d",
-          "text": "swiming, running, playng"
+          "text": "swiming, walking, playng"
         }
       ],
       "correctOption": "a",
-      "explanation": "Swim and run are consonant plus vowel plus consonant, so both double their last letter before -ing: swimming and running. Play keeps its y and simply adds the ending, which gives playing; every other list either forgets a doubling or cuts a letter out of playing.",
+      "explanation": "Swim is consonant plus vowel plus consonant, so its last letter doubles before -ing: swimming. Walk ends in two consonants and takes -ing as it is, and play keeps its y and gives playing; every other list forgets the doubling of swim, doubles the k of walk, or cuts a letter out of playing.",
       "difficulty": 3
     }
   ]
