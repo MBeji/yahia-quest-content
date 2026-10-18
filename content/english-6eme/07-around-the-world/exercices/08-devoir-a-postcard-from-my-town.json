@@ -1,0 +1,123 @@
+{
+  "title": "📝 A postcard from my town ⭐⭐",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Leila writes a postcard from her town to her cousin Omar. A postcard begins with Dear and the name of the person who reads it, and it ends with a goodbye wish and the name of the person who writes it.\n\nWhich opening and ending are correct?",
+      "options": [
+        { "id": "a", "text": "Dear Leila, ... See you soon, Omar" },
+        { "id": "b", "text": "Dear Omar, ... See you soon, Leila" },
+        {
+          "id": "c",
+          "text": "Dear Omar, ... Let's go swimming, Leila",
+          "misconceptionTag": "english.func.fonction-mal-identifiee"
+        },
+        {
+          "id": "d",
+          "text": "Dear Omar, ... How about a picnic, Leila",
+          "misconceptionTag": "english.func.fonction-mal-identifiee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Omar reads the postcard, so Dear opens with his name, and Leila writes it, so her name comes last. A goodbye wish like See you soon closes the card. Let's go swimming and How about a picnic are suggestions and not goodbyes, and the opening that names Leila gives the name of the writer instead of the name of the reader.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Omar answers with a postcard from his own town: \"My town is in the south-west of Tunisia.\" On the map of Tunisia, where is his town?",
+      "options": [
+        { "id": "a", "text": "At the bottom, on the left." },
+        {
+          "id": "b",
+          "text": "At the top, on the left.",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        },
+        { "id": "c", "text": "At the top, on the right." },
+        {
+          "id": "d",
+          "text": "At the bottom, on the right.",
+          "misconceptionTag": "english.vocab.directions-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "The south is the bottom of a map and the west is its left side, so the south-west is the bottom left. The top is the north and the right side is the east, so a town at the top or on the right side is not in the south-west.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Leila writes four lines on the back of her postcard. Match each kind of information with the line that gives it.",
+      "options": [
+        { "id": "l1", "text": "the place" },
+        { "id": "l2", "text": "the position on the map" },
+        { "id": "l3", "text": "a monument" },
+        { "id": "l4", "text": "the weather" },
+        { "id": "r1", "text": "Greetings from Port Salma!" },
+        { "id": "r2", "text": "My town is in the north-east of Tunisia." },
+        { "id": "r3", "text": "You can see the old castle above the harbour." },
+        { "id": "r4", "text": "Today it is sunny and warm." }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "A greeting names the place the card comes from. The words north-east say where the town is on the map of the country. The old castle is a monument that visitors can see, and sunny and warm tells the weather of the day.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Leila reads her draft again. A postcard about her town must speak only about the town. Which sentence does not belong?",
+      "options": [
+        { "id": "a", "text": "Port Salma is a quiet town near the sea." },
+        { "id": "b", "text": "The old castle is the oldest monument here." },
+        { "id": "c", "text": "Every summer the harbour is full of boats." },
+        { "id": "d", "text": "My brother plays football with his friends." }
+      ],
+      "correctOption": "d",
+      "explanation": "A postcard about the town speaks about the town: what it is like, its monuments and its summer life. The football of Leila's brother is a true sentence, but it tells about her family and not about the town.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Omar writes back: \"Tell me about your town!\" Leila prepares her answer. Which pieces of information can she give?",
+      "options": [
+        { "id": "a", "text": "where the town is on the map of Tunisia" },
+        { "id": "b", "text": "the name of a monument that visitors can see" },
+        { "id": "c", "text": "the colour of her school bag" },
+        { "id": "d", "text": "what the weather is like this week" },
+        { "id": "e", "text": "the price of her new school books" },
+        { "id": "f", "text": "what people do in the town every summer" }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "d", "f"]
+      },
+      "explanation": "Omar asks about the town, so Leila can say where it is on the map, name a monument that visitors can see, tell the weather of the week and describe what people do there every summer. The colour of her school bag and the price of her books are true, but they tell nothing about the town.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Leila ends her postcard with an invitation for Omar: \"___ the old castle on Saturday?\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "How about visit",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
+        { "id": "b", "text": "How about visiting" },
+        {
+          "id": "c",
+          "text": "How about to visit",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
+        { "id": "d", "text": "Let's visiting" }
+      ],
+      "correctOption": "b",
+      "explanation": "After How about the verb takes -ing: How about visiting the old castle on Saturday? The bare verb and the to form both forget the -ing, and Let's is followed by the bare verb with no ending, so visiting is wrong after it too.",
+      "difficulty": 2
+    }
+  ]
+}
