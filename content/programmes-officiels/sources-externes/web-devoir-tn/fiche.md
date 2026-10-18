@@ -57,3 +57,13 @@ Page consultée, puis empreinte SHA-256 du fichier téléchargé (renseignée à
 
 **T2′**, opposable : carte notionnelle et typologique seulement. Pas de T1 (lien sortant) tant
 que Q-2 n'est pas arbitrée, pas de T2 : le site ré-héberge des œuvres d'enseignants.
+
+## 5. Primaire — 6ᵉ anglais (ajout du 2026-10-18, gisement anglais 6ᵉ)
+
+- **Rangement.** `primaire/السـ6ـنة/Anglais/Devoirs/` : une page par trimestre (1ᵉʳ, 2ᵉ, 3ᵉ),
+  41 épreuves (13 · 13 · 15), PDF souvent doublés d'un `.doc/.docx`, fichiers sous
+  `primaire/Doc/…`. Pas de créneaux DC/DS au primaire : le trimestre en tient lieu. 34 épreuves sur
+  41 ne portent ni nom ni année dans leur nom de fichier.
+- **robots.txt** relu le 2026-10-18 : `Allow: /` ; aucune règle ne ferme ce chemin.
+- **Tier** inchangé : **T2′** (salle blanche).
+- Échantillon et empreintes : [`web-6eme-base-english`](../web-6eme-base-english/fiche.md).
