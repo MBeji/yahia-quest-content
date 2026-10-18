@@ -39,3 +39,14 @@ lot à part ; ce lot-là mettra cette fiche à jour.
 ## 3. Verdict
 
 Source officielle, lue pour ce pilote au régime T2′.
+
+## 4. Concours de 6ᵉ — archive `6web.edunet.tn` (ajout du 2026-10-18, gisement anglais 6ᵉ)
+
+- **Portail.** `http://www.echoexam.edunet.tn/index-sujet-6eme.php` publie les sujets de la session
+  de l'année du concours d'entrée aux collèges pilotes (2026 : 22–24 juin ; arabe, anglais,
+  français, éveil scientifique, maths) et renvoie aux archives « منذ 2008 ».
+- **Archive.** `http://6web.edunet.tn/` : un PDF par matière et par session, `/<année>/<matière>.pdf`
+  (`anglais`, `arabe`, `francais`, `math`, `svt`), sessions 2008 à 2026. Pour l'anglais, 2011 et
+  2014 répondent 404. `robots.txt` absent ; lecture en HTTP, comme `9web`.
+- **Statut.** Corpus officiel (Q-6, méthode R-2) : reprise fidèle et citée.
+- Couples qui l'utilisent : [`web-6eme-base-english`](../web-6eme-base-english/fiche.md).
