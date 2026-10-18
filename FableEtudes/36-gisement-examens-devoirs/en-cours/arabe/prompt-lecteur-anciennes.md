@@ -19,3 +19,8 @@ Pour chaque document : téléchargement (`curl -g`, http ; si https, `CURL_CA_BU
 Validation : depuis `/home/user/eng-svtses` (après `source /tmp/claude-0/-home-user/b03814da-e5f9-5a74-bf03-e7c23b20207a/scratchpad/engine-env.sh`) `npm run -s content:gisement:lignes -- --subject arabic --grade 9eme-base --content /home/user/wt-ar2/content <tes .tsv>` : 0 fautive.
 
 D'autres lecteurs lisent d'autres sessions en même temps : n'écris que tes fichiers. Tu ne modifies NI `gisement.json` NI `lignes.tsv`, ni rien sous `content/arabic/`. Aucune écriture git. Rapport final court en français : documents lus et sha (= registre ?), transcriptions, nombre de lignes, format de chaque épreuve (général / technique / unique ; « الإنشاء العربي » seul ?), notions par chapitre, part HP et « programme ancien », difficultés.
+
+**Correctif du 2026-10-18 (prime sur le reader-context)** : le validateur refuse les dossiers hors manifeste dans
+la colonne `chapitres` ⇒ `06-al-mushtaqqat` s'écrit `HP:mushtaqqat`, `01-i3rab-wal-bina` s'écrit
+`HP:i3rab-wal-bina` (le planificateur les replace dans ces dossiers). Les lignes C01–C12 ont été converties
+(n°exo `partie.question` → rang + lettre de sous-question ; mêmes jetons HP) : 118 lignes valides.
