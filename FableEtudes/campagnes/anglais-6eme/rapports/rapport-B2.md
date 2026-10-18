@@ -56,6 +56,6 @@ Réécritures : 03 quiz#3 (un distracteur rallongé), 01#6 (« She enjoys ___ »
 
 - m007 Q5 : « The weather is funny » est de l'anglais possible (temps bizarre) ; la phrase donne « the children are swimming » pour trancher.
 - m007 Q2 ↔ 03 quiz#2, m009 Q2 ↔ 04 02-boss#1, m009 Q4 ↔ 04 01#4, m011 Q5 ↔ 04 01#1 : même notion que le patron, autre geste ou autre énoncé (la carte liste ces questions en « ne pas redemander » alors que l'item officiel y retombe : « the cleanest one », « a waiter »).
-- Étiquettes « mot-voisin » : m007 (7), m020 Q1 (3), 03 existants (14), 04 existants (9). Posées seulement quand un indice de l'énoncé tranche.
+- Étiquettes « mot-voisin » : 22 au 03 (dont 13 sur les questions existantes : mois, saisons, vêtements ; 6 en m007, 3 en m020) et 9 au 04 (jobs et corvées). Posées seulement quand un indice de l'énoncé tranche ; sans elles le 03 tomberait à 51 % et le 04 à 45 %.
 - m010 Q3 : la clé « express » vaut pour le texte ; « show » serait aussi défendable pour le sujet officiel.
 - `content/CATALOGUE.md` (régénéré par `content:catalogue`) n'est pas touché : à régénérer par l'orchestrateur, les chapitres ayant des exercices en plus.
