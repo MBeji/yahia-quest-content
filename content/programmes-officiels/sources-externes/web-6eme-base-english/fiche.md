@@ -90,8 +90,55 @@ Liste machine (sessions, fichiers officiels, empreintes, rang du devoir dans sa 
 [`gisement.json`](./gisement.json). L'URL du fichier d'un devoir reste hors git (la fiche pointe la
 page de liste du trimestre et le rang de l'épreuve).
 
-## 4. Carte — à la lecture
+## 4. Carte — écrite le 2026-10-18 (étage G3, 153 lignes : 102 d'examen, 51 de devoirs)
 
-## 5. Écart avec le contenu existant — à la lecture
+Lignes validées par `content:gisement:lignes` (153 valides, 0 fautive) ; étages des lignes de langue
+C10, C14, C15, C17, C18, C19 harmonisés sur le lot pilote (cloze, choix, appariement : `d2`).
+
+**Format de l'épreuve** (17 sessions) : 45 minutes, 20 points, Reading 6 + Language 8 + Writing 6.
+Depuis 2019 la partie Writing porte un exercice court (2 points) et une rédaction guidée (4 points) ;
+avant 2019, deux exercices courts de 3 points, sans rédaction.
+
+**Chapitres portés par les lignes d'examen** (une ligne peut en porter plusieurs ; sessions
+2023–2026 en vigueur · sessions 2008–2022) :
+
+| chapitre | 2023–2026 | 2008–2022 | ce que les sujets testent (au programme) |
+| --- | ---: | ---: | --- |
+| `01-entertaining-myself` | 10 | 41 | like + -ing, adverbes de fréquence, -s du présent, possessifs, because / but / and, on / in, dialogues de suggestion |
+| `02-keeping-fit` | 5 | 16 | can / can't, must, have a stomachache, How much / How many, nourriture |
+| `03-having-fun-in-the-seasons` | 6 | 5 | adjectifs de météo (Noun + y), contraires de météo, will |
+| `04-caring` | 9 | 2 | superlatif en -est, Verb + er, vocabulaire du soin ; un texte (2026) |
+| `05-celebrations` | 12 | 6 | simple past (réguliers, irréguliers), have the right to ; un texte (2021) |
+| `06-going-shopping` | 4 | 16 | dialogues de magasin (Can I help you?, I'd like, How much is it?), vêtements, prépositions de lieu |
+| `07-around-the-world` | 2 | 6 | salutations, a / an, points cardinaux ; un texte (2025) |
+
+**Hors programme** : 9 lignes d'examen sur 102 ne portent que des jetons HP ; jetons les plus fréquents
+`HP:vocab-hors-guide` 23, `HP:present-continuous` 13, `HP:wh-questions` 8, `HP:there-is-are` 7. Les
+sessions 2023–2026 ne sortent du guide que par la dérivation (`HP:word-formation`), les adjectifs en
+-ed / -ing et « the most ». Les sessions 2008–2022 relèvent du manuel précédent : leurs items au
+programme sont repris, le reste est écarté.
+
+**Archétypes d'examen** : reading (17), cloze à banque avec intrus (16), choix entre deux ou trois
+formes (15), remise en ordre de mots, de phrases ou de répliques (10), appariement (8), rédaction guidée
+(8), contraires et synonymes (7), dialogue à compléter (5), lettres en désordre (5), mise en forme de
+mots entre crochets (4, depuis 2023), correction de fautes (3), appariement question-réponse (3).
+
+**Devoirs (vague 1)** : 51 lignes ; **39 portent un jeton HP (76 %)**, 25 n'en portent que ; thèmes
+d'identité, de famille, de nationalités, du corps, de la maison : aucun devoir ne suit une unité de
+« Learn and Grow » (tous antérieurs, journal de lecture). Chapitre `04` jamais touché ; `05` une fois.
+
+## 5. Écart avec le contenu existant — et plan
+
+Le contenu publié (245 QCM, 7 × 35) n'a **aucune** phrase officielle, aucun texte lacunaire, aucun
+appariement, aucune remise en ordre, aucune lecture de texte, aucune consigne de production : c'est ce
+que le gisement apporte. Plan : `FableEtudes/campagnes/anglais-6eme/PLAN-gisement.md` et
+`plan-missions-v1.json` — **19 missions d'examen et 2 de devoirs** (environ 160 questions), au statut
+`planifiee` dans `gisement.json` ; chaque mission nomme les questions existantes à ne pas redemander.
+
+Signatures neuves des devoirs (famille d'archétype + chapitres, jetons HP ôtés, contre les 102 lignes
+d'examen) : **30 sur 51 (58 %)** brutes, 28 sur 49 hors écoute (57 %) ; **13 sur 49 (27 %)** une fois
+écartées celles qui ne portent aucun chapitre ; **2 sur 49 (4 %)** une fois retirées celles que le
+plan d'examens ou le patron couvrent déjà (une lettre de saison à lire, au `03` ; une carte postale de
+sa ville, au `07`). **Pas de vague 2** proposée.
 
 ## 6. Mesures — à la lecture
