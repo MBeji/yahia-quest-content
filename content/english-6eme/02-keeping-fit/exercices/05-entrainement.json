@@ -9,13 +9,24 @@
     {
       "prompt": "In one of these words the vowel is long and you can hold it. Which word is it?",
       "options": [
-        { "id": "a", "text": "milk" },
-        { "id": "b", "text": "fit" },
+        {
+          "id": "a",
+          "text": "rabbit"
+        },
+        {
+          "id": "b",
+          "text": "fit",
+          "misconceptionTag": "english.sound.lettre-pour-son"
+        },
         { "id": "c", "text": "cheese" },
-        { "id": "d", "text": "sit" }
+        {
+          "id": "d",
+          "text": "sit",
+          "misconceptionTag": "english.sound.lettre-pour-son"
+        }
       ],
       "correctOption": "c",
-      "explanation": "In cheese you can hold the vowel as long as you have air, so it belongs to the long list, with eat, feet and teeth. In milk, fit and sit the vowel stops at once: those three belong to the short list, with drink, hit and rabbit.",
+      "explanation": "In cheese you can hold the vowel as long as you have air, so it belongs to the long list, with eat, feet and teeth. In rabbit, fit and sit the vowel stops at once: those three belong to the short list, with drink, hit and milk.",
       "difficulty": 1
     },
     {
@@ -36,19 +47,31 @@
         { "id": "a", "text": "is ... has" },
         { "id": "b", "text": "have ... is" },
         { "id": "c", "text": "has ... is" },
-        { "id": "d", "text": "has ... has" }
+        {
+          "id": "d",
+          "text": "has ... has",
+          "misconceptionTag": "english.health.etre-et-avoir-confondus"
+        }
       ],
       "correctOption": "c",
       "explanation": "A toothache is an ailment, that is a noun, so it takes have, which becomes has with she; sad is an adjective, so it takes the verb to be, which is is with she. Exchanging the two verbs, or using the same one twice, ignores the word that follows each blank.",
       "difficulty": 2
     },
     {
-      "prompt": "You want to know the quantity of pasta the recipe needs. Which question is correct?",
+      "prompt": "Karim and his mother look at a packet of pasta, and he asks about the amount for dinner. Which question is correct?",
       "options": [
-        { "id": "a", "text": "How many pasta do we need?" },
-        { "id": "b", "text": "How much pasta do we need?" },
-        { "id": "c", "text": "How many pastas do we need?" },
-        { "id": "d", "text": "How much pastas do we need?" }
+        {
+          "id": "a",
+          "text": "How many pasta do we need for dinner?",
+          "misconceptionTag": "english.quant.many-much-confondus"
+        },
+        { "id": "b", "text": "How much pasta do we need for dinner?" },
+        {
+          "id": "c",
+          "text": "How many pastas do we need for dinner?",
+          "misconceptionTag": "english.quant.many-much-confondus"
+        },
+        { "id": "d", "text": "How much pastas do we need for dinner?" }
       ],
       "correctOption": "b",
       "explanation": "Pasta is weighed, not counted one by one, so it is an uncountable noun: it keeps no plural -s and it takes How much. The question word How many belongs to countable nouns such as eggs or tomatoes, and adding an -s to pasta tries to count what is not countable.",
@@ -69,8 +92,16 @@
     {
       "prompt": "Which sentence about something forbidden is completely correct?",
       "options": [
-        { "id": "a", "text": "You mustn't to play with the matches." },
-        { "id": "b", "text": "You mustn't playing with the matches." },
+        {
+          "id": "a",
+          "text": "You mustn't to play with the matches.",
+          "misconceptionTag": "english.modal.to-en-trop"
+        },
+        {
+          "id": "b",
+          "text": "You mustn't playing with the matches.",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
         { "id": "c", "text": "You don't must play with the matches." },
         { "id": "d", "text": "You mustn't play with the matches." }
       ],

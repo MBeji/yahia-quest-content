@@ -4,10 +4,22 @@
     {
       "prompt": "Salma wants a healthy snack after school. Which one should she choose?",
       "options": [
-        { "id": "a", "text": "a doughnut" },
+        {
+          "id": "a",
+          "text": "a doughnut",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
         { "id": "b", "text": "an apple" },
-        { "id": "c", "text": "a bag of crisps" },
-        { "id": "d", "text": "a bottle of soda" }
+        {
+          "id": "c",
+          "text": "a bag of crisps",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "a bottle of soda",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        }
       ],
       "correctOption": "b",
       "explanation": "An apple is a fruit, and fruits are healthy food, so it is the right snack. A doughnut is full of sugar, a bag of crisps is full of salt and oil, and a bottle of soda is full of sugar too: all three are unhealthy food, bad for the body.",
@@ -19,7 +31,11 @@
         { "id": "a", "text": "You should eat lots of sweets." },
         { "id": "b", "text": "You don't should eat lots of sweets." },
         { "id": "c", "text": "You shouldn't eat lots of sweets." },
-        { "id": "d", "text": "You shouldn't to eat lots of sweets." }
+        {
+          "id": "d",
+          "text": "You shouldn't to eat lots of sweets.",
+          "misconceptionTag": "english.modal.to-en-trop"
+        }
       ],
       "correctOption": "c",
       "explanation": "Eating lots of sweets is a bad idea, so the advice is opened by shouldn't and the verb after it stays bare: You shouldn't eat lots of sweets. The sentence with should gives the opposite advice, the form with to after shouldn't adds a word that never follows it, and \"don't should\" puts an auxiliary in front of a word that already carries its own negative.",
@@ -29,9 +45,21 @@
       "prompt": "The dentist tells you to brush your teeth twice a day. It is a rule, not an idea. Which sentence says it?",
       "options": [
         { "id": "a", "text": "You must brush your teeth twice a day." },
-        { "id": "b", "text": "You must to brush your teeth twice a day." },
-        { "id": "c", "text": "You must brushing your teeth twice a day." },
-        { "id": "d", "text": "You mustn't brush your teeth twice a day." }
+        {
+          "id": "b",
+          "text": "You must to brush your teeth twice a day.",
+          "misconceptionTag": "english.modal.to-en-trop"
+        },
+        {
+          "id": "c",
+          "text": "You must brushing your teeth twice a day.",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
+        {
+          "id": "d",
+          "text": "You mustn't brush your teeth twice a day.",
+          "misconceptionTag": "english.modal.fonction-confondue"
+        }
       ],
       "correctOption": "a",
       "explanation": "A rule is stated with must and a bare verb: You must brush your teeth twice a day. The form with to after must adds a word that never follows it, the -ing form cannot stand there either, and mustn't would say the opposite, that brushing your teeth is forbidden.",
@@ -40,8 +68,16 @@
     {
       "prompt": "Karim runs up to the third floor and he is not tired at the top. Which sentence about Karim is correct?",
       "options": [
-        { "id": "a", "text": "He cans run up the stairs." },
-        { "id": "b", "text": "He can to run up the stairs." },
+        {
+          "id": "a",
+          "text": "He cans run up the stairs.",
+          "misconceptionTag": "english.modal.s-sur-le-modal"
+        },
+        {
+          "id": "b",
+          "text": "He can to run up the stairs.",
+          "misconceptionTag": "english.modal.to-en-trop"
+        },
         { "id": "c", "text": "He can't run up the stairs." },
         { "id": "d", "text": "He can run up the stairs." }
       ],
@@ -54,8 +90,16 @@
       "options": [
         { "id": "a", "text": "How much ... How many" },
         { "id": "b", "text": "How many ... How much" },
-        { "id": "c", "text": "How many ... How many" },
-        { "id": "d", "text": "How much ... How much" }
+        {
+          "id": "c",
+          "text": "How many ... How many",
+          "misconceptionTag": "english.quant.many-much-confondus"
+        },
+        {
+          "id": "d",
+          "text": "How much ... How much",
+          "misconceptionTag": "english.quant.many-much-confondus"
+        }
       ],
       "correctOption": "b",
       "explanation": "Eggs carry an -s and you count them one by one, so the question word is How many; milk has no plural and you cannot count it one by one, so the question word is How much. It is the noun that chooses the word, which is why the two questions cannot take the same one.",
