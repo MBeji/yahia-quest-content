@@ -110,3 +110,42 @@ Autres contrôles sans défaut : âge et vocabulaire (Leila, Omar, port, châtea
 55 questions re-résolues : **0 clé fausse**, **2 critiques** (04#3 et 05#1 : deux réponses défendables), **8 majeurs** (libellé a/an qui ne dit pas l'erreur, « key » en 09#3, deux défauts de m018 — clé livrée par la citation et ordering sans données —, dessin absent en 01#1, doublon 05#2 / quiz#2, tableaux de prononciation brisés à 360 px, plus un `verifie` faux hors lot), **8 mineurs**. Salle blanche m021 propre (outil + comparaison à la main avec D07 et D08). Étiquetage des existants à 52 % (justifié). Chaque texte de remplacement a été vérifié : longueur de la clé, une seule réponse, aucune fuite, et rendu Chromium pour M7.
 
 **Verdict : à corriger avant armement** (C1, C2, M1–M7). Après correction, une relecture ciblée de ces items suffit.
+
+## 5. Re-vérification (commit `0c783aae`, 2026-10-18)
+
+Questions modifiées re-résolues à l'aveugle : 01#1, 01#6, 02#4, 02#6, 03#3, 03#6, 04#3, 05#1, 05#2, 06#1, 06#2, 06#4, 07#4 (m019), 09#3, plus le `verifie` a/an/the du cours. Les clés sont toutes justes. Gates : `content:check` ✓, `content:qa -- --subject english-6eme` ✓, `content:tranche -- --subject english-6eme --chapters 07 --fresh --strict-longest` : clé la plus longue 0/31, paires proches 0, gabarits 0, patron 0 en recul.
+
+| Défaut | État |
+| --- | --- |
+| C1 04#3 « by Spain » + étiquette + explication | corrigé |
+| C2 05#1 carte au trésor (south ; west / north / east étiquetées) | corrigé (texte de l'audit) |
+| M1 libellé `a-an-selon-la-lettre` (fr, en, ar) | corrigé : texte exact dans `misconceptions.json` |
+| M2 09#3 « very » + explication | corrigé |
+| M3 06#2 citation du paragraphe 2 (felt / worked / won / waiting) | corrigé, conforme au PDF |
+| M4 06#4 fin du paragraphe 3 citée | corrigé, conforme au PDF |
+| M5 01#1 dessin absent | corrigé, mais **réécriture nouvelle à reprendre** (voir R1) |
+| M6 05#2 Maori | corrigé : options en groupes nominaux (17/21/21/21 car. ; clé « A touch of the noses. » non strictement la plus longue) ; une seule réponse ; muettes, à bon droit (faits de pays) |
+| M7 tableaux de prononciation | corrigé : Chromium 360 px, 2 colonnes lisibles, « /ai/ » entier, étiquette « PROPERTY » séparée, aucun débordement (tables 289/289 px) |
+| M8 `verifie` a/an/the (hors lot) | corrigé (an old bridge / a fountain / The fountain) |
+| m1 06#1 citation à deux phrases | corrigé |
+| m2 02#4 b muette | corrigé |
+| m3 03#3 « wearing a coat when it is cold » | corrigé |
+| m4 03#6 « Last summer I visited ___ country in Europe: Spain. » | corrigé |
+| m5 `expectedMistakes` de m019#4 retirées | corrigé |
+| m6 01#6 b `modal.to-en-trop` (« Let's to ») ; 02#6 b `spell.suffixe-sans-regle-orthographique` (« easyer ») | ajoutées, étiquettes exactes |
+| m8 « Four spellings to watch » | corrigé |
+
+**R1 (majeur, introduit par la correction) — `01-pratique.json` #1** (« Italy is drawn above Tunisia on a map », options « Tunisia lies north / east / south / west of Italy », clé south) :
+- (a) *lies* parle de la géographie réelle, et la Tunisie (Tunis 10,2° E) est à l'ouest de l'Italie (Rome 12,5° E) : « Tunisia lies west of Italy. » se défend. C'est la classe de défaut de C2, et l'étiquette `directions-confondues` posée sur cette option ne nomme pas une erreur.
+- (b) Le geste (relation inverse, clé « south ») est désormais celui de 05#1.
+
+Remplacement (contexte inventé ; « straight above » exclut east et west ; geste « dessus → north », distinct de 05#1 ; clé 34 car. = option south 34 car., non strictement la plus longue) :
+- prompt : « On Lina's map of her village, the school is drawn straight above the mosque. Choose the correct sentence. »
+- options : a `The school is north of the mosque.` (clé) · b `The school is south of the mosque.` (`english.vocab.directions-confondues`) · c `The school is east of the mosque.` (`english.vocab.directions-confondues`) · d `The school is west of the mosque.` (`english.vocab.directions-confondues`) ; `correctOption: "a"`
+- explication : « The top of a map is the north, so the school, drawn straight above the mosque, is north of it. The south is the bottom of the map, and the east and the west are its right and left sides, which say nothing about what is higher. »
+
+Relancer `content:tranche --fresh --strict-longest` après l'application.
+
+**Verdict final : prêt à armer une fois R1 appliqué** (aucun autre défaut restant). R1 seul se vérifie par relecture, sans nouvel audit.
+
+**R1 appliqué par le pilote** (2026-10-18) : 01#1 remplacée mot pour mot par le texte de la re-vérification (carte du village de Lina, clé north) ; `content:check` vert, `content:tranche --fresh --strict-longest` sur le 07 : clé la plus longue 0, paires proches 0, gabarits 0. **B4 prêt à armer.**
