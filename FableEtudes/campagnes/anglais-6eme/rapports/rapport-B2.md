@@ -82,3 +82,9 @@ Relancés verts : `content:check`, `content:qa -- --subject english-6eme`, `cont
 
 Non appliqués : m-8 (aucune action exigée) ; m-9 m020 Q2–Q4 (l'auditeur ne donne pas de texte de remplacement, seulement une option : réserve laissée à l'orchestrateur) ; m-10 et le libellé `suffixe-sans-regle-orthographique` (déjà faits par le pilote) ; m-11 et m-12 (hors défauts, à déclarer exercices parallèles voulus : 04 quiz#4 ↔ 04-defi#1, 02-boss#6 ↔ 05#6). Tags corrigés : mot-voisin du 04 = 6 ; m010 Q6 (pas Q5) porte `premier-mot-cle`. Taux final : 03 = 104/159 (65 %), 04 = 82/162 (51 %).
 - m009 Q6 reformulé (plus de « feel loved » ni « right to », clé de m012 Q3) ; « loved and ___ for » seul ne livre pas « right ».
+
+## Note du pilote (après re-vérification, 2026-10-18)
+
+- **Exercices parallèles voulus** (déclarés) : 04 quiz#4 ↔ 04-defi#1 et 02-boss#6 ↔ 05#6 — même notion, gestes et contextes distincts ; `content:tranche` ne les compte plus comme paires proches.
+- m008 Q7 : l'ordre qui fait foi est celui du fichier (e,a,c,f,b,d, lettres b et f permutées par rapport au texte de l'audit), juste et unique selon la re-vérification.
+- Verdict de l'auditeur : **B2 prêt à armer**.
