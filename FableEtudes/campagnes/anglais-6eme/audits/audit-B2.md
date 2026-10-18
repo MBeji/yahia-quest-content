@@ -204,3 +204,36 @@ Avec le retrait des trois `mot-voisin` de 03-revision#1, le 04 reste vers 51 % :
 - Mineurs : 12 (dont un transversal, la ligne `sources[]`).
 - Étiquettes : exactes sauf trois `mot-voisin` à retirer (04/03-revision#1) et le libellé `suffixe-sans-regle-orthographique` à élargir ; trois étiquettes à ajouter (doute 6).
 - **Verdict : à corriger d'abord.** Après C-1, M-1 à M-5 et la re-vérification, la tranche peut partir.
+
+## 7. Re-vérification (commit `0dcc7fa6`)
+
+Diff relu de `0ea0b594` à `0dcc7fa6` sur 03, 04 et `misconceptions.json`. J'ai re-résolu à l'aveugle les questions
+modifiées : m007 Q2, Q4, Q5, Q6, Q8 ; m008 Q7 ; m009 Q3, Q6 ; m010 Q3, Q4, Q6, Q7 ; m011 Q2, Q6 ; 04/02-boss#1, #3 ;
+04/03-revision#1. Toutes les clés sont justes et uniques.
+
+| défaut | état | contrôle |
+| --- | --- | --- |
+| C-1 m008 Q7 | corrigé | b = « afternoon … walking », f = « morning … milk », clé e,a,c,**f,b**,d. Les lettres sont permutées par rapport à mon texte, mais l'ordre est juste et unique : le plan de la consigne et la chronologie concordent. Le rapport de l'auteur écrit « e,a,c,b,f » : c'est le fichier qui fait foi. |
+| M-1 m010 Q3 | corrigé | citations des paragraphes 1 et 3 conformes au PDF ; decided … show est la seule paire juste ; longueurs 17/16/15/16 |
+| M-2 m010 Q6, Q7 | corrigé | « (Exam 2026 — reading text) » |
+| M-3 m011 Q6 | corrigé | glose « find becomes found » dans l'énoncé, d2 ; la fuite vers la Q8 n'a plus d'effet |
+| M-4 04/02-boss#1 | corrigé | the strongest ; trois étiquettes exactes (comparatif / sans the / forme selon la longueur) |
+| M-5 cook/cooker | corrigé | `cours.md` (piège et bloc « retenir ») et `resume.md` ; le patron de notion ne recule pas (tranche) |
+| m-1 à m-7 | corrigés | textes conformes à ceux de l'audit |
+| m-8 | sans action | réserve maintenue, n'empêche pas l'armement |
+| m-9 m020 Q2–Q4 | **accepté en l'état** | quand le donjon tire les questions au hasard, chaque question doit porter sa donnée. La carte du devoir demande de « corriger par le détail juste », et les distracteurs testent la grammaire du chapitre et deux détails absents de la lettre. Pas de défaut. |
+| m-10 `sources[]` | corrigé (pilote) | « concours d'entrée aux collèges pilotes (6ᵉ année de base) » dans les deux `chapter.json` |
+| m-11, m-12 | à déclarer | exercices parallèles voulus (04 quiz#4 ↔ 04-defi#1 ; 02-boss#6 ↔ 05#6) |
+| libellé `suffixe-sans-regle-orthographique` | corrigé (pilote) | fr, en et ar élargis ; il couvre désormais le doublement fautif (winddy, snowwy, walkking) |
+| étiquettes du doute 6 | corrigé | « the most big » et « the most strong » portent `forme-selon-longueur`, « hottest » porte `mot-de-sens-inverse` ; les trois `mot-voisin` de 04/03-revision#1 sont retirés |
+
+Hors audit, deux modifications de l'auteur :
+- **m009 Q6, reformulé contre la fuite vers m012 Q3** (« right »). « On that day every child is loved and ___ for » → *cared*, seule forme possible : *caring for* demanderait un objet, *care* et *cares* ne s'accordent pas. L'énoncé ne livre plus *right*, et m012 Q3 ne livre pas *cared*. Réserve : la phrase n'est plus mot pour mot celle du sujet. C'est acceptable, puisque le blanc et l'entourage « loved and ___ for » sont conservés et que la session est citée.
+- **Étiquette « the most strong »** : exacte (adjectif court).
+
+Gates relancés : `content:check` vert ; `content:qa -- --subject english-6eme` sans clé suspecte ;
+`content:tranche --chapters 03,04 --fresh --strict-longest` : clé strictement la plus longue 0/53, paires 0, gabarits 0,
+patron de notion sans recul. Un avertissement subsiste sur la position des clés (d à 13 %). Ce n'est pas un défaut :
+les options sont mélangées à l'affichage.
+
+**Verdict final : prêt à armer.** Aucune clé fausse, aucun défaut critique ni majeur restant ; il reste deux réserves mineures (m009 Q6, m-8) et une déclaration à faire (m-12).
