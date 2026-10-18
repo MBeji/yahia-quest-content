@@ -9,10 +9,22 @@
     {
       "prompt": "The family gets the room ready one hour before the guests arrive. Which action do they do?",
       "options": [
-        { "id": "a", "text": "They wait for midnight." },
+        {
+          "id": "a",
+          "text": "They wait for midnight.",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
         { "id": "b", "text": "They decorate the room." },
-        { "id": "c", "text": "They hug each other." },
-        { "id": "d", "text": "They put on their best clothes." }
+        {
+          "id": "c",
+          "text": "They hug each other.",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "They put on their best clothes.",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        }
       ],
       "correctOption": "b",
       "explanation": "Making the room ready with flowers, lights and paper is called decorating it. Waiting for midnight happens at the very end of the evening, hugging each other is something people do to one another and not to the room, and putting on your best clothes gets a person ready, not a place.",
@@ -21,7 +33,11 @@
     {
       "prompt": "Complete the sentence: \"My little brother ___ the right to clothing and to health.\"",
       "options": [
-        { "id": "a", "text": "have" },
+        {
+          "id": "a",
+          "text": "have",
+          "misconceptionTag": "english.verb.auxiliaire-mal-accorde"
+        },
         { "id": "b", "text": "has" },
         { "id": "c", "text": "having" },
         { "id": "d", "text": "are" }
@@ -33,7 +49,11 @@
     {
       "prompt": "Complete the sentence: \"Last Friday, the pupils ___ a show for their teacher.\"",
       "options": [
-        { "id": "a", "text": "prepare" },
+        {
+          "id": "a",
+          "text": "prepare",
+          "misconceptionTag": "english.tense.present-avec-marqueur-passe"
+        },
         { "id": "b", "text": "prepares" },
         { "id": "c", "text": "prepared" },
         { "id": "d", "text": "will prepare" }
@@ -45,7 +65,11 @@
     {
       "prompt": "Which of these past forms is written correctly?",
       "options": [
-        { "id": "a", "text": "stoped" },
+        {
+          "id": "a",
+          "text": "stoped",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
+        },
         { "id": "b", "text": "stopeed" },
         { "id": "c", "text": "stoppd" },
         { "id": "d", "text": "stopped" }
@@ -59,23 +83,35 @@
       "options": [
         { "id": "a", "text": "drank / ate" },
         { "id": "b", "text": "drinked / eated" },
-        { "id": "c", "text": "drank / eated" },
-        { "id": "d", "text": "drinked / ate" }
+        {
+          "id": "c",
+          "text": "drank / eated",
+          "misconceptionTag": "english.tense.ed-sur-verbe-irregulier"
+        },
+        {
+          "id": "d",
+          "text": "drinked / ate",
+          "misconceptionTag": "english.tense.ed-sur-verbe-irregulier"
+        }
       ],
       "correctOption": "a",
       "explanation": "Both verbs are irregular and change shape instead of taking an ending: drink becomes drank and eat becomes ate. The forms \"drinked\" and \"eated\" glue the regular ending to verbs that refuse it, and the two mixed pairs get one verb right and the other wrong.",
       "difficulty": 3
     },
     {
-      "prompt": "Three of these past verbs end with the quiet sound /t/. Which one does NOT?",
+      "prompt": "Karim reads the verb helped aloud. How does its final -ed sound?",
       "options": [
-        { "id": "a", "text": "asked" },
-        { "id": "b", "text": "talked" },
-        { "id": "c", "text": "played" },
-        { "id": "d", "text": "danced" }
+        { "id": "a", "text": "/t/, as in asked" },
+        { "id": "b", "text": "/d/, as in played" },
+        {
+          "id": "c",
+          "text": "/ɪd/, as in wanted",
+          "misconceptionTag": "english.sound.ed-toujours-syllabe"
+        },
+        { "id": "d", "text": "/z/, as in plays" }
       ],
-      "correctOption": "c",
-      "explanation": "The verb play ends in a vowel sound, and a vowel shakes your throat, so its ending is the buzzing /d/. Ask ends in the quiet k, talk ends in the quiet k too, and dance ends in the quiet s, so all three take the quiet /t/ where the throat stays still.",
+      "correctOption": "a",
+      "explanation": "The verb help ends in the quiet sound p, where your throat stays still, so the ending of helped is the quiet /t/. The buzzing /d/ needs a sound that shakes the throat, the syllable /ɪd/ needs a verb that ends in t or d, and /z/ is the ending of plays, a present form.",
       "difficulty": 3
     }
   ]

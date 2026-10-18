@@ -7,21 +7,21 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "Three of these job names are built from a real verb plus the ending -er. Which one is NOT?",
+      "prompt": "Sarra says: \"My uncle is a farmer, my aunt is a teacher and my cousin is a doctor.\" Which person has a job name that is NOT built from a verb plus the ending -er?",
       "options": [
-        { "id": "a", "text": "a builder" },
-        { "id": "b", "text": "a farmer" },
-        { "id": "c", "text": "a carpenter" },
-        { "id": "d", "text": "a teacher" }
+        { "id": "a", "text": "my uncle" },
+        { "id": "b", "text": "my aunt" },
+        { "id": "c", "text": "my cousin" },
+        { "id": "d", "text": "none of them" }
       ],
       "correctOption": "c",
-      "explanation": "A carpenter ends in the same three letters as the others, but there is no verb carpent in English: the word is learnt whole. Behind a builder stands the verb build, behind a farmer the verb farm, and behind a teacher the verb teach, so those three really do follow the rule.",
+      "explanation": "Farm gives a farmer and teach gives a teacher, so the jobs of the uncle and of the aunt follow the rule. A doctor ends in -or and no verb stands behind it: the word is learnt as it is, so the cousin is the one, and the answer that says none of them forgets this word.",
       "difficulty": 2
     },
     {
       "prompt": "Read: \"Amine tidies his room alone. Sarra and her sister tidy their room together.\" Which sentence is correct?",
       "options": [
-        { "id": "a", "text": "Amine and Sarra help each other." },
+        { "id": "a", "text": "Amine and Sarra help each other with their rooms." },
         { "id": "b", "text": "Sarra and her sister help each other." },
         { "id": "c", "text": "Sarra tidies her room alone." },
         { "id": "d", "text": "Amine helps Sarra with her room." }
@@ -46,7 +46,7 @@
       "prompt": "Your class writes its charter. Which line is a promise about the future, and not an order?",
       "options": [
         { "id": "a", "text": "We will tidy our desks every Friday." },
-        { "id": "b", "text": "Clean the blackboard." },
+        { "id": "b", "text": "Clean the blackboard before the lesson." },
         { "id": "c", "text": "Don't walk in with dirty shoes." },
         { "id": "d", "text": "Tidy your desk." }
       ],
@@ -57,7 +57,11 @@
     {
       "prompt": "Meriem says the two words school and house. Which sentence about the letter h in them is true?",
       "options": [
-        { "id": "a", "text": "You hear the h in both words." },
+        {
+          "id": "a",
+          "text": "You hear the h in both words.",
+          "misconceptionTag": "english.sound.lettre-pour-son"
+        },
         { "id": "b", "text": "You hear the h in neither word." },
         { "id": "c", "text": "You hear the h in school but not in house." },
         { "id": "d", "text": "You hear the h in house but not in school." }
@@ -72,7 +76,11 @@
         { "id": "a", "text": "My uncle is a farm, and his field is the biggest in the village." },
         { "id": "b", "text": "My uncle is a farmer, and his field is the biggest in the village." },
         { "id": "c", "text": "My uncle is a farmer, and him field is the biggest in the village." },
-        { "id": "d", "text": "My uncle is a farmer, and his field is the bigest in the village." }
+        {
+          "id": "d",
+          "text": "My uncle is a farmer, and his field is the bigest in the village.",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
+        }
       ],
       "correctOption": "b",
       "explanation": "Three rules must hold at once: the person is the verb farm plus -er, the owner is one man so the word is his, and big doubles its last consonant before the ending. The word \"a farm\" names the place and not the man, \"him field\" uses the form that receives an action instead of the possessive his, and \"the bigest\" forgets the doubled consonant.",

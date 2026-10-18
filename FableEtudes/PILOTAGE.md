@@ -62,7 +62,7 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 | maths (`math-6eme`) | ⚠️ fiche `partielle/mixte`, 23 % (502603 et 102609 à trous) — `programme:etat` : génération interdite, contenu généré sous la barre R-5 | ✅ armé | ✅ | ✅ | ❌ | **LOT A d'abord** (compléter la fiche), puis gisement en un passage |
 | arabe (`arabic-6eme`) | ⚠️ fiche `partielle/generation`, 100 % mais pas en profondeur R-5 — génération interdite | ✅ armé (19 ch.) | ✅ | ✅ | ❌ | profondeur R-5 de la fiche, puis gisement en un passage |
 | éveil scientifique | ⚠️ fiche `partielle/mixte`, 57 % (503604 p. 103–180 à trous) — génération interdite | ✅ armé | ✅ | ✅ | ❌ | **LOT A d'abord**, puis gisement en un passage |
-| anglais (`english-6eme`) | ✅ `validee-r7`, 100 % — génération autorisée | ⏳ écrit (7/7 ch.), pas armé | ❌ | ❌ | ❌ | 🔒 **réservé** session unique (2026-10-18) : patron + étiquettes + armement + gisement en un passage, branche `wip/anglais-6eme-un-passage`, notes `FableEtudes/campagnes/anglais-6eme/` ; patron + étiquettes + armement + gisement **en un seul passage** |
+| anglais (`english-6eme`) | ✅ `validee-r7`, 100 % ; guide 541608 (manuel élève absent du corpus CNP, D1) ; 6ᵉ = **3ᵉ année d'anglais** (D7, corrigé) | ✅ armé le 2026-10-18 (7 ch., section « Let's pronounce » au 07) | ✅ patron entier étiqueté (51–65 % des distracteurs selon le chapitre, muets à raison, E7) ; 19 étiquettes neuves `english.*`, 6 élargies | ✅ 4 lots audités à l'aveugle (opus), corrigés, re-vérifiés | ✅ 17 sessions du concours lues (2008–2026 ; 2011 et 2014 introuvables) : **19 missions** d'examen ; 2 missions de devoirs en salle blanche (9 devoirs lus) | rapports dans `FableEtudes/campagnes/anglais-6eme/` — **publication en cours** |
 | français 6ᵉ | ❌ fiche `partielle/mixte`, 14 % | ❌ la matière n'existe pas | — | — | ❌ | LOT A, puis tout le reste en un passage |
 
 ## 3. File d'attente (ordre arbitré par le propriétaire : la 9ᵉ finie avant tout, puis la 6ᵉ)
@@ -77,7 +77,7 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 2. ~~**Maths 9ᵉ 01–02**~~ audité, livré et publié le 2026-10-12 (§4) ; était : audit indépendant opus du recentrage, puis PR séparée (`content/math/01-*`,
    `02-*` seulement), `apply-content` `subjects=math`. Rapport du recentrage au §4.
 3. **Gisement 9ᵉ restant**, chaque couple en un passage : ~~maths~~ (plan d'examens et devoirs vague 1 publiés), ~~SVT~~ (examens 2001–2026 et devoirs livrés le 2026-10-16), ~~français~~ (examens et devoirs livrés le 2026-10-16), ~~anglais~~ (examens et devoirs livrés le 2026-10-17).
-4. **6ᵉ** : `english-6eme` puis `french-6eme`, puis le gisement des couples 6ᵉ déjà armés. ⚠️ Mesure du 2026-10-12 : les fiches de maths (23 %), d'éveil (57 %) et d'arabe 6ᵉ (pas en profondeur R-5) sont sous la barre — `programme:etat` y interdit la génération ; leur gisement passe d'abord par le LOT A (compléter la fiche), à confirmer avec le propriétaire avant de l'ouvrir.
+4. **6ᵉ** : ~~`english-6eme`~~ (livré le 2026-10-18), puis `french-6eme`, puis le gisement des couples 6ᵉ déjà armés. ⚠️ Mesure du 2026-10-12 : les fiches de maths (23 %), d'éveil (57 %) et d'arabe 6ᵉ (pas en profondeur R-5) sont sous la barre — `programme:etat` y interdit la génération ; leur gisement passe d'abord par le LOT A (compléter la fiche), à confirmer avec le propriétaire avant de l'ouvrir.
 
 ## 4. Rapport du recentrage maths 9ᵉ (2026-10-12, audité et livré le même jour)
 

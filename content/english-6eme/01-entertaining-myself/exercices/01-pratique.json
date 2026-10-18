@@ -9,10 +9,22 @@
     {
       "prompt": "You take your rod and you sit by the river for two hours. What is your free time activity?",
       "options": [
-        { "id": "a", "text": "drawing" },
+        {
+          "id": "a",
+          "text": "drawing",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
         { "id": "b", "text": "fishing" },
-        { "id": "c", "text": "gardening" },
-        { "id": "d", "text": "shopping" }
+        {
+          "id": "c",
+          "text": "gardening",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "shopping",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        }
       ],
       "correctOption": "b",
       "explanation": "A rod and a river go with fishing. Drawing needs a pencil and paper, gardening is the work you do with plants and flowers, and shopping is what you do in the shops.",
@@ -22,8 +34,16 @@
       "prompt": "Complete the sentence: \"I enjoy ___ a bike in the park after school.\"",
       "options": [
         { "id": "a", "text": "riding" },
-        { "id": "b", "text": "ride" },
-        { "id": "c", "text": "to ride" },
+        {
+          "id": "b",
+          "text": "ride",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
+        {
+          "id": "c",
+          "text": "to ride",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
         { "id": "d", "text": "rides" }
       ],
       "correctOption": "a",
@@ -33,33 +53,61 @@
     {
       "prompt": "Complete: \"This is Amine. ___ kite is red and white.\"",
       "options": [
-        { "id": "a", "text": "Her" },
-        { "id": "b", "text": "Its" },
+        {
+          "id": "a",
+          "text": "Her",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        },
+        {
+          "id": "b",
+          "text": "Its",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        },
         { "id": "c", "text": "His" },
-        { "id": "d", "text": "Their" }
+        {
+          "id": "d",
+          "text": "Their",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        }
       ],
       "correctOption": "c",
       "explanation": "The owner is Amine, one boy, so he is \"he\" and the possessive adjective is His. The word \"Her\" names a girl, \"Its\" names a thing or an animal, and \"Their\" names two people or more.",
       "difficulty": 1
     },
     {
-      "prompt": "Complete: \"I enjoy gardening ___ I love flowers.\"",
+      "prompt": "Your friend asks: \"Why do you enjoy gardening?\" Complete your answer: \"I enjoy gardening ___ I love flowers.\"",
       "options": [
-        { "id": "a", "text": "and" },
+        {
+          "id": "a",
+          "text": "and",
+          "misconceptionTag": "english.link.connecteur-de-mauvais-type"
+        },
         { "id": "b", "text": "because" },
-        { "id": "c", "text": "but" },
-        { "id": "d", "text": "why" }
+        {
+          "id": "c",
+          "text": "but",
+          "misconceptionTag": "english.link.connecteur-de-mauvais-type"
+        },
+        { "id": "d", "text": "because of" }
       ],
       "correctOption": "b",
-      "explanation": "The second part gives the reason, and the reason is opened by because: I enjoy gardening because I love flowers. The word \"and\" only joins two ideas, \"but\" joins two ideas that are different, and \"why\" asks the question that because answers.",
+      "explanation": "The question Why asks for a reason, and the reason is opened by because: I enjoy gardening because I love flowers. The word \"and\" only joins two ideas, \"but\" joins two ideas that are different, and \"because of\" must be followed by a noun, not by a full sentence like I love flowers.",
       "difficulty": 2
     },
     {
       "prompt": "Salma reads a book every evening of the week. Which sentence says the same thing?",
       "options": [
         { "id": "a", "text": "She always reads in the evening." },
-        { "id": "b", "text": "She usually reads in the evening." },
-        { "id": "c", "text": "She sometimes reads in the evening." },
+        {
+          "id": "b",
+          "text": "She usually reads in the evening.",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "c",
+          "text": "She sometimes reads in the evening.",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
         { "id": "d", "text": "She never reads in the evening." }
       ],
       "correctOption": "a",
@@ -69,7 +117,11 @@
     {
       "prompt": "Complete: \"Amine plays volleyball with his team. His sister ___ volleyball too.\"",
       "options": [
-        { "id": "a", "text": "play" },
+        {
+          "id": "a",
+          "text": "play",
+          "misconceptionTag": "english.verb.s-oublie-3e-personne"
+        },
         { "id": "b", "text": "playing" },
         { "id": "c", "text": "to play" },
         { "id": "d", "text": "plays" }

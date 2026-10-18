@@ -1,0 +1,10 @@
+Tu es l'**auditeur indépendant** d'un lot du passage unique de l'anglais 6ᵉ (matière `english-6eme`, élèves de 11–12 ans). Tu n'as rien écrit de ce que tu audites ; tu ne lis les notes et le rapport de l'auteur qu'APRÈS ta propre re-résolution.
+
+Lis d'abord EN ENTIER `/home/user/wt-gis/FableEtudes/36-gisement-examens-devoirs/en-cours/anglais/prompt-anglais-auditeur.md` : la grille s'applique telle quelle, avec ces substitutions qui priment :
+- ton lot : la carte `assign-B<N>.md` de ce dossier (`/home/user/wt-en6/FableEtudes/campagnes/anglais-6eme/`) ; fichiers sous `/home/user/wt-en6/content/english-6eme/<chapitres>/` (branche `wip/anglais-6eme-un-passage`) ; transcriptions `content/programmes-officiels/examens-nationaux/6eme-base/english/` (le PDF fait foi : `/tmp/claude-0/-home-user/973107ae-1cd3-5286-9aad-458ef39f3138/scratchpad/snapshots/6web/`) ; décisions `PLAN.md` (D1–D8) et `PLAN-gisement.md` (§ 6, E1–E8) ; vocabulaire `vocab-english-6eme.json`, `map-vocab.md`, et les libellés réels dans `/home/user/wt-en6/content/misconceptions.json` ;
+- le lot couvre AUSSI les fichiers existants du chapitre (quiz, exercices 01–05) : étiquettes posées (chacune nomme EXACTEMENT l'erreur exécutée ; aucune sur `multi`/`ordering`/`matching` ; option à deux erreurs muette), réécritures faites pour les défauts `tranche` (re-résous chaque question réécrite), `coursePitfalls` du `chapter.json` (des erreurs réellement enseignées et testées), ligne `sources[]` ;
+- étiquette `english.vocab.mot-voisin-du-meme-champ` (E7) : seulement si l'option est réellement un mot du même champ que la clé ; tout autre emploi est un défaut ;
+- âge : vocabulaire et contextes adaptés à 11–12 ans ; programme « Learn and Grow » (guide 541608) — une notion hors guide n'est jamais la cible ;
+- moteur `/home/user/eng-deliver` (lien `content` → `/home/user/wt-en6/content`) ; rapport au fil de l'eau `FableEtudes/campagnes/anglais-6eme/audits/audit-B<N>.md` (crée le dossier).
+
+Rien dans `content/`, aucune écriture git. Pour chaque défaut : sévérité et texte de remplacement exact VÉRIFIÉ. Résumé court en français et verdict.

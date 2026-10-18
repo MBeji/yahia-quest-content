@@ -10,9 +10,21 @@
       "prompt": "Which month opens the season of winter?",
       "options": [
         { "id": "a", "text": "December" },
-        { "id": "b", "text": "January" },
-        { "id": "c", "text": "February" },
-        { "id": "d", "text": "November" }
+        {
+          "id": "b",
+          "text": "January",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "c",
+          "text": "February",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "November",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        }
       ],
       "correctOption": "a",
       "explanation": "Winter is made of December, January and February, and the first of the three is December. January and February are the two months that follow it, and November still belongs to autumn.",
@@ -21,9 +33,13 @@
     {
       "prompt": "The wind is very strong today. Complete: \"It is a ___ day.\"",
       "options": [
-        { "id": "a", "text": "wind" },
+        { "id": "a", "text": "wind", "misconceptionTag": "english.word.nom-au-lieu-de-l-adjectif" },
         { "id": "b", "text": "windy" },
-        { "id": "c", "text": "winds" },
+        {
+          "id": "c",
+          "text": "winds",
+          "misconceptionTag": "english.word.nom-au-lieu-de-l-adjectif"
+        },
         { "id": "d", "text": "winding" }
       ],
       "correctOption": "b",
@@ -33,7 +49,11 @@
     {
       "prompt": "Which question asks your cousin about the weather in his town?",
       "options": [
-        { "id": "a", "text": "How is the weather like?" },
+        {
+          "id": "a",
+          "text": "How is the weather like?",
+          "misconceptionTag": "english.question.mot-interrogatif-inadapte"
+        },
         { "id": "b", "text": "What the weather is like?" },
         { "id": "c", "text": "What's the weather like?" },
         { "id": "d", "text": "What's like the weather?" }
@@ -45,9 +65,13 @@
     {
       "prompt": "Complete: \"Tomorrow we ___ a sandcastle on the beach.\"",
       "options": [
-        { "id": "a", "text": "wills make" },
-        { "id": "b", "text": "will makes" },
-        { "id": "c", "text": "will to make" },
+        { "id": "a", "text": "wills make", "misconceptionTag": "english.modal.s-sur-le-modal" },
+        {
+          "id": "b",
+          "text": "will makes",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
+        { "id": "c", "text": "will to make", "misconceptionTag": "english.modal.to-en-trop" },
         { "id": "d", "text": "will make" }
       ],
       "correctOption": "d",
@@ -59,23 +83,35 @@
       "options": [
         { "id": "a", "text": "hotter than" },
         { "id": "b", "text": "hot than" },
-        { "id": "c", "text": "more hot than" },
-        { "id": "d", "text": "hotter that" }
+        {
+          "id": "c",
+          "text": "more hot than",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        },
+        {
+          "id": "d",
+          "text": "hotter that",
+          "misconceptionTag": "english.comp.that-au-lieu-de-than"
+        }
       ],
       "correctOption": "a",
       "explanation": "Hot is a short adjective, so it takes -er, and because it is consonant plus vowel plus consonant the t is doubled: hotter. The second month comes after than, which is never written that, and the bare adjective cannot stand in front of than.",
       "difficulty": 2
     },
     {
-      "prompt": "Nadia is in the sea with her friends. Name her activity.",
+      "prompt": "Nadia is in the sea with her friends. Complete the sentence: \"She enjoys ___ .\"",
       "options": [
-        { "id": "a", "text": "swim" },
-        { "id": "b", "text": "swiming" },
+        { "id": "a", "text": "swim", "misconceptionTag": "english.verb.ing-oublie" },
+        {
+          "id": "b",
+          "text": "swiming",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
+        },
         { "id": "c", "text": "swimming" },
-        { "id": "d", "text": "to swim" }
+        { "id": "d", "text": "to swim a lot", "misconceptionTag": "english.verb.ing-oublie" }
       ],
       "correctOption": "c",
-      "explanation": "An activity is named with the verb plus -ing, and swim is consonant plus vowel plus consonant, so the m is doubled: swimming. The bare verb and the form with to name the action but not the activity, and the spelling with one m forgets the doubling.",
+      "explanation": "After enjoy the activity takes the -ing form, and swim is consonant plus vowel plus consonant, so the m is doubled: swimming. The bare verb and the form with to never follow enjoy, and the spelling with one m forgets the doubling.",
       "difficulty": 2
     }
   ]

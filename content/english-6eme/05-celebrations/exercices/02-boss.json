@@ -9,9 +9,17 @@
     {
       "prompt": "Amine tells a friend about his cousin's afternoon. Which of these sentences is correct?",
       "options": [
-        { "id": "a", "text": "Yesterday, she plays with her cousins." },
+        {
+          "id": "a",
+          "text": "Yesterday, she plays with her cousins.",
+          "misconceptionTag": "english.tense.present-avec-marqueur-passe"
+        },
         { "id": "b", "text": "Yesterday, she played with her cousins." },
-        { "id": "c", "text": "Yesterday, she playeds with her cousins." },
+        {
+          "id": "c",
+          "text": "Yesterday, she playeds with her cousins.",
+          "misconceptionTag": "english.verb.temps-marque-deux-fois"
+        },
         { "id": "d", "text": "Yesterday, she will play with her cousins." }
       ],
       "correctOption": "b",
@@ -19,21 +27,33 @@
       "difficulty": 2
     },
     {
-      "prompt": "Complete both blanks: \"Children ___ the right to education, and every child ___ the right to a home.\"",
+      "prompt": "The teacher says: \"You ___ the right to education, and he ___ the right to health.\" Complete both blanks.",
       "options": [
-        { "id": "a", "text": "have / have" },
-        { "id": "b", "text": "has / has" },
+        {
+          "id": "a",
+          "text": "have / have",
+          "misconceptionTag": "english.verb.auxiliaire-mal-accorde"
+        },
+        {
+          "id": "b",
+          "text": "has / has",
+          "misconceptionTag": "english.verb.auxiliaire-mal-accorde"
+        },
         { "id": "c", "text": "has / have" },
         { "id": "d", "text": "have / has" }
       ],
       "correctOption": "d",
-      "explanation": "Children are several, that is they, so the verb is have; every child is one child, that is he or she, so the verb is has. The three other pairs give at least one of the two subjects the verb of the other, and the words the right to never change the verb in front of them.",
+      "explanation": "You takes have and he takes has: you have the right to education, and he has the right to health. The pair with have for both gives he the form of you, the pair with has for both gives you the form of he, and the third pair swaps the two.",
       "difficulty": 2
     },
     {
       "prompt": "What is the simple past of the verb hug?",
       "options": [
-        { "id": "a", "text": "huged" },
+        {
+          "id": "a",
+          "text": "huged",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
+        },
         { "id": "b", "text": "hugeed" },
         { "id": "c", "text": "hugged" },
         { "id": "d", "text": "huggd" }
@@ -47,8 +67,16 @@
       "options": [
         { "id": "a", "text": "wrote / made" },
         { "id": "b", "text": "writed / maked" },
-        { "id": "c", "text": "wrote / maked" },
-        { "id": "d", "text": "writed / made" }
+        {
+          "id": "c",
+          "text": "wrote / maked",
+          "misconceptionTag": "english.tense.ed-sur-verbe-irregulier"
+        },
+        {
+          "id": "d",
+          "text": "writed / made",
+          "misconceptionTag": "english.tense.ed-sur-verbe-irregulier"
+        }
       ],
       "correctOption": "a",
       "explanation": "Both verbs are irregular and change shape: write becomes wrote and make becomes made. The forms \"writed\" and \"maked\" add the regular ending to verbs that never take it, and the two mixed pairs get one verb right and the other wrong.",
@@ -58,8 +86,16 @@
       "prompt": "Complete both blanks: \"I ___ surprised, and my parents ___ very happy.\"",
       "options": [
         { "id": "a", "text": "were / was" },
-        { "id": "b", "text": "was / was" },
-        { "id": "c", "text": "were / were" },
+        {
+          "id": "b",
+          "text": "was / was",
+          "misconceptionTag": "english.verb.auxiliaire-mal-accorde"
+        },
+        {
+          "id": "c",
+          "text": "were / were",
+          "misconceptionTag": "english.verb.auxiliaire-mal-accorde"
+        },
         { "id": "d", "text": "was / were" }
       ],
       "correctOption": "d",
@@ -69,10 +105,25 @@
     {
       "prompt": "Karim tells the class about the New Year party at his house. Which of these sentences is completely correct?",
       "options": [
-        { "id": "a", "text": "Last night we blew up the balloons and we put on our best clothes." },
-        { "id": "b", "text": "Last night we blowed up the balloons and we put on our best clothes." },
-        { "id": "c", "text": "Last night we blew up the balloons and we putted on our best clothes." },
-        { "id": "d", "text": "Last night we blow up the balloons and we put on our best clothes." }
+        {
+          "id": "a",
+          "text": "Last night we blew up the balloons and we put on our best clothes."
+        },
+        {
+          "id": "b",
+          "text": "Last night we blowed up the balloons and we put on our best clothes.",
+          "misconceptionTag": "english.tense.ed-sur-verbe-irregulier"
+        },
+        {
+          "id": "c",
+          "text": "Last night we blew up the balloons and we putted on our best clothes.",
+          "misconceptionTag": "english.tense.ed-sur-verbe-irregulier"
+        },
+        {
+          "id": "d",
+          "text": "Last night we blow up the balloons and we put on our best clothes.",
+          "misconceptionTag": "english.tense.present-avec-marqueur-passe"
+        }
       ],
       "correctOption": "a",
       "explanation": "Last night is over, so both verbs go to the past, and both are irregular: blow up becomes blew up, and put does not change at all. The form \"blowed up\" adds the regular ending to the first verb, \"putted\" adds it to the second, and the last sentence leaves both verbs in the present.",

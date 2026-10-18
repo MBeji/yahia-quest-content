@@ -9,9 +9,21 @@
     {
       "prompt": "Which of these sentences states a rule, and not a piece of advice?",
       "options": [
-        { "id": "a", "text": "You should eat one fruit every day." },
-        { "id": "b", "text": "You should sleep early." },
-        { "id": "c", "text": "You shouldn't eat lots of crisps." },
+        {
+          "id": "a",
+          "text": "You should eat one fruit every day at school.",
+          "misconceptionTag": "english.modal.fonction-confondue"
+        },
+        {
+          "id": "b",
+          "text": "You should sleep early.",
+          "misconceptionTag": "english.modal.fonction-confondue"
+        },
+        {
+          "id": "c",
+          "text": "You shouldn't eat lots of crisps.",
+          "misconceptionTag": "english.modal.fonction-confondue"
+        },
         { "id": "d", "text": "You must wear your seat belt in the car." }
       ],
       "correctOption": "d",
@@ -23,7 +35,11 @@
       "options": [
         { "id": "a", "text": "have" },
         { "id": "b", "text": "has" },
-        { "id": "c", "text": "is" },
+        {
+          "id": "c",
+          "text": "is",
+          "misconceptionTag": "english.health.etre-et-avoir-confondus"
+        },
         { "id": "d", "text": "are" }
       ],
       "correctOption": "b",
@@ -33,10 +49,18 @@
     {
       "prompt": "Amine is at the nurse's office. Complete: \"I ___ very tired and I ___ a headache.\"",
       "options": [
-        { "id": "a", "text": "have ... have" },
+        {
+          "id": "a",
+          "text": "have ... have",
+          "misconceptionTag": "english.health.etre-et-avoir-confondus"
+        },
         { "id": "b", "text": "have ... am" },
         { "id": "c", "text": "am ... have" },
-        { "id": "d", "text": "am ... am" }
+        {
+          "id": "d",
+          "text": "am ... am",
+          "misconceptionTag": "english.health.etre-et-avoir-confondus"
+        }
       ],
       "correctOption": "c",
       "explanation": "The word tired is an adjective, so it takes the verb to be: I am very tired. A headache is an ailment, that is a noun, so it takes have: I have a headache. Giving both blanks the same verb forgets that it is the word after the blank, an adjective or a noun, that chooses it.",
@@ -45,10 +69,22 @@
     {
       "prompt": "Which sentence about ability is completely correct?",
       "options": [
-        { "id": "a", "text": "My sister can plays the piano." },
-        { "id": "b", "text": "My sister can to play the piano." },
+        {
+          "id": "a",
+          "text": "My sister can plays the piano.",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
+        {
+          "id": "b",
+          "text": "My sister can to play the piano.",
+          "misconceptionTag": "english.modal.to-en-trop"
+        },
         { "id": "c", "text": "My sister can play the piano." },
-        { "id": "d", "text": "My sister cans play the piano." }
+        {
+          "id": "d",
+          "text": "My sister cans play the piano.",
+          "misconceptionTag": "english.modal.s-sur-le-modal"
+        }
       ],
       "correctOption": "c",
       "explanation": "After can the verb stays bare, and can itself never changes, even with he or she: My sister can play the piano. The form with plays puts the -s on the verb, the form with cans puts it on can, and the form with to adds a word that never follows can.",
@@ -67,11 +103,13 @@
         },
         {
           "id": "c",
-          "text": "How much cheese and how much tomatoes do we need?"
+          "text": "How much cheese and how much tomatoes do we need?",
+          "misconceptionTag": "english.quant.many-much-confondus"
         },
         {
           "id": "d",
-          "text": "How many cheese and how many tomatoes do we need?"
+          "text": "How many cheese and how many tomatoes do we need?",
+          "misconceptionTag": "english.quant.many-much-confondus"
         }
       ],
       "correctOption": "a",
@@ -81,7 +119,10 @@
     {
       "prompt": "Read: \"Sami eats crisps every day and he never plays sport. He is tired after ten steps.\" Which sentence about Sami is true?",
       "options": [
-        { "id": "a", "text": "He is fit and he can run for one hour." },
+        {
+          "id": "a",
+          "text": "He is fit and he can run for one hour without any break."
+        },
         { "id": "b", "text": "He is unfit and he can't run for one hour." },
         { "id": "c", "text": "He is fit but he can't run for one hour." },
         { "id": "d", "text": "He is unfit and he can run for one hour." }

@@ -9,10 +9,22 @@
     {
       "prompt": "Where do you go with your class to look at old and beautiful objects?",
       "options": [
-        { "id": "a", "text": "to the cinema" },
+        {
+          "id": "a",
+          "text": "to the cinema",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
         { "id": "b", "text": "to the museum" },
-        { "id": "c", "text": "to the restaurant" },
-        { "id": "d", "text": "to the zoo" }
+        {
+          "id": "c",
+          "text": "to the restaurant",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "to the zoo",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        }
       ],
       "correctOption": "b",
       "explanation": "Old and beautiful objects are kept in a museum. You watch a film at the cinema, you eat at a restaurant, and you look at animals at the zoo.",
@@ -21,21 +33,37 @@
     {
       "prompt": "Complete: \"My brother dislikes ___ . He never goes to the shops with us.\"",
       "options": [
-        { "id": "a", "text": "shop" },
-        { "id": "b", "text": "shops" },
+        {
+          "id": "a",
+          "text": "shop",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
+        { "id": "b", "text": "to shopping" },
         { "id": "c", "text": "shopping" },
-        { "id": "d", "text": "to shop" }
+        {
+          "id": "d",
+          "text": "to shop",
+          "misconceptionTag": "english.verb.ing-oublie"
+        }
       ],
       "correctOption": "c",
-      "explanation": "Dislike belongs to the same family as like, enjoy and hate, so the activity that follows it takes the -ing form: my brother dislikes shopping. The forms \"shop\", \"shops\" and \"to shop\" are the bare verb, the he/she/it form and the infinitive, and none of them can follow dislike.",
+      "explanation": "Dislike belongs to the same family as like, enjoy and hate, so the activity that follows it takes the -ing form: my brother dislikes shopping. The forms \"shop\" and \"to shop\" are the bare verb and the infinitive, and \"to shopping\" mixes the infinitive with the -ing form: none of them can follow dislike.",
       "difficulty": 2
     },
     {
       "prompt": "Complete both blanks: \"I do my homework ___ the afternoon and I watch TV ___ the evening.\"",
       "options": [
         { "id": "a", "text": "in ... in" },
-        { "id": "b", "text": "in ... on" },
-        { "id": "c", "text": "on ... in" },
+        {
+          "id": "b",
+          "text": "in ... on",
+          "misconceptionTag": "english.prep.on-in-du-temps"
+        },
+        {
+          "id": "c",
+          "text": "on ... in",
+          "misconceptionTag": "english.prep.on-in-du-temps"
+        },
         { "id": "d", "text": "on ... on" }
       ],
       "correctOption": "a",
@@ -47,7 +75,11 @@
       "options": [
         { "id": "a", "text": "and ... but" },
         { "id": "b", "text": "because ... but" },
-        { "id": "c", "text": "but ... and" },
+        {
+          "id": "c",
+          "text": "but ... and",
+          "misconceptionTag": "english.link.connecteur-de-mauvais-type"
+        },
         { "id": "d", "text": "but ... because" }
       ],
       "correctOption": "d",
@@ -57,7 +89,11 @@
     {
       "prompt": "Your team needs one more player and you want Sarra in it. Which question invites her?",
       "options": [
-        { "id": "a", "text": "Do you like to join our team?" },
+        {
+          "id": "a",
+          "text": "Do you like to join our team?",
+          "misconceptionTag": "english.func.fonction-mal-identifiee"
+        },
         { "id": "b", "text": "Would you like join our team?" },
         { "id": "c", "text": "Would you like joining our team?" },
         { "id": "d", "text": "Would you like to join our team?" }

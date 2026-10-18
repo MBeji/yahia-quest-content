@@ -10,9 +10,21 @@
       "prompt": "Which free time activity do you do with a rope?",
       "options": [
         { "id": "a", "text": "rope skipping" },
-        { "id": "b", "text": "hide and seek" },
-        { "id": "c", "text": "flying a kite" },
-        { "id": "d", "text": "camping" }
+        {
+          "id": "b",
+          "text": "hide and seek",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "c",
+          "text": "flying a kite",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "camping",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        }
       ],
       "correctOption": "a",
       "explanation": "Rope skipping is the game you play by jumping over a rope. Hide and seek needs no object at all, flying a kite needs a kite and wind, and camping means sleeping outside in a tent.",
@@ -21,10 +33,18 @@
     {
       "prompt": "Complete: \"My cousins enjoy ___ hide and seek in the garden.\"",
       "options": [
-        { "id": "a", "text": "play" },
+        {
+          "id": "a",
+          "text": "play",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
         { "id": "b", "text": "playing" },
         { "id": "c", "text": "plays" },
-        { "id": "d", "text": "to play" }
+        {
+          "id": "d",
+          "text": "to play",
+          "misconceptionTag": "english.verb.ing-oublie"
+        }
       ],
       "correctOption": "b",
       "explanation": "After enjoy, the activity takes the -ing form: my cousins enjoy playing hide and seek. The -s of \"plays\" belongs to he, she and it, while \"play\" and \"to play\" are the two forms that can never follow enjoy.",
@@ -33,8 +53,16 @@
     {
       "prompt": "Complete: \"What about ___ to the river on Saturday?\"",
       "options": [
-        { "id": "a", "text": "go" },
-        { "id": "b", "text": "to go" },
+        {
+          "id": "a",
+          "text": "go",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
+        {
+          "id": "b",
+          "text": "to go",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
         { "id": "c", "text": "going" },
         { "id": "d", "text": "goes" }
       ],
@@ -47,20 +75,32 @@
       "options": [
         { "id": "a", "text": "Yes, I am." },
         { "id": "b", "text": "Yes, I do." },
-        { "id": "c", "text": "Yes, I like." },
+        { "id": "c", "text": "Yes, I like it a lot." },
         { "id": "d", "text": "Yes, I'd love to." }
       ],
       "correctOption": "d",
-      "explanation": "An invitation built with Would you like to is accepted with the fixed answer Yes, I'd love to, or simply with Yes, please. The three other answers echo the wrong verb: the question does not start with Are you, or with Do you, and \"Yes, I like\" leaves the sentence unfinished.",
+      "explanation": "An invitation built with Would you like to is accepted with the fixed answer Yes, I'd love to, or simply with Yes, please. The three other answers echo the wrong verb: the question does not start with Are you or Do you, and \"Yes, I like it a lot\" talks about a taste, not about an invitation.",
       "difficulty": 2
     },
     {
       "prompt": "Complete: \"We are a good team. ___ colours are red and white.\"",
       "options": [
         { "id": "a", "text": "Our" },
-        { "id": "b", "text": "Your" },
-        { "id": "c", "text": "Their" },
-        { "id": "d", "text": "Its" }
+        {
+          "id": "b",
+          "text": "Your",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        },
+        {
+          "id": "c",
+          "text": "Their",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        },
+        {
+          "id": "d",
+          "text": "Its",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        }
       ],
       "correctOption": "a",
       "explanation": "The team is \"we\", and the possessive adjective that goes with we is Our. The word \"Your\" speaks to the person in front of you, \"Their\" names other people, and \"Its\" names one thing or one animal.",
@@ -71,8 +111,14 @@
       "options": [
         { "id": "a", "text": "cinema" },
         { "id": "b", "text": "plays" },
-        { "id": "c", "text": "restaurant" },
-        { "id": "d", "text": "let's" }
+        {
+          "id": "c",
+          "text": "restaurant"
+        },
+        {
+          "id": "d",
+          "text": "let's"
+        }
       ],
       "correctOption": "b",
       "explanation": "Say plays and hold the last sound: the throat shakes, so the sound is the buzzing /z/. In cinema, in restaurant and in let's the air only hisses and the throat stays quiet, so those three keep the sound /s/.",
