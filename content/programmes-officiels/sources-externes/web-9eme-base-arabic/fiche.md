@@ -141,6 +141,51 @@ partout à un choix entre phrases déjà écrites. **Pas des trous** : la reconn
 (05 : 24 questions sur 30), du diminutif, du maqsur et du mamdud, du complément de temps et de
 l'état, déjà travaillés à d2–d4 en quantité supérieure aux sujets.
 
+### 3.4 Vague 2 — sessions 2002–2019 et devoirs D01–D06 (lus le 2026-10-18)
+
+Lu : **26 sujets** de 2002 à 2019 (C13–C39 ; 2004 et 2001 introuvables, 2014 absente de l'archive), **108
+lignes**, tous en vision ; transcriptions versionnées au même dossier, texte support résumé (intégral au PDF
+officiel). Et les **six devoirs** de la vague 1 de devoirs (63 lignes, salle blanche : rien n'en est transcrit
+ici). Le plan qui en sort : `FableEtudes/36-gisement-examens-devoirs/en-cours/arabe/PLAN-v2.md`.
+
+**L'épreuve ancienne.** Générale 2009–2019 et épreuve unique 2002–2008 (16 sujets) : « الإنشاء العربي »
+seul, 2 h, coefficient 2, une page, un sujet de production sans texte, compréhension ni langue, sans barème.
+Quinze sujets sont des **dialogues argumentatifs** à transcrire ; le seizième (2002) fait décrire puis
+argumenter. Technique 2009–2019 (10 sujets) : l'ossature de 2020 (questions 14 + « تحرير فقرة » 6), texte
+narratif (expositif en 2011) ; sur 92 lignes, 66 de compréhension, 10 paragraphes, **14 entièrement `HP`**
+(duel et accord, conjugaison avec les pronoms, pluriels, complément absolu, expressions) et 2 mêlées ; la
+langue au programme se réduit à l'état (03, 2019) et à la défense (04, 2015) ; 2012, 2011, 2010 et 2009 n'ont
+aucune question de langue.
+
+**Les archétypes de production**, par consigne officielle :
+
+| archétype | sessions | déjà posé par la vague 1 ? |
+| --- | --- | --- |
+| dialogue où seul le narrateur argumente (« مُرَكِّزًا عَلَى الحُجَجِ الَّتِي اعْتَمَدْتَهَا ») | 2019, 2017, 2016, 2015, 2012, 2010, 2009, 2003 | oui : la mission de 2020 (même consigne) |
+| dialogue à deux voix : arguments de chacun (« كُلٌّ مِنْكُمَا »), les deux avis, ou ceux de l'autre partie | 2013, 2011, 2007, 2005 | **non** (le cours 09 l'enseigne, aucun sujet récent ne le pose) |
+| modifier une position (« تَعْدِيلِ مَوْقِفِهِ »), parfois sous condition | 2018, 2008, 2006 ; paragraphe 2018 T | **non** en dialogue (2025 nuance dans un texte suivi) |
+| décrire un comportement puis argumenter | 2002 | sans objet (hors du 09) |
+| paragraphe : arguments **et** conseils, forme imposée (discours, lettre, demande) | 2017, 2016, 2012, 2011 T | **non** |
+| paragraphe : persuader de la valeur d'une activité | 2019, 2015, 2013 T | oui (paragraphes techniques 2020–2026) |
+| rapport, présentation d'un projet | 2010, 2009 T | sans objet (non argumentatif) |
+
+**La compréhension technique** reprend les consignes de 2020–2026 (titre, synonymes ou contraires en contexte,
+indices, cause, solutions, avis justifié). Gestes absents de la vague 1 : ordonner les étapes d'un procédé
+(2015), répartir des traits entre deux groupes de personnages (2017), choisir un facteur et le justifier
+(2017), cause principale et indice dans un texte expositif, critique d'une explication unique (2011).
+
+**Les devoirs** (nos mots, aucune phrase ni aucun nombre des documents) : compréhension et production au même
+format que la générale actuelle ; la langue porte surtout sur le 18 (10 lignes), le 03 (5), le 15, le 13 et le
+14 (4 chacun) ; un seul devoir relève du programme révisé. Au regard des 226 lignes d'examen, **15 signatures
+sur 60 sont neuves (25 %)** ; au regard des missions et du patron, **3 (5 %)** : le nom manqus en emploi et le
+participe d'un verbe défectueux (une mission au 12), et une comparaison attachée au texte d'un devoir (écartée).
+Sous 30 % : pas de vague 3 recommandée.
+
+**Écart retenu** : trois archétypes de production (deux voix ; modification d'une position en dialogue ;
+arguments et conseils dans une forme imposée), trois textes de compréhension (2015, 2017, 2011 T), le manqus
+en emploi. **Écarté** : huit sujets généraux et 2002 entiers, sept textes techniques, deux paragraphes non
+argumentatifs, tout `HP` (le duel du dossier 01 a déjà sa mission).
+
 ## 4. Plan — les sujets deviennent des missions
 
 Plan écrit le 2026-10-14 (règles, lots, écarts : `FableEtudes/36-gisement-examens-devoirs/en-cours/arabe/PLAN.md`) :
@@ -151,5 +196,9 @@ questions entièrement `HP` ne sont pas placées.
 
 **Contrôle local de cette fiche** (`content:gisement:controle` contre les 12 transcriptions) :
 0 plage de 8 mots, 0 de 6 mots ; les seules données communes sont des années et le « 256 » de SHA-256 (en-têtes), sans objet.
+
+**Vague 2** (plan du 2026-10-18, `…/arabe/PLAN-v2.md`) : **7 missions** `planifiee` de plus — 3 de production
+convertie (09), 3 de compréhension (10), 1 de devoirs en salle blanche (12) ; le reste des sessions 2002–2019
+et des devoirs est écarté, raisons au plan (§ 5).
 
 ## 5. Mesures — à la lecture
