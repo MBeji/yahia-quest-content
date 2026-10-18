@@ -9,13 +9,17 @@
     {
       "prompt": "Every street of the city is clean, but yours beats them all. Complete: \"My street is ___ street in the city.\"",
       "options": [
-        { "id": "a", "text": "the cleaner" },
+        {
+          "id": "a",
+          "text": "the cleaner",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
         { "id": "b", "text": "the cleanest" },
-        { "id": "c", "text": "cleanest" },
-        { "id": "d", "text": "more clean" }
+        { "id": "c", "text": "cleanest", "misconceptionTag": "english.comp.superlatif-sans-the" },
+        { "id": "d", "text": "the most clean" }
       ],
       "correctOption": "b",
-      "explanation": "One street above the whole city calls for the superlative: the + clean + est = the cleanest. The form \"the cleaner\" compares only two streets, \"cleanest\" forgets the word the, which a superlative always carries, and \"more clean\" is the form of long adjectives, not of a short one like clean.",
+      "explanation": "One street above the whole city calls for the superlative: the + clean + est = the cleanest. The form \"the cleaner\" compares only two streets, \"cleanest\" forgets the word the, which a superlative always carries, and \"the most clean\" is the form of long adjectives, not of a short one like clean.",
       "difficulty": 2
     },
     {
@@ -34,19 +38,27 @@
       "prompt": "Of all the houses in the village, one has the largest size. Complete: \"This house is ___ in the village.\"",
       "options": [
         { "id": "a", "text": "the biggest" },
-        { "id": "b", "text": "the bigest" },
-        { "id": "c", "text": "the bigger" },
-        { "id": "d", "text": "biggest" }
+        {
+          "id": "b",
+          "text": "the bigest",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
+        },
+        { "id": "c", "text": "the most big" },
+        { "id": "d", "text": "biggest", "misconceptionTag": "english.comp.superlatif-sans-the" }
       ],
       "correctOption": "a",
-      "explanation": "The adjective big ends in one short vowel plus one consonant, so the consonant doubles before the ending: the biggest. The spelling \"the bigest\" forgets that doubling, \"the bigger\" compares two houses only, and \"biggest\" drops the word the that every superlative carries.",
+      "explanation": "The adjective big ends in one short vowel plus one consonant, so the consonant doubles before the ending: the biggest. The spelling \"the bigest\" forgets that doubling, \"the most big\" is the form of long adjectives, not of a short one like big, and \"biggest\" drops the word the that every superlative carries.",
       "difficulty": 3
     },
     {
       "prompt": "A woman drives the school bus every morning. Which sentence names her job correctly?",
       "options": [
         { "id": "a", "text": "She is a drive." },
-        { "id": "b", "text": "She is a driveer." },
+        {
+          "id": "b",
+          "text": "She is a driveer.",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
+        },
         { "id": "c", "text": "She is a driver." },
         { "id": "d", "text": "She is a drivor." }
       ],
@@ -59,7 +71,11 @@
       "options": [
         { "id": "a", "text": "She not will forget the water." },
         { "id": "b", "text": "She won't forget the water." },
-        { "id": "c", "text": "She will not forgets the water." },
+        {
+          "id": "c",
+          "text": "She will not forgets the water.",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
         { "id": "d", "text": "She doesn't will forget the water." }
       ],
       "correctOption": "b",
@@ -69,8 +85,16 @@
     {
       "prompt": "Your friend has a new dog. Which sentence is completely correct?",
       "options": [
-        { "id": "a", "text": "Take care of you dog, and don't forget its water." },
-        { "id": "b", "text": "Take care of your dog, and don't forgets its water." },
+        {
+          "id": "a",
+          "text": "Take care of you dog, and don't forget its water.",
+          "misconceptionTag": "english.pron.sujet-au-lieu-du-possessif"
+        },
+        {
+          "id": "b",
+          "text": "Take care of your dog, and don't forgets its water.",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
         { "id": "c", "text": "You take care of your dog, and don't forget it water." },
         { "id": "d", "text": "Take care of your dog, and don't forget its water." }
       ],

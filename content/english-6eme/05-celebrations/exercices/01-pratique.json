@@ -10,18 +10,18 @@
       "prompt": "On the eleventh of January, Tunisian schools celebrate a special day for the youngest. What is its name in English?",
       "options": [
         { "id": "a", "text": "Children's Day" },
-        { "id": "b", "text": "Mother's Day" },
-        { "id": "c", "text": "Teacher's Day" },
-        { "id": "d", "text": "New Year" }
+        { "id": "b", "text": "Mother's Day", "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ" },
+        { "id": "c", "text": "Teacher's Day", "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ" },
+        { "id": "d", "text": "the end of school year party", "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ" }
       ],
       "correctOption": "a",
-      "explanation": "The eleventh of January is Children's Day, the day that speaks about the rights of every child. Mother's Day celebrates mothers, Teacher's Day celebrates teachers, and New Year opens the year at midnight on the first of January.",
+      "explanation": "The eleventh of January is Children's Day, the day that speaks about the rights of every child. Mother's Day celebrates mothers, Teacher's Day celebrates teachers, and the end of school year party closes the school year in June.",
       "difficulty": 1
     },
     {
       "prompt": "Karim takes a balloon and fills it with air. What does he do?",
       "options": [
-        { "id": "a", "text": "He decorates the balloon." },
+        { "id": "a", "text": "He decorates the balloon.", "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ" },
         { "id": "b", "text": "He blows up the balloon." },
         { "id": "c", "text": "He puts on the balloon." },
         { "id": "d", "text": "He waits for the balloon." }
@@ -31,21 +31,21 @@
       "difficulty": 1
     },
     {
-      "prompt": "Complete the sentence: \"Children ___ the right to health.\"",
+      "prompt": "Four children talk about their rights. Which sentence is correct?",
       "options": [
-        { "id": "a", "text": "has" },
-        { "id": "b", "text": "having" },
-        { "id": "c", "text": "have" },
-        { "id": "d", "text": "is" }
+        { "id": "a", "text": "She have the right to life.", "misconceptionTag": "english.verb.auxiliaire-mal-accorde" },
+        { "id": "b", "text": "We has the right to life.", "misconceptionTag": "english.verb.auxiliaire-mal-accorde" },
+        { "id": "c", "text": "I have the right to life." },
+        { "id": "d", "text": "They having the right to life." }
       ],
       "correctOption": "c",
-      "explanation": "Children are several people, that is they, and with I, you, we and they the verb stays have: children have the right to health. The form \"has\" belongs to he, she and it, \"having\" cannot be the verb of the sentence alone, and \"is\" would need a different structure.",
+      "explanation": "With I the verb is have: I have the right to life. She and we need the matching form (she has, we have), and having cannot be the verb of a sentence on its own.",
       "difficulty": 1
     },
     {
       "prompt": "Complete the sentence: \"Yesterday, I ___ for midnight with all my family.\"",
       "options": [
-        { "id": "a", "text": "wait" },
+        { "id": "a", "text": "wait", "misconceptionTag": "english.tense.present-avec-marqueur-passe" },
         { "id": "b", "text": "waits" },
         { "id": "c", "text": "waiting" },
         { "id": "d", "text": "waited" }
@@ -57,7 +57,7 @@
     {
       "prompt": "What is the simple past of the verb love?",
       "options": [
-        { "id": "a", "text": "loveed" },
+        { "id": "a", "text": "loveed", "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique" },
         { "id": "b", "text": "loved" },
         { "id": "c", "text": "lovd" },
         { "id": "d", "text": "loves" }
@@ -70,7 +70,7 @@
       "prompt": "What is the simple past of the verb eat?",
       "options": [
         { "id": "a", "text": "ate" },
-        { "id": "b", "text": "eated" },
+        { "id": "b", "text": "eated", "misconceptionTag": "english.tense.ed-sur-verbe-irregulier" },
         { "id": "c", "text": "eat" },
         { "id": "d", "text": "eats" }
       ],

@@ -5,8 +5,16 @@
       "prompt": "Complete the sentence: \"I enjoy ___ with my mother in the garden.\"",
       "options": [
         { "id": "a", "text": "gardening" },
-        { "id": "b", "text": "to garden" },
-        { "id": "c", "text": "garden" },
+        {
+          "id": "b",
+          "text": "to garden",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
+        {
+          "id": "c",
+          "text": "garden",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
         { "id": "d", "text": "gardens" }
       ],
       "correctOption": "a",
@@ -16,10 +24,22 @@
     {
       "prompt": "Which sentence puts the adverb of frequency in the right place?",
       "options": [
-        { "id": "a", "text": "My brother goes never camping." },
+        {
+          "id": "a",
+          "text": "My brother goes never camping.",
+          "misconceptionTag": "english.adv.frequence-mal-placee"
+        },
         { "id": "b", "text": "My brother never goes camping." },
-        { "id": "c", "text": "Never my brother goes camping." },
-        { "id": "d", "text": "My brother goes camping never." }
+        {
+          "id": "c",
+          "text": "Never my brother goes camping.",
+          "misconceptionTag": "english.adv.frequence-mal-placee"
+        },
+        {
+          "id": "d",
+          "text": "My brother goes camping never.",
+          "misconceptionTag": "english.adv.frequence-mal-placee"
+        }
       ],
       "correctOption": "b",
       "explanation": "An adverb of frequency stands just before the verb: \"My brother never goes camping.\" Putting it after the verb, at the very beginning or at the very end of the sentence is the classic mistake, because those are the places your own language allows.",
@@ -28,10 +48,22 @@
     {
       "prompt": "Which sentence uses the right preposition of time?",
       "options": [
-        { "id": "a", "text": "We play football in Saturday." },
-        { "id": "b", "text": "We play football on the afternoon." },
+        {
+          "id": "a",
+          "text": "We play football in Saturday.",
+          "misconceptionTag": "english.prep.on-in-du-temps"
+        },
+        {
+          "id": "b",
+          "text": "We play football on the afternoon.",
+          "misconceptionTag": "english.prep.on-in-du-temps"
+        },
         { "id": "c", "text": "We play football on Saturday morning." },
-        { "id": "d", "text": "We play football in Saturday morning." }
+        {
+          "id": "d",
+          "text": "We play football in Saturday morning.",
+          "misconceptionTag": "english.prep.on-in-du-temps"
+        }
       ],
       "correctOption": "c",
       "explanation": "A day takes \"on\", and the day commands the whole group: on Saturday morning. Saying \"in Saturday\" or \"in Saturday morning\" gives the day the preposition of a part of the day, and \"on the afternoon\" does the opposite: a part of the day alone takes \"in\".",
@@ -40,25 +72,41 @@
     {
       "prompt": "Your cousin is bored. Which sentence is a correct suggestion?",
       "options": [
-        { "id": "a", "text": "Let's to go to the zoo." },
+        {
+          "id": "a",
+          "text": "Let's to go to the zoo.",
+          "misconceptionTag": "english.modal.to-en-trop"
+        },
         { "id": "b", "text": "Let's going to the zoo." },
-        { "id": "c", "text": "How about go to the zoo?" },
+        {
+          "id": "c",
+          "text": "How about to go to the zoo?",
+          "misconceptionTag": "english.verb.ing-oublie"
+        },
         { "id": "d", "text": "How about going to the zoo?" }
       ],
       "correctOption": "d",
-      "explanation": "After \"How about\" and \"What about\", the verb takes -ing: How about going to the zoo? The two structures get mixed here: \"Let's\" is followed by the bare verb (Let's go), never by \"to go\" or by \"going\", and \"How about go\" forgets the -ing.",
+      "explanation": "After \"How about\" and \"What about\", the verb takes -ing: How about going to the zoo? The two structures get mixed here: \"Let's\" is followed by the bare verb (Let's go), never by \"to go\" or by \"going\", and \"How about to go\" puts the infinitive after a word that asks for -ing.",
       "difficulty": 2
     },
     {
       "prompt": "Complete: \"Nadia is with her brother. They are flying ___ kite together.\"",
       "options": [
-        { "id": "a", "text": "her" },
-        { "id": "b", "text": "his" },
+        {
+          "id": "a",
+          "text": "her",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        },
+        {
+          "id": "b",
+          "text": "his",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        },
         { "id": "c", "text": "their" },
-        { "id": "d", "text": "its" }
+        { "id": "d", "text": "theirs" }
       ],
       "correctOption": "c",
-      "explanation": "The owner chooses the word, and the owner here is Nadia and her brother together, that is \"they\", so the possessive adjective is their. The form \"her\" names Nadia alone, \"his\" names her brother alone, and \"its\" is for a thing or an animal.",
+      "explanation": "The owner chooses the word, and the owner here is Nadia and her brother together, that is \"they\", so the possessive adjective is their. The form \"her\" names Nadia alone, \"his\" names her brother alone, and \"theirs\" is another word, which stands alone and never goes before a noun.",
       "difficulty": 2
     }
   ]

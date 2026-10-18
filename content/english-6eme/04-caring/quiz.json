@@ -4,10 +4,14 @@
     {
       "prompt": "Amine and I share one desk. Complete: \"We tidy ___ desk at the end of every lesson.\"",
       "options": [
-        { "id": "a", "text": "we" },
+        { "id": "a", "text": "we", "misconceptionTag": "english.pron.sujet-au-lieu-du-possessif" },
         { "id": "b", "text": "our" },
         { "id": "c", "text": "us" },
-        { "id": "d", "text": "their" }
+        {
+          "id": "d",
+          "text": "their",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        }
       ],
       "correctOption": "b",
       "explanation": "The owners are Amine and the person speaking, that is we, and the possessive adjective of we is our: we tidy our desk. The forms \"we\" and \"us\" are the people who do or receive the action and never stand in front of a noun, and \"their\" would give the desk to other people, when the text says the two of them share it.",
@@ -17,9 +21,17 @@
       "prompt": "Complete the sentence: \"Tomorrow we ___ the classroom.\"",
       "options": [
         { "id": "a", "text": "will tidy" },
-        { "id": "b", "text": "will tidies" },
-        { "id": "c", "text": "will tidying" },
-        { "id": "d", "text": "will to tidy" }
+        {
+          "id": "b",
+          "text": "will tidies",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
+        {
+          "id": "c",
+          "text": "will tidying",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
+        { "id": "d", "text": "will to tidy", "misconceptionTag": "english.modal.to-en-trop" }
       ],
       "correctOption": "a",
       "explanation": "The future is will plus the bare verb, so the promise is \"we will tidy\". After will the verb never takes the -s of the present (\"will tidies\"), never the -ing form (\"will tidying\") and never the word to (\"will to tidy\").",
@@ -28,10 +40,22 @@
     {
       "prompt": "Amine is 10, Sarra is 11 and Karim is 12. Which sentence about Amine is correct?",
       "options": [
-        { "id": "a", "text": "Amine is younger of the three." },
-        { "id": "b", "text": "Amine is the younger of the three." },
+        {
+          "id": "a",
+          "text": "Amine is younger of the three.",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Amine is the younger of the three.",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
         { "id": "c", "text": "Amine is the youngest of the three." },
-        { "id": "d", "text": "Amine is youngest than the others." }
+        {
+          "id": "d",
+          "text": "Amine is youngest than the other two.",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        }
       ],
       "correctOption": "c",
       "explanation": "Amine is 10, so he is under both Sarra at 11 and Karim at 12: he beats the whole group, and that is the superlative the + young + est. The forms \"younger\" and \"the younger\" compare only two people, and \"youngest than\" glues the superlative to the word than, which belongs to the comparative alone.",
@@ -40,7 +64,7 @@
     {
       "prompt": "Which of these job names is built from a verb plus the ending -er?",
       "options": [
-        { "id": "a", "text": "a carpenter" },
+        { "id": "a", "text": "a carpenter", "misconceptionTag": "english.word.nom-d-agent-force" },
         { "id": "b", "text": "a doctor" },
         { "id": "c", "text": "a vet" },
         { "id": "d", "text": "a builder" }
@@ -52,10 +76,22 @@
     {
       "prompt": "Your little brother wants to hit the cat. Which sentence forbids it?",
       "options": [
-        { "id": "a", "text": "Not hit the cat." },
+        {
+          "id": "a",
+          "text": "Not hit the cat.",
+          "misconceptionTag": "english.verb.imperatif-mal-forme"
+        },
         { "id": "b", "text": "Don't hit the cat." },
-        { "id": "c", "text": "You hit the cat." },
-        { "id": "d", "text": "Don't hitting the cat." }
+        {
+          "id": "c",
+          "text": "You hit the cat.",
+          "misconceptionTag": "english.verb.imperatif-mal-forme"
+        },
+        {
+          "id": "d",
+          "text": "Don't hitting the cat.",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        }
       ],
       "correctOption": "b",
       "explanation": "To forbid something you put Don't in front of the bare verb: Don't hit the cat. Starting with \"Not\" copies the negative word of another language, \"You hit the cat\" is a statement about what he does and not an order at all, and after Don't the verb stays bare, so \"hitting\" cannot follow it.",

@@ -9,9 +9,21 @@
     {
       "prompt": "What do you call the person who lives in the house next to yours?",
       "options": [
-        { "id": "a", "text": "a builder" },
-        { "id": "b", "text": "a carpenter" },
-        { "id": "c", "text": "a gardener" },
+        {
+          "id": "a",
+          "text": "a builder",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "b",
+          "text": "a carpenter",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "c",
+          "text": "a gardener",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
         { "id": "d", "text": "a neighbour" }
       ],
       "correctOption": "d",
@@ -21,34 +33,58 @@
     {
       "prompt": "Complete the sentence: \"My grandmother works with her flowers all day. She is a ___ .\"",
       "options": [
-        { "id": "a", "text": "farmer" },
+        {
+          "id": "a",
+          "text": "carpenter",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
         { "id": "b", "text": "gardener" },
-        { "id": "c", "text": "cleaner" },
+        {
+          "id": "c",
+          "text": "cleaner",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
         { "id": "d", "text": "player" }
       ],
       "correctOption": "b",
-      "explanation": "The verb garden gives the person who does it: garden + er = a gardener, and flowers are exactly what a gardener works with. A farmer grows crops in the fields, a cleaner cleans rooms and offices, and a player plays a game.",
+      "explanation": "The verb garden gives the person who does it: garden + er = a gardener, and flowers are exactly what a gardener works with. A carpenter works with wood, a cleaner cleans rooms and offices, and a player plays a game.",
       "difficulty": 1
     },
     {
       "prompt": "Complete the sentence: \"The pupils tidy ___ desks before they go home.\"",
       "options": [
-        { "id": "a", "text": "his" },
-        { "id": "b", "text": "her" },
+        {
+          "id": "a",
+          "text": "his",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        },
+        { "id": "b", "text": "they're" },
         { "id": "c", "text": "their" },
-        { "id": "d", "text": "its" }
+        {
+          "id": "d",
+          "text": "its",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        }
       ],
       "correctOption": "c",
-      "explanation": "The owners are the pupils, several people, that is they, so the possessive adjective is their. The word \"his\" names one boy, \"her\" names one girl, and \"its\" is for a thing or an animal.",
+      "explanation": "The owners are the pupils, several people, that is they, so the possessive adjective is their. The word \"his\" names one boy, \"its\" is for a thing or an animal, and \"they're\" is only the short form of they are, not a word that stands in front of a noun.",
       "difficulty": 2
     },
     {
       "prompt": "Sarra smiles from morning to evening, more than anybody else in her class. Complete: \"Sarra is ___ girl in the class.\"",
       "options": [
         { "id": "a", "text": "the happiest" },
-        { "id": "b", "text": "the happier" },
-        { "id": "c", "text": "the happyest" },
-        { "id": "d", "text": "happiest" }
+        {
+          "id": "b",
+          "text": "the happier",
+          "misconceptionTag": "english.comp.comparatif-et-superlatif-confondus"
+        },
+        {
+          "id": "c",
+          "text": "the happyest",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
+        },
+        { "id": "d", "text": "happiest", "misconceptionTag": "english.comp.superlatif-sans-the" }
       ],
       "correctOption": "a",
       "explanation": "The adjective happy ends in -y, so the y becomes i before the ending: the happiest. The form \"the happier\" compares two girls only, \"the happyest\" keeps the y that the rule changes, and \"happiest\" forgets the word the.",
@@ -57,9 +93,21 @@
     {
       "prompt": "A sign at the zoo tells the visitors not to give food to the animals. Which sentence is on the sign?",
       "options": [
-        { "id": "a", "text": "Don't giving food to the animals." },
-        { "id": "b", "text": "Not give food to the animals." },
-        { "id": "c", "text": "You don't give food to the animals." },
+        {
+          "id": "a",
+          "text": "Don't giving food to the animals.",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
+        {
+          "id": "b",
+          "text": "Not give food to the animals.",
+          "misconceptionTag": "english.verb.imperatif-mal-forme"
+        },
+        {
+          "id": "c",
+          "text": "You don't give food to the animals.",
+          "misconceptionTag": "english.verb.imperatif-mal-forme"
+        },
         { "id": "d", "text": "Don't give food to the animals." }
       ],
       "correctOption": "d",

@@ -4,10 +4,10 @@
     {
       "prompt": "Your mother needs meat for lunch. Which shop do you go to?",
       "options": [
-        { "id": "a", "text": "the bakery" },
+        { "id": "a", "text": "the bakery", "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ" },
         { "id": "b", "text": "the butcher's" },
-        { "id": "c", "text": "the jewellery shop" },
-        { "id": "d", "text": "the toy shop" }
+        { "id": "c", "text": "the jewellery shop", "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ" },
+        { "id": "d", "text": "the toy shop", "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ" }
       ],
       "correctOption": "b",
       "explanation": "Meat is cut and sold at the butcher's, because every shop is named after the goods it sells. The bakery sells bread and croissants, the jewellery shop sells rings and necklaces in gold or silver, and the toy shop sells toys.",
@@ -17,21 +17,21 @@
       "prompt": "You are at the market and you want a kilo of meat. Complete: \"I ___ like a kilo of meat, please.\"",
       "options": [
         { "id": "a", "text": "am" },
-        { "id": "b", "text": "do" },
+        { "id": "b", "text": "really do", "misconceptionTag": "english.func.like-au-lieu-de-would-like" },
         { "id": "c", "text": "will" },
         { "id": "d", "text": "would" }
       ],
       "correctOption": "d",
-      "explanation": "The polite request of every shop is I would like: I would like a kilo of meat, please. The forms with am, do and will copy other English sentences, but none of them makes a request, and would never changes with the subject.",
+      "explanation": "The polite request of every shop is I would like: I would like a kilo of meat, please. The form with really do only says that you enjoy meat, and the forms with am and will copy other English sentences, but none of them makes a request, and would never changes with the subject.",
       "difficulty": 1
     },
     {
       "prompt": "You want to know the price of one silver ring. What do you say to the shopkeeper?",
       "options": [
-        { "id": "a", "text": "How many is it?" },
+        { "id": "a", "text": "How many is it?", "misconceptionTag": "english.quant.many-much-confondus" },
         { "id": "b", "text": "How much are they?" },
         { "id": "c", "text": "How much is it?" },
-        { "id": "d", "text": "How much it is?" }
+        { "id": "d", "text": "How much it is?", "misconceptionTag": "english.question.auxiliaire-ou-ordre-oublie" }
       ],
       "correctOption": "c",
       "explanation": "One thing, one price, so the question is How much is it? and the answer begins with It's. The form How much it is? keeps the word order of the answer instead of the question, How much are they? asks about more than one thing, and How many counts objects instead of asking a price.",
@@ -42,7 +42,7 @@
       "options": [
         { "id": "a", "text": "seven hundred and twelve" },
         { "id": "b", "text": "seven hundred and two" },
-        { "id": "c", "text": "seven hundreds and twelve" },
+        { "id": "c", "text": "seven hundreds and twelve", "misconceptionTag": "english.num.centaines-mal-ecrites" },
         { "id": "d", "text": "seven hundred and twenty" }
       ],
       "correctOption": "a",
@@ -53,12 +53,12 @@
       "prompt": "Complete: \"Last Saturday I ___ a present for my little cousin.\"",
       "options": [
         { "id": "a", "text": "bought" },
-        { "id": "b", "text": "buy" },
-        { "id": "c", "text": "buyed" },
-        { "id": "d", "text": "buys" }
+        { "id": "b", "text": "buy", "misconceptionTag": "english.tense.present-avec-marqueur-passe" },
+        { "id": "c", "text": "buyed", "misconceptionTag": "english.tense.ed-sur-verbe-irregulier" },
+        { "id": "d", "text": "buying" }
       ],
       "correctOption": "a",
-      "explanation": "Last Saturday is before now, so the verb goes into the simple past, and buy is irregular: it becomes bought. The form buyed adds the -ed of the regular verbs to a verb that refuses it, while buy and buys are both present forms.",
+      "explanation": "Last Saturday is before now, so the verb goes into the simple past, and buy is irregular: it becomes bought. The form buyed adds the -ed of the regular verbs to a verb that refuses it, while buy is a present form and buying cannot be the only verb of the sentence.",
       "difficulty": 2
     }
   ]

@@ -7,24 +7,44 @@
   "displayOrder": 3,
   "questions": [
     {
-      "prompt": "Which month opens the season of spring?",
+      "prompt": "In which month does spring begin?",
       "options": [
-        { "id": "a", "text": "February" },
+        { "id": "a", "text": "June", "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ" },
         { "id": "b", "text": "March" },
-        { "id": "c", "text": "April" },
-        { "id": "d", "text": "May" }
+        {
+          "id": "c",
+          "text": "September",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "December",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        }
       ],
       "correctOption": "b",
-      "explanation": "Spring is made of March, April and May, and the first of the three is March. April and May follow it, and February is still the last month of winter.",
+      "explanation": "Spring begins in March, the first of the three spring months. June, September and December are the first months of the three other seasons, so they are easy to mix up with the month that opens spring.",
       "difficulty": 1
     },
     {
       "prompt": "It is snowy and very cold outside. What do you put on your hands before you go out?",
       "options": [
         { "id": "a", "text": "gloves" },
-        { "id": "b", "text": "socks" },
-        { "id": "c", "text": "boots" },
-        { "id": "d", "text": "a sweater" }
+        {
+          "id": "b",
+          "text": "socks",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "c",
+          "text": "boots",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "a sweater",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        }
       ],
       "correctOption": "a",
       "explanation": "Gloves are the winter clothes made for the hands. Socks and boots keep the feet warm, and a sweater covers the body, so none of the three protects your hands from the cold.",
@@ -33,8 +53,12 @@
     {
       "prompt": "There is fog on the road and you cannot see the houses. Complete: \"It is a ___ morning.\"",
       "options": [
-        { "id": "a", "text": "fog" },
-        { "id": "b", "text": "fogy" },
+        { "id": "a", "text": "fog", "misconceptionTag": "english.word.nom-au-lieu-de-l-adjectif" },
+        {
+          "id": "b",
+          "text": "fogy",
+          "misconceptionTag": "english.spell.suffixe-sans-regle-orthographique"
+        },
         { "id": "c", "text": "foggy" },
         { "id": "d", "text": "fogging" }
       ],
@@ -57,10 +81,18 @@
     {
       "prompt": "Which sentence compares two seasons correctly?",
       "options": [
-        { "id": "a", "text": "Spring is more warm than winter." },
+        {
+          "id": "a",
+          "text": "Spring is more warm than winter.",
+          "misconceptionTag": "english.comp.forme-selon-longueur"
+        },
         { "id": "b", "text": "Spring is warm than winter." },
         { "id": "c", "text": "Spring is warmer than winter." },
-        { "id": "d", "text": "Spring is warmer that winter." }
+        {
+          "id": "d",
+          "text": "Spring is warmer that winter.",
+          "misconceptionTag": "english.comp.that-au-lieu-de-than"
+        }
       ],
       "correctOption": "c",
       "explanation": "Warm is a short adjective, so it takes -er and the second season comes after than: Spring is warmer than winter. English keeps more for long adjectives, the bare adjective cannot stand in front of than, and the word after the comparison is never that.",

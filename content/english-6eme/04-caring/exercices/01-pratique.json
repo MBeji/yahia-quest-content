@@ -10,9 +10,21 @@
       "prompt": "Dinner is over and the plates are dirty. Which action do you do in the kitchen?",
       "options": [
         { "id": "a", "text": "You wash the dishes." },
-        { "id": "b", "text": "You tidy your bed." },
-        { "id": "c", "text": "You clean up the street." },
-        { "id": "d", "text": "You water the flowers." }
+        {
+          "id": "b",
+          "text": "You tidy your bed.",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "c",
+          "text": "You clean up the street.",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "You water the flowers.",
+          "misconceptionTag": "english.vocab.mot-voisin-du-meme-champ"
+        }
       ],
       "correctOption": "a",
       "explanation": "Dirty plates go to the sink, and that action is called washing the dishes. Tidying your bed is done in the bedroom, cleaning up the street happens outside with the neighbours, and watering the flowers belongs to the garden.",
@@ -21,7 +33,7 @@
     {
       "prompt": "Complete the sentence: \"My room is ___ . Every book is in its place.\"",
       "options": [
-        { "id": "a", "text": "dirty" },
+        { "id": "a", "text": "dirty", "misconceptionTag": "english.vocab.mot-de-sens-inverse" },
         { "id": "b", "text": "tidy" },
         { "id": "c", "text": "alone" },
         { "id": "d", "text": "poor" }
@@ -33,10 +45,14 @@
     {
       "prompt": "Complete the sentence: \"I am the oldest child at home, so I take care of ___ little sister every evening.\"",
       "options": [
-        { "id": "a", "text": "I" },
+        { "id": "a", "text": "I", "misconceptionTag": "english.pron.sujet-au-lieu-du-possessif" },
         { "id": "b", "text": "me" },
         { "id": "c", "text": "my" },
-        { "id": "d", "text": "your" }
+        {
+          "id": "d",
+          "text": "your",
+          "misconceptionTag": "english.pron.possessif-du-mauvais-possesseur"
+        }
       ],
       "correctOption": "c",
       "explanation": "The owner is the person speaking, and the possessive adjective of I is my: my little sister. The forms \"I\" and \"me\" are the person who does or receives the action and never stand in front of a noun, and \"your\" would give the sister to the person you are talking to, when the text says she is in your own house.",
@@ -58,9 +74,17 @@
       "prompt": "Complete the sentence: \"Next Monday I ___ the blackboard before the lesson.\"",
       "options": [
         { "id": "a", "text": "will clean" },
-        { "id": "b", "text": "will cleaning" },
-        { "id": "c", "text": "will cleans" },
-        { "id": "d", "text": "will to clean" }
+        {
+          "id": "b",
+          "text": "will cleaning",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
+        {
+          "id": "c",
+          "text": "will cleans",
+          "misconceptionTag": "english.verb.base-verbale-deformee"
+        },
+        { "id": "d", "text": "will to clean", "misconceptionTag": "english.modal.to-en-trop" }
       ],
       "correctOption": "a",
       "explanation": "Next Monday is in the future, and the future is will plus the bare verb: I will clean. After will the verb keeps no ending and takes no little word, so \"will cleaning\", \"will cleans\" and \"will to clean\" are all impossible.",
@@ -70,9 +94,21 @@
       "prompt": "The vet wants you to shut the door of the room. Which sentence is her order?",
       "options": [
         { "id": "a", "text": "Close the door." },
-        { "id": "b", "text": "Closing the door." },
-        { "id": "c", "text": "To close the door." },
-        { "id": "d", "text": "You close the door." }
+        {
+          "id": "b",
+          "text": "Closing the door.",
+          "misconceptionTag": "english.verb.imperatif-mal-forme"
+        },
+        {
+          "id": "c",
+          "text": "To close the door.",
+          "misconceptionTag": "english.verb.imperatif-mal-forme"
+        },
+        {
+          "id": "d",
+          "text": "You close the door.",
+          "misconceptionTag": "english.verb.imperatif-mal-forme"
+        }
       ],
       "correctOption": "a",
       "explanation": "An order starts straight with the bare verb and names nobody: Close the door. The forms \"Closing the door\" and \"To close the door\" are not whole sentences, and \"You close the door\" puts a subject in front, which turns the order into a statement about what you do.",
