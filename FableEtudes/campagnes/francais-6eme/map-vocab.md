@@ -124,6 +124,6 @@ Un élargissement change aussi le libellé que voient les élèves de 9ᵉ : cha
 
 ## Ajouts du pilote après l'audit B3 (2026-10-19)
 
-- Réutilisés en plus, ids existants au libellé exact : M5 `fr.logique.rapport-logique-confondu` (pourtant / donc), `fr.lecture.reponse-non-redigee` ; M6 `fr.portrait.signalement` (liste de détails au lieu d'un portrait), `fr.description.inventaire` (libellé élargi : « de loin à près, de l'extérieur à l'intérieur »), `fr.lettre.parties-mal-placees` (étendu au M6), `fr.lecture.reponse-non-redigee`.
+- Réutilisés en plus, ids existants au libellé exact : M5 `fr.logique.rapport-logique-confondu` (pourtant / donc), `fr.lecture.reponse-non-redigee` ; M5 et M6 `fr.portrait.signalement` (liste de détails au lieu d'un portrait ; canevas du M5, guide p.141), `fr.description.inventaire` (libellé élargi : « de loin à près, de l'extérieur à l'intérieur »), `fr.lettre.parties-mal-placees` (étendu au M6), `fr.lecture.reponse-non-redigee`.
 - Libellé de `fr.conj.participe-passe-mal-termine` reformulé : l'erreur vient d'une analogie avec un autre verbe (*prit* sur *fait, dit*), pas du présent (*il prend*).
 - Rendu (m-1) : les tableaux de conjugaison à 5 colonnes se cassent à 360 px (`overflow-wrap: anywhere` du moteur) ; décision : tableaux à 3 colonnes au plus dans les cours de la 6ᵉ (suivi moteur noté).
