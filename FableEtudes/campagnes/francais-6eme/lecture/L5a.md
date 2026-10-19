@@ -2,7 +2,7 @@
 
 > **Source** : `521616P00.pdf` — « Approche par compétences — Fichier-classe — FRANÇAIS — 6ème année Enseignement de Base » (République tunisienne, Ministère de l'Éducation, CNP), 438 p. Références `(521616 p.N)` = page **imprimée** (celle du pied de page).
 > **Offset** : pagination imprimée = page PDF (offset 0, vérifié p.3, 7, 21, 56, 137, 180, 210, 220). La couverture est la p.1 PDF (non numérotée).
-> **Pages lues (lot L5a)** : p.1–220 (toutes). Base = `pdftotext -layout` page par page ; vision (PNG) sur p.7, 13, 21 pour valider le gabarit, plus les pages signalées « vision » dans le corps. La couche texte est saine ; les **soulignements, encadrés et mots barrés** ne passent pas dans le texte brut (voir « À signaler »).
+> **Pages lues (lot L5a)** : p.1–220 (toutes). Base = `pdftotext -layout` page par page ; vision (PNG 48–80 dpi) sur ≈ 45 pages à dessins, tableaux ou texte désordonné (p.7, 13, 21, 35–36, 39, 44, 49, 56–58, 60–61, 64, 66, 69, 71–75, 77, 81–82, 89, 93, 99–100, 120, 126, 130, 135, 139–140, 142, 149, 153, 157–158, 163, 166, 171, 177–178, 181, 184, 188–189, 191, 193–195, 211, 216, 219, 220) ; les principales sont repérées « (vision) » dans le corps. La couche texte est saine ; les **soulignements, encadrés et mots barrés** ne passent pas dans le texte brut (voir « À signaler »).
 > **Pages vides / intercalaires** : p.1 (couverture) ; p.4 (« Questionnaire — Fichier-Classe 6ème année » : formulaire de suggestions, rien d'autre) ; p.5 (intercalaire « Grammaire — Fiches de base ») ; p.54 (intercalaire « Grammaire » — fiches d'intégration) ; p.84 (intercalaire « Grammaire » — fiches de remédiation) ; p.136 (intercalaire « Conjugaison ») ; p.179 (intercalaire « Conjugaison ») ; p.209 (intercalaire « Conjugaison »). `[?]` Les intercalaires p.54/84/136/179/209 portent seulement le nom de l'activité ; le sous-titre (« Fiches d'intégration » / « de remédiation ») est lu sur la page-répertoire qui suit.
 > **Frontière avec L5b** : ce lot s'arrête **au bas de p.220**. La fiche **R 3-1 (conjugaison, p.220)** est transcrite ici ; **R 3-2 à R 3-6 (p.221–225)** et tout le reste (R4…, expression écrite, orthographe…) reviennent à L5b. Les tableaux de synthèse ci-dessous portent donc sur p.1–220 seulement.
 > **Non lu** : rien dans la plage. Les illustrations (dessins/photos servant de support) sont décrites en une phrase, jamais transcrites.
@@ -980,4 +980,516 @@ OS : « Conjuguer [sic « Conjuger »] les verbes "aller" et "faire" au passé c
 ### B 7-3 (p.165) — Conjugaison, fiche de base
 - **Ex 6** [B] — « Complète en faisant attention au temps à utiliser. » — 5 couples de phrases (modèle + phrase à compléter dans un autre temps). ex : « – Tout à l'heure, nous ferons de la marche. / – Hier, nous… » ; « – J'ai fait régulièrement la sieste, cet été. / – … l'été prochain aussi. »
 - **Ex 7** [P] — « Remplace les verbes soulignés par le verbe "faire" » — 9 phrases. ex : « J'ai préparé une fiche sur la "bonne alimentation" » ; « Avant de partir, il a bouclé ses valises. » (aussi : fabriqueront, construit, réaliseras, fourni, enverra, jouerai, organisé).
+
+### B 7-4 (p.166) — Conjugaison, fiche de base (vision)
+- **Ex 8** [P] — « Prends un mot dans chaque colonne, choisis un sujet et construis une phrase pour accompagner chaque dessin. » — tableau à colonnes : « aller » ; « à la / au / chez » ; (supermarché, cirque, conservatoire, ami(e), le photographe, ferme) ; « et faire » ; (de la musique, des courses, des photos d'identité, la cueillette des olives, le clown, des devoirs avec elle (ou avec lui)) ; 6 dessins (3 « Phrases au passé composé », 3 « Phrases au passé futur [sic] » : un enfant à table ; un supermarché ; des musiciens ; un cirque ; un verger ; un photographe).
+
+## Objectif 8 — verbes « lire », « dire », « écrire »
+
+### B 8-1 (p.167) — Conjugaison, fiche de base
+OS : « Conjuguer [sic « Conjuger »] les verbes "lire", "dire" et "écrire" au passé composé et au futur. »
+- **Ex 1** [B] — « Complète le tableau d'après les indications données. » — tableau Temps/Personnes × lire / écrire / dire : passé composé (Tu, Vous), futur (Il/Elle, Ils/Elles), impératif (2° p. du singulier, 1° personne du pluriel).
+- **Ex 2** [B] — « Complète les phrases suivantes, par les verbes de la marge au temps indiqué. » — verbes : lire, relire, écrire, écrire, réécrire, dire, redire ; 6 phrases. ex : « Marcel et toi … le roman de Victor Hugo. "Les misérables". (Futur) » ; « – Ne … pas les mêmes choses, vous nous ennuyer [sic]. (Impératif) »
+
+### B 8-2 (p.168) — Conjugaison, fiche de base
+- **Ex 3a** [B] — « Transforme les phrases suivantes a - du singulier au pluriel. » — 7 phrases. ex : « J'ai relu mon autodictée avant d'aller à l'école. » ; « Claudine n'a pas dit qu'elle passera ses vacances en Italie. »
+- **Ex 3b** [B] — « b - du pluriel au singulier. » — 3 phrases : « Quand écrirez-vous vos souvenirs d'enfance ? » ; « Nous vous avons dit d'attendre votre tour. » ; « Avez-vous lu le journal ce matin ? »
+
+### B 8-3 (p.169) — Conjugaison, fiche de base
+- **Ex 4** [B] — « Écris des phrases à partir des indications suivantes : » — 5 consignes : « 1) Mon frère aîné – passé composé – ne plus lire des histoires d'enfants. » ; « 2) Vous – futur – décrire ce beau paysage. » ; « 3) 2° pers. du singulier – impératif – écrire la "Une" de notre journal. » ; « 4) Nous – passé composé – dire "Bravo" à la danseuse. » ; « 5) Tu – futur – ne pas dire de grossièretés. »
+- **Ex 5** [B] — « Réponds aux questions par des phrases complètes à la forme affirmative ou négative. » — 3 questions. ex : « – Liras-tu couramment l'anglais à la fin de l'année ? » ; « – Avez-vous dit la vérité à vos parents ? »
+- **Ex 6** [B] — « Complète le paragraphe par les verbes lire - dire ou écrire au temps qui convient. » — texte de 4 phrases, 4 blancs : « Avant-hier, la maîtresse nous… un passage du roman "Robinson Crusoë". Elle nous a aussi parlé de Charlot et elle … qu'il s'appelait Charlie Chaplin. Les élèves … qu'ils aimeraient aller voir, un film de Charlot. La maîtresse a promis d'… une lettre au responsable du club d'enfants pour lui demander de projeter le film "Le dictateur". »
+
+## Objectif 9 — verbes « vouloir » et « pouvoir » au présent
+
+### B 9-1 (p.170) — Conjugaison, fiche de base
+OS : « Conjuguer les verbes "vouloir" et "pouvoir" au présent. »
+- **Ex 1** [B] — « Complète les verbes vouloir et pouvoir par les terminaisons suivantes : » (note imprimée parasite en tête : « L'entraîneur réunit les jeunes joueurs et leur dit. » [sic, reste de B 3-1]) — (a) …x ou …t : 8 formes (« Je peu… chanter. » ; « Il veu… marcher à pied. ») ; (b) …lons ou …lez et …vons ou …vez : 6 formes (« Vous ne vou… pas jouer. » ; « Nous pou… courir. ») ; (c) …t ou …lent ou …vent : 8 formes (« Ils veu… aider » ; « Peu…-il peindre ? »).
+- **Ex 2** [B] — « Complète les phrases par le verbe vouloir au présent. » — 6 phrases. ex : « "Est-ce que tu … venir avec moi ? Je … bien t'accompagner mais je ne … pas rentrer tard." » ; « – Nous … enrichir les portofolios [sic]. »
+
+### B 9-2 (p.171) — Conjugaison, fiche de base
+- **Ex 3** [B] — « Complète les phrases par le verbe pouvoir au présent. » — 7 phrases. ex : « – Est-ce qu'on … visiter ce musée le lundi ? » ; « – … -tu m'apporter de la documentation sur le mode de vie des Chinois ? » [sic : la 2ᵉ phrase répète la 1ʳᵉ « Cet élève ne … pas sortir. Je prépare une enquête… »].
+- **Ex 4** [B] — « Observe le tableau et écris au présent les phrases qui correspondent aux indications. » — tableau croisé Je / Tu / Il-Elle / Nous / Vous / Ils-Elles × (Vouloir voyager ; Ne pas vouloir sortir ; Pouvoir répondre à cette question ; Ne pas pouvoir monter à cheval), 3 croix par ligne ; 12 phrases à écrire (6 lignes × 2 colonnes).
+
+### B 9-3 (p.172) — Conjugaison, fiche de base
+- **Ex 5** [B] — « Complète par le verbe vouloir ou pouvoir au présent. » — 6 phrases. ex : « • Le petit garçon pleure, il ne … pas aller au jardin d'enfants. » ; « • Nous … élever des animaux, mais nous ne … pas car notre appartement est petit et c'est interdit. »
+- **Ex 6** [B] — « Conjugue les verbes, à la personne indiquée et écris les phrases au présent. » — 5 consignes. ex : « • Vouloir se rendre en Espagne. (2° personne du pluriel) » ; « • Ne plus vouloir manger de bonbons. (2° personne du singulier) »
+- **Ex 7** [B] — « Réponds aux questions suivantes par des phrases complètes à la forme affirmative et négative. » — « – Veux-tu participer au concours de chant ? Oui, … / Non, … » (suite p.173).
+
+### B 9-4 (p.173) — Conjugaison, fiche de base
+- **Ex 7 (suite)** — « – Pouvez-vous utiliser un dictionnaire ? » ; « – Peux-tu soulever cette échelle ? » ; « – Voulez-vous aller en pique-nique ? » (chacune Oui, … / Non, …).
+- **Ex 8** [B] — « Regarde les images et imagine ce que disent ces personnes. Utilise dans chaque phrase les verbes vouloir ou pouvoir » — 3 scènes : « Monsieur Langlois arrête un taxi et monte. Que dit-il au chauffeur ? » ; « Deux supporters vont acheter des billets d'entrée au stade. Que disent-ils au guichetier ? » ; « Dans un magasin de prêt-à-porter, une jeune femme a choisi un vêtement. Que peut lui dire la vendeuse ? – Mademoiselle, … »
+
+## Objectif 10 — verbes pronominaux au présent, au futur et à l'impératif
+
+### B 10-1 (p.174) — Conjugaison, fiche de base
+OS : « Conjuguer des verbes pronominaux au présent, au futur et à l'impératif ».
+- **Ex 1** [B] — « Conjugue les verbes selon les indications données : » — 3 tableaux de 6 personnes : se déguiser au présent ; s'inquiéter au futur ; se peigner à l'impératif.
+- **Ex 2a** [B] — « Relie ce qui va ensemble. » — 5 sujets (Je ; Marc et moi, nous ; Ton cousin et toi, vous ; Le photographe ; Les touristes) × 5 fins (nous installerons dans le salon. ; vous mettrez à rire, si vous voyez mon déguisement. ; visitent les souks. ; ne me prive jamais de dessert. ; prend la tour Eiffel en photo.) [la reconstitution porte sur des verbes pronominaux et non pronominaux].
+- **Ex 2b** [B] — « Transforme au pluriel les deux phrases au singulier. » — 2 phrases obtenues en (a).
+- **Ex 3** [B] — « Écris les pronoms manquants pour compléter la conjugaison du verbe « se promener » au présent et à l'impératif. » — 6 personnes du présent (« Je … promène … Ils/Elles … promènent ») + 3 impératifs (« Promène- … ; Promenons- … ; Promenez- … »).
+
+### B 10-2 (p.175) — Conjugaison, fiche de base
+- **Ex 4** [B] — « Conjugue les expressions suivantes à l'impératif. » — se mettre à table ; se protéger du froid ; se débrouiller seul (3 personnes chacune).
+- **Ex 5** [B] — « Complète par les verbes de la marge. » — texte « Un montagnard en 2050 » : se perdre, s'orienter, s'afficher, se gonfler (4 verbes au futur) : « Il partira seul et ne craindra pas de … car il aura dans sa poche un mini-ordinateur. Il … sans difficulté… »
+- **Ex 6** [B] — « Écris au futur les verbes de la marge. » — aller, se diriger, s'amuser, se promener, s'enfoncer ; texte « Laurent … la semaine prochaine chez son oncle. Il … vers le parc qu'il aime tant… » (5 verbes).
+
+### B 10-3 (p.176) — Conjugaison, fiche de base
+- **Ex 7** [B] — « Réécris au présent le texte de l'exercice n°6. Supprime l'expression « la semaine prochaine » [sic « lla »] »
+- **Ex 8a** [B] — « Réécris le paragraphe qui suit en remplaçant « Benoît » par « les deux jeunes cuisiniers » » — « Le jeune cuisinier : Très vite, Benoît se lasse de laver la vaisselle et de surveiller les fourneaux. Son application diminue et il s'attire les reproches du chef cuisinier. Un jour, il renverse une pile d'assiettes. Il a peur d'être grondé plus fort que d'habitude. Il dénoue son tablier, jette son bonnet et se sauve. »
+- **Ex 8b** [P] — « Transforme le texte obtenu au futur »
+
+### B 10-4 (p.177) — Conjugaison, fiche de base (vision)
+- **Ex 9** [P] — « Conjugue les verbes pronominaux suivants à la forme négative comme dans l'exemple. » — exemple « ne pas se moquer de son ami → ne te moque pas de ton ami. / ne nous moquons pas de vos amis. [sic, « de nos amis » attendu] / ne vous moquez pas de vos amis. » ; 3 verbes : ne pas se tromper en écrivant l'autodictée. ; ne pas se disputer avec ses camarades. ; ne pas s'approcher d'une rivière en crue. (3 personnes chacun).
+- **Ex 10** [P] — « Transforme le texte obtenu au futur [sic : consigne erronée ; la tâche est un questionnaire Questions / Réponses] » — 5 questions à réponses libres : « A quelle heure, te -mets-tu au lit le soir ? » ; « Combien de fois par jour te brosses-tu les dents ? » ; « Où se réunissent les maîtres ? » ; « En quel mois, tes camarades et toi vous présenterez-vous à l'examen de fin d'année scolaire ? » ; « T'es-tu fait mal en sciant la planche ? »
+
+### B 10-5 (p.178) — Conjugaison, fiche de base (vision)
+- **Ex 11** [P] — « Complète ce texte avec les verbes pronominaux suivants : s'écarter - s'approcher - se tendre - se débattre - se courber. » — texte « Des pécheurs [sic] en herbe » (dessin d'un garçon qui marche vers l'étang) : « Je … de l'étang : les roseaux. … et soudain je suis devant mon ami Bertrand. D'un geste, il me recommande le silence. Sa canne à pêche … et l'extrémité … : un gros poisson … au bout de la ligne. »
+- **Ex 12** [P] — « A l'aide des indications suivantes, raconte ce que font Mireille et Brigitte pour se rendre à une fête. Utilise le futur. » — 5 verbes : S'habiller avec soin. ; Se peigner longuement. ; Se maquiller légèrement. ; Se parfumer un peu. ; Se regarder dans un miroir.
+
+---
+
+# CONJUGAISON — fiches d'intégration (521616 p.179–208)
+
+Page-répertoire (521616 p.180) — « CONJUGAISON - PAGE RÉPERTOIRE — FICHES D'INTÉGRATION » :
+
+| N° | Fiches | Objectifs spécifiques | Page |
+| --- | --- | --- | --- |
+| 1 | I1-1 à I1-3 | Produire des énoncés personnels au présent, au passé composé et au futur. | 181 |
+| 2 | I2-1 à I2-2 | Produire des énoncés personnels contenant des verbes conjugués et des verbes à l'infinitif. | 184 |
+| 3 | I3-1 à I3-4 | Produire des énoncés personnels intégrant des verbes conjugués à l'impératif. | 186 |
+| 4 | I4-1 à I4-2 | Produire des énoncés personnels intégrant les verbes être et avoir au passé composé et au futur. | 190 |
+| 5 | I5-1 à I5-3 | Produire des énoncés personnels intégrant des verbes du type finir au passé composé et au futur. | 192 |
+| 6 | I6-1 à I6-3 | Produire des énoncés personnels intégrant des verbes du type mettre et prendre au passé composé et au futur. | 195 |
+| 7 | I7-1 à I7-2 | Produire des énoncés personnels intégrant les verbes aller et faire au passé composé et au futur. | 198 |
+| 8 | I8-1 à I8-3 | Produire des énoncés personnels intégrant les verbes lire, écrire et dire au passé composé et au futur. | 200 |
+| 9 | I9-1 à I9-2 | Produire des énoncés personnels intégrant les verbes pouvoir et vouloir au présent. | 203 |
+| 10 | I 10-1 à I 10-4 | **Fiche supplémentaire** — Produire des énoncés personnels intégrant des verbes pronominaux. | 205 |
+
+Même convention qu'en grammaire (production, 2 à 4 exercices par objectif, numérotation d'exercices continue dans l'objectif, ✎ parfois imprimé devant l'exercice sans valeur B/P ; les ✎✎ de I 3-4 marquent des exercices de perfectionnement).
+
+## Objectif I 1 — énoncés au présent, passé composé et futur
+
+### I 1-1 (p.181) — Conjugaison, fiche d'intégration (vision)
+OS : « Produire des énoncés personnels au présent, au passé composé et au futur ». Notion : réponses à des questions sur images, textes courts.
+- **Ex 1** [I] — « Regarde les images et réponds aux questions. » — 4 dessins (une maman réveille son fils ; l'enfant se lève tard ; il court dans la rue vers l'école ; il arrive à la classe, horloge) avec 5 questions : « A quelle heure la maman réveille-t-elle son fils ? » ; « Paul se lève-t-il rapidement ? Mais,… » ; « Où se trouve le petit garçon ? Pourquoi court-il ? » ; « A quelle heure Paul arrive-t-il en classe ? »
+
+### I 1-2 (p.182) — Conjugaison, fiche d'intégration
+- **Ex 2** [I] — « Regroupe les réponses de l'exercice n° 1 sous forme de texte. »
+- **Ex 3** [I] — « Écris une phrase pour dire ce que fera demain l'enfant pour ne pas arriver en retard. »
+- **Ex 4a** [I] — « Lis ces deux textes dont les phrases sont mélangées. Retrouve les phrases de chaque texte. » — deux textes imbriqués en 2 colonnes (≈ 8 phrases chacun) : « Je traverse le jardin public pour rejoindre un ami. J'aperçois alors un jeune dalmatien. Il se met à me suivre. Je ne le chasse pas. L'après-midi se passe à jouer avec ce nouveau compagnon… Je demande : que faut-il faire maintenant ? » (présent) / « Le maître est monté sur l'estrade et nous a dit : « Je m'appelle Monsieur Langlois. Je suis votre instituteur. Ensemble, nous apprendrons à travailler vite et bien. Nous ferons, aussi, du sport. Nous visiterons la Cité des Sciences. Nous monterons un petit spectacle pour la fête de l'école. » » (passé composé / présent / futur).
+- **Ex 4b** [I] — « Écris les textes obtenus au bon endroit. » — deux cadres : « Le nouvel ami » / « Le nouveau maître ».
+
+### I 1-3 (p.183) — Conjugaison, fiche d'intégration
+- **Ex 4c** [I] — « Termine chaque texte par une ou deux phrases. »
+- **Ex 4d** [I] — « Relève dans les textes deux verbes conjugués. » — tableau « au passé composé / au présent / au futur ».
+
+## Objectif I 2 — verbes conjugués et verbes à l'infinitif
+
+### I 2-1 (p.184) — Conjugaison, fiche d'intégration (vision)
+OS : « Produire des énoncés personnels contenant des verbes conjugués et des verbes à l'infinitif ».
+- **Ex 1a** [I] — « Lis le texte suivant et colorie, selon le sens, le verbe qui convient (verbe conjugué ou verbe à l'infinitif). » — texte « L'histoire d'une fleur » à 4 choix de formes (préparer / prépare ; choisir / choisit ; ajuster / ajuste ; vouloir / veut ; sortir / sort ; être / est ; durer / dure). Première phrase imprimée : « A l'abri, dans sa chambre verte, la fleur se … à être belle. »
+- **Ex 1b** [I] — « Complète maintenant ce texte par deux phrases en utilisant un verbe conjugué et un verbe à l'infinitif. » — amorce : « Et voici qu'un jour, au lever du soleil, cette fleur s'ouvre. … »
+- **Ex 2a** [I] — « Observe les quatre images. » — 4 vignettes (une fillette à vélo ; elle descend ; un chien traverse ; elle freine/tombe).
+- **Ex 2b** [I] — « Complète l'histoire à partir des images et verbes du cadre. » — cadre : « Verbes à l'infinitif : freiner - grimper - rentrer - recevoir » ; « Verbes conjugués : traverse - se laisse - veut - manque ».
+
+### I 2-2 (p.185) — Conjugaison, fiche d'intégration
+- **Ex 2b (suite)** — texte à trous « Le cadeau » : « Emilie vient de … un beau cadeau pour son anniversaire. Bien sûr, elle … tout de suite l'essayer ! La voici sur la route, dans une belle descente. Elle … aller, heureuse et détendue. Soudain, un chien … juste devant elle ! La fillette est obligée de … brutalement et elle … de tomber. Pour … chez elle, Emilie doit … une côte particulièrement raide. » (9 blancs).
+- **Ex 2c** [I] — « Termine cette histoire par une ou deux phrases en utilisant des verbes à l'infinitif et des verbes conjugués. »
+
+## Objectif I 3 — verbes à l'impératif
+
+### I 3-1 (p.186) — Conjugaison, fiche d'intégration
+OS : « Produire des énoncés personnels intégrant des verbes à l'impératif ».
+- **Ex 1** [I] — « Écris à l'impératif ce que demande l'hôtesse aux passagers au moment du décollage de l'avion : » — 5 consignes à l'infinitif : d'attacher leur ceinture ; de ne pas fumer ; de mettre leurs bagages dans les casiers ; de ne pas se déplacer ; de bien lire les consignes de sécurité.
+- **Ex 2** [I] — « La publicité emploie souvent l'impératif dans [sic] slogans. Écris trois ou quatre slogans publicitaires sur les moyens de communication : journaux, téléphone, portable, Internet, télévision. » — exemple : « Téléphonez le soir, cela vous coûtera moins cher. »
+
+### I 3-2 (p.187) — Conjugaison, fiche d'intégration
+- **Ex 3** [I] — « Réécris à la deuxième personne du pluriel les sept consignes de cette notice de fabrication d'une couronne. » — liste de matériel (une grande feuille de papier ; un crayon à papier ; une règle ; des ciseaux ; de la colle ou une agrafeuse ; du papier de couleur) et 7 consignes à la 2ᵉ pers. sg (1 Coupe une bande de papier de 10 cm de large. 2 Décalque ce dessin au bord de la bande. 3 Plie la bande en accordéon. 4 Découpe sur le trait sans déplier la bande. 5 Mets la couronne sur la tête et coupe-la si elle est trop grande. 6 Colle ou agrafe les bords. 7 Garnis ta couronne. Colle ce que tu veux dessus ou dessous.) ; 7 lignes de réponse.
+
+### I 3-3 (p.188) — Conjugaison, fiche d'intégration (vision)
+- **Ex 4** [I] — « "Ils donnent des ordres". Écris devant chaque image, ce que peuvent dire ces personnes. Utilise l'impératif dans un court dialogue de 3 répliques. » — 2 dessins (une mère et sa fille adolescente avec un baladeur/poste de musique ; une femme et un homme avec un dossier, bureau) ; ~8 lignes par dessin.
+
+### I 3-4 (p.189) — Conjugaison, fiche d'intégration (vision)
+- **Ex 5** [P] — « Écris sous chaque dessin un court dialogue en employant les verbes à l'impératif. » — dessin 1 : « Dialogue n° 1 : Les enfants visitent Paris avec leur institutrice. » ; dessin 2 : « Dialogue n° 2 : Julie, Jean et Mamadou achètent des souvenirs de Paris… » (boutique « SOUVENIRS », tour Eiffel).
+- **Ex 6** [P] — « Tu participes à l'écriture de cinq panneaux d'interdiction qu'on doit afficher à l'école. Utilise [sic « Utilisee »] la forme négative et l'impératif. » — encadré « Consignes à respecter » 1) à 5).
+
+## Objectif I 4 — être et avoir au passé composé et au futur
+
+### I 4-1 (p.190) — Conjugaison, fiche d'intégration
+OS : « Produire des énoncés personnels intégrant les verbes "être" et "avoir" au passé composé et au futur ».
+- **Ex 1a** [I] — « Utilise les verbes être et avoir au futur pour décrire l'animal que tu souhaiterais élever [sic « éllever »] plus tard. » — amorce « Plus tard, j'élèverai … » ; 4 lignes.
+- **Ex 1b** [I] — « Dessine l'animal d'après la description que tu as faite. »
+- **Ex 2a** [I] — « Complète les comparaisons suivantes avec les mots du cadre et les verbes être et avoir au présent. » — cadre : un renard - d'éléphant - un serpent - un lion - un agneau - loup ; 6 amorces : « Elle … une mémoire … . » ; « Ils … sont rusés … . » [sic] ; « Il … fort comme … . » ; « Vous … plus froid qu'… . » ; « J'… une faim de … . » ; « Tu … doux comme … . »
+- **Ex 2b** [I] — « Réécris ces comparaisons au futur. » — 6 lignes numérotées.
+- **Ex 2c** [I] — « Choisis une comparaison et imagine une situation comme celle de l'exemple. » — exemple : « Comparaison choisie : J'ai une faim de loup. Situation : Ce matin, je suis allé à l'école sans prendre mon petit déjeuner. A midi en rentrant, j'ai dit à maman : « Maman, donne-moi vite quelque chose à manger, j'ai une faim de loup. » » ; 2 cadres à remplir.
+
+### I 4-2 (p.191) — Conjugaison, fiche d'intégration (vision)
+- **Ex 3** [I] — « Choisis une vignette de chaque catégorie et fais parler le personnage. Utilise être et avoir au futur. » — 3 catégories de photos (1 métiers : enseignante, cuisiniers, serveuse, etc. ; 2 sportifs : footballeur, tennisman, nageur, entraîneur ; 3 loisirs : instruments, peinture, théâtre, chanteur) ; amorces : « 1 Quand je … grand(e), je … , j'… » ; « 2 Quand nous … grands, nous … , nous … » ; « 3 Quand vous … grands, vous … , vous … ».
+
+## Objectif I 5 — verbes du type « finir »
+
+### I 5-1 (p.192) — Conjugaison, fiche d'intégration
+OS : « Produire des énoncés personnels intégrant des verbes du type "finir" au passé composé et au futur ».
+- **Ex 1a** [I] — « Complète les phrases suivantes avec les verbes "avoir", "rebondir", "saisir", "choisir" et "remplir" au passé composé. » — texte « La cueillette des pommes » (4 phrases numérotées 1…, 5 blancs). ex : « Arrivé au verger, Alain … un pommier et a secoué violemment le tronc. » ; « Claire s'est mise à rire lorsqu'une pomme … sur sa tête. »
+- **Ex 1b** [I] — « Mets en ordre les phrases en les numérotant de 2 à 4. »
+- **Ex 1c** [I] — « Complète les deux passages suivants avec les verbes de la marge au temps indiqué. » — (Futur ; finir - rentrer) « Lorsqu'ils … la cueillette, Claire et Alain … tout joyeux à la ferme. » ; (Passé composé ; franchir - emplir) « Ce matin, au moment où Claire et Alain … le pont menant au verger, l'odeur des pommes … l'air. »
+- **Ex 1d** [I] — « Écris i pour le passage qui peut servir d'introduction et c pour celui qui peut servir de conclusion à cette histoire. »
+- **Ex 1e** [I] — « Réécris dans l'ordre les différentes parties du récit. » — 8 lignes.
+
+### I 5-2 (p.193) — Conjugaison, fiche d'intégration (vision)
+- **Ex 2a** [I] — « Écris le récit illustré par les 4 dessins en t'aidant des indications du cadre. » — « Monsieur Dubois » + 5 expressions étiquetées par temps (choisir de jeunes arbres pour les planter dans le jardin – passé composé ; se mettre au travail – passé composé ; s'arrêter brusquement lorsque le ciel s'assombrit – présent ; se réfugier dans la cabane et attendre la fin de l'orage – présent ; rougir de colère en découvrant les dégâts – futur) ; 4 dessins (jardinier plante ; il travaille ; orage ; il constate les dégâts).
+- **Ex 2b** [I] — « Écris la conclusion de ce récit en utilisant des mots du tableau suivant : » — tableau « Plus tard » × (les voisins / les enfants / la femme de M. Dubois / Monsieur Dubois) × (aider / venir en aide à / réparer / ramasser / remplir / évacuer l'eau / finir) × (la vitre brisée / la cabane inondée / les cageots renversés / les branches cassées / le travail).
+
+### I 5-3 (p.194) — Conjugaison, fiche d'intégration (vision)
+- **Ex 3a** [I] — « Lis la situation. » — « Hier, le garage de monsieur Lavoine a pris feu à la suite d'un court circuit. Les voisins sont venus au secours de monsieur Lavoine. » (photo d'incendie).
+- **Ex 3b** [I] — « Raconte ce qui s'est passé. Utilise les verbes et expressions données au passé composé. » — 4 vignettes : Remplir les seaux d'eau. ; Saisir un tuyau d'arrosage. ; Avertir les pompiers. ; Éteindre le feu. Noircir et détruire les murs.
+- **Ex 3c** [I] — « Termine le récit en utilisant les verbes rebâtir et blanchir au futur. » — photo d'un mur en construction.
+
+## Objectif I 6 — verbes du type « mettre » et « prendre »
+
+### I 6-1 (p.195) — Conjugaison, fiche d'intégration (vision)
+OS : « Produire des énoncés personnels intégrant des verbes du type "prendre" et "mettre" au passé composé et au futur ».
+- **Ex 1a** [I] — « Lis la situation. » — « L'école a organisé une excursion. Tous les élèves de ta classe ont décidé d'y aller. »
+- **Ex 1b** [I] — « Prends un mot de chaque colonne (et d'autres mots s'il le faut) et écris des phrases qui racontent les préparatifs du départ. » — tableau : sujets (Les élèves ; Je ; Nous ; Les / Mes parents) ; verbes (prendre ; mettre ; promettre ; demander ; acheter ; permettre à / aux...) ; compléments (d'aller en excursion ; la permission à ... ; un / des appareil(s) photo(s) ; des billets ; des pellicules dans l'appareil ; de rester sage).
+- **Ex 1c** [I] — « Écris, avec les phrases obtenues, un court récit au passé composé »
+- **Ex 1d** [I] — « Remets en ordre les étiquettes pour terminer le récit. » — étiquettes : l'argent gagné / de la protection des plages et des forêts / remettre (au futur) / le directeur / à l'association.
+
+### I 6-2 (p.196) — Conjugaison, fiche d'intégration
+- **Ex 2** [I] — « Écris un court paragraphe au passé composé avec la série d'expressions suivantes et d'autres de ton choix. » — 4 expressions : Apprendre la nouvelle par Internet. ; Comprendre ce qu'il faut faire. ; Prendre une décision. ; Participer au concours "Sauver la nature". ; 6 lignes.
+- **Ex 3a** [I] — « Observe les images 1 / 2 / 3 / 4 / 5. » (suite p.197).
+
+### I 6-3 (p.197) — Conjugaison, fiche d'intégration (vision)
+- **Ex 3a (suite)** — 5 images (affiche de l'« Association pour la Sauvegarde de l'Environnement » ; enfants ramassant des feuilles ; sacs et brouette ; remise du chargement).
+- **Ex 3b** [I] — « Raconte cette histoire en images au passé composé. Aide-toi des indications suivantes. » — 7 indications : Lire une affiche. ; Aller au bureau de l'association. ; Prendre des sacs, des râteaux, une pelle et une brouette. ; Emilie : remplir les sacs. ; Sacha : ramasser les feuilles. ; Léo : mettre les sacs dans la brouette. ; Remettre le chargement à un employé de l'ASE.
+- **Ex 3c** [I] — « Réécris l'histoire au futur. » — 9 lignes.
+
+## Objectif I 7 — verbes « aller » et « faire »
+
+### I 7-1 (p.198) — Conjugaison, fiche d'intégration
+OS : « Produire des énoncés personnels intégrant les verbes "aller" et "faire" au passé composé et au futur ».
+- **Ex 1a** [I] — « Construis un paragraphe au passé composé avec les expressions suivantes et d'autres de ton choix. » — 8 expressions : Aller à la salle de sport du quartier. ; Mettre sa tenue. ; Faire du judo. ; Prendre une douche. ; Remettre ses vêtements. ; Dire "au revoir" à l'entraîneur. ; Faire un signe de la main aux copains. ; Rentrer à la maison à pied.
+- **Ex 1b** [I] — « Réécris au futur le paragraphe que tu as obtenu. »
+- **Ex 2a** [I] — « Observe les images et construis avec le verbe faire à l'infinitif six expressions connues. » — exemple : « Faire la vaisselle … » ; 6 images (non reproduites : p.198–199).
+
+### I 7-2 (p.199) — Conjugaison, fiche d'intégration
+- **Ex 2b** [I] — « Choisis deux expressions et écris deux passages dans lesquels tu utiliseras : la 1ère expression au passé composé ; la 2ème expression au futur. »
+- **Ex 3** [I] — « Construis un court paragraphe avec les expressions du cadre. Utilise le sujet singulier ou pluriel de ton choix. » — « Temps : Passé composé, sujet au singulier : Aller au cirque. Faire la queue. Acheter un billet. Admirer le spectacle. » ; « Temps : Futur, sujet au pluriel : Aller à la piscine municipale. Mettre son maillot. Faire des plongeons. »
+
+## Objectif I 8 — verbes « lire », « écrire » et « dire »
+
+### I 8-1 (p.200) — Conjugaison, fiche d'intégration
+OS : « Produire des énoncés personnels intégrant les verbes "dire", "lire" et "écrire" au passé composé et au futur ».
+- **Ex 1a** [I] — « Construis le récit du voyage d'une jeune fille ou d'un jeune homme à partir des indications suivantes : » — passé composé : Prendre des vêtements. Faire sa valise. ; présent : Dire au revoir à ses parents. Prendre l'avion pour Paris. ; impératif (recommandations des parents) : Ecrire ou téléphoner. ; futur : Lire des plans de quartier et des cartes pour se déplacer. Visiter des villes et des monuments. Ecrire des cartes postales à ses amis. Téléphoner régulièrement à ses parents. ; titre « Le voyage de … » ; 6 lignes.
+- **Ex 1b** [I] — « Imagine une fin à ce récit. »
+- **Ex 1c** [I] — « Complète le titre par un nom propre. »
+
+### I 8-2 (p.201) — Conjugaison, fiche d'intégration
+- **Ex 2a** [I] — « Transforme le poème en changeant la personne de chaque vers (tu) et en mettant les verbes au passé composé. » — poème de J. P. Schneider, extrait de Jean Orizet, _Les plus beaux poèmes pour les enfants_, Le cherche-midi : 3 strophes de 3 vers (« Tu dis sable / et déjà / la mer est à tes pieds »…) [titre non imprimé] ; exemple : « Tu dis sable et déjà la mer est à tes pieds. → Il a dit sable et déjà la mer est à ses pieds. » ; personnes demandées : Il ; Vous ; Nous ; Ils.
+- **Ex 2b** [I] — « Transforme le poème au futur. » — 13 lignes.
+
+### I 8-3 (p.202) — Conjugaison, fiche d'intégration
+- **Ex 3a** [I] — « Conjugue les verbes à la personne et au temps indiqués. » — 6 verbes : écrire (3è personne du pluriel / passé composé) une pièce de théâtre ; relire (2è pers. pl. / futur) plusieurs fois vos répliques ; dire (2è pers. pl. / futur) à vos parents ; applaudir (3è pers. sg / passé composé) les jeunes comédiens ; être (2è pers. pl. / passé composé) formidables ; dire (3è pers. sg / passé composé) en insistant.
+- **Ex 3b** [I] — « Écris les phrases obtenues à la place qui convient. » — texte à trous (6 blancs) : « Les élèves de 6ème année … pour la fête scolaire. La veille de la présentation, leurs [sic] maître leur … : « Demain, vous … … et vous … de vous habiller et de vous maquiller. On gagnera ainsi beaucoup de temps. » Le lendemain, après la représentation, tout le monde … en criant : « Bravo, vous … ! » »
+
+## Objectif I 9 — « vouloir » et « pouvoir » au présent
+
+### I 9-1 (p.203) — Conjugaison, fiche d'intégration
+OS : « Produire des énoncés personnels intégrant les verbes pouvoir et vouloir au présent ».
+- **Ex 1** [I] — « Observe les images. Écris un court récit contenant des répliques. Utilise dans tes phrases les verbes : vouloir poster / ne pas pouvoir / vouloir aider. » — amorce : « Madame Lucet a écrit une lettre à sa sœur. Elle la met dans une enveloppe et la donne à son fils Julien. Le petit garçon sort vite de la maison l'enveloppe à la main. Le voici devant la boîte postale. »
+- **Ex 2** [I] — « Lis la situation suivante : Tes parents et toi voulez partir en voyage. Vous allez vous renseigner auprès d'une agence. Imagine un court dialogue entre l'employé de l'agence et tes parents [sic « pareents »]. Utilise dans tes répliques les verbes vouloir et pouvoir au présent. » — affiches de destinations : EGYPTE, FRANCE, ITALIE.
+
+### I 9-2 (p.204) — Conjugaison, fiche d'intégration
+- **Ex 3** [I] — « D'après toi, que peuvent faire des touristes en visite dans ton pays. Imagine que tu les conseilles [sic « conseillles »]. Utilise les verbes pouvoir ou vouloir au présent. (3 phrases au moins) »
+- **Ex 4a** [I] — « Complète les dialogues avec les verbes vouloir et pouvoir au présent. » — 3 situations : 1 (restaurant) « – Ici, vous ne … pas fumer, monsieur. Si vous … fumer, je … vous donner une table dans la zone « non-fumeurs ». – Non, merci. Ce n'est pas la peine. Je … attendre. » ; 2 « – Il est tard. Est-ce que ton fils … nous accompagner en voiture ? – Non, il ne … pas sortir parce qu'il prépare un examen. » ; 3 « – …-tu m'aider à déplacer cette armoire ? – Je … bien mais je ne … pas, j'ai mal au dos, demande plutôt à David. Il le fera avec plaisir. »
+- **Ex 4b** [I] — « Écris une ou deux phrases pour introduire chaque dialogue (Où il se passe ? Qui peuvent être les personnes qui parlent ? ...) » — 2 lignes par situation.
+
+## Objectif I 10 — verbes pronominaux (« fiche supplémentaire »)
+
+### I 10-1 (p.205) — Conjugaison, fiche d'intégration
+OS : « Produire des énoncés personnels intégrant des verbes pronominaux. » (rubrique « Fiche supplémentaire »). Notion : verbes pronominaux en production (présent, futur, impératif).
+- **Ex 1a** [I] — « Lis le début de l'histoire. » — « La Belle au Bois Dormant » : « Pour fêter la naissance de sa fille, le roi invite les fées de son pays. Mais il oublie une vieille fée. Celle-ci n'est pas contente. Elle décide de jeter un mauvais sort au bébé princier. »
+- **Ex 1b** [I] — « Complète les phrases suivantes avec les verbes de la marge au présent. » — verbes : intervenir, s'endormir, se piquer, s'approcher ; 4 phrases. ex : « Heureusement, une jeune fée … et dit : « la princesse ne mourra pas mais elle dormira cent ans. » » ; « Le jour de ses seize ans, la princesse … le doigt et s'endort. »
+- **Ex 1c** [I] — « Numérote de 1 à 4 les phrases dans l'ordre qui convient. »
+
+### I 10-2 (p.206) — Conjugaison, fiche d'intégration
+- **Ex 1d** [I] — « Réécris dans l'ordre les phrases précédentes. » — 4 phrases numérotées (1)–(4).
+- **Ex 1e** [I] — « Écris ce qui arrivera dans cent ans. Emploie le futur et un verbe pronominal au moins. »
+
+### I 10-3 (p.207) — Conjugaison, fiche d'intégration
+- **Ex 2a** [I] — « Lis cette situation initiale et souligne le verbe pronominal. » — « La leçon de conduite : Le moniteur d'une auto-école s'occupe d'Alex qui veut apprendre à conduire. Il lui explique le rôle des différentes manettes mais Alex n'écoute pas. »
+- **Ex 2b** [I] — « Complète la suite du récit en utilisant les verbes suivants : monter - s'arrêter - se douter - se jeter - s'y accrocher » — texte à 5 blancs : « Alex saisit le volant et … de toutes ses forces. Il voit les lèvres du moniteur remuer. Il … que quelque chose ne va pas. Il tire sur le changement de vitesse et la voiture … sur le trottoir. L'apprenti-conducteur … alors au cou du moniteur. Heureusement, le moteur cale et la voiture … . »
+- **Ex 2c** [I] — « Imagine en deux ou trois phrases la suite du récit. Emploie le futur et utilise, au moins, un verbe pronominal. »
+
+### I 10-4 (p.208) — Conjugaison, fiche d'intégration
+- **Ex 3a** [I] — « Lis ce texte. » — « La petite Sonia part en colonie de vacances. Sa maman lui recommande : – de ne jamais s'éloigner du groupe pour ne pas se perdre ; – de se protéger du soleil ; – de se baigner au bord de l'eau parce qu'elle ne sait pas nager. »
+- **Ex 3b** [I] — « Réécris ce texte en utilisant l'impératif pour les recommandations. » — amorce : « La petit [sic] Sonia part en colonie de vacances. Sa maman lui demande : « … »
+- **Ex 3c** [I] — « Termine par une dernière recommandation de ton choix. Utilise l'impératif. »
+
+---
+
+# CONJUGAISON — fiches de remédiation (521616 p.209–… ; lues ici jusqu'à p.220)
+
+Page-répertoire (521616 p.210) — « CONJUGAISON - PAGE RÉPERTOIRE — FICHES DE REMÉDIATION » :
+
+| N° | Fiches | Objectifs spécifiques | Page |
+| --- | --- | --- | --- |
+| 1 | R1 –1 à R1 – 5 | Consolider la distinction entre le présent, le passé composé et le futur | 211 |
+| 2 | R2 –1 à R2 – 4 | Consolider la distinction entre des verbes conjugués et des verbes à l'infinitif | 216 |
+| 3 | R3 –1 à R3 – 6 | Consolider la conjugaison des verbes en er, en ir et des verbes usuels du 3è groupe à l'impératif | 220 |
+| 4 | R4 –1 à R4 – 4 | Consolider la conjugaison des verbes être et avoir au passé composé et au futur | 226 |
+| 5 | R5 –1 à R5 – 6 | Consolider la conjugaison des verbes du type finir au passé composé et au futur | 230 |
+| 6 | R6 –1 à R6 – 5 | Consolider la conjugaison des verbes du type mettre et prendre au passé composé et au futur | 236 |
+| 7 | R7 –1 à R7 – 5 | Consolider la conjugaison des verbes aller et faire au passé composé et au futur | 241 |
+| 8 | R8 –1 à R8 – 5 | Consolider la conjugaison des verbes lire, écrire et dire au passé composé et au futur | 246 |
+| 9 | R9 –1 à R9 – 3 | Consolider la conjugaison des verbes pouvoir et vouloir au présent | 251 |
+| 10 | R10–1 à R10– 4 | **Fiche supplémentaire** — Consolider la conjugaison des verbes pronominaux usuels au présent, au futur et à l'impératif | 254 |
+
+_(Ce répertoire (p.210) relève de L5a ; les objectifs R 4 à R 10 (p.226–257) et la fin de R 3 (p.221–225) seront transcrits par L5b.)_ Même convention qu'en grammaire : exercices 1, 2, 3… continus dans l'objectif, encadré « Ce que nous savons déjà » en première page.
+
+## Objectif R 1 — distinction présent / passé composé / futur
+
+### R 1-1 (p.211) — Conjugaison, fiche de remédiation (vision)
+OS : « Consolider la distinction entre le présent, le passé composé et le futur ».
+- **Encadré « Ce que nous savons déjà »** : « Le verbe peut être conjugué au présent, au passé ou au futur. • Le présent exprime une action qui se produit au moment où l'on parle. Exemple : Maintenant, je lis un texte de lecture. • Le passé composé exprime une action passée et terminée. Exemple : Hier, j'ai lu un texte de lecture. • Le futur exprime une action à venir. Exemple : Demain, je lirai un texte de lecture. » (3 cases : Passé / Présent / Futur).
+- **Ex 1** [R] — « Barre les intrus. » — 3 listes de formes verbales : « Au futur » (nous jouerons - ils se promènent - je suis tombé - vous partirez - je veux sortir - tu ne me quitteras pas - nous dormirons - on va s'amuser - vous travaillez) ; « Au présent » (il est arrivé - tu plaisantes - j'ai écrit - vous rougissez - elles sont tombées - je comprends - on n'a rien entendu - Reviennent-ils ? Que fais-tu ? - Nous reviendrons.) ; « Au passé » (tu as chanté - elle va danser - tu ne viendras pas - je suis guéri - il est parti - il dessine - vous allez pêcher - on joue - nous avons gagné - Ils réussiront). Dans chaque liste on barre les formes d'un autre temps. Note : « va + infinitif » (futur proche) figure comme **intrus** dans la liste « futur ».
+
+### R 1-2 (p.212) — Conjugaison, fiche de remédiation
+- **Ex 2a** [R] — « Réunis ce qui va ensemble. » — 5 débuts (Au printemps, / Ce matin, / En ce moment, / Dans une heure, / Avant hier,) × 5 fins (nous avons visité une menuiserie. / il fera nuit. / les hirondelles reviendront. / le syndic a réuni les locataires de l'immeuble. / il fait très beau.).
+- **Ex 2b** [R] — « Recopie les phrases. » — au passé composé / au présent / au futur (2 lignes par temps).
+- **Ex 2c** [R] — « Encadre les verbes. »
+- **Ex 3a** [R] — « Choisis le verbe conjugué qui convient. » — 4 phrases à 3 formes (cases). ex : « Bientôt, le jardinier (arrachera / arrache / a arraché) les mauvaises herbes. » ; « L'année dernière, la nouvelle usine (ouvre / ouvrira / a ouvert) ses portes. »
+
+### R 1-3 (p.213) — Conjugaison, fiche de remédiation
+- **Ex 3b** [R] — « Copie les quatre phrases obtenues et indique le temps dans les parenthèses. »
+- **Ex 4** [R] — « Mets devant le verbe le pronom personnel qui convient et indique le temps dans les parenthèses. » — 6 phrases. ex : « … achetons des fruits. (…) » ; « Où as-… écouté ce C.D ? (…) »
+- **Ex 5** [R] — « Classe dans l'axe du temps les verbes contenus dans les phrases. » — 4 phrases, axe Passé / Présent / Futur à chaque fois. ex : « Tu ne m'écriras pas parce que tu as perdu mon adresse. » ; « Le menuisier a fabriqué un meuble qui servira de bibliothèque. »
+
+### R 1-4 (p.214) — Conjugaison, fiche de remédiation
+- **Ex 6** [R] — « Barre la forme verbale qui ne convient pas. » — 5 phrases à 3 formes. ex : « – Les élèves (préparent - prépareront - ont préparé) le journal scolaire en ce moment. » ; « – Plus tard, je (suis - serai - ai été) informaticien. »
+- **Ex 7** [R] — « Recopie les phrases en les enrichissant d'une expression indiquant le temps. » — 4 phrases. ex : « Vous afficherez vos travaux sur un panneau. » ; « Le photographe a pris une photo de tous les élèves de notre classe. »
+
+### R 1-5 (p.215) — Conjugaison, fiche de remédiation
+- **Ex 8** [R] — « Réécris les quatre séries de phrases en mettant les verbes entre parenthèses au temps [sic, « au temps au temps »] qui convient. » — 4 séries, 7 verbes. ex : « 1- Dans un instant, l'avion décollera et (s'éloigner) en grondant. A l'heure prévue, il (arriver) à destination. » ; « 4- Hier, La jeune comédienne (pleurer) de joie quand les spectateurs (applandi [sic]) son spectacle. »
+
+## Objectif R 2 — verbes conjugués / verbes à l'infinitif
+
+### R 2-1 (p.216) — Conjugaison, fiche de remédiation (vision)
+OS : « Consolider la distinction entre des verbes conjugués et des verbes à l'infinitif ».
+- **Encadré « Ce que nous savons déjà »** (illustré par la photo d'une danseuse) : « • Joséphine joue bien la comédie. • Joséphine et Pierre joueront bien la comédie. Le verbe jouer est conjugué. Il change de forme selon la personne et le temps. • Joséphine aime jouer la comédie. • Joséphine et Pierre aiment jouer la comédie. Le verbe jouer n'est pas conjugué. Il est [sic « Ils est »] à l'infinitif. • Je veux devenir photographe professionnel. Quand deux verbes se suivent et que le 1er verbe est conjugué, le 2e verbe est à l'infinitif. »
+- **Ex 1** [R] — « Relie les verbes conjugués à leur infinitif » — 2 colonnes de 8 phrases (dont « Elle finissent [sic] leur devoir. », « Est-ce que vous pouveza [sic] me rendre un service ? ») × 2 colonnes d'infinitifs (être, prendre, lire, aller, dire, sortir, mettre, finir ; écrire, pouvoir, faire, dormir, vouloir, promettre, venir). ex : « Je suis malade. → être » ; « Il a pris froid. → prendre ».
+
+### R 2-2 (p.217) — Conjugaison, fiche de remédiation
+- **Ex 2a** [R] — « Souligne les verbes conjugués dans le texte suivant : » — texte de 2 phrases (« Tous les ans, de nombreux touristes se rendent en Tunisie. Ils découvrent les musées, vont à la plage et profitent du beau temps. Ils prennent des photos et gardent ainsi des souvenirs de leurs vacances. »)
+- **Ex 2b** [R] — « Cherche les infinitifs des verbes conjugués et classe-les dans le tableau. » — tableau « Verbes en « er » / « ir » / « re » ».
+- **Ex 3** [R] — « Choisis dans la marge la forme verbale [sic « verballe »] qui convient et complète la phrase. » — marge : travailler/travaille ; choisir/choisit ; demander/demande ; savoir/sait ; sortir/sort ; aller/va ; texte « Paul … comme apprenti menuisier. Il sait, maintenant, … les planches que lui … son patron… ».
+- **Ex 4** [R] — « Réécris les phrases en remplaçant les noms soulignés par des verbes à l'infinitif. » — « • Yves est sportif. Il aime la course. » ; « • Bernard est libraire. Il aime la lecture. » (suite p.218).
+
+### R 2-3 (p.218) — Conjugaison, fiche de remédiation
+- **Ex 4 (suite)** — « • Mon père est instituteur. Il préfère les voyages en été pendant les grandes vacances. » ; « • Je suis un jeune artiste peintre. J'adore la peinture sur verre. » ; « • Aimez-vous les sorties avec les amis ? »
+- **Ex 5** [R] — « Complète les phrases par les deux verbes proposés dans la marge. » — 5 phrases, couples (préférer - marcher ; compter - partir ; aimer - caresser ; aller - participer ; faire - voler). ex : « Nous … à pied. » ; « Mes amis … leurs cerfs-volants dans les champs. »
+- **Ex 6a** [R] — « Souligne les verbes conjugués dans les phrases suivantes puis transforme les deux phrases en une seule pour éviter la répétition. » — exemple « Je vois mon frère. Mon frère arrive en courant. → Je vois mon frère arriver en courant. » ; 4 couples. ex : « J'entends mon ami. Mon ami chante à haute voix. » ; « Le policier aperçoit un voleur. Un voleur défonce la porte d'une maison. »
+
+### R 2-4 (p.219) — Conjugaison, fiche de remédiation (vision)
+- **Ex 7** [R] — « Construis une phrase sous chaque dessin. Aide-toi des couples de verbes suivants. » — couples : adorer / bricoler - penser / acheter - aimer / s'occuper - aller / predre [sic] le métro - vouloir / faire du jogging - aimer / lire ; 6 dessins avec sujets imposés (Nous … ; Vous … ; Elle … ; Ils … ; Je … ; Tu …) : enfants avec un chien ; un homme qui bricole ; une maison à acheter ; voyageurs à la gare ; une dame âgée dans un fauteuil ; une personne qui lit/caresse un chien.
+
+## Objectif R 3 — verbes en -er, -ir et usuels du 3ᵉ groupe à l'impératif (début)
+
+### R 3-1 (p.220) — Conjugaison, fiche de remédiation (vision) — _la suite R 3-2 à R 3-6 (p.221–225) revient à L5b_
+OS : « Consolider la conjugaison des verbes à l'impératif » (case 3 imprimée ; le répertoire dit « …des verbes en er, en ir et des verbes usuels du 3è groupe à l'impératif »).
+- **Encadré « Ce que nous savons déjà »** (vignette de BD : une femme devant sa cuisinière : « SURVEILLE MON RÔTI PENDANT QUE JE VAIS CHERCHER DU BEURRE A L'ÉPICERIE ») : « L'impératif est utilisé pour donner des ordres, des conseils et pour exprimer des interdictions. • Donner des ordres. – Surveille le rôti. • Donner des conseils ou faire des recommandations – Achetez un dictionnaire, il vous sera très utile. • Exprimer des interdictions. – Ne déchirons pas les vieux livres. »
+- **Ex 1** [R] — « Réécris les ordres et les conseils suivants à l'impératif. » — 6 phrases (fléchées vers des lignes de réponse). ex : « Tu dis toujours la vérité. » ; « Nous n'allumons pas de feu dans la forêt. » (aussi « A vélo, tu tiens bien ta droite. », « Vous marchez sur le trottoir. », « Vous ne prenez pas de risques inutiles. »). [Les exercices 2… de R 3 suivent p.221 : L5b.]
+
+---
+
+# TABLE FICHE → PAGES (521616 p.1–220)
+
+Chaque fiche = **une page imprimée** (offset 0). Intercalaires : p.5, 54, 84, 136, 179, 209 (et p.4 formulaire). Répertoires : p.6 (gram. B), 55 (gram. I), 85 (gram. R), 137 (conj. B), 180 (conj. I), 210 (conj. R). Les en-têtes de fiche portent « Grammaire / Conjugaison » (jamais de n° de module).
+
+| Objectif | Fiches → pages |
+| --- | --- |
+| Gram. Base n°1 | B1-1 → p.7 ; B1-2 → p.8 ; B1-3 → p.9 |
+| Gram. Base n°2 | B2-1 → p.10 ; B2-2 → p.11 ; B2-3 → p.12 ; B2-4 → p.13 |
+| Gram. Base n°3 | B3-1 → p.14 ; B3-2 → p.15 ; B3-3 → p.16 |
+| Gram. Base n°4 | B4-1 → p.17 ; B4-2 → p.18 ; B4-3 → p.19 ; B4-4 → p.20 |
+| Gram. Base n°5 | B5-1 → p.21 ; B5-2 → p.22 ; B5-3 → p.23 ; B5-4 → p.24 ; B5-5 → p.25 |
+| Gram. Base n°6 | B6-1 → p.26 ; B6-2 → p.27 ; B6-3 → p.28 ; B6-4 → p.29 ; B6-5 → p.30 |
+| Gram. Base n°7 | B7-1 → p.31 ; B7-2 → p.32 ; B7-3 → p.33 ; B7-4 → p.34 |
+| Gram. Base n°8 | B8-1 → p.35 ; B8-2 → p.36 ; B8-3 → p.37 ; B8-4 → p.38 ; B8-5 → p.39 |
+| Gram. Base n°9 | B9-1 → p.40 ; B9-2 → p.41 ; B9-3 → p.42 ; B9-4 → p.43 ; B9-5 → p.44 |
+| Gram. Base n°10 | B10-1 → p.45 ; B10-2 → p.46 ; B10-3 → p.47 ; B10-4 → p.48 ; B10-5 → p.49 |
+| Gram. Base n°11 | B11-1 → p.50 ; B11-2 → p.51 ; B11-3 → p.52 ; B11-4 → p.53 |
+| Gram. Intégr. n°1 | I1-1 → p.56 ; I1-2 → p.57 ; I1-3 → p.58 |
+| Gram. Intégr. n°2 | I2-1 → p.59 ; I2-2 → p.60 ; I2-3 → p.61 ; I2-4 → p.62 |
+| Gram. Intégr. n°3 | I3-1 → p.63 ; I3-2 → p.64 ; I3-3 → p.65 |
+| Gram. Intégr. n°4 | I4-1 → p.66 ; I4-2 → p.67 ; I4-3 → p.68 |
+| Gram. Intégr. n°5 | I5-1 → p.69 ; I5-2 → p.70 ; I5-3 → p.71 ; I5-4 → p.72 ; I5-5 → p.73 |
+| Gram. Intégr. n°6 | I6-1 → p.74 ; I6-2 → p.75 ; I6-3 → p.76 ; I6-4 → p.77 |
+| Gram. Intégr. n°7 | I7-1 → p.78 ; I7-2 → p.79 ; I7-3 → p.80 |
+| Gram. Intégr. n°8 | I8-1 → p.81 ; I8-2 → p.82 ; I8-3 → p.83 |
+| Gram. Remédiat. n°1 | R1-1 → p.86 ; R1-2 → p.87 ; R1-3 → p.88 ; R1-4 → p.89 |
+| Gram. Remédiat. n°2 | R2-1 → p.90 ; R2-2 → p.91 ; R2-3 → p.92 ; R2-4 → p.93 |
+| Gram. Remédiat. n°3 | R3-1 → p.94 ; R3-2 → p.95 ; R3-3 → p.96 |
+| Gram. Remédiat. n°4 | R4-1 → p.97 ; R4-2 → p.98 ; R4-3 → p.99 ; R4-4 → p.100 ; R4-5 → p.101 |
+| Gram. Remédiat. n°5 | R5-1 → p.102 ; R5-2 → p.103 ; R5-3 → p.104 ; R5-4 → p.105 ; R5-5 → p.106 ; R5-6 → p.107 |
+| Gram. Remédiat. n°6 | R6-1 → p.108 ; R6-2 → p.109 ; R6-3 → p.110 ; R6-4 → p.111 ; R6-5 → p.112 |
+| Gram. Remédiat. n°7 | R7-1 → p.113 ; R7-2 → p.114 ; R7-3 → p.115 ; R7-4 → p.116 |
+| Gram. Remédiat. n°8 | R8-1 → p.117 ; R8-2 → p.118 ; R8-3 → p.119 ; R8-4 → p.120 ; R8-5 → p.121 |
+| Gram. Remédiat. n°9 | R9-1 → p.122 ; R9-2 → p.123 ; R9-3 → p.124 ; R9-4 → p.125 ; R9-5 → p.126 |
+| Gram. Remédiat. n°10 | R10-1 → p.127 ; R10-2 → p.128 ; R10-3 → p.129 ; R10-4 → p.130 |
+| Gram. Remédiat. n°11 | R11-1 → p.131 ; R11-2 → p.132 ; R11-3 → p.133 ; R11-4 → p.134 ; R11-5 → p.135 |
+| Conj. Base n°1 | B1-1 → p.138 ; B1-2 → p.139 ; B1-3 → p.140 ; B1-4 → p.141 ; B1-5 → p.142 |
+| Conj. Base n°2 | B2-1 → p.143 ; B2-2 → p.144 ; B2-3 → p.145 |
+| Conj. Base n°3 | B3-1 → p.146 ; B3-2 → p.147 ; B3-3 → p.148 ; B3-4 → p.149 |
+| Conj. Base n°4 | B4-1 → p.150 ; B4-2 → p.151 ; B4-3 → p.152 ; B4-4 → p.153 |
+| Conj. Base n°5 | B5-1 → p.154 ; B5-2 → p.155 ; B5-3 → p.156 ; B5-4 → p.157 |
+| Conj. Base n°6 | B6-1 → p.158 ; B6-2 → p.159 ; B6-3 → p.160 ; B6-4 → p.161 ; B6-5 → p.162 |
+| Conj. Base n°7 | B7-1 → p.163 ; B7-2 → p.164 ; B7-3 → p.165 ; B7-4 → p.166 |
+| Conj. Base n°8 | B8-1 → p.167 ; B8-2 → p.168 ; B8-3 → p.169 |
+| Conj. Base n°9 | B9-1 → p.170 ; B9-2 → p.171 ; B9-3 → p.172 ; B9-4 → p.173 |
+| Conj. Base n°10 | B10-1 → p.174 ; B10-2 → p.175 ; B10-3 → p.176 ; B10-4 → p.177 ; B10-5 → p.178 |
+| Conj. Intégr. n°1 | I1-1 → p.181 ; I1-2 → p.182 ; I1-3 → p.183 |
+| Conj. Intégr. n°2 | I2-1 → p.184 ; I2-2 → p.185 |
+| Conj. Intégr. n°3 | I3-1 → p.186 ; I3-2 → p.187 ; I3-3 → p.188 ; I3-4 → p.189 |
+| Conj. Intégr. n°4 | I4-1 → p.190 ; I4-2 → p.191 |
+| Conj. Intégr. n°5 | I5-1 → p.192 ; I5-2 → p.193 ; I5-3 → p.194 |
+| Conj. Intégr. n°6 | I6-1 → p.195 ; I6-2 → p.196 ; I6-3 → p.197 |
+| Conj. Intégr. n°7 | I7-1 → p.198 ; I7-2 → p.199 |
+| Conj. Intégr. n°8 | I8-1 → p.200 ; I8-2 → p.201 ; I8-3 → p.202 |
+| Conj. Intégr. n°9 | I9-1 → p.203 ; I9-2 → p.204 |
+| Conj. Intégr. n°10 | I10-1 → p.205 ; I10-2 → p.206 ; I10-3 → p.207 ; I10-4 → p.208 |
+| Conj. Remédiat. n°1 | R1-1 → p.211 ; R1-2 → p.212 ; R1-3 → p.213 ; R1-4 → p.214 ; R1-5 → p.215 |
+| Conj. Remédiat. n°2 | R2-1 → p.216 ; R2-2 → p.217 ; R2-3 → p.218 ; R2-4 → p.219 |
+| Conj. Remédiat. n°3 | R3-1 → p.220 |
+---
+
+# TABLEAU DE SYNTHÈSE PAR OS (521616 p.1–220)
+
+Lecture : « Fiches » = codes (nombre de pages-fiches) ; « Ex. » = exercices **numérotés distincts** (les sous-questions a/b/c ne comptent pas, les encadrés « Ce que nous savons déjà » non plus) ; « dont ✎✎ » = exercices contenant au moins une partie de perfectionnement (deux crayons). Les OS sont cités tels qu'imprimés au répertoire (les coquilles de l'impression sont signalées entre crochets).
+
+| OS (mot pour mot, répertoire) | Dom. | Type | Fiches | Pages | Ex. | dont ✎✎ | Formes d'exercice |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Utiliser des déterminants (articles définis et indéfinis). | Gram. | Base | B1-1–3 (3) | 7–9 | 7 |  | repérage (souligner/entourer) ; ajouter 2 déterminants à un nom ; pluriel ; texte à trous (nom du cadre, article) ; remplacer un déterminant ; déterminants numéraux (exercice « supplémentaire ») |
+| Utiliser, dans des GN, des noms propres et des noms communs. | Gram. | Base | B2-1–4 (4) | 10–13 | 8 |  | tableau de classement GN commun/propre ; appariement nom propre ↔ nom commun (2 sens) ; substitution commun ↔ propre ; compléter ; produire des phrases ; décrire 3 images |
+| Utiliser des pronoms personnels sujets. | Gram. | Base | B3-1–3 (3) | 14–16 | 9 | 4 | GN → pronom et pronom → GN ; éviter les répétitions ; compléter (sujet coordonné, inversion) ; barrer la forme fausse ; je/tu/on ; « on » → GN ; produire 3 phrases |
+| Utiliser des déterminants démonstratifs. | Gram. | Base | B4-1–4 (4) | 17–20 | 9 |  | compléter ce/cet/cette/ces ; pluriel → singulier ; remplacer l'article ; masculin → féminin ; place de l'adjectif ; GN à créer ; reconstituer la question |
+| Utiliser des déterminants possessifs. | Gram. | Base | B5-1–5 (5) | 21–25 | 11 |  | repérage ; tableau genre/nombre ; ta/ton ; notre/votre/leur ; leur/leurs ; substitution (2 personnes) ; dialogues à trous ; rédiger la question |
+| Reconnaître et utiliser des adjectifs épithètes et attributs. | Gram. | Base | B6-1–5 (5) | 26–30 | 11 |  | repérage (entourer ; e/a) ; enrichir un GN (épithète, 2 attributs) ; accord m→f ; épithète ↔ attribut ; nouveau/nouvel/nouvelle, beau/bel/belle, vieux/vieil/vieille ; relier nom–adjectif ; placer 2 adjectifs ; transformation par relative |
+| Utiliser la forme affirmative et la forme négative avec ne ..... plus / ne .... jamais. | Gram. | Base | B7-1–4 (4) | 31–34 | 8 |  | négatif → affirmatif ; encore → ne … plus ; toujours → ne … jamais ; réponse oui/non ; choisir ne … pas/plus/jamais ; récit « pas vrai » à rétablir |
+| Utiliser des compléments essentiels et des compléments non-essentiels. | Gram. | Base | B8-1–5 (5) | 35–39 | 10 |  | relier phrase incomplète–GN ; ponctuer phrases complètes ; compléter (direct, indirect) avec dessin-indice ; question qui ?/quoi ?/à qui ? ; barrer les non essentiels ; enrichir ; remplacer un verbe ; 2 compléments essentiels ; 2 phrases sur dessin |
+| Utiliser le complément de lieu pour enrichir une phrase. | Gram. | Base | B9-1–5 (5) | 40–44 | 10 | 4 | séparer GNS/GV ; souligner ; relier ; compléter avec cadre ; question « où ? » ; chez / à la, au ; prépositions ; construire des phrases (dont négatives) ; 3 dessins |
+| Utiliser le complément de temps pour enrichir une phrase. | Gram. | Base | B10-1–5 (5) | 45–49 | 12 |  | entourer/souligner ; relier ; supprimer ; déplacer ; question « quand ? » ; réponses personnelles ; « depuis quand ? » ; place du complément ; 3 dessins (lieu + moment) |
+| Utiliser le complément de manière pour enrichir une phrase. | Gram. | Base | B11-1–4 (4) | 50–53 | 8 |  | souligner ; supprimer ; déplacer ; mot introducteur (sous/en/par/avec/de) ; adverbes du cadre ; compléter ; répondre par une phrase complète ; production avec compléments imposés |
+| Produire des énoncés personnels contenant des noms propres, des noms communs et des pronoms personnels sujets. | Gram. | Intégr. | I1-1–3 (3) | 56–58 | 4 |  | carte d'identité + tableau ; décrire 4 dessins ; décrire une scène (Mowgli) ; 4 phrases (marionnette) |
+| Produire des énoncés personnels intégrant des déterminants démonstratifs et possessifs. | Gram. | Intégr. | I2-1–4 (4) | 59–62 | 4 |  | GN du chaton + paragraphe + phrases exclamatives ; dialogues sur 6 vignettes ; 5 questions sur images ; paragraphe « ma famille » |
+| Produire des énoncés personnels enrichis par des adjectifs épithètes et attributs. | Gram. | Intégr. | I3-1–3 (3) | 63–65 | 4 |  | GN colonnes A/B + texte ; description d'un dessin ; avis de recherche ; expressions + situations |
+| Produire des énoncés personnels intégrant les deux formes affirmative et négative. | Gram. | Intégr. | I4-1–3 (3) | 66–68 | 4 |  | phrases sous dessins + récit ; 4 phrases négatives ; texte → affirmatif ; conseils négatifs avec personne imposée |
+| Produire des énoncés personnels intégrant des compléments essentiels et non-essentiels. | Gram. | Intégr. | I5-1–5 (5) | 69–73 | 4 |  | décrire un dessin avec étiquettes ; continuer un récit ; décrire 2 dessins + panneau ; récit « journée dans la forêt » |
+| Produire des énoncés personnels enrichis par des compléments de lieu. | Gram. | Intégr. | I6-1–4 (4) | 74–77 | 4 |  | 4 dessins (pêche) ; récit sur 3 dessins ; 5 conseils ; décrire 2 scènes |
+| Produire des énoncés personnels enrichis par des compléments de temps. | Gram. | Intégr. | I7-1–3 (3) | 78–80 | 4 |  | remise en ordre + titre ; emploi du temps ; lettre à compléter ; histoire d'un pêcheur sur 4 images |
+| Produire des énoncés personnels enrichis par des compléments de manière. | Gram. | Intégr. | I8-1–3 (3) | 81–83 | 3 |  | raconter une histoire en images avec étiquettes ; lettre (Joseph Meister) avec cadre ; texte sur l'éclairage |
+| Consolider l'utilisation des déterminants (articles définis et indéfinis). | Gram. | Remédiat. | R1-1–4 (4) | 86–89 | 9 |  | encadré de règle ; repérage ; déterminant différent ; déterminant « si nécessaire » ; défini → indéfini ; barrer ; compléter ; pluriel ; annonces ; nombres |
+| Consolider l'utilisation des noms propres et des noms communs. | Gram. | Remédiat. | R2-1–4 (4) | 90–93 | 5 |  | encadré de règle (nom propre : personne, animal, ville, pays, habitants, objet) ; relier ; devinettes ; compléter ; enveloppe ; légender une image + portrait |
+| Consolider l'utilisation des pronoms personnels sujets. | Gram. | Remédiat. | R3-1–3 (3) | 94–96 | 7 |  | encadré ; GN → pronom ; compléter ; éviter répétitions ; texte à trous ; trouver un début de phrase |
+| Consolider l'utilisation des déterminants démonstratifs et possessifs. | Gram. | Remédiat. | R4-1–5 (5) | 97–101 | 10 |  | encadré (tableau) ; relier possessif/démonstratif ; singulier ; ce/cet/cette/ces ; 4 dessins ; intrus ; questions-réponses |
+| Consolider l'utilisation des adjectifs épithètes. | Gram. | Remédiat. | R5-1–6 (6) | 102–107 | 8 |  | encadré ; compléter par adjectifs du cadre ; accord ; contraires ; relier ; enrichir ; GN + phrase ; texte à trous sur dessin |
+| Consolider l'utilisation des adjectifs attributs. | Gram. | Remédiat. | R6-1–5 (5) | 108–112 | 9 |  | encadré (être, paraître, devenir, rester, demeurer) ; classement épithète/attribut ; transformation dans les 2 sens ; de + adjectif ; adjectifs de la même famille ; verbes d'état ; intrus ; portrait |
+| Consolider l'utilisation de la forme affirmative et de la forme négative avec ne ... plus / ne ... jamais. | Gram. | Remédiat. | R7-1–4 (4) | 113–116 | 8 |  | encadré ; négatif ↔ affirmatif ; compléter la négation ; ordres négatifs ; interdictions ; réponse + explication |
+| Consolider l'utilisation des compléments essentiels et non-essentiels. | Gram. | Remédiat. | R8-1–5 (5) | 117–121 | 11 |  | encadré (verbe seul / direct / indirect) ; compléter ; classer par numéro ; souligner ; barrer ; enrichir ; tableau sujet–verbe–complément ; étiquettes ; production |
+| Consolider l'utilisation du complément de lieu dans la phrase simple. | Gram. | Remédiat. | R9-1–5 (5) | 122–126 | 8 |  | encadré (où ? ; déplacer ; supprimer) ; souligner ; déplacer ; compléter ; corriger des erreurs (niche/pigeonnier…) ; construire ; questions-réponses sur images |
+| Consolider l'utilisation du complément de temps dans la phrase simple. | Gram. | Remédiat. | R10-1–4 (4) | 127–130 | 6 |  | encadré (quand ?) ; souligner ; déplacer ; compléter ; remettre en ordre ; construire ; questions-réponses sur images |
+| Consolider l'utilisation du complément de manière dans la phrase simple. | Gram. | Remédiat. | R11-1–5 (5) | 131–135 | 7 |  | encadré (comment ? ; en + participe présent) ; relier (en …ant, sans, grâce à) ; adjectif → adverbe ; compléter ; étiquettes ; questions-réponses sur images |
+| Reconnaître les trois temps : présent, passé composé [et] futur. | Conj. | Base | B1-1–5 (5) | 138–142 | 10 | 4 | cocher le temps ; classer des indicateurs de temps ; schéma passé composé–présent–futur ; choisir le verbe conjugué ; relier ; transformer un texte (passé composé, futur) ; tableau |
+| Distinguer et utiliser un verbe conjugué et un verbe à l'infinitif. | Conj. | Base | B2-1–3 (3) | 143–145 | 11 |  | relier conjugué–infinitif ; compter les verbes conjugués ; souligner/encadrer ; relier ; venir de + infinitif ; avant de + infinitif ; nom → infinitif ; deux verbes à compléter |
+| Conjuguer les verbes en « er » ; les verbes en « ir » et des verbes usuels du 3ème groupe à l'impératif. | Conj. | Base | B3-1–4 (4) | 146–149 | 8 |  | repérer l'impératif ; terminaisons (soigner, choisir, prendre, mettre, faire) ; pronominaux ; forme négative ; pluriel ; transformer en impératif ; consignes ; ordres sur image |
+| Conjuguer les verbes « être » et « avoir » au passé composé et au futur. | Conj. | Base | B4-1–4 (4) | 150–153 | 10 |  | tableau ; PC ↔ futur ; relever infinitif/temps ; relier ; compléter ; être ↔ avoir ; dialogues |
+| Conjuguer les verbes du type « finir » au passé composé et au futur. | Conj. | Base | B5-1–4 (4) | 154–157 | 10 |  | repérer ; conjuguer ; barrer les intrus ; pluriel ; passé composé / futur de textes ; questions ; production sur 3 images |
+| Conjuguer les verbes « mettre » et « prendre » au passé composé et au futur. | Conj. | Base | B6-1–5 (5) | 158–162 | 8 | 1 | classer (intrus) ; tableau de formes (impératif compris) ; compléter selon le temps ; sing ↔ plur ; questions ; production à indications ; texte |
+| Conjuguer les verbes « aller » et « faire » au passé composé et au futur. | Conj. | Base | B7-1–4 (4) | 163–166 | 8 | 2 | tableaux ; compléter ; accord du participe (allé/ée/és/ées) ; faire + terminaison ; transformer ; remplacer par « faire » ; construire sur 6 dessins |
+| Conjuguer les verbes « lire », « dire » et « écrire » au passé composé et au futur. | Conj. | Base | B8-1–3 (3) | 167–169 | 6 |  | tableau (impératif compris) ; compléter ; sing ↔ plur ; indications ; questions ; paragraphe à trous |
+| Conjuguer les verbes « vouloir » et « pouvoir » au présent. | Conj. | Base | B9-1–4 (4) | 170–173 | 8 |  | terminaisons ; compléter ; tableau de croix ; conjuguer à la personne ; questions oui/non ; 3 scènes à imaginer |
+| Conjuguer des verbes pronominaux au présent, au futur et à l'impératif. | Conj. | Base | B10-1–5 (5) | 174–178 | 12 | 5 | tableaux ; relier ; pluriel ; pronoms manquants ; impératif ; compléter ; futur ; forme négative ; questions ; texte de verbes pronominaux |
+| Produire des énoncés personnels au présent, au passé composé et au futur. | Conj. | Intégr. | I1-1–3 (3) | 181–183 | 4 |  | questions sur images + regroupement ; textes mélangés à reclasser ; relever des verbes |
+| Produire des énoncés personnels contenant des verbes conjugués et des verbes à l'infinitif. | Conj. | Intégr. | I2-1–2 (2) | 184–185 | 2 |  | choisir la forme (colorier) ; compléter un récit imagé avec cadre de verbes |
+| Produire des énoncés personnels intégrant des verbes conjugués à l'impératif. | Conj. | Intégr. | I3-1–4 (4) | 186–189 | 6 | 2 | consignes d'hôtesse ; slogans ; notice (couronne) ; dialogues d'ordres ; panneaux d'interdiction |
+| Produire des énoncés personnels intégrant les verbes être et avoir au passé composé et au futur. | Conj. | Intégr. | I4-1–2 (2) | 190–191 | 3 |  | description d'un animal ; comparaisons ; futur « quand je serai grand » |
+| Produire des énoncés personnels intégrant des verbes du type finir au passé composé et au futur. | Conj. | Intégr. | I5-1–3 (3) | 192–194 | 3 |  | texte à trous + remise en ordre ; récit sur 4 dessins ; incendie du garage |
+| Produire des énoncés personnels intégrant des verbes du type mettre et prendre au passé composé et au futur. | Conj. | Intégr. | I6-1–3 (3) | 195–197 | 3 |  | préparatifs d'excursion ; paragraphe PC ; histoire en images PC → futur |
+| Produire des énoncés personnels intégrant les verbes aller et faire au passé composé et au futur. | Conj. | Intégr. | I7-1–2 (2) | 198–199 | 3 |  | paragraphe PC + futur ; expressions avec « faire » sur images ; paragraphes PC/futur |
+| Produire des énoncés personnels intégrant les verbes lire, écrire et dire au passé composé et au futur. | Conj. | Intégr. | I8-1–3 (3) | 200–202 | 3 |  | récit de voyage ; poème à transformer (personne, PC, futur) ; conjuguer + texte à trous |
+| Produire des énoncés personnels intégrant les verbes pouvoir et vouloir au présent. | Conj. | Intégr. | I9-1–2 (2) | 203–204 | 4 |  | récit avec répliques ; dialogue agence de voyage ; conseils aux touristes ; dialogues à trous + introduction |
+| Fiche supplémentaire — Produire des énoncés personnels intégrant des verbes pronominaux. | Conj. | Intégr. | I10-1–4 (4) | 205–208 | 3 |  | « La Belle au Bois Dormant » (verbes pronominaux, ordre) ; « La leçon de conduite » ; recommandations à l'impératif |
+| Consolider la distinction entre le présent, le passé composé et le futur | Conj. | Remédiat. | R1-1–5 (5) | 211–215 | 8 |  | encadré ; barrer les intrus ; relier ; choisir la forme ; axe du temps ; enrichir par un indicateur ; verbes entre parenthèses |
+| Consolider la distinction entre des verbes conjugués et des verbes à l'infinitif | Conj. | Remédiat. | R2-1–4 (4) | 216–219 | 7 |  | encadré ; relier ; souligner/classer ; choisir la forme ; nom → infinitif ; deux verbes ; fusionner deux phrases ; 6 dessins |
+| Consolider la conjugaison des verbes en er, en ir et des verbes usuels du 3è groupe à l'impératif (**début seulement : R 3-1, p.220 ; R 3-2…R 3-6 → L5b**) | Conj. | Remédiat. | R3-1 (1) | 220–220 | 1 |  | encadré (ordres, conseils, interdictions) ; réécrire à l'impératif |
+
+**Totaux p.1–220** (fiches-pages · exercices numérotés distincts · dont perfectionnement) :
+
+| Domaine | Type | Fiches-pages | Exercices | dont ✎✎ |
+| --- | --- | --- | --- | --- |
+| Grammaire | Base | 47 | 103 | 8 |
+| Grammaire | Intégr. | 28 | 31 | 0 |
+| Grammaire | Remédiat. | 50 | 88 | 0 |
+| Conjugaison | Base | 41 | 91 | 12 |
+| Conjugaison | Intégr. | 28 | 34 | 2 |
+| Conjugaison | Remédiat. | 10 | 16 | 0 |
+| **Total** | | **204** | **363** | **22** |
+
+## Ce que la banque couvre — lecture par notion (p.1–220)
+
+- **Grammaire (11 OS de base, 8 OS d'intégration, 11 OS de remédiation)** : déterminants (articles définis/indéfinis) ; noms propres/communs dans les GN ; pronoms personnels sujets ; déterminants démonstratifs ; déterminants possessifs ; adjectifs épithètes et attributs ; forme affirmative/négative avec ne … plus / ne … jamais ; compléments essentiels et non essentiels ; complément de lieu ; complément de temps ; complément de manière. **Aucun OS** n'est consacré, dans cette plage, aux types/formes de phrases (interrogative, exclamative, impérative), aux accords sujet–verbe / participe passé, ni à l'« enrichir/réduire » comme tel : ils n'apparaissent qu'incidemment (voir « À signaler »). Les homophones et accords sont attendus dans la partie Orthographe (p.221–…, lot L5b).
+- **Conjugaison (10 OS de base, 10 d'intégration dont une « fiche supplémentaire » pour les pronominaux, 10 de remédiation dont R 10 « fiche supplémentaire »)** : reconnaissance des 3 temps ; infinitif vs verbe conjugué ; impératif (verbes en -er, -ir et 3ᵉ groupe usuels) ; être/avoir ; type finir ; mettre/prendre ; aller/faire ; lire/dire/écrire ; vouloir/pouvoir ; pronominaux. Les OS B 4 à B 8 sont limités au **passé composé et au futur** (le présent de ces verbes n'est pas un OS, mais figure en support) ; l'**impératif** de mettre/prendre (B 6-1) et de lire/écrire/dire (B 8-1) est travaillé dans les tableaux. **Aucun** OS sur l'imparfait, le subjonctif, le passif ni le conditionnel (conforme au scope ⛔ de la fiche existante).
+- **Types d'activité dominants** : en base, exercices **fermés** (compléter, relier, transformer, barrer, souligner) à ~ 8–12 par objectif ; en intégration, **production** en situation (images, récits, dialogues, lettres, notices, slogans, avis de recherche) avec 2 à 4 exercices ; en remédiation, rappel de règle + exercices fermés guidés puis production courte.
+- **Réserve de contenu réutilisable (R-2 / salle blanche)** : les textes d'invention sont brefs et scolaires ; les œuvres tierces citées sont des titres (La Belle au Bois Dormant, Le Petit Chaperon rouge, Mowgli/Bagheera, Pinocchio [dessin], Robinson Crusoé, Charlot) et **un poème** (J. P. Schneider, I 8-2) — pas de reprise.
+
+---
+
+# § À signaler
+
+## A. Faits de langue absents du tableau de bord (guide 521612 p.18–19, tel que repris par `francais.md`) — à signaler, pas à trancher
+
+Les 11 + 10 OS ci-dessus **recouvrent** les faits de langue du tableau de bord ; ce qui suit sort de ses colonnes ou y est seulement sous-entendu :
+
+1. **Déterminants numéraux (nombres)** : B 1-3 ex 7 (« Attention ! ces déterminants sont des nombres » ; « exercice supplémentaire destiné à réviser les nombres »), R 1-4 ex 9 (« Révise les nombres »). Le tableau ne les cite pas.
+2. **Adverbes en -ment** et passage adjectif → adverbe : B 11-3 ex 5 (cadre attentivement, facilement, brusquement, rapidement), R 11-2 ex 2a (doux → doucement ; facile, gentil, propre, normal, général, mensuel, amical, jaloux, grave, brusque).
+3. **Gérondif / « en + participe présent »** comme complément de manière : B 11-1 ex 1 (« en cliquant sur la souris », « en lisant les journaux »), B 11-2 ex 4, R 11-1 encadré et ex 1a (« en suivi d'un participe présent (ant) »), R 11-4 ex 5. Prépositions de manière **« sans », « grâce à / grâce au »** : R 11-1 ex 1b–1c.
+4. **Proposition relative** : B 6-5 ex 11 (« L'élève, qui entre en classe, est nouvelle »), et supports (gram. B 5-2 ex 4 : « le premier chat qui franchira la clôture » ; conj. B 1-4 ex 8 : « le plan de l'immeuble que la municipalité veut construire »). Le tableau exclut les subordonnées (fiche § EXCLU).
+5. **Négations hors « ne … plus / ne … jamais »** : **ne … pas** (B 7-4 ex 7, R 7-1 encadré, I 4), **ne … rien** (R 1-1 ex 1 « on n'a rien entendu » ; B 7-2 ex 5b « Nous n'avons rien fait de mal »), **ne … que** (I 5-2 ex 2a : « Ils ne font que cela. »). Le tableau ne cite que ne … plus / ne … jamais.
+6. **Compléments « directs » / « indirects »** : le Fichier-classe emploie les consignes « compléments essentiels (directs) / (indirects) » et les questions qui ? quoi ? à qui ? à quoi ? de qui ? de quoi ? (B 8-2 ex 3, B 8-3 ex 4–5, R 8-1 encadré, R 8-2 ex 2b, R 8-5 ex 11) ; le tableau n'emploie que « essentiel / non essentiel ». Métalangage **G.N.S. / G.V.** (« Sépare par un trait les G.N.S des G.V. », gram. B 9-1 ex 1, B 10-1 ex 2) idem.
+7. **Forme interrogative produite par l'élève** (« Pose la question… », « Trouve les questions qui correspondent aux réponses ») : gram. B 5-4 ex 10, B 10-3 ex 7, R 9-5 ex 8b, R 10-4 ex 6b, R 11-5 ex 7b ; conj. B 5-3 ex 8b, B 6-4 ex 7 ; mots interrogatifs où ? quand ? comment ? depuis quand ? avec quoi ? grâce à quoi ?. **Forme exclamative** : I 2-1 ex 1c (« Comme … ! », « Qu'il … ! »). Le tableau ne les range pas en grammaire de 6ᵉ (seulement l'intonation, en phonétique).
+8. **Semi-auxiliaires** « venir de + infinitif » (B 2-2 ex 6), « aller + infinitif » (B 2-2 ex 4 « va regarder » ; R 1-1 ex 1 classe « on va s'amuser », « elle va danser » parmi les **intrus** des listes de futur), « avant de + infinitif » (B 2-2 ex 7, B 2-3 ex 8–9), « être en train de » (B 2-2 ex 5), « sans + infinitif », « arrêter de + infinitif ». Le tableau limite l'infinitif aux « prépositions à / de / par / pour / sans » (M1).
+9. **Pronoms compléments** (me, te, le, la, l', lui, leur, y, en) présents comme supports sans être l'objet d'un OS : « Elle la présente à ses amies » (R 4-4 ex 8), « On y projette des films » (R 2-2 ex 2b), « Je vous rendrai votre appareil photographique… » (gram. B 10-1 ex 2), « te sera très utile » (gram. B 5-1 ex 1), « ne me prive jamais de dessert » (conj. B 10-1 ex 2a), « l'a bien récité » (conj. B 2-1 ex 3). Le tableau ne vise que les pronoms personnels **sujets**.
+10. **Verbes d'état** : l'encadré R 6-1 liste **être, paraître, devenir, rester, demeurer** ; les exercices ajoutent **sembler** (B 6-5 ex 10, R 6-4 ex 7–8) et **avoir l'air** (R 6-4 ex 8 : « Tu as l'air heureux », présent dans la liste d'énoncés à analyser).
+11. **Verbes de conjugaison élargis** : B 6-1 liste (remettre, permettre, promettre, émettre, comprendre, apprendre, reprendre, surprendre ; intrus attendre, rendre) ; B 6-4 ex 6 **commettre** ; B 8-2 ex 3a **relire, réécrire, redire**, B 8-3 ex 4 **décrire** ; B 10 : **se débattre, se tendre, se courber, s'écarter, se lasser** ; I 10 : **intervenir, s'endormir, se piquer, se douter, se jeter, s'y accrocher** ; B 5-1 ex 3 : **élargir, pourrir, bondir, fleurir, rougir** comme verbes en « finir » (et **cueillir, sortir, dormir, partir** comme **intrus**). Le tableau ne liste que les verbes-types.
+12. **Impératif** : forme **négative** (B 3-2 ex 4 ; R 7-3 ex 6 ; B 10-4 ex 9 impératif négatif pronominal), 1ʳᵉ pers. du pluriel (« Sortons… »), alternance **tu / vous** (B 3-4 ex 8 « ou »), et **« il faut + infinitif » ↔ impératif** (B 3-1 ex 1c, B 3-3 ex 7). **Impératif de lire/écrire/dire** et **de mettre/prendre** présent aux tableaux B 8-1 et B 6-1 alors que l'OS ne cite que « passé composé et futur ».
+13. **Accord** : accord du participe passé avec **être** (aller : « all…é / ée / és / ées », B 7-1 ex 3) = M8 du tableau ✓ ; mais aussi « il a été **récompensé** » / « ils ont été récompensé[s] » (conj. B 4-4 ex 9a, exemple) = **être + participe passé, sens passif** (forme passive hors scope) ; accord **épithète au pluriel / de + adjectif antéposé** (« de bonnes idées », R 6-3 ex 3c–4 : « Que remarques-tu ? ») ; accord de **« tout »** (« tout est … », B 6-5 ex 10).
+14. **Adjectifs à doublet** : **nouveau/nouvel/nouvelle, beau/bel/belle, vieux/vieil/vieille** (B 6-3 ex 7, R 5-2 ex 2) — proches du M7 (« beau/belle ») mais les formes « bel / vieil / nouvel » ne sont pas citées ; **adjectifs de nationalité / de couleur** (« sénégalaise », gram. B 6-1 ex 1) incidents.
+15. **Comparaisons** (« fort comme un lion », « plus froid qu'un serpent », « une faim de loup ») : I 4-1 ex 2 — figure de style (exclue du 6ᵉ par la fiche) ou simple expression ? À trancher.
+16. **Lexique** (hors faits de langue) : antonymes (R 5-3 ex 3), mots de la même famille (R 6-3 ex 5b : amitié → amical…), noms ↔ infinitifs (B 2-3 ex 10), devinettes lexicales (R 2-2 ex 2).
+17. **Phrase « simple »** : les OS R 9, R 10, R 11 disent « dans la phrase simple » ; la fiche existante parle de « phrase complexe au programme » (oral p.27) — pas de support en grammaire sur cette notion dans la plage L5a.
+18. **Termes de remédiation** : l'encadré R 5-1 dit « L'adjectif épithète peut se placer avant ou après le nom avec lequel il s'accorde » (pas d'« adjectif qualificatif ») ; B 6-2 ex 3 parle d'« adjectif épithète de la marge ».
+
+## B. Écarts guide ↔ Fichier-classe, structure
+
+1. **Aucune correspondance imprimée avec les modules M1–M8** : le Fichier-classe numérote par **objectif spécifique** et « suit l'ordre chronologique de la répartition annuelle » (p.2) ; le rapprochement indiqué en § 0 (B 1 → M1, B 4–5 → M2 …) est une **déduction à confirmer** contre le tableau de bord.
+2. **Ordre des objectifs** : le Fichier-classe place **démonstratifs (B 4) avant possessifs (B 5)**, et **adjectifs (B 6)** avant **négation (B 7)**, puis les trois compléments (B 8 à B 11) ; en conjugaison **impératif (B 3) avant être/avoir (B 4)**. Concorde avec l'ordre M2 → M8 de la fiche existante.
+3. **OS imprimés « fautifs »** (à ne pas recopier) : B 1 (conj.) « présent, passé composé futur » ; B 8 « érire » ; B 3-4 « du 1er du 2ème groupes » (3ᵉ groupe oublié) ; **B 10-2 à B 10-5 (grammaire)** : case 3 = « compléments de **lieu** » alors que la fiche traite du **temps** (erreur de recopie de B 9) ; B 10-1 « Utiliser le compléments de temps » ; R 10 / R 11 : répertoire « R10–1 à R10-4 » / « R11–1 à R11-5 » (tirets différents, sans conséquence).
+4. **Compétence visée** : toujours « Intégrer les acquis liés aux règles de fonctionnement de la langue. » (case 2) pour la grammaire et la conjugaison ; la compétence d'expression écrite (« mettre en œuvre des stratégies d'écriture : planifier, mettre en texte, réviser ») ne concerne que la partie Expression écrite (L5b).
+5. **Fiches « supplémentaires »** : I 10 et R 10 (conjugaison, verbes pronominaux) sont explicitement « Fiche supplémentaire » au répertoire ; la **base B 10** (pronominaux) n'est pas étiquetée supplémentaire.
+6. **Perfectionnement** : seuls 22 exercices sur 363 (≈ 6 %) portent deux crayons ; **aucune fiche de grammaire I ou R** n'en comporte ; les ✎✎ de conj. I 3-4 (ex 5–6) sont les seuls en intégration.
+
+## C. Erreurs / anomalies d'impression (à ne pas reproduire, déjà marquées [sic] dans le corps)
+
+- **Erreur de fait** : B 10-2 ex 5, « En **1942**, Christophe Colomb a découvert l'Amérique » (1492 attendu).
+- **Consignes/modèles incohérents** : B 4-3 ex 6b (item « Vous n'… pas **dû** faire… » = passé composé dans la série « futur » ; l'item attendu au futur n'est pas fourni) ; B 9-2 ex 3 (2ᵉ et 3ᵉ lignes se répètent : « Cet élève ne … pas sortir. Je prépare une enquête… ») ; B 10-2 ex 6 (consigne copiée de l'ex 5 : « Réécris … en déplaçant » alors qu'il s'agit de compléter) ; B 10-4 ex 10 (consigne « Transforme le texte obtenu au futur » alors que la tâche est un questionnaire) ; B 10-4 ex 9 (exemple « ne nous moquons pas de **vos** amis » [sic]) ; B 3-2 ex 3 (« les trois verbes pronominaux » pour quatre verbes) ; B 7-4 ex 8 (« Phrases au **passé futur** » [sic]) ; R 4-3 ex 6 (« trois phrases » pour quatre dessins) ; R 8-2 ex 2b (« de quoi ? de quoi ? » au lieu de « de qui ? ») ; R 7-1 encadré (« Est-ce qu'il fait encore ? » sans « pleut » ; « Nom » pour « Non ») ; R 6-3 ex 4 (« Un bonne idée ») ; R 2-1 encadré (« Ils est à l'infinitif ») ; B 7-2 ex 3 (« Il n'y jamais » : « a » oublié) ; R 4-2 ex 4 (« Les examens auront lieu … jours-ci ? » point d'interrogation sur un énoncé affirmatif) ; B 9-1 en-tête (OS tronqué) ; B 9-1 conj. ex 1 (ligne parasite « L'entraîneur réunit… » recopiée de B 3-1)
+- **Mots mal orthographiés dans les supports** (liste non exhaustive) : « portofolios » (B 9-1 conj. ex 2), « parcque » (B 7-1 conj. ex 3), « jounal » (B 4-4 conj. ex 10), « fânées » (R 6-4 ex 6), « applandi » (R 1-5 ex 8), « predre » (R 2-4 ex 7), « pécheurs » (B 10-5 conj. ex 11 titre), Aucun n'est corrigé dans le corps : ils sont `[sic]` ou cités tels quels.
+
+## D. Ce qui n'est pas retranscrit (supports illustrés) — `[?]`
+
+- Les **dessins/photos** sont décrits en une phrase mais **jamais transcrits** ; les exercices suivants **n'ont de sens qu'avec l'image** et ne sont pas rejouables sans elle : gram. B 2-4 ex 8, B 8-2 ex 3 (indices-images), B 8-5 ex 10, B 9-5 ex 10, B 10-5 ex 12 ; I 1-1 ex 2, I 1-2/1-3 ex 3, I 2-2 ex 2, I 2-3 ex 3b, I 3-2 ex 2, I 4-1 ex 1, I 5-1 ex 1, I 5-3 ex 3, I 6-1 ex 1, I 6-2 ex 2, I 6-4 ex 4, I 7-3 ex 4, I 8-1 ex 1, I 8-2 ex 2 ; R 2-4 ex 5, R 4-3 ex 6, R 4-4 ex 8, R 5-6 ex 8, R 9-5 ex 8, R 10-4 ex 6, R 11-5 ex 7 ; conj. B 3-4 ex 8, B 5-4 ex 10, B 7-4 ex 8, B 9-4 ex 8, B 10-5 ex 11 ; conj. I 1-1 ex 1, I 2-1 ex 2, I 3-3 ex 4, I 3-4 ex 5, I 4-2 ex 3, I 5-2 ex 2, I 5-3 ex 3, I 6-3 ex 3, I 7-1/7-2 ex 2, I 9-1 ex 1–2 ; conj. R 2-1 (illustration d'encadré), R 2-4 ex 7, R 3-1.
+- Les **soulignements, mots en gras, mots barrés** de la mise en page ne passent pas dans la couche texte : ils sont rendus par la consigne (« les mots soulignés ») mais **la position exacte** des mots soulignés n'est pas relevée (ex. B 1-2 ex 5, B 1-3 ex 6, B 4-4, B 6-4…). Un second passage en vision serait nécessaire pour les restituer.
+- Les **tableaux à cases** (B 1-1 ex 1, B 6-1 ex 2, B 7-1 ex 1, B 9-2 ex 4, B 1-5 ex 10) sont décrits (colonnes, lignes) avec leurs en-têtes ; leurs cases à remplir sont vides à l'impression.
+- `[?]` I 1-2 ex 4 : deux textes mélangés en deux colonnes ; l'attribution exacte des phrases à chacun des deux textes n'est pas relevée phrase par phrase (le lecteur reconstituera).
+- `[?]` I 3-1 ex 1a : la colonne B (adjectifs) est lue en deux sous-colonnes ; l'appariement exact de chaque adjectif à un nom n'est pas imprimé (choix libre).
+- Aucune page de la plage 1–220 n'est illisible.
 
