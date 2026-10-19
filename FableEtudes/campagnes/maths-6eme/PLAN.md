@@ -28,3 +28,13 @@ Couche texte inexploitable (fonte privée, mojibake) : lecture **à l'image** un
 | L6 | 502603 | p.166–189, 191–208 |
 
 Puis : rédacteur de la fiche (opus), audit R-7 (opus), registre, PR, merge. Le gisement suit.
+
+## 3. Arbitrages du propriétaire (2026-10-19, sur les questions §6.2 de la fiche)
+
+| | Question | Décision |
+| --- | --- | --- |
+| **M1** (Q-1) | × de deux fractions | **Au programme** : le critère مع 2 du T3 (« الجمع والطّرح والضّرب في مجموعة الأعداد الكسريّة », guide p.153, 154, 192) fait foi ; كسر × كسر s'enseigne au ch. `13-multiplication-fraction-entier` (cours + exercices), en plus de fraction × entier. |
+| **M2** (Q-2) | Aire de la couronne | **Enseignée** au ch. `21-cercle-disque` (objectif de la مذكرة 46, p.133 ; manuel ص 135 ex. 10). |
+| **M3** (Q-3) | Somme des angles = 180° | **Rencontrée, non enseignée** : jamais demandée ; un exercice repris qui la suppose est reformulé. |
+| **M4** (Q-9 + leçon 24) | Notions sans chapitre | **Deux chapitres neufs** au passage de contenu : « périmètre d'une figure composée » (leçon 24, ص 67–69) et « diagrammes en bâtons » (critère مع 1 du T2, p.182). Slugs suivants libres (`25-…`, `26-…`), placés par `displayOrder` ; manifeste mis à jour dans la PR de contenu. |
+| — | Q-4 à Q-8, Q-10, Q-E1 | Défauts de la fiche (§6.2), révisables. |
