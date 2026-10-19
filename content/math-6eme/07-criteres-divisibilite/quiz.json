@@ -12,7 +12,9 @@
       "correctOption": "b",
       "explanation": "العددُ يقبل القسمة على 2 إذا كان رقمُ آحاده زوجيًّا؛ آحادُ 58 هو 8 (زوجيّ)، فهو يقبل القسمة على 2.",
       "difficulty": 1,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 5؟",
@@ -25,20 +27,24 @@
       "correctOption": "c",
       "explanation": "العددُ يقبل القسمة على 5 إذا كان آحاده 0 أو 5؛ آحادُ 75 هو 5، فهو يقبل القسمة على 5.",
       "difficulty": 1,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
       "prompt": "هل يقبل العددُ 423 القسمةَ على 3؟",
       "options": [
-        { "id": "a", "text": "نعم لأنّ مجموع أرقامه 9" },
-        { "id": "b", "text": "لا" },
-        { "id": "c", "text": "نعم لأنّ آحاده 3", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
-        { "id": "d", "text": "لا لأنّه عددٌ فرديّ", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" }
+        { "id": "a", "text": "نعم، لأنّ آحاده 3", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "b", "text": "لا، لأنّه عددٌ فرديّ", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "c", "text": "نعم، لأنّ مجموع أرقامه 9" },
+        { "id": "d", "text": "لا، لأنّ آحاده ليس 0 ولا 5", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" }
       ],
-      "correctOption": "a",
-      "explanation": "مجموعُ أرقام 423 هو 4 + 2 + 3 = 9، و9 يقبل القسمة على 3، فالعددُ 423 يقبلها.",
+      "correctOption": "c",
+      "explanation": "مجموعُ أرقام 423 هو 4 + 2 + 3 = 9، و9 مضاعفٌ للعدد 3، فالعددُ 423 يقبل القسمة على 3. رقمُ الآحاد لا يكفي للحكم هنا.",
       "difficulty": 2,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 10؟",
@@ -51,7 +57,9 @@
       "correctOption": "b",
       "explanation": "العددُ يقبل القسمة على 10 إذا كان آحاده 0؛ آحادُ 200 هو 0، فهو يقبل القسمة على 10.",
       "difficulty": 2,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
       "prompt": "العددُ الذي يقبل القسمة على 9 يقبل أيضًا القسمة على:",
@@ -64,7 +72,39 @@
       "correctOption": "a",
       "explanation": "بما أنّ 9 = 3 × 3، فكلُّ عددٍ يقبل القسمة على 9 يقبلها على 3 أيضًا.",
       "difficulty": 2,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "ما باقي قسمة العدد 3046 على 9 دون إجراء القسمة؟",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "4" },
+        { "id": "c", "text": "6", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "d", "text": "13", "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur" }
+      ],
+      "correctOption": "b",
+      "explanation": "نجمع أرقام العدد: 3 + 0 + 4 + 6 = 13، وباقي قسمة 13 على 9 هو 4، فباقي قسمة 3046 على 9 هو 4. الباقي أصغر دائمًا من القاسم، فلا يصحّ أن نترك 13.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "كم رقمًا يصلح مكان ▢ في العدد 3▢2 ليقبل القسمة على 3؟",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "4" }
+      ],
+      "correctOption": "c",
+      "explanation": "مجموع الرقمين المعروفين 3 + 2 = 5، ونبحث عن ▢ يجعل 5 + ▢ مضاعفًا لـ 3: ▢ = 1 أو 4 أو 7 (المجاميع 6 و9 و12)، أي 3 أرقام: 312 و342 و372.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     }
   ]
 }
