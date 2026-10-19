@@ -45,3 +45,22 @@ Tous les correctifs de `audits/audit-B1.md` sont appliqués avec les textes de l
 - F9 : tableaux de plus de 3 colonnes scindés (temps du chap. 01 en deux tableaux ; possessifs, impératif — 6 colonnes, un tableau par paire de verbes —, et a/à du chap. 02). Je n'ai pas mesuré les 4 colonnes en Chromium : scission par prudence.
 - Écart assumé : pour m-2 et m-10, les explications des `short_answer` nomment désormais la réponse (texte de l'auditeur), contre la consigne du schéma ; `content:qa` ne les signale pas.
 - Contrôles relancés sur le corpus réel : `content:check` vert, `content:qa` sans erreur, `content:tranche` clé la plus longue 0/49, `prettier --check` vert, rendu des cours et résumés sans `:::` ni astérisque (vitest jeté).
+
+## Missions du gisement (lot M1)
+Fichiers (`content/french-6eme/`), 66 questions :
+- `01/exercices/06-exams-2009-2025-temps-de-la-phrase` (m001, d2, 8 q) ; `07-devoir-classer-les-mots` (m002, 6 q) ; `08-devoir-presenter-un-metier` (m003, 6 q).
+- `02/exercices/06-exams-2015-2025-ce-cet-cette-ces-mon-son-leur` (m004, 10 q) ; `07-exams-2009-2026-imperatif-fais-parler` (m005, 11 q) ; `08-exam-2026-lecture-dix-jours-sans-ecran` (m006, 10 q) ; `09-exams-2013-2026-recit-dispute-ecrans` (m007, d3 boss, 8 q) ; `10-devoir-relier-enumerer-rediger` (m008, 7 q).
+- `chapter.json` des deux chapitres : lignes `sources[]` examens et devoirs ajoutées. Aucune étiquette créée.
+
+Étiquetage des distracteurs de QCM : m001 20/24, m002 10/12, m003 12/12, m004 16/30, m005 25/30, m006 21/27, m007 13/15, m008 9/12. m004 est bas : possessifs et accord « changer de personne » (votre/vos, mes/mon…) n'ont pas d'id exact (muets honnêtes).
+
+Contrôles : `content:check` vert ; `content:qa` 0 erreur ; `content:tranche` clé la plus longue 0/103, positions 22/30/22/25 % ; `prettier --check` vert ; `content:gisement:controle` sur les 3 fichiers de devoir : 0 plage de 8 mots. Paires proches restantes (4) : les deux vides d'une même phrase officielle (m004 q1-q2, q3-q4, q7-q8) et deux questions sur un même texte de devoir (m008 q1-q3, 0,46) : exercices parallèles voulus, données identiques par construction. Gabarits : 3 groupes « synonyme/contraire d'un texte » partagés avec les chapitres 05, 06, 08 des autres lots (geste imposé par l'épreuve).
+
+Adaptations et écarts :
+- m006 q1 : le sujet demande de cocher les personnages qui « rejettent » l'idée ; la clé officielle n'étant pas publiée (Louis se moque, Gordon prédit l'échec, Pablo s'en indigne), la question redonne la consigne puis demande « quel personnage annonce l'échec » (Gordon seul). q3 (qui dit « chouette ») est une déduction ajoutée ; m006 n'a pas de question libre sur « donne deux éléments » : QCM et `multi`.
+- m005 : 11 questions (item 2022 réduit à « apprenez » avec « faites » donné pour ne pas redemander `02/02-boss#4`) ; « soyez » : le paradigme d'être est donné dans l'énoncé (rappel), il n'est pas enseigné au chapitre. « venez », « reviens », « apprenez » : formes de verbes d'un chapitre ultérieur ou hors liste, tous donnés ou à choisir parmi les options.
+- m008 : les deux appariements sont équilibrés (3/3), le `matching` n'admet pas d'option en trop ; la troisième question est un QCM de vérité d'après le texte (permutation des personnages en leurre).
+- m004 q7 : « Cette nuit-là » ; q5 : le blanc « toutes » est donné ; m004 q3-q4 : le blanc « nombreuses » est donné.
+- Items écartés : aucun de la carte ; C11#8 et C01#8 hors lot.
+- Notions données dans l'énoncé : paradigme de l'impératif d'être (m005), consignes officielles redonnées à chaque question.
+- Doutes : m006 q8-q10 (synonymes/contraires) : les clés « stupide », « désagréable », « plaisir » sont ma lecture, le sujet ne publie pas de corrigé ; m003/m002 sont des textes inventés (salle blanche, la carte seule lue).
