@@ -1,0 +1,159 @@
+{
+  "title": "⭐⭐ تمرين مراجعة (نمط امتحان): محيط الشكل المركّب",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "ساحة مكوّنة من مربّع ضلعه 5 م ومثلّث متقايس الأضلاع ضلعه 5 م ملتصق بضلعه العلويّ. كم ضلعًا على الحدّ الخارجيّ للشكل؟\n<svg viewBox=\"0 0 360 240\"><path d=\"M140 130 L220 130 L220 210 L140 210 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M140 130 L180 60.7 L220 130 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M180 60.7 L220 130 L220 210 L140 210 L140 130 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M140 130 L220 130\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M154.8 92.4 L165.2 98.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M205.2 92.4 L194.8 98.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M226 170 L214 170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M180 216 L180 204\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M134 170 L146 170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"180\" y=\"232\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 أضلاع"
+        },
+        {
+          "id": "b",
+          "text": "6 أضلاع",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        },
+        {
+          "id": "c",
+          "text": "7 أضلاع",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "8 أضلاع"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "للمربّع 4 أضلاع وللمثلّث 3، أي 7. لكنّ الضلع المشترك داخل الشكل فيُحذف من القطعتين، فيبقى 3 من المربّع وضلعان من المثلّث: 5 أضلاع. من وجد 7 عدّ الضلع المشترك مرّتين، ومن وجد 6 حذفه من قطعة واحدة.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "مستطيل طوله 12 م وعرضه 5 م، ألصقنا بضلعه العلويّ مثلّثًا متقايس الأضلاع ضلعه 12 م. ما محيط الشكل؟\n<svg viewBox=\"0 0 360 275\"><path d=\"M96 161.5 L264 161.5 L264 231.5 L96 231.5 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M96 161.5 L180 16 L264 161.5 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M180 16 L264 161.5 L264 231.5 L96 231.5 L96 161.5 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M96 161.5 L264 161.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M227.2 85.7 L216.8 91.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M132.8 85.7 L143.2 91.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M180 155.5 L180 167.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"180\" y=\"253.5\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">12</text><text x=\"280\" y=\"201.5\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "34 م"
+        },
+        {
+          "id": "b",
+          "text": "46 م"
+        },
+        {
+          "id": "c",
+          "text": "58 م",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "70 م",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الضلع المشترك 12 م داخل الشكل. على الحدود من المثلّث ضلعاه 12 + 12 ومن المستطيل القاعدة 12 والضلعان 5 + 5: 24 + 22 = 46 م. 34 محيط المستطيل وحده، و70 مجموع المحيطين 34 + 36، و58 يحذف الضلع المشترك مرّة واحدة فقط.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "نافذة مستطيلة عرضها 60 سم وارتفاعها 80 سم، يعلوها نصف دائرة قطرها عرض النافذة. ما محيطها بالسنتيمتر؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 210\"><path d=\"M135 56 L135 176 L225 176 L225 56 A45 45 0 0 0 135 56 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M135 56 L135 176 L225 176 L225 56 A45 45 0 0 0 135 56\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M135 56 L225 56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">60 cm</text><text x=\"123\" y=\"121\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">80 cm</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "220 سم"
+        },
+        {
+          "id": "b",
+          "text": "314,2 سم"
+        },
+        {
+          "id": "c",
+          "text": "374,2 سم"
+        },
+        {
+          "id": "d",
+          "text": "408,4 سم"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "القوس 3,14 × 60 ÷ 2 = 94,2 سم. على الحدود الضلعان العموديّان 80 + 80 والقاعدة 60، أي 220 سم، فالمحيط 220 + 94,2 = 314,2 سم. من أضاف القطر 60 وجد 374,2، ومن وضع دائرة كاملة 188,4 وجد 408,4، ومن نسي القوس وجد 220.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "على تصميم بالسلّم 1/200 محيط قطعة أرض 15 سم، وتُباع لفائف السياج بطول 25 م للّفة. كم لفّة نشتري؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 لفّة",
+          "misconceptionTag": "math.num.arrondi-par-troncature"
+        },
+        {
+          "id": "b",
+          "text": "2 لفّتان"
+        },
+        {
+          "id": "c",
+          "text": "6 لفّات"
+        },
+        {
+          "id": "d",
+          "text": "120 لفّة"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المحيط الحقيقيّ 15 × 200 = 3 000 سم = 30 م، وعدد اللفائف 30 ÷ 25 = 1,2. لفّة واحدة تغطّي 25 م فقط فلا تكفي، فنشتري لفّتين. من قطع 1,2 عند 1 نقصه سياج، ومن قسم 3 000 على 25 دون تحويل إلى المتر وجد 120.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "طريق مستقيم طوله 48 م نغرس على جانبه شجيرات كلّ 3 م، وتُغرس شجيرة عند كلّ من طرفيه. كم شجيرة نغرس؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "15 شجيرة"
+        },
+        {
+          "id": "b",
+          "text": "16 شجيرة"
+        },
+        {
+          "id": "c",
+          "text": "17 شجيرة"
+        },
+        {
+          "id": "d",
+          "text": "48 شجيرة"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "عدد المسافات 48 ÷ 3 = 16. وعلى خطّ مفتوح له بداية ونهاية نزيد شجيرة: 16 + 1 = 17. أمّا على حدّ مغلق فيساوي عدد الغرسات عدد المسافات (16)، فلا نخلط بين الحالتين.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "مستطيل طوله 30 م وعرضه 10 م، انتُزع من أحد ضلعيه القصيرين نصف قرص قطره 10 م (قوس مقعّر). ما محيط الشكل؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 170\"><path d=\"M130 70 L290 70 A40.0 40.0 0 0 0 290 150 L130 150 L130 70 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130 70 L290 70 A40.0 40.0 0 0 0 290 150 L130 150 L130 70 \" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M290 70 L290 150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"210\" y=\"60\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">30</text><text x=\"308\" y=\"115\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">10</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "64,3 م"
+        },
+        {
+          "id": "b",
+          "text": "70 م"
+        },
+        {
+          "id": "c",
+          "text": "80 م"
+        },
+        {
+          "id": "d",
+          "text": "85,7 م"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "الضلع القصير المنتزع نصفه حلّ محلّه قوس 3,14 × 10 ÷ 2 = 15,7 م، وهو على الحدّ كالقوس المضاف. المحيط 30 + 30 + 10 + 15,7 = 85,7 م. من طرح القوس وجد 64,3، ومن أهمله وحذف الضلع وجد 70، ومن ترك محيط المستطيل وجد 80.",
+      "difficulty": 2
+    }
+  ]
+}

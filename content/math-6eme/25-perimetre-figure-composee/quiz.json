@@ -1,0 +1,128 @@
+{
+  "title": "اختبار فهم الدرس ⭐",
+  "questions": [
+    {
+      "prompt": "عند حساب محيط شكل مكوّن من قطعتين ملتصقتين، أيّ الأضلاع لا ندخلها في المحيط؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "الضلع الأطول بين أضلاع القطعتين"
+        },
+        {
+          "id": "b",
+          "text": "الضلع المشترك بين القطعتين"
+        },
+        {
+          "id": "c",
+          "text": "الأضلاع المائلة على الشكل كلّها"
+        },
+        {
+          "id": "d",
+          "text": "الضلع الذي كُتب عليه طوله"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الضلع المشترك تلتقي عنده القطعتان، فهو داخل الشكل وليس على حدّه الخارجيّ؛ والمحيط هو طول الحدّ الخارجيّ، فلا يُحسب هذا الضلع. أمّا الأضلاع الأخرى، طويلة أو مائلة أو مكتوبة الطول، فكلّها على الحدود إن لم تكن مشتركة.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "ساحة مركّبة من مربّع ضلعه 6 م ومثلّث متقايس الأضلاع ضلعه 6 م ملتصق بضلعه العلويّ. ما محيطها؟\n<svg viewBox=\"0 0 360 240\"><path d=\"M140 130 L220 130 L220 210 L140 210 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M140 130 L180 60.7 L220 130 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M180 60.7 L220 130 L220 210 L140 210 L140 130 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M140 130 L220 130\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M154.8 92.4 L165.2 98.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M205.2 92.4 L194.8 98.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M226 170 L214 170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M180 216 L180 204\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M134 170 L146 170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"180\" y=\"232\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "24 م"
+        },
+        {
+          "id": "b",
+          "text": "30 م"
+        },
+        {
+          "id": "c",
+          "text": "36 م",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "42 م",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الضلع المشترك داخل الشكل، فعلى الحدود 3 أضلاع من المربّع وضلعان من المثلّث: 5 أضلاع طول كلّ منها 6 م، والمحيط 5 × 6 = 30 م. من جمع محيطي القطعتين 24 + 18 وجد 42 م، ومن حذف الضلع المشترك مرّة واحدة وجد 6 أضلاع أي 36 م.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ما طول نصف دائرة قطرها 14 سم؟ (π ≈ 3,14)",
+      "options": [
+        {
+          "id": "a",
+          "text": "21,98 سم"
+        },
+        {
+          "id": "b",
+          "text": "35,98 سم"
+        },
+        {
+          "id": "c",
+          "text": "43,96 سم"
+        },
+        {
+          "id": "d",
+          "text": "153,86 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "طول نصف الدائرة نصف محيط الدائرة الكاملة: 3,14 × 14 ÷ 2 = 43,96 ÷ 2 = 21,98 سم. 43,96 هو محيط الدائرة كلّها، و35,98 يضيف القطر 14 فهو محيط نصف قرص، و153,86 مساحة قرص نصف قطره 7 لا طول.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "نافذة مستطيلة عرضها 4 م وارتفاعها 5 م، يعلوها نصف دائرة قطرها عرض النافذة. ما محيطها؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 210\"><path d=\"M124 36 L124 176 L236 176 L236 36 A56 56 0 0 0 124 36 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M124 36 L124 176 L236 176 L236 36 A56 56 0 0 0 124 36\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M124 36 L236 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"180\" y=\"198\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><text x=\"112\" y=\"111\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "14 م"
+        },
+        {
+          "id": "b",
+          "text": "20,28 م"
+        },
+        {
+          "id": "c",
+          "text": "24,28 م"
+        },
+        {
+          "id": "d",
+          "text": "26,56 م"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "على الحدود ضلعان عموديّان 5 + 5 والقاعدة 4، أي 14 م، ثمّ القوس 3,14 × 4 ÷ 2 = 6,28 م: المحيط 14 + 6,28 = 20,28 م. القطر العلويّ 4 م داخل النافذة فلا يُضاف (وإلّا وجدنا 24,28)، ولا نضع دائرة كاملة مكان القوس (وإلّا وجدنا 26,56).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "نغرس أعمدة على حدّ مغلق محيطه 30 م بمسافة 2 م بين عمودين متتاليين. كم عمودًا نغرس؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "14 عمودًا"
+        },
+        {
+          "id": "b",
+          "text": "15 عمودًا"
+        },
+        {
+          "id": "c",
+          "text": "16 عمودًا"
+        },
+        {
+          "id": "d",
+          "text": "60 عمودًا"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "على حدّ مغلق عدد الأعمدة يساوي عدد المسافات: 30 ÷ 2 = 15، لأنّ العمود الأخير ينتهي عند الأوّل. ولا نضيف عمودًا كما نفعل على خطّ مفتوح (16)، ولا ننقص واحدًا (14).",
+      "difficulty": 2
+    }
+  ]
+}

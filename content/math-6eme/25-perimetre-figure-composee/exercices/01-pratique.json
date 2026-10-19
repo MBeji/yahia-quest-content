@@ -1,0 +1,159 @@
+{
+  "title": "⭐ تمرين: أوّلُ خطوات مع محيط الشكل المركّب",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "مربّعان ضلع كلّ منهما 3 سم، ألصقنا أحدهما بالآخر على ضلع مشترك فصنعا مستطيلًا. ما محيط الشكل الناتج؟\n<svg viewBox=\"0 0 360 170\"><path d=\"M110 40 L250 40 L250 110 L110 110 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M110 40 L250 40 L250 110 L110 110 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M180 40 L180 110\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"145\" y=\"132\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">3</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 سم"
+        },
+        {
+          "id": "b",
+          "text": "18 سم"
+        },
+        {
+          "id": "c",
+          "text": "21 سم",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "24 سم",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الضلع المشترك داخل الشكل، فعلى الحدود 3 أضلاع من كلّ مربّع، أي 6 أضلاع طول كلّ منها 3 سم: 6 × 3 = 18 سم. من جمع محيطي المربّعين 12 + 12 وجد 24 سم، فعدّ الضلع المشترك مرّتين.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "مستطيل طوله 8 سم وعرضه 3 سم، ألصقنا بضلعه الذي طوله 3 سم مربّعًا ضلعه 3 سم، كما في الشكل. ما محيط الشكل الناتج؟\n<svg viewBox=\"0 0 360 170\"><path d=\"M37 46 L323 46 L323 124 L37 124 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M37 46 L323 46 L323 124 L37 124 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M245 46 L245 124\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"141\" y=\"146\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">8</text><text x=\"284\" y=\"146\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">3</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "22 سم"
+        },
+        {
+          "id": "b",
+          "text": "28 سم"
+        },
+        {
+          "id": "c",
+          "text": "31 سم",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "34 سم",
+          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الضلع المشترك 3 سم داخل الشكل. الشكل الناتج مستطيل طوله 8 + 3 = 11 سم وعرضه 3 سم، فمحيطه 2 × (11 + 3) = 28 سم. من جمع محيطي القطعتين 22 + 12 وجد 34 سم، ومن لم يحذف إلّا ضلعًا واحدًا من الاثنين وجد 31 سم.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "ما طول نصف دائرة قطرها 30 سم؟ (π ≈ 3,14)",
+      "options": [
+        {
+          "id": "a",
+          "text": "47,1 سم"
+        },
+        {
+          "id": "b",
+          "text": "77,1 سم"
+        },
+        {
+          "id": "c",
+          "text": "94,2 سم"
+        },
+        {
+          "id": "d",
+          "text": "706,5 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "طول نصف الدائرة = π × ق ÷ 2 = 3,14 × 30 ÷ 2 = 94,2 ÷ 2 = 47,1 سم. 94,2 هو محيط الدائرة كلّها، و77,1 يضيف القطر وهو محيط نصف قرص، و706,5 مساحة قرص لا طول.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "نافذة عرضها 1 م وارتفاع جزئها المستطيل 2 م، يعلوها نصف دائرة قطرها عرض النافذة، كما في الشكل. ما محيطها؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 250\"><path d=\"M145 76 L145 216 L215 216 L215 76 A35 35 0 0 0 145 76 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M145 76 L145 216 L215 216 L215 76 A35 35 0 0 0 145 76\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M145 76 L215 76\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"180\" y=\"238\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><text x=\"133\" y=\"151\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">2</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 م"
+        },
+        {
+          "id": "b",
+          "text": "6,57 م"
+        },
+        {
+          "id": "c",
+          "text": "7,57 م"
+        },
+        {
+          "id": "d",
+          "text": "8,14 م"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "على الحدود ضلعان عموديّان 2 + 2 والقاعدة 1، أي 5 م، ثمّ القوس 3,14 × 1 ÷ 2 = 1,57 م: 5 + 1,57 = 6,57 م. القطر العلويّ داخل النافذة فلا يُضاف (وإلّا وجدنا 7,57)، ولا نضع دائرة كاملة (وإلّا وجدنا 8,14).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "نغرس شجيرات على حدّ مغلق محيطه 24 م، بمسافة 3 م بين شجيرتين متتاليتين. كم شجيرة نغرس؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 شجيرات"
+        },
+        {
+          "id": "b",
+          "text": "8 شجيرات"
+        },
+        {
+          "id": "c",
+          "text": "9 شجيرات"
+        },
+        {
+          "id": "d",
+          "text": "72 شجيرة"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "على حدّ مغلق عدد الشجيرات يساوي عدد المسافات: 24 ÷ 3 = 8، لأنّ الشجيرة الأخيرة تنتهي عند الأولى. لا نضيف شجيرة (9) ولا ننقص (7)، ولا نضرب 24 × 3 فنجد 72.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "على تصميم بالسلّم 1/100 محيط حديقة 12 سم. كم مترًا محيط الحديقة الحقيقيّة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,12 م"
+        },
+        {
+          "id": "b",
+          "text": "12 م"
+        },
+        {
+          "id": "c",
+          "text": "120 م"
+        },
+        {
+          "id": "d",
+          "text": "1 200 م"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "كلّ 1 سم على التصميم يمثّل 100 سم في الواقع، أي 1 م. فمحيط الحديقة 12 × 100 = 1 200 سم = 12 م. من ترك الجواب 1 200 نسي تحويله إلى المتر، ومن قسم على 100 وجد 0,12.",
+      "difficulty": 2
+    }
+  ]
+}
