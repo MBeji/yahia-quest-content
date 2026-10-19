@@ -67,3 +67,11 @@ Doutes pour l'auditeur :
 - Un seul rouge de `content:qa` : `02/07-exams-2009-2026-imperatif-fais-parler` Q11 (explication qui désigne une option par son rang), hors de mon périmètre.
 
 Contrôles : `content:check` vert ; `content:qa` : seule erreur ci-dessus (chapitre 02) ; `content:tranche … --fresh --strict-longest` : clé la plus longue 0/110, positions 27/24/25/24 % ; `prettier --check` vert.
+
+## Corrections après audit des missions
+Tous les correctifs de `audits/audit-M4.md` sont appliqués avec les textes de l'auditeur ; aucun refusé.
+- Critiques : C-1 (08/06 q8, option d remplacée par « Hier matin, dès huit heures… »), C-2 (08/06 q10, option b « À travers la scène, pieds nus, je me mets. » étiquetée, prompt et explication reformulés), C-3 (08/09 q7, la clé devient « surgit », pris dans le texte).
+- Fuites : blancs vides dans les deux énoncés et blanc visé nommé pour 07/06 (écoute / écris), 07/07 (q5), 07/08 (q1, q2), 08/07 (q2, q3-q4, q6, q10), 08/08 (q2, q4).
+- Majeurs : 07/06 q3 supprimée (la mission passe à 6 questions) ; 07/08 q5 option b remplacée (« Parce que Lucile lui a dit qu'elle adorait le théâtre ») ; 08/08 q6 b devient « ont arrivé » (F5) ; 08/10 q1 option b « Tu salues Malek et tu lui donnes de tes nouvelles. ».
+- Mineurs : consignes reprises mot pour mot (« remplis le tableau suivant… », parenthèse « (Intègre un court dialogue dans ton récit). »), explications de 07/06 q4 et 07/08 q8, étiquette de 08/09 q8 a retirée.
+- Contrôles : `content:check` vert (501 questions) ; `content:qa -- --subject french-6eme` vert ; `content:tranche … --fresh --strict-longest` : clé la plus longue 0/109, positions 27/24/26/24 % ; `prettier --check` vert. Paires proches restantes : 17, toutes sans fuite (tableaux de 08/06, 07/06 q5-q6 et 08/08 q3-q4, q6-q7 sont à blancs vides ou sur des phrases officielles différentes).
