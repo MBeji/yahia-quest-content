@@ -241,3 +241,55 @@ Côté pilote :
 - reformuler le libellé de `fr.conj.participe-passe-mal-termine` (« prit » n'est pas calqué sur le présent) ;
 - trancher m-1 (tableaux à 5 colonnes, transversal) ;
 - arbitrer le doublon « lettre » entre 06 et 07 (lot B4).
+
+## 9. Re-vérification (2026-10-19, commit `edef30bf` comparé à `d6f3e076`)
+
+**Méthode** : j'ai re-résolu à l'aveugle les **27 questions modifiées**, avant de lire leurs clés : 11 au 05 et 16 au 06, dont le nouveau 06 boss q6 (bibliothèque) et le nouvel appariement 06 01 q5 (lettre). J'ai ensuite relu le diff complet des cours, des résumés et des `chapter.json`, les libellés modifiés de `misconceptions.json` et la carte.
+
+**Clés** : 27/27 conformes à mes réponses.
+- 05 : quiz q2 b · 01 q2 c · 02 q2 b · 02 q4 a · 03 q3 d · 03 q4 c · 04 q5 d,a,b,c · 05 q2 b · q3 c · q4 d · q6 a.
+- 06 : quiz q5 a · 01 q2 a · 01 q4 a · 01 q5 l1r1…l4r4 · 02 q1 a · q3 d · q5 a · q6 a · 04 q1 a · q2 c · q3 b · q5 c,d · q6 d,a,b,c · 05 q1 a · q4 a.
+- Aucune double réponse et aucun indice de forme : `tranche` donne 0/55 clé strictement la plus longue.
+
+**Gates** (sur `eng-deliver`, lien vers `wt-fr6b/content`) :
+- `content:check` ✓ (french-6eme 240 questions) ;
+- `content:qa` ✓ ;
+- `content:tranche --fresh --strict-longest` (05, 06) : clé la plus longue 0 %, patron de notion 0 en recul ;
+- 3 paires proches restantes : les défis sur un même texte ou une même lettre, voulus et sans fuite. La paire de définitions a disparu ;
+- 5 groupes gabarit, tous jugés acceptables au § 5. Le groupe « parties d'une lettre » avec 07 a disparu.
+
+**Rendu, Chromium 360 px** (jsdom, CSS du moteur) :
+- 4 tableaux par cours, **0 mot coupé** (contrôle mot par mot des cellules), aucun défilement de page ;
+- la conjugaison est scindée en tableaux à 3 colonnes. F9 est respecté ;
+- la nouvelle figure Tulmac fait 294 px, aucun texte ne déborde de l'ellipse ni du cadre. « Dehors » et « dedans » sont sur la même case, la route est nommée, la légende dit quoi voir ;
+- elle ne désigne plus aucune clé, puisque le boss q6 porte maintenant sur la bibliothèque.
+
+| Défaut | État |
+| --- | --- |
+| M-1 « prit » / présent (cours + 3 explications + libellé du registre) | ✓ corrigé ; libellé reformulé (« par analogie avec un autre verbe ») |
+| M-2 « c'est… qui » | ✓ |
+| M-3 *détériorer* (cours + étiquette d + explication) | ✓ |
+| M-4 résumer (cours + résumé) | ✓ |
+| M-5 05 boss q2 (*permettre*) | ✓ |
+| M-6 05 boss q4 (« Toute la classe est ») | ✓ |
+| M-7 ids + 05 entr q3/q4/q6 + répétition devenue règle | ✓ (`coursePitfalls` 05 : 9 ids) |
+| M-8 « fairai » + cas-limite | ✓ |
+| M-9 figure + 06 boss q6 | ✓ |
+| M-10 lettre, inventaire, « charme » | ✓ (`coursePitfalls` 06 : 9 ids) |
+| M-11 *curieuses* | ✓ |
+| M-12 indices de forme 06 quiz q5 / boss q5 | ✓ |
+| M-13 fuite par élimination | ✓. **L'écart signalé n'en est pas un** : M-13 était classé dans les majeurs du **06** (le fichier `05-entrainement.json` du chapitre 06). L'auteur l'a appliqué au bon endroit. |
+| M-14 06 entr q4 | ✓ |
+| § 5 copies du cours (06 boss q1, 06 défi q6, 05 défi q5) + lettre en appariement | ✓ |
+| m-1 tableaux | ✓ (F9) |
+| m-2 à m-9, m-11 | ✓ |
+| m-10 étalonnage | **non appliqué, accepté**. La rampe 2-2-3-3-3-3 du défi est honnête dans l'ensemble, et les deux items restent les plus faciles de leur étage. Ce mineur n'est pas bloquant. |
+| m-12 | rien à faire (jugement) |
+
+**Mineurs résiduels** (introduits ou laissés par les corrections ; non bloquants, textes exacts) :
+- r-1 — 06 `04-defi` q5 : l'énoncé dit « marchera », l'explication dit encore « Tulmac marche où ? ». Remplacer par `On pose « où ? » : Tulmac marchera où ? Dans la forêt, près du ruisseau. « Avec courage » répond à « comment ? » et « demain » à « quand ? ».`
+- r-2 — 05 `05-entrainement` q3 : l'option a est maintenant une déduction sans indice, mais l'explication parle encore de « deux phrases qui disent le contraire du texte ». Remplacer la fin par : `… ; la phrase inventée, celle qui dit le contraire du texte et le chiffre seul ne le font pas.`
+- r-3 — 05 `04-defi` q5, explication : « présente le personnage » → `présente les personnages` (Rami et ses cousins).
+- r-4 (carte, pilote) — `fr.portrait.signalement` est rangé au module **06** dans `vocab-french-6eme.json` et `map-vocab.md` (« Ajouts du pilote »). Or il est déclaré et porté au chapitre **05** (`coursePitfalls`, 05 entr q6), puisque le portrait est le canevas du M5 (guide p.141). Il faut l'ajouter au module 05.
+
+**Verdict final : prêt.** Tous les critiques et majeurs sont corrigés, et aucune clé n'est fausse. Les quatre mineurs résiduels (r-1 à r-4) peuvent être corrigés au passage, sans nouvel audit.
