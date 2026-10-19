@@ -50,3 +50,6 @@ Source officielle, lue pour ce pilote au régime T2′.
   2014 répondent 404. `robots.txt` absent ; lecture en HTTP, comme `9web`.
 - **Statut.** Corpus officiel (Q-6, méthode R-2) : reprise fidèle et citée.
 - Couples qui l'utilisent : [`web-6eme-base-english`](../web-6eme-base-english/fiche.md).
+- Le français suit le même schéma (`/<année>/francais.pdf`, séance du mardi 23 juin 2026, 1ʳᵉ
+  séance) : 2011 et 2014 répondent 404 (ajout du 2026-10-19). Couple qui l'utilise :
+  [`web-6eme-base-french`](../web-6eme-base-french/fiche.md).
