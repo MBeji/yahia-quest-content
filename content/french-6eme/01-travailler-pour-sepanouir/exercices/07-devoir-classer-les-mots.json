@@ -1,0 +1,186 @@
+{
+  "title": "📝 Classer les mots : noms propres, noms communs, pronoms ⭐⭐",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Lis ce texte : « Samir est fleuriste à Sousse. Roses et tulipes arrivent chaque matin. Il compose des bouquets pour les clientes. Elles sont contentes. » Relie chaque mot du texte à sa colonne.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Samir"
+        },
+        {
+          "id": "l2",
+          "text": "bouquets"
+        },
+        {
+          "id": "l3",
+          "text": "Il"
+        },
+        {
+          "id": "r1",
+          "text": "pronom personnel"
+        },
+        {
+          "id": "r2",
+          "text": "nom propre"
+        },
+        {
+          "id": "r3",
+          "text": "nom commun"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r3"],
+          ["l3", "r1"]
+        ]
+      },
+      "explanation": "« Samir » est le prénom d'une personne précise, avec une majuscule : un nom propre. « Bouquets » accepte un déterminant (des bouquets) : c'est un nom commun. « Il » remplace Samir : c'est un pronom personnel.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans « Samir est fleuriste à Sousse. Roses et tulipes arrivent chaque matin. », quel mot est un nom propre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sousse"
+        },
+        {
+          "id": "b",
+          "text": "fleuriste",
+          "misconceptionTag": "fr.gn.nom-propre-commun-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Roses",
+          "misconceptionTag": "fr.gn.nom-propre-commun-confondus"
+        },
+        {
+          "id": "d",
+          "text": "bouquets",
+          "misconceptionTag": "fr.gn.nom-propre-commun-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Sousse » nomme une ville précise : c'est le seul nom propre de la liste. « Roses » commence par une majuscule parce qu'il ouvre la phrase, mais c'est un nom commun ; « fleuriste » et « bouquets » sont aussi des noms communs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On remplace « Samir et les clientes » par un pronom personnel : « … sont contents. » Quel pronom convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elles",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        },
+        {
+          "id": "b",
+          "text": "Il",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        },
+        {
+          "id": "c",
+          "text": "Ils"
+        },
+        {
+          "id": "d",
+          "text": "Elle",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Samir et les clientes » forme un groupe de plusieurs personnes avec au moins un homme : le pronom est « ils ». « Elles » ne convient qu'à des femmes seules, « il » et « elle » ne reprennent qu'une personne.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans « Samir est fleuriste à Sousse. Il compose des bouquets pour les clientes. », quels mots sont des noms communs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "fleuriste"
+        },
+        {
+          "id": "b",
+          "text": "Sousse"
+        },
+        {
+          "id": "c",
+          "text": "bouquets"
+        },
+        {
+          "id": "d",
+          "text": "Samir"
+        },
+        {
+          "id": "e",
+          "text": "clientes"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "« Fleuriste », « bouquets » et « clientes » acceptent un déterminant et s'écrivent sans majuscule : ce sont des noms communs. « Samir » et « Sousse » sont des noms propres.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la phrase « Roses et tulipes arrivent chaque matin. », dans quelle colonne place-t-on le mot « matin » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "nom commun"
+        },
+        {
+          "id": "b",
+          "text": "pronom personnel"
+        },
+        {
+          "id": "c",
+          "text": "nom propre",
+          "misconceptionTag": "fr.gn.nom-propre-commun-confondus"
+        },
+        {
+          "id": "d",
+          "text": "déterminant"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Matin » désigne un moment de la journée en général : il s'écrit sans majuscule et on peut dire « le matin ». C'est un nom commun, ni un nom propre, ni un pronom, ni un déterminant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans « Il compose des bouquets pour les clientes », quel mot du texte est remplacé par le pronom « Il » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "les clientes",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        },
+        {
+          "id": "b",
+          "text": "Sousse",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        },
+        {
+          "id": "c",
+          "text": "Samir"
+        },
+        {
+          "id": "d",
+          "text": "des bouquets",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Il » reprend le fleuriste dont la phrase précédente parle : Samir, un homme seul. Les clientes sont plusieurs et féminines, Sousse est une ville et les bouquets sont des choses.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'apprenti sans faute",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Karim, apprenti menuisier, parle à Hédi, le patron. On veut dire que c'est Hédi qui sourit, sans répéter son prénom ni créer de doute. Quelle phrase convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il sourit.",
+          "misconceptionTag": "fr.reprise.pronom-ambigu"
+        },
+        {
+          "id": "b",
+          "text": "L'apprenti sourit.",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        },
+        {
+          "id": "c",
+          "text": "Le patron sourit."
+        },
+        {
+          "id": "d",
+          "text": "Elle sourit.",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Le patron » désigne bien Hédi et lui seul. Le pronom « il » peut reprendre Karim ou Hédi : on ne sait plus qui sourit. « L'apprenti » désigne l'autre personnage, et « elle » est féminin alors que Hédi est un homme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Document : « Tu n'aimes pas rester assis : le sport est fait pour toi (professeur de sport, entraîneur). Tu aimes l'ordre et la précision : essaie la comptabilité ou la bijouterie. Tu aimes les livres : deviens bibliothécaire. » Sami n'aime pas rester assis. Quel métier lui convient d'après ce document ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "entraîneur"
+        },
+        {
+          "id": "b",
+          "text": "avocat",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
+        {
+          "id": "c",
+          "text": "comptable"
+        },
+        {
+          "id": "d",
+          "text": "bibliothécaire"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le document relie « ne pas aimer rester assis » au sport, donc à l'entraîneur. Comptable et bibliothécaire sont conseillés à d'autres profils (l'ordre, les livres), et le document ne parle pas du métier d'avocat : on ne peut pas l'affirmer.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans « Demain, Karim ira acheter du bois pour construire une table », combien de verbes sont à l'infinitif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun"
+        },
+        {
+          "id": "b",
+          "text": "Un"
+        },
+        {
+          "id": "c",
+          "text": "Deux"
+        },
+        {
+          "id": "d",
+          "text": "Trois",
+          "misconceptionTag": "fr.conj.conjugue-infinitif-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le verbe conjugué est « ira » (futur, demain). « Acheter » suit le verbe conjugué et « construire » suit « pour » : ce sont les deux infinitifs. Compter trois, c'est prendre « ira » pour un infinitif parce qu'il ne change pas de forme dans la phrase.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans ce récit, deux phrases se contredisent. Lesquelles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nour est horticultrice dans un village du Cap Bon."
+        },
+        {
+          "id": "b",
+          "text": "Chaque matin, elle fait pousser des roses dans sa serre."
+        },
+        {
+          "id": "c",
+          "text": "Sa serre ne contient aucune rose."
+        },
+        {
+          "id": "d",
+          "text": "Le soir, elle rentre chez elle, fatiguée mais contente."
+        }
+      ],
+      "answerKey": {
+        "correct": ["b", "c"]
+      },
+      "explanation": "Si Nour fait pousser des roses dans sa serre chaque matin, sa serre ne peut pas être vide de roses : « Sa serre ne contient aucune rose » contredit la deuxième phrase. Le métier d'horticultrice reste compatible (elle peut cultiver d'autres plantes), comme le retour du soir.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Lis : « Joséphine salue le public. La jeune fille a les larmes aux yeux. L'apprentie comédienne sourit. » Combien de groupes différents, sans compter le prénom, désignent Joséphine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un"
+        },
+        {
+          "id": "b",
+          "text": "Deux"
+        },
+        {
+          "id": "c",
+          "text": "Trois",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        },
+        {
+          "id": "d",
+          "text": "Quatre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« La jeune fille » et « l'apprentie comédienne » désignent Joséphine : deux remplaçants. « Le public » est un autre groupe de personnes, qui ne correspond pas à Joséphine, donc il ne compte pas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Choisis la meilleure version de ce début de récit : sans répétition, sans doute possible et sans contradiction.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Walid est apprenti coiffeur. Walid lave les cheveux d'un client. Walid sourit : le client est content."
+        },
+        {
+          "id": "b",
+          "text": "Walid est apprenti coiffeur. Ce matin, il répare le moteur d'une voiture. Le jeune garçon sourit : le client est content.",
+          "misconceptionTag": "fr.recit.contradiction-non-vue"
+        },
+        {
+          "id": "c",
+          "text": "Walid est apprenti coiffeur. Ce matin, il lave les cheveux d'un client. Le jeune garçon sourit : le client est content."
+        },
+        {
+          "id": "d",
+          "text": "Walid est apprenti coiffeur. Ce matin, il lave les cheveux d'un client. Il sourit : le client est content.",
+          "misconceptionTag": "fr.reprise.pronom-ambigu"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La bonne version remplace Walid par « le jeune garçon » au lieu de répéter son prénom, et le client reste un client. La première répète trois fois Walid ; la deuxième se contredit (un coiffeur ne répare pas un moteur) ; la troisième laisse douter de qui sourit : Walid ou le client ?",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "title": "📝 Présenter un métier en quelques phrases ⭐⭐",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "La consigne dit : « Choisis un métier de la liste (architecte, vétérinaire, libraire) et présente-le en quatre phrases. » Tu as choisi le vétérinaire. Quel sujet doit rester dans toutes tes phrases ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le métier d'architecte",
+          "misconceptionTag": "fr.production.hors-sujet"
+        },
+        {
+          "id": "b",
+          "text": "Les animaux de ma maison",
+          "misconceptionTag": "fr.production.hors-sujet"
+        },
+        {
+          "id": "c",
+          "text": "Les vacances au bord de la mer",
+          "misconceptionTag": "fr.production.hors-sujet"
+        },
+        {
+          "id": "d",
+          "text": "Le métier de vétérinaire"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le métier choisi est le vétérinaire : chaque phrase doit en parler. Un autre métier de la liste, les animaux de la maison ou les vacances sortent du sujet demandé.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour présenter le vétérinaire, tes quatre phrases suivent ce plan : qui il est, ce qu'il fait, où il travaille, pourquoi on aime ce métier. Remets-les dans l'ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il travaille dans une clinique, près du marché."
+        },
+        {
+          "id": "b",
+          "text": "On aime ce métier parce qu'il aide les animaux malades."
+        },
+        {
+          "id": "c",
+          "text": "Le vétérinaire est un docteur pour les animaux."
+        },
+        {
+          "id": "d",
+          "text": "Il soigne les chiens, les chats et les chevaux."
+        }
+      ],
+      "answerKey": {
+        "order": ["c", "d", "a", "b"]
+      },
+      "explanation": "On commence par dire qui il est, puis ce qu'il fait ; viennent ensuite le lieu de travail et, pour finir, la raison de l'aimer, qui conclut la présentation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lis : « Le vétérinaire parle à Mme Ben Ali. Le vétérinaire examine la vache. » Quelle phrase évite la répétition du nom sans aucun doute possible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle examine la vache.",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        },
+        {
+          "id": "b",
+          "text": "Il examine la vache."
+        },
+        {
+          "id": "c",
+          "text": "Elles examinent la vache.",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        },
+        {
+          "id": "d",
+          "text": "Ils examinent la vache.",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le vétérinaire est un homme seul : le pronom qui le reprend est « il », et Mme Ben Ali, féminine, ne peut pas être confondue avec lui. Les autres pronoms désignent une femme ou plusieurs personnes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète la présentation : « En ce moment, le vétérinaire … les animaux malades. » Quelle forme du verbe soigner convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "soignera",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        },
+        {
+          "id": "b",
+          "text": "soigne"
+        },
+        {
+          "id": "c",
+          "text": "soigner",
+          "misconceptionTag": "fr.conj.conjugue-infinitif-confondus"
+        },
+        {
+          "id": "d",
+          "text": "a soigné",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« En ce moment » situe l'action maintenant : le verbe est au présent, soigne. Soignera est un futur, « a soigné » un passé composé, et soigner est l'infinitif, qui ne se conjugue pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Ta présentation porte sur le métier de vétérinaire. Quelles phrases sortent du sujet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il soigne les chats et les chiens."
+        },
+        {
+          "id": "b",
+          "text": "Mon voisin a acheté une nouvelle voiture."
+        },
+        {
+          "id": "c",
+          "text": "Il travaille dans une clinique."
+        },
+        {
+          "id": "d",
+          "text": "Le match de football commence à huit heures."
+        }
+      ],
+      "answerKey": {
+        "correct": ["b", "d"]
+      },
+      "explanation": "Les deux phrases qui parlent d'une voiture neuve et d'un match de football n'ont aucun lien avec le métier : elles sortent du sujet. Soigner les animaux et travailler dans une clinique décrivent le vétérinaire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Tu termines ta présentation du vétérinaire. Quelle phrase de fin convient le mieux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demain, il pleuvra sur toute la région et sur les montagnes.",
+          "misconceptionTag": "fr.production.hors-sujet"
+        },
+        {
+          "id": "b",
+          "text": "Un chien malade entre dans la clinique.",
+          "misconceptionTag": "fr.recit.partie-du-recit-confondue"
+        },
+        {
+          "id": "c",
+          "text": "Le vétérinaire ouvre sa clinique à huit heures chaque matin.",
+          "misconceptionTag": "fr.recit.partie-du-recit-confondue"
+        },
+        {
+          "id": "d",
+          "text": "Voilà pourquoi j'admire ce métier : il aide les animaux."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une phrase de fin conclut : elle dit pourquoi on aime le métier. La météo sort du sujet ; ouvrir la clinique ou voir entrer un chien appartiennent au début ou à la suite d'un récit.",
+      "difficulty": 3
+    }
+  ]
+}
