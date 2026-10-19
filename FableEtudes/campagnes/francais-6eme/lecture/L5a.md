@@ -629,3 +629,180 @@ OS : « Consolider l'utilisation des déterminants démonstratifs et possessifs 
 - **Ex 7** [R] — « Complète par le déterminant qui convient. Attention aux intrus ! » — 2 textes à trous : « Le départ pour l'école » (« Je me lève le matin à sept heures. Je fais … toilette : je me brosse … dents… », 8 blancs) ; « Le départ en promenade » (« Les enfants prennent … bicyclettes. Ils emportent … goûter. … mère leur recommande de rentrer tôt. », 3 blancs). [« intrus » = mots/dessins distracteurs, la consigne ne les liste pas.]
 - **Ex 8** [R] — « Complète par les déterminants qui conviennent. » — texte « Aline a une chienne. Elle la présente à ses amies. … chienne s'appelle Doudou. Elle ne veut pas dormir dans … corbeille près de la cheminée. Elle préfère rester dans … chambre, au pied de … lit. » (dessin d'une fillette et d'une chienne « Doudou »), 4 blancs.
 
+### R 4-5 (p.101) — Grammaire, fiche de remédiation
+- **Ex 9** [R] — « Réponds aux questions suivantes en utilisant des déterminants possessifs dans des phrases complètes. » [sic « complèètes »] — 6 questions en dialogue. ex : « – Où as-tu mis ton cartable ? » ; « – Maîtresse, pouvons-nous ranger nos affaires ? »
+- **Ex 10** [R] — « Construis trois phrases en utilisant les indications contenues dans les cadres. » — mots-banque : espadrilles - sac à dos - affaires - trousse - feutres - portfolio - casquette ; 3 amorces : « ses + G.N. » ; « mon + G.N. » ; « ta + G.N. » (deux lignes par amorce).
+
+## Objectif R 5 — adjectifs épithètes
+
+### R 5-1 (p.102) — Grammaire, fiche de remédiation
+OS : « Consolider l'utilisation des adjectifs épithètes ».
+- **Encadré « Ce que nous savons déjà »** : « On utilise un adjectif pour enrichir un G.N. : un enfant → un enfant sage. L'adjectif épithète peut se placer avant ou après le nom avec lequel il s'accorde : un petit enfant sage / deux petits enfants sages. »
+- **Ex 1** [R] — « Complète les G.N. suivants par les adjectifs du cadre : petit - vaste - attentif - spectaculaire - rapide - grave - gros - drôle. Fais attention à l'accord. » — 8 GN : une … fille ; un train … ; des pêcheurs … ; une … vache ; des champs … ; une maladie … ; un sauvetage … ; des clowns … .
+
+### R 5-2 (p.103) — Grammaire, fiche de remédiation
+- **Ex 2** [R] — « Enrichis le G.N. souligné par l'adjectif qui convient comme dans l'exemple. » — exemple « joli / jolie : Cette fillette porte une jupe → Cette fillette porte une jolie jupe. » ; 6 items à choix entre deux (trois) formes : courageux/courageuse (« Le garçon a sauvé une fillette de la noyade. ») ; enragé/enragée (« Pasteur a soigné l'enfant mordu par un chien. ») ; vieux/vieille (« Cette famille habite une maison. ») ; blancs/blanches (« Mon frère élève deux chattes. ») ; beau/bel/belle (« J'ai acheté un ordinateur. ») ; marin/marins (« La marée noire a tué des centaines d'oiseaux. »).
+
+### R 5-3 (p.104) — Grammaire, fiche de remédiation
+- **Ex 3** [R] — « Complète par les adjectifs de sens contraire proposés dans le cadre. » (cadre : noire - domestique - léger - sympathique - large - méchant - ouverte - retrouvé) — 8 couples. ex : « un objet perdu ≠ … » ; « un homme antipathique ≠ … ».
+- **Ex 4a** [R] — « Relie les noms aux adjectifs pour former des G.N. Écris les G.N. obtenus. » — 5 noms (une écriture, une tarte, un paysage, un sourire, un soleil) × 5 adjectifs (magnifique, amical, délicieuse, matinal, illisible).
+- **Ex 4b** [R] — « Complète par les G.N. de l'exercice (a). » — 5 phrases. ex : « – Quelle … ! dit la maîtresse à un élève. » ; « – La nouvelle élève est rassurée par le … d'une camarade. »
+
+### R 5-4 (p.105) — Grammaire, fiche de remédiation
+- **Ex 5** [R] — « Enrichis les G.N. soulignés par des adjectifs épithètes de ton choix. » — 4 phrases. ex : « Le … garçon joue avec des objets… » ; « Ne laissez pas les élèves … se moquer de leurs … camarades. »
+- **Ex 6** [R] — « Ajoute deux adjectifs aux G.N. soulignés et réécris les [sic « et réécris et les »] phrases. » — 5 phrases. ex : « L'enfant boit une tisane. » ; « Cette dame aide sa voisine à vider sa poubelle. »
+
+### R 5-5 (p.106) — Grammaire, fiche de remédiation
+- **Ex 7** [R] — « Forme un G.N. avec l'adjectif donné puis construis une phrase. » — exemple « fracturée → G.N. : une jambe fracturée / Phrase : Patrice a une jambe fracturée. » ; 4 adjectifs : bonne ; gentils ; amical ; généreux.
+
+### R 5-6 (p.107) — Grammaire, fiche de remédiation
+- **Ex 8a** [R] — « Regarde le dessin et complète le texte par les adjectifs suivants. » (petite, inquiets, pâle, bon, forte, fiévreuse) — texte : « La … Catherine, … et …, gémit dans son lit. Elle a une … angine qui la fait souffrir. Ses parents … font venir un … médecin. » (dessin : une enfant malade au lit).
+- **Ex 8b** [R] — « Ajoute deux phrases contenant des adjectifs pour compléter le récit. » — 2 lignes numérotées.
+
+## Objectif R 6 — adjectifs attributs
+
+### R 6-1 (p.108) — Grammaire, fiche de remédiation
+OS : « Consolider l'utilisation des adjectifs attributs. »
+- **Encadré « Ce que nous savons déjà »** : « L'adjectif attribut est placé après le verbe être ou les verbes : paraître - devenir - rester - demeurer. Exemples : – Ce yaourt est bon. – Cette dame paraît fatiguée. »
+- **Ex 1** [R] — « Classe les phrases et les G.N dans le tableau » — 11 énoncés mêlés : « Cette personne est timide. - Ces joueurs paraissent fatigués. - Voilà des romans intéressants. - Mon portfolio est bien tenu. - Une aide précieuse - Jean est un ami fidèle - Le don du sang est une bonne action. - Il est handicapé - Tu sembles triste - Un soutien familial - Ton sourire amical me rassure. » ; tableau « Les adjectifs sont épithètes / Les adjectifs sont attributs ». (verbe « sembler » apparaît ici hors encadré.)
+
+### R 6-2 (p.109) — Grammaire, fiche de remédiation
+- **Ex 2** [R] — « Transforme les adjectifs épithètes en adjectifs attributs comme dans l'exemple. » — (a) exemple « Une personne généreuse → Cette personne est généreuse. » ; 3 items (Un enfant serviable ; Un père attentif ; Une mère affectueuse) ; (b) exemple « Des amis intimes → Ces amis sont intimes. » ; 3 items (Des camarades solidaires ; Des élèves différents ; Des voisins respectueux).
+- **Ex 3** [R] — « Transforme les adjectifs attributs en adjectifs épithètes comme dans l'exemple. » — (a) exemple « Ce test est facile → Un test facile » ; 3 items (Cette leçon est difficile ; Cet exercice est long. ; Ce roman est célèbre) ; (b) exemple « Ses yeux sont bleus → Ses yeux bleus » ; 3 items (Ses cheveux sont longs ; Ses oreilles sont décollées ; Ses sourcils sont noirs).
+
+### R 6-3 (p.110) — Grammaire, fiche de remédiation
+- **Ex 3c** [R] — « Fais attention à ces transformations. » — exemple « Ces idées sont bonnes. → De bonnes idées » ; 3 items (Ces images sont belles. ; Ces phrases sont courtes. ; Ces objets sont petits) ; question « Que remarques-tu ? » (règle : des + adjectif antéposé → de).
+- **Ex 4** [R] — « Mets au singulier les phrases et les groupes de mots obtenus à l'exercice 3c. » — exemple « Cette idée est bonne. / Un [sic « Un bonne idée »] bonne idée » ; 3 lignes.
+- **Ex 5a** [R] — « Devine l'adjectif attribut et complète la phrase. » — 4 phrases. ex : « Cet élève n'aime pas travailler en classe. Il est… » ; « Après les pluies, les maisons sont remplies d'eau. Elles sont … »
+- **Ex 5b** [R] — « Cherche les adjectifs de la même famille que : » — 4 noms : l'amitié, la bonté, la générosité, la beauté (« L'adjectif est … »).
+
+### R 6-4 (p.111) — Grammaire, fiche de remédiation
+- **Ex 6** [R] — « Complète les phrases par un G.N.S (nom ou pronom personnel sujet). Fais attention à l'accord. » — 10 phrases à sujet manquant, avec verbe d'état. ex : « … parais soucieuse. » ; « … restent muets de stupeur. » (aussi « … avons été surprises », « … semblent fânées » [sic]).
+- **Ex 7** [R] — « Complète les cinq phrases par les expressions du cadre. Fais les accords nécessaires. » (cadre : sembler malheureux - devenir fort - être pollué - rester sage - être heureux) — 5 phrases. ex : « L'océan … par le dégazage des bateaux. » ; « Ce dauphin … dans ce bassin. »
+- **Ex 8a** [R] — « Souligne les adjectifs attributs dans ces phrases. Attention aux intrus. » — 10 énoncés : « L'hôtesse de l'air paraît accueillante - Le texte est sur le tableau - Le gardien du parc surveille les enfants turbulents. L'école reste fermée en été - Le malade reste dans sa chambre. Tu sembles heureux - Tu as l'air heureux - Je suis en 6ème année - Je suis content - Vous paraissez timides. » (intrus : « est sur le tableau », « enfants turbulents » épithète, « reste dans sa chambre », « en 6ème année »).
+
+### R 6-5 (p.112) — Grammaire, fiche de remédiation
+- **Ex 8b** [R] — « Recopie les phrases contenant un adjectif attribut. » — 5 lignes.
+- **Ex 8c** [R] — « Transforme les phrases de (b) à la forme négative. » — 5 lignes.
+- **Ex 9** [R] — « Fais en trois ou quatre phrases ton portrait (ton visage). Utilise des adjectifs épithètes et attributs. » — 10 lignes + cadre « Colle ta photo ici si tu veux. »
+
+## Objectif R 7 — forme affirmative et négative (ne … plus / ne … jamais)
+
+### R 7-1 (p.113) — Grammaire, fiche de remédiation
+OS : « Consolider l'utilisation de la forme affirmative et de la forme négative avec ne ... plus / ne … jamais. »
+- **Encadré « Ce que nous savons déjà »** : « Pour mettre une phrase à la forme négative, j'utilise : ne … pas (– Est-ce qu'il fait chaud ? Non, il ne fait pas chaud.) ; ne … plus (– Est-ce qu'il fait encore ? [sic, « pleut » omis] Non, il ne pleut plus.) ; ne … jamais (– Est-ce que ta grand-mère regarde toujours la télé ? Nom [sic] , ma grand-mère ne regarde jamais la télé.) »
+- **Ex 1** [R] — « Écris à la forme négative les phrases suivantes. Utilise ne … pas, ne … plus ou ne … jamais. » — 4 phrases. ex : « Sophie veut toujours travailler en équipe. » ; « Alex veut être assis au premier banc. »
+- **Ex 2** [R] — « Transforme à la forme affirmative pour rétablir la vérité. » — 4 phrases (2 sur cette page, 2 p.114). ex : « C'est le printemps. Les arbres fruitiers ne sont plus en fleurs. » ; « Ce n'est jamais dangereux de laisser des médicaments à la portée des enfants. »
+
+### R 7-2 (p.114) — Grammaire, fiche de remédiation
+- **Ex 2 (suite)** — « – Ne jetez pas les ordures dans les poubelles. » ; « – Il n'est jamais interdit de fumer dans les hôpitaux. »
+- **Ex 3** [R] — « Transforme ces phrases à la forme négative. » — 5 phrases. ex : « Vous êtes toujours indifférents aux malheurs des autres. » ; « Nous espérons toujours le retour de notre chien perdu. »
+- **Ex 4** [R] — « Écris correctement les phrases négatives suivantes [sic « suivantees »] en ajoutant ce qui manque : ne n' plus . » — 5 phrases où la négation est incomplète. ex : « Tu as pas voulu répondre au téléphone. » ; « Ne touchez aux prises de courant, quand vos doigts sont mouillés. »
+
+### R 7-3 (p.115) — Grammaire, fiche de remédiation
+- **Ex 5a** [R] — « Lis les phrases suivantes. » — 8 énoncés : « Mon père travaille - Nous ne sommes plus en 6ème année - l'handicapé [sic] moteur marche - Notre maîtresse nous aide - J'aime toujours rendre service - Nous mangeons toujours à la cantine - "Les dinosaures existent encore", a dit un élève. Les voitures ne ralentissent jamais devant l'école. »
+- **Ex 5b** [R] — « Réécris certaines phrases à la forme affirmative ou négative pour rétablir la vérité. » — 7 lignes.
+- **Ex 6** [R] — « Écris ces ordres à la forme négative. » — 6 impératifs. ex : « Restez encore debout. » ; « Fermez toujours la porte. » (aussi « Attendons encore le facteur. » ; « Revenez demain. » ; « Parle toujours à voix basse. » ; « Va encore très tôt à l'école. »).
+
+### R 7-4 (p.116) — Grammaire, fiche de remédiation
+- **Ex 7a** [R] — « Écris trois ordres à la forme affirmative avec : • encore • toujours • encore » — 3 productions.
+- **Ex 7b** [R] — « Écris trois interdictions à la forme négative avec : • ne … plus • ne … pas • ne … jamais » — 3 productions.
+- **Ex 8** [R] — « Réponds à chaque question par une phrase négative [sic « phrasee »] et complète-la par une explication. » — 5 questions + « … parce que … ». ex : « – Avez-vous encore froid ? » ; « – Cette équipe a-t-elle toujours gagné la coupe ? »
+
+## Objectif R 8 — compléments essentiels et non essentiels
+
+### R 8-1 (p.117) — Grammaire, fiche de remédiation
+OS : « Consolider l'utilisation des compléments essentiels et des compléments non essentiels ».
+- **Encadré « Ce que nous savons déjà »** : « Le groupe verbal peut être formé : d'un verbe seul — Il lit. ; d'un verbe et d'un complément (direct) — Les écologistes protègent la nature. ; d'un verbe et d'un complément précédé d'une préposition (indirect) — Jesse pense à l'orque emprisonné. Les G.N. la nature et à l'orque sont des compléments essentiels. Si on les supprime la phrase n'a plus de sens. »
+- **Ex 1** [R] — « Ajoute un complément aux verbes quand c'est nécessaire et mets un point à la fin de chaque phrase. » — 7 amorces. ex : « Il pleut … » ; « Le sapeur pompier appelle … » (aussi « le maître interroge … », « Les hirondelles sont parties … », « Nous participons … », « Des nuages apparaissent … », « La fille aînée ne s'occupe pas … »).
+- **Ex 2a** [R] — « Lis » — 7 phrases numérotées ➀–⑦ : « Il cueille des roses. » ; « Nous faisons du jardinage. » ; « Ils participeront à la fête de l'arbre. » ; « Tu parles de ton jardin. » ; « Elle tond le gazon. » ; « Il a acheté des engrais. » ; « Je me souviens de toi. »
+
+### R 8-2 (p.118) — Grammaire, fiche de remédiation
+- **Ex 2b** [R] — « Écris dans chaque colonne le numéro de la phrase qui correspond. » — tableau : « Complément[s] essentiels (directs) qui répondent aux questions : qui ? quoi ? » / « Compléments essentiels (indirects) qui répondent aux questions : de quoi ? de quoi ? [sic, « de qui ? » attendu] à qui ? à quoi ? ».
+- **Ex 3** [R] — « Complète la phrase par un complément essentiel. Fais attention à la préposition. » — 5 amorces. ex : « Je prends toujours soin de … » ; « Elle s'est documentée sur … »
+- **Ex 4a** [R] — « Souligne d'un trait le complément essentiel dans chaque phrase. » — 6 phrases. ex : « Demain, nous achèterons des sacs-poubelle. » ; « Ce garçon ressemble beaucoup à son frère jumeau. »
+- **Ex 4b** [R] — « Relève les compléments non essentiels. » — 3 lignes.
+
+### R 8-3 (p.119) — Grammaire, fiche de remédiation
+- **Ex 5** [R] — « Raccourcis les phrases en barrant les compléments non essentiels [sic « non/essentiels »]. » — 7 phrases. ex : « Dimanche dernier, un incendie a ravagé la forêt. » ; « À la montagne, on respire de l'air pur. »
+- **Ex 6** [R] — « Enrichis les phrases par des compléments non essentiels. » — 4 phrases à trou. ex : « …, les baigneurs ont ramassé de jolis coquillages. » ; « Protégeons nos forêts … . »
+- **Ex 7** [R] — « Complète chaque verbe par le G.N. qui répond à la question posée. » — 5 phrases, question indiquée à droite (de quoi ? quoi ? de qui ? à qui ? quoi ?). ex : « Les brebis se nourrissent … de quoi ? » ; « L'enfant rend visite … à qui ? »
+
+### R 8-4 (p.120) — Grammaire, fiche de remédiation (vision)
+- **Ex 8** [R] — « Choisis un sujet, un verbe et un complément si c'est nécessaire et construis quatre phrases. » — tableau 3 colonnes : G.N. sujet (Nous ; Ce bateau ; Marcel, Paul et Julien ; L'historien ; Les écologistes ; Le photographe) / Verbe (surveillent ; visite ; dessinons ; pollue ; assistent ; prend) / G.N. complément (des photos de la marée noire ; la mer méditerranée [sic, « m » minuscule] ; une affiche publicitaire ; le musée du Bardo ; à la remise des prix ; les espèces animales protégées) ; 4 lignes.
+- **Ex 9** [R] — « Pour parler de ce que fait l'agriculteur, complète chaque étiquette par un nom et construis des phrases. » — exemple « arroser / les champs → Le fermier arrose les champs. » ; 5 verbes à étiquette (semer, labourer, arracher, couper, ramasser ; 1–2 p.120, 3–5 p.121).
+
+### R 8-5 (p.121) — Grammaire, fiche de remédiation
+- **Ex 9 (suite)** — verbes 3) arracher, 4) couper, 5) ramasser.
+- **Ex 10** [R] — « Écris deux phrases dans lesquelles le verbe n'a pas besoin de complément. » — 2 lignes.
+- **Ex 11** [R] — « Écris deux phrases [sic « phrasess »] dans lesquelles le verbe a besoin d'un complément essentiel. » — 1) complément essentiel sans préposition (direct) ; 2) complément essentiel avec préposition (indirect) ; 2 lignes chacun.
+
+## Objectif R 9 — complément de lieu
+
+### R 9-1 (p.122) — Grammaire, fiche de remédiation
+OS : « Consolider l'utilisation du complément de lieu dans la phrase simple. »
+- **Encadré « Ce que nous savons déjà »** : « Le complément de lieu précise l'endroit où se déroule un événement. Le complément de lieu répond à la question : "où ?" — Je fais de la natation dans la piscine municipale. On peut le déplacer : Dans la piscine municipale, je fais de la natation. On peut aussi le supprimer : Je fais de la natation. »
+- **Ex 1** [R] — « Souligne le complément de lieu. » — 6 phrases. ex : « La tempête a causé beaucoup de dégâts dans la ville. » ; « Sur la bascule, se pèse une femme obèse. »
+- **Ex 2** [R] — « Réécris les phrases en déplaçant le complément de lieu. » — exemple « Le pilote prend place au volant de sa voiture. → Au volant de sa voiture, le pilote prend place. » ; 5 phrases. ex : « Dans les gradins, les spectateurs se mettent à siffler. » ; « Mes parents préparent une tarte dans la cuisine. »
+
+### R 9-2 (p.123) — Grammaire, fiche de remédiation
+- **Ex 3** [R] — « Complète la phrase par un complément de lieu. » — 10 amorces. ex : « On joue au football dans … » ; « On va chez … pour soigner une angine. »
+- **Ex 4** [R] — « Complète les phrases par un complément de lieu. » — 8 phrases. ex : « Bébé dort… » ; « En hiver, les skieurs partent… »
+
+### R 9-3 (p.124) — Grammaire, fiche de remédiation
+- **Ex 5** [R] — « Complète chaque phrase par un G.N.S et un G.V. » — 8 amorces (début ou fin donnés). ex : « Chez ma tante, … » ; « … à travers les champs. »
+- **Ex 6a** [R] — « Lis ces phrases. Elles contiennent des erreurs. » (titre « "Où vivent-ils" ») — 6 phrases : « Les pigeons vivent dans une niche. ; Les lapins vivent dans un poulailler. ; Les poules vivent dans une écurie. ; Les chevaux dorment dans des clapiers. ; Les moutons dorment dans l'étable. ; Les vaches dorment dans la bergerie. »
+- **Ex 6b** [R] — « Réécris les phrases en corrigeant les compléments de lieu comme dans l'exemple. » — exemple « Les pigeons ne vivent pas dans une niche. Ils vivent dans un pigeonnier. » ; 10 lignes (p.124–125).
+
+### R 9-4 (p.125) — Grammaire, fiche de remédiation
+- **Ex 6b (suite)** — lignes de réponse.
+- **Ex 7** [R] — « Construis trois phrases avec un complément de lieu : placé au début de la phrase. / placé au milieu de la phrase. / placé à la fin de la phrase. »
+
+### R 9-5 (p.126) — Grammaire, fiche de remédiation (vision)
+- **Ex 8a** [R] — « Réponds aux questions par des phrases complètes. » — 3 questions en bulles avec image : « Dans quelle capitale se trouve la tour Eiffel ? » (photo tour Eiffel) ; « Dans quel pays se trouvent les pyramides ? » (pyramides) ; « Sur quel continent se trouve le Sénégal ? » (carte « Afrique »).
+- **Ex 8b** [R] — « Trouve les questions qui correspondent aux réponses suivantes. » — 3 réponses : « Dans une navette spatiale. » ; « L'île de Kerkenah est située au large de Sfax. » (carte Tunisie) ; « Pour conserver les aliments on les met dans un réfrigérateur. »
+
+## Objectif R 10 — complément de temps
+
+### R 10-1 (p.127) — Grammaire, fiche de remédiation
+OS : « Consolider l'utilisation du complément de temps dans la phrase simple. »
+- **Encadré « Ce que nous savons déjà »** : « Le complément de temps précise le moment où se déroule un événement. Le complément de temps répond à la question : "Quand ?" — En été, il fait très chaud. On peut le déplacer : Il fait très chaud en été. On peut aussi le supprimer : Il fait très chaud. »
+- **Ex 1** [R] — « Souligne le complément de temps dans chaque phrase. » — 7 phrases. ex : « J'ai appris à jouer au scrabble l'année dernière. » ; « Dès l'aube, les chasseurs partent à la chasse. »
+
+### R 10-2 (p.128) — Grammaire, fiche de remédiation
+- **Ex 2** [R] — « Souligne le complément de temps dans chaque phrase, déplace-le [sic « déplace/le »] et réécris la phrase. » — 5 phrases. ex : « Au printemps, nous allons souvent en pique-nique. » ; « Le tournoi de tennis a eu lieu la semaine dernière. »
+- **Ex 3** [R] — « Complète chaque phrase par un complément de temps. » — 6 phrases. ex : « Ne va pas à la piscine municipale… Elle sera fermée. » ; « Une grave épidémie de grippe s'est abattue sur la ville … . »
+
+### R 10-3 (p.129) — Grammaire, fiche de remédiation
+- **Ex 4** [R] — « Mets en ordre les mots pour former des phrases correctes. Souligne le complément de temps. » — 4 séries de mots mélangés. ex : « les champs - après - sont - la pluie - verdoyants - plus » ; « des lézards - autrefois - géants - notre planète - sur - vivaient ».
+- **Ex 5** [R] — « Construis trois phrases avec un complément de temps : placé au début de la phrase. / placé au milieu de la phrase / placé à la fin [sic « a la fin »] de la phrase. »
+
+### R 10-4 (p.130) — Grammaire, fiche de remédiation (vision)
+- **Ex 6a** [R] — « Réponds aux questions par des phrases complètes. » — 3 questions avec image : « En quelle saison, les oiseaux migrateurs reviennent-ils en Tunisie ? » (cigogne) ; « Quelle est ton émission préférée ? À quelle heure passe-t-elle à la télé ? » (téléviseur) ; « Quand fais-tu du sport à l'école ? » (coureur).
+- **Ex 6b** [R] — « Trouve les questions qui correspondent aux réponses suivantes. » — 3 réponses : « Je suis né(e) le 15 avril 2000 » (gâteau d'anniversaire) ; « Je m'entraîne au volley-ball deux fois par semaine le soir. » ; « A la fin de l'année scolaire. » (calendrier « Mardi 30 Juin » en illustration, 6b).
+
+## Objectif R 11 — complément de manière
+
+### R 11-1 (p.131) — Grammaire, fiche de remédiation
+OS : « Consolider l'utilisation du complément de manière dans la phrase simple. »
+- **Encadré « Ce que nous savons déjà »** : « • Le complément de manière donne de [sic « des »] informations sur la manière dont se déroule un événement. • Le complément de manière répond à la question : comment ? — Le touriste regarde avec admiration une mosaïque. – On apprend beaucoup de choses en voyageant. – Il utilise facilement Internet. • On peut le déplacer : – Avec admiration, le touriste regarde une mosaïque. – Il utilise Internet facilement. – En voyageant, on apprend beaucoup de choses. • On peut aussi supprimer le complément de manière : – Le touriste regarde une mosaïque. – Il utilise internet. – On apprend beaucoup de choses. »
+- **Ex 1a** [R] — « Relie chaque phrase au complément de manière qui convient. » (a : « en suivi d'un participe présent (ant) ») — 4 phrases × 4 compléments (en creusant la terre ; en le vaccinant ; en étant le 1er homme à se poser sur la lune ; en consultant l'Internet). ex : « Pasteur a sauvé un enfant → en le vaccinant. » ; « L'archéologue a découvert des poteries romaines → en creusant la terre. »
+- **Ex 1b** [R] — (b : « sans suivi d'un verbe ou d'un nom ») 4 phrases × 4 compléments (sans faire mal ; sans difficulté ; sans gants de protection ; sans ton chapeau). ex : « N'utilise jamais ce produit → sans gants de protection. » ; « En été, ne sors pas → sans ton chapeau. »
+
+### R 11-2 (p.132) — Grammaire, fiche de remédiation
+- **Ex 1c** [R] — (c : « grâce à / grâce au suivi d'un nom ») 4 phrases × 4 compléments (grâce au téléphone portable ; grâce au microscope ; grâce à la ceinture de sécurité ; grâce à l'inventeur Louis Braille). ex : « On peut observer les microbes → grâce au microscope. » ; « Les non-voyants peuvent écrire → grâce à l'inventeur Louis Braille. »
+- **Ex 2a** [R] — « Transforme les adjectifs comme dans l'exemple. » — exemple « doux → doucement. » ; 10 adjectifs : facile, gentil, propre, normal, général, mensuel, amical, jaloux, grave, brusque (adverbes en -ment).
+- **Ex 2b** [R] — « Complète les phrases avec cinq compléments de l'exercice a. » — 5 phrases. ex : « – Je range … mes disquettes dans la boîte. » ; « – En juin, nous passerons … nos examens parce que nous avons bien travaillé au courant de l'année. »
+
+### R 11-3 (p.133) — Grammaire, fiche de remédiation
+- **Ex 3** [R] — « Complète les phrases par les compléments de manière du cadre. » (avec plaisir - par amitié - régulièrement - de temps en temps - grâce à toi) — 5 phrases. ex : « J'ai pu mener cette enquête … » ; « Il faut charger … le portable. »
+- **Ex 4** [R] — « Avec les étiquettes, construis des phrases enrichies par des compléments de manière. » — 5 phrases-souches (Le boxeur frappe son adversaire. ; Le naufragé arrive à l'île. ; Tu peux envoyer un S.M.S. ; L'homme préhistorique a obtenu du feu ; Avec le rayon laser on soigne les yeux.) × 5 étiquettes (grâce à ton portable ; par le frottement de deux pierres ; à la nage ; violemment ; sans faire mal) ; 6 lignes (p.133–134).
+
+### R 11-4 (p.134) — Grammaire, fiche de remédiation
+- **Ex 5** [R] — « Enrichis chaque phrase par un complément de manière. Aide-toi des verbes suivants : réunir - manger - choisir - jouer » — 4 phrases à trou « en … ». ex : « Tu as constitué un portfolio en … » ; « Il a attrapé froid en … »
+- **Ex 6** [R] — « Lis le [sic « lee »] complément de manière et complète la phrase. Fais attention au sens. » — 3 amorces : « – Lentement, … » ; « – Régulièrement, … » ; « – Difficilement, … »
+
+### R 11-5 (p.135) — Grammaire, fiche de remédiation (vision)
+- **Ex 7a** [R] — « Réponds aux questions par des phrases complètes. » — 3 questions avec image : « Comment les esquimaux se protègent-ils du froid ? » ; « Avec quoi les chinois mangent-ils le riz ? » ; « Comment trouve-t-on la définition d'un mot ? » (dictionnaire).
+- **Ex 7b** [R] — « Trouve les questions qui correspondent aux réponses suivantes. » — 3 réponses : « En avion parce que c'est plus rapide. » ; « Avec un chiffon, mouillé. » ; « En fouillant et en creusant la terre. »
+
