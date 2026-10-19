@@ -1,0 +1,183 @@
+{
+  "title": "📝 Entraînement ⭐⭐⭐ : Révision globale du module 3",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "manuel": {
+    "code": "121615P00",
+    "pages": "32, 41",
+    "items": ["M3 ex. 1a p. 32 (1 phrase)", "M3 ex. 1 p. 41"]
+  },
+  "questions": [
+    {
+      "prompt": "Complète les six blancs avec « son » ou « sont » : « Où ___ les amis ? Ils ne ___ pas encore arrivés. Le clown et ___ partenaire ___ sur la scène. Maman est venue chercher ___ fils à l'école ; ils ___ allés au parc d'attractions. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "sont – sont – son – sont – son – sont"
+        },
+        {
+          "id": "b",
+          "text": "sont – son – son – sont – son – sont",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "c",
+          "text": "sont – sont – sont – sont – son – sont",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "d",
+          "text": "sont – sont – son – son – son – son",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le test avec « est » marche pour les blancs 1, 2, 4 et 6 (où est l'ami, il n'est pas arrivé, le clown est sur la scène, il est allé) : sont. Le test avec « mon » marche pour les blancs 3 et 5 (mon partenaire, mon fils) : son.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans « Vos voisins espagnols sont très sympathiques. », quels mots sont des adjectifs qualificatifs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "espagnols"
+        },
+        {
+          "id": "b",
+          "text": "sympathiques"
+        },
+        {
+          "id": "c",
+          "text": "voisins"
+        },
+        {
+          "id": "d",
+          "text": "très"
+        },
+        {
+          "id": "e",
+          "text": "vos"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "« Espagnols » est collé au nom « voisins » (épithète) et « sympathiques » suit le verbe « sont » (attribut). « Voisins » est un nom, « très » un adverbe et « vos » un déterminant.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Range ces quatre phrases dans l'ordre où les événements se passent.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le soir, Yassine dit à sa mère qu'il a une amie."
+        },
+        {
+          "id": "b",
+          "text": "Des élèves se moquent de son cartable."
+        },
+        {
+          "id": "c",
+          "text": "Yassine arrive dans une nouvelle école."
+        },
+        {
+          "id": "d",
+          "text": "Hanen lui propose de jouer au ballon."
+        }
+      ],
+      "answerKey": {
+        "order": ["c", "b", "d", "a"]
+      },
+      "explanation": "L'histoire commence par l'arrivée de Yassine. Les moqueries viennent ensuite, puis la proposition de Hanen qui répond au problème, et le soir conclut avec la joie de Yassine.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque mot à ce qu'il signifie.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "la tolérance"
+        },
+        {
+          "id": "l2",
+          "text": "la paix"
+        },
+        {
+          "id": "l3",
+          "text": "la bonté"
+        },
+        {
+          "id": "l4",
+          "text": "la tendresse"
+        },
+        {
+          "id": "r1",
+          "text": "la gentillesse et la générosité"
+        },
+        {
+          "id": "r2",
+          "text": "respecter la liberté des autres"
+        },
+        {
+          "id": "r3",
+          "text": "l'affection et la douceur"
+        },
+        {
+          "id": "r4",
+          "text": "le contraire de la guerre"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r4"],
+          ["l3", "r1"],
+          ["l4", "r3"]
+        ]
+      },
+      "explanation": "Tolérer, c'est respecter la liberté des autres. La paix est le contraire de la guerre. La bonté regroupe la gentillesse et la générosité, la tendresse l'affection et la douceur. Ces quatre mots du thème ont des sens proches mais distincts.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans quelle phrase les mots « son » et « sont » sont-ils tous les deux bien employés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ses cousins son arrivés avec son grand frère.",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Ses cousins sont arrivés avec sont grand frère.",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Ses cousins son arrivés avec sont grand frère."
+        },
+        {
+          "id": "d",
+          "text": "Ses cousins sont arrivés avec son grand frère."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Son cousin est arrivé » marche : sont. « Avec mon grand frère » marche : son. Les trois autres phrases changent au moins un des deux mots.",
+      "difficulty": 3
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Dans « Les frères du lapin paraissent honteux. », quel mot est attribut du sujet ?",
+      "answerKey": {
+        "text": "honteux"
+      },
+      "explanation": "L'attribut suit le verbe d'état « paraissent » et renseigne sur le sujet. Il ne faut pas le confondre avec le groupe « du lapin », qui complète le nom.",
+      "difficulty": 3
+    }
+  ]
+}
