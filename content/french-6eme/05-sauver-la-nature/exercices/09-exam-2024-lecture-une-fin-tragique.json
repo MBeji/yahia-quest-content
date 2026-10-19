@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multi",
-      "prompt": "(Concours 2024) Lecture : « Une fin tragique ». Compréhension 1. Consigne officielle : « Malgré les différences, une amitié solide s'est nouée entre Virginia et le narrateur. Cite deux de ces différences. » Le narrateur écrit : « Son père possédait le plus grand bateau de pêche de la région. Le mien n'était qu'un simple pêcheur. » Quelles sont les deux différences entre les deux enfants ?",
+      "prompt": "(Concours 2024) Lecture : « Une fin tragique ». Compréhension 1. Consigne officielle : « Malgré les différences, une amitié solide s'est nouée entre Virginia et le narrateur. Cite deux de ces différences. » Le narrateur écrit : « Son père possédait le plus grand bateau de pêche de la région. Le mien n'était qu'un simple pêcheur. Elle était chrétienne. Moi, j'étais musulman. » Quelles sont les deux différences entre les deux enfants ?",
       "options": [
         {
           "id": "a",
@@ -28,110 +28,64 @@
         },
         {
           "id": "e",
-          "text": "le temps depuis lequel Virginia vit sur l'île"
+          "text": "l'école où ils vont"
         }
       ],
       "answerKey": {
         "correct": ["a", "b"]
       },
-      "explanation": "Le texte oppose le père de Virginia, qui possède le plus grand bateau de pêche, au père du narrateur, simple pêcheur, puis la religion : chrétienne d'un côté, musulman de l'autre. Habiter la même île et se baigner ensemble sont des points communs, et le temps passé sur l'île n'oppose pas les deux enfants.",
+      "explanation": "Le texte oppose le père de Virginia, qui possède le plus grand bateau de pêche, au père du narrateur, simple pêcheur, puis la religion : chrétienne d'un côté, musulman de l'autre. Habiter la même île, se baigner ensemble et aller à l'école sont des points communs ou des faits qui n'opposent pas les deux enfants.",
       "difficulty": 1
     },
     {
-      "prompt": "(Concours 2024) Lecture : « Une fin tragique ». Compréhension 2. Consigne officielle : « Quels sentiments éprouvent les deux enfants lors de la rencontre avec le phoque ? Justifie à chaque fois ta réponse par un indice du texte. » Quel est le premier sentiment des deux enfants quand ils voient la masse noire s'approcher ?",
+      "prompt": "(Concours 2024) Lecture : « Une fin tragique ». Compréhension 2. Consigne officielle : « Quels sentiments éprouvent les deux enfants lors de la rencontre avec le phoque ? Justifie à chaque fois ta réponse par un indice du texte. » Extrait : « Un jour, alors que nous nous baignions, nous avons vu une masse noire nager tout près de nous. Le cri strident que nous avons poussé a dû l'effrayer. » Quel est le premier sentiment des enfants, et quel indice le prouve ?",
       "options": [
         {
           "id": "a",
-          "text": "la peur"
+          "text": "la peur — « Le cri strident que nous avons poussé »"
         },
         {
           "id": "b",
-          "text": "la colère"
+          "text": "la joie — « Le cri strident que nous avons poussé »"
         },
         {
           "id": "c",
-          "text": "l'ennui"
+          "text": "la peur — « alors que nous nous baignions »",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
         },
         {
           "id": "d",
-          "text": "la joie"
+          "text": "la joie — « alors que nous nous baignions »"
         }
       ],
       "correctOption": "a",
-      "explanation": "Les enfants poussent un cri strident devant la masse noire, et le texte dit que la peur leur broie les entrailles : le premier sentiment est la peur. La colère, l'ennui et la joie ne sont suggérés par aucune phrase.",
+      "explanation": "Pousser un cri strident devant une masse noire inconnue, c'est avoir peur : le cri est l'indice. Se baigner ne dit rien de ce que ressentent les enfants, et rien dans l'extrait ne montre de la joie.",
       "difficulty": 2
     },
     {
-      "prompt": "(Concours 2024) Lecture : « Une fin tragique ». Compréhension 2. Le premier sentiment des enfants est la peur. Quelle phrase du texte le prouve ?",
+      "prompt": "(Concours 2024) Lecture : « Une fin tragique ». Compréhension 2. Extrait : « La bête avait de longues moustaches […] mais nous étions tellement fascinés par cette présence insolite que nous ne songions plus à nous enfuir. » Quel est le second sentiment des enfants, et quel indice le prouve ?",
       "options": [
         {
           "id": "a",
-          "text": "« Nous avons passé de longues minutes à nager ensemble. »"
-        },
-        {
-          "id": "b",
-          "text": "« La peur nous broyait toujours les entrailles. »"
-        },
-        {
-          "id": "c",
-          "text": "« Elle s'est éloignée de quelques mètres. »"
-        },
-        {
-          "id": "d",
-          "text": "« Le phoque a plongé dans l'eau sombre des profondeurs. »"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "L'indice est la phrase où le mot « peur » est employé avec le verbe « broyer les entrailles ». Les autres phrases racontent ce que font les enfants ou le phoque, sans dire ce que les enfants ressentent.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "(Concours 2024) Lecture : « Une fin tragique ». Compréhension 2. Après la peur, quel second sentiment éprouvent les enfants devant le phoque qui joue autour d'eux ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "l'envie de s'enfuir",
+          "text": "l'envie de fuir — « nous étions tellement fascinés »",
           "misconceptionTag": "fr.lecture.contraire-du-texte"
         },
         {
           "id": "b",
-          "text": "la colère contre le phoque"
+          "text": "la fascination — « nous étions tellement fascinés »"
         },
         {
           "id": "c",
-          "text": "la fascination"
+          "text": "la fascination — « La bête avait de longues moustaches »",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
         },
         {
           "id": "d",
-          "text": "le dégoût de cette bête"
+          "text": "l'envie de fuir — « La bête avait de longues moustaches »"
         }
       ],
-      "correctOption": "c",
-      "explanation": "Le texte dit que les enfants sont « tellement fascinés par cette présence insolite » qu'ils ne songent plus à s'enfuir : le second sentiment est la fascination. Le texte ne parle ni de jalousie, ni de honte, ni de dégoût.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "(Concours 2024) Lecture : « Une fin tragique ». Compréhension 2. Le second sentiment des enfants est la fascination. Quelle phrase du texte le prouve ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "« Le cri strident que nous avons poussé a dû l'effrayer. »"
-        },
-        {
-          "id": "b",
-          "text": "« La bête avait de longues moustaches. »"
-        },
-        {
-          "id": "c",
-          "text": "« Quand nous avons raconté notre aventure à mon père. »"
-        },
-        {
-          "id": "d",
-          "text": "« Nous étions tellement fascinés. »"
-        }
-      ],
-      "correctOption": "d",
-      "explanation": "Le mot « fascinés » dit directement ce que ressentent les enfants, et « tellement » en marque la force. La phrase sur le cri montre la peur, celle sur les moustaches décrit l'animal et la dernière raconte la suite de l'aventure.",
+      "correctOption": "b",
+      "explanation": "Les enfants sont « tellement fascinés » qu'ils ne pensent plus à s'enfuir : c'est la fascination, et ces mots la prouvent. Les moustaches décrivent l'animal, pas ce que ressentent les enfants, et le texte dit le contraire d'une envie de fuir.",
       "difficulty": 2
     },
     {
@@ -148,15 +102,40 @@
         },
         {
           "id": "c",
-          "text": "crier"
+          "text": "aigu"
         },
         {
           "id": "d",
-          "text": "aigu"
+          "text": "crier"
         }
       ],
-      "correctOption": "d",
+      "correctOption": "c",
       "explanation": "Un cri « strident » est aigu et perçant. « Grave » dit le contraire, « joyeux » parle d'un sentiment et « crier » est un verbe, alors qu'on cherche un adjectif de même sens.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "(Concours 2024) Lecture : « Une fin tragique ». Compréhension 3 a. Consigne officielle : « Remplace chaque mot souligné par un mot ou une expression de même sens. » Phrase : « Le cri strident que nous avons poussé a dû effrayer le phoque. » Quel mot a le même sens que « effrayer » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "terrifier"
+        },
+        {
+          "id": "b",
+          "text": "rassurer",
+          "misconceptionTag": "fr.lexique.contraire-pour-synonyme"
+        },
+        {
+          "id": "c",
+          "text": "effrayant"
+        },
+        {
+          "id": "d",
+          "text": "attirer"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Effrayer, c'est faire très peur : « terrifier » a le même sens. « Rassurer » dit le contraire, « effrayant » est un adjectif et non un verbe, et « attirer » n'a pas ce sens.",
       "difficulty": 2
     },
     {
@@ -189,24 +168,24 @@
       "options": [
         {
           "id": "a",
-          "text": "descend"
-        },
-        {
-          "id": "b",
-          "text": "monte vers le haut",
+          "text": "monte",
           "misconceptionTag": "fr.lexique.contraire-pour-synonyme"
         },
         {
+          "id": "b",
+          "text": "s'avance"
+        },
+        {
           "id": "c",
-          "text": "avance à pas lents"
+          "text": "tourne"
         },
         {
           "id": "d",
-          "text": "glisse sur le sol"
+          "text": "descend"
         }
       ],
-      "correctOption": "a",
-      "explanation": "« Grimper » veut dire monter : son contraire est « descendre ». « Monte » est un synonyme. « Marche » et « roule » disent la façon d'avancer, pas le sens opposé.",
+      "correctOption": "d",
+      "explanation": "« Grimper » veut dire monter : son contraire est « descendre ». « Monte » est un synonyme ; « s'avance » et « tourne » disent une autre façon de bouger, pas le sens opposé.",
       "difficulty": 2
     },
     {

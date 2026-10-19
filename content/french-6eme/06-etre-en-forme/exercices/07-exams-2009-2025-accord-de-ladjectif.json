@@ -7,7 +7,7 @@
   "displayOrder": 7,
   "questions": [
     {
-      "prompt": "(Concours 2025) Grammaire 2. Consigne officielle : « Complète cette phrase en faisant les changements nécessaires. » Phrase : « Après un long moment, une tête à la chevelure hérissée apparait. » Devient : « Après une longue attente, une tête aux cheveux ___ apparait. » Quelle forme de « hérissé » faut-il ?",
+      "prompt": "(Concours 2025) Grammaire 2. Consigne officielle : « Complète cette phrase en faisant les changements nécessaires. » Phrase : « Après un long moment, une tête à la chevelure hérissée apparait. » Devient : « Après une … attente, une tête aux cheveux ___ apparait. » Quelle forme de « hérissé » faut-il ?",
       "options": [
         {
           "id": "a",
@@ -34,30 +34,28 @@
       "difficulty": 2
     },
     {
-      "prompt": "(Concours 2025) Grammaire 2. Phrase officielle : « Après un long moment, une tête à la chevelure hérissée apparait. » On remplace « moment » par « attente », un nom féminin. Au féminin, l'adjectif « long » devient « longue ». Quelle forme faut-il : « Après une ___ attente » ?",
+      "prompt": "(Concours 2025) Grammaire 2. Phrase officielle : « Après un long moment, une tête à la chevelure hérissée apparait. » Dans la réécriture, « un long moment » devient « une longue attente ». Pourquoi l'adjectif « long » change-t-il ?",
       "options": [
         {
           "id": "a",
-          "text": "long",
+          "text": "parce que le nom « attente » est au pluriel",
           "misconceptionTag": "fr.accord.adjectif-non-accorde"
         },
         {
           "id": "b",
-          "text": "longue"
+          "text": "parce que le nom « attente » est féminin"
         },
         {
           "id": "c",
-          "text": "longe",
-          "misconceptionTag": "fr.accord.feminin-adjectif-mal-forme"
+          "text": "parce que l'adjectif est placé avant le nom"
         },
         {
           "id": "d",
-          "text": "longues",
-          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+          "text": "parce que le verbe « apparait » a changé"
         }
       ],
       "correctOption": "b",
-      "explanation": "« Attente » est féminin singulier : l'adjectif se met au féminin singulier, longue (forme donnée dans l'énoncé). « Long » est le masculin, « longe » ajoute seulement un e à la fin et « longues » est au pluriel.",
+      "explanation": "L'adjectif prend le genre et le nombre du nom qu'il accompagne : « moment » est masculin, « attente » est féminin singulier, donc « long » passe au féminin. « Attente » n'est pas au pluriel, la place de l'adjectif ne change rien à l'accord, et le verbe n'accorde pas l'adjectif.",
       "difficulty": 2
     },
     {
@@ -207,7 +205,8 @@
         },
         {
           "id": "c",
-          "text": "Chère maman, vous nous manquez beaucoup."
+          "text": "Chère maman, vous nous manques beaucoup.",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
         },
         {
           "id": "d",
@@ -215,7 +214,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "On écrit à une seule personne, une maman : l'adjectif est au féminin singulier, chère, et le sujet « vous » devient « tu », avec le verbe « manquer » au présent : tu manques. La première autre phrase garde la terminaison de vous après tu, les deux autres gardent le pluriel de « parents ».",
+      "explanation": "On écrit à une seule personne, une maman : l'adjectif est au féminin singulier, chère, et le sujet « vous » devient « tu », avec le verbe « manquer » au présent : tu manques. « Tu nous manquez » et « vous nous manques » mélangent deux personnes, et « Chers maman » garde le pluriel de « parents ».",
       "difficulty": 3
     },
     {

@@ -145,3 +145,48 @@ Toutes les phrases officielles sont mot pour mot et chaque question dit sa sessi
 ## 7. Verdict
 
 **À corriger** : 3 critiques (C-1 à C-3), 7 majeurs (M-1 à M-7 ; M-2 touche m004 et m005), 5 mineurs. Chaque défaut a son texte de remplacement vérifié ci-dessus : une seule réponse, la clé n'est pas la plus longue, aucune fuite. m003 est prêt tel quel. Après correction : relancer `content:check`, `content:qa`, `content:tranche --fresh --strict-longest` et `content:gisement:controle` sur m002 et m008.
+
+## 8. Re-vérification (2026-10-19, après les corrections de l'auteur)
+
+Base : section « Corrections après audit des missions » de `rapports/rapport-B1.md`. Fichiers relus sur la branche wip. Rien n'a été modifié sous `content/`, aucune écriture git.
+
+### 8.1 État de chaque défaut
+
+| Défaut | État |
+| --- | --- |
+| C-1 m004 q1-q4 | ✓ possesseurs précisés ; `fr.det.possessif-personne-non-changee` posé sur q3 a, q4 a et q4 c, où il nomme exactement l'erreur. Re-résolu : leurs, leur, votre, vos, chacun seul juste |
+| C-2 m006 q10 | ✓ ; re-résolu : la clé (b, 96 car.) est seule juste ; c (101 car.) est plus longue qu'elle |
+| C-3 m006 q1 | ✓ choix multiple officiel, citations conformes au PDF ; re-résolu : [Louis, Gordon] seul |
+| M-1 m001 q1-q2 | ✓ « Une tête … » ; re-résolu : futur, puis se mettra |
+| M-2 fuites entre jumelles | ✓ m004 q2, q6, q8 et m005 q3, q4 : les deux vides restent vides ; m005 q8 porte sur « regardez ». Aucune question ne livre plus la clé d'une autre |
+| M-3 m002 | ✓ q1 « Samir », q5 « matin » ; re-résolu (nom commun) |
+| M-4, M-5 m006 q4 et q2 | ✓ ; re-résolu : [a, b] seul ; q2 une seule réponse, distracteurs muets, citations mot pour mot |
+| M-6 m007 q2 | ✓ l'explication nomme le contenu des options |
+| M-7 m008 q3 | ✓ texte cité ; re-résolu : « Deux » seul |
+| Mineurs (m001 q3 d muette, m004 q9, m005 q7 « Ecris », m007 q4 consigne complète) | ✓ tous |
+
+Les 23 questions modifiées ont été re-résolues à l'aveugle : toutes les clés sont justes et chaque question n'a qu'une réponse.
+
+### 8.2 Défaut nouveau, que j'avais manqué au premier passage — majeur
+
+Cinq explications désignent encore les options par leur rang (« la première phrase », « la troisième ») alors que les options sont mélangées à l'affichage. En m001 q3, l'appariement n'est même pas juste dans l'ordre du fichier (« la première phrase ne change rien » désigne l'option d). Remplacements de l'`explanation` :
+
+- **m001 q3** : `Les deux verbes passent au présent (broie, songeons) et la négation garde ses deux mots (ne … pas). Recopier la phrase ne change rien ; « nous songeons pas » oublie le « ne » ; « nous n'avons pas songé » laisse le second verbe au passé composé.`
+- **m001 q5** : `Avec « demain », les deux verbes passent au futur : fourrerai et partirai. « Je lui ai fourré… je suis parti » garde le passé composé, « je lui fourre… je pars » emploie le présent, et « je suis parti », laissé tel quel après « fourrerai », reste au passé composé.`
+- **m001 q7** : `Les deux verbes doivent passer au futur : me souriront et me lanceront. « M'ont souri » garde le passé composé, « me sourient » emploie le présent, et « me sourirons » est un futur mal formé : la terminaison -ons n'est pas celle de « certains ».`
+- **m001 q8** : `Le passé composé se forme avec « avoir » et le participe : entendu pour entendre, oublié pour oublier. Écrire « entendi » imite finir, écrire l'infinitif après « j'ai » est une erreur, et « Quand j'entends » laisse le premier verbe au présent.`
+- **m004 q9** : `Quand « plante » et « feuillage » passent au pluriel, le démonstratif devient « ces » et le possessif « leurs ». Il y a plusieurs plantes : « cette » et « son » restent au singulier, et « Ces plante … leurs feuillage » oublie le s des noms.`
+
+Les rangs relevés en m007 q3 (« sa première réplique ») et q7 (« la première conduite ») ne désignent pas des options : rien à changer.
+
+### 8.3 Gates
+
+- `content:check` ✓ (`french-6eme: 8 chapters, 73 exercises, 499 questions` : le total a bougé avec les autres lots).
+- `content:qa` ✓.
+- `content:tranche … 01,02 --fresh --strict-longest` ✓ : clé la plus longue 0/102, positions 22/31/23/25 %.
+- Les 4 paires proches sont voulues et aucune ne livre plus de clé : m004 q1-q2, q3-q4 et q7-q8 (deux vides d'une même phrase officielle), m008 q1-q3 (même texte cité ; q3 compte les prénoms, q1 relie les rôles).
+- `content:gisement:controle` sur m002 et m008 ✓ : 0 plage de 8 mots, 0 de 6 mots, 0 donnée commune.
+
+### 8.4 Verdict final
+
+**Prêt après une dernière retouche** : les cinq explications de 8.2. Les correctifs C-1 à C-3, M-1 à M-7 et les mineurs sont tous appliqués et vérifiés.
