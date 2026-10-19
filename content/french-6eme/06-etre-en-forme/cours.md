@@ -22,7 +22,7 @@ Un complément de lieu est un **complément non essentiel** : on peut le **suppr
 
 Le tableau montre la méthode : on pose **où ?** après le verbe, et le groupe qui répond est le complément de lieu.
 
-::: exemple Trouver le complément de lieu de _« Les élèves jouent dans la cour pendant la récréation. »_
+::: exemple Trouver le complément de lieu de « Les élèves jouent dans la cour pendant la récréation. »
 
 1. **Je cherche le verbe** : _jouent_ ← c'est lui qui reçoit la question.
 2. **Je pose la question** : les élèves jouent **où ?** → _dans la cour_ ← voilà le complément de lieu.
@@ -44,7 +44,7 @@ Le tableau montre la méthode : on pose **où ?** après le verbe, et le groupe 
 :::
 
 ::: verifie
-Dans _« Le cirque ouvre ses portes à Tunis en mars. »_, quel groupe est le complément de lieu ?
+Dans « _Le cirque ouvre ses portes à Tunis en mars._ », quel groupe est le complément de lieu ?
 
 ---
 
@@ -92,12 +92,12 @@ Au **futur**, le radical change : _aller_ devient **ir-**, _faire_ devient **fer
 
 Pour _aller_, la fin du participe change avec le sujet ; pour _faire_, on écrit simplement _fait_ derrière l'auxiliaire _avoir_.
 
-::: exemple Écrire _« Hier, Leïla et Sana (aller) au gymnase. Demain, elles (faire) un match. »_
+::: exemple Écrire « Hier, Leïla et Sana (aller) au gymnase. Demain, elles (faire) un match. »
 
-1. **_Hier_** annonce le passé ← passé composé.
-2. **_Aller_ prend l'auxiliaire _être_** : _sont_ ← avec _elles_ : _elles sont_.
+1. **Hier** annonce le passé ← passé composé.
+2. **Aller prend l'auxiliaire être** : _sont_ ← avec _elles_ : _elles sont_.
 3. **Le participe s'accorde avec le sujet** : _Leïla et Sana_ = deux filles ← _allées_ (e + s). _Hier, Leïla et Sana **sont allées** au gymnase._
-4. **_Demain_** annonce le futur ← radical _fer-_ + _-ont_ : _Demain, elles **feront** un match._
+4. **Demain** annonce le futur ← radical _fer-_ + -_ont_ : _Demain, elles **feront** un match._
 
 :::
 
@@ -122,7 +122,7 @@ Pour _aller_, la fin du participe change avec le sujet ; pour _faire_, on écrit
 :::
 
 ::: verifie
-Écris _« Hier, ma sœur (aller) à la piscine. Demain, nous y (aller) ensemble et nous (faire) des longueurs. »_
+Écris « _Hier, ma sœur (aller) à la piscine. Demain, nous y (aller) ensemble et nous (faire) des longueurs._ »
 
 ---
 
@@ -152,12 +152,12 @@ L'**adjectif** s'accorde en **genre** (masculin ou féminin) et en **nombre** (s
 
 Le tableau montre qu'on regarde d'abord la **fin** de l'adjectif, puis on le fait correspondre au nom.
 
-::: exemple Accorder les adjectifs de _« Une fille (heureux) et des fruits (mûr) »_
+::: exemple Accorder les adjectifs de « Une fille (heureux) et des fruits (mûr) »
 
 1. **Je cherche le nom** : _fille_ ← c'est lui qui commande l'adjectif.
-2. **_Fille_ est féminin singulier** ← _heureux_ se termine par **-eux**, donc **heureuse**.
+2. **Fille est féminin singulier** ← _heureux_ se termine par **-eux**, donc **heureuse**.
 3. **Je cherche le deuxième nom** : _fruits_ ← masculin pluriel.
-4. **_Mûr_ prend un _s_ au pluriel** ← _des fruits mûrs_ ; avec _des pommes_ (féminin pluriel), _des pommes mûres_.
+4. **Mûr prend un s au pluriel** ← _des fruits mûrs_ ; avec _des pommes_ (féminin pluriel), _des pommes mûres_.
 
 :::
 
@@ -174,7 +174,7 @@ Le tableau montre qu'on regarde d'abord la **fin** de l'adjectif, puis on le fai
 :::
 
 ::: verifie
-Accorde : _« Ma grand-mère est (heureux) de voir ses petits-enfants (joyeux). »_
+Accorde : « _Ma grand-mère est (heureux) de voir ses petits-enfants (joyeux)._ »
 
 ---
 
@@ -204,7 +204,7 @@ Quels mots faut-il connaître pour parler de la santé et du sport ?
 
 Pour situer une action, on utilise aussi des mots de lieu : **partout**, **nulle part**, **là-bas**, **au-dessus de**, **au-dessous de** ; pour enchaîner : **puis**, **après**, **par la suite** ; pour dire une distance ou une quantité approchée : **près de**, **à proximité de**, **environ**, **presque**.
 
-::: exemple Comprendre l'expression _« se porter comme un charme »_
+::: exemple Comprendre l'expression « se porter comme un charme »
 
 1. **Je lis l'expression au sens propre** : un charme se porte-t-il ? ← cela n'a aucun sens.
 2. **Je cherche le sens dans le contexte** : « Ma grand-mère se porte comme un charme, elle court tous les matins. » ← elle court, elle est en forme.
@@ -280,7 +280,7 @@ Dans quel ordre se trouvent ces parties : _Ton neveu, Jean_ ; _Paris, le 18 fév
 
 ---
 
-Dans l'ordre d'une lettre : **_Paris, le 18 février_** (lieu et date), **_Ma chère Tatie,_** (formule d'appel), puis le corps, puis **_Ton neveu, Jean_** (signature) à la fin.
+Dans l'ordre d'une lettre : **Paris, le 18 février** (lieu et date), **Ma chère Tatie,** (formule d'appel), puis le corps, puis **Ton neveu, Jean** (signature) à la fin.
 :::
 
 ::: retenir
@@ -368,7 +368,7 @@ Les répliques s'écrivent avec : deux-points et guillemets pour ouvrir, tiret e
 
 1. **Le début** : _Samedi, Sami et Rania vont au cirque._ ← qui, quand, où.
 2. **Le passage descriptif** : _La piste est ronde, entourée de gradins rouges. Une fillette en tutu blanc se tient au pied d'une tour d'escabeaux._ ← on voit le lieu et l'acrobate.
-3. **Les répliques** : _Sami s'écrie : « Elle va monter tout en haut !_ puis, à la ligne : _– Chut, répond Rania, regarde ! »_ ← on entend les deux voix.
+3. **Les répliques** : _Sami s'écrie : « Elle va monter tout en haut !_ puis, à la ligne : – Chut, répond Rania, regarde ! » ← on entend les deux voix.
 4. **La fin** : _Quand la fillette saute, tout le public applaudit._ ← l'action se termine.
 
 :::
@@ -379,9 +379,9 @@ Les répliques s'écrivent avec : deux-points et guillemets pour ouvrir, tiret e
 
 ::: propriete
 
-- Chaque réplique commence par une **majuscule** et se termine par la ponctuation de la phrase (_!_ , _?_, _._).
+- Chaque réplique commence par une **majuscule** et se termine par la ponctuation de la phrase (! , ?, .).
 - Le verbe qui introduit la parole peut venir **avant** ou **après** elle.
-- Cas-limite : une réplique peut tenir en un seul mot (_« Bravo ! »_).
+- Cas-limite : une réplique peut tenir en un seul mot (« _Bravo !_ »).
 
 :::
 
@@ -390,7 +390,7 @@ Les répliques s'écrivent avec : deux-points et guillemets pour ouvrir, tiret e
 
 ---
 
-_Rania dit à Sami : « Regarde la jeune acrobate !_ puis à la ligne : _– Elle est courageuse, répond Sami. »_ Le deux-points et les guillemets ouvrent la parole, le tiret marque le nouveau personnage.
+_Rania dit à Sami : « Regarde la jeune acrobate !_ puis à la ligne : – Elle est courageuse, répond Sami. » Le deux-points et les guillemets ouvrent la parole, le tiret marque le nouveau personnage.
 :::
 
 ::: retenir

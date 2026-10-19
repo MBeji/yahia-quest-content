@@ -27,7 +27,7 @@ Le **déterminant** (_le, la, l', les, un, une, des_) se place **devant** le nom
 Le tableau relie la phrase à la définition : le seul GN sans déterminant est celui qui porte une majuscule et un nom propre.
 
 ::: exemple
-Repère les GN dans _« Samia range la farine dans un placard. »_ et nomme-les :
+Repère les GN dans « _Samia range la farine dans un placard._ » et nomme-les :
 
 1. _Samia_ : un seul mot, avec une majuscule, qui désigne une personne précise → **nom propre**.
 2. _la farine_ : _la_ est placé devant _farine_ → **déterminant + nom commun**.
@@ -42,12 +42,12 @@ Elle tente parce que, dans une histoire, on parle d'une personne ou d'un lieu bi
 
 :::
 
-Un verbe comme _saluer_ ou _courir_ refuse le déterminant (on ne dit pas _« le courir »_) : ce n'est pas un nom, il ne va donc dans aucune colonne des noms.
+Un verbe comme _saluer_ ou _courir_ refuse le déterminant (on ne dit pas « _le courir_ ») : ce n'est pas un nom, il ne va donc dans aucune colonne des noms.
 
 La règle se précise avec deux familles de déterminants. Les **articles définis** (_le, la, l', les_) accompagnent ce dont on parle déjà : _le comptoir_ de la boulangerie. Les **articles indéfinis** (_un, une, des_) présentent quelque chose de nouveau : _un comptoir_ quelconque. Devant un nom qui commence par une voyelle, _le_ et _la_ s'écrivent _l'_ : _l'apprenti_, _l'école_.
 
 ::: verifie
-Dans _« Karim apporte des fleurs à la boutique »_, donne le nom propre et les GN formés d'un déterminant et d'un nom commun.
+Dans « _Karim apporte des fleurs à la boutique_ », donne le nom propre et les GN formés d'un déterminant et d'un nom commun.
 
 ---
 
@@ -89,16 +89,16 @@ Remplace les GN soulignés par un pronom : _Samia pétrit la pâte. **Hédi et S
 :::
 
 ::: piege
-L'erreur classique : écrire _« Samia et Hédi préparent le pain. **Elles** arrivent à cinq heures. »_
+L'erreur classique : écrire « _Samia et Hédi préparent le pain. **Elles** arrivent à cinq heures._ »
 
 Elle tente parce qu'on pense à _Samia_, le premier nom, et que l'on oublie qu'il y a aussi un garçon. Or un pronom doit reprendre **tout** le groupe : un garçon et une fille donnent **ils**.
 
 :::
 
-Deux remarques complètent la règle. Devant une voyelle, _je_ devient _j'_ (_j'ai_). Et _vous_ s'adresse à plusieurs personnes, mais aussi, par politesse, à une seule : une cliente dit _« Vous êtes ouvert ? »_ au boulanger tout seul.
+Deux remarques complètent la règle. Devant une voyelle, _je_ devient _j'_ (_j'ai_). Et _vous_ s'adresse à plusieurs personnes, mais aussi, par politesse, à une seule : une cliente dit « _Vous êtes ouvert ?_ » au boulanger tout seul.
 
 ::: verifie
-Remplace par un pronom : _« Hédi et son frère vendent du pain. »_
+Remplace par un pronom : « _Hédi et son frère vendent du pain._ »
 
 ---
 
@@ -141,7 +141,7 @@ Le **temps** d'un verbe indique quand l'action a lieu. Trois temps sont à conna
 Les deux tableaux relient le moment de l'action à deux indices : les mots qui situent dans le temps, et la forme du verbe.
 
 ::: exemple
-Trouve le temps de _« Le soir, le boulanger rentrera chez lui fatigué. »_
+Trouve le temps de « _Le soir, le boulanger rentrera chez lui fatigué._ »
 
 1. _Le soir_ ne dit pas, à lui seul, si c'est hier ou demain : on regarde le verbe.
 2. _rentrera_ se termine par **r + a** (comme _tiendra, sera_) → c'est une forme de futur.
@@ -150,7 +150,7 @@ Trouve le temps de _« Le soir, le boulanger rentrera chez lui fatigué. »_
 :::
 
 ::: piege
-L'erreur classique : lire _« Ce matin, Samir **a** vérifié les freins »_ comme un présent, parce qu'on reconnaît le petit mot _a_ (qui se conjugue au présent).
+L'erreur classique : lire « _Ce matin, Samir **a** vérifié les freins_ » comme un présent, parce qu'on reconnaît le petit mot _a_ (qui se conjugue au présent).
 
 Il tente parce que _a_ est bien le verbe _avoir_ au présent. Pourtant ici _a vérifié_ forme **un seul verbe en deux mots** (_a_ + _vérifié_) : c'est un **passé composé**, et l'action est terminée. On retrouve la même forme avec _est sorti_.
 
@@ -159,7 +159,7 @@ Il tente parce que _a_ est bien le verbe _avoir_ au présent. Pourtant ici _a v�
 Pour reconnaître le passé composé, on cherche donc le **couple** « _a_ ou _est_ + un participe » (_a aidé, a fini, a pris, est sorti_). Un indicateur seul peut tromper : _ce matin_ accompagne un passé composé aussi bien que _hier_, dès que l'action est déjà faite. C'est donc la forme du verbe qui tranche.
 
 ::: verifie
-Indique le temps : _« Maintenant, il va de maison en maison. »_ puis _« De bon matin, le facteur est sorti de chez lui. »_
+Indique le temps : « _Maintenant, il va de maison en maison._ » puis « _De bon matin, le facteur est sorti de chez lui._ »
 
 ---
 
@@ -203,16 +203,16 @@ Donne l'infinitif de _vous avez appris_ et de _tu ne cherches pas_.
 :::
 
 ::: piege
-L'erreur classique : donner _avoir_ comme infinitif de _« vous avez appris »_.
+L'erreur classique : donner _avoir_ comme infinitif de « _vous avez appris_ ».
 
 Elle tente parce qu'on a lu _avez_ en premier. Mais dans un temps en deux mots, c'est le **second** mot qui porte le sens : _vous avez appris_ est le passé composé de **apprendre**.
 
 :::
 
-Pour savoir si un verbe est conjugué ou à l'infinitif, on se pose la question : _a-t-il un sujet, et peut-il changer avec le temps ?_ Dans _« Salim surveille le chauffeur en train de changer une roue »_, _surveille_ change (_Salim surveillera_), alors que _changer_ ne bouge pas. Un verbe placé après une autre forme de verbe ou après _en train de_ est souvent à l'infinitif.
+Pour savoir si un verbe est conjugué ou à l'infinitif, on se pose la question : _a-t-il un sujet, et peut-il changer avec le temps ?_ Dans « _Salim surveille le chauffeur en train de changer une roue_ », _surveille_ change (_Salim surveillera_), alors que _changer_ ne bouge pas. Un verbe placé après une autre forme de verbe ou après _en train de_ est souvent à l'infinitif.
 
 ::: verifie
-Dans _« Mina espère devenir pilote »_, quel verbe est conjugué et lequel est à l'infinitif ?
+Dans « _Mina espère devenir pilote_ », quel verbe est conjugué et lequel est à l'infinitif ?
 
 ---
 
@@ -232,7 +232,7 @@ L'apprenti pâtissier lit sa recette. Elle dit : « Commencer par … les œufs.
 C'est le même son à l'oreille, mais l'orthographe n'est pas la même. Quelle forme choisir derrière un petit mot comme _par_ ?
 
 ::: propriete
-Après les mots **à, de, par, pour, sans**, le verbe s'écrit à l'**infinitif**. On ne le conjugue pas et on ne lui met pas la terminaison _-é_ du participe.
+Après les mots **à, de, par, pour, sans**, le verbe s'écrit à l'**infinitif**. On ne le conjugue pas et on ne lui met pas la terminaison -_é_ du participe.
 
 :::
 
@@ -247,16 +247,16 @@ Après les mots **à, de, par, pour, sans**, le verbe s'écrit à l'**infinitif*
 Chaque ligne montre un petit mot de la règle suivi d'un verbe à l'infinitif.
 
 ::: exemple
-Choisis la bonne écriture dans _« Il commence par (casser, cassé, casse) les œufs. »_
+Choisis la bonne écriture dans « _Il commence par (casser, cassé, casse) les œufs._ »
 
 1. Le petit mot qui précède est **par** : il fait partie des cinq mots de la règle.
 2. Après **par**, le verbe est à l'**infinitif** : on exclut _casse_ (verbe conjugué) et _cassé_ (participe).
-3. Pour vérifier, on essaie un verbe dont l'infinitif et le participe ne se prononcent pas pareil : _Il commence par **prendre** les œufs_ va bien (et non _par pris_) → c'est donc l'infinitif, qui s'écrit **casser** avec _-er_.
+3. Pour vérifier, on essaie un verbe dont l'infinitif et le participe ne se prononcent pas pareil : _Il commence par **prendre** les œufs_ va bien (et non _par pris_) → c'est donc l'infinitif, qui s'écrit **casser** avec -_er_.
 
 :::
 
 ::: piege
-L'erreur classique : écrire _« Il utilise le fouet pour **mélangé** la pâte. »_
+L'erreur classique : écrire « _Il utilise le fouet pour **mélangé** la pâte._ »
 
 Elle tente parce que _mélanger_ et _mélangé_ se prononcent de la même manière. Pourtant, après **pour**, le verbe est à l'infinitif : _pour **mélanger** la pâte_.
 
@@ -265,11 +265,11 @@ Elle tente parce que _mélanger_ et _mélangé_ se prononcent de la même maniè
 La règle vaut aussi pour un verbe pronominal (_sans s'arrêter_) et pour les locutions qui contiennent l'un de ces mots (_avant **de** partir_). Elle ne concerne que ces cinq petits mots : c'est à eux que l'on pense quand on hésite.
 
 ::: verifie
-Complète avec le verbe _regarder_ (infinitif ou participe ?) : _« Le client entre sans … la vitrine. »_
+Complète avec le verbe _regarder_ (infinitif ou participe ?) : « _Le client entre sans … la vitrine._ »
 
 ---
 
-**regarder**, à l'infinitif : le petit mot qui précède est _sans_, un des cinq mots de la règle. On le vérifie avec _prendre_ : _sans prendre_ (et non _sans pris_) va bien, donc on écrit _-er_ et pas _-é_.
+**regarder**, à l'infinitif : le petit mot qui précède est _sans_, un des cinq mots de la règle. On le vérifie avec _prendre_ : _sans prendre_ (et non _sans pris_) va bien, donc on écrit -_er_ et pas -_é_.
 
 :::
 
@@ -300,7 +300,7 @@ Un **mot de remplacement** (ou **substitut**) est un mot ou un groupe de mots qu
 Les deux colonnes montrent que le remplaçant désigne bien le même être ou la même chose.
 
 ::: exemple
-Réécris : _« Karim scie une planche. Karim ponce la planche. Karim vernit la planche. »_
+Réécris : « _Karim scie une planche. Karim ponce la planche. Karim vernit la planche._ »
 
 1. La 1re répétition porte sur _Karim_ : on met le pronom **il**.
 2. La 2e répétition porte sur _Karim_ aussi : on change de remplaçant pour varier, **l'apprenti**.
@@ -311,7 +311,7 @@ Résultat : _Karim scie une planche. Il ponce le morceau de bois. L'apprenti ver
 :::
 
 ::: piege
-L'erreur classique : remplacer par un mot qui peut désigner **deux** personnages, par exemple _« Karim parle à Hédi. **Il** sourit. »_
+L'erreur classique : remplacer par un mot qui peut désigner **deux** personnages, par exemple « _Karim parle à Hédi. **Il** sourit._ »
 
 Il tente parce que le pronom paraît naturel. Mais on ne sait plus qui sourit : Karim ou Hédi ? Quand deux personnages sont possibles, on précise : _Hédi sourit._ ou _Le menuisier sourit._
 
@@ -320,11 +320,11 @@ Il tente parce que le pronom paraît naturel. Mais on ne sait plus qui sourit : 
 Pour être bien choisi, un remplaçant doit désigner la même personne que le mot repris, avoir le même genre et le même nombre (_la jeune fille_ pour une fille, jamais _le jeune garçon_). Et il ne doit pas créer de doute.
 
 ::: verifie
-Remplace le mot répété : _« Joséphine salue le public. Joséphine pleure de joie. »_
+Remplace le mot répété : « _Joséphine salue le public. Joséphine pleure de joie._ »
 
 ---
 
-Par exemple : _Joséphine salue le public. **Elle** pleure de joie._ ou _**La jeune comédienne** pleure de joie._ Le remplaçant désigne la même personne, au féminin singulier.
+Par exemple : _Joséphine salue le public. **Elle** pleure de joie._ ou **La jeune comédienne** pleure de joie. Le remplaçant désigne la même personne, au féminin singulier.
 
 :::
 
@@ -366,7 +366,7 @@ Range ces phrases dans l'ordre d'un récit : (a) _La lumière revient et Mme Ben
 :::
 
 ::: piege
-L'erreur classique : laisser deux phrases se **contredire**. Par exemple : _« Léna est fleuriste. Ce soir, sa boutique est fermée depuis midi, mais Léna sert encore beaucoup de clients. »_
+L'erreur classique : laisser deux phrases se **contredire**. Par exemple : « _Léna est fleuriste. Ce soir, sa boutique est fermée depuis midi, mais Léna sert encore beaucoup de clients._ »
 
 Elle tente parce que, en écrivant vite, on oublie ce qu'on a dit plus haut. Une boutique fermée ne peut pas recevoir des clients : une des deux phrases doit changer, par exemple _sa boutique est ouverte jusqu'à huit heures._
 
@@ -375,7 +375,7 @@ Elle tente parce que, en écrivant vite, on oublie ce qu'on a dit plus haut. Une
 Pour éviter les contradictions, on relit en vérifiant quatre choses qui ne doivent pas changer : le **métier** du personnage, le **lieu**, le **moment** et les **personnes** présentes. Un récit peut tout inventer, mais jamais dire une chose et son contraire.
 
 ::: verifie
-Le texte est-il cohérent ? _« Walid est apprenti coiffeur. Chaque jour, il répare des moteurs de camion. »_
+Le texte est-il cohérent ? « _Walid est apprenti coiffeur. Chaque jour, il répare des moteurs de camion._ »
 
 ---
 
@@ -417,7 +417,7 @@ Un nom de métier se retient avec **ce que fait** la personne. Voici ceux de ce 
 :::
 
 ::: exemple
-Devine le métier de _« Il ou elle soigne les animaux malades. »_
+Devine le métier de « _Il ou elle soigne les animaux malades._ »
 
 1. L'action est **soigner** et ce qu'on soigne, ce sont des **animaux**.
 2. Parmi les métiers connus, le médecin soigne des personnes, mais celui qui soigne des animaux est le **vétérinaire**.
@@ -435,7 +435,7 @@ Elle tente parce que les deux travaillent avec des plantes. On évite l'erreur e
 :::
 
 ::: verifie
-Quel mot-outil convient : _« Samir lit tranquillement quand, … , la lumière s'éteint. »_ (soudain / jamais)
+Quel mot-outil convient : « _Samir lit tranquillement quand, … , la lumière s'éteint._ » (soudain / jamais)
 
 ---
 

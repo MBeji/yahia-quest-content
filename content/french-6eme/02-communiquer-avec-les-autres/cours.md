@@ -23,7 +23,7 @@ Un **déterminant démonstratif** se place devant un nom pour **montrer** un obj
 Le tableau relie le choix du démonstratif au **genre** et au **nombre** du nom, et à sa première lettre pour _cet_.
 
 ::: exemple
-Complète : _« Regarde … imprimante, … ordinateur et … écrans. »_
+Complète : « _Regarde … imprimante, … ordinateur et … écrans._ »
 
 1. _imprimante_ est féminin singulier → **cette** imprimante.
 2. _ordinateur_ est masculin singulier et commence par une voyelle → **cet** ordinateur.
@@ -32,7 +32,7 @@ Complète : _« Regarde … imprimante, … ordinateur et … écrans. »_
 :::
 
 ::: piege
-L'erreur classique : écrire _« **ce** ordinateur »_ ou _« **cet** imprimante »_.
+L'erreur classique : écrire « **ce** ordinateur » ou « **cet** imprimante ».
 
 Elle tente parce qu'on retient « _ce_ pour le masculin » et « _cet_ à cause de la voyelle ». Mais _cet_ n'existe que devant un nom **masculin** commençant par une voyelle ou un h muet (_cet hôpital_) ; devant un nom féminin on écrit toujours **cette**.
 
@@ -41,7 +41,7 @@ Elle tente parce qu'on retient « _ce_ pour le masculin » et « _cet_ à cause 
 Le démonstratif ne dépend que du **nom** qui suit : on regarde son genre, son nombre et sa première lettre. Quand on passe au pluriel, _ce_, _cet_ et _cette_ deviennent tous _ces_.
 
 ::: verifie
-Complète : _« … machine est ancienne, mais … ordinateurs sont récents. »_
+Complète : « … machine est ancienne, mais … ordinateurs sont récents. »
 
 ---
 
@@ -90,7 +90,7 @@ Plusieurs objets :
 Pour lire les tableaux, on repère d'abord la ligne de **celui qui possède**, puis la colonne de **la chose possédée**.
 
 ::: exemple
-Remplace le complément par un possessif : _« C'est le téléphone de Lina. »_, _« C'est l'ordinateur de Lina et de Sami. »_ puis _« Ce sont les clés de Lina et de Sami. »_
+Remplace le complément par un possessif : « _C'est le téléphone de Lina._ », « _C'est l'ordinateur de Lina et de Sami._ » puis « _Ce sont les clés de Lina et de Sami._ »
 
 1. Celle qui possède est une seule personne (elle), le téléphone est masculin singulier → **son** téléphone.
 2. Ceux qui possèdent sont deux (eux), un seul objet → **leur** ordinateur.
@@ -99,7 +99,7 @@ Remplace le complément par un possessif : _« C'est le téléphone de Lina. »_
 :::
 
 ::: piege
-L'erreur classique : écrire _« C'est **sa** téléphone »_ parce que Lina est une fille.
+L'erreur classique : écrire « _C'est **sa** téléphone_ » parce que Lina est une fille.
 
 Elle tente parce qu'on pense au genre de la **personne**. Or le déterminant s'accorde avec le **nom qui suit** : _téléphone_ est masculin, on écrit **son** téléphone, que le propriétaire soit un garçon ou une fille.
 
@@ -108,7 +108,7 @@ Elle tente parce qu'on pense au genre de la **personne**. Or le déterminant s'a
 Pour _leur_, un dernier réflexe : il prend un _s_ seulement quand la chose possédée est au pluriel (_leur ordinateur_, mais _leurs clés_).
 
 ::: verifie
-Complète : _« Karim et Nour ont rangé … cahiers et … trousse. »_
+Complète : « _Karim et Nour ont rangé … cahiers et … trousse._ »
 
 ---
 
@@ -153,7 +153,7 @@ L'**impératif** est une forme du verbe qui sert à donner un **ordre**, un **co
 Les tableaux montrent qu'on retrouve la forme de l'impératif en cherchant la personne, sans écrire le pronom.
 
 ::: exemple
-Une notice donne : _« 1. Prendre une boîte. 2. Découper une fente. 3. Poser le téléphone. »_ Réécris-la en donnant des ordres à un ami (_tu_).
+Une notice donne : « _1. Prendre une boîte. 2. Découper une fente. 3. Poser le téléphone._ » Réécris-la en donnant des ordres à un ami (_tu_).
 
 1. Chaque verbe est à l'**infinitif** ; on les met à la 2e personne du singulier de l'impératif.
 2. On supprime le sujet : on écrit _Prends_, et non _Tu prends_.
@@ -162,7 +162,7 @@ Une notice donne : _« 1. Prendre une boîte. 2. Découper une fente. 3. Poser l
 :::
 
 ::: piege
-L'erreur classique : garder le sujet, comme dans _« **Tu** prends une boîte »_, en pensant écrire un ordre.
+L'erreur classique : garder le sujet, comme dans « **Tu** prends une boîte », en pensant écrire un ordre.
 
 Elle tente parce que la phrase semble donner une consigne. Mais avec le pronom, c'est un **présent** qui raconte ce que quelqu'un fait. Pour ordonner, on écrit le verbe seul : _Prends une boîte._
 
@@ -186,16 +186,16 @@ L'impératif ordonne ou conseille, sans sujet, à trois personnes : _tu_, _nous_
 
 ## ✏️ L'impératif : le « s » de la 2e personne du singulier
 
-Dans la notice, on lit : « Cherche une information, choisis la bonne, fais une copie. » Les trois verbes parlent à _tu_, mais seuls deux se terminent par _-s_.
+Dans la notice, on lit : « Cherche une information, choisis la bonne, fais une copie. » Les trois verbes parlent à _tu_, mais seuls deux se terminent par -_s_.
 
 Pourquoi _cherche_ sans _s_, alors que _choisis_ et _fais_ en prennent un ?
 
 ::: propriete
 À la 2e personne du singulier de l'impératif :
 
-- les verbes en **-er** (_chercher, utiliser, regarder_) et le verbe **aller** n'ont **pas de _s_** : _cherche, utilise, va_ ;
-- les verbes en **-ir** comme _choisir_ et en **-re** comme _faire_ ou _prendre_ **prennent un _s_** : _choisis, fais, prends_ ;
-- attention : _ouvrir_ s'écrit comme un verbe en _-er_ : **ouvre** la fenêtre, sans _s_.
+- les verbes en **-er** (_chercher, utiliser, regarder_) et le verbe **aller** n'ont **pas de s** : _cherche, utilise, va_ ;
+- les verbes en **-ir** comme _choisir_ et en **-re** comme _faire_ ou _prendre_ **prennent un s** : _choisis, fais, prends_ ;
+- attention : _ouvrir_ s'écrit comme un verbe en -_er_ : **ouvre** la fenêtre, sans _s_.
 
 :::
 
@@ -206,28 +206,28 @@ Pourquoi _cherche_ sans _s_, alors que _choisis_ et _fais_ en prennent un ?
 | _choisir_  | _choisis_      | oui   |
 | _prendre_  | _prends_       | oui   |
 
-Le tableau donne la règle dans l'ordre : on regarde la fin de l'infinitif (_-er_ ou autre), puis on met le _s_ ou non.
+Le tableau donne la règle dans l'ordre : on regarde la fin de l'infinitif (-_er_ ou autre), puis on met le _s_ ou non.
 
 ::: exemple
-Écris à l'impératif, pour _tu_ : _« (utiliser) le clavier, (choisir) un titre, (aller) au club. »_
+Écris à l'impératif, pour _tu_ : « (utiliser) le clavier, (choisir) un titre, (aller) au club. »
 
 1. _utiliser_ se termine par **-er** → pas de _s_ : **Utilise** le clavier.
 2. _choisir_ se termine par **-ir** → un _s_ : **Choisis** un titre.
-3. _aller_ suit la même règle que les verbes en _-er_ → pas de _s_ : **Va** au club.
+3. _aller_ suit la même règle que les verbes en -_er_ → pas de _s_ : **Va** au club.
 
 :::
 
 ::: piege
-L'erreur classique : écrire _« **Cherches** une information »_ en pensant au présent _tu cherches_.
+L'erreur classique : écrire « **Cherches** une information » en pensant au présent _tu cherches_.
 
 Elle tente parce que, à l'oral, les deux formes sonnent pareil, et au présent le _s_ de _tu_ est bien là. Mais à l'impératif d'un verbe en **-er**, il disparaît : **Cherche** une information.
 
 :::
 
-Au pluriel, aucune hésitation : la fin est toujours _-ons_ pour _nous_ et _-ez_ pour _vous_ (_faisons_, _prenez_). Un seul verbe de cette liste fait exception : _vous faites_.
+Au pluriel, aucune hésitation : la fin est toujours -_ons_ pour _nous_ et -_ez_ pour _vous_ (_faisons_, _prenez_). Un seul verbe de cette liste fait exception : _vous faites_.
 
 ::: verifie
-Complète à l'impératif (_tu_) : _« (prendre) la souris, (cliquer) sur l'icône. »_
+Complète à l'impératif (_tu_) : « (prendre) la souris, (cliquer) sur l'icône. »
 
 ---
 
@@ -236,7 +236,7 @@ Complète à l'impératif (_tu_) : _« (prendre) la souris, (cliquer) sur l'icô
 :::
 
 ::: retenir
-À l'impératif, pour _tu_ : pas de _s_ pour les verbes en _-er_ et pour _aller_ (_cherche, va_) ; un _s_ pour les verbes en _-ir_ comme _choisir_ et en _-re_ comme _faire_, _prendre_ (_choisis, fais, prends_).
+À l'impératif, pour _tu_ : pas de _s_ pour les verbes en -_er_ et pour _aller_ (_cherche, va_) ; un _s_ pour les verbes en -_ir_ comme _choisir_ et en -_re_ comme _faire_, _prendre_ (_choisis, fais, prends_).
 
 :::
 
@@ -263,18 +263,18 @@ Pour choisir, on essaie de **changer la personne ou le temps** de la phrase. Si 
 Le tableau relie le test à la règle : le mot qui varie est le verbe _avoir_.
 
 ::: exemple
-Écris _a_ ou _à_ : _« Sophie … beaucoup … dire … son père. »_
+Écris _a_ ou _à_ : « _Sophie … beaucoup … dire … son père._ »
 
 1. _Sophie … beaucoup_ : on essaie _Elles … beaucoup_ → _ont_ marche, donc **a**.
-2. _… dire_ : on essaie _Elles … dire_ → _ont dire_ est impossible, donc **à**.
-3. _… son père_ : même essai, impossible, donc **à**.
+2. … dire : on essaie _Elles … dire_ → _ont dire_ est impossible, donc **à**.
+3. … son père : même essai, impossible, donc **à**.
 
 La phrase est : _Sophie **a** beaucoup **à** dire **à** son père._
 
 :::
 
 ::: piege
-L'erreur classique : écrire _« Elle téléphone **a** son oncle »_ ou _« Il **à** un portable »_.
+L'erreur classique : écrire « _Elle téléphone **a** son oncle_ » ou « _Il **à** un portable_ ».
 
 Elle tente parce que les deux mots se prononcent de la même manière. On évite le piège en testant : _Elle téléphone a son oncle_ → _Elles téléphonent ont son oncle_ n'a aucun sens, donc il faut **à**.
 
@@ -283,7 +283,7 @@ Elle tente parce que les deux mots se prononcent de la même manière. On évite
 Dans un verbe au passé composé, le _a_ est suivi d'un participe (_a téléphoné, a envoyé_) : il ne porte pas d'accent, puisque c'est _avoir_.
 
 ::: verifie
-Complète : _« Le cameraman … apporté sa caméra … la cérémonie. »_
+Complète : « _Le cameraman … apporté sa caméra … la cérémonie._ »
 
 ---
 
@@ -334,7 +334,7 @@ L'ordre est donc **b, c, d, a**.
 :::
 
 ::: piege
-L'erreur classique : prendre pour **élément perturbateur** une des actions du personnage, par exemple _« Il vérifie les fils »_.
+L'erreur classique : prendre pour **élément perturbateur** une des actions du personnage, par exemple « _Il vérifie les fils_ ».
 
 Elle tente parce que c'est à ce moment-là que l'histoire « bouge » : le personnage s'agite. Mais vérifier les fils est la **réaction** à un problème. L'élément perturbateur est l'événement qui **crée** le problème, avant que le personnage agisse : l'écran qui devient noir.
 
@@ -343,11 +343,11 @@ Elle tente parce que c'est à ce moment-là que l'histoire « bouge » : le pers
 Les trois parties du module précédent se retrouvent ici : le **début** est la situation de départ, la **suite** réunit l'élément perturbateur et les actions, la **fin** est la situation finale.
 
 ::: verifie
-Dans _« Léa se promène dans le parc. Brusquement, un ballon vient rouler à ses pieds. Elle le ramasse et le rend à l'enfant. »_, quel est l'élément perturbateur ?
+Dans « _Léa se promène dans le parc. Brusquement, un ballon vient rouler à ses pieds. Elle le ramasse et le rend à l'enfant._ », quel est l'élément perturbateur ?
 
 ---
 
-_« Brusquement, un ballon vient rouler à ses pieds. »_ : c'est l'événement inattendu qui interrompt la promenade tranquille (situation de départ) et qui entraîne les actions qui suivent.
+« _Brusquement, un ballon vient rouler à ses pieds._ » : c'est l'événement inattendu qui interrompt la promenade tranquille (situation de départ) et qui entraîne les actions qui suivent.
 
 :::
 
@@ -377,7 +377,7 @@ Le **chapeau** est le court paragraphe qui présente un article ; la **rubrique*
 :::
 
 ::: exemple
-Qui fait quoi dans l'équipe du journal de classe ? _« Il filme la visite à l'imprimerie. »_ puis _« Elle corrige les articles et écrit les titres. »_
+Qui fait quoi dans l'équipe du journal de classe ? « _Il filme la visite à l'imprimerie._ » puis « _Elle corrige les articles et écrit les titres._ »
 
 1. Qui **filme** les événements ? C'est le **reporter d'images**.
 2. Qui **corrige** et écrit les **titres** ? C'est la **secrétaire de rédaction**.
@@ -431,7 +431,7 @@ Remets dans l'ordre les gestes de Sandra : _enregistrer le document – allumer 
 :::
 
 ::: piege
-L'erreur classique : mettre _« composer le numéro »_ avant _« décrocher »_.
+L'erreur classique : mettre « _composer le numéro_ » avant « _décrocher_ ».
 
 Elle tente parce qu'on pense d'abord au numéro à appeler. Mais on doit décrocher et entendre la tonalité avant de composer.
 

@@ -4,7 +4,7 @@
 
 ## 🐋 Le complément essentiel et le complément non essentiel
 
-Jesse arrive au parc. Il voit un orque dans un bassin. Le bassin est minuscule pour un si grand animal. Si on efface un morceau de la phrase _« Il voit un orque dans un bassin »_, tout ne se passe pas de la même façon : _« Il voit dans un bassin »_ ne veut plus rien dire, mais _« Il voit un orque »_ est une phrase complète.
+Jesse arrive au parc. Il voit un orque dans un bassin. Le bassin est minuscule pour un si grand animal. Si on efface un morceau de la phrase « _Il voit un orque dans un bassin_ », tout ne se passe pas de la même façon : « _Il voit dans un bassin_ » ne veut plus rien dire, mais « _Il voit un orque_ » est une phrase complète.
 
 Pourquoi certains groupes de mots sont-ils indispensables et d'autres pas ?
 
@@ -23,12 +23,12 @@ Une phrase est formée d'un **groupe nominal sujet** (GNS) et d'un **groupe verb
 
 Le tableau (phrase de départ : _Il voit un orque dans un bassin._) relie le **test de suppression** au verdict : la phrase tient sans le groupe, il est non essentiel.
 
-::: exemple Trouver les compléments de _« Hier, Sarra a parlé de son projet à ses amis. »_
+::: exemple Trouver les compléments de « Hier, Sarra a parlé de son projet à ses amis. »
 
 1. **Je cherche le verbe** : _a parlé_ ← c'est lui qui commande les compléments.
 2. **Je pose les questions** : a parlé **de quoi ?** _de son projet_ ; a parlé **à qui ?** _à ses amis_ ← ces deux groupes répondent aux questions des compléments essentiels.
 3. **Je teste la suppression** : _Sarra a parlé._ ne dit pas ce dont elle a parlé, la phrase est incomplète ← ces groupes sont **essentiels**.
-4. **Je teste _Hier_** : _Sarra a parlé de son projet à ses amis._ garde tout son sens, et _Hier_ peut aller à la fin ← **non essentiel**.
+4. **Je teste Hier** : _Sarra a parlé de son projet à ses amis._ garde tout son sens, et _Hier_ peut aller à la fin ← **non essentiel**.
 
 :::
 
@@ -46,7 +46,7 @@ Le tableau (phrase de départ : _Il voit un orque dans un bassin._) relie le **t
 :::
 
 ::: verifie
-Dans _« Les élèves plantent un arbre dans la cour. »_, quel est le complément essentiel, quel est le complément non essentiel ?
+Dans « _Les élèves plantent un arbre dans la cour._ », quel est le complément essentiel, quel est le complément non essentiel ?
 
 ---
 
@@ -95,17 +95,17 @@ _Prendre_ et _mettre_ sont des verbes du **3ᵉ groupe**.
 
 Dans chaque ligne, ce qui change avec la personne est l'auxiliaire (passé composé) ou la terminaison (futur).
 
-::: exemple Écrire _« Hier, les enfants (prendre) des sacs. Demain, ils (mettre) les déchets à la poubelle. »_
+::: exemple Écrire « Hier, les enfants (prendre) des sacs. Demain, ils (mettre) les déchets à la poubelle. »
 
-1. **_Hier_** annonce le passé ← passé composé de _prendre_.
-2. **Sujet _les enfants_ = _ils_** ← auxiliaire _avoir_ au présent : _ont_.
-3. **Participe passé de _prendre_** : _pris_ ← _Hier, les enfants **ont pris** des sacs._
-4. **_Demain_** annonce le futur ← radical _mettr-_ + terminaison de _ils_, _-ont_ : _Demain, ils **mettront** les déchets à la poubelle._
+1. **Hier** annonce le passé ← passé composé de _prendre_.
+2. **Sujet les enfants = ils** ← auxiliaire _avoir_ au présent : _ont_.
+3. **Participe passé de prendre** : _pris_ ← _Hier, les enfants **ont pris** des sacs._
+4. **Demain** annonce le futur ← radical _mettr-_ + terminaison de _ils_, -_ont_ : _Demain, ils **mettront** les déchets à la poubelle._
 
 :::
 
 ::: piege Erreur fréquente
-« Nous avons **prit** », « il a **mit** » ✗ On ajoute un _t_ final, comme dans _il a fait_ ou _il a dit_. ✓ Le participe de _prendre_ est **pris** et celui de _mettre_ est **mis** : ils se terminent par **-is**, jamais par _-it_.
+« Nous avons **prit** », « il a **mit** » ✗ On ajoute un _t_ final, comme dans _il a fait_ ou _il a dit_. ✓ Le participe de _prendre_ est **pris** et celui de _mettre_ est **mis** : ils se terminent par **-is**, jamais par -_it_.
 :::
 
 ::: piege Erreur fréquente
@@ -114,22 +114,22 @@ Dans chaque ligne, ce qui change avec la personne est l'auxiliaire (passé compo
 
 ::: propriete
 
-- Des verbes qui se conjuguent **comme _prendre_** : _apprendre_, _comprendre_, _surprendre_, _reprendre_ (_j'ai appris_, _il comprendra_).
-- Des verbes qui se conjuguent **comme _mettre_** : _permettre_, _promettre_, _remettre_ (_il a permis_, _elle remettra_).
+- Des verbes qui se conjuguent **comme prendre** : _apprendre_, _comprendre_, _surprendre_, _reprendre_ (_j'ai appris_, _il comprendra_).
+- Des verbes qui se conjuguent **comme mettre** : _permettre_, _promettre_, _remettre_ (_il a permis_, _elle remettra_).
 - Cas-limite : _il prend_ (présent) et _il prendra_ (futur) se ressemblent ; seul le **-ra** annonce que l'action n'a pas encore eu lieu.
 
 :::
 
 ::: verifie
-Écris _« Demain, nous (comprendre) la leçon »_ puis _« Hier, elle (remettre) le livre à sa place »_.
+Écris « _Demain, nous (comprendre) la leçon_ » puis « _Hier, elle (remettre) le livre à sa place_ ».
 
 ---
 
-_Comprendre_ se conjugue comme _prendre_ ; _demain_ annonce le futur ; avec _nous_ : _comprendr-_ + _-ons_ → _nous **comprendrons** la leçon_. _Remettre_ se conjugue comme _mettre_ ; _hier_ annonce le passé composé ; participe _remis_ → _elle **a remis** le livre à sa place_.
+_Comprendre_ se conjugue comme _prendre_ ; _demain_ annonce le futur ; avec _nous_ : _comprendr-_ + -_ons_ → _nous **comprendrons** la leçon_. _Remettre_ se conjugue comme _mettre_ ; _hier_ annonce le passé composé ; participe _remis_ → _elle **a remis** le livre à sa place_.
 :::
 
 ::: retenir
-Passé composé : _ai / as / a / avons / avez / ont_ + **pris** ou **mis**. Futur : **prendr- / mettr-** + _-ai, -as, -a, -ons, -ez, -ont_.
+Passé composé : _ai / as / a / avons / avez / ont_ + **pris** ou **mis**. Futur : **prendr- / mettr-** + -ai, -as, -a, -ons, -ez, -ont.
 :::
 
 ## ✍️ Accorder le verbe avec son sujet
@@ -152,11 +152,11 @@ Le verbe s'accorde **toujours avec son sujet**, en nombre et en personne. Pour t
 
 Chaque ligne du tableau cherche le sujet d'abord, puis accorde le verbe avec lui, jamais avec le mot qui est juste à côté.
 
-::: exemple Accorder le verbe de _« Un groupe d'enfants (arracher) les mauvaises herbes »_
+::: exemple Accorder le verbe de « Un groupe d'enfants (arracher) les mauvaises herbes »
 
 1. **Je pose la question** : qui est-ce qui arrache ? _un groupe_ ← le sujet est le mot noyau, _un groupe_.
-2. **_d'enfants_ complète _groupe_** ← il ne commande pas le verbe, même s'il est juste avant.
-3. **_Un groupe_ est singulier** ← _arrache_ : _Un groupe d'enfants **arrache** les mauvaises herbes._
+2. **d'enfants complète groupe** ← il ne commande pas le verbe, même s'il est juste avant.
+3. **Un groupe est singulier** ← _arrache_ : _Un groupe d'enfants **arrache** les mauvaises herbes._
 
 :::
 
@@ -178,7 +178,7 @@ Chaque ligne du tableau cherche le sujet d'abord, puis accorde le verbe avec lui
 :::
 
 ::: verifie
-Accorde les verbes : _« Dans le jardin (jouer) deux chiens. Rémi et son frère les (regarder). »_
+Accorde les verbes : « _Dans le jardin (jouer) deux chiens. Rémi et son frère les (regarder)._ »
 
 ---
 
@@ -207,7 +207,7 @@ Pour bien lire : je repère **le sujet du texte** (ici l'eau), **chaque conseil*
 1. **Le conseil** : _choisis la douche_ ← verbe à l'impératif, il dit quoi faire.
 2. **Les chiffres du texte** : un bain demande 300 litres, une douche 100 litres ← la raison est donnée en chiffres.
 3. **Le calcul** : 300 − 100 = 200 ← en choisissant la douche, on économise 200 litres.
-4. **Ma réponse rédigée** : _« Il vaut mieux prendre une douche, car elle demande 200 litres de moins qu'un bain. »_ ← une phrase complète, avec la raison.
+4. **Ma réponse rédigée** : « _Il vaut mieux prendre une douche, car elle demande 200 litres de moins qu'un bain._ » ← une phrase complète, avec la raison.
 
 :::
 
@@ -377,7 +377,7 @@ Dans ce récit : « Nous allons au parc. L'herbe est verte, les arbres sont gran
 
 ---
 
-**_L'herbe est verte, les arbres sont grands_** : cette phrase ne raconte aucune action, elle décrit le lieu. Les deux autres racontent ce qui se passe.
+**L'herbe est verte, les arbres sont grands** : cette phrase ne raconte aucune action, elle décrit le lieu. Les deux autres racontent ce qui se passe.
 :::
 
 ::: retenir

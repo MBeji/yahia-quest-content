@@ -20,7 +20,7 @@ Le **complément de temps** est un mot ou un groupe de mots qui répond à la qu
 
 Chaque ligne montre la même méthode : on pose « quand ? » au verbe, et la réponse est le complément de temps.
 
-::: exemple trouver le complément de temps de _« Après le goûter, Lina lit un roman dans le jardin. »_
+::: exemple trouver le complément de temps de « Après le goûter, Lina lit un roman dans le jardin. »
 
 1. **Pose la question « quand ? »** : _Quand Lina lit-elle un roman ?_ ← la réponse est _après le goûter_, car ce groupe donne le moment.
 2. **Écarte l'autre groupe** : _dans le jardin_ répond à _où ?_ ← c'est un complément de lieu, car il donne l'endroit et non le moment.
@@ -40,11 +40,11 @@ Le complément de temps est un **complément non essentiel** : on peut le **dép
 Le complément de temps t'aide aussi à choisir le temps du verbe : _hier_ et _la semaine dernière_ appellent le passé composé, _maintenant_ le présent, _demain_ et _plus tard_ le futur.
 
 ::: piege Erreur fréquente
-_« Demain, Sami a écrit à sa cousine. »_ ✗ Le verbe est au passé composé alors que _demain_ annonce l'avenir. ✓ _« Demain, Sami écrira à sa cousine. »_ : l'indicateur de temps et le verbe doivent dire la même chose.
+« _Demain, Sami a écrit à sa cousine._ » ✗ Le verbe est au passé composé alors que _demain_ annonce l'avenir. ✓ « _Demain, Sami écrira à sa cousine._ » : l'indicateur de temps et le verbe doivent dire la même chose.
 :::
 
 ::: verifie
-Dans _« Dimanche prochain, nous irons au cinéma avec Karim. »_, trouve le complément de temps et dis s'il peut être supprimé.
+Dans « _Dimanche prochain, nous irons au cinéma avec Karim._ », trouve le complément de temps et dis s'il peut être supprimé.
 
 ---
 
@@ -77,16 +77,16 @@ Trois verbes très utiles dans une lettre : _dire_, _lire_ et _écrire_. Leurs f
 
 Observe : seul **dire** fait **vous dites** ; _lire_ et _écrire_ font _vous lisez_, _vous écrivez_. Et le participe passé de _dire_ et de _écrire_ finit par **-t**, celui de _lire_ par **-u**.
 
-::: exemple conjuguer _« écrire une carte postale »_ au présent avec _nous_, puis au passé composé avec _elle_
+::: exemple conjuguer « écrire une carte postale » au présent avec nous, puis au passé composé avec elle
 
-1. **Présent, _nous_** : le radical devient _écriv-_ devant _nous_ ← la terminaison _-ons_ s'ajoute : _nous écrivons une carte postale_.
-2. **Passé composé, _elle_** : l'auxiliaire _avoir_ se met à la 3ᵉ personne ← _elle a_.
+1. **Présent, nous** : le radical devient _écriv-_ devant _nous_ ← la terminaison -_ons_ s'ajoute : _nous écrivons une carte postale_.
+2. **Passé composé, elle** : l'auxiliaire _avoir_ se met à la 3ᵉ personne ← _elle a_.
 3. **Participe passé** : on apprend _écrit_ ← _elle a écrit une carte postale_.
 
 :::
 
 ::: piege Erreur fréquente
-_« Hier, Lina a écri une carte. »_ ✗ _« Elle a lis sa lettre. »_ ✗ On cale le participe sur le présent ou on oublie la dernière lettre. ✓ Les participes sont à retenir : _dit_, _écrit_, _lu_. Et _« Vous disez la vérité »_ ✗ devient _« Vous **dites** la vérité »_ ✓.
+« _Hier, Lina a écri une carte._ » ✗ « _Elle a lis sa lettre._ » ✗ On cale le participe sur le présent ou on oublie la dernière lettre. ✓ Les participes sont à retenir : _dit_, _écrit_, _lu_. Et « _Vous disez la vérité_ » ✗ devient « _Vous **dites** la vérité_ » ✓.
 :::
 
 ::: propriete
@@ -94,11 +94,11 @@ Pour ne pas confondre les formes : au présent, _je_ et _tu_ ont la même forme 
 :::
 
 ::: verifie
-Complète : _« Hier, mes amis ont … (dire) la vérité, et aujourd'hui ils … (écrire) une lettre. »_
+Complète : « _Hier, mes amis ont … (dire) la vérité, et aujourd'hui ils … (écrire) une lettre._ »
 
 ---
 
-_Ont **dit**_ : passé composé de _dire_ (auxiliaire _ont_ + participe _dit_). _Ils **écrivent**_ : présent, 3ᵉ personne du pluriel, terminaison _-ent_ ; on ne dit pas _écrivez_, qui va avec _vous_.
+_Ont **dit**_ : passé composé de _dire_ (auxiliaire _ont_ + participe _dit_). _Ils **écrivent**_ : présent, 3ᵉ personne du pluriel, terminaison -_ent_ ; on ne dit pas _écrivez_, qui va avec _vous_.
 :::
 
 ::: retenir
@@ -112,7 +112,7 @@ Sami termine sa lettre : « Je te **dirai** tout à mon retour. Je **lirai** ta 
 Deux temps différents dans le même message : l'un annonce ce qui va arriver, l'autre donne un ordre ou un conseil. Comment les former sans se tromper ?
 
 ::: definition
-Le **futur** dit ce qui se passera plus tard ; on ajoute les terminaisons **-ai, -as, -a, -ons, -ez, -ont** à l'infinitif (le **e** final de _-re_ tombe). L'**impératif** sert à donner un ordre, un conseil ou une invitation ; il n'a que trois personnes (_tu, nous, vous_) et **aucun pronom sujet**.
+Le **futur** dit ce qui se passera plus tard ; on ajoute les terminaisons **-ai, -as, -a, -ons, -ez, -ont** à l'infinitif (le **e** final de -_re_ tombe). L'**impératif** sert à donner un ordre, un conseil ou une invitation ; il n'a que trois personnes (_tu, nous, vous_) et **aucun pronom sujet**.
 :::
 
 |                   | dire           | lire           | écrire           |
@@ -126,28 +126,28 @@ Le **futur** dit ce qui se passera plus tard ; on ajoute les terminaisons **-ai,
 
 Dans le tableau, tout le futur s'obtient d'une seule façon : l'infinitif, moins le **e** final, plus la terminaison. L'impératif reprend les formes du présent, sans le pronom.
 
-::: exemple écrire au futur et à l'impératif la phrase _« Tu écris une lettre à ton grand-père. »_
+::: exemple écrire au futur et à l'impératif la phrase « Tu écris une lettre à ton grand-père. »
 
-1. **Futur** : on garde le radical de l'infinitif _écrire_, sans le **e** ← _écrir-_ ; on ajoute _-as_ pour _tu_ : _tu écriras une lettre_.
+1. **Futur** : on garde le radical de l'infinitif _écrire_, sans le **e** ← _écrir-_ ; on ajoute -_as_ pour _tu_ : _tu écriras une lettre_.
 2. **Impératif** : on enlève le pronom _tu_ et on garde la forme du présent ← _écris une lettre à ton grand-père_.
-3. **Vérifie le s** : _écris_ garde son **s** ← c'est un verbe en _-re_, il ne s'arrête pas comme _chante_.
+3. **Vérifie le s** : _écris_ garde son **s** ← c'est un verbe en -_re_, il ne s'arrête pas comme _chante_.
 
 :::
 
 ::: piege Erreur fréquente
-_« Écri-moi vite ! »_ ✗ _« Di bonjour à tes parents ! »_ ✗ On enlève le **s** comme pour _chante_ ou _regarde_. ✓ Avec _dire_, _lire_ et _écrire_, la 2ᵉ personne de l'impératif garde son **s** : _dis_, _lis_, _écris_. Seuls les verbes en _-er_ (et _aller_) le perdent.
+« _Écri-moi vite !_ » ✗ « _Di bonjour à tes parents !_ » ✗ On enlève le **s** comme pour _chante_ ou _regarde_. ✓ Avec _dire_, _lire_ et _écrire_, la 2ᵉ personne de l'impératif garde son **s** : _dis_, _lis_, _écris_. Seuls les verbes en -_er_ (et _aller_) le perdent.
 :::
 
 ::: propriete
-Le futur se forme à partir de l'infinitif : on entend et on écrit le **r** (_je dirai_, _il lira_, _nous écrirons_). Cas-limite : pour _écrire_, on part de l'infinitif sans son **e** et on n'écrit pas _j'écrivrai_ : le **v** de _nous écrivons_ n'existe qu'au présent. L'impératif n'a pas de sujet : _« Vous écrivez vite. »_ est une phrase ordinaire ; _« Écrivez vite. »_ est un ordre.
+Le futur se forme à partir de l'infinitif : on entend et on écrit le **r** (_je dirai_, _il lira_, _nous écrirons_). Cas-limite : pour _écrire_, on part de l'infinitif sans son **e** et on n'écrit pas _j'écrivrai_ : le **v** de _nous écrivons_ n'existe qu'au présent. L'impératif n'a pas de sujet : « _Vous écrivez vite._ » est une phrase ordinaire ; « _Écrivez vite._ » est un ordre.
 :::
 
 ::: verifie
-Mets au futur, avec _il_ : _« Il lit une lettre »_. Puis donne l'impératif, avec _tu_, de _« Tu dis la vérité »_.
+Mets au futur, avec _il_ : « _Il lit une lettre_ ». Puis donne l'impératif, avec _tu_, de « _Tu dis la vérité_ ».
 
 ---
 
-**Futur** : _Il lira une lettre_ (infinitif _lire_ sans le e, plus _-a_). **Impératif** : _Dis la vérité_ : on enlève _tu_, et _dire_ garde son **s**.
+**Futur** : _Il lira une lettre_ (infinitif _lire_ sans le e, plus -_a_). **Impératif** : _Dis la vérité_ : on enlève _tu_, et _dire_ garde son **s**.
 :::
 
 ::: retenir
@@ -173,19 +173,19 @@ L'**adjectif qualificatif** s'accorde en **genre** et en **nombre** avec le nom 
 | gentil   | genti**lle** | gentils          | genti**lles**   |
 | gros     | gros**se**   | gros             | gros**ses**     |
 
-La colonne du féminin montre trois façons de changer : une nouvelle terminaison (_neuve_, _belle_, _vieille_), une consonne doublée (_bonne_, _grosse_), ou _-ille_ pour _gentil_.
+La colonne du féminin montre trois façons de changer : une nouvelle terminaison (_neuve_, _belle_, _vieille_), une consonne doublée (_bonne_, _grosse_), ou -_ille_ pour _gentil_.
 
-::: exemple accorder les adjectifs de _« une (gentil) cousine m'offre deux (beau) livres (neuf) »_
+::: exemple accorder les adjectifs de « une (gentil) cousine m'offre deux (beau) livres (neuf) »
 
 1. **Repère les noms** : _cousine_ (féminin singulier) et _livres_ (masculin pluriel) ← chaque adjectif suit le nom auquel il se rapporte.
-2. **_gentil_ avec _cousine_** : féminin singulier ← _gentille_ (on double le **l** et on ajoute **e**).
-3. **_beau_ avec _livres_** : masculin pluriel ← _beaux_ (les mots en _-eau_ prennent un **x**).
-4. **_neuf_ avec _livres_** : masculin pluriel ← _neufs_ (on ajoute un **s**). Résultat : _une gentille cousine m'offre deux beaux livres neufs_.
+2. **gentil avec cousine** : féminin singulier ← _gentille_ (on double le **l** et on ajoute **e**).
+3. **beau avec livres** : masculin pluriel ← _beaux_ (les mots en -_eau_ prennent un **x**).
+4. **neuf avec livres** : masculin pluriel ← _neufs_ (on ajoute un **s**). Résultat : _une gentille cousine m'offre deux beaux livres neufs_.
 
 :::
 
 ::: piege Erreur fréquente
-_« une guitare neufe »_ ✗ _« une beaue histoire »_ ✗ _« une gentile voisine »_ ✗ On ajoute simplement **e** à l'adjectif masculin. ✓ _neuf_ devient _neuve_, _beau_ devient _belle_, _gentil_ devient _gentille_. Quand tu hésites, mets le nom au féminin et dis le groupe à voix haute : tu entends la bonne forme.
+« _une guitare neufe_ » ✗ « _une beaue histoire_ » ✗ « _une gentile voisine_ » ✗ On ajoute simplement **e** à l'adjectif masculin. ✓ _neuf_ devient _neuve_, _beau_ devient _belle_, _gentil_ devient _gentille_. Quand tu hésites, mets le nom au féminin et dis le groupe à voix haute : tu entends la bonne forme.
 :::
 
 ::: propriete
@@ -193,7 +193,7 @@ L'adjectif s'accorde **partout** avec son nom : épithète (_une belle histoire_
 :::
 
 ::: verifie
-Accorde : _« une (bon) idée »_, _« des (gros) bateaux »_ et _« la (vieux) maison »_.
+Accorde : « _une (bon) idée_ », « _des (gros) bateaux_ » et « _la (vieux) maison_ ».
 
 ---
 
@@ -237,9 +237,9 @@ Pour lire une lettre :
 ::: exemple répondre aux questions sur la lettre de Rania
 
 1. **Qui écrit ? À qui ? D'où ? Quand ?** ← _Rania_ (signature) écrit à _Yassine_ (formule « Cher Yassine »), de _Sousse_, le _12 août_ : tout est écrit en haut et en bas de la lettre.
-2. **Idée du 1ᵉʳ paragraphe** : Rania donne de ses nouvelles et dit où elle passe ses vacances ← la phrase _« Je passe de belles vacances chez ma tante »_ le prouve.
+2. **Idée du 1ᵉʳ paragraphe** : Rania donne de ses nouvelles et dit où elle passe ses vacances ← la phrase « _Je passe de belles vacances chez ma tante_ » le prouve.
 3. **Idée du 2ᵉ paragraphe** : ses activités de vacances, avec un petit regret ← _mais il est fermé jusqu'à lundi_ ; _cependant_ annonce une bonne nouvelle : la sortie en bateau.
-4. **Que demande-t-elle ?** Qu'il lui écrive vite ← _« Écris-moi vite ! »_ est un impératif qui donne un conseil à Yassine.
+4. **Que demande-t-elle ?** Qu'il lui écrive vite ← « _Écris-moi vite !_ » est un impératif qui donne un conseil à Yassine.
 
 :::
 
@@ -252,7 +252,7 @@ Une réponse juste s'appuie sur une phrase du texte. Cas-limite : un **détail**
 :::
 
 ::: verifie
-Dans la lettre de Rania, que veut dire le mot-outil _cependant_ dans _« Cependant, ma tante m'a promis une sortie en bateau »_ ?
+Dans la lettre de Rania, que veut dire le mot-outil _cependant_ dans « _Cependant, ma tante m'a promis une sortie en bateau_ » ?
 
 ---
 
@@ -283,7 +283,7 @@ Une **lettre** à un ami ou à un parent comporte, dans cet ordre : le **lieu et
 
 ::: exemple remettre en ordre les morceaux d'une lettre de Sami
 
-Morceaux : _« Je t'embrasse. »_ ; _« Tunis, le 3 mai »_ ; _« Sami »_ ; _« Cher Yassine, »_ ; _« J'aime jouer au football et lire des bandes dessinées. »_
+Morceaux : « _Je t'embrasse._ » ; « _Tunis, le 3 mai_ » ; « _Sami_ » ; « _Cher Yassine,_ » ; « _J'aime jouer au football et lire des bandes dessinées._ »
 
 1. **Le lieu et la date** : _Tunis, le 3 mai_ ← ils ouvrent la lettre, car le lecteur doit savoir d'où et quand.
 2. **L'interpellation** : _Cher Yassine,_ ← on s'adresse à lui avant de parler.
@@ -294,11 +294,11 @@ Morceaux : _« Je t'embrasse. »_ ; _« Tunis, le 3 mai »_ ; _« Sami »_ ; _«
 :::
 
 ::: piege Erreur fréquente
-Mettre _« Je t'embrasse très fort »_ en haut de la lettre, ou _« Madrid, le 5 mai »_ à la fin. ✗ Chaque partie a sa place. ✓ En haut : le lieu et la date, puis l'interpellation ; en bas : la formule d'adieu, puis la signature.
+Mettre « _Je t'embrasse très fort_ » en haut de la lettre, ou « _Madrid, le 5 mai_ » à la fin. ✗ Chaque partie a sa place. ✓ En haut : le lieu et la date, puis l'interpellation ; en bas : la formule d'adieu, puis la signature.
 :::
 
 ::: propriete
-À un ami ou à un parent, on écrit sur un ton **affectueux** : _tu_ (ou _vous_ pour plusieurs personnes : _Chers parents_) et des mots chaleureux. Cas-limite : on n'écrit pas _« Veuillez agréer mes salutations distinguées »_ à un ami : cette formule est réservée aux lettres officielles. Pour inviter, demander ou remercier, on utilise des formules comme _Je t'invite…_, _Pourrais-tu…_, _Merci mille fois pour…_
+À un ami ou à un parent, on écrit sur un ton **affectueux** : _tu_ (ou _vous_ pour plusieurs personnes : _Chers parents_) et des mots chaleureux. Cas-limite : on n'écrit pas « _Veuillez agréer mes salutations distinguées_ » à un ami : cette formule est réservée aux lettres officielles. Pour inviter, demander ou remercier, on utilise des formules comme _Je t'invite…_, _Pourrais-tu…_, _Merci mille fois pour…_
 :::
 
 Pour préparer ta lettre sur tes loisirs, suis un plan simple : un paragraphe pour te présenter, un pour parler de tes activités préférées, un pour poser une question à ton correspondant.
@@ -334,7 +334,7 @@ Des mots qui parlent du même sujet forment un **champ lexical**. Un **synonyme*
 
 Chaque ligne regroupe des mots qui vont ensemble : c'est le thème qui les relie.
 
-::: exemple trouver le mot qui correspond à _« la personne qui reçoit la lettre »_
+::: exemple trouver le mot qui correspond à « la personne qui reçoit la lettre »
 
 1. **Repère le thème** : la correspondance ← les mots à envisager sont _expéditeur, destinataire, facteur_.
 2. **Lis l'indice** : _qui reçoit_ ← celui qui reçoit s'appelle le **destinataire**.
@@ -343,7 +343,7 @@ Chaque ligne regroupe des mots qui vont ensemble : c'est le thème qui les relie
 :::
 
 ::: piege Erreur fréquente
-_« Se divertir veut dire s'ennuyer. »_ ✗ On prend le contraire pour un synonyme, ou un mot du bon thème qui ne nomme pas la chose demandée. ✓ _Se divertir_ a pour synonyme _se distraire_ ; son contraire est _s'ennuyer_. Relis toujours l'indice de la question.
+« _Se divertir veut dire s'ennuyer._ » ✗ On prend le contraire pour un synonyme, ou un mot du bon thème qui ne nomme pas la chose demandée. ✓ _Se divertir_ a pour synonyme _se distraire_ ; son contraire est _s'ennuyer_. Relis toujours l'indice de la question.
 :::
 
 ::: propriete
@@ -379,7 +379,7 @@ Un **texte documentaire** informe : il donne des renseignements sur un sujet, en
 | Forme     | rubriques, paragraphes            | étapes numérotées, matériel                  |
 | Exemple   | _Le sculpteur utilise un ciseau._ | _1. Pense à un nombre._                      |
 
-::: exemple reconnaître le texte _« Le nombre pensé »_ : « 1. Demande à un ami de penser à un nombre de 1 à 15. 2. Montre-lui quatre listes A, B, C, D. 3. Il te dit dans quelles listes son nombre se trouve. 4. Additionne les premiers nombres de ces listes. »
+::: exemple reconnaître le texte « Le nombre pensé » : « 1. Demande à un ami de penser à un nombre de 1 à 15. 2. Montre-lui quatre listes A, B, C, D. 3. Il te dit dans quelles listes son nombre se trouve. 4. Additionne les premiers nombres de ces listes. »
 
 1. **Les verbes** : _demande, montre, additionne_ ← ils sont à l'impératif, donc on donne des ordres.
 2. **La forme** : étapes numérotées de 1 à 4 ← c'est la marque d'une suite de consignes.
@@ -399,7 +399,7 @@ Voici les quatre listes du tour :
 Chaque liste commence par un nombre : 1, 2, 4 et 8. Ton ami pense à 11 ; il le trouve dans A, B et D, mais pas dans C. Tu additionnes les premiers nombres de ces trois listes : 1 + 2 + 8 = 11.
 
 ::: piege Erreur fréquente
-Classer _« Le nombre pensé »_ parmi les textes qui racontent une histoire, ou un texte sur la sculpture parmi ceux qui disent comment faire. ✗ ✓ Un texte sans personnages ni histoire qui donne des étapes est **injonctif** ; un texte qui apprend ce qu'est la sculpture est **documentaire**.
+Classer « _Le nombre pensé_ » parmi les textes qui racontent une histoire, ou un texte sur la sculpture parmi ceux qui disent comment faire. ✗ ✓ Un texte sans personnages ni histoire qui donne des étapes est **injonctif** ; un texte qui apprend ce qu'est la sculpture est **documentaire**.
 :::
 
 ::: propriete
@@ -407,7 +407,7 @@ On repère un texte injonctif à ses consignes (infinitif ou impératif), ses é
 :::
 
 ::: verifie
-Quel est le type du texte : _« Matériel : une feuille, des ciseaux. 1. Plie la feuille en deux. 2. Découpe le long du trait. »_ ?
+Quel est le type du texte : « _Matériel : une feuille, des ciseaux. 1. Plie la feuille en deux. 2. Découpe le long du trait._ » ?
 
 ---
 

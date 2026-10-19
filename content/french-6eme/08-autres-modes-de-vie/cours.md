@@ -20,7 +20,7 @@ Le **complément de manière** est un mot ou un groupe de mots qui répond à la
 
 Chaque ligne pose « comment ? » au verbe : la réponse est le complément de manière.
 
-::: exemple distinguer les compléments de _« Samedi, Karim est arrivé à Kairouan en autocar. »_
+::: exemple distinguer les compléments de « Samedi, Karim est arrivé à Kairouan en autocar. »
 
 1. **Pose « quand ? »** : _Quand est-il arrivé ?_ ← la réponse est _samedi_, un complément de temps, car il donne le moment.
 2. **Pose « où ? »** : _Où est-il arrivé ?_ ← la réponse est _à Kairouan_, un complément de lieu, car il donne l'endroit.
@@ -29,7 +29,7 @@ Chaque ligne pose « comment ? » au verbe : la réponse est le complément de m
 :::
 
 ::: piege Erreur fréquente
-_« En autocar est un complément de lieu, parce que l'autocar est un endroit où l'on s'assoit. »_ ✗ Un petit mot de début comme _en_ ou _à_ ne décide pas. ✓ Pose la question : on n'arrive pas _« où ? »_ en autocar, on arrive _« comment ? »_ en autocar. C'est un complément de manière.
+« _En autocar est un complément de lieu, parce que l'autocar est un endroit où l'on s'assoit._ » ✗ Un petit mot de début comme _en_ ou _à_ ne décide pas. ✓ Pose la question : on n'arrive pas « _où ?_ » en autocar, on arrive « _comment ?_ » en autocar. C'est un complément de manière.
 :::
 
 ::: propriete
@@ -37,7 +37,7 @@ Comme les compléments de lieu et de temps, le complément de manière est **non
 :::
 
 ::: verifie
-Dans _« Hier, les touristes ont visité le musée avec curiosité. »_, quel est le complément de manière ?
+Dans « _Hier, les touristes ont visité le musée avec curiosité._ », quel est le complément de manière ?
 
 ---
 
@@ -69,16 +69,16 @@ _Vouloir_ et _pouvoir_ reviennent sans cesse quand on parle de projets et de voy
 
 Dans le tableau, _je_ et _tu_ finissent par **x**, _il_ et _elle_ par **t**. Au pluriel, _ils_ et _elles_ changent le radical : _veulent_, _peuvent_.
 
-::: exemple conjuguer _« vouloir visiter Rome »_ avec _tu_, puis _« pouvoir prendre le train »_ avec _ils_
+::: exemple conjuguer « vouloir visiter Rome » avec tu, puis « pouvoir prendre le train » avec ils
 
-1. **_Tu_ et _vouloir_** : la forme est _veux_ ← _tu_ comme _je_ prend un **x**, jamais un **s** ni un **t**.
+1. **Tu et vouloir** : la forme est _veux_ ← _tu_ comme _je_ prend un **x**, jamais un **s** ni un **t**.
 2. **Garde l'infinitif** : _visiter_ ← après _veux_, le verbe suivant reste à l'infinitif : _tu veux visiter Rome_.
-3. **_Ils_ et _pouvoir_** : le radical change ← _peuv-_ plus _-ent_ : _ils peuvent prendre le train_.
+3. **Ils et pouvoir** : le radical change ← _peuv-_ plus -_ent_ : _ils peuvent prendre le train_.
 
 :::
 
 ::: piege Erreur fréquente
-_« Je peut admirer la vue. »_ ✗ _« Il veux voir les boutiques. »_ ✗ On met le **t** avec _je_ et le **x** avec _il_, comme si les deux se confondaient. ✓ _je peux_, _tu veux_ : **x** ; _il peut_, _elle veut_ : **t**. Retiens que _je_ et _tu_ ont toujours la même forme au présent.
+« _Je peut admirer la vue._ » ✗ « _Il veux voir les boutiques._ » ✗ On met le **t** avec _je_ et le **x** avec _il_, comme si les deux se confondaient. ✓ _je peux_, _tu veux_ : **x** ; _il peut_, _elle veut_ : **t**. Retiens que _je_ et _tu_ ont toujours la même forme au présent.
 :::
 
 ::: propriete
@@ -86,11 +86,11 @@ Retiens deux familles : **x** pour les deux premières personnes (_je, tu_), **t
 :::
 
 ::: verifie
-Complète : _« Tu … (vouloir) venir ? Mes cousins … (pouvoir) nous accompagner. »_
+Complète : « _Tu … (vouloir) venir ? Mes cousins … (pouvoir) nous accompagner._ »
 
 ---
 
-_Tu **veux**_ : avec _tu_, le verbe prend un **x**. _Mes cousins **peuvent**_ : _mes cousins_ se remplace par _ils_, donc le radical _peuv-_ plus _-ent_.
+_Tu **veux**_ : avec _tu_, le verbe prend un **x**. _Mes cousins **peuvent**_ : _mes cousins_ se remplace par _ils_, donc le radical _peuv-_ plus -_ent_.
 :::
 
 ::: retenir
@@ -116,7 +116,7 @@ Le **passé composé** se forme avec un **auxiliaire** (_être_ ou _avoir_) et u
 
 On retrouve dans la dernière colonne la même règle : le participe prend **e** pour le féminin, **s** pour le pluriel, **es** pour le féminin pluriel.
 
-::: exemple écrire le participe de _« Les cigognes sont (arriver) en mars. »_
+::: exemple écrire le participe de « Les cigognes sont (arriver) en mars. »
 
 1. **Repère l'auxiliaire** : _sont_ ← c'est le verbe **être**, donc le participe s'accorde.
 2. **Cherche le sujet** : _les cigognes_ ← qui arrive ? les cigognes : féminin pluriel.
@@ -126,11 +126,11 @@ On retrouve dans la dernière colonne la même règle : le participe prend **e**
 :::
 
 ::: piege Erreur fréquente
-_« Les cigognes sont arrivé en mars. »_ ✗ _« Sarra est allé en Corse. »_ ✗ On écrit le participe sans l'accorder avec le sujet. ✓ Avec _être_, le participe s'accorde toujours : _arrivées_, _allée_.
+« _Les cigognes sont arrivé en mars._ » ✗ « _Sarra est allé en Corse._ » ✗ On écrit le participe sans l'accorder avec le sujet. ✓ Avec _être_, le participe s'accorde toujours : _arrivées_, _allée_.
 :::
 
 ::: piege Erreur fréquente
-_« Sarra a allé en Corse. »_ ✗ On se trompe d'auxiliaire. ✓ _Aller_, _partir_, _arriver_, _sortir_, _tomber_, _rester_ et _revenir_ se conjuguent avec **être** : _elle est allée_.
+« _Sarra a allé en Corse._ » ✗ On se trompe d'auxiliaire. ✓ _Aller_, _partir_, _arriver_, _sortir_, _tomber_, _rester_ et _revenir_ se conjuguent avec **être** : _elle est allée_.
 :::
 
 ::: propriete
@@ -138,7 +138,7 @@ Pour choisir entre _é_ et _er_ à la fin d'un verbe, remplace-le par _vendu_ ou
 :::
 
 ::: verifie
-Écris correctement : _« Mes sœurs sont (partir) hier soir, et mon frère est (rester) à la maison. »_
+Écris correctement : « _Mes sœurs sont (partir) hier soir, et mon frère est (rester) à la maison._ »
 
 ---
 
@@ -168,7 +168,7 @@ Un **participe passé employé seul** (sans auxiliaire pour former un temps) jou
 
 Dans la dernière colonne, le participe se comporte comme un adjectif ordinaire : on peut le remplacer par _jolies_ ou _vieux_.
 
-::: exemple accorder le participe de _« des fleurs (cueillir) le matin »_
+::: exemple accorder le participe de « des fleurs (cueillir) le matin »
 
 1. **Cherche le nom** : _fleurs_ ← le participe décrit les fleurs : féminin pluriel.
 2. **Pas d'auxiliaire** : aucun _est_ ni _ont_ devant ← c'est un adjectif, on l'accorde avec le nom.
@@ -177,7 +177,7 @@ Dans la dernière colonne, le participe se comporte comme un adjectif ordinaire 
 :::
 
 ::: piege Erreur fréquente
-_« des pêches cueilli ce matin »_ ✗ On voit un verbe et on oublie qu'ici le participe décrit le nom. ✓ _des pêches cueillies_ : le participe est employé seul, il s'accorde avec _pêches_.
+« _des pêches cueilli ce matin_ » ✗ On voit un verbe et on oublie qu'ici le participe décrit le nom. ✓ _des pêches cueillies_ : le participe est employé seul, il s'accorde avec _pêches_.
 :::
 
 ::: propriete
@@ -185,7 +185,7 @@ Repère le participe employé seul à deux indices : il n'y a pas d'auxiliaire j
 :::
 
 ::: verifie
-Accorde : _« des lettres (écrire) à la main »_ et _« une carte (déchirer) »_.
+Accorde : « _des lettres (écrire) à la main_ » et « _une carte (déchirer)_ ».
 
 ---
 
@@ -217,7 +217,7 @@ Le tableau sépare ce qui fait avancer l'histoire (narration) de ce qui fait voi
 
 ::: exemple intégrer une description dans un récit
 
-Récit de départ : _« Nous arrivons à Tozeur. Mon père pose sa valise. »_
+Récit de départ : « _Nous arrivons à Tozeur. Mon père pose sa valise._ »
 
 1. **Arrête l'action** après _Nous arrivons à Tozeur_ ← le lecteur a besoin de voir l'endroit avant que l'histoire continue.
 2. **Décris du loin vers le près** : _Au loin, le désert jaune brille. De grands palmiers entourent de petits jardins verts._ ← un ordre de regard aide le lecteur.
@@ -227,7 +227,7 @@ Récit de départ : _« Nous arrivons à Tozeur. Mon père pose sa valise. »_
 :::
 
 ::: piege Erreur fréquente
-Prendre _« Mon père s'approche de la fontaine »_ pour une phrase qui décrit la fontaine. ✗ Elle dit ce que fait le père : c'est une action. ✓ Une phrase qui décrit dit comment est la fontaine : _« La fontaine est ronde et couverte de carreaux bleus. »_
+Prendre « _Mon père s'approche de la fontaine_ » pour une phrase qui décrit la fontaine. ✗ Elle dit ce que fait le père : c'est une action. ✓ Une phrase qui décrit dit comment est la fontaine : « _La fontaine est ronde et couverte de carreaux bleus._ »
 :::
 
 ::: propriete
@@ -235,7 +235,7 @@ Dans une description, on utilise des **adjectifs** (_grands, verts, frais_), des
 :::
 
 ::: verifie
-Dans _« Karim monte l'escalier. L'escalier est étroit et sombre. Il ouvre la porte. »_, quelle phrase décrit ?
+Dans « _Karim monte l'escalier. L'escalier est étroit et sombre. Il ouvre la porte._ », quelle phrase décrit ?
 
 ---
 
@@ -266,14 +266,14 @@ Chaque substitut garde le **genre** et le **nombre** du mot qu'il remplace, et o
 
 ::: exemple retrouver qui fait quoi dans le texte du phare
 
-1. **_Il leur explique_** : _il_ remplace _le gardien_ ← masculin singulier, c'est le seul homme de l'histoire.
-2. **_Leur_** : il désigne les élèves ← c'est le pluriel de ceux à qui le gardien parle.
-3. **_Ils montent_** et **_les enfants admirent_** : _ils_ et _les enfants_ désignent les élèves ← même pluriel, même groupe.
+1. **Il leur explique** : _il_ remplace _le gardien_ ← masculin singulier, c'est le seul homme de l'histoire.
+2. **Leur** : il désigne les élèves ← c'est le pluriel de ceux à qui le gardien parle.
+3. **Ils montent** et **les enfants admirent** : _ils_ et _les enfants_ désignent les élèves ← même pluriel, même groupe.
 
 :::
 
 ::: piege Erreur fréquente
-_« Les mouettes arrivent près du port. Il cherchent du poisson. »_ ✗ Le substitut ne correspond pas au nom qu'il remplace. ✓ _Mouettes_ est féminin pluriel : on reprend avec _elles_. Avant de choisir un pronom, cherche le genre et le nombre du nom.
+« _Les mouettes arrivent près du port. Il cherchent du poisson._ » ✗ Le substitut ne correspond pas au nom qu'il remplace. ✓ _Mouettes_ est féminin pluriel : on reprend avec _elles_. Avant de choisir un pronom, cherche le genre et le nombre du nom.
 :::
 
 ::: propriete
@@ -281,7 +281,7 @@ Dans une BD, ce qui est dit est dans une **bulle** rattachée au personnage qui 
 :::
 
 ::: verifie
-Dans _« Les enfants regardent le gardien. Il leur sourit. »_, que désigne _il_ ?
+Dans « _Les enfants regardent le gardien. Il leur sourit._ », que désigne _il_ ?
 
 ---
 
@@ -311,7 +311,7 @@ Comment les retenir et ne pas les confondre ?
 
 Chaque ligne oppose deux actions de sens contraire.
 
-::: exemple trouver l'intrus dans _« le voyage, le voyageur, voyager, le voyou »_
+::: exemple trouver l'intrus dans « le voyage, le voyageur, voyager, le voyou »
 
 1. **Cherche le radical commun** : _voyag-_ ← il vient du verbe _voyager_.
 2. **Teste chaque mot** : _le voyage_ (le déplacement), _le voyageur_ (celui qui voyage) ← ils parlent tous de voyager.
@@ -320,11 +320,11 @@ Chaque ligne oppose deux actions de sens contraire.
 :::
 
 ::: piege Erreur fréquente
-_« Un synonyme de monter est descendre. »_ ✗ On choisit le contraire quand la consigne demande un mot de même sens. ✓ Un **synonyme** dit la même chose (_aller loin_ ≈ _voyager_) ; un **contraire** dit l'inverse (_monter_ ≠ _descendre_). Relis le mot de la consigne.
+« _Un synonyme de monter est descendre._ » ✗ On choisit le contraire quand la consigne demande un mot de même sens. ✓ Un **synonyme** dit la même chose (_aller loin_ ≈ _voyager_) ; un **contraire** dit l'inverse (_monter_ ≠ _descendre_). Relis le mot de la consigne.
 :::
 
 ::: propriete
-Plusieurs mots disent « se déplacer » avec des nuances : _un parcours, une traversée, une croisière, une ascension, un circuit_. On compare aussi pour imaginer un déplacement : _foncer comme un taureau, détaler comme un lapin, se traîner comme un escargot, filer comme une gazelle_. Cas-limite : un proverbe n'est pas à prendre au pied de la lettre : _« Petit à petit, l'oiseau fait son nid »_ ne parle pas que d'oiseaux, il veut dire qu'avec de la patience on réussit.
+Plusieurs mots disent « se déplacer » avec des nuances : _un parcours, une traversée, une croisière, une ascension, un circuit_. On compare aussi pour imaginer un déplacement : _foncer comme un taureau, détaler comme un lapin, se traîner comme un escargot, filer comme une gazelle_. Cas-limite : un proverbe n'est pas à prendre au pied de la lettre : « _Petit à petit, l'oiseau fait son nid_ » ne parle pas que d'oiseaux, il veut dire qu'avec de la patience on réussit.
 :::
 
 ::: verifie
@@ -360,7 +360,7 @@ Chaque colonne a ses marques : le titre des rubriques pour s'informer, les étap
 
 ::: exemple chercher une information dans ce texte documentaire
 
-_« **Le Hanami au Japon** : au printemps, les Japonais regardent les cerisiers en fleurs et pique-niquent sous les arbres. **Holi en Inde** : au début du printemps, on se lance des poudres colorées. **Le carnaval de Venise** : en février, les gens portent des masques et des costumes. »_
+« **Le Hanami au Japon** : au printemps, les Japonais regardent les cerisiers en fleurs et pique-niquent sous les arbres. **Holi en Inde** : au début du printemps, on se lance des poudres colorées. **Le carnaval de Venise** : en février, les gens portent des masques et des costumes. »
 
 Question : _quelle fête se célèbre avec des masques ?_
 
@@ -371,7 +371,7 @@ Question : _quelle fête se célèbre avec des masques ?_
 :::
 
 ::: piege Erreur fréquente
-Classer _« Fabriquer une maquette de la Tour Eiffel »_ parmi les récits, ou un texte sur les fêtes du monde parmi ceux qui disent comment faire. ✗ ✓ Un texte avec une liste de matériel et des étapes numérotées est **injonctif** ; un texte organisé en rubriques qui apprend quelque chose est **documentaire**.
+Classer « _Fabriquer une maquette de la Tour Eiffel_ » parmi les récits, ou un texte sur les fêtes du monde parmi ceux qui disent comment faire. ✗ ✓ Un texte avec une liste de matériel et des étapes numérotées est **injonctif** ; un texte organisé en rubriques qui apprend quelque chose est **documentaire**.
 :::
 
 ::: propriete
@@ -379,7 +379,7 @@ Pour retrouver une information, lis d'abord les titres, puis cherche le mot clé
 :::
 
 ::: verifie
-Quel est le type du texte : _« Matériel : un carton, des ciseaux, de la colle. 1. Colle l'image sur le carton. 2. Découpe les quatre parties. »_ ?
+Quel est le type du texte : « _Matériel : un carton, des ciseaux, de la colle. 1. Colle l'image sur le carton. 2. Découpe les quatre parties._ » ?
 
 ---
 
