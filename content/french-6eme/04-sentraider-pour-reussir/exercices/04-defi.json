@@ -34,35 +34,33 @@
       "answerKey": {
         "correct": ["a", "c", "e"]
       },
-      "explanation": "Il faut toujours deux mots : ne avant le verbe conjugué, plus ou jamais juste après. À un temps composé, ils encadrent l'auxiliaire. La deuxième phrase oublie ne ; la quatrième place plus avant le verbe.",
+      "explanation": "Il faut toujours deux mots : ne avant le verbe conjugué, plus ou jamais juste après ; à un temps composé, ils encadrent l'auxiliaire. « Elle oublie jamais ses clés » oublie ne, et « Ils ne plus jouent ensemble » place plus avant le verbe.",
       "difficulty": 2
     },
     {
-      "prompt": "Dans quelle phrase la négation est-elle bien placée ?",
+      "prompt": "Que veut dire le proverbe « L'union fait la force » ?",
       "options": [
         {
           "id": "a",
-          "text": "Elle n'a plus pleuré depuis hier."
+          "text": "Quand on s'unit, chacun devient plus musclé.",
+          "misconceptionTag": "fr.lexique.sens-figure-lu-au-propre"
         },
         {
           "id": "b",
-          "text": "Elle n'a pleuré plus depuis hier.",
-          "misconceptionTag": "fr.phrase.negation-mal-placee"
+          "text": "Ensemble, on réussit mieux que seul."
         },
         {
           "id": "c",
-          "text": "Elle ne plus a pleuré depuis hier.",
-          "misconceptionTag": "fr.phrase.negation-mal-placee"
+          "text": "Le plus difficile, c'est de commencer."
         },
         {
           "id": "d",
-          "text": "Elle a plus pleuré depuis hier.",
-          "misconceptionTag": "fr.phrase.ne-oublie"
+          "text": "Il vaut mieux travailler seul pour aller vite."
         }
       ],
-      "correctOption": "a",
-      "explanation": "Au passé composé, ne se place avant l'auxiliaire « a » et plus juste après lui : elle n'a plus pleuré. Les participes et les autres mots viennent ensuite.",
-      "difficulty": 2
+      "correctOption": "b",
+      "explanation": "Un proverbe se lit au sens figuré : la force, ici, c'est le pouvoir de réussir. Quand on s'unit, on réussit mieux ensemble. Lu au sens propre, il parlerait de muscles, ce qui n'a pas de sens ici.",
+      "difficulty": 3
     },
     {
       "prompt": "Quelle phrase dit le contraire de « J'ai toujours fini mes devoirs avant le dîner. » ?",
@@ -79,7 +77,8 @@
         },
         {
           "id": "c",
-          "text": "Je n'ai pas toujours fini mes devoirs avant le dîner."
+          "text": "J'ai jamais fini mes devoirs avant le dîner.",
+          "misconceptionTag": "fr.phrase.ne-oublie"
         },
         {
           "id": "d",
@@ -87,11 +86,11 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Le contraire de « toujours » est « ne… jamais », placé autour de l'auxiliaire. « Ne… plus » est le contraire de « encore ». « Pas toujours » laisse penser qu'il arrive de finir à l'heure.",
+      "explanation": "Le contraire de « toujours » est « ne… jamais ». À un temps composé, ne se place avant l'auxiliaire et jamais juste après lui : je n'ai jamais fini. « Ne… plus » est le contraire de « encore », et à l'écrit le ne ne disparaît jamais.",
       "difficulty": 3
     },
     {
-      "prompt": "Karim joue au football sur la plage avec ses amis. Soudain, il glisse et se tord la cheville. Le maître nageur soigne la cheville. Le lendemain, Karim remercie ses amis. Dans le récit, que représente la phrase « Ses amis l'aident à s'asseoir et appellent le maître nageur » ?",
+      "prompt": "Karim joue au football sur la plage avec ses amis. Soudain, il glisse et se tord la cheville. Ses amis l'aident à s'asseoir et appellent le maître nageur. Le maître nageur soigne la cheville. Le lendemain, Karim remercie ses amis. Dans ce récit, que représente la phrase « Ses amis l'aident à s'asseoir et appellent le maître nageur » ?",
       "options": [
         {
           "id": "a",
@@ -136,8 +135,8 @@
         },
         {
           "id": "d",
-          "text": "Les pays refusent de s'occuper des filles.",
-          "misconceptionTag": "fr.lecture.contraire-du-texte"
+          "text": "Ce texte raconte l'histoire d'un enfant qui ne va jamais à l'école.",
+          "misconceptionTag": "fr.texte.informatif-pris-pour-narratif"
         }
       ],
       "correctOption": "b",

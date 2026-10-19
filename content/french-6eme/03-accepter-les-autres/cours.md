@@ -39,7 +39,7 @@ Le tableau relie la **place** de l'adjectif à sa **fonction** : c'est la place 
 
 ::: propriete
 
-- L'épithète fait partie du groupe du nom : on peut le supprimer, la phrase reste complète (_Le lapin se sauve._).
+- L'adjectif épithète fait partie du groupe du nom : on peut le supprimer, la phrase reste complète (_Le lapin se sauve._).
 - L'attribut complète le verbe d'état : si on le supprime, la phrase est incomplète (_Le lapin semble…_).
 - Cas-limite : un adjectif peut être placé **avant** le nom et rester épithète (_un petit chat_).
 
@@ -64,7 +64,7 @@ Hier, Samir a eu une dispute avec son ami Adam. Il a été désagréable. Mais d
 Pourquoi _a eu_ et _a été_ pour hier, mais _aura_ et _sera_ pour demain ? Comment fabriquer ces formes pour toutes les personnes ?
 
 ::: definition
-Au **passé composé**, le verbe se forme avec **l'auxiliaire avoir au présent + le participe passé**. Pour _avoir_, le participe est **eu**. Pour _être_, le participe est **été**.
+Au **passé composé**, _avoir_ et _être_ se forment avec **l'auxiliaire avoir au présent + le participe passé**. Pour _avoir_, le participe est **eu**. Pour _être_, le participe est **été**.
 
 Au **futur**, _avoir_ devient **aur-** et _être_ devient **ser-**, suivis de **-ai, -as, -a, -ons, -ez, -ont**.
 
@@ -197,6 +197,7 @@ Un **dialogue** est un échange de paroles entre des personnages. Chaque morceau
 
 - Le verbe introducteur peut venir **avant** la réplique (« _Sami crie : Au secours !_ ») ou **après** (« _Tiens bon, répond Rania._ »).
 - Il peut aussi **varier** pour éviter de répéter _dit_ : _répond_, _demande_, _s'écrie_, _murmure_.
+- Il va avec la réplique : _demander_ pour une question, _répondre_ après une question, _crier_ ou _s'écrier_ pour un appel.
 - Cas-limite : une réplique peut tenir en un seul mot (« _Merci !_ »), elle suit les mêmes règles.
 
 :::
@@ -215,7 +216,7 @@ Un dialogue, c'est des deux-points, des guillemets, un tiret à chaque changemen
 
 ## 📖 Lire pour comprendre : répondre en s'appuyant sur le texte
 
-Lis ce début de récit : « _Hutché ne court pas comme les autres enfants de la tribu : il boite. Un soir, son père lui dit : "Ouvre les yeux, le monde est grand."_ »
+Lis ce début de récit : « _Hutché ne court pas comme les autres enfants de la tribu : il boite. Alors il reste à l'écart de leurs jeux. Un soir, son père lui dit : "Ouvre les yeux, le monde est grand."_ »
 
 Question : _Pourquoi Hutché reste-t-il à l'écart ?_ Comment trouver la bonne réponse, sans inventer ?
 
@@ -230,7 +231,7 @@ Question : _Pourquoi Hutché reste-t-il à l'écart ?_ Comment trouver la bonne 
 ::: exemple Répondre à « Pourquoi Hutché reste-t-il à l'écart ? »
 
 1. Mot-clé : _pourquoi_ ← on attend une cause.
-2. Dans le texte : « _il boite_ » ← c'est lui qui explique pourquoi il ne court pas comme les autres.
+2. Dans le texte : « _il boite. Alors il reste à l'écart_ » ← le mot _alors_ relie la cause (il boite) à ce qu'elle entraîne (il reste à l'écart).
 3. Réponse : _Hutché reste à l'écart parce qu'il boite et ne peut pas courir comme les autres enfants._
 
 :::
@@ -288,6 +289,7 @@ Les mots de sens proche vont ensemble ; les mots de sens contraire permettent de
 ::: propriete
 
 - Les expressions imagées se comprennent dans leur ensemble : _se ressembler comme deux gouttes d'eau_ veut dire se ressembler **beaucoup**.
+- Un **proverbe** se comprend aussi au sens figuré : _Bien faire et laisser dire_ veut dire qu'il faut faire son devoir sans se soucier des critiques.
 - Cas-limite : un même mot (ici _paix_) peut entrer dans des expressions de sens différents.
 
 :::

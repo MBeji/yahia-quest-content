@@ -28,7 +28,7 @@ Le tableau montre qu'**encore devient ne… plus** et que **toujours devient ne�
 
 1. **Je repère encore** ← il se transforme en _ne… plus_.
 2. **Je trouve le verbe conjugué** : _ai_ (l'auxiliaire) ← _ne_ se place **avant** lui, et _plus_ **juste après**.
-3. **J'écris** : _Je \**n'\**ai **plus** téléphoné à mon frère._ (_ne_ devient _n'_ devant une voyelle, parce que _ai_ commence par _a_.)
+3. **J'écris** : _Je n'ai plus téléphoné à mon frère._ (_ne_ devient _n'_ devant une voyelle, parce que _ai_ commence par _a_.)
 
 :::
 
@@ -49,11 +49,11 @@ Le tableau montre qu'**encore devient ne… plus** et que **toujours devient ne�
 :::
 
 ::: verifie
-Mets à la forme négative : « _Les enfants sortent toujours le soir._ »
+Mets à la forme négative : « _Mon frère range toujours sa chambre le samedi._ »
 
 ---
 
-_Toujours_ se transforme en _ne… jamais_ ; le verbe conjugué est _sortent_, donc _ne_ le précède et _jamais_ le suit : **Les enfants ne sortent jamais le soir.**
+_Toujours_ se transforme en _ne… jamais_ ; le verbe conjugué est _range_, donc _ne_ le précède et _jamais_ le suit : **Mon frère ne range jamais sa chambre le samedi.**
 :::
 
 ::: retenir
@@ -105,7 +105,7 @@ On voit que le participe **ne change pas** et que le futur **garde tout l'infini
 
 - Tous les verbes du modèle _finir_ prennent le participe en **-i** : _rempli_, _grandi_, _rougi_.
 - Le futur garde le **-ir** : _grandir_ → _je grandirai_, _remplir_ → _tu rempliras_.
-- Cas-limite : _réunir_ garde ses deux voyelles au futur : _nous réunirons_.
+- Cas-limite : le participe ne prend jamais de _t_ ni de _s_, même avec _ils_ : _ils ont rempli_, _elles ont choisi_.
 
 :::
 
@@ -213,7 +213,7 @@ Chaque ligne du tableau est une phrase de l'histoire : les cinq phrases mises da
 
 ::: propriete
 
-- Pour faire parler les personnages, place des **répliques** dans la suite des événements ou la solution : le verbe introducteur (_dit_, _crie_, _répond_) vient **avant** ou **après** la réplique (Laurent crie : « Au secours ! » ; « Je n'ai fait que mon devoir », répond l'apprenti).
+- Pour faire parler les personnages, place des **répliques** dans la suite des événements ou la solution : le verbe introducteur (_dit_, _crie_, _répond_) vient **avant** ou **après** la réplique (La mère crie : « Au secours ! » ; « Je n'ai fait que mon devoir », répond l'apprenti).
 - Cas-limite : une histoire courte peut avoir une suite des événements d'une seule phrase, mais aucun des cinq temps ne doit manquer.
 
 :::
@@ -285,6 +285,14 @@ Comment trouver vite ce que tu cherches dans un texte de ce genre ?
 Un **texte documentaire** informe sur un sujet. Il est découpé en **rubriques**, chacune avec un **intertitre** qui annonce son contenu. Il s'appuie sur des faits, pas sur une histoire inventée.
 
 :::
+
+> **L'école pour tous les enfants du monde**
+> Apprendre est un droit pour chaque enfant. Pourtant, tous les enfants du monde n'ont pas les mêmes chances. Chaque enfant doit pouvoir apprendre à lire, à écrire et à compter.
+>
+> **Des objectifs pour demain**
+> Les pays du monde ont choisi des buts : apprendre à lire à presque tous les enfants et aider les adultes qui ne savent pas lire.
+
+Chaque intertitre en gras annonce ce que dit sa rubrique : on le lit avant de lire la rubrique.
 
 ::: exemple Trouver l'information « Que doit pouvoir faire chaque enfant selon le texte ? »
 
