@@ -38,3 +38,10 @@ Auteur : session B1, 2026-10-19. Aucun git.
 4. M1 `01-pratique` Q4 (multi) et M2 `01-pratique` Q5 (multi) ajoutent une phrase aux données du cahier : adaptées, tracées dans les items de l'exercice.
 5. Lexique M1 : le tableau du cours teste 14 métiers ; ceux des annonces du manuel (p. 23) ont été ajoutés au cours pour respecter la règle d'or.
 6. Aucun id manquant à proposer au registre.
+
+## Corrections après audit
+Tous les correctifs de `audits/audit-B1.md` sont appliqués avec les textes de l'auditeur : C-1 à C-3 (quiz 01 q5, 04-defi q4, 01-pratique q6), M-1 à M-6 (dont s de l'impératif : `retenir`, résumé et ligne *ouvrir* ; Sandra « imprime le document enregistré » avec `manuel.items` réduit à `jeu 1 p. 39` ; Sylvie réécrite), m-1 à m-6, m-8 à m-14 (muets souvent/toujours/parfois/Quatre ; étiquettes retaguées sur 03 q3 et 05 q4 du chap. 02). m-7, m-15 et m-16 : aucune action (observations).
+- F8 : exemple d'impératif négatif conservé, aucune question ajoutée.
+- F9 : tableaux de plus de 3 colonnes scindés (temps du chap. 01 en deux tableaux ; possessifs, impératif — 6 colonnes, un tableau par paire de verbes —, et a/à du chap. 02). Je n'ai pas mesuré les 4 colonnes en Chromium : scission par prudence.
+- Écart assumé : pour m-2 et m-10, les explications des `short_answer` nomment désormais la réponse (texte de l'auditeur), contre la consigne du schéma ; `content:qa` ne les signale pas.
+- Contrôles relancés sur le corpus réel : `content:check` vert, `content:qa` sans erreur, `content:tranche` clé la plus longue 0/49, `prettier --check` vert, rendu des cours et résumés sans `:::` ni astérisque (vitest jeté).

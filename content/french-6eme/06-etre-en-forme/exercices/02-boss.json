@@ -7,7 +7,7 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Complète : « Ma grand-mère est ___ de voir ses petits-enfants ___. » (heureux, joyeux)",
+      "prompt": "Complète : « La championne est ___ et ses frères sont ___. » (heureux, joyeux)",
       "options": [
         {
           "id": "a",
@@ -30,7 +30,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "« Grand-mère » est féminin singulier : heureuse. « Petits-enfants » est masculin pluriel, et « joyeux » se termine déjà par x : il ne change pas au pluriel. « Joyeuxs » ajoute un s qui n'existe pas.",
+      "explanation": "« La championne » est féminin singulier : heureux devient heureuse. « Frères » est masculin pluriel : joyeux se termine déjà par x et ne change pas. « Heureux » oublie le féminin, « joyeuse » s'accorde avec « la championne » au lieu de « frères », et « joyeuxs » ajoute un s qui n'existe pas.",
       "difficulty": 2
     },
     {
@@ -75,8 +75,7 @@
         },
         {
           "id": "c",
-          "text": "est allées",
-          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+          "text": "est allées"
         },
         {
           "id": "d",
@@ -119,53 +118,52 @@
       "options": [
         {
           "id": "a",
-          "text": "Rania dit : « Regarde l'acrobate ! »"
+          "text": "Rania dit : « Regarde bien l'acrobate qui monte ! »"
         },
         {
           "id": "b",
-          "text": "Rania dit, regarde bien l'acrobate qui monte !",
-          "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
+          "text": "Rania dit : « regarde bien l'acrobate qui monte ! »"
         },
         {
           "id": "c",
-          "text": "Rania dit : regarde bien l'acrobate qui monte !",
+          "text": "Rania dit, « Regarde bien l'acrobate qui monte ! »",
           "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
         },
         {
           "id": "d",
-          "text": "Rania dit « regarde bien l'acrobate qui monte ».",
+          "text": "Rania dit : regarde bien l'acrobate qui monte !",
           "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
         }
       ],
       "correctOption": "a",
-      "explanation": "Pour écrire une parole, il faut deux-points et guillemets, une majuscule au début et la ponctuation de la phrase avant les guillemets fermants. Chacune des trois autres versions oublie au moins un de ces signes.",
+      "explanation": "Pour écrire une parole, on ouvre avec deux-points et guillemets, puis la réplique commence par une majuscule et garde sa ponctuation avant le guillemet fermant. Il manque à chacune des trois autres versions la majuscule, les deux-points ou les guillemets.",
       "difficulty": 3
     },
     {
-      "type": "ordering",
-      "prompt": "Décris le village de loin à près : remets les phrases dans l'ordre.",
+      "prompt": "Tu décris la bibliothèque de ton école. Quel passage suit un ordre, de loin à près ?",
       "options": [
         {
           "id": "a",
-          "text": "Dans la clairière, des cases sont groupées."
+          "text": "La bibliothèque se trouve au fond de la cour. Sa porte est verte. À l'intérieur, des livres couvrent les murs."
         },
         {
           "id": "b",
-          "text": "Les murs des cases sont faits de minces troncs."
+          "text": "Il y a des livres. Il y a une porte. Il y a une cour.",
+          "misconceptionTag": "fr.description.inventaire"
         },
         {
           "id": "c",
-          "text": "À l'intérieur, on dort dans des hamacs."
+          "text": "À l'intérieur, des livres couvrent les murs. La bibliothèque se trouve au fond de la cour. Sa porte est verte.",
+          "misconceptionTag": "fr.description.inventaire"
         },
         {
           "id": "d",
-          "text": "Pour arriver au village, on traverse une épaisse forêt."
+          "text": "Nous traversons la cour. Nous ouvrons la porte verte. Nous prenons un livre.",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
         }
       ],
-      "answerKey": {
-        "order": ["d", "a", "b", "c"]
-      },
-      "explanation": "Une description suit un ordre qui guide le regard : d'abord la forêt qu'on traverse, puis la clairière où l'on arrive, puis l'extérieur des cases (les murs), enfin leur intérieur. Chaque phrase se place plus près que la précédente.",
+      "correctOption": "a",
+      "explanation": "On part de ce qui est loin (la cour, la porte) pour finir à l'intérieur. La liste en « il y a » ne suit aucun ordre, le passage qui commence par l'intérieur va de près à loin, et le dernier raconte des actions au lieu de décrire.",
       "difficulty": 3
     }
   ]

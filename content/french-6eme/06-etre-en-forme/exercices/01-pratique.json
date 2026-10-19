@@ -50,8 +50,7 @@
         },
         {
           "id": "d",
-          "text": "sont allées",
-          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+          "text": "sont allées"
         }
       ],
       "correctOption": "a",
@@ -104,8 +103,7 @@
         },
         {
           "id": "d",
-          "text": "mûrs – mûree",
-          "misconceptionTag": "fr.accord.feminin-adjectif-mal-forme"
+          "text": "mûrs – mûree"
         }
       ],
       "correctOption": "a",
@@ -113,34 +111,51 @@
       "difficulty": 2
     },
     {
-      "type": "ordering",
-      "prompt": "Remets dans l'ordre les parties d'une lettre à un ami.",
+      "type": "matching",
+      "prompt": "Relie chaque partie de la lettre de Sami à son rôle.",
       "options": [
         {
-          "id": "a",
-          "text": "Cher Walid,"
-        },
-        {
-          "id": "b",
-          "text": "Écris-moi vite. Je t'embrasse."
-        },
-        {
-          "id": "c",
+          "id": "l1",
           "text": "Sfax, le 3 avril"
         },
         {
-          "id": "d",
-          "text": "Je suis en forme et je m'entraîne chaque soir. Et toi ?"
+          "id": "l2",
+          "text": "Cher Walid,"
         },
         {
-          "id": "e",
+          "id": "l3",
+          "text": "Écris-moi vite. Je t'embrasse."
+        },
+        {
+          "id": "l4",
           "text": "Sami"
+        },
+        {
+          "id": "r1",
+          "text": "le lieu et la date"
+        },
+        {
+          "id": "r2",
+          "text": "la formule d'appel"
+        },
+        {
+          "id": "r3",
+          "text": "la formule de fin"
+        },
+        {
+          "id": "r4",
+          "text": "la signature"
         }
       ],
       "answerKey": {
-        "order": ["c", "a", "d", "b", "e"]
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
       },
-      "explanation": "Une lettre commence par le lieu et la date, puis la formule d'appel qui nomme le destinataire. Vient ensuite le corps de la lettre, puis la formule de fin, et enfin la signature tout en bas.",
+      "explanation": "Le lieu et la date ouvrent la lettre ; la formule d'appel nomme le destinataire ; la formule de fin dit au revoir avec affection ; la signature, tout en bas, dit qui écrit.",
       "difficulty": 2
     },
     {

@@ -73,14 +73,14 @@ _Prendre_ et _mettre_ sont des verbes du **3ᵉ groupe**.
 
 **Au passé composé**
 
-| Personne    | prendre         | mettre        |
-| ----------- | --------------- | ------------- |
-| je          | j'ai pris       | j'ai mis      |
-| tu          | tu as pris      | tu as mis     |
-| il / elle   | il a pris       | il a mis      |
+| Personne    | prendre         | mettre         |
+| ----------- | --------------- | -------------- |
+| je          | j'ai pris       | j'ai mis       |
+| tu          | tu as pris      | tu as mis      |
+| il / elle   | il a pris       | il a mis       |
 | nous        | nous avons pris | nous avons mis |
-| vous        | vous avez pris  | vous avez mis |
-| ils / elles | ils ont pris    | ils ont mis   |
+| vous        | vous avez pris  | vous avez mis  |
+| ils / elles | ils ont pris    | ils ont mis    |
 
 **Au futur**
 

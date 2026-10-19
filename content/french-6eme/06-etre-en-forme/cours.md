@@ -81,14 +81,14 @@ Au **futur**, le radical change : _aller_ devient **ir-**, _faire_ devient **fer
 
 **Au futur**
 
-| Personne    | aller     | faire      |
-| ----------- | --------- | ---------- |
-| je          | j'irai    | je ferai   |
-| tu          | tu iras   | tu feras   |
-| il / elle   | il ira    | il fera    |
+| Personne    | aller      | faire       |
+| ----------- | ---------- | ----------- |
+| je          | j'irai     | je ferai    |
+| tu          | tu iras    | tu feras    |
+| il / elle   | il ira     | il fera     |
 | nous        | nous irons | nous ferons |
-| vous        | vous irez | vous ferez |
-| ils / elles | ils iront | ils feront |
+| vous        | vous irez  | vous ferez  |
+| ils / elles | ils iront  | ils feront  |
 
 Pour _aller_, la fin du participe change avec le sujet ; pour _faire_, on écrit simplement _fait_ derrière l'auxiliaire _avoir_.
 

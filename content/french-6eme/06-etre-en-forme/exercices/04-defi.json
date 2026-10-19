@@ -15,11 +15,13 @@
         },
         {
           "id": "b",
-          "text": "Tunis, le 5 mars."
+          "text": "Tunis, le 5 mars.",
+          "misconceptionTag": "fr.lettre.parties-mal-placees"
         },
         {
           "id": "c",
-          "text": "Je t'embrasse bien fort."
+          "text": "Je t'embrasse bien fort.",
+          "misconceptionTag": "fr.lettre.parties-mal-placees"
         },
         {
           "id": "d",
@@ -36,7 +38,7 @@
         {
           "id": "a",
           "text": "Léa est malade et reste au lit.",
-          "misconceptionTag": "fr.lecture.contraire-du-texte"
+          "misconceptionTag": "fr.lecture.personnage-confondu"
         },
         {
           "id": "b",
@@ -58,30 +60,30 @@
       "difficulty": 2
     },
     {
-      "prompt": "Complète : « Mes sœurs sont ___ et mes frères sont ___. » (gentil, joyeux)",
+      "prompt": "Complète : « Mes sœurs sont ___ et mes frères sont ___. » (curieux, joyeux)",
       "options": [
         {
           "id": "a",
-          "text": "gentils – joyeux",
+          "text": "curieux – joyeux",
           "misconceptionTag": "fr.accord.adjectif-non-accorde"
         },
         {
           "id": "b",
-          "text": "gentilles – joyeux"
+          "text": "curieuses – joyeux"
         },
         {
           "id": "c",
-          "text": "gentilles – joyeuses",
+          "text": "curieuses – joyeuses",
           "misconceptionTag": "fr.accord.adjectif-non-accorde"
         },
         {
           "id": "d",
-          "text": "gentiles – joyeux",
+          "text": "curieuxes – joyeux",
           "misconceptionTag": "fr.accord.feminin-adjectif-mal-forme"
         }
       ],
       "correctOption": "b",
-      "explanation": "« Sœurs » est féminin pluriel : gentilles (le féminin de gentil double le l et prend un e, puis -s). « Frères » est masculin pluriel : joyeux garde sa forme, car il se termine par x. Les autres choix n'accordent pas l'adjectif avec le bon nom ou le forment mal.",
+      "explanation": "« Sœurs » est féminin pluriel : curieux se termine par -eux, il devient curieuse, puis prend un s : curieuses. « Frères » est masculin pluriel : joyeux se termine déjà par x et ne change pas. « Curieux » oublie le féminin, « joyeuses » s'accorde avec le mauvais nom, « curieuxes » ajoute un e sans changer la terminaison.",
       "difficulty": 3
     },
     {
@@ -113,7 +115,7 @@
     },
     {
       "type": "multi",
-      "prompt": "« Dans la forêt, Tulmac marche avec courage près du ruisseau demain. » Quels groupes sont des compléments de lieu ?",
+      "prompt": "« Demain, dans la forêt, Tulmac marchera avec courage près du ruisseau. » Quels groupes sont des compléments de lieu ?",
       "options": [
         {
           "id": "a",
@@ -144,25 +146,25 @@
       "options": [
         {
           "id": "a",
-          "text": "La piste est ronde, entourée de gradins rouges."
+          "text": "La salle est grande, avec des tapis bleus et des cordes."
         },
         {
           "id": "b",
-          "text": "Sami s'écrie : « Elle va monter tout en haut ! »"
+          "text": "Yassine monte à la corde et crie : « Je touche le plafond ! »"
         },
         {
           "id": "c",
-          "text": "Quand la fillette saute, tout le public applaudit."
+          "text": "Quand il redescend, toute la classe applaudit."
         },
         {
           "id": "d",
-          "text": "Samedi, Sami et Rania vont au cirque."
+          "text": "Mercredi, Yassine va au gymnase avec sa classe."
         }
       ],
       "answerKey": {
         "order": ["d", "a", "b", "c"]
       },
-      "explanation": "Le début présente les personnages et le lieu. Le passage descriptif montre la piste avant l'action. La réplique fait entendre un personnage pendant le numéro. La fin montre le résultat : le public ne peut applaudir qu'après le saut.",
+      "explanation": "Le début présente le personnage, le moment et le lieu. Le passage descriptif montre la salle avant l'action. La réplique fait entendre Yassine pendant qu'il grimpe. La fin dit le résultat : la classe applaudit quand il redescend.",
       "difficulty": 3
     }
   ]
