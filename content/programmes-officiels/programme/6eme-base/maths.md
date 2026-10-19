@@ -1,6 +1,6 @@
 # الرياضيّات (Mathématiques) — 6ème année de base · programme officiel CNP
 
-> **Statut (2026-10-19)** : **transcription intégrale des deux sources, à profondeur de génération (R-5)** — LOT A de la campagne `FableEtudes/campagnes/maths-6eme/` (branche `wip/maths-6eme-lot-a`, rédacteur `claude/maths-6eme-lot-a`). Les 208 pages du guide et les 174 pages du manuel sont lues **à l'image** (couche texte en mojibake, voir §6) ; les 35 leçons transcrites les 2026-09-19/23 (§2 bis → §2 septies) sont **gardées** et annotées des errata officiels ; les 26 leçons restantes du manuel (§2 octies, §2 nonies), les مذكرات, les fiches de prérequis, les corrigés officiels et les quatre épreuves officielles du guide (§1 bis, §2 decies → §2 terdecies) sont **ajoutés**. **R-7 : à faire** (audit indépendant qui suit ce lot) — la fiche n'est pas `validee-r7`.
+> **Statut (2026-10-19)** : **transcription intégrale des deux sources, à profondeur de génération (R-5)** — LOT A de la campagne `FableEtudes/campagnes/maths-6eme/` (branche `wip/maths-6eme-lot-a`, rédacteur `claude/maths-6eme-lot-a`). Les 208 pages du guide et les 174 pages du manuel sont lues **à l'image** (couche texte en mojibake, voir §6) ; les 35 leçons transcrites les 2026-09-19/23 (§2 bis → §2 septies) sont **gardées** et annotées des errata officiels ; les 26 leçons restantes du manuel (§2 octies, §2 nonies), les مذكرات, les fiches de prérequis, les corrigés officiels et les quatre épreuves officielles du guide (§1 bis, §2 decies → §2 terdecies) sont **ajoutés**. **R-7 fait** (« R-7 2026-10-19, sondage 158 pages, 34 corrections » — 2 substantielles, 32 de forme, sans escalade ; journal `FableEtudes/campagnes/maths-6eme/audit-R7.md`, §6.0) — fiche `validee-r7`.
 >
 > **Sources (offset 0 : page imprimée = page PDF, vérifié par les six lecteurs sur ≥ 2 pages chacun)**
 >
@@ -17,7 +17,7 @@
 >
 > **Particularité de structure (≠ 4ème/5ème)** : le **القسم النّظريّ** de ce guide est **pédagogie générale** (المقاربة بالكفايات, الوضعيّة المشكل, التقييم, الخطأ التلمذيّ — فهرس 13 sections, p.8–9), **suivi**, après le titre « القسم النّظري العلمي » (p.39), d'une **théorie maths de référence pour le maître** (p.42–55) qui **dépasse délibérément le niveau élève** (elle pose les fractions/décimaux dans **IN ⊂ 𝔻 ⊂ ℚ**, structure de corps : commutativité/associativité/élément neutre du + et du × dans l'ensemble des rationnels — p.44–47 ; échelle/سلّم p.49–50 ; pourcentage p.51). Le **scope élève autoritatif** est donné par la **خارطة البرنامج** (p.58, grille مكوّنات الكفاية × 5 فترات), la **خارطة الكتاب** (p.59 — les **61 titres de leçons** numérotés, répartis sur 5 فترات), et les tables de structuration (p.60 عدد عناوين الدروس par **3 ثلاثيّات** ; p.64 توزيع الحجم الزّمنيّ).
 > **Langue d'enseignement** : `ar` (monolingue — école TN). **gradeSlug** : `6eme-base`. **subject id** attendu : `math-6eme`.
-> **Notation** : chiffres **latins 0–9**, équations **LTR**, **virgule décimale** (الفاصلة), unités SI — y compris dans la prose arabe (jamais de chiffres arabo-indiens). C'est la règle CNP du guide lui-même : tous ses nombres et opérations sont écrits ainsi (ex. p.46 « 5/4 + 2/3 = 23/12 » ; p.48 « 375/1000 = 3/8 » ; p.51 « (840 × 10)/100 = 84 د » ; p.49 « 1/1000000 ») ; signes +, −, ×, ÷, <, >, =, ∥, ⊥, °, π. Le contenu publié confirme la virgule décimale (« 2,4 × 3 = 7,2 », « π ≈ 3,14 »).
+> **Notation** : chiffres **latins 0–9**, équations **LTR**, **virgule décimale** (الفاصلة), unités SI — y compris dans la prose arabe (jamais de chiffres arabo-indiens). C'est la règle CNP du guide lui-même : tous ses nombres et opérations sont écrits ainsi (ex. p.45 « 5/4 + 2/3 = 23/12 » (🔧 R-7 : p.45, non p.46) ; p.48 « 375/1000 = 3/8 » ; p.51 « (840 × 10)/100 = 84 د » ; p.49 « 1/1000000 ») ; signes +, −, ×, ÷, <, >, =, ∥, ⊥, °, π. Le contenu publié confirme la virgule décimale (« 2,4 × 3 = 7,2 », « π ≈ 3,14 »).
 
 ## 1. Cadre & compétences (الكفاية — خارطة البرنامج p.58 ; المقدّمة p.3–5)
 
@@ -34,7 +34,7 @@ Le guide imprime, en tête du **القسم العمليّ**, une **خارطة ا
 - **Libellé de la compétence — deux graphies officielles.** La خارطة البرنامج (p.58) imprime « حلّ وضعيّات مشكل دالّة **إدماجا** للاستدلال الرياضيّ » (lecture du 2026-06-28) ; les **مذكرات** 8, 18, 32, 46, 48 (p.108, 115, 122, 128, 135) impriment toutes « الكفاية النّهائيّة : حلّ وضعيّات مشكل دالّة **إنماء** للاستدلال الرّياضي » (p.122 sans « دالّة »). La p.58 n'a pas été relue pour trancher (§6) ; le sens (« développer / intégrer le raisonnement mathématique ») est le même.
 - **Ce que la théorie pédagogique fait peser sur la génération (résumé, détail aux §1.1–1.2)** : (1) **l'erreur est un indicateur, pas une faute** — chaque méprise se diagnostique (cause épistémologique / psychologique / didactique, Brousseau p.38) et se remédie ; le guide fournit une **grille « جدول تعيين الأخطاء » (الخطأ · التلاميذ المعنيّون به · تأويل الخطأ (السبب))** après chaque épreuve (p.168, 178, 188, 199) : c'est l'ancêtre officiel des tags de méprise du corpus ; (2) **trois occasions par critère, réussite à 2/3** (« حتّى الأكثر كفاءة يمكن له أن يخطئ », p.14 ; « احترام قاعدة الـ 2/3 », p.156) ; (3) **trouver UN cheminement est ضروري, en trouver PLUSIEURS est تميّز** (p.14) — d'où les innombrables « بطريقتين مختلفتين / بأكثر من طريقة » du manuel et le critère مع 5 ; (4) **situations intégratives signifiantes** en enseignement, apprentissage ET évaluation (p.15) ; (5) **pédagogie différenciée** (p.16 ; « اعتماد البيداغوجيا الفارقيّة » imprimé dans la مذكرة 18, p.121) ; (6) **auto-évaluation et co-évaluation** (p.35–36) — chaque أوظّف مكتسباتي وأقيّمها du manuel renvoie à une grille « أقيّم مستوى نجاحي » du كرّاس الرّياضيّات.
 - **Le كرّاس الرّياضيّات (cahier d'activités, `102610P00`, 32 p.) n'est pas lu** : le manuel y renvoie pour remplir les tableaux et pour l'auto-évaluation (« الأنشطة الّتي تستوجب التّعمير والتّكميل والرّسم تجدها في كرّاس الرّياضيات », ص 3). Certains énoncés du manuel ne sont complets qu'avec lui (§6) ; rien n'en est inventé.
-- **Rubriques d'une leçon du manuel (ص 3, définitions imprimées, lues par L1)** — chaque leçon d'acquisition suit **أستحضر** (« مرحلة الاستعداد للدّرس ومراجعة المكتسبات ») → **أستكشف** (« مرحلة تساعدك على استكشاف مفهوم جديد لم تسبق لك مخالطته ») → **أتدرّب** (exercices courts, « وتنتهي بتمرين يرمز إليه بمجموعة من المفاتيح يقيّم مدى قدرتك على استخدام المفهوم الجديد في الحالات البسيطة » : le **pictogramme « مفاتيح »** marque l'exercice-bilan de la phase) → **أوظّف** (situations-problèmes intégrant les notions acquises) → **أقيّم مكتسباتي** (situation d'évaluation). Les leçons « أتعهّد مكتسباتي » / « أعتمد مكتسباتي » remplacent أستكشف dans les leçons de réinvestissement. Chaque période se clôt par « حصص التّدرّب على حلّ المسائل » + « وضعيّات لتوظيف المكتسبات وتقييمها » + « أنشطة شيّقة مثيرة للتّسلية ». **Aucune leçon du manuel n'imprime d'encadré de règle** (61/61 leçons lues) ; les seules règles institutionnalisées imprimées sont dans les مذكرات du guide (§2 decies) et dans sa théorie maître.
+- **Rubriques d'une leçon du manuel (ص 3, définitions imprimées, lues par L1)** — chaque leçon d'acquisition suit **أستحضر** (« مرحلة الاستعداد للدّرس ومراجعة المكتسبات ») → **أستكشف** (« مرحلة تساعدك على استكشاف مفهوم جديد لم تسبق لك مخالطته ») → **أتدرّب** (exercices courts, « وتنتهي بتمرين يرمز إليه بمجموعة من المفاتيح يقيّم مدى قدرتك على استخدام المفهوم الجديد في الحالات البسيطة » : le **pictogramme « مفاتيح »** marque l'exercice-bilan de la phase) → **أوظّف** (situations-problèmes intégrant les notions acquises) → **أقيّم مكتسباتي** (situation d'évaluation). Les leçons « أتعهّد مكتسباتي » (🔧 R-7 : « أعتمد مكتسباتي », lu ailleurs dans la fiche, est une mauvaise lecture du logo ; ص 8, 10, 117, 163 impriment « أتعهّد مكتسباتي ») remplacent أستكشف dans les leçons de réinvestissement. Chaque période se clôt par « حصص التّدرّب على حلّ المسائل » + « وضعيّات لتوظيف المكتسبات وتقييمها » + « أنشطة شيّقة مثيرة للتّسلية ». **Aucune leçon du manuel n'imprime d'encadré de règle** (61/61 leçons lues) ; les seules règles institutionnalisées imprimées sont dans les مذكرات du guide (§2 decies) et dans sa théorie maître.
 - **Volume horaire (p.65, lu par L3)** : 32 semaines × 5 h = **160 h** ; 31 titres de leçons de notion × 2 h 30 = 77 h 30 ; 12 titres « أتدرّب على حلّ المسائل » × 1 h 30 = 18 h ; 7 titres « توظيف المكتسبات وتقييمها » × 3 h = 21 h → **116 h 30 d'exécution**. Une leçon de notion dure **120 à 180 min** (moyenne 150 min, p.67) ; les مذكرات 8 et 46 sont calibrées à **180 min**, la 18 à **3 h**. **أتسلّى** est « hors temps » : faite en classe si le temps le permet, sinon au **نادي الرّياضيّات** ou en famille (p.66).
 
 ### 1.1 Théorie pédagogique du guide (p.13–16, 33–38 — lot L3, résumé fidèle ; p.10–12, 17–32 lus en 2026-06)
@@ -563,7 +563,7 @@ Lecture (déduit) : مع 2 : 1→6 justes = 0,25 · 0,5 · 0,75 · 1 · 1,5 · 2
 #### (502603 p.195–196) — corrigé : Situation 2
 - **قطعة 1 (trapèze)** (مع 1, مع 2) : « قيس القاعدة الكبرى بالم : `61,25 = 3 : (5 × 36,75)` ; قيس مساحة القطعة الأولى بالمتر المربع : `1960 = (40 × (36,75 + 61,25))/2` ; ثمن بيع القطعة الأولى إذا بيعت لمن تقدّم بأكبر عرض بالدّينار : `69580 = 1960 × 35,5` ».
 - **قطعة 2 (parallélogramme)** (مع 1, مع 2) : « قيس طول الارتفاع للقطعة الثّانية بالم : `27,5 = 8 : (5 × 44)` ; قيس مساحة القطعة الثّانية بالمتر المربّع : `1210 = 27,5 × 44` ; ثمن بيع القطعة الثّانية … : `44407 = 1210 × 36,7` ».
-- **ج)** (مع 1, مع 2) : « القطعة التي وفّرت أكبر مبلغ مالي هي القطعة **الأولى** لأنّ `69580 > 44407` ; **5/7** تكاليف مواد البناء وأجرة اليد العاملة تمثّل بالدّينار : `68080 = 1500 − 69580` [**[sic]** ordre : 69580 − 1500] ; قيمة القرض بالدّينار : `27232 = 2 × (5 : 60808)` [**[sic]** `60808` pour `68080`] ; أو (p.196) تكاليف مواد البناء وأجرة اليد العاملة بالدّينار : `95312 = 7 × (5 : 68080)` [sic : (68080 : 5) × 7] ; المبلغ النّاقص أو قيمة القرض بالدّينار : `27232 = 68080 − 95312` [**[sic]** ordre : 95312 − 68080] ».
+- **ج)** (مع 1, مع 2) : « القطعة التي وفّرت أكبر مبلغ مالي هي القطعة **الأولى** لأنّ `69580 > 44407` ; **5/7** تكاليف مواد البناء وأجرة اليد العاملة تمثّل بالدّينار : `68080 = 1500 − 69580` (lu de droite à gauche : 69580 − 1500) ; قيمة القرض بالدّينار : `27232 = 2 × (5 : 60808)` [**[sic]** `60808` pour `68080`] ; أو (p.196) تكاليف مواد البناء وأجرة اليد العاملة بالدّينار : `95312 = 7 × (5 : 68080)` (lu de droite à gauche : (68080 : 5) × 7) ; المبلغ النّاقص أو قيمة القرض بالدّينار : `27232 = 68080 − 95312` (lu de droite à gauche : 95312 − 68080) ». 🔧 R-7 : l'ordre des termes n'est pas une coquille — le guide écrit toutes ses expressions de droite à gauche ; seule « 60808 » en est une.
 - Vérifications (déduit) : 36,75 × 5/3 = 61,25 ✓ ; (36,75 + 61,25)/2 × 40 = 1960 ✓ ; 1960 × 35,5 = 69580 ✓ ; 44 × 5/8 = 27,5 ✓ ; 27,5 × 44 = 1210 ✓ ; 1210 × 36,7 = 44407 ✓ ; 69580 − 1500 = 68080 ; 68080 : 5 × 7 = 95312 ; 95312 − 68080 = 27232 ✓.
 - Notions : aire du **trapèze** `(B + b) × h / 2` (**leçon 41**) et du **parallélogramme** `côté × hauteur` (leçon 38), fraction d'un nombre décimal (5/3 × 36,75 ; 5/8 × 44), multiplication d'un nombre décimal, comparaison, **fraction inverse** (5/7 de x = 68080 → x = 7×(68080:5)). → `20-aires-polygones`, `13-multiplication-fraction-entier`, `11`.
 
@@ -695,7 +695,7 @@ et ses bandeaux de leçon sont la surface la plus propre du corpus.
 - **Vocabulaire officiel** : كسر، عدد كسريّ، بسط، مقام، كسور متساوية، اختزال، توحيد المقامات، كسر عشريّ، نصف المستقيم المدرّج.
 - **Bornes de scope** :
   - ✅ INCLUS : sens (part de l'unité/d'une quantité, quotient, sur la droite graduée), équivalence/réduction, comparaison/rangement (y c. par mise au même dénominateur), **+ et − de fractions** (même dénom. + réduction au même dénom.), fractions décimales (↔ écriture décimale), **× fraction × entier**.
-  - ⛔ EXCLU : **× fraction × fraction** et **÷ de fractions** (le contenu se borne à `13` × entier ; aucune leçon « كسر × كسر » / « ÷ كسر ») ; l'**abstraction ℚ / structure de corps** (p.44–47) est **savoir-maître**, pas exigible élève. (Voir §6.) ⚠️ **Question ouverte (2026-10-19)** : le guide écrit au T3 « توظيف عمليّات الجمع والطّرح **والضّرب** في مجموعة الأعداد الكسريّة » (p.153–154, 192) — voir §3 et Q-1 au §6.
+  - ✅ **× de deux fractions (كسر × كسر)** — arbitrage du propriétaire **M1** (2026-10-19, §6.2) : le critère du T3 fait foi ; enseigné au ch. `13`. ⛔ EXCLU : **÷ de fractions** (le contenu se borne à `13` × entier ; aucune leçon « كسر × كسر » / « ÷ كسر ») ; l'**abstraction ℚ / structure de corps** (p.44–47) est **savoir-maître**, pas exigible élève. (Voir §6.) ⚠️ **Question ouverte (2026-10-19)** : le guide écrit au T3 « توظيف عمليّات الجمع والطّرح **والضّرب** في مجموعة الأعداد الكسريّة » (p.153–154, 192) — voir §3 et Q-1 au §6.
 
 #### Thème : **التناسب والنسبة المئويّة** (proportionnalité & pourcentage) — _domaine majeur (concours)_ ; chapitres publiés `14` / `15` ; théorie maître p.49–51
 
@@ -859,7 +859,7 @@ tranche géométrie, pas celle-ci.
   manquante par ligne (17,75 × 14,5 ; aire 407 et longueur 22 → largeur **18,5** ; périmètre 90,5
   et largeur 20,5 → longueur **24,75** ; aire 540 et largeur 18,75 → longueur **28,8**).
   [erratum p.200, ل 3 ت 1, ص 10, « الجدول 1 الواد الأخير » : imprimé « 5,4 » → **540** ; ce PDF porte déjà 540 (relu à l'image le 2026-10-19)]
-- **أعتمد مكتسباتي 2 أ — produits posés** : 18 × 0,98 ; 3,14 × 5,2 ; 0,07 × 2,85 ; 204 × 0,5 ;
+- **أتعهّد مكتسباتي 2 أ — produits posés** : 18 × 0,98 ; 3,14 × 5,2 ; 0,07 × 2,85 ; 204 × 0,5 ;
   108 × 0,25 ; 0,75 × 0,002 ; 365,48 × 0,1 ; 22,18 × 0,01 ; 103,705 × 0,001.
 - **2 ب — quotients posés** : 38,4 : 4 ; 48,36 : 12 ; **86,45 : 18,2** (= **4,75**) ; **15 : 0,1** ;
   **107 : 0,01** ; **198 : 0,001** ; 13,08 : 0,1 ; 24,5 : 0,01 ; 101,025 : 0,001. → **division par
@@ -1507,7 +1507,7 @@ de `05`** : elle mobilise échelle, fractions et pourcentage. Le rattachement `0
 > **Lu à l'image** (`/root/.cache/yqa-manuels/r/m-126…128, 163…164.png`, recadrage 300 dpi de
 > ص 128 pour l'exercice 10), 2026-09-23. Chaque nombre ci-dessous a été **re-calculé**
 > (`fractions.Fraction`). Comme partout dans ce manuel : **aucun encadré de cours**, des situations
-> (أستحضر / أستكشف / أتدرّب / أوظّف / أقيّم مكتسباتي ; أعتمد مكتسباتي pour la leçon 57).
+> (أستحضر / أستكشف / أتدرّب / أوظّف / أقيّم مكتسباتي ; أتعهّد مكتسباتي pour la leçon 57).
 >
 > ⚠️ **Constat de notation, décisif pour relire ces pages** : le manuel écrit ses expressions
 > **de droite à gauche** (ordre de lecture arabe, chiffres occidentaux). Lues de gauche à droite,
@@ -1554,7 +1554,7 @@ de `05`** : elle mobilise échelle, fractions et pourcentage. Le rattachement `0
 
 ### Leçon 57 — « أوظّفُ الجمع والطّرح والضّرب على الأعداد الكسريّة » (ص 163–164)
 
-- **أعتمد مكتسباتي 1 — expressions** (RTL, × prioritaire) : 3/11 + 5/22 × 4 − 5/7 = 13/11 − 5/7 =
+- **أتعهّد مكتسباتي 1 — expressions** (RTL, × prioritaire) : 3/11 + 5/22 × 4 − 5/7 = 13/11 − 5/7 =
   **36/77** ; 4 × (3/2 + 8/11) = 4 × 49/22 = **98/11** ; 8 × 3/2 − (2/5 + 1/3) = 12 − 11/15 = **169/15** ;
   3 × 5/2 − 2/5 = **71/10**. (Lue LTR, la première donnerait 6/77 via un intermédiaire négatif.)
 - **2 — la mosaïque** : 1/2 blanc, 1/5 bleu, 1/3 rose → 31/30 > 1 : **partage impossible**.
@@ -2186,7 +2186,7 @@ La fiche dit pour `15` : « معدّل السرعة = المسافة ÷ الزم
 > **Lu à l'image** (rendus `m-016…018.png`, puis re-rendus à 200–250 dpi pour les exercices 2–3),
 > 2026-09-23, pour la campagne patron de notion (é35 → `math-6eme`). Chaque nombre ci-dessous a été
 > **re-calculé** (python, `fractions.Fraction`, tout en secondes). Comme les leçons 1 et 3, pas
-> d'encadré de cours : أستحضر → أعتمد مكتسباتي → أوظّف → أقيّم مكتسباتي. **Le titre même dit
+> d'encadré de cours : أستحضر → أتعهّد مكتسباتي → أوظّف → أقيّم مكتسباتي. **Le titre même dit
 > « الجمع والطّرح والضّرب »** : la multiplication d'une durée fait partie de la leçon.
 > **Notation du manuel** : **س** (heure), **دق** (minute), **ث** (seconde), et « الساعة 7 و 40 دق »
 > pour un horaire. Le corpus (et la fiche) écrivent **سا / د / ثا** — voir écart 9.
@@ -2199,7 +2199,7 @@ La fiche dit pour `15` : « معدّل السرعة = المسافة ÷ الزم
   6 × 2 سا 45 د = 16 سا 30 د et 6 × 4 سا 30 د = 27 سا → **43 سا 30 د**. (Distributivité de la
   multiplication d'une durée sur l'addition.)
 
-### أعتمد مكتسباتي
+### أتعهّد مكتسباتي
 
 - **2 — opérations** (h/min/s mêlés) :
   - 3 سا 15 د 14 ثا + 6 سا 10 د 58 ثا = **9 سا 26 د 12 ثا** (72 ثا = 1 د 12 ثا, retenue sur la minute) ;
@@ -3000,14 +3000,14 @@ La fiche dit en trois lignes : les 5 quadrilatères, « خاصيّاتها (ال
 > pour les figures denses : ص 98 bas, ص 144 haut, ص 145), page par page. Chaque nombre ci-dessous a
 > été **re-calculé** (python, `fractions.Fraction`, π = 3,14 quand il intervient). Comme toutes les
 > leçons déjà lues : **aucun encadré de cours**, aucune formule imprimée. Rubriques : **أستحضر** →
-> **أستكشف** → **أتدرّب** → **أوظّف** → **أقيّم مكتسباتي** (leçon 2 : **أعتمد مكتسباتي** → **أوظّف** →
+> **أستكشف** → **أتدرّب** → **أوظّف** → **أقيّم مكتسباتي** (leçon 2 : **أتعهّد مكتسباتي** → **أوظّف** →
 > **أقيّم مكتسباتي**). Les formules d'aire ne sont **jamais écrites** : elles se lisent dans les tableaux
 > à compléter. Le manuel écrit « صم » pour le centimètre, « دسم »، « دكم »، « هم »، « هآ »، « آر » ;
 > il fait correspondre **آر = دكم²** et **هآ = هم²** dans ses tableaux de conversion.
 
 ### Leçon 2 — « أتصرّف في وحدات قيس المساحة » (ص 8–9)
 
-- **أعتمد مكتسباتي 1 أ — compléter avec l'unité.** 305 م² = 30 500 **دسم²** = 3,05 **آر (دكم²)** =
+- **أتعهّد مكتسباتي 1 أ — compléter avec l'unité.** 305 م² = 30 500 **دسم²** = 3,05 **آر (دكم²)** =
   0,0305 **هآ (هم²)** ; 41 آر = 4 100 **م²** = 0,41 **هآ**. ب — convertir vers l'unité donnée :
   1,07 كم² = **10 700** دكم² = **107** هم² ; 5,809 هآ = **580,9** آر = **58 090** م².
 - **أوظّف 2 — la couturière.** Tissu 18 م × 1,2 م ; découpé en carrés de côté la largeur (1,2 م) →
@@ -3137,7 +3137,7 @@ La fiche dit en trois lignes : les 5 quadrilatères, « خاصيّاتها (ال
   corrobore.)
 - **أتدرّب 3 — le stade** : rectangle 110 × 75 et deux demi-disques de diamètre 75 → **12 665,625 م²**.
 - **4 — la surface colorée** (rectangle 80 × 50 coupé en deux, cercle de diamètre 30, demi-disques de
-  diamètres 80 et 40) : **4 237,25 م²** selon ma lecture des cotes — **lecture incertaine**, non reprise.
+  diamètres 80 et 40) : **4 237,25 م²** selon ma lecture des cotes — **lecture incertaine**, non reprise. (🔧 R-7 : les seules cotes imprimées sont **50 م** (hauteur), **40 م** (moitié de la base, côtés codés « // ») et **20 م** près du cercle ; « diamètre 30 » n'est pas imprimé.)
 - **5 — l'hexagone** : un rectangle 10 × 24 صم et deux triangles de base 24 صم (le côté commun) et de
   hauteur 10 صم (codage « // ») → 240 + 120 + 120 = **480 صم²** (il tient dans un rectangle 24 × 30 =
   720). **Polygone pur** : ancrage de la section « figure composée ».
@@ -3789,7 +3789,7 @@ Puces (verbatim) :
 
 > Bandeau **magenta**, numéro **11**. Deux situations (1) et (2).
 
-#### Situation 1 — le train Nabeul/banlieue
+#### Situation 1 — le train de « مدينة النّورس » et ses banlieues (🔧 R-7 : le titre disait « Nabeul », nom absent de la page)
 
 Énoncé (verbatim) : « القطار الّذي يربط بين مدينة النّورس وضواحيها الشّرقيّة يتكوّن من أربع عربات إحداها درجة أولى وبقيّتها درجة عاديّة. »
 « تتّسع العربة الواحدة لـ 120 راكبا يدفع كلّ منهم ثمن تذكرته لسفرة واحدة (ذهابا فقط أو إيّابا فقط) [erratum p.200, ل 11 ت 1 : imprimé « ذهاب فقط أو إيّاب » ; L1 lit la forme corrigée] في الدّرجة الأولى 0,900 د وفي الدّرجة الثّانية 0,650 د. »
@@ -3899,7 +3899,7 @@ Tableau (colonnes dans l'ordre d'impression, de droite à gauche) :
 | المأوى (2) | 4,5 | ….. | ….. | 1,26 | ….. |
 | المأوى (3) | *(vide)* | « أصغر من قيس قطر المأوى (2) بـ 1 صم » | ….. | 1,12 | ….. |
 
-*(Note de lecture : dans la ligne (1), les colonnes « شعاع » et « قطر » sont vides sans pointillés ; dans la ligne (3), la colonne « قطر » porte l'énoncé « أصغر من قيس قطر المأوى (2) بـ 1 صم » et les colonnes « شعاع », « محيط » portent `…` ou sont vides : ordre exact des pointillés/vides en (3) `[?]` pour la colonne « شعاع ».)*
+*(Note de lecture : dans la ligne (1), les colonnes « شعاع » et « قطر » sont vides sans pointillés ; dans la ligne (3), la colonne « قطر » porte l'énoncé « أصغر من قيس قطر المأوى (2) بـ 1 صم » la colonne « شعاع » est **vide sans pointillés** et « محيط » porte `…..` — 🔧 R-7 2026-10-19, relu à l'image : le `[?]` est levé.)*
 
 Texte (verbatim) :
 - « – يتّسع المأوى (1) لعدد من الأغنام [erratum p.200, ل 21 ت 1 : imprimé « لعدد الأغنام من »] من مضاعفات 2 و5 محصور بين 371 و389 ويتّسع المأوى الثّاني لعدد من الأغنام مضاعف لـ 43 ومحصور بين 340 و350 أمّا المأوى الثّالث فيسع 260 رأس غنم. »
@@ -4027,7 +4027,7 @@ Chaque exercice est une figure cotée ; consigne : **calculer le périmètre** (
 - **8** — « بمناسبة عيد الطّفولة نظّمت إحدى الجمعيّات سباقا للدّرّاجات على هذا المسلك الواقع حول حيّ رياضيّ. انطلق السّباق على السّاعة العاشرة صباحا فقام المشاركون بـ 25 دورة تمكّن ضياء إثرها من الفوز بالسّباق حيث كان معدّل الزّمن الّذي قضّاه في القيام بدورة واحدة 3 دق و 8 ث. »
   Puces : « أبحث عن المسافة الّتي قطعها المتسابقون. » · « أبحث عن ساعة اجتياز ضياء لخطّ الوصول. »
   - **Figure** (le circuit, avec flèches de sens de parcours) — assemblage : un **carré de côté 120 م** (côtés marqués « ## », cote « 120 م » à gauche) ; sur son côté supérieur, un **triangle équilatéral** de côté 120 (côté oblique gauche marqué, base pointillée marquée, côté droit pointillé marqué « 120 م ») ; sur le côté droit de ce triangle (en pointillés, c'est un **diamètre de 120 m**), un **demi-cercle** de diamètre 120 (grand arc à droite, flèches) ; au-dessous du carré, un **rectangle** dont le côté bas est marqué égal à 120 ; sur la **gauche** de ce rectangle, un **demi-cercle** (flèche) ; à **droite**, un petit **carré 84 × 84** (cotes « 84 م » en haut avec flèche vers la gauche, et « 84 م » à droite avec flèche vers le haut). Parcours : côté bas (→), côté droit du petit carré (↑ 84), son côté supérieur (← 84), le côté droit du carré de 120 (↑), le grand demi-cercle, le côté oblique du triangle (↙), le côté gauche (↓ 120), le demi-cercle gauche (de diamètre = hauteur du rectangle inférieur, soit 84 : déduit) et retour.
-  - **Déduit** (lecture de la figure, π = 3,14) : tour = 120 (bas) + 84 + 84 + 120 + (π × 120 / 2 = 188,4) + 120 + 120 + (π × 84 / 2 = 131,88) = **968,28 m** ; 25 tours = **24207 m** ; durée = 25 × 3 min 8 s = 25 × 188 s = 4700 s = **1 h 18 min 20 s** ⇒ arrivée à **11 h 18 min 20 s**. *(lecture de la figure à vérifier : la hauteur 84 du rectangle inférieur et le sens des arcs sont déduits des tracés `[?]`.)*
+  - **Déduit** (lecture de la figure, π = 3,14) : tour = **204 (bas : 120 sous le rectangle + 84 sous le petit carré)** + 84 + 84 + 120 + (π × 120 / 2 = 188,4) + 120 + 120 + (π × 84 / 2 = 131,88) = **1052,28 m** ; 25 tours = **26307 m** ; 🔧 R-7 2026-10-19 (figure relue à 250 dpi) : le côté bas du circuit est continu jusqu'au bord droit du petit carré — la fiche ne comptait que 120 m et donnait 968,28 m / 24207 m ; durée = 25 × 3 min 8 s = 25 × 188 s = 4700 s = **1 h 18 min 20 s** ⇒ arrivée à **11 h 18 min 20 s**. *(lecture de la figure à vérifier : la hauteur 84 du rectangle inférieur et le sens des arcs sont déduits des tracés `[?]`.)*
   → notions : **longueur d'un demi-cercle**, périmètre d'une figure composée, multiplication/addition de décimaux, **durées en h-min-s** (multiplication d'une durée par 25).
   - Rubrique : logo vert « أوظّف ».
 
@@ -4186,7 +4186,7 @@ Tableau imprimé « النّسبة المائويّة المؤمّلة للنّ�
 
 Suite : « أنفقت إدارة الجامعة الأموال الإضافيّة في شراء حواسيب بنسبة 45 % وفي إثراء المكتبة بنسبة 23 % وبقيّة المبلغ في تجهيز المخابر. »
 
-**Figure (ص 102)** : diagramme en bâtons sur papier millimétré rose, deux séries — légende : rose/rouge « عدد الطلبة », bleu « عدد النّاجحين » ; abscisse « السنوات » graduée 1, 2, 3, 4 (un bâton rouge et un bleu côte à côte par année) ; ordonnée graduée 0, 100, 200 … 1000 (pas de 100) **avec en plus des étiquettes parasites 350, 450, 550, 650, 750** intercalées (au niveau de certaines têtes de bâtons : 350, 550, 650). Lectures (au 1/50 près, `[?]` léger) : rouge ≈ **900, 650, 600, 500** ; bleu ≈ **550, 500, 350, 300** (années 1 → 4). Un trait horizontal plus marqué à 500. Ces valeurs ne sont pas imprimées en chiffres : déduit de la lecture graphique. Totaux déduits : 2650 étudiants, 1700 reçus. Les étiquettes 450 et 750 ne correspondent à aucun bâton `[?]`.
+**Figure (ص 102)** : diagramme en bâtons sur papier millimétré rose, deux séries — légende : rose/rouge « عدد الطلبة », bleu « عدد النّاجحين » ; abscisse « السنوات » graduée 1, 2, 3, 4 (un bâton rouge et un bleu côte à côte par année) ; ordonnée graduée 0, 100, 200 … 1000 (pas de 100) **avec en plus des étiquettes parasites 350, 450, 550, 650, 750** intercalées (au niveau de certaines têtes de bâtons : 350, 550, 650). Lectures **sur la graduation régulière 0–1000** (une ligne forte tous les 100) : rouge = **900, 750, 600, 500** ; bleu = **650, 500, 450, 300** (années 1 → 4). Un trait horizontal plus marqué à 500. Ces valeurs ne sont pas imprimées en chiffres : déduit de la lecture graphique. Totaux déduits : **2750 étudiants, 1900 reçus**. 🔧 **R-7 2026-10-19 (relu à 300 dpi)** : le lecteur avait lu trois bâtons sur les **étiquettes parasites** que l'erratum n° 44 fait supprimer (« 650 » est posée à hauteur réelle 750, « 550 » à 650, « 350 » à 450) et donnait rouge 900/650/600/500, bleu 550/500/350/300, totaux 2650/1700 — faux.
 
 Questions (p.103, puces) :
 - « ما عدد الطّلبة بهذه المؤسّسة الجامعيّة ؟ »
@@ -4207,7 +4207,7 @@ Questions :
 - « أعبّر عن هذه المعطيات الإحصائيّة بمخطّط بيانيّ بالعصيّات » (construire un diagramme en bâtons).
 - « هل تحسّنت النّتائج خلال السّنة الجامعيّة 2005 / 2004 مقارنة بنتائج سابقتها ؟ أُعلّل إجابتي حسابيّا. »
 - « هل بلغت النّتائج المستويات المؤمّلة ؟ أعلّل إجابتي حسابيّا. »
-Déduit : taux de réussite 80 %, 75 %, 82 %, 84 % (760/950, 675/900, 533/650, 546/650) à comparer aux taux de l'année précédente (≈ 61,11 ; 76,92 ; 58,33 ; 60 — déduit du diagramme) et aux niveaux espérés 80/80/85/90.
+Déduit : taux de réussite 80 %, 75 %, 82 %, 84 % (760/950, 675/900, 533/650, 546/650) à comparer aux taux de l'année précédente (650/900 ≈ 72,22 ; 500/750 ≈ 66,67 ; 450/600 = 75 ; 300/500 = 60 — déduit du diagramme, 🔧 R-7 : la fiche donnait 61,11 ; 76,92 ; 58,33 ; 60 sur les valeurs mal lues) et aux niveaux espérés 80/80/85/90.
 Illustration : dessin d'un bâtiment « الجامعة التونسيّة » (sans donnée).
 → chapitres `14-proportionnalite-pourcentage` ; (statistique en bâtons : aucun chapitre dédié, voir « À signaler »).
 
@@ -4681,7 +4681,7 @@ Cinq puces :
 - « أحدّد عدَدَ السّفرات الّتي قام بها الجرّار. »
 - « أحسُبُ بالكم المسافة الفاصلة بين الحقل ومركز قبول الحبوب. »
 - « أحسب بطريقتين مختلفتين المدّة المستغرقة في السّير لنقل صابة الشّعير إلى مركز قبول الحبوب. »
-- « أقيّم مستوى نجاحي في انجاز المسألة عدد 1 صفحة 31 على كرّاس الرّياضيّات . » [erratum p.203, ل 60 ت 1, ص 171, السّطر 15 : « صفحة 28 » → « على كرّاس الرّياضيّات ص 28 » — l'erratum vise un renvoi « صفحة 28 » que L2 ne relève pas (L2 lit « صفحة 31 » en fin d'exercice) : renvoi au كرّاس, non lu, `[?]` §6]
+- « أقيّم مستوى نجاحي في انجاز المسألة عدد 1 صفحة 31 على كرّاس الرّياضيّات . » [erratum p.203, ل 60 ت 1, ص 171, السّطر 15 : « صفحة 28 » → « على كرّاس الرّياضيّات ص 28 » — l'erratum vise un renvoi « صفحة 28 » ; ce PDF imprime « صفحة 31 على كرّاس الرّياضيات » (relu au R-7 : la lecture de L2 est juste, le `[?]` est levé) ; renvoi au كرّاس, non lu]
 Déduit : و ن = diamètre = 200 m ⇒ grand rectangle 300 × 200 = 60 000 m² (ب est au milieu de sa hauteur) ; rectangle gauche 157 × 100 = 15 700 ; demi-disque ½ × π × 100² = 15 700 (π ≈ 3,14) ; triangle : base د و = 300 − 140 = 160, hauteur 20 ⇒ 1600 ; **total 93 000 m² = 9,3 ha ✓** (attendu par la 1ʳᵉ puce) ; récolte 9,3 × 30 = 279 q = 27 900 kg ; gardé 1/31 = 900 kg ; transporté 27 000 kg = 450 sacs ⇒ **9 voyages** ; compteur 227 556 − 227 304 = 252 km pour 9 allers-retours ⇒ 28 km l'aller-retour ⇒ **14 km** entre le champ et le centre ; temps : aller 14/15 h = 56 min, retour 14/24 h = 35 min ⇒ 91 min par aller-retour ⇒ 9 × 91 = 819 min = **13 h 39 min** (méthode 2 : 126 km à 15 km/h = 8,4 h + 126 km à 24 km/h = 5,25 h = 13,65 h). Notions : aire composée (rectangles, demi-disque, triangle), π ≈ 3,14, conversions m² → ha, q → kg, fraction d'une quantité, vitesse/temps/distance, durées.
 → `20-aires-polygones`, `21-cercle-disque`, `15-vitesse-distance-temps`, `13-multiplication-fraction-entier`, `14-proportionnalite-pourcentage`, `22-durees`.
 
@@ -4982,7 +4982,7 @@ Pastille « 18 » (= n° de leçon du manuel élève, cf. فهرس p.106). **For
 ##### (502603 p.120) — مذكرة 18 : فاتحة **التوظيف** (وضعيّات 8–9)
 - (fin 7) Maître : يحرص على أن يقع الإصلاح على السبّورة من قبل التلاميذ المتعثّرين حتّى يقع استثمار الخطإ ; élève : يجيب عن أسئلة الوضعيّة على السبّورة ; عمل جماعي.
 - **التوظيف — الوضعيّة عدد 8** — الهدف : **تكوين أعداد كسرية وكتابتها وقراءتها انطلاقا من وضعيّة إدماجيّة**. المعلّم : يدعو إلى قراءة نص الوضعيّة والتعمّق في فهمه ; يدعو إلى قراءة الوضعيّة قراءات جهريّة ; يدعو إلى المحاولات الفرديّة وفي نطاق مجموعات ; يدعو المجموعات إلى مناقشة الحلول المتوصّل إليها ويساعد المتعثّرين ويتعرّف على أسباب تعثّرهم ; يدعو إلى الإصلاح الجماعي على السبّورة ويركّز على أن يكون الإصلاح من قبل المخطئين حتّى يتمّ استثمار الخطإ في التعلّم ; يدعو إلى التقييم الذاتي. المتعلّم : يقرأ الوضعيّة عدّة قراءات صامتة مع التعمّق في فهم المعطيات والمطلوب والربط بينهما ; يقرأ الوضعيّة قراءة جهريّة أو ينصت إلى من يقرأ ; يحاول الحلّ فرديّا ثمّ في نطاق المجموعات ; تناقش كلّ مجموعة نتائج عملها مع المجموعات الأخرى وتعرض تمشّياتها وتكتشف تمشّيات الآخرين ; يساهم في الإصلاح الجماعي على السبّورة ; يقيّم عمله ذاتيّا ليكتشف مواطن تعثّره. Modes : عمل فردي / جماعي / جماعي / جماعي.
-- **الوضعيّة عدد 9** — الهدف : **استثمار بيانات المخطّط البياني المعروض في تكوين أعداد كسرية وكتابتها وقراءتها**. المعلّم : يدعو إلى تأمّل **المخطّط البياني الممثّل لتوزيع عدد عائلات قرية من القرى التونسيّة حسب عدد الأطفال** ; المتعلّم : يتأمّل **الهرم** [sic : « الهرم » = pyramide des effectifs / diagramme] ويقرأ كلّ البيانات المصاحبة ; يجيب عن السؤال الأوّل من الوضعيّة عدد 9 : **عدد العائلات = 50 + 300 + 200 + 50 + 100 + 600 = 1300 عائلة** (somme imprimée telle quelle ; les six effectifs 50 ; 300 ; 200 ; 50 ; 100 ; 600 — **[sic]** : `50 + 300 + 200 + 50 = 600`, puis `= 50 + 100 + 600` : l'imprimé enchaîne « 50 + 300 + 200 + 50 » puis « 50 + 100 + 600 » ; total 1300 d'après le texte).
+- **الوضعيّة عدد 9** — الهدف : **استثمار بيانات المخطّط البياني المعروض في تكوين أعداد كسرية وكتابتها وقراءتها**. المعلّم : يدعو إلى تأمّل **المخطّط البياني الممثّل لتوزيع عدد عائلات قرية من القرى التونسيّة حسب عدد الأطفال** ; المتعلّم : يتأمّل **الهرم** [sic : « الهرم » = pyramide des effectifs / diagramme] ويقرأ كلّ البيانات المصاحبة ; يجيب عن السؤال الأوّل من الوضعيّة عدد 9 : **عدد العائلات = 50 + 300 + 200 + 50 + 100 + 600 = 1300 عائلة** (somme imprimée sur trois lignes de cellule — « 50 + 300 + 200 + » / « 50 + 100 + 600 = » / « 1300 عائلة » — c'est **une seule somme** de six effectifs, juste : 1300 ; 🔧 R-7 : l'ancienne note y voyait un `[sic]`, il n'y en a pas).
   Remarque : la **figure du manuel élève** (diagramme / « pyramide » des familles par nombre d'enfants) n'est pas reproduite dans le guide ; les effectifs figurent seulement dans la somme.
 
 ##### (502603 p.121) — مذكرة 18 : fin de 9, **التقييم**
@@ -5055,7 +5055,7 @@ Colonnes : المرحلة | الهدف منها | نشاط المعلّم | نش
      - « مساحة القرص الدائري **<** من قيس مساحة المربّعات الأربعة المكوّنة لمساحة المربّع الكبير » ;
      - « العدد 3,12 قريب جدّا من العدد π… » (points de suspension imprimés).
    - **Hدف de la sous-phase (p.131)** : « تعرّف قاعدة البحث عن قيس مساحة القرص الدائري ». Maître : يدعو المجموعات إلى عرض نتائجها ; يدعو إلى البحث عن طريقة تمكّن من حساب قيس مساحة القرص الدائري ; يدعو إلى عرض ما توصّلوا إليه ; **يدعو إلى تسجيل قاعدة البحث عن قيس مساحة القرص الدائري** (la formule n'est **pas imprimée** au guide ; π × r × r attendu, déduit — à ne pas affirmer comme transcrit). Élève : يبدي الرأي، يناقش، يعدّل، يصلح ; يوظّف ما توصّل إليه في المرحلة السابقة ; يعرض، يناقش، يعلّل.
-3. **التدرّب (p.131–133)** — énoncé général : « أنشطة التدرّب متدرّجة الصعوبة لكلّ منها هدف خاص يختار المعلّم منها ما يناسب مستوى فصله وحاجات متعلّميه. إذا أنجز المتعلّمون النشاط بنجاح يقع المرور إلى نشاط آخر وإذا تعثّروا في إنجازه يمكن تعديله ليتلاءم مع مستوى التلاميذ أو اقتراح أنشطة أخرى من نفس العائلة. يمكن أن يعمل فريق من المتعلّمين على نشاط من هذه الأنشطة ويعمل أعضاء فريق آخر على نشاط آخر كل حسب حاجته. » (la dernière ligne du bloc est coupée en bas de p.131 : `[?]`).
+3. **التدرّب (p.131–133)** — énoncé général : « أنشطة التدرّب متدرّجة الصعوبة لكلّ منها هدف خاص يختار المعلّم منها ما يناسب مستوى فصله وحاجات متعلّميه. إذا أنجز المتعلّمون النشاط بنجاح يقع المرور إلى نشاط آخر وإذا تعثّروا في إنجازه يمكن تعديله ليتلاءم مع مستوى التلاميذ أو اقتراح أنشطة أخرى من نفس العائلة. يمكن أن يعمل فريق من المتعلّمين على نشاط من هذه الأنشطة ويعمل أعضاء فريق آخر على نشاط آخر كل حسب حاجته. » (🔧 R-7 : le bloc est complet en bas de p.131 — il se termine par « … كل حسب حاجته. » ; le `[?]` « ligne coupée » est levé).
    Situations du manuel et leur Hدف (p.132–133) :
    | Situation | Hدف (guide) |
    |---|---|
@@ -5430,7 +5430,7 @@ Pastille « 5 ». Rubriques : أستحضر (1) · أتعهّد مكتسباتي 
 **2 ـ أنجز العمليات التالية** (le signe « : » = ÷) :
 - أ ـ (9 divisions) `12,9 : 3` ; `871,5 : 105` ; `101 : 4` ; `49,08 : 12` ; `179,2 : 256` ; `434 : 124` ; `21,6 : 27` ; `100,7 : 1007` ; `2299 : 605`
 - ب ـ (9 divisions) `16,40 : 0,25` ; `652,178 : 207,7` ; `1 : 4` ; `196,95 : 5,05` ; `0,3061 : 0,75` ; `3 : 4` ; `1308,1 : 12,7` ; `1,5 : 0,75` ; `3 : 6`
-(Placement des opérandes tel qu'imprimé : `a : b` se lit « a ÷ b » **[?]** : sur l'image les opérandes apparaissent dans l'ordre `12,9 : 3` etc. ; dans la colonne ب certaines sont en sens apparemment inversé (`0,25 : 16,40` imprimé) — ordre RTL/bidi à confirmer **[?]**.)
+(🔧 R-7 2026-10-19, relu à 120 dpi : **toutes** les divisions de p.86–87 sont imprimées de droite à gauche (« 3 : 12,9 », « 0,25 : 16,40 », « 0,1 : 4,1 ») ; transcrites ici dans l'ordre de lecture `dividende : diviseur` — le `[?]` est levé.)
 
 **3 ـ أحسب ذهنيّا** (l'ordre d'impression RTL) :
 - `314 : 10` ; `107,8 : 100` ; `1 : 10` ; `0,1 : 1000` ; `6 : 1000` ; `9,05 : 10000` (6 divisions, 2 colonnes)
@@ -5849,7 +5849,7 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 2. « نتحصّل على كتابات مختلفة لعدد كسريّ إذا ضربنا بسطه ومقامه في نفس العدد المخالف للصّفر. »
 3. « نتحصّل على كتابات مختلفة لعدد كسريّ إذا قسمنا بسطه ومقامه على قاسم مشترك لهما. »
 4. « ليكن أ وب عددين صحيحين طبيعيّين حيث ب مخالف للصّفر. إذا كان أ وب أوّليّين فيما بينهما نقول إنّ **أ/ب** هي كتابة مختصرة إلى أقصى حدّ. » (fraction irréductible)
-5. « المقام الأصغر لعددين كسريّين مختزلين إلى أقصى حدّ هو المضاعف المشترك الأصغر لمقاميهما. » (**PPCM**) [note : formulation imprimée, `[sic]` « المقام الأصغر » = dénominateur commun le plus petit]
+5. « المقام **المشترك** الأصغر لعددين كسريّين مختزلين إلى أقصى حدّ هو المضاعف المشترك الأصغر لمقاميهما. » (**PPCM**) [🔧 R-7 2026-10-19 : la fiche omettait « المشترك » et en tirait un faux `[sic]` ; l'imprimé est correct]
 6. « كلّ عدد كسريّ هو مجموع عدد صحيح طبيعيّ وعدد كسريّ أصغر من 1 (مثال : 3/4 = 0 + 3/4 ، 7/5 = 1 + 2/5 ، 26/3 = 8 + 2/3). » — **décomposition partie entière + fraction < 1** (= leçon 19 du manuel « أفكّك… وأركّبها »).
 7. « مجموعة الأعداد الصحيحة الطبيعيّة تشكّل مجموعة جزئيّة من مجموعة الأعداد الكسريّة. »
 8. « رياضيّا نرمز لمجموعة الأعداد الكسريّة بحرف **Q** (في مستوى المرحلة الثّانية من التّعليم الأساسيّ وفي التّعليم الثّانويّ) ونرمز كذلك بحرف **IN** لمجموعة الأعداد الصحيحة الطبيعيّة ونلاحظ أنّ **IN ⊂ Q**. »
@@ -5921,7 +5921,7 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 | --- | --- | --- | --- |
 | **Division d'un décimal PAR un décimal** (et par 0,1 / 0,01 / 0,001) | **✅** | manuel leçon 3 ص 10–11 (86,45 : 18,2 ; 15 : 0,1 ; 1208,105 : 14,025) ; **prérequis de 5ᵉ** p.86–87 (révision 5 : « 16,40 : 0,25 », « 652,178 : 207,7 », « 1,5 : 0,75 » ; « أستنتج قاعدة لقسمة عدد على 0,1 ؛ 0,01 ؛ 0,001 ») ; critère مع 2 « إنجاز العمليّات الأربع في مجموعة الأعداد العشريّة » (p.153, 172, 182, 192) | déjà corrigé au §2 (thème décimaux) le 2026-09-23 ; **cohérence rétablie partout le 2026-10-19** (§3.3, §5, §6 contenaient encore « ⛔ ÷ par un décimal ») |
 | **× d'une fraction par un entier ; fraction d'une quantité, y compris décimale** (2/3 × 3,45 ; 5/3 × 36,75 ; 5/8 × 44) | **✅** | leçon 47 ص 136–138 ; leçon 57 ص 163–164 ; T3 corrigé p.195 (« 3 : (5 × 36,75) », « 8 : (5 × 44) ») | inchangé |
-| **× de deux fractions** (« كسر × كسر ») | **⛔ provisoire — question Q-1** | **pour** : le guide écrit « الجمع والطّرح **والضّرب** في مجموعة الأعداد الكسريّة » comme performance attendue et critère du T3 (p.153, 154, 192) ; **contre** : aucune leçon (47 = « ضرب عدد كسري في آخر **صحيح** »), aucune règle imprimée, aucun exercice du manuel, et l'épreuve du T3 qui **applique** ce critère n'emploie que fraction × entier/décimal (p.189, 195) ; la théorie maître p.45–47 (structure de corps) ne compte pas (règle) | ne pas générer de كسر × كسر tant que Q-1 n'est pas tranchée |
+| **× de deux fractions** (« كسر × كسر ») | **✅ — arbitrage M1 du propriétaire (2026-10-19)** | **pour** : le guide écrit « الجمع والطّرح **والضّرب** في مجموعة الأعداد الكسريّة » comme performance attendue et critère du T3 (p.153, 154, 192) ; **contre** : aucune leçon (47 = « ضرب عدد كسري في آخر **صحيح** »), aucune règle imprimée, aucun exercice du manuel, et l'épreuve du T3 qui **applique** ce critère n'emploie que fraction × entier/décimal (p.189, 195) ; la théorie maître p.45–47 (structure de corps) ne compte pas (règle) | enseigné au ch. `13-multiplication-fraction-entier` (cours + exercices), en plus de fraction × entier |
 | **÷ par une fraction** ; tout retrouvé « en divisant par a/b » | **⛔** | aucune leçon, aucun critère ; le manuel et les corrigés passent toujours par la **part unité** (L47 ex. 7–10 ; T3 corrigé p.196 : « 7 × (68080 : 5) ») | inchangé : retrouver le tout **par la part unité** ✅ |
 | **Somme des angles d'un triangle = 180°** | **◐ rencontrée, non enseignée — question Q-3** | requise pour **justifier** : ص 23 (L7 ex. 11, « أحسب أقن … أعلّل »), **ص 33** (L11 sit. 2 : 45° + 45° ⇒ triangle rectangle isocèle), ص 24–26 (L8 ex. 8, voie des 45°) ; guide p.93 (révision 7, **prérequis de 5ᵉ** : triangle à 120°, « أبحث عن بأج و بجأ », « أبحث عن بأهـ حسابيّا ») ; **aucune** leçon, règle imprimée ni critère | le contenu ne l'énonce pas et ne demande pas de **calculer** un angle par elle ; un exercice repris de ces pages se reformule (angle **mesuré**, ou donné) |
 | **Inégalité triangulaire / condition d'existence d'un triangle** | **✅ (constatée et formulée, sans le nom)** | **leçon 8** ص 24, ex. 1 (أستحضر : ج2 aligné, ج3 impossible — « أسجّل ملاحظاتي ») ; guide p.93, révision 7 ex. 5 (côtés 3, 5, 8 : « ما الشّرط الواجب توفّره للحصول على مثلّث ؟ ») ; مذكرة 8 sit. 1 (« يعيّن المتعلّم نقطة بعدها عن طرفي قطعة مستقيم معلوم », p.108) | formulation : « le plus grand côté doit être plus petit que la somme des deux autres » ; jamais le mot « متباينة » |
@@ -5959,7 +5959,7 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
   5. **Cercle/disque avec π ≈ 3,14** : **circonférence 2πr** et **aire du disque πr²** — _nouveau_ (la 5ème : éléments + ق=2ر seulement, **sans** πr²) (`21`).
   6. **Solides (cube, pavé droit) : aire latérale/totale** — _nouveau_ (premier contact 3D ; **surface, pas volume**) (`23`).
   7. **شبه المنحرف** (trapèze) ajouté aux quadrilatères usuels (`19`).
-- **Bornes hautes (vers les niveaux supérieurs)** — 🔧 **remplacées par la table du §3.2** (2026-10-19). Restent ⛔ : × et ÷ de deux fractions (× : question Q-1), **volume**, calcul littéral, nombres relatifs, Pythagore/Thalès, décomposition en facteurs premiers et PGCD formalisé, produit en croix comme règle. Ne sont **plus** ⛔ : la division par un décimal (✅), l'échelle (✅), la couronne (✅). La somme des angles = 180° est **◐ rencontrée, non enseignée** (Q-3).
+- **Bornes hautes (vers les niveaux supérieurs)** — 🔧 **remplacées par la table du §3.2** (2026-10-19). Restent ⛔ : ÷ de deux fractions (le × de deux fractions est ✅, arbitrage M1), **volume**, calcul littéral, nombres relatifs, Pythagore/Thalès, décomposition en facteurs premiers et PGCD formalisé, produit en croix comme règle. Ne sont **plus** ⛔ : la division par un décimal (✅), l'échelle (✅), la couronne (✅). La somme des angles = 180° est **◐ rencontrée, non enseignée** (Q-3).
 - **Outils géométriques** : المسطرة، الكوس، **المنقلة** (angles en degrés), **البركار** (cercle, disque, reports) — confirmés par la خارطة p.58.
 - **Structure annuelle** : **5 فترات** (planification fine + évaluations, خارطة p.58–59) imbriquées dans **3 ثلاثيّات** (volume horaire 160 س, p.64) ; **61 titres de leçons** au كتاب التلميذ (p.60), chaque période close par أتدرّب على حلّ المسائل → أوظّف مكتسباتي وأقيّمها → أتسلّى ; **حلّ المسائل** et **محطّات الإدماج الكبرى** très présents (la compétence = résoudre des situations-problèmes).
 - **Notation standard** : chiffres latins 0–9, **virgule décimale**, espace entre classes des grands nombres (1 250 000), signes +, −, ×, ÷, <, >, =, ∥, ⊥, °, π — lecture/écriture LTR, **même en arabe** (le guide lui-même : « 375/1000 = 3/8 », « (840×10)/100 = 84 د », « 1/1000000 » ; le contenu : « 2,4 × 3 = 7,2 », « π ≈ 3,14 »).
@@ -5999,9 +5999,9 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 | 23 | `22-durees` | الجمع والطّرح والضّرب على الأعداد الّتي تقيس الزّمن ؛ المدّة المنقضية ؛ ساعة الانطلاق والوصول — الدرس 5 | قيس | **ص 16-18** (L5) | L10 pb 2 (ص 32), L11 sit. 1 (ص 33), L12 (ص 34), L24 ex. 8 (ص 69), L52 pb 2, L55 pb 1, L56 pb 2, L60 pb 1 ; test d'orientation sit. 2 (p.158) ; **T1 sit. 2** (p.170) |
 | 24 | `23-solides-cube-pave` | متوازي المستطيلات والمكعّب : تعرّف، نشر، صنع ؛ المساحة الجانبيّة والجمليّة — الدرسان 54، 58 | هندسة | **ص 157-160** (L54) · **ص 165-168** (L58) | L59 pb 1 (ص 169), L60 pb 3 (ص 172), L61 (ص 173) ; théorie maître p.53–55 |
 
-### Leçons officielles sans chapitre — à signaler au LOT B (aucun chapitre créé ici)
+### Leçons officielles sans chapitre — arbitrage M4 (2026-10-19) : deux chapitres neufs au passage de contenu (« périmètre d'une figure composée », « diagrammes en bâtons »), codifiés au manifeste dans la PR de contenu
 
-| leçon / notion | pages | ce qui n'est enseigné nulle part | où le LOT B peut l'ancrer (proposition, pas une décision) |
+| leçon / notion | pages | ce qui n'est enseigné nulle part | où le LOT B peut l'ancrer (proposition du rédacteur, remplacée par l'arbitrage M4 : chapitre neuf) |
 | --- | --- | --- | --- |
 | **Leçon 24 « أحسب محيط شكل مركّب من الأشكال المدروسة »** (leçon de notion, rubriques complètes) | ص 67–69 ; critère مع 4 du T1 (« حساب قيس محيط شكل مكوّن منها », p.153) | le **contour d'une figure composée** : côtés extérieurs seulement, côté commun exclu, arc retranché = arc ajouté, contour fermé et plantations à intervalle, périmètre à l'échelle, arrondi par excès. Les morceaux existent (`18` triangle, `19` quadrilatères, `21` demi-cercle et « π × ق ÷ 2 + ق ») ; la méthode composée, non | une section « محيط شكل مركّب » dans `20-aires-polygones` (après « الشكل المركّب ») ou dans `21-cercle-disque` ; **non codifiée** au manifeste tant qu'aucun chapitre ne l'enseigne |
 | **Diagrammes en bâtons, graphiques, tableaux statistiques** (notion **évaluée**, sans leçon propre) | critère مع 1 du T2 (p.182) ; T2 sit. 1 (p.179, 183) ; ص 10–13, 53, 81, 102–103, 120 ; p.73–74, 102 | lire, **compléter** et **construire** un diagramme en bâtons (échelle de l'axe, effectifs ↔ pourcentages) | une section dans `14-proportionnalite-pourcentage` (pourcentages lus sur un diagramme) ; arbitrage Q-9 |
@@ -6023,7 +6023,7 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 ### 6.0 Statut de vérification (2026-10-19)
 
 - **Couverture** : guide `502603` **208/208 p.**, manuel `102609` **174/174 p.**, lues à l'image (registre `suivi/6eme-base.json`). Six lecteurs (L1–L6, lots du PLAN) + le rédacteur (p.100, p.160 du guide ; ص 10, 92, 109, 113 du manuel, pour trancher des doutes précis).
-- **R-7 : à faire.** Cette fiche n'a **pas** encore été relue par un agent indépendant contre les PDF ; l'ancien verdict R-7 (2026-09-19, sondage p.59–60, 9 corrections) ne couvre que la carte des leçons. Le sondage dirigé (méthode T-8) doit porter **à 100 %** sur : les encadrés et règles verbatim (§2 decies, §2 terdecies), le §4 et le manifeste, la table des errata (§6.1), les questions Q-1…Q-10, et les **valeurs des corrigés officiels** (§1 bis, §2 duodecies).
+- **R-7 2026-10-19, sondage 158 pages, 34 corrections.** Auditeur indépendant (contexte vierge), à l'image, contre les deux PDF — jamais contre les notes des lecteurs. **100 %** : les 61 titres (61 bandeaux du manuel + فهرس ص 174 + خارطة p.59) et le relevé des pages §2 ter ; le §4 et `manifest/6eme-base.json` ; les 66 errata (p.200–204) ; les quatre épreuves (p.153, 169–199 : énoncés, barèmes, corrigés) ; les règles institutionnalisées des مذكرات et la théorie maître p.42–55 ; les `[?]`/`[sic]` rencontrés ; les bornes §3.2 dont les pages ont été ouvertes. **Échantillon** : 79 pages du manuel (dont toutes les pages des lots L1/L2 de ce jour) et 41 pages du guide hors critique (≈ 35 % du reste). **2 erreurs substantielles** (sous le seuil d'escalade, zones relues en entier) : L24 ex. 8 (tour du circuit 968,28 m → **1052,28 m**, la base du petit carré était oubliée) et L34 pb 2 (diagramme lu sur les étiquettes parasites de l'erratum n° 44 : bâtons **900/750/600/500 et 650/500/450/300**). **32 de forme** : ordre des titres L7/L38, lettre ت de l'erratum n° 16, n° 43→44, faux `[sic]` « termes inversés » des corrigés T1/T3 (le guide écrit de droite à gauche), numérotation 1-2/2-2/3-2 du T2, « Nabeul » absent de ص 33, mot « المشترك » omis à la remarque 5 p.43, « أعتمد » → « أتعهّد مكتسباتي », 340 `[sic]` pour 840 p.51, cinq `[?]` levés (ص 63, ص 171, p.86, p.120, p.131), état de 12 errata établi (n° 3, 4, 5, 7, 8, 10, 25, 26, 47, 49, 50, 65). Aucun classement ✅/◐/⛔ du §3 n'est changé. Journal : `FableEtudes/campagnes/maths-6eme/audit-R7.md`.
 - **Ce qui a été contrôlé au fil de la rédaction** : toutes les valeurs imprimées « أثبت أنّ … » des lots L1/L2 sont retrouvées par le calcul (31338,530 · 201557,449 · 94496,4 · 415,300 · 984 · 9,3 ha · 25,056 · 336 · 680 km · 16 h 40) ; les clés officielles (حلول أتسلّى, corrigés des épreuves) concordent avec les « déduit » des lecteurs, sauf la question 2 de la leçon 12 (§6.4) ; deux incohérences du manuel sont **résolues par l'erratum** (L48 pb 1 : aire 0,18 ha ; L55 pb 2 : figure p.204 ⇒ 15 pots exactement) et une troisième **devient exploitable** (L31 ex. 12 : 2/5 ⇒ 440 livres).
 
 ### 6.1 Errata officiels du manuel (guide p.200–204) — table et application
@@ -6038,14 +6038,14 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 3 | 1 | 10 | « الجدول 1 الواد الأخير » | `5,4` | **`540`** | **corrigé** dans ce PDF (relu à l'image le 2026-10-19) | `05` |
 | 2 | 4 | 1 | 14 | الرابع | `أ ن ج` | **`أ ن ب`** | lu sous la forme corrigée par le lecteur (fiche §2 septies) | `16` |
-| 3 | 7 | 9 | 22 | 3 | « لقطعة » | **« القطعة »** | non vérifié (coquille de forme) | `17` |
-| 4 | 7 | 9 | 22 | (croix ✕ dans la colonne سطر) | « تمرينان مدمجان في تمرين واحد » | 9-أ ينتهي في « أعلّل إجابتي » ; 9-ب يبدأ من « أرسم على وز [?] » وينتهي في « منصّفها » `[?]` (fusion à séparer en deux exercices 9-أ / 9-ب) | fusion d'exercices : non vérifié (la fiche lit (a)→(d) d'un seul tenant) | `17` |
-| 5 | 7 | 10 | 23 | الأخير | « إلى لفترة » | **« إلى الفترة »** | non vérifié (coquille de forme) | `17` |
+| 3 | 7 | 9 | 22 | 3 | « لقطعة » | **« القطعة »** | **corrigé** dans ce PDF (« بالنّسبة إلى القطعة », R-7) | `17` |
+| 4 | 7 | 9 | 22 | (croix ✕ dans la colonne سطر) | « تمرينان مدمجان في تمرين واحد » | 9-أ ينتهي في « أعلّل إجابتي » ; 9-ب يبدأ من « أرسم على وز [?] » وينتهي في « منصّفها » `[?]` (fusion à séparer en deux exercices 9-أ / 9-ب) | **fautif** dans ce PDF (R-7 : ص 22 imprime « 9) -أ » seul, la 4ᵉ puce « أرسم على ورقة غير مسطّرة … منصّفها » fait partie du même exercice) | `17` |
+| 5 | 7 | 10 | 23 | الأخير | « إلى لفترة » | **« إلى الفترة »** | **corrigé** dans ce PDF (R-7) | `17` |
 | 6 | 11 | 1 | 33 | الثالث | « ذهاب فقط أو إيّاب » | **« ذهابا فقط أو إيّابا فقط »** | lu sous la forme corrigée par le lecteur L1 | intégr. (`22`, `17`, `18`, `19`) |
-| 7 | 13 | 2 | 35 | الثاني | « 30 بيضة » | **« 30 بيضة دون أن يبقى منها شيء »** | fiche lit les alvéoles 6, 12, 30 ; phrase non vérifiée | `06` |
-| 8 | 13 | 2 | **5** `[sic]` (= 35 ?) | « جدول الواد الثالث » | « عدد ناقص بالجدول » | **« إضافة العدد 30 »** | fiche lit « 30 » | `06` |
+| 7 | 13 | 2 | 35 | الثاني | « 30 بيضة » | **« 30 بيضة دون أن يبقى منها شيء »** | **fautif** dans ce PDF (R-7 : ص 35 imprime « … 6 أو 12 أو 30 بيضة. » sans « دون أن يبقى منها شيء ») | `06` |
+| 8 | 13 | 2 | **5** `[sic]` (= 35 ?) | « جدول الواد الثالث » | « عدد ناقص بالجدول » | **« إضافة العدد 30 »** | **corrigé** dans ce PDF (R-7 : la colonne 30 / 25 est imprimée) | `06` |
 | 9 | 13 | 4 | 36 | الثاني | `5 و 6 و 8` | **`4 و 6 و 8`** | lu sous la forme corrigée par le lecteur (4, 6, 8) | `06` |
-| 10 | 13 | 10 | 37 | الأوّل | « يمكن عدّه » | **« يمكن عدّها »** | non vérifié (coquille de forme) | `06` |
+| 10 | 13 | 10 | 37 | الأوّل | « يمكن عدّه » | **« يمكن عدّها »** | ni l'un ni l'autre : ce PDF imprime « يمكن عدّ خرفان قطيع » (R-7) — forme sans incidence | `06` |
 | 11 | 14 | 2 | 38 | الأوّل | « منهدس » | **« مهندس »** | non vérifié (coquille de forme) | `14` |
 | 12 | 15 | 1 | 42 | الرّابع | « بالغراد 5 » | **« بالغراد 50 »** | lu sous la forme corrigée par le lecteur (« بالغراد 50 », 220 dpi) | `19` |
 | 13 | 16 | 2 | 46 | الثالث | « أقساطا شهريّة » | **« أقساطا شهرية متساوية »** | lu sous la forme corrigée par le lecteur L1 | intégr. (`14`, `20`) |
@@ -6060,8 +6060,8 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 | 22 | 20 | 11 | 62 | الثالث | « دائريّا لها يتدلّى » | **« دائريّا يتدلّى »** | non vérifié (coquille de forme) | `21` |
 | 23 | 21 | 1 | 63 | « الثاني بعد الجدول » | « لعدد الأغنام من » | **« لعدد من الأغنام »** | lu sous la forme corrigée par le lecteur L1 | intégr. (`21`, `14`, `06`, `20`) |
 | 24 | 21 | 2 | 62 [sic ? : p.63–64 est la leçon 21 ; « 62 » imprimé] | « الجدول : الواد الأفقي الأخير » | « قيس مساحة كلّ من القطع (1) و (2) و (3) غير مذكورة : » | **« قيس مساحة القطعة (1) 400 م² ; (2) 396 م² ; (3) 192 م² »** | **corrigé** dans ce PDF (L1 lit les trois aires) | intégr. (`21`, `14`, `06`, `20`) |
-| 25 | 25 | 2 | 70 | السّابع | « قسمته 5 » | **« قسمته على 5 »** | non vérifié (coquille de forme) | `07` |
-| 26 | 25 | 2 | 70 | الثّامن | « قسمته 5 » | **« قسمته على 5 »** | non vérifié (coquille de forme) | `07` |
+| 25 | 25 | 2 | 70 | السّابع | « قسمته 5 » | **« قسمته على 5 »** | **corrigé** dans ce PDF (« قسمته على 5 », R-7) | `07` |
+| 26 | 25 | 2 | 70 | الثّامن | « قسمته 5 » | **« قسمته على 5 »** | **corrigé** dans ce PDF (« قسمته على 5 », R-7) | `07` |
 | 27 | 25 | 6 | 71 | الرّابع | « بين 000 001 » | **« بين 100 000 »** `[?]` (le texte fautif est une graphie « 000 001 » ; la correction « 100 000 ») | lu sous la forme corrigée par le lecteur (100 000) | `07` |
 | 28 | 25 | 11 | 72 | الثّاني | « محصور بين 1290 و13101 » | **« محصور بين 1290 و1310 »** | lu sous la forme corrigée par le lecteur (1310) | `07` |
 | 29 | 28 | 2 | 81 | 14 | « أنا قول » | **« أنا أقول »** | non vérifié (coquille de forme) | `09` |
@@ -6082,10 +6082,10 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 | 44 | 34 | 2 | 102 | المخطّط البيانيّ | « أعداد في غير مواقعها على محور الترتيب » | **« حذف : 350 − 450 − 550 − 650 − 750 »** (les graduations 350, 450, 550, 650, 750 sont à supprimer de l'axe des ordonnées) | **fautif** dans ce PDF : graduations parasites lues par L2 | intégr. (`14`, `20`) |
 | 45 | 35 | 2 | 105 | الأخير | « 2 عدد » | **« عدد 2 »** | non vérifié (coquille de forme) | intégr. (`14`, `20`) |
 | 46 | 36 | 3 | 106 | الأوّل | « الأحذية » | **« الأحجية »** | lu sous la forme corrigée par le lecteur L2 | jeux (`20`, `14`) |
-| 47 | 37 | 2 | 107 | السّادس | « الصّورة أخفت كلمة : يلي » | **« صرّحوا بما يلي »** | non vérifié (coquille de forme) | `14` |
+| 47 | 37 | 2 | 107 | السّادس | « الصّورة أخفت كلمة : يلي » | **« صرّحوا بما يلي »** | **corrigé** dans ce PDF (« صرّحوا بما يلي », R-7) | `14` |
 | 48 | 37 | 7 | 109 | « الجدول 2 الواد 4 » | `145,800` | **`184,680`** | **corrigé** dans ce PDF (relu à l'image le 2026-10-19) : 184,680 | `14` |
-| 49 | 37 | 8 | 110 | الخامس | « بحساب بـ 275 د » | **« بحساب 275 د »** | non vérifié (coquille de forme) | `14` |
-| 50 | 37 | 9 | 110 | الرّابع | `192` | **`192 د`** | non vérifié (la fiche calcule avec 192 d) | `14` |
+| 49 | 37 | 8 | 110 | الخامس | « بحساب بـ 275 د » | **« بحساب 275 د »** | **corrigé** dans ce PDF (« بحساب 275 د », R-7) | `14` |
+| 50 | 37 | 9 | 110 | الرّابع | `192` | **`192 د`** | **corrigé** dans ce PDF (« بحساب 192 د », R-7) | `14` |
 | 51 | 38 | 1 | 111 | الثالث | « لبناء منزل » | **« لبناء منزل مربّع الشّكل »** | lu sous la forme corrigée par le lecteur (« maison carrée ») | `20` |
 | 52 | 38 | 3 | 112 | « الجدول 1 الواد 4 (د) » | « طول القاعدة بالمتر.… » | **« طول القاعدة بالمتر 20,8 »** | lu sous la forme corrigée par le lecteur (20,8) | `20` |
 | 53 | 38 | 4 | 112 | « الجدول 2 الواد 4 (د) » | « المساحة بالم² : 1 500 » | **« المساحة بالم² : 15000 »** | lu sous la forme corrigée par le lecteur (15 000) | `20` |
@@ -6100,7 +6100,7 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 | 62 | 54 | 10 | 159 | الثاني | « مكعّب واحد » | **« مكعّبا واحدا »** | non vérifié (coquille de forme) | `23` |
 | 63 | 55 | 2 | 161 | الرّسم | « خطأ في مستوى الرّسم » | **« الرّسم المقدّم بالصّفحة الموالية »** (→ p.204) | **fautif** dans ce PDF : figure ص 161 ≠ figure p.204 (le recalcul tombe juste avec p.204) | intégr. (`20`, `21`) |
 | 64 | 56 | 1 | 162 | 11 | « الرّباعي `ز أ د هـ ك` » | **« الرّباعي `أ د هـ ك` »** | lu sous la forme corrigée par le lecteur L2 | intégr. (`20`, `19`) |
-| 65 | 60 | 1 | 171 | 15 | « صفحة 28 » | **« على كرّاس الرّياضيّات ص 28 »** | non vérifié : L2 lit « صفحة 31 » `[?]` | intégr. (`20`, `21`, `15`) |
+| 65 | 60 | 1 | 171 | 15 | « صفحة 28 » | **« على كرّاس الرّياضيّات ص 28 »** | 🔧 R-7 (relu à l'image) : ce PDF imprime « … المسألة عدد 1 صفحة 31 على كرّاس الرّياضيات » — mention du كرّاس déjà présente, **page 31** (ni 28 fautif, ni 28 corrigé) ; renvoi au كرّاس, sans incidence sur le contenu | intégr. (`20`, `21`, `15`) |
 | 66 | 61 | 4 | 173 | الأوّل | « من أركانا » | **« من أركان »** | **fautif** dans ce PDF : « أركانا » lu par L2 | jeux (`23`) |
 
 ### 6.2 Questions au propriétaire (ce que la règle du §3 ne tranche pas)
@@ -6118,6 +6118,8 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 | **Q-9** | **Diagrammes en bâtons** (critère مع 1 du T2) : quel chapitre les porte au LOT B ? | critère d'évaluation officiel (p.182) ; T2 sit. 1 | aucun chapitre ; aucune leçon | ✅ notion, sans chapitre (§4) |
 | **Q-10** | **Nombres ≥ 10⁹** : garder la classe des milliards ? | le contenu `01` la nomme | aucun nombre ≥ 10⁹ dans les 382 pages | vocabulaire seulement |
 | **Q-E1** | **Errata qui ne correspondent pas à ce PDF** (n° 54 : erratum « 2 500 → 2000 », PDF « 2400 ») : quelle valeur fait foi ? | l'erratum est officiel | 2400 est géométriquement cohérent, 2000 non ; l'erratum vise une autre édition | la valeur du PDF quand elle est cohérente (2400) |
+
+> **Arbitrages du propriétaire (2026-10-19)** — consignés dans `FableEtudes/campagnes/maths-6eme/PLAN.md` § 3 : **M1** (Q-1) × de deux fractions **au programme** (ch. `13`) ; **M2** (Q-2) couronne **enseignée** (ch. `21`) ; **M3** (Q-3) somme des angles = 180° **rencontrée, non enseignée** ; **M4** (Q-9 + leçon 24) **deux chapitres neufs** (périmètre d'une figure composée ; diagrammes en bâtons). Q-4 à Q-8, Q-10, Q-E1 : défauts ci-dessus, révisables.
 
 ### 6.3 Erreurs de l'ancienne fiche corrigées le 2026-10-19
 
@@ -6149,7 +6151,7 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 - **ص 65 (L22 sit. 2)** : **incohérence imprimée** — « معدّل كتلة الخليط … محصور بين 5,41 غ و 5,42 غ » : avec 6 cercles (somme 197,82 cm) on trouve ≈ 1,547 g/cm ; 5,414 s'obtient avec 56,52 cm (un seul cercle de diamètre 18 cm). Non tranché ; « أودية / بواده » (sic).
 - **ص 67–69 (L24)** : le côté commun rectangle/carré (ex. 2), la base de la porte (ex. 6), le triangle équilatéral (ex. 7), la hauteur 84 du rectangle inférieur (ex. 8) et les côtés des losanges (ex. 9) sont **déduits** de la figure `[?]`.
 - **ص 78 (L27 pb 1)** : **incohérence imprimée** — « المساحة الجمليّة للأحواض بالم² 1357 » alors que les cotes donnent 744,5 m². Non tranché.
-- **ص 102 (L34)** : diagramme, valeurs des bâtons non imprimées (lecture graphique) ; étiquettes 350–750 à supprimer (erratum n° 44 — 🔧 R-7 : la fiche écrivait « n° 43 »).
+- **ص 102 (L34)** : diagramme, valeurs des bâtons non imprimées (lecture graphique : rouge 900/750/600/500, bleu 650/500/450/300 sur la graduation régulière — corrigé au R-7) ; étiquettes 350–750 à supprimer (erratum n° 44 — 🔧 R-7 : la fiche écrivait « n° 43 »).
 - **ص 104 (L35 pb 1)** : 56 250 : 500 = 112,5 jours (non entier, arrondi non dit) `[?]`.
 - **ص 120 (L40 ex. 14)** : « دسل » (décilitre `[?]`) ; bénéfice 3,3375 د non exprimable en millimes `[?]`.
 - **ص 130 (L43 pb 2)** : **phrase inachevée** « أثبت أنّ عرض المسلك الغابيّ المقتطع من الأرض. » (valeur à établir absente) ; le quintal (ق) n'est jamais défini.
@@ -6164,10 +6166,11 @@ Définition (verbatim) : « **مقام العدد الكسريّ يدلّ على
 **Guide `502603` (lots L3–L6)**
 
 - **Notation** : le guide mélange **point** et **virgule** décimaux (« 5.13 », « 238.46 », « 80.1 », « 0.5 » vs « 8,780 », « 50,25 ») — la fiche impose la virgule ; opérations imprimées en ordre RTL (« 39.8 - 63.752 » = 63,752 − 39,8).
-- **Révisions (p.71–103)** : p.71 tableau de l'activité 1 **imprimé vide**, unité de « 304 » absente, « 217 صم » ; **p.72 blanche** (items 2 ب, 3, 4 de la révision 1 absents du PDF) ; p.73 « 13 آر و8 آر », « 5 صم و7 دسم و4 », « 7,5º » (Barma 1996) ; p.75 « 8,698 ط » ≠ 8 ط + 6 ق + 89 كغ = 8,689 ط, « 07 ل » ; p.77 nombre de blancs ; p.78 « أقدّ » (أقلّ) ; p.81 abréviations ص م / ق / ط et alignements des opérations à trous ; p.83 « الفراعات » ; p.84 ex. 4 répète l'ex. 2, « البكون » `[?]` ; p.85 « 62 يوما في الشّهر » ; p.86 sens de lecture « a : b » de la colonne ب `[?]` ; p.88 ex. 9 (« 4 متر عن عرضيها و6م عن طوليها ») ambigu ; p.90 ex. 6 « المتر المربّع » pour un rayon ; p.92 figure point-à-point (séries) `[?]` ; p.94 « دأ », « 35 دسم » ; p.95 cadre de l'ex. 2 ; **p.96 ex. 5 incohérent** (« 5413 م² = 2 … و 54 … و 13 … » ; « 13017 دكم² = 240 … و 15 … ») ; p.96 ex. 7 dimensions « بالهم 350 و 508 » (aires énormes) ; p.97 « 250 م² » pour une longueur ; **p.98 ex. 2 : aucun des trois tableaux n'est proportionnel** d'après la lecture (une valeur-piège par tableau, ou coquilles) ; p.102 valeurs manuscrites 4,16 · 5,06 · 3,22 · 5,52 · 1,84 `[?]`.
-- **مذكرات** : p.131 dernière ligne du bloc التدرّب coupée ; la formule de l'aire du disque n'est pas imprimée (« تسجيل قاعدة ») ; « أسلوب لامارتينيار / لامارتيناز / (PLM) » (disposition de la division posée) ; p.120 « الهرم » (pour le diagramme des familles), somme imprimée en deux morceaux.
+- **Révisions (p.71–103)** : p.71 tableau de l'activité 1 **imprimé vide**, unité de « 304 » absente, « 217 صم » ; **p.72 blanche** (items 2 ب, 3, 4 de la révision 1 absents du PDF) ; p.73 « 13 آر و8 آر », « 5 صم و7 دسم و4 », « 7,5º » (Barma 1996) ; p.75 « 8,698 ط » ≠ 8 ط + 6 ق + 89 كغ = 8,689 ط, « 07 ل » ; p.77 nombre de blancs ; p.78 « أقدّ » (أقلّ) ; p.81 abréviations ص م / ق / ط et alignements des opérations à trous ; p.83 « الفراعات » ; p.84 ex. 4 répète l'ex. 2, « البكون » `[?]` ; p.85 « 62 يوما في الشّهر » ; p.86 sens de lecture « a : b » : RTL partout (levé au R-7) ; p.88 ex. 9 (« 4 متر عن عرضيها و6م عن طوليها ») ambigu ; p.90 ex. 6 « المتر المربّع » pour un rayon ; p.92 figure point-à-point (séries) `[?]` ; p.94 « دأ », « 35 دسم » ; p.95 cadre de l'ex. 2 ; **p.96 ex. 5 incohérent** (« 5413 م² = 2 … و 54 … و 13 … » ; « 13017 دكم² = 240 … و 15 … ») ; p.96 ex. 7 dimensions « بالهم 350 و 508 » (aires énormes) ; p.97 « 250 م² » pour une longueur ; **p.98 ex. 2 : aucun des trois tableaux n'est proportionnel** d'après la lecture (une valeur-piège par tableau, ou coquilles) ; p.102 valeurs manuscrites 4,16 · 5,06 · 3,22 · 5,52 · 1,84 `[?]`.
+- **مذكرات** : p.131 bloc التدرّب complet (le `[?]` « coupé » est levé au R-7) ; la formule de l'aire du disque n'est pas imprimée (« تسجيل قاعدة ») ; « أسلوب لامارتينيار / لامارتيناز / (PLM) » (disposition de la division posée) ; p.120 « الهرم » (pour le diagramme des familles), somme imprimée en deux morceaux.
 - **حلول أتسلّى** : 23-2 tableau (reste 9 pour 105) ; 36-2 « 100/100 − 15/100 = 95/100 » (pour 5/100) ; 36-4 « 1 = 35 − 36 » ; 45-2 lettres des sommets `[?]` ; 45-5 nombre de termes `[?]` ; 61-2 formules de couches `[?]` ; 61-4 fin non imprimée.
-- **Épreuves** : « سبتمبر . 200 » (année tronquée, p.157, 167) ; test p.165 « 7,0560 آر / هـآ » (zéro final superflu) ; T1 corrigé p.173–174 : soustractions imprimées à l'envers (« 638,25 = 342,750 − 981 »), « 891 » pour 981, « 196,200 = 5 : 981 » ; T2 p.179 axe « عدد التّلاميذ » pour des pourcentages et barres à 35/40 vs 21/24 mm au corrigé p.183 ; p.180 virgules des cotes (6,5 / 3,9 / 7,5) `[?]` ; p.185 « 22,5 = 500 × 4,5 » sans conversion ; p.186 lettres ك ع `[?]` (la « numérotation 3-2 / 2-3 » est levée par le R-7 : p.180 et p.186 impriment « 3-2 ») ; T3 p.195–196 « 1500 − 69580 », « 60808 » pour 68080, « 68080 − 95312 » ; alignement des sous-cases des barèmes p.171, 181, 191 `[?]` ; T1 p.153 : intitulés des critères 3 et 4 permutés par rapport à leur contenu.
+- **Épreuves** : « سبتمبر . 200 » (année tronquée, p.157, 167) ; test p.165 « 7,0560 آر / هـآ » (zéro final superflu) ; T1 corrigé p.173–174 : « 891 » pour 981 (les expressions « 638,25 = 342,750 − 981 », « 196,200 = 5 : 981 » se lisent de droite à gauche, sans coquille — R-7) ; T2 p.179 axe « عدد التّلاميذ » pour des pourcentages et barres à 35/40 vs 21/24 mm au corrigé p.183 ; p.180 virgules des cotes (6,5 / 3,9 / 7,5) `[?]` ; p.185 « 22,5 = 500 × 4,5 » sans conversion ; p.186 lettres ك ع `[?]` (la « numérotation 3-2 / 2-3 » est levée par le R-7 : p.180 et p.186 impriment « 3-2 ») ; T3 p.195 « 60808 » pour 68080 (« 1500 − 69580 », « 68080 − 95312 » se lisent de droite à gauche — R-7) ; alignement des sous-cases des barèmes p.171, 181, 191 `[?]` ; T1 p.153 : intitulés des critères 3 et 4 permutés par rapport à leur contenu.
+- **Théorie maître p.51** (relue au R-7) : la مسألة (1) imprime « ثلاّجة سعرها الحقيقيّ بالدّينار **340** » alors que tout le calcul porte sur **840** (« (10 × 840)/100 = 84 د », « 840 − 84 = 756 د ») : `[sic]` 340 pour 840. Les p.44–51 sont résumées (pas transcrites ligne à ligne) aux thèmes du §2.
 - **Errata** : « الصفحة 5 » pour 35 (n° 8) ; « 62 » pour 64 (n° 24) ; « 121 » pour 161 (p.204) ; deux lignes dans une case (n° 21) ; « لملء » (n° 35).
 - **فهرس du guide (p.206)** : sections annoncées p.6 / p.38 / p.54, décalées de 4 à 6 pages par rapport aux pages réelles (la numérotation de la fiche, vérifiée à l'image, prime).
 - **Compétence** « إدماجا » (p.58) / « إنماء » (مذكرات) — p.58 non relue pour trancher.
