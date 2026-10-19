@@ -39,3 +39,31 @@ Appliqués avec les textes exacts de l'auditeur (audit-B4.md) : C-1 (07/08 03 q5
 Non appliqués (jugés facultatifs, sans effet sur les gates) : m-9 (calibrage d4 des défis), m-11 (test des mots-outils), m-15 (planche SVG de BD), copies tolérées m-14.
 
 Contrôles sur le corpus réel : `content:check` vert (french-6eme : 8 chapitres, 240 questions) ; `content:qa -- --subject french-6eme` vert ; `content:tranche … --fresh --strict-longest` : clé la plus longue 0/51, 0 paire proche, 0 recul de patron, 3 gabarits inter-chapitres avec le 06 (lieu/temps, acceptables) ; `prettier --check` vert ; rendu `renderLesson`/`renderSummary` : 0 `_` et 0 `*` dans le texte rendu des deux cours et des deux résumés (test jetable supprimé).
+
+## Missions du gisement (lot M4)
+Fichiers (`content/french-6eme/`), 144 questions au total, `chapter.json` : ligne « Sujets officiels du concours… » ajoutée aux deux chapitres, ligne « Calibré sur des devoirs publics… » au 08.
+- 07 : `06-exams-2012-2018-quand-dire-et-ecrire` (m025, d2, 7 q) ; `07-exams-2010-2026-adjectifs-au-feminin` (m026, d2, 6 q) ; `08-exam-2022-lecture-lucile-sur-les-planches` (m027, d2, 9 q) ; `09-exams-2008-2022-recit-suite-ou-realisation-scene` (m028, d3, 9 q).
+- 08 : `06-exams-2009-2025-complements-tableau-enrichir-deplacer` (m029, d2, 10 q) ; `07-exams-2008-2026-vouloir-et-pouvoir` (m030, d2, 10 q) ; `08-exams-2012-2024-passe-compose-avec-etre` (m031, d2, 7 q) ; `09-exam-2025-lecture-pyramide-maya` (m032, d2, 8 q) ; `10-devoir-ecrire-une-lettre-lointaine` (m033, d3, 8 q, nom corrigé par le pilote).
+
+Écarts à la carte :
+- Nombre de questions : m026 (6 au lieu de 8), m031 (7 au lieu de 8), m032 (8 au lieu de 9) : les items à deux blancs ou deux questions jumelles (leak par l'ordre d'émission) sont fondus en une question.
+- Les tableaux à quatre colonnes sont des `matching` : aucune étiquette possible (m025 q1, m029 q1 à 6). Le piège de ces lignes est porté par les QCM voisins.
+- m033 : l'ordering des parties de la lettre est remplacé par l'ordre des paragraphes du corps (les parties sont déjà demandées par 07/04-defi q3, « ne pas redemander »). Salle blanche respectée (carte seule, contextes inventés) ; `content:gisement:controle` : 0 plage de 8 mots, 0 exercice source repris.
+- Production (m028) : questions fermées sur la préparation ; pour 2008 le contexte du récit est donné en une phrase.
+
+Notions données dans l'énoncé (non enseignées au chapitre) :
+- E6 : « au féminin, l'adjectif s'écrit nulle » (m026 q1) ; participes couvert et emballée donnés (ch08, m026 q5-q6) ;
+- radical pourr- du futur de pouvoir (m030 q7) ; participe voulu (m030 q10) ;
+- temps imparfait de « allais » et passé simple de « suivit » signalés comme non évalués (m029 tableaux 2019 et 2015) ;
+- orthographe imprimée « apparait / disparait » (2025) citée telle quelle.
+
+Items écartés : aucun de la carte ; C11#8 et C01#7 restent écartés (E7, plan). Option « avoir + accord » évitée partout (F5) : « ont fait », « n'avons pas trouvé » sans accord.
+
+Doutes pour l'auditeur :
+- m029 tableau 2019 : « les mains dans les poches » classé complément de manière (réponse du sujet, construction absolue) ; 2009 « un peu angoissés » idem.
+- m027 q4-q5 et m032 q1, q8 : questions d'opinion converties en QCM d'arguments ancrés dans le texte ; vérifier qu'une seule réponse est défendable.
+- m032 q7 : le contraire de « disparait » est « apparait » ; « surgit » n'est volontairement pas proposé.
+- Paires proches (Jaccard ≥ 0,45, 19 couples) : toutes dans une même mission de langue (tableaux, formes d'un même verbe, deux blancs d'une même réécriture), données officielles différentes : exercices parallèles voulus, non réécrits.
+- Un seul rouge de `content:qa` : `02/07-exams-2009-2026-imperatif-fais-parler` Q11 (explication qui désigne une option par son rang), hors de mon périmètre.
+
+Contrôles : `content:check` vert ; `content:qa` : seule erreur ci-dessus (chapitre 02) ; `content:tranche … --fresh --strict-longest` : clé la plus longue 0/110, positions 27/24/25/24 % ; `prettier --check` vert.
