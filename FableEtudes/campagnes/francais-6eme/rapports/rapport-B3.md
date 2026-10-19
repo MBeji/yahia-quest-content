@@ -21,3 +21,16 @@ Tous les correctifs de `audits/audit-B3.md` sont appliqués avec les textes de l
 Écarts : M-13 est étiqueté « 05-entrainement » dans l'audit mais décrit les questions du **06** (régime / appariement) : appliqué au 06-entrainement q1 ; le 05 garde « recycler ». m-10 (étalonnage d2 des deux questions du défi) non appliqué : elles restent d3 pour ne pas casser la rampe 2-2-3-3-3-3 du défi.
 
 Contrôles sur le corpus réel : `content:check` OK ; `content:qa` 0 erreur ; `tranche --fresh --strict-longest` : clé la plus longue 0 %, patron de notion 0 en recul, 3 paires proches voulues (questions de défi sur un même texte) ; prettier OK ; rendu Chromium 360 px : aucun mot coupé dans les tableaux, pas de défilement horizontal, figure de Tulmac lisible (328 px).
+
+## Missions du gisement (lot M3)
+
+**Fichiers** (10, tous contrôlés : `content:check` OK, `content:qa` 0 erreur, `tranche --fresh --strict-longest` clé la plus longue 0/127, prettier OK, `content:gisement:controle` du devoir : 0 plage de 8 mots).
+- `05` : `06-exams-2008-2026-complements-essentiels-ou-non` (8 q.), `07-exams-2008-2023-prendre-et-mettre` (8), `08-exams-2012-2025-accord-du-verbe-avec-son-sujet` (8), `09-exam-2024-lecture-une-fin-tragique` (9), `10-exams-2012-2024-recit-emotions-et-description` (8, d3).
+- `06` : `06-exams-2008-2026-aller-et-faire` (11), `07-exams-2009-2025-accord-de-ladjectif` (9), `08-exam-2023-lecture-un-combat-victorieux` (9), `09-exams-2023-2025-recit-reactions-et-gardien` (8, d3), `10-devoir-corriger-les-erreurs` (7, d3, salle blanche, carte seule).
+- `chapter.json` : ligne « Sujets officiels du concours… » ajoutée aux deux chapitres, ligne « Calibré sur des devoirs publics… » au 06.
+
+**Notions données dans l'énoncé ou ajoutées au cours** : le présent de *prendre / mettre* (05) et d'*aller / faire* (06) n'étaient pas au cours : une puce « Présent » est ajoutée au `cours.md` et au `resume.md` de chaque chapitre (les items 2023, 2010, 2010 conj. 3 du concours les testent). Donnés dans l'énoncé : *long → longue*, *premier → première*, *cher → chère* (06), la règle « un garçon et une fille réunis : masculin pluriel » (2017), *pensif* (2022), *allons* quand la cible est *prenons* (2025).
+
+**Items écartés ou fusionnés** : 2025 conj. 1 *allons* (verbe du 06, donné dans les options) ; 2013 gram. 3 (« chère » et « tu nous manques » fusionnés en une question, 9 au lieu de 10 q. en m021) ; m024 : 7 q. au lieu de 8 (les trois « son/sont » sont deux questions à deux blancs).
+
+**Doutes** : (1) 39 paires proches signalées par `tranche`, pour la plupart deux questions sur deux verbes d'une même phrase officielle (consigne de la carte : un QCM par verbe) ; (2) 2024 q. « quelle phrase prouve » : les indices sont des phrases du texte citées (≤ 2 phrases par question) ; (3) m015 q. 2 (« Pablo nous rejoint ») : *nous* est un complément essentiel, F1 le tolère comme support ; (4) étiquettes : aucun id neuf ; des distracteurs de lecture restent muets faute d'id (indice qui ne correspond pas au sentiment, confusion de deux moments).
