@@ -1,0 +1,229 @@
+{
+  "title": "📝 Corriger les erreurs : son ou sont, est ou et, accords ⭐⭐⭐",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Un élève a écrit : « La classe et propre et le sol est brillant. » Quelle correction est juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La classe est propre et le sol est brillant."
+        },
+        {
+          "id": "b",
+          "text": "La classe et propre et le sol et brillant.",
+          "misconceptionTag": "fr.homophone.et-est-confondus"
+        },
+        {
+          "id": "c",
+          "text": "La classe est propre est le sol est brillant.",
+          "misconceptionTag": "fr.homophone.et-est-confondus"
+        },
+        {
+          "id": "d",
+          "text": "La classe et propre est le sol et brillant.",
+          "misconceptionTag": "fr.homophone.et-est-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour distinguer « est » et « et », on essaie de mettre la phrase au futur : « la classe sera propre » est possible, c'est le verbe être, donc « est ». Entre « propre » et « le sol », on peut dire « et aussi » : c'est la conjonction « et ». Les autres corrections échangent les deux mots au mauvais endroit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève a écrit : « Ma sœur est content et son frère sont grand. » Quelle correction est juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ma sœur est contente et son frère sont grand.",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        },
+        {
+          "id": "b",
+          "text": "Ma sœur est contente et son frère est grand."
+        },
+        {
+          "id": "c",
+          "text": "Ma sœur est content et son frère est grand.",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "d",
+          "text": "Ma sœur est contente et son frère sont grands.",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Ma sœur » est féminin : l'adjectif prend un e, contente. « Son frère » est un seul garçon : le verbe être reste au singulier, est, et « grand » reste au masculin singulier. Les corrections qui gardent « sont » avec « son frère » ou qui laissent « content » ne respectent pas ces accords.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "« Les deux élèves ___ fatiguées et ___ professeur est content. » Quelle correction est juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "son – sont",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "b",
+          "text": "sont – sont",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "c",
+          "text": "sont – son"
+        },
+        {
+          "id": "d",
+          "text": "son – son",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le premier blanc est un verbe : on peut dire « l'élève est fatiguée », donc c'est le verbe être, « sont » avec « les deux élèves ». Le second blanc est un déterminant : on peut dire « mon professeur » ou « ton professeur », donc « son ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "« Les élèves ___ en classe et ___ maître leur lit une histoire. » Quelle réponse complète les deux blancs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "son – sont",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "b",
+          "text": "sont – son"
+        },
+        {
+          "id": "c",
+          "text": "sont – sont",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "d",
+          "text": "son – son",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le premier blanc est le verbe être : « l'élève est » (sont avec plusieurs élèves). Le second est un déterminant devant le nom « maître » : on peut dire « mon maître » ou « ton maître », donc « son ».",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Un élève a écrit ces phrases. Quels mots sont fautifs ? Phrase 1 : « Léa et heureuse. » Phrase 2 : « Son frère sont grand. » Phrase 3 : « Ma sœur est content. » Phrase 4 : « Ses amis sont gentils. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "« et » dans la phrase 1"
+        },
+        {
+          "id": "b",
+          "text": "« sont » dans la phrase 2"
+        },
+        {
+          "id": "c",
+          "text": "« content » dans la phrase 3"
+        },
+        {
+          "id": "d",
+          "text": "« sont » dans la phrase 4"
+        },
+        {
+          "id": "e",
+          "text": "« grand » dans la phrase 2"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c"]
+      },
+      "explanation": "Dans la phrase 1, « et » doit devenir « est » (Léa est heureuse). Dans la phrase 2, « son frère » est un seul garçon : on écrit « est ». Dans la phrase 3, l'adjectif doit prendre le féminin : contente. Dans la phrase 4, « sont » est juste, car il y a plusieurs amis ; « grand » est juste aussi, car « son frère » est masculin singulier.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève a écrit : « La petite fille est joyeux et ses chaussures sont rouge. » Quelle correction est juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La petite fille est joyeuxe et ses chaussures sont rouges.",
+          "misconceptionTag": "fr.accord.feminin-adjectif-mal-forme"
+        },
+        {
+          "id": "b",
+          "text": "La petite fille est joyeuse et ses chaussures sont rouge.",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "La petite fille est joyeux et ses chaussures sont rouges.",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "d",
+          "text": "La petite fille est joyeuse et ses chaussures sont rouges."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Fille » est féminin singulier : joyeux devient joyeuse. « Chaussures » est féminin pluriel : rouge prend un s, rouges. Les autres corrections oublient le féminin, le pluriel ou forment mal le féminin.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève a écrit : « Les élèves de la classe ramasse les papiers et le maître et content. » Quelle correction est juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les élèves de la classe ramassent les papiers et le maître est content."
+        },
+        {
+          "id": "b",
+          "text": "Les élèves de la classe ramassent les papiers et le maître et content.",
+          "misconceptionTag": "fr.homophone.et-est-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Les élèves de la classe ramassons les papiers et le maître est content.",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        },
+        {
+          "id": "d",
+          "text": "Les élèves de la classe ramasse les papiers et le maître est content."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le sujet est « les élèves » : le verbe est au pluriel, ramassent. Dans « le maître et content », on essaie le futur : « le maître sera content » est possible, c'est le verbe être : est. La correction qui garde « et » ne distingue pas le verbe être de la conjonction.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "« Nour range ___ cartable et ses cahiers ___ sur la table. » Quelle réponse complète les deux blancs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "sont – son",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "b",
+          "text": "son – son",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "c",
+          "text": "sont – sont",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "d",
+          "text": "son – sont"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le premier blanc est un déterminant devant « cartable » : on peut dire « mon cartable » ou « ton cartable », donc « son ». Le second est un verbe : « le cahier est sur la table » est possible, donc « sont » avec « ses cahiers ».",
+      "difficulty": 3
+    }
+  ]
+}

@@ -185,7 +185,7 @@
 - Ne pas redemander : `06/quiz#5`, `06/02-boss#5`, `06/02-boss#6`, `06/04-defi#6`, `06/05-entrainement#6`
 - Note : Archétype « répliques + passage descriptif » : correspond à la section du cours `06` « Raconter avec des répliques et un passage descriptif ». C02#11 relève du thème 08 (voyage) mais l'archétype décide du placement (choix du pilote : production regroupée par archétype).
 
-#### m024 → `exercices/10-devoir-devoir-corriger-les-erreurs.json` · d3 boss 120/30 · 8 questions · régime **devoir** (salle blanche)
+#### m024 → `exercices/10-devoir-corriger-les-erreurs.json` · d3 boss 120/30 · 8 questions · régime **devoir** (salle blanche)
 
 - Titre : « 📝 Corriger les erreurs : son ou sont, est ou et, accords ⭐⭐⭐ »
 - Registre : id `D04#4` ; sources `D04#4, D04#3`

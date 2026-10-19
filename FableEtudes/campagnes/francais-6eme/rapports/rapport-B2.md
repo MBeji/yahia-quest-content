@@ -36,3 +36,34 @@ Contrôles relancés sur le corpus réel (8 chapitres) : content:check OK (1066 
 - M-12 (04 entrainement q5) → « amical » muet, « amicalement » remplacé par « entraide » (voisin-du-meme-champ), explication.
 - Mineurs : 03 rev q1 option d étiquetée ; 03 rev q2 données du cahier rétablies (« blanc », fin de phrase) ; passé composé « avoir et être » (cours 03 l.67) ; « l'adjectif épithète… le » ; puce verbe introducteur ajoutée ; 03 defi q6 « oublient ou déplacent » ; 03 entrainement q6 → « honteux » / « paraissent » sans acceptedAnswers ; 04 cours vérification « Mon frère range toujours… » ; « La mère crie » ; cas-limite du participe ; étiquettes TEMPS sur « remplissez » et « choisissent » ; RECIT sur boss q4 option b ; « Au carrefour, » dans la variante p.46 ; doubles espaces avant « (verbe… ) » supprimés.
 - Non fait (hors de mon périmètre) : mineur 03-9, ajout des modules 03 et 04 pour `fr.lexique.sens-figure-lu-au-propre` dans `vocab-french-6eme.json` / `map-vocab.md` (fichiers de l'autre agent) ; mineur 03-8 toléré par l'auditeur ; mineur 04-8 (données raccourcies des reprises p.51) accepté tel quel.
+
+## Missions du gisement (lot M2)
+
+Fichiers (6 missions, 38 questions) :
+- ch.03 : `06-exams-2010-2023-epithete-attribut-et-etre` (d2, 5 q), `07-exams-2016-2017-recit-faire-accepter` (d3, 7 q), `08-devoir-lire-ordre-titre-portrait` (d2, 8 q, devoir en salle blanche).
+- ch.04 : `06-exams-2018-2024-phrase-negative` (d2, 5 q), `07-exams-2020-2025-verbes-comme-finir` (d2, 6 q), `08-exams-2015-2021-recit-entraide` (d3, 7 q).
+- `chapter.json` : ligne `sources[]` des examens ajoutée aux deux chapitres, ligne « devoirs publics » ajoutée au 03.
+- Contrôles : content:check OK, content:qa 0 erreur 0 avertissement, tranche (--fresh --strict-longest) clé la plus longue 0/72, paires proches 0, gabarits 0 ; prettier OK ; `content:gisement:controle` sur le devoir : 0 plage de 8 mots.
+- Correction annexe : l'intitulé de section du cours 04 « Les verbes comme finir au passé composé et au futur » recoupait mot pour mot une source web (garde anti-verbatim) ; devenu « … : passé composé et futur ».
+
+Items écartés ou réduits :
+- C11#8 (2016, « La veille, vous … tristes ») écarté (E7).
+- m009 : 5 questions au lieu de 8 (item 2016 conj. 2 écarté ; le tableau 2016 gram. 1a fusionné en un seul matching parce que les deux QCM attribut/épithète étaient des quasi-doublons). Pour 2023 le second verbe (durera) est donné ; la 2e question porte sur le nom du temps de « J'ai été ».
+- m012 : la variante 2018 avec « plus » a été retirée (quasi-doublon à 0,79 de la précédente) ; 5 questions.
+- m013 : 6 questions au lieu de 8 (le 2e QCM de 2021 aurait redemandé `04/quiz#3`) ; les formes en -er (ébauché, grimpé, laissera) sont données.
+- m014 : le multi « éléments exigés » de 2015 retiré (doublon de celui de la mission 03) ; 7 questions.
+- Hors scope non ciblés : accord des participes, pronoms compléments (« nous » dans « La peur nous broie » reste devant le verbe, dit dans l'énoncé).
+
+Notions données dans l'énoncé (non enseignées par le cours) :
+- « demeure » est un verbe d'état comme rester (m009, 2020) ;
+- « toujours » veut dire « à chaque fois » (m012, 2021) ;
+- l'article est « de » dans toutes les réponses (m012, 2019) ;
+- titre, portrait et ordre du texte vs ordre des faits : définis dans l'énoncé des questions du devoir (m011) ;
+- les cinq temps du récit sont rappelés dans m014 (cours 04).
+
+Doutes pour l'auditeur :
+1. Les questions 2023 « à quel temps est conjugué J'ai été » et la variante 2021 avec « encore » ne sont pas des items officiels : elles sont signalées « d'après » dans l'énoncé.
+2. Dans m012 (2021 q2), « plus » reste un distracteur à surveiller malgré la précision sur « toujours ».
+3. m010 : les distracteurs étiquetés `fr.production.hors-sujet` (répliques hors sujet) sont éliminables à la lecture de la situation ; c'est voulu (lire la consigne), mais l'auditeur peut juger la difficulté faible.
+4. m011 : les deux `ordering` du devoir sont jumeaux (ordre du texte puis ordre des faits) ; seule la seconde, chronologique, est proche de `fr.lecture.ordre-chronologique-non-respecte` (non posable sur un ordering).
+5. Le devoir `m011` a des distracteurs muets (noms et verbes à la place de l'adjectif) faute d'étiquette exacte.

@@ -116,6 +116,7 @@ Dans chaque ligne, ce qui change avec la personne est l'auxiliaire (passé compo
 
 - Des verbes qui se conjuguent **comme prendre** : _apprendre_, _comprendre_, _surprendre_, _reprendre_ (_j'ai appris_, _il comprendra_).
 - Des verbes qui se conjuguent **comme mettre** : _permettre_, _promettre_, _remettre_ (_il a permis_, _elle remettra_).
+- Au **présent** : _je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent_ ; _je mets, tu mets, il met, nous mettons, vous mettez, ils mettent_. Les dérivés suivent : _elle reprend_, _il permet_.
 - Cas-limite : _il prend_ (présent) et _il prendra_ (futur) se ressemblent ; seul le **-ra** annonce que l'action n'a pas encore eu lieu.
 
 :::

@@ -117,6 +117,7 @@ Pour _aller_, la fin du participe change avec le sujet ; pour _faire_, on écrit
 
 - _Faire_ : toujours **avoir** au passé composé ; participe **fait**.
 - _Aller_ : toujours **être** au passé composé ; participe **allé**, **allée**, **allés**, **allées**.
+- Au **présent** : _je vais, tu vas, il va, nous allons, vous allez, ils vont_ ; _je fais, tu fais, il fait, nous faisons, vous faites, ils font_.
 - Cas-limite : au futur, on n'entend plus l'infinitif : _j'irai_ vient de _aller_, _je ferai_ vient de _faire_.
 
 :::

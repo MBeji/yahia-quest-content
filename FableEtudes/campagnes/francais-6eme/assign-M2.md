@@ -43,7 +43,7 @@
 - Ne pas redemander : `03/quiz#5`, `03/02-boss#4`, `03/03-revision#4`, `03/04-defi#6`
 - Note : Archétype « faire accepter l'autre, avec dialogue » : c'est ici, au `03` (« Faire parler les personnages : le dialogue »), que la ponctuation du dialogue est préparée. Les autres récits à dialogue sont rangés par archétype aux `02`, `04`, `05`, `06`, `07`. Questions fermées : aucune rédaction demandée.
 
-#### m011 → `exercices/08-devoir-devoir-lire-ordre-titre-portrait.json` · d2 practice 75/15 · 8 questions · régime **devoir** (salle blanche)
+#### m011 → `exercices/08-devoir-lire-ordre-titre-portrait.json` · d2 practice 75/15 · 8 questions · régime **devoir** (salle blanche)
 
 - Titre : « 📝 Lire un récit : ordre des événements, titre et portrait ⭐⭐ »
 - Registre : id `D05#5` ; sources `D05#5, D05#7, D05#3`

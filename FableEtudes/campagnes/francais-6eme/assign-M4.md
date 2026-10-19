@@ -170,7 +170,7 @@
 - Ne pas redemander : `08/04-defi#5`, `08/04-defi#6`, `08/05-entrainement#3`
 - Note : Compréhension d'un texte récent (R2). Texte intégral : PDF officiel `/tmp/claude-0/fr6g/src/2025-francais.pdf` (sha256 au registre) ; citation utile : « Il fera bientôt nuit, dit-il en chuchotant. » Orthographe imprimée « apparait / disparait » (sans circonflexe, orthographe rectifiée de 2025) : l'auteur cite telle quelle. Les extraits du `08` défi (#5, #6) sont des mini-récits de l'auteur : autre geste.
 
-#### m033 → `exercices/10-devoir-devoir-ecrire-une-lettre-lointaine.json` · d3 boss 120/30 · 8 questions · régime **devoir** (salle blanche)
+#### m033 → `exercices/10-devoir-ecrire-une-lettre-lointaine.json` · d3 boss 120/30 · 8 questions · régime **devoir** (salle blanche)
 
 - Titre : « 📝 Écrire une lettre à un ami lointain : préparer ⭐⭐⭐ »
 - Registre : id `D08#1` ; sources `D08#1`

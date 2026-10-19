@@ -60,7 +60,7 @@ _Toujours_ se transforme en _ne… jamais_ ; le verbe conjugué est _range_, don
 _Encore_ devient _ne… plus_, _toujours_ devient _ne… jamais_ : deux mots autour du verbe, jamais un seul.
 :::
 
-## 🛠️ Les verbes comme finir au passé composé et au futur
+## 🛠️ Les verbes comme finir : passé composé et futur
 
 Hier, Maya et Sami ont fini leurs devoirs tôt et ont choisi un jeu. Demain, ils choisiront un autre jeu et le finiront ensemble.
 
