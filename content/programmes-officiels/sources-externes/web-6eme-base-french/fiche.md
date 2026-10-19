@@ -41,10 +41,34 @@ plus… vers le collège », guide `521612`, manuel de lecture `121614`, cahier 
 fichier-classe `521616`). Rien n'y est redit ici ; la date d'entrée en vigueur et ce qui, dans les
 sujets les plus anciens, sort du scope se constatent à la lecture (étage G2), comme pour l'anglais.
 
-## 3. Carte et écart — à la lecture
+## 3. Carte et écart — écrits le 2026-10-19 (étages G3 et G4, 238 lignes : 185 d'examen, 53 de devoirs)
 
-Écrits après la lecture des documents (étages G2 à G4) : carte des lignes d'examen et de devoirs par
-chapitre, hors-programme, archétypes, écart avec le contenu publié, plan des missions.
+Lignes validées par `content:gisement:lignes` (238 valides, 0 fautive). Aucune phrase, aucun nombre, aucun contexte d'un devoir n'entre ici : la carte des devoirs dit des familles de gestes.
+
+**Format de l'épreuve** (17 sessions, 2008 à 2026) : une heure, 20 points, un texte narratif ; Compréhension 6 + Grammaire 3 + Conjugaison 3 + Production écrite 8. Barème par question imprimé seulement en 2024, 2022, 2021 et 2020. Pas d'orthographe-dictée.
+
+**Chapitres portés par les lignes d'examen** (une ligne peut en porter plusieurs) :
+
+| chapitre | 2021–2026 | 2008–2020 | devoirs | ce que testent les sujets |
+| --- | ---: | ---: | ---: | --- |
+| `01-travailler-pour-sepanouir` | 12 | 31 | 8 | le temps de la phrase (présent, passé composé, futur) avec un repère de temps ; verbes en -er et verbes hors liste ; pronoms personnels ; infinitif après préposition (une fois) ; nature des mots dans les devoirs ; aucun texte d'examen, aucune consigne de production |
+| `02-communiquer-avec-les-autres` | 15 | 22 | 22 | démonstratifs et possessifs (changer le nom, changer la personne), **impératif d'un ordre rapporté (onze lignes)**, pluriel des noms ; textes 2026, 2020, 2013, 2008 (écrans, Internet, portable) ; quatre lectures de devoir sur la communication |
+| `03-accepter-les-autres` | 5 | 18 | 10 | épithète / attribut (tableau), être au futur et au passé composé, accord des adjectifs épithètes ; peu de langue, trois textes anciens (2017, 2016, 2009) et deux productions « faire accepter » |
+| `04-sentraider-pour-reussir` | 13 | 20 | 5 | négation ne… plus / ne… jamais (huit lignes), verbes comme finir au passé composé et au futur, récits d'entraide (2021, 2020, 2019, 2015) ; « et / est » jamais testé |
+| `05-sauver-la-nature` | 19 | 27 | 13 | complément essentiel / non essentiel (relever, supprimer, déplacer), **prendre et mettre** (le verbe le plus fréquent), accord du verbe avec son sujet ; textes 2024, 2018, 2012 ; deux devoirs de lecture sur la nature |
+| `06-etre-en-forme` | 16 | 24 | 1 | aller et faire (présent, passé composé, futur), accord de l'adjectif avec le nom ; le complément de lieu seulement dans un tableau ; texte 2023 ; **aucune lettre en examen** |
+| `07-profiter-du-temps-libre` | 11 | 18 | 1 | complément de temps (en tableau), consonne doublée (nul/nulle, bon/bonne), dire/lire/écrire presque jamais (deux lignes) ; texte 2022 ; trois « suites » de scène (2010, 2009, 2008) |
+| `08-autres-modes-de-vie` | 13 | 23 | 1 | complément de manière (en tableau), vouloir/pouvoir, passé composé avec être ; texte 2025 ; une lettre à un ami lointain dans les devoirs |
+
+**Hors programme** : 11 lignes d'examen sur 185 portent un jeton `HP:` (aucune n'est `HP:` seule) ; sept lignes de langue sont entièrement ou principalement hors guide (`HP:negation-personne`, `HP:pc-pronominal`, `HP:cod`, `HP:voix-passive`, `HP:discours-indirect`, `HP:pronom-complement`). Les sujets 2008–2026 restent conformes à la fiche : aucune session n'est ancienne au sens fort.
+
+**Archétypes d'examen** : compréhension (67 lignes : relevé et justification, synonymes puis contraires dans chaque session, avis ou hypothèse dans chaque session), langue (101 : réécriture sous consigne « remplace X par Y », tableau de fonctions, ordre rapporté → impératif, changement de temps), production (17 : récit d'au moins huit phrases avec dialogue ou répliques).
+
+**Devoirs (vague 1)** : 53 lignes, 2 portent un jeton `HP:` (4 %). Mesure de la règle des 30 % : 28 % de lignes à signature neuve (mesure mixte), 35 % en strict, 19 % au niveau gabarit. Gestes absents des examens : appariement, remise en ordre, titre, nature des mots, son/sont, correction d'erreurs, lettre. Les chapitres 06, 07 et 08 n'y apparaissent presque pas (une ligne chacun). `D04`, `D05` et `D06` ont la même main : `D06` est écarté (plafond de deux par auteur). **Pas de vague 2** (décision du pilote).
+
+**Écart avec le contenu existant** : le patron (8 chapitres × 36 questions, écrit de zéro et audité) n'a **aucune** phrase officielle, aucune réécriture sous consigne d'examen, aucun tableau de fonctions à quatre colonnes, aucun texte à lire (hors mini-récits de l'auteur), aucune consigne de rédaction : c'est ce que le gisement apporte.
+
+**Plan** : [`PLAN-gisement.md`](../../../../FableEtudes/campagnes/francais-6eme/PLAN-gisement.md) et `plan-missions-v1.json` — **27 missions d'examen et 6 de devoirs (278 questions)**, au statut `planifiee` dans `gisement.json` ; chaque mission nomme les questions existantes à ne pas redemander. Compréhension : cinq textes (2026, 2025, 2024, 2023, 2022). Production : six archétypes, les 17 consignes reprises. Langue : 94 lignes sur 101. Devoirs : onze lignes sur 53.
 
 ## 4. Échantillon — fixé le 2026-10-19, avant l'ouverture de tout document
 
