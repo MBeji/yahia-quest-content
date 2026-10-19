@@ -53,3 +53,6 @@ Source officielle, lue pour ce pilote au régime T2′.
 - Le français suit le même schéma (`/<année>/francais.pdf`, séance du mardi 23 juin 2026, 1ʳᵉ
   séance) : 2011 et 2014 répondent 404 (ajout du 2026-10-19). Couple qui l'utilise :
   [`web-6eme-base-french`](../web-6eme-base-french/fiche.md).
+- Les maths suivent le même schéma (`/<année>/math.pdf`, 2 pages par session) : 2011 et 2014
+  répondent 404, sur `6web` comme sur `www.echoexam` (ajout du 2026-10-19). Couple qui
+  l'utilise : [`web-6eme-base-math`](../web-6eme-base-math/fiche.md).
