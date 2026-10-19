@@ -1,0 +1,225 @@
+{
+  "title": "📝 Lire un petit texte : relier, énumérer, rédiger ⭐⭐",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Lis : « Chez les Ben Salem, le téléphone sonne souvent. Nour, la grande sœur, envoie un message à sa cousine. Walid, le petit frère, appelle son oncle pour lui dire bonjour. Leur mère écrit un courriel à la maîtresse. » Relie chaque personnage à l'énoncé qui le décrit.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Nour"
+        },
+        {
+          "id": "l2",
+          "text": "Walid"
+        },
+        {
+          "id": "l3",
+          "text": "La mère"
+        },
+        {
+          "id": "r1",
+          "text": "est le petit frère"
+        },
+        {
+          "id": "r2",
+          "text": "écrit à la maîtresse"
+        },
+        {
+          "id": "r3",
+          "text": "est la grande sœur"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r3"],
+          ["l2", "r1"],
+          ["l3", "r2"]
+        ]
+      },
+      "explanation": "Le texte présente Nour comme la grande sœur, Walid comme le petit frère, et dit que leur mère écrit à la maîtresse. Chaque énoncé décrit un seul personnage.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Dans le texte, Nour envoie un message à sa cousine, Walid appelle son oncle et leur mère écrit un courriel à la maîtresse. Relie chaque personnage à l'action qu'il accomplit.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Nour"
+        },
+        {
+          "id": "l2",
+          "text": "Walid"
+        },
+        {
+          "id": "l3",
+          "text": "La mère"
+        },
+        {
+          "id": "r1",
+          "text": "écrit un courriel"
+        },
+        {
+          "id": "r2",
+          "text": "envoie un message à sa cousine"
+        },
+        {
+          "id": "r3",
+          "text": "appelle son oncle"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r3"],
+          ["l3", "r1"]
+        ]
+      },
+      "explanation": "Nour envoie un message à sa cousine, Walid appelle son oncle et leur mère écrit un courriel à la maîtresse : chaque personnage a sa propre action.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Lis : « Chez les Ben Salem, le téléphone sonne souvent. Nour, la grande sœur, envoie un message à sa cousine. Walid, le petit frère, appelle son oncle pour lui dire bonjour. Leur mère écrit un courriel à la maîtresse. » Combien de personnes le texte nomme-t-il par leur prénom ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une"
+        },
+        {
+          "id": "b",
+          "text": "Deux"
+        },
+        {
+          "id": "c",
+          "text": "Trois"
+        },
+        {
+          "id": "d",
+          "text": "Quatre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seuls Nour et Walid sont nommés par leur prénom. La mère, la cousine, l'oncle et la maîtresse sont désignés par ce qu'ils sont, et « Ben Salem » est le nom de la famille, pas un prénom.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lis : « Le téléphone portable sert à appeler, à envoyer des messages et à prendre des photos. On peut aussi écouter de la musique avec lui. Il ne sert pas à faire cuire le riz. » Quels usages du téléphone portable sont cités dans le texte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "appeler"
+        },
+        {
+          "id": "b",
+          "text": "envoyer des messages"
+        },
+        {
+          "id": "c",
+          "text": "prendre des photos"
+        },
+        {
+          "id": "d",
+          "text": "écouter de la musique"
+        },
+        {
+          "id": "e",
+          "text": "faire cuire le riz"
+        },
+        {
+          "id": "f",
+          "text": "lire le journal"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c", "d"]
+      },
+      "explanation": "Le texte cite quatre usages : appeler, envoyer des messages, prendre des photos et écouter de la musique. Il dit au contraire que le portable ne sert pas à faire cuire le riz, et il ne parle pas de lire le journal.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un texte dit que le portable sert à appeler, à envoyer des messages, à prendre des photos et à écouter de la musique. Quel paragraphe rédigé enchaîne ces usages en phrases ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Appeler, messages, photos, musique : portable. Appeler, messages, photos, musique, portable, appeler, messages.",
+          "misconceptionTag": "fr.lecture.reponse-non-redigee"
+        },
+        {
+          "id": "b",
+          "text": "Portable appeler. Messages photos et musique, le portable. Appeler messages photos musique. Portable photos messages.",
+          "misconceptionTag": "fr.lecture.reponse-non-redigee"
+        },
+        {
+          "id": "c",
+          "text": "Le portable sert à appeler ; hier, il a plu sur la ville et les rues sont mouillées, les voitures roulent lentement dans les grandes avenues.",
+          "misconceptionTag": "fr.production.hors-sujet"
+        },
+        {
+          "id": "d",
+          "text": "Le portable sert d'abord à appeler. Il permet aussi d'envoyer des messages et de prendre des photos. Enfin, on y écoute de la musique."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un paragraphe rédigé relie les usages par de vraies phrases (d'abord, aussi, enfin). Des mots juxtaposés ne forment pas de phrases, et une phrase sur la pluie sort du sujet.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Tu écris un paragraphe sur les usages du téléphone portable. Quelle phrase peut l'ouvrir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hier, j'ai perdu mon cahier de mathématiques dans la cour.",
+          "misconceptionTag": "fr.production.hors-sujet"
+        },
+        {
+          "id": "b",
+          "text": "Le téléphone portable est utile de plusieurs façons."
+        },
+        {
+          "id": "c",
+          "text": "Les journaux sont vendus au kiosque du quartier chaque matin.",
+          "misconceptionTag": "fr.production.hors-sujet"
+        },
+        {
+          "id": "d",
+          "text": "Pour finir, merci de votre attention à tous.",
+          "misconceptionTag": "fr.recit.partie-du-recit-confondue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une phrase d'ouverture annonce le sujet du paragraphe : le portable et ses usages. Parler d'un cahier perdu ou de journaux sort du sujet, et « pour finir, merci » est une phrase de conclusion.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un paragraphe sur les usages du téléphone portable, quelle phrase sort du sujet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avec lui, on peut envoyer un message à un ami très loin."
+        },
+        {
+          "id": "b",
+          "text": "Mon cousin habite dans une maison près de la mer."
+        },
+        {
+          "id": "c",
+          "text": "Il permet aussi de prendre des photos."
+        },
+        {
+          "id": "d",
+          "text": "On l'utilise aussi pour appeler toute sa famille le soir."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Trois phrases parlent d'un usage du portable : envoyer un message, prendre des photos, appeler. La phrase sur la maison du cousin ne dit rien du portable : elle sort du sujet du paragraphe.",
+      "difficulty": 2
+    }
+  ]
+}

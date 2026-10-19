@@ -1,0 +1,185 @@
+{
+  "title": "⭐ Exercice : Montrer et posséder",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "code": "121615P00",
+    "pages": "19",
+    "items": ["ex. 1 p. 19", "ex. 2 p. 19", "ex. 3 p. 19"]
+  },
+  "questions": [
+    {
+      "prompt": "Complète la ligne : ce vaisseau → … fusée → … fusées → … vaisseaux. Quelle suite de déterminants démonstratifs convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "cette – cette – ces",
+          "misconceptionTag": "fr.det.demonstratif-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "cette – ces – ces"
+        },
+        {
+          "id": "c",
+          "text": "cet – ces – ces",
+          "misconceptionTag": "fr.det.demonstratif-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "ce – ces – ces",
+          "misconceptionTag": "fr.det.demonstratif-mal-choisi"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Fusée » est un nom féminin singulier : cette fusée. Au pluriel, « fusées » et « vaisseaux » prennent la même forme, ces. Les formes ce et cet s'emploient seulement devant un nom masculin singulier.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Relie chaque déterminant démonstratif au nom devant lequel il s'écrit.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "ce"
+        },
+        {
+          "id": "l2",
+          "text": "cet"
+        },
+        {
+          "id": "l3",
+          "text": "cette"
+        },
+        {
+          "id": "l4",
+          "text": "ces"
+        },
+        {
+          "id": "r1",
+          "text": "bicyclette"
+        },
+        {
+          "id": "r2",
+          "text": "vélo"
+        },
+        {
+          "id": "r3",
+          "text": "trains"
+        },
+        {
+          "id": "r4",
+          "text": "avion"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r4"],
+          ["l3", "r1"],
+          ["l4", "r3"]
+        ]
+      },
+      "explanation": "« Vélo » est masculin et commence par une consonne : ce vélo. « Avion » est masculin et commence par une voyelle : cet avion. « Bicyclette » est féminin : cette bicyclette. « Trains » est pluriel : ces trains.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Julien a une disquette. Complète : « C'est la disquette de Julien. » devient « C'est … disquette. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "son",
+          "misconceptionTag": "fr.pronom.possessif-accorde-au-possesseur"
+        },
+        {
+          "id": "b",
+          "text": "ses"
+        },
+        {
+          "id": "c",
+          "text": "leur",
+          "misconceptionTag": "fr.det.son-leur-confondus"
+        },
+        {
+          "id": "d",
+          "text": "sa"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le possessif s'accorde avec le nom qui suit : « disquette » est féminin singulier, donc « sa ». On écrit « son » en pensant au genre de Julien, mais ce n'est pas lui qui commande l'accord ; « leur » demande plusieurs propriétaires.",
+      "difficulty": 1
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Remplace le complément par un déterminant possessif : « Ce sont les magazines de Claude et de Guy. » devient « Ce sont … magazines. »",
+      "answerKey": {
+        "text": "leurs"
+      },
+      "expectedMistakes": [
+        {
+          "text": "ses",
+          "misconceptionTag": "fr.det.son-leur-confondus"
+        }
+      ],
+      "explanation": "Deux garçons possèdent plusieurs magazines : le possessif correspond à plusieurs propriétaires (eux) et à plusieurs objets, et il prend la marque du pluriel.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels groupes nominaux contiennent un déterminant démonstratif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ces écrans"
+        },
+        {
+          "id": "b",
+          "text": "mes écrans"
+        },
+        {
+          "id": "c",
+          "text": "cette souris"
+        },
+        {
+          "id": "d",
+          "text": "sa souris"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c"]
+      },
+      "explanation": "« Ces » et « cette » servent à montrer ce dont on parle : ce sont des démonstratifs. « Mes » et « sa » disent à qui appartiennent les écrans et la souris : ce sont des possessifs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Regarde … hôpital, il est tout neuf ! »",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ce",
+          "misconceptionTag": "fr.det.demonstratif-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "Cet"
+        },
+        {
+          "id": "c",
+          "text": "Cette",
+          "misconceptionTag": "fr.det.demonstratif-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "Ces",
+          "misconceptionTag": "fr.det.demonstratif-mal-choisi"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Hôpital » est un nom masculin singulier qui commence par un h muet, qui compte comme une voyelle : on écrit « cet hôpital ». « Ce » ne s'emploie que devant une consonne.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "title": "⚔️ Boss ⭐⭐⭐ : Les ordres de l'impératif",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "code": "121615P00",
+    "pages": "23",
+    "items": ["notice p. 23"]
+  },
+  "questions": [
+    {
+      "prompt": "Tu donnes un ordre à un ami : « … le titre de ton article ! » Quelle forme de « choisir » complète l'ordre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choisi",
+          "misconceptionTag": "fr.conj.imperatif-s-2e-personne"
+        },
+        {
+          "id": "b",
+          "text": "Choisis"
+        },
+        {
+          "id": "c",
+          "text": "Tu choisis",
+          "misconceptionTag": "fr.conj.imperatif-avec-sujet"
+        },
+        {
+          "id": "d",
+          "text": "Choisissez"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour parler à un seul ami, on emploie la 2e personne du singulier de l'impératif, sans sujet. Un verbe en -ir prend un s : choisis. « Choisi » oublie ce s, « tu choisis » garde le sujet et s'entend comme un présent, et « choisissez » s'adresse à plusieurs personnes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète l'ordre donné à un ami : « … une information sur Internet. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cherche"
+        },
+        {
+          "id": "b",
+          "text": "Cherches",
+          "misconceptionTag": "fr.conj.imperatif-s-2e-personne"
+        },
+        {
+          "id": "c",
+          "text": "Tu cherches",
+          "misconceptionTag": "fr.conj.imperatif-avec-sujet"
+        },
+        {
+          "id": "d",
+          "text": "Cherchons"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chercher est un verbe en -er : à l'impératif, à la 2e personne du singulier, il n'a pas de s (cherche). Écrire « cherches » ou « tu cherches » est la forme du présent. « Cherchons » invite plusieurs personnes dont celui qui parle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Tu dis à ton ami d'aller au club d'informatique. Quelle phrase est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vas au club d'informatique.",
+          "misconceptionTag": "fr.conj.imperatif-s-2e-personne"
+        },
+        {
+          "id": "b",
+          "text": "Tu va au club d'informatique.",
+          "misconceptionTag": "fr.conj.imperatif-avec-sujet"
+        },
+        {
+          "id": "c",
+          "text": "Va au club d'informatique."
+        },
+        {
+          "id": "d",
+          "text": "Allez au club d'informatique."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Aller suit la règle des verbes en -er : à l'impératif, à la 2e personne du singulier, il s'écrit « va », sans s. « Vas » ajoute un s, « tu va » garde le sujet, et « allez » s'adresse à plusieurs personnes.",
+      "difficulty": 3
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Écris le verbe « faire » à l'impératif, à la 2e personne du pluriel : « … une recherche ! »",
+      "answerKey": {
+        "text": "faites"
+      },
+      "expectedMistakes": [
+        {
+          "text": "faisez",
+          "misconceptionTag": "fr.conj.forme-irreguliere-regularisee"
+        }
+      ],
+      "explanation": "Ce verbe est irrégulier : à cette personne, il ne prend pas la terminaison -ez des autres verbes. C'est une forme à apprendre.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les consignes de la notice « Mon porte-revues ».",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloue la sangle en faisant une boucle à chaque repère."
+        },
+        {
+          "id": "b",
+          "text": "Vernis la planchette."
+        },
+        {
+          "id": "c",
+          "text": "Suspends le porte-revues par la boucle de la sangle."
+        },
+        {
+          "id": "d",
+          "text": "Marque les repères à partir de ce clou."
+        },
+        {
+          "id": "e",
+          "text": "Fixe la sangle en plantant le premier clou en haut de la planchette."
+        }
+      ],
+      "answerKey": {
+        "order": ["b", "e", "d", "a", "c"]
+      },
+      "explanation": "On prépare d'abord la planchette (vernis), puis on fixe la sangle avec le premier clou. Les repères se marquent à partir de ce clou, et on cloue la sangle ensuite, une boucle à chaque repère. Le porte-revues n'est suspendu qu'à la fin, quand il est terminé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Tu proposes à ton ami de faire une recherche avec toi. Que dis-tu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faisons une recherche."
+        },
+        {
+          "id": "b",
+          "text": "Nous faisons une recherche.",
+          "misconceptionTag": "fr.conj.imperatif-avec-sujet"
+        },
+        {
+          "id": "c",
+          "text": "Faites une recherche."
+        },
+        {
+          "id": "d",
+          "text": "Fais une recherche."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour inviter à agir ensemble, on emploie la 1re personne du pluriel de l'impératif, sans pronom : faisons. « Nous faisons » est un présent avec sujet ; « faites » s'adresse à vous, « fais » à une seule personne qui n'inclut pas celui qui parle.",
+      "difficulty": 3
+    }
+  ]
+}
