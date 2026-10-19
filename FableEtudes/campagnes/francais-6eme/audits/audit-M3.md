@@ -183,3 +183,49 @@ L'énoncé donne « long devient longue ». Sans ce rappel, la règle du cours (
 - 6 mineurs.
 
 Tous les correctifs sont des réécritures locales. Les missions changent de taille : m015 passe de 8 à 6 questions et m018 de 9 à 8, soit 82 questions au lieu de 85. Une re-vérification ciblée suffira.
+
+## 7. Re-vérification (2026-10-19, commit `20ebf50b` comparé à `c106bfb2`)
+
+**Méthode.**
+- J'ai re-résolu à l'aveugle les **42 questions modifiées**, avant de lire leurs clés. Toutes les clés sont conformes à mes réponses : 0 clé fausse et 0 double réponse sur les 82 questions.
+- J'ai relu chaque explication modifiée.
+- J'ai passé un script sur toutes les paires de chaque mission : la clé d'une question est-elle visible dans l'énoncé, les options ou l'explication d'une autre ?
+
+**Gates.**
+- `content:check` ✓ (498 questions) ; `content:qa` ✓.
+- `tranche --fresh --strict-longest` (05, 06) : 0/124 clé strictement la plus longue, 38 paires proches.
+- `gisement:controle` du devoir : 0 plage ≥ 8 mots, 0 donnée commune.
+
+| Défaut | État |
+| --- | --- |
+| C-1 vouvoiement (m021 q8) | ✓ |
+| M-1 formes jumelles « … » (m016, m017, m020) | ✓ |
+| M-2 *longue* (m021 q1, q2) | ✓ |
+| M-3 m018 (q1, sentiments 2×2, *effrayer*, *grimpe*) | ✓, 8 questions |
+| M-4 « Pablo nous rejoint » (F1) | ✓ supprimée |
+| M-5 m023 q6, q8 | ✓. **Résidu r-1** : mon propre texte d'explication de q6 (« « supplie » convient aux enfants qui demandent une faveur ») livre la clé de q7. Remplacer par : `La réplique est un ordre : le verbe « ordonne » dit comment le gardien parle. « Demande » annonce une question, « murmure » une parole à voix basse, et « supplie » se dit d'une prière insistante, pas d'un ordre furieux.` |
+| M-6 devoir q4, q5 | ✓ |
+| M-7 m022 q1 | ✓ |
+| M-8 m015 q3, q6, q7 | ✓, 6 questions |
+| M-9 explications sans rang ni option absente | ✓ |
+| M-10 multi « que doit contenir ton récit » | ✓ |
+| m-1, m-3, m-4, m-6 | ✓ (m-2, m-5 : acceptés) |
+
+**Les 38 paires proches.**
+- **Aucune fuite entre questions jumelles**, à une exception près, r-1 ci-dessus.
+  - Les formes jumelles sont masquées par « … » dans les énoncés, et les explications ne citent que leur propre forme.
+  - La paire m015 q5/q6 (2008, a/b officiels) ne livre plus la clé mot pour mot. Une déduction reste possible par la notion (GV = verbe + complément essentiel) : c'est l'exercice officiel lui-même, je l'accepte.
+- Le script relève aussi des formes communes à **deux sessions différentes** :
+  - « fera » (m020 q1 et q3) ;
+  - « a fait » (q2, et la phrase officielle 2018 de q3) ;
+  - « iront » (q5, q6, q8) ;
+  - « a pris » (m016 q5, q6) ;
+  - les quatre combinaisons son/sont du devoir (q3, q8).
+
+  Ce sont des questions parallèles sur la même notion, avec d'autres données, et non des jumelles : je les accepte.
+
+**Explications qui désignent une option par son rang** : recherche faite dans toutes les explications des chapitres 05 et 06, et dans les cours et résumés. **Aucune ne reste.**
+- Les occurrences trouvées ne désignent pas d'options : « la première personne », « la deuxième idée s'oppose à la première », « le premier / second blanc », « le premier adjectif », « la dernière étape du portrait », « le premier « nous » ».
+- Aucune lettre d'option, aucun « ci-dessus ».
+
+**Verdict final : prêt**, sous réserve de remplacer l'explication de m023 q6 (r-1, une phrase, sans nouvel audit).
