@@ -169,6 +169,83 @@
       "explanation": "القاعدة 6 والارتفاع 4 (الخطّ المتقطّع)، فالمساحة = (6 × 4) ÷ 2 = 24 ÷ 2 = 12 سم².",
       "difficulty": 2,
       "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "حقل مساحته 3 آر. كم مساحته بالمتر المربّع؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,03 م²"
+        },
+        {
+          "id": "b",
+          "text": "30 م²",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        },
+        {
+          "id": "c",
+          "text": "300 م²"
+        },
+        {
+          "id": "d",
+          "text": "3 000 م²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "1 آر = 100 م²، فمساحة الحقل 3 × 100 = 300 م²: ننتقل إلى وحدة أصغر فنضرب في 100. من ضرب في 10 وجد 30 م² فاستعمل عامل الأطوال، ومن قسم على 100 وجد 0,03 فسار في الاتّجاه المعاكس.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ما مساحة متوازي الأضلاع الآتي؟ الأطوال بالسنتيمتر.\n<svg viewBox=\"0 0 330 130\"><path d=\"M40 90 L240 90 L292.9 30 L92.9 30 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M40 90 L240 90 L292.9 30 L92.9 30 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M92.9 30 L92.9 90\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M102.9 90 L102.9 80 L92.9 80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"140\" y=\"112\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">10</text><text x=\"80.9\" y=\"65\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">3</text><text x=\"52.5\" y=\"56\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "15 سم²",
+          "misconceptionTag": "math.mes.aire-division-par-deux-appliquee-a-tort"
+        },
+        {
+          "id": "b",
+          "text": "28 سم²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "30 سم²"
+        },
+        {
+          "id": "d",
+          "text": "40 سم²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "مساحة متوازي الأضلاع = القاعدة × الارتفاع = 10 × 3 = 30 سم². الارتفاع هو القطعة المتقطّعة العموديّة على القاعدة، أي 3؛ أمّا الضلع المائل 4 فلا يدخل في الحساب. ولا قسمة على 2 هنا.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ما مساحة المثلّث أ ب ج، علمًا أنّ ب ج = 6 سم وأنّ الارتفاع المتقطّع المنطلق من أ يساوي 4 سم؟\n<svg viewBox=\"0 0 330 190\"><path d=\"M50 50 L125 150 L275 150 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M50 50 L125 150 L275 150 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M50 150 L125 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M50 50 L50 150\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M60 150 L60 140 L50 140\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"50\" cy=\"50\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"125\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"275\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"200\" y=\"174\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><text x=\"36\" y=\"102\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><text x=\"100\" y=\"92\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text><text x=\"50\" y=\"38\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">أ</text><text x=\"125\" y=\"172\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">ب</text><text x=\"275\" y=\"172\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">ج</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 سم²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "b",
+          "text": "12 سم²"
+        },
+        {
+          "id": "c",
+          "text": "15 سم²"
+        },
+        {
+          "id": "d",
+          "text": "24 سم²",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "القاعدة ب ج = 6 والارتفاع 4 (قدمه خارج المثلّث على امتداد القاعدة، وهذا لا يغيّر الصيغة): المساحة = (6 × 4) ÷ 2 = 12 سم². الضلع المائل 5 ليس عموديًّا على القاعدة فلا نستعمله.",
+      "difficulty": 2
     }
   ]
 }
