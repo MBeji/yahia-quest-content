@@ -1,0 +1,185 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le grand explorateur",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "short_answer",
+      "prompt": "Écris la forme du verbe vouloir qui complète la phrase : « Les voyageurs … visiter la médina avant de partir. » (présent)",
+      "answerKey": {
+        "text": "veulent"
+      },
+      "explanation": "Les voyageurs se remplace par ils. Au pluriel, vouloir change de radical (veul-) et prend la terminaison -ent, comme peuvent pour pouvoir.",
+      "difficulty": 2,
+      "expectedMistakes": [
+        {
+          "text": "voulent",
+          "misconceptionTag": "fr.conj.forme-irreguliere-regularisee"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque indication à la forme du verbe qui convient (présent).",
+      "options": [
+        {
+          "id": "l1",
+          "text": "je, vouloir"
+        },
+        {
+          "id": "l2",
+          "text": "elle, pouvoir"
+        },
+        {
+          "id": "l3",
+          "text": "nous, vouloir"
+        },
+        {
+          "id": "l4",
+          "text": "vous, pouvoir"
+        },
+        {
+          "id": "r1",
+          "text": "voulons"
+        },
+        {
+          "id": "r2",
+          "text": "veux"
+        },
+        {
+          "id": "r3",
+          "text": "pouvez"
+        },
+        {
+          "id": "r4",
+          "text": "peut"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r4"],
+          ["l3", "r1"],
+          ["l4", "r3"]
+        ]
+      },
+      "explanation": "Je veux (x avec je). Elle peut (t avec elle). Nous voulons (radical de l'infinitif plus -ons). Vous pouvez (radical de l'infinitif plus -ez).",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Range ces phrases dans l'ordre du voyage.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Après trois heures de voyage, les voyageurs arrivent à Tozeur."
+        },
+        {
+          "id": "b",
+          "text": "Le matin du départ, la famille arrive à la gare."
+        },
+        {
+          "id": "c",
+          "text": "Ils posent leurs valises à l'hôtel."
+        },
+        {
+          "id": "d",
+          "text": "Le train part à l'heure."
+        }
+      ],
+      "answerKey": {
+        "order": ["b", "d", "a", "c"]
+      },
+      "explanation": "On suit le temps du voyage : le matin du départ à la gare, puis le départ du train, puis l'arrivée après trois heures, enfin l'installation à l'hôtel.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Coche toutes les phrases où l'accord et la conjugaison sont justes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elles sont parties sans faire de bruit."
+        },
+        {
+          "id": "b",
+          "text": "Je peux t'aider à porter ta valise."
+        },
+        {
+          "id": "c",
+          "text": "Nous sommes arrivé à l'aéroport."
+        },
+        {
+          "id": "d",
+          "text": "Tu veut visiter Rome ?"
+        },
+        {
+          "id": "e",
+          "text": "Sarra est tombée de vélo hier."
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "Parties s'accorde avec elles (féminin pluriel) et sans faire de bruit est un complément de manière. Je peux prend un x. Tombée s'accorde avec Sarra. En revanche, « nous sommes arrivé » oublie l'accord (il faut au moins arrivés), et « tu veut » doit s'écrire tu veux.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "« Nous arrivons enfin au sommet de la colline. La vue est magnifique : la mer bleue brille au loin. Alors Karim sort son appareil photo pour prendre une photo. » Quel groupe de mots appartient à la description ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nous arrivons enfin au sommet de la colline",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
+        },
+        {
+          "id": "b",
+          "text": "la mer bleue brille au loin"
+        },
+        {
+          "id": "c",
+          "text": "Alors Karim sort son appareil photo",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
+        },
+        {
+          "id": "d",
+          "text": "pour prendre une photo",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La description dit comment est le lieu : la mer est bleue et brille au loin. Arriver au sommet, sortir un appareil photo et prendre une photo sont des actions qui font avancer l'histoire.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "« Le car roule vers Tabarka depuis une heure. Les élèves descendent sans bruit pour ne pas effrayer les mouettes. Le guide leur montre le port. » Pourquoi les élèves descendent-ils sans bruit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que le guide leur a donné cet ordre.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
+        {
+          "id": "b",
+          "text": "Parce que les mouettes les ont effrayés.",
+          "misconceptionTag": "fr.lecture.cause-consequence-inversees"
+        },
+        {
+          "id": "c",
+          "text": "Parce qu'ils ne veulent pas effrayer les mouettes."
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'ils sont fatigués par une heure de route.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le texte dit que les élèves descendent sans bruit « pour ne pas effrayer les mouettes » : ils ne veulent pas faire peur aux oiseaux. Les mouettes ne les ont pas effrayés (c'est l'inverse), et le texte ne parle ni d'un ordre du guide ni de fatigue.",
+      "difficulty": 3
+    }
+  ]
+}

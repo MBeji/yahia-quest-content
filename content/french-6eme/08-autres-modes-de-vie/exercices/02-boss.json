@@ -1,0 +1,169 @@
+{
+  "title": "⚔️ Chapitre Boss ⭐⭐⭐ : Le grand départ",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Dans « Hier, nous avons voyagé en train jusqu'à Sfax. », quel groupe dit comment nous avons voyagé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "en train"
+        },
+        {
+          "id": "b",
+          "text": "jusqu'à Sfax",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Hier",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        },
+        {
+          "id": "d",
+          "text": "nous avons voyagé"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« En train » répond à « comment avons-nous voyagé ? » : c'est un complément de manière. « Hier » répond à « quand ? » et « jusqu'à Sfax » à « où ? ». Le groupe « nous avons voyagé » est le sujet et le verbe.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans « Dimanche, les touristes ont visité le musée du Bardo avec curiosité, à Tunis. Ils sont sortis sans se presser. », lesquels répondent à la question « comment ? » ? Choisis TOUS les bons.",
+      "options": [
+        {
+          "id": "a",
+          "text": "avec curiosité"
+        },
+        {
+          "id": "b",
+          "text": "sans se presser"
+        },
+        {
+          "id": "c",
+          "text": "Dimanche"
+        },
+        {
+          "id": "d",
+          "text": "à Tunis"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "« Avec curiosité » et « sans se presser » répondent à « comment ? ». « Dimanche » répond à « quand ? » (temps) et « à Tunis » à « où ? » (lieu).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Mets au pluriel : « Je veux voir l'Alhambra. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nous veulons voir l'Alhambra.",
+          "misconceptionTag": "fr.conj.forme-irreguliere-regularisee"
+        },
+        {
+          "id": "b",
+          "text": "Nous voulons voir l'Alhambra."
+        },
+        {
+          "id": "c",
+          "text": "Nous voulez voir l'Alhambra."
+        },
+        {
+          "id": "d",
+          "text": "Nous veux voir l'Alhambra."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le pluriel de je est nous. Avec nous, vouloir garde son radical : voulons. Le radical particulier veul- n'appartient qu'à ils et elles. Nous veux garde la terminaison de je, et nous voulez emprunte celle de vous.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle phrase est bien écrite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les touristes sont rentré hier soir.",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        },
+        {
+          "id": "b",
+          "text": "Les touristes ont rentré hier soir.",
+          "misconceptionTag": "fr.conj.auxiliaire-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "Les touristes sont rentrer hier soir.",
+          "misconceptionTag": "fr.conj.infinitif-a-la-place-du-participe"
+        },
+        {
+          "id": "d",
+          "text": "Les touristes sont rentrés hier soir."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Rentrer se conjugue avec être, comme aller ou revenir : sont rentrés. Le participe s'accorde avec le sujet masculin pluriel : rentrés. Les autres phrases oublient l'accord, emploient l'auxiliaire avoir ou écrivent l'infinitif.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel groupe de mots est correctement écrit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "des colis envoyés de Rome"
+        },
+        {
+          "id": "b",
+          "text": "des colis envoyées de Rome",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "des colis envoyé de Rome",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "d",
+          "text": "des colis envoyer de Rome",
+          "misconceptionTag": "fr.conj.infinitif-a-la-place-du-participe"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Il n'y a pas d'auxiliaire : le participe est employé seul, comme un adjectif. Il s'accorde avec colis, masculin pluriel : envoyés. Envoyé oublie le pluriel, envoyées prend un féminin qui n'existe pas ici, et l'infinitif envoyer ne décrit pas le nom.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle phrase décrit le château au lieu de raconter une action ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Karim monte l'escalier du château en courant, tout essoufflé.",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
+        },
+        {
+          "id": "b",
+          "text": "Il ouvre la lourde porte et entre dans la grande salle.",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
+        },
+        {
+          "id": "c",
+          "text": "Le château est entouré d'un mur gris et d'une tour."
+        },
+        {
+          "id": "d",
+          "text": "Soudain, un bruit sourd retentit dans le long couloir.",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une phrase qui décrit dit comment est le château : entouré d'un mur gris et d'une tour, avec le verbe être. Les trois autres font avancer l'histoire : Karim monte, ouvre, entend un bruit.",
+      "difficulty": 3
+    }
+  ]
+}
