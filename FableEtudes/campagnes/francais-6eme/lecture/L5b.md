@@ -1,7 +1,17 @@
-<!-- EN-TÊTE PROVISOIRE : sera réécrit en fin de lot -->
 # Lecture L5b — Fichier-classe 521616 (6ᵉ français), pages 221–438
 
-(en cours d'écriture)
+> **Source** : `521616P00.pdf` — « Approche par compétences — Fichier-classe — FRANÇAIS — 6ème année Enseignement de Base » (République tunisienne, Ministère de l'Éducation, CNP), 438 p. Références `(521616 p.N)` = page **imprimée** (pied de page).
+> **Offset** : pagination imprimée = page PDF (offset 0), vérifié sur les 218 pages du lot par extraction du numéro de pied de page ; **seule exception : la p.322 porte « 63 » au pied `[sic]`** (coquille d'impression ; c'est bien la fiche Orthographe R 7-3).
+> **Pages lues (lot L5b)** : **p.221–438 (toutes)**. Base = `pdftotext -layout` page par page ; vision (PNG) sur p.228, 234, 265, 375, 422, 425 (illustrations portant la consigne, pages à texte incliné ou tableau). La couche texte est saine ; les **soulignements, encadrements, mots en gras et bulles dessinées** ne passent pas dans le texte brut (signalés `[?]` quand l'exercice en dépend).
+> **Pages vides / intercalaires / répertoires** : p.258 (intercalaire « Orthographe — Fiches de base ») ; p.259 (répertoire orthographe base) ; p.288 (intercalaire « Fiches d'intégration ») ; p.289 (répertoire) ; p.305 (intercalaire « Fiches de remédiation ») ; p.306 (répertoire) ; p.333 (intercalaire « Expression écrite — Fiches d'entraînement et de remédiation ») ; p.334 (répertoire expression écrite) ; p.335 (introduction aux fiches d'expression écrite, transcrite). Tous transcrits.
+> **Frontière avec L5a** : L5a couvre p.1–220 (grammaire B/I/R, conjugaison B/I et R 1 à R 3-1). **L5b reprend à R 3-2 (conjugaison, impératif), p.221**, et couvre : fin de la remédiation de conjugaison (p.221–257), **orthographe** (base p.258–287, intégration p.288–304, remédiation p.305–332) et **expression écrite** (p.333–438). La forme de L5a (en-têtes `### code (521616 p.N)`, `**Ex n** [B/P/R/I/E]`, `ex :` deux items cités, tableaux de fin) est reprise à l'identique ; j'ai ajouté le type **[E]** (fiches « d'entraînement/de remédiation » de l'expression écrite).
+> **Non lu / non vu** : aucune page non lue. Illustrations non regardées en vision (décrites d'après la consigne, marquées `(illustré)` ou `[?]`) : bandes dessinées et dessins de E 2-1, E 4-4, E 13-1, E 13-2, E 16-2, E 17-1…E 17-5, E 18-5 ; dessins de R 10-4 Ex 8, I 1-1…I 7-2, R 3-5 Ex 10. Aucune consigne n'y est perdue (les consignes sont en texte), mais le détail des images n'est pas relevé.
+
+## Corrections à la fiche existante `francais.md`
+
+Aucune : la fiche existante cite le guide 521612, pas le Fichier-classe. Constats **utiles** pour la fiche (à confronter, non à trancher) :
+- Le **rattachement des objectifs du Fichier-classe aux modules suit exactement l'ordre du tableau de bord p.18–19** (déduit, non imprimé) : conjugaison R 3 (impératif) ↔ M2 ; R 4 (être/avoir) ↔ M3 ; R 5 (finir) ↔ M4 ; R 6 (prendre/mettre) ↔ M5 ; R 7 (aller/faire) ↔ M6 ; R 8 (lire/dire/écrire) ↔ M7 ; R 9 (vouloir/pouvoir) ↔ M8 ; R 10 (pronominaux) ↔ transversal (remarque p.19 : les verbes pronominaux sont introduits à l'oral/à l'écrit sans séance dédiée). Orthographe B/I/R 1 (infinitif après préposition) ↔ M1 ; 2 (a/à) ↔ M2 ; 3 (son/sont) ↔ M3 ; 4 (est/et) ↔ M4 ; 5 (accord verbe-sujet) ↔ M5 ; 6 (adjectif eux/euse, masculin + e) ↔ M6 ; 7 (adjectifs bon/bonne, beau/belle, neuf/neuve, gentil/gentille) ↔ M7 ; 8 (participe passé avec être) ↔ M8. Les remédiations R 5 et R 6 d'orthographe (sujet composé ; sujet après le verbe) précisent le **module 5**.
+- Le Fichier-classe renvoie deux fois au **manuel de lecture** : « Une parfumeuse en herbe » (P. 15, E 1-1) et « Le vieux robot » (P. 27, E 1-1/E 1-2), deux titres qui figurent aux listes de lecture des **M1** et **M2** de la fiche (p.18).
 
 ---
 
@@ -17,10 +27,10 @@ OS (case 3, p.221–225) : « Consolider la conjugaison des verbes à l'impérat
 Notion : transformer un impératif d'une personne à une autre.
 - **Ex 2** [R] — « Transforme à la 2ème personne du pluriel. » — 7 impératifs à réécrire. ex : « Allume ton ordinateur. » ; « Va chez le libraire. »
 - **Ex 3** [R] — « Transforme à la 1ère personne du pluriel. » — 7 impératifs (2ᵉ pers. pl.). ex : « Descendez lentement les escaliers. » ; « Ecrivez une lettre à vos correspondants. »
-- **Ex 4** [R] — « Transforme à la 2ème personne du singulier. » — début en p.221 (6 phrases, p.221–222) : « Attendez-moi. » ; « Rendons nos livres de bibliothèque. » ; « Téléphonez plus souvent. » ; « Allons déjeuner. » ; « Rangeons nos affaires. » ; « Faites une surprise à vos parents. » (la suite, p.222 en tête, 4 items : « Ne disons pas de bêtises. » ; « Annonçons la bonne nouvelle. » ; « Nourrissez-vous convenablement. » ; « Ne salissons pas nos vêtements. » — le reste de l'Ex 4 continue en p.222).
+- **Ex 4** [R] — « Transforme à la 2ème personne du singulier. » — 10 items répartis sur deux pages ; p.221 : 6 phrases à l'impératif (« Attendez-moi. » ; « Rendons nos livres de bibliothèque. » ; « Téléphonez plus souvent. » ; « Allons déjeuner. » ; « Rangeons nos affaires. » ; « Faites une surprise à vos parents. ») ; la suite (4 items) est en tête de p.222 (voir R 3-3).
 
 ### R 3-3 (p.222)
-- **Ex 4 (suite)** [R] — voir ci-dessus : 4 impératifs, dont 2 négatifs (« Ne disons pas de bêtises. », « Ne salissons pas nos vêtements. ») et un pronominal (« Nourrissez-vous convenablement. »). Total de l'Ex 4 : 10 items.
+- **Ex 4 (suite)** [R] — 4 impératifs à passer à la 2ᵉ pers. du singulier : « Ne disons pas de bêtises. » ; « Annonçons la bonne nouvelle. » ; « Nourrissez-vous convenablement. » ; « Ne salissons pas nos vêtements. » (2 négatifs, 1 pronominal). Total de l'Ex 4 : 10 items.
 - **Ex 5** [R] — « Transforme selon l'exemple. » — exemple « Il faut poser des questions → Posons des questions. » ; 5 phrases en « Il faut + infinitif » (impératif 1ʳᵉ pers. pl.). ex : « Il faut finir ton roman. » ; « Il ne faut pas abuser du portable. »
 - **Ex 6** [R] — « Ecris à l'impératif. » a- « à la 2ème personne du pluriel » (4 impératifs négatifs 2ᵉ sg : « Ne pars pas si vite ! » ; « N'oublie pas d'éteindre la lumière. ») ; b- « à la 2ème personne du singulier » (4 impératifs 2ᵉ pl : « Lisez-moi cette lettre. » ; « Allez au lit et faites de beaux rêves »).
 
@@ -961,7 +971,7 @@ OS (case 3, p.372–376) : « Utiliser des marqueurs de temps dans un récit ».
 ### E 9-4 (p.375)
 - **Ex 6b** [E] — « Rends maintenant, ton texte plus long en détaillant les actions de préparation de la parcelle de terre, Numérote les étapes de 1 à 4. » — « Mettre des engrais. / Bêcher. / Défricher le sol des mauvaises herbes. / Égaliser la terre. »
 - **Ex 6c** [E] — « A partir des indications précédentes (a/b), Ecris un paragraphe de 4 phrase[s]. Emploie les mots "d'abord - ensuite - puis - enfin". » — 6 lignes.
-- **Ex 7a** [E] — « Lis l'emploi du temps de ta classe. » — tableau « 1ère … 8ème journée » (le module de 8 journées) : lignes d'activités (1ʳᵉ journée : Poème ou chant / Expression orale / Lecture / Grammaire ; 2ᵉ : Mise en train / Expression orale / Lecture suivie / Conjugaison ; 3ᵉ : Mise en train orale / Expression orale / Lecture / Projet d'écriture ; 4ᵉ : Expression documentaire / Lecture orale / Orthographe / Projet d'écriture ; 5ᵉ : Autodictée / Expression d'écriture / Lecture / Grammaire et conjugaison ; 6ᵉ : Expression / Projet / Lecture / Orthographe / Projet d'écriture ; 7ᵉ : Lecture / Page vocabulaire / Lecture / …; 8ᵉ : Mise en train / Lecture-action / Bibliothèque de classe) `[?]` tableau lu en texte brut, rangement des cellules à confirmer en vision.
+- **Ex 7a** [E] (vision) — « Lis l'emploi du temps de ta classe. » — tableau « 1ère … 8ème journée » (le module de 8 journées ; chaque colonne liste les activités du jour, de haut en bas) : **1ʳᵉ** Poème ou chant / Expression orale / Lecture / Grammaire ; **2ᵉ** Mise en train / Expression orale / Lecture / Conjugaison ; **3ᵉ** Mise en train / Expression orale / Lecture / Projet d'écriture ; **4ᵉ** Expression orale / Lecture / Orthographe / Projet d'écriture ; **5ᵉ** Autodictée 1 / Expression orale / Lecture / Grammaire et conjugaison ; **6ᵉ** Expression orale / (case vide) / Lecture / Orthographe, Projet d'écriture ; **7ᵉ** Lecture documentaire / Projet d'écriture / Lecture suivie / (case vide) ; **8ᵉ** Mise en train / Page vocabulaire / Lecture-action / Bibliothèque de classe.
 
 ### E 9-5 (p.376)
 - **Ex 7b** [E] — « Ecris un court paragraphe pour répondre aux questions suivantes posées par un ami. » — « Quelles sont les activités que vous réalisez le premier jour, le 7ème et le 8ème jour du module ? Quelle est l'activité que tu préfères ? Pourquoi ? » (7 lignes).
@@ -1282,3 +1292,167 @@ OS (case 3, p.428–438) : « Ecrire une lettre ».
 - **Ex 10b** [E] — « Tu vas à ton tour écrire un "e-mail". • Lis ce texte. Tu as reçu un mail d'un camarade qui t'informe qu'une association organise un voyage pour les élèves de 6ème année de ton village. Tu lui envoies en retour un mail pour lui demander des informations sur ce voyage : Où ? Quand ? Comment s'y inscrire ? Combien coûte le voyage ? ... • Voici l'adresse du mail de ton camarade. Exp. Mokhtar.Amiri@edunet.tn • Imagine une adresse pour ton mail. Ecris-la. Dest. • Remplis la case suivante. Objet »
 - **Ex 10c** [E] — « Remplis les cases et rédige ton mail à partir des indications données en (b). Ecris-le dans ce canevas. » — maquette exp / Dest / CC / CM / Objet / Message / Envoyer / Annuler.
 
+
+---
+
+# Table fiche → pages (521616 p.221–438)
+
+| Domaine | Type | Objectif (n°) | Fiches | Pages |
+| --- | --- | --- | --- | --- |
+| Conjugaison | R | Objectif R 3 (suite) | R3-2 à R3-6 (5 fiches) | p.221–225 |
+| Conjugaison | R | Objectif R 4 | R4-1 à R4-4 (4 fiches) | p.226–229 |
+| Conjugaison | R | Objectif R 5 | R5-1 à R5-6 (6 fiches) | p.230–235 |
+| Conjugaison | R | Objectif R 6 | R6-1 à R6-5 (5 fiches) | p.236–240 |
+| Conjugaison | R | Objectif R 7 | R7-1 à R7-5 (5 fiches) | p.241–245 |
+| Conjugaison | R | Objectif R 8 | R8-1 à R8-5 (5 fiches) | p.246–250 |
+| Conjugaison | R | Objectif R 9 | R9-1 à R9-3 (3 fiches) | p.251–253 |
+| Conjugaison | R | Objectif R 10 | R10-1 à R10-4 (4 fiches) | p.254–257 |
+| Orthographe | B | Objectif 1 | B1-1 à B1-3 (3 fiches) | p.260–262 |
+| Orthographe | B | Objectif 2 | B2-1 à B2-3 (3 fiches) | p.263–265 |
+| Orthographe | B | Objectif 3 | B3-1 à B3-3 (3 fiches) | p.266–268 |
+| Orthographe | B | Objectif 4 | B4-1 à B4-3 (3 fiches) | p.269–271 |
+| Orthographe | B | Objectif 5 | B5-1 à B5-4 (4 fiches) | p.272–275 |
+| Orthographe | B | Objectif 6 | B6-1 à B6-5 (5 fiches) | p.276–280 |
+| Orthographe | B | Objectif 7 | B7-1 à B7-4 (4 fiches) | p.281–284 |
+| Orthographe | B | Objectif 8 | B8-1 à B8-3 (3 fiches) | p.285–287 |
+| Orthographe | I | Objectif I 1 | I1-1 à I1-2 (2 fiches) | p.290–291 |
+| Orthographe | I | Objectif I 2 | I2-1 à I2-2 (2 fiches) | p.292–293 |
+| Orthographe | I | Objectif I 3 | I3-1 à I3-1 (1 fiche) | p.294–294 |
+| Orthographe | I | Objectif I 4 | I4-1 à I4-2 (2 fiches) | p.295–296 |
+| Orthographe | I | Objectif I 5 | I5-1 à I5-2 (2 fiches) | p.297–298 |
+| Orthographe | I | Objectif I 6 | I6-1 à I6-2 (2 fiches) | p.299–300 |
+| Orthographe | I | Objectif I 7 | I7-1 à I7-2 (2 fiches) | p.301–302 |
+| Orthographe | I | Objectif I 8 | I8-1 à I8-2 (2 fiches) | p.303–304 |
+| Orthographe | R | Objectif R 1 | R1-1 à R1-3 (3 fiches) | p.307–309 |
+| Orthographe | R | Objectif R 2 | R2-1 à R2-2 (2 fiches) | p.310–311 |
+| Orthographe | R | Objectif R 3 | R3-1 à R3-2 (2 fiches) | p.312–313 |
+| Orthographe | R | Objectif R 4 | R4-1 à R4-2 (2 fiches) | p.314–315 |
+| Orthographe | R | Objectif R 5 | R5-1 à R5-2 (2 fiches) | p.316–317 |
+| Orthographe | R | Objectif R 6 | R6-1 à R6-2 (2 fiches) | p.318–319 |
+| Orthographe | R | Objectif R 7 | R7-1 à R7-4 (4 fiches) | p.320–323 |
+| Orthographe | R | Objectif R 8 | R8-1 à R8-3 (3 fiches) | p.324–326 |
+| Orthographe | R | Objectif R 9 | R9-1 à R9-4 (4 fiches) | p.327–330 |
+| Orthographe | R | Objectif R 10 | R10-1 à R10-2 (2 fiches) | p.331–332 |
+| Expression écrite | E | Objectif E 1 | E1-1 à E1-4 (4 fiches) | p.336–339 |
+| Expression écrite | E | Objectif E 2 | E2-1 à E2-4 (4 fiches) | p.340–343 |
+| Expression écrite | E | Objectif E 3 | E3-1 à E3-4 (4 fiches) | p.344–347 |
+| Expression écrite | E | Objectif E 4 | E4-1 à E4-4 (4 fiches) | p.348–351 |
+| Expression écrite | E | Objectif E 5 | E5-1 à E5-6 (6 fiches) | p.352–357 |
+| Expression écrite | E | Objectif E 6 | E6-1 à E6-3 (3 fiches) | p.358–360 |
+| Expression écrite | E | Objectif E 7 | E7-1 à E7-7 (7 fiches) | p.361–367 |
+| Expression écrite | E | Objectif E 8 | E8-1 à E8-4 (4 fiches) | p.368–371 |
+| Expression écrite | E | Objectif E 9 | E9-1 à E9-5 (5 fiches) | p.372–376 |
+| Expression écrite | E | Objectif E 10 | E10-1 à E10-4 (4 fiches) | p.377–380 |
+| Expression écrite | E | Objectif E 11 | E11-1 à E11-6 (6 fiches) | p.381–386 |
+| Expression écrite | E | Objectif E 12 | E12-1 à E12-7 (7 fiches) | p.387–393 |
+| Expression écrite | E | Objectif E 13 | E13-1 à E13-7 (7 fiches) | p.394–400 |
+| Expression écrite | E | Objectif E 14 | E14-1 à E14-5 (5 fiches) | p.401–405 |
+| Expression écrite | E | Objectif E 15 | E15-1 à E15-4 (4 fiches) | p.406–409 |
+| Expression écrite | E | Objectif E 16 | E16-1 à E16-4 (4 fiches) | p.410–413 |
+| Expression écrite | E | Objectif E 17 | E17-1 à E17-8 (8 fiches) | p.414–421 |
+| Expression écrite | E | Objectif E 18 | E18-1 à E18-6 (6 fiches) | p.422–427 |
+| Expression écrite | E | Objectif E 19 | E19-1 à E19-11 (11 fiches) | p.428–438 |
+
+Détail fiche par fiche (code → page imprimée = page PDF) : le titre de chaque bloc `### code (521616 p.N)` ci-dessus donne la page ; les fiches occupent exactement une page chacune (offset 0). Pages sans fiche : p.258, 288, 305, 333 (intercalaires) ; p.259, 289, 306, 334 (pages-répertoires) ; p.335 (introduction expression écrite).
+
+
+# Tableau de synthèse par OS (521616 p.221–438)
+
+Colonnes : OS · domaine · type · fiches · pages · nb exercices (numéros distincts ; les sous-questions a/b/c comptent pour un) · dont P · formes d'exercice. **dont P = 0 partout** (aucun double crayon repéré sur p.221–438 ; les fiches R, I et E n'ont pas de marque B/P). R 3 (impératif) : l'Ex 1 est en p.220 (L5a) ; ici 10 exercices (2–11) + 1 chez L5a = 11.
+
+| OS (case 3, abrégé) | Domaine | Type | Fiches | Pages | Nb ex. | dont P | Formes d'exercice |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| impératif | Conjugaison | R | R3-2…R3-6 | 221–225 | 10 (+Ex 1 en L5a p.220) | 0 | transformation de personne (impératif) ; tableau à compléter ; négation ; texte à compléter (notice, pancartes) ; discours direct |
+| être et avoir au passé composé et au futur | Conjugaison | R | R4-1…R4-4 | 226–229 | 9 | 0 | remise en ordre ; ajout de « et » ; appariement ; texte à trous ; adjectifs de la marge |
+| verbes du type « finir » au passé composé et au futur | Conjugaison | R | R5-1…R5-6 | 230–235 | 11 | 0 | accord avec sujets multiples ; suppression de sujets ; ajout de noms ; sujets/GV à écrire |
+| verbes du type « prendre » et « mettre » au passé composé et au futur | Conjugaison | R | R6-1…R6-5 | 236–240 | 7 | 0 | appariement ; sujet inversé au temps indiqué ; avoir/être interrogatif ; GV à écrire ; verbes à choisir |
+| verbes du type « aller » et « faire » au passé composé et au futur | Conjugaison | R | R7-1…R7-5 | 241–245 | 9 | 0 | féminin/masculin ; tableau ; noms à trouver ; adjectif à barrer ; place de l'adjectif ; noms → adjectifs |
+| verbes lire, dire et écrire au passé composé et au futur | Conjugaison | R | R8-1…R8-5 | 246–250 | 9 | 0 | pluriel/singulier ; GN à compléter ; choix multiples (texte) ; accord en genre et nombre ; variantes de GN |
+| verbes du type « vouloir » et « pouvoir » au présent | Conjugaison | R | R9-1…R9-3 | 251–253 | 7 | 0 | féminin/masculin/pluriel ; tableau à 4 formes ; adjectif du cadre ; devinettes ; lettre à compléter |
+| verbes pronominaux au présent, au futur et à l'impératif | Conjugaison | R | R10-1…R10-4 | 254–257 | 8 | 0 | appariement ; sujet à compléter ; participe passé ; sujet pluriel/singulier ; passé composé |
+| l'infinitif des verbes placés après à, de, par, pour, sans | Orthographe | B | B1-1…B1-3 | 260–262 | 7 | 0 | repérage (souligner/encadrer) ; préposition à trous ; terminaison -er/-é/-ez ; verbe libre ; phrases à construire (cadres, expressions) ; fin de phrase imaginée |
+| homophones à / a | Orthographe | B | B2-1…B2-3 | 263–265 | 10 | 0 | choix a/à barré ; accent à placer ; a/à à trous ; appariement ; réécriture (sujet singulier) ; remise en ordre ; construction avec cadre ; passé composé |
+| homophones son / sont | Orthographe | B | B3-1…B3-3 | 266–268 | 10 | 0 | choix son/sont barré ; être au présent ; appariement ; trous ; devinettes ; remise en ordre ; ajout d'un t ; débuts de phrase à inventer |
+| homophones est / et | Orthographe | B | B4-1…B4-3 | 269–271 | 10 | 0 | paragraphe à trous ; appariement ; ajout de « et » et virgules ; trous ; GNS pluriel → singulier ; réponses avec adjectifs ; remise en ordre ; qualités/défauts |
+| accorder le verbe avec son sujet | Orthographe | B | B5-1…B5-4 | 272–275 | 10 | 0 | appariement GNS/GV (intrus) ; verbe du cadre ; GNS à écrire ; sujet au singulier/pluriel (textes) ; avoir/être interrogatif ; verbes de la marge ; phrases à construire |
+| accord de l'adjectif avec le nom (1) : eux → euse, masculin + e | Orthographe | B | B6-1…B6-5 | 276–280 | 13 | 0 | texte + tableau (adjectifs) ; féminin/masculin « Que remarques-tu ? » ; accords ; place de l'adjectif ; adjectifs à deviner ; noms → adjectifs ; réécriture avec enrichissement |
+| accord de l'adjectif avec le nom (2) : bon/bonne, beau/belle, neuf/neuve, gentil/gentille… | Orthographe | B | B7-1…B7-4 | 281–284 | 11 | 0 | souligner/relever adjectifs + genre/nombre ; épithète/attribut au féminin ; GN pluriel/singulier ; choix dans la marge ; substitution de noms (masc ↔ fém) ; pluriel |
+| le participe passé employé avec « être » | Orthographe | B | B8-1…B8-3 | 285–287 | 10 | 0 | participe passé (donner, classer en tableau) ; sujet à compléter ; appariement ; terminaisons é/és/ée/ées ; sujet sg/pl ; passé composé ; construction de phrases |
+| infinitif après à, de, par, pour, sans (énoncés personnels) | Orthographe | I | I1-1…I1-2 | 290–291 | 2 | 0 | paragraphe à partir d'un cadre ; bande de 4 images à décrire ; avis personnel |
+| homophones à / a (énoncés personnels) | Orthographe | I | I2-1…I2-2 | 292–293 | 3 | 0 | texte à trous illustré ; devinettes (noms composés en [a]) ; phrases à partir d'images ; court récit |
+| homophones son / sont (énoncés personnels) | Orthographe | I | I3-1…I3-1 | 294–294 | 3 | 0 | phrases à compléter à partir d'images ; texte à trous ; question d'avis ; schémas de phrases |
+| homophones est / et (énoncés personnels) | Orthographe | I | I4-1…I4-2 | 295–296 | 3 | 0 | texte de 4 phrases à partir d'une bande dessinée ; menu à compléter ; portrait de René puis du voisin |
+| accord du verbe avec le sujet (énoncés personnels) | Orthographe | I | I5-1…I5-2 | 297–298 | 3 | 0 | texte à partir d'une bande dessinée ; avis et conseil (impératif) ; début/suite/fin ; texte à partir de dessins |
+| accord de l'adjectif avec le nom (1) (énoncés personnels) | Orthographe | I | I6-1…I6-2 | 299–300 | 4 | 0 | texte et carte de vœux à trous ; enrichissement de GN ; scènes à décrire ; portrait du meilleur ami |
+| accord de l'adjectif avec le nom (2) (énoncés personnels) | Orthographe | I | I7-1…I7-2 | 301–302 | 2 | 0 | description de personnages (3 adjectifs) ; description d'une scène avec cadre lexical |
+| participe passé avec « être » (énoncés personnels) | Orthographe | I | I8-1…I8-2 | 303–304 | 3 | 0 | 5 phrases (passé composé) + récit ; phrases à compléter + dialogue ; paragraphe avec cadre |
+| infinitif après à, de, par, pour, sans | Orthographe | R | R1-1…R1-3 | 307–309 | 7 | 0 | terminaison ; préposition ; appariement ; fins de phrase avec verbe ; conseils ; phrases à compléter |
+| homophones à / a | Orthographe | R | R2-1…R2-2 | 310–311 | 6 | 0 | à/a à trous ; accent ; paragraphe à trous ; réécriture ; remise en ordre ; construction de phrases |
+| homophones sont / son | Orthographe | R | R3-1…R3-2 | 312–313 | 5 | 0 | sont/son à trous ; remise en ordre ; ajout du t ; pluriel ; construction de phrases |
+| homophones est / et | Orthographe | R | R4-1…R4-2 | 314–315 | 5 | 0 | remise en ordre ; ajout de « et » ; appariement ; texte à trous ; adjectifs de la marge |
+| accord sujet/verbe : sujet composé de plusieurs GN | Orthographe | R | R5-1…R5-2 | 316–317 | 5 | 0 | accord avec sujets multiples ; suppression de sujets ; ajout de noms ; sujets/GV à écrire |
+| accord sujet/verbe : sujet parfois placé après le verbe | Orthographe | R | R6-1…R6-2 | 318–319 | 5 | 0 | appariement ; sujet inversé au temps indiqué ; avoir/être interrogatif ; GV à écrire ; verbes à choisir |
+| accord de l'adjectif avec le nom en genre (eux/euse, masculin + e) | Orthographe | R | R7-1…R7-4 | 320–323 | 9 | 0 | féminin/masculin ; tableau ; noms à trouver ; adjectif à barrer ; place de l'adjectif ; noms → adjectifs |
+| accord de l'adjectif avec le nom en nombre | Orthographe | R | R8-1…R8-3 | 324–326 | 8 | 0 | pluriel/singulier ; GN à compléter ; choix multiples (texte) ; accord en genre et nombre ; variantes de GN |
+| accord de l'adjectif : bon/bonne, neuf/neuve, gentil/gentille, beau/belle | Orthographe | R | R9-1…R9-4 | 327–330 | 11 | 0 | féminin/masculin/pluriel ; tableau à 4 formes ; adjectif du cadre ; devinettes ; lettre à compléter |
+| accord du participe passé employé avec « être » | Orthographe | R | R10-1…R10-2 | 331–332 | 6 | 0 | appariement ; sujet à compléter ; participe passé ; sujet pluriel/singulier ; passé composé |
+| présenter correctement un texte narratif en paragraphes | Expression écrite | E | E1-1…E1-4 | 336–339 | 4 | 0 | questions sur textes du manuel ; schéma de texte ; mise en paragraphes ; titres de paragraphes |
+| respecter la progression des événements (ordre logique et chronologique) | Expression écrite | E | E2-1…E2-4 | 340–343 | 4 | 0 | remise en ordre (images/bandelettes) ; texte à trous ; conte (personnages, lieux, événements) ; canevas |
+| éviter les contradictions | Expression écrite | E | E3-1…E3-4 | 344–347 | 7 | 0 | phrases barrées et corrigées ; couples oui/non ; choix dans la marge ; texte à intrus ; réécriture |
+| éviter les répétitions : déterminants démonstratifs | Expression écrite | E | E4-1…E4-4 | 348–351 | 7 | 0 | choix de ce/cet/cette/ces ; trous ; pronoms démonstratifs (celui/celle) ; GN de reprise ; phrase d'introduction ; répliques |
+| éviter les répétitions : déterminants possessifs | Expression écrite | E | E5-1…E5-6 | 352–357 | 6 | 0 | trous de possessifs ; poème à trous ; souligner et classer ; GN de la marge ; texte puis suite ; production |
+| éviter les répétitions : pronoms personnels sujets | Expression écrite | E | E6-1…E6-3 | 358–360 | 7 | 0 | sujets soulignés ; pronoms de remplacement ; fusion de 2 phrases ; texte à transformer ; production |
+| éviter les répétitions : pronoms personnels compléments (le - la - les - l') | Expression écrite | E | E7-1…E7-7 | 361–367 | 15 | 0 | GN remplacé ; pronoms le/la/l'/les à trous ; réécriture ; recette et conseils à trous ; production (recette) |
+| éviter les répétitions : substituts lexicaux et pronoms | Expression écrite | E | E8-1…E8-4 | 368–371 | 6 | 0 | mots de remplacement ; substituts (marge) ; texte « Grisou » ; production (renard et poule) ; réécriture |
+| marqueurs de temps dans un récit | Expression écrite | E | E9-1…E9-5 | 372–376 | 7 | 0 | repérage ; synonymes ; texte remis en ordre ; trous ; canevas ; emploi du temps de classe |
+| articulateurs « pour » et « parce que » | Expression écrite | E | E10-1…E10-4 | 377–380 | 6 | 0 | appariement ; trous ; phrases avec cadres ; trouver la raison ; dialogue guidé |
+| articulateurs « et », « ou », « mais » | Expression écrite | E | E11-1…E11-6 | 381–386 | 13 | 0 | articulateur à repérer ; trous ; appariements ; ajout de « et » ; mais/ou/et ; remise en ordre ; production |
+| caractéristiques formelles du dialogue | Expression écrite | E | E12-1…E12-7 | 387–393 | 9 | 0 | texte dialogué ; verbes introducteurs (classement, trous) ; répliques manquantes ; dialogues à compléter ; mise en forme |
+| intégrer un dialogue dans un récit | Expression écrite | E | E13-1…E13-7 | 394–400 | 8 | 0 | bulles → répliques ; bande dessinée → récit ; dialogue remis en ordre ; mini-dialogues dans des situations ; suite/début ; passage au discours direct |
+| décrire une personne | Expression écrite | E | E14-1…E14-5 | 401–405 | 5 | 0 | portrait lu, classé ; bandelettes ; portrait moral ; matrice ; carte d'identité |
+| décrire un animal | Expression écrite | E | E15-1…E15-4 | 406–409 | 4 | 0 | paragraphes remis en ordre ; tableaux de description ; imitation ; textes mêlés à démêler |
+| décrire un lieu | Expression écrite | E | E16-1…E16-4 | 410–413 | 7 | 0 | indicateurs de lieu ; verbes de situation ; transformation (jardin) ; fiche de renseignements ; matrice (gare) |
+| intégrer une description dans un récit | Expression écrite | E | E17-1…E17-8 | 414–421 | 7 | 0 | description à insérer dans un récit ; relier ; toiles d'araignée ; début/fin ; dessin |
+| intégrer une description et un dialogue dans un récit | Expression écrite | E | E18-1…E18-6 | 422–427 | 4 | 0 | paragraphes remis en ordre ; toile ; tableau de répliques ; dialogue remis en ordre ; dialogue illustré |
+| écrire une lettre | Expression écrite | E | E19-1…E19-11 | 428–438 | 9 (n° 6 imprimé deux fois : 11 exercices réels) | 0 | schéma de lettre ; lettres à mettre en forme ; bandelettes ; situations de lettre ; courriel |
+
+Total L5b : 209 fiches, 376 exercices numérotés (hors sous-questions).
+
+# § À signaler (521616 p.221–438)
+
+## 1. Faits de langue qui sortent du tableau de bord p.18–19 (à signaler, non tranché)
+
+Référence : tableau de bord de la fiche existante (déterminants, noms, pronoms personnels sujets ; 3 temps ; impératif ; être/avoir, finir, prendre/mettre, aller/faire, dire/lire/écrire, vouloir/pouvoir ; homophones a/à, son/sont, et/est ; accords ; adjectifs ; compléments ; négation ne… plus / ne… jamais).
+
+- **Pronoms démonstratifs « celui / celle / ceux / celles »** : E 4-2 Ex 3 (a, b, c : « C'est celle de mon frère », « C'est celui de la bibliothèque », « Ce sont ceux de ma petite sœur »). Hors tableau (le programme ne liste que les déterminants démonstratifs).
+- **Pronoms personnels compléments le / la / l' / les** : toute la fiche d'objectif E 7 (E 7-1 à E 7-7, 15 exercices) ; **la fiche existante ne cite que les pronoms personnels sujets**. À confronter avec la remédiation de grammaire de L5a. Aussi pronom « leur / lui / eux » dans E 7-3 Ex 7 (« Il s'asseoit près de lui »).
+- **Impératif négatif et pronominal, impératif à 1ʳᵉ personne du pluriel** : R 3-3 (« Ne disons pas de bêtises. »), R 3-4 Ex 8 (forme négative), R 10-3 (« mettez-vous d'accord »). Le tableau p.19 liste l'impératif sans préciser négation/pronominaux.
+- **Erreur de métalangue dans le manuel** : R 10-3 Ex 6 demande « 1ère personne du singulier » à l'impératif (« Il faut se nourrir de façon équilibrée. (1ére personne du singulier) ») — **l'impératif n'a pas de 1ʳᵉ personne du singulier**. À ne pas reprendre.
+- **« Futur composé » (futur antérieur)** : R 5-3 Ex 7 « Transforme les phrases en écrivant l'auxiliaire avoir au futur » (« Les jasmins ont fleuri… ») — consigne ambiguë ; le résultat attendu est un futur antérieur (« auront fleuri »), hors programme `[?]`.
+- **Passé composé des verbes pronominaux** : R 10-2 Ex 3a (« Je me suis fait mal »), B 8-3 Ex 8 (« La voiture se dirige… → s'est dirigée »), B 8-2 Ex 4 (« se sont couchées », « s'est échappée »). Le tableau p.19 ne prévoit que présent/futur/impératif pour les pronominaux.
+- **Voix passive** (verbes à l'indicatif « être + participe passé » avec complément d'agent « par ») : B 8-2 Ex 7 (« les danseuses sont encouragées par les applaudissements du public »), R 10-1 Ex 3 (« ont été très appréciés par les visiteurs »), R 10-2 Ex 4 (« est embarqué par un jeune conducteur », « L'hôtesse de l'air est appréciée par les passagers »), R 10-2 Ex 6. La fiche exclut la voix passive du 6ᵉ (9ᵉ) ; ici elle sert de support à l'accord du participe passé avec « être ».
+- **Imparfait / passé simple dans les consignes et les textes** : B 3-1 Ex 2 et B 4-3 Ex 8 (imparfait → présent : « étaient », « était », « a été », « sera »), textes supports narratifs au passé simple/imparfait (E 2-2 conte « L'or des étoiles » ; E 9-1 « s'envolait, décolla, prit » ; E 17-4 d'Anatole France ; E 18-2 « s'élancent »). L'imparfait n'est pas un temps étudié en 6ᵉ.
+- **Conditionnel** : E 18-5 Ex 4a (« les lieux qu'ils préfèreraient visiter ») — occurrence en consigne seulement.
+- **Phrase interrogative et mots interrogatifs (où, quand, pourquoi, qui)** : R 6-5 Ex 7a, R 8-5 Ex 8 ; inversion « -t-elle », « Aura-t-il… ? », « -tu » : R 4-2 Ex 5, R 6-2 Ex 3, B 5-2 Ex 5. Non listés au tableau de bord.
+- **Négation « ne … rien » et « ne … pas »** : R 8-4 Ex 5 (« Ne rien dire »), R 3-4 Ex 8 ; le programme ne liste que « ne… plus / ne… jamais ».
+- **Dérivation et vocabulaire** : noms → adjectifs (« la curiosité → curieux », B 6-4 Ex 11 ; R 7-4 Ex 9) ; synonymes et expressions de temps synonymes (E 9-1 Ex 2) ; substituts lexicaux (E 8) ; **« adjectifs de couleur / de taille »** et matrices lexicales (E 14-4, E 16-4, I 7-2) ; comparatifs « meilleur(e) » (R 7-2 Ex 3). Hors tableau grammatical (relève du lexique).
+- **Discours direct / dialogue** : l'objectif E 12 (« Respecter les caractéristiques formelles du dialogue ») et E 13 relèvent du programme d'expression écrite ; mais E 13-6 Ex 7 (passage du **discours indirect au discours direct** : « m'ont demandé si j'avais mal. J'ai répondu que… ») et E 12 (« verbes introducteurs de parole ») touchent le discours rapporté, que la fiche renvoie au 9ᵉ.
+- **Faits de langue métalinguistiques** non définis au tableau : « G.N.S » (groupe nominal sujet), « G.V. », « verbe introducteur de parole », « préambule », « situation initiale / finale », « canevas », « toile d'araignée », « articulateurs », « indicateurs de temps / de lieu », « bandelettes », « portfolio » (B 3-3 Ex 9, B 4-2 Ex 5, E 19-8), « cahier de recherches » (R 7-1 Ex 2, E 13-7, E 18-4). Le lexique métalinguistique du fichier est plus riche que celui du tableau.
+- **Formes d'adjectifs à alternance** travaillées (relèvent du tableau M6–M7, listées ici pour mémoire) : -eux/-euse, -if/-ive, -el/-elle, -on/-onne, -il/-ille, -eau/-elle, -euf/-euve, bref/brève, faux/fausse, muet/muette, pareil/pareille, cruel/cruelle, gras/grasse, ancien/ancienne (R 9-1 à R 9-3, B 7-1 à B 7-4).
+
+## 2. Écarts, incohérences et coquilles du manuel (à ne pas reprendre)
+
+- **Répertoire expression écrite (p.334) ≠ pages réelles** : E 1 annoncé p.334, fiche E 1-1 en **p.336** (E 2 p.340, E 3 p.344… sont exacts). Les objectifs **E 4 et E 5** portent le **même libellé** « Eviter les répétitions en utilisant des déterminants possessifs » ; la fiche E 4 traite en réalité des **déterminants démonstratifs** (case 3 : « des déterminants démonstratifs »).
+- **E 19 : numérotation** — l'exercice « 6/ » apparaît deux fois (p.433 E 19-6 ; p.435 E 19-8), suivi de 9 et 10 ; l'exercice des p.435 est vraisemblablement le n° 8.
+- **E 13-4 Ex 4a** : consigne « cinq mini-dialogues », **quatre** couples a–d ↔ 1–4 imprimés.
+- **B 8-1 Ex 2** : la 4ᵉ colonne du tableau est étiquetée « féminin / singulier » (doublon) au lieu de « féminin / pluriel ». **B 3-1 Ex 1** : choix imprimé « (sont - sont) » au lieu de « son - sont ».
+- **R 5-3 Ex 7** : consigne ambiguë (voir ci-dessus). **R 4-4 Ex 9** : la personne et le temps à employer sont portés par un marquage non lu en texte brut `[?]`. **R 1-2 Ex 4** : les 4 débuts / 4 fins ne se relient pas de façon univoque dans le texte extrait `[?]`.
+- **R 9-1 Ex 2** : « Je ne veux emprunter de l'argent à personne » (négation incomplète). **R 9-4 Ex 9** : « Elle sont » ; **B 5-1 Ex 1** : intrus « sont attentif en classe » (accord manquant, volontaire ?). **R 5-1 Ex 1** : « villes tunisienne » (encadré).
+- **Coquilles notées `[sic]`** dans les consignes : « pharases » (E 3-1), « corrrectement » (E 10-4), « utilsant » (I 5-2), « conjugaion » (R 7-1), « abondonnée » (E 2-2)… ; pieds de page : p.322 « 63 ». Ces coquilles ne sont pas à recopier dans le contenu.
+- **Textes d'auteur imprimés** (R-2, à citer avec parcimonie) : « La lettre de Jean » (B 6-1, non signée), « Alex et Alain » (Fanny Joly), « Renaissance » (Barjavel), « Grisou et la souris » (D. Grandpierre), « Le pinson des Ardennes » (A. Theuriet), « Mondo » (J. M. G. Le Clézio), « Portrait du capitaine Nemo » (Jules Verne), extrait d'Anatole France (E 17-4), « Un enfant prodige » (Marcel Pagnol), « Un jardinier chanceux » (Victor Hugo), « La dauphine d'Opononi » (R. Merle), « La chambre » (François Mauriac), texte de Marie Colmont (E 18-4), Georges Nigremont (E 18-2), E. Tabarly (E 3-3), Serge et Dominique Simon (E 3-4), Marguerite Thébold (E 8-4), M. Feraoun (E 7-7), M. J. Beccaria (E 7-7), Edouard Jauffret (E 5-4), Bruno Vizerie (E 9-2), C. Devenois, C. et D. Millet (E 2-2), A. Theuliet (E 13-5), Agnès Diricq (E 10-1), Collection Blend (E 10-3 `[?]`), CRDP Clermont-Ferrand (E 9-1). Beaucoup sont des « d'après » (adaptations).
+
+## 3. Structure du manuel pour la génération
+
+- **Crayon** : aucun ✎✎ sur p.221–438 ; toutes les fiches de **remédiation (R) et d'intégration (I) n'ont pas de crayon**, les fiches **orthographe de base (B)** et **expression écrite (E)** ont un crayon par exercice ; au moins un exercice d'E n'a pas de crayon dans la couche texte (E 6-3 Ex 6) — sans conséquence.
+- **Banque exploitable directement** : orthographe B/R (accords, homophones) fournit des phrases à trous à réponse unique ; conjugaison R (R 3–R 10) fournit des tableaux et transformations fermées ; l'expression écrite fournit surtout des **canevas de production** (non évaluables en QCM) mais aussi des exercices fermés (E 4, E 5, E 7, E 10, E 11, E 12 : choix, trous, appariements).
+- **Reliure avec les modules** : un module = 8 journées (E 9-4 Ex 7a, tableau de l'emploi du temps) ; la structure est « Mise en train / Expression orale / Lecture / Grammaire-Conjugaison-Orthographe / Projet d'écriture ».
