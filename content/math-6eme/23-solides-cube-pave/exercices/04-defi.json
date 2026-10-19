@@ -5,14 +5,33 @@
   "xpReward": 300,
   "rewardCoins": 60,
   "displayOrder": 4,
+  "manuel": {
+    "code": "102609",
+    "pages": "165-168",
+    "items": ["L58 ex. 10", "L58 ex. 7"]
+  },
   "questions": [
     {
       "prompt": "مكعّبٌ طولُ حرفه 7 سم. ما مساحتُه الجمليّة؟",
       "options": [
-        { "id": "a", "text": "294 سم²" },
-        { "id": "b", "text": "196 سم²", "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges" },
-        { "id": "c", "text": "49 سم²", "misconceptionTag": "math.mes.solide-une-seule-face-comptee" },
-        { "id": "d", "text": "147 سم²" }
+        {
+          "id": "a",
+          "text": "294 سم²"
+        },
+        {
+          "id": "b",
+          "text": "196 سم²",
+          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
+        },
+        {
+          "id": "c",
+          "text": "49 سم²",
+          "misconceptionTag": "math.mes.solide-une-seule-face-comptee"
+        },
+        {
+          "id": "d",
+          "text": "147 سم²"
+        }
       ],
       "correctOption": "a",
       "explanation": "الجمليّة = 6 × (الحرف × الحرف) = 6 × (7 × 7) = 6 × 49 = 294 سم².",
@@ -20,38 +39,61 @@
       "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "متوازي مستطيلاتٍ طولُه 5 سم وعرضُه 3 سم وارتفاعُه 4 سم. ما مساحتُه الجانبيّة؟",
+      "prompt": "متوازي مستطيلات أبعاده 9 سم و 6 سم و 4 سم. ما مساحته الجمليّة؟\n<svg viewBox=\"0 0 360 240\"><path d=\"M24 204 L258 204 L258 100 L24 100 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M24 204 L258 204 L258 100 L24 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M24 100 L258 100 L336 22 L102 22 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M24 100 L258 100 L336 22 L102 22 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M258 204 L336 126 L336 22 L258 100 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M258 204 L336 126 L336 22 L258 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M24 204 L102 126\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M102 126 L336 126\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M102 126 L102 22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"141\" y=\"224\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">9</text><text x=\"16\" y=\"157\" text-anchor=\"end\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><text x=\"313\" y=\"179\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text></svg>",
       "options": [
-        { "id": "a", "text": "64 سم²" },
-        { "id": "b", "text": "94 سم²", "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues" },
-        { "id": "c", "text": "60 سم²", "misconceptionTag": "math.mes.volume-utilise-comme-aire" },
-        { "id": "d", "text": "47 سم²" }
+        {
+          "id": "a",
+          "text": "120 سم²",
+          "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues"
+        },
+        {
+          "id": "b",
+          "text": "174 سم²"
+        },
+        {
+          "id": "c",
+          "text": "216 سم²",
+          "misconceptionTag": "math.mes.volume-utilise-comme-aire"
+        },
+        {
+          "id": "d",
+          "text": "228 سم²"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "الجانبيّة = محيطُ القاعدة × الارتفاع = 2 × (5 + 3) × 4 = 16 × 4 = 64 سم².",
-      "difficulty": 3,
-      "competencies": ["math.esp.cube-pave"]
+      "correctOption": "d",
+      "explanation": "الجانبيّة = 2 × (9 + 6) × 4 = 30 × 4 = 120 سم²، ومساحة القاعدة 9 × 6 = 54 سم²، فالجمليّة 120 + 2 × 54 = 228 سم². الأخطاء الشائعة: الاكتفاء بالجانبيّة 120، أو إضافة قاعدة واحدة فنجد 174، أو ضرب الأبعاد الثلاثة 9 × 6 × 4 = 216 وهو مقدار آخر لا مساحة.",
+      "difficulty": 3
     },
     {
-      "prompt": "نفسُ متوازي المستطيلات (الطول 5، العرض 3، الارتفاع 4). ما مساحتُه الجمليّة؟",
-      "options": [
-        { "id": "a", "text": "94 سم²" },
-        { "id": "b", "text": "64 سم²", "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues" },
-        { "id": "c", "text": "79 سم²" },
-        { "id": "d", "text": "124 سم²" }
-      ],
-      "correctOption": "a",
-      "explanation": "الجمليّة = الجانبيّة + 2 × مساحة القاعدة = 64 + 2 × (5 × 3) = 64 + 30 = 94 سم².",
-      "difficulty": 3,
-      "competencies": ["math.esp.cube-pave"]
+      "type": "numeric",
+      "prompt": "متوازي مستطيلات قاعدته مستطيل 7 سم × 3 سم، ومساحته الجمليّة 142 سم². ما ارتفاعه بالسنتيمتر؟\n<svg viewBox=\"0 0 360 223\"><path d=\"M52.5 187 L262.5 187 L262.5 67 L52.5 67 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M52.5 187 L262.5 187 L262.5 67 L52.5 67 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M52.5 67 L262.5 67 L307.5 22 L97.5 22 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M52.5 67 L262.5 67 L307.5 22 L97.5 22 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M262.5 187 L307.5 142 L307.5 22 L262.5 67 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M262.5 187 L307.5 142 L307.5 22 L262.5 67 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M52.5 187 L97.5 142\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M97.5 142 L307.5 142\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M97.5 142 L97.5 22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"157.5\" y=\"207\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">7</text><text x=\"44.5\" y=\"132\" text-anchor=\"end\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">?</text><text x=\"301\" y=\"178.5\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">3</text></svg>",
+      "answerKey": {
+        "value": 5,
+        "unit": "سم"
+      },
+      "explanation": "مساحة القاعدة 7 × 3 = 21 سم²، فالقاعدتان معًا 2 × 21 = 42 سم². الجانبيّة = 142 − 42 = 100 سم². ومحيط القاعدة 2 × (7 + 3) = 20 سم، فالارتفاع 100 ÷ 20 = 5 سم. التحقّق: 20 × 5 + 42 = 142 ✓.",
+      "difficulty": 3
     },
     {
       "prompt": "متوازي مستطيلاتٍ طولُه 10 سم وعرضُه 4 سم وارتفاعُه 5 سم. ما مساحتُه الجانبيّة؟",
       "options": [
-        { "id": "a", "text": "140 سم²" },
-        { "id": "b", "text": "200 سم²", "misconceptionTag": "math.mes.volume-utilise-comme-aire" },
-        { "id": "c", "text": "70 سم²" },
-        { "id": "d", "text": "120 سم²" }
+        {
+          "id": "a",
+          "text": "140 سم²"
+        },
+        {
+          "id": "b",
+          "text": "200 سم²",
+          "misconceptionTag": "math.mes.volume-utilise-comme-aire"
+        },
+        {
+          "id": "c",
+          "text": "70 سم²"
+        },
+        {
+          "id": "d",
+          "text": "120 سم²"
+        }
       ],
       "correctOption": "a",
       "explanation": "الجانبيّة = 2 × (10 + 4) × 5 = 28 × 5 = 140 سم².",
@@ -61,10 +103,24 @@
     {
       "prompt": "صندوقٌ على شكل مكعّبٍ طولُ حرفه 20 سم، نريدُ تغليفَه كاملًا. ما المساحةُ المطلوبة (الجمليّة)؟",
       "options": [
-        { "id": "a", "text": "2 400 سم²" },
-        { "id": "b", "text": "1 600 سم²", "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges" },
-        { "id": "c", "text": "400 سم²", "misconceptionTag": "math.mes.solide-une-seule-face-comptee" },
-        { "id": "d", "text": "240 سم²" }
+        {
+          "id": "a",
+          "text": "2 400 سم²"
+        },
+        {
+          "id": "b",
+          "text": "1 600 سم²",
+          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
+        },
+        {
+          "id": "c",
+          "text": "400 سم²",
+          "misconceptionTag": "math.mes.solide-une-seule-face-comptee"
+        },
+        {
+          "id": "d",
+          "text": "240 سم²"
+        }
       ],
       "correctOption": "a",
       "explanation": "الجمليّة = 6 × (الحرف × الحرف) = 6 × (20 × 20) = 6 × 400 = 2 400 سم².",
@@ -74,15 +130,58 @@
     {
       "prompt": "متوازي مستطيلاتٍ طولُه 6 سم وعرضُه 4 سم وارتفاعُه 2 سم. ما مساحتُه الجمليّة؟",
       "options": [
-        { "id": "a", "text": "88 سم²" },
-        { "id": "b", "text": "40 سم²", "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues" },
-        { "id": "c", "text": "48 سم²" },
-        { "id": "d", "text": "64 سم²" }
+        {
+          "id": "a",
+          "text": "88 سم²"
+        },
+        {
+          "id": "b",
+          "text": "40 سم²",
+          "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues"
+        },
+        {
+          "id": "c",
+          "text": "48 سم²"
+        },
+        {
+          "id": "d",
+          "text": "64 سم²"
+        }
       ],
       "correctOption": "a",
       "explanation": "الجانبيّة = 2 × (6 + 4) × 2 = 40، ومساحةُ القاعدة = 6 × 4 = 24، فالجمليّة = 40 + 2 × 24 = 40 + 48 = 88 سم².",
       "difficulty": 3,
       "competencies": ["math.esp.cube-pave"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "حوض على شكل متوازي مستطيلات مفتوح من الأعلى، طوله 8 م وعرضه 6 م وعمقه 2 م. نريد تبليط قاعه وجدرانه الأربعة من الداخل. ما مساحة السطح المراد تبليطه بالمتر المربّع؟\n<svg viewBox=\"0 0 360 188\"><path d=\"M37 152 L245 152 L245 100 L37 100 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M37 152 L245 152 L245 100 L37 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M37 100 L245 100 L323 22 L115 22 Z\" fill=\"#0f6e56\" fill-opacity=\"0.04\" stroke=\"none\"/><path d=\"M37 100 L245 100 L323 22 L115 22 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M245 152 L323 74 L323 22 L245 100 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M245 152 L323 74 L323 22 L245 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M37 152 L115 74\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M115 74 L323 74\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M115 74 L115 22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"141\" y=\"172\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">8</text><text x=\"29\" y=\"131\" text-anchor=\"end\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">2</text><text x=\"300\" y=\"127\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text></svg>",
+      "answerKey": {
+        "value": 104,
+        "unit": "م²"
+      },
+      "explanation": "الجدران الأربعة: 2 × (8 + 6) × 2 = 28 × 2 = 56 م². القاع: 8 × 6 = 48 م². الحوض مفتوح فله قاعدة واحدة: 56 + 48 = 104 م². التحقّق: الجمليّة 56 + 96 = 152 م² ونطرح غطاءً غير موجود 48 م²: 152 − 48 = 104 ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "يُبلَّط قاع حوض وجدرانه الأربعة، والسطح المراد تبليطه 104 م²، بدلاط مربّع ضلعه 25 سم. تُباع الدلاط في علب في كلّ منها 24 دلاطة، وثمن العلبة 36 د. كم دينارًا ندفع لشراء العلب اللازمة؟",
+      "answerKey": {
+        "value": 2520,
+        "unit": "د"
+      },
+      "explanation": "مساحة الدلاطة الواحدة 25 × 25 = 625 سم² = 0,0625 م²، فعدد الدلاط 104 ÷ 0,0625 = 1 664 دلاطة. عدد العلب 1 664 ÷ 24 = 69,33…، ولا نشتري جزءًا من علبة فنأخذ 70 علبة. الثمن 70 × 36 = 2520 د. التحقّق بطريقة ثانية: في المتر المربّع 16 دلاطة، فالسطح كلّه 104 × 16 = 1 664 دلاطة ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "متوازي مستطيلات عرضه 6 م ومساحة قاعدته 54 م² ومساحته الجمليّة 198 م². ما ارتفاعه بالمتر؟",
+      "answerKey": {
+        "value": 3,
+        "unit": "م"
+      },
+      "explanation": "طول القاعدة 54 ÷ 6 = 9 م، فمحيطها 2 × (9 + 6) = 30 م. القاعدتان معًا 2 × 54 = 108 م²، فالجانبيّة 198 − 108 = 90 م². والجانبيّة = محيط القاعدة × الارتفاع، فالارتفاع 90 ÷ 30 = 3 م. التحقّق: 30 × 3 + 108 = 198 ✓.",
+      "difficulty": 3
     }
   ]
 }

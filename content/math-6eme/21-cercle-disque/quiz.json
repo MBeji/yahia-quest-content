@@ -4,10 +4,24 @@
     {
       "prompt": "ما العلاقةُ بين القطر (ق) ونصف القطر (ر)؟",
       "options": [
-        { "id": "a", "text": "ق = 2 × ر" },
-        { "id": "b", "text": "ر = 2 × ق", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "c", "text": "ق = ر", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "d", "text": "ق = ر + 1" }
+        {
+          "id": "a",
+          "text": "ق = 2 × ر"
+        },
+        {
+          "id": "b",
+          "text": "ر = 2 × ق",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "ق = ر",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "ق = ر + 1"
+        }
       ],
       "correctOption": "a",
       "explanation": "القطرُ ضعفُ نصف القطر: ق = 2 × ر، لأنّه يمرّ بالمركز من طرفٍ إلى طرف.",
@@ -17,10 +31,25 @@
     {
       "prompt": "ما القيمةُ التقريبيّةُ للعدد π؟",
       "options": [
-        { "id": "a", "text": "3,14" },
-        { "id": "b", "text": "3,41", "misconceptionTag": "math.geo.valeur-de-pi-erronee" },
-        { "id": "c", "text": "2,14", "misconceptionTag": "math.geo.valeur-de-pi-erronee" },
-        { "id": "d", "text": "1,34", "misconceptionTag": "math.geo.valeur-de-pi-erronee" }
+        {
+          "id": "a",
+          "text": "3,14"
+        },
+        {
+          "id": "b",
+          "text": "3,41",
+          "misconceptionTag": "math.geo.valeur-de-pi-erronee"
+        },
+        {
+          "id": "c",
+          "text": "2,14",
+          "misconceptionTag": "math.geo.valeur-de-pi-erronee"
+        },
+        {
+          "id": "d",
+          "text": "1,34",
+          "misconceptionTag": "math.geo.valeur-de-pi-erronee"
+        }
       ],
       "correctOption": "a",
       "explanation": "نأخذُ في حساباتنا π ≈ 3,14، وهو عددٌ ثابتٌ يربطُ المحيطَ بالقطر.",
@@ -30,10 +59,25 @@
     {
       "prompt": "ما صيغةُ محيط الدائرة؟",
       "options": [
-        { "id": "a", "text": "2 × π × ر" },
-        { "id": "b", "text": "π × ر × ر", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
-        { "id": "c", "text": "ر × ر", "misconceptionTag": "math.geo.facteur-pi-omis" },
-        { "id": "d", "text": "2 × ر", "misconceptionTag": "math.geo.facteur-pi-omis" }
+        {
+          "id": "a",
+          "text": "2 × π × ر"
+        },
+        {
+          "id": "b",
+          "text": "π × ر × ر",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        },
+        {
+          "id": "c",
+          "text": "ر × ر",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
+        },
+        {
+          "id": "d",
+          "text": "2 × ر",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
+        }
       ],
       "correctOption": "a",
       "explanation": "محيطُ الدائرة = 2 × π × ر (أو π × ق)؛ أمّا π × ر × ر فهي مساحةُ القرص.",
@@ -43,10 +87,24 @@
     {
       "prompt": "دائرةٌ نصفُ قطرها 3 سم. ما طولُ قطرها؟",
       "options": [
-        { "id": "a", "text": "6 سم" },
-        { "id": "b", "text": "3 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "c", "text": "9 سم" },
-        { "id": "d", "text": "1,5 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" }
+        {
+          "id": "a",
+          "text": "6 سم"
+        },
+        {
+          "id": "b",
+          "text": "3 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "9 سم"
+        },
+        {
+          "id": "d",
+          "text": "1,5 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        }
       ],
       "correctOption": "a",
       "explanation": "القطر = 2 × نصف القطر = 2 × 3 = 6 سم.",
@@ -56,15 +114,78 @@
     {
       "prompt": "ما صيغةُ مساحة القرص؟",
       "options": [
-        { "id": "a", "text": "π × ر × ر" },
-        { "id": "b", "text": "2 × π × ر", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
-        { "id": "c", "text": "π × ق", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
-        { "id": "d", "text": "ر + ر" }
+        {
+          "id": "a",
+          "text": "π × ر × ر"
+        },
+        {
+          "id": "b",
+          "text": "2 × π × ر",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        },
+        {
+          "id": "c",
+          "text": "π × ق",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        },
+        {
+          "id": "d",
+          "text": "ر + ر"
+        }
       ],
       "correctOption": "a",
       "explanation": "مساحةُ القرص = π × ر × ر؛ أمّا 2 × π × ر فهي محيطُ الدائرة.",
       "difficulty": 2,
       "competencies": ["math.geo.cercle", "math.mes.aires"]
+    },
+    {
+      "prompt": "حوض مستدير نصف قطره 4 م يحيط به رصيف مستدير نصف قطره الخارجي 6 م. كيف نحسب مساحة الرصيف (الإكليل)؟\n<svg viewBox=\"0 0 360 230\"><circle cx=\"180\" cy=\"115\" r=\"95\" fill=\"#0f6e56\" fill-opacity=\"0.2\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"63\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"3\" fill=\"#0f172a\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "مساحة القرص الكبير ناقص مساحة القرص الصغير"
+        },
+        {
+          "id": "b",
+          "text": "مساحة القرص الكبير زائد مساحة القرص الصغير"
+        },
+        {
+          "id": "c",
+          "text": "π × 2 × 2 لأنّ عرض الرصيف 2 م"
+        },
+        {
+          "id": "d",
+          "text": "محيط الدائرة الكبرى ناقص محيط الدائرة الصغرى"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الرصيف (الإكليل) هو القرص الكبير بعد نزع القرص الصغير، فمساحته = مساحة القرص الكبير − مساحة القرص الصغير. وعرض الرصيف 2 م ليس نصف قطر قرص، والمحيطات أطوال لا مساحات.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ما طول نصف دائرة قطرها 22 سم؟ (π ≈ 3,14)",
+      "options": [
+        {
+          "id": "a",
+          "text": "34,54 سم"
+        },
+        {
+          "id": "b",
+          "text": "56,54 سم"
+        },
+        {
+          "id": "c",
+          "text": "69,08 سم"
+        },
+        {
+          "id": "d",
+          "text": "379,94 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "محيط الدائرة الكاملة π × ق = 3,14 × 22 = 69,08 سم، ونصف الدائرة نصفه: 69,08 ÷ 2 = 34,54 سم. من توقّف عند 69,08 أخذ الدائرة كلّها، ومن أضاف القطر 22 وجد 56,54 وهو محيط نصف القرص لا نصف الدائرة.",
+      "difficulty": 2
     }
   ]
 }
