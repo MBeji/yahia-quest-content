@@ -15,7 +15,7 @@ Un complément de lieu est un **complément non essentiel** : on peut le **suppr
 
 :::
 
-| Phrase                                                | Question au verbe            | Complément de lieu      |
+| Phrase                                                | Question au verbe            | Lieu                    |
 | ----------------------------------------------------- | ---------------------------- | ----------------------- |
 | _Le clown salue le public **au centre de la piste**._ | il salue **où ?**            | _au centre de la piste_ |
 | _Le cirque fait une tournée **en Europe**._           | il fait une tournée **où ?** | _en Europe_             |
@@ -70,7 +70,7 @@ Au **futur**, le radical change : _aller_ devient **ir-**, _faire_ devient **fer
 
 **Au passé composé**
 
-| Personne    | aller                              | faire           |
+| Sujet       | aller                              | faire           |
 | ----------- | ---------------------------------- | --------------- |
 | je          | je suis allé(e)                    | j'ai fait       |
 | tu          | tu es allé(e)                      | tu as fait      |
@@ -81,7 +81,7 @@ Au **futur**, le radical change : _aller_ devient **ir-**, _faire_ devient **fer
 
 **Au futur**
 
-| Personne    | aller      | faire       |
+| Sujet       | aller      | faire       |
 | ----------- | ---------- | ----------- |
 | je          | j'irai     | je ferai    |
 | tu          | tu iras    | tu feras    |

@@ -16,12 +16,12 @@ Une phrase est formée d'un **groupe nominal sujet** (GNS) et d'un **groupe verb
 
 :::
 
-| Phrase                                 | Groupe testé     | On le supprime…             | Verdict       |
-| -------------------------------------- | ---------------- | --------------------------- | ------------- |
-| _Il voit **un orque** dans un bassin._ | _un orque_       | _Il voit dans un bassin._ ✗ | essentiel     |
-| _Il voit un orque **dans un bassin**._ | _dans un bassin_ | _Il voit un orque._ ✓       | non essentiel |
+| Groupe testé     | Sans lui                    | Verdict       |
+| ---------------- | --------------------------- | ------------- |
+| _un orque_       | _Il voit dans un bassin._ ✗ | essentiel     |
+| _dans un bassin_ | _Il voit un orque._ ✓       | non essentiel |
 
-Le tableau relie le **test de suppression** au verdict : la phrase tient sans le groupe, il est non essentiel.
+Le tableau (phrase de départ : _Il voit un orque dans un bassin._) relie le **test de suppression** au verdict : la phrase tient sans le groupe, il est non essentiel.
 
 ::: exemple Trouver les compléments de _« Hier, Sarra a parlé de son projet à ses amis. »_
 
@@ -73,7 +73,7 @@ _Prendre_ et _mettre_ sont des verbes du **3ᵉ groupe**.
 
 **Au passé composé**
 
-| Personne    | prendre         | mettre         |
+| Sujet       | prendre         | mettre         |
 | ----------- | --------------- | -------------- |
 | je          | j'ai pris       | j'ai mis       |
 | tu          | tu as pris      | tu as mis      |
@@ -84,7 +84,7 @@ _Prendre_ et _mettre_ sont des verbes du **3ᵉ groupe**.
 
 **Au futur**
 
-| Personne    | prendre        | mettre        |
+| Sujet       | prendre        | mettre        |
 | ----------- | -------------- | ------------- |
 | je          | je prendrai    | je mettrai    |
 | tu          | tu prendras    | tu mettras    |
