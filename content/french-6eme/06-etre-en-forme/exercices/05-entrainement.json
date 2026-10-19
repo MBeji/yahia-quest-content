@@ -34,30 +34,63 @@
       "difficulty": 2
     },
     {
-      "prompt": "Quel sport est un sport collectif ?",
+      "type": "matching",
+      "prompt": "Relie chaque mot de la santé à sa définition.",
       "options": [
         {
-          "id": "a",
-          "text": "le cyclisme",
-          "misconceptionTag": "fr.lexique.mot-voisin-du-meme-champ"
+          "id": "l1",
+          "text": "la santé"
         },
         {
-          "id": "b",
-          "text": "le handball"
+          "id": "l2",
+          "text": "l'hygiène"
         },
         {
-          "id": "c",
-          "text": "l'athlétisme",
-          "misconceptionTag": "fr.lexique.mot-voisin-du-meme-champ"
+          "id": "l3",
+          "text": "la forme"
         },
         {
-          "id": "d",
-          "text": "la gymnastique",
-          "misconceptionTag": "fr.lexique.mot-voisin-du-meme-champ"
+          "id": "l4",
+          "text": "l'entraînement"
+        },
+        {
+          "id": "r1",
+          "text": "l'état d'une personne qui se porte bien"
+        },
+        {
+          "id": "r2",
+          "text": "les soins pour rester propre et en bonne santé"
+        },
+        {
+          "id": "r3",
+          "text": "le fait de se sentir bien et plein d'énergie"
+        },
+        {
+          "id": "r4",
+          "text": "les exercices faits pour être prêt le jour d'une compétition"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Un sport collectif se joue en équipe : le handball. Le cyclisme, l'athlétisme et la gymnastique sont des sports individuels, même si on peut les pratiquer à côté d'autres sportifs.",
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La santé est l'état d'une personne qui se porte bien ; l'hygiène regroupe les soins pour rester propre et en bonne santé (se laver, bien manger, bien dormir) ; la forme est le fait de se sentir plein d'énergie ; l'entraînement prépare à la compétition.",
       "difficulty": 2
     },
     {

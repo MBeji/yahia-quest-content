@@ -170,30 +170,22 @@
       "difficulty": 2
     },
     {
-      "prompt": "Mets au passé composé : « Avec qui vas-tu au théâtre, Karim ? »",
-      "options": [
+      "type": "short_answer",
+      "prompt": "Écris le verbe entre parenthèses au passé composé : « Hier après-midi, ma cousine (aller) ___ à l'infirmerie de l'école. »",
+      "answerKey": {
+        "text": "est allée"
+      },
+      "expectedMistakes": [
         {
-          "id": "a",
-          "text": "Avec qui as-tu allé au théâtre, Karim ?",
+          "text": "a allé",
           "misconceptionTag": "fr.conj.auxiliaire-mal-choisi"
         },
         {
-          "id": "b",
-          "text": "Avec qui iras-tu au théâtre, Karim ?",
-          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
-        },
-        {
-          "id": "c",
-          "text": "Avec qui es-tu aller au théâtre, Karim ?",
-          "misconceptionTag": "fr.conj.infinitif-a-la-place-du-participe"
-        },
-        {
-          "id": "d",
-          "text": "Avec qui es-tu allé au théâtre, Karim ?"
+          "text": "est allé",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Pour passer au passé composé, on emploie l'auxiliaire « être » avec « aller », puis le participe « allé ». Karim est un garçon : allé, sans e. « As-tu allé » prend le mauvais auxiliaire, « iras-tu » est le futur et « aller » l'infinitif.",
+      "explanation": "« Hier après-midi » demande le passé composé. Le verbe « aller » se conjugue avec l'auxiliaire « être » à la 3e personne du singulier, et son participe s'accorde avec le sujet « ma cousine », qui est féminin singulier.",
       "difficulty": 2
     }
   ]
