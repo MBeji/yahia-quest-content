@@ -1,0 +1,6 @@
+# Notes d'auteur — lot B3 (chapitres 05 et 06)
+
+- Cours écrits d'abord, étiquettes ensuite : le vocabulaire (`vocab-french-6eme.json`) est apparu en cours de route. Les `coursePitfalls` sont tous des ids de la carte du module (ch. 05 : `fr.complement.essentiel-non-essentiel-confondus`, `fr.conj.participe-passe-mal-termine`, `fr.conj.futur-mal-forme`, `fr.accord.nom-le-plus-proche`, `fr.accord.sujet-inverse-non-repere`, `fr.texte.description-narration-confondues` ; ch. 06 : `fr.complement.lieu-temps-maniere-confondus`, `fr.conj.auxiliaire-mal-choisi`, `fr.accord.pp-etre-non-accorde`, `fr.conj.forme-irreguliere-regularisee`, `fr.accord.feminin-adjectif-mal-forme`, `fr.dialogue.ponctuation-oubliee`).
+- Pièges de cours sans étiquette (aucun id dans la carte du module) : `pourtant / donc` (ch. 05), liste de détails au lieu d'un portrait (ch. 05), répétition du nom (ch. 05), ordre des parties de la lettre (ch. 06), inventaire pour décrire un lieu (ch. 06). Ils sont montrés dans des blocs `piege` mais non déclarés.
+- Contrôles lancés dans une copie d'engine ne contenant que les chapitres 05 et 06 (le chargeur refuse les chapitres voisins encore sans `quiz.json`) ; le lien `eng-deliver/content` n'a pas été touché.
+- F5 respectée : aucun distracteur d'accord du participe avec avoir ; seuls des participes avec être (aller) sont accordés.

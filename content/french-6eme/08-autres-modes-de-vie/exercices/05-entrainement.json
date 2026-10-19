@@ -1,0 +1,171 @@
+{
+  "title": "📝 Entraînement ⭐⭐⭐ : Bilan du module",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "manuel": {
+    "code": "121614P00",
+    "pages": "132",
+    "items": ["jeux p.132 ex.3", "jeux p.132 ex.4", "jeux p.132 ex.5"]
+  },
+  "questions": [
+    {
+      "prompt": "Quel mot n'est pas de la même famille que les autres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la course"
+        },
+        {
+          "id": "b",
+          "text": "le coureur"
+        },
+        {
+          "id": "c",
+          "text": "parcourir"
+        },
+        {
+          "id": "d",
+          "text": "le courage"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La course, le coureur et parcourir viennent tous du verbe courir. Le courage, lui, vient d'un autre mot : il parle de la force d'âme et pas de courir.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Trouve les contraires.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "partir"
+        },
+        {
+          "id": "l2",
+          "text": "décoller"
+        },
+        {
+          "id": "l3",
+          "text": "se quitter"
+        },
+        {
+          "id": "r1",
+          "text": "atterrir"
+        },
+        {
+          "id": "r2",
+          "text": "se retrouver"
+        },
+        {
+          "id": "r3",
+          "text": "arriver"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r3"],
+          ["l2", "r1"],
+          ["l3", "r2"]
+        ]
+      },
+      "explanation": "Partir s'oppose à arriver, décoller à atterrir, et se quitter à se retrouver.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "« À Buñol, en Espagne, on célèbre chaque année en août la Tomatina : des milliers de personnes se lancent des tomates mûres dans les rues. » À quoi sert ce texte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À raconter une aventure.",
+          "misconceptionTag": "fr.texte.informatif-pris-pour-narratif"
+        },
+        {
+          "id": "b",
+          "text": "À informer sur une fête."
+        },
+        {
+          "id": "c",
+          "text": "À expliquer comment fabriquer un objet."
+        },
+        {
+          "id": "d",
+          "text": "À écrire à un ami."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le texte donne des renseignements sur une fête (où, quand, ce qu'on y fait), au présent : c'est un texte documentaire. Il ne raconte aucune histoire, ne donne aucune consigne et n'a ni interpellation ni signature.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "« Ingrédients : deux œufs, un verre de lait, de la farine. 1. Casse les œufs dans un bol. 2. Ajoute le lait et la farine. 3. Mélange bien. » Quel est le type de ce texte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un récit qui raconte un goûter en famille.",
+          "misconceptionTag": "fr.texte.injonctif-non-reconnu"
+        },
+        {
+          "id": "b",
+          "text": "Un texte qui informe sur l'histoire des crêpes.",
+          "misconceptionTag": "fr.texte.injonctif-non-reconnu"
+        },
+        {
+          "id": "c",
+          "text": "Un texte qui dit comment préparer une recette."
+        },
+        {
+          "id": "d",
+          "text": "Une lettre à un ami pour lui parler de ses loisirs.",
+          "misconceptionTag": "fr.texte.injonctif-non-reconnu"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une liste d'ingrédients, des étapes numérotées et des verbes à l'impératif (casse, ajoute, mélange) : c'est un texte qui dit comment faire. Il ne raconte rien, n'informe pas sur l'histoire des crêpes et ne s'adresse pas à un ami.",
+      "difficulty": 2
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Quel mot désigne l'action de descendre d'un bateau ou d'un avion à l'arrivée ?",
+      "answerKey": {
+        "text": "débarquer"
+      },
+      "explanation": "On cherche le contraire d'« embarquer » (monter à bord) : le préfixe dé- annonce l'action inverse, et le mot se forme sur la même racine que « barque ».",
+      "difficulty": 3,
+      "expectedMistakes": [
+        {
+          "text": "embarquer",
+          "misconceptionTag": "fr.lexique.contraire-pour-synonyme"
+        }
+      ]
+    },
+    {
+      "prompt": "Que veut dire le proverbe « Tous les chemins mènent à Rome » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il y a plusieurs moyens d'atteindre un même but."
+        },
+        {
+          "id": "b",
+          "text": "Il n'y a qu'un seul moyen d'atteindre un même but."
+        },
+        {
+          "id": "c",
+          "text": "Toutes les routes du pays arrivent dans la ville de Rome.",
+          "misconceptionTag": "fr.lexique.sens-figure-lu-au-propre"
+        },
+        {
+          "id": "d",
+          "text": "Il faut obligatoirement passer par Rome pour voyager.",
+          "misconceptionTag": "fr.lexique.sens-figure-lu-au-propre"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un proverbe a un sens figuré : on peut arriver au même but par plusieurs chemins. Il ne parle pas de vraies routes qui mènent à Rome. Et il dit le contraire de « un seul moyen ».",
+      "difficulty": 3
+    }
+  ]
+}

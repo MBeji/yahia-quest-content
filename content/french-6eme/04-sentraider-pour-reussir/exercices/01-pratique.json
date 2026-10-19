@@ -1,0 +1,182 @@
+{
+  "title": "⭐ Exercice : Duke, le chien guide",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle phrase est la forme négative de « Le chien chasse encore les chats. » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le chien ne chasse plus les chats."
+        },
+        {
+          "id": "b",
+          "text": "Le chien ne chasse jamais les chats.",
+          "misconceptionTag": "fr.phrase.negation-sens-inexact"
+        },
+        {
+          "id": "c",
+          "text": "Le chien chasse plus les chats.",
+          "misconceptionTag": "fr.phrase.ne-oublie"
+        },
+        {
+          "id": "d",
+          "text": "Le chien ne plus chasse les chats.",
+          "misconceptionTag": "fr.phrase.negation-mal-placee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le mot « encore » devient « ne… plus » : ne devant le verbe, plus juste après. Le chien chassait avant et ne chasse plus maintenant. « Jamais » voudrait dire qu'il n'a jamais chassé.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque phrase à sa forme négative.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Il joue encore."
+        },
+        {
+          "id": "l2",
+          "text": "Il joue toujours."
+        },
+        {
+          "id": "l3",
+          "text": "Il a encore joué."
+        },
+        {
+          "id": "l4",
+          "text": "Il a toujours joué."
+        },
+        {
+          "id": "r1",
+          "text": "Il n'a jamais joué."
+        },
+        {
+          "id": "r2",
+          "text": "Il ne joue plus."
+        },
+        {
+          "id": "r3",
+          "text": "Il n'a plus joué."
+        },
+        {
+          "id": "r4",
+          "text": "Il ne joue jamais."
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r4"],
+          ["l3", "r3"],
+          ["l4", "r1"]
+        ]
+      },
+      "explanation": "« Encore » devient « ne… plus » et « toujours » devient « ne… jamais ». Au passé composé, ne se place avant l'auxiliaire « a » et plus ou jamais juste après lui.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Complète : « Hier, nous avons ___ un jeu pour le goûter. » (verbe choisir)",
+      "options": [
+        {
+          "id": "a",
+          "text": "choisit",
+          "misconceptionTag": "fr.conj.participe-passe-mal-termine"
+        },
+        {
+          "id": "b",
+          "text": "choisir"
+        },
+        {
+          "id": "c",
+          "text": "choisira"
+        },
+        {
+          "id": "d",
+          "text": "choisi"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Après « avons », on écrit le participe passé. Pour les verbes comme finir, il se termine par -i, sans t. Le t appartient au présent de la 3e personne (il choisit).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Demain, les deux enfants ___ un autre jeu. (verbe choisir)",
+      "options": [
+        {
+          "id": "a",
+          "text": "ont choisi",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        },
+        {
+          "id": "b",
+          "text": "choisirons"
+        },
+        {
+          "id": "c",
+          "text": "choisiront"
+        },
+        {
+          "id": "d",
+          "text": "choisissent",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Demain » annonce le futur : on garde l'infinitif entier (choisir) puis la terminaison -ont pour « ils ». « Ont choisi » est un passé composé et « choisirons » correspond à nous.",
+      "difficulty": 2
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Écris le verbe « finir » à la 1re personne du singulier du futur pour compléter : « Demain, je ___ mes devoirs. »",
+      "answerKey": {
+        "text": "finirai"
+      },
+      "explanation": "On garde l'infinitif en entier, puis on ajoute la terminaison de « je ». Le futur de ces verbes se forme comme celui des autres verbes : infinitif complet + -ai, -as, -a, -ons, -ez, -ont.",
+      "difficulty": 2,
+      "expectedMistakes": [
+        {
+          "text": "finerai",
+          "misconceptionTag": "fr.conj.futur-mal-forme"
+        },
+        {
+          "text": "finis",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        }
+      ]
+    },
+    {
+      "prompt": "Complète : « Mon père ___ ma mère travaillent. Il ___ tard. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "est … et",
+          "misconceptionTag": "fr.homophone.et-est-confondus"
+        },
+        {
+          "id": "b",
+          "text": "et … est"
+        },
+        {
+          "id": "c",
+          "text": "et … et",
+          "misconceptionTag": "fr.homophone.et-est-confondus"
+        },
+        {
+          "id": "d",
+          "text": "est … est",
+          "misconceptionTag": "fr.homophone.et-est-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le premier blanc relie deux personnes : on peut dire « et aussi », donc et. Le second est le verbe être : « Il était tard » marche, donc est.",
+      "difficulty": 2
+    }
+  ]
+}

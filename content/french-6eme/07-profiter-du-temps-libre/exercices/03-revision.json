@@ -1,0 +1,173 @@
+{
+  "title": "⭐⭐ Révision (style concours) : Écrire à un ami",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "code": "121615P00",
+    "pages": "85, 87, 94",
+    "items": ["ex. 2a p.85", "ex. 1 p.87", "ex. 2 p.87", "ex. 4a p.94"]
+  },
+  "questions": [
+    {
+      "prompt": "Écris au pluriel : « Dis-moi ton avis sur ce film. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dites-moi ton avis sur ce film."
+        },
+        {
+          "id": "b",
+          "text": "Disez-moi votre avis sur ce film.",
+          "misconceptionTag": "fr.conj.forme-irreguliere-regularisee"
+        },
+        {
+          "id": "c",
+          "text": "Disons-moi votre avis sur ce film."
+        },
+        {
+          "id": "d",
+          "text": "Dites-moi votre avis sur ce film."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le pluriel de l'impératif tu dis est vous dites : on dit « Dites-moi ». Le tu devient vous, donc ton devient votre. « Disez » n'existe pas, « disons » correspond à nous, et « ton avis » garde un possessif de tu alors que le verbe est à vous.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Conjugue au passé composé : « J'… la vérité. » (dire)",
+      "options": [
+        {
+          "id": "a",
+          "text": "ai dire",
+          "misconceptionTag": "fr.conj.infinitif-a-la-place-du-participe"
+        },
+        {
+          "id": "b",
+          "text": "ai dit"
+        },
+        {
+          "id": "c",
+          "text": "ai dis",
+          "misconceptionTag": "fr.conj.participe-passe-mal-termine"
+        },
+        {
+          "id": "d",
+          "text": "dis"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Au passé composé, on met l'auxiliaire avoir puis le participe passé de dire : dit, avec un t. « Dire » est l'infinitif et « dis » est le présent, sans l'auxiliaire attendu.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "« Tunis, le 3 mai. Chère Lina, samedi dernier j'ai joué aux échecs avec mon grand-père. Je t'embrasse. Sami. » Qui écrit à qui, et d'où ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sami écrit à Lina, de Tunis."
+        },
+        {
+          "id": "b",
+          "text": "Sami écrit à son grand-père, de Tunis.",
+          "misconceptionTag": "fr.lecture.personnage-confondu"
+        },
+        {
+          "id": "c",
+          "text": "Lina écrit à Sami, de Tunis.",
+          "misconceptionTag": "fr.lecture.personnage-confondu"
+        },
+        {
+          "id": "d",
+          "text": "Sami écrit à Lina, le 3 mai."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La signature dit qui écrit : Sami. L'interpellation « Chère Lina » dit à qui. Le lieu écrit en haut dit d'où : Tunis. Le grand-père est seulement cité dans le texte, et « le 3 mai » répond à la question « quand ? », pas « d'où ? ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "« Hammamet, le 20 juillet. Cher Karim, je passe mes vacances chez mon oncle. Le matin, je nage ; l'après-midi, je lis des bandes dessinées. Écris-moi vite ! Yacine. » Quelle affirmation est prouvée par cette lettre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Karim est le cousin de Yacine, car il lui écrit.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
+        {
+          "id": "b",
+          "text": "Yacine n'aime pas lire de bandes dessinées.",
+          "misconceptionTag": "fr.lecture.contraire-du-texte"
+        },
+        {
+          "id": "c",
+          "text": "Yacine est chez son oncle."
+        },
+        {
+          "id": "d",
+          "text": "Karim a déjà répondu à la lettre de Yacine.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La phrase « je passe mes vacances chez mon oncle » le prouve. La lettre ne dit pas que Karim est un cousin, ni qu'il a déjà répondu (Yacine lui demande de le faire). Et Yacine dit qu'il lit des bandes dessinées : ce n'est pas qu'il n'aime pas lire.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les phrases de ce récit de la colonie de vacances.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il s'est arrêté de courir quand il a vu le troupeau et le berger près de la pente."
+        },
+        {
+          "id": "b",
+          "text": "Le jour du départ de la colonie, le chevreau a suivi tous les préparatifs des enfants."
+        },
+        {
+          "id": "c",
+          "text": "Quand le car a démarré, il a couru derrière."
+        }
+      ],
+      "answerKey": {
+        "order": ["b", "c", "a"]
+      },
+      "explanation": "Le texte suit le temps : d'abord le jour du départ (les préparatifs), ensuite le démarrage du car (le chevreau court derrière), enfin l'arrêt quand il voit le troupeau.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "« Laurent aime l'odeur du métro souterrain. L'enfant aime aussi l'éclairage vive des stations et le claquement brusque des portières. Dans les couloirs animé, il admire les affiches multicolore. » Quels adjectifs sont mal accordés ? Choisis TOUS les bons.",
+      "options": [
+        {
+          "id": "a",
+          "text": "souterrain"
+        },
+        {
+          "id": "b",
+          "text": "vive"
+        },
+        {
+          "id": "c",
+          "text": "brusque"
+        },
+        {
+          "id": "d",
+          "text": "animé"
+        },
+        {
+          "id": "e",
+          "text": "multicolore"
+        }
+      ],
+      "answerKey": {
+        "correct": ["b", "d", "e"]
+      },
+      "explanation": "« Éclairage » est masculin : on écrit vif ; vive est le féminin, comme neuve pour neuf. « Couloirs » est masculin pluriel : animés. « Affiches » est féminin pluriel : multicolores, car un adjectif en -e prend seulement le s. « Souterrain » et « brusque » s'accordent bien avec « métro » et « claquement », masculins singuliers.",
+      "difficulty": 2
+    }
+  ]
+}

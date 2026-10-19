@@ -1,0 +1,193 @@
+{
+  "title": "📝 Entraînement ⭐⭐⭐ : Toute la guilde",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "manuel": {
+    "pages": "23",
+    "items": ["jeu 4 p. 23"]
+  },
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Relie chaque petite annonce au métier qu'elle cherche.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Cherchons pour notre directeur une … bilingue."
+        },
+        {
+          "id": "l2",
+          "text": "Grand restaurant cherche un … expérimenté."
+        },
+        {
+          "id": "l3",
+          "text": "Magasin de vêtements cherche des … qualifiés."
+        },
+        {
+          "id": "l4",
+          "text": "Cabinet d'architecte cherche un … industriel."
+        },
+        {
+          "id": "l5",
+          "text": "Hôpital régional cherche deux … diplômées."
+        },
+        {
+          "id": "l6",
+          "text": "Salon de beauté cherche une …"
+        },
+        {
+          "id": "r1",
+          "text": "dessinateur"
+        },
+        {
+          "id": "r2",
+          "text": "assistante"
+        },
+        {
+          "id": "r3",
+          "text": "esthéticienne"
+        },
+        {
+          "id": "r4",
+          "text": "serveur"
+        },
+        {
+          "id": "r5",
+          "text": "infirmières"
+        },
+        {
+          "id": "r6",
+          "text": "vendeurs"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r4"],
+          ["l3", "r6"],
+          ["l4", "r1"],
+          ["l5", "r5"],
+          ["l6", "r3"]
+        ]
+      },
+      "explanation": "Chaque annonce donne un lieu et un déterminant qui permettent de choisir : un restaurant cherche un serveur, un hôpital des infirmières, un salon de beauté une esthéticienne, un cabinet d'architecte un dessinateur, un magasin des vendeurs, un directeur une assistante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel mot-outil peut remplacer « brusquement » dans la phrase : « Brusquement, la lumière s'éteint » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Souvent"
+        },
+        {
+          "id": "b",
+          "text": "Toujours"
+        },
+        {
+          "id": "c",
+          "text": "Parfois"
+        },
+        {
+          "id": "d",
+          "text": "Soudain"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Brusquement » et « soudain » annoncent tous deux un événement qui arrive vite, sans prévenir. Souvent, toujours et parfois disent à quelle fréquence une chose arrive, pas qu'elle arrive d'un coup.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Joël est animateur dans un village de vacances. Sylvie, elle, a vendu des chaussures dans un grand magasin pendant les vacances ; elle rêve d'être bibliothécaire un jour. Quel métier Sylvie a-t-elle vraiment exercé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "animatrice dans un village de vacances",
+          "misconceptionTag": "fr.lecture.personnage-confondu"
+        },
+        {
+          "id": "b",
+          "text": "vendeuse de chaussures"
+        },
+        {
+          "id": "c",
+          "text": "bibliothécaire",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
+        {
+          "id": "d",
+          "text": "vendeuse de livres"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le texte dit que Sylvie a vendu des chaussures : c'est le métier qu'elle a exercé. Bibliothécaire n'est qu'un rêve pour plus tard, animateur est le métier de Joël, et rien ne dit qu'elle a vendu des livres.",
+      "difficulty": 2
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Complète par le contraire de « beaucoup » : « Dans ce village, il y a … de médecins. »",
+      "answerKey": {
+        "text": "peu"
+      },
+      "explanation": "Beaucoup dit une grande quantité ; son contraire dit une petite quantité, avec un mot court de trois lettres que les mots-outils du module font retenir.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Tu racontes la première nuit d'Adam, apprenti boulanger. Quelle phrase convient pour terminer ton récit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le boulanger est un artisan qui fabrique le pain avec de la farine.",
+          "misconceptionTag": "fr.production.type-de-texte-non-respecte"
+        },
+        {
+          "id": "b",
+          "text": "Au matin, les pains sont dorés et le patron félicite Adam."
+        },
+        {
+          "id": "c",
+          "text": "Adam arrive à la boulangerie à trois heures du matin.",
+          "misconceptionTag": "fr.recit.partie-du-recit-confondue"
+        },
+        {
+          "id": "d",
+          "text": "Les voitures sont de plus en plus nombreuses dans les grandes villes.",
+          "misconceptionTag": "fr.production.hors-sujet"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une fin dit comment l'histoire se termine : ici, le succès d'Adam. « Adam arrive à trois heures » est un début ; « le boulanger est un artisan… » explique au lieu de raconter ; et les voitures n'ont rien à voir avec le récit.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Samia et Lina commencent le service au restaurant. Quelle phrase est entièrement correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils commencent par préparer les tables.",
+          "misconceptionTag": "fr.reprise.substitut-ne-correspond-pas"
+        },
+        {
+          "id": "b",
+          "text": "Elles commence par préparer les tables.",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        },
+        {
+          "id": "c",
+          "text": "Elles commencent par préparez les tables.",
+          "misconceptionTag": "fr.conj.infinitif-apres-preposition-oublie"
+        },
+        {
+          "id": "d",
+          "text": "Elles commencent par préparer les tables."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Samia et Lina forment un groupe de deux filles : le pronom est « elles », le verbe prend la terminaison -ent, et après « par » on écrit l'infinitif préparer. Chacune des trois autres phrases comporte une de ces erreurs.",
+      "difficulty": 3
+    }
+  ]
+}

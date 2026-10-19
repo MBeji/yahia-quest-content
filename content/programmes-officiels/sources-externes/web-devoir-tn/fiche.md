@@ -67,3 +67,16 @@ que Q-2 n'est pas arbitrée, pas de T2 : le site ré-héberge des œuvres d'ense
 - **robots.txt** relu le 2026-10-18 : `Allow: /` ; aucune règle ne ferme ce chemin.
 - **Tier** inchangé : **T2′** (salle blanche).
 - Échantillon et empreintes : [`web-6eme-base-english`](../web-6eme-base-english/fiche.md).
+
+## 6. Primaire — 6ᵉ français (ajout du 2026-10-19, gisement français 6ᵉ)
+
+- **Rangement.** Pas de rubrique « Français » unique : `primaire/السـ6ـنة/` range le français en
+  quatre rubriques, `Langue/`, `Lecture/`, `Production-écrite/` et `Dictée/`, chacune avec
+  `Devoirs/{1-ère,2-ème,3-ème}-Trimestre.html` (la dictée n'a pas de page de 3ᵉ trimestre) : 72
+  entrées, fichiers sous `primaire/Doc/…`. Une même épreuve peut être rangée dans deux rubriques
+  (devoir de synthèse n°1 Tadris.TN, Langue et Lecture, T1). La plupart des épreuves ne portent ni
+  nom ni année dans leur nom de fichier.
+- **robots.txt** relu le 2026-10-19 : `Allow: /` ; `Allow: */Doc/*/Devoirs/*` ; aucune règle ne
+  ferme ces chemins.
+- **Tier** inchangé : **T2′** (salle blanche).
+- Échantillon et empreintes : [`web-6eme-base-french`](../web-6eme-base-french/fiche.md).

@@ -1,0 +1,180 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Au fil du cahier",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "code": "121615P00",
+    "pages": "58, 65, 67",
+    "items": [
+      "ex. 2 p. 58",
+      "ex. 1 p. 65",
+      "ex. 2 p. 67",
+      "ex. 3 p. 67",
+      "ex. 4 p. 67"
+    ]
+  },
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Complète chaque phrase avec le groupe qui convient, en t'aidant de la question entre parenthèses.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Guy s'intéresse … (à quoi ?)"
+        },
+        {
+          "id": "l2",
+          "text": "Il veut découvrir … (quoi ?)"
+        },
+        {
+          "id": "l3",
+          "text": "Il parle … (de quoi ? à qui ?)"
+        },
+        {
+          "id": "l4",
+          "text": "Un voisin accompagnera … (qui ?)"
+        },
+        {
+          "id": "r1",
+          "text": "à la nature"
+        },
+        {
+          "id": "r2",
+          "text": "les secrets de la montagne"
+        },
+        {
+          "id": "r3",
+          "text": "de son projet à ses amis"
+        },
+        {
+          "id": "r4",
+          "text": "les enfants"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "« À quoi » appelle « à la nature » ; « quoi » appelle « les secrets de la montagne » ; « de quoi, à qui » appelle « de son projet, à ses amis » ; « qui » appelle « les enfants ». Chaque question de la marge ne laisse qu'un groupe possible.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Complète : « Sébastien a fini ses devoirs et ___ ses leçons. » (apprendre au passé composé)",
+      "options": [
+        {
+          "id": "a",
+          "text": "a apprit",
+          "misconceptionTag": "fr.conj.participe-passe-mal-termine"
+        },
+        {
+          "id": "b",
+          "text": "apprendra",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        },
+        {
+          "id": "c",
+          "text": "a appris"
+        },
+        {
+          "id": "d",
+          "text": "apprend",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le début de la phrase est au passé composé (« a fini »), donc le verbe suivant aussi : « a » + participe « appris », qui se termine par -is. « Apprendra » est le futur et « apprend » le présent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Complète : « Quand la petite chèvre blanche arrive dans la montagne, toutes les plantes ___ ravies. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "est",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        },
+        {
+          "id": "b",
+          "text": "es",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        },
+        {
+          "id": "c",
+          "text": "sommes",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        },
+        {
+          "id": "d",
+          "text": "sont"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le sujet est « toutes les plantes », au pluriel : le verbe « être » se met à la 3e personne du pluriel, « sont ». « Est » irait avec un sujet singulier, comme « la petite chèvre » du début de la phrase, mais ce n'est pas le sujet de « ravies ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Réunis en une seule phrase : « L'aigle a de grandes griffes. Le vautour aussi. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'aigle et le vautour a de grandes griffes.",
+          "misconceptionTag": "fr.accord.sujets-multiples-verbe-singulier"
+        },
+        {
+          "id": "b",
+          "text": "L'aigle et le vautour avons de grandes griffes.",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        },
+        {
+          "id": "c",
+          "text": "L'aigle et le vautour ont de grandes griffes."
+        },
+        {
+          "id": "d",
+          "text": "L'aigle et le vautour as de grandes griffes.",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux sujets reliés par « et » forment un sujet pluriel : le verbe avoir se met à la 3e personne du pluriel, ont. « A » n'accorde le verbe qu'avec un seul sujet ; « avons » et « as » sont les formes de « nous » et de « tu ».",
+      "difficulty": 2
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Écris le verbe entre parenthèses au présent : « Un vol d'oiseaux (passer) ___ au-dessus de nos têtes. »",
+      "answerKey": {
+        "text": "passe"
+      },
+      "expectedMistakes": [
+        {
+          "text": "passent",
+          "misconceptionTag": "fr.accord.nom-le-plus-proche"
+        }
+      ],
+      "explanation": "Le sujet est « un vol », au singulier : le verbe s'accorde avec lui. Les oiseaux complètent « vol » ; on ne s'accorde pas avec le mot qui est juste avant le verbe.",
+      "difficulty": 2
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Écris le verbe entre parenthèses au présent : « Mon équipe (aller) ___ à l'entraînement. »",
+      "answerKey": {
+        "text": "va"
+      },
+      "expectedMistakes": [
+        {
+          "text": "vont",
+          "misconceptionTag": "fr.accord.nom-collectif-au-pluriel"
+        }
+      ],
+      "explanation": "« Mon équipe » est un nom collectif au singulier : le verbe reste au singulier, à la 3e personne, même si l'équipe compte plusieurs joueurs.",
+      "difficulty": 2
+    }
+  ]
+}
