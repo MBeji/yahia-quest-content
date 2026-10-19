@@ -67,3 +67,17 @@ Doutes pour l'auditeur :
 3. m010 : les distracteurs étiquetés `fr.production.hors-sujet` (répliques hors sujet) sont éliminables à la lecture de la situation ; c'est voulu (lire la consigne), mais l'auditeur peut juger la difficulté faible.
 4. m011 : les deux `ordering` du devoir sont jumeaux (ordre du texte puis ordre des faits) ; seule la seconde, chronologique, est proche de `fr.lecture.ordre-chronologique-non-respecte` (non posable sur un ordering).
 5. Le devoir `m011` a des distracteurs muets (noms et verbes à la place de l'adjectif) faute d'étiquette exacte.
+
+## Corrections après audit des missions (audit-M2.md)
+
+Tous les correctifs de l'auditeur sont appliqués avec ses textes exacts ; aucun refusé. Contrôles : content:check OK, content:qa 0 erreur 0 avertissement, tranche clé la plus longue 0/72, prettier OK. Le fichier du devoir est désormais `08-devoir-lire-ordre-titre-portrait.json` (nom pris dans l'arbre).
+
+- C-1 (m012 q1) : options c « ne nous broie toujours » (negation-sens-inexact) et d « ne jamais nous broie » (negation-mal-placee), explication de l'auditeur.
+- C-2 (m012 q5, « Veux-tu du pain ? ») : options « Non, je ne pas veux de pain. » (negation-mal-placee) et « Non, je ne veux de pain. » (muette), explication de l'auditeur.
+- M-1 : explications sans rang pour m011 q7, m010 q7, m014 q2, q5, q7.
+- M-2 : texte sur Karim redonné en tête des questions 2, 3 et 4 du devoir. Conséquence attendue : le contrôle « paires proches » signale 7 couples (0,45 à 0,90) entre les questions du devoir, tous dus au texte partagé ; ils sont voulus (le donjon tire les questions au hasard) et non bloquants.
+- M-3 : les deux short_answer de m013 supprimées ; la mission garde 4 questions (2025, 2021, 2020, 2022).
+- M-4 : m014 q3 remplacée par la variante « s'écrie » (Mon chat ! Te voilà enfin !).
+- M-5 : m010 q1, trois répliques plausibles mais muettes, explication de l'auditeur.
+- M-6 : explication de m009 q2 réécrite.
+- Mineurs : « D'après le concours 2023 » (m009 q2) et « D'après le concours 2021, avec « encore » » (m012 q3) ; consigne officielle du tableau de 2020 mot pour mot ; consignes de rédaction ajoutées à m014 q1, q4, q6 et m010 q5 ; option « m'a envahi » de m013 remplacée par « m'envahit » (F5) ; explication de m011 q8 corrigée.
