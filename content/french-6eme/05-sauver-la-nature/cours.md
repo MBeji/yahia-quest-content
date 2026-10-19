@@ -40,6 +40,7 @@ Le tableau relie le **test de suppression** au verdict : la phrase tient sans le
 
 - Un complément essentiel **ne se déplace pas** et **ne se supprime pas** : _Un orque, il voit dans un bassin_ ✗.
 - Un complément non essentiel se déplace : _Dans un bassin, il voit un orque._ ✓
+- Cas-limite : avec _parler_, _offrir_, _donner_, un groupe qui répond à _à qui ?_ ou _de quoi ?_ est essentiel même si la phrase semble tenir sans lui : c'est la question qui décide.
 - Cas-limite : une phrase peut avoir **plusieurs** compléments essentiels (_parler **de son projet à ses amis**_), ou aucun (_Jesse arrive._).
 
 :::
@@ -70,14 +71,27 @@ _Prendre_ et _mettre_ sont des verbes du **3ᵉ groupe**.
 
 :::
 
-| Personne    | prendre (passé composé) | mettre (passé composé) | prendre (futur) | mettre (futur) |
-| ----------- | ----------------------- | ---------------------- | --------------- | -------------- |
-| je          | j'ai pris               | j'ai mis               | je prendrai     | je mettrai     |
-| tu          | tu as pris              | tu as mis              | tu prendras     | tu mettras     |
-| il / elle   | il a pris               | il a mis               | il prendra      | il mettra      |
-| nous        | nous avons pris         | nous avons mis         | nous prendrons  | nous mettrons  |
-| vous        | vous avez pris          | vous avez mis          | vous prendrez   | vous mettrez   |
-| ils / elles | ils ont pris            | ils ont mis            | ils prendront   | ils mettront   |
+**Au passé composé**
+
+| Personne    | prendre         | mettre        |
+| ----------- | --------------- | ------------- |
+| je          | j'ai pris       | j'ai mis      |
+| tu          | tu as pris      | tu as mis     |
+| il / elle   | il a pris       | il a mis      |
+| nous        | nous avons pris | nous avons mis |
+| vous        | vous avez pris  | vous avez mis |
+| ils / elles | ils ont pris    | ils ont mis   |
+
+**Au futur**
+
+| Personne    | prendre        | mettre        |
+| ----------- | -------------- | ------------- |
+| je          | je prendrai    | je mettrai    |
+| tu          | tu prendras    | tu mettras    |
+| il / elle   | il prendra     | il mettra     |
+| nous        | nous prendrons | nous mettrons |
+| vous        | vous prendrez  | vous mettrez  |
+| ils / elles | ils prendront  | ils mettront  |
 
 Dans chaque ligne, ce qui change avec la personne est l'auxiliaire (passé composé) ou la terminaison (futur).
 
@@ -91,7 +105,7 @@ Dans chaque ligne, ce qui change avec la personne est l'auxiliaire (passé compo
 :::
 
 ::: piege Erreur fréquente
-« Nous avons **prit** », « il a **mit** » ✗ On écrit le participe comme le présent, qui se termine par un _t_. ✓ Le participe de _prendre_ est **pris** et celui de _mettre_ est **mis** : ils se terminent par **-is**, jamais par _-it_.
+« Nous avons **prit** », « il a **mit** » ✗ On ajoute un _t_ final, comme dans _il a fait_ ou _il a dit_. ✓ Le participe de _prendre_ est **pris** et celui de _mettre_ est **mis** : ils se terminent par **-is**, jamais par _-it_.
 :::
 
 ::: piege Erreur fréquente
@@ -125,7 +139,7 @@ Nicole prépare un coin pour sa chatte. Nicole et Nicolas préparent un coin pou
 Dans ces phrases, le verbe change ou ne change pas. Qui décide de sa forme ?
 
 ::: definition
-Le verbe s'accorde **toujours avec son sujet**, en nombre et en personne. Pour trouver le sujet, on pose la question **qui est-ce qui + verbe ?** ou on encadre le verbe dans _c'est… qui_.
+Le verbe s'accorde **toujours avec son sujet**, en nombre et en personne. Pour trouver le sujet, on pose la question **qui est-ce qui + verbe ?** : _Qui est-ce qui prépare ? Nicole._
 
 :::
 
@@ -182,7 +196,7 @@ Cherche d'abord le sujet (qui est-ce qui ?), même s'il est après le verbe ; de
 Un conseil est-il plus convaincant avec ou sans chiffres ? Et comment bien comprendre ce qu'un texte nous demande ?
 
 ::: definition
-Un **texte documentaire** informe : il donne des **faits**, souvent des **chiffres**. Un **conseil** dit ce qu'il faut faire et s'écrit avec des verbes à l'**impératif** (_ferme_, _choisis_) ou au **futur** (_tu économiseras_).
+Un **texte documentaire** informe : il donne des **faits**, souvent des **chiffres**. Un **conseil** dit ce qu'il faut faire et s'écrit avec des verbes à l'**impératif** (_ferme_, _choisis_) ou au **futur** (_tu fermeras le robinet_).
 
 Pour bien lire : je repère **le sujet du texte** (ici l'eau), **chaque conseil** et **la raison** qui l'accompagne.
 
@@ -231,7 +245,7 @@ Ces mots sont nouveaux ou à peine connus. Comment les retenir pour s'en servir 
 Les mots de l'**environnement** (le milieu où l'on vit : la nature, l'air, l'eau, la terre) :
 
 - **les déchets** : ce que l'on jette ; **la pollution** : ce qui salit l'air, l'eau ou la terre ;
-- **recycler** : transformer un déchet pour en faire un autre objet ; **protéger** : mettre à l'abri du danger ;
+- **recycler** : transformer un déchet pour en faire un autre objet ; **protéger** : mettre à l'abri du danger ; **détériorer** : abîmer, mettre en mauvais état ;
 - **une espèce menacée** : animal ou plante qui risque de disparaître ;
 - **les énergies propres** : l'énergie du vent (éoliennes) ou du soleil ;
 - **une zone verte** : un espace planté (jardin, bois).
@@ -261,11 +275,11 @@ Les **mots-outils** relient les idées d'un texte. Trois mots disent une **oppos
 :::
 
 ::: verifie
-Complète avec _pourtant_ ou _donc_ : « La mer est sale ; les enfants ont ramassé les déchets, ______ elle est propre à nouveau. »
+Complète avec _pourtant_ ou _donc_ : « Les enfants ont ramassé tous les déchets de la plage, ______ elle est propre à nouveau. »
 
 ---
 
-Le deuxième morceau est la **conséquence** du ramassage, donc **donc**. On emploierait _pourtant_ si l'idée s'opposait : _La mer est sale ; pourtant les enfants n'ont rien jeté._
+Le deuxième morceau est la **conséquence** du ramassage : on écrit **donc**. On écrit _pourtant_ quand l'idée s'oppose : _Les enfants ont ramassé les déchets ; pourtant, la plage reste sale._
 :::
 
 ::: retenir
@@ -344,16 +358,14 @@ Un **passage descriptif** est un morceau du récit qui **décrit** (un personnag
 :::
 
 ::: piege Erreur fréquente
-Répéter sans cesse le même nom : « Sarra ramasse. Sarra ouvre un sac. Sarra le remplit. » ✗ Le texte devient lourd. ✓ On remplace le nom par un **mot de remplacement** : _elle_, _la fillette_, _mon amie_ : « Sarra ramasse. **Elle** ouvre un sac et **le** remplit. »
-:::
-
-::: piege Erreur fréquente
 Prendre pour un passage descriptif une phrase qui raconte une action : « Nous ramassons tout dans de grands sacs » ✗ Cette phrase dit **ce qui se passe**, elle fait avancer l'histoire. ✓ Un passage descriptif dit **comment est** un lieu ou un personnage : « Le sable est couvert de bouteilles. »
 :::
 
 ::: propriete
 
 - Dans un récit, on respecte **l'ordre des événements**.
+- **Résumer** un récit, c'est dire en une phrase ce qui se passe dans **toute** l'histoire (qui fait quoi), sans s'arrêter sur un détail.
+- On évite de répéter le même nom : on le remplace par un mot de remplacement (_elle_, _la fillette_, _mon amie_).
 - Pour ne pas se tromper de temps, on peut **raconter et décrire au présent**.
 - Le passage descriptif peut venir **au début**, **au milieu** ou **à la fin** du récit.
 - Cas-limite : une description trop longue arrête l'histoire ; deux ou trois phrases suffisent.

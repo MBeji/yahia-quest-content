@@ -68,14 +68,27 @@ Au **futur**, le radical change : _aller_ devient **ir-**, _faire_ devient **fer
 
 :::
 
-| Personne    | aller (passé composé)              | faire (passé composé) | aller (futur) | faire (futur) |
-| ----------- | ---------------------------------- | --------------------- | ------------- | ------------- |
-| je          | je suis allé(e)                    | j'ai fait             | j'irai        | je ferai      |
-| tu          | tu es allé(e)                      | tu as fait            | tu iras       | tu feras      |
-| il / elle   | il est allé / elle est allée       | il a fait             | il ira        | il fera       |
-| nous        | nous sommes allé(e)s               | nous avons fait       | nous irons    | nous ferons   |
-| vous        | vous êtes allé(e)s                 | vous avez fait        | vous irez     | vous ferez    |
-| ils / elles | ils sont allés / elles sont allées | ils ont fait          | ils iront     | ils feront    |
+**Au passé composé**
+
+| Personne    | aller                              | faire           |
+| ----------- | ---------------------------------- | --------------- |
+| je          | je suis allé(e)                    | j'ai fait       |
+| tu          | tu es allé(e)                      | tu as fait      |
+| il / elle   | il est allé / elle est allée       | il a fait       |
+| nous        | nous sommes allé(e)s               | nous avons fait |
+| vous        | vous êtes allé(e)s                 | vous avez fait  |
+| ils / elles | ils sont allés / elles sont allées | ils ont fait    |
+
+**Au futur**
+
+| Personne    | aller     | faire      |
+| ----------- | --------- | ---------- |
+| je          | j'irai    | je ferai   |
+| tu          | tu iras   | tu feras   |
+| il / elle   | il ira    | il fera    |
+| nous        | nous irons | nous ferons |
+| vous        | vous irez | vous ferez |
+| ils / elles | ils iront | ils feront |
 
 Pour _aller_, la fin du participe change avec le sujet ; pour _faire_, on écrit simplement _fait_ derrière l'auxiliaire _avoir_.
 
@@ -97,14 +110,14 @@ Pour _aller_, la fin du participe change avec le sujet ; pour _faire_, on écrit
 :::
 
 ::: piege Erreur fréquente
-« Demain, **j'allerai** et **je ferrai** » ✗ On conjugue ces deux verbes comme les verbes réguliers. ✓ Ils changent de radical : _j'**ir**ai_, _je **fer**ai_.
+« Demain, **j'allerai** et **je fairai** » ✗ On conjugue ces deux verbes comme les verbes réguliers, à partir de l'infinitif. ✓ Ils changent de radical : _j'**ir**ai_, _je **fer**ai_.
 :::
 
 ::: propriete
 
 - _Faire_ : toujours **avoir** au passé composé ; participe **fait**.
 - _Aller_ : toujours **être** au passé composé ; participe **allé**, **allée**, **allés**, **allées**.
-- Cas-limite : _il ira_ et _il fera_ s'entendent comme le futur de _aller_ et _faire_ ; pour _je_, c'est **-ai** (_j'irai_, _je ferai_).
+- Cas-limite : au futur, on n'entend plus l'infinitif : _j'irai_ vient de _aller_, _je ferai_ vient de _faire_.
 
 :::
 
@@ -189,7 +202,7 @@ Quels mots faut-il connaître pour parler de la santé et du sport ?
 
 :::
 
-Pour situer une action, on utilise aussi des mots de lieu : **partout**, **nulle part**, **là-bas**, **au-dessus de**, **au-dessous de** ; pour enchaîner : **puis**, **après**, **par la suite**.
+Pour situer une action, on utilise aussi des mots de lieu : **partout**, **nulle part**, **là-bas**, **au-dessus de**, **au-dessous de** ; pour enchaîner : **puis**, **après**, **par la suite** ; pour dire une distance ou une quantité approchée : **près de**, **à proximité de**, **environ**, **presque**.
 
 ::: exemple Comprendre l'expression _« se porter comme un charme »_
 
@@ -200,7 +213,7 @@ Pour situer une action, on utilise aussi des mots de lieu : **partout**, **nulle
 :::
 
 ::: piege Erreur fréquente
-« Se porter comme un charme, c'est être malade » ✗ On lit chaque mot séparément ou on devine d'après une seule idée. ✓ Une expression se comprend **en entier**, dans la phrase où elle est employée : ici elle veut dire « être en très bonne santé ».
+« Se porter comme un charme, c'est porter un bijou porte-bonheur » ✗ On lit l'expression mot à mot, au sens propre. ✓ Une expression se comprend **en entier**, dans la phrase où elle est employée : ici elle veut dire « être en très bonne santé ».
 :::
 
 ::: propriete
@@ -287,17 +300,20 @@ On utilise des **mots de lieu** (_au bout de_, _devant_, _derrière_, _à l'int�
 
 :::
 
-::: figure Le village de Tulmac vu du ciel : on le décrit dans l'ordre 1, 2, 3, 4, de loin à près
-<svg viewBox="0 0 240 120">
-<rect x="4" y="4" width="232" height="112" rx="8" fill="#bbf7d0" stroke="#1f2937" stroke-width="2"/>
-<text x="28" y="22" font-size="10" fill="#1f2937">1. la forêt</text>
-<ellipse cx="150" cy="66" rx="70" ry="40" fill="#fef9c3" stroke="#1f2937" stroke-width="2"/>
-<text x="150" y="34" font-size="10" text-anchor="middle" fill="#1f2937">2. la clairière</text>
-<rect x="116" y="50" width="22" height="22" fill="#fdba74" stroke="#1f2937" stroke-width="2"/>
-<rect x="158" y="62" width="22" height="22" fill="#fdba74" stroke="#1f2937" stroke-width="2"/>
-<text x="127" y="92" font-size="9" text-anchor="middle" fill="#1f2937">3. dehors</text>
-<text x="169" y="102" font-size="9" text-anchor="middle" fill="#1f2937">4. dedans</text>
-<path d="M10 100 L100 66" fill="none" stroke="#1f2937" stroke-width="2" stroke-dasharray="4 3"/>
+::: figure On décrit le village de Tulmac de loin à près : la forêt, la clairière, les murs d'une case, puis son intérieur (le hamac)
+<svg viewBox="0 0 240 140">
+<rect x="4" y="4" width="232" height="132" rx="8" fill="#bbf7d0" stroke="#1f2937" stroke-width="2"/>
+<text x="12" y="20" font-size="10" fill="#1f2937">1. la forêt</text>
+<path d="M12 124 L88 84" fill="none" stroke="#1f2937" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="16" y="108" font-size="9" fill="#1f2937" transform="rotate(-28 16 108)">la route</text>
+<ellipse cx="156" cy="80" rx="74" ry="48" fill="#fef9c3" stroke="#1f2937" stroke-width="2"/>
+<text x="156" y="46" font-size="10" text-anchor="middle" fill="#1f2937">2. la clairière</text>
+<rect x="104" y="62" width="18" height="16" fill="#fdba74" stroke="#1f2937" stroke-width="1.5"/>
+<rect x="150" y="58" width="56" height="44" fill="#fdba74" stroke="#1f2937" stroke-width="2.5"/>
+<rect x="156" y="64" width="44" height="32" fill="#fff7ed" stroke="#1f2937" stroke-width="1"/>
+<path d="M160 74 Q178 90 196 74" fill="none" stroke="#1f2937" stroke-width="2"/>
+<text x="166" y="114" font-size="9" text-anchor="middle" fill="#1f2937">3. dehors : les murs</text>
+<text x="178" y="72" font-size="8" text-anchor="middle" fill="#1f2937">4. dedans</text>
 </svg>
 
 :::

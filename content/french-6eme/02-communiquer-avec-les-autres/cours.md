@@ -50,7 +50,7 @@ Complète : _« … machine est ancienne, mais … ordinateurs sont récents. »
 :::
 
 ::: retenir
-_ce_ (masculin), _cet_ (masculin devant voyelle), _cette_ (féminin), _ces_ (pluriel) : le démonstratif montre et suit le nom.
+_ce_ (masculin), _cet_ (masculin devant voyelle), _cette_ (féminin), _ces_ (pluriel) : le démonstratif montre, se place devant le nom et se choisit d'après lui.
 
 :::
 
@@ -65,16 +65,29 @@ Un **déterminant possessif** se place devant un nom pour dire à **qui appartie
 
 :::
 
-| Celui qui possède       | un seul objet masculin | un seul objet féminin | plusieurs objets |
-| ----------------------- | ---------------------- | --------------------- | ---------------- |
-| moi (je)                | _mon_                  | _ma_                  | _mes_            |
-| toi (tu)                | _ton_                  | _ta_                  | _tes_            |
-| lui, elle (il, elle)    | _son_                  | _sa_                  | _ses_            |
-| nous                    | _notre_                | _notre_               | _nos_            |
-| vous                    | _votre_                | _votre_               | _vos_            |
-| eux, elles (ils, elles) | _leur_                 | _leur_                | _leurs_          |
+Un seul objet :
 
-Pour lire le tableau, on repère d'abord la ligne de **celui qui possède**, puis la colonne de **la chose possédée**.
+| Celui qui possède       | masculin | féminin |
+| ----------------------- | -------- | ------- |
+| moi (je)                | _mon_    | _ma_    |
+| toi (tu)                | _ton_    | _ta_    |
+| lui, elle (il, elle)    | _son_    | _sa_    |
+| nous                    | _notre_  | _notre_ |
+| vous                    | _votre_  | _votre_ |
+| eux, elles (ils, elles) | _leur_   | _leur_  |
+
+Plusieurs objets :
+
+| Celui qui possède       | pluriel |
+| ----------------------- | ------- |
+| moi (je)                | _mes_   |
+| toi (tu)                | _tes_   |
+| lui, elle (il, elle)    | _ses_   |
+| nous                    | _nos_   |
+| vous                    | _vos_   |
+| eux, elles (ils, elles) | _leurs_ |
+
+Pour lire les tableaux, on repère d'abord la ligne de **celui qui possède**, puis la colonne de **la chose possédée**.
 
 ::: exemple
 Remplace le complément par un possessif : _« C'est le téléphone de Lina. »_, _« C'est l'ordinateur de Lina et de Sami. »_ puis _« Ce sont les clés de Lina et de Sami. »_
@@ -119,13 +132,25 @@ L'**impératif** est une forme du verbe qui sert à donner un **ordre**, un **co
 
 :::
 
-| Personne              | utiliser    | choisir       | faire     | prendre   | aller    |
-| --------------------- | ----------- | ------------- | --------- | --------- | -------- |
-| 2e du singulier (tu)  | _Utilise_   | _Choisis_     | _Fais_    | _Prends_  | _Va_     |
-| 1re du pluriel (nous) | _Utilisons_ | _Choisissons_ | _Faisons_ | _Prenons_ | _Allons_ |
-| 2e du pluriel (vous)  | _Utilisez_  | _Choisissez_  | _Faites_  | _Prenez_  | _Allez_  |
+| Personne              | utiliser    | choisir       |
+| --------------------- | ----------- | ------------- |
+| 2e du singulier (tu)  | _Utilise_   | _Choisis_     |
+| 1re du pluriel (nous) | _Utilisons_ | _Choisissons_ |
+| 2e du pluriel (vous)  | _Utilisez_  | _Choisissez_  |
 
-Le tableau montre qu'on retrouve la forme de l'impératif en cherchant la personne, sans écrire le pronom.
+| Personne              | faire     | prendre   |
+| --------------------- | --------- | --------- |
+| 2e du singulier (tu)  | _Fais_    | _Prends_  |
+| 1re du pluriel (nous) | _Faisons_ | _Prenons_ |
+| 2e du pluriel (vous)  | _Faites_  | _Prenez_  |
+
+| Personne              | aller    |
+| --------------------- | -------- |
+| 2e du singulier (tu)  | _Va_     |
+| 1re du pluriel (nous) | _Allons_ |
+| 2e du pluriel (vous)  | _Allez_  |
+
+Les tableaux montrent qu'on retrouve la forme de l'impératif en cherchant la personne, sans écrire le pronom.
 
 ::: exemple
 Une notice donne : _« 1. Prendre une boîte. 2. Découper une fente. 3. Poser le téléphone. »_ Réécris-la en donnant des ordres à un ami (_tu_).
@@ -169,7 +194,8 @@ Pourquoi _cherche_ sans _s_, alors que _choisis_ et _fais_ en prennent un ?
 À la 2e personne du singulier de l'impératif :
 
 - les verbes en **-er** (_chercher, utiliser, regarder_) et le verbe **aller** n'ont **pas de _s_** : _cherche, utilise, va_ ;
-- les verbes en **-ir** comme _choisir_ et en **-re** comme _faire_ ou _prendre_ **prennent un _s_** : _choisis, fais, prends_.
+- les verbes en **-ir** comme _choisir_ et en **-re** comme _faire_ ou _prendre_ **prennent un _s_** : _choisis, fais, prends_ ;
+- attention : _ouvrir_ s'écrit comme un verbe en _-er_ : **ouvre** la fenêtre, sans _s_.
 
 :::
 
@@ -187,7 +213,7 @@ Le tableau donne la règle dans l'ordre : on regarde la fin de l'infinitif (_-er
 
 1. _utiliser_ se termine par **-er** → pas de _s_ : **Utilise** le clavier.
 2. _choisir_ se termine par **-ir** → un _s_ : **Choisis** un titre.
-3. _aller_ fait exception → pas de _s_ non plus : **Va** au club.
+3. _aller_ suit la même règle que les verbes en _-er_ → pas de _s_ : **Va** au club.
 
 :::
 
@@ -210,7 +236,7 @@ Complète à l'impératif (_tu_) : _« (prendre) la souris, (cliquer) sur l'icô
 :::
 
 ::: retenir
-À l'impératif, pour _tu_ : pas de _s_ si l'infinitif est en _-er_ ou si c'est _aller_ (_cherche, va_) ; un _s_ sinon (_choisis, fais, prends_).
+À l'impératif, pour _tu_ : pas de _s_ pour les verbes en _-er_ et pour _aller_ (_cherche, va_) ; un _s_ pour les verbes en _-ir_ comme _choisir_ et en _-re_ comme _faire_, _prendre_ (_choisis, fais, prends_).
 
 :::
 
@@ -229,10 +255,10 @@ Comment savoir, sans hésiter, lequel écrire ?
 
 Pour choisir, on essaie de **changer la personne ou le temps** de la phrase. Si le mot peut changer, c'est le verbe _avoir_ ; s'il reste identique, c'est _à_.
 
-| Phrase                        | On change…                      | Ce qui se passe      | Donc  |
-| ----------------------------- | ------------------------------- | -------------------- | ----- |
-| _Lina a un portable._         | _Elles … un portable_           | le mot devient _ont_ | **a** |
-| _Elle téléphone à son oncle._ | _Elles téléphonent à son oncle_ | le mot reste _à_     | **à** |
+| Phrase                        | Test : on change…                              | Donc  |
+| ----------------------------- | ---------------------------------------------- | ----- |
+| _Lina a un portable._         | _Elles ont un portable_ : le mot varie         | **a** |
+| _Elle téléphone à son oncle._ | _Elles téléphonent à son oncle_ : le mot reste | **à** |
 
 Le tableau relie le test à la règle : le mot qui varie est le verbe _avoir_.
 

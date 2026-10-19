@@ -42,7 +42,7 @@ Elle tente parce que, dans une histoire, on parle d'une personne ou d'un lieu bi
 
 :::
 
-Un mot qui refuse le déterminant, comme _saluer_ ou _courir_ (on ne dit pas _« le courir »_), n'est pas un nom : c'est un verbe, il ne va donc dans aucune colonne des noms.
+Un verbe comme _saluer_ ou _courir_ refuse le déterminant (on ne dit pas _« le courir »_) : ce n'est pas un nom, il ne va donc dans aucune colonne des noms.
 
 La règle se précise avec deux familles de déterminants. Les **articles définis** (_le, la, l', les_) accompagnent ce dont on parle déjà : _le comptoir_ de la boulangerie. Les **articles indéfinis** (_un, une, des_) présentent quelque chose de nouveau : _un comptoir_ quelconque. Devant un nom qui commence par une voyelle, _le_ et _la_ s'écrivent _l'_ : _l'apprenti_, _l'école_.
 
@@ -126,13 +126,19 @@ Le **temps** d'un verbe indique quand l'action a lieu. Trois temps sont à conna
 
 :::
 
-| Temps         | L'action est… | Indicateurs de temps         | Verbe                           |
-| ------------- | ------------- | ---------------------------- | ------------------------------- |
-| passé composé | déjà faite    | _hier, la semaine dernière_  | _a aidé_ (**deux mots**)        |
-| présent       | en cours      | _maintenant, en ce moment_   | _pèse_ (un mot)                 |
-| futur         | à venir       | _demain, bientôt, plus tard_ | _tiendra_ (**r** + terminaison) |
+| Temps         | L'action est… | Indicateurs de temps         |
+| ------------- | ------------- | ---------------------------- |
+| passé composé | déjà faite    | _hier, la semaine dernière_  |
+| présent       | en cours      | _maintenant, en ce moment_   |
+| futur         | à venir       | _demain, bientôt, plus tard_ |
 
-Le tableau relie le moment de l'action à deux indices : les mots qui situent dans le temps, et la forme du verbe.
+| Temps         | Forme du verbe                       | Exemple   |
+| ------------- | ------------------------------------ | --------- |
+| passé composé | deux mots : _a_ ou _est_ + participe | _a aidé_  |
+| présent       | un mot                               | _pèse_    |
+| futur         | _r_ + terminaison                    | _tiendra_ |
+
+Les deux tableaux relient le moment de l'action à deux indices : les mots qui situent dans le temps, et la forme du verbe.
 
 ::: exemple
 Trouve le temps de _« Le soir, le boulanger rentrera chez lui fatigué. »_
@@ -146,7 +152,7 @@ Trouve le temps de _« Le soir, le boulanger rentrera chez lui fatigué. »_
 ::: piege
 L'erreur classique : lire _« Ce matin, Samir **a** vérifié les freins »_ comme un présent, parce qu'on reconnaît le petit mot _a_ (qui se conjugue au présent).
 
-Il tente parce que _a_ est bien le verbe _avoir_ au présent. Pourtant ici _a vérifié_ forme **un seul verbe en deux mots** (_a_ + _desserré_) : c'est un **passé composé**, et l'action est terminée. On retrouve la même forme avec _est sorti_.
+Il tente parce que _a_ est bien le verbe _avoir_ au présent. Pourtant ici _a vérifié_ forme **un seul verbe en deux mots** (_a_ + _vérifié_) : c'est un **passé composé**, et l'action est terminée. On retrouve la même forme avec _est sorti_.
 
 :::
 
@@ -256,7 +262,7 @@ Elle tente parce que _mélanger_ et _mélangé_ se prononcent de la même maniè
 
 :::
 
-La règle vaut aussi pour un verbe pronominal (_sans \**s'\**arrêter_) et pour les locutions qui contiennent l'un de ces mots (_avant **de** partir_). Elle ne concerne que ces cinq petits mots : c'est à eux que l'on pense quand on hésite.
+La règle vaut aussi pour un verbe pronominal (_sans s'arrêter_) et pour les locutions qui contiennent l'un de ces mots (_avant **de** partir_). Elle ne concerne que ces cinq petits mots : c'est à eux que l'on pense quand on hésite.
 
 ::: verifie
 Complète avec le verbe _regarder_ (infinitif ou participe ?) : _« Le client entre sans … la vitrine. »_
