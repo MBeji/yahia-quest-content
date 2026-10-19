@@ -2,55 +2,39 @@
   "title": "اختبار فهم الدرس ⭐",
   "questions": [
     {
-      "prompt": "ما ناتج 2/7 + 3/7؟",
+      "prompt": "ما ناتج 3/11 + 5/11؟",
       "options": [
-        { "id": "a", "text": "5/7" },
-        {
-          "id": "b",
-          "text": "5/14",
-          "misconceptionTag": "math.frac.add-denominators"
-        },
-        { "id": "c", "text": "6/7" },
-        {
-          "id": "d",
-          "text": "5/49",
-          "misconceptionTag": "math.frac.denominateurs-multiplies"
-        }
+        { "id": "a", "text": "8/11" },
+        { "id": "b", "text": "8/22", "misconceptionTag": "math.frac.add-denominators" },
+        { "id": "c", "text": "2/11", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "d", "text": "8/121", "misconceptionTag": "math.frac.denominateurs-multiplies" }
       ],
       "correctOption": "a",
-      "explanation": "عند تساوي المقام نجمع البُسُط ونُبقي المقام: 2/7 + 3/7 = (2+3)/7 = 5/7.",
+      "explanation": "عند تساوي المقام نجمع البُسُط ونُبقي المقام: 3/11 + 5/11 = (3+5)/11 = 8/11.",
       "difficulty": 1,
-      "competencies": ["math.frac.add-sous"]
+      "competencies": [
+        "math.frac.add-sous"
+      ]
     },
     {
-      "prompt": "ما ناتج 5/8 − 2/8؟",
+      "prompt": "ما ناتج 9/10 − 2/10؟",
       "options": [
-        {
-          "id": "a",
-          "text": "7/8",
-          "misconceptionTag": "math.num.operation-inverse-appliquee"
-        },
-        { "id": "b", "text": "3/8" },
-        {
-          "id": "c",
-          "text": "3/16",
-          "misconceptionTag": "math.frac.add-denominators"
-        },
-        { "id": "d", "text": "6/8" }
+        { "id": "a", "text": "11/10", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "b", "text": "7/10" },
+        { "id": "c", "text": "7/20", "misconceptionTag": "math.frac.add-denominators" },
+        { "id": "d", "text": "6/10" }
       ],
       "correctOption": "b",
-      "explanation": "عند تساوي المقام نطرح البُسُط ونُبقي المقام: 5/8 − 2/8 = (5−2)/8 = 3/8.",
+      "explanation": "عند تساوي المقام نطرح البُسُط ونُبقي المقام: 9/10 − 2/10 = (9−2)/10 = 7/10.",
       "difficulty": 1,
-      "competencies": ["math.frac.add-sous"]
+      "competencies": [
+        "math.frac.add-sous"
+      ]
     },
     {
       "prompt": "ما ناتج 1/2 + 1/3 (وحّد على 6)؟",
       "options": [
-        {
-          "id": "a",
-          "text": "2/5",
-          "misconceptionTag": "math.frac.add-numerators-and-denominators"
-        },
+        { "id": "a", "text": "2/5", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
         { "id": "b", "text": "2/6" },
         { "id": "c", "text": "5/6" },
         { "id": "d", "text": "1/6" }
@@ -58,58 +42,56 @@
       "correctOption": "c",
       "explanation": "نوحّد على 6: 1/2 = 3/6 و 1/3 = 2/6؛ ثمّ 3/6 + 2/6 = 5/6.",
       "difficulty": 2,
-      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+      "competencies": [
+        "math.frac.add-sous",
+        "math.frac.equivalence"
+      ]
     },
     {
-      "prompt": "ما ناتج 3/4 − 1/2 (وحّد على 4)؟",
+      "prompt": "ما ناتج 5/6 − 2/3 (وحّد على 6)؟",
       "options": [
-        { "id": "a", "text": "2/2" },
-        { "id": "b", "text": "1/2" },
-        { "id": "c", "text": "2/4" },
-        { "id": "d", "text": "1/4" }
+        { "id": "a", "text": "3/3", "misconceptionTag": "math.frac.soustraction-denominateurs" },
+        { "id": "b", "text": "3/6" },
+        { "id": "c", "text": "9/6", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "d", "text": "1/6" }
       ],
       "correctOption": "d",
-      "explanation": "نوحّد على 4: 1/2 = 2/4؛ ثمّ 3/4 − 2/4 = 1/4.",
+      "explanation": "نوحّد على 6: 2/3 = 4/6؛ ثمّ 5/6 − 4/6 = 1/6.",
       "difficulty": 2,
-      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+      "competencies": [
+        "math.frac.add-sous",
+        "math.frac.equivalence"
+      ]
     },
     {
-      "prompt": "ما ناتج 1 + 1/4؟",
+      "prompt": "ما ناتج 1 + 2/7؟",
       "options": [
-        { "id": "a", "text": "5/4" },
-        { "id": "b", "text": "2/4" },
-        { "id": "c", "text": "1/5" },
-        {
-          "id": "d",
-          "text": "4/4",
-          "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee"
-        }
+        { "id": "a", "text": "9/7" },
+        { "id": "b", "text": "3/7" },
+        { "id": "c", "text": "3/8", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
+        { "id": "d", "text": "7/7", "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee" }
       ],
       "correctOption": "a",
-      "explanation": "نكتب العددَ الصحيح 1 = 4/4؛ ثمّ 4/4 + 1/4 = 5/4.",
+      "explanation": "نكتب العددَ الصحيح 1 = 7/7؛ ثمّ 7/7 + 2/7 = 9/7.",
       "difficulty": 2,
-      "competencies": ["math.frac.add-sous"]
+      "competencies": [
+        "math.frac.add-sous"
+      ]
     },
     {
       "prompt": "باع تاجر 3/8 من سلعته صباحًا و 2/8 مساءً. ما الكسر الذي بقي دون بيع؟",
       "options": [
-        {
-          "id": "a",
-          "text": "5/8",
-          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
-        },
+        { "id": "a", "text": "5/8", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "3/8" },
-        {
-          "id": "c",
-          "text": "5/16",
-          "misconceptionTag": "math.frac.add-denominators"
-        },
+        { "id": "c", "text": "5/16", "misconceptionTag": "math.frac.add-denominators" },
         { "id": "d", "text": "1/8" }
       ],
       "correctOption": "b",
       "explanation": "المبيع 3/8 + 2/8 = 5/8. الكلّ هو 8/8، فالباقي 8/8 − 5/8 = 3/8. الكسر 5/8 هو ما بِيع لا ما بقي، والكسر 5/16 يجمع المقامين.",
       "difficulty": 2,
-      "competencies": ["math.frac.add-sous"]
+      "competencies": [
+        "math.frac.add-sous"
+      ]
     }
   ]
 }

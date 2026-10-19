@@ -12,31 +12,31 @@
   },
   "questions": [
     {
-      "prompt": "ما محيطُ دائرةٍ نصفُ قطرها 10 سم؟ (π ≈ 3,14)",
+      "prompt": "ما محيطُ دائرةٍ نصفُ قطرها 24 سم؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "62,8 سم"
+          "text": "48 سم",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
         },
         {
           "id": "b",
-          "text": "31,4 سم",
+          "text": "75,36 سم",
           "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
         },
         {
           "id": "c",
-          "text": "314 سم"
+          "text": "150,72 سم"
         },
         {
           "id": "d",
-          "text": "20 سم",
-          "misconceptionTag": "math.geo.facteur-pi-omis"
+          "text": "1 808,64 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
         }
       ],
-      "correctOption": "a",
-      "explanation": "المحيط = 2 × π × ر = 2 × 3,14 × 10 = 62,8 سم.",
-      "difficulty": 2,
-      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
+      "correctOption": "c",
+      "explanation": "المحيط = 2 × π × ر = 2 × 3,14 × 24 = 150,72 سم. من نسي العدد 2 وجد 75,36، ومن توقّف عند 2 × 24 = 48 نسي π، ومن حسب 3,14 × 24 × 24 وجد 1 808,64 وهي مساحة القرص لا محيط الدائرة.",
+      "difficulty": 2
     },
     {
       "prompt": "ما مساحةُ قرصٍ نصفُ قطره 5 سم؟ (π ≈ 3,14)",
@@ -105,31 +105,31 @@
       "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
-      "prompt": "عجلةٌ نصفُ قطرها 30 سم. ما المسافةُ التي تقطعُها في دورةٍ كاملة (أي محيطُها)؟ (π ≈ 3,14)",
+      "prompt": "عجلةٌ نصفُ قطرها 40 سم. ما المسافةُ التي تقطعُها في دورةٍ كاملة (أي محيطُها)؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "188,4 سم"
+          "text": "80 سم",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
         },
         {
           "id": "b",
-          "text": "94,2 سم",
+          "text": "125,6 سم",
           "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
         },
         {
           "id": "c",
-          "text": "60 سم",
-          "misconceptionTag": "math.geo.facteur-pi-omis"
+          "text": "251,2 سم"
         },
         {
           "id": "d",
-          "text": "942 سم"
+          "text": "5 024 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
         }
       ],
-      "correctOption": "a",
-      "explanation": "المسافةُ في دورةٍ = محيطُ العجلة = 2 × π × ر = 2 × 3,14 × 30 = 188,4 سم.",
-      "difficulty": 3,
-      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
+      "correctOption": "c",
+      "explanation": "المسافةُ في دورةٍ = محيطُ العجلة = 2 × π × ر = 2 × 3,14 × 40 = 251,2 سم. من نسي العدد 2 وجد 125,6، ومن توقّف عند 2 × 40 = 80 نسي π، ومن حسب 3,14 × 40 × 40 وجد 5 024 وهي مساحة.",
+      "difficulty": 3
     },
     {
       "prompt": "قرصٌ ودائرةٌ لهما نصفُ القطر نفسُه. أيُّهما نحسبُ له مساحةً؟",

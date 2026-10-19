@@ -10,141 +10,114 @@
       "prompt": "ما ناتج 1/5 + 2/5؟",
       "options": [
         { "id": "a", "text": "3/5" },
-        {
-          "id": "b",
-          "text": "3/10",
-          "misconceptionTag": "math.frac.add-denominators"
-        },
+        { "id": "b", "text": "3/10", "misconceptionTag": "math.frac.add-denominators" },
         { "id": "c", "text": "2/5" },
-        {
-          "id": "d",
-          "text": "3/25",
-          "misconceptionTag": "math.frac.denominateurs-multiplies"
-        }
+        { "id": "d", "text": "3/25", "misconceptionTag": "math.frac.denominateurs-multiplies" }
       ],
       "correctOption": "a",
       "explanation": "عند تساوي المقام نجمع البُسُط ونُبقي المقام: 1/5 + 2/5 = (1+2)/5 = 3/5.",
       "difficulty": 1,
-      "competencies": ["math.frac.add-sous"]
+      "competencies": [
+        "math.frac.add-sous"
+      ]
     },
     {
-      "prompt": "ما ناتج 4/9 − 1/9؟",
+      "prompt": "ما ناتج 8/9 − 3/9؟",
       "options": [
-        {
-          "id": "a",
-          "text": "5/9",
-          "misconceptionTag": "math.num.operation-inverse-appliquee"
-        },
-        { "id": "b", "text": "3/9" },
-        {
-          "id": "c",
-          "text": "3/18",
-          "misconceptionTag": "math.frac.add-denominators"
-        },
-        { "id": "d", "text": "4/9" }
+        { "id": "a", "text": "11/9", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "b", "text": "5/9" },
+        { "id": "c", "text": "5/18", "misconceptionTag": "math.frac.add-denominators" },
+        { "id": "d", "text": "3/9" }
       ],
       "correctOption": "b",
-      "explanation": "عند تساوي المقام نطرح البُسُط ونُبقي المقام: 4/9 − 1/9 = (4−1)/9 = 3/9.",
+      "explanation": "عند تساوي المقام نطرح البُسُط ونُبقي المقام: 8/9 − 3/9 = (8−3)/9 = 5/9.",
       "difficulty": 1,
-      "competencies": ["math.frac.add-sous"]
+      "competencies": [
+        "math.frac.add-sous"
+      ]
     },
     {
-      "prompt": "ما ناتج 3/8 + 4/8؟",
+      "prompt": "ما ناتج 4/11 + 5/11؟",
       "options": [
-        {
-          "id": "a",
-          "text": "7/16",
-          "misconceptionTag": "math.frac.add-denominators"
-        },
-        { "id": "b", "text": "1/8" },
-        { "id": "c", "text": "7/8" },
-        { "id": "d", "text": "12/8" }
+        { "id": "a", "text": "9/22", "misconceptionTag": "math.frac.add-denominators" },
+        { "id": "b", "text": "1/11" },
+        { "id": "c", "text": "9/11" },
+        { "id": "d", "text": "20/11" }
       ],
       "correctOption": "c",
-      "explanation": "عند تساوي المقام نجمع البُسُط: 3/8 + 4/8 = (3+4)/8 = 7/8.",
+      "explanation": "عند تساوي المقام نجمع البُسُط: 4/11 + 5/11 = (4+5)/11 = 9/11.",
       "difficulty": 1,
-      "competencies": ["math.frac.add-sous"]
+      "competencies": [
+        "math.frac.add-sous"
+      ]
     },
     {
       "prompt": "ما ناتج 6/7 − 2/7؟",
       "options": [
-        {
-          "id": "a",
-          "text": "8/7",
-          "misconceptionTag": "math.num.operation-inverse-appliquee"
-        },
-        {
-          "id": "b",
-          "text": "4/14",
-          "misconceptionTag": "math.frac.add-denominators"
-        },
+        { "id": "a", "text": "8/7", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "b", "text": "4/14", "misconceptionTag": "math.frac.add-denominators" },
         { "id": "c", "text": "3/7" },
         { "id": "d", "text": "4/7" }
       ],
       "correctOption": "d",
       "explanation": "عند تساوي المقام نطرح البُسُط: 6/7 − 2/7 = (6−2)/7 = 4/7.",
       "difficulty": 1,
-      "competencies": ["math.frac.add-sous"]
+      "competencies": [
+        "math.frac.add-sous"
+      ]
     },
     {
-      "prompt": "ما ناتج 2/6 + 1/6 (مع الاختزال)؟",
+      "prompt": "ما ناتج 1/8 + 5/8 (مع الاختزال)؟",
       "options": [
-        { "id": "a", "text": "1/2" },
-        { "id": "b", "text": "3/12" },
-        { "id": "c", "text": "2/12" },
-        { "id": "d", "text": "2/6" }
+        { "id": "a", "text": "3/4" },
+        { "id": "b", "text": "6/16", "misconceptionTag": "math.frac.add-denominators" },
+        { "id": "c", "text": "1/2" },
+        { "id": "d", "text": "3/8" }
       ],
       "correctOption": "a",
-      "explanation": "2/6 + 1/6 = 3/6، وبالاختزال على 3: 3/6 = 1/2.",
+      "explanation": "1/8 + 5/8 = 6/8، وبالاختزال على 2: 6/8 = 3/4.",
       "difficulty": 2,
-      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+      "competencies": [
+        "math.frac.add-sous",
+        "math.frac.equivalence"
+      ]
     },
     {
-      "prompt": "ما ناتج 1/2 + 1/4 (وحّد على 4)؟",
+      "prompt": "ما ناتج 1/2 + 3/8 (وحّد على 8)؟",
       "options": [
-        {
-          "id": "a",
-          "text": "2/6",
-          "misconceptionTag": "math.frac.add-numerators-and-denominators"
-        },
-        { "id": "b", "text": "3/4" },
-        { "id": "c", "text": "2/4" },
-        { "id": "d", "text": "1/4" }
+        { "id": "a", "text": "4/10", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
+        { "id": "b", "text": "7/8" },
+        { "id": "c", "text": "4/8" },
+        { "id": "d", "text": "3/8" }
       ],
       "correctOption": "b",
-      "explanation": "نوحّد على 4: 1/2 = 2/4؛ ثمّ 2/4 + 1/4 = 3/4.",
+      "explanation": "نوحّد على 8: 1/2 = 4/8؛ ثمّ 4/8 + 3/8 = 7/8.",
       "difficulty": 2,
-      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+      "competencies": [
+        "math.frac.add-sous",
+        "math.frac.equivalence"
+      ]
     },
     {
       "prompt": "الشريط مقسّم إلى 8 أجزاء متقايسة: لُوّنت 3 أجزاء بالأزرق و2 بالأخضر. ما الكسر الذي يمثّل الجزء الملوّن كلّه؟\n<svg viewBox=\"0 0 260 46\"><rect x=\"10\" y=\"8\" width=\"30\" height=\"30\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"40\" y=\"8\" width=\"30\" height=\"30\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"70\" y=\"8\" width=\"30\" height=\"30\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"100\" y=\"8\" width=\"30\" height=\"30\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"130\" y=\"8\" width=\"30\" height=\"30\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"8\" width=\"30\" height=\"30\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"190\" y=\"8\" width=\"30\" height=\"30\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"220\" y=\"8\" width=\"30\" height=\"30\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/></svg>",
       "options": [
-        {
-          "id": "a",
-          "text": "1/8",
-          "misconceptionTag": "math.num.operation-inverse-appliquee"
-        },
+        { "id": "a", "text": "1/8", "misconceptionTag": "math.num.operation-inverse-appliquee" },
         { "id": "b", "text": "5/8" },
-        {
-          "id": "c",
-          "text": "5/16",
-          "misconceptionTag": "math.frac.add-denominators"
-        },
+        { "id": "c", "text": "5/16", "misconceptionTag": "math.frac.add-denominators" },
         { "id": "d", "text": "6/8" }
       ],
       "correctOption": "b",
       "explanation": "المقامان متساويان (8)، فنجمع البسطين ونُبقي المقام: 3/8 + 2/8 = 5/8. الكسر 5/16 يجمع المقامين، والكسر 1/8 هو الفرق بين البسطين.",
       "difficulty": 2,
-      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+      "competencies": [
+        "math.frac.add-sous",
+        "math.frac.equivalence"
+      ]
     },
     {
       "prompt": "ما ناتج 3/2 + 1/3؟",
       "options": [
-        {
-          "id": "a",
-          "text": "4/5",
-          "misconceptionTag": "math.frac.add-numerators-and-denominators"
-        },
+        { "id": "a", "text": "4/5", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
         { "id": "b", "text": "5/6" },
         { "id": "c", "text": "10/6" },
         { "id": "d", "text": "11/6" }
@@ -152,11 +125,16 @@
       "correctOption": "d",
       "explanation": "المقام المشترك 6: 3/2 = 9/6 و1/3 = 2/6، فالمجموع 9/6 + 2/6 = 11/6، وهو أكبر من 1 لأنّ 3/2 وحده أكبر من 1. الكسر 4/5 يجمع البسطين والمقامين، والكسر 10/6 يحوّل 1/3 إلى 1/6 خطأً.",
       "difficulty": 2,
-      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+      "competencies": [
+        "math.frac.add-sous",
+        "math.frac.equivalence"
+      ]
     }
   ],
   "manuel": {
     "code": "102609",
-    "items": ["L42 ex. 3"]
+    "items": [
+      "L42 ex. 3"
+    ]
   }
 }

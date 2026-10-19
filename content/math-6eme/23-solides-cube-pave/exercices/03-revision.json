@@ -62,31 +62,31 @@
       "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "مكعّبٌ طولُ حرفه 6 سم. ما مساحتُه الجمليّة؟",
+      "prompt": "مكعّبٌ طولُ حرفه 11 سم. ما مساحتُه الجمليّة؟",
       "options": [
         {
           "id": "a",
-          "text": "216 سم²"
+          "text": "66 سم²",
+          "misconceptionTag": "math.mes.arete-non-elevee-au-carre"
         },
         {
           "id": "b",
-          "text": "144 سم²",
-          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
-        },
-        {
-          "id": "c",
-          "text": "36 سم²",
+          "text": "121 سم²",
           "misconceptionTag": "math.mes.solide-une-seule-face-comptee"
         },
         {
+          "id": "c",
+          "text": "484 سم²",
+          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
+        },
+        {
           "id": "d",
-          "text": "72 سم²"
+          "text": "726 سم²"
         }
       ],
-      "correctOption": "a",
-      "explanation": "الجمليّة = 6 × (الحرف × الحرف) = 6 × (6 × 6) = 6 × 36 = 216 سم².",
-      "difficulty": 2,
-      "competencies": ["math.esp.cube-pave"]
+      "correctOption": "d",
+      "explanation": "الجمليّة = 6 × (الحرف × الحرف) = 6 × (11 × 11) = 6 × 121 = 726 سم². من استعمل 4 بدل 6 وجد 484، ومن حسب وجهًا واحدًا وجد 121، ومن نسي تربيع الحرف وجد 6 × 11 = 66.",
+      "difficulty": 2
     },
     {
       "prompt": "متوازي مستطيلاتٍ قاعدتُه طولُها 5 سم وعرضُها 2 سم. ما محيطُ القاعدة؟",
@@ -169,30 +169,30 @@
       "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "علبة مكعّبة حرفها 20 سم تُغطّى كلّها بورق، ثمن المتر المربّع منه 15 د. ما ثمن الورق اللازم؟",
+      "prompt": "علبة مكعّبة حرفها 25 سم تُغطّى كلّها بورق، ثمن المتر المربّع منه 12 د. ما ثمن الورق اللازم؟",
       "options": [
         {
           "id": "a",
-          "text": "2,4 د",
+          "text": "3 د",
           "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
         },
         {
           "id": "b",
-          "text": "3,6 د"
+          "text": "4,5 د"
         },
         {
           "id": "c",
-          "text": "360 د",
+          "text": "450 د",
           "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
         },
         {
           "id": "d",
-          "text": "36 000 د",
+          "text": "45 000 د",
           "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
         }
       ],
       "correctOption": "b",
-      "explanation": "الأوجه الستّة كلّها تُغطّى: 6 × (20 × 20) = 6 × 400 = 2 400 سم². ثمّ نحوّل إلى المتر المربّع لأنّ الثمن معطى له: 1 م² = 10 000 سم²، فالمساحة 0,24 م² والثمن 0,24 × 15 = 3,6 د. الأخطاء الشائعة: تغطية 4 أوجه فنجد 2,4 د، أو التحويل بعامل 100 فنجد 360 د، أو نسيان التحويل فنجد 36 000 د.",
+      "explanation": "الأوجه الستّة كلّها تُغطّى: 6 × (25 × 25) = 6 × 625 = 3 750 سم². ثمّ نحوّل إلى المتر المربّع لأنّ الثمن معطى له: 1 م² = 10 000 سم²، فالمساحة 0,375 م² والثمن 0,375 × 12 = 4,5 د. الأخطاء الشائعة: تغطية 4 أوجه فنجد 3 د، أو التحويل بعامل 100 فنجد 450 د، أو نسيان التحويل فنجد 45 000 د.",
       "difficulty": 3
     },
     {

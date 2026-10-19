@@ -44,7 +44,11 @@ G2), comme pour l'anglais et le français.
 
 ## 3. Carte et écart
 
-À écrire aux étages G3 et G4, après la lecture. Les missions sont à `[]` dans `gisement.json`.
+Écrite le 2026-10-19 (étages G3–G4) ; le détail et les règles sont dans `FableEtudes/campagnes/maths-6eme/PLAN-gisement.md`. Aucune phrase, aucun nombre, aucun contexte d'un devoir n'entre ici.
+
+**Les 17 sujets du concours** (1 h, trois problèmes rédigés 6 + 6 + 8, aucun QCM) donnent 119 lignes : argent (fraction, %, remise), trajet (vitesse, durée, horaire), géométrie longue (aires, contour, échelle). Chapitres les plus sollicités : 14 et 13 (fractions, pourcentages), 5 et 4 (décimaux), 20 (aires), 22 et 15 (durées, vitesse), 19, 21, 25 (contours) ; jamais 1, 7, 12, 23, 26. **Les 9 devoirs** (124 lignes, évaluation par critère) ajoutent les multiples sans intervalle, les critères de divisibilité à plusieurs chiffres, la monnaie en millimes et des constructions guidées.
+
+**Plan** : 38 missions (32 d'examen, un problème entier chacune, 17 sessions sur 17 ; 6 de devoirs en salle blanche), 326 questions, quatre lots M1 (06, 07, 13), M2 (14, 15), M3 (21, 22), M4 (19, 20, 25). Écarts : problèmes à énoncé défectueux (2017 P3, 2009 P2, 2013 P2, 2020 P3), cibles ◐ (intérêt, somme-écart, somme-rapport) et sept problèmes sains redondants. Registre : `gisement.json`, `missions`.
 
 ## 4. Échantillon — fixé le 2026-10-19, avant la lecture de tout document
 

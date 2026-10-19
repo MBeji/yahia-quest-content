@@ -10,63 +10,49 @@
       "prompt": "اختزل الكسر 3/6.",
       "options": [
         { "id": "a", "text": "1/2" },
-        {
-          "id": "b",
-          "text": "3/6",
-          "misconceptionTag": "math.frac.reduction-incomplete"
-        },
+        { "id": "b", "text": "3/2", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
         { "id": "c", "text": "1/3" },
         { "id": "d", "text": "2/3" }
       ],
       "correctOption": "a",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك 3: 3/6 = (3÷3)/(6÷3) = 1/2.",
       "difficulty": 1,
-      "competencies": ["math.frac.equivalence"]
+      "competencies": [
+        "math.frac.equivalence"
+      ]
     },
     {
       "prompt": "ما الكسرُ المساوي لـ 2/5 بمقامٍ يساوي 15؟",
       "options": [
         { "id": "a", "text": "5/15" },
         { "id": "b", "text": "6/15" },
-        {
-          "id": "c",
-          "text": "3/15",
-          "misconceptionTag": "math.frac.equivalence-facteur-errone"
-        },
-        {
-          "id": "d",
-          "text": "10/15",
-          "misconceptionTag": "math.frac.equivalence-facteur-errone"
-        }
+        { "id": "c", "text": "3/15" },
+        { "id": "d", "text": "10/15", "misconceptionTag": "math.frac.equivalence-facteur-errone" }
       ],
       "correctOption": "b",
       "explanation": "بما أنّ 5 × 3 = 15، نضرب البسطَ أيضًا في 3: 2 × 3 = 6، إذن 2/5 = 6/15.",
       "difficulty": 2,
-      "competencies": ["math.frac.equivalence"]
+      "competencies": [
+        "math.frac.equivalence"
+      ]
     },
     {
       "prompt": "اختزل الكسر 8/12.",
       "options": [
-        {
-          "id": "a",
-          "text": "4/6",
-          "misconceptionTag": "math.frac.reduction-incomplete"
-        },
-        {
-          "id": "b",
-          "text": "8/12",
-          "misconceptionTag": "math.frac.reduction-incomplete"
-        },
+        { "id": "a", "text": "4/6", "misconceptionTag": "math.frac.reduction-incomplete" },
+        { "id": "b", "text": "2/12", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
         { "id": "c", "text": "2/3" },
         { "id": "d", "text": "3/4" }
       ],
       "correctOption": "c",
       "explanation": "القاسمُ المشترك الأكبر للعددين 8 و12 هو 4: 8/12 = (8÷4)/(12÷4) = 2/3.",
       "difficulty": 2,
-      "competencies": ["math.frac.equivalence"]
+      "competencies": [
+        "math.frac.equivalence"
+      ]
     },
     {
-      "prompt": "ما البسطُ المفقود: 1/2 = ؟/14؟",
+      "prompt": "ما البسطُ المفقود: 1/2 = …/14؟",
       "options": [
         { "id": "a", "text": "2" },
         { "id": "b", "text": "14" },
@@ -76,7 +62,9 @@
       "correctOption": "d",
       "explanation": "بما أنّ 2 × 7 = 14، نضرب البسطَ أيضًا في 7: 1 × 7 = 7، إذن 1/2 = 7/14.",
       "difficulty": 2,
-      "competencies": ["math.frac.equivalence"]
+      "competencies": [
+        "math.frac.equivalence"
+      ]
     },
     {
       "prompt": "أيُّ كسرٍ غيرُ قابلٍ للاختزال؟",
@@ -89,49 +77,39 @@
       "correctOption": "a",
       "explanation": "ليس للعددين 5 و7 قاسمٌ مشترك أكبرُ من 1، فالكسرُ 5/7 غيرُ قابلٍ للاختزال (أمّا البقيّة فتُختزل).",
       "difficulty": 3,
-      "competencies": ["math.frac.equivalence"]
+      "competencies": [
+        "math.frac.equivalence"
+      ]
     },
     {
       "prompt": "اختزل الكسر 20/25 إلى أبسط صورة.",
       "options": [
         { "id": "a", "text": "5/5" },
         { "id": "b", "text": "4/5" },
-        {
-          "id": "c",
-          "text": "20/25",
-          "misconceptionTag": "math.frac.reduction-incomplete"
-        },
+        { "id": "c", "text": "4/25", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
         { "id": "d", "text": "2/5" }
       ],
       "correctOption": "b",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك 5: 20/25 = (20÷5)/(25÷5) = 4/5.",
       "difficulty": 3,
-      "competencies": ["math.frac.equivalence"]
+      "competencies": [
+        "math.frac.equivalence"
+      ]
     },
     {
       "prompt": "الشكل شبكة من 4 × 4 مربّعات متقايسة، لُوّنت مربّعات حافّتها. ما الكسر الممثّل للجزء الملوّن في أبسط صورة؟\n<svg viewBox=\"0 0 140 140\"><rect x=\"10\" y=\"10\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"10\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"70\" y=\"10\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"100\" y=\"10\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"40\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"40\" width=\"30\" height=\"30\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"70\" y=\"40\" width=\"30\" height=\"30\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"100\" y=\"40\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"70\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"70\" width=\"30\" height=\"30\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"70\" y=\"70\" width=\"30\" height=\"30\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"100\" y=\"70\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"100\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"100\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"70\" y=\"100\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"100\" y=\"100\" width=\"30\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        {
-          "id": "a",
-          "text": "1/4",
-          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
-        },
+        { "id": "a", "text": "1/4", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
         { "id": "b", "text": "3/4" },
-        {
-          "id": "c",
-          "text": "6/8",
-          "misconceptionTag": "math.frac.reduction-incomplete"
-        },
-        {
-          "id": "d",
-          "text": "12/16",
-          "misconceptionTag": "math.frac.reduction-incomplete"
-        }
+        { "id": "c", "text": "6/8", "misconceptionTag": "math.frac.reduction-incomplete" },
+        { "id": "d", "text": "12/16", "misconceptionTag": "math.frac.reduction-incomplete" }
       ],
       "correctOption": "b",
       "explanation": "الشبكة 16 مربّعًا، والحافّة 12 مربّعًا ملوّنًا (4 + 4 + 2 + 2). الكسر 12/16 يُختزل بالقاسم المشترك الأكبر 4: 12/16 = 3/4. الكسران 12/16 و6/8 ليسا في أبسط صورة، والكسر 1/4 يمثّل المربّعات الأربعة الداخليّة غير الملوّنة.",
       "difficulty": 3,
-      "competencies": ["math.frac.equivalence"]
+      "competencies": [
+        "math.frac.equivalence"
+      ]
     },
     {
       "type": "multi",
@@ -142,11 +120,16 @@
         { "id": "c", "text": "6/4" }
       ],
       "answerKey": {
-        "correct": ["a", "c"]
+        "correct": [
+          "a",
+          "c"
+        ]
       },
       "explanation": "3/2 = 6/4 بضرب الحدّين في 2، و3/2 = 18/12 بضربهما في 6. أمّا 4/2 فيساوي 2، وهو يختلف عن 3/2 (واحد ونصف).",
       "difficulty": 3,
-      "competencies": ["math.frac.equivalence"]
+      "competencies": [
+        "math.frac.equivalence"
+      ]
     },
     {
       "type": "numeric",
@@ -156,12 +139,18 @@
       },
       "explanation": "القاسم المشترك الأكبر للعددين 80 و48 هو 16: 80/48 = (80 ÷ 16)/(48 ÷ 16) = 5/3. فالبسط 5، وهو عدد أكبر من المقام لأنّ الكسر أكبر من 1.",
       "difficulty": 3,
-      "competencies": ["math.frac.equivalence"]
+      "competencies": [
+        "math.frac.equivalence"
+      ]
     }
   ],
   "manuel": {
     "code": "102609",
     "pages": "80-84",
-    "items": ["L28 ex. 3", "L28 ex. 5", "L28 ex. 6"]
+    "items": [
+      "L28 ex. 3",
+      "L28 ex. 5",
+      "L28 ex. 6"
+    ]
   }
 }

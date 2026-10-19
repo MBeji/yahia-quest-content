@@ -118,30 +118,31 @@
       "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "متوازي مستطيلاتٍ طولُه 5 سم وعرضُه 4 سم وارتفاعُه 2 سم. ما مساحتُه الجمليّة؟",
+      "prompt": "متوازي مستطيلاتٍ طولُه 6 سم وعرضُه 5 سم وارتفاعُه 3 سم. ما مساحتُه الجمليّة؟",
       "options": [
         {
           "id": "a",
-          "text": "76 سم²"
-        },
-        {
-          "id": "b",
-          "text": "36 سم²",
+          "text": "66 سم²",
           "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues"
         },
         {
+          "id": "b",
+          "text": "90 سم²",
+          "misconceptionTag": "math.mes.volume-utilise-comme-aire"
+        },
+        {
           "id": "c",
-          "text": "40 سم²"
+          "text": "96 سم²",
+          "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues"
         },
         {
           "id": "d",
-          "text": "20 سم²"
+          "text": "126 سم²"
         }
       ],
-      "correctOption": "a",
-      "explanation": "الجانبيّة = 2 × (5 + 4) × 2 = 36، ومساحةُ القاعدة = 5 × 4 = 20، فالجمليّة = 36 + 2 × 20 = 36 + 40 = 76 سم².",
-      "difficulty": 3,
-      "competencies": ["math.esp.cube-pave"]
+      "correctOption": "d",
+      "explanation": "الجانبيّة = 2 × (6 + 5) × 3 = 66، ومساحةُ القاعدة = 6 × 5 = 30، فالجمليّة = 66 + 2 × 30 = 126 سم². من اكتفى بالجانبيّة وجد 66، ومن أضاف قاعدة واحدة وجد 96، ومن ضرب الأبعاد الثلاثة وجد 90 وهو مقدار آخر.",
+      "difficulty": 3
     },
     {
       "prompt": "ما الفرقُ بين المساحة الجانبيّة والمساحة الجمليّة؟",

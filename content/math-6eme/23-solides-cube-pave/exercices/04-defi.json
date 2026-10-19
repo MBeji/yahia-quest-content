@@ -101,31 +101,31 @@
       "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "صندوقٌ على شكل مكعّبٍ طولُ حرفه 20 سم، نريدُ تغليفَه كاملًا. ما المساحةُ المطلوبة (الجمليّة)؟",
+      "prompt": "صندوقٌ على شكل مكعّبٍ طولُ حرفه 12 سم، نريدُ تغليفَه كاملًا. ما المساحةُ المطلوبة (الجمليّة)؟",
       "options": [
         {
           "id": "a",
-          "text": "2 400 سم²"
+          "text": "72 سم²",
+          "misconceptionTag": "math.mes.arete-non-elevee-au-carre"
         },
         {
           "id": "b",
-          "text": "1 600 سم²",
-          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
-        },
-        {
-          "id": "c",
-          "text": "400 سم²",
+          "text": "144 سم²",
           "misconceptionTag": "math.mes.solide-une-seule-face-comptee"
         },
         {
+          "id": "c",
+          "text": "576 سم²",
+          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
+        },
+        {
           "id": "d",
-          "text": "240 سم²"
+          "text": "864 سم²"
         }
       ],
-      "correctOption": "a",
-      "explanation": "الجمليّة = 6 × (الحرف × الحرف) = 6 × (20 × 20) = 6 × 400 = 2 400 سم².",
-      "difficulty": 3,
-      "competencies": ["math.esp.cube-pave"]
+      "correctOption": "d",
+      "explanation": "الجمليّة = 6 × (الحرف × الحرف) = 6 × (12 × 12) = 6 × 144 = 864 سم². من استعمل 4 وجد 576 وهي الجانبيّة، ومن حسب وجهًا واحدًا وجد 144، ومن نسي تربيع الحرف وجد 72.",
+      "difficulty": 3
     },
     {
       "prompt": "متوازي مستطيلاتٍ طولُه 6 سم وعرضُه 4 سم وارتفاعُه 2 سم. ما مساحتُه الجمليّة؟",

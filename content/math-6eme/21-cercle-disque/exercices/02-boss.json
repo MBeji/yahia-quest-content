@@ -169,56 +169,56 @@
       "competencies": ["math.geo.cercle"]
     },
     {
-      "prompt": "قرص مساحته 153,86 سم². ما نصف قطره؟ (π ≈ 3,14)",
+      "prompt": "قرص مساحته 254,34 سم². ما نصف قطره؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "7 سم"
+          "text": "9 سم"
         },
         {
           "id": "b",
-          "text": "14 سم"
+          "text": "18 سم"
         },
         {
           "id": "c",
-          "text": "24,5 سم"
+          "text": "40,5 سم"
         },
         {
           "id": "d",
-          "text": "49 سم"
+          "text": "81 سم"
         }
       ],
       "correctOption": "a",
-      "explanation": "المساحة = 3,14 × ر × ر، فر × ر = 153,86 ÷ 3,14 = 49، والعدد الذي جداء ضربه في نفسه 49 هو 7: ر = 7 سم. التحقّق: 3,14 × 7 × 7 = 153,86 ✓. الخطأ الشائع التوقّف عند 49، وهو ر × ر لا ر.",
+      "explanation": "المساحة = 3,14 × ر × ر، فر × ر = 254,34 ÷ 3,14 = 81، والعدد الذي جداء ضربه في نفسه 81 هو 9: ر = 9 سم. التحقّق: 3,14 × 9 × 9 = 254,34 ✓. الخطأ الشائع التوقّف عند 81، وهو ر × ر لا ر.",
       "difficulty": 3
     },
     {
-      "prompt": "قطعة خشبية على شكل نصف قرص قطره 20 سم. ما محيطها كلّه، أي القوس والقطر معًا؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 190\"><path d=\"M80 150 A100 100 0 0 1 280 150 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M80 150 L280 150\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"180\" y=\"174\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">20</text><circle cx=\"180\" cy=\"150\" r=\"3\" fill=\"#0f172a\"/></svg>",
+      "prompt": "قطعة خشبية على شكل نصف قرص قطره 24 سم. ما محيطها كلّه، أي القوس والقطر معًا؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 190\"><path d=\"M80 150 A100 100 0 0 1 280 150 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M80 150 L280 150\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"180\" y=\"174\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">24</text><circle cx=\"180\" cy=\"150\" r=\"3\" fill=\"#0f172a\"/></svg>",
       "options": [
         {
           "id": "a",
-          "text": "31,4 سم"
+          "text": "37,68 سم"
         },
         {
           "id": "b",
-          "text": "51,4 سم"
+          "text": "61,68 سم"
         },
         {
           "id": "c",
-          "text": "62,8 سم"
+          "text": "75,36 سم"
         },
         {
           "id": "d",
-          "text": "125,6 سم",
+          "text": "150,72 سم",
           "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
         }
       ],
       "correctOption": "b",
-      "explanation": "القوس نصف الدائرة: 3,14 × 20 ÷ 2 = 31,4 سم. ومحيط القطعة يضيف القطر الذي يحدّها: 31,4 + 20 = 51,4 سم. الخطأ الشائع التوقّف عند القوس 31,4، ومن أخذ الدائرة كلّها وجد 62,8.",
+      "explanation": "القوس نصف الدائرة: 3,14 × 24 ÷ 2 = 37,68 سم. ومحيط القطعة يضيف القطر الذي يحدّها: 37,68 + 24 = 61,68 سم. الخطأ الشائع التوقّف عند القوس 37,68، ومن أخذ الدائرة كلّها وجد 75,36.",
       "difficulty": 3
     },
     {
-      "prompt": "ساحة مستديرة نصف قطرها 10 م، في وسطها حوض مستدير نصف قطره 8 م، والباقي مبلّط. ما مساحة الجزء المبلّط؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 230\"><circle cx=\"180\" cy=\"115\" r=\"90\" fill=\"#0f6e56\" fill-opacity=\"0.2\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"60\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"3\" fill=\"#0f172a\"/><path d=\"M180 115 L270 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"255\" y=\"107\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">10</text><path d=\"M180 115 L130.9 80.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"145\" y=\"92.1\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">8</text></svg>",
+      "prompt": "ساحة مستديرة نصف قطرها 9 م، في وسطها حوض مستدير نصف قطره 7 م، والباقي مبلّط. ما مساحة الجزء المبلّط؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 230\"><circle cx=\"180\" cy=\"115\" r=\"90\" fill=\"#0f6e56\" fill-opacity=\"0.2\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"60\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"3\" fill=\"#0f172a\"/><path d=\"M180 115 L270 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"255\" y=\"107\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">9</text><path d=\"M180 115 L130.9 80.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"145\" y=\"92.1\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">7</text></svg>",
       "options": [
         {
           "id": "a",
@@ -226,19 +226,19 @@
         },
         {
           "id": "b",
-          "text": "113,04 م²"
+          "text": "100,48 م²"
         },
         {
           "id": "c",
-          "text": "314 م²"
+          "text": "254,34 م²"
         },
         {
           "id": "d",
-          "text": "514,96 م²"
+          "text": "408,2 م²"
         }
       ],
       "correctOption": "b",
-      "explanation": "الجزء المبلّط إكليل: قرص كبير ناقص قرص صغير. مساحة الكبير 3,14 × 10 × 10 = 314 م²، ومساحة الصغير 3,14 × 8 × 8 = 200,96 م²، فالفرق 314 − 200,96 = 113,04 م². الأخطاء الشائعة: اعتبار الفرق 2 نصف قطر فنجد 12,56، أو الجمع فنجد 514,96.",
+      "explanation": "الجزء المبلّط إكليل: قرص كبير ناقص قرص صغير. مساحة الكبير 3,14 × 9 × 9 = 254,34 م²، ومساحة الصغير 3,14 × 7 × 7 = 153,86 م²، فالفرق 254,34 − 153,86 = 100,48 م². الأخطاء الشائعة: اعتبار الفرق 2 نصف قطر فنجد 12,56، أو الجمع فنجد 408,2.",
       "difficulty": 3
     },
     {

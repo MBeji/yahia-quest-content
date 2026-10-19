@@ -5,11 +5,6 @@
   "xpReward": 120,
   "rewardCoins": 30,
   "displayOrder": 5,
-  "manuel": {
-    "code": "102609",
-    "pages": "133-135",
-    "items": ["L46 ex. 6"]
-  },
   "questions": [
     {
       "prompt": "أكملِ العلاقة: القطر = ... × نصف القطر.",
@@ -65,31 +60,31 @@
       "competencies": ["math.geo.cercle"]
     },
     {
-      "prompt": "ما محيطُ دائرةٍ قطرُها 10 سم؟ (π ≈ 3,14)",
+      "prompt": "ما محيطُ دائرةٍ قطرُها 15 سم؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "31,4 سم"
-        },
-        {
-          "id": "b",
-          "text": "62,8 سم",
-          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
-        },
-        {
-          "id": "c",
-          "text": "15,7 سم",
+          "text": "23,55 سم",
           "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         },
         {
+          "id": "b",
+          "text": "47,1 سم"
+        },
+        {
+          "id": "c",
+          "text": "94,2 سم",
+          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+        },
+        {
           "id": "d",
-          "text": "100 سم"
+          "text": "176,625 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
         }
       ],
-      "correctOption": "a",
-      "explanation": "المحيط = π × القطر = 3,14 × 10 = 31,4 سم.",
-      "difficulty": 2,
-      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
+      "correctOption": "b",
+      "explanation": "المحيط = π × القطر = 3,14 × 15 = 47,1 سم. من ضرب أيضًا في 2 وجد 94,2، ومن أخذ نصف القطر 7,5 في π × ق وجد 23,55، ومن حسب مساحة قرص نصف قطره 7,5 وجد 176,625.",
+      "difficulty": 2
     },
     {
       "prompt": "ما مساحةُ قرصٍ نصفُ قطره 6 سم؟ (π ≈ 3,14)",
@@ -202,27 +197,27 @@
       "difficulty": 3
     },
     {
-      "prompt": "قطعة معدنيّة على شكل ثلاثة أرباع قرص نصف قطره 20 سم. ما محيطها كلّها، أي القوس ونصفا القطر اللذان يحدّانها؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 230\"><path d=\"M170 110 L265 110 A95 95 0 1 1 170 15 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"170\" cy=\"110\" r=\"3\" fill=\"#0f172a\"/><text x=\"217.5\" y=\"130\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">20</text></svg>",
+      "prompt": "قطعة معدنيّة على شكل ثلاثة أرباع قرص نصف قطره 36 سم. ما محيطها كلّها، أي القوس ونصفا القطر اللذان يحدّانها؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 230\"><path d=\"M170 110 L265 110 A95 95 0 1 1 170 15 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"170\" cy=\"110\" r=\"3\" fill=\"#0f172a\"/><text x=\"217.5\" y=\"130\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">36</text></svg>",
       "options": [
         {
           "id": "a",
-          "text": "71,4 سم"
+          "text": "128,52 سم"
         },
         {
           "id": "b",
-          "text": "94,2 سم"
+          "text": "169,56 سم"
         },
         {
           "id": "c",
-          "text": "114,2 سم"
+          "text": "205,56 سم"
         },
         {
           "id": "d",
-          "text": "134,2 سم"
+          "text": "241,56 سم"
         }
       ],
       "correctOption": "d",
-      "explanation": "محيط الدائرة كلّها 2 × 3,14 × 20 = 125,6 سم، وثلاثة أرباعه 94,2 سم. وتحدّ القطعةَ قطعتان مستقيمتان هما نصفا قطر: 20 + 20 = 40 سم. فالمحيط 94,2 + 40 = 134,2 سم. الخطأ الشائع نسيان نصفَي القطر فنجد 94,2، أو إضافة واحد فقط فنجد 114,2.",
+      "explanation": "محيط الدائرة كلّها 2 × 3,14 × 36 = 226,08 سم، وثلاثة أرباعه 169,56 سم. وتحدّ القطعةَ قطعتان مستقيمتان هما نصفا قطر: 36 + 36 = 72 سم. فالمحيط 169,56 + 72 = 241,56 سم. الخطأ الشائع نسيان نصفَي القطر فنجد 169,56، أو إضافة واحد فقط فنجد 205,56، أو أخذ ربع القوس بدل ثلاثة أرباعه فنجد 128,52.",
       "difficulty": 3
     },
     {
@@ -253,12 +248,12 @@
     },
     {
       "type": "numeric",
-      "prompt": "دائرة قرصها مساحته 314 سم². ما محيط هذه الدائرة بالسنتيمتر؟ (π ≈ 3,14)",
+      "prompt": "دائرة قرصها مساحته 1 256 سم². ما محيط هذه الدائرة بالسنتيمتر؟ (π ≈ 3,14)",
       "answerKey": {
-        "value": 62.8,
+        "value": 125.6,
         "unit": "سم"
       },
-      "explanation": "المساحة = 3,14 × ر × ر، فر × ر = 314 ÷ 3,14 = 100، وبما أنّ 10 × 10 = 100 فنصف القطر 10 سم. المحيط = 2 × 3,14 × 10 = 62,8 سم. التحقّق: 3,14 × 10 × 10 = 314 ✓.",
+      "explanation": "المساحة = 3,14 × ر × ر، فر × ر = 1 256 ÷ 3,14 = 400، وبما أنّ 20 × 20 = 400 فنصف القطر 20 سم. المحيط = 2 × 3,14 × 20 = 125,6 سم. التحقّق: 3,14 × 20 × 20 = 1 256 ✓.",
       "difficulty": 3
     }
   ]

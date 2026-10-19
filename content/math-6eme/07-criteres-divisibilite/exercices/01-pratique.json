@@ -10,22 +10,16 @@
       "prompt": "ما الذي يجعل العددَ يقبل القسمة على 2؟",
       "options": [
         { "id": "a", "text": "أن يكون رقمُ آحاده فرديًّا" },
-        {
-          "id": "b",
-          "text": "أن ينتهي بالرقم 1",
-          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
-        },
-        {
-          "id": "c",
-          "text": "أن ينتهي بالرقم 5",
-          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
-        },
+        { "id": "b", "text": "أن ينتهي بالرقم 1" },
+        { "id": "c", "text": "أن ينتهي بالرقم 5", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
         { "id": "d", "text": "أن يكون رقمُ آحاده زوجيًّا" }
       ],
       "correctOption": "d",
       "explanation": "يقبل العددُ القسمةَ على 2 إذا كان رقمُ آحاده زوجيًّا (0 ; 2 ; 4 ; 6 ; 8).",
       "difficulty": 1,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
       "prompt": "أيُّ عددٍ زوجيّ؟",
@@ -38,7 +32,9 @@
       "correctOption": "b",
       "explanation": "آحادُ 36 هو 6 (زوجيّ)، فالعددُ 36 زوجيّ ويقبل القسمة على 2.",
       "difficulty": 1,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 5؟",
@@ -51,7 +47,9 @@
       "correctOption": "c",
       "explanation": "آحادُ 60 هو 0، فالعددُ 60 يقبل القسمة على 5 (وعلى 10 و2 كذلك).",
       "difficulty": 1,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 10؟",
@@ -64,41 +62,39 @@
       "correctOption": "c",
       "explanation": "العددُ يقبل القسمة على 10 إذا كان آحاده 0؛ آحادُ 90 هو 0، فهو يقبلها.",
       "difficulty": 1,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
-      "prompt": "ما مجموعُ أرقام العدد 234؟",
+      "prompt": "ما مجموعُ أرقام العدد 438؟",
       "options": [
-        { "id": "a", "text": "6" },
-        { "id": "b", "text": "7" },
-        { "id": "c", "text": "8" },
-        { "id": "d", "text": "9" }
+        { "id": "a", "text": "13" },
+        { "id": "b", "text": "14" },
+        { "id": "c", "text": "16" },
+        { "id": "d", "text": "15" }
       ],
       "correctOption": "d",
-      "explanation": "مجموعُ أرقام 234 هو 2 + 3 + 4 = 9 (نستعمله لاختبار القسمة على 3 و9).",
+      "explanation": "مجموعُ أرقام 438 هو 4 + 3 + 8 = 15 (نستعمله لاختبار القسمة على 3 و9).",
       "difficulty": 2,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
-      "prompt": "هل يقبل العددُ 234 القسمةَ على 3؟",
+      "prompt": "هل يقبل العددُ 438 القسمةَ على 3؟",
       "options": [
-        {
-          "id": "a",
-          "text": "لا لأنّ آحاده 4 وليس 0 ولا 5",
-          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
-        },
-        { "id": "b", "text": "لا" },
-        {
-          "id": "c",
-          "text": "لا لأنّه عددٌ زوجيّ",
-          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
-        },
-        { "id": "d", "text": "نعم" }
+        { "id": "a", "text": "لا، لأنّ آحاده ليس 0 ولا 5", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "b", "text": "لا، لأنّ آحاده 8 لا 3", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "c", "text": "نعم، لأنّه عددٌ زوجيّ", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "d", "text": "نعم، لأنّ مجموع أرقامه 15" }
       ],
       "correctOption": "d",
-      "explanation": "مجموعُ أرقام 234 يساوي 2 + 3 + 4 = 9 وهو يقبل القسمة على 3، فالعددُ 234 يقبل القسمة على 3. كونُه زوجيًّا أو رقمُ آحاده 4 لا يمنع ذلك: معيارُ 3 يعمل على مجموع الأرقام لا على الآحاد.",
+      "explanation": "مجموعُ أرقام 438 هو 4 + 3 + 8 = 15، و15 مضاعفٌ للعدد 3، فالعددُ 438 يقبل القسمة على 3: 438 = 3 × 146. رقمُ الآحاد لا يكفي هنا، وكونُ العدد زوجيًّا يخصّ القسمة على 2 لا على 3.",
       "difficulty": 2,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
       "type": "multi",
@@ -110,37 +106,39 @@
         { "id": "d", "text": "318" }
       ],
       "answerKey": {
-        "correct": ["a", "d"]
+        "correct": [
+          "a",
+          "d"
+        ]
       },
       "explanation": "207: 2 + 0 + 7 = 9 فيقبل القسمة على 3. 318: 3 + 1 + 8 = 12 فيقبلها. أمّا 317 فمجموع أرقامه 11 و409 مجموع أرقامه 13، وكلاهما ليس مضاعفًا لـ 3.",
       "difficulty": 2,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     },
     {
       "prompt": "أيّ رقمٍ نضعه مكان ▢ في العدد 217▢ ليقبل القسمةَ على 2 وعلى 5 معًا؟",
       "options": [
         { "id": "a", "text": "0" },
-        {
-          "id": "b",
-          "text": "2",
-          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
-        },
-        {
-          "id": "c",
-          "text": "5",
-          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
-        },
+        { "id": "b", "text": "2", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "c", "text": "5", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
         { "id": "d", "text": "7" }
       ],
       "correctOption": "a",
       "explanation": "القسمة على 2 وعلى 5 معًا تعني أن يكون رقم الآحاد 0، فالعدد هو 2170 = 2 × 1085 = 5 × 434. الرقم 5 يصلح للقسمة على 5 فقط، والرقم 2 يصلح للقسمة على 2 فقط.",
       "difficulty": 2,
-      "competencies": ["math.num.criteres-divisibilite"]
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
     }
   ],
   "manuel": {
     "code": "102609",
     "pages": "70-77",
-    "items": ["L26 ex. 3أ", "L25 ex. 4ج"]
+    "items": [
+      "L26 ex. 3أ",
+      "L25 ex. 4ج"
+    ]
   }
 }

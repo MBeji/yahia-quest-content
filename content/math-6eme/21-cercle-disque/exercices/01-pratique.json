@@ -115,31 +115,30 @@
       "competencies": ["math.geo.cercle"]
     },
     {
-      "prompt": "ما محيطُ دائرةٍ قطرُها 10 سم؟ (π ≈ 3,14)",
+      "prompt": "ما محيطُ دائرةٍ قطرُها 14 سم؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "31,4 سم"
+          "text": "17,14 سم"
         },
         {
           "id": "b",
-          "text": "62,8 سم",
-          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+          "text": "21,98 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         },
         {
           "id": "c",
-          "text": "20 سم",
-          "misconceptionTag": "math.geo.facteur-pi-omis"
+          "text": "43,96 سم"
         },
         {
           "id": "d",
-          "text": "13,14 سم"
+          "text": "87,92 سم",
+          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
         }
       ],
-      "correctOption": "a",
-      "explanation": "المحيط = π × القطر = 3,14 × 10 = 31,4 سم.",
-      "difficulty": 2,
-      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
+      "correctOption": "c",
+      "explanation": "المحيط = π × القطر = 3,14 × 14 = 43,96 سم. من ضرب أيضًا في 2 وجد 87,92، ومن أخذ نصف القطر 7 في π × ق وجد 21,98، ومن جمع 14 مع 3,14 وجد 17,14.",
+      "difficulty": 2
     },
     {
       "prompt": "ما الفرقُ بين الدائرة والقرص؟",
@@ -197,28 +196,28 @@
       "difficulty": 2
     },
     {
-      "prompt": "صُنعت دائرة من سلك طوله 94,2 سم. ما نصف قطرها؟ (π ≈ 3,14)",
+      "prompt": "صُنعت دائرة من سلك طوله 81,64 سم. ما نصف قطرها؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "15 سم"
+          "text": "13 سم"
         },
         {
           "id": "b",
-          "text": "30 سم",
+          "text": "26 سم",
           "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         },
         {
           "id": "c",
-          "text": "47,1 سم"
+          "text": "40,82 سم"
         },
         {
           "id": "d",
-          "text": "60 سم"
+          "text": "52 سم"
         }
       ],
       "correctOption": "a",
-      "explanation": "طول السلك هو المحيط، والمحيط ÷ القطر = π، فالقطر = 94,2 ÷ 3,14 = 30 سم، ونصف القطر 30 ÷ 2 = 15 سم. التحقّق: 2 × 3,14 × 15 = 94,2 ✓. من توقّف عند 30 أعطى القطر لا نصف القطر، ومن قسم 94,2 على 2 فقط وجد 47,1.",
+      "explanation": "طول السلك هو المحيط، والمحيط ÷ القطر = π، فالقطر = 81,64 ÷ 3,14 = 26 سم، ونصف القطر 26 ÷ 2 = 13 سم. التحقّق: 2 × 3,14 × 13 = 81,64 ✓. من توقّف عند 26 أعطى القطر لا نصف القطر، ومن قسم 81,64 على 2 فقط وجد 40,82.",
       "difficulty": 2
     },
     {
