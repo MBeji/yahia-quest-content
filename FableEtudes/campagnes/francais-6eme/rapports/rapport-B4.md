@@ -30,3 +30,12 @@ Tous les autres items sont des variantes (non tracées), notamment toutes les le
 3. 08/04-defi #6 et 07/03-revision #4 : questions de lecture sur textes courts maison ; vérifier qu'un indice du texte tranche.
 4. 08 cours section 7 : proverbe « Petit à petit, l'oiseau fait son nid » et comparaisons animales (taureau, lapin, escargot, gazelle) venues du vocabulaire du manuel p.132 ; le proverbe « Tous les chemins mènent à Rome » n'est que dans l'exercice 05 (reprise).
 5. Gabarits : la structure « quel groupe est le complément de temps / de manière » revient dans les deux chapitres (notions parallèles) ; formulations variées pour limiter l'effet de gabarit.
+
+## Corrections après audit
+Appliqués avec les textes exacts de l'auditeur (audit-B4.md) : C-1 (07/08 03 q5, option « par » remplacée par « à »), M-2 (trois tableaux de 4 colonnes scindés en tableaux de 3 colonnes au plus, ainsi que le tableau de la lettre et le tableau narration/description en 2 colonnes), M-3 et M-10 (deux règles fausses), M-4 à M-7, M-9, M-11 (leur retiré de l'exemple et du verifie), M-12 (rentrer ajouté au cours et au résumé), M-13 (contraires enseignés au cours, q2 réduite à 3 paires, q5 sans fuite), M-14 à M-17, m-2 à m-8, m-10, m-12, m-13, M-8 et M-18 (coursePitfalls : 10 au 07, 9 au 08). Les cours gardent les italiques corrigés par le pilote ; aucun fichier de référence de l'auditeur n'a été copié.
+
+Écart : `fr.lexique.contraire-pour-synonyme` (coursePitfalls 08) n'est pas compté par le gate quand il ne figure que dans `expectedMistakes` d'une question libre ; j'ai donc remplacé 08/01-pratique q6 (famille de « voyage », étiquette mot-voisin) par « contraire de lointain » portant l'étiquette sur deux distracteurs. La famille de mots reste testée par 05 q1.
+
+Non appliqués (jugés facultatifs, sans effet sur les gates) : m-9 (calibrage d4 des défis), m-11 (test des mots-outils), m-15 (planche SVG de BD), copies tolérées m-14.
+
+Contrôles sur le corpus réel : `content:check` vert (french-6eme : 8 chapitres, 240 questions) ; `content:qa -- --subject french-6eme` vert ; `content:tranche … --fresh --strict-longest` : clé la plus longue 0/51, 0 paire proche, 0 recul de patron, 3 gabarits inter-chapitres avec le 06 (lieu/temps, acceptables) ; `prettier --check` vert ; rendu `renderLesson`/`renderSummary` : 0 `_` et 0 `*` dans le texte rendu des deux cours et des deux résumés (test jetable supprimé).

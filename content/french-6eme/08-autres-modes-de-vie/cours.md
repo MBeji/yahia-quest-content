@@ -78,7 +78,7 @@ Dans le tableau, _je_ et _tu_ finissent par **x**, _il_ et _elle_ par **t**. Au 
 :::
 
 ::: piege Erreur fréquente
-« _Je peut admirer la vue._ » ✗ « _Il veux voir les boutiques._ » ✗ On met le **t** avec _je_ et le **x** avec _il_, comme si les deux se confondaient. ✓ _je peux_, _tu veux_ : **x** ; _il peut_, _elle veut_ : **t**. Retiens que _je_ et _tu_ ont toujours la même forme au présent.
+« _Je peut admirer la vue._ » ✗ « _Il veux voir les boutiques._ » ✗ On met le **t** avec _je_ et le **x** avec _il_, comme si les deux se confondaient. ✓ _je peux_, _tu veux_ : **x** ; _il peut_, _elle veut_ : **t**. Retiens qu'avec _vouloir_ et _pouvoir_, _je_ et _tu_ ont la même forme.
 :::
 
 ::: propriete
@@ -99,7 +99,7 @@ Vouloir et pouvoir : _je veux, tu veux, il veut_ ; _je peux, tu peux, il peut_ ;
 
 ## ✈️ Le participe passé avec être
 
-Sarra est allée en Corse chez ses grands-parents. Ses cousins sont partis avec elle, et sa cousine Inès est arrivée un peu plus tard. Dans ces trois phrases, le dernier mot change de forme.
+Sarra est allée en Corse chez ses grands-parents. Ses cousins sont partis avec elle, et sa cousine Inès est arrivée un peu plus tard. Dans ces trois phrases, le participe passé change de forme.
 
 Pourquoi _allée_, _partis_, _arrivée_, et comment savoir comment l'écrire ?
 
@@ -130,7 +130,7 @@ On retrouve dans la dernière colonne la même règle : le participe prend **e**
 :::
 
 ::: piege Erreur fréquente
-« _Sarra a allé en Corse._ » ✗ On se trompe d'auxiliaire. ✓ _Aller_, _partir_, _arriver_, _sortir_, _tomber_, _rester_ et _revenir_ se conjuguent avec **être** : _elle est allée_.
+« _Sarra a allé en Corse._ » ✗ On se trompe d'auxiliaire. ✓ _Aller_, _partir_, _arriver_, _sortir_, _rentrer_, _tomber_, _rester_ et _revenir_ se conjuguent avec **être** : _elle est allée_.
 :::
 
 ::: propriete
@@ -206,12 +206,12 @@ Dans un récit, on raconte des actions, mais parfois on s'arrête pour montrer u
 Un **récit** raconte des actions qui s'enchaînent. Un **passage descriptif** s'arrête sur un lieu, un objet ou un personnage et dit **comment il est** : sa taille, ses couleurs, ce qu'on y voit ou entend. L'histoire n'avance pas pendant la description.
 :::
 
-| Phrase                                                  | Ce qu'elle fait       | Type        |
-| ------------------------------------------------------- | --------------------- | ----------- |
-| _Nous arrivons à Tozeur._                               | une action            | narration   |
-| _De grands palmiers entourent de petits jardins verts._ | montre le lieu        | description |
-| _L'air est frais et doux._                              | dit comment est l'air | description |
-| _Mon père pose sa valise._                              | une action            | narration   |
+| Phrase                                                  | Elle…                 |
+| ------------------------------------------------------- | --------------------- |
+| _Nous arrivons à Tozeur._                               | raconte une action    |
+| _De grands palmiers entourent de petits jardins verts._ | montre le lieu        |
+| _L'air est frais et doux._                              | dit comment est l'air |
+| _Mon père pose sa valise._                              | raconte une action    |
 
 Le tableau sépare ce qui fait avancer l'histoire (narration) de ce qui fait voir (description).
 
@@ -248,7 +248,7 @@ Un récit raconte des actions ; un passage descriptif s'arrête et dit comment e
 
 ## 📖 Lire un récit de voyage et une bande dessinée
 
-Le gardien du phare montre la lampe aux élèves. Il leur explique qu'elle tourne toute la nuit pour guider les bateaux. Les élèves l'écoutent avec attention, puis ils montent au sommet. Les enfants admirent la mer.
+Le gardien du phare montre la lampe aux élèves. Il explique qu'elle tourne toute la nuit pour guider les bateaux. Les élèves écoutent avec attention, puis ils montent au sommet. Les enfants admirent la mer.
 
 Dans ce petit récit, plusieurs mots désignent les mêmes personnes. Comment s'y retrouver ?
 
@@ -266,8 +266,8 @@ Chaque substitut garde le **genre** et le **nombre** du mot qu'il remplace, et o
 
 ::: exemple retrouver qui fait quoi dans le texte du phare
 
-1. **Il leur explique** : _il_ remplace _le gardien_ ← masculin singulier, c'est le seul homme de l'histoire.
-2. **Leur** : il désigne les élèves ← c'est le pluriel de ceux à qui le gardien parle.
+1. **Il explique** : _il_ remplace _le gardien_ ← masculin singulier, c'est le seul homme de l'histoire.
+2. **Elle tourne** : _elle_ remplace _la lampe_ ← féminin singulier, et c'est la lampe qui guide les bateaux.
 3. **Ils montent** et **les enfants admirent** : _ils_ et _les enfants_ désignent les élèves ← même pluriel, même groupe.
 
 :::
@@ -281,7 +281,7 @@ Dans une BD, ce qui est dit est dans une **bulle** rattachée au personnage qui 
 :::
 
 ::: verifie
-Dans « _Les enfants regardent le gardien. Il leur sourit._ », que désigne _il_ ?
+Dans « _Les enfants regardent le gardien. Il sourit._ », que désigne _il_ ?
 
 ---
 
@@ -299,7 +299,7 @@ Avant de partir, Yasmine consulte les horaires : l'avion décolle à midi, le ba
 Comment les retenir et ne pas les confondre ?
 
 ::: definition
-**Voyager**, c'est aller loin de chez soi, dans une autre région ou un autre pays, pour un moment. **Embarquer**, c'est monter dans un bateau, un avion ou un autre véhicule pour partir. Les mots d'un même thème forment un champ lexical ; les mots d'une même **famille** partagent un radical (_voyage, voyageur, voyager_).
+**Voyager**, c'est aller loin de chez soi, dans une autre région ou un autre pays, pour un moment. **Embarquer**, c'est monter dans un bateau, un avion ou un autre véhicule pour partir. Son contraire est **débarquer** : descendre à l'arrivée. Un avion **décolle** au départ et **atterrit** à l'arrivée. Les mots d'un même thème forment un champ lexical ; les mots d'une même **famille** partagent un radical (_voyage, voyageur, voyager_).
 :::
 
 | Mot        | Contraire     |
@@ -371,7 +371,7 @@ Question : _quelle fête se célèbre avec des masques ?_
 :::
 
 ::: piege Erreur fréquente
-Classer « _Fabriquer une maquette de la Tour Eiffel_ » parmi les récits, ou un texte sur les fêtes du monde parmi ceux qui disent comment faire. ✗ ✓ Un texte avec une liste de matériel et des étapes numérotées est **injonctif** ; un texte organisé en rubriques qui apprend quelque chose est **documentaire**.
+Classer « _Fabriquer une maquette de la Tour Eiffel_ » parmi les récits, ou un texte sur les fêtes du monde parmi ceux qui disent comment faire. ✗ On se fie au sujet du texte au lieu de regarder à quoi il sert. ✓ Un texte avec une liste de matériel et des étapes numérotées est **injonctif** ; un texte organisé en rubriques qui apprend quelque chose est **documentaire**.
 :::
 
 ::: propriete

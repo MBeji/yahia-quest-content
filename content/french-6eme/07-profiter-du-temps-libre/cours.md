@@ -52,7 +52,7 @@ Le complément de temps est **dimanche prochain** : il répond à _quand ?_ Il p
 :::
 
 ::: retenir
-Le complément de temps répond à « quand ? », se déplace, se supprime, et s'accorde avec le temps du verbe.
+Le complément de temps répond à « quand ? », se déplace, se supprime, et le temps du verbe doit lui correspondre.
 :::
 
 ## ✍️ Dire, lire, écrire : le présent et le passé composé
@@ -65,15 +65,25 @@ Trois verbes très utiles dans une lettre : _dire_, _lire_ et _écrire_. Leurs f
 **Dire**, **lire** et **écrire** sont trois verbes du **3ᵉ groupe**. Ils ont leurs propres formes : on les apprend. Au **présent** ils changent de forme à chaque personne ; au **passé composé** ils se forment avec l'auxiliaire **avoir** et leur **participe passé** : _dit_, _lu_, _écrit_.
 :::
 
-|               | dire       | lire       | écrire       |
-| ------------- | ---------- | ---------- | ------------ |
-| je / j'       | **dis**    | **lis**    | **écris**    |
-| tu            | **dis**    | **lis**    | **écris**    |
-| il, elle      | **dit**    | **lit**    | **écrit**    |
-| nous          | **disons** | **lisons** | **écrivons** |
-| vous          | **dites**  | **lisez**  | **écrivez**  |
-| ils, elles    | **disent** | **lisent** | **écrivent** |
-| passé composé | _j'ai dit_ | _j'ai lu_  | _j'ai écrit_ |
+|            | dire       | lire       |
+| ---------- | ---------- | ---------- |
+| je         | **dis**    | **lis**    |
+| tu         | **dis**    | **lis**    |
+| il, elle   | **dit**    | **lit**    |
+| nous       | **disons** | **lisons** |
+| vous       | **dites**  | **lisez**  |
+| ils, elles | **disent** | **lisent** |
+
+| sujet      | écrire       |
+| ---------- | ------------ |
+| j'         | **écris**    |
+| tu         | **écris**    |
+| il, elle   | **écrit**    |
+| nous       | **écrivons** |
+| vous       | **écrivez**  |
+| ils, elles | **écrivent** |
+
+Passé composé, avec _avoir_ : _j'ai dit_, _j'ai lu_, _j'ai écrit_.
 
 Observe : seul **dire** fait **vous dites** ; _lire_ et _écrire_ font _vous lisez_, _vous écrivez_. Et le participe passé de _dire_ et de _écrire_ finit par **-t**, celui de _lire_ par **-u**.
 
@@ -115,14 +125,17 @@ Deux temps différents dans le même message : l'un annonce ce qui va arriver, l
 Le **futur** dit ce qui se passera plus tard ; on ajoute les terminaisons **-ai, -as, -a, -ons, -ez, -ont** à l'infinitif (le **e** final de -_re_ tombe). L'**impératif** sert à donner un ordre, un conseil ou une invitation ; il n'a que trois personnes (_tu, nous, vous_) et **aucun pronom sujet**.
 :::
 
-|                   | dire           | lire           | écrire           |
-| ----------------- | -------------- | -------------- | ---------------- |
-| futur, _je_       | je **dirai**   | je **lirai**   | j'**écrirai**    |
-| futur, _tu_       | tu **diras**   | tu **liras**   | tu **écriras**   |
-| futur, _ils_      | ils **diront** | ils **liront** | ils **écriront** |
-| impératif, _tu_   | **dis**        | **lis**        | **écris**        |
-| impératif, _nous_ | **disons**     | **lisons**     | **écrivons**     |
-| impératif, _vous_ | **dites**      | **lisez**      | **écrivez**      |
+| verbe  | futur, je     | futur, ils       |
+| ------ | ------------- | ---------------- |
+| dire   | je **dirai**  | ils **diront**   |
+| lire   | je **lirai**  | ils **liront**   |
+| écrire | j'**écrirai** | ils **écriront** |
+
+| verbe  | impératif, tu | impératif, nous / vous     |
+| ------ | ------------- | -------------------------- |
+| dire   | **dis**       | **disons** · **dites**     |
+| lire   | **lis**       | **lisons** · **lisez**     |
+| écrire | **écris**     | **écrivons** · **écrivez** |
 
 Dans le tableau, tout le futur s'obtient d'une seule façon : l'infinitif, moins le **e** final, plus la terminaison. L'impératif reprend les formes du présent, sans le pronom.
 
@@ -135,7 +148,7 @@ Dans le tableau, tout le futur s'obtient d'une seule façon : l'infinitif, moins
 :::
 
 ::: piege Erreur fréquente
-« _Écri-moi vite !_ » ✗ « _Di bonjour à tes parents !_ » ✗ On enlève le **s** comme pour _chante_ ou _regarde_. ✓ Avec _dire_, _lire_ et _écrire_, la 2ᵉ personne de l'impératif garde son **s** : _dis_, _lis_, _écris_. Seuls les verbes en -_er_ (et _aller_) le perdent.
+« _Écri-moi vite !_ » ✗ « _Di bonjour à tes parents !_ » ✗ On enlève le **s** comme pour _chante_ ou _regarde_. ✓ Avec _dire_, _lire_ et _écrire_, la 2ᵉ personne de l'impératif garde son **s** : _dis_, _lis_, _écris_. Les verbes en -_er_ (et _aller_) le perdent ; _dire_, _lire_ et _écrire_, eux, le gardent.
 :::
 
 ::: propriete
@@ -164,16 +177,16 @@ Le même adjectif change d'écriture. Pourquoi, et comment trouver sa forme sans
 L'**adjectif qualificatif** s'accorde en **genre** et en **nombre** avec le nom qu'il accompagne. Pour le **féminin**, la plupart des adjectifs prennent un **e**. Quelques-uns changent de forme ; d'autres **doublent la consonne** finale avant le **e**.
 :::
 
-| Masculin | Féminin      | Masculin pluriel | Féminin pluriel |
-| -------- | ------------ | ---------------- | --------------- |
-| neuf     | neu**ve**    | neufs            | neu**ves**      |
-| beau     | **belle**    | beau**x**        | **belles**      |
-| vieux    | **vieille**  | vieux            | **vieilles**    |
-| bon      | bon**ne**    | bons             | bon**nes**      |
-| gentil   | genti**lle** | gentils          | genti**lles**   |
-| gros     | gros**se**   | gros             | gros**ses**     |
+| Masculin (sing. · plur.) | Féminin (sing. · plur.)      |
+| ------------------------ | ---------------------------- |
+| neuf · neufs             | neu**ve** · neu**ves**       |
+| beau · beau**x**         | **belle** · **belles**       |
+| vieux · vieux            | **vieille** · **vieilles**   |
+| bon · bons               | bon**ne** · bon**nes**       |
+| gentil · gentils         | genti**lle** · genti**lles** |
+| gros · gros              | gros**se** · gros**ses**     |
 
-La colonne du féminin montre trois façons de changer : une nouvelle terminaison (_neuve_, _belle_, _vieille_), une consonne doublée (_bonne_, _grosse_), ou -_ille_ pour _gentil_.
+La colonne de droite montre trois façons de changer : une nouvelle terminaison (_neuve_, _belle_, _vieille_), une consonne doublée (_bonne_, _grosse_), ou -_ille_ pour _gentil_.
 
 ::: exemple accorder les adjectifs de « une (gentil) cousine m'offre deux (beau) livres (neuf) »
 
@@ -189,7 +202,7 @@ La colonne du féminin montre trois façons de changer : une nouvelle terminaiso
 :::
 
 ::: propriete
-L'adjectif s'accorde **partout** avec son nom : épithète (_une belle histoire_) comme attribut (_cette histoire est belle_). Au pluriel, on ajoute **s** ; les adjectifs déjà terminés par **s** ou **x** ne changent pas (_gros, vieux_) ; ceux en **-eau** prennent un **x** (_beaux_). Cas-limite : un adjectif qui finit déjà par **e** au masculin ne change pas au féminin (_un livre rouge, une guitare rouge_).
+L'adjectif s'accorde **partout** avec son nom : épithète (_une belle histoire_) comme attribut (_cette histoire est belle_). Au pluriel, on ajoute **s** ; les adjectifs déjà terminés par **s** ou **x** ne changent pas (_gros, vieux_) ; ceux en **-eau** prennent un **x** (_beaux_). Cas-limite : un adjectif qui finit déjà par **e** au masculin ne change pas au féminin (_un livre rouge, une guitare rouge_). Comme _neuf → neuve_ : _vif → vive_.
 :::
 
 ::: verifie
@@ -273,13 +286,13 @@ Une lettre a une forme précise. Quelles sont ses parties et dans quel ordre von
 Une **lettre** à un ami ou à un parent comporte, dans cet ordre : le **lieu et la date**, la **formule d'interpellation**, le **corps de la lettre** (en paragraphes), la **formule d'adieu** et la **signature**.
 :::
 
-| Partie                   | Où ?                           | Exemple                                                       |
-| ------------------------ | ------------------------------ | ------------------------------------------------------------- |
-| Lieu et date             | en haut, à droite              | _Tunis, le 3 mai_                                             |
-| Formule d'interpellation | à gauche, suivie d'une virgule | _Cher Yassine,_ · _Chers parents,_                            |
-| Corps de la lettre       | en paragraphes                 | je me présente, je parle de mes loisirs, je pose une question |
-| Formule d'adieu          | après le corps                 | _Je t'embrasse très fort._ · _À bientôt._                     |
-| Signature                | tout en bas                    | _Sami_                                                        |
+| Partie                                                    | Exemple                                                       |
+| --------------------------------------------------------- | ------------------------------------------------------------- |
+| **Lieu et date** (en haut, à droite)                      | _Tunis, le 3 mai_                                             |
+| **Formule d'interpellation** (à gauche, avec une virgule) | _Cher Yassine,_ · _Chers parents,_                            |
+| **Corps** (en paragraphes)                                | je me présente, je parle de mes loisirs, je pose une question |
+| **Formule d'adieu** (après le corps)                      | _Je t'embrasse très fort._ · _À bientôt._                     |
+| **Signature** (tout en bas)                               | _Sami_                                                        |
 
 ::: exemple remettre en ordre les morceaux d'une lettre de Sami
 
@@ -379,7 +392,7 @@ Un **texte documentaire** informe : il donne des renseignements sur un sujet, en
 | Forme     | rubriques, paragraphes            | étapes numérotées, matériel                  |
 | Exemple   | _Le sculpteur utilise un ciseau._ | _1. Pense à un nombre._                      |
 
-::: exemple reconnaître le texte « Le nombre pensé » : « 1. Demande à un ami de penser à un nombre de 1 à 15. 2. Montre-lui quatre listes A, B, C, D. 3. Il te dit dans quelles listes son nombre se trouve. 4. Additionne les premiers nombres de ces listes. »
+::: exemple reconnaître un jeu inspiré du « Nombre pensé » du manuel : « 1. Demande à un ami de penser à un nombre de 1 à 15. 2. Montre-lui quatre listes A, B, C, D. 3. Il te dit dans quelles listes son nombre se trouve. 4. Additionne les premiers nombres de ces listes. »
 
 1. **Les verbes** : _demande, montre, additionne_ ← ils sont à l'impératif, donc on donne des ordres.
 2. **La forme** : étapes numérotées de 1 à 4 ← c'est la marque d'une suite de consignes.
@@ -399,7 +412,7 @@ Voici les quatre listes du tour :
 Chaque liste commence par un nombre : 1, 2, 4 et 8. Ton ami pense à 11 ; il le trouve dans A, B et D, mais pas dans C. Tu additionnes les premiers nombres de ces trois listes : 1 + 2 + 8 = 11.
 
 ::: piege Erreur fréquente
-Classer « _Le nombre pensé_ » parmi les textes qui racontent une histoire, ou un texte sur la sculpture parmi ceux qui disent comment faire. ✗ ✓ Un texte sans personnages ni histoire qui donne des étapes est **injonctif** ; un texte qui apprend ce qu'est la sculpture est **documentaire**.
+Classer « _Le nombre pensé_ » parmi les textes qui racontent une histoire, ou un texte sur la sculpture parmi ceux qui disent comment faire. ✗ On se fie au sujet du texte au lieu de regarder à quoi il sert. ✓ Un texte sans personnages ni histoire qui donne des étapes est **injonctif** ; un texte qui apprend ce qu'est la sculpture est **documentaire**.
 :::
 
 ::: propriete
