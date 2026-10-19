@@ -1,0 +1,143 @@
+{
+  "title": "📝 Entraînement ⭐⭐⭐ : Bilan du module",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "manuel": {
+    "code": "121615P00",
+    "pages": "93",
+    "items": ["ex. 1 p.93"]
+  },
+  "questions": [
+    {
+      "prompt": "Sami poste une lettre pour sa cousine Lina. Comment appelle-t-on Sami, la personne qui envoie la lettre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le destinataire",
+          "misconceptionTag": "fr.lexique.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "b",
+          "text": "l'expéditeur"
+        },
+        {
+          "id": "c",
+          "text": "le facteur",
+          "misconceptionTag": "fr.lexique.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "le lecteur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Celui qui envoie la lettre est l'expéditeur. Le destinataire la reçoit et le facteur la distribue : ces mots sont du même thème, mais ils nomment d'autres personnes. Le lecteur est celui qui lit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans « Le dimanche, Sami se distrait avec ses cousins : ils jouent aux cartes. », quel verbe a le même sens que « se distrait » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "s'amuse"
+        },
+        {
+          "id": "b",
+          "text": "s'ennuie",
+          "misconceptionTag": "fr.lexique.contraire-pour-synonyme"
+        },
+        {
+          "id": "c",
+          "text": "se dispute"
+        },
+        {
+          "id": "d",
+          "text": "se dépêche"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Se distraire, c'est passer un moment agréable : dans cette phrase, « s'amuse » dit la même chose. « S'ennuie » dit le contraire ; « se dispute » et « se dépêche » ont un autre sens.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour savoir comment fabriquer un cerf-volant, quel texte faut-il lire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un récit où un enfant perd son cerf-volant au bord de la mer.",
+          "misconceptionTag": "fr.texte.injonctif-non-reconnu"
+        },
+        {
+          "id": "b",
+          "text": "Un texte en rubriques qui présente l'histoire du cerf-volant.",
+          "misconceptionTag": "fr.texte.injonctif-non-reconnu"
+        },
+        {
+          "id": "c",
+          "text": "Une lettre qui parle d'un cerf-volant à un ami."
+        },
+        {
+          "id": "d",
+          "text": "Un texte avec la liste du matériel et des étapes numérotées."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour fabriquer un objet, il faut un texte qui dit comment faire : une liste de matériel, des étapes numérotées et des verbes à l'impératif. Un récit raconte une histoire, un texte en rubriques informe sur un sujet, et une lettre s'adresse à un ami.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Voici le tour du « nombre pensé ». Liste A : 1, 3, 5, 7, 9, 11, 13, 15. Liste B : 2, 3, 6, 7, 10, 11, 14, 15. Liste C : 4, 5, 6, 7, 12, 13, 14, 15. Liste D : 8, 9, 10, 11, 12, 13, 14, 15. Ton ami pense à un nombre : il le trouve dans les listes B et C, mais pas dans A ni dans D. Le premier nombre de A est 1, celui de B est 2, celui de C est 4 et celui de D est 8. Quel est son nombre ?",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "On additionne les premiers nombres des listes où il se trouve : 2 (liste B) + 4 (liste C) = 6. Et 6 figure bien dans B et C, mais pas dans A ni dans D.",
+      "difficulty": 2
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Comment s'appelle le complément qui répond à la question « quand ? » ?",
+      "answerKey": {
+        "text": "complément de temps"
+      },
+      "explanation": "Ce complément indique le moment où se passe l'action : on le trouve en posant la question « quand ? » après le verbe. Son nom reprend cette idée de moment. Comme les autres compléments non essentiels, il peut se déplacer et se supprimer.",
+      "difficulty": 3,
+      "acceptedAnswers": ["le complément de temps", "un complément de temps"],
+      "expectedMistakes": [
+        {
+          "text": "complément de lieu",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        }
+      ]
+    },
+    {
+      "prompt": "Complète : « un manteau neuf → la robe … »",
+      "options": [
+        {
+          "id": "a",
+          "text": "neufe",
+          "misconceptionTag": "fr.accord.feminin-adjectif-mal-forme"
+        },
+        {
+          "id": "b",
+          "text": "neuf",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "neuve"
+        },
+        {
+          "id": "d",
+          "text": "neuves"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Robe est féminin singulier : l'adjectif neuf change de forme au féminin et devient neuve (le f devient v). On n'ajoute pas seulement un e (neufe), on n'oublie pas l'accord (neuf), et le s du pluriel ne convient pas à un seul vêtement.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "title": "🏛️ Concours 2008–2022 · préparer un récit : imaginer la suite ou la réalisation d'une scène ⭐⭐⭐",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "(Concours 2022) Expression écrite : « Rédige un récit de huit phrases au moins pour raconter ce que vous avez fait pour réaliser votre projet en intégrant le dialogue qui s'est passé entre vous. » Avant d'écrire, remets dans l'ordre les étapes du projet d'un groupe d'amis pour le festival de la maison des jeunes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le soir du festival, ils jouent leur pièce devant le public."
+        },
+        {
+          "id": "b",
+          "text": "Ils se partagent les rôles et préparent les costumes."
+        },
+        {
+          "id": "c",
+          "text": "Tout le monde applaudit et les amis sont fiers."
+        },
+        {
+          "id": "d",
+          "text": "Les amis choisissent ensemble de monter une pièce de théâtre."
+        },
+        {
+          "id": "e",
+          "text": "Ils répètent chaque jour après la classe."
+        }
+      ],
+      "answerKey": {
+        "order": ["d", "b", "e", "a", "c"]
+      },
+      "explanation": "Le récit suit le temps : on choisit d'abord le projet, puis on se prépare (rôles et costumes), on répète, on présente la pièce le soir du festival, et on termine par la réaction du public.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "(Concours 2022) Même consigne : le dialogue entre les amis, au moment du choix du projet, doit être bien ponctué. Quelle phrase l'est ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Samir propose et si nous montions une pièce de théâtre",
+          "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "Samir répond aussitôt : « Et si nous montions une pièce de théâtre ? »",
+          "misconceptionTag": "fr.dialogue.verbe-introducteur-inadapte"
+        },
+        {
+          "id": "c",
+          "text": "Samir propose « Et si nous montions une pièce de théâtre ? »",
+          "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "Samir propose : « Et si nous montions une pièce de théâtre ? »"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les paroles s'ouvrent après un verbe introducteur et des deux-points, et se placent entre guillemets : Samir propose : « … ». Sans deux-points ni guillemets, on ne voit plus où commence la parole. Le verbe répondre ne convient pas quand personne n'a encore parlé.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "(Concours 2022) Même consigne : quels éléments le récit doit-il contenir ? Choisis TOUS les bons.",
+      "options": [
+        {
+          "id": "a",
+          "text": "au moins huit phrases"
+        },
+        {
+          "id": "b",
+          "text": "un dialogue entre les amis"
+        },
+        {
+          "id": "c",
+          "text": "le projet choisi pour le festival"
+        },
+        {
+          "id": "d",
+          "text": "une lettre à un ami"
+        },
+        {
+          "id": "e",
+          "text": "un passage qui décrit un paysage"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c"]
+      },
+      "explanation": "La consigne demande un récit d'au moins huit phrases, qui raconte la réalisation du projet choisi pour le festival et qui intègre le dialogue entre les amis. Elle ne demande ni lettre ni description de paysage.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "(Concours 2010) Expression écrite : « Au milieu du silence général, Benjamin appuie sur un bouton mais le tableau ne s'allume pas. Quelle déception ! Rédige un récit en imaginant comment s'est terminée la scène. (Intègre un court dialogue dans ton récit). » Quelle fin est cohérente avec cet échec ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Benjamin explique avec joie le monument de Paris que le tableau affiche.",
+          "misconceptionTag": "fr.recit.contradiction-non-vue"
+        },
+        {
+          "id": "b",
+          "text": "Les amis cherchent la panne, trouvent une prise débranchée et le tableau s'allume."
+        },
+        {
+          "id": "c",
+          "text": "Tout le monde crie son admiration devant la belle image qui apparait sur le tableau magique.",
+          "misconceptionTag": "fr.recit.contradiction-non-vue"
+        },
+        {
+          "id": "d",
+          "text": "Benjamin se demande ce qui se passe."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le tableau ne s'allume pas : la fin doit régler ce problème ou l'accepter. Ici, les amis trouvent la panne. Les deux phrases qui parlent d'une image affichée contredisent le début, et la dernière ne termine pas la scène.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "(Concours 2010) Même consigne : un camarade console Benjamin. Quelle réplique est bien écrite et cohérente avec la scène ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« Ne t'inquiète pas, Benjamin, nous allons chercher la panne ensemble », dit Karim."
+        },
+        {
+          "id": "b",
+          "text": "Ne t'inquiète pas Benjamin nous allons chercher la panne ensemble dit Karim.",
+          "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "« Ne t'inquiète pas, Benjamin, nous allons chercher la panne ensemble », demande Karim.",
+          "misconceptionTag": "fr.dialogue.verbe-introducteur-inadapte"
+        },
+        {
+          "id": "d",
+          "text": "« Quelle belle surprise, Benjamin, ton grand tableau est tout simplement magnifique ! » dit Karim.",
+          "misconceptionTag": "fr.recit.contradiction-non-vue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La parole est entre guillemets et le verbe introducteur dit qui parle ; dire convient à une consolation. Demander est réservé aux questions, la phrase sans guillemets ni virgules est mal ponctuée, et féliciter Benjamin pour un tableau éteint contredit la scène.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "(Concours 2009) Expression écrite : « Violeta et Adrien présentent leur numéro. Malheureusement, ils ne réussissent pas leur spectacle… Rédige un récit en imaginant comment s'est terminée la scène. (Intègre un court dialogue dans ton récit). » Quelle fin ne contredit pas l'échec ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le public se lève, applaudit et réclame un deuxième numéro.",
+          "misconceptionTag": "fr.recit.contradiction-non-vue"
+        },
+        {
+          "id": "b",
+          "text": "Tout le monde félicite Violeta et Adrien pour leur magnifique spectacle de danse et de musique, très applaudi.",
+          "misconceptionTag": "fr.recit.contradiction-non-vue"
+        },
+        {
+          "id": "c",
+          "text": "Les spectateurs restent silencieux et les deux amis quittent la scène en baissant la tête."
+        },
+        {
+          "id": "d",
+          "text": "Le jury leur donne le premier prix de la fête.",
+          "misconceptionTag": "fr.recit.contradiction-non-vue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Leur spectacle est raté : la fin doit en tenir compte. Le silence du public et le départ des amis la prolongent. Les applaudissements, les félicitations et un prix racontent au contraire une réussite.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "(Concours 2009) Même consigne : quelles réactions du public conviennent à un spectacle raté ? Choisis TOUTES les bonnes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "des murmures dans la salle"
+        },
+        {
+          "id": "b",
+          "text": "un silence gêné"
+        },
+        {
+          "id": "c",
+          "text": "quelques rires moqueurs"
+        },
+        {
+          "id": "d",
+          "text": "une longue ovation"
+        },
+        {
+          "id": "e",
+          "text": "des cris d'admiration"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c"]
+      },
+      "explanation": "Un spectacle raté provoque des murmures, un silence gêné ou des rires moqueurs. Une longue ovation et des cris d'admiration montreraient que le public est séduit, ce qui contredit l'échec.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "(Concours 2008) Expression écrite : « Rédige une suite à ce récit en imaginant ce que Nicolas dit à ses parents en rentrant à la maison et comment son père et sa mère réagissent. Intègre un court dialogue dans ton récit. » Dans le récit, la maîtresse a confisqué le téléphone portable de Nicolas et demande qu'un parent vienne le lendemain. Quelle phrase commence bien la suite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En rentrant, Nicolas montre à ses parents les photos qu'il a prises en classe avec le portable.",
+          "misconceptionTag": "fr.recit.contradiction-non-vue"
+        },
+        {
+          "id": "b",
+          "text": "Le lendemain, la maîtresse rend le téléphone à Nicolas devant toute la classe.",
+          "misconceptionTag": "fr.production.hors-sujet"
+        },
+        {
+          "id": "c",
+          "text": "En rentrant, Nicolas avoue à ses parents que la maîtresse a confisqué son téléphone."
+        },
+        {
+          "id": "d",
+          "text": "Nicolas s'endort sans rien dire à ses parents qui attendent dans le jardin.",
+          "misconceptionTag": "fr.production.hors-sujet"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La suite demande ce que Nicolas dit à ses parents en rentrant à la maison. Il avoue la confiscation, ce qui est cohérent avec le récit. Les photos prises en classe sont impossibles avec un téléphone confisqué, la scène du lendemain à l'école sort du sujet, et se taire n'est pas une parole.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "(Concours 2008) Même consigne : le père de Nicolas était déjà contrarié par l'appareil photo du téléphone. Comment réagit-il en apprenant la confiscation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il saute de joie et félicite Nicolas pour sa désobéissance devant toute la famille réunie à table ce soir.",
+          "misconceptionTag": "fr.recit.contradiction-non-vue"
+        },
+        {
+          "id": "b",
+          "text": "Il décide d'offrir un deuxième téléphone à Nicolas.",
+          "misconceptionTag": "fr.recit.contradiction-non-vue"
+        },
+        {
+          "id": "c",
+          "text": "Il ne dit rien parce qu'il n'a pas entendu la nouvelle.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
+        {
+          "id": "d",
+          "text": "Il fronce les sourcils et rappelle à Nicolas l'interdiction de sortir le téléphone en classe."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le père est déjà contrarié : sa réaction doit rester cohérente avec cela, et la mère avait posé l'interdiction. Il est donc logique qu'il fronce les sourcils et rappelle la règle. La joie ou un nouveau cadeau contredisent son état d'esprit, et son silence n'a aucun appui dans le récit.",
+      "difficulty": 3
+    }
+  ]
+}

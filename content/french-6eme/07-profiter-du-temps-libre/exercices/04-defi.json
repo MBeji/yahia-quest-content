@@ -1,0 +1,179 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Maître correspondant",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "short_answer",
+      "prompt": "Écris la forme du verbe écrire à l'impératif, avec vous, pour dire à des amis de t'écrire.",
+      "answerKey": {
+        "text": "écrivez"
+      },
+      "explanation": "À l'impératif, on garde la forme du présent sans le pronom sujet. Pour vous, le radical écriv- reçoit la terminaison -ez, comme pour lire au pluriel.",
+      "difficulty": 2,
+      "acceptedAnswers": ["écrivez-moi"]
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque consigne à la forme du verbe qui convient.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "dire, au futur, avec tu"
+        },
+        {
+          "id": "l2",
+          "text": "lire, à l'impératif, avec vous"
+        },
+        {
+          "id": "l3",
+          "text": "écrire, au passé composé, avec nous"
+        },
+        {
+          "id": "l4",
+          "text": "dire, au présent, avec vous"
+        },
+        {
+          "id": "r1",
+          "text": "nous avons écrit"
+        },
+        {
+          "id": "r2",
+          "text": "tu diras"
+        },
+        {
+          "id": "r3",
+          "text": "vous dites"
+        },
+        {
+          "id": "r4",
+          "text": "lisez"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r4"],
+          ["l3", "r1"],
+          ["l4", "r3"]
+        ]
+      },
+      "explanation": "Futur de dire avec tu : l'infinitif dire plus -as. Impératif de lire avec vous : lisez, sans pronom. Passé composé de écrire avec nous : avons plus le participe écrit. Présent de dire avec vous : la forme particulière dites.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les parties d'une lettre à des grands-parents.",
+      "options": [
+        {
+          "id": "a",
+          "text": "À très bientôt, je vous embrasse."
+        },
+        {
+          "id": "b",
+          "text": "Bizerte, le 14 juillet"
+        },
+        {
+          "id": "c",
+          "text": "Yasmine"
+        },
+        {
+          "id": "d",
+          "text": "Je vais au club de natation tous les matins. Et vous, que faites-vous ?"
+        },
+        {
+          "id": "e",
+          "text": "Chers grands-parents,"
+        }
+      ],
+      "answerKey": {
+        "order": ["b", "e", "d", "a", "c"]
+      },
+      "explanation": "En haut : le lieu et la date. Puis l'interpellation, qui s'adresse aux personnes. Ensuite le corps de la lettre. À la fin : la formule d'adieu, puis la signature tout en bas.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles phrases sont écrites correctement ? Choisis TOUTES les bonnes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dis-moi ce que tu lis."
+        },
+        {
+          "id": "b",
+          "text": "Nous avons écrit à nos cousins la semaine dernière."
+        },
+        {
+          "id": "c",
+          "text": "Vous disez toujours la vérité."
+        },
+        {
+          "id": "d",
+          "text": "Cette histoire est belle et ses personnages sont gentils."
+        },
+        {
+          "id": "e",
+          "text": "Demain, nous avons lu ta lettre."
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "d"]
+      },
+      "explanation": "« Dis-moi » garde son s et n'a pas de sujet ; « avons écrit » convient à la semaine dernière ; histoire est féminin (belle) et personnages masculin pluriel (gentils). « Vous disez » doit s'écrire vous dites, et « demain » demande le futur (nous lirons).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "« Salut Mehdi, viens passer les vacances chez moi ! Nous irons à la plage. Dimanche, j'ai gagné un match de football. Réponds-moi vite. Karim. » Quel est le but de cette lettre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Raconter à Mehdi le match de football gagné dimanche.",
+          "misconceptionTag": "fr.lecture.detail-pour-idee-principale"
+        },
+        {
+          "id": "b",
+          "text": "Demander à Mehdi des nouvelles de toute sa famille."
+        },
+        {
+          "id": "c",
+          "text": "Remercier Mehdi pour le cadeau qu'il a envoyé."
+        },
+        {
+          "id": "d",
+          "text": "Inviter Mehdi chez Karim pour les vacances."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le but d'une lettre se trouve dans l'idée qui domine le texte : ici « viens passer les vacances chez moi ». Le match gagné est un détail, et la lettre ne parle ni d'un cadeau ni de la famille de Mehdi.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Voici une lettre : « Chère Lina, hier, j'ai lu ta lettre avec plaisir. Demain, j'ai écrit ma réponse. Dis bonjour à toute ta famille. Je t'embrasse très fort. » Quelle phrase contient une erreur de temps ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demain, j'ai écrit ma réponse."
+        },
+        {
+          "id": "b",
+          "text": "Hier, j'ai lu ta lettre avec plaisir."
+        },
+        {
+          "id": "c",
+          "text": "Dis bonjour à toute ta famille."
+        },
+        {
+          "id": "d",
+          "text": "Je t'embrasse très fort."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Demain annonce le futur : il faut « Demain, j'écrirai ma réponse ». Les autres phrases sont justes : passé composé avec hier, impératif sans sujet, présent affectueux.",
+      "difficulty": 3
+    }
+  ]
+}
