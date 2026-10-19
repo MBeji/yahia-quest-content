@@ -64,3 +64,10 @@ Adaptations et écarts :
 - Items écartés : aucun de la carte ; C11#8 et C01#8 hors lot.
 - Notions données dans l'énoncé : paradigme de l'impératif d'être (m005), consignes officielles redonnées à chaque question.
 - Doutes : m006 q8-q10 (synonymes/contraires) : les clés « stupide », « désagréable », « plaisir » sont ma lecture, le sujet ne publie pas de corrigé ; m003/m002 sont des textes inventés (salle blanche, la carte seule lue).
+
+## Corrections après audit des missions
+Tous les correctifs de `audits/audit-M1.md` sont appliqués avec les textes de l'auditeur, aucun refusé :
+- C-1 (m004 q1-q4 : possesseurs précisés ; `fr.det.possessif-personne-non-changee` posé sur q3 « notre », q4 « mes » et « nos »), C-2 (m006 q10), C-3 (m006 q1 devient le `multi` officiel Louis + Gordon, citations vérifiées).
+- M-1 (m001 q1-q2 : « Une tête … »), M-2 (blancs laissés vides en m004 q2, q6, q8 et m005 q3, q4 ; m005 q8 porte sur « regardez »), M-3 (m002 q1 « Samir », q5 « matin »), M-4 et M-5 (m006 q4 et q2, distracteurs de q2 muets), M-6 (m007 q2), M-7 (m008 q3 : nombre de prénoms).
+- Mineurs : m001 q3 option d muette, m004 q9 noms soulignés, m005 q7 « Ecris » (coquille officielle gardée), m007 q4 consigne 2020 complète.
+- Contrôles relancés : `content:check` vert, `content:qa` 0 erreur, `content:tranche` clé la plus longue 0/102 (positions 22/31/23/25 %), `prettier --check` vert, `content:gisement:controle` sur m002 et m008 : 0 plage de 8 mots. Quatre paires proches restent (deux vides d'une même phrase officielle en m004, q1-q3 de m008) : voulues, plus aucune ne livre la clé de l'autre.
