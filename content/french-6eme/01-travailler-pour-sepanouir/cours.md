@@ -18,11 +18,11 @@ Le **déterminant** (_le, la, l', les, un, une, des_) se place **devant** le nom
 
 :::
 
-| GN           | Déterminant | Nom                 |
-| ------------ | ----------- | ------------------- |
-| _Hédi_       | aucun       | _Hédi_ (propre)     |
-| _les pains_  | _les_       | _pains_ (commun)    |
-| _le comptoir_ | _le_       | _comptoir_ (commun) |
+| GN            | Déterminant | Nom                 |
+| ------------- | ----------- | ------------------- |
+| _Hédi_        | aucun       | _Hédi_ (propre)     |
+| _les pains_   | _les_       | _pains_ (commun)    |
+| _le comptoir_ | _le_        | _comptoir_ (commun) |
 
 Le tableau relie la phrase à la définition : le seul GN sans déterminant est celui qui porte une majuscule et un nom propre.
 
@@ -71,11 +71,11 @@ Un **pronom personnel** remplace un nom ou un GN pour éviter de le répéter. I
 
 :::
 
-| Personne                      | Singulier  | Pluriel      |
-| ----------------------------- | ---------- | ------------ |
-| 1re : celui ou celle qui parle | _je_       | _nous_       |
-| 2e : celui ou celle à qui l'on parle | _tu_ | _vous_       |
-| 3e : de qui ou de quoi l'on parle | _il, elle_ | _ils, elles_ |
+| Personne                             | Singulier  | Pluriel      |
+| ------------------------------------ | ---------- | ------------ |
+| 1re : celui ou celle qui parle       | _je_       | _nous_       |
+| 2e : celui ou celle à qui l'on parle | _tu_       | _vous_       |
+| 3e : de qui ou de quoi l'on parle    | _il, elle_ | _ils, elles_ |
 
 Chaque ligne du tableau donne le pronom qui répond à une question : _qui parle ? à qui ? de qui ?_ Pour une 3e personne, le genre et le nombre du nom décident.
 
@@ -126,11 +126,11 @@ Le **temps** d'un verbe indique quand l'action a lieu. Trois temps sont à conna
 
 :::
 
-| Temps          | L'action est…  | Indicateurs de temps          | Verbe                          |
-| -------------- | -------------- | ----------------------------- | ------------------------------ |
-| passé composé  | déjà faite     | _hier, la semaine dernière_   | _a aidé_ (**deux mots**)       |
-| présent        | en cours       | _maintenant, en ce moment_    | _pèse_ (un mot)                |
-| futur          | à venir        | _demain, bientôt, plus tard_  | _tiendra_ (**r** + terminaison) |
+| Temps         | L'action est… | Indicateurs de temps         | Verbe                           |
+| ------------- | ------------- | ---------------------------- | ------------------------------- |
+| passé composé | déjà faite    | _hier, la semaine dernière_  | _a aidé_ (**deux mots**)        |
+| présent       | en cours      | _maintenant, en ce moment_   | _pèse_ (un mot)                 |
+| futur         | à venir       | _demain, bientôt, plus tard_ | _tiendra_ (**r** + terminaison) |
 
 Le tableau relie le moment de l'action à deux indices : les mots qui situent dans le temps, et la forme du verbe.
 
@@ -179,12 +179,12 @@ Un verbe à l'**infinitif** garde toujours la même forme, celle que l'on trouve
 
 :::
 
-| Forme conjuguée   | Infinitif   |
-| ----------------- | ----------- |
-| _ils vont_        | _aller_     |
-| _nous finissons_  | _finir_     |
-| _elle écrira_     | _écrire_    |
-| _je suis_         | _être_      |
+| Forme conjuguée  | Infinitif |
+| ---------------- | --------- |
+| _ils vont_       | _aller_   |
+| _nous finissons_ | _finir_   |
+| _elle écrira_    | _écrire_  |
+| _je suis_        | _être_    |
 
 Le tableau montre le trajet inverse : à partir d'une forme conjuguée, on retrouve l'infinitif, qui sert de nom au verbe.
 
@@ -230,13 +230,13 @@ Après les mots **à, de, par, pour, sans**, le verbe s'écrit à l'**infinitif*
 
 :::
 
-| Petit mot | Exemple                              |
-| --------- | ------------------------------------ |
-| _à_       | _Il se met à **fouetter** les œufs._ |
-| _de_      | _Avant de **verser** le lait._       |
-| _par_     | _Il commence par **casser** les œufs._ |
+| Petit mot | Exemple                                   |
+| --------- | ----------------------------------------- |
+| _à_       | _Il se met à **fouetter** les œufs._      |
+| _de_      | _Avant de **verser** le lait._            |
+| _par_     | _Il commence par **casser** les œufs._    |
 | _pour_    | _Il bat le sucre pour **faire** la pâte._ |
-| _sans_    | _Il travaille sans **s'arrêter**._   |
+| _sans_    | _Il travaille sans **s'arrêter**._        |
 
 Chaque ligne montre un petit mot de la règle suivi d'un verbe à l'infinitif.
 
@@ -256,7 +256,7 @@ Elle tente parce que _mélanger_ et _mélangé_ se prononcent de la même maniè
 
 :::
 
-La règle vaut aussi pour un verbe pronominal (_sans **s'**arrêter_) et pour les locutions qui contiennent l'un de ces mots (_avant **de** partir_). Elle ne concerne que ces cinq petits mots : c'est à eux que l'on pense quand on hésite.
+La règle vaut aussi pour un verbe pronominal (_sans \**s'\**arrêter_) et pour les locutions qui contiennent l'un de ces mots (_avant **de** partir_). Elle ne concerne que ces cinq petits mots : c'est à eux que l'on pense quand on hésite.
 
 ::: verifie
 Complète avec le verbe _regarder_ (infinitif ou participe ?) : _« Le client entre sans … la vitrine. »_
@@ -286,10 +286,10 @@ Un **mot de remplacement** (ou **substitut**) est un mot ou un groupe de mots qu
 
 :::
 
-| Mot repris | Remplaçants possibles                      |
-| ---------- | ------------------------------------------ |
-| _Karim_    | _il_, _l'apprenti_, _le jeune garçon_      |
-| _la planche_ | _elle_, _le morceau de bois_             |
+| Mot repris   | Remplaçants possibles                 |
+| ------------ | ------------------------------------- |
+| _Karim_      | _il_, _l'apprenti_, _le jeune garçon_ |
+| _la planche_ | _elle_, _le morceau de bois_          |
 
 Les deux colonnes montrent que le remplaçant désigne bien le même être ou la même chose.
 
@@ -342,11 +342,11 @@ Un **récit** raconte un événement en trois parties :
 
 :::
 
-| Partie | Elle répond à… | Exemple                                           |
-| ------ | -------------- | ------------------------------------------------- |
-| début  | qui ? où ? quand ? | _Ce matin, Karim arrive chez Mme Ben Ali._       |
+| Partie | Elle répond à…      | Exemple                                                    |
+| ------ | ------------------- | ---------------------------------------------------------- |
+| début  | qui ? où ? quand ?  | _Ce matin, Karim arrive chez Mme Ben Ali._                 |
 | suite  | que se passe-t-il ? | _La lumière du salon ne marche plus. Il cherche la panne._ |
-| fin    | comment finit-il ? | _Il change la prise : la lumière revient._       |
+| fin    | comment finit-il ?  | _Il change la prise : la lumière revient._                 |
 
 Le tableau relie chaque partie à sa question : on met dans le début ce qui répond à _qui, où, quand_, et dans la fin ce qui conclut.
 
@@ -391,16 +391,22 @@ Comment retenir tant de noms de métiers, et ceux qui servent à relier les phra
 ::: propriete
 Un nom de métier se retient avec **ce que fait** la personne. Voici ceux de ce module :
 
-| Métier              | Ce qu'il ou elle fait                                   |
-| ------------------- | ------------------------------------------------------- |
-| un architecte       | dessine les plans des bâtiments                          |
-| un fleuriste        | compose des bouquets et vend des fleurs                  |
-| un facteur          | distribue le courrier                                    |
-| un plombier         | répare les tuyaux et les robinets                        |
-| un horticulteur     | fait pousser des fleurs et des plantes                   |
-| un libraire         | vend des livres                                          |
-| un vétérinaire      | soigne les animaux                                       |
+| Métier               | Ce qu'il ou elle fait                                  |
+| -------------------- | ------------------------------------------------------ |
+| un architecte        | dessine les plans des bâtiments                        |
+| un fleuriste         | compose des bouquets et vend des fleurs                |
+| un facteur           | distribue le courrier                                  |
+| un plombier          | répare les tuyaux et les robinets                      |
+| un horticulteur      | fait pousser des fleurs et des plantes                 |
+| un libraire          | vend des livres                                        |
+| un vétérinaire       | soigne les animaux                                     |
 | une hôtesse de l'air | accueille les passagers et s'occupe d'eux dans l'avion |
+| une assistante       | aide un directeur dans son travail de bureau           |
+| un serveur           | sert les clients dans un restaurant                    |
+| un vendeur           | vend des articles dans un magasin                      |
+| un dessinateur       | dessine des plans ou des objets                        |
+| une infirmière       | soigne les malades à l'hôpital                         |
+| une esthéticienne    | s'occupe de la beauté de la peau dans un salon         |
 
 :::
 

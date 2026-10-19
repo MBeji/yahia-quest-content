@@ -90,7 +90,11 @@ Dans chaque ligne, ce qui change avec la personne est l'auxiliaire (passé compo
 :::
 
 ::: piege Erreur fréquente
-« Nous avons **prit** », « il a **mit** », « je **metterai** » ✗ On écrit le participe comme le présent ou on ajoute un _e_ au futur. ✓ Le participe de _prendre_ se termine par **-is** : _pris_, celui de _mettre_ aussi : _mis_. Le futur n'a **pas de _e_** avant le _r_ : _je mettrai_, _je prendrai_.
+« Nous avons **prit** », « il a **mit** » ✗ On écrit le participe comme le présent, qui se termine par un _t_. ✓ Le participe de _prendre_ est **pris** et celui de _mettre_ est **mis** : ils se terminent par **-is**, jamais par _-it_.
+:::
+
+::: piege Erreur fréquente
+« Demain, je **mettai** et tu **prendas** » ✗ On oublie le **r** du radical. ✓ Le futur garde _mettr-_ et _prendr-_ en entier : _je **mettr**ai_, _tu **prendr**as_.
 :::
 
 ::: propriete
@@ -142,6 +146,10 @@ Chaque ligne du tableau cherche le sujet d'abord, puis accorde le verbe avec lui
 
 ::: piege Erreur fréquente
 « Un vol d'oiseaux **passent** au-dessus du jardin » ✗ On accorde avec _oiseaux_, le mot le plus proche du verbe. ✓ Le sujet est **un vol**, le verbe reste au singulier : _Un vol d'oiseaux **passe**_.
+:::
+
+::: piege Erreur fréquente
+« Dans la mer **nage** des poissons » ✗ On accorde avec _la mer_, le mot placé devant le verbe, alors que le sujet vient après. ✓ On pose la question : qui est-ce qui nage ? _des poissons_ : « Dans la mer **nagent** des poissons ».
 :::
 
 ::: propriete
@@ -331,6 +339,10 @@ Un **passage descriptif** est un morceau du récit qui **décrit** (un personnag
 
 ::: piege Erreur fréquente
 Répéter sans cesse le même nom : « Sarra ramasse. Sarra ouvre un sac. Sarra le remplit. » ✗ Le texte devient lourd. ✓ On remplace le nom par un **mot de remplacement** : _elle_, _la fillette_, _mon amie_ : « Sarra ramasse. **Elle** ouvre un sac et **le** remplit. »
+:::
+
+::: piege Erreur fréquente
+Prendre pour un passage descriptif une phrase qui raconte une action : « Nous ramassons tout dans de grands sacs » ✗ Cette phrase dit **ce qui se passe**, elle fait avancer l'histoire. ✓ Un passage descriptif dit **comment est** un lieu ou un personnage : « Le sable est couvert de bouteilles. »
 :::
 
 ::: propriete

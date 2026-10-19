@@ -1,0 +1,173 @@
+{
+  "title": "⚔️ Chapitre Boss ⭐⭐⭐ : Le courrier de l'été",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Dans « Dans deux jours, nous visiterons le musée dans la vieille ville. », quel groupe est le complément de temps ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans deux jours"
+        },
+        {
+          "id": "b",
+          "text": "dans la vieille ville",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        },
+        {
+          "id": "c",
+          "text": "le musée"
+        },
+        {
+          "id": "d",
+          "text": "nous visiterons"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le mot dans peut annoncer un temps ou un lieu : c'est la question qui décide. « Dans deux jours » répond à « quand ? » : complément de temps. « Dans la vieille ville » répond à « où ? » : complément de lieu.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans « Hier soir, Rania a écrit à Yassine depuis Sousse. Elle lui enverra une photo la semaine prochaine. », quels groupes sont des compléments de temps ? Choisis TOUS les bons.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hier soir"
+        },
+        {
+          "id": "b",
+          "text": "depuis Sousse"
+        },
+        {
+          "id": "c",
+          "text": "la semaine prochaine"
+        },
+        {
+          "id": "d",
+          "text": "à Yassine"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "« Hier soir » et « la semaine prochaine » répondent à « quand ? ». « Depuis Sousse » répond à « d'où ? » (lieu) et « à Yassine » dit à qui : ce ne sont pas des compléments de temps.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Hier soir, ils … à leur grand-mère. » (écrire)",
+      "options": [
+        {
+          "id": "a",
+          "text": "écrivent",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        },
+        {
+          "id": "b",
+          "text": "ont écrit"
+        },
+        {
+          "id": "c",
+          "text": "ont écri",
+          "misconceptionTag": "fr.conj.participe-passe-mal-termine"
+        },
+        {
+          "id": "d",
+          "text": "vont écrire",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Hier soir » demande le passé composé : ont (auxiliaire) + écrit (participe avec un t). « Écrivent » est au présent, « vont écrire » est un futur, et « écri » oublie le t du participe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle phrase est au futur et bien écrite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demain, tu lira ma lettre.",
+          "misconceptionTag": "fr.conj.futur-mal-forme"
+        },
+        {
+          "id": "b",
+          "text": "Demain, tu lisras ma lettre.",
+          "misconceptionTag": "fr.conj.futur-mal-forme"
+        },
+        {
+          "id": "c",
+          "text": "Demain, tu as lu ma lettre.",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        },
+        {
+          "id": "d",
+          "text": "Demain, tu liras ma lettre."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Au futur, on ajoute la terminaison à l'infinitif lire (sans le e) : tu liras, avec -as pour tu. « Lira » est la forme de il, « lisras » part du présent tu lis, et « as lu » est un passé composé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sami donne un conseil à son ami. Quelle phrase est un impératif bien écrit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dis-moi ce que tu fais."
+        },
+        {
+          "id": "b",
+          "text": "Tu dis-moi ce que tu fais.",
+          "misconceptionTag": "fr.conj.imperatif-avec-sujet"
+        },
+        {
+          "id": "c",
+          "text": "Di-moi ce que tu fais.",
+          "misconceptionTag": "fr.conj.imperatif-s-2e-personne"
+        },
+        {
+          "id": "d",
+          "text": "Disez-moi ce que tu fais.",
+          "misconceptionTag": "fr.conj.forme-irreguliere-regularisee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'impératif n'a pas de sujet et dire garde son s : dis. « Di » le perd comme chante, « tu dis » garde un sujet, et « disez » appartient à vous, avec une forme qui n'existe pas (dites).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle phrase accorde correctement tous les adjectifs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sa gentille cousine lui offre de beaux livres neuves.",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "b",
+          "text": "Sa gentile cousine lui offre de beaux livres neufs.",
+          "misconceptionTag": "fr.accord.feminin-adjectif-mal-forme"
+        },
+        {
+          "id": "c",
+          "text": "Sa gentille cousine lui offre de beaux livres neufs."
+        },
+        {
+          "id": "d",
+          "text": "Sa gentille cousine lui offre de beaus livres neufs.",
+          "misconceptionTag": "fr.accord.pluriel-mal-forme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Cousine est féminin : gentille (on double le l). Livres est masculin pluriel : beaux (les mots en -eau prennent x) et neufs. Les autres phrases se trompent sur la forme du féminin, sur le pluriel de beau ou sur l'accord de neufs.",
+      "difficulty": 3
+    }
+  ]
+}

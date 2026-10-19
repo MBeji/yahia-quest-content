@@ -1,0 +1,180 @@
+{
+  "title": "⭐ Exercice : Le petit lapin tout blanc",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans « Ses nombreux frères sont méchants. », quel adjectif est épithète ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "nombreux"
+        },
+        {
+          "id": "b",
+          "text": "méchants",
+          "misconceptionTag": "fr.gn.attribut-epithete-confondus"
+        },
+        {
+          "id": "c",
+          "text": "frères"
+        },
+        {
+          "id": "d",
+          "text": "ses"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Nombreux » est collé au nom « frères » : c'est l'épithète. « Méchants » vient après le verbe « sont » : c'est l'attribut. « Frères » est un nom et « ses » est un déterminant.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Coche toutes les phrases qui contiennent un adjectif attribut du sujet.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le lapin paraît inquiet."
+        },
+        {
+          "id": "b",
+          "text": "Ses parents restent calmes."
+        },
+        {
+          "id": "c",
+          "text": "Le petit lapin se sauve."
+        },
+        {
+          "id": "d",
+          "text": "Un gentil oiseau lui offre un nid."
+        },
+        {
+          "id": "e",
+          "text": "Le lapin devient triste."
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "« Inquiet », « calmes » et « triste » suivent un verbe d'état (paraître, rester, devenir) : ce sont des attributs. Dans les deux autres phrases, « petit » et « gentil » sont collés à leur nom : ce sont des épithètes.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque forme verbale à son verbe et à son temps.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "j'ai eu"
+        },
+        {
+          "id": "l2",
+          "text": "tu seras"
+        },
+        {
+          "id": "l3",
+          "text": "il a été"
+        },
+        {
+          "id": "l4",
+          "text": "elles auront"
+        },
+        {
+          "id": "r1",
+          "text": "être au passé composé"
+        },
+        {
+          "id": "r2",
+          "text": "avoir au passé composé"
+        },
+        {
+          "id": "r3",
+          "text": "avoir au futur"
+        },
+        {
+          "id": "r4",
+          "text": "être au futur"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r4"],
+          ["l3", "r1"],
+          ["l4", "r3"]
+        ]
+      },
+      "explanation": "« J'ai eu » est « avoir » au passé composé, « il a été » est « être » au passé composé (les deux avec l'auxiliaire avoir). « Tu seras » est « être » au futur et « elles auront » « avoir » au futur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Demain, tu ___ le courage de lui demander pardon.",
+      "options": [
+        {
+          "id": "a",
+          "text": "as eu",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        },
+        {
+          "id": "b",
+          "text": "seras"
+        },
+        {
+          "id": "c",
+          "text": "aura"
+        },
+        {
+          "id": "d",
+          "text": "auras"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Demain » annonce le futur. Avoir devient « aur- » suivi de la terminaison de « tu » : -as. « As eu » est un passé composé et « aura » correspond à il ou elle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Choisis les bons mots : « Les élèves ___ en classe et Cédric met ___ cartable. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "sont … sont",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "b",
+          "text": "son … son",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        },
+        {
+          "id": "c",
+          "text": "sont … son"
+        },
+        {
+          "id": "d",
+          "text": "son … sont"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour le premier blanc, « l'élève est en classe » marche : c'est le verbe, donc sont. Pour le second, « met mon cartable » marche : c'est le déterminant, donc son.",
+      "difficulty": 2
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Pour vérifier l'orthographe de « Les enfants sont en classe », par quel mot remplace-t-on « sont » quand le sujet est mis au singulier ?",
+      "answerKey": {
+        "text": "est"
+      },
+      "explanation": "On met le sujet au singulier : « L'enfant ... en classe ». Le verbe être à la 3e personne du singulier convient. C'est le mot qui prouve qu'on a écrit le verbe et non le déterminant.",
+      "difficulty": 2,
+      "expectedMistakes": [
+        {
+          "text": "mon",
+          "misconceptionTag": "fr.homophone.son-sont-confondus"
+        }
+      ]
+    }
+  ]
+}

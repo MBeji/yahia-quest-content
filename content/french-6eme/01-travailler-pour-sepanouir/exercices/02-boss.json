@@ -1,0 +1,161 @@
+{
+  "title": "⚔️ Boss ⭐⭐⭐ : Les verbes sous contrôle",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Quel est l'infinitif de « vous avez mis » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "avoir",
+          "misconceptionTag": "fr.conj.infinitif-mal-retrouve"
+        },
+        {
+          "id": "b",
+          "text": "mettre"
+        },
+        {
+          "id": "c",
+          "text": "vous mettez",
+          "misconceptionTag": "fr.conj.conjugue-infinitif-confondus"
+        },
+        {
+          "id": "d",
+          "text": "miser",
+          "misconceptionTag": "fr.conj.infinitif-mal-retrouve"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans « vous avez mis », « avez » est l'auxiliaire et « mis » porte le sens : il vient de mettre. « Avoir » est le piège de la première lettre ; « miser » ressemble à « mis » mais change le sens ; « vous mettez » est une forme conjuguée, pas un infinitif.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans « Le jardinier se met à tailler la haie pour planter des rosiers », quels groupes contiennent un verbe à l'infinitif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "se met"
+        },
+        {
+          "id": "b",
+          "text": "tailler"
+        },
+        {
+          "id": "c",
+          "text": "planter"
+        },
+        {
+          "id": "d",
+          "text": "la haie"
+        }
+      ],
+      "answerKey": {
+        "correct": ["b", "c"]
+      },
+      "explanation": "« Tailler » suit « à » et « planter » suit « pour » : ce sont deux verbes à l'infinitif. « Se met » est le verbe conjugué (il pourrait devenir se mettra) et « la haie » est un groupe nominal, pas un verbe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle phrase est correctement écrite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le mécanicien travaille sans s'arrêté.",
+          "misconceptionTag": "fr.conj.infinitif-apres-preposition-oublie"
+        },
+        {
+          "id": "b",
+          "text": "Le mécanicien travaille sans s'arrête.",
+          "misconceptionTag": "fr.conj.infinitif-apres-preposition-oublie"
+        },
+        {
+          "id": "c",
+          "text": "Le mécanicien travaille sans s'arrêter."
+        },
+        {
+          "id": "d",
+          "text": "Le mécanicien travaille sans s'arrêtes.",
+          "misconceptionTag": "fr.conj.infinitif-apres-preposition-oublie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Après « sans », le verbe s'écrit à l'infinitif : s'arrêter. Pour contrôler, on essaie « prendre » : sans se prendre va bien, alors que sans se pris ne va pas. Les formes en -é, -e et -es sont un participe ou un verbe conjugué.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Complète : « Il se met à … les tables avant de … les clients. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "nettoyé – accueilli",
+          "misconceptionTag": "fr.conj.infinitif-apres-preposition-oublie"
+        },
+        {
+          "id": "b",
+          "text": "nettoyer – accueillir"
+        },
+        {
+          "id": "c",
+          "text": "nettoie – accueille",
+          "misconceptionTag": "fr.conj.infinitif-apres-preposition-oublie"
+        },
+        {
+          "id": "d",
+          "text": "nettoyer – accueillez",
+          "misconceptionTag": "fr.conj.infinitif-apres-preposition-oublie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« À » et « avant de » sont suivis d'un verbe à l'infinitif : nettoyer et accueillir. Écrire nettoyé, accueilli, nettoie ou accueille revient à conjuguer le verbe ou à employer un participe après le petit mot, ce que la règle interdit.",
+      "difficulty": 3
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Écris l'infinitif du verbe de la phrase : « Nous avons pris le bus. »",
+      "answerKey": {
+        "text": "prendre"
+      },
+      "expectedMistakes": [
+        {
+          "text": "avoir",
+          "misconceptionTag": "fr.conj.infinitif-mal-retrouve"
+        },
+        {
+          "text": "pris",
+          "misconceptionTag": "fr.conj.conjugue-infinitif-confondus"
+        }
+      ],
+      "explanation": "Dans un verbe en deux mots, le premier est l'auxiliaire et c'est le second qui donne le sens : on remonte du participe à l'infinitif, qui se termine par -re.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule de ces phrases est mal écrite : elle contient une erreur sur un verbe. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il commence par peser la farine."
+        },
+        {
+          "id": "b",
+          "text": "Il travaille sans se presser."
+        },
+        {
+          "id": "c",
+          "text": "Avant de cuire le pain, il chauffe le four."
+        },
+        {
+          "id": "d",
+          "text": "Il se met à pétri la pâte."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Après le petit mot « à », il faut l'infinitif : pétrir, avec -ir à la fin. Écrire « pétri » revient à employer le participe. Les trois autres phrases respectent la règle : par peser, sans se presser, avant de cuire.",
+      "difficulty": 3
+    }
+  ]
+}

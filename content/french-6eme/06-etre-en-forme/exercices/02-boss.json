@@ -1,0 +1,177 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le champion d'à-côté",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Complète : « Ma grand-mère est ___ de voir ses petits-enfants ___. » (heureux, joyeux)",
+      "options": [
+        {
+          "id": "a",
+          "text": "heureuse – joyeux"
+        },
+        {
+          "id": "b",
+          "text": "heureux – joyeux",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "heureuse – joyeuse",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "d",
+          "text": "heureuse – joyeuxs",
+          "misconceptionTag": "fr.accord.pluriel-mal-forme"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Grand-mère » est féminin singulier : heureuse. « Petits-enfants » est masculin pluriel, et « joyeux » se termine déjà par x : il ne change pas au pluriel. « Joyeuxs » ajoute un s qui n'existe pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle phrase contient un complément de lieu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le clown salue le public avec un grand sourire.",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Le clown salue le public dans dix minutes.",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Le clown salue le public devant le chapiteau."
+        },
+        {
+          "id": "d",
+          "text": "Le clown salue le public tous les soirs.",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le complément de lieu répond à « où ? » : le clown salue le public devant le chapiteau. « Avec un grand sourire » répond à « comment ? », « dans dix minutes » et « tous les soirs » répondent à « quand ? ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Hier, ma sœur ___ à la piscine avec son équipe. » (aller)",
+      "options": [
+        {
+          "id": "a",
+          "text": "a allé",
+          "misconceptionTag": "fr.conj.auxiliaire-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "est allé",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "est allées",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        },
+        {
+          "id": "d",
+          "text": "est allée"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Hier » demande le passé composé et « aller » prend l'auxiliaire « être » : est. Le sujet est « ma sœur », féminin singulier : le participe prend un e, allée. « A allé » emploie « avoir », « allé » oublie le féminin et « allées » met un s en trop.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Complète : « Demain, nous ___ au gymnase et nous ___ une longue séance d'étirement. » (aller, faire)",
+      "options": [
+        {
+          "id": "a",
+          "text": "allerons – ferons",
+          "misconceptionTag": "fr.conj.forme-irreguliere-regularisee"
+        },
+        {
+          "id": "b",
+          "text": "irons – ferons"
+        },
+        {
+          "id": "c",
+          "text": "irons – fairons",
+          "misconceptionTag": "fr.conj.forme-irreguliere-regularisee"
+        },
+        {
+          "id": "d",
+          "text": "allons – faisons",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Demain » annonce le futur. Les deux verbes changent de radical : ir- pour « aller », fer- pour « faire », avec -ons pour « nous ». « Allerons » et « fairons » les conjuguent comme des verbes réguliers. « Allons » et « faisons » sont au présent.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle version est correctement écrite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rania dit : « Regarde l'acrobate ! »"
+        },
+        {
+          "id": "b",
+          "text": "Rania dit, regarde bien l'acrobate qui monte !",
+          "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "Rania dit : regarde bien l'acrobate qui monte !",
+          "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "Rania dit « regarde bien l'acrobate qui monte ».",
+          "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour écrire une parole, il faut deux-points et guillemets, une majuscule au début et la ponctuation de la phrase avant les guillemets fermants. Chacune des trois autres versions oublie au moins un de ces signes.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Décris le village de loin à près : remets les phrases dans l'ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans la clairière, des cases sont groupées."
+        },
+        {
+          "id": "b",
+          "text": "Les murs des cases sont faits de minces troncs."
+        },
+        {
+          "id": "c",
+          "text": "À l'intérieur, on dort dans des hamacs."
+        },
+        {
+          "id": "d",
+          "text": "Pour arriver au village, on traverse une épaisse forêt."
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "d",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Une description suit un ordre qui guide le regard : d'abord la forêt qu'on traverse, puis la clairière où l'on arrive, puis l'extérieur des cases (les murs), enfin leur intérieur. Chaque phrase se place plus près que la précédente.",
+      "difficulty": 3
+    }
+  ]
+}

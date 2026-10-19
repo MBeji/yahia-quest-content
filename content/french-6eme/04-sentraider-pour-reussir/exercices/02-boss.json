@@ -1,0 +1,204 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : L'écureuil et l'escargot",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "code": "121614P00",
+    "pages": "69",
+    "items": ["Je joue avec les mots 4 p. 69"]
+  },
+  "questions": [
+    {
+      "prompt": "Quelle phrase est la forme négative de « Nous avons toujours aidé nos voisins. » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nous n'avons jamais aidé nos voisins."
+        },
+        {
+          "id": "b",
+          "text": "Nous n'avons plus aidé nos voisins.",
+          "misconceptionTag": "fr.phrase.negation-sens-inexact"
+        },
+        {
+          "id": "c",
+          "text": "Nous ne jamais avons aidé nos voisins.",
+          "misconceptionTag": "fr.phrase.negation-mal-placee"
+        },
+        {
+          "id": "d",
+          "text": "Nous avons jamais aidé nos voisins.",
+          "misconceptionTag": "fr.phrase.ne-oublie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Toujours » devient « ne… jamais ». À un temps composé, ne se place avant l'auxiliaire (avons) et jamais juste après lui, avant le participe. Le ne devient n' devant une voyelle.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Coche tous les verbes qui se conjuguent comme « finir ».",
+      "options": [
+        {
+          "id": "a",
+          "text": "grandir"
+        },
+        {
+          "id": "b",
+          "text": "remplir"
+        },
+        {
+          "id": "c",
+          "text": "jouer"
+        },
+        {
+          "id": "d",
+          "text": "choisir"
+        },
+        {
+          "id": "e",
+          "text": "aider"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "d"]
+      },
+      "explanation": "Grandir, remplir et choisir ont un infinitif en -ir et un participe en -i : ils se conjuguent comme finir. Jouer et aider ont un infinitif en -er : ils suivent un autre modèle.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets les phrases dans l'ordre pour raconter l'histoire de Salma.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salma refait un gâteau avec leur aide."
+        },
+        {
+          "id": "b",
+          "text": "Salma prépare un gâteau pour l'anniversaire de sa sœur."
+        },
+        {
+          "id": "c",
+          "text": "Le soir, toute la famille mange le gâteau avec joie."
+        },
+        {
+          "id": "d",
+          "text": "Ses voisines accourent et lui prêtent des œufs."
+        },
+        {
+          "id": "e",
+          "text": "Soudain, le gâteau tombe par terre."
+        }
+      ],
+      "answerKey": {
+        "order": ["b", "e", "d", "a", "c"]
+      },
+      "explanation": "Le récit commence par la situation de départ, puis une complication change tout, les personnages agissent, le problème se règle et la situation finale conclut.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Rym décore la classe avec ses amies. Soudain, l'échelle glisse et Rym tombe. Ses amies l'aident à se relever et appellent la maîtresse. La maîtresse soigne son genou. Le lendemain, Rym revient et remercie ses amies. Quelle phrase est la complication ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rym décore la classe avec ses amies.",
+          "misconceptionTag": "fr.recit.partie-du-recit-confondue"
+        },
+        {
+          "id": "b",
+          "text": "Ses amies l'aident à se relever et appellent la maîtresse."
+        },
+        {
+          "id": "c",
+          "text": "Le lendemain, Rym revient et remercie ses amies.",
+          "misconceptionTag": "fr.recit.partie-du-recit-confondue"
+        },
+        {
+          "id": "d",
+          "text": "Soudain, l'échelle glisse et Rym tombe."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La complication est l'événement qui change tout : l'échelle glisse. La phrase du début décrit le calme d'avant (situation initiale) et la dernière dit comment tout se termine (situation finale).",
+      "difficulty": 3
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque proverbe à son explication.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Un bienfait n'est jamais perdu."
+        },
+        {
+          "id": "l2",
+          "text": "Il faut tourner sa langue sept fois dans sa bouche avant de parler."
+        },
+        {
+          "id": "l3",
+          "text": "Il n'y a que le premier pas qui coûte."
+        },
+        {
+          "id": "l4",
+          "text": "Après la pluie le beau temps."
+        },
+        {
+          "id": "r1",
+          "text": "Le plus difficile, c'est de commencer."
+        },
+        {
+          "id": "r2",
+          "text": "Une bonne action est, tôt ou tard, récompensée."
+        },
+        {
+          "id": "r3",
+          "text": "Le bonheur succède souvent au malheur."
+        },
+        {
+          "id": "r4",
+          "text": "Il faut réfléchir longuement avant de parler."
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r4"],
+          ["l3", "r1"],
+          ["l4", "r3"]
+        ]
+      },
+      "explanation": "Un proverbe se lit au sens figuré. Un bienfait finit par revenir à celui qui l'a fait ; il faut réfléchir avant de parler ; le plus dur est de commencer ; la joie vient après la tristesse.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle phrase est entièrement correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Léo est grand est il a rempli la mangeoire.",
+          "misconceptionTag": "fr.homophone.et-est-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Léo est grand et il a remplit la mangeoire.",
+          "misconceptionTag": "fr.conj.participe-passe-mal-termine"
+        },
+        {
+          "id": "c",
+          "text": "Léo est grand et il a rempli la mangeoire."
+        },
+        {
+          "id": "d",
+          "text": "Léo et grand et il a remplit la mangeoire."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Léo était grand » marche : est. Le deuxième mot relie deux idées (et aussi) : et. Après « a », le participe de remplir est « rempli », sans t.",
+      "difficulty": 3
+    }
+  ]
+}

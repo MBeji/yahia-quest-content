@@ -1,0 +1,144 @@
+{
+  "title": "📝 Entraînement ⭐⭐⭐ : Bilan du module",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "manuel": {
+    "code": "121615P00",
+    "pages": "93",
+    "items": [
+      "ex. 1 p.93"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Quel mot nomme la personne qui reçoit une lettre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "l'expéditeur de la lettre",
+          "misconceptionTag": "fr.lexique.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "b",
+          "text": "le destinataire"
+        },
+        {
+          "id": "c",
+          "text": "le facteur du quartier",
+          "misconceptionTag": "fr.lexique.mot-voisin-du-meme-champ"
+        },
+        {
+          "id": "d",
+          "text": "l'enveloppe de la lettre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le destinataire est celui à qui la lettre est adressée. L'expéditeur est celui qui l'envoie et le facteur celui qui la distribue : ils sont du même thème, mais nomment d'autres personnes. L'enveloppe est un objet.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel mot a le même sens que « se divertir » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "se distraire"
+        },
+        {
+          "id": "b",
+          "text": "s'ennuyer en classe",
+          "misconceptionTag": "fr.lexique.contraire-pour-synonyme"
+        },
+        {
+          "id": "c",
+          "text": "se perdre en route"
+        },
+        {
+          "id": "d",
+          "text": "s'inquiéter beaucoup"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Se divertir et se distraire disent la même chose : passer un moment agréable. S'ennuyer est le contraire. Se perdre et s'inquiéter ont un autre sens.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le type de ce texte ? « Matériel : une feuille, des ciseaux. 1. Plie la feuille en deux. 2. Découpe le long du trait. 3. Déplie. »",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un récit qui raconte une aventure.",
+          "misconceptionTag": "fr.texte.injonctif-non-reconnu"
+        },
+        {
+          "id": "b",
+          "text": "Un texte documentaire sur la peinture.",
+          "misconceptionTag": "fr.texte.injonctif-non-reconnu"
+        },
+        {
+          "id": "c",
+          "text": "Une lettre à un ami."
+        },
+        {
+          "id": "d",
+          "text": "Un texte qui dit comment faire."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le texte donne une liste de matériel et des étapes numérotées avec des verbes à l'impératif (plie, découpe, déplie) : il dit comment faire. Il ne raconte aucune histoire, il n'informe pas sur un sujet et il n'a ni formule d'interpellation ni signature.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Voici le tour du « nombre pensé ». Liste A : 1, 3, 5, 7, 9, 11, 13, 15. Liste B : 2, 3, 6, 7, 10, 11, 14, 15. Liste C : 4, 5, 6, 7, 12, 13, 14, 15. Liste D : 8, 9, 10, 11, 12, 13, 14, 15. Ton ami pense à un nombre : il le trouve dans les listes B et C, mais pas dans A ni dans D. Le premier nombre de A est 1, celui de B est 2, celui de C est 4 et celui de D est 8. Quel est son nombre ?",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "On additionne les premiers nombres des listes où il se trouve : 2 (liste B) + 4 (liste C) = 6. Et 6 figure bien dans B et C, mais pas dans A ni dans D.",
+      "difficulty": 2
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Comment s'appelle le complément qui répond à la question « quand ? » ?",
+      "answerKey": {
+        "text": "complément de temps"
+      },
+      "explanation": "Le complément de temps indique le moment où se passe l'action. Pour le trouver, on pose la question « quand ? » après le verbe ; il peut se déplacer et se supprimer.",
+      "difficulty": 3,
+      "expectedMistakes": [
+        {
+          "text": "complément de lieu",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        }
+      ]
+    },
+    {
+      "prompt": "Complète : « un manteau neuf → la robe … »",
+      "options": [
+        {
+          "id": "a",
+          "text": "neufe",
+          "misconceptionTag": "fr.accord.feminin-adjectif-mal-forme"
+        },
+        {
+          "id": "b",
+          "text": "neuf",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "neuve"
+        },
+        {
+          "id": "d",
+          "text": "neuves"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Robe est féminin singulier : l'adjectif neuf change de forme au féminin et devient neuve (le f devient v). On n'ajoute pas seulement un e (neufe), on n'oublie pas l'accord (neuf), et le s du pluriel ne convient pas à un seul vêtement.",
+      "difficulty": 3
+    }
+  ]
+}

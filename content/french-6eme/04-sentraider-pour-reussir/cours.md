@@ -2,9 +2,9 @@
 
 > 💡 « Seul, on va vite. Ensemble, on va loin. Et celui qui aide aujourd'hui sera aidé demain. »
 
-## 🚫 La phrase négative : _ne… plus_ et _ne… jamais_
+## 🚫 La phrase négative : ne… plus et ne… jamais
 
-Au début de l'année, Hamza oubliait souvent son cahier et il copiait toujours sur son voisin. Aujourd'hui, tout a changé. On veut le dire : _« Hamza oublie encore son cahier »_ n'est plus vrai, et _« il copie toujours »_ non plus.
+Au début de l'année, Hamza oubliait souvent son cahier et il copiait toujours sur son voisin. Aujourd'hui, tout a changé. On veut le dire : « _Hamza oublie encore son cahier_ » n'est plus vrai, et « _il copie toujours_ » non plus.
 
 Comment écrire ces deux changements avec de **petits mots** qui entourent le verbe ?
 
@@ -17,18 +17,18 @@ La phrase **négative** dit le contraire d'une phrase affirmative. Elle s'écrit
 
 :::
 
-| Phrase affirmative                | Phrase négative                       |
-| --------------------------------- | ------------------------------------- |
-| _Hamza oublie **encore** son cahier._ | _Hamza **n**'oublie **plus** son cahier._ |
+| Phrase affirmative                      | Phrase négative                              |
+| --------------------------------------- | -------------------------------------------- |
+| _Hamza oublie **encore** son cahier._   | _Hamza **n**'oublie **plus** son cahier._    |
 | _Il copie **toujours** sur son voisin._ | _Il **ne** copie **jamais** sur son voisin._ |
 
-Le tableau montre qu'**_encore_ devient _ne… plus_** et que **_toujours_ devient _ne… jamais_**.
+Le tableau montre qu'**encore devient ne… plus** et que **toujours devient ne… jamais**.
 
-::: exemple Mettre à la forme négative _« J'ai encore téléphoné à mon frère. »_
+::: exemple Mettre à la forme négative « J'ai encore téléphoné à mon frère. »
 
-1. **Je repère _encore_** ← il se transforme en _ne… plus_.
+1. **Je repère encore** ← il se transforme en _ne… plus_.
 2. **Je trouve le verbe conjugué** : _ai_ (l'auxiliaire) ← _ne_ se place **avant** lui, et _plus_ **juste après**.
-3. **J'écris** : _Je **n'**ai **plus** téléphoné à mon frère._ (_ne_ devient _n'_ devant une voyelle, parce que _ai_ commence par _a_.)
+3. **J'écris** : _Je \**n'\**ai **plus** téléphoné à mon frère._ (_ne_ devient _n'_ devant une voyelle, parce que _ai_ commence par _a_.)
 
 :::
 
@@ -41,6 +41,7 @@ Le tableau montre qu'**_encore_ devient _ne… plus_** et que **_toujours_ devie
 :::
 
 ::: propriete
+
 - _encore_ → _ne… plus_ ; _toujours_ → _ne… jamais_.
 - _ne_ se place avant le verbe conjugué ; _plus_ et _jamais_ se placent juste après lui.
 - Cas-limite : à un temps composé, l'auxiliaire est le verbe conjugué : _ne_ avant l'auxiliaire, _plus_ ou _jamais_ après lui, avant le participe (_Je n'ai jamais voyagé en avion_).
@@ -48,7 +49,7 @@ Le tableau montre qu'**_encore_ devient _ne… plus_** et que **_toujours_ devie
 :::
 
 ::: verifie
-Mets à la forme négative : _« Les enfants sortent toujours le soir. »_
+Mets à la forme négative : « _Les enfants sortent toujours le soir._ »
 
 ---
 
@@ -59,7 +60,7 @@ _Toujours_ se transforme en _ne… jamais_ ; le verbe conjugué est _sortent_, d
 _Encore_ devient _ne… plus_, _toujours_ devient _ne… jamais_ : deux mots autour du verbe, jamais un seul.
 :::
 
-## 🛠️ Les verbes comme _finir_ au passé composé et au futur
+## 🛠️ Les verbes comme finir au passé composé et au futur
 
 Hier, Maya et Sami ont fini leurs devoirs tôt et ont choisi un jeu. Demain, ils choisiront un autre jeu et le finiront ensemble.
 
@@ -73,22 +74,22 @@ Les verbes du **2ᵉ groupe** ont un infinitif en **-ir** et se conjuguent comme
 
 :::
 
-| Personne    | Passé composé  | Futur         |
-| ----------- | -------------- | ------------- |
-| je          | j'ai fini      | je finirai    |
-| tu          | tu as fini     | tu finiras    |
-| il / elle   | il a fini      | il finira     |
+| Personne    | Passé composé   | Futur         |
+| ----------- | --------------- | ------------- |
+| je          | j'ai fini       | je finirai    |
+| tu          | tu as fini      | tu finiras    |
+| il / elle   | il a fini       | il finira     |
 | nous        | nous avons fini | nous finirons |
-| vous        | vous avez fini | vous finirez  |
-| ils / elles | ils ont fini   | ils finiront  |
+| vous        | vous avez fini  | vous finirez  |
+| ils / elles | ils ont fini    | ils finiront  |
 
 On voit que le participe **ne change pas** et que le futur **garde tout l'infinitif** : _finir-ai_.
 
-::: exemple Conjuguer _choisir_ avec _ils_ : hier, puis demain
+::: exemple Conjuguer choisir avec ils : hier, puis demain
 
-1. **_Hier_** ← passé composé : _avoir_ au présent avec _ils_ = **ont**.
-2. **Participe de _choisir_** : on remplace **-ir** par **-i** ← _choisi_ : _Ils ont choisi un jeu._
-3. **_Demain_** ← futur : j'écris l'infinitif complet _choisir_ puis la terminaison de _ils_, **-ont** : _Ils **choisiront** un autre jeu._
+1. **Hier** ← passé composé : _avoir_ au présent avec _ils_ = **ont**.
+2. **Participe de choisir** : on remplace **-ir** par **-i** ← _choisi_ : _Ils ont choisi un jeu._
+3. **Demain** ← futur : j'écris l'infinitif complet _choisir_ puis la terminaison de _ils_, **-ont** : _Ils **choisiront** un autre jeu._
 
 :::
 
@@ -97,10 +98,11 @@ On voit que le participe **ne change pas** et que le futur **garde tout l'infini
 :::
 
 ::: piege Erreur fréquente
-« Demain, je **finerai** » ✗ On a mélangé avec les verbes en _-er_ et perdu le _i_ de l'infinitif. ✓ Au futur, on garde **l'infinitif entier** : _je finirai_.
+« Demain, je **finerai** » ✗ On a mélangé avec les verbes en **-er** et perdu le _i_ de l'infinitif. ✓ Au futur, on garde **l'infinitif entier** : _je finirai_.
 :::
 
 ::: propriete
+
 - Tous les verbes du modèle _finir_ prennent le participe en **-i** : _rempli_, _grandi_, _rougi_.
 - Le futur garde le **-ir** : _grandir_ → _je grandirai_, _remplir_ → _tu rempliras_.
 - Cas-limite : _réunir_ garde ses deux voyelles au futur : _nous réunirons_.
@@ -108,11 +110,11 @@ On voit que le participe **ne change pas** et que le futur **garde tout l'infini
 :::
 
 ::: verifie
-Complète : _« Demain matin, nous (remplir) la mangeoire ; hier, nous (nourrir) les vaches. »_
+Complète : « _Demain matin, nous (remplir) la mangeoire ; hier, nous (nourrir) les vaches._ »
 
 ---
 
-_Demain_ : futur, infinitif entier + _-ons_ → **nous remplirons**. _Hier_ : passé composé, _avoir_ avec _nous_ + participe en _-i_ → **nous avons nourri**.
+_Demain_ : futur, infinitif entier + **-ons** → **nous remplirons**. _Hier_ : passé composé, _avoir_ avec _nous_ + participe en **-i** → **nous avons nourri**.
 :::
 
 ::: retenir
@@ -126,19 +128,20 @@ Nour est ma voisine. Elle a un chat et un chien.
 _Est_ et _et_ se prononcent presque de la même façon, et pourtant, ils ne servent pas à la même chose. Comment éviter l'erreur dans une phrase que tu écris vite ?
 
 ::: definition
+
 - **est** est le verbe **être** au présent, à la 3ᵉ personne du singulier. On peut le remplacer par **était** ou **sera**.
 - **et** est un mot qui **relie** deux mots ou deux groupes de mots. On peut le remplacer par **et aussi**.
 
 :::
 
-| Phrase                          | Test                                      | Écriture |
-| ------------------------------- | ----------------------------------------- | -------- |
-| _Nour ___ ma voisine._          | _Nour **était** ma voisine_ : ça marche   | **est**  |
-| _Un chat ___ un chien._         | _Un chat **et aussi** un chien_ : ça marche | **et**   |
+| Phrase                 | Test                                        | Écriture |
+| ---------------------- | ------------------------------------------- | -------- |
+| _Nour …… ma voisine._  | _Nour **était** ma voisine_ : ça marche     | **est**  |
+| _Un chat …… un chien._ | _Un chat **et aussi** un chien_ : ça marche | **et**   |
 
 Le tableau relie chaque mot à **son test** : une seule des deux phrases tient debout.
 
-::: exemple Écrire _« Rym ___ fière : son père ___ sa mère sont professeurs. »_
+::: exemple Écrire « Rym …… fière : son père …… sa mère sont professeurs. »
 
 1. **Premier blanc**, juste après _Rym_ : j'essaie _était_ ← _Rym était fière_ marche, c'est le verbe : **est**.
 2. **Deuxième blanc**, entre _son père_ et _sa mère_ : j'essaie _et aussi_ ← _son père et aussi sa mère_ marche, le mot relie deux groupes : **et**.
@@ -151,13 +154,14 @@ Le tableau relie chaque mot à **son test** : une seule des deux phrases tient d
 :::
 
 ::: propriete
+
 - _est_ se remplace par _était_ ou _sera_ ; _et_ se remplace par _et aussi_.
 - Cas-limite : dans _c'est_ et dans _est-il_, le verbe _être_ est toujours là (_c'était_ marche) ; _et_ peut aussi ouvrir une phrase (_Et si un orage éclatait ?_), il relie alors à ce qui précède.
 
 :::
 
 ::: verifie
-Complète : _« Il ___ tard, ___ papa n'___ pas encore rentré. »_
+Complète : « _Il …… tard, …… papa n'…… pas encore rentré._ »
 
 ---
 
@@ -195,7 +199,7 @@ Un **récit** raconte une suite d'événements en cinq temps :
 
 Chaque ligne du tableau est une phrase de l'histoire : les cinq phrases mises dans l'ordre racontent tout.
 
-::: exemple Classer _« Soudain, la lumière s'éteint. »_ dans un récit sur la solidarité
+::: exemple Classer « Soudain, la lumière s'éteint. » dans un récit sur la solidarité
 
 1. **Je cherche ce que la phrase change** : avant, il y avait de la lumière ; maintenant, c'est le noir ← un événement arrive.
 2. **Un événement qui change tout** s'appelle une **complication**.
@@ -208,13 +212,14 @@ Chaque ligne du tableau est une phrase de l'histoire : les cinq phrases mises da
 :::
 
 ::: propriete
-- Pour faire parler les personnages, place des **répliques** dans la suite des événements ou la solution : le verbe introducteur (_dit_, _crie_, _répond_) vient **avant** ou **après** la réplique (_Laurent crie : « Au secours ! »_ ; _« Je n'ai fait que mon devoir », répond l'apprenti._).
+
+- Pour faire parler les personnages, place des **répliques** dans la suite des événements ou la solution : le verbe introducteur (_dit_, _crie_, _répond_) vient **avant** ou **après** la réplique (Laurent crie : « Au secours ! » ; « Je n'ai fait que mon devoir », répond l'apprenti).
 - Cas-limite : une histoire courte peut avoir une suite des événements d'une seule phrase, mais aucun des cinq temps ne doit manquer.
 
 :::
 
 ::: verifie
-Dans le récit : _« Rania joue au ballon. Son ballon tombe dans le puits. Son frère descend une corde. Rania récupère son ballon. Elle remercie son frère. »_ Quelle phrase est la complication ?
+Dans le récit : « _Rania joue au ballon. Son ballon tombe dans le puits. Son frère descend une corde. Rania récupère son ballon. Elle remercie son frère._ » Quelle phrase est la complication ?
 
 ---
 
@@ -227,16 +232,19 @@ Un récit a cinq temps : situation initiale, complication, suite des événement
 
 ## 🤝 Les mots de l'amitié et de la solidarité
 
-« Entre Damien et Bruno, il y a une vraie… » ? _Amitié_, _amical_, _amis_ : ces mots viennent de la même racine, mais chacun a sa place dans la phrase. Comment choisir le bon sans hésiter ?
+Salma et Nour sont inséparables : on dit qu'il y a entre elles une vraie… _amitié_, ou bien _amical_, ou bien _amies_ ?
+
+Ces mots viennent de la même racine, mais chacun a sa place dans la phrase. Comment choisir le bon sans hésiter ?
 
 ::: definition
+
 - **L'amitié** : l'affection, l'attachement entre amis. **La fraternité** : le lien entre frères et sœurs, ou entre personnes qui se traitent comme tels.
 - **La solidarité** : les hommes ont besoin les uns des autres et s'aident quand il le faut. **Le respect** : la politesse envers les autres.
 - Les mots de la même famille : le **nom** _amitié_, le **nom** _ami_, l'**adjectif** _amical_.
 
 :::
 
-::: exemple Compléter _« Salma et Nour sont ___. Elles ressentent de l'___ l'une pour l'autre. Elles se font un geste ___. »_ avec _amitié, amies, amical_
+::: exemple Compléter « Salma et Nour sont …… . Elles ressentent de l'…… l'une pour l'autre. Elles se font un geste …… . » avec amitié, amies, amical
 
 1. **Premier blanc**, après _sont_ : il faut des personnes ← **amies**.
 2. **Deuxième blanc**, après _de l'_ : il faut un nom de sentiment ← **amitié**.
@@ -249,13 +257,14 @@ Un récit a cinq temps : situation initiale, complication, suite des événement
 :::
 
 ::: propriete
+
 - Un proverbe a un sens **figuré** : on l'explique avec une idée, pas avec ses mots.
 - Cas-limite : _respect_ et _solidarité_ ne sont pas des synonymes ; l'un parle de politesse, l'autre d'entraide.
 
 :::
 
 ::: verifie
-Quel mot complète : _« Les élèves se montrent ___ en aidant leur camarade malade »_ : _solidaires_ ou _solidarité_ ?
+Quel mot complète : « _Les élèves se montrent …… en aidant leur camarade malade_ » : _solidaires_ ou _solidarité_ ?
 
 ---
 
@@ -277,7 +286,7 @@ Un **texte documentaire** informe sur un sujet. Il est découpé en **rubriques*
 
 :::
 
-::: exemple Trouver l'information _« Que doit pouvoir faire chaque enfant selon le texte ? »_
+::: exemple Trouver l'information « Que doit pouvoir faire chaque enfant selon le texte ? »
 
 1. **Je lis la question** : le mot-clé est _chaque enfant_ ← je cherche ce que le texte dit des enfants.
 2. **Je regarde les intertitres** : _L'école pour tous les enfants du monde_ ← c'est la bonne rubrique.

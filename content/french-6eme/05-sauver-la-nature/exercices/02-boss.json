@@ -1,0 +1,159 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la baie",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Voici une phrase : « Le pêcheur ramasse un sac sur la plage. » Dans quelle version a-t-on déplacé ou supprimé un groupe sans casser la phrase ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sur la plage, le pêcheur ramasse un sac."
+        },
+        {
+          "id": "b",
+          "text": "Le pêcheur ramasse sur la plage.",
+          "misconceptionTag": "fr.complement.essentiel-non-essentiel-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Un sac, le pêcheur ramasse sur la plage.",
+          "misconceptionTag": "fr.complement.essentiel-non-essentiel-confondus"
+        },
+        {
+          "id": "d",
+          "text": "Le pêcheur un sac ramasse sur la plage.",
+          "misconceptionTag": "fr.complement.essentiel-non-essentiel-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le pêcheur ramasse quoi ? Un sac : ce complément est essentiel, on ne peut ni le supprimer ni le déplacer. « Sur la plage » est non essentiel : il peut changer de place sans casser la phrase, ou disparaître.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Samedi dernier, nous ___ de nouvelles règles sur l'eau. » (apprendre)",
+      "options": [
+        {
+          "id": "a",
+          "text": "avons apprit",
+          "misconceptionTag": "fr.conj.participe-passe-mal-termine"
+        },
+        {
+          "id": "b",
+          "text": "avons appris"
+        },
+        {
+          "id": "c",
+          "text": "apprendrons",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        },
+        {
+          "id": "d",
+          "text": "apprenons",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Samedi dernier » situe l'action dans le passé : on emploie le passé composé, l'auxiliaire « avoir » au présent puis le participe « appris », qui se termine par -is. « Apprendrons » est le futur et « apprenons » le présent ; « apprit » copie le présent.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Au fond de la baie ___ des centaines d'oiseaux. » (vivre, au présent)",
+      "options": [
+        {
+          "id": "a",
+          "text": "vit",
+          "misconceptionTag": "fr.accord.sujet-inverse-non-repere"
+        },
+        {
+          "id": "b",
+          "text": "vivons",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        },
+        {
+          "id": "c",
+          "text": "vis",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        },
+        {
+          "id": "d",
+          "text": "vivent"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le sujet est placé après le verbe. On le trouve avec la question « qui est-ce qui vit ? » : des centaines d'oiseaux, donc le verbe se met au pluriel. « Vit » s'accorde avec « baie », le mot qui précède, mais ce n'est pas le sujet.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Complète : « La classe entière ___ à la plage pour ramasser les déchets. » (aller, au présent)",
+      "options": [
+        {
+          "id": "a",
+          "text": "va"
+        },
+        {
+          "id": "b",
+          "text": "vont",
+          "misconceptionTag": "fr.accord.nom-collectif-au-pluriel"
+        },
+        {
+          "id": "c",
+          "text": "allons",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        },
+        {
+          "id": "d",
+          "text": "vas",
+          "misconceptionTag": "fr.accord.verbe-non-accorde-au-sujet"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« La classe » est un nom collectif au singulier, même s'il désigne plusieurs élèves : le verbe reste au singulier, à la 3e personne : va. « Vont » est le pluriel, qu'on emploie à tort parce qu'on pense aux élèves.",
+      "difficulty": 3
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Écris le verbe entre parenthèses au présent : « Au milieu du jardin, un vieux chêne et deux pommiers (donner) ___ de l'ombre. »",
+      "answerKey": {
+        "text": "donnent"
+      },
+      "expectedMistakes": [
+        {
+          "text": "donne",
+          "misconceptionTag": "fr.accord.sujets-multiples-verbe-singulier"
+        }
+      ],
+      "explanation": "Il y a deux sujets, « un vieux chêne » et « deux pommiers », reliés par « et » : ensemble ils forment un sujet pluriel, donc le verbe se met à la 3e personne du pluriel. Mettre le singulier oublie l'un des deux sujets.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans « Le maire parle de la pollution aux habitants », combien y a-t-il de compléments essentiels ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "un seul",
+          "misconceptionTag": "fr.complement.essentiel-non-essentiel-confondus"
+        },
+        {
+          "id": "b",
+          "text": "deux"
+        },
+        {
+          "id": "c",
+          "text": "aucun",
+          "misconceptionTag": "fr.complement.essentiel-non-essentiel-confondus"
+        },
+        {
+          "id": "d",
+          "text": "trois"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le maire parle de quoi ? De la pollution. À qui ? Aux habitants. Ces deux groupes répondent aux questions des compléments essentiels et ne peuvent pas être supprimés. « Le maire » est le sujet, ce n'est pas un complément.",
+      "difficulty": 3
+    }
+  ]
+}

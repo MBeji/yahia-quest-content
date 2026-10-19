@@ -1,0 +1,177 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le grand numéro",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Lettre : « Tunis, le 5 mars. Chère Tatie, je t'écris pour te dire que maman est malade. Elle doit rester deux semaines au lit. Peux-tu venir nous aider ? Je t'embrasse bien fort. Léa » Quelle est la formule d'appel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chère Tatie,"
+        },
+        {
+          "id": "b",
+          "text": "Tunis, le 5 mars."
+        },
+        {
+          "id": "c",
+          "text": "Je t'embrasse bien fort."
+        },
+        {
+          "id": "d",
+          "text": "Peux-tu venir nous aider ?"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La formule d'appel nomme la personne à qui l'on écrit, juste après le lieu et la date : « Chère Tatie, ». « Tunis, le 5 mars » donne le lieu et la date, « Je t'embrasse bien fort » est la formule de fin, et la question appartient au corps de la lettre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lettre : « Chère Tatie, je t'écris pour te dire que maman est malade. Elle doit rester deux semaines au lit. Peux-tu venir nous aider ? » Que peut-on affirmer d'après cette lettre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Léa est malade et reste au lit.",
+          "misconceptionTag": "fr.lecture.contraire-du-texte"
+        },
+        {
+          "id": "b",
+          "text": "La tante a déjà promis de venir.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
+        {
+          "id": "c",
+          "text": "Léa demande de l'aide à sa tante."
+        },
+        {
+          "id": "d",
+          "text": "Tatie habite dans la même maison que Léa.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Léa écrit à sa tante pour lui demander de venir les aider, parce que sa mère est malade. C'est la mère qui reste au lit, pas Léa. Le texte ne dit ni que la tante a répondu ni où elle habite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Mes sœurs sont ___ et mes frères sont ___. » (gentil, joyeux)",
+      "options": [
+        {
+          "id": "a",
+          "text": "gentils – joyeux",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "b",
+          "text": "gentilles – joyeux"
+        },
+        {
+          "id": "c",
+          "text": "gentilles – joyeuses",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "d",
+          "text": "gentiles – joyeux",
+          "misconceptionTag": "fr.accord.feminin-adjectif-mal-forme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Sœurs » est féminin pluriel : gentilles (le féminin de gentil double le l et prend un e, puis -s). « Frères » est masculin pluriel : joyeux garde sa forme, car il se termine par x. Les autres choix n'accordent pas l'adjectif avec le bon nom ou le forment mal.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Complète : « Hier, elle ___ chez le médecin et il lui ___ un pansement. » (aller, faire)",
+      "options": [
+        {
+          "id": "a",
+          "text": "a allé – a fait",
+          "misconceptionTag": "fr.conj.auxiliaire-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "est allé – a fait",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "est allée – est fait",
+          "misconceptionTag": "fr.conj.auxiliaire-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "est allée – a fait"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Hier » demande le passé composé. « Aller » prend « être » et son participe s'accorde avec « elle » : est allée. « Faire » prend « avoir » : il a fait. Les autres propositions se trompent d'auxiliaire ou n'accordent pas le participe.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "« Dans la forêt, Tulmac marche avec courage près du ruisseau demain. » Quels groupes sont des compléments de lieu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "avec courage"
+        },
+        {
+          "id": "b",
+          "text": "demain"
+        },
+        {
+          "id": "c",
+          "text": "dans la forêt"
+        },
+        {
+          "id": "d",
+          "text": "près du ruisseau"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On pose « où ? » : Tulmac marche où ? Dans la forêt, près du ruisseau. « Avec courage » répond à « comment ? » et « demain » à « quand ? ».",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les phrases de ce récit : le début, le passage descriptif, la scène avec une réplique, puis la fin.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La piste est ronde, entourée de gradins rouges."
+        },
+        {
+          "id": "b",
+          "text": "Sami s'écrie : « Elle va monter tout en haut ! »"
+        },
+        {
+          "id": "c",
+          "text": "Quand la fillette saute, tout le public applaudit."
+        },
+        {
+          "id": "d",
+          "text": "Samedi, Sami et Rania vont au cirque."
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "d",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le début présente les personnages et le lieu. Le passage descriptif montre la piste avant l'action. La réplique fait entendre un personnage pendant le numéro. La fin montre le résultat : le public ne peut applaudir qu'après le saut.",
+      "difficulty": 3
+    }
+  ]
+}

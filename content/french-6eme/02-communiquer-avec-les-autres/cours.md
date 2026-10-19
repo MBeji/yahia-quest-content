@@ -13,12 +13,12 @@ Un **déterminant démonstratif** se place devant un nom pour **montrer** un obj
 
 :::
 
-| Nom                                  | Démonstratif | Exemple              |
-| ------------------------------------ | ------------ | -------------------- |
-| masculin singulier                   | _ce_         | _ce clavier_         |
-| masculin singulier, voyelle ou h muet | _cet_        | _cet ordinateur_     |
-| féminin singulier                    | _cette_      | _cette souris_       |
-| pluriel (masculin ou féminin)        | _ces_        | _ces claviers_, _ces souris_ |
+| Nom                                   | Démonstratif | Exemple                      |
+| ------------------------------------- | ------------ | ---------------------------- |
+| masculin singulier                    | _ce_         | _ce clavier_                 |
+| masculin singulier, voyelle ou h muet | _cet_        | _cet ordinateur_             |
+| féminin singulier                     | _cette_      | _cette souris_               |
+| pluriel (masculin ou féminin)         | _ces_        | _ces claviers_, _ces souris_ |
 
 Le tableau relie le choix du démonstratif au **genre** et au **nombre** du nom, et à sa première lettre pour _cet_.
 
@@ -119,11 +119,11 @@ L'**impératif** est une forme du verbe qui sert à donner un **ordre**, un **co
 
 :::
 
-| Personne              | utiliser     | choisir      | faire       | prendre     | aller     |
-| --------------------- | ------------ | ------------ | ----------- | ----------- | --------- |
-| 2e du singulier (tu)  | _Utilise_    | _Choisis_    | _Fais_      | _Prends_    | _Va_      |
-| 1re du pluriel (nous) | _Utilisons_  | _Choisissons_ | _Faisons_   | _Prenons_   | _Allons_  |
-| 2e du pluriel (vous)  | _Utilisez_   | _Choisissez_ | _Faites_    | _Prenez_    | _Allez_   |
+| Personne              | utiliser    | choisir       | faire     | prendre   | aller    |
+| --------------------- | ----------- | ------------- | --------- | --------- | -------- |
+| 2e du singulier (tu)  | _Utilise_   | _Choisis_     | _Fais_    | _Prends_  | _Va_     |
+| 1re du pluriel (nous) | _Utilisons_ | _Choisissons_ | _Faisons_ | _Prenons_ | _Allons_ |
+| 2e du pluriel (vous)  | _Utilisez_  | _Choisissez_  | _Faites_  | _Prenez_  | _Allez_  |
 
 Le tableau montre qu'on retrouve la forme de l'impératif en cherchant la personne, sans écrire le pronom.
 
@@ -221,6 +221,7 @@ Lina a un portable. Elle téléphone à son oncle. Dans ces deux phrases, on ent
 Comment savoir, sans hésiter, lequel écrire ?
 
 ::: propriete
+
 - **a** (sans accent) est le verbe **avoir** au présent (_Lina a un portable_). C'est aussi la première partie d'un verbe au passé composé (_Elle a téléphoné_).
 - **à** (avec accent grave) est un petit mot **invariable** : il ne change jamais de forme et sert à introduire un complément (_Elle téléphone à son oncle_).
 
@@ -228,10 +229,10 @@ Comment savoir, sans hésiter, lequel écrire ?
 
 Pour choisir, on essaie de **changer la personne ou le temps** de la phrase. Si le mot peut changer, c'est le verbe _avoir_ ; s'il reste identique, c'est _à_.
 
-| Phrase                  | On change…           | Ce qui se passe                        | Donc |
-| ----------------------- | -------------------- | -------------------------------------- | ---- |
-| _Lina a un portable._   | _Elles … un portable_ | le mot devient _ont_                   | **a** |
-| _Elle téléphone à son oncle._ | _Elles téléphonent à son oncle_ | le mot reste _à_            | **à** |
+| Phrase                        | On change…                      | Ce qui se passe      | Donc  |
+| ----------------------------- | ------------------------------- | -------------------- | ----- |
+| _Lina a un portable._         | _Elles … un portable_           | le mot devient _ont_ | **a** |
+| _Elle téléphone à son oncle._ | _Elles téléphonent à son oncle_ | le mot reste _à_     | **à** |
 
 Le tableau relie le test à la règle : le mot qui varie est le verbe _avoir_.
 
@@ -285,12 +286,12 @@ Un récit se construit en quatre moments :
 
 :::
 
-| Moment                | Dans l'histoire de Yassine                             |
-| --------------------- | ------------------------------------------------------ |
-| situation de départ   | _Yassine allume son ordinateur pour finir son exposé._ |
-| élément perturbateur  | _Tout à coup, l'écran devient noir._                   |
-| actions               | _Il vérifie les fils, redémarre, essaie un autre câble._ |
-| situation finale      | _L'écran se rallume et il reprend son travail._        |
+| Moment               | Dans l'histoire de Yassine                               |
+| -------------------- | -------------------------------------------------------- |
+| situation de départ  | _Yassine allume son ordinateur pour finir son exposé._   |
+| élément perturbateur | _Tout à coup, l'écran devient noir._                     |
+| actions              | _Il vérifie les fils, redémarre, essaie un autre câble._ |
+| situation finale     | _L'écran se rallume et il reprend son travail._          |
 
 Le tableau relie chaque moment à la phrase de l'histoire qui le porte : les mots _tout à coup_ signalent la rupture.
 
@@ -338,12 +339,12 @@ Pour s'organiser, il faut connaître le nom de chaque métier du journal et ce q
 ::: propriete
 Dans un journal, chaque personne a un rôle précis :
 
-| Métier                          | Ce qu'il ou elle fait                                 |
-| ------------------------------- | ----------------------------------------------------- |
-| le rédacteur, la rédactrice     | écrit des articles                                    |
-| le reporter d'images            | filme ou photographie les événements                  |
-| le secrétaire de rédaction      | corrige les articles, écrit les titres et les chapeaux |
-| le maquettiste                  | organise et ordonne les pages                         |
+| Métier                      | Ce qu'il ou elle fait                                  |
+| --------------------------- | ------------------------------------------------------ |
+| le rédacteur, la rédactrice | écrit des articles                                     |
+| le reporter d'images        | filme ou photographie les événements                   |
+| le secrétaire de rédaction  | corrige les articles, écrit les titres et les chapeaux |
+| le maquettiste              | organise et ordonne les pages                          |
 
 Le **chapeau** est le court paragraphe qui présente un article ; la **rubrique** est un ensemble d'articles sur le même sujet (sport, cinéma) ; la **Une** est la première page.
 
@@ -410,7 +411,7 @@ Elle tente parce qu'on pense d'abord au numéro à appeler. Mais on doit décroc
 
 :::
 
-Les objets ont leur usage : le clavier sert à **saisir un texte**, l'écran à **regarder**, la chaîne stéréo à **écouter de la musique**, le téléphone à **passer un coup de fil**. Autour de la presse, on lit des **articles** dans un **magazine** ou dans une **revue** ; on est **abonné** quand on la reçoit chez soi chaque mois. Et pour finir : _souvent_ est le contraire de _rarement_.
+Les objets ont leur usage : le clavier sert à **saisir un texte**, l'écran à **regarder**, la télévision à **regarder un film**, la chaîne stéréo à **écouter de la musique**, le téléphone à **passer un coup de fil**. Autour de la presse, on lit des **articles** dans un **magazine** ou dans une **revue** ; on est **abonné** quand on la reçoit chez soi chaque mois. Et pour finir : _souvent_ est le contraire de _rarement_.
 
 ::: verifie
 Que fait-on avec un clavier ? Et quel verbe désigne le fait de recevoir une revue chez soi chaque mois ?
