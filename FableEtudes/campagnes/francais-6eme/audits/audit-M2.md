@@ -93,3 +93,35 @@
 ## 6. Verdict
 
 **À corriger** : 2 critiques et 6 majeurs, chacun avec son texte de remplacement vérifié (une seule réponse, la clé jamais strictement la plus longue), plus 6 mineurs. Les gates sont verts, le contrôle de salle blanche est à 0 et la fidélité aux transcriptions est bonne. Après correction, relancer `content:check`, `content:qa` et `content:tranche --fresh --strict-longest`.
+
+## 7. Re-vérification (après « Corrections après audit des missions » de `rapport-B2.md`)
+
+J'ai re-résolu à l'aveugle les 21 questions modifiées : m009 q2 et q3 ; m010 q1, q5 et q7 ; m011 q2, q3, q4, q7 et q8 ; m012 q1, q3 et q5 ; m013 (4 questions) ; m014 q1 à q7. Chaque clé est la seule réponse juste, aucune explication ne désigne une option par son rang, et les étiquettes sont exactes.
+
+**Gates**
+- `content:check` : ✓ (`french-6eme` : 73 exercices, 502 questions).
+- `content:qa` : ✓ 0 erreur.
+- `content:tranche --fresh --strict-longest` : clé strictement la plus longue 0/72 ; 7 paires proches, jugées ci-dessous.
+- `content:gisement:controle` sur le devoir : ✓ 0.
+
+| Défaut | État |
+| --- | --- |
+| C-1 m012 q1 | corrigé : b seule juste ; 41/44/46/44 |
+| C-2 m012 q5 | corrigé : b seule juste ; 25/28/28/24 |
+| M-1 explications par rang (m011 q7, m010 q7, m014 q2, q5, q7) | corrigé |
+| M-2 texte du devoir redonné (q2, q3, q4) | corrigé |
+| M-3 short_answer de m013 supprimées | corrigé (voir ci-dessous) |
+| M-4 m014 q3 « s'écrie » | corrigé : d seule juste, plus de doublon avec `03/02-boss` q2 |
+| M-5 m010 q1 | corrigé : c seule juste ; 66/74/70/52 |
+| M-6 m009 q2 | corrigé |
+| Mineurs 1 à 5 (« D'après », consigne 2020, consignes de rédaction, « m'envahit », « lunettes rondes ») | corrigés, textes conformes |
+
+**m013 à 4 questions : accepté.** R7 ne fixe pas de minimum : il plafonne à 12 et règle l'étage. Les quatre sessions de la carte (2025, 2021, 2020, 2022) restent chacune représentées par leur phrase officielle. La rampe est d2, d2, d2, d3. Ajouter un item ne servirait qu'à refaire le patron (`04/01-pratique#5`, `04/05-entrainement#6`).
+
+**Les 7 paires proches du devoir : voulues, aucune ne donne la réponse d'une autre question.** Elles viennent du texte sur Karim, désormais redonné dans q1 à q4.
+- **q1 ↔ q2 (0,90).** Mêmes événements, mais deux ordres différents : l'ordre du texte, puis l'ordre des faits. Aucune des deux explications ne donne l'ordre de l'autre question (celle de q1 dit seulement que l'ordre des faits est différent).
+- **q1, q2 ↔ q3, q4 et q2 ↔ q8.** Seul le texte est commun ; le texte ne désigne ni le titre ni la phrase de portrait.
+- **Une réserve hors de ces paires : q3 ↔ q4.** C'est une paire prévue par la carte (« titre qui convient », puis « titre qui ne convient pas »). L'explication de q3 dit que « le ballon » n'est qu'un détail : un élève qui fait q3 avant q4 connaît déjà la clé de q4. C'est **mineur et non bloquant**, car le prompt de q4 énonce lui-même le principe. Correction facultative de l'explication de q3 :
+  > L'histoire raconte comment Karim, d'abord seul, ne l'est plus grâce à Nour. « Karim n'est plus seul » résume cela. Les deux titres qui ne nomment qu'une chose vue dans l'histoire n'en disent qu'un détail, et « Une semaine à l'école » pourrait convenir à n'importe quel récit.
+
+**Verdict final : prêt à armer.** Aucun critique ni majeur ne reste. Le seul point ouvert est le mineur facultatif q3 ↔ q4 du devoir.
