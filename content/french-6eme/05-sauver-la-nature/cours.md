@@ -16,10 +16,10 @@ Une phrase est formée d'un **groupe nominal sujet** (GNS) et d'un **groupe verb
 
 :::
 
-| Phrase                                   | Groupe testé       | On le supprime…                  | Verdict          |
-| ---------------------------------------- | ------------------ | -------------------------------- | ---------------- |
-| _Il voit **un orque** dans un bassin._   | _un orque_         | _Il voit dans un bassin._ ✗      | essentiel        |
-| _Il voit un orque **dans un bassin**._   | _dans un bassin_   | _Il voit un orque._ ✓            | non essentiel    |
+| Phrase                                 | Groupe testé     | On le supprime…             | Verdict       |
+| -------------------------------------- | ---------------- | --------------------------- | ------------- |
+| _Il voit **un orque** dans un bassin._ | _un orque_       | _Il voit dans un bassin._ ✗ | essentiel     |
+| _Il voit un orque **dans un bassin**._ | _dans un bassin_ | _Il voit un orque._ ✓       | non essentiel |
 
 Le tableau relie le **test de suppression** au verdict : la phrase tient sans le groupe, il est non essentiel.
 
@@ -37,6 +37,7 @@ Le tableau relie le **test de suppression** au verdict : la phrase tient sans le
 :::
 
 ::: propriete
+
 - Un complément essentiel **ne se déplace pas** et **ne se supprime pas** : _Un orque, il voit dans un bassin_ ✗.
 - Un complément non essentiel se déplace : _Dans un bassin, il voit un orque._ ✓
 - Cas-limite : une phrase peut avoir **plusieurs** compléments essentiels (_parler **de son projet à ses amis**_), ou aucun (_Jesse arrive._).
@@ -98,6 +99,7 @@ Dans chaque ligne, ce qui change avec la personne est l'auxiliaire (passé compo
 :::
 
 ::: propriete
+
 - Des verbes qui se conjuguent **comme _prendre_** : _apprendre_, _comprendre_, _surprendre_, _reprendre_ (_j'ai appris_, _il comprendra_).
 - Des verbes qui se conjuguent **comme _mettre_** : _permettre_, _promettre_, _remettre_ (_il a permis_, _elle remettra_).
 - Cas-limite : _il prend_ (présent) et _il prendra_ (futur) se ressemblent ; seul le **-ra** annonce que l'action n'a pas encore eu lieu.
@@ -127,12 +129,12 @@ Le verbe s'accorde **toujours avec son sujet**, en nombre et en personne. Pour t
 
 :::
 
-| Cas                          | Exemple                                                  | Le verbe est…        |
-| ---------------------------- | -------------------------------------------------------- | -------------------- |
-| un seul sujet                | _Nicole **prépare** un coin._                            | au singulier         |
-| deux sujets ou plus          | _Nicole et Nicolas **préparent** un coin._               | au pluriel           |
-| sujet placé après le verbe   | _Dans la mer **nagent** des poissons._                   | au pluriel           |
-| nom collectif (singulier)    | _La famille **est** contente._                           | au singulier         |
+| Cas                        | Exemple                                    | Le verbe est… |
+| -------------------------- | ------------------------------------------ | ------------- |
+| un seul sujet              | _Nicole **prépare** un coin._              | au singulier  |
+| deux sujets ou plus        | _Nicole et Nicolas **préparent** un coin._ | au pluriel    |
+| sujet placé après le verbe | _Dans la mer **nagent** des poissons._     | au pluriel    |
+| nom collectif (singulier)  | _La famille **est** contente._             | au singulier  |
 
 Chaque ligne du tableau cherche le sujet d'abord, puis accorde le verbe avec lui, jamais avec le mot qui est juste à côté.
 
@@ -153,6 +155,7 @@ Chaque ligne du tableau cherche le sujet d'abord, puis accorde le verbe avec lui
 :::
 
 ::: propriete
+
 - Deux sujets reliés par **et** donnent un sujet pluriel : _Le chien et le chat **dorment**._
 - Quand le sujet est après le verbe, on le trouve en posant la question **qui est-ce qui ?** : _Quand ramasserez-**vous** les papiers ?_ (sujet _vous_).
 - Un sujet peut avoir **plusieurs verbes** : _Nicole **met** le chaton dans un panier, le **prend** avec elle et **rend** visite à sa grand-mère._ Les trois verbes s'accordent avec _Nicole_.
@@ -199,6 +202,7 @@ Répondre « Parce que 100 litres » ou recopier une phrase du texte sans l'adap
 :::
 
 ::: propriete
+
 - Un conseil se lit avec **sa raison** : on cherche _parce que_, _car_, un chiffre, une conséquence.
 - La question « Comment peut-on préserver la nature ? » attend **ton avis**, appuyé sur ce que dit le texte.
 - Cas-limite : un chiffre isolé n'est pas une réponse, il faut dire **ce qu'il prouve**.
@@ -249,6 +253,7 @@ Les **mots-outils** relient les idées d'un texte. Trois mots disent une **oppos
 :::
 
 ::: propriete
+
 - _Mais_, _pourtant_ et _cependant_ disent tous les trois l'opposition ; _pourtant_ et _cependant_ se placent souvent au début de la deuxième phrase, avec une virgule.
 - _Bientôt_ ne se dit que d'une action **à venir** : _Les parapluies vont bientôt grimper._
 - Cas-limite : _plutôt_ (de préférence) ne s'écrit pas comme _plus tôt_ ; _Choisis plutôt la douche._
@@ -297,6 +302,7 @@ Faire seulement la liste de ce que l'on voit : « Il a des yeux. Il a un museau.
 :::
 
 ::: propriete
+
 - On ne dit pas tout : **quelques détails bien choisis** valent mieux qu'une longue liste.
 - Les **adjectifs** précisent : _fidèle_, _rusée_, _timide_, _courageux_.
 - Cas-limite : pour un **lieu**, on suit aussi un ordre (de loin à près, de l'extérieur à l'intérieur).
@@ -346,6 +352,7 @@ Prendre pour un passage descriptif une phrase qui raconte une action : « Nous r
 :::
 
 ::: propriete
+
 - Dans un récit, on respecte **l'ordre des événements**.
 - Pour ne pas se tromper de temps, on peut **raconter et décrire au présent**.
 - Le passage descriptif peut venir **au début**, **au milieu** ou **à la fin** du récit.

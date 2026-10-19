@@ -15,10 +15,10 @@ Un complément de lieu est un **complément non essentiel** : on peut le **suppr
 
 :::
 
-| Phrase                                         | Question au verbe  | Complément de lieu      |
-| ---------------------------------------------- | ------------------ | ----------------------- |
-| _Le clown salue le public **au centre de la piste**._ | il salue **où ?** | _au centre de la piste_ |
-| _Le cirque fait une tournée **en Europe**._    | il fait une tournée **où ?** | _en Europe_     |
+| Phrase                                                | Question au verbe            | Complément de lieu      |
+| ----------------------------------------------------- | ---------------------------- | ----------------------- |
+| _Le clown salue le public **au centre de la piste**._ | il salue **où ?**            | _au centre de la piste_ |
+| _Le cirque fait une tournée **en Europe**._           | il fait une tournée **où ?** | _en Europe_             |
 
 Le tableau montre la méthode : on pose **où ?** après le verbe, et le groupe qui répond est le complément de lieu.
 
@@ -36,6 +36,7 @@ Le tableau montre la méthode : on pose **où ?** après le verbe, et le groupe 
 :::
 
 ::: propriete
+
 - Pour un complément de lieu, la question est toujours **où ?**
 - Il se **déplace** (_En Europe, le cirque fait une tournée._) et se **supprime** (_Le cirque fait une tournée._).
 - Cas-limite : une phrase peut avoir **deux** compléments de lieu (_Le clown salue le public **au centre de la piste, devant le chapiteau**._).
@@ -67,16 +68,16 @@ Au **futur**, le radical change : _aller_ devient **ir-**, _faire_ devient **fer
 
 :::
 
-| Personne    | aller (passé composé) | faire (passé composé) | aller (futur) | faire (futur) |
-| ----------- | --------------------- | --------------------- | ------------- | ------------- |
-| je          | je suis allé(e)       | j'ai fait             | j'irai        | je ferai      |
-| tu          | tu es allé(e)         | tu as fait            | tu iras       | tu feras      |
-| il / elle   | il est allé / elle est allée | il a fait      | il ira        | il fera       |
-| nous        | nous sommes allé(e)s  | nous avons fait       | nous irons    | nous ferons   |
-| vous        | vous êtes allé(e)s    | vous avez fait        | vous irez     | vous ferez    |
-| ils / elles | ils sont allés / elles sont allées | ils ont fait | ils iront    | ils feront    |
+| Personne    | aller (passé composé)              | faire (passé composé) | aller (futur) | faire (futur) |
+| ----------- | ---------------------------------- | --------------------- | ------------- | ------------- |
+| je          | je suis allé(e)                    | j'ai fait             | j'irai        | je ferai      |
+| tu          | tu es allé(e)                      | tu as fait            | tu iras       | tu feras      |
+| il / elle   | il est allé / elle est allée       | il a fait             | il ira        | il fera       |
+| nous        | nous sommes allé(e)s               | nous avons fait       | nous irons    | nous ferons   |
+| vous        | vous êtes allé(e)s                 | vous avez fait        | vous irez     | vous ferez    |
+| ils / elles | ils sont allés / elles sont allées | ils ont fait          | ils iront     | ils feront    |
 
-Pour _aller_, la dernière syllabe du participe change avec le sujet ; pour _faire_, elle ne change pas.
+Pour _aller_, la fin du participe change avec le sujet ; pour _faire_, on écrit simplement _fait_ derrière l'auxiliaire _avoir_.
 
 ::: exemple Écrire _« Hier, Leïla et Sana (aller) au gymnase. Demain, elles (faire) un match. »_
 
@@ -100,6 +101,7 @@ Pour _aller_, la dernière syllabe du participe change avec le sujet ; pour _fai
 :::
 
 ::: propriete
+
 - _Faire_ : toujours **avoir** au passé composé ; participe **fait**.
 - _Aller_ : toujours **être** au passé composé ; participe **allé**, **allée**, **allés**, **allées**.
 - Cas-limite : _il ira_ et _il fera_ s'entendent comme le futur de _aller_ et _faire_ ; pour _je_, c'est **-ai** (_j'irai_, _je ferai_).
@@ -129,11 +131,11 @@ L'**adjectif** s'accorde en **genre** (masculin ou féminin) et en **nombre** (s
 
 :::
 
-| Règle                         | Masculin → féminin             | Singulier → pluriel                 |
-| ----------------------------- | ------------------------------ | ----------------------------------- |
-| la plupart des adjectifs       | petit → petit**e**, mûr → mûr**e** | petit → petit**s**, mûr → mûr**s** |
-| adjectif terminé par **e**    | rouge → rouge (ne change pas)  | rouge → rouge**s**                  |
-| adjectif terminé par **-eux** | heureux → heur**euse**         | heureux → heureux (ne change pas)   |
+| Règle                         | Masculin → féminin                 | Singulier → pluriel                |
+| ----------------------------- | ---------------------------------- | ---------------------------------- |
+| la plupart des adjectifs      | petit → petit**e**, mûr → mûr**e** | petit → petit**s**, mûr → mûr**s** |
+| adjectif terminé par **e**    | rouge → rouge (ne change pas)      | rouge → rouge**s**                 |
+| adjectif terminé par **-eux** | heureux → heur**euse**             | heureux → heureux (ne change pas)  |
 
 Le tableau montre qu'on regarde d'abord la **fin** de l'adjectif, puis on le fait correspondre au nom.
 
@@ -151,6 +153,7 @@ Le tableau montre qu'on regarde d'abord la **fin** de l'adjectif, puis on le fai
 :::
 
 ::: propriete
+
 - Un adjectif **reste le même** au pluriel quand il se termine par _s_ ou _x_ : _des enfants joyeux_.
 - L'adjectif s'accorde avec le **nom auquel il se rapporte**, même après le verbe _être_ : _Julie est heureuse_.
 - Cas-limite : _gai_ → _gaie_ ; _drôle_ ne change pas au féminin.
@@ -176,6 +179,7 @@ Après l'école, Amine s'entraîne au football. Il fait attention à ce qu'il ma
 Quels mots faut-il connaître pour parler de la santé et du sport ?
 
 ::: definition
+
 - **La santé** : l'état d'une personne qui se porte bien.
 - **L'hygiène** : tous les soins pour rester propre et en bonne santé (se laver, bien manger, bien dormir, faire du sport).
 - **La forme** : se sentir bien et plein d'énergie.
@@ -200,6 +204,7 @@ Pour situer une action, on utilise aussi des mots de lieu : **partout**, **nulle
 :::
 
 ::: propriete
+
 - Pour les mots d'un même thème, on fait attention à la **différence de sens** : un _régime_ n'est pas un _entraînement_.
 - Un sport est **individuel** ou **collectif** : on le choisit d'après le nombre de joueurs.
 - Cas-limite : _par la suite_ veut dire « plus tard », comme _après_ ; _puis_ s'emploie pour enchaîner deux actions.
@@ -250,6 +255,7 @@ Signer d'abord, ou écrire la date en bas de la lettre, après la signature ✗ 
 :::
 
 ::: propriete
+
 - Dans une lettre à un proche, on emploie **tu** du début à la fin.
 - Le corps de la lettre est en **paragraphes** : un paragraphe, une idée.
 - Cas-limite : on peut ajouter une raison (_car_) pour convaincre le destinataire.
@@ -310,6 +316,7 @@ Décrire en inventaire, dans le désordre : « Il y a des anneaux. Il y a un toi
 :::
 
 ::: propriete
+
 - Les phrases varient : on évite de répéter _il y a_.
 - On choisit les détails qui donnent **l'ambiance** du lieu.
 - Cas-limite : un lieu se décrit avec des verbes d'état (_est_, _se trouve_) : _La piste est ronde._
@@ -355,6 +362,7 @@ Les répliques s'écrivent avec : deux-points et guillemets pour ouvrir, tiret e
 :::
 
 ::: propriete
+
 - Chaque réplique commence par une **majuscule** et se termine par la ponctuation de la phrase (_!_ , _?_, _._).
 - Le verbe qui introduit la parole peut venir **avant** ou **après** elle.
 - Cas-limite : une réplique peut tenir en un seul mot (_« Bravo ! »_).
