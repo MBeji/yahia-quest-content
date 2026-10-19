@@ -27,7 +27,7 @@ Aucune étiquette inventée ; `misconceptions.json` non touché. **Ids proposés
 
 ## Doutes pour l'auditeur
 - **D-1 (19)** : la section « critères de parallélogramme » énonce comme **conditions suffisantes** (sans les démontrer) : côtés opposés parallèles ; deux côtés opposés parallèles **et** égaux ; côtés opposés égaux ; diagonales de même milieu. La fiche borne « démonstrations formelles » ⛔ ; ces critères sont pourtant ce que demandent L56 pb 1 (« أثبت بأكثر من طريقة »), L17 ex. 1 (4 côtés égaux → losange) et les corrigés T3 (« parallélogramme = deux triangles égaux ») ; le cours de 19 les utilisait déjà (construction aux arcs, losange aux diagonales). À confirmer ; sinon retirer la section, 04 q7 et q8, et le `coursePitfalls` `condition-suffisante-supposee`.
-- **D-2 (longueur)** : les cours dépassent largement 240 lignes (16 : ~490, 17 : ~590, 18 : ~700, 19 : ~700, figures comprises) ; la règle « au-delà de 240 lignes le chapitre se scinde » est une décision humaine — non tranchée ici.
+- **D-2 (longueur)** : les cours dépassent largement 240 lignes (16 : ~490, 17 : ~590, 18 : ~700, 19 : ~630, figures comprises) ; la règle « au-delà de 240 lignes le chapitre se scinde » est une décision humaine — non tranchée ici.
 - **D-3** : 04-defi du 19 déclare L56 sans `pages` (la leçon 56, ص 162, hors de la plage 27-30, 42-45, 47-49 du chapitre) ; idem L4 ex. 4 au 17.
 - **D-4** : 02 q7 (19) et 05 q3 (18) utilisent « axes de symétrie du rectangle » et « diagonale = axe du carré » comme acquis de 5ᵉ (◐), non comme notion.
 - **D-5** : « الفرجار » (corpus) / « البركار » (manuel) : usage du corpus gardé, le manuel cité une fois.
