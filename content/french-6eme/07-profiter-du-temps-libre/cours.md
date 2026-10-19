@@ -12,11 +12,11 @@ Comment le trouver à coup sûr, et peut-on le changer de place ?
 Le **complément de temps** est un mot ou un groupe de mots qui répond à la question **« quand ? »** posée après le verbe. Il dit à quel moment se passe l'action.
 :::
 
-| Phrase | Question posée | Complément de temps |
-| --- | --- | --- |
-| _Samedi dernier, Sami a joué aux échecs._ | Quand Sami a-t-il joué aux échecs ? | _Samedi dernier_ |
-| _Le soir, il a écrit à sa cousine._ | Quand a-t-il écrit ? | _Le soir_ |
-| _Il lui répondra demain._ | Quand lui répondra-t-il ? | _demain_ |
+| Phrase                                    | Question posée                      | Complément de temps |
+| ----------------------------------------- | ----------------------------------- | ------------------- |
+| _Samedi dernier, Sami a joué aux échecs._ | Quand Sami a-t-il joué aux échecs ? | _Samedi dernier_    |
+| _Le soir, il a écrit à sa cousine._       | Quand a-t-il écrit ?                | _Le soir_           |
+| _Il lui répondra demain._                 | Quand lui répondra-t-il ?           | _demain_            |
 
 Chaque ligne montre la même méthode : on pose « quand ? » au verbe, et la réponse est le complément de temps.
 
@@ -65,15 +65,15 @@ Trois verbes très utiles dans une lettre : _dire_, _lire_ et _écrire_. Leurs f
 **Dire**, **lire** et **écrire** sont trois verbes du **3ᵉ groupe**. Ils ont leurs propres formes : on les apprend. Au **présent** ils changent de forme à chaque personne ; au **passé composé** ils se forment avec l'auxiliaire **avoir** et leur **participe passé** : _dit_, _lu_, _écrit_.
 :::
 
-| | dire | lire | écrire |
-| --- | --- | --- | --- |
-| je / j' | **dis** | **lis** | **écris** |
-| tu | **dis** | **lis** | **écris** |
-| il, elle | **dit** | **lit** | **écrit** |
-| nous | **disons** | **lisons** | **écrivons** |
-| vous | **dites** | **lisez** | **écrivez** |
-| ils, elles | **disent** | **lisent** | **écrivent** |
-| passé composé | _j'ai dit_ | _j'ai lu_ | _j'ai écrit_ |
+|               | dire       | lire       | écrire       |
+| ------------- | ---------- | ---------- | ------------ |
+| je / j'       | **dis**    | **lis**    | **écris**    |
+| tu            | **dis**    | **lis**    | **écris**    |
+| il, elle      | **dit**    | **lit**    | **écrit**    |
+| nous          | **disons** | **lisons** | **écrivons** |
+| vous          | **dites**  | **lisez**  | **écrivez**  |
+| ils, elles    | **disent** | **lisent** | **écrivent** |
+| passé composé | _j'ai dit_ | _j'ai lu_  | _j'ai écrit_ |
 
 Observe : seul **dire** fait **vous dites** ; _lire_ et _écrire_ font _vous lisez_, _vous écrivez_. Et le participe passé de _dire_ et de _écrire_ finit par **-t**, celui de _lire_ par **-u**.
 
@@ -115,14 +115,14 @@ Deux temps différents dans le même message : l'un annonce ce qui va arriver, l
 Le **futur** dit ce qui se passera plus tard ; on ajoute les terminaisons **-ai, -as, -a, -ons, -ez, -ont** à l'infinitif (le **e** final de _-re_ tombe). L'**impératif** sert à donner un ordre, un conseil ou une invitation ; il n'a que trois personnes (_tu, nous, vous_) et **aucun pronom sujet**.
 :::
 
-| | dire | lire | écrire |
-| --- | --- | --- | --- |
-| futur, _je_ | je **dirai** | je **lirai** | j'**écrirai** |
-| futur, _tu_ | tu **diras** | tu **liras** | tu **écriras** |
-| futur, _ils_ | ils **diront** | ils **liront** | ils **écriront** |
-| impératif, _tu_ | **dis** | **lis** | **écris** |
-| impératif, _nous_ | **disons** | **lisons** | **écrivons** |
-| impératif, _vous_ | **dites** | **lisez** | **écrivez** |
+|                   | dire           | lire           | écrire           |
+| ----------------- | -------------- | -------------- | ---------------- |
+| futur, _je_       | je **dirai**   | je **lirai**   | j'**écrirai**    |
+| futur, _tu_       | tu **diras**   | tu **liras**   | tu **écriras**   |
+| futur, _ils_      | ils **diront** | ils **liront** | ils **écriront** |
+| impératif, _tu_   | **dis**        | **lis**        | **écris**        |
+| impératif, _nous_ | **disons**     | **lisons**     | **écrivons**     |
+| impératif, _vous_ | **dites**      | **lisez**      | **écrivez**      |
 
 Dans le tableau, tout le futur s'obtient d'une seule façon : l'infinitif, moins le **e** final, plus la terminaison. L'impératif reprend les formes du présent, sans le pronom.
 
@@ -164,14 +164,14 @@ Le même adjectif change d'écriture. Pourquoi, et comment trouver sa forme sans
 L'**adjectif qualificatif** s'accorde en **genre** et en **nombre** avec le nom qu'il accompagne. Pour le **féminin**, la plupart des adjectifs prennent un **e**. Quelques-uns changent de forme ; d'autres **doublent la consonne** finale avant le **e**.
 :::
 
-| Masculin | Féminin | Masculin pluriel | Féminin pluriel |
-| --- | --- | --- | --- |
-| neuf | neu**ve** | neufs | neu**ves** |
-| beau | **belle** | beau**x** | **belles** |
-| vieux | **vieille** | vieux | **vieilles** |
-| bon | bon**ne** | bons | bon**nes** |
-| gentil | genti**lle** | gentils | genti**lles** |
-| gros | gros**se** | gros | gros**ses** |
+| Masculin | Féminin      | Masculin pluriel | Féminin pluriel |
+| -------- | ------------ | ---------------- | --------------- |
+| neuf     | neu**ve**    | neufs            | neu**ves**      |
+| beau     | **belle**    | beau**x**        | **belles**      |
+| vieux    | **vieille**  | vieux            | **vieilles**    |
+| bon      | bon**ne**    | bons             | bon**nes**      |
+| gentil   | genti**lle** | gentils          | genti**lles**   |
+| gros     | gros**se**   | gros             | gros**ses**     |
 
 La colonne du féminin montre trois façons de changer : une nouvelle terminaison (_neuve_, _belle_, _vieille_), une consonne doublée (_bonne_, _grosse_), ou _-ille_ pour _gentil_.
 
@@ -226,10 +226,12 @@ Pour comprendre une lettre, par où commencer ? Quelles questions poser au texte
 
 ::: methode
 Pour lire une lettre :
+
 1. **Le haut de la lettre** donne le lieu et la date (_d'où ?_, _quand ?_) et la formule d'interpellation (_à qui ?_).
 2. **La signature** dit _qui écrit_.
 3. **Chaque paragraphe** a une idée : relève-la en une phrase.
 4. **Les mots-outils** (_mais, pourtant, cependant_) annoncent une opposition : ce qui suit contredit ou corrige ce qui précède.
+
 :::
 
 ::: exemple répondre aux questions sur la lettre de Rania
@@ -271,13 +273,13 @@ Une lettre a une forme précise. Quelles sont ses parties et dans quel ordre von
 Une **lettre** à un ami ou à un parent comporte, dans cet ordre : le **lieu et la date**, la **formule d'interpellation**, le **corps de la lettre** (en paragraphes), la **formule d'adieu** et la **signature**.
 :::
 
-| Partie | Où ? | Exemple |
-| --- | --- | --- |
-| Lieu et date | en haut, à droite | _Tunis, le 3 mai_ |
-| Formule d'interpellation | à gauche, suivie d'une virgule | _Cher Yassine,_ · _Chers parents,_ |
-| Corps de la lettre | en paragraphes | je me présente, je parle de mes loisirs, je pose une question |
-| Formule d'adieu | après le corps | _Je t'embrasse très fort._ · _À bientôt._ |
-| Signature | tout en bas | _Sami_ |
+| Partie                   | Où ?                           | Exemple                                                       |
+| ------------------------ | ------------------------------ | ------------------------------------------------------------- |
+| Lieu et date             | en haut, à droite              | _Tunis, le 3 mai_                                             |
+| Formule d'interpellation | à gauche, suivie d'une virgule | _Cher Yassine,_ · _Chers parents,_                            |
+| Corps de la lettre       | en paragraphes                 | je me présente, je parle de mes loisirs, je pose une question |
+| Formule d'adieu          | après le corps                 | _Je t'embrasse très fort._ · _À bientôt._                     |
+| Signature                | tout en bas                    | _Sami_                                                        |
 
 ::: exemple remettre en ordre les morceaux d'une lettre de Sami
 
@@ -323,12 +325,12 @@ Comment choisir le bon mot, et comment trouver un mot de même sens ou de sens c
 Des mots qui parlent du même sujet forment un **champ lexical**. Un **synonyme** est un mot de même sens (_se divertir_ = _se distraire_). Un **contraire** est un mot de sens opposé (_partir_ ≠ _rester_).
 :::
 
-| Champ lexical | Exemples |
-| --- | --- |
-| Les loisirs d'intérieur | les échecs, les cartes, les devinettes |
-| Les loisirs d'extérieur | le ping-pong, le ballon, le cache-cache |
-| Les sorties | le musée, le cinéma, le théâtre |
-| La correspondance | la lettre, l'enveloppe, l'expéditeur, le destinataire, le facteur |
+| Champ lexical           | Exemples                                                          |
+| ----------------------- | ----------------------------------------------------------------- |
+| Les loisirs d'intérieur | les échecs, les cartes, les devinettes                            |
+| Les loisirs d'extérieur | le ping-pong, le ballon, le cache-cache                           |
+| Les sorties             | le musée, le cinéma, le théâtre                                   |
+| La correspondance       | la lettre, l'enveloppe, l'expéditeur, le destinataire, le facteur |
 
 Chaque ligne regroupe des mots qui vont ensemble : c'est le thème qui les relie.
 
@@ -370,12 +372,12 @@ Les deux sont des textes utiles, mais ils ne servent pas à la même chose. Comm
 Un **texte documentaire** informe : il donne des renseignements sur un sujet, en parlant au présent, souvent sous des titres de rubriques. Un **texte injonctif** (« pour agir ») dit **comment faire** : il donne des consignes, à l'infinitif ou à l'impératif, en étapes numérotées, avec parfois une liste de matériel.
 :::
 
-| | Texte documentaire | Texte injonctif |
-| --- | --- | --- |
-| Il sert à | s'informer | agir, fabriquer, jouer |
-| Verbes | présent (_le sculpteur utilise…_) | infinitif ou impératif (_choisis, demande…_) |
-| Forme | rubriques, paragraphes | étapes numérotées, matériel |
-| Exemple | _Le sculpteur utilise un ciseau._ | _1. Pense à un nombre._ |
+|           | Texte documentaire                | Texte injonctif                              |
+| --------- | --------------------------------- | -------------------------------------------- |
+| Il sert à | s'informer                        | agir, fabriquer, jouer                       |
+| Verbes    | présent (_le sculpteur utilise…_) | infinitif ou impératif (_choisis, demande…_) |
+| Forme     | rubriques, paragraphes            | étapes numérotées, matériel                  |
+| Exemple   | _Le sculpteur utilise un ciseau._ | _1. Pense à un nombre._                      |
 
 ::: exemple reconnaître le texte _« Le nombre pensé »_ : « 1. Demande à un ami de penser à un nombre de 1 à 15. 2. Montre-lui quatre listes A, B, C, D. 3. Il te dit dans quelles listes son nombre se trouve. 4. Additionne les premiers nombres de ces listes. »
 
@@ -387,12 +389,12 @@ Un **texte documentaire** informe : il donne des renseignements sur un sujet, en
 
 Voici les quatre listes du tour :
 
-| Liste | Nombres |
-| --- | --- |
-| A | 1, 3, 5, 7, 9, 11, 13, 15 |
-| B | 2, 3, 6, 7, 10, 11, 14, 15 |
-| C | 4, 5, 6, 7, 12, 13, 14, 15 |
-| D | 8, 9, 10, 11, 12, 13, 14, 15 |
+| Liste | Nombres                      |
+| ----- | ---------------------------- |
+| A     | 1, 3, 5, 7, 9, 11, 13, 15    |
+| B     | 2, 3, 6, 7, 10, 11, 14, 15   |
+| C     | 4, 5, 6, 7, 12, 13, 14, 15   |
+| D     | 8, 9, 10, 11, 12, 13, 14, 15 |
 
 Chaque liste commence par un nombre : 1, 2, 4 et 8. Ton ami pense à 11 ; il le trouve dans A, B et D, mais pas dans C. Tu additionnes les premiers nombres de ces trois listes : 1 + 2 + 8 = 11.
 

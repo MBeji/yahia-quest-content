@@ -12,11 +12,11 @@ Comment ne pas les mélanger ?
 Le **complément de manière** est un mot ou un groupe de mots qui répond à la question **« comment ? »** posée après le verbe. Il dit de quelle façon se passe l'action, ou avec quel moyen. Il est souvent introduit par **avec, sans, en, par, de, à**.
 :::
 
-| Phrase | Question | Complément de manière |
-| --- | --- | --- |
-| _Les élèves entrent sans faire de bruit._ | Comment entrent-ils ? | _sans faire de bruit_ |
-| _Yasmine regarde le paysage avec attention._ | Comment le regarde-t-elle ? | _avec attention_ |
-| _Nous voyageons en train._ | Comment voyageons-nous ? | _en train_ |
+| Phrase                                       | Question                    | Complément de manière |
+| -------------------------------------------- | --------------------------- | --------------------- |
+| _Les élèves entrent sans faire de bruit._    | Comment entrent-ils ?       | _sans faire de bruit_ |
+| _Yasmine regarde le paysage avec attention._ | Comment le regarde-t-elle ? | _avec attention_      |
+| _Nous voyageons en train._                   | Comment voyageons-nous ?    | _en train_            |
 
 Chaque ligne pose « comment ? » au verbe : la réponse est le complément de manière.
 
@@ -41,7 +41,7 @@ Dans _« Hier, les touristes ont visité le musée avec curiosité. »_, quel es
 
 ---
 
-**Avec curiosité** : il répond à _comment ?_ _Hier_ répond à _quand ?_ (temps). Le musée n'est pas un complément qu'on peut supprimer sans changer le sens de _ont visité_.
+**Avec curiosité** : il répond à _comment ?_ _Hier_ répond à _quand ?_ (temps). _Le musée_ ne répond pas à _comment ?_ : il complète le verbe _ont visité_.
 :::
 
 ::: retenir
@@ -58,13 +58,13 @@ _Vouloir_ et _pouvoir_ reviennent sans cesse quand on parle de projets et de voy
 **Vouloir** et **pouvoir** sont deux verbes du 3ᵉ groupe. Ils se conjuguent au présent avec des terminaisons particulières, et on les fait suivre d'un autre verbe à l'**infinitif** (_je veux partir_, _tu peux venir_).
 :::
 
-| | vouloir | pouvoir |
-| --- | --- | --- |
-| je | **veux** | **peux** |
-| tu | **veux** | **peux** |
-| il, elle | **veut** | **peut** |
-| nous | **voulons** | **pouvons** |
-| vous | **voulez** | **pouvez** |
+|            | vouloir     | pouvoir     |
+| ---------- | ----------- | ----------- |
+| je         | **veux**    | **peux**    |
+| tu         | **veux**    | **peux**    |
+| il, elle   | **veut**    | **peut**    |
+| nous       | **voulons** | **pouvons** |
+| vous       | **voulez**  | **pouvez**  |
 | ils, elles | **veulent** | **peuvent** |
 
 Dans le tableau, _je_ et _tu_ finissent par **x**, _il_ et _elle_ par **t**. Au pluriel, _ils_ et _elles_ changent le radical : _veulent_, _peuvent_.
@@ -78,7 +78,7 @@ Dans le tableau, _je_ et _tu_ finissent par **x**, _il_ et _elle_ par **t**. Au 
 :::
 
 ::: piege Erreur fréquente
-_« Je peut admirer la vue. »_ ✗ _« Il veux voir les boutiques. »_ ✗ On met le **t** avec _je_ et le **x** avec _il_, comme si les deux se confondaient. ✓ _je peux_, _tu veux_ : **x** ; _il peut_, _elle veut_ : **t**. Quand tu hésites, remplace par _nous_ : _nous pouvons_ ne change rien à la fin du radical, mais te rappelle qu'il s'agit bien de pouvoir.
+_« Je peut admirer la vue. »_ ✗ _« Il veux voir les boutiques. »_ ✗ On met le **t** avec _je_ et le **x** avec _il_, comme si les deux se confondaient. ✓ _je peux_, _tu veux_ : **x** ; _il peut_, _elle veut_ : **t**. Retiens que _je_ et _tu_ ont toujours la même forme au présent.
 :::
 
 ::: propriete
@@ -99,7 +99,7 @@ Vouloir et pouvoir : _je veux, tu veux, il veut_ ; _je peux, tu peux, il peut_ ;
 
 ## ✈️ Le participe passé avec être
 
-Lucie est allée en Corse chez ses grands-parents. Ses cousins sont partis avec elle, et sa cousine Inès est arrivée un peu plus tard. Dans ces trois phrases, le dernier mot change de forme.
+Sarra est allée en Corse chez ses grands-parents. Ses cousins sont partis avec elle, et sa cousine Inès est arrivée un peu plus tard. Dans ces trois phrases, le dernier mot change de forme.
 
 Pourquoi _allée_, _partis_, _arrivée_, et comment savoir comment l'écrire ?
 
@@ -107,34 +107,34 @@ Pourquoi _allée_, _partis_, _arrivée_, et comment savoir comment l'écrire ?
 Le **passé composé** se forme avec un **auxiliaire** (_être_ ou _avoir_) et un **participe passé**. Avec le verbe **être** (_suis, es, est, sommes, êtes, sont_), le participe passé s'accorde en **genre** et en **nombre** avec le **sujet**.
 :::
 
-| Sujet | Participe | Phrase |
-| --- | --- | --- |
-| _Lucie_ (féminin singulier) | allée | _Lucie est allée en Corse._ |
-| _Karim_ (masculin singulier) | parti | _Karim est parti hier._ |
-| _Les cousins_ (masculin pluriel) | partis | _Les cousins sont partis._ |
-| _Les filles_ (féminin pluriel) | arrivées | _Les filles sont arrivées._ |
+| Sujet                            | Participe | Phrase                      |
+| -------------------------------- | --------- | --------------------------- |
+| _Sarra_ (féminin singulier)      | allée     | _Sarra est allée en Corse._ |
+| _Karim_ (masculin singulier)     | parti     | _Karim est parti hier._     |
+| _Les cousins_ (masculin pluriel) | partis    | _Les cousins sont partis._  |
+| _Les filles_ (féminin pluriel)   | arrivées  | _Les filles sont arrivées._ |
 
 On retrouve dans la dernière colonne la même règle : le participe prend **e** pour le féminin, **s** pour le pluriel, **es** pour le féminin pluriel.
 
-::: exemple écrire le participe de _« Les hirondelles sont (revenir) des pays chauds. »_
+::: exemple écrire le participe de _« Les cigognes sont (arriver) en mars. »_
 
 1. **Repère l'auxiliaire** : _sont_ ← c'est le verbe **être**, donc le participe s'accorde.
-2. **Cherche le sujet** : _les hirondelles_ ← qui revient ? les hirondelles : féminin pluriel.
-3. **Écris le participe** : _revenu_ au masculin singulier, puis on ajoute **e** et **s** ← _revenues_.
-4. **Relis** : _Les hirondelles sont revenues des pays chauds._
+2. **Cherche le sujet** : _les cigognes_ ← qui arrive ? les cigognes : féminin pluriel.
+3. **Écris le participe** : _arrivé_ au masculin singulier, puis on ajoute **e** et **s** ← _arrivées_.
+4. **Relis** : _Les cigognes sont arrivées en mars._
 
 :::
 
 ::: piege Erreur fréquente
-_« Les hirondelles sont revenu. »_ ✗ _« Lucie est allé en Corse. »_ ✗ On écrit le participe sans l'accorder avec le sujet. ✓ Avec _être_, le participe s'accorde toujours : _revenues_, _allée_.
+_« Les cigognes sont arrivé en mars. »_ ✗ _« Sarra est allé en Corse. »_ ✗ On écrit le participe sans l'accorder avec le sujet. ✓ Avec _être_, le participe s'accorde toujours : _arrivées_, _allée_.
 :::
 
 ::: piege Erreur fréquente
-_« Lucie a allé en Corse. »_ ✗ On se trompe d'auxiliaire. ✓ _Aller_, _partir_, _arriver_, _sortir_, _tomber_, _rester_ et _revenir_ se conjuguent avec **être** : _elle est allée_.
+_« Sarra a allé en Corse. »_ ✗ On se trompe d'auxiliaire. ✓ _Aller_, _partir_, _arriver_, _sortir_, _tomber_, _rester_ et _revenir_ se conjuguent avec **être** : _elle est allée_.
 :::
 
 ::: propriete
-Pour choisir entre _é_ et _er_ à la fin d'un verbe, remplace-le par _vendu_ ou _vendre_ : si _vendu_ va, c'est le participe en **-é** (_elle est arrivée_, comme _elle est vendue_) ; si _vendre_ va, c'est l'infinitif en **-er**. Cas-limite : avec _avoir_ (_a, ont_), le participe ne s'accorde pas avec le sujet (_Lucie a marché_) : dans ce chapitre, on ne fait l'accord avec le sujet qu'avec _être_.
+Pour choisir entre _é_ et _er_ à la fin d'un verbe, remplace-le par _vendu_ ou _vendre_ : si _vendu_ va, c'est le participe en **-é** (_elle est arrivée_, comme _elle est vendue_) ; si _vendre_ va, c'est l'infinitif en **-er**. Cas-limite : avec _avoir_ (_a, ont_), le participe ne s'accorde pas avec le sujet (_Sarra a marché_) : dans ce chapitre, on ne fait l'accord avec le sujet qu'avec _être_.
 :::
 
 ::: verifie
@@ -151,20 +151,20 @@ Avec le verbe être, le participe passé s'accorde en genre et en nombre avec le
 
 ## 🌹 Le participe passé employé seul
 
-Dans le jardin, Lucie a cueilli des roses. Ces roses sont mouillées par la rosée. Les chaussures abîmées de son grand-père sèchent au soleil.
+Dans le verger, Sarra pose dans un panier des pêches cueillies ce matin. Les chaussures abîmées de son grand-père sèchent au soleil.
 
-Ici, _mouillées_ et _abîmées_ ne sont pas précédés de _avoir_ ni de _être_ pour former un temps. Que sont-ils alors, et comment les écrire ?
+Ici, _cueillies_ et _abîmées_ ne sont pas précédés de _avoir_ ni de _être_ pour former un temps. Que sont-ils alors, et comment les écrire ?
 
 ::: definition
 Un **participe passé employé seul** (sans auxiliaire pour former un temps) joue le rôle d'un **adjectif** : il décrit un nom et s'**accorde** avec lui, en **genre** et en **nombre**.
 :::
 
-| Nom | Participe employé seul | Groupe |
-| --- | --- | --- |
-| _une rose_ | mouillée | _une rose mouillée_ |
-| _des roses_ | mouillées | _des roses mouillées_ |
-| _un chapeau_ | abîmé | _un chapeau abîmé_ |
-| _des chaussures_ | abîmées | _des chaussures abîmées_ |
+| Nom              | Participe employé seul | Groupe                   |
+| ---------------- | ---------------------- | ------------------------ |
+| _une pêche_      | cueillie               | _une pêche cueillie_     |
+| _des pêches_     | cueillies              | _des pêches cueillies_   |
+| _un chapeau_     | abîmé                  | _un chapeau abîmé_       |
+| _des chaussures_ | abîmées                | _des chaussures abîmées_ |
 
 Dans la dernière colonne, le participe se comporte comme un adjectif ordinaire : on peut le remplacer par _jolies_ ou _vieux_.
 
@@ -177,11 +177,11 @@ Dans la dernière colonne, le participe se comporte comme un adjectif ordinaire 
 :::
 
 ::: piege Erreur fréquente
-_« des roses mouillé par la rosée »_ ✗ On voit un verbe et on oublie qu'ici le participe décrit le nom. ✓ _des roses mouillées_ : le participe est employé seul, il s'accorde avec _roses_.
+_« des pêches cueilli ce matin »_ ✗ On voit un verbe et on oublie qu'ici le participe décrit le nom. ✓ _des pêches cueillies_ : le participe est employé seul, il s'accorde avec _pêches_.
 :::
 
 ::: propriete
-Repère le participe employé seul à deux indices : il n'y a pas d'auxiliaire juste avant lui, et il peut être remplacé par un adjectif (_des roses fraîches_). Cas-limite : _fermé_ dans _une porte fermée_ s'accorde avec _porte_, mais dans _Il a fermé la porte_ il est précédé de _a_, donc il ne s'accorde pas avec le sujet.
+Repère le participe employé seul à deux indices : il n'y a pas d'auxiliaire juste avant lui, et il peut être remplacé par un adjectif (_des pêches mûres_). Cas-limite : _fermé_ dans _une porte fermée_ s'accorde avec _porte_, mais dans _Il a fermé la porte_ il est précédé de _a_, donc il ne s'accorde pas avec le sujet.
 :::
 
 ::: verifie
@@ -193,7 +193,7 @@ _Des lettres **écrites** à la main_ : participe employé seul, féminin plurie
 :::
 
 ::: retenir
-Employé seul, le participe passé est un adjectif : il s'accorde avec le nom qu'il décrit (_des roses mouillées_).
+Employé seul, le participe passé est un adjectif : il s'accorde avec le nom qu'il décrit (_des pêches cueillies_).
 :::
 
 ## 🏞️ Le passage descriptif dans un récit
@@ -206,12 +206,12 @@ Dans un récit, on raconte des actions, mais parfois on s'arrête pour montrer u
 Un **récit** raconte des actions qui s'enchaînent. Un **passage descriptif** s'arrête sur un lieu, un objet ou un personnage et dit **comment il est** : sa taille, ses couleurs, ce qu'on y voit ou entend. L'histoire n'avance pas pendant la description.
 :::
 
-| Phrase | Ce qu'elle fait | Type |
-| --- | --- | --- |
-| _Nous arrivons à Tozeur._ | une action | narration |
-| _De grands palmiers entourent de petits jardins verts._ | montre le lieu | description |
-| _L'air est frais et doux._ | dit comment est l'air | description |
-| _Mon père pose sa valise._ | une action | narration |
+| Phrase                                                  | Ce qu'elle fait       | Type        |
+| ------------------------------------------------------- | --------------------- | ----------- |
+| _Nous arrivons à Tozeur._                               | une action            | narration   |
+| _De grands palmiers entourent de petits jardins verts._ | montre le lieu        | description |
+| _L'air est frais et doux._                              | dit comment est l'air | description |
+| _Mon père pose sa valise._                              | une action            | narration   |
 
 Le tableau sépare ce qui fait avancer l'histoire (narration) de ce qui fait voir (description).
 
@@ -231,7 +231,7 @@ Prendre _« Mon père s'approche de la fontaine »_ pour une phrase qui décrit 
 :::
 
 ::: propriete
-Dans une description, on utilise des **adjectifs** (_grands, verts, frais_), des **compléments de lieu** (_au loin, au pied de la colline_) et souvent le verbe _être_ ou des verbes d'état. Cas-limite : un verbe d'action peut décrire quand il montre un état (_les palmiers entourent les jardins_). Pour décider, demande-toi : *est-ce que l'histoire avance ?* Si non, c'est une description.
+Dans une description, on utilise des **adjectifs** (_grands, verts, frais_), des **compléments de lieu** (_au loin, au pied de la colline_) et souvent le verbe _être_ ou des verbes d'état. Cas-limite : un verbe d'action peut décrire quand il montre un état (_les palmiers entourent les jardins_). Pour décider, demande-toi : _est-ce que l'histoire avance ?_ Si non, c'est une description.
 :::
 
 ::: verifie
@@ -256,11 +256,11 @@ Dans ce petit récit, plusieurs mots désignent les mêmes personnes. Comment s'
 Les **substituts** sont des mots qui remplacent un nom déjà employé pour éviter de le répéter : un **pronom** (_il, elle, ils, elles_) ou un autre groupe de mots qui désigne la même personne ou la même chose (_les enfants_ pour _les élèves_, _cet homme_ pour _le gardien_). Une **bande dessinée** raconte en images : chaque case est une **vignette**, les paroles sont dans des **bulles**, et un bruit s'écrit en **onomatopée** (_PAN !_).
 :::
 
-| Mot de départ | Substituts possibles |
-| --- | --- |
-| _le gardien du phare_ | _il_ · _cet homme_ |
-| _les élèves_ | _ils_ · _les enfants_ |
-| _la lampe_ | _elle_ · _cette grande lumière_ |
+| Mot de départ         | Substituts possibles            |
+| --------------------- | ------------------------------- |
+| _le gardien du phare_ | _il_ · _cet homme_              |
+| _les élèves_          | _ils_ · _les enfants_           |
+| _la lampe_            | _elle_ · _cette grande lumière_ |
 
 Chaque substitut garde le **genre** et le **nombre** du mot qu'il remplace, et on voit tout de suite de qui on parle.
 
@@ -273,7 +273,7 @@ Chaque substitut garde le **genre** et le **nombre** du mot qu'il remplace, et o
 :::
 
 ::: piege Erreur fréquente
-_« Les phoques arrivent au trou. Elle prennent une grande inspiration. »_ ✗ Le substitut ne correspond pas au nom qu'il remplace. ✓ _Phoques_ est masculin pluriel : on reprend avec _ils_. Avant de choisir un pronom, cherche le genre et le nombre du nom.
+_« Les mouettes arrivent près du port. Il cherchent du poisson. »_ ✗ Le substitut ne correspond pas au nom qu'il remplace. ✓ _Mouettes_ est féminin pluriel : on reprend avec _elles_. Avant de choisir un pronom, cherche le genre et le nombre du nom.
 :::
 
 ::: propriete
@@ -281,11 +281,11 @@ Dans une BD, ce qui est dit est dans une **bulle** rattachée au personnage qui 
 :::
 
 ::: verifie
-Dans _« Nour tend une carte à sa mère. Elle la remercie. »_, que désigne _elle_ ?
+Dans _« Les enfants regardent le gardien. Il leur sourit. »_, que désigne _il_ ?
 
 ---
 
-**La mère de Nour** : c'est elle qui reçoit la carte et qui remercie. _Nour_ est la personne qui donne : on ne peut pas la remercier de ce qu'elle donne elle-même. Si le doute était possible, on écrirait _sa mère_ à la place du pronom.
+**Le gardien** : _il_ est masculin singulier, donc il ne peut pas remplacer _les enfants_ (pluriel). C'est le gardien qui sourit aux enfants.
 :::
 
 ::: retenir
@@ -299,44 +299,44 @@ Avant de partir, Yasmine consulte les horaires : l'avion décolle à midi, le ba
 Comment les retenir et ne pas les confondre ?
 
 ::: definition
-**Voyager**, c'est se déplacer hors de sa région ou de son pays pour un certain temps. **Embarquer**, c'est monter à bord d'un bateau, d'un avion ou d'une voiture ; son contraire est **débarquer**. Les mots d'un même sujet forment un champ lexical ; les mots d'une même **famille** partagent un radical (_course, coureur, parcourir, accourir_ viennent de _courir_).
+**Voyager**, c'est aller loin de chez soi, dans une autre région ou un autre pays, pour un moment. **Embarquer**, c'est monter dans un bateau, un avion ou un autre véhicule pour partir. Les mots d'un même thème forment un champ lexical ; les mots d'une même **famille** partagent un radical (_voyage, voyageur, voyager_).
 :::
 
-| Mot | Contraire |
-| --- | --- |
-| partir | arriver |
-| décoller | atterrir |
-| embarquer | débarquer |
-| se quitter | se retrouver |
+| Mot        | Contraire     |
+| ---------- | ------------- |
+| entrer     | sortir        |
+| aller      | revenir       |
+| monter     | descendre     |
+| s'éloigner | se rapprocher |
 
-Chaque ligne oppose deux actions : l'une commence un trajet, l'autre le termine.
+Chaque ligne oppose deux actions de sens contraire.
 
-::: exemple trouver l'intrus dans _« la course, le coureur, parcourir, le courage, courir »_
+::: exemple trouver l'intrus dans _« le voyage, le voyageur, voyager, le voyou »_
 
-1. **Cherche le radical commun** : _cour-_ ← il vient du verbe _courir_.
-2. **Teste chaque mot** : _la course_ (action de courir), _le coureur_ (celui qui court), _parcourir_ (courir à travers) ← ils parlent tous de courir.
-3. **Repère l'intrus** : _le courage_ ← même début, mais il vient d'un autre mot et parle de la force d'âme, pas de courir.
+1. **Cherche le radical commun** : _voyag-_ ← il vient du verbe _voyager_.
+2. **Teste chaque mot** : _le voyage_ (le déplacement), _le voyageur_ (celui qui voyage) ← ils parlent tous de voyager.
+3. **Repère l'intrus** : _le voyou_ ← même début, mais il nomme un garnement et n'a aucun lien avec le voyage.
 
 :::
 
 ::: piege Erreur fréquente
-Penser que _décoller_ veut dire _partir_ et que _atterrir_ veut dire _partir_ aussi, ou choisir le contraire quand la question demande un synonyme. ✗ ✓ Un **synonyme** dit la même chose (_se déplacer_ = _voyager_) ; un **contraire** dit l'inverse (_décoller_ ≠ _atterrir_). Relis le mot de la consigne.
+_« Un synonyme de monter est descendre. »_ ✗ On choisit le contraire quand la consigne demande un mot de même sens. ✓ Un **synonyme** dit la même chose (_aller loin_ ≈ _voyager_) ; un **contraire** dit l'inverse (_monter_ ≠ _descendre_). Relis le mot de la consigne.
 :::
 
 ::: propriete
-Plusieurs mots disent « se déplacer » avec des nuances : _un parcours, une traversée, une croisière, une ascension, un circuit_. On compare aussi pour imaginer un déplacement : _foncer comme un taureau, détaler comme un lapin, se traîner comme un escargot, filer comme une gazelle_. Cas-limite : un proverbe n'est pas à prendre au pied de la lettre : _« Tous les chemins mènent à Rome »_ veut dire qu'il y a plusieurs moyens d'atteindre un même but.
+Plusieurs mots disent « se déplacer » avec des nuances : _un parcours, une traversée, une croisière, une ascension, un circuit_. On compare aussi pour imaginer un déplacement : _foncer comme un taureau, détaler comme un lapin, se traîner comme un escargot, filer comme une gazelle_. Cas-limite : un proverbe n'est pas à prendre au pied de la lettre : _« Petit à petit, l'oiseau fait son nid »_ ne parle pas que d'oiseaux, il veut dire qu'avec de la patience on réussit.
 :::
 
 ::: verifie
-Donne le contraire de _embarquer_ et un mot de la famille de _courir_.
+Donne le contraire de _s'éloigner_ et un mot de la famille de _voyager_.
 
 ---
 
-Le contraire d'_embarquer_ est **débarquer** (descendre du bateau ou de l'avion). Un mot de la famille de _courir_ : **la course**, **le coureur**, **parcourir** ou **accourir** (pas _courage_).
+Le contraire de _s'éloigner_ est **se rapprocher**. Un mot de la famille de _voyager_ : **le voyage** ou **le voyageur** (pas _voyou_).
 :::
 
 ::: retenir
-Embarquer ≠ débarquer, partir ≠ arriver ; les mots d'une même famille partagent un radical (_courir_, _course_, _coureur_).
+Un synonyme dit la même chose, un contraire dit l'inverse (_entrer_ ≠ _sortir_) ; les mots d'une même famille partagent un radical (_voyage_, _voyageur_).
 :::
 
 ## 🎉 Lire pour s'informer et lire pour agir
@@ -349,12 +349,12 @@ Quel document l'informe ? Lequel lui dit quoi faire ? Et où cherche-t-on une in
 Un **texte documentaire** donne des informations sur un sujet. Il est découpé en **rubriques** avec un titre, et ses verbes sont au présent. Un **texte injonctif** dit **comment faire** : il liste le **matériel**, donne des **étapes** numérotées et emploie l'impératif ou l'infinitif.
 :::
 
-| | Texte documentaire | Texte injonctif |
-| --- | --- | --- |
-| But | s'informer | fabriquer, jouer |
-| Verbes | présent | impératif ou infinitif |
-| Forme | rubriques avec titres | matériel et étapes |
-| Exemple | _Fêtes du monde_ | _Fabriquer une maquette_ |
+|         | Texte documentaire    | Texte injonctif          |
+| ------- | --------------------- | ------------------------ |
+| But     | s'informer            | fabriquer, jouer         |
+| Verbes  | présent               | impératif ou infinitif   |
+| Forme   | rubriques avec titres | matériel et étapes       |
+| Exemple | _Fêtes du monde_      | _Fabriquer une maquette_ |
 
 Chaque colonne a ses marques : le titre des rubriques pour s'informer, les étapes numérotées pour agir.
 
@@ -365,17 +365,17 @@ _« **Le Hanami au Japon** : au printemps, les Japonais regardent les cerisiers 
 Question : _quelle fête se célèbre avec des masques ?_
 
 1. **Lis les titres de rubriques** : _Le Hanami_, _Holi_, _Le carnaval de Venise_ ← chacun annonce un sujet.
-2. **Repère le mot clé** : _masques_ ← il ressemble à un seul titre.
+2. **Repère le mot clé** : _masques_ ← il n'apparaît que dans une rubrique.
 3. **Lis la rubrique correspondante** : _en février, les gens portent des masques et des costumes_ ← la réponse est **le carnaval de Venise**.
 
 :::
 
 ::: piege Erreur fréquente
-Classer _« Fabriquer une maquette de la Tour Eiffel »_ parmi les récits, ou un texte sur les fêtes du monde parmi les textes qui disent comment faire. ✗ ✓ Un texte avec une liste de matériel et des étapes numérotées est **injonctif** ; un texte organisé en rubriques qui apprend quelque chose est **documentaire**.
+Classer _« Fabriquer une maquette de la Tour Eiffel »_ parmi les récits, ou un texte sur les fêtes du monde parmi ceux qui disent comment faire. ✗ ✓ Un texte avec une liste de matériel et des étapes numérotées est **injonctif** ; un texte organisé en rubriques qui apprend quelque chose est **documentaire**.
 :::
 
 ::: propriete
-Pour retrouver une information, lis d'abord les titres, puis cherche le mot clé de la question. Pour réussir une notice, lis tout avant de commencer, puis suis les étapes dans l'ordre. Cas-limite : un texte peut mélanger information et consigne (par exemple une notice qui explique d'abord ce qu'est la Tour Eiffel). Demande-toi alors : *ce passage m'apprend-il quelque chose ou me dit-il quoi faire ?*
+Pour retrouver une information, lis d'abord les titres, puis cherche le mot clé de la question. Pour réussir une notice, lis tout avant de commencer, puis suis les étapes dans l'ordre. Cas-limite : un texte peut mélanger information et consigne (par exemple une notice qui explique d'abord ce qu'est la Tour Eiffel). Demande-toi alors : _ce passage m'apprend-il quelque chose ou me dit-il quoi faire ?_
 :::
 
 ::: verifie
