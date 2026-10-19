@@ -80,3 +80,16 @@ que Q-2 n'est pas arbitrée, pas de T2 : le site ré-héberge des œuvres d'ense
   ferme ces chemins.
 - **Tier** inchangé : **T2′** (salle blanche).
 - Échantillon et empreintes : [`web-6eme-base-french`](../web-6eme-base-french/fiche.md).
+
+## 7. Primaire — 6ᵉ maths (ajout du 2026-10-19, gisement maths 6ᵉ)
+
+- **Rangement.** Pas de rubrique « Devoirs » : les maths de 6ᵉ rangent leurs épreuves sous
+  `primaire/السـ6ـنة/الـريـاضـيـات/تقييمات/`, une page par trimestre
+  (`تقييمات-الثلاثي-عـ<n>ـدد.html`, n = 1 à 3 ; 25, 43 et 20 PDF au 2026-10-19). Ce sont des
+  « modèles » numérotés, presque tous anonymes, rédigés en arabe, datés de 2015 à 2020 quand ils le
+  sont. Les dossiers voisins `إختبار-تجريبي` (concours blancs) et `مناظرات` (sujets officiels
+  rehébergés) ne servent pas : les sujets se prennent à la source (`6web.edunet.tn`).
+- **robots.txt** relu le 2026-10-19 : `Allow: /` ; `Allow: */Doc/*/Devoirs/*` ; aucune règle ne
+  ferme ces chemins.
+- **Tier** inchangé : **T2′** (salle blanche).
+- Échantillon et empreintes : [`web-6eme-base-math`](../web-6eme-base-math/fiche.md).
