@@ -904,3 +904,80 @@ OS : « Conjuguer les verbes être et avoir au passé composé et au futur ».
 - **Ex 2** [B] — « Transforme le verbe avoir du passé composé au futur. » — 6 phrases. ex : « Il a eu faim. » ; « Nous avons en [sic « eu »] chaud. »
 - **Ex 3** [B] — « Transforme le verbe être du futur [sic, « au » manquant] passé composé. » — 6 phrases. ex : « Il sera prêt. » ; « Nous serons généreuses. »
 
+### B 4-2 (p.151) — Conjugaison, fiche de base
+OS idem (« Conjuguer les verbes être et avoir au passé composé et au futur »).
+- **Ex 4** [B] — « Souligne les verbes conjugués dans les phrases suivantes puis indique leur infinitif et le temps utilisé. [sic « tempss »] » — tableau Phrases / Infinitif / Temps ; 8 phrases. ex : « Le secouriste a été courageux. » ; « Vous aurez bientôt de mes nouvelles. » (aussi « qui sera le vainqueur de ce tournoi? », « On n'a pas eu peur de ce chien. »).
+- **Ex 5** [B] — « Relie ce qui va ensemble et indique le temps utilisé dans la case. » — 7 débuts × 7 fins. ex : « Cédric sera content → lorsqu'il changera de costume. » ; « Tu auras du mal → à soulever cette grosse pierre. »
+
+### B 4-3 (p.152) — Conjugaison, fiche de base
+- **Ex 6** [B] — « Complète les phrases par le verbe avoir : a- au passé composé / b- au futur » — 7 phrases (4 + 3). ex : « Tu … douze ans hier. Bon anniversaire ! » ; « Bientôt, j'… une récompense pour mon dossier sur "la solidarité". » [sic : 3ᵉ item de b = « Vous n'… pas dû faire de la peine à cet enfant. » : un passé composé dans la série « futur »].
+- **Ex 7** [B] — « Complète les phrases par le verbe être : a- au passé composé / b- au futur » — 6 phrases. ex : « Nous n'… pas … bien sages pendant la projection du film. » ; « Quand vous … grands, vous passerez votre permis de conduire. »
+- **Ex 8** [B] — « Choisis le verbe être ou avoir pour compléter les phrases. Choisis le temps qui convient. » — 6 phrases. ex : « Hier soir, j'… surprise par la pluie, j'… du mal à trouver un taxi. » ; « Est-ce que tu … du chagrin, quand tes voisins déménageront. »
+
+### B 4-4 (p.153) — Conjugaison, fiche de base (vision)
+- **Ex 9a** [B] — « Transforme les phrases comme dans les exemples. » — 2 colonnes d'exemples (ils ont eu une récompense. → ils ont été récompensé[s] ; J'ai été surpris. → J'ai eu une surprise.) ; 4 amorces à compléter : « Nous avons eu peur. → Nous … » ; « Vous avez eu mal. → Vous … » ; « Tu as été courageuse. → Tu … » ; « Il a été peiné. → Il … » (passage être ↔ avoir).
+- **Ex 9b** [B] — « Ajoute dans chaque colonne un exemple de ton choix. »
+- **Ex 10** [B] — « Complète les dialogues par le verbe être ou avoir au temps indiqué. » — 4 mini-dialogues, temps indiqué à gauche (Présent / Passé composé / Futur). ex : « 1) Mme Lepic s'inquiète pour son mari. – Tu … tout pâle. Est-ce que-tu … malade ? » ; « 2) Au lycée, les élèves s'informent auprès de leur professeur – Monsieur, quand … – nous les résultats du Baccalauréat ? » (≈ 14 blancs ; dialogue 3 « Main dans la main », dialogue 4 colonie de vacances).
+
+## Objectif 5 — verbes du type « finir » au passé composé et au futur
+
+### B 5-1 (p.154) — Conjugaison, fiche de base
+OS : « Conjuguer les verbes du type "finir" au passé composé et au futur ».
+- **Ex 1a** [B] — « Souligne dans le texte suivant les verbes qui se conjuguent comme le verbe "finir". » — texte « Les écoliers de campagne » (≈ 8 lignes ; verbes : franchissent, durcit, grossit, arrivent…, noircit, réussissent, unis [adj.]). Citation utile : « Rien n'arrête ces petits marcheurs, ni le froid qui durcit la terre, ni le vent qui grossit. » (texte non reproduit en entier).
+- **Ex 1b** [B] — « Trouve l'infinitif de chacun des verbes soulignés. »
+- **Ex 2** [B] — « Complète la conjugaison du verbe "finir" au futur et au passé composé » — tableau 6 personnes × (Futur : « Je fin… » ; Passé composé : « J'… fin… »).
+- **Ex 3** [B] — « Barre les verbes qui ne se conjuguent pas comme le verbe "finir". » — 12 verbes : rougir, élargir, fleurir, cueillir, pourrir, sortir, choisir, remplir, dormir, finir, partir, bondir.
+
+### B 5-2 (p.155) — Conjugaison, fiche de base
+- **Ex 4** [B] — « Réécris au pluriel ces phrases. » — 6 phrases. ex : « Mon chien bondira sur le premier chat qui franchira la clôture. » ; « Le pompier finira par sauver la victime de l'incendie. »
+- **Ex 5** [B] — « Réécris les phrases suivantes au passé composé. » — 4 phrases avec infinitif entre parenthèses. ex : « Le surveillant (rétablir) l'ordre dans la cour du lycée. » ; « "Regarde, maman, mon pull (rétrécir) au lavage! la prochaine fois choisis un meilleur produit s'il te plaît". »
+
+### B 5-3 (p.156) — Conjugaison, fiche de base
+- **Ex 6** [B] — « Réécris au futur le texte suivant. » — texte de 4 phrases (un clown se maquille avant le spectacle : « Tandis que les spectateurs tremblent en regardant les fauves qui rugissent et bondissent, le clown finit son maquillage. Il rougit son nez… »).
+- **Ex 7** [B] — « Réécris le texte suivant au passé composé. » — texte de 3 phrases (« A l'arrivée de l'automne, le paysage change de couleur. Des feuilles jaunissent, d'autres rougissent, mais toutes finissent par tomber. L'air se refroidit et souvent de gros nuages noircissent le ciel. »)
+- **Ex 8a** [B] — « Réponds aux questions par des phrases complètes. » — 2 questions : « Est-ce que vous vous nourrissez bien ? » ; « Quel métier choisiras-tu quand tu seras grand (e) ? »
+- **Ex 8b** [B] — « Pose les questions permettant d'obtenir les réponses suivantes. » — 2 réponses : « Oui, j'ai bien réfléchi avant de faire cet exercice. » ; « Non, nous n'avons pas fourni les renseignements que vous cherchez. »
+
+### B 5-4 (p.157) — Conjugaison, fiche de base (vision)
+- **Ex 9** [B] — « Réécris au futur le texte de l'exercice n°7. »
+- **Ex 10** [B] — « Observe les images et rédige un texte de 3 ou 4 phrases en utilisant les indications données. » — 3 photos (démolition de vieux immeubles ; chantier de nouveaux immeubles ; immeuble achevé) avec indications : « démolir (passé composé) – vieux immeubles » ; « bâtir (présent) – nouveaux immeubles » ; « finir (futur) – la construction » ; titre « Pour une meilleure qualité de vie ».
+
+## Objectif 6 — verbes « mettre » et « prendre » au passé composé et au futur
+
+### B 6-1 (p.158) — Conjugaison, fiche de base (vision)
+OS : « Conjuguer les verbes "mettre" et "prendre" au passé composé et au futur ».
+- **Ex 1** [B] — « Écris dans la colonne qui convient les verbes qui se conjuguent comme mettre et prendre . Attention aux intrus. » — 13 verbes : remettre – connaître – permettre – marcher – apprendre – promettre – comprendre [sic « omprendre »] – reprendre – émettre – attendre – dire – surprendre – rendre ; tableau « mettre / prendre » (intrus : connaître, marcher, dire ; « attendre », « rendre » sont des verbes en -re non conjugués comme prendre).
+- **Ex 2** [B] — « Complète le tableau par les formes verbals [sic « verbales »] qui conviennent. » — tableau Temps / Personne × mettre / permettre / prendre / comprendre ; 8 lignes : passé composé j', nous ; futur vous, tu ; passé composé ils, il ; impératif 2ème personne du pluriel.
+
+### B 6-2 (p.159) — Conjugaison, fiche de base
+- **Ex 3** [B] — « Complète les phrases suivantes par les verbes de la marge au temps indiqué. » — 4 verbes (mettre, remettre, prendre, apprendre, comprendre : 5) répartis en 11 phrases avec le temps à droite. ex : « Cette viande … beaucoup de temps à cuire. (Passé composé) » ; « – … les pinces dans la boîte à outils, dit le menuisier à son apprenti. (Impératif) » ; « Les élèves … enfin … qu'une salle de classe doit rester propre. (Passé composé) ».
+
+### B 6-3 (p.160) — Conjugaison, fiche de base
+- **Ex 4** [B] — « Transforme du singulier au pluriel ou du pluriel au singulier. » — 7 phrases. ex : « Où ai-je mis mes lunettes ? » ; « Avez-vous compris ce que j'ai dit ? »
+- **Ex 5** [B] — « Réponds aux questions par des phrases complètes. » — 4 questions. ex : « Quand as-tu mis tes plus beaux vêtements ? » ; « Promets-tu de toujours protéger l'environnement ? »
+
+### B 6-4 (p.161) — Conjugaison, fiche de base
+- **Ex 6** [B] — « Écris des phrases à partir des indications suivantes » — 6 consignes personne + temps/forme + verbe : « On – passé composé – mettre la clé dans la serrure. » ; « Nous – futur – prendre le train pour voyager. » ; « Je – futur – forme négative – commettre des bêtises. » ; « Ils – passé composé – phrase interrogative – prendre soin des animaux domestique [sic]. » ; « 2° personne du singulier – impératif – apprendre à nager. » ; « Vous – passé composé – promettre aux élèves une visite au lac d'Ichkeul. »
+- **Ex 7** [B] — « pose [sic, minuscule] les questions qui donnent les réponses suivantes. » — 4 réponses : « Oui, je prendrai beaucoup de temps pour faire ce travail. » ; « Non, je ne remettrai pas à demain ce que je peux faire aujourd'hui. » ; « Nous avons bien compris qu'il faut sauver certaines espèces animales. » ; « J'ai appris à parler en anglais. »
+
+### B 6-5 (p.162) — Conjugaison, fiche de base
+- **Ex 8a** [P] — « Écris un texte court avec les expressions suivantes et d'autres expressions de ton choix. Emploie le futur. » — expressions : émettre un message sur le portable ; promettre de rendre visite à… ; prendre la permission des parents. ; remettre un cadeau.
+- **Ex 8b** [P] — « Transforme le texte au passé composé » (4 lignes).
+
+## Objectif 7 — verbes « aller » et « faire » au passé composé et au futur
+
+### B 7-1 (p.163) — Conjugaison, fiche de base (vision)
+OS : « Conjuguer [sic « Conjuger »] les verbes "aller" et "faire" au passé composé et au futur. »
+- **Ex 1** [B] — « Complète le tableau » — 2 tableaux Temps/Personne × aller / faire : passé composé (Nous, Il, Je, Vous) ; futur (Tu, Vous, Ils, Nous).
+- **Ex 2** [B] — « Complète les phrases au temps indiqué. » — 8 phrases, 2 verbes (aller, faire) avec temps à droite. ex : « – Ma mère … à l'hôpital, pour faire un bilan de santé. (Passé composé) » ; « – Que …-vous pour réussir à ce concours ? (Futur) » ; « – Non, nous n'… pas … de régime. Nous … beaucoup d'exercices physiques. »
+- **Ex 3** [B] — « Complète le passé composé du verbe aller et écris la terminaison qui convient : é - ée - és - ées. » — 6 phrases. ex : « L'entraineur … all… à la rencontre des joueurs. » ; « Moi, je ne … pas all … à ce festival parcque [sic] j'étais malade, répond Christophe. »
+
+### B 7-2 (p.164) — Conjugaison, fiche de base
+- **Ex 4** [B] — « Complète le passé composé du verbe faire par l'auxiliaire avoir et la terminaison qui convient. » — 6 phrases (dialogue). ex : « – …-tu fai… du sport à l'école ? » ; « – J'… toujours fai… attention à mon état de santé. »
+- **Ex 5a** [B] — « Transforme a- du singulier au pluriel » — 3 phrases. ex : « – Où es-tu allé pendant les vacances et qu'as-tu fait ? » ; « – Je ferai de la natation une fois par semaine. »
+- **Ex 5b** [B] — « b- du pluriel au singulier » — 4 phrases. ex : « – Que ferez-vous cet hiver pour ne pas tomber malade ? » ; « – Il neige, mes amis n'iront pas au stade pour s'entraîner. »
+
+### B 7-3 (p.165) — Conjugaison, fiche de base
+- **Ex 6** [B] — « Complète en faisant attention au temps à utiliser. » — 5 couples de phrases (modèle + phrase à compléter dans un autre temps). ex : « – Tout à l'heure, nous ferons de la marche. / – Hier, nous… » ; « – J'ai fait régulièrement la sieste, cet été. / – … l'été prochain aussi. »
+- **Ex 7** [P] — « Remplace les verbes soulignés par le verbe "faire" » — 9 phrases. ex : « J'ai préparé une fiche sur la "bonne alimentation" » ; « Avant de partir, il a bouclé ses valises. » (aussi : fabriqueront, construit, réaliseras, fourni, enverra, jouerai, organisé).
+
