@@ -108,3 +108,46 @@ Sur les 19 paires signalées, **les tableaux** (08/06 q1–q6, et 07/06 q1 ↔ 0
 - 4 majeurs (m025 q3, m027 q5, m031 q6, m033 q1).
 
 Tous les textes ci-dessus sont vérifiés : une seule réponse, clé jamais strictement la plus longue, aucune clé visible dans un autre énoncé. La salle blanche du devoir est respectée.
+
+## 8. Re-vérification (2026-10-19, après les corrections de l'auteur)
+
+**Gates** :
+- `content:check` ✓ (french-6eme : 73 exercices, 501 questions).
+- `content:qa -- --subject french-6eme` ✓.
+- `content:tranche … 07, 08 --fresh --strict-longest` : 0/109 clé strictement la plus longue ; positions 27/24/26/24 %.
+- `content:gisement:controle` (m033) : 0 partout.
+- Aucun `_` ni `*` dans les 9 fichiers.
+- Carte M7/M8 : les 11 ids ajoutés.
+
+**Défauts** :
+
+| Défaut | État |
+| --- | --- |
+| C-1 08/06 q8 | ✓ d = « Hier matin, dès huit heures… » (deux temps) ; une seule réponse |
+| C-2 08/06 q10 | ✓ b = « À travers la scène, pieds nus, je me mets. » ; prompt et explication reformulés |
+| C-3 08/09 q7 | ✓ clé « surgit » ; le prompt précise « trouvé dans le texte » |
+| 9 fuites du § 3 | ✓ blancs vides dans les deux énoncés et blanc visé nommé : 07/06 (q5, q6), 07/07 q5, 07/08 q1 et q2, 08/07 q2, q3, q4, q6, q10, 08/08 q2 et q4 |
+| m025 q3 | ✓ supprimée (6 questions) |
+| m027 q5 b | ✓ remplacée ; l'explication écarte la nouvelle option |
+| m031 q6 b | ✓ « ont arrivé » |
+| m033 q1 b | ✓ « Tu salues Malek… » ; l'ordre b, d, a, c est unique |
+| Mineurs | ✓ consignes mot pour mot (2025 ; « tableau suivant » ; parenthèse de 2009 et 2010), explications de 07/06 q4 et 07/08 q8, étiquette de 08/09 q8 a retirée |
+
+**Questions modifiées, re-résolues à l'aveugle** (toutes ✓) :
+- 07/06 : q3 « disent », q4 « nos », q5 « Écoute », q6 « écris » ;
+- 07/07 : q5 « son … profonds » ;
+- 07/08 : q1 « Non… », q2 a, b, q5 c ;
+- 08/06 : q8 a, q10 d ;
+- 08/07 : q2 « s'écrient », q3 « pouvez », q4 « vous vous occuperez », q6 « voulez », q10 « n'a pas voulu » ;
+- 08/08 : q2 « ont fait », q4 « n'avons pas trouvé », q6 « sont arrivés » ;
+- 08/09 : q7 « surgit », q8 b ;
+- 08/10 : q1 b, d, a, c.
+
+**Les 17 paires proches restantes ne fuient pas.** Je l'ai vérifié en cherchant, par script, chaque clé de QCM et de multi dans les énoncés des autres questions de la même mission. Ces paires sont :
+- les tableaux de 08/06 entre eux et avec 07/06 q1 : phrases officielles différentes ;
+- 07/06 q5 ↔ q6 et 08/08 q3 ↔ q4 : blancs vides ;
+- 08/08 q6 ↔ q7 : aucun des deux énoncés n'affiche la clé de l'autre.
+
+Le script n'a trouvé qu'un cas, **mineur et accepté** : la phrase officielle de 2010, en 07/07 q6, contient « une vieille couverture ». Elle affiche donc la graphie de la clé de q4 (« vieille »). C'est une donnée officielle, et le cours enseigne cette forme.
+
+**Verdict final : prêt.** Aucune clé fausse, aucune question à deux réponses, aucune fuite, aucun majeur ouvert.

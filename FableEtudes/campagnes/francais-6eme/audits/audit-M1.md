@@ -24,9 +24,9 @@ Toutes les clés actuelles sont justes. Mais **deux questions ont une seconde r�
 | m001 `01/06` temps | 8 | 0 | 1 | 1 |
 | m002 `01/07` devoir classer | 6 | 0 | 1 | 0 |
 | m003 `01/08` devoir métier | 6 | 0 | 0 | 0 |
-| m004 `02/06` déterminants | 10 | 1 | 1 | 2 |
-| m005 `02/07` impératif | 11 | 0 | 1 | 1 |
-| m006 `02/08` lecture 2026 | 10 | 2 | 2 | 1 |
+| m004 `02/06` déterminants | 10 | 1 | 1 (M-2) | 2 |
+| m005 `02/07` impératif | 11 | 0 | 1 (M-2) | 1 |
+| m006 `02/08` lecture 2026 | 10 | 2 | 2 | 0 |
 | m007 `02/09` récit écrans | 8 | 0 | 1 | 1 |
 | m008 `02/10` devoir relier | 7 | 0 | 1 | 0 |
 
@@ -122,7 +122,7 @@ Vérifié : deux seule.
 ## 4. Mineurs, paires et gabarits
 
 - **m001 q3** : option d (phrase inchangée) étiquetée `fr.temps.indicateur-de-temps-ignore` ; la phrase n'a aucun indicateur de temps, l'erreur est d'ignorer la consigne. La rendre muette.
-- **m004 q9** : « les noms soulignés » sans soulignement visible. Ajouter `(« plante » et « feuillage »)` après `les noms soulignés` dans la consigne citée, entre crochets d'auteur : `… au pluriel. » [Noms soulignés : plante, feuillage.]`
+- **m004 q9** : « les noms soulignés » sans soulignement visible. Ajouter après la consigne citée : `(Les noms soulignés sont « plante » et « feuillage ».)`
 - **m005 q7** : la consigne officielle de 2020 est « Ecris la phrase à l'impératif. » (sans accent, coquille comprise, comme le veut la règle commune). Remplacer `Écris` par `Ecris`.
 - **m007 q4** : la consigne de 2020 est tronquée. La citer en entier : `Consigne : « Raconte ce qui s'est passé en huit phrases au moins. Intègre dans ton récit un court dialogue où chacun de vous explique son point de vue et justifie son choix. »`
 - **m004, étiquetage (doute 4)** : oui, un id est justifié. L'erreur « garder le possessif de la personne de départ » est portée par au moins trois distracteurs de m004 (q3 a « notre », q4 a « mes », q4 c « nos ») et revient dans d'autres sujets (2023 « ta – ton »). Id proposé : `fr.det.possessif-personne-non-changee`, libellé fr : `Tu gardes le possessif de la personne de départ quand le possesseur change (nous → vous : notre aventure → votre aventure ; je → nous : mes amis → nos amis) : le possessif suit la personne qui possède.` Après C-1, il nomme exactement l'erreur de ces trois options.
@@ -144,4 +144,4 @@ Toutes les phrases officielles sont mot pour mot et chaque question dit sa sessi
 
 ## 7. Verdict
 
-**À corriger** : 3 critiques (C-1 à C-3), 7 majeurs (M-1 à M-7), 4 mineurs. Chaque défaut a son texte de remplacement vérifié ci-dessus : une seule réponse, la clé n'est pas la plus longue, aucune fuite. m003 est prêt tel quel. Après correction : relancer `content:check`, `content:qa`, `content:tranche --fresh --strict-longest` et `content:gisement:controle` sur m002 et m008.
+**À corriger** : 3 critiques (C-1 à C-3), 7 majeurs (M-1 à M-7 ; M-2 touche m004 et m005), 5 mineurs. Chaque défaut a son texte de remplacement vérifié ci-dessus : une seule réponse, la clé n'est pas la plus longue, aucune fuite. m003 est prêt tel quel. Après correction : relancer `content:check`, `content:qa`, `content:tranche --fresh --strict-longest` et `content:gisement:controle` sur m002 et m008.
