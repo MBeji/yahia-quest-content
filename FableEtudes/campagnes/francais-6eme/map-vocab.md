@@ -121,3 +121,9 @@ Un élargissement change aussi le libellé que voient les élèves de 9ᵉ : cha
 - `fr.conj.infinitif-apres-preposition-oublie` (pour préparé) et `fr.conj.infinitif-a-la-place-du-participe` (il a préparer) sont les deux sens d'une même famille d'homophones -er / -é : choisir d'après la forme attendue.
 - `fr.conj.forme-irreguliere-regularisee` (faisez, j'allerai, ils pouvent) prime sur `fr.conj.futur-mal-forme` (je finissai) et sur `fr.conj.peux-veux-terminaison` (je peut) quand la forme fautive est une régularisation.
 - `fr.accord.pp-avoir-avec-sujet` n'est **jamais** posé en 6ᵉ (F5) : un item d'accord du participe passé ne propose que des participes employés avec être ou seuls.
+
+## Ajouts du pilote après l'audit B3 (2026-10-19)
+
+- Réutilisés en plus, ids existants au libellé exact : M5 `fr.logique.rapport-logique-confondu` (pourtant / donc), `fr.lecture.reponse-non-redigee` ; M6 `fr.portrait.signalement` (liste de détails au lieu d'un portrait), `fr.description.inventaire` (libellé élargi : « de loin à près, de l'extérieur à l'intérieur »), `fr.lettre.parties-mal-placees` (étendu au M6), `fr.lecture.reponse-non-redigee`.
+- Libellé de `fr.conj.participe-passe-mal-termine` reformulé : l'erreur vient d'une analogie avec un autre verbe (*prit* sur *fait, dit*), pas du présent (*il prend*).
+- Rendu (m-1) : les tableaux de conjugaison à 5 colonnes se cassent à 360 px (`overflow-wrap: anywhere` du moteur) ; décision : tableaux à 3 colonnes au plus dans les cours de la 6ᵉ (suivi moteur noté).

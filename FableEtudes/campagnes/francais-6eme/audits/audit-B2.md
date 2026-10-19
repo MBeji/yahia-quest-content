@@ -212,3 +212,42 @@ Vérifié : la vérification « mêmes chances » ne trouve sa réponse que dans
 ## 6. Verdict
 
 **À corriger** : 2 critiques et 12 majeurs (6 + 6), avec un texte de remplacement vérifié pour chacun. Aucune clé fausse. Les gates sont verts. Les reprises sont fidèles au PDF, à un raccourci près. Le scope F1/F5 est respecté. Après correction, relancer `content:check`, `content:qa -- --subject french-6eme` et `content:tranche … --strict-longest`. Le M-5 crée une égalité de longueur 48/48 : elle doit rester une égalité.
+
+## 7. Re-vérification (après « Corrections après audit » de `rapport-B2.md`)
+
+Contrôlé sur le corpus réel : les huit chapitres sont écrits et le lien `eng-deliver/content` pointe vers `wt-fr6b/content`. Toutes les questions modifiées ont été re-résolues à l'aveugle, soit 25 questions.
+
+**Gates**
+- `content:check` : ✓ (121 matières, 1066 chapitres ; `french-6eme` : 8 chapitres, 240 questions).
+- `content:qa -- --subject french-6eme` : ✓ aucune clé suspecte.
+- `content:tranche --chapters 03…,04… --fresh --strict-longest` : clé strictement la plus longue 0/46 ; positions a 24 % · b 28 % · c 22 % · d 26 % ; paires proches 0 ; gabarits 0 ; patron de notion 0 en recul.
+
+**Rendu** (vitest jetable, supprimé ensuite) : aucun `*`, `:::` ou `_` résiduel dans les deux cours ni dans les deux résumés. À 360 px dans Chromium, la page mesure 360 px de large : aucun débordement.
+
+**M-7 (écart signalé par l'auteur)** : la ligne est devenue `_Je n'ai plus téléphoné à mon frère._`. Elle rend `<em>Je n'ai plus téléphoné à mon frère.</em>`, sans astérisque. Le gras interne disparaît, mais les étapes 1 et 2 de l'exemple disent déjà où se placent *ne* et *plus*. **Corrigé**, l'écart est accepté.
+
+| Défaut | État | Re-résolution |
+| --- | --- | --- |
+| C-1 04 rev q6 | corrigé | « plus » seul juste ; « jamais » contredit « hier encore » |
+| C-2 04 défi q3 | corrigé | clé d seule juste ; a, b, c portent chacune une erreur étiquetée ; longueurs 45/48/44/47 |
+| M-1 03 cours, lecture | corrigé | l'ancrage contient l'indice « Alors il reste à l'écart » |
+| M-2 03 défi q1 | corrigé | b seule juste ; l'explication ne désigne plus les options par leur rang |
+| M-3 03 défi q5 + cours | corrigé | puce « proverbe » au cours (l.292) ; c seule juste |
+| M-4 03 entr q1 | corrigé | explication juste (« le clown est ») |
+| M-5 03 quiz q5 | corrigé | b seule juste ; égalité 48/48 avec d, la clé n'est pas strictement la plus longue |
+| M-6 03 boss q5 | corrigé | c seule juste |
+| M-7 04 cours l.31 | corrigé (voir ci-dessus) | — |
+| M-8 04 cours, documentaire | corrigé | texte affiché en citations, intertitres en gras ; l'exemple et la vérification se résolvent sur ce texte |
+| M-9 04 pièges | corrigé | défi q2 « L'union fait la force » : b seule juste ; défi q5 d étiquetée `informatif-pris-pour-narratif` ; `coursePitfalls` à 8 ids |
+| M-10 04 défi q1 | corrigé | a, c, e |
+| M-11 04 défi q4 | corrigé | c seule juste, la phrase est dans le récit |
+| M-12 04 entr q5 | corrigé | d seule juste ; « amical » muet ; « entraide » étiqueté |
+| Mineurs 03-1 à 03-7, 04-1 à 04-7 | corrigés | 03 entr q6 « honteux » seul juste ; 04 entr q1 : l'ordre b-d-a-c est désormais strict (« Au carrefour, ») |
+| 03-8, 04-8 | tolérés (inchangés) | — |
+| 03-9 | fait par le pilote (hors lot) | — |
+
+**Reste un seul mineur, non bloquant.** `04/exercices/04-defi.json` q5 : l'explication ne mentionne pas la nouvelle option d (texte pris pour un récit). Texte proposé pour `explanation` :
+
+> Le texte dit qu'un enfant sur trois ne va jamais à l'école : certains enfants n'y vont jamais. Dire que tous y vont est le contraire du texte, rien n'y dit que les garçons perdent ce droit, et ce texte informe : il ne raconte pas l'histoire d'un enfant.
+
+**Verdict final : prêt à armer.** Aucun critique ni majeur ne reste. Le mineur ci-dessus peut être corrigé lors de l'armement, sans nouvel audit.
