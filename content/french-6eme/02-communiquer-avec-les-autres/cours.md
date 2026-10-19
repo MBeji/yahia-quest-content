@@ -110,7 +110,7 @@ Le possessif dit à qui l'objet appartient, et s'accorde avec le nom qui suit (_
 
 ## 📣 L'impératif : donner un ordre, un conseil
 
-Au club, l'animateur dit : « Allume l'ordinateur, ouvre un document et enregistre ton texte. » Personne n'entend un _tu_ ni un _vous_ devant ces verbes, et pourtant chacun comprend qu'on lui parle.
+Au club, l'animateur dit : « Allume l'ordinateur, choisis un document et enregistre ton texte. » Personne n'entend un _tu_ ni un _vous_ devant ces verbes, et pourtant chacun comprend qu'on lui parle.
 
 Quelle est cette forme du verbe qui donne un ordre ou une consigne sans dire qui agit ?
 
@@ -169,7 +169,7 @@ Pourquoi _cherche_ sans _s_, alors que _choisis_ et _fais_ en prennent un ?
 À la 2e personne du singulier de l'impératif :
 
 - les verbes en **-er** (_chercher, utiliser, regarder_) et le verbe **aller** n'ont **pas de _s_** : _cherche, utilise, va_ ;
-- les verbes en **-ir** ou en **-re** (_choisir, faire, prendre_) **prennent un _s_** : _choisis, fais, prends_.
+- les verbes en **-ir** comme _choisir_ et en **-re** comme _faire_ ou _prendre_ **prennent un _s_** : _choisis, fais, prends_.
 
 :::
 

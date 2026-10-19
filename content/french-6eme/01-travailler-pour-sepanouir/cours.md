@@ -150,7 +150,7 @@ Il tente parce que _a_ est bien le verbe _avoir_ au présent. Pourtant ici _a v�
 
 :::
 
-Pour reconnaître le passé composé, on cherche donc le **couple** « _a_ ou _est_ + mot qui finit souvent en _-é_ ou en _-i_ » (_a aidé, a fini, est sorti_). Un indicateur seul peut tromper : _ce matin_ accompagne un passé composé aussi bien que _hier_, dès que l'action est déjà faite. C'est donc la forme du verbe qui tranche.
+Pour reconnaître le passé composé, on cherche donc le **couple** « _a_ ou _est_ + un participe » (_a aidé, a fini, a pris, est sorti_). Un indicateur seul peut tromper : _ce matin_ accompagne un passé composé aussi bien que _hier_, dès que l'action est déjà faite. C'est donc la forme du verbe qui tranche.
 
 ::: verifie
 Indique le temps : _« Maintenant, il va de maison en maison. »_ puis _« De bon matin, le facteur est sorti de chez lui. »_
@@ -162,7 +162,7 @@ La première phrase est au **présent** : _maintenant_ et _va_ (un seul mot) sit
 :::
 
 ::: retenir
-Présent : l'action a lieu maintenant ; passé composé : _a_ ou _est_ + un mot en _-é_ ou _-i_, l'action est faite ; futur : _r_ + terminaison, l'action est à venir.
+Présent : l'action a lieu maintenant ; passé composé : _a_ ou _est_ + un participe (_a aidé, a pris, est sorti_), l'action est faite ; futur : _r_ + terminaison, l'action est à venir.
 
 :::
 
