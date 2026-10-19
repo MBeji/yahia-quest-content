@@ -7,30 +7,30 @@
   "displayOrder": 8,
   "questions": [
     {
-      "prompt": "(Concours 2026) Texte : un élève, Louis, raconte une scène de classe où la maîtresse propose dix jours sans écrans. Consigne : « Coche la bonne réponse. Les personnages qui rejettent l'idée de passer dix jours sans écrans sont : Paloma, Louis, Gordon. » Parmi ces personnages, lequel annonce que l'expérience sera un échec ?",
+      "type": "multi",
+      "prompt": "(Concours 2026) Texte : Louis raconte une scène de classe où la maîtresse, Mme Guégan, propose dix jours sans écrans. Louis juge « complètement débile » la phrase « Ce serait chouette d'essayer. » Gordon murmure : « On n'aura jamais le temps de donner envie aux autres. » Paloma s'écrie : « Moi, je peux même commencer dès ce soir ! » Consigne : « Coche la bonne réponse. Les personnages qui rejettent l'idée de passer dix jours sans écrans sont : Paloma, Louis, Gordon. » Quels personnages rejettent l'idée ?",
       "options": [
         {
           "id": "a",
-          "text": "Paloma",
-          "misconceptionTag": "fr.lecture.personnage-confondu"
+          "text": "Paloma"
         },
         {
           "id": "b",
-          "text": "Louis",
-          "misconceptionTag": "fr.lecture.personnage-confondu"
+          "text": "Louis"
         },
         {
           "id": "c",
-          "text": "Mme Guégan",
-          "misconceptionTag": "fr.lecture.personnage-confondu"
+          "text": "Gordon"
         },
         {
           "id": "d",
-          "text": "Gordon"
+          "text": "Mme Guégan"
         }
       ],
-      "correctOption": "d",
-      "explanation": "C'est Gordon qui murmure qu'on n'aura jamais le temps et qu'on sera morts d'ennui. Paloma est enthousiaste, Louis rit de l'idée sans prédire d'échec, et Mme Guégan est la maîtresse qui propose le défi.",
+      "answerKey": {
+        "correct": ["b", "c"]
+      },
+      "explanation": "Louis trouve « débile » l'idée d'essayer et Gordon annonce qu'on n'aura jamais le temps : tous deux rejettent le défi. Paloma veut commencer dès ce soir, et Mme Guégan est celle qui le propose.",
       "difficulty": 1
     },
     {
@@ -38,26 +38,23 @@
       "options": [
         {
           "id": "a",
-          "text": "« Au bout de deux jours sans écrans, on sera morts d'ennui. »"
+          "text": "« Moi, je peux même commencer dès ce soir ! »"
         },
         {
           "id": "b",
-          "text": "« Je comptais vous proposer une expérience de ce type. Dix petites journées sans un seul écran. »",
-          "misconceptionTag": "fr.lecture.personnage-confondu"
+          "text": "« Je comptais vous proposer une expérience de ce type. »"
         },
         {
           "id": "c",
-          "text": "« Si vous acceptez ce projet, il faut que nous le construisions ensemble en détail. »",
-          "misconceptionTag": "fr.lecture.personnage-confondu"
+          "text": "« Si vous acceptez ce projet, il faut que nous le construisions ensemble en détail. »"
         },
         {
           "id": "d",
-          "text": "« On pourrait tous s'y mettre ! Moi, je peux même commencer dès ce soir ! »",
-          "misconceptionTag": "fr.lecture.personnage-confondu"
+          "text": "« Au bout de deux jours sans écrans, on sera morts d'ennui. »"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Seule la dernière phrase annonce un échec : après deux jours sans écrans, on sera morts d'ennui. Les autres sont des paroles de Paloma, enthousiaste, et de la maîtresse, qui propose l'expérience.",
+      "correctOption": "d",
+      "explanation": "Seule la phrase « on sera morts d'ennui » annonce un échec : après deux jours sans écrans, Gordon prévoit que tout le monde s'ennuiera. Les autres sont des paroles de Paloma, enthousiaste, et de la maîtresse, qui propose l'expérience.",
       "difficulty": 2
     },
     {
@@ -65,8 +62,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Gordon",
-          "misconceptionTag": "fr.lecture.personnage-confondu"
+          "text": "Paloma"
         },
         {
           "id": "b",
@@ -75,15 +71,16 @@
         },
         {
           "id": "c",
-          "text": "Paloma"
+          "text": "Mme Guégan",
+          "misconceptionTag": "fr.lecture.personnage-confondu"
         },
         {
           "id": "d",
-          "text": "Mme Guégan",
+          "text": "Gordon",
           "misconceptionTag": "fr.lecture.personnage-confondu"
         }
       ],
-      "correctOption": "c",
+      "correctOption": "a",
       "explanation": "Le verbe « insiste » montre que Paloma continue de défendre l'idée qu'elle vient d'exprimer : c'est elle qui a trouvé l'expérience « chouette ». Gordon et Louis s'en moquent, et la maîtresse en est l'auteure.",
       "difficulty": 2
     },
@@ -101,7 +98,7 @@
         },
         {
           "id": "c",
-          "text": "Paloma dit qu'elle peut commencer dès ce soir."
+          "text": "Louis ne se retourne même pas quand une élève parle."
         },
         {
           "id": "d",
@@ -109,13 +106,13 @@
         },
         {
           "id": "e",
-          "text": "Pablo s'exclame qu'on va jeter les écrans à la poubelle."
+          "text": "Gordon murmure qu'on n'aura jamais le temps de donner envie aux autres."
         }
       ],
       "answerKey": {
         "correct": ["a", "b"]
       },
-      "explanation": "Louis ne peut pas se retenir de rire à une blague, et Gordon l'imite : les deux amis réagissent de la même façon. Les trois autres détails concernent Paloma, la maîtresse et Pablo, pas le narrateur et Gordon.",
+      "explanation": "Louis ne peut pas se retenir de rire à une blague, et Gordon l'imite : les deux amis sont rieurs. Ne pas se retourner ou murmurer qu'on n'aura pas le temps ne concerne qu'un des deux garçons, et le vote est une idée de la maîtresse.",
       "difficulty": 2
     },
     {
@@ -123,24 +120,24 @@
       "options": [
         {
           "id": "a",
-          "text": "« Et si nous votions pour avoir votre avis ? »"
-        },
-        {
-          "id": "b",
           "text": "« On n'aura jamais le temps de donner envie aux autres. »",
           "misconceptionTag": "fr.lecture.personnage-confondu"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "« Moi, je peux même commencer dès ce soir ! »",
           "misconceptionTag": "fr.lecture.personnage-confondu"
+        },
+        {
+          "id": "c",
+          "text": "« Et si nous votions pour avoir votre avis ? »"
         },
         {
           "id": "d",
           "text": "Mme Guégan est la maîtresse de la classe de Louis."
         }
       ],
-      "correctOption": "a",
+      "correctOption": "c",
       "explanation": "En proposant un vote pour avoir l'avis de ses élèves, la maîtresse leur laisse la décision : elle n'est pas autoritaire. Les deux répliques entre guillemets sont celles de Gordon et de Paloma, et savoir qu'elle est maîtresse ne dit rien de son caractère.",
       "difficulty": 2
     },
@@ -149,8 +146,7 @@
       "options": [
         {
           "id": "a",
-          "text": "intelligente",
-          "misconceptionTag": "fr.lexique.contraire-pour-synonyme"
+          "text": "stupide"
         },
         {
           "id": "b",
@@ -158,14 +154,15 @@
         },
         {
           "id": "c",
-          "text": "stupide"
+          "text": "amusante"
         },
         {
           "id": "d",
-          "text": "amusante"
+          "text": "intelligente",
+          "misconceptionTag": "fr.lexique.contraire-pour-synonyme"
         }
       ],
-      "correctOption": "c",
+      "correctOption": "a",
       "explanation": "« Débile » est ici un adjectif familier qui veut dire « stupide ». « Intelligente » a le sens contraire, « stupidité » est un nom et non un adjectif, et « amusante » n'a pas le même sens.",
       "difficulty": 2
     },
@@ -184,14 +181,14 @@
         },
         {
           "id": "c",
-          "text": "commencement du"
+          "text": "commencer le"
         },
         {
           "id": "d",
-          "text": "commencer le"
+          "text": "commencement du"
         }
       ],
-      "correctOption": "d",
+      "correctOption": "c",
       "explanation": "Se mettre au travail, c'est commencer le travail. « Arrêter le » et « finir le » disent le contraire, et « commencement du » est un nom, qui ne peut pas remplacer un verbe dans cette phrase.",
       "difficulty": 2
     },
@@ -205,7 +202,8 @@
         },
         {
           "id": "b",
-          "text": "désagréable"
+          "text": "sympathique",
+          "misconceptionTag": "fr.lexique.contraire-pour-synonyme"
         },
         {
           "id": "c",
@@ -214,11 +212,10 @@
         },
         {
           "id": "d",
-          "text": "sympathique",
-          "misconceptionTag": "fr.lexique.contraire-pour-synonyme"
+          "text": "désagréable"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "d",
       "explanation": "« Chouette » veut dire « agréable, formidable » : son contraire est « désagréable ». Formidable, sympathique et bien disent à peu près la même chose que « chouette ».",
       "difficulty": 2
     },
@@ -248,7 +245,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "(Concours 2026) Même texte. Consigne : « Certains élèves de la classe de Mme Guégan voient que, privés d'écrans, ils vont mourir d'ennui. Qu'en penses-tu ? Justifie ton point de vue. » Tu es d'accord avec ces élèves. Quelle justification s'appuie sur le texte ?",
+      "prompt": "(Concours 2026) Même texte. Consigne : « Certains élèves de la classe de Mme Guégan voient que, privés d'écrans, ils vont mourir d'ennui. Qu'en penses-tu ? Justifie ton point de vue. » Tu es d'accord avec ces élèves. Quelle phrase justifie ce point de vue en s'appuyant sur le texte ?",
       "options": [
         {
           "id": "a",
@@ -257,21 +254,21 @@
         },
         {
           "id": "b",
-          "text": "Je ne suis pas d'accord : Paloma veut commencer dès ce soir, donc personne ne s'ennuiera.",
-          "misconceptionTag": "fr.argu.argument-contraire-a-la-these"
+          "text": "Je suis d'accord : Louis et Gordon veulent jouer sur une console, sans écran ils s'ennuieraient."
         },
         {
           "id": "c",
-          "text": "Je suis d'accord : la maîtresse a souvent des idées bizarres, comme on le voit dans le texte, et c'est tout.",
-          "misconceptionTag": "fr.production.hors-sujet"
+          "text": "Je suis d'accord : sans écrans, tout le monde s'ennuie toujours et partout, c'est bien connu de tous.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
         },
         {
           "id": "d",
-          "text": "Je suis d'accord : Louis et Gordon veulent jouer sur une console, sans écran ils s'ennuieraient."
+          "text": "Je ne suis pas d'accord : Paloma veut commencer dès ce soir, donc personne ne s'ennuiera.",
+          "misconceptionTag": "fr.argu.argument-contraire-a-la-these"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Une bonne justification donne une raison tirée du texte : Gordon invite Louis à jouer sur une console, donc les deux garçons occupent leur temps libre avec des écrans. Répéter qu'on est d'accord ne justifie rien, dire qu'on n'est pas d'accord change de position, et parler des idées de la maîtresse sort du sujet de l'ennui.",
+      "correctOption": "b",
+      "explanation": "Une bonne justification donne une raison tirée du texte : Gordon invite Louis à jouer sur une console, donc les deux garçons occupent leur temps libre avec des écrans. Répéter qu'on est d'accord ne justifie rien, dire qu'on n'est pas d'accord change de position, et affirmer que tout le monde s'ennuie partout ne s'appuie sur rien du texte.",
       "difficulty": 2
     }
   ]
