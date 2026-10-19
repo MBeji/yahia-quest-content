@@ -165,6 +165,9 @@ jobs:
           #     lui qui tient si quelqu'un nomme le job un jour.
           SELF_CHECK: automerge
           SELF_RUN: "/runs/${{ github.run_id }}/"
+          # Le SEUL nom exigé — préfixe du job de `content-ci.yml`. Voir « UN VERDICT
+          # ABSENT N'EST PAS UN VERDICT VERT » dans le script.
+          GATE_PREFIX: "content:check"
         run: |
           set -euo pipefail
 
@@ -258,6 +261,20 @@ jobs:
               return 0
             fi
             echo "$runs" | sed 's/^/    /'
+
+            # UN VERDICT ABSENT N'EST PAS UN VERDICT VERT — la PR #734 (2026-10-19).
+            # « Tous les checks du SHA sont verts » ne vaut que si le gate y EST. Depuis que
+            # `auto-pr.yml` réveille ce workflow en fin de job (#725), le balayage peut
+            # passer AVANT que la Content CI qu'il vient de dispatcher ait matérialisé son
+            # check run : il ne voyait alors qu'« Ouvrir la PR de la branche poussée » —
+            # vert — et a mergé #734 à 20:24:12, douze secondes avant que la CI ne démarre.
+            # Exiger ce seul nom n'est pas la liste figée que l'en-tête refuse : les autres
+            # checks continuent d'entrer d'eux-mêmes dans le calcul ; celui-ci est le gate
+            # de contenu, dispatché sur toute branche poussée, donc toujours attendu.
+            if ! grep -q "^$GATE_PREFIX" <<<"$runs"; then
+              echo "  Content CI absente de $sha — pas encore de verdict, le prochain balayage reprendra."
+              return 0
+            fi
 
             pending="$(echo "$runs" | awk -F'|' '$2 != "completed"' | wc -l)"
             if [ "$pending" -gt 0 ]; then
