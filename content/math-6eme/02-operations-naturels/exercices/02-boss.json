@@ -33,15 +33,15 @@
       "competencies": ["math.num.operations-entiers"]
     },
     {
-      "prompt": "ما ناتجُ 23 × 11؟",
+      "prompt": "ما ناتجُ 36 × 11؟",
       "options": [
-        { "id": "a", "text": "233" },
-        { "id": "b", "text": "243" },
-        { "id": "c", "text": "263" },
-        { "id": "d", "text": "253" }
+        { "id": "a", "text": "406" },
+        { "id": "b", "text": "396" },
+        { "id": "c", "text": "386" },
+        { "id": "d", "text": "371" }
       ],
-      "correctOption": "d",
-      "explanation": "23 × 11 = 23 × 10 + 23 = 230 + 23 = 253.",
+      "correctOption": "b",
+      "explanation": "36 × 11 = 36 × (10 + 1) = 36 × 10 + 36 × 1 = 360 + 36 = 396. من يكتب 36 × 10 + 11 = 371 لم يضرب 36 في الحدّ الثاني.",
       "difficulty": 2,
       "competencies": ["math.num.operations-entiers"]
     },
@@ -76,15 +76,15 @@
       "competencies": ["math.num.operations-entiers"]
     },
     {
-      "prompt": "احسب 6 × 102 باستعمال التوزيعيّة.",
+      "prompt": "احسب 8 × 103 باستعمال التوزيعيّة.",
       "options": [
-        { "id": "a", "text": "612" },
-        { "id": "b", "text": "6 012" },
-        { "id": "c", "text": "620" },
-        { "id": "d", "text": "162" }
+        { "id": "a", "text": "8 024" },
+        { "id": "b", "text": "824" },
+        { "id": "c", "text": "803" },
+        { "id": "d", "text": "111", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
-      "correctOption": "a",
-      "explanation": "6 × 102 = 6 × 100 + 6 × 2 = 600 + 12 = 612.",
+      "correctOption": "b",
+      "explanation": "8 × 103 = 8 × (100 + 3) = 8 × 100 + 8 × 3 = 800 + 24 = 824. أمّا 803 فنسي ضرب 8 في الحدّ 3، و 111 هو المجموع 8 + 103 لا الجداء.",
       "difficulty": 3,
       "competencies": ["math.num.operations-entiers"]
     },

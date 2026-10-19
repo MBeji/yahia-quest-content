@@ -37,19 +37,15 @@
       "competencies": ["math.num.decimaux-sens"]
     },
     {
-      "prompt": "أيُّ عددٍ يساوي 6,30؟",
+      "prompt": "ما الكتابة التي تساوي 6,3 وفيها ثلاثة أرقام بعد الفاصلة؟",
       "options": [
-        { "id": "a", "text": "6,03", "misconceptionTag": "math.num.zero-apres-virgule-ignore" },
-        { "id": "b", "text": "6,3" },
-        {
-          "id": "c",
-          "text": "63",
-          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
-        },
-        { "id": "d", "text": "0,63", "misconceptionTag": "math.num.virgule-mal-placee" }
+        { "id": "a", "text": "6,003", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "b", "text": "6,300" },
+        { "id": "c", "text": "6,030", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "d", "text": "63,000", "misconceptionTag": "math.num.virgule-mal-placee" }
       ],
       "correctOption": "b",
-      "explanation": "الصفرُ على يمين الجزء العشريّ لا يُغيّر القيمة: 6,30 = 6,3.",
+      "explanation": "نضيف صفرين على يمين الجزء العشريّ فلا تتغيّر القيمة: 6,3 = 6,30 = 6,300، ويبقى 3 في رتبة الأعشار. أمّا 6,030 و 6,003 فينقلان 3 إلى رتبة الأجزاء من المئة أو من الألف.",
       "difficulty": 2,
       "competencies": ["math.num.decimaux-sens"]
     },

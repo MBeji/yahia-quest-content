@@ -46,15 +46,15 @@
       "competencies": ["math.num.operations-entiers"]
     },
     {
-      "prompt": "ما ناتجُ 125 × 8؟",
+      "prompt": "ما ناتجُ 125 × 16؟",
       "options": [
-        { "id": "a", "text": "100" },
-        { "id": "b", "text": "1 025" },
-        { "id": "c", "text": "960" },
-        { "id": "d", "text": "1 000" }
+        { "id": "a", "text": "2 016" },
+        { "id": "b", "text": "2 000" },
+        { "id": "c", "text": "1 250" },
+        { "id": "d", "text": "141", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
-      "correctOption": "d",
-      "explanation": "نضرب: 125 × 8 = 1 000 (نتحقّق بالقسمة العكسيّة: 1 000 ÷ 8 = 125).",
+      "correctOption": "b",
+      "explanation": "125 × 16 = 125 × 8 × 2 = 1 000 × 2 = 2 000. تحقّق: 2 000 ÷ 16 = 125.",
       "difficulty": 2,
       "competencies": ["math.num.operations-entiers"]
     },

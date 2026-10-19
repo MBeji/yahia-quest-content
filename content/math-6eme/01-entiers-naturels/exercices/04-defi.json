@@ -9,7 +9,7 @@
     {
       "prompt": "ما القيمة التي يمثّلها الرقم 3 في العدد 6 308 152؟",
       "options": [
-        { "id": "a", "text": "3 000", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
+        { "id": "a", "text": "3 000" },
         { "id": "b", "text": "30 000", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
         { "id": "c", "text": "300 000" },
         { "id": "d", "text": "3 000 000", "misconceptionTag": "math.num.rang-du-chiffre-decale" }
@@ -58,15 +58,15 @@
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },
     {
-      "prompt": "ما القيمة المقرّبة للعدد 6 970 إلى أقرب مئة؟",
+      "prompt": "عددٌ طبيعيّ قيمتُه المقرّبة إلى أقرب ألف هي 7 000. ما أصغرُ قيمةٍ ممكنةٍ له؟",
       "options": [
-        { "id": "a", "text": "6 900", "misconceptionTag": "math.num.arrondi-par-troncature" },
-        { "id": "b", "text": "6 970" },
-        { "id": "c", "text": "7 100" },
-        { "id": "d", "text": "7 000" }
+        { "id": "a", "text": "6 499" },
+        { "id": "b", "text": "6 000" },
+        { "id": "c", "text": "7 499" },
+        { "id": "d", "text": "6 500" }
       ],
       "correctOption": "d",
-      "explanation": "رقم العشرات 7 (أكبر من أو يساوي 5) فنُدوّر المئات إلى الأعلى؛ والمئات 9 تصبح 10 فيُحمل 1 إلى الآلاف: 6 970 يصبح 7 000. الخطأ الشائع كتابة 7 100 أو 6 900.",
+      "explanation": "تُدوَّر إلى 7 000 كلّ الأعداد من 6 500 إلى 7 499: رقم المئات 5 أو أكثر يفرض الصعود من 6 000 إلى 7 000، ورقم المئات أقلّ من 5 يُبقي 7 000. أصغرها 6 500. أمّا 6 499 فرقم مئاته 4 فيُدوَّر إلى 6 000، و 7 499 أكبرها لا أصغرها.",
       "difficulty": 3,
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },

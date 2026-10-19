@@ -5,22 +5,17 @@
   "xpReward": 120,
   "rewardCoins": 30,
   "displayOrder": 5,
-  "manuel": {
-    "code": "102609",
-    "pages": "4-7",
-    "items": ["أقيّم 10 (الميزان)"]
-  },
   "questions": [
     {
-      "prompt": "ما ناتجُ 4,4 + 4,4؟",
+      "prompt": "ما ناتجُ 3,25 + 4,7؟",
       "options": [
-        { "id": "a", "text": "8,8" },
-        { "id": "b", "text": "8,4" },
-        { "id": "c", "text": "16" },
-        { "id": "d", "text": "88", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
+        { "id": "a", "text": "795", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        { "id": "b", "text": "7,95" },
+        { "id": "c", "text": "7,32" },
+        { "id": "d", "text": "3,72", "misconceptionTag": "math.num.decimaux-alignes-a-droite" }
       ],
-      "correctOption": "a",
-      "explanation": "نجمع: 4,4 + 4,4 = 8,8، أي ضِعفُ العددِ 4,4.",
+      "correctOption": "b",
+      "explanation": "نكتب 4,7 في صورة 4,70 ونضعه تحت 3,25 والفاصلة تحت الفاصلة: 3,25 + 4,70 = 7,95. من رصّ الأرقام إلى اليمين وجد 3,72.",
       "difficulty": 1,
       "competencies": ["math.num.add-sous-decimaux"]
     },
@@ -43,11 +38,7 @@
         { "id": "a", "text": "15,75", "misconceptionTag": "math.num.emprunt-oublie" },
         { "id": "b", "text": "14,75" },
         { "id": "c", "text": "14,85" },
-        {
-          "id": "d",
-          "text": "15,25",
-          "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand"
-        }
+        { "id": "d", "text": "15,25" }
       ],
       "correctOption": "b",
       "explanation": "نُكمل: 30,40 − 15,65 = 14,75.",
@@ -73,11 +64,7 @@
         { "id": "a", "text": "6,4" },
         { "id": "b", "text": "7,4", "misconceptionTag": "math.num.emprunt-oublie" },
         { "id": "c", "text": "6,6" },
-        {
-          "id": "d",
-          "text": "7,6",
-          "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand"
-        }
+        { "id": "d", "text": "13,6", "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand" }
       ],
       "correctOption": "a",
       "explanation": "العددُ المطلوب = 20 − 13,6 = 6,4 (نتحقّق: 13,6 + 6,4 = 20).",
@@ -99,9 +86,9 @@
     },
     {
       "type": "numeric",
-      "prompt": "وقف ثلاثة أطفال معًا على ميزان فبلغت كتلتهم 126,75 kg. كتلة أنيس ونادر معًا 88,25 kg، وكتلة سلمى ونادر معًا 81,25 kg. ما كتلة نادر بالكيلوغرام؟ اكتب العدد فقط.",
-      "answerKey": { "value": 42.75, "unit": "kg" },
-      "explanation": "نبدأ بكتلة سلمى: 126,75 − 88,25 = 38,5 kg، لأنّ الثلاثة هم سلمى مع أنيس ونادر. ثمّ كتلة نادر هي ما يبقى من كتلة سلمى ونادر معًا: 81,25 − 38,5 = 42,75 kg. تحقّق: 38,5 + 42,75 = 81,25 ✓.",
+      "prompt": "وقف ثلاثة أطفال معًا على ميزان فبلغت كتلتهم 98,5 kg. كتلة أنيس ونادر معًا 67,25 kg، وكتلة سلمى ونادر معًا 64,75 kg. ما كتلة نادر بالكيلوغرام؟ اكتب العدد فقط.",
+      "answerKey": { "value": 33.5, "unit": "kg" },
+      "explanation": "نبدأ بكتلة سلمى: 98,5 − 67,25 = 31,25 kg، لأنّ الثلاثة هم سلمى مع أنيس ونادر. ثمّ كتلة نادر هي ما يبقى من كتلة سلمى ونادر معًا: 64,75 − 31,25 = 33,5 kg. تحقّق: 31,25 + 33,5 = 64,75 ✓، وكتلة أنيس 67,25 − 33,5 = 33,75 kg، والمجموع 31,25 + 33,5 + 33,75 = 98,5 ✓.",
       "difficulty": 3,
       "competencies": ["math.num.add-sous-decimaux"]
     }

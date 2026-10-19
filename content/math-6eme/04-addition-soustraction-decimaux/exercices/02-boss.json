@@ -7,15 +7,15 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "ما ناتجُ 10,2 + 5,3؟",
+      "prompt": "ما ناتجُ 12,6 + 7,4؟",
       "options": [
-        { "id": "a", "text": "15,5" },
-        { "id": "b", "text": "15,3" },
-        { "id": "c", "text": "16,5" },
-        { "id": "d", "text": "153", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
+        { "id": "a", "text": "19,10", "misconceptionTag": "math.num.retenue-oubliee" },
+        { "id": "b", "text": "20" },
+        { "id": "c", "text": "20,10" },
+        { "id": "d", "text": "200", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
       ],
-      "correctOption": "a",
-      "explanation": "نجمع والفاصلةُ تحت الفاصلة: 10,2 + 5,3 = 15,5.",
+      "correctOption": "b",
+      "explanation": "نجمع والفاصلة تحت الفاصلة: الأعشار 6 + 4 = 10 فنكتب 0 ونحتفظ بـ 1؛ ثمّ الآحاد 2 + 7 + 1 = 10 فنكتب 0 ونحتفظ بـ 1؛ ثمّ العشرات 1 + 1 = 2. إذن 12,6 + 7,4 = 20,0 = 20. من نسي الاحتفاظ كتب 19,10.",
       "difficulty": 1,
       "competencies": ["math.num.add-sous-decimaux"]
     },

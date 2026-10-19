@@ -66,19 +66,15 @@
       "competencies": ["math.num.decimaux-sens"]
     },
     {
-      "prompt": "أيُّ ما يلي يساوي 2,3؟",
+      "prompt": "أيُّ الأعداد التالية يساوي 2,06؟",
       "options": [
-        { "id": "a", "text": "2,30" },
-        { "id": "b", "text": "2,03", "misconceptionTag": "math.num.zero-apres-virgule-ignore" },
-        {
-          "id": "c",
-          "text": "23",
-          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
-        },
-        { "id": "d", "text": "0,23", "misconceptionTag": "math.num.virgule-mal-placee" }
+        { "id": "a", "text": "2,060" },
+        { "id": "b", "text": "2,6", "misconceptionTag": "math.num.zero-apres-virgule-ignore" },
+        { "id": "c", "text": "2,600", "misconceptionTag": "math.num.zero-apres-virgule-ignore" },
+        { "id": "d", "text": "20,6", "misconceptionTag": "math.num.virgule-mal-placee" }
       ],
       "correctOption": "a",
-      "explanation": "صفرٌ على يمين الجزء العشريّ لا يُغيّر القيمة: 2,3 = 2,30.",
+      "explanation": "الصفر على يمين آخر رقمٍ عشريّ لا يغيّر العدد: 2,06 = 2,060. أمّا الصفر بين الفاصلة والرقم 6 فيحفظ رتبة الأعشار الخالية: 2,6 و 2,600 فيهما ستّة أعشار لا ستّة أجزاء من المئة.",
       "difficulty": 1,
       "competencies": ["math.num.decimaux-sens"]
     },
@@ -98,22 +94,10 @@
     {
       "prompt": "رتّب تصاعديًّا: 0,5 ؛ 0,45 ؛ 0,54.",
       "options": [
-        {
-          "id": "a",
-          "text": "0,5 < 0,45 < 0,54",
-          "misconceptionTag": "math.dec.compare-by-length"
-        },
+        { "id": "a", "text": "0,5 < 0,45 < 0,54", "misconceptionTag": "math.dec.compare-by-length" },
         { "id": "b", "text": "0,45 < 0,5 < 0,54" },
-        {
-          "id": "c",
-          "text": "0,45 < 0,54 < 0,5",
-          "misconceptionTag": "math.dec.compare-by-length"
-        },
-        {
-          "id": "d",
-          "text": "0,54 < 0,5 < 0,45",
-          "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus"
-        }
+        { "id": "c", "text": "0,45 < 0,54 < 0,5" },
+        { "id": "d", "text": "0,54 < 0,5 < 0,45", "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus" }
       ],
       "correctOption": "b",
       "explanation": "نساوي الطول (0,50) ثمّ نقارن رتبةً برتبة، فالترتيب التصاعدي: 0,45 < 0,5 < 0,54.",

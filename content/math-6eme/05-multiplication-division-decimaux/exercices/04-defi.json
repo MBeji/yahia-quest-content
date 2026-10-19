@@ -59,19 +59,15 @@
       "competencies": ["math.num.mult-div-decimaux"]
     },
     {
-      "prompt": "وُزّع 7,2 لترًا من العصير بالتساوي على 8 قوارير. كم في كلّ قارورة؟",
+      "prompt": "وُزّعت 6,3 لترات من العصير بالتساوي على 9 قوارير. كم في كلّ قارورة؟",
       "options": [
-        {
-          "id": "a",
-          "text": "9 لترات",
-          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
-        },
-        { "id": "b", "text": "0,8 لترٍ" },
-        { "id": "c", "text": "1,2 لترٍ" },
-        { "id": "d", "text": "0,9 لترٍ" }
+        { "id": "a", "text": "7 لترات", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        { "id": "b", "text": "0,07 لترٍ", "misconceptionTag": "math.num.zero-intercale-dans-le-resultat" },
+        { "id": "c", "text": "2,7 لترٍ" },
+        { "id": "d", "text": "0,7 لترٍ" }
       ],
       "correctOption": "d",
-      "explanation": "نقسم بالتساوي: 7,2 ÷ 8 = 0,9 لترٍ في كلّ قارورة (نتحقّق: 8 × 0,9 = 7,2).",
+      "explanation": "المقسوم 6,3 أصغر من القاسم 9، فيبدأ الخارج بـ 0 قبل الفاصلة: 6 ÷ 9 = 0، ننزل الرقم العشريّ 3 فنضع الفاصلة، و 63 ÷ 9 = 7. إذن 6,3 ÷ 9 = 0,7 لترٍ في كلّ قارورة (تحقّق: 9 × 0,7 = 6,3).",
       "difficulty": 3,
       "competencies": ["math.num.mult-div-decimaux"]
     },
@@ -89,23 +85,15 @@
       "competencies": ["math.num.mult-div-decimaux"]
     },
     {
-      "prompt": "عددٌ ضربناه في 100 فصار 250. ما هذا العدد؟",
+      "prompt": "عددٌ قسمناه على 1000 فصار 0,045. ما هذا العدد؟",
       "options": [
-        {
-          "id": "a",
-          "text": "25",
-          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
-        },
-        { "id": "b", "text": "2,5" },
-        {
-          "id": "c",
-          "text": "0,25",
-          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
-        },
-        { "id": "d", "text": "2 500", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" }
+        { "id": "a", "text": "450", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "b", "text": "45" },
+        { "id": "c", "text": "4,5", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        { "id": "d", "text": "0,000045", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" }
       ],
       "correctOption": "b",
-      "explanation": "نعكس العمليّة بالقسمة على 100: العددُ = 250 ÷ 100 = 2,5 (نتحقّق: 2,5 × 100 = 250).",
+      "explanation": "نعكس العمليّة: القسمة على 1000 يُلغيها الضرب في 1000، فنحرّك الفاصلة ثلاث رتب نحو اليمين: 0,045 × 1000 = 45. تحقّق: 45 ÷ 1000 = 0,045 ✓.",
       "difficulty": 3,
       "competencies": ["math.num.mult-div-decimaux"]
     }

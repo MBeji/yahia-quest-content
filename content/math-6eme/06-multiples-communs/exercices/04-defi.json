@@ -12,15 +12,15 @@
   },
   "questions": [
     {
-      "prompt": "ما المضاعفاتُ المشتركة للعددين 3 و5 المحصورة بين 1 و31؟",
+      "prompt": "ما المضاعفاتُ المشتركة للعددين 4 و 6 المحصورة بين 30 و 60؟",
       "options": [
-        { "id": "a", "text": "15 فقط" },
-        { "id": "b", "text": "8 و15" },
-        { "id": "c", "text": "15 و30" },
-        { "id": "d", "text": "30 فقط" }
+        { "id": "a", "text": "48 فقط", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
+        { "id": "b", "text": "36 و 48" },
+        { "id": "c", "text": "36 و 48 و 60" },
+        { "id": "d", "text": "40 و 50", "misconceptionTag": "math.num.ppmc-par-addition" }
       ],
-      "correctOption": "c",
-      "explanation": "المضاعفاتُ المشتركة للعددين 3 و5 هي مضاعفاتُ 15؛ بين 1 و31 نجد 15 و30.",
+      "correctOption": "b",
+      "explanation": "أصغر مضاعفٍ مشترك غير معدوم لـ 4 و 6 هو 12، والمضاعفات المشتركة هي مضاعفات 12: 12، 24، 36، 48، 60… وبين 30 و 60 تمامًا: 36 و 48. القفز بالجداء 24 يُسقط 36، والعدد 60 هو الحدّ نفسه فلا يُحسب.",
       "difficulty": 2,
       "competencies": ["math.num.multiples-diviseurs"]
     },
@@ -51,41 +51,41 @@
       "competencies": ["math.num.multiples-diviseurs"]
     },
     {
-      "prompt": "إذا كان العددُ مضاعفًا للعدد 9، فهو حتمًا مضاعفٌ للعدد:",
+      "prompt": "إذا كان العددُ مضاعفًا للعدد 20، فهو حتمًا مضاعفٌ للعدد:",
       "options": [
-        { "id": "a", "text": "4" },
-        { "id": "b", "text": "5" },
-        { "id": "c", "text": "2" },
-        { "id": "d", "text": "3" }
+        { "id": "a", "text": "3" },
+        { "id": "b", "text": "6" },
+        { "id": "c", "text": "8" },
+        { "id": "d", "text": "5" }
       ],
       "correctOption": "d",
-      "explanation": "بما أنّ 9 = 3 × 3، فكلُّ مضاعفٍ للعدد 9 هو مضاعفٌ للعدد 3 حتمًا.",
+      "explanation": "بما أنّ 20 = 5 × 4، فكلّ مضاعف لـ 20 مضاعفٌ لـ 5 حتمًا: مضاعف المضاعف مضاعف. أمّا 8 فلا: العدد 20 نفسه مضاعفٌ لـ 20 وليس مضاعفًا لـ 8 (20 = 8 × 2 + 4).",
       "difficulty": 3,
       "competencies": ["math.num.multiples-diviseurs"]
     },
     {
-      "prompt": "ثلاثةُ عدّائين: يكمل الأوّل دورةً كلّ 2 دقيقة، والثاني كلّ 3، والثالث كلّ 4، وانطلقوا معًا. بعد كم دقيقةً يلتقون جميعًا عند الانطلاق؟",
+      "prompt": "ثلاثة أجراسٍ تدقّ معًا، ثمّ يدقّ الأوّل كلّ 3 دقائق والثاني كلّ 5 دقائق والثالث كلّ 6 دقائق. بعد كم دقيقةً تدقّ الثلاثة معًا من جديد؟",
       "options": [
-        { "id": "a", "text": "24", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
-        { "id": "b", "text": "9", "misconceptionTag": "math.num.ppmc-par-addition" },
-        { "id": "c", "text": "6" },
-        { "id": "d", "text": "12" }
+        { "id": "a", "text": "90", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
+        { "id": "b", "text": "14", "misconceptionTag": "math.num.ppmc-par-addition" },
+        { "id": "c", "text": "15" },
+        { "id": "d", "text": "30" }
       ],
       "correctOption": "d",
-      "explanation": "يلتقون عند أصغرِ مضاعفٍ مشترك للأعداد 2 و3 و4، وهو 12 دقيقة (12 يقبل القسمة على 2 و3 و4).",
+      "explanation": "نحذف 3 لأنّ 6 = 3 × 2. نختبر مضاعفات 6 بالعدد 5: 6 و 12 و 18 و 24 لا، و 30 = 5 × 6 نعم. فتدقّ الأجراس معًا بعد 30 دقيقة. أمّا 90 فجداء الأعداد الثلاثة، و 14 مجموعها، و 15 مضاعفٌ لـ 3 و 5 فقط وليس مضاعفًا لـ 6.",
       "difficulty": 3,
       "competencies": ["math.num.multiples-diviseurs"]
     },
     {
-      "prompt": "كم عددًا من مضاعفات 7 محصورٌ بين 1 و30؟",
+      "prompt": "عددٌ محصورٌ بين 40 و 60: إذا عددناه ثلاثةً ثلاثةً بقي 2، وإذا عددناه أربعةً أربعةً بقي 2 أيضًا. ما هذا العدد؟",
       "options": [
-        { "id": "a", "text": "4" },
-        { "id": "b", "text": "3" },
-        { "id": "c", "text": "5" },
-        { "id": "d", "text": "7" }
+        { "id": "a", "text": "48", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        { "id": "b", "text": "46" },
+        { "id": "c", "text": "50" },
+        { "id": "d", "text": "56" }
       ],
-      "correctOption": "a",
-      "explanation": "مضاعفاتُ 7 المحصورة بين 1 و30 هي 7 و14 و21 و28، أي 4 أعداد.",
+      "correctOption": "c",
+      "explanation": "إذا أبعدنا الباقي 2 صار العدد مضاعفًا لـ 3 ولـ 4 معًا، أي مضاعفًا لـ 12، وهو محصور بين 38 و 58: مضاعف 12 الوحيد هناك هو 48. فالعدد 48 + 2 = 50. تحقّق: 50 = 3 × 16 + 2 = 4 × 12 + 2 ✓. أمّا 48 فهو العدد بعد إبعاد الباقي، و 56 = 4 × 14 لا يترك الباقي 2.",
       "difficulty": 3,
       "competencies": ["math.num.multiples-diviseurs"]
     }

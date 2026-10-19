@@ -9,7 +9,7 @@
     {
       "prompt": "في العدد 7 254 130، ما رتبة الرقم 2؟",
       "options": [
-        { "id": "a", "text": "الآلاف", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
+        { "id": "a", "text": "الآلاف" },
         { "id": "b", "text": "عشرات الآلاف", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
         { "id": "c", "text": "مئات الآلاف" },
         { "id": "d", "text": "الملايين", "misconceptionTag": "math.num.rang-du-chiffre-decale" }
@@ -71,15 +71,15 @@
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },
     {
-      "prompt": "حضر مباراةً 38 920 متفرّجًا. ما هذا العدد مقرّبًا إلى أقرب ألف؟",
+      "prompt": "نكوّن أعدادًا من أربعة أرقام بالأرقام 5 و 0 و 8 و 3 (كلّ رقمٍ مرّةً واحدة). ما أقربُ هذه الأعداد إلى 5 000؟",
       "options": [
-        { "id": "a", "text": "39 000" },
-        { "id": "b", "text": "38 000", "misconceptionTag": "math.num.arrondi-par-troncature" },
-        { "id": "c", "text": "38 900", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
-        { "id": "d", "text": "40 000", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
+        { "id": "a", "text": "5 038" },
+        { "id": "b", "text": "5 083" },
+        { "id": "c", "text": "5 308" },
+        { "id": "d", "text": "3 850" }
       ],
       "correctOption": "a",
-      "explanation": "رقم المئات هو 9 (أكبر من أو يساوي 5) فنُدوّر الآلاف إلى الأعلى: 38 920 يصبح 39 000. الخطأ الشائع تدويرها نزولًا إلى 38 000.",
+      "explanation": "لنقترب من 5 000 نبدأ بالرقم 5، ثمّ نضع الأرقام الباقية تصاعديًّا لنبقى أقرب ما يمكن: 5 038، وهو يبعد عن 5 000 بـ 38 فقط. أمّا 5 083 فيبعد بـ 83، و 5 308 بـ 308. وأكبر عددٍ يبدأ بـ 3 هو 3 850، ويبعد عن 5 000 بـ 1 150.",
       "difficulty": 3,
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },

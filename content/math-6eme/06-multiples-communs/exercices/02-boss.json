@@ -7,28 +7,28 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "العددُ 0 مضاعفٌ لـ:",
+      "prompt": "ما العددُ الذي هو مضاعفٌ لكلّ الأعداد الطبيعيّة؟",
       "options": [
-        { "id": "a", "text": "العدد 0 فقط" },
-        { "id": "b", "text": "كلّ الأعداد" },
-        { "id": "c", "text": "الأعداد الزوجية" },
-        { "id": "d", "text": "لا شيء" }
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "1" },
+        { "id": "c", "text": "10" },
+        { "id": "d", "text": "لا يوجد" }
       ],
-      "correctOption": "b",
-      "explanation": "بما أنّ b × 0 = 0 مهما كان العدد b، فإنّ 0 مضاعفٌ لكلّ الأعداد، لا للأعداد الزوجية فقط.",
+      "correctOption": "a",
+      "explanation": "0 = b × 0 مهما كان العدد b، فالعدد 0 مضاعفٌ لكلّ عدد. أمّا 1 فليس مضاعفًا للعدد 2 (1 ليس في قائمة 0، 2، 4…)، و 10 ليس مضاعفًا للعدد 3.",
       "difficulty": 1,
       "competencies": ["math.num.multiples-diviseurs"]
     },
     {
-      "prompt": "أيُّ الأعداد التالية مضاعفٌ للعددين 2 و5 معًا؟",
+      "prompt": "أيُّ الأعداد التالية مضاعفٌ للعددين 3 و 5 معًا؟",
       "options": [
         { "id": "a", "text": "25", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "b", "text": "14", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "c", "text": "30" },
-        { "id": "d", "text": "12", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
+        { "id": "b", "text": "21", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "c", "text": "45" },
+        { "id": "d", "text": "50", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
       ],
       "correctOption": "c",
-      "explanation": "العددُ مضاعفٌ للعددين 2 و5 معًا إذا كان مضاعفًا للعدد 10؛ 30 = 10 × 3.",
+      "explanation": "العدد مضاعفٌ للعددين 3 و 5 معًا إذا كان مضاعفًا لكلٍّ منهما: 45 = 3 × 15 = 5 × 9. أمّا 25 و 50 فمضاعفان لـ 5 فقط، و 21 مضاعفٌ لـ 3 فقط.",
       "difficulty": 2,
       "competencies": ["math.num.multiples-diviseurs"]
     },
@@ -63,18 +63,18 @@
     {
       "prompt": "أيُّ عبارةٍ صحيحة؟",
       "options": [
-        { "id": "a", "text": "15 مضاعفٌ للعدد 3 والعدد 4", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "b", "text": "15 قاسمٌ للعدد 3", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
-        { "id": "c", "text": "15 مضاعفٌ للعدد 3 والعدد 5" },
-        { "id": "d", "text": "15 مضاعفٌ للعدد 4" }
+        { "id": "a", "text": "21 مضاعفٌ للعدد 3 والعدد 4", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        { "id": "b", "text": "21 قاسمٌ للعدد 7", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
+        { "id": "c", "text": "21 مضاعفٌ للعدد 3 والعدد 7" },
+        { "id": "d", "text": "21 مضاعفٌ للعدد 6" }
       ],
       "correctOption": "c",
-      "explanation": "بما أنّ 15 = 3 × 5، فإنّ 15 مضاعفٌ للعدد 3 وللعدد 5 معًا.",
+      "explanation": "بما أنّ 21 = 3 × 7، فإنّ 21 مضاعفٌ للعدد 3 وللعدد 7 معًا، و 7 قاسمٌ له لا العكس. وليس 21 مضاعفًا لـ 4 (21 = 4 × 5 + 1) ولا لـ 6 (21 = 6 × 3 + 3).",
       "difficulty": 3,
       "competencies": ["math.num.multiples-diviseurs"]
     },
     {
-      "prompt": "ما ثالثُ مضاعفٍ مشترك غيرِ معدومٍ للعددين 8 و 12؟",
+      "prompt": "نكتب مضاعفات العدد 8 ومضاعفات العدد 12. ما العددُ الثالثُ غيرُ المعدوم الذي يظهر في القائمتين معًا؟",
       "options": [
         { "id": "a", "text": "24" },
         { "id": "b", "text": "48" },

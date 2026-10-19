@@ -45,19 +45,15 @@
       "competencies": ["math.num.mult-div-decimaux"]
     },
     {
-      "prompt": "ما ناتجُ 8,4 ÷ 2؟",
+      "prompt": "ما ناتجُ 8,8 ÷ 4؟",
       "options": [
-        {
-          "id": "a",
-          "text": "4,02",
-          "misconceptionTag": "math.num.zero-intercale-dans-le-resultat"
-        },
-        { "id": "b", "text": "42", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
-        { "id": "c", "text": "6,4", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "4,2" }
+        { "id": "a", "text": "2,02", "misconceptionTag": "math.num.zero-intercale-dans-le-resultat" },
+        { "id": "b", "text": "22", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        { "id": "c", "text": "2,2" },
+        { "id": "d", "text": "4,8" }
       ],
-      "correctOption": "d",
-      "explanation": "نقسم على عددٍ طبيعيّ: 8,4 ÷ 2 = 4,2 (نتحقّق: 2 × 4,2 = 8,4).",
+      "correctOption": "c",
+      "explanation": "نقسم الجزء الصحيح: 8 ÷ 4 = 2، ثمّ ننزل الرقم العشريّ 8 فنضع الفاصلة في الخارج: 8 أعشار ÷ 4 = 2 من الأعشار. إذن 8,8 ÷ 4 = 2,2 (نتحقّق: 4 × 2,2 = 8,8).",
       "difficulty": 2,
       "competencies": ["math.num.mult-div-decimaux"]
     },

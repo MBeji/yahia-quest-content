@@ -7,19 +7,15 @@
   "displayOrder": 3,
   "questions": [
     {
-      "prompt": "كيف نكتب بالأرقام «ثلاثة فاصل سبعة»؟",
+      "prompt": "كيف نكتب بالأرقام «خمسة فاصل تسعة أعشار»؟",
       "options": [
-        { "id": "a", "text": "3,7" },
-        {
-          "id": "b",
-          "text": "37",
-          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
-        },
-        { "id": "c", "text": "0,37", "misconceptionTag": "math.num.virgule-mal-placee" },
-        { "id": "d", "text": "3,07", "misconceptionTag": "math.num.zero-apres-virgule-ignore" }
+        { "id": "a", "text": "5,9" },
+        { "id": "b", "text": "59", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
+        { "id": "c", "text": "0,59", "misconceptionTag": "math.num.virgule-mal-placee" },
+        { "id": "d", "text": "5,09", "misconceptionTag": "math.num.rang-decimal-confondu" }
       ],
       "correctOption": "a",
-      "explanation": "«ثلاثة» جزءٌ صحيح و«سبعة أعشار» جزءٌ عشريّ، فالعددُ 3,7.",
+      "explanation": "«خمسة» هو الجزء الصحيح، فنكتب 5 ثمّ الفاصلة مباشرةً بعد رقم الآحاد؛ و«تسعة أعشار» رتبةٌ واحدة بعد الفاصلة: 5,9. أمّا 5,09 فتسعة أجزاء من المئة.",
       "difficulty": 1,
       "competencies": ["math.num.decimaux-sens"]
     },
@@ -50,45 +46,41 @@
       "competencies": ["math.num.comparaison-decimaux"]
     },
     {
-      "prompt": "ما تفكيكُ العدد 5,07؟",
+      "prompt": "ما تفكيكُ العدد 8,09؟",
       "options": [
-        { "id": "a", "text": "5 + 0,7", "misconceptionTag": "math.num.rang-decimal-confondu" },
-        { "id": "b", "text": "5 + 0,007", "misconceptionTag": "math.num.rang-decimal-confondu" },
-        {
-          "id": "c",
-          "text": "50 + 7",
-          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
-        },
-        { "id": "d", "text": "5 + 0,07" }
+        { "id": "a", "text": "8 + 0,9", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "b", "text": "8 + 0,009", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "c", "text": "800 + 9", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
+        { "id": "d", "text": "8 + 0,09" }
       ],
       "correctOption": "d",
-      "explanation": "5,07 فيه 0 أعشار و 7 أجزاء من المئة، أي 5 + 0,07.",
+      "explanation": "8,09 فيه 0 أعشار و 9 أجزاء من المئة، أي 8 + 0,09؛ والرتبة التي رقمها 0 لا تظهر في المجموع.",
       "difficulty": 2,
       "competencies": ["math.num.decimaux-sens"]
     },
     {
-      "prompt": "ما تدويرُ 14,62 إلى أقرب وحدة؟",
+      "prompt": "ما تدويرُ 23,71 إلى أقرب وحدة؟",
       "options": [
-        { "id": "a", "text": "15" },
-        { "id": "b", "text": "14", "misconceptionTag": "math.num.arrondi-par-troncature" },
-        { "id": "c", "text": "14,6", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
-        { "id": "d", "text": "14,7", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
+        { "id": "a", "text": "24" },
+        { "id": "b", "text": "23", "misconceptionTag": "math.num.arrondi-par-troncature" },
+        { "id": "c", "text": "23,7", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
+        { "id": "d", "text": "20", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
       ],
       "correctOption": "a",
-      "explanation": "الرقمُ بعد الوحدات هو 6 (≥ 5) فنُدوّر الوحداتِ صعودًا: 14,62 ≈ 15.",
+      "explanation": "الرقم الذي يلي الآحاد هو 7 (≥ 5) فنصعد: 23,71 ≈ 24. أمّا 23 فقطعٌ عند الفاصلة، و 23,7 تدويرٌ إلى العُشر، و 20 تدويرٌ إلى العشرة.",
       "difficulty": 2,
       "competencies": ["math.num.decimaux-sens"]
     },
     {
-      "prompt": "العدد 0,3 يساوي كم جزءًا من المئة؟",
+      "prompt": "العدد 0,8 يساوي كم جزءًا من الألف؟",
       "options": [
-        { "id": "a", "text": "3", "misconceptionTag": "math.num.rang-decimal-confondu" },
-        { "id": "b", "text": "300", "misconceptionTag": "math.num.rang-decimal-confondu" },
-        { "id": "c", "text": "30" },
-        { "id": "d", "text": "0,03", "misconceptionTag": "math.num.rang-decimal-confondu" }
+        { "id": "a", "text": "8", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "b", "text": "80", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "c", "text": "800" },
+        { "id": "d", "text": "0,008", "misconceptionTag": "math.num.rang-decimal-confondu" }
       ],
       "correctOption": "c",
-      "explanation": "0,3 = 0,30 = 30 جزءًا من المئة.",
+      "explanation": "0,8 = 0,80 = 0,800: نضيف صفرين على اليمين فلا تتغيّر القيمة، ويصير الرقم الأخير في رتبة الأجزاء من الألف. إذن 0,8 = 800 جزء من الألف.",
       "difficulty": 3,
       "competencies": ["math.num.decimaux-sens"]
     }

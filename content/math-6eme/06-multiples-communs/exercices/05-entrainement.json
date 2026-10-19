@@ -25,7 +25,7 @@
       "competencies": ["math.num.multiples-diviseurs"]
     },
     {
-      "prompt": "ما أصغرُ مضاعفٍ مشترك غيرِ معدومٍ للعددين 150 و 200؟",
+      "prompt": "نختبر مضاعفات العدد 200. ما أوّلُ مضاعفٍ غيرِ معدومٍ للعدد 200 يكون مضاعفًا للعدد 150 أيضًا؟",
       "options": [
         { "id": "a", "text": "50", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
         { "id": "b", "text": "350", "misconceptionTag": "math.num.ppmc-par-addition" },
@@ -51,15 +51,15 @@
       "competencies": ["math.num.multiples-diviseurs"]
     },
     {
-      "prompt": "ما المضاعفُ الرابعُ غيرُ المعدوم للعدد 7؟",
+      "prompt": "ما المضاعفُ الخامسُ غيرُ المعدوم للعدد 12؟",
       "options": [
-        { "id": "a", "text": "21" },
-        { "id": "b", "text": "28" },
-        { "id": "c", "text": "35" },
-        { "id": "d", "text": "14" }
+        { "id": "a", "text": "48" },
+        { "id": "b", "text": "60" },
+        { "id": "c", "text": "72" },
+        { "id": "d", "text": "17", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "b",
-      "explanation": "المضاعفُ الرابعُ غيرُ المعدوم للعدد 7 هو 7 × 4 = 28 (المضاعفاتُ: 7، 14، 21، 28).",
+      "explanation": "المضاعفات غير المعدومة للعدد 12 هي 12، 24، 36، 48، 60…؛ فالخامس هو 12 × 5 = 60. أمّا 48 فالرابع و 72 السادس، و 17 مجموع 12 و 5 لا جداؤهما.",
       "difficulty": 2,
       "competencies": ["math.num.multiples-diviseurs"]
     },
@@ -72,15 +72,15 @@
       "competencies": ["math.num.multiples-diviseurs"]
     },
     {
-      "prompt": "إذا كان 6 قاسمًا لعددٍ، فإنّ هذا العددَ مضاعفٌ للعدد 6 وأيضًا للعددين:",
+      "prompt": "إذا كان 10 قاسمًا لعددٍ، فإنّ هذا العددَ مضاعفٌ للعدد 10 وأيضًا للعددين:",
       "options": [
-        { "id": "a", "text": "2 و3" },
-        { "id": "b", "text": "4 و5" },
-        { "id": "c", "text": "5 و7" },
-        { "id": "d", "text": "7 و8" }
+        { "id": "a", "text": "2 و 5" },
+        { "id": "b", "text": "3 و 7" },
+        { "id": "c", "text": "4 و 6" },
+        { "id": "d", "text": "20 و 30", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" }
       ],
       "correctOption": "a",
-      "explanation": "بما أنّ 6 = 2 × 3، فكلُّ مضاعفٍ للعدد 6 هو مضاعفٌ للعددين 2 و3 أيضًا.",
+      "explanation": "بما أنّ 10 = 2 × 5، فكلّ مضاعف للعدد 10 مضاعفٌ للعددين 2 و 5 أيضًا: مضاعف المضاعف مضاعف. أمّا 20 و 30 فمضاعفان للعدد 10 لا قاسمان له: العدد 10 نفسه ليس مضاعفًا لـ 20.",
       "difficulty": 3,
       "competencies": ["math.num.multiples-diviseurs"]
     },

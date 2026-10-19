@@ -68,3 +68,34 @@ rendu des cours et résumés : aucun résidu Markdown ; scan de notation : 0.
 4. Non exercés volontairement (◐) : moyenne, problèmes « somme et différence », trois multiples consécutifs de somme donnée.
 5. Le commit de sauvegarde du pilote (`c7c0dc06`) contient une version intermédiaire de ce travail ; les fichiers finaux
    sont ceux de l'arbre de travail.
+
+## Corrections après audit (audit-B1.md : 0 critique, 47 majeurs, 16 mineurs)
+
+Tout est appliqué, au même rang et à la même difficulté, textes de l'audit recalculés (script `Decimal`/`lcm` sur chaque
+remplacement : une seule réponse, clé jamais strictement la plus longue, aucun exemple résolu du cours redonné — contrôle
+par recherche des données dans chaque `cours.md`).
+
+- **Famille 1 — 35 questions qui redonnaient le cours** : changées en données (ch. 02 ×5 ; ch. 03 ×8 + les 2 doublons de
+  « 4,5 = 4,50 » ; ch. 05 ×7 ; ch. 06 ×13 ; ch. 01 `02-boss` Q5 doublon du Q4 d'arrondi). Deux remplacements ont de plus
+  été reformulés pour ne pas former de paire proche avec une autre question (03 `02-boss` Q3 → « quel symbole ? » ; 06
+  `02-boss` Q6, `01-pratique` Q6, `05-entrainement` Q2) et `05-entrainement` Q4 (ch. 06) passe de 8 à 12 parce que la liste des
+  multiples de 8 figure dans le cours.
+- **Famille 2 — 9 étiquettes inexactes** : rendues muettes (01 ×3 rangs à deux crans d'écart ; 03 `01-pratique` Q6, `04-defi` Q3 et Q6 ;
+  04 `05-entrainement` Q3 ; 05 `05-entrainement` Q3) ou corrigées (01 `01-pratique` Q4 et `05-entrainement` Q3 → zéro intercalaire ;
+  02 `05-entrainement` Q2 : « 7 099 » = vraie retenue oubliée ; 03 `02-boss` Q4 : « 5,605 > 5,65 > 5,56 > 5,6 » = compare-by-length exact ;
+  04 `05-entrainement` Q5 : « 13,6 » = vraie soustraction petit-du-grand).
+- **Autres majeurs/mineurs** : 03 quiz Q4 (options équivalentes) ; 04 `05-entrainement` Q7 en variante (33,5 kg, champ `manuel` retiré —
+  il n'y a plus de reprise `أقيّم 10`) ; 04 cours § 1 : deux `> ⚠️` ajoutés (virgule perdue, zéro mal placé) ; 01 : option « −1 » et
+  phrase du cours retirées (relatifs ⛔), `04-defi` Q4 remplacée par un « sens inverse », ancrage du § 5 changé en collecte de
+  dons (mêmes nombres) ; 02 cours § 2 : piège renommé « طرح الأصغر من الأكبر » + second piège « استلاف دون إنقاص » (5 000 − 1 764) ;
+  03 : figure § 2 (texte arabe retiré, libellés de rang en 9) et exemple du piège d'ordre ; 04 : `02-boss` Q1 et `05-entrainement` Q1 variés ;
+  06 : quiz Q3 (2 et 5), `01-pratique` Q1 (options), `02-boss` Q1 reformulée, cours § 2 sans « ⟺ » ; 05 : `operation-inverse` muette sur
+  « 8,4 ».
+- **Écarté** : (a) B1-06-5 — mettre **ليس** en gras dans `03-revision` Q4 : un champ de question n'est pas du Markdown (`content:qa` refuse
+  `**` dans un énoncé, erreur vue sur le ch. 09), les astérisques s'afficheraient ; énoncé laissé tel quel. (b) B1-02-3 en partie : `01-pratique` Q6 (25 × 4,
+  d1) gardé, l'audit le jugeant acceptable ; seule `03-revision` Q4 est changée.
+- Ordre des options : les nouveaux items numériques sont en ordre croissant ou décroissant (huit inversés pour garder les positions de clé équilibrées).
+
+Contrôles après correction : `content:check` ✓ · `content:qa` 0 erreur sur le lot (3 avertissements en `14`) · `content:figures:check` ✓ ·
+`content:tranche --fresh --strict-longest --strict-lessons` ✓ (0/91 clé la plus longue, 0 paire proche, positions a 26 % · b 29 % · c 28 % · d 17 %) ·
+prettier ✓ · rendu des 6 cours et résumés : 0 résidu (`**`, `_`, `:::`, `$$`, `⟺`) · scans de notation : 0.

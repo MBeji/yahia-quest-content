@@ -33,36 +33,23 @@
       "competencies": ["math.num.decimaux-sens"]
     },
     {
-      "prompt": "قارن بين 12,4 و 12,40.",
+      "prompt": "ما الرمز المناسب في المقارنة التالية؟\n7,08 … 7,8",
       "options": [
-        { "id": "a", "text": "12,4 < 12,40", "misconceptionTag": "math.dec.compare-by-length" },
-        { "id": "b", "text": "12,4 = 12,40" },
-        { "id": "c", "text": "12,4 > 12,40" },
-        { "id": "d", "text": "لا يمكن المقارنة" }
+        { "id": "a", "text": ">", "misconceptionTag": "math.dec.compare-by-length" },
+        { "id": "b", "text": "=", "misconceptionTag": "math.num.zero-apres-virgule-ignore" },
+        { "id": "c", "text": "<" }
       ],
-      "correctOption": "b",
-      "explanation": "الصفرُ على يمين الجزء العشريّ لا يُغيّر القيمة، إذن 12,4 = 12,40.",
+      "correctOption": "c",
+      "explanation": "نساوي الطول: 7,08 و 7,80. الجزءان الصحيحان متساويان (7)، ثمّ الأعشار: 0 < 8، إذن 7,08 < 7,8. الصفر بين الفاصلة والرقم يغيّر العدد.",
       "difficulty": 2,
       "competencies": ["math.num.comparaison-decimaux"]
     },
     {
       "prompt": "رتّب تنازليًّا: 5,6 ؛ 5,56 ؛ 5,65 ؛ 5,605.",
       "options": [
-        {
-          "id": "a",
-          "text": "5,65 > 5,6 > 5,605 > 5,56",
-          "misconceptionTag": "math.dec.compare-by-length"
-        },
-        {
-          "id": "b",
-          "text": "5,6 > 5,65 > 5,605 > 5,56",
-          "misconceptionTag": "math.dec.compare-by-length"
-        },
-        {
-          "id": "c",
-          "text": "5,56 > 5,6 > 5,605 > 5,65",
-          "misconceptionTag": "math.dec.compare-by-length"
-        },
+        { "id": "a", "text": "5,605 > 5,65 > 5,56 > 5,6", "misconceptionTag": "math.dec.compare-by-length" },
+        { "id": "b", "text": "5,6 > 5,65 > 5,605 > 5,56" },
+        { "id": "c", "text": "5,56 > 5,6 > 5,605 > 5,65", "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus" },
         { "id": "d", "text": "5,65 > 5,605 > 5,6 > 5,56" }
       ],
       "correctOption": "d",
