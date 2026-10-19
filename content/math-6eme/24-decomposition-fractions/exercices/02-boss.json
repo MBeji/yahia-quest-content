@@ -31,9 +31,7 @@
       "correctOption": "a",
       "explanation": "مجموع البُسُط 2 + 8 + 15 + 4 + 1 = 30، والمقام يبقى 30؛ والنتيجة 30/30 تساوي الوحدة.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "اكتب 49/9 عددًا صحيحًا طبيعيًّا وجزءًا كسريًّا بسطُه أصغر من مقامه.",
@@ -61,9 +59,7 @@
       "correctOption": "a",
       "explanation": "نقسم 49 على 9: الخارج 5 والباقي 4، لأنّ 49 = (9 × 5) + 4.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أكمل: …/20 + 4/20 + 15/20 = 28/20",
@@ -90,9 +86,7 @@
       "correctOption": "a",
       "explanation": "الحدّان المعلومان يعطيان 19/20، والناقص هو 28/20 ناقص 19/20 أي 9/20.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أكمل: … + 9/17 = 13/17",
@@ -119,9 +113,7 @@
       "correctOption": "a",
       "explanation": "نطرح البُسُط ونُبقي المقام: 13 ناقص 9 يساوي 4، فالحدّ الناقص هو 4/17.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أكمل: … + 4 = 19/4",
@@ -149,9 +141,7 @@
       "correctOption": "a",
       "explanation": "نكتب 4 في صورة 16/4، فيكون الحدّ الناقص 19/4 ناقص 16/4 أي 3/4.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "في السادسة «أ» 4 تلاميذ من 28 دون التملّك الأدنى، وفي السادسة «ب» 3 من 25؛ وفي القسمين معًا 7 من 53. فهل هذا يعني أنّ 4/28 + 3/25 = 7/53؟",
@@ -179,9 +169,69 @@
       "correctOption": "a",
       "explanation": "المقام يدلّ على الوحدة المرجعيّة: مرّةً قسمٌ من 28، ومرّةً مجموعةٌ من 53. عددنا التلاميذ من جديد (4 + 3 = 7) وعددنا المجموعة من جديد (28 + 25 = 53)؛ أمّا جمع الكسور فلا يمسّ المقام أبدًا.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "prompt": "أكمل: 7/9 + 3 = …/9",
+      "options": [
+        {
+          "id": "a",
+          "text": "10/9"
+        },
+        {
+          "id": "b",
+          "text": "21/9"
+        },
+        {
+          "id": "c",
+          "text": "34/9"
+        },
+        {
+          "id": "d",
+          "text": "7/12",
+          "misconceptionTag": "math.frac.add-denominators"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نكتب 3 بمقام 9: 3 = (3 × 9)/9 = 27/9. ثمّ 7/9 + 27/9 = 34/9.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "prompt": "ما الحدّ الناقص في … + 5 = 33/6 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/6"
+        },
+        {
+          "id": "b",
+          "text": "28/6"
+        },
+        {
+          "id": "c",
+          "text": "3/30"
+        },
+        {
+          "id": "d",
+          "text": "38/6",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نكتب 5 بمقام 6: 5 = 30/6. الحدّ الناقص = 33/6 − 30/6 = 3/6. التحقّق: 3/6 + 30/6 = 33/6.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "نكتب 7/12 مجموع كسرين بمقام 12 وبسطين صحيحين طبيعيين غير منعدمين. كم تفكيكًا مختلفًا نجد دون اعتبار الترتيب؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "نبحث عن بسطين مجموعهما 7 والمقام يبقى 12: 1 و 6، 2 و 5، 3 و 4. فهناك ثلاثة تفكيكات: 1/12 + 6/12 و 2/12 + 5/12 و 3/12 + 4/12.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
     }
   ]
 }

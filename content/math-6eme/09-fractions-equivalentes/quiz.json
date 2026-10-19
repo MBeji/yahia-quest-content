@@ -4,8 +4,16 @@
     {
       "prompt": "ما الكسرُ المساوي لـ 1/2 بمقامٍ يساوي 4؟",
       "options": [
-        { "id": "a", "text": "1/4", "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie" },
-        { "id": "b", "text": "4/2", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
+        {
+          "id": "a",
+          "text": "1/4",
+          "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie"
+        },
+        {
+          "id": "b",
+          "text": "4/2",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
         { "id": "c", "text": "2/4" },
         { "id": "d", "text": "3/4" }
       ],
@@ -15,15 +23,23 @@
       "competencies": ["math.frac.equivalence"]
     },
     {
-      "prompt": "لاختزال كسرٍ، نقسم البسطَ والمقامَ على:",
+      "prompt": "لاختزال كسرٍ نقسم:",
       "options": [
-        { "id": "a", "text": "عددين مختلفين" },
-        { "id": "b", "text": "نفسِ العدد (قاسمٍ مشترك)" },
-        { "id": "c", "text": "البسط فقط" },
-        { "id": "d", "text": "المقام فقط" }
+        {
+          "id": "a",
+          "text": "البسط وحده على عدد",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        },
+        {
+          "id": "b",
+          "text": "المقام وحده على عدد",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        },
+        { "id": "c", "text": "البسط والمقام على عددين مختلفين" },
+        { "id": "d", "text": "البسط والمقام على العدد نفسه" }
       ],
-      "correctOption": "b",
-      "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك نفسِه حتّى لا تتغيّر قيمةُ الكسر.",
+      "correctOption": "d",
+      "explanation": "الاختزال يقسم البسط والمقام معًا على قاسم مشترك لهما، أي على العدد نفسه، فتبقى قيمة الكسر كما هي. قسمة أحد الحدّين وحده أو قسمتهما على عددين مختلفين تُغيّر القيمة.",
       "difficulty": 1,
       "competencies": ["math.frac.equivalence"]
     },
@@ -32,7 +48,11 @@
       "options": [
         { "id": "a", "text": "3/4" },
         { "id": "b", "text": "2/4" },
-        { "id": "c", "text": "6/8", "misconceptionTag": "math.frac.reduction-incomplete" },
+        {
+          "id": "c",
+          "text": "6/8",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        },
         { "id": "d", "text": "1/2" }
       ],
       "correctOption": "a",
@@ -44,7 +64,11 @@
       "prompt": "ما العددُ المفقود: 2/3 = ؟/12؟",
       "options": [
         { "id": "a", "text": "6" },
-        { "id": "b", "text": "4", "misconceptionTag": "math.frac.equivalence-facteur-errone" },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.frac.equivalence-facteur-errone"
+        },
         { "id": "c", "text": "24" },
         { "id": "d", "text": "8" }
       ],
@@ -57,12 +81,33 @@
       "prompt": "أيُّ كسرٍ يساوي 3/4؟",
       "options": [
         { "id": "a", "text": "6/8" },
-        { "id": "b", "text": "4/3", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
+        {
+          "id": "b",
+          "text": "4/3",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
         { "id": "c", "text": "3/8" },
         { "id": "d", "text": "7/8" }
       ],
       "correctOption": "a",
       "explanation": "نضرب البسطَ والمقامَ في 2: 3/4 = (3×2)/(4×2) = 6/8، فهما متساويان.",
+      "difficulty": 2,
+      "competencies": ["math.frac.equivalence"]
+    },
+    {
+      "prompt": "نكتب 1/2 و 1/3 بمقامٍ مشترك. أيّ زوجٍ من الكسور صحيح؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/6 و 1/6",
+          "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie"
+        },
+        { "id": "b", "text": "2/6 و 3/6" },
+        { "id": "c", "text": "3/6 و 2/6" },
+        { "id": "d", "text": "3/5 و 2/5" }
+      ],
+      "correctOption": "c",
+      "explanation": "المقام المشترك 6 لأنّ 6 مضاعف لـ 2 و 3. نضرب حدّي 1/2 في 3: 1/2 = 3/6، ونضرب حدّي 1/3 في 2: 1/3 = 2/6. تغيير المقام وحده كما في 1/6 و 1/6 يغيّر قيمة الكسرين.",
       "difficulty": 2,
       "competencies": ["math.frac.equivalence"]
     }

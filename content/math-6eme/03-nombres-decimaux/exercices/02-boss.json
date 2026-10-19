@@ -7,23 +7,15 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "ما الجزءُ الصحيح في العدد 100,25؟",
+      "prompt": "كيف يُقرأ العدد 3,408؟",
       "options": [
-        { "id": "a", "text": "100" },
-        {
-          "id": "b",
-          "text": "25",
-          "misconceptionTag": "math.num.partie-entiere-et-decimale-confondues"
-        },
-        { "id": "c", "text": "0" },
-        {
-          "id": "d",
-          "text": "10 025",
-          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
-        }
+        { "id": "a", "text": "ثلاثة فاصل أربعمئة وثمانية أجزاء من الألف" },
+        { "id": "b", "text": "ثلاثة فاصل أربعمئة وثمانية أجزاء من المئة", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        { "id": "c", "text": "ثلاثة آلاف وأربعمئة وثمانية", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
+        { "id": "d", "text": "ثلاثة فاصل أربعة صفر ثمانية" }
       ],
       "correctOption": "a",
-      "explanation": "الجزءُ الصحيح هو ما يسبق الفاصلة: 100.",
+      "explanation": "نقرأ الجزء الصحيح 3، ثمّ «فاصل»، ثمّ الجزء العشريّ 408 متبوعًا باسم رتبة آخر رقم فيه: الرقم 8 في رتبة الأجزاء من الألف، فنقول «ثلاثة فاصل أربعمئة وثمانية أجزاء من الألف». لا نُهمل الفاصلة، ولا نقرأ الأرقام بعدها رقمًا رقمًا.",
       "difficulty": 1,
       "competencies": ["math.num.decimaux-sens"]
     },

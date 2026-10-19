@@ -20,11 +20,19 @@
       "competencies": ["math.frac.add-sous"]
     },
     {
-      "prompt": "ما ناتج 3/4 + 5/6 (وحّد على 12)؟",
+      "prompt": "ما ناتج 3/4 + 5/6؟",
       "options": [
-        { "id": "a", "text": "8/10", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
+        {
+          "id": "a",
+          "text": "8/10",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
         { "id": "b", "text": "19/12" },
-        { "id": "c", "text": "19/24", "misconceptionTag": "math.frac.add-denominators" },
+        {
+          "id": "c",
+          "text": "19/24",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
         { "id": "d", "text": "8/12" }
       ],
       "correctOption": "b",
@@ -36,7 +44,11 @@
       "prompt": "ما ناتج 2 − 3/5؟",
       "options": [
         { "id": "a", "text": "1/5" },
-        { "id": "b", "text": "10/5", "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee" },
+        {
+          "id": "b",
+          "text": "10/5",
+          "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee"
+        },
         { "id": "c", "text": "7/5" },
         { "id": "d", "text": "7/10" }
       ],
@@ -46,9 +58,13 @@
       "competencies": ["math.frac.add-sous"]
     },
     {
-      "prompt": "شربَ خالدٌ 1/3 من قارورة ماءٍ صباحًا و 2/5 منها ظهرًا. كم شرب إجمالًا؟ (وحّد على 15)",
+      "prompt": "شربَ خالدٌ 1/3 من قارورة ماءٍ صباحًا و 2/5 منها ظهرًا. كم شرب إجمالًا؟",
       "options": [
-        { "id": "a", "text": "3/8", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
+        {
+          "id": "a",
+          "text": "3/8",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
         { "id": "b", "text": "3/15" },
         { "id": "c", "text": "11/30" },
         { "id": "d", "text": "11/15" }
@@ -59,7 +75,7 @@
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     },
     {
-      "prompt": "ما ناتج 5/8 − 1/4 (وحّد على 8)؟",
+      "prompt": "ما ناتج 5/8 − 1/4؟",
       "options": [
         { "id": "a", "text": "3/8" },
         { "id": "b", "text": "4/4" },
@@ -72,17 +88,67 @@
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     },
     {
-      "prompt": "في بستان، 2/5 منه ورودٌ و 1/4 منه أشجار. ما الكسرُ المتبقّي للعشب؟ (وحّد على 20)",
+      "prompt": "في بستان، 2/5 منه ورودٌ و 1/4 منه أشجار. ما الكسرُ المتبقّي للعشب؟",
       "options": [
         { "id": "a", "text": "13/20" },
         { "id": "b", "text": "7/20" },
-        { "id": "c", "text": "3/9", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
+        {
+          "id": "c",
+          "text": "3/9",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
         { "id": "d", "text": "7/9" }
       ],
       "correctOption": "b",
       "explanation": "نوحّد على 20: 2/5 = 8/20 و 1/4 = 5/20؛ المستعمل = 8/20 + 5/20 = 13/20؛ والباقي = 20/20 − 13/20 = 7/20.",
       "difficulty": 3,
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "خزّان ممتلئ إلى 3/5 سعته. صُبّ فيه 1200 L فصار ممتلئًا إلى 11/15 من سعته. كم لترًا سعة الخزّان؟",
+      "answerKey": {
+        "value": 9000
+      },
+      "explanation": "الماء المصبوب هو الفرق بين الكسرين: 11/15 − 3/5 = 11/15 − 9/15 = 2/15 من السعة. فالجزء 2/15 يساوي 1200 L، والجزء 1/15 يساوي 1200 ÷ 2 = 600 L، والسعة كلّها 15 جزءًا: 600 × 15 = 9000 L. تحقّق: 3/5 من 9000 هو 5400 L، و11/15 من 9000 هو 6600 L.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "اقتسم ثلاثة إخوة قطعة أرض: نال الأوّل 2/7 مساحتها ونال الثاني 1/3 منها. ما الكسر الذي يمثّل المساحة التي نالها الثالث؟",
+      "options": [
+        { "id": "a", "text": "1/21" },
+        {
+          "id": "b",
+          "text": "7/10",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        {
+          "id": "c",
+          "text": "13/21",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        { "id": "d", "text": "8/21" }
+      ],
+      "correctOption": "d",
+      "explanation": "نوحّد على 21: 2/7 = 6/21 و1/3 = 7/21، وما نالاه معًا 13/21. الثالث نال الباقي: 21/21 − 13/21 = 8/21. الكسر 13/21 هو ما نالاه معًا، والكسر 7/10 ناتج عن جمع البسطين والمقامين ثمّ الطرح من 1.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "اقتسم ثلاثة إخوة قطعة أرض: نال الأوّل 2/7 مساحتها ونال الثاني 1/3 منها، وتفوق مساحة الثاني مساحة الأوّل بـ 125 m². كم متّرًا مربّعًا نال الثالث؟",
+      "answerKey": {
+        "value": 1000
+      },
+      "explanation": "الفرق بين نصيبي الأوّل والثاني: 7/21 − 6/21 = 1/21 من الأرض، وهو 125 m². فالأرض كلّها 21 × 125 = 2625 m²، والثالث نال 8/21 منها: 8 × 125 = 1000 m². تحقّق: 750 + 875 + 1000 = 2625.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "502603",
+    "pages": "189-194",
+    "items": ["T3 sit. 1 أ", "T3 sit. 1 ب"]
+  }
 }

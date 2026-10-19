@@ -83,6 +83,19 @@
       "explanation": "ثمنُ 12 كتابًا = 12 × 18 = 216 دينارًا، والباقي = 250 − 216 = 34 دينارًا.",
       "difficulty": 3,
       "competencies": ["math.num.operations-entiers"]
+    },
+    {
+      "prompt": "كلّ كتابةٍ ممّا يلي صحيحةٌ حسابيًّا. أيّها هي القسمةُ الإقليديّة للعدد 1 000 على 24؟",
+      "options": [
+        { "id": "a", "text": "1 000 = 24 × 38 + 88", "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur" },
+        { "id": "b", "text": "1 000 = 24 × 39 + 64", "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur" },
+        { "id": "c", "text": "1 000 = 24 × 40 + 40", "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur" },
+        { "id": "d", "text": "1 000 = 24 × 41 + 16" }
+      ],
+      "correctOption": "d",
+      "explanation": "الكتابات الأربع صحيحة حسابيًّا، فمثلًا 24 × 41 = 984 ثمّ 984 + 16 = 1 000. لكنّ القسمة الإقليديّة تشترط أن يكون الباقي أصغر من القاسم 24. حين يكون الباقي 88 أو 64 أو 40 فهو أكبر من القاسم 24، فالخارج لم يكتمل: بقي في الباقي مضاعفات أخرى للعدد 24. أمّا الباقي 16 فأصغر من 24، فالخارج 41 والباقي 16 ✓.",
+      "difficulty": 3,
+      "competencies": ["math.num.operations-entiers"]
     }
   ]
 }

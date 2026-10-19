@@ -9,10 +9,18 @@
     {
       "prompt": "ماذا يعني الرمز (د1) ⊥ (د2)؟",
       "options": [
-        { "id": "a", "text": "أنّهما متوازيان", "misconceptionTag": "math.geo.symboles-perpendiculaire-parallele-confondus" },
+        {
+          "id": "a",
+          "text": "أنّهما متوازيان",
+          "misconceptionTag": "math.geo.symboles-perpendiculaire-parallele-confondus"
+        },
         { "id": "b", "text": "أنّهما متعامدان" },
         { "id": "c", "text": "أنّهما متساويان" },
-        { "id": "d", "text": "أنّهما متقاطعان بزاوية حادّة", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" }
+        {
+          "id": "d",
+          "text": "أنّهما متقاطعان بزاوية حادّة",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        }
       ],
       "correctOption": "b",
       "explanation": "الرمز ⊥ يعني التعامد: (د1) و (د2) يتقاطعان مكوّنَين زاوية قائمة.",
@@ -20,25 +28,34 @@
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "ما طبيعةُ هذين المستقيمين؟ <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"38\" x2=\"92\" y2=\"38\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"8\" y1=\"66\" x2=\"92\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"46,32 53,38 46,44\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><polyline points=\"46,60 53,66 46,72\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
-      "options": [
-        { "id": "a", "text": "متعامدان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "b", "text": "متوازيان" },
-        { "id": "c", "text": "متقاطعان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "d", "text": "منفصلان بلا علاقة" }
-      ],
-      "correctOption": "b",
-      "explanation": "السهمان المتماثلان والبعدُ الثابت بين المستقيمين يدلّان على التوازي.",
+      "type": "numeric",
+      "prompt": "نريد رسم مستقيم (ن) يوازي المستقيم (ل) ويبعد عنه 3,5 سم. كم عدد الحلول الممكنة؟",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "البعد بين المتوازيين ثابت. نقيس 3,5 سم عموديًّا على (ل) من إحدى الجهتين فنجد مستقيمًا، ثمّ نقيس 3,5 سم من الجهة الأخرى فنجد مستقيمًا ثانيًا: العدد 2 حلّان.",
       "difficulty": 2,
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
       "prompt": "أيُّ العبارات التالية صحيحة؟",
       "options": [
-        { "id": "a", "text": "المستقيمان المتوازيان يتقاطعان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "b", "text": "المستقيمان المتعامدان لا يتقاطعان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
+        {
+          "id": "a",
+          "text": "المستقيمان المتوازيان يتقاطعان",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
+        {
+          "id": "b",
+          "text": "المستقيمان المتعامدان لا يتقاطعان",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
         { "id": "c", "text": "المستقيمان المتعامدان يكوّنان زاوية قائمة" },
-        { "id": "d", "text": "التعامد لا يحتاج إلى زاوية قائمة", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" }
+        {
+          "id": "d",
+          "text": "التعامد لا يحتاج إلى زاوية قائمة",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        }
       ],
       "correctOption": "c",
       "explanation": "المتعامدان يتقاطعان ويكوّنان زاوية قائمة؛ أمّا المتوازيان فلا يتقاطعان.",
@@ -59,15 +76,23 @@
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "ما طبيعةُ هذين المستقيمين؟ <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"72\" x2=\"92\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"22\" y1=\"92\" x2=\"78\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+      "prompt": "ساحة مدرسة مستطيلة عرضها [أب]. تُحفر قناة أولى تمرّ بالنقطة ق وتوازي [أب]، وقناة ثانية تمرّ بالنقطة ك وتعامد [أب]. ما وضعيّة القناتين؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"12,28 12,72 88,72 88,28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"33\" y1=\"37\" x2=\"43\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"43\" y1=\"37\" x2=\"33\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"61\" y1=\"53\" x2=\"71\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"71\" y1=\"53\" x2=\"61\" y2=\"63\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"8\" y=\"24\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"8\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text><text x=\"38\" y=\"36\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#b91c1c\">ق</text><text x=\"66\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#b91c1c\">ك</text></svg>",
       "options": [
-        { "id": "a", "text": "متعامدان", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
-        { "id": "b", "text": "متوازيان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "c", "text": "منطبقان" },
-        { "id": "d", "text": "متقاطعان غيرُ متعامدين" }
+        {
+          "id": "a",
+          "text": "متقاطعتان بزاوية حادّة",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        },
+        { "id": "b", "text": "منطبقتان" },
+        { "id": "c", "text": "متعامدتان" },
+        {
+          "id": "d",
+          "text": "متوازيتان",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        }
       ],
-      "correctOption": "d",
-      "explanation": "المستقيمان يتقاطعان بزاوية ليست قائمة (لا مربّعَ يدلّ على زاوية قائمة)، فهما متقاطعان غيرُ متعامدين.",
+      "correctOption": "c",
+      "explanation": "القناة الثانية عموديّة على (أب)، والأولى توازي (أب)؛ والعموديّ على أحد متوازيين عموديّ على الآخر، فالقناتان متعامدتان.",
       "difficulty": 2,
       "competencies": ["math.geo.droites-perp-para"]
     },
@@ -75,14 +100,23 @@
       "prompt": "إذا كان (د1) ⊥ (د) و (د2) ⊥ (د)، فإنّ:",
       "options": [
         { "id": "a", "text": "(د1) ∥ (د2)" },
-        { "id": "b", "text": "(د1) ⊥ (د2)", "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee" },
+        {
+          "id": "b",
+          "text": "(د1) ⊥ (د2)",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
         { "id": "c", "text": "(د1) و (د2) متقاطعان" },
         { "id": "d", "text": "لا شيء مؤكّد" }
       ],
       "correctOption": "a",
-      "explanation": "مستقيمان متعامدان مع المستقيم نفسِه (د) يكونان متوازيين: (د1) ∥ (د2).",
+      "explanation": "مستقيمان متعامدان مع المستقيم الثالث نفسِه يكونان متوازيين: (د1) ∥ (د2).",
       "difficulty": 3,
       "competencies": ["math.geo.droites-perp-para"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "502603",
+    "pages": "89-91",
+    "items": ["rév. 6 ex. 1", "rév. 6 ex. 3ج"]
+  }
 }

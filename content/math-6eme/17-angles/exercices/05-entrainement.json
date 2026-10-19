@@ -9,10 +9,22 @@
     {
       "prompt": "ما نوعُ هذه الزاوية؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"95\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"50\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"50\" y=\"72\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><circle cx=\"50\" cy=\"82\" r=\"2.5\" fill=\"currentColor\"/></svg>",
       "options": [
-        { "id": "a", "text": "حادّة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
+        {
+          "id": "a",
+          "text": "حادّة",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        },
         { "id": "b", "text": "قائمة" },
-        { "id": "c", "text": "منفرجة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
-        { "id": "d", "text": "مستقيمة", "misconceptionTag": "math.geo.type-d-angle-confondu" }
+        {
+          "id": "c",
+          "text": "منفرجة",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        },
+        {
+          "id": "d",
+          "text": "مستقيمة",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        }
       ],
       "correctOption": "b",
       "explanation": "المربّعُ الصغير عند الرأس علامةُ الزاوية القائمة (90°).",
@@ -22,9 +34,21 @@
     {
       "prompt": "الزاويةُ التي قيسُها 180° تُسمّى:",
       "options": [
-        { "id": "a", "text": "حادّة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
-        { "id": "b", "text": "قائمة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
-        { "id": "c", "text": "منفرجة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
+        {
+          "id": "a",
+          "text": "حادّة",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        },
+        {
+          "id": "b",
+          "text": "قائمة",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        },
+        {
+          "id": "c",
+          "text": "منفرجة",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        },
         { "id": "d", "text": "مستقيمة" }
       ],
       "correctOption": "d",
@@ -33,28 +57,28 @@
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "ما نوعُ هذه الزاوية؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"95\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"72\" y2=\"43\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"82\" r=\"2.5\" fill=\"currentColor\"/></svg>",
+      "prompt": "قال ضياء إنّ الزاوية القائمة تُبنى بأكثر من طريقتين. أيّ طريقة من الآتي تعطي زاوية قائمة؟",
       "options": [
-        { "id": "a", "text": "قائمة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
-        { "id": "b", "text": "منفرجة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
-        { "id": "c", "text": "حادّة" },
-        { "id": "d", "text": "مستقيمة", "misconceptionTag": "math.geo.type-d-angle-confondu" }
+        { "id": "a", "text": "جمع زاويتين قيس كلّ منهما 60°" },
+        { "id": "b", "text": "تنصيف زاوية قيسها 120°" },
+        { "id": "c", "text": "تنصيف الزاوية المستقيمة" },
+        { "id": "d", "text": "تنصيف زاوية قائمة" }
       ],
       "correctOption": "c",
-      "explanation": "الفتحةُ أصغرُ من 90°، فالزاوية حادّة.",
+      "explanation": "تنصيف الزاوية المستقيمة يعطي 180° ÷ 2 = 90°، فهو قائمة. أمّا تنصيف القائمة فيعطي 45°، وجمع زاويتين من 60° يعطي 120°، وتنصيف 120° يعطي 60°.",
       "difficulty": 2,
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "بأيّ أداةٍ نرسم زاويةً قيسُها 60° بدقّة؟",
+      "prompt": "نركّز الفرجار في رأس الزاوية فنرسم قوسًا يقطع ضلعها في ب، ثمّ نركّزه في ب بالفتحة نفسها فنقطع القوس الأوّل في ج. ما قيس الزاوية الناتجة عند الرأس؟",
       "options": [
-        { "id": "a", "text": "المنقلة" },
-        { "id": "b", "text": "الميزان" },
-        { "id": "c", "text": "المسطرة فقط" },
-        { "id": "d", "text": "الفرجار فقط" }
+        { "id": "a", "text": "90°" },
+        { "id": "b", "text": "120°" },
+        { "id": "c", "text": "45°" },
+        { "id": "d", "text": "60°" }
       ],
-      "correctOption": "a",
-      "explanation": "نستعمل المنقلة لقياس الزوايا ورسمها بقيسٍ محدّد مثل 60°.",
+      "correctOption": "d",
+      "explanation": "أ‌ب = أ‌ج = ب‌ج بالفتحة نفسها، فالمثلّث متساوي الأضلاع والزاوية عند الرأس 60°. وهذه الطريقة تُنتج 60° لا 90°، فالقائمة نبنيها بالكوس.",
       "difficulty": 2,
       "competencies": ["math.geo.angles-mesure"]
     },
@@ -62,7 +86,11 @@
       "prompt": "زاويتان متجاورتان قيسُهما 35° و 55°. ما قيسُ الزاوية الكلّية الناتجة؟",
       "options": [
         { "id": "a", "text": "90°" },
-        { "id": "b", "text": "20°", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        {
+          "id": "b",
+          "text": "20°",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
         { "id": "c", "text": "80°" },
         { "id": "d", "text": "100°" }
       ],
@@ -74,7 +102,11 @@
     {
       "prompt": "قيسُ هذه الزاوية 120°. هل هي أكبرُ أم أصغرُ من الزاوية القائمة؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"95\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"27\" y2=\"43\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"82\" r=\"2.5\" fill=\"currentColor\"/></svg>",
       "options": [
-        { "id": "a", "text": "أصغر", "misconceptionTag": "math.geo.type-d-angle-confondu" },
+        {
+          "id": "a",
+          "text": "أصغر",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        },
         { "id": "b", "text": "أكبر" },
         { "id": "c", "text": "تساويها" },
         { "id": "d", "text": "لا يمكن المقارنة" }

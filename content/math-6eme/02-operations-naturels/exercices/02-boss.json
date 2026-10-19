@@ -87,6 +87,32 @@
       "explanation": "6 × 102 = 6 × 100 + 6 × 2 = 600 + 12 = 612.",
       "difficulty": 3,
       "competencies": ["math.num.operations-entiers"]
+    },
+    {
+      "prompt": "ينظّم نادٍ رحلةً لـ 250 تلميذًا في حافلاتٍ تتّسع كلّ واحدة منها لـ 45 راكبًا. ما أقلّ عددٍ من الحافلات يكفي لنقل الجميع؟",
+      "options": [
+        { "id": "a", "text": "5" },
+        { "id": "b", "text": "6" },
+        { "id": "c", "text": "7" },
+        { "id": "d", "text": "25", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" }
+      ],
+      "correctOption": "b",
+      "explanation": "250 = 45 × 5 + 25. خمس حافلات تنقل 225 تلميذًا فقط، ويبقى 25 تلميذًا بلا مكان، فنحتاج حافلة سادسة: 6 × 45 = 270 وهو أكبر من 250 ✓. الخطأ الشائع: الاكتفاء بالخارج 5 ونسيان أنّ الباقي 25 يحتاج إلى حافلة أخرى.",
+      "difficulty": 3,
+      "competencies": ["math.num.operations-entiers"]
+    },
+    {
+      "prompt": "في قسمةٍ إقليديّة، القاسم 12 والخارج 25 والباقي 7. ما المقسوم؟",
+      "options": [
+        { "id": "a", "text": "44", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "b", "text": "187", "misconceptionTag": "math.num.division-diviseur-et-reste-echanges" },
+        { "id": "c", "text": "300" },
+        { "id": "d", "text": "307" }
+      ],
+      "correctOption": "d",
+      "explanation": "المقسوم = القاسم × الخارج + الباقي = 12 × 25 + 7 = 300 + 7 = 307. تحقّق: 12 × 25 = 300 وبقي 7 (7 < 12)، فخارج قسمة 307 على 12 هو 25 وباقيها 7 ✓. الخطأ الشائع: نسيان إضافة الباقي (300)، أو تبديل القاسم والباقي (7 × 25 + 12 = 187).",
+      "difficulty": 3,
+      "competencies": ["math.num.operations-entiers"]
     }
   ]
 }

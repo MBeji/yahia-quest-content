@@ -9,10 +9,22 @@
     {
       "prompt": "قطع عدّاءٌ 10 km في ساعةٍ واحدة. ما سرعتُه؟",
       "options": [
-        { "id": "a", "text": "10 km/h" },
-        { "id": "b", "text": "1 km/h" },
-        { "id": "c", "text": "100 km/h" },
-        { "id": "d", "text": "5 km/h" }
+        {
+          "id": "a",
+          "text": "10 km/h"
+        },
+        {
+          "id": "b",
+          "text": "1 km/h"
+        },
+        {
+          "id": "c",
+          "text": "100 km/h"
+        },
+        {
+          "id": "d",
+          "text": "5 km/h"
+        }
       ],
       "correctOption": "a",
       "explanation": "السرعة = المسافة ÷ الزمن = 10 ÷ 1 = 10 km/h.",
@@ -22,10 +34,25 @@
     {
       "prompt": "المسافةُ تساوي:",
       "options": [
-        { "id": "a", "text": "السرعة ÷ الزمن", "misconceptionTag": "math.prop.formule-vitesse-inversee" },
-        { "id": "b", "text": "السرعة × الزمن" },
-        { "id": "c", "text": "السرعة + الزمن", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
-        { "id": "d", "text": "الزمن ÷ السرعة", "misconceptionTag": "math.prop.formule-vitesse-inversee" }
+        {
+          "id": "a",
+          "text": "السرعة ÷ الزمن",
+          "misconceptionTag": "math.prop.formule-vitesse-inversee"
+        },
+        {
+          "id": "b",
+          "text": "السرعة × الزمن"
+        },
+        {
+          "id": "c",
+          "text": "السرعة + الزمن",
+          "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees"
+        },
+        {
+          "id": "d",
+          "text": "الزمن ÷ السرعة",
+          "misconceptionTag": "math.prop.formule-vitesse-inversee"
+        }
       ],
       "correctOption": "b",
       "explanation": "المسافة = السرعة × الزمن (نقلب علاقةَ السرعة = المسافة ÷ الزمن).",
@@ -35,10 +62,24 @@
     {
       "prompt": "سار شخصٌ بسرعة 5 km/h لمدّة ساعتين. ما المسافة؟",
       "options": [
-        { "id": "a", "text": "7 km", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
-        { "id": "b", "text": "2,5 km", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "c", "text": "10 km" },
-        { "id": "d", "text": "5 km" }
+        {
+          "id": "a",
+          "text": "7 km",
+          "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees"
+        },
+        {
+          "id": "b",
+          "text": "2,5 km",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "10 km"
+        },
+        {
+          "id": "d",
+          "text": "5 km"
+        }
       ],
       "correctOption": "c",
       "explanation": "المسافة = السرعة × الزمن = 5 × 2 = 10 km.",
@@ -48,10 +89,24 @@
     {
       "prompt": "قطعت سيّارةٌ 100 km في ساعتين. ما سرعتها؟",
       "options": [
-        { "id": "a", "text": "200 km/h", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "b", "text": "100 km/h" },
-        { "id": "c", "text": "102 km/h", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
-        { "id": "d", "text": "50 km/h" }
+        {
+          "id": "a",
+          "text": "200 km/h",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "b",
+          "text": "100 km/h"
+        },
+        {
+          "id": "c",
+          "text": "102 km/h",
+          "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees"
+        },
+        {
+          "id": "d",
+          "text": "50 km/h"
+        }
       ],
       "correctOption": "d",
       "explanation": "السرعة = المسافة ÷ الزمن = 100 ÷ 2 = 50 km/h.",
@@ -61,10 +116,24 @@
     {
       "prompt": "سيّارةٌ سرعتُها 80 km/h. كم km تقطع في ساعتين؟",
       "options": [
-        { "id": "a", "text": "160 km" },
-        { "id": "b", "text": "82 km", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
-        { "id": "c", "text": "40 km", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "80 km" }
+        {
+          "id": "a",
+          "text": "160 km"
+        },
+        {
+          "id": "b",
+          "text": "82 km",
+          "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees"
+        },
+        {
+          "id": "c",
+          "text": "40 km",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "80 km"
+        }
       ],
       "correctOption": "a",
       "explanation": "المسافة = السرعة × الزمن = 80 × 2 = 160 km.",
@@ -74,13 +143,109 @@
     {
       "prompt": "قطع قطارٌ 200 km بسرعة 100 km/h. كم استغرق من الزمن؟",
       "options": [
-        { "id": "a", "text": "20 ساعة" },
-        { "id": "b", "text": "2 ساعة" },
-        { "id": "c", "text": "300 ساعة", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
-        { "id": "d", "text": "0,5 ساعة", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        {
+          "id": "a",
+          "text": "20 ساعة"
+        },
+        {
+          "id": "b",
+          "text": "2 ساعة"
+        },
+        {
+          "id": "c",
+          "text": "300 ساعة",
+          "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees"
+        },
+        {
+          "id": "d",
+          "text": "0,5 ساعة",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
       "correctOption": "b",
       "explanation": "الزمن = المسافة ÷ السرعة = 200 ÷ 100 = 2 ساعة.",
+      "difficulty": 2,
+      "competencies": ["math.prop.vitesse"]
+    },
+    {
+      "prompt": "تزحف سلحفاةٌ بسرعة ثابتة فتقطع 6 m في 4 د. كم مترًا تقطع في دقيقة واحدة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5 m"
+        },
+        {
+          "id": "b",
+          "text": "24 m",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "10 m",
+          "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees"
+        },
+        {
+          "id": "d",
+          "text": "0,67 m",
+          "misconceptionTag": "math.prop.formule-vitesse-inversee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المسافة متناسبة مع الزمن، فنقسم المسافة على عدد الدقائق: 6 ÷ 4 = 1,5 m في الدقيقة. هذا العدد هو معامل التناسب.",
+      "difficulty": 2,
+      "competencies": ["math.prop.vitesse"]
+    },
+    {
+      "prompt": "تسير سيّارةٌ بمعدّل سرعة 60 km/h. كم كيلومترًا تقطع في نصف ساعة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1800 km"
+        },
+        {
+          "id": "b",
+          "text": "30 km"
+        },
+        {
+          "id": "c",
+          "text": "2 km",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "90 km",
+          "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نصف ساعة هو 0,5 سا. المسافة = السرعة × الزمن = 60 × 0,5 = 30 km، وهو نصف ما تقطعه في ساعة كاملة.",
+      "difficulty": 2,
+      "competencies": ["math.prop.vitesse"]
+    },
+    {
+      "prompt": "تقطع آلةٌ 3 m في 5 د، و 9 m في 15 د بسرعة ثابتة. كم مترًا تقطع في 40 د؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "38 m",
+          "misconceptionTag": "math.prop.additive-au-lieu-de-multiplicative"
+        },
+        {
+          "id": "b",
+          "text": "120 m",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "24 m"
+        },
+        {
+          "id": "d",
+          "text": "8 m"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "معامل التناسب 3 ÷ 5 = 0,6 m في الدقيقة. فتقطع في 40 د المسافة 40 × 0,6 = 24 m. وطريق ثانية: 40 د = 8 × 5 د، فالمسافة 8 × 3 = 24 m.",
       "difficulty": 2,
       "competencies": ["math.prop.vitesse"]
     }

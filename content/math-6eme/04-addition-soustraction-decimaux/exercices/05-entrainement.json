@@ -5,6 +5,11 @@
   "xpReward": 120,
   "rewardCoins": 30,
   "displayOrder": 5,
+  "manuel": {
+    "code": "102609",
+    "pages": "4-7",
+    "items": ["أقيّم 10 (الميزان)"]
+  },
   "questions": [
     {
       "prompt": "ما ناتجُ 4,4 + 4,4؟",
@@ -89,6 +94,14 @@
       ],
       "correctOption": "c",
       "explanation": "مجموعُ الأطوال = 2,4 + 3,75 + 1,85 = 8 m، والباقي = 8 − 1,5 = 6,5 m.",
+      "difficulty": 3,
+      "competencies": ["math.num.add-sous-decimaux"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "وقف ثلاثة أطفال معًا على ميزان فبلغت كتلتهم 126,75 kg. كتلة أنيس ونادر معًا 88,25 kg، وكتلة سلمى ونادر معًا 81,25 kg. ما كتلة نادر بالكيلوغرام؟ اكتب العدد فقط.",
+      "answerKey": { "value": 42.75, "unit": "kg" },
+      "explanation": "نبدأ بكتلة سلمى: 126,75 − 88,25 = 38,5 kg، لأنّ الثلاثة هم سلمى مع أنيس ونادر. ثمّ كتلة نادر هي ما يبقى من كتلة سلمى ونادر معًا: 81,25 − 38,5 = 42,75 kg. تحقّق: 38,5 + 42,75 = 81,25 ✓.",
       "difficulty": 3,
       "competencies": ["math.num.add-sous-decimaux"]
     }

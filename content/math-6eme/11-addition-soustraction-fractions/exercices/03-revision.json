@@ -10,7 +10,11 @@
       "prompt": "ما ناتج 2/9 + 5/9؟",
       "options": [
         { "id": "a", "text": "7/9" },
-        { "id": "b", "text": "7/18", "misconceptionTag": "math.frac.add-denominators" },
+        {
+          "id": "b",
+          "text": "7/18",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
         { "id": "c", "text": "3/9" },
         { "id": "d", "text": "10/9" }
       ],
@@ -22,9 +26,17 @@
     {
       "prompt": "ما ناتج 7/10 − 3/10؟",
       "options": [
-        { "id": "a", "text": "10/10", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        {
+          "id": "a",
+          "text": "10/10",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
         { "id": "b", "text": "4/10" },
-        { "id": "c", "text": "4/20", "misconceptionTag": "math.frac.add-denominators" },
+        {
+          "id": "c",
+          "text": "4/20",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
         { "id": "d", "text": "1/10" }
       ],
       "correctOption": "b",
@@ -35,7 +47,11 @@
     {
       "prompt": "ما ناتج 1/4 + 1/2 (وحّد على 4)؟",
       "options": [
-        { "id": "a", "text": "2/6", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
+        {
+          "id": "a",
+          "text": "2/6",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
         { "id": "b", "text": "2/4" },
         { "id": "c", "text": "3/4" },
         { "id": "d", "text": "1/8" }
@@ -49,7 +65,11 @@
       "prompt": "ما ناتج 1 − 1/3؟",
       "options": [
         { "id": "a", "text": "1/3" },
-        { "id": "b", "text": "3/3", "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee" },
+        {
+          "id": "b",
+          "text": "3/3",
+          "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee"
+        },
         { "id": "c", "text": "1/2" },
         { "id": "d", "text": "2/3" }
       ],
@@ -74,7 +94,11 @@
     {
       "prompt": "أكل أحمدُ 1/4 من بيتزا وأكلت سعاد 2/4 منها. ما الكسرُ المأكول معًا، وما الباقي؟",
       "options": [
-        { "id": "a", "text": "المأكول 3/8 والباقي 5/8", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
+        {
+          "id": "a",
+          "text": "المأكول 3/8 والباقي 5/8",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
         { "id": "b", "text": "المأكول 3/4 والباقي 1/4" },
         { "id": "c", "text": "المأكول 1/4 والباقي 3/4" },
         { "id": "d", "text": "المأكول 3/4 والباقي 0" }
@@ -83,6 +107,66 @@
       "explanation": "المأكول = 1/4 + 2/4 = 3/4؛ والباقي = 4/4 − 3/4 = 1/4.",
       "difficulty": 3,
       "competencies": ["math.frac.add-sous"]
+    },
+    {
+      "prompt": "باع تاجر من مخزون السمك 3/20 في اليوم الأوّل و1/4 في الثاني و2/5 في الثالث. ما الكسر المبيع في الأيّام الثلاثة، في أبسط صورة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "6/29",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        {
+          "id": "b",
+          "text": "16/20",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        },
+        {
+          "id": "c",
+          "text": "1/5",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        { "id": "d", "text": "4/5" }
+      ],
+      "correctOption": "d",
+      "explanation": "نوحّد على 20: 3/20 + 5/20 + 8/20 = 16/20، ونختزل بالقسمة على 4: 16/20 = 4/5. الكسر 16/20 لم يُختزل بعد، والكسر 1/5 هو الباقي لا المبيع، والكسر 6/29 يجمع البسوط والمقامات.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "بقي من مخزون السمك البالغ 240 kg الكسر 1/5 بعد البيع. كم كيلوغرامًا بقي؟",
+      "answerKey": {
+        "value": 48
+      },
+      "explanation": "الباقي 1/5 من 240 kg: نقسم على المقام 5: 240 ÷ 5 = 48 kg، وهو الخُمس الواحد، فنضرب في البسط 1 فيبقى 48 kg. تحقّق: 4/5 من 240 هو 192 kg، و192 + 48 = 240.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "يصرف فنّي 1/4 راتبه للكراء و2/5 للغذاء و1/8 لبقيّة المصاريف، ويدّخر الباقي. ما الكسر الذي يدّخره؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "13/17",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        { "id": "b", "text": "1/40" },
+        { "id": "c", "text": "9/40" },
+        {
+          "id": "d",
+          "text": "31/40",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نوحّد على 40: 10/40 + 16/40 + 5/40 = 31/40 مصروفًا. المدّخر هو الكلّ ناقص المصروف: 40/40 − 31/40 = 9/40. الكسر 31/40 هو المصروف لا المدّخر، والكسر 13/17 ناتج عن جمع البسوط والمقامات ثمّ الطرح من 1.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "items": ["L42 ex. 2", "L48 pb 2"]
+  }
 }

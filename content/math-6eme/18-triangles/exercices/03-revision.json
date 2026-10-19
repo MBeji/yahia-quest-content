@@ -20,37 +20,70 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "مثلّثٌ أطوالُ أضلاعه 8 سم، 8 سم، 8 سم. نوعُه:",
+      "prompt": "حاول سعيد رسم مثلّث س‌ص‌ع أضلاعه على التوالي 3 سم و5 سم و8 سم فلم يتمكّن. ما السبب؟",
       "options": [
-        { "id": "a", "text": "مختلف الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "b", "text": "متساوي الأضلاع" },
-        { "id": "c", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" },
-        { "id": "d", "text": "منفرج الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
+        {
+          "id": "a",
+          "text": "مجموع 3 و5 يساوي 8، فالرؤوس الثلاثة على استقامة واحدة"
+        },
+        {
+          "id": "b",
+          "text": "الأضلاع الثلاثة مختلفة، والمثلّث لا يُبنى إلّا إذا تساوى ضلعان"
+        },
+        {
+          "id": "c",
+          "text": "لم تُعطَ زاوية بين الضلعين، والمثلّث يحتاج إلى زاوية دائمًا"
+        },
+        { "id": "d", "text": "الضلع 8 سم أطول من الورقة" }
       ],
-      "correctOption": "b",
-      "explanation": "أضلاعُه الثلاثة متساوية (8 ; 8 ; 8)، فهو متساوي الأضلاع.",
+      "correctOption": "a",
+      "explanation": "عند رسم القاعدة 8 سم يبلغ القوسان بفتحتي 3 سم و5 سم نقطة واحدة على القاعدة نفسها، لأنّ 3 + 5 = 8، فلا يوجد رأس ثالث خارجها. وللبناء يجب أن يكون أطول ضلع أصغر من مجموع الضلعين الآخرين، لا مساويًا له.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "ما نوعُ هذا المثلّث؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"25,75 25,28 78,75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"25\" y=\"65\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
+      "prompt": "ما نوع المثلّث المبيّن حسب زواياه؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"14,78 86,78 43.7,48.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"43.7\" y=\"40\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">100°</text><text x=\"35\" y=\"73\" text-anchor=\"middle\" font-size=\"8\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">45°</text><text x=\"66\" y=\"73\" text-anchor=\"middle\" font-size=\"8\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">35°</text></svg>",
       "options": [
-        { "id": "a", "text": "حادّ الزوايا", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" },
-        { "id": "b", "text": "منفرج الزاوية", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" },
-        { "id": "c", "text": "قائم الزاوية" },
-        { "id": "d", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classements-triangle-melanges" }
+        {
+          "id": "a",
+          "text": "حادّ الزوايا",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        },
+        {
+          "id": "b",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        },
+        { "id": "c", "text": "منفرج الزاوية" },
+        {
+          "id": "d",
+          "text": "متساوي الساقين",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        }
       ],
       "correctOption": "c",
-      "explanation": "المربّعُ الصغير علامةُ الزاوية القائمة، فالمثلّثُ قائمُ الزاوية.",
+      "explanation": "أكبر زاوية في المثلّث 100°، وهي أكبر من 90°، فهو منفرج الزاوية؛ والزاويتان الحادّتان 45° و35° لا تغيّران ذلك. أمّا متساوي الساقين فتصنيف حسب الأضلاع لا حسب الزوايا.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     },
     {
       "prompt": "مثلّثٌ أطوالُ أضلاعه 2 سم، 4 سم، 5 سم. نوعُه:",
       "options": [
-        { "id": "a", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "b", "text": "متساوي الساقين", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "c", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" },
+        {
+          "id": "a",
+          "text": "متساوي الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "b",
+          "text": "متساوي الساقين",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "c",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        },
         { "id": "d", "text": "مختلف الأضلاع" }
       ],
       "correctOption": "d",
@@ -59,30 +92,78 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "المثلّثُ متساوي الأضلاع له:",
+      "prompt": "أضلاع رقعة مثلّثة 6 سم و4 سم و3 سم. ما نوعها حسب الأضلاع، وهل يمكن بناؤها؟",
       "options": [
-        { "id": "a", "text": "ثلاثةُ أضلاع متساوية" },
-        { "id": "b", "text": "ضلعان متساويان فقط" },
-        { "id": "c", "text": "لا أضلاع متساوية" },
-        { "id": "d", "text": "زاوية منفرجة" }
+        {
+          "id": "a",
+          "text": "متساوي الساقين ويمكن بناؤه",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "b",
+          "text": "متساوي الأضلاع ولا يمكن بناؤه",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        { "id": "c", "text": "مختلف الأضلاع ويمكن بناؤه" },
+        {
+          "id": "d",
+          "text": "مختلف الأضلاع ولا يمكن بناؤه",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "متساوي الأضلاع له ثلاثةُ أضلاع متساوية.",
+      "correctOption": "c",
+      "explanation": "الأضلاع الثلاثة مختلفة (6 ≠ 4 ≠ 3)، فهو مختلف الأضلاع. ويمكن بناؤه لأنّ أطول ضلع 6 أصغر من مجموع الآخرين: 4 + 3 = 7.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     },
     {
       "prompt": "ما نوعُ هذا المثلّث حسب أضلاعه؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"50,26 24,78 76,78\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"25\" y=\"50\" font-size=\"11\" fill=\"currentColor\">6</text><text x=\"68\" y=\"50\" font-size=\"11\" fill=\"currentColor\">6</text><text x=\"47\" y=\"92\" font-size=\"11\" fill=\"currentColor\">4</text></svg>",
       "options": [
-        { "id": "a", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
+        {
+          "id": "a",
+          "text": "متساوي الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
         { "id": "b", "text": "متساوي الساقين" },
-        { "id": "c", "text": "مختلف الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "d", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
+        {
+          "id": "c",
+          "text": "مختلف الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        }
       ],
       "correctOption": "b",
       "explanation": "ضلعان متساويان (6 و6) والقاعدة مختلفة (4)، فهو متساوي الساقين.",
       "difficulty": 3,
       "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "نرسم القطعة [ب‌ج]، ثمّ نبحث عن الرأس أ بحيث أ‌ب = 4 سم و أ‌ج = 5 سم. أيّ قوسين نرسم بالفرجار؟ <svg viewBox=\"0 0 100 100\"><line x1=\"16\" y1=\"60\" x2=\"84\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"16\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text><text x=\"84\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ج</text><circle cx=\"16\" cy=\"60\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"84\" cy=\"60\" r=\"2.5\" fill=\"currentColor\"/></svg>",
+      "options": [
+        { "id": "a", "text": "قوسين مركزهما ب وج بالفتحة نفسها 4 سم" },
+        {
+          "id": "b",
+          "text": "قوسًا مركزه ب وفتحته 4 سم، وقوسًا مركزه ج وفتحته 5 سم"
+        },
+        {
+          "id": "c",
+          "text": "قوسًا مركزه ب وفتحته 5 سم، وقوسًا مركزه ج وفتحته 4 سم"
+        },
+        { "id": "d", "text": "قوسين مركزهما أ بفتحتي 4 سم و5 سم" }
+      ],
+      "correctOption": "b",
+      "explanation": "أ تبعد 4 سم عن ب، فهي على قوس مركزه ب وفتحته 4 سم؛ وتبعد 5 سم عن ج، فهي على قوس مركزه ج وفتحته 5 سم. نقطة تقاطع القوسين هي أ. تبديل الفتحتين يعطي مثلّثًا آخر.",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "502603",
+    "pages": "92-94,190",
+    "items": ["rév. 7 ex. 2", "rév. 7 ex. 5", "T3 sit. 3"]
+  }
 }

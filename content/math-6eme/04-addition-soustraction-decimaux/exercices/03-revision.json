@@ -5,6 +5,11 @@
   "xpReward": 70,
   "rewardCoins": 15,
   "displayOrder": 3,
+  "manuel": {
+    "code": "102609",
+    "pages": "4-7",
+    "items": ["أقيّم 2 (100,1 − 99,98)", "أقيّم 2 (9,9 + 91,09)"]
+  },
   "questions": [
     {
       "prompt": "ما ناتجُ 7,2 + 2,7؟",
@@ -20,19 +25,15 @@
       "competencies": ["math.num.add-sous-decimaux"]
     },
     {
-      "prompt": "ما ناتجُ 20,5 − 12,35؟",
+      "prompt": "ما ناتجُ 100,1 − 99,98؟",
       "options": [
-        {
-          "id": "a",
-          "text": "8,25",
-          "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand"
-        },
-        { "id": "b", "text": "8,15" },
-        { "id": "c", "text": "7,15" },
-        { "id": "d", "text": "8,05" }
+        { "id": "a", "text": "0,12" },
+        { "id": "b", "text": "0,22", "misconceptionTag": "math.num.emprunt-oublie" },
+        { "id": "c", "text": "1,12" },
+        { "id": "d", "text": "199,88", "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand" }
       ],
-      "correctOption": "b",
-      "explanation": "نُكمل: 20,50 − 12,35 = 8,15.",
+      "correctOption": "a",
+      "explanation": "نكتب 100,1 في صورة 100,10 ونضع 99,98 تحته والفاصلة تحت الفاصلة، ثمّ نستلف بالتسلسل عبر العمودين: 100,10 − 99,98 = 0,12. تحقّق: 99,98 + 0,12 = 100,10 ✓.",
       "difficulty": 2,
       "competencies": ["math.num.add-sous-decimaux"]
     },
@@ -63,15 +64,15 @@
       "competencies": ["math.num.add-sous-decimaux"]
     },
     {
-      "prompt": "ما ناتجُ 100 − 0,5؟",
+      "prompt": "ما ناتجُ 9,9 + 91,09؟",
       "options": [
-        { "id": "a", "text": "99,5" },
-        { "id": "b", "text": "95" },
-        { "id": "c", "text": "99,95" },
-        { "id": "d", "text": "100,5", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        { "id": "a", "text": "90,99", "misconceptionTag": "math.num.retenue-oubliee" },
+        { "id": "b", "text": "92,08", "misconceptionTag": "math.num.decimaux-alignes-a-droite" },
+        { "id": "c", "text": "100,99" },
+        { "id": "d", "text": "10 099", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
       ],
-      "correctOption": "a",
-      "explanation": "نكتب 100 في صورة 100,0 ثمّ نطرح: 100,0 − 0,5 = 99,5.",
+      "correctOption": "c",
+      "explanation": "نكتب 9,9 في صورة 9,90 ونضعه تحت 91,09 والفاصلة تحت الفاصلة. الأجزاء من المئة: 0 + 9 = 9؛ الأعشار: 9 + 0 = 9؛ الآحاد: 9 + 1 = 10 فنكتب 0 ونحتفظ بـ 1؛ العشرات: 9 + 1 = 10 فيظهر رقم المئات 1. المجموع 100,99.",
       "difficulty": 2,
       "competencies": ["math.num.add-sous-decimaux"]
     },

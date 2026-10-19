@@ -4,7 +4,11 @@
     {
       "prompt": "في الكسر 3/5، ما المقام؟",
       "options": [
-        { "id": "a", "text": "3", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
+        {
+          "id": "a",
+          "text": "3",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
         { "id": "b", "text": "5" },
         { "id": "c", "text": "8" },
         { "id": "d", "text": "2" }
@@ -31,9 +35,17 @@
       "prompt": "ما قيمةُ 3/4 من 20؟",
       "options": [
         { "id": "a", "text": "15" },
-        { "id": "b", "text": "5", "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee" },
+        {
+          "id": "b",
+          "text": "5",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee"
+        },
         { "id": "c", "text": "12" },
-        { "id": "d", "text": "80", "misconceptionTag": "math.frac.fraction-d-un-nombre-multipliee-au-lieu-de-divisee" }
+        {
+          "id": "d",
+          "text": "80",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-multipliee-au-lieu-de-divisee"
+        }
       ],
       "correctOption": "a",
       "explanation": "نقسم على المقام ثمّ نضرب في البسط: (20 ÷ 4) × 3 = 5 × 3 = 15. إذن 3/4 من 20 = 15.",
@@ -43,9 +55,21 @@
     {
       "prompt": "أيُّ كسرٍ يساوي الوحدة (1)؟",
       "options": [
-        { "id": "a", "text": "3/4", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
-        { "id": "b", "text": "1/2", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
-        { "id": "c", "text": "5/4", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        {
+          "id": "a",
+          "text": "3/4",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
+        {
+          "id": "b",
+          "text": "1/2",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
+        {
+          "id": "c",
+          "text": "5/4",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
         { "id": "d", "text": "7/7" }
       ],
       "correctOption": "d",
@@ -56,15 +80,57 @@
     {
       "prompt": "الكسرُ 5/4 هو:",
       "options": [
-        { "id": "a", "text": "أصغرُ من 1", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        {
+          "id": "a",
+          "text": "أصغرُ من 1",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
         { "id": "b", "text": "أكبرُ من 1" },
-        { "id": "c", "text": "يساوي 1", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        {
+          "id": "c",
+          "text": "يساوي 1",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
         { "id": "d", "text": "يساوي 0" }
       ],
       "correctOption": "b",
       "explanation": "بما أنّ البسط 5 أكبرُ من المقام 4، فإنّ الكسر 5/4 أكبرُ من الوحدة 1.",
       "difficulty": 2,
       "competencies": ["math.frac.sens", "math.frac.comparaison"]
+    },
+    {
+      "prompt": "وزّع بائع عطور 9 لترات بالتساوي على 7 حرفاء. ما الكمية المضبوطة التي ينالها كلّ حريف؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/9 لتر",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
+        { "id": "b", "text": "2 لتر" },
+        { "id": "c", "text": "1,2 لتر" },
+        { "id": "d", "text": "9/7 لتر" }
+      ],
+      "correctOption": "d",
+      "explanation": "الخارج المضبوط لقسمة 9 على 7 هو الكسر 9/7: المقسوم 9 بسط والقاسم 7 مقام. القسمة لا تنتهي (1,2857…)، فالكتابة 1,2 تقريبيّة وليست مضبوطة، والكسر 7/9 يقلب البسط والمقام.",
+      "difficulty": 2,
+      "competencies": ["math.frac.sens"]
+    },
+    {
+      "prompt": "في قسم 25 تلميذًا منهم 10 بنات. ما الكسر الممثّل لعدد البنات بالنسبة إلى جميع تلاميذ القسم؟",
+      "options": [
+        { "id": "a", "text": "10/25" },
+        { "id": "b", "text": "10/15" },
+        {
+          "id": "c",
+          "text": "25/10",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
+        { "id": "d", "text": "15/25" }
+      ],
+      "correctOption": "a",
+      "explanation": "نتحدّث عن البنات فعددهنّ 10 هو البسط، ونقارن بجميع التلاميذ فالمقام 25، أي 10/25. الكسر 25/10 يقلب البسط والمقام، والكسران 10/15 و15/25 يقارنان بعددٍ آخر أو يتحدّثان عن الأولاد.",
+      "difficulty": 2,
+      "competencies": ["math.frac.sens"]
     }
   ]
 }

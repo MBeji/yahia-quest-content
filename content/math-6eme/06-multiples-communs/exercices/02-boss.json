@@ -33,15 +33,17 @@
       "competencies": ["math.num.multiples-diviseurs"]
     },
     {
-      "prompt": "ما أصغرُ مضاعفٍ مشترك غيرِ معدوم للعددين 4 و6؟",
+      "type": "multi",
+      "prompt": "اختر كلَّ الأعداد التي هي مضاعفات مشتركة للعددين 6 و 9:",
       "options": [
-        { "id": "a", "text": "24", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
-        { "id": "b", "text": "12" },
-        { "id": "c", "text": "2", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
-        { "id": "d", "text": "10", "misconceptionTag": "math.num.ppmc-par-addition" }
+        { "id": "a", "text": "12" },
+        { "id": "b", "text": "18" },
+        { "id": "c", "text": "27" },
+        { "id": "d", "text": "36" },
+        { "id": "e", "text": "54" }
       ],
-      "correctOption": "b",
-      "explanation": "مضاعفاتُ 4: 0، 4، 8، 12…؛ ومضاعفاتُ 6: 0، 6، 12…؛ أصغرُ مضاعفٍ مشترك غيرِ معدوم هو 12.",
+      "answerKey": { "correct": ["b", "d", "e"] },
+      "explanation": "العدد مضاعفٌ مشترك للعددين 6 و 9 إذا كان مضاعفًا لكلٍّ منهما. 18 = 6 × 3 = 9 × 2 و 36 = 6 × 6 = 9 × 4 و 54 = 6 × 9 = 9 × 6، وهي مضاعفات 18. أمّا 12 فمضاعفٌ للعدد 6 فقط (12 = 9 × 1 + 3)، و 27 مضاعفٌ للعدد 9 فقط (27 = 6 × 4 + 3).",
       "difficulty": 2,
       "competencies": ["math.num.multiples-diviseurs"]
     },
@@ -72,15 +74,15 @@
       "competencies": ["math.num.multiples-diviseurs"]
     },
     {
-      "prompt": "ما ثالثُ مضاعفٍ مشترك غيرِ معدوم للعددين 2 و3؟",
+      "prompt": "ما ثالثُ مضاعفٍ مشترك غيرِ معدومٍ للعددين 8 و 12؟",
       "options": [
-        { "id": "a", "text": "12" },
-        { "id": "b", "text": "6" },
-        { "id": "c", "text": "24" },
-        { "id": "d", "text": "18" }
+        { "id": "a", "text": "24" },
+        { "id": "b", "text": "48" },
+        { "id": "c", "text": "72" },
+        { "id": "d", "text": "96", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" }
       ],
-      "correctOption": "d",
-      "explanation": "المضاعفاتُ المشتركة للعددين 2 و3 هي مضاعفاتُ 6: 6 (الأوّل)، 12 (الثاني)، 18 (الثالث)؛ فالثالثُ هو 18.",
+      "correctOption": "c",
+      "explanation": "مضاعفات 8: 8، 16، 24، 32، 40، 48، 56، 64، 72…؛ ومضاعفات 12: 12، 24، 36، 48، 60، 72…؛ أصغر مضاعف مشترك غير معدوم هو 24، والمضاعفات المشتركة هي مضاعفات 24: 24 ثمّ 48 ثمّ 72. فالثالث 72. أمّا 96 فهو جداء العددين وهو الرابع.",
       "difficulty": 3,
       "competencies": ["math.num.multiples-diviseurs"]
     }

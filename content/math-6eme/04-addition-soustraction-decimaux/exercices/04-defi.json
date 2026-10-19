@@ -5,22 +5,27 @@
   "xpReward": 300,
   "rewardCoins": 60,
   "displayOrder": 4,
+  "manuel": {
+    "code": "102609",
+    "pages": "4-7",
+    "items": ["ex. 4 (9,13 = … + 8,09)"]
+  },
   "questions": [
     {
-      "prompt": "ما العددُ الذي نضيفه إلى 6,5 لنحصل على 10؟",
+      "prompt": "ما العدد الذي يُكمل المساواة التالية؟\n9,13 = … + 8,09",
       "options": [
-        { "id": "a", "text": "3,5" },
-        { "id": "b", "text": "4,5" },
-        { "id": "c", "text": "3,95" },
-        { "id": "d", "text": "16,5", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        { "id": "a", "text": "1,04" },
+        { "id": "b", "text": "1,14", "misconceptionTag": "math.num.emprunt-oublie" },
+        { "id": "c", "text": "1,16", "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand" },
+        { "id": "d", "text": "17,22", "misconceptionTag": "math.num.operation-inverse-appliquee" }
       ],
       "correctOption": "a",
-      "explanation": "العددُ المطلوب = 10 − 6,5 = 3,5 (نتحقّق: 6,5 + 3,5 = 10).",
+      "explanation": "المجهول جزءٌ ناقص من الكلّ 9,13، فنطرح المعروف: 9,13 − 8,09 = 1,04 (في الأجزاء من المئة 13 − 9 = 4 بعد استلاف عُشر، ثمّ 0 − 0 = 0، ثمّ 9 − 8 = 1). تحقّق: 8,09 + 1,04 = 9,13 ✓.",
       "difficulty": 2,
       "competencies": ["math.num.add-sous-decimaux"]
     },
     {
-      "prompt": "في عمليّة طرحٍ، المطروحُ منه 15,2 والفرقُ 9,75. ما المطروح؟",
+      "prompt": "طرحنا عددًا من 15,2 فكان الفرق 9,75. ما العدد المطروح؟",
       "options": [
         { "id": "a", "text": "5,55", "misconceptionTag": "math.num.emprunt-oublie" },
         { "id": "b", "text": "5,45" },
@@ -46,15 +51,15 @@
       "competencies": ["math.num.add-sous-decimaux"]
     },
     {
-      "prompt": "اشترى 2,5 kg تفّاحًا و 1,75 kg موزًا و 3 kg برتقالًا. ما الكتلةُ الإجماليّة؟",
+      "prompt": "نقرّب كلّ عددٍ إلى أقرب وحدة. أيّ هذه الأعداد هو المجموع 36,4 + 5,75؟",
       "options": [
-        { "id": "a", "text": "7,5 kg" },
-        { "id": "b", "text": "6,25 kg" },
-        { "id": "c", "text": "8,25 kg" },
-        { "id": "d", "text": "7,25 kg" }
+        { "id": "a", "text": "4,215" },
+        { "id": "b", "text": "42,15" },
+        { "id": "c", "text": "421,5" },
+        { "id": "d", "text": "4 215", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
       ],
-      "correctOption": "d",
-      "explanation": "2,5 + 1,75 + 3 = 7,25 kg.",
+      "correctOption": "b",
+      "explanation": "نقرّب: 36,4 ≈ 36 و 5,75 ≈ 6، فالمجموع قريب من 36 + 6 = 42. العدد القريب من 42 هو 42,15 وحده؛ فالبقيّة أصغر منه بعشر مرّات أو أكبر منه بعشر مرّات أو بمئة مرّة. الحساب الدقيق: 36,40 + 5,75 = 42,15 ✓.",
       "difficulty": 3,
       "competencies": ["math.num.add-sous-decimaux"]
     },

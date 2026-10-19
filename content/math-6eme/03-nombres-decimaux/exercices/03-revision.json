@@ -37,15 +37,15 @@
       "competencies": ["math.num.decimaux-sens"]
     },
     {
-      "prompt": "أيُّ عددٍ أكبر: 0,8 أم 0,79؟",
+      "prompt": "بين أيّ عددين صحيحين متتاليين يقع العدد 599,09؟",
       "options": [
-        { "id": "a", "text": "0,79", "misconceptionTag": "math.dec.compare-by-length" },
-        { "id": "b", "text": "0,8" },
-        { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "0,079" }
+        { "id": "a", "text": "597 و 598" },
+        { "id": "b", "text": "598 و 599" },
+        { "id": "c", "text": "599 و 600" },
+        { "id": "d", "text": "600 و 601" }
       ],
-      "correctOption": "b",
-      "explanation": "نساوي الطول: 0,80 و 0,79. وبما أنّ 80 جزءًا من المئة > 79، فإنّ 0,8 > 0,79.",
+      "correctOption": "c",
+      "explanation": "الجزء الصحيح للعدد 599,09 هو 599، وجزؤه العشريّ 0,09 أصغر من 1. إذن 599 < 599,09 < 600، والعددان المتتاليان هما 599 و 600. أمّا الأزواج الأخرى فتقع كلّها تحت العدد 599,09 أو فوقه.",
       "difficulty": 2,
       "competencies": ["math.num.comparaison-decimaux"]
     },
@@ -80,7 +80,7 @@
       "competencies": ["math.num.decimaux-sens"]
     },
     {
-      "prompt": "كم جزءًا من المئة في العدد 0,3؟",
+      "prompt": "العدد 0,3 يساوي كم جزءًا من المئة؟",
       "options": [
         { "id": "a", "text": "3", "misconceptionTag": "math.num.rang-decimal-confondu" },
         { "id": "b", "text": "300", "misconceptionTag": "math.num.rang-decimal-confondu" },

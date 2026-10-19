@@ -22,23 +22,43 @@
     {
       "prompt": "هل يقبل العددُ 90 القسمةَ على 9؟",
       "options": [
-        { "id": "a", "text": "لا" },
-        { "id": "b", "text": "نعم" },
-        { "id": "c", "text": "لا لأنّه ينتهي بالرقم 0", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
-        { "id": "d", "text": "لا يمكن المعرفة" }
+        {
+          "id": "a",
+          "text": "لا لأنّه عددٌ زوجيّ",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        { "id": "b", "text": "لا" },
+        {
+          "id": "c",
+          "text": "لا لأنّه ينتهي بالرقم 0",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        { "id": "d", "text": "نعم" }
       ],
-      "correctOption": "b",
-      "explanation": "مجموعُ أرقام 90 هو 9 + 0 = 9، وهو يقبل القسمة على 9، فالعددُ 90 يقبلها.",
+      "correctOption": "d",
+      "explanation": "مجموعُ أرقام 90 هو 9 + 0 = 9، وهو مضاعفٌ للعدد 9، فالعددُ 90 يقبل القسمة على 9: 90 = 9 × 10. الصفرُ في الآحاد لا يمنع القسمة على 9، وكونُ العدد زوجيًّا لا يُثبت شيئًا عن 9.",
       "difficulty": 2,
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 5 وليس على 2؟",
       "options": [
-        { "id": "a", "text": "70", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "b", "text": "80", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        {
+          "id": "a",
+          "text": "70",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "80",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
         { "id": "c", "text": "65" },
-        { "id": "d", "text": "52", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
+        {
+          "id": "d",
+          "text": "52",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        }
       ],
       "correctOption": "c",
       "explanation": "آحادُ 65 هو 5 فيقبل القسمة على 5، وهو فرديّ فلا يقبلها على 2.",
@@ -46,43 +66,112 @@
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "ما مجموعُ أرقام العدد 1 035؟",
+      "prompt": "ما مجموعُ أرقام العدد 1035؟",
       "options": [
         { "id": "a", "text": "8" },
-        { "id": "b", "text": "10" },
-        { "id": "c", "text": "18" },
-        { "id": "d", "text": "9" }
+        { "id": "b", "text": "9" },
+        { "id": "c", "text": "10" },
+        { "id": "d", "text": "18" }
       ],
-      "correctOption": "d",
-      "explanation": "مجموعُ أرقام 1 035 هو 1 + 0 + 3 + 5 = 9.",
+      "correctOption": "b",
+      "explanation": "مجموعُ أرقام 1035 هو 1 + 0 + 3 + 5 = 9. الصفرُ لا يغيّر المجموع.",
       "difficulty": 2,
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "هل يقبل العددُ 1 035 القسمةَ على 9؟",
+      "prompt": "مجموعُ أرقام العدد 1035 هو 9. أيّ جملةٍ صحيحة عن هذا العدد؟",
       "options": [
-        { "id": "a", "text": "لا" },
-        { "id": "b", "text": "نعم" },
-        { "id": "c", "text": "نعم على 2 فقط" },
-        { "id": "d", "text": "لا يمكن المعرفة" }
+        { "id": "a", "text": "يقبل القسمة على 9 ولا يقبلها على 3" },
+        {
+          "id": "b",
+          "text": "يقبل القسمة على 3 ولا يقبلها على 9",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        { "id": "c", "text": "يقبل القسمة على 9 وعلى 3" },
+        { "id": "d", "text": "لا يقبل القسمة على 3 ولا على 9" }
       ],
-      "correctOption": "b",
-      "explanation": "مجموعُ أرقام 1 035 يساوي 9 وهو يقبل القسمة على 9، فالعددُ 1 035 يقبل القسمة على 9.",
+      "correctOption": "c",
+      "explanation": "المجموع 9 مضاعفٌ للعدد 9، فالعدد 1035 يقبل القسمة على 9 (1035 = 9 × 115)، وكلُّ عددٍ يقبل القسمة على 9 يقبلها على 3 أيضًا لأنّ 9 = 3 × 3.",
       "difficulty": 2,
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 2 و5 و10 معًا؟",
       "options": [
-        { "id": "a", "text": "255", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "b", "text": "502", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        {
+          "id": "a",
+          "text": "255",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "502",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
         { "id": "c", "text": "250" },
-        { "id": "d", "text": "25", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
+        {
+          "id": "d",
+          "text": "25",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        }
       ],
       "correctOption": "c",
       "explanation": "العددُ يقبل القسمة على 2 و5 و10 معًا إذا كان آحاده 0؛ آحادُ 250 هو 0، فهو يقبلها جميعًا.",
       "difficulty": 3,
       "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "type": "multi",
+      "prompt": "اختر كلَّ الأعداد التي تقبل القسمة على 3 وعلى 9 معًا:",
+      "options": [
+        { "id": "a", "text": "18 630" },
+        { "id": "b", "text": "23 304" },
+        { "id": "c", "text": "327" },
+        { "id": "d", "text": "99" }
+      ],
+      "answerKey": {
+        "correct": ["a", "d"]
+      },
+      "explanation": "القسمة على 3 وعلى 9 معًا تعني القسمة على 9، أي أن يكون مجموع الأرقام مضاعفًا لـ 9. 18 630: المجموع 18 فيقبل. 99: المجموع 18 فيقبل. 23 304 و327 مجموع أرقامهما 12، وهو مضاعفٌ لـ 3 لا لـ 9، فيقبلان القسمة على 3 فقط.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "type": "matching",
+      "prompt": "اربط كلَّ عددٍ بباقي قسمته على 9، دون إجراء القسمة:",
+      "options": [
+        { "id": "l1", "text": "5014" },
+        { "id": "l2", "text": "1204" },
+        { "id": "l3", "text": "189" },
+        { "id": "r2", "text": "7" },
+        { "id": "r3", "text": "0" },
+        { "id": "r1", "text": "1" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "الباقي على 9 هو باقي مجموع الأرقام على 9. 5014: المجموع 10، وباقيه على 9 هو 1. 1204: المجموع 7، وهو أصغر من 9 فهو الباقي. 189: المجموع 18 مضاعفٌ لـ 9، فالباقي 0.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "كم عددًا يقبل القسمة على 2 وعلى 5 معًا ويقع بين 1003 و1025؟ (اكتب عدد الأعداد)",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "القسمة على 2 وعلى 5 معًا تعني أن يكون رقم الآحاد 0. بين 1003 و1025 نجد 1010 و1020 لا غير، أي عددين.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "70-77",
+    "items": ["L26 ex. 3ج", "L26 ex. 7ب", "L25 ex. 6"]
+  }
 }

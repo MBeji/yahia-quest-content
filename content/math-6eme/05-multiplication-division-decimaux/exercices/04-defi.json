@@ -5,21 +5,22 @@
   "xpReward": 300,
   "rewardCoins": 60,
   "displayOrder": 4,
+  "manuel": {
+    "code": "102609",
+    "pages": "10-13",
+    "items": ["ex. 7 (10,186 km = 5,5 ميل)"]
+  },
   "questions": [
     {
-      "prompt": "ما ناتجُ 1,25 × 8؟",
+      "prompt": "لا آلة حاسبة معك. بتقدير سريع، أيّ هذه الأعداد هو الجداء 4,8 × 6,1؟",
       "options": [
-        { "id": "a", "text": "10" },
-        {
-          "id": "b",
-          "text": "100",
-          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
-        },
-        { "id": "c", "text": "1" },
-        { "id": "d", "text": "9,25", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        { "id": "a", "text": "2,928", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
+        { "id": "b", "text": "29,28" },
+        { "id": "c", "text": "292,8", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
+        { "id": "d", "text": "2 928", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
       ],
-      "correctOption": "a",
-      "explanation": "نحسب 125 × 8 = 1 000، ومجموعُ الأرقام العشرية رقمان، فجداءُ 1,25 × 8 = 10,00 = 10.",
+      "correctOption": "b",
+      "explanation": "نقرّب: 4,8 ≈ 5 و 6,1 ≈ 6، فالجداء قريب من 5 × 6 = 30. العدد القريب من 30 هو 29,28 وحده. الحساب: 48 × 61 = 2 928، وفي العاملين رقمان عشريّان (1 + 1)، فنفصل رقمين من اليمين: 29,28 ✓.",
       "difficulty": 2,
       "competencies": ["math.num.mult-div-decimaux"]
     },
@@ -45,19 +46,15 @@
       "competencies": ["math.num.mult-div-decimaux"]
     },
     {
-      "prompt": "ثمنُ مترٍ من القماش 3,5 دينارًا. ما ثمنُ 6 أمتار؟",
+      "prompt": "الميل البحريّ الواحد يساوي 1,852 km. قطع مركبٌ شراعيّ مسافة 10,186 km. كم ميلًا بحريًّا قطع؟",
       "options": [
-        { "id": "a", "text": "21,5 دينارًا" },
-        { "id": "b", "text": "21 دينارًا" },
-        { "id": "c", "text": "18 دينارًا" },
-        {
-          "id": "d",
-          "text": "9,5 دينارًا",
-          "misconceptionTag": "math.num.operation-inverse-appliquee"
-        }
+        { "id": "a", "text": "0,55" },
+        { "id": "b", "text": "5,5" },
+        { "id": "c", "text": "8,334", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "d", "text": "55", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" }
       ],
       "correctOption": "b",
-      "explanation": "ثمنُ 6 أمتار = 6 × 3,5 = 21 دينارًا.",
+      "explanation": "عدد الأميال = المسافة بالكيلومتر ÷ طول الميل الواحد = 10,186 ÷ 1,852. نضرب العددين في 1000: 10 186 ÷ 1 852 = 5,5. تحقّق: 1,852 × 5,5 = 9,26 + 0,926 = 10,186 ✓. أمّا 8,334 فهو فرق العددين لا خارجهما.",
       "difficulty": 3,
       "competencies": ["math.num.mult-div-decimaux"]
     },

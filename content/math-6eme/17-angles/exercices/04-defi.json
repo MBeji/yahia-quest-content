@@ -9,10 +9,22 @@
     {
       "prompt": "ما نوعُ هذه الزاوية؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"95\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"11\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"82\" r=\"2.5\" fill=\"currentColor\"/></svg>",
       "options": [
-        { "id": "a", "text": "حادّة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
-        { "id": "b", "text": "قائمة", "misconceptionTag": "math.geo.type-d-angle-confondu" },
+        {
+          "id": "a",
+          "text": "حادّة",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        },
+        {
+          "id": "b",
+          "text": "قائمة",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        },
         { "id": "c", "text": "منفرجة" },
-        { "id": "d", "text": "مستقيمة", "misconceptionTag": "math.geo.type-d-angle-confondu" }
+        {
+          "id": "d",
+          "text": "مستقيمة",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        }
       ],
       "correctOption": "c",
       "explanation": "الفتحةُ واسعةٌ جدًّا (أكبر من 90° وأقلّ من 180°)، فالزاوية منفرجة.",
@@ -23,9 +35,21 @@
       "prompt": "كم يساوي نصفُ الزاوية المستقيمة (180°)؟",
       "options": [
         { "id": "a", "text": "90°" },
-        { "id": "b", "text": "45°", "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue" },
-        { "id": "c", "text": "360°", "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue" },
-        { "id": "d", "text": "60°", "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue" }
+        {
+          "id": "b",
+          "text": "45°",
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
+        },
+        {
+          "id": "c",
+          "text": "360°",
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
+        },
+        {
+          "id": "d",
+          "text": "60°",
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
+        }
       ],
       "correctOption": "a",
       "explanation": "نصفُ الزاوية المستقيمة = 180° ÷ 2 = 90° (زاويةٌ قائمة).",
@@ -48,10 +72,22 @@
     {
       "prompt": "ما نوعُ هذه الزاوية، وما أقربُ قيسٍ لها؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"95\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"89\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"82\" r=\"2.5\" fill=\"currentColor\"/></svg>",
       "options": [
-        { "id": "a", "text": "منفرجة، 150°", "misconceptionTag": "math.geo.type-d-angle-confondu" },
+        {
+          "id": "a",
+          "text": "منفرجة، 150°",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        },
         { "id": "b", "text": "حادّة، 30°" },
-        { "id": "c", "text": "قائمة، 90°", "misconceptionTag": "math.geo.type-d-angle-confondu" },
-        { "id": "d", "text": "مستقيمة، 180°", "misconceptionTag": "math.geo.type-d-angle-confondu" }
+        {
+          "id": "c",
+          "text": "قائمة، 90°",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        },
+        {
+          "id": "d",
+          "text": "مستقيمة، 180°",
+          "misconceptionTag": "math.geo.type-d-angle-confondu"
+        }
       ],
       "correctOption": "b",
       "explanation": "الفتحةُ صغيرة (أقلّ من 90°)، فالزاوية حادّة وقيسُها قريبٌ من 30°.",
@@ -59,30 +95,69 @@
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "زاويتان متتامّتان (مجموعُهما 90°)، إحداهما 30°. ما قيسُ الأخرى؟",
-      "options": [
-        { "id": "a", "text": "60°" },
-        { "id": "b", "text": "70°" },
-        { "id": "c", "text": "150°" },
-        { "id": "d", "text": "50°" }
-      ],
-      "correctOption": "a",
-      "explanation": "الأخرى = 90° − 30° = 60°.",
+      "type": "numeric",
+      "prompt": "رسم أحمد مستقيمين متعامدين يلتقيان في أ، ووضع في كلّ زاوية قائمة حول أ مثلّثًا متقايس الأضلاع رأسه أ وقيس زاويته عند أ هو 60°. ما قيس الزاوية المتبقّية بين مثلّثين متتاليين بالدرجة؟",
+      "answerKey": {
+        "value": 30
+      },
+      "explanation": "الزاوية القائمة 90° والمثلّث يشغل منها 60°، فالمتبقّي هو الفرق: 90° − 60° = 30°. نعرف الكلّ ونبحث عن جزء، فالطرح هو العمليّة الصحيحة هنا.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "كم زاويةً قائمةً تساوي زاويةً مستقيمة (180°)؟",
+      "type": "numeric",
+      "prompt": "تذكير: 90° = 100 غراد. ما قيس زاوية 150 غراد بالدرجة؟",
+      "answerKey": {
+        "value": 135
+      },
+      "explanation": "150 غراد = 100 غراد + 50 غراد. 100 غراد تساوي 90°، و50 غراد نصفها، أي 90 ÷ 2 = 45°. إذن 150 غراد = 90° + 45° = 135°، وهي زاوية منفرجة.",
+      "difficulty": 3,
+      "competencies": ["math.geo.angles-mesure"]
+    },
+    {
+      "type": "matching",
+      "prompt": "صِل كلّ قيس بطريقة بنائه بالمسطرة والفرجار.",
       "options": [
-        { "id": "a", "text": "4", "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue" },
-        { "id": "b", "text": "1", "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue" },
-        { "id": "c", "text": "3", "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue" },
-        { "id": "d", "text": "2" }
+        { "id": "l1", "text": "15°" },
+        { "id": "l2", "text": "45°" },
+        { "id": "l3", "text": "75°" },
+        { "id": "l4", "text": "150°" },
+        { "id": "r1", "text": "30° ÷ 2" },
+        { "id": "r2", "text": "90° ÷ 2" },
+        { "id": "r3", "text": "60° + 15°" },
+        { "id": "r4", "text": "90° + 60°" }
       ],
-      "correctOption": "d",
-      "explanation": "180° ÷ 90° = 2، فالزاويةُ المستقيمة تساوي زاويتين قائمتين.",
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "15° هي نصف 30° وهذه نصف 60°. 45° هي نصف القائمة 90°. 75° تجمع زاوية 60° المبنيّة بالفرجار وزاوية 15° المجاورة لها. 150° تجمع قائمة مبنيّة بالكوس وزاوية 60° المجاورة لها.",
+      "difficulty": 3,
+      "competencies": ["math.geo.angles-mesure"]
+    },
+    {
+      "type": "ordering",
+      "prompt": "رتّب مراحل بناء زاوية [أب، أج] قيسها 150° بالمسطرة والكوس والفرجار.",
+      "options": [
+        { "id": "a", "text": "نرسم نصف المستقيم [أب) بالمسطرة" },
+        { "id": "b", "text": "نبني بالكوس زاوية قائمة [أب، أد]" },
+        { "id": "c", "text": "نبني بالفرجار زاوية 60° مجاورة لها هي [أد، أج]" },
+        { "id": "d", "text": "نجمع القيسين: 90° + 60° = 150°" }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "نرسم الضلع الأوّل أوّلًا، ثمّ القائمة المجاورة له بالكوس، ثمّ الـ 60° المجاورة للقائمة بالفرجار لتكتمل الزاوية، وفي الأخير نتحقّق من المجموع: 90° + 60° = 150°.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "items": ["L4 ex. 4", "L7 ex. 6", "L7 ex. 7"]
+  }
 }

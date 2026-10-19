@@ -4,10 +4,18 @@
     {
       "prompt": "قارن بين 3/7 و 5/7.",
       "options": [
-        { "id": "a", "text": "3/7 > 5/7", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
+        {
+          "id": "a",
+          "text": "3/7 > 5/7",
+          "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
+        },
         { "id": "b", "text": "3/7 < 5/7" },
         { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
+        {
+          "id": "d",
+          "text": "لا يمكن المقارنة",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
       ],
       "correctOption": "b",
       "explanation": "عند تساوي المقام، الأكبرُ بسطًا هو الأكبر؛ وبما أنّ 3 < 5 فإنّ 3/7 < 5/7.",
@@ -18,7 +26,11 @@
       "prompt": "أيُّ الكسرين أكبر: 2/3 أم 2/5؟",
       "options": [
         { "id": "a", "text": "2/3" },
-        { "id": "b", "text": "2/5", "misconceptionTag": "math.frac.comparaison-par-denominateur" },
+        {
+          "id": "b",
+          "text": "2/5",
+          "misconceptionTag": "math.frac.comparaison-par-denominateur"
+        },
         { "id": "c", "text": "متساويان" },
         { "id": "d", "text": "2/8" }
       ],
@@ -30,9 +42,17 @@
     {
       "prompt": "قارن بين 2/3 و 3/4 (وحّد المقامات على 12).",
       "options": [
-        { "id": "a", "text": "2/3 > 3/4", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
+        {
+          "id": "a",
+          "text": "2/3 > 3/4",
+          "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
+        },
         { "id": "b", "text": "متساويان" },
-        { "id": "c", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" },
+        {
+          "id": "c",
+          "text": "لا يمكن المقارنة",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        },
         { "id": "d", "text": "2/3 < 3/4" }
       ],
       "correctOption": "d",
@@ -43,10 +63,22 @@
     {
       "prompt": "أيُّ كسرٍ أكبرُ من الوحدة (1)؟",
       "options": [
-        { "id": "a", "text": "5/8", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        {
+          "id": "a",
+          "text": "5/8",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
         { "id": "b", "text": "7/4" },
-        { "id": "c", "text": "3/4", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
-        { "id": "d", "text": "2/9", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" }
+        {
+          "id": "c",
+          "text": "3/4",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
+        {
+          "id": "d",
+          "text": "2/9",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        }
       ],
       "correctOption": "b",
       "explanation": "الكسرُ أكبرُ من 1 إذا كان بسطُه أكبرَ من مقامه؛ في 7/4 البسطُ 7 > المقام 4.",
@@ -56,13 +88,51 @@
     {
       "prompt": "رتّب تصاعديًّا (المقام نفسُه): 5/9 ؛ 2/9 ؛ 7/9.",
       "options": [
-        { "id": "a", "text": "7/9 < 5/9 < 2/9", "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus" },
+        {
+          "id": "a",
+          "text": "7/9 < 5/9 < 2/9",
+          "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus"
+        },
         { "id": "b", "text": "5/9 < 2/9 < 7/9" },
         { "id": "c", "text": "2/9 < 5/9 < 7/9" },
         { "id": "d", "text": "2/9 < 7/9 < 5/9" }
       ],
       "correctOption": "c",
       "explanation": "عند تساوي المقام نرتّب حسب البسط تصاعديًّا: 2 < 5 < 7، فالترتيب 2/9 < 5/9 < 7/9.",
+      "difficulty": 2,
+      "competencies": ["math.frac.comparaison"]
+    },
+    {
+      "prompt": "أيّ العددين أكبر: 4 أم 45/11؟",
+      "options": [
+        { "id": "a", "text": "4" },
+        { "id": "b", "text": "45/11" },
+        { "id": "c", "text": "متساويان" },
+        {
+          "id": "d",
+          "text": "لا يمكن المقارنة",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نكتب 4 كسرًا مقامه 11: 4 = 44/11. المقامان متساويان فنقارن البسطين: 45 > 44، إذن 45/11 > 4. تحقّق: 45 ÷ 11 = 4,09… وهو أكبر من 4.",
+      "difficulty": 2,
+      "competencies": ["math.frac.comparaison"]
+    },
+    {
+      "prompt": "ينقص الكسر 4/5 جزءٌ مقداره 1/5 حتّى يبلغ 1، وينقص الكسر 6/7 جزءٌ مقداره 1/7. أيّ الكسرين أكبر؟",
+      "options": [
+        { "id": "a", "text": "4/5" },
+        { "id": "b", "text": "متساويان" },
+        { "id": "c", "text": "6/7" },
+        {
+          "id": "d",
+          "text": "لا يمكن المقارنة",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الجزءان الناقصان بسطاهما 1، والأكبر منهما صاحب المقام الأصغر: 1/5 > 1/7. الكسر الذي ينقصه جزء أكبر هو الأصغر، فـ 4/5 < 6/7، أي أنّ 6/7 هو الأكبر.",
       "difficulty": 2,
       "competencies": ["math.frac.comparaison"]
     }

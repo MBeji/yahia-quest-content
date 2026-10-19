@@ -10,9 +10,21 @@
       "prompt": "ما القيمةُ العشرية للكسر 6/10؟",
       "options": [
         { "id": "a", "text": "0,6" },
-        { "id": "b", "text": "6", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
-        { "id": "c", "text": "0,06", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "d", "text": "60", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
+        {
+          "id": "b",
+          "text": "6",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        {
+          "id": "c",
+          "text": "0,06",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "d",
+          "text": "60",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        }
       ],
       "correctOption": "a",
       "explanation": "مقامُ الكسر 10، فله رقمٌ واحدٌ بعد الفاصلة: 6/10 = 0,6.",
@@ -22,9 +34,17 @@
     {
       "prompt": "اكتب العددَ 0,45 على شكل كسرٍ عشريّ.",
       "options": [
-        { "id": "a", "text": "45/10", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
+        {
+          "id": "a",
+          "text": "45/10",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
         { "id": "b", "text": "45/100" },
-        { "id": "c", "text": "45/1000", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
+        {
+          "id": "c",
+          "text": "45/1000",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
         { "id": "d", "text": "4,5" }
       ],
       "correctOption": "b",
@@ -35,10 +55,22 @@
     {
       "prompt": "ما القيمةُ العشرية للكسر 8/1000؟",
       "options": [
-        { "id": "a", "text": "0,8", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "b", "text": "0,08", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        {
+          "id": "a",
+          "text": "0,8",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "b",
+          "text": "0,08",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
         { "id": "c", "text": "0,008" },
-        { "id": "d", "text": "8", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
+        {
+          "id": "d",
+          "text": "8",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        }
       ],
       "correctOption": "c",
       "explanation": "مقامُ الكسر 1000، فله ثلاثةُ أرقامٍ بعد الفاصلة: 8/1000 = 0,008.",
@@ -62,9 +94,17 @@
       "prompt": "اكتب الكسر 3/4 على شكل كسرٍ عشريّ بمقامٍ 100.",
       "options": [
         { "id": "a", "text": "75/100" },
-        { "id": "b", "text": "34/100", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" },
+        {
+          "id": "b",
+          "text": "34/100",
+          "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies"
+        },
         { "id": "c", "text": "7/100" },
-        { "id": "d", "text": "3/100", "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie" }
+        {
+          "id": "d",
+          "text": "3/100",
+          "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie"
+        }
       ],
       "correctOption": "a",
       "explanation": "نضرب البسطَ والمقامَ في 25: 3/4 = 75/100 (وهو 0,75).",
@@ -74,15 +114,82 @@
     {
       "prompt": "ما القيمةُ العشرية للكسر 250/100؟",
       "options": [
-        { "id": "a", "text": "25", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        {
+          "id": "a",
+          "text": "25",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
         { "id": "b", "text": "2,5" },
-        { "id": "c", "text": "0,25", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "d", "text": "250", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
+        {
+          "id": "c",
+          "text": "0,25",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "d",
+          "text": "250",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        }
       ],
       "correctOption": "b",
       "explanation": "مقامُ الكسر 100، فله رقمان بعد الفاصلة: 250/100 = 2,5.",
       "difficulty": 3,
       "competencies": ["math.frac.fractions-decimales"]
+    },
+    {
+      "prompt": "ما القيمة العشرية للكسر 21/300؟",
+      "options": [
+        { "id": "a", "text": "0,007" },
+        { "id": "b", "text": "2,1" },
+        {
+          "id": "c",
+          "text": "0,21",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        { "id": "d", "text": "0,07" }
+      ],
+      "correctOption": "d",
+      "explanation": "300 ليس 1 متبوعًا بأصفار، فنختزل أوّلًا بالقسمة على 3: 21/300 = 7/100، والمقام 100 فيه صفران، فـ 7/100 = 0,07. العدد 0,21 ينتج عن اعتبار 300 كالمئة.",
+      "difficulty": 3,
+      "competencies": ["math.frac.fractions-decimales", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "أيّ كتابة هي الكسر العشريّ المساوي للكسر 3,5/10؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "35/10",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
+        { "id": "b", "text": "350/10" },
+        { "id": "c", "text": "35/100" },
+        { "id": "d", "text": "3,5/100" }
+      ],
+      "correctOption": "c",
+      "explanation": "البسط في الكسر العشريّ عدد صحيح طبيعيّ. 3,5/10 = 0,35، وللعدد 0,35 رقمان بعد الفاصلة، فهو 35/100. الكسر 35/10 يساوي 3,5، والكسر 3,5/100 ما يزال بسطه عددًا عشريًّا.",
+      "difficulty": 3,
+      "competencies": ["math.frac.fractions-decimales", "math.frac.equivalence"]
+    },
+    {
+      "type": "ordering",
+      "prompt": "رتّب الأعداد التالية ترتيبًا تنازليًّا (من الأكبر إلى الأصغر):",
+      "options": [
+        { "id": "d", "text": "0,5" },
+        { "id": "a", "text": "1" },
+        { "id": "e", "text": "25/100" },
+        { "id": "c", "text": "0,6" },
+        { "id": "b", "text": "3/4" }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d", "e"]
+      },
+      "explanation": "نكتب الكلّ عددًا عشريًّا: 1 و3/4 = 75/100 = 0,75 و0,6 و0,5 و25/100 = 0,25. الترتيب التنازليّ: 1 > 0,75 > 0,6 > 0,5 > 0,25، أي 1 > 3/4 > 0,6 > 0,5 > 25/100.",
+      "difficulty": 3,
+      "competencies": ["math.frac.fractions-decimales", "math.frac.equivalence"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "items": ["L31 ex. 6أ", "L31 ex. 8", "L40 ex. 12ب"]
+  }
 }

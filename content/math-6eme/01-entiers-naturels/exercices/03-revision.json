@@ -7,19 +7,15 @@
   "displayOrder": 3,
   "questions": [
     {
-      "prompt": "في العدد 902 340، ما رتبة الرقم 9؟",
+      "prompt": "نجمّع أرقام العدد أصنافًا من ثلاثة أرقام انطلاقًا من اليمين. ما اسم الصنف الرابع؟",
       "options": [
-        { "id": "a", "text": "الملايين", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
-        { "id": "b", "text": "مئات الآلاف" },
-        {
-          "id": "c",
-          "text": "عشرات الآلاف",
-          "misconceptionTag": "math.num.rang-du-chiffre-decale"
-        },
-        { "id": "d", "text": "الآلاف", "misconceptionTag": "math.num.rang-du-chiffre-decale" }
+        { "id": "a", "text": "الوحدات البسيطة" },
+        { "id": "b", "text": "الآلاف", "misconceptionTag": "math.num.classe-mal-lue" },
+        { "id": "c", "text": "الملايين", "misconceptionTag": "math.num.classe-mal-lue" },
+        { "id": "d", "text": "المليارات" }
       ],
-      "correctOption": "b",
-      "explanation": "في 902 340 الرقم 9 في أقصى اليسار، وهو في رتبة مئات الآلاف (قيمته 900 000).",
+      "correctOption": "d",
+      "explanation": "الأصناف انطلاقًا من اليمين هي: الوحدات البسيطة، ثمّ الآلاف، ثمّ الملايين، ثمّ المليارات؛ فالصنف الرابع هو المليارات. ولكلّ صنف ثلاث رتب: آحاد وعشرات ومئات، ولا نخلط بين الصنف والرتبة.",
       "difficulty": 1,
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },

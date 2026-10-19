@@ -10,7 +10,11 @@
       "prompt": "ما ناتج 3/10 + 4/10؟",
       "options": [
         { "id": "a", "text": "7/10" },
-        { "id": "b", "text": "7/20", "misconceptionTag": "math.frac.add-denominators" },
+        {
+          "id": "b",
+          "text": "7/20",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
         { "id": "c", "text": "1/10" },
         { "id": "d", "text": "12/10" }
       ],
@@ -22,7 +26,11 @@
     {
       "prompt": "ما ناتج 1/3 + 1/6 (وحّد على 6)؟",
       "options": [
-        { "id": "a", "text": "2/9", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
+        {
+          "id": "a",
+          "text": "2/9",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
         { "id": "b", "text": "1/2" },
         { "id": "c", "text": "2/6" },
         { "id": "d", "text": "1/6" }
@@ -49,7 +57,11 @@
       "prompt": "ما ناتج 2 − 1/4؟",
       "options": [
         { "id": "a", "text": "1/4" },
-        { "id": "b", "text": "8/4", "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee" },
+        {
+          "id": "b",
+          "text": "8/4",
+          "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee"
+        },
         { "id": "c", "text": "2/4" },
         { "id": "d", "text": "7/4" }
       ],
@@ -64,7 +76,11 @@
         { "id": "a", "text": "17/12" },
         { "id": "b", "text": "5/7" },
         { "id": "c", "text": "5/12" },
-        { "id": "d", "text": "17/24", "misconceptionTag": "math.frac.add-denominators" }
+        {
+          "id": "d",
+          "text": "17/24",
+          "misconceptionTag": "math.frac.add-denominators"
+        }
       ],
       "correctOption": "a",
       "explanation": "نوحّد على 12: 2/3 = 8/12 و 3/4 = 9/12؛ ثمّ 8/12 + 9/12 = 17/12.",
@@ -83,6 +99,90 @@
       "explanation": "نوحّد على 8: 1/2 = 4/8؛ ثمّ 7/8 − 4/8 = 3/8.",
       "difficulty": 3,
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "ما ناتج 8/6 + 4/12 + 16/24؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "28/42",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        {
+          "id": "b",
+          "text": "7/9",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        { "id": "c", "text": "7/3" },
+        { "id": "d", "text": "14/3" }
+      ],
+      "correctOption": "c",
+      "explanation": "نختزل كلّ حدّ أوّلًا: 8/6 = 4/3 و4/12 = 1/3 و16/24 = 2/3. فالمقام واحد (3): 4/3 + 1/3 + 2/3 = 7/3. الكسر 28/42 يجمع البسوط والمقامات كلّها، والكسر 7/9 يجمع المقامات بعد الاختزال.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "ما ناتج (7/5 − 3/5) + 2/9؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "6/14",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        {
+          "id": "b",
+          "text": "46/90",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        { "id": "c", "text": "46/45" },
+        { "id": "d", "text": "6/45" }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب القوس أوّلًا: 7/5 − 3/5 = 4/5. ثمّ نوحّد على 45: 4/5 = 36/45 و2/9 = 10/45، فالمجموع 46/45. الكسر 46/90 يجمع المقامين بعد التوحيد، والكسر 6/14 يجمع البسطين والمقامين.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "أراد نجّار تغطية لوحة: 1/2 منها بالأبيض و1/3 بالأخضر و1/4 بالأحمر. أيّ جملة صحيحة؟",
+      "options": [
+        { "id": "a", "text": "التقسيم ممكن ويبقى 1/12 من اللوحة دون تغطية" },
+        { "id": "b", "text": "التقسيم ممكن ويكتمل التغطية بالضبط" },
+        { "id": "c", "text": "التقسيم مستحيل لأنّ المجموع 13/12 أكبر من 1" },
+        {
+          "id": "d",
+          "text": "التقسيم مستحيل لأنّ المقامات الثلاثة مختلفة عن بعضها",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نوحّد على 12: 6/12 + 4/12 + 3/12 = 13/12، وهذا أكبر من اللوحة كلّها (12/12). فالتقسيم مستحيل بسبب المجموع لا بسبب اختلاف المقامات، فالمقامات المختلفة تُوحَّد دائمًا.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "صدّر مصنع أحذية 26/53 من إنتاجه إلى أوروبا و2/5 إلى المغرب العربي، وباع الباقي في السوق الداخلية. ما الكسر الممثّل لما بيع في السوق الداخلية؟",
+      "options": [
+        { "id": "a", "text": "29/58" },
+        {
+          "id": "b",
+          "text": "30/58",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        {
+          "id": "c",
+          "text": "236/265",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        { "id": "d", "text": "29/265" }
+      ],
+      "correctOption": "d",
+      "explanation": "المقامان 53 و5 لا مضاعف مشترك بينهما أصغر من 265. نوحّد: 26/53 = 130/265 و2/5 = 106/265، والمصدَّر 236/265. الباقي هو الكلّ ناقص المصدَّر: 265/265 − 236/265 = 29/265. الكسر 236/265 هو المصدَّر لا الباقي، والكسر 30/58 ينتج عن جمع البسطين والمقامين.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "items": ["L42 ex. 4", "L42 ex. 5", "L42 ex. 6"]
+  }
 }

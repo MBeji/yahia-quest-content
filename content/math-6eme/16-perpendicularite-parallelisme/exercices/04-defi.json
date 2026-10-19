@@ -7,15 +7,23 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "ماذا يمثّل هذا الشكل؟ <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"58\" x2=\"92\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"10\" x2=\"50\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"50\" y=\"48\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
+      "prompt": "ن نقطة من الموسّط العمودي س لـ [أب] ولا تقع على (أب). قسنا نأ فوجدنا 4 سم، وقيس أب 6 سم. ما نوع المثلّث أ ن ب؟ <svg viewBox=\"0 0 100 100\"><line x1=\"12\" y1=\"72\" x2=\"88\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"16\" x2=\"50\" y2=\"92\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><polygon points=\"12,72 88,72 50,38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"50,65 57,65 57,72\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><text x=\"10\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"90\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text><text x=\"50\" y=\"30\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ن</text><text x=\"62\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\">م</text></svg>",
       "options": [
-        { "id": "a", "text": "مستقيمان متوازيان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "b", "text": "مستقيمان منفصلان" },
-        { "id": "c", "text": "مستقيمان متعامدان" },
-        { "id": "d", "text": "مستقيمان متقاطعان بزاوية حادّة", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" }
+        { "id": "a", "text": "قائم الزاوية" },
+        { "id": "b", "text": "متساوي الساقين" },
+        {
+          "id": "c",
+          "text": "متساوي الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "مختلف الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        }
       ],
-      "correctOption": "c",
-      "explanation": "المربّعُ الصغير عند التقاطع يدلّ على زاوية قائمة، فالمستقيمان متعامدان.",
+      "correctOption": "b",
+      "explanation": "ن على الموسّط العمودي لـ [أب]، فتبعد عن أ وعن ب البعد نفسه: نب = نأ = 4 سم. له ضلعان متساويان فقط (4 و4) والثالث 6 سم، فهو متساوي الساقين رأسه ن.",
       "difficulty": 2,
       "competencies": ["math.geo.droites-perp-para"]
     },
@@ -23,7 +31,11 @@
       "prompt": "في مربّعٍ، الضلعان المتجاوران (اللذان لهما رأسٌ مشترك):",
       "options": [
         { "id": "a", "text": "متعامدان" },
-        { "id": "b", "text": "متوازيان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
+        {
+          "id": "b",
+          "text": "متوازيان",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
         { "id": "c", "text": "متساويان فقط دون تعامد" },
         { "id": "d", "text": "متقاطعان بزاوية حادّة" }
       ],
@@ -35,7 +47,11 @@
     {
       "prompt": "في مربّعٍ، الضلعان المتقابلان:",
       "options": [
-        { "id": "a", "text": "متعامدان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
+        {
+          "id": "a",
+          "text": "متعامدان",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
         { "id": "b", "text": "متوازيان" },
         { "id": "c", "text": "غيرُ متساويين" },
         { "id": "d", "text": "متقاطعان" }
@@ -48,7 +64,11 @@
     {
       "prompt": "(د1) ∥ (د2)، و (د3) ⊥ (د1). ماذا نستنتج عن (د3) و (د2)؟",
       "options": [
-        { "id": "a", "text": "(د3) ∥ (د2)", "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee" },
+        {
+          "id": "a",
+          "text": "(د3) ∥ (د2)",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
         { "id": "b", "text": "منطبقان" },
         { "id": "c", "text": "لا شيء" },
         { "id": "d", "text": "(د3) ⊥ (د2)" }
@@ -61,7 +81,11 @@
     {
       "prompt": "ما العلامةُ الدالّة على توازي هذين المستقيمين في الرسم؟ <svg viewBox=\"0 0 100 100\"><line x1=\"38\" y1=\"8\" x2=\"38\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"64\" y1=\"8\" x2=\"64\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"32,52 38,46 44,52\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><polyline points=\"58,52 64,46 70,52\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "المربّع الصغير", "misconceptionTag": "math.geo.symboles-perpendiculaire-parallele-confondus" },
+        {
+          "id": "a",
+          "text": "المربّع الصغير",
+          "misconceptionTag": "math.geo.symboles-perpendiculaire-parallele-confondus"
+        },
         { "id": "b", "text": "السهمان (الإشارتان) المتماثلان" },
         { "id": "c", "text": "نقطة التقاطع" },
         { "id": "d", "text": "لا توجد علامة" }
@@ -83,6 +107,30 @@
       "explanation": "عند تقاطع مستقيمين متعامدين تتكوّن 4 زوايا قائمة حول نقطة التقاطع.",
       "difficulty": 3,
       "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "رسمت ملاك مستقيمين متعامدين، ثمّ نصّفت إحدى الزوايا القائمة، ثمّ نصّفت أحد الجزءين الناتجين. ما قيس أصغر زاوية حصلت عليها بالدرجة؟",
+      "answerKey": {
+        "value": 22.5
+      },
+      "explanation": "المستقيمان المتعامدان يصنعان زاوية قائمة 90°. تنصيفها يعطي 90 ÷ 2 = 45°، وتنصيف 45° يعطي 45 ÷ 2 = 22,5°: القيس 22,5.",
+      "difficulty": 3,
+      "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "قاعة مستطيلة بُعداها 20 م و 12 م، رُسم مخطّطها بمقياس 1 سم لكلّ 2 م. كم سنتيمترًا يبعد الموسّط العمودي للطول عن كلّ طرف من طرفيه على المخطّط؟",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "الطول على المخطّط 20 ÷ 2 = 10 سم. الموسّط العمودي يمرّ بمنتصف الطول، فيبعد عن كلّ طرف 10 ÷ 2 = 5 سم.",
+      "difficulty": 3,
+      "competencies": ["math.geo.droites-perp-para"]
     }
-  ]
+  ],
+  "manuel": {
+    "pages": "14-15",
+    "items": ["L4 ex. 1", "L4 ex. 2", "L4 ex. 5"]
+  }
 }

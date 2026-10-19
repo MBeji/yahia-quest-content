@@ -17,10 +17,22 @@
     {
       "prompt": "مثلّثٌ أطوالُ أضلاعه 5 سم، 5 سم، 5 سم. ما نوعُه؟",
       "options": [
-        { "id": "a", "text": "متساوي الساقين", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
+        {
+          "id": "a",
+          "text": "متساوي الساقين",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
         { "id": "b", "text": "متساوي الأضلاع" },
-        { "id": "c", "text": "مختلف الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "d", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
+        {
+          "id": "c",
+          "text": "مختلف الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        }
       ],
       "correctOption": "b",
       "explanation": "أضلاعُه الثلاثة متساوية (5 = 5 = 5)، فهو متساوي الأضلاع.",
@@ -28,25 +40,49 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "ما نوعُ المثلّث المبيّن في الشكل حسب زواياه؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"25,75 25,28 78,75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"25\" y=\"65\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
+      "prompt": "مثلّث زواياه 90° و60° و30°. ما نوعه حسب زواياه؟",
       "options": [
-        { "id": "a", "text": "حادّ الزوايا", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" },
-        { "id": "b", "text": "قائم الزاوية" },
-        { "id": "c", "text": "منفرج الزاوية", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" },
-        { "id": "d", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classements-triangle-melanges" }
+        {
+          "id": "a",
+          "text": "منفرج الزاوية",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        },
+        {
+          "id": "b",
+          "text": "متساوي الأضلاع",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        },
+        {
+          "id": "c",
+          "text": "حادّ الزوايا",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        },
+        { "id": "d", "text": "قائم الزاوية" }
       ],
-      "correctOption": "b",
-      "explanation": "المربّعُ الصغير يدلّ على زاوية قائمة (90°) في المثلّث، فهو مثلّثٌ قائمُ الزاوية.",
-      "difficulty": 2,
+      "correctOption": "d",
+      "explanation": "أكبر زاوية في هذا المثلّث 90°، وهي قائمة، فهو قائم الزاوية. وجود زاويتين حادّتين لا يجعله حادّ الزوايا: الذي يقرّر هو أكبر زاوية. أمّا متساوي الأضلاع فتصنيف حسب الأضلاع لا حسب الزوايا.",
+      "difficulty": 1,
       "competencies": ["math.geo.triangles-base"]
     },
     {
       "prompt": "مثلّثٌ أطوالُ أضلاعه 6 سم، 6 سم، 9 سم. ما نوعُه؟",
       "options": [
-        { "id": "a", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "b", "text": "مختلف الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
+        {
+          "id": "a",
+          "text": "متساوي الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "b",
+          "text": "مختلف الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
         { "id": "c", "text": "متساوي الساقين" },
-        { "id": "d", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
+        {
+          "id": "d",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        }
       ],
       "correctOption": "c",
       "explanation": "له ضلعان متساويان فقط (6 و6) والثالث مختلف (9)، فهو متساوي الساقين.",
@@ -54,15 +90,15 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "ماذا نحتاج لبناء مثلّثٍ بالمسطرة والفرجار؟",
+      "prompt": "لبناء مثلّث أضلاعه 6 سم و4 سم و3 سم، نرسم أوّلًا ضلعًا بالمسطرة ثمّ نرسم:",
       "options": [
-        { "id": "a", "text": "لونه" },
-        { "id": "b", "text": "محيط الدائرة" },
-        { "id": "c", "text": "زاوية واحدة فقط" },
-        { "id": "d", "text": "أقيسةَ أضلاعه الثلاثة" }
+        { "id": "a", "text": "موازيًا للضلع المرسوم" },
+        { "id": "b", "text": "قوسين بالفرجار من طرفيه" },
+        { "id": "c", "text": "زاوية بالمنقلة عند أحد طرفيه" },
+        { "id": "d", "text": "عموديًّا بالكوس عند منتصفه" }
       ],
-      "correctOption": "d",
-      "explanation": "لبناء مثلّثٍ بالمسطرة والفرجار نحتاج أقيسةَ أضلاعه الثلاثة.",
+      "correctOption": "b",
+      "explanation": "نعرف الأضلاع الثلاثة ولا نعرف أيّ زاوية. نرسم أحد الأضلاع قاعدة، ثمّ قوسين بالفرجار من طرفيها، فتحة كلّ منهما طول ضلع آخر، ويلتقيان في الرأس الثالث.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     }

@@ -4,10 +4,24 @@
     {
       "prompt": "إذا كان ثمنُ 3 أقلامٍ 6 دنانير، فما ثمنُ قلمٍ واحد؟",
       "options": [
-        { "id": "a", "text": "2 دنانير" },
-        { "id": "b", "text": "3 دنانير", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
-        { "id": "c", "text": "18 دينارًا", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "1 دينار" }
+        {
+          "id": "a",
+          "text": "2 دنانير"
+        },
+        {
+          "id": "b",
+          "text": "3 دنانير",
+          "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat"
+        },
+        {
+          "id": "c",
+          "text": "18 دينارًا",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "1 دينار"
+        }
       ],
       "correctOption": "a",
       "explanation": "ثمنُ القلم الواحد = 6 ÷ 3 = 2 دنانير (وهو معامل التناسب).",
@@ -17,10 +31,23 @@
     {
       "prompt": "ما النسبةُ المئوية 25% على شكل كسر؟",
       "options": [
-        { "id": "a", "text": "25/10" },
-        { "id": "b", "text": "25/100" },
-        { "id": "c", "text": "100/25", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
-        { "id": "d", "text": "25" }
+        {
+          "id": "a",
+          "text": "25/10"
+        },
+        {
+          "id": "b",
+          "text": "25/100"
+        },
+        {
+          "id": "c",
+          "text": "100/25",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
+        {
+          "id": "d",
+          "text": "25"
+        }
       ],
       "correctOption": "b",
       "explanation": "النسبةُ المئوية مقامُها 100، فإنّ 25% = 25/100 (ويُختزل إلى 1/4).",
@@ -30,10 +57,23 @@
     {
       "prompt": "ما قيمةُ 20% من 50؟",
       "options": [
-        { "id": "a", "text": "20", "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat" },
-        { "id": "b", "text": "25" },
-        { "id": "c", "text": "10" },
-        { "id": "d", "text": "70" }
+        {
+          "id": "a",
+          "text": "20",
+          "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat"
+        },
+        {
+          "id": "b",
+          "text": "25"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "70"
+        }
       ],
       "correctOption": "c",
       "explanation": "20% من 50 = (20/100) × 50 = 10.",
@@ -43,10 +83,23 @@
     {
       "prompt": "ثمنُ 4 كراريس 12 دينارًا. كم ثمنُ 6 كراريس؟",
       "options": [
-        { "id": "a", "text": "14 دينارًا", "misconceptionTag": "math.prop.additive-au-lieu-de-multiplicative" },
-        { "id": "b", "text": "24 دينارًا" },
-        { "id": "c", "text": "8 دنانير" },
-        { "id": "d", "text": "18 دينارًا" }
+        {
+          "id": "a",
+          "text": "14 دينارًا",
+          "misconceptionTag": "math.prop.additive-au-lieu-de-multiplicative"
+        },
+        {
+          "id": "b",
+          "text": "24 دينارًا"
+        },
+        {
+          "id": "c",
+          "text": "8 دنانير"
+        },
+        {
+          "id": "d",
+          "text": "18 دينارًا"
+        }
       ],
       "correctOption": "d",
       "explanation": "ثمنُ الكرّاس = 12 ÷ 4 = 3 دنانير، فثمنُ 6 كراريس = 6 × 3 = 18 دينارًا.",
@@ -56,13 +109,79 @@
     {
       "prompt": "كم يساوي 50% من 80؟",
       "options": [
-        { "id": "a", "text": "40" },
-        { "id": "b", "text": "30" },
-        { "id": "c", "text": "160", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "8" }
+        {
+          "id": "a",
+          "text": "40"
+        },
+        {
+          "id": "b",
+          "text": "30"
+        },
+        {
+          "id": "c",
+          "text": "160",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
       ],
       "correctOption": "a",
       "explanation": "50% هو النصف: 80 ÷ 2 = 40.",
+      "difficulty": 2,
+      "competencies": ["math.prop.pourcentages"]
+    },
+    {
+      "prompt": "على تصميمٍ سلّمه 1/200، طول غرفة 3 cm. ما طولها الحقيقيّ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "600 m"
+        },
+        {
+          "id": "b",
+          "text": "6 m"
+        },
+        {
+          "id": "c",
+          "text": "0,015 m",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "60 m"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "السلّم 1/200 يعني أنّ 1 cm على التصميم يمثّل 200 cm في الحقيقة. نضرب في المقام: 3 × 200 = 600 cm، أي 6 m.",
+      "difficulty": 2,
+      "competencies": ["math.prop.situations", "math.prop.pourcentages"]
+    },
+    {
+      "prompt": "بعد تخفيض 20% صار ثمن حقيبة 40 د. كم كان ثمنها قبل التخفيض؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "48 د",
+          "misconceptionTag": "math.prop.pourcentage-base-erronee"
+        },
+        {
+          "id": "b",
+          "text": "60 د"
+        },
+        {
+          "id": "c",
+          "text": "50 د"
+        },
+        {
+          "id": "d",
+          "text": "32 د",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "بعد التخفيض ندفع 100% − 20% = 80% من الثمن الأصليّ. 80% تقابل 40 د، فـ 1% تقابل 40 ÷ 80 = 0,5 د، والثمن الأصليّ 100% = 0,5 × 100 = 50 د.",
       "difficulty": 2,
       "competencies": ["math.prop.pourcentages"]
     }

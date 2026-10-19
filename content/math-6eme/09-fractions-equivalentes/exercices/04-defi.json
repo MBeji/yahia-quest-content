@@ -10,9 +10,17 @@
       "prompt": "اختزل الكسر 14/21.",
       "options": [
         { "id": "a", "text": "2/3" },
-        { "id": "b", "text": "7/21", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
+        {
+          "id": "b",
+          "text": "7/21",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        },
         { "id": "c", "text": "2/7" },
-        { "id": "d", "text": "14/21", "misconceptionTag": "math.frac.reduction-incomplete" }
+        {
+          "id": "d",
+          "text": "14/21",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        }
       ],
       "correctOption": "a",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك 7: 14/21 = (14÷7)/(21÷7) = 2/3.",
@@ -35,7 +43,11 @@
     {
       "prompt": "ما البسطُ المفقود: 7/8 = ؟/40؟",
       "options": [
-        { "id": "a", "text": "28", "misconceptionTag": "math.frac.equivalence-facteur-errone" },
+        {
+          "id": "a",
+          "text": "28",
+          "misconceptionTag": "math.frac.equivalence-facteur-errone"
+        },
         { "id": "b", "text": "32" },
         { "id": "c", "text": "35" },
         { "id": "d", "text": "47" }
@@ -48,8 +60,16 @@
     {
       "prompt": "ما الصورةُ المختزَلة (غيرُ القابلة للاختزال) للكسر 16/20؟",
       "options": [
-        { "id": "a", "text": "8/10", "misconceptionTag": "math.frac.reduction-incomplete" },
-        { "id": "b", "text": "16/20", "misconceptionTag": "math.frac.reduction-incomplete" },
+        {
+          "id": "a",
+          "text": "8/10",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        },
+        {
+          "id": "b",
+          "text": "16/20",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        },
         { "id": "c", "text": "2/3" },
         { "id": "d", "text": "4/5" }
       ],
@@ -62,9 +82,17 @@
       "prompt": "في صفٍّ، 12/30 من التلاميذ بناتٌ. ما هذا الكسرُ في أبسط صورة؟",
       "options": [
         { "id": "a", "text": "2/5" },
-        { "id": "b", "text": "6/15", "misconceptionTag": "math.frac.reduction-incomplete" },
+        {
+          "id": "b",
+          "text": "6/15",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        },
         { "id": "c", "text": "1/2" },
-        { "id": "d", "text": "4/10", "misconceptionTag": "math.frac.reduction-incomplete" }
+        {
+          "id": "d",
+          "text": "4/10",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        }
       ],
       "correctOption": "a",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك الأكبر 6: 12/30 = (12÷6)/(30÷6) = 2/5.",
@@ -72,17 +100,73 @@
       "competencies": ["math.frac.equivalence"]
     },
     {
-      "prompt": "كم كسرًا يساوي 1/3 بمقامٍ من بين: 6 ؛ 9 ؛ 12 ؛ 15؟",
+      "prompt": "كم كسرًا يساوي 1/3 بمقامٍ من بين: 6 ; 9 ; 12 ; 15؟",
       "options": [
-        { "id": "a", "text": "2" },
-        { "id": "b", "text": "4" },
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "2" },
         { "id": "c", "text": "3" },
-        { "id": "d", "text": "1" }
+        { "id": "d", "text": "4" }
       ],
-      "correctOption": "b",
-      "explanation": "1/3 = 2/6 = 3/9 = 4/12 = 5/15، أي 4 كسورٍ متساوية بهذه المقامات.",
+      "correctOption": "d",
+      "explanation": "1/3 = 2/6 = 3/9 = 4/12 = 5/15، فكلّ مقام من المقامات الأربعة يعطي كسرًا مساويًا: 6 و9 و12 و15 مضاعفات لـ 3. إذن 4 كسور.",
+      "difficulty": 3,
+      "competencies": ["math.frac.equivalence"]
+    },
+    {
+      "prompt": "أيّ كتابة من الكتابات التالية هي الدخيلة، أي التي لا تساوي 3/50؟",
+      "options": [
+        { "id": "a", "text": "6/100" },
+        { "id": "b", "text": "9/150" },
+        { "id": "c", "text": "12/200" },
+        { "id": "d", "text": "18/200" }
+      ],
+      "correctOption": "d",
+      "explanation": "الكسور المساوية لـ 3/50 تضرب حدّيها في العامل نفسه: 6/100 (العامل 2) و9/150 (العامل 3) و12/200 (العامل 4). أمّا 18/200 فيحتاج بسطه 24 مع المقام 200 (العامل 4)، وقد جاء 18 فهو يساوي 9/100.",
+      "difficulty": 3,
+      "competencies": ["math.frac.equivalence"]
+    },
+    {
+      "prompt": "جنى فلّاح 40 دكل من زيت الزيتون (1 دكل = 10 ل) وباع منها 75 ل بالتفصيل. ما الكسر الممثّل لما باعه بالتفصيل بالنسبة إلى كامل الكمّيّة، في أبسط صورة؟",
+      "options": [
+        { "id": "a", "text": "75/40" },
+        {
+          "id": "b",
+          "text": "75/400",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        },
+        {
+          "id": "c",
+          "text": "15/80",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        },
+        { "id": "d", "text": "3/16" }
+      ],
+      "correctOption": "d",
+      "explanation": "40 دكل = 400 ل، فالكسر 75/400 (لا 75/40 دون تحويل). نختزل بالقاسم المشترك الأكبر 25: 75/400 = (75 ÷ 25)/(400 ÷ 25) = 3/16، وهو غير قابل للاختزال. الكسران 75/400 و15/80 يتوقّفان قبل أبسط صورة.",
+      "difficulty": 3,
+      "competencies": ["math.frac.equivalence"]
+    },
+    {
+      "type": "multi",
+      "prompt": "اختر كلَّ الكسور غير القابلة للاختزال:",
+      "options": [
+        { "id": "a", "text": "5/7" },
+        { "id": "b", "text": "6/15" },
+        { "id": "c", "text": "8/9" },
+        { "id": "d", "text": "18/24" },
+        { "id": "e", "text": "4/17" }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "الكسر غير القابل للاختزال لا يشترك بسطه ومقامه في قاسم غير 1. 5/7 و8/9 و4/17 كذلك (8/9 رغم أنّ لكلّ من 8 و9 قواسم غير 1، لا قاسم مشترك لهما). أمّا 6/15 فيقسمهما 3، و18/24 يقسمهما 6.",
       "difficulty": 3,
       "competencies": ["math.frac.equivalence"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "80-84",
+    "items": ["L28 ex. 13"]
+  }
 }

@@ -62,15 +62,15 @@
       "competencies": ["math.num.mult-div-decimaux"]
     },
     {
-      "prompt": "ما ناتجُ 2,5 × 2؟",
+      "prompt": "ما ناتجُ 3,6 ÷ 0,4؟",
       "options": [
-        { "id": "a", "text": "50", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
-        { "id": "b", "text": "4,5", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "c", "text": "0,5" },
-        { "id": "d", "text": "5" }
+        { "id": "a", "text": "0,9" },
+        { "id": "b", "text": "1,44", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "c", "text": "9" },
+        { "id": "d", "text": "90", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" }
       ],
-      "correctOption": "d",
-      "explanation": "نحسب 25 × 2 = 50، وفي العامل 2,5 رقمٌ عشريٌّ واحد، فالجداء 5,0 = 5.",
+      "correctOption": "c",
+      "explanation": "القاسم 0,4 فيه رقم عشريّ واحد، فنضرب العددين في 10: 3,6 ÷ 0,4 = 36 ÷ 4 = 9. تحقّق: 0,4 × 9 = 3,6 ✓. أمّا 1,44 فهو جداء العددين لا خارجهما.",
       "difficulty": 2,
       "competencies": ["math.num.mult-div-decimaux"]
     },
@@ -92,15 +92,15 @@
       "competencies": ["math.num.mult-div-decimaux"]
     },
     {
-      "prompt": "ما ناتجُ 15 ÷ 4؟",
+      "prompt": "ثمنُ 0,75 kg من الجبن 9 دنانير. كم ثمنُ الكيلوغرام الواحد بالدينار؟",
       "options": [
-        { "id": "a", "text": "3,7" },
-        { "id": "b", "text": "3,75" },
-        { "id": "c", "text": "3,5" },
-        { "id": "d", "text": "4,25" }
+        { "id": "a", "text": "0,12" },
+        { "id": "b", "text": "6,75", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        { "id": "c", "text": "12" },
+        { "id": "d", "text": "120", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" }
       ],
-      "correctOption": "b",
-      "explanation": "نواصل القسمة بإضافة الأصفار: 15 ÷ 4 = 3,75 (نتحقّق: 4 × 3,75 = 15).",
+      "correctOption": "c",
+      "explanation": "ثمن الكيلوغرام الواحد = 9 ÷ 0,75. نضرب العددين في 100 ليصير القاسم طبيعيًّا: 900 ÷ 75 = 12 دينارًا. تحقّق: 0,75 × 12 = 9 ✓. والتقدير يؤكّده: الكيلوغرام الكامل أغلى من 0,75 kg، و 12 أكبر من 9.",
       "difficulty": 3,
       "competencies": ["math.num.mult-div-decimaux"]
     }
