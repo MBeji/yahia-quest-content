@@ -1,0 +1,171 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le grand numéro",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Lettre : « Tunis, le 5 mars. Chère Tatie, je t'écris pour te dire que maman est malade. Elle doit rester deux semaines au lit. Peux-tu venir nous aider ? Je t'embrasse bien fort. Léa » Quelle est la formule d'appel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chère Tatie,"
+        },
+        {
+          "id": "b",
+          "text": "Tunis, le 5 mars.",
+          "misconceptionTag": "fr.lettre.parties-mal-placees"
+        },
+        {
+          "id": "c",
+          "text": "Je t'embrasse bien fort.",
+          "misconceptionTag": "fr.lettre.parties-mal-placees"
+        },
+        {
+          "id": "d",
+          "text": "Peux-tu venir nous aider ?"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La formule d'appel nomme la personne à qui l'on écrit, juste après le lieu et la date : « Chère Tatie, ». « Tunis, le 5 mars » donne le lieu et la date, « Je t'embrasse bien fort » est la formule de fin, et la question appartient au corps de la lettre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lettre : « Chère Tatie, je t'écris pour te dire que maman est malade. Elle doit rester deux semaines au lit. Peux-tu venir nous aider ? » Que peut-on affirmer d'après cette lettre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Léa est malade et reste au lit.",
+          "misconceptionTag": "fr.lecture.personnage-confondu"
+        },
+        {
+          "id": "b",
+          "text": "La tante a déjà promis de venir.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        },
+        {
+          "id": "c",
+          "text": "Léa demande de l'aide à sa tante."
+        },
+        {
+          "id": "d",
+          "text": "Tatie habite dans la même maison que Léa.",
+          "misconceptionTag": "fr.lecture.deduction-sans-indice"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Léa écrit à sa tante pour lui demander de venir les aider, parce que sa mère est malade. C'est la mère qui reste au lit, pas Léa. Le texte ne dit ni que la tante a répondu ni où elle habite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Mes sœurs sont ___ et mes frères sont ___. » (curieux, joyeux)",
+      "options": [
+        {
+          "id": "a",
+          "text": "curieux – joyeux",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "b",
+          "text": "curieuses – joyeux"
+        },
+        {
+          "id": "c",
+          "text": "curieuses – joyeuses",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "d",
+          "text": "curieuxes – joyeux",
+          "misconceptionTag": "fr.accord.feminin-adjectif-mal-forme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Sœurs » est féminin pluriel : curieux se termine par -eux, il devient curieuse, puis prend un s : curieuses. « Frères » est masculin pluriel : joyeux se termine déjà par x et ne change pas. « Curieux » oublie le féminin, « joyeuses » s'accorde avec le mauvais nom, « curieuxes » ajoute un e sans changer la terminaison.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Complète : « Hier, elle ___ chez le médecin et il lui ___ un pansement. » (aller, faire)",
+      "options": [
+        {
+          "id": "a",
+          "text": "a allé – a fait",
+          "misconceptionTag": "fr.conj.auxiliaire-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "est allé – a fait",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "est allée – est fait",
+          "misconceptionTag": "fr.conj.auxiliaire-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "est allée – a fait"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Hier » demande le passé composé. « Aller » prend « être » et son participe s'accorde avec « elle » : est allée. « Faire » prend « avoir » : il a fait. Les autres propositions se trompent d'auxiliaire ou n'accordent pas le participe.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "« Demain, dans la forêt, Tulmac marchera avec courage près du ruisseau. » Quels groupes sont des compléments de lieu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "avec courage"
+        },
+        {
+          "id": "b",
+          "text": "demain"
+        },
+        {
+          "id": "c",
+          "text": "dans la forêt"
+        },
+        {
+          "id": "d",
+          "text": "près du ruisseau"
+        }
+      ],
+      "answerKey": {
+        "correct": ["c", "d"]
+      },
+      "explanation": "On pose « où ? » : Tulmac marchera où ? Dans la forêt, près du ruisseau. « Avec courage » répond à « comment ? » et « demain » à « quand ? ».",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les phrases de ce récit : le début, le passage descriptif, la scène avec une réplique, puis la fin.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La salle est grande, avec des tapis bleus et des cordes."
+        },
+        {
+          "id": "b",
+          "text": "Yassine monte à la corde et crie : « Je touche le plafond ! »"
+        },
+        {
+          "id": "c",
+          "text": "Quand il redescend, toute la classe applaudit."
+        },
+        {
+          "id": "d",
+          "text": "Mercredi, Yassine va au gymnase avec sa classe."
+        }
+      ],
+      "answerKey": {
+        "order": ["d", "a", "b", "c"]
+      },
+      "explanation": "Le début présente le personnage, le moment et le lieu. Le passage descriptif montre la salle avant l'action. La réplique fait entendre Yassine pendant qu'il grimpe. La fin dit le résultat : la classe applaudit quand il redescend.",
+      "difficulty": 3
+    }
+  ]
+}

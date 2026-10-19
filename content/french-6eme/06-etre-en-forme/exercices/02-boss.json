@@ -1,0 +1,170 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le champion d'à-côté",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Complète : « La championne est ___ et ses frères sont ___. » (heureux, joyeux)",
+      "options": [
+        {
+          "id": "a",
+          "text": "heureuse – joyeux"
+        },
+        {
+          "id": "b",
+          "text": "heureux – joyeux",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "heureuse – joyeuse",
+          "misconceptionTag": "fr.accord.adjectif-non-accorde"
+        },
+        {
+          "id": "d",
+          "text": "heureuse – joyeuxs",
+          "misconceptionTag": "fr.accord.pluriel-mal-forme"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« La championne » est féminin singulier : heureux devient heureuse. « Frères » est masculin pluriel : joyeux se termine déjà par x et ne change pas. « Heureux » oublie le féminin, « joyeuse » s'accorde avec « la championne » au lieu de « frères », et « joyeuxs » ajoute un s qui n'existe pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle phrase contient un complément de lieu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le clown salue le public avec un grand sourire.",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Le clown salue le public dans dix minutes.",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Le clown salue le public devant le chapiteau."
+        },
+        {
+          "id": "d",
+          "text": "Le clown salue le public tous les soirs.",
+          "misconceptionTag": "fr.complement.lieu-temps-maniere-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le complément de lieu répond à « où ? » : le clown salue le public devant le chapiteau. « Avec un grand sourire » répond à « comment ? », « dans dix minutes » et « tous les soirs » répondent à « quand ? ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Complète : « Hier, ma sœur ___ à la piscine avec son équipe. » (aller)",
+      "options": [
+        {
+          "id": "a",
+          "text": "a allé",
+          "misconceptionTag": "fr.conj.auxiliaire-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "est allé",
+          "misconceptionTag": "fr.accord.pp-etre-non-accorde"
+        },
+        {
+          "id": "c",
+          "text": "est allées"
+        },
+        {
+          "id": "d",
+          "text": "est allée"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Hier » demande le passé composé et « aller » prend l'auxiliaire « être » : est. Le sujet est « ma sœur », féminin singulier : le participe prend un e, allée. « A allé » emploie « avoir », « allé » oublie le féminin et « allées » met un s en trop.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Complète : « Demain, nous ___ au gymnase et nous ___ une longue séance d'étirement. » (aller, faire)",
+      "options": [
+        {
+          "id": "a",
+          "text": "allerons – ferons",
+          "misconceptionTag": "fr.conj.forme-irreguliere-regularisee"
+        },
+        {
+          "id": "b",
+          "text": "irons – ferons"
+        },
+        {
+          "id": "c",
+          "text": "irons – fairons",
+          "misconceptionTag": "fr.conj.forme-irreguliere-regularisee"
+        },
+        {
+          "id": "d",
+          "text": "allons – faisons",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "« Demain » annonce le futur. Les deux verbes changent de radical : ir- pour « aller », fer- pour « faire », avec -ons pour « nous ». « Allerons » et « fairons » les conjuguent comme des verbes réguliers. « Allons » et « faisons » sont au présent.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle version est correctement écrite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rania dit : « Regarde bien l'acrobate qui monte ! »"
+        },
+        {
+          "id": "b",
+          "text": "Rania dit : « regarde bien l'acrobate qui monte ! »"
+        },
+        {
+          "id": "c",
+          "text": "Rania dit, « Regarde bien l'acrobate qui monte ! »",
+          "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "Rania dit : regarde bien l'acrobate qui monte !",
+          "misconceptionTag": "fr.dialogue.ponctuation-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour écrire une parole, on ouvre avec deux-points et guillemets, puis la réplique commence par une majuscule et garde sa ponctuation avant le guillemet fermant. Il manque à chacune des trois autres versions la majuscule, les deux-points ou les guillemets.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Tu décris la bibliothèque de ton école. Quel passage suit un ordre, de loin à près ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La bibliothèque se trouve au fond de la cour. Sa porte est verte. À l'intérieur, des livres couvrent les murs."
+        },
+        {
+          "id": "b",
+          "text": "Il y a des livres. Il y a une porte. Il y a une cour.",
+          "misconceptionTag": "fr.description.inventaire"
+        },
+        {
+          "id": "c",
+          "text": "À l'intérieur, des livres couvrent les murs. La bibliothèque se trouve au fond de la cour. Sa porte est verte.",
+          "misconceptionTag": "fr.description.inventaire"
+        },
+        {
+          "id": "d",
+          "text": "Nous traversons la cour. Nous ouvrons la porte verte. Nous prenons un livre.",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On part de ce qui est loin (la cour, la porte) pour finir à l'intérieur. La liste en « il y a » ne suit aucun ordre, le passage qui commence par l'intérieur va de près à loin, et le dernier raconte des actions au lieu de décrire.",
+      "difficulty": 3
+    }
+  ]
+}
