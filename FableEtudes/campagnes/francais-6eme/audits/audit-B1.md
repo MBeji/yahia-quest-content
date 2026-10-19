@@ -162,3 +162,58 @@ Vérifié : a suppose d ; ordre unique b, e, d, a, c.
 ## 7. Verdict
 
 **À corriger.** 3 critiques (C-1 à C-3, chapitre 01), 6 majeurs (M-1 à M-6), 16 mineurs. Toutes les clés actuelles sont justes ; chaque correctif a un texte de remplacement vérifié ci-dessus. Après correction : relancer `content:check`, `content:qa` et `content:tranche --strict-longest` (aucun remplacement ne fait de la clé l'option la plus longue).
+
+## 8. Re-vérification (2026-10-19, après les corrections de l'auteur)
+
+Base : section « Corrections après audit » de `rapports/rapport-B1.md` ; décisions F8 et F9 du `PLAN.md`. Fichiers relus sur la branche wip. Rien n'a été modifié sous `content/`, aucune écriture git.
+
+### 8.1 État de chaque défaut
+
+| Défaut | État |
+| --- | --- |
+| C-1 quiz 01 q5 | ✓ corrigé (texte de l'audit) ; re-résolu : seule b reste cohérente |
+| C-2 01/04-defi q4 | ✓ corrigé ; re-résolu : une seule paire, [b, c] |
+| C-3 01/01-pratique q6 | ✓ corrigé ; re-résolu : ordre unique d, b, f, c, a, e |
+| M-1, M-2 cours 01 | ✓ (« a + vérifié » ; « sans s'arrêter » s'affiche sans astérisque) |
+| M-3 01/05 q3 (Sylvie) | ✓ ; re-résolu : b seule ; étiquettes justes |
+| M-4 démonstratifs (résumé, retenir) | ✓ |
+| M-5 s de l'impératif | ✓ retenir l.239, résumé, ligne _ouvrir_ ajoutée au `::: propriete` |
+| M-6 02/05 q2 (Sandra) | ✓ « le document enregistré » ; `items` = `jeu 1 p. 39` ; re-résolu : ordre unique |
+| m-1, m-3, m-4, m-5, m-6 (vérifiés mot pour mot sur le PDF p. 9-10), m-8, m-9, m-11 à m-14 | ✓ corrigés et re-résolus |
+| m-7, m-15 | aucune action : ce sont des constats, accepté |
+| m-16 | remplacé par F9 (voir 8.3) |
+| **m-2, m-10** (explications des `short_answer`) | **appliqués, mais à annuler** : voir 8.2 |
+
+Les 19 questions modifiées (11 au chapitre 01, 8 au chapitre 02, dont 4 où seule l'étiquette change) ont été re-résolues à l'aveugle. Toutes les clés sont justes et chaque question n'a qu'une réponse.
+
+Une précision sur le rapport de l'auteur : il écrit « étiquettes retaguées sur 03 q3 et 05 q4 du chap. 02 ». En réalité, 03 q3 est au chapitre 01 (m-8) ; seule 05 q4 est au chapitre 02. Les fichiers sont justes.
+
+### 8.2 Écart sur les `short_answer` : il existe bien une règle contraire, et j'avais tort
+
+`content-engine/references/content-schema.md` (tableau `short_answer`, champ `explanation`) dit : « même barre que `mcq`, **mais elle ne doit pas contenir la réponse littérale** (l'indice la révélerait) ». Le moteur le confirme. `revealHint` (`quest.server.ts` l.944-968, RPC `consume_hint`) sert l'`explanation` comme **indice consommable avant la réponse**. Une explication qui contient « prendre », « peu », « leurs » ou « faites » donne donc la clé à l'élève qui dépense un indice. L'argument du pilote (« l'explication s'affiche après la réponse ») ne tient pas pour ce chemin. Mes constats m-2 et m-10 étaient faux. Il faut **rétablir les textes d'origine**, qui enseignent sans livrer la réponse :
+
+- `01/exercices/02-boss.json` q5 : `Dans un verbe en deux mots, le premier est l'auxiliaire et c'est le second qui donne le sens : on remonte du participe à l'infinitif, qui se termine par -re.`
+- `01/exercices/05-entrainement.json` q4 : `Beaucoup dit une grande quantité ; son contraire dit une petite quantité, avec un mot court de trois lettres que les mots-outils du module font retenir.`
+- `02/exercices/01-pratique.json` q4 : `Deux garçons possèdent plusieurs magazines : le possessif correspond à plusieurs propriétaires (eux) et à plusieurs objets, et il prend la marque du pluriel.`
+- `02/exercices/02-boss.json` q4 : `Ce verbe est irrégulier : à cette personne, il ne prend pas la terminaison -ez des autres verbes. C'est une forme à apprendre.`
+
+`content:qa` ne contrôle pas cette règle. Si on veut un garde-fou, c'est au moteur de l'ajouter.
+
+### 8.3 F9 : les tableaux scindés ne suffisent pas, le correctif doit venir du moteur
+
+Mesure faite dans Chromium à 360 px, avec les règles réelles de `src/styles.css` (`.lesson-content { overflow-wrap: anywhere; word-break: break-word }` et `.lesson-table` en `display:block`), en repérant les mots dont les rectangles tombent sur deux lignes :
+
+- **Cours 01** : des mots sont coupés dans 6 des 9 tableaux, dont des tableaux à 2 et 3 colonnes. Exemples : en-tête « Déterminant » (« Détermina / nt »), « Singulier », « tiendra », « horticulteur », « esthéticienne ».
+- **Cours 02** : 5 mots coupés dans 4 tableaux (« Démonstratif », « Utilisons », « Choisissons », « Donc », « perturbateur »).
+
+La cause n'est pas le nombre de colonnes. `overflow-wrap: anywhere`, hérité par les cellules, rend leur largeur minimale nulle : le tableau ne défile jamais, il se comprime et coupe les mots. Contre-épreuve : en ajoutant **`overflow-wrap: normal; word-break: normal` sur `.lesson-table td, th`** (le « suivi moteur » déjà inscrit en F9), il n'y a **plus aucun mot coupé** dans les deux cours, et la page garde 360 px de large. Les tableaux scindés de l'auteur tiennent alors dans la colonne de 328 px. F9 ne peut donc pas être tenu par le contenu de B1 (il faudrait réécrire 10 tableaux, et la mesure dépend de la police). Je recommande le correctif moteur ; la scission de l'auteur reste juste et inoffensive.
+
+Les résumés n'ont pas de tableau et rien n'y est coupé. Aucun `*`, `:::` ni `_` résiduel dans le rendu des 4 fichiers (vitest jetable, supprimé ; `git status` du moteur propre).
+
+### 8.4 Gates
+
+`content:check` ✓ (`french-6eme: 8 chapters, 40 exercises, 240 questions`) · `content:qa -- --subject french-6eme` ✓ aucune clé suspecte · `content:tranche … 01…,02… --fresh --strict-longest` ✓ : clé la plus longue 0/49, positions 20/33/22/24 %, paires proches 0, gabarits 0, patron de notion 0 en recul.
+
+### 8.5 Verdict final
+
+**Prêt après une dernière retouche** : rétablir les 4 explications de `short_answer` (8.2). Il ne reste ni critique ni majeur dans le contenu. F9 (mots coupés à 360 px) dépend du correctif moteur décrit en 8.3, pas de B1.
