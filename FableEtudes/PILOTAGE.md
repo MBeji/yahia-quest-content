@@ -63,7 +63,7 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 | arabe (`arabic-6eme`) | ⚠️ fiche `partielle/generation`, 100 % mais pas en profondeur R-5 — génération interdite | ✅ armé (19 ch.) | ✅ | ✅ | ❌ | profondeur R-5 de la fiche, puis gisement en un passage |
 | éveil scientifique | ⚠️ fiche `partielle/mixte`, 57 % (503604 p. 103–180 à trous) — génération interdite | ✅ armé | ✅ | ✅ | ❌ | **LOT A d'abord**, puis gisement en un passage |
 | anglais (`english-6eme`) | ✅ `validee-r7`, 100 % ; guide 541608 (manuel élève absent du corpus CNP, D1) ; 6ᵉ = **3ᵉ année d'anglais** (D7, corrigé) | ✅ armé le 2026-10-18 (7 ch., section « Let's pronounce » au 07) | ✅ patron entier étiqueté (51–65 % des distracteurs selon le chapitre, muets à raison, E7) ; 19 étiquettes neuves `english.*`, 6 élargies | ✅ 4 lots audités à l'aveugle (opus), corrigés, re-vérifiés | ✅ 17 sessions du concours lues (2008–2026 ; 2011 et 2014 introuvables) : **19 missions** d'examen ; 2 missions de devoirs en salle blanche (9 devoirs lus) | rapports dans `FableEtudes/campagnes/anglais-6eme/` — **publiés** le 2026-10-18 (privé#720 ; registre : 21 missions `publiee`) |
-| français 6ᵉ | ❌ fiche `partielle/mixte`, 14 % | ❌ la matière n'existe pas | — | — | ❌ | LOT A, puis tout le reste en un passage |
+| français 6ᵉ | ❌ fiche `partielle/mixte`, 14 % | ❌ la matière n'existe pas | — | — | ❌ | 🔒 **réservé** session unique (2026-10-19) : LOT A en cours (guide 521612 + manuels 121614 lecture, 121615 exercices + 521613 BD + 521616 مدونة القسم, 927 p.), branche `wip/francais-6eme-lot-a` ; puis tout le reste en un passage |
 
 ## 3. File d'attente (ordre arbitré par le propriétaire : la 9ᵉ finie avant tout, puis la 6ᵉ)
 
