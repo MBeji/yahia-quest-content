@@ -4,7 +4,50 @@
 > `wip/maths-6eme-un-passage` ; dernier commit qui les touche : `5bacae6c` ; aucun changement non commité dans le lot
 > au moment de l'audit). Ré-auditer si ces fichiers bougent. 2026-10-19.
 >
-> Rapport écrit au fil de l'eau, chapitre après chapitre. Synthèse et verdict en fin de fichier.
+> ⚠️ Hors périmètre : pendant l'audit, `16f230da` (missions M2) a ajouté au ch. 14 les exercices `06`–`10` et au ch. 15
+> les exercices `06`–`09`, et deux lignes `sources[]` aux `chapter.json`. Ces fichiers ne sont **pas** audités ici ;
+> le cours, le résumé, le quiz et les exercices `01`–`05` des six chapitres sont inchangés depuis `915ee40f`.
+>
+> Protocole : re-résolution à l'aveugle de **chaque** question (312 : 6 quiz + 30 exercices) avant de lire clés et
+> explications ; lecture intégrale des 6 cours et 6 résumés, chaque exemple, piège et `verifie` recalculé ; figures
+> re-dérivées sur leurs coordonnées ; reprises confrontées au PDF (`102609` ص 53, 81, 120, 136–137, 148–149, 154–155 ;
+> `502603` p.180) ou à la fiche lue à l'image (ص 16–18, 55–58) ; rendu vitest + Chromium 360 px ; les quatre gates.
+> Rapport de l'auteur lu **après** la re-résolution et l'écriture des constats (réponses en fin de fichier).
+
+## Verdict : **à corriger** (1 critique, 96 majeurs, 23 mineurs)
+
+**312/312 clés justes**, une seule réponse défendable partout, aucune option désignée par sa place, aucune notion ⛔
+(ni calcul littéral, ni ÷ de fractions, ni produit en croix, ni volume ; M3 sans objet dans ce lot : aucun angle),
+notation propre, rendu propre, gates verts. **M1 tenu** (× de deux fractions enseigné et exercé au ch. 13) ; ch. 14 :
+échelle, quatrième proportionnelle sans produit en croix et pourcentage à base inconnue par 1 % **tenus** ; **avis
+défavorable à la scission de « السلّم » seule** (raisons et couture alternative au ch. 14) ; paires proches du ch. 26
+**justifiées**, sauf un vrai miroir. Ce qui bloque :
+
+1. **Une affirmation fausse dans un exemple résolu** (ch. 14, C14-1) : « 8 cm est le plus court côté », contredit par
+   la figure (6 cm). Une ligne à changer.
+2. **Des questions qui redonnent un calcul résolu du cours** : 18 au ch. 13, 4 au ch. 14, 5 au ch. 15, 10 au ch. 22
+   (plus 5 copies conformes entre exercices), 28 au ch. 24 — où le cours est écrit avec les exercices mêmes de la
+   leçon 19 : on change les nombres du cours (M24-1) plutôt que les reprises — et 3 au ch. 26.
+3. **Des étiquettes qui nomment une autre erreur** (13 au ch. 24, 3 au ch. 14) et **six pièges du cours sans
+   étiquette du registre** (ch. 13, 15, 26 : libellés proposés).
+4. Deux clés reconnaissables à leur longueur hors du périmètre de la tranche (ch. 13, ch. 24), un miroir et un
+   distracteur auto-réfuté au ch. 26, la réponse d'une reprise imprimée dans le cours (ch. 22).
+
+Toutes les corrections sont des remplacements **au même rang et à la même difficulté** (aucun identifiant ne bouge) ;
+chaque texte a été recalculé, la clé n'est jamais strictement la plus longue, une seule réponse, aucune fuite ; les
+nombres à plusieurs classes s'écrivent avec U+00A0.
+
+| chapitre | questions re-résolues | clés fausses | critiques | majeurs | mineurs |
+| --- | --- | --- | --- | --- | --- |
+| 13-multiplication-fraction-entier | 56 | 0 | 0 | 20 | 3 |
+| 14-proportionnalite-pourcentage | 58 | 0 | 1 | 7 | 7 |
+| 15-vitesse-distance-temps | 56 | 0 | 0 | 6 | 4 |
+| 22-durees | 56 | 0 | 0 | 16 | 4 |
+| 24-decomposition-fractions | 51 | 0 | 0 | 42 | 2 |
+| 26-diagrammes-batons | 35 | 0 | 0 | 5 | 3 |
+| **total** | **312** | **0** | **1** | **96** | **23** |
+
+(Majeurs comptés par question touchée ; un défaut de cours compte pour un.)
 
 ## Gates (depuis `/home/user/eng-deliver`, lien `content` inchangé)
 
@@ -13,8 +56,21 @@
   dans l'explication : `03-revision` Q7, `04-defi` Q9, Q10 — traités au ch. 14 ci-dessous).
 - `content:figures:check` ✓.
 - `content:tranche -- --chapters <6 slugs> --fresh --strict-longest --strict-lessons` ✓ : clé strictement la plus
-  longue 0/97 ; positions de clé 22/25/30/24 % ; patron de notion 0 en recul ; **23 paires proches** (21 au ch. 26,
-  1 au ch. 14 — jugées dans leurs chapitres).
+  longue 0/97 ; positions de clé 22/25/30/24 % ; patron de notion 0 en recul ; **23 paires proches** (les 12 affichées :
+  11 au ch. 26, 1 au ch. 14 — jugées dans leurs chapitres).
+- Mesure complémentaire de l'auditeur, sur **tous** les QCM du lot (inchangés compris) : clé strictement la plus
+  longue 7/271 ; trois vrais indices de forme (`13` pratique Q3, `24` entraînement Q5, plus boss Q6, quiz Q5 et défi
+  Q3 du ch. 24 réglés par M24-2) ; les deux autres sont des nombres à un chiffre de plus (`15` pratique Q5 `160 km`,
+  `24` défi Q4), sans indice.
+- Scans de notation (hors `<svg>`) : 0 chiffre arabo-indien, 0 LaTeX, 0 `$…$`, 0 `\d \d{3}` en espace simple, 0 virgule
+  arabe dans une notation entre crochets.
+
+## Rendu
+
+`renderLesson` / `renderSummary` (vitest jetable, lang `ar`) : 0 résidu `**`, `:::`, `$$`, 0 `<em>` parasite sur les
+12 fichiers ; sections 7/10/8/8/7/5, `verifie` repliés 7/10/8/8/7/5, figures 5/4/3/3/4/5. Chromium 360 px :
+`scrollWidth` = 360 sur les 12 pages, aucun tableau ni figure > 330 px. Les 24 figures de cours capturées et
+re-dérivées : toutes justes **sauf** l'usage qu'en fait le texte au ch. 14 (C14-1). Fichiers jetables supprimés.
 
 ---
 
@@ -71,6 +127,12 @@ chapitre, `math.frac.add-numerators-and-denominators`, n'est montrée nulle part
 `resume.md`, puce « ضرب كسر في كسر », remplacer `، لا 6/3.` par `، لا 5/7.` L'erreur « on garde un dénominateur »
 reste dite dans la réponse du `verifie` (12/5), ce qui suffit.
 
+**M13-3 — clé reconnaissable à sa longueur** : `01-pratique` Q3 (« كيف نضرب كسرًا في عددٍ صحيح؟ »), clé 34 caractères
+contre 21 au plus (question inchangée depuis `origin/main`, donc hors du périmètre mesuré par la tranche). Options
+homogènes : a `نضرب المقامَ في العدد ونُبقي البسط` (denominateur-multiplie) · b `نضرب البسطَ والمقامَ كليهما في العدد`
+(les-deux-termes) · c `نضرب البسطَ في العدد ونُبقي المقام` (clé, inchangée) · d `نجمع العددَ مع البسط ونُبقي المقام`
+(operation-inverse) — longueurs 34/36/34/34.
+
 ### Mineurs
 
 - **m13-1** `04-defi` Q8 : la première étape (3/4 × 2/3 = 6/12 = 1/2) est l'exemple résolu du cours, permuté. Prompt
@@ -119,11 +181,22 @@ contrôle ne reconnaît pas — rien à corriger.
 Cours re-résolu en entier (0,3 ; 48 ; 3,6 ; 45 ≠ 26,25 ; 57 ; 1,4 ; 7 ; 12,6 ; 7 kg ; 1,2 ; 9,6 ; 15 ; 0,4 ; 20 par
 les trois voies ; 38 → 95 ; 50 ; 30 ; 1/1000 ; 80 m ; 67 km ; 1/1 000 000 ; 5 m ; 4 cm ; 1/4 ; 2/5 ; 0,1875 ; 3/5 ;
 1/20 ; 108 ; 10 800 ; 861 ; 0,36 ; 126 ; 10 ; 45 ; 9 ; 4,5 ; 3 ; 25 % ; 18 % ; 125 % ; 57,14 % ; 40 % ; 60 % ; 30 ;
-19,5 ; 400 ; 397,44 ; 86,4 ; 60 ; 57,6 → 46,08 ; 40 ; 300 ; 440 ; 435,6) : tout est juste. Les six `coursePitfalls`
+19,5 ; 400 ; 397,44 ; 86,4 ; 60 ; 57,6 → 46,08 ; 40 ; 300 ; 440 ; 435,6) : tous les calculs sont justes ;
+une affirmation est fausse — « 8 cm est le côté le plus court » de l'exemple 🗺️, contredite par la figure (C14-1). Les six `coursePitfalls`
 sont montrés en `> ⚠️` et portés par au moins un distracteur. `resume.md` : 10 puces, une par section, dans l'ordre.
 
 Reprise (`04-defi`, `manuel` 502603 p.180, 184–186) confrontée au PDF : 37,5 m ; largeur 3/5 → 22,5 m ; 843,75 m² ;
 35 د/m² → 29 531,25 د ; 6 % + 2 % → 31 893,75 د — données et résultats identiques au corrigé.
+
+### Critique
+
+**C14-1 — exemple résolu faux contre sa propre figure** (`cours.md`, section 🗺️, `::: exemple سلّم تصميم الحديقة`,
+étape 4) : « 8 cm على التصميم تمثّل 8 × 1000 = 8000 cm = 80 m، وهو فعلًا الضلع الأقصر للحديقة ✓ ». La figure (re-dérivée
+sur ses coordonnées : base 240 px = 12 cm, soit 20 px/cm) a un côté de **6 cm** (hauteur, 120 px ↔ 60 m) et un côté
+oblique de 7,2 cm (144 px) : le côté de 8 cm n'est **pas** le plus court. Le cours affirme un fait faux, coché ✓.
+Remplacer l'étape 4 par : « 4. نتحقّق بضلع آخر: 6 cm على التصميم تمثّل 6 × 1000 = 6000 cm = 60 m، وهو فعلًا الضلع
+الأقصر للحديقة ✓ — لأنّ كلّ أبعاد التصميم صُغّرت بالعدد نفسه. » (6 cm est bien le plus court des quatre côtés :
+6 < 7,2 < 8 < 12.)
 
 ### Majeurs
 
@@ -209,7 +282,7 @@ de minutes et lire le résultat en km/h), section ⚖️ (juger le plus rapide �
 - `math.prop.vitesse-moyenne-des-vitesses` — fr « Tu fais la moyenne des deux vitesses : la vitesse moyenne d'un
   trajet est la distance totale divisée par la durée totale » ; ar « تحسب منتصف السرعتين: معدّل سرعة الرحلة هو
   المسافة الكلّيّة مقسومةً على الزمن الكلّيّ » → `02-boss` Q7 a, `03-revision` Q8 a ;
-- `math.prop.vitesse-par-minute-lue-par-heure` — fr « Tu divises par le nombre de minutes : tu obtiens la distance
+- `math.prop.vitesse-unite-de-temps-non-convertie` — fr « Tu divises par le nombre de minutes : tu obtiens la distance
   d'une minute, pas d'une heure » ; ar « تقسم على عدد الدقائق: تحصل على مسافة دقيقة واحدة لا ساعة » → quiz Q6 b.
 Le piège « distance seule » n'a pas de distracteur QCM (boss Q10 est numérique) : il peut rester sans étiquette si
 l'on retire son `> ⚠️` en prose ordinaire, ou recevoir un troisième libellé — au choix de l'auteur. Ajouter aussi
@@ -306,7 +379,7 @@ l'ancrage المنارة passe bien par 20 parts de 2 000 د, sans addition à d
 
 **Le défaut de fond du chapitre** : le cours est écrit avec les **exercices** de la leçon 19 (أتدرّب 3–7 : 12/10,
 13/15, 4/12 + 3/12, 1/9 + 4/9 + 2/9, 30/30, 10/8, 28/20, 5/40, 4/5 + … = 9/5, 3/5 + 8, … + 4 = 19/4, 9/7, 11/7,
-49/9, 19/3, 90/11) **et** les questions reprennent ces mêmes exercices. Résultat : **27 questions sur 51** redonnent
+49/9, 19/3, 90/11) **et** les questions reprennent ces mêmes exercices. Résultat : **28 questions sur 51** redonnent
 un calcul résolu dans le cours. La règle R-2 permet d'ancrer le cours sur les **activités** du manuel (أستحضر 1
 « المنارة », أستكشف 2 « le test », أوظّف 8 « la galette », أقيّم 9 « le budget ») ; les **exercices** reviennent aux
 questions. D'où deux remèdes : (A) **changer les nombres du cours** là où il emprunte un exercice — les questions,
@@ -376,3 +449,96 @@ Q3, les trois autres cas du chapitre, sont réglés par M24-2.)
   tolérable après M24-1 (le cours passe à 9/14), à varier si on y retouche.
 
 ---
+## Ch. 26 — `26-diagrammes-batons` (chapitre neuf, 35 questions re-résolues)
+
+**Clés : 35/35 justes**, une seule réponse défendable, explications justes, aucune lettre ni ordinal. Chaque diagramme
+re-lu sur ses coordonnées SVG (hauteur × pas de l'axe) et confronté au PDF : `01-pratique` = ص 81 ex. 2 (pluies 50,
+80, 160, 180, 240, 200, 220, 140, 40) ✓ ; `02-boss` = ص 53 ex. 9 (familles 50, 300, 200, 600, 100, 50) ✓ ;
+`03-revision` = ص 120 ex. 15 (âges 9, 13, 5, 3 ; 13 filles) ✓ ; `04-defi` = ص 102–103 pb 2 (900/750/600/500 et
+650/500/450/300, erratum n° 44 appliqué ; 45 % / 23 % ; 950/760 ; 650/546 ; 90 %) ✓ ; `05-entrainement` = guide
+502603 p.179/183 (35 %, 40 %, 21 mm ≙ 35 %) ✓. Le cours est re-résolu en entier (14 ; 22 ; 8 ; 30 ; 92 ; 22 − 8 ;
+6 + 12 + 9 + 3 = 30 ; 2/5 = 40 % ; 71,43 % ; 3/10 = 30 % ; 25 % ; 0,4 mm ; 10 mm ; 18 mm ; 7 mm et 2 mm ; 6 mm ;
+5 / 4 / 3 / 2 cm ; 900 cm ; 3,33 ; 2 / 3,5 / 5 cm ; 75 / 70 / 70 % ; 75 % → +5) et ses cinq figures re-dérivées
+(rendu 360 px ci-dessous) : tout est juste. Cinq sections au patron, chacune avec figure, exemple, piège, `verifie`,
+`retenir` ; `resume.md` : 5 puces. Notion conforme au §3.2 (critère مع 1 du T2 : lire, compléter, construire) ;
+aucun ⛔.
+
+**Les ~21 paires proches** (tranche) : **justifiées**. Chaque question est affichée seule, avec sa propre figure ; le
+préambule (« المخطّط يمثّل … ») et le SVG sont donc répétés, et c'est eux qui font la similarité de Jaccard. Les
+tâches, elles, sont distinctes dans chaque exercice (lire une barre, sommer, rapport, seuil, étendue ; partie/tout
+puis partie/partie au boss Q3 ↔ Q4 — contraste voulu). Une seule paire est un vrai doublon : `03-revision` Q5 ↔ Q6
+(M26-4).
+
+### Majeurs
+
+**M26-1 — quiz Q1 redonne l'exemple de la section 📖** (barre lue « 10 + 2 × 2 = 14 », piège « on compte les
+divisions » : distracteur 7). Monter la barre du jour 2 à 16 : dans le SVG, remplacer
+`<rect x="129.2" y="68.6" width="42.6" height="127.4"` par `<rect x="129.2" y="50.4" width="42.6" height="145.6"`
+(pas 182 px / 20 = 9,1 px par unité ; 16 × 9,1 = 145,6 ; 196 − 145,6 = 50,4). Options a `8` · b `16` (clé) · c `10` ·
+d `18` ; exp. « بين 0 و 10 خمسة أقسام صغيرة، فكلّ قسم يساوي 2. عصا اليوم 2 تنتهي بعد 10 بثلاثة أقسام: 10 + 3 × 2 =
+16. ومن عدّ 8 أقسام وكتب 8 نسي أنّ القسم يساوي 2. »
+
+**M26-2 — quiz Q4 refait l'exemple de la section ✏️** : même part restante (25 %), même longueur unitaire (0,4 mm
+pour 1 %), même réponse (10 mm). Nouveau texte : « رُسمت عصيّ لـ 40% و 35% بطولي 32 mm و 28 mm، وبقيت عصا الفئة
+الثالثة. ما طولها بالتدريج نفسه؟ » · a `18 mm` (`math.prop.additive-au-lieu-de-multiplicative` : 28 − 10) · b `20 mm`
+(clé) · c `25 mm` (`math.prop.pourcentage-recopie-comme-resultat`) · d `8 mm` · exp. « نسبة الفئة الثالثة 100% −
+40% − 35% = 25%. طول 1% هو 32 ÷ 40 = 0,8 mm، فطول عصا 25% هو 25 × 0,8 = 20 mm. » (28 ÷ 35 = 0,8 ✓ ; 0,6 mm
+est pris par `05-entrainement`.)
+
+**M26-3 — `05-entrainement` Q6 : deux distracteurs qui se réfutent d'eux-mêmes**, et des données reprises du
+`verifie` de la section 🔵 (80 élèves, 60 reçus). c « متساويتان لأنّ الفرق … 10 و 20 » conclut à l'égalité sur deux
+écarts différents ; d « السنة 2، فنسبتها 75% مقابل 80% » choisit l'année au plus petit taux — éliminés à vue. Nouveau
+texte : « في السنة 1: 50 تلميذًا منهم 40 ناجحًا. وفي السنة 2: 90 تلميذًا منهم 63 ناجحًا. في أيّ سنة كانت النتيجة
+أفضل؟ » · a `السنة 2، لأنّ 63 ناجحًا أكثر من 40` · b `السنة 1، لأنّ نسبة نجاحها 80% مقابل 70%` (clé) · c `السنة 2،
+لأنّ نسبة نجاحها 63% مقابل 40%` (pourcentage-recopie) · d `السنتان متساويتان، لأنّ الناجحين أكثر من النصف في
+السنتين` · exp. « نقارن النسب لا الأعداد: السنة 1: 40/50 = 80% ، السنة 2: 63/90 = 7/10 = 70%. فالنتيجة الأفضل في
+السنة 1 مع أنّ عدد الناجحين فيها أقلّ. » (longueurs 34/39/39/57.)
+
+**M26-4 — doublon miroir `03-revision` Q5 ↔ Q6** : Q5 demande le % des 13 élèves de 12 ans, Q6 le % des garçons
+(30 − 13 filles = 17) ; 43,33 + 56,67 = 100, et l'explication de Q6 le dit. Le 13 filles est celui du manuel (garder
+Q6) ; changer Q5 : « … ما النسبة المئويّة التقريبيّة (برقمين بعد الفاصل) لتلاميذ 13 سنة من مجموع تلاميذ القسم؟ اكتب
+العدد فقط. » · `answerKey.value` 16.67 (tolérance et unité inchangées) · exp. « عصا 13 سنة تبلغ 5 من 30. نقسم: 5 ÷ 30
+≈ 0,1667، ثمّ نضرب في 100: النسبة ≈ 16,67%، أي 16,67. » ; et dans l'explication de Q6, remplacer « والتحقّق: 56,67% +
+43,33% = 100%. » par « والتحقّق: نسبة الإناث 13/30 ≈ 43,33%، و 56,67% + 43,33% = 100%. »
+
+**M26-5 — deux pièges du cours sans étiquette du registre** : section 📖 (« on compte les petites divisions comme des
+unités », exécuté par quiz Q1 a) et section 🔵 (« on juge aux effectifs, pas aux taux », exécuté par `04-defi` Q3 a
+et `05-entrainement` Q6 a). Proposition au registre (puis étiquettes et `coursePitfalls`) :
+`math.stat.graduation-comptee-comme-unite` — fr « Tu comptes les petites divisions comme des unités : lis
+d'abord combien vaut une division de l'axe » ; ar « تعدّ الأقسام الصغيرة كأنّ كلّ قسم وحدة: اقرأ أوّلًا كم يساوي القسم
+على المحور » ; `math.stat.comparaison-par-effectifs` — fr « Tu compares les effectifs au lieu des taux : deux séries
+de tailles différentes se comparent par leurs pourcentages » ; ar « تقارن الأعداد بدل النسب: سلسلتان مختلفتا الحجم
+تُقارنان بنسبهما المئويّة ».
+
+### Mineurs
+
+- **m26-1** `04-defi` Q6 : « السنة 4 » (650 / 546) n'est pas l'année 4 du diagramme affiché dans l'exercice (500 /
+  300) mais celle de l'année universitaire suivante (manuel ب). Écrire « في السنة الجامعيّة الموالية كانت النسبة
+  المأمولة لنجاح السنة 4 هي 90%، وبلغ عدد طلبتها 650 وناجحوها 546. هل بلغت النتيجة المستوى المأمول؟ », comme Q5.
+- **m26-2** `05-entrainement` Q5 : les quatre diagrammes-réponses n'ont ni axe ni graduation ; seul l'ordre des
+  hauteurs discrimine, le « 1 cm لكلّ 20 » n'est pas vérifiable. Acceptable (lecture de l'ordre), mais le titre de la
+  compétence promet plus : ajouter un axe gradué 0–3 cm aux quatre options si l'on veut tester l'échelle.
+- **m26-3** exemple de la section 📖, étape 3 : « تنتهي قبل 10 بعد 4 أقسام » se lit mal → « تنتهي عند القسم الرابع،
+  قبل 10 ».
+
+---
+
+## Après lecture du rapport de l'auteur (`rapports/rapport-B3.md`, lu une fois l'audit écrit)
+
+- **Ids d'étiquettes proposés par l'auteur** : M15-2 et M26-5 reprennent désormais ses ids
+  (`math.prop.vitesse-moyenne-des-vitesses`, `math.prop.vitesse-unite-de-temps-non-convertie`,
+  `math.stat.graduation-comptee-comme-unite`) — un seul jeu de noms à créer au registre. Pour M13-2, son id
+  `math.frac.produit-fractions-denominateur-conserve` est **l'autre remède valable** : le créer au registre, le porter
+  sur les distracteurs « dénominateur gardé » (quiz Q7 a `6/3`, `01-pratique` Q8 d `3/2`…) et dans `coursePitfalls`,
+  et garder le piège actuel. Dans ce cas, ajouter quand même `math.frac.add-numerators-and-denominators` à
+  `coursePitfalls` serait faux (aucun piège ne le montre) : c'est l'un **ou** l'autre. Son
+  `math.mes.echelle-unites-non-uniformisees` (ch. 14) est facultatif : les pièges du ch. 14 sont tous étiquetés.
+- **Ch. 13, `02-boss` Q10 « ≈ cours, volontaire (rappel) »** : maintenu en majeur (M13-1) — la consigne interdit une
+  question qui redonne l'exemple résolu ; un rappel se fait sur d'autres nombres.
+- **Ch. 14, 10 sections** : avis donné (ne pas sortir l'échelle seule ; couture du manuel si scission).
+- **Ch. 26** : paires proches jugées (justifiées, sauf M26-4) ; lectures R-7 du diagramme ص 102 vérifiées au PDF ;
+  compétence `math.stat.effectifs-frequences` empruntée : `content:check` l'accepte, rien à redire.
+- **Ch. 22, horloges** : les deux horloges dessinées par script sont justes (2 h 45 et 8 h 20 re-dérivées) ; la
+  troisième, héritée (`01-pratique` Q3), ne dit pas quelle aiguille est la petite (m22-3).
+- **`displayOrder` 26 du ch. 26** : sans objet pour l'audit.
+
