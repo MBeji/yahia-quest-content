@@ -298,3 +298,45 @@ Même « Matériel : carton, ciseaux », mêmes étapes (« Découpe », « Coll
 - **les items** (M-4 à M-7, M-9, M-12 à M-17), avec les `coursePitfalls` (M-8, M-18).
 
 Toutes les clés actuelles sont justes. Chaque texte de remplacement ci-dessus a été vérifié : une seule réponse, la clé n'est pas strictement la plus longue, et aucune fuite vers une autre question du chapitre.
+
+## 11. Re-vérification (2026-10-19, après les corrections de l'auteur et du pilote)
+
+**Gates** :
+- `content:check` ✓ (french-6eme : 8 chapitres, 240 questions).
+- `content:qa -- --subject french-6eme` ✓.
+- `content:tranche … --chapters 07…,08… --fresh --strict-longest` : 0/51 clé strictement la plus longue, 0 paire proche, patron de notion 0 en recul. Trois gabarits inter-chapitres avec le 06 (lieu, temps, manière), acceptables (§ 8).
+
+**Rendu** (vitest jetable, supprimé ; `git status` du moteur propre) :
+- 8 sections et 8 cartes par chapitre.
+- **0 tiret bas et 0 astérisque** dans le texte rendu des deux cours et des deux résumés.
+- Chromium 360 px : plus aucun tableau de 4 colonnes (07 : 3/3/2/3/3/2/2/2/3/2 colonnes ; 08 : 3 colonnes au plus). Restent des mots coupés dans quelques tableaux de 2 ou 3 colonnes (« Complément », « correspondance », « chaussures », « Participe »). C'est le m-1, que la PR moteur #1180 réglera.
+
+**Questions modifiées, re-résolues à l'aveugle** (toutes ✓ = ma réponse = la clé) :
+- 07 : quiz q1 a, quiz q5 a (grosse), `02` q4 d (a muette), `02` q5 a, `03` q6 b,d,e, `04` q3 b,e,d,a,c, `05` q1 b, `05` q2 a, `05` q5 (+ acceptedAnswers).
+- 08 : `01` q6 b (proche), `02` q4 d, `03` q5 a (en ; « à », « de », « dans » impossibles : **une seule réponse**), `04` q1 « veulent », `04` q6 c, `05` q2 l1r3 l2r1 l3r2, `05` q4 c, `05` q5 « débarquer » (l'explication nomme la clé, plus de fuite : q2 ne contient plus le couple).
+
+| Défaut | État |
+| --- | --- |
+| C-1 | ✓ corrigé |
+| M-1 (rendu) | ✓ corrigé (pilote) |
+| M-2 (F9) | ✓ corrigé ; tableau de la lettre et tableau narration/description en 2 colonnes |
+| M-3, M-10 (règles fausses) | ✓ corrigés |
+| M-4, M-5, M-6, M-7, M-9 | ✓ corrigés, textes conformes ; `vif → vive` ajouté au cours |
+| M-8, M-18 (`coursePitfalls` et carte) | ✓ 10 ids au 07, 9 au 08 ; ids M7/M8 ajoutés à la carte |
+| M-11 (*leur*, F1) | ✓ retiré de l'ancrage, de l'exemple et du `verifie` |
+| M-12 (*rentrer*) | ✓ cours et résumé |
+| M-13 (contraires, fuite) | ✓ enseignés au cours l.302 ; q2 à 3 paires ; q5 sans fuite |
+| M-14, M-15, M-16, M-17 | ✓ corrigés |
+| m-2 à m-8, m-10, m-12, m-13 | ✓ corrigés |
+| m-1 | moteur (#1180) |
+| m-9 (rampe des défis), m-11 (mots-outils non testés), m-15 (planche BD), m-14 (copies au quiz et en pratique) | **non appliqués. Je les tranche : acceptés en l'état.** Ce sont des mineurs sans effet sur la justesse ni sur l'équité. m-9 relève d'un calibrage à décider pour toute la matière. m-11 est un constat à sens unique de l'axe 7. m-15 est une amélioration facultative. m-14 était déjà classé « toléré ». |
+
+**Écart de l'auteur — 08/01-pratique q6 (« contraire de lointain »)** : accepté.
+- Clé unique (*proche*). La notion de contraire est enseignée, et *lointain* est un mot courant à 11–12 ans.
+- La famille de mots reste testée par 05 q1.
+
+**Mineurs neufs** (non bloquants) :
+- **n-1** `08/01` q6 : l'option c « exotique » porte `fr.lexique.contraire-pour-synonyme`. Or *exotique* n'est pas un synonyme de *lointain*, l'étiquette ne nomme donc pas exactement l'erreur : la retirer (option muette). « éloigné » porte déjà l'étiquette pour le gate.
+- **n-2** `07` quiz q1, explication : « les enfants jouent quand ? » → `les amis jouent quand ?` (le sujet a changé).
+
+**Verdict final : prêt.** Aucune clé fausse, aucune question à deux réponses, aucun majeur ouvert. Les deux mineurs n-1 et n-2 peuvent partir avec le lot.
