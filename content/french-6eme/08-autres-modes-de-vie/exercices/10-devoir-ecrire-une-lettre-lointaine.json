@@ -1,0 +1,229 @@
+{
+  "title": "📝 Écrire une lettre à un ami lointain : préparer ⭐⭐⭐",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "Tu écris une lettre à Malek, un ami qui vit au Canada, pour lui présenter ta ville et lui décrire deux lieux que tu aimes. Remets dans l'ordre les paragraphes du corps de ta lettre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tu décris deux lieux que tu aimes : le marché et la plage."
+        },
+        {
+          "id": "b",
+          "text": "Tu donnes de tes nouvelles et tu poses une question à Malek."
+        },
+        {
+          "id": "c",
+          "text": "Tu invites Malek à venir ou à te répondre."
+        },
+        {
+          "id": "d",
+          "text": "Tu présentes ta ville : son nom, sa région, sa taille."
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "On commence par des nouvelles, puis on présente la ville avant de décrire des lieux précis. La lettre se termine par une invitation ou une demande de réponse, qui donne envie à Malek de répondre.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour ta lettre à Malek, un ami qui vit au Canada, quelle ouverture convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monsieur le Directeur,",
+          "misconceptionTag": "fr.lettre.registre-melange"
+        },
+        {
+          "id": "b",
+          "text": "À qui de droit,",
+          "misconceptionTag": "fr.lettre.registre-melange"
+        },
+        {
+          "id": "c",
+          "text": "Cher Malek,"
+        },
+        {
+          "id": "d",
+          "text": "Salut à tous les lecteurs,"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À un ami, on écrit une interpellation affectueuse avec son prénom, suivie d'une virgule : Cher Malek. Monsieur le Directeur et à qui de droit appartiennent aux lettres officielles, et Malek est le seul destinataire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle phrase te présente à Malek de façon claire et naturelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Je m'appelle Nour, j'habite à Sfax, une grande ville au bord de la mer."
+        },
+        {
+          "id": "b",
+          "text": "Nour habite à Sfax, une grande ville."
+        },
+        {
+          "id": "c",
+          "text": "Veuillez agréer, Monsieur, l'expression de mes salutations distinguées.",
+          "misconceptionTag": "fr.lettre.registre-melange"
+        },
+        {
+          "id": "d",
+          "text": "Ma ville est belle."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans une lettre, on se présente à la première personne : je m'appelle, j'habite. La phrase donne le nom, la ville et un détail sur elle. La formule officielle ne présente personne, la 3e personne ne convient pas à un auteur qui parle de lui, et ma ville est belle ne présente pas l'auteur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel passage décrit un lieu de ta ville au lieu de raconter une action ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hier matin, j'ai acheté des dattes au marché puis je suis rentré.",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
+        },
+        {
+          "id": "b",
+          "text": "Samedi, mon père m'a emmené voir la mer.",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
+        },
+        {
+          "id": "c",
+          "text": "Ensuite, nous avons mangé une glace sur la plage.",
+          "misconceptionTag": "fr.texte.description-narration-confondues"
+        },
+        {
+          "id": "d",
+          "text": "Notre marché est très animé : les étals sont colorés."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une description dit comment est le lieu : très animé, étals colorés. Les trois autres passages racontent ce qui s'est passé à un moment précis : on achète, on emmène, on mange.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ta lettre, tu décris ta ville telle qu'elle est maintenant : « Ma ville … au bord de la mer. » Quelle forme complète la phrase ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "sera",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        },
+        {
+          "id": "b",
+          "text": "est"
+        },
+        {
+          "id": "c",
+          "text": "serait"
+        },
+        {
+          "id": "d",
+          "text": "a été",
+          "misconceptionTag": "fr.temps.indicateur-de-temps-ignore"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour décrire un lieu tel qu'il est maintenant, on emploie le présent : ma ville est au bord de la mer. Sera annonce le futur et a été un passé composé : ils ne décrivent pas l'état actuel.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle phrase sort du sujet d'une lettre qui présente ta ville à un ami lointain ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ma ville est située au bord de la mer."
+        },
+        {
+          "id": "b",
+          "text": "Le vieux fort domine le port."
+        },
+        {
+          "id": "c",
+          "text": "Mon frère a perdu son stylo hier à l'école."
+        },
+        {
+          "id": "d",
+          "text": "Au marché, on trouve des fruits de saison."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La lettre doit présenter la ville et ses lieux. La phrase sur le stylo perdu ne parle ni de la ville ni d'un lieu à découvrir : elle sort du sujet. Les trois autres donnent des renseignements sur la ville.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle fin de lettre invite Malek à répondre ou à venir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voilà, c'est tout ce que je voulais te dire."
+        },
+        {
+          "id": "b",
+          "text": "Ma ville est connue pour son marché."
+        },
+        {
+          "id": "c",
+          "text": "J'espère que ma lettre ne t'a pas ennuyé."
+        },
+        {
+          "id": "d",
+          "text": "Écris-moi vite et dis-moi si tu peux venir cet été !"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une bonne fin de lettre donne envie de répondre : elle pose une question ou lance une invitation, ici venir cet été. Les autres phrases ferment la lettre sans rien demander ou reviennent à la description.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels éléments ta lettre à Malek doit-elle contenir ? Choisis TOUS les bons.",
+      "options": [
+        {
+          "id": "a",
+          "text": "le lieu et la date"
+        },
+        {
+          "id": "b",
+          "text": "la description de deux lieux de ta ville"
+        },
+        {
+          "id": "c",
+          "text": "une formule d'interpellation"
+        },
+        {
+          "id": "d",
+          "text": "un résumé de ton dernier film"
+        },
+        {
+          "id": "e",
+          "text": "tes notes de la semaine"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La lettre commence par le lieu et la date et par une formule d'interpellation, puis décrit les lieux demandés par la consigne. Un résumé de film et des notes de classe n'ont pas leur place dans cette lettre.",
+      "difficulty": 3
+    }
+  ]
+}
