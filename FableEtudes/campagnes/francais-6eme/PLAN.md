@@ -38,3 +38,5 @@
 | **F5** | Accord du participe passé avec *avoir* | ⛔ (le guide fait foi) malgré l'encadré du manuel p.125 : jamais ciblé. |
 | **F6** | Manuels | `subject.json` `manuels` : 121614 (lecture) et 121615 (cahier d'activités) ; `manuel` de chaque chapitre = 121614 + pages du module (manifeste). |
 | **F7** | Livraison | deux PR (01–04, puis 05–08 + armement) si le volume l'exige ; sinon une. |
+| **F8** | Impératif négatif (fiche §2.10 tableau C) | **✅ enseignable au ch. 02** : le cahier 121615 p.21 ex.3 lui consacre un exercice, ce qui le sort du « Fichier-classe seul » selon la règle de scope de la fiche ; le classement du tableau C est une erreur (audit B1, 2026-10-19). |
+| **F9** | Tableaux de conjugaison à 5 colonnes cassés à 360 px (`overflow-wrap: anywhere` du moteur) | **3 colonnes au plus** dans les cours (sujet + deux verbes, un temps par tableau) ; suivi moteur : `overflow-wrap: normal` sur les cellules de `.lesson-table`. |
