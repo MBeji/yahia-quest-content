@@ -330,3 +330,30 @@ jobs:
             # checks — visible, et rattrapable par une relance de ce workflow.
             echo "::warning title=PR sans checks::Au moins un check n'a pas démarré sur '$BRANCH'. automerge.yml ne merge pas un SHA sans check run : cette PR restera ouverte jusqu'à ce que ses checks tournent."
           fi
+      # Réveiller automerge EN DERNIER — le trou de #720 et #723 (2026-10-18/19).
+      #
+      # `content-ci.yml` réveille déjà automerge en fin de course, mais ce job-ci
+      # est LUI AUSSI un check run du SHA (« Ouvrir la PR de la branche poussée »),
+      # et il finit souvent APRÈS la CI (le `sleep 30` ci-dessus, puis le dispatch).
+      # Le balayage réveillé par la CI voit alors ce check `in_progress`, conclut
+      # « 1 check(s) encore en cours — le prochain balayage reprendra »… et aucun
+      # balayage ne suit : le merge d'un bot ne réveille rien (garde anti-récursion),
+      # et rien d'autre ne bouge. #720 est restée deux heures verte et ouverte.
+      # Réveiller aussi depuis ici ferme la course dans les deux ordres : le dernier
+      # des deux à finir réveille un balayage qui trouve tout conclu. L'étape est la
+      # dernière du job, qui se termine aussitôt ; un run d'automerge met plus de
+      # temps à obtenir son runner que ce job à se conclure.
+      # Pas de réveil pour une branche de sauvegarde : automerge l'ignore de toute
+      # façon, et chaque run se paie à la minute sur un dépôt privé.
+      - name: Réveiller automerge (dernier check de la poussée)
+        if: always()
+        run: |
+          set -uo pipefail
+          case "$BRANCH" in
+            wip/*|draft/*|rescue/*) echo "Branche de sauvegarde : pas de réveil."; exit 0 ;;
+          esac
+          if gh workflow run automerge.yml --repo "$REPO" --ref main; then
+            echo "automerge.yml réveillé."
+          else
+            echo "::warning title=Réveil impossible::automerge.yml n'a pas pu être dispatché ; la PR attendra le prochain balayage."
+          fi
