@@ -806,3 +806,101 @@ OS : « Consolider l'utilisation du complément de manière dans la phrase simpl
 - **Ex 7a** [R] — « Réponds aux questions par des phrases complètes. » — 3 questions avec image : « Comment les esquimaux se protègent-ils du froid ? » ; « Avec quoi les chinois mangent-ils le riz ? » ; « Comment trouve-t-on la définition d'un mot ? » (dictionnaire).
 - **Ex 7b** [R] — « Trouve les questions qui correspondent aux réponses suivantes. » — 3 réponses : « En avion parce que c'est plus rapide. » ; « Avec un chiffon, mouillé. » ; « En fouillant et en creusant la terre. »
 
+---
+
+# CONJUGAISON — fiches de base (521616 p.136–178)
+
+Page-répertoire (521616 p.137) — « CONJUGAISON - PAGE RÉPERTOIRE — FICHES DE BASE » :
+
+| N° | Fiches | Objectifs spécifiques | Page |
+| --- | --- | --- | --- |
+| 1 | B 1-1 à B 1-5 | Reconnaître les trois temps : présent, passé composé futur [sic, « et » manquant]. | 138 |
+| 2 | B 2-1 à B 2-3 | Distinguer et utiliser un verbe conjugé [sic] et un verbe à l'infinitif. | 143 |
+| 3 | B 3-1 à B 3-4 | Conjuguer les verbes en "er" ; les verbes en " ir " et des verbes usuels du 3ème groupe à l'impératif. | 146 |
+| 4 | B 4-1 à B 4-4 | Conjuguer les verbes "être" et "avoir" au passé composé et au futur. | 150 |
+| 5 | B 5-1 à B 5-4 | Conjuguer les verbes du type "finir" au passé composé et au futur. | 154 |
+| 6 | B 6-1 à B 6-5 | Conjuguer les verbes "mettre" et "prendre" au passé composé et au futur. | 158 |
+| 7 | B 7-1 à B 7-4 | Conjuguer les verbes "aller" et "faire" au passé composé et au futur. | 163 |
+| 8 | B 8-1 à B 8-3 | Conjuguer les verbes "lire", "dire" et "érire" [sic, « écrire »] au passé composé et au futur. | 167 |
+| 9 | B 9-1 à B 9-4 | Conjuguer les verbes "vouloir" et "pouvoir" au présent. | 170 |
+| 10 | B 10-1 à B 10-5 | Conjuguer des verbes pronominaux au présent, au futur et à l'impératif | 174 |
+
+Même codification qu'en grammaire (n° d'objectif séparé, ordre chronologique du programme : le rapprochement B 1 → M1, B 3 → M2, B 4 → M3, B 5 → M4, B 6 → M5, B 7 → M6, B 8 → M7, B 9 → M8, B 10 → filage annuel (verbes pronominaux) est **déduit** de l'ordre et de la fiche existante, non imprimé). Compétence visée, case 2 : « Intégrer les acquis liés aux règles de fonctionnement de la langue ». Les en-têtes de conjugaison s'écrivent « Français 6ème année » (a minuscule), crayon ✎ = base, ✎✎ = perfectionnement.
+
+## Objectif 1 — reconnaître les trois temps (présent, passé composé, futur)
+
+### B 1-1 (p.138) — Conjugaison, fiche de base
+OS : « Reconnaître les trois temps : présent, passé composé et futur ». Notion : situer une phrase / un indicateur de temps.
+- **Ex 1** [B] — « Coche la case qui convient. » — tableau Phrases × passé / présent / futur ; 4 phrases. ex : « Le voyageur lira l'horaire des autobus et des trains avant d'acheter son billet. » ; « Le libraire a déjà fait ses comptes de fin d'année. »
+- **Ex 2** [B] — « Classe dans le tableau les mots qui indiquent le temps. Attention aux intrus. » — 13 mots/expressions : cette semaine - le mois prochain - au-dessous - l'été dernier - il y a deux jours - actuellement - loin - autrefois - dehors - dans deux jours - dans une semaine - le mois dernier - tout de suite ; tableau passé / présent / futur (intrus : au-dessous, loin, dehors).
+
+### B 1-2 (p.139) — Conjugaison, fiche de base (vision)
+- **Ex 3** [B] — « Complète comme dans le modèle. » — schéma en étoile : infinitif au centre, passé composé (gauche), présent (bas), futur (droite) ; modèle : « J'ai mangé … avant / Je mange / je mangerai » ; 6 verbes : travailler, grandir, prendre, mettre, lire, écrire.
+
+### B 1-3 (p.140) — Conjugaison, fiche de base
+- **Ex 4** [B] — « Choisis le verbe conjugé [sic] qui convient. » — texte à 4 choix multiples (en cases à 3 formes : passé composé / présent / futur) : « Patrick et Stéphane (ont passé / passent / passeront) les vacances d'été en montagne. Aujourd'hui ils (sont partis / partent / partiront) tout joyeux pour l'école. Ils (ont retrouvé / retrouvent / retrouveront) leurs camarades et quand le coup de sifflet retentira, tous les élèves (se sont alignés / s'alignent / s'aligneront) et (sont entrés / entrent / entreront) en classe. »
+- **Ex 5** [B] — « Complète chacune des phrases suivantes par une expression qui indique le temps. » — 6 phrases. ex : « Nous avons passé des tests, … . » ; « …, Estelle aidera sa sœur à résumer le texte. »
+- **Ex 6** [B] (sans crayon sur cette ligne dans le texte) — « Complète le texte par les verbes du cadre. » (suis entraîné - apprendrai - sais - ai acheté - ai appris - chercher - achèterai) — texte « Mon premier dictionnaire » : « j'… , d'abord … les lettres de l'alphabet. Ensuite, j'… un dictionnaire pour débutants et je me … chaque jour à … l'explication de certains mots. Maintenant, je … l'utiliser. Plus tard, j'… une encyclopédie. » (7 blancs).
+- **Ex 7a** [B] — « Relie ce qui va ensemble [sic « ebsemble »]. » — 3 débuts : « Durant toute l'année scolaire, » ; « Ce matin, » ; « Dans quelques minutes, » × 3 fins (le directeur affichera la liste des élèves admis ; Cédric a bien travaillé. ; il attend la proclamation des résultats de l'examen).
+
+### B 1-4 (p.141) — Conjugaison, fiche de base
+- **Ex 7b** [P] — « Réécris dans l'ordre les trois phrases obtenues puis complète le texte par une phrase personnelle au futur. »
+- **Ex 8** [P] — « Transforme le texte au passé composé. » — texte de 3 phrases (« Aujourd'hui, l'architecte visite le terrain à bâtir et mesure sa surface. Ensuite, il rentre à son bureau. Lui et son assistant dessinent le plan de l'immeuble que la municipalité veut construire. ») ; amorce « Hier, … ».
+- **Ex 9** [P] — « Transforme le texte au futur. » — texte de 5 phrases (le marchand de fruits et légumes : « Chaque matin, le marchand de fruits et de légumes arrive très tôt, au marché, pour recevoir la marchandise et préparer ses étalages. Il range les cageots… A huit heures, il est prêt pour recevoir les premiers clients. ») ; amorce « Demain, … ».
+
+### B 1-5 (p.142) — Conjugaison, fiche de base (vision)
+- **Ex 10a** [P] — « Choisis un mot de chaque colonne et construis un texte. » — tableau à 4 colonnes : (Dans deux jours / Avant hier / Aujourd'hui) ; (le photographe / il / Jean Paul) ; (remettra / a assisté / a pris / s'enferme) ; (des photos / à une cérémonie de mariage / dans la chambre noire pour développer les pellicules / l'album de photos aux jeunes mariés.) ; titre « Le métier de photographe » (8 lignes ; dessin d'un photographe devant un gâteau).
+- **Ex 10b** [P] — « Remplis maintenant le tableau avec les mots du texte. » — tableau « Termes temporels / Verbes / Temps » (3 lignes).
+
+## Objectif 2 — verbe conjugué / verbe à l'infinitif
+
+### B 2-1 (p.143) — Conjugaison, fiche de base
+OS : « Distinguer et utiliser un verbe à l'infinitif et un verbe conjugué ». Notion : repérer l'infinitif ; nombre de verbes conjugués.
+- **Ex 1** [B] — « Relie chaque verbe conjugué à son infinitif. » — 10 phrases × 13 infinitifs (écrire, faire, avoir, mettre, lire, aller, être, vouloir, apprendre, prendre, finir, dire, décorer ; 3 intrus). ex : « Ils font des exercices. → faire » ; « Est-ce que tu liras cette histoires [sic] ? → lire ».
+- **Ex 2** [B] — « Cherche d'autres verbes à l'infinitif pour compéter [sic] le tableau. » — tableau 4 colonnes : verbes en "er" / "ir" / "re" / "oir".
+- **Ex 3** [B] — « Indique le nombre de verbes conjugués dans chaque phrase. » — 6 phrases. ex : « Tu peux aller chercher ton robot. » ; « Martine a appris son poème et l'a bien récité. »
+
+### B 2-2 (p.144) — Conjugaison, fiche de base
+- **Ex 4** [B] — « Souligne le verbe à l'infinitif et encadre le verbe conjugué. » — 5 phrases. ex : « Odile va regarder le match à la télévision. » ; « Pierre ne pourra pas sortir ce soir. Il est de garde à l'hôpital. »
+- **Ex 5** [B] — « Relie par une flèche ce qui va ensemble. » — 5 débuts (Max n'arrête pas de ; La radio n'a pas ; L'ordinateur a ; Les inventeurs sont en train de ; Cet élève répond sans) × 5 fins (réfléchir à la question. / facilité la vie de l'homme. / taquiner sa sœur. / faire de nouvelles découvertes. / annoncé cette nouvelle.).
+- **Ex 6** [B] — « Transforme les phrases comme dans l'exemple : » — exemple « Je range mes livres → Je viens de ranger mes livres. » ; 4 phrases (venir de + infinitif). ex : « On a décoré la classe. » ; « Tu prends le train. »
+- **Ex 7** [B] — « Complète par le verbe qui convient. » — 4 phrases « Avant de … , … ». ex : « Avant de … , je dis "bonsoir" à mes parents. » ; « Avant de … , je réviserai mes devoirs. »
+
+### B 2-3 (p.145) — Conjugaison, fiche de base
+- **Ex 8** [B] — « Complète par le verbe qui convient au temps indiqué. » — 4 phrases « …, avant de … » avec le temps entre parenthèses (présent / passé composé / futur / présent). ex : « Les menuisiers … leurs outils, avant de fermer leur atelier. (présent) » ; « Les maîtres … les cahiers, avant de les rendre aux élèves. (futur) »
+- **Ex 9** [B] — « Complète par un verbe conjugué et un verbe à l'infinitif. » — 4 phrases. ex : « Le tailleur … les mesures du client, avant de … au tissu. (présent) » ; « Le cosmonaute … une tenue spéciale, avant de … dans la fusée. (présent) »
+- **Ex 10** [B] — « Transforme les noms soulignés en verbes à l'infinitif. » — 4 phrases. ex : « Les enfants aiment la course, le saut et la natation. » ; « Claude aime la pêche et la chasse. »
+- **Ex 11** [B] — « Complète les phrases par les verbes mis entre parenthèses, au présent.. [sic] » — 6 phrases, deux verbes chacune (conjugué + infinitif). ex : « (préférer – rentrer) – Je … avant midi. » ; « (vouloir – préparer) – Le parfumeur … de nouveaux parfums. »
+
+## Objectif 3 — verbes en -er, -ir et usuels du 3ᵉ groupe à l'impératif
+
+### B 3-1 (p.146) — Conjugaison, fiche de base
+OS : « Conjuguer des verbes du 1er du 2ème et du 3ème groupes à l'impératif » (case 3 : « du 1er du 2ème et du 3ème groupes à l'impératif »).
+- **Ex 1a** [B] — « Souligne les verbes à l'impératif. » — texte : « L'entraîneur réunit les jeunes joueurs et leur dit. Achetez des chaussures à crampons. Choisissez une bonne marque. Essayez plusieurs modèles. Comparez puis prenez les meuilleures [sic]. »
+- **Ex 1b** [B] — « Écris l'infinitif de chaque verbe. »
+- **Ex 1c** [B] — « Réécris les recommandations en utilisant "il faut". »
+- **Ex 2** [B] — « Ajoute les terminaisons des verbes suivants conjugués à l'impératif. » — soigner, choisir, prendre, mettre, faire × 3 personnes (2ᵉ sg, 1ʳᵉ pl, 2ᵉ pl) : soign…, chois…, pren…, met…, fai….
+
+### B 3-2 (p.147) — Conjugaison, fiche de base
+- **Ex 3** [B] — « Conjugue [sic « Conjuge »] les trois verbes pronominaux comme dans l'exemple. » — verbes : se préparer, s'éloigner, se nourrir, se reprendre (4 listés pour « trois ») ; exemple « prépare-toi / préparons-nous / préparez-vous ».
+- **Ex 4** [B] — « Écris à la forme négative les phrases suivantes. » — 5 impératifs. ex : « Téléphone souvent. » ; « Sortons sans parapluie. »
+- **Ex 5** [B] — « Écris au pluriel ces recommandations » — 5 phrases. ex : « Prends soin des plantes. » ; « Ne rentre pas tard le soir. »
+- **Ex 6** [B] — « Transforme les phrases à l'impératif comme dans l'exemple. » — exemple « L'infirmière prie la malade de prendre les comprimés avec un peu d'eau. – Prenez les comprimés avec un peu d'eau. » ; 3 phrases. ex : « Le père demande à son fils de ne pas laisser ses stylos à la portée de Bébé. » ; « Le vétérinaire conseille aux fermiers de bien s'occuper de leur bêtes et de les faire vacciner. »
+
+### B 3-3 (p.148) — Conjugaison, fiche de base
+- **Ex 7a** [B] — « Pour lutter contre la pollution sonore dans les immeubles, le maire de ta ville a fait afficher cette note dans tous les immeubles. Lis » — 5 consignes en « Il faut / Il ne faut pas » : « Il faut baisser le volume sonore de votre téléviseur ou de votre radio à partir de 22 heures. » ; « Il ne faut pas mettre en marche votre machine à laver le soir. » ; « Il ne faut pas laisser votre enfant jouer au ballon dans l'appartement. » ; « Il faut remplacer vos chaussures à talons par des mules quand vous rentrez chez vous. » ; « Il faut vous souvenir que vous êtes entouré de personnes qui ont besoin de calme et de repos. »
+- **Ex 7b** [B] — « Réécris ces consignes à l'impératif. » — 5 lignes.
+- **Ex 7c** [B] — « Ajoute une 6ème consigne de ton choix. »
+
+### B 3-4 (p.149) — Conjugaison, fiche de base (vision)
+OS : « Conjuguer des verbes du 1er du 2ème groupes à l'impératif » (3ᵉ groupe omis de l'en-tête de cette page).
+- **Ex 8** [B] — « Observe l'image et donne un ordre à cinq personnes indiquées par des lettres de l'alphabet. » — exemples « P – Ralentis, c'est un carrefour / ou – Ralentissez, c'est un carrefour. » ; dessin d'un carrefour animé (piétons, cyclistes, voitures ; personnages repérés par des lettres) ; source de l'image : « Institut belge pour la Sécurité Routière, Bruxelles. » ; 5 ordres.
+
+## Objectif 4 — être et avoir au passé composé et au futur
+
+### B 4-1 (p.150) — Conjugaison, fiche de base
+OS : « Conjuguer les verbes être et avoir au passé composé et au futur ».
+- **Ex 1** [B] — « Conjugue [sic « Conjuge »] les verbes avoir et être selon les indications du tableau. » — tableau Temps × avoir / être : passé composé (Tu, Nous, Ils) ; futur (Je, Vous, Il) [sic « compsé »].
+- **Ex 2** [B] — « Transforme le verbe avoir du passé composé au futur. » — 6 phrases. ex : « Il a eu faim. » ; « Nous avons en [sic « eu »] chaud. »
+- **Ex 3** [B] — « Transforme le verbe être du futur [sic, « au » manquant] passé composé. » — 6 phrases. ex : « Il sera prêt. » ; « Nous serons généreuses. »
+

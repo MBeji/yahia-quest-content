@@ -120,3 +120,80 @@ OS (case 3, p.241–) : « Consolider la conjugaison des verbes du type « aller
 ### R 7-2 (p.242)
 - **Ex 3** [R] — « Complète les cases en écrivant le sujet et le verbe. » — 2 tableaux (aller : Infinitif/Futur/Passé composé ; faire : Infinitif/Passé composé/Futur) à partir d'une phrase donnée dans l'un des temps. ex : « J'irai me faire soigner. » ; « Est -ce que tu es allée en colonie de vacances ? » ; « Nous avons fait plaisir à nos parents. » ; « Tu ne feras jamais mal aux animaux. »
 
+### R 7-3 (p.243)
+- **Ex 4** [R] — « Transforme le verbe aller à la personne indiquée. » — 3 phrases au passé composé avec amorce. ex : « Je suis allé chez le dentiste pour une visite de contrôle. → Nous … » ; « Tu es allé rendre visite à un ami malade. → Ton camarade et toi … »
+- **Ex 5** [R] — « Transforme le verbe faire à la personne indiquée au passé composé. » — 3 phrases. ex : « Bébé a fait tous les vaccins nécessaires. → Les petits enfants … » ; « Tu n'as pas fait de la peinture sur soie. → Je … »
+- **Ex 6** [R] — « Transforme le verbe faire à la personne indiquée au futur. » — 3 phrases. ex : « Nous ne ferons pas de bruit en montant les escaliers. → Les élèves … » ; « L'infirmier fera une piqûre au malade. → Tu … »
+
+### R 7-4 (p.244)
+- **Ex 7** [R] — « Transforme le verbe aller au futur à la personne indiquée. » — 3 phrases. ex : « Le supporter ira à pied au stade. → Les supporters … » ; « Irez-vous au travail à bicyclette ? → …-tu … ? »
+- **Ex 8** [R] — « Ecris le verbe aller ou faire d'après le sens de la phrase. » — a- Passé composé (4 phrases à blancs : « …-tu … au festival de Carthage cet été ? » ; « Les joueurs n'… pas … d'entraînement ce samedi. ») ; b- Futur (5 phrases : « Que …-tu ce soir ? » ; « « Vous … des découpages et vous … les coller sur les murs », dit la maîtresse. »).
+
+### R 7-5 (p.245)
+- **Ex 9** [R] — « Lis la situation. » (« Une personne a gagné le premier prix d'un concours télé. Elle a reçu un billet d'avion. Un journaliste lui demade [sic] : – Où irez-vous et que ferez-vous avec l'argent gagné ? ») consigne : « Imagine en deux ou trois phrases la réponse de la gagnante. Utilise les verbes faire et / ou aller au futur. » — production libre (6 lignes).
+
+## Objectif R 8 — verbes lire, dire et écrire au passé composé et au futur
+
+OS (case 3, p.246–250) : « Consolider la conjugaison des verbes lire, dire et écrire au passé composé et au futur ». Compétence : « Intégrer les acquis liés aux règles de fonctionnement de la langue. »
+
+### R 8-1 (p.246)
+- **Ex 1** [R] — « Relie par une flèche et complète les cases. » — 6 appariements sujet → forme verbale (6 items chacun) : a- lire/relire (passé composé ; futur avec adverbes) ; b- dire (futur, passé composé) ; c- écrire (passé composé, futur) ; cases « Verbe … » et « Temps … ». ex : « Vous → ai relu ta lettre. [sic : appariement à choisir] » / « Tu → lirons bien. » (les phrases sont construites pour que le seul bon appariement soit celui de la forme).
+
+### R 8-2 (p.247)
+- **Ex 2** [R] — « Complète par les terminaisons des verbes et écris dans les cases ce qui convient. » — « Temps : impératif » ; radicaux « Di… / Li… / Ecri… » × 3 lignes (2ᵉ sg, 1ʳᵉ pl, 2ᵉ pl).
+- **Ex 3** [R] — « Observe le tableau et écris les phrases qui correspondent aux indications. » — tableau personnes × passé composé/futur/impératif, 5 lignes : « Lire le journal » ; « Dire « merci » » ; « Ecrire un mot d'exuses [sic] » ; « Ne pas dire de mensonges » ; « Ne pas écrire sur les murs » ; 7 phrases à écrire.
+
+### R 8-3 (p.248)
+- **Ex 4a** [R] — « Ecris correctement le verbe entre parenthèses au passé composé. » — 6 phrases. ex : « J'(lire) … dans un journal que le Tsunami (le raz-de-marée) survenu en Asie a emporté des milliers de personnes. » ; « Pour bien présenter le spectacle l'animateur (écrit) [sic] … le texte qu'il va lire sur le prompteur. » (autre : « « biodégradables » ? (Cherche ce mot dans le dictionnaire.) »).
+- **Ex 4b** [R] — « Réécris ces phrases au futur. » — 6 phrases (8 lignes).
+
+### R 8-4 (p.249)
+- **Ex 5** [R] — « Conjugue ces phrases à l'impératif. » — 2 amorces : « Ne rien dire » ; « Lire correctement et écrire avec soin » (4 lignes).
+- **Ex 6** [R] — « Réécris les phrases suivantes aux personnes indiquées. » — 4 phrases × 2 personnes. ex : « Les non-voyants liront en utilisant l'écriture « braille ». → Il … / Vous … » ; « Tu n'as pas dit que ce film est muet. → Vous … / Ils … »
+
+### R 8-5 (p.250)
+- **Ex 7** [R] — « Réponds aux questions suivantes. » — 5 questions. ex : « – Quand liras-tu des textes en anglais ? » ; « – Avez vous toujours dit la vérité ? »
+- **Ex 8** [R] — « Ecris les questions qui donnent les réponses suivantes : » — 3 réponses avec mot interrogatif. ex : « – … (où ?) – J'ai lu cette annonce dans un journal. » ; « – … (quand ?) – Il a dit des blagues pendant la récréation. »
+- **Ex 9** [R] — « Construis trois phrases à l'impératif selon les indications suivantes : » — lire (2ème personne du singulier) ; écrire (1ère personne du pluriel) ; dire (2ème personne du pluriel).
+
+## Objectif R 9 — verbes du type « vouloir » et « pouvoir » au présent
+
+OS (case 3, p.251–253) : « Consolider la conjugaison des verbes du type « vouloir » et « pouvoir » au présent ». Compétence : « Intégrer les acquis liés aux règles de fonctionnement de la langue. »
+
+### R 9-1 (p.251)
+- **Ex 1** [R] — « Complète les cases et écris les pronoms sujets qui conviennent. » — 2 colonnes (vouloir, pouvoir) de 6 formes sans pronom : voulons, veut, veux, voulez, veulent, veux ; peuvent, peut, pouvons, peux, peux, pouvez.
+- **Ex 2** [R] — « Transforme le verbe vouloir : » a- du singulier au pluriel (3 phrases : « Tu veux acheter une montre pour être à l'heure. » ; « Je ne veux emprunter de l'argent à personne. » [sic, « ne … » sans « pas » ni « plus »]) ; b- du pluriel au singulier (3 phrases : « Mes parents veulent m'apprendre à utiliser l'ordinateur. » ; « Est-ce que vous voulez visiter la Cité des Sciences de Tunis ? »).
+
+### R 9-2 (p.252)
+- **Ex 3** [R] — « Transforme le verbe pouvoir : » a- sg→pl (3 : « Je ne peux pas porter cette valise. » ; « Tu ne peux pas faire ce que tu veux en classe. ») ; b- pl→sg (3 : « Les archéologues peuvent-ils fouiller les ruines romaines ? » ; « Mon ami et moi, nous pouvons utiliser l'ordinateur de l'école. »).
+- **Ex 4** [R] — « Complète chaque phrase par lee [sic] pronom sujet qui convient et le verbe vouloir au présent. » — 5 phrases. ex : « – …-… me prêter ton ballon ? » ; « – Est-ce que … reprendre vos cartes de géographie ? »
+
+### R 9-3 (p.253)
+- **Ex 5** [R] — « Complète chaque phrase par le pronom sujet qui convient et le verbe pouvoir au présent. » — 5 phrases. ex : « – … ne … pas faire leurs exercices sans utiliser une carte de géographie. » ; « – … même prende [sic] des photos avec ton portable. »
+- **Ex 6** [R] — « Relie par une flèche la phrase au verbe vouloir qui peut remplacer le verbe souligné. » — 4 phrases / 4 formes (veut, veulent, veux, voulons). ex : « Je demande des explications → veux » ; « Les joueurs ont envie de gagner → veulent ».
+- **Ex 7** [R] — « Ajoute le verbe vouloir ou pouvoir au présent et fais les transformations nécessaires. » — exemple « Il se déguise en Charlot → Il veut se déguiser en Charlot. » ; 4 phrases. ex : « Vous courez aussi vite que moi. (pouvoir) » ; « Que dis-tu ? (vouloir) ».
+
+## Objectif R 10 — verbes pronominaux au présent, au futur et à l'impératif
+
+OS (case 3, p.254–257) : « Consolider la conjugaison des verbes pronominaux au présent, au futur et à l'impératif ». Compétence : « Intégrer les acquis liés aux règles de fonctionnement de la langue. »
+
+### R 10-1 (p.254)
+- **Encadré « Ce que nous savons déjà »** : « Les verbes pronominaux comme : se lever, se peigner, se réunir, s'en aller... se conjuguent ainsi : » tableau Présent / Futur / Impératif — « Je me lève / Je me lèverai ; Tu te lèves / Tu te lèveras / Lève-toi ; Il/Elle se lève / Il/Elle se lèvera ; Nous nous levons / Nous nous lèverons / Levons-nous ; Vous vous levez / Vous vous lèverez / Levez-vous ; Ils/Elles se lèvent / Ils/Elles se lèveront ». Règle : « Les verbes pronominaux se conjuguent comme tous les autres verbes mais on leur ajoute un deuxième pronom : me - te - se - nous - vous - se. »
+- **Ex 1** [R] — « Complète par le pronom sujet qui convient. » — 10 phrases (2 colonnes de 5). ex : « … se réveillent bientôt. » ; « … nous réfugions dans la cabane. »
+- **Ex 2** [R] — « Complète les verbes pronominaux par le pronom qui convient. » — 6 phrases. ex : « Camilla … parfume tous les matins. » ; « A quelle heure vous levez - … le matin ? »
+
+### R 10-2 (p.255)
+- **Ex 3a** [R] — « Transforme au pluriel. » — 4 phrases. ex : « Je me lave à l'eau froide. » ; « Je me suis fait mal. » [passé composé pronominal : hors programme annoncé `[?]`, voir « À signaler »]
+- **Ex 3b** [R] — « Transforme les phrases obtenues (2éme [sic] colonne) au futur. »
+- **Ex 4a** [R] — « Transforme au singulier. » — 4 phrases. ex : « Elles se sauveront en voyant le chien. » ; « Nous ne nous souvenons pas de ce qui est arrivé. »
+- **Ex 4b** [R] — « Transforme les phrases obtenues (2éme [sic] colonne) au présent. »
+
+### R 10-3 (p.256)
+- **Ex 5** [R] — « Ecris à l'impératif à la personne indiquée. » — tableau Personne / Nombre ; exemple « 2ème pluriel : se mettre d'accord. → mettez-vous d'accord. » ; 5 lignes. ex : « 2ème singulier : se peigner avant de sortir. » ; « 2ème pluriel : ne pas s'énerver. » (autres : 1ère pl. « se régaler avec ce gâteau. » ; 2ème sg. « ne pas s'approcher du bord de la rivière. » ; 1ère pl. « s'installer devant la télé. »).
+- **Ex 6** [R] — « Transforme les phrases à l'impératif à la personne indiquée. » — 4 phrases « Il faut se … ». ex : « Il faut se faire vacciner pour se protéger des maladies. (2ème personne du singulier). » ; « Il faut se nourrir de façon équilibrée. (1ére [sic] personne du singulier) » [sic : « 1ʳᵉ personne du singulier » n'existe pas à l'impératif ; voir « À signaler »].
+- **Ex 7** [R] — « Complète le texte par les verbes pronominaux entre parenthèses à l'impératif. » — texte « C'est la fête. La classe est en effervescence mais le maître est inquiet… » (le maître interpelle ses élèves), 3 blancs : « Olfa, (se maquiller) … plus vite. » ; « Sélim, (s'habiller) … » ; « Karim et Sonia (se déguiser) … ».
+
+### R 10-4 (p.257)
+- **Ex 8a** [R] — « Raconte l'histoire en utilisant les verbes « se tamponner », « se disputer » « se croiser » [sic « sse »] au présent. » — production à partir d'un dessin `[?]` non vu (5 lignes).
+- **Ex 8b** [R] — « Termine l'histoire par deux ou trois phrases au futur. » (2 lignes)
+
