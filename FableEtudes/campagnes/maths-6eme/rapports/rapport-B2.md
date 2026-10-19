@@ -54,3 +54,24 @@ Les options concernées sont **muettes** dans le contenu ; à ouvrir au registre
 - **Variantes non déclarées** : 11 (02-Q9 peintre 1/2 + 1/3 + 1/4 ; 04-Q7 réservoir 3/5 → 11/15), 12 (04-Q8 bibliothèque 440 livres sous lecture 3/10 de L31 ex. 12).
 - **Notation du manuel RTL** : toutes les opérations reprises (L42 ex. 3, 5, L57) sont écrites LTR, avec le sens vérifié (résultats positifs).
 - **Clé** : sur les 81 questions neuves ou modifiées, positions a 10 · b 15 · c 27 · d 29 (compensation volontaire d'un existant très chargé en a/b ; chaque chapitre entier reste entre 6 et 15 par lettre).
+
+## Corrections après audit
+
+Audit appliqué : `audits/audit-B2.md` (0 critique, 100 majeurs, 37 mineurs), chapitres 07 à 12.
+
+**Appliqué**
+- Tous les remplacements d'énoncés, d'options, de clés et d'explications, au même rang, même difficulté et même id de clé. Chaque valeur a été recalculée (`Fraction`) et chaque clé vérifiée « non strictement la plus longue » (0/154).
+- Décisions du pilote :
+  - (a) PGCD, ch. 09 : `04-defi` Q2 gardée, bloc descriptif posé, glose « plus grand commun diviseur » retirée.
+  - (b) Exemples du cours redonnés : ch. 11 et 12 question remplacée ; ch. 07, 09, 12 nombres du cours changés, reprise gardée ; ch. 08 et 10 question en variante, item retiré de `manuel.items`.
+  - (c) `؟` dans une formule remplacé par `…` (9 énoncés).
+  - (d) Doublons, 4ᵉ option hors sujet (ch. 10), indice « لا/نعم », étiquettes inexactes, reprises non déclarées, égalité trompeuse du cours 10 (96/24), explication 10 05-Q7, énoncé 10 03-Q8, tous les mineurs.
+- Deux SVG fournis par l'audit posés ; figures vérifiées en rendu.
+
+**Écarté** : aucun remplacement refusé.
+
+**Écart à signaler** : `resume.md` du ch. 10 mis à jour (7/8 > 4/5) pour rester cohérent avec le cours corrigé, alors que l'audit le disait inchangé.
+
+**Contrôles** : prettier OK ; content:check OK ; content:qa 0 erreur (3 avertissements, tous au ch. 14, hors lot) ; content:figures:check OK ; tranche `--fresh --strict-longest --strict-lessons` sur 07–12 : 0 clé strictement la plus longue, 0 régression du motif de notion ; rendu des 6 cours/résumés sans `**`, `:::`, `$$`.
+**Paires proches** : 58 (Jaccard ≥ 0,45), dont plusieurs créées par les jeux de remplacement de l'audit lui-même (variantes volontaires d'un même schéma) ; non bloquantes.
+**Recoupements avec le cours** : 08 quiz Q7, 09 quiz Q6, 10 04-Q9, 11 02-Q9, 12 04-Q8 relus : nombres communs seulement, aucun exemple redonné.
