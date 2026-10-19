@@ -49,3 +49,18 @@
 - Formats : 1 `multi` (reconnaissance, 05), 7 `numeric`, figures SVG (cavalier avec arêtes cachées, patrons de cube valide/invalide, patron du dé, deux cubes accolés, boîtes ouvertes).
 - Reprises déclarées (`manuel`, mêmes données) : 04-defi ← L58 ex. 10 (bassin 8 × 6 × 2 ouvert : 104 m² ; dalles 25 cm, boîtes de 24 à 36 d → 2 520 d) et L58 ex. 7 (pavé : largeur 6, base 54, totale 198 → hauteur 3) ; 05 ← L58 ex. 7 (cube de base 25 m², totale 150 → latérale 100).
 - Les nombres du cours et de L58 ex. 2/3/5/8 sont déjà dans le cours (cube de verre 30 cm, armoire, plumier, deux cubes de 2,5 dm) : les exercices utilisent d'autres données pour ne pas redemander l'exemple.
+
+## 25-perimetre-figure-composee (neuf, displayOrder 25)
+
+- Fondé sur la leçon 24 (ص 67–69) et le critère مع 4 du T1 (p.153). Six notions, une section chacune au patron : contour extérieur (côté commun exclu), lecture des marques et longueurs manquantes (par propriété du quadrilatère, par marque, par soustraction : L), demi-cercle dans le contour (arc π×d÷2, diamètre commun exclu), arc ajouté / arc retranché / quart de cercle (coin arrondi), contour sur plan à l'échelle (arrondi par excès des rouleaux), contour fermé et plantations (intervalles = plants). 9 figures de cours, toutes dessinées et rendues à l'œil ; aucun exemple des ch. 18–21 repris (vérifié sur 18 `محيط`, 19 `محيط`, 21 porte/stade).
+- Quiz 5 ; exercices 01 d1, 02 d3, 03 d2, 04 d4, 05 d3 à 6 questions ; `manuel` : 02 ← ex. 4 (stade 110 × 90 → 502,6 m) et ex. 5 (120 × 60, arc ajouté et retranché → 428,4 m) ; 04 ← ex. 2 (plan 1/750, 356,52 m → 8 rouleaux, figure redessinée, côté commun rectangle/carré non clôturé comme lu par la fiche) et ex. 9 (17 côtés de 5 m → 85 m → 170 plants).
+- **Erreur de la fiche relevée** : §2 octies, L24 ex. 7 « 3 + 3 + 3 + 3 + 4,71 = **18,71** » : la somme vaut **16,71** (12 + 4,71). Exercice non repris (lecture « déduite »).
+- Non repris : ex. 3 (porte : mêmes données que l'exemple « porte » du ch. 21), ex. 6 (base de la porte non tranchée), ex. 7 (triangle équilatéral déduit), ex. 8 (circuit : cotes et sens des arcs déduits).
+
+## Passe « aucune question ne redonne le cours » (consigne du pilote)
+
+Contrôle par script (nombres de chaque prompt contre les blocs `exemple`, `verifie` et `⚠️` du cours) puis relecture. Corrigés :
+- **Cours modifiés** là où une reprise du manuel avait les mêmes données : ch. 20 (vérifier : 120 × 50 / 30 → 80 × 60 / 20, 44 آر, résumé) ; ch. 21 (aiguille 25 → 18 cm ; deux cercles dans un rectangle de hauteur 5 → 6 ; exemple de la méthode d = 8 → d = 26) ; ch. 23 (bassin ouvert 8 × 6 × 2 → 10 × 7 × 2 = 138 m² ; lecture inverse 198/54 → 150/20 ; cube 150 → 96).
+- **Anciennes questions refaites en place** (même rang, même difficulté) quand elles reprenaient un exemple : 20/01 Q1 (5 × 3), 21/01 Q5, 21/04 Q1 et Q5 (roue 30), 21/05 Q3, 23/02 Q4 (5/3/4), 23/03 Q3, 23/04 Q5, 23/05 Q5.
+- Questions nouvelles dont les nombres sont changés : 21 (02 Q7–Q9, 03 Q9, 05 Q8, Q10, 01 Q8, 03 Q8 manuel), 23 (03 Q7), 25 (quiz Q3, 01 Q3, 02 Q2, 03 Q4, 04 Q4, 05 Q4). Reprises du manuel retirées quand les données ont changé (21/03 : ex. 6 ; 21/05 ; 21/02).
+- `؟` dans les figures remplacé par `…` (ch. 20) ; aucun `**` dans les énoncés ; pas de « لا » seul contre « نعم » ×3 (25 quiz Q3 refait en choix de contenu).

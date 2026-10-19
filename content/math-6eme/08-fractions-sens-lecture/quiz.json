@@ -4,7 +4,11 @@
     {
       "prompt": "في الكسر 3/5، ما المقام؟",
       "options": [
-        { "id": "a", "text": "3", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
+        {
+          "id": "a",
+          "text": "3",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
         { "id": "b", "text": "5" },
         { "id": "c", "text": "8" },
         { "id": "d", "text": "2" }
@@ -12,9 +16,7 @@
       "correctOption": "b",
       "explanation": "المقامُ هو العددُ السفليّ (عددُ الأجزاء المتساوية للوحدة): في 3/5 المقامُ 5 والبسطُ 3.",
       "difficulty": 1,
-      "competencies": [
-        "math.frac.sens"
-      ]
+      "competencies": ["math.frac.sens"]
     },
     {
       "prompt": "كيف نقرأ الكسر 1/4؟",
@@ -27,61 +29,83 @@
       "correctOption": "c",
       "explanation": "الكسرُ 1/4 يُقرأ «ربع»، لأنّ الوحدةَ قُسّمت إلى 4 أجزاء متساوية وأُخذ جزءٌ واحد.",
       "difficulty": 1,
-      "competencies": [
-        "math.frac.sens"
-      ]
+      "competencies": ["math.frac.sens"]
     },
     {
       "prompt": "ما قيمةُ 3/4 من 28؟",
       "options": [
         { "id": "a", "text": "21" },
-        { "id": "b", "text": "7", "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee" },
+        {
+          "id": "b",
+          "text": "7",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee"
+        },
         { "id": "c", "text": "24" },
-        { "id": "d", "text": "112", "misconceptionTag": "math.frac.fraction-d-un-nombre-multipliee-au-lieu-de-divisee" }
+        {
+          "id": "d",
+          "text": "112",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-multipliee-au-lieu-de-divisee"
+        }
       ],
       "correctOption": "a",
       "explanation": "نقسم على المقام ثمّ نضرب في البسط: (28 ÷ 4) × 3 = 7 × 3 = 21. إذن 3/4 من 28 = 21.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.sens",
-        "math.frac.mult-entier"
-      ]
+      "competencies": ["math.frac.sens", "math.frac.mult-entier"]
     },
     {
       "prompt": "أيُّ كسرٍ يساوي الوحدة (1)؟",
       "options": [
-        { "id": "a", "text": "3/4", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
-        { "id": "b", "text": "1/2", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
-        { "id": "c", "text": "5/4", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        {
+          "id": "a",
+          "text": "3/4",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
+        {
+          "id": "b",
+          "text": "1/2",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
+        {
+          "id": "c",
+          "text": "5/4",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
         { "id": "d", "text": "7/7" }
       ],
       "correctOption": "d",
       "explanation": "الكسرُ الذي بسطُه يساوي مقامَه يساوي الوحدة: 7/7 = 1.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.sens"
-      ]
+      "competencies": ["math.frac.sens"]
     },
     {
       "prompt": "الكسرُ 5/4 هو:",
       "options": [
-        { "id": "a", "text": "أصغرُ من 1", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        {
+          "id": "a",
+          "text": "أصغرُ من 1",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
         { "id": "b", "text": "أكبرُ من 1" },
-        { "id": "c", "text": "يساوي 1", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        {
+          "id": "c",
+          "text": "يساوي 1",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
         { "id": "d", "text": "يساوي 0" }
       ],
       "correctOption": "b",
       "explanation": "بما أنّ البسط 5 أكبرُ من المقام 4، فإنّ الكسر 5/4 أكبرُ من الوحدة 1.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.sens",
-        "math.frac.comparaison"
-      ]
+      "competencies": ["math.frac.sens", "math.frac.comparaison"]
     },
     {
       "prompt": "وزّع بائع عطور 5 لترات بالتساوي على 3 حرفاء. ما الكمية المضبوطة التي ينالها كلّ حريف؟",
       "options": [
-        { "id": "a", "text": "3/5 لتر", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
+        {
+          "id": "a",
+          "text": "3/5 لتر",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
         { "id": "b", "text": "2 لتر" },
         { "id": "c", "text": "1,6 لتر" },
         { "id": "d", "text": "5/3 لتر" }
@@ -89,24 +113,24 @@
       "correctOption": "d",
       "explanation": "الخارج المضبوط لقسمة 5 على 3 هو الكسر 5/3: المقسوم 5 بسط والقاسم 3 مقام. القسمة لا تنتهي (1,666…)، فالكتابة 1,6 تقريبيّة وليست مضبوطة، والكسر 3/5 يقلب البسط والمقام.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.sens"
-      ]
+      "competencies": ["math.frac.sens"]
     },
     {
       "prompt": "في قسم 25 تلميذًا منهم 10 بنات. ما الكسر الممثّل لعدد البنات بالنسبة إلى جميع تلاميذ القسم؟",
       "options": [
         { "id": "a", "text": "10/25" },
         { "id": "b", "text": "10/15" },
-        { "id": "c", "text": "25/10", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
+        {
+          "id": "c",
+          "text": "25/10",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
         { "id": "d", "text": "15/25" }
       ],
       "correctOption": "a",
       "explanation": "نتحدّث عن البنات فعددهنّ 10 هو البسط، ونقارن بجميع التلاميذ فالمقام 25، أي 10/25. الكسر 25/10 يقلب البسط والمقام، والكسران 10/15 و15/25 يقارنان بعددٍ آخر أو يتحدّثان عن الأولاد.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.sens"
-      ]
+      "competencies": ["math.frac.sens"]
     }
   ]
 }

@@ -103,15 +103,23 @@
       "competencies": ["math.frac.fractions-decimales"]
     },
     {
-      "prompt": "اكتب الكسر 3/5 بمقامٍ 10، ما قيمتُه العشرية؟",
+      "prompt": "اكتب الكسر 1/5 بمقامٍ 10، ما قيمتُه العشرية؟",
       "options": [
-        { "id": "a", "text": "0,6" },
-        { "id": "b", "text": "0,35" },
-        { "id": "c", "text": "0,3" },
-        { "id": "d", "text": "0,06" }
+        { "id": "a", "text": "0,2" },
+        {
+          "id": "b",
+          "text": "0,15",
+          "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies"
+        },
+        { "id": "c", "text": "0,5" },
+        {
+          "id": "d",
+          "text": "0,02",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        }
       ],
       "correctOption": "a",
-      "explanation": "نضرب البسطَ والمقامَ في 2: 3/5 = 6/10 = 0,6.",
+      "explanation": "نضرب البسطَ والمقامَ في 2: 1/5 = 2/10 = 0,2.",
       "difficulty": 3,
       "competencies": ["math.frac.fractions-decimales", "math.frac.equivalence"]
     },
@@ -162,7 +170,7 @@
     },
     {
       "type": "numeric",
-      "prompt": "25/500 يساوي ؟/100. ما العدد الناقص؟",
+      "prompt": "25/500 = …/100. ما العدد الناقص؟",
       "answerKey": {
         "value": 5
       },

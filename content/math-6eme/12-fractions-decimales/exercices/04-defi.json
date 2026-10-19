@@ -32,44 +32,48 @@
       "competencies": ["math.frac.fractions-decimales"]
     },
     {
-      "prompt": "اكتب الكسر 1/4 بمقامٍ 100، ما قيمتُه العشرية؟",
+      "prompt": "اكتب الكسر 3/20 بمقامٍ 100، ما قيمتُه العشرية؟",
       "options": [
-        { "id": "a", "text": "0,4" },
-        { "id": "b", "text": "0,25" },
         {
-          "id": "c",
-          "text": "0,14",
+          "id": "a",
+          "text": "0,32",
           "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies"
         },
-        { "id": "d", "text": "0,025" }
+        { "id": "b", "text": "0,15" },
+        {
+          "id": "c",
+          "text": "0,03",
+          "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie"
+        },
+        { "id": "d", "text": "0,015" }
       ],
       "correctOption": "b",
-      "explanation": "نضرب البسطَ والمقامَ في 25: 1/4 = 25/100 = 0,25.",
+      "explanation": "20 × 5 = 100، فنضرب البسطَ والمقامَ في 5: 3/20 = 15/100 = 0,15.",
       "difficulty": 3,
       "competencies": ["math.frac.fractions-decimales", "math.frac.equivalence"]
     },
     {
-      "prompt": "اكتب العددَ 0,125 على شكل كسرٍ عشريّ ثمّ اختزله.",
+      "prompt": "اكتب العددَ 0,625 على شكل كسرٍ عشريّ ثمّ اختزله.",
       "options": [
         {
           "id": "a",
-          "text": "125/100",
+          "text": "625/100",
           "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
         },
         {
           "id": "b",
-          "text": "1/125",
+          "text": "1/625",
           "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies"
         },
-        { "id": "c", "text": "1/8" },
+        { "id": "c", "text": "5/8" },
         {
           "id": "d",
-          "text": "125/10",
+          "text": "625/10",
           "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
         }
       ],
       "correctOption": "c",
-      "explanation": "0,125 = 125/1000، وبالاختزال على 125: 125/1000 = 1/8.",
+      "explanation": "0,625 = 625/1000، وبالاختزال على 125: 625/1000 = 5/8 (625 = 125 × 5 و1000 = 125 × 8).",
       "difficulty": 3,
       "competencies": ["math.frac.fractions-decimales", "math.frac.equivalence"]
     },
@@ -99,28 +103,32 @@
       "competencies": ["math.frac.fractions-decimales"]
     },
     {
-      "prompt": "كم جزءًا من المئة في العدد 0,4؟",
+      "prompt": "كم جزءًا من المئة في العدد 0,7؟",
       "options": [
-        { "id": "a", "text": "40" },
-        { "id": "b", "text": "4" },
-        { "id": "c", "text": "400" },
-        { "id": "d", "text": "0,04" }
+        { "id": "a", "text": "70" },
+        { "id": "b", "text": "7" },
+        { "id": "c", "text": "700" },
+        { "id": "d", "text": "0,07" }
       ],
       "correctOption": "a",
-      "explanation": "0,4 = 0,40 = 40/100، أي 40 جزءًا من المئة.",
+      "explanation": "0,7 = 0,70 = 70/100، أي 70 جزءًا من المئة.",
       "difficulty": 3,
       "competencies": ["math.frac.fractions-decimales"]
     },
     {
-      "prompt": "ما الكسرُ العشريّ بمقامٍ 100 المساوي للكسر 7/20؟",
+      "prompt": "ما الكسرُ العشريّ بمقامٍ 100 المساوي للكسر 9/25؟",
       "options": [
-        { "id": "a", "text": "7/100" },
-        { "id": "b", "text": "35/100" },
-        { "id": "c", "text": "70/100" },
-        { "id": "d", "text": "720" }
+        {
+          "id": "a",
+          "text": "9/100",
+          "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie"
+        },
+        { "id": "b", "text": "36/100" },
+        { "id": "c", "text": "34/100" },
+        { "id": "d", "text": "925" }
       ],
       "correctOption": "b",
-      "explanation": "نضرب البسطَ والمقامَ في 5: 7/20 = 35/100 (وهو 0,35).",
+      "explanation": "نضرب البسطَ والمقامَ في 4: 9/25 = 36/100 (وهو 0,36).",
       "difficulty": 3,
       "competencies": ["math.frac.fractions-decimales", "math.frac.equivalence"]
     },
@@ -163,6 +171,6 @@
   ],
   "manuel": {
     "code": "102609",
-    "items": ["L31 ex. 7", "L40 ex. 12ب"]
+    "items": ["L31 ex. 7", "L40 ex. 12ب", "L31 ex. 12"]
   }
 }

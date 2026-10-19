@@ -4,82 +4,112 @@
     {
       "prompt": "ما الكسرُ المساوي لـ 1/3 بمقامٍ يساوي 9؟",
       "options": [
-        { "id": "a", "text": "1/9", "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie" },
-        { "id": "b", "text": "9/3", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
+        {
+          "id": "a",
+          "text": "1/9",
+          "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie"
+        },
+        {
+          "id": "b",
+          "text": "9/3",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
         { "id": "c", "text": "3/9" },
         { "id": "d", "text": "2/9" }
       ],
       "correctOption": "c",
       "explanation": "نضرب البسطَ والمقامَ في العدد نفسِه 3: 1/3 = (1×3)/(3×3) = 3/9.",
       "difficulty": 1,
-      "competencies": [
-        "math.frac.equivalence"
-      ]
+      "competencies": ["math.frac.equivalence"]
     },
     {
       "prompt": "لاختزال كسرٍ نقسم:",
       "options": [
-        { "id": "a", "text": "البسط وحده على عدد", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
-        { "id": "b", "text": "المقام وحده على عدد", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
+        {
+          "id": "a",
+          "text": "البسط وحده على عدد",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        },
+        {
+          "id": "b",
+          "text": "المقام وحده على عدد",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        },
         { "id": "c", "text": "البسط والمقام على عددين مختلفين" },
         { "id": "d", "text": "البسط والمقام على العدد نفسه" }
       ],
       "correctOption": "d",
       "explanation": "الاختزال يقسم البسط والمقام معًا على قاسم مشترك لهما، أي على العدد نفسه، فتبقى قيمة الكسر كما هي. قسمة أحد الحدّين وحده أو قسمتهما على عددين مختلفين تُغيّر القيمة.",
       "difficulty": 1,
-      "competencies": [
-        "math.frac.equivalence"
-      ]
+      "competencies": ["math.frac.equivalence"]
     },
     {
       "prompt": "اختزل الكسر 14/18.",
       "options": [
         { "id": "a", "text": "7/9" },
-        { "id": "b", "text": "7/18", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
-        { "id": "c", "text": "14/9", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
+        {
+          "id": "b",
+          "text": "7/18",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        },
+        {
+          "id": "c",
+          "text": "14/9",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        },
         { "id": "d", "text": "2/3" }
       ],
       "correctOption": "a",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك 2: 14/18 = (14÷2)/(18÷2) = 7/9.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.equivalence"
-      ]
+      "competencies": ["math.frac.equivalence"]
     },
     {
       "prompt": "ما العددُ المفقود: 2/3 = …/15؟",
       "options": [
-        { "id": "a", "text": "6", "misconceptionTag": "math.frac.equivalence-facteur-errone" },
+        {
+          "id": "a",
+          "text": "6",
+          "misconceptionTag": "math.frac.equivalence-facteur-errone"
+        },
         { "id": "b", "text": "5" },
-        { "id": "c", "text": "30", "misconceptionTag": "math.frac.equivalence-facteur-errone" },
+        {
+          "id": "c",
+          "text": "30",
+          "misconceptionTag": "math.frac.equivalence-facteur-errone"
+        },
         { "id": "d", "text": "10" }
       ],
       "correctOption": "d",
       "explanation": "بما أنّ 3 × 5 = 15، نضرب البسطَ أيضًا في 5: 2 × 5 = 10، إذن 2/3 = 10/15.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.equivalence"
-      ]
+      "competencies": ["math.frac.equivalence"]
     },
     {
       "prompt": "أيُّ كسرٍ يساوي 3/4؟",
       "options": [
         { "id": "a", "text": "6/8" },
-        { "id": "b", "text": "4/3", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
+        {
+          "id": "b",
+          "text": "4/3",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
         { "id": "c", "text": "3/8" },
         { "id": "d", "text": "7/8" }
       ],
       "correctOption": "a",
       "explanation": "نضرب البسطَ والمقامَ في 2: 3/4 = (3×2)/(4×2) = 6/8، فهما متساويان.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.equivalence"
-      ]
+      "competencies": ["math.frac.equivalence"]
     },
     {
       "prompt": "نكتب 1/2 و 1/3 بمقامٍ مشترك. أيّ كتابة صحيحة؟",
       "options": [
-        { "id": "a", "text": "1/2 = 1/6 و 1/3 = 1/6", "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie" },
+        {
+          "id": "a",
+          "text": "1/2 = 1/6 و 1/3 = 1/6",
+          "misconceptionTag": "math.frac.equivalence-un-seul-terme-multiplie"
+        },
         { "id": "b", "text": "1/2 = 2/6 و 1/3 = 3/6" },
         { "id": "c", "text": "1/2 = 3/6 و 1/3 = 2/6" },
         { "id": "d", "text": "1/2 = 3/5 و 1/3 = 2/5" }
@@ -87,9 +117,7 @@
       "correctOption": "c",
       "explanation": "المقام المشترك 6 لأنّ 6 مضاعف لـ 2 و 3. نضرب حدّي 1/2 في 3: 1/2 = 3/6، ونضرب حدّي 1/3 في 2: 1/3 = 2/6. تغيير المقام وحده كما في 1/6 و 1/6 يغيّر قيمة الكسرين.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.equivalence"
-      ]
+      "competencies": ["math.frac.equivalence"]
     }
   ]
 }
