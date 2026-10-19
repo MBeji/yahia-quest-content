@@ -20,27 +20,15 @@
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },
     {
-      "prompt": "كيف يُقرأ العدد 1 005 200؟",
+      "prompt": "ما العدد الذي يُقرأ «مليون وخمسة آلاف ومئتان»؟",
       "options": [
-        {
-          "id": "a",
-          "text": "مليون وخمسمئة ألفٍ ومئتان",
-          "misconceptionTag": "math.num.zero-intercalaire-oublie"
-        },
-        {
-          "id": "b",
-          "text": "مئة ألفٍ وخمسة آلاف ومئتان",
-          "misconceptionTag": "math.num.classe-mal-lue"
-        },
-        { "id": "c", "text": "مليون وخمسة آلاف ومئتان" },
-        {
-          "id": "d",
-          "text": "مليون وخمسون ألفًا ومئتان",
-          "misconceptionTag": "math.num.zero-intercalaire-oublie"
-        }
+        { "id": "a", "text": "105 200", "misconceptionTag": "math.num.classe-mal-lue" },
+        { "id": "b", "text": "1 005 200" },
+        { "id": "c", "text": "1 050 200", "misconceptionTag": "math.num.zero-intercalaire-oublie" },
+        { "id": "d", "text": "1 500 200", "misconceptionTag": "math.num.zero-intercalaire-oublie" }
       ],
-      "correctOption": "c",
-      "explanation": "نُجمّع الأرقام ثلاثيّاتٍ من اليمين: 1 (مليون) | 005 (خمسة آلاف) | 200 (مئتان). فيُقرأ «مليون وخمسة آلاف ومئتان».",
+      "correctOption": "b",
+      "explanation": "نكتب كلّ صنف بثلاثة أرقام انطلاقًا من اليمين: «مئتان» تعطي 200 في الوحدات البسيطة، و«خمسة آلاف» تعطي 005 في الآلاف، و«مليون» تعطي 1 في الملايين. فالعدد 1 005 200، والصفران في الآلاف يحفظان رتبتي عشرات الآلاف ومئات الآلاف الخاليتين.",
       "difficulty": 2,
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },

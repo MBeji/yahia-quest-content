@@ -346,6 +346,57 @@
 الارتفاع قطعةٌ عموديّة على الضلعين المتوازيين، نرسمها بالكوس، وطولها المسافة بينهما.
 :::
 
+## ✏️ رسم شبه منحرف — ثلاث حالات على القاعدة نفسها
+
+أعطت المعلّمة أمل القطعة [أب] طولها 5 سم، وطلبت منها أن ترسم عليها ثلاثة أشباه منحرف ارتفاع كلٍّ منها 3,5 سم:
+شبه منحرف عاديّ، وشبه منحرف قائم، وشبه منحرف متقايس الضلعين. تتساءل أمل: أين تضع الرأسين الآخرين في كلّ حالة؟
+
+::: figure الحالات الثلاث على القاعدة [أب]: في الأولى الساقان غير متوازيين ومختلفان، وفي الثانية [أد] عموديّ على القاعدتين (مربّعان صغيران)، وفي الثالثة الساقان متساويان (شرطتان)
+<svg viewBox="0 0 360 180"><g transform="translate(10 0)"><path d="M26 150 L86 150 L56 66 L10 66 Z" fill="#0f6e56" opacity="0.1"/><path d="M26 150 L86 150 L56 66 L10 66 Z" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linejoin="round"/><path d="M58 144 L64 150 L58 156" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 60 L41 66 L35 72" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="18" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">أ</text><text x="94" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ب</text><text x="64" y="56" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ج</text><text x="2" y="56" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">د</text><path d="M136 150 L196 150 L176 66 L136 66 Z" fill="#0f6e56" opacity="0.1"/><path d="M136 150 L196 150 L176 66 L136 66 Z" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linejoin="round"/><path d="M168 144 L174 150 L168 156" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M158 60 L164 66 L158 72" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M136 140 L146 140 L146 150" fill="none" stroke="#0f6e56" stroke-width="2"/><path d="M136 76 L146 76 L146 66" fill="none" stroke="#0f6e56" stroke-width="2"/><text x="128" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">أ</text><text x="204" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ب</text><text x="184" y="56" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ج</text><text x="128" y="56" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">د</text><path d="M246 150 L306 150 L294 66 L258 66 Z" fill="#0f6e56" opacity="0.1"/><path d="M246 150 L306 150 L294 66 L258 66 Z" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linejoin="round"/><path d="M278 144 L284 150 L278 156" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M278 60 L284 66 L278 72" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M248 107.4 L256 108.6" stroke="#0f6e56" stroke-width="2" fill="none"/><path d="M296 108.6 L304 107.4" stroke="#0f6e56" stroke-width="2" fill="none"/><text x="238" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">أ</text><text x="314" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ب</text><text x="302" y="56" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ج</text><text x="250" y="56" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">د</text></g></svg>
+:::
+
+في الشكل، السهمان على القاعدتين [أب] و[دج] يقولان إنّهما متوازيتان في الحالات الثلاث، وبُعدهما 3,5 سم؛ وما
+يتغيّر من حالة إلى أخرى هو موضع د وج على المستقيم الموازي.
+
+::: exemple رسم شبه منحرف قائم قاعدته [أب] = 5 سم وارتفاعه 3,5 سم
+
+1. نرسم [أب] = 5 سم بالمسطرة — لأنّها القاعدة المعلومة.
+2. نرسم بالكوس عموديًّا على (أب) في أ، ونقيس عليه أد = 3,5 سم — لأنّ الضلع العموديّ على القاعدة هو الارتفاع نفسه.
+3. نرسم من د مستقيمًا موازيًا لـ (أب) بالمسطرة والكوس — لأنّ للقاعدتين الاتّجاه نفسه.
+4. نعيّن عليه النقطة ج في جهة ب بحيث دج = 3 سم، ثمّ نصل [بج] — فيكون (دج) ∥ (أب) والضلع [بج] مائلًا، وللشكل أبجد زاويتان قائمتان في أ وفي د.
+
+:::
+
+> ⚠️ **الخطأ الشائع**: اختيار ج بحيث دج = أب = 5 سم. عندئذٍ يكون [بج] عموديًّا هو أيضًا على القاعدتين، وللشكل زوجان
+> من الأضلاع المتوازية، فهو مستطيل لا شبه منحرف. يغري الخطأ لأنّ د وج على المستقيم الموازي المطلوب؛ لكنّ شبه
+> المنحرف يطلب قاعدتين مختلفتي الطول، فنتحقّق أنّ دج ≠ أب.
+
+::: methode
+
+1. نرسم القاعدة [أب]، ثمّ الموازي لها على بُعد الارتفاع.
+2. نعيّن د وج على هذا الموازي بحيث يختلف طول [دج] عن طول [أب]:
+   - عاديّ: في أيّ موضعين يجعلان [أد] و[بج] غير متوازيين وغير متساويين؛
+   - قائم: د على العموديّ على (أب) في أ؛
+   - متقايس الضلعين: د وج على جهتين من الموسّط العموديّ لـ [أب]، وعلى البُعد نفسه منه.
+
+حالة حدّيّة: لو جعلنا دج = أب وأضلاعهما في الاتّجاه نفسه لخرج متوازي أضلاع، ولم يعد شبه منحرف.
+
+:::
+
+::: verifie
+ارسم على [أب] = 6 سم شبه منحرف متقايس الضلعين ارتفاعه 3,5 سم. أين نضع د وج؟
+
+---
+
+نرسم الموسّط العموديّ لـ [أب]، ثمّ الموازي لـ (أب) على بُعد 3,5 سم منها. نعيّن د وج على هذا الموازي على جهتين من
+الموسّط وعلى البُعد نفسه منه، مثلًا 2 سم من كلّ جهة، فيكون دج = 4 سم ≠ 6 سم. الشكل متناظر حول الموسّط، فالساقان
+متساويان: أد = بج.
+:::
+
+::: retenir
+شبه المنحرف على القاعدة [أب]: موازٍ لها على بُعد الارتفاع ثمّ د وج بطولين مختلفين؛ القائم بعموديّ في أ، والمتقايس الضلعين بتناظر حول الموسّط العموديّ.
+:::
+
 ## ✖️ القطران — ما تكشفه القطعتان الداخليّتان
 
 نرسم دائرة **مركزها** (centre) م ونصف قطرها 3 سم، ومستقيمين س وص يتقاطعان في م دون أن يتعامدا. تقطع الدائرةُ
@@ -406,6 +457,62 @@
 
 ::: retenir
 قطرا متوازي الأضلاع لهما المنتصف نفسه؛ ويتقايسان في المستطيل، ويتعامدان في المعيّن، والأمران معًا في المربّع.
+:::
+
+## 🧾 كيف نُثبت أنّ رباعيًّا متوازي أضلاع؟
+
+يملك مواطن حقلًا على شكل شبه منحرف أبجد، قاعدته الصغرى [أب] = 88 م وقاعدته الكبرى [دج] = 132 م. يعيّن النقطة ك على
+[أب] والنقطة هـ على [دج] بحيث أك = دهـ = 36 م، ليقتطع قطعة أدهـك، ويقول: «هذه القطعة متوازي أضلاع». كيف نقنعه
+بالخاصّيات لا بقياس الزوايا؟
+
+::: figure الرباعيّ الملوّن أدهـك: [أك] و[دهـ] جزءان من القاعدتين المتوازيتين وطول كلّ منهما 36 م، فهما ضلعان متقابلان متوازيان ومتساويان
+<svg viewBox="0 0 360 230"><g transform="translate(10 0)"><path d="M79.6 122 L40 185 L104.8 185 L144.4 122 Z" fill="#0f6e56" opacity="0.14"/><path d="M79.6 122 L238 122 L277.6 185 L40 185 Z" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linejoin="round"/><path d="M79.6 122 L40 185 L104.8 185 L144.4 122 Z" fill="none" stroke="#0f6e56" stroke-width="2.4" stroke-linejoin="round"/><path d="M120 116 L126 122 L120 128" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M84 179 L90 185 L84 191" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M112 118 L112 126" stroke="#0f6e56" stroke-width="2" fill="none"/><path d="M72.4 181 L72.4 189" stroke="#0f6e56" stroke-width="2" fill="none"/><circle cx="144.4" cy="122" r="3.5" fill="#0f6e56"/><circle cx="104.8" cy="185" r="3.5" fill="#0f6e56"/><text x="69.6" y="114" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">أ</text><text x="248" y="114" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ب</text><text x="150.4" y="111" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ك</text><text x="30" y="204" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">د</text><text x="287.6" y="204" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ج</text><text x="104.8" y="206" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">هـ</text><text x="112" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6e56" direction="ltr" unicode-bidi="isolate" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">36</text><text x="72" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6e56" direction="ltr" unicode-bidi="isolate" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">36</text><text x="190" y="114" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a" direction="ltr" unicode-bidi="isolate" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">88</text><text x="190" y="204" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a" direction="ltr" unicode-bidi="isolate" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">132</text></g></svg>
+:::
+
+في الشكل، السهمان على [أك] و[دهـ] يعلّمان التوازي، والشرطتان تعلّمان التساوي، والعدد 36 مكتوب على كلّ منهما.
+
+::: exemple إثبات أنّ أدهـك متوازي أضلاع
+
+1. ك على [أب] وهـ على [دج]، و(أب) ∥ (دج) لأنّهما قاعدتا شبه المنحرف، إذن (أك) ∥ (دهـ) — لأنّ كلًّا منهما جزء من
+   إحدى القاعدتين.
+2. أك = 36 م = دهـ — معطى، فالضلعان [أك] و[دهـ] متساويان.
+3. في الرباعيّ أدهـك الرؤوس بالترتيب أ-د-هـ-ك، فالضلع [أك] يقابل [دهـ] — لأنّ المتقابلين لا يشتركان في رأس.
+4. ضلعان متقابلان متوازيان **ومتساويان معًا**، إذن أدهـك متوازي أضلاع — وهذا شرط كافٍ، نستعمله ونسمّيه في
+   الإثبات.
+
+:::
+
+> ⚠️ **الخطأ الشائع**: الاكتفاء بنصف الشرط. في شبه المنحرف المتقايس الضلعين ساقاه متساويان، لكنّه ليس متوازي أضلاع
+> لأنّ ساقيه غير متوازيين؛ وله ضلعان متوازيان هما القاعدتان، لكنّهما غير متساويتين. تساوي ضلعين متقابلين وحده لا يكفي،
+> وتوازيهما وحده لا يكفي: نحتاج الشرطين معًا.
+
+::: methode
+
+1. نسمّي الرباعيّ برؤوسه بالترتيب، ونحدّد الأضلاع المتقابلة.
+2. نبحث عن شرط واحد من هذه الشروط الكافية، فيكون الرباعيّ متوازي أضلاع:
+   - كلّ ضلعين متقابلين متوازيان (التعريف)؛
+   - ضلعان متقابلان متوازيان ومتساويان معًا؛
+   - كلّ ضلعين متقابلين متساويان؛
+   - قطراه لهما المنتصف نفسه.
+3. نكتب في الجواب الشرط الذي استعملناه.
+
+حالة حدّيّة: تساوي ضلعين متقابلين وحده، أو توازيهما وحده، لا يكفي: شبه المنحرف المتقايس الضلعين وشبه المنحرف
+العاديّ مثالان على ذلك.
+
+:::
+
+::: verifie
+في الرباعيّ سصعو يتقاطع القطران [سع] و[صو] في النقطة م، وهي منتصف كلّ منهما. ما نوعه؟ وأيّ شرط استعملت؟ ثمّ: في
+رباعيّ ضلعان متقابلان طول كلّ منهما 5 سم، هل نقول إنّه متوازي أضلاع؟
+
+---
+
+هو متوازي أضلاع: للقطرين المنتصف نفسه م، وهذا شرط كافٍ. أمّا الرباعيّ الثاني فلا نجزم بأنّه متوازي أضلاع: تساوي ضلعين
+متقابلين وحده لا يكفي، فشبه المنحرف المتقايس الضلعين ساقاه متساويان وليس متوازي أضلاع.
+:::
+
+::: retenir
+رباعيّ متوازي أضلاع بشرط واحد كافٍ: ضلعان متقابلان متوازيان ومتساويان، أو كلّ ضلعين متقابلين متوازيان أو متساويان، أو قطران لهما المنتصف نفسه.
 :::
 
 ## 🛠️ بناء متوازي الأضلاع — ضلعان والزاوية بينهما
