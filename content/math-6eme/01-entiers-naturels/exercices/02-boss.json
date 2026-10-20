@@ -10,9 +10,17 @@
       "prompt": "في العدد 7 254 130، ما رتبة الرقم 2؟",
       "options": [
         { "id": "a", "text": "الآلاف" },
-        { "id": "b", "text": "عشرات الآلاف", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
+        {
+          "id": "b",
+          "text": "عشرات الآلاف",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        },
         { "id": "c", "text": "مئات الآلاف" },
-        { "id": "d", "text": "الملايين", "misconceptionTag": "math.num.rang-du-chiffre-decale" }
+        {
+          "id": "d",
+          "text": "الملايين",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        }
       ],
       "correctOption": "c",
       "explanation": "من اليمين في 7 254 130: 0 آحاد، 3 عشرات، 1 مئات، 4 آلاف، 5 عشرات الآلاف، 2 مئات الآلاف، 7 ملايين. إذن الرقم 2 في رتبة مئات الآلاف.",
@@ -22,10 +30,22 @@
     {
       "prompt": "ما العدد الذي يُقرأ «مليون وخمسة آلاف ومئتان»؟",
       "options": [
-        { "id": "a", "text": "105 200", "misconceptionTag": "math.num.classe-mal-lue" },
+        {
+          "id": "a",
+          "text": "105 200",
+          "misconceptionTag": "math.num.classe-mal-lue"
+        },
         { "id": "b", "text": "1 005 200" },
-        { "id": "c", "text": "1 050 200", "misconceptionTag": "math.num.zero-intercalaire-oublie" },
-        { "id": "d", "text": "1 500 200", "misconceptionTag": "math.num.zero-intercalaire-oublie" }
+        {
+          "id": "c",
+          "text": "1 050 200",
+          "misconceptionTag": "math.num.zero-intercalaire-oublie"
+        },
+        {
+          "id": "d",
+          "text": "1 500 200",
+          "misconceptionTag": "math.num.zero-intercalaire-oublie"
+        }
       ],
       "correctOption": "b",
       "explanation": "نكتب كلّ صنف بثلاثة أرقام انطلاقًا من اليمين: «مئتان» تعطي 200 في الوحدات البسيطة، و«خمسة آلاف» تعطي 005 في الآلاف، و«مليون» تعطي 1 في الملايين. فالعدد 1 005 200، والصفران في الآلاف يحفظان رتبتي عشرات الآلاف ومئات الآلاف الخاليتين.",
@@ -60,10 +80,22 @@
     {
       "prompt": "ما القيمة المقرّبة للعدد 28 617 إلى أقرب ألف؟",
       "options": [
-        { "id": "a", "text": "28 000", "misconceptionTag": "math.num.arrondi-par-troncature" },
-        { "id": "b", "text": "30 000", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
+        {
+          "id": "a",
+          "text": "28 000",
+          "misconceptionTag": "math.num.arrondi-par-troncature"
+        },
+        {
+          "id": "b",
+          "text": "30 000",
+          "misconceptionTag": "math.num.arrondi-au-mauvais-rang"
+        },
         { "id": "c", "text": "29 000" },
-        { "id": "d", "text": "28 600", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
+        {
+          "id": "d",
+          "text": "28 600",
+          "misconceptionTag": "math.num.arrondi-au-mauvais-rang"
+        }
       ],
       "correctOption": "c",
       "explanation": "للتدوير إلى أقرب ألف ننظر إلى رقم المئات: 6 (أكبر من أو يساوي 5)، فنُدوّر الآلاف إلى الأعلى: 28 617 يصبح 29 000.",

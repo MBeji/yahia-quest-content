@@ -4,10 +4,25 @@
     {
       "prompt": "كم رقمًا عشريًّا في جداء 2,3 × 1,4؟",
       "options": [
-        { "id": "a", "text": "1", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
-        { "id": "b", "text": "2" },
-        { "id": "c", "text": "0", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
-        { "id": "d", "text": "3", "misconceptionTag": "math.num.produit-decimales-mal-comptees" }
+        {
+          "id": "a",
+          "text": "1",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "0",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        }
       ],
       "correctOption": "b",
       "explanation": "نجمع عددَ الأرقام العشرية للعاملين: 1 + 1 = 2، فجداءُ 2,3 × 1,4 = 3,22 فيه رقمان عشريّان.",
@@ -17,14 +32,24 @@
     {
       "prompt": "ما ناتجُ 4,5 × 10؟",
       "options": [
-        { "id": "a", "text": "0,45", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" },
+        {
+          "id": "a",
+          "text": "0,45",
+          "misconceptionTag": "math.num.puissance-de-dix-sens-inverse"
+        },
         {
           "id": "b",
           "text": "450",
           "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
         },
-        { "id": "c", "text": "45" },
-        { "id": "d", "text": "4,50" }
+        {
+          "id": "c",
+          "text": "45"
+        },
+        {
+          "id": "d",
+          "text": "4,50"
+        }
       ],
       "correctOption": "c",
       "explanation": "الضربُ في 10 يُزحزح الفاصلةَ رقمًا واحدًا نحو اليمين: 4,5 × 10 = 45.",
@@ -34,10 +59,24 @@
     {
       "prompt": "ما ناتجُ 1,2 × 3؟",
       "options": [
-        { "id": "a", "text": "3,6" },
-        { "id": "b", "text": "36", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
-        { "id": "c", "text": "3,2" },
-        { "id": "d", "text": "4,2", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        {
+          "id": "a",
+          "text": "3,6"
+        },
+        {
+          "id": "b",
+          "text": "36",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
+        {
+          "id": "c",
+          "text": "3,2"
+        },
+        {
+          "id": "d",
+          "text": "4,2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
       "correctOption": "a",
       "explanation": "نحسب 12 × 3 = 36، وفي العامل 1,2 رقمٌ عشريٌّ واحد، فالجداء 3,6.",
@@ -47,10 +86,24 @@
     {
       "prompt": "ما ناتجُ 8,8 ÷ 4؟",
       "options": [
-        { "id": "a", "text": "2,02", "misconceptionTag": "math.num.zero-intercale-dans-le-resultat" },
-        { "id": "b", "text": "22", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
-        { "id": "c", "text": "2,2" },
-        { "id": "d", "text": "4,8" }
+        {
+          "id": "a",
+          "text": "2,02",
+          "misconceptionTag": "math.num.zero-intercale-dans-le-resultat"
+        },
+        {
+          "id": "b",
+          "text": "22",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
+        {
+          "id": "c",
+          "text": "2,2"
+        },
+        {
+          "id": "d",
+          "text": "4,8"
+        }
       ],
       "correctOption": "c",
       "explanation": "نقسم الجزء الصحيح: 8 ÷ 4 = 2، ثمّ ننزل الرقم العشريّ 8 فنضع الفاصلة في الخارج: 8 أعشار ÷ 4 = 2 من الأعشار. إذن 8,8 ÷ 4 = 2,2 (نتحقّق: 4 × 2,2 = 8,8).",
@@ -60,10 +113,25 @@
     {
       "prompt": "ما ناتجُ 7,5 ÷ 0,5؟",
       "options": [
-        { "id": "a", "text": "0,15" },
-        { "id": "b", "text": "1,5" },
-        { "id": "c", "text": "3,75", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "15" }
+        {
+          "id": "a",
+          "text": "0,15",
+          "misconceptionTag": "math.num.division-virgules-deplacees-inegalement"
+        },
+        {
+          "id": "b",
+          "text": "1,5",
+          "misconceptionTag": "math.num.division-virgules-deplacees-inegalement"
+        },
+        {
+          "id": "c",
+          "text": "3,75",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
       ],
       "correctOption": "d",
       "explanation": "القاسم 0,5 عشريّ، فنضرب المقسوم والقاسم في 10 ليصير القاسم طبيعيًّا ولا يتغيّر الخارج: 7,5 ÷ 0,5 = 75 ÷ 5 = 15. تحقّق: 0,5 × 15 = 7,5 ✓. أمّا 3,75 فهو جداء العددين لا خارجهما.",

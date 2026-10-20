@@ -15,9 +15,21 @@
       "prompt": "ما العدد الذي يُكمل المساواة التالية؟\n9,13 = … + 8,09",
       "options": [
         { "id": "a", "text": "1,04" },
-        { "id": "b", "text": "1,14", "misconceptionTag": "math.num.emprunt-oublie" },
-        { "id": "c", "text": "1,16", "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand" },
-        { "id": "d", "text": "17,22", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        {
+          "id": "b",
+          "text": "1,14",
+          "misconceptionTag": "math.num.emprunt-oublie"
+        },
+        {
+          "id": "c",
+          "text": "1,16",
+          "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand"
+        },
+        {
+          "id": "d",
+          "text": "17,22",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
       "correctOption": "a",
       "explanation": "المجهول جزءٌ ناقص من الكلّ 9,13، فنطرح المعروف: 9,13 − 8,09 = 1,04 (في الأجزاء من المئة 13 − 9 = 4 بعد استلاف عُشر، ثمّ 0 − 0 = 0، ثمّ 9 − 8 = 1). تحقّق: 8,09 + 1,04 = 9,13 ✓.",
@@ -27,10 +39,22 @@
     {
       "prompt": "طرحنا عددًا من 15,2 فكان الفرق 9,75. ما العدد المطروح؟",
       "options": [
-        { "id": "a", "text": "5,55", "misconceptionTag": "math.num.emprunt-oublie" },
+        {
+          "id": "a",
+          "text": "5,55",
+          "misconceptionTag": "math.num.emprunt-oublie"
+        },
         { "id": "b", "text": "5,45" },
-        { "id": "c", "text": "6,45", "misconceptionTag": "math.num.emprunt-oublie" },
-        { "id": "d", "text": "24,95", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        {
+          "id": "c",
+          "text": "6,45",
+          "misconceptionTag": "math.num.emprunt-oublie"
+        },
+        {
+          "id": "d",
+          "text": "24,95",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
       "correctOption": "b",
       "explanation": "المطروح = المطروح منه − الفرق = 15,20 − 9,75 = 5,45 (نتحقّق: 9,75 + 5,45 = 15,2).",
@@ -56,7 +80,11 @@
         { "id": "a", "text": "4,215" },
         { "id": "b", "text": "42,15" },
         { "id": "c", "text": "421,5" },
-        { "id": "d", "text": "4 215", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
+        {
+          "id": "d",
+          "text": "4 215",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        }
       ],
       "correctOption": "b",
       "explanation": "نقرّب: 36,4 ≈ 36 و 5,75 ≈ 6، فالمجموع قريب من 36 + 6 = 42. العدد القريب من 42 هو 42,15 وحده؛ فالبقيّة أصغر منه بعشر مرّات أو أكبر منه بعشر مرّات أو بمئة مرّة. الحساب الدقيق: 36,40 + 5,75 = 42,15 ✓.",

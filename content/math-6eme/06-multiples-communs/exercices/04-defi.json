@@ -14,10 +14,18 @@
     {
       "prompt": "ما المضاعفاتُ المشتركة للعددين 4 و 6 المحصورة بين 30 و 60؟",
       "options": [
-        { "id": "a", "text": "48 فقط", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
+        {
+          "id": "a",
+          "text": "48 فقط",
+          "misconceptionTag": "math.num.ppmc-remplace-par-le-produit"
+        },
         { "id": "b", "text": "36 و 48" },
         { "id": "c", "text": "36 و 48 و 60" },
-        { "id": "d", "text": "40 و 50", "misconceptionTag": "math.num.ppmc-par-addition" }
+        {
+          "id": "d",
+          "text": "40 و 50",
+          "misconceptionTag": "math.num.ppmc-par-addition"
+        }
       ],
       "correctOption": "b",
       "explanation": "أصغر مضاعفٍ مشترك غير معدوم لـ 4 و 6 هو 12، والمضاعفات المشتركة هي مضاعفات 12: 12، 24، 36، 48، 60… وبين 30 و 60 تمامًا: 36 و 48. القفز بالجداء 24 يُسقط 36، والعدد 60 هو الحدّ نفسه فلا يُحسب.",
@@ -27,10 +35,18 @@
     {
       "prompt": "ما أصغرُ عددٍ غيرِ معدومٍ يقبل القسمة على 4 وعلى 6 وعلى 10؟",
       "options": [
-        { "id": "a", "text": "20", "misconceptionTag": "math.num.ppmc-par-addition" },
+        {
+          "id": "a",
+          "text": "20",
+          "misconceptionTag": "math.num.ppmc-par-addition"
+        },
         { "id": "b", "text": "30" },
         { "id": "c", "text": "60" },
-        { "id": "d", "text": "240", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" }
+        {
+          "id": "d",
+          "text": "240",
+          "misconceptionTag": "math.num.ppmc-remplace-par-le-produit"
+        }
       ],
       "correctOption": "c",
       "explanation": "نختبر مضاعفات العدد الأكبر 10: 10 = 6 × 1 + 4 لا، و 20 = 6 × 3 + 2 لا، و 30 = 4 × 7 + 2 لا، و 40 = 6 × 6 + 4 لا، و 50 لا، و 60 = 4 × 15 = 6 × 10 نعم. إذن أصغر مضاعف مشترك غير معدوم للأعداد 4 و 6 و 10 هو 60. أمّا 20 فهو مجموع الأعداد، وهو مضاعف للعددين 4 و 10 فقط، و 30 مضاعف للعددين 6 و 10 فقط، و 240 جداؤها وهو مضاعف مشترك لكنّه ليس الأصغر.",
@@ -66,8 +82,16 @@
     {
       "prompt": "ثلاثة أجراسٍ تدقّ معًا، ثمّ يدقّ الأوّل كلّ 3 دقائق والثاني كلّ 5 دقائق والثالث كلّ 6 دقائق. بعد كم دقيقةً تدقّ الثلاثة معًا من جديد؟",
       "options": [
-        { "id": "a", "text": "90", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
-        { "id": "b", "text": "14", "misconceptionTag": "math.num.ppmc-par-addition" },
+        {
+          "id": "a",
+          "text": "90",
+          "misconceptionTag": "math.num.ppmc-remplace-par-le-produit"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "misconceptionTag": "math.num.ppmc-par-addition"
+        },
         { "id": "c", "text": "15" },
         { "id": "d", "text": "30" }
       ],
@@ -79,7 +103,11 @@
     {
       "prompt": "عددٌ محصورٌ بين 40 و 60: إذا عددناه ثلاثةً ثلاثةً بقي 2، وإذا عددناه أربعةً أربعةً بقي 2 أيضًا. ما هذا العدد؟",
       "options": [
-        { "id": "a", "text": "48", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        {
+          "id": "a",
+          "text": "48",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
         { "id": "b", "text": "46" },
         { "id": "c", "text": "50" },
         { "id": "d", "text": "56" }

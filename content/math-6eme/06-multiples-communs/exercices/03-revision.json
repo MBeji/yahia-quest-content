@@ -10,8 +10,16 @@
       "prompt": "ما المضاعفُ الموالي للعدد 25 في مضاعفات 5؟",
       "options": [
         { "id": "a", "text": "30" },
-        { "id": "b", "text": "26", "misconceptionTag": "math.num.multiple-suivant-pas-ignore" },
-        { "id": "c", "text": "20", "misconceptionTag": "math.num.multiple-precedent-au-lieu-du-suivant" },
+        {
+          "id": "b",
+          "text": "26",
+          "misconceptionTag": "math.num.multiple-suivant-pas-ignore"
+        },
+        {
+          "id": "c",
+          "text": "20",
+          "misconceptionTag": "math.num.multiple-precedent-au-lieu-du-suivant"
+        },
         { "id": "d", "text": "35" }
       ],
       "correctOption": "a",
@@ -35,10 +43,22 @@
     {
       "prompt": "ما أصغرُ مضاعفٍ مشترك غيرِ معدوم للعددين 4 و 12؟",
       "options": [
-        { "id": "a", "text": "16", "misconceptionTag": "math.num.ppmc-par-addition" },
+        {
+          "id": "a",
+          "text": "16",
+          "misconceptionTag": "math.num.ppmc-par-addition"
+        },
         { "id": "b", "text": "12" },
-        { "id": "c", "text": "4", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
-        { "id": "d", "text": "48", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" }
+        {
+          "id": "c",
+          "text": "4",
+          "misconceptionTag": "math.num.multiple-et-diviseur-confondus"
+        },
+        {
+          "id": "d",
+          "text": "48",
+          "misconceptionTag": "math.num.ppmc-remplace-par-le-produit"
+        }
       ],
       "correctOption": "b",
       "explanation": "12 = 4 × 3، فالعدد 12 مضاعفٌ للعدد 4 وللعدد 12 معًا، ولا مضاعف غير معدوم لـ 12 أصغر منه. أمّا 48 فجداء العددين، و 16 مجموعهما، و 4 قاسمٌ مشترك لا مضاعف.",
@@ -61,7 +81,11 @@
     {
       "prompt": "إذا كان 9 قاسمًا للعدد 63، فإنّ 63 ...؟",
       "options": [
-        { "id": "a", "text": "قاسمٌ للعدد 9", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" },
+        {
+          "id": "a",
+          "text": "قاسمٌ للعدد 9",
+          "misconceptionTag": "math.num.multiple-et-diviseur-confondus"
+        },
         { "id": "b", "text": "مضاعفٌ للعدد 9" },
         { "id": "c", "text": "مضاعفٌ للعدد 18" },
         { "id": "d", "text": "لا علاقة له بالعدد 9" }
@@ -74,8 +98,16 @@
     {
       "prompt": "مصباحان: الأوّل يومض كلّ 4 ثوانٍ والثاني كلّ 10 ثوانٍ، بدآ معًا. بعد كم ثانيةً يومضان معًا مجدّدًا؟",
       "options": [
-        { "id": "a", "text": "40", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" },
-        { "id": "b", "text": "14", "misconceptionTag": "math.num.ppmc-par-addition" },
+        {
+          "id": "a",
+          "text": "40",
+          "misconceptionTag": "math.num.ppmc-remplace-par-le-produit"
+        },
+        {
+          "id": "b",
+          "text": "14",
+          "misconceptionTag": "math.num.ppmc-par-addition"
+        },
         { "id": "c", "text": "20" },
         { "id": "d", "text": "10" }
       ],

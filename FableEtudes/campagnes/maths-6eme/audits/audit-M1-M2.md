@@ -228,3 +228,52 @@ devoir du `07` affiche ses nombres à l'envers — et tout le chapitre 07 avec l
 (textes de remplacement fournis ci-dessus, vérifiés par script et en Chromium), et l'arbitrage du pilote sur M-1
 (déplacer 2020 P2 et 2018 P1 au `13`, conseillé). Réponse au point posé : le rappel du pourcentage **suffit au `13`**,
 **ne suffit pas au `06`**, où manque d'abord la fraction d'une quantité.
+
+## Re-vérification (2026-10-20, après les « Corrections après audit » de M1 et M2 et les décisions E-11 / E-12)
+
+J'ai re-résolu à l'aveugle chaque question remplacée ou touchée, puis recalculé les 138 clés des 18 missions : elles
+sont toutes justes. Aucune autre question n'a bougé.
+
+**Défauts de l'audit :**
+
+| défaut | état | contrôle |
+| --- | --- | --- |
+| **C-1** (`2▢4` inversé) | **corrigé (moteur, E-12)** | `eng-deliver` porte arena#1181 (`GAP_NUMBER_RE` dans `bidi.ts`). Mesure Chromium `dir=rtl` refaite sur les 6 énoncés du devoir du 07 : `8▢5`, `6▢4`, `4▢1`, `5▢7`, `27▢▢` s'affichent dans l'ordre. Le contenu garde la notation ▢, comme décidé. La livraison du lot dépend du déploiement de ce correctif (déjà sur `main` du moteur). |
+| **M-1** (scope du 06) | **corrigé (E-11)** | 2020 P2 et 2018 P1 sont maintenant `13/…/10-exam-2020-p2-…` et `11-exam-2018-p1-…` (`displayOrder` 10 et 11). Contenu identique, plus les mineurs. Au 13, fraction d'une quantité, fraction > 1 et retour au tout sont enseignés (08, 13), les restes égaux aussi (06, antérieur), et le rappel du pourcentage suffit. Le 06 garde 2023 P1 et le devoir (`07-devoir-…`, `displayOrder` 7), qui n'utilisent que le 06. |
+| **M-2** | corrigé | 2023 Q4 `a` ; 2020 Q7 « 9626 » (9626 = 11 × 875 + 1) ; devoir 06 Q7 « 112 » ; 2025 Q5 `c` ; 2009 Q6 `d` ; 2024 Q4 (« pourquoi pas la 2ᵉ tranche ») et Q7 : textes conformes à l'audit, explications complétées. Clé jamais strictement la plus longue. |
+| **M-3** | corrigé | devoir 07 Q3 = `4▢1`, clé 4 (441 = 9 × 49), étiquettes sur 1 et 7. |
+| **M-4** | corrigé | devoir 14 Q1 = « 1 cm = ? km », clé 2 km. |
+| **M-5** | corrigé | devoir 06 Q6 = multiples de 12 non multiples de 20 entre 700 et 1000 : 25 − 5 = 20 ✓. |
+| **M-6** | corrigé | 15/06 Q6 « 60 km/h » → `math.alg.reponse-a-l-autre-inconnue`. |
+| mineurs 3, 4, 5, 6, 7, 8, 10, 13 | corrigés | sessions ajoutées (2020 Q6, 2009 Q4) ; 7/11 étiqueté ; 125 % étiqueté, 175 % → 100 % ; 2017 Q8 `c` → « 6 و 23 » muette ; 14/06 Q3 → écart 200 (300 − 100 ✓) ; 14/10 Q3 → écart 5 km (2,5 × 200 000 cm ✓) ; 14/08 « 7803 − 150 » recalibrée d2 ; 15/07 figure redessinée (أ، ب، ج alignés, pentes 80/170 = 32/68, ب–ج = 40 % de أ–ب, sans cote) ; 15/07 Q9 `d` → « 48 > moitié de 114 » (faux, 48 < 57) ; 2015 Q4 « 48,5 » → « 69 » (46 + 23, étiquette `fraction-d-un-nombre-etape-oubliee` exacte). |
+| mineurs 1, 2, 9, 11, 12 | laissés | tolérés à l'audit. |
+
+**Nouvelles étiquettes du registre posées** : `math.mes.trajet-aller-retour-ignore` (14/10 Q5 « 21 km »), `math.prop.vitesse-unite-de-temps-non-convertie` (15/09 Q1 « 2400 km »), `math.frac.rapport-denominateur-mal-choisi` (15/09 Q4 « 3/2 »), `math.mes.temps-d-arret-mal-compte` (15/09 Q6, les trois options fausses).
+- Les quatre ids existent dans `content/misconceptions.json`.
+- Chaque option étiquetée exécute bien son libellé.
+- Aucune étiquette n'est posée sur un `multi` ou un `ordering`.
+- `math.alg.reponse-a-l-autre-inconnue` est aussi posée sur 9614 (2020 Q7) et 108 (devoir 06 Q7) : c'est le nombre avant l'ajout du reste, lecture admissible.
+
+**Déplacement et registre :**
+- `gisement.json` (lu par script, champs `chapitre`/`fichier`/`nn` seulement) : `C07#2a` → `13-…/10-exam-2020-p2-…` (nn 10) ; `C09#1a` → `13-…/11-exam-2018-p1-…` (nn 11) ; `D02#1` → `06-…/07-devoir-…` (nn 7).
+- Les 18 lignes M1/M2 désignent un fichier existant dont le `displayOrder` égale `nn`.
+- Aucune référence orpheline aux anciens noms : grep sur `content/` et `.claude/`.
+- `sources[]` : le 06 garde « Sujets officiels… » (2023 P1) et « Calibré sur des devoirs publics… » (devoir), le 13 « Sujets officiels… ». C'est cohérent.
+
+**Gates (après correction) :**
+- `content:check` ✓ (121 sujets).
+- `content:qa -- --subject math-6eme` : 0 erreur, 5 avertissements, aucun sur le lot.
+- `content:figures:check` ✓.
+- `content:tranche --fresh --strict-longest` sur les 5 chapitres : clé la plus longue 0/176 ; positions 26/27/27/21 % ; 80 paires proches, toutes internes à une mission sauf `15/08#2` ↔ `22/09#3` (déjà jugée) ; 0 gabarit.
+- `prettier --check` ✓.
+- `content:gisement:controle` sur les 3 devoirs (chemins à jour) : 0 plage de 8 mots, 0 de 6, 0 source à 3 données. Les 4 items « 2 données » sont inchangés (petits entiers).
+
+**Restes (mineurs, aucun bloquant) :**
+1. `14/09-exam-2019` Q8 : l'explication ne dit pas pourquoi « 100 % » est faux. Ajouter en fin d'explication : ` والعدد 100 % ينسى التخفيض كلّه.`
+2. `06/06-exam-2023` Q4 : la phrase finale que j'avais fournie se lit mal. Remplacer `وطول المجال 30 أكبر من 17 ومن 7 لا يهمّ،` par `أمّا أنّ طول المجال 30 أكبر من 17 ومن 7 فلا يهمّ،`.
+3. Ch. 13 après E-11 :
+   - six missions d'examen ; 2020 et 2018 viennent après 2009, alors que R5 range les examens « récents d'abord ». Purement cosmétique, et les missions ne sont pas publiées.
+   - trois `ordering` voisins du même geste (diviser par le numérateur puis multiplier par le dénominateur) : 2025 Q2, 2009 Q4, 2020 Q6. Ils diffèrent par la première ou la dernière étape. Toléré, à surveiller si le 13 est jugé saturé (ordre de coupe E-1).
+4. `14/08-exam-2021` : Q7, désormais d2 et émise avant le QCM Q8, annonce que les 150 d « s'ajoutent ». Q8 tranche aussi 100 % / 150 %, et sa propre prémisse (« تفوق … بـ 150 ») dit déjà le signe : aucune fuite réelle.
+
+**Verdict : prêt**, sous réserve que le correctif moteur arena#1181 soit déployé avant la publication du lot (E-12). Les deux retouches de texte ci-dessus sont facultatives.

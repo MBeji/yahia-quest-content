@@ -10,9 +10,21 @@
       "prompt": "كيف نكتب بالأرقام «خمسة فاصل تسعة أعشار»؟",
       "options": [
         { "id": "a", "text": "5,9" },
-        { "id": "b", "text": "59", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
-        { "id": "c", "text": "0,59", "misconceptionTag": "math.num.virgule-mal-placee" },
-        { "id": "d", "text": "5,09", "misconceptionTag": "math.num.rang-decimal-confondu" }
+        {
+          "id": "b",
+          "text": "59",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        {
+          "id": "c",
+          "text": "0,59",
+          "misconceptionTag": "math.num.virgule-mal-placee"
+        },
+        {
+          "id": "d",
+          "text": "5,09",
+          "misconceptionTag": "math.num.rang-decimal-confondu"
+        }
       ],
       "correctOption": "a",
       "explanation": "«خمسة» هو الجزء الصحيح، فنكتب 5 ثمّ الفاصلة مباشرةً بعد رقم الآحاد؛ و«تسعة أعشار» رتبةٌ واحدة بعد الفاصلة: 5,9. أمّا 5,09 فتسعة أجزاء من المئة.",
@@ -22,10 +34,22 @@
     {
       "prompt": "ما الرقمُ في رتبة الأجزاء من الألف في العدد 6,374؟",
       "options": [
-        { "id": "a", "text": "7", "misconceptionTag": "math.num.rang-decimal-confondu" },
-        { "id": "b", "text": "3", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        {
+          "id": "a",
+          "text": "7",
+          "misconceptionTag": "math.num.rang-decimal-confondu"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "misconceptionTag": "math.num.rang-decimal-confondu"
+        },
         { "id": "c", "text": "4" },
-        { "id": "d", "text": "6", "misconceptionTag": "math.num.rang-decimal-confondu" }
+        {
+          "id": "d",
+          "text": "6",
+          "misconceptionTag": "math.num.rang-decimal-confondu"
+        }
       ],
       "correctOption": "c",
       "explanation": "في 6,374: 3 أعشار، 7 أجزاء من المئة، 4 أجزاء من الألف. إذن الرقمُ المطلوب 4.",
@@ -48,9 +72,21 @@
     {
       "prompt": "ما تفكيكُ العدد 8,09؟",
       "options": [
-        { "id": "a", "text": "8 + 0,9", "misconceptionTag": "math.num.rang-decimal-confondu" },
-        { "id": "b", "text": "8 + 0,009", "misconceptionTag": "math.num.rang-decimal-confondu" },
-        { "id": "c", "text": "800 + 9", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
+        {
+          "id": "a",
+          "text": "8 + 0,9",
+          "misconceptionTag": "math.num.rang-decimal-confondu"
+        },
+        {
+          "id": "b",
+          "text": "8 + 0,009",
+          "misconceptionTag": "math.num.rang-decimal-confondu"
+        },
+        {
+          "id": "c",
+          "text": "800 + 9",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
         { "id": "d", "text": "8 + 0,09" }
       ],
       "correctOption": "d",
@@ -62,9 +98,21 @@
       "prompt": "ما تدويرُ 23,71 إلى أقرب وحدة؟",
       "options": [
         { "id": "a", "text": "24" },
-        { "id": "b", "text": "23", "misconceptionTag": "math.num.arrondi-par-troncature" },
-        { "id": "c", "text": "23,7", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
-        { "id": "d", "text": "20", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
+        {
+          "id": "b",
+          "text": "23",
+          "misconceptionTag": "math.num.arrondi-par-troncature"
+        },
+        {
+          "id": "c",
+          "text": "23,7",
+          "misconceptionTag": "math.num.arrondi-au-mauvais-rang"
+        },
+        {
+          "id": "d",
+          "text": "20",
+          "misconceptionTag": "math.num.arrondi-au-mauvais-rang"
+        }
       ],
       "correctOption": "a",
       "explanation": "الرقم الذي يلي الآحاد هو 7 (≥ 5) فنصعد: 23,71 ≈ 24. أمّا 23 فقطعٌ عند الفاصلة، و 23,7 تدويرٌ إلى العُشر، و 20 تدويرٌ إلى العشرة.",
@@ -74,10 +122,22 @@
     {
       "prompt": "العدد 0,4 يساوي كم جزءًا من الألف؟",
       "options": [
-        { "id": "a", "text": "4", "misconceptionTag": "math.num.rang-decimal-confondu" },
-        { "id": "b", "text": "40", "misconceptionTag": "math.num.rang-decimal-confondu" },
+        {
+          "id": "a",
+          "text": "4",
+          "misconceptionTag": "math.num.rang-decimal-confondu"
+        },
+        {
+          "id": "b",
+          "text": "40",
+          "misconceptionTag": "math.num.rang-decimal-confondu"
+        },
         { "id": "c", "text": "400" },
-        { "id": "d", "text": "0,004", "misconceptionTag": "math.num.rang-decimal-confondu" }
+        {
+          "id": "d",
+          "text": "0,004",
+          "misconceptionTag": "math.num.rang-decimal-confondu"
+        }
       ],
       "correctOption": "c",
       "explanation": "0,4 = 0,40 = 0,400: نضيف صفرين على اليمين فلا تتغيّر القيمة، ويصير الرقم الأخير في رتبة الأجزاء من الألف. إذن 0,4 = 400 جزء من الألف.",

@@ -10,7 +10,11 @@
       "prompt": "ما أوّلُ خمسةِ مضاعفاتٍ للعدد 3 (بدءًا من 0)؟",
       "options": [
         { "id": "a", "text": "3، 6، 9، 12، 15" },
-        { "id": "b", "text": "0، 1، 2، 3، 4", "misconceptionTag": "math.num.multiple-suivant-pas-ignore" },
+        {
+          "id": "b",
+          "text": "0، 1، 2، 3، 4",
+          "misconceptionTag": "math.num.multiple-suivant-pas-ignore"
+        },
         { "id": "c", "text": "0، 3، 6، 9" },
         { "id": "d", "text": "0، 3، 6، 9، 12" }
       ],
@@ -48,8 +52,16 @@
     {
       "prompt": "ما المضاعفُ الموالي للعدد 45 في مضاعفات 9؟",
       "options": [
-        { "id": "a", "text": "46", "misconceptionTag": "math.num.multiple-suivant-pas-ignore" },
-        { "id": "b", "text": "36", "misconceptionTag": "math.num.multiple-precedent-au-lieu-du-suivant" },
+        {
+          "id": "a",
+          "text": "46",
+          "misconceptionTag": "math.num.multiple-suivant-pas-ignore"
+        },
+        {
+          "id": "b",
+          "text": "36",
+          "misconceptionTag": "math.num.multiple-precedent-au-lieu-du-suivant"
+        },
         { "id": "c", "text": "54" },
         { "id": "d", "text": "55" }
       ],
@@ -75,9 +87,17 @@
       "prompt": "ما أصغرُ مضاعفٍ مشترك غيرِ معدومٍ للعددين 5 و 6؟",
       "options": [
         { "id": "a", "text": "30" },
-        { "id": "b", "text": "11", "misconceptionTag": "math.num.ppmc-par-addition" },
+        {
+          "id": "b",
+          "text": "11",
+          "misconceptionTag": "math.num.ppmc-par-addition"
+        },
         { "id": "c", "text": "60" },
-        { "id": "d", "text": "1", "misconceptionTag": "math.num.multiple-et-diviseur-confondus" }
+        {
+          "id": "d",
+          "text": "1",
+          "misconceptionTag": "math.num.multiple-et-diviseur-confondus"
+        }
       ],
       "correctOption": "a",
       "explanation": "نكتب مضاعفات الأكبر 6 ونختبرها بالعدد 5: 6 و 12 و 18 و 24 ليست مضاعفات لـ 5، و 30 = 5 × 6 نعم. أمّا 11 فمجموع العددين، و 60 مضاعفٌ مشترك لكنّه الثاني، و 1 قاسمٌ لا مضاعف.",

@@ -15,8 +15,16 @@
       "prompt": "ما ناتجُ 2,2 × 3؟",
       "options": [
         { "id": "a", "text": "6,6" },
-        { "id": "b", "text": "66", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
-        { "id": "c", "text": "5,2", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        {
+          "id": "b",
+          "text": "66",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
+        {
+          "id": "c",
+          "text": "5,2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
         {
           "id": "d",
           "text": "6,06",
@@ -31,10 +39,22 @@
     {
       "prompt": "ما ناتجُ 36,8 ÷ 0,01؟",
       "options": [
-        { "id": "a", "text": "0,368", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" },
-        { "id": "b", "text": "368", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        {
+          "id": "a",
+          "text": "0,368",
+          "misconceptionTag": "math.num.puissance-de-dix-sens-inverse"
+        },
+        {
+          "id": "b",
+          "text": "368",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
         { "id": "c", "text": "3 680" },
-        { "id": "d", "text": "36 800", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" }
+        {
+          "id": "d",
+          "text": "36 800",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        }
       ],
       "correctOption": "c",
       "explanation": "في 0,01 جزءٌ من مئة واحد، فالقسمة على 0,01 هي الضرب في 100: نحرّك الفاصلة رتبتين نحو اليمين ونُكمل بصفر: 36,8 ÷ 0,01 = 3 680. تحقّق: 0,01 × 3 680 = 36,8 ✓.",
@@ -44,9 +64,17 @@
     {
       "prompt": "ما ناتجُ 14,4 ÷ 6؟",
       "options": [
-        { "id": "a", "text": "24", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        {
+          "id": "a",
+          "text": "24",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
         { "id": "b", "text": "2,4" },
-        { "id": "c", "text": "2,04", "misconceptionTag": "math.num.zero-intercale-dans-le-resultat" },
+        {
+          "id": "c",
+          "text": "2,04",
+          "misconceptionTag": "math.num.zero-intercale-dans-le-resultat"
+        },
         { "id": "d", "text": "8,4" }
       ],
       "correctOption": "b",
@@ -57,9 +85,21 @@
     {
       "prompt": "ما ناتجُ 0,9 × 0,9؟",
       "options": [
-        { "id": "a", "text": "0,081", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
-        { "id": "b", "text": "81", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
-        { "id": "c", "text": "1,8", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        {
+          "id": "a",
+          "text": "0,081",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        },
+        {
+          "id": "b",
+          "text": "81",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
+        {
+          "id": "c",
+          "text": "1,8",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
         { "id": "d", "text": "0,81" }
       ],
       "correctOption": "d",

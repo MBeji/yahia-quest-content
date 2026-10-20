@@ -9,10 +9,22 @@
     {
       "prompt": "ما القيمةُ العشرية للكسر 7/4؟",
       "options": [
-        { "id": "a", "text": "1,75" },
-        { "id": "b", "text": "1,74" },
-        { "id": "c", "text": "0,57" },
-        { "id": "d", "text": "2,8" }
+        {
+          "id": "a",
+          "text": "1,75"
+        },
+        {
+          "id": "b",
+          "text": "1,74"
+        },
+        {
+          "id": "c",
+          "text": "0,57"
+        },
+        {
+          "id": "d",
+          "text": "2,8"
+        }
       ],
       "correctOption": "a",
       "explanation": "الكسرُ حاصلُ قسمة: 7/4 = 7 ÷ 4 = 1,75 (وهو أكبرُ من 1 لأنّ 7 > 4).",
@@ -22,10 +34,22 @@
     {
       "prompt": "إذا كان 3/5 من صفٍّ يساوي 15 تلميذًا، فكم تلميذًا في الصفّ كلّه؟",
       "options": [
-        { "id": "a", "text": "9" },
-        { "id": "b", "text": "25" },
-        { "id": "c", "text": "75" },
-        { "id": "d", "text": "18" }
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "25"
+        },
+        {
+          "id": "c",
+          "text": "75"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
       ],
       "correctOption": "b",
       "explanation": "إذا كان 3/5 = 15 تلميذًا، فإنّ 1/5 = 15 ÷ 3 = 5، والصفُّ كلُّه (5/5) = 5 × 5 = 25 تلميذًا. تحقّق: 3/5 من 25 = (25 ÷ 5) × 3 = 15. العدد 9 هو 3/5 من 15، أي العمليّة في الاتّجاه الخطأ.",
@@ -40,9 +64,18 @@
           "text": "5/10",
           "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
         },
-        { "id": "b", "text": "2/2" },
-        { "id": "c", "text": "10/5" },
-        { "id": "d", "text": "2/5" }
+        {
+          "id": "b",
+          "text": "2/2"
+        },
+        {
+          "id": "c",
+          "text": "10/5"
+        },
+        {
+          "id": "d",
+          "text": "2/5"
+        }
       ],
       "correctOption": "c",
       "explanation": "الكسرُ يساوي 2 إذا كان بسطُه ضِعفَ مقامه؛ 10/5 = 10 ÷ 5 = 2. أمّا 5/10 فيقلب البسط والمقام ويساوي نصفًا، و2/2 يساوي 1.",
@@ -67,7 +100,10 @@
           "text": "5/5 و 7/5",
           "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
         },
-        { "id": "d", "text": "7/5 فقط" }
+        {
+          "id": "d",
+          "text": "7/5 فقط"
+        }
       ],
       "correctOption": "d",
       "explanation": "الكسر أكبر من الوحدة إذا كان بسطه أكبر من مقامه. من بين الكسور الثلاثة 7/5 وحده يحقّق ذلك، لأنّ 5/5 = 1 و3/5 < 1.",
@@ -77,14 +113,23 @@
     {
       "prompt": "قطعَ مسافرٌ 4/5 من طريقٍ طولُه 60 km. كم قطع؟",
       "options": [
-        { "id": "a", "text": "48 km" },
+        {
+          "id": "a",
+          "text": "48 km"
+        },
         {
           "id": "b",
           "text": "12 km",
           "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee"
         },
-        { "id": "c", "text": "75 km" },
-        { "id": "d", "text": "15 km" }
+        {
+          "id": "c",
+          "text": "75 km"
+        },
+        {
+          "id": "d",
+          "text": "15 km"
+        }
       ],
       "correctOption": "a",
       "explanation": "4/5 من 60 = (60 ÷ 5) × 4 = 12 × 4 = 48 km.",
@@ -94,10 +139,22 @@
     {
       "prompt": "أيُّ كسرٍ قيمتُه العشرية 0,2؟",
       "options": [
-        { "id": "a", "text": "1/2" },
-        { "id": "b", "text": "1/5" },
-        { "id": "c", "text": "2/5" },
-        { "id": "d", "text": "5/1" }
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "1/5"
+        },
+        {
+          "id": "c",
+          "text": "2/5"
+        },
+        {
+          "id": "d",
+          "text": "5/1"
+        }
       ],
       "correctOption": "b",
       "explanation": "1/5 = 1 ÷ 5 = 0,2 (أمّا 1/2 = 0,5 و 2/5 = 0,4).",
@@ -107,9 +164,18 @@
     {
       "prompt": "يمثّل المخطّط عدد العائلات في قرية حسب عدد الأطفال في كلّ عائلة. ما الكسر الممثّل للعائلات التي لها 3 أطفال بالنسبة إلى جميع عائلات القرية؟\n<svg viewBox=\"0 0 298 154\"><path d=\"M18 124 H288\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"24\" y=\"115.667\" width=\"30\" height=\"8.33333\" fill=\"#99f6e4\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"39.0\" y=\"110.66666666666667\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">50</text><text x=\"39.0\" y=\"142\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0</text><rect x=\"68\" y=\"74\" width=\"30\" height=\"50\" fill=\"#99f6e4\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"83.0\" y=\"69.0\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">300</text><text x=\"83.0\" y=\"142\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text><rect x=\"112\" y=\"90.6667\" width=\"30\" height=\"33.3333\" fill=\"#99f6e4\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"127.0\" y=\"85.66666666666667\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">200</text><text x=\"127.0\" y=\"142\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text><rect x=\"156\" y=\"24\" width=\"30\" height=\"100\" fill=\"#99f6e4\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"171.0\" y=\"19.0\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">600</text><text x=\"171.0\" y=\"142\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3</text><rect x=\"200\" y=\"107.333\" width=\"30\" height=\"16.6667\" fill=\"#99f6e4\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"215.0\" y=\"102.33333333333334\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">100</text><text x=\"215.0\" y=\"142\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text><rect x=\"244\" y=\"115.667\" width=\"30\" height=\"8.33333\" fill=\"#99f6e4\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"259.0\" y=\"110.66666666666667\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">50</text><text x=\"259.0\" y=\"142\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">5</text></svg>",
       "options": [
-        { "id": "a", "text": "600/6" },
-        { "id": "b", "text": "600/300" },
-        { "id": "c", "text": "600/1300" },
+        {
+          "id": "a",
+          "text": "600/6"
+        },
+        {
+          "id": "b",
+          "text": "600/300"
+        },
+        {
+          "id": "c",
+          "text": "600/1300"
+        },
         {
           "id": "d",
           "text": "1300/600",
@@ -124,14 +190,23 @@
     {
       "prompt": "على نصف المستقيم المدرّج التالي قُسّمت كلّ وحدة إلى 4 أجزاء متساوية. ما العدد الكسريّ الذي تمثّله النقطة أ؟\n<svg viewBox=\"0 0 270 100\"><path d=\"M20 60 H234\" stroke=\"#0f172a\" stroke-width=\"2\" fill=\"none\"/><path d=\"M228 54 L240 60 L228 66 Z\" fill=\"#0f172a\"/><path d=\"M20 51 V69\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"20\" y=\"90\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0</text><path d=\"M45 54 V66\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M70 54 V66\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M95 54 V66\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M120 51 V69\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"120\" y=\"90\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text><path d=\"M145 54 V66\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M170 54 V66\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M195 54 V66\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M220 51 V69\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"220\" y=\"90\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text><circle cx=\"195\" cy=\"60\" r=\"5\" fill=\"#0f6e56\"/><text x=\"195\" y=\"42\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">أ</text></svg>",
       "options": [
-        { "id": "a", "text": "3/4" },
+        {
+          "id": "a",
+          "text": "3/4"
+        },
         {
           "id": "b",
           "text": "4/7",
           "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
         },
-        { "id": "c", "text": "7/4" },
-        { "id": "d", "text": "7/5" }
+        {
+          "id": "c",
+          "text": "7/4"
+        },
+        {
+          "id": "d",
+          "text": "7/5"
+        }
       ],
       "correctOption": "c",
       "explanation": "المقام 4 لأنّ كلّ وحدة مقسّمة إلى 4 أجزاء. النقطة أ بعد 7 أجزاء من 0، فالبسط 7 والعدد 7/4، وهو أكبر من 1 لأنّ النقطة بعد التدريجة 1. الكسر 3/4 يعدّ الأجزاء بعد 1 وحدها، و4/7 يقلب البسط والمقام.",
@@ -141,10 +216,14 @@
     {
       "prompt": "قال أمين: «في قسم 25 تلميذًا منهم 15 ولدًا، الكسر الممثّل للبنات بالنسبة إلى الأولاد هو 15/10 لأنّ 15 هو العدد الأكبر». ما الكسر الصحيح وما خطأ أمين؟",
       "options": [
-        { "id": "a", "text": "10/15، وخطؤه أنّه جعل الأولاد في البسط" },
+        {
+          "id": "a",
+          "text": "10/15، وخطؤه أنّه جعل الأولاد في البسط"
+        },
         {
           "id": "b",
-          "text": "10/25، وخطؤه أنّه قارن بالأولاد لا بالتلاميذ جميعًا"
+          "text": "10/25، وخطؤه أنّه قارن بالأولاد لا بالتلاميذ جميعًا",
+          "misconceptionTag": "math.frac.rapport-denominateur-mal-choisi"
         },
         {
           "id": "c",

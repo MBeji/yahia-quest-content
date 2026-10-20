@@ -14,10 +14,25 @@
     {
       "prompt": "لا آلة حاسبة معك. بتقدير سريع، أيّ هذه الأعداد هو الجداء 4,8 × 6,1؟",
       "options": [
-        { "id": "a", "text": "2,928", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
-        { "id": "b", "text": "29,28" },
-        { "id": "c", "text": "292,8", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
-        { "id": "d", "text": "2 928", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
+        {
+          "id": "a",
+          "text": "2,928",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        },
+        {
+          "id": "b",
+          "text": "29,28"
+        },
+        {
+          "id": "c",
+          "text": "292,8",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        },
+        {
+          "id": "d",
+          "text": "2 928",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        }
       ],
       "correctOption": "b",
       "explanation": "نقرّب: 4,8 ≈ 5 و 6,1 ≈ 6، فالجداء قريب من 5 × 6 = 30. العدد القريب من 30 هو 29,28 وحده. الحساب: 48 × 61 = 2 928، وفي العاملين رقمان عشريّان (1 + 1)، فنفصل رقمين من اليمين: 29,28 ✓.",
@@ -27,13 +42,19 @@
     {
       "prompt": "ما ناتجُ 0,25 × 0,4؟",
       "options": [
-        { "id": "a", "text": "1" },
+        {
+          "id": "a",
+          "text": "1"
+        },
         {
           "id": "b",
           "text": "0,01",
           "misconceptionTag": "math.num.produit-decimales-mal-comptees"
         },
-        { "id": "c", "text": "0,1" },
+        {
+          "id": "c",
+          "text": "0,1"
+        },
         {
           "id": "d",
           "text": "0,001",
@@ -48,10 +69,25 @@
     {
       "prompt": "الميل البحريّ الواحد يساوي 1,852 km. قطع مركبٌ شراعيّ مسافة 10,186 km. كم ميلًا بحريًّا قطع؟",
       "options": [
-        { "id": "a", "text": "0,55" },
-        { "id": "b", "text": "5,5" },
-        { "id": "c", "text": "8,334", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "55", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" }
+        {
+          "id": "a",
+          "text": "0,55",
+          "misconceptionTag": "math.num.division-virgules-deplacees-inegalement"
+        },
+        {
+          "id": "b",
+          "text": "5,5"
+        },
+        {
+          "id": "c",
+          "text": "8,334",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "55",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        }
       ],
       "correctOption": "b",
       "explanation": "عدد الأميال = المسافة بالكيلومتر ÷ طول الميل الواحد = 10,186 ÷ 1,852. نضرب العددين في 1000: 10 186 ÷ 1 852 = 5,5. تحقّق: 1,852 × 5,5 = 9,26 + 0,926 = 10,186 ✓. أمّا 8,334 فهو فرق العددين لا خارجهما.",
@@ -61,10 +97,24 @@
     {
       "prompt": "وُزّعت 6,3 لترات من العصير بالتساوي على 9 قوارير. كم في كلّ قارورة؟",
       "options": [
-        { "id": "a", "text": "7 لترات", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
-        { "id": "b", "text": "0,07 لترٍ", "misconceptionTag": "math.num.zero-intercale-dans-le-resultat" },
-        { "id": "c", "text": "2,7 لترٍ" },
-        { "id": "d", "text": "0,7 لترٍ" }
+        {
+          "id": "a",
+          "text": "7 لترات",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
+        {
+          "id": "b",
+          "text": "0,07 لترٍ",
+          "misconceptionTag": "math.num.zero-intercale-dans-le-resultat"
+        },
+        {
+          "id": "c",
+          "text": "2,7 لترٍ"
+        },
+        {
+          "id": "d",
+          "text": "0,7 لترٍ"
+        }
       ],
       "correctOption": "d",
       "explanation": "المقسوم 6,3 أصغر من القاسم 9، فيبدأ الخارج بـ 0 قبل الفاصلة: 6 ÷ 9 = 0، ننزل الرقم العشريّ 3 فنضع الفاصلة، و 63 ÷ 9 = 7. إذن 6,3 ÷ 9 = 0,7 لترٍ في كلّ قارورة (تحقّق: 9 × 0,7 = 6,3).",
@@ -74,10 +124,25 @@
     {
       "prompt": "ما ناتجُ 4,5 × 1,2؟",
       "options": [
-        { "id": "a", "text": "5,4" },
-        { "id": "b", "text": "54", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
-        { "id": "c", "text": "5,7", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "0,54", "misconceptionTag": "math.num.produit-decimales-mal-comptees" }
+        {
+          "id": "a",
+          "text": "5,4"
+        },
+        {
+          "id": "b",
+          "text": "54",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
+        {
+          "id": "c",
+          "text": "5,7",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "0,54",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        }
       ],
       "correctOption": "a",
       "explanation": "نحسب 45 × 12 = 540، ومجموعُ الأرقام العشرية رقمان، فجداءُ 4,5 × 1,2 = 5,40 = 5,4.",
@@ -87,10 +152,25 @@
     {
       "prompt": "عددٌ قسمناه على 1000 فصار 0,045. ما هذا العدد؟",
       "options": [
-        { "id": "a", "text": "450", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "b", "text": "45" },
-        { "id": "c", "text": "4,5", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "d", "text": "0,000045", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" }
+        {
+          "id": "a",
+          "text": "450",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "b",
+          "text": "45"
+        },
+        {
+          "id": "c",
+          "text": "4,5",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "d",
+          "text": "0,000045",
+          "misconceptionTag": "math.num.puissance-de-dix-sens-inverse"
+        }
       ],
       "correctOption": "b",
       "explanation": "نعكس العمليّة: القسمة على 1000 يُلغيها الضرب في 1000، فنحرّك الفاصلة ثلاث رتب نحو اليمين: 0,045 × 1000 = 45. تحقّق: 45 ÷ 1000 = 0,045 ✓.",
