@@ -162,3 +162,54 @@ Fidélité : PDF 2008, 2009, 2012 relus ; cas a/b/c de 2012, deux schémas de 20
 **M-12 (majeur, ne pas redemander) — Q1, Q3, Q4, Q9** : **supprimer** les quatre. Q1 n'a pas d'autre forme non redondante (la forme « mot souligné à corriger » est déjà m003 Q2, sujet 2017 identique). La mission tombe à 5 questions (Q2, Q5, Q6, Q7, Q8) : soit elle part ainsi (boss court), soit le pilote la fusionne avec m003 (10 questions au total après les suppressions de m003). Recommandation : fusion, sous le nom de m003, en gardant les sessions citées.
 
 Rendus des deux SVG de remplacement (m001 Q9 option c ; m003 Q9 option c) : vérifiés en Chromium 360 px `dir="rtl"` — lentille concave et point sur la rétine ; rayon de sortie qui se rapproche de la normale, flèche dans le sens de la marche.
+
+## Chapitre `01-air`
+
+Rendu Chromium 360 px `dir="rtl"` de toutes les figures (06 à 13) : libellés « إناء 1/2 », « أنبوب 1/2 », « ماء ملوّن » lisibles ; une légende mal placée (m005, ci-dessous).
+
+### `exercices/06-exam-2025-deux-bocaux-bougie-et-glace.json` (8 q)
+
+Fidélité : PDF et transcription 2025 relus (deux bocaux de 100 صل, tubes 1 et 2, phrases des consignes 1, 2-أ, 2-ب, 3) : fidèles.
+
+| q | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- |
+| 1 | هباب الفحم | b | ERREUR (majeur) | option d « لا خطأ في الإفادة » nie la consigne « أصلح الخطأ » ; l'explication livre la clé de Q2 (« بخار الماء وثاني أكسيد الكربون ») |
+| 2 | بخار الماء وثاني أكسيد الكربون | a | OK | |
+| 3 | O₂ أصغر, N₂ تساوي, CO₂ أكبر | idem | ERREUR (critique, science) | « نسبة » : après la combustion l'eau monte dans le bocal 1, le gaz restant a un volume plus petit pour la même quantité d'azote : la **proportion** d'azote y est plus grande, pas égale. Juste seulement pour la **quantité** |
+| 4 | b | b | réserve | proche de 04-defi#3 et du `verifie` (air refroidi qui se contracte) ; gardée (situation entière de 2025, piège propre : l'oxygène consommé) ; explication qui livre Q5 |
+| 5 | d | d | ERREUR (majeur) | non autonome (le bocal 2 n'est ni décrit ni dessiné) ; clé donnée par l'énoncé et l'explication de Q4 ; même piège que le distracteur c de Q4 |
+| 6 | 100 ÷ 5 | a | OK | E-4 respecté (« حوالي », la bougie s'éteint avant) ; option b (×5 → 500 صل > 100) faible |
+| 7 | c | c | ERREUR (majeur) | même défaut « نسبة » que Q3 ; l'étiquette `azote-entretient-combustion` est sur b (l'azote « augmente ») alors que c'est a qui exécute l'erreur (« النتروجين يساعد على الاحتراق ») |
+| 8 | 20 | 20 | ERREUR (majeur) | la réponse est dans la phrase officielle citée par l'énoncé (« تقدّر بحوالي 20 صل ») |
+
+**C-4 (critique, science) — Q3 et Q7 : « نسبة » → « كمّيّة ».** Le sujet compare des « نسب » ; la mission compare des quantités, et l'explication le dit (E-5). Remplacements exacts :
+- Q3, options : `نسبة الأكسجين في الإناء 1 مقارنةً بالإناء 2` → `كمّيّة الأكسجين في الإناء 1 مقارنةً بالإناء 2` ; idem pour `نسبة النتروجين` → `كمّيّة النتروجين` et `نسبة ثاني أكسيد الكربون` → `كمّيّة ثاني أكسيد الكربون`. Ajouter à la fin du prompt (avant le SVG) : ` (نقارن الكمّيّات: نسب الغازات في الورقة الأصليّة تتغيّر كلّها في الإناء 1، لأنّ الماء صعد إليه فصغر حجم الغاز.)`. Explication : remplacer `فنسبة الأكسجين أصغر من نسبته في الإناء 2، ونسبة ثاني أكسيد الكربون أكبر. أمّا النتروجين فلا يتدخّل في الاحتراق، فنسبته في الإناءين متساوية.` par `فكمّيّة الأكسجين أصغر من كمّيّته في الإناء 2، وكمّيّة ثاني أكسيد الكربون أكبر. أمّا النتروجين فلا يتدخّل في الاحتراق، فكمّيّته في الإناءين متساوية.`
+- Q7 : prompt `لماذا لا تتغيّر نسبة النتروجين في الإناء 1؟` → `لماذا لا تتغيّر كمّيّة النتروجين في الإناء 1؟` ; option b `لأنّ نسبة النتروجين تزيد بقدر ما تنقص نسبة الأكسجين دائمًا` → `لأنّ كمّيّة النتروجين تزيد بقدر ما تنقص كمّيّة الأكسجين` **sans étiquette** ; poser `misconceptionTag: eveil.air.azote-entretient-combustion` sur l'option a ; explication `فكمّيّته ثابتة ونسبته ثابتة` → `فكمّيّته ثابتة`.
+
+**M-13 (majeur) — Q1** : supprimer l'option d ; remplacer l'explication par `هباب الفحم جسيمات سوداء لا تظهر إلّا حين يكون الاحتراق غير تامّ، أمّا بخار الماء فمن نواتج احتراق الشمعة دائمًا. فالخطأ هو ذكر هباب الفحم.`
+
+**M-14 (majeur) — Q5 et Q8** : **supprimer Q5 et Q8** (la mission passe à 6 questions). Dans l'explication de Q4, supprimer `الخطأ الشائع تفسير الصعود باستهلاك الأكسجين، مع أنّه لا شيء يحترق في الإناء 2.` et mettre `ولا يصحّ تفسيره باستهلاك الأكسجين: لا شيء يحترق في الإناء 2.`
+
+**m-6 (mineur, figure) — Q3/Q4** : la légende « ماء وثلج » est écrite dans le bocal 2 (qui contient de l'air). Dans le SVG (deux occurrences, Q3 et Q4), remplacer `<text x="269" y="184" font-size="14"` par `<text x="269" y="104" font-size="14"` (« إناء 2 » dans le bocal) et `<text x="269" y="92" font-size="12"` par `<text x="269" y="184" font-size="12"` (« ماء وثلج » sous le récipient) — rendu vérifié.
+
+### `exercices/07-exams-2019-2021-refroidir-chauffer-peser-lair.json` (9 q)
+
+Fidélité : PDF 2019, 2020, 2021 relus (356,6 / 354 / 2 ل ; 615,3 / 613,5 / 1 ل ; دورق chauffé) : données fidèles. Au PDF 2021 la balance ne porte que la balle, la bouteille de 2 ل est à côté : l'énoncé est juste.
+
+| q | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- |
+| 1 | b | b | ERREUR (majeur) | = 04-defi#3 (flacon refroidi, l'eau monte dans le tube) et doublon de m005 Q4 (même cause, mêmes options a/b) |
+| 2 | a | a | réserve | option d « قوله صحيح » s'élimine à vue (mineur) ; non autonome si Q1 disparaît (voir correctif) |
+| 3 | c | c | OK | prévision (2021 2-ب) |
+| 4 | a b c d e | idem | ERREUR (critique) | deux ordres défendables : retourner la bouteille pleine sur le bassin (b) peut se faire avant la première pesée (a) |
+| 5 | 2,6 | 2,6 | OK | |
+| 6 | 1,8 | 1,8 | OK | |
+| 7 | c | c | ERREUR (majeur) | = 01-pratique#5 (flacon chauffé → bulles → dilatation) et même geste que Q3 |
+| 8 | 1,3 | 1,3 | OK | |
+| 9 | d | d | OK | |
+
+**C-5 (critique) — Q4** : fusionner b et c. Item b → `تقلب قارورة سعتها 2 ل مملوءة بالماء الملوّن فوق حوض فيه ماء ملوّن، ثمّ توصلها بالكرة بأنبوب فيطرد الهواء ماءها كلّه` ; supprimer l'item c ; `answerKey.order` → `["a", "b", "d", "e"]`.
+
+**M-15 (majeur, redemande) — Q1, Q7** : supprimer Q1 et Q7 (7 questions restent). Q2 devient autonome : prompt → `مناظرة 2021 — «أتأمّل التّجربة وأفسّر سبب صعود الماء الملوّن في الأنبوب بعد إضافة الماء والثّلج إلى الإناء البلّوري.» قارورة فيها هواء مسدودة بسدّادة يعبرها أنبوب ينغمس طرفه في ماء ملوّن، وُضعت في إناء بلّوريّ أضيف إليه الماء والثلج، فصعد الماء الملوّن في الأنبوب. قال تلميذ: «الهواء البارد يمصّ الماء الملوّن إلى الأعلى». أيّ تفسير يصحّح قوله؟` suivi du SVG actuel de Q1 (déplacé tel quel) ; option d `قوله صحيح، فكلّ غاز بارد يمصّ السوائل القريبة منه` → `الماء الملوّن يتمدّد بالبرودة فيرتفع وحده في الأنبوب`. Le piège C08#10 (compression) de Q7 disparaît avec elle ; il reste porté par 01/01-pratique (انضغاط).
+
+**m-7 (mineur)** — l'item e de Q4 (« تقسم الفرق على سعة القارورة ») et l'explication de Q4 donnent la méthode de Q8 ; tolérable (la valeur n'est pas donnée).

@@ -4,7 +4,7 @@
 > (une session précédente a été coupée). Aucune écriture dans `content/`, aucune écriture git.
 > Rapport de l'auteur (`rapports/rapport-M4.md`) lu seulement APRÈS la re-résolution.
 
-## État : EN COURS
+## État : TERMINÉ (voir synthèse en fin de rapport)
 
 ## Méthode
 
@@ -191,7 +191,7 @@ Après correctifs : 5 questions (q3, q4, q5, q7, q8), d3.
 | 4 | d | d | ERREUR (doublon) | même fait que q1 et q5, et que `11/02-boss#4` (tube le plus rempli → pôle −) |
 | 5 | b | b | OK | |
 | 6 | b, d, e | b, d, e | OK | volume comparé, jamais 2 : 1 (E-8) ✓ |
-| 7 | d | d | ERREUR (fuite + doublon) | l'explication de q6 (fréquence « فرقعة » ↔ hydrogène ↔ pôle −) résout q7 ; q7 re-pose `11/05-entrainement#4` |
+| 7 | d | d | ERREUR (fuite + doublon) | l'explication de q6 (« فرقعة » ↔ hydrogène ↔ pôle −, « إنعاش العود » ↔ oxygène) résout q7 ; q7 re-pose `11/05-entrainement#4` |
 
 **Défauts**
 - **[MAJEUR] q4** — doublon de q1/q5 et de `11/02-boss#4`. **Correctif : supprimer q4.**
@@ -223,7 +223,7 @@ Après correctifs : 5 questions (q1, q2, q3, q5, q6), d3.
 - **[MAJEUR] q1 — doublon** de `11/01-pratique#7`. **Correctif : supprimer q1** (ou, si le pilote veut garder D07#6, ne garder que les deux observations neuves — dépôt et clou — dans un QCM ; non proposé ici).
 - **[MAJEUR] q3 — doublon** de `11/02-boss#2`. **Correctif : supprimer q3** (q6 et q7 portent le geste D07#10).
 - **[MINEUR] q5** : « وطول المسمار ليس سبب القوّة » est trop absolu (la taille du noyau compte aussi) ; remplacer par « وليس طول المسمار هو ما يفرّق بينهما هنا: الوشيعة أ أقصر مسمارًا وأكثر لفّات، وهي الأقوى ».
-- **[MINEUR] q8** : l'énoncé redonne le résultat du contrôle que q4 demande ; remplacer « وجد أحمد أنّ القاطعة مغلقة وكلّ الأسلاك موصولة، لكنّ المصباح ما زال مطفأً. » par « تأكّد أحمد أنّ دارته مغلقة، لكنّ المصباح ما زال مطفأً. » (la fuite devient la seule prémisse nécessaire).
+- **[MINEUR, accepté] q8** : l'énoncé (« القاطعة مغلقة وكلّ الأسلاك موصولة ») suppose fait le contrôle que q4 demande ; c'est la prémisse nécessaire de la question suivante du diagnostic, et q4 reste résoluble sans elle : pas de correctif.
 - Titre « 📝 ⚔️ زعيم الفرض ⭐⭐⭐: … » : conforme (📝, sans clé). V3 respectée (spires seulement, piles égales).
 
 Après correctifs : 6 questions (q2, q4, q5, q6, q7, q8), d3.
@@ -250,3 +250,35 @@ Fidélité OK (2010, 2015, 2016, 2018 exacts ; 1/6 non donné, V1 ✓ ; C11#6a �
 
 Défaut accessoire (si le pilote la garde malgré tout) : **[MAJEUR] q5 → q4** fuite (l'énoncé de q5 désigne les trois mots fautifs que q4 demande de trouver) ; supprimer q5.
 
+## Gates (lancés par l'auditeur depuis `/home/user/eng-deliver`, lien `content` → `/home/user/wt-ev6/content`)
+
+`content:check` ✓ (121 sujets) · `content:qa -- --subject eveil-scientifique-6eme` ✓ (aucune clé suspecte) · `content:figures:check` ✓ · `content:tranche -- --subject eveil-scientifique-6eme --chapters 07-aimants-boussole,11-effets-courant-electrique,08-poids --fresh --strict-longest --strict-lessons` ✓ (clé strictement la plus longue 0/107 ; positions 27/27/19/26 % ; patron de notion 0 en recul ; 6 paires proches, toutes sur des questions que ce rapport coupe ou qui partagent une figure : 07/08 #3↔#8, #4↔#11, #7↔#8 ; 07/09 #1↔#2, #2↔#7 ; 11/08 #1↔#2) · `content:gisement:controle` (devoir m040) ✓ 0 plage ≥ 8 mots. Notation : aucun chiffre indien, aucun LaTeX ; les seules séquences « chiffre espace 3 chiffres » sont des coordonnées SVG. `sources[]` présent dans les trois `chapter.json` (examens ×3, devoir au `11`). Aucun gate ne voit les défauts critiques ci-dessus (figures infidèles au sujet, figure contraire à l'énoncé).
+
+## Après lecture du rapport de l'auteur (`rapports/rapport-M4.md`)
+
+- L'auteur annonce « figures exactes à 45° » et des boussoles vérifiées : c'est précisément la source des deux infidélités 2010 et 2019 — le sujet 2010 a deux flèches **verticales** (A→B au nord, forêt→départ au sud) et le sujet 2019 place la montagne **à droite** et la cascade **en bas à droite** (la transcription le dit aussi : « جبل (à droite), شلّال (en bas) ») ; la régularisation en losange a changé trois clés (07/08 q4, 07/09 q5, q9).
+- « Options à deux erreurs muettes » : contredit par 07/06 q5 (option c).
+- L'auteur assume des recoupements avec le patron (« les faits partagés sont redemandés sous une autre forme ») ; la consigne d'audit (point 4) les interdit : d'où les coupes proposées (07/03-revision#6 n'est pas « remplacé » par le multi 07/09 q8, il est redemandé).
+- Ids d'étiquettes proposés par l'auteur (`eveil.aim.nord-lu-en-haut-de-la-page`, `eveil.aim.un-seul-pole`, `eveil.aim.support-magnetique-ignore`, `eveil.elec.electrode-pole-confondus`, `eveil.elec.lampe-accusee-a-tort`) : pertinents, je les appuie, et j'ajoute un id pour l'écran épais (07/07 q6, C02#14). `eveil.aim.est-ouest-inverses` cité par l'auteur « déjà proposé (B4) » n'existe pas dans `content/misconceptions.json` : il reste à créer.
+- Doute de l'auteur « lettre ق pour l'est » : conforme au cours du `07` (§ 🌹), aucune objection.
+
+## Synthèse
+
+| mission | fichier | q. | ma re-résolution : clés fausses | critiques | majeurs | mineurs | après correctifs |
+|---|---|---:|---:|---:|---:|---:|---:|
+| m033 | 07/06 | 9 | 0 | 0 | 4 | 2 | 6 q |
+| m034 | 07/07 | 12 | 0 | 0 | 5 | 1 (+1 id) | 7 q |
+| m035 | 07/08 | 11 | 1 (q4, contre le sujet) | 1 | 2 | 3 | 10 q |
+| m036 | 07/09 | 12 | 2 (q5, q9, contre le sujet) | 1 (2 q) | 1 | 2 | 11 q |
+| m037 | 11/06 | 7 | 0 | 0 | 4 | 1 | 3 q → fusion ou coupe |
+| m038 | 11/07 | 8 | 0 | 0 | 3 | 3 | 5 q |
+| m039 | 11/08 | 7 | 0 | 0 | 2 | 1 | 5 q |
+| m040 | 11/09 (devoir) | 8 | 0 | 1 | 2 | 2 | 6 q |
+| m041 | 08/06 | 10 | 0 | 0 | 1 (mission entière) | — | **coupée (E-1)** |
+| **total** | | **84** | **3** (clés justes sur la figure de la mission, fausses contre la session citée) | **3 défauts / 4 q** | **24** | **15** | 53 q + 3 à trancher |
+
+84 questions re-résolues à l'aveugle (dont 23 de boussole, rotation refaite pour chacune). Aucune clé n'est fausse **par rapport à la figure que la mission montre** ; trois clés le sont **par rapport au sujet officiel cité** (figures 2019 et 2010 mal refaites), et une figure (m040 q2) contredit son énoncé. La science est juste partout (aucune explication fausse ; une formulation trop absolue, m040 q5). Rendu RTL 360 px : toutes les figures lisibles, aucune légende chevauchée, aucune inversion bidi observée.
+
+**Réponse à la question E-1 (m041)** : oui — chacune des 10 questions re-pose un item du `08` mis à niveau (tableau ci-dessus) ; la mission est à couper.
+
+**Verdict : À CORRIGER.** Bloquants avant tout merge : les trois figures (07/08 q4·q11 SVG 2019 ; 07/09 q5·q9 SVG 2010 ; 11/09 q2 clous égaux) avec les clés et explications données plus haut, puis les fuites (07/06 q7, q9 ; 07/07 q3, q5, q10 ; 07/08 q4 explication, q10 ; 11/06 q7 ; 11/07 q6 ; 11/08 q7) et les doublons du patron (07/06 q3 ; 07/07 q1, q2 ; 07/09 q8 ; 11/06 q2, q4, q5 ; 11/07 q1, q2 ; 11/08 q4 ; 11/09 q1, q3 ; m041 entière). Le volume baisse fortement (84 → ~53) : c'est la conséquence attendue de E-12 (le patron mis à niveau a absorbé une large part des gestes que la carte croyait neufs) ; le pilote tranche le sort de m037 (3 questions restantes).
