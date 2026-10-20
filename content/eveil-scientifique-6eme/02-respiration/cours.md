@@ -47,11 +47,11 @@
 <line x1="214" y1="132" x2="197" y2="155"/>
 </g>
 <g font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">
-<text x="218" y="35" text-anchor="start">التّجويف الأنفي</text>
-<text x="204" y="59" text-anchor="start">البلعوم</text>
-<text x="204" y="77" text-anchor="start">الحنجرة</text>
-<text x="204" y="112" text-anchor="start">القصبة الهوائيّة</text>
-<text x="216" y="130" text-anchor="start">الشّعبتان</text>
+<text x="218" y="35" text-anchor="end">التّجويف الأنفي</text>
+<text x="204" y="59" text-anchor="end">البلعوم</text>
+<text x="204" y="77" text-anchor="end">الحنجرة</text>
+<text x="204" y="112" text-anchor="end">القصبة الهوائيّة</text>
+<text x="216" y="130" text-anchor="end">الشّعبتان</text>
 <text x="115" y="196" text-anchor="middle">الرّئة اليمنى</text>
 <text x="115" y="232" text-anchor="middle">3 فصوص</text>
 <text x="225" y="186" text-anchor="middle">الرّئة اليسرى</text>
@@ -329,10 +329,10 @@
 <text x="100" y="115" text-anchor="middle" fill="#2563eb">هواء</text>
 <text x="203" y="70" text-anchor="middle" fill="#0f6e56">الأكسجين</text>
 <text x="203" y="168" text-anchor="middle" fill="#9f1239">ثاني أكسيد الكربون</text>
-<text x="282" y="44" text-anchor="start" fill="#dc2626">دم أحمر قانٍ</text>
-<text x="282" y="60" text-anchor="start" fill="#0f172a">إلى الأعضاء</text>
-<text x="282" y="180" text-anchor="start" fill="#7f1d1d">دم قاتم</text>
-<text x="282" y="196" text-anchor="start" fill="#0f172a">من الأعضاء</text>
+<text x="282" y="44" text-anchor="end" fill="#dc2626">دم أحمر قانٍ</text>
+<text x="282" y="60" text-anchor="end" fill="#0f172a">إلى الأعضاء</text>
+<text x="282" y="180" text-anchor="end" fill="#7f1d1d">دم قاتم</text>
+<text x="282" y="196" text-anchor="end" fill="#0f172a">من الأعضاء</text>
 </g>
 </svg>
 :::

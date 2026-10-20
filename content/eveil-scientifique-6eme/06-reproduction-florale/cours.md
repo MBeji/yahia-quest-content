@@ -54,14 +54,14 @@
 <line x1="112" y1="206" x2="76" y2="206"/>
 </g>
 <g font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">
-<text x="268" y="66" text-anchor="start" fill="#0f6e56">الميسم</text>
-<text x="268" y="128" text-anchor="start" fill="#0f6e56">القلم</text>
-<text x="268" y="178" text-anchor="start" fill="#0f6e56">المبيض</text>
-<text x="268" y="222" text-anchor="start" fill="#0f6e56">البويضات</text>
-<text x="72" y="108" text-anchor="end" fill="#b45309">المئبر</text>
-<text x="72" y="74" text-anchor="end" fill="#b45309">حبّات الطّلع</text>
-<text x="72" y="150" text-anchor="end" fill="#9d174d">البتلة</text>
-<text x="72" y="210" text-anchor="end" fill="#3f6212">السّبلة</text>
+<text x="268" y="66" text-anchor="end" fill="#0f6e56">الميسم</text>
+<text x="268" y="128" text-anchor="end" fill="#0f6e56">القلم</text>
+<text x="268" y="178" text-anchor="end" fill="#0f6e56">المبيض</text>
+<text x="268" y="222" text-anchor="end" fill="#0f6e56">البويضات</text>
+<text x="72" y="108" text-anchor="start" fill="#b45309">المئبر</text>
+<text x="72" y="74" text-anchor="start" fill="#b45309">حبّات الطّلع</text>
+<text x="72" y="150" text-anchor="start" fill="#9d174d">البتلة</text>
+<text x="72" y="210" text-anchor="start" fill="#3f6212">السّبلة</text>
 </g>
 </svg>
 :::
