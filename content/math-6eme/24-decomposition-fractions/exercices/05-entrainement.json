@@ -79,7 +79,7 @@
         {
           "id": "d",
           "text": "5/10",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "misconceptionTag": "math.frac.add-denominators"
         }
       ],
       "correctOption": "a",
@@ -119,7 +119,7 @@
       "options": [
         {
           "id": "a",
-          "text": "نعم، وكلُّها صحيحة ما دام مجموعُ البُسُط 7 والمقامُ 10"
+          "text": "نعم، ما دام مجموع البُسُط 7 والمقام 10"
         },
         {
           "id": "b",
@@ -141,29 +141,29 @@
       "competencies": ["math.frac.decomposition"]
     },
     {
-      "prompt": "قاعة المنارة: 20/20 = 5/20 + 4/20 + …/20. ما الحدّ الناقص؟",
+      "prompt": "أكمل: 20/20 = 6/20 + 7/20 + …/20. ما الحدّ الناقص؟",
       "options": [
         {
           "id": "a",
-          "text": "11/20"
+          "text": "7/20"
         },
         {
           "id": "b",
-          "text": "11/60",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "text": "7/60",
+          "misconceptionTag": "math.frac.add-denominators"
         },
         {
           "id": "c",
-          "text": "29/20",
+          "text": "33/20",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
           "id": "d",
-          "text": "9/20"
+          "text": "13/20"
         }
       ],
       "correctOption": "a",
-      "explanation": "الحدّان المعلومان يعطيان 9/20، فالباقي هو 20/20 ناقص 9/20 أي 11/20.",
+      "explanation": "الحدّان المعلومان يعطيان 13/20، فالباقي هو 20/20 ناقص 13/20 أي 7/20.",
       "difficulty": 3,
       "competencies": ["math.frac.decomposition"]
     },
@@ -229,5 +229,8 @@
       "difficulty": 3,
       "competencies": ["math.frac.decomposition"]
     }
-  ]
+  ],
+  "manuel": {
+    "items": ["ex. 4", "ex. 5", "ex. 7"]
+  }
 }

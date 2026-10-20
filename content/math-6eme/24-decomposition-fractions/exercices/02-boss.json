@@ -52,8 +52,7 @@
         },
         {
           "id": "d",
-          "text": "5 + 4/45",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "text": "5 + 4/45"
         }
       ],
       "correctOption": "a",
@@ -71,7 +70,7 @@
         {
           "id": "b",
           "text": "9/60",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "misconceptionTag": "math.frac.add-denominators"
         },
         {
           "id": "c",
@@ -103,7 +102,7 @@
         {
           "id": "c",
           "text": "4/34",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "misconceptionTag": "math.frac.add-denominators"
         },
         {
           "id": "d",
@@ -134,8 +133,7 @@
         },
         {
           "id": "d",
-          "text": "3/16",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "text": "3/16"
         }
       ],
       "correctOption": "a",
@@ -144,30 +142,29 @@
       "competencies": ["math.frac.decomposition"]
     },
     {
-      "prompt": "في السادسة «أ» 4 تلاميذ من 28 دون التملّك الأدنى، وفي السادسة «ب» 3 من 25؛ وفي القسمين معًا 7 من 53. فهل هذا يعني أنّ 4/28 + 3/25 = 7/53؟",
+      "prompt": "في نادي الرسم 5 بنات من 12 عضوًا، وفي نادي المسرح 4 بنات من 15 عضوًا؛ وفي الناديين معًا 9 بنات من 27. فهل هذا يعني أنّ 5/12 + 4/15 = 9/27؟",
       "options": [
         {
           "id": "a",
-          "text": "لا: العدد 7/53 جاء من إعادة العدّ في مجموعةٍ أكبر، لا من جمع كسرين"
+          "text": "لا: 9/27 عددٌ جديد، لا جمعُ كسرين"
         },
         {
           "id": "b",
-          "text": "نعم: نجمع البُسُط معًا والمقامات معًا",
+          "text": "نعم: نجمع البُسُط معًا ونجمع المقامات معًا",
           "misconceptionTag": "math.frac.add-numerators-and-denominators"
         },
         {
           "id": "c",
-          "text": "نعم: لأنّ المقامين مختلفان فنجمعهما",
+          "text": "نعم: المقامان مختلفان، فنجمعهما مع البسطين",
           "misconceptionTag": "math.frac.add-denominators"
         },
         {
           "id": "d",
-          "text": "لا يمكن جمع كسرين مختلفي المقام أصلًا",
-          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+          "text": "لا: كسران مختلفا المقام لا يُجمعان أبدًا"
         }
       ],
       "correctOption": "a",
-      "explanation": "المقام يدلّ على الوحدة المرجعيّة: مرّةً قسمٌ من 28، ومرّةً مجموعةٌ من 53. عددنا التلاميذ من جديد (4 + 3 = 7) وعددنا المجموعة من جديد (28 + 25 = 53)؛ أمّا جمع الكسور فلا يمسّ المقام أبدًا.",
+      "explanation": "المقام يدلّ على الوحدة المرجعيّة: مرّةً نادٍ من 12، ومرّةً نادٍ من 15، ومرّةً مجموعةٌ من 27. عددنا البنات من جديد (5 + 4 = 9) وعددنا الأعضاء من جديد (12 + 15 = 27)؛ أمّا جمع كسرين فلا يجمع المقامات أبدًا.",
       "difficulty": 3,
       "competencies": ["math.frac.decomposition"]
     },
@@ -233,5 +230,8 @@
       "difficulty": 3,
       "competencies": ["math.frac.decomposition"]
     }
-  ]
+  ],
+  "manuel": {
+    "items": ["ex. 4", "ex. 5", "ex. 6", "ex. 7"]
+  }
 }

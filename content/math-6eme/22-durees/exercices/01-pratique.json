@@ -7,61 +7,63 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "كم ثانيةً في الدقيقة الواحدة؟",
+      "prompt": "كم ثانيةً في دقيقتين؟",
       "options": [
         {
           "id": "a",
-          "text": "60 ثا"
+          "text": "120 ثا"
         },
         {
           "id": "b",
-          "text": "100 ثا",
+          "text": "200 ثا",
           "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
         },
         {
           "id": "c",
-          "text": "10 ثا"
+          "text": "20 ثا",
+          "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
         },
         {
           "id": "d",
-          "text": "6 ثا"
+          "text": "48 ثا",
+          "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
         }
       ],
       "correctOption": "a",
-      "explanation": "الدقيقةُ الواحدة = 60 ثانية؛ التحويلُ في الزمن يكون بـ 60.",
+      "explanation": "الدقيقةُ الواحدة = 60 ثانية، فدقيقتان = 2 × 60 = 120 ثانية؛ التحويلُ في الزمن يكون بـ 60.",
       "difficulty": 1,
       "competencies": ["math.mes.durees"]
     },
     {
-      "prompt": "كم دقيقةً في الساعة الواحدة؟",
+      "prompt": "كم ساعةً في 540 دقيقة؟",
       "options": [
         {
           "id": "a",
-          "text": "60 د"
+          "text": "9 سا"
         },
         {
           "id": "b",
-          "text": "100 د",
+          "text": "5,4 سا",
           "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
         },
         {
           "id": "c",
-          "text": "24 د",
+          "text": "22,5 سا",
           "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
         },
         {
           "id": "d",
-          "text": "12 د",
-          "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
+          "text": "54 سا",
+          "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
         }
       ],
       "correctOption": "a",
-      "explanation": "الساعةُ الواحدة = 60 دقيقة.",
+      "explanation": "الساعة 60 د، فنقسم على 60: 540 ÷ 60 = 9 سا.",
       "difficulty": 1,
       "competencies": ["math.mes.durees"]
     },
     {
-      "prompt": "إلى أيّ ساعةٍ يشيرُ العقربان؟ <svg viewBox=\"0 0 100 100\"><circle cx=\"50\" cy=\"50\" r=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"50\" x2=\"50\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"50\" x2=\"74\" y2=\"50\" stroke=\"#ef4444\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"50\" r=\"2.5\" fill=\"currentColor\"/></svg>",
+      "prompt": "إلى أيّ ساعةٍ يشيرُ العقربان؟ العقربُ القصير هو الغليظ. <svg viewBox=\"0 0 100 100\"><circle cx=\"50\" cy=\"50\" r=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"50\" x2=\"50\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"50\" x2=\"74\" y2=\"50\" stroke=\"#ef4444\" stroke-width=\"4\"/><circle cx=\"50\" cy=\"50\" r=\"2.5\" fill=\"currentColor\"/></svg>",
       "options": [
         {
           "id": "a",
@@ -86,38 +88,39 @@
       "competencies": ["math.mes.durees"]
     },
     {
-      "prompt": "كم ساعةً في اليوم الواحد؟",
+      "prompt": "كم يومًا في 96 ساعة؟",
       "options": [
         {
           "id": "a",
-          "text": "24 سا"
+          "text": "4 أيّام"
         },
         {
           "id": "b",
-          "text": "12 سا",
+          "text": "1,6 يوم",
           "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
         },
         {
           "id": "c",
-          "text": "60 سا",
-          "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
+          "text": "9,6 أيّام",
+          "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
         },
         {
           "id": "d",
-          "text": "10 سا"
+          "text": "8 أيّام",
+          "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
         }
       ],
       "correctOption": "a",
-      "explanation": "اليومُ الواحد يساوي 24 ساعة، أي من منتصف الليل إلى منتصف الليل التالي.",
+      "explanation": "اليومُ الواحد 24 ساعة، فنقسم على 24: 96 ÷ 24 = 4 أيّام.",
       "difficulty": 1,
       "competencies": ["math.mes.durees"]
     },
     {
-      "prompt": "كم دقيقةً في ساعتين (2 سا)؟",
+      "prompt": "كم دقيقةً في 6 ساعات (6 سا)؟",
       "options": [
         {
           "id": "a",
-          "text": "120 د"
+          "text": "360 د"
         },
         {
           "id": "b",
@@ -125,16 +128,17 @@
         },
         {
           "id": "c",
-          "text": "200 د",
+          "text": "600 د",
           "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
         },
         {
           "id": "d",
-          "text": "100 د"
+          "text": "144 د",
+          "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
         }
       ],
       "correctOption": "a",
-      "explanation": "2 سا = 2 × 60 = 120 دقيقة.",
+      "explanation": "6 سا = 6 × 60 = 360 دقيقة.",
       "difficulty": 2,
       "competencies": ["math.mes.durees"]
     },

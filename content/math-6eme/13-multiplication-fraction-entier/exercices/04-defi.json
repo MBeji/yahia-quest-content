@@ -7,29 +7,30 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "ما ناتج 3/4 × 4؟",
+      "prompt": "ما ناتج 3/4 × 12؟",
       "options": [
         {
           "id": "a",
-          "text": "3"
+          "text": "9"
         },
         {
           "id": "b",
-          "text": "12/16",
+          "text": "36/48",
           "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
         },
         {
           "id": "c",
-          "text": "7/4",
+          "text": "15/4",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
           "id": "d",
-          "text": "1/3"
+          "text": "3/48",
+          "misconceptionTag": "math.frac.multiplication-denominateur-multiplie"
         }
       ],
       "correctOption": "a",
-      "explanation": "3/4 × 4 = 12/4؛ وبالاختزال على 4: 12/4 = 3.",
+      "explanation": "3/4 × 12 = 36/4؛ وبالاختزال على 4: 36/4 = 9.",
       "difficulty": 2,
       "competencies": ["math.frac.mult-entier"]
     },
@@ -87,15 +88,16 @@
       "competencies": ["math.frac.mult-entier"]
     },
     {
-      "prompt": "ما العددُ الصحيح الذي إذا ضربناه في 2/3 كان الناتجُ 4؟",
+      "prompt": "ما العددُ الصحيح الذي إذا ضربناه في 3/4 كان الناتجُ 6؟",
       "options": [
         {
           "id": "a",
-          "text": "4"
+          "text": "6"
         },
         {
           "id": "b",
-          "text": "8"
+          "text": "9/2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
           "id": "c",
@@ -103,38 +105,38 @@
         },
         {
           "id": "d",
-          "text": "6"
+          "text": "8"
         }
       ],
       "correctOption": "d",
-      "explanation": "نبحث عن n حيث n × 2/3 = 4؛ بما أنّ 6 × 2/3 = 12/3 = 4، فالعددُ 6.",
+      "explanation": "نبحث عن n حيث n × 3/4 = 6. الأرباعُ الثلاثة تساوي 6، فالربعُ الواحد 6 : 3 = 2، والعددُ كلّه أربعة أرباع: 2 × 4 = 8. تحقّق: 8 × 3/4 = 24/4 = 6.",
       "difficulty": 3,
       "competencies": ["math.frac.mult-entier"]
     },
     {
-      "prompt": "ما ناتج 9 × 2/9؟",
+      "prompt": "ما ناتج 8 × 3/8؟",
       "options": [
         {
           "id": "a",
-          "text": "2"
+          "text": "3"
         },
         {
           "id": "b",
-          "text": "18/81",
+          "text": "24/64",
           "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
         },
         {
           "id": "c",
-          "text": "11/9",
+          "text": "11/8",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
           "id": "d",
-          "text": "1/2"
+          "text": "1/3"
         }
       ],
       "correctOption": "a",
-      "explanation": "9 × 2/9 = 18/9؛ وبالاختزال على 9: 18/9 = 2.",
+      "explanation": "8 × 3/8 = 24/8؛ وبالاختزال على 8: 24/8 = 3.",
       "difficulty": 3,
       "competencies": ["math.frac.mult-entier"]
     },
@@ -178,11 +180,11 @@
     },
     {
       "type": "numeric",
-      "prompt": "ما العدد الذي إذا أخذنا 3/4 من 2/3 منه كان الناتج 6؟ اكتب العدد فقط.",
+      "prompt": "ما العدد الذي إذا أخذنا 2/5 من 3/4 منه كان الناتج 6؟ اكتب العدد فقط.",
       "answerKey": {
-        "value": 12
+        "value": 20
       },
-      "explanation": "3/4 من 2/3 هو 3/4 × 2/3 = 6/12 = 1/2. إذن نصف العدد يساوي 6، والعدد 6 × 2 = 12. تحقّق: 2/3 من 12 هو 8، و 3/4 من 8 هو 6.",
+      "explanation": "2/5 من 3/4 هو 2/5 × 3/4 = 6/20 = 3/10. إذن 3/10 من العدد يساوي 6: العُشرُ الواحد 6 : 3 = 2، والعددُ كلّه عشرة أعشار: 2 × 10 = 20. تحقّق: 3/4 من 20 هو 15، و 2/5 من 15 هو 6.",
       "difficulty": 3,
       "competencies": ["math.frac.mult-entier", "math.frac.equivalence"]
     },
@@ -218,7 +220,7 @@
       "options": [
         {
           "id": "a",
-          "text": "2/3 × 3/4"
+          "text": "3/4 × 4/5"
         },
         {
           "id": "b",
@@ -226,7 +228,7 @@
         },
         {
           "id": "c",
-          "text": "1/2 × 3/4"
+          "text": "1/2 × 3/5"
         },
         {
           "id": "d",
@@ -236,7 +238,7 @@
       "answerKey": {
         "order": ["b", "d", "c", "a"]
       },
-      "explanation": "نحسب كلّ جداء: 1/2 × 1/3 = 1/6 ، و 1/2 × 1/2 = 1/4 ، و 1/2 × 3/4 = 3/8 ، و 2/3 × 3/4 = 6/12 = 1/2. نقارن بتوحيد المقامات على 24: 4/24 < 6/24 < 9/24 < 12/24، فيأتي الجداء 1/6 أوّلًا ثمّ 1/4 ثمّ 3/8 ثمّ 1/2.",
+      "explanation": "نحسب كلّ جداء: 1/2 × 1/3 = 1/6 ، و 1/2 × 1/2 = 1/4 ، و 1/2 × 3/5 = 3/10 ، و 3/4 × 4/5 = 12/20 = 3/5. نقارن بتوحيد المقامات على 60: 10/60 < 15/60 < 18/60 < 36/60، فيأتي الجداء 1/6 أوّلًا ثمّ 1/4 ثمّ 3/10 ثمّ 3/5.",
       "difficulty": 3,
       "competencies": ["math.frac.mult-entier", "math.frac.comparaison"]
     }

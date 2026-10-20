@@ -10,8 +10,7 @@
         },
         {
           "id": "b",
-          "text": "3 دنانير",
-          "misconceptionTag": "math.prop.pourcentage-recopie-comme-resultat"
+          "text": "3 دنانير"
         },
         {
           "id": "c",
@@ -29,33 +28,33 @@
       "competencies": ["math.prop.situations"]
     },
     {
-      "prompt": "ما النسبةُ المئوية 25% على شكل كسر؟",
+      "prompt": "ما النسبةُ المئوية 35% على شكل كسر؟",
       "options": [
         {
           "id": "a",
-          "text": "25/10"
+          "text": "35/10"
         },
         {
           "id": "b",
-          "text": "25/100"
+          "text": "35/100"
         },
         {
           "id": "c",
-          "text": "100/25",
+          "text": "100/35",
           "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
         },
         {
           "id": "d",
-          "text": "25"
+          "text": "35"
         }
       ],
       "correctOption": "b",
-      "explanation": "النسبةُ المئوية مقامُها 100، فإنّ 25% = 25/100 (ويُختزل إلى 1/4).",
+      "explanation": "النسبةُ المئوية مقامُها 100، فإنّ 35% = 35/100 (ويُختزل إلى 7/20).",
       "difficulty": 1,
       "competencies": ["math.prop.pourcentages"]
     },
     {
-      "prompt": "ما قيمةُ 20% من 50؟",
+      "prompt": "ما قيمةُ 20% من 35؟",
       "options": [
         {
           "id": "a",
@@ -64,19 +63,20 @@
         },
         {
           "id": "b",
-          "text": "25"
+          "text": "15"
         },
         {
           "id": "c",
-          "text": "10"
+          "text": "7"
         },
         {
           "id": "d",
-          "text": "70"
+          "text": "55",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
         }
       ],
       "correctOption": "c",
-      "explanation": "20% من 50 = (20/100) × 50 = 10.",
+      "explanation": "20% من 35 = (20/100) × 35 = 7، أو 20% هي الخُمس: 35 ÷ 5 = 7.",
       "difficulty": 2,
       "competencies": ["math.prop.pourcentages"]
     },
@@ -145,7 +145,7 @@
         },
         {
           "id": "c",
-          "text": "0,015 m",
+          "text": "0,015 cm",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
@@ -176,8 +176,7 @@
         },
         {
           "id": "d",
-          "text": "32 د",
-          "misconceptionTag": "math.num.operation-inverse-appliquee"
+          "text": "32 د"
         }
       ],
       "correctOption": "c",

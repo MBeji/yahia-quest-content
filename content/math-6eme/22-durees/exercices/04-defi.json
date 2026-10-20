@@ -33,29 +33,29 @@
       "competencies": ["math.mes.durees"]
     },
     {
-      "prompt": "احسب: 2 سا 40 د + 1 سا 35 د.",
+      "prompt": "احسب: 3 سا 45 د + 1 سا 50 د.",
       "options": [
         {
           "id": "a",
-          "text": "4 سا 15 د"
+          "text": "5 سا 35 د"
         },
         {
           "id": "b",
-          "text": "3 سا 75 د",
+          "text": "4 سا 95 د",
           "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite"
         },
         {
           "id": "c",
-          "text": "4 سا 5 د"
+          "text": "6 سا 35 د"
         },
         {
           "id": "d",
-          "text": "3 سا 15 د",
+          "text": "4 سا 35 د",
           "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite"
         }
       ],
       "correctOption": "a",
-      "explanation": "المجموع = 3 سا 75 د، ونحوّلُ 75 د = 1 سا 15 د، فالنتيجة = 4 سا 15 د.",
+      "explanation": "المجموع = 4 سا 95 د، ونحوّلُ 95 د = 1 سا 35 د، فالنتيجة = 5 سا 35 د.",
       "difficulty": 3,
       "competencies": ["math.mes.durees"]
     },
@@ -114,54 +114,55 @@
       "competencies": ["math.mes.durees"]
     },
     {
-      "prompt": "1 سا 30 د تساوي كم دقيقة؟",
+      "prompt": "2 سا 40 د تساوي كم دقيقة؟",
       "options": [
         {
           "id": "a",
-          "text": "90 د"
+          "text": "160 د"
         },
         {
           "id": "b",
-          "text": "130 د",
+          "text": "240 د",
           "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
         },
         {
           "id": "c",
-          "text": "60 د"
+          "text": "120 د"
         },
         {
           "id": "d",
-          "text": "75 د"
+          "text": "180 د"
         }
       ],
       "correctOption": "a",
-      "explanation": "1 سا = 60 د، فإنّ 1 سا 30 د = 60 + 30 = 90 دقيقة.",
+      "explanation": "1 سا = 60 د، فإنّ 2 سا 40 د = 2 × 60 + 40 = 120 + 40 = 160 دقيقة.",
       "difficulty": 3,
       "competencies": ["math.mes.durees"]
     },
     {
-      "prompt": "كم ساعةً في يومين (2 يوم)؟",
+      "prompt": "كم ساعةً في 3 أيّام؟",
       "options": [
         {
           "id": "a",
-          "text": "48 سا"
+          "text": "72 سا"
         },
         {
           "id": "b",
-          "text": "24 سا"
+          "text": "36 سا",
+          "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
         },
         {
           "id": "c",
-          "text": "12 سا"
+          "text": "24 سا"
         },
         {
           "id": "d",
-          "text": "60 سا",
+          "text": "180 سا",
           "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
         }
       ],
       "correctOption": "a",
-      "explanation": "اليومُ = 24 سا، فإنّ 2 يوم = 2 × 24 = 48 ساعة.",
+      "explanation": "اليومُ = 24 سا، فإنّ 3 أيّام = 3 × 24 = 72 ساعة.",
       "difficulty": 3,
       "competencies": ["math.mes.durees"]
     },
@@ -216,12 +217,12 @@
     },
     {
       "type": "numeric",
-      "prompt": "يحرث فلاحٌ 80 آر في كلّ ساعة. عمل 10 سا 30 د. كم آرًا حرث؟ اكتب العدد فقط.",
+      "prompt": "بدأ فلاحٌ الحراثة على الساعة 6 سا 30 د وأنهاها على الساعة 17 سا 45 د، واستراح 45 د. يحرث 80 آر في كلّ ساعة عمل. كم آرًا حرث؟ اكتب العدد فقط.",
       "answerKey": {
         "value": 840,
         "unit": "آر"
       },
-      "explanation": "10 سا 30 د = 10,5 سا لأنّ 30 د نصف ساعة. ثمّ 10,5 × 80 = 840 آر. وطريقة ثانية: 10 × 80 = 800 آر وفي نصف ساعة 40 آر، فالمجموع 840 آر.",
+      "explanation": "مدّة العمل 17 سا 45 د − 6 سا 30 د = 11 سا 15 د، ثمّ 11 سا 15 د − 45 د = 10 سا 30 د = 10,5 سا. ثمّ 10,5 × 80 = 840 آر. وطريقة ثانية: 10 × 80 = 800 آر وفي نصف ساعة 40 آر، فالمجموع 840 آر.",
       "difficulty": 3,
       "competencies": ["math.mes.durees", "math.num.mult-div-decimaux"]
     }

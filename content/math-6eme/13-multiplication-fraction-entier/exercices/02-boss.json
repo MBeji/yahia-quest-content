@@ -35,28 +35,30 @@
       "competencies": ["math.frac.mult-entier"]
     },
     {
-      "prompt": "ما ناتج 3/10 × 5 (مع الاختزال)؟",
+      "prompt": "ما ناتج 7/12 × 3 (مع الاختزال)؟",
       "options": [
         {
           "id": "a",
-          "text": "15/50",
+          "text": "21/36",
           "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
         },
         {
           "id": "b",
-          "text": "3/2"
+          "text": "7/4"
         },
         {
           "id": "c",
-          "text": "8/10"
+          "text": "10/12",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
           "id": "d",
-          "text": "3/10"
+          "text": "7/36",
+          "misconceptionTag": "math.frac.multiplication-denominateur-multiplie"
         }
       ],
       "correctOption": "b",
-      "explanation": "3/10 × 5 = 15/10، وبالاختزال على 5: 15/10 = 3/2.",
+      "explanation": "7/12 × 3 = 21/12، وبالاختزال على 3: 21/12 = 7/4.",
       "difficulty": 2,
       "competencies": ["math.frac.mult-entier", "math.frac.equivalence"]
     },
@@ -87,53 +89,57 @@
       "competencies": ["math.frac.mult-entier", "math.frac.equivalence"]
     },
     {
-      "prompt": "ما ناتج 1/4 × 8؟",
+      "prompt": "ما ناتج 1/5 × 15؟",
       "options": [
         {
           "id": "a",
-          "text": "8/32",
+          "text": "15/75",
           "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
         },
         {
           "id": "b",
-          "text": "1/2"
+          "text": "1/3"
         },
         {
           "id": "c",
-          "text": "9/4"
+          "text": "16/5",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
           "id": "d",
-          "text": "2"
+          "text": "3"
         }
       ],
       "correctOption": "d",
-      "explanation": "1/4 × 8 = 8/4؛ وبالاختزال على 4: 8/4 = 2.",
+      "explanation": "1/5 × 15 = 15/5؛ وبالاختزال على 5: 15/5 = 3.",
       "difficulty": 3,
       "competencies": ["math.frac.mult-entier"]
     },
     {
-      "prompt": "اشترى 5 أكياسٍ في كلٍّ منها 3/4 kg سكّر. ما الكتلةُ الإجمالية؟",
+      "prompt": "اشترى 7 أكياسٍ في كلٍّ منها 2/5 kg سكّر. ما الكتلةُ الإجمالية؟",
       "options": [
         {
           "id": "a",
-          "text": "15/4 kg"
+          "text": "14/5 kg"
         },
         {
           "id": "b",
-          "text": "8/4 kg"
+          "text": "9/5 kg",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
           "id": "c",
-          "text": "15/20 kg"
+          "text": "14/35 kg",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
         },
         {
           "id": "d",
-          "text": "5/4 kg"
+          "text": "2/35 kg",
+          "misconceptionTag": "math.frac.multiplication-denominateur-multiplie"
         }
       ],
       "correctOption": "a",
-      "explanation": "الكتلة = 5 × 3/4 = 15/4 kg (أي 3,75 kg).",
+      "explanation": "الكتلة = 7 × 2/5 = 14/5 kg (أي 2,8 kg).",
       "difficulty": 3,
       "competencies": ["math.frac.mult-entier"]
     },
@@ -228,28 +234,28 @@
       "competencies": ["math.frac.mult-entier"]
     },
     {
-      "prompt": "مستطيلٌ طوله 3/4 m وعرضه 2/3 m. ما مساحته؟",
+      "prompt": "مستطيلٌ طوله 4/5 m وعرضه 3/4 m. ما مساحته؟",
       "options": [
         {
           "id": "a",
-          "text": "1/2 m²"
+          "text": "3/5 m²"
         },
         {
           "id": "b",
-          "text": "5/7 m²",
+          "text": "7/9 m²",
           "misconceptionTag": "math.frac.add-numerators-and-denominators"
         },
         {
           "id": "c",
-          "text": "6/3 m²"
+          "text": "12/5 m²"
         },
         {
           "id": "d",
-          "text": "17/12 m²"
+          "text": "31/20 m²"
         }
       ],
       "correctOption": "a",
-      "explanation": "مساحة المستطيل جداء بعديه: 3/4 × 2/3 = 6/12، وبالاختزال على 6 نجد 1/2 m².",
+      "explanation": "مساحة المستطيل جداء بعديه: 4/5 × 3/4 = 12/20، وبالاختزال على 4 نجد 3/5 m².",
       "difficulty": 3,
       "competencies": ["math.frac.mult-entier", "math.frac.equivalence"]
     }
