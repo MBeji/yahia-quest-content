@@ -39,7 +39,7 @@ Décisions du pilote appliquées en totalité. Aucun défaut refusé. Pas de git
 
 ## m020 (devoir `03/11`) : coupée (E-1)
 
-Après les corrections il ne restait que Q1, Q3 et Q7 (3 q, sous le seuil de 5). Fichier supprimé ; `gisement.json` : m020 (`D04#1`) passée à `ecarte`, champ `raison` « coupée à l'audit M2 : trop mince après retrait des redites (E-1) ». Il ne reste aucun devoir au `03` : la ligne « Calibré sur des devoirs publics… » est retirée de son `chapter.json`.
+Après les corrections il ne restait que Q1, Q3 et Q7 (3 q, sous le seuil de 5). Fichier supprimé ; `gisement.json` : m020 (`D04#1`) passée à `ecartee` (forme des missions), sans champ `fichier`, note « coupée à l'audit M2 : trop mince après retrait des redites (E-1) ». Il ne reste aucun devoir au `03` : la ligne « Calibré sur des devoirs publics… » est retirée de son `chapter.json`.
 
 ## Graphie ثنائي / ثاني
 
