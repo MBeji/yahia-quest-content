@@ -12,30 +12,30 @@
   },
   "questions": [
     {
-      "prompt": "ما محيطُ دائرةٍ نصفُ قطرها 24 سم؟ (π ≈ 3,14)",
+      "prompt": "يُراد وضع سياج حول حوض دائري قطره 21 م. ما طول السياج؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "48 سم",
-          "misconceptionTag": "math.geo.facteur-pi-omis"
+          "text": "32,97 م",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         },
         {
           "id": "b",
-          "text": "75,36 سم",
-          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+          "text": "65,94 م"
         },
         {
           "id": "c",
-          "text": "150,72 سم"
+          "text": "131,88 م",
+          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
         },
         {
           "id": "d",
-          "text": "1 808,64 سم",
+          "text": "346,185 م",
           "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
         }
       ],
-      "correctOption": "c",
-      "explanation": "المحيط = 2 × π × ر = 2 × 3,14 × 24 = 150,72 سم. من نسي العدد 2 وجد 75,36، ومن توقّف عند 2 × 24 = 48 نسي π، ومن حسب 3,14 × 24 × 24 وجد 1 808,64 وهي مساحة القرص لا محيط الدائرة.",
+      "correctOption": "b",
+      "explanation": "السياج على حافّة الحوض فهو محيط الدائرة: π × ق = 3,14 × 21 = 65,94 م. من ضرب أيضًا في 2 وجد 131,88، ومن أخذ نصف القطر 10,5 في π × ق وجد 32,97، ومن حسب مساحة قرص نصف قطره 10,5 وجد 346,185.",
       "difficulty": 2,
       "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },

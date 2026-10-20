@@ -11,7 +11,8 @@
       "options": [
         {
           "id": "a",
-          "text": "2400 km"
+          "text": "2400 km",
+          "misconceptionTag": "math.prop.vitesse-unite-de-temps-non-convertie"
         },
         {
           "id": "b",
@@ -63,7 +64,8 @@
         },
         {
           "id": "b",
-          "text": "3/2"
+          "text": "3/2",
+          "misconceptionTag": "math.frac.rapport-denominateur-mal-choisi"
         },
         {
           "id": "c",
@@ -96,15 +98,18 @@
       "options": [
         {
           "id": "a",
-          "text": "نعم، لكن بنصف مدّته لأنّ الشاحنة تبقى في الطريق"
+          "text": "نعم، لكن بنصف مدّته لأنّ الشاحنة تبقى في الطريق",
+          "misconceptionTag": "math.mes.temps-d-arret-mal-compte"
         },
         {
           "id": "b",
-          "text": "لا، لأنّ الشاحنة لا تقطع أثناء التوقّف أيّ مسافة تُحسب"
+          "text": "لا، لأنّ الشاحنة لا تقطع أثناء التوقّف أيّ مسافة تُحسب",
+          "misconceptionTag": "math.mes.temps-d-arret-mal-compte"
         },
         {
           "id": "c",
-          "text": "لا، لأنّ التوقّف لا يغيّر معدّل سرعة الشاحنة في الطريق"
+          "text": "لا، لأنّ التوقّف لا يغيّر معدّل سرعة الشاحنة في الطريق",
+          "misconceptionTag": "math.mes.temps-d-arret-mal-compte"
         },
         {
           "id": "d",
@@ -140,8 +145,7 @@
         },
         {
           "id": "c",
-          "text": "الساعة 6 و 43 دقيقة",
-          "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
+          "text": "الساعة 6 و 23 دقيقة"
         },
         {
           "id": "d",
@@ -150,7 +154,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "نجمع الساعات والدقائق: 5 س + 1 س = 6 س و 28 + 55 = 83 دقيقة. ولأنّ الساعة 60 دقيقة نحوّل 83 = 60 + 23 فنضيف ساعة: 7 س و 23 دقيقة. الكتابة 6 و 83 تترك الدقائق فوق 60، والكتابة 6 و 43 تعامل 1 س 55 د كأنّها 1 س 15 د.",
+      "explanation": "نجمع الساعات والدقائق: 5 س + 1 س = 6 س و 28 + 55 = 83 دقيقة. ولأنّ الساعة 60 دقيقة نحوّل 83 = 60 + 23 فنضيف ساعة: 7 س و 23 دقيقة. الكتابة 6 و 83 تترك الدقائق فوق 60، والكتابة 6 و 23 تطرح 60 دقيقة دون إضافة الساعة.",
       "difficulty": 3,
       "competencies": ["math.mes.durees"]
     }

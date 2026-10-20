@@ -28,3 +28,12 @@ Doutes / choix :
 - 2024 P2 q7 et 2021 P1 q1 sont des QCM de raisonnement ajoutés pour porter le piège « mauvaise tranche / deux restes » sans étiquette disponible.
 - Aucun `short_answer` ni `ordering` : aucune étape du lot ne s'y prêtait (mission 14/10 sans construction).
 - `content/CATALOGUE.md` non régénéré (aucun chapitre neuf).
+
+## Corrections après audit (audit-M1-M2.md, partie M2)
+
+- M-2 : 14/07 Q4 réécrite en « pourquoi pas la deuxième tranche ? » (quatre raisons, muettes, clé non la plus longue) ; Q7 : option « لا خطأ » remplacée par « diviser par 8 d » et par « le quotient n'est pas 136 » (muettes), clé complétée (« قسم على ثمن ساعة أمين، وساعات ياسمين في شريحة أرخص »).
+- M-4 : 14/10 Q1 devient « 1 cm sur la carte représente combien de km ? » (2 km ; 0,2 / 20 / 200 en distracteurs, muets).
+- M-6 : 15/06 Q6, option 60 km/h → `math.alg.reponse-a-l-autre-inconnue` ; l'option de remplissage 1200 devient 3 km/h (60 ÷ 20) ; 15/06 Q2 : « 1000 km » → « 1 km ».
+- Mineurs : 14/09 Q8 « 125 % » étiqueté `operation-inverse-appliquee`, « 175 % » → « 100 % » ; 15/09 Q8 option « 6 h 43 » (impossible) → « 6 h 23 » muette, étiquette retirée, explication adaptée ; 14/06 Q3 et 14/10 Q3 (étapes redondantes) deviennent des questions de différence (200 caisses d'écart ; 13 km − 8 km = 5 km) ; 14/08 Q8 recalibrée d2 et placée avant le QCM de structure (rampe respectée) ; 15/07 : figure du parcours أ–ب–ج redessinée en SVG (ب–ج plus court que أ–ب, sans cote) dans Q2 et Q3, option Q9 « 12 > 10 » (fausse à vue) remplacée par « 48 min > moitié de 114 » ; coïncidences 210 d (14/09) et 12 min (15/08 Q9) laissées (données du sujet, déjà acceptées par l'audit) ; 15/08 Q1 laissée en QCM (toléré).
+- Ids neufs du vocabulaire posés : `math.mes.trajet-aller-retour-ignore` (14/10 Q5 « 21 km »), `math.prop.vitesse-unite-de-temps-non-convertie` (15/09 Q1 « 2400 km »), `math.frac.rapport-denominateur-mal-choisi` (15/09 Q4 « 3/2 »), `math.mes.temps-d-arret-mal-compte` (15/09 Q6, les trois options fausses).
+- Contrôles après correction : `content:check` ✓, `content:qa` 0 erreur (5 avertissements, hors de mes fichiers), `content:figures:check` ✓, `content:tranche --strict-longest` 0 % des deux chapitres, `lot-lint` 0 point, prettier ✓, `content:gisement:controle` (14/10) 0 plage de 8 mots. Nombres de questions inchangés (74).

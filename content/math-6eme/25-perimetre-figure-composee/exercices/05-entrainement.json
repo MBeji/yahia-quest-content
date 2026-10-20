@@ -23,43 +23,48 @@
         },
         {
           "id": "d",
-          "text": "1 400 م"
+          "text": "1 400 م",
+          "misconceptionTag": "math.mes.unites-non-converties"
         }
       ],
       "correctOption": "b",
       "explanation": "كلّ 1 سم على التصميم يمثّل 50 سم، فالمحيط الحقيقيّ 28 × 50 = 1 400 سم = 14 م. من ترك 1 400 نسي التحويل إلى المتر، ومن قسم على 50 وجد 0,56.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.mes.perimetres"]
     },
     {
-      "prompt": "على جانب طريق مستقيم طوله 36 م نغرس أعمدة إنارة كلّ 3 م، ويُغرس عمود عند كلّ من الطرفين. كم عمودًا نغرس؟",
+      "prompt": "نغرس أعمدة كلّ 3 م: على جانب طريق مستقيم طوله 36 م مع عمود عند كلّ من طرفيه، وعلى حدّ ساحة مغلقة محيطها 36 م. كم عمودًا نغرس في المجموع؟",
       "options": [
         {
           "id": "a",
-          "text": "11 عمودًا"
+          "text": "72 عمودًا"
         },
         {
           "id": "b",
-          "text": "12 عمودًا"
+          "text": "26 عمودًا",
+          "misconceptionTag": "math.mes.plantations-ferme-et-ouvert-confondus"
         },
         {
           "id": "c",
-          "text": "13 عمودًا"
+          "text": "25 عمودًا"
         },
         {
           "id": "d",
-          "text": "108 أعمدة"
+          "text": "24 عمودًا"
         }
       ],
       "correctOption": "c",
-      "explanation": "عدد المسافات 36 ÷ 3 = 12، وللطريق المستقيم بداية ونهاية فنزيد عمودًا: 12 + 1 = 13. أمّا لو كان حدًّا مغلقًا لكفى 12 عمودًا.",
-      "difficulty": 2
+      "explanation": "في الحالتين 36 ÷ 3 = 12 مسافة. على الطريق المستقيم بداية ونهاية فنزيد عمودًا: 13. وعلى الحدّ المغلق عدد الأعمدة يساوي عدد المسافات: 12. المجموع 13 + 12 = 25. من أضاف عمودًا في الحالتين وجد 26، ومن لم يضفه في أيّ منهما وجد 24.",
+      "difficulty": 2,
+      "competencies": ["math.mes.perimetres"]
     },
     {
       "prompt": "شكل مكوّن من مربّع ضلعه 6 سم، ومثلّث متقايس الأضلاع ضلعه 6 سم ملتصق بضلعه الأيسر، ونصف قرص قطره 6 سم ملتصق بضلعه الأيمن. ما محيطه؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 190\"><path d=\"M23.8 95 L138.2 29 L270.2 29 A66 66 0 0 1 270.2 161 L138.2 161 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M23.8 95 L138.2 29 L270.2 29 A66 66 0 0 1 270.2 161 L138.2 161 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138.2 29 L138.2 161\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M270.2 29 L270.2 161\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M78 56.8 L84 67.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M84 122.8 L78 133.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M144.2 95 L132.2 95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"204.2\" y=\"183\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text></svg>",
       "options": [
         {
           "id": "a",
-          "text": "24 سم"
+          "text": "24 سم",
+          "misconceptionTag": "math.mes.perimetre-partie-du-bord-oubliee"
         },
         {
           "id": "b",
@@ -67,16 +72,19 @@
         },
         {
           "id": "c",
-          "text": "39,42 سم"
+          "text": "39,42 سم",
+          "misconceptionTag": "math.mes.perimetre-segment-interieur-compte"
         },
         {
           "id": "d",
-          "text": "45,42 سم"
+          "text": "45,42 سم",
+          "misconceptionTag": "math.mes.perimetre-segment-interieur-compte"
         }
       ],
       "correctOption": "b",
       "explanation": "الضلعان المشتركان (القاعدة والقطر) داخل الشكل. على الحدود من المثلّث ضلعان 6 + 6، ومن المربّع الضلعان الأعلى والأسفل 6 + 6، وقوس نصف الدائرة 3,14 × 6 ÷ 2 = 9,42: المحيط 24 + 9,42 = 33,42 سم. الخطأ الشائع إضافة قطر فنجد 39,42 أو قطرين فنجد 45,42، أو نسيان القوس فنجد 24.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.perimetres", "math.geo.cercle"]
     },
     {
       "type": "numeric",
@@ -87,7 +95,8 @@
         "unit": "م"
       },
       "explanation": "المحيط على التصميم: ثلاثة أضلاع من المربّع 3 + 3 + 3 = 9 سم (الضلع الرابع هو قطر نصف القرص فلا يدخل) والقوس 3,14 × 3 ÷ 2 = 4,71 سم، أي 13,71 سم. الحقيقيّ 13,71 × 400 = 5 484 سم = 54,84 م.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.perimetres", "math.geo.cercle"]
     },
     {
       "prompt": "حديقة مستطيلة طولها 24 م وعرضها 10 م، ألصق بكلّ من ضلعيها القصيرين نصف دائرة قطرها 10 م. نحيطها بسياج لفائفه 20 م للّفة. كم لفّة نشتري؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 230\"><path d=\"M84 75 L276 75 A40 40 0 0 1 276 155 L84 155 A40 40 0 0 1 84 75 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M84 75 L276 75 A40 40 0 0 1 276 155 L84 155 A40 40 0 0 1 84 75\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M84 75 L84 155\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M276 75 L276 155\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"180\" y=\"67\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">24</text><text x=\"294\" y=\"120\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">10</text></svg>",
@@ -95,7 +104,7 @@
         {
           "id": "a",
           "text": "3 لفّات",
-          "misconceptionTag": "math.num.arrondi-par-troncature"
+          "misconceptionTag": "math.num.reste-ignore-dans-le-probleme"
         },
         {
           "id": "b",
@@ -103,41 +112,46 @@
         },
         {
           "id": "c",
-          "text": "5 لفّات"
+          "text": "5 لفّات",
+          "misconceptionTag": "math.mes.perimetre-segment-interieur-compte"
         },
         {
           "id": "d",
-          "text": "6 لفّات"
+          "text": "6 لفّات",
+          "misconceptionTag": "math.geo.arc-circonference-entiere-prise-pour-l-arc"
         }
       ],
       "correctOption": "b",
       "explanation": "الضلعان القصيران 10 م داخل الشكل، والقوسان معًا دائرة قطرها 10 م: 3,14 × 10 = 31,4 م. المحيط 24 + 24 + 31,4 = 79,4 م، وعدد اللفائف 79,4 ÷ 20 = 3,97: ثلاث لفائف تغطّي 60 م فلا تكفي، فنشتري 4. من قطع عند 3 نقصه سياج، ومن أضاف القطرين وجد 5، ومن وضع دائرتين كاملتين وجد 6.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.perimetres", "math.geo.cercle"]
     },
     {
       "prompt": "حديقة مستطيلة 15 م × 9 م، ألصقنا بضلعها الذي طوله 9 م مربّعًا ضلعه 9 م من الخارج. نغرس شجيرة كلّ 3 م على الحدّ الخارجيّ. كم شجيرة نغرس؟\n<svg viewBox=\"0 0 360 170\"><path d=\"M12 22 L348 22 L348 148 L12 148 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M12 22 L348 22 L348 148 L12 148 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M222 22 L222 148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"117\" y=\"170\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">15</text><text x=\"285\" y=\"170\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">9</text></svg>",
       "options": [
         {
           "id": "a",
-          "text": "22 شجيرة"
+          "text": "66 شجيرة"
         },
         {
           "id": "b",
-          "text": "23 شجيرة"
+          "text": "28 شجيرة",
+          "misconceptionTag": "math.mes.perimetre-segment-interieur-compte"
         },
         {
           "id": "c",
-          "text": "28 شجيرة",
-          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+          "text": "23 شجيرة",
+          "misconceptionTag": "math.mes.plantations-ferme-et-ouvert-confondus"
         },
         {
           "id": "d",
-          "text": "66 شجيرة"
+          "text": "22 شجيرة"
         }
       ],
-      "correctOption": "a",
+      "correctOption": "d",
       "explanation": "الشكل مستطيل طوله 15 + 9 = 24 م وعرضه 9 م، فمحيطه 2 × (24 + 9) = 66 م. على الحدّ المغلق عدد الشجيرات 66 ÷ 3 = 22. من جمع محيطي القطعتين 48 + 36 = 84 وجد 28 فعدّ الضلع المشترك مرّتين، ومن أضاف شجيرة وجد 23، ومن توقّف عند 66 لم يقسم.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.perimetres"]
     }
   ]
 }

@@ -88,31 +88,32 @@
       "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
-      "prompt": "ما مساحةُ قرصٍ نصفُ قطره 6 سم؟ (π ≈ 3,14)",
+      "prompt": "ساحة مستديرة قطرها 10 م تُغطّى كلّها بالعشب. كم مترًا مربّعًا من العشب؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "113,04 سم²"
+          "text": "25 م²",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
         },
         {
           "id": "b",
-          "text": "37,68 سم²",
+          "text": "31,4 م²",
           "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
         },
         {
           "id": "c",
-          "text": "18,84 سم²"
+          "text": "78,5 م²"
         },
         {
           "id": "d",
-          "text": "36 سم²",
-          "misconceptionTag": "math.geo.facteur-pi-omis"
+          "text": "314 م²",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         }
       ],
-      "correctOption": "a",
-      "explanation": "مساحةُ القرص = π × ر × ر = 3,14 × 6 × 6 = 3,14 × 36 = 113,04 سم².",
+      "correctOption": "c",
+      "explanation": "العشب يغطّي السطح فهو مساحة القرص: نصف القطر 10 ÷ 2 = 5 م، والمساحة 3,14 × 5 × 5 = 78,5 م². من أخذ القطر 10 نصفَ قطر وجد 314، ومن حسب المحيط وجد 31,4، ومن نسي π وجد 25.",
       "difficulty": 3,
-      "competencies": ["math.geo.cercle", "math.mes.aires"]
+      "competencies": ["math.geo.cercle"]
     },
     {
       "prompt": "ما محيطُ دائرةٍ نصفُ قطرها 7 سم؟ (π ≈ 3,14)",

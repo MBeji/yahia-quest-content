@@ -7,28 +7,29 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "كم وجهًا للمكعّب؟",
+      "prompt": "صندوق مكعّب حرفه 10 سم، نلصق شريطًا على أحرفه كلّها. كم سنتيمترًا من الشريط يلزم؟",
       "options": [
         {
           "id": "a",
-          "text": "6 أوجه"
+          "text": "40 سم"
         },
         {
           "id": "b",
-          "text": "4 أوجه"
+          "text": "60 سم",
+          "misconceptionTag": "math.geo.solide-faces-aretes-sommets-confondus"
         },
         {
           "id": "c",
-          "text": "8 أوجه",
+          "text": "80 سم",
           "misconceptionTag": "math.geo.solide-faces-aretes-sommets-confondus"
         },
         {
           "id": "d",
-          "text": "3 أوجه"
+          "text": "120 سم"
         }
       ],
-      "correctOption": "a",
-      "explanation": "للمكعّب 6 أوجهٍ مربّعةٍ متساوية.",
+      "correctOption": "d",
+      "explanation": "للمكعّب 12 حرفًا متقايسة، طول كلّ منها 10 سم، فالشريط 12 × 10 = 120 سم. من عدّ 8 خلط الأحرف بالرؤوس، ومن عدّ 6 خلطها بالأوجه.",
       "difficulty": 1,
       "competencies": ["math.esp.cube-pave"]
     },
@@ -88,15 +89,15 @@
       "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "ما صيغةُ المساحة الجمليّة للمكعّب؟",
+      "prompt": "ما صيغةُ المساحة الجانبيّة للمكعّب؟",
       "options": [
         {
           "id": "a",
-          "text": "6 × (الحرف × الحرف)"
+          "text": "4 × (الحرف × الحرف)"
         },
         {
           "id": "b",
-          "text": "4 × (الحرف × الحرف)",
+          "text": "6 × (الحرف × الحرف)",
           "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
         },
         {
@@ -106,11 +107,12 @@
         },
         {
           "id": "d",
-          "text": "الحرف + الحرف"
+          "text": "4 × الحرف",
+          "misconceptionTag": "math.mes.arete-non-elevee-au-carre"
         }
       ],
       "correctOption": "a",
-      "explanation": "للمكعّب 6 أوجهٍ متساوية، فالمساحةُ الجمليّة = 6 × (الحرف × الحرف).",
+      "explanation": "الجانبيّة تجمع الأوجه الأربعة الجانبيّة، وكلّ وجه مربّع مساحته الحرف × الحرف: 4 × (الحرف × الحرف). العدد 6 للجمليّة.",
       "difficulty": 1,
       "competencies": ["math.esp.cube-pave"]
     },
@@ -192,10 +194,11 @@
       ],
       "correctOption": "c",
       "explanation": "الأحرف المخفيّة خلف المجسّم تُرسم متقطّعة، وهي ثلاثة تلتقي في الرأس الخفيّ. أمّا الأحرف الاثنا عشر كلّها فهي أحرف متوازي المستطيلات، المرئيّة منها 9 فقط.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "قالب خشبي له 6 أوجه: وجهان مربّعان ضلع كلّ منهما 3 سم، وأربعة أوجه مستطيلة 8 سم × 3 سم. ما اسمه؟\n<svg viewBox=\"0 0 360 193\"><path d=\"M37.5 157 L277.5 157 L277.5 67 L37.5 67 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M37.5 157 L277.5 157 L277.5 67 L37.5 67 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M37.5 67 L277.5 67 L322.5 22 L82.5 22 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M37.5 67 L277.5 67 L322.5 22 L82.5 22 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M277.5 157 L322.5 112 L322.5 22 L277.5 67 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M277.5 157 L322.5 112 L322.5 22 L277.5 67 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M37.5 157 L82.5 112\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M82.5 112 L322.5 112\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M82.5 112 L82.5 22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/></svg>",
+      "prompt": "قالب خشبي له 6 أوجه: وجهان مربّعان ضلع كلّ منهما 4 سم، وأربعة أوجه مستطيلة 10 سم × 4 سم. ما اسمه؟\n<svg viewBox=\"0 0 360 214\"><path d=\"M24 178 L284 178 L284 74 L24 74 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M24 178 L284 178 L284 74 L24 74 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M24 74 L284 74 L336 22 L76 22 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M24 74 L284 74 L336 22 L76 22 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M284 178 L336 126 L336 22 L284 74 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M284 178 L336 126 L336 22 L284 74 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M24 178 L76 126\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M76 126 L336 126\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M76 126 L76 22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/></svg>",
       "options": [
         {
           "id": "a",
@@ -215,11 +218,12 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "كلّ أوجه القالب مستطيلات، وكلّ وجهين متقابلين متقايسان، فهو متوازي مستطيلات. لكنّه ليس مكعّبًا لأنّ المكعّب أوجهه الستّة كلّها مربّعات متقايسة، وهنا أربعة أوجه 8 × 3. وجود وجهين مربّعين لا يكفي.",
-      "difficulty": 2
+      "explanation": "كلّ أوجه القالب مستطيلات، وكلّ وجهين متقابلين متقايسان، فهو متوازي مستطيلات. لكنّه ليس مكعّبًا لأنّ المكعّب أوجهه الستّة كلّها مربّعات متقايسة، وهنا أربعة أوجه 10 × 4. وجود وجهين مربّعين لا يكفي.",
+      "difficulty": 2,
+      "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "هل هذا الشكل، المؤلّف من 6 مربّعات متقايسة، نشر مكعّب؟\n<svg viewBox=\"0 0 360 160\"><path d=\"M92 102 L136 102 L136 146 L92 146 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M92 102 L136 102 L136 146 L92 146 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M136 102 L180 102 L180 146 L136 146 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M136 102 L180 102 L180 146 L136 146 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M180 102 L224 102 L224 146 L180 146 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M180 102 L224 102 L224 146 L180 146 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M224 102 L268 102 L268 146 L224 146 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M224 102 L268 102 L268 146 L224 146 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M180 58 L224 58 L224 102 L180 102 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M180 58 L224 58 L224 102 L180 102 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M180 14 L224 14 L224 58 L180 58 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M180 14 L224 14 L224 58 L180 58 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+      "prompt": "هل هذا الشكل، المؤلّف من 6 مربّعات متقايسة، نشر مكعّب؟\n<svg viewBox=\"0 0 360 116\"><path d=\"M70 58 L114 58 L114 102 L70 102 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M70 58 L114 58 L114 102 L70 102 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M114 58 L158 58 L158 102 L114 102 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M114 58 L158 58 L158 102 L114 102 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M158 58 L202 58 L202 102 L158 102 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M158 58 L202 58 L202 102 L158 102 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M202 58 L246 58 L246 102 L202 102 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M202 58 L246 58 L246 102 L202 102 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M246 58 L290 58 L290 102 L246 102 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M246 58 L290 58 L290 102 L246 102 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M114 14 L158 14 L158 58 L114 58 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\"/><path d=\"M114 14 L158 14 L158 58 L114 58 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
       "options": [
         {
           "id": "a",
@@ -227,7 +231,7 @@
         },
         {
           "id": "b",
-          "text": "نعم، لأنّ صفّ الأربعة يلتفّ عند الطيّ"
+          "text": "نعم، لأنّ الصفّ يلتفّ حول المكعّب عند الطيّ"
         },
         {
           "id": "c",
@@ -239,8 +243,9 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "نطوي الصفّ الأفقيّ حول المكعّب فيصنع 4 أوجه جانبيّة. المربّع الأوّل فوق الصفّ يصير الوجه العلويّ، والمربّع الذي فوقه ينزل على الوجه الجانبيّ المقابل فيتراكب معه، ويبقى الوجه السفليّ مفتوحًا. ليست كلّ ستّة مربّعات متلاصقة نشرًا، وللمكعّب أكثر من نشر صحيح غير الصليب.",
-      "difficulty": 2
+      "explanation": "نطوي الصفّ الأفقيّ حول المكعّب: أربعة مربّعات تكفي لتصنع الأوجه الجانبيّة الأربعة، فيسقط المربّع الخامس على الأوّل ويتراكبان. المربّع الذي فوق الصفّ يصير الوجه العلويّ، ويبقى الوجه السفليّ مفتوحًا. ليست كلّ ستّة مربّعات متلاصقة نشرًا، وللمكعّب أكثر من نشر صحيح غير الصليب.",
+      "difficulty": 2,
+      "competencies": ["math.esp.cube-pave"]
     }
   ]
 }

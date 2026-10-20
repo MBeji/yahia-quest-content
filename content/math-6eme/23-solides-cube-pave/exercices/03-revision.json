@@ -34,30 +34,30 @@
       "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "مكعّبٌ طولُ حرفه 3 سم. ما مساحتُه الجانبيّة؟",
+      "prompt": "مكعّبٌ طولُ حرفه 1,2 م. ما مساحتُه الجانبيّة؟",
       "options": [
         {
           "id": "a",
-          "text": "36 سم²"
-        },
-        {
-          "id": "b",
-          "text": "54 سم²",
-          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
-        },
-        {
-          "id": "c",
-          "text": "9 سم²",
+          "text": "1,44 م²",
           "misconceptionTag": "math.mes.solide-une-seule-face-comptee"
         },
         {
-          "id": "d",
-          "text": "12 سم²",
+          "id": "b",
+          "text": "4,8 م²",
           "misconceptionTag": "math.mes.arete-non-elevee-au-carre"
+        },
+        {
+          "id": "c",
+          "text": "5,76 م²"
+        },
+        {
+          "id": "d",
+          "text": "8,64 م²",
+          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
         }
       ],
-      "correctOption": "a",
-      "explanation": "الجانبيّة = 4 × (الحرف × الحرف) = 4 × (3 × 3) = 4 × 9 = 36 سم².",
+      "correctOption": "c",
+      "explanation": "الجانبيّة = 4 × (الحرف × الحرف) = 4 × (1,2 × 1,2) = 4 × 1,44 = 5,76 م². من ضرب في 6 وجد الجمليّة 8,64، ومن حسب وجهًا واحدًا وجد 1,44، ومن نسي ضرب الحرف في نفسه وجد 4 × 1,2 = 4,8.",
       "difficulty": 2,
       "competencies": ["math.esp.cube-pave"]
     },
@@ -86,7 +86,8 @@
       ],
       "correctOption": "d",
       "explanation": "الجمليّة = 6 × (الحرف × الحرف) = 6 × (11 × 11) = 6 × 121 = 726 سم². من استعمل 4 بدل 6 وجد 484، ومن حسب وجهًا واحدًا وجد 121، ومن نسي تربيع الحرف وجد 6 × 11 = 66.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.esp.cube-pave"]
     },
     {
       "prompt": "متوازي مستطيلاتٍ قاعدتُه طولُها 5 سم وعرضُها 2 سم. ما محيطُ القاعدة؟",
@@ -116,34 +117,33 @@
       "competencies": ["math.esp.cube-pave", "math.mes.perimetres"]
     },
     {
-      "prompt": "ما صيغةُ المساحة الجمليّة للمكعّب؟",
+      "prompt": "المساحة الجمليّة للمكعّب تساوي مساحته الجانبيّة زائد:",
       "options": [
         {
           "id": "a",
-          "text": "6 × (الحرف × الحرف)"
+          "text": "مساحة وجهين"
         },
         {
           "id": "b",
-          "text": "4 × (الحرف × الحرف)",
-          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
+          "text": "مساحة وجه واحد"
         },
         {
           "id": "c",
-          "text": "2 × (الحرف × الحرف)"
+          "text": "مساحة أربعة أوجه"
         },
         {
           "id": "d",
-          "text": "12 × الحرف",
-          "misconceptionTag": "math.mes.arete-non-elevee-au-carre"
+          "text": "لا شيء، فهما متساويتان",
+          "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues"
         }
       ],
       "correctOption": "a",
-      "explanation": "للمكعّب 6 أوجهٍ متساوية، فالمساحةُ الجمليّة = 6 × (الحرف × الحرف).",
+      "explanation": "الجانبيّة تضمّ الأوجه الأربعة الجانبيّة، والجمليّة الأوجه الستّة كلّها: الفرق وجهان، هما القاعدتان (6 = 4 + 2).",
       "difficulty": 2,
       "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "ما المساحةُ الجانبيّة لمتوازي المستطيلات هذا (الطول 8، العرض 5، الارتفاع 3)؟ <svg viewBox=\"0 0 100 100\"><rect x=\"18\" y=\"50\" width=\"44\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"34,36 78,36 78,66\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"18\" y1=\"50\" x2=\"34\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"62\" y1=\"50\" x2=\"78\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"62\" y1=\"80\" x2=\"78\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"34\" y1=\"36\" x2=\"34\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/><line x1=\"34\" y1=\"66\" x2=\"78\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/><line x1=\"18\" y1=\"80\" x2=\"34\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/></svg>",
+      "prompt": "ما المساحةُ الجانبيّة لمتوازي المستطيلات هذا (الطول 8، العرض 5، الارتفاع 3)؟ <svg viewBox=\"0 0 360 201\"><path d=\"M43.5 165 L251.5 165 L251.5 87 L43.5 87 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M43.5 165 L251.5 165 L251.5 87 L43.5 87 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M43.5 87 L251.5 87 L316.5 22 L108.5 22 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M43.5 87 L251.5 87 L316.5 22 L108.5 22 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M251.5 165 L316.5 100 L316.5 22 L251.5 87 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M251.5 165 L316.5 100 L316.5 22 L251.5 87 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M43.5 165 L108.5 100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M108.5 100 L316.5 100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M108.5 100 L108.5 22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"147.5\" y=\"185\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">8</text><text x=\"35.5\" y=\"131\" text-anchor=\"end\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">3</text><text x=\"300\" y=\"146.5\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text></svg>",
       "options": [
         {
           "id": "a",
@@ -151,12 +151,12 @@
         },
         {
           "id": "b",
-          "text": "39 سم²"
+          "text": "39 سم²",
+          "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee"
         },
         {
           "id": "c",
-          "text": "120 سم²",
-          "misconceptionTag": "math.mes.volume-utilise-comme-aire"
+          "text": "120 سم²"
         },
         {
           "id": "d",
@@ -187,13 +187,13 @@
         },
         {
           "id": "d",
-          "text": "45 000 د",
-          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+          "text": "45 000 د"
         }
       ],
       "correctOption": "b",
       "explanation": "الأوجه الستّة كلّها تُغطّى: 6 × (25 × 25) = 6 × 625 = 3 750 سم². ثمّ نحوّل إلى المتر المربّع لأنّ الثمن معطى له: 1 م² = 10 000 سم²، فالمساحة 0,375 م² والثمن 0,375 × 12 = 4,5 د. الأخطاء الشائعة: تغطية 4 أوجه فنجد 3 د، أو التحويل بعامل 100 فنجد 450 د، أو نسيان التحويل فنجد 45 000 د.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.esp.cube-pave"]
     },
     {
       "prompt": "متوازي مستطيلات أبعاده 7 سم و 3 سم و 2 سم. ما مجموع مساحات المستطيلات الستّة في نشره؟\n<svg viewBox=\"0 0 360 163\"><path d=\"M52.5 127 L262.5 127 L262.5 67 L52.5 67 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M52.5 127 L262.5 127 L262.5 67 L52.5 67 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M52.5 67 L262.5 67 L307.5 22 L97.5 22 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M52.5 67 L262.5 67 L307.5 22 L97.5 22 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M262.5 127 L307.5 82 L307.5 22 L262.5 67 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M262.5 127 L307.5 82 L307.5 22 L262.5 67 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M52.5 127 L97.5 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M97.5 82 L307.5 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M97.5 82 L97.5 22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"157.5\" y=\"147\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">7</text><text x=\"44.5\" y=\"102\" text-anchor=\"end\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">2</text><text x=\"301\" y=\"118.5\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">3</text></svg>",
@@ -218,7 +218,8 @@
       ],
       "correctOption": "d",
       "explanation": "في النشر ثلاثة أزواج من المستطيلات المتقايسة: 7 × 3 = 21 وجهان، 7 × 2 = 14 وجهان، 3 × 2 = 6 وجهان. المجموع 2 × (21 + 14 + 6) = 2 × 41 = 82 سم²، وهي المساحة الجمليّة. الخطأ الشائع عدّ مستطيل واحد من كلّ زوج فنجد 41، أو إضافة قاعدة واحدة إلى الجانبيّة فنجد 61.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.esp.cube-pave"]
     },
     {
       "prompt": "علبة مكعّبة حرفها 10 سم بلا غطاء. ما مساحة الورق اللازم لتغطية سطحها الخارجيّ كلّه؟\n<svg viewBox=\"0 0 360 223\"><path d=\"M97.5 187 L207.5 187 L207.5 77 L97.5 77 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M97.5 187 L207.5 187 L207.5 77 L97.5 77 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M97.5 77 L207.5 77 L262.5 22 L152.5 22 Z\" fill=\"#0f6e56\" fill-opacity=\"0.04\" stroke=\"none\"/><path d=\"M97.5 77 L207.5 77 L262.5 22 L152.5 22 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M207.5 187 L262.5 132 L262.5 22 L207.5 77 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M207.5 187 L262.5 132 L262.5 22 L207.5 77 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M97.5 187 L152.5 132\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M152.5 132 L262.5 132\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M152.5 132 L152.5 22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/></svg>",
@@ -245,7 +246,8 @@
       ],
       "correctOption": "c",
       "explanation": "العلبة المكعّبة بلا غطاء لها 5 أوجه مربّعة: الأوجه الجانبيّة الأربعة والقاع. مساحة الوجه 10 × 10 = 100 سم²، فالمساحة 5 × 100 = 500 سم². الأخطاء الشائعة: عدّ الأوجه الستّة فنجد 600، أو الجوانب الأربعة فقط فنجد 400، أو وجهًا واحدًا فنجد 100.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.esp.cube-pave"]
     }
   ]
 }

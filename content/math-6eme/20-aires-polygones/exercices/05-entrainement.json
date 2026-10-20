@@ -38,30 +38,30 @@
       "competencies": ["math.mes.aires"]
     },
     {
-      "prompt": "ما مساحةُ مربّعٍ طولُ ضلعه 8 سم؟",
+      "prompt": "رُصف فناء مربّع الشكل ضلعه 8 م بالبلاط. كم مترًا مربّعًا مساحة الفناء؟",
       "options": [
         {
           "id": "a",
-          "text": "64 سم²"
+          "text": "16 م²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
         },
         {
           "id": "b",
-          "text": "32 سم²",
+          "text": "32 م²",
           "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
         },
         {
           "id": "c",
-          "text": "16 سم²",
-          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+          "text": "64 م²"
         },
         {
           "id": "d",
-          "text": "88 سم²",
+          "text": "88 م²",
           "misconceptionTag": "math.num.chiffres-juxtaposes-au-lieu-du-produit"
         }
       ],
-      "correctOption": "a",
-      "explanation": "مساحةُ المربّع = الضلع × الضلع = 8 × 8 = 64 سم².",
+      "correctOption": "c",
+      "explanation": "مساحةُ المربّع = الضلع × الضلع = 8 × 8 = 64 م². من ضرب في 4 وجد 32 وهو المحيط، ومن جمع الضلعين وجد 16، ومن كتب العددين جنبًا إلى جنب وجد 88.",
       "difficulty": 2,
       "competencies": ["math.mes.aires"]
     },

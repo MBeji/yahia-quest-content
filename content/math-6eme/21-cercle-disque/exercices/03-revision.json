@@ -91,32 +91,31 @@
       "competencies": ["math.geo.cercle"]
     },
     {
-      "prompt": "ما محيطُ دائرةٍ قطرُها 4 سم؟ (π ≈ 3,14)",
+      "prompt": "طاولة مستديرة قطرها 1,5 م، نخيط شريطًا على حافّتها كلّها. كم مترًا من الشريط نشتري؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "12,56 سم"
-        },
-        {
-          "id": "b",
-          "text": "6,28 سم",
+          "text": "2,355 م",
           "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         },
         {
+          "id": "b",
+          "text": "4,64 م"
+        },
+        {
           "id": "c",
-          "text": "8 سم",
-          "misconceptionTag": "math.geo.facteur-pi-omis"
+          "text": "4,71 م"
         },
         {
           "id": "d",
-          "text": "25,12 سم",
+          "text": "9,42 م",
           "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
         }
       ],
-      "correctOption": "a",
-      "explanation": "المحيط = π × القطر = 3,14 × 4 = 12,56 سم.",
+      "correctOption": "c",
+      "explanation": "الشريط على الحافّة فهو محيط الدائرة: π × ق = 3,14 × 1,5 = 4,71 م. من ضرب أيضًا في 2 وجد 9,42، ومن أخذ نصف القطر 0,75 في π × ق وجد 2,355، ومن جمع 1,5 مع 3,14 وجد 4,64.",
       "difficulty": 2,
-      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
+      "competencies": ["math.geo.cercle"]
     },
     {
       "prompt": "أيّ عمليّة تعطي مساحة قرص نصف قطره 7 سم؟",

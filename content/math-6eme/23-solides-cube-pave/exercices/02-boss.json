@@ -34,29 +34,30 @@
       "competencies": ["math.esp.cube-pave"]
     },
     {
-      "prompt": "مكعّبٌ طولُ حرفه 4 سم. ما مساحتُه الجانبيّة؟",
+      "prompt": "نلصق ورقًا ملوّنًا على الجوانب الأربعة لعلبة مكعّبة حرفها 4,5 سم. كم سنتيمترًا مربّعًا من الورق نحتاج؟",
       "options": [
         {
           "id": "a",
-          "text": "64 سم²"
+          "text": "18 سم²",
+          "misconceptionTag": "math.mes.arete-non-elevee-au-carre"
         },
         {
           "id": "b",
-          "text": "96 سم²",
-          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
-        },
-        {
-          "id": "c",
-          "text": "16 سم²",
+          "text": "20,25 سم²",
           "misconceptionTag": "math.mes.solide-une-seule-face-comptee"
         },
         {
+          "id": "c",
+          "text": "81 سم²"
+        },
+        {
           "id": "d",
-          "text": "32 سم²"
+          "text": "121,5 سم²",
+          "misconceptionTag": "math.mes.cube-coefficient-quatre-et-six-echanges"
         }
       ],
-      "correctOption": "a",
-      "explanation": "الجانبيّة = 4 × (الحرف × الحرف) = 4 × (4 × 4) = 4 × 16 = 64 سم².",
+      "correctOption": "c",
+      "explanation": "الجانبيّة = 4 × (4,5 × 4,5) = 4 × 20,25 = 81 سم². من ضرب في 6 وجد 121,5، ومن حسب وجهًا واحدًا وجد 20,25، ومن نسي تربيع الحرف وجد 4 × 4,5 = 18.",
       "difficulty": 2,
       "competencies": ["math.esp.cube-pave"]
     },
@@ -93,7 +94,8 @@
       "options": [
         {
           "id": "a",
-          "text": "50 سم²"
+          "text": "50 سم²",
+          "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee"
         },
         {
           "id": "b",
@@ -101,8 +103,7 @@
         },
         {
           "id": "c",
-          "text": "120 سم²",
-          "misconceptionTag": "math.mes.volume-utilise-comme-aire"
+          "text": "120 سم²"
         },
         {
           "id": "d",
@@ -112,7 +113,8 @@
       ],
       "correctOption": "b",
       "explanation": "الجانبيّة = محيطُ القاعدة × الارتفاع = 2 × (6 + 4) × 5 = 20 × 5 = 100 سم². من ضرب الأبعاد الثلاثة وجد 120 وهو مقدار آخر لا مساحة، ومن أضاف القاعدتين وجد الجمليّة 148، ومن نسي مضاعفة (6 + 4) وجد 50.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.esp.cube-pave"]
     },
     {
       "prompt": "متوازي مستطيلاتٍ طولُه 4 سم وعرضُه 3 سم وارتفاعُه 2 سم. ما مساحتُه الجمليّة؟",
@@ -128,8 +130,7 @@
         },
         {
           "id": "c",
-          "text": "24 سم²",
-          "misconceptionTag": "math.mes.volume-utilise-comme-aire"
+          "text": "24 سم²"
         },
         {
           "id": "d",
@@ -188,7 +189,8 @@
       ],
       "correctOption": "d",
       "explanation": "في الصفّ الأفقيّ الذي يلتفّ حول النرد، يتقابل الوجهان اللذان يفصل بينهما وجه واحد. بين 2 و 5 الوجه 3، فالوجه 5 يقابل الوجه 2. أمّا 3 فمجاور له في الصفّ، و1 و6 مجاوران له أيضًا (الأوّل فوق الصفّ والثاني تحته) ويتقابلان معًا.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.esp.cube-pave"]
     },
     {
       "prompt": "أصيص على شكل متوازي مستطيلات مفتوح من الأعلى: طوله 50 سم وعرضه 30 سم وارتفاعه 40 سم. ما مساحة الصفائح اللازمة لصنعه، أي أوجهه الأربعة الجانبيّة وقاعه؟\n<svg viewBox=\"0 0 360 234\"><path d=\"M76 198 L236 198 L236 70 L76 70 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M76 198 L236 198 L236 70 L76 70 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M76 70 L236 70 L284 22 L124 22 Z\" fill=\"#0f6e56\" fill-opacity=\"0.04\" stroke=\"none\"/><path d=\"M76 70 L236 70 L284 22 L124 22 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M236 198 L284 150 L284 22 L236 70 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M236 198 L284 150 L284 22 L236 70 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M76 198 L124 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M124 150 L284 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M124 150 L124 22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"156\" y=\"218\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">50</text><text x=\"68\" y=\"139\" text-anchor=\"end\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">40</text><text x=\"276\" y=\"188\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">30</text></svg>",
@@ -215,7 +217,8 @@
       ],
       "correctOption": "c",
       "explanation": "الجانبيّة = محيط القاعدة × الارتفاع = 2 × (50 + 30) × 40 = 160 × 40 = 6 400 سم². والقاع 50 × 30 = 1 500 سم²، والأصيص مفتوح فله قاعدة واحدة: 6 400 + 1 500 = 7 900 سم². الأخطاء الشائعة: إضافة قاعدتين فنجد 9 400، أو نسيان القاع فنجد 6 400، أو عدم مضاعفة (الطول + العرض) فنجد 4 700.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.esp.cube-pave"]
     },
     {
       "prompt": "مكعّبان حرف كلّ منهما 4 سم، ألصقنا وجهًا من أحدهما بوجه من الآخر فصنعا متوازي مستطيلات. ما مساحته الجمليّة؟\n<svg viewBox=\"0 0 360 163\"><path d=\"M92.5 127 L232.5 127 L232.5 57 L92.5 57 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M92.5 127 L232.5 127 L232.5 57 L92.5 57 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M92.5 57 L232.5 57 L267.5 22 L127.5 22 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M92.5 57 L232.5 57 L267.5 22 L127.5 22 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M232.5 127 L267.5 92 L267.5 22 L232.5 57 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M232.5 127 L267.5 92 L267.5 22 L232.5 57 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M92.5 127 L127.5 92\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M127.5 92 L267.5 92\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M127.5 92 L127.5 22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M162.5 127 L162.5 57\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M162.5 57 L197.5 22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>",
@@ -241,7 +244,8 @@
       ],
       "correctOption": "c",
       "explanation": "المتوازي الناتج أبعاده 8 و4 و4. محيط قاعدته 2 × (8 + 4) = 24 والجانبيّة 24 × 4 = 96 سم²، ومساحة القاعدة 8 × 4 = 32 سم²، فالجمليّة 96 + 2 × 32 = 160 سم². الخطأ الشائع جمع جمليّتي المكعّبين 2 × 96 = 192 سم²: الوجهان الملتصقان (16 سم² لكلّ منهما) لم يعودا على سطح المجسّم.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.esp.cube-pave"]
     },
     {
       "prompt": "مكعّب مساحته الجمليّة 486 سم². ما طول حرفه؟",
@@ -266,7 +270,8 @@
       ],
       "correctOption": "a",
       "explanation": "المساحة الجمليّة = 6 × (الحرف × الحرف)، فمساحة الوجه 486 ÷ 6 = 81 سم²، والعدد الذي جداء ضربه في نفسه 81 هو 9: الحرف 9 سم. التحقّق: 6 × (9 × 9) = 486 ✓. الخطأ الشائع التوقّف عند 81 وهي مساحة الوجه، أو القسمة على 4 فنجد 121,5.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.esp.cube-pave"]
     }
   ]
 }
