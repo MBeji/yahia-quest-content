@@ -505,3 +505,115 @@ Questions à reprendre : 21/06 Q7 ; 22/06 Q6, Q8 ; 22/07 Q3 ; 22/08 Q7 ; 22/09 Q
 plus les figures de 19/07, 20/06, 20/07, 20/08, 20/09, 25/07 et le `chapter.json` du 25. Suppressions proposées : 8
 questions (22/06 Q8, 22/07 Q3, 19/06 Q2 et Q7, 19/07 Q6, 20/06 Q7, 25/07 Q5, 25/08 Q5) ; le lot passe de 177 à 169
 questions, aucune mission sous 5 questions.
+
+## Re-vérification (M3 + M4b) — 2026-10-20
+
+Périmètre : 21/06–08, 22/06–11, 25/06–10 dans leur état après la section « Corrections après audit » de `rapport-M3.md`
+et `rapport-M4b.md` ; moteur `/home/user/eng-deliver` à `e868aba` (#1181, #1182 inclus). Chaque question modifiée, ajoutée
+ou déplacée a été re-résolue. Pour toutes les missions, l'ordre d'émission (tri stable par difficulté) a été
+recalculé par script, puis chaque énoncé et chaque explication a été comparé aux clés des questions émises après.
+
+**Verdict : prêt après un correctif d'étiquettes (R-1, deux options).** La critique et tous les majeurs sont corrigés.
+Plus aucune étape ne souffle la réponse d'une question qui la suit.
+
+### Défauts du premier audit
+
+| défaut | état |
+| --- | --- |
+| C-1 22/09 Q6 | **corrigé** : « المستهلكة في التنقّل كلّه 9 ل ». J'ai re-résolu : x + 10 − 9 = 15, donc x = 14 ✓. Les explications de Q6 et Q8 sont justes |
+| M-1 21/06 Q7 | corrigé : la découpe est dans l'énoncé ; 1 × 1,5 ÷ 2 = 0,75, puis 75 ÷ 0,75 = 100 ✓ |
+| M-2 22/06 Q6 | corrigé (`duree-convertie-en-base-cent`) |
+| M-3 22/06 Q8 · M-4 22/07 Q3 | supprimées ; les questions suivantes restent autonomes (22/06 : 9 q. ; 22/07 : 9 q.) |
+| M-5 22/08 Q7 | corrigé : bus de 8 h et de 6 h 30, explication juste, longueurs 15/10/10/15 |
+| M-6 22/09 Q8 | corrigé : options a et d remplacées. La clé c n'a pas été raccourcie, mais elle mesure 41 caractères, autant que a : elle n'est pas strictement la plus longue. Phrase 18 L / 8 L juste |
+| M-7 22/11 Q7 | corrigé : plus de nombre négatif ; 12 + 15 = 27, puis 27 − 20 = 7 ✓ |
+| M-11 | 21/07 Q11 est gardée, 19/07 Q6 est supprimée (vérifié en M4a) : le doublon a disparu |
+| M-15 figure 2021 (25/07) | **corrigée**. Rendue à 360 px en page `dir=rtl` : « 628 » est dans la figure, `أ` est entier, `ز` est lisible. Les deux SVG (Q1 et Q9) sont vérifiés |
+| M-16 `25/chapter.json` | **rétabli** : les deux lignes de l'étude 36 sont présentes à l'identique |
+| M-17 25/06 | corrigé. Ordre d'émission : 61,44 → 24 → justification → 12 → م milieu → ج م = 4,8 → أ ب = 5 → périmètre. Chaque donnée redonnée (12, « م منتصف », 4,8) est la clé d'une question **antérieure** |
+| M-18 25/06 Q3, Q5 (ex-Q4, Q6) | corrigés aux textes de l'audit ; longueurs 55/58/74/**67** et 76/**61**/63/76 ; plus aucun marqueur de forme ; les explications sont justes |
+| M-19 25/07 | la question « 3140 » est supprimée ; les tours entiers (d3) sont placés après la longueur 1599 ✓ |
+| M-20 25/08 | la question du prêt est placée après le montant (338 250 × 7/10 = 236 775 ✓) ; la question du périmètre 369 est supprimée |
+
+Mineurs : 21/08 Q7 (calcul 254,34 − 27 écrit), 22/07 Q10 (« الموعدين ») et 22/10 Q7 (option « ضرب » remplacée par
+« 300 km على 6 ساعات », fausse comme il se doit) sont faits. Les mineurs laissés le sont de façon assumée.
+
+### Nouvelles étiquettes (posées par M3 et M4b après l'audit)
+
+Toutes ont été vérifiées contre leur libellé au registre (`content/misconceptions.json`, 1164 ids). Sont justes :
+`temps-d-arret-mal-compte` (22/06 Q4, Q6 ; 22/09 Q4 ; 22/11 Q4 « الجمعة على 1 سا ») ; `attente-du-prochain-depart-ignoree`
+(22/08 Q2, Q4, Q7, Q9) ; `changement-de-jour-oublie` (22/11 Q4) ; `pourcentage-base-erronee` (21/07 Q8, Q9) ;
+`arc-circonference-entiere-prise-pour-l-arc` (21/06 Q2 ; « 0,5 مرّة » relève de « une autre fraction au lieu de l'arc
+demandé ») ; `perimetre-segment-interieur-compte` (25/09 Q3, 25/10 Q3). Réserve mineure : 22/09 Q2 « 124 km » porte
+`trajet-aller-retour-ignore`, alors qu'il ignore les deux sens du détour, pas un seul. Acceptable.
+
+**R-1 · majeur : option à deux erreurs étiquetée.** Dans les grilles 2 × 2 des conversions d'échelle, l'option où les
+deux longueurs sont fausses doit rester muette, puisque le vote terme à terme est justement ce que la grille neutralise.
+Or `unites-non-converties` a été posée aussi sur elle :
+- `21-cercle-disque/exercices/07-exam-2022-p3-parc-carre-parallelogramme-secteur.json` Q10, option d `0,03 سم و 0,035 سم` : retirer `"misconceptionTag": "math.mes.unites-non-converties"` ;
+- `21-cercle-disque/exercices/08-exam-2008-p2-fontaine-losange-dans-le-disque.json` Q1, option d `900 م و 600 م` : retirer `"misconceptionTag": "math.mes.unites-non-converties"`.
+Les options a et c de ces deux questions gardent leur étiquette.
+
+### Mineur nouveau
+
+- 25/10 (figure recadrée) : le `viewBox="0 45 260 205"` coupe le bas du « 3 », dont la ligne de base est à y = 251. J'ai
+  vérifié au rendu le correctif : `viewBox="0 45 260 212"` (2 occurrences, Q4 et Q5).
+
+### Gates (rejoués)
+
+`content:check` ✓ · `content:qa --subject math-6eme` 0 erreur (5 avertissements, tous dans 14 et 16) · `content:figures:check` ✓ ·
+`content:tranche --chapters 21,22,25 --fresh --strict-longest` : clé strictement la plus longue 3/160, toutes dans
+21/02, 04 et 05 (lot B5, hors périmètre), 0 dans les missions ; 0 groupe gabarit ; les paires proches sont intra-mission ·
+`content:gisement:controle` sur 25/10 : 0 plage ≥ 8 mots, 0 ≥ 6 ; 2 données communes (sous le seuil). Aucune régression.
+
+Effectifs : 21 = 26 q. ; 22 = 49 q. ; 25 = 48 q. Clés fausses : 0.
+
+## Re-vérification (M4a) — 2026-10-20
+
+Périmètre : 19/06–07, 20/06–09 après la section « Corrections après audit » de `rapport-M4a.md`. Mêmes critères : défauts
+corrigés, remplacements re-résolus, ordre d'émission contrôlé par script, figures rendues à 360 px en page `dir=rtl`,
+gates et `content:gisement:controle` sur les deux devoirs du 19.
+
+**Verdict : prêt après un correctif d'une ligne (R-2, une explication qui souffle la clé d'une question suivante ;
+défaut déjà présent au premier audit, que j'avais manqué).**
+
+### Défauts du premier audit
+
+| défaut | état |
+| --- | --- |
+| M-8 19/06 Q2, Q7 | supprimées (5 q.) ; la hauteur inutile de Q3 (aujourd'hui Q2) est retirée, et 6 + 3 = 9 ✓ ; le doublon avec 25/09 Q9 a disparu |
+| M-11 19/07 Q6 | supprimée (6 q.) ; Q5 explique maintenant « 0,4 ; 0,3 » (÷ 100 au lieu de convertir puis ÷ 1000) ✓ |
+| M-10 20/06 | Q7 supprimée ; la Q7 actuelle (ex-Q8) porte les textes de l'audit : clé « 30 < 40 et 30 < 60 » ✓, longueurs 70/63/**63**/67, b étiquetée `condition-suffisante-supposee`, plus aucun « en haut » |
+| M-9 20/08 Q6 | corrigé : « 1 070 كغ », et l'explication « يجمع 1 000 و 70 » est juste |
+| M-14 20/09 Q6 | corrigé : `pourcentage-base-erronee` ; l'explication dit « مصاريف التهيئة والتجهيز » |
+| M-12 cotes à l'envers | **corrigé** : au rendu, « 30 م », « 40 م », « 5 سم », « 350 م », « 150 م », « 8,4 سم », « 6 سم »… s'affichent nombre à droite, unité à gauche, et se lisent donc dans le bon sens |
+| M-13 étiquettes illisibles | **corrigé** : 20/07, `ب` et `ن` dégagés, « 250 م » retiré, « 350 م » hors des repères ; 20/06, `و` et ① séparés ; 20/09, « 6 سم » à l'intérieur du trapèze. Les 8 SVG ont été rendus et relus ; aucune étiquette coupée ni barrée |
+
+Mineurs laissés (19/06 Q1, 19/07 Q4, 20/07 Q10) : laissés de façon assumée, pas d'objection.
+
+### Défaut restant
+
+**R-2 · majeur (fuite en avant) : `20-aires-polygones/exercices/07-exam-2018-p3-terrain-carre-parallelogramme-triangle.json` Q2.**
+L'explication écrit « (350 × 250) ÷ 2 = 87 500 ÷ 2 = 43750 م² ». Or 350 × 250 = 87 500 est précisément l'aire du
+parallélogramme, clé de la Q4, qui est émise plus tard et où « 87 500 م² » est une des options. Dans l'explication,
+remplacer `= (350 × 250) ÷ 2 = 87 500 ÷ 2 = 43750 م².` (avec U+00A0 dans « 87 500 ») par `= (350 × 250) ÷ 2 = 350 × 125 = 43750 م².`
+Le calcul est vérifié : 350 × 125 = 43 750. La valeur canonique 43750 reste écrite sans séparateur, donc le gate
+`content:qa` (écho de la valeur) passe toujours.
+
+Le script de fuite ne relève rien d'autre : les autres coïncidences de nombres sont des données redonnées dans
+l'énoncé ou des clés de questions antérieures.
+
+### Gates (rejoués)
+
+`content:check` ✓ · `content:qa` 0 erreur (rien dans 19 ou 20) · `content:figures:check` ✓ ·
+`content:tranche --chapters 19,20 --fresh --strict-longest` : clé strictement la plus longue 1/79, `20/05-entrainement#1`
+(lot B5, hors périmètre), paires proches 0 · `content:gisement:controle` 19/06 + 19/07 : 0 plage ≥ 8 mots, 0 ≥ 6 ;
+19/07 q5 : 2 données communes (sous le seuil). Aucune régression.
+
+Effectifs : 19/06 5 q., 19/07 6 q., 20/06 7 q., 20/07 10 q., 20/08 9 q., 20/09 9 q. Clés fausses : 0.
+
+## Bilan de la re-vérification
+
+Le lot compte 169 questions. Aucune clé fausse, la critique est levée, et tous les majeurs du premier audit sont corrigés.
+Il reste à faire, sur des textes exacts : **R-1** (retirer deux étiquettes, 21/07 Q10 d et 21/08 Q1 d), **R-2** (une
+explication, 20/07 Q2) et un mineur (`viewBox` de 25/10). Une fois ces trois retouches faites, le lot est **prêt**.
