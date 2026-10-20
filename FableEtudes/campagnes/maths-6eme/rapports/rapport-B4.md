@@ -35,3 +35,21 @@ Aucune étiquette inventée ; `misconceptions.json` non touché. **Ids proposés
 
 ## Contrôles
 `content:check` ✓ · `content:qa` 0 erreur · `content:figures:check` ✓ · `content:tranche` (16–19, `--fresh --strict-longest --strict-lessons`) : clé la plus longue 0/57, paires proches 0, patron 0 en recul · `prettier --check` ✓ · rendu `renderLesson`/`renderSummary` propre (vitest jetable supprimé).
+
+## Corrections après audit (2026-10-20)
+
+**Appliqué** (audit-B4 : 1 critique, 9 majeurs, mineurs) :
+- Critique ch.18 quiz Q2 : 4-4-4, « ما اسمه الأدقّ ».
+- Ch.19 : `retenir` du § 🧾 reformulé (zéro ambiguïté « متوازيان أو متساويان »), piège § ✖️ corrigé (le contre-exemple « قطران متعامدان غير متقايسين » ne désignait pas le معيّن : remplacé par « قطراه متقايسان → مستطيل »), `02-boss` Q5.
+- Questions qui redonnent le cours : nombres du cours changés (cercle de rayon 5 et 60° ; معيّن de 20 cm ; tableau des périmètres sous forme de calculs ; معيّن de 6,5 cm) pour les 9 cas à reprise gardée ; ailleurs variante écrite et item retiré de `manuel.items` (17-03, 18-01, 19-04 sans L56).
+- Clés repérables et distracteurs de remplissage rééquilibrés ; options muettes là où aucun id d'étiquette n'existait.
+- Quiz ch.18 Q4 remplacé (inégalité sans le nom) ; 16-05 Q5 en situation (carte de quartier) ; virgules arabes retirées en 18-03 Q4.
+- Contrôles : `content:check` OK, `content:qa` 0 erreur sur 16–19 (restent 2 avertissements « (ج)/(د) » : ce sont des NOMS de droites, pas des lettres d'option), figures OK, prettier OK, rendu vitest OK, clé la plus longue 11 % (aucune strictement plus longue forcée), `content:tranche` sans `--fresh` : paires proches internes 27 -> 3.
+
+**Paires proches restantes, justifiées** (même savoir-faire, autres données) : 16-04#3 ↔ 16-04#4 et 16-02#4 ↔ 16-04#3 (chaînes de transitivité distinctes, même vocabulaire de droites) ; 18-quiz#2 ↔ 18-01#4 (équilatéral vs scalène).
+
+**Écarté / toléré** : mineurs de calibration (m16-5, m17-2), m19-1, m19-2, m19-5, m18-4 laissés tels quels. Positions de clé encore a/b-lourdes (32/32/21/15 %) : non bloquant. 16-05 Q4 b « الكوس وحده » appliqué comme demandé bien qu'il contredise la prémisse de l'énoncé.
+
+**Ids d'étiquettes proposés (non créés)** : `math.geo.mediatrice-un-seul-critere`, `math.geo.arcs-ouvertures-permutees`, `math.geo.compas-ouverture-trop-petite`, `math.geo.rapporteur-mauvaise-graduation`, `math.geo.grade-et-degre-confondus`.
+
+**Hors de mon périmètre signalé** : erreurs `content:qa` existantes en 19-06 (M4a) et ch.21 (espaces insécables).

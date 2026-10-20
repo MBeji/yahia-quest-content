@@ -32,40 +32,36 @@
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "كم يساوي نصفُ الزاوية المستقيمة (180°)؟",
+      "prompt": "زاوية منفرجة رسمنا منصّفها. ما نوع كلّ من الزاويتين الناتجتين؟",
       "options": [
-        { "id": "a", "text": "90°" },
-        {
-          "id": "b",
-          "text": "45°",
-          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
-        },
-        {
-          "id": "c",
-          "text": "360°",
-          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
-        },
-        {
-          "id": "d",
-          "text": "60°",
-          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
-        }
+        { "id": "a", "text": "حادّة" },
+        { "id": "b", "text": "قائمة" },
+        { "id": "c", "text": "منفرجة" },
+        { "id": "d", "text": "حادّة أو منفرجة حسب قيسها" }
       ],
       "correctOption": "a",
-      "explanation": "نصفُ الزاوية المستقيمة = 180° ÷ 2 = 90° (زاويةٌ قائمة).",
+      "explanation": "المنفرجة أكبر من 90° وأصغر من 180°، فنصفها أكبر من 90 ÷ 2 = 45° وأصغر من 180 ÷ 2 = 90°. كلّ زاوية ناتجة أصغر من 90°: حادّة. مثلًا منصّف 170° يعطي 85°.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "زاويتان متكاملتان (مجموعُهما 180°)، إحداهما 65°. ما قيسُ الأخرى؟",
+      "prompt": "زاويتان متتامّتان (مجموعهما 90°)، إحداهما 35°. ما قيس الأخرى؟",
       "options": [
-        { "id": "a", "text": "125°" },
-        { "id": "b", "text": "115°" },
-        { "id": "c", "text": "25°" },
-        { "id": "d", "text": "95°" }
+        {
+          "id": "a",
+          "text": "145°",
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
+        },
+        { "id": "b", "text": "55°" },
+        { "id": "c", "text": "65°" },
+        {
+          "id": "d",
+          "text": "325°",
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
+        }
       ],
       "correctOption": "b",
-      "explanation": "الأخرى = 180° − 65° = 115°.",
+      "explanation": "المتتامّتان مجموعهما 90°: الأخرى = 90° − 35° = 55°. من وجد 145° طرح من 180 كأنّهما متكاملتان، ومن وجد 325° طرح من 360.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
@@ -74,7 +70,7 @@
       "options": [
         {
           "id": "a",
-          "text": "منفرجة، 150°",
+          "text": "منفرجة، 160°",
           "misconceptionTag": "math.geo.type-d-angle-confondu"
         },
         { "id": "b", "text": "حادّة، 30°" },
@@ -83,14 +79,10 @@
           "text": "قائمة، 90°",
           "misconceptionTag": "math.geo.type-d-angle-confondu"
         },
-        {
-          "id": "d",
-          "text": "مستقيمة، 180°",
-          "misconceptionTag": "math.geo.type-d-angle-confondu"
-        }
+        { "id": "d", "text": "حادّة، 80°" }
       ],
       "correctOption": "b",
-      "explanation": "الفتحةُ صغيرة (أقلّ من 90°)، فالزاوية حادّة وقيسُها قريبٌ من 30°.",
+      "explanation": "الفتحة أضيق بوضوح من نصف القائمة (45°)، فالزاوية حادّة وقيسها قريب من 30° لا من 80°: زاوية 80° تكاد تكون قائمة.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
@@ -106,11 +98,11 @@
     },
     {
       "type": "numeric",
-      "prompt": "تذكير: 90° = 100 غراد. ما قيس زاوية 150 غراد بالدرجة؟",
+      "prompt": "زاويتان متجاورتان: الأولى قيسها 100 غراد والثانية قيسها 50°. ما قيس الزاوية التي تضمّهما، بالدرجة؟",
       "answerKey": {
-        "value": 135
+        "value": 140
       },
-      "explanation": "150 غراد = 100 غراد + 50 غراد. 100 غراد تساوي 90°، و50 غراد نصفها، أي 90 ÷ 2 = 45°. إذن 150 غراد = 90° + 45° = 135°، وهي زاوية منفرجة.",
+      "explanation": "100 غراد = 90°. نجمع القيسين بالوحدة نفسها: 90° + 50° = 140°. من جمع 100 + 50 = 150 خلط الغراد بالدرجة.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
@@ -118,14 +110,14 @@
       "type": "matching",
       "prompt": "صِل كلّ قيس بطريقة بنائه بالمسطرة والفرجار.",
       "options": [
-        { "id": "l1", "text": "15°" },
-        { "id": "l2", "text": "45°" },
-        { "id": "l3", "text": "75°" },
-        { "id": "l4", "text": "150°" },
-        { "id": "r1", "text": "30° ÷ 2" },
-        { "id": "r2", "text": "90° ÷ 2" },
-        { "id": "r3", "text": "60° + 15°" },
-        { "id": "r4", "text": "90° + 60°" }
+        { "id": "l1", "text": "22,5°" },
+        { "id": "l2", "text": "90°" },
+        { "id": "l3", "text": "45°" },
+        { "id": "l4", "text": "135°" },
+        { "id": "r1", "text": "45° ÷ 2" },
+        { "id": "r2", "text": "180° ÷ 2" },
+        { "id": "r3", "text": "15° + 30°" },
+        { "id": "r4", "text": "180° − 45°" }
       ],
       "answerKey": {
         "pairs": [
@@ -135,7 +127,7 @@
           ["l4", "r4"]
         ]
       },
-      "explanation": "15° هي نصف 30° وهذه نصف 60°. 45° هي نصف القائمة 90°. 75° تجمع زاوية 60° المبنيّة بالفرجار وزاوية 15° المجاورة لها. 150° تجمع قائمة مبنيّة بالكوس وزاوية 60° المجاورة لها.",
+      "explanation": "45° ÷ 2 = 22,5°: منصّف نصف القائمة. 180° ÷ 2 = 90°: منصّف الزاوية المستقيمة قائمة. 15° + 30° = 45°: زاويتان متجاورتان نجمع قيسيهما، طريقة ثانية لبناء 45°. 180° − 45° = 135°: المجاورة لزاوية 45° على مستقيم، لأنّ المتجاورتين على مستقيم مجموعهما 180°.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
@@ -158,6 +150,6 @@
   ],
   "manuel": {
     "code": "102609",
-    "items": ["L4 ex. 4", "L7 ex. 6", "L7 ex. 7"]
+    "items": ["L4 ex. 4", "L7 ex. 7"]
   }
 }

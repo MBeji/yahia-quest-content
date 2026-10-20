@@ -20,7 +20,7 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "مثلّثٌ أطوالُ أضلاعه 7 سم، 7 سم، 10 سم. نوعُه:",
+      "prompt": "في المثلّث أ‌ب‌ج: أ‌ب = 7 سم و ب‌ج = 10 سم، ومحيطه 24 سم. ما نوعه حسب أضلاعه؟",
       "options": [
         { "id": "a", "text": "متساوي الساقين" },
         {
@@ -33,10 +33,14 @@
           "text": "مختلف الأضلاع",
           "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
         },
-        { "id": "d", "text": "بلا تصنيف" }
+        {
+          "id": "d",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        }
       ],
       "correctOption": "a",
-      "explanation": "له ضلعان متساويان (7 و7) والثالث مختلف (10)، فهو متساوي الساقين.",
+      "explanation": "الضلع الثالث أ‌ج = 24 − 7 − 10 = 7 سم. الأطوال 7 و10 و7: ضلعان فقط متساويان (أ‌ب = أ‌ج = 7 سم)، فهو متساوي الساقين، قمّته الرئيسيّة أ وقاعدته [ب‌ج] = 10 سم.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     },
@@ -57,7 +61,7 @@
         {
           "id": "d",
           "text": "قائم الزاوية ومتساوي الأضلاع",
-          "misconceptionTag": "math.geo.classements-triangle-melanges"
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
         }
       ],
       "correctOption": "c",
@@ -91,40 +95,44 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "قسّمت السيّدة نور كعكة مربّعة إلى 8 قطع متقايسة بالقطرين وبمستقيمين يمرّان بالمركز ويوازيان ضلعي المربّع. ما نوع كلّ قطعة؟ <svg viewBox=\"0 0 100 100\"><path d=\"M12 12 L50 12 L50 50 Z\" fill=\"#0f6e56\" opacity=\"0.25\"/><polygon points=\"12,12 88,12 88,88 12,88\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"12\" y1=\"12\" x2=\"88\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"88\" y1=\"12\" x2=\"12\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"50\" y1=\"12\" x2=\"50\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"12\" y1=\"50\" x2=\"88\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg>",
+      "prompt": "قطعت السيّدة نور كعكة مستطيلة (ليست مربّعة) بخطّ مستقيم من ركن إلى الركن المقابل، فصارت قطعتين مثلّثتين متقايستين. ما نوع كلّ قطعة؟ <svg viewBox=\"0 0 100 100\"><path d=\"M8 24 L92 24 L92 76 Z\" fill=\"#0f6e56\" opacity=\"0.25\"/><polygon points=\"8,24 92,24 92,76 8,76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"8\" y1=\"24\" x2=\"92\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.8\"/><polyline points=\"84,24 84,32 92,32\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        {
-          "id": "a",
-          "text": "قائم الزاوية ومتساوي الأضلاع",
-          "misconceptionTag": "math.geo.classements-triangle-melanges"
-        },
+        { "id": "a", "text": "قائم الزاوية ومختلف الأضلاع" },
         {
           "id": "b",
-          "text": "حادّ الزوايا ومتساوي الساقين",
-          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+          "text": "قائم الزاوية ومتساوي الساقين",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
         },
         {
           "id": "c",
-          "text": "منفرج الزاوية ومتساوي الساقين",
+          "text": "حادّ الزوايا ومختلف الأضلاع",
           "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
         },
-        { "id": "d", "text": "قائم الزاوية ومتساوي الساقين" }
+        {
+          "id": "d",
+          "text": "منفرج الزاوية ومختلف الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        }
       ],
-      "correctOption": "d",
-      "explanation": "القطع الثماني متقايسة. في كلّ قطعة زاوية قائمة عند منتصف ضلع من المربّع، وضلعاها القائمان نصفا ضلع المربّع فهما متساويان: القطعة قائمة الزاوية ومتساوية الساقين. أمّا متساوية الأضلاع فلا، لأنّ وترها أطول من ساقيها.",
+      "correctOption": "a",
+      "explanation": "زاوية المستطيل قائمة، فالقطعة قائمة الزاوية عند ركنه. ضلعاها القائمان طول المستطيل وعرضه، وهما غير متساويين، والضلع الثالث، خطّ القطع، أطول منهما: لا زوج متساوٍ، فهي مختلفة الأضلاع. في المربّع وحده يتساوى الضلعان القائمان.",
       "difficulty": 3,
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "كم زاويةً قائمةً يمكن أن توجد في مثلّثٍ واحدٍ على الأكثر؟",
+      "prompt": "مثلّث قيس إحدى زواياه 100°. ما نوعه حسب زواياه، وما نوع زاويتيه الأخريين؟",
       "options": [
-        { "id": "a", "text": "2" },
-        { "id": "b", "text": "3" },
-        { "id": "c", "text": "0" },
-        { "id": "d", "text": "1" }
+        { "id": "a", "text": "منفرج الزاوية، وزاويتاه الأخريان حادّتان" },
+        { "id": "b", "text": "منفرج الزاوية، وإحدى زاويتيه الأخريين قائمة" },
+        {
+          "id": "c",
+          "text": "حادّ الزوايا، لأنّ فيه زاويتين حادّتين",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        },
+        { "id": "d", "text": "منفرج الزاوية، وزاويتاه الأخريان منفرجتان" }
       ],
-      "correctOption": "d",
-      "explanation": "أكثر ما يمكن أن يضمّ المثلّث زاوية قائمة واحدة (1) لا اثنتين: لو كانت الزاويتان عند طرفي الضلع [أب] قائمتين لكان الضلعان العموديّان على [أب] متوازيين فلا يلتقيان، فلا يوجد رأس ثالث.",
+      "correctOption": "a",
+      "explanation": "أكبر زاوية 100°، وهي منفرجة، فالمثلّث منفرج الزاوية. وفي المثلّث زاوية واحدة على الأكثر ليست حادّة، فالزاويتان الأخريان حادّتان: لو كانت إحداهما قائمة أو منفرجة لمال ضلعاها بعيدًا ولم يلتقيا.",
       "difficulty": 3,
       "competencies": ["math.geo.triangles-base"]
     },
@@ -138,11 +146,7 @@
           "text": "متساوي الأضلاع",
           "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
         },
-        {
-          "id": "d",
-          "text": "قائم الزاوية في أ",
-          "misconceptionTag": "math.geo.classements-triangle-melanges"
-        }
+        { "id": "d", "text": "قائم الزاوية في أ" }
       ],
       "correctOption": "a",
       "explanation": "ب نقطة من الموسّط العمودي لـ [أ‌ع]، فتبعد عن أ وعن ع البعد نفسه: بع = بأ = 6 سم. فللمثلّث ع‌أ‌ب ضلعان متساويان يلتقيان في الرأس ب، وهو متساوي الساقين رأسه ب؛ أمّا الضلع [أ‌ع] فأطول من 6 سم، فليس متساوي الأضلاع.",
@@ -151,20 +155,23 @@
     },
     {
       "type": "ordering",
-      "prompt": "رتّب مراحل بناء مثلّث د‌ق‌ن قائم ومتساوي الساقين وتره [ق‌ن] = 6 سم.",
+      "prompt": "رتّب مراحل بناء مثلّث م‌ن‌ر فيه م‌ن = 7 سم و م‌ر = 4 سم وقيس الزاوية ن‌م‌ر = 50°.",
       "options": [
-        { "id": "a", "text": "نرسم الوتر [ق‌ن] = 6 سم بالمسطرة" },
+        { "id": "a", "text": "نرسم [م‌ن] = 7 سم بالمسطرة" },
         {
           "id": "b",
-          "text": "نبني زاوية 45° عند ق وزاوية 45° عند ن في الجهة نفسها"
+          "text": "نضع مركز المنقلة على م وصفرها على [م‌ن] ونعلّم 50"
         },
-        { "id": "c", "text": "نعلّم د عند التقاء الضلعين الجديدين" },
-        { "id": "d", "text": "نتحقّق بالكوس أنّ الزاوية عند د قائمة" }
+        {
+          "id": "c",
+          "text": "نرسم نصف مستقيم من م يمرّ بالعلامة ونقيس عليه م‌ر = 4 سم"
+        },
+        { "id": "d", "text": "نصل ر بـ ن بالمسطرة" }
       ],
       "answerKey": {
         "order": ["a", "b", "c", "d"]
       },
-      "explanation": "نبدأ بالضلع المعلوم، وهو الوتر. ثمّ نبني زاويتي الوتر (نصف المربّع زاويتاه عند الوتر 45°)، فتحدّد الأضلاع الجديدة موقع الرأس الثالث د. وفي الأخير نتحقّق من الزاوية القائمة عند د.",
+      "explanation": "نبدأ بضلع معلوم، ثمّ نرسم الزاوية المعلومة عند الرأس المشترك م، فنقيس عليها الضلع الثاني، وفي الأخير نصل طرفي الضلعين: الضلع الثالث لا يحتاج إلى قياس.",
       "difficulty": 3,
       "competencies": ["math.geo.triangles-base"]
     }
@@ -172,6 +179,6 @@
   "manuel": {
     "code": "102609",
     "pages": "24-26",
-    "items": ["L8 ex. 8", "L8 ex. 9", "L8 ex. 11"]
+    "items": ["L8 ex. 11"]
   }
 }

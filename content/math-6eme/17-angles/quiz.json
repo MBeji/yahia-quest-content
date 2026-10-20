@@ -4,10 +4,10 @@
     {
       "prompt": "ممّ تتكوّن الزاوية؟",
       "options": [
-        { "id": "a", "text": "من نصفَي مستقيم لهما رأسٌ مشترك" },
-        { "id": "b", "text": "من مستقيمين متوازيين" },
-        { "id": "c", "text": "من نقطةٍ واحدة" },
-        { "id": "d", "text": "من دائرة" }
+        { "id": "a", "text": "من نصفَي مستقيم لهما المبدأ نفسه" },
+        { "id": "b", "text": "من نصفَي مستقيم متوازيين" },
+        { "id": "c", "text": "من قطعتين لا تلتقيان" },
+        { "id": "d", "text": "من مستقيم ونقطة خارجه" }
       ],
       "correctOption": "a",
       "explanation": "الزاويةُ تتكوّن من نصفَي مستقيم (ضلعين) لهما رأسٌ مشترك هو رأسُ الزاوية.",
@@ -23,11 +23,7 @@
           "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
         },
         { "id": "b", "text": "90°" },
-        {
-          "id": "c",
-          "text": "45°",
-          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
-        },
+        { "id": "c", "text": "45°" },
         {
           "id": "d",
           "text": "100°",
@@ -65,32 +61,36 @@
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "منصّف زاوية قيسها 80° يقسمها إلى زاويتين، قيس كلّ منهما:",
+      "prompt": "منصّف زاوية قيسها 140° يقسمها إلى زاويتين، قيس كلّ منهما:",
       "options": [
-        { "id": "a", "text": "160°" },
-        { "id": "b", "text": "20°" },
-        { "id": "c", "text": "40°" },
-        { "id": "d", "text": "80°" }
+        {
+          "id": "a",
+          "text": "280°",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        { "id": "b", "text": "40°" },
+        { "id": "c", "text": "70°" },
+        { "id": "d", "text": "140°" }
       ],
       "correctOption": "c",
-      "explanation": "المنصّف يقسم الزاوية نصفين متقايسين: 80° ÷ 2 = 40°. فكلّ زاوية ناتجة قيسها 40°.",
+      "explanation": "المنصّف يقسم الزاوية نصفين متقايسين: 140° ÷ 2 = 70°. من كتب 280° ضرب في 2 بدل القسمة.",
       "difficulty": 2,
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "زاويتان متجاورتان قيساهما 50° و 80°. ما قيس الزاوية التي تضمّهما معًا؟",
+      "prompt": "زاويتان متجاورتان قيساهما 70° و 45°. ما قيس الزاوية التي تضمّهما معًا؟",
       "options": [
-        { "id": "a", "text": "90°" },
-        { "id": "b", "text": "180°" },
         {
-          "id": "c",
-          "text": "30°",
+          "id": "a",
+          "text": "25°",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
-        { "id": "d", "text": "130°" }
+        { "id": "b", "text": "90°" },
+        { "id": "c", "text": "115°" },
+        { "id": "d", "text": "180°" }
       ],
-      "correctOption": "d",
-      "explanation": "الزاوية الكلّيّة تتكوّن من الزاويتين معًا، فقيسها مجموع القيسين: 50° + 80° = 130°. أمّا الطرح فيعطي الفرق بين الزاويتين لا الزاوية التي تضمّهما.",
+      "correctOption": "c",
+      "explanation": "الزاوية الكلّيّة تتكوّن من الزاويتين معًا، فقيسها مجموع القيسين: 70° + 45° = 115°. أمّا الطرح 70 − 45 = 25 فيعطي الفرق بين الزاويتين لا الزاوية التي تضمّهما.",
       "difficulty": 2,
       "competencies": ["math.geo.angles-mesure"]
     }

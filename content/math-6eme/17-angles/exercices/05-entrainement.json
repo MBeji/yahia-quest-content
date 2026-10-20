@@ -7,27 +7,27 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "ما نوعُ هذه الزاوية؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"95\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"50\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"50\" y=\"72\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><circle cx=\"50\" cy=\"82\" r=\"2.5\" fill=\"currentColor\"/></svg>",
+      "prompt": "أيُّ قيسٍ من الآتي لزاويةٍ حادّة؟",
       "options": [
         {
           "id": "a",
-          "text": "حادّة",
+          "text": "95°",
           "misconceptionTag": "math.geo.type-d-angle-confondu"
         },
-        { "id": "b", "text": "قائمة" },
+        { "id": "b", "text": "85°" },
         {
           "id": "c",
-          "text": "منفرجة",
+          "text": "90°",
           "misconceptionTag": "math.geo.type-d-angle-confondu"
         },
         {
           "id": "d",
-          "text": "مستقيمة",
+          "text": "180°",
           "misconceptionTag": "math.geo.type-d-angle-confondu"
         }
       ],
       "correctOption": "b",
-      "explanation": "المربّعُ الصغير عند الرأس علامةُ الزاوية القائمة (90°).",
+      "explanation": "الحادّة أصغر من 90°: من بين الأقيسة لا يحقّق ذلك إلّا 85°. 90° قائمة، و95° منفرجة، و180° مستقيمة.",
       "difficulty": 1,
       "competencies": ["math.geo.angles-mesure"]
     },
@@ -83,19 +83,19 @@
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "زاويتان متجاورتان قيسُهما 35° و 55°. ما قيسُ الزاوية الكلّية الناتجة؟",
+      "prompt": "زاويتان متجاورتان قيسُهما 65° و 25°. ما قيسُ الزاوية الكلّية الناتجة؟",
       "options": [
         { "id": "a", "text": "90°" },
         {
           "id": "b",
-          "text": "20°",
+          "text": "40°",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         { "id": "c", "text": "80°" },
         { "id": "d", "text": "100°" }
       ],
       "correctOption": "a",
-      "explanation": "نجمع قيسَي الزاويتين المتجاورتين: 35° + 55° = 90° (زاويةٌ قائمة).",
+      "explanation": "نجمع قيسَي الزاويتين المتجاورتين: 65° + 25° = 90°، زاوية قائمة. الطرح 65 − 25 = 40 يعطي الفرق لا الزاوية الكلّية.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },

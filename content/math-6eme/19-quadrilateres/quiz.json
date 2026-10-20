@@ -61,40 +61,45 @@
       "competencies": ["math.geo.quadrilateres"]
     },
     {
-      "prompt": "ما محيط مستطيل طوله 9 سم وعرضه 4 سم؟",
+      "prompt": "ما محيط مستطيل طوله 11 سم وعرضه 4 سم؟",
       "options": [
         {
           "id": "a",
-          "text": "13 سم",
+          "text": "15 سم",
           "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee"
         },
-        { "id": "b", "text": "18 سم" },
-        { "id": "c", "text": "26 سم" },
-        { "id": "d", "text": "36 سم" }
+        {
+          "id": "b",
+          "text": "44 سم",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        { "id": "c", "text": "30 سم" },
+        { "id": "d", "text": "19 سم" }
       ],
       "correctOption": "c",
-      "explanation": "للمستطيل طولان وعرضان: المحيط = 2 × (9 + 4) = 2 × 13 = 26 سم. فمن كتب 13 سم حسب نصف الدورة فقط.",
+      "explanation": "للمستطيل طولان وعرضان: المحيط = 2 × (11 + 4) = 2 × 15 = 30 سم. من كتب 15 سم حسب نصف الدورة، ومن كتب 44 سم ضرب الطول في العرض فحسب المساحة.",
       "difficulty": 2,
       "competencies": ["math.geo.quadrilateres", "math.mes.perimetres"]
     },
     {
       "prompt": "ما الفرقُ بين متوازي الأضلاع وشبه المنحرف؟",
       "options": [
-        { "id": "a", "text": "لا فرق" },
+        {
+          "id": "a",
+          "text": "لمتوازي الأضلاع زوجٌ واحد، ولشبه المنحرف زوجان",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
         {
           "id": "b",
-          "text": "شبه المنحرف له زوجان متوازيان",
+          "text": "لكلٍّ منهما زوجان من الأضلاع المتوازية",
           "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
         },
         {
           "id": "c",
-          "text": "متوازي الأضلاع بلا توازٍ",
+          "text": "لكلٍّ منهما زوجٌ واحد من الأضلاع المتوازية",
           "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
         },
-        {
-          "id": "d",
-          "text": "متوازي الأضلاع له زوجان متوازيان وشبه المنحرف زوجٌ واحد"
-        }
+        { "id": "d", "text": "لمتوازي الأضلاع زوجان، ولشبه المنحرف زوجٌ واحد" }
       ],
       "correctOption": "d",
       "explanation": "متوازي الأضلاع له زوجان من الأضلاع المتوازية، بينما شبه المنحرف له زوجٌ واحدٌ فقط.",

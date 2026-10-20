@@ -20,15 +20,19 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "ما محيط مثلّث أضلاعه 3 سم و4 سم و5 سم؟",
+      "prompt": "ما محيط مثلّث أضلاعه 4 سم و5 سم و6 سم؟",
       "options": [
-        { "id": "a", "text": "7 سم" },
-        { "id": "b", "text": "12 سم" },
-        { "id": "c", "text": "15 سم" },
-        { "id": "d", "text": "60 سم" }
+        { "id": "a", "text": "9 سم" },
+        { "id": "b", "text": "15 سم" },
+        { "id": "c", "text": "20 سم" },
+        {
+          "id": "d",
+          "text": "120 سم",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
       "correctOption": "b",
-      "explanation": "المحيط مجموع الأضلاع الثلاثة: 3 + 4 + 5 = 12 سم. فمن كتب 7 سم نسي ضلعًا، ومن كتب 60 سم ضرب بدل أن يجمع.",
+      "explanation": "المحيط مجموع الأضلاع الثلاثة: 4 + 5 + 6 = 15 سم. من كتب 9 سم نسي ضلعًا، ومن كتب 120 سم ضرب بدل أن يجمع.",
       "difficulty": 1,
       "competencies": ["math.geo.triangles-base", "math.mes.perimetres"]
     },
@@ -121,45 +125,40 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "نريد بناء مثلّث ق‌ع‌ن فيه ع‌ق = 5 سم و ع‌ن = 4 سم وقيس الزاوية ق‌ع‌ن = 75°. عند أيّ رأس نرسم الزاوية 75°؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"25,80 82.5,80 36.9,35.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"19\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ع</text><text x=\"86.5\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ق</text><text x=\"31.9\" y=\"32.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ن</text><text x=\"54\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text><text x=\"20\" y=\"58\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text></svg>",
+      "prompt": "نريد بناء مثلّث ر‌م‌ل فيه م‌ر = 6 سم و م‌ل = 5 سم وقيس الزاوية ر‌م‌ل = 70°. عند أيّ رأس نرسم الزاوية 70°؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"25,80 82.5,80 36.9,35.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"19\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">م</text><text x=\"86.5\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ر</text><text x=\"31.9\" y=\"32.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ل</text><text x=\"54\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><text x=\"20\" y=\"58\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text></svg>",
       "options": [
-        { "id": "a", "text": "عند الرأس ن" },
-        { "id": "b", "text": "عند منتصف [ق‌ن]" },
-        { "id": "c", "text": "عند الرأس ق" },
-        { "id": "d", "text": "عند الرأس ع" }
+        { "id": "a", "text": "عند الرأس ل" },
+        { "id": "b", "text": "عند منتصف [ر‌ل]" },
+        { "id": "c", "text": "عند الرأس ر" },
+        { "id": "d", "text": "عند الرأس م" }
       ],
       "correctOption": "d",
-      "explanation": "الزاوية المعلومة هي الزاوية ق‌ع‌ن، ورأسها حرفها الأوسط ع، وهو الرأس المشترك بين الضلعين المعلومين. لو رسمنا 75° عند ق أو عند ن لحصلنا على مثلّث آخر.",
+      "explanation": "الزاوية المعلومة هي ر‌م‌ل، ورأسها حرفها الأوسط م، وهو الرأس المشترك بين الضلعين المعلومين [م‌ر] و[م‌ل]. لو رسمنا 70° عند ر أو عند ل لحصلنا على مثلّث آخر.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     },
     {
       "type": "numeric",
-      "prompt": "أراد هالة بناء مثلّث متساوي الأضلاع محيطه 18 سم. ما طول ضلعه بالسنتيمتر؟",
+      "prompt": "بنى سامي مثلّثًا متساوي الأضلاع محيطه 21 سم. ما طول ضلعه بالسنتيمتر؟",
       "answerKey": {
-        "value": 6
+        "value": 7
       },
-      "explanation": "الأضلاع الثلاثة متساوية، فالضلع = المحيط ÷ 3 = 18 ÷ 3 = 6 سم؛ ونتحقّق: 6 + 6 + 6 = 18.",
+      "explanation": "الأضلاع الثلاثة متساوية، فالضلع = المحيط ÷ 3 = 21 ÷ 3 = 7 سم؛ ونتحقّق: 7 + 7 + 7 = 21.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base", "math.mes.perimetres"]
     },
     {
-      "prompt": "مثلّث ك‌ن‌د فيه ن‌د = 8 سم وقيس الزاوية ك‌ن‌د = 45° وقيس الزاوية ك‌د‌ن = 60°. عند أيّ رأسين نرسم الزاويتين بالمنقلة بعد رسم [ن‌د]؟",
+      "prompt": "مثلّث ط‌ر‌م فيه ر‌م = 7 سم، وقيس الزاوية ط‌ر‌م = 30° وقيس الزاوية ط‌م‌ر = 70°. عند أيّ رأسين نرسم الزاويتين بالمنقلة بعد رسم [ر‌م]؟",
       "options": [
-        { "id": "a", "text": "عند الرأسين ن و د" },
-        { "id": "b", "text": "عند الرأسين ك و د" },
-        { "id": "c", "text": "عند الرأس ك وحده" },
-        { "id": "d", "text": "عند الرأسين ك و ن" }
+        { "id": "a", "text": "عند الرأسين ر و م" },
+        { "id": "b", "text": "عند الرأسين ط و م" },
+        { "id": "c", "text": "عند الرأس ط وحده" },
+        { "id": "d", "text": "عند الرأسين ط و ر" }
       ],
       "correctOption": "a",
-      "explanation": "الضلع المعلوم هو [ن‌د]، والزاويتان المعلومتان رأساهما ن وَ د: الحرف الأوسط في ك‌ن‌د هو ن، وفي ك‌د‌ن هو د. فنرسم 45° عند ن و60° عند د في الجهة نفسها، ويلتقي الضلعان الجديدان في الرأس ك.",
+      "explanation": "الضلع المعلوم هو [ر‌م]، والزاويتان المعلومتان رأساهما ر وَ م: الحرف الأوسط في ط‌ر‌م هو ر، وفي ط‌م‌ر هو م. فنرسم 30° عند ر و70° عند م في الجهة نفسها، ويلتقي الضلعان الجديدان في الرأس ط.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     }
-  ],
-  "manuel": {
-    "code": "102609",
-    "pages": "24-26",
-    "items": ["L8 ex. 4", "L8 ex. 6", "L8 ex. 7"]
-  }
+  ]
 }

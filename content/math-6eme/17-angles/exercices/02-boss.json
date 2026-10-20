@@ -7,28 +7,13 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "ما نوعُ هذه الزاوية؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"95\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"50\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"50\" y=\"72\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><circle cx=\"50\" cy=\"82\" r=\"2.5\" fill=\"currentColor\"/></svg>",
-      "options": [
-        {
-          "id": "a",
-          "text": "حادّة",
-          "misconceptionTag": "math.geo.type-d-angle-confondu"
-        },
-        { "id": "b", "text": "قائمة" },
-        {
-          "id": "c",
-          "text": "منفرجة",
-          "misconceptionTag": "math.geo.type-d-angle-confondu"
-        },
-        {
-          "id": "d",
-          "text": "مستقيمة",
-          "misconceptionTag": "math.geo.type-d-angle-confondu"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "المربّعُ الصغير عند الرأس علامةُ الزاوية القائمة (90°).",
-      "difficulty": 1,
+      "type": "numeric",
+      "prompt": "من بين الأقيسة 30° و90° و89° و120°، كم قيسًا لزاويةٍ حادّة؟",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "الحادّة أصغر من 90°: 30° و 89° فقط. أمّا 90° فقائمة و120° منفرجة. العدد 2.",
+      "difficulty": 2,
       "competencies": ["math.geo.angles-mesure"]
     },
     {
@@ -70,80 +55,68 @@
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "زاويةٌ قيسُها 70° وأخرى قيسُها 110°. أيّهما أكبر؟",
+      "prompt": "زاويةٌ قيسُها 95° ضلعاها قصيران، وزاويةٌ قائمة ضلعاها طويلان. أيّهما أكبر؟",
       "options": [
-        { "id": "a", "text": "زاوية 70°" },
-        { "id": "b", "text": "زاوية 110°" },
+        { "id": "a", "text": "زاوية 95°" },
+        { "id": "b", "text": "الزاوية القائمة" },
         { "id": "c", "text": "متساويتان" },
         { "id": "d", "text": "لا يمكن المقارنة" }
       ],
-      "correctOption": "b",
-      "explanation": "الزاويةُ الأكبرُ قيسًا هي 110° (لأنّ 110 > 70)، بغضّ النظر عن طول الضلعين.",
+      "correctOption": "a",
+      "explanation": "نقارن القيسين وحدهما: 95 > 90، فالزاوية التي قيسها 95° أكبر. طول الضلعين لا يدخل في القيس.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "في الشكل: قيس الزاوية [أج، أد] = 50°، وقيس الزاوية [أد، أب] = 80°. رسمنا [أس) منصّف الزاوية [أد، أب]. ما نوع الزاوية [أج، أس]؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"92\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"83.4\" y2=\"42.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"16.6\" y2=\"42.2\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M66 82 A16 16 0 0 0 60.3 69.7\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><path d=\"M64.1 65.1 A22 22 0 0 0 35.9 65.1\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><text x=\"50\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"97\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ج</text><text x=\"89.4\" y=\"39.2\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">د</text><text x=\"10.6\" y=\"39.2\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text></svg>",
+      "prompt": "في الشكل: قيس الزاوية [أج، أد] = 40°، وقيس الزاوية [أد، أب] = 120°. رسمنا [أس) منصّف الزاوية [أد، أب]. ما نوع الزاوية [أج، أس]؟ <svg viewBox=\"0 0 100 100\"><line x1=\"50\" y1=\"82\" x2=\"92\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"89.8\" y2=\"48.6\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"82\" x2=\"12.4\" y2=\"68.3\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M66 82 A16 16 0 0 0 62.26 71.72\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><path d=\"M66.85 67.86 A22 22 0 0 0 29.33 74.48\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><text x=\"50\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"97\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ج</text><text x=\"94\" y=\"45\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">د</text><text x=\"7\" y=\"64\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text></svg>",
       "options": [
         { "id": "a", "text": "قائمة" },
-        {
-          "id": "b",
-          "text": "منفرجة",
-          "misconceptionTag": "math.geo.type-d-angle-confondu"
-        },
+        { "id": "b", "text": "منفرجة" },
         {
           "id": "c",
           "text": "مستقيمة",
           "misconceptionTag": "math.geo.type-d-angle-confondu"
         },
-        {
-          "id": "d",
-          "text": "حادّة",
-          "misconceptionTag": "math.geo.type-d-angle-confondu"
-        }
+        { "id": "d", "text": "حادّة" }
       ],
-      "correctOption": "a",
-      "explanation": "المنصّف يقسم الزاوية [أد، أب] نصفين: 80° ÷ 2 = 40°. الزاويتان [أج، أد] و [أد، أس] متجاورتان، فقيس [أج، أس] = 50° + 40° = 90°. إذن هي زاوية قائمة.",
+      "correctOption": "b",
+      "explanation": "المنصّف يقسم الزاوية [أد، أب] نصفين: 120° ÷ 2 = 60°. الزاويتان [أج، أد] و [أد، أس] متجاورتان، فقيس [أج، أس] = 40° + 60° = 100°. وبما أنّ 100 أكبر من 90 وأصغر من 180، فهي زاوية منفرجة.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "زاويةٌ قائمةٌ قُسّمت إلى نصفين متساويين. كم قيسُ كلّ نصف؟",
+      "prompt": "قُسّمت زاوية مستقيمة إلى ثلاث زوايا متجاورة متقايسة. كم قيسُ كلٍّ منها؟",
       "options": [
-        { "id": "a", "text": "45°" },
-        {
-          "id": "b",
-          "text": "180°",
-          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
-        },
-        { "id": "c", "text": "30°" },
+        { "id": "a", "text": "60°" },
+        { "id": "b", "text": "90°" },
+        { "id": "c", "text": "120°" },
         {
           "id": "d",
-          "text": "90°",
+          "text": "30°",
           "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
         }
       ],
       "correctOption": "a",
-      "explanation": "نصفُ الزاوية القائمة = 90° ÷ 2 = 45°.",
+      "explanation": "الزاوية المستقيمة 180°، والزوايا الثلاث المتجاورة تتقاسمها بالتساوي: 180 ÷ 3 = 60°. من وجد 30° قسم 90 على 3، أي أخذ القائمة مكان المستقيمة.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
     {
       "type": "ordering",
-      "prompt": "رتّب خطوات بناء زاوية [أب، أج] قيسها 120° بالمنقلة.",
+      "prompt": "رتّب خطوات بناء زاوية [كل، كم] قيسها 35° بالمنقلة.",
       "options": [
-        { "id": "a", "text": "نرسم نصف المستقيم [أب) بالمسطرة" },
-        { "id": "b", "text": "نضع مركز المنقلة على أ وصفرها على [أب)" },
+        { "id": "a", "text": "نرسم نصف المستقيم [كل) بالمسطرة" },
+        { "id": "b", "text": "نضع مركز المنقلة على ك وصفرها على [كل)" },
         {
           "id": "c",
-          "text": "نعلّم النقطة ج أمام 120 على السلّم الذي صفره على [أب)"
+          "text": "نعلّم النقطة م أمام 35 على السلّم الذي صفره على [كل)"
         },
-        { "id": "d", "text": "نرفع المنقلة ونرسم [أج) بالمسطرة" }
+        { "id": "d", "text": "نرفع المنقلة ونرسم [كم) بالمسطرة" }
       ],
       "answerKey": {
         "order": ["a", "b", "c", "d"]
       },
-      "explanation": "نرسم أوّلًا الضلع الأوّل لأنّه يحمل الصفر. ثمّ نضع المنقلة عليه، فنعلّم النقطة أمام العدد المطلوب، وبعد رفع المنقلة نصل الرأس بالنقطة لنحصل على الضلع الثاني. نتحقّق في الأخير أنّ الزاوية منفرجة.",
+      "explanation": "نرسم أوّلًا الضلع الأوّل لأنّه يحمل الصفر، ثمّ نضع المنقلة عليه، فنعلّم النقطة أمام العدد المطلوب، وبعد رفع المنقلة نصل الرأس بالنقطة. نتحقّق في الأخير أنّ الزاوية حادّة، لأنّ 35 < 90.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
@@ -164,6 +137,6 @@
   "manuel": {
     "code": "102609",
     "pages": "21-23",
-    "items": ["L7 ex. 1", "L7 ex. 8"]
+    "items": ["L7 ex. 8"]
   }
 }

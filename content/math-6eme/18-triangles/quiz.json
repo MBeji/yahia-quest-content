@@ -15,12 +15,12 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "مثلّثٌ أطوالُ أضلاعه 5 سم، 5 سم، 5 سم. ما نوعُه؟",
+      "prompt": "مثلّثٌ أطوالُ أضلاعه 4 سم، 4 سم، 4 سم. ما اسمُه الأدقّ حسب أضلاعه؟",
       "options": [
         {
           "id": "a",
           "text": "متساوي الساقين",
-          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
         },
         { "id": "b", "text": "متساوي الأضلاع" },
         {
@@ -35,12 +35,12 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "أضلاعُه الثلاثة متساوية (5 = 5 = 5)، فهو متساوي الأضلاع.",
+      "explanation": "أضلاعه الثلاثة متساوية (4 = 4 = 4)، فهو متساوي الأضلاع. هو متساوي الساقين أيضًا، لكنّ الاسم الأدقّ هو متساوي الأضلاع.",
       "difficulty": 1,
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "مثلّث زواياه 90° و60° و30°. ما نوعه حسب زواياه؟",
+      "prompt": "مثلّث زواياه 40° و90° و50°. ما نوعه حسب زواياه؟",
       "options": [
         {
           "id": "a",
@@ -65,32 +65,20 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "مثلّثٌ أطوالُ أضلاعه 6 سم، 6 سم، 9 سم. ما نوعُه؟",
+      "prompt": "أيُّ ثلاثة أطوال لا يمكن أن تكون أضلاع مثلّث؟",
       "options": [
-        {
-          "id": "a",
-          "text": "متساوي الأضلاع",
-          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
-        },
-        {
-          "id": "b",
-          "text": "مختلف الأضلاع",
-          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
-        },
-        { "id": "c", "text": "متساوي الساقين" },
-        {
-          "id": "d",
-          "text": "قائم الزاوية",
-          "misconceptionTag": "math.geo.classements-triangle-melanges"
-        }
+        { "id": "a", "text": "3 سم، 4 سم، 5 سم" },
+        { "id": "b", "text": "5 سم، 5 سم، 5 سم" },
+        { "id": "c", "text": "4 سم، 6 سم، 9 سم" },
+        { "id": "d", "text": "2 سم، 2 سم، 5 سم" }
       ],
-      "correctOption": "c",
-      "explanation": "له ضلعان متساويان فقط (6 و6) والثالث مختلف (9)، فهو متساوي الساقين.",
+      "correctOption": "d",
+      "explanation": "لنبني مثلّثًا يجب أن يكون أطول ضلع أصغر من مجموع الضلعين الآخرين. هنا 2 + 2 = 4 وهو أصغر من 5، فلا يلتقي القوسان ولا يُغلَق المثلّث. أمّا الثلاثيّات الأخرى فتصلح: 3 + 4 > 5، و5 + 5 > 5، و4 + 6 > 9.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "لبناء مثلّث أضلاعه 6 سم و4 سم و3 سم، نرسم أوّلًا ضلعًا بالمسطرة ثمّ نرسم:",
+      "prompt": "لبناء مثلّث أضلاعه 7 سم و5 سم و4 سم، نرسم أوّلًا ضلعًا بالمسطرة ثمّ نرسم:",
       "options": [
         { "id": "a", "text": "موازيًا للضلع المرسوم" },
         { "id": "b", "text": "قوسين بالفرجار من طرفيه" },

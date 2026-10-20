@@ -7,44 +7,40 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "ما محيطُ مربّعٍ طولُ ضلعه 5 سم؟\n<svg viewBox=\"0 0 190 150\">\n<title>مربّع طول ضلعه معطى</title>\n<rect x=\"70\" y=\"24\" width=\"70\" height=\"70\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><line x1=\"105\" y1=\"88\" x2=\"105\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"76\" y1=\"59\" x2=\"64\" y2=\"59\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"105\" y1=\"18\" x2=\"105\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"146\" y1=\"59\" x2=\"134\" y2=\"59\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"105\" y=\"114\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5 سم</text>\n</svg>",
+      "prompt": "مربّع محيطه 36 سم. ما طول ضلعه؟\n<svg viewBox=\"0 0 190 150\">\n<title>مربّع طول ضلعه معطى</title>\n<rect x=\"70\" y=\"24\" width=\"70\" height=\"70\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><line x1=\"105\" y1=\"88\" x2=\"105\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"76\" y1=\"59\" x2=\"64\" y2=\"59\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"105\" y1=\"18\" x2=\"105\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"146\" y1=\"59\" x2=\"134\" y2=\"59\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"105\" y=\"114\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">؟</text>\n</svg>",
       "options": [
-        { "id": "a", "text": "20 سم" },
+        { "id": "a", "text": "9 سم" },
         {
           "id": "b",
-          "text": "25 سم",
+          "text": "12 سم",
           "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
         },
-        {
-          "id": "c",
-          "text": "10 سم",
-          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
-        },
+        { "id": "c", "text": "18 سم" },
         {
           "id": "d",
-          "text": "15 سم",
-          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
+          "text": "6 سم",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
         }
       ],
       "correctOption": "a",
-      "explanation": "للمربّع 4 أضلاع متساوية، فالمحيط = 4 × 5 = 20 سم.",
+      "explanation": "للمربّع 4 أضلاع متساوية، فالضلع = 36 ÷ 4 = 9 سم. ونتحقّق: 4 × 9 = 36. من قسم على 3 عدّ أضلاع المثلّث، ومن وجد 6 سم بحث عن عدد مضروب في نفسه يعطي 36، كأنّ المحيط مساحة.",
       "difficulty": 2,
       "competencies": ["math.geo.quadrilateres", "math.mes.perimetres"]
     },
     {
-      "prompt": "مستطيلٌ طولُه 8 سم وعرضُه 3 سم. ما محيطُه؟\n<svg viewBox=\"0 0 210 115\">\n<title>مستطيل طوله وعرضه معطيان</title>\n<rect x=\"40\" y=\"30\" width=\"120\" height=\"45\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><text x=\"100\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8 سم</text><text x=\"55\" y=\"56.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3 سم</text>\n</svg>",
+      "prompt": "مستطيلٌ طولُه 8 سم وعرضُه 3 سم، ومربّعٌ له المحيط نفسه. ما طولُ ضلع المربّع؟\n<svg viewBox=\"0 0 210 115\">\n<title>مستطيل طوله وعرضه معطيان</title>\n<rect x=\"40\" y=\"30\" width=\"120\" height=\"45\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><text x=\"100\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8 سم</text><text x=\"55\" y=\"56.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3 سم</text>\n</svg>",
       "options": [
+        { "id": "a", "text": "5,5 سم" },
         {
-          "id": "a",
+          "id": "b",
           "text": "11 سم",
           "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee"
         },
-        { "id": "b", "text": "16 سم" },
-        { "id": "c", "text": "22 سم" },
-        { "id": "d", "text": "24 سم" }
+        { "id": "c", "text": "2,75 سم" },
+        { "id": "d", "text": "22 سم" }
       ],
-      "correctOption": "c",
-      "explanation": "محيط المستطيل = 2 × (الطول + العرض) = 2 × (8 + 3) = 2 × 11 = 22 سم.",
+      "correctOption": "a",
+      "explanation": "محيط المستطيل = 2 × (8 + 3) = 2 × 11 = 22 سم. للمربّع المحيط نفسه 22 سم وأضلاعه الأربعة متساوية: الضلع = 22 ÷ 4 = 5,5 سم. ونتحقّق: 4 × 5,5 = 22.",
       "difficulty": 3,
       "competencies": ["math.geo.quadrilateres", "math.mes.perimetres"]
     },
@@ -59,23 +55,12 @@
       "competencies": ["math.geo.quadrilateres", "math.mes.perimetres"]
     },
     {
-      "prompt": "ما محيطُ معيّنٍ طولُ ضلعه 7 سم؟",
-      "options": [
-        {
-          "id": "a",
-          "text": "14 سم",
-          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
-        },
-        {
-          "id": "b",
-          "text": "21 سم",
-          "misconceptionTag": "math.mes.perimetre-nombre-de-cotes-errone"
-        },
-        { "id": "c", "text": "28 سم" },
-        { "id": "d", "text": "7 سم" }
-      ],
-      "correctOption": "c",
-      "explanation": "للمعيّن 4 أضلاع متساوية، فالمحيط = 4 × 7 = 28 سم.",
+      "type": "numeric",
+      "prompt": "معيّن ضلعه 7 سم، ومستطيل له المحيط نفسه وطوله 9 سم. ما عرض المستطيل بالسنتيمتر؟",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "محيط المعيّن = 4 × 7 = 28 سم. للمستطيل المحيط نفسه، ونصفه الطول + العرض: 28 ÷ 2 = 14 سم، فالعرض = 14 − 9 = 5 سم. ونتحقّق: 2 × (9 + 5) = 28.",
       "difficulty": 3,
       "competencies": ["math.geo.quadrilateres", "math.mes.perimetres"]
     },
@@ -89,11 +74,7 @@
           "text": "مناظرة ج بالنسبة إلى ب",
           "misconceptionTag": "math.geo.parallelogramme-sommets-mal-ordonnes"
         },
-        {
-          "id": "d",
-          "text": "مناظرة ب بالنسبة إلى أ",
-          "misconceptionTag": "math.geo.parallelogramme-sommets-mal-ordonnes"
-        }
+        { "id": "d", "text": "مناظرة ب بالنسبة إلى أ" }
       ],
       "correctOption": "b",
       "explanation": "القطران يتقاطعان في منتصفيهما، ومركز المتوازي ب هو منتصف [أد]، فد مناظرة أ بالنسبة إلى ب. أمّا مناظرة ج بالنسبة إلى ب فهي س، لأنّ [سج] القطر الآخر.",
@@ -122,27 +103,23 @@
       "competencies": ["math.geo.quadrilateres"]
     },
     {
-      "prompt": "الرباعيّ أدهـك فيه ك على القاعدة الصغرى [أب] وهـ على القاعدة الكبرى [دج] لشبه منحرف أبجد، وأك = دهـ. أيّ شرط يكفي لنقول إنّه متوازي أضلاع؟",
+      "prompt": "في الرباعيّ س‌ص‌ع‌و: س‌ص = ع‌و = 5 سم و ص‌ع = و‌س = 3 سم. ما نوعه؟",
       "options": [
-        {
-          "id": "a",
-          "text": "أك = دهـ دون أيّ توازٍ",
-          "misconceptionTag": "math.geo.condition-suffisante-supposee"
-        },
+        { "id": "a", "text": "متوازي أضلاع، لأنّ كلّ ضلعين متقابلين متساويان" },
         {
           "id": "b",
-          "text": "(أك) ∥ (دهـ) دون أن يتساويا",
+          "text": "شبه منحرف متقايس الضلعين، لأنّ له ضلعين متساويين",
           "misconceptionTag": "math.geo.condition-suffisante-supposee"
         },
         {
           "id": "c",
-          "text": "أد = كهـ دون أيّ توازٍ",
-          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+          "text": "معيّن، لأنّ أضلاعه المتقابلة متساوية",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
         },
-        { "id": "d", "text": "(أك) ∥ (دهـ) وأك = دهـ" }
+        { "id": "d", "text": "لا نحكم قبل قيس زواياه بالكوس" }
       ],
-      "correctOption": "d",
-      "explanation": "(أك) و(دهـ) على المستقيمين المتوازيين الحاملين للقاعدتين، فهما متوازيان، وهما متساويان بالمعطى: ضلعان متقابلان متوازيان ومتساويان معًا، وهذا شرط كافٍ. تساوي ضلعين وحده لا يكفي، فشبه المنحرف المتقايس الضلعين ساقاه متساويان ولا يكون متوازي أضلاع.",
+      "correctOption": "a",
+      "explanation": "الأضلاع بالترتيب س‌ص، ص‌ع، ع‌و، و‌س: [س‌ص] يقابل [ع‌و] وكلاهما 5 سم، و[ص‌ع] يقابل [و‌س] وكلاهما 3 سم. كلّ ضلعين متقابلين متساويان: هذا شرط كافٍ، فالرباعيّ متوازي أضلاع. وليس معيّنًا لأنّ 5 ≠ 3، ولا شبه منحرف لأنّ له زوجين من الأضلاع المتوازية لا زوجًا واحدًا.",
       "difficulty": 3,
       "competencies": ["math.geo.quadrilateres"]
     },
@@ -150,11 +127,7 @@
       "prompt": "المثلّث ع‌و‌ف قائم ومتساوي الساقين في و، وم منتصف وتره [عف]. أيّ طريقة تكمله إلى مربّع عوفط؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"20,74 20,26 68,26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><polyline points=\"27,26 27,33 20,33\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><line x1=\"23.5\" y1=\"48.2\" x2=\"16.5\" y2=\"48.2\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><line x1=\"23.5\" y1=\"51.8\" x2=\"16.5\" y2=\"51.8\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><line x1=\"42.2\" y1=\"22.5\" x2=\"42.2\" y2=\"29.5\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><line x1=\"45.8\" y1=\"22.5\" x2=\"45.8\" y2=\"29.5\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><circle cx=\"44\" cy=\"50\" r=\"2.5\" fill=\"currentColor\"/><text x=\"15\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">و</text><text x=\"15\" y=\"84\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ع</text><text x=\"74\" y=\"23\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ف</text><text x=\"52\" y=\"60\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">م</text></svg>",
       "options": [
         { "id": "a", "text": "نعيّن ط مناظرة و بالنسبة إلى م" },
-        {
-          "id": "b",
-          "text": "نعيّن ط على المستقيم (عف) خارج القطعة",
-          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
-        },
+        { "id": "b", "text": "نعيّن ط على المستقيم (عف) خارج القطعة" },
         {
           "id": "c",
           "text": "نعيّن ط مناظرة ع بالنسبة إلى و",
@@ -170,6 +143,6 @@
   ],
   "manuel": {
     "code": "102609",
-    "items": ["L17 ex. 1", "L17 ex. 6", "L17 ex. 9", "L17 ex. 11", "L56 pb 1"]
+    "items": ["L17 ex. 1", "L17 ex. 6", "L17 ex. 9", "L17 ex. 11"]
   }
 }

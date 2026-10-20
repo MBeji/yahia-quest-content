@@ -34,7 +34,7 @@
           "id": "c",
           "text": "لم تُعطَ زاوية بين الضلعين، والمثلّث يحتاج إلى زاوية دائمًا"
         },
-        { "id": "d", "text": "الضلع 8 سم أطول من الورقة" }
+        { "id": "d", "text": "أطول ضلع أكبر من مجموع الضلعين الآخرين" }
       ],
       "correctOption": "a",
       "explanation": "عند رسم القاعدة 8 سم يلتقي القوسان بفتحتي 3 سم و5 سم في نقطة واحدة تقع على القاعدة نفسها، لأنّ 3 + 5 = 8، فلا يوجد رأس ثالث خارجها. وللبناء يجب أن يكون أطول ضلع أصغر من مجموع الضلعين الآخرين، لا مساويًا له.",
@@ -67,27 +67,27 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "مثلّثٌ أطوالُ أضلاعه 2 سم، 4 سم، 5 سم. نوعُه:",
+      "prompt": "أيّ مثلّث من الآتي مختلف الأضلاع؟",
       "options": [
         {
           "id": "a",
-          "text": "متساوي الأضلاع",
+          "text": "3 سم و3 سم و4 سم",
           "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
         },
         {
           "id": "b",
-          "text": "متساوي الساقين",
+          "text": "6 سم و6 سم و6 سم",
           "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
         },
+        { "id": "c", "text": "4 سم و6 سم و9 سم" },
         {
-          "id": "c",
-          "text": "قائم الزاوية",
-          "misconceptionTag": "math.geo.classements-triangle-melanges"
-        },
-        { "id": "d", "text": "مختلف الأضلاع" }
+          "id": "d",
+          "text": "5 سم و7 سم و5 سم",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        }
       ],
-      "correctOption": "d",
-      "explanation": "أضلاعُه الثلاثة مختلفة (2 ≠ 4 ≠ 5)، فهو مختلف الأضلاع.",
+      "correctOption": "c",
+      "explanation": "نقارن الأزواج في كلّ مثلّث: 3 = 3 ؛ 6 = 6 = 6 ؛ 5 = 5 ؛ أمّا 4 و6 و9 فلا زوج متساوٍ فيها (4 ≠ 6 ؛ 4 ≠ 9 ؛ 6 ≠ 9)، فهو مختلف الأضلاع.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     },

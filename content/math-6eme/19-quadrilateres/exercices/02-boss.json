@@ -27,9 +27,21 @@
       "prompt": "المربّعُ هو في آنٍ واحد:",
       "options": [
         { "id": "a", "text": "مستطيلٌ ومعيّن" },
-        { "id": "b", "text": "شبه منحرف" },
-        { "id": "c", "text": "مثلّث" },
-        { "id": "d", "text": "بلا تصنيف" }
+        {
+          "id": "b",
+          "text": "مستطيلٌ لا معيّن",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "c",
+          "text": "معيّنٌ لا مستطيل",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "d",
+          "text": "شبه منحرف ومتوازي أضلاع",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        }
       ],
       "correctOption": "a",
       "explanation": "المربّعُ مستطيلٌ (زواياه قائمة) ومعيّنٌ (أضلاعُه متساوية) في الوقت نفسه.",
@@ -104,19 +116,23 @@
       "options": [
         {
           "id": "a",
-          "text": "له زوجٌ واحدٌ متوازٍ",
+          "text": "له زوجٌ واحدٌ فقط من الأضلاع المتوازية",
           "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
         },
-        { "id": "b", "text": "أضلاعَه مختلفة" },
+        {
+          "id": "b",
+          "text": "قطراه متعامدان",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
         {
           "id": "c",
           "text": "لا أضلاع متوازية فيه",
           "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
         },
-        { "id": "d", "text": "أضلاعَه المتقابلة متوازية ومتساوية" }
+        { "id": "d", "text": "أضلاعه المتقابلة متوازية" }
       ],
       "correctOption": "d",
-      "explanation": "المستطيلُ تتوفّر فيه خاصّيّةُ متوازي الأضلاع (زوجان من الأضلاع المتقابلة المتوازية والمتساوية)، مع زوايا قائمة زيادةً.",
+      "explanation": "المستطيل كلّ ضلعين متقابلين فيه متوازيان، وهذا تعريف متوازي الأضلاع؛ وتضيف له زواياه القائمة اسمه الأدقّ. وقطراه متقايسان لا متعامدان.",
       "difficulty": 3,
       "competencies": ["math.geo.quadrilateres"]
     },

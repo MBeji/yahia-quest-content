@@ -7,74 +7,82 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "ن نقطة من الموسّط العمودي لـ [أب] ولا تقع على (أب). قسنا نأ فوجدنا 4 سم، وقيس أب 6 سم. ما نوع المثلّث أ ن ب؟ <svg viewBox=\"0 0 100 100\"><line x1=\"12\" y1=\"72\" x2=\"88\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"16\" x2=\"50\" y2=\"92\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><polygon points=\"12,72 88,72 50,38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"50,65 57,65 57,72\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><text x=\"10\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"90\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text><text x=\"50\" y=\"30\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ن</text><text x=\"62\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\">م</text></svg>",
+      "prompt": "ن نقطة من الموسّط العمودي لـ [أب] ولا تقع على (أب). قسنا نأ فوجدنا 6 سم، وقيس أب 6 سم أيضًا. ما الاسم الأدقّ للمثلّث أ ن ب حسب أضلاعه؟ <svg viewBox=\"0 0 100 100\"><line x1=\"12\" y1=\"78\" x2=\"88\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"8\" x2=\"50\" y2=\"96\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/><polygon points=\"20,78 80,78 50,26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"50,71 57,71 57,78\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><text x=\"17\" y=\"93\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"83\" y=\"93\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text><text x=\"40\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ن</text><text x=\"62\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\">م</text></svg>",
       "options": [
-        { "id": "a", "text": "قائم الزاوية" },
-        { "id": "b", "text": "متساوي الساقين" },
         {
-          "id": "c",
-          "text": "متساوي الأضلاع",
-          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+          "id": "a",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
         },
+        {
+          "id": "b",
+          "text": "متساوي الساقين",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        { "id": "c", "text": "متساوي الأضلاع" },
         {
           "id": "d",
           "text": "مختلف الأضلاع",
           "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
         }
       ],
-      "correctOption": "b",
-      "explanation": "ن على الموسّط العمودي لـ [أب]، فتبعد عن أ وعن ب البعد نفسه: نب = نأ = 4 سم. له ضلعان متساويان فقط (4 و4) والثالث 6 سم، فهو متساوي الساقين رأسه ن.",
-      "difficulty": 2,
+      "correctOption": "c",
+      "explanation": "ن على الموسّط العمودي لـ [أب]، فتبعد عن أ وعن ب البعد نفسه: نب = نأ = 6 سم. والضلع الثالث أب = 6 سم أيضًا: الأضلاع الثلاثة متساوية، فالاسم الأدقّ متساوي الأضلاع. «متساوي الساقين» صحيح لكنّه ليس الأدقّ.",
+      "difficulty": 3,
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "في مربّعٍ، الضلعان المتجاوران (اللذان لهما رأسٌ مشترك):",
+      "prompt": "في الرباعيّ أبجد: (أب) ⊥ (بج) و (جد) ⊥ (بج). ما وضعيّة (أب) بالنسبة إلى (جد)؟",
       "options": [
-        { "id": "a", "text": "متعامدان" },
+        { "id": "a", "text": "(أب) ∥ (جد)" },
         {
           "id": "b",
-          "text": "متوازيان",
-          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+          "text": "(أب) ⊥ (جد)",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
         },
-        { "id": "c", "text": "متساويان فقط دون تعامد" },
-        { "id": "d", "text": "متقاطعان بزاوية حادّة" }
+        { "id": "c", "text": "متقاطعان في ب" },
+        { "id": "d", "text": "لا نستطيع الحكم دون قيس" }
       ],
       "correctOption": "a",
-      "explanation": "زوايا المربّع قائمة، فالضلعان المتجاوران يكوّنان زاوية قائمة، أي أنّهما متعامدان.",
+      "explanation": "(أب) و (جد) كلاهما عموديّ على المستقيم نفسه (بج)، والعموديّان على مستقيم واحد متوازيان: (أب) ∥ (جد).",
       "difficulty": 3,
-      "competencies": ["math.geo.droites-perp-para", "math.geo.quadrilateres"]
+      "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "في مربّعٍ، الضلعان المتقابلان:",
+      "prompt": "(د1) ⊥ (د) و (د2) ⊥ (د)، و (د3) ⊥ (د2). ما وضعيّة (د3) بالنسبة إلى (د1)؟",
       "options": [
         {
           "id": "a",
-          "text": "متعامدان",
-          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
-        },
-        { "id": "b", "text": "متوازيان" },
-        { "id": "c", "text": "غيرُ متساويين" },
-        { "id": "d", "text": "متقاطعان" }
-      ],
-      "correctOption": "b",
-      "explanation": "الضلعان المتقابلان في المربّع لا يتقاطعان ويبقى البعدُ بينهما ثابتًا، فهما متوازيان.",
-      "difficulty": 3,
-      "competencies": ["math.geo.droites-perp-para", "math.geo.quadrilateres"]
-    },
-    {
-      "prompt": "(د1) ∥ (د2)، و (د3) ⊥ (د1). ماذا نستنتج عن (د3) و (د2)؟",
-      "options": [
-        {
-          "id": "a",
-          "text": "(د3) ∥ (د2)",
+          "text": "(د3) ∥ (د1)",
           "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
         },
         { "id": "b", "text": "منطبقان" },
-        { "id": "c", "text": "لا شيء" },
-        { "id": "d", "text": "(د3) ⊥ (د2)" }
+        { "id": "c", "text": "(د3) ⊥ (د1)" },
+        { "id": "d", "text": "لا علاقة بينهما" }
       ],
-      "correctOption": "d",
-      "explanation": "إذا كان (د3) عموديًّا على (د1) و (د1) يوازي (د2)، فإنّ (د3) عموديٌّ أيضًا على (د2): (د3) ⊥ (د2).",
+      "correctOption": "c",
+      "explanation": "(د1) و (د2) عموديّان على (د) نفسه، فهما متوازيان: (د1) ∥ (د2). و (د3) عموديّ على (د2)، والعموديّ على أحد متوازيين عموديّ على الآخر: (د3) ⊥ (د1).",
+      "difficulty": 3,
+      "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "(د1) ∥ (د2) و (د3) ⊥ (د1)، ثمّ رسمنا (د4) ⊥ (د3). ما وضعيّة (د4) بالنسبة إلى (د2)؟",
+      "options": [
+        { "id": "a", "text": "(د4) ∥ (د2)" },
+        {
+          "id": "b",
+          "text": "(د4) ⊥ (د2)",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
+        {
+          "id": "c",
+          "text": "(د4) ⊥ (د1)",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
+        { "id": "d", "text": "لا نستطيع الحكم" }
+      ],
+      "correctOption": "a",
+      "explanation": "(د3) ⊥ (د1) و (د1) ∥ (د2)، فـ (د3) ⊥ (د2) أيضًا: العموديّ على أحد متوازيين عموديّ على الآخر. ثمّ (د4) و (د2) كلاهما عموديّ على (د3)، فهما متوازيان: (د4) ∥ (د2).",
       "difficulty": 3,
       "competencies": ["math.geo.droites-perp-para"]
     },
@@ -96,41 +104,38 @@
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "كم زاويةً قائمةً تتكوّن عند نقطة تقاطع مستقيمين متعامدين؟",
-      "options": [
-        { "id": "a", "text": "4" },
-        { "id": "b", "text": "1" },
-        { "id": "c", "text": "2" },
-        { "id": "d", "text": "0" }
-      ],
-      "correctOption": "a",
-      "explanation": "عند تقاطع مستقيمين متعامدين تتكوّن 4 زوايا قائمة حول نقطة التقاطع.",
+      "type": "numeric",
+      "prompt": "(د1) ⊥ (د2)، و (د3) يوازي (د1) ويقطع (د2) في نقطة ثانية. كم زاويةً قائمةً تتكوّن في المجموع عند نقطتي التقاطع؟",
+      "answerKey": {
+        "value": 8
+      },
+      "explanation": "(د3) ∥ (د1) و (د2) ⊥ (د1)، فـ (د2) ⊥ (د3): العموديّ على أحد متوازيين عموديّ على الآخر. وعند كلّ نقطة تقاطع بين مستقيمين متعامدين أربع زوايا قائمة، فالمجموع 4 + 4 = 8.",
       "difficulty": 3,
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
       "type": "numeric",
-      "prompt": "رسمت ملاك مستقيمين متعامدين، ثمّ نصّفت إحدى الزوايا القائمة، ثمّ نصّفت أحد الجزءين الناتجين. ما قيس أصغر زاوية حصلت عليها بالدرجة؟",
+      "prompt": "مستقيمان متعامدان يلتقيان في م، ورسمنا [مك) منصّف إحدى الزوايا القائمة الأربع. ما قيس الزاوية المنفرجة التي يصنعها [مك) مع أحد المستقيمين، بالدرجة؟",
       "answerKey": {
-        "value": 22.5
+        "value": 135
       },
-      "explanation": "المستقيمان المتعامدان يصنعان زاوية قائمة 90°. تنصيفها يعطي 90 ÷ 2 = 45°، وتنصيف 45° يعطي 45 ÷ 2 = 22,5°: القيس 22,5.",
+      "explanation": "المنصّف يقسم الزاوية القائمة إلى 45° و45°. الزاوية المنفرجة تبدأ من [مك)، تعبر نصف القائمة المنصَّفة (45°) ثمّ قائمة كاملة مجاورة لها (90°): 45 + 90 = 135°.",
       "difficulty": 3,
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
       "type": "numeric",
-      "prompt": "قاعة مستطيلة بُعداها 20 م و 12 م، رُسم مخطّطها بمقياس 1 سم لكلّ 2 م. كم سنتيمترًا يبعد الموسّط العمودي للطول عن كلّ طرف من طرفيه على المخطّط؟",
+      "prompt": "قاعة مستطيلة أبجد بُعداها 20 م و 12 م، رُسم مخطّطها بمقياس 1 سم لكلّ 2 م. مركز الحوض هو نقطة تقاطع الموسّط العمودي للطول [أب] والموسّط العمودي للعرض [بج]. كم سنتيمترًا يبعد هذا المركز عن الطول [أب] على المخطّط؟",
       "answerKey": {
-        "value": 5
+        "value": 3
       },
-      "explanation": "الطول على المخطّط 20 ÷ 2 = 10 سم. الموسّط العمودي يمرّ بمنتصف الطول، فيبعد عن كلّ طرف 10 ÷ 2 = 5 سم.",
+      "explanation": "العرض على المخطّط 12 ÷ 2 = 6 سم. الموسّط العمودي للعرض [بج] يمرّ بمنتصفه، على بُعد 6 ÷ 2 = 3 سم من ب. وهو عموديّ على (بج) مثل (أب)، فهو يوازي (أب)، والبُعد بين متوازيين ثابت: المركز يبعد 3 سم عن الطول [أب].",
       "difficulty": 3,
       "competencies": ["math.geo.droites-perp-para"]
     }
   ],
   "manuel": {
     "pages": "14-15",
-    "items": ["L4 ex. 1", "L4 ex. 2", "L4 ex. 5"]
+    "items": ["L4 ex. 2"]
   }
 }

@@ -7,27 +7,27 @@
   "displayOrder": 3,
   "questions": [
     {
-      "prompt": "كم قيسُ الزاوية القائمة؟",
+      "prompt": "كم قيسُ الزاوية المستقيمة بالغراد؟",
       "options": [
-        { "id": "a", "text": "90°" },
+        { "id": "a", "text": "200 غراد" },
         {
           "id": "b",
-          "text": "45°",
+          "text": "180 غراد",
           "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
         },
         {
           "id": "c",
-          "text": "180°",
+          "text": "100 غراد",
           "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
         },
         {
           "id": "d",
-          "text": "60°",
+          "text": "360 غراد",
           "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
         }
       ],
       "correctOption": "a",
-      "explanation": "قيسُ الزاوية القائمة هو 90°.",
+      "explanation": "الغراد وحدة ثانية: القائمة 100 غراد، والمستقيمة قائمتان، أي 200 غراد (وتساوي 180°). العدد 180 هو قيسها بالدرجة لا بالغراد.",
       "difficulty": 1,
       "competencies": ["math.geo.angles-mesure"]
     },
@@ -104,28 +104,32 @@
     },
     {
       "type": "numeric",
-      "prompt": "كان الدهّان يعرض 8 ألوان ويريد الآن 12 لونًا. رسم على لوحته 6 قطع، زاوية كلّ منها 60° (بالمسطرة والفرجار)، ثمّ نصّف كلّ قطعة إلى قطعتين متقايستين. ما قيس زاوية القطعة الجديدة بالدرجة؟",
+      "prompt": "لوحة الدهّان مقسّمة إلى 12 قطعة متقايسة، زاوية كلّ قطعة 30°. يريد 24 قطعة، فينصّف كلّ قطعة. ما قيس زاوية القطعة الجديدة بالدرجة؟",
       "answerKey": {
-        "value": 30
+        "value": 15
       },
-      "explanation": "كلّ قطعة قيسها 60°، وتنصيفها يقسمها نصفين متقايسين: 60 ÷ 2 = 30، فكلّ قطعة جديدة زاويتها 30°.",
+      "explanation": "التنصيف يقسم كلّ زاوية نصفين متقايسين: 30 ÷ 2 = 15، فزاوية القطعة الجديدة 15°.",
       "difficulty": 2,
       "competencies": ["math.geo.angles-mesure"]
     },
     {
-      "prompt": "زاويتان متجاورتان تكوّنان زاوية مستقيمة (180°). إذا كانت إحداهما 120°، فالأخرى:\n<svg viewBox=\"0 0 220 150\">\n<title>زاويتان متجاورتان على مستقيم</title>\n<line x1=\"22\" y1=\"112\" x2=\"198\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><line x1=\"110\" y1=\"112\" x2=\"71\" y2=\"44.45\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><circle cx=\"110\" cy=\"112\" r=\"2.4\" fill=\"#0f172a\"/><path d=\"M 144 112 A 34 34 0 0 0 93 82.56\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><path d=\"M 99 92.95 A 22 22 0 0 0 88 112\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"154\" y=\"86\" text-anchor=\"middle\" fill=\"#ef4444\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">120°</text><text x=\"61.67\" y=\"92\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"16\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">؟</text>\n</svg>",
+      "prompt": "زاويتان متجاورتان تكوّنان زاوية مستقيمة (180°). إذا كانت إحداهما 145°، فالأخرى:\n<svg viewBox=\"0 0 220 150\">\n<title>زاويتان متجاورتان على مستقيم</title>\n<line x1=\"22\" y1=\"112\" x2=\"198\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><line x1=\"110\" y1=\"112\" x2=\"46.1\" y2=\"67.3\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><circle cx=\"110\" cy=\"112\" r=\"2.4\" fill=\"#0f172a\"/><path d=\"M 144 112 A 34 34 0 0 0 82.15 92.5\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><path d=\"M 91.98 99.38 A 22 22 0 0 0 88 112\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"150\" y=\"72\" text-anchor=\"middle\" fill=\"#ef4444\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">145°</text><text x=\"62\" y=\"104\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"16\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">؟</text>\n</svg>",
       "options": [
-        { "id": "a", "text": "60°" },
+        { "id": "a", "text": "35°" },
         {
           "id": "b",
-          "text": "90°",
+          "text": "55°",
           "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
         },
-        { "id": "c", "text": "80°" },
-        { "id": "d", "text": "240°" }
+        {
+          "id": "c",
+          "text": "215°",
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
+        },
+        { "id": "d", "text": "45°" }
       ],
       "correctOption": "a",
-      "explanation": "مجموعُهما 180°، فالأخرى = 180° − 120° = 60°.",
+      "explanation": "مجموعهما 180°: نعرف الكلّ ونبحث عن جزء، فالأخرى = 180° − 145° = 35°. من وجد 55° طرح من 90 بدل 180 (145 − 90)، ومن وجد 215° طرح 145 من 360.",
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     },
@@ -139,10 +143,5 @@
       "difficulty": 3,
       "competencies": ["math.geo.angles-mesure"]
     }
-  ],
-  "manuel": {
-    "code": "102609",
-    "pages": "21-23",
-    "items": ["L7 ex. 2"]
-  }
+  ]
 }
