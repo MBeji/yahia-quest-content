@@ -259,26 +259,28 @@ Le guide **tabule bien** le déroulé annuel, en **5 فترات** calées sur le
 
 ## 4. Chapitrage retenu (→ alimente `manifest/6eme-base.json`)
 
-> Slugs **alignés sur le contenu déjà publié** (`content/eveil-scientifique-6eme/`, **9 chapitres**). La transcription **confirme** cette liste et la **rattache aux 5 وحدات** : les unités riches (و3, و4) sont **éclatées en plusieurs chapitres** côté contenu, et la **و1 (العين والضوء)** est restituée par le seul chapitre `09-oeil-vision` (l'optique pure — انتشار/انعكاس/انكسار — y est intégrée à l'œil ; **pas de chapitre « lumière » séparé** dans le contenu publié — voir §6). **Colonne « manuel élève »** = pages du manuel `103604P00.pdf` (خارطة الكتاب p.156–157, offset 0 ; bornes = début du درس → début du درس suivant − 1).
+> **Mis à jour le 2026-10-20.** Les **12 slugs publiés** sont gardés (aucun renommage) ; l'ordre ci-dessous est celui du **manuel** (و1 → و5), qui est celui des `displayOrder` publiés (§4 bis) — le manifeste, lui, garde son ordre de slugs. Colonne « manuel » = pages de `103604` (offset 0) servies par le chapitre, codifiées dans le manifeste (`manuel = { code: "103604", pages }`) à l'identique des `chapter.json` publiés. Colonne « guide » = où lire, dans `503604`, le savoir du maître, les séances et les évaluations du chapitre (sections du §7). Le tableau à 9 chapitres du 2026-07-26 est remplacé : il datait d'avant la lecture intégrale du manuel et du découpage du §4 bis.
 
-| #   | slug                             | notion (محور / دروس)                                                                                  | وحدة (مجال)                             | guide (`503604` · pages) | manuel élève (`103604` · pages) |
-| --- | -------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------ | ------------------------------- |
-| 1   | `01-air`                         | الهواء : خاصّياته · مكوّناته (آزوت/أكسجين) · الاحتراق ودور الأكسجين                                   | 2 · الهواء والتنفّس (فيزيائيّة)         | ص 3–19 (méthodo)         | `103604` · 30–46                |
-| 2   | `02-respiration`                 | التنفّس : الشهيق/الزفير · مسار الهواء · التبادل الغازي في الرئتين                                     | 2 · الهواء والتنفّس (حياة)              | ص 3–19 (méthodo)         | `103604` · 47–60                |
-| 3   | `03-sang-circulation`            | جهاز دوران الدم : تركيبة الدم · القلب والأوعية · نقل الأكسجين والمغذّيات                              | 3 · الدوران/الأمراض/التغذية (حياة)      | ص 3–19 (méthodo)         | `103604` · 62–67                |
-| 4   | `04-nutrition`                   | التغذية : أصناف الأغذية (بانية/طاقيّة/واقية) · الوجبة المتوازنة · أمراض سوء التغذية                   | 3 · الدوران/الأمراض/التغذية (حياة)      | ص 3–19 (méthodo)         | `103604` · 84–96                |
-| 5   | `05-milieu-chaines-alimentaires` | الوسط البيئي · السلسلة الغذائيّة (اتّجاه السهم) · التوازن · تلوّث المياه والمحافظة                    | 4 · التكاثر الزهري والوسط البيئي (حياة) | ص 3–19 (méthodo)         | `103604` · 108–117              |
-| 6   | `06-reproduction-florale`        | التكاثر الزهري : أعضاء الزهرة · التأبير والإخصاب · تكوّن الثمرة/البذور · دورة الحياة                  | 4 · التكاثر الزهري والوسط البيئي (حياة) | ص 3–19 (méthodo)         | `103604` · 97–107               |
-| 7   | `07-aimants-boussole`            | المغانط : جذب الحديد · القطبان (N/S) · التجاذب/التنافر · البوصلة وإشارتها للشمال                      | 5 · الطاقة (فيزيائيّة)                  | ص 181 (carte و5)         | `103604` · 126–134              |
-| 8   | `08-poids`                       | الثقل : قوّة جذب الأرض نحو الأسفل · الكتلة ≠ الثقل · قياس بالدينامومتر                                | 5 · الطاقة (فيزيائيّة)                  | ص 181 (carte و5)         | `103604` · 140–146              |
-| 9   | `09-oeil-vision`                 | العين والإبصار : أجزاء العين · آليّة الإبصار · العناية بالعين (+ انتشار/انعكاس/انكسار الضوء، العدسات) | 1 · العين والضوء (فيزيائيّة)            | ص 14–16 (مطويّة العين)   | `103604` · 7–28                 |
+| ordre | slug | notion (محور / دروس) | وحدة | دروس du manuel `103604` | manuel `103604` · pages | guide `503604` · pages (§7) |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | `09-oeil-vision` | العين والرؤية : تركيبة العين · الأعضاء الواقية · آليّة الرّؤية (صورة مقلوبة على الشبكيّة → العصب البصري → المخّ) · عيوب الرّؤية (قصر/طول النّظر) والعدسات المصلحة · وقاية العين | 1 · العين والضوء | 01 · 03 · 05 | 7–9, 14–17, 21–24 | ملفّ p.32–36 (§7.1–§7.2) · carte p.42 (§7.4) · جذاذة 1 p.43–46 · جذاذة 2 p.47–49 (§7.5–§7.8) · إدماج p.50–51 (§7.9) · évaluation n° 1 p.52–57 (§7.10–§7.11) · علاج p.58–62 (§7.12) |
+| 2 | `12-dhaw` | الضّوء : مصادره · انتشاره المستقيم · الأجسام الشفّافة/نصف الشفّافة/العاتمة · الانتثار · الانعكاس (المرآة المستوية) · الانكسار | 1 · العين والضوء | 02 · 04 · 06 | 10–13, 18–20, 25–28 | ملفّ p.37–41 (§7.2–§7.3) · جذاذات p.43–49 (parties optiques) · إدماج p.50–51 · évaluation n° 1 (3أ/3ب) · علاج 1 p.60 |
+| 3 | `01-air` | الهواء : ضروري للحياة وللاحتراق · خاصّياته (انتشار، انضغاط، تمدّد، تقلّص) · مكوّناته · الاحتراق (العناصر المتدخّلة والنّاتجة) · احتراق الشمعة | 2 · الهواء والتنفّس | 07 · 08 · 09 · 10 · 12 · 13 | 30–46, 52–60 | ملفّ p.64–67, 75–77 (§7.13, §7.17) · carte p.78 · جذاذة p.79–83 (§7.19–§7.20) · إدماج p.85–86 (§7.21) · évaluation n° 2 T3–T4 p.129–130 · علاج 3–4 p.134 (§7.33–§7.35) |
+| 4 | `02-respiration` | التنفّس : مسار الهواء · الرئتان والحويصلات · التبادل الغازي في مستوى الرئتين (دم قاتم → أحمر قان) · وقاية الجهاز التنفّسي | 2 · الهواء والتنفّس | 11 | 47–51 | ملفّ p.68–74 (§7.14–§7.16) · جذاذة p.83–84 (§7.20) · إدماج p.86 · évaluation n° 2 T2, T5 · علاج 2 p.133 |
+| 5 | `03-sang-circulation` | الدم : تركيبته (بلازما، كريّات حمراء، كريّات بيضاء) · الدّم المتخثّر (علقة، مصل) · نقل الغذاء والغازات · مسار الدّم | 3 · الدوران/الأمراض/التغذية | 14 · 15 | 62–67 | ملفّ p.88–92 (§7.22) · جذاذة 1, situation 1, p.108–111 (§7.29) · إدماج p.121–122 (§7.32) · évaluation n° 2 T5 · علاج 5 p.135 |
+| 6 | `10-microbes-defense` | الجراثيم ووقاية الجسم : الجلد حاجز · التعفّن الجرثومي وأعراضه · البلعمة · التلاقيح · المناعة الطبيعيّة/المكتسبة · العلاج بالأدوية والأمصال · إسعاف الجرح · الكزاز | 3 · الدوران/الأمراض/التغذية | 16 · 17 · 18 · 19 | 68–83 | ملفّ p.100–106 (§7.26–§7.27) · جذاذة 1, situations 2–4, p.111–116 (§7.30) · إدماج p.122–123 · évaluation n° 2 T6 · علاج 6 p.135 |
+| 7 | `04-nutrition` | التغذية : المجموعات الغذائيّة الثّلاث (البناء والنموّ، الطاقة، الوقاية) · السكّريات/الزّلاليات/الدّهنيات · الوجبة المتوازنة حسب السنّ والنّشاط · أمراض سوء التغذية · سلامة الغذاء | 3 · الدوران/الأمراض/التغذية | 20 · 21 · 22 · 23 | 84–95 | ملفّ p.93–99 (§7.23–§7.25) · جذاذة 4 p.117–120 (§7.31) · إدماج p.123–124 · évaluation n° 2 T1 p.128–129 · علاج 1 p.133 |
+| 8 | `06-reproduction-florale` | التكاثر الزهري : أعضاء الزهرة الخارجيّة والدّاخليّة · التأبير (ذاتي/خلطي ; حشرات، رياح، إنسان) والإخصاب · تحوّل المبيض إلى ثمرة والبويضات إلى بذور · دورة الحياة (حوليّة ودائمة) | 4 · التكاثر الزهري والوسط البيئي | 24 · 25 · 26 | 97–107 | ملفّ p.137–142 (§7.36) · carte p.151 (§7.39) · جذاذة 1 p.152–154 (§7.40) · leçon TIC p.155–159 (§7.41) · إدماج p.167–168 (§7.42) |
+| 9 | `05-milieu-chaines-alimentaires` | الوسط البيئي : السلسلة الغذائيّة (منتج، مستهلكات 1/2/3، مفكّكات ; السهم « يتغذّى على ») · التوازن · تلوّث الأوساط المائيّة والمحافظة عليها · أمراض تلوّث المياه (التيفيّة، الكوليرا، البوصفير) | 4 · التكاثر الزهري والوسط البيئي | 27 · 28 · 29 | 108–117 | ملفّ p.143–150 (§7.37–§7.38) · carte p.151 · جذاذة 2 p.160–162 · جذاذة 3 p.163–166 (§7.41) · إدماج p.167–168 (§7.42) |
+| 10 | `07-aimants-boussole` | المغانط : أنواعها وأشكالها · جذب المواد الحديديّة · القطبان والتجاذب/التنافر · البوصلة وتحديد الاتّجاه | 5 · الطاقة | 32 · 33 · 34 | 126–134 | ملفّ p.171–172, 176 (§7.44, §7.45) · carte p.181 |
+| 11 | `11-effets-courant-electrique` | آثار التيّار الكهربائي : الحراري · الكيميائي (المحلال، المصعد/المهبط، الأكسيجين/الهيدروجين، الطّلاء) · المغناطيسي (الوشيعة، الكهرمغناطيس) | 5 · الطاقة | 30 · 31 · 35 | 119–125, 135–139 | ملفّ p.170–175 (§7.43–§7.44) · carte p.181 |
+| 12 | `08-poids` | وزن الجسم : الكتلة (كغ، الموازين) ≠ الوزن (قوّة، منحى شاقولي، من أعلى إلى أسفل، دينامومتر، نيوتن) · تغيّر الوزن بتغيّر المكان · السقوط الحرّ | 5 · الطاقة | 36 | 140–145 | ملفّ p.177–180 (§7.46) · carte p.181 |
 
-> **Bornes manuel élève (خارطة الكتاب p.156–157, début du درس → début du درس suivant − 1)** — pages imprimées (= PDF, offset 0) :
-> **و1 العين والضوء (p.7→28)** : تركيبة العين 7 · انتشار الضوء 10 · العين والرؤية 14 · انعكاس الضوء 18 · عيوب الرؤية ووسائل الإصلاح 21 · انكسار الضوء 25 (→ fin avant و2 p.29/30). → `09-oeil-vision` = **7–28** (couvre l'unité « العين والضوء » entière).
-> **و2 الهواء والتنفّس (p.30→60)** : الهواء ضروري 30 · خاصّيات الهواء 33 · مكوّنات الهواء 38 · الاحتراق وأهميّة الأكسجين 43 · **التبادل الغازي في الرئتين 47** · العناصر المتدخّلة/الناتجة 52 · احتراق الشمعة 56. → `01-air` = **30–46** (الهواء/الاحتراق, jusqu'avant le درس respiration) · `02-respiration` = **47–60** (à partir du التبادل الغازي).
-> **و3 الدوران/الأمراض/التغذية (p.62→96)** : تركيبة الدّم 62 · الدّم ينقل الغذاء والغازات 65 · أهميّة الجلد 68 · التعفّن الجرثومي 72 · التلقيح 76 · المقاومة بالأدوية والطبيعيّة 80 · المجموعات الغذائيّة 84 · أغذية البناء/الطاقة/الوقاية 87 · الوجبة المتوازنة 90 · أمراض سوء التغذية 93. → `03-sang-circulation` = **62–67** (تركيبة الدّم + نقل الغذاء/الغازات) · `04-nutrition` = **84–96** (à partir des المجموعات الغذائيّة). **(L'immunité/microbes p.68–83 n'a pas de chapitre publié dédié — voir §6.)**
-> **و4 التكاثر الزهري والوسط البيئي (p.97→117)** : الزهرة ومكوّناتها 97 · التأبير والإخصاب 100 · دورة حياة النبتة الزهريّة 104 · السلسلة الغذائيّة 108 · مصادر تلوّث الأوساط المائيّة والمحافظة 112 · الأمراض الناتجة عن تلوّث المياه 115. → `06-reproduction-florale` = **97–107** (التكاثر الزهري) · `05-milieu-chaines-alimentaires` = **108–117** (الوسط البيئي).
-> **و5 الطاقة (p.119→146)** : التأثير الحراري للتيّار 119 · التأثير الكيميائي 122 · أنواع المغنط/جذب الحديد 126 · قطبا المغنط 129 · البوصلة 132 · التأثير المغناطيسي 135 · وزن الأجسام/السقوط الحرّ 140. → `07-aimants-boussole` = **126–134** (المغنط + قطباه + البوصلة) · `08-poids` = **140–146** (وزن الأجسام/الثقل). **(Les effets électriques du courant p.119–125 + 135–139 n'ont pas de chapitre publié dédié — voir §6.)**
+**36 / 36 دروس servis**, chacun par un seul chapitre. **Notions officielles sans chapitre : aucune.** Les محاور de la خارطة du guide (p.29, §2.0) et les branches des six cartes d'unité (manuel p.6/29/61/96/118, guide p.42/78/107/151/181) ont toutes un chapitre ; ce qui reste hors chapitre n'est que du **savoir-maître** classé ◐ au §2 (éclipses, groupes sanguins, double fécondation, champ magnétique formalisé…), qui n'appelle pas de chapitre. Le « modèle de leçon intégrant les TIC » (p.155–159) est une méthode, pas une notion. Pages non servies du manuel : 1–6 (titre, toléma, carte و1), 29, 61, 96, 118 (cartes d'unité), 146–160 (évaluation, خارطة, معجم) — sans درس.
+
+> _Bornes manuel par درس, d'origine (2026-07-26), gardées — exactes au درس près, d'après la خارطة p.156–157 :_ **و1** تركيبة العين 7 · انتشار الضوء 10 · العين والرؤية 14 · انعكاس الضوء 18 · عيوب الرؤية ووسائل الإصلاح 21 · انكسار الضوء 25. **و2** الهواء ضروري 30 · خاصّيات الهواء 33 · مكوّنات الهواء 38 · الاحتراق وأهميّة الأكسجين 43 · التبادل الغازي في الرئتين 47 · العناصر المتدخّلة/الناتجة 52 · احتراق الشمعة 56. **و3** تركيبة الدّم 62 · الدّم ينقل الغذاء والغازات 65 · أهميّة الجلد 68 · التعفّن الجرثومي 72 · التلقيح 76 · المقاومة 80 · المجموعات الغذائيّة 84 · أغذية البناء/الطاقة/الوقاية 87 · الوجبة المتوازنة 90 · أمراض سوء التغذية 93. **و4** الزهرة ومكوّناتها 97 · التأبير والإخصاب 100 · دورة حياة النبتة الزهريّة 104 · السلسلة الغذائيّة 108 · مصادر تلوّث الأوساط المائيّة 112 · الأمراض الناتجة عن تلوّث المياه 115. **و5** التأثير الحراري 119 · التأثير الكيميائي 122 · أنواع المغنط 126 · قطبا المغنط 129 · البوصلة 132 · التأثير المغناطيسي 135 · وزن الأجسام 140. (La carte du manuel p.6 écrit **انتشار** là où le درس 02 et le guide disent **انتثار** — §7.4.)
+
+> **Recoupement par les renvois « التطبيق » des جذاذات** (rubrique 5, « انظر كتاب التلميذ ص … ») — chaque renvoi tombe **dans** les pages du chapitre attendu : ص 9 → `09` ; ص 31, 36, 45 → `01` ; ص 50 → `02` ; ص 70, 74, 78, 82 → `10` ; ص 86, 88, 92 → `04` ; ص 99, 102 → `06` ; ص 110, 113, 117 → `05`. Trois renvois sont sans numéro de page (و2 التطبيق 3 p.81 ; و3 التطبيق 1 et 2 p.110).
 
 ## 4 bis. `103604` lu EN ENTIER à l'image et chapitrage refait — 12 chapitres (2026-09-28)
 
@@ -329,27 +331,81 @@ manuel (و1 → و5). Chaque `chapter.json` porte `"manuel": {"code": "103604", 
 
 ## 5. Sources croisées
 
-- **Guide enseignant** : `503604P00.pdf` — « الإيقاظ العلمي — كتاب المعلّم للسّنة السّادسة » (182 p.). **Méthodologie** (المقاربة بالكفايات/بالمشروع/بالوضعيّة المشكل, p.3–19) + **carte de la و5** (p.181) + جذاذات. Il **ne tabule pas** d'إطار كفايات (≠ guides 4ème/5ème) ; le scope par notion vient des **أهداف d'unités** (manuel) et de la **خارطة الكتاب**.
-- **Manuel élève** : `103604P00.pdf` — « الإيقاظ العلمي — السنة السادسة » (160 p.). **خارطة الكتاب p.156–157 = source des pages par درس** (§4, offset 0) ; **cartes conceptuelles + أهداف par وحدة** (p.6/29/61/96/118) = source du scope par notion (§2) ; **المعجم p.158–159 = terminologie FR↔AR officielle** (§3).
-- **Contenu application** : `eveil-scientifique-6eme` (9 chapitres) — déjà aligné sur les 5 وحدات ; les `chapter.json` publiés citent « Programme officiel CNP 6ème + manuel scolaire 6ème + tadris.tn/app/178 » et **concordent** avec cette transcription (titres : الهواء، التنفّس، جهاز دوران الدم، التغذية، الوسط البيئي والسلاسل الغذائية، التكاثر الزهري، المغانط والبوصلة، الثقل، العين والإبصار).
-- **Taybah** (`taybah/6eme-base.md`) : séquençage trimestriel — vérification (le guide donne l'ordre des وحدات/دروس, pas une répartition trimestrielle figée).
-- **Divergences signalées** : aucune sur le fond. **Écarts ordre/regroupement** (sans incidence de scope, dus au découpage applicatif) : (a) **و1 العين والضوء** est placée **en tête du manuel** (p.6) mais le chapitre `09-oeil-vision` est en **dernière position** (`displayOrder 9`) côté contenu — l'optique pure (انتشار/انعكاس/انكسار/عدسات) y est **intégrée à l'œil**, pas isolée ; (b) le chapitre `06-reproduction-florale` précède `05-milieu...` dans le manuel (97 avant 108) mais le contenu publié met `05` (milieu) avant `06` (reproduction) — `displayOrder` figé ; (c) le chapitre `03-sang-circulation` reprend, en plus de تركيبة الدم (p.62–67), des notions cœur/circulation **déjà vues en 5ème** (sa description mentionne « القلب والأوعية ») — fidèle au manuel qui réactive le sang en 6ème.
+- **Guide enseignant** : `503604P00.pdf` — « الإيقاظ العلمي — كتاب المعلّم للسّنة السّادسة » (182 p., **lu en entier**). Méthodologie (p.3–23), **إطار الكفايات et خارطة البرنامج** (p.24–29), تصوّرات (p.30–31), puis le corps par unité (§7 chapeau). ~~Il **ne tabule pas** d'إطار كفايات~~ → **faux, corrigé le 2026-07-26** : il le tabule p.24–25 (§1.1–§1.2). Le scope par notion se lit dans les **أهداف d'unités** (manuel et guide, concordants), la **خارطة** (p.29) et, désormais, les **جذاذات** (المفاهيم / المحتوى / الحواجز, §7).
+- **Manuel élève** : `103604P00.pdf` — « الإيقاظ العلمي — السنة السادسة » (160 p., **lu en entier** le 2026-09-28). **خارطة الكتاب p.156–157 = pages par درس** (§4, offset 0) ; **cartes + أهداف + مشاريع par وحدة** (p.6/29/61/96/118) ; **المعجم p.158–159 = terminologie officielle** (§3). **Règle de scope (2026-10-20)** : le manuel et les activités élèves des جذاذات font foi pour ce qui est **enseigné** ; un ملفّ علمي ne l'étend pas (§2, bornes ✅/◐/⛔).
+- **Contenu application** : `eveil-scientifique-6eme` — **12 chapitres** depuis le 2026-09-28 (§4 bis), chacun avec `"manuel": {"code": "103604", "pages": …}` ; 36/36 دروس servis. ~~(9 chapitres)~~ : état du 2026-06-28, périmé.
+- **Taybah** (`taybah/6eme-base.md`) : séquençage trimestriel — vérification (le guide donne en outre le calendrier en 5 فترات, p.29, §2.0).
+- **Divergences guide ↔ manuel relevées (avec page)** : (a) carte de la و1 — **انتشار** (manuel p.6) vs **انتثار** (guide p.42) (§7.4) ; (b) **projets** de la و4 — mêmes projets, découpage différent (manuel p.96 : 5 puces ; guide p.151 : 4) (§2) ; projets de la و5 — 4 au manuel (p.157) contre 5 au guide (p.181, + جرس كهربائي) ; (c) **composition du sang** — 3 composants (manuel p.64, جذاذات p.109, 122) vs 4 (ملفّ p.89–90) ; (d) **groupes alimentaires** — 3 groupes fonctionnels (manuel p.88, جذاذات p.118–124) vs 6 (ملفّ p.97) ; (e) **chiffres** absents du manuel mais présents au ملفّ (78/21 %, 1/6 pour la Lune, 2 : 1 pour l'électrolyse…) : savoir-maître (§2 ◐). Le guide ne contredit **jamais** le manuel sur une notion enseignée sans se contredire lui-même ailleurs (§6).
+- ~~**Écarts ordre/regroupement** : `09-oeil-vision` en dernière position, `05` avant `06`…~~ → **résolus le 2026-09-28** : `displayOrder` suit l'ordre du manuel (§4 bis).
 
 ## 6. Incertitudes / à revérifier
 
+### 6.0 Ce que la lecture du 2026-10-20 a corrigé dans la fiche (avec la page)
+
+1. ~~« Pages du guide encore non lues : p.2 et p.103–180 — le corps des **جذاذات** (une par درس : أهداف، وسائل، سير الحصّة، تقييم) »~~ → **faux sur la nature des pages** (et levé sur la couverture) : il n'y a **pas une جذاذة par درس**. La و3 a **deux** جذاذات pour dix دروس (p.108–116, p.117–120), la و4 **trois** pour six دروس (p.152–154, 160–162, 163–166), et la **و5 (الطاقة, p.169–180) n'a QUE son ملفّ علمي** — ni جذاذة, ni وضعيّة إدماج, ni évaluation, ni حواجز / مؤشّرات (lecteur L3, toutes les pages vues). Pour la و5, le seul déroulé de séance officiel est celui du **manuel** (p.119–145).
+2. ~~« des جذاذات p.30–180 » (§1)~~ → corrigé : alternance de strates, inventaire au chapeau du §7.
+3. ~~« La و2 s'arrête ici… ni وضعيّة تقييم إدماجيّة, ni جدول توزيع, ni جدول إسناد, ni وضعيّات علاجيّة » (§7.21)~~ → **vrai pour p.63–86, faux pour l'unité** : l'**appareil d'évaluation n° 2** (p.125–130) est déclaré **« متّصلة بـ : الهواء والتنفّس (الوحدة 2) وجهاز دوران الدم والأمراض الجرثوميّة والتغذيّة (الوحدة 3) »** (p.125) ; ses **remédiations** (حواجز p.132, intercalaire p.131, six وضعيّات علاجيّة p.133–135) couvrent les deux unités. La و2 est donc évaluée **avec** la و3, à la fin de celle-ci (§7.33–§7.35).
+4. ~~« L'appareil d'évaluation complet semble n'avoir été déployé qu'une fois, sur la première unité. À reconfirmer sur la و3 »~~ → **infirmé** : déployé **deux** fois (n° 1 : و1, p.52–62 ; n° 2 : و2 + و3, p.125–135). Aucun pour la و4 ni la و5.
+5. ~~Projet de la و4 « لوحة حماية… · بحث حول عمليّة تطعير (تأبير) الأزهار… »~~ → **corrigé** : « لوحة … مجفّفة » + « بحث حول عمليّة **تقطير** الأزهار » + النّباتات الطبّيّة + المحميّات الطبيعيّة (manuel p.96 et p.157, guide p.151 — **relus à l'image** par le rédacteur) (§2).
+6. ~~Cycle de vie « (حوليّة/**وارثة**) »~~ → **corrigé** : **« (حوليّة ودائمة) »** dans les deux sources (manuel p.96, 157 ; guide p.151, 152, 154, 167 — relu à l'image) (§2).
+7. ~~Bornes de la و3 : « composition du sang (**4 éléments**) »~~ → **corrigé** : le manuel en enseigne **trois** (p.64) ; les صفيحات ne sont que dans le ملفّ (p.89–90) (§2, et point 10 ci-dessous).
+8. ~~« Le volet « الأمراض الجرثوميّة »… son cœur (التعفّن الجرثومي، التلقيح، المقاومة) commence tout juste à la dernière ligne de la p.102 » (§7.26)~~ → il occupe **p.102–106** (§7.27).
+9. ~~« Champ `chapter.manuel` : non encore renseigné »~~ → renseigné dans les 12 `chapter.json` (2026-09-28) **et**, depuis le 2026-10-20, dans le manifeste.
+
+### 6.1 Écarts internes du guide — ce que le manuel élève retient
+
+10. **Composition du sang : 3 ou 4 composants ?** Le ملفّ علمي (p.89–90) en donne **quatre** (بلازما · كريات حمراء · كريات بيضاء · **صفيحات دمويّة**, ces dernières avec leur rôle dans la coagulation). L'استنتاج 1 de la جذاذة (p.109), l'encadré « أستحضر مكتسباتي » (p.122) **et le manuel élève** n'en donnent que **trois** : _« الدّم سائل أحمر اللّون يتكوّن من [بلازما] و[كريّات] حمراء مستديرة ومقعّرة الوجهين عديمة النّوى، وكريّات [بيضاء] بها نواة وغير منتظمة الشّكل »_ (manuel p.64, استنتاج à trous, liste de mots imposée « كريّات بيضاء - بلازما - كريّات حمراء »). **Le manuel retient TROIS composants** ; il évoque la coagulation sans nommer de cellule responsable (p.64, 6-ب : « كيف تفسّر عدم تواصل سيلان الدّم إذا كان الجرح بسيطا… ? »). → Une question à clé ne demande jamais « 4 composants » ni les صفيحات.
+11. **Groupes alimentaires : 3 ou 6 ?** Le ملفّ (p.97) tabule **six** groupes (1 لحم/سمك/بيض/بقول · 2 حليب ومشتقاته · 3 مواد دهنيّة · 4 حبوب ومشتقاتها · 5 غلال وخضر طازجة · 6 خضر مطهيّة), structurés en trois paires. Les جذاذات (p.118–119), la وضعيّة إدماج (p.123–124 : « تصنّف الأغذيّة إلى مجموعات ثلاث ») et l'évaluation n° 2 (T1, p.129) en enseignent **trois**. **Le manuel retient TROIS groupes fonctionnels** : _« وتصنّف الأغذية إلى ثلاث مجموعات : مجموعة أغذية [البناء] ومجموعة أغذية [الطاقة] ومجموعة أغذية [الوقاية] »_ (manuel p.88, استنتاج), et le schéma à remplir p.88 nomme **مجموعة أغذية البناء والنموّ · مجموعة أغذية الطّاقة · مجموعة أغذية الوقاية**. ⚠️ Nuance à connaître : le درس 20 du manuel (p.84–86) emploie aussi « مجموعة غذائيّة » pour des **catégories d'origine** (p.85 : 6 rubriques d'observation — الأغذية الحيوانيّة · البقول الجافّة · الحبوب ومشتقّاتها · الأغذية الغنيّة بالسّكريات · الغنيّة بالزّيوت والشّحوم · الخضروات والفواكه ; p.87 : « مجموعة الأغذية الحيوانيّة - مجموعة الحبوب ومشتقّاتها - مجموعة البقول الجافّة - مجموعة الخضروات - مجموعة الفواكه ») ; mais la **classification enseignée** est la tripartite. → Pas de clé « six groupes » ; « سبعة » encore moins.
+12. **Zones de la flamme** : ملفّ p.77 vs استنتاج 6 p.83 se contredisent (§7.20) — pas de clé dans ce volume ; le manuel (§4 bis, 1) attribue lui aussi la suie à la flamme bleue (erreur non reprise).
+13. **التأبير الذّاتي** : p.139 = même fleur ; p.141-ب = même fleur **ou** autre fleur de la même plante (« التأبير المباشر ») ; la جذاذة TIC (p.157) donne الجلبّان والفول pour l'autopollinisation, le palmier pour la croisée. Le manuel (p.100–103) enseigne ذاتي/خلطي sans la variante « même plante » → retenir la définition **même fleur**.
+14. **Vocabulaire concurrent** (aucun n'est une erreur de scope, chaque contenu choisit et s'y tient) : الأزوت / النتروجين / أزوط (p.64–71) ; أوّل / أحادي أكسيد الكربون (p.73, 86 ; « ثاني » p.74 est une erreur) ; البروتيدات / الزّلاليات (p.94 vs p.118 — le manuel dit **الزّلاليات**, p.84, 86) ; مقرّبة/مبعّدة, رقيقة/غليظة الحافّة, محدّبة/مقعّرة (§7.12) ; الخلط / الرّطوبة المائيّة (p.34 vs p.44) ; النيوتين / النيوتن (p.179/180 — le manuel : **النّيوتن**, p.143).
+
+### 6.2 Numérotation et mise en page (constaté, rien d'inventé)
+
+15. **Numérotation des جذاذات sautée dans la و3** : p.108 « **جذاذة تنشيط عدد 1** » (6 حصص), puis p.117 « **جذاذة تنشيط عدد 4** » (4 حصص) — **aucune « عدد 2 » ni « عدد 3 »** n'est imprimée entre p.103 et p.128 (relu à l'image p.108 et p.117). La جذاذة 1 contient elle-même **quatre وضعيّات مشكل numérotées 1 → 4** (p.109, 111, 115, 115–116). On **constate** ; on ne renomme pas la جذاذة 4 en « 2 » et on ne suppose pas de pages manquantes : la pagination est continue (p.103 → 128 lues sans trou). Dans la و4, la numérotation est continue (عدد 1 p.152, عدد 2 p.160, عدد 3 p.163) ; la و1 a عدد 1 et 2, la و2 une seule جذاذة (عدد 1).
+16. Autres sauts constatés : « النّشاط الخامس » imprimé deux fois (و3, p.113 et p.114) ; deux blocs « النّشاط الخامس » dans la وضعيّة إدماج de la و1 (p.50–51) ; liste p.146 « * * * * puis 6 – … 11 » (n° 1–5 non imprimés) ; légende p.137 qui saute le n° 4 ; « – أنواع التأبير » sans n° 2 (p.141). La جذاذة p.108 n'imprime **pas** de rubrique مؤشّرات التّجاوز ; celle de p.117 l'imprime **deux fois** à l'identique.
+17. **Graphique thermique p.112** (و3, النّشاط الثالث) : aucune légende de lecture ; les dates sont disposées **de droite à gauche** (13 → 18 avril), comme l'écriture. Lu dans ce sens (relu à l'image par le rédacteur), la fièvre **monte** de ≈ 38 ° à ≈ 41,2 ° en dents de scie (pics du matin) — cohérent avec le texte (« ارتفاع درجة الحرارة »). Valeurs lues sur la courbe, non imprimées : pas de clé chiffrée.
+18. **Grille de spécification de l'évaluation n° 2 (p.126)** — relue à l'image : الهواء porte **une** croix مع3 (ligne 3-أ) et **deux** croix مع2 (3-أ, 3-ب), aucune مع1 ; la ligne **التعفّن الجرثومي (activité 6) ne porte aucune croix**, alors que l'épreuve étiquette T6 « مع3 » (p.130) ; aucun total imprimé (≠ و1 : 3/3/3). Les étiquettes en marge de l'épreuve (T1-أ مع1 · T1-ب مع3 · T2 مع1 · T3-أ/ب مع2 · T4 مع3 · T5-أ مع1 · T5-ب مع2 · T6 مع3) ne coïncident donc pas avec la grille. On transcrit les deux.
+
+### 6.3 `[?]` et `[sic]` restants (non bloquants, détail en §7)
+
+19. `[?]` : légende de la figure « عقد لمفية » p.103 (lue à 250 dpi, fiable) ; légendes manuscrites p.111 (seules 4 lisibles) ; repère « 9 » et lettres manuscrites du schéma de l'oranger p.154 ; appariement 5/6 du dessin du lac p.143 ; « نواد » p.166 ; lettres des figures p.175 (sonnerie), 177 (الخازني), 179–180 ; « سُمّين » p.103 (sens : toxines ?) ; « نضويّ » p.171 (forme d'aimant — le manuel p.126 écrit aussi « مغنط في شكل نضويّ », donc mot imprimé, sens « en U ») ; légende p.88 (§7.22).
+20. `[sic]` notables (ne pas propager) : « الوجبة الغذائيّة المتوازية » p.118 ; « الهزال الرّزي » p.117–124 (aussi au manuel ? non vérifié — le manuel p.87 dit « هزال الطّفل ») ; « البيروتي » p.177 (pour البيروني) ; « تأثيز » p.180 ; « ١٦٤ » parasite p.164 ; « السّيجاة » p.130 ; « حلبان » p.154 ; rose des vents « غ = (O) » (abréviation française, p.176) ; tableau p.180 « يتميّزون جسم ».
+
+### 6.4 Restent ouverts (hors de ce LOT A)
+
+- **Le document-programme officiel séparé** (« البرامج الرسميّة ص 119، 120 », cité p.23) reste absent de `cnp-officiel/` : seule source des مؤشّرات **du référentiel** (ceux des séances sont dans les جذاذات). Non bloquant.
+- ~~« محاور physiques sans chapitre publié » (effets du courant, immunité)~~ → **levé le 2026-09-28** : chapitres `11-effets-courant-electrique` et `10-microbes-defense` (§4 bis). Aucune notion officielle sans chapitre (§4).
+- ~~« Les جذاذات détaillées n'ont pas été transcrites cellule par cellule »~~ → **levé le 2026-10-20** : toutes les جذاذات, وضعيّات et évaluations du volume sont au §7.
+- **R-7** : à faire (protocole A5.2). Zones à sonder en priorité : §7.27–§7.46 (neuves), les relectures du rédacteur (§6.0 points 5–7, §6.1 points 10–11), la grille p.126.
+
+### 6.5 Questions au propriétaire
+
+- **Q-1 — Savoir-maître chiffré dans le contenu ?** Le ملفّ علمي donne des valeurs absentes du manuel (78/21 %, 1/6 de la Lune, 2 : 1 de l'électrolyse, 120 jours, 5 millions/mm³…). Proposition : les citer en **enrichissement** (« هل تعلم ؟ ») sans jamais en faire une clé, sauf les quatre valeurs du manuel (1/5 d'oxygène, 1,3 g/L, 2/3 d'eau, 120 jours). À confirmer.
+- **Q-2 — Les صفيحات** : le chapitre `03` doit-il les **mentionner** (enrichissement, ملفّ p.89–90) ou les **taire** comme le manuel ? Proposition : les taire dans le cours élève (le manuel les tait), les garder hors clés.
+- **Q-3 — Électroaimant et intensité** : le manuel enseigne le facteur « nombre de spires » (p.137) ; le facteur « intensité / nombre de piles » n'est que dans le ملفّ (p.174). Proposition : ◐, pas de clé. À confirmer.
+- **Q-4 — Potabilisation** (p.165–166, extension) : la traiter dans `05` comme lecture de schéma (◐) ou l'omettre ? Proposition : lecture de schéma sans clé de mémorisation.
+
+### 6.6 Incertitudes levées antérieurement (2026-07-26), gardées
+
 - ~~**Format du guide ≠ 4ème/5ème** — « sans table إطار الكفايات ni المخطّط السّنوي tabulé »~~ → **LEVÉE le 2026-07-26** par la lecture des **p.20–29** : le إطار الكفايات (الكفاية النهائيّة + المكوّنان + 6 اقتدارات) est **p.25**, la matrice كفايات أفقيّة × مجال العلوم **p.24**, les critères d'évaluation **p.26**, l'أداء المنتظر par ثلاثيّة **p.27**, la progression 1ère→6ème **p.28**, et le **المخطّط السّنوي tabulé** (5 فترات × وحدات × محاور) **p.29**. Tout est transcrit en §1.1–§1.6 et §2.0. La conclusion précédente venait d'un **survol non exhaustif** : elle n'aurait pas dû être écrite au présent affirmatif sur des pages non lues.
 - ~~**Reste hors de ce volume : les مؤشّرات**~~ → **NUANCÉE le 2026-07-26** (lecture de la جذاذة عدد 1, p.43–44). Il est exact que le volume ne **tabule** pas les مؤشّرات dans un إطار كفايات — la case du schéma p.25 renvoie bien à « انظر البرامج الرسميّة ». Mais **chaque جذاذة en porte deux séries**, nommées et explicites : **مؤشّرات التّجاوز** (une par حاجز déclaré) et **مؤشّرات القدرة المستهدفة** (les gestes du تمشّي attendus). Le renvoi p.25 vise donc les مؤشّرات **du référentiel de compétences**, pas ceux de la séance. Pour un usage de génération, les مؤشّرات opérationnels sont **dans les جذاذات** — voir §7.5.
-- **Le document-programme officiel séparé** (celui cité p.23 « البرامج الرسميّة ص 119، 120 ») reste absent de `cnp-officiel/`. Il n'est plus bloquant pour la génération, mais il resterait la seule source des مؤشّرات du référentiel.
-- **Pages du guide encore non lues : p.2 et p.103–180** — le corps des **جذاذات** (une par درس : أهداف، وسائل، سير الحصّة، تقييم). Elles ne changent pas le **scope** (fixé par §2.0 + §4), mais elles portent le **détail didactique par درس** ; c'est la tranche suivante du LOT A pour ce couple.
-- **محاور physiques sans chapitre publié dédié** : les **trois effets du courant électrique** (التأثير الحراري p.119 · الكيميائي p.122 · المغناطيسي p.135 — soit l'électricité de la و5) **ne sont pas couverts** par un chapitre du contenu publié ; de même l'**immunité/microbes** (الجلد-الجراثيم · التعفّن الجرثومي · التلقيح · المقاومة, p.68–83 de la و3) **n'a pas de chapitre dédié**. Le contenu publié (9 ch.) couvre donc **une partie** du programme ; ces blocs sont **au programme officiel** mais **absents du contenu app** → à signaler côté couverture (manifeste), pas une erreur de scope. La colonne pages de §4 a donc volontairement **resserré** les bornes des chapitres physiques (`07`=المغانط/البوصلة seulement ; `08`=الثقل seulement) pour ne pas leur imputer l'électricité.
-- **Bornes manuel (§4)** déduites « début du درس suivant − 1 » à partir de la خارطة الكتاب (p.156–157) : exactes au درس près, à ± une page de titre/transition. La frontière `01-air`/`02-respiration` est posée sur le درس « التبادل الغازي في الرئتين » (p.47) ; la frontière `03`/`04` (sang vs nutrition) saute le bloc immunité p.68–83 (sans chapitre).
-- **Cartes conceptuelles / أهداف** lus sur renders 170–200 dpi **nets** (manuel p.6/29/61/96/118 ; guide p.181) — fiables. Les **جذاذات détaillées** (déroulé de chaque درس dans le guide) **n'ont pas été transcrites cellule par cellule** (volume 182 p.) ; le scope notionnel est synthétisé des cartes + أهداف + titres de دروس + معجم. À reconfirmer au scan seulement si un déroulé de séance précis est requis.
-- **Champ `chapter.manuel`** : non encore renseigné dans les `chapter.json` publiés (aucun ne porte la clé `manuel`) ; les pages de §4 (`{ code: "103604", pages: … }`) sont prêtes à l'alimenter.
-- **Répartition trimestrielle (فترات)** : non figée par le guide ; voir Taybah si un séquençage par trimestre est requis (non nécessaire pour le scope).
 
 ## 7. الملفّ العلمي du guide — savoir savant par unité
 
 > **Structure du corps du guide, découverte le 2026-07-26.** Après le cadrage (p.20–29) et les تصوّرات (p.30–31), le guide déroule **unité par unité** : un **intercalaire** (page pleine au titre de la وحدة), puis un **الملفّ العلمي** — le savoir savant destiné à l'enseignant, avec expériences et figures — puis les جذاذات, puis une وضعيّة تعلّم الإدماج. **Au-delà, la structure n’est pas la même d’une unité à l’autre** : la و1 ajoute une épreuve d’évaluation intégrative avec son appareil complet (spécification, passation, barème) **et** un bloc de **وضعيّات علاجيّة** adossées à ses حواجز (§7.11–§7.12) ; la **و2 n’a rien de tout cela** et s’arrête à sa وضعيّة تعلّم الإدماج (§7.21). Ne pas extrapoler d’une unité sur la suivante. C'est cette structure qui rend les p.36–180 lisibles par tranches d'unité plutôt qu'en vrac.
+>
+> **Inventaire complet, établi le 2026-10-20 (guide lu en entier)** — les strates **varient d'une unité à l'autre** ; ne rien extrapoler :
+>
+> | وحدة | pages | ملفّ علمي | carte + أهداف | جذاذات تنشيط | وضعيّة تعلّم الإدماج | appareil d'évaluation (épreuve · spécification · passation · barème) | وضعيّات علاجيّة |
+> | --- | --- | --- | --- | --- | --- | --- | --- |
+> | **و1** العين والضوء | 32–62 | p.33–41 | p.42 | عدد 1 p.43–46 · عدد 2 p.47–49 | p.50–51 | **n° 1** : épreuve p.53–54 · spécification p.55 · passation p.56 · barème p.57 | 3, p.58–62 |
+> | **و2** الهواء والتنفّس | 63–86 | p.64–77 | p.78 | عدد 1 p.79–84 | p.85–86 | — (évaluée par le **n° 2**, ci-dessous) | — (idem) |
+> | **و3** الدوران/الأمراض/التغذية | 87–135 | p.88–106 | p.107 | **عدد 1** p.108–116 (4 وضعيّات مشكل) · **عدد 4** p.117–120 (sic : ni 2 ni 3) | p.121–124 | **n° 2, commun و2 + و3** : passation p.125 · spécification p.126 · barème p.127 · épreuve p.128–130 | 6, p.131–135 (حواجز p.132) |
+> | **و4** التكاثر الزهري والوسط البيئي | 136–168 | p.137–150 | p.151 | عدد 1 p.152–154 · عدد 2 p.160–162 · عدد 3 p.163–166 ; + **leçon modèle TIC** p.155–159 | p.167–168 | — | — |
+> | **و5** الطاقة | 169–182 | **p.170–180 (seule strate)** | p.181 | — (p.182 : voir §2) | — | — | — |
+>
+> Pages blanches : p.2 (© seul), 140, 173. Intercalaires : p.30, 32, 52, 58, 63, 87, 131, 136, 155, 169.
 
 ### 7.1 الوحدة الأولى : العين / الضّوء — الملفّ العلمي (guide p.32–35)
 
@@ -1126,6 +1182,8 @@ Comme pour la و1 (§7.4), le guide clôt son ملفّ علمي par sa **propre 
 
 > ⚠️ **Réserve sur le corrigé du نشاط الأوّل** : il liste parmi les composants de l'air « ثاني أكسيد الكربون - النتروجين » mais **omet l'azote sous son autre nom** et n'énumère pas la vapeur d'eau, pourtant établie en §7.13 comme composant. Il liste par ailleurs « الانتثار » parmi les propriétés de l'air, alors que la propriété établie p.65 est l'**الانتشار** (diffusion) — الانتثار étant, dans ce volume, un terme d'**optique** (§7.2). Confusion de deux mots proches ; non corrigée.
 
+> ⚠️ **Corrigé le 2026-10-20 (lecteur L1, p.125)** : la note qui suit est juste pour les p.63–86 mais **fausse pour l'unité** — la و2 est évaluée par l'**appareil d'évaluation n° 2**, placé en fin de و3 (p.125–135) et déclaré « متّصلة بـ : الهواء والتنفّس (الوحدة 2) وجهاز دوران الدم والأمراض الجرثوميّة والتغذيّة (الوحدة 3) » ; voir §7.33–§7.35. La conjecture « déployé une seule fois » est infirmée.
+>
 > 🚩 **La و2 s'arrête ici — et sa structure n'est PAS celle de la و1.** La page suivante (p.87) est l'intercalaire de la **و3**. Il n'y a donc, pour la و2, **ni وضعيّة تقييم إدماجيّة, ni جدول توزيع الأهداف, ni جدول إسناد الأعداد, ni وضعيّات علاجيّة** — les quatre dispositifs qui occupaient p.52–62 pour la و1. La و2 tient en **p.63–86, soit 24 pages** (contre 31 pour la و1), et se compose de : intercalaire · ملفّ علمي (p.64–77) · carte et objectifs (p.78) · **une seule** جذاذة (p.79–84) · وضعيّة تعلّم الإدماج (p.85–86).
 >
 > **Conséquence pour la lecture du volume** : la structure en cinq strates établie en §7.12 décrit la **و1 seule**, et ne peut pas servir à prévoir le contenu des unités suivantes. L'appareil d'évaluation complet (spécification, passation, barème, remédiation) semble n'avoir été déployé qu'**une fois**, en démonstration, sur la première unité. À reconfirmer sur la و3.
@@ -1148,7 +1206,7 @@ Comme pour la و1 (§7.4), le guide clôt son ملفّ علمي par sa **propre 
 
 > **Ce que cela vaut pour `03-sang-circulation`.** La description est **complète et orientée** (droite → poumons → gauche → corps), avec la **différence d'épaisseur des parois** expliquée par la fonction, et le **code couleur** cohérent avec §7.15. C'est le niveau exact des items « quel ventricule envoie le sang aux poumons ? » ou « pourquoi la paroi du ventricule gauche est-elle plus épaisse ? », avec une clé sûre.
 
-**2. مكوّنات الدّم (p.89–90)** — le sang est un **tissu** fait de **بلازما** et de cellules : كريات حمراء · كريات بيضاء · صفيحات دمويّة.
+**2. مكوّنات الدّم (p.89–90)** — ⚠️ _ajout 2026-10-20 : le manuel élève (p.64) et les جذاذات (p.109, 122) n'enseignent que **trois** composants ; les صفيحات ci-dessous sont du savoir-maître (◐) — §6.1, point 10._ — le sang est un **tissu** fait de **بلازما** et de cellules : كريات حمراء · كريات بيضاء · صفيحات دمويّة.
 
 | composant               | ce que le guide en dit (p.89–90)                                                                                                                                                                                                                                                                                                                                                     |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -1201,7 +1259,7 @@ Fonction principale de l'hémoglobine : **transporter l'oxygène et le CO₂** �
 
 > 🎯 **Ce que cette tranche donne, et ce qu'elle ne donne pas.** Elle fournit à `03-sang-circulation` tout ce qui lui manquait en profondeur : anatomie du cœur, trajet orienté, composition du sang **chiffrée**, coagulation, **groupes sanguins avec leur logique** (mécanisme donneur/receveur, pas seulement la liste), don du sang, hémorragies et premiers secours, maladies vasculaires. Les groupes sanguins et le schéma du losange **O → A/B → AB** sont un excellent support d'exercice de raisonnement à clé certaine.
 >
-> ⚠️ **En revanche, rien ici ne concerne l'immunité au sens du bloc p.68–83 du manuel élève** (الجلد-الجراثيم، التعفّن الجرثومي، التلقيح، المقاومة) signalé en §6 comme **sans chapitre publié** : le rôle des globules blancs est mentionné en deux lignes (p.91), c'est tout. Le volet « الأمراض الجرثوميّة » annoncé par l'intercalaire p.87 **n'a pas encore commencé** à la p.92 — il est dans la tranche suivante.
+> ⚠️ **En revanche, rien ici ne concerne l'immunité au sens du bloc p.68–83 du manuel élève** (الجلد-الجراثيم، التعفّن الجرثومي، التلقيح، المقاومة) signalé en §6 comme **sans chapitre publié** : le rôle des globules blancs est mentionné en deux lignes (p.91), c'est tout. Le volet « الأمراض الجرثوميّة » annoncé par l'intercalaire p.87 **n'a pas encore commencé** à la p.92 — il est dans la tranche suivante. → il occupe p.100–106 (§7.26–§7.27).
 
 > ⚠️ **Une légende manuscrite partiellement illisible (p.88).** Le « مقطع طولي لقلب الإنسان » est un dessin **à la main**, et deux de ses étiquettes ne se lisent pas de façon sûre au rendu 150 dpi : celle transcrite ci-dessus « الصّمّاك الثّلاثيّة » (probablement الصّمّامات الثّلاثيّة) et « قلاف وترية » (probablement حبال وتريّة). **On ne comble pas** : les deux sont reportées telles qu'elles se lisent, avec cette réserve. À reconfirmer par un recadrage à 300 dpi si un contenu doit s'appuyer sur la nomenclature valvulaire — ce que le programme de 6ème n'exige pas.
 
@@ -1308,6 +1366,8 @@ Et la conclusion économique, qui est le vrai message de la page : _« ويمك�
 |  **5**   | الغلال والخضر الطازجة                    | الأملاح المعدنيّة · الفيتامينات («ب»، «ج») · الألياف (سليلوز) | **الحفاظ على سلامة الجسم من الأمراض**                  |
 |  **6**   | الخضر المطهيّة                           | _(idem groupe 5)_                                             | _(idem groupe 5)_                                      |
 
+> ⚠️ **Ajout 2026-10-20 : ce tableau n'est PAS la classification enseignée.** Le manuel élève (p.88) et les جذاذات (p.118–124) enseignent **trois** groupes fonctionnels (البناء والنموّ · الطاقة · الوقاية) — §6.1, point 11. Les six groupes ci-dessous sont un savoir-maître (◐).
+
 > **Six groupes, pas sept.** À noter pour la génération : ce découpage en **six** est celui du guide tunisien ; il diffère des classifications à sept groupes courantes ailleurs. Les groupes **1 et 2** partagent le même apport (protéines) et le même bénéfice, de même que **3 et 4**, puis **5 et 6** — le tableau est donc structuré en **trois paires**, une par grande fonction : bâtir, fournir l'énergie, protéger.
 
 **أقوال خاطئة في مجال التّغذيّة (p.98)** — un tableau **الخطأ / الصّواب** de six lignes, dont la valeur pédagogique est directe :
@@ -1397,4 +1457,250 @@ Pour les petites plaies simples, **pas besoin de bandage** : il suffit de poser 
 
 **II — التعفّن الجرثومي (p.102, début)** — l'humain est en **contact direct** avec les germes répandus dans tous les milieux (**ماء - تربة - هواء**), et pourtant il n'est que **rarement** atteint par les germes nuisibles, _« ذلك لأنّ لجسمه **حواجز طبيعيّة** تحول دون تسرّبها إليه (الجلد) كما أنّه يمتلك **وسائل دفاعيّة طبيعيّة ووسائل دفاعيّة مكتسبة** تقاوم كلّ هجوم وجرثومي »_. La question posée — **ما هي الحواجز الطّبيعيّة لمقاومة الجراثيم ؟** — ouvre une liste dont le premier terme, **الجلد**, est la dernière ligne de la page.
 
-> 🎯 **Ce que cette tranche apporte, et à quel chapitre.** Le volet nutrition (p.93–99) donne à `04-nutrition` un socle complet : composition des aliments, vitamines et sels **tabulés**, batterie de réactifs, repas équilibré, six groupes alimentaires, six idées fausses corrigées, maladies de carence et d'excès, règles d'hygiène alimentaire. Le volet peau et premiers secours (p.100–102) est en revanche **sans chapitre publié correspondant** — il relève du bloc immunité p.68–83 du manuel élève, signalé en §6 comme non couvert. C'est le début de la réponse à cette lacune, mais **le cœur du sujet (التعفّن الجرثومي، التلقيح، المقاومة) commence tout juste** à la dernière ligne de la p.102.
+> 🎯 **Ce que cette tranche apporte, et à quel chapitre.** Le volet nutrition (p.93–99) donne à `04-nutrition` un socle complet : composition des aliments, vitamines et sels **tabulés**, batterie de réactifs, repas équilibré, six groupes alimentaires, six idées fausses corrigées, maladies de carence et d'excès, règles d'hygiène alimentaire. Le volet peau et premiers secours (p.100–102) était alors **sans chapitre publié correspondant** (servi depuis le 2026-09-28 par `10-microbes-defense`) — il relève du bloc immunité p.68–83 du manuel élève, signalé en §6 comme non couvert. C'est le début de la réponse à cette lacune, mais **le cœur du sujet (التعفّن الجرثومي، التلقيح، المقاومة) commence tout juste** à la dernière ligne de la p.102. → **Suite : §7.27** (p.103–106).
+
+### 7.27 الملفّ العلمي de la و3 (fin) : التعفّن الجرثومي, التلاقيح, العلاج (guide p.103–106)
+
+> **Lu le 2026-10-20 (lecteur L1).** Suite directe du §7.26 : la p.103 continue la liste « ما هي الحواجز الطّبيعيّة لمقاومة الجراثيم ؟ » ouverte par **الجلد** à la dernière ligne de la p.102. Nature : savoir du maître (◐ sauf ce que le manuel p.68–83 et la جذاذة §7.30 reprennent).
+
+**1. Les autres حواجز طبيعيّة (p.103)**, telles qu'imprimées :
+
+- **التجويف الأنفي** : _« الّذي يبطّنه غشاء مخاطي وشعيرات موجودة في جزئه الأمامي، وهو ما يحول دون تسرّب الجراثيم إلى المجاري التنفّسيّة »_ ;
+- **الجهاز الهضمي** : _« الّذي يتصدّى للجراثيم الّتي قد تدخله فيفتك بها بفضل إفرازات الغدد اللّعابيّة والعصارة المعديّة »_ ;
+- **الغدّة الدّمعيّة** : _« الّتي تقضي على الجراثيم المتسرّبة إلى العين بفضل انزيم يدعى الليزوزوم »_ ;
+- **اللّمف (البلغم)** : _« سائل شفّاف يوجد بين خلايا مختلف النّسيج ويشكّل جسرا بين الدّم وهذه الخلايا تعبر عليه الأغذية والاكسيجين والفضلات ؛ وهو يشبه الدّم في تركيبته لكنّه خال من الكريات الحمراء »_ ; il se forme quand une part du plasma traverse la paroi des capillaires avec des globules blancs (**البلغميات**) ; il circule dans le **الجهاز اللّمفي (البلغمي)** qui le ramène au cœur ; sa quantité chez l'humain sain est estimée au **quart de la masse du corps** ;
+- **العقد اللّمفاويّة** : _« … تشكّل مصفاة تمنع مرور الجراثيم والسّموم، وهي كثيرة في العنق وتحت الإبط وتحت الفك السّفلي وفي أحشاء البطن »_.
+
+Figure p.103 (dessin à la main, légende lue à 250 dpi) : système lymphatique sur une silhouette — **1** الوريد تحت الترقوة الأيسر · **2** القناة الصدرية · **3** حوض (بيكة) · **4** وعاء كيلوسي · **5** معي دقيق · **6** الوريد اللمفي الكبير · **7** الوريد تحت الترقوة الأيمن · **8** عقد لمفية.
+
+**2. أعراض التعفّن الجرثومي (p.103)** — par une plaie ou une brûlure, les germes trouvent _« الظّروف الملائمة (الدّفء، الغذاء..) فتتكاثر وتفرز مواد سامّة ينتج عنها تعفّن جرثومي قد يكون موضعيّا … وقد ينتشر بعيدا عنها »_. Cas d'école : une piqûre d'aiguille négligée. **الالتهاب الموضعي** — trois symptômes, chacun avec sa cause :
+
+1. **احمرار** et **ارتفاع درجة الحرارة** au point atteint ← afflux de sang et **تمطّط الشعيرات الدّمويّة** ;
+2. **ألم موضعي** ← irritation des terminaisons nerveuses par ce que sécrètent les germes ;
+3. **انتفاخ موضعي** ← sortie de plasma et de globules blancs par les capillaires voisins.
+
+Figure (deux coupes de peau) : (1) une **شوكة** traverse طبقة متقرّنة et بشرة jusqu'à la أدمة, germes près d'une **نهاية عصبيّة حسّيّة** ; (2) après infection : الجرح · انتفاخ واحمرار · جراثيم · بلازما · كريّات بيضاء, mention **« تمطّط الوعاء الدّموي »** (« شعير دمويّة » [sic]).
+
+**3. مراحل الالتهاب : الدّفاع الدّاخلي (p.104)** — _« إنّ هذا الالتهاب الموضعي هو أوّل ردّ فعل دفاعي للجسم »_ : chaque globule blanc traverse la paroi du capillaire, envoie vers un germe des **أرجل كاذبة**, l'englobe dans une **فجوة سيتوبلازميّة** et le digère par ses **انزيمات** — **البلعمة**. Figure « مراحل الالتهاب : الدّفاع الدّاخلي » en 4 vignettes : الجراثيم تخترق الجلد عن طريق الجرح · تعفّن موضعي (تكاثر الجراثيم، تمدّد الشعيرة) · هجرة البالعات الصّغيرة إلى مكان التّعفّن · **هضم الجراثيم وتكوين القيح (دمّلة)**. Figure « بلعمة الجراثيم » (4 globules, « مراحل ابتلاع الجرثومة من قبل الكريّة البيضاء »).
+
+**استفحال التعفّن (p.104)** : si la défense locale échoue, les germes gagnent les vaisseaux, puis les **العقد اللّمفاويّة** qui gonflent et filtrent ; si les globules blancs lymphatiques l'emportent, l'infection cesse.
+
+**4. تعفّن الدّم (p.105)** — si les germes franchissent les ganglions, le sang les porte aux organes ; ils rencontrent une forte résistance au **foie** et à la **rate**, le corps produisant des **ضادّات** ; au-delà, **تسمّم الدّم** : fièvre (**40**) et risque de mort sans traitement rapide.
+
+**5. دور التلاقيح (p.105)** — définition imprimée : _« التلقيح : هو إدخال جراثيم أو سمّين مضعفة في جسم سليم لتقوم الكريات البيضاء بصنع ضادّات تبقى في الدّم، وعند تعرّض الجسم إلى مرض جرثومي، فإنّ تلك الضّادات تتصدّى له وتُبطل مفعوله لتتمكّن الكريات البيضاء من بلعمة الجراثيم بسهولة، غير أنّ هذه الضّادات لا تبقى في الدّم إلاّ لمدّة محدودة، لذلك تقع إعادة التلقيح »_ — exemple : l'immunité contre la variole dure **≈ 10 ans**. Puis **الرّوزنامة المثاليّة للتلقيح** :
+
+| السنّ | اللقاح (tel qu'imprimé) |
+| --- | --- |
+| إثر الولادة | اللّقاح ضدّ السّلّ (ب.س.ج :..) في الذراع الأيسر |
+| 3 أشهر | لقاح أوّل ضدّ الخناق والكزّاز والسّعال الدّيكي في الظّهر + لقاح ضدّ الشّلل |
+| 4 أشهر | لقاح ثان ضدّ السّعال الدّيكي + الشّلل |
+| 6 أشهر | لقاح ثالث ضدّ السّعال الدّيكي + الشّلل |
+| 9 أشهر | لقاح ضدّ الحصبة |
+| 15 شهرا | إعادة التلقيح ضدّ الحصبة |
+| 18 شهرا | إعادة التّلقيح ضدّ الخناق والكزّاز والشّلل والسّعال الدّيكي |
+| العامّ السّادس | إعادة التّلقيح ضدّ الخناق والكزّاز والشّلل والسّلّ |
+
+Note imprimée : _« وضعت هذه الرّوزنامة على سبيل المثال »_ — ne pas hésiter à vacciner un enfant en retard, respecter les rappels, garder le **الدّفتر الصحّي / بطاقة التّلقيح**. Schéma de synthèse : **المناعة الطّبيعيّة** → (الالتهاب – البلعمة) ; **المناعة المكتسبة تؤمّنها التّلاقيح** → (الخلايا اللّمفاويّة).
+
+**6. أنواع اللّقاحات (p.106)** — (أ) **جراثيم حيّة مخفّفة** (cultures répétées : السّلّ / الشّلل / داء الكلب والحصبة) ; (ب) **جراثيم ميّتة أو عاطلة** (chaleur, **الفرمول**, UV ; immunité courte → **تذكير**) ; (ج) **سمّينات مخفّفة** (formol + chaleur ; ex. **الكزاز**).
+
+**7. العلاج باستعمال الأدوية (p.106)** — _« يتمّ علاج الأمراض الجرثوميّة بواسطة الأمصال والمضادّات الحيويّة »_. **المصل** = _« القسم السّائل من الدّم الّذي يعلو الخلطة الدّمويّة عندما يكون الدّم متخثّرا »_, employé contre certaines maladies ou poisons. **المضادّات الحيويّة** = substances produites par des champignons ou bactéries ; « depuis **1944** » : la **ستربتوميسين** (Waksman, contre la tuberculose), après la **بنيسلين** (Fleming). _« كلّ مضاد حيوي يؤثّر في بعض البكتيريات دون الأخرى »_.
+
+**8. قراءة للتوسّع — مرض الكزاز (p.106)** : _« تعيش جرثومة الكزاز في التّراب … ومن أعراض الإصابة بمرض الكزاز تشنّج عضلات الفكّين وعضلات الجهاز التّنفّسي وشدّة تقلّصها ممّا يتسبّب في الاختناق والموت »_ — texte repris presque mot pour mot par le manuel élève (p.82, « أضيف إلى معارفي »).
+
+> 🎯 **Pour `10-microbes-defense`** : la chaîne **plaie → germes → inflammation (rougeur/chaleur/douleur/gonflement, chacun avec sa cause) → phagocytose → pus → ganglions → septicémie** est complète et ordonnée, avec ses figures ; elle donne une question de mise en ordre à clé certaine. Le niveau élève s'arrête à : symptômes, البلعمة, pus, propagation si échec, vaccin = germes affaiblis, immunité naturelle/acquise, sérums et antibiotiques (manuel p.72–82). Lymphe, ganglions, ضادّات, types de vaccins, calendrier chiffré, dates : ◐.
+
+> ⚠️ Réserves : « سمّين / سُمّين » (p.103, 105) n'est défini nulle part (sens probable : toxines) `[?]` ; le tableau range « الشّلل » parmi les vaccins vivants (vrai pour le vaccin oral, pas pour l'injectable) — pas de clé ; le manuel associe BCG/polio au الكشط / à l'التجرّع (pratiques datées, §4 bis).
+
+### 7.28 مخطّط الوحدة 3 et الأهداف المميّزة, version guide (p.107)
+
+Titre : « **الوحدة الثّالثة : جهاز دوران الدّم والتّغذية والأمراض الجرثوميّة** » — ordre des thèmes **différent** de l'intercalaire p.87 (« … والأمراض الجرثوميّة والتغذيّة ») et du dossier (دوران → تغذية → أمراض) : trois ordres pour une unité.
+
+**Carte** (concept central « جهاز دوران الدّم والأمراض الجرثوميّة والتّغذية », 9 branches) : تركيبة الدّم · وظيفة الدّم في نقل الغذاء والغازات · أمراض سوء التّغذية · التّغذية المتوازنة · المقاومة باستعمال الأدوية · أهمّيّة الجلد في منع تسرّب الجراثيم داخله · التّلاقيح · وظائف المجموعات الغذائيّة · المجموعات الغذائيّة. (Le manuel p.61 en a 10 : il ajoute التعفّن الجرثومي et أهميّة المناعة الطبيعيّة, et n'a pas وظائف المجموعات comme branche propre.)
+
+**المشروع** : _« إعداد ملفّ إنجازات « Port folio » يتضمّن معلومات عن التّغذيّة السّليمة ودورها في وقاية الجسم من الأمراض ضدّ الأمراض [sic] (انظر التّوضيحات المتّصلة بملف الانجازات بالملفّ العلمي) »_.
+
+**الأهداف المميّزة** (10) : 1 تعرّف تركيبة الدّم · 2 تبيّن وظيفة الدّم في نقل الغذاء والغازات · 3 تبيّن دور الجلد في حماية الجسم من تسرّب الجراثيم · 4 وصف أعراض التعفّن الجرثومي · 5 تبيّن دور التلاقيح في إكساب الجسم مناعة ضدّ بعض الأمراض الجرثوميّة · 6 تبيّن كيفيّة مقاومة الجراثيم الّتي تتسرّب إلى الجسم · 7 تصنيف الأغذية وتبيّن وظيفة كلّ مجموعة غذائيّة · 8 تركيب وجبة غذائيّة متوازنة · 9 تعرّف وجبات غذائيّة حسب السّنّ ونوع النّشاط · 10 تعرّف بعض الأمراض النّاتجة عن سوء التّغذية.
+
+### 7.29 جذاذة تنشيط عدد 1 de la و3 — cadre et وضعيّة مشكل 1 : le sang (guide p.108–111)
+
+> **Une جذاذة inhabituelle** : « **تنجز في 6 حصص** », et elle contient **quatre وضعيّات مشكل numérotées 1 → 4** (p.109, 111, 115, 115–116), chacune avec تحليل/تصوّرات, تحقّق علمي, استنتاج numéroté, تطبيق et souvent تقييم/توسّع — **7 استنتاجات**, **6 تطبيقات** au total. Pas de rubrique « حوصلة النتائج ». Relue à l'image p.108.
+
+**Cadre (p.108)** :
+
+| rubrique | contenu imprimé |
+| --- | --- |
+| **الوحدة** | جهاز الدّوران والأمراض الجرثوميّة والتغذية |
+| **المفاهيم** | البلازما - الكريّات البيضاء/الحمراء - الدّم المتخثّر - نقل الغذاء والغازات - الجراثيم - التعفّن الجرثومي الموضعي - التسمّم - التّلاقيح - المناعة الطّبيعيّة - المناعة المكتسبة … |
+| **المحتوى** | تركيبة الدّم، البلازما والكريّات - الدّم المتخثّر : العلقة والمصل - نقل الغذاء والغازات - أهمّيّة الجلد في منع تسرّب الجراثيم إلى الجسم - التعفّن الجرثومي - التّلاقيح - المقاومة باستعمال الأدوية - المقاومة الطّبيعية للجسم |
+| **الأهداف** | les 6 premiers objectifs du §7.28 |
+| **المستلزمات** | دم طازج/متخثّر - صور للكريّات الدّمويّة - مجهر - صور لمقطع طولي في الجلد - صور عن التعفّن الجرثومي ومراحله - دفتر تلاقيح - علب فارغة لأدوية أو صور لها … |
+| **الحواجز** (5) | لا يحتوي الدّم عدّة مكوّنات - عدم تبيّن وظيفة الدّم في نقل الغذاء والغازات - عدم تمثّل مفهوم التعفّن الجرثومي - عدم تمييز التّلاقيح من الأدوية - عدم القدرة على تمييز المناعة الطّبيعيّة من المناعة المكتسبة |
+| **مؤشّرات التّجاوز** | **non imprimés** dans cette جذاذة (écart au gabarit, §6.2) |
+| **مؤشّرات القدرة المستهدفة** | توظيف المكتسبات لشرح الظّاهرة أو حلّ الوضعيّة · عرض الفرضيّات ومناقشتها · توظيف تمشّ تجريبي لتحليل الوضعيّة · استثمار رسوم ومشاهد لجمع بيانات · إيجاد علاقة بين المفاهيم · صياغة استنتاج · استثمار المفاهيم العلميّة المكتسبة في وضعيّات جديدة |
+
+**الوضعيّة المشكل عدد 1 (p.109)** : _« ممّ يتركّب الدّم ؟ وكيف يتمّ نقل الغذاء والغازات في جسم الإنسان ؟ »_ — عناصر : تركيبة دم الإنسان · وظيفة الدّم في نقل الغذاء والغازات. **التّصوّرات** (« مأخوذة من نماذج من تصوّرات التّلاميذ ») : _« يتركّب الدّم من السّكّريات والفيتامينات واللّحوم الّتي تصفّى من الأكلات الّتي نتناولها »_ · _« تتمثّل وظيفة الدّم في تشغيل دقّات القلب »_.
+
+**التحقّق العلمي** :
+
+- **النّشاط الأوّل** — _« لماذا توضع كمّيّة من الملح على دم خروف العيد عند ذبحه ؟ منع الدّمّ من التخثّر »_ ; sang frais + un peu de sel dans un verre, observer la **sédimentation** (à préparer 2–3 jours avant ; photo) ; une goutte au **microscope** ou, à défaut, une image des globules et du plasma.
+- **النّشاط الثّاني** — sang frais (mouton ou lapin) laissé dans un verre : _« بعد فترة زمنيّة يتخثّر الدّم : تتكوّن علقة ترسب في أسفل الكأس ويطفو فوقها سائل أصفر »_ (photo d'un flacon à trois couches, sans légende).
+- **الاستنتاج 1** : _« يتكوّن الدّم من : – البلازما وهي سائل أصفر – الكريات الحمراء وهي أقراص مقعّرة الوجهين تعطي الدّمّ لونه الأحمر وليس بها نواة – الكريّات البيضاء وهي عديمة اللّون وذات نواة وهي غير منتظمة الشكل »_ — **trois composants, pas de صفيحات** (§6.1, point 10).
+- **التطبيق 1** : « انظر كتاب التلميذ » (sans page).
+- **النّشاط الثّالث** — schéma de la **petite circulation** : cœur → poumons, échange gazeux aux alvéoles ; **النّشاط الرّابع** — schéma de la **grande circulation** : retour poumons → cœur, et rôle du **plasma** dans le transport des aliments absorbés par l'intestin vers les cellules.
+- **الاستنتاج 2** (cinq phrases) : _« يقوم القلب بضخّ الدّم القادم من أعضاء الجسم والمشبع بثاني أكسيد الكربون (لون الدّم قاتم) إلى الرّئتين عبر الشّرايين »_ · _« يتخلّص الدّم في مستوى الحويصلات الرّئويّة من ثاني أكسيد الكربون ويتّحد بالأكسيجين ويعود أحمر قان إلى القلب عبر الأوردة فيضخّه إلى خلايا الجسم »_ · _« يتمثّل دور البلازما في نقل الأغذية والفضلات »_ · _« … الكريات الحمراء في نقل الغازات (ثاني أكسيد الكربون والأكسيجين) »_ · _« … الكريات البيضاء في مقاومة الجراثيم المتسرّبة إلى الجسم »_.
+- **التطبيق 2** : exercice du manuel sur le rôle de chaque composant (sans page).
+- **التّقييم (p.110)** — compléter un **schéma de circuit** dessiné à la main : الشّريان الرّئوي · يضخّ القلب · أعضاء الجسم · الرّئتان (« يتخلّص من …… ») · « الدّم المحمّل بـ …… إلى …… » · « الدّم محمّل بـ …… » · الوريد الرّئوي · « ويعود إلى القلب محمّلا بـ …… ». Pas de corrigé.
+- **التوسّع (p.111)** : hémorragies et premiers secours (avec images) · causes du **تصلّب الشّرايين** · rôle des exercices modérés sur la circulation et le cœur.
+
+> 🎯 **Pour `03-sang-circulation`** : l'استنتاج 2 est le **texte de référence élève** du transport (trois rôles, trois composants, deux couleurs) ; le schéma à trous p.110 est un exercice de complétion prêt à transposer en SVG. Le sel qui empêche la coagulation (sang du mouton de l'Aïd) est un ancrage culturel imprimé, utilisable tel quel.
+
+### 7.30 جذاذة عدد 1 de la و3 (suite) — وضعيّات مشكل 2 à 4 : peau, infection, vaccins, défense (guide p.111–116)
+
+**الوضعيّة المشكل عدد 2 (p.111)** : _« كيف يقاوم الجسم الجراثيم المتسرّبة إلى داخله ؟ »_ — عناصر : الخصائص المميّزة لجسم الإنسان · أسباب التعفّن الجرثومي · اكتساب الجسم مناعة · المقاومة باستعمال الأدوية · المقاومة الطّبيعيّة. **التصوّرات** (cinq, distracteurs attestés) : _« يغطّي الجلد الأعضاء الخارجيّة للجسم فقط ويتكوّن من طبقة واحدة »_ · _« المسامّ منفذ لدخول الجراثيم إلى الجسم »_ · _« الجروح البسيطة لا تشكّل خطرا »_ · _« التّلاقيح نوع من الأدوية »_ · _« الجسم غير قادر على مقاومة الجراثيم بدون أدوية »_.
+
+- **النّشاط الأوّل (p.111–112)** — cinq gestes et leur conclusion : palper la peau (visage, dos de la main, plante du pied) → **épaisseur variable selon le frottement** ; plier le coude → **souplesse** ; verser de l'eau sur la main → **الجلد غير نفوذ** ; main dans l'eau froide/tiède → **الجلد ينقل الأحاسيس** ; observer les pores → **التعرّق**.
+- **النّشاط الثّاني** — coupe longitudinale de la peau (dessin, légendes lisibles : البشرة · غدّة عرقيّة · الأدمة · أوعية دمويّة).
+- **الاستنتاج 3 (p.112)** : _« يغطّي الجلد كامل الجسم ويمثّل حاجزا يفصله عن المحيط الخارجي وييسّر الحركة نظرا إلى مرونته. يقوم الجلد بوظيفة أوّل خطّ دفاعي لمقاومة الجراثيم وللجلد وظائف أخرى كنقل الأحاسيس والمحافظة على حرارة الجسم والتعرّق »_. **التطبيق 3** : manuel **ص 70**.
+- **التقييم** : _« ينصح معهد السّلامة المهنيّة العمال بمصانع الموادّ الكيميائيّة باستعمال القفّاز ووضع نظّارات واقية. لماذا يا ترى ؟ »_ ; **التوسّع** : types et degrés de brûlures et secours ; maladies de la peau.
+- **النّشاط الثّالث (p.112–113, imprimé après le bloc التوسّع)** — photo d'une plaie infectée → **rougeur et gonflement** ; pourquoi ? → **تمطّط الشعيرات** pour amener plus de globules blancs, d'où rougeur et chaleur — avec un **graphique de température** d'un malade (13 → 18 avril, ليلا / صباحا, 37 °–41 ° ; lu de droite à gauche, la fièvre **monte** de ≈ 38 ° à ≈ 41,2 ° — §6.2, point 17) ; dessin : globules blancs quittant le capillaire vers la plaie.
+- **النّشاط الرّابع (p.113)** — image agrandie du **pus** : la guérison vient si les globules blancs détruisent les germes ; _« ظهور القيح دليل على أثر هذه المقاومة »_.
+- **النّشاط الخامس (p.113)** — trois dessins de la **البلعمة** : مهاجمة الكريّة البيضاء للجرثومة · الإحاطة بالجرثومة وابتلاعها · _« تقضي الكريّة البيضاء على الجرثومة ويختفي التعفّن الجرثومي ويحصل الشّفاء »_ ; puis l'échec : _« تتكاثر الجرثومة وتنفجر الكريّة البيضاء وينتشر التعفّن ويحدث التسمّم »_.
+- **الاستنتاج 4 (p.114)** : _« تتمثّل أعراض التعفّن الجرثومي في : احمرار موضع الإصابة وانتفاخه وارتفاع درجة حرارة العضو المصاب وذلك نتيجة مقاومة الكريات البيضاء للجراثيم المتسرّبة عبر الجرح إلى داخل الجسم – ينتشر التعفّن الجرثومي عند عجز الكريات البيضاء عن المقاومة »_. **التطبيق 4** : manuel **ص 74**.
+- **النّشاط الخامس** [sic, n° répété] — lire : _« عند استفحال التعفّن الجرثومي تتدخّل العقد اللّمفاويّة للحدّ منه وفي صورة عجزها يحدث التسمّم الّذي يتطلّب العلاج الفوريّ »_, et situer les ganglions sur le corps.
+- **النّشاط السّادس** — premiers secours d'une plaie, désinfection en pratique.
+- **الاستنتاج 5 (p.114)** : _« يتمّ اسعاف المصاب بجرح بـ : إزالة الأجسام الدّقيقة العالقة بالجرح من داخله إلى خارجه – تطهير الجرح بالموادّ المطهّرة كالكحول وصبغة اليود – تضميد الجرح وعزله عن المحيط الخارجي. ومن الضّروري استعمال الملقط المعقّم وكذلك الضّمّادات وتطهير اليدين قبل القيام بعمليّة الإسعاف وتلقيح المصاب ضدّ مرض الكزاز »_.
+- **التقييم (p.114)** — **chasse à l'erreur** : _« أصيب أحد الأطفال بجرح أثناء قيامه بشدّ ألواح بواسطة المسامير بهدف صنع صندوق خشبيّ لحفظ مستلزمات الصيدليّة المنزليّة، فقام بالعمليّات التّاليّة : نظّف الجرح انطلاقا من أطرافه إلى وسطه بواسطة يديه دون تطهيرهما ووضع قطنا حاويا لصبغة اليود على الجرح »_ — trois erreurs repérables d'après l'استنتاج 5 (sens du nettoyage, mains non désinfectées, coton) ; pas de corrigé imprimé.
+
+**الوضعيّة المشكل عدد 3 (p.115)** : _« عاد فراس من المدرسة وهو يشكو ألما في ذراعه. أخبر أمّه بأنّ الممرّضة قدمت إلى قسم السّنة الأولى وحقنت جميع التّلاميذ قائلا : لماذا قامت بذلك ونحن جميعا في صحّة جيّدة ؟ »_ — **التصوّرات** : _« التّلقيح دواء يمكّن المريض من الشّفاء »_ · _« تكسب الأدوية الجسم مناعة ضدّ الأمراض »_ · (ligne laissée à la classe). Activités : exploiter le **دفتر التلاقيح** et le calendrier (§7.27) ; images d'un poumon tuberculeux et d'un enfant atteint de poliomyélite → quel vaccin ? **الاستنتاج 6** : _« يقي التّلقيح الجسم من عدّة أمراض ويكسبه مناعة تجعله قادرا على مقاومة هذه الأمراض »_. **التطبيق 5** : manuel **ص 78** (« طريقة التلقيح »).
+
+**الوضعيّة المشكل عدد 4 (p.115–116)** : _« يشتغل صفوان في ورشة حدادة، ذات يوم أصيب بجرح بسيط في يده فطهّره بالكحول وواصل العمل. وبعد يومين تعكّرت حالته الصّحّيّة، فذهب إلى الطّبيب فعالجه وقام بتلقيحه ضدّ مرض الكزّاز »_ — **التصوّرات** : _« تطهير الجرح يقضي على الجراثيم »_ · _« لا تتسبّب الجروح البسيطة في مضاعفات »_. Activités : exemples de résistance naturelle (globules blancs…), maladies contre lesquelles on vaccine ; boîtes de médicaments (**مضادّات حيويّة – أمصال**), _« التّأكيد على عدم استعمال المضادّات الحيويّة دون استشارة الطّبيب »_. **الاستنتاج 7** : _« يقاوم الجسم الجراثيم المتسرّبة إلى داخله بصورة طبيعيّة (المناعة الطبيعيّة) – يتمّ العلاج باستعمال الأدوية والأمصال »_. **التطبيق 6** : manuel **ص 82**.
+
+**التقييم (p.116)** — _« أعمّر الجدول اعتمادا على الإفادات التّالية : الجلد – التّلاقيح – المضادّات الحيويّة – ضادّات تصنعها الخلايا اللّمفاويّة – الأمصال – الكريّات البيضاء »_, dans un tableau vierge **المناعة الطّبيعيّة · المناعة المكتسبة · العلاج**. Pas de corrigé (clé déductible : الجلد, الكريّات البيضاء → طبيعيّة ; التّلاقيح, ضادّات… → مكتسبة ; المضادّات الحيويّة, الأمصال → علاج — **déduit**, non imprimé). **التوسّع** : comment prépare-t-on certains vaccins ?
+
+> 🎯 **Pour `10-microbes-defense`** : quatre situations-problèmes **scénarisées** (le mouton de l'Aïd, l'infirmière en 1ʳᵉ année, le forgeron et le tétanos), **douze conceptions d'élèves** attestées, une **chasse à l'erreur** (p.114) et un **tri à trois colonnes** (p.116) — de quoi bâtir le chapitre entier sur des matériaux officiels. Les deux conceptions « التّلقيح دواء » / « الأدوية تكسب مناعة » sont exactement le حاجز n° 6 de l'évaluation n° 2 (§7.35).
+
+### 7.31 جذاذة تنشيط عدد 4 de la و3 — التغذية (guide p.117–120)
+
+> « **جذاذة تنشيط عدد 4** », « تنجز في **4 حصص** » (relu à l'image) — numérotation qui saute (§6.2, point 15). Une seule وضعيّة مشكل, 6 أنشطة, 4 استنتاجات, 3 تطبيقات.
+
+**Cadre (p.117)** : **المفاهيم** : الغذاء – التغذيّة – أغذيّة الطّاقة – أغذيّة البناء – أغذيّة الوقاية – الغذاء المتوازن – سوء التّغذيّة – السّمنة – السّكّري – ضغط الدّم – الهزال الرّزّي · **المحتوى** : المجموعات الغذائيّة – أغذيّة البناء/الطّاقة/الوقاية – الوجبة الغذائيّة المتوازنة حسب السّنّ والنّشاط – بعض الأمراض النّاتجة عن سوء التّغذيّة – قواعد صحّية · **الأهداف** : objectifs 7–10 du §7.28 · **المستلزمات** : أغذية متنوّعة أو صور لها – صورة شخص بدين – صورة شخص هزيل …
+
+| الحاجز (p.117) | مؤشّر التّجاوز (imprimé **deux fois**, à l'identique) |
+| --- | --- |
+| عدم القدرة على تصنيف الأغذية | تصنيف الأغذيّة إلى مجموعات |
+| تصوّر أنّ لكلّ الأغذيّة وظيفة واحدة | تعرّف أنّ لكلّ مجموعة غذائيّة وظيفتها |
+| تصوّر أنّ التغذيّة لا ترتبط بالسّنّ أو النّشاط | ربط علاقة بين التغذيّة والسّنّ والنّشاط |
+| تصوّر أنّ بعض الأمراض تنتج عن قلّة التغذيّة | ربط علاقة بين التغذيّة والأمراض النّاتجة عنها |
+
+**مؤشّرات القدرة المستهدفة** : اقتراح حلّ أوّلي للوضعيّة المشكل – التعبير عن رأي والبرهنة عن وجاهة الاختيار – جمع معطيات بيانيّة – استثمار رسوم ومشاهد مصوّرة لجمع بيانات – التعبير عن التمشّي المعتمد في البحث برسوم أو بنصّ علميّ – تقديم حلول بديلة.
+
+**الوضعيّة المشكل (p.118)** : _« اعتاد فراس على تناول الأغذية متى شاء في حين كانت أخته نورشان حريصة على تناول الوجبات الغذائيّة في أوقاتها. – أيّ سلوك غذائيّ تخيّر ؟ ولماذا ؟ »_ — عناصر : التغذيّة · المجموعات الغذائيّة · الوجبة الغذائيّة « المتوازية » [sic] · أمراض سوء التّغذيّة. **التصوّرات** : _« تصنّف الأغذية إلى فطور الصّباح والغداء والعشاء »_ · _« تصنّف الأغذية إلى أغذيّة نباتيّة وأغذيّة حيوانيّة »_ · _« تنتج الأمراض عن قلّة الأكل »_.
+
+| نشاط | ce qu'on fait (p.118–119) | استنتاج |
+| --- | --- | --- |
+| **1** | aliments d'origines diverses (ou images) → former des groupes ; composer petit-déjeuner / déjeuner / dîner | — |
+| **2** | dire ce que contiennent des aliments : **البيض ← الزلاليات** · **الحبوب ومشتقاتها والثمار والفواكه ← السّكريات** · **الزّبدة ← دهنيّات** | **(1)** _« يتكوّن غذاء الإنسان من أغذية نباتيّة وأغذية حيوانيّة تحتوي على عناصر غذائيّة : السّكريات – الزّلاليات – الدّهنيات »_ — **التطبيق 1** : manuel **ص 86** |
+| **3** | ce que les aliments apportent : **الحليب والبيض واللّحوم ← تساعد على النّموّ** · **الخبز والعجين ← توفير الطّاقة** · **الخضر والفواكه والغلال ← توفير الوقاية** | **(2)** _« لكلّ مجموعة غذائيّة وظيفتها : مجموعة أغذيّة البناء تساعد الجسم على النموّ – مجموعة أغذيّة الطّاقة وتزوّد الجسم بالطّاقة [sic] – مجموعة أغذيّة الوقاية وتقي الجسم من الآمراض [sic] »_ — **التطبيق 2** : **ص 88** |
+| **4** | repas non équilibrés, trouver ce qui manque : _« كسكسي بالخضر واللّحم ← تنقصه ثمار أو غلال »_ · _« أكلة سريعة تتكوّن من خبز وبطاطا وزيت وتنّ ← تنقصها الغلال »_ ; débat sur l'enfant / le sportif / la personne âgée | **(3)** _« تكون الوجبة الغذائيّة متوازنة إذا احتوت أغذيّة طاقة وأغذيّة بناء وأغذيّة وقاية »_ · _« تختلف الوجبة الغذائيّة حسب السنّ ونوع النّشاط »_ — **التطبيق 3** : **ص 92** |
+| **5** | le comportement de فراس → maladie de l'excès : **السّمنة** ; photo d'un enfant **هزيل** → causes | — |
+| **6** | photos d'un malade du **الاسقربوط** et d'un enfant atteint de **الكساح** → cause et symptômes | **(4)** _« ينتج سوء التغذيّة عن تناول وجبات غذائيّة غير متوازنة أو الإفراط في استهلاك نوع واحد من الغذاء · من الأمراض النّاتجة عن سوء التغذيّة : السّمنة – الهزال الرّزي – السّكري – ضغط الدّم … »_ |
+
+**التقييم (p.119–120)** : (أ) compléter un **schéma** : trois cadres الحبوب ومشتقّاتها · البيض والحليب واللّحوم · الثّمار والغلال والخضر الطازجة, reliés chacun à « أغذيّة …… », convergeant vers _« إذا توفّر عنصر منها في الغذاء تكون الوجبة الغذائيّة …… »_ ; (ب) _« من أمراض سوء التغذية : …… »_ ; (ج) _« أحافظ على سلامة الغذاء بـ …… »_. Pas de corrigé. **التوسّع** : un texte de sensibilisation sur l'alimentation saine (cours de technologie, ou affiches en arts plastiques).
+
+> 🎯 **Pour `04-nutrition`** : c'est **la** classification enseignée — **trois groupes, trois fonctions, trois nutriments** — avec deux repas tunisiens à compléter (couscous, casse-croûte au thon) et un schéma de synthèse. Elle prime sur les six groupes du ملفّ (§7.24, §6.1 point 11).
+
+### 7.32 وضعيّة تعلّم بالإدماج de la و3 (guide p.121–124)
+
+**Cadre (p.121)** — « تنجز في حصّتين » ; les 10 أهداف du §7.28 ; **المفاهيم** : البلازما – الكريات الحمراء/البيضاء – الدّم المتخثّر – العلقة – المصل – نقل الغذاء والغازات – الجراثيم – التعفّن الجرثومي – التسمّم – التلاقيح – الأمصال – المناعة الطبيعيّة – المناعة المكتسبة – التغذيّة – أغذيّة البناء/الطّاقة/الوقاية – الغذاء المتوازن – سوء التغذية – السّمنة – الهزال الرّزي – السّكري – ضغط الدّم ; **المحتوى** : الدّم – الأمراض الجرثوميّة – التّغذيّة عند الإنسان ; **الهدف** : _« ربط علاقة بين وظيفة الدّم وكيفيّة مقاومة الجسم للجراثيم والتّغذيّة وما يمكن أن ينتج عنها من أمراض »_ ; **الوسائل** : رسوم، صور، جداول، مطبوعات.
+
+**الوضعيّة (p.121)**, intégrale : _« قصد شخص بدين مصاب بجرح الطبيب ففحصه وطلب منه القيام بتحليل الدّم، فتبيّن أنّه مصاب بمرض السّكري فحقنه بمصل ضدّ الكزاز ونصحه بما يلي : – تضميد الجرح بعد تطهيره وتغيير الضّمادة يوما بعد يوم – اتّباع نظام غذائيّ معيّن – ممارسة الأنشطة الرياضيّة المعتدلة في الهواء الطلق – الحرص على تقليم الأظافر والالتزام بقواعد النّظافة – المواظبة على استعمال الدّواء »_.
+
+| النّشاط | ce qui est demandé | الإجابات المنتظرة (corrigé imprimé) |
+| --- | --- | --- |
+| **1** (p.122) | مِمّ يتركّب الدّم الطّازج ؟ · مِمّ يتركّب الدّم المتخثّر ؟ · وظيفة الدّم d'après le schéma « التبادل الغازي في مستوى الحويصلة الرّئويّة » (دم داكن → دم أحمر قان) | البلازما، الكريات البيضاء، الحمراء · **العلقة – المصل** · ينقل الدّم الغذاء والغازات |
+| **2** (p.122) | لماذا نصح الطبيب … بتقليم الأظافر والالتزام بقواعد النّظافة ؟ · légender une coupe de peau (4 numéros ; أعصاب et طبقة دهنيّة déjà imprimés) | حماية الجلد من الخدوش والجروح ومنع الجراثيم من التسرّب · **1** شعرة · **2** البشرة · **3** غدّة عرقيّة · **4** الأدمة |
+| **3** (p.123) | d'après la photo d'une main blessée : symptômes de l'infection et leur cause · si les globules blancs échouent ? · comment acquérir une immunité ? · que faire en cas d'infection généralisée ? | احمرار … وانتفاخه وارتفاع درجة حرارة اليد — **التعليل** : مقاومة الكريّات البيضاء للجراثيم · استفحال التعفّن وحدوث التسمّم · **بالتّلقيح** · الأدوية (مضادّات حيويّة …) |
+| **4** (p.123) | classer les aliments et dire la fonction de chaque groupe · composer un repas équilibré · lire « سلطة + شرائح من اللّحم المشوي + قطعة خبز مع عصير ليمون » et dire à qui il convient | أغذيّة البناء والنموّ · الطّاقة · الوقاية · مرقة جلبّان بلحم الدّجاج – سلطة خسّ + برتقالة + خبز (exemple) · **الرّياضي** |
+| **5** (p.123) | nommer la maladie : manque de vitamine « ج » · manque de vitamine « د » · excès de sucreries | **الاسقربوط** · ليونة العظام والإصابة بمرض **الكساح** · **السّمنة** الّتي تؤدّي إلى أمراض في جهاز الدوران (ضغط الدّم – تصلّب الشّرايين) |
+
+Phrases-pivots entre les activités (p.122–123) : la plaie au dos de la main qui s'infecte localement ; le régime qui prive de certains aliments ; _« عرف هذا المريض أنّ سبب إصابته بالسّكري يعود أساسا إلى إفراطه في الأكل وتناوله أغذيّة غنيّة بالسّكريات وقلّة نشاطه وهو ما أدّى إلى بدانته »_.
+
+**« أستحضر مكتسباتي »** : (p.122) _« يتركّب الدّم من البلازما والكريات البيضاء والكريات الحمراء · يتكوّن الدّم المتخثّر من العلقة والمصل · تتمثّل وظيفة الدّم في نقل الغذاء والغازات إلى الجسم · يتكوّن الجلد من البشرة والأدمة وهو يمثّل أوّل خطّ دفاعي ضدّ الجراثيم »_ ; (p.124) _« تصنّف الأغذيّة إلى مجموعات ثلاث : أغذيّة البناء والنموّ – أغذيّة الطّاقة – أغذيّة الوقاية · تكون الوجبة الغذائيّة متوازنة إذا احتوت عناصر من المجموعات الغذائيّة الثّلاث · تختلف الوجبة الغذائيّة حسب السنّ ونوع النّشاط · من الأمراض النّاتجة عن سوء التّغذية : السّمنة، ضغط الدّم، تصلّب الشرايين، السّكري، الهزال الرزّي »_.
+
+> 🎯 **Mission scénarisée clé en main**, corrigé compris, qui traverse les trois chapitres `03`, `10`, `04`. Réserve : le corrigé de l'activité 5 (« ليونة العظام والإصابة بمرض الكساح » pour la vitamine D) est juste ; mais le « الهزال الرزّي » reste un terme non standard (§6.3) — ne pas en faire une clé.
+
+### 7.33 Appareil d'évaluation n° 2 (و2 + و3) : passation, spécification, barème (guide p.125–127)
+
+> **L'appareil est rangé à l'envers** de celui de la و1 (§7.10–§7.11) : passation (p.125) → spécification (p.126) → barème (p.127) → épreuve (p.128–130). Il est déclaré **« متّصلة بـ : الهواء والتنفّس (الوحدة 2) وجهاز دوران الدم والأمراض الجرثوميّة والتغذيّة (الوحدة 3) »** (p.125).
+
+**توصيات التمرير (p.125)** — même déroulé que la و1 (§7.11), seul le thème d'amorce change :
+
+| التوصيات | التوقيت | ملاحظات |
+| --- | :-: | --- |
+| يُمهّد المعلّم للوضعيّة … بالتحاور مع المتعلّمين حول **الأنشطة الرّياضيّة** الّتي يمارسونها أو الّتي يُحبّذون ممارستها | 5 دق | عدم إغفال الحيز الزمني المخصّص لهذا التمهيد |
+| distribution des copies, nom, prénom, date | 4 دق | |
+| rappel : écrire lisiblement, respecter la consigne (وضع علامة – كتابة – تعليل …) | 1 دق | |
+| lecture des مقاطع et تعليمات, une fois, posément | 5 دق | |
+| exécution individuelle, activité par activité, sans intervention | **45 دق** | الحرص على الانجاز الفردي |
+| **المجموع** | **60 دق** | |
+
+**جدول توزيع الأهداف المميّزة حسب معايير الاختبار عدد 2 (p.126)** — relu à l'image par le rédacteur :
+
+| المحور | الأهداف المميّزة | النّشاط | مع1 | مع2 | مع3 |
+| --- | --- | --- | :-: | :-: | :-: |
+| التغذيّة عند الانسان | تصنيف الأغذيّة · تبيّن وظيفة كلّ مجموعة غذائيّة | 1-أ / 1-ب | × | | × |
+| التنفّس | تبيّن وظيفة الرئتين في التبادل الغازي بين الجسم والمحيط | 2 | × | | |
+| الهواء | ذكر خاصيّات الهواء · ذكر أهمّ مكوّنات الهواء · إثبات دور الهواء في الاحتراق | 3-أ / 3-ب / 4 | | × × | × |
+| جهاز دوران الدّم | تعرّف الدورة الدمويّة عند الانسان · تعرّف دور القلب في ضخّ الدّم | 5-أ / 5-ب | × | × | × |
+| التعفّن الجرثومي | تبيّن دور التّلاقيح في إكساب الجسم مناعة ضدّ بعض الأمراض الجرثوميّة | 6 | | | |
+
+Aucun total imprimé ; la ligne 6 n'a **aucune** croix (écart avec l'étiquette « مع3 » de T6, §6.2 point 18). Noter deux objectifs **absents des cartes d'unité** : « تعرّف الدورة الدمويّة » et « تعرّف دور القلب في ضخّ الدّم » — la circulation, présentée comme acquis de 5ᵉ, est donc **évaluée** en 6ᵉ.
+
+**جدول إسناد الأعداد (p.127)** — **identique** à celui de la و1 (§7.11) : مع1 et مع2 : 0 / 2,5 / 5 / 7,5 ; مع3 : 0 / 1 / 3 / 5 (انعدام التملّك / دون التملّك الأدنى / التملّك الأدنى / التملّك الأقصى) — 7,5 + 7,5 + 5 = 20.
+
+### 7.34 وضعيّة تقييم إدماجيّة عدد 2 — l'épreuve (guide p.128–130)
+
+**الأداء المنتظر (p.128)** : _« يكون المتعلّم قادرا على حلّ وضعيّات مشكل دالّة متّصلة بالتّغذيّة والتنفّس والهواء وجهاز دوران الدّم والتعفّن الجرثومي »_ — **60 دقيقة**. **مؤشّرات** : ceux de la و1 (§7.10), à une variante près pour مع3 (« الاخبار شفويا و/أو كتابيا عن الأعمال المنجزة »), chaque bloc suivi d'une ligne en pointillés.
+
+**الوضعيّة** — Ahmed prépare le **cross national** (« المسابقة الوطنيّة للعدو الريفي ») ; six مقاطع, chaque تعليمة étiquetée en marge :
+
+| مقطع (scène) | تعليمة | critère | ce qui est demandé (texte imprimé) |
+| --- | --- | :-: | --- |
+| **1** (p.128) le petit-déjeuner familial : 8 vignettes **زبدة · بيض · جبن · تفّاح · حليب · خبز · عسل · برتقالة** | **1-أ** | مع1 | أصنّف الأغذيّة المكوّنة لفطور عائلة أحمد وفق الجدول : أغذيّة البناء · أغذيّة الطاقة · أغذيّة الوقاية |
+| | **1-ب** | مع3 | أقرأ قول أحمد وأجيب بنعم أو لا وأعلّل : _« إنّ أغذيّة الطاقة هي العنصر الأساسي في نموّ جسم الإنسان وهي تمثّل الوجبة الغذائيّة المتوازنة »_ (affirmation fausse — **déduit**) |
+| **2** (p.129) échauffement, « التّنفّس المنتظم » | **2** | مع1 | QCM : _« يتمّ التبادل الغازي بين الجسم والمحيط الخارجي في مستوى : ◻ القلب ◻ الرّئتين ◻ المجاري التّنفّسيّة »_ |
+| **3** (p.129) le ballon qui se dégonfle : il est percé | **3-أ** | مع2 | encadrer les propriétés de l'air du ballon : غاز لالون له ولا طعم ولارائحة · غير قابل للانحلال في الماء · مضغوط · له كتلة · **غير قابل للانتشار** (le piège — **déduit**) |
+| | **3-ب** | مع2 | أذكر مكوّنات الهواء الموجود داخل الكرة |
+| **4** (p.130) un mégot qui enflamme des herbes sèches au bord de l'oued ; Ahmed éteint | **4** | مع3 | أصلح الخطأ : « سبب اشتعال العشب اليابس دخان السيجارة الملقاة » · « … وجود النّار والهواء » · « سبب اشتعال العشب انطفاء عقب السّيجاة [sic] » |
+| **5** (p.130) Ahmed s'arrête, visage rouge, souffle court, cœur rapide, corps chaud | **5-أ** | مع1 | أفسّر الأعراض الّتي ظهرت على أحمد |
+| | **5-ب** | مع2 | أعلّل : _« إنّ تسارع دقّات قلب أحمد وتغيّر نسق تنفّسه واحمرار وجهه وارتفاع درجة جسمه مؤشّرات دالّة على تأثير الدّورة الدّمويّة »_ |
+| **6** (p.130) il tombe, se blesse au genou, va à la pharmacie | **6** | مع3 | أصلح الخطأ : _« قصد أحمد الصّيدليّة لتطهير جرحه وشراء دواء ضدّ مرض الكزاز »_ (erreur visée : on se **vaccine** / reçoit un **sérum** contre le tétanos — **déduit**, cohérent avec le حاجز n° 6 de p.132) |
+
+**Aucun corrigé n'est imprimé** pour cette épreuve. Les clés marquées « déduit » ne sont pas officielles.
+
+> 🎯 **La deuxième épreuve officielle du volume, et la seule qui croise deux unités** : un fil narratif sportif, un QCM officiel (T2), un item à propriétés-pièges (T3-أ) et **trois** « أصلح الخطأ » (T1-ب, T4, T6). Elle valide, pour `01`, `02`, `03`, `04`, `10`, le même format « chasse à l'erreur » que la و1 (§7.10).
+
+### 7.35 حواجز et وضعيّات علاجيّة de l'évaluation n° 2 (guide p.131–135)
+
+**Intercalaire p.131** : « وضعيّات علاجيّة مرتبطة بالحواجز المتوقّعة ». **الحواجز المتوقّعة والمرتبطة بالوضعيّة التقييميّة الإدماجيّة عدد 2 (p.132)**, verbatim :
+
+1. عدم التمييز بين أغذيّة الطّاقة وأغذيّة النّمو وأغذيّة الوقاية.
+2. عدم تمثّل وظيفة الرّئتين.
+3. الخلط بين خاصّيات الهواء.
+4. عدم القدرة على إثبات دور الهواء في عمليّة الاحتراق.
+5. عدم تمثّل وظيفة كلّ من الدّم والقلب.
+6. الخلط بين مفهوم التّلقيح ومفهوم العلاج.
+
+**Six وضعيّات علاجيّة**, une par حاجز (correspondance par l'ordre et le contenu — le guide ne la numérote pas) ; **aucune n'est corrigée** :
+
+| وضعيّة | حاجز | tâches (texte imprimé) |
+| :-: | :-: | --- |
+| **1** (p.133) | 1 | (أ) relier **بطاطا – مشتقات الحبوب – عسل** · **الحليب – البيض – اللّحوم – زيت السّمك** · **الخضروات – البرتقال – الليمون – التّفاح** à **الوقاية / الطّاقة / البناء** (colonnes volontairement décalées) ; (ب) compléter avec « أغذيّة توفّر الطاقة – أغذيّة تساعد على النّمو – أغذيّة تقي من الأمراض » : _« يتناول الطّفل … · يتناول الشيخ … · يتناول الحدّاد … »_ ; (ج) sur le modèle _« فيتامين (د) ويوجد في الزبدة والحليب وأصفر البيض ويكسب الجسم مناعة »_, nommer d'autres composants, leurs sources et bienfaits |
+| **2** (p.133) | 2 | (أ) remplir avec « الرئتين – المجاري التنفسية – الشّهيق – المخاط – التبادل الغازي – القلب – الزفير – إخراج الهواء – تجديد الهواء » : _« تتمثّل الحركات التّنفسيّة في … و… والهدف منها … ، ويتمّ … في مستوى … »_ ; (ب) Ahmed souffle dans l'eau de chaux qui se trouble → nommer le gaz |
+| **3** (p.134) | 3 | photo d'une voiture et de pneus ; exemple donné « الهواء مضغوط في العجلات → الانضغاط » ; écrire la propriété observée **si l'on ouvre la valve** (**déduit** : الانتشار) |
+| **4** (p.134) | 4 | (أ) deux photos : bougie (« يتمّ احتراق الشمعة في …… ») et charbon qui s'avive dans un flacon (« الغاز الموجود في القارورة هو …… ») ; (ب) _« أتصوّر نفسي رائد فضاء نزلت على سطح القمر لدراسة تربته. هل بإمكاني إشعال النّار على سطح هذا الكوكب ؟ … أعلّل إجابتي »_ |
+| **5** (p.135) | 5 | (أ) cocher : « يضخّ القلب الدّم إلى الرّئتين فقط » · « … إلى كامل أعضاء الجسم » · « … إلى خلايا المخّ فقط » ; (ب) نعم / لا : « ينقل الدّم الغذاء فقط » · « ينقل الدّم الغازات والغذاء » · _« يخرج الدّم من الرّئتين أحمر قانيّا نتيجة اتحاده بالاكسجين ويتجه نحو أعضاء الجسم التي يعود منها أحمر قاتما نتيجة احتوائه على ثنائي أكسيد الكربون »_ |
+| **6** (p.135) | 6 | (أ) نعم / لا : « يتمّ التلقيح ضدّ الأمراض المزمنة » · « … ضدّ الأمراض الجرثوميّة » · « الأدويّة هي أمصال تُستعمل للتلقيح » · « الأدويّة هي أمصال تُستعمل للعلاج » ; (ب) _« أذكر الطّرق المعتمدة في إجراء التّلاقيح التّاليّة : الشلل · الحصبة · الكزاز »_ (réponse à prendre au manuel p.77 : الكشط / التجرّع / الحقن — non imprimée ici) |
+
+> 🎯 **Pour la génération** : six obstacles nommés par le CNP = six familles de distracteurs pour `01`, `02`, `03`, `04`, `10`, et des formats non-QCM (appariement décalé, texte à trous à banque de mots, vrai/faux, situation lunaire). Réserves : l'exemple modèle de 1-ج attribue à la vitamine D d'« offrir l'immunité » (« ويكسب الجسم مناعة »), ce que ni le ملفّ (§7.23 : absorption du calcium) ni le manuel ne disent — **ne pas reprendre** ; « ثنائي أكسيد الكربون » (p.135) est une 5ᵉ graphie du CO₂ dans le volume.
