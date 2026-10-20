@@ -29,26 +29,21 @@
       "correctOption": "a",
       "explanation": "السلّم 1/150 يعني أنّ كلّ طول على التصميم يُضرب في 150 لنجد الطول الحقيقيّ: 6 × 150 = 900 سم = 9 م، و 4 × 150 = 600 سم = 6 م. العددان 900 و 600 بالسنتيمتر، فلا نكتب بعدهما «م» قبل تحويلهما.",
       "difficulty": 2,
-      "competencies": [
-        "math.prop.situations"
-      ]
+      "competencies": ["math.prop.situations"]
     },
     {
       "type": "numeric",
-      "prompt": "(مناظرة 2008) اتّفق أعضاء مجلس بلديّ على إقامة نافورة وسط قرص دائريّ وفق تصميمٍ منجز بالسلّم 1/150: المعيّن هو حوض النافورة، وباقي القرص فضاءٌ معشّب. القطر الأفقيّ للمعيّن هو قطر القرص ويساوي على التصميم 6 سم، والقطر العموديّ للمعيّن يساوي 4 سم. ما المساحة الحقيقيّة للمعيّن بالمتر المربّع؟ اكتب العدد فقط.\n<svg viewBox=\"0 0 320 260\"><circle cx=\"160\" cy=\"115\" r=\"90\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f172a\" stroke-width=\"2\"/><polygon points=\"70,115 160,55 250,115 160,175\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M70 115 H250 M160 55 V175\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M160 105 H170 V115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"160\" cy=\"115\" r=\"3.5\" fill=\"#0f172a\"/><path d=\"M70 118 V232 M250 118 V232\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M70 226 H250 M70 220 V232 M250 220 V232\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"160\" y=\"246\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><path d=\"M160 55 H44 M160 175 H44\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M50 55 V175 M44 55 H56 M44 175 H56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"30\" y=\"120\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text></svg>",
+      "prompt": "(مناظرة 2008) حوضُ نافورةٍ على شكل معيّن، قطراه على تصميم بالسلّم 1/150 يساويان 6 سم و 4 سم. ما مساحته الحقيقيّة بالمتر المربّع؟ اكتب العدد فقط.",
       "answerKey": {
         "value": 27,
         "unit": "م²"
       },
       "explanation": "نحوّل القطرين أوّلًا إلى طوليهما الحقيقيّين: 6 × 150 = 900 سم = 9 م و 4 × 150 = 600 سم = 6 م. مساحة المعيّن نصف جداء قطريه: 9 × 6 ÷ 2 = 27 م².",
       "difficulty": 3,
-      "competencies": [
-        "math.mes.aires",
-        "math.prop.situations"
-      ]
+      "competencies": ["math.mes.aires", "math.prop.situations"]
     },
     {
-      "prompt": "(مناظرة 2008) السلّم 1/150، وقطرا المعيّن على التصميم 6 سم و 4 سم. حسب تلميذ مساحة المعيّن الحقيقيّة هكذا: مساحته على التصميم (6 × 4) ÷ 2 = 12 سم²، ثمّ ضرب في 150 فوجد 1 800 سم²، أي 0,18 م². أيّ جملة صحيحة؟",
+      "prompt": "(مناظرة 2008) السلّم 1/150، وقطرا المعيّن على التصميم 6 سم و 4 سم. أراد تلميذٌ حساب مساحة المعيّن الحقيقيّة، فحسب أوّلًا مساحته على التصميم بالسنتيمتر المربّع:\n(6 × 4) ÷ 2 = 12\nثمّ ضرب هذا العدد في 150 فوجد 1 800 سم²، أي 0,18 م². أيّ جملة منها صحيحة؟",
       "options": [
         {
           "id": "a",
@@ -57,7 +52,7 @@
         },
         {
           "id": "b",
-          "text": "الخطأ في تحويل 1 800 سم² إلى م²: المساحة الحقيقيّة هي 1 800 م²"
+          "text": "الخطأ في تحويل 1 800 سم² إلى م²: المساحة الحقيقيّة هي 1 800 م²"
         },
         {
           "id": "c",
@@ -70,15 +65,12 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "السلّم 1/150 يُطبَّق على الأطوال، ولا يُطبَّق مباشرةً على المساحة. فنحوّل القطرين إلى طوليهما الحقيقيّين ثمّ نحسب نصف جداءهما. وحسابُ التلميذ على التصميم صحيح (نصف جداء القطرين)، وتحويله 1 800 سم² إلى 0,18 م² صحيح أيضًا؛ الخطأ كلّه في ضرب المساحة في 150.",
+      "explanation": "السلّم 1/150 يُطبَّق على الأطوال، ولا يُطبَّق مباشرةً على المساحة. فنحوّل القطرين إلى طوليهما الحقيقيّين ثمّ نحسب نصف جداءهما. وحسابُ التلميذ على التصميم صحيح (نصف جداء القطرين)، وتحويله 1 800 سم² إلى 0,18 م² صحيح أيضًا؛ الخطأ كلّه في ضرب المساحة في 150.",
       "difficulty": 3,
-      "competencies": [
-        "math.mes.aires",
-        "math.prop.situations"
-      ]
+      "competencies": ["math.mes.aires", "math.prop.situations"]
     },
     {
-      "prompt": "(مناظرة 2008) اتّفق أعضاء مجلس بلديّ على إقامة نافورة وسط قرص دائريّ وفق تصميمٍ منجز بالسلّم 1/150: المعيّن هو حوض النافورة، وباقي القرص فضاءٌ معشّب. القطر الأفقيّ للمعيّن هو قطر القرص ويساوي على التصميم 6 سم، والقطر العموديّ للمعيّن يساوي 4 سم. ما نصف قطر القرص الدائريّ الحقيقيّ بالمتر؟\n<svg viewBox=\"0 0 320 260\"><circle cx=\"160\" cy=\"115\" r=\"90\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f172a\" stroke-width=\"2\"/><polygon points=\"70,115 160,55 250,115 160,175\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M70 115 H250 M160 55 V175\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M160 105 H170 V115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"160\" cy=\"115\" r=\"3.5\" fill=\"#0f172a\"/><path d=\"M70 118 V232 M250 118 V232\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M70 226 H250 M70 220 V232 M250 220 V232\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"160\" y=\"246\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><path d=\"M160 55 H44 M160 175 H44\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M50 55 V175 M44 55 H56 M44 175 H56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"30\" y=\"120\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text></svg>",
+      "prompt": "(مناظرة 2008) تحيط بحوض النافورة (المعيّن) أرضٌ معشّبة، والقطر الأفقيّ للمعيّن هو قطر القرص الدائريّ كلّه، ويساوي 6 سم على تصميم بالسلّم 1/150. ما نصف قطر القرص الدائريّ الحقيقيّ بالمتر؟\n<svg viewBox=\"0 0 320 260\"><circle cx=\"160\" cy=\"115\" r=\"90\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f172a\" stroke-width=\"2\"/><polygon points=\"70,115 160,55 250,115 160,175\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M70 115 H250 M160 55 V175\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\"/><path d=\"M160 105 H170 V115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"160\" cy=\"115\" r=\"3.5\" fill=\"#0f172a\"/><path d=\"M70 118 V232 M250 118 V232\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M70 226 H250 M70 220 V232 M250 220 V232\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"160\" y=\"246\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><path d=\"M160 55 H44 M160 175 H44\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M50 55 V175 M44 55 H56 M44 175 H56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"30\" y=\"120\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text></svg>",
       "options": [
         {
           "id": "a",
@@ -103,10 +95,7 @@
       "correctOption": "b",
       "explanation": "القطر الأفقيّ للمعيّن هو قطر القرص، وطوله الحقيقيّ 6 × 150 = 900 سم = 9 م. نصف القطر نصفه: 9 ÷ 2 = 4,5 م. من اختار 9 أخذ القطر نصف قطر، ومن اختار 18 ضاعف القطر بدل أن يأخذ نصفه، ومن اختار 0,02 قسم على 150 بدل أن يضرب.",
       "difficulty": 3,
-      "competencies": [
-        "math.geo.cercle",
-        "math.prop.situations"
-      ]
+      "competencies": ["math.geo.cercle", "math.prop.situations"]
     },
     {
       "type": "numeric",
@@ -118,10 +107,7 @@
       },
       "explanation": "مساحة القرص = π × ر × ر = 3,14 × 4,5 × 4,5 = 3,14 × 20,25 = 63,585 م².",
       "difficulty": 3,
-      "competencies": [
-        "math.geo.cercle",
-        "math.mes.aires"
-      ]
+      "competencies": ["math.geo.cercle", "math.mes.aires"]
     },
     {
       "type": "numeric",
@@ -140,7 +126,7 @@
       ]
     },
     {
-      "prompt": "(مناظرة 2008) اتّفق أعضاء مجلس بلديّ على إقامة نافورة وسط قرص دائريّ وفق تصميمٍ منجز بالسلّم 1/150: المعيّن هو حوض النافورة، وباقي القرص فضاءٌ معشّب. القطر الأفقيّ للمعيّن هو قطر القرص ويساوي على التصميم 6 سم، والقطر العموديّ للمعيّن يساوي 4 سم. حسب تلميذ مساحة الفضاء المعشّب فوجد 227,34 م². أين الخطأ؟",
+      "prompt": "(مناظرة 2008) قرصٌ دائريّ قطره الحقيقيّ 9 م، فيه حوضٌ معيّن مساحته الحقيقيّة 27 م²، والباقي فضاء معشّب. حسب تلميذٌ مساحة الفضاء المعشّب فوجد 227,34 م². أين الخطأ؟",
       "options": [
         {
           "id": "a",
@@ -162,10 +148,7 @@
       "correctOption": "d",
       "explanation": "في مساحة القرص تدخل نصف القطر مرّتين: ر × ر. والقطر الأفقيّ الحقيقيّ 9 م قطرٌ لا نصف قطر، فلا نربّعه كأنّه نصف قطر. الأخطاء الأخرى تعطي نتائج غير 227,34: نسيان الطرح يترك مساحة القرص وحدها، ونسيان القسمة على 2 يضاعف مساحة المعيّن.",
       "difficulty": 3,
-      "competencies": [
-        "math.geo.cercle",
-        "math.mes.aires"
-      ]
+      "competencies": ["math.geo.cercle", "math.mes.aires"]
     }
   ]
 }
