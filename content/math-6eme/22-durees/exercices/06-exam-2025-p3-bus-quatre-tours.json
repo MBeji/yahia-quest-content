@@ -58,7 +58,8 @@
       "options": [
         {
           "id": "a",
-          "text": "4 توقّفات"
+          "text": "4 توقّفات",
+          "misconceptionTag": "math.mes.temps-d-arret-mal-compte"
         },
         {
           "id": "b",
@@ -70,7 +71,8 @@
         },
         {
           "id": "d",
-          "text": "5 توقّفات"
+          "text": "5 توقّفات",
+          "misconceptionTag": "math.mes.temps-d-arret-mal-compte"
         }
       ],
       "correctOption": "b",
@@ -95,11 +97,12 @@
         {
           "id": "a",
           "text": "7 سا 75 د",
-          "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite"
+          "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
         },
         {
           "id": "b",
-          "text": "8 سا 40 د"
+          "text": "8 سا 40 د",
+          "misconceptionTag": "math.mes.temps-d-arret-mal-compte"
         },
         {
           "id": "c",
@@ -107,7 +110,8 @@
         },
         {
           "id": "d",
-          "text": "9 سا"
+          "text": "9 سا",
+          "misconceptionTag": "math.mes.temps-d-arret-mal-compte"
         }
       ],
       "correctOption": "c",
@@ -123,31 +127,6 @@
         "unit": "د"
       },
       "explanation": "من 8 سا 55 د إلى 9 سا 0 د تمرّ 5 د، ومنها إلى 9 سا 5 د تمرّ 5 د أخرى: التأخّر 10 د. ونتحقّق: 8 سا 55 د + 10 د = 9 سا 5 د ✓.",
-      "difficulty": 3,
-      "competencies": ["math.mes.durees"]
-    },
-    {
-      "prompt": "(مناظرة 2025) تأخّرت الحافلة في السفرة الرابعة بسبب اكتظاظ مروريّ وقع بين المحطّتين ج وأ فقط. إلى مدّة أيّ جزء نضيف مدّة التأخّر؟",
-      "options": [
-        {
-          "id": "a",
-          "text": "مدّة التوقّف في المحطّة أ بين السفرات"
-        },
-        {
-          "id": "b",
-          "text": "مدّة السير بين أ وب في السفرة الرابعة"
-        },
-        {
-          "id": "c",
-          "text": "مدّة السفرات الأربع كلّها بالتساوي"
-        },
-        {
-          "id": "d",
-          "text": "مدّة السير بين ج وأ في السفرة الرابعة"
-        }
-      ],
-      "correctOption": "d",
-      "explanation": "الاكتظاظ وقع في جزء واحد من طريق واحد، هو ما بين ج وأ في السفرة الرابعة، فالتأخّر كلّه يضاف إلى مدّة هذا الجزء. والأجزاء الأخرى، والتوقّفات، والسفرات الثلاث الأولى لم تتأثّر.",
       "difficulty": 3,
       "competencies": ["math.mes.durees"]
     },

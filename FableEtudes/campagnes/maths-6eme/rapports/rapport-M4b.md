@@ -55,3 +55,14 @@ Employées (ids exacts du registre) : `math.num.operation-inverse-appliquee` (so
 5. **Pas de Pythagore** : 5 est donné en 2026, 785 en 2021 ; aucune explication ne le calcule. **Pas de « 180° »**, pas d'intérêt, pas de somme-écart.
 6. Écriture « π = 3,14 » dans les énoncés qui font intervenir un arc ; virgule décimale partout ; groupes de milliers séparés par U+00A0 (exigé par `content:qa`) ; points de la figure nommés à l'arabe, avec espaces, comme dans la transcription (pas de ZWNJ).
 7. Rendu RTL non revu au pixel : les gates `content:qa` (nombres coupés, formules) et `lot-lint` sont verts ; aucune flèche `←` dans le texte (remplacées par « de ب إلى و ثمّ إلى ز … »).
+
+## Corrections après audit (audit-M3-M4.md, partie 25)
+
+- **M-16** : les deux lignes `sources[]` de l'étude 36 sont remises dans `25-perimetre-figure-composee/chapter.json`, rien d'autre touché.
+- **M-17 (25/06)** : la question « `أ ب` = 5 » (qui donne 4,8 et 12) passe en d3 et est placée après celle de `ج م` (et de l'aire 12) ; la mission compte maintenant 2 d2 + 8 d3.
+- **M-18 (25/06)** : options de Q4 (justification des aires égales) et de Q6 (`و م = م أ`) remplacées par les textes de l'audit (clés `قاعدتيهما … متقايستان، وارتفاعهما المشترك هو [ج م]` et `ج و ن أ معيّن، وقطرا المعيّن …`), étiquettes `condition-suffisante-supposee` et `diagonales-proprietes-mal-attribuees`, explications complétées ; longueurs vérifiées par `lot-lint` (aucune clé strictement la plus longue).
+- **M-19 (25/07)** : question 3140-depuis-1962,5 supprimée (11 q.) ; question des tours entiers passée en d3, placée entre la longueur de la dérive et la position. **M-15** : figure 2021 corrigée (cote 628 à x = 44, `أ` en (346 ; 318), `ز` décalé à droite).
+- **M-20 (25/08)** : question du prêt (donne 101475) passée en d3 et placée après celle du montant ; question du périmètre 369 supprimée (11 q.).
+- **Étiquettes** : `perimetre-segment-interieur-compte` remplace `perimetre-nombre-de-cotes-errone` pour « quatre côtés sur le contour » (2016 Q3) et est posée sur l'option 257 m du devoir (diamètre compté) ; `perimetre-nombre-de-cotes-errone` reste en 2026 (24 et 40 = mauvais nombre de côtés du losange). Aucun id inventé.
+- Mineur : figure du devoir recadrée (moitié haute vide).
+- Total : 10 + 11 + 11 + 9 + 7 = 48 questions. Contrôles refaits : `content:check`, `content:qa` (0 erreur, rien sur le 25), `figures:check`, `tranche` (clé la plus longue 0, 8 paires intra-mission), `lot-lint`, `prettier`, `gisement:controle` (devoir : 0 plage de 6 ou 8 mots).
