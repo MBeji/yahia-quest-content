@@ -9,10 +9,23 @@
     {
       "prompt": "كم دقيقةً في 5 ساعات (5 سا)؟",
       "options": [
-        { "id": "a", "text": "300 د" },
-        { "id": "b", "text": "250 د" },
-        { "id": "c", "text": "500 د", "misconceptionTag": "math.mes.duree-convertie-en-base-cent" },
-        { "id": "d", "text": "120 د" }
+        {
+          "id": "a",
+          "text": "300 د"
+        },
+        {
+          "id": "b",
+          "text": "250 د"
+        },
+        {
+          "id": "c",
+          "text": "500 د",
+          "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
+        },
+        {
+          "id": "d",
+          "text": "120 د"
+        }
       ],
       "correctOption": "a",
       "explanation": "5 سا = 5 × 60 = 300 دقيقة.",
@@ -20,25 +33,53 @@
       "competencies": ["math.mes.durees"]
     },
     {
-      "prompt": "احسب: 2 سا 40 د + 1 سا 35 د.",
+      "prompt": "احسب: 3 سا 45 د + 1 سا 50 د.",
       "options": [
-        { "id": "a", "text": "4 سا 15 د" },
-        { "id": "b", "text": "3 سا 75 د", "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite" },
-        { "id": "c", "text": "4 سا 5 د" },
-        { "id": "d", "text": "3 سا 15 د", "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite" }
+        {
+          "id": "a",
+          "text": "5 سا 35 د"
+        },
+        {
+          "id": "b",
+          "text": "4 سا 95 د",
+          "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite"
+        },
+        {
+          "id": "c",
+          "text": "6 سا 35 د"
+        },
+        {
+          "id": "d",
+          "text": "4 سا 35 د",
+          "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite"
+        }
       ],
       "correctOption": "a",
-      "explanation": "المجموع = 3 سا 75 د، ونحوّلُ 75 د = 1 سا 15 د، فالنتيجة = 4 سا 15 د.",
+      "explanation": "المجموع = 4 سا 95 د، ونحوّلُ 95 د = 1 سا 35 د، فالنتيجة = 5 سا 35 د.",
       "difficulty": 3,
       "competencies": ["math.mes.durees"]
     },
     {
       "prompt": "احسب: 3 سا 10 د − 1 سا 25 د.",
       "options": [
-        { "id": "a", "text": "1 سا 45 د" },
-        { "id": "b", "text": "2 سا 15 د", "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand" },
-        { "id": "c", "text": "1 سا 15 د", "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand" },
-        { "id": "d", "text": "2 سا 45 د" }
+        {
+          "id": "a",
+          "text": "1 سا 45 د"
+        },
+        {
+          "id": "b",
+          "text": "2 سا 15 د",
+          "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand"
+        },
+        {
+          "id": "c",
+          "text": "1 سا 15 د",
+          "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand"
+        },
+        {
+          "id": "d",
+          "text": "2 سا 45 د"
+        }
       ],
       "correctOption": "a",
       "explanation": "نستبدلُ 3 سا 10 د بـ 2 سا 70 د، ثمّ 2 سا 70 د − 1 سا 25 د = 1 سا 45 د.",
@@ -48,10 +89,24 @@
     {
       "prompt": "رحلةٌ انطلقت في 8 سا 30 د ودامت 2 سا 45 د. متى تصلُ؟",
       "options": [
-        { "id": "a", "text": "11 سا 15 د" },
-        { "id": "b", "text": "10 سا 75 د", "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite" },
-        { "id": "c", "text": "11 سا 5 د" },
-        { "id": "d", "text": "10 سا 15 د", "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite" }
+        {
+          "id": "a",
+          "text": "11 سا 15 د"
+        },
+        {
+          "id": "b",
+          "text": "10 سا 75 د",
+          "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite"
+        },
+        {
+          "id": "c",
+          "text": "11 سا 5 د"
+        },
+        {
+          "id": "d",
+          "text": "10 سا 15 د",
+          "misconceptionTag": "math.mes.duree-retenue-de-soixante-non-faite"
+        }
       ],
       "correctOption": "a",
       "explanation": "8 سا 30 د + 2 سا 45 د = 10 سا 75 د = 11 سا 15 د (لأنّ 75 د = 1 سا 15 د).",
@@ -59,30 +114,120 @@
       "competencies": ["math.mes.durees"]
     },
     {
-      "prompt": "1 سا 30 د تساوي كم دقيقة؟",
+      "prompt": "2 سا 40 د تساوي كم دقيقة؟",
       "options": [
-        { "id": "a", "text": "90 د" },
-        { "id": "b", "text": "130 د", "misconceptionTag": "math.mes.duree-convertie-en-base-cent" },
-        { "id": "c", "text": "60 د" },
-        { "id": "d", "text": "75 د" }
+        {
+          "id": "a",
+          "text": "160 د"
+        },
+        {
+          "id": "b",
+          "text": "240 د",
+          "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
+        },
+        {
+          "id": "c",
+          "text": "120 د"
+        },
+        {
+          "id": "d",
+          "text": "180 د"
+        }
       ],
       "correctOption": "a",
-      "explanation": "1 سا = 60 د، فإنّ 1 سا 30 د = 60 + 30 = 90 دقيقة.",
+      "explanation": "1 سا = 60 د، فإنّ 2 سا 40 د = 2 × 60 + 40 = 120 + 40 = 160 دقيقة.",
       "difficulty": 3,
       "competencies": ["math.mes.durees"]
     },
     {
-      "prompt": "كم ساعةً في يومين (2 يوم)؟",
+      "prompt": "كم ساعةً في 3 أيّام؟",
       "options": [
-        { "id": "a", "text": "48 سا" },
-        { "id": "b", "text": "24 سا" },
-        { "id": "c", "text": "12 سا" },
-        { "id": "d", "text": "60 سا", "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite" }
+        {
+          "id": "a",
+          "text": "72 سا"
+        },
+        {
+          "id": "b",
+          "text": "36 سا",
+          "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
+        },
+        {
+          "id": "c",
+          "text": "24 سا"
+        },
+        {
+          "id": "d",
+          "text": "180 سا",
+          "misconceptionTag": "math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite"
+        }
       ],
       "correctOption": "a",
-      "explanation": "اليومُ = 24 سا، فإنّ 2 يوم = 2 × 24 = 48 ساعة.",
+      "explanation": "اليومُ = 24 سا، فإنّ 3 أيّام = 3 × 24 = 72 ساعة.",
       "difficulty": 3,
       "competencies": ["math.mes.durees"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ساعةُ حائط تتأخّر 10 ثا في كلّ ساعة. ضُبطت على 10 سا صباحًا، ثمّ قُرئت على 16 سا من اليوم الموالي. كم دقيقةً تأخّرت؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 5,
+        "unit": "د"
+      },
+      "explanation": "من 10 سا إلى 16 سا من اليوم الموالي تمرّ 24 سا + 6 سا = 30 سا. التأخّر 30 × 10 = 300 ثا = 5 د، لأنّ الدقيقة 60 ثا.",
+      "difficulty": 3,
+      "competencies": ["math.mes.durees"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "تستغرق رحلة الذهاب إلى المدرسة 25 د، ورحلة العودة 40 د، ويذهب التلميذ كلّ يوم من الاثنين إلى السبت. كم دقيقةً يقضي في الطريق في الأسبوع؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 390,
+        "unit": "د"
+      },
+      "explanation": "في اليوم الواحد 25 + 40 = 65 د. وهناك ستّة أيّام: 6 × 65 = 390 د، أي 6 سا 30 د.",
+      "difficulty": 3,
+      "competencies": ["math.mes.durees"]
+    },
+    {
+      "prompt": "يعمل حارسٌ 9 سا 20 د فعليًّا، وتتخلّلها استراحة 50 د، وينتهي عمله على الساعة 18 سا 05 د. متى بدأ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 سا 45 د"
+        },
+        {
+          "id": "b",
+          "text": "8 سا 5 د",
+          "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand"
+        },
+        {
+          "id": "c",
+          "text": "7 سا 55 د"
+        },
+        {
+          "id": "d",
+          "text": "28 سا 15 د",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الزمن بين البداية والنهاية 9 سا 20 د + 50 د = 10 سا 10 د. لحظة البداية = 18 سا 05 د − 10 سا 10 د = 17 سا 65 د − 10 سا 10 د = 7 سا 55 د. من نسي الاستراحة وجد 8 سا 45 د.",
+      "difficulty": 3,
+      "competencies": ["math.mes.durees"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "بدأ فلاحٌ الحراثة على الساعة 6 سا 30 د وأنهاها على الساعة 17 سا 45 د، واستراح 45 د. يحرث 80 آر في كلّ ساعة عمل. كم آرًا حرث؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 840,
+        "unit": "آر"
+      },
+      "explanation": "مدّة العمل 17 سا 45 د − 6 سا 30 د = 11 سا 15 د، ثمّ 11 سا 15 د − 45 د = 10 سا 30 د = 10,5 سا. ثمّ 10,5 × 80 = 840 آر. وطريقة ثانية: 10 × 80 = 800 آر وفي نصف ساعة 40 آر، فالمجموع 840 آر.",
+      "difficulty": 3,
+      "competencies": ["math.mes.durees", "math.num.mult-div-decimaux"]
     }
-  ]
+  ],
+  "manuel": {
+    "items": ["ex. 5", "ex. 8"]
+  }
 }
