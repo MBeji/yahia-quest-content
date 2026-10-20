@@ -187,3 +187,10 @@ Format du concours (1 h, trois problèmes à étapes, aucun QCM) ; une mission d
 | **E-8** | D06 et D09 passent à `ecarte` dans `documents` ; pas de vague 2. |
 | **E-9** | M1 et M2 partent tout de suite ; M3 et M4 après le rapport B5 (22 et 19 peuvent partir seuls). |
 | **E-10** | Aucune mission pour 23 et 26. |
+
+## 10. Décisions du pilote après l'audit M1 + M2 (2026-10-20)
+
+| | Décision |
+| --- | --- |
+| **E-11** (M-1) | Les missions 2020 P2 et 2018 P1, placées au 06 par l'exception E-3, **passent au ch. 13** : 10 de leurs 16 questions exigent la fraction d'une quantité et le retour au tout (ch. 08 et 13), non enseignés au 06. Renommage `13/…` (missions non publiées : aucun id servi ne bouge), registre `chapitre`/`fichier` mis à jour. |
+| **E-12** (C-1) | Nombres à chiffre manquant (`2▢4`) inversés en RTL : **correctif moteur** (`isolateLtrRuns`, PR moteur), qui couvre aussi le ch. 07 déjà servi ; pas de réécriture en toutes lettres côté contenu. La livraison attend le merge du correctif moteur. |

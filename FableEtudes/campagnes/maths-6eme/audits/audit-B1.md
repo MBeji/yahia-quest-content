@@ -397,3 +397,74 @@ fiche §2, pas du calcul littéral : rien à changer).
 - Doutes de l'auteur : n° 1 confirmé (B1-04-1) ; n° 2 (code `502603` au niveau de l'exercice) conforme ; n° 3 :
   les variantes 06 ne redonnent plus les données du manuel… mais d'autres items redonnent le cours (B1-06-1) ; n° 4
   (◐ non exercés) conforme à §3.2.
+
+---
+
+## Re-vérification (2026-10-20) — après « Corrections après audit » de l'auteur
+
+> État relu : arbre de travail de `wip/maths-6eme-un-passage` (HEAD `9f6e0eec`), comparé question par question à
+> `7aab9311` (état audité). Périmètre : quiz, exercices 01–05, cours, résumés des ch. 01–06 (missions `06-…` exclues).
+
+### Verdict : **à corriger** — 1 majeur, 3 mineurs (tous à correction textuelle immédiate, ci-dessous)
+
+**(1) Suivi des 63 défauts.** Les 47 majeurs et 14 des 16 mineurs sont corrigés tels que proposés (35 questions
+« qui redonnaient le cours », 9 étiquettes, quiz 03 Q4, balance 04 en variante sans `manuel`, deux `> ⚠️` au ch. 04,
+« −1 », ancrage 01 § 5, figure et piège 03, « ⟺ », etc.). Les deux points écartés le sont **à juste titre** :
+B1-06-5 (le gras n'est pas rendu dans un énoncé — `content:qa` refuse `**`) et B1-02-3 pour `01-pratique` Q6
+(je le jugeais acceptable en d1).
+
+**(2) Remplacements re-résolus à l'aveugle** : 61 questions modifiées ou neuves (dont 4 reformulations propres à
+l'auteur : 03 `02-boss` Q3, 06 `02-boss` Q1 et Q6, 06 `05-entrainement` Q2 et Q4). **61/61 clés justes**, une seule
+réponse défendable, explications justes, aucune lettre ni ordinal, clé jamais strictement la plus longue. Données
+cherchées dans les six `cours.md` : aucun exemple résolu redonné, sauf l'écho mineur R-4. Ajouts aux cours recalculés
+(02 : 5 000 − 1 764 → 4 236 avec 4 236 + 1 764 = 6 000 ✓ ; 03 : rangement fautif 3,09 > 3,75 > 3,8 > 4,1 ✓ ;
+04 : 55 / 5,5 et 5,04 / 5,40 ✓).
+
+**(3) Régressions** : aucune. `content:check` ✓ · `content:qa --subject math-6eme` 0 erreur (avertissements hors lot,
+en 14 et 16) · `content:figures:check` ✓ · `content:tranche` **sans `--fresh`** sur 01–06
+(`--strict-longest --strict-lessons`, 247 questions) : clé la plus longue 0/226, **paires proches 0**, positions
+a 26 % · b 29 % · c 30 % · d 16 %, 0 candidat gabarit · rendu vitest : 0 résidu (`**`, `:::`, `$$`, `⟺`, `<em>`) ·
+Chromium 360 px : `scrollWidth` = 360 sur les 6 pages ; figure 03 § 2 sans prose arabe, libellés en 9.
+
+### Défauts restants
+
+**RV-1 · majeur · `06-multiples-communs/exercices/05-entrainement.json` Q2 — deux distracteurs contredits par
+l'énoncé reformulé.** L'énoncé demande désormais « le premier multiple non nul **de 200** qui est aussi multiple de
+150 » : « 50 » et « 350 » ne sont pas des multiples de 200, ils s'éliminent à vue (l'explication parle encore de
+« المضاعف المشترك الأصغر … 350 مجموع العددين »). Garder l'énoncé, remplacer options et explication :
+
+```json
+"options": [
+  { "id": "a", "text": "400" },
+  { "id": "b", "text": "600" },
+  { "id": "c", "text": "1 200" },
+  { "id": "d", "text": "30 000", "misconceptionTag": "math.num.ppmc-remplace-par-le-produit" }
+],
+"correctOption": "b",
+"explanation": "مضاعفات 200 غير المعدومة: 200، 400، 600… نختبرها بالعدد 150: 200 = 150 × 1 + 50 لا، و 400 = 150 × 2 + 100 لا، و 600 = 150 × 4 نعم. فالجواب 600، وهو أصغر مضاعف مشترك غير معدوم للعددين 150 و 200. أمّا 1 200 فالمضاعف المشترك الثاني، و 30 000 جداء العددين: مضاعف مشترك لكنّه ليس الأوّل."
+```
+
+(Vérifié : 400 = 200 × 2 n'est pas multiple de 150 ; 600 = 150 × 4 = 200 × 3 ; 1 200 = 600 × 2 ; 30 000 = 150 × 200 ;
+toutes les options sont des multiples de 200 ; clé « 600 » la plus courte.)
+
+**RV-2 · mineur · `02-operations-naturels/cours.md` § 2 — le nouveau piège donne la réponse du `verifie` de la même
+section** (5 000 − 1 764, « بدل 3 236 »). Remplacer le bloc « خطأ ثانٍ — استلافٌ دون إنقاص » par :
+
+```markdown
+> ⚠️ **خطأ ثانٍ — استلافٌ دون إنقاص**: في 7 000 − 2 485 يستلف بعضهم ألفًا ثمّ ينسى أن ينقص عمود الآلاف
+> ما أعطاه: 10 − 5 = 5 ثمّ 9 − 8 = 1 ثمّ 9 − 4 = 5 ثمّ 7 − 2 = 5، فيجدون 5 515 بدل 4 515. يغري لأنّ الآلاف
+> تبدو سليمة. والتحقّق يكشفه: 5 515 + 2 485 = 8 000 وليس 7 000.
+```
+
+(7 000 − 2 485 = 4 515 ; 5 515 + 2 485 = 8 000 ; ces nombres n'apparaissent nulle part ailleurs au ch. 02.)
+
+**RV-3 · mineur · `04-addition-soustraction-decimaux/exercices/05-entrainement.json` Q5 d « 13,6 »** — ma propre
+suggestion, à retirer : l'option recopie le nombre de l'énoncé (« كم نضيف إلى 13,6 … ») et s'élimine à vue. d →
+`{ "id": "d", "text": "7,6" }` (muette).
+
+**RV-4 · mineur · `03-nombres-decimaux/exercices/03-revision.json` Q6** — « 0,8 → 800 جزء من الألف » fait écho au
+`verifie` du § 2 (« 0,8 km = 800 m »). Remplacer par : prompt « العدد 0,4 يساوي كم جزءًا من الألف؟ » ; options
+a « 4 », b « 40 », c « 400 », d « 0,004 » (a, b, d : `math.num.rang-decimal-confondu`) ; clé c ; explication
+« 0,4 = 0,40 = 0,400: نضيف صفرين على اليمين فلا تتغيّر القيمة، ويصير الرقم الأخير في رتبة الأجزاء من الألف. إذن 0,4 = 400 جزء من الألف. »
+
+Une fois RV-1 appliqué (les mineurs peuvent suivre dans le même passage), le lot B1 est **prêt**.
