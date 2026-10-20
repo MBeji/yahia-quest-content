@@ -24,7 +24,7 @@ lecture: vision
 - **التعليمة 1-ب** [مع 2] : أعلّل إجابتي.
 - **التعليمة 1-ج** [مع 2] : أفسّر تغيّر لون الدّم في عمليّة التّبادل الغازيّ بين الدّم وخلايا الجسم.
 
-**السّند 2 (résumé)** : des enfants ont faim ; le moniteur leur propose des aliments variés : fromage blanc, pain, beurre, laitue, orange, huile d'olive ; il dit : « يجب أن تتناولوا وجبة غذائيّة متوازنة ».
+**السّند 2 (résumé)** : des enfants ont faim ; le moniteur leur propose des aliments variés : fromage, œuf, pain, beurre, laitue, orange, huile d'olive ; il dit : « يجب أن تتناولوا وجبة غذائيّة متوازنة ».
 
 - **التعليمة 2-أ** [مع 1, trois cases] : أصنّف ثلاثة أغذية من السّند حسب وظائف الأغذية الثّلاث في الجدول.
   [tableau à quatre colonnes : la ligne « الغذاء » et la ligne « وظيفته » ont chacune trois cases à remplir]
