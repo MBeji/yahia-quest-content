@@ -2,7 +2,7 @@
   "grade": "6eme-base",
   "sealed": false,
   "source": "CNP — programme national 6ème année de base (année de concours ; guides enseignant cnp-officiel/ : maths 502603, éveil 503604, arabe 501603, français 521612 (+ manuel de lecture 121614, cahier 121615, planches 521613, fichier-classe 521616), islamique 511608, anglais 541608 « Learn and Grow »). Transcriptions fidèles sous programme/6eme-base/.",
-  "note": "sealed=false. math-6eme + eveil-scientifique-6eme codifiés depuis les guides CNP (contenu publié, audit 100%). arabic-6eme codifié et écrit. english-6eme : chapitrage codifié ici depuis programme/6eme-base/anglais.md §4 (fiche validee-r7, 7 unités) ; contenu en cours d'écriture — le chapitre 01-entertaining-myself existe, les six autres sont rapportés 'manquants' tant qu'ils ne sont pas écrits. Anglais = 3e année d'anglais (dès la 4e primaire depuis 2019-2020), A1, distinct du subject 'english' = 9ème collège. french-6eme : chapitrage codifié ici depuis programme/6eme-base/francais.md §4 (fiche LOT A 2026-10-19 : 8 chapitres = 8 modules du guide 521612, pages du manuel de lecture 121614) ; contenu non encore créé → les huit chapitres sont rapportés 'manquants'. education-islamique-6eme attendu mais contenu non encore créé → rapporté 'manquant' (amorce de transcription dispo : programme/6eme-base/islamique.md). NB couverture (programme/6eme-base/eveil.md §6) : 2 blocs du programme (3 effets du courant électrique ; immunité/microbes) sans chapitre dans content/eveil-scientifique-6eme — à arbitrer.",
+  "note": "sealed=false. math-6eme + eveil-scientifique-6eme codifiés depuis les guides CNP (contenu publié, audit 100%). arabic-6eme codifié et écrit. english-6eme : chapitrage codifié ici depuis programme/6eme-base/anglais.md §4 (fiche validee-r7, 7 unités) ; contenu en cours d'écriture — le chapitre 01-entertaining-myself existe, les six autres sont rapportés 'manquants' tant qu'ils ne sont pas écrits. Anglais = 3e année d'anglais (dès la 4e primaire depuis 2019-2020), A1, distinct du subject 'english' = 9ème collège. french-6eme : chapitrage codifié ici depuis programme/6eme-base/francais.md §4 (fiche LOT A 2026-10-19 : 8 chapitres = 8 modules du guide 521612, pages du manuel de lecture 121614) ; contenu non encore créé → les huit chapitres sont rapportés 'manquants'. education-islamique-6eme attendu mais contenu non encore créé → rapporté 'manquant' (amorce de transcription dispo : programme/6eme-base/islamique.md). eveil-scientifique-6eme : 12 chapitres, pages du manuel 103604 codifiées le 2026-10-20 depuis programme/6eme-base/eveil.md §4 (fiche complète, guide 503604 et manuel lus à 100 %) ; 36/36 دروس servis, aucune notion officielle sans chapitre (les 2 blocs jadis non couverts — effets du courant, immunité/microbes — sont servis par 11-effets-courant-electrique et 10-microbes-defense depuis le 2026-09-28).",
   "subjects": [
     {
       "id": "math-6eme",
@@ -210,51 +210,99 @@
       "chapters": [
         {
           "slug": "01-air",
-          "notion": "الهواء"
+          "notion": "الهواء",
+          "manuel": {
+            "code": "103604",
+            "pages": "30-46, 52-60"
+          }
         },
         {
           "slug": "02-respiration",
-          "notion": "التنفّس"
+          "notion": "التنفّس",
+          "manuel": {
+            "code": "103604",
+            "pages": "47-51"
+          }
         },
         {
           "slug": "03-sang-circulation",
-          "notion": "الدم والدّورة الدّمويّة"
+          "notion": "الدم والدّورة الدّمويّة",
+          "manuel": {
+            "code": "103604",
+            "pages": "62-67"
+          }
         },
         {
           "slug": "04-nutrition",
-          "notion": "التغذية"
+          "notion": "التغذية",
+          "manuel": {
+            "code": "103604",
+            "pages": "84-95"
+          }
         },
         {
           "slug": "05-milieu-chaines-alimentaires",
-          "notion": "الوسط البيئيّ والسلاسل الغذائيّة"
+          "notion": "الوسط البيئيّ والسلاسل الغذائيّة",
+          "manuel": {
+            "code": "103604",
+            "pages": "108-117"
+          }
         },
         {
           "slug": "06-reproduction-florale",
-          "notion": "التكاثر عند النبات الزهري"
+          "notion": "التكاثر عند النبات الزهري",
+          "manuel": {
+            "code": "103604",
+            "pages": "97-107"
+          }
         },
         {
           "slug": "07-aimants-boussole",
-          "notion": "المغانط والبوصلة"
+          "notion": "المغانط والبوصلة",
+          "manuel": {
+            "code": "103604",
+            "pages": "126-134"
+          }
         },
         {
           "slug": "08-poids",
-          "notion": "الثقل (الوزن)"
+          "notion": "الثقل (الوزن)",
+          "manuel": {
+            "code": "103604",
+            "pages": "140-145"
+          }
         },
         {
           "slug": "09-oeil-vision",
-          "notion": "العين والرؤية"
+          "notion": "العين والرؤية",
+          "manuel": {
+            "code": "103604",
+            "pages": "7-9, 14-17, 21-24"
+          }
         },
         {
           "slug": "10-microbes-defense",
-          "notion": "الجراثيم ووقاية الجسم: الجلد، التعفّن الجرثومي، التلاقيح، المقاومة"
+          "notion": "الجراثيم ووقاية الجسم: الجلد، التعفّن الجرثومي، التلاقيح، المقاومة",
+          "manuel": {
+            "code": "103604",
+            "pages": "68-83"
+          }
         },
         {
           "slug": "11-effets-courant-electrique",
-          "notion": "آثار التيّار الكهربائيّ: الحراريّ والكيميائيّ والمغناطيسيّ"
+          "notion": "آثار التيّار الكهربائيّ: الحراريّ والكيميائيّ والمغناطيسيّ",
+          "manuel": {
+            "code": "103604",
+            "pages": "119-125, 135-139"
+          }
         },
         {
           "slug": "12-dhaw",
-          "notion": "الضّوء: انتشاره وانعكاسه وانكساره"
+          "notion": "الضّوء: انتشاره وانعكاسه وانكساره",
+          "manuel": {
+            "code": "103604",
+            "pages": "10-13, 18-20, 25-28"
+          }
         }
       ]
     },
