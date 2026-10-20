@@ -92,27 +92,23 @@
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "ما أكبرُ رقمٍ نضعه مكان ▢ في العدد 3▢ ليقبل القسمةَ على 3؟",
+      "prompt": "ما أكبرُ عددٍ من رقمين آحادُه 3 ويقبل القسمة على 3؟",
       "options": [
         {
           "id": "a",
-          "text": "0",
+          "text": "33",
           "misconceptionTag": "math.num.extremum-demande-ignore"
         },
         {
           "id": "b",
-          "text": "3",
+          "text": "63",
           "misconceptionTag": "math.num.extremum-demande-ignore"
         },
-        {
-          "id": "c",
-          "text": "6",
-          "misconceptionTag": "math.num.extremum-demande-ignore"
-        },
-        { "id": "d", "text": "9" }
+        { "id": "c", "text": "73" },
+        { "id": "d", "text": "93" }
       ],
       "correctOption": "d",
-      "explanation": "نريد 3 + ▢ مضاعفًا للعدد 3، أي أن يكون ▢ نفسه مضاعفًا لـ 3: 0 أو 3 أو 6 أو 9، فالأعداد 30 و33 و36 و39 كلّها تصلح. المطلوب الأكبر، وهو 9 (39 = 3 × 13)؛ أمّا الأرقام الأخرى فتصلح لكنّها ليست الأكبر.",
+      "explanation": "نريد عددًا آحاده 3 ومجموع رقميه مضاعف لـ 3: رقم العشرات 3 أو 6 أو 9 (الصفر لا يصلح في خانة العشرات). الأعداد 33 و63 و93 تصلح، وأكبرها 93 = 3 × 31. العدد 73 مجموع رقميه 10 فلا يقبل القسمة على 3.",
       "difficulty": 3,
       "competencies": ["math.num.criteres-divisibilite"]
     },

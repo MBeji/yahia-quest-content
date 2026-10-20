@@ -49,7 +49,7 @@
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     },
     {
-      "prompt": "ما ناتج 1/3 + 1/4 (وحّد على 12)؟",
+      "prompt": "قرأ سامي 1/3 كتاب يوم السبت، و1/4 منه يوم الأحد. أيّ كسر من الكتاب قرأ في اليومين؟",
       "options": [
         {
           "id": "a",
@@ -61,7 +61,7 @@
         { "id": "d", "text": "1/12" }
       ],
       "correctOption": "c",
-      "explanation": "نوحّد على 12: 1/3 = 4/12 و 1/4 = 3/12؛ ثمّ 4/12 + 3/12 = 7/12.",
+      "explanation": "نوحّد على 12: 1/3 = 4/12 و 1/4 = 3/12؛ ثمّ 4/12 + 3/12 = 7/12 من الكتاب.",
       "difficulty": 2,
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     },
@@ -83,15 +83,19 @@
       "competencies": ["math.frac.add-sous"]
     },
     {
-      "prompt": "ما ناتج 5/6 − 1/2 (وحّد على 6)؟",
+      "prompt": "في قارورة 5/6 لتر من الحليب، شرب منها أنس 1/2 لتر. كم لترًا بقي؟",
       "options": [
         { "id": "a", "text": "1/3" },
         { "id": "b", "text": "4/6" },
         { "id": "c", "text": "1/4" },
-        { "id": "d", "text": "4/4" }
+        {
+          "id": "d",
+          "text": "4/4",
+          "misconceptionTag": "math.frac.soustraction-denominateurs"
+        }
       ],
       "correctOption": "a",
-      "explanation": "نوحّد على 6: 1/2 = 3/6؛ ثمّ 5/6 − 3/6 = 2/6، وبالاختزال على 2 نحصل على 1/3.",
+      "explanation": "نوحّد على 6: 1/2 = 3/6؛ ثمّ 5/6 − 3/6 = 2/6، وبالاختزال على 2 يبقى 1/3 لتر.",
       "difficulty": 3,
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     },

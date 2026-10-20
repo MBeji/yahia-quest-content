@@ -28,7 +28,7 @@
       "competencies": ["math.frac.comparaison"]
     },
     {
-      "prompt": "أيُّ الكسرين أكبر: 1/2 أم 1/4؟",
+      "prompt": "قُسّمت فطيرتان متقايستان: الأولى إلى نصفين، والثانية إلى أربعة أرباع. أيّ قطعة أكبر: 1/2 أم 1/4؟",
       "options": [
         { "id": "a", "text": "1/2" },
         {
@@ -36,36 +36,36 @@
           "text": "1/4",
           "misconceptionTag": "math.frac.comparaison-par-denominateur"
         },
-        { "id": "c", "text": "متساويان" },
+        { "id": "c", "text": "القطعتان متساويتان" },
         {
           "id": "d",
-          "text": "لا يمكن المقارنة",
+          "text": "لا يمكن المقارنة دون قياس",
           "misconceptionTag": "math.frac.comparaison-jugee-impossible"
         }
       ],
       "correctOption": "a",
-      "explanation": "عند تساوي البسط (1)، الأصغرُ مقامًا هو الأكبر: بما أنّ 2 < 4 فإنّ 1/2 > 1/4.",
+      "explanation": "البسطان متساويان (1)، فالأكبر صاحب المقام الأصغر: الفطيرة الأولى قُسّمت إلى أجزاء أقلّ، فأجزاؤها أكبر، إذن 1/2 > 1/4.",
       "difficulty": 1,
       "competencies": ["math.frac.comparaison"]
     },
     {
-      "prompt": "أيُّ الكسرين أصغر: 2/7 أم 4/7؟",
+      "prompt": "في علبة حلوى، أكل وليد 2/7 منها وأكلت أخته 4/7 منها. مَن أكل أقلّ؟",
       "options": [
         {
           "id": "a",
-          "text": "4/7",
+          "text": "أخته",
           "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
         },
-        { "id": "b", "text": "2/7" },
-        { "id": "c", "text": "متساويان" },
+        { "id": "b", "text": "وليد" },
+        { "id": "c", "text": "أكلا القدر نفسه" },
         {
           "id": "d",
-          "text": "لا يمكن المقارنة",
+          "text": "لا نعرف دون عدّ",
           "misconceptionTag": "math.frac.comparaison-jugee-impossible"
         }
       ],
       "correctOption": "b",
-      "explanation": "عند تساوي المقام، الأصغرُ بسطًا هو الأصغر؛ وبما أنّ 2 < 4 فإنّ 2/7 أصغرُ من 4/7.",
+      "explanation": "المقام نفسه (7)، فالأصغر صاحب البسط الأصغر: 2 < 4، إذن 2/7 < 4/7، فوليد أكل أقلّ.",
       "difficulty": 1,
       "competencies": ["math.frac.comparaison"]
     },
@@ -112,23 +112,23 @@
       "competencies": ["math.frac.comparaison"]
     },
     {
-      "prompt": "قارن بين 1/2 و 3/5 (وحّد المقامات على 10).",
+      "prompt": "شربت نادية 1/2 لتر من العصير، وشرب كريم 3/5 لتر. مَن شرب أكثر؟ (اكتب الكسرين على المقام 10)",
       "options": [
         {
           "id": "a",
-          "text": "1/2 > 3/5",
+          "text": "نادية",
           "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
         },
-        { "id": "b", "text": "متساويان" },
+        { "id": "b", "text": "شربا القدر نفسه" },
         {
           "id": "c",
           "text": "لا يمكن المقارنة",
           "misconceptionTag": "math.frac.comparaison-jugee-impossible"
         },
-        { "id": "d", "text": "1/2 < 3/5" }
+        { "id": "d", "text": "كريم" }
       ],
       "correctOption": "d",
-      "explanation": "نوحّد على 10: 1/2 = 5/10 و 3/5 = 6/10؛ وبما أنّ 5 < 6 فإنّ 1/2 < 3/5.",
+      "explanation": "نوحّد على 10: 1/2 = 5/10 و 3/5 = 6/10؛ وبما أنّ 5 < 6 فإنّ 1/2 < 3/5، وكريم شرب أكثر.",
       "difficulty": 2,
       "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
     },

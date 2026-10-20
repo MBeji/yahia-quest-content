@@ -448,3 +448,113 @@ du ch. 17, propriétés et `verifie` des ch. 18 et 19), ce qui permet de garder 
 **Verdict : à corriger.** C18-1 et M19-1/M19-2 d'abord, puis les remplacements M16-1, M17-1, M18-1 et M19-3. Après
 correction : `content:check`, `content:qa`, `content:figures:check`, puis `content:tranche` **sans `--fresh`** (il doit
 tomber à 0 paire proche interne au lot, hors paires justifiées), et une relecture des 6 SVG rendus.
+
+---
+
+## Re-vérification (2026-10-20, après les corrections de l'auteur)
+
+> Faite sur l'état du commit `be50aee6` (« B4 corrigé après audit »), inchangé depuis pour les exercices 01–05, les quiz,
+> les cours et les résumés des ch. 16–19 (HEAD `84ebdb72`). Les missions `06-…`/`07-…` du ch. 19 sont hors périmètre.
+> Rien n'a été modifié dans `content/` et aucune opération git n'a été faite.
+
+### 1. Les défauts du premier audit sont corrigés
+
+- **C18-1** (`18` quiz Q2) : la question est devenue 4-4-4 avec « ما اسمه الأدقّ ». L'option « متساوي الساقين » porte
+  `description-la-plus-precise-manquee`. Il n'y a plus qu'une réponse défendable ✓.
+- **M19-1** : le `retenir` du § 🧾 est conforme au texte proposé, la lecture « parallèle **ou** égale » a disparu ✓.
+  Les quatre critères restent justes et posés comme outils (D-1 ✓).
+- **M19-2** : le piège du § ✖️ porte désormais sur « متقايسان → المستطيل ». La redite avec `02-boss` Q5 a disparu, et
+  l'implication fausse aussi ✓.
+- **M16-1, M17-1, M18-1, M19-3** : les 58 remplacements ont été appliqués, chacun relu contre le texte prescrit.
+- **Cours** : les 9 retouches sont en place et justes.
+  - ch. 17 : tableau 105 = 90 + 15 et 135 = 90 + 45, `verifie` 165 = 180 − 15, résumé.
+  - ch. 18 : propriété 21 / (22 − 8) : 2 = 7 / 25 − 9 − 9 = 7, `verifie` 3 × 4 = 12, résumé, existence 7-5-4.
+  - ch. 19 : `verifie` cercle de rayon 5 et 60° → rectangle de diagonales 10, معيّن de 20 → 5, 4 × 6,5 = 26.
+- **Figures** : les 6 SVG sont identiques à ceux de l'audit. Les libellés `؟` (`19-04` Q1), `م ر ل 6 5` (`18-01` Q7) et
+  `4 4 7` (`18-05` Q6) sont posés sur des formes qui restent vraies.
+- **Champs `manuel`** : à jour (16-04, 17-02, 17-03 supprimé, 17-04, 18-01 supprimé, 18-02, 19-04).
+- **M16-2, M17-2, M19-4** (clés repérables, remplissage) et **mineurs d'étiquetage** (m16-1, m17-1, m18-2, m18-3,
+  m19-3) : appliqués.
+- **m19-4** : la colonne « مثال (سم) » ne garde que des calculs. À 360 px, `2 × (9 + 4) = 26` passe à la ligne avant
+  le `=`, avec l'ordre LTR intact (vérifié à l'image). La coupure est propre : acceptable.
+- **Mineurs laissés** (m16-5, m17-2, m18-4, m19-1, m19-2, m19-5) : ce sont des réserves de calibration ou de
+  formulation que l'audit déclarait tolérables. Leur maintien est accepté.
+
+### 2. Les remplacements, re-résolus un par un
+
+Les 166 questions des fichiers 01–05 et des quiz ont été relues. Les 58 remplacées et les deux ajouts hors liste ont
+été re-résolus à l'aveugle. **Toutes les clés sont justes, et chaque question n'a qu'une réponse.**
+
+- **`18` quiz Q4 (ajout de l'auteur)** — « أيُّ ثلاثة أطوال لا يمكن أن تكون أضلاع مثلّث؟ ».
+  - Seul le triplet 2-2-5 échoue (2 + 2 = 4 < 5). Les autres passent : 3 + 4 > 5, 5 + 5 > 5 et 4 + 6 > 9.
+  - Clé d unique, explication juste.
+  - Ce n'est pas une redite : le cours utilise 2-3-10 et des arcs de 2 cm sur une base de 6 cm.
+  - C'est un d2 conforme ✓.
+- **`16-05` Q5 (ajout de l'auteur)** — la carte de quartier.
+  - Raisonnement : (ش1) ⊥ (ط) et (ش2) ⊥ (ط), donc (ش1) ∥ (ش2) ; puis (ش3) ∥ (ش1), donc (ش3) ∥ (ش2).
+  - Clé « متوازيان » juste, explication juste. La mise en situation est bienvenue ✓.
+- **`16` quiz Q4** : 70 : 2 = 35 ✓.
+- **`16-04` Q6** : 4 + 4 = 8 ✓.
+- **`16-04` Q7** : 45 + 90 = 135, une seule obtuse ✓.
+- **`16-04` Q8** : 12 : 2 = 6, puis 6 : 2 = 3 ✓.
+- **`17-02` Q5** : 40 + 60 = 100, منفرجة ✓.
+- **`17-03` Q6** : 180 − 145 = 35 ✓.
+- **`17-04` Q6** : 90 + 50 = 140 ✓.
+- **`17-04` Q7** : appariement 22,5 / 90 / 45 / 135, chaque valeur une seule fois ✓.
+- **`18-02` Q2** : 24 − 17 = 7, متساوي الساقين ✓.
+- **`18-04` Q4** : 15 < 16 ✓.
+- **`18-05` Q3** : 90 ✓.
+- **`19-04` Q1** : 36 : 4 = 9 ✓.
+- **`19-04` Q2** : 22 : 4 = 5,5 ✓.
+- **`19-04` Q4** : 28 : 2 − 9 = 5 ✓.
+- **`19-04` Q7** : deux paires égales ✓.
+- **`19-05` Q3** : arcs de 3 cm en ب et de 5 cm en د ✓.
+- **`19-05` Q4** : 22 ✓.
+
+Défauts trouvés dans ces remplacements :
+
+- **R-1 [majeur] — `16-05-entrainement` Q4, option b `الكوس وحده`.** L'énoncé dit « لا نملك كوسًا ولا منقلة ».
+  L'option contredit donc la prémisse et s'élimine à la lecture : c'est le défaut de forme n° 3. L'auteur l'a
+  appliquée en le signalant, et il a raison. **L'erreur vient de mon m16-2.** Remplacer le texte de l'option b par
+  `مسطرتان اثنتان` (muette). Clé et explication inchangées : deux règles ne donnent pas d'angle droit, la question n'a
+  toujours qu'une réponse.
+- **R-2 [mineur] — `16-03-revision` Q4 : deux options synonymes.** b « يتغيّر كلّما ابتعدنا » et d « يتغيّر من جهة إلى
+  أخرى » disent la même chose. Ce défaut aussi vient de mon m16-2. Remplacer le texte de b par `يساوي 1 سم دائمًا`
+  (muette).
+- **R-3 [mineur] — `18` quiz Q5 reprend les nombres de la propriété § 🧭.** La propriété dit « 7 و5 و4 تصلح » depuis
+  m18-1, et la question utilise 7-5-4 depuis M18-1 : mes deux recommandations se sont croisées. Dans l'énoncé,
+  remplacer `7 سم و5 سم و4 سم` par `8 سم و6 سم و5 سم` (6 + 5 = 11 > 8). Options et explication inchangées.
+
+### 3. Aucune régression
+
+- `content:check` ✓ (121 sujets).
+- `content:qa -- --subject math-6eme` : 0 erreur. Les deux avertissements du lot (`16-02` Q5 « (ج) » et `16-04` Q3
+  « (د) ») sont de **faux positifs** : ce sont des noms de droites, pas des lettres d'option.
+- `content:figures:check` ✓.
+- `content:tranche` sans `--fresh` sur les 4 chapitres : clé strictement la plus longue 16/148 = 11 %, aucune
+  étant une vraie fuite de forme. Positions 31 / 32 / 21 / 16 %, non bloquant.
+- **Rendu** (vitest jetable, supprimé ; Chromium 360 px) :
+  - aucun débordement (`scrollWidth` = 360) dans les 8 pages ;
+  - les `verifie` repliés et les figures sont tous présents (16 : 9/12 ; 17 : 9/10 ; 18 : 9/11 ; 19 : 11/14), aucun
+    `:::` brut ;
+  - tableaux lisibles.
+- **M3** : aucune occurrence de somme des angles dans les cours, quiz et exercices 01–05. Le seul « troisième angle »
+  (ch. 18 § 🎯) est **mesuré** à la منقلة ✓.
+
+### 4. Les 3 paires proches restantes sont justifiées
+
+- `16-04` Q3 ↔ `16-04` Q4 (0,55) : deux chaînes différentes.
+  - Q3 : ⊥ (د) deux fois, donc ∥, puis ⊥ → ⊥.
+  - Q4 : ∥ et ⊥ → ⊥, puis ⊥ deux fois → ∥.
+  - Seul le vocabulaire (د1…د4) est commun. **Justifiée.**
+- `16-02` Q4 ↔ `16-04` Q3 (0,45) : transitivité du parallélisme d'un côté, chaîne de perpendiculaires de l'autre.
+  **Justifiée.**
+- `18` quiz Q2 ↔ `18-01` Q4 (0,53) : « الاسم الأدقّ » d'un triangle équilatéral d'un côté, classement d'un triangle
+  scalène de l'autre. Les données et la réponse diffèrent. **Justifiée.**
+
+### Verdict de la re-vérification
+
+**Prêt après R-1.** Le critique et les deux énoncés fautifs du ch. 19 sont corrigés, les remplacements sont justes, et
+il n'y a pas de régression. Restent un majeur d'une seule option (R-1, texte ci-dessus) et deux mineurs (R-2, R-3). Les
+trois tiennent en trois remplacements de texte, sans nouvelle relecture complète. Après correction, relancer
+`content:qa` et `content:tranche`.

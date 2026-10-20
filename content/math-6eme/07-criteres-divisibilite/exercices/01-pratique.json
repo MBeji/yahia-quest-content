@@ -37,7 +37,7 @@
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "أيُّ عددٍ يقبل القسمة على 5؟",
+      "prompt": "اختار طفل لافتة يقبل رقمها القسمة على 5. أيّ لافتة اختار؟",
       "options": [
         { "id": "a", "text": "52" },
         { "id": "b", "text": "38" },
@@ -76,27 +76,23 @@
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "هل يقبل العددُ 438 القسمةَ على 3؟",
+      "prompt": "يقبل العددُ 438 القسمةَ على 3. ما الدليل على ذلك؟",
       "options": [
         {
           "id": "a",
-          "text": "لا، لأنّ آحاده ليس 0 ولا 5",
+          "text": "رقم آحاده 8",
           "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
         },
         {
           "id": "b",
-          "text": "لا، لأنّ آحاده 8 لا 3",
+          "text": "لأنّه عددٌ زوجيّ ينتهي بـ 8",
           "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
         },
-        {
-          "id": "c",
-          "text": "نعم، لأنّه عددٌ زوجيّ",
-          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
-        },
-        { "id": "d", "text": "نعم، لأنّ مجموع أرقامه 15" }
+        { "id": "c", "text": "رقم عشراته 3" },
+        { "id": "d", "text": "مجموع أرقامه 15" }
       ],
       "correctOption": "d",
-      "explanation": "مجموعُ أرقام 438 هو 4 + 3 + 8 = 15، و15 مضاعفٌ للعدد 3، فالعددُ 438 يقبل القسمة على 3: 438 = 3 × 146. رقمُ الآحاد لا يكفي هنا، وكونُ العدد زوجيًّا يخصّ القسمة على 2 لا على 3.",
+      "explanation": "مجموعُ أرقام 438 هو 4 + 3 + 8 = 15، و15 مضاعفٌ للعدد 3، فالعددُ 438 يقبل القسمة على 3: 438 = 3 × 146. رقمُ الآحاد ورقمُ العشرات لا يُثبتان شيئًا عن 3، وكونُ العدد زوجيًّا يخصّ القسمة على 2.",
       "difficulty": 2,
       "competencies": ["math.num.criteres-divisibilite"]
     },

@@ -75,3 +75,8 @@ Audit appliqué : `audits/audit-B2.md` (0 critique, 100 majeurs, 37 mineurs), ch
 **Contrôles** : prettier OK ; content:check OK ; content:qa 0 erreur (3 avertissements, tous au ch. 14, hors lot) ; content:figures:check OK ; tranche `--fresh --strict-longest --strict-lessons` sur 07–12 : 0 clé strictement la plus longue, 0 régression du motif de notion ; rendu des 6 cours/résumés sans `**`, `:::`, `$$`.
 **Paires proches** : 58 (Jaccard ≥ 0,45), dont plusieurs créées par les jeux de remplacement de l'audit lui-même (variantes volontaires d'un même schéma) ; non bloquantes.
 **Recoupements avec le cours** : 08 quiz Q7, 09 quiz Q6, 10 04-Q9, 11 02-Q9, 12 04-Q8 relus : nombres communs seulement, aucun exemple redonné.
+
+### Re-vérification (2026-10-20)
+
+Appliqués tels que fournis dans `audits/audit-B2.md` § « Re-vérification » : les 20 réécritures « paires proches » (07 : 01-Q3, 01-Q6, 02-boss Q6 ; 09 quiz Q1 ; 10 : 01 Q2/Q3/Q6, 02 Q1/Q2/Q6, 03 Q1/Q2/Q3, 04 Q1/Q6, 05 Q1/Q2 ; 11 05-Q3/Q5 ; 12 05-Q3), r-1 (10/04-defi Q7, لفيفة féminin), r-2 (07/05 Q6 option d « على 9 نعم وعلى 3 لا » ; 09/04-defi Q2 option d « 24 » + explication), r-3 (verifie du cours 10 → 8/9 contre 10/11 ; résumé 10 revenu à 6/7 > 3/4). Même rang, difficulté et id de clé ; valeurs recalculées ; missions `06-…` du ch. 07 non touchées.
+Contrôles : prettier, content:check, content:figures:check OK ; content:qa 0 erreur ; `content:tranche` sans `--fresh` sur 07–12 : 0/265 clé strictement la plus longue, plus forte paire 0,59 (0 paire ≥ 0,6), 21 paires dans [0,45 ; 0,6[ (savoir-faire parallèles voulus).
