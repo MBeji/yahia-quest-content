@@ -1,0 +1,1679 @@
+{
+ "couple": "6eme-base/math-6eme",
+ "etude": 36,
+ "version": 1,
+ "ecritLe": "2026-10-19",
+ "entrees": "lignes C01–C19 (sans C13 et C16) et D01–D09 (243 lignes valides, 8 reclassées en 25 le 2026-10-19) ; transcriptions examens-nationaux/6eme-base/math/ ; PLAN.md § 3 (M1–M4) ; PLAN-passage.md ; contenu math-6eme/ tel que mis à niveau (B1–B4 terminés, B5 en cours, 25 apparu pendant le plan)",
+ "regles": "PLAN-gisement.md § 1 (R1–R10)",
+ "missions": [
+  {
+   "id": "m001",
+   "lot": "M1",
+   "chapitre": "06-multiples-communs",
+   "fichier": "exercices/06-exam-2023-p1-multiples-et-recettes.json",
+   "titre": "Concours 2023 · problème 1 · multiples communs, puis prix d'un billet",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C04 (2023) problème 1"
+   ],
+   "items": [
+    "q1 (« ما هو العدد الجملي للكراسي ؟ ») : le nombre de chaises est un multiple de 17 ET de 7, donc de 119 ; liste des multiples de 119 voisins de l'intervalle [2005 ; 2035] ; seul 2023 (119 × 17) convient — QCM du multiple commun, QCM de la liste dans l'intervalle, QCM de la conclusion « un seul nombre » — 3 q (résultat 2023).",
+    "q2 (tableau des deux matchs) : écart de billets du premier genre entre les deux matchs (238 − 138), écart des recettes (21 420 − 19 920), prix d'un billet du premier genre — QCM de ce que l'on compare, numérique de l'écart de recettes, numérique du prix — 3 q (résultat 15 d). Le second genre est vendu en totalité les deux fois : son nombre ne change pas, il disparaît de l'écart."
+   ],
+   "neDemandePas": [
+    "06/02-boss#2",
+    "06/02-boss#4",
+    "06/03-revision#3",
+    "06/03-revision#6",
+    "06/04-defi#1",
+    "06/04-defi#3",
+    "06/05-entrainement#2",
+    "06/05-entrainement#5",
+    "04/05-entrainement#7"
+   ],
+   "questions": 6,
+   "note": "Deux moitiés indépendantes : la q1 n'est pas utilisée par la q2 (le nombre de chaises sert d'énoncé, pas de donnée du calcul du prix). Placement au `06` malgré la règle du chapitre le plus avancé (14) : l'étape neuve est le multiple commun dans un intervalle (E-placement). L'énoncé officiel dit « عدد محصور بين 2005 و 2035 » : l'intervalle est ouvert, 2023 est le seul multiple de 119 qui y tombe (1904 et 2142 sortent).",
+   "registre": "C04#1a",
+   "sourcesCodes": [
+    "C04#1a",
+    "C04#1b"
+   ]
+  },
+  {
+   "id": "m002",
+   "lot": "M1",
+   "chapitre": "06-multiples-communs",
+   "fichier": "exercices/07-exam-2020-p2-jouets-restes-egaux.json",
+   "titre": "Concours 2020 · problème 2 · fraction et écart, puis restes égaux",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C07 (2020) problème 2"
+   ],
+   "items": [
+    "q1 (« ما هو عدد اللعب من الصنف الأوّل ؟ ») : premier genre = 3/5 du second ; l'écart 1920 vaut donc 2/5 du second ; 1/5 = 960 ; second 4800 ; premier 2880 — 4 q (résultat 2880 ; le second genre 4800 sert à la q2).",
+    "q2 (« ما هو عدد اللعب من الصنف الثّالث ؟ ») : le total N est compris entre 9600 et 9700 et laisse le reste 4 dans les divisions par 11, 19 et 23 ; N − 4 est un multiple commun de 11, 19, 23 (produit 4807, ces trois nombres sont premiers entre eux) ; 4807 × 2 = 9614 donc N = 9618 ; troisième genre = 9618 − 2880 − 4800 = 1938 — 4 q (QCM de ce qui est multiple, numérique du multiple commun, du total, du troisième genre)."
+   ],
+   "neDemandePas": [
+    "06/05-entrainement#5",
+    "06/04-defi#2",
+    "06/05-entrainement#2",
+    "06/02-boss#6",
+    "08/02-boss#5",
+    "08/04-defi#2",
+    "13/04-defi#4"
+   ],
+   "questions": 8,
+   "note": "Piège de la q2 : oublier d'ajouter le reste (le multiple commun lui-même vaut 9614, qui est aussi dans l'intervalle). Le reste 4 est le même pour les trois diviseurs : c'est ce qui permet de passer par le multiple commun. Placement au `06` (étape neuve = restes égaux dans un intervalle), pas au `13` malgré la fraction de la q1.",
+   "registre": "C07#2a",
+   "sourcesCodes": [
+    "C07#2a",
+    "C07#2b"
+   ]
+  },
+  {
+   "id": "m003",
+   "lot": "M1",
+   "chapitre": "06-multiples-communs",
+   "fichier": "exercices/08-exam-2018-p1-costumes-restes-et-benefice.json",
+   "titre": "Concours 2018 · problème 1 · restes égaux, bénéfice fractionnaire, pourcentage du coût",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C09 (2018) problème 1"
+   ],
+   "items": [
+    "q1 (nombre de survêtements par jour) : N compris entre 602 et 608, reste 7 dans la division par 23 ET par 13 ; N − 7 est un multiple commun de 23 et 13 (299, premiers entre eux) ; 598 est le seul multiple de 299 près de l'intervalle, donc N = 605 — 3 q.",
+    "q2 (prix d'achat du tissu) : vente 77 440 d avec un bénéfice égal aux 4/7 du coût ; la vente vaut donc 11/7 du coût ; coût = 77 440 × 7/11 = 49 280 d ; le tissu coûte 41 % du coût de production = 20 204,8 d — 5 q (écriture « vente = coût + 4/7 du coût », coût, 1 % ou 41/100, tissu)."
+   ],
+   "neDemandePas": [
+    "06/05-entrainement#5",
+    "06/04-defi#3",
+    "06/03-revision#6",
+    "14/02-boss#8",
+    "14/04-defi#11",
+    "14/05-entrainement#10",
+    "08/04-defi#2"
+   ],
+   "questions": 8,
+   "note": "La q1 reprend la structure de la mission du concours 2020 (restes égaux) : l'auteur du lot garde deux angles différents (là, le reste commun à TROIS diviseurs ; ici, à deux, suivi d'un bénéfice fractionnaire). Piège de la q2 : appliquer la fraction du bénéfice au prix de vente au lieu du coût. Les 41 % portent sur le coût de production, pas sur la vente.",
+   "registre": "C09#1a",
+   "sourcesCodes": [
+    "C09#1a",
+    "C09#1b"
+   ]
+  },
+  {
+   "id": "m004",
+   "lot": "M1",
+   "chapitre": "06-multiples-communs",
+   "fichier": "exercices/09-devoir-multiples-communs-intervalle.json",
+   "titre": "Multiple commun dans un intervalle : trouver, encadrer, prouver l'unicité",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "devoir",
+   "sources": [
+    "devoir A (T1, école primaire), exercice 11a,11b",
+    "devoir B (T1, école primaire), exercice 1,7",
+    "devoir C (T1, école primaire), exercice 1",
+    "devoir D (T2, école primaire), exercice 6a",
+    "devoir E (T2, école primaire), exercice 1a,1b",
+    "devoir G (T3, école primaire), exercice 8e"
+   ],
+   "items": [
+    "Un plus petit multiple commun de deux nombres premiers entre eux (donné par le produit) puis d'un troisième nombre : trouver le multiple commun de trois nombres sous une borne (le plus grand possible), puis l'encadrer entre deux multiples communs consécutifs — QCM, numérique — 3 q.",
+    "« Montrer qu'un nombre est le seul multiple commun dans un intervalle » : lister les multiples communs voisins (celui d'avant et celui d'après sortent de l'intervalle) puis conclure à l'unicité — QCM de la justification, ordering des trois temps (multiple commun, liste, conclusion) — 3 q.",
+    "Un nombre qui laisse le même reste dans deux divisions et qui est compris sous une borne : on cherche un multiple commun puis on lui ajoute le reste — QCM, numérique — 2 q. Un des trois nombres est un multiple d'un autre dans l'une des questions (le plus petit multiple commun est alors le plus grand des deux)."
+   ],
+   "neDemandePas": [
+    "06/01-pratique#5",
+    "06/01-pratique#6",
+    "06/02-boss#2",
+    "06/02-boss#3",
+    "06/03-revision#3",
+    "06/04-defi#1",
+    "06/04-defi#2",
+    "06/05-entrainement#2",
+    "06/05-entrainement#3",
+    "06/05-entrainement#5"
+   ],
+   "questions": 8,
+   "note": "Salle blanche. Gestes absents des missions d'examen : multiple commun de TROIS nombres sous une borne, encadrement entre deux multiples communs consécutifs, preuve d'unicité dans un intervalle. Les deux versions d'un même devoir (A et B) ne comptent qu'une fois. Les lignes D01#1 et D01#2 (écart entre deux effectifs, `HP:somme-difference`) ne sont pas reprises.",
+   "registre": "D02#1",
+   "sourcesCodes": [
+    "D02#1",
+    "D02#7",
+    "D03#1",
+    "D05#1a",
+    "D05#1b",
+    "D04#6a",
+    "D01#11a",
+    "D01#11b",
+    "D08#8e"
+   ]
+  },
+  {
+   "id": "m005",
+   "lot": "M1",
+   "chapitre": "07-criteres-divisibilite",
+   "fichier": "exercices/06-devoir-chiffres-manquants-plusieurs-criteres.json",
+   "titre": "Compléter les chiffres manquants pour deux, trois ou quatre critères à la fois",
+   "etage": "d2",
+   "mode": "practice",
+   "xp": 75,
+   "coins": 15,
+   "regime": "devoir",
+   "sources": [
+    "devoir G (T3, école primaire), exercice 8a,8b,8d"
+   ],
+   "items": [
+    "Un nombre dont un chiffre manque : le compléter pour qu'il soit divisible par deux critères à la fois (2 et 5, 5 et 3) — QCM, multi (« tous les chiffres possibles ») — 2 q.",
+    "Un nombre dont un chiffre manque : divisibilité par 3 puis par 9 (le même chiffre convient-il aux deux ?) — QCM, numérique — 2 q.",
+    "Un nombre à DEUX chiffres manquants : divisibilité simultanée par quatre critères (2, 3, 5, 9) ; commencer par le chiffre des unités (0), puis le chiffre des dizaines (somme à compléter) — ordering des étapes, numérique du plus petit nombre possible — 2 q."
+   ],
+   "neDemandePas": [
+    "07/01-pratique#8",
+    "07/02-boss#6",
+    "07/02-boss#7",
+    "07/04-defi#2",
+    "07/04-defi#5",
+    "07/04-defi#6",
+    "07/05-entrainement#5",
+    "07/05-entrainement#9",
+    "07/05-entrainement#10"
+   ],
+   "questions": 6,
+   "note": "Salle blanche. Le patron du `07` demande souvent UN chiffre manquant pour UN critère ; le geste neuf est DEUX chiffres manquants et les critères cumulés (2, 3, 5, 9). Le critère de 4 (deux derniers chiffres) n'est pas au programme : ne pas l'utiliser. La ligne D09#1 (feuille de calcul mental, pas de mission) n'est pas reprise.",
+   "registre": "D08#8a",
+   "sourcesCodes": [
+    "D08#8a",
+    "D08#8b",
+    "D08#8d"
+   ]
+  },
+  {
+   "id": "m006",
+   "lot": "M1",
+   "chapitre": "13-multiplication-fraction-entier",
+   "fichier": "exercices/06-exam-2025-p1-bouquets-trois-clients.json",
+   "titre": "Concours 2025 · problème 1 · trois sommes et une fraction du total",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C02 (2025) problème 1"
+   ],
+   "items": [
+    "q1 (« أثبتُ أنّ المبلغ الّذي دفعه الحريف الثّاني يساوي 72 د ») : les deux autres clients paient 60 + 84 = 144 d, soit 2/3 du total ; 1/3 du total = 72 d (donc total 216 d) — QCM de la fraction du total que représentent les deux autres, numérique du total, numérique du client 2 — 3 q.",
+    "q2 (prix d'une fleur blanche, 12 fleurs par bouquet) : chaque couleur est comptée deux fois dans les trois sommes ; 216 ÷ 2 = 108 d pour un bouquet de chaque couleur ; jaune = 108 − 60 = 48, rouge = 108 − 72 = 36, blanc = 108 − 84 = 24 ; une fleur blanche = 24 ÷ 12 = 2 d — QCM de ce que vaut la somme des trois bouquets, numériques des trois prix, numérique de la fleur — 5 q."
+   ],
+   "neDemandePas": [
+    "13/02-boss#9",
+    "13/04-defi#7",
+    "13/04-defi#8",
+    "08/02-boss#5",
+    "08/04-defi#2",
+    "12/04-defi#8",
+    "04/05-entrainement#7"
+   ],
+   "questions": 8,
+   "note": "Le tableau est refait en SVG ou en tableau lisible, les trois sommes sont données (60 d, 1/3 du total, 84 d). Aucune lettre, aucun calcul littéral : raisonnement par addition des trois sommes. Piège de la q1 : appliquer 1/3 aux deux autres clients (24 d) au lieu de la fraction 2/3. `04/05-entrainement#7` pose déjà les sommes deux à deux (masses) : la nouveauté est la fraction du total qui donne la troisième somme.",
+   "registre": "C02#1a",
+   "sourcesCodes": [
+    "C02#1a",
+    "C02#1b"
+   ]
+  },
+  {
+   "id": "m007",
+   "lot": "M1",
+   "chapitre": "13-multiplication-fraction-entier",
+   "fichier": "exercices/07-exam-2016-p1-cadeau-fraction-et-remise.json",
+   "titre": "Concours 2016 · problème 1 · retrouver le prix, puis le taux de remise",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C11 (2016) problème 1"
+   ],
+   "items": [
+    "q1 (« ما ثمن الهديّة ؟ ») : le premier frère donne 18,600 d ; le second donne les 2/5 du prix ; ensemble 45,800 d ; donc 2/5 du prix = 27,200 d ; 1/5 = 13,600 d ; prix = 68 d — QCM de ce que vaut 2/5, numérique du 1/5, numérique du prix — 3 q.",
+    "q2 (taux de remise) : le père ajoute 12 d pour compléter ; prix payé = 45,800 + 12 = 57,800 d ; remise = 68 − 57,800 = 10,200 d ; taux = 10,2 ÷ 68 = 15 % (rapporté au prix d'origine) — QCM du prix payé, numérique de la remise, numérique du taux — 4 q."
+   ],
+   "neDemandePas": [
+    "13/02-boss#9",
+    "11/05-entrainement#7",
+    "14/02-boss#8",
+    "14/04-defi#11",
+    "08/04-defi#2",
+    "04/03-revision#6"
+   ],
+   "questions": 7,
+   "note": "Placement au `13` (étape neuve = retrouver le tout depuis une fraction à deux contributeurs), le taux de remise de la q2 est de niveau `14` mais déjà au patron. Piège de la q2 : rapporter la remise au prix payé (57,8) au lieu du prix d'origine. Les décimaux à trois chiffres (18,600) sont gardés tels qu'imprimés.",
+   "registre": "C11#1a",
+   "sourcesCodes": [
+    "C11#1a",
+    "C11#1b"
+   ]
+  },
+  {
+   "id": "m008",
+   "lot": "M1",
+   "chapitre": "13-multiplication-fraction-entier",
+   "fichier": "exercices/08-exam-2015-p1-robe-deux-options.json",
+   "titre": "Concours 2015 · problème 1 · deux façons d'obtenir une robe",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C12 (2015) problème 1"
+   ],
+   "items": [
+    "q1 (« أحسُبُ كلفة الفستان حسب الخيار الأوّل ») : tissu 2,5 m × 18,400 d = 46 d ; façon = 5/2 du prix du tissu (fraction supérieure à 1) = 115 d ; coût = 161 d — QCM de la lecture « 5/2 du prix » (plus grand que le tissu), numériques tissu, façon, total — 4 q.",
+    "q2 (« أيّ الخيارين أقلّ كلفة ؟ ») : remise de 15 % sur 162,500 d = 24,375 d ; prix 138,125 d ; comparaison avec 161 d : le second choix est le moins cher — numérique de la remise, du prix, QCM de la comparaison — 2 q."
+   ],
+   "neDemandePas": [
+    "13/05-entrainement#6",
+    "13/05-entrainement#10",
+    "13/03-revision#10",
+    "14/04-defi#2",
+    "14/04-defi#3",
+    "14/03-revision#9",
+    "05/05-entrainement#6",
+    "05/05-entrainement#7"
+   ],
+   "questions": 6,
+   "note": "Exception de placement déclarée : le chapitre le plus avancé de la lecture serait `14` (remise de 15 %), déjà bien servi au patron ; l'étape neuve est la fraction supérieure à 1 d'une quantité (5/2 du prix), au `13`. Piège de la q1 : lire 5/2 comme moins que le tissu. Piège de la q2 : retirer la remise de la mauvaise base. Décimaux à trois chiffres gardés (18,400 ; 162,500).",
+   "registre": "C12#1a",
+   "sourcesCodes": [
+    "C12#1a",
+    "C12#1b"
+   ]
+  },
+  {
+   "id": "m009",
+   "lot": "M1",
+   "chapitre": "13-multiplication-fraction-entier",
+   "fichier": "exercices/09-exam-2009-p1-chauffe-eau-installation-economie.json",
+   "titre": "Concours 2009 · problème 1 · le prix retrouvé par une petite fraction, puis l'économie en pourcentage",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C18 (2009) problème 1"
+   ],
+   "items": [
+    "q1 (coût total d'achat et de pose) : la pose coûte 240 d, soit 2/13 du prix du chauffe-eau ; 1/13 = 120 d ; prix = 1560 d ; coût total = 1560 + 240 = 1800 d — QCM, numériques — 4 q.",
+    "q2 (taux d'économie sur la facture bimestrielle) : avant 116 d, après 78,880 d ; économie = 37,120 d ; part de l'ancienne facture = 37,12 ÷ 116 = 32 % — numérique de l'économie, QCM de la base du pourcentage (l'ancienne facture), numérique du taux — 3 q."
+   ],
+   "neDemandePas": [
+    "13/02-boss#9",
+    "14/03-revision#6",
+    "14/05-entrainement#9",
+    "14/quiz#7",
+    "04/05-entrainement#5",
+    "08/02-boss#5"
+   ],
+   "questions": 7,
+   "note": "Piège de la q1 : calculer 2/13 de 240. Piège de la q2 : rapporter l'économie à la nouvelle facture. Le prix du chauffe-eau (1560) n'est pas nécessaire pour la q2 : l'énoncé les enchaîne sans les lier, l'auteur garde les deux questions indépendantes.",
+   "registre": "C18#1a",
+   "sourcesCodes": [
+    "C18#1a",
+    "C18#1b"
+   ]
+  },
+  {
+   "id": "m010",
+   "lot": "M2",
+   "chapitre": "14-proportionnalite-pourcentage",
+   "fichier": "exercices/06-exam-2026-p1-marchand-caisses-hausse-5-pourcent.json",
+   "titre": "Concours 2026 · problème 1 · rapport entre deux genres, puis hausse de 5 % des recettes",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C01 (2026) problème 1"
+   ],
+   "items": [
+    "q1 (« أثبتُ أنّ التّاجر يحقّق مداخيل ... قدرها 9000 د ») : 400 caisses ; le nombre du premier genre est le tiers de celui du second, donc le quart du total : 100 et 300 ; recette = 100 × 45 + 300 × 15 = 9000 d — QCM de la part du total (1/4 et non 1/3), numériques des deux effectifs, de la recette — 4 q.",
+    "q2 (nombre de caisses du premier genre après le remplacement) : +5 % de 9000 d = 450 d de plus ; chaque caisse du second genre remplacée par une du premier genre rapporte 45 − 15 = 30 d de plus ; 450 ÷ 30 = 15 caisses remplacées ; premier genre = 100 + 15 = 115 — QCM du gain par échange, numériques — 3 q."
+   ],
+   "neDemandePas": [
+    "14/03-revision#9",
+    "14/02-boss#10",
+    "14/02-boss#8",
+    "13/04-defi#7",
+    "08/02-boss#7"
+   ],
+   "questions": 7,
+   "note": "Pièges du lecteur : lire « le tiers du second » comme une part du total ; appliquer le pourcentage au nombre de caisses et non à la recette. Le « montrer que » devient « quelle valeur » (9000 d) : la clé de la q1 ne se lit dans aucun titre.",
+   "registre": "C01#1a",
+   "sourcesCodes": [
+    "C01#1a",
+    "C01#1b"
+   ]
+  },
+  {
+   "id": "m011",
+   "lot": "M2",
+   "chapitre": "14-proportionnalite-pourcentage",
+   "fichier": "exercices/07-exam-2024-p2-club-musique-trois-tranches.json",
+   "titre": "Concours 2024 · problème 2 · le tarif d'un club selon le nombre d'heures",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C03 (2024) problème 2"
+   ],
+   "items": [
+    "q1 (somme payée par Amine pour 136 heures) : lire le tableau (136 heures : tranche « de 101 à 149 », neuf dixièmes) ; plein tarif 136 × 8 = 1088 d ; 9/10 → 979,2 d — QCM de la tranche, numériques — 3 q.",
+    "q2 (nombre d'heures de Yasmine, plus de 136 pour la même somme) : la tranche 101–149 est exclue (plus d'heures ferait payer plus) ; il s'agit de la tranche « plus de 149 » avec 20 % de réduction ; une heure coûte 8 × 0,8 = 6,4 d ; 979,2 ÷ 6,4 = 153 heures — QCM du raisonnement sur les tranches, numériques de l'heure réduite et des heures, QCM de contrôle de la tranche (153 > 149) — 4 q."
+   ],
+   "neDemandePas": [
+    "14/04-defi#2",
+    "14/04-defi#3",
+    "14/02-boss#4",
+    "14/04-defi#11",
+    "14/04-defi#10",
+    "14/05-entrainement#10",
+    "13/quiz#6"
+   ],
+   "questions": 7,
+   "note": "Pièges : choisir la mauvaise tranche ; traduire « réduction de 20 % » par un multiplicateur à l'envers (× 1,2 ou ÷ 0,8 mal posé). Le tableau des trois tranches est redonné dans chaque question qui le lit.",
+   "registre": "C03#2a",
+   "sourcesCodes": [
+    "C03#2a",
+    "C03#2b"
+   ]
+  },
+  {
+   "id": "m012",
+   "lot": "M2",
+   "chapitre": "14-proportionnalite-pourcentage",
+   "fichier": "exercices/08-exam-2021-p1-machine-agricole-contributions.json",
+   "titre": "Concours 2021 · problème 1 · le prix d'une machine, puis les économies du père",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C06 (2021) problème 1"
+   ],
+   "items": [
+    "q1 (somme réunie par la famille) : option 1 = prix de la machine + 803 d ; option 2 = moitié du prix + semences à 4303 d ; la moitié du prix vaut 4303 − 803 = 3500 d ; prix 7000 d ; somme réunie 7803 d — QCM de la comparaison des deux options, numériques — 4 q.",
+    "q2 (économies du père) : père = 75 % de ses économies (3/4) ; fils = 1/3 de la contribution du père (1/4 des économies) ; mère = 2 × fils + 150 d = 1/2 des économies + 150 d ; total = 1,5 fois les économies + 150 = 7803 ; 1,5 × économies = 7653 ; économies = 5102 d — QCM de l'écriture de chaque contribution en part des économies, numériques — 6 q."
+   ],
+   "neDemandePas": [
+    "14/02-boss#8",
+    "14/04-defi#11",
+    "14/04-defi#10",
+    "13/04-defi#7",
+    "04/05-entrainement#7",
+    "02/05-entrainement#6",
+    "14/02-boss#10"
+   ],
+   "questions": 10,
+   "note": "Piège de la q2 : appliquer le pourcentage à la contribution (au lieu de l'épargne) ; ajouter les deux restes au lieu de les comparer (q1). Aucun calcul littéral : le raisonnement passe par « la contribution du père vaut les 3/4 de ses économies ». Les 150 d s'ajoutent après avoir doublé la contribution du fils.",
+   "registre": "C06#1a",
+   "sourcesCodes": [
+    "C06#1a",
+    "C06#1b"
+   ]
+  },
+  {
+   "id": "m013",
+   "lot": "M2",
+   "chapitre": "14-proportionnalite-pourcentage",
+   "fichier": "exercices/09-exam-2019-p1-tableau-numerique-remise-25.json",
+   "titre": "Concours 2019 · problème 1 · l'argent restant, puis le prix avant la remise",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C08 (2019) problème 1"
+   ],
+   "items": [
+    "q1 (montant restant) : avec le reste, on peut acheter 6 chaises et garder 30 d, OU la table (90 d) + 4 chaises, sans reste ; donc 2 chaises + 30 d = 90 d ; 2 chaises = 60 d ; 1 chaise = 30 d ; reste = 90 + 4 × 30 = 210 d — QCM de ce que représente l'écart, numériques — 4 q.",
+    "q2 (prix avant remise) : ce reste est les 4/7 de la somme initiale ; 1/7 = 52,5 d ; somme = 367,5 d ; la dépense (3/7) = 157,5 d est le prix APRÈS une remise de 25 % ; le prix d'origine est 157,5 ÷ 0,75 = 210 d — QCM de la fraction dépensée, numériques, QCM de la base de la remise — 5 q."
+   ],
+   "neDemandePas": [
+    "14/04-defi#2",
+    "14/04-defi#3",
+    "14/04-defi#11",
+    "14/02-boss#8",
+    "13/04-defi#7",
+    "13/02-boss#7",
+    "14/quiz#7",
+    "02/04-defi#3",
+    "02/05-entrainement#6"
+   ],
+   "questions": 9,
+   "note": "Pièges : attribuer l'écart des deux achats à la table plutôt qu'aux chaises ; traiter la remise de 25 % comme un supplément (prix = 157,5 × 1,25). Le résultat final (210 d) coïncide avec le reste de la q1 : sans lien, l'auteur ne le laisse pas dans les options de la q2 comme distracteur « évident ».",
+   "registre": "C08#1a",
+   "sourcesCodes": [
+    "C08#1a",
+    "C08#1b"
+   ]
+  },
+  {
+   "id": "m014",
+   "lot": "M2",
+   "chapitre": "14-proportionnalite-pourcentage",
+   "fichier": "exercices/10-devoir-plan-et-carte-a-l-echelle.json",
+   "titre": "Lire un plan et une carte à l'échelle : longueurs réelles, aller-retour, périmètre",
+   "etage": "d2",
+   "mode": "practice",
+   "xp": 75,
+   "coins": 15,
+   "regime": "devoir",
+   "sources": [
+    "devoir A (T1, école primaire), exercice 6,7",
+    "devoir B (T1, école primaire), exercice 12a",
+    "devoir E (T2, école primaire), exercice 2a,2b,3b,3c",
+    "devoir G (T3, école primaire), exercice 6"
+   ],
+   "items": [
+    "Une carte à l'échelle donnée en kilomètres : convertir deux longueurs du plan en distances réelles (multiplier, pas diviser), passer des centimètres aux kilomètres — QCM, numériques — 3 q.",
+    "Additionner les étapes puis tenir compte du retour (distance d'un aller-retour) — numérique, QCM — 2 q.",
+    "Un plan d'un terrain à quatre côtés : retrouver les dimensions réelles de chaque côté, le périmètre réel, l'exprimer dans l'unité demandée (hectomètres) — numériques — 2 q. Vérifier des longueurs sur plan à partir des longueurs réelles (sens inverse) en un item."
+   ],
+   "neDemandePas": [
+    "14/quiz#6",
+    "14/01-pratique#7",
+    "14/02-boss#7",
+    "14/03-revision#7",
+    "14/03-revision#10",
+    "14/05-entrainement#7",
+    "15/04-defi#9",
+    "16/04-defi#8"
+   ],
+   "questions": 7,
+   "note": "Salle blanche. Le patron du `14` convertit une longueur sur un plan ; les gestes neufs sont l'aller-retour sur carte, le passage cm → km sur une échelle en millions et le périmètre réel d'un quadrilatère lu sur plan avec unité de sortie imposée. Les constructions à l'échelle ne sont pas dans cette mission (voir la mission des constructions au `19`).",
+   "registre": "D01#6",
+   "sourcesCodes": [
+    "D01#6",
+    "D01#7",
+    "D05#2a",
+    "D05#2b",
+    "D05#3b",
+    "D05#3c",
+    "D02#12a",
+    "D08#6"
+   ]
+  },
+  {
+   "id": "m015",
+   "lot": "M2",
+   "chapitre": "15-vitesse-distance-temps",
+   "fichier": "exercices/06-exam-2026-p2-camion-voiture-reservoir.json",
+   "titre": "Concours 2026 · problème 2 · le réservoir du camion, puis la distance entre deux villes",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C01 (2026) problème 2"
+   ],
+   "items": [
+    "q1 (« أثبتُ أنّ الشّاحنة قطعت 60 كم في ساعة ») : le réservoir contient 4/5 de sa capacité au départ ; après 1 heure il en a consommé 1/20 donc il reste 4/5 − 1/20 = 3/4 de la capacité ; ce reste vaut 90 L donc la capacité est 120 L et la consommation d'une heure 6 L ; à 10 L pour 100 km, 6 L correspondent à 60 km — QCM de la fraction restante, numériques de la capacité, des litres consommés, de la distance — 5 q.",
+    "q2 (distance entre les villes) : la voiture roule à 60 + 20 = 80 km/h ; en 1 heure elle fait 80 km, soit les 2/5 de la distance ; 80 ÷ 2 × 5 = 200 km — QCM de la vitesse, numérique de la distance — 3 q."
+   ],
+   "neDemandePas": [
+    "15/01-pratique#3",
+    "15/02-boss#3",
+    "15/03-revision#7",
+    "15/04-defi#7",
+    "15/04-defi#10",
+    "15/05-entrainement#9",
+    "13/04-defi#7",
+    "13/02-boss#9",
+    "08/04-defi#2"
+   ],
+   "questions": 8,
+   "note": "Pièges : confondre fraction de capacité et volume en litres ; multiplier par la fraction au lieu de retrouver le tout. Les 90 L, 4/5 et 1/20 sont à redonner dans chaque question qui les utilise.",
+   "registre": "C01#2a",
+   "sourcesCodes": [
+    "C01#2a",
+    "C01#2b"
+   ]
+  },
+  {
+   "id": "m016",
+   "lot": "M2",
+   "chapitre": "15-vitesse-distance-temps",
+   "fichier": "exercices/07-exam-2023-p3-cycliste-montee-descente.json",
+   "titre": "Concours 2023 · problème 3 · montée et descente d'un cycliste",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C04 (2023) problème 3"
+   ],
+   "items": [
+    "q1 (« أثبتُ أنّ قيس طول الجزء ② يساوي 3,2 كم ») : 48 min = 0,8 h ; partie ① = 10 × 0,8 = 8 km ; partie ② = 40 % de 8 = 3,2 km — QCM de la conversion, numériques — 3 q.",
+    "q2 (vitesse en descente du ②) : 36 min pour la montée et la descente ; la descente dure la moitié de la montée donc le tiers du total : 12 min = 0,2 h ; 3,2 ÷ 0,2 = 16 km/h — QCM du partage de 36 min (2 parts / 1 part), numériques — 3 q.",
+    "q3 (le tour complet en 114 minutes ?) : ① en descente à 12 km/h : 8 ÷ 12 h = 40 min ; total = 48 + 40 + 36 = 124 min > 114 : non — numérique, QCM de la comparaison avec justification — 3 q."
+   ],
+   "neDemandePas": [
+    "15/01-pratique#7",
+    "15/02-boss#7",
+    "15/02-boss#10",
+    "15/03-revision#8",
+    "15/04-defi#2",
+    "15/04-defi#8",
+    "15/05-entrainement#10",
+    "14/04-defi#1",
+    "22/quiz#3"
+   ],
+   "questions": 9,
+   "note": "Pièges : ne pas convertir les minutes en heures ; partager les 36 minutes en deux parts égales (6/6) ; oublier la montée de la partie ① dans le total. Parcours en deux parties : la q1 et la q3 réutilisent le 8 km.",
+   "registre": "C04#3a",
+   "sourcesCodes": [
+    "C04#3a",
+    "C04#3b",
+    "C04#3c"
+   ]
+  },
+  {
+   "id": "m017",
+   "lot": "M2",
+   "chapitre": "15-vitesse-distance-temps",
+   "fichier": "exercices/08-exam-2021-p2-voiture-camion-pause.json",
+   "titre": "Concours 2021 · problème 2 · une voiture, un camion et une pause",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C06 (2021) problème 2"
+   ],
+   "items": [
+    "q1 (distance entre les deux villes) : 1 h 36 min = 1,6 h (ou 96 min) ; la voiture a fait 80 × 1,6 = 128 km ; il lui en reste 16 ; distance = 144 km — QCM de la conversion de 1 h 36 min, numériques — 3 q.",
+    "q2 (durée de la pause du camion) : le camion a fait les 4/5 de 144 = 115,2 km en 1 h 36 min, donc à 72 km/h ; il lui reste 28,8 km (24 min de route) ; la voiture arrive 12 min plus tard (16 km à 80 km/h), le camion 24 min après la voiture, soit 36 min après l'instant 1 h 36 ; sa pause vaut 36 − 24 = 12 min — QCM de la vitesse du camion, numériques du temps de route restant, de l'écart d'arrivée, de la pause — 6 q."
+   ],
+   "neDemandePas": [
+    "15/03-revision#7",
+    "15/04-defi#7",
+    "15/05-entrainement#9",
+    "15/03-revision#9",
+    "22/04-defi#9",
+    "13/02-boss#9"
+   ],
+   "questions": 9,
+   "note": "Pièges : écrire 1 h 36 min comme 1,36 h (`math.mes.duree-convertie-en-base-cent`) ; compter la pause dans le temps de roulage. Le camion garde la même vitesse après la pause (énoncé officiel). Tous les nombres tombent juste en minutes ; en heures décimales le 72 km/h passe par 1,6.",
+   "registre": "C06#2a",
+   "sourcesCodes": [
+    "C06#2a",
+    "C06#2b"
+   ]
+  },
+  {
+   "id": "m018",
+   "lot": "M2",
+   "chapitre": "15-vitesse-distance-temps",
+   "fichier": "exercices/09-exam-2017-p1-fermier-lait-fraction-du-trajet.json",
+   "titre": "Concours 2017 · problème 1 · le trajet jusqu'au centre de collecte",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C10 (2017) problème 1"
+   ],
+   "items": [
+    "q1 (distance ferme–centre) : départ 5 h 28 à 60 km/h ; 40 min de route = 40 km ; le reste du trajet vaut les 3/2 de la distance déjà faite (fraction supérieure à 1) : 60 km ; distance totale 100 km — QCM de la conversion minutes → km, numériques de la fraction, de la distance totale — 4 q.",
+    "q2 (« أثبتُ ... على السّاعة 7 و 23 دق ») : la seconde partie dure 60 min ; durée totale = 40 + 15 (arrêt) + 60 = 115 min = 1 h 55 ; 5 h 28 + 1 h 55 = 7 h 23 — QCM des durées à additionner (l'arrêt compte), numériques, QCM du report des minutes au-delà de 60 — 4 q."
+   ],
+   "neDemandePas": [
+    "15/04-defi#7",
+    "15/02-boss#9",
+    "15/03-revision#7",
+    "22/04-defi#4",
+    "22/02-boss#10",
+    "13/02-boss#9",
+    "08/04-defi#2"
+   ],
+   "questions": 8,
+   "note": "Mission « jumelle » du problème 3 du concours 2008 (mêmes gestes, autres nombres, plus la consommation de carburant) : une seule des deux est reprise (2017). Pièges : oublier l'arrêt ou mal reporter les minutes au-delà de 60 ; lire 3/2 comme une part de la distance totale.",
+   "registre": "C10#1a",
+   "sourcesCodes": [
+    "C10#1a",
+    "C10#1b"
+   ]
+  },
+  {
+   "id": "m019",
+   "lot": "M3",
+   "chapitre": "21-cercle-disque",
+   "fichier": "exercices/06-exam-2023-p2-cerf-volant-fil-demi-cercles.json",
+   "titre": "Concours 2023 · problème 2 · le cerf-volant et sa queue de demi-cercles",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C04 (2023) problème 2"
+   ],
+   "items": [
+    "q1 (« أثبتُ أنّ قيس طول القطر [ج هـ] يساوي 0,5 م ») : le fil mesure 47,100 ÷ 20 = 2,355 m ; trois demi-cercles égaux ; un demi-cercle = 2,355 ÷ 3 = 0,785 m ; sa circonférence entière 1,57 m ; diamètre = 1,57 ÷ 3,14 = 0,5 m — QCM de ce que représente 3 demi-cercles, numériques — 4 q.",
+    "q2 (coût du m² de marbre) : les deux diagonales du cerf-volant [ب د] et [أ ج] sont perpendiculaires ; ب د = 2 × 0,5 = 1 m (و ب = و د = ج هـ) ; aire = 1,5 × 1 ÷ 2 = 0,75 m² ; 75 ÷ 0,75 = 100 d le m² — QCM de la longueur de la diagonale, numériques — 3 q."
+   ],
+   "neDemandePas": [
+    "21/02-boss#2",
+    "21/02-boss#3",
+    "21/01-pratique#8",
+    "21/02-boss#8",
+    "21/02-boss#10",
+    "21/04-defi#7",
+    "20/quiz#7",
+    "20/02-boss#7",
+    "20/04-defi#10",
+    "05/05-entrainement#6"
+   ],
+   "questions": 7,
+   "note": "Pièges : prendre la circonférence entière au lieu du demi-cercle ; oublier de diviser le produit des diagonales par deux. La figure (cerf-volant, queue en demi-cercles alternés) est refaite en SVG. π = 3,14. État du `21` relevé le 2026-10-19 à 21 h 25 : le lot B5 y écrit encore (voir la carte M3).",
+   "registre": "C04#2a",
+   "sourcesCodes": [
+    "C04#2a",
+    "C04#2b"
+   ]
+  },
+  {
+   "id": "m020",
+   "lot": "M3",
+   "chapitre": "21-cercle-disque",
+   "fichier": "exercices/07-exam-2022-p3-parc-carre-parallelogramme-secteur.json",
+   "titre": "Concours 2022 · problème 3 · le parc en trois pièces",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C05 (2022) problème 3"
+   ],
+   "items": [
+    "q1 (« أثبتُ أنّ أ و = 60 م ») : l'arc de trois quarts de cercle mesure 282,6 m ; la circonférence entière 282,6 ÷ 3 × 4 = 376,8 m ; diamètre 376,8 ÷ 3,14 = 120 ; rayon = 60 m = côté du carré — QCM de la fraction de la circonférence, numériques — 4 q.",
+    "q2 (aire du parallélogramme) : aire du disque entier = 3,14 × 60² = 11 304 m² ; trois quarts = 8478 m² ; un tiers = 2826 ; parallélogramme = 2826 + 1374 = 4200 m² — numériques, QCM du « surpasse le tiers de » — 5 q.",
+    "q3 (construction du parallélogramme au 1/2000) : côté [أ ب] = 60 m → 3 cm ; hauteur 70 m → 3,5 cm ; angle de 60° en ب ; la construction elle-même n'est pas notable : QCM des longueurs sur le plan, ordering des étapes (tracer [أ ب], l'angle, parallèle, hauteur) — 3 q."
+   ],
+   "neDemandePas": [
+    "21/01-pratique#8",
+    "21/02-boss#7",
+    "21/02-boss#10",
+    "21/04-defi#7",
+    "21/05-entrainement#8",
+    "21/04-defi#3",
+    "20/01-pratique#5",
+    "20/03-revision#6",
+    "20/05-entrainement#10",
+    "14/01-pratique#7",
+    "17/02-boss#7",
+    "19/05-entrainement#3"
+   ],
+   "questions": 12,
+   "note": "14 étapes brutes ramenées à 12 questions (la q3 est réduite à 3 questions d'échelle et d'ordre). Pièges : appliquer la fraction à l'aire du disque entier ; oublier de convertir les mètres en centimètres de dessin. Le carré de côté 60 m n'a pas de question propre. π = 3,14. `21` en cours d'écriture (B5) : voir la carte M3.",
+   "registre": "C05#3a",
+   "sourcesCodes": [
+    "C05#3a",
+    "C05#3b",
+    "C05#3c"
+   ]
+  },
+  {
+   "id": "m021",
+   "lot": "M3",
+   "chapitre": "21-cercle-disque",
+   "fichier": "exercices/08-exam-2008-p2-fontaine-losange-dans-le-disque.json",
+   "titre": "Concours 2008 · problème 2 · la fontaine : losange inscrit dans un disque",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C19 (2008) problème 2"
+   ],
+   "items": [
+    "q1 (aire réelle du losange en m²) : plan au 1/150 ; diagonale horizontale 6 cm → 900 cm = 9 m ; diagonale verticale 4 cm → 600 cm = 6 m ; aire = 9 × 6 ÷ 2 = 27 m² — QCM des deux conversions, numérique de l'aire — 3 q.",
+    "q2 (aire du gazon) : le diamètre du disque est la diagonale horizontale (9 m) donc le rayon 4,5 m ; aire du disque = 3,14 × 4,5² = 63,585 m² ; gazon = 63,585 − 27 = 36,585 m² — QCM du lien diamètre–diagonale, numériques — 4 q."
+   ],
+   "neDemandePas": [
+    "14/01-pratique#7",
+    "14/02-boss#7",
+    "14/05-entrainement#7",
+    "15/04-defi#9",
+    "20/02-boss#7",
+    "20/quiz#7",
+    "21/02-boss#4",
+    "21/02-boss#9",
+    "21/05-entrainement#7"
+   ],
+   "questions": 7,
+   "note": "Piège : appliquer l'échelle à l'aire (l'échelle s'applique aux longueurs ; l'aire du plan n'est jamais convertie directement). Piège 2 : prendre le diamètre pour le rayon. Le problème 2008 est presque identique à celui d'autres sessions (losange et cercle) : l'angle neuf est l'échelle appliquée aux deux diagonales avant l'aire.",
+   "registre": "C19#2a",
+   "sourcesCodes": [
+    "C19#2a",
+    "C19#2b"
+   ]
+  },
+  {
+   "id": "m022",
+   "lot": "M3",
+   "chapitre": "22-durees",
+   "fichier": "exercices/06-exam-2025-p3-bus-quatre-tours.json",
+   "titre": "Concours 2025 · problème 3 · les tours d'une ligne de bus",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C02 (2025) problème 3"
+   ],
+   "items": [
+    "q1 (« أثبتُ أنّ الحافلة تصل ... بعد 40 دق ») : le tronçon ج → أ fait 8 km à 48 km/h = 10 min ; durée de roulage 8 + 12 + 10 = 30 min ; deux arrêts de 5 min (en ب et en ج) ; 30 + 10 = 40 min — QCM des durées à compter, numériques — 4 q.",
+    "q2 (heure d'arrivée à la fin du 4ᵉ tour, départ à 6 h) : quatre tours de 40 min et trois arrêts de 5 min en أ entre les tours ; 160 + 15 = 175 min = 2 h 55 ; 6 h + 2 h 55 = 8 h 55 — QCM du nombre d'arrêts, numériques — 3 q.",
+    "q3 (vitesse de ج à أ pendant l'embouteillage, arrivée à 9 h 05) : retard de 10 min sur 8 h 55 ; ج → أ dure 10 + 10 = 20 min = 1/3 h ; 8 ÷ 1/3 = 24 km/h — numériques, QCM du retard à ajouter à la durée du tronçon — 5 q."
+   ],
+   "neDemandePas": [
+    "22/02-boss#10",
+    "22/04-defi#4",
+    "22/04-defi#9",
+    "22/05-entrainement#6",
+    "22/05-entrainement#10",
+    "22/04-defi#8",
+    "15/02-boss#4",
+    "15/03-revision#4",
+    "15/04-defi#6",
+    "15/05-entrainement#7",
+    "15/02-boss#9"
+   ],
+   "questions": 12,
+   "note": "Pièges : compter un arrêt de trop ou de moins (le dernier arrêt en أ n'existe pas, mais il y en a trois entre les quatre tours) ; ne pas convertir 10 min en 1/6 h ; oublier de déduire les arrêts du temps de roulage. Le secteur de disque de la figure est refait en SVG sans donnée supplémentaire (aucune cote).",
+   "registre": "C02#3a",
+   "sourcesCodes": [
+    "C02#3a",
+    "C02#3b",
+    "C02#3c"
+   ]
+  },
+  {
+   "id": "m023",
+   "lot": "M3",
+   "chapitre": "22-durees",
+   "fichier": "exercices/07-exam-2022-p2-piscine-deux-pompes.json",
+   "titre": "Concours 2022 · problème 2 · remplir une piscine avec deux pompes",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C05 (2022) problème 2"
+   ],
+   "items": [
+    "q1 (débit de la première pompe en hl/h) : la piscine contient 1280 hl ; chaque pompe apporte la moitié : 640 hl ; la première a travaillé 2 h 40 + 8 h = 10 h 40 min = 10 2/3 h ; 640 ÷ 10 2/3 = 60 hl/h (la seconde : 640 ÷ 8 = 80 hl/h, ensemble 140) — QCM de la durée de la première pompe, numériques de la quantité par pompe, du débit — 4 q.",
+    "q2 (de combien avancer la mise en route de la seconde pompe pour finir une heure plus tôt) : durée visée 9 h 40 = 9 2/3 h ; la première pompe seule pendant 9 2/3 h donne 580 hl ; il reste 700 hl pour la seconde, soit 700 ÷ 80 = 8 h 45 min ; elle démarre donc 55 min après la première, au lieu de 2 h 40 min : 1 h 45 min plus tôt — QCM de la durée visée, numériques, QCM du « de combien plus tôt » — 6 q."
+   ],
+   "neDemandePas": [
+    "15/01-pratique#7",
+    "15/01-pratique#9",
+    "15/05-entrainement#9",
+    "22/05-entrainement#10",
+    "22/04-defi#10",
+    "22/04-defi#7"
+   ],
+   "questions": 10,
+   "note": "Pièges : ne pas refaire le partage entre pompes (réduire la durée sans recalculer qui fournit quoi) ; écrire 10 h 40 min comme 10,40 h (`math.mes.duree-convertie-en-base-cent`). Dernière étape à lire avec soin : « avancer de combien » = écart entre 2 h 40 et 55 min. Les 140 hl/h de l'énoncé sont donnés tels quels en tête de q2.",
+   "registre": "C05#2a",
+   "sourcesCodes": [
+    "C05#2a",
+    "C05#2b"
+   ]
+  },
+  {
+   "id": "m024",
+   "lot": "M3",
+   "chapitre": "22-durees",
+   "fichier": "exercices/08-exam-2020-p1-ouvrier-bus-toutes-les-demi-heures.json",
+   "titre": "Concours 2020 · problème 1 · le bus de l'ouvrier, toutes les demi-heures",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C07 (2020) problème 1"
+   ],
+   "items": [
+    "q1 (durée de marche finale) : départ du domicile 6 h 35 ; marche de 15 min : arrivée à la station à 6 h 50 ; le bus passe à 7 h 00 (toutes les demi-heures dès 6 h) ; trajet 36 min : arrivée 7 h 36 ; arrivée au travail 7 h 45 : marche finale 9 min — QCM de l'attente du prochain bus, numériques des heures — 5 q.",
+    "q2 (arrivée s'il sort 15 min en retard) : 6 h 50 à la maison → 7 h 05 à la station ; le bus suivant est celui de 7 h 30 ; arrivée 8 h 06 ; + 9 min de marche : 8 h 15 — QCM du bus manqué, numériques — 4 q."
+   ],
+   "neDemandePas": [
+    "22/02-boss#6",
+    "22/02-boss#9",
+    "22/02-boss#10",
+    "22/04-defi#4",
+    "22/04-defi#9",
+    "22/05-entrainement#6",
+    "22/05-entrainement#7",
+    "22/03-revision#8"
+   ],
+   "questions": 9,
+   "note": "Pièges : ne pas compter l'attente du prochain départ ; ajouter directement le retard à l'heure d'arrivée (15 min de plus à 7 h 45 donne 8 h 00, alors que la bonne réponse est 8 h 15, car le bus de 7 h 30 est en réalité 30 min plus tard). La ligne de bus (cadence, début, fin) est redonnée dans l'énoncé de chaque question.",
+   "registre": "C07#1a",
+   "sourcesCodes": [
+    "C07#1a",
+    "C07#1b"
+   ]
+  },
+  {
+   "id": "m025",
+   "lot": "M3",
+   "chapitre": "22-durees",
+   "fichier": "exercices/09-exam-2019-p2-voiture-retour-au-depart-reservoir.json",
+   "titre": "Concours 2019 · problème 2 · retour à la station, puis la capacité du réservoir",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C08 (2019) problème 2"
+   ],
+   "items": [
+    "q1 (heure d'arrivée) : départ 8 h 45 ; 1 km de route, retour d'1 km à la station, 5 min d'arrêt, puis 124 km ; distance roulée 126 km à 70 km/h = 1,8 h = 1 h 48 ; + 5 min = 1 h 53 ; arrivée 10 h 38 — QCM de la distance totale roulée, numériques — 4 q.",
+    "q2 (capacité du réservoir, 15 L à l'arrivée) : la quantité consommée est les 3/5 de la quantité restante (15 L), soit 9 L ; départ : réservoir au tiers + 10 L ajoutés − 9 L = 15 L donc le tiers de la capacité vaut 14 L ; capacité = 42 L — QCM du « 3/5 de la quantité restante », numériques — 5 q."
+   ],
+   "neDemandePas": [
+    "22/04-defi#4",
+    "22/02-boss#10",
+    "15/02-boss#9",
+    "15/05-entrainement#7",
+    "11/04-defi#7",
+    "08/02-boss#5",
+    "13/02-boss#9"
+   ],
+   "questions": 9,
+   "note": "Pièges : ignorer le trajet d'aller-retour ou l'arrêt ; partir d'un réservoir plein au départ (il est au tiers). 70 km/h donne 126 km en 1,8 h : on convertit 0,8 h en minutes (48), jamais 1,8 en 1 h 80. Les 10 L ajoutés le sont à la station, au retour.",
+   "registre": "C08#2a",
+   "sourcesCodes": [
+    "C08#2a",
+    "C08#2b"
+   ]
+  },
+  {
+   "id": "m026",
+   "lot": "M3",
+   "chapitre": "22-durees",
+   "fichier": "exercices/10-exam-2015-p2-excursion-aller-retour.json",
+   "titre": "Concours 2015 · problème 2 · l'excursion : heure de départ, vitesse du retour",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C12 (2015) problème 2"
+   ],
+   "items": [
+    "q1 (heure de départ de l'école) : le tableau donne 300 km pour l'aller ET le retour : l'aller fait 150 km à 60 km/h = 2 h 30 ; arrivée au site 9 h 10 ; départ 6 h 40 — QCM de la distance à utiliser (150 et non 300), numériques — 3 q.",
+    "q2 (vitesse au retour) : visite de 4 h 45 min de 9 h 10 à 13 h 55 ; retour à l'école à 16 h 55 : 3 h de route ; 150 ÷ 3 = 50 km/h — numériques de l'heure de fin de visite, de la durée de retour, de la vitesse — 4 q."
+   ],
+   "neDemandePas": [
+    "22/05-entrainement#6",
+    "22/05-entrainement#7",
+    "22/02-boss#9",
+    "22/04-defi#4",
+    "15/01-pratique#6",
+    "15/02-boss#4",
+    "15/03-revision#3",
+    "15/03-revision#7",
+    "15/05-entrainement#3",
+    "15/03-revision#8"
+   ],
+   "questions": 7,
+   "note": "Pièges : utiliser la distance de l'aller-retour (300 km) pour le seul aller ; garder cette distance pour le seul retour. Le tableau officiel (distance, vitesse d'aller, heure d'arrivée, heure de retour, durée de visite) est refait en tableau lisible. Heures au format 24 h (16 h 55).",
+   "registre": "C12#2a",
+   "sourcesCodes": [
+    "C12#2a",
+    "C12#2b"
+   ]
+  },
+  {
+   "id": "m027",
+   "lot": "M3",
+   "chapitre": "22-durees",
+   "fichier": "exercices/11-exam-2010-p2-trajet-de-nuit-passage-de-minuit.json",
+   "titre": "Concours 2010 · problème 2 · un trajet de nuit, du jeudi au vendredi",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C17 (2010) problème 2"
+   ],
+   "items": [
+    "q1 (jour et heure d'arrivée) : départ jeudi 22 h 30 ; 200 km à 80 km/h = 2 h 30 de route, 20 min d'arrêt ; 22 h 30 + 2 h 50 = 25 h 20, soit vendredi 1 h 20 — QCM du changement de jour, numériques — 4 q.",
+    "q2 (carburant restant) : 12 L au départ + 15 L ajoutés = 27 L ; consommation de 10 L pour 100 km sur 200 km = 20 L ; il reste 7 L — numériques, QCM d'oubli du plein en route — 3 q."
+   ],
+   "neDemandePas": [
+    "22/02-boss#10",
+    "22/04-defi#4",
+    "22/04-defi#7",
+    "22/04-defi#9",
+    "15/01-pratique#4",
+    "15/04-defi#4",
+    "15/05-entrainement#7"
+   ],
+   "questions": 7,
+   "note": "Piège : oublier le changement de jour après minuit (jeudi 25 h 20 est vendredi 1 h 20). L'arrêt de 20 min est compté dans la durée du trajet mais pas dans la consommation. Passage de minuit absent des exercices actuels hors `22/02-boss#10` (22 h 30 + 6 h 45) : l'auteur varie la forme (jour demandé en plus de l'heure).",
+   "registre": "C17#2a",
+   "sourcesCodes": [
+    "C17#2a",
+    "C17#2b"
+   ]
+  },
+  {
+   "id": "m028",
+   "lot": "M4",
+   "chapitre": "19-quadrilateres",
+   "fichier": "exercices/06-devoir-construire-trapeze-rectangle-et-losange.json",
+   "titre": "Construire un trapèze rectangle et un losange à partir de leurs données",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "devoir",
+   "sources": [
+    "devoir B (T1, école primaire), exercice 6,12b",
+    "devoir C (T1, école primaire), exercice 5a",
+    "devoir D (T2, école primaire), exercice 4a,4c",
+    "devoir E (T2, école primaire), exercice 3a"
+   ],
+   "items": [
+    "Un trapèze rectangle à partir de ses deux bases et de sa hauteur : QCM du côté perpendiculaire aux bases, ordering des étapes (base, perpendiculaire à l'extrémité, report de la hauteur, parallèle, côté oblique) — 2 q.",
+    "Un trapèze rectangle à partir de la SOMME et de la DIFFÉRENCE des bases et de la hauteur (les deux bases se retrouvent avant de construire) : numérique des bases, QCM de l'étape de report au compas du côté oblique — 2 q.",
+    "À l'échelle : les dimensions réelles données en mètres, le plan en centimètres : QCM de conversion — 1 q.",
+    "Un losange à partir de ses deux diagonales : QCM « les diagonales se coupent en leur milieu et perpendiculairement », ordering — 2 q."
+   ],
+   "neDemandePas": [
+    "19/05-entrainement#2",
+    "19/05-entrainement#3",
+    "19/04-defi#8",
+    "19/04-defi#5",
+    "16/02-boss#7",
+    "16/02-boss#8",
+    "16/05-entrainement#4",
+    "17/02-boss#7",
+    "17/04-defi#8",
+    "18/02-boss#8"
+   ],
+   "questions": 7,
+   "note": "Salle blanche. Une construction n'est pas notable en QCM : la mission fait porter les questions sur le CHOIX et l'ORDRE des étapes et sur les mesures à reporter. Gestes absents des missions d'examen : trapèze rectangle (données directes ou par somme et différence des bases), losange par ses diagonales. Les constructions à l'échelle des examens (2022, 2018, 2016…) sont prises par les missions d'examen de leur problème. Piège : tracer la hauteur sans perpendicularité à la base ; ne pas reporter le côté oblique au compas ; ne pas faire couper les diagonales en leur milieu.",
+   "registre": "D02#6",
+   "sourcesCodes": [
+    "D02#6",
+    "D02#12b",
+    "D03#5a",
+    "D04#4a",
+    "D04#4c",
+    "D05#3a"
+   ]
+  },
+  {
+   "id": "m029",
+   "lot": "M4",
+   "chapitre": "19-quadrilateres",
+   "fichier": "exercices/07-devoir-construire-avec-un-angle-donne.json",
+   "titre": "Construire avec un angle donné : parallélogramme, losange, triangle",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "devoir",
+   "sources": [
+    "devoir A (T1, école primaire), exercice 10",
+    "devoir C (T1, école primaire), exercice 5b",
+    "devoir D (T2, école primaire), exercice 4b",
+    "devoir F (T3, école primaire), exercice 8c",
+    "devoir G (T3, école primaire), exercice 7b,7c"
+   ],
+   "items": [
+    "Un parallélogramme à partir de deux côtés et de l'angle compris : QCM du sommet où poser l'angle, ordering des étapes (côté, angle au rapporteur, report du second côté, parallèles) — 2 q.",
+    "Un losange à partir d'une diagonale et d'un angle, puis un carré sur un de ses côtés : QCM du sommet de l'angle, du report des longueurs — 2 q.",
+    "Un triangle à partir de deux côtés et de l'angle compris (à l'échelle), puis un triangle rectangle dont les deux côtés de l'angle droit sont égaux : QCM des longueurs sur le plan, QCM de l'égalité à reporter — 3 q."
+   ],
+   "neDemandePas": [
+    "17/01-pratique#8",
+    "17/02-boss#7",
+    "17/02-boss#8",
+    "17/04-defi#7",
+    "17/04-defi#8",
+    "17/05-entrainement#3",
+    "17/05-entrainement#4",
+    "18/01-pratique#7",
+    "18/01-pratique#9",
+    "18/03-revision#7",
+    "18/02-boss#8",
+    "19/05-entrainement#3",
+    "19/05-entrainement#2"
+   ],
+   "questions": 7,
+   "note": "Salle blanche. Placement au `19` (chapitre le plus avancé parmi 17, 18, 19) : exception déclarée pour les triangles, déjà bien servis au `17` et au `18` par le patron. Geste neuf : l'angle du rapporteur posé au bon sommet, avec la longueur déjà reportée sur l'autre côté. Piège : placer l'angle au mauvais sommet ; ne pas reporter l'égalité des côtés de l'angle droit. La somme des angles d'un triangle n'est JAMAIS demandée (arbitrage M3).",
+   "registre": "D01#10",
+   "sourcesCodes": [
+    "D01#10",
+    "D04#4b",
+    "D07#8c",
+    "D08#7b",
+    "D03#5b",
+    "D08#7c"
+   ]
+  },
+  {
+   "id": "m030",
+   "lot": "M4",
+   "chapitre": "20-aires-polygones",
+   "fichier": "exercices/06-exam-2025-p2-voilier-en-cuivre-et-carre.json",
+   "titre": "Concours 2025 · problème 2 · le voilier en cuivre : masse, aire, un carré y tient-il ?",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C02 (2025) problème 2"
+   ],
+   "items": [
+    "q1 (« أثبتُ أنّ قيس مساحة الجزء ① يساوي 4000 صم² ») : masse du cuivre = 12 − 1,56 = 10,44 kg = 10 440 g ; aire totale des trois pièces = 10 440 ÷ 180 × 100 = 5800 cm² ; les pièces ② et ③ valent 45 % de la pièce ① donc les trois ensemble 145 % de ① : 5800 ÷ 1,45 = 4000 cm² — QCM de la masse du cuivre (sans le tube), numériques de l'aire totale, du pourcentage cumulé, de l'aire ① — 5 q.",
+    "q2 (le carré de 30 cm y tient-il ?) : petite base = 140 ÷ 7 × 3 = 60 cm ; hauteur = 2 × 4000 ÷ (140 + 60) = 40 cm ; le carré tient (30 < 40 et 30 < 60) — numériques de la petite base et de la hauteur, QCM de la décision avec la justification (hauteur ET petite base) — 4 q."
+   ],
+   "neDemandePas": [
+    "20/02-boss#4",
+    "20/02-boss#8",
+    "20/04-defi#2",
+    "20/04-defi#4",
+    "20/04-defi#9",
+    "20/05-entrainement#5",
+    "20/05-entrainement#10",
+    "20/02-boss#10",
+    "14/02-boss#10",
+    "14/04-defi#5",
+    "05/05-entrainement#6"
+   ],
+   "questions": 9,
+   "note": "Pièges : retrancher le pourcentage de l'aire totale au lieu de retrouver le tout ; comparer le carré à la petite base sans passer par la hauteur (ou l'inverse). Le trapèze est isocèle. La figure (voilier) est refaite en SVG sans cote (les données sont dans le texte). `20` : état relevé le 2026-10-19 à 21 h 25 (mis à niveau par B5) ; à revérifier au lancement.",
+   "registre": "C02#2a",
+   "sourcesCodes": [
+    "C02#2a",
+    "C02#2b"
+   ]
+  },
+  {
+   "id": "m031",
+   "lot": "M4",
+   "chapitre": "20-aires-polygones",
+   "fichier": "exercices/07-exam-2018-p3-terrain-carre-parallelogramme-triangle.json",
+   "titre": "Concours 2018 · problème 3 · un terrain en trois pièces, le coût du projet, le plan",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C09 (2018) problème 3"
+   ],
+   "items": [
+    "q1 (aire de tout le terrain, la pièce carrée valant 12,5 ha) : le triangle ABC a pour base BC = 350 m et pour hauteur la demi-diagonale AN = 250 m (les diagonales du carré sont perpendiculaires) : 43 750 m² ; le parallélogramme BCHS a pour base BC et pour hauteur SN = 250 m : 87 500 m² ; total = 125 000 + 43 750 + 87 500 = 256 250 m² = 25,625 ha — QCM de la hauteur à prendre, numériques, QCM d'unité (m², ha) — 6 q. Figure à relire au PDF officiel avant d'écrire (hauteurs lues sur la figure).",
+    "q2 (prix des machines et loyer, coût du projet 122 499 d) : loyer = 25 % du prix des machines ; bassin = 1/10 de ce prix ; projet = prix + 1/4 prix + 1/10 prix = 27/20 du prix (1,35) ; prix = 122 499 ÷ 1,35 = 90 740 d ; loyer = 22 685 d — QCM de l'écriture « 27/20 », numériques — 4 q.",
+    "q3 (plan au 1/10 000 du quadrilatère NSHC, trapèze rectangle de bases CN = 600 m et SH = 350 m, hauteur NS = 250 m) : longueurs sur le plan 6 cm, 3,5 cm, 2,5 cm (mètres → centimètres, puis ÷ 10 000) ; ordering des étapes de la construction — 2 q."
+   ],
+   "neDemandePas": [
+    "20/02-boss#3",
+    "20/04-defi#1",
+    "20/04-defi#5",
+    "20/02-boss#9",
+    "20/04-defi#7",
+    "20/quiz#7",
+    "20/02-boss#7",
+    "20/03-revision#7",
+    "20/05-entrainement#7",
+    "14/01-pratique#7",
+    "14/05-entrainement#7",
+    "19/05-entrainement#3"
+   ],
+   "questions": 12,
+   "note": "Figure refaite en SVG (carré ABSD de diagonales AN = 250 m, parallélogramme BCHS accolé, triangle ABC au-dessus ; C, B, N alignés). Pièges : oublier une pièce ou confondre les unités d'aire ; calculer la hauteur du triangle avec la mauvaise perpendiculaire ; ajouter 1/4 et 1/10 au lieu de les ajouter à 1. Q3 est un plan (le lecteur le classait 14, 17, 18) : la mission le réduit à deux questions de conversion et d'ordre. `20` en cours de mise à niveau (B5).",
+   "registre": "C09#3a",
+   "sourcesCodes": [
+    "C09#3a",
+    "C09#3b",
+    "C09#3c"
+   ]
+  },
+  {
+   "id": "m032",
+   "lot": "M4",
+   "chapitre": "20-aires-polygones",
+   "fichier": "exercices/08-exam-2013-p3-ferme-orangers-triangle-trapeze.json",
+   "titre": "Concours 2013 · problème 3 · la ferme d'orangers : aire, recette, revenu net",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C14 (2013) problème 3"
+   ],
+   "items": [
+    "q1 (« أُثبتُ أنّ قيس مساحة هذه الضّيعة بالهكتار هو 4 ») : triangle rectangle de côtés de l'angle droit 150 m et 200 m : 150 × 200 ÷ 2 = 15 000 m² ; trapèze rectangle de bases 75 m et 125 m et de hauteur 250 m : (75 + 125) ÷ 2 × 250 = 25 000 m² ; total 40 000 m² = 4 ha — QCM du côté à prendre pour hauteur (pas le 250 m du triangle), numériques, QCM de la conversion m² → ha — 4 q.",
+    "q2 (recette de la vente sur pied) : 40 000 ÷ 40 = 1000 arbres ; 1000 × 70 = 70 000 kg ; × 0,350 d = 24 500 d — numériques — 3 q.",
+    "q3 (revenu net) : main-d'œuvre 3600 d ; 20 % de 24 500 = 4900 d ; dépenses 8500 d ; net 16 000 d — numériques, QCM du pourcentage pris sur la recette — 3 q."
+   ],
+   "neDemandePas": [
+    "20/02-boss#4",
+    "20/02-boss#8",
+    "20/04-defi#4",
+    "20/03-revision#8",
+    "20/04-defi#5",
+    "20/03-revision#5",
+    "20/03-revision#7",
+    "20/05-entrainement#6",
+    "20/05-entrainement#7",
+    "14/04-defi#7",
+    "14/04-defi#8",
+    "14/04-defi#9",
+    "14/04-defi#10",
+    "14/04-defi#11"
+   ],
+   "questions": 10,
+   "note": "Piège de la q1 : prendre le plus grand côté du triangle (250 m) pour hauteur ; piège de la q3 : prendre le pourcentage d'un mauvais montant (de la superficie, du kg). Le prix 0,350 d par kg est gardé. Le `14/04-defi#7`–`#11` parcourt déjà « terrain, prix, frais » : la nouveauté est le triangle + trapèze à angles droits et la production par arbre.",
+   "registre": "C14#3a",
+   "sourcesCodes": [
+    "C14#3a",
+    "C14#3b",
+    "C14#3c"
+   ]
+  },
+  {
+   "id": "m033",
+   "lot": "M4",
+   "chapitre": "20-aires-polygones",
+   "fichier": "exercices/09-exam-2012-p3-trapeze-au-1-sur-500-emprunt.json",
+   "titre": "Concours 2012 · problème 3 · le trapèze au 1/500, le prix, la part empruntée",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C15 (2012) problème 3"
+   ],
+   "items": [
+    "q1 (dimensions réelles) : sur le plan au 1/500, bases 8,4 cm et 13,6 cm, hauteur 6 cm ; réel : 42 m, 68 m et 30 m — QCM de la conversion cm → m (× 500 ÷ 100), numériques — 3 q.",
+    "q2 (prix d'achat) : aire = (42 + 68) ÷ 2 × 30 = 1650 m² = 16,5 ares ; × 2400 d = 39 600 d — numériques de l'aire, de la conversion en ares, du prix — 4 q.",
+    "q3 (part empruntée en pourcentage du coût total) : le prix du terrain vaut 2/7 du coût d'aménagement (donc l'aménagement vaut 7/2 du prix : fraction « dans l'autre sens »), 138 600 d ; coût du projet 39 600 + 138 600 = 178 200 d ; emprunt 22 275 d ; taux = 22 275 ÷ 178 200 = 12,5 % — QCM du sens de la fraction, numériques — 4 q."
+   ],
+   "neDemandePas": [
+    "14/01-pratique#7",
+    "14/02-boss#7",
+    "14/03-revision#10",
+    "20/02-boss#4",
+    "20/02-boss#8",
+    "20/04-defi#4",
+    "20/01-pratique#7",
+    "20/04-defi#7",
+    "14/04-defi#7",
+    "14/04-defi#9",
+    "14/05-entrainement#7"
+   ],
+   "questions": 11,
+   "note": "Pièges : appliquer la fraction dans le mauvais sens entre les deux coûts (terrain = 2/7 de l'aménagement ≠ aménagement = 2/7 du terrain) ; multiplier un prix à l'are par une aire en m². Le côté oblique n'est pas donné et n'est pas demandé. Résultat final rond (12,5 %).",
+   "registre": "C15#3a",
+   "sourcesCodes": [
+    "C15#3a",
+    "C15#3b",
+    "C15#3c"
+   ]
+  },
+  {
+   "id": "m034",
+   "lot": "M4",
+   "chapitre": "25-perimetre-figure-composee",
+   "fichier": "exercices/06-exam-2026-p3-jardin-ecologique-losanges.json",
+   "titre": "Concours 2026 · problème 3 · le jardin écologique : aires par différence, base, périmètre",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C01 (2026) problème 3"
+   ],
+   "items": [
+    "q1 (« أثبتُ أنّ قيس مساحة المثلّث أ ب ج تساوي 12 صم² ») : le grand losange ب ج د ن (quatre côtés égaux) se coupe en deux triangles égaux par [ج ن] : aire = 2 × 30,72 = 61,44 cm² ; il surpasse le quadrilatère ب ج و ن (37,44 cm²) de 24 cm² ; ces 24 cm² forment la partie gauche د ج و ن, que [د و] coupe en deux triangles égaux (base د و, même hauteur [ج م]) ; chacun est égal au triangle أ ب ج (د و = أ ب, même hauteur) : 12 cm² — QCM de la partie à isoler, numériques de l'aire du grand losange, de la différence, du triangle — 4 q.",
+    "q2 (« أحسبُ بالصّم أ ب علما أنّ أ م = 1,4 صم ») : أ ب × ج م ÷ 2 = 12, donc أ ب × ج م = 24 ; l'aire du triangle ن ج د = د م × ج م = (أ ب + أ م) × ج م = 24 + 1,4 × ج م = 30,72 ; ج م = 6,72 ÷ 1,4 = 4,8 cm ; أ ب = 24 ÷ 4,8 = 5 cm — QCM de l'écriture de د م, numériques de ج م et de أ ب — 3 q.",
+    "q3 (périmètre de ب ج د ن sachant qu'il surpasse de 6 cm celui de د ن و ج) : P(ب ج د ن) − P(د ن و ج) = 2 × (côté du losange − ج و) = 6 cm ; la figure ne donne ni le côté ni ج و : voir la note — 3 q si la donnée manquante est admise."
+   ],
+   "neDemandePas": [
+    "20/02-boss#7",
+    "20/quiz#7",
+    "20/04-defi#10",
+    "20/02-boss#10",
+    "19/04-defi#3",
+    "19/05-entrainement#5",
+    "19/04-defi#1",
+    "25/quiz#1",
+    "25/02-boss#1"
+   ],
+   "questions": 10,
+   "note": "À VÉRIFIER AVANT D'ÉCRIRE (re-résolution du planificateur le 2026-10-19). Q1 et q2 se résolvent sans Pythagore (grand losange = 2 × 30,72, différence d'aires, ج م = 4,8, أ ب = 5). Q3 : le périmètre de ب ج د ن (quatre côtés égaux) exige la longueur du côté ; elle se déduit de ج و = 5 (triangle ج م أ, côtés 4,8 et 1,4) puis côté = ج و + 3 = 8, c'est-à-dire de Pythagore, HORS programme : DÉCISION E-4 (donner « ج و = 5 صم » dans l'énoncé, ou écarter la q3 et déplacer la mission au `20`). Figure complexe, sans aucune cote : l'auteur la refait en SVG et vérifie que les données se recoupent (symétrie, marques d'égalité). Placement au `25` (ligne C01#3c reclassée par le lecteur).",
+   "registre": "C01#3a",
+   "sourcesCodes": [
+    "C01#3a",
+    "C01#3b",
+    "C01#3c"
+   ]
+  },
+  {
+   "id": "m035",
+   "lot": "M4",
+   "chapitre": "25-perimetre-figure-composee",
+   "fichier": "exercices/07-exam-2021-p3-jardin-public-trapeze-demi-disque.json",
+   "titre": "Concours 2021 · problème 3 · le jardin public : aires en ares, parcours du coureur",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C06 (2021) problème 3"
+   ],
+   "items": [
+    "q1 (« أثبتُ أنّ مساحة أ ب ج هـ تساوي 3140 آر ») : aire totale 5600,19 a = ABCE + ECD (1478,94 a) + demi-disque ; ABCE = 8/5 du disque et le demi-disque = 1/2 du disque : 8/5 + 1/2 = 21/10 du disque ; 5600,19 − 1478,94 = 4121,25 a = 21/10 du disque ; disque = 1962,5 a ; ABCE = 8/5 × 1962,5 = 3140 a — QCM de la décomposition, numériques — 4 q.",
+    "q2 (« أثبتُ أنّ قيس طول [ب و] يساوي 29 م ») : 3140 a = 314 000 m² ; ABCE est un parallélogramme de côtés parallèles [AB] et [EC] et de hauteur DC = 628 m (angle droit en D) : base AE = 314 000 ÷ 628 = 500 m = BC ; triangle ECD rectangle en D : ED = 2 × 147 894 ÷ 628 = 471 m = OC (rectangle OCDE) ; BO = BC − OC = 500 − 471 = 29 m — QCM de la conversion a → m², numériques de BC, de ED, de BO — 4 q.",
+    "q3 (position du coureur après 5611 m) : les diagonales du rectangle OCDE sont égales à EC = AB = 785 m (côtés opposés du parallélogramme) donc OZ = ZC = 392,5 m ; chemin B → O → Z → C = 29 + 392,5 + 392,5 = 814 m ; demi-circonférence de diamètre BC = 3,14 × 500 ÷ 2 = 785 m ; un tour = 1599 m ; 5611 = 3 × 1599 + 814 : le coureur est en C — QCM du contour du tour (le côté [BC] n'en fait pas partie), numériques de la longueur d'un tour, du reste, QCM de la position — 4 q."
+   ],
+   "neDemandePas": [
+    "21/02-boss#8",
+    "21/05-entrainement#8",
+    "21/05-entrainement#7",
+    "21/04-defi#8",
+    "21/04-defi#7",
+    "20/02-boss#4",
+    "20/04-defi#9",
+    "20/03-revision#7",
+    "20/04-defi#7",
+    "20/03-revision#5",
+    "02/02-boss#4",
+    "02/02-boss#7",
+    "02/05-entrainement#7",
+    "25/quiz#3",
+    "25/quiz#5",
+    "25/02-boss#3",
+    "25/02-boss#6",
+    "25/04-defi#5",
+    "25/05-entrainement#6"
+   ],
+   "questions": 12,
+   "note": "Mission la plus lourde du lot (d3, 12 q, trois ensembles de données, nombres à cinq chiffres). Re-résolue par le planificateur à partir de la transcription : ABCE est un parallélogramme (ses côtés [AB] et [EC] sont parallèles, ses côtés [AE] et [BC] sont portés par les deux bases du trapèze), (785 ; 628 ; 471) sont des multiples de (5 ; 4 ; 3) mais on obtient 471 par l'AIRE, jamais par Pythagore. Le tour de piste tombe exactement sur C (reste = 814). L'auteur relit la figure du PDF officiel avant d'écrire. Pièges : ignorer les tours complets ou le sens du parcours (B → O → Z → C puis demi-cercle) ; compter [BC] dans le tour ; oublier de convertir les ares en m².",
+   "registre": "C06#3a",
+   "sourcesCodes": [
+    "C06#3a",
+    "C06#3b",
+    "C06#3c"
+   ]
+  },
+  {
+   "id": "m036",
+   "lot": "M4",
+   "chapitre": "25-perimetre-figure-composee",
+   "fichier": "exercices/08-exam-2019-p3-deux-terrains-pret-et-cloture.json",
+   "titre": "Concours 2019 · problème 3 · deux terrains voisins : l'aire, le prêt, la clôture",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C08 (2019) problème 3"
+   ],
+   "items": [
+    "q1 (aire de la première pièce) : aire totale 47,355 a = 4735,5 m² ; AD = BC = 82 m (côtés opposés du parallélogramme) ; AD = DM (triangle isocèle) donc DM = 82 m ; aire du triangle = 82 × 33 ÷ 2 = 1353 m² — QCM de la base à prendre, numériques — 4 q.",
+    "q2 (valeur du prêt) : vente de la première pièce = 1353 × 75 = 101 475 d ; elle couvre les 3/10 du montant nécessaire ; montant = 101 475 ÷ 3 × 10 = 338 250 d ; prêt = 7/10 de 338 250 = 236 775 d — QCM de la fraction couverte par la vente (3/10), numériques — 4 q.",
+    "q3 (longueur de la clôture, entrée de 6 m) : aire du parallélogramme = 4735,5 − 1353 = 3382,5 m² ; base CD = 3382,5 ÷ 33 = 102,5 m ; périmètre = 2 × (102,5 + 82) = 369 m ; clôture = 369 − 6 = 363 m — numériques, QCM de l'entrée à retrancher — 4 q."
+   ],
+   "neDemandePas": [
+    "20/02-boss#3",
+    "20/03-revision#6",
+    "20/05-entrainement#10",
+    "20/03-revision#7",
+    "19/05-entrainement#4",
+    "19/05-entrainement#5",
+    "14/04-defi#7",
+    "14/04-defi#9",
+    "13/04-defi#7",
+    "13/02-boss#9",
+    "25/01-pratique#1",
+    "25/01-pratique#2",
+    "25/03-revision#4",
+    "25/05-entrainement#1"
+   ],
+   "questions": 12,
+   "note": "Problème sain et aux nombres propres (re-résolu par le planificateur). Pièges : prendre la recette de la vente pour le montant du prêt ; ne pas retrancher la largeur de l'entrée. La clôture ne longe que le parallélogramme (seconde pièce) : le contour est un périmètre simple avec ouverture ; le lecteur l'a reclassé `25` (C08#3c). Hauteur AE = 33 m lue sur la figure (marquée perpendiculaire à CM). Placement au `25` à titre d'exception déclarée (l'étape neuve est le contour avec ouverture).",
+   "registre": "C08#3a",
+   "sourcesCodes": [
+    "C08#3a",
+    "C08#3b",
+    "C08#3c"
+   ]
+  },
+  {
+   "id": "m037",
+   "lot": "M4",
+   "chapitre": "25-perimetre-figure-composee",
+   "fichier": "exercices/09-exam-2016-p3-losange-et-demi-disque-mur.json",
+   "titre": "Concours 2016 · problème 3 · le losange et le demi-disque : côté, mur avec entrée, plan",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "examen",
+   "sources": [
+    "C11 (2016) problème 3"
+   ],
+   "items": [
+    "q1 (côté du losange) : grande diagonale 80 m ; petite = 3/4 de 80 = 60 m ; aire = 80 × 60 ÷ 2 = 2400 m² ; aire = côté × hauteur donc côté = 2400 ÷ 48 = 50 m — numériques de la petite diagonale, de l'aire, du côté — 4 q.",
+    "q2 (longueur du mur, entrée de 4,5 m) : le terrain réuni = losange + demi-disque de diamètre [ب ج] : le côté [ب ج] devient intérieur et ne fait plus partie du contour ; mur = 3 côtés du losange (150 m) + demi-cercle (3,14 × 50 ÷ 2 = 78,5 m) − entrée 4,5 = 224 m — QCM des côtés conservés, numériques — 4 q.",
+    "q3 (plan au 1/1000 du losange) : diagonales 80 m → 8 cm, 60 m → 6 cm ; ordering des étapes (diagonale horizontale, médiatrice, report de 3 cm de part et d'autre, les quatre côtés) — 3 q."
+   ],
+   "neDemandePas": [
+    "20/02-boss#7",
+    "20/quiz#7",
+    "20/04-defi#10",
+    "19/01-pratique#8",
+    "19/04-defi#4",
+    "21/02-boss#8",
+    "21/02-boss#10",
+    "21/quiz#7",
+    "16/02-boss#7",
+    "19/05-entrainement#3",
+    "18/02-boss#8",
+    "17/02-boss#7",
+    "25/quiz#4",
+    "25/01-pratique#4",
+    "25/02-boss#4",
+    "25/03-revision#6",
+    "25/04-defi#4"
+   ],
+   "questions": 11,
+   "note": "Pièges : compter le côté commun [ب ج] dans le contour ; ne pas retrancher l'entrée ; confondre la hauteur et la demi-diagonale dans l'aire du losange. La hauteur 48 m est issue de ب sur [أ د]. π = 3,14. La q3 est un plan : on ne note que les longueurs et l'ordre des étapes. Mission-modèle pour le patron du `25` (contour fermé, côté commun qui disparaît).",
+   "registre": "C11#3a",
+   "sourcesCodes": [
+    "C11#3a",
+    "C11#3b",
+    "C11#3c"
+   ]
+  },
+  {
+   "id": "m038",
+   "lot": "M4",
+   "chapitre": "25-perimetre-figure-composee",
+   "fichier": "exercices/10-devoir-perimetre-reel-d-une-figure-composee-sur-plan.json",
+   "titre": "Périmètre réel d'une figure composée lue sur un plan à l'échelle",
+   "etage": "d3",
+   "mode": "boss",
+   "xp": 120,
+   "coins": 30,
+   "regime": "devoir",
+   "sources": [
+    "devoir D (T2, école primaire), exercice 1",
+    "devoir E (T2, école primaire), exercice 4",
+    "devoir G (T3, école primaire), exercice 5"
+   ],
+   "items": [
+    "Un plan à l'échelle donnée ; une figure formée de segments et de demi-cercles (ou d'un triangle, d'un rectangle et d'un cercle) : lire les longueurs du plan, convertir en longueurs réelles — QCM, numériques — 2 q.",
+    "Longueur de chaque demi-cercle (diamètre réel × π ÷ 2) ; longueurs qui disparaissent du contour (le diamètre commun, le côté commun de deux pièces accolées) — QCM du contour extérieur, numériques — 3 q.",
+    "Somme du contour, retour à l'unité demandée (hectomètres ou mètres) — numérique, QCM d'unité — 2 q."
+   ],
+   "neDemandePas": [
+    "21/02-boss#8",
+    "21/05-entrainement#8",
+    "21/04-defi#9",
+    "21/quiz#7",
+    "19/04-defi#1",
+    "19/04-defi#2",
+    "19/05-entrainement#4",
+    "18/04-defi#1",
+    "18/04-defi#3",
+    "25/01-pratique#6",
+    "25/03-revision#4",
+    "25/04-defi#2",
+    "25/05-entrainement#1",
+    "25/05-entrainement#4"
+   ],
+   "questions": 7,
+   "note": "Salle blanche. Geste neuf : le périmètre RÉEL d'une figure composée à partir d'un plan (échelle + demi-cercles + côté commun qui n'est pas dans le contour). Piège : compter le diamètre commun dans le contour. Les missions d'examen du chapitre portent le contour fermé et l'entrée ; celle-ci porte l'échelle.",
+   "registre": "D04#1",
+   "sourcesCodes": [
+    "D04#1",
+    "D05#4",
+    "D08#5"
+   ]
+  }
+ ],
+ "ecartes": [
+  {
+   "quoi": "2024 P1 (haies), 2016 P2 (réservoir et vitesse requise), 2013 P1 (ligne brisée à l'échelle 1/4 000 000 et pause), 2012 P2 (distance et coût du carburant), 2010 P3 (trapèze rectangle, prix à l'hectare, épargne), 2015 P3 (rectangle coupé, marges), 2008 P1 (tempérament ou comptant)",
+   "pourquoi": "Problèmes SAINS mais redondants avec un problème repris (même archétype, mêmes gestes) : réserve de 7 missions possibles si le pilote veut plus de volume (décision E-1). Chaque session reste reprise au moins une fois."
+  },
+  {
+   "quoi": "2008 P3 (camion en panne, 3/2 du chemin, carburant)",
+   "pourquoi": "jumeau de 2017 P1 (mêmes gestes, autres nombres) : un seul des deux est repris."
+  },
+  {
+   "quoi": "2017 P3 (triangle, demi-disque, hauteur 39,25 m)",
+   "pourquoi": "énoncé défectueux (hauteur incompatible avec les autres données), à ne pas reprendre tel quel."
+  },
+  {
+   "quoi": "2009 P2 (terrain 3/8, 1/3, 686 m² ; « 4/3 » de la part de l'association)",
+   "pourquoi": "énoncé ambigu (4/3 imprimé, incohérent avec 2/3). La q1 seule est saine : option de repêchage (E-6)."
+  },
+  {
+   "quoi": "2013 P2 (deux remises, prix du lot)",
+   "pourquoi": "la q2 retranche le prix de l'ordinateur d'un prix de LOT : ambigu. La q1 (comparer 20 % à un prix final) est saine : option (E-6)."
+  },
+  {
+   "quoi": "2020 P3 (triangle de 6 ares, route parallélogramme)",
+   "pourquoi": "la q1 (périmètre de 114 m) exige les côtés de l'angle droit, c'est-à-dire Pythagore (`HP:pythagore`, écarté) ; q2 en dépend ; la q3 (échelle) est prise ailleurs. Option : donner le périmètre « on admet »."
+  },
+  {
+   "quoi": "2024 P3 (plateau de dix parallélogrammes)",
+   "pourquoi": "la q3 (nombre de chaises autour de la table) suppose les côtés obliques, non portés par la figure ; q1–q2 seules ne font que 5 étapes d'aire déjà bien servies au `20` (E-6)."
+  },
+  {
+   "quoi": "2022 P1, 2012 P1, 2010 P1, 2017 P2, 2009 P3 (crédit, intérêt, somme et écart, somme et rapport)",
+   "pourquoi": "cible ◐ « rencontrée, non enseignée » (`HP:interet`, `HP:somme-difference`, `HP:somme-rapport`) : aucune mission ne les cible. Chacune revient dans 2 ou 3 sessions seulement (sous le seuil de 6 proposé pour un cours)."
+  },
+  {
+   "quoi": "2018 P2 (marche puis bus, demi-heure, panne)",
+   "pourquoi": "énoncé ambigu signalé par le lecteur (la demi-heure couvre-t-elle les deux étapes ?) ; sain si on lit « marche + bus = 30 min », mais écarté au profit de problèmes plus nets. Option (E-6)."
+  },
+  {
+   "quoi": "Lignes C03#3c (2024) et C17#3c (2010)",
+   "pourquoi": "C03#3c reste classée `25` sans mission (voir 2024 P3). C17#3c (contour d'un trapèze rectangle avec ouverture) est jugée NON composée et reste en `04`+`14`+`19`."
+  }
+ ],
+ "devoirs": {
+  "lignes": 124,
+  "lignesEffectives": 111,
+  "mesureRetenue": "gabarit : environ 37 % des lignes (41 sur 111) sont de familles absentes des sujets au niveau gabarit (constructions 22, divisibilité et multiples 13, périmètre composé 7 dont 3 présents en examen, monnaie 6), au-dessus du seuil de 30 %, mais 35 lignes sont reprises par les six missions et les 6 de monnaie viennent d'un seul devoir partiel (D06)",
+  "vague2": "non proposée : la vague 1 est épuisée par le plan (reste : la monnaie de D06 et le calcul mental) ; décision du pilote",
+  "missions": [
+   "m004",
+   "m005",
+   "m014",
+   "m028",
+   "m029",
+   "m038"
+  ],
+  "ecartes": [
+   "D06 (monnaie et métrique, support manquant)",
+   "D09 (feuille de calcul mental, pas un devoir)",
+   "D02 version B (jumelle de A, comptée une fois)"
+  ],
+  "plafondParAuteur": "D01 et D08 peuvent être de la même main (2 au plus) : respecté ; aucun autre auteur connu"
+ },
+ "mesures": {
+  "missions": 38,
+  "dontExamen": 32,
+  "dontDevoir": 6,
+  "questions": 326,
+  "etages": {
+   "d3": 36,
+   "d2": 2
+  },
+  "lignesExamenReprises": "74 sur 119 (32 problèmes sur 51, 17 sessions sur 17)",
+  "lignesDevoirsReprises": "35 sur 111 (hors D09, calcul mental, et la version B de D02, jumelle de A)",
+  "questionsParChapitre": {
+   "06-multiples-communs": 30,
+   "07-criteres-divisibilite": 6,
+   "13-multiplication-fraction-entier": 28,
+   "14-proportionnalite-pourcentage": 40,
+   "15-vitesse-distance-temps": 34,
+   "21-cercle-disque": 26,
+   "22-durees": 54,
+   "19-quadrilateres": 14,
+   "20-aires-polygones": 42,
+   "25-perimetre-figure-composee": 52
+  },
+  "missionsParChapitre": {
+   "06-multiples-communs": 4,
+   "07-criteres-divisibilite": 1,
+   "13-multiplication-fraction-entier": 4,
+   "14-proportionnalite-pourcentage": 5,
+   "15-vitesse-distance-temps": 4,
+   "21-cercle-disque": 3,
+   "22-durees": 6,
+   "19-quadrilateres": 2,
+   "20-aires-polygones": 4,
+   "25-perimetre-figure-composee": 5
+  }
+ },
+ "decisionsASoumettre": [
+  "E-1 volume : 38 missions, 326 questions ; le `22` reçoit 6 missions (54 q), le `25` 5 (52 q), le `06` 4 (30 q) ; 7 problèmes sains restent en réserve (liste dans « écartés »). Ordre de coupe conseillé si on allège : m027 (2010 P2), m026 (2015 P2), puis m013 (2019 P1) ; ordre d'ajout si on veut plus : 2024 P1 (cadence et vitesses) au `22`, 2016 P2 au `15`.",
+  "E-2 étage : les 32 missions d'examen sont d3 (boss 120/30) parce que chaque problème contient au moins une ligne d3 ; beaucoup contiennent aussi une ligne d4, plafonnée à d3 (règle « jamais d4 »). Alternative : d4 `challenge` 300/60 pour les trois plus lourdes (m035 2021 P3, m031 2018 P3, m020 2022 P3).",
+  "E-3 placements par exception (règle : chapitre le plus avancé de l'exercice) : 2023 P1, 2020 P2 et 2018 P1 au `06` (étape neuve = multiple commun dans un intervalle, plus avancé = 14 ou 13) ; 2016 P1, 2015 P1, 2009 P1 au `13` (retrouver le tout, fraction > 1 ; plus avancé = 14) ; 2019 P3 au `25` (contour avec ouverture ; le plus avancé serait 20 si l'on suit les chapitres de la ligne) ; la mission des constructions avec angle au `19` (plus avancé de 17, 18, 19). Lignes reclassées en `25` par ordre du coordinateur : C01 3c, C03 3c, C06 3c, C07 3a, C07 3b, C08 3c, C10 3c, C11 3b ; C17 3c jugée non composée ; C03 3c (2024) et C08 3c (2019) sont en réalité des contours simples avec chaises ou entrée : à confirmer.",
+  "E-4 2026 P3 q3 (périmètre de ب ج د ن) : le côté du losange se déduit de ج و = 5 par Pythagore (hors programme). Proposition : donner « ج و = 5 صم » dans l'énoncé (on admet), ce qui rend la q3 solvable (côté = 5 + 3 = 8, périmètre 32 cm) ; sinon écarter la q3 et déplacer la mission au `20`.",
+  "E-5 constructions : 5 sessions (2022, 2020, 2018, 2016, 2015) demandent un plan à l'échelle ; elles ne sont pas notables en QCM. Proposition : une question de conversion d'échelle + 1 ou 2 `ordering` d'étapes, pas de dessin. Pas de mission dédiée aux constructions d'examen ; les gestes sont portés par les deux missions de devoir du `19`.",
+  "E-6 repêchages possibles (énoncés fragiles) : 2013 P2 q1 (une remise en %, contre un prix final), 2009 P2 q1 (3/8, 1/3 et un reste), 2018 P2 (marche et bus, lecture « 30 min pour les deux étapes »), 2020 P3 avec « on admet que le périmètre vaut 114 m ». Défaut : aucun.",
+  "E-7 ◐ : cinq problèmes écartés visent l'intérêt, le partage somme-écart ou somme-rapport (revient dans 2 ou 3 sessions, pas 6). Défaut : aucune ligne de cours, aucune mission. Si le pilote veut enseigner « somme et écart » au `04` ou au `14`, 5 problèmes (2022 P1, 2017 P2, 2012 P1, 2010 P1, 2009 P3) se rouvrent.",
+  "E-8 devoirs : 6 missions de salle blanche (06, 07, 14, 19 ×2, 25) pour 35 lignes sur 111. D06 (monnaie et métrique, presque sans géométrie, support manquant) et D09 (feuille de calcul mental) n'ont aucune mission ; proposition : les passer à `ecarte` dans `documents`. Mesure de la règle des 30 % : voir § 6 ; proposition : pas de vague 2.",
+  "E-9 lots et auteurs : 4 lots (M1 06·07·13 : 9 missions ; M2 14·15 : 9 ; M3 21·22 : 9 ; M4 19·20·25 : 11). M4 a deux auteurs (19+20 d'un côté, 25 de l'autre) ; M3 et M4 touchent les chapitres 20, 21, 25 encore écrits par B5 : ne lancer M3 et M4 qu'après le rapport B5, M1 et M2 tout de suite, en parallèle.",
+  "E-10 `23-solides-cube-pave` et `26-diagrammes-batons` : aucune mission (aucun solide, aucun diagramme dans les 17 sujets ni les 9 devoirs). Le `26` et le `23` restent servis par leur patron."
+ ],
+ "sessions": {
+  "2026": [
+   "P1",
+   "P2",
+   "P3"
+  ],
+  "2025": [
+   "P1",
+   "P2",
+   "P3"
+  ],
+  "2024": [
+   "P2"
+  ],
+  "2023": [
+   "P1",
+   "P2",
+   "P3"
+  ],
+  "2022": [
+   "P2",
+   "P3"
+  ],
+  "2021": [
+   "P1",
+   "P2",
+   "P3"
+  ],
+  "2020": [
+   "P1",
+   "P2"
+  ],
+  "2019": [
+   "P1",
+   "P2",
+   "P3"
+  ],
+  "2018": [
+   "P1",
+   "P3"
+  ],
+  "2017": [
+   "P1"
+  ],
+  "2016": [
+   "P1",
+   "P3"
+  ],
+  "2015": [
+   "P1",
+   "P2"
+  ],
+  "2013": [
+   "P3"
+  ],
+  "2012": [
+   "P3"
+  ],
+  "2010": [
+   "P2"
+  ],
+  "2009": [
+   "P1"
+  ],
+  "2008": [
+   "P2"
+  ]
+ }
+}

@@ -1,0 +1,161 @@
+# Vocabulaire d'étiquettes — maths 6ᵉ (`math-6eme`)
+
+Écrit le 2026-10-20 par le responsable des étiquettes, d'après `rapports/*.md`, `audits/*.md` et
+`auteurs-notes/B1/NOTES.md`, chaque occurrence revérifiée dans le contenu. **Registre déjà à jour**
+(`content/misconceptions.json` : 30 ids neufs, 2 libellés élargis ; `content:check` ✓, `content:qa
+--subject math-6eme` 0 erreur). **Aucun exercice n'a été touché** : poser les étiquettes ci-dessous est
+le travail du lot suivant.
+
+Lecture : `CH/fichier Qn x` = chapitre, fichier (`quiz` ou préfixe d'exercice), question au **rang n
+dans le fichier** (à partir de 1), option `x`. « muette » = l'option n'a pas d'étiquette aujourd'hui ;
+« **retag** (ancien) » = l'option porte une étiquette qui nomme une autre erreur : la remplacer.
+« piège » = bloc `> ⚠️` du `cours.md` (ligne) qui exécute l'erreur : ajouter l'id à `coursePitfalls`
+du chapitre une fois au moins un distracteur du chapitre étiqueté (sinon `content:qa` le refuse).
+
+Règles de pose inchangées : seulement sur `mcq`, option à erreur unique (règle R1/R2/R3 du schéma), jamais
+sur la clé.
+
+## Ids neufs (30)
+
+| id                                                                                                                            | libellé fr (abrégé)                                                                    | occurrences à poser                                                                                                                                                                                                                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `math.num.division-virgules-deplacees-inegalement`                                                                            | Tu déplaces la virgule du diviseur sans déplacer celle du dividende d'autant de rangs  | 05/quiz Q5 a `0,15`, b `1,5` · 05/03 Q4 a `0,9` · 05/03 Q6 a `0,12` · 05/04 Q3 a `0,55` · **retag** 05/02 Q6 b `36` (ancien `puissance-de-dix-rangs-mal-comptes`) · piège 05 l. 284                                                                                                                                                         |
+| `math.num.reste-ignore-dans-le-probleme`                                                                                      | Tu gardes le quotient alors qu'il reste quelque chose : un bus, un rouleau de plus     | 02/02 Q7 a `5` · **retag** (ancien `arrondi-par-troncature`, qui dit « le chiffre suivant décide » — faux ici) 25/03 Q4 a `2`, 25/04 Q2 b `7`, 25/05 Q5 a `3` · piège 25 l. 246 (remplacer `arrondi-par-troncature` dans `coursePitfalls` de 25)                                                                                            |
+| `math.num.contrainte-d-intervalle-ignoree`                                                                                    | Ta réponse vérifie la divisibilité mais sort de l'intervalle imposé                    | 06/07 Q7 a `4811` · 06/09 Q7 a `98`                                                                                                                                                                                                                                                                                                         |
+| `math.frac.rapport-denominateur-mal-choisi`                                                                                   | Dans « A par rapport à B », le dénominateur est B — pas toujours le total              | 08/quiz Q7 b `10/15` · 08/02 Q7 a `35/80` · 08/02 Q8 b `7/17` · 08/04 Q9 b · 08/05 Q7 c `100/10 100` · 15/09 Q4 b `3/2`                                                                                                                                                                                                                     |
+| `math.frac.complement-lu-a-l-envers`                                                                                          | La fraction à laquelle il MANQUE la plus grande part est la plus PETITE                | 10/quiz Q7 a `2/3` · 10/02 Q5 a · 10/04 Q9 b                                                                                                                                                                                                                                                                                                |
+| `math.frac.numerateur-compare-a-l-entier`                                                                                     | Tu compares le numérateur seul à l'entier (4 = 20/5)                                   | 10/02 Q7 c `22/5 > 5` · piège 10 l. 229–232 (2ᵉ face)                                                                                                                                                                                                                                                                                       |
+| `math.frac.produit-fractions-denominateur-conserve`                                                                           | Tu gardes un dénominateur dans le produit de deux fractions                            | 13/quiz Q7 a `6/3` · 13/01 Q8 d `2/3` · 13/02 Q8 a `45/6` · 13/02 Q10 c `12/5` · 13/03 Q10 d `10/6` · 13/04 Q9 c                                                                                                                                                                                                                            |
+| `math.mes.unites-non-converties` (sans compétence : transversal)                                                              | Tu calcules ou réponds sans convertir les unités (dal/L, cm/m, plan à l'échelle)       | 04/02 Q2 d `17,4` · 08/03 Q8 a `40/6` · 09/04 Q8 a `75/40` · 14/quiz Q6 a `600 m` · 14/01 Q7 b `5000 m` · 14/05 Q7 c `0,04 cm` · 19/06 Q5 c `0,06` · 20/07 Q9 c · 20/09 Q5 b `3 960 000` · 21/07 Q10 a, c, d · 21/08 Q1 b, c, d · 25/01 Q6 d `1 200 م` · 25/02 Q6 a `9` · 25/03 Q4 d `212` · 25/05 Q1 d `1 400 م` · 25/09 Q4 b · 25/10 Q1 a |
+| `math.prop.vitesse-moyenne-des-vitesses`                                                                                      | Tu fais la moyenne des deux vitesses                                                   | 15/02 Q7 a `22,5` · 15/03 Q8 a `18` · piège 15 § 🗺️                                                                                                                                                                                                                                                                                         |
+| `math.prop.vitesse-unite-de-temps-non-convertie`                                                                              | Tu multiplies/divises par des minutes comme si c'étaient des heures                    | 15/quiz Q6 b `0,2` · 15/01 Q8 a `1800` · 15/09 Q1 a `2400` · piège 15 § 🔁                                                                                                                                                                                                                                                                  |
+| `math.stat.graduation-comptee-comme-unite`                                                                                    | Tu comptes les petites divisions comme des unités                                      | 26/quiz Q1 a `8` · piège 26 l. 35                                                                                                                                                                                                                                                                                                           |
+| `math.geo.mediatrice-un-seul-critere`                                                                                         | Milieu ET perpendiculaire, les deux à la fois                                          | 16/01 Q5 a, d · 16/02 Q3 d · 16/05 Q2 b · piège 16 l. 346                                                                                                                                                                                                                                                                                   |
+| `math.geo.arcs-ouvertures-permutees`                                                                                          | L'arc centré en un sommet a pour rayon le côté qui part de CE sommet                   | 18/03 Q7 c · 19/05 Q3 c · piège 19 l. 541                                                                                                                                                                                                                                                                                                   |
+| `math.geo.inegalite-triangulaire-ignoree` (fusion de `compas-ouverture-trop-petite`)                                          | Deux arcs ne se coupent que si la somme des ouvertures dépasse la distance des centres | 16/01 Q8 a, b · 18/04 Q7 a `12`, b `2`, c `3`                                                                                                                                                                                                                                                                                               |
+| `math.geo.rapporteur-mauvaise-graduation`                                                                                     | Tu lis le rapporteur sur la mauvaise graduation                                        | 17/01 Q8 d (et b) · 19/07 Q1 c `70°` · pièges 17 l. 96 et 427                                                                                                                                                                                                                                                                               |
+| `math.geo.grade-et-degre-confondus`                                                                                           | Angle droit : 90° ou 100 grades                                                        | **retag** 17/01 Q7 d `90 غراد`, 17/03 Q1 b `180 غراد` (ancien `valeur-angle-de-reference-confondue`) · piège 17 l. 557                                                                                                                                                                                                                      |
+| `math.geo.sommet-de-l-angle-mal-identifie`                                                                                    | Dans l'angle ABC, le sommet est la lettre du milieu                                    | 18/01 Q7 a, c · 19/07 Q1 a · piège 17 l. 44                                                                                                                                                                                                                                                                                                 |
+| `math.geo.place-disponible-une-seule-dimension`                                                                               | Pour tenir dans une figure, il faut la place en largeur ET en hauteur                  | 20/06 Q7 b, c · 20/06 Q8 a                                                                                                                                                                                                                                                                                                                  |
+| `math.mes.aire-cote-oblique-pris-pour-hauteur`                                                                                | Un côté penché ne remplace pas la hauteur                                              | 20/quiz Q6 b, c, d · 20/01 Q8 d `40` · 20/01 Q9 c `15` · 20/03 Q8 d `78` · 20/04 Q5 c `208` · 20/07 Q1 a, b, d · 20/08 Q1 a, c · piège 19 l. 324                                                                                                                                                                                            |
+| `math.mes.aire-composee-somme-au-lieu-de-difference`                                                                          | La partie posée DANS le terrain se retranche                                           | 20/02 Q9 d `396` · 20/04 Q7 c `69` · 21/quiz Q6 b · 21/02 Q9 d `408,2`                                                                                                                                                                                                                                                                      |
+| `math.geo.couronne-largeur-prise-pour-rayon`                                                                                  | La largeur de la couronne n'est pas un rayon                                           | 21/quiz Q6 c · 21/02 Q9 a `12,56` · piège 21 l. 566                                                                                                                                                                                                                                                                                         |
+| `math.geo.arc-circonference-entiere-prise-pour-l-arc`                                                                         | Cercle entier (ou autre fraction) au lieu de l'arc demandé                             | 21/quiz Q7 c `69,08` · 21/02 Q8 c `75,36` · 21/02 Q10 b `18,84` · 21/05 Q8 a · 21/06 Q2 a, c · 25/01 Q3 c `106,76` · 25/01 Q4 d `8,14` · 25/03 Q3 d `408,4`                                                                                                                                                                                 |
+| `math.mes.perimetre-segment-interieur-compte` (fusion `perimetre-cote-commun-compte` + `perimetre-diametre-interieur-compte`) | Côté commun ou diamètre accolé : à l'intérieur, pas sur le bord                        | muettes : 21/quiz Q7 b `56,54` · 25/01 Q3 b · 25/01 Q4 c `7,57` · 25/02 Q3 c, d · 25/03 Q3 c · 25/05 Q3 c, d · 25/05 Q5 c · **retag** (ancien `perimetre-nombre-de-cotes-errone`, qui parle du nombre de côtés d'un polygone) : 25/01 Q1 d, Q2 c, d · 25/02 Q1 d · 25/03 Q1 b, c · 25/03 Q2 c, d · 25/05 Q6 c · pièges 25 l. 36 et 143      |
+| `math.mes.perimetre-partie-du-bord-oubliee`                                                                                   | Le périmètre fait tout le tour : l'arc ET les segments droits                          | 21/02 Q8 a `37,68` · 21/05 Q8 b, c · 25/01 Q4 a `5` · 25/02 Q3 a · 25/02 Q4 a, b · 25/03 Q3 a `220` · 25/05 Q3 a `24` · piège 21 l. 510                                                                                                                                                                                                     |
+| `math.mes.arc-retranche-compte-en-moins`                                                                                      | Un arc rentrant s'ajoute au périmètre                                                  | 25/02 Q5 b `33,72` · 25/03 Q6 a `64,3` · piège 25 l. 192                                                                                                                                                                                                                                                                                    |
+| `math.mes.plantations-ferme-et-ouvert-confondus` (élargit `plant-ajoute-sur-cercle-ferme` aux deux sens)                      | Fermé : autant de plants que d'intervalles ; ouvert : un de plus                       | 25/01 Q5 c `9` · 25/02 Q6 d `91` · 25/04 Q3 c `171` · 25/05 Q6 b `23` · 25/03 Q5 b `16` · 25/05 Q2 b `12` · piège 25 l. 294                                                                                                                                                                                                                 |
+| `math.mes.temps-d-arret-mal-compte` (fusion M3 `arret-compte-en-trop-ou-en-moins` + M2 « pause comptée »)                     | Chaque arrêt s'ajoute à la durée totale, pas au roulage                                | 22/06 Q4 a, d · 22/06 Q6 b `8 سا 40 د`, d `9 سا` · 22/09 Q4 c · 22/11 Q4 c · 15/09 Q6 a, b, c                                                                                                                                                                                                                                               |
+| `math.mes.attente-du-prochain-depart-ignoree` (absorbe `retard-ajoute-a-l-arrivee`)                                           | Le bus part aux horaires fixés : on attend le prochain                                 | 22/08 Q2 a, c · 22/08 Q4 a · 22/08 Q7 b, c, d · 22/08 Q9 a                                                                                                                                                                                                                                                                                  |
+| `math.mes.changement-de-jour-oublie`                                                                                          | Au-delà de 24 h, on retranche 24 h : jour suivant                                      | 22/02 Q10 c · 22/11 Q4 b, d                                                                                                                                                                                                                                                                                                                 |
+| `math.mes.trajet-aller-retour-ignore` (sans compétence)                                                                       | Un aller-retour parcourt la distance deux fois                                         | 14/10 Q5 a `21 km` · 22/09 Q2 a `125`, b `124`                                                                                                                                                                                                                                                                                              |
+
+## Ids existants
+
+| id                                            | statut                                                                                                                                            | occurrences à poser                                                                                             |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `math.prob.chance-comparee-sur-effectif-brut` | **élargi** (« une chance **ou un taux de réussite** », exemple 40/50 vs 63/90) ; usages actuels (`math/07`, 2 options) intacts                    | 26/04 Q3 a · 26/05 Q6 a · piège 26 l. 242 — remplace la proposition `math.stat.comparaison-par-effectifs`       |
+| `math.prop.pourcentage-base-erronee`          | **élargi** (« le pourcentage **(ou la fraction)** … relis de quelle quantité il est la part ») ; usages 9ᵉ (baisse sur le prix de départ) intacts | 21/07 Q8 a `3 768`, 21/07 Q9 c `5 142` — remplace la proposition `math.mes.fraction-appliquee-au-disque-entier` |
+| `math.mes.aire-triangle-sans-moitie`          | réutilisé tel quel                                                                                                                                | 20/02 Q10 a `4` (36 ÷ 9 : la moitié oubliée à l'envers) — remplace `math.mes.aire-inconnue-moitie-oubliee`      |
+| `math.alg.reponse-a-l-autre-inconnue`         | réutilisé tel quel (« un résultat intermédiaire »)                                                                                                | 06/07 Q7 c `9614`, 06/09 Q7 c `108` (le reste n'est pas rajouté ; précédent 06/04 Q6 a)                         |
+| `math.num.operation-inverse-appliquee`        | réutilisé tel quel                                                                                                                                | M1 « fraction du coût calculée au lieu de retrouver le tout » (piège 13 l. 346 déjà sous cet id)                |
+
+## Propositions écartées
+
+- `math.geo.aire-disque-inverse-carre-non-reconnu` : une seule option (21/02 Q7 d `81`) et la notion de racine
+  n'est pas au programme de 6ᵉ ; 21/02 Q7 c `40,5` reste muette pour la même raison.
+- `math.mes.ravitaillement-oublie` : l'erreur est dans l'énoncé des chasses à l'erreur (22/09 Q8, 22/11 Q7), aucun
+  distracteur ne l'exécute.
+- `math.mes.retard-ajoute-a-l-arrivee` : une occurrence (22/08 Q9 a), absorbée par `attente-du-prochain-depart-ignoree`.
+- `math.mes.unites-capacite-non-converties`, `math.mes.unites-melangees-sans-conversion`,
+  `math.mes.echelle-unites-non-uniformisees` : fusionnés dans `math.mes.unites-non-converties`.
+- `math.mes.perimetre-cote-commun-compte`, `math.mes.perimetre-diametre-interieur-compte` : fusionnés.
+- `math.geo.compas-ouverture-trop-petite` : renommé `math.geo.inegalite-triangulaire-ignoree` (même erreur, nom qui
+  couvre la médiatrice et le triangle).
+- `math.mes.plant-ajoute-sur-cercle-ferme` : élargi aux deux sens sous `plantations-ferme-et-ouvert-confondus`.
+- `math.stat.comparaison-par-effectifs`, `math.mes.fraction-appliquee-au-disque-entier`,
+  `math.mes.aire-inconnue-moitie-oubliee` : ids existants (ci-dessus).
+- Sous le seuil (une occurrence, pas de piège de cours) : côté oblique placé sans reporter sa longueur au compas
+  (19/06 Q4) ; aire multipliée par la production d'un arbre (20/08 Q6 a) ; recette divisée par le total des billets
+  (06, 2023) ; unicité non vérifiée (06/09 Q4 c) ; M2 « mauvaise tranche » (14, 2024), « écart attribué à la table »
+  (2019), « fraction de capacité confondue avec les litres » ; B2 n° 5 (07/02 Q3, déjà retiré par l'auteur).
+
+## Pose — lots de chapitres (2026-10-20)
+
+Périmètre : `quiz.json` et exercices `01-` à `05-` des 26 chapitres, plus les `coursePitfalls`. Les missions
+(`06-` et suivantes) attendent la passe suivante. Chaque option a été relue dans son état actuel avant la pose.
+
+**Posé (50 options, dont 3 corrections d'étiquette)** : toutes les occurrences hors missions des ids
+`division-virgules-deplacees-inegalement` (6, dont la correction de 05/02 Q6 b), `reste-ignore-dans-le-probleme`
+(02/02 Q7 a), `rapport-denominateur-mal-choisi` (5), `complement-lu-a-l-envers` (10/quiz Q7 a, 10/02 Q5 a),
+`numerateur-compare-a-l-entier` (1), `produit-fractions-denominateur-conserve` (6), `unites-non-converties`
+(04/02 Q2 d, 08/03 Q8 a, 14/quiz Q6 a, 14/01 Q7 b, 14/05 Q7 c), `vitesse-moyenne-des-vitesses` (2),
+`vitesse-unite-de-temps-non-convertie` (2), `graduation-comptee-comme-unite` (1), `mediatrice-un-seul-critere` (4),
+`arcs-ouvertures-permutees` (2), `inegalite-triangulaire-ignoree` (5), `rapporteur-mauvaise-graduation` (17/01 Q8 d),
+`grade-et-degre-confondus` (2 corrections, 17/01 Q7 d et 17/03 Q1 b), `sommet-de-l-angle-mal-identifie` (18/01 Q7 a, c),
+`changement-de-jour-oublie` (22/02 Q10 c) et `chance-comparee-sur-effectif-brut` (26/04 Q3 a, 26/05 Q6 a).
+
+**Déjà posé par les auteurs** (lettres d'options changées depuis la table) : chapitres 20, 21 et 25 en entier
+(`aire-cote-oblique-pris-pour-hauteur`, `aire-composee-somme-au-lieu-de-difference`,
+`couronne-largeur-prise-pour-rayon`, `arc-circonference-entiere-prise-pour-l-arc`,
+`perimetre-segment-interieur-compte`, `perimetre-partie-du-bord-oubliee`, `arc-retranche-compte-en-moins`,
+`plantations-ferme-et-ouvert-confondus`, `reste-ignore-dans-le-probleme` et `unites-non-converties` au ch. 25,
+`aire-triangle-sans-moitie` 20/02 Q10 a). Les corrections `arrondi-par-troncature` et `perimetre-nombre-de-cotes-errone`
+du ch. 25 sont déjà faites, et les usages restants de ces deux ids (ch. 01, 03 et 18) sont justes.
+
+**Laissé muet** :
+
+- 10/04 Q9 b exécute en fait `comparaison-par-denominateur` (« 1/6 plus petit que 1/8 »), pas le complément lu à l'envers.
+- 09/04 Q8 a `75/40` porte deux erreurs (pas de conversion, et pas de forme irréductible).
+- 17/01 Q8 b (« السلّم الذي أعداده أصغر ») ne se reconstruit pas avec certitude.
+- 16/01 Q8 c n'exécute pas l'erreur visée.
+- 25/01 Q2 d, 25/02 Q4 b, 25/02 Q5 b et 25/03 Q3 a portent deux erreurs ou une autre erreur.
+
+**`coursePitfalls` ajoutés** (piège `> ⚠️` présent dans le cours, et au moins un distracteur du chapitre étiqueté) :
+
+- 05 : `division-virgules-deplacees-inegalement`.
+- 10 : `numerateur-compare-a-l-entier`.
+- 15 : `vitesse-unite-de-temps-non-convertie` et `vitesse-moyenne-des-vitesses`.
+- 16 : `mediatrice-un-seul-critere`.
+- 17 : `rapporteur-mauvaise-graduation` et `grade-et-degre-confondus`.
+- 19 : `arcs-ouvertures-permutees`.
+- 26 : `graduation-comptee-comme-unite` et `chance-comparee-sur-effectif-brut`.
+
+Le piège du ch. 17 (l. 44) sur le sommet de l'angle reste sans `coursePitfalls` : aucun distracteur du ch. 17 ne
+porte encore cet id.
+
+**À la passe des missions** : les occurrences listées plus haut dans `06-…` et les fichiers suivants (ch. 06, 14, 15,
+19, 20, 21, 22).
+
+## Pose — missions `06-…` et suivantes (2026-10-20)
+
+Les 38 missions des ch. 06, 07, 13, 14, 15, 19, 20, 21, 22 et 25 ont été relues une à une dans leur état actuel.
+Une grande partie était déjà étiquetée par les auteurs (22/06 Q4 et Q6, 22/08 Q2, Q4 et Q9, 22/09 Q2, 22/11 Q4,
+15/09 Q1, Q4 et Q6, 14/10 Q5, 21/06 Q2, 21/07 Q8, Q9 et Q10, 21/08 Q1, 13/10 Q7…) : ces poses n'ont pas été doublées.
+
+**Posé (22 options)** :
+
+- `aire-cote-oblique-pris-pour-hauteur` (5) : 20/07 Q1 a, b, d ; 20/08 Q1 a, c.
+- `unites-non-converties` (6) : 19/06 Q4 c ; 20/07 Q5 b, c ; 20/09 Q1 a ; 20/09 Q5 b ; 25/10 Q1 a.
+- `arc-circonference-entiere-prise-pour-l-arc` (3) : 21/07 Q1 b ; 21/07 Q4 b ; 25/10 Q3 d.
+- `temps-d-arret-mal-compte` (3) : 22/06 Q1 b, c, d.
+- `attente-du-prochain-depart-ignoree` (1) : 22/08 Q7 d.
+- `rapport-denominateur-mal-choisi` (1) : 14/06 Q1 a.
+- `sommet-de-l-angle-mal-identifie` (1) : 19/07 Q1 a.
+- `rapporteur-mauvaise-graduation` (1) : 19/07 Q1 c.
+- `place-disponible-une-seule-dimension` (1) : 20/06 Q7 a.
+
+**Devenu sans objet** (questions remplacées depuis la table) :
+
+- `contrainte-d-intervalle-ignoree` : les options 4811 et 98 n'existent plus. L'id n'est porté par aucune option ;
+  il reste au registre pour un usage ultérieur.
+- 06/09 Q7 `108` et 13/10 Q7 `9614` : `reponse-a-l-autre-inconnue` y est déjà posé.
+- 20/06 Q8 : la question a changé.
+
+**Laissé muet** :
+
+- Options fausses de deux ou trois longueurs à la fois : 19/07 Q5 c, 20/07 Q9 c, 25/09 Q4 b et d, 21/07 Q10 d,
+  21/08 Q1 d — conformément au retrait de l'auditeur.
+- 21/07 Q4 c `90` (arc pris pour le cercle ET diamètre non divisé).
+- 22/10 Q1 b `300 km` : l'erreur inverse du libellé (aller-retour pris pour un aller).
+- Les erreurs déjà étiquetées autrement par les auteurs (25/06 Q2 b, 25/08 Q4 d sous `operation-inverse-appliquee`).
