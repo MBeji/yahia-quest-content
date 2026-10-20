@@ -12,27 +12,28 @@
   },
   "questions": [
     {
-      "prompt": "ما الوحدةُ المرجعيّة لقياس المساحة؟",
+      "prompt": "أيُّ هذه القياسات قيسُ مساحة؟",
       "options": [
         {
           "id": "a",
-          "text": "المتر المربّع (م²)"
+          "text": "12 سم²"
         },
         {
           "id": "b",
-          "text": "المتر (م)"
+          "text": "12 سم",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
         },
         {
           "id": "c",
-          "text": "الغرام (غ)"
+          "text": "12 ل"
         },
         {
           "id": "d",
-          "text": "الثانية (ث)"
+          "text": "12 كغ"
         }
       ],
       "correctOption": "a",
-      "explanation": "الوحدةُ المرجعيّة للمساحة هي المتر المربّع (م²)؛ والمترُ وحدةُ طولٍ لا مساحة.",
+      "explanation": "المساحة تُقاس بوحدة مربّعة مثل سم²؛ أمّا السنتيمتر فوحدة طول، واللتر وحدة سعة، والكيلوغرام وحدة كتلة.",
       "difficulty": 1,
       "competencies": ["math.mes.aires"]
     },
@@ -198,7 +199,8 @@
       ],
       "correctOption": "b",
       "explanation": "1 كم² = 100 هكتار (لأنّ الكيلومتر المربّع 1 000 000 م² والهكتار 10 000 م²)، فـ 1,07 كم² = 1,07 × 100 = 107 هكتار. الخطأ الشائع التحويل بعامل 10: بين كلّ وحدتين متتاليتين من وحدات المساحة عامل 100.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
     },
     {
       "type": "numeric",
@@ -208,7 +210,8 @@
         "unit": "سم²"
       },
       "explanation": "الأضلاع الثلاثة متساوية، فالضلع 18 ÷ 3 = 6 سم، وهو القاعدة. المساحة = (6 × 5,2) ÷ 2 = 31,2 ÷ 2 = 15,6 سم². التحقّق: 15,6 × 2 = 31,2 = 6 × 5,2 ✓.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
     },
     {
       "prompt": "في المثلّث الآتي نعرف طول ضلع هو 4 سم، ونعرف أنّ القطعة المتقطّعة العموديّة على ضلع آخر طولها 3,5 سم. هل نستطيع حساب مساحة المثلّث بهذين العددين؟\n<svg viewBox=\"0 0 360 205\"><path d=\"M40 170 L300 170 L217.7 21.2 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M40 170 L300 170 L217.7 21.2 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M40 170 L239.1 59.9\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M229.4 65.2 L224.1 55.6 L233.7 50.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"40\" cy=\"170\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"300\" cy=\"170\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"217.7\" cy=\"21.2\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"170\" y=\"193\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><text x=\"133.5\" y=\"104.9\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">3,5</text></svg>",
@@ -232,7 +235,8 @@
       ],
       "correctOption": "a",
       "explanation": "الارتفاع لا يُضرب إلّا في قاعدته: القطعة 3,5 عموديّة على ضلع آخر لم نعرف طوله، والضلع 4 لا يوافقها، فلا يكفي هذان العددان للمساحة. الخطأ الشائع ضرب عددين في المثلّث لمجرّد أنّهما مكتوبان. وليس لازمًا أن يكون المثلّث قائمًا أو متساوي الساقين.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
     },
     {
       "type": "numeric",
@@ -242,7 +246,8 @@
         "unit": "سم"
       },
       "explanation": "المساحة = القاعدة × الارتفاع، فالارتفاع = المساحة ÷ القاعدة = 156 ÷ 20,8 = 1 560 ÷ 208 = 7,5 سم، ولا نضاعف المساحة هنا لأنّ الصيغة لا قسمة على 2 فيها. التحقّق: 20,8 × 7,5 = 156 ✓.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
     }
   ]
 }

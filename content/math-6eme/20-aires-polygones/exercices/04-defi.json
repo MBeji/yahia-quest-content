@@ -132,7 +132,8 @@
         },
         {
           "id": "c",
-          "text": "208 سم²"
+          "text": "208 سم²",
+          "misconceptionTag": "math.mes.aire-cote-oblique-pris-pour-hauteur"
         },
         {
           "id": "d",
@@ -142,7 +143,8 @@
       ],
       "correctOption": "b",
       "explanation": "نفكّك الشكل ونجمع: المستطيل 16 × 8 = 128 سم²، والمثلّث (16 × 6) ÷ 2 = 48 سم²، فالمجموع 128 + 48 = 176 سم². الأخطاء الشائعة: استعمال الضلع المائل 10 ارتفاعًا فنجد 208، أو نسيان القسمة على 2 في المثلّث فنجد 224، أو نسيان المستطيل فنجد 48.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
     },
     {
       "prompt": "كم سم² في 5 م²؟",
@@ -185,7 +187,8 @@
         },
         {
           "id": "c",
-          "text": "69 آر"
+          "text": "69 آر",
+          "misconceptionTag": "math.mes.aire-composee-somme-au-lieu-de-difference"
         },
         {
           "id": "d",
@@ -194,32 +197,34 @@
       ],
       "correctOption": "a",
       "explanation": "مساحة الأرض 12 × 5 = 60 دكم²، ومساحة المنزل 3 × 3 = 9 دكم²؛ المنزل داخل الأرض فنطرح: 60 − 9 = 51 دكم² = 51 آر. الأخطاء الشائعة: نسيان الطرح فنجد 60، أو الجمع فنجد 69، أو كتابة 5 100 وهي المساحة بالمتر المربّع لا بالآر.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
     },
     {
       "prompt": "مستطيل محيطه 320 م وعرضه ثلث طوله. قُسم إلى مربّع ضلعه العرض ومستطيل آخر، ثمّ قُسم المستطيل الآخر بقطره إلى مثلّثين متقايسين. ما مساحة أحد المثلّثين؟\n<svg viewBox=\"0 0 360 180\"><path d=\"M30 40 L330 40 L330 140 L30 140 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M30 40 L330 40 L330 140 L30 140 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M130 40 L130 140\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M130 40 L330 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/></svg>",
       "options": [
         {
           "id": "a",
-          "text": "1 200 م²"
-        },
-        {
-          "id": "b",
           "text": "1 600 م²"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "3 200 م²",
           "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "4 800 م²"
+        },
+        {
+          "id": "d",
+          "text": "9 600 م²"
         }
       ],
-      "correctOption": "b",
-      "explanation": "نصف المحيط 320 ÷ 2 = 160 = الطول + العرض، والطول 3 أمثال العرض فهو 4 أجزاء: العرض 160 ÷ 4 = 40 م والطول 120 م. المستطيل الآخر 80 × 40، ومساحة مثلّثه (80 × 40) ÷ 2 = 1 600 م² ✓. الخطأ الشائع نسيان القسمة على 2 فنجد 3 200، أو أخذ مساحة المستطيل الكبير 4 800.",
-      "difficulty": 3
+      "correctOption": "a",
+      "explanation": "نصف المحيط 320 ÷ 2 = 160 = الطول + العرض، والطول 3 أمثال العرض فهو 4 أجزاء: العرض 160 ÷ 4 = 40 م والطول 120 م. المستطيل الآخر 80 × 40، ومساحة مثلّثه (80 × 40) ÷ 2 = 1 600 م² ✓. الخطأ الشائع نسيان القسمة على 2 فنجد 3 200، أو أخذ مساحة المستطيل الكبير 4 800. وإذا ضاعفنا المساحة الكبرى 2 × 4 800 وجدنا 9 600، وهو غير مطلوب.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
     },
     {
       "type": "numeric",
@@ -229,7 +234,8 @@
         "unit": "م"
       },
       "explanation": "نبطل عمليّات الصيغة من الأخيرة: ضعف المساحة 2 × 14,25 = 28,5، وهو (مجموع القاعدتين) × 3، فمجموع القاعدتين 28,5 ÷ 3 = 9,5. القاعدة الكبرى 9,5 − 3,5 = 6 م. التحقّق: (6 + 3,5) × 3 ÷ 2 = 28,5 ÷ 2 = 14,25 ✓.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
     },
     {
       "prompt": "معيّن ضلعه 25 سم والارتفاع الموافق لهذا الضلع 24 سم. ما مساحته؟\n<svg viewBox=\"0 0 330 190\"><path d=\"M40 145 L165 145 L200 25 L75 25 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M40 145 L165 145 L200 25 L75 25 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M75 25 L75 145\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M85 145 L85 135 L75 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"102.5\" y=\"167\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">25</text><text x=\"61\" y=\"90\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">24</text></svg>",
@@ -255,7 +261,8 @@
       ],
       "correctOption": "c",
       "explanation": "المعيّن متوازي أضلاع، فمساحته = الضلع × الارتفاع الموافق = 25 × 24 = 600 سم²، دون قسمة على 2: القسمة على 2 تخصّ جداء القطرين وحده. ومن ضرب الضلع في نفسه وجد 625 وهي مساحة مربّع لا يعرف ارتفاعه.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
     }
   ]
 }

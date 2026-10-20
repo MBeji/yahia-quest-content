@@ -7,29 +7,28 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "ما العلاقةُ بين القطر ونصف القطر؟",
+      "prompt": "قطعة طرفاها على الدائرة ولا تمرّ بالمركز. هل هي قطر؟",
       "options": [
         {
           "id": "a",
-          "text": "القطر = 2 × نصف القطر"
+          "text": "نعم، لأنّ طرفيها على الدائرة"
         },
         {
           "id": "b",
-          "text": "القطر = نصف القطر",
-          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+          "text": "نعم، إذا كانت أطول من نصف القطر"
         },
         {
           "id": "c",
-          "text": "نصف القطر = 2 × القطر",
-          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+          "text": "لا، لأنّها لا تمرّ بالمركز"
         },
         {
           "id": "d",
-          "text": "القطر = نصف القطر + 2"
+          "text": "لا، بل هي نصف قطر",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         }
       ],
-      "correctOption": "a",
-      "explanation": "القطرُ يمرّ بالمركز، فهو يساوي ضعفَ نصف القطر: القطر = 2 × نصف القطر.",
+      "correctOption": "c",
+      "explanation": "القطر قطعة تمرّ بالمركز وطرفاها على الدائرة، والشرطان معًا لازمان. هذه القطعة لا تمرّ بالمركز فليست قطرًا، وهي أقصر منه. ولا هي نصف قطر، لأنّ نصف القطر يبدأ من المركز.",
       "difficulty": 1,
       "competencies": ["math.geo.cercle"]
     },
@@ -115,30 +114,31 @@
       "competencies": ["math.geo.cercle"]
     },
     {
-      "prompt": "ما محيطُ دائرةٍ قطرُها 14 سم؟ (π ≈ 3,14)",
+      "prompt": "ما محيطُ دائرةٍ قطرُها 19 سم؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "17,14 سم"
+          "text": "22,14 سم"
         },
         {
           "id": "b",
-          "text": "21,98 سم",
+          "text": "29,83 سم",
           "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         },
         {
           "id": "c",
-          "text": "43,96 سم"
+          "text": "59,66 سم"
         },
         {
           "id": "d",
-          "text": "87,92 سم",
+          "text": "119,32 سم",
           "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
         }
       ],
       "correctOption": "c",
-      "explanation": "المحيط = π × القطر = 3,14 × 14 = 43,96 سم. من ضرب أيضًا في 2 وجد 87,92، ومن أخذ نصف القطر 7 في π × ق وجد 21,98، ومن جمع 14 مع 3,14 وجد 17,14.",
-      "difficulty": 2
+      "explanation": "المحيط = π × القطر = 3,14 × 19 = 59,66 سم. من ضرب أيضًا في 2 وجد 119,32، ومن أخذ نصف القطر 9,5 في π × ق وجد 29,83، ومن جمع 19 مع 3,14 وجد 22,14.",
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
       "prompt": "ما الفرقُ بين الدائرة والقرص؟",
@@ -183,7 +183,7 @@
         {
           "id": "c",
           "text": "75,36 سم",
-          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         },
         {
           "id": "d",
@@ -193,7 +193,8 @@
       ],
       "correctOption": "b",
       "explanation": "قطر الدائرة هو ضلع المربّع: ق = 12 سم. المحيط = π × ق = 3,14 × 12 = 37,68 سم. ومن أخذ 12 نصف قطرٍ وجد 2 × 3,14 × 12 = 75,36؛ ومن اعتبر 6 قطرًا وجد 18,84؛ و113,04 هو 3,14 × 6 × 6 أي مساحة القرص.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
       "prompt": "صُنعت دائرة من سلك طوله 81,64 سم. ما نصف قطرها؟ (π ≈ 3,14)",
@@ -218,31 +219,34 @@
       ],
       "correctOption": "a",
       "explanation": "طول السلك هو المحيط، والمحيط ÷ القطر = π، فالقطر = 81,64 ÷ 3,14 = 26 سم، ونصف القطر 26 ÷ 2 = 13 سم. التحقّق: 2 × 3,14 × 13 = 81,64 ✓. من توقّف عند 26 أعطى القطر لا نصف القطر، ومن قسم 81,64 على 2 فقط وجد 40,82.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
-      "prompt": "دائرة مركزها م ونصف قطرها 4 سم. النقطة س تبعد 4 سم عن م، والنقطة ع تبعد 3 سم، والنقطة ل تبعد 5 سم. أيّ النقاط تقع على الدائرة؟",
+      "prompt": "دائرة مركزها م وقطرها 10 سم. النقطة هـ تبعد 5 سم عن م، والنقطة ك تبعد 8 سم، والنقطة ن تبعد 10 سم. أيّ النقاط تقع على الدائرة؟",
       "options": [
         {
           "id": "a",
-          "text": "س وحدها"
+          "text": "هـ وحدها"
         },
         {
           "id": "b",
-          "text": "ع وحدها"
+          "text": "ن وحدها",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         },
         {
           "id": "c",
-          "text": "ل وحدها"
+          "text": "ك وحدها"
         },
         {
           "id": "d",
-          "text": "س و ع معًا"
+          "text": "ك و ن معًا"
         }
       ],
       "correctOption": "a",
-      "explanation": "تقع النقطة على الدائرة إذا كان بعدها عن المركز يساوي نصف القطر 4 سم بالضبط: هذا شأن س وحدها. النقطة ع (3 سم) داخل الدائرة، والنقطة ل (5 سم) خارجها.",
-      "difficulty": 2
+      "explanation": "نصف القطر 10 ÷ 2 = 5 سم، والنقطة على الدائرة إذا كان بعدها عن المركز يساوي نصف القطر بالضبط: هـ وحدها. ك (8 سم) و ن (10 سم) خارجها؛ ومن أخذ 10 نصفَ قطر خلط بين القطر ونصف القطر.",
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle"]
     }
   ]
 }

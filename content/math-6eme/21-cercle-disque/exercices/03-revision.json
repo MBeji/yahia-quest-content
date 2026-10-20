@@ -12,32 +12,30 @@
   },
   "questions": [
     {
-      "prompt": "ما القيمةُ التقريبيّةُ للعدد π؟",
+      "prompt": "قسمنا محيط دائرة على قطرها. ماذا نجد؟",
       "options": [
         {
           "id": "a",
-          "text": "3,14"
+          "text": "3,14 تقريبًا، مهما كانت الدائرة"
         },
         {
           "id": "b",
-          "text": "3,15",
-          "misconceptionTag": "math.geo.valeur-de-pi-erronee"
+          "text": "عددًا يكبر كلّما كبرت الدائرة"
         },
         {
           "id": "c",
-          "text": "2,14",
-          "misconceptionTag": "math.geo.valeur-de-pi-erronee"
+          "text": "2 دائمًا، لأنّ القطر ضعف نصف القطر"
         },
         {
           "id": "d",
-          "text": "3,04",
+          "text": "3,41 تقريبًا",
           "misconceptionTag": "math.geo.valeur-de-pi-erronee"
         }
       ],
       "correctOption": "a",
-      "explanation": "العددُ π ثابتٌ قيمتُه التقريبيّة 3,14، نستعملُه في المحيط والمساحة.",
+      "explanation": "في كلّ دائرة، صغيرةً كانت أو كبيرة، خارج قسمة المحيط على القطر هو العدد نفسه π ≈ 3,14، فلا يتعلّق بحجم الدائرة. و3,41 قلبٌ للرقمين بعد الفاصلة، و2 هو خارج قسمة القطر على نصف القطر لا المحيط على القطر.",
       "difficulty": 1,
-      "competencies": ["math.geo.cercle"]
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
       "prompt": "دائرةٌ نصفُ قطرها 7 سم. ما طولُ قطرها؟",
@@ -121,28 +119,29 @@
       "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
-      "prompt": "ما صيغةُ مساحة القرص؟",
+      "prompt": "أيّ عمليّة تعطي مساحة قرص نصف قطره 7 سم؟",
       "options": [
         {
           "id": "a",
-          "text": "π × ر × ر"
+          "text": "3,14 × 7 × 7"
         },
         {
           "id": "b",
-          "text": "2 × π × ر",
+          "text": "2 × 3,14 × 7",
           "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
         },
         {
           "id": "c",
-          "text": "ق × 2"
+          "text": "3,14 × 14 × 14",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         },
         {
           "id": "d",
-          "text": "π + ر"
+          "text": "3,14 × 7"
         }
       ],
       "correctOption": "a",
-      "explanation": "مساحةُ القرص = π × ر × ر؛ أمّا 2 × π × ر فهي محيطُ الدائرة.",
+      "explanation": "مساحة القرص = π × ر × ر: نصف القطر 7 مرّتين و π مرّة واحدة. أمّا 2 × 3,14 × 7 فمحيط الدائرة، و 3,14 × 14 × 14 يضع القطر مكان نصف القطر، و 3,14 × 7 يضرب في ر مرّة واحدة.",
       "difficulty": 2,
       "competencies": ["math.geo.cercle", "math.mes.aires"]
     },
@@ -191,13 +190,13 @@
         },
         {
           "id": "d",
-          "text": "78,5 سم",
-          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+          "text": "78,5 سم"
         }
       ],
       "correctOption": "b",
       "explanation": "قطر كلّ دائرة يساوي ارتفاع المستطيل: ق = 5 سم، فمحيط كلّ منهما π × ق = 3,14 × 5 = 15,7 سم. 31,4 هو محيط الدائرتين معًا، و7,85 يحذف العدد 2 من 2 × π × ر، و78,5 قرص قطره 10 لا محيط.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
       "type": "numeric",
@@ -207,15 +206,15 @@
         "unit": "سم"
       },
       "explanation": "طرف العقرب يرسم دائرة نصف قطرها 25 سم، فمحيطها 2 × 3,14 × 25 = 157 سم، وهي المسافة في ساعة واحدة. في 2 ساعة و 30 دقيقة، أي 2,5 ساعة، يقطع 2,5 × 157 = 392,5 سم.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
       "prompt": "دائرة محيطها 87,92 سم. ما مساحة قرصها؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "43,96 سم²",
-          "misconceptionTag": "math.mes.rayon-non-eleve-au-carre"
+          "text": "43,96 سم²"
         },
         {
           "id": "b",
@@ -234,7 +233,12 @@
       ],
       "correctOption": "c",
       "explanation": "من المحيط نجد القطر: 87,92 ÷ 3,14 = 28 سم، ونصف القطر 28 ÷ 2 = 14 سم. المساحة = 3,14 × 14 × 14 = 615,44 سم². الخطأ الشائع أخذ 28 نصفَ قطر فنجد 2 461,76، أو نسيان π فنجد 196.",
-      "difficulty": 3
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.mes.aires",
+        "math.mes.perimetres"
+      ]
     }
   ]
 }

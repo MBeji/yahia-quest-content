@@ -139,7 +139,7 @@
       "competencies": ["math.geo.cercle", "math.mes.aires"]
     },
     {
-      "prompt": "حوض مستدير نصف قطره 4 م يحيط به رصيف مستدير نصف قطره الخارجي 6 م. كيف نحسب مساحة الرصيف (الإكليل)؟\n<svg viewBox=\"0 0 360 230\"><circle cx=\"180\" cy=\"115\" r=\"95\" fill=\"#0f6e56\" fill-opacity=\"0.2\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"63\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"3\" fill=\"#0f172a\"/></svg>",
+      "prompt": "حوض مستدير نصف قطره 3 م يحيط به رصيف مستدير نصف قطره الخارجي 7 م. كيف نحسب مساحة الرصيف (الإكليل)؟\n<svg viewBox=\"0 0 360 230\"><circle cx=\"180\" cy=\"115\" r=\"95\" fill=\"#0f6e56\" fill-opacity=\"0.2\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"41\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"3\" fill=\"#0f172a\"/></svg>",
       "options": [
         {
           "id": "a",
@@ -147,11 +147,13 @@
         },
         {
           "id": "b",
-          "text": "مساحة القرص الكبير زائد مساحة القرص الصغير"
+          "text": "مساحة القرص الكبير زائد مساحة القرص الصغير",
+          "misconceptionTag": "math.mes.aire-composee-somme-au-lieu-de-difference"
         },
         {
           "id": "c",
-          "text": "π × 2 × 2 لأنّ عرض الرصيف 2 م"
+          "text": "π × 4 × 4 لأنّ عرض الرصيف 4 م",
+          "misconceptionTag": "math.geo.couronne-largeur-prise-pour-rayon"
         },
         {
           "id": "d",
@@ -159,8 +161,9 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "الرصيف (الإكليل) هو القرص الكبير بعد نزع القرص الصغير، فمساحته = مساحة القرص الكبير − مساحة القرص الصغير. وعرض الرصيف 2 م ليس نصف قطر قرص، والمحيطات أطوال لا مساحات.",
-      "difficulty": 2
+      "explanation": "الرصيف (الإكليل) هو القرص الكبير بعد نزع القرص الصغير، فمساحته = مساحة القرص الكبير − مساحة القرص الصغير. وعرض الرصيف 4 م ليس نصف قطر قرص، والمحيطات أطوال لا مساحات.",
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle", "math.mes.aires"]
     },
     {
       "prompt": "ما طول نصف دائرة قطرها 22 سم؟ (π ≈ 3,14)",
@@ -171,11 +174,13 @@
         },
         {
           "id": "b",
-          "text": "56,54 سم"
+          "text": "56,54 سم",
+          "misconceptionTag": "math.mes.perimetre-segment-interieur-compte"
         },
         {
           "id": "c",
-          "text": "69,08 سم"
+          "text": "69,08 سم",
+          "misconceptionTag": "math.geo.arc-circonference-entiere-prise-pour-l-arc"
         },
         {
           "id": "d",
@@ -185,7 +190,8 @@
       ],
       "correctOption": "a",
       "explanation": "محيط الدائرة الكاملة π × ق = 3,14 × 22 = 69,08 سم، ونصف الدائرة نصفه: 69,08 ÷ 2 = 34,54 سم. من توقّف عند 69,08 أخذ الدائرة كلّها، ومن أضاف القطر 22 وجد 56,54 وهو محيط نصف القرص لا نصف الدائرة.",
-      "difficulty": 2
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     }
   ]
 }
