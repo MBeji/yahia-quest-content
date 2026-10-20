@@ -126,3 +126,36 @@ porte encore cet id.
 
 **À la passe des missions** : les occurrences listées plus haut dans `06-…` et les fichiers suivants (ch. 06, 14, 15,
 19, 20, 21, 22).
+
+## Pose — missions `06-…` et suivantes (2026-10-20)
+
+Les 38 missions des ch. 06, 07, 13, 14, 15, 19, 20, 21, 22 et 25 ont été relues une à une dans leur état actuel.
+Une grande partie était déjà étiquetée par les auteurs (22/06 Q4 et Q6, 22/08 Q2, Q4 et Q9, 22/09 Q2, 22/11 Q4,
+15/09 Q1, Q4 et Q6, 14/10 Q5, 21/06 Q2, 21/07 Q8, Q9 et Q10, 21/08 Q1, 13/10 Q7…) : ces poses n'ont pas été doublées.
+
+**Posé (22 options)** :
+
+- `aire-cote-oblique-pris-pour-hauteur` (5) : 20/07 Q1 a, b, d ; 20/08 Q1 a, c.
+- `unites-non-converties` (6) : 19/06 Q4 c ; 20/07 Q5 b, c ; 20/09 Q1 a ; 20/09 Q5 b ; 25/10 Q1 a.
+- `arc-circonference-entiere-prise-pour-l-arc` (3) : 21/07 Q1 b ; 21/07 Q4 b ; 25/10 Q3 d.
+- `temps-d-arret-mal-compte` (3) : 22/06 Q1 b, c, d.
+- `attente-du-prochain-depart-ignoree` (1) : 22/08 Q7 d.
+- `rapport-denominateur-mal-choisi` (1) : 14/06 Q1 a.
+- `sommet-de-l-angle-mal-identifie` (1) : 19/07 Q1 a.
+- `rapporteur-mauvaise-graduation` (1) : 19/07 Q1 c.
+- `place-disponible-une-seule-dimension` (1) : 20/06 Q7 a.
+
+**Devenu sans objet** (questions remplacées depuis la table) :
+
+- `contrainte-d-intervalle-ignoree` : les options 4811 et 98 n'existent plus. L'id n'est porté par aucune option ;
+  il reste au registre pour un usage ultérieur.
+- 06/09 Q7 `108` et 13/10 Q7 `9614` : `reponse-a-l-autre-inconnue` y est déjà posé.
+- 20/06 Q8 : la question a changé.
+
+**Laissé muet** :
+
+- Options fausses de deux ou trois longueurs à la fois : 19/07 Q5 c, 20/07 Q9 c, 25/09 Q4 b et d, 21/07 Q10 d,
+  21/08 Q1 d — conformément au retrait de l'auditeur.
+- 21/07 Q4 c `90` (arc pris pour le cercle ET diamètre non divisé).
+- 22/10 Q1 b `300 km` : l'erreur inverse du libellé (aller-retour pris pour un aller).
+- Les erreurs déjà étiquetées autrement par les auteurs (25/06 Q2 b, 25/08 Q4 d sous `operation-inverse-appliquee`).
