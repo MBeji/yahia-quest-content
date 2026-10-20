@@ -3,9 +3,15 @@
 Auditeur indépendant (opus), 2026-10-20. Rapport écrit au fil de l'eau.
 Périmètre : `09-oeil-vision/06`, `07` ; `12-dhaw/06`, `07` ; `01-air/06`–`13` ; `chapter.json` (sources) des trois chapitres.
 
-## Journal (en cours)
+## Résumé et verdict — **À CORRIGER**
 
-- Lecture des grilles faite (gisement-auditeur, consigne auteurs, PLAN-gisement, assign-M1).
+- **114 questions** re-résolues à l'aveugle (12 missions), rapport de l'auteur lu après. Fidélité contrôlée sur les PDF 2008, 2009, 2012, 2013, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2025 ; manuel élève p.25–28 relu à l'image.
+- **5 critiques** : C-1 numérotation ①/② de 2013 inversée (m001) ; C-2 question renvoyant à une figure absente (m002 Q9) ; C-3 deux tracés défendables (m003 Q9) ; C-4 « نسبة النتروجين تساوي » faux après la montée de l'eau — clé fausse au sens strict (m005 Q3, Q7) ; C-5 ordre à deux solutions (m006 Q4).
+- **Majeurs** : surtout **« ne pas redemander »** — 36 questions à supprimer (doublons des exercices 01–05, du quiz, des `verifie`, ou d'une autre mission du lot ; redondance interne : m008 pose quatre fois « l'oxygène suffit-il ? », m007 cinq fois le cinquième) ; fuites (m001 Q7, m002 Q3/Q8, m005 Q1/Q4) ; indices de forme (m003 Q1–Q3, m004 Q2, m007 Q10) ; non-autonomie (m002 Q2/Q5/Q6, m005 Q5) ; une légende coupée (m007 Q1) ; désignation par la place (m001 Q9).
+- **Point 1** : le manuel enseigne qualitativement le sens de la déviation (p.26, photo ; p.27, tracés exigés = sujet 2017) → phrase, `verifie` et puce de résumé fournis pour le `12`, puis retrait des rappels d'énoncé. **Point 2** : toutes les figures rendues (Chromium, 360 px, RTL) ; chiffres des libellés corrects. **Point 3** : recouvrements « assumés » non recevables.
+- Gates (depuis `/home/user/eng-deliver`) : `content:check` ✓, `content:qa` ✓ (0 clé suspecte), `content:figures:check` ✓, `content:tranche --fresh --strict-longest --strict-lessons` ✓ (0/124 clé la plus longue ; 5 paires proches, toutes traitées ci-dessous), `content:gisement:controle` ✓ (0 plage ≥ 8 mots). Étiquettes : toutes au registre, aucune sur multi/ordering/matching ; une mal placée (m005 Q7). En-têtes d3 boss 120/30, ≤ 12 q, `sources[]` présents dans les trois `chapter.json`.
+- Après correctifs : 78 questions (m001 7, m002 8, m003 8, m004 5, m005 6, m006 6, m007 7, m008 5, m009 7, m010 5, m011 8, m012 6). m004 et m010 deviennent courtes : fusion possible (pilote).
+- **Préalable** : m003 et m004 ne partent qu'après l'ajout au cours du `12` (point 1).
 
 ## Chapitre `09-oeil-vision`
 
@@ -35,7 +41,7 @@ Rendu Chromium 360 px `dir="rtl"` fait pour toutes les figures des deux missions
 - c (muette) : `(1) بعدسة محدّبة لأنّها تُبعد الأشعّة، و(2) بعدسة مقعّرة لأنّها تقرّب الأشعّة`
 - d (muette) : `(1) و(2) بعدسة محدّبة لأنّها تكبّر صورة الجسم فتصير أوضح`
 - explication : `في الحالة (1) الصورة خلف الشبكيّة، فنحتاج إلى عدسة تقرّب الأشعّة لتتقدّم الصورة إلى الشبكيّة: عدسة محدّبة. وفي الحالة (2) الصورة أمام الشبكيّة، فنحتاج إلى عدسة تُبعد الأشعّة لتتراجع الصورة: عدسة مقعّرة. تبادل العدستين خطأ شائع، والعدسة لا تُصلح العيب بتكبير الصورة بل بتغيير مكان التقاء الأشعّة.`
-- `difficulty: 2`. Longueurs : a 77, b 77, c 77, d 55 caractères (clé non strictement la plus longue). La mission passe à 7 questions.
+- `difficulty: 2`. Longueurs : a 77, b 77, c 77, d 56 caractères (clé non strictement la plus longue). La mission passe à 7 questions.
 
 **M-2 (majeur, clé à vue) — Q9.** Seule l'option a montre le point sur la rétine : la clé se lit sans savoir quelle lentille corrige. Correctif (plan 2×2 lentille × lieu) : remplacer l'option c (sans lentille) par une lentille **concave** avec point **sur** la rétine (deux erreurs : muette) :
 
@@ -275,7 +281,7 @@ Fidélité : PDF 2019, 2020, 2021 relus (356,6 / 354 / 2 ل ; 615,3 / 613,5 / 1 
 - prompt : `مناظرة 2020 — «أعمّر فراغات الجدول التّالي حسب ما تتطلّبه كلّ وضعيّة من الوضعيّتين التّاليتين.» في الوضعيّة 1 ننكّس أنبوبًا باردًا على لهب شمعة فتظهر قطرات ماء على جداره الداخليّ. ما الناتج الّذي تثبته هذه الملاحظة؟`
 - a (clé) `بخار الماء من نواتج احتراق الشمعة` ; b `ثاني أكسيد الكربون من نواتج احتراق الشمعة` (`eveil.gaz.test-mal-associe`) ; c `هباب الفحم من نواتج احتراق الشمعة` (muette) ; d `الأكسجين من نواتج احتراق الشمعة` (`eveil.air.reactifs-et-produits-inverses`).
 - explication : `الاحتراق ينتج بخار الماء، فإذا لامس جدار الأنبوب البارد تكثّف قطرات ماء: فالقطرات تثبت أنّ بخار الماء من نواتج الاحتراق. ثاني أكسيد الكربون يُكشف بتعكّر ماء الجير، وهباب الفحم بسواد صحن أبيض، والأكسجين يُستهلك في الاحتراق ولا ينتج عنه.`
-- longueurs : a 33, b 41, c 34, d 33 (clé non la plus longue).
+- longueurs : a 33, b 41, c 33, d 31 (clé non strictement la plus longue).
 - Q6, explication (pour ne plus livrer Q9) : remplacer `اسوداد الصحن يدلّ على هباب الفحم، وقطرات الماء على جدار بارد تدلّ على بخار الماء، والفرقعة ليست كشفًا لثاني أكسيد الكربون.` par `اسوداد الصحن يدلّ على هباب الفحم، والفرقعة وقطرات الماء لا تكشفان ثاني أكسيد الكربون.`
 **m-10 (mineur) — Q10** : fusionner c et d → c `نبعد الصحن عن اللهب بعد لحظات فنلاحظ أنّه اسودّ`, supprimer d, `order` `["a","b","c"]`.
 
