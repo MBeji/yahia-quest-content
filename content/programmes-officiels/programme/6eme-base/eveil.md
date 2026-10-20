@@ -94,7 +94,7 @@ Notation observée p.26 (3 cases `+`/`-` par وضعيّة) : `- - -` انعدا�
 
 Deux matrices محاور × مستوى تعليمي (1→6). Ligne **6** — ce qui est au programme de la 6ème :
 
-- **علم الأحياء** — محاور cochés en 6ème : **جسم الإنسان · التغذية · التنفّس · الوسط البيئي وحماية المحيط · التكاثر · الوقاية من الأمراض**. Non cochés en 6ème : **النموّ**, **التنقّل** (présents aux niveaux 1–4).
+- **علم الأحياء** — محاور cochés en 6ème : **جسم الإنسان · التغذية · التنفّس · الوسط البيئي وحماية المحيط · التكاثر · الوقاية من الأمراض**. Non cochés en 6ème : **النموّ** (niveaux 1 et 4 seulement) et **التنقّل** (niveaux 1–4). _(R-7 : la seconde matrice, celle des محاور physiques, porte elle aussi l'en-tête « علم الأحياء » [sic].)_
 - **العلوم الفيزيائيّة** — محاور cochés en 6ème : **المادّة · الطاقة**. Non cochés en 6ème : **الفضاء** (1→3), **الزمن** (1→4).
 
 ### 1.6 التمشيات العلميّة et outils transverses (guide p.20–23)
@@ -420,14 +420,14 @@ manuel (و1 → و5). Chaque `chapter.json` porte `"manuel": {"code": "103604", 
 
 **3. كيف تتمّ عمليّة الرّؤية ؟ (p.35)** — **expérience** : devant un œil de vache frais dont on a retiré à l'arrière un fragment de الصّلبة et de المشيميّة, on place une **bougie allumée** ; on observe sur la **الشّبكيّة** l'image de la bougie **renversée** — la même image s'obtient en remplaçant l'œil par une **عدسة مقرّبة**. **Conclusion du guide** : _« العين تعمل عمل العدسة المقرّبة »_ ; les rayons traversent les milieux transparents, tracent sur la rétine une image renversée, d'où partent des **إشارات (سيّالة عصبيّة)** que le **العصب البصري** conduit au **المخّ** pour analyse et interprétation.
 
-**4. لماذا يُلاحظ اختلال الرّؤية داخل الماء ؟ (p.35)** — les **indices de réfraction** de l'eau et de la cornée sont voisins : la cornée **perd** l'essentiel de son pouvoir réfringent et la lentille de l'œil reste seule à travailler. D'où le **masque** du plongeur, qui rétablit une couche d'air devant l'œil.
+**4. لماذا يُلاحظ اختلال الرّؤية داخل الماء ؟ (p.35)** — le guide impute le trouble à l'**égalité** des indices de réfraction de l'eau et de la cornée (_« تساوي قرينتي انكسار الماء والقرنيّة »_) : la cornée **perd** l'essentiel de son pouvoir réfringent et la lentille de l'œil reste seule à travailler. D'où le **masque** du plongeur, qui rétablit une couche d'air devant l'œil.
 
 **5. عيوب الرّؤية ووسائل الإصلاح (p.35)** — trois défauts, chacun avec sa cause et sa correction :
 
 | العيب                          | السّبب (p.35)                                                                                                                                                   | الإصلاح                            |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | **الحسر (قصر النّظر)**         | زيادة طول المحور الأمامي الخلفي لكرة العين، أو زيادة تحدّب الوجه الأمامي للقرنيّة، أو زيادة انكسار الأوساط الشفّافة → صور الأجسام البعيدة **أمام** الشّبكيّة    | **عدسات مبعّدة**                   |
-| **الطّمس (طول النّظر)**        | قلّة طول المحور الأمامي الخلفي، أو قلّة تحدّب الوجه الأمامي للجسم البلّوري وقلّة مرونته، أو ضعف انكسار الأوساط الشفّافة → صور الأجسام البعيدة **خلف** الشّبكيّة | **عدسات مقرّبة**                   |
+| **الطّمس (طول النّظر)**        | « **زيادة** طول المحور الأمامي الخلفي » [sic — coquille du guide, la cause est un axe **trop court** ; R-7 : la fiche corrigeait en silence « قلّة »]، أو قلّة تحدّب الوجه الأمامي للجسم البلّوري وقلّة مرونته، أو ضعف انكسار الأوساط الشفّافة → صور الأجسام البعيدة **خلف** الشّبكيّة | **عدسات مقرّبة**                   |
 | **القدع (قصر النّظر الشّيخي)** | تناقص مرونة الجسم البلّوري وتناقص قدرة عضلات الجسم الهدبي على التقلّص والاسترخاء مع تقدّم العمر ؛ المطابقة تضعف تدريجيّا et s'arrête vers **70 ans**            | — (le guide ne le corrige pas ici) |
 
 > **Portée pour la génération** : ce الملفّ العلمي est le **niveau de l'enseignant**, pas celui de l'élève de 11–12 ans. Il fixe la **terminologie exacte** et les **valeurs numériques citables** (24 مم، 1 مم، 70 سنة) et donne l'**expérience canonique** (œil de vache + bougie) — mais le scope élève reste borné par §2.0 et §4.
@@ -443,23 +443,23 @@ manuel (و1 → و5). Chaque `chapter.json` porte `"manuel": {"code": "103604", 
 
 **Symbole conventionnel** : un segment perpendiculaire à l'axe optique, avec deux pointes de flèche à ses extrémités — **vers l'extérieur** pour une مقرّبة, **vers l'intérieur** pour une مبعّدة.
 
-**وقاية العين (p.36)** — 8 règles, transcrites dans l'ordre : إحكام التّعامل مع الأجهزة الّتي ينبعث منها الضّوء (الحاسوب، التّلفاز) · اتّخاذ الاحتياطات عند ممارسة بعض الحرف (اللّحام، التعامل مع المواد الكيميائيّة) · تجنّب الألعاب العنيفة والحوادث · العناية بنظافة اليدين والعينين · إجراء فحوص دوريّة للعين · تجنّب استعمال مناشف ومناديل الآخرين · عدم ملامسة العين أو حكّها باليد · عدم الاختلاط بالمصاب بالرّمد أو تجنّب العدوى.
+**وقاية العين (p.36)** — 8 règles, transcrites dans l'ordre : إحكام التّعامل مع الأجهزة الّتي ينبعث منها الضّوء (الحاسوب، التّلفاز) · اتّخاذ الاحتياطات عند ممارسة بعض الحرف (اللّحام، التعامل مع المواد الكيميائيّة) · تجنّب الألعاب العنيفة والحوادث · العناية بنظافة اليدين والعينين · إجراء فحوص دوريّة للعين · تجنّب استعمال مناشف ومناديل الآخرين · عدم ملامسة العين أو دعكها باليد · عدم الاختلاط بالمصاب بالرّمد تجنّبا للعدوى.
 
 **الضّوء : مصادره et الأجسام (p.37)** — le guide borne d'emblée le champ : l'optique scolaire ne traite que du **visible**, en le situant entre l'**أشعّة تحت الحمراء** et les **أشعّة ما فوق البنفسجيّة**. Sources **طبيعيّة** (الشمس، النّجوم) vs **اصطناعيّة** (المصباح الكهربائي، الشمعة) ; **مصدر نقطي** (une étoile, une lampe vue de loin) vs **مصدر ممتدّ** (la même lampe vue de près). Trois classes d'objets :
 
 | الجسم           | définition (p.37)            | exemples                          |
 | --------------- | ---------------------------- | --------------------------------- |
 | **الشفّاف**     | يسمح بمرور الضّوء من خلاله   | الهواء · الماء · البلّور          |
-| **نصف الشفّاف** | يسمح بمرور **جزء** من الضّوء | الورق المبلّل · البلّور المطروق   |
-| **العاتم**      | يمنع مرور الضّوء             | المعادن · الخشب · الأجسام الصّلبة |
+| **نصف الشفّاف** (imprimé « الأجسام الشّافّة » [sic]) | يسمح بمرور **جزء** من الضّوء | الورق المبلّل بالزّيت · البلّور المطروق   |
+| **العاتم**      | يمنع مرور الضّوء             | المعادن · الخشب · الأجسام السّوداء |
 
 **الظواهر الناتجة عن الضّوء (p.37–38)** — l'**expérience de référence** est unique et sert trois notions à la fois : un faisceau lumineux frappe obliquement la surface d'un bassin d'eau calme, rendu visible par la poussière ou une eau colorée (شكل 1أ). On y lit :
 
 - **الانعكاس** — une partie du faisceau **repart dans l'air** ; le changement de direction à la surface s'appelle **ارتداد الضّوء / الانعكاس**.
 - **الانكسار** — une autre partie **pénètre dans l'eau** en changeant de direction à la traversée de la surface de séparation : **انكسار الضّوء**.
-- **الانتثار** — une **tache lumineuse** apparaît à la surface, visible **de toutes les directions** : le point d'impact **renvoie** la lumière dans toutes les directions (شكل 1ب). C'est ce qui rend visibles les objets **non polis** (الكتاب، الجدار، الطريق، الدّخان) éclairés par une source. Le guide en fait la **différence de fond avec l'انعكاس** — la conception erronée n° 2 de §1.7 confond exactement ces trois-là.
+- **الانتثار** — une **tache lumineuse** apparaît à la surface, visible **de toutes les directions** : le point d'impact **renvoie** la lumière dans toutes les directions (شكل 1ب). C'est ce qui rend visibles les objets **non polis** (الكتاب، الجدار، الطريق، الدّخان) éclairés par une source. **Définition du guide (p.37)** : _« انتثار الضّوء : هو انعكاس له، بكيفيّة غير منتظمة (أي في جميع الاتّجاهات) عندما يرد على جسم ما، ويحدث ذلك بوضوح إذا كان الجسم غير مصقول »_ — l'انتثار est donc une **réflexion irrégulière** (surface non polie), l'انعكاس au sens du §7.2 une réflexion **dans une direction déterminée** sur une surface polie (p.38). ⚠️ **Corrigé R-7** : la fiche disait que le guide faisait de l'انتثار « la différence de fond avec l'انعكاس » — c'est l'inverse, il le définit **comme** un انعكاس, irrégulier. La conception erronée n° 2 de §1.7 confond les trois phénomènes.
 
-En amont, la **propagation rectiligne** est posée : _« يمر الضّوء في الأوساط الشفّافة المتجانسة حسب خطوط مستقيمة »_ — et le changement de direction n'a lieu qu'au **passage** d'un milieu transparent à un autre.
+En amont, la **propagation rectiligne** est posée : _« نعلم أنّ الضّوء ينتشر في الأوساط الشفّافة المتجانسة حسب خطوط مستقيمة »_ — et le changement de direction n'a lieu qu'au **passage** d'un milieu transparent à un autre.
 
 **انعكاس الضّوء والمرآة المستوية (p.38–39)** — **تعريف المرآة** : _« كلّ سطح صقيل عاكس للضّوء »_ — سطح الزّجاج المفضّض · سطح الماء · سطح الزّئبق · سطوح المعادن المصقولة (الألمنيوم، الكروم، النيكل، الفضّة) ; plane, on la note par un segment [ص ص1] hachuré du côté opaque.
 
@@ -483,7 +483,7 @@ En amont, la **propagation rectiligne** est posée : _« يمر الضّوء ف�
 **قانونا الانكسار** :
 
 1. **القانون الأوّل (p.40)** — _« يقع الشّعاع الوارد والشّعاع المنكسر من جهتي النّاظم وفي نفس المستوي »_. Vérifié sur un **demi-cylindre de verre** posé au centre d'un disque métallique gradué (شكل 3) : quand د varie, le شعاع وارد balaie une moitié du plan et le شعاع منكسر l'autre — les deux restent **de part et d'autre** de la normale.
-2. **القانون الثّاني (p.41)** — _« نسبة جيب زاوية الورود إلى جيب زاوية الانكسار هي نسبة ثابتة »_, soit **جا.د / جا.ر = ن(1/2)**. Le guide nomme cette loi **قانون ابن الهيثم لانكسار الضّوء** et précise que la constante **change** si l'on remplace un milieu (verre → eau) : elle dépend des **propriétés du milieu transparent** (densité, masse volumique) et s'appelle **قرينة انكسار** du second milieu par rapport au premier.
+2. **القانون الثّاني (p.41)** — _« نسبة جيب زاوية الورود إلى جيب زاوية الانكسار هي نسبة ثابتة »_, soit **جا.د / جا.ر = ن(1/2)**. Le guide nomme cette loi **قانون ابن الهيثم لانكسار الضّوء** et précise que la constante **change** si l'on remplace un milieu (verre → eau) : elle dépend des **propriétés du milieu transparent** (_« مثل درجة غليانها أو كثافتها »_) et s'appelle **قرينة انكسار** du second milieu par rapport au premier.
 
 **Table expérimentale (شكل 4, surface هواء → زجاج, p.41)** — les valeurs telles qu'imprimées :
 
@@ -504,9 +504,9 @@ Le schéma distingue **ظلّ** (كسوف كلّي) et **شبه ظلّ** (كسو
 
 ### 7.4 مخطّط الوحدة 1 et أهداف مميّزة, version **guide** (p.42)
 
-Le guide donne sa **propre** carte conceptuelle de la و1, distincte de celle du manuel élève (p.6) transcrite en §2. Concept central **« العين و الضّوء »** → **تركيبة العين** · **عيوب الرّؤية ووسائل الإصلاح** · **العدسات** · **انعكاس الضّوء** · **انكسار الضّوء** · **العين و الرّؤية** · **انتثار الضّوء**.
+Le guide donne sa carte conceptuelle de la و1 — **identique** à celle du manuel élève (p.6) transcrite en §2 (R-7). Concept central **« العين و الضّوء »** → **تركيبة العين** · **عيوب الرّؤية ووسائل الإصلاح** · **العدسات** · **انعكاس الضّوء** · **انكسار الضّوء** · **العين و الرّؤية** · **انتثار الضّوء**.
 
-> ⚠️ **Divergence guide ↔ manuel, à connaître avant de générer.** Là où la carte du **manuel** (p.6) porte **انتشار الضّوء** (propagation rectiligne), celle du **guide** (p.42) porte **انتثار الضّوء** (diffusion). Ce n'est pas une coquille de lecture : le الملفّ العلمي du guide consacre bien une section à l'**انتثار** (§7.2, p.37–38) et en fait la clé de « pourquoi voit-on les objets non polis ». Les deux notions sont au programme — la propagation rectiligne est posée p.37 en préalable — mais **le mot de la carte diffère selon le volume**. Ne pas trancher à la place des documents : citer celui qu'on suit.
+> ✅ **Corrigé R-7 (2026-10-20, relu à l'image)** — ~~« Divergence guide ↔ manuel : la carte du manuel (p.6) porte انتشار الضّوء »~~ : **faux**. Le manuel imprime **انتثار الضّوء** sur sa carte (p.6) **et** dans sa خارطة (p.156, درس 02), exactement comme le guide (p.29 et p.42). Les deux cartes de la و1 sont identiques (7 branches). Le mot du programme est **انتثار** (diffusion, §7.2, p.37–38) ; la propagation rectiligne est posée p.37 en préalable, sans branche propre.
 
 **المشروع (p.42)** : _« إعداد مطويّة حول وقاية العين »_ — le النّموذج المقترح للمتعلّم est celui décrit p.14–16 (§1), dans le cadre de la المقاربة بالكفايات.
 
@@ -518,7 +518,7 @@ Le guide donne sa **propre** carte conceptuelle de la و1, distincte de celle du
 4. إدراك ظاهرة انعكاس الضّوء عند اصطدامه بجسم مصقول
 5. تعرّف اختلال الرّؤية و وسائل الإصلاح
 6. إدراك ظاهرة انكسار الضّوء عند مروره من وسط شفّاف إلى وسط شفّاف آخر يختلف عنه من حيث الشّفافيّة
-7. تعرّف السّلوكات الواقية للعين
+7. تعرّف السّلوكات الوقائيّة للعين
 
 > **C'est le niveau d'exigence élève de la و1** — et il est plus sobre que le الملفّ العلمي : on demande de **تعرّف** et d'**إدراك** des phénomènes, jamais de calculer une قرينة انكسار ni d'appliquer la loi des sinus. Le tableau د/ر et la loi d'ابن الهيثم relèvent du savoir de l'enseignant (§7.3), pas de l'évaluation de l'élève.
 
@@ -526,21 +526,21 @@ Le guide donne sa **propre** carte conceptuelle de la و1, distincte de celle du
 
 > **Pourquoi cette page compte plus que son contenu.** C'est la **première جذاذة** du volume : elle fixe le **gabarit** que suivent toutes les autres (p.45–180). Le connaître permet de lire les 136 pages restantes en sachant **où trouver quoi**, au lieu de tout transcrire.
 
-**Cadre de la جذاذة** : _« تنجز في ثلاث حصص يضبط المعلّم أهدافها »_ — trois séances, dont l'enseignant fixe lui-même les objectifs. La جذاذة rappelle en tête les **trois textes de compétence** (نهائيّة + les deux مكوّنان, identiques à §1.1), puis :
+**Cadre de la جذاذة** : _« تنجز في ثلاث حصص يضبط المعلّم أهدافها »_ — trois séances, dont l'enseignant fixe lui-même les objectifs. La جذاذة rappelle en tête les **trois textes de compétence** (نهائيّة + les deux مكوّنان — mêmes libellés qu'au §1.1, mais **numérotés à l'inverse** : p.43 et p.47, « نصّ المكوّن الأوّل » = الظّواهر الفيزيائيّة, « الثّاني » = الوظائف الحيويّة ; R-7), puis :
 
 | rubrique                    | contenu de la جذاذة 1 (p.43)                                                                                                                   |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **الوحدة**                  | العين و الضّوء                                                                                                                                 |
 | **المفاهيم**                | العصب البصري · المشيميّة · القزحيّة · الشّبكيّة · الخلط المائي · الجسم البلّوري · الخلط الزّجاجي · الانتثار · الانكسار                         |
-| **المحتوى**                 | الظّواهر النّاتجة عن اصطدام الضّوء بحاجز أو مروره من وسط شفّاف إلى آخر · اختلال الرّؤية · العدسات · السّلوكات الواقيّة للعين · العين و الرّؤية |
+| **المحتوى**                 | العين والرّؤية · الظّواهر النّاتجة عن اصطدام الضوء بحواجز أو مروره من وسط شفّاف إلى آخر · اختلال الرّؤية · العدسات · السّلوكات الوقائيّة للعين |
 | **الهدف المميّز للوحدة**    | يكون المتعلّم قادرا على تفسير عمليّة الرّؤية بربط علاقة بين الضّوء والعين جهازا حسّيّا                                                         |
-| **المستلزمات البيداغوجيّة** | رسوم للعين · مصادر ضوئيّة · آلة تصوير · عدسات مقرّبة/مبعّدة · أجسام عاتمة/شافّة/شفّافة · حوض ماء ملوّن                                         |
+| **المستلزمات البيداغوجيّة** | عيون طازجة لحيوانات · أدوات تشرح · رسوم للعين · مصادر ضوئيّة · آلة تصوير · عدسات مقرّبة/مبعّدة · أجسام عاتمة/شافّة/شفّافة · حويض به ماء ملوّن |
 
 **الحواجز et leurs مؤشّرات التّجاوز** — appariés un à un, ce qui en fait le matériau le plus directement exploitable du volume :
 
 | الحاجز (ce qui bloque)                                         | مؤشّر التّجاوز (ce qui prouve qu'il est franchi)                             |
 | -------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| عدم القدرة على تبيّن الخصائص الدّاخليّة للعين وتأثّرها بالضّوء | ذكر الخصائص الدّاخليّة للعين وإبراز ارتباطها وتكيّفها مع المثيرات الضّوئيّة  |
+| عدم القدرة على تبيّن الخصائص الدّاخليّة للعين وتأثّرها بالضّوء | ذكر الخصائص المميّزة للأجزاء الدّاخليّة للعين وإبراز تكيّفها مع المثيرات الضّوئيّة  |
 | عدم القدرة على تفسير أسباب اختلال الرّؤية                      | ذكر أسباب طول النّظر / قصر النّظر وتخيّر العدسات المناسبة لإصلاح خلل الرّؤية |
 | عدم القدرة على تمييز ظواهر الانتثار من الانعكاس والانكسار      | التدليل على الانتثار / الانعكاس / الانكسار                                   |
 
@@ -590,10 +590,10 @@ Même cadre que la جذاذة 1 (trois séances, mêmes textes de compétence, m
 
 | rubrique          | contenu (p.47)                                                                                                         |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **المفاهيم**      | الجسم المصقول · الانعكاس · طول النّظر · قصر النّظر · العدسة المقرّبة · العدسة المحدّبة                                 |
+| **المفاهيم**      | الجسم المصقول · الانعكاس · طول النّظر · قصر النّظر · العدسة المقعّرة · العدسة المحدّبة                                 |
 | **المحتوى**       | الظّواهر النّاتجة عن اصطدام الضّوء بأجسام مصقولة · اختلال الرّؤية ووسائل الإصلاح                                       |
 | **الهدف المميّز** | identique à la و1 : تفسير عمليّة الرّؤية بربط علاقة بين الضّوء والعين جهازا حسّيّا                                     |
-| **المستلزمات**    | أجسام مصقولة · صور أشخاص مصابين بطول النّظر / بقصر النّظر · عدسات مختلفة · صورة طبيب عيون · فحص · مرآة · مكبّرة يدويّة |
+| **المستلزمات**    | أجسام مصقولة · صور أشخاص مصابين بطول النّظر / بقصر النّظر · عدسات مختلفة · صورة طبيب يفحص عينيْ مريض · مكبّرة يدويّة |
 
 **الحواجز → مؤشّرات التّجاوز** :
 
@@ -604,7 +604,7 @@ Même cadre que la جذاذة 1 (trois séances, mêmes textes de compétence, m
 | عدم تمثّل مفهوم الانعكاس والتدليل عليه                               | تجسيم الانعكاس عمليّا                                  |
 | عدم تمييز طول النّظر من قصر النّظر                                   | ربط علاقات بين عيوب الرّؤية والعدسات                   |
 
-**الوضعيّة المشكل** — une scène de conduite de nuit : un conducteur est **ébloui** par les phares d'un véhicule venant en face, et sa vision est perturbée. _« ما سبب ذلك ؟ ماذا يرى ؟ »_ Première conception recueillie : _« السّائقون غير متعوّدين على السّياقة ليلا »_.
+**التمشّي** — rubrique 1 **تعهّد المكتسبات** : _« انتثار الضّوء - انكسار الضّوء - تركيبة العين ... »_. Rubrique 2, **الوضعيّة المشكل** (p.47, verbatim) : _« يستعمل سائق سيّارة نظارة لأنّه يشكو خللا في الرّؤية، ذات ليلة كان يقود سيّارته ومن خلفه سيّارة استعمل سائقها أضواء السّير القويّة فلم يعد قادرا على الرّؤية بوضوح. ما سبب ذلك يا ترى ؟ »_ — le conducteur, **porteur de lunettes**, est gêné par les phares de la voiture **qui le suit** (renvoyés par son rétroviseur). ⚠️ **Corrigé R-7** : la fiche parlait d'un véhicule « venant en face » et omettait les lunettes. Première conception recueillie : _« السّائق غير متعوّد على السّياقة ليلا »_.
 
 > **Ce que ces deux جذاذات montrent du style attendu** : la situation de départ est toujours **une scène, pas une notion** — le clignement des paupières pour la جذاذة 1, l'éblouissement nocturne pour la 2. C'est le registre à reprendre pour les énoncés des exercices du chapitre `09-oeil-vision`, plutôt que des questions de définition.
 
@@ -692,7 +692,7 @@ Même cadre que la جذاذة 1 (trois séances, mêmes textes de compétence, m
 - ينعكس الضّوء عند اصطدامه بجسم مصقول.
 - العين جهاز حسّي ينبغي المحافظة عليه باتّخاذ السّلوكات الوقائيّة اللاّزمة.
 
-> ⚠️ **Deux réserves de lecture, signalées sans être corrigées.** (a) La numérotation des أنشطة saute : « النّشاط الثّالث » est suivi de deux blocs tous deux étiquetés « النّشاط الخامس » — coquille de mise en page du guide, sans incidence sur le contenu. (b) Le corrigé du défaut d'Oussama donne « **طول النّظر/قصر النّظر** » puis « **المحدّبة** » : la barre oblique laisse le choix ouvert à l'enseignant selon la scène retenue, mais la lentille indiquée (**convexe**) ne convient qu'à l'**hypermétropie**. Ne pas en tirer un couple question/réponse sans lever l'ambiguïté.
+> ⚠️ **Deux réserves de lecture, signalées sans être corrigées.** (a) La numérotation des أنشطة saute : الأوّل · الثّاني · **الثّالث** (p.50) · **الثّالث** de nouveau (p.51, défaut d'Oussama) · puis deux blocs tous deux étiquetés « النّشاط الخامس » (R-7 : séquence imprimée 1-2-3-3-5-5) — coquille de mise en page du guide, sans incidence sur le contenu. (b) Le corrigé du défaut d'Oussama donne « **طول النّظر/قصر النّظر** » puis « **المحدّبة** » : la barre oblique laisse le choix ouvert à l'enseignant selon la scène retenue, mais la lentille indiquée (**convexe**) ne convient qu'à l'**hypermétropie**. Ne pas en tirer un couple question/réponse sans lever l'ambiguïté.
 
 > 🎯 **Ce que cette situation vaut pour la génération.** C'est le **modèle d'une mission scénarisée** au sens de `content-interactif` : un récit unique, une série de questions courtes qui le suivent chronologiquement, chacune rattachée à une notion distincte de l'unité, et un corrigé qui fixe **le niveau de réponse attendu** — « nommer le phénomène », pas « expliquer la réfraction ». Les deux justifications sur les feux de croisement et les feux de route sont, telles quelles, un excellent item de raisonnement pour `09-oeil-vision`.
 
@@ -708,14 +708,14 @@ Même cadre que la جذاذة 1 (trois séances, mêmes textes de compétence, m
 | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | **مع1 : تحليل وضعيّة** (الحدّ الأدنى)   | تطبيق المفهوم الملائم في تحليل الوضعيّة · ضبط العلاقة بين العناصر المكوّنة للوضعيّة · تحديد الإشكاليّة                |
 | **مع2 : تعليل إجابة** (الحدّ الأدنى)    | تخيّر التّمشّي الملائم للحلّ · توظيف المفهوم · تقديم التعليل الملائم                                                  |
-| **مع3 : إصلاح خطإ** (**معيار التميّز**) | البحث عن الخطإ باعتماد الرّابطة بين عناصر الوضعيّة · تقديم الأعمال المنجزة كتابيّا و/أو شفويّا · إعادة تركيب الوضعيّة |
+| **مع3 : إصلاح خطإ** (**معيار التميّز**) | البحث عن الخطإ باعتماد العلاقة الرّابطة بين عناصر الوضعيّة · الاخبار شفويّا و/أو كتابيا عن الأعمال المنجزة · إعادة تركيب الوضعيّة |
 
 **2. الوضعيّة** — un récit en **cinq مقاطع**, chacun suivi d'une ou plusieurs **تعليمات** étiquetées. Ahmed est un élève passionné de recherche scientifique ; il lit livres, revues et encyclopédies, enrichit son lexique et se documente en ligne.
 
 | مقطع  | scène                                                                                                                                                                             | تعليمة   | critère | ce qui est demandé                                                                                                                                                                                                                           |
 | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | :-----: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **1** | Ahmed cherche sur le web et dans les livres pour vérifier des informations                                                                                                        | **(1)**  |  `مع1`  | ذكر العناصر الّتي ساعدت أحمد على البحث عبر الانترنات والتّثبّت من المعلومات في الكتب العلميّة                                                                                                                                                |
-| **2** | un jour, devant l'écran, les mots deviennent flous ; de retour à une encyclopédie, l'écriture aussi ; le médecin diagnostique **قصر النّظر**                                      | **(2أ)** |  `مع2`  | cocher (×) la ou les propositions qui expliquent la myopie : « صار أحمد يقرّب الأجسام من عينيه ليراها بوضوح » · « صار أحمد يبعد الأجسام عن عينيه ليراها بوضوح » · « أصبحت عضلات العين لدى أحمد غير قادرة على تغيير شكل العدسة تغييرا كافيا » |
+| **2** | un jour, devant l'écran, les mots deviennent flous ; de retour à une encyclopédie, l'écriture aussi ; le médecin diagnostique **قصر النّظر**                                      | **(2أ)** |  `مع2`  | _« أتخيّر الأعراض الدّالة على قصر النّظر ممّا يلي بوضع علامة (×) في الخانة المناسبة »_ : « صار أحمد يقرّب الأجسام من عينيه ليراها بوضوح » · « صار أحمد يبعد الأجسام عن عينيه ليراها بوضوح » · « أصبحت عضلات العين لدى أحمد غير قادرة على تغيير شكل العدسة تغييرا كافيا » |
 |       |                                                                                                                                                                                   | **(2ب)** |  `مع3`  | Ahmed dit au médecin _« عليّ إذن أن أستعمل نظّارة طبيّة ذات عدستين محدّبتين »_ → **أصلح الخطأ الوارد في قول أحمد**                                                                                                                           |
 |       |                                                                                                                                                                                   | **(2ج)** |  `مع2`  | أرسم مسار الأشعّة الضّوئيّة من الجسم المضيء إلى مكان ارتسامه في العين، بالنسبة إلى حالة أحمد قبل استعمال النظّارة (schéma d'un œil et d'une bougie fourni)                                                                                   |
 | **3** | devant la vitrine de l'opticien, Ahmed voit des montures de toutes sortes ; il en choisit une ; en sortant il est ébloui par les rayons renvoyés par la carrosserie d'une voiture | **(3أ)** |  `مع1`  | أحدّد الظاهرة الّتي مكّنت أحمد من رؤية أطر النّظارات : ظاهرة انعكاس الضّوء · ظاهرة انتثار الضّوء · ظاهرة انكسار الضّوء                                                                                                                       |
@@ -724,7 +724,7 @@ Même cadre que la جذاذة 1 (trois séances, mêmes textes de compétence, m
 |       |                                                                                                                                                                                   | **(4ب)** |  `مع3`  | Ahmed lui dit _« عليك باستعمال نظّارة طبيّة ذات عدستين مقعّرتين مثليّ »_ → أصلح الخطأ                                                                                                                                                        |
 | **5** | de retour, le père met Ahmed en garde sur le temps passé devant l'écran                                                                                                           | **(5)**  |  `مع1`  | أذكر السّلوكات الواجب اتّخاذها عند الاشتغال على الحاسوب                                                                                                                                                                                      |
 
-> 🎯 **Pourquoi c'est la page la plus utile du volume pour la génération.** Trois choses qu'aucune autre n'a données ensemble : (a) des **QCM officiels** — les تعليمات (2أ) et (3أ) sont, telles quelles, des questions à choix multiples avec leurs distracteurs, écrites par le CNP ; (b) le **type « chasse à l'erreur »** — quatre تعليمات sur onze demandent de corriger une affirmation fausse plausible (`مع3`, le critère de distinction), ce qui valide directement le format « chasse à l'erreur » de `content-interactif` pour ce chapitre ; (c) la **symétrie myopie/hypermétropie** montée en piège : (2ب) attribue à tort des lentilles **convexes** à un myope, (4ب) attribue à tort des lentilles **concaves** à un hypermétrope. Le même contresens, dans les deux sens.
+> 🎯 **Pourquoi c'est la page la plus utile du volume pour la génération.** Trois choses qu'aucune autre n'a données ensemble : (a) des **QCM officiels** — les تعليمات (2أ) et (3أ) sont, telles quelles, des questions à choix multiples avec leurs distracteurs, écrites par le CNP ; (b) le **type « chasse à l'erreur »** — **trois** تعليمات sur **neuf** (2ب, 3ب, 4ب) demandent de corriger une affirmation fausse plausible [R-7 : la fiche disait « quatre sur onze » ; l'épreuve compte 9 تعليمات : 1, 2أ, 2ب, 2ج, 3أ, 3ب, 4أ, 4ب, 5] (`مع3`, le critère de distinction), ce qui valide directement le format « chasse à l'erreur » de `content-interactif` pour ce chapitre ; (c) la **symétrie myopie/hypermétropie** montée en piège : (2ب) attribue à tort des lentilles **convexes** à un myope, (4ب) attribue à tort des lentilles **concaves** à un hypermétrope. Le même contresens, dans les deux sens.
 
 > **Réserve.** Le libellé (2أ) attend qu'on **coche** une ou plusieurs propositions sans dire combien : le guide n'imprime pas de corrigé pour cette épreuve (contrairement à §7.9). Ne pas en déduire une clé unique sans arbitrage.
 
@@ -756,7 +756,7 @@ Deux enseignements pour la génération, à lire dans la colonne des croix : (a)
 | يقرأ المعلّم المقاطع والتعليمات بتأنٍّ مرّة واحدة بعد ضمان المتابعة.                                                                                                                                                               | **5 د**  |                                            |
 | يمنح المعلّم الوقت الكافي المخصّص للانجاز ويحرص على عدم التّدخل ضمانا لتحقّق العمل بصورة فرديّة.<br>– إنجاز الأنشطة واحدا تلو الآخر.<br>– مراعاة التركيز والقراءة المتأنية للتعليمة عند الانجاز.                                   | **45 د** | الحرص على الانجاز الفردي للأنشطة المقترحة. |
 
-Le total fait **60 minutes**, ce qui recoupe exactement le « التوقيت : 60 دقيقة » annoncé p.53 — mais on apprend ici que **15 de ces 60 minutes ne sont pas du travail élève** : mise en situation, distribution, rappel de consigne, lecture à voix haute. Le temps d'exécution réel est de **45 minutes pour 11 تعليمات**.
+Le total fait **60 minutes**, ce qui recoupe exactement le « التوقيت : 60 دقيقة » annoncé p.53 — mais on apprend ici que **15 de ces 60 minutes ne sont pas du travail élève** : mise en situation, distribution, rappel de consigne, lecture à voix haute. Le temps d'exécution réel est de **45 minutes pour 9 تعليمات**.
 
 **3. جدول إسناد الأعداد (p.57)** — le barème, sur 20 :
 
@@ -792,7 +792,7 @@ Le total fait **60 minutes**, ce qui recoupe exactement le « التوقيت : 6
 
 **الوضعيّة العلاجيّة الأولى (p.60)** — vise les obstacles **1** (انتثار/انعكاس/انكسار). Trois tâches :
 
-- **(أ)** un schéma manuscrit du toit vitré d'une piscine (`زجاج السّقف` · `سطح الماء` · `أرضيّة المسبح من معدن مصقول`), traversé par un faisceau (`أشعّة الشّمس`), avec **deux étiquettes vides** « ظاهرة …… » à remplir. Consigne : _« أتأمّل الرّسم وأكتب مكان النّقاط : الانكسار - الانعكاس »_.
+- **(أ)** _« سقف المسبح الذّي يذهب إليه أحمد للسّباحة زجاجيّ يسمح بمرور الضّوء (أشعّة الشّمس) »_ — un schéma manuscrit (`زجاج السّقف` · `سطح ماء المسبح` · `أرضيّة المسبح من معدن مصقول`), traversé par un faisceau, avec **trois étiquettes vides** « ظاهرة …… » à remplir (R-7 : deux à droite, une à gauche — la fiche en comptait deux). Consigne : _« أتأمّل الرّسم وأكتب مكان النّقاط : الانكسار - الانعكاس »_.
 - **(ب)** appariement مفهوم ↔ إفادة :
 
 | المفهوم      | الإفادة                                                      |
@@ -1079,7 +1079,7 @@ Comme pour la و1 (§7.4), le guide clôt son ملفّ علمي par sa **propre 
 | **المفاهيم**                | الهواء - الكائنات الحيّة - الانضغاط - الانتشار - التقلّص - التمدّد - الهواء الحارّ - الهواء البارد - الأكسيجين - النتروجين (الأزوت) - ثاني أكسيد الكربون - بخار الماء - الغازات النّادرة - الرّئتان - الحويصلات الرّئويّة - التّبادل الغازي |
 | **المحتوى**                 | مكوّنات الهواء وخاصيّاته - الاحتراق في الهواء - التبادل الغازي في مستوى الرّئتين                                                                                                                                                            |
 | **الهدف المميّز للوحدة**    | يكون المتعلّم قادرا على تبيّن أهميّة الهواء في حياة الكائنات الحيّة ودوره في الاحتراق                                                                                                                                                       |
-| **المستلزمات البيداغوجيّة** | صور كائنات حيّة - نفّاخات - قوارير - مصدر حراري - منفخ - محاردة - أنابيب اختبار - شمعات - صحون بيضاء - قطع ثلج - ماء - مجسّم للرّئتين - رئتان حقيقيّتان …                                                                                   |
+| **المستلزمات البيداغوجيّة** | صور كائنات حيّة - نفّاخات - قوارير - مصدر حراري - منفاخ درّاجة - أنابيب اختبار - شمعات - صحون بيضاء - قطع ثلج - ماء - مجسّم للرّئتين - رئتان حقيقيّتان …                                                                                   |
 
 **الحواجز (p.79)** — trois, contre cinq pour la و1 :
 
@@ -1089,7 +1089,7 @@ Comme pour la و1 (§7.4), le guide clôt son ملفّ علمي par sa **propre 
 
 **مؤشّرات التّجاوز (p.79)** — appariées aux حواجز : إثبات وجود الهواء وتعرّف مكوّناته وخاصيّاته · تعرّف دور الهواء في الاحتراق · إبراز وظيفة الرّئتين في التّبادل الغازي.
 
-**مؤشّرات القدرة المستهدفة (p.79)** — les gestes de la démarche, indépendants du contenu : ملاحظة الظّاهرة وطرح أسئلة تيسّر حلّ الوضعيّة المشكل · التخطيط للبحث والتجريب · تسجيل نتائج التجارب المنجزة - سرد وثيقة علميّة · إيجاد علاقة بين المفاهيم لبناء بيانات تتعلّق بالظّاهرة العلميّة أو موضوع البحث · صياغة استنتاج · استثمار المفاهيم العلميّة المكتسبة في وضعيّات جديدة.
+**مؤشّرات القدرة المستهدفة (p.79)** — les gestes de la démarche, indépendants du contenu : ملاحظة الظّاهرة وطرح أسئلة تيسّر حلّ الوضعيّة المشكل · التخطيط للبحث والتجريب · تسجيل نتائج التجارب المنجزة · دراسة وثيقة علميّة لجمع بيانات تتعلّق بالظّاهرة العلميّة أو موضوع البحث · إيجاد علاقة بين المفاهيم · صياغة استنتاج · استثمار المفاهيم العلميّة المكتسبة في وضعيّات جديدة.
 
 **التمشّي البيداغوجي (p.80–82)** — cinq activités, chacune close par un استنتاج :
 
@@ -1117,7 +1117,7 @@ Comme pour la و1 (§7.4), le guide clôt son ملفّ علمي par sa **propre 
 | :-----: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **(1)** | كتاب التّلميذ **ص 31** — التمرين المتّصل بموت السّمكة (أ), puis les exercices (ب) et (ج)                                                                                                                   |
 | **(2)** | كتاب التلميذ **ص 36** — التمارين المتّصلة بتعرّف خاصيّات الهواء                                                                                                                                            |
-| **(3)** | كتاب التلميذ — **التمرين 1**                                                                                                                                                                               |
+| **(3)** | كتاب التلميذ — **التمرين 1** (figure : trois bocaux renversés sur l'eau, bougie) ; puis (p.82, haut) **التمرين 2** : « الاجابة عن الأسئلة المتّصلة بسبب فتح نوافذ المنزل ونوافذ قاعة التّعليم، والسّؤال المتعلّق بالحماية المدنيّة » (R-7 : omis) |
 | **(4)** | كتاب التلميذ **ص 45** — التمرين 1 (les quatre bocaux renversés sur des bougies) et le التمرين 2 (nécessité d'un extincteur dans la voiture, l'usine, la maison, et les gestes possibles en cas d'incendie) |
 
 > 🎯 **Ce que ces renvois valent.** Ils **datent** les frontières du chapitre `01-air` côté manuel élève : les applications de la و2 pointent vers les pages **31, 36 et 45** — ce qui recoupe les bornes déduites en §4 à partir de la خارطة الكتاب (p.156–157), indépendamment de celle-ci. C'est la **première confirmation croisée** des bornes de §4 par une autre source que la carte du manuel. Elle vaut pour la و2 seulement.
@@ -1174,13 +1174,15 @@ Comme pour la و1 (§7.4), le guide clôt son ملفّ علمي par sa **propre 
 
 |   النّشاط   | ce qui est demandé                                                                                                          | الإجابات المنتظرة (colonne du guide)                                                                                                                                                                                                                                                           |
 | :---------: | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **الأوّل**  | ذكر العناصر الّتي ساعدت على احتراق الفحم في الكانون · ذكر مكوّنات الهواء وخاصياته · ذكر العناصر النّاتجة عن عمليّة الاحتراق | الهواء - النّفط بعد تسخينه بمفعول النّار - المادّة المحترقة (**الفحم الخشبي**) · الأكسيجين - ثاني أكسيد الكربون - النتروجين وغازات نادرة · خاصيات الهواء : الانتثار، الانضغاط … · الحرارة - الضوء - ثاني أكسيد الكربون - بخار الماء - هباب الفحم                                               |
+| **الأوّل**  | ذكر العناصر الّتي ساعدت على احتراق الفحم في الكانون · ذكر مكوّنات الهواء وخاصياته · ذكر العناصر النّاتجة عن عمليّة الاحتراق | الهواء - النّفط بعد تسخينه بمفعول النّار - المادّة المحترقة (**الفحم الخشبي**) · الأكسيجين - ثاني أكسيد الكربون - النتروجين وغازات نادرة · خاصيات الهواء : الانتشار، الانضغاط … · الحرارة - الضوء - ثاني أكسيد الكربون - بخار الماء - هباب الفحم                                               |
 | **الثّاني** | **لماذا شعر أفراد العائلة بدوار ورغبة شديدة في النّعاس ؟**                                                                  | الاحتراق **غير التّامّ** للفحم في الكانون بسبب عدم توفّر الأكسيجين الكافي · انتشار ثاني أكسيد الكربون النّاتج عن عمليّة احتراق الفحم · احتواء هواء الشّهيق على نسبة كبيرة من **أحادي أكسيد الكربون** لم يمكّن الرّئتين من القيام بوظيفتهما المتمثّلة في ضمان التّبادل الغازي بين الجسم والمحيط |
 | **الثّالث** | **كيف نحافظ على سلامة الجهاز التنفّسي ؟**                                                                                   | تهوئة الغرف لتوفير كميّة الأكسيجين الضروريّة · خلوّ الهواء من الغازات السّامّة (**غاز أحادي أكسيد الكربون** النّاتج عن الاحتراق غير التّامّ) · ممارسة الأنشطة الرّياضيّة في الهواء الطّلق · تجنّب التّدخين الّذي يتسبّب في **سرطان الرّئة** …                                                  |
 
 > ⚠️ **Quatrième graphie du monoxyde de carbone, et une confirmation.** Le corrigé emploie **أحادي أكسيد الكربون**, là où la p.73 disait **أوّل أكسيد الكربون** et la p.74 **ثاني** أكسيد الكربون. Ce corrigé **confirme donc le signalement de §7.16** : le gaz responsable est bien le **monoxyde**, et la p.74 se trompait en désignant le dioxyde parmi les toxiques du tabac. Le même corrigé écrit d'ailleurs **سرطان الرّئة** — la dénomination correcte, contre « السّرطان السّعالي » de la p.74. **Le volume se corrige lui-même à douze pages d'intervalle, sans le dire.** La fiche conserve les deux états.
 
-> ⚠️ **Réserve sur le corrigé du نشاط الأوّل** : il liste parmi les composants de l'air « ثاني أكسيد الكربون - النتروجين » mais **omet l'azote sous son autre nom** et n'énumère pas la vapeur d'eau, pourtant établie en §7.13 comme composant. Il liste par ailleurs « الانتثار » parmi les propriétés de l'air, alors que la propriété établie p.65 est l'**الانتشار** (diffusion) — الانتثار étant, dans ce volume, un terme d'**optique** (§7.2). Confusion de deux mots proches ; non corrigée.
+> ⚠️ **Réserve sur le corrigé du نشاط الأوّل** : il n'énumère pas la vapeur d'eau, pourtant établie en §7.13 comme composant. ✅ **Corrigé R-7 (relu à 300 dpi)** : ~~« il liste « الانتثار » parmi les propriétés de l'air »~~ — **faux** : le corrigé imprime « خاصيات الهواء : **الانتشار**، الانضغاط … », et l'encadré qui suit « الهواء قابل للانضغاط **والانتشار** … ». Le guide ne confond pas ici les deux mots.
+
+**Les deux encadrés « أستحضر مكتسباتي » de la p.86** (R-7 : non transcrits jusqu'ici) : (1) « الهواء قابل للانضغاط والانتشار … · من مكوّنات الهواء : الأكسيجين - النتروجين - ثاني أكسيد الكربون … · الهواء ضروريّ للاحتراق · العناصر المتدخّلة في الاحتراق : الهواء، المادّة المحترقة، مصدر الحرارة · العناصر النّاتجة عن الاحتراق : الحرارة - الضّوء - ثاني أكسيد الكربون - بخار الماء - هباب الفحم » ; (2) « الهواء ضروريّ لحياة الإنسان · يتمّ التّبادل الغازي في مستوى الحويصلات الرّئويّة فينقل الدّم ثاني أكسيد الكربون من أعضاء الجسم إلى الرّئتين (لون الدّم قاتم) ويأخذ الأكسيجين (لون الدّم يصبح أحمر قان) من الحويصلات الرّئويّة وينقله إلى خلايا الجسم ».
 
 > ⚠️ **Corrigé le 2026-10-20 (lecteur L1, p.125)** : la note qui suit est juste pour les p.63–86 mais **fausse pour l'unité** — la و2 est évaluée par l'**appareil d'évaluation n° 2**, placé en fin de و3 (p.125–135) et déclaré « متّصلة بـ : الهواء والتنفّس (الوحدة 2) وجهاز دوران الدم والأمراض الجرثوميّة والتغذيّة (الوحدة 3) » ; voir §7.33–§7.35. La conjecture « déployé une seule fois » est infirmée.
 >
@@ -1192,7 +1194,7 @@ Comme pour la و1 (§7.4), le guide clôt son ملفّ علمي par sa **propre 
 
 > **Intercalaire p.87** : « **الوحدة الثّالثة — جهـاز دوران الدّم والأمـراض الجرثوميّة والتغذيّة** ». Trois thèmes en une unité, là où les deux premières en portaient un ou deux. C'est l'unité qui recouvre les chapitres publiés `03-sang-circulation` et `04-nutrition`, **plus** le bloc immunité/microbes signalé en §6 comme **sans chapitre dédié**.
 
-**1. القلب (p.88)** — quatre parties : **بطينان** surmontés chacun d'une **أذين**, chaque partie entourée extérieurement d'une **paroi musculaire dont l'épaisseur varie** — _« فهو قويّ في البطينين وأقلّ قوّة في الأذينين »_. À l'intérieur, ces parties forment des cavités reliées par des **صمّامات** dont le rôle est **fondamental dans l'orientation du sang** à l'intérieur du cœur. Deux figures : « **مثال لقلب مجسّم** » (photo) et « **مقطع طولي لقلب الإنسان** », légendée الأورطي · الشّريان الرّئوي · الأوردة الرّئويّة · الأذين الأيمن · الأذين الأيسر · الوريد الأجوف العلوي · الوريد الأجوف السّفلي · البطين الأيمن · البطين الأيسر · صمّامات الأورطي · صمّامات الأذينة البطينيّة · الصّمّاك الثّلاثيّة · قلاف وترية.
+**1. القلب (p.88)** — quatre parties : **بطينان** surmontés chacun d'une **أذين**, chaque partie entourée extérieurement d'une **paroi musculaire dont l'épaisseur varie** — _« فهو قويّ في البطينين وأقلّ قوّة في الأذينين »_. À l'intérieur, ces parties forment des cavités reliées par des **صمّامات** dont le rôle est **fondamental dans l'orientation du sang** à l'intérieur du cœur. Deux figures : « **مثال لقلب مجسّم** » (photo) et « **مقطع طولي لقلب الإنسان** », légendée الأورطي · الشّريان الرّئوي · الأوردة الرّئويّة · الأذين الأيمن · الأذين الأيسر · الوريد الأجوف العلوي · الوريد الأجوف السّفلي · البطين الأيمن · البطين الأيسر · صمّامات الشّريان الرّئوي · صمّامات الأورطي · الصّمّامات الأذينيّة البطينيّة · الصّمّامات الثّلاثيّة · ألياف وتريّة (R-7 : légendes relues à 300 dpi, `[?]` levé).
 
 **1-2. الأوعية الدّمويّة (p.88)** — de forme tubulaire, elles se divisent en **شرايين · أوردة · أوعية شعريّة**. Les **artères** portent le sang du cœur vers les organes ; arrivée à un organe, l'artère se ramifie en artérioles puis en vaisseaux fins dits **الأوعية الشّعريّة**. Ces capillaires se rejoignent pour former une **veinule**, qui rejoint d'autres veinules pour former une **veine** plus grosse ramenant le sang au cœur. C'est **au niveau des capillaires** que se font les échanges : _« ينتقل الغذاء والأكسيجين بواسطة الانتشار من الدّم إلى خلايا الجسم بينما ينتقل غاز ثاني أكسيد الكربون والافرازات الضّارّة من خلايا الجسم إلى الدّم. »_
 
@@ -1261,7 +1263,7 @@ Fonction principale de l'hémoglobine : **transporter l'oxygène et le CO₂** �
 >
 > ⚠️ **En revanche, rien ici ne concerne l'immunité au sens du bloc p.68–83 du manuel élève** (الجلد-الجراثيم، التعفّن الجرثومي، التلقيح، المقاومة) signalé en §6 comme **sans chapitre publié** : le rôle des globules blancs est mentionné en deux lignes (p.91), c'est tout. Le volet « الأمراض الجرثوميّة » annoncé par l'intercalaire p.87 **n'a pas encore commencé** à la p.92 — il est dans la tranche suivante. → il occupe p.100–106 (§7.26–§7.27).
 
-> ⚠️ **Une légende manuscrite partiellement illisible (p.88).** Le « مقطع طولي لقلب الإنسان » est un dessin **à la main**, et deux de ses étiquettes ne se lisent pas de façon sûre au rendu 150 dpi : celle transcrite ci-dessus « الصّمّاك الثّلاثيّة » (probablement الصّمّامات الثّلاثيّة) et « قلاف وترية » (probablement حبال وتريّة). **On ne comble pas** : les deux sont reportées telles qu'elles se lisent, avec cette réserve. À reconfirmer par un recadrage à 300 dpi si un contenu doit s'appuyer sur la nomenclature valvulaire — ce que le programme de 6ème n'exige pas.
+> ✅ **Légende p.88 — `[?]` levé par le R-7 (300 dpi).** La figure est un dessin imprimé de mauvaise qualité, pas une légende manuscrite : les deux étiquettes douteuses se lisent **« الصّمّامات الثّلاثيّة »** et **« ألياف وتريّة »** ; une étiquette manquait (« صمّامات الشّريان الرّئوي »).
 
 ### 7.23 الملفّ العلمي de la و3 (suite) : التغذية عند الإنسان (guide p.93–96)
 

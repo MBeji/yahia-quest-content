@@ -30,6 +30,7 @@ Puis : rédacteur de la fiche (opus), audit R-7 (opus), registre, PR, merge ; pu
 | | Question | Décision |
 | --- | --- | --- |
 | **V1** (Q-1) | Chiffres du ملفّ علمي (calendrier vaccinal, rapport 2:1, Lune = 1/6…) | **Enrichissement seulement** : encadré « pour aller plus loin » du cours possible, jamais une réponse attendue. |
-| **V2** (Q-2) | Plaquettes | **Trois composants** (manuel p.64) : plaquettes absentes du cours élève et des questions du ch. 03. |
+| **V2** (Q-2) | Plaquettes | ~~Trois composants~~ → **révisé le 2026-10-20 : quatre composants**. Fait nouveau (lecture R1) : le concours teste les plaquettes en 2019, 2021, 2025, 2026 ; le concours fait foi — plaquettes enseignées et exercées au ch. 03, dites « complément au manuel ». |
 | **V3** (Q-3) | Intensité du courant (électroaimant) | **Spires et piles seulement** (manuel) ; « intensité » non exigible au ch. 11. |
 | **V4** (Q-4) | Épuration / potabilisation de l'eau | **Schéma à lire** au ch. 05, sans question qui exige d'en connaître les étapes. |
+| **V5** | Directions intermédiaires (boussole) | **8 directions enseignées** au ch. 07 (nord-est, sud-ouest…) : le concours les demande dans 4 sessions récentes, le manuel n'en enseigne que 4. |
