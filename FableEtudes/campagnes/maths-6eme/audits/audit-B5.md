@@ -59,7 +59,7 @@
   copie de la question cercle/disque (`01` Q6, `04` Q6). Remplacement en M21-2.
 - **M3 (somme des angles)** : sans objet dans ce lot ; elle n'est ni énoncée ni demandée.
 - **Défaut dominant recherché systématiquement** (question qui redonne un exemple, un piège ou un `verifie` du cours) :
-  **19 cas** (ch. 20 : 2, ch. 21 : 11, ch. 23 : 4, ch. 25 : 2). La cause est la même qu'en B4 : le cours prend les
+  **18 cas** (ch. 20 : 1, ch. 21 : 11, ch. 23 : 4, ch. 25 : 2). La cause est la même qu'en B4 : le cours prend les
   nombres des items existants ou ceux du manuel, et la question garde ces nombres. Pour chaque cas j'ai choisi le remède
   le moins coûteux (changer un `verifie` du cours, ou écrire une variante). Une variante **perd le champ `manuel`** si
   elle en portait un.
@@ -85,7 +85,7 @@ Axes du cours :
 
 ### Majeurs
 
-**M20-1 — 2 questions redonnent le cours, 3 paires sont des doublons de calcul.**
+**M20-1 — 1 question redonne le cours, 4 sont des doublons (même calcul ou même question).**
 
 | fichier · Q | défaut | remplacement vérifié |
 | --- | --- | --- |
@@ -380,7 +380,7 @@ quart de § ➕➖) sont admis.
 tenu et le volume reste hors du cours. Le chapitre neuf 25 couvre fidèlement la leçon 24 avec des reprises exactes.
 
 Trois familles de défauts restent à corriger :
-1. **19 questions redonnent un exemple, un piège ou un `verifie` du cours.** Le ch. 21 est le plus touché : les petits
+1. **18 questions redonnent un exemple, un piège ou un `verifie` du cours.** Le ch. 21 est le plus touché : les petits
    rayons 2, 3, 4, 5 sont partagés entre le cours et les items. Il y a aussi les doublons et miroirs anciens que la
    tranche sans `--fresh` fait remonter (21 : `quiz` Q5 = `03` Q5 ; 23 : trois miroirs latérale/totale).
 2. **Les étiquettes affichées à l'élève ne nomment pas l'erreur, ou sortent du programme.** Elles font entrer le volume
