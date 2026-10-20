@@ -5,40 +5,88 @@
   "xpReward": 120,
   "rewardCoins": 30,
   "displayOrder": 5,
+  "manuel": {
+    "code": "102609",
+    "pages": "8-9,98-101,111-114",
+    "items": ["L2 ex. 1", "L33 ex. 7", "L33 ex. 3", "L38 ex. 3"]
+  },
   "questions": [
     {
-      "prompt": "ما الوحدةُ المرجعيّة لقياس المساحة؟",
+      "prompt": "أيُّ هذه القياسات قيسُ مساحة؟",
       "options": [
-        { "id": "a", "text": "المتر المربّع (م²)" },
-        { "id": "b", "text": "المتر (م)" },
-        { "id": "c", "text": "الغرام (غ)" },
-        { "id": "d", "text": "الثانية (ث)" }
+        {
+          "id": "a",
+          "text": "12 سم²"
+        },
+        {
+          "id": "b",
+          "text": "12 سم",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "12 ل"
+        },
+        {
+          "id": "d",
+          "text": "12 كغ"
+        }
       ],
       "correctOption": "a",
-      "explanation": "الوحدةُ المرجعيّة للمساحة هي المتر المربّع (م²)؛ والمترُ وحدةُ طولٍ لا مساحة.",
+      "explanation": "المساحة تُقاس بوحدة مربّعة مثل سم²؛ أمّا السنتيمتر فوحدة طول، واللتر وحدة سعة، والكيلوغرام وحدة كتلة.",
       "difficulty": 1,
       "competencies": ["math.mes.aires"]
     },
     {
-      "prompt": "ما مساحةُ مربّعٍ طولُ ضلعه 8 سم؟",
+      "prompt": "رُصف فناء مربّع الشكل ضلعه 8 م بالبلاط. كم مترًا مربّعًا مساحة الفناء؟",
       "options": [
-        { "id": "a", "text": "64 سم²" },
-        { "id": "b", "text": "32 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
-        { "id": "c", "text": "16 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
-        { "id": "d", "text": "88 سم²", "misconceptionTag": "math.num.chiffres-juxtaposes-au-lieu-du-produit" }
+        {
+          "id": "a",
+          "text": "16 م²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "b",
+          "text": "32 م²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "64 م²"
+        },
+        {
+          "id": "d",
+          "text": "88 م²",
+          "misconceptionTag": "math.num.chiffres-juxtaposes-au-lieu-du-produit"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "مساحةُ المربّع = الضلع × الضلع = 8 × 8 = 64 سم².",
+      "correctOption": "c",
+      "explanation": "مساحةُ المربّع = الضلع × الضلع = 8 × 8 = 64 م². من ضرب في 4 وجد 32 وهو المحيط، ومن جمع الضلعين وجد 16، ومن كتب العددين جنبًا إلى جنب وجد 88.",
       "difficulty": 2,
       "competencies": ["math.mes.aires"]
     },
     {
       "prompt": "مستطيلٌ طولُه 9 سم وعرضُه 6 سم. ما مساحتُه؟",
       "options": [
-        { "id": "a", "text": "54 سم²" },
-        { "id": "b", "text": "30 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
-        { "id": "c", "text": "15 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
-        { "id": "d", "text": "96 سم²", "misconceptionTag": "math.num.chiffres-juxtaposes-au-lieu-du-produit" }
+        {
+          "id": "a",
+          "text": "54 سم²"
+        },
+        {
+          "id": "b",
+          "text": "30 سم²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "15 سم²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "96 سم²",
+          "misconceptionTag": "math.num.chiffres-juxtaposes-au-lieu-du-produit"
+        }
       ],
       "correctOption": "a",
       "explanation": "مساحةُ المستطيل = الطول × العرض = 9 × 6 = 54 سم².",
@@ -48,10 +96,24 @@
     {
       "prompt": "ما مساحةُ هذا المثلّث؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"20,72 80,72 50,32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"32\" x2=\"50\" y2=\"72\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><rect x=\"50\" y=\"66\" width=\"6\" height=\"6\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.2\"/><text x=\"45\" y=\"86\" font-size=\"11\" fill=\"currentColor\">8</text><text x=\"54\" y=\"54\" font-size=\"11\" fill=\"#ef4444\">6</text></svg>",
       "options": [
-        { "id": "a", "text": "24 سم²" },
-        { "id": "b", "text": "48 سم²", "misconceptionTag": "math.mes.aire-triangle-sans-moitie" },
-        { "id": "c", "text": "14 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" },
-        { "id": "d", "text": "28 سم²" }
+        {
+          "id": "a",
+          "text": "24 سم²"
+        },
+        {
+          "id": "b",
+          "text": "48 سم²",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        },
+        {
+          "id": "c",
+          "text": "14 سم²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "28 سم²"
+        }
       ],
       "correctOption": "a",
       "explanation": "القاعدة 8 والارتفاع 6، فالمساحة = (8 × 6) ÷ 2 = 48 ÷ 2 = 24 سم².",
@@ -61,10 +123,24 @@
     {
       "prompt": "ما مساحةُ شبه المنحرف هذا؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"16,72 84,72 64,36 36,36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"36\" x2=\"50\" y2=\"72\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><rect x=\"50\" y=\"66\" width=\"6\" height=\"6\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.2\"/><text x=\"46\" y=\"86\" font-size=\"11\" fill=\"currentColor\">12</text><text x=\"46\" y=\"32\" font-size=\"11\" fill=\"currentColor\">8</text><text x=\"54\" y=\"58\" font-size=\"11\" fill=\"#ef4444\">5</text></svg>",
       "options": [
-        { "id": "a", "text": "50 سم²" },
-        { "id": "b", "text": "100 سم²", "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme" },
-        { "id": "c", "text": "40 سم²" },
-        { "id": "d", "text": "25 سم²", "misconceptionTag": "math.mes.aire-et-perimetre-confondus" }
+        {
+          "id": "a",
+          "text": "50 سم²"
+        },
+        {
+          "id": "b",
+          "text": "100 سم²",
+          "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme"
+        },
+        {
+          "id": "c",
+          "text": "40 سم²"
+        },
+        {
+          "id": "d",
+          "text": "25 سم²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        }
       ],
       "correctOption": "a",
       "explanation": "القاعدتان 12 و8 والارتفاع 5، فالمساحة = (12 + 8) × 5 ÷ 2 = 100 ÷ 2 = 50 سم².",
@@ -74,13 +150,102 @@
     {
       "prompt": "كم م² في 2 هكتار؟",
       "options": [
-        { "id": "a", "text": "20 000 م²" },
-        { "id": "b", "text": "2 000 م²", "misconceptionTag": "math.mes.conversion-aire-facteur-errone" },
-        { "id": "c", "text": "200 م²", "misconceptionTag": "math.mes.conversion-aire-facteur-errone" },
-        { "id": "d", "text": "200 000 م²", "misconceptionTag": "math.mes.conversion-aire-facteur-errone" }
+        {
+          "id": "a",
+          "text": "20 000 م²"
+        },
+        {
+          "id": "b",
+          "text": "2 000 م²",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        },
+        {
+          "id": "c",
+          "text": "200 م²",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        },
+        {
+          "id": "d",
+          "text": "200 000 م²",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        }
       ],
       "correctOption": "a",
       "explanation": "1 هكتار = 10 000 م²، فإنّ 2 هكتار = 2 × 10 000 = 20 000 م².",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "كم هكتارًا في 1,07 كم²؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "10,7 هكتار",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        },
+        {
+          "id": "b",
+          "text": "107 هكتار"
+        },
+        {
+          "id": "c",
+          "text": "1 070 هكتار",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        },
+        {
+          "id": "d",
+          "text": "10 700 هكتار"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "1 كم² = 100 هكتار (لأنّ الكيلومتر المربّع 1 000 000 م² والهكتار 10 000 م²)، فـ 1,07 كم² = 1,07 × 100 = 107 هكتار. الخطأ الشائع التحويل بعامل 10: بين كلّ وحدتين متتاليتين من وحدات المساحة عامل 100.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "مثلّث متساوي الأضلاع محيطه 18 سم، وارتفاعه 5,2 سم. ما مساحته بالسنتيمتر المربّع؟\n<svg viewBox=\"0 0 360 190\"><path d=\"M180 30 L115 142.6 L245 142.6 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M180 30 L115 142.6 L245 142.6 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M180 30 L180 142.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M190 142.6 L190 132.6 L180 132.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"202\" y=\"91.3\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">5,2</text><circle cx=\"180\" cy=\"30\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"115\" cy=\"142.6\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"245\" cy=\"142.6\" r=\"3.5\" fill=\"#0f172a\"/></svg>",
+      "answerKey": {
+        "value": 15.6,
+        "unit": "سم²"
+      },
+      "explanation": "الأضلاع الثلاثة متساوية، فالضلع 18 ÷ 3 = 6 سم، وهو القاعدة. المساحة = (6 × 5,2) ÷ 2 = 31,2 ÷ 2 = 15,6 سم². التحقّق: 15,6 × 2 = 31,2 = 6 × 5,2 ✓.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "في المثلّث الآتي نعرف طول ضلع هو 4 سم، ونعرف أنّ القطعة المتقطّعة العموديّة على ضلع آخر طولها 3,5 سم. هل نستطيع حساب مساحة المثلّث بهذين العددين؟\n<svg viewBox=\"0 0 360 205\"><path d=\"M40 170 L300 170 L217.7 21.2 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M40 170 L300 170 L217.7 21.2 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M40 170 L239.1 59.9\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M229.4 65.2 L224.1 55.6 L233.7 50.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"40\" cy=\"170\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"300\" cy=\"170\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"217.7\" cy=\"21.2\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"170\" y=\"193\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><text x=\"133.5\" y=\"104.9\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">3,5</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لا، لأنّ القطعة 3,5 ليست عموديّة على الضلع 4"
+        },
+        {
+          "id": "b",
+          "text": "نعم، لأنّ المساحة (4 × 3,5) ÷ 2 = 7 سم²"
+        },
+        {
+          "id": "c",
+          "text": "نعم، لأنّ المساحة 4 × 3,5 = 14 سم²"
+        },
+        {
+          "id": "d",
+          "text": "لا، لأنّ المثلّث ليس قائمًا ولا متساوي الساقين"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الارتفاع لا يُضرب إلّا في قاعدته: القطعة 3,5 عموديّة على ضلع آخر لم نعرف طوله، والضلع 4 لا يوافقها، فلا يكفي هذان العددان للمساحة. الخطأ الشائع ضرب عددين في المثلّث لمجرّد أنّهما مكتوبان. وليس لازمًا أن يكون المثلّث قائمًا أو متساوي الساقين.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "متوازي أضلاع مساحته 156 سم² وقاعدته 20,8 سم. ما ارتفاعه الموافق لهذه القاعدة بالسنتيمتر؟\n<svg viewBox=\"0 0 330 190\"><path d=\"M40 102 L220 102 L274 30 L94 30 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M40 102 L220 102 L274 30 L94 30 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M94 30 L94 102\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M104 102 L104 92 L94 92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"130\" y=\"124\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">20,8</text><text x=\"80\" y=\"71\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">…</text></svg>",
+      "answerKey": {
+        "value": 7.5,
+        "unit": "سم"
+      },
+      "explanation": "المساحة = القاعدة × الارتفاع، فالارتفاع = المساحة ÷ القاعدة = 156 ÷ 20,8 = 1 560 ÷ 208 = 7,5 سم، ولا نضاعف المساحة هنا لأنّ الصيغة لا قسمة على 2 فيها. التحقّق: 20,8 × 7,5 = 156 ✓.",
       "difficulty": 3,
       "competencies": ["math.mes.aires"]
     }

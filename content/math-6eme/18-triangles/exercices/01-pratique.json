@@ -7,38 +7,54 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "كم رأسًا للمثلّث؟",
+      "prompt": "ما الضلع الذي يقابل الرأس ص في المثلّث س‌ص‌ع؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"18,76 50,22 86,76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"14\" y=\"90\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">س</text><text x=\"50\" y=\"14\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ص</text><text x=\"90\" y=\"90\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ع</text></svg>",
       "options": [
-        { "id": "a", "text": "3" },
-        { "id": "b", "text": "4" },
-        { "id": "c", "text": "1" },
-        { "id": "d", "text": "6" }
+        { "id": "a", "text": "[س‌ص]" },
+        { "id": "b", "text": "[ص‌ع]" },
+        { "id": "c", "text": "[س‌ع]" },
+        { "id": "d", "text": "لا ضلع يقابله" }
       ],
-      "correctOption": "a",
-      "explanation": "للمثلّث 3 رؤوس (وكذلك 3 أضلاع و3 زوايا).",
+      "correctOption": "c",
+      "explanation": "الضلع الذي يقابل رأسًا هو الضلع الذي لا يمرّ به. [س‌ص] و[ص‌ع] يمرّان بالرأس ص، أمّا [س‌ع] فيصل الرأسين س وع فهو الذي يقابل ص.",
       "difficulty": 1,
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "مثلّثٌ أطوالُ أضلاعه 4 سم، 4 سم، 4 سم. نوعُه:",
+      "prompt": "ما محيط مثلّث أضلاعه 4 سم و5 سم و6 سم؟",
       "options": [
-        { "id": "a", "text": "متساوي الأضلاع" },
-        { "id": "b", "text": "متساوي الساقين", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "c", "text": "مختلف الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "d", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
+        { "id": "a", "text": "9 سم" },
+        { "id": "b", "text": "15 سم" },
+        { "id": "c", "text": "20 سم" },
+        {
+          "id": "d",
+          "text": "120 سم",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "أضلاعُه الثلاثة متساوية (4 = 4 = 4)، فهو متساوي الأضلاع.",
+      "correctOption": "b",
+      "explanation": "المحيط مجموع الأضلاع الثلاثة: 4 + 5 + 6 = 15 سم. من كتب 9 سم نسي ضلعًا، ومن كتب 120 سم ضرب بدل أن يجمع.",
       "difficulty": 1,
-      "competencies": ["math.geo.triangles-base"]
+      "competencies": ["math.geo.triangles-base", "math.mes.perimetres"]
     },
     {
       "prompt": "ما نوعُ المثلّث المبيّن في الشكل حسب زواياه؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"25,75 25,28 78,75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"25\" y=\"65\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classements-triangle-melanges" },
+        {
+          "id": "a",
+          "text": "متساوي الأضلاع",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        },
         { "id": "b", "text": "قائم الزاوية" },
-        { "id": "c", "text": "منفرج الزاوية", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" },
-        { "id": "d", "text": "حادّ الزوايا", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" }
+        {
+          "id": "c",
+          "text": "منفرج الزاوية",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        },
+        {
+          "id": "d",
+          "text": "حادّ الزوايا",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        }
       ],
       "correctOption": "b",
       "explanation": "المربّعُ الصغير يدلّ على زاوية قائمة، فالمثلّثُ قائمُ الزاوية.",
@@ -48,10 +64,22 @@
     {
       "prompt": "مثلّثٌ أطوالُ أضلاعه 3 سم، 5 سم، 7 سم. نوعُه:",
       "options": [
-        { "id": "a", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "b", "text": "متساوي الساقين", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
+        {
+          "id": "a",
+          "text": "متساوي الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "b",
+          "text": "متساوي الساقين",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
         { "id": "c", "text": "مختلف الأضلاع" },
-        { "id": "d", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
+        {
+          "id": "d",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        }
       ],
       "correctOption": "c",
       "explanation": "أضلاعُه الثلاثة مختلفة الأطوال (3 ≠ 5 ≠ 7)، فهو مختلف الأضلاع.",
@@ -74,13 +102,69 @@
     {
       "prompt": "ما نوعُ هذا المثلّث حسب أضلاعه؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"50,30 26,76 74,76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><text x=\"26\" y=\"52\" font-size=\"11\" fill=\"currentColor\">5</text><text x=\"66\" y=\"52\" font-size=\"11\" fill=\"currentColor\">5</text><text x=\"47\" y=\"90\" font-size=\"11\" fill=\"currentColor\">5</text></svg>",
       "options": [
-        { "id": "a", "text": "مختلف الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
+        {
+          "id": "a",
+          "text": "مختلف الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
         { "id": "b", "text": "متساوي الأضلاع" },
-        { "id": "c", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" },
-        { "id": "d", "text": "منفرج الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
+        {
+          "id": "c",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        },
+        {
+          "id": "d",
+          "text": "منفرج الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        }
       ],
       "correctOption": "b",
       "explanation": "الأضلاعُ الثلاثة متساوية (5 ; 5 ; 5)، فهو متساوي الأضلاع.",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "نريد بناء مثلّث ر‌م‌ل فيه م‌ر = 6 سم و م‌ل = 5 سم وقيس الزاوية ر‌م‌ل = 70°. عند أيّ رأس نرسم الزاوية 70°؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"25,80 82.5,80 36.9,35.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"19\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">م</text><text x=\"86.5\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ر</text><text x=\"31.9\" y=\"32.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ل</text><text x=\"54\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><text x=\"20\" y=\"58\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "عند الرأس ل",
+          "misconceptionTag": "math.geo.sommet-de-l-angle-mal-identifie"
+        },
+        { "id": "b", "text": "عند منتصف [ر‌ل]" },
+        {
+          "id": "c",
+          "text": "عند الرأس ر",
+          "misconceptionTag": "math.geo.sommet-de-l-angle-mal-identifie"
+        },
+        { "id": "d", "text": "عند الرأس م" }
+      ],
+      "correctOption": "d",
+      "explanation": "الزاوية المعلومة هي ر‌م‌ل، ورأسها حرفها الأوسط م، وهو الرأس المشترك بين الضلعين المعلومين [م‌ر] و[م‌ل]. لو رسمنا 70° عند ر أو عند ل لحصلنا على مثلّث آخر.",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "بنى سامي مثلّثًا متساوي الأضلاع محيطه 21 سم. ما طول ضلعه بالسنتيمتر؟",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "الأضلاع الثلاثة متساوية، فالضلع = المحيط ÷ 3 = 21 ÷ 3 = 7 سم؛ ونتحقّق: 7 + 7 + 7 = 21.",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base", "math.mes.perimetres"]
+    },
+    {
+      "prompt": "مثلّث ط‌ر‌م فيه ر‌م = 7 سم، وقيس الزاوية ط‌ر‌م = 30° وقيس الزاوية ط‌م‌ر = 70°. عند أيّ رأسين نرسم الزاويتين بالمنقلة بعد رسم [ر‌م]؟",
+      "options": [
+        { "id": "a", "text": "عند الرأسين ر و م" },
+        { "id": "b", "text": "عند الرأسين ط و م" },
+        { "id": "c", "text": "عند الرأس ط وحده" },
+        { "id": "d", "text": "عند الرأسين ط و ر" }
+      ],
+      "correctOption": "a",
+      "explanation": "الضلع المعلوم هو [ر‌م]، والزاويتان المعلومتان رأساهما ر وَ م: الحرف الأوسط في ط‌ر‌م هو ر، وفي ط‌م‌ر هو م. فنرسم 30° عند ر و70° عند م في الجهة نفسها، ويلتقي الضلعان الجديدان في الرأس ط.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     }

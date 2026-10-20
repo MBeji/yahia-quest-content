@@ -22,10 +22,22 @@
     {
       "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><rect x=\"16\" y=\"32\" width=\"68\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"16\" y=\"32\" width=\"9\" height=\"9\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.3\"/></svg>",
       "options": [
-        { "id": "a", "text": "مربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        {
+          "id": "a",
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
         { "id": "b", "text": "مستطيل" },
-        { "id": "c", "text": "معيّن", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "d", "text": "شبه منحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
+        {
+          "id": "c",
+          "text": "معيّن",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "d",
+          "text": "شبه منحرف",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        }
       ],
       "correctOption": "b",
       "explanation": "الشكلُ زواياه قائمة (المربّع الصغير) وطولُه أكبرُ من عرضه، فهو مستطيل.",
@@ -48,10 +60,22 @@
     {
       "prompt": "ما هذا الرباعيّ (4 أضلاع متساوية و4 زوايا قائمة)؟ <svg viewBox=\"0 0 100 100\"><rect x=\"27\" y=\"24\" width=\"50\" height=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"27\" y=\"24\" width=\"9\" height=\"9\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.3\"/></svg>",
       "options": [
-        { "id": "a", "text": "مستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        {
+          "id": "a",
+          "text": "مستطيل",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
         { "id": "b", "text": "مربّع" },
-        { "id": "c", "text": "شبه منحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "d", "text": "معيّن منفرج", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
+        {
+          "id": "c",
+          "text": "شبه منحرف",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "d",
+          "text": "معيّن منفرج",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        }
       ],
       "correctOption": "b",
       "explanation": "أضلاعُه الأربعة متساوية وزواياه قائمة، فهو مربّع.",
@@ -61,8 +85,16 @@
     {
       "prompt": "شبه المنحرف له:",
       "options": [
-        { "id": "a", "text": "زوجان من الأضلاع المتوازية", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
-        { "id": "b", "text": "لا توازٍ بين أضلاعه", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
+        {
+          "id": "a",
+          "text": "زوجان من الأضلاع المتوازية",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        {
+          "id": "b",
+          "text": "لا توازٍ بين أضلاعه",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
         { "id": "c", "text": "زوجٌ واحدٌ من الأضلاع المتوازية" },
         { "id": "d", "text": "3 أضلاع" }
       ],
@@ -74,15 +106,59 @@
     {
       "prompt": "ما هذا الرباعيّ (زوجان من الأضلاع المتوازية، بلا زوايا قائمة)؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"26,72 74,72 86,34 38,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "مستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "b", "text": "مربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "c", "text": "شبه منحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        {
+          "id": "a",
+          "text": "مستطيل",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "b",
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "c",
+          "text": "شبه منحرف",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
         { "id": "d", "text": "متوازي الأضلاع" }
       ],
       "correctOption": "d",
       "explanation": "له زوجان من الأضلاع المتوازية وليست زواياه قائمة، فهو متوازي الأضلاع.",
       "difficulty": 2,
       "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "في المعيّن أبجد، ما القطعة [أج]؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"12,50 50,18 88,50 50,82\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"5\" y=\"54\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"50\" y=\"12\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text><text x=\"95\" y=\"54\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ج</text><text x=\"50\" y=\"96\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">د</text></svg>",
+      "options": [
+        { "id": "a", "text": "قطر من قطريه" },
+        { "id": "b", "text": "ارتفاع من ارتفاعاته" },
+        { "id": "c", "text": "قاعدة من قاعدتيه" },
+        {
+          "id": "d",
+          "text": "ضلع من أضلاعه",
+          "misconceptionTag": "math.geo.parallelogramme-sommets-mal-ordonnes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في أبجد الرؤوس بالترتيب أ-ب-ج-د، فالرأسان أ وج متقابلان لا متتاليان، والقطعة التي تصلهما قطر. أمّا الأضلاع فتصل رأسين متتاليين مثل [أب].",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "معيّن محيطه 16 سم وارتفاعه 3 سم. ما طول ضلعه بالسنتيمتر؟",
+      "answerKey": {
+        "value": 4
+      },
+      "explanation": "أضلاع المعيّن الأربعة متساوية، فالضلع = المحيط ÷ 4 = 16 ÷ 4 = 4 سم. أمّا الارتفاع 3 سم فلا يدخل في حساب المحيط.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres", "math.mes.perimetres"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "47-49",
+    "items": ["L17 ex. 7", "L17 ex. 8"]
+  }
 }

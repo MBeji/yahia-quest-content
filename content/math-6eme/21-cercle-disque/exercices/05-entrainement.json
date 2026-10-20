@@ -9,10 +9,23 @@
     {
       "prompt": "أكملِ العلاقة: القطر = ... × نصف القطر.",
       "options": [
-        { "id": "a", "text": "2" },
-        { "id": "b", "text": "3" },
-        { "id": "c", "text": "نصف", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "d", "text": "4" }
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "نصف",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
       ],
       "correctOption": "a",
       "explanation": "القطرُ ضعفُ نصف القطر، أي القطر = 2 × نصف القطر، فالعاملُ هو (2).",
@@ -20,51 +33,110 @@
       "competencies": ["math.geo.cercle"]
     },
     {
-      "prompt": "دائرةٌ نصفُ قطرها 6 سم. ما طولُ قطرها؟",
+      "prompt": "نريد رسم دائرة قطرها 9 سم. كم نفتح البركار؟",
       "options": [
-        { "id": "a", "text": "12 سم" },
-        { "id": "b", "text": "6 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "c", "text": "3 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "d", "text": "18 سم" }
+        {
+          "id": "a",
+          "text": "3 سم"
+        },
+        {
+          "id": "b",
+          "text": "4,5 سم"
+        },
+        {
+          "id": "c",
+          "text": "9 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "18 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "القطر = 2 × نصف القطر = 2 × 6 = 12 سم.",
+      "correctOption": "b",
+      "explanation": "فتحة البركار هي نصف القطر، ونصف القطر = القطر ÷ 2 = 9 ÷ 2 = 4,5 سم. من فتح البركار 9 سم رسم دائرة قطرها 18 سم.",
       "difficulty": 2,
       "competencies": ["math.geo.cercle"]
     },
     {
-      "prompt": "ما محيطُ دائرةٍ قطرُها 10 سم؟ (π ≈ 3,14)",
+      "prompt": "ما محيطُ دائرةٍ قطرُها 13 سم؟ (π ≈ 3,14)",
       "options": [
-        { "id": "a", "text": "31,4 سم" },
-        { "id": "b", "text": "62,8 سم", "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop" },
-        { "id": "c", "text": "15,7 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "d", "text": "100 سم" }
+        {
+          "id": "a",
+          "text": "20,41 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "b",
+          "text": "40,82 سم"
+        },
+        {
+          "id": "c",
+          "text": "81,64 سم",
+          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+        },
+        {
+          "id": "d",
+          "text": "132,665 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "المحيط = π × القطر = 3,14 × 10 = 31,4 سم.",
+      "correctOption": "b",
+      "explanation": "المحيط = π × القطر = 3,14 × 13 = 40,82 سم. من ضرب أيضًا في 2 وجد 81,64، ومن أخذ نصف القطر 6,5 في π × ق وجد 20,41، ومن حسب مساحة قرص نصف قطره 6,5 وجد 132,665.",
       "difficulty": 2,
       "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
-      "prompt": "ما مساحةُ قرصٍ نصفُ قطره 6 سم؟ (π ≈ 3,14)",
+      "prompt": "ساحة مستديرة قطرها 30 م تُغطّى كلّها بالعشب. كم مترًا مربّعًا من العشب؟ (π ≈ 3,14)",
       "options": [
-        { "id": "a", "text": "113,04 سم²" },
-        { "id": "b", "text": "37,68 سم²", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
-        { "id": "c", "text": "18,84 سم²", "misconceptionTag": "math.mes.rayon-non-eleve-au-carre" },
-        { "id": "d", "text": "36 سم²", "misconceptionTag": "math.geo.facteur-pi-omis" }
+        {
+          "id": "a",
+          "text": "94,2 م²",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        },
+        {
+          "id": "b",
+          "text": "225 م²",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
+        },
+        {
+          "id": "c",
+          "text": "706,5 م²"
+        },
+        {
+          "id": "d",
+          "text": "2 826 م²",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "مساحةُ القرص = π × ر × ر = 3,14 × 6 × 6 = 3,14 × 36 = 113,04 سم².",
+      "correctOption": "c",
+      "explanation": "العشب يغطّي السطح فهو مساحة القرص: نصف القطر 30 ÷ 2 = 15 م، والمساحة 3,14 × 15 × 15 = 3,14 × 225 = 706,5 م². من أخذ القطر 30 نصفَ قطر وجد 2 826، ومن حسب المحيط وجد 94,2، ومن نسي π وجد 225.",
       "difficulty": 3,
-      "competencies": ["math.geo.cercle", "math.mes.aires"]
+      "competencies": ["math.geo.cercle"]
     },
     {
       "prompt": "ما محيطُ دائرةٍ نصفُ قطرها 7 سم؟ (π ≈ 3,14)",
       "options": [
-        { "id": "a", "text": "43,96 سم" },
-        { "id": "b", "text": "21,98 سم", "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop" },
-        { "id": "c", "text": "153,86 سم", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
-        { "id": "d", "text": "14 سم", "misconceptionTag": "math.geo.facteur-pi-omis" }
+        {
+          "id": "a",
+          "text": "43,96 سم"
+        },
+        {
+          "id": "b",
+          "text": "21,98 سم",
+          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+        },
+        {
+          "id": "c",
+          "text": "153,86 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        },
+        {
+          "id": "d",
+          "text": "14 سم",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
+        }
       ],
       "correctOption": "a",
       "explanation": "المحيط = 2 × π × ر = 2 × 3,14 × 7 = 43,96 سم.",
@@ -74,15 +146,133 @@
     {
       "prompt": "ما مساحةُ قرصٍ نصفُ قطره 4 سم؟ (π ≈ 3,14)",
       "options": [
-        { "id": "a", "text": "50,24 سم²" },
-        { "id": "b", "text": "25,12 سم²", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
-        { "id": "c", "text": "12,56 سم²", "misconceptionTag": "math.mes.rayon-non-eleve-au-carre" },
-        { "id": "d", "text": "8 سم²", "misconceptionTag": "math.geo.facteur-pi-omis" }
+        {
+          "id": "a",
+          "text": "50,24 سم²"
+        },
+        {
+          "id": "b",
+          "text": "25,12 سم²",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        },
+        {
+          "id": "c",
+          "text": "12,56 سم²"
+        },
+        {
+          "id": "d",
+          "text": "8 سم²",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
+        }
       ],
       "correctOption": "a",
       "explanation": "مساحةُ القرص = π × ر × ر = 3,14 × 4 × 4 = 3,14 × 16 = 50,24 سم².",
       "difficulty": 3,
       "competencies": ["math.geo.cercle", "math.mes.aires"]
+    },
+    {
+      "prompt": "حوض نصف دائري قطره 6 م. ما مساحته؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 190\"><path d=\"M90 150 A90 90 0 0 1 270 150 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M90 150 L270 150\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"180\" y=\"174\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><circle cx=\"180\" cy=\"150\" r=\"3\" fill=\"#0f172a\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9,42 م²"
+        },
+        {
+          "id": "b",
+          "text": "14,13 م²"
+        },
+        {
+          "id": "c",
+          "text": "28,26 م²"
+        },
+        {
+          "id": "d",
+          "text": "56,52 م²",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نصف قطر الحوض 6 ÷ 2 = 3 م. القرص الكامل 3,14 × 3 × 3 = 28,26 م²، ونصفه 14,13 م². الأخطاء الشائعة: نسيان القسمة على 2 فنجد 28,26، أو أخذ 6 نصفَ قطر فنجد 56,52، أو نسيان تربيع نصف القطر فنجد 9,42.",
+      "difficulty": 3,
+      "competencies": ["math.geo.cercle"]
+    },
+    {
+      "prompt": "قطعة معدنيّة على شكل ثلاثة أرباع قرص نصف قطره 36 سم. ما محيطها كلّها، أي القوس ونصفا القطر اللذان يحدّانها؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 230\"><path d=\"M170 110 L265 110 A95 95 0 1 1 170 15 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"170\" cy=\"110\" r=\"3\" fill=\"#0f172a\"/><text x=\"217.5\" y=\"130\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">36</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "128,52 سم",
+          "misconceptionTag": "math.geo.arc-circonference-entiere-prise-pour-l-arc"
+        },
+        {
+          "id": "b",
+          "text": "169,56 سم",
+          "misconceptionTag": "math.mes.perimetre-partie-du-bord-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "205,56 سم",
+          "misconceptionTag": "math.mes.perimetre-partie-du-bord-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "241,56 سم"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "محيط الدائرة كلّها 2 × 3,14 × 36 = 226,08 سم، وثلاثة أرباعه 169,56 سم. وتحدّ القطعةَ قطعتان مستقيمتان هما نصفا قطر: 36 + 36 = 72 سم. فالمحيط 169,56 + 72 = 241,56 سم. الخطأ الشائع نسيان نصفَي القطر فنجد 169,56، أو إضافة واحد فقط فنجد 205,56، أو أخذ ربع القوس بدل ثلاثة أرباعه فنجد 128,52.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.mes.aires",
+        "math.mes.perimetres"
+      ]
+    },
+    {
+      "prompt": "قرص نصف قطره 8 سم. ماذا نجد لمحيط دائرته ولمساحة قرصه؟ (π ≈ 3,14)",
+      "options": [
+        {
+          "id": "a",
+          "text": "المحيط 50,24 سم والمساحة 200,96 سم²"
+        },
+        {
+          "id": "b",
+          "text": "المحيط 200,96 سم والمساحة 50,24 سم²",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        },
+        {
+          "id": "c",
+          "text": "المحيط 25,12 سم والمساحة 200,96 سم²",
+          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+        },
+        {
+          "id": "d",
+          "text": "المحيط 50,24 سم والمساحة 25,12 سم²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المحيط = 2 × 3,14 × 8 = 50,24 سم، والمساحة = 3,14 × 8 × 8 = 200,96 سم². من بدّل الصيغتين وضع كلّ عدد مكان الآخر، ومن نسي العدد 2 وجد للمحيط 25,12، ومن ضرب في ر مرّة واحدة وجد للمساحة 25,12. الوحدة تشهد: سم للمحيط و سم² للمساحة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.mes.aires",
+        "math.mes.perimetres"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "دائرة قرصها مساحته 1 256 سم². ما محيط هذه الدائرة بالسنتيمتر؟ (π ≈ 3,14)",
+      "answerKey": {
+        "value": 125.6,
+        "unit": "سم"
+      },
+      "explanation": "المساحة = 3,14 × ر × ر، فر × ر = 1 256 ÷ 3,14 = 400، وبما أنّ 20 × 20 = 400 فنصف القطر 20 سم. المحيط = 2 × 3,14 × 20 = 125,6 سم. التحقّق: 3,14 × 20 × 20 = 1 256 ✓.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.mes.aires",
+        "math.mes.perimetres"
+      ]
     }
   ]
 }

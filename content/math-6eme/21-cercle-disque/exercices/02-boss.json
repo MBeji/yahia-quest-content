@@ -9,10 +9,24 @@
     {
       "prompt": "دائرةٌ نصفُ قطرها 4 سم. ما طولُ قطرها؟",
       "options": [
-        { "id": "a", "text": "8 سم" },
-        { "id": "b", "text": "4 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "c", "text": "2 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "d", "text": "16 سم" }
+        {
+          "id": "a",
+          "text": "8 سم"
+        },
+        {
+          "id": "b",
+          "text": "4 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "2 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "16 سم"
+        }
       ],
       "correctOption": "a",
       "explanation": "القطر = 2 × نصف القطر = 2 × 4 = 8 سم.",
@@ -20,25 +34,54 @@
       "competencies": ["math.geo.cercle"]
     },
     {
-      "prompt": "ما محيطُ دائرةٍ نصفُ قطرها 5 سم؟ (π ≈ 3,14)",
+      "prompt": "ما محيطُ دائرةٍ نصفُ قطرها 12 سم؟ (π ≈ 3,14)",
       "options": [
-        { "id": "a", "text": "31,4 سم" },
-        { "id": "b", "text": "15,7 سم", "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop" },
-        { "id": "c", "text": "78,5 سم", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
-        { "id": "d", "text": "10 سم", "misconceptionTag": "math.geo.facteur-pi-omis" }
+        {
+          "id": "a",
+          "text": "24 سم",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
+        },
+        {
+          "id": "b",
+          "text": "37,68 سم",
+          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+        },
+        {
+          "id": "c",
+          "text": "75,36 سم"
+        },
+        {
+          "id": "d",
+          "text": "452,16 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "المحيط = 2 × π × ر = 2 × 3,14 × 5 = 31,4 سم.",
+      "correctOption": "c",
+      "explanation": "المحيط = 2 × π × ر = 2 × 3,14 × 12 = 75,36 سم. من نسي العدد 2 وجد 37,68، ومن حسب 3,14 × 12 × 12 وجد 452,16 وهي مساحة القرص، ومن توقّف عند 2 × 12 = 24 نسي π.",
       "difficulty": 2,
       "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
       "prompt": "ما محيطُ دائرةٍ قطرُها 6 سم؟ (π ≈ 3,14)",
       "options": [
-        { "id": "a", "text": "18,84 سم" },
-        { "id": "b", "text": "37,68 سم", "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop" },
-        { "id": "c", "text": "12 سم", "misconceptionTag": "math.geo.facteur-pi-omis" },
-        { "id": "d", "text": "9,14 سم" }
+        {
+          "id": "a",
+          "text": "18,84 سم"
+        },
+        {
+          "id": "b",
+          "text": "37,68 سم",
+          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+        },
+        {
+          "id": "c",
+          "text": "12 سم",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
+        },
+        {
+          "id": "d",
+          "text": "9,14 سم"
+        }
       ],
       "correctOption": "a",
       "explanation": "المحيط = π × القطر = 3,14 × 6 = 18,84 سم.",
@@ -46,43 +89,196 @@
       "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
-      "prompt": "ما مساحةُ قرصٍ نصفُ قطره 2 سم؟ (π ≈ 3,14)",
+      "prompt": "ما مساحةُ قرصٍ نصفُ قطره 0,5 سم؟ (π ≈ 3,14)",
       "options": [
-        { "id": "a", "text": "12,56 سم²" },
-        { "id": "b", "text": "6,28 سم²", "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues" },
-        { "id": "c", "text": "4 سم²", "misconceptionTag": "math.geo.facteur-pi-omis" },
-        { "id": "d", "text": "12,56 سم" }
+        {
+          "id": "a",
+          "text": "0,25 سم²",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
+        },
+        {
+          "id": "b",
+          "text": "0,785 سم²"
+        },
+        {
+          "id": "c",
+          "text": "1,57 سم²"
+        },
+        {
+          "id": "d",
+          "text": "3,14 سم²",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "مساحةُ القرص = π × ر × ر = 3,14 × 2 × 2 = 12,56 سم².",
+      "correctOption": "b",
+      "explanation": "مساحة القرص = π × ر × ر = 3,14 × 0,5 × 0,5 = 3,14 × 0,25 = 0,785 سم². من حسب 2 × 3,14 × 0,5 = 3,14 أخذ صيغة المحيط، ومن ضرب في ر مرّة واحدة وجد 1,57، ومن نسي π وجد 0,25.",
       "difficulty": 3,
       "competencies": ["math.geo.cercle", "math.mes.aires"]
     },
     {
-      "prompt": "أيُّ مقدارٍ يخصُّ القرصَ (السطحَ الممتلئ)؟",
+      "prompt": "أيّ هذه الأشياء يمثّل قرصًا لا دائرة؟",
       "options": [
-        { "id": "a", "text": "المساحة" },
-        { "id": "b", "text": "المحيط فقط", "misconceptionTag": "math.geo.cercle-et-disque-confondus" },
-        { "id": "c", "text": "نصف القطر فقط" },
-        { "id": "d", "text": "الزاوية" }
+        {
+          "id": "a",
+          "text": "سطح قطعة نقديّة"
+        },
+        {
+          "id": "b",
+          "text": "الخطّ الذي يرسمه البركار على الورقة",
+          "misconceptionTag": "math.geo.cercle-et-disque-confondus"
+        },
+        {
+          "id": "c",
+          "text": "حافّة صحن مستدير",
+          "misconceptionTag": "math.geo.cercle-et-disque-confondus"
+        },
+        {
+          "id": "d",
+          "text": "خيط ملفوف حول علبة أسطوانيّة"
+        }
       ],
       "correctOption": "a",
-      "explanation": "القرصُ سطحٌ ممتلئٌ، فنحسبُ له مساحةً (π × ر × ر)؛ أمّا المحيطُ فهو طولُ الدائرة.",
+      "explanation": "القرص سطحٌ ممتلئ يُغطّي، وسطح القطعة النقديّة كذلك: له مساحة. أمّا خطّ البركار وحافّة الصحن والخيط الملفوف فخطوط منحنية مغلقة لا تملأ شيئًا: هي دوائر، لها محيط لا مساحة.",
       "difficulty": 2,
-      "competencies": ["math.geo.cercle"]
+      "competencies": ["math.geo.cercle", "math.mes.aires"]
     },
     {
-      "prompt": "دائرةٌ قطرُها 14 سم. ما طولُ نصف قطرها؟",
+      "prompt": "دائرةٌ قطرُها 18 سم. ما طولُ نصف قطرها؟",
       "options": [
-        { "id": "a", "text": "7 سم" },
-        { "id": "b", "text": "28 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "c", "text": "14 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "d", "text": "3,5 سم" }
+        {
+          "id": "a",
+          "text": "4,5 سم"
+        },
+        {
+          "id": "b",
+          "text": "9 سم"
+        },
+        {
+          "id": "c",
+          "text": "18 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "36 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نصفُ القطر = القطر ÷ 2 = 18 ÷ 2 = 9 سم: المركز يقسم القطر إلى نصفين. من ضاعف وجد 36، ومن أعاد القطر نفسه وجد 18.",
+      "difficulty": 3,
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
+    },
+    {
+      "prompt": "قرص مساحته 379,94 سم². ما نصف قطره؟ (π ≈ 3,14)",
+      "options": [
+        {
+          "id": "a",
+          "text": "11 سم"
+        },
+        {
+          "id": "b",
+          "text": "22 سم"
+        },
+        {
+          "id": "c",
+          "text": "60,5 سم"
+        },
+        {
+          "id": "d",
+          "text": "121 سم"
+        }
       ],
       "correctOption": "a",
-      "explanation": "نصفُ القطر = القطر ÷ 2 = 14 ÷ 2 = 7 سم.",
+      "explanation": "المساحة = 3,14 × ر × ر، فر × ر = 379,94 ÷ 3,14 = 121، والعدد الذي جداء ضربه في نفسه 121 هو 11: ر = 11 سم. التحقّق: 3,14 × 11 × 11 = 379,94 ✓. الخطأ الشائع التوقّف عند 121، وهو ر × ر لا ر.",
       "difficulty": 3,
-      "competencies": ["math.geo.cercle"]
+      "competencies": ["math.geo.cercle", "math.mes.aires"]
+    },
+    {
+      "prompt": "قطعة خشبية على شكل نصف قرص قطره 24 سم. ما محيطها كلّه، أي القوس والقطر معًا؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 190\"><path d=\"M80 150 A100 100 0 0 1 280 150 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M80 150 L280 150\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"180\" y=\"174\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">24</text><circle cx=\"180\" cy=\"150\" r=\"3\" fill=\"#0f172a\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "37,68 سم",
+          "misconceptionTag": "math.mes.perimetre-partie-du-bord-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "61,68 سم"
+        },
+        {
+          "id": "c",
+          "text": "75,36 سم",
+          "misconceptionTag": "math.geo.arc-circonference-entiere-prise-pour-l-arc"
+        },
+        {
+          "id": "d",
+          "text": "150,72 سم",
+          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "القوس نصف الدائرة: 3,14 × 24 ÷ 2 = 37,68 سم. ومحيط القطعة يضيف القطر الذي يحدّها: 37,68 + 24 = 61,68 سم. الخطأ الشائع التوقّف عند القوس 37,68، ومن أخذ الدائرة كلّها وجد 75,36.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.mes.aires",
+        "math.mes.perimetres"
+      ]
+    },
+    {
+      "prompt": "ساحة مستديرة نصف قطرها 9 م، في وسطها حوض مستدير نصف قطره 7 م، والباقي مبلّط. ما مساحة الجزء المبلّط؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 230\"><circle cx=\"180\" cy=\"115\" r=\"90\" fill=\"#0f6e56\" fill-opacity=\"0.2\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"60\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"115\" r=\"3\" fill=\"#0f172a\"/><path d=\"M180 115 L270 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"255\" y=\"107\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">9</text><path d=\"M180 115 L130.9 80.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"145\" y=\"92.1\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">7</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12,56 م²",
+          "misconceptionTag": "math.geo.couronne-largeur-prise-pour-rayon"
+        },
+        {
+          "id": "b",
+          "text": "100,48 م²"
+        },
+        {
+          "id": "c",
+          "text": "254,34 م²"
+        },
+        {
+          "id": "d",
+          "text": "408,2 م²",
+          "misconceptionTag": "math.mes.aire-composee-somme-au-lieu-de-difference"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الجزء المبلّط إكليل: قرص كبير ناقص قرص صغير. مساحة الكبير 3,14 × 9 × 9 = 254,34 م²، ومساحة الصغير 3,14 × 7 × 7 = 153,86 م²، فالفرق 254,34 − 153,86 = 100,48 م². الأخطاء الشائعة: اعتبار الفرق 2 نصف قطر فنجد 12,56، أو الجمع فنجد 408,2.",
+      "difficulty": 3,
+      "competencies": ["math.geo.cercle", "math.mes.aires"]
+    },
+    {
+      "prompt": "ما طول قوس ربع دائرة نصف قطرها 6 سم؟ (π ≈ 3,14)",
+      "options": [
+        {
+          "id": "a",
+          "text": "9,42 سم"
+        },
+        {
+          "id": "b",
+          "text": "18,84 سم",
+          "misconceptionTag": "math.geo.arc-circonference-entiere-prise-pour-l-arc"
+        },
+        {
+          "id": "c",
+          "text": "28,26 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        },
+        {
+          "id": "d",
+          "text": "37,68 سم"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "محيط الدائرة كلّها 2 × 3,14 × 6 = 37,68 سم، وربعها 37,68 ÷ 4 = 9,42 سم. 18,84 هو القوس نصف الدائرة، و28,26 هو مساحة ربع القرص (3,14 × 6 × 6 ÷ 4) لا طول القوس.",
+      "difficulty": 3,
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     }
   ]
 }

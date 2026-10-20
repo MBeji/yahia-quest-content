@@ -5,9 +5,17 @@
       "prompt": "متى يكون مستقيمان متعامدين؟",
       "options": [
         { "id": "a", "text": "إذا تقاطعا مكوّنَين زاوية قائمة" },
-        { "id": "b", "text": "إذا لم يتقاطعا أبدًا", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "c", "text": "إذا تقاطعا بأيّ زاوية", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
-        { "id": "d", "text": "إذا كانا متوازيين", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" }
+        {
+          "id": "b",
+          "text": "إذا لم يتقاطعا أبدًا",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
+        {
+          "id": "c",
+          "text": "إذا تقاطعا بأيّ زاوية",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        },
+        { "id": "d", "text": "إذا تقاطعا مكوّنَين زاوية حادّة" }
       ],
       "correctOption": "a",
       "explanation": "المستقيمان متعامدان إذا تقاطعا وكوّنا زاوية قائمة (90°)؛ التقاطعُ وحدَه لا يكفي.",
@@ -15,24 +23,36 @@
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "ما رمزُ التوازي بين مستقيمين؟",
+      "prompt": "المستقيم الذي يمرّ بمنتصف قطعة ويعامدها هو:",
       "options": [
-        { "id": "a", "text": "⊥", "misconceptionTag": "math.geo.symboles-perpendiculaire-parallele-confondus" },
-        { "id": "b", "text": "∥" },
-        { "id": "c", "text": "=" },
-        { "id": "d", "text": "×" }
+        {
+          "id": "a",
+          "text": "المستقيم القاطع لها",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        },
+        { "id": "b", "text": "الموسّط العمودي" },
+        { "id": "c", "text": "منصّف الزاوية" },
+        {
+          "id": "d",
+          "text": "المستقيم الموازي لها",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        }
       ],
       "correctOption": "b",
-      "explanation": "رمزُ التوازي هو ∥؛ أمّا ⊥ فهو رمزُ التعامد.",
+      "explanation": "الموسّط العمودي لقطعة هو المستقيم الذي يمرّ بمنتصفها ويعامدها في آنٍ واحد؛ والمنصّف يقسم زاوية لا قطعة، والموازي لا يقطعها أصلًا، والقاطع قد يقطعها دون أن يعامدها.",
       "difficulty": 1,
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
       "prompt": "ماذا يمثّل هذا الشكل؟ <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"58\" x2=\"92\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"10\" x2=\"50\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"50\" y=\"48\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "مستقيمان متوازيان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
+        {
+          "id": "a",
+          "text": "مستقيمان متوازيان",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
         { "id": "b", "text": "مستقيمان متعامدان" },
-        { "id": "c", "text": "مستقيمان متقاطعان بزاوية حادّة", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
+        { "id": "c", "text": "مستقيمان متقاطعان بزاوية حادّة" },
         { "id": "d", "text": "نصفا مستقيم" }
       ],
       "correctOption": "b",
@@ -41,22 +61,30 @@
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "ما الأداةُ المناسبة للتحقّق من التعامد ورسمِه (الزاوية القائمة)؟",
+      "prompt": "رسمنا منصّف زاوية قيسها 70°. ما قيس كلّ من الزاويتين الناتجتين؟",
       "options": [
-        { "id": "a", "text": "المنقلة" },
-        { "id": "b", "text": "الفرجار" },
-        { "id": "c", "text": "الكوس" },
-        { "id": "d", "text": "الميزان" }
+        {
+          "id": "a",
+          "text": "140°",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        { "id": "b", "text": "20°" },
+        { "id": "c", "text": "35°" },
+        { "id": "d", "text": "70°" }
       ],
       "correctOption": "c",
-      "explanation": "نستعمل الكوس (فيه زاوية قائمة) للتحقّق من التعامد ورسمِه.",
+      "explanation": "المنصّف يقسم الزاوية نصفين متقايسين: 70° ÷ 2 = 35°. من كتب 140° ضرب في 2 بدل أن يقسم.",
       "difficulty": 1,
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
       "prompt": "إذا كان (د1) ⊥ (د) و (د2) ⊥ (د)، فماذا نستنتج عن (د1) و (د2)؟",
       "options": [
-        { "id": "a", "text": "متعامدان", "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee" },
+        {
+          "id": "a",
+          "text": "متعامدان",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
         { "id": "b", "text": "متقاطعان بزاوية حادّة" },
         { "id": "c", "text": "منطبقان" },
         { "id": "d", "text": "متوازيان" }

@@ -7,34 +7,35 @@
   "displayOrder": 3,
   "questions": [
     {
-      "prompt": "مساحةُ متوازي الأضلاع تساوي:",
+      "prompt": "متوازي أضلاع قاعدته 12 سم وارتفاعه 5 سم. ما مساحته؟",
       "options": [
         {
           "id": "a",
-          "text": "القاعدة × الارتفاع"
-        },
-        {
-          "id": "b",
-          "text": "القاعدة + الارتفاع",
+          "text": "17 سم²",
           "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
         },
         {
-          "id": "c",
-          "text": "(القاعدة × الارتفاع) ÷ 2",
+          "id": "b",
+          "text": "30 سم²",
           "misconceptionTag": "math.mes.aire-division-par-deux-appliquee-a-tort"
         },
         {
+          "id": "c",
+          "text": "60 سم²"
+        },
+        {
           "id": "d",
-          "text": "القاعدة × 4"
+          "text": "125 سم²",
+          "misconceptionTag": "math.num.chiffres-juxtaposes-au-lieu-du-produit"
         }
       ],
-      "correctOption": "a",
-      "explanation": "مساحةُ متوازي الأضلاع = القاعدة × الارتفاع (دون قسمةٍ على 2، بخلاف المثلّث).",
+      "correctOption": "c",
+      "explanation": "مساحةُ متوازي الأضلاع = القاعدة × الارتفاع = 12 × 5 = 60 سم²، دون قسمة على 2. من قسم على 2 وجد 30، ومن جمع البعدين وجد 17.",
       "difficulty": 1,
       "competencies": ["math.mes.aires"]
     },
     {
-      "prompt": "مستطيلٌ طولُه 7 سم وعرضُه 4 سم. ما مساحتُه؟\n<svg viewBox=\"0 0 202 134\">\n<title>مستطيل طوله وعرضه معطيان</title>\n<rect x=\"40\" y=\"30\" width=\"112\" height=\"64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><text x=\"96\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">7 سم</text><text x=\"55\" y=\"66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4 سم</text>\n</svg>",
+      "prompt": "مستطيلٌ طولُه 7 سم وعرضُه 4 سم. ما مساحتُه؟\n<svg viewBox=\"0 0 202 134\">\n<title>مستطيل طوله وعرضه معطيان</title>\n<rect x=\"40\" y=\"30\" width=\"112\" height=\"64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><text x=\"96\" y=\"19\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">7 سم</text><text x=\"62\" y=\"66\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4 سم</text>\n</svg>",
       "options": [
         {
           "id": "a",
@@ -168,6 +169,85 @@
       ],
       "correctOption": "a",
       "explanation": "مساحةُ متوازي الأضلاع = القاعدة × الارتفاع = 9 × 5 = 45 سم².",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "حديقة مساحتها 2 500 م². كم مساحتها بالهكتار؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25 هكتار"
+        },
+        {
+          "id": "b",
+          "text": "25 هكتار"
+        },
+        {
+          "id": "c",
+          "text": "250 هكتار",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        },
+        {
+          "id": "d",
+          "text": "25 000 هكتار"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1 هكتار = 10 000 م²، فنقسم: 2 500 ÷ 10 000 = 0,25 هكتار، أي ربع هكتار. الخطأ الشائع تحويل العدد بعامل 10 كما في الأطوال، أو ضربه بدل قسمته: الهكتار أكبر من المتر المربّع بكثير فيجب أن يصغر العدد.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "ما مساحة المثلّث القائم الآتي؟ الأطوال بالسنتيمتر.\n<svg viewBox=\"0 0 330 185\"><path d=\"M60 150 L240 150 L60 15 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M60 150 L240 150 L60 15 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M72 150 L72 138 L60 138\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"60\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"15\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"150\" y=\"174\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">12</text><text x=\"40\" y=\"87.5\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">9</text><text x=\"166\" y=\"76.5\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">15</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "21 سم²",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        {
+          "id": "b",
+          "text": "54 سم²"
+        },
+        {
+          "id": "c",
+          "text": "90 سم²",
+          "misconceptionTag": "math.mes.aire-cote-oblique-pris-pour-hauteur"
+        },
+        {
+          "id": "d",
+          "text": "108 سم²",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث القائم ضلعا الزاوية القائمة 12 و 9 هما قاعدة وارتفاع كلّ منهما للآخر: المساحة = (12 × 9) ÷ 2 = 108 ÷ 2 = 54 سم². الضلع 15 مائل على الضلعين فليس ارتفاعًا؛ ومن ضربه في 12 وجد (12 × 15) ÷ 2 = 90، ومن نسي القسمة على 2 وجد 108.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "متوازيا الأضلاع أ و ب لهما القاعدة 6 سم والارتفاع 4 سم نفسهما، لكنّ الشكل ب أكثر ميلًا من الشكل أ. ماذا نقول عن مساحتيهما؟\n<svg viewBox=\"0 0 350 205\"><path d=\"M20 150 L116 150 L132 86 L36 86 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M20 150 L116 150 L132 86 L36 86 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M36 86 L36 150\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M45 150 L45 141 L36 141\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"68\" y=\"172\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><text x=\"26\" y=\"121\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><text x=\"84\" y=\"196\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">أ</text><path d=\"M190 150 L286 150 L342 86 L246 86 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M190 150 L286 150 L342 86 L246 86 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M246 86 L246 150\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M255 150 L255 141 L246 141\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"238\" y=\"172\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><text x=\"236\" y=\"121\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><text x=\"294\" y=\"196\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">ب</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "الشكل ب أكبر، لأنّ ضلعه المائل أطول"
+        },
+        {
+          "id": "b",
+          "text": "متساويتان، لأنّ لهما القاعدة والارتفاع نفسهما"
+        },
+        {
+          "id": "c",
+          "text": "الشكل أ أكبر، لأنّ ضلعه المائل أقصر"
+        },
+        {
+          "id": "d",
+          "text": "لا يمكن المقارنة، لأنّ الضلعين المائلين غير معلومين"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "مساحة متوازي الأضلاع = القاعدة × الارتفاع، وهي في كلّ منهما 6 × 4 = 24 سم². الضلع المائل لا يدخل في الصيغة، فلا يغيّر ميله المساحة. الخطأ الشائع أن نظنّ أنّ الشكل الأكثر ميلًا أو الأطول ضلعًا أكبر مساحةً.",
       "difficulty": 3,
       "competencies": ["math.mes.aires"]
     }
