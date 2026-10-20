@@ -277,7 +277,7 @@ Défaut accessoire (si le pilote la garde malgré tout) : **[MAJEUR] q5 → q4**
 | m041 | 08/06 | 10 | 0 | 0 | 1 (mission entière) | — | **coupée (E-1)** |
 | **total** | | **84** | **3** (clés justes sur la figure de la mission, fausses contre la session citée) | **3 défauts / 4 q** | **24** | **15** | 53 q + 3 à trancher |
 
-84 questions re-résolues à l'aveugle (dont 23 de boussole, rotation refaite pour chacune). Aucune clé n'est fausse **par rapport à la figure que la mission montre** ; trois clés le sont **par rapport au sujet officiel cité** (figures 2019 et 2010 mal refaites), et une figure (m040 q2) contredit son énoncé. La science est juste partout (aucune explication fausse ; une formulation trop absolue, m040 q5). Rendu RTL 360 px : toutes les figures lisibles, aucune légende chevauchée, aucune inversion bidi observée.
+84 questions re-résolues à l'aveugle (dont 17 de directions sur boussole ou rose, rotation du repère refaite pour chacune). Aucune clé n'est fausse **par rapport à la figure que la mission montre** ; trois clés le sont **par rapport au sujet officiel cité** (figures 2019 et 2010 mal refaites), et une figure (m040 q2) contredit son énoncé. La science est juste partout (aucune explication fausse ; une formulation trop absolue, m040 q5). Rendu RTL 360 px : toutes les figures lisibles, aucune légende chevauchée, aucune inversion bidi observée.
 
 **Réponse à la question E-1 (m041)** : oui — chacune des 10 questions re-pose un item du `08` mis à niveau (tableau ci-dessus) ; la mission est à couper.
 
