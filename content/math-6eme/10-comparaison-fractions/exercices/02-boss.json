@@ -7,41 +7,65 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "قارن بين 4/9 و 7/9.",
+      "prompt": "أكلت سلمى 4/9 من فطيرة، وأكل سامي 7/9 من فطيرة مثلها. مَن أكل أكثر؟",
       "options": [
-        { "id": "a", "text": "4/9 > 7/9", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
-        { "id": "b", "text": "4/9 < 7/9" },
-        { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
+        {
+          "id": "a",
+          "text": "سلمى",
+          "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
+        },
+        { "id": "b", "text": "سامي" },
+        { "id": "c", "text": "أكلا القدر نفسه" },
+        {
+          "id": "d",
+          "text": "لا نعرف دون رسم",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
       ],
       "correctOption": "b",
-      "explanation": "عند تساوي المقام، الأكبرُ بسطًا هو الأكبر؛ وبما أنّ 4 < 7 فإنّ 4/9 < 7/9.",
+      "explanation": "الكسران لهما المقام نفسه (9)، فالأكبر صاحب البسط الأكبر: 7 > 4، إذن 7/9 > 4/9، وسامي أكل أكثر.",
       "difficulty": 1,
       "competencies": ["math.frac.comparaison"]
     },
     {
-      "prompt": "أيُّ الكسرين أكبر: 3/4 أم 3/7؟",
+      "prompt": "حلّ ياسين 3/4 من تمارين الكرّاس، وحلّت هالة 3/7 من التمارين نفسها. مَن حلّ أكثر؟",
       "options": [
-        { "id": "a", "text": "3/4" },
-        { "id": "b", "text": "3/7", "misconceptionTag": "math.frac.comparaison-par-denominateur" },
-        { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "3/11" }
+        { "id": "a", "text": "ياسين" },
+        {
+          "id": "b",
+          "text": "هالة",
+          "misconceptionTag": "math.frac.comparaison-par-denominateur"
+        },
+        { "id": "c", "text": "حلّا القدر نفسه" },
+        {
+          "id": "d",
+          "text": "لا نعرف لأنّ المقامين مختلفان",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
       ],
       "correctOption": "a",
-      "explanation": "عند تساوي البسط (3)، الأصغرُ مقامًا هو الأكبر: بما أنّ 4 < 7 فإنّ 3/4 > 3/7.",
+      "explanation": "البسطان متساويان (3)، فالأكبر صاحب المقام الأصغر: 4 < 7، إذن 3/4 > 3/7، فياسين حلّ أكثر.",
       "difficulty": 2,
       "competencies": ["math.frac.comparaison"]
     },
     {
-      "prompt": "قارن بين 5/6 و 7/8 (وحّد على 24).",
+      "prompt": "قارن بين 5/6 و 4/5 (وحّد على 30).",
       "options": [
-        { "id": "a", "text": "5/6 > 7/8", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
+        {
+          "id": "a",
+          "text": "5/6 < 4/5",
+          "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
+        },
         { "id": "b", "text": "متساويان" },
-        { "id": "c", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" },
-        { "id": "d", "text": "5/6 < 7/8" }
+        {
+          "id": "c",
+          "text": "لا يمكن المقارنة",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        },
+        { "id": "d", "text": "5/6 > 4/5" }
       ],
       "correctOption": "d",
-      "explanation": "نوحّد على 24: 5/6 = 20/24 و 7/8 = 21/24؛ وبما أنّ 20 < 21 فإنّ 5/6 < 7/8.",
+      "explanation": "نوحّد على 30: 5/6 = 25/30 و 4/5 = 24/30؛ وبما أنّ 25 > 24 فإنّ 5/6 > 4/5.",
       "difficulty": 2,
       "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
     },
@@ -49,7 +73,11 @@
       "prompt": "رتّب تنازليًّا: 1/2 ؛ 3/4 ؛ 1/4 (وحّد على 4).",
       "options": [
         { "id": "a", "text": "3/4 > 1/2 > 1/4" },
-        { "id": "b", "text": "1/4 > 1/2 > 3/4", "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus" },
+        {
+          "id": "b",
+          "text": "1/4 > 1/2 > 3/4",
+          "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus"
+        },
         { "id": "c", "text": "1/2 > 3/4 > 1/4" },
         { "id": "d", "text": "3/4 > 1/4 > 1/2" }
       ],
@@ -59,30 +87,79 @@
       "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
     },
     {
-      "prompt": "أيُّ كسرٍ أقربُ إلى 1: 5/6 أم 3/4؟",
+      "prompt": "قارنت أمل 4/5 و 6/7 دون توحيد المقامين: كتبت أنّ 4/5 ينقصه 1/5 حتّى 1، وأنّ 6/7 ينقصه 1/7. أيّ جملة صحيحة في نتيجتها وفي تعليلها معًا؟",
       "options": [
-        { "id": "a", "text": "3/4" },
-        { "id": "b", "text": "متساويان" },
-        { "id": "c", "text": "5/6" },
-        { "id": "d", "text": "لا يمكن المعرفة" }
+        {
+          "id": "a",
+          "text": "4/5 > 6/7 لأنّ 1/5 > 1/7",
+          "misconceptionTag": "math.frac.complement-lu-a-l-envers"
+        },
+        { "id": "b", "text": "4/5 < 6/7 لأنّ 1/5 < 1/7" },
+        { "id": "c", "text": "4/5 > 6/7 لأنّ 1/5 < 1/7" },
+        { "id": "d", "text": "4/5 < 6/7 لأنّ 1/5 > 1/7" }
       ],
-      "correctOption": "c",
-      "explanation": "نوحّد على 12: 5/6 = 10/12 و 3/4 = 9/12؛ و 10/12 أقربُ إلى 12/12 = 1، فإنّ 5/6 أقربُ إلى 1.",
+      "correctOption": "d",
+      "explanation": "الجزءان الناقصان بسطاهما 1، فالأكبر منهما صاحب المقام الأصغر: 1/5 > 1/7. الكسر الذي ينقصه جزء أكبر هو الأصغر، إذن 4/5 < 6/7. العبارة 1/5 < 1/7 خاطئة، والحكم 4/5 > 6/7 يعكس اتّجاه المقارنة.",
       "difficulty": 3,
       "competencies": ["math.frac.comparaison"]
     },
     {
-      "prompt": "قارن بين 2/3 و 5/6 (وحّد على 6).",
+      "prompt": "أكمل بالعلامة المناسبة بعد كتابة الكسرين على المقام 6: 2/3 … 5/6",
       "options": [
-        { "id": "a", "text": "2/3 > 5/6", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
-        { "id": "b", "text": "2/3 < 5/6" },
-        { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
+        {
+          "id": "a",
+          "text": ">",
+          "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
+        },
+        { "id": "b", "text": "<" },
+        { "id": "c", "text": "=" },
+        {
+          "id": "d",
+          "text": "لا علامة تصلح",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
       ],
       "correctOption": "b",
       "explanation": "نوحّد على 6: 2/3 = 4/6 و 5/6؛ وبما أنّ 4 < 5 فإنّ 2/3 < 5/6.",
       "difficulty": 3,
       "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "أيّ كتابة من الكتابات التالية صحيحة؟",
+      "options": [
+        { "id": "a", "text": "29/7 < 4" },
+        { "id": "b", "text": "17/2 < 8" },
+        {
+          "id": "c",
+          "text": "22/5 > 5",
+          "misconceptionTag": "math.frac.numerateur-compare-a-l-entier"
+        },
+        { "id": "d", "text": "22/5 < 5" }
+      ],
+      "correctOption": "d",
+      "explanation": "نكتب العدد الصحيح كسرًا بمقام الكسر: 5 = 25/5 و22 < 25، إذن 22/5 < 5 (22 ÷ 5 = 4,4). أمّا 29/7 > 4 لأنّ 4 = 28/7، و17/2 > 8 لأنّ 8 = 16/2، وكتابة 22/5 > 5 تقارن البسط 22 وحده بالعدد 5.",
+      "difficulty": 3,
+      "competencies": ["math.frac.comparaison"]
+    },
+    {
+      "type": "ordering",
+      "prompt": "رتّب الأعداد الكسريّة التالية ترتيبًا تصاعديًّا (من الأصغر إلى الأكبر):",
+      "options": [
+        { "id": "c", "text": "9/7" },
+        { "id": "a", "text": "3/8" },
+        { "id": "d", "text": "7/5" },
+        { "id": "b", "text": "5/6" }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "نقارن بالوحدة أوّلًا: 3/8 و5/6 أصغر من 1، و9/7 و7/5 أكبر من 1، فالأوّلان قبل الأخيرين. على المقام 24: 3/8 = 9/24 < 5/6 = 20/24. وعلى المقام 35: 9/7 = 45/35 < 7/5 = 49/35. الترتيب: 3/8 < 5/6 < 9/7 < 7/5.",
+      "difficulty": 3,
+      "competencies": ["math.frac.comparaison"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "items": ["L40 ex. 9", "L40 ex. 10"]
+  }
 }

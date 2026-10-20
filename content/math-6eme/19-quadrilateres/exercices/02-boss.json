@@ -7,15 +7,19 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><rect x=\"27\" y=\"24\" width=\"50\" height=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"27\" y=\"24\" width=\"9\" height=\"9\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.3\"/></svg>",
+      "prompt": "قطرا الرباعيّ هما القطعتان اللتان تصلان:",
       "options": [
-        { "id": "a", "text": "مربّع" },
-        { "id": "b", "text": "مستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "c", "text": "معيّن", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "d", "text": "شبه منحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
+        { "id": "a", "text": "منتصف ضلع برأس مجاور" },
+        {
+          "id": "b",
+          "text": "رأسين متتاليين",
+          "misconceptionTag": "math.geo.parallelogramme-sommets-mal-ordonnes"
+        },
+        { "id": "c", "text": "رأسين متقابلين" },
+        { "id": "d", "text": "منتصفي ضلعين متقابلين" }
       ],
-      "correctOption": "a",
-      "explanation": "أضلاعُه الأربعة متساوية وزواياه قائمة، فهو مربّع.",
+      "correctOption": "c",
+      "explanation": "قطر الرباعيّ قطعة تصل رأسين متقابلين، أي لا يشتركان في ضلع؛ فللرباعيّ أبجد قطران هما [أج] و[بد]. أمّا القطعة التي تصل رأسين متتاليين فهي ضلع.",
       "difficulty": 1,
       "competencies": ["math.geo.quadrilateres"]
     },
@@ -23,9 +27,21 @@
       "prompt": "المربّعُ هو في آنٍ واحد:",
       "options": [
         { "id": "a", "text": "مستطيلٌ ومعيّن" },
-        { "id": "b", "text": "شبه منحرف" },
-        { "id": "c", "text": "مثلّث" },
-        { "id": "d", "text": "بلا تصنيف" }
+        {
+          "id": "b",
+          "text": "مستطيلٌ لا معيّن",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "c",
+          "text": "معيّنٌ لا مستطيل",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "d",
+          "text": "شبه منحرف ومتوازي أضلاع",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        }
       ],
       "correctOption": "a",
       "explanation": "المربّعُ مستطيلٌ (زواياه قائمة) ومعيّنٌ (أضلاعُه متساوية) في الوقت نفسه.",
@@ -33,25 +49,37 @@
       "competencies": ["math.geo.quadrilateres"]
     },
     {
-      "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"18,72 82,72 64,34 36,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"47,74 50,70 53,74\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><polyline points=\"47,36 50,32 53,36\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
+      "prompt": "في شبه المنحرف أبجد قاعدتاه [أب] و[دج]، رسمنا القطعة [قن] عموديّة على القاعدتين. ماذا تمثّل [قن]؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"34,26 66,26 92,76 8,76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"46\" y1=\"26\" x2=\"46\" y2=\"76\" stroke=\"#0f6e56\" stroke-width=\"1.8\" stroke-dasharray=\"4 3\"/><polyline points=\"52,26 52,32 46,32\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.5\"/><polyline points=\"52,76 52,70 46,70\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.5\"/><text x=\"30\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"70\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text><text x=\"98\" y=\"86\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ج</text><text x=\"4\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">د</text><text x=\"46\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ق</text><text x=\"46\" y=\"90\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ن</text></svg>",
       "options": [
-        { "id": "a", "text": "متوازي الأضلاع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "b", "text": "شبه المنحرف" },
-        { "id": "c", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "d", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
+        { "id": "a", "text": "الارتفاع" },
+        { "id": "b", "text": "الضلع المائل" },
+        { "id": "c", "text": "القاعدة الصغرى" },
+        { "id": "d", "text": "القطر" }
       ],
-      "correctOption": "b",
-      "explanation": "السهمان يدلّان على زوجٍ واحدٍ متوازٍ (القاعدتان) فقط، فهو شبه المنحرف.",
+      "correctOption": "a",
+      "explanation": "القطعة العموديّة على القاعدتين المتوازيتين، وطرفاها على مستقيميهما، هي ارتفاع شبه المنحرف، وطولها المسافة بين القاعدتين. القطر يصل رأسين متقابلين، والضلع المائل ليس عموديًّا عليهما.",
       "difficulty": 2,
       "competencies": ["math.geo.quadrilateres"]
     },
     {
       "prompt": "أيُّ رباعيٍّ أضلاعُه الأربعة متساوية وزواياه ليست قائمة عمومًا؟",
       "options": [
-        { "id": "a", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        {
+          "id": "a",
+          "text": "المربّع",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
         { "id": "b", "text": "المعيّن" },
-        { "id": "c", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "d", "text": "شبه المنحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
+        {
+          "id": "c",
+          "text": "المستطيل",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "d",
+          "text": "شبه المنحرف",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        }
       ],
       "correctOption": "b",
       "explanation": "المعيّنُ له 4 أضلاع متساوية، لكنّ زواياه ليست قائمة عمومًا (إن كانت قائمة صار مربّعًا).",
@@ -59,30 +87,109 @@
       "competencies": ["math.geo.quadrilateres"]
     },
     {
-      "prompt": "هذا الرباعيُّ له زوجان من الأضلاع المتوازية وليست زواياه قائمة. ما هو؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"26,72 74,72 86,34 38,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+      "prompt": "متوازي أضلاع قطراه متعامدان وغير متقايسين. ما أدقّ اسم له؟",
       "options": [
-        { "id": "a", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "b", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "c", "text": "متوازي الأضلاع" },
-        { "id": "d", "text": "شبه المنحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
+        {
+          "id": "a",
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "b",
+          "text": "مستطيل",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        { "id": "c", "text": "معيّن" },
+        {
+          "id": "d",
+          "text": "متوازي أضلاع",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        }
       ],
       "correctOption": "c",
-      "explanation": "زوجان متوازيان دون زوايا قائمة ⟸ متوازي الأضلاع.",
+      "explanation": "التعامد خاصّية قطري المعيّن، وهما هنا غير متقايسين فليس مربّعًا، وقطرا المستطيل متقايسان. والمعيّن متوازي أضلاع، لكنّ الاسم الأدقّ هو المعيّن.",
       "difficulty": 3,
       "competencies": ["math.geo.quadrilateres"]
     },
     {
       "prompt": "كلُّ مستطيلٍ هو متوازي أضلاع، لأنّ:",
       "options": [
-        { "id": "a", "text": "له زوجٌ واحدٌ متوازٍ", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
-        { "id": "b", "text": "أضلاعَه مختلفة" },
-        { "id": "c", "text": "لا أضلاع متوازية فيه", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
-        { "id": "d", "text": "أضلاعَه المتقابلة متوازية ومتساوية" }
+        {
+          "id": "a",
+          "text": "له زوجٌ واحدٌ فقط من الأضلاع المتوازية",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        {
+          "id": "b",
+          "text": "قطراه متعامدان",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        {
+          "id": "c",
+          "text": "لا أضلاع متوازية فيه",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        { "id": "d", "text": "أضلاعه المتقابلة متوازية" }
       ],
       "correctOption": "d",
-      "explanation": "المستطيلُ تتوفّر فيه خاصّيّةُ متوازي الأضلاع (زوجان من الأضلاع المتقابلة المتوازية والمتساوية)، مع زوايا قائمة زيادةً.",
+      "explanation": "المستطيل كلّ ضلعين متقابلين فيه متوازيان، وهذا تعريف متوازي الأضلاع؛ وتضيف له زواياه القائمة اسمه الأدقّ. وقطراه متقايسان لا متعامدان.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "أبجد مستطيل (ليس مربّعًا)، ومحورا تناظره يقطعان أضلاعه في س وق وص وع. ما نوع الرباعيّ س‌ق‌ص‌ع؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"10,24 90,24 90,74 10,74\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"50,24 90,49 50,74 10,49\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><line x1=\"50\" y1=\"24\" x2=\"50\" y2=\"74\" stroke=\"#0f6e56\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"10\" y1=\"49\" x2=\"90\" y2=\"49\" stroke=\"#0f6e56\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"5\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"95\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text><text x=\"95\" y=\"84\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ج</text><text x=\"5\" y=\"84\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">د</text><text x=\"50\" y=\"18\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">س</text><text x=\"97\" y=\"52\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ق</text><text x=\"50\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ص</text><text x=\"3\" y=\"53\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ع</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "مستطيل",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        { "id": "b", "text": "معيّن" },
+        {
+          "id": "c",
+          "text": "شبه منحرف",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "d",
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نقطتا س وص منتصفا الطولين، وق وع منتصفا العرضين. أضلاع س‌ق‌ص‌ع هي أوتار أربعة مثلّثات قائمة متقايسة، فهي متساوية، وقطراه [سص] و[قع] متعامدان ولهما المنتصف نفسه: معيّن. وليس مربّعًا لأنّ قطريه غير متقايسين (طول المستطيل يخالف عرضه).",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "النقطة د على الموسّط العمودي للقطعة [أب]، والنقطة ق مناظرة د بالنسبة إلى المستقيم (أب). ما نوع الرباعيّ أ‌ق‌ب‌د؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"14,50 50,80 86,50 50,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"14\" y1=\"50\" x2=\"86\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"7\" y=\"54\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"93\" y=\"54\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text><text x=\"50\" y=\"13\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">د</text><text x=\"50\" y=\"95\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ق</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "مستطيل",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "b",
+          "text": "شبه منحرف",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        {
+          "id": "c",
+          "text": "مربّع",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        { "id": "d", "text": "معيّن" }
+      ],
+      "correctOption": "d",
+      "explanation": "د على الموسّط العمودي، فتبعد عن أ وعن ب البعد نفسه: دأ = دب. والتناظر ينقل د إلى ق، فقأ = دأ وقب = دب. الأضلاع الأربعة متساوية، فالرباعيّ معيّن. وهو مربّع فقط في موضع خاصّ لـ د، فلا نجزم به.",
       "difficulty": 3,
       "competencies": ["math.geo.quadrilateres"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "27-30,42-45",
+    "items": ["L9 ex. 3", "L15 ex. 2", "L15 ex. 3", "L15 ex. 9"]
+  }
 }

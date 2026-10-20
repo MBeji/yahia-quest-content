@@ -5,12 +5,21 @@
   "xpReward": 50,
   "rewardCoins": 10,
   "displayOrder": 1,
+  "manuel": {
+    "code": "102609",
+    "pages": "10-13",
+    "items": ["ex. 2 أ (22,18 × 0,01)", "ex. 2 ب (15 : 0,1)"]
+  },
   "questions": [
     {
       "prompt": "ما ناتجُ 2,1 × 2؟",
       "options": [
         { "id": "a", "text": "4,2" },
-        { "id": "b", "text": "42", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        {
+          "id": "b",
+          "text": "42",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
         { "id": "c", "text": "2,2" },
         {
           "id": "d",
@@ -33,7 +42,11 @@
           "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
         },
         { "id": "c", "text": "13" },
-        { "id": "d", "text": "0,13", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" }
+        {
+          "id": "d",
+          "text": "0,13",
+          "misconceptionTag": "math.num.puissance-de-dix-sens-inverse"
+        }
       ],
       "correctOption": "c",
       "explanation": "الضربُ في 10 يُزحزح الفاصلةَ رقمًا واحدًا نحو اليمين: 1,3 × 10 = 13.",
@@ -43,7 +56,11 @@
     {
       "prompt": "ما ناتجُ 6,4 ÷ 2؟",
       "options": [
-        { "id": "a", "text": "32", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        {
+          "id": "a",
+          "text": "32",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
         { "id": "b", "text": "3,2" },
         { "id": "c", "text": "2,2" },
         {
@@ -58,49 +75,69 @@
       "competencies": ["math.num.mult-div-decimaux"]
     },
     {
-      "prompt": "كم رقمًا عشريًّا في جداء 0,5 × 0,5؟",
-      "options": [
-        { "id": "a", "text": "1", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
-        { "id": "b", "text": "2" },
-        { "id": "c", "text": "0", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
-        { "id": "d", "text": "3", "misconceptionTag": "math.num.produit-decimales-mal-comptees" }
-      ],
-      "correctOption": "b",
-      "explanation": "نجمع الأرقامَ العشرية للعاملين: 1 + 1 = 2، فجداءُ 0,5 × 0,5 = 0,25 فيه رقمان عشريّان.",
-      "difficulty": 2,
-      "competencies": ["math.num.mult-div-decimaux"]
-    },
-    {
-      "prompt": "ما ناتجُ 3,2 × 4؟",
+      "prompt": "ما ناتجُ 22,18 × 0,01؟",
       "options": [
         {
           "id": "a",
-          "text": "128",
-          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+          "text": "0,02218",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
         },
-        { "id": "b", "text": "12,2" },
-        { "id": "c", "text": "6,4" },
-        { "id": "d", "text": "12,8" }
+        { "id": "b", "text": "0,2218" },
+        {
+          "id": "c",
+          "text": "2,218",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "d",
+          "text": "2 218",
+          "misconceptionTag": "math.num.puissance-de-dix-sens-inverse"
+        }
       ],
-      "correctOption": "d",
-      "explanation": "نحسب 32 × 4 = 128، وفي العامل 3,2 رقمٌ عشريٌّ واحد، فالجداء 12,8.",
+      "correctOption": "b",
+      "explanation": "الضرب في 0,01 هو القسمة على 100: نحرّك الفاصلة رتبتين نحو اليسار، فنجد 22,18 × 0,01 = 0,2218. تحقّق: 0,2218 × 100 = 22,18 ✓. الضرب في عددٍ أصغر من 1 يُصغّر العدد.",
       "difficulty": 2,
       "competencies": ["math.num.mult-div-decimaux"]
     },
     {
-      "prompt": "ما ناتجُ 45,6 ÷ 10؟",
+      "prompt": "ما ناتجُ 15 ÷ 0,1؟",
       "options": [
-        { "id": "a", "text": "456", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" },
+        {
+          "id": "a",
+          "text": "0,15",
+          "misconceptionTag": "math.num.puissance-de-dix-sens-inverse"
+        },
         {
           "id": "b",
-          "text": "0,456",
+          "text": "1,5",
+          "misconceptionTag": "math.num.puissance-de-dix-sens-inverse"
+        },
+        { "id": "c", "text": "15" },
+        { "id": "d", "text": "150" }
+      ],
+      "correctOption": "d",
+      "explanation": "في 0,1 عُشرٌ واحد، فكم عُشرًا في 15؟ القسمة على 0,1 هي الضرب في 10 (نضرب العددين في 10: 150 ÷ 1)، فنحرّك الفاصلة رتبةً نحو اليمين: 15 ÷ 0,1 = 150. تحقّق: 0,1 × 150 = 15 ✓. القسمة على عددٍ أصغر من 1 تُكبّر العدد.",
+      "difficulty": 2,
+      "competencies": ["math.num.mult-div-decimaux"]
+    },
+    {
+      "prompt": "ما ناتجُ 72,3 ÷ 10؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "723",
+          "misconceptionTag": "math.num.puissance-de-dix-sens-inverse"
+        },
+        {
+          "id": "b",
+          "text": "0,723",
           "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
         },
-        { "id": "c", "text": "4,56" },
-        { "id": "d", "text": "45,6" }
+        { "id": "c", "text": "7,23" },
+        { "id": "d", "text": "72,3" }
       ],
       "correctOption": "c",
-      "explanation": "القسمةُ على 10 تُزحزح الفاصلةَ رقمًا واحدًا نحو اليسار: 45,6 ÷ 10 = 4,56.",
+      "explanation": "القسمةُ على 10 تُزحزح الفاصلةَ رتبةً واحدة نحو اليسار، والعدد يصغر: 72,3 ÷ 10 = 7,23 (تحقّق: 7,23 × 10 = 72,3).",
       "difficulty": 2,
       "competencies": ["math.num.mult-div-decimaux"]
     }

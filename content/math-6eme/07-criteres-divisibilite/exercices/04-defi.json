@@ -22,9 +22,17 @@
     {
       "prompt": "ما أصغرُ رقمٍ نضعه مكان ▢ في العدد 7▢2 ليقبل القسمةَ على 3؟",
       "options": [
-        { "id": "a", "text": "3", "misconceptionTag": "math.num.extremum-demande-ignore" },
+        {
+          "id": "a",
+          "text": "3",
+          "misconceptionTag": "math.num.extremum-demande-ignore"
+        },
         { "id": "b", "text": "1" },
-        { "id": "c", "text": "6", "misconceptionTag": "math.num.extremum-demande-ignore" },
+        {
+          "id": "c",
+          "text": "6",
+          "misconceptionTag": "math.num.extremum-demande-ignore"
+        },
         { "id": "d", "text": "0" }
       ],
       "correctOption": "d",
@@ -35,23 +43,35 @@
     {
       "prompt": "عددٌ يقبل القسمة على 9. ما الذي نتأكّد منه عن مجموع أرقامه؟",
       "options": [
-        { "id": "a", "text": "أنّه عددٌ فرديّ" },
-        { "id": "b", "text": "أنّه مضاعفٌ للعدد 9" },
-        { "id": "c", "text": "أنّه يساوي 9 دائمًا" },
-        { "id": "d", "text": "أنّه عددٌ زوجيّ" }
+        { "id": "a", "text": "أنّه يساوي 9 دائمًا" },
+        { "id": "b", "text": "أنّه مضاعفٌ للعدد 3 فقط" },
+        { "id": "c", "text": "أنّه أصغر من 9" },
+        { "id": "d", "text": "أنّه مضاعفٌ للعدد 9" }
       ],
-      "correctOption": "b",
-      "explanation": "إذا كان العددُ يقبل القسمة على 9، فإنّ مجموعَ أرقامه مضاعفٌ للعدد 9 (مثل 9 أو 18 أو 27).",
+      "correctOption": "d",
+      "explanation": "إذا كان العددُ يقبل القسمة على 9 فإنّ مجموع أرقامه مضاعفٌ للعدد 9، مثل 9 أو 18 أو 27: مجموع أرقام 99 مثلًا هو 18 لا 9. وهو مضاعفٌ للعدد 3 أيضًا لأنّ 9 = 3 × 3، فلا يصحّ حصر الحكم في 3.",
       "difficulty": 3,
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 2 و3 و5 معًا؟",
       "options": [
-        { "id": "a", "text": "100", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "b", "text": "115", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        {
+          "id": "a",
+          "text": "100",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "115",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
         { "id": "c", "text": "120" },
-        { "id": "d", "text": "144", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
+        {
+          "id": "d",
+          "text": "144",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        }
       ],
       "correctOption": "c",
       "explanation": "العددُ 120 زوجيّ (÷2)، ومجموعُ أرقامه 3 (÷3)، وآحاده 0 (÷5)، فهو يقبل القسمة على 2 و3 و5 معًا.",
@@ -59,30 +79,71 @@
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "عددٌ من ثلاث خاناتٍ يبدأ بـ 34 ويقبل القسمةَ على 5 و2 معًا. ما رقمُ آحاده؟",
-      "options": [
-        { "id": "a", "text": "0" },
-        { "id": "b", "text": "5", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "c", "text": "4", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "d", "text": "2", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
-      ],
-      "correctOption": "a",
-      "explanation": "ليقبل العددُ القسمةَ على 2 و5 معًا يجب أن يكون آحاده 0، فالعددُ 340.",
+      "type": "numeric",
+      "prompt": "كم رقمًا يصلح مكان ▢ في العدد 45▢0 ليقبل القسمة على 9؟ (اكتب عدد الأرقام)",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "مجموع الأرقام المعروفة 4 + 5 + 0 = 9، فنحتاج 9 + ▢ مضاعفًا لـ 9، أي ▢ = 0 (المجموع 9) أو ▢ = 9 (المجموع 18). الحلاّن هما 4500 و4590، فالجواب 2: رقمان وليس رقمًا واحدًا.",
       "difficulty": 3,
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "كم عددًا محصورًا بين 1 و30 يقبل القسمةَ على 9؟",
+      "prompt": "ما أصغرُ عددٍ من أربعة أرقام يقبل القسمة على 9 وعلى 5 معًا؟",
       "options": [
-        { "id": "a", "text": "2" },
-        { "id": "b", "text": "3" },
-        { "id": "c", "text": "4" },
-        { "id": "d", "text": "9" }
+        {
+          "id": "a",
+          "text": "1000",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "1005",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        { "id": "c", "text": "1035" },
+        {
+          "id": "d",
+          "text": "1080",
+          "misconceptionTag": "math.num.extremum-demande-ignore"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ليقبل القسمة على 5 يكون آحاده 0 أو 5، وليقبل القسمة على 9 يكون مجموع أرقامه مضاعفًا لـ 9. من 1000 نتقدّم: مجاميع 1000 و1005 و1010 و1015 و1020 و1025 و1030 هي 1 و6 و2 و7 و3 و8 و4 فلا يصلح منها شيء، ثمّ 1035 مجموعه 9. العدد 1080 يصلح أيضًا لكنّه ليس الأصغر.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ما باقي قسمة العدد 7481 على 9 دون إجراء القسمة؟ (اكتب الباقي)",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "نجمع الأرقام: 7 + 4 + 8 + 1 = 20، وباقي قسمة 20 على 9 هو 2 (لأنّ 20 = 9 × 2 + 2)، فباقي قسمة 7481 على 9 هو 2: 7481 = 9 × 831 + 2.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "عمرُ والد ضياء عددٌ زوجيّ محصورٌ بين 41 و48، وسيكون عمره في السنة القادمة مضاعفًا للعدد 5. كم عمره الآن؟",
+      "options": [
+        { "id": "a", "text": "42" },
+        { "id": "b", "text": "44" },
+        {
+          "id": "c",
+          "text": "45",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        { "id": "d", "text": "46" }
       ],
       "correctOption": "b",
-      "explanation": "الأعدادُ التي تقبل القسمة على 9 بين 1 و30 هي 9 و18 و27، أي 3 أعداد.",
+      "explanation": "الأعداد الزوجية بين 41 و48 هي 42 و44 و46. نضيف سنة إلى كلّ منها: 43 و45 و47، والمضاعف الوحيد لـ 5 هو 45، فعمره الآن 44. العدد 45 هو عمره في السنة القادمة وليس الآن.",
       "difficulty": 3,
       "competencies": ["math.num.criteres-divisibilite"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "70-77",
+    "items": ["L26 ex. 4", "L26 ex. 6", "L25 ex. 10"]
+  }
 }

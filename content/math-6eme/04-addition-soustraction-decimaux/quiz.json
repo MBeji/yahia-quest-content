@@ -12,7 +12,7 @@
         },
         {
           "id": "c",
-          "text": "نحذف الفاصلة ثمّ نجمع",
+          "text": "نحذف الفاصلة ثمّ نجمع الأرقام كالأعداد الطبيعيّة",
           "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
         },
         { "id": "d", "text": "نجمع الجزأين الصحيحين فقط" }
@@ -28,7 +28,11 @@
         { "id": "a", "text": "3,5" },
         { "id": "b", "text": "4,8" },
         { "id": "c", "text": "3,8" },
-        { "id": "d", "text": "38", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" }
+        {
+          "id": "d",
+          "text": "38",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        }
       ],
       "correctOption": "c",
       "explanation": "1,5 + 2,3 = 3,8 (5 أعشار + 3 أعشار = 8 أعشار).",
@@ -36,15 +40,23 @@
       "competencies": ["math.num.add-sous-decimaux"]
     },
     {
-      "prompt": "ما ناتجُ 5,6 − 2,4؟",
+      "prompt": "قدّر النتيجة قبل أن تحسب. أيّ هذه الأعداد هو الفرق 62,4 − 18,75؟",
       "options": [
-        { "id": "a", "text": "3,4" },
-        { "id": "b", "text": "3,2" },
-        { "id": "c", "text": "2,2" },
-        { "id": "d", "text": "8,0", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        { "id": "a", "text": "43,65" },
+        {
+          "id": "b",
+          "text": "56,35",
+          "misconceptionTag": "math.num.soustraction-colonne-petit-du-grand"
+        },
+        {
+          "id": "c",
+          "text": "81,15",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        { "id": "d", "text": "436,5" }
       ],
-      "correctOption": "b",
-      "explanation": "نطرح الأعشارَ من الأعشار والوحداتِ من الوحدات: 5,6 − 2,4 = 3,2.",
+      "correctOption": "a",
+      "explanation": "نقرّب: 62,4 ≈ 62 و 18,75 ≈ 19، فالفرق قريب من 62 − 19 = 43. العدد القريب من 43 هو 43,65 وحده؛ أمّا 81,15 فهو مجموع العددين لا فرقهما، و 56,35 بعيد عن 43، و 436,5 أكبر منه بعشر مرّات. الحساب الدقيق: 62,40 − 18,75 = 43,65 ✓.",
       "difficulty": 2,
       "competencies": ["math.num.add-sous-decimaux"]
     },
@@ -53,7 +65,11 @@
       "options": [
         { "id": "a", "text": "6,05" },
         { "id": "b", "text": "6,5" },
-        { "id": "c", "text": "4,43", "misconceptionTag": "math.num.decimaux-alignes-a-droite" },
+        {
+          "id": "c",
+          "text": "4,43",
+          "misconceptionTag": "math.num.decimaux-alignes-a-droite"
+        },
         { "id": "d", "text": "5,05" }
       ],
       "correctOption": "a",

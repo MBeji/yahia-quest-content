@@ -31,9 +31,7 @@
       "correctOption": "a",
       "explanation": "في التفكيك يتوزّع البسط وحده؛ المقام يدلّ على عدد الأجزاء المتقايسة في الوحدة، فيبقى كما هو.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "في الكتابة 45/50 + …/50 + …/50 = 50/50، ما مجموعُ الحدّين الناقصين؟",
@@ -60,9 +58,7 @@
       "correctOption": "a",
       "explanation": "مجموع البُسُط يجب أن يبلغ 50، وعندنا 45 منها، فيبقى 5 موزّعةً على حدّين بأكثر من طريقة.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أكمل: 4/5 + … = 9/5",
@@ -73,8 +69,7 @@
         },
         {
           "id": "b",
-          "text": "5/5 ولكنّها لا تساوي 1",
-          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+          "text": "5"
         },
         {
           "id": "c",
@@ -84,15 +79,13 @@
         {
           "id": "d",
           "text": "5/10",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "misconceptionTag": "math.frac.add-denominators"
         }
       ],
       "correctOption": "a",
       "explanation": "الفرق هو 9/5 ناقص 4/5 أي 5/5، و 5/5 يساوي 1 لأنّ بسطه يساوي مقامه.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أكمل: …/10 = 4/10 + 6/10 + 3/10",
@@ -119,16 +112,14 @@
       "correctOption": "a",
       "explanation": "مجموع البُسُط 4 + 6 + 3 = 13 والمقام يبقى 10؛ والنتيجة 13/10 أكبر من الوحدة.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "هل يمكن تفكيك العدد 7/10 بأكثر من طريقة؟",
       "options": [
         {
           "id": "a",
-          "text": "نعم، وكلُّها صحيحة ما دام مجموعُ البُسُط 7 والمقامُ 10"
+          "text": "نعم، ما دام مجموع البُسُط 7 والمقام 10"
         },
         {
           "id": "b",
@@ -147,38 +138,99 @@
       "correctOption": "a",
       "explanation": "يكفي أن يبلغ مجموعُ البُسُط بسطَ العدد وأن يبقى المقام على حاله: 4/10 + 3/10 و 2/10 + 2/10 + 3/10 تفكيكان صحيحان للعدد نفسِه.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
-      "prompt": "قاعة المنارة: 20/20 = 5/20 + 4/20 + …/20. ما الحدّ الناقص؟",
+      "prompt": "أكمل: 20/20 = 6/20 + 7/20 + …/20. ما الحدّ الناقص؟",
       "options": [
         {
           "id": "a",
-          "text": "11/20"
+          "text": "7/20"
         },
         {
           "id": "b",
-          "text": "11/60",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "text": "7/60",
+          "misconceptionTag": "math.frac.add-denominators"
         },
         {
           "id": "c",
-          "text": "29/20",
+          "text": "33/20",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
           "id": "d",
-          "text": "9/20"
+          "text": "13/20"
         }
       ],
       "correctOption": "a",
-      "explanation": "الحدّان المعلومان يعطيان 9/20، فالباقي هو 20/20 ناقص 9/20 أي 11/20.",
+      "explanation": "الحدّان المعلومان يعطيان 13/20، فالباقي هو 20/20 ناقص 13/20 أي 7/20.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "prompt": "أكمل: …/8 + 3 = 41/8",
+      "options": [
+        {
+          "id": "a",
+          "text": "17/8"
+        },
+        {
+          "id": "b",
+          "text": "38/8"
+        },
+        {
+          "id": "c",
+          "text": "11/8"
+        },
+        {
+          "id": "d",
+          "text": "65/8",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نكتب 3 بمقام 8: 3 = 24/8. الحدّ الناقص 41/8 − 24/8 = 17/8. التحقّق: 17/8 + 24/8 = 41/8.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "تحتاج وصفةٌ إلى 3 أكواب وسبعة أثمان كوب من الدقيق، أي 3 + 7/8 كوب. نكتب هذه الكمّية كسرًا واحدًا مقامه 8. ما بسط هذا الكسر؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 31
+      },
+      "explanation": "نكتب 3 بمقام 8: 3 = 24/8. ثمّ 24/8 + 7/8 = 31/8، فالبسط 31.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "prompt": "ما ناتج جمع 6/7 و 5/7 و 4/7؟ عبّر عنه بجزء صحيح وجزء كسريّ بسطه أصغر من مقامه.",
+      "options": [
+        {
+          "id": "a",
+          "text": "15/21",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        {
+          "id": "b",
+          "text": "1 + 1/7"
+        },
+        {
+          "id": "c",
+          "text": "2 + 1/7"
+        },
+        {
+          "id": "d",
+          "text": "2 + 5/7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نجمع البُسُط ونُبقي المقام: 6 + 5 + 4 = 15، فالمجموع 15/7. ثمّ نقسم 15 على 7: 15 = (7 × 2) + 1، فالناتج 2 + 1/7. التحقّق: 14/7 + 1/7 = 15/7.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
     }
-  ]
+  ],
+  "manuel": {
+    "items": ["ex. 4", "ex. 5", "ex. 7"]
+  }
 }

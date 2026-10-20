@@ -10,9 +10,21 @@
       "prompt": "ما القيمةُ العشرية للكسر 4/10؟",
       "options": [
         { "id": "a", "text": "0,4" },
-        { "id": "b", "text": "4", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
-        { "id": "c", "text": "0,04", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "d", "text": "40", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        {
+          "id": "c",
+          "text": "0,04",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "d",
+          "text": "40",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        }
       ],
       "correctOption": "a",
       "explanation": "مقامُ الكسر 10، فله رقمٌ واحدٌ بعد الفاصلة: 4/10 = 0,4.",
@@ -20,35 +32,59 @@
       "competencies": ["math.frac.fractions-decimales"]
     },
     {
-      "prompt": "اكتب العددَ 0,3 على شكل كسرٍ عشريّ.",
+      "prompt": "اكتب العددَ 0,2 على شكل كسرٍ عشريّ.",
       "options": [
-        { "id": "a", "text": "3/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
-        { "id": "b", "text": "3/10" },
-        { "id": "c", "text": "30" },
-        { "id": "d", "text": "1/3", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" }
+        {
+          "id": "a",
+          "text": "2/100",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
+        { "id": "b", "text": "2/10" },
+        { "id": "c", "text": "20" },
+        {
+          "id": "d",
+          "text": "1/2",
+          "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies"
+        }
       ],
       "correctOption": "b",
-      "explanation": "للعدد 0,3 رقمٌ واحدٌ بعد الفاصلة، فهو 3 أعشار: 0,3 = 3/10.",
+      "explanation": "للعدد 0,2 رقمٌ واحدٌ بعد الفاصلة، فهو عُشران: 0,2 = 2/10.",
       "difficulty": 1,
       "competencies": ["math.frac.fractions-decimales"]
     },
     {
-      "prompt": "ما القيمةُ العشرية للكسر 7/100؟",
+      "prompt": "ما القيمةُ العشرية للكسر 9/100؟",
       "options": [
-        { "id": "a", "text": "0,7", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "b", "text": "7", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
-        { "id": "c", "text": "0,07" },
-        { "id": "d", "text": "0,007", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" }
+        {
+          "id": "a",
+          "text": "0,9",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        { "id": "c", "text": "0,09" },
+        {
+          "id": "d",
+          "text": "0,009",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        }
       ],
       "correctOption": "c",
-      "explanation": "مقامُ الكسر 100، فله رقمان بعد الفاصلة: 7/100 = 0,07.",
+      "explanation": "مقامُ الكسر 100، فله رقمان بعد الفاصلة: 9/100 = 0,09.",
       "difficulty": 1,
       "competencies": ["math.frac.fractions-decimales"]
     },
     {
       "prompt": "ما الكسرُ العشريّ المساوي للعدد 0,9؟",
       "options": [
-        { "id": "a", "text": "9/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
+        {
+          "id": "a",
+          "text": "9/100",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
         { "id": "b", "text": "90" },
         { "id": "c", "text": "9" },
         { "id": "d", "text": "9/10" }
@@ -74,15 +110,77 @@
     {
       "prompt": "ما القيمةُ العشرية للكسر 125/100؟",
       "options": [
-        { "id": "a", "text": "12,5", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
+        {
+          "id": "a",
+          "text": "12,5",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
         { "id": "b", "text": "1,25" },
-        { "id": "c", "text": "0,125", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "d", "text": "125", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
+        {
+          "id": "c",
+          "text": "0,125",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "d",
+          "text": "125",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        }
       ],
       "correctOption": "b",
       "explanation": "مقامُ الكسر 100، فله رقمان بعد الفاصلة: 125/100 = 1,25.",
       "difficulty": 2,
       "competencies": ["math.frac.fractions-decimales"]
+    },
+    {
+      "prompt": "المربّع الكبير مقسّم إلى 100 مربّع صغير متقايس، لُوّن 35 منها. ما العدد العشريّ الذي يمثّل الجزء الملوّن؟\n<svg viewBox=\"0 0 156 156\"><rect x=\"8\" y=\"8\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"8\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"36\" y=\"8\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"8\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"64\" y=\"8\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"8\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"8\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"8\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"120\" y=\"8\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"8\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"8\" y=\"22\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"22\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"36\" y=\"22\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"22\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"64\" y=\"22\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"22\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"22\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"22\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"120\" y=\"22\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"22\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"8\" y=\"36\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"36\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"36\" y=\"36\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"36\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"64\" y=\"36\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"36\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"36\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"36\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"120\" y=\"36\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"36\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"8\" y=\"50\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"50\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"36\" y=\"50\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"50\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"64\" y=\"50\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"50\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"50\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"50\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"120\" y=\"50\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"50\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"8\" y=\"64\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"64\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"36\" y=\"64\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"64\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"64\" y=\"64\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"64\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"64\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"64\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"120\" y=\"64\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"64\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"8\" y=\"78\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"78\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"36\" y=\"78\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"78\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"64\" y=\"78\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"78\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"78\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"78\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"120\" y=\"78\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"78\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"8\" y=\"92\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"92\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"36\" y=\"92\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"92\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"64\" y=\"92\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"92\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"92\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"92\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"120\" y=\"92\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"92\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"8\" y=\"106\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"106\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"36\" y=\"106\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"106\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"64\" y=\"106\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"106\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"106\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"106\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"120\" y=\"106\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"106\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"8\" y=\"120\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"120\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"36\" y=\"120\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"120\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"64\" y=\"120\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"120\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"120\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"120\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"120\" y=\"120\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"120\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"8\" y=\"134\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"134\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"36\" y=\"134\" width=\"14\" height=\"14\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"134\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"64\" y=\"134\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"134\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"134\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"134\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"120\" y=\"134\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"134\" y=\"134\" width=\"14\" height=\"14\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,035",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "b",
+          "text": "35",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        {
+          "id": "c",
+          "text": "3,5",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        { "id": "d", "text": "0,35" }
+      ],
+      "correctOption": "d",
+      "explanation": "الجزء الملوّن 35/100 من المربّع الكبير. المقام 100 فيه صفران، فللعدد العشريّ رقمان بعد الفاصلة: 35/100 = 0,35. العدد 3,5 يعدّ رقمًا واحدًا بعد الفاصلة، والعدد 35 ينسى الفاصلة.",
+      "difficulty": 2,
+      "competencies": ["math.frac.fractions-decimales"]
+    },
+    {
+      "prompt": "قيس حبل فكان 3,5 m. أيّ كتابة تساوي هذا الطول؟",
+      "options": [
+        { "id": "a", "text": "35/10 m" },
+        {
+          "id": "b",
+          "text": "3/5 m",
+          "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies"
+        },
+        {
+          "id": "c",
+          "text": "35/100 m",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
+        { "id": "d", "text": "5/3 m" }
+      ],
+      "correctOption": "a",
+      "explanation": "للعدد 3,5 رقم واحد بعد الفاصلة، فنعدّ بالأعشار: 3,5 = 35/10. الكسر 3/5 ينقل الرقمين حول خطّ الكسر، والكسر 35/100 يأخذ مقامًا فيه صفران لعدد فيه رقم واحد بعد الفاصلة.",
+      "difficulty": 2,
+      "competencies": ["math.frac.fractions-decimales"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "items": ["L31 ex. 7"]
+  }
 }

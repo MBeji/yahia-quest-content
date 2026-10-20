@@ -10,9 +10,17 @@
       "prompt": "ما ناتج 1/6 + 4/6؟",
       "options": [
         { "id": "a", "text": "5/6" },
-        { "id": "b", "text": "5/12", "misconceptionTag": "math.frac.add-denominators" },
+        {
+          "id": "b",
+          "text": "5/12",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
         { "id": "c", "text": "3/6" },
-        { "id": "d", "text": "5/36", "misconceptionTag": "math.frac.denominateurs-multiplies" }
+        {
+          "id": "d",
+          "text": "5/36",
+          "misconceptionTag": "math.frac.denominateurs-multiplies"
+        }
       ],
       "correctOption": "a",
       "explanation": "عند تساوي المقام نجمع البُسُط: 1/6 + 4/6 = (1+4)/6 = 5/6.",
@@ -20,28 +28,40 @@
       "competencies": ["math.frac.add-sous"]
     },
     {
-      "prompt": "ما ناتج 8/9 − 2/9 (مع الاختزال)؟",
+      "prompt": "ما ناتج 11/12 − 5/12 (مع الاختزال)؟",
       "options": [
-        { "id": "a", "text": "6/18", "misconceptionTag": "math.frac.add-denominators" },
-        { "id": "b", "text": "2/3" },
-        { "id": "c", "text": "10/9", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "5/9" }
+        {
+          "id": "a",
+          "text": "6/24",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        { "id": "b", "text": "1/2" },
+        {
+          "id": "c",
+          "text": "16/12",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        { "id": "d", "text": "5/12" }
       ],
       "correctOption": "b",
-      "explanation": "8/9 − 2/9 = 6/9، وبالاختزال على 3: 6/9 = 2/3.",
+      "explanation": "11/12 − 5/12 = 6/12، وبالاختزال على 6: 6/12 = 1/2.",
       "difficulty": 2,
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     },
     {
-      "prompt": "ما ناتج 1/2 + 1/3 (وحّد على 6)؟",
+      "prompt": "قرأ سامي 1/3 كتاب يوم السبت، و1/4 منه يوم الأحد. أيّ كسر من الكتاب قرأ في اليومين؟",
       "options": [
-        { "id": "a", "text": "2/5", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
-        { "id": "b", "text": "2/6" },
-        { "id": "c", "text": "5/6" },
-        { "id": "d", "text": "1/6" }
+        {
+          "id": "a",
+          "text": "2/7",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        { "id": "b", "text": "2/12" },
+        { "id": "c", "text": "7/12" },
+        { "id": "d", "text": "1/12" }
       ],
       "correctOption": "c",
-      "explanation": "نوحّد على 6: 1/2 = 3/6 و 1/3 = 2/6؛ ثمّ 3/6 + 2/6 = 5/6.",
+      "explanation": "نوحّد على 12: 1/3 = 4/12 و 1/4 = 3/12؛ ثمّ 4/12 + 3/12 = 7/12 من الكتاب.",
       "difficulty": 2,
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     },
@@ -49,7 +69,11 @@
       "prompt": "ما ناتج 1 − 2/5؟",
       "options": [
         { "id": "a", "text": "2/5" },
-        { "id": "b", "text": "5/5", "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee" },
+        {
+          "id": "b",
+          "text": "5/5",
+          "misconceptionTag": "math.frac.entier-converti-mais-operation-oubliee"
+        },
         { "id": "c", "text": "3/10" },
         { "id": "d", "text": "3/5" }
       ],
@@ -59,22 +83,30 @@
       "competencies": ["math.frac.add-sous"]
     },
     {
-      "prompt": "ما ناتج 5/6 − 1/2 (وحّد على 6)؟",
+      "prompt": "في قارورة 5/6 لتر من الحليب، شرب منها أنس 1/2 لتر. كم لترًا بقي؟",
       "options": [
         { "id": "a", "text": "1/3" },
         { "id": "b", "text": "4/6" },
         { "id": "c", "text": "1/4" },
-        { "id": "d", "text": "4/4" }
+        {
+          "id": "d",
+          "text": "4/4",
+          "misconceptionTag": "math.frac.soustraction-denominateurs"
+        }
       ],
       "correctOption": "a",
-      "explanation": "نوحّد على 6: 1/2 = 3/6؛ ثمّ 5/6 − 3/6 = 2/6، وبالاختزال على 2 نحصل على 1/3.",
+      "explanation": "نوحّد على 6: 1/2 = 3/6؛ ثمّ 5/6 − 3/6 = 2/6، وبالاختزال على 2 يبقى 1/3 لتر.",
       "difficulty": 3,
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     },
     {
       "prompt": "ما ناتج 3/4 + 1/8 (وحّد على 8)؟",
       "options": [
-        { "id": "a", "text": "4/12", "misconceptionTag": "math.frac.add-numerators-and-denominators" },
+        {
+          "id": "a",
+          "text": "4/12",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
         { "id": "b", "text": "7/8" },
         { "id": "c", "text": "7/12" },
         { "id": "d", "text": "6/8" }
@@ -83,6 +115,57 @@
       "explanation": "نوحّد على 8: 3/4 = 6/8؛ ثمّ 6/8 + 1/8 = 7/8.",
       "difficulty": 3,
       "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "زرع فلّاح قطعة أرض قمحًا في 3/7 منها وشمندرًا في 2/5 منها وخضرًا في الباقي. مساحة القمح تفوق مساحة الشمندر بـ 35 آر. كم آرًا زرع خضرًا؟",
+      "answerKey": {
+        "value": 210
+      },
+      "explanation": "الفرق بين الكسرين: 3/7 − 2/5 = 15/35 − 14/35 = 1/35 من الأرض، وهو 35 آر، فالأرض كلّها 35 × 35 = 1225 آر. القمح والشمندر 29/35، فالخضر 6/35: (1225 ÷ 35) × 6 = 35 × 6 = 210 آر.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "في قسم 96 مترشّحًا للبكالوريا، البنات 5/8 منهم. نجح 7/9 من الذكور و5/6 من البنات. كم مترشّحًا لم ينجح؟",
+      "answerKey": {
+        "value": 18
+      },
+      "explanation": "البنات 5/8 من 96 = (96 ÷ 8) × 5 = 60، والذكور 96 − 60 = 36. الذكور الراسبون 2/9 من 36 = 8، والبنات الراسبات 1/6 من 60 = 10. المجموع 8 + 10 = 18 مترشّحًا.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "ما ناتج 5/8 − 4/7؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "misconceptionTag": "math.frac.soustraction-denominateurs"
+        },
+        { "id": "b", "text": "1/56" },
+        { "id": "c", "text": "3/56" },
+        { "id": "d", "text": "3/15" }
+      ],
+      "correctOption": "c",
+      "explanation": "نوحّد على 56: 5/8 = 35/56 و4/7 = 32/56، فالفرق 35/56 − 32/56 = 3/56. الجواب 1 ينتج عن طرح البسطين وطرح المقامين، وهو يطرح المقامين ولا يُبقي عليهما.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "يخصّص أب شهريًّا مبلغًا لابنه الطالب. يصرف الابن 1/2 المبلغ في التنقّل والترفيه، و4/21 في شراء الكتب (وتساوي 16 د)، و1/6 في الأكل، و1/7 يدّخرها. كم دينارًا يصرف في التنقّل والترفيه؟",
+      "answerKey": {
+        "value": 42
+      },
+      "explanation": "كتب الابن 4/21 من المبلغ = 16 د، فالجزء 1/21 يساوي 16 ÷ 4 = 4 د، والمبلغ كلّه 4 × 21 = 84 د. التنقّل والترفيه نصفه: 84 ÷ 2 = 42 د. تحقّق: 1/2 + 4/21 + 1/6 + 1/7 = 42/42 = 1.",
+      "difficulty": 3,
+      "competencies": ["math.frac.add-sous", "math.frac.equivalence"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "items": ["L57 ex. 8", "L42 ex. 7", "L42 ex. 3", "L40 ex. 16"]
+  }
 }

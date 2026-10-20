@@ -7,27 +7,27 @@
   "displayOrder": 3,
   "questions": [
     {
-      "prompt": "ماذا نسمّي نتيجةَ عمليّة الطرح؟",
+      "prompt": "في القسمة الإقليدية 135 = 12 × 11 + 3، ما اسم العدد 12؟",
       "options": [
         {
           "id": "a",
-          "text": "المجموع",
+          "text": "المقسوم",
           "misconceptionTag": "math.num.vocabulaire-operations-confondu"
         },
-        { "id": "b", "text": "الفرق" },
+        { "id": "b", "text": "القاسم" },
         {
           "id": "c",
-          "text": "الجداء",
+          "text": "الخارج",
           "misconceptionTag": "math.num.vocabulaire-operations-confondu"
         },
         {
           "id": "d",
-          "text": "الخارج",
-          "misconceptionTag": "math.num.vocabulaire-operations-confondu"
+          "text": "الباقي",
+          "misconceptionTag": "math.num.division-diviseur-et-reste-echanges"
         }
       ],
       "correctOption": "b",
-      "explanation": "نتيجةُ الطرح تُسمّى الفرق.",
+      "explanation": "في المساواة a = b × q + r يسمّى b القاسم، و q الخارج، و r الباقي، و a المقسوم. فالعدد 12 هو القاسم، أي العدد الذي نقسم عليه 135؛ أمّا 11 فهو الخارج و 3 هو الباقي.",
       "difficulty": 1,
       "competencies": ["math.num.operations-entiers"]
     },
@@ -35,7 +35,11 @@
       "prompt": "ما ناتجُ 4 500 + 2 750؟",
       "options": [
         { "id": "a", "text": "7 350" },
-        { "id": "b", "text": "6 250", "misconceptionTag": "math.num.retenue-oubliee" },
+        {
+          "id": "b",
+          "text": "6 250",
+          "misconceptionTag": "math.num.retenue-oubliee"
+        },
         { "id": "c", "text": "7 250" },
         { "id": "d", "text": "7 150" }
       ],
@@ -47,10 +51,22 @@
     {
       "prompt": "ما ناتجُ 6 003 − 2 815؟",
       "options": [
-        { "id": "a", "text": "3 288", "misconceptionTag": "math.num.emprunt-oublie" },
+        {
+          "id": "a",
+          "text": "3 288",
+          "misconceptionTag": "math.num.emprunt-oublie"
+        },
         { "id": "b", "text": "3 188" },
-        { "id": "c", "text": "4 188", "misconceptionTag": "math.num.emprunt-oublie" },
-        { "id": "d", "text": "3 198", "misconceptionTag": "math.num.emprunt-oublie" }
+        {
+          "id": "c",
+          "text": "4 188",
+          "misconceptionTag": "math.num.emprunt-oublie"
+        },
+        {
+          "id": "d",
+          "text": "3 198",
+          "misconceptionTag": "math.num.emprunt-oublie"
+        }
       ],
       "correctOption": "b",
       "explanation": "6 003 − 2 815 = 3 188 (نتحقّق: 2 815 + 3 188 = 6 003).",
@@ -58,15 +74,19 @@
       "competencies": ["math.num.operations-entiers"]
     },
     {
-      "prompt": "ما ناتجُ 125 × 8؟",
+      "prompt": "ما ناتجُ 125 × 16؟",
       "options": [
-        { "id": "a", "text": "100" },
-        { "id": "b", "text": "1 025" },
-        { "id": "c", "text": "960" },
-        { "id": "d", "text": "1 000" }
+        { "id": "a", "text": "2 016" },
+        { "id": "b", "text": "2 000" },
+        { "id": "c", "text": "1 250" },
+        {
+          "id": "d",
+          "text": "141",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
-      "correctOption": "d",
-      "explanation": "نضرب: 125 × 8 = 1 000 (نتحقّق بالقسمة العكسيّة: 1 000 ÷ 8 = 125).",
+      "correctOption": "b",
+      "explanation": "125 × 16 = 125 × 8 × 2 = 1 000 × 2 = 2 000. تحقّق: 2 000 ÷ 16 = 125.",
       "difficulty": 2,
       "competencies": ["math.num.operations-entiers"]
     },

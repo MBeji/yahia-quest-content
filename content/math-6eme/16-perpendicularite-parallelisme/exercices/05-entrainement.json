@@ -7,80 +7,139 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "ما رمزُ التوازي؟",
+      "prompt": "نصف المستقيم الذي ينطلق من رأس زاوية ويقسمها إلى زاويتين متقايستين يسمّى:",
       "options": [
-        { "id": "a", "text": "⊥", "misconceptionTag": "math.geo.symboles-perpendiculaire-parallele-confondus" },
-        { "id": "b", "text": "∥" },
-        { "id": "c", "text": "=" },
-        { "id": "d", "text": "÷" }
+        {
+          "id": "a",
+          "text": "الضلع"
+        },
+        {
+          "id": "b",
+          "text": "المنصّف"
+        },
+        {
+          "id": "c",
+          "text": "الموسّط العمودي"
+        },
+        {
+          "id": "d",
+          "text": "الرأس"
+        }
       ],
       "correctOption": "b",
-      "explanation": "رمزُ التوازي هو ∥؛ أمّا ⊥ فهو رمزُ التعامد.",
+      "explanation": "منصّف الزاوية هو نصف المستقيم الذي ينطلق من رأسها ويقسمها إلى زاويتين متقايستين. أمّا الموسّط العمودي فيخصّ قطعة مستقيم لا زاوية.",
       "difficulty": 1,
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "ماذا يمثّل هذا الشكل؟ <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"58\" x2=\"92\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"10\" x2=\"50\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"50\" y=\"48\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
+      "prompt": "[أب] قطعة طولها 6 سم. رسم تلميذ مستقيمًا عموديًّا عليها في نقطة تبعد 2 سم عن أ. هل هو الموسّط العمودي لـ [أب]؟",
       "options": [
-        { "id": "a", "text": "مستقيمان متوازيان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "b", "text": "مستقيمان متعامدان" },
-        { "id": "c", "text": "مستقيمان متقاطعان بزاوية حادّة", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
-        { "id": "d", "text": "مستقيمان منفصلان" }
-      ],
-      "correctOption": "b",
-      "explanation": "المربّعُ الصغير عند التقاطع يدلّ على زاوية قائمة، فالمستقيمان متعامدان.",
-      "difficulty": 2,
-      "competencies": ["math.geo.droites-perp-para"]
-    },
-    {
-      "prompt": "المستقيمان اللذان لا يتقاطعان مهما امتدّا هما:",
-      "options": [
-        { "id": "a", "text": "متعامدان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "b", "text": "متقاطعان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "c", "text": "متوازيان" },
-        { "id": "d", "text": "متطابقان" }
-      ],
-      "correctOption": "c",
-      "explanation": "المستقيمان المتوازيان لا يتقاطعان مهما امتدّا ويبقى البعدُ بينهما ثابتًا.",
-      "difficulty": 2,
-      "competencies": ["math.geo.droites-perp-para"]
-    },
-    {
-      "prompt": "لرسم زاوية قائمة (التعامد) نستعمل:",
-      "options": [
-        { "id": "a", "text": "الكوس" },
-        { "id": "b", "text": "الفرجار" },
-        { "id": "c", "text": "الميزان" },
-        { "id": "d", "text": "المنقلة فقط" }
+        {
+          "id": "a",
+          "text": "لا، لأنّه لا يمرّ بمنتصفها"
+        },
+        {
+          "id": "b",
+          "text": "نعم، لأنّه يعامدها وهذا يكفيه",
+          "misconceptionTag": "math.geo.mediatrice-un-seul-critere"
+        },
+        {
+          "id": "c",
+          "text": "نعم، لأنّه يقطعها في نقطة واحدة"
+        },
+        {
+          "id": "d",
+          "text": "لا، لأنّ الزاوية بينهما ليست قائمة"
+        }
       ],
       "correctOption": "a",
-      "explanation": "نستعمل الكوس لأنّ فيه زاوية قائمة جاهزة نتحقّق بها من التعامد ونرسمه.",
+      "explanation": "منتصف [أب] يبعد 6 ÷ 2 = 3 سم عن أ، والمستقيم يقطعها على بُعد 2 سم من أ. هو عموديّ عليها لكنّه لا يمرّ بمنتصفها، والموسّط العمودي يطلب الشرطين معًا.",
       "difficulty": 2,
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "هذان المستقيمان متقاطعان، لكنّهما: <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"72\" x2=\"92\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"22\" y1=\"92\" x2=\"78\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+      "prompt": "(د1) ∥ (د2)، والمستقيم (د3) يقطع (د1). ماذا نستنتج عن (د3) و (د2)؟",
       "options": [
-        { "id": "a", "text": "متعامدان", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
-        { "id": "b", "text": "متوازيان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "c", "text": "منفصلان" },
-        { "id": "d", "text": "غيرُ متعامدين (الزاوية ليست قائمة)" }
+        {
+          "id": "a",
+          "text": "(د3) ∥ (د2)"
+        },
+        {
+          "id": "b",
+          "text": "(د3) يقطع (د2) أيضًا"
+        },
+        {
+          "id": "c",
+          "text": "(د3) ⊥ (د2) دائمًا"
+        },
+        {
+          "id": "d",
+          "text": "(د3) ⊥ (د1) دائمًا"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(د2) له اتّجاه (د1) نفسه، فمن قطع أحدهما قطع الآخر: (د3) يقطع (د2). ولا نعرف أنّ الزاوية قائمة، لأنّ (د3) لم يُعطَ عموديًّا على (د1).",
+      "difficulty": 2,
+      "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "لا نملك كوسًا ولا منقلة. بأيّ أداتين نرسم مستقيمًا عموديًّا على مستقيم معلوم؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "الفرجار وحده"
+        },
+        {
+          "id": "b",
+          "text": "مسطرتان اثنتان"
+        },
+        {
+          "id": "c",
+          "text": "المسطرة والفرجار"
+        },
+        {
+          "id": "d",
+          "text": "المسطرة وحدها"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نرسم القوسين بالفرجار لنجد نقطتين على البعد نفسه من طرفي قطعة، ثمّ نصل بينهما بالمسطرة فنحصل على الموسّط العمودي. والفرجار وحده لا يرسم مستقيمًا، والمسطرة وحدها لا تعطي زاوية قائمة.",
+      "difficulty": 2,
+      "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "في خريطة حيّ، الشارعان (ش1) و(ش2) يقطعان الطريق الرئيسيّ (ط) بزاويتين قائمتين، والشارع (ش3) يوازي (ش1). ما وضعيّة (ش3) بالنسبة إلى (ش2)؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "متعامدان",
+          "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee"
+        },
+        {
+          "id": "b",
+          "text": "متقاطعان بزاوية حادّة"
+        },
+        {
+          "id": "c",
+          "text": "لا علاقة بينهما"
+        },
+        {
+          "id": "d",
+          "text": "متوازيان"
+        }
       ],
       "correctOption": "d",
-      "explanation": "الزاويةُ بين المستقيمين ليست قائمة (لا مربّعَ يدلّ عليها)، فهما متقاطعان غيرُ متعامدين.",
+      "explanation": "عموديّان على الطريق (ط) نفسه، فالشارعان (ش1) و(ش2) متوازيان. و(ش3) يوازي (ش1)، فهو يوازي (ش2) أيضًا: الموازي لأحد مستقيمين متوازيين يوازي الآخر.",
       "difficulty": 3,
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "(د1) ∥ (د2) و (د2) ⊥ (د3). ماذا نستنتج عن (د1) و (د3)؟",
-      "options": [
-        { "id": "a", "text": "متعامدان" },
-        { "id": "b", "text": "متوازيان", "misconceptionTag": "math.geo.regle-perpendiculaire-parallele-inversee" },
-        { "id": "c", "text": "متطابقان" },
-        { "id": "d", "text": "لا علاقة بينهما" }
-      ],
-      "correctOption": "a",
-      "explanation": "بما أنّ (د1) يوازي (د2) و (د2) عموديٌّ على (د3)، فإنّ (د1) عموديٌّ أيضًا على (د3): متعامدان.",
+      "type": "numeric",
+      "prompt": "نركّز الفرجار في النقطة ك الواقعة على (د) بفتحة 4 سم، فيقطع (د) في س وفي ع. ما طول القطعة [سع] بالسنتيمتر؟",
+      "answerKey": {
+        "value": 8
+      },
+      "explanation": "ك على (د)، والنقطتان س و ع على (د) على جهتين من ك، وكلّ منهما تبعد 4 سم عنها. فك منتصف [سع] و سع = 4 + 4 = 8 سم، والعمودي على (د) في ك هو الموسّط العمودي لـ [سع].",
       "difficulty": 3,
       "competencies": ["math.geo.droites-perp-para"]
     }

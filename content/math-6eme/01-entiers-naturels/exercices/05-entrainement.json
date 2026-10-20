@@ -22,7 +22,11 @@
     {
       "prompt": "كيف يُقرأ العدد 305 040؟",
       "options": [
-        { "id": "a", "text": "ثلاثمئة ألفٍ وخمسة آلاف وأربعون" },
+        {
+          "id": "a",
+          "text": "ثلاثمئة ألفٍ وخمسمئة وأربعون",
+          "misconceptionTag": "math.num.zero-intercalaire-oublie"
+        },
         {
           "id": "b",
           "text": "ثلاثة آلاف وخمسمئة وأربعون",
@@ -36,17 +40,29 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "نُجمّع الأرقام ثلاثيّاتٍ من اليمين: 305 آلاف | 040. والصنف 305 يُقرأ «ثلاثمئة وخمسة»، فيكون العدد «ثلاثمئة وخمسة آلاف وأربعون».",
+      "explanation": "نُجمّع الأرقام ثلاثيّاتٍ من اليمين: 305 | 040. والصنف الأوّل 305 يُقرأ «ثلاثمئة وخمسة» متبوعًا بكلمة «آلاف»، ثمّ نقرأ 040 «أربعون»، فنقرأ العدد «ثلاثمئة وخمسة آلاف وأربعون». أمّا «ثلاثمئة ألفٍ وخمسمئة وأربعون» فهو العدد 300 540.",
       "difficulty": 2,
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },
     {
       "prompt": "ما العدد الذي يساوي 3×100000 + 7×1000 + 4×10؟",
       "options": [
-        { "id": "a", "text": "370 040", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
+        {
+          "id": "a",
+          "text": "370 040",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        },
         { "id": "b", "text": "307 040" },
-        { "id": "c", "text": "307 400", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
-        { "id": "d", "text": "30 740", "misconceptionTag": "math.num.rang-du-chiffre-decale" }
+        {
+          "id": "c",
+          "text": "307 400",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        },
+        {
+          "id": "d",
+          "text": "30 740",
+          "misconceptionTag": "math.num.zero-intercalaire-oublie"
+        }
       ],
       "correctOption": "b",
       "explanation": "3×100000 = 300 000، و7×1000 = 7 000، و4×10 = 40. وبجمع القيم حسب الرتب نحصل على 307 040.",
@@ -79,11 +95,19 @@
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },
     {
-      "prompt": "ما القيمة المقرّبة للعدد 149 500 إلى أقرب ألف؟",
+      "prompt": "بلغ عدد زوّار موقعٍ إلكترونيّ 149 500 زائرًا. ما هذا العدد مقرّبًا إلى أقرب ألف؟",
       "options": [
-        { "id": "a", "text": "149 000", "misconceptionTag": "math.num.arrondi-par-troncature" },
+        {
+          "id": "a",
+          "text": "149 000",
+          "misconceptionTag": "math.num.arrondi-par-troncature"
+        },
         { "id": "b", "text": "149 500" },
-        { "id": "c", "text": "200 000", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
+        {
+          "id": "c",
+          "text": "200 000",
+          "misconceptionTag": "math.num.arrondi-au-mauvais-rang"
+        },
         { "id": "d", "text": "150 000" }
       ],
       "correctOption": "d",

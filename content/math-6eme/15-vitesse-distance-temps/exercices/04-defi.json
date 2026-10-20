@@ -9,10 +9,24 @@
     {
       "prompt": "قطعت سيّارةٌ 250 km في 5 ساعات. ما سرعتها؟",
       "options": [
-        { "id": "a", "text": "50 km/h" },
-        { "id": "b", "text": "255 km/h", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
-        { "id": "c", "text": "1250 km/h", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "45 km/h" }
+        {
+          "id": "a",
+          "text": "50 km/h"
+        },
+        {
+          "id": "b",
+          "text": "255 km/h",
+          "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees"
+        },
+        {
+          "id": "c",
+          "text": "1250 km/h",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "45 km/h"
+        }
       ],
       "correctOption": "a",
       "explanation": "السرعة = المسافة ÷ الزمن = 250 ÷ 5 = 50 km/h.",
@@ -20,12 +34,24 @@
       "competencies": ["math.prop.vitesse"]
     },
     {
-      "prompt": "سار شخصان: الأوّل بسرعة 60 km/h لمدّة 2 ساعة، والثاني بسرعة 40 km/h لمدّة 4 ساعات. مَن قطع مسافةً أطول؟",
+      "prompt": "سافر شخصان بالسيّارة: الأوّل بسرعة 60 km/h لمدّة ساعتين، والثاني بسرعة 40 km/h لمدّة 4 ساعات. مَن قطع مسافةً أطول؟",
       "options": [
-        { "id": "a", "text": "الأوّل" },
-        { "id": "b", "text": "الثاني" },
-        { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المعرفة" }
+        {
+          "id": "a",
+          "text": "الأوّل"
+        },
+        {
+          "id": "b",
+          "text": "الثاني"
+        },
+        {
+          "id": "c",
+          "text": "متساويان"
+        },
+        {
+          "id": "d",
+          "text": "لا يمكن المعرفة"
+        }
       ],
       "correctOption": "b",
       "explanation": "الأوّل: 60 × 2 = 120 km؛ الثاني: 40 × 4 = 160 km؛ فالثاني قطع مسافةً أطول.",
@@ -35,10 +61,24 @@
     {
       "prompt": "قطعت دراجةٌ 36 km في ساعةٍ ونصف (1,5 ساعة). ما سرعتها؟",
       "options": [
-        { "id": "a", "text": "54 km/h", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "b", "text": "37,5 km/h", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
-        { "id": "c", "text": "24 km/h" },
-        { "id": "d", "text": "18 km/h" }
+        {
+          "id": "a",
+          "text": "54 km/h",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "b",
+          "text": "37,5 km/h",
+          "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees"
+        },
+        {
+          "id": "c",
+          "text": "24 km/h"
+        },
+        {
+          "id": "d",
+          "text": "18 km/h"
+        }
       ],
       "correctOption": "c",
       "explanation": "السرعة = المسافة ÷ الزمن = 36 ÷ 1,5 = 24 km/h.",
@@ -46,25 +86,52 @@
       "competencies": ["math.prop.vitesse"]
     },
     {
-      "prompt": "سيّارةٌ سرعتُها 90 km/h. كم km تقطع في 20 دقيقة (ثلثِ ساعة)؟",
+      "prompt": "سيّارةٌ سرعتُها 66 km/h. كم km تقطع في 20 دقيقة (ثلثِ ساعة)؟",
       "options": [
-        { "id": "a", "text": "90 km" },
-        { "id": "b", "text": "270 km", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "c", "text": "45 km" },
-        { "id": "d", "text": "30 km" }
+        {
+          "id": "a",
+          "text": "66 km"
+        },
+        {
+          "id": "b",
+          "text": "198 km",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "33 km"
+        },
+        {
+          "id": "d",
+          "text": "22 km"
+        }
       ],
       "correctOption": "d",
-      "explanation": "20 دقيقة = 1/3 ساعة؛ المسافة = 90 × 1/3 = 30 km.",
+      "explanation": "20 دقيقة = 1/3 ساعة؛ المسافة = 66 × 1/3 = 66 ÷ 3 = 22 km.",
       "difficulty": 3,
       "competencies": ["math.prop.vitesse", "math.mes.durees"]
     },
     {
       "prompt": "قطع قطارٌ مسافةً في 4 ساعات بسرعة 110 km/h. ما المسافة؟",
       "options": [
-        { "id": "a", "text": "440 km" },
-        { "id": "b", "text": "114 km", "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees" },
-        { "id": "c", "text": "27,5 km", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "400 km" }
+        {
+          "id": "a",
+          "text": "440 km"
+        },
+        {
+          "id": "b",
+          "text": "114 km",
+          "misconceptionTag": "math.prop.vitesse-grandeurs-additionnees"
+        },
+        {
+          "id": "c",
+          "text": "27,5 km",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "400 km"
+        }
       ],
       "correctOption": "a",
       "explanation": "المسافة = السرعة × الزمن = 110 × 4 = 440 km.",
@@ -74,15 +141,91 @@
     {
       "prompt": "رحلةٌ طولُها 300 km. كم ساعةً تحتاج بسرعة 60 km/h، ثمّ بسرعة 100 km/h؟",
       "options": [
-        { "id": "a", "text": "5 ساعات ثمّ 4 ساعات" },
-        { "id": "b", "text": "5 ساعات ثمّ 3 ساعات" },
-        { "id": "c", "text": "6 ساعات ثمّ 3 ساعات" },
-        { "id": "d", "text": "4 ساعات ثمّ 3 ساعات" }
+        {
+          "id": "a",
+          "text": "5 ساعات ثمّ 4 ساعات"
+        },
+        {
+          "id": "b",
+          "text": "5 ساعات ثمّ 3 ساعات"
+        },
+        {
+          "id": "c",
+          "text": "6 ساعات ثمّ 3 ساعات"
+        },
+        {
+          "id": "d",
+          "text": "4 ساعات ثمّ 3 ساعات"
+        }
       ],
       "correctOption": "b",
       "explanation": "بسرعة 60: 300 ÷ 60 = 5 ساعات؛ وبسرعة 100: 300 ÷ 100 = 3 ساعات.",
       "difficulty": 3,
       "competencies": ["math.prop.vitesse"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "قطعت شاحنةٌ 30 km بمعدّل 50 km/h، وهذه المسافة تمثّل 2/5 الرحلة. ثمّ قطعت بقيّة الرحلة بمعدّل 75 km/h. كم دقيقةً دامت الرحلة كلّها؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 72,
+        "unit": "د"
+      },
+      "explanation": "30 km هي 2/5 الرحلة، فالجزء الواحد 30 ÷ 2 = 15 km والرحلة 5 × 15 = 75 km، وبقي 45 km. الجزء الأوّل: 30 km بمعدّل 50 km/h تستغرق 36 د. الجزء الثاني: 45 km بمعدّل 75 km/h تستغرق 36 د. الرحلة 72 د، أي 1 سا 12 د.",
+      "difficulty": 3,
+      "competencies": ["math.prop.vitesse", "math.frac.mult-entier"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "انطلق درّاجان معًا، الأوّل بمعدّل 18 km/h والثاني بمعدّل 24 km/h. بعد 40 د من الانطلاق، كم كيلومترًا يتقدّم الثاني على الأوّل؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 4,
+        "unit": "km"
+      },
+      "explanation": "40 د = 2/3 سا. الأوّل يقطع 18 × 2/3 = 12 km، والثاني 24 × 2/3 = 16 km. الفرق 16 − 12 = 4 km. الخطأ الشائع: كتابة 40 د = 0,40 سا.",
+      "difficulty": 3,
+      "competencies": ["math.prop.vitesse", "math.mes.durees"]
+    },
+    {
+      "prompt": "على خريطة سلّمها 1/250 000 تبعد مدينتان 42 cm. تسير حافلةٌ بينهما بمعدّل 70 km/h. كم تستغرق من الزمن؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 سا 50 د",
+          "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
+        },
+        {
+          "id": "b",
+          "text": "36 د"
+        },
+        {
+          "id": "c",
+          "text": "105 د"
+        },
+        {
+          "id": "d",
+          "text": "1 سا 30 د"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المسافة الحقيقيّة 42 × 250 000 = 10 500 000 cm = 105 km. الزمن = 105 ÷ 70 = 1,5 سا = 1 سا 30 د، لأنّ 0,5 سا نصف ساعة لا 50 د.",
+      "difficulty": 3,
+      "competencies": ["math.prop.vitesse", "math.mes.durees"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "يقطع عدّاءٌ 100 m في 10 ثوانٍ بسرعة ثابتة. كم كيلومترًا في الساعة سرعته؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 36,
+        "unit": "km/h"
+      },
+      "explanation": "سرعته 100 ÷ 10 = 10 m في الثانية. في الدقيقة 10 × 60 = 600 m، وفي الساعة 600 × 60 = 36 000 m = 36 km. إذن 36 km/h.",
+      "difficulty": 3,
+      "competencies": ["math.prop.vitesse"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "153-156",
+    "items": ["ex. 6 (53)"]
+  }
 }

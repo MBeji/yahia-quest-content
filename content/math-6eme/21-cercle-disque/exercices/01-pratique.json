@@ -7,25 +7,51 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "ما العلاقةُ بين القطر ونصف القطر؟",
+      "prompt": "قطعة طرفاها على الدائرة ولا تمرّ بالمركز. هل هي قطر؟",
       "options": [
-        { "id": "a", "text": "القطر = 2 × نصف القطر" },
-        { "id": "b", "text": "القطر = نصف القطر", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "c", "text": "نصف القطر = 2 × القطر", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "d", "text": "القطر = نصف القطر + 2" }
+        {
+          "id": "a",
+          "text": "نعم، لأنّ طرفيها على الدائرة"
+        },
+        {
+          "id": "b",
+          "text": "نعم، إذا كانت أطول من نصف القطر"
+        },
+        {
+          "id": "c",
+          "text": "لا، لأنّها لا تمرّ بالمركز"
+        },
+        {
+          "id": "d",
+          "text": "لا، بل هي نصف قطر",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "القطرُ يمرّ بالمركز، فهو يساوي ضعفَ نصف القطر: القطر = 2 × نصف القطر.",
+      "correctOption": "c",
+      "explanation": "القطر قطعة تمرّ بالمركز وطرفاها على الدائرة، والشرطان معًا لازمان. هذه القطعة لا تمرّ بالمركز فليست قطرًا، وهي أقصر منه. ولا هي نصف قطر، لأنّ نصف القطر يبدأ من المركز.",
       "difficulty": 1,
       "competencies": ["math.geo.cercle"]
     },
     {
       "prompt": "ما اسمُ القطعة الحمراء (من المركز إلى الدائرة)؟ <svg viewBox=\"0 0 100 100\"><circle cx=\"50\" cy=\"50\" r=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"50\" r=\"2.5\" fill=\"currentColor\"/><line x1=\"50\" y1=\"50\" x2=\"82\" y2=\"50\" stroke=\"#ef4444\" stroke-width=\"1.8\"/><text x=\"60\" y=\"45\" font-size=\"12\" fill=\"#ef4444\">ر</text></svg>",
       "options": [
-        { "id": "a", "text": "نصف القطر" },
-        { "id": "b", "text": "القطر", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "c", "text": "المحيط" },
-        { "id": "d", "text": "المساحة" }
+        {
+          "id": "a",
+          "text": "نصف القطر"
+        },
+        {
+          "id": "b",
+          "text": "القطر",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "المحيط"
+        },
+        {
+          "id": "d",
+          "text": "المساحة"
+        }
       ],
       "correctOption": "a",
       "explanation": "القطعةُ تصلُ المركزَ بنقطةٍ على الدائرة، فهي نصفُ القطر (ر).",
@@ -35,10 +61,24 @@
     {
       "prompt": "دائرةٌ نصفُ قطرها 5 سم. ما طولُ قطرها؟",
       "options": [
-        { "id": "a", "text": "10 سم" },
-        { "id": "b", "text": "5 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "c", "text": "2,5 سم", "misconceptionTag": "math.geo.rayon-et-diametre-confondus" },
-        { "id": "d", "text": "15 سم" }
+        {
+          "id": "a",
+          "text": "10 سم"
+        },
+        {
+          "id": "b",
+          "text": "5 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "2,5 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "15 سم"
+        }
       ],
       "correctOption": "a",
       "explanation": "القطر = 2 × نصف القطر = 2 × 5 = 10 سم.",
@@ -48,10 +88,25 @@
     {
       "prompt": "ما القيمةُ التقريبيّةُ المعتمدةُ للعدد π؟",
       "options": [
-        { "id": "a", "text": "3,14" },
-        { "id": "b", "text": "3", "misconceptionTag": "math.geo.valeur-de-pi-erronee" },
-        { "id": "c", "text": "3,4", "misconceptionTag": "math.geo.valeur-de-pi-erronee" },
-        { "id": "d", "text": "4,13", "misconceptionTag": "math.geo.valeur-de-pi-erronee" }
+        {
+          "id": "a",
+          "text": "3,14"
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "misconceptionTag": "math.geo.valeur-de-pi-erronee"
+        },
+        {
+          "id": "c",
+          "text": "3,4",
+          "misconceptionTag": "math.geo.valeur-de-pi-erronee"
+        },
+        {
+          "id": "d",
+          "text": "4,13",
+          "misconceptionTag": "math.geo.valeur-de-pi-erronee"
+        }
       ],
       "correctOption": "a",
       "explanation": "نعتمدُ القيمةَ التقريبيّة π ≈ 3,14 في حساب المحيطات والمساحات.",
@@ -59,28 +114,137 @@
       "competencies": ["math.geo.cercle"]
     },
     {
-      "prompt": "ما محيطُ دائرةٍ قطرُها 10 سم؟ (π ≈ 3,14)",
+      "prompt": "ما محيطُ دائرةٍ قطرُها 19 سم؟ (π ≈ 3,14)",
       "options": [
-        { "id": "a", "text": "31,4 سم" },
-        { "id": "b", "text": "62,8 سم", "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop" },
-        { "id": "c", "text": "20 سم", "misconceptionTag": "math.geo.facteur-pi-omis" },
-        { "id": "d", "text": "13,14 سم" }
+        {
+          "id": "a",
+          "text": "22,14 سم"
+        },
+        {
+          "id": "b",
+          "text": "29,83 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "59,66 سم"
+        },
+        {
+          "id": "d",
+          "text": "119,32 سم",
+          "misconceptionTag": "math.geo.perimetre-cercle-facteur-deux-omis-ou-en-trop"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "المحيط = π × القطر = 3,14 × 10 = 31,4 سم.",
+      "correctOption": "c",
+      "explanation": "المحيط = π × القطر = 3,14 × 19 = 59,66 سم. من ضرب أيضًا في 2 وجد 119,32، ومن أخذ نصف القطر 9,5 في π × ق وجد 29,83، ومن جمع 19 مع 3,14 وجد 22,14.",
       "difficulty": 2,
       "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
       "prompt": "ما الفرقُ بين الدائرة والقرص؟",
       "options": [
-        { "id": "a", "text": "الدائرةُ خطٌّ منحنٍ، والقرصُ هو السطحُ بداخلها" },
-        { "id": "b", "text": "هما الشيءُ نفسُه تمامًا", "misconceptionTag": "math.geo.cercle-et-disque-confondus" },
-        { "id": "c", "text": "القرصُ خطٌّ، والدائرةُ سطحٌ", "misconceptionTag": "math.geo.cercle-et-disque-confondus" },
-        { "id": "d", "text": "الدائرةُ لها مساحةٌ فقط", "misconceptionTag": "math.geo.cercle-et-disque-confondus" }
+        {
+          "id": "a",
+          "text": "الدائرةُ خطٌّ منحنٍ، والقرصُ هو السطحُ بداخلها"
+        },
+        {
+          "id": "b",
+          "text": "هما الشيءُ نفسُه تمامًا",
+          "misconceptionTag": "math.geo.cercle-et-disque-confondus"
+        },
+        {
+          "id": "c",
+          "text": "القرصُ خطٌّ، والدائرةُ سطحٌ",
+          "misconceptionTag": "math.geo.cercle-et-disque-confondus"
+        },
+        {
+          "id": "d",
+          "text": "الدائرةُ لها مساحةٌ فقط",
+          "misconceptionTag": "math.geo.cercle-et-disque-confondus"
+        }
       ],
       "correctOption": "a",
       "explanation": "الدائرةُ هي الخطُّ المنحني المغلق (له محيط)، والقرصُ هو السطحُ الممتلئُ داخلَها (له مساحة).",
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle"]
+    },
+    {
+      "prompt": "دائرة مرسومة داخل مربّع ضلعه 12 سم وتلمس أضلاعه الأربعة. ما محيطها؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 230\"><path d=\"M90 20 L270 20 L270 200 L90 200 Z\" fill=\"#94a3b8\" fill-opacity=\"0.08\" stroke=\"none\"/><path d=\"M90 20 L270 20 L270 200 L90 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"180\" cy=\"110\" r=\"90\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"110\" r=\"3\" fill=\"#0f172a\"/><text x=\"180\" y=\"222\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">12</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "18,84 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "b",
+          "text": "37,68 سم"
+        },
+        {
+          "id": "c",
+          "text": "75,36 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "113,04 سم",
+          "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "قطر الدائرة هو ضلع المربّع: ق = 12 سم. المحيط = π × ق = 3,14 × 12 = 37,68 سم. ومن أخذ 12 نصف قطرٍ وجد 2 × 3,14 × 12 = 75,36؛ ومن اعتبر 6 قطرًا وجد 18,84؛ و113,04 هو 3,14 × 6 × 6 أي مساحة القرص.",
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
+    },
+    {
+      "prompt": "صُنعت دائرة من سلك طوله 81,64 سم. ما نصف قطرها؟ (π ≈ 3,14)",
+      "options": [
+        {
+          "id": "a",
+          "text": "13 سم"
+        },
+        {
+          "id": "b",
+          "text": "26 سم",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "40,82 سم"
+        },
+        {
+          "id": "d",
+          "text": "52 سم"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "طول السلك هو المحيط، والمحيط ÷ القطر = π، فالقطر = 81,64 ÷ 3,14 = 26 سم، ونصف القطر 26 ÷ 2 = 13 سم. التحقّق: 2 × 3,14 × 13 = 81,64 ✓. من توقّف عند 26 أعطى القطر لا نصف القطر، ومن قسم 81,64 على 2 فقط وجد 40,82.",
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle", "math.mes.perimetres"]
+    },
+    {
+      "prompt": "دائرة مركزها م وقطرها 10 سم. النقطة هـ تبعد 5 سم عن م، والنقطة ك تبعد 8 سم، والنقطة ن تبعد 10 سم. أيّ النقاط تقع على الدائرة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "هـ وحدها"
+        },
+        {
+          "id": "b",
+          "text": "ن وحدها",
+          "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
+        },
+        {
+          "id": "c",
+          "text": "ك وحدها"
+        },
+        {
+          "id": "d",
+          "text": "ك و ن معًا"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نصف القطر 10 ÷ 2 = 5 سم، والنقطة على الدائرة إذا كان بعدها عن المركز يساوي نصف القطر بالضبط: هـ وحدها. ك (8 سم) و ن (10 سم) خارجها؛ ومن أخذ 10 نصفَ قطر خلط بين القطر ونصف القطر.",
       "difficulty": 2,
       "competencies": ["math.geo.cercle"]
     }

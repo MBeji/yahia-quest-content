@@ -1,0 +1,136 @@
+{
+  "title": "اختبار فهم الدرس ⭐",
+  "questions": [
+    {
+      "prompt": "عند حساب محيط شكل مكوّن من قطعتين ملتصقتين، أيّ الأضلاع لا ندخلها في المحيط؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "الضلع الأطول بين أضلاع القطعتين"
+        },
+        {
+          "id": "b",
+          "text": "الضلع المشترك بين القطعتين"
+        },
+        {
+          "id": "c",
+          "text": "الأضلاع المائلة على الشكل كلّها"
+        },
+        {
+          "id": "d",
+          "text": "الضلع الذي كُتب عليه طوله"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الضلع المشترك تلتقي عنده القطعتان، فهو داخل الشكل وليس على حدّه الخارجيّ؛ والمحيط هو طول الحدّ الخارجيّ، فلا يُحسب هذا الضلع. أمّا الأضلاع الأخرى، طويلة أو مائلة أو مكتوبة الطول، فكلّها على الحدود إن لم تكن مشتركة.",
+      "difficulty": 1,
+      "competencies": ["math.mes.perimetres"]
+    },
+    {
+      "prompt": "ساحة مركّبة من مربّع ضلعه 6 م ومثلّث متقايس الأضلاع ضلعه 6 م ملتصق بضلعه العلويّ. ما محيطها؟\n<svg viewBox=\"0 0 360 240\"><path d=\"M140 130 L220 130 L220 210 L140 210 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\"/><path d=\"M140 130 L180 60.7 L220 130 Z\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\"/><path d=\"M180 60.7 L220 130 L220 210 L140 210 L140 130 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M140 130 L220 130\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M154.8 92.4 L165.2 98.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M205.2 92.4 L194.8 98.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M226 170 L214 170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M180 216 L180 204\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M134 170 L146 170\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"180\" y=\"232\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "42 م",
+          "misconceptionTag": "math.mes.perimetre-segment-interieur-compte"
+        },
+        {
+          "id": "b",
+          "text": "36 م",
+          "misconceptionTag": "math.mes.perimetre-segment-interieur-compte"
+        },
+        {
+          "id": "c",
+          "text": "30 م"
+        },
+        {
+          "id": "d",
+          "text": "24 م"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الضلع المشترك داخل الشكل، فعلى الحدود 3 أضلاع من المربّع وضلعان من المثلّث: 5 أضلاع طول كلّ منها 6 م، والمحيط 5 × 6 = 30 م. من جمع محيطي القطعتين 24 + 18 وجد 42 م، ومن حذف الضلع المشترك مرّة واحدة وجد 6 أضلاع أي 36 م.",
+      "difficulty": 2,
+      "competencies": ["math.mes.perimetres"]
+    },
+    {
+      "prompt": "يلتصق نصف دائرة قطرها 8 سم بأحد أضلاع مستطيل. أيّهما يدخل في محيط الشكل الناتج؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "القوس وحده، لأنّ القطر ضلع مشترك داخل الشكل"
+        },
+        {
+          "id": "b",
+          "text": "القطر وحده، لأنّ القوس ليس ضلعًا مستقيمًا"
+        },
+        {
+          "id": "c",
+          "text": "القوس والقطر معًا، لأنّ كليهما على نصف الدائرة"
+        },
+        {
+          "id": "d",
+          "text": "لا القوس ولا القطر، لأنّهما داخل الشكل"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "القطر هو الضلع الذي تلتصق به نصف الدائرة بالمستطيل، فهو مشترك بينهما ويقع داخل الشكل فلا يُحسب. أمّا القوس فهو الحدّ الخارجيّ لنصف الدائرة، طوله π × ق ÷ 2، فيدخل في المحيط مع الأضلاع المستقيمة الخارجيّة للمستطيل.",
+      "difficulty": 2,
+      "competencies": ["math.mes.perimetres", "math.geo.cercle"]
+    },
+    {
+      "prompt": "نافذة مستطيلة عرضها 4 م وارتفاعها 5 م، يعلوها نصف دائرة قطرها عرض النافذة. ما محيطها؟ (π ≈ 3,14)\n<svg viewBox=\"0 0 360 235\"><path d=\"M124 61 L124 201 L236 201 L236 61 A56 56 0 0 0 124 61 Z\" fill=\"#0f6e56\" fill-opacity=\"0.14\" stroke=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M124 61 L124 201 L236 201 L236 61 A56 56 0 0 0 124 61\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M124 61 L236 61\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"180\" y=\"223\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><text x=\"112\" y=\"136\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "26,56 م",
+          "misconceptionTag": "math.geo.arc-circonference-entiere-prise-pour-l-arc"
+        },
+        {
+          "id": "b",
+          "text": "24,28 م",
+          "misconceptionTag": "math.mes.perimetre-segment-interieur-compte"
+        },
+        {
+          "id": "c",
+          "text": "20,28 م"
+        },
+        {
+          "id": "d",
+          "text": "14 م",
+          "misconceptionTag": "math.mes.perimetre-partie-du-bord-oubliee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "على الحدود ضلعان عموديّان 5 + 5 والقاعدة 4، أي 14 م، ثمّ القوس 3,14 × 4 ÷ 2 = 6,28 م: المحيط 14 + 6,28 = 20,28 م. القطر العلويّ 4 م داخل النافذة فلا يُضاف (وإلّا وجدنا 24,28)، ولا نضع دائرة كاملة مكان القوس (وإلّا وجدنا 26,56).",
+      "difficulty": 2,
+      "competencies": ["math.mes.perimetres", "math.geo.cercle"]
+    },
+    {
+      "prompt": "نغرس أعمدة على حدّ مغلق محيطه 30 م بمسافة 2 م بين عمودين متتاليين. كم عمودًا نغرس؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "14 عمودًا"
+        },
+        {
+          "id": "b",
+          "text": "15 عمودًا"
+        },
+        {
+          "id": "c",
+          "text": "16 عمودًا",
+          "misconceptionTag": "math.mes.plantations-ferme-et-ouvert-confondus"
+        },
+        {
+          "id": "d",
+          "text": "60 عمودًا"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "على حدّ مغلق عدد الأعمدة يساوي عدد المسافات: 30 ÷ 2 = 15، لأنّ العمود الأخير ينتهي عند الأوّل. ولا نضيف عمودًا كما نفعل على خطّ مفتوح (16)، ولا ننقص واحدًا (14).",
+      "difficulty": 2,
+      "competencies": ["math.mes.perimetres"]
+    }
+  ]
+}

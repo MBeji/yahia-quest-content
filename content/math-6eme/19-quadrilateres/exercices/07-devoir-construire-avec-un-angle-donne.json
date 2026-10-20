@@ -1,0 +1,170 @@
+{
+  "title": "⚔️ زعيم الفرض ⭐⭐⭐: بناء أشكال بزاوية معلومة",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "نبني متوازي الأضلاع أ ب ج د حيث أ ب = 6 سم و ب ج = 4 سم وقيس الزاوية أ ب ج يساوي 110°. بعد أن رسمنا [أ ب] بالمسطرة، كيف نضع المنقلة لرسم هذه الزاوية؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "مركزها في أ وصفرها على [أ ب)، ونعلّم 110°",
+          "misconceptionTag": "math.geo.sommet-de-l-angle-mal-identifie"
+        },
+        {
+          "id": "b",
+          "text": "مركزها في منتصف [أ ب] وصفرها على [أ ب)، ونعلّم 110°"
+        },
+        {
+          "id": "c",
+          "text": "مركزها في ب وصفرها على [ب أ)، ونعلّم 70°",
+          "misconceptionTag": "math.geo.rapporteur-mauvaise-graduation"
+        },
+        {
+          "id": "d",
+          "text": "مركزها في ب وصفرها على [ب أ)، ونعلّم 110°"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "الزاوية أ ب ج رأسها الحرف الأوسط ب، فنضع مركز المنقلة في ب ونضبط صفرها على أحد ضلعيها المعلومين [ب أ). عندئذ نقرأ 110° على السلّم الذي صفره على [ب أ). مركزها في أ يقيس زاوية رأسها أ لا ب، ومركزها في منتصف [أ ب] لا يقيس زاوية بين ضلعين، وقراءة 70° تعلّم الزاوية المتمّمة إلى 180° لا الزاوية المطلوبة.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "نبني المعيّن أ ب ج د الذي فيه أ ب = 5 سم وقيس الزاوية أ د ج يساوي 70°. رسمنا الزاوية أ د ج بالمنقلة في الرأس د، ونريد تعيين أ وج على نصفي مستقيمها. أيّ طولين نعلّمهما؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "على [د أ) نعلّم 5 سم، وعلى [د ج) نعلّم 10 سم"
+        },
+        {
+          "id": "b",
+          "text": "على [د أ) نعلّم 10 سم، وعلى [د ج) نعلّم 10 سم"
+        },
+        {
+          "id": "c",
+          "text": "على [د أ) نعلّم 2,5 سم، وعلى [د ج) نعلّم 2,5 سم"
+        },
+        {
+          "id": "d",
+          "text": "على [د أ) نعلّم 5 سم، وعلى [د ج) نعلّم 5 سم"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "أضلاع المعيّن الأربعة متساوية وأ ب = 5 سم، فكلّ ضلع 5 سم ومنها [د أ] و[د ج]. نعلّم إذن 5 سم على كلّ من نصفي المستقيم الخارجين من د. الطول 10 سم لا يطابق أيّ ضلع، و2,5 سم نصف الضلع لا الضلع نفسه.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "type": "ordering",
+      "prompt": "نبني متوازي الأضلاع أ ب ج د حيث أ ب = 6 سم و ب ج = 4 سم وقيس الزاوية أ ب ج يساوي 110°. رتّب خطوات البناء.",
+      "options": [
+        {
+          "id": "a",
+          "text": "نرسم الضلع [أ ب] = 6 سم بالمسطرة"
+        },
+        {
+          "id": "b",
+          "text": "نضع مركز المنقلة في ب وصفرها على [ب أ) ونعلّم 110°"
+        },
+        {
+          "id": "c",
+          "text": "نرسم نصف المستقيم من ب ونعيّن عليه ج بحيث ب ج = 4 سم"
+        },
+        {
+          "id": "d",
+          "text": "نرسم قوسًا مركزه أ وفتحته 4 سم وقوسًا مركزه ج وفتحته 6 سم، ويتقاطعان في د"
+        },
+        {
+          "id": "e",
+          "text": "نصل [أ د] و[ج د] ونتحقّق من التوازي بالكوس"
+        }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d", "e"]
+      },
+      "explanation": "الضلع المعلوم يُرسم أوّلًا، ثمّ تُرسم الزاوية في ب لأنّها تحتاج إلى ضلع تستند عليه، ثمّ نعيّن ج بطول الضلع الثاني. الرأس الرابع د لا يُعيَّن إلّا بعد وجود أ وج لأنّ مركزَي القوسين هما أ وج. الوصل والتحقّق يأتيان أخيرًا.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "بنينا المعيّن أ ب ج د وفيه أ ب = 5 سم. نريد أن نبني على الضلع [أ ب] مربّعًا خارج المعيّن، فرسمنا بالكوس عموديًّا على (أ ب) في أ وعموديًّا آخر في ب. ما الطول الذي نعلّمه على كلّ من العموديّين انطلاقًا من أ ومن ب؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 سم"
+        },
+        {
+          "id": "b",
+          "text": "5 سم"
+        },
+        {
+          "id": "c",
+          "text": "2,5 سم"
+        },
+        {
+          "id": "d",
+          "text": "طول القطر [أ ج]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "أضلاع المربّع الأربعة متساوية، وأحدها [أ ب] = 5 سم، فنعلّم 5 سم على كلّ عموديّ ثمّ نصل الطرفين. ضعف الضلع 10 سم ونصفه 2,5 سم لا يعطيان مربّعًا ضلعه [أ ب]، والقطر [أ ج] لا يساوي الضلع.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "حقل مثلّثيّ أ ب ج فيه أ ب = 40 م وأ ج = 30 م وقيس الزاوية ب أ ج يساوي 70°. نرسمه على ورقة بالسلّم 1/1000. ما طولا [أ ب] و[أ ج] على الورقة؟\n<svg viewBox=\"0 0 240 190\"><path d=\"M121 40 L80 153 L190 98 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M121 40 L80 153 L190 98 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"121\" y=\"32\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">أ</text><text x=\"68\" y=\"167\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">ب</text><text x=\"204\" y=\"104\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">ج</text><text x=\"84.5\" y=\"96.5\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">40 م</text><text x=\"177.5\" y=\"63.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">30 م</text><text x=\"125\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">70°</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 سم و 3 سم"
+        },
+        {
+          "id": "b",
+          "text": "4 000 000 سم و 3 000 000 سم",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "0,04 سم و 0,03 سم"
+        },
+        {
+          "id": "d",
+          "text": "0,4 سم و 0,3 سم"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "السلّم 1/1000 يعني أنّ 1 سم على الورقة يمثّل 1000 سم في الواقع. نحوّل أوّلًا: 40 م = 4 000 سم و30 م = 3 000 سم، ثمّ نقسم على 1000: 4 000 ÷ 1000 = 4 سم و3 000 ÷ 1000 = 3 سم. الضرب في 1000 يكبّر الطولين بدل أن يصغّرهما، وقسمة 40 و30 على 1000 دون تحويل الأمتار إلى سنتيمترات تعطي 0,04 سم و 0,03 سم، والعددان 0,4 سم و 0,3 سم ناتجان عن قسمة 40 و30 على 100 بدل التحويل ثمّ القسمة على 1000.",
+      "difficulty": 3,
+      "competencies": ["math.prop.situations"]
+    },
+    {
+      "prompt": "نبني المثلّث أ ب ج القائم في ب والذي ضلعا زاويته القائمة متساويان. رسمنا [ب أ] = 5 سم، ثمّ رسمنا بالكوس العموديّ على (ب أ) في ب (المتقطّع في الشكل). كيف نعيّن النقطة ج على هذا العموديّ؟\n<svg viewBox=\"0 0 230 190\"><path d=\"M50 140 L170 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M50 140 L50 30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M59 140 L59 131 L50 131\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"110\" y=\"162\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">5 سم</text><text x=\"40\" y=\"160\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">ب</text><text x=\"182\" y=\"160\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">أ</text><circle cx=\"50\" cy=\"140\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"170\" cy=\"140\" r=\"2.6\" fill=\"currentColor\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "في أيّ موضع منه، فالزاوية القائمة في ب تكفي لنحصل على المثلّث المطلوب"
+        },
+        {
+          "id": "b",
+          "text": "بحيث ب ج = 10 سم، أي ضعف ب أ"
+        },
+        {
+          "id": "c",
+          "text": "بحيث أ ج = 5 سم، أي مثل ب أ"
+        },
+        {
+          "id": "d",
+          "text": "بحيث ب ج = 5 سم، لأنّ ضلعي الزاوية القائمة متساويان"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المطلوب مثلّث قائم في ب ضلعا زاويته القائمة [ب أ] و[ب ج] متساويان، فنعلّم على العموديّ النقطة ج بحيث ب ج = ب أ = 5 سم. الزاوية القائمة وحدها لا تكفي لأنّ ج لو كانت في موضع آخر لاختلف الضلعان، وضعف 5 سم لا يحقّق التساوي. أمّا أ ج فهو الوتر، وهو أطول من 5 سم دائمًا.",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base"]
+    }
+  ]
+}

@@ -9,12 +9,20 @@
     {
       "prompt": "لماذا يقبل العددُ 480 القسمةَ على 10؟",
       "options": [
-        { "id": "a", "text": "لأنّ آحاده 8" },
-        { "id": "b", "text": "لأنّ آحاده 0" },
-        { "id": "c", "text": "لأنّ مجموع أرقامه 12", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
-        { "id": "d", "text": "لأنّه عددٌ زوجيّ", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" }
+        { "id": "a", "text": "لأنّ آحاده 0" },
+        { "id": "b", "text": "لأنّ آحاده 8" },
+        {
+          "id": "c",
+          "text": "لأنّ مجموع أرقامه 12",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "لأنّه عددٌ زوجيّ",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        }
       ],
-      "correctOption": "b",
+      "correctOption": "a",
       "explanation": "العددُ 480 يقبل القسمة على 10 لأنّ آحاده 0 (وكلُّ عددٍ آحاده 0 يقبل القسمة على 10).",
       "difficulty": 1,
       "competencies": ["math.num.criteres-divisibilite"]
@@ -48,12 +56,12 @@
     {
       "prompt": "العددُ 256: هل يقبل القسمةَ على 2؟ وعلى 3؟",
       "options": [
-        { "id": "a", "text": "يقبل على 3 لا على 2" },
+        { "id": "a", "text": "يقبل على 2 لا على 3" },
         { "id": "b", "text": "يقبلهما معًا" },
-        { "id": "c", "text": "يقبل على 2 لا على 3" },
+        { "id": "c", "text": "يقبل على 3 لا على 2" },
         { "id": "d", "text": "لا يقبل أيًّا منهما" }
       ],
-      "correctOption": "c",
+      "correctOption": "a",
       "explanation": "العددُ 256 آحاده 6 (زوجيّ) فيقبل القسمة على 2؛ ومجموعُ أرقامه 2 + 5 + 6 = 13 لا يقبل القسمة على 3.",
       "difficulty": 3,
       "competencies": ["math.num.criteres-divisibilite"]
@@ -61,7 +69,11 @@
     {
       "prompt": "ما أكبرُ رقمٍ نضعه مكان ▢ في العدد 2▢ (من خانتين) ليقبل القسمةَ على 5؟",
       "options": [
-        { "id": "a", "text": "0", "misconceptionTag": "math.num.extremum-demande-ignore" },
+        {
+          "id": "a",
+          "text": "0",
+          "misconceptionTag": "math.num.extremum-demande-ignore"
+        },
         { "id": "b", "text": "9" },
         { "id": "c", "text": "2" },
         { "id": "d", "text": "5" }
@@ -75,14 +87,84 @@
       "prompt": "عددٌ من ثلاث خاناتٍ مجموعُ أرقامه 15. هل يقبل القسمةَ على 3 وعلى 9؟",
       "options": [
         { "id": "a", "text": "على 3 نعم وعلى 9 لا" },
-        { "id": "b", "text": "عليهما معًا", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        {
+          "id": "b",
+          "text": "عليهما معًا",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
         { "id": "c", "text": "لا على 3 ولا على 9" },
-        { "id": "d", "text": "على 9 فقط", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" }
+        { "id": "d", "text": "على 9 نعم وعلى 3 لا" }
       ],
       "correctOption": "a",
       "explanation": "مجموعُ الأرقام 15 يقبل القسمة على 3 (15 = 3 × 5) ولا يقبلها على 9، فالعددُ يقبل القسمة على 3 لا على 9.",
       "difficulty": 3,
       "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "في لعبة اللافتات تعطي كلُّ لافتة نقاطًا بحسب باقي قسمة عددها على 5: الباقي 0 يعطي 5 نقاط، والباقي 1 يعطي 4، والباقي 2 يعطي 3، والباقي 3 يعطي نقطتين، والباقي 4 يعطي نقطة واحدة. اختار نادر اللافتات 119 و250 و84 و105. كم نقطة نال؟",
+      "answerKey": {
+        "value": 12
+      },
+      "explanation": "الباقي يُقرأ من رقم الآحاد دون قسمة. 119 آحاده 9 وباقيه 4 فله نقطة، و250 باقيه 0 فله 5 نقاط، و84 باقيه 4 فله نقطة، و105 باقيه 0 فله 5 نقاط. المجموع 1 + 5 + 1 + 5 = 12 نقطة.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "type": "matching",
+      "prompt": "اربط كلَّ عددٍ بالجملة التي تصفه، علمًا أنّ هذه الأعداد كوّنّاها بالأرقام 1 و6 و5 و0:",
+      "options": [
+        { "id": "l1", "text": "5061" },
+        { "id": "l2", "text": "1056" },
+        { "id": "l3", "text": "1605" },
+        { "id": "l4", "text": "1650" },
+        { "id": "r4", "text": "يقبل القسمة على 2 وعلى 5 معًا" },
+        { "id": "r1", "text": "لا يقبل القسمة على 2 ولا على 5" },
+        { "id": "r3", "text": "يقبل القسمة على 5 ولا يقبلها على 2" },
+        { "id": "r2", "text": "يقبل القسمة على 2 ولا يقبلها على 5" }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "نقرأ رقم الآحاد: 5061 آحاده 1 فلا يقبل أيًّا منهما، و1056 آحاده 6 زوجيّ غير 0 فيقبل القسمة على 2 فقط، و1605 آحاده 5 فيقبل القسمة على 5 فقط، و1650 آحاده 0 فيقبلهما معًا.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "بالأرقام 7 و2 و4 و5 و0، نكوّن أعدادًا من خمسة أرقام نستعمل فيها كلَّ رقم مرّة واحدة. ما أكبر عددٍ يقبل القسمة على 9 وعلى 2 معًا؟ (اكتب العدد دون فراغ)",
+      "answerKey": {
+        "value": 75420
+      },
+      "explanation": "مجموع الأرقام الخمسة 7 + 2 + 4 + 5 + 0 = 18 مضاعفٌ لـ 9، فكلُّ عددٍ نكوّنه منها يقبل القسمة على 9. يبقى شرط القسمة على 2: لأكبر عدد نرتّب الأرقام تنازليًّا 75420، وآحاده 0 فهو زوجيّ. فالجواب 75420 = 9 × 8380.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "type": "ordering",
+      "prompt": "نبحث عن الرقم الناقص ▢ في عددٍ ليقبل القسمة على 3. رتّب خطوات الحلّ من الأولى إلى الأخيرة.",
+      "options": [
+        { "id": "c", "text": "نكتب الأعداد الناتجة كلّها" },
+        { "id": "a", "text": "نجمع الأرقام الظاهرة في العدد" },
+        { "id": "d", "text": "نختار الأصغر أو الأكبر كما يطلبه السؤال" },
+        { "id": "b", "text": "نبحث عن الأرقام التي تجعل المجموع مضاعفًا لـ 3" }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "نبدأ بمجموع الأرقام الظاهرة لأنّ معيار 3 يعمل على الأرقام كلّها. ثمّ نبحث عن الأرقام التي تُتمّم المجموع إلى مضاعف لـ 3. بعد ذلك نكتب كلّ الحلول قبل أن نختار، حتّى لا نغفل الصفر أو التسعة، وآخر خطوة هي الاختيار الذي يطلبه نصّ السؤال.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "70-77",
+    "items": ["L25 ex. 2", "L26 ex. 8"]
+  }
 }

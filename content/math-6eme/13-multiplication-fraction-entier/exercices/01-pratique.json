@@ -9,10 +9,25 @@
     {
       "prompt": "ما ناتج 1/5 × 2؟",
       "options": [
-        { "id": "a", "text": "2/5" },
-        { "id": "b", "text": "1/10", "misconceptionTag": "math.frac.multiplication-denominateur-multiplie" },
-        { "id": "c", "text": "2/10", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
-        { "id": "d", "text": "3/5", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        {
+          "id": "a",
+          "text": "2/5"
+        },
+        {
+          "id": "b",
+          "text": "1/10",
+          "misconceptionTag": "math.frac.multiplication-denominateur-multiplie"
+        },
+        {
+          "id": "c",
+          "text": "2/10",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
+        },
+        {
+          "id": "d",
+          "text": "3/5",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
       "correctOption": "a",
       "explanation": "نضرب البسطَ في 2 ونُبقي المقام: 1/5 × 2 = (1×2)/5 = 2/5.",
@@ -22,10 +37,25 @@
     {
       "prompt": "ما ناتج 3/7 × 2؟",
       "options": [
-        { "id": "a", "text": "3/14", "misconceptionTag": "math.frac.multiplication-denominateur-multiplie" },
-        { "id": "b", "text": "6/7" },
-        { "id": "c", "text": "6/14", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
-        { "id": "d", "text": "5/7", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        {
+          "id": "a",
+          "text": "3/14",
+          "misconceptionTag": "math.frac.multiplication-denominateur-multiplie"
+        },
+        {
+          "id": "b",
+          "text": "6/7"
+        },
+        {
+          "id": "c",
+          "text": "6/14",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
+        },
+        {
+          "id": "d",
+          "text": "5/7",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
       "correctOption": "b",
       "explanation": "نضرب البسطَ في 2 ونُبقي المقام: 3/7 × 2 = (3×2)/7 = 6/7.",
@@ -35,10 +65,25 @@
     {
       "prompt": "كيف نضرب كسرًا في عددٍ صحيح؟",
       "options": [
-        { "id": "a", "text": "نضرب المقامَ في العدد", "misconceptionTag": "math.frac.multiplication-denominateur-multiplie" },
-        { "id": "b", "text": "نضرب الاثنين في العدد", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
-        { "id": "c", "text": "نضرب البسطَ في العدد ونُبقي المقام" },
-        { "id": "d", "text": "نجمعهما", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        {
+          "id": "a",
+          "text": "نضرب المقامَ في العدد ونُبقي البسط",
+          "misconceptionTag": "math.frac.multiplication-denominateur-multiplie"
+        },
+        {
+          "id": "b",
+          "text": "نضرب البسطَ والمقامَ كليهما في العدد",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
+        },
+        {
+          "id": "c",
+          "text": "نضرب البسطَ في العدد ونُبقي المقام"
+        },
+        {
+          "id": "d",
+          "text": "نجمع العددَ مع البسط ونُبقي المقام",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
       "correctOption": "c",
       "explanation": "القاعدة: a/b × n = (a×n)/b، أي نضرب البسطَ في العدد ونُبقي المقامَ كما هو.",
@@ -46,25 +91,52 @@
       "competencies": ["math.frac.mult-entier"]
     },
     {
-      "prompt": "ما ناتج 2/9 × 4؟",
+      "prompt": "ما ناتج 4/9 × 2؟",
       "options": [
-        { "id": "a", "text": "2/36", "misconceptionTag": "math.frac.multiplication-denominateur-multiplie" },
-        { "id": "b", "text": "8/36", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
-        { "id": "c", "text": "6/9", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "8/9" }
+        {
+          "id": "a",
+          "text": "4/18",
+          "misconceptionTag": "math.frac.multiplication-denominateur-multiplie"
+        },
+        {
+          "id": "b",
+          "text": "8/18",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
+        },
+        {
+          "id": "c",
+          "text": "6/9",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "8/9"
+        }
       ],
       "correctOption": "d",
-      "explanation": "نضرب البسطَ في 4 ونُبقي المقام: 2/9 × 4 = (2×4)/9 = 8/9.",
+      "explanation": "نضرب البسطَ في 2 ونُبقي المقام: 4/9 × 2 = (4×2)/9 = 8/9.",
       "difficulty": 1,
       "competencies": ["math.frac.mult-entier"]
     },
     {
       "prompt": "ما ناتج 1/3 × 3؟",
       "options": [
-        { "id": "a", "text": "1" },
-        { "id": "b", "text": "1/9" },
-        { "id": "c", "text": "1/3" },
-        { "id": "d", "text": "3/9" }
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "1/9"
+        },
+        {
+          "id": "c",
+          "text": "1/3"
+        },
+        {
+          "id": "d",
+          "text": "3/9"
+        }
       ],
       "correctOption": "a",
       "explanation": "1/3 × 3 = 3/3؛ وبما أنّ البسط يساوي المقام فإنّ 3/3 = 1.",
@@ -74,15 +146,111 @@
     {
       "prompt": "ما ناتج 2/4 × 3 (مع الاختزال)؟",
       "options": [
-        { "id": "a", "text": "6/12", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
-        { "id": "b", "text": "3/2" },
-        { "id": "c", "text": "5/4" },
-        { "id": "d", "text": "2/12" }
+        {
+          "id": "a",
+          "text": "6/12",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
+        },
+        {
+          "id": "b",
+          "text": "3/2"
+        },
+        {
+          "id": "c",
+          "text": "5/4"
+        },
+        {
+          "id": "d",
+          "text": "2/12"
+        }
       ],
       "correctOption": "b",
       "explanation": "2/4 × 3 = 6/4، وبالاختزال على 2: 6/4 = 3/2.",
       "difficulty": 2,
       "competencies": ["math.frac.mult-entier", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "ما قيمة 2/5 من 30 دينارًا؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 دنانير",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "60 دينارًا",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "75 دينارًا",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
+        {
+          "id": "d",
+          "text": "12 دينارًا"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "المقام 5 يقسم المبلغ إلى 5 أجزاء متساوية: 30 : 5 = 6 دنانير للجزء الواحد. البسط 2 يأخذ جزأين: 6 × 2 = 12 دينارًا.",
+      "difficulty": 2,
+      "competencies": ["math.frac.mult-entier"]
+    },
+    {
+      "prompt": "ما ناتج 1/3 × 2/5؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/8",
+          "misconceptionTag": "math.frac.add-numerators-and-denominators"
+        },
+        {
+          "id": "b",
+          "text": "3/15"
+        },
+        {
+          "id": "c",
+          "text": "2/15"
+        },
+        {
+          "id": "d",
+          "text": "2/3",
+          "misconceptionTag": "math.frac.produit-fractions-denominateur-conserve"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نضرب البسطين 1 × 2 = 2 ونضرب المقامين 3 × 5 = 15، فالجداء 2/15. وهو أصغر من 2/5 لأنّنا أخذنا ثلثه.",
+      "difficulty": 2,
+      "competencies": ["math.frac.mult-entier"]
+    },
+    {
+      "prompt": "كم دقيقة في 2/5 سا؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "24 د"
+        },
+        {
+          "id": "b",
+          "text": "40 د",
+          "misconceptionTag": "math.mes.duree-convertie-en-base-cent"
+        },
+        {
+          "id": "c",
+          "text": "12 د",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "120 د",
+          "misconceptionTag": "math.frac.fraction-d-un-nombre-etape-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الساعة 60 دقيقة. نقسمها على المقام 5: 60 : 5 = 12 د، ثمّ نضرب في البسط 2: 12 × 2 = 24 د.",
+      "difficulty": 2,
+      "competencies": ["math.frac.mult-entier"]
     }
   ]
 }

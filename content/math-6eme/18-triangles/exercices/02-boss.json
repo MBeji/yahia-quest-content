@@ -7,51 +7,87 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "ما نوعُ المثلّث المبيّن في الشكل حسب زواياه؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"25,75 25,28 78,75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"25\" y=\"65\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
+      "prompt": "الضلع المقابل للزاوية القائمة في المثلّث القائم الزاوية يسمّى:",
       "options": [
-        { "id": "a", "text": "حادّ الزوايا", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" },
-        { "id": "b", "text": "قائم الزاوية" },
-        { "id": "c", "text": "منفرج الزاوية", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" },
-        { "id": "d", "text": "مستقيم" }
+        { "id": "a", "text": "الساق" },
+        { "id": "b", "text": "الوتر" },
+        { "id": "c", "text": "القمّة" },
+        { "id": "d", "text": "القاعدة" }
       ],
       "correctOption": "b",
-      "explanation": "المربّعُ الصغير علامةُ الزاوية القائمة، فالمثلّثُ قائمُ الزاوية.",
+      "explanation": "في المثلّث القائم الزاوية يُسمّى الضلع الذي يقابل الزاوية القائمة الوتر. أمّا الساقان فهما الضلعان المتساويان في المثلّث المتساوي الساقين، والقمّة رأس لا ضلع.",
       "difficulty": 1,
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "مثلّثٌ أطوالُ أضلاعه 7 سم، 7 سم، 10 سم. نوعُه:",
+      "prompt": "في المثلّث أ‌ب‌ج: أ‌ب = 7 سم و ب‌ج = 10 سم، ومحيطه 24 سم. ما نوعه حسب أضلاعه؟",
       "options": [
         { "id": "a", "text": "متساوي الساقين" },
-        { "id": "b", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "c", "text": "مختلف الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "d", "text": "بلا تصنيف" }
+        {
+          "id": "b",
+          "text": "متساوي الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "c",
+          "text": "مختلف الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        }
       ],
       "correctOption": "a",
-      "explanation": "له ضلعان متساويان (7 و7) والثالث مختلف (10)، فهو متساوي الساقين.",
+      "explanation": "الضلع الثالث أ‌ج = 24 − 7 − 10 = 7 سم. الأطوال 7 و10 و7: ضلعان فقط متساويان (أ‌ب = أ‌ج = 7 سم)، فهو متساوي الساقين، قمّته الرئيسيّة أ وقاعدته [ب‌ج] = 10 سم.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "مثلّثٌ فيه زاويةٌ منفرجة (أكبر من 90°). ما نوعُه حسب الزوايا؟",
+      "prompt": "مثلّث له ضلعان متساويان وفيه زاوية قائمة. ما اسمه الكامل؟",
       "options": [
-        { "id": "a", "text": "حادّ الزوايا", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" },
-        { "id": "b", "text": "مختلف الأضلاع", "misconceptionTag": "math.geo.classements-triangle-melanges" },
-        { "id": "c", "text": "منفرج الزاوية" },
-        { "id": "d", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classement-triangle-par-angles-errone" }
+        {
+          "id": "a",
+          "text": "منفرج الزاوية ومتساوي الساقين",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        },
+        {
+          "id": "b",
+          "text": "قائم الزاوية ومختلف الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        { "id": "c", "text": "قائم الزاوية ومتساوي الساقين" },
+        {
+          "id": "d",
+          "text": "قائم الزاوية ومتساوي الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        }
       ],
       "correctOption": "c",
-      "explanation": "المثلّثُ الذي فيه زاويةٌ منفرجة يُسمّى منفرجَ الزاوية.",
+      "explanation": "حسب الزوايا: فيه زاوية قائمة فهو قائم الزاوية. حسب الأضلاع: له ضلعان متساويان فقط فهو متساوي الساقين. الاسم الكامل يجمع الجوابين، وكلّ تصنيف مستقلّ عن الآخر.",
       "difficulty": 2,
       "competencies": ["math.geo.triangles-base"]
     },
     {
       "prompt": "ما نوعُ هذا المثلّث حسب أضلاعه؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"18,76 86,68 44,26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "متساوي الأضلاع", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
+        {
+          "id": "a",
+          "text": "متساوي الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
         { "id": "b", "text": "مختلف الأضلاع" },
-        { "id": "c", "text": "متساوي الساقين", "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone" },
-        { "id": "d", "text": "قائم الزاوية", "misconceptionTag": "math.geo.classements-triangle-melanges" }
+        {
+          "id": "c",
+          "text": "متساوي الساقين",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "d",
+          "text": "قائم الزاوية",
+          "misconceptionTag": "math.geo.classements-triangle-melanges"
+        }
       ],
       "correctOption": "b",
       "explanation": "أضلاعُه الثلاثة مختلفةُ الأطوال بوضوح، فهو مختلف الأضلاع (مثلّثٌ عاديّ).",
@@ -59,30 +95,90 @@
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "لبناء مثلّثٍ علمنا ضلعين والزاويةَ المحصورةَ بينهما. أيُّ أداتين نحتاج؟",
+      "prompt": "قطعت السيّدة نور كعكة مستطيلة (ليست مربّعة) بخطّ مستقيم من ركن إلى الركن المقابل، فصارت قطعتين مثلّثتين متقايستين. ما نوع كلّ قطعة؟ <svg viewBox=\"0 0 100 100\"><path d=\"M8 24 L92 24 L92 76 Z\" fill=\"#0f6e56\" opacity=\"0.25\"/><polygon points=\"8,24 92,24 92,76 8,76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"8\" y1=\"24\" x2=\"92\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.8\"/><polyline points=\"84,24 84,32 92,32\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "المسطرة والمنقلة" },
-        { "id": "b", "text": "المسطرة والميزان" },
-        { "id": "c", "text": "الفرجار والميزان" },
-        { "id": "d", "text": "المنقلة فقط" }
+        { "id": "a", "text": "قائم الزاوية ومختلف الأضلاع" },
+        {
+          "id": "b",
+          "text": "قائم الزاوية ومتساوي الساقين",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        {
+          "id": "c",
+          "text": "حادّ الزوايا ومختلف الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        },
+        {
+          "id": "d",
+          "text": "منفرج الزاوية ومختلف الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        }
       ],
       "correctOption": "a",
-      "explanation": "نرسم الضلعين بالمسطرة والزاويةَ بينهما بالمنقلة.",
+      "explanation": "زاوية المستطيل قائمة، فالقطعة قائمة الزاوية عند ركنه. ضلعاها القائمان طول المستطيل وعرضه، وهما غير متساويين، والضلع الثالث، خطّ القطع، أطول منهما: لا زوج متساوٍ، فهي مختلفة الأضلاع. في المربّع وحده يتساوى الضلعان القائمان.",
       "difficulty": 3,
       "competencies": ["math.geo.triangles-base"]
     },
     {
-      "prompt": "كم زاويةً قائمةً يمكن أن توجد في مثلّثٍ واحدٍ على الأكثر؟",
+      "prompt": "مثلّث قيس إحدى زواياه 100°. ما نوعه حسب زواياه، وما نوع زاويتيه الأخريين؟",
       "options": [
-        { "id": "a", "text": "2" },
-        { "id": "b", "text": "3" },
-        { "id": "c", "text": "0" },
-        { "id": "d", "text": "1" }
+        { "id": "a", "text": "منفرج الزاوية، وزاويتاه الأخريان حادّتان" },
+        { "id": "b", "text": "منفرج الزاوية، وإحدى زاويتيه الأخريين قائمة" },
+        {
+          "id": "c",
+          "text": "حادّ الزوايا، لأنّ فيه زاويتين حادّتين",
+          "misconceptionTag": "math.geo.classement-triangle-par-angles-errone"
+        },
+        { "id": "d", "text": "منفرج الزاوية، وزاويتاه الأخريان منفرجتان" }
       ],
-      "correctOption": "d",
-      "explanation": "لا يمكن أن يحتوي مثلّثٌ على أكثر من زاوية قائمة واحدة (1)؛ فزاويتان قائمتان (90° + 90°) لا تُكوّنان مثلّثًا منغلقًا.",
+      "correctOption": "a",
+      "explanation": "أكبر زاوية 100°، وهي منفرجة، فالمثلّث منفرج الزاوية. وفي المثلّث زاوية واحدة على الأكثر ليست حادّة، فالزاويتان الأخريان حادّتان: لو كانت إحداهما قائمة أو منفرجة لمال ضلعاها بعيدًا ولم يلتقيا.",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "prompt": "المثلّث أ‌ب‌ج قائم في أ، أ‌ب = 6 سم و أ‌ج = 4 سم، ورسمنا النقطة ع بحيث يكون المستقيم (ب‌ج) هو الموسّط العمودي للقطعة [أ‌ع]. ما نوع المثلّث ع‌أ‌ب؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"18,82 78,82 18,42\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"18\" y1=\"82\" x2=\"54.9\" y2=\"26.6\" stroke=\"#0f6e56\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"54.9\" y1=\"26.6\" x2=\"78\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.2\"/><polyline points=\"24,82 24,76 18,76\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><polyline points=\"41.5,57.6 44.8,52.6 39.8,49.3\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><line x1=\"24.3\" y1=\"66.2\" x2=\"30.1\" y2=\"70.1\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><line x1=\"42.8\" y1=\"38.5\" x2=\"48.6\" y2=\"42.4\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><text x=\"12\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">أ</text><text x=\"82\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ب</text><text x=\"11\" y=\"40\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ج</text><text x=\"61.9\" y=\"24.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"currentColor\">ع</text></svg>",
+      "options": [
+        { "id": "a", "text": "متساوي الساقين رأسه ب" },
+        { "id": "b", "text": "متساوي الساقين رأسه أ" },
+        {
+          "id": "c",
+          "text": "متساوي الأضلاع",
+          "misconceptionTag": "math.geo.classement-triangle-par-cotes-errone"
+        },
+        { "id": "d", "text": "قائم الزاوية في أ" }
+      ],
+      "correctOption": "a",
+      "explanation": "ب نقطة من الموسّط العمودي لـ [أ‌ع]، فتبعد عن أ وعن ع البعد نفسه: بع = بأ = 6 سم. فللمثلّث ع‌أ‌ب ضلعان متساويان يلتقيان في الرأس ب، وهو متساوي الساقين رأسه ب؛ أمّا الضلع [أ‌ع] فأطول من 6 سم، فليس متساوي الأضلاع.",
+      "difficulty": 3,
+      "competencies": ["math.geo.triangles-base"]
+    },
+    {
+      "type": "ordering",
+      "prompt": "رتّب مراحل بناء مثلّث م‌ن‌ر فيه م‌ن = 7 سم و م‌ر = 4 سم وقيس الزاوية ن‌م‌ر = 50°.",
+      "options": [
+        { "id": "a", "text": "نرسم [م‌ن] = 7 سم بالمسطرة" },
+        {
+          "id": "b",
+          "text": "نضع مركز المنقلة على م وصفرها على [م‌ن] ونعلّم 50"
+        },
+        {
+          "id": "c",
+          "text": "نرسم نصف مستقيم من م يمرّ بالعلامة ونقيس عليه م‌ر = 4 سم"
+        },
+        { "id": "d", "text": "نصل ر بـ ن بالمسطرة" }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "نبدأ بضلع معلوم، ثمّ نرسم الزاوية المعلومة عند الرأس المشترك م، فنقيس عليها الضلع الثاني، وفي الأخير نصل طرفي الضلعين: الضلع الثالث لا يحتاج إلى قياس.",
       "difficulty": 3,
       "competencies": ["math.geo.triangles-base"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "24-26",
+    "items": ["L8 ex. 11"]
+  }
 }

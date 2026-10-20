@@ -7,80 +7,85 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><rect x=\"27\" y=\"24\" width=\"50\" height=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"27\" y=\"24\" width=\"9\" height=\"9\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.3\"/></svg>",
-      "options": [
-        { "id": "a", "text": "مستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "b", "text": "مربّع" },
-        { "id": "c", "text": "معيّن", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "d", "text": "شبه منحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
-      ],
-      "correctOption": "b",
-      "explanation": "أضلاعُه الأربعة متساوية وزواياه قائمة، فهو مربّع.",
+      "type": "numeric",
+      "prompt": "كم زوجًا من الأضلاع المتوازية في المستطيل؟",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "المستطيل متوازي أضلاع: كلّ ضلعين متقابلين متوازيان. فله زوج من الطولين وزوج من العرضين، أي 2.",
       "difficulty": 1,
       "competencies": ["math.geo.quadrilateres"]
     },
     {
-      "prompt": "أضلاعُ المعيّن:",
+      "prompt": "نريد رسم شبه منحرف قائم قاعدته [أب]. نضع الرأس د على:",
       "options": [
-        { "id": "a", "text": "الأربعة متساوية" },
-        { "id": "b", "text": "مختلفة" },
-        { "id": "c", "text": "ضلعان فقط متساويان" },
-        { "id": "d", "text": "غيرُ متوازية" }
+        { "id": "a", "text": "الموسّط العموديّ لـ [أب]" },
+        { "id": "b", "text": "المستقيم (أب) نفسه" },
+        {
+          "id": "c",
+          "text": "أيّ نقطة من الموازي لـ (أب) على بُعد الارتفاع",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        { "id": "d", "text": "العموديّ على (أب) في النقطة أ" }
       ],
-      "correctOption": "a",
-      "explanation": "المعيّنُ أضلاعُه الأربعة متساوية.",
+      "correctOption": "d",
+      "explanation": "في شبه المنحرف القائم أحد الضلعين غير المتوازيين عموديّ على القاعدتين. فنقيم عموديًّا على (أب) في أ ونأخذ د عليه على بُعد الارتفاع، ثمّ نرسم الموازي لـ (أب) المارّ بـ د. أمّا أيّ نقطة من الموازي فتعطي شبه منحرف عاديًّا.",
       "difficulty": 2,
       "competencies": ["math.geo.quadrilateres"]
     },
     {
-      "prompt": "ما هذا الرباعيّ؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"18,72 82,72 64,34 36,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"47,74 50,70 53,74\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><polyline points=\"47,36 50,32 53,36\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
+      "prompt": "نبني متوازي أضلاع أ‌ب‌ج‌د فيه أب = 5 سم و أد = 3 سم، وقد رسمنا الضلعين [أب] و[أد]. ما فتحتا الفرجار لتعيين الرأس ج؟",
       "options": [
-        { "id": "a", "text": "متوازي الأضلاع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "b", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "c", "text": "شبه المنحرف" },
-        { "id": "d", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
+        { "id": "a", "text": "مركز ب ومركز د بفتحة 4 سم" },
+        { "id": "b", "text": "مركز ب بفتحة 3 سم، ومركز د بفتحة 5 سم" },
+        {
+          "id": "c",
+          "text": "مركز ب بفتحة 5 سم، ومركز د بفتحة 3 سم",
+          "misconceptionTag": "math.geo.arcs-ouvertures-permutees"
+        },
+        { "id": "d", "text": "مركز أ بفتحة 3 سم، ومركز أ بفتحة 5 سم" }
       ],
-      "correctOption": "c",
-      "explanation": "زوجٌ واحدٌ متوازٍ (السهمان على القاعدتين) فقط، فهو شبه المنحرف.",
+      "correctOption": "b",
+      "explanation": "ج تقابل أ. الضلع [بج] يقابل [أد] فيساويه 3 سم، والضلع [دج] يقابل [أب] فيساويه 5 سم. فنركّز في ب بفتحة 3 سم وفي د بفتحة 5 سم. تبديل الفتحتين يعطي رباعيًّا ليس متوازي أضلاع.",
       "difficulty": 2,
       "competencies": ["math.geo.quadrilateres"]
     },
     {
-      "prompt": "ما محيطُ مستطيلٍ طولُه 6 سم وعرضُه 4 سم؟",
+      "prompt": "ما محيطُ متوازي أضلاعٍ ضلعاه المتجاوران 7 سم و 4 سم؟",
       "options": [
-        { "id": "a", "text": "20 سم" },
-        { "id": "b", "text": "24 سم" },
-        { "id": "c", "text": "10 سم", "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee" },
-        { "id": "d", "text": "14 سم" }
+        { "id": "a", "text": "22 سم" },
+        { "id": "b", "text": "11 سم" },
+        { "id": "c", "text": "28 سم" },
+        { "id": "d", "text": "44 سم" }
       ],
       "correctOption": "a",
-      "explanation": "المحيط = 2 × (6 + 4) = 2 × 10 = 20 سم.",
+      "explanation": "في متوازي الأضلاع كلّ ضلعين متقابلين متساويان: الأضلاع 7 و4 و7 و4، والمحيط = 2 × (7 + 4) = 2 × 11 = 22 سم. من كتب 11 سم حسب نصف الدورة فقط.",
       "difficulty": 2,
       "competencies": ["math.geo.quadrilateres", "math.mes.perimetres"]
     },
     {
-      "prompt": "المربّعُ يختلف عن المستطيل في أنّ:",
-      "options": [
-        { "id": "a", "text": "زواياه ليست قائمة" },
-        { "id": "b", "text": "أضلاعَه الأربعة متساوية" },
-        { "id": "c", "text": "ليس له توازٍ" },
-        { "id": "d", "text": "له 3 أضلاع" }
-      ],
-      "correctOption": "b",
-      "explanation": "المربّعُ مستطيلٌ بأضلاعٍ أربعةٍ متساوية؛ أمّا المستطيلُ العامُّ فطولُه قد يختلف عن عرضه.",
+      "type": "numeric",
+      "prompt": "محيط مستطيل 30 سم وطوله 9 سم. ما عرضه بالسنتيمتر؟",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "نصف المحيط هو الطول + العرض: 30 ÷ 2 = 15 سم. فالعرض = 15 − 9 = 6 سم. ونتحقّق: 2 × (9 + 6) = 30 سم.",
       "difficulty": 3,
-      "competencies": ["math.geo.quadrilateres"]
+      "competencies": ["math.geo.quadrilateres", "math.mes.perimetres"]
     },
     {
-      "prompt": "ما هذا الرباعيّ (زوجان متوازيان، بلا زوايا قائمة)؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"26,72 74,72 86,34 38,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+      "type": "multi",
+      "prompt": "أيّ هذه الرباعيّات متوازيات أضلاع؟ حدّد كلّ ما ينطبق.",
       "options": [
-        { "id": "a", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "b", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "c", "text": "شبه المنحرف", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "d", "text": "متوازي الأضلاع" }
+        { "id": "a", "text": "المستطيل" },
+        { "id": "b", "text": "المعيّن" },
+        { "id": "c", "text": "المربّع" },
+        { "id": "d", "text": "شبه المنحرف" }
       ],
-      "correctOption": "d",
-      "explanation": "زوجان من الأضلاع المتوازية دون زوايا قائمة ⟸ متوازي الأضلاع.",
+      "answerKey": {
+        "correct": ["a", "b", "c"]
+      },
+      "explanation": "المستطيل والمعيّن والمربّع كلّ ضلعين متقابلين فيها متوازيان، فهي متوازيات أضلاع. أمّا شبه المنحرف فله زوج واحد فقط من الأضلاع المتوازية، فليس متوازيَ أضلاع.",
       "difficulty": 3,
       "competencies": ["math.geo.quadrilateres"]
     }

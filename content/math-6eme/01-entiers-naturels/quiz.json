@@ -6,21 +6,33 @@
       "options": [
         { "id": "a", "text": "0" },
         { "id": "b", "text": "1" },
-        { "id": "c", "text": "−1" },
+        { "id": "c", "text": "10" },
         { "id": "d", "text": "لا يوجد أصغر عددٍ طبيعيّ" }
       ],
       "correctOption": "a",
-      "explanation": "أصغر عددٍ طبيعيّ هو 0، ثمّ تتوالى الأعداد 1، 2، 3… بلا نهاية. أمّا −1 فليس عددًا طبيعيًّا لأنّه سالب.",
+      "explanation": "أصغر عددٍ طبيعيّ هو 0: به نبدأ العدّ قبل 1، ثمّ تتوالى الأعداد 1، 2، 3… بلا نهاية، فلكلّ عددٍ تالٍ، لكنّ 0 ليس له سابق.",
       "difficulty": 1,
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },
     {
       "prompt": "كيف نكتب بالأرقام العددَ «اثنا عشر ألفًا وخمسة»؟",
       "options": [
-        { "id": "a", "text": "12 050", "misconceptionTag": "math.num.zero-intercalaire-oublie" },
+        {
+          "id": "a",
+          "text": "12 050",
+          "misconceptionTag": "math.num.zero-intercalaire-oublie"
+        },
         { "id": "b", "text": "12 005" },
-        { "id": "c", "text": "1 205", "misconceptionTag": "math.num.zero-intercalaire-oublie" },
-        { "id": "d", "text": "12 500", "misconceptionTag": "math.num.zero-intercalaire-oublie" }
+        {
+          "id": "c",
+          "text": "1 205",
+          "misconceptionTag": "math.num.zero-intercalaire-oublie"
+        },
+        {
+          "id": "d",
+          "text": "12 500",
+          "misconceptionTag": "math.num.zero-intercalaire-oublie"
+        }
       ],
       "correctOption": "b",
       "explanation": "اثنا عشر ألفًا = 12 000، وخمسة آحاد = 5، فيكون العدد 12 005 (مع صفرٍ في المئات وصفرٍ في العشرات للحفاظ على المواضع).",
@@ -30,10 +42,18 @@
     {
       "prompt": "في العدد 38 461، ما رتبة الرقم 8؟",
       "options": [
-        { "id": "a", "text": "العشرات", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
-        { "id": "b", "text": "المئات", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
+        { "id": "a", "text": "العشرات" },
+        {
+          "id": "b",
+          "text": "المئات",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        },
         { "id": "c", "text": "الآلاف" },
-        { "id": "d", "text": "عشرات الآلاف", "misconceptionTag": "math.num.rang-du-chiffre-decale" }
+        {
+          "id": "d",
+          "text": "عشرات الآلاف",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        }
       ],
       "correctOption": "c",
       "explanation": "ابتداءً من اليمين في 38 461: الرقم 1 آحاد، 6 عشرات، 4 مئات، 8 آلاف، 3 عشرات الآلاف. إذن الرقم 8 في رتبة الآلاف.",
@@ -60,10 +80,22 @@
     {
       "prompt": "ما القيمة المقرّبة للعدد 3 472 إلى أقرب مئة؟",
       "options": [
-        { "id": "a", "text": "3 400", "misconceptionTag": "math.num.arrondi-par-troncature" },
+        {
+          "id": "a",
+          "text": "3 400",
+          "misconceptionTag": "math.num.arrondi-par-troncature"
+        },
         { "id": "b", "text": "3 500" },
-        { "id": "c", "text": "3 470", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
-        { "id": "d", "text": "3 000", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
+        {
+          "id": "c",
+          "text": "3 470",
+          "misconceptionTag": "math.num.arrondi-au-mauvais-rang"
+        },
+        {
+          "id": "d",
+          "text": "3 000",
+          "misconceptionTag": "math.num.arrondi-au-mauvais-rang"
+        }
       ],
       "correctOption": "b",
       "explanation": "للتدوير إلى أقرب مئة ننظر إلى رقم العشرات: هو 7 (أكبر من أو يساوي 5)، فنُدوّر إلى الأعلى. إذن 3 472 يصبح 3 500.",

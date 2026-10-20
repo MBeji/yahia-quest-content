@@ -15,25 +15,45 @@
       "competencies": ["math.geo.quadrilateres"]
     },
     {
-      "prompt": "المستطيلُ رباعيٌّ:",
+      "prompt": "قطرا المستطيل:",
       "options": [
-        { "id": "a", "text": "كلُّ أضلاعه متساوية فقط" },
-        { "id": "b", "text": "زواياه قائمة وأضلاعُه المتقابلة متساوية" },
-        { "id": "c", "text": "له زوجٌ واحدٌ متوازٍ", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
-        { "id": "d", "text": "بلا زوايا قائمة" }
+        {
+          "id": "a",
+          "text": "غير متقايسين إلّا في المربّع فقط",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        { "id": "b", "text": "متقايسان ولهما المنتصف نفسه" },
+        {
+          "id": "c",
+          "text": "متعامدان دائمًا ولهما المنتصف نفسه",
+          "misconceptionTag": "math.geo.diagonales-proprietes-mal-attribuees"
+        },
+        { "id": "d", "text": "متوازيان ولا يتقاطعان أبدًا" }
       ],
       "correctOption": "b",
-      "explanation": "المستطيلُ متوازي أضلاعٍ زواياه قائمة (90°) وأضلاعُه المتقابلة متساوية.",
+      "explanation": "قطرا كلّ متوازي أضلاع لهما المنتصف نفسه، ويزيد المستطيل أنّهما متقايسان. أمّا التعامد فخاصّية المعيّن، وهما متقاطعان لا متوازيان.",
       "difficulty": 2,
       "competencies": ["math.geo.quadrilateres"]
     },
     {
       "prompt": "ما هذا الرباعيّ (له زوجٌ واحدٌ من الأضلاع المتوازية)؟ <svg viewBox=\"0 0 100 100\"><polygon points=\"18,72 82,72 64,34 36,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"47,74 50,70 53,74\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><polyline points=\"47,36 50,32 53,36\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "متوازي الأضلاع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
+        {
+          "id": "a",
+          "text": "متوازي الأضلاع",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
         { "id": "b", "text": "شبه المنحرف" },
-        { "id": "c", "text": "المربّع", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" },
-        { "id": "d", "text": "المستطيل", "misconceptionTag": "math.geo.quadrilatere-mal-identifie" }
+        {
+          "id": "c",
+          "text": "المربّع",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "d",
+          "text": "المستطيل",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        }
       ],
       "correctOption": "b",
       "explanation": "السهمان يدلّان على زوجٍ واحدٍ من الأضلاع المتوازية (القاعدتان)، والضلعان الآخران غيرُ متوازيين، فهو شبه المنحرف.",
@@ -41,25 +61,45 @@
       "competencies": ["math.geo.quadrilateres"]
     },
     {
-      "prompt": "المربّعُ له:",
+      "prompt": "ما محيط مستطيل طوله 11 سم وعرضه 4 سم؟",
       "options": [
-        { "id": "a", "text": "زوجان متوازيان فقط" },
-        { "id": "b", "text": "زاويةٌ قائمة واحدة" },
-        { "id": "c", "text": "4 أضلاع متساوية و4 زوايا قائمة" },
-        { "id": "d", "text": "3 أضلاع" }
+        {
+          "id": "a",
+          "text": "15 سم",
+          "misconceptionTag": "math.mes.perimetre-rectangle-somme-non-doublee"
+        },
+        {
+          "id": "b",
+          "text": "44 سم",
+          "misconceptionTag": "math.mes.aire-et-perimetre-confondus"
+        },
+        { "id": "c", "text": "30 سم" },
+        { "id": "d", "text": "19 سم" }
       ],
       "correctOption": "c",
-      "explanation": "المربّعُ له 4 أضلاع متساوية و4 زوايا قائمة (فهو مستطيلٌ ومعيّنٌ معًا).",
+      "explanation": "للمستطيل طولان وعرضان: المحيط = 2 × (11 + 4) = 2 × 15 = 30 سم. من كتب 15 سم حسب نصف الدورة، ومن كتب 44 سم ضرب الطول في العرض فحسب المساحة.",
       "difficulty": 2,
-      "competencies": ["math.geo.quadrilateres"]
+      "competencies": ["math.geo.quadrilateres", "math.mes.perimetres"]
     },
     {
       "prompt": "ما الفرقُ بين متوازي الأضلاع وشبه المنحرف؟",
       "options": [
-        { "id": "a", "text": "لا فرق" },
-        { "id": "b", "text": "شبه المنحرف له زوجان متوازيان", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
-        { "id": "c", "text": "متوازي الأضلاع بلا توازٍ", "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees" },
-        { "id": "d", "text": "متوازي الأضلاع له زوجان متوازيان وشبه المنحرف زوجٌ واحد" }
+        {
+          "id": "a",
+          "text": "لمتوازي الأضلاع زوجٌ واحد، ولشبه المنحرف زوجان",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        {
+          "id": "b",
+          "text": "لكلٍّ منهما زوجان من الأضلاع المتوازية",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        {
+          "id": "c",
+          "text": "لكلٍّ منهما زوجٌ واحد من الأضلاع المتوازية",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        { "id": "d", "text": "لمتوازي الأضلاع زوجان، ولشبه المنحرف زوجٌ واحد" }
       ],
       "correctOption": "d",
       "explanation": "متوازي الأضلاع له زوجان من الأضلاع المتوازية، بينما شبه المنحرف له زوجٌ واحدٌ فقط.",

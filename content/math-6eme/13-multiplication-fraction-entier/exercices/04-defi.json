@@ -7,25 +7,54 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "ما ناتج 3/4 × 4؟",
+      "prompt": "ما ناتج 3/4 × 12؟",
       "options": [
-        { "id": "a", "text": "3" },
-        { "id": "b", "text": "12/16", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
-        { "id": "c", "text": "7/4", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "1/3" }
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "36/48",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
+        },
+        {
+          "id": "c",
+          "text": "15/4",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "3/48",
+          "misconceptionTag": "math.frac.multiplication-denominateur-multiplie"
+        }
       ],
       "correctOption": "a",
-      "explanation": "3/4 × 4 = 12/4؛ وبالاختزال على 4: 12/4 = 3.",
+      "explanation": "3/4 × 12 = 36/4؛ وبالاختزال على 4: 36/4 = 9.",
       "difficulty": 2,
       "competencies": ["math.frac.mult-entier"]
     },
     {
       "prompt": "ما ناتج 7/10 × 5 (مع الاختزال)؟",
       "options": [
-        { "id": "a", "text": "35/50", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
-        { "id": "b", "text": "7/2" },
-        { "id": "c", "text": "12/10", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "12/2" }
+        {
+          "id": "a",
+          "text": "35/50",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
+        },
+        {
+          "id": "b",
+          "text": "7/2"
+        },
+        {
+          "id": "c",
+          "text": "12/10",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "12/2"
+        }
       ],
       "correctOption": "b",
       "explanation": "7/10 × 5 = 35/10، وبالاختزال على 5: 35/10 = 7/2.",
@@ -35,10 +64,23 @@
     {
       "prompt": "قطعَ عدّاءٌ 3/5 km في كلّ دقيقة. كم km يقطع في 10 دقائق؟",
       "options": [
-        { "id": "a", "text": "13/5 km" },
-        { "id": "b", "text": "30/50 km", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
-        { "id": "c", "text": "6 km" },
-        { "id": "d", "text": "5 km" }
+        {
+          "id": "a",
+          "text": "13/5 km"
+        },
+        {
+          "id": "b",
+          "text": "30/50 km",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
+        },
+        {
+          "id": "c",
+          "text": "6 km"
+        },
+        {
+          "id": "d",
+          "text": "5 km"
+        }
       ],
       "correctOption": "c",
       "explanation": "المسافة = 10 × 3/5 = 30/5 = 6 km.",
@@ -46,43 +88,160 @@
       "competencies": ["math.frac.mult-entier"]
     },
     {
-      "prompt": "ما العددُ الصحيح الذي إذا ضربناه في 2/3 كان الناتجُ 4؟",
+      "prompt": "ما العددُ الصحيح الذي إذا ضربناه في 3/4 كان الناتجُ 6؟",
       "options": [
-        { "id": "a", "text": "4" },
-        { "id": "b", "text": "8" },
-        { "id": "c", "text": "2" },
-        { "id": "d", "text": "6" }
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "9/2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
       ],
       "correctOption": "d",
-      "explanation": "نبحث عن n حيث n × 2/3 = 4؛ بما أنّ 6 × 2/3 = 12/3 = 4، فالعددُ 6.",
+      "explanation": "نبحث عن n حيث n × 3/4 = 6. الأرباعُ الثلاثة تساوي 6، فالربعُ الواحد 6 : 3 = 2، والعددُ كلّه أربعة أرباع: 2 × 4 = 8. تحقّق: 8 × 3/4 = 24/4 = 6.",
       "difficulty": 3,
       "competencies": ["math.frac.mult-entier"]
     },
     {
-      "prompt": "ما ناتج 9 × 2/9؟",
+      "prompt": "ما ناتج 8 × 3/8؟",
       "options": [
-        { "id": "a", "text": "2" },
-        { "id": "b", "text": "18/81", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
-        { "id": "c", "text": "11/9", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "1/2" }
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "24/64",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
+        },
+        {
+          "id": "c",
+          "text": "11/8",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "1/3"
+        }
       ],
       "correctOption": "a",
-      "explanation": "9 × 2/9 = 18/9؛ وبالاختزال على 9: 18/9 = 2.",
+      "explanation": "8 × 3/8 = 24/8؛ وبالاختزال على 8: 24/8 = 3.",
       "difficulty": 3,
       "competencies": ["math.frac.mult-entier"]
     },
     {
       "prompt": "ما ناتج 5/8 × 4 (مع الاختزال)؟",
       "options": [
-        { "id": "a", "text": "20/32", "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies" },
-        { "id": "b", "text": "5/2" },
-        { "id": "c", "text": "9/8", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "9/2" }
+        {
+          "id": "a",
+          "text": "20/32",
+          "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
+        },
+        {
+          "id": "b",
+          "text": "5/2"
+        },
+        {
+          "id": "c",
+          "text": "9/8",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "9/2"
+        }
       ],
       "correctOption": "b",
       "explanation": "5/8 × 4 = 20/8، وبالاختزال على 4: 20/8 = 5/2.",
       "difficulty": 3,
       "competencies": ["math.frac.mult-entier", "math.frac.equivalence"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "أنفق عليّ 2/5 ما معه على الكتب، ثمّ أنفق 1/3 من الباقي على الحلوى، فبقي معه 12 دينارًا. كم كان معه في البداية؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 30,
+        "unit": "دينار"
+      },
+      "explanation": "بعد الكتب بقي 3/5 من المبلغ. وأنفق 1/3 من هذا الباقي، فبقي 2/3 × 3/5 = 6/15 = 2/5 من المبلغ كلّه. إذن 2/5 يساوي 12 دينارًا: الجزء الواحد 12 : 2 = 6، والمبلغ كلّه 6 × 5 = 30 دينارًا. تحقّق: الكتب 12 دينارًا، ثمّ حلوى 6 دنانير، ويبقى 12.",
+      "difficulty": 3,
+      "competencies": ["math.frac.mult-entier", "math.frac.equivalence"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ما العدد الذي إذا أخذنا 2/5 من 3/4 منه كان الناتج 6؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 20
+      },
+      "explanation": "2/5 من 3/4 هو 2/5 × 3/4 = 6/20 = 3/10. إذن 3/10 من العدد يساوي 6: العُشرُ الواحد 6 : 3 = 2، والعددُ كلّه عشرة أعشار: 2 × 10 = 20. تحقّق: 3/4 من 20 هو 15، و 2/5 من 15 هو 6.",
+      "difficulty": 3,
+      "competencies": ["math.frac.mult-entier", "math.frac.equivalence"]
+    },
+    {
+      "prompt": "أيّ هذه الحسابات صحيح؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/9 × 3/4 = 6/36 = 1/4"
+        },
+        {
+          "id": "b",
+          "text": "2/5 × 3 = 6/15 = 2/5",
+          "misconceptionTag": "math.frac.multiplication-denominateur-multiplie"
+        },
+        {
+          "id": "c",
+          "text": "5/6 × 3/10 = 15/10 = 3/2",
+          "misconceptionTag": "math.frac.produit-fractions-denominateur-conserve"
+        },
+        {
+          "id": "d",
+          "text": "4/5 × 5/8 = 20/40 = 1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في الحساب الصحيح 4 × 5 = 20 و 5 × 8 = 40 و 20/40 = 1/2. وفي الحسابات الأخرى خطأ: 6/36 يساوي 1/6 لا 1/4، وضربُ كسرٍ في عددٍ صحيح يُبقي المقام فلا يصير 15، وفي ضرب كسرين يُضرب المقامان: 5/6 × 3/10 = 15/60 = 1/4 لا 15/10.",
+      "difficulty": 3,
+      "competencies": ["math.frac.mult-entier", "math.frac.equivalence"]
+    },
+    {
+      "type": "ordering",
+      "prompt": "رتّب هذه الجداءات من الأصغر إلى الأكبر.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/4 × 4/5"
+        },
+        {
+          "id": "b",
+          "text": "1/2 × 1/3"
+        },
+        {
+          "id": "c",
+          "text": "1/2 × 3/5"
+        },
+        {
+          "id": "d",
+          "text": "1/2 × 1/2"
+        }
+      ],
+      "answerKey": {
+        "order": ["b", "d", "c", "a"]
+      },
+      "explanation": "نحسب كلّ جداء: 1/2 × 1/3 = 1/6 ، و 1/2 × 1/2 = 1/4 ، و 1/2 × 3/5 = 3/10 ، و 3/4 × 4/5 = 12/20 = 3/5. نقارن بتوحيد المقامات على 60: 10/60 < 15/60 < 18/60 < 36/60، فيأتي الجداء 1/6 أوّلًا ثمّ 1/4 ثمّ 3/10 ثمّ 3/5.",
+      "difficulty": 3,
+      "competencies": ["math.frac.mult-entier", "math.frac.comparaison"]
     }
   ]
 }

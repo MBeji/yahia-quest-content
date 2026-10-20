@@ -9,7 +9,11 @@
     {
       "prompt": "ما رمزُ التعامد بين مستقيمين؟",
       "options": [
-        { "id": "a", "text": "∥", "misconceptionTag": "math.geo.symboles-perpendiculaire-parallele-confondus" },
+        {
+          "id": "a",
+          "text": "∥",
+          "misconceptionTag": "math.geo.symboles-perpendiculaire-parallele-confondus"
+        },
         { "id": "b", "text": "⊥" },
         { "id": "c", "text": "=" },
         { "id": "d", "text": "+" }
@@ -22,9 +26,17 @@
     {
       "prompt": "ماذا يمثّل هذا الشكل؟ <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"38\" x2=\"92\" y2=\"38\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"8\" y1=\"66\" x2=\"92\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"46,32 53,38 46,44\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/><polyline points=\"46,60 53,66 46,72\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/></svg>",
       "options": [
-        { "id": "a", "text": "مستقيمان متعامدان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
+        {
+          "id": "a",
+          "text": "مستقيمان متعامدان",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
         { "id": "b", "text": "مستقيمان متوازيان" },
-        { "id": "c", "text": "مستقيمان متقاطعان", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
+        {
+          "id": "c",
+          "text": "مستقيمان متقاطعان",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        },
         { "id": "d", "text": "زاوية قائمة" }
       ],
       "correctOption": "b",
@@ -36,8 +48,16 @@
       "prompt": "المستقيمان المتوازيان:",
       "options": [
         { "id": "a", "text": "لا يتقاطعان مهما امتدّا" },
-        { "id": "b", "text": "يتقاطعان بزاوية قائمة", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "c", "text": "يتقاطعان بزاوية حادّة", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
+        {
+          "id": "b",
+          "text": "يتقاطعان بزاوية قائمة",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
+        {
+          "id": "c",
+          "text": "يتقاطعان بزاوية حادّة",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
         { "id": "d", "text": "ينطبقان دائمًا" }
       ],
       "correctOption": "a",
@@ -48,26 +68,46 @@
     {
       "prompt": "أيُّ مثالٍ من الحياة يمثّل التوازي؟",
       "options": [
-        { "id": "a", "text": "حافّتا المسطرة" },
-        { "id": "b", "text": "زاويتا الكتاب القائمتان" },
-        { "id": "c", "text": "عقربا الساعة عند الثالثة" },
-        { "id": "d", "text": "تقاطعُ طريقين" }
+        { "id": "a", "text": "حافّتا سطح الطاولة المتقابلتان" },
+        {
+          "id": "b",
+          "text": "حافّتا سطح الطاولة المتجاورتان",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
+        {
+          "id": "c",
+          "text": "عقربا الساعة عند الثالثة",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
+        { "id": "d", "text": "طريقان يلتقيان في مفترق" }
       ],
       "correctOption": "a",
-      "explanation": "حافّتا المسطرة مستقيمان لا يلتقيان ويبقى البعدُ بينهما ثابتًا، فهما متوازيان.",
+      "explanation": "الحافّتان المتقابلتان لسطح الطاولة المستطيل لا تلتقيان مهما امتدّتا، والبُعد بينهما ثابت: متوازيتان. أمّا الحافّتان المتجاورتان فتلتقيان في الركن بزاوية قائمة، وعقربا الساعة عند الثالثة كذلك: متعامدان.",
       "difficulty": 1,
       "competencies": ["math.geo.droites-perp-para"]
     },
     {
-      "prompt": "ما طبيعةُ هذين المستقيمين؟ <svg viewBox=\"0 0 100 100\"><line x1=\"8\" y1=\"72\" x2=\"92\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"22\" y1=\"92\" x2=\"78\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>",
+      "prompt": "ما شرطا الموسّط العمودي لقطعة [أب]؟",
       "options": [
-        { "id": "a", "text": "متعامدان", "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite" },
-        { "id": "b", "text": "متوازيان", "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus" },
-        { "id": "c", "text": "متقاطعان وغيرُ متعامدين" },
-        { "id": "d", "text": "منفصلان" }
+        {
+          "id": "a",
+          "text": "يعامدها عند أحد طرفيها أ أو ب",
+          "misconceptionTag": "math.geo.mediatrice-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "يوازيها ويمرّ بمنتصفها",
+          "misconceptionTag": "math.geo.perpendiculaire-et-parallele-confondus"
+        },
+        { "id": "c", "text": "يمرّ بمنتصفها ويعامدها" },
+        {
+          "id": "d",
+          "text": "يمرّ بمنتصفها دون شرط آخر",
+          "misconceptionTag": "math.geo.mediatrice-un-seul-critere"
+        }
       ],
       "correctOption": "c",
-      "explanation": "المستقيمان يتقاطعان لكنّ الزاويةَ بينهما ليست قائمة (لا يوجد مربّعٌ صغير)، فهما متقاطعان غيرُ متعامدين.",
+      "explanation": "الموسّط العمودي يجمع شرطين معًا: يمرّ بمنتصف القطعة ويعامدها. مستقيم يمرّ بالمنتصف دون أن يعامدها لا يكفي، والعموديّ عند أحد الطرفين لا يمرّ بالمنتصف، والموازي لا يعامدها.",
       "difficulty": 2,
       "competencies": ["math.geo.droites-perp-para"]
     },
@@ -76,11 +116,53 @@
       "options": [
         { "id": "a", "text": "الفرجار وحدَه" },
         { "id": "b", "text": "المنقلة" },
-        { "id": "c", "text": "الميزان" },
+        { "id": "c", "text": "المنقلة والفرجار" },
         { "id": "d", "text": "المسطرة والكوس" }
       ],
       "correctOption": "d",
       "explanation": "نرسم التوازي بالمسطرة والكوس: نُزلق الكوسَ على طول المسطرة فيبقى البعدُ ثابتًا.",
+      "difficulty": 2,
+      "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "منصّف الزاوية القائمة يقسمها إلى زاويتين، قيس كلّ منهما:",
+      "options": [
+        { "id": "a", "text": "30°" },
+        { "id": "b", "text": "45°" },
+        {
+          "id": "c",
+          "text": "90°",
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
+        },
+        {
+          "id": "d",
+          "text": "180°",
+          "misconceptionTag": "math.geo.valeur-angle-de-reference-confondue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المنصّف يقسم الزاوية نصفين متقايسين: 90° ÷ 2 = 45°.",
+      "difficulty": 2,
+      "competencies": ["math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "نرسم الموسّط العمودي لقطعة طولها 6 سم، ففتحنا الفرجار 2 سم من كلّ طرف. ماذا يحدث؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "يلتقيان في منتصف القطعة",
+          "misconceptionTag": "math.geo.inegalite-triangulaire-ignoree"
+        },
+        {
+          "id": "b",
+          "text": "يلتقيان فوق القطعة وتحتها",
+          "misconceptionTag": "math.geo.inegalite-triangulaire-ignoree"
+        },
+        { "id": "c", "text": "يلتقيان في أحد طرفيها" },
+        { "id": "d", "text": "لا يلتقي القوسان" }
+      ],
+      "correctOption": "d",
+      "explanation": "كلّ قوس لا يبتعد عن طرفه أكثر من 2 سم، و2 + 2 = 4 أصغر من 6، فيبقى فراغ بين القوسين ولا تلتقي. يجب أن تكون الفتحة أكبر من نصف القطعة، أي أكبر من 3 سم.",
       "difficulty": 2,
       "competencies": ["math.geo.droites-perp-para"]
     }
