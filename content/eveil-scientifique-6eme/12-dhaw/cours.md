@@ -12,7 +12,8 @@
 ما تحت الطّاولة؟
 
 ::: definition
-**المصدرُ الضّوئيّ** جسمٌ مضيءٌ يُرسلُ الضّوء، مثل الشّمس والشّمعة والفانوس الكهربائيّ.
+**المصدرُ الضّوئيّ** جسمٌ مضيءٌ يُرسلُ الضّوء. وهو **طبيعيّ** كالشّمس والنّجوم، أو **اصطناعيّ** كالشّمعة
+والفانوس الكهربائيّ.
 **ينتشرُ** الضّوءُ من المصدر في الهواء **وفق خطوطٍ مستقيمة** نسمّيها **الأشعّةَ الضّوئيّة**.
 :::
 
@@ -86,10 +87,10 @@
 
 ::: exemple نصنّفُ أجسامًا من محيطنا
 
-1. الماءُ في حوض السّباحة **شفّاف**، **لأنّ** الضّوءَ يعبرُه فنرى قاعَ الحوض بوضوح.
-2. البلّورُ الأماميُّ للسّيّارة **شفّاف**، **لأنّ** السّائقَ يرى الطّريقَ من خلاله بوضوح.
-3. البلّورُ المطروق **شافّ**، **لأنّه** يمرّرُ جزءًا من الضّوء فقط.
-4. الكتابُ **عاتم**، **لأنّ** الضّوءَ لا يعبرُه: لا نرى ما وراءه.
+1. ماءُ الكأس الصّافي **شفّاف**، **لأنّ** الضّوءَ يعبرُه فنرى الملعقةَ داخلَه بوضوح.
+2. زجاجُ النّظّارات **شفّاف**، **لأنّ** صاحبَها يرى الأشياءَ من خلاله بوضوح.
+3. بلّورُ باب الحمّام المطروق **شافّ**، **لأنّه** يمرّرُ جزءًا من الضّوء فقط.
+4. الكرسيُّ الخشبيّ **عاتم**، **لأنّ** الضّوءَ لا يعبرُه: لا نرى ما وراءه.
 
 :::
 
@@ -158,7 +159,7 @@
 
 ::: propriete
 نرى جسمًا لا يضيءُ بنفسه إذا وصله ضوءٌ، ثمّ وصل الضّوءُ المنتثرُ عنه إلى أعيننا. **حالةٌ حدّيّة**:
-في غرفةٍ مظلمة تمامًا لا يصلُ أيُّ ضوءٍ إلى الأجسام، فتنعدمُ الرّؤية.
+في غرفةٍ مظلمة تمامًا لا يصلُ أيُّ ضوءٍ إلى الأجسام، فتنعدمُ الرّؤية. والقمرُ مثالٌ على ذلك: لا يضيءُ بنفسه، بل ينثرُ نحونا ضوءَ الشّمس الّذي يصلُه، فليس مصدرًا ضوئيًّا.
 :::
 
 > 🗡️ لا تخلطْ بين كلمتين متشابهتين: الضّوءُ **ينتشرُ** من المصدر في خطوطٍ مستقيمة، و**ينتثرُ**
@@ -186,7 +187,7 @@
 
 1. **المعدّات**: مكشافٌ كهربائيّ، وورقٌ مقوّى فيه ثقب، ومرآةٌ مستوية، وقليلٌ من غبار الطّباشير.
 2. **التّجربة**: نشعلُ المكشاف ونوجّهُ ضوءَه من خلال الثّقب نحو المرآة، وننثرُ غبارَ الطّباشير في
-   طريق الضّوء لنرى مسارَ الأشعّة.
+   طريق الضّوء لنرى مسارَ الأشعّة، لأنّ ذرّاتِه تنثرُ جزءًا من الضّوء نحو أعيننا.
 3. **الملاحظة**: الحزمةُ الضّوئيّةُ تصلُ إلى المرآة ثمّ **ترتدُّ** عنها في اتّجاهٍ واحد محدّد.
 
 ::: definition
@@ -195,12 +196,13 @@
 **الشّعاعُ المنعكس**.
 :::
 
-::: figure مرآةٌ مستوية (الخطّ المخطّط): الشّعاعُ الوارد «و» يصلُ إليها فيرتدُّ عنها الشّعاعُ المنعكس «ع» في اتّجاهٍ محدّد
-<svg viewBox="0 0 340 220"><line x1="40" y1="180" x2="300" y2="180" stroke="#0f172a" stroke-width="3"/><line x1="48" y1="180" x2="39" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="62" y1="180" x2="53" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="76" y1="180" x2="67" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="90" y1="180" x2="81" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="104" y1="180" x2="95" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="118" y1="180" x2="109" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="132" y1="180" x2="123" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="146" y1="180" x2="137" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="160" y1="180" x2="151" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="174" y1="180" x2="165" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="188" y1="180" x2="179" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="202" y1="180" x2="193" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="216" y1="180" x2="207" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="230" y1="180" x2="221" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="244" y1="180" x2="235" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="258" y1="180" x2="249" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="272" y1="180" x2="263" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="286" y1="180" x2="277" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="300" y1="180" x2="291" y2="191" stroke="#0f172a" stroke-width="1.5"/><circle cx="60" cy="50" r="11" fill="#facc15" stroke="#0f172a" stroke-width="2"/><line x1="60" y1="50" x2="170" y2="180" stroke="#d97706" stroke-width="3" stroke-linecap="round"/><polyline points="108.8,115 117.6,118.1 116.1,108.8" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><line x1="170" y1="180" x2="280" y2="50" stroke="#0f6e56" stroke-width="3" stroke-linecap="round"/><polyline points="231.6,114.7 233.1,105.4 224.3,108.5" fill="none" stroke="#0f6e56" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><text x="84" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">و</text><text x="258" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ع</text></svg>
+::: figure مرآةٌ مستوية (الخطّ المخطّط): الشّعاعُ الوارد «و» يصلُ إليها فيرتدُّ عنها الشّعاعُ المنعكس «ع» في الجهة المقابلة من الخطّ المنقّط «ن» العموديّ عليها
+<svg viewBox="0 0 340 220"><line x1="40" y1="180" x2="300" y2="180" stroke="#0f172a" stroke-width="3"/><line x1="170" y1="180" x2="170" y2="40" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 5"/><text x="184" y="52" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ن</text><line x1="48" y1="180" x2="39" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="62" y1="180" x2="53" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="76" y1="180" x2="67" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="90" y1="180" x2="81" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="104" y1="180" x2="95" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="118" y1="180" x2="109" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="132" y1="180" x2="123" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="146" y1="180" x2="137" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="160" y1="180" x2="151" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="174" y1="180" x2="165" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="188" y1="180" x2="179" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="202" y1="180" x2="193" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="216" y1="180" x2="207" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="230" y1="180" x2="221" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="244" y1="180" x2="235" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="258" y1="180" x2="249" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="272" y1="180" x2="263" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="286" y1="180" x2="277" y2="191" stroke="#0f172a" stroke-width="1.5"/><line x1="300" y1="180" x2="291" y2="191" stroke="#0f172a" stroke-width="1.5"/><circle cx="60" cy="50" r="11" fill="#facc15" stroke="#0f172a" stroke-width="2"/><line x1="60" y1="50" x2="170" y2="180" stroke="#d97706" stroke-width="3" stroke-linecap="round"/><polyline points="108.8,115 117.6,118.1 116.1,108.8" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><line x1="170" y1="180" x2="280" y2="50" stroke="#0f6e56" stroke-width="3" stroke-linecap="round"/><polyline points="231.6,114.7 233.1,105.4 224.3,108.5" fill="none" stroke="#0f6e56" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><text x="84" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">و</text><text x="258" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ع</text></svg>
 :::
 
 في الشّكل، «و» هو الشّعاعُ الآتي من المصدر، و«ع» هو الشّعاعُ المرتدُّ عن المرآة: شعاعٌ واحدٌ
-يصلُ، وشعاعٌ واحدٌ يرتدّ.
+يصلُ، وشعاعٌ واحدٌ يرتدّ. الخطُّ المنقّط «ن» هو **النّاظم**: خطٌّ عموديٌّ على المرآة عند نقطة
+وصول الشّعاع.
 
 ::: exemple من أين جاءت بقعةُ الضّوء في الرّكن؟
 
@@ -222,8 +224,12 @@
 ::: propriete
 كلُّ سطحٍ مصقول يعكسُ الضّوءَ الّذي يصلُه في اتّجاهٍ محدّد. لهذا نثبّتُ المرايا على جانبي السّيّارة
 وعلى زجاجها الأماميّ: تعكسُ نحو عيني السّائق الضّوءَ الآتي ممّا خلف السّيّارة وعلى جانبيها، فيراه.
+لنرسمَ الشّعاعَ المنعكس نرسمُ النّاظم، ثمّ نرسمُ الشّعاعَ في الجهة المقابلة له بالميل نفسه.
 **حالةٌ حدّيّة**: إذا وصل الشّعاعُ الواردُ عموديًّا على المرآة، ارتدَّ على نفسه وعاد من حيث أتى.
 :::
+
+> 🗡️ **للاستزادة:** نقيسُ زاويتَي الورود والانعكاس من النّاظم لا من المرآة، فنجدُ زاويةَ الورود
+> تساوي زاويةَ الانعكاس.
 
 ::: verifie
 في طريق العودة ليلًا، أمال أبوك قليلًا المرآةَ الّتي فوق زجاج السّيّارة الأماميّ. لماذا فعل ذلك؟
@@ -254,8 +260,8 @@
 يعبرُ إلى الوسط الثّاني هو **الشّعاعُ المنكسر**.
 :::
 
-::: figure شعاعٌ واردٌ مائل «و» في الهواء يصلُ إلى سطح الماء فيغيّرُ اتّجاهه: «ك» هو الشّعاعُ المنكسر، والخطّ المتقطّع هو الطّريقُ الّذي كان سيسلكُه لو لم ينكسر
-<svg viewBox="0 0 340 220"><rect x="20" y="110" width="300" height="100" fill="#bfdbfe" stroke="none"/><line x1="20" y1="110" x2="320" y2="110" stroke="#0f172a" stroke-width="2.5"/><circle cx="60" cy="20" r="11" fill="#facc15" stroke="#0f172a" stroke-width="2"/><line x1="60" y1="20" x2="170" y2="110" stroke="#d97706" stroke-width="3" stroke-linecap="round"/><polyline points="108.9,66.2 118.1,67.5 114.9,58.8" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><line x1="170" y1="110" x2="267.8" y2="190" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/><line x1="170" y1="110" x2="241.6" y2="210" stroke="#0f6e56" stroke-width="3" stroke-linecap="round"/><polyline points="203.1,164.5 211.7,168.3 210.9,159" fill="none" stroke="#0f6e56" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><text x="96" y="74" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">و</text><text x="204" y="198" text-anchor="middle" font-size="16" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ك</text></svg>
+::: figure شعاعٌ واردٌ مائل «و» في الهواء يصلُ إلى سطح الماء فيغيّرُ اتّجاهه: «ك» هو الشّعاعُ المنكسر، والخطّ المتقطّع هو الطّريقُ الّذي كان سيسلكُه لو لم ينكسر، والخطّ العموديّ المنقّط «ن» هو النّاظم
+<svg viewBox="0 0 340 220"><rect x="20" y="110" width="300" height="100" fill="#bfdbfe" stroke="none"/><line x1="20" y1="110" x2="320" y2="110" stroke="#0f172a" stroke-width="2.5"/><circle cx="60" cy="20" r="11" fill="#facc15" stroke="#0f172a" stroke-width="2"/><line x1="60" y1="20" x2="170" y2="110" stroke="#d97706" stroke-width="3" stroke-linecap="round"/><polyline points="108.9,66.2 118.1,67.5 114.9,58.8" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><line x1="170" y1="36" x2="170" y2="200" stroke="#64748b" stroke-width="1.5" stroke-dasharray="2 4"/><line x1="170" y1="110" x2="267.8" y2="190" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/><line x1="170" y1="110" x2="241.6" y2="210" stroke="#0f6e56" stroke-width="3" stroke-linecap="round"/><polyline points="203.1,164.5 211.7,168.3 210.9,159" fill="none" stroke="#0f6e56" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><text x="96" y="74" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">و</text><text x="204" y="198" text-anchor="middle" font-size="16" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ك</text><text x="181" y="48" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ن</text></svg>
 :::
 
 في الشّكل، الشّعاعُ «و» يسيرُ مستقيمًا في الهواء، ثمّ يسيرُ مستقيمًا في الماء، لكن في اتّجاهٍ آخر:
@@ -282,8 +288,18 @@
 
 ::: propriete
 يحدثُ الانكسارُ كلّما مرّ الضّوءُ **مائلًا** من وسطٍ شفّاف إلى وسطٍ شفّافٍ آخر (من الهواء إلى الماء،
-أو من الماء إلى الهواء). **حالةٌ حدّيّة**: إذا وصل الشّعاعُ **عموديًّا** على سطح الماء، عبره دون أن
-يغيّرَ اتّجاهه.
+أو من الماء إلى الهواء)، والشّعاعُ المنكسرُ يواصلُ سيرَه في الجهة المقابلة للشّعاع الوارد من **النّاظم**
+(الخطّ العموديّ على السّطح الفاصل عند نقطة الورود): عند **دخوله** الماءَ من الهواء **يقتربُ** من
+النّاظم، وعند **خروجه** من الماء إلى الهواء **يبتعدُ** عنه. **حالةٌ حدّيّة**: إذا وصل الشّعاعُ
+**عموديًّا** على سطح الماء، عبره دون أن يغيّرَ اتّجاهه.
+:::
+
+::: verifie
+نوجّهُ ضوءَ المكشاف مائلًا نحو ماء الحويض. في أيّ جهةٍ من النّاظم يسيرُ الشّعاع داخل الماء، وهل يقتربُ منه أم يبتعدُ عنه؟
+
+---
+
+يسيرُ في الجهة المقابلة للشّعاع الوارد من النّاظم، ويقتربُ منه، لأنّه يدخلُ من الهواء إلى الماء.
 :::
 
 ::: verifie
@@ -379,6 +395,15 @@
 «المرآةُ تعكسُ الضّوءَ لأنّها ليست عاتمة» أو «كلُّ جسمٍ عاتمٍ يعكسُ الضّوءَ كالمرآة». يُغري هذا لأنّ
 الورقةَ والمرآةَ كلتيهما لا تمرّرانِ الضّوء. لكنّ المرآةَ جسمٌ **عاتمٌ هي أيضًا**؛ الفرقُ في
 **السّطح**: سطحُ المرآة **مصقول** فيعكسُ الضّوء، وسطحُ الورقة **غيرُ مصقول** فينثرُه.
+
+:::
+
+::: piege الخطأ الشائع
+
+«ينتثرُ الضّوءُ لأنّه ينعكسُ حول الأرض كلّها». يُغري هذا لأنّنا نجدُ النّورَ في كلّ زاويةٍ من الغرفة،
+حتّى حيث لا تصلُ الشّمسُ مباشرةً. لكنّ الانتثارَ يحدثُ عند الجسم نفسه: حين يصطدمُ الضّوءُ
+بجدارٍ أو أرضٍ أو غبارٍ غيرِ مصقول، تخرجُ من نقطة الاصطدام أشعّةٌ في كلّ الجهات. وهو غيرُ
+الانعكاس الّذي يكونُ على سطحٍ مصقولٍ في اتّجاهٍ واحدٍ محدّد.
 
 :::
 

@@ -45,7 +45,11 @@ comme pour l'anglais, le français et les maths.
 
 ## 3. Carte et écart
 
-À écrire aux étages G3 et G4, après la lecture (G2).
+Écrite le 2026-10-20 (étages G3–G4) ; le détail, les règles et les décisions sont dans `FableEtudes/campagnes/eveil-6eme/PLAN-gisement.md`. Aucune phrase, aucun nombre, aucun contexte d'un devoir n'entre ici.
+
+**Les 17 sujets du concours** (une heure, sur 20, 2 à 3 situations de supports suivis de consignes courtes, aucun QCM) donnent 203 lignes : `01-air` (combustion, oxygène, propriétés) est le chapitre le plus sollicité, devant `07-aimants-boussole` (surtout les directions lues avec un nord qui n'est pas en haut), `03-sang-circulation`, `05-milieu-chaines-alimentaires`, `04-nutrition` et `02-respiration` ; `06`, `08`, `09`, `11` et `12` ne sortent qu'en 2018 ou avant 2017 ; `10` peu. **Les 9 devoirs** (99 lignes, 72 hors le jumeau D01 et la copie D09) sont dominés par un même scénario de combustion au premier trimestre ; aucun sur l'œil ni la lumière.
+
+**Plan** : 41 missions (34 d'examen, 192 lignes sur 203, 17 sessions sur 17 ; 7 de devoirs en salle blanche), 390 questions, quatre lots M1 (09, 12, 01), M2 (02, 03, 10), M3 (04, 06, 05), M4 (07, 11, 08). Écarts : énoncés défectueux corrigés dans la reprise (cinquième d'oxygène, suie en flamme bleue, lentille de l'hypermétropie, sens air/eau, sérum, chaînes « غذاء لـ »), notions ◐ jamais ciblées (zones de la flamme, ganglions, tache aveugle, satellites, pesticides). Registre : `gisement.json`, `missions`. Les « ne pas redemander » sont provisoires : les 12 chapitres sont mis à niveau sur la fiche après le plan.
 
 ## 4. Échantillon — fixé le 2026-10-20, avant l'ouverture de tout document
 

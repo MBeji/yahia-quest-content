@@ -34,3 +34,8 @@ Puis : rédacteur de la fiche (opus), audit R-7 (opus), registre, PR, merge ; pu
 | **V3** (Q-3) | Intensité du courant (électroaimant) | **Spires et piles seulement** (manuel) ; « intensité » non exigible au ch. 11. |
 | **V4** (Q-4) | Épuration / potabilisation de l'eau | **Schéma à lire** au ch. 05, sans question qui exige d'en connaître les étapes. |
 | **V5** | Directions intermédiaires (boussole) | **8 directions enseignées** au ch. 07 (nord-est, sud-ouest…) : le concours les demande dans 4 sessions récentes, le manuel n'en enseigne que 4. |
+| **E-7a** | Monoxyde de carbone (concours 2008, 2012, 2017, 2018 ; guide p.73, corrigé p.86 ; absent du manuel) | **Enseigné** (2026-10-20) : combustion incomplète → أحادي أكسيد الكربون, gaz toxique inodore, aérer — « complément au manuel » au ch. `01` (déjà au ch. `02`) ; missions m008, m009 libérées. |
+| **E-7b** | Sonnette électrique (الجرس الكهربائي, guide p.175) | **Schéma à lire** (2026-10-20) au ch. `11` : usage de l'électroaimant montré ; les questions font lire le schéma, jamais réciter le fonctionnement. |
+
+Le sang décanté (الدّم المترسّب) est déjà enseigné au ch. `03` (manuel p.62–64) : pas une question. Les décisions E-1 à E-6 et E-8 à E-12 du planificateur (`PLAN-gisement.md` § 8) sont **retenues par le pilote** telles que proposées (41 missions, pas de d4, fusion des supports minces, « environ un cinquième » sans dire que la bougie consomme tout l'oxygène, énoncés défectueux corrigés à la reprise, tracés qualitatifs, 7 missions de devoirs, revérification du « ne pas redemander » au lancement).
+

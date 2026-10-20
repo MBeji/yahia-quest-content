@@ -29,7 +29,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "الشّعاعُ يصلُ مائلًا من الهواء إلى الماء ويعبرُه، لكنّه يغيّرُ اتّجاهه عند السّطح الفاصل: هذا انكسارُ الضّوء. لم يرتدَّ الشّعاعُ إلى الهواء فليس انعكاسًا، ولم يتشتّتْ في كلّ الجهات فليس انتثارًا. والماءُ شفّاف، لكنّ ذلك لا يمنعُ تغيّرَ الاتّجاه.",
+      "explanation": "الشّعاعُ يصلُ مائلًا من الهواء إلى الماء ويعبرُه، لكنّه يغيّرُ اتّجاهه عند السّطح الفاصل: هذا انكسارُ الضّوء. لم يرتدَّ الشّعاعُ إلى الهواء فليس انعكاسًا، ولم ينتثر في كلّ الجهات فليس انتثارًا. والماءُ شفّاف، لكنّ ذلك لا يمنعُ تغيّرَ الاتّجاه.",
       "difficulty": 2
     },
     {
@@ -91,7 +91,8 @@
       "options": [
         {
           "id": "a",
-          "text": "انكسار، لأنّ الضّوءَ مرّ عموديًّا من الهواء إلى الماء"
+          "text": "انكسار، لأنّ الضّوءَ مرّ عموديًّا من الهواء إلى الماء",
+          "misconceptionTag": "eveil.lum.rayon-perpendiculaire-et-oblique-confondus"
         },
         {
           "id": "b",
@@ -163,6 +164,65 @@
       "correctOption": "c",
       "explanation": "أضواءُ السّيّارة الّتي خلفه تصلُ إلى المرآة، فيعكسُها سطحُها المصقول في اتّجاهٍ محدّد نحو عينيه فتُبهرُه. حين يغيّرُ اتّجاهَ المرآة، يتغيّرُ اتّجاهُ الأشعّة المنعكسة. المرآةُ لا تُصدرُ ضوءًا، ولا تكسرُه ولا تنثرُه.",
       "difficulty": 3
+    },
+    {
+      "prompt": "تدخل أشعّة الشّمس غرفة من النّافذة فتضيء بقعة من أرضها فقط، لكنّنا نرى كلّ ركن في الغرفة، حتّى الّذي لا تصله الشّمس مباشرة. ما التّفسير؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "الضّوء ينعكس حول الأرض كلّها فيصل إلى كلّ ركن في الغرفة",
+          "misconceptionTag": "eveil.lum.phenomenes-lumineux-confondus"
+        },
+        {
+          "id": "b",
+          "text": "الجدران والأرض والأثاث تُصدر ضوءًا خاصًّا بها داخل الغرفة",
+          "misconceptionTag": "eveil.lum.objet-eclaire-pris-pour-source"
+        },
+        {
+          "id": "c",
+          "text": "تنثر الجدران والأرض والأثاث الضّوء في كلّ الجهات"
+        },
+        {
+          "id": "d",
+          "text": "الضّوء ينكسر في هواء الغرفة فيتوزّع على كلّ الأركان",
+          "misconceptionTag": "eveil.lum.phenomenes-lumineux-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الجدران والأرض والأثاث أجسام عاتمة غير مصقولة، تنثر الضّوء الّذي يصلها في جميع الاتّجاهات، فيصل جزء منه إلى الأركان البعيدة ومنها إلى أعيننا. والانتثار يحدث عند الأجسام نفسها لا حول الأرض، وهذه الأجسام لا تضيء بنفسها، ولا يحدث انكسار إلّا عند العبور إلى وسط شفّاف آخر.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "يصل الشّعاع الوارد المرسوم إلى مرآة مستوية، والخطّ المنقّط عموديّ عليها. أيّ الأشعّة المرسومة هو الشّعاع المنعكس؟ <svg viewBox=\"0 0 340 235\"><line x1=\"30\" y1=\"190\" x2=\"310\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"3\"/><line x1=\"48\" y1=\"190\" x2=\"39\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"62\" y1=\"190\" x2=\"53\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"76\" y1=\"190\" x2=\"67\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"90\" y1=\"190\" x2=\"81\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"104\" y1=\"190\" x2=\"95\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"118\" y1=\"190\" x2=\"109\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"132\" y1=\"190\" x2=\"123\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"146\" y1=\"190\" x2=\"137\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"190\" x2=\"151\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"174\" y1=\"190\" x2=\"165\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"188\" y1=\"190\" x2=\"179\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"202\" y1=\"190\" x2=\"193\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"216\" y1=\"190\" x2=\"207\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"230\" y1=\"190\" x2=\"221\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"244\" y1=\"190\" x2=\"235\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"258\" y1=\"190\" x2=\"249\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"272\" y1=\"190\" x2=\"263\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"286\" y1=\"190\" x2=\"277\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"190\" x2=\"291\" y2=\"201\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"190\" x2=\"170\" y2=\"40\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"6 5\"/><circle cx=\"60\" cy=\"50\" r=\"10\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"60\" y1=\"50\" x2=\"170\" y2=\"190\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><polyline points=\"167.7,180.3 170,190 161.1,185.5\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"190\" x2=\"230\" y2=\"50\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"223.3,56.0 230,50 230.3,59.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"190\" x2=\"198\" y2=\"226\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"196.0,217.2 198,226 190.0,221.9\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"190\" x2=\"280\" y2=\"50\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"272.0,54.1 280,50 278.0,58.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"190\" x2=\"310\" y2=\"110\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"301.0,110.7 310,110 304.8,117.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"233\" y=\"40\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">أ</text><text x=\"206\" y=\"230\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">ب</text><text x=\"290\" y=\"42\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">ج</text><text x=\"324\" y=\"110\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">د</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "الشعاع «أ»"
+        },
+        {
+          "id": "b",
+          "text": "الشعاع «ب»",
+          "misconceptionTag": "eveil.lum.reflexion-par-opacite"
+        },
+        {
+          "id": "c",
+          "text": "الشعاع «ج»"
+        },
+        {
+          "id": "d",
+          "text": "الشعاع «د»"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الشّعاع المنعكس يخرج من الجهة المقابلة للنّاظم بالميل نفسه الّذي ورد به الشّعاع الوارد، فهو الشّعاع «ج». الشّعاع «أ» أشدّ انحدارًا من الوارد، والشّعاع «د» أكثر انبساطًا منه، فلا يتساوى ميلاهما. أمّا الشّعاع «ب» فيعبر المرآة العاتمة، وهذا لا يحدث.",
+      "difficulty": 3
     }
-  ]
+  ],
+  "manuel": {
+    "pages": "20, 27",
+    "items": [
+      "ص 20 · أقيّم 7",
+      "ص 27 · أقيّم 7"
+    ]
+  }
 }
