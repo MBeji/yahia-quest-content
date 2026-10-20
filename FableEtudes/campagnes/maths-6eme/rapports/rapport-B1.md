@@ -99,3 +99,6 @@ par recherche des données dans chaque `cours.md`).
 Contrôles après correction : `content:check` ✓ · `content:qa` 0 erreur sur le lot (3 avertissements en `14`) · `content:figures:check` ✓ ·
 `content:tranche --fresh --strict-longest --strict-lessons` ✓ (0/91 clé la plus longue, 0 paire proche, positions a 26 % · b 29 % · c 28 % · d 17 %) ·
 prettier ✓ · rendu des 6 cours et résumés : 0 résidu (`**`, `_`, `:::`, `$$`, `⟺`) · scans de notation : 0.
+
+### Re-vérification (2026-10-20) — RV-1 à RV-4 appliqués
+RV-1 : 06 `05-entrainement` Q2, options 400 / 600 / 1 200 / 30 000 (clé 600) et explication refaite. RV-2 : 02 cours § 2, second piège sur 7 000 − 2 485 (4 515 ; 5 515 + 2 485 = 8 000). RV-3 : 04 `05-entrainement` Q5, option d → 7,6 sans étiquette. RV-4 : 03 `03-revision` Q6 → 0,4 = 400 millièmes. Recalculés ; `content:check` ✓, `content:qa` 0 erreur sur le lot, `content:tranche` (sans `--fresh`, 01–06) ✓ : 0/226 clé la plus longue, 0 paire proche ; prettier appliqué. Missions `06-…` non touchées.
