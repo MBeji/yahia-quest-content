@@ -24,3 +24,12 @@ Couche texte du guide inexploitable (fonte privée, mojibake) : lecture **à l'i
 
 Puis : rédacteur de la fiche (opus), audit R-7 (opus), registre, PR, merge ; puis le passage
 (mise à niveau des 12 chapitres, gisement : sujets d'éveil du concours `6web.edunet.tn/<année>/svt.pdf`).
+
+## 3. Arbitrages du propriétaire (2026-10-20, sur les questions §6.5 de la fiche)
+
+| | Question | Décision |
+| --- | --- | --- |
+| **V1** (Q-1) | Chiffres du ملفّ علمي (calendrier vaccinal, rapport 2:1, Lune = 1/6…) | **Enrichissement seulement** : encadré « pour aller plus loin » du cours possible, jamais une réponse attendue. |
+| **V2** (Q-2) | Plaquettes | **Trois composants** (manuel p.64) : plaquettes absentes du cours élève et des questions du ch. 03. |
+| **V3** (Q-3) | Intensité du courant (électroaimant) | **Spires et piles seulement** (manuel) ; « intensité » non exigible au ch. 11. |
+| **V4** (Q-4) | Épuration / potabilisation de l'eau | **Schéma à lire** au ch. 05, sans question qui exige d'en connaître les étapes. |
