@@ -114,7 +114,7 @@
       "competencies": ["math.geo.quadrilateres"]
     },
     {
-      "prompt": "حقل مثلّثيّ أ ب ج فيه أ ب = 40 م وأ ج = 30 م وقيس الزاوية ب أ ج يساوي 70°. نرسمه على ورقة بالسلّم 1/1000. ما طولا [أ ب] و[أ ج] على الورقة؟\n<svg viewBox=\"0 0 240 190\"><path d=\"M121 40 L80 153 L190 98 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M121 40 L80 153 L190 98 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"121\" y=\"32\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">أ</text><text x=\"68\" y=\"167\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">ب</text><text x=\"204\" y=\"104\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">ج</text><text x=\"84.5\" y=\"96.5\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">40 م</text><text x=\"177.5\" y=\"63.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">30 م</text><text x=\"125\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" direction=\"ltr\" unicode-bidi=\"isolate\">70°</text></svg>",
+      "prompt": "حقل مثلّثيّ أ ب ج فيه أ ب = 40 م وأ ج = 30 م وقيس الزاوية ب أ ج يساوي 70°. نرسمه على ورقة بالسلّم 1/1000. ما طولا [أ ب] و[أ ج] على الورقة؟\n<svg viewBox=\"0 0 240 190\"><path d=\"M121 40 L80 153 L190 98 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M121 40 L80 153 L190 98 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"121\" y=\"32\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">أ</text><text x=\"68\" y=\"167\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">ب</text><text x=\"204\" y=\"104\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">ج</text><text x=\"84.5\" y=\"96.5\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">40 م</text><text x=\"177.5\" y=\"63.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">30 م</text><text x=\"125\" y=\"74\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">70°</text></svg>",
       "options": [
         {
           "id": "a",
@@ -135,37 +135,12 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "السلّم 1/1000 يعني أنّ 1 سم على الورقة يمثّل 1000 سم في الواقع. نحوّل أوّلًا: 40 م = 4 000 سم و30 م = 3 000 سم، ثمّ نقسم على 1000: 4 000 ÷ 1000 = 4 سم و3 000 ÷ 1000 = 3 سم. الضرب في 1000 يكبّر الطولين بدل أن يصغّرهما، وقسمة 40 و30 على 1000 دون تحويل الأمتار إلى سنتيمترات تعطي أعدادًا أصغر من الصواب بمئة مرّة.",
+      "explanation": "السلّم 1/1000 يعني أنّ 1 سم على الورقة يمثّل 1000 سم في الواقع. نحوّل أوّلًا: 40 م = 4 000 سم و30 م = 3 000 سم، ثمّ نقسم على 1000: 4 000 ÷ 1000 = 4 سم و3 000 ÷ 1000 = 3 سم. الضرب في 1000 يكبّر الطولين بدل أن يصغّرهما، وقسمة 40 و30 على 1000 دون تحويل الأمتار إلى سنتيمترات تعطي 0,04 سم و 0,03 سم، والعددان 0,4 سم و 0,3 سم ناتجان عن قسمة 40 و30 على 100 بدل التحويل ثمّ القسمة على 1000.",
       "difficulty": 3,
       "competencies": ["math.prop.situations"]
     },
     {
-      "prompt": "نرسم الحقل المثلّثيّ أ ب ج (أ ب = 40 م وأ ج = 30 م وقيس الزاوية ب أ ج يساوي 70°) على ورقة بالسلّم 1/1000. ماذا يتغيّر بين الحقل ورسمه على الورقة؟",
-      "options": [
-        {
-          "id": "a",
-          "text": "أطوال الأضلاع وقيس الزاوية يُقسمان معًا على 1000، فتصبح الزاوية 0,07°"
-        },
-        {
-          "id": "b",
-          "text": "قيس الزاوية وحده يتغيّر، أمّا الأطوال فتبقى 40 م و 30 م"
-        },
-        {
-          "id": "c",
-          "text": "أطوال الأضلاع وحدها تتغيّر، وقيس الزاوية يبقى 70°"
-        },
-        {
-          "id": "d",
-          "text": "لا شيء يتغيّر، فالرسم مطابق للحقل في أطواله وزاويته"
-        }
-      ],
-      "correctOption": "c",
-      "explanation": "السلّم يصغّر الأطوال بنسبة واحدة هي 1/1000، أمّا الزاوية فلا تُقاس بالمتر ولا تُصغَّر: يبقى قيسها 70° على الورقة، وهذا ما يجعل الرسم يشبه الحقل. لو قسمنا الزاوية على 1000 لما أمكن رسمها بالمنقلة، ولو بقيت الأطوال كما هي لما اتّسعت لها الورقة.",
-      "difficulty": 3,
-      "competencies": ["math.prop.situations"]
-    },
-    {
-      "prompt": "نبني المثلّث أ ب ج القائم في ب والذي ضلعا زاويته القائمة متساويان. رسمنا [ب أ] = 5 سم، ثمّ رسمنا بالكوس العموديّ على (ب أ) في ب (المتقطّع في الشكل). كيف نعيّن النقطة ج على هذا العموديّ؟\n<svg viewBox=\"0 0 230 190\"><path d=\"M50 140 L170 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M50 140 L50 30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M59 140 L59 131 L50 131\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"110\" y=\"162\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">5 سم</text><text x=\"40\" y=\"160\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">ب</text><text x=\"182\" y=\"160\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">أ</text><circle cx=\"50\" cy=\"140\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"170\" cy=\"140\" r=\"2.6\" fill=\"currentColor\"/></svg>",
+      "prompt": "نبني المثلّث أ ب ج القائم في ب والذي ضلعا زاويته القائمة متساويان. رسمنا [ب أ] = 5 سم، ثمّ رسمنا بالكوس العموديّ على (ب أ) في ب (المتقطّع في الشكل). كيف نعيّن النقطة ج على هذا العموديّ؟\n<svg viewBox=\"0 0 230 190\"><path d=\"M50 140 L170 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M50 140 L50 30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M59 140 L59 131 L50 131\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"110\" y=\"162\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">5 سم</text><text x=\"40\" y=\"160\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">ب</text><text x=\"182\" y=\"160\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"currentColor\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" direction=\"ltr\" unicode-bidi=\"isolate\">أ</text><circle cx=\"50\" cy=\"140\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"170\" cy=\"140\" r=\"2.6\" fill=\"currentColor\"/></svg>",
       "options": [
         {
           "id": "a",

@@ -88,30 +88,30 @@
       "competencies": ["math.geo.cercle", "math.mes.perimetres"]
     },
     {
-      "prompt": "ساحة مستديرة قطرها 10 م تُغطّى كلّها بالعشب. كم مترًا مربّعًا من العشب؟ (π ≈ 3,14)",
+      "prompt": "ساحة مستديرة قطرها 30 م تُغطّى كلّها بالعشب. كم مترًا مربّعًا من العشب؟ (π ≈ 3,14)",
       "options": [
         {
           "id": "a",
-          "text": "25 م²",
-          "misconceptionTag": "math.geo.facteur-pi-omis"
-        },
-        {
-          "id": "b",
-          "text": "31,4 م²",
+          "text": "94,2 م²",
           "misconceptionTag": "math.geo.formules-cercle-perimetre-et-aire-confondues"
         },
         {
+          "id": "b",
+          "text": "225 م²",
+          "misconceptionTag": "math.geo.facteur-pi-omis"
+        },
+        {
           "id": "c",
-          "text": "78,5 م²"
+          "text": "706,5 م²"
         },
         {
           "id": "d",
-          "text": "314 م²",
+          "text": "2 826 م²",
           "misconceptionTag": "math.geo.rayon-et-diametre-confondus"
         }
       ],
       "correctOption": "c",
-      "explanation": "العشب يغطّي السطح فهو مساحة القرص: نصف القطر 10 ÷ 2 = 5 م، والمساحة 3,14 × 5 × 5 = 78,5 م². من أخذ القطر 10 نصفَ قطر وجد 314، ومن حسب المحيط وجد 31,4، ومن نسي π وجد 25.",
+      "explanation": "العشب يغطّي السطح فهو مساحة القرص: نصف القطر 30 ÷ 2 = 15 م، والمساحة 3,14 × 15 × 15 = 3,14 × 225 = 706,5 م². من أخذ القطر 30 نصفَ قطر وجد 2 826، ومن حسب المحيط وجد 94,2، ومن نسي π وجد 225.",
       "difficulty": 3,
       "competencies": ["math.geo.cercle"]
     },
