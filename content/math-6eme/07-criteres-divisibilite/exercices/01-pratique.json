@@ -10,11 +10,15 @@
       "prompt": "ما الذي يجعل العددَ يقبل القسمة على 2؟",
       "options": [
         { "id": "a", "text": "أن يكون رقمُ آحاده فرديًّا" },
-        { "id": "b", "text": "أن يكون رقمُ آحاده زوجيًّا" },
-        { "id": "c", "text": "أن ينتهي بالرقم 5", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
-        { "id": "d", "text": "أن ينتهي بالرقم 1", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" }
+        { "id": "b", "text": "أن ينتهي بالرقم 1" },
+        {
+          "id": "c",
+          "text": "أن ينتهي بالرقم 5",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        { "id": "d", "text": "أن يكون رقمُ آحاده زوجيًّا" }
       ],
-      "correctOption": "b",
+      "correctOption": "d",
       "explanation": "يقبل العددُ القسمةَ على 2 إذا كان رقمُ آحاده زوجيًّا (0 ; 2 ; 4 ; 6 ; 8).",
       "difficulty": 1,
       "competencies": ["math.num.criteres-divisibilite"]
@@ -33,7 +37,7 @@
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "أيُّ عددٍ يقبل القسمة على 5؟",
+      "prompt": "اختار طفل لافتة يقبل رقمها القسمة على 5. أيّ لافتة اختار؟",
       "options": [
         { "id": "a", "text": "52" },
         { "id": "b", "text": "38" },
@@ -59,30 +63,80 @@
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "ما مجموعُ أرقام العدد 234؟",
+      "prompt": "ما مجموعُ أرقام العدد 438؟",
       "options": [
-        { "id": "a", "text": "8" },
-        { "id": "b", "text": "7" },
-        { "id": "c", "text": "6" },
-        { "id": "d", "text": "9" }
+        { "id": "a", "text": "13" },
+        { "id": "b", "text": "14" },
+        { "id": "c", "text": "16" },
+        { "id": "d", "text": "15" }
       ],
       "correctOption": "d",
-      "explanation": "مجموعُ أرقام 234 هو 2 + 3 + 4 = 9 (نستعمله لاختبار القسمة على 3 و9).",
+      "explanation": "مجموعُ أرقام 438 هو 4 + 3 + 8 = 15 (نستعمله لاختبار القسمة على 3 و9).",
       "difficulty": 2,
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "هل يقبل العددُ 234 القسمةَ على 3؟",
+      "prompt": "يقبل العددُ 438 القسمةَ على 3. ما الدليل على ذلك؟",
       "options": [
-        { "id": "a", "text": "نعم" },
-        { "id": "b", "text": "لا" },
-        { "id": "c", "text": "لا لأنّه عددٌ زوجيّ", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
-        { "id": "d", "text": "لا يمكن المعرفة" }
+        {
+          "id": "a",
+          "text": "رقم آحاده 8",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "لأنّه عددٌ زوجيّ ينتهي بـ 8",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        { "id": "c", "text": "رقم عشراته 3" },
+        { "id": "d", "text": "مجموع أرقامه 15" }
+      ],
+      "correctOption": "d",
+      "explanation": "مجموعُ أرقام 438 هو 4 + 3 + 8 = 15، و15 مضاعفٌ للعدد 3، فالعددُ 438 يقبل القسمة على 3: 438 = 3 × 146. رقمُ الآحاد ورقمُ العشرات لا يُثبتان شيئًا عن 3، وكونُ العدد زوجيًّا يخصّ القسمة على 2.",
+      "difficulty": 2,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "type": "multi",
+      "prompt": "اختر كلَّ الأعداد التي تقبل القسمة على 3:",
+      "options": [
+        { "id": "a", "text": "207" },
+        { "id": "b", "text": "317" },
+        { "id": "c", "text": "409" },
+        { "id": "d", "text": "318" }
+      ],
+      "answerKey": {
+        "correct": ["a", "d"]
+      },
+      "explanation": "207: 2 + 0 + 7 = 9 فيقبل القسمة على 3. 318: 3 + 1 + 8 = 12 فيقبلها. أمّا 317 فمجموع أرقامه 11 و409 مجموع أرقامه 13، وكلاهما ليس مضاعفًا لـ 3.",
+      "difficulty": 2,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "أيّ رقمٍ نضعه مكان ▢ في العدد 217▢ ليقبل القسمةَ على 2 وعلى 5 معًا؟",
+      "options": [
+        { "id": "a", "text": "0" },
+        {
+          "id": "b",
+          "text": "2",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        { "id": "d", "text": "7" }
       ],
       "correctOption": "a",
-      "explanation": "مجموعُ أرقام 234 يساوي 9 وهو يقبل القسمة على 3، فالعددُ 234 يقبل القسمة على 3.",
+      "explanation": "القسمة على 2 وعلى 5 معًا تعني أن يكون رقم الآحاد 0، فالعدد هو 2170 = 2 × 1085 = 5 × 434. الرقم 5 يصلح للقسمة على 5 فقط، والرقم 2 يصلح للقسمة على 2 فقط.",
       "difficulty": 2,
       "competencies": ["math.num.criteres-divisibilite"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "70-77",
+    "items": ["L26 ex. 3أ", "L25 ex. 4ج"]
+  }
 }

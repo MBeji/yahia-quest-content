@@ -7,22 +7,34 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "قارن بين 7/10 و 3/5 (وحّد على 10).",
+      "prompt": "رتّب تصاعديًّا العددين 7/10 و 3/5.",
       "options": [
-        { "id": "a", "text": "7/10 > 3/5" },
-        { "id": "b", "text": "7/10 < 3/5", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
-        { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
+        { "id": "a", "text": "3/5 < 7/10" },
+        {
+          "id": "b",
+          "text": "7/10 < 3/5",
+          "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
+        },
+        { "id": "c", "text": "3/5 = 7/10" },
+        {
+          "id": "d",
+          "text": "لا يمكن ترتيبهما",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
       ],
       "correctOption": "a",
-      "explanation": "نوحّد على 10: 3/5 = 6/10؛ وبما أنّ 7 > 6 فإنّ 7/10 > 3/5.",
+      "explanation": "نوحّد على 10: 3/5 = 6/10؛ وبما أنّ 6 < 7 فإنّ 3/5 < 7/10، وهذا هو الترتيب التصاعديّ.",
       "difficulty": 2,
       "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
     },
     {
-      "prompt": "رتّب تصاعديًّا: 1/2 ؛ 2/3 ؛ 5/6 (وحّد على 6).",
+      "prompt": "رتّب تصاعديًّا: 1/2 ؛ 2/3 ؛ 5/6.",
       "options": [
-        { "id": "a", "text": "5/6 < 2/3 < 1/2", "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus" },
+        {
+          "id": "a",
+          "text": "5/6 < 2/3 < 1/2",
+          "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus"
+        },
         { "id": "b", "text": "1/2 < 2/3 < 5/6" },
         { "id": "c", "text": "2/3 < 1/2 < 5/6" },
         { "id": "d", "text": "1/2 < 5/6 < 2/3" }
@@ -33,20 +45,23 @@
       "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
     },
     {
-      "prompt": "أيُّ كسرٍ أكبر: 4/5 أم 5/6؟ (وحّد على 30).",
+      "type": "ordering",
+      "prompt": "رتّب الأعداد الكسريّة التالية ترتيبًا تصاعديًّا:",
       "options": [
-        { "id": "a", "text": "4/5", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
-        { "id": "b", "text": "متساويان" },
-        { "id": "c", "text": "5/6" },
-        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
+        { "id": "d", "text": "3/4" },
+        { "id": "b", "text": "4/7" },
+        { "id": "a", "text": "1/6" },
+        { "id": "c", "text": "2/3" }
       ],
-      "correctOption": "c",
-      "explanation": "نوحّد على 30: 4/5 = 24/30 و 5/6 = 25/30؛ وبما أنّ 25 > 24 فإنّ 5/6 > 4/5.",
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "على المقام المشترك 84: 1/6 = 14/84 و4/7 = 48/84 و2/3 = 56/84 و3/4 = 63/84. فالترتيب 14 < 48 < 56 < 63، أي 1/6 < 4/7 < 2/3 < 3/4. يمكن اختصار الطريق: 1/6 أصغر من 1/2 و4/7 أكبر منه، ثمّ 2/3 < 3/4 لأنّ ما ينقص الأوّل 1/3 أكبر ممّا ينقص الثاني 1/4.",
       "difficulty": 3,
-      "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
+      "competencies": ["math.frac.comparaison"]
     },
     {
-      "prompt": "حلّ أحمدُ 3/4 من التمارين، وسعاد 5/8، وريم 7/8. مَن حلّ أكثر؟ (وحّد على 8)",
+      "prompt": "حلّ أحمدُ 3/4 من التمارين، وسعاد 5/8، وريم 7/8. مَن حلّ أكثر؟",
       "options": [
         { "id": "a", "text": "أحمد" },
         { "id": "b", "text": "سعاد" },
@@ -59,30 +74,87 @@
       "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
     },
     {
-      "prompt": "ما الكسرُ الأصغر: 1/2 ؛ 2/5 ؛ 3/10؟ (وحّد على 10)",
+      "prompt": "صرفت أسرة في آخر أربعة أشهر 9/10 ثمّ 4/5 ثمّ 5/6 ثمّ 7/8 من دخلها. ما أصغر كسر بينها؟",
       "options": [
-        { "id": "a", "text": "3/10" },
-        { "id": "b", "text": "1/2", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
-        { "id": "c", "text": "2/5", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
-        { "id": "d", "text": "متساوية" }
+        {
+          "id": "a",
+          "text": "9/10",
+          "misconceptionTag": "math.frac.comparaison-par-denominateur"
+        },
+        { "id": "b", "text": "5/6" },
+        { "id": "c", "text": "4/5" },
+        { "id": "d", "text": "7/8" }
       ],
-      "correctOption": "a",
-      "explanation": "نوحّد على 10: 1/2 = 5/10، 2/5 = 4/10، 3/10؛ أصغرُها 3/10.",
+      "correctOption": "c",
+      "explanation": "نكتب ما ينقص كلّ كسر حتّى 1: 1/10 و1/5 و1/6 و1/8. بسوطها كلّها 1، فالأكبر منها صاحب المقام الأصغر: 1/5. الكسر الذي ينقصه أكبر جزء هو الأصغر، فأصغر الكسور 4/5.",
+      "difficulty": 3,
+      "competencies": ["math.frac.comparaison"]
+    },
+    {
+      "prompt": "بعد الاختزال، أيّ جملة صحيحة عن الكسرين 10/15 و 14/21؟",
+      "options": [
+        { "id": "a", "text": "الكسر 10/15 هو الأكبر" },
+        { "id": "b", "text": "الكسران متساويان" },
+        { "id": "c", "text": "الكسر 14/21 هو الأكبر" },
+        {
+          "id": "d",
+          "text": "لا يمكن الحكم",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نختزل: 10/15 = 2/3 (÷ 5) و14/21 = 2/3 (÷ 7)؛ فالكسران متساويان، ولا نقارن البسطين 10 و14 قبل أن يتوحّد المقام.",
       "difficulty": 3,
       "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
     },
     {
-      "prompt": "قارن بين 6/8 و 9/12 بعد اختزالهما.",
-      "options": [
-        { "id": "a", "text": "6/8 > 9/12", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
-        { "id": "b", "text": "متساويان" },
-        { "id": "c", "text": "6/8 < 9/12", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
-        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
-      ],
-      "correctOption": "b",
-      "explanation": "نختزل: 6/8 = 3/4 و 9/12 = 3/4؛ فالكسران متساويان.",
+      "type": "numeric",
+      "prompt": "لفيفة قماش طولها 45 m. باع التاجر منها لحريف أوّل 2/5 ولحريف ثانٍ 4/9. كم مترًا يزيد ما اشتراه الثاني على ما اشتراه الأوّل؟",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "نحسب كلّ نصيب: 2/5 من 45 = (45 ÷ 5) × 2 = 18 m، و4/9 من 45 = (45 ÷ 9) × 4 = 20 m. الثاني اشترى أكثر (4/9 > 2/5)، والفرق 20 − 18 = 2 m.",
       "difficulty": 3,
-      "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
+      "competencies": ["math.frac.comparaison"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "كم عددًا صحيحًا من الأعداد 3 و4 و5 و6 أصغر من الكسر 25/6؟",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "نكتب كلّ عدد كسرًا مقامه 6: 3 = 18/6 و4 = 24/6 و5 = 30/6 و6 = 36/6. نقارن بالبسط 25: 18 < 25 و24 < 25، أمّا 30 و36 فأكبر من 25. إذن العددان 3 و4 أصغر من 25/6، فالجواب 2.",
+      "difficulty": 3,
+      "competencies": ["math.frac.comparaison"]
+    },
+    {
+      "prompt": "قارن سامي 5/6 و 7/8 دون توحيد المقامين فكتب: «ينقص 5/6 جزء 1/6، وينقص 7/8 جزء 1/8، و1/6 > 1/8، إذن 5/6 > 7/8». ما الصواب؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "5/6 = 7/8، لأنّ كلًّا منهما ينقصه جزء واحد فقط من الوحدة"
+        },
+        {
+          "id": "b",
+          "text": "5/6 > 7/8، والخطأ أنّ 1/6 أصغر من 1/8 وليس أكبر منه"
+        },
+        {
+          "id": "c",
+          "text": "5/6 < 7/8، فالجزء الناقص الأكبر يعطي الكسر الأصغر"
+        },
+        {
+          "id": "d",
+          "text": "طريقة الجزء الناقص لا تصحّ مع هذين الكسرين لأنّ مقاميهما مختلفان"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الجزءان الناقصان بسطاهما 1، و1/6 > 1/8 صحيحة. لكنّ الكسر الذي ينقصه جزء أكبر هو الأصغر، فـ 5/6 < 7/8. تحقّق على المقام 24: 5/6 = 20/24 و7/8 = 21/24. الطريقة تصحّ هنا لأنّ بسطي الجزءين الناقصين متساويان.",
+      "difficulty": 3,
+      "competencies": ["math.frac.comparaison"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "items": ["L40 ex. 13", "L29 ex. 9"]
+  }
 }

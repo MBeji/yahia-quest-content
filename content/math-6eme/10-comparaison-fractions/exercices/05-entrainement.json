@@ -7,38 +7,66 @@
   "displayOrder": 5,
   "questions": [
     {
-      "prompt": "قارن بين 6/11 و 9/11.",
+      "prompt": "ضع العلامة المناسبة مكان النقاط: 6/11 … 9/11",
       "options": [
-        { "id": "a", "text": "6/11 > 9/11", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
-        { "id": "b", "text": "6/11 < 9/11" },
-        { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
+        {
+          "id": "a",
+          "text": ">",
+          "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
+        },
+        { "id": "b", "text": "<" },
+        { "id": "c", "text": "=" },
+        {
+          "id": "d",
+          "text": "لا علامة تصلح",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
       ],
       "correctOption": "b",
-      "explanation": "عند تساوي المقام، الأكبرُ بسطًا هو الأكبر؛ وبما أنّ 6 < 9 فإنّ 6/11 < 9/11.",
+      "explanation": "عند تساوي المقام، الأكبرُ بسطًا هو الأكبر؛ 6 < 9، إذن 6/11 < 9/11.",
       "difficulty": 1,
       "competencies": ["math.frac.comparaison"]
     },
     {
-      "prompt": "أيُّ الكسرين أكبر: 4/5 أم 4/9؟",
+      "prompt": "قطعتا قماش متقايستان: قُسّمت الأولى إلى 5 أجزاء متساوية والثانية إلى 9. أخذت ليلى 4 أجزاء من الأولى، وأخذت سارة 4 أجزاء من الثانية. مَن أخذت أكثر؟",
       "options": [
-        { "id": "a", "text": "4/5" },
-        { "id": "b", "text": "4/9", "misconceptionTag": "math.frac.comparaison-par-denominateur" },
-        { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "4/7" }
+        { "id": "a", "text": "ليلى" },
+        {
+          "id": "b",
+          "text": "سارة",
+          "misconceptionTag": "math.frac.comparaison-par-denominateur"
+        },
+        { "id": "c", "text": "أخذتا القدر نفسه" },
+        {
+          "id": "d",
+          "text": "لا نعرف دون قياس",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
       ],
       "correctOption": "a",
-      "explanation": "عند تساوي البسط (4)، الأصغرُ مقامًا هو الأكبر: بما أنّ 5 < 9 فإنّ 4/5 > 4/9.",
+      "explanation": "أخذت ليلى 4/5 وسارة 4/9. البسطان متساويان، فالأكبر صاحب المقام الأصغر: 5 < 9، إذن 4/5 > 4/9، وليلى أخذت أكثر.",
       "difficulty": 2,
       "competencies": ["math.frac.comparaison"]
     },
     {
       "prompt": "أيُّ كسرٍ يساوي الوحدة (1)؟",
       "options": [
-        { "id": "a", "text": "5/6", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
-        { "id": "b", "text": "7/6", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" },
+        {
+          "id": "a",
+          "text": "5/6",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
+        {
+          "id": "b",
+          "text": "7/6",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        },
         { "id": "c", "text": "6/6" },
-        { "id": "d", "text": "1/6", "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee" }
+        {
+          "id": "d",
+          "text": "1/6",
+          "misconceptionTag": "math.frac.comparaison-a-l-unite-inversee"
+        }
       ],
       "correctOption": "c",
       "explanation": "البسطُ يساوي المقام (6 = 6)، فالكسرُ 6/6 يساوي الوحدة 1.",
@@ -46,15 +74,23 @@
       "competencies": ["math.frac.comparaison"]
     },
     {
-      "prompt": "قارن بين 3/4 و 5/8 (وحّد على 8).",
+      "prompt": "قارن بين 2/3 و 7/12 (وحّد على 12).",
       "options": [
-        { "id": "a", "text": "3/4 < 5/8", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
+        {
+          "id": "a",
+          "text": "2/3 < 7/12",
+          "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
+        },
         { "id": "b", "text": "متساويان" },
-        { "id": "c", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" },
-        { "id": "d", "text": "3/4 > 5/8" }
+        {
+          "id": "c",
+          "text": "لا يمكن المقارنة",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        },
+        { "id": "d", "text": "2/3 > 7/12" }
       ],
       "correctOption": "d",
-      "explanation": "نوحّد على 8: 3/4 = 6/8 و 5/8؛ وبما أنّ 6 > 5 فإنّ 3/4 > 5/8.",
+      "explanation": "نوحّد على 12: 2/3 = 8/12؛ وبما أنّ 8 > 7 فإنّ 2/3 > 7/12.",
       "difficulty": 2,
       "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
     },
@@ -62,7 +98,11 @@
       "prompt": "رتّب تنازليًّا (البسط نفسُه): 1/3 ؛ 1/2 ؛ 1/6.",
       "options": [
         { "id": "a", "text": "1/2 > 1/3 > 1/6" },
-        { "id": "b", "text": "1/6 > 1/3 > 1/2", "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus" },
+        {
+          "id": "b",
+          "text": "1/6 > 1/3 > 1/2",
+          "misconceptionTag": "math.num.ordre-croissant-decroissant-confondus"
+        },
         { "id": "c", "text": "1/3 > 1/2 > 1/6" },
         { "id": "d", "text": "1/2 > 1/6 > 1/3" }
       ],
@@ -74,15 +114,58 @@
     {
       "prompt": "قارن بين 2/3 و 3/5 (وحّد على 15).",
       "options": [
-        { "id": "a", "text": "2/3 < 3/5", "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee" },
+        {
+          "id": "a",
+          "text": "2/3 < 3/5",
+          "misconceptionTag": "math.frac.comparaison-a-meme-denominateur-inversee"
+        },
         { "id": "b", "text": "2/3 > 3/5" },
         { "id": "c", "text": "متساويان" },
-        { "id": "d", "text": "لا يمكن المقارنة", "misconceptionTag": "math.frac.comparaison-jugee-impossible" }
+        {
+          "id": "d",
+          "text": "لا يمكن المقارنة",
+          "misconceptionTag": "math.frac.comparaison-jugee-impossible"
+        }
       ],
       "correctOption": "b",
       "explanation": "نوحّد على 15: 2/3 = 10/15 و 3/5 = 9/15؛ وبما أنّ 10 > 9 فإنّ 2/3 > 3/5.",
       "difficulty": 3,
       "competencies": ["math.frac.comparaison", "math.frac.equivalence"]
+    },
+    {
+      "type": "ordering",
+      "prompt": "رتّب الأعداد التالية ترتيبًا تصاعديًّا:",
+      "options": [
+        { "id": "c", "text": "25/6" },
+        { "id": "a", "text": "3/4" },
+        { "id": "d", "text": "9/2" },
+        { "id": "b", "text": "4" }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "نكتب الأعداد على المقام 12: 3/4 = 9/12 و4 = 48/12 و25/6 = 50/12 و9/2 = 54/12. فالترتيب 9 < 48 < 50 < 54، أي 3/4 < 4 < 25/6 < 9/2. نلاحظ أنّ 3/4 أصغر من 1، وأنّ 25/6 و9/2 أكبر من 4.",
+      "difficulty": 3,
+      "competencies": ["math.frac.comparaison"]
+    },
+    {
+      "type": "ordering",
+      "prompt": "رتّب الأعداد الكسريّة التالية ترتيبًا تصاعديًّا:",
+      "options": [
+        { "id": "b", "text": "1/2" },
+        { "id": "c", "text": "5/9" },
+        { "id": "a", "text": "3/7" }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c"]
+      },
+      "explanation": "نوحّد المقامات على 126: 3/7 = 54/126 و1/2 = 63/126 و5/9 = 70/126. فالترتيب 54 < 63 < 70، أي 3/7 < 1/2 < 5/9. ويمكن أن نقارن كلّ كسر بالنصف: 3/7 أصغر منه لأنّ 6 < 7، و5/9 أكبر منه لأنّ 10 > 9.",
+      "difficulty": 3,
+      "competencies": ["math.frac.comparaison"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "items": ["L40 ex. 10"]
+  }
 }

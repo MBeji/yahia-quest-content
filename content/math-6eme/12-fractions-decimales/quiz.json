@@ -5,9 +5,21 @@
       "prompt": "ما القيمةُ العشرية للكسر 3/10؟",
       "options": [
         { "id": "a", "text": "0,3" },
-        { "id": "b", "text": "3", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" },
-        { "id": "c", "text": "0,03", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "d", "text": "30", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
+        {
+          "id": "b",
+          "text": "3",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        },
+        {
+          "id": "c",
+          "text": "0,03",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "d",
+          "text": "30",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        }
       ],
       "correctOption": "a",
       "explanation": "مقامُ الكسر 10، فله رقمٌ واحدٌ بعد الفاصلة: 3/10 = 0,3.",
@@ -17,10 +29,18 @@
     {
       "prompt": "اكتب العددَ العشريّ 0,7 على شكل كسرٍ عشريّ.",
       "options": [
-        { "id": "a", "text": "7/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
+        {
+          "id": "a",
+          "text": "7/100",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
         { "id": "b", "text": "70" },
         { "id": "c", "text": "7/10" },
-        { "id": "d", "text": "1/7", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" }
+        {
+          "id": "d",
+          "text": "1/7",
+          "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies"
+        }
       ],
       "correctOption": "c",
       "explanation": "للعدد 0,7 رقمٌ واحدٌ بعد الفاصلة، فهو 7 أعشار: 0,7 = 7/10.",
@@ -28,43 +48,101 @@
       "competencies": ["math.frac.fractions-decimales"]
     },
     {
-      "prompt": "ما القيمةُ العشرية للكسر 25/100؟",
+      "prompt": "ما القيمةُ العشرية للكسر 64/100؟",
       "options": [
-        { "id": "a", "text": "2,5", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "b", "text": "0,25" },
-        { "id": "c", "text": "0,025", "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes" },
-        { "id": "d", "text": "25", "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier" }
+        {
+          "id": "a",
+          "text": "6,4",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        { "id": "b", "text": "0,64" },
+        {
+          "id": "c",
+          "text": "0,064",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        },
+        {
+          "id": "d",
+          "text": "64",
+          "misconceptionTag": "math.num.virgule-ignoree-nombre-lu-entier"
+        }
       ],
       "correctOption": "b",
-      "explanation": "مقامُ الكسر 100، فله رقمان بعد الفاصلة: 25/100 = 0,25.",
+      "explanation": "مقامُ الكسر 100، فله رقمان بعد الفاصلة: 64/100 = 0,64.",
       "difficulty": 2,
       "competencies": ["math.frac.fractions-decimales"]
     },
     {
-      "prompt": "اكتب العددَ 0,09 على شكل كسرٍ عشريّ.",
+      "prompt": "اكتب العددَ 0,03 على شكل كسرٍ عشريّ.",
       "options": [
-        { "id": "a", "text": "9/10", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
-        { "id": "b", "text": "9/1000", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
-        { "id": "c", "text": "90/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
-        { "id": "d", "text": "9/100" }
+        {
+          "id": "a",
+          "text": "3/10",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
+        {
+          "id": "b",
+          "text": "3/1000",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
+        {
+          "id": "c",
+          "text": "30/100",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
+        { "id": "d", "text": "3/100" }
       ],
       "correctOption": "d",
-      "explanation": "للعدد 0,09 رقمان بعد الفاصلة، فهو 9 أجزاء من المئة: 0,09 = 9/100.",
+      "explanation": "للعدد 0,03 رقمان بعد الفاصلة، فهو 3 أجزاء من المئة: 0,03 = 3/100.",
       "difficulty": 2,
       "competencies": ["math.frac.fractions-decimales"]
     },
     {
-      "prompt": "ما الكسرُ العشريّ المساوي للعدد 1,5؟",
+      "prompt": "ما الكسرُ العشريّ المساوي للعدد 2,7؟",
       "options": [
-        { "id": "a", "text": "15/10" },
-        { "id": "b", "text": "15/100", "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone" },
-        { "id": "c", "text": "1/5", "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies" },
-        { "id": "d", "text": "150" }
+        { "id": "a", "text": "27/10" },
+        {
+          "id": "b",
+          "text": "27/100",
+          "misconceptionTag": "math.frac.decimale-rang-du-denominateur-errone"
+        },
+        {
+          "id": "c",
+          "text": "2/7",
+          "misconceptionTag": "math.frac.ecriture-decimale-chiffres-recopies"
+        },
+        { "id": "d", "text": "270" }
       ],
       "correctOption": "a",
-      "explanation": "للعدد 1,5 رقمٌ واحدٌ بعد الفاصلة: 1,5 = 15/10.",
+      "explanation": "للعدد 2,7 رقمٌ واحدٌ بعد الفاصلة: 2,7 = 27/10.",
       "difficulty": 2,
       "competencies": ["math.frac.fractions-decimales"]
+    },
+    {
+      "prompt": "أيّ هذه الكسور كسر عشريّ؟",
+      "options": [
+        { "id": "a", "text": "3/20" },
+        { "id": "b", "text": "7/50" },
+        { "id": "c", "text": "21/300" },
+        { "id": "d", "text": "9/1000" }
+      ],
+      "correctOption": "d",
+      "explanation": "الكسر العشريّ مقامه 1 متبوعًا بأصفار: 9/1000 مقامه 1000. أمّا 20 و50 و300 فتنتهي بصفر لكنّ أوّل رقم فيها ليس 1، فالكسور 3/20 و7/50 و21/300 ليست عشريّة كما هي مكتوبة.",
+      "difficulty": 2,
+      "competencies": ["math.frac.fractions-decimales"]
+    },
+    {
+      "prompt": "أيّ هذه الكسور يمكن تحويله إلى كسر عشريّ؟",
+      "options": [
+        { "id": "a", "text": "13/7" },
+        { "id": "b", "text": "5/12" },
+        { "id": "c", "text": "9/20" },
+        { "id": "d", "text": "2/9" }
+      ],
+      "correctOption": "c",
+      "explanation": "9/20 غير قابل للاختزال، و20 يقسم 100 (20 × 5 = 100)، فـ 9/20 = 45/100 = 0,45. أمّا 13/7 و2/9 فمقاماهما 7 و9 لا يقسمان 10 ولا 100 ولا 1000، و5/12 غير قابل للاختزال ومقامه 12 يقبل القسمة على 3 فلا يقسم أيًّا منها.",
+      "difficulty": 2,
+      "competencies": ["math.frac.fractions-decimales", "math.frac.equivalence"]
     }
   ]
 }

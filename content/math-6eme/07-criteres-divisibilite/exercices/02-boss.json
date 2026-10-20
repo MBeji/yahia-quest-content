@@ -9,10 +9,22 @@
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 2 وعلى 5 معًا؟",
       "options": [
-        { "id": "a", "text": "75", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
+        {
+          "id": "a",
+          "text": "75",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
         { "id": "b", "text": "70" },
-        { "id": "c", "text": "52", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "d", "text": "35", "misconceptionTag": "math.num.divisibilite-un-seul-critere" }
+        {
+          "id": "c",
+          "text": "52",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "d",
+          "text": "35",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        }
       ],
       "correctOption": "b",
       "explanation": "العددُ يقبل القسمة على 2 و5 معًا إذا كان آحاده 0؛ آحادُ 70 هو 0، فهو يقبلهما (وعلى 10 كذلك).",
@@ -22,23 +34,23 @@
     {
       "prompt": "ما مجموعُ أرقام العدد 567، وهل يقبل القسمة على 9؟",
       "options": [
-        { "id": "a", "text": "المجموع 18 ولا يقبلها" },
-        { "id": "b", "text": "المجموع 17 ويقبلها" },
-        { "id": "c", "text": "المجموع 18 ويقبل القسمة على 9" },
-        { "id": "d", "text": "لا يقبلها" }
+        { "id": "a", "text": "17، ويقبل القسمة على 9" },
+        { "id": "b", "text": "17، ولا يقبل القسمة على 9" },
+        { "id": "c", "text": "18، ويقبل القسمة على 9" },
+        { "id": "d", "text": "18، ولا يقبل القسمة على 9" }
       ],
       "correctOption": "c",
-      "explanation": "مجموعُ أرقام 567 هو 5 + 6 + 7 = 18، و18 يقبل القسمة على 9، فالعددُ 567 يقبلها.",
+      "explanation": "مجموعُ أرقام 567 هو 5 + 6 + 7 = 18، و18 = 9 × 2 مضاعفٌ للعدد 9، فالعددُ 567 يقبل القسمة على 9: 567 = 9 × 63. المجموع لا يلزم أن يساوي 9 بل يكفي أن يكون مضاعفًا له.",
       "difficulty": 2,
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
       "prompt": "أيُّ عددٍ يقبل القسمة على 3 لكن ليس على 9؟",
       "options": [
-        { "id": "a", "text": "27", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "a", "text": "27" },
         { "id": "b", "text": "24" },
-        { "id": "c", "text": "81", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
-        { "id": "d", "text": "18", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" }
+        { "id": "c", "text": "81" },
+        { "id": "d", "text": "18" }
       ],
       "correctOption": "b",
       "explanation": "مجموعُ أرقام 24 هو 6 (يقبل القسمة على 3 لا على 9)؛ أمّا 27 و81 و18 فمجموعُ أرقامها 9 (تقبل القسمة على 9).",
@@ -49,7 +61,7 @@
       "prompt": "العددُ 105 يقبل القسمة على:",
       "options": [
         { "id": "a", "text": "2 و10" },
-        { "id": "b", "text": "9 فقط", "misconceptionTag": "math.num.critere-divisibilite-mal-choisi" },
+        { "id": "b", "text": "9 فقط" },
         { "id": "c", "text": "5 و3" },
         { "id": "d", "text": "2 فقط" }
       ],
@@ -62,27 +74,124 @@
       "prompt": "أيُّ عددٍ يقبل القسمة على 2 و3 معًا؟",
       "options": [
         { "id": "a", "text": "25" },
-        { "id": "b", "text": "33", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "c", "text": "44", "misconceptionTag": "math.num.divisibilite-un-seul-critere" },
-        { "id": "d", "text": "42" }
+        {
+          "id": "b",
+          "text": "33",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "c",
+          "text": "44",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        { "id": "d", "text": "78" }
       ],
       "correctOption": "d",
-      "explanation": "العددُ 42 زوجيّ (يقبل القسمة على 2) ومجموعُ أرقامه 6 (يقبل القسمة على 3)، فهو يقبل القسمة على 2 و3 معًا.",
+      "explanation": "العددُ 78 زوجيّ (يقبل القسمة على 2) ومجموعُ أرقامه 7 + 8 = 15 (يقبل القسمة على 3)، فهو يقبل القسمة على 2 و3 معًا: 78 = 6 × 13.",
       "difficulty": 3,
       "competencies": ["math.num.criteres-divisibilite"]
     },
     {
-      "prompt": "ما أصغرُ رقمٍ نضعه مكان ▢ في العدد 4▢ ليقبل القسمةَ على 3؟",
+      "prompt": "ما أكبرُ عددٍ من رقمين آحادُه 3 ويقبل القسمة على 3؟",
       "options": [
-        { "id": "a", "text": "2" },
-        { "id": "b", "text": "1" },
-        { "id": "c", "text": "0" },
-        { "id": "d", "text": "5", "misconceptionTag": "math.num.extremum-demande-ignore" }
+        {
+          "id": "a",
+          "text": "33",
+          "misconceptionTag": "math.num.extremum-demande-ignore"
+        },
+        {
+          "id": "b",
+          "text": "63",
+          "misconceptionTag": "math.num.extremum-demande-ignore"
+        },
+        { "id": "c", "text": "73" },
+        { "id": "d", "text": "93" }
       ],
-      "correctOption": "a",
-      "explanation": "نريد 4 + ▢ مضاعفًا للعدد 3؛ أصغرُ قيمةٍ هي 2 لأنّ 4 + 2 = 6 يقبل القسمة على 3 (العددُ 42).",
+      "correctOption": "d",
+      "explanation": "نريد عددًا آحاده 3 ومجموع رقميه مضاعف لـ 3: رقم العشرات 3 أو 6 أو 9 (الصفر لا يصلح في خانة العشرات). الأعداد 33 و63 و93 تصلح، وأكبرها 93 = 3 × 31. العدد 73 مجموع رقميه 10 فلا يقبل القسمة على 3.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "type": "multi",
+      "prompt": "اختر كلَّ الأرقام التي تصلح مكان ▢ في العدد 14▢ ليقبل القسمة على 3:",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "4" },
+        { "id": "d", "text": "5" },
+        { "id": "e", "text": "7" }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "مجموع الرقمين المعروفين 1 + 4 = 5، ونبحث عن ▢ يجعل 5 + ▢ مضاعفًا لـ 3. الأرقام 1 و4 و7 تعطي المجاميع 6 و9 و12 فتصلح (141 و144 و147). أمّا 2 و5 فتعطيان 7 و10، وهما ليسا مضاعفين لـ 3.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "ما باقي قسمة العدد 2607 على 9 دون إجراء القسمة؟",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "6" },
+        {
+          "id": "c",
+          "text": "7",
+          "misconceptionTag": "math.num.critere-divisibilite-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "15",
+          "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نجمع الأرقام: 2 + 6 + 0 + 7 = 15، وباقي قسمة 15 على 9 هو 6، فباقي قسمة 2607 على 9 هو 6 (2607 = 9 × 289 + 6). الخطأ الشائع أن نترك المجموع 15 جوابًا، والباقي يجب أن يكون أصغر من 9.",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "بالأرقام 4 و3 و0 و5 (كلّ رقم مرّة واحدة) كوّنّا أعدادًا من أربعة أرقام. أيّ هذه الأعداد يقبل القسمة على 2 ولا يقبلها على 5؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3045",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        { "id": "b", "text": "3054" },
+        {
+          "id": "c",
+          "text": "3450",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        { "id": "d", "text": "4053" }
+      ],
+      "correctOption": "b",
+      "explanation": "نحتاج رقم آحاد زوجيًّا غير 0، وبين أرقامنا هو 4 وحده: 3054 = 2 × 1527. العدد 3045 آحاده 5 (يقبل القسمة على 5 فقط)، و3450 آحاده 0 (يقبل القسمة على 2 وعلى 5)، و4053 آحاده 3 (لا يقبل أيًّا منهما).",
+      "difficulty": 3,
+      "competencies": ["math.num.criteres-divisibilite"]
+    },
+    {
+      "prompt": "ما أكبرُ عددٍ من ثلاثة أرقام يقبل القسمة على 5؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "990",
+          "misconceptionTag": "math.num.extremum-demande-ignore"
+        },
+        { "id": "b", "text": "995" },
+        { "id": "c", "text": "999" },
+        { "id": "d", "text": "1000" }
+      ],
+      "correctOption": "b",
+      "explanation": "أكبر عدد من ثلاثة أرقام هو 999، لكنّ آحاده 9 فلا يقبل القسمة على 5. نتراجع حتى نبلغ آحادًا 5 أو 0: 998 و997 و996 لا يصلحان، ثمّ 995 = 5 × 199. العدد 990 يقبل القسمة على 5 لكنّه ليس الأكبر، و1000 من أربعة أرقام.",
       "difficulty": 3,
       "competencies": ["math.num.criteres-divisibilite"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "70-77",
+    "items": ["L26 ex. 4", "L26 ex. 7ب", "L25 ex. 7", "L25 ex. 9"]
+  }
 }

@@ -16,7 +16,7 @@
         {
           "id": "b",
           "text": "7/32",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "misconceptionTag": "math.frac.add-denominators"
         },
         {
           "id": "c",
@@ -32,9 +32,7 @@
       "correctOption": "a",
       "explanation": "المقام يبقى 16، والبسط يتوزّع: 9 + 7 = 16.",
       "difficulty": 1,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أكمل: 12/10 = 5/10 + 4/10 + …",
@@ -46,7 +44,7 @@
         {
           "id": "b",
           "text": "3/30",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "misconceptionTag": "math.frac.add-denominators"
         },
         {
           "id": "c",
@@ -61,9 +59,7 @@
       "correctOption": "a",
       "explanation": "مجموع البُسُط يجب أن يساوي 12: 5 + 4 + 3 = 12، والمقام يبقى 10.",
       "difficulty": 1,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أيُّ تفكيكٍ للعدد 8/8 صحيح؟",
@@ -74,8 +70,7 @@
         },
         {
           "id": "b",
-          "text": "8/8 = 3/8 + 5/16",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "text": "8/8 = 3/8 + 5/16"
         },
         {
           "id": "c",
@@ -90,9 +85,7 @@
       "correctOption": "a",
       "explanation": "المقام يبقى 8 في الحدّين، ومجموع البُسُط يساوي 8: 3 + 5 = 8.",
       "difficulty": 1,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أكمل: …/20 = 7/20 + 3/20",
@@ -119,9 +112,7 @@
       "correctOption": "a",
       "explanation": "نجمع البُسُط ونُبقي المقام: 7 + 3 = 10، فالعدد هو 10/20.",
       "difficulty": 1,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "اكتب 9/4 عددًا صحيحًا طبيعيًّا وجزءًا كسريًّا بسطُه أصغر من مقامه.",
@@ -148,9 +139,7 @@
       "correctOption": "a",
       "explanation": "نقسم 9 على 4: الخارج 2 والباقي 1، فيكون 9/4 = 8/4 + 1/4 = 2 + 1/4.",
       "difficulty": 1,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أكمل: 9/7 = …/7 + 1",
@@ -165,8 +154,7 @@
         },
         {
           "id": "c",
-          "text": "2/1",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "text": "2/1"
         },
         {
           "id": "d",
@@ -177,9 +165,62 @@
       "correctOption": "a",
       "explanation": "نكتب 1 في صورة 7/7، فيبقى 9/7 ناقص 7/7 أي 2/7.",
       "difficulty": 1,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "prompt": "اكتب 6 + 2/3 عددًا كسريًّا واحدًا.",
+      "options": [
+        {
+          "id": "a",
+          "text": "8/3"
+        },
+        {
+          "id": "b",
+          "text": "20/3"
+        },
+        {
+          "id": "c",
+          "text": "14/3"
+        },
+        {
+          "id": "d",
+          "text": "3/20",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نكتب 6 بمقام 3: 6 = (6 × 3)/3 = 18/3. ثمّ 18/3 + 2/3 = 20/3.",
+      "difficulty": 2,
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "prompt": "قُسّمت فطيرةٌ إلى 15 قطعة متساوية ووُزّعت كلّها على 5 عائلات: 5 ثمّ 4 ثمّ 3 ثمّ 2 ثمّ 1 قطعة. ما العدد الكسريّ الذي يمثّل الأنصبة الخمسة معًا؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "15/75",
+          "misconceptionTag": "math.frac.add-denominators"
+        },
+        {
+          "id": "b",
+          "text": "5/15"
+        },
+        {
+          "id": "c",
+          "text": "14/15"
+        },
+        {
+          "id": "d",
+          "text": "15/15"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نجمع البُسُط ونُبقي المقام: 5 + 4 + 3 + 2 + 1 = 15، فالمجموع 15/15 = 1، أي الفطيرة كلّها.",
+      "difficulty": 2,
+      "competencies": ["math.frac.decomposition"]
     }
-  ]
+  ],
+  "manuel": {
+    "items": ["ex. 3", "ex. 4", "ex. 7", "ex. 8 ب"]
+  }
 }

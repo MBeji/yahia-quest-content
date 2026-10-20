@@ -31,9 +31,7 @@
       "correctOption": "a",
       "explanation": "نقسم 90 على 11: الخارج 8 والباقي 2، لأنّ 90 = (11 × 8) + 2.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "اكتب 79/9 عددًا صحيحًا طبيعيًّا وجزءًا كسريًّا بسطُه أصغر من مقامه.",
@@ -60,67 +58,61 @@
       "correctOption": "a",
       "explanation": "نقسم 79 على 9: الخارج 8 والباقي 7، لأنّ 79 = (9 × 8) + 7.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
-      "prompt": "بلغت الميزانيّة المقترحة 24/20، فاقترحت الأمّ تخفيضًا بـ 4/20. هل وُفِّقت في اقتراحها؟",
+      "prompt": "بلغت ميزانيّة رحلة القسم المقترحة 22/20، فاقترح المعلّم حذف الهدايا (4/20). هل يكفي اقتراحه؟",
       "options": [
         {
           "id": "a",
-          "text": "نعم: 24/20 ناقص 4/20 يساوي 20/20، أي الميزانيّة كاملةً بالضبط"
+          "text": "نعم: يصير المجموع 18/20، وهو أصغر من 1"
         },
         {
           "id": "b",
-          "text": "لا: النتيجة تبقى أكبر من الميزانيّة"
+          "text": "لا: يبقى المجموع أكبر من الميزانيّة كلّها"
         },
         {
           "id": "c",
-          "text": "نعم: لأنّ 24/20 ناقص 4/20 يساوي 20/0",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "text": "نعم: يصير المجموع 18/0 بطرح المقامين",
+          "misconceptionTag": "math.frac.soustraction-denominateurs"
         },
         {
           "id": "d",
-          "text": "لا: لأنّ الطرح يعطي 28/20",
+          "text": "لا: يصير المجموع 26/20، وهو أكبر من 1",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         }
       ],
       "correctOption": "a",
-      "explanation": "نطرح البُسُط ونُبقي المقام: 24 ناقص 4 يساوي 20، فتصير الحصص 20/20 أي الوحدة كاملة — لا تداينَ ولا فائض.",
+      "explanation": "نطرح البُسُط ونُبقي المقام: 22 − 4 = 18، فيصير المجموع 18/20، وهو أصغر من 1 لأنّ البسط أصغر من المقام: تكفي الميزانيّة ويبقى 2/20.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
-      "prompt": "بلغت كلفةُ قاعة المنارة 40000 د: ساهمت البلديّةُ بربع المبلغ والمنظّمةُ بخمسِه. ما العدد الكسريّ الذي يمثّل نصيب مجلس الولاية؟",
+      "prompt": "بلغت كلفة رحلة مدرسيّة 3 000 د: دفعت الجمعيّةُ نصفَ المبلغ، ودفعت البلديّةُ خُمسَه، وتكفّل الأولياء بالباقي. ما العدد الكسريّ الذي يمثّل نصيب الأولياء؟",
       "options": [
         {
           "id": "a",
-          "text": "11/20"
+          "text": "3/10"
         },
         {
           "id": "b",
-          "text": "9/20",
+          "text": "7/10",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
           "id": "c",
-          "text": "1/9",
+          "text": "5/7",
           "misconceptionTag": "math.frac.add-numerators-and-denominators"
         },
         {
           "id": "d",
-          "text": "1/20"
+          "text": "1/10"
         }
       ],
       "correctOption": "a",
-      "explanation": "الربع يساوي 5/20 والخمس يساوي 4/20، فمجموعهما 9/20؛ والباقي هو 20/20 ناقص 9/20 أي 11/20 (وهو 22000 د).",
+      "explanation": "نقسم الكلفة إلى 10 حصص من 300 د: النصف 1 500 د أي 5 حصص، والخُمس 600 د أي حصّتان. فالباقي 10 − 5 − 2 = 3 حصص، أي 3/10 (وهو 900 د).",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "نكتب 5/9 في صورة a/9 + b/9 حيث a و b عددان صحيحان طبيعيان غير منعدمين. كم زوجًا مختلفًا نجد دون اعتبار الترتيب؟",
@@ -145,38 +137,121 @@
       "correctOption": "a",
       "explanation": "مجموع البسطين يساوي 5، والزوجان الممكنان دون اعتبار الترتيب هما 1 و 4 ثمّ 2 و 3؛ أي زوجان اثنان.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
-      "prompt": "بلغ التملّكَ الأقصى 11 تلميذًا من 28 في السادسة «أ» و 8 من 25 في السادسة «ب». ما العدد الكسريّ الذي يمثّلهم في القسمين معًا؟",
+      "prompt": "يرتدي النظّارات 3 تلاميذ من 24 في السادسة «ج» و 2 من 26 في السادسة «د». ما العدد الكسريّ الذي يمثّلهم في القسمين معًا؟",
       "options": [
         {
           "id": "a",
-          "text": "19/53"
+          "text": "5/50"
         },
         {
           "id": "b",
-          "text": "19/28"
+          "text": "5/24"
         },
         {
           "id": "c",
-          "text": "3/53",
+          "text": "1/50",
           "misconceptionTag": "math.num.operation-inverse-appliquee"
         },
         {
           "id": "d",
-          "text": "88/700",
+          "text": "6/624",
           "misconceptionTag": "math.frac.multiplication-les-deux-termes-multiplies"
         }
       ],
       "correctOption": "a",
-      "explanation": "نعدّ من جديد في المجموعة الكاملة: 11 + 8 = 19 تلميذًا من 28 + 25 = 53 تلميذًا، أي 19/53 — وهذا ليس جمعَ الكسرين 11/28 و 8/25.",
+      "explanation": "نعدّ من جديد في المجموعة الكاملة: 3 + 2 = 5 تلاميذ من 24 + 26 = 50 تلميذًا، أي 5/50 — وهذا ليس جمعَ الكسرين 3/24 و 2/26.",
       "difficulty": 3,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "type": "multi",
+      "prompt": "قُسّمت فطيرة إلى 15 قطعة متساوية، ويراد توزيعها كلّها على خمس عائلات بحيث تنال كلّ عائلة قطعة واحدة على الأقلّ. ما التوزيعات الممكنة؟ (يوجد أكثر من توزيع صحيح)",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 ثمّ 4 ثمّ 3 ثمّ 2 ثمّ 1 قطعة"
+        },
+        {
+          "id": "b",
+          "text": "6 ثمّ 3 ثمّ 3 ثمّ 2 ثمّ 1 قطعة"
+        },
+        {
+          "id": "c",
+          "text": "4 ثمّ 4 ثمّ 4 ثمّ 2 ثمّ 2 قطعة"
+        },
+        {
+          "id": "d",
+          "text": "5 ثمّ 5 ثمّ 3 ثمّ 2 ثمّ 1 قطعة"
+        },
+        {
+          "id": "e",
+          "text": "7 ثمّ 3 ثمّ 2 ثمّ 2 ثمّ 1 قطعة"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "الأنصبة تُركّب إلى 15/15، فيجب أن يكون مجموع القطع 15. التوزيعات 5 + 4 + 3 + 2 + 1 و 6 + 3 + 3 + 2 + 1 و 7 + 3 + 2 + 2 + 1 مجموع كلّ منها 15. أمّا 4 + 4 + 4 + 2 + 2 و 5 + 5 + 3 + 2 + 1 فمجموع كلّ منهما 16، أي 16/15 وهو أكبر من الفطيرة.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "prompt": "اكتب 5 + 3/7 عددًا كسريًّا واحدًا.",
+      "options": [
+        {
+          "id": "a",
+          "text": "8/7"
+        },
+        {
+          "id": "b",
+          "text": "15/7"
+        },
+        {
+          "id": "c",
+          "text": "53/7"
+        },
+        {
+          "id": "d",
+          "text": "38/7"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نكتب 5 بمقام 7: 5 = (5 × 7)/7 = 35/7. ثمّ 35/7 + 3/7 = 38/7. تحقّق: 38 = (7 × 5) + 3.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "prompt": "نريد كتابة 100/9 جزءًا صحيحًا وجزءًا كسريًّا بسطُه أصغر من مقامه. ما الكتابة الصحيحة؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + 11/9",
+          "misconceptionTag": "math.frac.partie-entiere-quotient-et-reste-inverses"
+        },
+        {
+          "id": "b",
+          "text": "11 + 1/9"
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "misconceptionTag": "math.frac.partie-entiere-reste-oublie"
+        },
+        {
+          "id": "d",
+          "text": "10 + 10/9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نقسم 100 على 9: 100 = (9 × 11) + 1. الخارج 11 هو الجزء الصحيح والباقي 1 بسط الجزء الكسريّ: 100/9 = 11 + 1/9. التحقّق: 99/9 + 1/9 = 100/9.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
     }
-  ]
+  ],
+  "manuel": {
+    "items": ["ex. 6", "ex. 8 ب"]
+  }
 }

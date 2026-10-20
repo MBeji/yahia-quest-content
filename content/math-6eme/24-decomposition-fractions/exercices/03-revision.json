@@ -31,9 +31,7 @@
       "correctOption": "a",
       "explanation": "نقسم 19 على 3: الخارج 6 والباقي 1، لأنّ 19 = (3 × 6) + 1.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "اكتب 15/2 عددًا صحيحًا طبيعيًّا وجزءًا كسريًّا بسطُه أصغر من مقامه.",
@@ -54,16 +52,13 @@
         },
         {
           "id": "d",
-          "text": "7 + 1/15",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "text": "7 + 1/15"
         }
       ],
       "correctOption": "a",
       "explanation": "نقسم 15 على 2: الخارج 7 والباقي 1، لأنّ 15 = (2 × 7) + 1.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أكمل: … = 1/9 + 4/9 + 2/9",
@@ -90,9 +85,7 @@
       "correctOption": "a",
       "explanation": "نجمع البُسُط ونُبقي المقام: 1 + 4 + 2 = 7، فالنتيجة 7/9؛ وهي أصغر من الوحدة لأنّ بسطها أصغر من مقامها.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "في الكتابة 5/40 + …/40 + …/40 + …/40 = 40/40، ما مجموعُ الحدود الثلاثة الناقصة؟",
@@ -104,7 +97,7 @@
         {
           "id": "b",
           "text": "35/120",
-          "misconceptionTag": "math.frac.decomposition-denominateur-partage"
+          "misconceptionTag": "math.frac.add-denominators"
         },
         {
           "id": "c",
@@ -119,9 +112,7 @@
       "correctOption": "a",
       "explanation": "مجموع البُسُط يجب أن يبلغ 40، وعندنا 5 منها، فيبقى 35 موزّعةً على ثلاثة حدود بأكثر من طريقة ممكنة.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أيُّ هذه التفكيكات للعدد 7/10 غيرُ صحيح؟",
@@ -146,9 +137,7 @@
       "correctOption": "a",
       "explanation": "في التفكيك يبقى المقام 10 في كلّ حدّ؛ أمّا 3/5 + 4/5 فيساوي 7/5 وهو أكبر من الوحدة، بينما 7/10 أصغر منها.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
     },
     {
       "prompt": "أكمل: …/8 = 1/8 + 4/8 + 3/8 + 2/8",
@@ -175,9 +164,62 @@
       "correctOption": "a",
       "explanation": "مجموع البُسُط 1 + 4 + 3 + 2 = 10 والمقام يبقى 8؛ والنتيجة 10/8 أكبر من الوحدة لأنّ بسطها أكبر من مقامها.",
       "difficulty": 2,
-      "competencies": [
-        "math.frac.decomposition"
-      ]
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "type": "multi",
+      "prompt": "اختر كلّ التفكيكات الصحيحة للعدد 13/15 (يوجد أكثر من تفكيك واحد صحيح).",
+      "options": [
+        {
+          "id": "a",
+          "text": "13/15 = 6/15 + 7/15"
+        },
+        {
+          "id": "b",
+          "text": "13/15 = 10/15 + 3/15"
+        },
+        {
+          "id": "c",
+          "text": "13/15 = 6/7 + 7/8"
+        },
+        {
+          "id": "d",
+          "text": "13/15 = 5/15 + 8/30"
+        },
+        {
+          "id": "e",
+          "text": "13/15 = 4/15 + 4/15 + 5/15"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "في التفكيك الصحيح يبقى المقام 15 في كلّ حدّ ويكون مجموع البُسُط 13: 6 + 7 = 13 و 10 + 3 = 13 و 4 + 4 + 5 = 13. أمّا 6/7 + 7/8 فقد قُسِّم المقام، و 5/15 + 8/30 له مقامان مختلفان ومجموعه 18/30 لا 26/30.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "وُزّعت 47 قطعة من الكعك في علب، وفي كلّ علبة 6 قطع، أي 47/6 علبة. كم علبةً كاملةً نملأ؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "نقسم 47 على 6: 47 = (6 × 7) + 5. الخارج 7 هو الجزء الصحيح، أي 7 علب كاملة، والباقي 5 قطع تمثّل 5/6 علبة: 47/6 = 7 + 5/6.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "أكمل: 5/8 + 3/8 + …/8 = 3. ما البسط الناقص؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 16
+      },
+      "explanation": "نكتب 3 بمقام 8: 3 = 24/8. البُسُط المعلومة 5 + 3 = 8، فالبسط الناقص 24 − 8 = 16، أي الحدّ الناقص 16/8 وهو يساوي 2.",
+      "difficulty": 3,
+      "competencies": ["math.frac.decomposition"]
     }
-  ]
+  ],
+  "manuel": {
+    "items": ["ex. 3", "ex. 4", "ex. 5", "ex. 6", "ex. 7"]
+  }
 }

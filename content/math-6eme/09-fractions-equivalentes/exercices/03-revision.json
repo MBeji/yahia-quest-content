@@ -10,9 +10,17 @@
       "prompt": "اختزل الكسر 4/8.",
       "options": [
         { "id": "a", "text": "1/2" },
-        { "id": "b", "text": "2/4", "misconceptionTag": "math.frac.reduction-incomplete" },
+        {
+          "id": "b",
+          "text": "2/4",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        },
         { "id": "c", "text": "1/4" },
-        { "id": "d", "text": "4/8", "misconceptionTag": "math.frac.reduction-incomplete" }
+        {
+          "id": "d",
+          "text": "4/2",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        }
       ],
       "correctOption": "a",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك الأكبر 4: 4/8 = (4÷4)/(8÷4) = 1/2.",
@@ -35,10 +43,18 @@
     {
       "prompt": "اختزل الكسر 15/20.",
       "options": [
-        { "id": "a", "text": "5/20", "misconceptionTag": "math.frac.reduction-un-seul-terme-divise" },
+        {
+          "id": "a",
+          "text": "5/20",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        },
         { "id": "b", "text": "3/5" },
         { "id": "c", "text": "3/4" },
-        { "id": "d", "text": "15/20", "misconceptionTag": "math.frac.reduction-incomplete" }
+        {
+          "id": "d",
+          "text": "15/4",
+          "misconceptionTag": "math.frac.reduction-un-seul-terme-divise"
+        }
       ],
       "correctOption": "c",
       "explanation": "نقسم البسطَ والمقامَ على القاسم المشترك 5: 15/20 = (15÷5)/(20÷5) = 3/4.",
@@ -46,15 +62,19 @@
       "competencies": ["math.frac.equivalence"]
     },
     {
-      "prompt": "ما البسطُ المفقود: 3/4 = ؟/8؟",
+      "prompt": "ما البسطُ المفقود: 3/4 = …/28؟",
       "options": [
-        { "id": "a", "text": "4" },
-        { "id": "b", "text": "8" },
-        { "id": "c", "text": "12", "misconceptionTag": "math.frac.equivalence-facteur-errone" },
-        { "id": "d", "text": "6" }
+        { "id": "a", "text": "7" },
+        { "id": "b", "text": "28" },
+        {
+          "id": "c",
+          "text": "12",
+          "misconceptionTag": "math.frac.equivalence-facteur-errone"
+        },
+        { "id": "d", "text": "21" }
       ],
       "correctOption": "d",
-      "explanation": "بما أنّ 4 × 2 = 8، نضرب البسطَ أيضًا في 2: 3 × 2 = 6، إذن 3/4 = 6/8.",
+      "explanation": "بما أنّ 4 × 7 = 28، نضرب البسطَ أيضًا في 7: 3 × 7 = 21، إذن 3/4 = 21/28.",
       "difficulty": 2,
       "competencies": ["math.frac.equivalence"]
     },
@@ -62,7 +82,11 @@
       "prompt": "أيُّ كسرٍ يساوي 2/5؟",
       "options": [
         { "id": "a", "text": "4/10" },
-        { "id": "b", "text": "5/2", "misconceptionTag": "math.frac.numerateur-denominateur-inverses" },
+        {
+          "id": "b",
+          "text": "5/2",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
         { "id": "c", "text": "2/10" },
         { "id": "d", "text": "4/5" }
       ],
@@ -72,17 +96,67 @@
       "competencies": ["math.frac.equivalence"]
     },
     {
-      "prompt": "اختزل الكسر 18/24 إلى أبسط صورة.",
+      "prompt": "اختزل الكسر 18/30 إلى أبسط صورة.",
       "options": [
-        { "id": "a", "text": "9/12", "misconceptionTag": "math.frac.reduction-incomplete" },
-        { "id": "b", "text": "3/4" },
-        { "id": "c", "text": "6/8", "misconceptionTag": "math.frac.reduction-incomplete" },
-        { "id": "d", "text": "2/3" }
+        {
+          "id": "a",
+          "text": "9/15",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        },
+        { "id": "b", "text": "3/5" },
+        {
+          "id": "c",
+          "text": "6/10",
+          "misconceptionTag": "math.frac.reduction-incomplete"
+        },
+        { "id": "d", "text": "2/5" }
       ],
       "correctOption": "b",
-      "explanation": "القاسمُ المشترك الأكبر للعددين 18 و24 هو 6: 18/24 = (18÷6)/(24÷6) = 3/4.",
+      "explanation": "القاسمُ المشترك الأكبر للعددين 18 و30 هو 6: 18/30 = (18÷6)/(30÷6) = 3/5. الكسران 9/15 و6/10 يتوقّفان قبل أبسط صورة.",
+      "difficulty": 3,
+      "competencies": ["math.frac.equivalence"]
+    },
+    {
+      "prompt": "وحّد مقامي العددين 3 و 2/7.",
+      "options": [
+        { "id": "a", "text": "3/7 و 2/7" },
+        { "id": "b", "text": "3/21 و 2/7" },
+        { "id": "c", "text": "21/7 و 2/7" },
+        {
+          "id": "d",
+          "text": "3/3 و 2/7",
+          "misconceptionTag": "math.frac.entier-converti-en-n-sur-n"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد الصحيح كسر مقامه 1، ونريد مقامه 7: العامل 7، فنضرب البسط أيضًا: 3 = (3 × 7)/(1 × 7) = 21/7. إذن الكسران 21/7 و2/7. كتابة 3/3 تساوي 1 لا 3، وكتابة 3/21 تساوي 1/7، وكتابة 3/7 تبقي المقام 7 دون ضرب البسط.",
+      "difficulty": 3,
+      "competencies": ["math.frac.equivalence"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "نوحّد مقامي 14/11 و 2/3 في المقام 33. ما بسط الكسر 2/3 بعد التوحيد؟",
+      "answerKey": {
+        "value": 22
+      },
+      "explanation": "المقام المشترك 33 = 11 × 3. العامل الذي ينقل 3 إلى 33 هو 33 ÷ 3 = 11، فنضرب البسط 2 في 11: 2 × 11 = 22، أي 2/3 = 22/33. وبالمقابل 14/11 = 42/33.",
+      "difficulty": 3,
+      "competencies": ["math.frac.equivalence"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "كم كسرًا يساوي 5/4 ومقامه أكبر من 10 وأصغر من 30؟ (اكتب عدد الكسور)",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "5/4 غير قابل للاختزال، فالمقامات مضاعفات 4 بين 10 و30: 12 و16 و20 و24 و28. نضرب البسط 5 في العامل نفسه: 15/12 و20/16 و25/20 و30/24 و35/28، أي 5 كسور.",
       "difficulty": 3,
       "competencies": ["math.frac.equivalence"]
     }
-  ]
+  ],
+  "manuel": {
+    "code": "102609",
+    "pages": "80-84",
+    "items": ["L28 ex. 8ب", "L28 ex. 11أ"]
+  }
 }
