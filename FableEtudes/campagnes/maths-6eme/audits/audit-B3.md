@@ -542,3 +542,63 @@ de tailles différentes se comparent par leurs pourcentages » ; ar « تقار�
   troisième, héritée (`01-pratique` Q3), ne dit pas quelle aiguille est la petite (m22-3).
 - **`displayOrder` 26 du ch. 26** : sans objet pour l'audit.
 
+
+---
+
+## Re-vérification (2026-10-20) — **prêt sous réserve d'un remplacement** (0 critique, 0 majeur, 1 mineur)
+
+> Valide pour quiz, cours, résumés, `chapter.json` et exercices `01`–`05` des six chapitres au commit `20c637d0`
+> (dernier commit qui les touche : `743922d3` ; aucun changement non commité). Missions `06-…` et suivantes hors
+> périmètre. Méthode : diff question par question contre `915ee40f`, chaque question remplacée ou ré-étiquetée
+> re-résolue ; diff mot à mot des cours et résumés, chaque nombre neuf recalculé ; gates relancés ; paires proches
+> internes **sans** `--fresh` (sortie `--json`, toutes les paires, pas seulement les 12 affichées).
+
+**1. Défauts corrigés — tous, conformes au texte de l'audit.**
+- **C14-1** : étape 4 = « 6 cm … 60 m، وهو فعلًا الضلع الأقصر » + raison ✓ (6 < 7,2 < 8 < 12 sur la figure).
+- **Ch. 13** : les 18 remplacements M13-1 + 03 Q8 gardée et ligne `3/8 km = 375 m` au cours ✓ ; M13-2 (piège 5/7,
+  `coursePitfalls`, résumé « لا 5/7 ») ✓ ; M13-3 (longueurs 34/36/34/34) ✓ ; m13-1 (défi Q8 → 20) et m13-2 (ordering
+  b, d, c, a) ✓.
+- **Ch. 14** : M14-1 (quiz Q2 Q3, défi Q2 Q3) ✓ ; M14-2 (boss Q3 b `12,5`, 01 Q4 a → operation-inverse, 05 Q3 d →
+  inverses) ✓ ; m14-1/2/3/4/5 ✓ (`0,015 cm`, accords, `484 كتابًا`, `items` « (2-2, 3-2) »).
+- **Ch. 15** : M15-1 (5 questions) ✓ ; M15-2 : `additive…` ajouté aux `coursePitfalls`, les options « moyenne des
+  vitesses » / « par minute » laissées **muettes** en attendant les ids du registre (consigne du pilote) ✓ ; m15-1/2/3 ✓.
+- **Ch. 22** : les 15 remplacements M22-1 ✓ ; M22-2 (cas limite 9 سا → 14 سا = 29 سا) ✓ ; m22-2 (défi Q10 rétablie : 17 سا 45
+  − 6 سا 30 = 11 سا 15, − 45 د = 10 سا 30 = 10,5 سا, × 80 = 840 ✓) ; m22-3 (aiguille rouge `stroke-width="4"` + phrase)
+  ✓ ; m22-4 ✓. (m22-1 écarté : accepté.)
+- **Ch. 24** : M24-1 — 35 substitutions relues une à une, toutes justes (9/14 = 5/14 + 4/14 ; 5/7 + 4/7 = 9/7 ; 11/8 =
+  6/8 + 3/8 + 2/8 ; 9/13 : 4 tafkīk ; 11/12 ; 5/16 + 6/16 = 11/16, 11/32 ; 10/11 ; 25/25 ; 9/6 ; 19/16 → 9/16, 29/16 ;
+  24/30 = 7 + 8 + 9 ; 3/7 + 7/7 = 10/7 ; 6 = 30/5, 32/5 ; 27/5 − 25/5 = 2/5, 22/5 ; 13/9 − 9/9 = 4/9 ; 29/4 = 7 + 1/4,
+  1 + 7/4 = 11/4 ; 17/3 = 5 + 2/3 ; 75/11 = 6 + 9/11) ; aucun nombre neuf du cours n'apparaît dans une question ;
+  M24-2 (7 questions) ✓ ; M24-3 (7 ré-étiquetages + 5 muettes) ✓ ; M24-4 (38/37/38/37) ✓ ; m24-1 (`manuel.items`) ✓.
+- **Ch. 26** : M26-1 (barre `y="50.4" height="145.6"` = 16 ✓, options 8/16/10/18) ✓ ; M26-2 (0,8 mm → 20 mm) ✓ ;
+  M26-3 (63/90 = 70 %, longueurs 34/39/39/57) ✓ ; M26-4 (Q5 13 ans → 16,67 ; Q6 explication) ✓ ; M26-5 options muettes
+  en attente d'ids ✓ ; m26-1, m26-3 ✓.
+
+**2. Remplacements re-résolus** : toutes les questions que le diff montre modifiées (texte, options, étiquettes ou explication) ont été re-résolues : clés
+justes, une seule réponse, aucune ne redonne un exemple du cours (y compris les nombres neufs du cours du ch. 24),
+aucune clé strictement la plus longue (tranche `--fresh` : 0/225).
+
+**3. Régressions : aucune.** `content:check` ✓ ; `content:qa` 0 erreur (mêmes 3 avertissements ch. 14, faux positifs
+U+00A0 ; deux nouveaux avertissements au ch. 16, hors lot) ; `content:figures:check` ✓ ; patron de notion 0 en recul ;
+rendu vitest des 12 fichiers : 0 `**`, 0 `:::`, 0 `$$`, `verifie` 7/10/8/8/7/5, figures 5/4/3/3/4/5 (inchangé) ; scans
+de notation : 0. Sans `--fresh`, une seule clé strictement la plus longue : `15` pratique Q5 (`160 km` contre `82 km`,
+un chiffre de plus — sans indice, déjà jugé).
+
+**4. Paires proches internes ≥ 0,6** (quiz + 01–05, sans `--fresh`) : 10.
+- **Justifiées** (exercice parallèle : même savoir-faire, autres données, dans des exercices différents, ou suite
+  voulue sur un même document) : `22` boss Q4 ↔ entraînement Q4 (0,86 ; avec / sans retenue), boss Q4 ↔ révision Q6
+  (0,67), révision Q6 ↔ entraînement Q5 (0,60 ; somme / différence) ; `14` pratique Q2 ↔ entraînement Q3 (0,82 ; 50 % /
+  20 %) ; `14` défi Q7 ↔ Q8 (0,71 ; suite du T2) ; `26` révision Q5 ↔ Q6 (0,77) et boss Q3 ↔ Q4 (0,67) (préambule
+  partagé, tâches distinctes) ; `15` quiz Q4 ↔ pratique Q6 (0,65 ; 150/50 vs 200/100) ; `15` pratique Q5 ↔
+  entraînement Q5 (0,62 ; 2 h vs 0,5 h).
+- **Non justifiée — m-RV-1 (mineur)** : `22` quiz Q2 « كم دقيقةً في الساعة الواحدة؟ » ↔ `03-revision` Q1 « كم دقيقةً في
+  الساعة؟ » (0,90) : même fait, mêmes options. Remplacer `03-revision` Q1 (même rang, d1) : prompt « كم ثانيةً في 10
+  دقائق؟ » · a `600 ثا` (clé) · b `1000 ثا` (`math.mes.duree-convertie-en-base-cent`) · c `100 ثا`
+  (`math.mes.duree-convertie-en-base-cent`) · d `240 ثا` (`math.mes.constante-de-temps-attribuee-a-la-mauvaise-unite`) ·
+  exp. « الدقيقة 60 ثانية، فـ 10 دقائق = 10 × 60 = 600 ثانية؛ التحويلُ في الزمن يكون بـ 60. » (10 × 60 = 600 ; longueurs
+  6/7/6/6 ; 600 ثا n'est l'exemple d'aucune section du cours, qui convertit 180, 240 et 300 ثا.)
+
+**Verdict : prêt** dès que m-RV-1 est appliqué (une question). Les options muettes en attente d'ids (`math.frac.
+produit-fractions-denominateur-conserve`, `math.prop.vitesse-moyenne-des-vitesses`, `math.prop.vitesse-unite-de-temps-
+non-convertie`, `math.stat.graduation-comptee-comme-unite`, `math.stat.comparaison-par-effectifs`) ne bloquent pas :
+une option muette est conforme ; leur étiquetage suivra la création des ids.
