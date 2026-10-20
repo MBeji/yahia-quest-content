@@ -54,3 +54,17 @@ Employées (registre `math.*`, toutes valides) : `geo.rayon-et-diametre-confondu
 - **22/06 Q1** : l'arrêt à A n'est pas dans la première sortie ; lecture identique à la carte et à la correction attendue (40 min).
 - **21/07 Q8** redonne 11 304 m² (clé de Q6) et **21/06 Q5/Q7** les valeurs des étapes précédentes : fuites inhérentes à des étapes qui doivent se lire seules.
 - Nombres de questions inférieurs à la carte pour `22/06` (10 au lieu de 12) et `22/09` (8 au lieu de 9) : étapes triviales ou doublons de `15/quiz#7` (20 min = 1/3 h) et d'une seconde sous-étape de capacité écartées.
+
+## Corrections après audit (audit-M3-M4.md)
+
+Appliquées, chacune revérifiée (valeur, clé non la plus longue, prémisses non niées) :
+- **C-1 · 22/09 Q6** : « المستهلكة في التنقّل كلّه 9 ل » ; explications de Q6 et Q8 réécrites ; Q8 : options a et d remplacées (M-6) et phrase finale ajoutée (18 L, 8 L).
+- **M-1 · 21/06 Q7** : la découpe en deux triangles est dans l'énoncé.
+- **M-2 · 22/06 Q6** : « 7 سا 75 د » → `duree-convertie-en-base-cent`.
+- **M-3 · 22/06 Q8 supprimée** (9 questions). **M-4 · 22/07 Q3 supprimée** (9 questions).
+- **M-5 · 22/08 Q7** : options 8 سا et 6 سا 30 د, explication. **M-7 · 22/11 Q7** : plus de nombre négatif, options et explication de l'audit.
+- **M-11** : 21/07 Q11 gardée en l'état.
+- Mineurs : 21/08 Q7 (calcul 254,34 − 27 dans l'explication), 22/07 Q10 (« الموعدين »), 22/10 Q7 (option c remplacée). Non faits : cotes sans unité en 21/08 (halo/isolat des cotes), remplissages 22/07 Q1 et Q5, 22/08 Q4-Q5 jugés d3 (laissés).
+- Étiquettes muettes posées avec les ids de `vocab-math-6eme.md` (tous présents au registre) : `arc-circonference-entiere-prise-pour-l-arc` (21/06 Q2 a, c), `pourcentage-base-erronee` (21/07 Q8 a, Q9 c), `unites-non-converties` (21/07 Q10, 21/08 Q1), `temps-d-arret-mal-compte`, `attente-du-prochain-depart-ignoree`, `changement-de-jour-oublie`, `trajet-aller-retour-ignore` (22/06, 22/08, 22/09, 22/11). Aucun id inventé.
+
+Contrôles rejoués : `content:check` ✓, `content:qa` 0 erreur (aucun refus de `coursePitfalls`), `figures:check` ✓, `lot-lint` 0, `prettier --check` ✓, tranche : aucune clé la plus longue dans mes fichiers (les 3 signalées sont dans 21/02, 04, 05). Totaux : 21 = 26 questions, 22 = 49 (6 : 9 ; 7 : 9 ; 8 : 9 ; 9 : 8 ; 10 : 7 ; 11 : 7).

@@ -391,3 +391,113 @@ Trois familles de défauts restent à corriger :
 Tous les remplacements sont prêts à coller, recalculés, et une seule option par question y est défendable. Après
 application, relancer `content:check`, `content:qa` et `content:tranche` (avec et sans `--fresh`) sur les 4 chapitres :
 les paires ≥ 0,6 du lot doivent tomber à 0.
+
+---
+
+## Re-vérification (2026-10-20, après les « Corrections après audit » de `rapports/rapport-B5.md`)
+
+> Valide au commit `480be63a` (arbre propre). Le lot ne change pas : 20, 21, 23, 25 — cours, résumés, `chapter.json`,
+> quiz et exercices 01–05. Les missions `06+` restent hors périmètre. J'ai repris chaque question modifiée depuis
+> `bbb33ffe` (diff question par question) et je l'ai **re-résolue** : 74 questions remplacées ou retouchées, et 4 blocs
+> de cours ou de résumé.
+
+### Les décisions du pilote
+
+- **Étiquettes.** Mon JSON n'est pas appliqué, et c'est accepté. J'ai vérifié les ids de `vocab-math-6eme.md` dans le
+  registre. Leur libellé nomme bien l'erreur exécutée :
+  - `perimetre-segment-interieur-compte` couvre le côté commun et le diamètre accolé ;
+  - `reste-ignore-dans-le-probleme` (« un rouleau de plus ») supprime la contradiction de `arrondi-par-troncature` ;
+  - `arc-retranche-compte-en-moins` ;
+  - `plantations-ferme-et-ouvert-confondus` ;
+  - en complément, `perimetre-partie-du-bord-oubliee`, `arc-circonference-entiere-prise-pour-l-arc`,
+    `couronne-largeur-prise-pour-rayon`, `aire-cote-oblique-pris-pour-hauteur`,
+    `aire-composee-somme-au-lieu-de-difference` et `unites-non-converties`.
+
+  `volume-utilise-comme-aire` et `rayon-non-eleve-au-carre` n'apparaissent plus nulle part dans le lot (grep : 0) : la fuite
+  « حجم / cm³ / أسطوانة » est fermée. Conséquence acceptée : les pièges « 3,14 × 5 = 15,7 » (21 § 🧩) et
+  « 40 × 20 × 25 » (23 § 🎀) restent montrés dans le cours sans étiquette, et leurs options sont muettes.
+  `content:qa` n'en dit rien.
+- **5 clés numériques strictement les plus longues** (20/05#1, 21/02#4, 21/04#2, 21/05#2, 23/01#1, soit 3 %) :
+  **acceptées.** Ce sont des nombres plus longs (« 0,785 », « 254,34 », « 120 سم ») parmi des distracteurs numériques
+  de même forme. Aucune ne porte de justification ni de marqueur, et le taux est très en dessous du hasard (25 %).
+- **21 `02-boss` Q6 laissée en d3** (calcul 18 ÷ 2) : **acceptée** comme résidu de calibration mineur, pour garder
+  l'identifiant stable. Elle est dans un boss, et la question est bien remplacée.
+
+### 1. Défauts de l'audit : tous corrigés, sauf ce qui est listé au § 4
+
+- **Ch. 20.** Les 5 remplacements de M20-1 sont appliqués et justes (24 ; 14 ; 54 ; comparaison triangle/parallélogramme ;
+  « 12 سم² »). Les figures de `01` Q9 (base 7, sommet ج en 300) et de `03` Q8 (côtés de l'angle droit 12 et 9) ont été
+  re-vérifiées sur les coordonnées. `competencies` est présent partout. m20-1, m20-2 (9 600 expliqué), m20-6 (`03` Q2)
+  sont corrigés. Ajouts justes : `03` Q1 (12 × 5 → 60) et `05` Q2 (cour de 8 m → 64).
+- **Ch. 21.** Les 11 redites sont traitées (8 remplacements, 3 `verifie` renumérotés : 28,26 ÷ 9 ; ر = 3,5 → 21,98 et
+  38,465 ; quart ر = 2 → 3,14, 3,14 et 7,14 — tout est juste). Le résumé suit le piège (« ق = 14 ⟵ ر = 7 لا 28 »). Les
+  6 remplacements de M21-2 sont faits. La couronne de `quiz` Q6 est passée à 3/7 avec le cercle intérieur à `r="41"`.
+  m21-1 à m21-3 sont corrigés, et la clôture dit « التالي: المُدَدُ الزمنيّة ». Ajouts justes :
+  - `02` Q7 : 379,94 → ر = 11 ;
+  - `03` Q4 : d = 1,5 → 4,71 (distracteurs 2,355, 9,42, 4,64) ;
+  - `04` Q1 : d = 21 → 65,94 (32,97, 131,88, 346,185).
+- **Ch. 23.** M23-2 (4) et M23-3 (7) sont appliqués et justes : 120 ; 4 × (ح × ح) ; 10 × 4 ; rangée de 5 + 1 ; 5,76 ;
+  « مساحة وجهين » ; 9 ; 384 ; 0,24 → 0,16 ; `multi` {a, d}. Le champ `manuel` est retiré de `05`. Le `verifie` sur la
+  perspective est corrigé, « علب كاملة » ajouté, la clôture corrigée. m23-3 à m23-6 sont faits : « بلاط », pavés cotés
+  8 × 5 × 3 et 6 × 3 × 4. Ajouts justes :
+  - `02` Q2 : 4,5 → 81 (18, 20,25, 121,5) ;
+  - `04` Q4 : murs 10 × 4 × 5 → 140 (70, 120, 200) ;
+  - `04` Q6 : 6 × 4 × 2 → 88.
+- **Ch. 25.** Les 4 remplacements de M25-2 sont appliqués et justes (6 côtés ; 11,14 ; quadrilobe 37,68 ; 25 poteaux).
+  Les étiquettes sont posées (M25-1). Les 35 questions ont maintenant des `competencies`. m25-1 à m25-4 sont faits : le
+  résumé a maintenant la figure de la maison.
+
+### 2. Questions remplacées ou retouchées : 74/74 re-résolues, clés justes
+
+Aucune n'a deux réponses défendables, et aucune option n'est désignée par sa lettre. Les explications redisent la valeur
+attendue.
+
+### 3. Pas de régression de gate ni de rendu
+
+- `content:check` ✓.
+- `content:qa -- --subject math-6eme` : **0 erreur**. Les 5 avertissements restants sont hors lot (ch. 14 et 16).
+- `content:figures:check` ✓.
+- `content:tranche --fresh --strict-longest --strict-lessons` ✓ : clé la plus longue 5/177 = 3 % ; positions
+  24/28/30/18 % (le b à 58 % du ch. 25 est résorbé) ; patron 0 en recul.
+- **Paires proches internes sans `--fresh`, hors `06+` : 0 au-dessus de 0,6** (la plus haute est 0,59 : 21 `02` Q2 ↔ Q3,
+  périmètres ر = 12 et d = 6, un exercice parallèle justifié).
+- **Rendu refait à 360 px** après les derniers changements (vitest jetable supprimé, moteur propre ; Chromium) :
+  `scrollWidth` = 360 partout, 0 `:::` brut. Figures : 11/10/14/8 dans les cours, 84 dans les questions, 1 dans le
+  résumé du 25. Les `<details>` sont 9/9/8/6. Les 12 figures neuves ou modifiées ont été regardées une à une : toutes sont
+  vraies (20 `01` Q1, Q9, `03` Q2, Q8 ; 21 `quiz` Q6 ; 23 `01` Q9, `03` Q6, `05` Q4 ; 25 `01` Q4, `03` Q1, `03` Q3 ;
+  résumé 25).
+
+### 4. Défauts restants (texte exact)
+
+**R-1 (majeur, régression) — 21 `05-entrainement` Q4 redonne l'exemple résolu § 🧩.** La question est réécrite (« ساحة
+مستديرة قطرها 10 م … ») mais garde ر = 5 → 78,5, avec 25 (le piège « ينسى π » du cours), 31,4 (l'exemple de la
+propriété § 🚲) et 314 (le `verifie` de § 🧩). Remplacement :
+
+« ساحة مستديرة قطرها 30 م تُغطّى كلّها بالعشب. كم مترًا مربّعًا من العشب؟ (π ≈ 3,14) »
+- a `225 م²` (`math.geo.facteur-pi-omis`)
+- b `94,2 م²` (`math.geo.formules-cercle-perimetre-et-aire-confondues`)
+- c `706,5 م²` (clé)
+- d `2 826 م²` (`math.geo.rayon-et-diametre-confondus`) ⚠️ l'espace entre 2 et 826 doit être une **U+00A0**
+- exp. « العشب يغطّي السطح فهو مساحة القرص: نصف القطر 30 ÷ 2 = 15 م، والمساحة 3,14 × 15 × 15 = 3,14 × 225 = 706,5 م². من
+  أخذ القطر 30 نصفَ قطر وجد 2 826، ومن حسب المحيط π × 30 وجد 94,2، ومن نسي π وجد 225. » (même U+00A0 dans « 2 826 »)
+
+Vérifié : 3,14 × 225 = 706,5 ; 3,14 × 900 = 2 826 ; 3,14 × 30 = 94,2. La clé n'est pas la plus longue, et la question ne
+coïncide avec aucune autre question ni aucun exemple du cours.
+
+**Mineurs :**
+- **r-2** — 20 `03` Q1, option d `125 سم²` : c'est « 12 et 5 écrits côte à côte ». Lui poser
+  `math.num.chiffres-juxtaposes-au-lieu-du-produit` et ajouter à l'explication « …ومن كتب العددين جنبًا إلى جنب وجد 125. »
+- **r-3** — 20 `01` Q1 : le libellé « 3 سم » (`<text x="46" y="80" text-anchor="middle"`) déborde sur le bord gauche
+  du rectangle (x = 60). → `<text x="54" y="80" text-anchor="end"`.
+- **r-4** — 25 `02` Q5, option b `33,72 م` (= 40 − 6,28) exécute **deux** erreurs : les deux segments de 4 m sont gardés
+  ET l'arc est retranché. Elle doit donc être muette, plutôt que porter `arc-retranche-compte-en-moins`.
+- **r-5** — 25 `03` Q3, option d `61,68 سم` (les 4 côtés intérieurs ajoutés) n'a pas d'étiquette. Lui poser
+  `math.mes.perimetre-segment-interieur-compte`.
+- **r-6** (accepté, pas d'action) — 21 `02` Q7 (379,94 → ر = 11) et le distracteur 379,94 de `quiz` Q7 (demi-cercle
+  d = 22) portent sur le même cercle. Les calculs sont différents, ce n'est pas un doublon.
+
+### Verdict de la re-vérification
+
+**Prêt après R-1.** Il reste une seule question à remplacer (texte ci-dessus), plus 4 retouches mineures facultatives.
+Aucune clé n'est fausse, aucune régression de gate ou de rendu, et aucune paire interne ne dépasse 0,6. Si l'on veut se
+contenter de « prêt » tel quel, R-1 reste un défaut majeur : la question redonne l'exemple résolu du cours.
