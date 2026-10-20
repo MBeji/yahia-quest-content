@@ -43,3 +43,15 @@ Jugements à contrôler par l'auditeur : `pourcentage-base-erronee` (2025 Q4 : p
 
 ## Gates (depuis `/home/user/eng-deliver`, sur mes 6 fichiers + 2 chapter.json)
 `content:check` ✓ · `content:qa --subject math-6eme` 0 erreur (5 avertissements restants : 14, 16 ; aucun de mes fichiers) · `content:figures:check` ✓ · `content:tranche --chapters 19,20 --fresh --strict-longest` : clé strictement la plus longue 0/75, positions de clé a 19 · b 21 · c 17 · d 18, paires proches 0, patron de notion 0 en recul · `lot-lint.mjs` rien à signaler (6 fichiers) · `content:gisement:controle` (19/06, 19/07) : 0 plage de 8 mots, 0 exercice source à 3 données · prettier ✓.
+
+## Corrections après audit (audit-M3-M4.md, parties 19 et 20)
+Fichiers regénérés (état relu avant : rien n'était appliqué) ; seuls 19/06–07 et 20/06–09 ont changé.
+- **M-8** 19/06 : Q2 (ordre du trapèze rectangle) et Q7 (ordre du losange) supprimées → 5 questions (la hauteur 4 dm inutile de Q3 retirée). Le doublon avec 25/09 Q9 disparaît.
+- **M-11** 19/07 : Q6 (angle à l'échelle) supprimée → 6 questions ; Q5 : l'option « 0,4 سم و 0,3 سم » est maintenant expliquée.
+- **M-10** 20/06 : Q7 supprimée → 7 questions ; Q8 : options b et d et explication aux textes de l'audit (b étiquetée `condition-suffisante-supposee`), plus aucune mention d'un rétrécissement « en haut » ; figure : `و` et ① déplacés.
+- **M-9** 20/08 Q6 : option « 1 070 كغ » et explication « يجمع 1 000 و 70 بدل أن يضربهما ».
+- **M-14** 20/09 Q6 : étiquette `math.prop.pourcentage-base-erronee` ; explication « هي مصاريف التهيئة والتجهيز » (mineur).
+- **M-12/M-13 figures** : plus d'isolat LTR sur les cotes nombre + unité (la fonction de dessin ne l'applique qu'aux nombres nus et aux lettres seules), halo blanc sur tous les textes ; 20/09 : « 6 سم » à x = 82 ; 20/07 : « 250 م » supprimé, `ب` et `ن` déplacés, « 350 م » replacé à gauche de [ب ج] hors des repères d'égalité. Les 11 figures ont été rendues dans Chromium (`/opt/pw-browsers`, page `dir=rtl`, 360 px) et relues : cotes dans le bon sens, aucune étiquette coupée ni barrée.
+- Mineurs laissés tels quels : 19/06 Q1 (redit une phrase du cours, assumé : la mission garde 5 questions), 19/07 Q4 (d1 réel, la rampe oblige à la garder en d3), 20/07 Q10.
+- Totaux : 19/06 5 q., 19/07 6 q., 20/06 7 q., 20/07 10 q., 20/08 9 q., 20/09 9 q. (aucune mission sous 5).
+- Gates : `content:check` ✓ ; `content:qa` 0 erreur (5 avertissements hors lot) ; `content:figures:check` ✓ ; `content:tranche` 19+20 : paires proches 0 (la seule clé « la plus longue » du bilan est `20/05-entrainement#1`, B5, hors lot) ; `lot-lint` rien sur mes 6 fichiers ; `content:gisement:controle` 19/06–07 : 0 plage ≥ 8 mots ; prettier ✓.
