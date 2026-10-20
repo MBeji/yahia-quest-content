@@ -30,8 +30,16 @@
       "prompt": "ما ناتجُ 348 + 256؟",
       "options": [
         { "id": "a", "text": "604" },
-        { "id": "b", "text": "594", "misconceptionTag": "math.num.retenue-oubliee" },
-        { "id": "c", "text": "504", "misconceptionTag": "math.num.retenue-oubliee" },
+        {
+          "id": "b",
+          "text": "594",
+          "misconceptionTag": "math.num.retenue-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "504",
+          "misconceptionTag": "math.num.retenue-oubliee"
+        },
         { "id": "d", "text": "614" }
       ],
       "correctOption": "a",
@@ -55,7 +63,11 @@
     {
       "prompt": "ما قيمةُ 5 + 6 × 2؟",
       "options": [
-        { "id": "a", "text": "22", "misconceptionTag": "math.num.priorite-operations-ignoree" },
+        {
+          "id": "a",
+          "text": "22",
+          "misconceptionTag": "math.num.priorite-operations-ignoree"
+        },
         { "id": "b", "text": "17" },
         { "id": "c", "text": "16" },
         { "id": "d", "text": "13" }
@@ -68,13 +80,13 @@
     {
       "prompt": "أيُّ مساواةٍ تُترجم خاصّيّةَ التوزيعيّة على الجمع؟",
       "options": [
-        { "id": "a", "text": "8 × (10 + 3) = 8 × 10 + 3" },
-        { "id": "b", "text": "8 × (10 + 3) = 8 × 10 + 8 × 3" },
-        { "id": "c", "text": "8 × (10 + 3) = 8 + 10 + 3" },
-        { "id": "d", "text": "8 × (10 + 3) = 8 × 13 + 8" }
+        { "id": "a", "text": "6 × (10 + 4) = 6 × 10 + 4" },
+        { "id": "b", "text": "6 × (10 + 4) = 6 × 10 + 6 × 4" },
+        { "id": "c", "text": "6 × (10 + 4) = 6 + 10 + 4" },
+        { "id": "d", "text": "6 × (10 + 4) = 6 × 10 + 10 × 4" }
       ],
       "correctOption": "b",
-      "explanation": "التوزيعيّة: a × (b + c) = a × b + a × c، إذن 8 × (10 + 3) = 8 × 10 + 8 × 3 = 80 + 24 = 104.",
+      "explanation": "التوزيعيّة: a × (b + c) = a × b + a × c، إذن 6 × (10 + 4) = 6 × 10 + 6 × 4 = 60 + 24 = 84: نضرب 6 في الحدّين معًا.",
       "difficulty": 2,
       "competencies": ["math.num.operations-entiers"]
     }

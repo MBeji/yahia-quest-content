@@ -23,7 +23,11 @@
       "prompt": "ما ناتجُ 7 200 + 899؟",
       "options": [
         { "id": "a", "text": "8 199" },
-        { "id": "b", "text": "8 089", "misconceptionTag": "math.num.retenue-oubliee" },
+        {
+          "id": "b",
+          "text": "7 099",
+          "misconceptionTag": "math.num.retenue-oubliee"
+        },
         { "id": "c", "text": "8 099" },
         { "id": "d", "text": "7 999" }
       ],
@@ -33,15 +37,19 @@
       "competencies": ["math.num.operations-entiers"]
     },
     {
-      "prompt": "ما ناتجُ 50 × 60؟",
+      "prompt": "ما ناتجُ 30 × 80؟",
       "options": [
-        { "id": "a", "text": "300" },
-        { "id": "b", "text": "3 000" },
-        { "id": "c", "text": "110", "misconceptionTag": "math.num.operation-inverse-appliquee" },
-        { "id": "d", "text": "30 000" }
+        { "id": "a", "text": "24 000" },
+        { "id": "b", "text": "2 400" },
+        { "id": "c", "text": "240" },
+        {
+          "id": "d",
+          "text": "110",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
       ],
       "correctOption": "b",
-      "explanation": "50 × 60 = (5 × 6) × 100 = 30 × 100 = 3 000.",
+      "explanation": "30 × 80 = (3 × 8) × 100 = 24 × 100 = 2 400: نضرب الأرقام ثمّ نضيف الصفرين معًا.",
       "difficulty": 2,
       "competencies": ["math.num.operations-entiers"]
     },
@@ -59,15 +67,19 @@
       "competencies": ["math.num.operations-entiers"]
     },
     {
-      "prompt": "ما قيمةُ 100 − 4 × 9 + 6؟",
+      "prompt": "ما قيمةُ 90 − 7 × 8 + 5؟",
       "options": [
-        { "id": "a", "text": "70" },
-        { "id": "b", "text": "58" },
-        { "id": "c", "text": "870", "misconceptionTag": "math.num.priorite-operations-ignoree" },
-        { "id": "d", "text": "64" }
+        { "id": "a", "text": "29" },
+        { "id": "b", "text": "34" },
+        { "id": "c", "text": "39" },
+        {
+          "id": "d",
+          "text": "669",
+          "misconceptionTag": "math.num.priorite-operations-ignoree"
+        }
       ],
-      "correctOption": "a",
-      "explanation": "الضربُ أوّلًا: 4 × 9 = 36، ثمّ من اليسار إلى اليمين: 100 − 36 = 64 ثمّ 64 + 6 = 70.",
+      "correctOption": "c",
+      "explanation": "الضربُ أوّلًا: 7 × 8 = 56، ثمّ من اليسار إلى اليمين: 90 − 56 = 34 ثمّ 34 + 5 = 39. من حسب من اليسار دون أولويّة وجد (90 − 7) × 8 + 5 = 669.",
       "difficulty": 3,
       "competencies": ["math.num.operations-entiers"]
     },
@@ -76,11 +88,40 @@
       "options": [
         { "id": "a", "text": "24" },
         { "id": "b", "text": "34" },
-        { "id": "c", "text": "216", "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue" },
+        {
+          "id": "c",
+          "text": "216",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
         { "id": "d", "text": "44" }
       ],
       "correctOption": "b",
       "explanation": "ثمنُ 12 كتابًا = 12 × 18 = 216 دينارًا، والباقي = 250 − 216 = 34 دينارًا.",
+      "difficulty": 3,
+      "competencies": ["math.num.operations-entiers"]
+    },
+    {
+      "prompt": "كلّ كتابةٍ ممّا يلي صحيحةٌ حسابيًّا. أيّها هي القسمةُ الإقليديّة للعدد 1 000 على 24؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 000 = 24 × 38 + 88",
+          "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur"
+        },
+        {
+          "id": "b",
+          "text": "1 000 = 24 × 39 + 64",
+          "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur"
+        },
+        {
+          "id": "c",
+          "text": "1 000 = 24 × 40 + 40",
+          "misconceptionTag": "math.num.reste-superieur-ou-egal-au-diviseur"
+        },
+        { "id": "d", "text": "1 000 = 24 × 41 + 16" }
+      ],
+      "correctOption": "d",
+      "explanation": "الكتابات الأربع صحيحة حسابيًّا، فمثلًا 24 × 41 = 984 ثمّ 984 + 16 = 1 000. لكنّ القسمة الإقليديّة تشترط أن يكون الباقي أصغر من القاسم 24. حين يكون الباقي 88 أو 64 أو 40 فهو أكبر من القاسم 24، فالخارج لم يكتمل: بقي في الباقي مضاعفات أخرى للعدد 24. أمّا الباقي 16 فأصغر من 24، فالخارج 41 والباقي 16 ✓.",
       "difficulty": 3,
       "competencies": ["math.num.operations-entiers"]
     }

@@ -5,13 +5,26 @@
   "xpReward": 120,
   "rewardCoins": 30,
   "displayOrder": 5,
+  "manuel": {
+    "code": "502603",
+    "pages": "169, 173-174",
+    "items": ["T1 الوضعية 1 (العرض الثاني)"]
+  },
   "questions": [
     {
       "prompt": "ما ناتجُ 2,2 × 3؟",
       "options": [
         { "id": "a", "text": "6,6" },
-        { "id": "b", "text": "66", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
-        { "id": "c", "text": "5,2", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        {
+          "id": "b",
+          "text": "66",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
+        {
+          "id": "c",
+          "text": "5,2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
         {
           "id": "d",
           "text": "6,06",
@@ -24,37 +37,45 @@
       "competencies": ["math.num.mult-div-decimaux"]
     },
     {
-      "prompt": "ما ناتجُ 0,7 × 1000؟",
+      "prompt": "ما ناتجُ 36,8 ÷ 0,01؟",
       "options": [
         {
           "id": "a",
-          "text": "70",
-          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+          "text": "0,368",
+          "misconceptionTag": "math.num.puissance-de-dix-sens-inverse"
         },
         {
           "id": "b",
-          "text": "7 000",
+          "text": "368",
           "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
         },
-        { "id": "c", "text": "700" },
-        { "id": "d", "text": "0,007", "misconceptionTag": "math.num.puissance-de-dix-sens-inverse" }
+        { "id": "c", "text": "3 680" },
+        {
+          "id": "d",
+          "text": "36 800",
+          "misconceptionTag": "math.num.puissance-de-dix-rangs-mal-comptes"
+        }
       ],
       "correctOption": "c",
-      "explanation": "الضربُ في 1000 يُزحزح الفاصلةَ ثلاثةَ أرقامٍ نحو اليمين: 0,7 × 1000 = 700.",
+      "explanation": "في 0,01 جزءٌ من مئة واحد، فالقسمة على 0,01 هي الضرب في 100: نحرّك الفاصلة رتبتين نحو اليمين ونُكمل بصفر: 36,8 ÷ 0,01 = 3 680. تحقّق: 0,01 × 3 680 = 36,8 ✓.",
       "difficulty": 2,
       "competencies": ["math.num.mult-div-decimaux"]
     },
     {
       "prompt": "ما ناتجُ 14,4 ÷ 6؟",
       "options": [
-        { "id": "a", "text": "24", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
+        {
+          "id": "a",
+          "text": "24",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
         { "id": "b", "text": "2,4" },
         {
           "id": "c",
           "text": "2,04",
           "misconceptionTag": "math.num.zero-intercale-dans-le-resultat"
         },
-        { "id": "d", "text": "8,4", "misconceptionTag": "math.num.operation-inverse-appliquee" }
+        { "id": "d", "text": "8,4" }
       ],
       "correctOption": "b",
       "explanation": "نقسم على عددٍ طبيعيّ: 14,4 ÷ 6 = 2,4 (نتحقّق: 6 × 2,4 = 14,4).",
@@ -64,9 +85,21 @@
     {
       "prompt": "ما ناتجُ 0,9 × 0,9؟",
       "options": [
-        { "id": "a", "text": "8,1", "misconceptionTag": "math.num.produit-decimales-mal-comptees" },
-        { "id": "b", "text": "81", "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat" },
-        { "id": "c", "text": "1,8", "misconceptionTag": "math.num.operation-inverse-appliquee" },
+        {
+          "id": "a",
+          "text": "0,081",
+          "misconceptionTag": "math.num.produit-decimales-mal-comptees"
+        },
+        {
+          "id": "b",
+          "text": "81",
+          "misconceptionTag": "math.num.virgule-perdue-dans-le-resultat"
+        },
+        {
+          "id": "c",
+          "text": "1,8",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
         { "id": "d", "text": "0,81" }
       ],
       "correctOption": "d",
@@ -80,7 +113,7 @@
         { "id": "a", "text": "0,375" },
         { "id": "b", "text": "0,38" },
         { "id": "c", "text": "2,67" },
-        { "id": "d", "text": "0,35" }
+        { "id": "d", "text": "0,125" }
       ],
       "correctOption": "a",
       "explanation": "نواصل القسمة بإضافة الأصفار: 3 ÷ 8 = 0,375 (نتحقّق: 8 × 0,375 = 3).",
@@ -97,6 +130,14 @@
       ],
       "correctOption": "c",
       "explanation": "نحسب الثمنَ بالضرب: 2,5 × 28 = 70 دينارًا.",
+      "difficulty": 3,
+      "competencies": ["math.num.mult-div-decimaux"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "يريد أبٌ شراء حاسوبٍ ثمنه 981 دينارًا. العرض: يدفع 342,750 د بالحاضر ويسدّد الباقي على 6 أقساطٍ متساوية، مع زيادة 5,750 د على كلّ قسط. كم تبلغ كلفة الحاسوب في المجموع بهذا العرض؟ اكتب العدد بالدينار.",
+      "answerKey": { "value": 1015.5, "unit": "دينار" },
+      "explanation": "الباقي بعد الدفع بالحاضر 981 − 342,750 = 638,25 د، فالقسط دون زيادة 638,25 ÷ 6 = 106,375 د، ومع الزيادة 106,375 + 5,750 = 112,125 د. الأقساط الستّة 6 × 112,125 = 672,75 د، فالكلفة الجملية 342,750 + 672,75 = 1015,5 د. طريقة أخرى: الزيادات وحدها 6 × 5,750 = 34,5 د، فالكلفة 981 + 34,5 = 1015,5 د ✓.",
       "difficulty": 3,
       "competencies": ["math.num.mult-div-decimaux"]
     }

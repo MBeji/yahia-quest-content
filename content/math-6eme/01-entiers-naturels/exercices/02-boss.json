@@ -7,40 +7,48 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "في العدد 7 254 130، ما رتبة الرقم 5؟",
+      "prompt": "في العدد 7 254 130، ما رتبة الرقم 2؟",
       "options": [
-        { "id": "a", "text": "الآلاف", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
-        { "id": "b", "text": "عشرات الآلاف" },
-        { "id": "c", "text": "مئات الآلاف", "misconceptionTag": "math.num.rang-du-chiffre-decale" },
-        { "id": "d", "text": "الملايين", "misconceptionTag": "math.num.rang-du-chiffre-decale" }
+        { "id": "a", "text": "الآلاف" },
+        {
+          "id": "b",
+          "text": "عشرات الآلاف",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        },
+        { "id": "c", "text": "مئات الآلاف" },
+        {
+          "id": "d",
+          "text": "الملايين",
+          "misconceptionTag": "math.num.rang-du-chiffre-decale"
+        }
       ],
-      "correctOption": "b",
-      "explanation": "من اليمين في 7 254 130: 0 آحاد، 3 عشرات، 1 مئات، 4 آلاف، 5 عشرات الآلاف، 2 مئات الآلاف، 7 ملايين. إذن الرقم 5 في رتبة عشرات الآلاف.",
+      "correctOption": "c",
+      "explanation": "من اليمين في 7 254 130: 0 آحاد، 3 عشرات، 1 مئات، 4 آلاف، 5 عشرات الآلاف، 2 مئات الآلاف، 7 ملايين. إذن الرقم 2 في رتبة مئات الآلاف.",
       "difficulty": 1,
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },
     {
-      "prompt": "كيف يُقرأ العدد 1 005 200؟",
+      "prompt": "ما العدد الذي يُقرأ «مليون وخمسة آلاف ومئتان»؟",
       "options": [
         {
           "id": "a",
-          "text": "مليون وخمسمئة ألفٍ ومئتان",
+          "text": "105 200",
+          "misconceptionTag": "math.num.classe-mal-lue"
+        },
+        { "id": "b", "text": "1 005 200" },
+        {
+          "id": "c",
+          "text": "1 050 200",
           "misconceptionTag": "math.num.zero-intercalaire-oublie"
         },
         {
-          "id": "b",
-          "text": "مئة ألفٍ وخمسة آلاف ومئتان",
-          "misconceptionTag": "math.num.classe-mal-lue"
-        },
-        { "id": "c", "text": "مليون وخمسة آلاف ومئتان" },
-        {
           "id": "d",
-          "text": "مليون وخمسون ألفًا ومئتان",
+          "text": "1 500 200",
           "misconceptionTag": "math.num.zero-intercalaire-oublie"
         }
       ],
-      "correctOption": "c",
-      "explanation": "نُجمّع الأرقام ثلاثيّاتٍ من اليمين: 1 (مليون) | 005 (خمسة آلاف) | 200 (مئتان). فيُقرأ «مليون وخمسة آلاف ومئتان».",
+      "correctOption": "b",
+      "explanation": "نكتب كلّ صنف بثلاثة أرقام انطلاقًا من اليمين: «مئتان» تعطي 200 في الوحدات البسيطة، و«خمسة آلاف» تعطي 005 في الآلاف، و«مليون» تعطي 1 في الملايين. فالعدد 1 005 200، والصفران في الآلاف يحفظان رتبتي عشرات الآلاف ومئات الآلاف الخاليتين.",
       "difficulty": 2,
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },
@@ -72,10 +80,22 @@
     {
       "prompt": "ما القيمة المقرّبة للعدد 28 617 إلى أقرب ألف؟",
       "options": [
-        { "id": "a", "text": "28 000", "misconceptionTag": "math.num.arrondi-par-troncature" },
-        { "id": "b", "text": "30 000", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
+        {
+          "id": "a",
+          "text": "28 000",
+          "misconceptionTag": "math.num.arrondi-par-troncature"
+        },
+        {
+          "id": "b",
+          "text": "30 000",
+          "misconceptionTag": "math.num.arrondi-au-mauvais-rang"
+        },
         { "id": "c", "text": "29 000" },
-        { "id": "d", "text": "28 600", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
+        {
+          "id": "d",
+          "text": "28 600",
+          "misconceptionTag": "math.num.arrondi-au-mauvais-rang"
+        }
       ],
       "correctOption": "c",
       "explanation": "للتدوير إلى أقرب ألف ننظر إلى رقم المئات: 6 (أكبر من أو يساوي 5)، فنُدوّر الآلاف إلى الأعلى: 28 617 يصبح 29 000.",
@@ -83,15 +103,15 @@
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },
     {
-      "prompt": "حضر مباراةً 38 920 متفرّجًا. ما هذا العدد مقرّبًا إلى أقرب ألف؟",
+      "prompt": "نكوّن أعدادًا من أربعة أرقام بالأرقام 5 و 0 و 8 و 3 (كلّ رقمٍ مرّةً واحدة). ما أقربُ هذه الأعداد إلى 5 000؟",
       "options": [
-        { "id": "a", "text": "39 000" },
-        { "id": "b", "text": "38 000", "misconceptionTag": "math.num.arrondi-par-troncature" },
-        { "id": "c", "text": "38 900", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" },
-        { "id": "d", "text": "40 000", "misconceptionTag": "math.num.arrondi-au-mauvais-rang" }
+        { "id": "a", "text": "5 038" },
+        { "id": "b", "text": "5 083" },
+        { "id": "c", "text": "5 308" },
+        { "id": "d", "text": "3 850" }
       ],
       "correctOption": "a",
-      "explanation": "رقم المئات هو 9 (أكبر من أو يساوي 5) فنُدوّر الآلاف إلى الأعلى: 38 920 يصبح 39 000. الخطأ الشائع تدويرها نزولًا إلى 38 000.",
+      "explanation": "لنقترب من 5 000 نبدأ بالرقم 5، ثمّ نضع الأرقام الباقية تصاعديًّا لنبقى أقرب ما يمكن: 5 038، وهو يبعد عن 5 000 بـ 38 فقط. أمّا 5 083 فيبعد بـ 83، و 5 308 بـ 308. وأكبر عددٍ يبدأ بـ 3 هو 3 850، ويبعد عن 5 000 بـ 1 150.",
       "difficulty": 3,
       "competencies": ["math.num.entiers-lecture-ecriture"]
     },
