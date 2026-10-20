@@ -260,8 +260,8 @@
 يعبرُ إلى الوسط الثّاني هو **الشّعاعُ المنكسر**.
 :::
 
-::: figure شعاعٌ واردٌ مائل «و» في الهواء يصلُ إلى سطح الماء فيغيّرُ اتّجاهه: «ك» هو الشّعاعُ المنكسر، والخطّ المتقطّع هو الطّريقُ الّذي كان سيسلكُه لو لم ينكسر
-<svg viewBox="0 0 340 220"><rect x="20" y="110" width="300" height="100" fill="#bfdbfe" stroke="none"/><line x1="20" y1="110" x2="320" y2="110" stroke="#0f172a" stroke-width="2.5"/><circle cx="60" cy="20" r="11" fill="#facc15" stroke="#0f172a" stroke-width="2"/><line x1="60" y1="20" x2="170" y2="110" stroke="#d97706" stroke-width="3" stroke-linecap="round"/><polyline points="108.9,66.2 118.1,67.5 114.9,58.8" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><line x1="170" y1="110" x2="267.8" y2="190" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/><line x1="170" y1="110" x2="241.6" y2="210" stroke="#0f6e56" stroke-width="3" stroke-linecap="round"/><polyline points="203.1,164.5 211.7,168.3 210.9,159" fill="none" stroke="#0f6e56" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><text x="96" y="74" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">و</text><text x="204" y="198" text-anchor="middle" font-size="16" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ك</text></svg>
+::: figure شعاعٌ واردٌ مائل «و» في الهواء يصلُ إلى سطح الماء فيغيّرُ اتّجاهه: «ك» هو الشّعاعُ المنكسر، والخطّ المتقطّع هو الطّريقُ الّذي كان سيسلكُه لو لم ينكسر، والخطّ العموديّ المنقّط «ن» هو النّاظم
+<svg viewBox="0 0 340 220"><rect x="20" y="110" width="300" height="100" fill="#bfdbfe" stroke="none"/><line x1="20" y1="110" x2="320" y2="110" stroke="#0f172a" stroke-width="2.5"/><circle cx="60" cy="20" r="11" fill="#facc15" stroke="#0f172a" stroke-width="2"/><line x1="60" y1="20" x2="170" y2="110" stroke="#d97706" stroke-width="3" stroke-linecap="round"/><polyline points="108.9,66.2 118.1,67.5 114.9,58.8" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><line x1="170" y1="36" x2="170" y2="200" stroke="#64748b" stroke-width="1.5" stroke-dasharray="2 4"/><line x1="170" y1="110" x2="267.8" y2="190" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/><line x1="170" y1="110" x2="241.6" y2="210" stroke="#0f6e56" stroke-width="3" stroke-linecap="round"/><polyline points="203.1,164.5 211.7,168.3 210.9,159" fill="none" stroke="#0f6e56" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><text x="96" y="74" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">و</text><text x="204" y="198" text-anchor="middle" font-size="16" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ك</text><text x="181" y="48" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">ن</text></svg>
 :::
 
 في الشّكل، الشّعاعُ «و» يسيرُ مستقيمًا في الهواء، ثمّ يسيرُ مستقيمًا في الماء، لكن في اتّجاهٍ آخر:
@@ -288,8 +288,18 @@
 
 ::: propriete
 يحدثُ الانكسارُ كلّما مرّ الضّوءُ **مائلًا** من وسطٍ شفّاف إلى وسطٍ شفّافٍ آخر (من الهواء إلى الماء،
-أو من الماء إلى الهواء). **حالةٌ حدّيّة**: إذا وصل الشّعاعُ **عموديًّا** على سطح الماء، عبره دون أن
-يغيّرَ اتّجاهه.
+أو من الماء إلى الهواء)، والشّعاعُ المنكسرُ يواصلُ سيرَه في الجهة المقابلة للشّعاع الوارد من **النّاظم**
+(الخطّ العموديّ على السّطح الفاصل عند نقطة الورود): عند **دخوله** الماءَ من الهواء **يقتربُ** من
+النّاظم، وعند **خروجه** من الماء إلى الهواء **يبتعدُ** عنه. **حالةٌ حدّيّة**: إذا وصل الشّعاعُ
+**عموديًّا** على سطح الماء، عبره دون أن يغيّرَ اتّجاهه.
+:::
+
+::: verifie
+نوجّهُ ضوءَ المكشاف مائلًا نحو ماء الحويض. في أيّ جهةٍ من النّاظم يسيرُ الشّعاع داخل الماء، وهل يقتربُ منه أم يبتعدُ عنه؟
+
+---
+
+يسيرُ في الجهة المقابلة للشّعاع الوارد من النّاظم، ويقتربُ منه، لأنّه يدخلُ من الهواء إلى الماء.
 :::
 
 ::: verifie
