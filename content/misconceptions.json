@@ -794,9 +794,9 @@
   "math.prob.chance-comparee-sur-effectif-brut": {
     "subject": "math",
     "labels": {
-      "fr": "Tu compares les nombres bruts au lieu des proportions : une chance se mesure toujours par rapport au total",
-      "en": "You compare raw counts instead of proportions: a chance is always measured against the total",
-      "ar": "تقارن الأعداد الخام بدل النسب: الحظّ يُقاس دائمًا بالنسبة إلى المجموع"
+      "fr": "Tu compares les nombres bruts au lieu des proportions : une chance ou un taux de réussite se mesure toujours par rapport au total (40 sur 50 vaut mieux que 63 sur 90)",
+      "en": "You compare raw counts instead of proportions: a chance or a success rate is always measured against the total (40 out of 50 beats 63 out of 90)",
+      "ar": "تقارن الأعداد الخام بدل النسب: الحظّ أو نسبة النجاح يُقاس دائمًا بالنسبة إلى المجموع (40 من 50 أفضل من 63 من 90)"
     },
     "competency": "math.prob.frequence-et-chance"
   },
@@ -8696,9 +8696,9 @@
   "math.prop.pourcentage-base-erronee": {
     "subject": "math",
     "labels": {
-      "fr": "Tu calcules le pourcentage sur la mauvaise base : une baisse ou une hausse se rapporte au prix de DÉPART, pas au prix final",
-      "en": "You compute the percentage on the wrong base: a decrease or an increase refers to the STARTING price, not the final one",
-      "ar": "تحسب النسبة المائوية على أساس خاطئ: التخفيض أو الزيادة يُنسَبان إلى الثمن الأصلي لا إلى الثمن النهائي"
+      "fr": "Tu calcules le pourcentage (ou la fraction) sur la mauvaise base : relis de quelle quantité il est la part — une baisse ou une hausse se rapporte au prix de DÉPART, pas au prix final",
+      "en": "You compute the percentage (or the fraction) on the wrong base: read again which quantity it is a part of — a decrease or an increase refers to the STARTING price, not the final one",
+      "ar": "تحسب النسبة المائويّة (أو الكسر) على أساس خاطئ: أعد قراءة الكمّيّة التي هي جزء منها — التخفيض أو الزيادة يُنسَبان إلى الثمن الأصلي لا إلى الثمن النهائي"
     },
     "competency": "math.prop.pourcentages"
   },
@@ -9363,6 +9363,274 @@
       "fr": "Tu gardes le possessif de la personne de départ quand le possesseur change (nous → vous : notre aventure → votre aventure ; je → nous : mes amis → nos amis) : le possessif suit la personne qui possède.",
       "en": "You keep the possessive of the starting person when the owner changes (nous → vous: notre aventure → votre aventure; je → nous: mes amis → nos amis): the possessive follows the person who owns.",
       "ar": "تحتفظ بأداة الملكيّة الخاصّة بالشّخص الأوّل عندما يتغيّر المالك (nous → vous: notre aventure → votre aventure؛ je → nous: mes amis → nos amis): أداة الملكيّة تتبع الشّخص المالك."
+    }
+  },
+  "math.num.division-virgules-deplacees-inegalement": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu déplaces la virgule du diviseur sans déplacer celle du dividende d'autant de rangs : pour garder le quotient, on multiplie les DEUX nombres par le même 10, 100 ou 1000 (7,5 ÷ 0,5 = 75 ÷ 5)",
+      "en": "You move the divisor's decimal point without moving the dividend's by the same number of places: to keep the quotient, multiply BOTH numbers by the same 10, 100 or 1000 (7.5 ÷ 0.5 = 75 ÷ 5)",
+      "ar": "تُزيح فاصلة القاسم دون أن تُزيح فاصلة المقسوم بعدد المراتب نفسه: ليبقى الخارج نضرب العددين كليهما في 10 أو 100 أو 1000 نفسه (7,5 ÷ 0,5 = 75 ÷ 5)"
+    },
+    "competency": "math.num.mult-div-decimaux"
+  },
+  "math.num.reste-ignore-dans-le-probleme": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu gardes le quotient alors qu'il reste quelque chose : s'il reste des passagers ou des mètres à couvrir, il faut un bus ou un rouleau de plus",
+      "en": "You keep the quotient although something is left over: if passengers or metres are still left, you need one more bus or one more roll",
+      "ar": "تكتفي بالخارج مع أنّ هناك باقيًا: إن بقي ركّاب أو أمتار دون تغطية فنحتاج حافلة أو لفّة إضافيّة"
+    },
+    "competency": "math.num.operations-entiers"
+  },
+  "math.num.contrainte-d-intervalle-ignoree": {
+    "subject": "math",
+    "labels": {
+      "fr": "Ta réponse vérifie les conditions de divisibilité mais sort de l'intervalle imposé par l'énoncé : vérifie toujours qu'elle est entre les deux bornes",
+      "en": "Your answer meets the divisibility conditions but falls outside the range the problem sets: always check it lies between the two bounds",
+      "ar": "جوابك يحقّق شروط القسمة لكنّه خارج المجال الذي يفرضه نصّ التمرين: تحقّق دائمًا من أنّه محصور بين الحدّين"
+    },
+    "competency": "math.num.multiples-diviseurs"
+  },
+  "math.frac.rapport-denominateur-mal-choisi": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends pour dénominateur une autre quantité que celle à laquelle on compare : dans « A par rapport à B », le dénominateur est B — le total seulement si c'est au total qu'on compare",
+      "en": "You take as denominator a different quantity from the one you compare with: in \"A compared with B\" the denominator is B — the total only when you compare with the total",
+      "ar": "تأخذ مقامًا غير العدد الذي نقارن به: في «أ بالنسبة إلى ب» المقام هو ب، ولا يكون الكلّ إلّا إذا كانت المقارنة بالكلّ"
+    },
+    "competency": "math.frac.sens"
+  },
+  "math.frac.complement-lu-a-l-envers": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu lis le complément à l'envers : la fraction à laquelle il MANQUE la plus grande part pour atteindre 1 est la plus PETITE",
+      "en": "You read the gap to 1 the wrong way round: the fraction MISSING the larger part to reach 1 is the SMALLER one",
+      "ar": "تقرأ الجزء الناقص بالعكس: الكسر الذي ينقصه الجزء الأكبر ليبلغ 1 هو الكسر الأصغر"
+    },
+    "competency": "math.frac.comparaison"
+  },
+  "math.frac.numerateur-compare-a-l-entier": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu compares le numérateur seul à l'entier : écris d'abord l'entier avec le même dénominateur (4 = 20/5, donc 16/5 < 4)",
+      "en": "You compare the numerator alone with the whole number: first write the whole number over the same denominator (4 = 20/5, so 16/5 < 4)",
+      "ar": "تقارن البسط وحده بالعدد الصحيح: اكتب العدد الصحيح أوّلًا بالمقام نفسه (4 = 20/5، إذن 16/5 < 4)"
+    },
+    "competency": "math.frac.comparaison"
+  },
+  "math.frac.produit-fractions-denominateur-conserve": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu gardes un des dénominateurs dans le produit de deux fractions : on multiplie les numérateurs ET les dénominateurs (2/3 × 3/4 = 6/12, pas 6/3)",
+      "en": "You keep one of the denominators when multiplying two fractions: multiply the numerators AND the denominators (2/3 × 3/4 = 6/12, not 6/3)",
+      "ar": "تُبقي أحد المقامين في جداء كسرين: نضرب البسطين ونضرب المقامين (2/3 × 3/4 = 6/12، لا 6/3)"
+    },
+    "competency": "math.frac.mult-entier"
+  },
+  "math.mes.unites-non-converties": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu calcules ou tu réponds sans convertir les unités : mets d'abord les mesures dans la même unité (6 dal = 60 L, 15 cm = 0,15 m) et convertis le résultat dans l'unité demandée — sur un plan, l'échelle donne des cm, pas des m",
+      "en": "You compute or answer without converting units: first put the measures in the same unit (6 dal = 60 L, 15 cm = 0.15 m) and convert the result into the unit asked — on a plan, the scale gives cm, not m",
+      "ar": "تحسب أو تجيب دون تحويل الوحدات: ضع القيس أوّلًا في الوحدة نفسها (6 دكل = 60 ل، 15 سم = 0,15 م) وحوّل النتيجة إلى الوحدة المطلوبة — على التصميم يعطي السلّم سنتيمترات لا أمتارًا"
+    }
+  },
+  "math.prop.vitesse-moyenne-des-vitesses": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu fais la moyenne des deux vitesses : la vitesse moyenne d'un trajet est la distance totale divisée par la durée totale",
+      "en": "You average the two speeds: the average speed of a journey is the total distance divided by the total time",
+      "ar": "تحسب منتصف السرعتين: معدّل سرعة الرحلة هو المسافة الكلّيّة مقسومةً على الزمن الكلّيّ"
+    },
+    "competency": "math.prop.vitesse"
+  },
+  "math.prop.vitesse-unite-de-temps-non-convertie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu multiplies ou divises par un nombre de minutes comme si c'étaient des heures : convertis d'abord la durée en heures (20 min = 1/3 h)",
+      "en": "You multiply or divide by a number of minutes as if they were hours: first convert the time into hours (20 min = 1/3 h)",
+      "ar": "تضرب في عدد الدقائق أو تقسم عليه كأنّها ساعات: حوّل المدّة أوّلًا إلى ساعات (20 د = 1/3 سا)"
+    },
+    "competency": "math.prop.vitesse"
+  },
+  "math.stat.graduation-comptee-comme-unite": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes les petites divisions comme des unités : lis d'abord combien vaut une division de l'axe",
+      "en": "You count the small divisions as units: first read how much one division of the axis is worth",
+      "ar": "تعدّ الأقسام الصغيرة كأنّ كلّ قسم وحدة: اقرأ أوّلًا كم يساوي القسم على المحور"
+    },
+    "competency": "math.stat.effectifs-frequences"
+  },
+  "math.geo.mediatrice-un-seul-critere": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu te contentes d'une condition : la médiatrice passe par le milieu du segment ET lui est perpendiculaire, les deux à la fois",
+      "en": "You settle for one condition: the perpendicular bisector goes through the midpoint of the segment AND is perpendicular to it, both at once",
+      "ar": "تكتفي بشرط واحد: الموسّط العموديّ يمرّ بمنتصف القطعة ويعامدها، الشرطان معًا"
+    },
+    "competency": "math.geo.droites-perp-para"
+  },
+  "math.geo.arcs-ouvertures-permutees": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu échanges les ouvertures du compas : l'arc centré en un sommet a pour rayon la longueur du côté qui part de CE sommet",
+      "en": "You swap the compass openings: the arc centred on a vertex has as radius the length of the side starting from THAT vertex",
+      "ar": "تُبدّل فتحتَي البركار: القوس الذي مركزه رأسٌ ما فتحته طولُ الضلع المنطلق من ذلك الرأس"
+    },
+    "competency": "math.geo.triangles-base"
+  },
+  "math.geo.inegalite-triangulaire-ignoree": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu crois que deux arcs se coupent toujours : il faut que la somme des deux ouvertures dépasse la distance entre les centres — un triangle n'existe que si son plus grand côté est plus petit que la somme des deux autres",
+      "en": "You think two arcs always meet: the two openings must add up to more than the distance between the centres — a triangle exists only if its longest side is shorter than the sum of the other two",
+      "ar": "تظنّ أنّ القوسين يتقاطعان دائمًا: يجب أن يفوق مجموع الفتحتين البعد بين المركزين — ولا يُبنى المثلّث إلّا إذا كان أطول أضلاعه أصغر من مجموع الضلعين الآخرين"
+    },
+    "competency": "math.geo.triangles-base"
+  },
+  "math.geo.rapporteur-mauvaise-graduation": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu lis le rapporteur sur la mauvaise graduation : on lit sur celle dont le zéro est posé sur le premier côté de l'angle",
+      "en": "You read the protractor on the wrong scale: read the one whose zero lies on the first side of the angle",
+      "ar": "تقرأ على السلّم الخطأ في المنقلة: نقرأ على السلّم الذي صفره على الضلع الأوّل للزاوية"
+    },
+    "competency": "math.geo.angles-mesure"
+  },
+  "math.geo.grade-et-degre-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds grade et degré : l'angle droit mesure 90° ou 100 grades, l'angle plat 180° ou 200 grades",
+      "en": "You mix up grads and degrees: a right angle measures 90° or 100 grads, a straight angle 180° or 200 grads",
+      "ar": "تخلط بين الغراد والدرجة: الزاوية القائمة 90° أو 100 غراد، والزاوية المستقيمة 180° أو 200 غراد"
+    },
+    "competency": "math.geo.angles-mesure"
+  },
+  "math.geo.sommet-de-l-angle-mal-identifie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu places l'angle au mauvais sommet : dans l'angle ABC, le sommet est la lettre du milieu, B",
+      "en": "You put the angle at the wrong vertex: in angle ABC, the vertex is the middle letter, B",
+      "ar": "تضع الزاوية في الرأس الخطأ: في الزاوية أ ب ج الرأس هو الحرف الأوسط ب"
+    },
+    "competency": "math.geo.angles-mesure"
+  },
+  "math.geo.place-disponible-une-seule-dimension": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu vérifies qu'une figure tient dans une autre sur une seule dimension : il faut assez de place en largeur ET en hauteur, là où la figure d'accueil est la plus étroite",
+      "en": "You check that a shape fits inside another on one dimension only: there must be enough room in width AND in height, where the host shape is narrowest",
+      "ar": "تتحقّق من أنّ شكلًا يتّسع داخل آخر ببُعد واحد فقط: يلزم متّسع في العرض وفي الارتفاع معًا، حيث يكون الشكل الحاضن أضيق"
+    },
+    "competency": "math.geo.quadrilateres"
+  },
+  "math.mes.aire-cote-oblique-pris-pour-hauteur": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends un côté oblique pour la hauteur : la hauteur est perpendiculaire à la base, un côté penché ne la remplace pas",
+      "en": "You take a slanted side as the height: the height is perpendicular to the base, a slanted side cannot replace it",
+      "ar": "تأخذ ضلعًا مائلًا مكان الارتفاع: الارتفاع عموديّ على القاعدة، والضلع المائل لا يقوم مقامه"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.mes.aire-composee-somme-au-lieu-de-difference": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ajoutes l'aire de la partie retirée au lieu de la soustraire : un bassin ou une maison posés DANS le terrain se retranchent de son aire",
+      "en": "You add the area of the removed part instead of subtracting it: a pond or a house standing INSIDE the plot is taken away from its area",
+      "ar": "تجمع مساحة الجزء المنزوع بدل طرحها: الحوض أو المنزل الواقع داخل الأرض تُطرح مساحته من مساحتها"
+    },
+    "competency": "math.mes.aires"
+  },
+  "math.geo.couronne-largeur-prise-pour-rayon": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends la largeur de la couronne pour un rayon : son aire est l'aire du grand disque moins celle du petit",
+      "en": "You take the width of the ring as a radius: its area is the area of the large disc minus that of the small one",
+      "ar": "تأخذ عرض الإكليل نصفَ قطر: مساحته مساحة القرص الكبير ناقص مساحة القرص الصغير"
+    },
+    "competency": "math.geo.cercle"
+  },
+  "math.geo.arc-circonference-entiere-prise-pour-l-arc": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu prends le cercle entier, ou une autre fraction, au lieu de l'arc demandé : un demi-cercle vaut la moitié du périmètre, un quart de cercle son quart",
+      "en": "You take the whole circle, or another fraction of it, instead of the arc asked: a semicircle is half the circumference, a quarter circle a quarter of it",
+      "ar": "تأخذ الدائرة كلّها، أو كسرًا آخر منها، بدل القوس المطلوب: نصف الدائرة نصف المحيط، وربعها ربعه"
+    },
+    "competency": "math.geo.cercle"
+  },
+  "math.mes.perimetre-segment-interieur-compte": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes dans le périmètre un segment intérieur à la figure — côté commun à deux pièces ou diamètre d'un demi-cercle accolé : le périmètre ne suit que le bord extérieur",
+      "en": "You count a segment inside the figure in the perimeter — a side shared by two pieces, or the diameter of an attached semicircle: the perimeter follows only the outer edge",
+      "ar": "تعدّ في المحيط قطعةً داخل الشكل — ضلعًا مشتركًا بين قطعتين أو قطر نصف دائرة ملتصقة: المحيط لا يتبع إلّا الحدّ الخارجيّ"
+    },
+    "competency": "math.mes.perimetres"
+  },
+  "math.mes.perimetre-partie-du-bord-oubliee": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu oublies une partie du bord : le périmètre fait tout le tour de la figure, l'arc ET les segments droits (diamètre, rayons) qui la ferment",
+      "en": "You leave out part of the edge: the perimeter goes all the way round the figure, the arc AND the straight segments (diameter, radii) that close it",
+      "ar": "تنسى جزءًا من الحدّ: المحيط يدور حول الشكل كلّه، القوسَ والقطعَ المستقيمة (القطر، نصفا القطر) التي تغلقه"
+    },
+    "competency": "math.mes.perimetres"
+  },
+  "math.mes.arc-retranche-compte-en-moins": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu retranches l'arc creusé dans la figure : un arc rentrant fait partie du bord, il s'ajoute au périmètre comme un arc sortant",
+      "en": "You subtract the arc cut into the figure: an inward arc is part of the edge, it adds to the perimeter just like an outward arc",
+      "ar": "تطرح القوس المقتطع من الشكل: القوس المقعّر جزء من الحدّ، يُضاف إلى المحيط كالقوس البارز"
+    },
+    "competency": "math.mes.perimetres"
+  },
+  "math.mes.plantations-ferme-et-ouvert-confondus": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu confonds contour fermé et ligne ouverte : sur un contour fermé il y a autant de plants que d'intervalles ; sur une ligne ouverte avec un plant à chaque bout, un de plus",
+      "en": "You mix up a closed outline and an open line: on a closed outline there are as many plants as gaps; on an open line with a plant at each end, one more",
+      "ar": "تخلط بين الحدّ المغلق والخطّ المفتوح: على الحدّ المغلق عدد الغرسات يساوي عدد المسافات، وعلى الخطّ المفتوح بغرسة عند كلّ طرف نزيد غرسة"
+    },
+    "competency": "math.mes.perimetres"
+  },
+  "math.mes.temps-d-arret-mal-compte": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu comptes mal les arrêts : chacun s'ajoute à la durée totale du trajet — sans en oublier ni en ajouter un (entre 4 voyages, 3 arrêts) — mais pas au temps de roulage",
+      "en": "You count the stops wrongly: each one adds to the total journey time — without leaving one out or adding one (between 4 trips, 3 stops) — but not to the driving time",
+      "ar": "تخطئ في عدّ التوقّفات: كلّ توقّف يُضاف إلى المدّة الكلّيّة للرحلة — دون نسيان توقّف أو زيادته (بين 4 سفرات 3 توقّفات) — ولا يُضاف إلى زمن السير"
+    },
+    "competency": "math.mes.durees"
+  },
+  "math.mes.attente-du-prochain-depart-ignoree": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu fais partir le bus à l'heure où tu arrives : il part aux horaires fixés — tu attends le prochain départ, et un bus déjà parti est manqué",
+      "en": "You make the bus leave at the time you arrive: it leaves at fixed times — you wait for the next departure, and a bus that has already left is missed",
+      "ar": "تجعل الحافلة تنطلق ساعة وصولك: هي تنطلق في مواعيد ثابتة — تنتظر الانطلاق الموالي، والحافلة التي انطلقت فاتتك"
+    },
+    "competency": "math.mes.durees"
+  },
+  "math.mes.changement-de-jour-oublie": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu passes minuit sans changer de jour : au-delà de 24 h, on retranche 24 h et l'arrivée tombe le jour suivant",
+      "en": "You go past midnight without changing the day: beyond 24 h, take away 24 h and the arrival falls on the next day",
+      "ar": "تتجاوز منتصف الليل دون تغيير اليوم: بعد 24 سا نطرح 24 سا ويكون الوصول في اليوم الموالي"
+    },
+    "competency": "math.mes.durees"
+  },
+  "math.mes.trajet-aller-retour-ignore": {
+    "subject": "math",
+    "labels": {
+      "fr": "Tu ne comptes qu'un sens du trajet : un aller-retour parcourt la distance deux fois",
+      "en": "You count only one way of the trip: a round trip covers the distance twice",
+      "ar": "تحسب اتّجاهًا واحدًا من الرحلة: الذهاب والإياب يقطعان المسافة مرّتين"
     }
   }
 }
