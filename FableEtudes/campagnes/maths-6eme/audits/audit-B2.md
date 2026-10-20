@@ -572,3 +572,81 @@ convertible, argument par le critère de 3 sans facteurs premiers ✓ ; rangemen
 - **Méthode** : le défaut dominant (B1 comme B2) vient de ce que le cours puise ses exemples dans les **exercices**
   du manuel que les fichiers reprennent ensuite. Consigne suggérée pour les lots suivants : ancrer le cours sur
   l'activité أستكشف, et réserver les exercices أتدرّب/أوظّف/أقيّم aux questions.
+
+---
+
+## Re-vérification (2026-10-20, commit `71bdf13c`)
+
+> Périmètre : ch. 07–12, quiz + exercices `01`–`05`, cours, résumés (les missions `06-…` du ch. 07 sont hors
+> périmètre). Comparaison question par question `a0e47daa` → `71bdf13c` ; chaque question remplacée re-résolue
+> à l'aveugle ; paires proches recalculées avec l'algorithme exact de `tranche-checks.ts` (jetons de surface,
+> seuil court 0,8 sous 10 jetons, figures différentes exclues — 41 paires ≥ 0,6 reproduites à l'identique avant
+> correction), sans `--fresh`.
+
+### Verdict : **prêt après 23 remplacements de questions et 1 retouche de cours, ci-dessous** (0 critique, 0 majeur restant de l'audit ; 3 mineurs r-1 à r-3 ; 20 réécritures pour les paires proches)
+
+**(1) Défauts de l'audit : 137/137 corrigés.** Les 100 majeurs et 37 mineurs sont appliqués tels que proposés
+(textes, options, étiquettes, clés, explications, `manuel.items`, cours, résumés, deux SVG). Contrôles :
+- cours 07 (3508, 998, 72▢0, 5034, ▢51), 08 (exemple « من الجزء إلى الكلّ » inséré entre `methode` et `verifie`, tableau
+  `1,2857… (لا تنتهي)`), 09 (63/49, 36/16 = 9/4, 320 L, bloc PGCD descriptif sans glose), 10 (96/24, `verifie`
+  4/5–7/8), 11 (`سُبعان`), 12 (4,5 m, 1,07 hl, 6,5/10, 9/10000, 9/40, 9/36–6/45–7/40, figure avant l'exemple) :
+  recalculés, justes ;
+- aucun `؟` dans une formule ; aucun nouveau nombre du cours ne revient dans une question (recherche des 23
+  nombres modifiés dans les 30 fichiers) ;
+- l'écart de l'auteur (résumé 10 aligné sur le `verifie` corrigé) est cohérent.
+
+**(2) Remplacements re-résolus : 154/154 justes**, une seule réponse partout, aucune option désignée par sa place,
+aucun exemple du cours redonné.
+
+**(3) Régressions : aucune bloquante.** Gates : `content:check` ✓ ; `content:qa` 0 erreur (5 avertissements,
+tous en 14 et 16, hors lot) ; `content:figures:check` ✓ ; `content:tranche --fresh --strict-longest --strict-lessons` :
+0/156, patron 0 en recul. Trois défauts nouveaux ou résiduels :
+
+- **r-1 (mineur, régression de l'application)** `10/04-defi` Q7 : `لفيفة` est féminin. Prompt →
+  `لفيفة قماش طولها 45 m. باع التاجر منها لحريف أوّل 2/5 ولحريف ثانٍ 4/9. كم مترًا يزيد ما اشتراه الثاني على ما اشتراه الأوّل؟`
+- **r-2 (mineur, mesuré sans `--fresh`, préexistant)** clé strictement la plus longue :
+  - `07/05-entrainement` Q6 : d `على 9 فقط` → `على 9 نعم وعلى 3 لا` (sans étiquette : deux erreurs). Longueurs 19/11/18/19.
+  - `09/04-defi` Q2 : d `2` → `24` ; explication → `قواسم 24 من الأكبر نزولًا: 24 لا يقسم 36، و12 يقسمه لأنّ 36 = 12 × 3. فالقاسم المشترك الأكبر 12، و24/36 = (24 ÷ 12)/(36 ÷ 12) = 2/3 دفعةً واحدة. العددان 6 و4 قاسمان مشتركان أيضًا لكنّهما أصغر، فيُبقيان اختزالًا لم ينتهِ؛ أمّا 24 فلا يقسم 36.`
+- **r-3 (mineur)** le `verifie` corrigé du cours 10 (4/5 contre 7/8) recoupe `04-defi` Q5 (9/10, 4/5, 5/6, 7/8 → 4/5).
+  Cours l. 383 → `قرأ ضياء 8/9 من قصّة، وقرأت أمل 10/11 من القصّة نفسها. من قرأ أكثر؟` ; l. 387–388 →
+  `ينقص 8/9 تُسعٌ واحد (1/9)، وينقص 10/11 جزءٌ واحد من 11 (1/11). البسطان 1، و 9 < 11، إذن 1/9 > 1/11: ما بقي لضياء`
+  / `أكبر. إذن 10/11 > 8/9، وأمل قرأت أكثر.` ; résumé puce 8 → retour à l'exemple résolu de la section, qui reste
+  dans le cours : `… الكسر الذي ينقصه أصغر جزء هو الأكبر: 6/7 ينقصه 1/7 و 3/4 ينقصه 1/4، إذن 6/7 > 3/4.`
+
+**(4) Paires proches : 41 paires ≥ 0,6 → 0** avec les 20 réécritures ci-dessous (+ les 3 de r-1/r-2) (mesure sur le corpus entier de
+`math-6eme` après remplacement). Il reste 24 paires dans [0,45 ; 0,6[ : savoir-faire parallèles à données
+différentes dans des missions distinctes, justifiées. Trois de mes propres jeux de remplacement étaient en cause
+(09 quiz Q1 ↔ 02-Q1, 11 02-Q2 ↔ 05-Q3, 07 quiz Q3 ↔ 01-Q6). Le reste vient du gabarit du ch. 10 (« قارن بين x و y »,
+« أيُّ الكسرين أكبر » répétés dans les cinq fichiers avec les mêmes options « متساويان / لا يمكن المقارنة »).
+Le remède : contextualiser une question sur deux et varier le format (signe à placer, rangement, petite situation).
+Même rang, même difficulté, même id de clé (**en gras**). Clé jamais strictement la plus longue (mesuré). Étiquettes
+telles qu'indiquées, les autres options sans étiquette.
+
+| question | prompt | options a–d | explication |
+| --- | --- | --- | --- |
+| 07/01-pratique Q3 | `اختار طفل لافتة يقبل رقمها القسمة على 5. أيّ لافتة اختار؟` | a `52`, b `38`, **c `60`**, d `41` | inchangée |
+| 07/01-pratique Q6 | `يقبل العددُ 438 القسمةَ على 3. ما الدليل على ذلك؟` | a `رقم آحاده 8` [critere-divisibilite-mal-choisi], b `لأنّه عددٌ زوجيّ ينتهي بـ 8` [critere-divisibilite-mal-choisi], c `رقم عشراته 3`, **d `مجموع أرقامه 15`** | `مجموعُ أرقام 438 هو 4 + 3 + 8 = 15، و15 مضاعفٌ للعدد 3، فالعددُ 438 يقبل القسمة على 3: 438 = 3 × 146. رقمُ الآحاد ورقمُ العشرات لا يُثبتان شيئًا عن 3، وكونُ العدد زوجيًّا يخصّ القسمة على 2.` |
+| 07/02-boss Q6 | `ما أكبرُ عددٍ من رقمين آحادُه 3 ويقبل القسمة على 3؟` | a `33` [extremum-demande-ignore], b `63` [extremum-demande-ignore], c `73`, **d `93`** | `نريد عددًا آحاده 3 ومجموع رقميه مضاعف لـ 3: رقم العشرات 3 أو 6 أو 9 (الصفر لا يصلح في خانة العشرات). الأعداد 33 و63 و93 تصلح، وأكبرها 93 = 3 × 31. العدد 73 مجموع رقميه 10 فلا يقبل القسمة على 3.` |
+| 09/quiz Q1 | `ما الكسرُ المساوي لـ 1/4 بمقامٍ يساوي 20؟` | a `1/20` [equivalence-un-seul-terme-multiplie], b `20/4` [numerateur-denominateur-inverses], **c `5/20`**, d `4/20` [equivalence-facteur-errone] | `بما أنّ 4 × 5 = 20، نضرب البسطَ أيضًا في 5: 1/4 = (1×5)/(4×5) = 5/20.` |
+| 10/01-pratique Q2 | `قُسّمت فطيرتان متقايستان: الأولى إلى نصفين، والثانية إلى أربعة أرباع. أيّ قطعة أكبر: 1/2 أم 1/4؟` | **a `1/2`**, b `1/4` [comparaison-par-denominateur], c `القطعتان متساويتان`, d `لا يمكن المقارنة دون قياس` [comparaison-jugee-impossible] | `البسطان متساويان (1)، فالأكبر صاحب المقام الأصغر: الفطيرة الأولى قُسّمت إلى أجزاء أقلّ، فأجزاؤها أكبر، إذن 1/2 > 1/4.` |
+| 10/01-pratique Q3 | `في علبة حلوى، أكل وليد 2/7 منها وأكلت أخته 4/7 منها. مَن أكل أقلّ؟` | a `أخته` [comparaison-a-meme-denominateur-inversee], **b `وليد`**, c `أكلا القدر نفسه`, d `لا نعرف دون عدّ` [comparaison-jugee-impossible] | `المقام نفسه (7)، فالأصغر صاحب البسط الأصغر: 2 < 4، إذن 2/7 < 4/7، فوليد أكل أقلّ.` |
+| 10/01-pratique Q6 | `شربت نادية 1/2 لتر من العصير، وشرب كريم 3/5 لتر. مَن شرب أكثر؟ (اكتب الكسرين على المقام 10)` | a `نادية` [comparaison-a-meme-denominateur-inversee], b `شربا القدر نفسه`, c `لا يمكن المقارنة` [comparaison-jugee-impossible], **d `كريم`** | `نوحّد على 10: 1/2 = 5/10 و 3/5 = 6/10؛ وبما أنّ 5 < 6 فإنّ 1/2 < 3/5، وكريم شرب أكثر.` |
+| 10/02-boss Q1 | `أكلت سلمى 4/9 من فطيرة، وأكل سامي 7/9 من فطيرة مثلها. مَن أكل أكثر؟` | a `سلمى` [comparaison-a-meme-denominateur-inversee], **b `سامي`**, c `أكلا القدر نفسه`, d `لا نعرف دون رسم` [comparaison-jugee-impossible] | `الكسران لهما المقام نفسه (9)، فالأكبر صاحب البسط الأكبر: 7 > 4، إذن 7/9 > 4/9، وسامي أكل أكثر.` |
+| 10/02-boss Q2 | `حلّ ياسين 3/4 من تمارين الكرّاس، وحلّت هالة 3/7 من التمارين نفسها. مَن حلّ أكثر؟` | **a `ياسين`**, b `هالة` [comparaison-par-denominateur], c `حلّا القدر نفسه`, d `لا نعرف لأنّ المقامين مختلفان` [comparaison-jugee-impossible] | `البسطان متساويان (3)، فالأكبر صاحب المقام الأصغر: 4 < 7، إذن 3/4 > 3/7، فياسين حلّ أكثر.` |
+| 10/02-boss Q6 | `أكمل بالعلامة المناسبة بعد كتابة الكسرين على المقام 6: 2/3 … 5/6` | a `>` [comparaison-a-meme-denominateur-inversee], **b `<`**, c `=`, d `لا علامة تصلح` [comparaison-jugee-impossible] | inchangée |
+| 10/03-revision Q1 | `قطع أمين 2/5 من الطريق، وقطعت مريم 1/5 منه. أيّ جملة صحيحة؟` | **a `قطع أمين أكثر من مريم`**, b `قطعت مريم أكثر من أمين` [comparaison-a-meme-denominateur-inversee], c `قطعا المسافة نفسها`, d `لا يمكن الحكم لأنّ الكسرين مختلفان` [comparaison-jugee-impossible] | `المقام نفسه (5)، فنقارن البسطين: 2 > 1، إذن 2/5 > 1/5، وأمين قطع أكثر.` |
+| 10/03-revision Q2 | `أيّ كتابة صحيحة؟` | a `5/6 < 5/9` [comparaison-par-denominateur], **b `5/6 > 5/9`**, c `5/6 = 5/9`, d `لا يمكن المقارنة` [comparaison-jugee-impossible] | inchangée |
+| 10/03-revision Q3 | `أكلت ريم 1/3 خبزة، وأكل أخوها 1/2 خبزة مثلها. أيّ جملة صحيحة؟` | a `أكلت ريم أكثر من أخيها` [comparaison-a-meme-denominateur-inversee], b `أكلا القدر نفسه`, c `لا يمكن المقارنة لأنّ المقامين مختلفان` [comparaison-jugee-impossible], **d `أكل أخوها أكثر منها`** | `نوحّد على 6: 1/3 = 2/6 و 1/2 = 3/6؛ وبما أنّ 2 < 3 فإنّ 1/3 < 1/2، فأخوها أكل أكثر.` |
+| 10/04-defi Q1 | `رتّب تصاعديًّا العددين 7/10 و 3/5.` | **a `3/5 < 7/10`**, b `7/10 < 3/5` [comparaison-a-meme-denominateur-inversee], c `3/5 = 7/10`, d `لا يمكن ترتيبهما` [comparaison-jugee-impossible] | `نوحّد على 10: 3/5 = 6/10؛ وبما أنّ 6 < 7 فإنّ 3/5 < 7/10، وهذا هو الترتيب التصاعديّ.` |
+| 10/04-defi Q6 | `بعد الاختزال، أيّ جملة صحيحة عن الكسرين 10/15 و 14/21؟` | a `الكسر 10/15 هو الأكبر`, **b `الكسران متساويان`**, c `الكسر 14/21 هو الأكبر`, d `لا يمكن الحكم` [comparaison-jugee-impossible] | inchangée |
+| 10/05-entrainement Q1 | `ضع العلامة المناسبة مكان النقاط: 6/11 … 9/11` | a `>` [comparaison-a-meme-denominateur-inversee], **b `<`**, c `=`, d `لا علامة تصلح` [comparaison-jugee-impossible] | `عند تساوي المقام، الأكبرُ بسطًا هو الأكبر؛ 6 < 9، إذن 6/11 < 9/11.` |
+| 10/05-entrainement Q2 | `قطعتا قماش متقايستان: قُسّمت الأولى إلى 5 أجزاء متساوية والثانية إلى 9. أخذت ليلى 4 أجزاء من الأولى، وأخذت سارة 4 أجزاء من الثانية. مَن أخذت أكثر؟` | **a `ليلى`**, b `سارة` [comparaison-par-denominateur], c `أخذتا القدر نفسه`, d `لا نعرف دون قياس` [comparaison-jugee-impossible] | `أخذت ليلى 4/5 وسارة 4/9. البسطان متساويان، فالأكبر صاحب المقام الأصغر: 5 < 9، إذن 4/5 > 4/9، وليلى أخذت أكثر.` |
+| 11/05-entrainement Q3 | `قرأ سامي 1/3 كتاب يوم السبت، و1/4 منه يوم الأحد. أيّ كسر من الكتاب قرأ في اليومين؟` | a `2/7` [add-numerators-and-denominators], b `2/12`, **c `7/12`**, d `1/12` | `نوحّد على 12: 1/3 = 4/12 و 1/4 = 3/12؛ ثمّ 4/12 + 3/12 = 7/12 من الكتاب.` |
+| 11/05-entrainement Q5 | `في قارورة 5/6 لتر من الحليب، شرب منها أنس 1/2 لتر. كم لترًا بقي؟` | **a `1/3`**, b `4/6`, c `1/4`, d `4/4` [soustraction-denominateurs] | `نوحّد على 6: 1/2 = 3/6؛ ثمّ 5/6 − 3/6 = 2/6، وبالاختزال على 2 يبقى 1/3 لتر.` |
+| 12/05-entrainement Q3 | `ما القيمةُ العشرية للكسر 80/100؟` | a `8` [virgule-ignoree-nombre-lu-entier], b `0,08` [puissance-de-dix-rangs-mal-comptes], **c `0,8`**, d `80` [virgule-ignoree-nombre-lu-entier] | `مقامُ الكسر 100، فله رقمان بعد الفاصلة: 80/100 = 0,80 = 0,8.` |
+
+Ajouter à ces 20 lignes : 07/05-entrainement Q6 et 09/04-defi Q2 (r-2) et 10/04-defi Q7 (r-1), qui sont mesurés
+dans le même calcul. Valeurs re-vérifiées : 33, 63, 93 ÷ 3 ; 5/20 ; 7/9 > 4/9 ; 3/4 > 3/7 ; 2/5 > 1/5 ; 1/3 < 1/2 ;
+3/5 = 6/10 < 7/10 ; 10/15 = 14/21 = 2/3 ; 6/11 < 9/11 ; 4/5 > 4/9 ; 1/2 = 5/10 < 6/10 ; 2/7 < 4/7 ;
+1/3 + 1/4 = 7/12 ; 5/6 − 1/2 = 1/3 ; 80/100 = 0,8. **Résultat sur le corpus entier après remplacement : 0 paire
+≥ 0,6** (24 paires dans [0,45 ; 0,6[, toutes des exercices parallèles voulus).
