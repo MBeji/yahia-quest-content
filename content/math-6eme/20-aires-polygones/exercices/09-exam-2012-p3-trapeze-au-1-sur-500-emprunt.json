@@ -1,0 +1,203 @@
+{
+  "title": "🏛️ مناظرة 2012 · المسألة 3 ⭐⭐⭐: القطعة على التصميم، الثمن والقرض",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "(مناظرة 2012) يبيّن الرسم أبعاد قطعة أرض شبه منحرفة على تصميم بالسلّم 1/500: قاعدتها الصغرى 8,4 سم وقاعدتها الكبرى 13,6 سم وارتفاعها 6 سم. ما الطول الحقيقيّ للقاعدة الصغرى بالمتر؟\n<svg viewBox=\"0 0 240 160\"><path d=\"M20 120 L210 120 L178 36 L60 36 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M20 120 L210 120 L178 36 L60 36 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M60 36 L60 120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M69 120 L69 111 L60 111\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"119\" y=\"26\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">8,4 سم</text><text x=\"115\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">13,6 سم</text><text x=\"44\" y=\"84\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"currentColor\" direction=\"ltr\" unicode-bidi=\"isolate\">6 سم</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 200 م"
+        },
+        {
+          "id": "b",
+          "text": "0,0168 م",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "c",
+          "text": "420 م"
+        },
+        {
+          "id": "d",
+          "text": "42 م"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "السلّم 1/500 يعني أنّ 1 سم على التصميم يمثّل 500 سم في الواقع، فنضرب: 8,4 × 500 = 4 200 سم، ثمّ نحوّل إلى المتر بالقسمة على 100: 4 200 ÷ 100 = 42 م. القسمة على 500 تصغّر الطول بدل أن تكبّره، والعدد 4 200 م لم يحوَّل من السنتيمتر إلى المتر، والعدد 420 م قُسم على 10 فقط.",
+      "difficulty": 2,
+      "competencies": ["math.prop.situations"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "(مناظرة 2012) على تصميم بالسلّم 1/500، قاعدة قطعة أرض الكبرى 13,6 سم. كم مترًا تبلغ قاعدتها الكبرى الحقيقيّة؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 68,
+        "unit": "م"
+      },
+      "explanation": "نضرب في 500: 13,6 × 500 = 6 800 سم، ثمّ نحوّل إلى المتر بالقسمة على 100: 6 800 ÷ 100 = 68 م.",
+      "difficulty": 2,
+      "competencies": ["math.prop.situations"]
+    },
+    {
+      "prompt": "(مناظرة 2012) قطعة أرض على شكل شبه منحرف قاعدتاها الحقيقيّتان 42 م و 68 م وارتفاعها 30 م. ما مساحتها بالمتر المربّع؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 300 م²",
+          "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme"
+        },
+        {
+          "id": "b",
+          "text": "2 040 م²",
+          "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme"
+        },
+        {
+          "id": "c",
+          "text": "1 260 م²",
+          "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme"
+        },
+        {
+          "id": "d",
+          "text": "1 650 م²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "مساحة شبه المنحرف = (القاعدة الكبرى + القاعدة الصغرى) × الارتفاع ÷ 2 = (68 + 42) × 30 ÷ 2 = 110 × 30 ÷ 2 = 1 650 م². العدد 3 300 م² ينسى القسمة على 2، والعددان 2 040 م² و 1 260 م² يضربان قاعدة واحدة فقط في الارتفاع.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "(مناظرة 2012) مساحة قطعة أرض 1 650 م². كم آرًا تبلغ مساحتها؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "165 آر",
+          "misconceptionTag": "math.mes.conversion-aire-facteur-errone"
+        },
+        {
+          "id": "b",
+          "text": "16,5 آر"
+        },
+        {
+          "id": "c",
+          "text": "165 000 آر"
+        },
+        {
+          "id": "d",
+          "text": "0,165 آر"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الآر هو مساحة مربّع ضلعه 10 م، أي 1 آر = 100 م². نقسم المساحة على 100: 1 650 ÷ 100 = 16,5 آر. القسمة على 10 فقط تعطي 165 آر لأنّ وحدة المساحة تحوَّل بالعامل 100 لا 10، والضرب في 100 يكبّر العدد بدل أن يصغّره.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "(مناظرة 2012) بلغ ثمن شراء الآر الواحد من قطعة أرض 2 400 د، ومساحة القطعة 16,5 آر. ما ثمن شراء القطعة بالدينار؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "39 600 د"
+        },
+        {
+          "id": "b",
+          "text": "3 960 000 د"
+        },
+        {
+          "id": "c",
+          "text": "145,45 د",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "2 416,5 د",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ثمن الآر الواحد معلوم، فثمن القطعة هو عدد الآرات مضروبًا في ثمن الآر: 16,5 × 2 400 = 39 600 د. العدد 3 960 000 د يضرب ثمن الآر في مساحة القطعة بالمتر المربّع 1 650، وهو لا يوافق وحدة الثمن، والقسمة أو الجمع يخلطان العمليّة بدل الضرب.",
+      "difficulty": 3,
+      "competencies": ["math.prop.situations"]
+    },
+    {
+      "prompt": "(مناظرة 2012) ثمن شراء قطعة أرض 39 600 د، وهو يمثّل 2/7 من مصاريف تهيئة الفضاء وتجهيزه. أيّ عمليّة تعطي مصاريف التهيئة والتجهيز؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "39 600 ÷ 7 × 2",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
+        {
+          "id": "b",
+          "text": "39 600 × 2 × 7"
+        },
+        {
+          "id": "c",
+          "text": "39 600 ÷ 2 × 7"
+        },
+        {
+          "id": "d",
+          "text": "39 600 ÷ 2 ÷ 7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ثمن الأرض يمثّل جزأين (2) من سبعة أجزاء متساوية هي المصاريف كلّها، فنقسم على 2 لنجد الجزء الواحد ثمّ نضرب في 7: 39 600 ÷ 2 × 7. القسمة على 7 ثمّ الضرب في 2 تقلب الكسر فتحسب 2/7 من ثمن الأرض بدل أن تجد المصاريف.",
+      "difficulty": 3,
+      "competencies": ["math.frac.mult-entier"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "(مناظرة 2012) اشترى باعث قطعة أرض بـ 39 600 د، ثمّ أنفق على تهيئة الفضاء وتجهيزه مبلغًا يكون ثمن الأرض 2/7 منه. كم دينارًا أنفق على التهيئة والتجهيز؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 138600,
+        "unit": "د"
+      },
+      "explanation": "المصاريف سبعة أجزاء والأرض جزءان منها، فالجزء الواحد 39 600 ÷ 2 = 19 800 د، والمصاريف 7 × 19 800 = 138600 د.",
+      "difficulty": 3,
+      "competencies": ["math.frac.mult-entier"]
+    },
+    {
+      "prompt": "(مناظرة 2012) تكاليف مشروع هي شراء الأرض بـ 39 600 د ومصاريف تهيئة وتجهيز بـ 138 600 د. اقترض الباعث 22 275 د ونريد النسبة المئويّة للمبلغ المقترض من جملة التكاليف. على أيّ مبلغ نقسم 22 275؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "39 600 د",
+          "misconceptionTag": "math.prop.pourcentage-base-erronee"
+        },
+        {
+          "id": "b",
+          "text": "155 925 د"
+        },
+        {
+          "id": "c",
+          "text": "138 600 د",
+          "misconceptionTag": "math.prop.pourcentage-base-erronee"
+        },
+        {
+          "id": "d",
+          "text": "178 200 د"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "النسبة المئويّة تُحسب من المجموع المطلوب: جملة التكاليف هي شراء الأرض مع مصاريف التهيئة 39 600 + 138 600 = 178 200 د. القسمة على 39 600 أو على 138 600 تأخذ جزءًا واحدًا من التكاليف أساسًا، والعدد 155 925 د هو الجملة مطروحًا منها القرض أي ما دفعه الباعث من ماله.",
+      "difficulty": 3,
+      "competencies": ["math.prop.pourcentages"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "(مناظرة 2012) بلغت جملة تكاليف مشروع 178 200 د، واقترض الباعث من البنك 22 275 د. كم بالمئة يمثّل المبلغ المقترض من جملة التكاليف؟ اكتب العدد فقط.",
+      "answerKey": {
+        "value": 12.5,
+        "unit": "%"
+      },
+      "explanation": "النسبة = المبلغ المقترض ÷ جملة التكاليف = 22 275 ÷ 178 200 = 0,125، أي 12,5 %. نتحقّق بالطريقة المعاكسة: 12,5 % من 178 200 هو 178 200 ÷ 8 = 22 275.",
+      "difficulty": 3,
+      "competencies": ["math.prop.pourcentages"]
+    }
+  ]
+}
