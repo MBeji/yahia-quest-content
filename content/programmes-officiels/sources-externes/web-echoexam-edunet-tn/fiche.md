@@ -56,3 +56,7 @@ Source officielle, lue pour ce pilote au régime T2′.
 - Les maths suivent le même schéma (`/<année>/math.pdf`, 2 pages par session) : 2011 et 2014
   répondent 404, sur `6web` comme sur `www.echoexam` (ajout du 2026-10-19). Couple qui
   l'utilise : [`web-6eme-base-math`](../web-6eme-base-math/fiche.md).
+- L'éveil scientifique suit le même schéma sous le nom `svt` (`/<année>/svt.pdf`, 3 pages en 2008,
+  2 de 2009 à 2018, 4 de 2019 à 2026 ; mardi 23 juin 2026) : 2011 et 2014 répondent 404, sur `6web`
+  comme sur `www.echoexam` (ajout du 2026-10-20). Couple qui l'utilise :
+  [`web-6eme-base-eveil`](../web-6eme-base-eveil/fiche.md).
