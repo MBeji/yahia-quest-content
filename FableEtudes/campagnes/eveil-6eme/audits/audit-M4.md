@@ -134,3 +134,119 @@ Rotation 2021 vérifiée au zoom 400 dpi : moitié noire de l'aiguille vers le b
 
 Après correctifs : 11 questions.
 
+## Chapitre `11-effets-courant-electrique`
+
+Croisement E-12 refait contre le `11` mis à niveau : le cours a désormais une section 🔔 « الجرس الكهربائيّ » (E-7b), le quiz porte `quiz#1` (dارة مغلقة), `quiz#2` (حرارة), `quiz#4` (أكسيجين عند المصعد) ; `01-pratique#7` apparie déjà observation ↔ effet ; `02-boss#2` (محلال، ملح، قاطعة مفتوحة), `03-revision#2` (احمرار السلك = حراريّ), `03-revision#4` (محلول السكّر), `03-revision#6` (montage du cuivrage), `05-entrainement#2` (cuivrage = كيميائيّ), `05-entrainement#4` (قبس → أكسيجين، +).
+
+### 11/06 — `06-exams-2008-2018-quel-effet-du-courant.json` (d2 practice 75/15, 7 q ; la carte en prévoyait 8) — fidélité OK (2008, 2012, 2013, 2017, 2018 : phrases officielles exactes)
+
+| q | ma réponse | clé | verdict | motif |
+|---|---|---|---|---|
+| 1 | هاتف→مغناطيسيّ, حلكبة→كيميائيّ, كيّ→حراريّ | idem | OK | |
+| 2 | مغناطيسيّ | c | ERREUR (doublon interne) | même fait que q1 (l1), q3 et l'option c de q6 : la sonnerie = effet magnétique, quatre fois dans 7 questions |
+| 3 | a | a | OK | |
+| 4 | d | d | ERREUR (doublon) | re-pose `11/03-revision#2` (« احمرار سلك المصباح وسخونته » = حراريّ) et `11/quiz#2` |
+| 5 | b, d, e | b, d, e | ERREUR (doublon) | re-pose `11/quiz#1` et `11/02-boss#1` (la lampe ne s'allume qu'en circuit fermé) |
+| 6 | b, d | b, d | ERREUR (fuite) | son explication (« البرادة ليست مغنطًا فتنجذب ولا تتنافر ») et son option a donnent la clé de q7 |
+| 7 | b | b | ERREUR (doublon interne) | juge la même phrase que l'option a de q6 |
+
+**Défauts**
+- **[MAJEUR] q2 — doublon interne.** « رنين الهاتف → التأثير المغناطيسيّ » est déjà la paire l1 de q1 (2017), la clé de q3 (2008) et l'option c de q6 (2012). La session 2018 est servie par m039 (11/08 q6). **Correctif : supprimer q2.**
+- **[MAJEUR] q7 — doublon de l'option a de q6, et fuite de q6 vers q7.** **Correctif : supprimer q7** (q6 couvre les trois phrases 2012).
+- **[MAJEUR] q4 — doublon** de `11/03-revision#2`. **[MAJEUR] q5 — doublon** de `11/quiz#1` / `11/02-boss#1`. La seule phrase 2013 non servie par le patron est la troisième (« يختلف التأثير الحراريّ للتيّار الكهربائيّ باختلاف مادّة السلك الناقل ») ; le cours du `11` ne l'enseigne pas (§ 🔥 : « مرور التيّار في ناقل ينتج حرارة », rien sur la matière du fil) : elle ne peut pas devenir une clé. **Correctif : supprimer q4 et q5.**
+- **[MINEUR] q4 option c** (« نعم، فكلّ آثار التيّار تُحمرّ بها الأسلاك ») est un distracteur de remplissage — sans objet si q4 est coupée.
+
+Après correctifs : 3 questions (q1, q3, q6) : la mission devient trop mince pour exister seule. **Recommandation : la fusionner** avec ce qui reste de 11/07 (dépôt) ou la couper, l'essentiel du gisement 2008–2018 « quel effet » étant absorbé par la mise à niveau du `11` (E-1 : ordre de coupe). À trancher par le pilote.
+
+### 11/07 — `07-exams-2012-2016-depot-metallique-la-cuillere-et-la-plaque.json` (d3 boss 120/30, 8 q ; la carte en prévoyait 9) — fidélité OK (2016 nitrate d'argent → sulfate de cuivre et 2015 sucre → sel, E-5, signalés ; montage inversé de 2016 conforme)
+
+| q | ma réponse | clé | verdict | motif |
+|---|---|---|---|---|
+| 1 | c | c | ERREUR (doublon) | = `11/05-entrainement#2` (« أيّ استعمال يعتمد على التأثير الكيميائيّ ؟ — طلاء ملعقة بالنحاس ») et = q2, q3 |
+| 2 | a | a | ERREUR (doublon interne) | troisième habit de « dépôt = effet chimique » |
+| 3 | d | d | OK | garde la forme « correction d'énoncé » (ligne C12#3b d3) |
+| 4 | b | b | OK / mineur | la cathode = l'électrode reliée au − : définition du cours |
+| 5 | b | b | OK | figure : plaque au −, cuillère au + ✓ |
+| 6 | d | d | ERREUR (fuite) | la clé de q5 (« الملعقة موصولة بالقطب الموجب والصفيحة بالسالب، والصحيح عكس ذلك ») est le dessin corrigé de q6 ; et q6 re-pose `11/03-revision#6` |
+| 7 | a | a | OK / mineur | option d (« قضيبان من الخشب أو البلاستيك ») de remplissage |
+| 8 | c | c | ERREUR (vote) | la clé se reconstruit par vote terme à terme |
+
+**Défauts**
+- **[MAJEUR] q1 et q2 — doublons** (q1 = `11/05-entrainement#2` ; q1, q2, q3 posent trois fois « le dépôt vient de l'effet chimique »). **Correctif : supprimer q1 et q2** ; garder q3 (2015, d3). La note E-5 sur le nitrate d'argent reste portée par q5.
+- **[MAJEUR] q6 — fuite depuis q5 et doublon de `11/03-revision#6`.** **Correctif : supprimer q6.**
+- **[MAJEUR] q8 — vote terme à terme.** Liquide : « ملح » 2 fois (c, d), « سكّر » 1, « ماء نقيّ » 1 ; gaz : ordre juste 3 fois sur 4 → le vote rend la clé c. **Correctif exact (plan 2×2)** : remplacer l'option b par « محلول السكّر؛ الغاز الأكبر حجمًا، وهو الأكسيجين، فوق المهبط (−) والهيدروجين فوق المصعد (+) » **sans étiquette** (deux erreurs, muette). Votes : ملح 2 / سكّر 2 ; ordre juste 2 / inversé 2. La clé c et l'option d ont la même longueur (permutation de deux mots) : la clé n'est pas strictement la plus longue. L'explication reste juste ; y remplacer « ولا نستعمل السكّر ولا الماء النقيّ » par « ولا نستعمل محلول السكّر العازل ».
+- **[MINEUR] q7 option d** : distracteur de remplissage (des électrodes en bois : personne ne le pense). Remplacement proposé : « ينبغي أن يكون القضيبان من النحاس لا من القرافيت » (erreur plausible : croire que l'électrode doit être en métal).
+- **[MINEUR] q5** : la note « (ورد في المناظرة محلول نيترات الفضّة …) » est placée dans l'énoncé, après la figure ; sa place est l'explication (comme en q1).
+- **[MINEUR] figures q5/q6** : les légendes du manuel (محلال، مصعد، مهبط) annoncées par la carte manquent ; sans effet sur la clé.
+
+Après correctifs : 5 questions (q3, q4, q5, q7, q8), d3.
+
+### 11/08 — `08-exams-2009-2018-electrolyse-de-leau-gaz-et-electrodes.json` (d3 boss 120/30, 7 q) — fidélité OK (2013 : tube ② plus rempli, « ماء البحر » → محلول ملح الطعام signalé ; 2009 liste de mots exacte ; 2018 محلول الصّودا)
+
+| q | ma réponse | clé | verdict | motif |
+|---|---|---|---|---|
+| 1 | c | c | OK | énoncé juste, aucune erreur inventée ✓ |
+| 2 | a | a | OK / mineur | options c (« غير موصول بأيّ قطب ») et d (« بالقطبين معًا ») de remplissage |
+| 3 | b | b | OK | |
+| 4 | d | d | ERREUR (doublon) | même fait que q1 et q5, et que `11/02-boss#4` (tube le plus rempli → pôle −) |
+| 5 | b | b | OK | |
+| 6 | b, d, e | b, d, e | OK | volume comparé, jamais 2 : 1 (E-8) ✓ |
+| 7 | d | d | ERREUR (fuite + doublon) | l'explication de q6 (fréquence « فرقعة » ↔ hydrogène ↔ pôle −) résout q7 ; q7 re-pose `11/05-entrainement#4` |
+
+**Défauts**
+- **[MAJEUR] q4** — doublon de q1/q5 et de `11/02-boss#4`. **Correctif : supprimer q4.**
+- **[MAJEUR] q7** — fuite depuis q6 et doublon de `11/05-entrainement#4` (« قبس اتّقد → الأكسيجين، والقطب الموجب »). **Correctif : supprimer q7.**
+- **[MINEUR] q2** : options c et d de remplissage. Remplacements proposés : c « خطأ: المصعد هو القضيب الذي يتصاعد عنده الهيدروجين » (étiquette `eveil.elec.gaz-electrolyse-inverses`), d « صحيحة: المصعد هو القضيب الذي يتجمّع فوقه الغاز الأكبر حجمًا » (même étiquette) ; la clé a reste la plus courte.
+
+Après correctifs : 5 questions (q1, q2, q3, q5, q6), d3.
+
+### 11/09 — `09-devoir-circuit-en-panne-et-electroaimants.json` (d3 boss 120/30, 8 q, devoir)
+
+**Salle blanche** : `npm run -s content:gisement:controle -- --sources /tmp/claude-0/devoirs-snapshots/eveil-scientifique-6eme content/eveil-scientifique-6eme/11-effets-courant-electrique/exercices/09-devoir-circuit-en-panne-et-electroaimants.json` lancé par l'auditeur : 8 textes contrôlés, **0 plage ≥ 8 mots**, 0 plage ≥ 6 mots, 0 exercice source à ≥ 2 données communes. ✓ (snapshots non lus.)
+
+| q | ma réponse | clé | verdict | motif |
+|---|---|---|---|---|
+| 1 | مدفأة→حراريّ, نحاس→ترسّب, دبابيس→مغناطيسيّ, فقاقيع→غاز | idem | ERREUR (doublon) | = `11/01-pratique#7` (même geste ; « سلك يحمرّ » et « فقاقيع غاز حول قضيبين » y sont déjà) |
+| 2 | 4, 1, 3, 2 | d, c, a, b | **ERREUR CRITIQUE (figure contraire à l'énoncé)** | « لها المسمار نفسه » mais les clous dessinés ont quatre longueurs, croissant avec les spires : ranger par la taille du clou donne la même clé |
+| 3 | a | a | ERREUR (doublon) | = `11/02-boss#2` (محلال، ملح الطعام، مصباح مطفأ → القاطعة مفتوحة) |
+| 4 | b | b | OK | |
+| 5 | c | c | OK / mineur | explication trop absolue sur le clou |
+| 6 | d | d | OK / réserve | le fait (sucre isolant) est `11/03-revision#4`, mais le geste « ne pas incriminer un composant sain » est neuf (D07#10) |
+| 7 | b | b | OK | |
+| 8 | d | d | OK / mineur | l'énoncé (« القاطعة مغلقة وكلّ الأسلاك موصولة ») est la clé de q4 |
+
+**Défauts**
+- **[CRITIQUE] q2 — figure qui contredit l'énoncé.** Clous de 70, 110, 100 et 60 unités pour 4, 8, 6 et 2 spires : l'énoncé dit « لها المسمار نفسه » et la longueur du clou suit l'ordre des spires, si bien que le leurre « la taille du clou » (piège D07#8) donne la clé. **Correctif exact** (même SVG, clous tous de 110 ; rendu vérifié, `…/scratchpad/aud-M4/fixspires.min.svg`) :
+  - `<rect x="30" y="18" width="70" height="10"` → `<rect x="30" y="18" width="110" height="10"` ; `<polygon points="100,18 110,23 100,28"` → `<polygon points="140,18 150,23 140,28"`
+  - `<rect x="30" y="126" width="100" height="10"` → `<rect x="30" y="126" width="110" height="10"` ; `<polygon points="130,126 140,131 130,136"` → `<polygon points="140,126 150,131 140,136"`
+  - `<rect x="200" y="126" width="60" height="10"` → `<rect x="200" y="126" width="110" height="10"` ; `<polygon points="260,126 270,131 260,136"` → `<polygon points="310,126 320,131 310,136"`
+- **[MAJEUR] q1 — doublon** de `11/01-pratique#7`. **Correctif : supprimer q1** (ou, si le pilote veut garder D07#6, ne garder que les deux observations neuves — dépôt et clou — dans un QCM ; non proposé ici).
+- **[MAJEUR] q3 — doublon** de `11/02-boss#2`. **Correctif : supprimer q3** (q6 et q7 portent le geste D07#10).
+- **[MINEUR] q5** : « وطول المسمار ليس سبب القوّة » est trop absolu (la taille du noyau compte aussi) ; remplacer par « وليس طول المسمار هو ما يفرّق بينهما هنا: الوشيعة أ أقصر مسمارًا وأكثر لفّات، وهي الأقوى ».
+- **[MINEUR] q8** : l'énoncé redonne le résultat du contrôle que q4 demande ; remplacer « وجد أحمد أنّ القاطعة مغلقة وكلّ الأسلاك موصولة، لكنّ المصباح ما زال مطفأً. » par « تأكّد أحمد أنّ دارته مغلقة، لكنّ المصباح ما زال مطفأً. » (la fuite devient la seule prémisse nécessaire).
+- Titre « 📝 ⚔️ زعيم الفرض ⭐⭐⭐: … » : conforme (📝, sans clé). V3 respectée (spires seulement, piles égales).
+
+Après correctifs : 6 questions (q2, q4, q5, q6, q7, q8), d3.
+
+## Chapitre `08-poids`
+
+### 08/06 — `06-exams-2010-2018-chute-poids-et-masse.json` (d2 practice 75/15, 10 q) — **E-1 : à couper**
+
+Fidélité OK (2010, 2015, 2016, 2018 exacts ; 1/6 non donné, V1 ✓ ; C11#6a écartée ✓). Toutes les clés sont justes (re-résolues : q1 d, q2 b, q3 b, q4 b·d·e, q5 c, q6 a, q7 b·d, q8 d, q9 a, q10 c). Mais **chaque question re-pose une question du patron mis à niveau** :
+
+| q | geste | déjà posé par |
+|---|---|---|
+| 1 | dessin de la chute verticale du fruit | `08/02-boss#8` (même fruit, même erreur oblique), `08/04-defi#3`, `08/03-revision#5`, `08/01-pratique#3` |
+| 2 | منحى السقوط = شاقوليّ | `08/quiz#2`, `08/02-boss#1` |
+| 3 | nom de la force = الوزن | `08/quiz#1` (énoncé presque identique : « القوّة الّتي تسلّطها الأرض على الأجسام الموجودة بجوارها ») |
+| 4, 5 | erreurs de Maryam (oblique, intérieur, masse) | `08/05-entrainement#7` (source de la masse / du poids), `08/02-boss#8` ; et q5 nomme les trois cases d'erreur (« المنحى، التأثير، اسم التأثير ») : elle donne la clé du multi q4 |
+| 6 | le poids vient de la Terre, pas de la matière | `08/05-entrainement#7` (même distinction, mêmes mots) |
+| 7 | tout corps a un poids ; newton | `08/05-entrainement#4` (la plume a un poids), `08/05-entrainement#2`, `08/quiz#3` |
+| 8 | altitude : poids ↓, masse = | `08/04-defi#2` (fusée : masse 100 kg, poids ↓), `08/03-revision#3` |
+| 9 | astronaute sur la Lune | `08/02-boss#5` (même scène, même clé) |
+| 10 | balance vs dynamomètre sur la Lune | `08/04-defi#7`, `08/04-defi#1`, `08/05-entrainement#5` |
+
+**[MAJEUR] — réponse à la question E-1 : oui, m041 fait doublon au point de devoir être coupée.** La mise à niveau du `08` a absorbé tous ses gestes ; seule la forme d'examen (« corriger la phrase de Maryam ») est neuve, et elle ne porte que des faits déjà interrogés dix fois. Il n'y a pas de réécriture sauvable sans redemander. **Correctif : supprimer le fichier** et retirer de `08/chapter.json` la source « Sujets officiels … » si aucune autre mission du `08` ne la justifie ; consigner C09#3, C17#3a, C17#3b, C12#3a, C11#6b comme « absorbées par le patron » dans le registre du gisement.
+
+Défaut accessoire (si le pilote la garde malgré tout) : **[MAJEUR] q5 → q4** fuite (l'énoncé de q5 désigne les trois mots fautifs que q4 demande de trouver) ; supprimer q5.
+
