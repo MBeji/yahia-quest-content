@@ -16,7 +16,7 @@ lecture: vision
 > L'épreuve compte 2 pages (pied de page « 2 / 1 » et « 2 / 2 »). La page 1 porte le cadre d'identification et le cadre de notation (sur 20) ; l'en-tête officiel est imprimé en tête de la page 2. Le sujet est découpé en **6 supports** (السند 1 à 6), chacun suivi de **consignes** (التعليمة) ; en marge de chaque consigne, des **critères de notation** « مع 1 », « مع 2 », « مع 3 » (cases à cocher par le correcteur) ; aucun barème chiffré par question n'est imprimé. Les résumés des supports sont écrits par le lecteur (texte intégral : document officiel, sha256 au registre).
 
 ## Support 1
-Résumé : une sortie en forêt avec un parent, où l'on constate le manque de cellules d'abeilles.
+Résumé : un enfant accompagne son père dans la forêt de la région pour contrôler des ruches.
 
 **التعليمة 1** : أجيب بـ "صواب" أو "خطأ" في الخانة المناسبة. (مع 1)
 - للنحل دور هام في حياة الزهرة.
@@ -28,13 +28,13 @@ Résumé : une sortie en forêt avec un parent, où l'on constate le manque de c
 - تحطّ النحلة على الزهرة ........... فيحتك جسمها بالمئبر ثمّ تطير وتحطّ على الزهرة ........... فتنتقل بواسطتها حبّات الطلع إلى ميسم الزهرة الأخرى ويسمّى هذا النوع من التأبير ...........
 
 ## Support 2
-Résumé : en admirant des fleurs sauvages, l'enfant se pique à une épine ; la zone piquée gonfle et rougit.
+Résumé : en se promenant, l'enfant admire des fleurs sauvages et en cueille une ; une épine le pique à la main, la zone gonfle et rougit.
 
 **التعليمة 1** : أكمل الفراغات الواردة بالنصّ التالي للحصول على استنتاج حول مقاومة الجسم للجراثيم. (مع 2)
 - تنفذ الجراثيم إلى داخل الجلد عبر موضع الوخز حيث يتوفّر ........... و........... فتتكاثر متسبّبة في ........... فتتدخّل الكريّات البيضاء لمقاومتها.
 
 **التعليمة 2** : أتأمّل الرسم وأعيد كتابة البيانات وأصلح الخطأ إن وجد. (مع 3)
-[figure : coupe d'un œil avec sept légendes à recopier : « القرنيّة ( ... ) », « القزحيّة ( ... ) », « العدسة ( ... ) », « النقطة العمياء ( ... ) », « الحدقة ( ... ) » et deux autres légendes ; chaque légende est suivie de parenthèses et de pointillés à remplir]
+[figure : coupe d'un œil avec cinq légendes imprimées, chacune suivie de parenthèses et de pointillés où l'élève réécrit la légende : « القرنيّة », « القزحيّة », « العدسة », « النقطة العمياء », « الحدقة »]
 
 ## Support 3
 Résumé : pour chauffer le repas, on rassemble du bois et de la paille, on les frotte, puis on allume le feu en attendant qu'il flambe.
@@ -61,4 +61,4 @@ Résumé : de retour à la maison, l'enfant se met à réaliser une série d'act
 - __انعكاس__ (........) الضّوء هو __انتشار__ (........) في مسار الأشعّة الضّوئيّة المارّة من وسط شفّاف إلى وسط شفّاف آخر يختلف عنه من حيث __الكتلة__ (........).
 
 **التعليمة 4** : أرسم الشّعاع المنكسر أو الوارد في كلّ وضعيّة من الوضعيّات التّالية : (مع 2)
-[figure : trois cadres « الوضعيّة 1, 2, 3 » ; chacun montre une surface air (« هواء ») / eau (« ماء ») avec une normale en pointillés ; situation 1 : rayon incident oblique dans l'air avec flèche, rayon à tracer dans l'eau ; situation 2 : rayon dans l'eau montant vers la surface, rayon à tracer dans l'air ; situation 3 : une couche d'eau entre deux couches d'air, un rayon traversant déjà la couche d'eau à compléter]
+[figure : trois cadres « الوضعيّة 1, 2, 3 », chacun montrant une surface de séparation air (« هواء ») / eau (« ماء ») avec une normale en pointillés et un rayon déjà tracé dans l'un des milieux ; l'élève trace le rayon manquant ; la situation 3 comporte une couche d'eau comprise entre deux couches d'air]
