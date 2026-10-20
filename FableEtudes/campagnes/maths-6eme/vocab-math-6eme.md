@@ -79,3 +79,50 @@ sur la clé.
   (19/06 Q4) ; aire multipliée par la production d'un arbre (20/08 Q6 a) ; recette divisée par le total des billets
   (06, 2023) ; unicité non vérifiée (06/09 Q4 c) ; M2 « mauvaise tranche » (14, 2024), « écart attribué à la table »
   (2019), « fraction de capacité confondue avec les litres » ; B2 n° 5 (07/02 Q3, déjà retiré par l'auteur).
+
+## Pose — lots de chapitres (2026-10-20)
+
+Périmètre : `quiz.json` et exercices `01-` à `05-` des 26 chapitres, plus les `coursePitfalls`. Les missions
+(`06-` et suivantes) attendent la passe suivante. Chaque option a été relue dans son état actuel avant la pose.
+
+**Posé (50 options, dont 3 corrections d'étiquette)** : toutes les occurrences hors missions des ids
+`division-virgules-deplacees-inegalement` (6, dont la correction de 05/02 Q6 b), `reste-ignore-dans-le-probleme`
+(02/02 Q7 a), `rapport-denominateur-mal-choisi` (5), `complement-lu-a-l-envers` (10/quiz Q7 a, 10/02 Q5 a),
+`numerateur-compare-a-l-entier` (1), `produit-fractions-denominateur-conserve` (6), `unites-non-converties`
+(04/02 Q2 d, 08/03 Q8 a, 14/quiz Q6 a, 14/01 Q7 b, 14/05 Q7 c), `vitesse-moyenne-des-vitesses` (2),
+`vitesse-unite-de-temps-non-convertie` (2), `graduation-comptee-comme-unite` (1), `mediatrice-un-seul-critere` (4),
+`arcs-ouvertures-permutees` (2), `inegalite-triangulaire-ignoree` (5), `rapporteur-mauvaise-graduation` (17/01 Q8 d),
+`grade-et-degre-confondus` (2 corrections, 17/01 Q7 d et 17/03 Q1 b), `sommet-de-l-angle-mal-identifie` (18/01 Q7 a, c),
+`changement-de-jour-oublie` (22/02 Q10 c) et `chance-comparee-sur-effectif-brut` (26/04 Q3 a, 26/05 Q6 a).
+
+**Déjà posé par les auteurs** (lettres d'options changées depuis la table) : chapitres 20, 21 et 25 en entier
+(`aire-cote-oblique-pris-pour-hauteur`, `aire-composee-somme-au-lieu-de-difference`,
+`couronne-largeur-prise-pour-rayon`, `arc-circonference-entiere-prise-pour-l-arc`,
+`perimetre-segment-interieur-compte`, `perimetre-partie-du-bord-oubliee`, `arc-retranche-compte-en-moins`,
+`plantations-ferme-et-ouvert-confondus`, `reste-ignore-dans-le-probleme` et `unites-non-converties` au ch. 25,
+`aire-triangle-sans-moitie` 20/02 Q10 a). Les corrections `arrondi-par-troncature` et `perimetre-nombre-de-cotes-errone`
+du ch. 25 sont déjà faites, et les usages restants de ces deux ids (ch. 01, 03 et 18) sont justes.
+
+**Laissé muet** :
+
+- 10/04 Q9 b exécute en fait `comparaison-par-denominateur` (« 1/6 plus petit que 1/8 »), pas le complément lu à l'envers.
+- 09/04 Q8 a `75/40` porte deux erreurs (pas de conversion, et pas de forme irréductible).
+- 17/01 Q8 b (« السلّم الذي أعداده أصغر ») ne se reconstruit pas avec certitude.
+- 16/01 Q8 c n'exécute pas l'erreur visée.
+- 25/01 Q2 d, 25/02 Q4 b, 25/02 Q5 b et 25/03 Q3 a portent deux erreurs ou une autre erreur.
+
+**`coursePitfalls` ajoutés** (piège `> ⚠️` présent dans le cours, et au moins un distracteur du chapitre étiqueté) :
+
+- 05 : `division-virgules-deplacees-inegalement`.
+- 10 : `numerateur-compare-a-l-entier`.
+- 15 : `vitesse-unite-de-temps-non-convertie` et `vitesse-moyenne-des-vitesses`.
+- 16 : `mediatrice-un-seul-critere`.
+- 17 : `rapporteur-mauvaise-graduation` et `grade-et-degre-confondus`.
+- 19 : `arcs-ouvertures-permutees`.
+- 26 : `graduation-comptee-comme-unite` et `chance-comparee-sur-effectif-brut`.
+
+Le piège du ch. 17 (l. 44) sur le sommet de l'angle reste sans `coursePitfalls` : aucun distracteur du ch. 17 ne
+porte encore cet id.
+
+**À la passe des missions** : les occurrences listées plus haut dans `06-…` et les fichiers suivants (ch. 06, 14, 15,
+19, 20, 21, 22).
