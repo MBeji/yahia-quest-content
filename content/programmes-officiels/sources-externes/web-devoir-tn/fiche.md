@@ -93,3 +93,17 @@ que Q-2 n'est pas arbitrée, pas de T2 : le site ré-héberge des œuvres d'ense
   ferme ces chemins.
 - **Tier** inchangé : **T2′** (salle blanche).
 - Échantillon et empreintes : [`web-6eme-base-math`](../web-6eme-base-math/fiche.md).
+
+## 8. Primaire — 6ᵉ éveil scientifique (ajout du 2026-10-20, gisement éveil 6ᵉ)
+
+- **Rangement.** `primaire/السـ6ـنة/الإيـقاظ-العلـمـي/` a **deux** dossiers d'épreuves, à la
+  différence des maths : `Devoirs.html` (3 épreuves hors trimestre — un devoir de synthèse
+  Tadris.TN 2023-2024 et deux examens de trimestre 2018-2019 signés) et `تقييمات/`, une page par
+  trimestre (`تقييمات-الثلاثي-عـ<n>ـدد.html`, n = 1 à 3 ; 16, 24 et 7 PDF au 2026-10-20), des
+  « modèles » numérotés, presque tous anonymes, rédigés en arabe, datés de 2019-2020 quand ils le
+  sont. Les dossiers voisins `تجريبي` (2 concours blancs) et `تمارين` (3 séries de révision) ne
+  servent pas à la vague 1. Fichiers sous `primaire/Doc/السـ6ـنة/الإيـقاظ-العلـمـي/…`.
+- **robots.txt** relu le 2026-10-20 : `Allow: /` ; `Allow: */Doc/*/Devoirs/*` ; aucune règle ne
+  ferme ces chemins.
+- **Tier** inchangé : **T2′** (salle blanche).
+- Échantillon et empreintes : [`web-6eme-base-eveil`](../web-6eme-base-eveil/fiche.md).
