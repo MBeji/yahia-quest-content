@@ -213,3 +213,126 @@ Fidélité : PDF 2019, 2020, 2021 relus (356,6 / 354 / 2 ل ; 615,3 / 613,5 / 1 
 **M-15 (majeur, redemande) — Q1, Q7** : supprimer Q1 et Q7 (7 questions restent). Q2 devient autonome : prompt → `مناظرة 2021 — «أتأمّل التّجربة وأفسّر سبب صعود الماء الملوّن في الأنبوب بعد إضافة الماء والثّلج إلى الإناء البلّوري.» قارورة فيها هواء مسدودة بسدّادة يعبرها أنبوب ينغمس طرفه في ماء ملوّن، وُضعت في إناء بلّوريّ أضيف إليه الماء والثلج، فصعد الماء الملوّن في الأنبوب. قال تلميذ: «الهواء البارد يمصّ الماء الملوّن إلى الأعلى». أيّ تفسير يصحّح قوله؟` suivi du SVG actuel de Q1 (déplacé tel quel) ; option d `قوله صحيح، فكلّ غاز بارد يمصّ السوائل القريبة منه` → `الماء الملوّن يتمدّد بالبرودة فيرتفع وحده في الأنبوب`. Le piège C08#10 (compression) de Q7 disparaît avec elle ; il reste porté par 01/01-pratique (انضغاط).
 
 **m-7 (mineur)** — l'item e de Q4 (« تقسم الفرق على سعة القارورة ») et l'explication de Q4 donnent la méthode de Q8 ; tolérable (la valeur n'est pas donnée).
+
+**M-15 bis (majeur, paire proche) — Q5** (2,6 g) est l'étape intermédiaire de Q8, même données (tranche : Jaccard 0,63) : **supprimer Q5** ; Q8 garde le calcul complet dans son explication. m006 finit à 6 questions (Q2, Q3, Q4, Q6, Q8, Q9).
+
+### `exercices/08-exams-2020-2024-bougie-sous-le-tube-un-cinquieme-doxygene.json` (10 q)
+
+| q | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- |
+| 1 | تدريجة 1 | a | réserve (figure) | légende « ماء ملوّن » coupée au bord gauche en page RTL (ancre `start`) |
+| 2 | a, c | a, c | OK | E-5 (« ربع حجم الهواء ») dit dans l'explication |
+| 3 | a b c d | idem | OK | |
+| 4 | a | a | OK | |
+| 5 | b, c | b, c | réserve | l'item c (خُمس) est la 4ᵉ occurrence du cinquième dans la mission |
+| 6 | d | d | ERREUR (majeur) | = quiz#5 (« نكّسنا قارورة على شمعة… تنطفئ لأنّ الأكسجين يقلّ ») |
+| 7 | c | c | OK | E-4 respecté |
+| 8 | c | c | OK | plan 2×2 propre (d à deux erreurs, muette) ; « la masse ne change pas au chauffage » n'est pas écrit au cours (mineur, voir m-9) |
+| 9 | b | b | ERREUR (majeur) | l'énoncé (« يستقرّ الماء عند تدريجة واحدة ») donne la clé de Q1 ; Q9 redemande Q1 (cinquième) |
+| 10 | d | d | ERREUR (majeur) | option a « أربعة أخماس » = 80 %, la valeur que l'énoncé déclare fausse (s'élimine à vue) ; le cinquième est déjà Q1, Q2, Q5 |
+
+**M-16 (majeur) — Q6, Q9, Q10 : supprimer** (7 questions restent). Q5 : remplacer l'item c `يمثّل الأكسجين حوالي خُمس حجم الهواء` par `يتكوّن ثاني أكسيد الكربون أثناء احتراق الشمعة` (clé inchangée : b, c) et, dans l'explication, `والأكسجين حوالي خُمس حجم الهواء، وهو الّذي يساعد على الاحتراق لا النتروجين.` par `وثاني أكسيد الكربون من نواتج الاحتراق، والأكسجين هو الّذي يساعد على الاحتراق لا النتروجين.`
+
+**M-17 (majeur, rendu) — Q1** : dans le SVG, remplacer `<text x="40" y="172" font-size="12" font-weight="700" fill="#0f172a" text-anchor="start"` par `<text x="56" y="172" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle"` (rendu vérifié : la légende tient dans le bassin, à gauche du tube).
+
+**m-9 (mineur, cours)** — Q8 : la conservation de la masse de l'air chauffé n'est pas écrite au cours ; à ajouter à la `propriete` de la section « 🌡️ » : `حالة للانتباه: حين يسخن الهواء يزداد حجمه، لكنّ كتلته لا تتغيّر، لأنّ كمّيّته هي نفسها.` (session du chapitre).
+
+### `exercices/09-exams-2019-2026-bruleur-flamme-complete-ou-incomplete.json` (9 q)
+
+| q | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- |
+| 1 | a, b, e | idem | OK | E-5 (suie en flamme bleue) dit ; paires a/c et d/e contradictoires (mineur) |
+| 2 | a | a | ERREUR (majeur) | = 04-defi#6 (flamme jaune → suie, combustion incomplète) ; donnée par Q1 (b, d, e et son explication) |
+| 3 | d | d | OK | |
+| 4 | a, c | a, c | OK | monoxyde enseigné (section ☠️) |
+| 5 | d | d | ERREUR (majeur) | même savoir que Q7 (clé presque identique : « الهواء غير كافٍ فصار الاحتراق غير تامّ ») |
+| 6 | a | a | ERREUR (majeur) | même savoir (assez / pas assez d'oxygène) que Q2, Q5, Q7, Q9 |
+| 7 | b | b | OK | |
+| 8 | c | c | réserve | « فعلًا » désigne l'option a (la phrase citée) comme fausse avant lecture |
+| 9 | b | b | ERREUR (majeur) | quatrième « l'oxygène suffit / ne suffit pas » de la mission |
+
+**M-18 (majeur, redondance interne) — supprimer Q2, Q5, Q6, Q9** (5 questions restent : Q1, Q3, Q4, Q7, Q8 ; les sessions 2019 et 2022 3-2-ب tombent, la 2022 reste par Q4). Q8 : remplacer `ماذا وفّر تعديل ضابط الهواء فعلًا؟` par `ماذا يوفّر تعديل ضابط الهواء؟`.
+
+### `exercices/10-exams-2008-2024-elements-produits-et-preuves-de-la-combustion.json` (12 q)
+
+| q | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- |
+| 1 | a, b, c | idem | ERREUR (majeur) | = 01-pratique#6 (trois éléments) et même contenu que Q4 |
+| 2 | a, b | a, b | OK | |
+| 3 | d | d | ERREUR (majeur) | même contenu que Q2 (l'oxygène n'est pas un produit) ; paire proche Q3↔Q4 (tranche) |
+| 4 | d | d | OK | |
+| 5 | a | a | OK | E-5 (chaleur) dit |
+| 6 | c | c | réserve | miroir de quiz#4 ; gardée (formulation officielle 2008, quatre tests) ; son explication livre la clé de Q9 corrigée |
+| 7 | d | d | OK | |
+| 8 | b | b | ERREUR (majeur) | cause « pas assez d'oxygène » déjà posée par m008 (Q7) et 05-entrainement#4 |
+| 9 | a | a | ERREUR (majeur) | même clé que m010 Q4 (« بخار الماء… يتكثّف عند ملامسة سطح بارد ») ; le geste de 2020 est la PREUVE d'un produit |
+| 10 | a b c d | idem | réserve | c (éloigner l'assiette) et d (constater le noir) permutables |
+| 11 | a | a | ERREUR (majeur) | = 04-defi#6 (assiette blanche noircie au-dessus de la flamme jaune → هباب الفحم) |
+| 12 | appariement | idem | ERREUR (majeur) | = 04-defi#7 (mêmes quatre paires observation ↔ gaz) |
+
+**M-19 (majeur) — supprimer Q1, Q3, Q8, Q11, Q12** (7 questions restent).
+**M-20 (majeur) — Q9 réécrite** (la preuve, pas la condensation) :
+- prompt : `مناظرة 2020 — «أعمّر فراغات الجدول التّالي حسب ما تتطلّبه كلّ وضعيّة من الوضعيّتين التّاليتين.» في الوضعيّة 1 ننكّس أنبوبًا باردًا على لهب شمعة فتظهر قطرات ماء على جداره الداخليّ. ما الناتج الّذي تثبته هذه الملاحظة؟`
+- a (clé) `بخار الماء من نواتج احتراق الشمعة` ; b `ثاني أكسيد الكربون من نواتج احتراق الشمعة` (`eveil.gaz.test-mal-associe`) ; c `هباب الفحم من نواتج احتراق الشمعة` (muette) ; d `الأكسجين من نواتج احتراق الشمعة` (`eveil.air.reactifs-et-produits-inverses`).
+- explication : `الاحتراق ينتج بخار الماء، فإذا لامس جدار الأنبوب البارد تكثّف قطرات ماء: فالقطرات تثبت أنّ بخار الماء من نواتج الاحتراق. ثاني أكسيد الكربون يُكشف بتعكّر ماء الجير، وهباب الفحم بسواد صحن أبيض، والأكسجين يُستهلك في الاحتراق ولا ينتج عنه.`
+- longueurs : a 33, b 41, c 34, d 33 (clé non la plus longue).
+- Q6, explication (pour ne plus livrer Q9) : remplacer `اسوداد الصحن يدلّ على هباب الفحم، وقطرات الماء على جدار بارد تدلّ على بخار الماء، والفرقعة ليست كشفًا لثاني أكسيد الكربون.` par `اسوداد الصحن يدلّ على هباب الفحم، والفرقعة وقطرات الماء لا تكشفان ثاني أكسيد الكربون.`
+**m-10 (mineur) — Q10** : fusionner c et d → c `نبعد الصحن عن اللهب بعد لحظات فنلاحظ أنّه اسودّ`, supprimer d, `order` `["a","b","c"]`.
+
+### `exercices/11-exams-2013-2023-proprietes-et-composants-de-lair.json` (10 q)
+
+| q | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- |
+| 1 | بخار الماء | b | ERREUR (majeur) | = 01-pratique#4 (gouttelettes sur une paroi froide → vapeur d'eau de l'air) |
+| 2 | a | a | OK | |
+| 3 | c | c | OK | |
+| 4 | b | b | OK | |
+| 5 | a, b, c | idem | ERREUR (majeur) | = `verifie` de la section « 🎈 » (طوق gonflé : compressible + se répand) ; option e « لون أزرق » de remplissage |
+| 6 | a, c, e | idem | réserve | a (cinquième) redit m005/m007 ; b et c contradictoires (une seule juste, déductible) |
+| 7 | l1-r2, l2-r3, l3-r1 | idem | réserve | l3 (montgolfière) se défend aussi par r3 (dilatation) ; tenable car r1 est la seule qui explique la montée et l2 n'est expliqué que par r3 |
+| 8 | a | a | ERREUR (majeur) | = 01-pratique#5 et tableau du cours (air chauffé → bulles) ; doublon de m006 Q3 |
+| 9 | a | a | ERREUR (majeur) | = 04-defi#3 (glace → l'eau monte) ; doublon de m005 Q4 |
+| 10 | b | b | ERREUR (majeur) | même question et même clé que m007 Q7 (« نقص/اختفى جزء من الغاز… مكان شاغر ») |
+
+**M-21 (majeur) — supprimer Q1, Q5, Q8, Q9, Q10** (5 questions restent : Q2, Q3, Q4, Q6, Q7). Q6 : remplacer l'item a `الأكسجين يمثّل حوالي خُمس حجم الهواء` par `الهواء خليط من عدّة غازات` (clé inchangée a, c, e) et, dans l'explication, `الأكسجين حوالي خُمس حجم الهواء، والهواء` par `الهواء خليط من غازات، وهو`. Si 5 questions paraissent trop peu pour un boss, fusionner m010 dans m012 ou m006 (décision du pilote).
+
+### `exercices/12-devoir-un-feu-conditions-etat-tirage.json` (9 q, salle blanche)
+
+`content:gisement:controle` : 0 plage ≥ 8 mots, 0 à ≥ 6 mots, 0 exercice source à ≥ 3 données (19 textes des deux devoirs). Snapshots non lus.
+
+| q | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- |
+| 1 | c | c | OK | |
+| 2 | a | a | réserve | même fait que m009 Q4 (CO₂ n'est pas un intervenant) — accepté (geste du devoir : corriger une définition) |
+| 3 | l1-r3, l2-r1, l3-r2 | idem | réserve | « le bois chauffé dégage des gaz qui brûlent » n'est pas écrit au cours (bougie seulement) ; soluble par élimination |
+| 4 | d | d | OK | |
+| 5 | b | b | OK | |
+| 6 | c | c | ERREUR (majeur) | = 03-revision#3 (ouverture basse du poêle → air neuf) et l'exemple du cours ; la carte l'interdisait |
+| 7 | d | d | OK | |
+| 8 | a b c d e | idem | OK | cinq temps (le patron en a trois) |
+| 9 | a | a | réserve | même scène que 05-entrainement#4 (charbon, pièce fermée) ; clé différente (CO) : gardée |
+
+**M-22 (majeur) — supprimer Q6** (8 questions).
+
+### `exercices/13-devoir-experiences-sur-lair.json` (10 q, salle blanche)
+
+| q | ma réponse | clé | verdict | motif |
+| --- | --- | --- | --- | --- |
+| 1 | c | c | OK | |
+| 2 | a | a | ERREUR (majeur) | = 01-pratique#2 (compresser → résistance) et même savoir que Q1 |
+| 3 | d | d | OK | |
+| 4 | b | b | OK | |
+| 5 | c | c | ERREUR (majeur) | = `verifie` de la section « 🌡️ » (« سخّنّا قارورة… ثمّ برّدناها ونكّسناها في حوض ماء، فدخل الماء ») |
+| 6 | d | d | ERREUR (majeur) | trois distracteurs de remplissage (« نكتب أنّنا قمنا بتجربة طويلة ») ; compression déjà Q1 |
+| 7 | a | a | OK | |
+| 8 | appariement | idem | réserve | deux paires sur trois = 04-defi#7 ; la paire de l'azote est neuve |
+| 9 | b | b | ERREUR (majeur) | même question et même clé que m007 Q7 (et m010 Q10) |
+| 10 | c | c | OK | piège « air consommé » propre |
+
+**M-23 (majeur) — supprimer Q2, Q5, Q6, Q9** (6 questions).
+
+## Point à trancher n° 3 — les recouvrements « assumés » (m010, m006)
+
+Le rapport de l'auteur les justifie par « le sujet les impose ». La règle R6 / E-12 du plan et la consigne des auteurs ne prévoient **aucune** exception de ce type : « aucune question ne redonne un exemple, un piège ou un `verifie` du cours, ni une question des exercices 01–05 ». Une phrase officielle reprise ne rend pas neuve une question dont la tâche et la clé sont celles d'un exercice publié : l'élève qui a fait 01/01-pratique#5 refait m010 Q8 et m006 Q7 sans rien apprendre. Verdict : **non recevables**. Les sessions concernées restent citées par les autres questions des mêmes missions (2013 par m010 n'a plus de question : la session 2013 reste servie en `09` et `12`, la règle « 17 sessions sur 17 » tient). Correctifs : M-14, M-15, M-21 (et, par la même règle, M-1, M-6, M-10, M-12, M-16, M-18, M-19, M-22, M-23).
+
+Note sur le doute de l'auteur : « الصورة 1 », « الرسم 1 », « أنبوب 2 », « إناء 1 » s'affichent dans le bon ordre en Chromium `dir="rtl"` (ancre `middle`) ; une seule légende fautive (M-17, ancre `start`).

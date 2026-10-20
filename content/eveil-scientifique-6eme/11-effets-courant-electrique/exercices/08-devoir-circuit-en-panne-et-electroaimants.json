@@ -4,71 +4,11 @@
   "mode": "boss",
   "xpReward": 120,
   "rewardCoins": 30,
-  "displayOrder": 9,
+  "displayOrder": 08,
   "questions": [
     {
-      "type": "matching",
-      "prompt": "في فرض للسنة السادسة، أربع ملاحظات في أربع تجارب بالتيّار الكهربائيّ. صِل كلّ ملاحظة بالتأثير الذي يدلّ عليه:",
-      "options": [
-        {
-          "id": "l1",
-          "text": "سلك رقيق في مدفأة يحمرّ ويسخن"
-        },
-        {
-          "id": "l2",
-          "text": "قطعة معدنيّة في محلول تتغطّى بطبقة من النحاس"
-        },
-        {
-          "id": "l3",
-          "text": "مسمار ملفوف بسلك تعلق به دبابيس"
-        },
-        {
-          "id": "l4",
-          "text": "فقاقيع غاز حول قضيبين في محلول الصودا"
-        },
-        {
-          "id": "r1",
-          "text": "تأثير كيميائيّ يتصاعد فيه غاز"
-        },
-        {
-          "id": "r2",
-          "text": "تأثير حراريّ"
-        },
-        {
-          "id": "r3",
-          "text": "تأثير مغناطيسيّ"
-        },
-        {
-          "id": "r4",
-          "text": "تأثير كيميائيّ يترسّب فيه معدن"
-        }
-      ],
-      "answerKey": {
-        "pairs": [
-          [
-            "l1",
-            "r2"
-          ],
-          [
-            "l2",
-            "r4"
-          ],
-          [
-            "l3",
-            "r3"
-          ],
-          [
-            "l4",
-            "r1"
-          ]
-        ]
-      },
-      "difficulty": 2,
-      "explanation": "احمرار السلك وسخونته من التأثير الحراريّ. وتغطّي القطعة بطبقة نحاس في المحلول تأثير كيميائيّ يترسّب فيه معدن. وجذب الدبابيس بمسمار ملفوف بسلك يسري فيه التيّار تأثير مغناطيسيّ. وتصاعد الفقاقيع في محلول الصودا تأثير كيميائيّ يتصاعد فيه غاز هو غازا الماء. والخطأ الشائع أن نخلط بين الآثار الثلاثة، أو أن ننسى أنّ الترسّب والغاز كلاهما من التأثير الكيميائيّ."
-    },
-    {
       "type": "ordering",
-      "prompt": "ركّبت وفاء أربعة مغانط كهربائيّة لها المسمار نفسه والخليّة الواحدة نفسها، ولا يختلف بينها إلّا عدد لفّات الوشيعة. رتّبها من الأضعف جذبًا إلى الأقوى جذبًا: <svg viewBox=\"0 0 340 220\"><rect x=\"24\" y=\"14\" width=\"6\" height=\"18\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"18\" width=\"70\" height=\"10\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polygon points=\"100,18 110,23 100,28\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><ellipse cx=\"42\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"53\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"64\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"75\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><path d=\"M42 36 V52 H60 M75 36 V52 H100\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><rect x=\"60\" y=\"44\" width=\"40\" height=\"16\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"80\" y=\"84\" font-size=\"17\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text><rect x=\"194\" y=\"14\" width=\"6\" height=\"18\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"200\" y=\"18\" width=\"110\" height=\"10\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polygon points=\"310,18 320,23 310,28\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><ellipse cx=\"212\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"223\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"234\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"245\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"256\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"267\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"278\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"289\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><path d=\"M212 36 V52 H230 M289 36 V52 H270\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><rect x=\"230\" y=\"44\" width=\"40\" height=\"16\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"250\" y=\"84\" font-size=\"17\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text><rect x=\"24\" y=\"122\" width=\"6\" height=\"18\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"126\" width=\"100\" height=\"10\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polygon points=\"130,126 140,131 130,136\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><ellipse cx=\"42\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"53\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"64\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"75\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"86\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"97\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><path d=\"M42 144 V160 H60 M97 144 V160 H100\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><rect x=\"60\" y=\"152\" width=\"40\" height=\"16\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"80\" y=\"192\" font-size=\"17\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3</text><rect x=\"194\" y=\"122\" width=\"6\" height=\"18\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"200\" y=\"126\" width=\"60\" height=\"10\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polygon points=\"260,126 270,131 260,136\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><ellipse cx=\"212\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"223\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><path d=\"M212 144 V160 H230 M223 144 V160 H270\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><rect x=\"230\" y=\"152\" width=\"40\" height=\"16\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"250\" y=\"192\" font-size=\"17\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text></svg>",
+      "prompt": "ركّبت وفاء أربعة مغانط كهربائيّة لها المسمار نفسه والخليّة الواحدة نفسها، ولا يختلف بينها إلّا عدد لفّات الوشيعة. رتّبها من الأضعف جذبًا إلى الأقوى جذبًا: <svg viewBox=\"0 0 340 220\"><rect x=\"24\" y=\"14\" width=\"6\" height=\"18\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"18\" width=\"110\" height=\"10\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polygon points=\"140,18 150,23 140,28\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><ellipse cx=\"42\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"53\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"64\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"75\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><path d=\"M42 36 V52 H60 M75 36 V52 H100\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><rect x=\"60\" y=\"44\" width=\"40\" height=\"16\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"80\" y=\"84\" font-size=\"17\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text><rect x=\"194\" y=\"14\" width=\"6\" height=\"18\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"200\" y=\"18\" width=\"110\" height=\"10\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polygon points=\"310,18 320,23 310,28\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><ellipse cx=\"212\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"223\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"234\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"245\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"256\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"267\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"278\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"289\" cy=\"23\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><path d=\"M212 36 V52 H230 M289 36 V52 H270\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><rect x=\"230\" y=\"44\" width=\"40\" height=\"16\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"250\" y=\"84\" font-size=\"17\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text><rect x=\"24\" y=\"122\" width=\"6\" height=\"18\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"126\" width=\"110\" height=\"10\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polygon points=\"140,126 150,131 140,136\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><ellipse cx=\"42\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"53\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"64\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"75\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"86\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"97\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><path d=\"M42 144 V160 H60 M97 144 V160 H100\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><rect x=\"60\" y=\"152\" width=\"40\" height=\"16\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"80\" y=\"192\" font-size=\"17\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3</text><rect x=\"194\" y=\"122\" width=\"6\" height=\"18\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"200\" y=\"126\" width=\"110\" height=\"10\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polygon points=\"310,126 320,131 310,136\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><ellipse cx=\"212\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><ellipse cx=\"223\" cy=\"131\" rx=\"3.5\" ry=\"13\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><path d=\"M212 144 V160 H230 M223 144 V160 H270\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\"/><rect x=\"230\" y=\"152\" width=\"40\" height=\"16\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"250\" y=\"192\" font-size=\"17\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text></svg>",
       "options": [
         {
           "id": "a",
@@ -97,32 +37,6 @@
       },
       "difficulty": 2,
       "explanation": "كلّما زاد عدد لفّات الوشيعة قوي المغنط الكهربائيّ، والعامل الوحيد المتغيّر هنا هو عدد اللفّات. نعدّ اللفّات في الرسم: المغنط 4 لفّتان، والمغنط 1 أربع لفّات، والمغنط 3 ستّ لفّات، والمغنط 2 ثماني لفّات. فالترتيب من الأضعف إلى الأقوى هو بحسب عدد اللفّات من الأقلّ إلى الأكثر."
-    },
-    {
-      "prompt": "في دارة خليّة وقاطعة ومصباح وإناء فيه سائل بين قضيبين من القرافيت. المصباح سليم وقد أضاء في دارة بسيطة أخرى، والخليّة جديدة، والسائل في الإناء محلول ملح الطعام، ومع ذلك بقي المصباح مطفأً. ما السبب كما يبيّنه الرسم؟ <svg viewBox=\"0 0 340 205\"><path d=\"M40 85 V40 H110 M170 40 H300 V82 M300 118 V170 H218 M142 170 H40 V115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><path d=\"M110 40 L158 20\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><circle cx=\"110\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"300\" cy=\"100\" r=\"18\" fill=\"#fef9c3\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><path d=\"M288 88 L312 112 M312 88 L288 112\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"28\" y=\"85\" width=\"24\" height=\"30\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"130\" y=\"150\" width=\"100\" height=\"42\" fill=\"#bfdbfe\"/><path d=\"M130 140 V192 H230 V140\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><rect x=\"139\" y=\"150\" width=\"6\" height=\"36\" fill=\"#0f172a\"/><rect x=\"215\" y=\"150\" width=\"6\" height=\"36\" fill=\"#0f172a\"/></svg>",
-      "options": [
-        {
-          "id": "a",
-          "text": "القاطعة مفتوحة فالطريق مقطوع"
-        },
-        {
-          "id": "b",
-          "text": "القاطعة مفتوحة فيمرّ التيّار لكنّه ضعيف",
-          "misconceptionTag": "eveil.elec.fermer-et-ouvrir-confondus"
-        },
-        {
-          "id": "c",
-          "text": "محلول ملح الطعام عازل فلا يمرّ فيه التيّار",
-          "misconceptionTag": "eveil.elec.conducteurs-liquides-confondus"
-        },
-        {
-          "id": "d",
-          "text": "المصباح تالف رغم أنّه أضاء في دارة أخرى"
-        }
-      ],
-      "correctOption": "a",
-      "difficulty": 2,
-      "explanation": "في الرسم القاطعة مفتوحة، أي أنّ الطريق بين قطبي الخليّة منقطع، فلا يمرّ التيّار ولا يضيء المصباح. ولا يمرّ تيّار ضعيف في دارة مفتوحة. ومحلول ملح الطعام ناقل، والمصباح سليم لأنّه أضاء في دارة أخرى، فلا نتّهم عنصرًا سليمًا."
     },
     {
       "prompt": "ركّب أحمد دارة فيها خليّة وقاطعة ومصباح وأسلاك، فلم يضئ المصباح، وليس لديه رسم للدارة. ما أوّل ما يفحصه؟",
@@ -171,7 +85,7 @@
       ],
       "correctOption": "c",
       "difficulty": 3,
-      "explanation": "قوّة المغنط الكهربائيّ تزداد بزيادة عدد لفّات الوشيعة وبزيادة عدد الخلايا. هنا الخليّة واحدة في كلّ منهما، والوشيعة أ فيها ثماني لفّات والوشيعة ب أربع لفّات، فالمغنط أ أقوى. وطول المسمار ليس سبب القوّة، وكون الخليّة واحدة لا يجعل القوّتين متساويتين ما دام عدد اللفّات مختلفًا. والخطأ الشائع أن نحكم بحجم المسمار."
+      "explanation": "قوّة المغنط الكهربائيّ تزداد بزيادة عدد لفّات الوشيعة وبزيادة عدد الخلايا. هنا الخليّة واحدة في كلّ منهما، والوشيعة أ فيها ثماني لفّات والوشيعة ب أربع لفّات، فالمغنط أ أقوى. وليس طول المسمار هو ما يفرّق بينهما هنا: الوشيعة أ أقصر مسمارًا وأكثر لفّات، وهي الأقوى، وكون الخليّة واحدة لا يجعل القوّتين متساويتين ما دام عدد اللفّات مختلفًا. والخطأ الشائع أن نحكم بحجم المسمار."
     },
     {
       "prompt": "في دارة خليّة وقاطعة ومصباح وإناء فيه سائل بين قضيبين من القرافيت. القاطعة مغلقة والخليّة جديدة، والسائل في الإناء محلول السكّر. استبدلنا المصباح بمصباح سليم آخر فبقي المصباح مطفأً. ما السبب؟ <svg viewBox=\"0 0 340 205\"><path d=\"M40 85 V40 H110 M170 40 H300 V82 M300 118 V170 H218 M142 170 H40 V115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><path d=\"M110 40 H170\" stroke=\"#0f172a\" stroke-width=\"3.5\"/><circle cx=\"110\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"170\" cy=\"40\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"300\" cy=\"100\" r=\"18\" fill=\"#fef9c3\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><path d=\"M288 88 L312 112 M312 88 L288 112\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"28\" y=\"85\" width=\"24\" height=\"30\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"130\" y=\"150\" width=\"100\" height=\"42\" fill=\"#bfdbfe\"/><path d=\"M130 140 V192 H230 V140\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><rect x=\"139\" y=\"150\" width=\"6\" height=\"36\" fill=\"#0f172a\"/><rect x=\"215\" y=\"150\" width=\"6\" height=\"36\" fill=\"#0f172a\"/></svg>",
