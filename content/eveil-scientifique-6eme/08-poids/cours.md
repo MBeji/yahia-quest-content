@@ -68,7 +68,7 @@
 :::
 
 ::: figure الدّيناموتر: لولب في أنبوب مدرّج، يستطيل بالجسم المعلّق فيتوقّف المؤشّر عند وزنه
-<svg viewBox="0 0 300 230"><rect x="130" y="4" width="40" height="8" fill="#94a3b8" stroke="#0f172a" stroke-width="2"/><path d="M150 12 V22" stroke="#0f172a" stroke-width="2"/><rect x="125" y="22" width="50" height="150" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.2"/><polyline points="150,26 140,31 160,39 140,47 160,55 140,63 160,71 140,79 160,87 140,95 160,103 140,111 160,119 150,125" fill="none" stroke="#0f172a" stroke-width="1.8"/><path d="M125 35 H133 M125 65 H133 M125 95 H133 M125 125 H133 M125 155 H133" stroke="#1d4ed8" stroke-width="2"/><text x="118" y="39" text-anchor="end" font-size="11" font-weight="700" fill="#1d4ed8">0</text><text x="118" y="69" text-anchor="end" font-size="11" font-weight="700" fill="#1d4ed8">5</text><text x="118" y="99" text-anchor="end" font-size="11" font-weight="700" fill="#1d4ed8">10</text><text x="118" y="129" text-anchor="end" font-size="11" font-weight="700" fill="#1d4ed8">15</text><text x="118" y="159" text-anchor="end" font-size="11" font-weight="700" fill="#1d4ed8">20</text><text x="104" y="22" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">N</text><path d="M128 125 H172" stroke="#b91c1c" stroke-width="3"/><path d="M150 125 V190" stroke="#0f172a" stroke-width="2"/><circle cx="150" cy="205" r="15" fill="#fb923c" stroke="#9a3412" stroke-width="2"/><text x="182" y="129" text-anchor="start" font-size="11" font-weight="700" fill="#b91c1c">المؤشّر</text><text x="190" y="60" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a">الدّيناموتر</text><text x="172" y="210" text-anchor="start" font-size="11" font-weight="700" fill="#9a3412">كيس برتقال</text></svg>
+<svg viewBox="0 0 300 230"><rect x="130" y="4" width="40" height="8" fill="#94a3b8" stroke="#0f172a" stroke-width="2"/><path d="M150 12 V22" stroke="#0f172a" stroke-width="2"/><rect x="125" y="22" width="50" height="150" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.2"/><polyline points="150,26 140,31 160,39 140,47 160,55 140,63 160,71 140,79 160,87 140,95 160,103 140,111 160,119 150,125" fill="none" stroke="#0f172a" stroke-width="1.8"/><path d="M125 35 H133 M125 65 H133 M125 95 H133 M125 125 H133 M125 155 H133" stroke="#1d4ed8" stroke-width="2"/><text x="118" y="39" text-anchor="end" direction="ltr" font-size="11" font-weight="700" fill="#1d4ed8">0</text><text x="118" y="69" text-anchor="end" direction="ltr" font-size="11" font-weight="700" fill="#1d4ed8">5</text><text x="118" y="99" text-anchor="end" direction="ltr" font-size="11" font-weight="700" fill="#1d4ed8">10</text><text x="118" y="129" text-anchor="end" direction="ltr" font-size="11" font-weight="700" fill="#1d4ed8">15</text><text x="118" y="159" text-anchor="end" direction="ltr" font-size="11" font-weight="700" fill="#1d4ed8">20</text><text x="104" y="22" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">N</text><path d="M128 125 H172" stroke="#b91c1c" stroke-width="3"/><path d="M150 125 V190" stroke="#0f172a" stroke-width="2"/><circle cx="150" cy="205" r="15" fill="#fb923c" stroke="#9a3412" stroke-width="2"/><text x="182" y="129" text-anchor="start" direction="ltr" font-size="11" font-weight="700" fill="#b91c1c">المؤشّر</text><text x="190" y="60" text-anchor="start" direction="ltr" font-size="12" font-weight="700" fill="#0f172a">الدّيناموتر</text><text x="172" y="210" text-anchor="start" direction="ltr" font-size="11" font-weight="700" fill="#9a3412">كيس برتقال</text></svg>
 :::
 
 في الشكل، اللّولب هو ما يستطيل حين تجذب الأرض الكيس، والمؤشّر الأحمر يقف عند تدريجة نقرأ
@@ -94,12 +94,13 @@
 :::
 
 ::: verifie
-رمى كريم كرة إلى أعلى، فصعدت قليلًا ثمّ عادت إلى الأرض. لماذا عادت؟ وبأيّ أداة نقيس وزنها؟
+علّقت سلمى محفظتها في طرف الدّيناموتر، فتوقّف المؤشّر عند التدريجة 20. ما وزن المحفظة؟ ولماذا لا نكتبه
+بالكيلوغرام؟
 
 ---
 
-عادت لأنّ الأرض تجذبها نحو الأسفل: هذه القوّة هي وزن الكرة، وهي تشدّها كما تشدّ الحمم
-البركانيّة. ونقيس وزنها بالدّيناموتر، ونكتبه بالنّيوتن (N).
+وزن المحفظة 20 N: اللّولب استطال حتّى وازن جذب الأرض للمحفظة، والمؤشّر يقف عند وزنها. ولا نكتبه
+بالكيلوغرام، لأنّ الوزن قوّة ووحدة قيسه النّيوتن؛ أمّا الكيلوغرام فوحدة الكتلة.
 :::
 
 ::: retenir
@@ -118,7 +119,7 @@
 :::
 
 ::: figure الخيط المشدود يرسم المنحى الشاقوليّ، وبعد حرقه يسقط الحجر على الخطّ نفسه من أعلى إلى أسفل
-<svg viewBox="0 0 300 220"><rect x="110" y="6" width="80" height="8" fill="#94a3b8" stroke="#0f172a" stroke-width="2"/><circle cx="150" cy="18" r="4" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><path d="M150 22 V72" stroke="#0f172a" stroke-width="2"/><circle cx="150" cy="82" r="10" fill="#a8a29e" stroke="#0f172a" stroke-width="2"/><path d="M150 96 V178" stroke="#b91c1c" stroke-width="2.4" stroke-dasharray="6 5"/><path d="M150 186 L144 175 L156 175 Z" fill="#b91c1c"/><rect x="138" y="188" width="24" height="8" fill="#f8fafc" stroke="#0f172a" stroke-width="1.8"/><path d="M40 197 H260" stroke="#a16207" stroke-width="2.5"/><text x="196" y="22" text-anchor="start" font-size="11" font-weight="700" fill="#0f172a">مسمار</text><text x="160" y="52" text-anchor="start" font-size="11" font-weight="700" fill="#0f172a">خيط</text><text x="166" y="86" text-anchor="start" font-size="11" font-weight="700" fill="#0f172a">حجر</text><text x="160" y="140" text-anchor="start" font-size="11" font-weight="700" fill="#b91c1c">منحى شاقوليّ</text><text x="160" y="155" text-anchor="start" font-size="10" font-weight="700" fill="#b91c1c">من أعلى إلى أسفل</text><text x="170" y="214" text-anchor="start" font-size="11" font-weight="700" fill="#0f172a">قطعة طباشير</text></svg>
+<svg viewBox="0 0 300 220"><rect x="110" y="6" width="80" height="8" fill="#94a3b8" stroke="#0f172a" stroke-width="2"/><circle cx="150" cy="18" r="4" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><path d="M150 22 V72" stroke="#0f172a" stroke-width="2"/><circle cx="150" cy="82" r="10" fill="#a8a29e" stroke="#0f172a" stroke-width="2"/><path d="M150 96 V178" stroke="#b91c1c" stroke-width="2.4" stroke-dasharray="6 5"/><path d="M150 186 L144 175 L156 175 Z" fill="#b91c1c"/><rect x="138" y="188" width="24" height="8" fill="#f8fafc" stroke="#0f172a" stroke-width="1.8"/><path d="M40 197 H260" stroke="#a16207" stroke-width="2.5"/><text x="196" y="22" text-anchor="start" direction="ltr" font-size="11" font-weight="700" fill="#0f172a">مسمار</text><text x="160" y="52" text-anchor="start" direction="ltr" font-size="11" font-weight="700" fill="#0f172a">خيط</text><text x="166" y="86" text-anchor="start" direction="ltr" font-size="11" font-weight="700" fill="#0f172a">حجر</text><text x="160" y="140" text-anchor="start" direction="ltr" font-size="11" font-weight="700" fill="#b91c1c">منحى شاقوليّ</text><text x="160" y="155" text-anchor="start" direction="ltr" font-size="10" font-weight="700" fill="#b91c1c">من أعلى إلى أسفل</text><text x="170" y="214" text-anchor="start" direction="ltr" font-size="11" font-weight="700" fill="#0f172a">قطعة طباشير</text></svg>
 :::
 
 في الشكل، الخيط المشدود بالحجر هو المنحى الشاقوليّ، والسهم الأحمر المتقطّع هو مسار الحجر بعد
@@ -167,7 +168,7 @@
 :::
 
 ::: figure إناء مائل: سطح الماء الرّاكد يبقى أفقيًّا، وخيط المطمار شاقوليّ، وبينهما زاوية قائمة
-<svg viewBox="0 0 300 215"><rect x="120" y="4" width="60" height="7" fill="#94a3b8" stroke="#0f172a" stroke-width="2"/><polygon points="70,180 230,150 222.5,110 56.9,110" fill="#bfdbfe" stroke="none"/><polyline points="51.6,81.7 70,180 230,150 211.6,51.7" fill="none" stroke="#0f172a" stroke-width="2.6"/><path d="M56.9 110 H222.5" stroke="#1d4ed8" stroke-width="2.4"/><path d="M150 11 V140" stroke="#0f172a" stroke-width="1.8"/><circle cx="150" cy="145" r="5" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><path d="M150 100 H160 V110" fill="none" stroke="#b91c1c" stroke-width="1.8"/><polygon points="205,182 255,182 232,150" fill="#fde68a" stroke="#a16207" stroke-width="2"/><path d="M20 182 H280" stroke="#a16207" stroke-width="2.5"/><text x="164" y="97" text-anchor="start" font-size="11" font-weight="700" fill="#b91c1c">90°</text><text x="60" y="104" text-anchor="start" font-size="10" font-weight="700" fill="#1d4ed8">سطح الماء أفقيّ</text><text x="156" y="36" text-anchor="start" font-size="11" font-weight="700" fill="#0f172a">خيط المطمار</text><text x="40" y="200" text-anchor="start" font-size="11" font-weight="700" fill="#0f172a">إناء مائل</text></svg>
+<svg viewBox="0 0 300 215"><rect x="120" y="4" width="60" height="7" fill="#94a3b8" stroke="#0f172a" stroke-width="2"/><polygon points="70,180 230,150 222.5,110 56.9,110" fill="#bfdbfe" stroke="none"/><polyline points="51.6,81.7 70,180 230,150 211.6,51.7" fill="none" stroke="#0f172a" stroke-width="2.6"/><path d="M56.9 110 H222.5" stroke="#1d4ed8" stroke-width="2.4"/><path d="M150 11 V140" stroke="#0f172a" stroke-width="1.8"/><circle cx="150" cy="145" r="5" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><path d="M150 100 H160 V110" fill="none" stroke="#b91c1c" stroke-width="1.8"/><polygon points="205,182 255,182 232,150" fill="#fde68a" stroke="#a16207" stroke-width="2"/><path d="M20 182 H280" stroke="#a16207" stroke-width="2.5"/><text x="164" y="97" text-anchor="start" direction="ltr" font-size="11" font-weight="700" fill="#b91c1c">90°</text><text x="60" y="104" text-anchor="start" direction="ltr" font-size="10" font-weight="700" fill="#1d4ed8">سطح الماء أفقيّ</text><text x="156" y="36" text-anchor="start" direction="ltr" font-size="11" font-weight="700" fill="#0f172a">خيط المطمار</text><text x="40" y="200" text-anchor="start" direction="ltr" font-size="11" font-weight="700" fill="#0f172a">إناء مائل</text></svg>
 :::
 
 في الشكل، قاع الإناء مائل، لكنّ الخطّ الأزرق، سطح الماء، بقي أفقيًّا؛ والخيط شاقوليّ، والمربّع
@@ -262,7 +263,7 @@
 
 |                          | كتلة الجسم      | وزن الجسم                        |
 | ------------------------ | --------------- | -------------------------------- |
-| ما هو؟                   | مقدار مقيس      | قوّة جذب تسلّطها الأرض على الجسم |
+| ما هو؟                   | مقدار ليس قوّة  | قوّة جذب تسلّطها الأرض على الجسم |
 | من أين يأتي؟             | من كمّيّة المادّة في الجسم نفسه | عامل خارجيّ تسلّطه الأرض عليه |
 | أداة القيس               | الموازين        | الدّيناموتر (مقياس القوّة)       |
 | وحدة القيس               | الكيلوغرام (kg) | النّيوتن (N)                     |
