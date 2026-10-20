@@ -27,3 +27,14 @@ Contrôles (depuis `/home/user/eng-deliver`) : `content:check` ✓ · `content:q
 - 25/04 Q2 (L24 ex. 2) : le côté commun rectangle/carré non clôturé est une lecture de la fiche (« à confirmer au guide ») ; Q3 (ex. 9) : figure redessinée de 17 côtés (1 triangle, 5 carrés, 2 losanges, lecture R-7).
 - Paires proches : 17 avant refonte, restent surtout des questions anciennes entre elles ; positions de clé biaisées vers b (42 %) car options numériques triées ; options « نعم/لا » conservées équilibrées 2/2.
 - Anciennes figures de 20 (« 5 سم » en toutes lettres dans le dessin) non retouchées.
+
+## Corrections après audit
+
+Audit `audits/audit-B5.md` (0 bloquant, 13 majeurs, 23 mineurs) appliqué sur 20, 21, 23, 25 (exercices 01–05, quiz, cours, résumé, `chapter.json` ; missions 06+ non touchées, `sources[]` conservées).
+
+- **Questions qui redonnent le cours** (18) : remplacées par de nouveaux énoncés et nombres (ch. 21 : 11, ch. 23 : 4, ch. 25 : 2, ch. 20 : 1). Doublons et miroirs réécrits. Quatre corrections de cours/résumé (trois `::: verifie` du ch. 21, puce « القطر » du résumé). Ch. 21 `02-boss` Q5 remplacée ; quiz Q6 reprise.
+- **Compétences** : `competencies` ajoutées aux ~105 questions neuves, alignées sur les ch. 01–19 (`math.mes.aires`, `math.geo.cercle`, `math.esp.cube-pave`, `math.mes.perimetres`).
+- **Étiquettes (décisions du pilote)** : côté commun / diamètre compté → `math.mes.perimetre-segment-interieur-compte` (options et `coursePitfalls` du ch. 25) ; rouleaux → `math.num.reste-ignore-dans-le-probleme` ; arc creusé → `math.mes.arc-retranche-compte-en-moins` ; plant de trop → `math.mes.plantations-ferme-et-ouvert-confondus`. `math.mes.volume-utilise-comme-aire` et `math.mes.rayon-non-eleve-au-carre` non utilisées en 6ᵉ (options muettes, retirées des `coursePitfalls`).
+- `manuel` retiré de `23/05-entrainement` ; messages de clôture des ch. 21 et 23 corrigés ; rappel « علب كاملة » ajouté au cours 23 (arrondi du 04 Q8) ; explication du distracteur 33,72 corrigée (25 / 02 Q5).
+- **Contrôles finaux** : `content:check`, `content:qa` (aucun constat sur le lot), `content:figures:check`, prettier : verts. Tranche avec et sans `--fresh` : aucune paire ≥ 0,6 dans 01–05/quiz du lot (restent seulement des missions 06+/07/08, hors périmètre). Recouvrement cours/questions (`overlap.py`) : nul.
+- **Doutes / résidus** : (1) clé strictement la plus longue sur 5 questions numériques (20/05#1, 21/02-boss#4, 21/04-defi#2, 21/05#2, 23/01#1) : artefact de longueur de nombres/unités, 3 % contre 25 % au hasard, laissé tel quel ; (2) 21 `02-boss` Q6 laissée en difficulté 3 pour ne pas décaler les identifiants ; (3) erreur de la fiche : L24 ex. 7 « 18,71 » devrait être 16,71 (non reprise).

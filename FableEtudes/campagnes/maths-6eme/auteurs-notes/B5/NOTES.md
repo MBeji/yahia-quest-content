@@ -64,3 +64,6 @@ Contrôle par script (nombres de chaque prompt contre les blocs `exemple`, `veri
 - **Anciennes questions refaites en place** (même rang, même difficulté) quand elles reprenaient un exemple : 20/01 Q1 (5 × 3), 21/01 Q5, 21/04 Q1 et Q5 (roue 30), 21/05 Q3, 23/02 Q4 (5/3/4), 23/03 Q3, 23/04 Q5, 23/05 Q5.
 - Questions nouvelles dont les nombres sont changés : 21 (02 Q7–Q9, 03 Q9, 05 Q8, Q10, 01 Q8, 03 Q8 manuel), 23 (03 Q7), 25 (quiz Q3, 01 Q3, 02 Q2, 03 Q4, 04 Q4, 05 Q4). Reprises du manuel retirées quand les données ont changé (21/03 : ex. 6 ; 21/05 ; 21/02).
 - `؟` dans les figures remplacé par `…` (ch. 20) ; aucun `**` dans les énoncés ; pas de « لا » seul contre « نعم » ×3 (25 quiz Q3 refait en choix de contenu).
+
+## Après audit
+Audit appliqué (voir rapport-B5.md, section « Corrections après audit »). Étiquettes : ids du vocabulaire uniquement ; competencies alignées sur 01–19.
