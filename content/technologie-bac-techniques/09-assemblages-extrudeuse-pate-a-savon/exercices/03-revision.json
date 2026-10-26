@@ -16,7 +16,7 @@
   "questions": [
     {
       "type": "matching",
-      "prompt": "Associe chaque pièce du réducteur à son rôle.",
+      "prompt": "Associe chaque élément du réducteur à son rôle.",
       "options": [
         {
           "id": "l1",
@@ -32,7 +32,7 @@
         },
         {
           "id": "l4",
-          "text": "Cales (27)"
+          "text": "Huile du carter"
         },
         {
           "id": "r1",
@@ -48,7 +48,7 @@
         },
         {
           "id": "r4",
-          "text": "Régler une position par leur épaisseur"
+          "text": "Limiter le frottement et l'usure des surfaces en mouvement"
         }
       ],
       "answerKey": {
@@ -71,11 +71,12 @@
           ]
         ]
       },
-      "explanation": "Le voyant montre le niveau de l'extérieur ; le bouchon de vidange sert à faire sortir l'huile ; le joint feutre est une étanchéité, qui garde l'huile et chasse la poussière ; les cales règlent une position le long de l'arbre par leur épaisseur calibrée.",
+      "explanation": "Le voyant montre le niveau de l'extérieur ; le bouchon de vidange sert à faire sortir l'huile ; le joint feutre est une étanchéité, qui garde l'huile et chasse la poussière ; l'huile elle-même est le lubrifiant qui limite le frottement et l'usure.",
       "difficulty": 1
     },
     {
-      "prompt": "Dans le F.A.S.T. partiel de l'assemblage roue creuse (9) / arbre (6), laquelle de ces entrées est une solution constructive, et non une fonction technique ?",
+      "type": "multi",
+      "prompt": "Dans le F.A.S.T. partiel de l'assemblage roue creuse (9) / arbre (6), coche TOUTES les entrées qui sont des fonctions techniques, et non des solutions constructives.",
       "options": [
         {
           "id": "a",
@@ -91,11 +92,16 @@
         },
         {
           "id": "d",
-          "text": "Assemblage roue creuse (9) / arbre (6)"
+          "text": "Réglage par cales"
         }
       ],
-      "correctOption": "c",
-      "explanation": "Un F.A.S.T. place des fonctions techniques à gauche et des solutions constructives à droite. « Lier en rotation » et « lier en translation » disent ce qu'il faut obtenir ; l'assemblage roue / arbre est la fonction qui les regroupe. La clavette parallèle avec sa rainure dit avec quelle pièce on lie en rotation : c'est une solution constructive.",
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Une fonction technique dit ce qu'il faut obtenir : lier en rotation, lier en translation. Une solution constructive dit avec quoi : la clavette parallèle et sa rainure réalisent la liaison en rotation, et les cales servent le réglage. Ces deux dernières entrées relèvent de la colonne des solutions.",
       "difficulty": 1
     },
     {
@@ -131,31 +137,31 @@
       "difficulty": 2
     },
     {
-      "prompt": "Les lignes d'action des deux roulements à billes à contact oblique ci-dessous sont tracées en vert. Quel est le montage ?\n\n<svg viewBox=\"0 0 260 230\"><rect x=\"20\" y=\"60\" width=\"180\" height=\"32\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"20\" y=\"140\" width=\"180\" height=\"50\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M14 190 L206 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"14 4 3 4\"/><rect x=\"53\" y=\"92\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"53\" y=\"124\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"70\" cy=\"116\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"133\" y=\"92\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"133\" y=\"124\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"116\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M56 92 L84 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><path d=\"M164 92 L136 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/></svg>",
+      "prompt": "Cette paire de roulements à billes à contact oblique guide la vis sans fin d'un réducteur ; ses lignes d'action sont tracées en vert. Ce montage est-il cohérent avec la règle d'usage ?\n\n<svg viewBox=\"0 0 260 230\"><rect x=\"20\" y=\"60\" width=\"180\" height=\"32\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"20\" y=\"140\" width=\"180\" height=\"50\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M14 190 L206 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"14 4 3 4\"/><rect x=\"53\" y=\"92\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"53\" y=\"124\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"70\" cy=\"116\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"133\" y=\"92\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"133\" y=\"124\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"116\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M56 92 L84 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><path d=\"M164 92 L136 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/></svg>",
       "options": [
         {
           "id": "a",
-          "text": "En X : les lignes d'action se rapprochent en allant vers l'axe"
+          "text": "Oui : l'arbre tourne, et les lignes se rapprochent vers l'axe, c'est un montage en X"
         },
         {
           "id": "b",
-          "text": "En X : les lignes d'action s'écartent en allant vers l'axe"
+          "text": "Non : l'arbre tourne, il faudrait que les lignes s'écartent vers l'axe, montage en O"
         },
         {
           "id": "c",
-          "text": "En O : les lignes d'action se rapprochent en allant vers l'axe"
+          "text": "Oui : le moyeu tourne, et les lignes se rapprochent vers l'axe, c'est un montage en X"
         },
         {
           "id": "d",
-          "text": "En O : les lignes d'action s'écartent en allant vers l'axe"
+          "text": "Non : le moyeu tourne, il faudrait que les lignes s'écartent vers l'axe, montage en O"
         }
       ],
       "correctOption": "a",
-      "explanation": "En descendant vers l'axe de l'arbre, les deux traits verts se rapprochent : c'est la définition du montage en X. En O, les lignes s'écarteraient en allant vers l'axe. Les deux autres propositions associent un nom à la description de l'autre montage.",
+      "explanation": "Les traits verts se rapprochent en allant vers l'axe : c'est un montage en X. La vis sans fin est un arbre qui tourne dans un carter fixe, et la règle d'usage dit arbre tournant, montage en X : le montage est cohérent. Les propositions qui parlent d'un moyeu tournant décrivent une autre situation que celle de la vis.",
       "difficulty": 2
     },
     {
-      "prompt": "Cette paire de roulements guide un arbre tournant. Les butées de l'arbre et du logement sont dessinées en noir. Une bague n'est pas encore arrêtée en translation. Laquelle ?\n\n<svg viewBox=\"0 0 260 230\"><rect x=\"20\" y=\"60\" width=\"180\" height=\"32\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"20\" y=\"140\" width=\"180\" height=\"50\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M14 190 L206 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"14 4 3 4\"/><rect x=\"53\" y=\"92\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"53\" y=\"124\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"70\" cy=\"116\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"133\" y=\"92\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"133\" y=\"124\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"116\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M56 92 L84 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><path d=\"M164 92 L136 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><rect x=\"45\" y=\"92\" width=\"8\" height=\"16\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"87\" y=\"124\" width=\"8\" height=\"16\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"125\" y=\"124\" width=\"8\" height=\"16\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/></svg>",
+      "prompt": "Cette paire de roulements guide un arbre tournant. Les butées de l'arbre et du logement sont dessinées en noir. Une bague n'est pas encore arrêtée en translation. Laquelle ?\n\n<svg viewBox=\"0 0 260 230\"><rect x=\"20\" y=\"60\" width=\"180\" height=\"32\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"20\" y=\"140\" width=\"180\" height=\"50\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M14 190 L206 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"14 4 3 4\"/><rect x=\"53\" y=\"92\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"53\" y=\"124\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"70\" cy=\"116\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"133\" y=\"92\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"133\" y=\"124\" width=\"34\" height=\"16\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"116\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M56 92 L84 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><path d=\"M164 92 L136 140\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\"/><rect x=\"45\" y=\"92\" width=\"8\" height=\"16\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"87\" y=\"124\" width=\"8\" height=\"16\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"167\" y=\"92\" width=\"8\" height=\"16\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/></svg>",
       "options": [
         {
           "id": "a",
@@ -174,8 +180,8 @@
           "text": "La bague extérieure du roulement de droite"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Une paire de roulements compte quatre bagues et chacune demande son arrêt. Sur la figure, la bague extérieure du roulement de gauche et les deux bagues intérieures touchent une butée noire ; la bague extérieure du roulement de droite n'en a aucune : c'est elle qui manque. Il faudrait lui ajouter son arrêt, par exemple celui d'un couvercle, qui pourrait aussi porter les cales de réglage.",
+      "correctOption": "b",
+      "explanation": "Une paire de roulements compte quatre bagues et chacune demande son arrêt. Sur la figure, les deux bagues extérieures et la bague intérieure du roulement de gauche touchent une butée noire ; la bague intérieure du roulement de droite n'en a aucune : c'est elle qui manque. Il faudrait lui ajouter une butée, par exemple un épaulement de l'arbre.",
       "difficulty": 2
     },
     {
@@ -192,11 +198,11 @@
         },
         {
           "id": "c",
-          "text": "Ø… k5"
+          "text": "Ø… h6"
         },
         {
           "id": "d",
-          "text": "Ø… J7"
+          "text": "Ø… G7"
         }
       ],
       "answerKey": {
@@ -205,7 +211,7 @@
           "c"
         ]
       },
-      "explanation": "La casse de la lettre dit la pièce : minuscule pour l'arbre, majuscule pour l'alésage. m6 et k5 sont des tolérances d'arbre ; H7 et J7 sont des tolérances d'alésage, comme le H7 du logement du roulement.",
+      "explanation": "La casse de la lettre dit la pièce : minuscule pour l'arbre, majuscule pour l'alésage. m6 et h6 sont des tolérances d'arbre ; H7 et G7 sont des tolérances d'alésage, comme le H7 du logement du roulement.",
       "difficulty": 2
     },
     {

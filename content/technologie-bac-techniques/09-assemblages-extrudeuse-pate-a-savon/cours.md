@@ -4,7 +4,7 @@
 
 Ce chapitre ouvre le thème des assemblages avec une machine de savonnerie : l'**extrudeuse de pâte à savon**, appelée aussi **boudineuse**, qui façonne le savon en barres. Autour de son moteur électrique, on trouve une trémie d'alimentation, un fourreau qui contient la vis d'extrusion, un cône d'extrusion et un nez de sortie (la filière). Un module retient toute notre attention : le **réducteur à roue et vis sans fin**. Son nom dit sa fonction globale : il transmet une rotation en la ralentissant. Son corps est formé de deux **demi-carters**, le carter inférieur (4) et le carter supérieur (8), fixés par des boulons ; à l'intérieur, la **vis sans fin** (1), à 1 filet, engrène avec la **roue creuse** (9), à 40 dents, et les arbres sont guidés par des roulements.
 
-Trois questions d'atelier guident le chapitre : comment tiennent les deux carters ? comment fixer la roue sur son arbre et la régler ? que faire quand les roulements de la vis s'usent ?
+Le chapitre suit les trois activités du manuel : comment tiennent les deux carters ? comment fixer la roue sur son arbre et la régler ? que faire quand les roulements de la vis s'usent ? Il commence par la lecture du plan et finit par le dessin de la solution.
 
 ## 🔎 Lire la nomenclature : quantités, pièces achetées, matières
 
@@ -80,7 +80,7 @@ Une pièce libre dans l'espace dispose de **six mobilités** : trois **translati
 Sur la figure, l'axe z est perpendiculaire au trait vert du plan de joint ; c'est lui qui sert de repère pour compter.
 
 ::: exemple Que supprime l'appui plan entre (4) et (8) ?
-1. **Translation selon z** : (8) ne peut pas s'enfoncer dans (4), donc **Tz** est supprimée (et tant que les boulons le pressent, il ne peut pas non plus s'éloigner). ← le plan de joint barre le passage dans la direction de sa normale.
+1. **Translation selon z** : (8) ne peut pas s'enfoncer dans (4), donc **Tz** est supprimée dans ce sens. ← le plan de joint barre le passage dans la direction de sa normale. Le sens inverse, s'écarter, n'est pas interdit par la forme : ce sont les boulons qui l'interdisent, en pressant (MAP).
 2. **Rotations autour de x et de y** : basculer (8) sur un bord ferait entrer l'autre bord dans (4), donc **Rx** et **Ry** sont supprimées. ← un appui plan interdit de se pencher.
 3. **Mouvements dans le plan** : (8) peut glisser selon x et selon y et tourner autour de z, comme une assiette sur une nappe : **Tx, Ty, Rz** restent libres. ← glisser sur un plan ne le traverse pas.
 4. **Bilan** : 3 supprimées, 3 libres, donc l'appui plan seul ne donne qu'une liaison partielle.
@@ -89,6 +89,13 @@ Sur la figure, l'axe z est perpendiculaire au trait vert du plan de joint ; c'es
 
 ::: piege Démontable ne veut pas dire partielle
 « On peut démonter les carters, donc la liaison est partielle » ✗. Les deux mots ne mesurent pas la même chose : **complète** ou **partielle** compte les mobilités qui restent ; **démontable** dit seulement qu'on peut défaire l'assemblage sans rien détériorer. Les carters assemblés n'ont plus aucune mobilité (liaison complète) et se démontent pourtant sans casse.
+:::
+
+::: methode Analyser une liaison
+1. Nommer la nature des surfaces en contact : plane, cylindrique.
+2. Compter les mobilités que ces surfaces suppriment seules, éléments de position retirés.
+3. Ajouter celles que suppriment les éléments de position, pieds par exemple.
+4. Classer chaque élément en MIP ou en MAP.
 :::
 
 ::: verifie
@@ -117,7 +124,7 @@ La **mise en position (MIP)** place une pièce par rapport à une autre grâce �
 | --- | --- | --- |
 | Appui plan des deux carters | MIP | Tz, Rx, Ry |
 | Deux pieds de positionnement (5) | MIP | Tx, Ty, Rz |
-| Boulons : vis (14) + écrou (15) + rondelle (28), 6 de chaque | MAP | aucune de plus : ils pressent |
+| Boulons : vis (14) + écrou (15) + rondelle (28), 6 de chaque | MAP | aucune par leur forme : en pressant, ils interdisent au carter de s'écarter |
 
 Un **boulon** est une vis et son écrou (ici avec une rondelle sous l'écrou) : la vis traverse les deux carters, l'écrou la serre de l'autre côté. Le tableau relie chaque élément de la figure précédente à son rôle.
 
@@ -126,10 +133,21 @@ Un **boulon** est une vis et son écrou (ici avec une rondelle sous l'écrou) : 
 :::
 
 
+Le pied est donc dessiné là où le plan de coupe le rend lisible, pas forcément là où il se trouve sur la machine : il n'a pas bougé.
+La mention « ramené dans le plan de coupe » prévient le lecteur de cette convention.
+
+::: verifie
+Le pied (5) apparaît sur la coupe B-B alors que le plan de coupe ne passe pas par lui. Se trouve-t-il ailleurs sur la machine que sur la vue de dessus ?
+
+---
+
+Non : la mention « ramené dans le plan de coupe » indique une convention de dessin. Le pied est représenté comme s'il avait tourné jusqu'à tomber dans le plan, mais sur la machine il reste à sa place, celle qu'on lit sur la vue de dessus.
+:::
+
 ::: exemple Pourquoi deux pieds et pas un ?
-1. **Un seul pied** : un cylindre qui remplit son trou dans chaque carter interdit tout glissement dans le plan, donc **Tx** et **Ty** sont supprimées. ← il ne peut plus aller ni à droite ni en avant.
+1. **Un seul pied** : un cylindre ajusté dans un trou de chaque carter interdit tout glissement dans le plan, donc **Tx** et **Ty** sont supprimées. ← il ne peut plus aller ni à droite ni en avant.
 2. **Reste Rz** : le carter supérieur peut encore pivoter autour de ce pied, comme une porte autour de son axe. ← le pied est lui-même l'axe de cette rotation.
-3. **Second pied, écarté du premier** : pour pivoter autour du premier, le second devrait décrire un arc, mais il remplit lui aussi son trou, donc **Rz** est supprimée. ← deux appuis écartés bloquent la rotation qu'un seul laisse libre.
+3. **Second pied, écarté du premier** : pour pivoter autour du premier, le second devrait décrire un arc, mais il est lui aussi ajusté dans son trou, donc **Rz** est supprimée. ← deux appuis écartés bloquent la rotation qu'un seul laisse libre.
 4. **Bilan** : 3 (plan) + 2 + 1 = 6 mobilités supprimées : liaison complète.
 
 :::
@@ -169,7 +187,7 @@ La colonne de gauche dit ce qu'il faut faire ; celle de droite dit avec quelle p
 
 Le réglage met en jeu des **cales** : de minces plaques d'épaisseur calibrée, que l'on ajoute ou que l'on retire. Les roulements à rouleaux coniques (12) et (12') ont un **jeu interne**, petit déplacement relatif de leurs bagues, qui se règle aussi par l'épaisseur des cales.
 
-::: figure Principe du réglage : les cales (27) et (27') sont placées de part et d'autre, entre les couvercles et les roulements (12) et (12'). Déplacer de l'épaisseur d'un côté à l'autre décale l'arbre (6) et la roue (9) sans changer l'épaisseur totale ; la clavette (7) lie la roue à l'arbre en rotation. Schéma de principe
+::: figure Disposition de principe supposée : les cales (27) et (27') sont placées de part et d'autre, entre les couvercles et les roulements (12) et (12'). Déplacer de l'épaisseur d'un côté à l'autre décale l'arbre (6) et la roue (9) sans changer l'épaisseur totale ; la clavette (7) lie la roue à l'arbre en rotation. Schéma de principe
 <svg viewBox="0 0 540 240"><rect x="60" y="56" width="34" height="44" fill="#e2e8f0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="60" y="124" width="34" height="56" fill="#e2e8f0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="446" y="56" width="34" height="44" fill="#e2e8f0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="446" y="124" width="34" height="56" fill="#e2e8f0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="98" y="70" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="98" y="124" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="420" y="70" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="420" y="124" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="105" y="70" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="105" y="124" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="413" y="70" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="413" y="124" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="112" y="70" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="112" y="124" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="406" y="70" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="406" y="124" width="4" height="30" fill="#0f6e56" stroke="#0f172a" stroke-width="0.8" stroke-linejoin="round"/><rect x="130" y="76" width="38" height="24" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="130" y="124" width="38" height="24" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="372" y="76" width="38" height="24" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="372" y="124" width="38" height="24" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="240" y="58" width="60" height="42" fill="#d1e7df" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="240" y="124" width="60" height="42" fill="#d1e7df" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><path d="M244 50 L244 58" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M244 166 L244 174" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M254 50 L254 58" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M254 166 L254 174" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M264 50 L264 58" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M264 166 L264 174" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M274 50 L274 58" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M274 166 L274 174" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M284 50 L284 58" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M284 166 L284 174" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M294 50 L294 58" fill="none" stroke="#0f172a" stroke-width="2"/><path d="M294 166 L294 174" fill="none" stroke="#0f172a" stroke-width="2"/><rect x="70" y="100" width="400" height="24" fill="#cbd5e1" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="253" y="95" width="34" height="9" fill="#334155" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round"/><text x="111" y="52" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(27)</text><text x="409" y="52" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(27')</text><text x="149" y="64" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(12)</text><text x="391" y="64" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(12')</text><text x="270" y="40" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(9)</text><text x="270" y="88" font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(7)</text><text x="190" y="116" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(6)</text><path d="M118 198 L389.0 198.0" fill="none" stroke="#0f6e56" stroke-width="2"/><polygon points="398.0,198.0 389.0,201.8 389.0,194.2" fill="#0f6e56" stroke="#0f172a" stroke-width="0" stroke-linejoin="round"/><path d="M402 198 L131.0 198.0" fill="none" stroke="#0f6e56" stroke-width="2"/><polygon points="122.0,198.0 131.0,194.2 131.0,201.8" fill="#0f6e56" stroke="#0f172a" stroke-width="0" stroke-linejoin="round"/><text x="260" y="222" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">on déplace de l'épaisseur d'un côté à l'autre</text></svg>
 :::
 
@@ -179,12 +197,12 @@ Le contrôle montre que les dents de la roue (9) portent trop d'un côté du fil
 1. **Cause** : la roue est décalée le long de l'arbre. ← la portée des dents dépend de la position axiale.
 2. **Réglage** : on retire une épaisseur de cales du côté (27) et on la remet du côté (27'). ← l'arbre se décale et entraîne la roue qu'il porte.
 3. **Contrôle du jeu** : l'épaisseur totale n'a pas changé, donc le jeu interne des roulements non plus. ← c'est l'épaisseur totale, non sa répartition, qui fixe ce jeu.
-4. **Résultat** : la position est corrigée, le jeu est intact.
+4. **Résultat** : la position est corrigée, le jeu est intact. Cela demande pourtant de manipuler les deux piles de cales ensemble, et de démonter à chaque essai.
 
 :::
 
 ::: piege Régler l'un, c'est dérégler l'autre
-« Pour décaler la roue, j'ajoute des cales d'un seul côté » ✗. Les mêmes cales règlent la position de la roue **et** le jeu des roulements : en ajouter d'un seul côté change l'épaisseur totale, donc le jeu, sans qu'on l'ait voulu. Le manuel appelle cela un **réglage simultané** et propose de modifier la solution pour l'éviter.
+« Pour décaler la roue, j'ajoute des cales d'un seul côté » ✗. Les mêmes cales règlent la position de la roue **et** le jeu des roulements : on ne peut pas régler l'un sans agir sur l'autre, et en ajouter d'un seul côté change l'épaisseur totale, donc le jeu. Le manuel parle de « **réglage simultané** » et propose une solution qui sépare les deux réglages.
 :::
 
 ::: verifie
@@ -196,7 +214,7 @@ La clavette est logée dans une rainure parallèle à l'axe : elle empêche la r
 :::
 
 ::: retenir
-Une fonction technique se réalise par une solution constructive ; la clavette lie en rotation seulement ; les cales règlent la position axiale et le jeu des roulements, d'où le risque de réglage simultané.
+Une fonction technique se réalise par une solution constructive ; la clavette lie en rotation seulement ; les cales règlent la position axiale et le jeu des roulements : déplacer l'épaisseur d'un côté à l'autre garde le jeu, en ajouter d'un seul côté le change (réglage simultané).
 :::
 
 ## 🔧 Guider la vis sans fin : choisir le type de roulement
@@ -216,7 +234,7 @@ Un **guidage en rotation** réalise concrètement une liaison **pivot** : l'arbr
 | Rouleaux coniques | radiales et axiales importantes | moyenne |
 
 ::: figure La vis sans fin (1) est guidée par deux roulements (19). L'engrènement avec la roue creuse (9) la charge perpendiculairement à son axe (charge radiale) et la pousse le long de son axe (charge axiale)
-<svg viewBox="0 0 520 240"><rect x="60" y="100" width="400" height="24" fill="#cbd5e1" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><polygon points="190.0,100.0 202.0,86.0 214.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="190.0,124.0 202.0,138.0 214.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="214.0,100.0 226.0,86.0 238.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="214.0,124.0 226.0,138.0 238.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="238.0,100.0 250.0,86.0 262.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="238.0,124.0 250.0,138.0 262.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="262.0,100.0 274.0,86.0 286.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="262.0,124.0 274.0,138.0 286.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="286.0,100.0 298.0,86.0 310.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="286.0,124.0 298.0,138.0 310.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="310.0,100.0 322.0,86.0 334.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="310.0,124.0 322.0,138.0 334.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><rect x="190" y="142" width="144" height="52" fill="#d1e7df" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="96" y="82" width="28" height="60" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="396" y="82" width="28" height="60" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><text x="110" y="74" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(19)</text><text x="410" y="74" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(19)</text><text x="262" y="172" font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">roue creuse (9)</text><path d="M190 48 L325.0 48.0" fill="none" stroke="#0f6e56" stroke-width="2.6"/><polygon points="334.0,48.0 325.0,51.8 325.0,44.2" fill="#0f6e56" stroke="#0f172a" stroke-width="0" stroke-linejoin="round"/><text x="262" y="38" font-size="12" font-weight="700" text-anchor="middle" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">charge axiale</text><path d="M156 176 L156.0 135.0" fill="none" stroke="#0f6e56" stroke-width="2.6"/><polygon points="156.0,126.0 159.8,135.0 152.2,135.0" fill="#0f6e56" stroke="#0f172a" stroke-width="0" stroke-linejoin="round"/><text x="156" y="194" font-size="12" font-weight="700" text-anchor="middle" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">charge radiale</text></svg>
+<svg viewBox="0 0 520 240"><rect x="60" y="100" width="400" height="24" fill="#cbd5e1" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><polygon points="190.0,100.0 202.0,86.0 214.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="190.0,124.0 202.0,138.0 214.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="214.0,100.0 226.0,86.0 238.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="214.0,124.0 226.0,138.0 238.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="238.0,100.0 250.0,86.0 262.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="238.0,124.0 250.0,138.0 262.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="262.0,100.0 274.0,86.0 286.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="262.0,124.0 274.0,138.0 286.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="286.0,100.0 298.0,86.0 310.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="286.0,124.0 298.0,138.0 310.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="310.0,100.0 322.0,86.0 334.0,100.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><polygon points="310.0,124.0 322.0,138.0 334.0,124.0" fill="#d1e7df" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><rect x="190" y="142" width="144" height="52" fill="#d1e7df" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="96" y="82" width="28" height="60" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="396" y="82" width="28" height="60" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><text x="110" y="74" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(19)</text><text x="410" y="74" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">(19)</text><text x="262" y="188" font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">roue creuse (9)</text><path d="M190 48 L325.0 48.0" fill="none" stroke="#0f6e56" stroke-width="2.6"/><polygon points="334.0,48.0 325.0,51.8 325.0,44.2" fill="#0f6e56" stroke="#0f172a" stroke-width="0" stroke-linejoin="round"/><text x="262" y="38" font-size="12" font-weight="700" text-anchor="middle" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">charge axiale</text><path d="M262 168 L262.0 149.0" fill="none" stroke="#0f6e56" stroke-width="2.6"/><polygon points="262.0,140.0 265.8,149.0 258.2,149.0" fill="#0f6e56" stroke="#0f172a" stroke-width="0" stroke-linejoin="round"/><text x="396" y="172" font-size="12" font-weight="700" text-anchor="middle" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">charge radiale</text></svg>
 :::
 
 La nomenclature désigne les roulements (19) comme des roulements à une rangée de billes à contact radial.
@@ -245,7 +263,7 @@ Charges radiales et axiales importantes : il faut un contact oblique ou des roul
 Contact radial : charges surtout radiales. Charges radiales et axiales importantes : billes à contact oblique (vitesse importante) ou rouleaux coniques (vitesse moyenne). Remplacer à l'identique ne corrige pas un mauvais choix.
 :::
 
-## ✖️ Monter la paire : en X ou en O, quatre arrêts, des portées ajustées
+## ✖️ Monter la paire : en X ou en O
 
 Un roulement à billes à contact oblique ne reprend l'effort axial que dans un sens : seul, il laisserait l'arbre partir dans l'autre. On les monte donc **par paire**, retournés l'un par rapport à l'autre. 
 
@@ -268,24 +286,56 @@ Les deux montages utilisent les mêmes roulements : seule leur orientation chang
 
 :::
 
-::: piege Un roulement n'est pas un arrêt
-« Deux roulements, donc deux arrêts » ✗. On compte par **bague** : chaque roulement a une bague intérieure et une bague extérieure, et chacune doit être arrêtée en translation. Deux roulements, quatre arrêts.
-:::
-
-::: propriete Quatre arrêts, dont un de réglage, et des portées ajustées
-Deux roulements de deux bagues chacun demandent **quatre arrêts axiaux** ; un seul d'entre eux règle le jeu, par des cales. Sur les portées, la casse de la lettre dit la pièce : **m6** (minuscule) sur la portée d'**arbre**, **H7** (majuscule) sur l'**alésage** du logement.
-:::
-
 ::: verifie
-Un arbre tournant dans un carter fixe est guidé par une paire de roulements à billes à contact oblique. Quel montage ? Combien d'arrêts axiaux, et combien servent au réglage ?
+Un arbre tournant dans un carter fixe est guidé par une paire de roulements à billes à contact oblique. Quel montage adopter ?
 
 ---
 
-L'arbre tourne : montage **en X**. Deux roulements de deux bagues chacun font **quatre arrêts**, dont **un seul** règle le jeu, par des cales.
+L'arbre tourne : montage **en X**. La règle ne regarde que la pièce qui tourne, pas le type de roulement.
 :::
 
 ::: retenir
-Arbre tournant : X ; moyeu tournant : O. Une paire de roulements : quatre arrêts, dont un de réglage. Portées : m6 pour l'arbre, H7 pour l'alésage.
+Arbre tournant : X ; moyeu tournant : O. En X les lignes d'action se rapprochent vers l'axe, en O elles s'écartent.
+:::
+
+## 🧱 Arrêter les bagues, ajuster les portées
+
+Une paire de roulements est montée sur la vis sans fin. Si rien ne bloque leurs bagues le long de l'axe, la paire glisse dès qu'une charge axiale arrive.
+
+Que faut-il arrêter, et comment dire qu'une bague est montée serrée ou avec jeu ?
+
+::: definition Arrêts axiaux et portées
+Chaque **bague** d'un roulement, intérieure comme extérieure, est arrêtée en translation par une **butée** : épaulement, couvercle, anneau. Une **portée** est la surface de l'arbre ou du logement qui reçoit une bague ; sa **tolérance** dit comment la bague s'y monte. La casse de la lettre dit la pièce : **minuscule** pour l'arbre (m6), **majuscule** pour l'alésage du logement (H7).
+:::
+
+::: figure Les quatre bagues de la paire montée en X, chacune appuyée sur sa butée noire : la bague extérieure de gauche et celle de droite côté logement, les deux bagues intérieures côté arbre. Quatre bagues, quatre arrêts
+<svg viewBox="0 0 260 230"><rect x="20" y="60" width="180" height="32" fill="#cbd5e1" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="20" y="140" width="180" height="50" fill="#e2e8f0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><path d="M14 190 L206 190" fill="none" stroke="#0f172a" stroke-width="1.6" stroke-dasharray="14 4 3 4"/><rect x="53" y="92" width="34" height="16" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="53" y="124" width="34" height="16" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><circle cx="70" cy="116" r="7" fill="#ffffff" stroke="#0f172a" stroke-width="2"/><rect x="133" y="92" width="34" height="16" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="133" y="124" width="34" height="16" fill="#dbeafe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><circle cx="150" cy="116" r="7" fill="#ffffff" stroke="#0f172a" stroke-width="2"/><path d="M56 92 L84 140" fill="none" stroke="#0f6e56" stroke-width="3"/><path d="M164 92 L136 140" fill="none" stroke="#0f6e56" stroke-width="3"/><rect x="45" y="92" width="8" height="16" fill="#0f172a" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/><rect x="87" y="124" width="8" height="16" fill="#0f172a" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/><rect x="125" y="124" width="8" height="16" fill="#0f172a" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/><rect x="167" y="92" width="8" height="16" fill="#0f172a" stroke="#0f172a" stroke-width="1.5" stroke-linejoin="round"/></svg>
+:::
+
+Chaque butée noire de la figure correspond à un arrêt : on en compte autant que de bagues.
+
+::: exemple Arrêter et ajuster la paire de la vis sans fin
+1. **Compter les bagues** : 2 roulements × 2 bagues = 4. ← un arrêt par bague.
+2. **Choisir l'arrêt de réglage** : un seul des quatre est réglable, par des cales, pour fixer le jeu. ← les trois autres sont fixes.
+3. **Portée de l'arbre** : la bague intérieure tourne avec l'arbre et s'y monte serrée, on écrit **m6** (minuscule). ← la lettre minuscule désigne l'arbre.
+4. **Alésage du logement** : le logement est fixe et reçoit la bague extérieure, on écrit **H7** (majuscule). ← la lettre majuscule désigne l'alésage.
+
+:::
+
+::: piege Un roulement n'est pas un arrêt
+« Deux roulements, donc deux arrêts » ✗. On compte par **bague** : chaque roulement a une bague intérieure et une bague extérieure, et chacune doit être arrêtée. Deux roulements, quatre arrêts.
+:::
+
+::: verifie
+Un dessin porte « H7 » sur une portée de roulement. S'agit-il d'un arbre ou d'un alésage ? Combien d'arrêts pour une paire, dont combien de réglage ?
+
+---
+
+La lettre est majuscule : c'est un **alésage**, celui du logement. Une paire compte 2 × 2 = **4 arrêts**, dont **un seul** de réglage.
+:::
+
+::: retenir
+Une paire de roulements : quatre arrêts, dont un de réglage. Portées : m6 (minuscule) pour l'arbre, H7 (majuscule) pour l'alésage.
 :::
 
 ## 🛢️ Lubrifier et étancher

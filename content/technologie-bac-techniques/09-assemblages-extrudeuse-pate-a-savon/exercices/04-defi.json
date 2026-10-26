@@ -16,20 +16,35 @@
   },
   "questions": [
     {
-      "type": "numeric",
-      "prompt": "Dans la nomenclature du réducteur, deux lignes portent la désignation « Vis à tête hexagonale » : le repère 14, quantité 6, et le repère 25, quantité 16. Le repère 11, quantité 4, est une « Vis à tête cylindrique fendue ». Combien de vis à tête hexagonale le réducteur compte-t-il au total ?",
-      "answerKey": {
-        "value": 22
-      },
-      "explanation": "On additionne les quantités de toutes les lignes de même désignation : 6 + 16 = 22. Les 4 vis à tête cylindrique fendue sont d'une autre sorte et ne comptent pas ; s'arrêter à la première ligne donnerait 6, et les ajouter donnerait 26.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "La vis sans fin supporte les deux charges représentées, toutes deux importantes, et tourne à vitesse importante. Quel guidage complet faut-il adopter : type de roulements, montage et nombre d'arrêts axiaux ?\n\n<svg viewBox=\"0 0 520 240\"><rect x=\"60\" y=\"100\" width=\"400\" height=\"24\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"190.0,100.0 202.0,86.0 214.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"190.0,124.0 202.0,138.0 214.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"214.0,100.0 226.0,86.0 238.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"214.0,124.0 226.0,138.0 238.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"238.0,100.0 250.0,86.0 262.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"238.0,124.0 250.0,138.0 262.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"262.0,100.0 274.0,86.0 286.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"262.0,124.0 274.0,138.0 286.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"286.0,100.0 298.0,86.0 310.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"286.0,124.0 298.0,138.0 310.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"310.0,100.0 322.0,86.0 334.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"310.0,124.0 322.0,138.0 334.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"190\" y=\"142\" width=\"144\" height=\"52\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"262\" y=\"172\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">roue creuse (9)</text><path d=\"M190 48 L325.0 48.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><polygon points=\"334.0,48.0 325.0,51.8 325.0,44.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><text x=\"262\" y=\"38\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">charge axiale</text><path d=\"M156 176 L156.0 135.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><polygon points=\"156.0,126.0 159.8,135.0 152.2,135.0\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><text x=\"156\" y=\"194\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">charge radiale</text></svg>",
+      "prompt": "Pour la nouvelle solution de guidage de la vis sans fin, on consulte la nomenclature : repère 12, quantité 2, roulement à rouleaux coniques, standard ; repère 19, quantité 2, roulement à une rangée de billes à contact radial, 100 Cr 6, standard. Quelle ligne remplace-t-on, et que prévoit-on ?",
       "options": [
         {
           "id": "a",
-          "text": "Billes à contact oblique, montage en O, 4 arrêts"
+          "text": "Le repère 12 : deux roulements à remplacer par deux roulements à billes à contact oblique, achetés"
+        },
+        {
+          "id": "b",
+          "text": "Le repère 19 : quatre roulements, car on prévoit une paire par bague de la vis"
+        },
+        {
+          "id": "c",
+          "text": "Le repère 19 : deux roulements à remplacer par deux roulements à billes à contact oblique, achetés"
+        },
+        {
+          "id": "d",
+          "text": "Le repère 19 : deux roulements à remplacer par deux roulements à contact oblique, à fabriquer"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les roulements à contact radial usés sont ceux de la vis sans fin, repère 19 ; les rouleaux coniques du repère 12 ne sont pas en cause. On les remplace par une paire, donc deux roulements, de type standard : composants normalisés qui s'achètent au catalogue. Quatre roulements confondraient les bagues, qui sont quatre, avec les roulements, qui sont deux ; et un roulement ne se fabrique pas dans l'atelier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La vis sans fin, qui tourne dans le carter fixe, supporte les deux charges représentées, toutes deux importantes, et tourne à vitesse importante. Quel guidage complet faut-il adopter : type de roulements, montage et nombre d'arrêts axiaux ?\n\n<svg viewBox=\"0 0 520 240\"><rect x=\"60\" y=\"100\" width=\"400\" height=\"24\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"190.0,100.0 202.0,86.0 214.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"190.0,124.0 202.0,138.0 214.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"214.0,100.0 226.0,86.0 238.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"214.0,124.0 226.0,138.0 238.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"238.0,100.0 250.0,86.0 262.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"238.0,124.0 250.0,138.0 262.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"262.0,100.0 274.0,86.0 286.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"262.0,124.0 274.0,138.0 286.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"286.0,100.0 298.0,86.0 310.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"286.0,124.0 298.0,138.0 310.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"310.0,100.0 322.0,86.0 334.0,100.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"310.0,124.0 322.0,138.0 334.0,124.0\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"190\" y=\"142\" width=\"144\" height=\"52\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"262\" y=\"188\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">roue creuse (9)</text><path d=\"M190 48 L325.0 48.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><polygon points=\"334.0,48.0 325.0,51.8 325.0,44.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><text x=\"262\" y=\"38\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">charge axiale</text><path d=\"M262 168 L262.0 149.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><polygon points=\"262.0,140.0 265.8,149.0 258.2,149.0\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><text x=\"396\" y=\"172\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">charge radiale</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Billes à contact oblique, montage en O, 2 arrêts"
         },
         {
           "id": "b",
@@ -37,31 +52,31 @@
         },
         {
           "id": "c",
-          "text": "Billes à contact oblique, montage en X, 2 arrêts"
+          "text": "Rouleaux coniques, montage en X, 2 arrêts"
         },
         {
           "id": "d",
-          "text": "Rouleaux coniques, montage en X, 4 arrêts"
+          "text": "Billes à contact radial, montage en O, 4 arrêts"
         }
       ],
       "correctOption": "b",
-      "explanation": "Charges radiale et axiale importantes : contact oblique ou rouleaux coniques ; la vitesse importante oriente vers les billes. La vis est un arbre tournant : montage en X. Deux roulements de deux bagues demandent quatre arrêts. Chaque autre proposition se trompe sur un seul point : le montage en O est celui d'un moyeu tournant, deux arrêts n'arrêtent qu'une bague par roulement, et les rouleaux coniques sont retenus pour une vitesse moyenne.",
+      "explanation": "Charges radiale et axiale importantes : contact oblique ou rouleaux coniques ; la vitesse importante oriente vers les billes. La vis est un arbre tournant : montage en X. Deux roulements de deux bagues demandent quatre arrêts. Chaque autre proposition se trompe sur au moins deux points : le montage en O est celui d'un moyeu tournant, deux arrêts n'arrêtent qu'une bague par roulement, les rouleaux coniques sont retenus pour une vitesse moyenne et le contact radial supporte mal la charge axiale.",
       "difficulty": 3
     },
     {
-      "prompt": "Un élève justifie, pour la vis sans fin, une paire de roulements à billes à contact oblique montée en X. Une seule de ses quatre justifications est FAUSSE. Laquelle ?",
+      "prompt": "Un élève justifie, pour une roue folle qui tourne sur un axe fixe, avec des charges radiales et axiales importantes à vitesse moyenne, une paire de roulements à rouleaux coniques montée en O. Une seule de ses quatre justifications est FAUSSE. Laquelle ?",
       "options": [
         {
           "id": "a",
-          "text": "Une charge axiale importante justifie des roulements à contact oblique"
+          "text": "Des charges radiales et axiales importantes appellent un contact oblique ou des rouleaux coniques"
         },
         {
           "id": "b",
-          "text": "Une vitesse importante oriente vers des billes plutôt que des rouleaux coniques"
+          "text": "Une vitesse moyenne oriente vers des rouleaux coniques plutôt que des billes"
         },
         {
           "id": "c",
-          "text": "L'arbre tourne, ce qui impose le montage en X"
+          "text": "Le moyeu tourne, ce qui conduit généralement au montage en O"
         },
         {
           "id": "d",
@@ -69,7 +84,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Les trois premières justifications sont conformes à la règle de choix. La dernière est fausse : sur les quatre arrêts, un seul sert au réglage du jeu, par des cales. (Chasse à l'erreur : l'affirmation clé est la fausse.)",
+      "explanation": "Les trois premières justifications sont conformes à la règle de choix. La dernière est fausse : sur les quatre arrêts, un seul sert au réglage du jeu, par des cales. La question demande l'énoncé erroné, c'est donc lui qui est la réponse.",
       "difficulty": 3
     },
     {
@@ -98,37 +113,37 @@
     },
     {
       "type": "multi",
-      "prompt": "Les roulements à billes à contact radial (19) de la vis sans fin sont usés. Coche TOUTES les actions qui font partie d'une réparation correcte.",
+      "prompt": "Les roulements à billes à contact radial (19) de la vis sans fin présentent une usure précoce du chemin de roulement. Coche TOUTES les observations qui montrent que leur choix est mal adapté.",
       "options": [
         {
           "id": "a",
-          "text": "Choisir une paire de roulements à billes à contact oblique"
+          "text": "La vis sans fin subit une forte charge axiale en plus de la charge radiale"
         },
         {
           "id": "b",
-          "text": "Reposer des roulements à billes à contact radial neufs, identiques aux anciens"
+          "text": "Ces roulements sont prévus surtout pour des charges radiales"
         },
         {
           "id": "c",
-          "text": "Monter la paire en X, l'arbre de la vis étant tournant"
+          "text": "L'usure se concentre sur le chemin de roulement, là où arrive la charge"
         },
         {
           "id": "d",
-          "text": "Prévoir quatre arrêts axiaux, dont un pour régler le jeu"
+          "text": "Les roulements sont montés par paire"
         },
         {
           "id": "e",
-          "text": "Vidanger et renouveler l'huile, sans rien changer d'autre"
+          "text": "La nomenclature indique l'observation « Standard »"
         }
       ],
       "answerKey": {
         "correct": [
           "a",
-          "c",
-          "d"
+          "b",
+          "c"
         ]
       },
-      "explanation": "L'usure vient d'un type mal adapté à la charge axiale : il faut changer de type, donc passer au contact oblique, monter la paire en X puisque l'arbre tourne, et prévoir les quatre arrêts dont un de réglage. Remettre des roulements identiques ou ne changer que l'huile laisse la cause intacte : l'usure reviendra.",
+      "explanation": "Un contact radial supporte surtout des charges radiales ; or la vis subit aussi une forte charge axiale, et l'usure précoce du chemin est le symptôme de cette charge mal reprise : ces trois observations convergent vers un choix inadapté. Monter les roulements par paire est la pratique courante, et « Standard » dit seulement qu'ils s'achètent au catalogue : ni l'un ni l'autre ne prouve une erreur de choix.",
       "difficulty": 3
     },
     {
@@ -137,19 +152,19 @@
       "options": [
         {
           "id": "a",
-          "text": "L'inspection par ultrasons révèle l'usure du chemin de roulement des roulements (19)"
+          "text": "L'inspection par ultrasons révèle une usure du chemin de roulement sur les roulements (19)"
         },
         {
           "id": "b",
-          "text": "On compare leur type, billes à contact radial, aux charges réelles, qui comprennent une forte charge axiale"
+          "text": "On compare leur type aux charges réelles de la vis, qui comprennent une forte charge axiale"
         },
         {
           "id": "c",
-          "text": "On retient une paire de roulements à billes à contact oblique"
+          "text": "On choisit un nouveau type de roulement adapté à ces charges et à la vitesse"
         },
         {
           "id": "d",
-          "text": "On monte la paire en X, car l'arbre est tournant"
+          "text": "On choisit le montage de la paire d'après la pièce qui tourne"
         }
       ],
       "answerKey": {

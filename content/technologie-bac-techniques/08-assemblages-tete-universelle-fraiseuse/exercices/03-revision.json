@@ -7,11 +7,11 @@
   "displayOrder": 3,
   "questions": [
     {
-      "prompt": "Un guidage ne supporte qu'une charge axiale, sans charge radiale notable, et l'on dispose de très peu de place en épaisseur. Quel élément choisir ?",
+      "prompt": "Un guidage ne supporte qu'une charge radiale, sans charge axiale notable, et l'on dispose de très peu d'encombrement radial. Quel élément choisir ?",
       "options": [
         {
           "id": "a",
-          "text": "Une butée à aiguilles"
+          "text": "Une douille à aiguilles"
         },
         {
           "id": "b",
@@ -19,15 +19,15 @@
         },
         {
           "id": "c",
-          "text": "Une douille à aiguilles"
+          "text": "Une butée à aiguilles"
         },
         {
           "id": "d",
-          "text": "Un roulement à billes à contact oblique"
+          "text": "Un roulement à rouleaux coniques"
         }
       ],
       "correctOption": "a",
-      "explanation": "La butée à aiguilles ne reprend que des charges axiales et occupe très peu de place dans le sens axial : c'est elle qui correspond. La douille à aiguilles est son pendant radial, et ne convient donc pas ici ; le roulement à contact radial ou à contact oblique encaisse aussi du radial, dont on n'a pas besoin, pour un encombrement plus grand.",
+      "explanation": "La douille à aiguilles ne reprend que des charges radiales et occupe très peu de place dans le sens radial : c'est elle qui correspond. La butée à aiguilles est son pendant axial, donc inutile ici ; le roulement à contact radial et le roulement à rouleaux coniques encombrent davantage et prévoient de l'axial dont on n'a pas besoin.",
       "difficulty": 1
     },
     {
@@ -62,7 +62,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Deux solutions sont notées de 0 à 3 sur sept critères : S1 totalise 15, S2 totalise 14. Le cahier des charges impose une maintenabilité notée au moins 3 ; S1 a 2 sur ce critère, S2 a 3. Que décide-t-on ?",
+      "prompt": "Deux solutions sont notées de 0 à 3 sur sept critères : S1 totalise 15, S2 totalise 14. Le cahier des charges impose un seuil : une maintenabilité d'au moins 3. S1 a 2 sur ce critère, S2 a 3. Que décide-t-on ?",
       "options": [
         {
           "id": "a",
@@ -111,38 +111,38 @@
     },
     {
       "type": "multi",
-      "prompt": "Sélectionne toutes les solutions qui lient en TRANSLATION un moyeu à son arbre, c'est-à-dire qui l'empêchent de glisser le long de l'arbre.",
+      "prompt": "Sélectionne toutes les solutions qui lient en TRANSLATION un moyeu à son arbre, c'est-à-dire qui l'empêchent de glisser le long de l'arbre dans les deux sens.",
       "options": [
         {
           "id": "a",
-          "text": "Un épaulement de l'arbre"
+          "text": "Un épaulement associé à un anneau élastique pour arbre"
         },
         {
           "id": "b",
-          "text": "Un anneau élastique pour arbre"
-        },
-        {
-          "id": "c",
           "text": "Une clavette parallèle"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Des cannelures"
         },
         {
+          "id": "d",
+          "text": "Un épaulement, une rondelle d'appui et un écrou à encoches avec rondelle frein"
+        },
+        {
           "id": "e",
-          "text": "Un écrou à encoches avec sa rondelle frein"
+          "text": "Un lardon dans sa rainure"
         }
       ],
       "answerKey": {
-        "correct": ["a", "b", "e"]
+        "correct": ["a", "d"]
       },
-      "explanation": "L'épaulement arrête le moyeu dans un sens, l'anneau élastique dans l'autre, et l'écrou à encoches avec sa rondelle frein le plaque contre l'épaulement tout en s'opposant au desserrage : ce sont trois solutions de translation. La clavette et les cannelures, elles, sont des solutions de rotation : elles laissent le moyeu glisser axialement si rien d'autre ne l'arrête.",
+      "explanation": "L'épaulement arrête le moyeu dans un sens et l'anneau élastique dans l'autre ; de même, l'écrou à encoches et sa rondelle frein plaquent le moyeu contre l'épaulement tout en s'opposant au desserrage : ces deux ensembles suppriment Tz dans les deux sens. La clavette, les cannelures et le lardon sont des solutions de rotation : ils laissent le moyeu glisser axialement si rien d'autre ne l'arrête.",
       "difficulty": 2
     },
     {
       "type": "numeric",
-      "prompt": "Une paire de roulements à contact oblique est montée dans un logement (voir figure). Combien d'arrêts en translation, épaulements ou couvercles, retiennent les bagues de cette paire ?\n<svg viewBox=\"0 0 270 170\"><path d=\"M20 126 L102 126 L102 150 L20 150 Z\" fill=\"#bfdbfe\"/><path d=\"M20 126 L102 126 L102 150 L20 150 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M102 114 L160 114 L160 150 L102 150 Z\" fill=\"#bfdbfe\"/><path d=\"M102 114 L160 114 L160 150 L102 150 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 126 L230 126 L230 150 L160 150 Z\" fill=\"#bfdbfe\"/><path d=\"M160 126 L230 126 L230 150 L160 150 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M74 68 L188 68 L188 98 L74 98 Z\" fill=\"#fde68a\"/><path d=\"M74 68 L188 68 L188 98 L74 98 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M44 68 L74 68 L74 104 L44 104 Z\" fill=\"#e2e8f0\"/><path d=\"M44 68 L74 68 L74 104 L44 104 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M188 68 L218 68 L218 104 L188 104 Z\" fill=\"#e2e8f0\"/><path d=\"M188 68 L218 68 L218 104 L188 104 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M74 118 L102 118 L102 126 L74 126 Z\" fill=\"#e2e8f0\"/><path d=\"M74 118 L102 118 L102 126 L74 126 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M74 98 L102 98 L102 106 L74 106 Z\" fill=\"#e2e8f0\"/><path d=\"M74 98 L102 98 L102 106 L74 106 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 118 L188 118 L188 126 L160 126 Z\" fill=\"#e2e8f0\"/><path d=\"M160 118 L188 118 L188 126 L160 126 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 98 L188 98 L188 106 L160 106 Z\" fill=\"#e2e8f0\"/><path d=\"M160 98 L188 98 L188 106 L160 106 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"88.0\" cy=\"112\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M79.9 98 L109.9 150\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"1.8\" stroke-dasharray=\"6 3\" /><circle cx=\"174.0\" cy=\"112\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M182.1 98 L152.1 150\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"1.8\" stroke-dasharray=\"6 3\" /><path d=\"M10 150 L240 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"12 3 3 3\" /></svg>",
+      "prompt": "Une paire de roulements à contact oblique est montée dans un logement (voir figure). Combien d'arrêts en translation (un appui par bague) retiennent les bagues de cette paire ?\n<svg viewBox=\"0 0 270 170\"><path d=\"M20 126 L102 126 L102 150 L20 150 Z\" fill=\"#bfdbfe\"/><path d=\"M20 126 L102 126 L102 150 L20 150 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M102 114 L160 114 L160 150 L102 150 Z\" fill=\"#bfdbfe\"/><path d=\"M102 114 L160 114 L160 150 L102 150 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 126 L230 126 L230 150 L160 150 Z\" fill=\"#bfdbfe\"/><path d=\"M160 126 L230 126 L230 150 L160 150 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M74 68 L188 68 L188 98 L74 98 Z\" fill=\"#fde68a\"/><path d=\"M74 68 L188 68 L188 98 L74 98 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M44 68 L74 68 L74 104 L44 104 Z\" fill=\"#e2e8f0\"/><path d=\"M44 68 L74 68 L74 104 L44 104 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M188 68 L218 68 L218 104 L188 104 Z\" fill=\"#e2e8f0\"/><path d=\"M188 68 L218 68 L218 104 L188 104 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M74 118 L102 118 L102 126 L74 126 Z\" fill=\"#e2e8f0\"/><path d=\"M74 118 L102 118 L102 126 L74 126 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M74 98 L102 98 L102 106 L74 106 Z\" fill=\"#e2e8f0\"/><path d=\"M74 98 L102 98 L102 106 L74 106 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 118 L188 118 L188 126 L160 126 Z\" fill=\"#e2e8f0\"/><path d=\"M160 118 L188 118 L188 126 L160 126 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 98 L188 98 L188 106 L160 106 Z\" fill=\"#e2e8f0\"/><path d=\"M160 98 L188 98 L188 106 L160 106 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"88.0\" cy=\"112\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M79.9 98 L109.9 150\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"1.8\" stroke-dasharray=\"6 3\" /><circle cx=\"174.0\" cy=\"112\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M182.1 98 L152.1 150\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"1.8\" stroke-dasharray=\"6 3\" /><path d=\"M10 150 L240 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"12 3 3 3\" /></svg>",
       "answerKey": {
         "value": 4,
         "unit": "arrêts"

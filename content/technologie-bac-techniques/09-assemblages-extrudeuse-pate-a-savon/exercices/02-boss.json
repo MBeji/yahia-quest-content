@@ -36,7 +36,7 @@
         },
         {
           "id": "e",
-          "text": "Les boulons suppriment, par leur forme, les mobilités que l'appui plan laisse libres"
+          "text": "L'appui plan seul suffit à supprimer les six mobilités entre les carters"
         }
       ],
       "answerKey": {
@@ -46,7 +46,31 @@
           "d"
         ]
       },
-      "explanation": "Appui plan et pieds suppriment ensemble les six mobilités : liaison complète. Les boulons se défont sans rien détériorer : elle est démontable. Complète ou partielle ne dépend pas de la démontabilité, mais des mobilités restantes. Ce sont les pieds, cylindres ajustés, qui suppriment Tx, Ty et Rz ; les boulons traversent des trous plus larges qu'eux et ne font que presser les carters.",
+      "explanation": "Appui plan et pieds suppriment ensemble les six mobilités : liaison complète. Les boulons se défont sans rien détériorer : elle est démontable. Complète ou partielle ne dépend pas de la démontabilité, mais des mobilités restantes. Ce sont les pieds, cylindres ajustés, qui suppriment Tx, Ty et Rz ; l'appui plan seul n'en supprime que trois.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une roue folle tourne autour d'un axe fixe, guidée par deux roulements à billes à contact oblique montés par paire (voir figure). Quel montage adopter ?\n\n<svg viewBox=\"0 0 500 250\"><rect x=\"30\" y=\"150\" width=\"440\" height=\"80\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M20 230 L480 230\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"14 4 3 4\"/><rect x=\"100\" y=\"40\" width=\"300\" height=\"52\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"80\" y=\"20\" width=\"340\" height=\"20\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"122\" y=\"92\" width=\"36\" height=\"20\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"122\" y=\"130\" width=\"36\" height=\"20\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"140\" cy=\"121\" r=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"342\" y=\"92\" width=\"36\" height=\"20\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"342\" y=\"130\" width=\"36\" height=\"20\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"360\" cy=\"121\" r=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"250\" y=\"198\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">axe fixe</text><text x=\"250\" y=\"70\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">moyeu de la roue</text><text x=\"250\" y=\"34\" font-size=\"11.5\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">jante</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "En X : la règle vaut pour tout guidage par roulements à contact oblique"
+        },
+        {
+          "id": "b",
+          "text": "En O : c'est le moyeu, c'est-à-dire l'alésage, qui tourne"
+        },
+        {
+          "id": "c",
+          "text": "En X : l'axe étant fixe, il impose son montage au moyeu"
+        },
+        {
+          "id": "d",
+          "text": "Indifférent : X et O conviennent aussi bien l'un que l'autre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le choix dépend de ce qui tourne : arbre tournant, montage en X ; moyeu (alésage) tournant, montage en O. Ici l'axe est fixe et c'est le moyeu de la roue qui tourne, donc le montage est en O. Le type de roulement, déjà fixé, ne décide pas du montage, et les deux montages ne sont pas équivalents.",
       "difficulty": 2
     },
     {
@@ -74,7 +98,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "Le contrôle de la portée des dents montre que la roue creuse (9) est décalée le long de l'arbre (6) par rapport à la vis sans fin (1). Le technicien veut la recentrer sans toucher au jeu interne des roulements (12) et (12'). Que fait-il avec les cales (27) et (27') ?",
+      "prompt": "Dans le principe de réglage du cours, le contrôle de la portée des dents montre que la roue creuse (9) est décalée le long de l'arbre (6) par rapport à la vis sans fin (1). Le technicien veut la recentrer sans toucher au jeu interne des roulements (12) et (12'). Que fait-il avec les cales (27) et (27') ?",
       "options": [
         {
           "id": "a",
@@ -98,30 +122,6 @@
       "difficulty": 3
     },
     {
-      "prompt": "Une roue folle tourne autour d'un axe fixe, guidée par deux roulements à billes à contact oblique montés par paire (voir figure). Quel montage adopter ?\n\n<svg viewBox=\"0 0 500 250\"><rect x=\"30\" y=\"150\" width=\"440\" height=\"80\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M20 230 L480 230\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"14 4 3 4\"/><rect x=\"100\" y=\"40\" width=\"300\" height=\"52\" fill=\"#d1e7df\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"80\" y=\"20\" width=\"340\" height=\"20\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"122\" y=\"92\" width=\"36\" height=\"20\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"122\" y=\"130\" width=\"36\" height=\"20\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"140\" cy=\"121\" r=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"342\" y=\"92\" width=\"36\" height=\"20\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"342\" y=\"130\" width=\"36\" height=\"20\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"360\" cy=\"121\" r=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"250\" y=\"198\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">axe fixe</text><text x=\"250\" y=\"70\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">moyeu de la roue</text><text x=\"250\" y=\"34\" font-size=\"11.5\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">jante</text></svg>",
-      "options": [
-        {
-          "id": "a",
-          "text": "En X : la règle vaut pour tout guidage par roulements à contact oblique"
-        },
-        {
-          "id": "b",
-          "text": "En O : c'est le moyeu, c'est-à-dire l'alésage, qui tourne"
-        },
-        {
-          "id": "c",
-          "text": "En X : l'axe étant fixe, il impose son montage au moyeu"
-        },
-        {
-          "id": "d",
-          "text": "Indifférent : X et O conviennent aussi bien l'un que l'autre"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "Le choix dépend de ce qui tourne : arbre tournant, montage en X ; moyeu (alésage) tournant, montage en O. Ici l'axe est fixe et c'est le moyeu de la roue qui tourne, donc le montage est en O. Le type de roulement, déjà fixé, ne décide pas du montage, et les deux montages ne sont pas équivalents.",
-      "difficulty": 3
-    },
-    {
       "prompt": "Un élève analyse l'assemblage des carters (4) et (8), pieds en place. Une seule de ses affirmations est FAUSSE. Laquelle ?",
       "options": [
         {
@@ -130,7 +130,7 @@
         },
         {
           "id": "b",
-          "text": "Les deux pieds suppriment les trois autres mobilités laissées libres"
+          "text": "Les deux pieds suppriment les trois autres mobilités laissées libres par l'appui plan"
         },
         {
           "id": "c",
@@ -138,11 +138,11 @@
         },
         {
           "id": "d",
-          "text": "Les boulons ne suppriment aucune mobilité : on peut les retirer"
+          "text": "Les boulons n'ont aucun rôle : l'appui plan et les pieds suffisent à tout tenir"
         }
       ],
       "correctOption": "d",
-      "explanation": "Les trois premières affirmations sont exactes. La dernière est fausse : les boulons ne suppriment aucune mobilité par leur forme, mais ils assurent le maintien en position, en pressant les carters l'un contre l'autre. Sans eux, l'appui plan ne retient plus rien et le carter supérieur se soulève. (Chasse à l'erreur : l'affirmation clé est la fausse.)",
+      "explanation": "Les trois premières affirmations sont exactes. La dernière est fausse : l'appui plan n'interdit que de s'enfoncer, pas de s'écarter. Ce sont les boulons qui, en pressant les carters l'un contre l'autre, assurent le maintien en position ; sans eux le carter supérieur se soulève. La question demande l'énoncé erroné, c'est donc lui qui est la réponse.",
       "difficulty": 3
     },
     {

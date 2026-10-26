@@ -11,23 +11,23 @@
       "options": [
         {
           "id": "a",
-          "text": "Tx, Ty, Rx et Ry, plus Tz dans un seul sens ; seule Rz reste libre"
+          "text": "Tx, Ty, Rx, Ry et Tz dans un sens (le tirant reprend l'autre) ; seule Rz reste à supprimer"
         },
         {
           "id": "b",
-          "text": "Tx, Ty, Tz, Rx, Ry et Rz : les six mobilités, la liaison est complète"
+          "text": "Tx, Ty, Tz, Rx, Ry et Rz : les six mobilités sont supprimées, la liaison est complète à elle seule"
         },
         {
           "id": "c",
-          "text": "Tx, Ty et Rz seulement, car la conicité bloque la rotation"
+          "text": "Tx, Ty et Rz seulement, car la conicité du contact bloque la rotation autour de l'axe de la broche"
         },
         {
           "id": "d",
-          "text": "Tz dans les deux sens seulement, les autres mobilités restent libres"
+          "text": "Tz dans les deux sens seulement, toutes les autres mobilités restant libres entre les deux pièces"
         }
       ],
       "correctOption": "a",
-      "explanation": "Un cône long d'axe Z centre la pièce (Tx, Ty), l'empêche de basculer (Rx, Ry) et l'arrête dans un sens axial : Tz dans un seul sens. Rien dans sa forme ne s'oppose à la rotation autour de son propre axe : Rz reste libre, d'où le lardon. Dire que les six sont supprimées oublie ce lardon, et dire que le cône bloque Rz confond conicité et entraînement.",
+      "explanation": "Un cône long d'axe Z centre la pièce (Tx, Ty), l'empêche de basculer (Rx, Ry) et l'arrête dans un sens axial : Tz dans un sens, l'autre sens étant repris par le tirant. Rien dans sa forme ne s'oppose à la rotation autour de son propre axe : Rz reste à supprimer, d'où le lardon. Dire que les six sont supprimées oublie ce lardon, et dire que le cône bloque Rz confond conicité et entraînement.",
       "difficulty": 2
     },
     {
@@ -80,12 +80,12 @@
     },
     {
       "type": "numeric",
-      "prompt": "Un arbre est centré dans un alésage par une portée cylindrique longue d'axe Z et appuie sur un épaulement plan perpendiculaire à Z (voir figure). En comptant chaque mobilité une seule fois, combien de mobilités l'ensemble supprime-t-il ?\n<svg viewBox=\"0 0 320 214\"><path d=\"M60 40 L130 40 L130 100 L60 100 Z\" fill=\"#ffffff\"/><path d=\"M60 44 L64 40 M60 52 L72 40 M60 60 L80 40 M60 68 L88 40 M60 76 L96 40 M60 84 L104 40 M60 92 L112 40 M60 100 L120 40 M68 100 L128 40 M76 100 L130 46 M84 100 L130 54 M92 100 L130 62 M100 100 L130 70 M108 100 L130 78 M116 100 L130 86 M124 100 L130 94\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M60 40 L130 40 L130 100 L60 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 100 L120 100 L120 200 L60 200 Z\" fill=\"#ffffff\"/><path d=\"M60 108 L68 100 M60 116 L76 100 M60 124 L84 100 M60 132 L92 100 M60 140 L100 100 M60 148 L108 100 M60 156 L116 100 M60 164 L120 104 M60 172 L120 112 M60 180 L120 120 M60 188 L120 128 M60 196 L120 136 M64 200 L120 144 M72 200 L120 152 M80 200 L120 160 M88 200 L120 168 M96 200 L120 176 M104 200 L120 184 M112 200 L120 192\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M60 100 L120 100 L120 200 L60 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M170 40 L240 40 L240 100 L170 100 Z\" fill=\"#ffffff\"/><path d=\"M170 46 L176 40 M170 54 L184 40 M170 62 L192 40 M170 70 L200 40 M170 78 L208 40 M170 86 L216 40 M170 94 L224 40 M172 100 L232 40 M180 100 L240 40 M188 100 L240 48 M196 100 L240 56 M204 100 L240 64 M212 100 L240 72 M220 100 L240 80 M228 100 L240 88 M236 100 L240 96\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M170 40 L240 40 L240 100 L170 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M180 100 L240 100 L240 200 L180 200 Z\" fill=\"#ffffff\"/><path d=\"M180 108 L188 100 M180 116 L196 100 M180 124 L204 100 M180 132 L212 100 M180 140 L220 100 M180 148 L228 100 M180 156 L236 100 M180 164 L240 104 M180 172 L240 112 M180 180 L240 120 M180 188 L240 128 M180 196 L240 136 M184 200 L240 144 M192 200 L240 152 M200 200 L240 160 M208 200 L240 168 M216 200 L240 176 M224 200 L240 184 M232 200 L240 192\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M180 100 L240 100 L240 200 L180 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M120 104 L180 104 L180 200 L120 200 Z\" fill=\"#bfdbfe\"/><path d=\"M130 20 L170 20 L170 104 L130 104 Z\" fill=\"#bfdbfe\"/><path d=\"M130 20 L170 20 L170 104 L180 104 L180 200 L120 200 L120 104 L130 104 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M120 100 L130 100 M170 100 L180 100\" stroke=\"#0f6e56\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M150 6 L150 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"12 3 3 3\" /><path d=\"M268 190 L268 146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"268,138 271.6,146 264.4,146\" fill=\"#0f172a\"/><path d=\"M268 190 L300 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"308,190 300,193.6 300,186.4\" fill=\"#0f172a\"/><text x=\"258\" y=\"138\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Z</text><text x=\"314\" y=\"194\" font-size=\"13\" font-weight=\"700\" text-anchor=\"start\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">X</text></svg>",
+      "prompt": "Un arbre est centré dans un alésage par une portée cylindrique longue d'axe Z et appuie sur un épaulement plan perpendiculaire à Z (voir figure) ; un maintien axial le retient dans l'autre sens. Une clavette logée dans sa rainure l'empêche en outre de tourner autour de Z. En comptant chaque mobilité une seule fois, combien en supprime l'ensemble ?\n<svg viewBox=\"0 0 320 214\"><path d=\"M60 40 L126 40 L126 100 L60 100 Z\" fill=\"#ffffff\"/><path d=\"M60 44 L64 40 M60 52 L72 40 M60 60 L80 40 M60 68 L88 40 M60 76 L96 40 M60 84 L104 40 M60 92 L112 40 M60 100 L120 40 M68 100 L126 42 M76 100 L126 50 M84 100 L126 58 M92 100 L126 66 M100 100 L126 74 M108 100 L126 82 M116 100 L126 90 M124 100 L126 98\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M60 40 L126 40 L126 100 L60 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 100 L120 100 L120 200 L60 200 Z\" fill=\"#ffffff\"/><path d=\"M60 108 L68 100 M60 116 L76 100 M60 124 L84 100 M60 132 L92 100 M60 140 L100 100 M60 148 L108 100 M60 156 L116 100 M60 164 L120 104 M60 172 L120 112 M60 180 L120 120 M60 188 L120 128 M60 196 L120 136 M64 200 L120 144 M72 200 L120 152 M80 200 L120 160 M88 200 L120 168 M96 200 L120 176 M104 200 L120 184 M112 200 L120 192\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M60 100 L120 100 L120 200 L60 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M174 40 L240 40 L240 100 L174 100 Z\" fill=\"#ffffff\"/><path d=\"M174 42 L176 40 M174 50 L184 40 M174 58 L192 40 M174 66 L200 40 M174 74 L208 40 M174 82 L216 40 M174 90 L224 40 M174 98 L232 40 M180 100 L240 40 M188 100 L240 48 M196 100 L240 56 M204 100 L240 64 M212 100 L240 72 M220 100 L240 80 M228 100 L240 88 M236 100 L240 96\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M174 40 L240 40 L240 100 L174 100 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M180 100 L240 100 L240 200 L180 200 Z\" fill=\"#ffffff\"/><path d=\"M180 108 L188 100 M180 116 L196 100 M180 124 L204 100 M180 132 L212 100 M180 140 L220 100 M180 148 L228 100 M180 156 L236 100 M180 164 L240 104 M180 172 L240 112 M180 180 L240 120 M180 188 L240 128 M180 196 L240 136 M184 200 L240 144 M192 200 L240 152 M200 200 L240 160 M208 200 L240 168 M216 200 L240 176 M224 200 L240 184 M232 200 L240 192\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M180 100 L240 100 L240 200 L180 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M120 104 L180 104 L180 200 L120 200 Z\" fill=\"#bfdbfe\"/><path d=\"M130 20 L170 20 L170 104 L130 104 Z\" fill=\"#bfdbfe\"/><path d=\"M130 20 L170 20 L170 104 L180 104 L180 200 L120 200 L120 104 L130 104 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M120 100 L126 100 M174 100 L180 100\" stroke=\"#0f6e56\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M150 6 L150 214\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"12 3 3 3\" /><path d=\"M268 190 L268 146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"268,138 271.6,146 264.4,146\" fill=\"#0f172a\"/><path d=\"M268 190 L300 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"308,190 300,193.6 300,186.4\" fill=\"#0f172a\"/><text x=\"258\" y=\"138\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Z</text><text x=\"314\" y=\"194\" font-size=\"13\" font-weight=\"700\" text-anchor=\"start\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">X</text></svg>",
       "answerKey": {
-        "value": 5,
+        "value": 6,
         "unit": "mobilités"
       },
-      "explanation": "Le centrage long supprime Tx, Ty, Rx et Ry : 4. L'appui plan de l'épaulement supprimerait à lui seul Tz dans un sens, Rx et Ry, mais Rx et Ry sont déjà comptées : il n'ajoute que Tz dans un sens. Total : 4 + 1 = 5, il reste Rz, ce qui est un pivot. Le piège est d'additionner 4 + 3 = 7, nombre impossible puisqu'une pièce n'a que six mobilités.",
+      "explanation": "Le centrage long supprime Tx, Ty, Rx et Ry : 4. L'appui plan de l'épaulement supprimerait à lui seul Tz dans un sens, Rx et Ry, mais Rx et Ry sont déjà comptées : il n'ajoute que Tz, retenu dans l'autre sens par le maintien. La clavette supprime enfin Rz. Total : 4 + 1 + 1 = 6, la liaison est complète. Le piège est d'additionner 4 + 3 + 1 = 8, nombre impossible puisqu'une pièce n'a que six mobilités.",
       "difficulty": 3
     },
     {
@@ -101,15 +101,15 @@
         },
         {
           "id": "c",
-          "text": "Le tirant garde le contact conique, donc la liaison reste complète"
+          "text": "Le tirant retient le cône dans le sens que sa forme laisse libre"
         },
         {
           "id": "d",
-          "text": "Le cône et le lardon ensemble suppriment au total six mobilités sur six"
+          "text": "Le cône et le lardon, avec la traction du tirant, ne laissent aucune mobilité"
         }
       ],
       "correctOption": "b",
-      "explanation": "Le lardon, dans sa rainure, a des flancs parallèles à l'axe : il supprime la rotation Rz, jamais une translation suivant Z. C'est le tirant, par sa traction, qui garde le contact dans le sens que le cône laisse libre. Les trois autres phrases sont exactes : le cône supprime bien quatre mobilités de centrage, et six au total avec le lardon.",
+      "explanation": "Le lardon, dans sa rainure, a des flancs parallèles à l'axe : il supprime la rotation Rz, jamais une translation suivant Z. C'est le tirant, par sa traction, qui retient le cône dans le sens que sa forme laisse libre. Les trois autres phrases sont exactes : le cône supprime bien quatre mobilités de centrage, et avec le lardon et le tirant il n'en reste aucune.",
       "difficulty": 3
     },
     {
@@ -121,15 +121,15 @@
         },
         {
           "id": "b",
-          "text": "La suppression, par adhérence, de la rotation qui restait : le pivot devient un encastrement"
+          "text": "La suppression par adhérence de la rotation restante : le pivot devient un encastrement"
         },
         {
           "id": "c",
-          "text": "La suppression de la translation le long de l'axe, la rotation étant déjà bloquée par les surfaces"
+          "text": "Une mise en position du carter par les écrous"
         },
         {
           "id": "d",
-          "text": "Le passage d'une liaison complète à une liaison partielle, plus souple à l'usage"
+          "text": "Une mobilité supplémentaire supprimée, mais seulement dans un sens"
         }
       ],
       "correctOption": "b",
@@ -137,7 +137,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "La pièce repose sur la base par un appui plan, un pion cylindrique est engagé dans la pièce et dans la base, et la vis a été retirée (voir figure). Que garantit encore cet assemblage ?\n<svg viewBox=\"0 0 360 240\"><path d=\"M30 170 L330 170 L330 222 L30 222 Z\" fill=\"#ffffff\"/><path d=\"M30 178 L38 170 M30 186 L46 170 M30 194 L54 170 M30 202 L62 170 M30 210 L70 170 M30 218 L78 170 M34 222 L86 170 M42 222 L94 170 M50 222 L102 170 M58 222 L110 170 M66 222 L118 170 M74 222 L126 170 M82 222 L134 170 M90 222 L142 170 M98 222 L150 170 M106 222 L158 170 M114 222 L166 170 M122 222 L174 170 M130 222 L182 170 M138 222 L190 170 M146 222 L198 170 M154 222 L206 170 M162 222 L214 170 M170 222 L222 170 M178 222 L230 170 M186 222 L238 170 M194 222 L246 170 M202 222 L254 170 M210 222 L262 170 M218 222 L270 170 M226 222 L278 170 M234 222 L286 170 M242 222 L294 170 M250 222 L302 170 M258 222 L310 170 M266 222 L318 170 M274 222 L326 170 M282 222 L330 174 M290 222 L330 182 M298 222 L330 190 M306 222 L330 198 M314 222 L330 206 M322 222 L330 214\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M30 170 L330 170 L330 222 L30 222 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M90 100 L270 100 L270 170 L90 170 Z\" fill=\"#ffffff\"/><path d=\"M90 162 L98 170 M90 154 L106 170 M90 146 L114 170 M90 138 L122 170 M90 130 L130 170 M90 122 L138 170 M90 114 L146 170 M90 106 L154 170 M92 100 L162 170 M100 100 L170 170 M108 100 L178 170 M116 100 L186 170 M124 100 L194 170 M132 100 L202 170 M140 100 L210 170 M148 100 L218 170 M156 100 L226 170 M164 100 L234 170 M172 100 L242 170 M180 100 L250 170 M188 100 L258 170 M196 100 L266 170 M204 100 L270 166 M212 100 L270 158 M220 100 L270 150 M228 100 L270 142 M236 100 L270 134 M244 100 L270 126 M252 100 L270 118 M260 100 L270 110 M268 100 L270 102\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M90 100 L270 100 L270 170 L90 170 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"228\" y=\"100\" width=\"24\" height=\"70\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"232\" y=\"170\" width=\"16\" height=\"38\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M232 176 L248 180 M232 184 L248 188 M232 192 L248 196 M232 200 L248 204\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/><rect x=\"150\" y=\"140\" width=\"20\" height=\"55\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\"/></svg>",
+      "prompt": "La pièce repose sur la base par un appui plan, deux pions cylindriques sont engagés dans la pièce et dans la base, et la vis a été retirée (voir figure). Que garantit encore cet assemblage ?\n<svg viewBox=\"0 0 360 240\"><path d=\"M30 170 L330 170 L330 222 L30 222 Z\" fill=\"#ffffff\"/><path d=\"M30 178 L38 170 M30 186 L46 170 M30 194 L54 170 M30 202 L62 170 M30 210 L70 170 M30 218 L78 170 M34 222 L86 170 M42 222 L94 170 M50 222 L102 170 M58 222 L110 170 M66 222 L118 170 M74 222 L126 170 M82 222 L134 170 M90 222 L142 170 M98 222 L150 170 M106 222 L158 170 M114 222 L166 170 M122 222 L174 170 M130 222 L182 170 M138 222 L190 170 M146 222 L198 170 M154 222 L206 170 M162 222 L214 170 M170 222 L222 170 M178 222 L230 170 M186 222 L238 170 M194 222 L246 170 M202 222 L254 170 M210 222 L262 170 M218 222 L270 170 M226 222 L278 170 M234 222 L286 170 M242 222 L294 170 M250 222 L302 170 M258 222 L310 170 M266 222 L318 170 M274 222 L326 170 M282 222 L330 174 M290 222 L330 182 M298 222 L330 190 M306 222 L330 198 M314 222 L330 206 M322 222 L330 214\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M30 170 L330 170 L330 222 L30 222 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M90 100 L270 100 L270 170 L90 170 Z\" fill=\"#ffffff\"/><path d=\"M90 162 L98 170 M90 154 L106 170 M90 146 L114 170 M90 138 L122 170 M90 130 L130 170 M90 122 L138 170 M90 114 L146 170 M90 106 L154 170 M92 100 L162 170 M100 100 L170 170 M108 100 L178 170 M116 100 L186 170 M124 100 L194 170 M132 100 L202 170 M140 100 L210 170 M148 100 L218 170 M156 100 L226 170 M164 100 L234 170 M172 100 L242 170 M180 100 L250 170 M188 100 L258 170 M196 100 L266 170 M204 100 L270 166 M212 100 L270 158 M220 100 L270 150 M228 100 L270 142 M236 100 L270 134 M244 100 L270 126 M252 100 L270 118 M260 100 L270 110 M268 100 L270 102\" fill=\"none\" stroke=\"#334155\" stroke-width=\"0.8\"/><path d=\"M90 100 L270 100 L270 170 L90 170 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"228\" y=\"100\" width=\"24\" height=\"70\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"232\" y=\"170\" width=\"16\" height=\"38\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M232 176 L248 180 M232 184 L248 188 M232 192 L248 196 M232 200 L248 204\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/><rect x=\"110\" y=\"140\" width=\"20\" height=\"55\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"160\" y=\"140\" width=\"20\" height=\"55\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\"/></svg>",
       "options": [
         {
           "id": "a",
@@ -157,7 +157,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "L'appui plan et le pion définissent toujours la position : la mise en position subsiste. Mais un contact plan est unilatéral, il empêche de s'enfoncer et jamais de se soulever, et c'est la vis qui conservait le contact : le maintien a disparu. L'assemblage est donc positionné mais pas tenu. Attribuer le maintien à l'appui plan confond forme et serrage.",
+      "explanation": "L'appui plan et les pions définissent toujours la position : la mise en position subsiste. Mais un contact plan est unilatéral, il empêche de s'enfoncer et jamais de se soulever, et c'est la vis qui conservait le contact : le maintien a disparu. L'assemblage est donc positionné mais pas tenu. Attribuer le maintien à l'appui plan confond forme et serrage.",
       "difficulty": 3
     }
   ]

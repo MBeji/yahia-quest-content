@@ -63,12 +63,12 @@
     },
     {
       "type": "numeric",
-      "prompt": "Tu mesures 30 mm entre deux repères sur le dessin d'ensemble de la tête, dessiné à l'échelle 2:5. Quelle distance sépare réellement ces deux éléments sur la machine, en millimètres ?",
+      "prompt": "Tu mesures 18 mm entre deux repères sur le dessin d'ensemble de la tête, dessiné à l'échelle 2:5. Quelle distance sépare réellement ces deux éléments sur la machine, en millimètres ?",
       "answerKey": {
-        "value": 75,
+        "value": 45,
         "unit": "mm"
       },
-      "explanation": "L'échelle s'écrit dessin : réel, donc 2 mm de papier valent 5 mm de machine. On passe du dessin au réel en multipliant par 5 ÷ 2 : 30 × 5 ÷ 2 = 75 mm. Contrôle : 75 mm > 30 mm, ce qui est cohérent avec une réduction. L'erreur classique est de multiplier par 2 ÷ 5 et de trouver 12 mm : on a alors converti dans le mauvais sens, de réel vers dessin.",
+      "explanation": "L'échelle s'écrit dessin : réel, donc 2 mm de papier valent 5 mm de machine. On passe du dessin au réel en multipliant par 5 ÷ 2 : 18 × 5 ÷ 2 = 45 mm. Contrôle : 45 mm > 18 mm, ce qui est cohérent avec une réduction. L'erreur classique est de multiplier par 2 ÷ 5 et de trouver 7,2 mm : on a alors converti dans le mauvais sens, de réel vers dessin.",
       "difficulty": 2
     },
     {
@@ -160,11 +160,11 @@
         },
         {
           "id": "d",
-          "text": "Elle se fait à la graisse, injectée aux sept points où l'on trouve un graisseur"
+          "text": "Elle se fait par injection de produit lubrifiant aux points munis d'un graisseur"
         }
       ],
       "correctOption": "d",
-      "explanation": "Un graisseur est un organe qui reçoit de la graisse sous pression, par exemple à la pompe. Sept graisseurs droits hexagonaux M8 désignent donc sept points de lubrification à la graisse. Confondre un graisseur avec un bouchon de remplissage ou de niveau conduit à parler d'huile, et le prendre pour un bouchon d'étanchéité conduit à nier toute lubrification.",
+      "explanation": "Un graisseur est un organe qui reçoit de la graisse sous pression, par exemple à la pompe : les sept graisseurs droits hexagonaux M8 sont donc sept points de lubrification, et le lubrifiant est de la graisse. Confondre un graisseur avec un bouchon de remplissage ou de niveau conduit à parler d'huile, et le prendre pour un bouchon d'étanchéité conduit à nier toute lubrification.",
       "difficulty": 2
     }
   ]
