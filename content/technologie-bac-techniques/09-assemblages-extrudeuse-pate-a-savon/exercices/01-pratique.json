@@ -1,0 +1,162 @@
+{
+  "title": "⭐ Exercice : ouvrir le plan du réducteur",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "104-106",
+    "items": [
+      "Mise en situation p.104",
+      "Dessin d'ensemble p.105",
+      "Nomenclature p.106"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Dans la nomenclature, le couvercle creux (3) est en EN AW-2017 avec l'observation « Corroyé ». Que signifie ce mot ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La pièce est achetée toute faite, sur catalogue"
+        },
+        {
+          "id": "b",
+          "text": "La pièce est coulée dans un moule, comme les carters"
+        },
+        {
+          "id": "c",
+          "text": "La pièce est protégée de la corrosion par un traitement de surface"
+        },
+        {
+          "id": "d",
+          "text": "Le métal a été mis en forme par déformation, sans moulage"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "« Corroyé » qualifie un métal travaillé à l'état solide par déformation (laminage, forgeage, filage), par opposition aux alliages de fonderie coulés dans un moule : EN AW-2017 est corroyé, EN AB-43 000 des carters est de fonderie. Le mot ressemble à « corrosion » mais ne dit rien de la protection de la pièce.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans la nomenclature du réducteur, deux lignes portent la désignation « Vis à tête hexagonale » : le repère 14, quantité 6, et le repère 25, quantité 16. Le repère 11, quantité 4, est une « Vis à tête cylindrique fendue ». Combien de vis à tête hexagonale le réducteur compte-t-il au total ?",
+      "answerKey": {
+        "value": 22
+      },
+      "explanation": "On additionne les quantités de toutes les lignes de même désignation : 6 + 16 = 22. Les 4 vis à tête cylindrique fendue sont d'une autre sorte et ne comptent pas ; s'arrêter à la première ligne donnerait 6, et les ajouter donnerait 26.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La roue creuse (9) est désignée « Cu Sn 12 » dans la nomenclature. De quelle matière s'agit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un bronze : cuivre allié à environ 12 % d'étain"
+        },
+        {
+          "id": "b",
+          "text": "Un acier non allié à 0,12 % de carbone"
+        },
+        {
+          "id": "c",
+          "text": "Un alliage d'aluminium de fonderie à 12 % de cuivre"
+        },
+        {
+          "id": "d",
+          "text": "Un acier faiblement allié au chrome et au molybdène"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans une désignation d'alliage de cuivre, Cu vient en tête et Sn, l'étain, suit avec sa teneur : Cu Sn 12 est un bronze à environ 12 % d'étain. Un acier non allié s'écrit C suivi de 100 fois sa teneur en carbone (C 45 : 0,45 %), un alliage d'aluminium commence par Al ou EN A, et un acier faiblement allié comme 42 Cr Mo 4 commence par un nombre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur la vue schématique ci-contre, le plan de coupe B-B ne passe pas par le pied de positionnement (5). Pourtant la coupe B-B le montre, avec la mention « ramené dans le plan de coupe ». Que signifie cette mention ?\n\n<svg viewBox=\"0 0 300 240\"><circle cx=\"140\" cy=\"125\" r=\"92\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"140\" cy=\"125\" r=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M22 125 L258 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-dasharray=\"14 4 3 4\"/><path d=\"M34 125 L34.0 104.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><polygon points=\"34.0,95.0 37.8,104.0 30.2,104.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><path d=\"M246 125 L246.0 104.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><polygon points=\"246.0,95.0 249.8,104.0 242.2,104.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><text x=\"34\" y=\"87\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"246\" y=\"87\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><circle cx=\"179.9\" cy=\"77.5\" r=\"9\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"179.9\" y=\"61.5\" font-size=\"12.5\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">(5)</text><text x=\"140\" y=\"226\" font-size=\"11.5\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">vue de dessus</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le pied est dans le plan de coupe mais coupé en deux, c'est pourquoi il est visible"
+        },
+        {
+          "id": "b",
+          "text": "Le pied est dessiné comme s'il était dans le plan, afin d'être visible"
+        },
+        {
+          "id": "c",
+          "text": "Le pied a été déplacé sur la machine pour le rapprocher du plan de coupe"
+        },
+        {
+          "id": "d",
+          "text": "Le pied est supprimé de la machine à cet endroit : le dessin montre l'état après démontage"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le plan de coupe ne passe pas toujours par les pièces à montrer. Pour que le pied soit visible sur la coupe, on le représente comme s'il avait tourné autour du centre de la vue jusqu'à tomber dans le plan : c'est une convention de dessin, la machine réelle n'est pas modifiée et la vue de dessus montre où le pied se trouve vraiment.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la nomenclature, quelle pièce lie la roue creuse (9) à l'arbre (6) en rotation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les vis (14) et les écrous (15)"
+        },
+        {
+          "id": "b",
+          "text": "Les cales de réglage (27) et (27')"
+        },
+        {
+          "id": "c",
+          "text": "La clavette parallèle (7)"
+        },
+        {
+          "id": "d",
+          "text": "Le joint feutre (24)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La clavette parallèle (7), logée dans les rainures de l'arbre et de la roue, empêche la roue de tourner par rapport à l'arbre : c'est la solution de la fonction « lier en rotation ». Les cales règlent une position axiale, le joint feutre est une étanchéité et les boulons assemblent les carters.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Deux plaques sont en appui plan l'une contre l'autre sur un plan vertical, dont la normale est x (voir figure). On ne tient compte que de ce contact. Coche TOUTES les mobilités supprimées entre les deux plaques.\n\n<svg viewBox=\"0 0 500 270\"><rect x=\"100\" y=\"60\" width=\"130\" height=\"160\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"230\" y=\"60\" width=\"130\" height=\"160\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M230 60 L230 220\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"4.5\"/><text x=\"165\" y=\"146\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">(1)</text><text x=\"295\" y=\"146\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">(2)</text><circle cx=\"430\" cy=\"200\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><path d=\"M425.5 195.5 L434.5 204.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M425.5 204.5 L434.5 195.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M437 200 L465.0 200.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><polygon points=\"474.0,200.0 465.0,203.8 465.0,196.2\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><path d=\"M430 193 L430.0 165.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><polygon points=\"430.0,156.0 433.8,165.0 426.2,165.0\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><text x=\"483\" y=\"204\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><text x=\"430\" y=\"150\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">z</text><text x=\"416\" y=\"218\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">y</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tx : translation le long de x"
+        },
+        {
+          "id": "b",
+          "text": "Ty : translation le long de y"
+        },
+        {
+          "id": "c",
+          "text": "Tz : translation le long de z"
+        },
+        {
+          "id": "d",
+          "text": "Rx : rotation autour de x"
+        },
+        {
+          "id": "e",
+          "text": "Ry : rotation autour de y"
+        },
+        {
+          "id": "f",
+          "text": "Rz : rotation autour de z"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "e",
+          "f"
+        ]
+      },
+      "explanation": "Un appui plan supprime la translation selon sa normale et les deux rotations autour d'axes situés dans le plan. Ici la normale est x : Tx est supprimée ; les axes du plan sont y et z : Ry et Rz sont supprimées. Restent libres Ty et Tz, glissements dans le plan, et Rx, rotation autour de la normale, comme une assiette sur une nappe.",
+      "difficulty": 2
+    }
+  ]
+}
