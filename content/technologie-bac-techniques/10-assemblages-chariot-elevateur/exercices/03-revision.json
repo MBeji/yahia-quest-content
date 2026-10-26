@@ -1,0 +1,181 @@
+{
+  "title": "⭐⭐ Révision (type examen) : liaisons, solutions et roulements",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "117-128",
+    "items": [
+      "Activité 3.3 — q. 1 et 2",
+      "Activité 3.4 — q. 1 et 6",
+      "Synthèse assemblage p.127",
+      "Synthèse guidage en rotation p.128"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Dans un étau d'établi, quand on tourne la vis de manœuvre, elle avance dans son écrou fixe et pousse la mâchoire. Quelle liaison relie la vis à son écrou ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une liaison pivot, d'axe celui de la vis"
+        },
+        {
+          "id": "b",
+          "text": "Une liaison glissière, d'axe celui de la vis"
+        },
+        {
+          "id": "c",
+          "text": "Une liaison hélicoïdale, le long de la vis"
+        },
+        {
+          "id": "d",
+          "text": "Un encastrement, la vis étant serrée"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Rotation et translation de la vis sont liées : un tour la fait avancer d'un pas. Un seul degré de mobilité, une liaison partielle hélicoïdale. Le pivot n'autorise qu'une rotation sans avance, la glissière qu'une translation sans rotation, et l'encastrement n'autoriserait aucun mouvement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la solution S1 pour encastrer la roue sur l'axe, quel est le rôle de la clavette parallèle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lier en rotation la roue et l'axe"
+        },
+        {
+          "id": "b",
+          "text": "Lier la roue en translation contre l'épaulement"
+        },
+        {
+          "id": "c",
+          "text": "Freiner l'écrou pour l'empêcher de se desserrer"
+        },
+        {
+          "id": "d",
+          "text": "Guider la roue en rotation autour de l'axe"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La clavette, logée dans deux rainures, fait obstacle à la rotation relative : elle lie en rotation. La translation est l'affaire de l'épaulement et de l'écrou, le freinage celui de la rondelle frein, et guider en rotation supposerait que la roue tourne sur l'axe, ce qui est l'inverse d'un encastrement.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque fonction de chaque solution à la solution constructive correspondante.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "S1 : lier en rotation"
+        },
+        {
+          "id": "l2",
+          "text": "S1 : lier en translation"
+        },
+        {
+          "id": "l3",
+          "text": "S2 : lier en rotation"
+        },
+        {
+          "id": "l4",
+          "text": "S2 : lier en translation"
+        },
+        {
+          "id": "r1",
+          "text": "Clavette parallèle et rainures"
+        },
+        {
+          "id": "r2",
+          "text": "Épaulement, rondelle d'appui, rondelle frein et écrou à encoches"
+        },
+        {
+          "id": "r3",
+          "text": "Cannelures"
+        },
+        {
+          "id": "r4",
+          "text": "Épaulement, rondelle d'appui, écrou et contre-écrou"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Pour la rotation, S1 utilise une clavette et S2 des cannelures. Pour la translation, les deux solutions partent de l'épaulement et de la rondelle d'appui ; elles se distinguent par la façon de bloquer l'écrou : rondelle frein et écrou à encoches pour S1, contre-écrou pour S2.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Notes inventées pour l'exercice. Deux solutions A et B sont notées de 0 à 3 sur sept critères. A : 2, 1, 3, 2, 2, 1, 3. B : 3, 2, 2, 2, 1, 2, 1. De combien de points le total de A dépasse-t-il celui de B ?",
+      "answerKey": {
+        "value": 1,
+        "unit": "point"
+      },
+      "explanation": "A : 2 + 1 + 3 + 2 + 2 + 1 + 3 = 14. B : 3 + 2 + 2 + 2 + 1 + 2 + 1 = 13. L'écart vaut 14 − 13 = 1 point : un écart si mince ne tranche pas, il faudrait lire les critères décisifs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel roulement de la figure convient à un guidage qui supporte des charges radiales et axiales importantes, à vitesse moyenne ?\n<svg viewBox=\"0 0 460 205\"><title>Trois familles de roulements, vues en coupe (demi-section) avec leur ligne d'action</title><line x1=\"40\" y1=\"150\" x2=\"120\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"14 4 3 4\"/><polygon points=\"52,56 108,56 108,83.5 96.5,83.5 94.9,81.2 92.9,79.1 90.7,77.3 88.2,75.9 85.6,74.8 82.8,74.2 80,74 77.2,74.2 74.4,74.8 71.8,75.9 69.3,77.3 67.1,79.1 65.1,81.2 63.5,83.5 52,83.5\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M52 78.6 L56.9 83.5 M52 73.6 L61.9 83.5 M52 68.6 L64.9 81.5 M52 63.6 L67.3 78.9 M52 58.6 L70.2 76.8 M54.4 56 L73.5 75.2 M59.4 56 L77.6 74.2 M64.4 56 L82.6 74.2 M69.4 56 L90.6 77.3 M95.6 82.2 L96.9 83.5 M74.4 56 L101.9 83.5 M79.4 56 L106.9 83.5 M84.4 56 L108 79.6 M89.4 56 L108 74.6 M94.4 56 L108 69.6 M99.4 56 L108 64.6 M104.4 56 L108 59.6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"0.9\"/><polygon points=\"52,130 108,130 108,102.5 96.5,102.5 94.9,104.8 92.9,106.9 90.7,108.7 88.2,110.1 85.6,111.2 82.8,111.8 80,112 77.2,111.8 74.4,111.2 71.8,110.1 69.3,108.7 67.1,106.9 65.1,104.8 63.5,102.5 52,102.5\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M52 107.4 L56.9 102.5 M52 112.4 L61.9 102.5 M52 117.4 L64.9 104.5 M52 122.4 L67.3 107.1 M52 127.4 L70.2 109.2 M54.4 130 L73.5 110.8 M59.4 130 L77.6 111.8 M64.4 130 L82.6 111.8 M69.4 130 L90.6 108.7 M95.6 103.8 L96.9 102.5 M74.4 130 L101.9 102.5 M79.4 130 L106.9 102.5 M84.4 130 L108 106.4 M89.4 130 L108 111.4 M94.4 130 L108 116.4 M99.4 130 L108 121.4 M104.4 130 L108 126.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"0.9\"/><circle cx=\"80\" cy=\"93\" r=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"80\" y1=\"53\" x2=\"80\" y2=\"133\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/><circle cx=\"80\" cy=\"28\" r=\"11\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"80\" y=\"33\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"190\" y1=\"150\" x2=\"270\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"14 4 3 4\"/><polygon points=\"202,56 258,56 258,79.6 243.4,79.6 241,77.5 238.2,75.9 235.3,74.7 232.1,74.1 228.9,74 225.8,74.5 222.7,75.4 219.9,76.9 217.3,78.8 215.1,81.2 213.4,83.8 212.1,86.7 211.3,89.8 211,93 202,93\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M202 92.6 L202.4 93 M202 87.6 L207.4 93 M202 82.6 L211.1 91.7 M202 77.6 L211.9 87.5 M202 72.6 L213.3 83.9 M202 67.6 L215.3 81 M202 62.6 L217.8 78.5 M202 57.6 L220.8 76.4 M205.4 56 L224.3 74.9 M210.4 56 L228.5 74.1 M215.4 56 L233.8 74.5 M220.4 56 L243.9 79.6 M225.4 56 L248.9 79.6 M230.4 56 L253.9 79.6 M235.4 56 L258 78.6 M240.4 56 L258 73.6 M245.4 56 L258 68.6 M250.4 56 L258 63.6 M255.4 56 L258 58.6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"0.9\"/><polygon points=\"258,130 202,130 202,106.4 216.6,106.4 219,108.5 221.8,110.1 224.7,111.3 227.9,111.9 231.1,112 234.2,111.5 237.3,110.6 240.1,109.1 242.7,107.2 244.9,104.8 246.6,102.2 247.9,99.3 248.7,96.2 249,93 258,93\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M202 111.4 L206.9 106.4 M202 116.4 L211.9 106.4 M202 121.4 L216.8 106.6 M202 126.4 L219.6 108.8 M203.4 130 L222.8 110.5 M208.4 130 L226.7 111.7 M213.4 130 L231.5 111.9 M248.9 94.5 L250.4 93 M218.4 130 L238.4 110 M247 101.4 L255.4 93 M223.4 130 L258 95.4 M228.4 130 L258 100.4 M233.4 130 L258 105.4 M238.4 130 L258 110.4 M243.4 130 L258 115.4 M248.4 130 L258 120.4 M253.4 130 L258 125.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"0.9\"/><circle cx=\"230\" cy=\"93\" r=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"210\" y1=\"58.4\" x2=\"250\" y2=\"127.6\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/><circle cx=\"230\" cy=\"28\" r=\"11\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"230\" y=\"33\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"340\" y1=\"150\" x2=\"420\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"14 4 3 4\"/><polygon points=\"352,56 408,56 408,69.5 352,101.6\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M352 96.6 L355.1 99.8 M352 91.6 L358.3 97.9 M352 86.6 L361.5 96.1 M352 81.6 L364.7 94.3 M352 76.6 L367.9 92.5 M352 71.6 L371 90.7 M352 66.6 L374.2 88.8 M352 61.6 L377.4 87 M352 56.6 L380.6 85.2 M356.4 56 L383.8 83.4 M361.4 56 L386.9 81.6 M366.4 56 L390.1 79.8 M371.4 56 L393.3 77.9 M376.4 56 L396.5 76.1 M381.4 56 L399.7 74.3 M386.4 56 L402.8 72.5 M391.4 56 L406 70.7 M396.4 56 L408 67.6 M401.4 56 L408 62.6 M406.4 56 L408 57.6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"0.9\"/><polygon points=\"352,110.2 408,89.6 408,130 352,130\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M352 110.4 L352.2 110.1 M352 115.4 L360.1 107.2 M352 120.4 L368.1 104.3 M352 125.4 L376 101.4 M352.4 130 L383.9 98.5 M357.4 130 L391.8 95.5 M362.4 130 L399.7 92.6 M367.4 130 L407.7 89.7 M372.4 130 L408 94.4 M377.4 130 L408 99.4 M382.4 130 L408 104.4 M387.4 130 L408 109.4 M392.4 130 L408 114.4 M397.4 130 L408 119.4 M402.4 130 L408 124.4 M407.4 130 L408 129.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"0.9\"/><polygon points=\"365.8,105.1 361.6,96.1 392.9,78.1 399.7,92.6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"363.1\" y1=\"56.7\" x2=\"396.9\" y2=\"129.3\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/><circle cx=\"380\" cy=\"28\" r=\"11\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"380\" y=\"33\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le roulement 1"
+        },
+        {
+          "id": "b",
+          "text": "Le roulement 2"
+        },
+        {
+          "id": "c",
+          "text": "Le roulement 3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les rouleaux coniques, ici le roulement 3, encaissent radial et axial importants à vitesse moyenne. Le roulement 1 est à billes à contact radial, fait pour les charges radiales ; le roulement 2, à contact oblique, encaisse aussi l'axial mais convient à une vitesse importante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Laquelle de ces affirmations sur le montage de roulements est FAUSSE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les roulements sont généralement montés par paire"
+        },
+        {
+          "id": "b",
+          "text": "Sur un arbre tournant, la portée d'arbre reçoit une tolérance m6 et l'alésage une tolérance H7"
+        },
+        {
+          "id": "c",
+          "text": "Un des quatre arrêts axiaux fait le réglage du jeu, par des cales sous le couvercle"
+        },
+        {
+          "id": "d",
+          "text": "Pour bien le bloquer, on monte les deux bagues d'un roulement serrées"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Serrer les deux bagues interdit le réglage : en règle générale, une seule est serrée, celle qui tourne par rapport à la charge, l'autre étant montée avec jeu. Les trois autres affirmations sont celles de la synthèse : roulements par paire, tolérances m6 et H7 sur un arbre tournant, quatre arrêts dont un règle le jeu.",
+      "difficulty": 2
+    }
+  ]
+}

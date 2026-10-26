@@ -1,0 +1,171 @@
+{
+  "title": "⭐ Exercice : lire la tête MILKO 14 et reconnaître ses éléments",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Sur la fraiseuse qui porte la tête « MILKO 14 », quel mouvement reçoit chaque élément ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La pièce reçoit le mouvement de coupe, l'outil tournant reçoit l'avance"
+        },
+        {
+          "id": "b",
+          "text": "L'outil tournant reçoit à la fois la coupe et l'avance, la pièce reste fixe"
+        },
+        {
+          "id": "c",
+          "text": "L'outil tournant reçoit le mouvement de coupe, la pièce reçoit l'avance"
+        },
+        {
+          "id": "d",
+          "text": "La pièce reçoit à la fois la coupe et l'avance, l'outil reste fixe"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur cette fraiseuse, la fraise tourne : c'est elle qui coupe, donc le mouvement de coupe lui est donné. La pièce, fixée à la table, se déplace sous l'outil : c'est le mouvement d'avance. Donner la coupe à la pièce, ou les deux mouvements à un seul des deux éléments, reviendrait à immobiliser l'autre, ce que la machine ne fait pas.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre où le mouvement les traverse les cinq étapes de la chaîne de transmission, de l'arbre d'entrée à l'outil.",
+      "options": [
+        {
+          "id": "d",
+          "text": "La roue conique (22), solidaire de (26), entraîne la roue conique (42)"
+        },
+        {
+          "id": "a",
+          "text": "L'arbre d'entrée horizontal tourne avec la roue dentée (28)"
+        },
+        {
+          "id": "e",
+          "text": "La broche (36), solidaire de (42), entraîne le mandrin et la fraise"
+        },
+        {
+          "id": "c",
+          "text": "Le pignon arbré (14), solidaire de (9), entraîne la roue conique (26)"
+        },
+        {
+          "id": "b",
+          "text": "La roue (28) entraîne la roue (9) par l'engrenage cylindrique à denture droite"
+        }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d", "e"]
+      },
+      "explanation": "Le manuel décrit la chaîne ainsi : de l'arbre d'entrée, lié à (28), à la broche (36), par l'engrenage cylindrique (28, 9) puis les deux renvois d'angle (14, 26) et (22, 42). Chaque étape part donc de la sortie de la précédente : (9) est solidaire de (14), (26) est solidaire de (22), (42) est solidaire de la broche. On ne peut pas sauter un bloc, car chaque prise de denture n'a lieu qu'entre deux blocs voisins.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Tu mesures 18 mm entre deux repères sur le dessin d'ensemble de la tête, dessiné à l'échelle 2:5. Quelle distance sépare réellement ces deux éléments sur la machine, en millimètres ?",
+      "answerKey": {
+        "value": 45,
+        "unit": "mm"
+      },
+      "explanation": "L'échelle s'écrit dessin : réel, donc 2 mm de papier valent 5 mm de machine. On passe du dessin au réel en multipliant par 5 ÷ 2 : 18 × 5 ÷ 2 = 45 mm. Contrôle : 45 mm > 18 mm, ce qui est cohérent avec une réduction. L'erreur classique est de multiplier par 2 ÷ 5 et de trouver 7,2 mm : on a alors converti dans le mauvais sens, de réel vers dessin.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque élément de la tête universelle à son rôle.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Le lardon dans sa rainure"
+        },
+        {
+          "id": "l2",
+          "text": "Le tirant"
+        },
+        {
+          "id": "l3",
+          "text": "Le graisseur"
+        },
+        {
+          "id": "l4",
+          "text": "L'anneau de levage"
+        },
+        {
+          "id": "r1",
+          "text": "Empêche le porte-outil de tourner dans la broche"
+        },
+        {
+          "id": "r2",
+          "text": "Garde le cône du porte-outil plaqué dans la broche"
+        },
+        {
+          "id": "r3",
+          "text": "Amène la graisse jusqu'au point de frottement à lubrifier"
+        },
+        {
+          "id": "r4",
+          "text": "Permet d'accrocher la tête au palan pour la soulever"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "Le lardon, engagé dans sa rainure, supprime la dernière rotation : il entraîne. Le tirant tire le cône et le maintient en contact avec la broche. Le graisseur est un point d'injection de graisse, donc de lubrification. L'anneau de levage porte la tête quand on la dépose. Aucun de ces quatre rôles ne se recoupe : un élément de maintien n'entraîne pas, un élément de lubrification ne soutient rien.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une roue est liée à son arbre par des cannelures et arrêtée dans un sens par un épaulement ; elle peut encore glisser dans l'autre sens. Quelle fonction du F.A.S.T. de la liaison encastrement reste-t-il à réaliser, et par quoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lier en translation dans l'autre sens, par un anneau élastique"
+        },
+        {
+          "id": "b",
+          "text": "Lier en rotation, par une clavette parallèle supplémentaire"
+        },
+        {
+          "id": "c",
+          "text": "Mettre en position radialement, par un lardon logé dans une rainure"
+        },
+        {
+          "id": "d",
+          "text": "Rien : les cannelures suffisent à lier la roue dans les deux sens"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les cannelures et l'épaulement assurent déjà la rotation et un sens de la translation ; il reste à arrêter la roue dans l'autre sens, ce que fait un anneau élastique logé dans une gorge de l'arbre. Une clavette en plus ne ferait que doubler la rotation, un lardon entraîne mais ne retient pas axialement, et les cannelures, elles, ne retiennent jamais la roue le long de l'arbre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La nomenclature porte la ligne « 34 | 7 | Graisseur droit hexagonal M8 ». Que peut-on en conclure sur la lubrification de la tête ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle se fait à l'huile en bain : les graisseurs laissent l'huile s'écouler vers le bas de la tête"
+        },
+        {
+          "id": "b",
+          "text": "Elle ne se fait pas : les graisseurs ferment des orifices contre la poussière"
+        },
+        {
+          "id": "c",
+          "text": "Elle se fait à l'huile en brouillard : les graisseurs la diffusent dans toute la tête"
+        },
+        {
+          "id": "d",
+          "text": "Elle se fait à la graisse, injectée aux points munis d'un graisseur"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un graisseur est un organe qui reçoit de la graisse sous pression, par exemple à la pompe : les sept graisseurs droits hexagonaux M8 sont donc sept points de lubrification, et le lubrifiant est de la graisse. Confondre un graisseur avec un bouchon de remplissage ou de niveau conduit à parler d'huile, et le prendre pour un bouchon d'étanchéité conduit à nier toute lubrification.",
+      "difficulty": 2
+    }
+  ]
+}
