@@ -1,0 +1,210 @@
+{
+  "title": "⭐ Exercice : lire les liaisons du mécanisme de traction",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "113-119",
+    "items": [
+      "Dossier technique p.113-116",
+      "Activité 3.1 — q. 1",
+      "Activité 3.1 — q. 2 a à e",
+      "Activité 3.1 — q. 2 f",
+      "Activité 3.1 — q. 2 g"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Une fonction technique du mécanisme s'énonce : « Encastrer la roue dentée (22) à l'axe (40) ». Quel type de liaison ce verbe annonce-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une liaison pivot, par roulements"
+        },
+        {
+          "id": "b",
+          "text": "Une liaison glissière"
+        },
+        {
+          "id": "c",
+          "text": "Un engrenage"
+        },
+        {
+          "id": "d",
+          "text": "Une liaison complète"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Encastrer, c'est supprimer tous les mouvements relatifs : le verbe annonce une liaison complète. Guider en rotation annoncerait un pivot par roulements, et transmettre un mouvement de rotation annoncerait un engrenage. Une glissière laisse une translation, ce qui est incompatible avec un encastrement.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Entre un moyeu et son arbre, l'axe étant x, associe chaque ensemble de surfaces de contact au nombre de mouvements supprimés (sans compter deux fois le même).",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Une portée cylindrique seule"
+        },
+        {
+          "id": "l2",
+          "text": "Un épaulement plan seul"
+        },
+        {
+          "id": "l3",
+          "text": "Une portée cylindrique et un épaulement plan"
+        },
+        {
+          "id": "l4",
+          "text": "Une portée cylindrique, un épaulement plan et un méplat"
+        },
+        {
+          "id": "r1",
+          "text": "4 mouvements"
+        },
+        {
+          "id": "r2",
+          "text": "3 mouvements"
+        },
+        {
+          "id": "r3",
+          "text": "5 mouvements"
+        },
+        {
+          "id": "r4",
+          "text": "6 mouvements"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le cylindre supprime Ty, Tz, Ry, Rz : 4. L'épaulement plan supprime Tx, Ry, Rz : 3. Ensemble, Ry et Rz sont communs, donc 5 et non 7. Le méplat apporte la dernière rotation Rx : 6, c'est un encastrement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur l'actigramme A-0 du chariot, une flèche « Bruit » part du côté droit de la boîte. Que représente-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La matière d'œuvre sortante"
+        },
+        {
+          "id": "b",
+          "text": "Une sortie annexe, non voulue"
+        },
+        {
+          "id": "c",
+          "text": "Une consigne donnée par le conducteur"
+        },
+        {
+          "id": "d",
+          "text": "Une énergie fournie par la batterie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le bruit est un effet secondaire du fonctionnement, rangé avec les sorties à droite, comme la signalisation. La matière d'œuvre sortante est la palette chargée. Consigne et énergie arrivent par le haut de la boîte : elles commandent et alimentent, elles ne sortent pas.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un moyeu est posé sur une portée cylindrique d'axe x, sans épaulement ni méplat (figure). Combien de degrés de liberté restent libres entre le moyeu et l'arbre ?\n<svg viewBox=\"0 0 460 250\"><title>Arbre et moyeu en coupe, avec le repère x y z</title><line x1=\"20\" y1=\"122\" x2=\"440\" y2=\"122\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"14 4 3 4\"/><polygon points=\"40,92 410,92 410,152 40,152\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M40 92.4 L40.4 92 M40 99.4 L47.4 92 M40 106.4 L54.4 92 M40 113.4 L61.4 92 M40 120.4 L68.4 92 M40 127.4 L75.4 92 M40 134.4 L82.4 92 M40 141.4 L89.4 92 M40 148.4 L96.4 92 M43.4 152 L103.4 92 M50.4 152 L110.4 92 M57.4 152 L117.4 92 M64.4 152 L124.4 92 M71.4 152 L131.4 92 M78.4 152 L138.4 92 M85.4 152 L145.4 92 M92.4 152 L152.4 92 M99.4 152 L159.4 92 M106.4 152 L166.4 92 M113.4 152 L173.4 92 M120.4 152 L180.4 92 M127.4 152 L187.4 92 M134.4 152 L194.4 92 M141.4 152 L201.4 92 M148.4 152 L208.4 92 M155.4 152 L215.4 92 M162.4 152 L222.4 92 M169.4 152 L229.4 92 M176.4 152 L236.4 92 M183.4 152 L243.4 92 M190.4 152 L250.4 92 M197.4 152 L257.4 92 M204.4 152 L264.4 92 M211.4 152 L271.4 92 M218.4 152 L278.4 92 M225.4 152 L285.4 92 M232.4 152 L292.4 92 M239.4 152 L299.4 92 M246.4 152 L306.4 92 M253.4 152 L313.4 92 M260.4 152 L320.4 92 M267.4 152 L327.4 92 M274.4 152 L334.4 92 M281.4 152 L341.4 92 M288.4 152 L348.4 92 M295.4 152 L355.4 92 M302.4 152 L362.4 92 M309.4 152 L369.4 92 M316.4 152 L376.4 92 M323.4 152 L383.4 92 M330.4 152 L390.4 92 M337.4 152 L397.4 92 M344.4 152 L404.4 92 M351.4 152 L410 93.4 M358.4 152 L410 100.4 M365.4 152 L410 107.4 M372.4 152 L410 114.4 M379.4 152 L410 121.4 M386.4 152 L410 128.4 M393.4 152 L410 135.4 M400.4 152 L410 142.4 M407.4 152 L410 149.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"0.9\"/><polygon points=\"120,60 250,60 250,92 120,92\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M120 91.6 L120.4 92 M120 84.6 L127.4 92 M120 77.6 L134.4 92 M120 70.6 L141.4 92 M120 63.6 L148.4 92 M123.4 60 L155.4 92 M130.4 60 L162.4 92 M137.4 60 L169.4 92 M144.4 60 L176.4 92 M151.4 60 L183.4 92 M158.4 60 L190.4 92 M165.4 60 L197.4 92 M172.4 60 L204.4 92 M179.4 60 L211.4 92 M186.4 60 L218.4 92 M193.4 60 L225.4 92 M200.4 60 L232.4 92 M207.4 60 L239.4 92 M214.4 60 L246.4 92 M221.4 60 L250 88.6 M228.4 60 L250 81.6 M235.4 60 L250 74.6 M242.4 60 L250 67.6 M249.4 60 L250 60.6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"0.9\"/><polygon points=\"120,184 250,184 250,152 120,152\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M120 183.6 L120.4 184 M120 176.6 L127.4 184 M120 169.6 L134.4 184 M120 162.6 L141.4 184 M120 155.6 L148.4 184 M123.4 152 L155.4 184 M130.4 152 L162.4 184 M137.4 152 L169.4 184 M144.4 152 L176.4 184 M151.4 152 L183.4 184 M158.4 152 L190.4 184 M165.4 152 L197.4 184 M172.4 152 L204.4 184 M179.4 152 L211.4 184 M186.4 152 L218.4 184 M193.4 152 L225.4 184 M200.4 152 L232.4 184 M207.4 152 L239.4 184 M214.4 152 L246.4 184 M221.4 152 L250 180.6 M228.4 152 L250 173.6 M235.4 152 L250 166.6 M242.4 152 L250 159.6 M249.4 152 L250 152.6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"0.9\"/><line x1=\"330\" y1=\"222\" x2=\"357\" y2=\"222\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"364,222 357,225.5 357,218.5\" fill=\"#0f172a\"/><line x1=\"330\" y1=\"222\" x2=\"330\" y2=\"195\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"330,188 333.5,195 326.5,195\" fill=\"#0f172a\"/><circle cx=\"330\" cy=\"222\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"330\" cy=\"222\" r=\"1.6\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"372\" y=\"226\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><text x=\"329\" y=\"182\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">y</text><text x=\"318\" y=\"238\" font-size=\"12\" font-weight=\"700\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">z</text><text x=\"85\" y=\"112\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">arbre</text><text x=\"190\" y=\"44\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">moyeu</text></svg>",
+      "answerKey": {
+        "value": 2,
+        "unit": "degrés de liberté"
+      },
+      "explanation": "Le cylindre supprime Ty, Tz, Ry, Rz, soit 4 mouvements. Il en reste 6 − 4 = 2 : la translation Tx le long de l'arbre et la rotation Rx autour de lui. Le moyeu peut donc encore glisser et tourner.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Tu analyses un assemblage arbre-moyeu. Remets les étapes dans l'ordre de la démarche.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repérer les surfaces de contact entre les deux pièces"
+        },
+        {
+          "id": "b",
+          "text": "Relever les mouvements que supprime chaque surface"
+        },
+        {
+          "id": "c",
+          "text": "Ne pas compter deux fois un mouvement déjà supprimé"
+        },
+        {
+          "id": "d",
+          "text": "Déduire les degrés de liberté restants : 6 moins le total"
+        },
+        {
+          "id": "e",
+          "text": "Choisir les éléments qui suppriment les mouvements restants"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On part de ce que l'on voit (les surfaces), on en tire les mouvements supprimés, on écarte les doublons avant d'additionner, puis on compte ce qui reste sur les six possibles. Ce n'est qu'à la fin que l'on cherche des éléments (clavette, écrou) pour supprimer le reste : choisir une pièce avant de savoir quoi supprimer serait deviner.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces solutions relèvent du maintien en position (MAP), et non de la mise en position ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un écrou serré contre une rondelle d'appui"
+        },
+        {
+          "id": "b",
+          "text": "Une portée cylindrique du moyeu sur l'arbre"
+        },
+        {
+          "id": "c",
+          "text": "Un anneau élastique logé dans une gorge"
+        },
+        {
+          "id": "d",
+          "text": "Un épaulement plan de l'arbre"
+        },
+        {
+          "id": "e",
+          "text": "Six vis serrant une roue contre son axe"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "L'écrou serré et les six vis conservent le contact par adhérence ; l'anneau élastique le conserve par obstacle démontable : ce sont trois maintiens en position. La portée cylindrique et l'épaulement sont des surfaces qui donnent sa position à la pièce : ce sont des mises en position.",
+      "difficulty": 2
+    }
+  ]
+}

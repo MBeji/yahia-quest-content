@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : la tête universelle de la fraiseuse",
+  "questions": [
+    {
+      "prompt": "Qu'appelle-t-on une liaison complète, ou encastrement, entre deux pièces ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une liaison qui laisse subsister exactement une rotation entre les deux pièces"
+        },
+        {
+          "id": "b",
+          "text": "Une liaison qui laisse subsister une translation et supprime les rotations"
+        },
+        {
+          "id": "c",
+          "text": "Une liaison qui supprime au moins une mobilité entre les deux pièces"
+        },
+        {
+          "id": "d",
+          "text": "Une liaison qui ne laisse subsister aucune mobilité entre les deux pièces"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une pièce libre possède six mobilités : trois translations et trois rotations. Une liaison est complète quand elles sont toutes supprimées, donc quand il n'en reste aucune. Une liaison qui laisse une rotation est un pivot, donc une liaison partielle, et une liaison qui supprime seulement « au moins une » mobilité ne dit rien de ce qui reste.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la tête de la fraiseuse, le tirant (35) tire sur le cône du porte-outil. Quel est son rôle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entraîner le porte-outil en rotation à la place du lardon"
+        },
+        {
+          "id": "b",
+          "text": "Régler le jeu de fonctionnement des roulements de la broche"
+        },
+        {
+          "id": "c",
+          "text": "Tenir le cône plaqué dans la broche, c'est le maintien"
+        },
+        {
+          "id": "d",
+          "text": "Positionner le porte-outil par rapport à l'axe de la broche"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le cône positionne le porte-outil et le lardon l'entraîne, mais rien ne retient encore le cône dans la broche : c'est le tirant qui le tire et conserve le contact. C'est donc un maintien en position. L'entraînement en rotation revient au lardon, le positionnement au cône lui-même, et le réglage du jeu des roulements aux cales de réglage.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un moyeu doit être arrêté le long de son arbre, dans les deux sens. Quelle solution constructive assure cette fonction « lier en translation » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des cannelures taillées sur l'arbre et dans le moyeu"
+        },
+        {
+          "id": "b",
+          "text": "Une clavette parallèle logée dans deux rainures"
+        },
+        {
+          "id": "c",
+          "text": "Un épaulement et un anneau élastique pour arbre"
+        },
+        {
+          "id": "d",
+          "text": "Un lardon engagé dans une rainure du moyeu"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un épaulement arrête le moyeu d'un côté et l'anneau élastique, logé dans une gorge de l'arbre, de l'autre : la translation est supprimée dans les deux sens. La clavette, les cannelures et le lardon, eux, ne font que lier en rotation : ils laissent le moyeu glisser le long de l'arbre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la grille de critères pondérés (0 mauvais, 1 moyen, 2 bien, 3 très bien), une solution très économique doit recevoir quelle note au critère « coût » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0, car elle coûte peu de matière et peu d'argent à produire"
+        },
+        {
+          "id": "b",
+          "text": "3, car économique veut dire très bien pour la solution"
+        },
+        {
+          "id": "c",
+          "text": "2, car la note 3 est réservée aux critères de fiabilité"
+        },
+        {
+          "id": "d",
+          "text": "1, car une solution économique reste une solution moyenne"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La note mesure la qualité de la solution vis-à-vis du critère, et plus elle est haute, meilleure est la solution. Pour le coût, très économique veut donc dire très bien, soit 3. Lire la note comme le montant dépensé conduit à noter 0 une solution bon marché, c'est exactement le contresens à éviter.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi monte-t-on deux roulements à contact oblique en opposition, en X ou en O, pour guider un arbre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que la nomenclature de la machine impose toujours un nombre pair de roulements"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'un seul roulement ne supporte aucune charge radiale, alors que deux la supportent bien"
+        },
+        {
+          "id": "c",
+          "text": "Parce que deux roulements tournent deux fois plus vite qu'un seul roulement isolé"
+        },
+        {
+          "id": "d",
+          "text": "Parce que chacun ne retient l'arbre que dans un sens : à deux, ils le retiennent dans les deux"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La ligne d'action d'un roulement à contact oblique est inclinée : il ne transmet l'effort axial que dans un sens. Deux roulements montés en opposition se complètent et retiennent l'arbre dans les deux sens. Ce n'est pas une affaire de charge radiale, que chacun supporte très bien, ni de vitesse, ni de nomenclature : c'est une question de sens axial.",
+      "difficulty": 2
+    }
+  ]
+}
