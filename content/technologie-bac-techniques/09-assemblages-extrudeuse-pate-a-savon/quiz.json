@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : le réducteur de la boudineuse",
+  "questions": [
+    {
+      "prompt": "Dans la nomenclature du réducteur, on lit : repère 14, quantité 6, « Vis à tête hexagonale » ; repère 15, quantité 6, « Écrou » ; repère 28, quantité 6, « Rondelle » ; repère 5, quantité 2, « Pied de positionnement ». Combien de boulons fixent les deux demi-carters ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un boulon est une vis associée à son écrou, ici avec une rondelle : les 6 vis du repère 14 se vissent dans les 6 écrous du repère 15, soit 6 boulons. Le nombre 12 vient de l'addition des vis et des écrous comme s'ils étaient indépendants, 18 ajoute aussi les rondelles, et 2 est le nombre de pieds de positionnement, qui ne serrent rien.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les deux pieds de positionnement (5) sont en place et les boulons sont serrés. Combien de mobilités subsiste-t-il entre le carter supérieur (8) et le carter inférieur (4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune : la liaison est complète"
+        },
+        {
+          "id": "b",
+          "text": "Une seule, la rotation autour de la normale au plan de joint"
+        },
+        {
+          "id": "c",
+          "text": "Trois, celles que laisse l'appui plan seul"
+        },
+        {
+          "id": "d",
+          "text": "Six, puisque les carters sont deux pièces distinctes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'appui plan supprime Tz, Rx et Ry ; les deux pieds suppriment Tx, Ty et Rz. Trois plus trois font six mobilités supprimées, donc zéro restante : c'est une liaison complète. Une seule mobilité resterait avec un seul pied, trois resteraient sans pieds, et six est le nombre de mobilités supprimées, non de mobilités restantes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Lors d'un remontage, le technicien serre soigneusement les six boulons mais oublie de remettre les pieds de positionnement (5). Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les carters sont maintenus mais pas garantis en position : les boulons ne positionnent pas"
+        },
+        {
+          "id": "b",
+          "text": "Les carters sont maintenus et positionnés : les boulons suffisent à tout assurer, sans les pieds"
+        },
+        {
+          "id": "c",
+          "text": "Les carters ne sont ni maintenus ni positionnés : sans les pieds, les boulons ne serrent plus"
+        },
+        {
+          "id": "d",
+          "text": "Les carters sont positionnés mais pas maintenus : ce sont les pieds qui assurent le serrage"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les boulons pressent les carters l'un contre l'autre : c'est le maintien en position. Mais leurs vis traversent des trous plus larges qu'elles et n'imposent aucune position : la mise en position revient à l'appui plan et aux pieds. Sans les pieds, les carters tiennent ensemble mais rien ne garantit qu'ils reprennent leur place d'origine ; et les boulons serrent sans avoir besoin des pieds.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le guidage de la vis sans fin reprend des charges radiales ainsi qu'une forte poussée axiale, la vitesse de rotation étant importante. Quel guidage retenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux roulements à rouleaux coniques"
+        },
+        {
+          "id": "b",
+          "text": "Un seul roulement à billes à contact radial"
+        },
+        {
+          "id": "c",
+          "text": "Deux roulements à billes à contact oblique"
+        },
+        {
+          "id": "d",
+          "text": "Deux roulements à billes à contact radial"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Des charges radiales et axiales importantes excluent le contact radial, seul ou en paire. Il reste le contact oblique, à billes pour une vitesse importante, et les rouleaux coniques, retenus pour une vitesse moyenne. La vis tournant vite, on retient deux roulements à billes à contact oblique, montés par paire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une paire de roulements guide un arbre. Combien d'arrêts axiaux faut-il prévoir en tout pour leurs bagues ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Chaque roulement a deux bagues, intérieure et extérieure, et chacune doit être arrêtée en translation : 2 roulements × 2 bagues = 4 arrêts, dont un seul sert au réglage du jeu. Compter 2 arrêts revient à n'en prévoir qu'un par roulement.",
+      "difficulty": 2
+    }
+  ]
+}
