@@ -50,27 +50,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Un moyeu doit être arrêté le long de son arbre, dans les deux sens. Quelle solution constructive assure cette fonction « lier en translation » ?",
+      "prompt": "Dans le F.A.S.T. d'une liaison encastrement entre un arbre et une roue, que signifie la fonction technique « lier en translation » ?",
       "options": [
         {
           "id": "a",
-          "text": "Des cannelures taillées sur l'arbre et dans le moyeu"
+          "text": "Supprimer la rotation Rz de la roue autour de l'axe de l'arbre"
         },
         {
           "id": "b",
-          "text": "Une clavette parallèle logée dans deux rainures"
+          "text": "Supprimer les translations Tx et Ty qui décentreraient la roue"
         },
         {
           "id": "c",
-          "text": "Un épaulement et un anneau élastique pour arbre"
+          "text": "Supprimer Tz, le glissement de la roue le long de l'arbre"
         },
         {
           "id": "d",
-          "text": "Un lardon engagé dans une rainure du moyeu"
+          "text": "Supprimer le basculement Rx et Ry de la roue sur son arbre"
         }
       ],
       "correctOption": "c",
-      "explanation": "Un épaulement arrête le moyeu d'un côté et l'anneau élastique, logé dans une gorge de l'arbre, de l'autre : la translation est supprimée dans les deux sens. La clavette, les cannelures et le lardon, eux, ne font que lier en rotation : ils laissent le moyeu glisser le long de l'arbre.",
+      "explanation": "Lier en translation, c'est empêcher la roue de glisser le long de l'arbre, donc supprimer Tz dans les deux sens, par exemple avec un épaulement d'un côté et un anneau élastique de l'autre. Supprimer Rz est la fonction « lier en rotation », réalisée par une clavette ou des cannelures ; Tx, Ty, Rx et Ry sont supprimées par la portée cylindrique qui centre la roue.",
       "difficulty": 1
     },
     {
@@ -118,7 +118,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "La ligne d'action d'un roulement à contact oblique est inclinée : il ne transmet l'effort axial que dans un sens. Deux roulements montés en opposition se complètent et retiennent l'arbre dans les deux sens. Ce n'est pas une affaire de charge radiale, que chacun supporte très bien, ni de vitesse, ni de nomenclature : c'est une question de sens axial.",
+      "explanation": "La ligne d'action d'un roulement à contact oblique est inclinée : il ne transmet l'effort axial que dans un sens. Deux roulements montés en opposition se complètent et retiennent l'arbre dans les deux sens. Ce n'est pas une affaire de charge radiale admissible, de jeu ou d'appui : c'est une question de sens axial.",
       "difficulty": 2
     }
   ]

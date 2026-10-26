@@ -11,7 +11,7 @@ Une **fraiseuse** est une machine-outil : un **outil tournant**, la fraise, enl�
 Question : comment la rotation de l'**arbre d'entrée horizontal** arrive-t-elle jusqu'à la **broche porte-outil (36)** ?
 
 ::: definition La chaîne de transmission de la tête
-Le manuel la décrit en une phrase : le mouvement est transmis de l'**arbre d'entrée horizontal**, lié à la roue dentée (28), à la **broche (36)** par **un engrenage cylindrique à denture droite (28, 9)** et **deux renvois d'angle à 45° (14, 26) et (22, 42)**. Deux nombres entre parenthèses séparés par une virgule désignent **deux roues en prise** ; un renvoi d'angle est un couple de **roues coniques** qui change la direction de l'axe de rotation (45° + 45° = 90° : de l'horizontale à la verticale).
+Le manuel la décrit en une phrase : le mouvement est transmis de l'**arbre d'entrée horizontal**, lié à la roue dentée (28), à la **broche (36)** par **un engrenage cylindrique à denture droite (28, 9)** et **deux renvois d'angle à 45° (14, 26) et (22, 42)**. Deux nombres entre parenthèses séparés par une virgule désignent **deux roues en prise** ; un renvoi d'angle est un couple de **roues coniques** qui change la direction de l'axe de rotation.
 :::
 
 ::: figure Cinq blocs, une seule rotation : dans chaque bloc, les pièces sont solidaires et tournent ensemble ; entre deux blocs, une flèche verte marque une prise de denture
@@ -29,14 +29,14 @@ Le manuel la décrit en une phrase : le mouvement est transmis de l'**arbre d'en
 
 :::
 
-> ⚠️ Ne confonds pas **« en prise »** et **« solidaire »**. (28, 9) sont en prise : deux pièces distinctes, sens opposés. (9) et (14) sont solidaires : une seule classe d'équivalence, même sens. Lire un nombre de dents ou un rapport sur une pièce solidaire d'une autre n'a aucun sens : la liaison, elle, se lit entre blocs.
+> ⚠️ Ne confonds pas **« en prise »** et **« solidaire »**. (28, 9) sont en prise : deux pièces distinctes, sens opposés. (9) et (14) sont solidaires : elles forment un seul bloc, même sens. Dans un même bloc, tout tourne ensemble ; la prise de denture se lit entre deux blocs.
 
 ::: verifie Même chaîne, deux questions
 L'arbre d'entrée tourne dans un sens donné. La roue (9) tourne-t-elle dans le même sens que (28) ? Et le pignon arbré (14) par rapport à (9) ?
 
 ---
 
-(9) tourne en **sens contraire** de (28) : les deux roues sont en prise par une denture droite extérieure. (14) tourne dans le **même sens** que (9) : elles sont assemblées, donc solidaires, donc une seule classe d'équivalence.
+(9) tourne en **sens contraire** de (28) : les deux roues sont en prise par une denture droite extérieure. (14) tourne dans le **même sens** que (9) : elles sont assemblées, donc solidaires, donc dans le même bloc.
 :::
 
 ::: retenir
@@ -85,7 +85,7 @@ Activité 1.1 : une rainure de clavette exige de remplacer le mandrin porte-frai
 Reste la question : qu'est-ce qui, exactement, tient le mandrin dans la broche ?
 
 ::: definition Mobilités, liaison complète, liaison partielle
-Une pièce libre dans l'espace peut bouger de **six façons**, repérées dans un trièdre : trois **translations** **Tx, Ty, Tz** et trois **rotations** **Rx, Ry, Rz** autour des mêmes axes. Une **liaison** supprime certaines de ces **mobilités**. Quand il n'en reste **aucune**, la liaison est **complète** (un **encastrement**) ; quand il en reste **au moins une**, elle est **partielle** (un pivot laisse une rotation). Un **assemblage** se juge donc par le nombre et la nature des mobilités qu'il supprime.
+Une pièce libre dans l'espace peut bouger de **six façons**, repérées dans un trièdre : trois **translations** **Tx, Ty, Tz** et trois **rotations** **Rx, Ry, Rz** autour des mêmes axes. Une **liaison** supprime certaines de ces **mobilités**. Quand il n'en reste **aucune**, la liaison est **complète** (un **encastrement**) ; quand il en reste **au moins une**, elle est **partielle** : le **pivot** laisse une rotation, la **glissière** une translation, l'**hélicoïdale** une rotation liée à une translation. Une liaison complète est dite **démontable** quand on peut la défaire sans détériorer les pièces ni les éléments de liaison, qui resservent au remontage. Un **assemblage** se juge donc par le nombre et la nature des mobilités qu'il supprime.
 :::
 
 ::: figure Le porte-outil (49) dans le nez de la broche (36), axe Z vertical. Le cône ne laisse que la rotation autour de Z ; le lardon, logé dans sa rainure, bloque cette dernière ; le tirant (35) tire le cône pour le garder plaqué
@@ -125,7 +125,7 @@ Cas limite : le carter (2) sur le bâti (1), écrous desserrés, peut être orie
 :::
 
 ::: verifie Une roue sur son arbre
-Une roue est centrée sur une portée cylindrique **longue** d'axe Z et appuie sur un épaulement plan perpendiculaire à Z. Elle peut encore tourner autour de Z. Combien de mobilités sont supprimées, et quelle liaison obtient-on ?
+Une roue est centrée sur une portée cylindrique **longue** d'axe Z et appuie sur un épaulement plan perpendiculaire à Z. Elle peut encore tourner autour de Z, et un maintien axial la retient dans l'autre sens. Combien de mobilités sont supprimées, et quelle liaison obtient-on ?
 
 ---
 
@@ -208,6 +208,18 @@ La figure montre les solutions de **S1** du manuel : la clavette parallèle avec
 
 > ⚠️ La clavette **ne lie pas en translation** : une clavette parallèle laisse la roue glisser le long de l'arbre. Sans épaulement ni anneau, la clavette entraîne la roue en rotation et la laisse partir à l'axial.
 
+::: exemple Plaquer le moyeu contre l'épaulement
+
+1. **Appui** : la **rondelle d'appui** répartit la pression de l'écrou sur la face du moyeu.
+2. **Serrage** : l'**écrou à encoches**, vissé sur l'arbre, pousse le moyeu contre l'**épaulement** : la translation est supprimée dans les deux sens.
+3. **Frein** : la **rondelle frein** a une languette qui s'engage dans une encoche de l'écrou et l'empêche de se desserrer sous les vibrations.
+
+:::
+
+::: figure Épaulement d'un côté, rondelle d'appui, rondelle frein et écrou à encoches de l'autre : le moyeu est coincé et l'écrou ne peut pas se défaire
+<svg viewBox="0 0 300 170"><path d="M50 44 L150 44 L150 136 L50 136 Z" fill="#fde68a" stroke="#0f172a" stroke-width="2"/><path d="M14 58 L50 58 L50 122 L14 122 Z" fill="#bfdbfe" stroke="#0f172a" stroke-width="2"/><path d="M14 76 L250 76 L250 104 L14 104 Z" fill="#bfdbfe" stroke="#0f172a" stroke-width="2"/><path d="M150 52 L160 52 L160 128 L150 128 Z" fill="#e2e8f0" stroke="#0f172a" stroke-width="2"/><path d="M160 56 L166 56 L166 124 L160 124 Z" fill="#94a3b8" stroke="#0f172a" stroke-width="2"/><path d="M166 50 L206 50 L206 130 L166 130 Z" fill="#fdba74" stroke="#0f172a" stroke-width="2"/><path d="M170 76 L176 76 M180 76 L186 76 M190 76 L196 76 M170 104 L176 104 M180 104 L186 104 M190 104 L196 104" stroke="#0f172a" stroke-width="1"/><path d="M0 90 L262 90" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="12 3 3 3" /><text x="32" y="50" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">épaulement</text><text x="100" y="38" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">moyeu</text><text x="150" y="154" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">rondelle d'appui</text><path d="M155 144 L155 130" fill="none" stroke="#0f172a" stroke-width="1" /><text x="220" y="38" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">écrou à encoches</text><path d="M200 46 L190 50" fill="none" stroke="#0f172a" stroke-width="1" /><text x="212" y="154" font-size="11" font-weight="700" text-anchor="start" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">rondelle frein</text><path d="M220 144 L164 126" fill="none" stroke="#0f172a" stroke-width="1" /></svg>
+:::
+
 ::: verifie Même question, autre solution
 Une poulie doit être liée à son arbre par **cannelures** et ne pas glisser. Complète « lier en rotation » et « lier en translation ».
 
@@ -247,6 +259,7 @@ Notes **inventées pour l'exercice** : elles ne remplacent pas ton analyse de l'
 2. S2 gagne d'un point, mais l'énoncé impose de **réduire le coût et le temps de réparation** : les critères **coût** et **maintenabilité**.
 3. Sur ces deux critères : S1 totalise 3 + 3 = **6**, S2 totalise 1 + 2 = **3**.
 4. **Décision** : on retient **S1**, parce qu'elle gagne sur les critères que la situation impose, même si S2 l'emporte au total général.
+5. Si le cahier des charges imposait en plus un seuil « maintenabilité d'au moins 3 », S2 (note 2) serait écartée d'emblée, quel que soit son total.
 
 :::
 

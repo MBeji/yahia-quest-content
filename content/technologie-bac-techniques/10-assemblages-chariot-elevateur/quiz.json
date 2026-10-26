@@ -42,11 +42,11 @@
         },
         {
           "id": "d",
-          "text": "La liaison en rotation, comme le ferait une clavette"
+          "text": "Le guidage en translation de la roue le long de l'axe"
         }
       ],
       "correctOption": "c",
-      "explanation": "La vis presse la roue contre l'épaulement et crée de l'adhérence : elle conserve le contact, c'est le maintien en position. La position de la roue vient des surfaces de contact, pas des filets. Une vis ne guide pas la roue en rotation, et une clavette fait obstacle à la rotation, ce que le serrage seul ne garantit pas.",
+      "explanation": "La vis presse la roue contre l'épaulement et crée de l'adhérence : elle conserve le contact, c'est le maintien en position. La position de la roue vient des surfaces de contact, pas des filets. Une vis ne guide pas la roue : elle ne la fait pas coulisser le long de l'axe, elle la serre contre lui.",
       "difficulty": 1
     },
     {
@@ -74,23 +74,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Un engrenage conique pousse un arbre le long de son axe, avec des efforts axiaux importants. Quel roulement est MAL adapté à ces efforts ?",
+      "prompt": "Un engrenage conique pousse un arbre le long de son axe. Pourquoi un roulement à billes à contact radial pose-t-il alors problème ?",
       "options": [
         {
           "id": "a",
-          "text": "Le roulement à rouleaux coniques, monté avec un second en opposition"
+          "text": "Il tourne trop lentement pour un arbre d'engrenage conique"
         },
         {
           "id": "b",
-          "text": "Le roulement à billes à contact oblique, monté avec un second en opposition"
+          "text": "Il supporte mal les efforts axiaux importants"
         },
         {
           "id": "c",
-          "text": "Le roulement à une rangée de billes à contact radial"
+          "text": "Il ne peut jamais être monté par paire sur un arbre"
+        },
+        {
+          "id": "d",
+          "text": "Il ne supporte aucune charge radiale sur l'arbre"
         }
       ],
-      "correctOption": "c",
-      "explanation": "Le contact radial est fait pour des charges radiales ; les efforts axiaux importants le dégradent, c'est le problème posé par le manuel sur le pignon arbré. Le contact oblique et les rouleaux coniques encaissent radial et axial importants.",
+      "correctOption": "b",
+      "explanation": "Le contact radial est conçu pour des charges radiales : des efforts axiaux importants, comme ceux d'un engrenage conique, le dégradent. Sa vitesse n'est pas en cause, les roulements se montent généralement par paire, et il encaisse très bien le radial.",
       "difficulty": 2
     },
     {
