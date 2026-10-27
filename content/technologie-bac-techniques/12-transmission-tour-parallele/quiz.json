@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : le tour parallèle et ses mécanismes",
+  "questions": [
+    {
+      "prompt": "Sur un tour parallèle, qu'est-ce qui reçoit le mouvement de coupe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'outil, serré dans le porte-outil"
+        },
+        {
+          "id": "b",
+          "text": "La pièce, serrée dans le mandrin"
+        },
+        {
+          "id": "c",
+          "text": "Le traînard, guidé sur le banc"
+        },
+        {
+          "id": "d",
+          "text": "Le banc, qui porte les chariots"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La rotation de la pièce est le mouvement de coupe : le mandrin qui la tient la lui donne. L'outil reçoit le mouvement d'avance, ce qui est l'inverse d'une fraiseuse. Le traînard porte l'outil et le déplace, donc il intervient dans l'avance, et le banc est un support fixe qui ne reçoit aucun mouvement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pourquoi un embrayage qui transmet par adhérence peut-il servir de limiteur de couple ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ses griffes lâchent dès que le couple dépasse la valeur réglée"
+        },
+        {
+          "id": "b",
+          "text": "Son ressort se détend quand le couple dépasse la valeur réglée"
+        },
+        {
+          "id": "c",
+          "text": "Il bloque les deux arbres l'un à l'autre au-delà du couple réglé"
+        },
+        {
+          "id": "d",
+          "text": "Ses surfaces glissent l'une sur l'autre au-delà du couple réglé"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'adhérence est un frottement : tant que le couple demandé reste sous le couple réglé, les surfaces pressées s'entraînent ; au-delà, elles glissent l'une sur l'autre et le côté mené s'arrête sans que rien ne casse. Des griffes transmettraient par obstacle et ne glisseraient pas. Le ressort garde son effort presseur tant qu'on ne le règle pas, et un blocage mutuel des arbres serait le contraire d'un limiteur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le frein de secours du tour, commandé par une pédale, presse un sabot garni contre la poulie motrice. Quel est son rôle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transmettre la rotation du moteur vers la boîte de vitesses"
+        },
+        {
+          "id": "b",
+          "text": "Faire varier la vitesse de rotation de la broche"
+        },
+        {
+          "id": "c",
+          "text": "Arrêter rapidement le moteur après sa coupure"
+        },
+        {
+          "id": "d",
+          "text": "Limiter le couple transmis à la barre de chariotage"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le sabot garni frotte sur la poulie et la retient : le frein arrête vite le moteur, qui tournerait sinon sur sa lancée. Transmettre la rotation vers la boîte est le rôle de la courroie et de ses poulies, faire varier la vitesse celui de la boîte de vitesses, et limiter le couple à la barre celui de l'embrayage limiteur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La vis de commande du chariot transversal a un pas de 5 mm. De combien le chariot avance-t-il quand la vis fait 3 tours, son écrou étant retenu en rotation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15 mm"
+        },
+        {
+          "id": "b",
+          "text": "8 mm"
+        },
+        {
+          "id": "c",
+          "text": "5 mm"
+        },
+        {
+          "id": "d",
+          "text": "1,7 mm"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un tour de vis déplace le chariot d'un pas, soit 5 mm ; pour 3 tours, 3 × 5 = 15 mm. Additionner (5 + 3 = 8 mm) mélange un pas en millimètres et un nombre de tours, garder 5 mm ne compte qu'un seul tour, et diviser (5 / 3 ≈ 1,7 mm) inverse le raisonnement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un pignon de 20 dents entraîne une roue de 50 dents. Comment la vitesse de rotation change-t-elle entre le pignon et la roue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est multipliée par 2,5"
+        },
+        {
+          "id": "b",
+          "text": "Elle est divisée par 2,5"
+        },
+        {
+          "id": "c",
+          "text": "Elle est divisée par 30"
+        },
+        {
+          "id": "d",
+          "text": "Elle est inchangée : seul le sens de rotation change"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rapport vaut r = Z menant / Z mené = 20 / 50 = 0,4, donc la roue tourne 2,5 fois plus lentement : la vitesse est divisée par 2,5. Multiplier par 2,5 renverse le quotient ; 30 est la différence des nombres de dents, qui n'intervient pas ; et deux roues engrenées de nombres de dents différents n'ont jamais la même vitesse.",
+      "difficulty": 2
+    }
+  ]
+}

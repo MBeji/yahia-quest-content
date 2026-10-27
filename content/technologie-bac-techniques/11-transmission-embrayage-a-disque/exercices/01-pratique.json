@@ -1,0 +1,206 @@
+{
+  "title": "⭐ Exercice : lire l'embrayage et sa commande",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "130-135",
+    "items": [
+      "Mise en situation p.130",
+      "Fonctionnement p.130",
+      "A.1 tableau et fonction",
+      "A.3 cheminement",
+      "A.7 positions"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Pourquoi qualifie-t-on l'embrayage d'accouplement temporaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il n'agit que pendant les premières secondes qui suivent le démarrage du moteur"
+        },
+        {
+          "id": "b",
+          "text": "Il permet de rompre puis de rétablir la liaison entre les deux arbres"
+        },
+        {
+          "id": "c",
+          "text": "Il laisse passer une partie de la puissance du moteur et en perd le reste"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Temporaire s'oppose à permanent : l'embrayage relie les arbres quand on le veut et les sépare quand on le veut, par exemple pour changer de rapport. Il ne se limite pas au démarrage, et en position embrayée il transmet intégralement la puissance, sans perte.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque pièce de l'embrayage à son rôle.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "La fourchette (20)"
+        },
+        {
+          "id": "l2",
+          "text": "La butée à billes (14)"
+        },
+        {
+          "id": "l3",
+          "text": "Les leviers de débrayage (32)"
+        },
+        {
+          "id": "l4",
+          "text": "Les ressorts de pression (26)"
+        },
+        {
+          "id": "r1",
+          "text": "Elle pousse la butée quand on appuie sur la pédale"
+        },
+        {
+          "id": "r2",
+          "text": "Elle transmet la poussée aux leviers qui tournent avec l'embrayage"
+        },
+        {
+          "id": "r3",
+          "text": "Ils pivotent pour faire reculer le plateau de pression"
+        },
+        {
+          "id": "r4",
+          "text": "Ils créent l'effort qui plaque le plateau contre le disque"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La fourchette, mise en mouvement par la pédale, pousse la butée. La butée à billes transmet cette poussée aux leviers sans que la fourchette ait à tourner avec eux. Les leviers pivotent et tirent le plateau en arrière. Les ressorts, eux, ne font pas partie de la commande : ils poussent en permanence le plateau contre le disque et créent l'effort presseur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La maquette est embrayée, au régime établi, et la manivelle (23) tourne à 90 tr/min. À quelle vitesse tourne l'arbre de sortie (29) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 tr/min"
+        },
+        {
+          "id": "b",
+          "text": "45 tr/min"
+        },
+        {
+          "id": "c",
+          "text": "90 tr/min"
+        },
+        {
+          "id": "d",
+          "text": "180 tr/min"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un embrayage transmet la puissance sans modifier la vitesse angulaire : une fois embrayé et sans glissement, les deux arbres tournent à la même vitesse, soit 90 tr/min. La valeur 0 tr/min serait celle de la position débrayée ; 45 et 180 tr/min supposeraient un réducteur ou un multiplicateur, rôle de la boîte de vitesses et non de l'embrayage.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur la maquette, deux ressorts de pression sont cassés. Les 14 ressorts restants développent chacun 3,5 N. Quel est l'effort presseur N, en newtons ?",
+      "answerKey": {
+        "value": 49,
+        "unit": "N"
+      },
+      "explanation": "Les ressorts restants s'ajoutent : N = 14 × 3,5 = 49 N, au lieu de 16 × 3,5 = 56 N avec tous les ressorts. Deux ressorts de moins font perdre 7 N d'effort presseur.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Tu appuies sur la pédale de la maquette. Remets dans l'ordre ce qui se passe, de la pédale jusqu'au débrayage.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La pédale (18) est enfoncée"
+        },
+        {
+          "id": "b",
+          "text": "La fourchette (20) tourne et pousse la butée (14)"
+        },
+        {
+          "id": "c",
+          "text": "La butée (14) appuie sur les leviers (32)"
+        },
+        {
+          "id": "d",
+          "text": "Les leviers (32) pivotent"
+        },
+        {
+          "id": "e",
+          "text": "Le plateau de pression (27) recule : le disque est libéré"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "L'effort part du pied et suit la chaîne de commande, pièce après pièce : la pédale entraîne la fourchette, qui pousse la butée ; la butée appuie sur les leviers ; les leviers pivotent et tirent le plateau en arrière. Le plateau ne peut reculer qu'en dernier, car c'est l'effet de tout ce qui précède : en lâchant le disque, il débraye.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations décrivent la position embrayée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le plateau de pression (27) plaque le disque (25) contre le volant (24)"
+        },
+        {
+          "id": "b",
+          "text": "Les ressorts de pression (26) sont plus comprimés que dans l'autre position"
+        },
+        {
+          "id": "c",
+          "text": "En régime établi, l'arbre primaire (29) tourne à la vitesse de l'arbre moteur (22)"
+        },
+        {
+          "id": "d",
+          "text": "La pédale (18) est appuyée jusqu'en bout de course"
+        },
+        {
+          "id": "e",
+          "text": "La butée (14) est séparée des leviers (32) par un petit jeu"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "En position embrayée, le plateau serre le disque contre le volant, les deux arbres tournent à la même vitesse en régime établi, et la garde sépare la butée des leviers. Les ressorts y sont au contraire moins comprimés que lorsque le plateau a reculé, et la pédale appuyée correspond au débrayage, pas à l'embrayage.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : comparer, critiquer, justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "158-162",
+    "items": [
+      "A.5",
+      "B.6 a",
+      "B.6 c",
+      "C.1"
+    ]
+  },
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre le trajet de l'effort du frein de stationnement, de la main à la roue.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les mâchoires"
+        },
+        {
+          "id": "b",
+          "text": "Le levier"
+        },
+        {
+          "id": "c",
+          "text": "Le tambour"
+        },
+        {
+          "id": "d",
+          "text": "La came"
+        },
+        {
+          "id": "e",
+          "text": "Le bras"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "e",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "L'effort part du levier, passe par le bras qui fait tourner la came, la came écarte les mâchoires, et celles-ci freinent le tambour. La tringlerie (tirant, biellette, tige réglable) se trouve entre le levier et le bras ; on ne la détaille pas ici.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque fonction de la boîte à la solution qui la réalise (principe).",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Guider en rotation un arbre"
+        },
+        {
+          "id": "l2",
+          "text": "Guider en translation un baladeur sur son arbre"
+        },
+        {
+          "id": "l3",
+          "text": "Déplacer un baladeur"
+        },
+        {
+          "id": "l4",
+          "text": "Guider en translation un coulisseau"
+        },
+        {
+          "id": "r1",
+          "text": "Des roulements, qui réalisent un pivot"
+        },
+        {
+          "id": "r2",
+          "text": "Des cannelures, qui réalisent une glissière avec rotation commune"
+        },
+        {
+          "id": "r3",
+          "text": "Une fourchette, commandée par le levier"
+        },
+        {
+          "id": "r4",
+          "text": "Une tige, sur laquelle il glisse : une glissière"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Un arbre qui ne fait que tourner est guidé par des roulements, qui réalisent un pivot. Un baladeur qui glisse en tournant avec son arbre est guidé par des cannelures ; un coulisseau qui ne fait que glisser, par une tige : ce sont deux glissières. Déplacer le baladeur n'est pas un guidage mais une commande : c'est le rôle de la fourchette.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour une vitesse de la boîte, le manuel relève N'1 = 2,5 tours à l'entrée et N'36 = 0,64 tour à la sortie. Le moteur tourne à Nm = 3 000 tr/min, l'embrayage étant embrayé. À quelle vitesse tourne l'arbre de sortie, en tr/min ?",
+      "answerKey": {
+        "value": 768,
+        "tolerance": 1,
+        "unit": "tr/min"
+      },
+      "explanation": "Le rapport vaut r = N'36 / N'1 = 0,64 / 2,5 = 0,256. La vitesse de sortie est donc N = 3 000 × 0,256 = 768 tr/min : le même rapport s'applique aux tours et aux vitesses.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque besoin au type d'engrenage qui y répond le mieux.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Changer la direction de la rotation entre deux arbres qui se croisent"
+        },
+        {
+          "id": "l2",
+          "text": "Faire tourner deux roues dans le même sens, sans roue intermédiaire"
+        },
+        {
+          "id": "l3",
+          "text": "Transmettre en douceur, avec peu de bruit, entre arbres parallèles"
+        },
+        {
+          "id": "l4",
+          "text": "S'engager par un simple glissement le long de l'arbre"
+        },
+        {
+          "id": "r1",
+          "text": "Engrenage conique"
+        },
+        {
+          "id": "r2",
+          "text": "Engrenage intérieur"
+        },
+        {
+          "id": "r3",
+          "text": "Engrenage hélicoïdal"
+        },
+        {
+          "id": "r4",
+          "text": "Engrenage extérieur à denture droite"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Des arbres qui se croisent appellent un engrenage conique ; deux roues de même sens sans roue intermédiaire, un engrenage intérieur ; un fonctionnement progressif et silencieux, des dents hélicoïdales ; un engagement par glissement, une denture droite, qui ne crée pas de poussée axiale.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une chaîne comporte trois engrènements successifs : A mène B par l'extérieur, B mène C par l'extérieur, puis C mène la couronne D par l'intérieur. Combien de fois le sens de rotation s'inverse-t-il entre A et D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune fois"
+        },
+        {
+          "id": "b",
+          "text": "Une fois"
+        },
+        {
+          "id": "c",
+          "text": "Deux fois"
+        },
+        {
+          "id": "d",
+          "text": "Trois fois"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Chaque engrènement extérieur inverse le sens : A vers B, puis B vers C, soit deux inversions. L'engrènement intérieur ne l'inverse pas, puisque les deux roues tournent dans le même sens : D tourne donc comme A. Compter trois inversions oublie cette propriété de l'engrenage intérieur ; une seule inversion ou aucune ignore un des engrènements extérieurs.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour un train dont le calcul donne r = 20 / 43 × 15 / 45 ≈ 0,155, on prévoit N'36 = 1,24 pour N'1 = 8. Sur le graphique, gradué de 0,1 en 0,1, on lit N'36 ≈ 1,2. Quelle est la cause la plus plausible de l'écart ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La lecture du graphique, précise à une graduation (0,1 tour) près"
+        },
+        {
+          "id": "b",
+          "text": "Le frottement des dents, qui fait perdre des tours à l'arbre de sortie"
+        },
+        {
+          "id": "c",
+          "text": "Le rapport de transmission, qui varie avec la vitesse du moteur"
+        },
+        {
+          "id": "d",
+          "text": "Une erreur de calcul : le rapport aurait dû être Z menée / Z menante"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'écart est de 0,04 tour, soit moins d'une graduation de l'axe : il vient de la lecture, et les deux méthodes concordent. Le rapport est fixé par les nombres de dents, il ne varie pas avec la vitesse du moteur ; les frottements pèsent sur le couple et la puissance, pas sur le nombre de tours ; et le quotient renversé donnerait un rapport supérieur à 6, très loin de 0,15.",
+      "difficulty": 3
+    }
+  ]
+}

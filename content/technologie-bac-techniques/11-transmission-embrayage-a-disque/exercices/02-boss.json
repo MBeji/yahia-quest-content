@@ -1,0 +1,148 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : de l'effort presseur au couple transmis",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "130-135",
+    "items": [
+      "Dessin d'ensemble p.131 (échelle)",
+      "A.7 positions",
+      "B.1 d ressorts",
+      "C.c couple et coefficient f"
+    ]
+  },
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Sur le dessin d'ensemble à l'échelle 3:10, le diamètre intérieur d de la couronne de friction mesure 27 mm à la règle. Quel est le rayon intérieur r réel, en millimètres ?",
+      "answerKey": {
+        "value": 45,
+        "unit": "mm",
+        "tolerance": 0.01
+      },
+      "explanation": "L'échelle 3:10 est une réduction : le réel est 10/3 fois plus grand que le dessin. d = 27 × 10 ÷ 3 = 90 mm, puis le rayon est la moitié du diamètre : r = 90 ÷ 2 = 45 mm. Oublier la conversion donnerait 13,5 mm, et l'appliquer à l'envers (27 × 3 ÷ 10) un résultat plus petit que la mesure du dessin, ce qui est impossible pour une réduction.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lors d'un réglage, on supprime par erreur la garde : la butée reste en appui contre les leviers, pédale relâchée. Quelle conséquence est à craindre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le plateau n'est plus plaqué à fond : le disque patine et s'use"
+        },
+        {
+          "id": "b",
+          "text": "L'embrayage reste débrayé : l'arbre de sortie ne tourne jamais"
+        },
+        {
+          "id": "c",
+          "text": "Les ressorts cassent : ils restent trop comprimés pédale relâchée"
+        },
+        {
+          "id": "d",
+          "text": "La pédale devient plus dure à enfoncer, sans autre conséquence"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si la butée appuie en permanence sur les leviers, ceux-ci retiennent le plateau en arrière : l'effort presseur n'atteint plus sa valeur, le couple transmissible baisse et le disque glisse, ce qui échauffe et use les garnitures. L'embrayage n'est pas pour autant débrayé, puisque les ressorts plaquent encore en grande partie le plateau, et les ressorts ne cassent pas pour autant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur ce schéma en demi-coupe, 24 est le volant moteur, 27 le plateau de pression, 14 la butée et 32 un levier de débrayage. Quelle est la position de l'embrayage, et à quels indices la reconnaît-on ?\n<svg viewBox=\"86 18 200 218\"><title>Embrayage en demi-coupe, schéma 1</title><line x1=\"90\" y1=\"230\" x2=\"400\" y2=\"230\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"14 4 3 4\"/><rect x=\"96\" y=\"64\" width=\"24\" height=\"166\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"96,52 268,52 268,160 256,160 256,60 110,60 110,64 96,64\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"120\" y=\"70\" width=\"10\" height=\"70\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"138\" y=\"70\" width=\"10\" height=\"70\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"130\" y=\"70\" width=\"8\" height=\"160\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"130\" y=\"218\" width=\"270\" height=\"12\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"156\" y=\"66\" width=\"26\" height=\"124\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"182,72 186.6,78 195.9,66 205.1,78 214.4,66 223.6,78 232.9,66 242.1,78 251.4,66 256,72\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"204\" y1=\"122\" x2=\"256\" y2=\"122\" stroke=\"#475569\" stroke-width=\"3\"/><line x1=\"182\" y1=\"100\" x2=\"212\" y2=\"101.5\" stroke=\"#475569\" stroke-width=\"3\"/><line x1=\"196\" y1=\"142.5\" x2=\"212\" y2=\"101.5\" stroke=\"#334155\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"204\" cy=\"122\" r=\"4.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"196\" y=\"132\" width=\"28\" height=\"24\" fill=\"#fdba74\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"224\" y=\"126\" width=\"8\" height=\"64\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"108\" y=\"150\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">24</text><text x=\"169\" y=\"170\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">27</text><text x=\"210\" y=\"148\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">14</text><text x=\"228\" y=\"97\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">32</text><text x=\"228\" y=\"206\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Embrayée : le plateau touche le disque, la butée est à distance des leviers"
+        },
+        {
+          "id": "b",
+          "text": "Embrayée : le plateau a reculé, la butée pousse les leviers"
+        },
+        {
+          "id": "c",
+          "text": "Débrayée : le plateau touche le disque, la butée est à distance des leviers"
+        },
+        {
+          "id": "d",
+          "text": "Débrayée : le plateau a reculé, la butée pousse les leviers"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux indices se lisent sur le schéma : un jeu sépare le plateau (27) du disque, et la butée (14) touche le levier (32) et le pousse. Ce sont les signes du débrayage. Le plateau qui touche le disque avec une garde visible décrirait au contraire l'embrayage ; les deux séries d'indices ne se mélangent pas.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une couronne de friction a un rayon extérieur de 75 mm et un rayon intérieur de 45 mm. Ses deux faces sont garnies d'un matériau de coefficient de frottement 0,4 et les ressorts exercent un effort total de 40 N. Quel couple l'embrayage peut-il transmettre au maximum, en N·m ?",
+      "answerKey": {
+        "value": 1.96,
+        "unit": "N·m",
+        "tolerance": 0.01
+      },
+      "explanation": "Deux faces garnies donnent n = 2 surfaces de friction. Rayon d'action : Rm = (2/3) × (75³ − 45³) / (75² − 45²) = (2/3) × 330 750 / 3 600 = 61,25 mm, valeur comprise entre 45 et 75. Puis Ct = n × f × N × Rm = 2 × 0,4 × 40 × 61,25 = 1 960 N·mm, soit 1,96 N·m en divisant par 1 000.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève calcule le rayon d'action d'une couronne de friction (R = 80 mm, r = 50 mm) et trouve Rm = 132 mm. Que peut-on dire de ce résultat, sans refaire tout le calcul ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est plausible : Rm est un rayon d'action, qui peut dépasser R = 80 mm"
+        },
+        {
+          "id": "b",
+          "text": "Il est faux : Rm doit rester entre r et R, soit entre 50 et 80 mm"
+        },
+        {
+          "id": "c",
+          "text": "Il est faux : Rm doit être inférieur à r = 50 mm, car il est proche du centre"
+        },
+        {
+          "id": "d",
+          "text": "Il est plausible : Rm est un diamètre moyen, voisin de D = 160 mm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Rm est une moyenne de rayons de la couronne : il reste entre le rayon intérieur et le rayon extérieur, soit entre 50 et 80 mm ici. Le résultat 132 mm est impossible ; il vaut presque exactement le double de la bonne valeur (environ 66 mm), signe que l'élève a utilisé les diamètres D et d au lieu des rayons R et r.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces grandeurs, augmentée seule, augmentent le couple transmissible Ct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'effort presseur N développé par les ressorts de pression"
+        },
+        {
+          "id": "b",
+          "text": "La vitesse de rotation du volant moteur au moment de l'embrayage"
+        },
+        {
+          "id": "c",
+          "text": "Le coefficient de frottement f des garnitures du disque"
+        },
+        {
+          "id": "d",
+          "text": "Le rayon extérieur R de la couronne, le rayon r restant fixe"
+        },
+        {
+          "id": "e",
+          "text": "L'effort exercé par le pied sur la pédale (18) pendant le trajet"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Ct = n × f × N × Rm : il est proportionnel à N et à f, et le rayon d'action Rm grandit quand R grandit, donc un disque plus large transmet plus de couple. La vitesse de rotation n'apparaît pas dans la formule, et l'effort du pied sert à débrayer : il ne serre pas le disque.",
+      "difficulty": 3
+    }
+  ]
+}
