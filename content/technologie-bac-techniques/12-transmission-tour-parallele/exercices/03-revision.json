@@ -1,0 +1,203 @@
+{
+  "title": "⭐⭐ Révision (type examen) : transmission, freinage et avance",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "138-154",
+    "items": [
+      "Activité 2.2 — q. 2 c",
+      "Activité 2.5 — q. 3 b"
+    ]
+  },
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Lesquels de ces éléments du tour agissent par adhérence (frottement) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La plaquette de frottement de l'embrayage limiteur"
+        },
+        {
+          "id": "b",
+          "text": "Une clavette parallèle logée dans ses rainures"
+        },
+        {
+          "id": "c",
+          "text": "La garniture du sabot qui presse la poulie"
+        },
+        {
+          "id": "d",
+          "text": "Les dents d'un baladeur en prise"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "La plaquette de l'embrayage et la garniture du sabot sont pressées contre une surface et agissent par frottement : c'est de l'adhérence, et elles peuvent glisser (l'une entraîne, l'autre retient). La clavette et les dents sont des formes qui barrent le chemin à l'autre pièce : elles transmettent par obstacle.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque dispositif à son rôle sur le tour.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Vis et écrou"
+        },
+        {
+          "id": "l2",
+          "text": "Pignon et crémaillère"
+        },
+        {
+          "id": "l3",
+          "text": "Roue et vis sans fin"
+        },
+        {
+          "id": "l4",
+          "text": "Poulie et courroie"
+        },
+        {
+          "id": "r1",
+          "text": "Commande du chariot transversal"
+        },
+        {
+          "id": "r2",
+          "text": "Déplacement du traînard le long du banc"
+        },
+        {
+          "id": "r3",
+          "text": "Réduction de r = 1/40 depuis la barre de chariotage"
+        },
+        {
+          "id": "r4",
+          "text": "Réduction de r = 0,475 entre le moteur et la boîte"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La vis et son écrou transforment la rotation de la vis de commande en translation du chariot transversal. Le pignon et la crémaillère déplacent le traînard le long du banc. La roue et la vis sans fin réduisent la rotation de la barre de chariotage dans le rapport 1/40, et la courroie réduit celle du moteur dans le rapport 0,475.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le mandrin tourne à N = 500 tr/min et la pièce a un diamètre de 40 mm. Quelle est la vitesse de coupe Vc, en m/min ?",
+      "answerKey": {
+        "value": 62.8,
+        "tolerance": 0.2,
+        "unit": "m/min"
+      },
+      "explanation": "Vc = π × D × N / 1 000 = π × 40 × 500 / 1 000 ≈ 62,8 m/min ✓. Le facteur 1 000 convertit les millimètres en mètres.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur ce schéma de principe, les points pleins A, B et E sont liés au support (18). Quelle est la trajectoire du point D par rapport au support ?\n<svg viewBox=\"0 0 460 290\"><title>Schéma de principe d'un frein à sabot commandé par une pédale, avec les pivots A, B, C, D et E</title><circle cx=\"360\" cy=\"120\" r=\"60\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"360\" cy=\"120\" r=\"6\" fill=\"#0f172a\"/><rect x=\"280\" y=\"90\" width=\"20\" height=\"60\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"290\" y1=\"60\" x2=\"290\" y2=\"90\" stroke=\"#64748b\" stroke-width=\"6\" stroke-linecap=\"round\"/><polyline points=\"280,130 230,165 185,205\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"185\" y1=\"205\" x2=\"120\" y2=\"255\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"165\" x2=\"120\" y2=\"255\" stroke=\"#64748b\" stroke-width=\"6\" stroke-linecap=\"round\"/><rect x=\"96\" y=\"258\" width=\"48\" height=\"10\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"290\" cy=\"60\" r=\"6\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"165\" r=\"6\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"120\" cy=\"165\" r=\"6\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"185\" cy=\"205\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"120\" cy=\"255\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"290\" y=\"48\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"242\" y=\"186\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"176\" y=\"224\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><text x=\"100\" y=\"246\" font-size=\"12\" font-weight=\"700\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text><text x=\"104\" y=\"160\" font-size=\"12\" font-weight=\"700\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><text x=\"360\" y=\"150\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">7</text><text x=\"262\" y=\"122\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"262\" y=\"152\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text><text x=\"166\" y=\"252\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">16</text><text x=\"104\" y=\"208\" font-size=\"12\" font-weight=\"700\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">17</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un arc de cercle de centre E et de rayon ED"
+        },
+        {
+          "id": "b",
+          "text": "Un arc de cercle de centre C et de rayon CD"
+        },
+        {
+          "id": "c",
+          "text": "Un arc de cercle de centre B et de rayon BD"
+        },
+        {
+          "id": "d",
+          "text": "Un arc de cercle de centre A et de rayon AD"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La pédale tourne autour du point fixe E : tous ses points restent à distance constante de E, donc D décrit un arc de cercle de centre E et de rayon ED. B et A sont les centres de rotation du levier et du sabot, pas de la pédale, et C est un point mobile : il ne peut pas être le centre d'une trajectoire par rapport au support.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un pignon de 15 dents entraîne une roue de 60 dents. Sur le même arbre que cette roue, un pignon de 24 dents entraîne une roue de 36 dents. L'arbre d'entrée tourne à 900 tr/min. À quelle vitesse tourne l'arbre de sortie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "225 tr/min"
+        },
+        {
+          "id": "b",
+          "text": "600 tr/min"
+        },
+        {
+          "id": "c",
+          "text": "150 tr/min"
+        },
+        {
+          "id": "d",
+          "text": "5 400 tr/min"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les rapports sont r1 = 15 / 60 = 1/4 et r2 = 24 / 36 = 2/3, donc r = 1/4 × 2/3 = 1/6 et N = 900 / 6 = 150 tr/min. 225 ne tient compte que du premier étage, 600 que du second, et 5 400 vient du quotient renversé (900 × 6).",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche pour afficher une vitesse de broche sur le tour.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relever le diamètre à usiner et la vitesse de coupe adaptée"
+        },
+        {
+          "id": "b",
+          "text": "Calculer N avec N = 1 000 × Vc / (π × D)"
+        },
+        {
+          "id": "c",
+          "text": "Repérer sur le tour la vitesse disponible la plus proche de N"
+        },
+        {
+          "id": "d",
+          "text": "Machine à l'arrêt, déplacer les baladeurs vers la position de cette vitesse"
+        },
+        {
+          "id": "e",
+          "text": "Remettre en marche et vérifier la vitesse obtenue"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On ne peut pas calculer N avant d'avoir relevé D et Vc, ni choisir la vitesse disponible avant de connaître N. Le déplacement des baladeurs vient ensuite, la machine étant à l'arrêt pour ne pas abîmer les dents. La remise en marche et la vérification ferment la démarche.",
+      "difficulty": 2
+    }
+  ]
+}

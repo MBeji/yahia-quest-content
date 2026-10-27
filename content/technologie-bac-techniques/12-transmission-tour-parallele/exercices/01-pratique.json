@@ -1,0 +1,184 @@
+{
+  "title": "⭐ Exercice : lire le tour et ses mécanismes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "136-154",
+    "items": [
+      "Activité 2.3 — q. 2 c et d",
+      "Activité 2.4 — q. 1 b"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Sur ce dessin, la pièce tourne dans le mandrin et l'outil avance dans le sens de la flèche. Quelle opération réalise-t-on, et quelle surface obtient-on ?\n<svg viewBox=\"0 0 460 190\"><title>Outil qui avance perpendiculairement à l'axe d'une pièce en rotation</title><line x1=\"40\" y1=\"120\" x2=\"420\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"14 4 3 4\"/><rect x=\"50\" y=\"75\" width=\"50\" height=\"90\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"100\" y=\"90\" width=\"230\" height=\"60\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"346\" y=\"96\" width=\"44\" height=\"30\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/><polygon points=\"346,100 346,122 330,118\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"412\" y1=\"64\" x2=\"412.0\" y2=\"106.0\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><polygon points=\"412,116 407.5,106.0 416.5,106.0\" fill=\"#2563eb\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chariotage : surface plane"
+        },
+        {
+          "id": "b",
+          "text": "Chariotage : surface cylindrique"
+        },
+        {
+          "id": "c",
+          "text": "Dressage : surface cylindrique"
+        },
+        {
+          "id": "d",
+          "text": "Dressage : surface plane"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La flèche est perpendiculaire à l'axe de la pièce : l'outil va vers l'axe de la pièce qui tourne, c'est un dressage, et il laisse une face plane. Un chariotage aurait une avance parallèle à l'axe et dessinerait un cylindre. Les deux propositions mixtes associent l'opération à la surface de l'autre.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque mécanisme du tour à la question à laquelle il répond.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Boîte de vitesses"
+        },
+        {
+          "id": "l2",
+          "text": "Embrayage limiteur de la barre de chariotage"
+        },
+        {
+          "id": "l3",
+          "text": "Frein à sabot"
+        },
+        {
+          "id": "l4",
+          "text": "Vis de commande du chariot transversal"
+        },
+        {
+          "id": "r1",
+          "text": "À quelle vitesse tourne la pièce ?"
+        },
+        {
+          "id": "r2",
+          "text": "Jusqu'à quel couple l'avance est-elle transmise ?"
+        },
+        {
+          "id": "r3",
+          "text": "Comment immobiliser vite le moteur ?"
+        },
+        {
+          "id": "r4",
+          "text": "De combien avance le chariot pour un tour de manivelle ?"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La boîte de vitesses fixe la vitesse de rotation de la broche. L'embrayage limiteur transmet l'avance jusqu'à un couple réglé et patine au-delà. Le frein à sabot retient la poulie pour arrêter vite le moteur. La vis de commande donne, pour un tour de manivelle, un déplacement égal à son pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un embrayage limiteur à friction, qu'est-ce qui crée l'adhérence entre les surfaces ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La vitesse de rotation du plateau menant"
+        },
+        {
+          "id": "b",
+          "text": "Le poids propre du disque mené"
+        },
+        {
+          "id": "c",
+          "text": "Une huile qui colle les deux surfaces entre elles"
+        },
+        {
+          "id": "d",
+          "text": "Un ressort qui presse les surfaces entre elles"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'adhérence naît du frottement entre deux surfaces pressées l'une contre l'autre : c'est le ressort qui crée cet effort presseur, et on le règle pour fixer le couple de patinage. La vitesse de rotation du plateau ne presse pas les surfaces et varie sans lien avec le couple réglé ; le poids du disque est perpendiculaire à l'axe, il ne les presse pas non plus. Une huile, au contraire, diminue le frottement au lieu de le créer.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "On chariotte une pièce d'aluminium de Ø24 avec un outil en A.R.S. La vitesse de coupe est Vc = 60 m/min. Quelle vitesse de rotation N faut-il, en tr/min, arrondie à l'unité ?",
+      "answerKey": {
+        "value": 796,
+        "tolerance": 1,
+        "unit": "tr/min"
+      },
+      "explanation": "N = 1 000 × Vc / (π × D) = 1 000 × 60 / (π × 24) = 60 000 / 75,40 ≈ 796 tr/min. Contrôle : π × 24 × 796 / 1 000 ≈ 60 m/min ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le tambour gradué de la manivelle d'une vis de pas 5 mm compte 80 divisions. De combien avance le chariot quand on tourne le tambour de 12 divisions ?",
+      "answerKey": {
+        "value": 0.75,
+        "tolerance": 0.01,
+        "unit": "mm"
+      },
+      "explanation": "Un tour de vis déplace le chariot de 5 mm, répartis sur 80 divisions : 5 / 80 = 0,0625 mm par division. Pour 12 divisions, 12 × 0,0625 = 0,75 mm ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche pour tracer le vecteur vitesse d'un point D d'une pédale qui tourne autour de E, à l'échelle 1 mm pour 0,01 m/s.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relever la vitesse angulaire ω et la distance ED"
+        },
+        {
+          "id": "b",
+          "text": "Convertir ED en mètres"
+        },
+        {
+          "id": "c",
+          "text": "Calculer V = ω × ED"
+        },
+        {
+          "id": "d",
+          "text": "Diviser V par 0,01 m/s pour obtenir la longueur en mm"
+        },
+        {
+          "id": "e",
+          "text": "Tracer, à cette longueur, le vecteur perpendiculaire à ED dans le sens de la rotation"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On part des données (ω et ED), on convertit en mètres avant de calculer pour obtenir des m/s, puis on calcule la valeur de V. On la convertit ensuite en longueur à l'échelle, et on trace en dernier le vecteur à cette longueur : tracer avant de connaître la longueur reviendrait à deviner.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# 📜 Résumé : la boîte de vitesses, ses engrenages et son frein
+
+- **La boîte dans la chaîne** — après l'embrayage, avant le pont : elle **adapte le couple et la vitesse**. Sur l'actigramme A-0, la puissance entre à gauche et sort à droite, le choix du conducteur arrive par le haut. Elle ne crée pas de puissance.
+- **Rapport de transmission** — r = N sortie / N entrée ; pour un engrenage, r = Z menante / Z menée ; pour un train, on **multiplie** les rapports, et N sortie = N entrée × r. Deux roues d'un même arbre ne forment pas une paire.
+- **Marche arrière** — chaque engrènement extérieur **inverse** le sens : nombre pair, sens conservé ; impair, sens inversé. La marche arrière en compte trois ; la roue de renvoi (33, 34) s'annule dans le calcul quand Z33 = Z34.
+- **Choisir une vitesse et guider** — le levier commande les **fourchettes**, la fourchette déplace le **baladeur**. Cinq vitesses avant, une marche arrière, et le **point mort** où r = 0. On débraye avant de passer une vitesse. Arbre : **pivot** par roulements ; baladeur et coulisseau : **glissière** (cannelures, tige) ; la fourchette, elle, **déplace**.
+- **Crabotage** — accouplement par **obstacle** (crabots qui s'emboîtent, étudiés pour la 3ᵉ vitesse), sans glissement ; l'**adhérence**, celle de l'embrayage à disque, utilise le frottement et peut glisser.
+- **Types d'engrenages** — **extérieur à denture droite** et **hélicoïdal** (arbres parallèles), **intérieur** (même sens de rotation), **conique** (arbres concourants). Hélicoïdal : silencieux mais poussée axiale ; droit : facile à engager en glissant. Conditions d'engrènement : même **module** ; pour des hélices, même angle et sens **contraires**. Le nombre de dents n'est pas une condition.
+- **Courbe N'36 = f(N'1)** — une **droite par l'origine, de pente r** ; la plus raide est la vitesse la plus rapide. La lecture graphique et le calcul concordent à la précision de lecture près.
+- **Frein à tambour de stationnement** — levier, tringlerie, bras, came, mâchoires (garnitures), tambour. Commande **manuelle**, action **radiale**. Le ressort **rappelle** les mâchoires ; levier relâché, le tambour **tourne**, levier tiré il est **fixe**.
+- **La méthode, en six marches** — situer, calculer, compter les engrènements, suivre la commande, classer les roues, lire la courbe et le frein.

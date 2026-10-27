@@ -1,0 +1,121 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : du couple de patinage à la vitesse d'avance",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "138-154",
+    "items": [
+      "Activité 2.2 — q. 2 h et i",
+      "Activité 2.4 — q. 2 c"
+    ]
+  },
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un embrayage limiteur à friction plane n'a qu'une seule surface de friction (n = 1), un coefficient de frottement f = 0,45 et un effort normal N = 150 N. La couronne de contact a pour rayons R = 45 mm et r = 30 mm. Quel est le couple transmissible Ct, en N·m ?",
+      "answerKey": {
+        "value": 2.57,
+        "tolerance": 0.02,
+        "unit": "N·m"
+      },
+      "explanation": "(R³ − r³) / (R² − r²) = (91 125 − 27 000) / (2 025 − 900) = 57 mm, puis × 2/3 = 38 mm = 0,038 m. L'effort tangentiel vaut n × f × N = 1 × 0,45 × 150 = 67,5 N, d'où Ct = 67,5 × 0,038 = 2,565 N·m, soit environ 2,57 N·m. Contrôle : le résultat est entre 67,5 × 0,030 = 2,03 et 67,5 × 0,045 = 3,04 N·m ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une pédale tourne autour de E à ω = 8 rad/s. Le point D est à 75 mm de E. On trace son vecteur vitesse à l'échelle 1 mm pour 0,01 m/s. Quelle longueur, en mm, doit-il avoir ?",
+      "answerKey": {
+        "value": 60,
+        "unit": "mm"
+      },
+      "explanation": "V(D) = ω × ED = 8 × 0,075 = 0,6 m/s, en convertissant 75 mm en 0,075 m. À l'échelle 1 mm pour 0,01 m/s, le vecteur mesure 0,6 / 0,01 = 60 mm ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le limiteur du tour patine à un couple Ct. On remplace sa garniture usée par une garniture au coefficient de frottement f plus faible, sans toucher au ressort ni aux surfaces. Que devient le seuil de patinage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il reste le même : seul l'effort presseur du ressort règle Ct"
+        },
+        {
+          "id": "b",
+          "text": "Il augmente : moins de frottement signifie moins de patinage"
+        },
+        {
+          "id": "c",
+          "text": "Il s'annule : sans garniture adhérente, plus rien n'est transmis"
+        },
+        {
+          "id": "d",
+          "text": "Il diminue, proportionnellement à f : il patine plus tôt"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Ct est proportionnel à f : avec N, n, R et r inchangés, un f plus faible donne un Ct plus faible, donc l'embrayage patine plus tôt. L'effort presseur n'est pas le seul paramètre de Ct. Un frottement plus faible rend le glissement plus facile et non plus rare. Enfin Ct ne s'annule que si f ou N s'annule, ce qui n'est pas le cas ici.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans cette boîte à baladeur, le nombre de dents de chaque roue est inscrit sur elle. L'arbre du haut, menant, tourne à 700 tr/min. À quelle vitesse tourne l'arbre du bas, dans la position du baladeur représentée ?\n<svg viewBox=\"0 0 240 165\"><title>Boîte à baladeur : nombres de dents des quatre roues et position du baladeur</title><rect x=\"40\" y=\"51\" width=\"130\" height=\"8\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"40\" y=\"111\" width=\"130\" height=\"8\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"60\" y=\"95\" width=\"18\" height=\"40\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"69\" y=\"119.0\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><rect x=\"120\" y=\"80\" width=\"18\" height=\"70\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"129\" y=\"119.0\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">35</text><rect x=\"112\" y=\"50\" width=\"8\" height=\"10\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"94\" y=\"15\" width=\"18\" height=\"80\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"103\" y=\"59.0\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><rect x=\"120\" y=\"30\" width=\"18\" height=\"50\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"129\" y=\"59.0\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">25</text><text x=\"176\" y=\"59\" font-size=\"10\" font-weight=\"600\" text-anchor=\"start\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">menant</text><text x=\"176\" y=\"119\" font-size=\"10\" font-weight=\"600\" text-anchor=\"start\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">mené</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 400 tr/min"
+        },
+        {
+          "id": "b",
+          "text": "980 tr/min"
+        },
+        {
+          "id": "c",
+          "text": "500 tr/min"
+        },
+        {
+          "id": "d",
+          "text": "350 tr/min"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seule la paire de 25 dents (menante) et de 35 dents (menée) est engrenée : r = 25 / 35 = 5/7, donc 700 × 5/7 = 500 tr/min. 980 vient du quotient renversé (700 × 35 / 25), 1 400 de l'autre paire (40 / 20 = 2), qui n'engrène pas dans cette position, et 350 de cette autre paire avec le quotient renversé (700 × 20 / 40).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un tour doit fournir à la broche un couple de 150 N·m à 120 tr/min. Le rendement de la courroie est 0,8 et celui de la boîte de vitesses 0,9. Quelle puissance, en kW, le moteur doit-il fournir ?",
+      "answerKey": {
+        "value": 2.62,
+        "tolerance": 0.02,
+        "unit": "kW"
+      },
+      "explanation": "ω = 2π × 120 / 60 = 4π ≈ 12,57 rad/s, donc la puissance à la broche vaut P = C × ω = 150 × 12,57 ≈ 1 885 W. Le rendement global vaut 0,8 × 0,9 = 0,72 : le moteur doit fournir 1 885 / 0,72 ≈ 2 618 W, soit environ 2,62 kW ✓. Le moteur fournit plus que la broche ne reçoit, à cause des pertes : on divise par le rendement.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le chariot doit avancer à 30 mm/min. Un étage vis sans fin et roue, de rapport r = 1/40, fait tourner une vis de commande de pas P = 5 mm, dont l'écrou porte le chariot. À quelle vitesse la barre de chariotage doit-elle tourner ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 tr/min"
+        },
+        {
+          "id": "b",
+          "text": "240 tr/min"
+        },
+        {
+          "id": "c",
+          "text": "1 200 tr/min"
+        },
+        {
+          "id": "d",
+          "text": "0,15 tr/min"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La vis de commande doit tourner à N = V / P = 30 / 5 = 6 tr/min, puis la barre tourne 40 fois plus vite que la vis : Nb = 6 / (1/40) = 240 tr/min. 6 est la vitesse de la vis et non celle de la barre ; 1 200 oublie de diviser par le pas (30 × 40) ; 0,15 réduit encore au lieu de remonter (6 / 40).",
+      "difficulty": 3
+    }
+  ]
+}
