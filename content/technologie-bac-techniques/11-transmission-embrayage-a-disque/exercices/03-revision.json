@@ -1,0 +1,128 @@
+{
+  "title": "⭐⭐ Révision (type examen) : classer, mesurer, calculer",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "130-135",
+    "items": [
+      "A.5 type d'embrayage",
+      "A.6 surface de friction",
+      "B.1 a type de commande",
+      "C.a surfaces de friction",
+      "C.c coefficient f"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Du point de vue de la façon dont la transmission s'établit, comment classe-t-on l'embrayage de la maquette ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Instantané : transmission par obstacle, sans glissement"
+        },
+        {
+          "id": "b",
+          "text": "Instantané : transmission par adhérence, d'un seul coup"
+        },
+        {
+          "id": "c",
+          "text": "Progressif : transmission par obstacle, avec du glissement"
+        },
+        {
+          "id": "d",
+          "text": "Progressif : transmission par adhérence, avec glissement"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une transmission par adhérence s'établit avec un glissement des garnitures avant que les deux arbres tournent ensemble : l'embrayage est progressif, ce qui évite les à-coups. Instantané suppose un obstacle (des dents) et aucun glissement ; adhérence et obstacle ne se mélangent pas. Et progressif ne veut pas dire partiel : une fois embrayé, il transmet intégralement la puissance.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour calculer le couple transmissible, on a besoin de n, le nombre de surfaces de friction de l'embrayage de la maquette. Quelle est sa valeur d'après la nomenclature ?",
+      "answerKey": {
+        "value": 2,
+        "unit": "surfaces"
+      },
+      "explanation": "La nomenclature compte deux garnitures (37), une par face du disque ; chacune frotte contre une pièce, l'une contre le volant, l'autre contre le plateau, soit n = 2 surfaces de friction. Compter quatre faces (deux par garniture) serait compter aussi les faces collées sur le disque, qui ne frottent contre rien.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur cette vue de face de la couronne de friction, quel segment représente le rayon intérieur r ?\n<svg viewBox=\"0 0 260 226\"><title>Couronne de friction avec trois segments repérés</title><circle cx=\"130\" cy=\"118\" r=\"84\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"130\" cy=\"118\" r=\"50\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"38\" y1=\"118\" x2=\"222\" y2=\"118\" stroke=\"#64748b\" stroke-width=\"1.1\" stroke-dasharray=\"10 3 2 3\"/><circle cx=\"130\" cy=\"118\" r=\"3\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"130\" y1=\"118\" x2=\"86.7\" y2=\"93\" stroke=\"#ef4444\" stroke-width=\"4\"/><text x=\"102.2\" y=\"96.2\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#ef4444\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"130\" y1=\"118\" x2=\"202.7\" y2=\"76\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"174\" y=\"86.9\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"155\" y1=\"161.3\" x2=\"172\" y2=\"190.7\" stroke=\"#15803d\" stroke-width=\"4\"/><text x=\"175.5\" y=\"180\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#15803d\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le segment 1"
+        },
+        {
+          "id": "b",
+          "text": "Le segment 2"
+        },
+        {
+          "id": "c",
+          "text": "Le segment 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le rayon intérieur r va du centre au bord intérieur de la couronne : c'est le segment 1, qui s'arrête au bord du trou central. Le segment qui va jusqu'au bord extérieur est le rayon R, et celui qui ne part pas du centre mesure l'épaisseur de la couronne, R − r.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans cette demi-coupe, la ligne rouge est la surface où les deux pièces frottent. Quelle est la forme de cette surface de friction ?\n<svg viewBox=\"0 0 260 210\"><title>Surface de friction en demi-coupe, schéma à classer</title><line x1=\"10\" y1=\"190\" x2=\"250\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"14 4 3 4\"/><polygon points=\"60,150 160,90 160,190 60,190\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"60,150 160,90 160,62 60,122\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"60\" y1=\"150\" x2=\"160\" y2=\"90\" stroke=\"#ef4444\" stroke-width=\"5\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plane"
+        },
+        {
+          "id": "b",
+          "text": "Conique"
+        },
+        {
+          "id": "c",
+          "text": "Cylindrique"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La trace de contact est inclinée par rapport à l'axe (traits mixtes) : ni perpendiculaire à l'axe, ce qui serait une surface plane, ni parallèle à l'axe, ce qui serait une surface cylindrique. La surface est conique.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La pédale (18) pousse la fourchette, qui pousse la butée, qui pousse les leviers, qui font reculer le plateau (27). Comment qualifie-t-on ce type de commande ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hydraulique : l'effort passe par un liquide sous pression"
+        },
+        {
+          "id": "b",
+          "text": "Mécanique : l'effort passe de pièce solide en pièce solide"
+        },
+        {
+          "id": "c",
+          "text": "Pneumatique : l'effort passe par de l'air comprimé"
+        },
+        {
+          "id": "d",
+          "text": "Électrique : l'effort est fourni par un actionneur électrique"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ici chaque pièce pousse directement la suivante, la pédale jusqu'au plateau : l'effort passe par des pièces solides, la commande est donc mécanique. Une commande hydraulique ferait passer l'effort par un liquide dans un cylindre, une commande pneumatique par de l'air comprimé, une commande électrique par un actionneur. Aucun de ces éléments n'apparaît dans la chaîne décrite.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les garnitures d'un disque (deux faces frottantes) ont pour diamètres 120 mm à l'extérieur et 80 mm à l'intérieur. Les ressorts serrent le disque avec 48 N et le couple à transmettre est de 1,8 N·m. Quel coefficient de frottement faut-il, arrondi au centième ?",
+      "answerKey": {
+        "value": 0.37,
+        "tolerance": 0.004
+      },
+      "explanation": "Les rayons sont la moitié des diamètres : R = 60 mm et r = 40 mm, et n = 2. Rayon d'action : Rm = (2/3) × (60³ − 40³) / (60² − 40²) = (2/3) × 152 000 / 2 000 ≈ 50,7 mm, valeur comprise entre 40 et 60. Avec Ct = 1,8 N·m = 1 800 N·mm : f = Ct / (n × N × Rm) = 1 800 / (2 × 48 × 50,7) ≈ 0,37.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "title": "Test de compréhension ⭐ : l'embrayage à disque",
+  "questions": [
+    {
+      "prompt": "Pédale appuyée, la manivelle (23) continue de tourner. Quel est l'état de l'arbre de sortie (29) et de l'embrayage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'arbre de sortie tourne, l'embrayage est embrayé"
+        },
+        {
+          "id": "b",
+          "text": "L'arbre de sortie tourne plus lentement, l'embrayage patine"
+        },
+        {
+          "id": "c",
+          "text": "L'arbre de sortie est au repos, l'embrayage est embrayé"
+        },
+        {
+          "id": "d",
+          "text": "L'arbre de sortie est au repos, l'embrayage est débrayé"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pédale appuyée, la commande fait reculer le plateau : la liaison est rompue, l'arbre de sortie n'est plus entraîné et reste au repos alors que la manivelle tourne, ce qui permet de changer de rapport. Un arbre de sortie qui tourne correspond à la pédale relâchée ; et un arbre au repos ne peut pas être entraîné, donc l'embrayage ne peut pas être embrayé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quand on appuie sur la pédale de la maquette, la fourchette (20) pousse une pièce de la commande. Laquelle reçoit directement cette poussée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La pédale (18)"
+        },
+        {
+          "id": "b",
+          "text": "Le plateau de pression (27)"
+        },
+        {
+          "id": "c",
+          "text": "La butée d'embrayage (14)"
+        },
+        {
+          "id": "d",
+          "text": "Les leviers de débrayage (32)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans la chaîne de commande, la pédale actionne la fourchette, la fourchette pousse la butée (14), la butée appuie sur les leviers, et ce sont les leviers qui font reculer le plateau. La pédale vient avant la fourchette, tandis que le plateau et les leviers viennent après la butée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur la maquette, un ressort de pression développe Fr = 3,5 N. Un élève annonce que l'effort presseur N de l'embrayage vaut 3,5 N. Quelle est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a oublié de multiplier par le nombre de ressorts, car N regroupe tous les ressorts"
+        },
+        {
+          "id": "b",
+          "text": "Il a oublié de diviser par le nombre de ressorts, car N est l'effort d'un seul ressort"
+        },
+        {
+          "id": "c",
+          "text": "Il a oublié de multiplier par le nombre de surfaces de friction, car N en dépend"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les ressorts de pression poussent tous dans le même sens et leurs efforts s'ajoutent : N = nombre de ressorts × Fr, soit 16 × 3,5 = 56 N sur la maquette. La valeur 3,5 N n'est que l'effort d'un seul ressort. N n'est pas une moyenne à diviser, et le nombre de surfaces de friction n intervient à part dans la formule du couple, pas dans le calcul de N.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On remplace la garniture du disque par un matériau dont le coefficient de frottement f est plus grand, tout le reste étant inchangé. Que devient le couple transmissible maximum Ct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il diminue : le frottement plus fort use davantage le disque"
+        },
+        {
+          "id": "b",
+          "text": "Il augmente : f est un des facteurs de Ct"
+        },
+        {
+          "id": "c",
+          "text": "Il reste le même : seul l'effort presseur N compte"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans la formule Ct = n × f × N × Rm, le nombre de surfaces n, l'effort presseur N et le rayon d'action Rm restent les mêmes : Ct varie dans le même sens que f, donc un f plus grand donne un couple transmissible plus grand. L'usure n'entre pas dans la formule, et l'effort presseur n'est pas le seul facteur : f en est un autre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Comment le couple passe-t-il du volant moteur au disque d'embrayage en position embrayée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Par obstacle : les dents du disque s'engagent dans les dents du volant"
+        },
+        {
+          "id": "b",
+          "text": "Par liaison vissée : des vis fixent le disque contre le volant moteur"
+        },
+        {
+          "id": "c",
+          "text": "Par adhérence : les garnitures sont serrées entre volant et plateau"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Entre le volant et le disque, rien n'est denté ni vissé : le plateau de pression, poussé par les ressorts, serre le disque contre le volant, et ce sont les garnitures qui entraînent le disque par frottement. Une liaison par obstacle ou vissée relierait le disque au volant de façon permanente et interdirait de débrayer.",
+      "difficulty": 2
+    }
+  ]
+}
