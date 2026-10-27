@@ -1,0 +1,156 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : concevoir, diagnostiquer et justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "130-135",
+    "items": [
+      "A.7 garde",
+      "B.1 d ressorts",
+      "C.b effort presseur",
+      "C.c coefficient f",
+      "C.d choix du matériau"
+    ]
+  },
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque symbole de la formule du couple transmissible à sa signification.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "n"
+        },
+        {
+          "id": "l2",
+          "text": "N"
+        },
+        {
+          "id": "l3",
+          "text": "Rm"
+        },
+        {
+          "id": "l4",
+          "text": "R"
+        },
+        {
+          "id": "l5",
+          "text": "d"
+        },
+        {
+          "id": "r1",
+          "text": "Nombre de surfaces qui frottent"
+        },
+        {
+          "id": "r2",
+          "text": "Effort axial total des ressorts de pression"
+        },
+        {
+          "id": "r3",
+          "text": "Rayon d'action, toujours compris entre r et R"
+        },
+        {
+          "id": "r4",
+          "text": "Longueur extérieure de la couronne, moitié du diamètre D"
+        },
+        {
+          "id": "r5",
+          "text": "Longueur intérieure relevée sur le dessin, double du rayon r"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ],
+          [
+            "l5",
+            "r5"
+          ]
+        ]
+      },
+      "explanation": "Dans Ct = n × f × N × Rm : n compte les surfaces qui frottent et N est l'effort axial de l'ensemble des ressorts. Rm est le rayon d'action, une moyenne qui reste entre r et R. R = D/2 est le rayon extérieur de la couronne. Enfin d est le diamètre intérieur que l'on relève sur le dessin : le rayon r en est la moitié, et c'est r, pas d, qui entre dans la formule.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une maquette est réglée avec une garde de 2 mm. Elle est embrayée ; on enfonce la pédale et la butée (14) avance de 5 mm en tout. Sur quelle longueur la butée pousse-t-elle réellement les leviers (32), en millimètres ?",
+      "answerKey": {
+        "value": 3,
+        "unit": "mm"
+      },
+      "explanation": "Les 2 premiers millimètres de la course servent seulement à parcourir la garde : la butée avance sans toucher les leviers, donc rien ne bouge. La butée ne pousse les leviers que sur le reste de sa course : 5 − 2 = 3 mm. Additionner 5 et 2 n'a pas de sens, et ignorer la garde donnerait 5 mm.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un matériau de coefficient de frottement 0,35 garnit les deux faces d'une couronne allant du rayon 60 mm au rayon 100 mm. On veut transmettre 3,5 N·m. Combien de ressorts de 3,5 N chacun faut-il au minimum ?",
+      "answerKey": {
+        "value": 18,
+        "unit": "ressorts"
+      },
+      "explanation": "Rayon d'action : Rm = (2/3) × (100³ − 60³) / (100² − 60²) = (2/3) × 784 000 / 6 400 ≈ 81,7 mm. Avec Ct = 3 500 N·mm : N = Ct / (n × f × Rm) = 3 500 / (2 × 0,35 × 81,7) ≈ 61,2 N, soit 61,2 ÷ 3,5 ≈ 17,5 ressorts. On arrondit au nombre entier supérieur : 18 ressorts (N = 63 N). Avec 17 ressorts, N = 59,5 N donnerait Ct ≈ 3,40 N·m, insuffisant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un technicien remplace les 16 ressorts de pression de 3,5 N par 8 ressorts de 7 N, tout le reste étant inchangé. Que devient le couple transmissible maximum Ct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est doublé : chaque ressort pousse deux fois plus fort"
+        },
+        {
+          "id": "b",
+          "text": "Il est divisé par deux : il y a deux fois moins de ressorts"
+        },
+        {
+          "id": "c",
+          "text": "Il reste le même : l'effort presseur total n'a pas changé"
+        },
+        {
+          "id": "d",
+          "text": "Il est multiplié par quatre : les deux changements se cumulent"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'effort presseur est un produit : avant, 16 × 3,5 = 56 N ; après, 8 × 7 = 56 N. Comme Ct = n × f × N × Rm et que rien d'autre ne bouge, Ct est inchangé. Ne compter que le nombre de ressorts ou que l'effort de chacun oublie l'autre facteur du produit, et les deux changements se compensent au lieu de se cumuler.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une maquette à 16 ressorts de 3,5 N transmettait au maximum 3,2 N·m. Elle patine maintenant dès 2,4 N·m, et seul l'effort presseur a changé, parce que des ressorts sont cassés (les autres développent toujours 3,5 N). Combien de ressorts sont cassés ?",
+      "answerKey": {
+        "value": 4,
+        "unit": "ressorts"
+      },
+      "explanation": "Ct est proportionnel à N quand rien d'autre ne change : N a été multiplié par 2,4 ÷ 3,2 = 0,75. L'effort presseur d'origine valait 16 × 3,5 = 56 N, il vaut maintenant 56 × 0,75 = 42 N, ce qui correspond à 42 ÷ 3,5 = 12 ressorts encore en état. Il en manque donc 16 − 12 = 4.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On exige Ct = 3 N·m avec n = 2, N = 56 N, R = 100 mm et r = 70 mm. Trois matériaux sont candidats, de coefficient de frottement f = 0,4, 0,35 et 0,3. Combien de ces matériaux conviennent ?",
+      "answerKey": {
+        "value": 2,
+        "unit": "matériaux"
+      },
+      "explanation": "Rayon d'action : Rm = (2/3) × (100³ − 70³) / (100² − 70²) = (2/3) × 657 000 / 5 100 ≈ 85,9 mm. Le f nécessaire vaut 3 000 / (2 × 56 × 85,9) ≈ 0,31. Les matériaux de f égal à 0,4 et 0,35 le dépassent et donnent 3,85 N·m et 3,37 N·m ; celui de f égal à 0,3 ne donne que 2,89 N·m, moins que les 3 N·m demandés. Deux matériaux conviennent.",
+      "difficulty": 3
+    }
+  ]
+}

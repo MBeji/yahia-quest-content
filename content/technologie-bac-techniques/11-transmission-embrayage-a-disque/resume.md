@@ -1,0 +1,12 @@
+# 📜 Résumé : l'embrayage à disque — relier, couper, calculer le couple
+
+- **Le support** — maquette d'un embrayage à disque (manivelle (23), pédale (18)), dessin d'ensemble à l'**échelle 3:10**, nomenclature de **38 repères**. Un embrayage est un **accouplement temporaire** placé entre le moteur et la boîte de vitesses (BDV).
+- **Deux positions** — **embrayée** : transmission intégrale de la puissance, arbre de sortie (29) à la **même vitesse** que l'arbre d'entrée (23) ; **débrayée** : transmission interrompue, arbre de sortie au repos. **Pédale relâchée, embrayé ; pédale appuyée, débrayé.**
+- **Trajet de la puissance** — manivelle (23) → arbre moteur (22) → volant moteur (24) → disque (25) → arbre primaire (29). Le disque est **serré** entre le volant (24) et le plateau de pression (27) : la transmission se fait **par adhérence**, par les garnitures (37).
+- **Commande** — chaîne **simplifiée** : pédale (18) → fourchette (20) → butée à billes (14) → leviers de débrayage (32) → plateau de pression (27), qui **recule** contre les ressorts. Le manuel prévoit une case de plus (pièce de liaison, sous-dessin « Système de commande »). La commande de la maquette est **mécanique** (pièces solides) ; les ressorts assurent le retour.
+- **Lire une position** — embrayée : plateau contre le disque, **garde** entre la butée et les leviers, ressorts moins comprimés ; débrayée : butée en appui sur les leviers, plateau reculé, ressorts plus comprimés. Sans garde, le disque patinerait.
+- **Effort presseur** — N est l'effort **axial** créé par les **16 ressorts de pression (26)** : **N = nombre de ressorts × Fr** (16 × 3,5 = 56 N). Un ressort cassé fait baisser N.
+- **Classer** — **progressif** (adhérence, bref glissement, pas d'à-coups) ou instantané (obstacle, sans glissement) ; surfaces de friction **planes**, coniques ou cylindriques. La maquette : progressif, surfaces planes.
+- **Couple transmissible** — Ct = (2/3) × n × f × N × (R³ − r³) / (R² − r²), soit **Ct = n × f × N × Rm**. n = 2 surfaces de friction (2 garnitures), R = D/2 et r = d/2 à relever sur le dessin (échelle 3:10), **Rm entre r et R**. Rayons en mm : Ct en N·mm.
+- **Choisir la garniture** — Ct est proportionnel à f : un matériau convient si son f est **au moins égal** au f calculé ; on justifie par le couple obtenu.
+- **La méthode, en six marches** — positions → puissance → commande (simplifiée) → lecture d'un schéma → effort presseur → caractéristiques (classer, calculer Ct ou f, choisir la garniture).

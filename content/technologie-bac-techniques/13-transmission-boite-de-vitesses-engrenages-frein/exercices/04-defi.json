@@ -1,0 +1,235 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : comparer, critiquer, justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "158-162",
+    "items": [
+      "A.5",
+      "B.6 a",
+      "B.6 c",
+      "C.1"
+    ]
+  },
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "On relâche le levier du frein de stationnement. Remets dans l'ordre ce qui se passe, du geste au tambour.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les garnitures se décollent du tambour"
+        },
+        {
+          "id": "b",
+          "text": "Le ressort rappelle les mâchoires vers le centre, la came revient avec elles"
+        },
+        {
+          "id": "c",
+          "text": "Le tambour est de nouveau libre de tourner avec la roue"
+        },
+        {
+          "id": "d",
+          "text": "La tringlerie, le bras et la came cessent de transmettre l'effort"
+        },
+        {
+          "id": "e",
+          "text": "La main relâche le levier"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "e",
+          "d",
+          "b",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Quand la main relâche le levier, la tringlerie, le bras et la came cessent de transmettre l'effort ; le ressort, tendu pendant le serrage, rappelle alors les mâchoires vers le centre et la came revient avec elles ; les garnitures se décollent, et le tambour tourne de nouveau avec la roue.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque situation de la boîte à la liaison ou au contact qui la décrit.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "L'arbre d'entrée (1) dans le carter"
+        },
+        {
+          "id": "l2",
+          "text": "La fourchette qui déplace le baladeur"
+        },
+        {
+          "id": "l3",
+          "text": "La roue (31) sur l'arbre de sortie (36)"
+        },
+        {
+          "id": "l4",
+          "text": "Le pignon (5) et la roue (6)"
+        },
+        {
+          "id": "r1",
+          "text": "Un pivot, réalisé par des roulements"
+        },
+        {
+          "id": "r2",
+          "text": "Une commande : elle provoque le mouvement sans le guider"
+        },
+        {
+          "id": "r3",
+          "text": "Une glissière : une translation seule est permise"
+        },
+        {
+          "id": "r4",
+          "text": "Un engrènement : les dents transmettent la rotation"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "L'arbre d'entrée tourne sans se déplacer : c'est un pivot, réalisé par des roulements. La fourchette pousse le baladeur : elle ne le guide pas, elle le commande. La roue (31) se déplace le long de son arbre : c'est une glissière. Le pignon et la roue ne sont pas guidés l'un par rapport à l'autre : leurs dents sont en contact, c'est un engrènement.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour une vitesse de la boîte, l'arbre d'entrée fait 4 tours pendant que l'arbre de sortie en fait 1,4. Ce même arbre de sortie entraîne ensuite un pignon de 12 dents qui mène une roue de 30 dents. Le moteur tourne à Nm = 2 500 tr/min, l'embrayage étant embrayé. À quelle vitesse tourne la roue de 30 dents, en tr/min ?",
+      "answerKey": {
+        "value": 350,
+        "tolerance": 1,
+        "unit": "tr/min"
+      },
+      "explanation": "Le premier rapport vaut r1 = N'36 / N'1 = 1,4 / 4 = 0,35 et le second r2 = 12 / 30 = 0,4. Le rapport total est r = 0,35 × 0,4 = 0,14, donc N = 2 500 × 0,14 = 350 tr/min : on multiplie les rapports, et le même rapport s'applique aux tours et aux vitesses.",
+      "difficulty": 3
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque besoin au type d'engrenage qui y répond le mieux.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Changer la direction de la rotation entre deux arbres qui se coupent"
+        },
+        {
+          "id": "l2",
+          "text": "Faire tourner deux roues dans le même sens, sans roue intermédiaire"
+        },
+        {
+          "id": "l3",
+          "text": "Dents inclinées en hélice, sur des arbres parallèles"
+        },
+        {
+          "id": "l4",
+          "text": "Dents parallèles à l'axe, sur des arbres parallèles"
+        },
+        {
+          "id": "r1",
+          "text": "Engrenage conique"
+        },
+        {
+          "id": "r2",
+          "text": "Engrenage intérieur"
+        },
+        {
+          "id": "r3",
+          "text": "Engrenage hélicoïdal"
+        },
+        {
+          "id": "r4",
+          "text": "Engrenage extérieur à denture droite"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Des arbres qui se coupent appellent un engrenage conique ; deux roues de même sens sans roue intermédiaire, un engrenage intérieur ; des dents inclinées en hélice sur des arbres parallèles, un engrenage hélicoïdal ; des dents parallèles à l'axe, un engrenage extérieur à denture droite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une chaîne comporte trois engrènements successifs : A mène B par l'extérieur, B mène C par l'extérieur, puis C mène la couronne D par l'intérieur. Combien de fois le sens de rotation s'inverse-t-il entre A et D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune fois"
+        },
+        {
+          "id": "b",
+          "text": "Une fois"
+        },
+        {
+          "id": "c",
+          "text": "Deux fois"
+        },
+        {
+          "id": "d",
+          "text": "Trois fois"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Chaque engrènement extérieur inverse le sens : A vers B, puis B vers C, soit deux inversions. L'engrènement intérieur ne l'inverse pas, puisque les deux roues tournent dans le même sens : D tourne donc comme A. Compter trois inversions oublie cette propriété de l'engrenage intérieur ; une seule inversion ou aucune ignore un des engrènements extérieurs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour un train dont le calcul donne r = 20 / 43 × 15 / 45 ≈ 0,155, on prévoit N'36 = 1,24 pour N'1 = 8 (valeurs d'illustration). Une lecture sur la courbe, graduée de 0,1 en 0,1 comme dans le manuel, donne N'36 ≈ 1,2. Quelle est la cause la plus plausible de l'écart ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La lecture de la courbe, précise à une graduation de 0,1 près"
+        },
+        {
+          "id": "b",
+          "text": "L'inversion du sens par un engrènement, qui fait perdre des tours"
+        },
+        {
+          "id": "c",
+          "text": "Le rapport de transmission, qui varie avec la vitesse du moteur"
+        },
+        {
+          "id": "d",
+          "text": "L'arrondi de r à 0,155, qui fausse N'36 de plus d'une graduation"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'écart est de 0,04 tour, soit moins d'une graduation de 0,1 tour sur l'axe : il vient de la lecture, et les deux méthodes concordent. Le rapport est fixé par les nombres de dents, il ne varie pas avec la vitesse du moteur ; un engrènement inverse le sens sans retrancher de tours ; et l'arrondi à 0,155 modifie N'36 de moins de 0,001, bien en deçà de la graduation.",
+      "difficulty": 3
+    }
+  ]
+}
