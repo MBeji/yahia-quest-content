@@ -102,11 +102,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Une forme qui barre le chemin à la pièce menée"
+          "text": "La vitesse de rotation du plateau menant"
         },
         {
           "id": "b",
-          "text": "Un engrenage qui verrouille les deux arbres"
+          "text": "Le poids propre du disque mené"
         },
         {
           "id": "c",
@@ -118,7 +118,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "L'adhérence naît du frottement entre deux surfaces pressées l'une contre l'autre : c'est le ressort qui crée cet effort presseur. Une forme qui barre le chemin ou un engrenage qui verrouille relèvent de la transmission par obstacle, qui ne peut pas glisser. Une huile, au contraire, diminue le frottement au lieu de le créer.",
+      "explanation": "L'adhérence naît du frottement entre deux surfaces pressées l'une contre l'autre : c'est le ressort qui crée cet effort presseur, et on le règle pour fixer le couple de patinage. La vitesse de rotation du plateau ne presse pas les surfaces et varie sans lien avec le couple réglé ; le poids du disque est perpendiculaire à l'axe, il ne les presse pas non plus. Une huile, au contraire, diminue le frottement au lieu de le créer.",
       "difficulty": 1
     },
     {
@@ -134,12 +134,13 @@
     },
     {
       "type": "numeric",
-      "prompt": "Le tambour gradué de la manivelle d'une vis de pas 5 mm compte 80 divisions. Combien de divisions faut-il tourner pour déplacer le chariot de 0,5 mm ?",
+      "prompt": "Le tambour gradué de la manivelle d'une vis de pas 5 mm compte 80 divisions. De combien avance le chariot quand on tourne le tambour de 12 divisions ?",
       "answerKey": {
-        "value": 8,
-        "unit": "divisions"
+        "value": 0.75,
+        "tolerance": 0.01,
+        "unit": "mm"
       },
-      "explanation": "Un tour de vis déplace de 5 mm, répartis sur 80 divisions : 5 / 80 = 0,0625 mm par division. Pour 0,5 mm, il faut 0,5 / 0,0625 = 8 divisions ✓ (8 × 0,0625 = 0,5).",
+      "explanation": "Un tour de vis déplace le chariot de 5 mm, répartis sur 80 divisions : 5 / 80 = 0,0625 mm par division. Pour 12 divisions, 12 × 0,0625 = 0,75 mm ✓.",
       "difficulty": 2
     },
     {

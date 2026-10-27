@@ -21,19 +21,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Il n'agit que pendant les premières secondes qui suivent le démarrage du moteur"
+          "text": "Il ne transmet la puissance qu'au démarrage, puis se désengage seul"
         },
         {
           "id": "b",
-          "text": "Il permet de rompre puis de rétablir la liaison entre les deux arbres"
+          "text": "Il permet de rompre puis de rétablir la liaison des deux arbres"
         },
         {
           "id": "c",
-          "text": "Il laisse passer une partie de la puissance du moteur et en perd le reste"
+          "text": "Il ne transmet qu'une partie de la puissance, de façon passagère"
         }
       ],
       "correctOption": "b",
-      "explanation": "Temporaire s'oppose à permanent : l'embrayage relie les arbres quand on le veut et les sépare quand on le veut, par exemple pour changer de rapport. Il ne se limite pas au démarrage, et en position embrayée il transmet intégralement la puissance, sans perte.",
+      "explanation": "Temporaire s'oppose à permanent : l'embrayage relie les arbres quand on le veut et les sépare quand on le veut, par exemple pour changer de rapport. Il ne se désengage pas tout seul après le démarrage, et en position embrayée il transmet intégralement la puissance, sans perte.",
       "difficulty": 1
     },
     {
@@ -58,19 +58,19 @@
         },
         {
           "id": "r1",
-          "text": "Elle pousse la butée quand on appuie sur la pédale"
+          "text": "Elle pivote autour d'un axe fixe et ne tourne pas avec l'embrayage"
         },
         {
           "id": "r2",
-          "text": "Elle transmet la poussée aux leviers qui tournent avec l'embrayage"
+          "text": "Elle est à billes : elle pousse sur des pièces qui tournent"
         },
         {
           "id": "r3",
-          "text": "Ils pivotent pour faire reculer le plateau de pression"
+          "text": "Ils tournent avec l'embrayage et tirent le plateau en arrière"
         },
         {
           "id": "r4",
-          "text": "Ils créent l'effort qui plaque le plateau contre le disque"
+          "text": "Ils plaquent le plateau contre le disque, sans l'aide du pied"
         }
       ],
       "answerKey": {
@@ -93,7 +93,7 @@
           ]
         ]
       },
-      "explanation": "La fourchette, mise en mouvement par la pédale, pousse la butée. La butée à billes transmet cette poussée aux leviers sans que la fourchette ait à tourner avec eux. Les leviers pivotent et tirent le plateau en arrière. Les ressorts, eux, ne font pas partie de la commande : ils poussent en permanence le plateau contre le disque et créent l'effort presseur.",
+      "explanation": "La fourchette pivote seulement autour de son axe et ne tourne pas avec l'embrayage. La butée à billes permet de pousser sur des leviers qui, eux, tournent avec l'embrayage. Les leviers tirent le plateau en arrière. Les ressorts ne sont pas dans la chaîne d'action du pied : ils plaquent en permanence le plateau contre le disque, créent l'effort presseur et assurent le retour de la commande.",
       "difficulty": 1
     },
     {
@@ -132,7 +132,7 @@
     },
     {
       "type": "ordering",
-      "prompt": "Tu appuies sur la pédale de la maquette. Remets dans l'ordre ce qui se passe, de la pédale jusqu'au débrayage.",
+      "prompt": "Tu appuies sur la pédale de la maquette. Remets dans l'ordre ce qui se passe, de la pédale jusqu'au débrayage (chaîne simplifiée du cours : le manuel y place une pièce de liaison de plus).",
       "options": [
         {
           "id": "a",
@@ -164,7 +164,7 @@
           "e"
         ]
       },
-      "explanation": "L'effort part du pied et suit la chaîne de commande, pièce après pièce : la pédale entraîne la fourchette, qui pousse la butée ; la butée appuie sur les leviers ; les leviers pivotent et tirent le plateau en arrière. Le plateau ne peut reculer qu'en dernier, car c'est l'effet de tout ce qui précède : en lâchant le disque, il débraye.",
+      "explanation": "L'effort part du pied et suit la chaîne de commande simplifiée, pièce après pièce : la pédale entraîne la fourchette, qui pousse la butée ; la butée appuie sur les leviers ; les leviers pivotent et tirent le plateau en arrière. Le plateau ne peut reculer qu'en dernier, car c'est l'effet de tout ce qui précède : en lâchant le disque, il débraye.",
       "difficulty": 2
     },
     {
@@ -189,7 +189,7 @@
         },
         {
           "id": "e",
-          "text": "La butée (14) est séparée des leviers (32) par un petit jeu"
+          "text": "La butée (14) n'appuie pas sur les leviers (32)"
         }
       ],
       "answerKey": {

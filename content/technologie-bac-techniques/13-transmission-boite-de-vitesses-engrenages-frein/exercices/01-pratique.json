@@ -18,7 +18,7 @@
       "options": [
         {
           "id": "a",
-          "text": "En haut, avec ce qui commande le système"
+          "text": "En haut, avec les données de contrôle"
         },
         {
           "id": "b",
@@ -34,11 +34,11 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Le choix de la vitesse est une consigne : il commande la boîte sans la traverser, donc il se place en haut du cadre. La puissance venant de l'embrayage entre à gauche, la puissance adaptée sort à droite, et sous le cadre on nomme le système, la boîte de vitesses.",
+      "explanation": "Le choix de la vitesse est une donnée de contrôle : il commande la boîte sans la traverser, donc il se place en haut du cadre. La puissance venant de l'embrayage entre à gauche, la puissance adaptée sort à droite, et sous le cadre on nomme le système, la boîte de vitesses.",
       "difficulty": 1
     },
     {
-      "prompt": "En manœuvrant le levier de vitesses, combien de rapports de marche différents (le point mort exclu) la boîte offre-t-elle ?",
+      "prompt": "En manœuvrant le levier de vitesses, combien de positions de marche différentes (le point mort exclu) la boîte offre-t-elle ?",
       "options": [
         {
           "id": "a",
@@ -58,7 +58,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "La boîte offre cinq vitesses avant et une marche arrière, soit six rapports de marche. Le point mort n'est pas un rapport de marche, puisque son rapport est nul ; la marche arrière est bien un rapport à part ; et les trois baladeurs servent à choisir parmi ces six rapports, ils ne les comptent pas.",
+      "explanation": "La boîte offre cinq vitesses avant et une marche arrière, soit six positions de marche. Le point mort n'est pas une position de marche, puisque son rapport est nul ; la marche arrière est bien une position à part ; et les trois baladeurs servent à choisir parmi ces six positions, ils ne les comptent pas.",
       "difficulty": 1
     },
     {
@@ -149,7 +149,7 @@
         },
         {
           "id": "d",
-          "text": "Le baladeur relie la roue choisie à l'arbre, par crabotage"
+          "text": "Le baladeur relie la roue choisie à l'arbre"
         },
         {
           "id": "e",
@@ -165,42 +165,42 @@
           "b"
         ]
       },
-      "explanation": "On débraye d'abord, pour que le moteur ne pousse plus les pièces qui vont s'engager. Le levier choisit ensuite la fourchette et la déplace ; la fourchette pousse le baladeur, qui lie la roue choisie par crabotage ; on rembraye en dernier, pour rendre la puissance une fois le chemin établi.",
+      "explanation": "On débraye d'abord, pour que le moteur ne pousse plus les pièces qui vont s'engager. Le levier choisit ensuite la fourchette et la déplace ; la fourchette pousse le baladeur, qui lie la roue choisie à l'arbre ; on rembraye en dernier, pour rendre la puissance une fois le chemin établi.",
       "difficulty": 2
     },
     {
       "type": "multi",
-      "prompt": "Lesquelles de ces liaisons transmettent un couple par obstacle, et non par adhérence ?",
+      "prompt": "Lesquelles de ces affirmations sur le frein à tambour de stationnement de la maquette sont justes ?",
       "options": [
         {
           "id": "a",
-          "text": "Les crabots d'un baladeur emboîtés dans ceux d'une roue"
+          "text": "La commande est manuelle : la main tire un levier"
         },
         {
           "id": "b",
-          "text": "Le disque d'embrayage pressé contre le volant moteur"
+          "text": "L'action est radiale : les mâchoires sont pressées vers l'extérieur"
         },
         {
           "id": "c",
-          "text": "La clavette logée dans l'arbre et dans le moyeu"
+          "text": "Les garnitures sont collées sur la face intérieure du tambour"
         },
         {
           "id": "d",
-          "text": "Les garnitures des mâchoires pressées contre le tambour"
+          "text": "Le ressort aide la came à serrer les mâchoires contre le tambour"
         },
         {
           "id": "e",
-          "text": "Les cannelures d'un arbre et de son moyeu"
+          "text": "Levier tiré, le tambour est fixe ; relâché, il tourne avec la roue"
         }
       ],
       "answerKey": {
         "correct": [
           "a",
-          "c",
+          "b",
           "e"
         ]
       },
-      "explanation": "Le crabotage, la clavette et les cannelures transmettent par obstacle : des formes s'emboîtent et rien ne peut glisser. Le disque contre le volant et les garnitures contre le tambour transmettent par frottement, donc par adhérence : ils peuvent glisser.",
+      "explanation": "La main tire un levier, donc la commande est manuelle ; les mâchoires sont pressées selon un rayon, vers l'extérieur, donc l'action est radiale ; levier tiré le tambour est immobilisé, relâché il tourne avec la roue. Les garnitures sont fixées sur les mâchoires, et le tambour est la surface contre laquelle elles frottent. Le ressort ne participe pas au serrage : on tire contre lui, et son rôle est le rappel.",
       "difficulty": 2
     }
   ]

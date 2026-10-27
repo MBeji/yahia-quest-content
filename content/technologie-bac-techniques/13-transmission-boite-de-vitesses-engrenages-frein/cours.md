@@ -14,7 +14,7 @@ Une automobile à deux roues motrices arrière démarre en côte, puis file sur 
 <svg viewBox="0 0 460 340"><title>Chaîne de puissance de l'automobile à deux roues motrices arrière</title><rect x="20" y="6" width="150" height="24" fill="#fef9c3" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><text x="95" y="23" font-size="12" font-weight="600" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Énergie chimique</text><line x1="95" y1="30" x2="95" y2="45" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/><polygon points="95,52 91.8,45 98.2,45" fill="#0f172a"/><rect x="20" y="52" width="150" height="38" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><text x="95" y="76" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Moteur</text><text x="188" y="75" font-size="12" font-weight="500" text-anchor="start" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Transformer l'énergie</text><line x1="95" y1="90" x2="95" y2="109" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/><polygon points="95,116 91.8,109 98.2,109" fill="#0f172a"/><rect x="20" y="116" width="150" height="38" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><text x="95" y="140" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Embrayage</text><text x="188" y="139" font-size="12" font-weight="500" text-anchor="start" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Transmettre ou non la puissance</text><line x1="95" y1="154" x2="95" y2="173" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/><polygon points="95,180 91.8,173 98.2,173" fill="#0f172a"/><rect x="20" y="180" width="150" height="38" fill="#bbf7d0" stroke="#0f172a" stroke-width="2.2" stroke-linejoin="round"/><text x="95" y="204" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Boîte de vitesses</text><text x="188" y="203" font-size="12" font-weight="500" text-anchor="start" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Adapter le couple et la vitesse</text><line x1="95" y1="218" x2="95" y2="237" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/><polygon points="95,244 91.8,237 98.2,237" fill="#0f172a"/><rect x="20" y="244" width="150" height="38" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><text x="95" y="268" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Pont</text><text x="188" y="261" font-size="12" font-weight="500" text-anchor="start" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Répartir la vitesse sur les deux</text><text x="188" y="276" font-size="12" font-weight="500" text-anchor="start" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">roues motrices arrière</text><text x="108" y="107" font-size="11" font-weight="600" text-anchor="start" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">P, Nm</text><text x="108" y="171" font-size="11" font-weight="600" text-anchor="start" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">P, Nm</text><text x="108" y="235" font-size="11" font-weight="600" text-anchor="start" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">P', N'</text><line x1="95" y1="282" x2="95" y2="301" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/><polygon points="95,308 91.8,301 98.2,301" fill="#0f172a"/><rect x="20" y="308" width="150" height="26" fill="#fef9c3" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/><text x="95" y="326" font-size="12" font-weight="600" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Roues motrices arrière</text></svg>
 :::
 
-Chaque bloc du schéma remplit **une fonction** ; celle de la boîte est écrite à côté du bloc vert. Les lettres P, Nm, P' et N' suivent la puissance d'étage en étage : P est la puissance, N une vitesse de rotation en tr/min, Nm celle du moteur.
+Chaque bloc du schéma remplit **une fonction** ; celle de la boîte est écrite à côté du bloc vert. Les lettres P, Nm, P' et N' suivent la puissance d'étage en étage : P est la puissance, N une vitesse de rotation en tr/min, Nm celle du moteur (la lettre N suivie de m, à ne pas lire « N·m », unité d'un couple).
 
 ::: definition La boîte de vitesses
 La **boîte de vitesses** est un système mécanique de **transmission de puissance** : elle permet d'obtenir plusieurs **rapports de vitesses** entre le moteur et les roues motrices. Elle est formée de plusieurs éléments qui, en se déplaçant, changent le rapport. Sa fonction technique : **adapter le couple et la vitesse**.
@@ -30,7 +30,7 @@ Pour la ranger dans un schéma de niveau A-0, on place chaque information dans l
 Fonction globale : adapter le couple et la vitesse.
 1. **À gauche**, la **matière d'œuvre entrante** : la **puissance mécanique** fournie par l'embrayage, de vitesse Nm. C'est elle que la boîte transforme.
 2. **À droite**, la **matière d'œuvre sortante** : la même puissance, **adaptée** (P', N'), qui part vers le pont.
-3. **En haut**, ce qui commande : le **choix de la vitesse**, fait par le conducteur avec le levier. Il ne traverse pas la boîte, il décide de ce qu'elle fait.
+3. **En haut**, les **données de contrôle**, ce qui commande : le **choix de la vitesse**, fait par le conducteur avec le levier. Il ne traverse pas la boîte, il décide de ce qu'elle fait.
 4. **Sous le cadre**, le système : la **boîte de vitesses**.
 
 :::
@@ -67,7 +67,7 @@ Pour plusieurs engrenages en série, on **multiplie** les rapports : N sortie = 
 | --- | --- | --- | --- | --- |
 | (5) → (6) | 20 dents | 43 dents | 20 / 43 ≈ 0,465 | la sortie tourne moins vite : réduction |
 
-Une ligne du tableau est **une paire** de roues : la menante est celle qui reçoit la rotation, la menée celle qui la transmet à l'étage suivant.
+Une ligne du tableau est **une paire** de roues : la menante entraîne, la menée est entraînée ; dans un train, la menée d'un étage est solidaire de la menante de l'étage suivant.
 
 ::: exemple De la paire (5, 6) à la vitesse de l'arbre intermédiaire
 1. **Un tour d'entrée** : r = 20 / 43 ≈ 0,465. La roue fait donc 0,465 tour, **moins d'un tour** : elle a plus de dents à faire passer.
@@ -157,7 +157,7 @@ La nomenclature de la maquette compte **trois baladeurs** (12, 24, 30) et **troi
 | --- | --- | --- | --- |
 | Point mort | 1 | 0 | la sortie n'est pas entraînée |
 | 1, 2, 3, 4, 5 | 5 vitesses avant | valeurs positives, différentes | celui du moteur |
-| MA | 1 marche arrière | valeur positive | inversé |
+| MA | 1 marche arrière | |r| positif (r est pris en valeur absolue, le sens est donné à part) | inversé |
 
 ::: exemple Passer une vitesse, geste après geste (principe)
 1. **Débrayer** : on appuie sur la pédale, la puissance du moteur est coupée. C'est nécessaire parce que les pièces qui vont s'engager ne doivent plus être poussées par le moteur.
@@ -194,7 +194,7 @@ Pour chaque mouvement permis, une pièce l'autorise et interdit tous les autres.
 | Fonction | Liaison | Solution habituelle (principe) |
 | --- | --- | --- |
 | Guider en rotation un arbre | pivot | roulements ; la nomenclature compte 4 roulements de type BC (4) |
-| Guider en translation un baladeur sur son arbre | glissière | cannelures, qui l'entraînent aussi en rotation |
+| Guider en translation un baladeur sur son arbre, comme la roue (31) sur l'arbre de sortie (36) | glissière | cannelures, qui l'entraînent aussi en rotation |
 | Guider en translation un coulisseau | glissière | une tige : la nomenclature compte 3 coulisseaux (22) et 3 tiges (28) |
 | Déplacer un baladeur | aucune : c'est une commande | une fourchette, commandée par le levier |
 
@@ -223,6 +223,8 @@ Une **glissière** : une translation seule est autorisée, la rotation est inter
 
 Dans la boîte, quand le baladeur relie une roue à son arbre, on ne veut **aucun** glissement : la roue doit tourner exactement avec l'arbre. Comment lier deux pièces sans qu'elles puissent glisser l'une sur l'autre ?
 
+Ce chapitre étudie le cas du **crabotage**, que le manuel demande pour la 3ᵉ vitesse. Pour d'autres positions, l'engagement peut se faire autrement : la paire (34, 31) de la marche arrière s'engage par glissement de la roue (31).
+
 ::: definition Crabotage et adhérence
 Le **crabotage** est un accouplement par **obstacle** : des dents frontales, les **crabots**, taillées sur deux pièces, s'emboîtent comme des doigts entrelacés. Tant qu'elles sont emboîtées, les deux pièces tournent ensemble, **sans glissement**.
 
@@ -235,11 +237,11 @@ L'accouplement par **adhérence**, celui de l'embrayage à disque, utilise au co
 
 La roue et le baladeur de ce gros plan sont ceux de la figure du baladeur, vus de plus près.
 
-| | Crabotage | Adhérence |
+| | Obstacle | Adhérence |
 | --- | --- | --- |
 | Principe | **obstacle** : des formes qui s'emboîtent | **frottement** : des surfaces pressées |
 | Glissement | aucun | possible au-delà d'une limite |
-| Exemples | crabots d'un baladeur, clavette, cannelures | disque d'embrayage, garnitures d'un frein |
+| Exemples | crabots d'un baladeur (le crabotage), clavette, cannelures | disque d'embrayage, garnitures d'un frein |
 
 ::: exemple Obstacle ou adhérence ?
 1. Le **disque d'embrayage** pressé contre le volant : c'est du **frottement**, donc de l'**adhérence** ; il peut patiner un instant, ce qui permet la mise en charge progressive.
@@ -253,7 +255,7 @@ Passer une vitesse sans débrayer force les crabots à s'emboîter pendant que l
 :::
 
 ::: verifie
-Pour une position du levier, la liaison entre le baladeur et la roue est-elle obtenue par crabotage ou par adhérence ? Pourquoi ?
+Pour la 3ᵉ vitesse, que le manuel étudie, la liaison entre le baladeur et la roue est-elle obtenue par crabotage ou par adhérence ? Pourquoi ?
 ---
 Par **crabotage** : le baladeur lie la roue à l'arbre par des crabots qui s'emboîtent (obstacle), sans frottement ni glissement.
 :::
@@ -295,11 +297,11 @@ Les dents d'une roue hélicoïdale sont inclinées, celles d'une roue conique so
 | Effort sur les arbres | radial seulement | radial **et axial** (poussée) |
 | Engagement par glissement le long de l'arbre | facile : pas de poussée axiale | gênée par la poussée axiale |
 
-Application, par principe : une roue qu'on engage en la faisant **coulisser**, comme la roue de marche arrière (34), est de préférence droite. Une paire qui reste en prise et doit être silencieuse, comme (16) et (17), est hélicoïdale ; sa poussée axiale est alors reprise par les roulements des arbres.
+Application, par principe : une roue qu'on engage en la faisant **coulisser**, comme la roue (31) de la marche arrière qui s'engage avec (34), est de préférence droite : (31) et (34) sont donc droites. Une paire qui reste en prise et doit être silencieuse, comme (16) et (17), est hélicoïdale ; sa poussée axiale est alors reprise par les roulements des arbres, qui doivent être choisis pour la supporter (un roulement à billes à contact radial seul la supporte mal).
 :::
 
 ::: verifie
-Deux arbres se croisent à angle droit en un point. Quel type d'engrenage faut-il choisir ?
+Deux arbres se coupent à angle droit en un point. Quel type d'engrenage faut-il choisir ?
 ---
 Un engrenage **conique** : les arbres se coupent, et ses dents sont taillées sur des cônes. Les engrenages à dentures droite ou hélicoïdale relient des arbres parallèles.
 :::
@@ -322,7 +324,7 @@ Le nombre de dents n'est pas une condition : c'est justement lui qui fixe le rap
 <svg viewBox="0 0 460 132"><title>Conditions d'engrènement : dentures droites, hélices contraires, hélices de même sens</title><g transform="translate(0 0)"><rect x="12" y="22" width="44" height="70" fill="#bfdbfe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="56" y="22" width="44" height="70" fill="#bbf7d0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><line x1="20" y1="24" x2="20" y2="90" stroke="#0f172a" stroke-width="1.2"/><line x1="28" y1="24" x2="28" y2="90" stroke="#0f172a" stroke-width="1.2"/><line x1="36" y1="24" x2="36" y2="90" stroke="#0f172a" stroke-width="1.2"/><line x1="44" y1="24" x2="44" y2="90" stroke="#0f172a" stroke-width="1.2"/><line x1="52" y1="24" x2="52" y2="90" stroke="#0f172a" stroke-width="1.2"/><line x1="64" y1="24" x2="64" y2="90" stroke="#0f172a" stroke-width="1.2"/><line x1="72" y1="24" x2="72" y2="90" stroke="#0f172a" stroke-width="1.2"/><line x1="80" y1="24" x2="80" y2="90" stroke="#0f172a" stroke-width="1.2"/><line x1="88" y1="24" x2="88" y2="90" stroke="#0f172a" stroke-width="1.2"/><line x1="96" y1="24" x2="96" y2="90" stroke="#0f172a" stroke-width="1.2"/><line x1="34" y1="14" x2="34" y2="100" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 3 2 3"/><line x1="78" y1="14" x2="78" y2="100" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 3 2 3"/><text x="78" y="108" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Dentures droites</text><text x="78" y="122" font-size="10" font-weight="500" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">même module</text><text x="78" y="14" font-size="16" font-weight="700" text-anchor="middle" fill="#16a34a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">✓</text></g><g transform="translate(150 0)"><rect x="12" y="22" width="44" height="70" fill="#bfdbfe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="56" y="22" width="44" height="70" fill="#bbf7d0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><line x1="13" y1="40.8" x2="20" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="13" y1="62.4" x2="28" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="13" y1="83.9" x2="36" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="18" y1="92" x2="44" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="26" y1="92" x2="52" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="34" y1="92" x2="55" y2="35.5" stroke="#0f172a" stroke-width="1.2"/><line x1="42" y1="92" x2="55" y2="57" stroke="#0f172a" stroke-width="1.2"/><line x1="50" y1="92" x2="55" y2="78.5" stroke="#0f172a" stroke-width="1.2"/><line x1="64" y1="92" x2="57" y2="73.2" stroke="#0f172a" stroke-width="1.2"/><line x1="72" y1="92" x2="57" y2="51.6" stroke="#0f172a" stroke-width="1.2"/><line x1="80" y1="92" x2="57" y2="30.1" stroke="#0f172a" stroke-width="1.2"/><line x1="88" y1="92" x2="62" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="96" y1="92" x2="70" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="99" y1="78.5" x2="78" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="99" y1="57" x2="86" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="99" y1="35.5" x2="94" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="34" y1="14" x2="34" y2="100" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 3 2 3"/><line x1="78" y1="14" x2="78" y2="100" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 3 2 3"/><text x="78" y="108" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Hélices contraires</text><text x="78" y="122" font-size="10" font-weight="500" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">même angle et même module</text><text x="78" y="14" font-size="16" font-weight="700" text-anchor="middle" fill="#16a34a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">✓</text></g><g transform="translate(300 0)"><rect x="12" y="22" width="44" height="70" fill="#bfdbfe" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><rect x="56" y="22" width="44" height="70" fill="#bbf7d0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/><line x1="13" y1="40.8" x2="20" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="13" y1="62.4" x2="28" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="13" y1="83.9" x2="36" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="18" y1="92" x2="44" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="26" y1="92" x2="52" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="34" y1="92" x2="55" y2="35.5" stroke="#0f172a" stroke-width="1.2"/><line x1="42" y1="92" x2="55" y2="57" stroke="#0f172a" stroke-width="1.2"/><line x1="50" y1="92" x2="55" y2="78.5" stroke="#0f172a" stroke-width="1.2"/><line x1="57" y1="40.8" x2="64" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="57" y1="62.4" x2="72" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="57" y1="83.9" x2="80" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="62" y1="92" x2="88" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="70" y1="92" x2="96" y2="22" stroke="#0f172a" stroke-width="1.2"/><line x1="78" y1="92" x2="99" y2="35.5" stroke="#0f172a" stroke-width="1.2"/><line x1="86" y1="92" x2="99" y2="57" stroke="#0f172a" stroke-width="1.2"/><line x1="94" y1="92" x2="99" y2="78.5" stroke="#0f172a" stroke-width="1.2"/><line x1="34" y1="14" x2="34" y2="100" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 3 2 3"/><line x1="78" y1="14" x2="78" y2="100" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 3 2 3"/><text x="78" y="108" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Hélices de même sens</text><text x="78" y="122" font-size="10" font-weight="500" text-anchor="middle" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">elles ne peuvent pas s'engrener</text><text x="78" y="14" font-size="16" font-weight="700" text-anchor="middle" fill="#dc2626" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">✗</text></g></svg>
 :::
 
-Au contact, les dents des deux roues doivent être **parallèles** : c'est ce qui impose des hélices de sens contraires, tracées « / » et « \ » sur le dessin.
+Au contact, les dents des deux roues doivent être **parallèles** : c'est ce qui impose des hélices de sens contraires. Sur le dessin, les faces visibles de deux cylindres tracent « / » et « \ », et les dents se rejoignent au contact.
 
 ::: exemple Ces deux roues peuvent-elles s'engrener ? (nombres d'illustration)
 1. Roue A : module 2, denture droite ; roue B : module 2, denture droite. **Même module** : oui, même si leurs nombres de dents diffèrent.
@@ -365,7 +367,7 @@ La première vitesse est la plus **démultipliée** : sa sortie tourne le moins,
 :::
 
 ::: propriete Courbe, rapport et comparaison
-Pour une vitesse donnée, N'36 = r × N'1 : la courbe est une **droite passant par l'origine, de pente r**. Plus la droite est raide, plus r est grand. Deux méthodes donnent r : la **méthode graphique** (un point lu) et la **méthode analytique** (le calcul sur les dents). Elles concordent **à la précision de lecture près**, soit environ une demi-graduation ; un écart bien plus grand signale une erreur.
+Pour une vitesse donnée, N'36 = r × N'1 : la courbe est une **droite passant par l'origine, de pente r**. Plus la droite est raide, plus r est grand. Deux méthodes donnent r : la **méthode graphique** (un point lu) et la **méthode analytique** (le calcul sur les dents). Elles concordent **à la précision de lecture près**, soit une graduation (ici 0,1 tour) ; un écart bien plus grand signale une erreur.
 :::
 
 ::: verifie
@@ -461,7 +463,7 @@ Devant une boîte ou un frein inconnu, tu reprends toujours cet ordre :
 6. **Lire** la courbe : une droite de pente r. Pour le frein : levier, tringlerie, bras, came, mâchoires, tambour, avec action **radiale** et ressort de **rappel**.
 
 ::: retenir
-Une boîte **adapte** le couple et la vitesse par un **rapport r = Z menante / Z menée**, multiplié d'étage en étage ; chaque engrènement extérieur **inverse** le sens ; le baladeur et la fourchette changent le chemin par **crabotage** ; un frein à tambour presse ses mâchoires **radialement**, et son **ressort** les rappelle.
+Une boîte **adapte** le couple et la vitesse par un **rapport r = Z menante / Z menée**, multiplié d'étage en étage ; chaque engrènement extérieur **inverse** le sens ; le baladeur et la fourchette changent le chemin (par **crabotage** dans le cas étudié) ; un frein à tambour presse ses mâchoires **radialement**, et son **ressort** les rappelle.
 :::
 
 > 🏆 La boîte est maîtrisée : tu sais la calculer, la commander et l'arrêter. La suite du thème t'attend, avec d'autres façons de transmettre une rotation.

@@ -26,27 +26,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Un pignon de 15 dents entraîne une roue de 45 dents. Que vaut le rapport de transmission r = N sortie / N entrée ?",
+      "prompt": "Un pignon de 21 dents doit entraîner une roue de façon que le rapport de transmission soit r = 1/3. Combien de dents la roue menée doit-elle avoir ?",
       "options": [
         {
           "id": "a",
-          "text": "r = 1/4"
+          "text": "7 dents"
         },
         {
           "id": "b",
-          "text": "r = 1/3"
+          "text": "63 dents"
         },
         {
           "id": "c",
-          "text": "r = 2/3"
+          "text": "24 dents"
         },
         {
           "id": "d",
-          "text": "r = 3"
+          "text": "18 dents"
         }
       ],
       "correctOption": "b",
-      "explanation": "Pour un engrenage, r = Z menante / Z menée = 15 / 45 = 1/3 : la roue, qui a plus de dents, tourne trois fois moins vite que le pignon. Le quotient renversé donnerait 3 ; 1/4 compare la menante au total des dents des deux roues ; 2/3 compare la différence des dents à la menée. Aucun n'est le quotient demandé.",
+      "explanation": "Pour un engrenage, r = Z menante / Z menée, donc Z menée = Z menante / r = 21 / (1/3) = 63 dents : un rapport inférieur à 1 demande une menée plus grande que la menante. Multiplier 21 par r donne 7, ce qui renverse le rôle des deux roues ; 24 et 18 ajoutent ou retranchent 3, ce qui n'a aucun lien avec un quotient.",
       "difficulty": 1
     },
     {
@@ -54,11 +54,11 @@
       "options": [
         {
           "id": "a",
-          "text": "En sens inverse, car la roue menée tourne toujours à l'opposé"
+          "text": "En sens inverse, car la roue menée tourne à l'opposé de la menante"
         },
         {
           "id": "b",
-          "text": "Dans le même sens, car une roue intermédiaire n'inverse jamais"
+          "text": "Dans le même sens, car une roue intermédiaire n'inverse pas le sens"
         },
         {
           "id": "c",
@@ -74,7 +74,7 @@
       "difficulty": 1
     },
     {
-      "prompt": "Le levier de vitesses est au point mort et le moteur tourne. Que vaut le rapport de transmission de la boîte ?",
+      "prompt": "Le levier de vitesses est au point mort et le moteur tourne. Que vaut le rapport de transmission de la boîte, et pourquoi ?",
       "options": [
         {
           "id": "a",
@@ -86,7 +86,7 @@
         },
         {
           "id": "c",
-          "text": "r = 0 : l'embrayage est débrayé, donc la sortie n'est pas entraînée"
+          "text": "r = ∞ : l'entrée tourne alors que la sortie reste à l'arrêt"
         },
         {
           "id": "d",
@@ -94,7 +94,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Au point mort, le baladeur ne relie aucune roue à l'arbre de sortie : celui-ci n'est pas entraîné, donc r = 0. Ce n'est pas l'embrayage qui en est la cause : même embrayé, rien ne relie la sortie à l'entrée. Ce n'est pas non plus un rapport égal à 1, ni un rapport intermédiaire entre deux vitesses.",
+      "explanation": "Au point mort, le baladeur ne relie aucune roue à l'arbre de sortie : celui-ci n'est pas entraîné, donc N sortie = 0 et r = 0. Le quotient N sortie / N entrée vaut zéro, et non l'infini, qui serait le quotient renversé ; ce n'est pas non plus un rapport égal à 1, ni un rapport intermédiaire entre deux vitesses.",
       "difficulty": 2
     },
     {
@@ -102,7 +102,7 @@
       "options": [
         {
           "id": "a",
-          "text": "r = 0,4"
+          "text": "r = 2"
         },
         {
           "id": "b",
@@ -110,15 +110,15 @@
         },
         {
           "id": "c",
-          "text": "r = 3"
+          "text": "r = 5"
         },
         {
           "id": "d",
-          "text": "r = 7"
+          "text": "r = 0,4"
         }
       ],
-      "correctOption": "a",
-      "explanation": "La droite passe par l'origine et par le point (5 ; 2) : r = N'36 / N'1 = 2 / 5 = 0,4. Le quotient inverse, 5 / 2 = 2,5, est le piège habituel ; la différence 5 − 2 = 3 et la somme 5 + 2 = 7 ne sont pas des quotients.",
+      "correctOption": "d",
+      "explanation": "La droite passe par l'origine et par le point (5 ; 2) : r = N'36 / N'1 = 2 / 5 = 0,4. Lire seulement l'ordonnée (2) ou seulement l'abscisse (5) ne donne pas la pente, et le quotient inverse, 5 / 2 = 2,5, est le piège habituel.",
       "difficulty": 2
     },
     {
@@ -126,7 +126,7 @@
       "options": [
         {
           "id": "a",
-          "text": "La came, qui pousse les mâchoires vers le centre"
+          "text": "La came, qui reprend sa place et ramène les mâchoires"
         },
         {
           "id": "b",
@@ -142,7 +142,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Le ressort, tendu entre les deux mâchoires pendant le serrage, les rappelle vers le centre dès que la came les libère. La came ne fait qu'écarter les mâchoires ; la tringlerie transmet l'effort du levier mais ne tire rien quand on relâche ; le tambour, lui, n'exerce aucune poussée de rappel.",
+      "explanation": "Le ressort, tendu entre les deux mâchoires pendant le serrage, les rappelle vers le centre dès que la came les libère. La came ne fait qu'écarter les mâchoires, elle ne les ramène pas ; la tringlerie transmet l'effort du levier mais ne tire rien quand on relâche ; le tambour, lui, n'exerce aucune poussée de rappel.",
       "difficulty": 2
     }
   ]

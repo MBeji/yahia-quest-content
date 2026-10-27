@@ -21,33 +21,33 @@
       "options": [
         {
           "id": "a",
-          "text": "Instantané : les dents s'engagent, sans aucun glissement"
+          "text": "Instantané : transmission par obstacle, sans glissement"
         },
         {
           "id": "b",
-          "text": "Instantané : le serrage est assuré d'un seul coup par les ressorts"
+          "text": "Instantané : transmission par adhérence, d'un seul coup"
         },
         {
           "id": "c",
-          "text": "Progressif : il transmet seulement une partie de la puissance"
+          "text": "Progressif : transmission par obstacle, avec du glissement"
         },
         {
           "id": "d",
-          "text": "Progressif : un bref glissement précède la transmission complète"
+          "text": "Progressif : transmission par adhérence, avec glissement"
         }
       ],
       "correctOption": "d",
-      "explanation": "Une transmission par adhérence s'établit avec un bref glissement des garnitures avant que les deux arbres tournent ensemble : l'embrayage est progressif, ce qui évite les à-coups. Instantané suppose un obstacle (des dents) et aucun glissement. Et progressif ne veut pas dire partiel : une fois embrayé, il transmet intégralement la puissance.",
+      "explanation": "Une transmission par adhérence s'établit avec un glissement des garnitures avant que les deux arbres tournent ensemble : l'embrayage est progressif, ce qui évite les à-coups. Instantané suppose un obstacle (des dents) et aucun glissement ; adhérence et obstacle ne se mélangent pas. Et progressif ne veut pas dire partiel : une fois embrayé, il transmet intégralement la puissance.",
       "difficulty": 1
     },
     {
       "type": "numeric",
-      "prompt": "Le disque d'embrayage (25) porte deux garnitures (37), une sur chaque face. L'une frotte contre le volant, l'autre contre le plateau de pression. Combien de surfaces de friction n l'embrayage possède-t-il ?",
+      "prompt": "Pour calculer le couple transmissible, on a besoin de n, le nombre de surfaces de friction de l'embrayage de la maquette. Quelle est sa valeur d'après la nomenclature ?",
       "answerKey": {
         "value": 2,
         "unit": "surfaces"
       },
-      "explanation": "Chaque garniture frotte contre une pièce : l'une contre le volant, l'autre contre le plateau, soit n = 2 surfaces de friction. Compter quatre faces (deux par garniture) serait compter aussi les faces collées sur le disque, qui ne frottent contre rien.",
+      "explanation": "La nomenclature compte deux garnitures (37), une par face du disque ; chacune frotte contre une pièce, l'une contre le volant, l'autre contre le plateau, soit n = 2 surfaces de friction. Compter quatre faces (deux par garniture) serait compter aussi les faces collées sur le disque, qui ne frottent contre rien.",
       "difficulty": 1
     },
     {
@@ -91,7 +91,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "L'effort du pied passe de la pédale (18) au plateau (27) par une fourchette, une butée et des leviers. Comment qualifie-t-on cette commande ?",
+      "prompt": "La nomenclature de la maquette (38 repères) ne contient ni pompe, ni cylindre, ni tuyau, ni compresseur, ni actionneur électrique. Comment qualifie-t-on la commande du pied vers le plateau (27) ?",
       "options": [
         {
           "id": "a",
@@ -99,19 +99,19 @@
         },
         {
           "id": "b",
-          "text": "Mécanique : l'effort est transmis par des pièces solides"
+          "text": "Pneumatique : l'effort est transmis par de l'air comprimé"
         },
         {
           "id": "c",
-          "text": "Pneumatique : l'effort est transmis par de l'air comprimé"
+          "text": "Mécanique : l'effort est transmis par des pièces solides"
         },
         {
           "id": "d",
           "text": "Électrique : l'effort est fourni par un actionneur électrique"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Fourchette, butée et leviers sont des pièces solides qui se poussent les unes les autres : la commande est mécanique. Une commande hydraulique utiliserait un liquide dans un cylindre, une commande pneumatique de l'air comprimé, une commande électrique un actionneur : aucun de ces éléments n'apparaît dans la chaîne décrite.",
+      "correctOption": "c",
+      "explanation": "Sans pompe, cylindre, tuyau, compresseur ni actionneur, aucune commande hydraulique, pneumatique ou électrique n'est possible : l'effort passe par des pièces solides qui se poussent les unes les autres (fourchette, butée, leviers), et la commande est mécanique. Une commande hydraulique utiliserait un liquide dans un cylindre, une commande pneumatique de l'air comprimé, une commande électrique un actionneur.",
       "difficulty": 2
     },
     {

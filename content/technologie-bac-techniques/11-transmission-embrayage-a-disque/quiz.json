@@ -2,27 +2,27 @@
   "title": "Test de compréhension ⭐ : l'embrayage à disque",
   "questions": [
     {
-      "prompt": "Dans la position débrayée, que fait l'embrayage entre le moteur et la boîte de vitesses ?",
+      "prompt": "Pédale appuyée, la manivelle (23) continue de tourner. Quel est l'état de l'arbre de sortie (29) et de l'embrayage ?",
       "options": [
         {
           "id": "a",
-          "text": "Il transmet intégralement la puissance du moteur"
+          "text": "L'arbre de sortie tourne, l'embrayage est embrayé"
         },
         {
           "id": "b",
-          "text": "Il interrompt la transmission de la rotation"
+          "text": "L'arbre de sortie tourne plus lentement, l'embrayage patine"
         },
         {
           "id": "c",
-          "text": "Il ralentit la boîte sans la séparer du moteur"
+          "text": "L'arbre de sortie est au repos, l'embrayage est embrayé"
         },
         {
           "id": "d",
-          "text": "Il immobilise l'arbre de la boîte, comme un frein"
+          "text": "L'arbre de sortie est au repos, l'embrayage est débrayé"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Débrayer, c'est rompre la liaison : l'arbre de sortie n'est plus entraîné par le moteur, ce qui permet de changer de rapport dans la boîte. La transmission intégrale de la puissance est la position embrayée ; un embrayage ne ralentit pas la boîte et ne l'immobilise pas, il la sépare du moteur.",
+      "correctOption": "d",
+      "explanation": "Pédale appuyée, la commande fait reculer le plateau : la liaison est rompue, l'arbre de sortie n'est plus entraîné et reste au repos alors que la manivelle tourne, ce qui permet de changer de rapport. Un arbre de sortie qui tourne correspond à la pédale relâchée ; et un arbre au repos ne peut pas être entraîné, donc l'embrayage ne peut pas être embrayé.",
       "difficulty": 1
     },
     {
@@ -50,27 +50,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "L'embrayage de la maquette compte 16 ressorts de pression identiques, chacun développant un effort de 3,5 N. Quel est l'effort presseur N ?",
+      "prompt": "Un autre embrayage compte 12 ressorts de pression identiques, chacun développant un effort de 4 N. Quel est l'effort presseur N ?",
       "options": [
         {
           "id": "a",
-          "text": "56 N"
+          "text": "48 N"
         },
         {
           "id": "b",
-          "text": "19,5 N"
+          "text": "16 N"
         },
         {
           "id": "c",
-          "text": "4,6 N"
+          "text": "3 N"
         },
         {
           "id": "d",
-          "text": "3,5 N"
+          "text": "4 N"
         }
       ],
       "correctOption": "a",
-      "explanation": "Les 16 ressorts poussent dans le même sens : leurs efforts s'ajoutent, N = 16 × 3,5 = 56 N. La valeur 3,5 N n'est que l'effort d'un seul ressort ; 19,5 N viendrait d'une addition 16 + 3,5 et 4,6 N d'une division 16 ÷ 3,5, deux opérations qui n'ont aucun sens ici.",
+      "explanation": "Les 12 ressorts poussent dans le même sens : leurs efforts s'ajoutent, N = 12 × 4 = 48 N. La valeur 4 N n'est que l'effort d'un seul ressort ; 16 N viendrait d'une addition 12 + 4 et 3 N d'une division 12 ÷ 4, deux opérations qui n'ont aucun sens ici.",
       "difficulty": 2
     },
     {
@@ -82,7 +82,7 @@
         },
         {
           "id": "b",
-          "text": "Il augmente : Ct est proportionnel au coefficient f"
+          "text": "Il augmente : f est un des facteurs de Ct"
         },
         {
           "id": "c",
@@ -90,7 +90,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Dans la formule Ct = n × f × N × Rm, le nombre de surfaces n, l'effort presseur N et le rayon d'action Rm restent les mêmes : Ct varie comme f, donc un f plus grand donne un couple transmissible plus grand. L'usure n'entre pas dans la formule, et l'effort presseur n'est pas le seul facteur : f en est un autre.",
+      "explanation": "Dans la formule Ct = n × f × N × Rm, le nombre de surfaces n, l'effort presseur N et le rayon d'action Rm restent les mêmes : Ct varie dans le même sens que f, donc un f plus grand donne un couple transmissible plus grand. L'usure n'entre pas dans la formule, et l'effort presseur n'est pas le seul facteur : f en est un autre.",
       "difficulty": 2
     },
     {
