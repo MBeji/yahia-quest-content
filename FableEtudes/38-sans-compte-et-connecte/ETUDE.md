@@ -1,8 +1,9 @@
 # Étude 38 — Sans compte et connecté : les deux modes d'usage, de bout en bout (entrée, passage, retour, réseau)
 
-> **Statut** : **brouillon** — rédigée le 2026-10-30 depuis une session cloud, sur un relevé du
-> code du jour (`main` du moteur à #1204, `main` du corpus à privé#754) ; passe `validée` quand le
-> propriétaire arbitre Q-1 à Q-3 (chacune porte une recommandation).
+> **Statut** : **validée** (2026-10-30) — rédigée le même jour depuis une session cloud, sur un
+> relevé du code du jour (`main` du moteur à #1204, `main` du corpus à privé#754) ; Q-1 à Q-3
+> arbitrées par le propriétaire, toutes sur les recommandations (§7). **Aucun lot démarré** : le
+> premier chantier (lots 0, 1, 3) est prêt à lancer, les lots 2, 4 et 5 attendent une place de code.
 > **Priorité** : 38 · **Valeur** : 🚪 le visiteur qui lit un cours ou finit un entraînement et
 > crée son compte **revient exactement là où il était**, au lieu d'atterrir au Hall des Héros puis
 > dans un assistant de trois écrans ; l'élève dont la session expire en pleine quête **retrouve sa
@@ -87,7 +88,7 @@ hors-ligne, qui est l'étude 06, gelée par le propriétaire le 2026-07-20.
 depuis le contenu) · **2** l'accueil n'est plus un péage (la garde épargne la quête, choix de
 classe en un geste) · **3** la session qui meurt revient au même endroit · **4** le réseau se voit
 (bandeau, états « en attente du réseau », page de repli trilingue) · **5** la continuité du
-visiteur sur son appareil (Q-1). Zéro SQL. Trois questions au propriétaire (§7).
+visiteur sur son appareil. Zéro SQL. Trois questions, arbitrées le 2026-10-30 (§7).
 
 ## 1. Contexte & objectif produit
 
@@ -126,18 +127,18 @@ fait déjà. Lire hors-ligne reste é06, gelée.
 
 #### Ce que l'audit du 2026-06-23 recommandait, et ce qui en est livré
 
-| #   | Recommandation de l'audit de coexistence                   | État         | Preuve dans le code                                                                                                                                                                                                                                                                     |
-| --- | ---------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Coquille adaptative + HUD compte persistant sur le contenu | ✅ livré     | `AccountHud` rendu par `public-header.tsx` pour un connecté ; thème global porté par `<html>`, pas par la coquille (`_public.tsx`)                                                                                                                                                      |
-| 2   | `returnTo` au signup/login + reprise du contexte           | ❌           | `auth.tsx` : `navigate({ to: "/dashboard" })` après inscription **et** connexion, `emailRedirectTo: …/dashboard` ; `_authenticated.tsx` : `navigate({ to: "/auth", search: { mode: "login" } })` sans origine ; `/login` et `/signup` redirigent sans origine                           |
-| 3   | Activer la répétition espacée (UI)                         | ✅ livré     | é22 lot 2, `DailyReviewPanel`, `dashboard.reviewOverline`                                                                                                                                                                                                                               |
-| 4   | Récompense fantôme après l'entraînement anonyme            | 🟠           | l'invitation existe (`public.practice.inviteDesc`, é31 R-20) mais sans valeur concrète ; le résultat anonyme est neutre (`xpEarned: 0`)                                                                                                                                                 |
-| 5   | Extraire un `<QcmQuestionCard>` partagé                    | ✅ autrement | un seul `ExercisePlayer` + une stratégie par registre (`/exercice` anonyme, `/quest` connecté)                                                                                                                                                                                          |
-| 6   | Nav mobile publique                                        | ✅ livré     | rangée `sm:hidden` du `PublicHeader` : Programme · Extras · Suivi parent · Connexion                                                                                                                                                                                                    |
-| 7   | Trois vocabulaires dorés, `theme-color` dynamique          | 🟠           | deux thèmes depuis é14 Q-1 ; `theme-color` toujours figé `#0a0a0a` (`__root.tsx`, `offline.html`)                                                                                                                                                                                       |
-| 8   | Onboarding **non bloquant**                                | ❌           | `shouldRedirectToOnboarding` : tout élève sans parcours est renvoyé à l'assistant (intention → classe → célébration) dès qu'il touche une route connectée                                                                                                                               |
-| 9   | Rate-limit anonyme distribué                               | 🟠           | connectés : RPC `check_rate_limit` ; **anonymes : limiteur mémoire par IP** (`isRateLimitedLocal`), non distribué sur Vercel — « a Transverse follow-up », dit le commentaire de `quest.server.ts` ; le refus lève un français en dur (« Trop de requêtes. Réessaie dans un instant. ») |
-| 10  | Badges, rotation d'objectifs, social                       | ✅ é31       | hors périmètre ici                                                                                                                                                                                                                                                                      |
+| #   | Recommandation de l'audit de coexistence                   | État         | Preuve dans le code                                                                                                                                                                                                                                                                              |
+| --- | ---------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | Coquille adaptative + HUD compte persistant sur le contenu | ✅ livré     | `AccountHud` rendu par `public-header.tsx` pour un connecté ; thème global porté par `<html>`, pas par la coquille (`_public.tsx`)                                                                                                                                                               |
+| 2   | `returnTo` au signup/login + reprise du contexte           | ❌           | `auth.tsx` : `navigate({ to: "/dashboard" })` après inscription **et** connexion, `emailRedirectTo: …/dashboard` ; `_authenticated.tsx` : `navigate({ to: "/auth", search: { mode: "login" } })` sans origine ; `/login` et `/signup` redirigent sans origine                                    |
+| 3   | Activer la répétition espacée (UI)                         | ✅ livré     | é22 lot 2, `DailyReviewPanel`, `dashboard.reviewOverline`                                                                                                                                                                                                                                        |
+| 4   | Récompense fantôme après l'entraînement anonyme            | 🟠           | l'invitation existe (`public.practice.inviteDesc`, é31 R-20) mais sans valeur concrète ; le résultat anonyme est neutre (`xpEarned: 0`)                                                                                                                                                          |
+| 5   | Extraire un `<QcmQuestionCard>` partagé                    | ✅ autrement | un seul `ExercisePlayer` + une stratégie par registre (`/exercice` anonyme, `/quest` connecté)                                                                                                                                                                                                   |
+| 6   | Nav mobile publique                                        | ✅ livré     | rangée `sm:hidden` du `PublicHeader` : Programme · Extras · Suivi parent · Connexion                                                                                                                                                                                                             |
+| 7   | Trois vocabulaires dorés, `theme-color` dynamique          | 🟠           | deux thèmes depuis é14 Q-1 ; `theme-color` toujours figé `#0a0a0a` (`__root.tsx`, `offline.html`)                                                                                                                                                                                                |
+| 8   | Onboarding **non bloquant**                                | ❌           | `shouldRedirectToOnboarding` : tout élève sans parcours est renvoyé à l'assistant (intention → classe → célébration) dès qu'il touche une route connectée                                                                                                                                        |
+| 9   | Rate-limit anonyme distribué                               | 🟠           | connectés : RPC `check_rate_limit` ; **anonymes : limiteur mémoire par IP** (`isRateLimitedLocal`), non distribué sur Vercel — « a Transverse follow-up », dit le commentaire de `quest.practice.server.ts` ; le refus lève un français en dur (« Trop de requêtes. Réessaie dans un instant. ») |
+| 10  | Badges, rotation d'objectifs, social                       | ✅ é31       | hors périmètre ici                                                                                                                                                                                                                                                                               |
 
 Les deux ❌ sont les deux moments du **passage** ; le plan L2 (§6) les a explicitement versés au
 « backlog » le 2026-06-27 et aucune étude ne les a repris depuis. C'est la boucle (a) de la fiche.
@@ -223,8 +224,8 @@ Les deux ❌ sont les deux moments du **passage** ; le plan L2 (§6) les a expli
 - Côté anonyme, l'échec de correction donne `practice.checkError` (« Impossible de corriger pour le
   moment. Réessaie dans un instant. ») — le même mot pour un réseau coupé et pour un refus du
   rate-limit, que le serveur lève d'ailleurs en **français en dur** dans un `throw`
-  (`quest.server.ts`, « Trop de requêtes. Réessaie dans un instant. ») : un bug au sens de la charte
-  §5, qui veut des codes stables traduits côté client.
+  (`quest.practice.server.ts`, « Trop de requêtes. Réessaie dans un instant. ») : un bug au sens de
+  la charte §5, qui veut des codes stables traduits côté client.
 
 #### La mesure
 
@@ -331,8 +332,8 @@ parent connecté · **A** admin (inchangé, hors périmètre).
 | Toute route, requête en pause réseau                  | squelette / « Chargement… » sans fin                      | `EmptyState` « En attente du réseau » (icône `WifiOff`) + « Réessayer » ; au retour du réseau, la requête repart et l'état disparaît (R-9)                                                                               |
 | Toute page, hors connexion                            | rien                                                      | **bandeau** sous le header : « Hors connexion — en attente du réseau. » ; si `pendingCount > 0` : « · {n} mission en attente d'envoi » (R-9, R-12)                                                                       |
 | Navigation complète hors-ligne                        | `/offline.html` FR, sombre                                | page trilingue (FR · EN · AR empilés, `dir="rtl"` sur le bloc arabe), `prefers-color-scheme`, « Réessayer » (R-10)                                                                                                       |
-| `/` et `/programme`, visiteur revenant                | rien                                                      | carte « Reprendre : {chapitre} › » + « oublier » (R-13, Q-1)                                                                                                                                                             |
-| Hub de matière, visiteur revenant                     | portes quiz perdues avec l'onglet                         | portes réussies conservées {TTL} jours (R-13, Q-1)                                                                                                                                                                       |
+| `/` et `/programme`, visiteur revenant                | rien                                                      | carte « Reprendre : {chapitre} › » + « oublier » ; visiteur sans session seulement (R-13, Q-1, Q-2)                                                                                                                      |
+| Hub de matière, visiteur revenant                     | portes quiz perdues avec l'onglet                         | portes réussies conservées 30 jours (R-13, Q-1)                                                                                                                                                                          |
 | Résultat anonyme, correction en échec                 | « Impossible de corriger pour le moment. »                | hors-ligne : « Pas de réseau — réessaie quand il revient. » ; `429` : « Trop d'essais — patiente une minute. » ; sinon l'actuel (R-15)                                                                                   |
 
 Mobile-first (la coquille publique est lue d'abord sur téléphone) et **RTL vérifié au rendu** pour
@@ -388,8 +389,9 @@ le bandeau, la carte `ParcoursQuickPick`, la carte « Reprendre » et la page de
 **L'invitation**
 
 - **R-8** — L'invitation du résultat d'entraînement porte la **valeur** de la mission :
-  `exercises.xp_reward` existe en base mais `getExercise` ne le sert pas encore — il l'expose
-  (lecture seule, §3.2) ; la phrase est un **gain futur** (« Avec un compte, cette mission vaut
+  `exercises.xp_reward` est déjà servi aux deux registres (`getExercise` renvoie la ligne
+  `exercises` entière) et le lecteur le transmet au pied de résultat (§3.2) ; la phrase est un
+  **gain futur** (« Avec un compte, cette mission vaut
   jusqu'à {xp} XP »), jamais une perte ni un reproche (é31 R-20 inchangée). Pas de chiffre quand
   `xp_reward` est nul ou absent — la phrase actuelle reste. Chaque invitation cliquée émet
   `account_invite_clicked{surface}`.
@@ -421,12 +423,14 @@ le bandeau, la carte `ParcoursQuickPick`, la carte « Reprendre » et la page de
 **La continuité du visiteur (Q-1)**
 
 - **R-13** — Sur l'appareil seulement, jamais au serveur : les portes quiz réussies passent de
-  `sessionStorage` à `localStorage` avec un horodatage et un TTL (Q-1, reco 30 jours) ; le dernier
+  `sessionStorage` à `localStorage` avec un horodatage et un TTL de **30 jours** (Q-1, arbitrée) ; le dernier
   chapitre lu est mémorisé (`{ chapterId, subjectId, title, locale, at }`) et proposé sur `/` et
   `/programme` ; un bouton « oublier » efface les deux. Aucun score, aucune réponse, aucune donnée
   personnelle ; `localStorage` indisponible ⇒ comportement actuel (porte « fermée », pas de
   reprise) — le sens sûr, comme `anon-quiz-gate.ts` le fait déjà. La déconnexion d'un compte ne
-  touche pas cette mémoire (un identifiant de chapitre n'est pas une donnée de compte).
+  touche pas cette mémoire (un identifiant de chapitre n'est pas une donnée de compte). La carte
+  « Reprendre » ne s'adresse qu'au visiteur **sans session** : la landing d'un connecté reste telle
+  quelle (Q-2).
 
 **Le parent**
 
@@ -480,24 +484,32 @@ server fns existantes. La seule donnée nouvelle est **locale** (R-2, R-13) : de
 `localStorage` versionnées, lues et écrites de façon défensive (SSR, navigation privée, quota —
 même discipline que `outbox.ts` et `guide-storage.ts`).
 
-| Clé                     | Contenu                                                                                     | TTL             | Écrite par                                                                      | Lue par                           |
-| ----------------------- | ------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------- | --------------------------------- |
-| `na9ra.returnTo.v1`     | `{ path: string, reason?: "expired", at: number }`                                          | 24 h            | `/auth` (depuis `?returnTo`), garde `_authenticated`, `useExitOnRefusedSession` | `/auth` (consommé une fois)       |
-| `na9ra.anonQuizPassed`  | **existante** — passe de `sessionStorage` à `localStorage` au lot 5 : `{ [chapterId]: at }` | Q-1 (reco 30 j) | `exercice.$exerciseId` (quiz réussi)                                            | hub, chapitre, exercice (anonyme) |
-| `na9ra.anonLastChapter` | `{ chapterId, subjectId, title, locale, at }`                                               | Q-1 (reco 30 j) | `chapitre.$chapterId` (anonyme, après chargement)                               | `/`, `/programme` (anonyme)       |
+| Clé                     | Contenu                                                                                     | TTL        | Écrite par                                                                      | Lue par                           |
+| ----------------------- | ------------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------- | --------------------------------- |
+| `na9ra.returnTo.v1`     | `{ path: string, reason?: "expired", at: number }`                                          | 24 h       | `/auth` (depuis `?returnTo`), garde `_authenticated`, `useExitOnRefusedSession` | `/auth` (consommé une fois)       |
+| `na9ra.anonQuizPassed`  | **existante** — passe de `sessionStorage` à `localStorage` au lot 5 : `{ [chapterId]: at }` | 30 j (Q-1) | `exercice.$exerciseId` (quiz réussi)                                            | hub, chapitre, exercice (anonyme) |
+| `na9ra.anonLastChapter` | `{ chapterId, subjectId, title, locale, at }`                                               | 30 j (Q-1) | `chapitre.$chapterId` (anonyme, après chargement)                               | `/`, `/programme` (anonyme)       |
 
 ### 3.2 Server
 
-Aucune server fn nouvelle. Trois retouches **sans changement de contrat d'entrée**, toutes en
-lecture ou en forme de l'erreur :
+**Une server fn nouvelle, en lecture seule** (`getExerciseParcours`), **une forme d'erreur** à
+corriger, **zéro RPC nouvelle** et zéro migration. Relevé du 2026-10-30, sur le `main` du moteur
+après #1207 :
 
-- `getExercise` (`quest.server.ts`) expose `xpReward` (colonne `exercises.xp_reward`, aujourd'hui
-  non servie — relevé du 2026-10-30 sur `quest.server.ts`, `exercise-route.ts`, `player-types.ts`)
-  pour la phrase de valeur (R-8), et `parcours: { id, name_fr, name_en, name_ar } | null` du
-  chapitre pour la carte `ParcoursQuickPick` (R-5) — lecture déjà faite par
-  `resolve_exercise_access` côté RPC. L'exécuteur **vérifie d'abord** ce que la réponse porte et
-  n'ajoute que ce qui manque ; aucune de ces deux valeurs n'est sensible.
-- `checkAnswersPublic` / `scoreQuizPublic` : le refus du limiteur (`isRateLimited` /
+- **`xp_reward` est déjà servi.** `getExercise` (`quest.server.ts`) lit l'exercice en
+  `select("*, subjects(…), chapters(…)")` et renvoie `exercise: ex.data` : la ligne `exercises`
+  entière, colonne `xp_reward` comprise (types générés), aux DEUX registres. R-8 ne demande donc
+  aucune retouche serveur : `exercise-player.tsx`, qui lit déjà `data.exercise`, passe `xpReward`
+  au contexte de `renderResultFooter` ; la route anonyme en fait sa phrase.
+- **Le parcours du chapitre n'est PAS servi** par `getExercise` : l'embed `subjects` ne porte pas
+  `theme_id`. `getSubject` le dérive déjà — RPC existante `resolve_subject_parcours(theme, grade)`,
+  puis lecture de la ligne `parcours`. Le lot 2 extrait cette dérivation en un helper partagé (une
+  seule définition) et ajoute `getExerciseParcours({ exerciseId })` — `requireSupabaseAuth`, zod
+  `.validator`, rend `{ id, name_fr, name_en, name_ar } | null` —, que la route `quest` n'appelle
+  **que** si l'élève n'a pas de parcours (R-5) : aucun surcoût pour les autres chargements. La
+  fonction vit dans un module `quest.*.server.ts`, au choix de l'exécuteur.
+- **`checkAnswersPublic` / `scoreQuizPublic`** vivent désormais dans `quest.practice.server.ts`
+  (déplacées à l'identique par #1207) : le refus du limiteur (`isRateLimited` /
   `isRateLimitedLocal`) lève un **code stable** `RATE_LIMITED` via `failWithClientError` à la place
   de `new Error("Trop de requêtes. Réessaie dans un instant.")` ; le client traduit (R-15). Le
   limiteur anonyme lui-même (mémoire par IP) ne change pas — c'est la ligne 9 du relevé, hors
@@ -532,7 +544,10 @@ src/features/quest/components/lesson-reader.tsx  returnTo ; account_invite_click
 src/features/quest/components/subject-hub.tsx    returnTo sur la raison Rappel ; événement
 src/routes/_public/{programme,extras,niveau,matiere,chapitre}.tsx
 src/routes/_authenticated/{dashboard,parcours}.tsx   WaitingForNetwork quand paused (R-9)
-src/features/quest/quest.server.ts       xpReward + parcours servis ; RATE_LIMITED (§3.2)
+src/features/quest/quest.server.ts       helper partagé de dérivation du parcours (lot 2)
+src/features/quest/quest.*.server.ts     getExerciseParcours, lecture seule (lot 2)
+src/features/quest/quest.practice.server.ts  RATE_LIMITED à la place du français en dur (lot 4)
+src/features/quest/components/exercise-player.tsx  renderResultFooter reçoit xpReward (lot 1)
 src/shared/lib/product-events.ts         3 événements + catalogue (R-16)
 public/offline.html · public/sw.js       trilingue, prefers-color-scheme, VERSION v2 (R-10)
 ```
@@ -629,17 +644,20 @@ passe de `/dashboard` à `/auth`, qui est déjà la cible de Google. Rien à cli
 
 ## 4. Plan d'exécution en lots
 
-| lot | contenu (résumé)                                                                                      | fichiers/objets créés ou touchés                                                                                                                                                                                                 | tests exigés                                                                                                                                                                                                                                                                                 | dépend de |
-| --- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 0   | La mesure d'abord : 3 événements + propriétés, catalogue, émetteurs                                   | `product-events.ts`, `exercice.$exerciseId.tsx`, `lesson-reader.tsx`, `subject-hub.tsx`, `public-landing.tsx`, `public-header.tsx`, `auth.tsx`, `onboarding.tsx`                                                                 | Vitest : catalogue complet et typé, chaque émetteur (mock `captureProductEvent`), zéro PII (test de propriétés)                                                                                                                                                                              | —         |
-| 1   | Le retour au point de départ + header neutre + déconnexion depuis le contenu + valeur de l'invitation | `return-to.ts` (+ tests), `auth.tsx`, `login.tsx`/`signup.tsx` (passent `returnTo`), `_authenticated.tsx` (garde), `public-header.tsx`, `settings-menu.tsx`, `public-landing.tsx`, invitations, `getExercise` (`xpReward`), i18n | Vitest : R-1 (formes hostiles), TTL, `resolvePostAuthDestination`, header neutre pendant `loading` ; e2e `public` : header neutre sans CTA avant hydratation ; e2e `authed/signup` étendu : invitation depuis `/chapitre/x` → inscription → `/chapitre/x` (skip hérité si pas d'autoconfirm) | 0         |
-| 2   | L'accueil n'est plus un péage : garde épargne `/quest/`, carte `ParcoursQuickPick`                    | `onboarding-guard.ts` (+ tests), `src/components/game/parcours-quick-pick.tsx`, `quest.$exerciseId.tsx`, `getExercise` (parcours du chapitre si absent), i18n                                                                    | Vitest : garde (pathname `/quest/…` ⇒ false ; `/dashboard` ⇒ true), carte (adopter / plus tard / sans parcours seulement) ; e2e `authed` : compte neuf sans parcours ouvre `/quest/<id>` et joue sans assistant                                                                              | 1         |
-| 3   | La session qui meurt revient au même endroit                                                          | `use-exit-on-refusal.ts`, `auth.tsx` (hint), i18n                                                                                                                                                                                | Vitest : mémoire écrite avant `signOut` ; e2e `authed/session-invalidation` **étendu** : après reconnexion, l'URL quittée                                                                                                                                                                    | 1         |
-| 4   | Le réseau se voit : bandeau, états « en attente », page de repli trilingue, SW v2                     | `use-online-status.ts`, `network-banner.tsx`, `query-wait-state.tsx`, 7 routes, `_public.tsx`, `_authenticated.tsx`, `offline.html`, `sw.js`, i18n `offline.*`, erreurs R-15                                                     | Vitest : hook (onlineManager), bandeau (pending count), `isWaitingForNetwork` ; e2e `public` : `context.setOffline(true)` ⇒ bandeau + état d'attente, `setOffline(false)` ⇒ reprise sans reload ; **`build:check` + `smoke:shell`** ; `check-rtl-classes` sur le bandeau                     | 0         |
-| 5   | La continuité du visiteur (après Q-1) : portes quiz en `localStorage` + TTL, carte « Reprendre »      | `anon-continuity.ts` (+ tests), `anon-quiz-gate.ts`, `resume-card.tsx`, `index.tsx`, `programme.tsx`, `chapitre.$chapterId.tsx`, `subject-hub.tsx` (`resumeHere` anonyme), i18n `public.resume.*`                                | Vitest : TTL, oubli, `localStorage` absent ⇒ sens sûr ; e2e `public-anon` : lire un chapitre, revenir sur `/` ⇒ carte, « oublier » ⇒ plus de carte ; quiz réussi, nouvel onglet ⇒ porte ouverte                                                                                              | 1, Q-1    |
+| lot | contenu (résumé)                                                                                      | fichiers/objets créés ou touchés                                                                                                                                                                                                                             | tests exigés                                                                                                                                                                                                                                                                                 | dépend de |
+| --- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 0   | La mesure d'abord : 3 événements + propriétés, catalogue, émetteurs                                   | `product-events.ts`, `exercice.$exerciseId.tsx`, `lesson-reader.tsx`, `subject-hub.tsx`, `public-landing.tsx`, `public-header.tsx`, `auth.tsx`, `onboarding.tsx`                                                                                             | Vitest : catalogue complet et typé, chaque émetteur (mock `captureProductEvent`), zéro PII (test de propriétés)                                                                                                                                                                              | —         |
+| 1   | Le retour au point de départ + header neutre + déconnexion depuis le contenu + valeur de l'invitation | `return-to.ts` (+ tests), `auth.tsx`, `login.tsx`/`signup.tsx` (passent `returnTo`), `_authenticated.tsx` (garde), `public-header.tsx`, `settings-menu.tsx`, `public-landing.tsx`, invitations, `exercise-player.tsx` (`xpReward` au pied de résultat), i18n | Vitest : R-1 (formes hostiles), TTL, `resolvePostAuthDestination`, header neutre pendant `loading` ; e2e `public` : header neutre sans CTA avant hydratation ; e2e `authed/signup` étendu : invitation depuis `/chapitre/x` → inscription → `/chapitre/x` (skip hérité si pas d'autoconfirm) | 0         |
+| 2   | L'accueil n'est plus un péage : garde épargne `/quest/`, carte `ParcoursQuickPick`                    | `onboarding-guard.ts` (+ tests), `src/components/game/parcours-quick-pick.tsx`, `quest.$exerciseId.tsx`, `getExerciseParcours` + helper partagé avec `getSubject`, i18n                                                                                      | Vitest : garde (pathname `/quest/…` ⇒ false ; `/dashboard` ⇒ true), carte (adopter / plus tard / sans parcours seulement) ; e2e `authed` : compte neuf sans parcours ouvre `/quest/<id>` et joue sans assistant                                                                              | 1         |
+| 3   | La session qui meurt revient au même endroit                                                          | `use-exit-on-refusal.ts`, `auth.tsx` (hint), i18n                                                                                                                                                                                                            | Vitest : mémoire écrite avant `signOut` ; e2e `authed/session-invalidation` **étendu** : après reconnexion, l'URL quittée                                                                                                                                                                    | 1         |
+| 4   | Le réseau se voit : bandeau, états « en attente », page de repli trilingue, SW v2                     | `use-online-status.ts`, `network-banner.tsx`, `query-wait-state.tsx`, 7 routes, `_public.tsx`, `_authenticated.tsx`, `offline.html`, `sw.js`, i18n `offline.*`, erreurs R-15                                                                                 | Vitest : hook (onlineManager), bandeau (pending count), `isWaitingForNetwork` ; e2e `public` : `context.setOffline(true)` ⇒ bandeau + état d'attente, `setOffline(false)` ⇒ reprise sans reload ; **`build:check` + `smoke:shell`** ; `check-rtl-classes` sur le bandeau                     | 0         |
+| 5   | La continuité du visiteur (Q-1 : 30 jours) : portes quiz en `localStorage` + TTL, carte « Reprendre » | `anon-continuity.ts` (+ tests), `anon-quiz-gate.ts`, `resume-card.tsx`, `index.tsx`, `programme.tsx`, `chapitre.$chapterId.tsx`, `subject-hub.tsx` (`resumeHere` anonyme), i18n `public.resume.*`                                                            | Vitest : TTL, oubli, `localStorage` absent ⇒ sens sûr ; e2e `public-anon` : lire un chapitre, revenir sur `/` ⇒ carte, « oublier » ⇒ plus de carte ; quiz réussi, nouvel onglet ⇒ porte ouverte                                                                                              | 1         |
 
-Ordre : 0 → 1 → (2 ∥ 3) → 4 → 5. Chaque lot = une PR sur `main`, gate verte (`npm run verify` ;
-`ci:verify` pour le lot 4, qui touche le bundle prod et le service worker).
+**Ordre arbitré (Q-3, 2026-10-30).** Chantier 1, ouvert dès la validation : lots **0 → 1 → 3** (la
+mesure, le retour au point de départ, la session expirée). En file, au rythme des places de code
+libres : lots **2**, puis **4**, puis **5** — l'ordre du tableau. Chaque lot = une PR sur `main`,
+gate verte (`npm run verify` ; `ci:verify` pour le lot 4, qui touche le bundle prod et le service
+worker).
 
 - [ ] **Lot 0 — La mesure d'abord.** Périmètre : R-16 intégralement, `live: true` au catalogue,
       propriétés `return_to_kept: false` / `from_content` déduits de la route courante,
@@ -671,7 +689,7 @@ Ordre : 0 → 1 → (2 ∥ 3) → 4 → 5. Chaque lot = une PR sur `main`, gate 
       les deux schémas de couleur, zéro script ; `sw.js` `VERSION = "v2"` ; `smoke:shell` vert,
       budget `index-` tenu (RISK-6). **Stop-point** : aucun cache, aucune persistance, pas de
       `vite-plugin-pwa`, pas de route `/offline`.
-- [ ] **Lot 5 — La continuité du visiteur** (ne démarre qu'après Q-1). Périmètre : R-13, US-6 ;
+- [ ] **Lot 5 — La continuité du visiteur** (Q-1 tranchée : 30 jours, portes quiz + dernier chapitre ; en file, après les lots 2 et 4). Périmètre : R-13, US-6 ;
       carte « Reprendre » sur `/` et `/programme` ; `resumeHere` anonyme sur le hub. Critères :
       lecture d'un chapitre ⇒ carte au prochain `/` ; TTL échu ⇒ rien ; « oublier » ⇒ rien ;
       porte quiz réussie ⇒ ouverte dans un nouvel onglet ; `localStorage` jeté ⇒ comportement
@@ -732,30 +750,39 @@ Ordre : 0 → 1 → (2 ∥ 3) → 4 → 5. Chaque lot = une PR sur `main`, gate 
   `offline.*` vont au catalogue déjà découpé ; `build:check` à chaque lot touchant l'index.
 - **RISK-7 — Une mémoire locale sur un appareil partagé** (salle informatique) montre à un élève le
   chapitre d'un autre. _Prob. moyenne, impact faible._ Rien d'identifiant (un titre de chapitre),
-  bouton « oublier » visible, TTL ; le choix du TTL est Q-1.
+  bouton « oublier » visible, TTL de 30 jours (Q-1).
 - **RISK-8 — Le lot 2 contredit la règle « cours → quiz → missions » du guide intégré** (#1179).
   _Prob. faible._ Non : la porte quiz reste serveur et le hub la dit ; seul l'assistant de
   **classe** s'écarte, pas la porte de **chapitre**. Le `GuideIntroCard` de la quête ne change pas.
 
-## 7. Questions ouvertes (pour l'humain)
+## 7. Questions ouvertes (pour l'humain) — arbitrées le 2026-10-30
 
-- **Q-1 — Continuité du visiteur sur l'appareil** (lot 5) : (a) durée — recommandation **30
-  jours**, assez pour un rythme hebdomadaire, assez court pour un poste partagé ; (b) périmètre —
-  recommandation **portes quiz réussies + dernier chapitre lu**, jamais de score ; (c) alternative
-  « statu quo » (tout meurt avec l'onglet) si le propriétaire préfère que le compte reste la seule
-  mémoire. Sans arbitrage, le lot 5 ne démarre pas (les lots 0–4 n'en dépendent pas).
-- **Q-2 — `/` pour un élève connecté** : garder la landing (SEO, parents, enseignants — c'est la
-  porte publique) avec le logo et les CTA auth-aware existants, **ou** rediriger vers le hall ?
-  Recommandation : **garder**, et laisser le lot 5 y poser la carte « Reprendre » (qui, pour un
-  connecté, pointe sa prochaine action du hall). Une redirection casserait le lien partagé « regarde
-  cette plateforme » qu'un élève connecté ouvre devant un parent.
-- **Q-3 — La place dans la file** (STATUS §6.0, règle 1 : deux chantiers de code au plus ; §6.1 :
-  « code, seulement ce qui sert ces campagnes »). Recommandation : les lots **0, 1 et 3** forment
-  **un seul chantier court** (une semaine d'exécuteur, zéro SQL) ouvert dès la validation — ils
-  réparent le passage et le retour, c'est-à-dire ce que le premier canal d'acquisition (KPI-1)
-  trouvera en arrivant ; les lots 2, 4, 5 attendent une place libre. Rien ici ne précède la
-  campagne 1 de §6.1 ni ne touche au contenu.
+Les trois questions ont été posées une par une au propriétaire et tranchées **sur les
+recommandations**. Plus rien n'est ouvert : l'étude est `validée`.
+
+- **Q-1 — Continuité du visiteur sur l'appareil** (lot 5) : **arbitrée** — portes quiz réussies +
+  dernier chapitre lu, **30 jours**, mémoire locale à l'appareil, jamais de score ni de réponse,
+  bouton « oublier » (R-13). Écartées : « quiz seulement » (moins de raisons de revenir) et « statu
+  quo » (tout meurt avec l'onglet).
+- **Q-2 — `/` pour un élève connecté** : **arbitrée** — on **garde la landing** (référencement,
+  parents, enseignants, lien partagé devant un parent). Précision de rédaction : la recommandation
+  évoquait une carte qui, pour un connecté, pointerait sa prochaine action du hall ; elle n'est
+  **pas** retenue en v1 — elle demanderait une requête connectée depuis une page publique, et
+  « Continuer à jouer » (`gameCtaAuthed`) mène déjà au hall. La carte « Reprendre » du lot 5 ne
+  s'adresse qu'au visiteur sans session ; la landing d'un connecté reste telle quelle (R-13).
+- **Q-3 — La place dans la file** : **arbitrée** — un **chantier court** ouvert dès la validation :
+  lots **0, 1 et 3** (zéro SQL, trois PR). Les lots **2, 4 et 5** prennent la file ensuite, un par
+  un, dès qu'une place de code se libère (§4). Rien ici ne précède la campagne 1 de §6.1 ni ne
+  touche au contenu.
 
 ## 8. Journal d'exécution
 
-_(rempli au fil des lots par l'exécuteur : date, lot, PR, écarts acceptés, dettes notées)_
+- **2026-10-30 — validation.** Q-1 à Q-3 arbitrées par le propriétaire (§7), toutes sur les
+  recommandations. Aucun lot démarré. Correction de l'étude avant validation, relevée en relisant le
+  `main` du moteur (#1207) : `exercises.xp_reward` est **déjà servi** (`getExercise` renvoie la
+  ligne entière — l'étude affirmait le contraire à partir d'un `grep` qui ne voit pas un
+  `select("*")`) ; la correction publique vit désormais dans `quest.practice.server.ts` ; le
+  parcours du chapitre, lui, n'est pas servi (§3.2).
+
+_(la suite est remplie au fil des lots par l'exécuteur : date, lot, PR, écarts acceptés, dettes
+notées)_
