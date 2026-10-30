@@ -196,8 +196,8 @@ Les deux ❌ sont les deux moments du **passage** ; le plan L2 (§6) les a expli
 - **Landing pour un connecté** : la page marketing complète ; seuls le logo (→ `/dashboard`) et
   deux CTA sont auth-aware. Aucune reprise (« ta dernière mission… »).
 - **Hall `/dashboard`** : dense et complet (é15, é22, é30, é31, é34), squelette de chargement,
-  état d'erreur avec « Réessayer », sortie sur refus de session. **Sans réseau** : `isLoading ||
-!data` ⇒ `DashboardSkeleton` indéfiniment, aucun message.
+  état d'erreur avec « Réessayer », sortie sur refus de session. **Sans réseau** :
+  `isLoading || !data` ⇒ `DashboardSkeleton` indéfiniment, aucun message.
 - **Quête** : brouillon local toutes les 20 s et à `pagehide` (étage 1), file d'envoi avant la
   tentative (étage 2, `outbox.ts`, flush à `online`), indicateur `savePending` / `saveDone`,
   reprise « Reprendre ma copie » ; `client_errors` reçoit `quest-submit`, `outbox-*`,
@@ -642,8 +642,9 @@ Ordre : 0 → 1 → (2 ∥ 3) → 4 → 5. Chaque lot = une PR sur `main`, gate 
 `ci:verify` pour le lot 4, qui touche le bundle prod et le service worker).
 
 - [ ] **Lot 0 — La mesure d'abord.** Périmètre : R-16 intégralement, `live: true` au catalogue,
-      propriétés `return_to_kept: false` / `from_content` déduits de la route courante, `source:
-  "wizard"` sur l'assistant. Critères : US-9 ; `/admin/engagement` affiche les trois lignes.
+      propriétés `return_to_kept: false` / `from_content` déduits de la route courante,
+      `source: "wizard"` sur l'assistant. Critères : US-9 ; `/admin/engagement` affiche les
+      trois lignes.
       **Stop-point** : aucun changement d'écran, aucun `returnTo`.
 - [ ] **Lot 1 — Le retour au point de départ.** Périmètre : R-1 à R-4, R-6, R-8, R-11 (coquille
       publique), US-1, US-4, US-7 ; `signup`/`login` renseignent `return_to_kept`. Critères :
