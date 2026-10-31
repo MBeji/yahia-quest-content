@@ -2,8 +2,9 @@
 
 > **Statut** : **validée** (2026-10-30) — rédigée le même jour depuis une session cloud, sur un
 > relevé du code du jour (`main` du moteur à #1204, `main` du corpus à privé#754) ; Q-1 à Q-3
-> arbitrées par le propriétaire, toutes sur les recommandations (§7). **Aucun lot démarré** : le
-> premier chantier (lots 0, 1, 3) est prêt à lancer, les lots 2, 4 et 5 attendent une place de code.
+> arbitrées par le propriétaire, toutes sur les recommandations (§7). **Chantier court livré le
+> 2026-10-31** — lots 0, 1 et 3 au moteur (#1209 ; #1210, #1211, #1212 ; #1214), détail au journal (§8) ;
+> les lots 2, 4 et 5 attendent une place de code, et un budget (le chunk `i18n-` est à 0,06 Ko de son plafond).
 > **Priorité** : 38 · **Valeur** : 🚪 le visiteur qui lit un cours ou finit un entraînement et
 > crée son compte **revient exactement là où il était**, au lieu d'atterrir au Hall des Héros puis
 > dans un assistant de trois écrans ; l'élève dont la session expire en pleine quête **retrouve sa
@@ -659,12 +660,12 @@ libres : lots **2**, puis **4**, puis **5** — l'ordre du tableau. Chaque lot =
 gate verte (`npm run verify` ; `ci:verify` pour le lot 4, qui touche le bundle prod et le service
 worker).
 
-- [ ] **Lot 0 — La mesure d'abord.** Périmètre : R-16 intégralement, `live: true` au catalogue,
+- [x] **Lot 0 — La mesure d'abord** (livré, moteur #1209). Périmètre : R-16 intégralement, `live: true` au catalogue,
       propriétés `return_to_kept: false` / `from_content` déduits de la route courante,
       `source: "wizard"` sur l'assistant. Critères : US-9 ; `/admin/engagement` affiche les
       trois lignes.
       **Stop-point** : aucun changement d'écran, aucun `returnTo`.
-- [ ] **Lot 1 — Le retour au point de départ.** Périmètre : R-1 à R-4, R-6, R-8, R-11 (coquille
+- [x] **Lot 1 — Le retour au point de départ** (livré en deux PR, moteur #1210 et #1211, puis la revue de sécurité #1212). Périmètre : R-1 à R-4, R-6, R-8, R-11 (coquille
       publique), US-1, US-4, US-7 ; `signup`/`login` renseignent `return_to_kept`. Critères :
       depuis `/chapitre/x`, inscription par mot de passe ⇒ retour sur `/chapitre/x` avec HUD ;
       depuis `/exercice/y`, résultat ⇒ invitation avec `{xp}` ⇒ Google ⇒ retour ; `/quest/z` sans
@@ -677,7 +678,7 @@ worker).
       `setCurrentParcours` + `claimWelcomePack` + `onboarding_completed{source:"quest_card"}` ;
       « Plus tard » ⇒ carte fermée pour la session ; `/dashboard` sans parcours ⇒ assistant,
       inchangé ; parent/admin jamais la carte. **Stop-point** : l'assistant n'est pas modifié.
-- [ ] **Lot 3 — La session qui meurt revient au même endroit.** Périmètre : R-7, US-3. Critères :
+- [x] **Lot 3 — La session qui meurt revient au même endroit** (livré, moteur #1214). Périmètre : R-7, US-3. Critères :
       `session-invalidation.spec` étendu — après corruption du jeton et reconnexion, l'URL quittée
       est de nouveau à l'écran et `login{reason:"expired", return_to_kept:true}` part ; le hint
       est visible sur `/auth`. **Stop-point** : aucune modification de `auth-attacher`,
@@ -783,6 +784,56 @@ recommandations**. Plus rien n'est ouvert : l'étude est `validée`.
   ligne entière — l'étude affirmait le contraire à partir d'un `grep` qui ne voit pas un
   `select("*")`) ; la correction publique vit désormais dans `quest.practice.server.ts` ; le
   parcours du chapitre, lui, n'est pas servi (§3.2).
+
+- **2026-10-30 — lot 0 livré (moteur #1209).** La mesure du tunnel : `public_practice_completed`,
+  `account_invite_clicked` et `login` rejoignent la liste fermée et le catalogue (tous `live`), `signup`
+  et `onboarding_completed` s'enrichissent. Écarts acceptés : `from_content` répond à **la dernière
+  page vue avant `/auth`** (et non à l'exercice) ; la surface « hub » de `account_invite_clicked`
+  n'est pas émise — le Rappel verrouillé du hub est un texte, pas un lien ; l'inscription Google
+  compte comme un `login`. Piège consigné au dépôt : le client Supabase du projet est en flux
+  **implicite**, le retour de Google arrive dans le fragment et jamais dans `?code=` — il se lit sur la
+  session (`isFreshGoogleSignIn`). Conclusion tirée du code installé, **non observée en production**.
+- **2026-10-30 — lot 1, première moitié livrée (moteur #1210).** Le retour au point de départ
+  (R-1 à R-4) : `return-to.ts` est la seule porte avant `router.history.push` ; mémoire locale de
+  24 h à usage unique ; `emailRedirectTo` ramené sur `/auth`. Écarts acceptés : R-4 n'écrit **rien**
+  depuis la landing (le Hall vaut mieux que la vitrine) ; le lien « Connexion » de l'en-tête écrit
+  lui aussi un retour (l'étude ne listait que l'inscription).
+- **2026-10-30 — lot 1, seconde moitié livrée (moteur #1211).** R-6 (en-tête **et vitrine** neutres
+  pendant `loading`, jusque dans le HTML serveur), R-11 (`useSignOutInPlace`), R-8 (« jusqu'à {xp}
+  XP »), R-14. Écarts acceptés : (a) la phrase de valeur **remplace** la phrase sans chiffre et en perd
+  la seconde moitié — la version longue faisait déborder le chunk `i18n-` (188,17 pour 188,00 Ko) ;
+  il est à **187,94**, donc les lots 2, 4 et 5 devront tailler ou découper (règle de
+  `scripts/check-bundle-budget.mjs` : une microcopy d'une seule surface paresseuse prend son propre
+  catalogue) ; (b) un lien partagé `/suivi?code=…` **garde la page** pour un parent connecté : il vise
+  CE bilan, que l'espace du parent ne sait pas ouvrir ; (c) « jusqu'à » est la valeur de base à
+  100 % — la prime de vitesse du boss (×1,5), le mode Rappel (×1,5) et les potions peuvent donner plus,
+  jamais moins ; (d) « Suivi parent » est aussi masqué à un connecté dont le rôle n'est pas encore lu
+  (mieux vaut un lien qui arrive qu'un lien qui disparaît). Piège consigné : `signOut()` renvoie son
+  erreur sans la lever et `auth-js` retire la session locale même quand la révocation serveur échoue.
+- **2026-10-31 — revue de sécurité du lot 1 (moteur #1212).** RISK-1 exigeait cette revue ; elle est
+  arrivée **après** l'auto-fusion des deux PR du lot (quatre minutes entre l'ouverture et le merge).
+  Un relecteur indépendant a exécuté le code fusionné ; chaque constat a été reproduit avant
+  correction. Trouvés : `isSafeReturnPath` rendait `//evil.tn` pour `/.//evil.tn` (la normalisation de
+  l'URL fait apparaître le `//` — aucune sortie d'origine, le routeur nous sauvait, pas le
+  contrôle) ; le tunnel n'était pas refusé en majuscules ; **`return_to_kept` et `from_content`
+  disaient presque toujours « non »** — `signUp` et `signInWithPassword` notifient `SIGNED_IN` avant de
+  rendre la main, l'écouteur de la page avait déjà consommé la mémoire (KPI-2 faussé : **les relevés
+  de #1209 à #1212 sont à ignorer**) ; `/suivi?code=` laissait le code d'alliance dans la mémoire du
+  retour. Non retenus : `returnTo=/examen/…` (le même lien ouvre déjà l'examen sans notre mémoire),
+  la page du lycée qui envoie vers `/auth` pour un vote (hors de la liste fermée de R-4), `hadUser`
+  face au bouton « retour » du navigateur. **Dette de processus** : pour un lot dont l'étude exige une
+  revue avant fusion, pousser sur une branche `draft/` (pas d'auto-fusion) jusqu'à ce qu'elle ait eu lieu.
+- **2026-10-31 — lot 3 livré (moteur #1214).** `useExitOnRefusedSession` retient la page quittée avec la
+  raison `expired` **avant** `signOut` ; `/auth` dit « Ta session a expiré » (connexion seulement) ;
+  `login` part avec `reason: "expired"`. Limite connue : une session que `auth-attacher` termine **en
+  cours d'usage** (refus prouvé du rafraîchissement) ne passe pas par ce hook et la garde ne retient
+  rien pour qui avait une session — le chargement à froid sur une session morte, lui, est couvert.
+- **Dettes notées.** (1) `e2e/authed/logout.spec.ts` (déconnexion depuis une page publique) et
+  `session-invalidation.spec.ts` (aller-retour complet, rafraîchissement coupé pour forcer le chemin
+  du hook) sont écrits mais **n'ont pas tourné en session** — pas de projet Supabase TEST : à
+  confirmer par la nuit. (2) Les deux autres déconnexions (`_authenticated.tsx`, `parametrage.tsx`)
+  ignorent l'erreur de `signOut()` : cohérent avec `auth-js`. (3) Le chunk d'entrée `index-` perd
+  1,4 Ko (le hook de sortie tire `return-to` dans l'entrée) : 450,03 pour 456.
 
 _(la suite est remplie au fil des lots par l'exécuteur : date, lot, PR, écarts acceptés, dettes
 notées)_
