@@ -46,7 +46,7 @@
 > l'échelle **texte d'abord, vision en dernier** (L0 texte déjà extrait → L1 couche texte → L2
 > couche texte décodée → L3 vision). ScribeKit devient facultatif. Une page lue par le texte compte
 > comme lue après un sondage image noté. Tout est dans
-> [`content-ingest/references/source-drive.md`](../.claude/skills/content-ingest/references/source-drive.md),
+> [`content-ingest`](../.claude/skills/content-ingest/SKILL.md) § « Source et lecture »,
 > qui **prime** sur Phase 0.2, A2 et A3.1-2 ci-dessous. La priorité de travail (Bac, matières
 > principales) est au [`PILOTAGE.md`](./PILOTAGE.md) § 0.
 >
@@ -224,7 +224,8 @@ publié le chapitre suivant.
   contenu se font depuis la fiche. (Seule re-lecture de source légitime : le R-7 du LOT A.)
 - **T-4 — Un lot = une matière = un contexte frais.** Deux matières dans une même fenêtre =
   le budget de lecture de chacune dilué + le cadrage payé deux fois. Sous-agents pour les lots,
-  orchestrateur mince pour la boucle.
+  orchestrateur mince pour la boucle. Le modèle de chaque sous-agent se choisit par tâche (le moins
+  cher qui la tient, opus pour l'audit) : table du skill `campagne` § 3 bis.
 - **T-5 — En génération, l'unité de travail = le chapitre.** Chaque chapitre est généré avec :
   le **brief matière** (T-6) + **LA section de la fiche** couvrant ce chapitre (le chapitrage
   §4 / le manifeste découpent la fiche exprès pour ça) — jamais la fiche entière (70–200 k)
@@ -444,7 +445,7 @@ la fois**, qui reçoit sa plage de numéros ; **une tranche n'est finie qu'en pr
      corpus) : `rm` sur le lien en POSIX, `(Get-Item <lien> -Force).Delete()` en PowerShell.
 
 2. **Brancher la source : le connecteur Google Drive** sur le compte propriétaire du dossier
-   `cnp-officiel`, et vérifier qu'il voit `index.csv` (`source-drive.md` § 1). **ScribeKit est
+   `cnp-officiel`, et vérifier qu'il voit `index.csv` (`content-ingest` § « Source et lecture »). **ScribeKit est
    facultatif** depuis le 2026-11-03 : seulement pour échafauder une fiche neuve
    (`scribekit app-cnp`), jamais comme préalable à la lecture. Si on le veut :
 
@@ -565,17 +566,17 @@ Selon le profil (§ Profils) : **combiner toutes les sources officielles disponi
 enseignant + manuel élève) ; une seule disponible ⇒ elle fait référence (le signaler dans la
 fiche). **Les PDF se prennent dans le dossier Drive `cnp-officiel`** : `index.csv` dit d'abord
 s'ils existent (par code à 6 chiffres), `search_files` les trouve par titre `<code><tome>.pdf`
-(`source-drive.md` § 1). Absent du Drive ⇒ le demander à Mohamed et continuer avec les couples
+(`content-ingest` § « Source et lecture »). Absent du Drive ⇒ le demander à Mohamed et continuer avec les couples
 suivants. **Jamais de contenu inventé faute de source.**
 
 ### A3 — Lire et transcrire (échelle L0 → L3 : texte d'abord, vision en dernier)
 
-0. **Chaque page se lit au barreau le moins cher qui suffit** — `source-drive.md` § 2 : L0 le
+0. **Chaque page se lit au barreau le moins cher qui suffit** — `content-ingest` § « Source et lecture » : L0 le
    `.txt` déjà extrait de `_txt/`, L1 la couche texte du PDF (`read_file_content` ; propre pour
    les manuels en français et en anglais, donc tout le Bac scientifique), L2 la couche texte
    décodée (arabe à polices propriétaires, table de la fiche du couple), L3 la vision sur les PNG
    de `_render/` — **seulement** pour formules, tableaux, figures, encadrés vocalisés, pages sans
-   texte, et le sondage qui valide L0-L2 (§ 3 du même fichier). Le point 1 ci-dessous
+   texte, et le sondage qui valide L0-L2 (même section, « Ce qui compte comme lu »). Le point 1 ci-dessous
    (ScribeKit) est **facultatif** ; le point 2 ne vaut plus que pour le barreau L3.
 
 1. **ScribeKit (facultatif)** — utile pour échafauder une fiche neuve au gabarit et créer/valider
@@ -641,7 +642,7 @@ guide + manuel :
    ```
 
    Et le **sondage image** de chaque plage lue par la couche texte (L0-L2), noté dans la fiche
-   (`source-drive.md` § 3) : sans lui, ces pages ne comptent pas comme lues.
+   (`content-ingest`, « Ce qui compte comme lu ») : sans lui, ces pages ne comptent pas comme lues.
 
 2. **R-7 — relecture indépendante par sondage dirigé (T-8)** : un second agent/sous-agent au
    **contexte vierge** re-vérifie la fiche **contre les PDF sources** (pas contre le travail du

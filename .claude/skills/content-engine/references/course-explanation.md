@@ -140,6 +140,9 @@ The closest of the three to maths, and the one where T3 carries the most weight.
   `www.cnp.com.tn/arabic/PDF/` — which is on the cloud allowlist. What is missing is its
   **transcription fiche**, a task, not an absence. Anchors come from the manual's أنشطة, as
   everywhere else.
+- ⚠️ **Superseded on 2026-11-03**: the CNP site is no longer the source (unreachable from cloud,
+  `curl 35`); the PDFs are read from the `cnp-officiel` Google Drive folder, text layer first —
+  `content-ingest` § « Source et lecture ». The note below is kept as history.
 - ⚠️ **A cloud session cannot read the PDF off disk**: `cnp-officiel/` is a 2.8 GB sibling of the
   repo, deliberately out of git, and lives only on the workstation. It must be **fetched over
   HTTPS**, and the CNP serves its leaf certificate alone — so the download fails on an

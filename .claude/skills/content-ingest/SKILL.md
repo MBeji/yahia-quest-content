@@ -3,7 +3,7 @@ name: content-ingest
 description: >-
   Ingest a SOURCE document (teacher PDF, polycopié, annales, a CNP manual or guide,
   a scan) into the content pipeline WITHOUT leaving the gated flow — sources from the
-  `cnp-officiel` Drive folder (references/source-drive.md) — and run the GISEMENT
+  `cnp-officiel` Drive folder, text layer first (§ Source et lecture) — and run the GISEMENT
   mode (étude 36):
   official national exam papers and online devoirs turned into exercises, couple by
   couple. Use whenever the user wants to « ingérer un PDF / document source »,
@@ -18,7 +18,7 @@ description: >-
   content-engine and content-ecole-tn.
 ---
 
-# content-ingest — ingestion source → contenu (ScribeKit + vision agent)
+# content-ingest — ingestion source → contenu (Drive, texte d'abord, vision en dernier)
 
 **Rôle.** Amener un **document source arbitraire** jusqu'au **pipeline de contenu**, **entièrement à
 l'intérieur du flux à gates**. Tu **transcris fidèlement, tu ne génères jamais** ; la génération
@@ -30,33 +30,77 @@ Docs : **[`FableEtudes/METHODE-GENERATION-CONTENU.md`](../../../FableEtudes/METH
 tokens T-1…T-10 ; ce skill l'applique nativement)** +
 [`FableEtudes/12-studio-ingestion`](../../../FableEtudes/12-studio-ingestion/ETUDE.md) (le canal) +
 [`FableEtudes/13-moteur-transcription`](../../../FableEtudes/13-moteur-transcription/ETUDE.md) (le moteur
-**ScribeKit**, repo `YahiaAcademy/ScribeKit`). Défère à `content-engine` (schéma, barre qualité,
+**ScribeKit**, devenu facultatif le 2026-11-03). Défère à `content-engine` (schéma, barre qualité,
 récompenses, style, notation) et à `content-ecole-tn` (fidélité au programme officiel + recette).
 
-## Le partage en 3 couches
+## Source et lecture — la procédure (décision de Mohamed du 2026-11-03)
 
-⭐ **Depuis le 2026-11-03, la source et la lecture suivent
-[`references/source-drive.md`](references/source-drive.md)** (décision de Mohamed) : les PDF viennent
-du dossier Drive `cnp-officiel` (plus du site du CNP), et chaque page se lit au barreau le moins cher
-qui suffit — **L0** texte déjà extrait (`_txt/`), **L1** couche texte du PDF (manuels en français et en
-anglais), **L2** couche texte décodée (arabe), **L3** vision sur les PNG de `_render/`. Ce fichier prime
-sur les couches 1 et 2 ci-dessous.
+### Où sont les sources : le dossier Drive `cnp-officiel`
 
-1. **Texte d'abord — Drive (L0-L2), ScribeKit facultatif** : `read_file_content` rend la couche texte
-   (au-delà de ~80 000 caractères, dans un fichier local à traiter en sous-agent) ; un sondage image noté
-   la valide (`source-drive.md` § 3). ScribeKit (0 LLM, 0 clé) ne sert plus qu'à **échafauder** une fiche
-   neuve au format app et valider le manifeste (`node YahiaAcademy/ScribeKit/dist/bin.js`).
-2. **Vision en dernier — l'AGENT (L3, vision d'abonnement, 0 clé)** : seulement pour ce que le texte ne
-   rend pas (formules, tableaux, figures, encadrés vocalisés, pages sans texte) et pour le sondage :
-   **toi l'agent** lis les PNG de `_render/` (outil **Read** = vision ; à défaut `render.sh`→PNG) et
-   **transcris fidèlement** (chiffres 0-9, LTR, jamais d'arabo-indiens ; **signale l'illisible, n'invente
-   rien**). ⚠️ **Pas de clé API** : l'API Anthropic est facturée au token et **n'utilise pas l'abonnement**
-   — l'OCR passe par TA vision d'agent. Le `--provider anthropic` de ScribeKit existe pour du batch
-   non-supervisé mais **exige une clé facturée** : ne l'emploie **que** si l'utilisateur en fournit une et
-   le demande explicitement.
-3. **Génération — skills existants** : transcription fidèle + fiche prêtes ⇒ hand-off à
-   `content-ecole-tn`/wrappers + `content-cours` + `content-interactif` + `prof-*`. Tu ne génères pas
-   toi-même.
+- <https://drive.google.com/drive/folders/1ZUUgEx71bKFsXulk_WL7cSfNxc6U9tmX>, dossier du compte Google
+  du projet : **tout le corpus CNP** (375 PDF, base 1ʳᵉ–9ᵉ et secondaire 1ʳᵉ–Bac, élève et enseignant).
+- Le connecteur **Google Drive** de la session doit être sur **le compte propriétaire du dossier** ;
+  un autre compte voit « Requested entity was not found ».
+- **Le site du CNP n'est plus la source** : injoignable depuis une session cloud (`content:manuel:fetch`
+  → `curl 35`, mesuré le 2026-11-03). `content:manuel:fetch` ne sert plus que sur un poste local.
+
+| Élément du dossier | Usage |
+| --- | --- |
+| `index.csv` | **l'inventaire**, à lire d'abord : `cycle,classe,type,code,file,bytes,status` (cycle 1 = base, 2 = secondaire ; classe 4 du cycle 2 = **Bac**). Codes = ceux de `suivi/corpus-cnp.json`. |
+| `manuels/` | les PDF, `asasi/c<classe>/{eleve,enseignant}/` et `secondaire/…`, nommés `<code><tome>.pdf`. |
+| `_txt/` | couches texte **déjà extraites** (`<code><tome>-<slug>.txt`). |
+| `_render/`, `_render_lo/` | pages **déjà rendues** en PNG (`<code><tome>-NNN.png`). |
+| `_transcriptions-wip/` | transcriptions brutes en cours (même contrat que `programmes-officiels/_tranches-wip/`). |
+
+Trouver un fichier : `search_files` avec `title = '<code><tome>.pdf'`, jamais une navigation dossier par
+dossier. Un fichier fraîchement versé peut mettre quelques minutes à être indexé : chercher à nouveau
+avant de conclure qu'il manque, et seulement alors le demander à Mohamed.
+
+### Lire au moindre coût : l'échelle L0 → L3
+
+Chaque page se lit au **premier barreau qui suffit**. La vision est le dernier barreau, plus le cas général.
+
+| Barreau | Quand | Comment |
+| --- | --- | --- |
+| **L0** texte déjà extrait | `_txt/<code><tome>-*.txt` existe | `read_file_content` sur le `.txt` |
+| **L1** couche texte du PDF | manuel en **français / anglais** (secondaire scientifique, Bac) | `read_file_content` sur le PDF |
+| **L2** couche texte décodée | manuel **arabe** à polices propriétaires (sortie brouillée `jÉØµdG øe…`) | `read_file_content`, puis la table glyphe → lettre de la fiche (`programme/6eme-base/arabe.md` § 7, `programme/1ere-base/arabe.md` § 7-2) |
+| **L3** vision | formules, vecteurs, fractions, tableaux, figures, encadrés vocalisés, pages sans texte, **et** le sondage ci-dessous | PNG de `_render/` lu avec **Read** (à défaut `render.sh`) |
+
+Mesures (2026-11-03) : L1 sur `222422P00` (maths Bac lettres) rend le manuel entier en 79 475 caractères,
+prose et consignes propres, formules et figures dégradées ; L2 sur `501603P00` rend 107 612 caractères de
+glyphes que la table de la fiche 6ᵉ décode (0 glyphe inconnu sur 899 pages), harakat non fiables.
+
+- Au-delà d'environ 80 000 caractères, `read_file_content` écrit son résultat dans un **fichier local**
+  (JSON `{fileContent, title, viewUrl}`) : le traiter avec `python3 -I`/`jq`, **dans un sous-agent**.
+- Le texte n'a **pas de marqueur de page fiable** : ancrer chaque passage sur le numéro imprimé, le
+  vérifier sur le PNG de `_render/`.
+- **Jamais** `download_file_content` sur un PDF (il revient en base64 dans la conversation).
+- **Pas de clé API** : la vision L3 est celle de l'agent (abonnement). Le `--provider anthropic` de
+  ScribeKit exige une clé facturée : seulement si l'humain en fournit une et le demande.
+- **ScribeKit est facultatif** : seulement pour échafauder une fiche neuve (`scribekit app-cnp`) et
+  valider le manifeste.
+
+### Ce qui compte comme « lu » au registre
+
+Une page lue en L0, L1 ou L2 **compte comme lue** (`pagesLues` de `suivi/<grade>.json`) dès qu'un
+**sondage image** l'a validée : **au moins une page sur dix** de la plage, choisies parmi les plus denses
+(tableaux, encadrés, exercices), confrontées au PNG, **0 écart substantiel** (mot ou nombre faux, ligne
+sautée, ordre inversé). Un écart ⇒ la section entière est sondée ; trois ⇒ elle passe en L3. Le sondage
+se note dans la fiche (pages, écarts). Cette règle remplace celle du 2026-09-22 (« une couverture par
+décodage n'est pas une lecture ») : une fiche à 100 % maintenue `partielle` pour ce seul motif (5ᵉ et 6ᵉ
+arabe) passe à `complete` une fois le sondage fait et noté.
+
+### Les trois couches du travail
+
+1. **Lire** — l'échelle ci-dessus, et **transcrire fidèlement** (chiffres 0-9, LTR, jamais
+   d'arabo-indiens ; `[?]` pour l'illisible, `[sic]` pour la coquille ; **rien d'inventé**).
+2. **Fiche** — profondeur de génération (R-5), confrontée au programme (R-3), au registre (R-4).
+3. **Génération** — hand-off à `content-ecole-tn`/wrappers + `content-cours` + `content-interactif` +
+   `prof-*`. Tu ne génères pas toi-même.
+
+Le **modèle** de chaque sous-agent (lecteur, auteur, auditeur…) se choisit par la table du skill
+`campagne` § 3 bis.
 
 ## Règles (non négociables)
 
@@ -109,30 +153,24 @@ sur les couches 1 et 2 ci-dessous.
   propre travail. Protocole (sondage dirigé, règle T-8 de la méthode) : 100 % du critique (encadrés
   verbatim, chapitrage/manifeste, zones `[?]`) + ≥15 % des pages restantes ; ≥3 erreurs substantielles ⇒
   re-lecture intégrale.
-- **Fidélité, pas de génération.** ScribeKit et l'OCR agent **transcrivent** ; difficulté / calibrage / QCM
+- **Fidélité, pas de génération.** La lecture (texte ou vision) **transcrit** ; difficulté / calibrage / QCM
   / cours = **génération** (couche 3), jamais ici.
 
 ## Workflow
 
-0. **Cadrage.** Quel document ? Cible (thème / grade / matière) ? Droits (R-2) ? Localiser les PDF sources
-   dans le Drive `cnp-officiel` (`index.csv`, puis `search_files` par titre — `references/source-drive.md` § 1).
-0 bis. **Lecture au moindre coût** (`source-drive.md` § 2-3) : L0 → L1 → L2 → L3, sondage image noté.
-   Les étapes 1-2 ci-dessous ne servent que si l'on échafaude avec ScribeKit ou pour le barreau L3.
-1. **ScribeKit — déterministe + échafaudage (facultatif).**
-   - **Scolaire (CNP)** : `scribekit app-cnp <guide.pdf> <manuel.pdf> --grade <gradeSlug> --subject <id>
---lang <ar|fr|en> [--manuel <code> --pages <plages>] -o <programmes-officiels>` → `programme/<g>/<matière>.md`
-     (échafaudage `_TEMPLATE.md` + transcription brute des sources à couche-texte en annexe) + `manifest/<g>.json`
-     validé.
-   - **Source libre / non scolaire** : `scribekit transcribe <inputs…> -o content/_sources/<theme>/<slug>/
---profile markdown` → transcription fidèle (MD/JSON), résumable.
-2. **OCR agent des `pending`.** `scribekit status <cible>` liste les scans `pending`. Pour chacun : **lire en
-   vision (abonnement)** et **remplir la transcription fidèle** dans le fichier cible. Rien d'inventé.
-3. **Fiche + confrontation CNP (R-3).** Compléter la fiche/transcription (périmètre, notions, exemples,
-   exercices du document, bornes) ; pour le scolaire, confronter au `programme/<grade>/<matière>.md`.
-4. **QA transcription + registre.** `scribekit qa <cible>` (schéma manifeste, notation, non-vides) —
-   **0 erreur** avant le hand-off ; `scribekit status <cible>` sans `pending` non traité. Puis **mettre à
-   jour le registre** `suivi/<grade>.json` (statut normé, profondeur, plages `pagesLues` par source, r7)
-   et régénérer la vue : `npm run programme:index` + `npm run programme:check` (0 erreur).
+0. **Cadrage.** Quel document ? Cible (thème / grade / matière) ? Droits (R-2) ? Les PDF : `index.csv`
+   du Drive puis `search_files` par titre (§ Source et lecture).
+1. **Lire** au moindre coût, L0 → L1 → L2 → L3, et transcrire par tranches de 10–20 pages au format final
+   (T-2), directement dans la fiche `programme/<g>/<matière>.md` (gabarit `_TEMPLATE.md`) — ou, pour une
+   fiche neuve, après l'échafaudage facultatif `scribekit app-cnp <guide.pdf> <manuel.pdf> --grade
+   <gradeSlug> --subject <id> --lang <ar|fr|en> -o <programmes-officiels>` (source libre :
+   `scribekit transcribe <inputs…> --profile markdown`).
+2. **Sonder** chaque plage lue par le texte (§ Ce qui compte comme « lu ») et noter le sondage.
+3. **Fiche + confrontation CNP (R-3).** Compléter la fiche (périmètre, notions, exemples, exercices du
+   document, bornes) ; pour le scolaire, confronter au `programme/<grade>/<matière>.md`.
+4. **Registre.** Mettre à jour `suivi/<grade>.json` (statut normé, profondeur, plages `pagesLues` par
+   source, r7) et régénérer la vue : `npm run programme:index` + `npm run programme:check` (0 erreur) ;
+   si ScribeKit a servi, `scribekit qa` aussi.
 5. **Hand-off génération.** Invoquer les skills de génération pour produire `cours.md` / `resume.md` /
    `quiz.json` / `exercices/*` à partir de la transcription — ce que devient chaque contenu du manuel
    (exercice, figure, encadré) et ce qui se trace est normé par
