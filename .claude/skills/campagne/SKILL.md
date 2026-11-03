@@ -25,7 +25,8 @@ En cas de désaccord : **AGENTS.md du moteur → skills & docs normatifs → la 
 **Ce que tu ne fais jamais.** Choisir le couple. L'outillage établit les faits — statut, couverture,
 trous, contenu présent ou non, et **l'étape que la méthode prescrit pour ce couple** — mais
 « par quoi on commence » est une décision humaine (méthode, Phase 0.4 ; décision du 2026-07-26).
-Tu présentes, tu demandes, tu exécutes. Aucun « je recommande », aucun tri par priorité, aucun
+Tu présentes, tu demandes, tu exécutes. Aucun « je recommande », aucun tri par priorité **de ton
+cru** (la seule priorité est celle que l'humain a écrite au `PILOTAGE.md` § 0), aucun
 « je lance le plus rentable ». Si l'humain ne répond pas, tu ne lances rien.
 
 ---
@@ -62,15 +63,14 @@ retard). Un **rouge** de trop, plus traître parce qu'il ressemble à du travail
 déjà réparées en amont (arena #936), sur un clone à 7 commits de retard. Conclure sans avoir
 mesuré ce retard, c'est ouvrir un lot pour réparer ce qui l'est déjà.
 
-Un LOT A a un second préalable — **ScribeKit construit** (méthode, Phase 0.2), le déterministe qui se
-paie une fois (T-1) :
-
-```bash
-test -f ../ScribeKit/dist/bin.js && echo "scribekit prêt"
-```
-
-Absent ⇒ clone + `npm install && npm run build` avant d'ouvrir le moindre PDF. Un LOT B seul
-(profil sans-source) n'en a pas besoin.
+Un LOT A (ou un gisement) a un second préalable — **la source branchée** : le connecteur Google
+Drive de la session voit le dossier `cnp-officiel` (décision du 2026-11-03). Contrôle : `search_files`
+avec `title = 'index.csv'` doit rendre l'inventaire du dossier ; « Requested entity was not found »
+sur le dossier ⇒ le connecteur est sur un autre compte, le dire à l'humain et s'arrêter là. La
+lecture suit l'échelle texte d'abord, vision en dernier :
+[`content-ingest/references/source-drive.md`](../content-ingest/references/source-drive.md).
+**ScribeKit n'est plus un préalable** (facultatif, pour échafauder une fiche neuve). Un LOT B seul
+(profil sans-source) n'a besoin d'aucune source.
 
 Rappels de posture, valables tout du long :
 
@@ -144,8 +144,11 @@ quand même à l'étape 2 — masquer une option n'est jamais permis — mais pr
 
 ## 2. Demander — et seulement demander
 
-Présente l'état **dans l'ordre du registre** (jamais réordonné), puis pose la question avec
-`AskUserQuestion`. Règles de la question :
+Présente l'état **dans l'ordre de priorité fixé par l'humain** au
+[`PILOTAGE.md`](../../../FableEtudes/PILOTAGE.md) § 0 — depuis le 2026-11-03 : **les couples du Bac
+d'abord, matières principales en tête**, puis le reste dans l'ordre du registre. Cet ordre est celui de
+Mohamed, pas le tien : tu n'en ajoutes aucun, et à l'intérieur d'un même rang tu gardes l'ordre du
+registre. Puis pose la question avec `AskUserQuestion`. Règles de la question :
 
 - une option = un couple, libellé `<niveau> / <matière>`, description = **le fait + l'étape**
   (ex. « partielle 48 %, 4 plages non lues — [LOT A A3] compléter la fiche ») ;
@@ -154,8 +157,8 @@ Présente l'état **dans l'ordre du registre** (jamais réordonné), puis pose l
   `en-cours` est réellement fermé (réservé par une session) ; un couple sous la barre R-5 a la
   **génération** interdite, mais son étape `A3` — compléter la fiche — est parfaitement lançable et
   se libelle « ⛔ génération interdite — [LOT A A3] compléter la fiche (4 plages non lues) » ;
-- **jamais** « (recommandé) », jamais un ordre autre que celui du registre, jamais un couple
-  masqué parce qu'il te paraît moins utile ;
+- **jamais** « (recommandé) », jamais un ordre autre que celui du `PILOTAGE.md` § 0 puis du
+  registre, jamais un couple masqué parce qu'il te paraît moins utile ;
 - au-delà de 4 couples plausibles, propose ceux du niveau demandé et laisse « Other » ouvert plutôt
   que d'en écarter selon ton propre critère ;
 - l'humain peut aussi répondre un couple absent de la liste : c'est son droit, tu l'exécutes — à

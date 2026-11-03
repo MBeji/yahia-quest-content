@@ -2,16 +2,17 @@
 name: content-ingest
 description: >-
   Ingest a SOURCE document (teacher PDF, polycopié, annales, a CNP manual or guide,
-  a scan) into the content pipeline WITHOUT leaving the gated flow, via ScribeKit
-  plus agent vision OCR — and run the GISEMENT mode (étude 36):
+  a scan) into the content pipeline WITHOUT leaving the gated flow — sources from the
+  `cnp-officiel` Drive folder (references/source-drive.md) — and run the GISEMENT
+  mode (étude 36):
   official national exam papers and online devoirs turned into exercises, couple by
   couple. Use whenever the user wants to « ingérer un PDF / document source »,
   « transcrire un manuel / une annale et en faire du contenu », « exploiter les
   concours et les devoirs en ligne », or to
-  run the source→content path for the CNP corpus. Layers: ScribeKit (deterministic
-  extraction, scaffold, validated manifest, 0 LLM / 0 API key) → the AGENT
-  transcribes scanned pages with the Claude subscription (NO API key) → confront
-  the official program → hand off to the generation skills. It TRANSCRIBES and
+  run the source→content path for the CNP corpus. Layers: text layer (Drive, 0 API
+  key; ScribeKit optional, to scaffold) → AGENT vision only for what text misses
+  (NO API key) → confront the official program → hand off to the generation
+  skills. It TRANSCRIBES and
   ORCHESTRATES, it never writes content itself; output is always versioned content/
   files on a branch + gates + review, never a direct DB write. Defers to
   content-engine and content-ecole-tn.
@@ -34,11 +35,20 @@ récompenses, style, notation) et à `content-ecole-tn` (fidélité au programme
 
 ## Le partage en 3 couches
 
-1. **Déterministe — ScribeKit (0 LLM, 0 clé)** : extraction des PDF à couche-texte / Word / texte, parcours
-   de corpus, **échafaudage** au format app, **manifeste validé** (Zod `program-manifest.ts`), **ledger +
-   `AVANCEMENT.md` résumables**, QA. `scribekit` = `node YahiaAcademy/ScribeKit/dist/bin.js` (ou `npm link`).
-2. **OCR des scans — l'AGENT (vision d'abonnement, 0 clé)** : pour chaque unité `pending` (couche-texte
-   cassée), **toi l'agent** lis les pages (outil **Read** = vision, ou `render.sh`→PNG→Read pour le DPI) et
+⭐ **Depuis le 2026-11-03, la source et la lecture suivent
+[`references/source-drive.md`](references/source-drive.md)** (décision de Mohamed) : les PDF viennent
+du dossier Drive `cnp-officiel` (plus du site du CNP), et chaque page se lit au barreau le moins cher
+qui suffit — **L0** texte déjà extrait (`_txt/`), **L1** couche texte du PDF (manuels en français et en
+anglais), **L2** couche texte décodée (arabe), **L3** vision sur les PNG de `_render/`. Ce fichier prime
+sur les couches 1 et 2 ci-dessous.
+
+1. **Texte d'abord — Drive (L0-L2), ScribeKit facultatif** : `read_file_content` rend la couche texte
+   (au-delà de ~80 000 caractères, dans un fichier local à traiter en sous-agent) ; un sondage image noté
+   la valide (`source-drive.md` § 3). ScribeKit (0 LLM, 0 clé) ne sert plus qu'à **échafauder** une fiche
+   neuve au format app et valider le manifeste (`node YahiaAcademy/ScribeKit/dist/bin.js`).
+2. **Vision en dernier — l'AGENT (L3, vision d'abonnement, 0 clé)** : seulement pour ce que le texte ne
+   rend pas (formules, tableaux, figures, encadrés vocalisés, pages sans texte) et pour le sondage :
+   **toi l'agent** lis les PNG de `_render/` (outil **Read** = vision ; à défaut `render.sh`→PNG) et
    **transcris fidèlement** (chiffres 0-9, LTR, jamais d'arabo-indiens ; **signale l'illisible, n'invente
    rien**). ⚠️ **Pas de clé API** : l'API Anthropic est facturée au token et **n'utilise pas l'abonnement**
    — l'OCR passe par TA vision d'agent. Le `--provider anthropic` de ScribeKit existe pour du batch
@@ -104,8 +114,11 @@ récompenses, style, notation) et à `content-ecole-tn` (fidélité au programme
 
 ## Workflow
 
-0. **Cadrage.** Quel document ? Cible (thème / grade / matière) ? Droits (R-2) ? Localiser les PDF sources.
-1. **ScribeKit — déterministe + échafaudage.**
+0. **Cadrage.** Quel document ? Cible (thème / grade / matière) ? Droits (R-2) ? Localiser les PDF sources
+   dans le Drive `cnp-officiel` (`index.csv`, puis `search_files` par titre — `references/source-drive.md` § 1).
+0 bis. **Lecture au moindre coût** (`source-drive.md` § 2-3) : L0 → L1 → L2 → L3, sondage image noté.
+   Les étapes 1-2 ci-dessous ne servent que si l'on échafaude avec ScribeKit ou pour le barreau L3.
+1. **ScribeKit — déterministe + échafaudage (facultatif).**
    - **Scolaire (CNP)** : `scribekit app-cnp <guide.pdf> <manuel.pdf> --grade <gradeSlug> --subject <id>
 --lang <ar|fr|en> [--manuel <code> --pages <plages>] -o <programmes-officiels>` → `programme/<g>/<matière>.md`
      (échafaudage `_TEMPLATE.md` + transcription brute des sources à couche-texte en annexe) + `manifest/<g>.json`
