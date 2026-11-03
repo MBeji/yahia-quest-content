@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : le touret à meuler",
+  "questions": [
+    {
+      "prompt": "Dans le modèle de poutre du touret, en quel point s'applique l'effort FT exercé par la pièce à ébavurer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En O, dans le plan de la meule"
+        },
+        {
+          "id": "b",
+          "text": "En A, sur le palier de gauche"
+        },
+        {
+          "id": "c",
+          "text": "En G, au milieu de l'arbre"
+        },
+        {
+          "id": "d",
+          "text": "En B, dans le plan de la poulie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La pièce à ébavurer touche la meule : l'effort tangentiel FT de 110 N s'applique donc en O, dans le plan de la meule. Le palier A reçoit une réaction inconnue, le point G porte le poids, et le plan de la poulie, en B, reçoit les brins de la courroie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quels efforts font fléchir l'arbre du touret ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une poussée de la meule suivant son axe"
+        },
+        {
+          "id": "b",
+          "text": "Le couple transmis de la meule à la poulie"
+        },
+        {
+          "id": "c",
+          "text": "Les forces perpendiculaires à son axe"
+        },
+        {
+          "id": "d",
+          "text": "Le serrage de la meule sur l'arbre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La flexion vient des forces perpendiculaires à l'axe : FT, le poids, les brins de la courroie et les réactions des paliers. Le couple transmis de la meule à la poulie tord l'arbre, et aucune poussée ne s'exerce suivant l'axe, puisque toutes les projections sur x sont nulles.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'effort FT = 110 N s'exerce à 75 mm de l'axe de l'arbre. Que vaut le moment de torsion Mt ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,47 N·m"
+        },
+        {
+          "id": "b",
+          "text": "8,25 N·m"
+        },
+        {
+          "id": "c",
+          "text": "82,5 N·m"
+        },
+        {
+          "id": "d",
+          "text": "8 250 N·m"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Mt est le produit de l'effort tangentiel par le rayon de la meule : 110 × 75 = 8 250 N·mm, soit 8,25 N·m. Diviser au lieu de multiplier donnerait 1,47 ; oublier de convertir les millimètres donne 8 250, et un décalage de la virgule 82,5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Comment varie le moment de torsion Mt le long de l'arbre, entre la meule (O) et la poulie (B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nul en O, croissant jusqu'à 8,25 N·m en B"
+        },
+        {
+          "id": "b",
+          "text": "Égal à 8,25 N·m en O et nul en B"
+        },
+        {
+          "id": "c",
+          "text": "Maximal en C, là où l'arbre fléchit le plus"
+        },
+        {
+          "id": "d",
+          "text": "Constant, égal à 8,25 N·m, de O à B"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le couple entre dans l'arbre par la meule et en sort par la poulie. Entre les deux, les paliers parfaits n'ajoutent ni ne retirent aucun couple : Mt reste égal à 8,25 N·m partout. Le maximum de flexion en C n'a pas de rapport avec la torsion.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À quel type de sollicitation l'arbre du touret est-il soumis ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flexion et torsion"
+        },
+        {
+          "id": "b",
+          "text": "Traction et flexion"
+        },
+        {
+          "id": "c",
+          "text": "Traction et torsion"
+        },
+        {
+          "id": "d",
+          "text": "Compression et flexion"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les forces perpendiculaires à l'axe fléchissent l'arbre et le couple de la meule à la poulie le tord : c'est de la flexion-torsion. Aucune action n'est dirigée suivant l'axe x, donc il n'y a ni traction ni compression.",
+      "difficulty": 2
+    }
+  ]
+}

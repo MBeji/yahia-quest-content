@@ -1,0 +1,115 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : de la denture à la section creuse",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Une poutre repose sur un appui articulé A et un appui à rouleaux B. Elle porte une charge T = 1 200 N en C, avec AC = 30 mm et CB = 70 mm (schéma de principe). Que valent les réactions des appuis ?\n<svg viewBox=\"0 0 430 225\"><title>Poutre sur deux appuis, charge de 1 200 N en C, AC = 30 mm et CB = 70 mm</title><rect x=\"37\" y=\"92\" width=\"316\" height=\"8\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><polygon points=\"45 100 31 124 59 124\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><line x1=\"25\" y1=\"124\" x2=\"65\" y2=\"124\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"345 100 331 120 359 120\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><circle cx=\"338\" cy=\"123.5\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"352\" cy=\"123.5\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"325\" y1=\"128\" x2=\"365\" y2=\"128\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"135\" y1=\"28\" x2=\"135\" y2=\"80\" stroke=\"#b45309\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"135 90 130.8 80 139.2 80\" fill=\"#b45309\"/><text x=\"145\" y=\"40\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">T = 1 200 N</text><line x1=\"45\" y1=\"176\" x2=\"45\" y2=\"142\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"45 132 49.2 142 40.8 142\" fill=\"#0f6e56\"/><line x1=\"345\" y1=\"176\" x2=\"345\" y2=\"142\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"345 132 349.2 142 340.8 142\" fill=\"#0f6e56\"/><text x=\"54\" y=\"166\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R<tspan font-size=\"9\" dy=\"3\">A</tspan></text><text x=\"354\" y=\"166\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R<tspan font-size=\"9\" dy=\"3\">B</tspan></text><line x1=\"45\" y1=\"200\" x2=\"345\" y2=\"200\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"195\" x2=\"45\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"45\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><line x1=\"135\" y1=\"195\" x2=\"135\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"135\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><line x1=\"345\" y1=\"195\" x2=\"345\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"345\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"90\" y=\"194\" font-size=\"11\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"240\" y=\"194\" font-size=\"11\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">70</text><line x1=\"135\" y1=\"100\" x2=\"135\" y2=\"194\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "R_A = 360 N et R_B = 840 N"
+        },
+        {
+          "id": "b",
+          "text": "R_A = 514 N et R_B = 686 N"
+        },
+        {
+          "id": "c",
+          "text": "R_A = 600 N et R_B = 600 N"
+        },
+        {
+          "id": "d",
+          "text": "R_A = 840 N et R_B = 360 N"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "AB = 30 + 70 = 100 mm. Moments autour de A : R_B × 100 = 1 200 × 30, donc R_B = 360 N, puis R_A = 1 200 − 360 = 840 N. L'appui le plus proche de la charge, A, porte le plus. 360 N et 840 N croise les distances ; 514 N et 686 N divise par CB au lieu de AB ; 600 N et 600 N suppose la charge au milieu.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève cherche l'effort radial R sur un pignon d'angle de pression 20°, à partir de la puissance P, de la vitesse N et du rayon primitif r. Il écrit :\nligne 1 : ω = 2π × N / 60 (N en tr/min)\nligne 2 : C = P / ω\nligne 3 : T = C / r (r en mètres)\nligne 4 : R = T × sin 20°\nQuelle ligne est fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La ligne 1"
+        },
+        {
+          "id": "b",
+          "text": "La ligne 2"
+        },
+        {
+          "id": "c",
+          "text": "La ligne 3"
+        },
+        {
+          "id": "d",
+          "text": "La ligne 4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La ligne 4 est fausse : R se déduit de T par la tangente, R = T × tan 20°, car R est le côté opposé et T le côté adjacent. Le sinus relie R à l'effort total F. Les lignes 1, 2 et 3 sont correctes : conversion en rad/s, couple C = P / ω, effort tangentiel T = C / r.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une poutre repose sur un appui articulé A et un appui à rouleaux B. Elle porte T = 2 400 N en C, avec AC = 60 mm et CB = 40 mm (schéma de principe). Quel est le moment fléchissant dans la section d'abscisse x = 80 mm (entre C et B), en N·m ?\n<svg viewBox=\"0 0 430 225\"><title>Poutre sur deux appuis, charge de 2 400 N en C, AC = 60 mm et CB = 40 mm</title><rect x=\"37\" y=\"92\" width=\"316\" height=\"8\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><polygon points=\"45 100 31 124 59 124\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><line x1=\"25\" y1=\"124\" x2=\"65\" y2=\"124\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"345 100 331 120 359 120\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><circle cx=\"338\" cy=\"123.5\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"352\" cy=\"123.5\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"325\" y1=\"128\" x2=\"365\" y2=\"128\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"28\" x2=\"225\" y2=\"80\" stroke=\"#b45309\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"225 90 220.8 80 229.2 80\" fill=\"#b45309\"/><text x=\"235\" y=\"40\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">T = 2 400 N</text><line x1=\"45\" y1=\"176\" x2=\"45\" y2=\"142\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"45 132 49.2 142 40.8 142\" fill=\"#0f6e56\"/><line x1=\"345\" y1=\"176\" x2=\"345\" y2=\"142\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"345 132 349.2 142 340.8 142\" fill=\"#0f6e56\"/><text x=\"54\" y=\"166\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R<tspan font-size=\"9\" dy=\"3\">A</tspan></text><text x=\"354\" y=\"166\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R<tspan font-size=\"9\" dy=\"3\">B</tspan></text><line x1=\"45\" y1=\"200\" x2=\"345\" y2=\"200\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"195\" x2=\"45\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"45\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><line x1=\"225\" y1=\"195\" x2=\"225\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"225\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><line x1=\"345\" y1=\"195\" x2=\"345\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"345\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"135\" y=\"194\" font-size=\"11\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><text x=\"285\" y=\"194\" font-size=\"11\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><line x1=\"225\" y1=\"100\" x2=\"225\" y2=\"194\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/></svg>",
+      "answerKey": {
+        "value": 28.8,
+        "tolerance": 0.2,
+        "unit": "N·m"
+      },
+      "explanation": "AB = 100 mm ; R_A = 2 400 × 40 / 100 = 960 N. Pour 60 ≤ x ≤ 100 mm, Mf = R_A × x − T × (x − 60) = 960 × 80 − 2 400 × 20 = 76 800 − 48 000 = 28 800 N·mm = 28,8 N·m. Contrôle par la droite : R_B × 20 = 1 440 × 20 = 28 800 N·mm ✓. Le piège courant : garder R_A × x = 76,8 N·m, en oubliant T au-delà de C.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une boîte de vitesses fournit 1 200 W à un arbre qui tourne à 200 tr/min. Le pignon de cet arbre a un rayon primitif de 25 mm et un angle de pression de 20°. Quel effort radial R la denture exerce-t-elle, en N ?",
+      "answerKey": {
+        "value": 834.2,
+        "tolerance": 3,
+        "unit": "N"
+      },
+      "explanation": "ω = 2π × 200 / 60 ≈ 20,94 rad/s ; C = 1 200 / 20,94 ≈ 57,30 N·m ; T = C / r = 57,30 / 0,025 ≈ 2 291,8 N ; R = T × tan 20° ≈ 2 291,8 × 0,364 ≈ 834,2 N. Le piège courant est d'utiliser sin 20° (783,8 N), qui relie R à F et non à T.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une section creuse (D = 3/2 × d) supporte un moment idéal de flexion de 200 N·m. Son acier a une limite élastique de 600 MPa, avec un coefficient de sécurité de 2,5. Quel diamètre extérieur minimal D faut-il, en mm ?",
+      "answerKey": {
+        "value": 21.95,
+        "tolerance": 0.3,
+        "unit": "mm"
+      },
+      "explanation": "Rpe = 600 / 2,5 = 240 MPa. Avec D = 1,5 × d, I/v ≈ 0,0788 × D³. La condition 200 000 / (0,0788 × D³) ≤ 240 donne D³ ≥ 200 000 / (0,0788 × 240) ≈ 10 576, donc D ≈ 21,95 mm. Oublier le coefficient de sécurité (Re à la place de Rpe) donnerait environ 16,2 mm, un arbre trop fin.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La section creuse d'un arbre (D = 3/2 × d) est dimensionnée pour un moment idéal de flexion donné. Ce moment double et le coefficient de sécurité passe de 2 à 3, le matériau restant le même. Comment évolue le diamètre extérieur minimal D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D est multiplié par ∛2 ≈ 1,26"
+        },
+        {
+          "id": "b",
+          "text": "D est multiplié par ∛3 ≈ 1,44"
+        },
+        {
+          "id": "c",
+          "text": "D est multiplié par √3 ≈ 1,73"
+        },
+        {
+          "id": "d",
+          "text": "D est multiplié par 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "D³ est proportionnel à Mfi / Rpe = Mfi × s / Re : Mfi × 2 et s × 1,5 multiplient D³ par 3, donc D par ∛3 ≈ 1,44. Le piège courant est d'oublier s (∛2) ; multiplier par 3 suppose D proportionnel à la charge, et √3 confond le cube avec un carré.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : de la mesure au module G et au diamètre",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "221",
+    "items": [
+      "3. a-c module G",
+      "3. d comparaison à G théorique",
+      "4. diamètre de la poutre"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Le comparateur indique α = 3,2°. Quelle est cette valeur en radians, pour l'utiliser dans une formule ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,018 rad"
+        },
+        {
+          "id": "b",
+          "text": "0,056 rad"
+        },
+        {
+          "id": "c",
+          "text": "10,05 rad"
+        },
+        {
+          "id": "d",
+          "text": "183 rad"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "α (rad) = α (°) × π / 180 = 3,2 × π / 180 ≈ 0,056 rad. Le piège courant est de diviser par 180 sans multiplier par π (0,018), ou de multiplier par π seul (10,05) ou par 180 / π (183) : ces trois valeurs ne passent pas du degré au radian.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux éprouvettes de même diamètre et de même longueur, l'une en acier (G = 80 GPa), l'autre en aluminium (G = 28 GPa), reçoivent le même moment Mt. Par quel facteur l'angle α de l'aluminium est-il plus grand que celui de l'acier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,2"
+        },
+        {
+          "id": "b",
+          "text": "1,3"
+        },
+        {
+          "id": "c",
+          "text": "2,9"
+        },
+        {
+          "id": "d",
+          "text": "52"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "α = Mt × L / (G × I₀) est inversement proportionnel à G quand Mt, L et I₀ sont les mêmes : α(alu) / α(acier) = G(acier) / G(alu) = 80 / 28 ≈ 2,9. 2,2 est le rapport acier / laiton (80 / 37), pas acier / aluminium ; 1,3 vient du laiton (37 / 28) ; 52 est une différence de modules, pas un rapport.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Un essai donne un module G. Associe chaque résultat au matériau dont la valeur théorique du manuel (acier 80 GPa, laiton 37 GPa, aluminium 28 GPa) est la plus proche.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "G ≈ 36 000 N/mm²"
+        },
+        {
+          "id": "l2",
+          "text": "G ≈ 29 GPa"
+        },
+        {
+          "id": "l3",
+          "text": "G ≈ 79 000 MPa"
+        },
+        {
+          "id": "r1",
+          "text": "Acier"
+        },
+        {
+          "id": "r2",
+          "text": "Laiton"
+        },
+        {
+          "id": "r3",
+          "text": "Aluminium"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r3"
+          ],
+          [
+            "l3",
+            "r1"
+          ]
+        ]
+      },
+      "explanation": "Il faut d'abord tout exprimer dans la même unité, avec 1 GPa = 1 000 MPa = 1 000 N/mm². 36 000 N/mm² font 36 GPa, proche des 37 GPa du laiton. 29 GPa est proche des 28 GPa de l'aluminium. 79 000 MPa font 79 GPa, proche des 80 GPa de l'acier.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Éprouvette en laiton de diamètre d = 8 mm, longueur libre X = 400 mm. La charge F = 17,5 N est accrochée à un levier de r = 120 mm, et le comparateur indique α = 3,3°. Quel module G en déduit-on, en N/mm² ?",
+      "answerKey": {
+        "value": 36270,
+        "tolerance": 150,
+        "unit": "N/mm²"
+      },
+      "explanation": "Mt = F × r = 17,5 × 120 = 2 100 N·mm. I₀ = π × 8⁴ / 32 ≈ 402,1 mm⁴. α = 3,3 × π / 180 ≈ 0,0576 rad. Donc G = Mt × X / (α × I₀) = 2 100 × 400 / (0,0576 × 402,1) ≈ 36270 N/mm², soit 36,3 GPa, proche des 37 GPa du laiton. Sans convertir α en radians, on trouverait 633 N/mm², soit 57 fois trop peu.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une poutre pleine, de section circulaire, est soumise à Mt = 1 608 N·mm. Sa limite élastique au cisaillement est Reg = 48 N/mm² et le coefficient de sécurité vaut s = 3. Quel diamètre minimal d, en mm, lui permet de résister en toute sécurité ?",
+      "answerKey": {
+        "value": 8,
+        "tolerance": 0.1,
+        "unit": "mm"
+      },
+      "explanation": "Rpg = Reg / s = 48 / 3 = 16 N/mm². La condition τmax ≤ Rpg avec τmax = 16 × Mt / (π × d³) donne d³ ≥ 16 × 1 608 / (π × 16) = 1 608 / π ≈ 511,8 mm³, donc d ≥ 8,0 mm. Contrôle : pour d = 8 mm, τmax = 16 × 1 608 / (π × 512) ≈ 15,99 N/mm², juste sous Rpg = 16.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La charge F = 22,5 N est suspendue à un levier de r = 150 mm, sur une éprouvette pleine de diamètre d = 10 mm. Quelle est la contrainte maximale τmax, en N/mm² ?",
+      "answerKey": {
+        "value": 17.2,
+        "tolerance": 0.1,
+        "unit": "N/mm²"
+      },
+      "explanation": "Mt = F × r = 22,5 × 150 = 3 375 N·mm. Pour une section circulaire pleine, τmax = 16 × Mt / (π × d³) = 16 × 3 375 / (π × 1 000) ≈ 17,2 N/mm², atteinte au bord de la section. Avec le diamètre à la place du rayon, on trouverait le double (34,4).",
+      "difficulty": 3
+    }
+  ]
+}

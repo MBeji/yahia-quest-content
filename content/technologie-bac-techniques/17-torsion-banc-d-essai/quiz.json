@@ -1,0 +1,97 @@
+{
+  "title": "Test de compréhension ⭐ : le banc d'essai de torsion",
+  "questions": [
+    {
+      "prompt": "Dans le thème « Comportement des solides déformables », quelle séquence étudie-t-on avec le banc d'essai de ce chapitre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La flexion plane simple"
+        },
+        {
+          "id": "b",
+          "text": "La torsion simple"
+        },
+        {
+          "id": "c",
+          "text": "Les sollicitations composées"
+        },
+        {
+          "id": "d",
+          "text": "La traction simple"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le banc vrille une éprouvette : c'est la séquence de la torsion simple, la première du thème. La flexion plane simple et les sollicitations composées sont les deux séquences suivantes, et la traction simple ne figure pas parmi les trois séquences de la carte du thème.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une charge F = 12,5 N est accrochée à un levier de longueur r = 200 mm. Quel est le moment de torsion Mt, en N·mm ?",
+      "answerKey": {
+        "value": 2500,
+        "unit": "N·mm"
+      },
+      "explanation": "Mt = F × r = 12,5 × 200 = 2500 N·mm. La force est en newtons et la longueur en millimètres : le produit sort directement en N·mm, soit 2,5 N·m.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le domaine élastique, on double le moment de torsion appliqué à une éprouvette. Que devient l'angle α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est divisé par deux"
+        },
+        {
+          "id": "b",
+          "text": "Il reste le même"
+        },
+        {
+          "id": "c",
+          "text": "Il est multiplié par quatre"
+        },
+        {
+          "id": "d",
+          "text": "Il double"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dans le domaine élastique, α est proportionnel à Mt (Mt = k × α) : doubler Mt double α. Un angle qui ne bouge pas ou qui diminue contredirait l'effet de la charge, et le facteur quatre serait celui d'un carré, absent de cette loi.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une section circulaire sollicitée en torsion, où la contrainte tangentielle τ est-elle maximale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au centre de la section (ρ = 0)"
+        },
+        {
+          "id": "b",
+          "text": "À mi-rayon (ρ = R / 2)"
+        },
+        {
+          "id": "c",
+          "text": "Au bord de la section (ρ = R)"
+        },
+        {
+          "id": "d",
+          "text": "Partout la même valeur (ρ quelconque)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "τ = (Mt / I₀) × ρ est proportionnelle à ρ : elle est nulle au centre et maximale au bord, où ρ = R. À mi-rayon elle ne vaut que la moitié de τmax, et elle n'est jamais la même en tout point.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un matériau a une limite élastique au cisaillement Reg = 60 N/mm². Avec un coefficient de sécurité s = 4, quelle est la résistance pratique Rpg, en N/mm² ?",
+      "answerKey": {
+        "value": 15,
+        "unit": "N/mm²"
+      },
+      "explanation": "Rpg = Reg / s = 60 / 4 = 15 N/mm². On divise par s pour garder une marge de sécurité ; garder Reg (60) ou multiplier par s (240) supprimerait cette marge.",
+      "difficulty": 2
+    }
+  ]
+}

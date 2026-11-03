@@ -1,0 +1,111 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : le touret sous le scalpel",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "235-238",
+    "items": [
+      "A.1 (brins de la courroie)",
+      "A.3 (réactions)",
+      "B.5 (moments fléchissants)",
+      "B.10 (diamètre minimal)"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Pour le touret, un élève écrit : « (T − t) × 22 = 8 250, donc T − t = 375 N ; comme T = 4 t, T = 4 × 375 = 1 500 N ». Quelle est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a confondu T − t avec t, alors que 3 t = 375"
+        },
+        {
+          "id": "b",
+          "text": "Il a oublié de convertir 8 250 N·mm en N·m"
+        },
+        {
+          "id": "c",
+          "text": "Il a divisé par rp, alors qu'il fallait diviser par rm"
+        },
+        {
+          "id": "d",
+          "text": "Il a retranché T et t, alors qu'il fallait les additionner"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chasse à l'erreur : la clé désigne l'erreur de l'élève. Le calcul de T − t = 375 N est juste, mais 375 N est la différence des brins, pas t : avec T = 4 t, 3 t = 375, donc t = 125 N et T = 500 N. La conversion n'est pas nécessaire (N·mm divisé par mm donne des N), le bon rayon est bien celui de la poulie, et c'est bien la différence qui produit le couple.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour une variante du touret (valeurs d'illustration), l'équilibre des moments en A donne RA = −440 N, l'axe y étant dirigé vers le haut. Que signifie ce signe négatif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le calcul est faux, car une réaction ne peut pas être négative"
+        },
+        {
+          "id": "b",
+          "text": "Le palier A est inactif, la réaction réelle est nulle"
+        },
+        {
+          "id": "c",
+          "text": "Le sens supposé était faux : RA est dirigée vers le bas"
+        },
+        {
+          "id": "d",
+          "text": "RA vaut 440 N vers le haut, le signe n'a pas de sens physique"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a supposé RA vers le haut ; le résultat négatif montre que la réaction réelle est de sens contraire, donc dirigée vers le bas, avec une intensité de 440 N. Une réaction négative n'est pas une erreur : c'est le signe qui indique le sens. Le palier A n'est pas inactif puisque 440 N n'est pas nul.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Même touret, mais la pièce appuie plus fort : FT = 150 N (valeur d'illustration). Avec rm = 75 mm, rp = 22 mm et T = 4 t, quelle est la somme T + t, en N ?",
+      "answerKey": {
+        "value": 852.3,
+        "unit": "N",
+        "tolerance": 0.5
+      },
+      "explanation": "Mt = 150 × 75 = 11 250 N·mm. L'équilibre de rotation donne T − t = 11 250 / 22 ≈ 511,4 N. Avec T = 4 t, 3 t = 511,4, donc t ≈ 170,5 N et T ≈ 681,8 N. La somme T + t vaut alors 5 t, soit environ 852,3 N.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur le touret du cours, on suppose (valeur d'illustration) T + t = 800 N ; FT = 110 N, P = 30 N et les cotes sont inchangées. Quelle est la réaction RC du palier C, en N ?",
+      "answerKey": {
+        "value": 1160.2,
+        "unit": "N",
+        "tolerance": 0.5
+      },
+      "explanation": "On écrit les moments en A, RA ayant un bras nul : 110 × (0 − 100) + RC × 240 − 30 × 115 − 800 × 330 = 0, soit −11 000 + 240 RC − 3 450 − 264 000 = 0. Donc 240 RC = 278 450 et RC ≈ 1160,2 N.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Avec RC ≈ 919,6 N, quelle est la valeur absolue du moment fléchissant à l'abscisse x = 300 mm, en N·m ?",
+      "answerKey": {
+        "value": 44.47,
+        "unit": "N·m",
+        "tolerance": 0.05
+      },
+      "explanation": "À droite de la coupure x = 300 agissent RC, à 40 mm, et T + t, à 130 mm : |Mf| = |919,6 × 40 − 625 × 130| = |36 784 − 81 250| = 44 466 N·mm, soit 44,47 N·m. En regardant à gauche, avec FT, RA et P, on retrouve la même valeur.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "En une section de l'arbre d'un autre touret, Mf = 12 N·m et Mt = 5 N·m (λ = 0,5, Rpe = 80 MPa, valeurs d'illustration). Quel est le diamètre minimal de l'arbre plein, en mm ?",
+      "answerKey": {
+        "value": 11.83,
+        "unit": "mm",
+        "tolerance": 0.05
+      },
+      "explanation": "Le moment idéal vaut Mfi = √(12² + 5²) = √169 = 13 N·m = 13 000 N·mm. Alors d³ ≥ 32 × 13 000 / (π × 80) = 416 000 / 251,3 ≈ 1 655 mm³, donc d ≥ 11,83 mm.",
+      "difficulty": 3
+    }
+  ]
+}

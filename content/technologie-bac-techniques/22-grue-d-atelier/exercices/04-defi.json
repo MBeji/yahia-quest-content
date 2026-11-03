@@ -1,0 +1,151 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : comparer, enchaîner, justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Un élève vérifie un tube 80 × 80 × 5 (S = 1 500 mm², IGz / v = 35 312,5 mm³) en acier de limite élastique Re = 240 MPa avec s = 3, sous N = 45 000 N et Mfz max = 2 000 N·m :\nligne 1 : Rpe = 240 / 3 = 80 MPa ;\nligne 2 : σN = 45 000 / 1 500 = 30 MPa ;\nligne 3 : σf = 2 000 000 / 35 312,5 ≈ 56,64 MPa ;\nligne 4 : σéq = σf − σN ≈ 26,64 MPa, inférieur à 80 : le tube convient.\nQuelle ligne est fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La ligne 1"
+        },
+        {
+          "id": "b",
+          "text": "La ligne 2"
+        },
+        {
+          "id": "c",
+          "text": "La ligne 3"
+        },
+        {
+          "id": "d",
+          "text": "La ligne 4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La ligne 4 est fausse : dans la fibre la plus tendue, la traction et la flexion sont toutes deux positives et s'additionnent, σéq = 30 + 56,64 ≈ 86,64 MPa. Cette valeur dépasse Rpe = 80 MPa : le tube ne convient pas. Les lignes 1, 2 et 3 sont justes. C'est une chasse à l'erreur : la bonne réponse est la ligne fausse, et la soustraction a fait croire à un tube sûr alors qu'il ne l'est pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On étudie des tubes carrés d'épaisseur 4 mm. Le tube 70 × 70 × 4 supporte N = 6 000 N et Mfz max = 1 500 N·m dans sa section la plus sollicitée. Quelle est sa contrainte normale maximale σN + σf, en MPa ?",
+      "answerKey": {
+        "value": 73.9,
+        "tolerance": 0.3,
+        "unit": "MPa"
+      },
+      "explanation": "Le vide a pour côté 70 − 8 = 62 mm. S = 70² − 62² = 4 900 − 3 844 = 1 056 mm². IGz = (70⁴ − 62⁴) / 12 ≈ 769 472 mm⁴ et v = 35 mm, donc IGz / v ≈ 21 985 mm³. σN = 6 000 / 1 056 ≈ 5,68 MPa et σf = 1 500 000 / 21 985 ≈ 68,23 MPa ; leur somme vaut ≈ 73,9 MPa. Oublier le vide (carré plein) donnerait une contrainte beaucoup trop faible.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec les mêmes efforts (N = 6 000 N et Mfz max = 1 500 N·m) et une résistance pratique Rpe = 85 MPa, quel est le plus petit tube de cette liste d'épaisseur 4 mm qui convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "60 × 60 × 4"
+        },
+        {
+          "id": "b",
+          "text": "70 × 70 × 4"
+        },
+        {
+          "id": "c",
+          "text": "80 × 80 × 4"
+        },
+        {
+          "id": "d",
+          "text": "90 × 90 × 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule σN + σf pour chaque tube : 60 × 60 × 4 donne 6,70 + 95,60 ≈ 102,3 MPa (refusé) ; 70 × 70 × 4 donne ≈ 73,9 MPa ; 80 × 80 × 4 donne ≈ 56,0 MPa ; 90 × 90 × 4 donne ≈ 44,1 MPa. Les trois derniers conviennent, et on garde le plus petit, donc le plus léger : 70 × 70 × 4. Choisir le 90 × 90 × 4 par précaution coûte 30 % d'aire de plus (1 376 contre 1 056 mm²) sans besoin.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur les sollicitations composées sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En flexion–traction, σN et σf s'additionnent parce que ce sont deux contraintes normales"
+        },
+        {
+          "id": "b",
+          "text": "En flexion–torsion, on additionne la contrainte normale σ et la contrainte tangentielle τ"
+        },
+        {
+          "id": "c",
+          "text": "Avec un effort normal N négatif, la condition ‖N‖ / S + ‖Mfz max‖ / (IGz / v) ≤ Rpe s'écrit de la même façon"
+        },
+        {
+          "id": "d",
+          "text": "Si N = 0, la condition de la flexion–traction devient celle de la flexion simple"
+        },
+        {
+          "id": "e",
+          "text": "En flexion–torsion d'un acier, le moment idéal vaut Mf + Mt"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Deux contraintes normales ont la même direction et s'additionnent ; avec N négatif, la fibre la plus comprimée porte la même somme en valeur absolue ; si N = 0 il ne reste que le terme de flexion. En flexion–torsion, σ est normale et τ tangentielle : elles ne s'additionnent pas, et le moment idéal d'un acier est √(Mf² + Mt²), plus petit que la somme Mf + Mt.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Classe ces cinq fibres de la moins chargée à la plus chargée, d'après leur contrainte normale totale σN + σf.",
+      "options": [
+        {
+          "id": "c",
+          "text": "σN = 0 MPa et σf = 52 MPa"
+        },
+        {
+          "id": "a",
+          "text": "σN = 25 MPa et σf = 20 MPa"
+        },
+        {
+          "id": "e",
+          "text": "σN = 30 MPa et σf = 28 MPa"
+        },
+        {
+          "id": "b",
+          "text": "σN = 10 MPa et σf = 40 MPa"
+        },
+        {
+          "id": "d",
+          "text": "σN = 5 MPa et σf = 48 MPa"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "Les contraintes totales valent 45, 50, 52, 53 et 58 MPa. L'ordre se fait sur la somme des deux contraintes, non sur la seule flexion (qui donnerait 20, 28, 40, 48 puis 52) ni sur la seule traction : la fibre sans traction (52 MPa) n'est ni la moins ni la plus chargée.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un tube carré d'épaisseur 5 mm, en acier S355 avec s = 4 (Rpe = 88,75 MPa), supporte N = 4 861 N et Mfz max = 2 492 N·m. Quel est le plus petit côté extérieur B entier qui convient, en mm ?",
+      "answerKey": {
+        "value": 74,
+        "unit": "mm"
+      },
+      "explanation": "On cherche B tel que σN + σf ≤ 88,75 MPa avec S = B² − (B − 10)² et IGz / v = (B⁴ − (B − 10)⁴) / (6 × B). Pour B = 73 : S = 1 360 mm², IGz / v ≈ 28 871 mm³ et σN + σf ≈ 3,57 + 86,32 ≈ 89,9 MPa, trop élevé. Pour B = 74 : S = 1 380 mm², IGz / v ≈ 29 751 mm³ et σN + σf ≈ 3,52 + 83,76 ≈ 87,3 MPa, acceptable. Le plus petit côté entier est donc 74 mm ; c'est entre les tubes de 70 et 80 mm du catalogue du manuel.",
+      "difficulty": 3
+    }
+  ]
+}

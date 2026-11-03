@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : la flexion sur le banc d'essais",
+  "questions": [
+    {
+      "prompt": "Sur le banc de flexion, que représente la portée L ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La longueur totale de l'éprouvette"
+        },
+        {
+          "id": "b",
+          "text": "Le déplacement vertical du milieu, lu au comparateur à cadran"
+        },
+        {
+          "id": "c",
+          "text": "La distance de F à l'appui B"
+        },
+        {
+          "id": "d",
+          "text": "La distance entre les appuis A et B"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La portée est la distance entre les deux appuis A et B : c'est elle qu'on règle sur le banc. La longueur de l'éprouvette est une autre grandeur (600 mm pour les barres du banc), le déplacement vertical lu au comparateur est la flèche f, et la distance de la charge à un appui n'est pas la portée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La charge F double, tout le reste (portée, éprouvette) étant inchangé. Que devient la flèche f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est multipliée par 8"
+        },
+        {
+          "id": "b",
+          "text": "Elle reste la même"
+        },
+        {
+          "id": "c",
+          "text": "Elle est multipliée par 2"
+        },
+        {
+          "id": "d",
+          "text": "Elle est multipliée par 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La flèche est proportionnelle à la charge : f = k × F. Doubler F multiplie donc f par 2, par exemple de 0,176 mm à 0,352 mm. Elle ne reste pas la même, et elle n'est multipliée ni par 4 ni par 8 : ces facteurs viendraient d'un carré ou d'un cube, or la flèche suit la charge à la puissance 1 (c'est la portée qui compte au cube).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une poutre sur deux appuis porte F = 10 N exactement en son milieu. Quelle est la réaction de chaque appui ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5 N"
+        },
+        {
+          "id": "b",
+          "text": "5 N"
+        },
+        {
+          "id": "c",
+          "text": "10 N"
+        },
+        {
+          "id": "d",
+          "text": "20 N"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Charge au milieu : les deux appuis la partagent à égalité, RA = RB = F / 2 = 5 N, et leur somme redonne bien 10 N. Une réaction de 10 N par appui porterait 20 N au total, et 2,5 N par appui n'en porterait que 5 N.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une barre de section 20 × 6 mm est posée à plat, la charge agissant sur la face de 20 mm de large. Que vaut son moment quadratique IGz ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "120 mm⁴"
+        },
+        {
+          "id": "b",
+          "text": "360 mm⁴"
+        },
+        {
+          "id": "c",
+          "text": "4 000 mm⁴"
+        },
+        {
+          "id": "d",
+          "text": "4 320 mm⁴"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À plat, la dimension dans le sens de la charge est h = 6 mm et b = 20 mm : IGz = b × h³ / 12 = 20 × 216 / 12 = 360 mm⁴. Prendre h = 20 mm donne 4 000 mm⁴ (la barre sur chant), oublier la division par 12 donne 4 320, et multiplier b par h donne l'aire de la section, 120, qui n'est pas un moment quadratique.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On rapproche les appuis de 400 mm à 200 mm, même éprouvette et même charge au milieu. Que devient la flèche ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est divisée par 2"
+        },
+        {
+          "id": "b",
+          "text": "Elle est divisée par 4"
+        },
+        {
+          "id": "c",
+          "text": "Elle est divisée par 8"
+        },
+        {
+          "id": "d",
+          "text": "Elle est divisée par 16"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La flèche est proportionnelle à L³ : la portée est divisée par 2, donc la flèche par 2³ = 8. Diviser par 2 serait vrai si f dépendait de L seulement, diviser par 4 correspondrait à L², et diviser par 16 à L⁴.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit Re la limite élastique et s le coefficient de sécurité. Quelle condition exprime la résistance d'une poutre en flexion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "σmax ≤ Re × s"
+        },
+        {
+          "id": "b",
+          "text": "σmax ≤ s / Re"
+        },
+        {
+          "id": "c",
+          "text": "σmax ≤ Re"
+        },
+        {
+          "id": "d",
+          "text": "σmax ≤ Re / s"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La poutre résiste si la contrainte maximale ne dépasse pas la résistance pratique : σmax ≤ Rpe = Re / s. Comparer à Re seul oublie la marge de sécurité, multiplier Re par s l'agrandirait au lieu de la réduire, et inverser le rapport, s / Re, ne donne même pas une contrainte.",
+      "difficulty": 2
+    }
+  ]
+}

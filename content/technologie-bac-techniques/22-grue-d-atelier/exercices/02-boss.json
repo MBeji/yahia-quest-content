@@ -1,0 +1,102 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : de la charge au tube de la potence",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une potence d'atelier a une flèche ABC (poids négligés, liaisons parfaites, schéma de principe) : AB = 300 mm, AC = 1 200 mm. Le vérin pousse en B perpendiculairement à la flèche. La charge P = 2 000 N en C est verticale, et la flèche est inclinée de 60° sur l'horizontale (la figure est dessinée dans le repère lié à la flèche, où P fait 60° avec la perpendiculaire à la flèche). Quel est l'effort FV du vérin, en N ?\n<svg viewBox=\"0 0 300 210\"><title>Modèle d'une flèche de potence : poutre horizontale ABC, vérin perpendiculaire en B, charge de 2000 N en C</title><line x1=\"45\" y1=\"100\" x2=\"285\" y2=\"100\" stroke=\"#0f6e56\" stroke-width=\"8\"/><line x1=\"45\" y1=\"100\" x2=\"285\" y2=\"100\" stroke=\"#bbf7d0\" stroke-width=\"3.5\"/><line x1=\"105\" y1=\"100\" x2=\"105\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"3\"/><polygon points=\"105,30 109.5,39 100.5,39\" fill=\"#2563eb\"/><path d=\"M 113 100 L 113 92 L 105 92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"285\" y1=\"100\" x2=\"285\" y2=\"155\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"285\" y1=\"100\" x2=\"227.84\" y2=\"133\" stroke=\"#ef4444\" stroke-width=\"3\"/><polygon points=\"227.84,133 233.39,124.6 237.89,132.4\" fill=\"#ef4444\"/><path d=\"M 285 136 A 36 36 0 0 1 253.82 118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"45\" y1=\"150\" x2=\"105\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"45\" y1=\"146\" x2=\"45\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"105\" y1=\"146\" x2=\"105\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"45\" y1=\"172\" x2=\"285\" y2=\"172\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"45\" y1=\"168\" x2=\"45\" y2=\"176\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"285\" y1=\"168\" x2=\"285\" y2=\"176\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"45\" cy=\"100\" r=\"5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"105\" cy=\"100\" r=\"4\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"285\" cy=\"100\" r=\"4\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"43\" y=\"88\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">A</text><text x=\"117\" y=\"116\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">B</text><text x=\"289\" y=\"88\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">C</text><text x=\"125\" y=\"48\" text-anchor=\"middle\" fill=\"#2563eb\" font-size=\"14\">FV</text><text x=\"229\" y=\"160\" text-anchor=\"middle\" fill=\"#ef4444\" font-size=\"12\">P = 2000 N</text><text x=\"279\" y=\"140\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">60°</text><text x=\"75\" y=\"144\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">300</text><text x=\"165\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">1200</text></g></svg>",
+      "answerKey": {
+        "value": 4000,
+        "tolerance": 5,
+        "unit": "N"
+      },
+      "explanation": "On écrit l'équilibre des moments en A. La charge fait 60° avec la perpendiculaire à la flèche : sa part perpendiculaire vaut 2 000 × cos 60° = 1 000 N, à 1 200 mm de A. FV est perpendiculaire à la flèche, à 300 mm de A. FV × 300 = 1 000 × 1 200, donc FV = 4000 N. Prendre le sinus pour la part perpendiculaire donnerait 2 000 × 0,866 × 4 ≈ 6 928 N.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Même potence (FV = 4 000 N, perpendiculaire à la flèche ; P = 2 000 N fait 60° avec la perpendiculaire à la flèche). Quelle est la composante FAy de l'action du pied A sur l'axe perpendiculaire à la flèche, orienté vers le haut, en N (signe compris) ?",
+      "answerKey": {
+        "value": -3000,
+        "tolerance": 2,
+        "unit": "N"
+      },
+      "explanation": "La somme des composantes sur y est nulle : FAy + FV − P × cos 60° = 0, donc FAy = −4000 + 1000 = −3000 N. Le signe négatif dit que le pied est tiré vers le bas. Oublier la part de la charge sur y (FAy = −4 000 N) revient à croire que le pied porte tout l'effort du vérin.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Même potence (FV = 4 000 N, perpendiculaire à la flèche). Quelle est la sollicitation de la section située entre A et B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flexion–compression : N négatif et Mfz non nul"
+        },
+        {
+          "id": "b",
+          "text": "Flexion–traction : N positif et Mfz non nul"
+        },
+        {
+          "id": "c",
+          "text": "Compression simple : N négatif et Mfz nul, sans flexion"
+        },
+        {
+          "id": "d",
+          "text": "Flexion simple : N nul et Mfz non nul"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La charge a une part selon la flèche : 2 000 × sin 60° ≈ 1 732 N, dirigée vers A. FV est perpendiculaire à la flèche et n'y contribue pas, donc le pied pousse la flèche avec FAx ≈ +1 732 N et N = −FAx ≈ −1 732 N : compression. Mfz = 3 000 × x n'est pas nul : flexion–compression. Dire N nul oublie que la charge, verticale, n'est pas perpendiculaire à une flèche inclinée ; dire Mfz nul oublie que FA et FV, qui ne sont pas alignées, plient la flèche.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Même potence (FAy = −3 000 N, AB = 300 mm). Quelle est la valeur maximale du moment fléchissant Mfz, en N·m ?",
+      "answerKey": {
+        "value": 900,
+        "tolerance": 1,
+        "unit": "N·m"
+      },
+      "explanation": "Dans le tronçon AB, seule FA agit à gauche de la coupure : Mfz = 3 000 × x. Le maximum est en B, à x = 300 mm : 3 000 × 300 = 900 000 N·mm = 900 N·m. Le contrôle par la droite donne le même résultat : 1 000 × 900 = 900 000 N·mm, avec la part perpendiculaire de P et la distance BC = 900 mm.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La flèche de la même potence est un tube carré 60 × 60 × 5 (S = 1 100 mm², IGz / v ≈ 18 639 mm³). Dans la section B, côté A, on a N = 1 732 N (compression) et Mfz = 900 N·m. Quelle est la contrainte normale maximale dans cette section, en MPa ?",
+      "answerKey": {
+        "value": 49.9,
+        "tolerance": 0.3,
+        "unit": "MPa"
+      },
+      "explanation": "‖N‖ / S = 1 732 / 1 100 ≈ 1,57 MPa. Mfz / (IGz / v) = 900 000 / 18 639 ≈ 48,29 MPa (le moment en N·mm). La somme des valeurs absolues vaut ≈ 49,9 MPa : dans la fibre la plus comprimée, la compression et la flexion s'additionnent. Soustraire donnerait 46,7 MPa, qui sous-estime la contrainte ; oublier ‖N‖ / S donnerait 48,3 MPa.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève calcule les caractéristiques d'un tube 70 × 70 × 6 :\nligne 1 : le vide a pour côté 70 − 12 = 58 mm ;\nligne 2 : S = 70² − 58² = 1 536 mm² ;\nligne 3 : IGz = (70⁴ − 58⁴) / 12 ≈ 1 057 792 mm⁴ ;\nligne 4 : v = 70 mm, donc IGz / v ≈ 15 111 mm³.\nQuelle ligne est fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La ligne 1"
+        },
+        {
+          "id": "b",
+          "text": "La ligne 2"
+        },
+        {
+          "id": "c",
+          "text": "La ligne 3"
+        },
+        {
+          "id": "d",
+          "text": "La ligne 4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La ligne 4 est fausse : v est la distance de G à la fibre la plus éloignée, c'est-à-dire B / 2 = 35 mm, et non le côté entier. Avec v = 35 mm, IGz / v ≈ 1 057 792 / 35 ≈ 30 223 mm³, le double. Les lignes 1, 2 et 3 sont justes : vide de 58 mm, S = 4 900 − 3 364 = 1 536 mm² et IGz = (24 010 000 − 11 316 496) / 12 ≈ 1 057 792 mm⁴. Cette question est une chasse à l'erreur : la bonne réponse est la ligne fausse.",
+      "difficulty": 3
+    }
+  ]
+}

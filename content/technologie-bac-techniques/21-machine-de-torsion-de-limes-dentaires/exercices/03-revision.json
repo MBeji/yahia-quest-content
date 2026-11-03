@@ -1,0 +1,148 @@
+{
+  "title": "⭐⭐ Révision (type examen) : de la puissance à la contrainte",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Pourquoi dit-on que le pignon arbré est soumis à une sollicitation composée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que l'arbre est creux et que son acier est allié"
+        },
+        {
+          "id": "b",
+          "text": "Parce que l'arbre repose sur plus d'un appui"
+        },
+        {
+          "id": "c",
+          "text": "Parce qu'une section subit flexion et torsion à la fois"
+        },
+        {
+          "id": "d",
+          "text": "Parce que l'effort de la denture se décompose en deux composantes, T et R"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une sollicitation composée est la combinaison de plusieurs sollicitations simples dans une même section : ici la flexion (Mf non nul) et la torsion (Mt non nul). Le fait que l'arbre soit creux, qu'il ait deux appuis ou que l'effort se décompose en T et R ne définit pas une sollicitation composée.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un pignon a un diamètre primitif de 70 mm et transmet un couple de 42 N·m. Quel est l'effort tangentiel T exercé par la denture, en N ?",
+      "answerKey": {
+        "value": 1200,
+        "unit": "N"
+      },
+      "explanation": "Le rayon est la moitié du diamètre : r = 35 mm = 0,035 m. Alors T = C / r = 42 / 0,035 = 1200 N. Utiliser le diamètre à la place du rayon donnerait 600 N, deux fois trop peu.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Dans le modèle du pignon arbré (couple entrant par la denture en C et ressortant en D, charge T en C, appuis A et B), associe chaque moment à son allure.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Mt entre C et D"
+        },
+        {
+          "id": "l2",
+          "text": "Mf entre A et C"
+        },
+        {
+          "id": "l3",
+          "text": "Mf entre C et B"
+        },
+        {
+          "id": "l4",
+          "text": "Mf entre B et D"
+        },
+        {
+          "id": "r1",
+          "text": "Constant et non nul"
+        },
+        {
+          "id": "r2",
+          "text": "Droite croissante, de 0 jusqu'au maximum"
+        },
+        {
+          "id": "r3",
+          "text": "Droite décroissante, du maximum jusqu'à 0"
+        },
+        {
+          "id": "r4",
+          "text": "Nul sur tout le tronçon"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Entre C et D, le couple C39 passe sans changer : Mt est constant. Entre A et C, Mf = R_A × x croît en ligne droite de 0 jusqu'à son maximum en C. Entre C et B, Mf = R_A × x − T × (x − 40) décroît en ligne droite jusqu'à 0 en B. Entre B et D, aucune force n'agit : Mf reste nul.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une poutre repose sur un appui articulé A et un appui à rouleaux B, distants de 150 mm. Elle porte T = 1 800 N en C, à 50 mm de A (schéma de principe). Quel est le moment fléchissant en C, en N·m ?\n<svg viewBox=\"0 0 430 225\"><title>Poutre sur deux appuis distants de 150 mm, charge de 1 800 N en C à 50 mm de A</title><rect x=\"37\" y=\"92\" width=\"316\" height=\"8\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><polygon points=\"45 100 31 124 59 124\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><line x1=\"25\" y1=\"124\" x2=\"65\" y2=\"124\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"345 100 331 120 359 120\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><circle cx=\"338\" cy=\"123.5\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"352\" cy=\"123.5\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"325\" y1=\"128\" x2=\"365\" y2=\"128\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"145\" y1=\"28\" x2=\"145\" y2=\"80\" stroke=\"#b45309\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"145 90 140.8 80 149.2 80\" fill=\"#b45309\"/><text x=\"155\" y=\"40\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">T = 1 800 N</text><line x1=\"45\" y1=\"176\" x2=\"45\" y2=\"142\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"45 132 49.2 142 40.8 142\" fill=\"#0f6e56\"/><line x1=\"345\" y1=\"176\" x2=\"345\" y2=\"142\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"345 132 349.2 142 340.8 142\" fill=\"#0f6e56\"/><text x=\"54\" y=\"166\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R<tspan font-size=\"9\" dy=\"3\">A</tspan></text><text x=\"354\" y=\"166\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R<tspan font-size=\"9\" dy=\"3\">B</tspan></text><line x1=\"45\" y1=\"200\" x2=\"345\" y2=\"200\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"195\" x2=\"45\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"45\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><line x1=\"145\" y1=\"195\" x2=\"145\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"145\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><line x1=\"345\" y1=\"195\" x2=\"345\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"345\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"95\" y=\"194\" font-size=\"11\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">50</text><text x=\"245\" y=\"194\" font-size=\"11\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">100</text><line x1=\"145\" y1=\"100\" x2=\"145\" y2=\"194\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/></svg>",
+      "answerKey": {
+        "value": 60,
+        "unit": "N·m"
+      },
+      "explanation": "CB = 100 mm. R_A = T × CB / AB = 1 800 × 100 / 150 = 1 200 N. Mf(C) = R_A × AC = 1 200 × 50 = 60 000 N·mm = 60 N·m. Calculer T × AC = 90 N·m oublie la réaction de B ; utiliser R_B = 600 N avec AC donnerait 30 N·m, un bras de levier mal choisi.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle condition de résistance doit vérifier une section creuse soumise à un moment idéal de flexion Mfi, dans un acier de limite élastique Re avec un coefficient de sécurité s ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mfi / (I/v) ≤ Re / s"
+        },
+        {
+          "id": "b",
+          "text": "Mfi / (I/v) ≤ Re × s"
+        },
+        {
+          "id": "c",
+          "text": "Mfi × (I/v) ≤ Re / s"
+        },
+        {
+          "id": "d",
+          "text": "Mfi / (I/v) ≥ Re / s"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La contrainte maximale Mfi / (I/v) doit rester inférieure ou égale à la résistance pratique Re / s. Multiplier Re par s accepte une contrainte supérieure à la limite élastique ; multiplier Mfi par I/v ne donne pas une contrainte ; le signe ≥ décrirait une section qui ne tient pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans la section dangereuse d'un arbre en acier (λ = 0,5), le moment fléchissant vaut 64 N·m. Le couple est transmis par un effort tangentiel de 1 600 N sur un pignon de rayon primitif 30 mm. Quel est le moment idéal de flexion, en N·m ?",
+      "answerKey": {
+        "value": 80,
+        "unit": "N·m"
+      },
+      "explanation": "Le moment de torsion vaut Mt = T × r = 1 600 × 0,03 = 48 N·m (rayon en mètres). Avec λ = 0,5, Mfi = √(Mf² + Mt²) = √(4 096 + 2 304) = √6 400 = 80 N·m. Additionner 64 et 48 donnerait 112 N·m, et oublier de calculer Mt laisserait 64 N·m.",
+      "difficulty": 2
+    }
+  ]
+}

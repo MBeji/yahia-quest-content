@@ -1,0 +1,122 @@
+{
+  "title": "Test de compréhension ⭐ : la machine de torsion, du couple à la section",
+  "questions": [
+    {
+      "prompt": "Une boîte de vitesses de rendement η = 0,95 reçoit 2 000 W de son moteur. Quelle puissance transmet-elle à son arbre de sortie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 W"
+        },
+        {
+          "id": "b",
+          "text": "1 900 W"
+        },
+        {
+          "id": "c",
+          "text": "2 000 W"
+        },
+        {
+          "id": "d",
+          "text": "2 105 W"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rendement donne la part de la puissance reçue qui arrive en sortie : P = η × Pm = 0,95 × 2 000 = 1 900 W. Les 100 W d'écart sont les pertes, pas la puissance transmise ; 2 000 W supposerait un rendement de 1 ; 2 105 W viendrait d'une division par η, qui ferait sortir plus de puissance qu'il n'en entre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un pignon engrène avec une roue dentée. Quel effort, exercé par la denture, produit le couple qui fait tourner l'arbre du pignon ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'effort radial R, dirigé vers l'axe de l'arbre du pignon"
+        },
+        {
+          "id": "b",
+          "text": "La réaction d'un appui, qui retient l'arbre en rotation"
+        },
+        {
+          "id": "c",
+          "text": "Les deux efforts T et R, à parts égales entre eux"
+        },
+        {
+          "id": "d",
+          "text": "L'effort tangentiel T, tangent au cercle primitif"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le couple s'écrit C = T × r : seul l'effort tangentiel T, tangent au cercle primitif, a un bras de levier autour de l'axe. L'effort radial R pointe vers l'axe, donc son moment est nul ; la réaction d'un appui ne fait pas non plus tourner l'arbre, et le couple ne se partage pas entre T et R.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un arbre repose sur deux appuis A et B et porte une seule charge entre eux. Où son moment fléchissant est-il le plus grand ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sous la charge, au point où elle s'applique"
+        },
+        {
+          "id": "b",
+          "text": "Aux appuis A et B, qui reprennent la charge"
+        },
+        {
+          "id": "c",
+          "text": "Au milieu exact de A et B, même si la charge est décentrée"
+        },
+        {
+          "id": "d",
+          "text": "Partout le même, de A jusqu'à B"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le moment fléchissant part de 0 en A, grandit jusqu'à la charge puis redescend à 0 en B : il est maximal sous la charge. Il est nul aux appuis, il ne vaut le maximum au milieu que si la charge s'y trouve, et il varie le long de l'arbre au lieu de rester constant.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un arbre transmet une puissance de 750 W en tournant à 300 tr/min. Quel couple porte-t-il, en N·m ?",
+      "answerKey": {
+        "value": 23.9,
+        "tolerance": 0.1,
+        "unit": "N·m"
+      },
+      "explanation": "Il faut passer en rad/s : ω = 2π × 300 / 60 ≈ 31,42 rad/s. Puis C = P / ω = 750 / 31,42 ≈ 23,9 N·m. Diviser P par N directement (750 / 300 = 2,5) oublie la conversion en rad/s.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans la section dangereuse du pignon arbré (acier, λ = 0,5), la flexion est de 30 N·m et la torsion de 40 N·m. Quelle est la valeur du moment idéal de flexion, en N·m ?",
+      "answerKey": {
+        "value": 50,
+        "unit": "N·m"
+      },
+      "explanation": "Avec λ = 0,5, Mfi = √(Mf² + Mt²) = √(900 + 1 600) = √2 500 = 50 N·m. Additionner les deux moments donnerait 70 N·m, ce qui surestime le moment idéal : les carrés s'additionnent, pas les moments.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une poutre repose sur un appui articulé A et un appui à rouleaux B, distants de 90 mm. Elle porte une charge T = 900 N en C, à 40 mm de A (schéma de principe). Que valent les réactions des appuis ?\n<svg viewBox=\"0 0 430 225\"><title>Poutre sur deux appuis A et B, charge de 900 N en C à 40 mm de A</title><rect x=\"37\" y=\"92\" width=\"316\" height=\"8\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><polygon points=\"45 100 31 124 59 124\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><line x1=\"25\" y1=\"124\" x2=\"65\" y2=\"124\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"345 100 331 120 359 120\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><circle cx=\"338\" cy=\"123.5\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"352\" cy=\"123.5\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"325\" y1=\"128\" x2=\"365\" y2=\"128\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"178.3\" y1=\"28\" x2=\"178.3\" y2=\"80\" stroke=\"#b45309\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"178.3 90 174.1 80 182.5 80\" fill=\"#b45309\"/><text x=\"188.3\" y=\"40\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">T = 900 N</text><line x1=\"45\" y1=\"176\" x2=\"45\" y2=\"142\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"45 132 49.2 142 40.8 142\" fill=\"#0f6e56\"/><line x1=\"345\" y1=\"176\" x2=\"345\" y2=\"142\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><polygon points=\"345 132 349.2 142 340.8 142\" fill=\"#0f6e56\"/><text x=\"54\" y=\"166\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R<tspan font-size=\"9\" dy=\"3\">A</tspan></text><text x=\"354\" y=\"166\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R<tspan font-size=\"9\" dy=\"3\">B</tspan></text><line x1=\"45\" y1=\"200\" x2=\"345\" y2=\"200\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"195\" x2=\"45\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"45\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><line x1=\"178.3\" y1=\"195\" x2=\"178.3\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"178.3\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><line x1=\"345\" y1=\"195\" x2=\"345\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"345\" y=\"221\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"111.7\" y=\"194\" font-size=\"11\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><text x=\"261.7\" y=\"194\" font-size=\"11\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">50</text><line x1=\"178.3\" y1=\"100\" x2=\"178.3\" y2=\"194\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "R_A = 400 N et R_B = 500 N"
+        },
+        {
+          "id": "b",
+          "text": "R_A = 450 N et R_B = 450 N"
+        },
+        {
+          "id": "c",
+          "text": "R_A = 500 N et R_B = 400 N"
+        },
+        {
+          "id": "d",
+          "text": "R_A = 720 N et R_B = 180 N"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Moments autour de A : R_B × 90 = 900 × 40, donc R_B = 400 N, puis R_A = 900 − 400 = 500 N. Le partage par moitiés (450 N et 450 N) vaut seulement pour une charge au milieu ; 400 N et 500 N croise les distances ; 720 N et 180 N divise par CB (50 mm) au lieu de AB.",
+      "difficulty": 2
+    }
+  ]
+}
