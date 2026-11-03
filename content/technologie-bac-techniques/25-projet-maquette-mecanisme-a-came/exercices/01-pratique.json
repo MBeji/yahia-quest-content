@@ -1,0 +1,194 @@
+{
+  "title": "⭐ Exercice : repères, appuis, came et soufflage",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "281-288",
+    "items": [
+      "nomenclature (p.284)",
+      "isostatisme (p.285)",
+      "extrusion-soufflage (p.288)"
+    ]
+  },
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque repère de la nomenclature du banc à sa désignation.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Repère 5"
+        },
+        {
+          "id": "l2",
+          "text": "Repère 8"
+        },
+        {
+          "id": "l3",
+          "text": "Repère 17"
+        },
+        {
+          "id": "l4",
+          "text": "Repère 9"
+        },
+        {
+          "id": "r1",
+          "text": "Coussinet à collerette"
+        },
+        {
+          "id": "r2",
+          "text": "Disque gradué"
+        },
+        {
+          "id": "r3",
+          "text": "Roulement à une rangée de billes à contact radial"
+        },
+        {
+          "id": "r4",
+          "text": "Came"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le repère 5 est le coussinet à collerette (2 pièces en CuSn8P), le 8 le disque gradué en PLA, le 17 le roulement à une rangée de billes à contact radial BC 8x22x7, et le 9 la came, en PLA.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les phases de l'extrusion-soufflage.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Laisser la matière gonflée épouser les parois de l'empreinte"
+        },
+        {
+          "id": "a",
+          "text": "Extruder la paraison entre les deux demi-moules ouverts"
+        },
+        {
+          "id": "e",
+          "text": "Ouvrir le moule et éjecter la pièce"
+        },
+        {
+          "id": "b",
+          "text": "Fermer les demi-moules et souffler de l'air dans la paraison"
+        },
+        {
+          "id": "d",
+          "text": "Refroidir la pièce contre le moule"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "La paraison sort d'abord de la filière, ouverte entre les demi-moules. On ferme le moule et on souffle : la matière se gonfle et épouse l'empreinte. Elle refroidit pour garder sa forme, et le moule ne s'ouvre qu'ensuite pour éjecter la pièce.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le dessin d'ensemble du banc est à l'échelle 1:3. Une pièce réelle de 126 mm de long y est tracée : combien de millimètres mesure-t-elle sur le dessin ?",
+      "answerKey": {
+        "value": 42,
+        "unit": "mm"
+      },
+      "explanation": "L'échelle 1:3 est une réduction : 1 mm sur le dessin représente 3 mm sur la pièce, donc le dessin est trois fois plus petit. Le tracé mesure 126 / 3 = 42 mm ; multiplier par 3 donnerait 378 mm, un dessin plus grand que la pièce.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une came tourne à 40 tr/min. Le poussoir monte de 9 mm pendant que la came tourne de 120°. Quelle est sa vitesse moyenne de montée, en mm/s ?",
+      "answerKey": {
+        "value": 18,
+        "unit": "mm/s"
+      },
+      "explanation": "À 40 tr/min, un tour dure 60 / 40 = 1,5 s. Une rotation de 120° est le tiers d'un tour : 1,5 / 3 = 0,5 s. La vitesse moyenne est 9 / 0,5 = 18 mm/s. Utiliser la durée d'un tour entier donnerait 6 mm/s.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Pour la pièce prismatique du manuel (appui plan 1, 2, 3 ; appui linéaire 4, 5 ; appui ponctuel 6), lesquelles de ces affirmations sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les six points d'appui forment la mise en position (MIP)"
+        },
+        {
+          "id": "b",
+          "text": "Le serrage contre (4, 5) assure le maintien en position (MAP)"
+        },
+        {
+          "id": "c",
+          "text": "Les faces qui reçoivent les appuis sont les surfaces de base (SB)"
+        },
+        {
+          "id": "d",
+          "text": "Le serrage fait partie de la mise en position (MIP)"
+        },
+        {
+          "id": "e",
+          "text": "Le serrage supprime la translation Tz à la place du point 6"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Les six points suppriment les six degrés de liberté : c'est la mise en position (MIP). Le serrage, contre (4, 5) dans le manuel, garde la pièce contre ses appuis : c'est le maintien en position (MAP), distinct de la MIP, et il ne supprime aucun degré — Tz est supprimé par le point 6. Les faces qui reçoivent les appuis sont les surfaces de base (SB).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Injection-soufflage et extrusion-soufflage gonflent toutes deux la matière dans un moule. Qu'est-ce qui les distingue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La matière employée : un thermodurcissable, ou un thermoplastique"
+        },
+        {
+          "id": "b",
+          "text": "La forme obtenue : une pièce pleine, ou bien un corps creux"
+        },
+        {
+          "id": "c",
+          "text": "Le départ : une ébauche injectée, ou une paraison extrudée"
+        },
+        {
+          "id": "d",
+          "text": "Le moule : un moule fermé, ou une plaque sans moule"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les deux procédés soufflent la matière dans un moule et donnent des corps creux ; ce qui change est ce que l'on souffle : une ébauche injectée (injection-soufflage) ou une paraison extrudée (extrusion-soufflage). Aucun ne part d'une plaque, et aucun ne donne de pièce pleine.",
+      "difficulty": 2
+    }
+  ]
+}

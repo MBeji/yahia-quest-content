@@ -1,0 +1,144 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : concevoir, critiquer, justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "262-279",
+    "items": [
+      "étape 12 (rapports du train)",
+      "étape 20 h (programme phase 20)"
+    ]
+  },
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "On monte successivement, dans un alésage Ø20H7 (+0,021 / 0), trois arbres dont les écarts sont donnés. Associe chaque arbre au type d'ajustement obtenu.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Arbre aux écarts −0,020 et −0,041"
+        },
+        {
+          "id": "l2",
+          "text": "Arbre aux écarts +0,015 et +0,028"
+        },
+        {
+          "id": "l3",
+          "text": "Arbre aux écarts +0,035 et +0,048"
+        },
+        {
+          "id": "r1",
+          "text": "Jeu garanti"
+        },
+        {
+          "id": "r2",
+          "text": "Jeu ou serrage, selon les pièces"
+        },
+        {
+          "id": "r3",
+          "text": "Serrage garanti"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Arbre −0,020 / −0,041 : jeu mini = 0 − (−0,020) = 0,020 > 0, le jeu est garanti. Arbre +0,015 / +0,028 : jeu mini = 0 − 0,028 = −0,028 < 0 mais jeu maxi = 0,021 − 0,015 = 0,006 > 0, donc selon les pièces on a du jeu ou du serrage. Arbre +0,035 / +0,048 : jeu maxi = 0,021 − 0,035 = −0,014 < 0, l'arbre est toujours plus gros que l'alésage : serrage garanti.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un opérateur ajoute, à la mise en position d'un arbre tenu par un centrage long et un appui ponctuel, un second appui ponctuel sur l'autre extrémité, face au premier. Que se passe-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux appuis bloquent la même translation : la pièce est sur-contrainte"
+        },
+        {
+          "id": "b",
+          "text": "La précision augmente : plus de contacts positionnent toujours mieux"
+        },
+        {
+          "id": "c",
+          "text": "Le sixième degré de liberté est enfin supprimé : la rotation sur l'axe"
+        },
+        {
+          "id": "d",
+          "text": "Rien ne change : le serrage absorbe le contact en trop"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les deux appuis opposés arrêtent la même translation, le long de l'axe : la pièce est sur-contrainte, car la moindre différence de longueur la coince ou la déforme au serrage. Ils n'arrêtent pas la rotation autour de l'axe, et le serrage ne compense pas un contact en trop.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On veut un réducteur non-inverseur de rapport 0,2 : la couronne est bloquée, le planétaire est l'entrée et le porte-satellite la sortie. Le planétaire a 24 dents. Combien de dents un satellite doit-il avoir ?",
+      "answerKey": {
+        "value": 36,
+        "unit": "dents"
+      },
+      "explanation": "Couronne bloquée : r = Z planétaire / (Z planétaire + Z couronne) = 0,2, donc 24 + Z couronne = 24 / 0,2 = 120 et Z couronne = 96. La condition d'engrènement donne Z satellite = (96 − 24) / 2 = 36 dents. Prendre Z couronne = 120 oublierait d'ôter le planétaire, et 72 serait l'écart sans le facteur 2.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans la chaîne de Ja d'une autre maquette, les cinq pièces enfermées valent 2 ±0,05 ; 5 ±0,05 ; 30 ±0,05 ; 5 ±0,05 et 1 ±0,05, et l'arbre est tenu à ±0,1. Quelle valeur nominale faut-il donner à a32 pour que Ja mini soit de 0,2 mm ?",
+      "answerKey": {
+        "value": 43.55,
+        "unit": "mm"
+      },
+      "explanation": "Ja mini = a32 mini − somme des pièces maxi. La somme des pièces maxi est 2,05 + 5,05 + 30,05 + 5,05 + 1,05 = 43,25, donc a32 mini = 43,25 + 0,2 = 43,45. L'arbre étant à ±0,1, sa valeur nominale est 43,45 + 0,1 = 43,55 mm. Prendre la somme des cotes nominales, 43 + 0,2 = 43,2, oublierait les tolérances.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève remplit les éléments de coupe d'un contrat de phase, avec Vf = f × N :\nÉbauche : N = 800 tr/min, f = 0,15 mm/tr, Vf = 120 mm/min\nDemi-finition : N = 800 tr/min, f = 0,10 mm/tr, Vf = 80 mm/min\nFinition : N = 800 tr/min, f = 0,05 mm/tr, Vf = 400 mm/min\nGorge : N = 400 tr/min, f = 0,05 mm/tr, Vf = 20 mm/min\nQuelle ligne est incohérente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ébauche"
+        },
+        {
+          "id": "b",
+          "text": "Demi-finition"
+        },
+        {
+          "id": "c",
+          "text": "Finition"
+        },
+        {
+          "id": "d",
+          "text": "Gorge"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il faut Vf = f × N pour chaque ligne : 0,15 × 800 = 120 ; 0,10 × 800 = 80 ; 0,05 × 800 = 40 ; 0,05 × 400 = 20. La ligne de finition affiche 400 au lieu de 40 : une avance de finition ne peut d'ailleurs pas dépasser celle de l'ébauche. Les trois autres lignes vérifient la relation.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "À vitesse de rotation constante, N = 1 000 tr/min, de combien la vitesse de coupe diminue-t-elle quand le diamètre usiné passe de Ø12 à Ø10, en m/min ?",
+      "answerKey": {
+        "value": 6.28,
+        "unit": "m/min",
+        "tolerance": 0.02
+      },
+      "explanation": "Vc = π × D × N / 1 000 : à Ø12, 37,70 m/min ; à Ø10, 31,42 m/min. La différence est 6,28 m/min, soit π × 2 × 1 000 / 1 000. La vitesse de coupe est proportionnelle au diamètre : elle baisse à mesure que la passe réduit la pièce, alors que N ne change pas.",
+      "difficulty": 3
+    }
+  ]
+}

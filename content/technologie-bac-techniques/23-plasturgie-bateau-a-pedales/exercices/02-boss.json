@@ -1,0 +1,146 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : combiner nomenclature, famille et procédé",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "252-256",
+    "items": [
+      "Caractéristiques p.254",
+      "Nomenclature p.254",
+      "Travail demandé 1.c et 1.d, p.255",
+      "Travail demandé 6, f et g, p.256"
+    ]
+  },
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le pédalo accueille jusqu'à 5 personnes et supporte une charge maximale de 350 kg. Quatre passagers pèsent ensemble 268 kg (valeurs d'illustration). Quelle masse maximale, en kg, le cinquième passager peut-il avoir ?",
+      "answerKey": {
+        "value": 82,
+        "unit": "kg"
+      },
+      "explanation": "La charge maximale est de 350 kg et les quatre premiers passagers en occupent déjà 268 kg : il reste 350 − 268 = 82 kg pour le cinquième. Diviser 350 par 5 (70 kg) donnerait une masse moyenne par personne, pas la marge restante.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Combien de pièces du pédalo ont une matière dont le nom contient « aluminium » (aluminium ou aluminium marin) ?",
+      "answerKey": {
+        "value": 4,
+        "unit": "pièces"
+      },
+      "explanation": "La bielle (repère 2, nombre 1) et le moyeu (repère 4, nombre 1) sont en aluminium, le pédalier régulier (repère 10, nombre 2) en aluminium marin : 1 + 1 + 2 = 4 pièces. Compter 3 repères oublierait que le pédalier est monté en double, et ajouter les pièces en acier inox (axe et guidon) donnerait 6, soit toutes les pièces métalliques.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Ce schéma montre un moule de rotomoulage à un moment du procédé. À quelle étape correspond-il ?\n<svg viewBox=\"0 0 140 140\"><title>Un moule en cours de procédé, étape à identifier</title><rect x=\"6\" y=\"6\" width=\"128\" height=\"128\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"36\" y=\"40\" width=\"68\" height=\"50\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"40\" y=\"44\" width=\"60\" height=\"42\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linejoin=\"round\"/><polygon points=\"45,110 59,110 52,94\" fill=\"#f97316\" stroke=\"#b45309\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"63,110 77,110 70,94\" fill=\"#f97316\" stroke=\"#b45309\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"81,110 95,110 88,94\" fill=\"#f97316\" stroke=\"#b45309\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M24 66 A48 48 0 0 1 52 28\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"56,26 46,25 51,34\" fill=\"#475569\" stroke=\"#475569\" stroke-width=\"1\" stroke-linejoin=\"round\"/><path d=\"M116 66 A48 48 0 0 0 88 28\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"84,26 94,25 89,34\" fill=\"#475569\" stroke=\"#475569\" stroke-width=\"1\" stroke-linejoin=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le chargement : la poudre est versée dans le moule encore ouvert"
+        },
+        {
+          "id": "b",
+          "text": "Le chauffage : la matière fond, puis adhère aux parois du moule fermé"
+        },
+        {
+          "id": "c",
+          "text": "Le refroidissement : la matière cristallise et durcit sur les parois"
+        },
+        {
+          "id": "d",
+          "text": "Le démoulage : la pièce est extraite du moule qui vient de se rouvrir"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le moule est fermé, chauffé par les flammes et mis en mouvement de balancier (flèches) : la matière a fondu et tapisse les parois. Il ne s'agit donc pas du chargement, où le moule est ouvert avec de la poudre au fond, ni du refroidissement, où la ventilation remplace la chaleur, ni du démoulage, où le moule est rouvert.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève range des pièces du pédalo selon leur matière. La toile (18) est le tissu de l'auvent. Quel raisonnement est FAUX ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coque (6) en polyéthylène : thermoplastique, donc refondable"
+        },
+        {
+          "id": "b",
+          "text": "Étoile (9) en « Plastique » : famille non précisée, donc on ne conclut pas"
+        },
+        {
+          "id": "c",
+          "text": "Perce-coque (15) en phénoplaste : thermodurcissable, donc non refondable"
+        },
+        {
+          "id": "d",
+          "text": "Toile (18) en polyester : thermodurcissable, donc non refondable"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chasse à l'erreur : le raisonnement faux est celui de la toile. Le polyester d'un tissu est une fibre, donc un thermoplastique : la toile est refondable en principe. Les trois autres sont justes : le polyéthylène est thermoplastique, le phénoplaste thermodurcissable, et la ligne « Plastique » ne dit rien de la famille. Le piège est de ranger « polyester » dans une seule famille.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un fabricant veut produire un million de petites bouteilles en plastique, creuses, à col étroit et à parois fines. Quel choix de procédé et quelle justification sont corrects ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rotomoulage : la pièce est creuse, et la poudre tapisse les parois"
+        },
+        {
+          "id": "b",
+          "text": "Injection : la pièce est petite, et l'empreinte la remplit entièrement"
+        },
+        {
+          "id": "c",
+          "text": "Injection-soufflage : pièce creuse à col étroit, en très grande série"
+        },
+        {
+          "id": "d",
+          "text": "Enlèvement de matière : la pièce est petite, on la taille au tour"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La pièce est un corps creux à col étroit, produit en très grande série : c'est le domaine de l'injection-soufflage, qui injecte une ébauche puis la gonfle. Le piège courant est de conclure « creux donc rotomoulage » : ce procédé vise de grandes pièces en petites ou moyennes séries. L'injection seule remplirait l'empreinte sans creuser la pièce, et tailler un million de bouteilles dans un bloc gaspillerait la matière.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces propriétés sont celles du rotomoulage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il fabrique des corps creux, même de grande dimension"
+        },
+        {
+          "id": "b",
+          "text": "Il se passe de haute pression, donc d'un moule coûteux"
+        },
+        {
+          "id": "c",
+          "text": "Il convient aux très grandes séries à cadence rapide"
+        },
+        {
+          "id": "d",
+          "text": "Il donne la précision fine et la complexité d'une injection"
+        },
+        {
+          "id": "e",
+          "text": "Il convient aux petites et moyennes séries"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Le rotomoulage fabrique des corps creux, y compris de grande dimension ; sans haute pression, son moule reste simple et moins coûteux que celui d'une injection, ce qui convient aux petites et moyennes séries. Son cycle est long, car il faut chauffer puis refroidir le moule entier, donc il ne convient pas aux très grandes séries, et il n'atteint pas la précision fine de l'injection.",
+      "difficulty": 2
+    }
+  ]
+}

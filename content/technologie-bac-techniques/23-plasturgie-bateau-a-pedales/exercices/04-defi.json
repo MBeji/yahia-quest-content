@@ -1,0 +1,159 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : justifier un procédé, une famille, un décompte",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "252-256",
+    "items": [
+      "Nomenclature p.254",
+      "Travail demandé 1.b et 1.c, p.255",
+      "Travail demandé 5, 6 et f, p.255-256"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Une pièce pleine, nervurée et très précise doit être produite à 500 000 exemplaires. Quel choix de procédé et quelle justification sont corrects ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rotomoulage : la poudre fond et se répartit sur les parois du moule fermé"
+        },
+        {
+          "id": "b",
+          "text": "Injection : la pression remplit l'empreinte, et la série amortit le moule"
+        },
+        {
+          "id": "c",
+          "text": "Injection-soufflage : l'ébauche gonflée épouse les nervures du second moule"
+        },
+        {
+          "id": "d",
+          "text": "Méthode additive : on imprime chacune des pièces couche après couche"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La pièce est pleine, précise et en très grande série : l'injection pousse la matière sous forte pression dans l'empreinte, qui en reproduit tous les détails, et la grande série amortit le moule coûteux. Le piège courant est de choisir un procédé de corps creux : le rotomoulage et l'injection-soufflage ne conviennent qu'aux pièces creuses. L'impression 3D, couche par couche, serait bien trop lente pour 500 000 exemplaires.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "D'après la seule colonne Matière de la nomenclature, combien de pièces en matière plastique (pièces non métalliques) du pédalo ne peuvent pas être classées avec certitude parmi les thermoplastiques ou les thermodurcissables ?",
+      "answerKey": {
+        "value": 4,
+        "unit": "pièces"
+      },
+      "explanation": "Les 6 pièces métalliques sont hors de la question. Le polyéthylène et le polyoxyde de méthylène sont thermoplastiques, le phénoplaste est thermodurcissable : ces matières sont classées. Restent le polyester, qui peut être une fibre ou une résine, avec les dossiers (nombre 2) et la toile (nombre 1), et la ligne « Plastique » de l'étoile (nombre 1) : 2 + 1 + 1 = 4 pièces. Le piège courant est de ne compter que les repères, ce qui donne 3.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "D'après la seule matière de la nomenclature, quelles pièces peut-on recycler par refonte avec certitude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le bouchon de drain (1)"
+        },
+        {
+          "id": "b",
+          "text": "La poignée avec écrou (5)"
+        },
+        {
+          "id": "c",
+          "text": "La bague de roulement (7)"
+        },
+        {
+          "id": "d",
+          "text": "L'étoile (9)"
+        },
+        {
+          "id": "e",
+          "text": "La pale de roue (16)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Le bouchon de drain et la pale de roue sont en polyéthylène, la bague de roulement en polyoxyde de méthylène : trois thermoplastiques, donc refondables. La poignée est en phénoplaste, un thermodurcissable non refondable ; l'étoile est en « Plastique », une matière dont la famille n'est pas précisée. Le piège courant est de ranger l'étoile avec les thermoplastiques parce que son nom évoque le plastique.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève classe la bague de roulement (7) parmi les thermodurcissables en disant : « elle est dure et résistante ». Quelle est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il juge la dureté, alors que la famille dépend du comportement à la chaleur"
+        },
+        {
+          "id": "b",
+          "text": "Il oublie que toute bague est thermoplastique, quelle que soit sa matière"
+        },
+        {
+          "id": "c",
+          "text": "Il confond la bague avec une pièce métallique, qui se classerait autrement"
+        },
+        {
+          "id": "d",
+          "text": "Il ignore que seuls les thermodurcissables se ramollissent encore à la chaleur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chasse à l'erreur : l'élève prend la dureté pour critère, alors que les mots thermoplastique et thermodurcissable parlent de la chaleur. Une bague en polyoxyde de méthylène est rigide mais se ramollit de nouveau à la chaleur : c'est un thermoplastique. Dire que toute bague l'est serait faux, et ce sont les thermoplastiques, non les thermodurcissables, qui se ramollissent.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La coque est rotomoulée en polyéthylène. Pourquoi ce procédé exige-t-il un thermoplastique et non un phénoplaste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le phénoplaste est trop dur pour être réduit en poudre fine"
+        },
+        {
+          "id": "b",
+          "text": "Le thermoplastique fond, puis redurcit quand le moule refroidit"
+        },
+        {
+          "id": "c",
+          "text": "Le thermoplastique ne se ramollit qu'une fois, ce qui fige la coque"
+        },
+        {
+          "id": "d",
+          "text": "Le phénoplaste fond trop vite et coulerait hors du moule fermé"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La poudre doit fondre pour tapisser les parois puis durcir au refroidissement : c'est le comportement d'un thermoplastique. Le phénoplaste est un thermodurcissable : il ne fond pas, il se dégrade. La dureté ne définit pas la famille, et un thermoplastique se ramollit à chaque chauffage, pas une seule fois.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur ce schéma d'un moule de rotomoulage, quelle étape se déroule, et à quoi sert-elle ?\n<svg viewBox=\"0 0 140 140\"><title>Un moule en cours de procédé, étape à identifier</title><rect x=\"6\" y=\"6\" width=\"128\" height=\"128\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"36\" y=\"60\" width=\"68\" height=\"50\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"40\" y=\"64\" width=\"60\" height=\"42\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M70 32 L70.0 46.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M70 32 L57.9 25.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M70 32 L82.1 25.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"70\" cy=\"32\" r=\"3.5\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"44\" x2=\"50.0\" y2=\"51.0\" stroke=\"#38bdf8\" stroke-width=\"1.8\"/><polygon points=\"50,57 47.0,51.0 53.0,51.0\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"44\" x2=\"90.0\" y2=\"51.0\" stroke=\"#38bdf8\" stroke-width=\"1.8\"/><polygon points=\"90,57 87.0,51.0 93.0,51.0\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"1\" stroke-linejoin=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le chauffage : la matière fond pour tapisser les parois du moule"
+        },
+        {
+          "id": "b",
+          "text": "Le chargement : la poudre est dosée avant la fermeture du moule"
+        },
+        {
+          "id": "c",
+          "text": "Le démoulage : la pièce est extraite du moule rouvert"
+        },
+        {
+          "id": "d",
+          "text": "Le refroidissement : la matière cristallise et fixe sa forme"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le ventilateur et les flèches bleues refroidissent le moule fermé : la matière cristallise et durcit, et la pièce garde sa forme quand on rouvre le moule. Le piège courant est de confondre cette étape avec le chauffage : la chaleur sert à faire fondre et répartir la matière, le refroidissement à la fixer. Rouvrir sans refroidir déformerait la pièce.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : cotes, coaxialité, courses et appuis",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "281-288",
+    "items": [
+      "commande à came (p.281)",
+      "isostatisme (p.285)",
+      "cotes et métrologie (p.285-286)",
+      "thermoformage (p.288)"
+    ]
+  },
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La levée d'un poussoir est de 10 mm, et il doit y monter à 15 mm/s en moyenne. La came tourne à 30 tr/min. De combien de degrés la came doit-elle tourner pendant la montée ?",
+      "answerKey": {
+        "value": 120,
+        "unit": "°"
+      },
+      "explanation": "Il faut t = 10 / 15 = 2/3 s pour monter de 10 mm. À 30 tr/min, un tour dure 2 s, soit 180° par seconde : la came tourne de 180 × 2/3 = 120°. Chercher 15 × 10 ou diviser 360° par 15 ne tient pas compte de la vitesse de rotation.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque dimension à la catégorie de cote de fabrication dont elle relève.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Une profondeur de perçage limitée par la butée de la perceuse"
+        },
+        {
+          "id": "l2",
+          "text": "Un diamètre de trou égal à celui du foret"
+        },
+        {
+          "id": "l3",
+          "text": "Un entraxe de trous imposé par les canons d'un gabarit de perçage"
+        },
+        {
+          "id": "r1",
+          "text": "Cote machine"
+        },
+        {
+          "id": "r2",
+          "text": "Cote outil"
+        },
+        {
+          "id": "r3",
+          "text": "Cote appareillage"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "La butée limite le déplacement de la machine : cote machine. Le diamètre du trou reproduit celui du foret : cote outil. L'entraxe est fixé par les canons de l'appareillage : cote appareillage.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Selon la mise en position du manuel, un opérateur pose une pièce prismatique sur les appuis du dessous (1, 2, 3) et contre la butée 6, mais oublie les butées 4 et 5. Quels degrés de liberté la pièce garde-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tx et Ry"
+        },
+        {
+          "id": "b",
+          "text": "Ty et Rz"
+        },
+        {
+          "id": "c",
+          "text": "Rx et Tz"
+        },
+        {
+          "id": "d",
+          "text": "Rx et Rz"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'appui plan supprime Ty, Rx et Rz, l'appui ponctuel Tz. Sans l'appui linéaire, Tx et Ry ne sont plus supprimés : ce sont les deux degrés qui restent libres. Ty, Rx, Rz et Tz restent supprimés.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un régleur reporte sur Cf2 la tolérance du dessin : il vise B = 15 ±0,25 avec B = Cf1 − Cf2, Cf1 = 60 ±0,15 et Cf2 = 45 ±0,25. Quel intervalle de tolérance (IT) obtient-il réellement sur B, en mm ?",
+      "answerKey": {
+        "value": 0.8,
+        "unit": "mm"
+      },
+      "explanation": "Les IT s'additionnent : IT de B = 0,3 + 0,5 = 0,8 mm, soit 15 ±0,4, alors que le dessin n'admet que 0,5. Contrôle : B maxi = 60,15 − 44,75 = 15,4 et B mini = 59,85 − 45,25 = 14,6. Cf1 et Cf2 doivent se partager l'IT de 0,5 au lieu de reprendre la tolérance du dessin.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces pièces sont non conformes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perpendicularité ⊥ 0,05 | B : écart relevé 0,06"
+        },
+        {
+          "id": "b",
+          "text": "Coaxialité Ø 0,1 | C : axe excentré de 0,06"
+        },
+        {
+          "id": "c",
+          "text": "Parallélisme ⫽ 0,1 | A : écart relevé 0,09"
+        },
+        {
+          "id": "d",
+          "text": "Coaxialité Ø 0,08 | C : variation de 0,08 lue sur un tour, pièce ronde"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "La perpendicularité accepte 0,05 et l'écart relevé est 0,06 : non conforme. La coaxialité Ø 0,1 n'admet que 0,05 d'excentration, et 0,06 la dépasse : non conforme. Le parallélisme relevé 0,09 est sous 0,1. Pour Ø 0,08, la variation lue vaut le double de l'excentration et se compare à 0,08 : l'égalité est encore conforme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On veut thermoformer une plaque faite d'un thermodurcissable déjà durci. Pourquoi est-ce impossible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est trop dure : la découpe en fin de ligne serait impossible"
+        },
+        {
+          "id": "b",
+          "text": "Elle ne se ramollit plus : on ne peut pas la former sur un moule"
+        },
+        {
+          "id": "c",
+          "text": "Le thermoformage ne se fait qu'à partir d'une matière en poudre"
+        },
+        {
+          "id": "d",
+          "text": "Elle fondrait dès le préchauffage et coulerait hors de la ligne"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le thermoformage ramollit une plaque par la chaleur pour la former sur un moule. Un thermodurcissable a pris une forme définitive à la polymérisation : il ne se ramollit plus et ne peut pas être formé. Il ne fond pas non plus, et le thermoformage part bien d'une plaque, pas d'une poudre.",
+      "difficulty": 3
+    }
+  ]
+}
