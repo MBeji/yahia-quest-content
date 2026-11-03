@@ -10,7 +10,9 @@ Le support est un **bateau à pédales** (pédalo) : une coque, un pédalier, de
 
 ## 🧭 Obtenir une pièce : trois chemins, et un contrôle
 
-Regarde deux pièces du pédalo : l'**axe de gouvernail**, en acier inox, et la **coque**, en polyéthylène. L'axe est un barreau : on l'imagine sans peine taillé dans un bloc de métal. La coque est grande, creuse, d'un seul tenant : la tailler dans un bloc de plastique en gaspillerait presque toute la matière. Comment ranger les façons d'obtenir une pièce, et où se place la plasturgie ?
+Regarde deux pièces du pédalo : l'**axe de gouvernail**, en acier inox, et la **coque**, en polyéthylène. L'axe est un barreau : on l'imagine sans peine taillé dans un bloc de métal. La coque est grande, creuse, d'un seul tenant : la tailler dans un bloc de plastique en gaspillerait presque toute la matière.
+
+Comment ranger les façons d'obtenir une pièce, et où se place la plasturgie ?
 
 ::: definition Les quatre séquences du thème
 Le thème **Obtention des pièces** s'ouvre sur quatre séquences (page d'ouverture du manuel) :
@@ -57,7 +59,9 @@ Le **moulage** relève de la **plasturgie** (la matière est mise en forme dans 
 
 ## 📋 Le pédalo et sa nomenclature : repères, nombres, matières
 
-Un pédalo avance quand on pédale : les pédales entraînent des roues à aube (des pales) sous la coque, et le gouvernail oriente le bateau. Le manuel précise qu'il accueille jusqu'à **5 personnes** pour une capacité maximale de **350 kg**. Le dossier technique en donne la liste des pièces. Si on te demande combien de pièces métalliques il contient, que dois-tu lire, et que dois-tu additionner ?
+Un pédalo avance quand on pédale : les pédales entraînent des roues à aube (des pales) sous la coque, et le gouvernail oriente le bateau. Le manuel précise qu'il accueille jusqu'à **5 personnes** pour une capacité maximale de **350 kg**. Le dossier technique en donne la liste des pièces.
+
+Si on te demande combien de pièces métalliques il contient, que dois-tu lire, et que dois-tu additionner ?
 
 ::: definition La nomenclature
 La **nomenclature** est le tableau qui liste les pièces d'un ensemble. Chaque ligne donne un **repère** (Rep.), le **nombre** de pièces identiques (Nbr.), la **désignation** (le nom de la pièce) et la **matière**. Le manuel ajoute une colonne « Observation », vide.
@@ -118,7 +122,9 @@ Deux repères portent l'acier inox : le **12** (axe de gouvernail, Nbr 1) et le 
 
 ## 🔥 Deux familles de plastiques : ramollir encore, ou durcir pour toujours
 
-Imagine un sac en plastique approché d'une flamme : il se ramollit et fond. Imagine maintenant la poignée noire d'une poêle : elle ne ramollit pas, elle noircit et finit par se fissurer. Les deux sont des « plastiques », et pourtant la chaleur les traite de façon opposée. Le manuel te demande de citer les caractéristiques des deux familles. Quelle est la différence, et que change-t-elle pour la fabrication et le recyclage ?
+Imagine un sac en plastique approché d'une flamme : il se ramollit et fond. Imagine maintenant la poignée noire d'une poêle : elle ne ramollit pas, elle noircit et finit par se fissurer. Les deux sont des « plastiques », et pourtant la chaleur les traite de façon opposée.
+
+Le manuel te demande de citer les caractéristiques des deux familles. Quelle est la différence, et que change-t-elle pour la fabrication et le recyclage ?
 
 ::: definition Thermoplastique et thermodurcissable
 Une **matière plastique** se classe selon la façon dont elle réagit à la chaleur :
@@ -163,7 +169,9 @@ Il ne redevient pas moulable sous la chaleur : c'est un **thermodurcissable**. S
 
 ## 🏷️ De la matière à la famille, puis au recyclage
 
-La nomenclature donne la **matière** de chaque pièce (polyéthylène, phénoplaste…), jamais sa famille. Le manuel demande pourtant de ranger la coque (6), la bague de roulement (7) et le perce-coque (15) en thermoplastique ou thermodurcissable, puis de dire si la toile en polyester (18) est recyclable. Comment passer d'un nom de matière à une famille, puis à une réponse sur le recyclage ?
+La nomenclature donne la **matière** de chaque pièce (polyéthylène, phénoplaste…), jamais sa famille.
+
+Le manuel demande pourtant de ranger la coque (6), la bague de roulement (7) et le perce-coque (15) en thermoplastique ou thermodurcissable, puis de dire si la toile en polyester (18) est recyclable. Comment passer d'un nom de matière à une famille, puis à une réponse sur le recyclage ?
 
 ::: definition Les matières plastiques du pédalo, par famille
 Les noms de la nomenclature se rattachent à une famille de la façon suivante (règles standard) :
@@ -214,7 +222,9 @@ Le polyéthylène est un **thermoplastique** : le bouchon se ramollit de nouveau
 
 ## 💉 Injection ou injection-soufflage : remplir un moule, ou le gonfler
 
-Une petite roulette de meuble en plastique est une pièce pleine ; une bouteille est un corps creux. Pourtant les deux commencent par de la matière chauffée jusqu'à devenir fluide. Le manuel demande la différence entre l'**injection** et l'**injection-soufflage**. Qu'est-ce qui change entre les deux ?
+Une petite roulette de meuble en plastique est une pièce pleine ; une bouteille est un corps creux. Pourtant les deux commencent par de la matière chauffée jusqu'à devenir fluide.
+
+Le manuel demande la différence entre l'**injection** et l'**injection-soufflage**. Qu'est-ce qui change entre les deux ?
 
 ::: definition Injection et injection-soufflage
 - **Injection** : la matière, fluidifiée par la chaleur, est **injectée sous forte pression dans l'empreinte** (le creux) d'un **moule fermé**. Elle refroidit et durcit, puis on **éjecte** la pièce en ouvrant le moule.
@@ -256,7 +266,9 @@ Un flacon de médicament en plastique est creux, à col étroit, produit en trè
 
 ## 🌀 Le rotomoulage : de la poudre, un moule fermé, un mouvement
 
-La coque du pédalo est grande, creuse, d'un seul tenant, et elle doit encaisser les chocs. L'injection pousse la matière sous haute pression dans un moule : pour une pièce de cette taille, le moule serait énorme et très coûteux ; et le soufflage d'une ébauche ne va pas pour une pièce aussi grande. Le manuel dit que la coque est obtenue par **rotomoulage**. Comment tapisser les parois d'un moule avec de la matière, sans la presser ?
+La coque du pédalo est grande, creuse, d'un seul tenant, et elle doit encaisser les chocs. L'injection pousse la matière sous haute pression dans un moule : pour une pièce de cette taille, le moule serait énorme et très coûteux ; et le soufflage d'une ébauche ne va pas pour une pièce aussi grande.
+
+Le manuel dit que la coque est obtenue par **rotomoulage**. Comment tapisser les parois d'un moule avec de la matière, sans la presser ?
 
 ::: definition Le rotomoulage
 Le **rotomoulage** (moulage par rotation) fabrique des **corps creux**. De la matière thermoplastique, sous forme de **poudre**, est introduite dans un moule. Le moule est **fermé puis chauffé** et mis en **mouvement** (balancier, rotation) : la matière fond et **adhère aux parois**. On **refroidit** : la matière cristallise et durcit. On **rouvre** le moule et on extrait la pièce.
