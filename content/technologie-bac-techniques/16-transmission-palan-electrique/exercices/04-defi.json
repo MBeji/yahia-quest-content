@@ -53,74 +53,74 @@
     },
     {
       "type": "matching",
-      "prompt": "Associe chaque besoin au mécanisme de transformation de mouvement qui y répond.",
+      "prompt": "Associe chaque situation au mécanisme de transformation de mouvement qui y répond.",
       "options": [
         {
           "id": "l1",
-          "text": "Faire avancer une pièce d'un pas à chaque tour d'une tige filetée"
+          "text": "Un tour de manivelle fait avancer le chariot de 5 mm"
         },
         {
           "id": "l2",
-          "text": "Faire avancer une barre dentée d'une longueur égale au rayon multiplié par l'angle en radians"
+          "text": "Un quart de tour d'une roue de rayon 40 mm déplace une barre dentée de 62,8 mm"
         },
         {
           "id": "l3",
-          "text": "Déplacer une charge au bout d'une chaîne enroulée sur une noix"
+          "text": "Une chaîne enroulée sur un pignon de 60 mm de diamètre tire un chariot à 0,5 m/s"
         },
         {
           "id": "l4",
-          "text": "Obtenir une course égale à deux fois le décalage de l'axe d'un disque"
+          "text": "Un disque décentré de 8 mm soulève un poussoir de 16 mm"
         },
         {
           "id": "r1",
-          "text": "Vis-écrou"
-        },
-        {
-          "id": "r2",
           "text": "Pignon-crémaillère"
         },
         {
+          "id": "r2",
+          "text": "Vis-écrou"
+        },
+        {
           "id": "r3",
-          "text": "Lien flexible"
+          "text": "Excentrique"
         },
         {
           "id": "r4",
-          "text": "Excentrique"
+          "text": "Lien flexible"
         }
       ],
       "answerKey": {
         "pairs": [
           [
             "l1",
-            "r1"
-          ],
-          [
-            "l2",
             "r2"
           ],
           [
+            "l2",
+            "r1"
+          ],
+          [
             "l3",
-            "r3"
+            "r4"
           ],
           [
             "l4",
-            "r4"
+            "r3"
           ]
         ]
       },
-      "explanation": "Le déplacement d'un pas par tour est celui de la vis-écrou. Un déplacement égal au rayon fois l'angle est celui du pignon-crémaillère. Une chaîne enroulée sur une noix est un lien flexible, avec V = R × ω. Une course égale à deux fois le décalage de l'axe est celle de l'excentrique, C = 2e.",
+      "explanation": "Un déplacement égal au pas pour un tour est celui de la vis-écrou. Un quart de tour de rayon 40 mm donne 40 × π/2 ≈ 62,8 mm : c'est x = R × θ, le pignon-crémaillère. Une chaîne sur un pignon donne une vitesse V = R × ω, ce qui est un lien flexible. Un décalage de 8 mm donne une course de 2 × 8 = 16 mm : c'est l'excentrique.",
       "difficulty": 2
     },
     {
-      "prompt": "Un élève calcule le déplacement d'une crémaillère entraînée par un pignon de rayon 20 mm qui tourne de 90° : il écrit x = 20 × 90 = 1 800 mm. Quelle est son erreur ?",
+      "prompt": "Une vis de pas 6 mm tourne de 120°. Un élève écrit x = (6 / 2π) × 120 ≈ 114,6 mm pour le déplacement de l'écrou. Quelle est son erreur ?",
       "options": [
         {
           "id": "a",
-          "text": "Il aurait dû prendre le diamètre du pignon"
+          "text": "Il a pris le pas à la place du rayon de la vis"
         },
         {
           "id": "b",
-          "text": "Il a oublié de convertir le rayon en mètres"
+          "text": "Il a oublié de convertir le pas en mètres"
         },
         {
           "id": "c",
@@ -128,11 +128,11 @@
         },
         {
           "id": "d",
-          "text": "Il a confondu le déplacement x et la vitesse V"
+          "text": "Il aurait dû multiplier par 2π au lieu de diviser"
         }
       ],
       "correctOption": "c",
-      "explanation": "La formule x = R × θ suppose θ en radians : 90° = π/2 rad, donc x = 20 × π/2 ≈ 31,4 mm, et non 1 800 mm. Le rayon, et non le diamètre, est le bon facteur ; les millimètres donnent un résultat en millimètres, sans conversion ; et x est bien un déplacement, la vitesse n'est pas demandée.",
+      "explanation": "La formule x = (P / 2π) × θ suppose θ en radians : 120° = 2π/3 rad, donc x = (6 / 2π) × (2π/3) = 2 mm, et non 114,6 mm. Le facteur P / 2π joue déjà le rôle du rayon ; le pas est en millimètres et le déplacement sort en millimètres sans conversion ; multiplier par 2π donnerait un résultat encore plus grand.",
       "difficulty": 2
     },
     {

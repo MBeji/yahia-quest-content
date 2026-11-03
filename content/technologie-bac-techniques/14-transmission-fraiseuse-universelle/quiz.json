@@ -50,27 +50,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Deux roues cylindriques à denture droite, de module 3 mm, ont un entraxe de 87 mm. Que vaut la somme de leurs nombres de dents ?",
+      "prompt": "Deux roues cylindriques à denture droite, de module 2,5 mm, ont un entraxe de 80 mm. Que vaut la somme de leurs nombres de dents ?",
       "options": [
         {
           "id": "a",
-          "text": "29 dents"
+          "text": "32 dents"
         },
         {
           "id": "b",
-          "text": "58 dents"
+          "text": "64 dents"
         },
         {
           "id": "c",
-          "text": "174 dents"
+          "text": "160 dents"
         },
         {
           "id": "d",
-          "text": "261 dents"
+          "text": "200 dents"
         }
       ],
       "correctOption": "b",
-      "explanation": "L'entraxe vaut m × (Z1 + Z2) / 2, donc Z1 + Z2 = 2 × a / m = 2 × 87 / 3 = 58. Calculer a / m = 29 oublie le facteur 2 ; 174 = 2 × a oublie de diviser par le module ; 261 = a × m multiplie au lieu de diviser.",
+      "explanation": "L'entraxe vaut m × (Z1 + Z2) / 2, donc Z1 + Z2 = 2 × a / m = 2 × 80 / 2,5 = 64. Calculer a / m = 32 oublie le facteur 2 ; 160 = 2 × a oublie de diviser par le module ; 200 = a × m multiplie au lieu de diviser.",
       "difficulty": 1
     },
     {
@@ -109,12 +109,12 @@
     },
     {
       "type": "numeric",
-      "prompt": "Une vis d'entraînement a deux filets et un pas de 4 mm. De combien la table avance-t-elle pour 3 tours du volant, en mm ?",
+      "prompt": "Une vis d'entraînement a deux filets et un pas de 5 mm. De combien la table avance-t-elle pour 3 tours du volant, en mm ?",
       "answerKey": {
-        "value": 24,
+        "value": 30,
         "unit": "mm"
       },
-      "explanation": "Un tour avance la table de k × p = 2 × 4 = 8 mm, donc trois tours donnent C = 3 × 8 = 24 mm. Ne compter que le pas (3 × 4 = 12 mm) oublie le deuxième filet.",
+      "explanation": "Un tour avance la table de k × p = 2 × 5 = 10 mm, donc trois tours donnent C = 3 × 10 = 30 mm. Ne compter que le pas (3 × 5 = 15 mm) oublie le deuxième filet.",
       "difficulty": 2
     }
   ]

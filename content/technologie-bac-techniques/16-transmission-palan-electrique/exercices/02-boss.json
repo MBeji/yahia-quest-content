@@ -13,38 +13,45 @@
   },
   "questions": [
     {
-      "type": "multi",
-      "prompt": "Le couple dépasse le couple nominal et l'électro-aimant (31) est alimenté. Lesquelles de ces pièces sont à l'arrêt ?",
+      "type": "ordering",
+      "prompt": "Le couple reste inférieur au couple nominal. La puissance passe du rotor (3) du moteur à la noix (5) en traversant les six éléments proposés. Remets-les dans l'ordre du cheminement.",
       "options": [
         {
           "id": "a",
-          "text": "L'arbre de transmission (2)"
+          "text": "Le second étage (planétaire 15, satellites 13, porte-satellites 9)"
         },
         {
           "id": "b",
-          "text": "Le disque (28)"
+          "text": "Le disque limiteur (26), lié au planétaire (20)"
         },
         {
           "id": "c",
-          "text": "Le disque (26)"
+          "text": "Le disque-frein (28)"
         },
         {
           "id": "d",
-          "text": "Le planétaire (20)"
+          "text": "La noix (5)"
         },
         {
           "id": "e",
-          "text": "La noix de levage (5)"
+          "text": "Le premier étage (satellites 19, porte-satellites 16)"
+        },
+        {
+          "id": "f",
+          "text": "L'arbre de transmission (2)"
         }
       ],
       "answerKey": {
-        "correct": [
+        "order": [
+          "f",
           "c",
-          "d",
-          "e"
+          "b",
+          "e",
+          "a",
+          "d"
         ]
       },
-      "explanation": "Le glissement a lieu entre (28) et (26) : (28) reste lié à l'arbre (2) et au moteur, donc ils tournent encore. Du côté de la sortie, le disque (26), le planétaire (20) qui lui est lié et la noix (5) s'arrêtent : la charge n'est pas soulevée.",
+      "explanation": "Le rotor (3) entraîne l'arbre (2) par une cannelure ; l'arbre entraîne le disque-frein (28) par cannelures ; (28) entraîne par adhérence le disque limiteur (26), lié au planétaire (20). Le planétaire engrène avec les satellites (19), portés par (16) : c'est le premier étage. Le porte-satellites (16) entraîne le second étage, dont le porte-satellites (9) entraîne la noix (5). L'adhérence entre (28) et (26) est la seule liaison qui glisse en surcharge.",
       "difficulty": 2
     },
     {
@@ -83,51 +90,51 @@
       "difficulty": 3
     },
     {
-      "prompt": "Pour calculer la charge maximale d'un palan, un élève écrit F = 600 / 3,6 et trouve 167 N, alors que la charge attendue est de l'ordre de 10 000 N. Quelle correction faut-il apporter ?",
+      "prompt": "Un palan a un moteur de 1,5 kW et un rendement de 0,8 (valeurs d'illustration). Pour trouver sa charge maximale à V = 4,8 m/min, un élève calcule la puissance utile, 1 200 W, puis écrit F = 1 200 / 4,8 = 250 N, soit 25 kg environ : c'est absurde pour ce palan. Quelle correction faut-il apporter ?",
       "options": [
         {
           "id": "a",
-          "text": "Convertir d'abord la vitesse de levage en mètres par seconde"
-        },
-        {
-          "id": "b",
           "text": "Remplacer la puissance utile par la puissance du moteur"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Multiplier la puissance par la vitesse au lieu de la diviser"
         },
         {
-          "id": "d",
-          "text": "Diviser par le diamètre de la noix, 0,042 m, et non par la vitesse"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "P = F × V suppose V en m/s : 3,6 m/min = 0,06 m/s, donc F = 600 / 0,06 = 10 000 N. Avec la puissance du moteur on trouverait seulement 222 N, avec un produit 2 160, et diviser par le diamètre de la noix donne 14 286 N, ce qui n'a aucun sens physique.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Un embrayage à friction plane à une seule surface est remplacé par un embrayage conique dont la surface fait un angle α = 30° avec l'axe, avec le même effort axial F, le même f et les mêmes rayons R et r. Que devient le couple transmissible Ct ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Il est divisé par 2"
-        },
-        {
-          "id": "b",
-          "text": "Il est inchangé"
-        },
-        {
           "id": "c",
-          "text": "Il est multiplié par 1,15"
+          "text": "Appliquer encore le rendement 0,8 à la puissance utile"
         },
         {
           "id": "d",
-          "text": "Il est multiplié par 2"
+          "text": "Convertir d'abord la vitesse de levage en mètres par seconde"
         }
       ],
       "correctOption": "d",
-      "explanation": "Pour le cône, l'effort axial est remplacé par F / sin α : avec sin 30° = 0,5, on obtient 2 × F, donc un couple multiplié par 2. Le diviser par 2 revient à multiplier F par sin α, l'inchangé oublie l'effet du cône, et 1,15 est l'inverse du cosinus de 30° : l'angle de la formule est celui avec l'axe, et c'est le sinus qui intervient.",
+      "explanation": "P = F × V suppose V en m/s : 4,8 m/min = 0,08 m/s, donc F = 1 200 / 0,08 = 15 000 N. La puissance du moteur ignorerait le rendement, déjà pris en compte dans les 1 200 W. Un produit donnerait 5 760, et appliquer encore le rendement donnerait 960 / 4,8 = 200 N, toujours faux par le même oubli de conversion.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un embrayage à friction plane à une seule surface est remplacé par un embrayage conique dont la surface fait un angle α = 20° avec l'axe, avec le même effort axial F, le même f et les mêmes rayons R et r. Que devient le couple transmissible Ct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est multiplié par 2,92"
+        },
+        {
+          "id": "b",
+          "text": "Il est multiplié par 0,34"
+        },
+        {
+          "id": "c",
+          "text": "Il est multiplié par 1,06"
+        },
+        {
+          "id": "d",
+          "text": "Il est inchangé"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour le cône, l'effort axial est remplacé par F / sin α : avec sin 20° ≈ 0,342, on obtient F / 0,342 ≈ 2,92 × F, donc un couple multiplié par 2,92. Multiplier par 0,34 revient à utiliser F × sin α au lieu de diviser ; 1,06 est l'inverse du cosinus de 20°, or c'est le sinus qui intervient ; l'inchangé oublie l'effet du cône.",
       "difficulty": 3
     },
     {

@@ -17,135 +17,48 @@
   },
   "questions": [
     {
-      "type": "ordering",
-      "prompt": "Tu enclenches la 5e vitesse en partant du point mort. Remets dans l'ordre ce qui se passe.",
+      "prompt": "En passant une vitesse, on entend les crabots craquer : le baladeur a atteint le pignon fou avant la fin du temps 1. Qu'est-ce qui manquait au moment du crabotage ?",
       "options": [
         {
           "id": "a",
-          "text": "Il entraîne la bague de synchronisation par les clavettes"
+          "text": "L'égalité de vitesse entre pignon fou et moyeu"
         },
         {
           "id": "b",
-          "text": "Le baladeur poursuit sa course, les clavettes s'effacent"
+          "text": "L'effacement complet des clavettes devant le baladeur"
         },
         {
           "id": "c",
-          "text": "Les crabots s'emboîtent : le pignon fou est lié au moyeu"
+          "text": "Le serrage du disque contre le volant moteur"
         },
         {
           "id": "d",
-          "text": "Le baladeur se déplace vers le pignon fou"
-        },
-        {
-          "id": "e",
-          "text": "La bague frotte sur le cône et le pignon fou prend sa vitesse"
+          "text": "Le contact de la fourchette avec le baladeur"
         }
       ],
-      "answerKey": {
-        "order": [
-          "d",
-          "a",
-          "e",
-          "b",
-          "c"
-        ]
-      },
-      "explanation": "Au temps 1, le baladeur se déplace, entraîne la bague par les clavettes, et le frottement de la bague sur le cône donne au pignon fou la vitesse de la bague. Seulement après, au temps 2, le baladeur poursuit sa course, les clavettes s'effacent et les crabots s'emboîtent : on égalise avant de lier.",
+      "correctOption": "a",
+      "explanation": "Le crabotage ne doit se faire qu'une fois les vitesses égalisées : c'est le rôle du temps 1, où la bague frotte sur le cône du pignon fou. Si le baladeur pousse trop tôt, les crabots tournent à des vitesses différentes et craquent. L'effacement des clavettes appartient au temps 2 et en est la suite ; le disque et le volant relèvent de l'embrayage, pas du synchroniseur ; la fourchette est déjà en contact, puisqu'elle déplace le baladeur.",
       "difficulty": 2
     },
     {
-      "type": "matching",
-      "prompt": "Associe chaque pièce de la chaîne volant-boîte à ce qu'elle fait.",
-      "options": [
-        {
-          "id": "l1",
-          "text": "La couronne dentée (7)"
-        },
-        {
-          "id": "l2",
-          "text": "Les ressorts du moyeu amortisseur"
-        },
-        {
-          "id": "l3",
-          "text": "La fourchette (18)"
-        },
-        {
-          "id": "l4",
-          "text": "Le ressort (24)"
-        },
-        {
-          "id": "r1",
-          "text": "Absorber les à-coups de couple"
-        },
-        {
-          "id": "r2",
-          "text": "Ramener la fourchette, ce qui embraye"
-        },
-        {
-          "id": "r3",
-          "text": "Laisser le démarreur lancer le moteur"
-        },
-        {
-          "id": "r4",
-          "text": "Pousser la butée pour débrayer"
-        }
-      ],
+      "type": "numeric",
+      "prompt": "Les pistons d'un trois-cylindres de 1,2 L ont une course de 90 mm. Quel est leur diamètre, en mm ?",
       "answerKey": {
-        "pairs": [
-          [
-            "l1",
-            "r3"
-          ],
-          [
-            "l2",
-            "r1"
-          ],
-          [
-            "l3",
-            "r4"
-          ],
-          [
-            "l4",
-            "r2"
-          ]
-        ]
+        "value": 75.2,
+        "unit": "mm",
+        "tolerance": 0.3
       },
-      "explanation": "La couronne dentée, montée sur le volant, permet au démarreur de lancer le moteur ; les ressorts du moyeu amortisseur absorbent les à-coups de couple ; la fourchette pousse la butée pour débrayer ; le ressort (24) la ramène, ce qui embraye.",
+      "explanation": "Un piston balaie 1,2 L / 3 = 0,4 L = 400 cm³ = 400 000 mm³. Sa surface est 400 000 / 90 ≈ 4 444 mm². Comme S = π d² / 4, d = √(4 × 4 444 / π) ≈ 75,2 mm.",
       "difficulty": 2
     },
     {
-      "type": "multi",
-      "prompt": "Lesquelles de ces affirmations sur la vitesse du piston et du point A de la manivelle sont justes ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Au PMH et au PMB, la vitesse du piston est nulle"
-        },
-        {
-          "id": "b",
-          "text": "À vitesse de rotation constante, la norme de la vitesse de A reste constante"
-        },
-        {
-          "id": "c",
-          "text": "La norme de la vitesse du piston reste égale à celle de A pendant toute la rotation"
-        },
-        {
-          "id": "d",
-          "text": "La vitesse de A est dirigée le long de la bielle"
-        },
-        {
-          "id": "e",
-          "text": "Les points A et B de la bielle ont toujours la même vitesse"
-        }
-      ],
+      "type": "numeric",
+      "prompt": "Un moteur à 4 cylindres tourne à 2 400 tr/min. Combien de temps moteur fournit-il au total en une seconde ?",
       "answerKey": {
-        "correct": [
-          "a",
-          "b"
-        ]
+        "value": 80
       },
-      "explanation": "Au PMH et au PMB, la vitesse de A est perpendiculaire à la bielle, donc sa projection sur AB est nulle, et celle du piston aussi. La norme de la vitesse de A vaut ω × R, constante à N constant. La vitesse du piston varie de 0 à une valeur maximale ; la vitesse de A est tangente au cercle, pas le long de la bielle ; et A et B n'ont pas la même vitesse, seules leurs projections sur AB sont égales.",
-      "difficulty": 2
+      "explanation": "2 400 tr/min = 40 tr/s. Un cycle dure 2 tours : chaque cylindre fait 40 / 2 = 20 cycles par seconde, donc 20 temps moteur par seconde. Avec 4 cylindres : 4 × 20 = 80 temps moteur par seconde.",
+      "difficulty": 3
     },
     {
       "type": "numeric",

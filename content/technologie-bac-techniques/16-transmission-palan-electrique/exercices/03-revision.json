@@ -99,34 +99,38 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un mécanisme doit donner une course de 60 mm. Lequel convient ?",
+      "prompt": "Un mécanisme doit donner une course de 50 mm. Lequel convient ?",
       "options": [
         {
           "id": "a",
-          "text": "Un excentrique d'excentricité 60 mm"
+          "text": "Un excentrique d'excentricité 50 mm"
         },
         {
           "id": "b",
-          "text": "Un excentrique d'excentricité 30 mm"
+          "text": "Un excentrique d'excentricité 12,5 mm"
         },
         {
           "id": "c",
-          "text": "Une bielle-manivelle de manivelle 15 mm et de bielle 60 mm"
+          "text": "Une bielle-manivelle de manivelle 25 mm et de bielle 120 mm"
+        },
+        {
+          "id": "d",
+          "text": "Une bielle-manivelle de manivelle 50 mm et de bielle 120 mm"
         }
       ],
-      "correctOption": "b",
-      "explanation": "La course d'un excentrique vaut 2 × e : pour 60 mm, il faut e = 30 mm. Avec e = 60 mm on obtient 120 mm. Dans une bielle-manivelle la course vaut 2 × R, soit 30 mm ici : la longueur de la bielle n'intervient pas.",
+      "correctOption": "c",
+      "explanation": "La course d'une bielle-manivelle vaut 2 × R : pour 50 mm, il faut R = 25 mm, et la longueur de la bielle, 120 mm, n'intervient pas. Un excentrique de 50 mm donnerait 100 mm, un excentrique de 12,5 mm donnerait 25 mm, et une manivelle de 50 mm donnerait 100 mm.",
       "difficulty": 2
     },
     {
       "type": "numeric",
-      "prompt": "Un moteur à 3 cylindres a un alésage D = 76 mm et une course L = 80 mm. Quelle est sa cylindrée totale, en cm³ ?",
+      "prompt": "Un moteur à 4 cylindres a une cylindrée totale de 1 600 cm³ et une course L = 80 mm (valeurs d'entraînement). Quel est l'alésage D de chaque cylindre, en mm ?",
       "answerKey": {
-        "value": 1088.8,
-        "tolerance": 2,
-        "unit": "cm³"
+        "value": 79.8,
+        "tolerance": 0.5,
+        "unit": "mm"
       },
-      "explanation": "Pour un cylindre, V = π × D² × L / 4 = π × 76² × 80 / 4 ≈ 362 917 mm³, soit environ 362,9 cm³. Pour trois cylindres, C = V × n ≈ 362,9 × 3 ≈ 1088,8 cm³, soit environ 1,09 L.",
+      "explanation": "Un cylindre balaie 1 600 / 4 = 400 cm³ = 400 000 mm³. Comme V = π × D² × L / 4, D² = 4 × V / (π × L) = 4 × 400 000 / (π × 80) ≈ 6 366 mm², donc D ≈ 79,8 mm. Oublier de diviser par les 4 cylindres donnerait un alésage près de deux fois trop grand, environ 159,6 mm.",
       "difficulty": 2
     }
   ]

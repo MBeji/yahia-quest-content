@@ -20,15 +20,15 @@
       "options": [
         {
           "id": "l1",
-          "text": "Une garniture sur les deux s'arrache (n passe de 2 à 1)"
+          "text": "Les garnitures sont remplacées : f passe de 0,4 à 0,5"
         },
         {
           "id": "l2",
-          "text": "Un ressort sur les trois casse"
+          "text": "Les 3 ressorts sont remplacés par 4 ressorts identiques aux anciens"
         },
         {
           "id": "l3",
-          "text": "Le coefficient f passe de 0,4 à 0,3"
+          "text": "La couronne de frottement est agrandie : R et r sont tous deux doublés"
         },
         {
           "id": "l4",
@@ -36,7 +36,7 @@
         },
         {
           "id": "r1",
-          "text": "Cf est multiplié par 2/3"
+          "text": "Cf est multiplié par 4/3"
         },
         {
           "id": "r2",
@@ -44,11 +44,11 @@
         },
         {
           "id": "r3",
-          "text": "Cf est divisé par 2"
+          "text": "Cf est multiplié par 5/4"
         },
         {
           "id": "r4",
-          "text": "Cf est multiplié par 3/4"
+          "text": "Cf est multiplié par 2"
         }
       ],
       "answerKey": {
@@ -71,7 +71,7 @@
           ]
         ]
       },
-      "explanation": "Avec une seule garniture, n est divisé par 2 : Cf est divisé par 2. Un ressort sur trois cassé fait tomber Fp aux 2/3, donc Cf aussi. Passer de f = 0,4 à 0,3 multiplie Cf par 0,3 / 0,4 = 3/4. La vitesse de rotation n'apparaît pas dans la formule : Cf ne change pas.",
+      "explanation": "Cf est proportionnel à f : passer de 0,4 à 0,5 le multiplie par 0,5 / 0,4 = 5/4. Quatre ressorts identiques au lieu de trois portent Fp à 4/3 de sa valeur, donc Cf aussi. Doubler R et r double le rayon d'action Rm, qui varie comme les rayons : Cf est multiplié par 2. La vitesse de rotation n'apparaît pas dans la formule : Cf ne change pas.",
       "difficulty": 3
     },
     {
@@ -113,7 +113,7 @@
     },
     {
       "type": "numeric",
-      "prompt": "À la plus basse vitesse, 50 tr/min, la broche exerce un couple de 300 N·m. Le moteur fournit la même puissance dans les deux cas et le rendement de la boîte ne change pas. À quelle vitesse la broche exerce-t-elle un couple de 12 N·m, en tr/min ?",
+      "prompt": "À la plus basse vitesse, 50 tr/min, la broche exerce un couple de 300 N·m. Le moteur fournit la même puissance dans les deux cas et le rendement de la boîte ne change pas. À quelle vitesse, gamme de la plaque mise à part, la broche exercerait-elle un couple de 12 N·m, en tr/min ?",
       "answerKey": {
         "value": 1250,
         "unit": "tr/min"
@@ -157,13 +157,13 @@
     },
     {
       "type": "numeric",
-      "prompt": "Dans le dernier étage, un pignon de 17 dents mène une roue de 73 dents de la broche. Le même baladeur porte aussi une roue de 56 dents, qui doit s'engrener avec une autre roue de la broche, sur le même entraxe et avec le même module. L'arbre cannelé (21) tourne à 120 tr/min. À quelle vitesse tourne la broche avec la paire de 56 dents, en tr/min ?",
+      "prompt": "Dans un étage, un pignon de 18 dents mène une roue de 72 dents. Le même baladeur porte aussi une roue de 54 dents, qui doit s'engrener avec une autre roue du même arbre de sortie, sur le même entraxe et avec le même module. L'arbre d'entrée tourne à 120 tr/min. À quelle vitesse tourne l'arbre de sortie avec la paire de 54 dents, en tr/min ?",
       "answerKey": {
-        "value": 197.6,
+        "value": 180,
         "tolerance": 0.5,
         "unit": "tr/min"
       },
-      "explanation": "La somme de dents reste constante : 17 + 73 = 90, donc la roue qui s'engrène avec les 56 dents en a 90 − 56 = 34. Le rapport est r = 56 / 34 ≈ 1,647, donc la broche tourne à 120 × 1,647 ≈ 197,6 tr/min. Prendre la paire 17 / 73 donnerait seulement 120 × 0,233 ≈ 28 tr/min.",
+      "explanation": "La somme de dents reste constante : 18 + 72 = 90, donc la roue qui s'engrène avec les 54 dents en a 90 − 54 = 36. Le rapport est r = 54 / 36 = 1,5, donc l'arbre de sortie tourne à 120 × 1,5 = 180 tr/min. Prendre la paire 18 / 72 donnerait seulement 120 × 0,25 = 30 tr/min.",
       "difficulty": 3
     }
   ]

@@ -123,39 +123,39 @@
     },
     {
       "type": "ordering",
-      "prompt": "Tu appuies sur la pédale de la maquette. Remets dans l'ordre ce qui se passe, de la fourchette au disque.",
+      "prompt": "On relâche la pédale après un passage de vitesse. Remets dans l'ordre ce qui se passe, de la fourchette au disque.",
       "options": [
         {
-          "id": "a",
-          "text": "La butée appuie sur le diaphragme (11)"
-        },
-        {
-          "id": "b",
-          "text": "Le plateau (8) recule"
-        },
-        {
           "id": "c",
-          "text": "La fourchette (18) pousse la butée (13)"
-        },
-        {
-          "id": "d",
-          "text": "Le disque (26) n'est plus serré : la liaison est coupée"
+          "text": "Le diaphragme reprend sa forme"
         },
         {
           "id": "e",
-          "text": "Le diaphragme se déforme"
+          "text": "Le volant entraîne le disque : l'embrayage est rétabli"
+        },
+        {
+          "id": "a",
+          "text": "Le ressort (24) ramène la fourchette (18)"
+        },
+        {
+          "id": "d",
+          "text": "Le plateau (8) serre de nouveau le disque (26)"
+        },
+        {
+          "id": "b",
+          "text": "La butée (13) cesse d'appuyer sur le diaphragme (11)"
         }
       ],
       "answerKey": {
         "order": [
-          "c",
           "a",
-          "e",
           "b",
-          "d"
+          "c",
+          "d",
+          "e"
         ]
       },
-      "explanation": "La poussée suit la chaîne du débrayage : la fourchette pousse la butée, qui appuie sur le diaphragme ; celui-ci se déforme, ce qui fait reculer le plateau ; une fois le plateau reculé, le disque n'est plus serré et ne transmet plus.",
+      "explanation": "Au relâchement, le ressort (24) ramène la fourchette ; la butée cesse alors d'appuyer sur le diaphragme, qui reprend sa forme ; le plateau serre de nouveau le disque contre le volant, qui l'entraîne : l'embrayage est rétabli.",
       "difficulty": 2
     },
     {
@@ -180,7 +180,7 @@
         },
         {
           "id": "e",
-          "text": "Le volant moteur aide le vilebrequin à franchir les points morts"
+          "text": "Au PMH, l'axe du vilebrequin, A et B sont alignés"
         }
       ],
       "answerKey": {
@@ -190,7 +190,7 @@
           "e"
         ]
       },
-      "explanation": "Le piston est le coulisseau et le cylindre la glissière ; la course est bien la distance entre le PMH et le PMB ; le volant moteur aide à franchir les points morts. La transformation est réversible : en tournant le vilebrequin à la manivelle, on déplace le piston. Et la course vaut 2R, le double du rayon, pas le rayon.",
+      "explanation": "Le piston est le coulisseau et le cylindre la glissière ; la course est bien la distance entre le PMH et le PMB ; au PMH, O, A et B sont alignés. La transformation est réversible : en tournant le vilebrequin à la manivelle, on déplace le piston. Et la course vaut 2R, le double du rayon, pas le rayon.",
       "difficulty": 2
     }
   ]
