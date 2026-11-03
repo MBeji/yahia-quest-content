@@ -1,0 +1,167 @@
+{
+  "title": "⭐⭐ Révision (type examen) : cotes, train, coupe et impression",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "262-279",
+    "items": [
+      "étape 12 (rapports du train)",
+      "étape 20 e (gamme, p.273)"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Dans la fabrication de l'arbre planétaire, qu'est-ce qu'une cote outil (Co) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une dimension que la machine règle en positionnant l'outil sur la pièce"
+        },
+        {
+          "id": "b",
+          "text": "Une dimension donnée par l'outil lui-même, comme le foret de Ø3,3"
+        },
+        {
+          "id": "c",
+          "text": "Une dimension relevée au contrôle, comme avec le pied à coulisse au 1/50"
+        },
+        {
+          "id": "d",
+          "text": "Une dimension du dessin d'ensemble entre deux pièces"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une cote outil est imposée par l'outil lui-même : le foret de Ø3,3 donne le diamètre du trou, le taraud M4 le filet. Une dimension que la machine règle en déplaçant l'outil est une cote machine ; le pied à coulisse sert à contrôler, et une dimension du dessin d'ensemble ne se fabrique pas telle quelle.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour l'extrémité de l'arbre qui doit recevoir un taraudage M4, remets dans l'ordre ces opérations.",
+      "options": [
+        {
+          "id": "e",
+          "text": "Tarauder à la main, tour hors tension"
+        },
+        {
+          "id": "c",
+          "text": "Centrer l'extrémité au foret à centrer"
+        },
+        {
+          "id": "a",
+          "text": "Contrôler le brut scié"
+        },
+        {
+          "id": "d",
+          "text": "Percer au diamètre du taraudage"
+        },
+        {
+          "id": "b",
+          "text": "Dresser la face d'extrémité"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On contrôle le brut avant tout usinage. On dresse la face pour qu'elle soit plane, puis on centre : l'avant-trou guide le foret, qui perce ensuite au diamètre moins le pas. Le taraud, enfin, ne peut travailler que dans le trou déjà percé, tour hors tension.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "La maquette (planétaire de 18 dents, couronne de 54 dents) doit donner une sortie plus rapide que l'entrée, dans le même sens. Quelles configurations conviennent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Couronne bloquée : planétaire en entrée, porte-satellite en sortie"
+        },
+        {
+          "id": "b",
+          "text": "Couronne bloquée : porte-satellite en entrée, planétaire en sortie"
+        },
+        {
+          "id": "c",
+          "text": "Planétaire bloqué : couronne en entrée, porte-satellite en sortie"
+        },
+        {
+          "id": "d",
+          "text": "Planétaire bloqué : porte-satellite en entrée, couronne en sortie"
+        },
+        {
+          "id": "e",
+          "text": "Porte-satellite bloqué : couronne en entrée, planétaire en sortie"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Il faut |r| > 1 et r > 0. Couronne bloquée, porte-satellite en entrée : r = 72 / 18 = 4. Planétaire bloqué, porte-satellite en entrée : r = 72 / 54 ≈ 1,33. Les deux configurations où le planétaire ou la couronne mène donnent 0,25 et 0,75 : ce sont des réducteurs. Porte-satellite bloqué avec la couronne en entrée donne −3, plus rapide mais en sens inverse.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un arbre Ø12 a pour écarts −0,006 et −0,017. Il est monté dans un alésage Ø12 d'écarts +0,018 et 0. Quel est le jeu maxi, en mm ?",
+      "answerKey": {
+        "value": 0.035,
+        "unit": "mm"
+      },
+      "explanation": "L'arbre mini vaut 12 − 0,017 = 11,983 et l'alésage maxi 12 + 0,018 = 12,018. Jeu maxi = 12,018 − 11,983 = 0,035 mm. Avec l'arbre maxi, on obtiendrait 12,018 − 11,994 = 0,024 : ce n'est pas le cas le plus lâche.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fraise à deux lèvres travaille avec une avance de 0,08 mm par tour. Quelle est son avance par dent, en mm par dent ?",
+      "answerKey": {
+        "value": 0.04,
+        "unit": "mm/dent"
+      },
+      "explanation": "L'avance par tour se répartit entre les dents : f = fz × z, donc fz = f / z = 0,08 / 2 = 0,04 mm par dent. Multiplier par le nombre de dents, 0,08 × 2 = 0,16, retournerait la relation.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sur la fabrication additive du porte-satellite sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le fichier .STL décrit la forme de la pièce, pas les mouvements de l'imprimante"
+        },
+        {
+          "id": "b",
+          "text": "Le tranchage découpe le modèle en couches et produit le fichier .Gcode"
+        },
+        {
+          "id": "c",
+          "text": "Une densité de remplissage plus forte rend la pièce plus légère"
+        },
+        {
+          "id": "d",
+          "text": "La fabrication additive enlève de la matière dans un brut massif"
+        },
+        {
+          "id": "e",
+          "text": "L'impression se lance, carte SD insérée, en présence de l'enseignant"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Le .STL est un maillage qui décrit la forme ; le tranchage le découpe en couches et écrit le .Gcode que l'imprimante exécute ; l'impression se fait en présence de l'enseignant. Un remplissage plus dense rend au contraire la pièce plus lourde et plus solide, et la fabrication additive ajoute de la matière, au lieu d'en enlever.",
+      "difficulty": 2
+    }
+  ]
+}

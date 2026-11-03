@@ -237,7 +237,7 @@ Sur la figure, le rectangle bleu est σN (le même partout), le triangle jaune e
 :::
 
 ::: propriete La condition de résistance en flexion–traction
-La plus forte contrainte normale est celle de la fibre la plus tendue. On la compare à la **résistance pratique à l'extension Rpe = Re / s** :
+En flexion–traction, la plus forte contrainte normale est celle de la fibre la plus tendue. On la compare à la **résistance pratique à l'extension Rpe = Re / s** :
 
 $$ ‖N‖ / S + ‖Mfz max‖ / (IGz / v) ≤ Rpe $$
 
@@ -259,7 +259,7 @@ Comment décider, calcul à l'appui ?
 ::: definition Rpe et la contrainte équivalente σéq
 La désignation **S355** indique une limite élastique Re = 355 MPa (principe). La **résistance pratique** est donc Rpe = Re / s = 355 / 4 = **88,75 MPa**.
 
-La colonne σéq du manuel est la contrainte de la fibre la plus tendue : **σéq = σN + σf**, qui doit rester inférieure ou égale à Rpe. Le tube retenu est le **plus petit** (donc le plus léger) qui vérifie la condition.
+La colonne σéq du manuel est la plus grande contrainte normale en valeur absolue : **σéq = ‖N‖ / S + ‖Mfz‖ / (IGz / v)**, portée par la fibre la plus tendue en flexion–traction et par la fibre la plus comprimée en flexion–compression. Elle doit rester inférieure ou égale à Rpe. Le tube retenu est le **plus petit** (donc le plus léger) qui vérifie la condition.
 :::
 
 ::: exemple Les trois tubes, dans la section la plus sollicitée (valeurs du manuel)
@@ -311,7 +311,7 @@ Dans les deux cas, la contrainte est **proportionnelle à la distance** (ρ ou y
 | Contrainte | tangentielle τ | normale σ |
 | Maximum | τmax = Mt / (I0 / R), en ρ = R | σmax = Mfz / (IGz / v), en y = v |
 | Condition de résistance | τmax ≤ Rpg, avec Rpg = Reg / s | σmax ≤ Rpe, avec Rpe = Re / s |
-| Condition de rigidité | θ = Mt / (G × I0) ≤ θlimite (fixé par l'expérience) | la flèche n'est pas formalisée dans la synthèse |
+| Condition de rigidité | θ = Mt / (G × I0) ≤ θlimite (fixé par l'expérience) | la déformée (flèche f de la poutre) n'est pas formalisée dans la synthèse |
 :::
 
 ::: figure Les deux répartitions de contrainte. En torsion (section ronde) comme en flexion, la contrainte est une droite qui passe par zéro au centre et vaut ±max au bord

@@ -29,6 +29,17 @@
       "difficulty": 2
     },
     {
+      "type": "numeric",
+      "prompt": "Même potence (FAy = −3 000 N, AB = 300 mm). Quelle est la valeur maximale du moment fléchissant Mfz, en N·m ?",
+      "answerKey": {
+        "value": 900,
+        "tolerance": 1,
+        "unit": "N·m"
+      },
+      "explanation": "Dans le tronçon AB, seule FA agit à gauche de la coupure : Mfz = 3 000 × x. Le maximum est en B, à x = 300 mm : 3 000 × 300 = 900 000 N·mm = 900 N·m. Le contrôle par la droite donne le même résultat : 1 000 × 900 = 900 000 N·mm, avec la part perpendiculaire de P et la distance BC = 900 mm.",
+      "difficulty": 2
+    },
+    {
       "prompt": "Même potence (FV = 4 000 N, perpendiculaire à la flèche). Quelle est la sollicitation de la section située entre A et B ?",
       "options": [
         {
@@ -54,24 +65,13 @@
     },
     {
       "type": "numeric",
-      "prompt": "Même potence (FAy = −3 000 N, AB = 300 mm). Quelle est la valeur maximale du moment fléchissant Mfz, en N·m ?",
-      "answerKey": {
-        "value": 900,
-        "tolerance": 1,
-        "unit": "N·m"
-      },
-      "explanation": "Dans le tronçon AB, seule FA agit à gauche de la coupure : Mfz = 3 000 × x. Le maximum est en B, à x = 300 mm : 3 000 × 300 = 900 000 N·mm = 900 N·m. Le contrôle par la droite donne le même résultat : 1 000 × 900 = 900 000 N·mm, avec la part perpendiculaire de P et la distance BC = 900 mm.",
-      "difficulty": 3
-    },
-    {
-      "type": "numeric",
-      "prompt": "La flèche de la même potence est un tube carré 60 × 60 × 5 (S = 1 100 mm², IGz / v ≈ 18 639 mm³). Dans la section B, côté A, on a N = 1 732 N (compression) et Mfz = 900 N·m. Quelle est la contrainte normale maximale dans cette section, en MPa ?",
+      "prompt": "La flèche de la même potence est un tube carré 60 × 60 × 5 (S = 1 100 mm², IGz / v ≈ 18 639 mm³). Dans la section B, côté A, on a N = −1 732 N (compression) et Mfz = 900 N·m. Quelle est la plus grande contrainte normale en valeur absolue dans cette section, celle de la fibre la plus comprimée, en MPa ?",
       "answerKey": {
         "value": 49.9,
         "tolerance": 0.3,
         "unit": "MPa"
       },
-      "explanation": "‖N‖ / S = 1 732 / 1 100 ≈ 1,57 MPa. Mfz / (IGz / v) = 900 000 / 18 639 ≈ 48,29 MPa (le moment en N·mm). La somme des valeurs absolues vaut ≈ 49,9 MPa : dans la fibre la plus comprimée, la compression et la flexion s'additionnent. Soustraire donnerait 46,7 MPa, qui sous-estime la contrainte ; oublier ‖N‖ / S donnerait 48,3 MPa.",
+      "explanation": "‖N‖ / S = 1 732 / 1 100 ≈ 1,57 MPa. Mfz / (IGz / v) = 900 000 / 18 639 ≈ 48,29 MPa (le moment en N·mm). La somme des valeurs absolues vaut ≈ 49,9 MPa : dans la fibre la plus comprimée, la compression et la flexion s'additionnent. La fibre opposée, tendue, ne porte que 48,29 − 1,57 ≈ 46,7 MPa : ce n'est pas elle qui dimensionne. Oublier ‖N‖ / S donnerait 48,3 MPa.",
       "difficulty": 3
     },
     {

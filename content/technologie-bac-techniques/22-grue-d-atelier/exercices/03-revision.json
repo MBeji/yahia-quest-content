@@ -17,27 +17,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Quelle affirmation est exacte pour une section circulaire en torsion simple ?",
+      "prompt": "Pour un arbre plein de diamètre d, comment se compare le module de torsion I0 / R au module de flexion IGz / v ?",
       "options": [
         {
           "id": "a",
-          "text": "La contrainte tangentielle est maximale au centre de la section"
+          "text": "Il vaut la moitié de IGz / v"
         },
         {
           "id": "b",
-          "text": "La contrainte tangentielle est la même en tous les points de la section"
+          "text": "Il est égal à IGz / v"
         },
         {
           "id": "c",
-          "text": "La contrainte tangentielle est nulle au centre et maximale au bord"
+          "text": "Il vaut le double de IGz / v"
         },
         {
           "id": "d",
-          "text": "La contrainte tangentielle est maximale à mi-rayon de la section"
+          "text": "Il vaut le quadruple de IGz / v"
         }
       ],
       "correctOption": "c",
-      "explanation": "La contrainte tangentielle est proportionnelle à la distance au centre : τ = (Mt / I0) × ρ. Elle est donc nulle en ρ = 0 et maximale au bord, en ρ = R. Elle n'est ni maximale au centre, ni uniforme, ni maximale à mi-rayon, où elle vaut la moitié du maximum.",
+      "explanation": "I0 / R = π × d³ / 16 et IGz / v = π × d³ / 32 : le module de torsion vaut le double. Prendre I0 / R pour la flexion divise donc la contrainte calculée par deux, ce qui est l'erreur dangereuse.",
       "difficulty": 1
     },
     {
@@ -136,12 +136,12 @@
     },
     {
       "type": "numeric",
-      "prompt": "Un tirant a une section de S = 600 mm² et un module de flexion IGz / v = 12 000 mm³. Il porte N = 9 000 N et Mfz max = 240 000 N·mm. Quelle est sa contrainte normale maximale σN + σf, en MPa ?",
+      "prompt": "Un tirant a une section de S = 600 mm² et un module de flexion IGz / v = 12 000 mm³. Il porte N = 9 000 N et Mfz max = 240 000 N·mm. Quelle est la contrainte normale de la fibre opposée à la fibre la plus tendue, en MPa (signe compris) ?",
       "answerKey": {
-        "value": 35,
+        "value": -5,
         "unit": "MPa"
       },
-      "explanation": "σN = 9 000 / 600 = 15 MPa et σf max = 240 000 / 12 000 = 20 MPa. Comme les deux contraintes sont normales, elles s'additionnent : 15 + 20 = 35 MPa. Additionner les efforts, 9 000 + 240 000, n'aurait aucun sens, car N et Mfz n'ont pas la même unité.",
+      "explanation": "σN = 9 000 / 600 = 15 MPa et σf max = 240 000 / 12 000 = 20 MPa. Dans la fibre opposée, la flexion comprime : σ = 15 − 20 = −5 MPa. Additionner (35 MPa) donne la fibre tendue, pas celle-ci.",
       "difficulty": 2
     }
   ]

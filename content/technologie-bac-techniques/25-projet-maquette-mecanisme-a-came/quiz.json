@@ -1,0 +1,145 @@
+{
+  "title": "Test de compréhension ⭐ : la maquette à came et les synthèses",
+  "questions": [
+    {
+      "prompt": "La came du banc tourne à vitesse régulière. Pendant qu'un arc de son profil, centré sur l'axe de rotation, passe sous le poussoir, que fait le poussoir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il monte : son rythme est celui de la came"
+        },
+        {
+          "id": "b",
+          "text": "Il reste immobile : c'est une pause du mouvement"
+        },
+        {
+          "id": "c",
+          "text": "Il redescend : il rejoint le cercle de base"
+        },
+        {
+          "id": "d",
+          "text": "Il tourne : il suit le sens de rotation de la came"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un arc centré sur l'axe garde un rayon constant : le point de contact reste à la même distance de O, donc le poussoir ne bouge pas, c'est une pause. Il ne monte ni ne redescend sans variation du rayon, et il ne tourne pas : il est guidé en translation.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la mise en position d'une pièce prismatique, quels degrés de liberté l'appui plan (points 1, 2, 3) supprime-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tx, Ty et Tz"
+        },
+        {
+          "id": "b",
+          "text": "Rx, Ry et Rz"
+        },
+        {
+          "id": "c",
+          "text": "Tx, Ry et Tz"
+        },
+        {
+          "id": "d",
+          "text": "Ty, Rx et Rz"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'appui plan supprime la translation perpendiculaire au plan (Ty) et les deux rotations autour des axes du plan (Rx et Rz). Trois points ne font pas trois translations : Tx et Ry sont supprimés par l'appui linéaire, Tz par l'appui ponctuel.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quand la cote de fabrication ne coïncide avec aucune cote du dessin de définition, comment l'appelle-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une cote machine"
+        },
+        {
+          "id": "b",
+          "text": "Une cote appareillage"
+        },
+        {
+          "id": "c",
+          "text": "Une cote transférée"
+        },
+        {
+          "id": "d",
+          "text": "Une cote outil"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une cote de fabrication qui ne coïncide avec aucune cote du dessin est une cote transférée : on la déduit des cotes du dessin, par addition ou soustraction. Les cotes machine, outil et appareillage sont les trois origines d'une cote de fabrication, selon qu'elle vient du déplacement de la machine, de l'outil ou du montage.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle famille de matières plastiques supporte de grandes déformations avant rupture ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les élastomères"
+        },
+        {
+          "id": "b",
+          "text": "Les thermodurcissables"
+        },
+        {
+          "id": "c",
+          "text": "Les thermoplastiques"
+        },
+        {
+          "id": "d",
+          "text": "Les composites"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les élastomères ont des propriétés élastiques : ils supportent de grandes déformations avant de rompre. Les thermoplastiques se ramollissent à la chaleur, les thermodurcissables prennent une forme définitive, et les composites associent deux matériaux de nature différente.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel procédé consiste à chauffer une plaque pour la ramollir, puis à la mettre en forme avec un moule ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le rotomoulage"
+        },
+        {
+          "id": "b",
+          "text": "Le thermoformage"
+        },
+        {
+          "id": "c",
+          "text": "L'extrusion-soufflage"
+        },
+        {
+          "id": "d",
+          "text": "L'injection"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le thermoformage part d'une plaque chauffée, qui redurcit en refroidissant en gardant la forme du moule. Le rotomoulage part d'une poudre dans un moule fermé, l'extrusion-soufflage d'un tube extrudé, et l'injection d'une matière fluidifiée poussée dans l'empreinte.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une came à poussoir centré a un rayon mini de 22 mm et un rayon maxi de 35 mm. Quelle est la levée du poussoir, en mm ?",
+      "answerKey": {
+        "value": 13,
+        "unit": "mm"
+      },
+      "explanation": "La levée est la différence des deux rayons : 35 − 22 = 13 mm. Répondre 35 prendrait l'axe de la came pour point de départ, alors que le poussoir part du cercle de base.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le comparateur est mis à zéro sur une cale étalon de 35,000 mm, puis il lit −0,04 mm sur une pièce. Quelle est la longueur de la pièce, en mm ?",
+      "answerKey": {
+        "value": 34.96,
+        "unit": "mm"
+      },
+      "explanation": "La longueur est la cale plus l'écart lu, avec son signe : 35 − 0,04 = 34,96 mm. Un écart négatif désigne une pièce plus courte que la cale, et le cadran seul ne donne jamais la longueur.",
+      "difficulty": 2
+    }
+  ]
+}

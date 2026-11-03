@@ -40,12 +40,12 @@
     },
     {
       "type": "numeric",
-      "prompt": "D'après la seule colonne Matière de la nomenclature, combien de pièces du pédalo ne peuvent pas être classées avec certitude parmi les thermoplastiques ou les thermodurcissables ?",
+      "prompt": "D'après la seule colonne Matière de la nomenclature, combien de pièces en matière plastique (pièces non métalliques) du pédalo ne peuvent pas être classées avec certitude parmi les thermoplastiques ou les thermodurcissables ?",
       "answerKey": {
         "value": 4,
         "unit": "pièces"
       },
-      "explanation": "Le polyéthylène et le polyoxyde de méthylène sont thermoplastiques, le phénoplaste est thermodurcissable : ces matières sont classées. Restent le polyester, qui peut être une fibre ou une résine, avec les dossiers (nombre 2) et la toile (nombre 1), et la ligne « Plastique » de l'étoile (nombre 1) : 2 + 1 + 1 = 4 pièces. Le piège courant est de ne compter que les repères, ce qui donne 3.",
+      "explanation": "Les 6 pièces métalliques sont hors de la question. Le polyéthylène et le polyoxyde de méthylène sont thermoplastiques, le phénoplaste est thermodurcissable : ces matières sont classées. Restent le polyester, qui peut être une fibre ou une résine, avec les dossiers (nombre 2) et la toile (nombre 1), et la ligne « Plastique » de l'étoile (nombre 1) : 2 + 1 + 1 = 4 pièces. Le piège courant est de ne compter que les repères, ce qui donne 3.",
       "difficulty": 3
     },
     {
@@ -108,47 +108,47 @@
       "difficulty": 3
     },
     {
-      "prompt": "Le rotomoulage décrit dans ce chapitre chauffe une poudre qui fond, tapisse les parois, puis durcit en refroidissant. Quelle famille de matière suppose-t-il, et pourquoi ?",
+      "prompt": "La coque est rotomoulée en polyéthylène. Pourquoi ce procédé exige-t-il un thermoplastique et non un phénoplaste ?",
       "options": [
         {
           "id": "a",
-          "text": "Un thermodurcissable : il durcit pour toujours, ce qui facilite le moulage"
+          "text": "Le phénoplaste est trop dur pour être réduit en poudre fine"
         },
         {
           "id": "b",
-          "text": "Un thermodurcissable : il ne fond pas, ce qui évite qu'il coule dans le moule"
+          "text": "Le thermoplastique fond, puis redurcit quand le moule refroidit"
         },
         {
           "id": "c",
-          "text": "Un thermoplastique : il se ramollit à la chaleur et redurcit en refroidissant"
+          "text": "Le thermoplastique ne se ramollit qu'une fois, ce qui fige la coque"
         },
         {
           "id": "d",
-          "text": "Un thermoplastique : il ne se ramollit qu'une fois, ce qui suffit pour mouler"
+          "text": "Le phénoplaste fond trop vite et coulerait hors du moule fermé"
         }
       ],
-      "correctOption": "c",
-      "explanation": "La poudre doit fondre pour tapisser les parois, puis durcir en refroidissant : c'est le comportement d'un thermoplastique, qui se ramollit à la chaleur et redurcit au refroidissement. Un thermodurcissable ne fond pas de nouveau, et un thermoplastique se ramollit à chaque chauffage, pas une seule fois. Le piège courant est de croire que « durcir pour toujours » favorise le moulage.",
+      "correctOption": "b",
+      "explanation": "La poudre doit fondre pour tapisser les parois puis durcir au refroidissement : c'est le comportement d'un thermoplastique. Le phénoplaste est un thermodurcissable : il ne fond pas, il se dégrade. La dureté ne définit pas la famille, et un thermoplastique se ramollit à chaque chauffage, pas une seule fois.",
       "difficulty": 3
     },
     {
-      "prompt": "Sur ce schéma d'un moule de rotomoulage, que se passe-t-il, et pourquoi cette étape précède-t-elle l'ouverture du moule ?\n<svg viewBox=\"0 0 140 140\"><title>Un moule en cours de procédé, étape à identifier</title><rect x=\"6\" y=\"6\" width=\"128\" height=\"128\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"36\" y=\"60\" width=\"68\" height=\"50\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"40\" y=\"64\" width=\"60\" height=\"42\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M70 32 L70.0 46.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M70 32 L57.9 25.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M70 32 L82.1 25.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"70\" cy=\"32\" r=\"3.5\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"44\" x2=\"50.0\" y2=\"51.0\" stroke=\"#38bdf8\" stroke-width=\"1.8\"/><polygon points=\"50,57 47.0,51.0 53.0,51.0\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"44\" x2=\"90.0\" y2=\"51.0\" stroke=\"#38bdf8\" stroke-width=\"1.8\"/><polygon points=\"90,57 87.0,51.0 93.0,51.0\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"1\" stroke-linejoin=\"round\"/></svg>",
+      "prompt": "Sur ce schéma d'un moule de rotomoulage, quelle étape se déroule, et à quoi sert-elle ?\n<svg viewBox=\"0 0 140 140\"><title>Un moule en cours de procédé, étape à identifier</title><rect x=\"6\" y=\"6\" width=\"128\" height=\"128\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"36\" y=\"60\" width=\"68\" height=\"50\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><rect x=\"40\" y=\"64\" width=\"60\" height=\"42\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M70 32 L70.0 46.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M70 32 L57.9 25.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M70 32 L82.1 25.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"70\" cy=\"32\" r=\"3.5\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"44\" x2=\"50.0\" y2=\"51.0\" stroke=\"#38bdf8\" stroke-width=\"1.8\"/><polygon points=\"50,57 47.0,51.0 53.0,51.0\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"1\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"44\" x2=\"90.0\" y2=\"51.0\" stroke=\"#38bdf8\" stroke-width=\"1.8\"/><polygon points=\"90,57 87.0,51.0 93.0,51.0\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"1\" stroke-linejoin=\"round\"/></svg>",
       "options": [
         {
           "id": "a",
-          "text": "La matière fond avant de cristalliser : elle doit tapisser les parois"
+          "text": "Le chauffage : la matière fond pour tapisser les parois du moule"
         },
         {
           "id": "b",
-          "text": "La poudre est chargée : il faut la doser avant de fermer le moule"
+          "text": "Le chargement : la poudre est dosée avant la fermeture du moule"
         },
         {
           "id": "c",
-          "text": "La pièce est extraite : le moule doit être vidé avant le suivant"
+          "text": "Le démoulage : la pièce est extraite du moule rouvert"
         },
         {
           "id": "d",
-          "text": "La matière cristallise et durcit : elle garde sa forme à la sortie"
+          "text": "Le refroidissement : la matière cristallise et fixe sa forme"
         }
       ],
       "correctOption": "d",

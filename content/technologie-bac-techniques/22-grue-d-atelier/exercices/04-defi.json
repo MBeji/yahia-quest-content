@@ -7,7 +7,7 @@
   "displayOrder": 4,
   "questions": [
     {
-      "prompt": "Un élève vérifie un tube 80 × 80 × 5 (S = 1 500 mm², IGz / v = 35 312,5 mm³) en acier de limite élastique Re = 240 MPa avec s = 3, sous N = 45 000 N et Mfz max = 2 000 N·m :\nligne 1 : Rpe = 240 / 3 = 80 MPa ;\nligne 2 : σN = 45 000 / 1 500 = 30 MPa ;\nligne 3 : σf = 2 000 000 / 35 312,5 ≈ 56,64 MPa ;\nligne 4 : σéq = σf − σN ≈ 26,64 MPa, inférieur à 80 : le tube convient.\nQuelle ligne est fausse ?",
+      "prompt": "Un élève vérifie un tube 80 × 80 × 5 (S = 1 500 mm², IGz / v = 35 312,5 mm³) en acier de limite élastique Re = 240 MPa avec s = 3, sous N = 45 000 N et Mfz max = 2 000 N·m :\nligne 1 : σN = 45 000 / 1 500 = 30 MPa ;\nligne 2 : σf = 2 000 000 / 35 312,5 ≈ 56,64 MPa ;\nligne 3 : σéq = σf − σN ≈ 26,64 MPa ;\nligne 4 : Rpe = 240 / 3 = 80 MPa.\nIl conclut que le tube convient. Quelle ligne contient l'erreur ?",
       "options": [
         {
           "id": "a",
@@ -26,8 +26,43 @@
           "text": "La ligne 4"
         }
       ],
-      "correctOption": "d",
-      "explanation": "La ligne 4 est fausse : dans la fibre la plus tendue, la traction et la flexion sont toutes deux positives et s'additionnent, σéq = 30 + 56,64 ≈ 86,64 MPa. Cette valeur dépasse Rpe = 80 MPa : le tube ne convient pas. Les lignes 1, 2 et 3 sont justes. C'est une chasse à l'erreur : la bonne réponse est la ligne fausse, et la soustraction a fait croire à un tube sûr alors qu'il ne l'est pas.",
+      "correctOption": "c",
+      "explanation": "La ligne 3 est fausse : dans la fibre la plus tendue, la traction et la flexion sont toutes deux positives et s'additionnent, σéq = 30 + 56,64 ≈ 86,64 MPa. Cette valeur dépasse Rpe = 80 MPa : le tube ne convient pas. Les lignes 1, 2 et 4 sont justes. C'est une chasse à l'erreur : la bonne réponse est la ligne fausse, et la soustraction a fait croire à un tube sûr alors qu'il ne l'est pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur les sollicitations composées sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En flexion–traction, σN et σf s'additionnent parce que ce sont deux contraintes normales"
+        },
+        {
+          "id": "b",
+          "text": "En flexion–torsion, on additionne la contrainte normale σ et la contrainte tangentielle τ"
+        },
+        {
+          "id": "c",
+          "text": "Avec un effort normal N négatif, la condition ‖N‖ / S + ‖Mfz max‖ / (IGz / v) ≤ Rpe s'écrit de la même façon"
+        },
+        {
+          "id": "d",
+          "text": "Si N = 0, la condition de la flexion–traction devient celle de la flexion simple"
+        },
+        {
+          "id": "e",
+          "text": "En flexion–torsion d'un acier, le moment idéal vaut Mf + Mt"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Deux contraintes normales ont la même direction et s'additionnent ; avec N négatif, la fibre la plus comprimée porte la même somme en valeur absolue ; si N = 0 il ne reste que le terme de flexion. En flexion–torsion, σ est normale et τ tangentielle : elles ne s'additionnent pas, et le moment idéal d'un acier est √(Mf² + Mt²), plus petit que la somme Mf + Mt.",
       "difficulty": 2
     },
     {
@@ -63,41 +98,6 @@
       ],
       "correctOption": "b",
       "explanation": "On calcule σN + σf pour chaque tube : 60 × 60 × 4 donne 6,70 + 95,60 ≈ 102,3 MPa (refusé) ; 70 × 70 × 4 donne ≈ 73,9 MPa ; 80 × 80 × 4 donne ≈ 56,0 MPa ; 90 × 90 × 4 donne ≈ 44,1 MPa. Les trois derniers conviennent, et on garde le plus petit, donc le plus léger : 70 × 70 × 4. Choisir le 90 × 90 × 4 par précaution coûte 30 % d'aire de plus (1 376 contre 1 056 mm²) sans besoin.",
-      "difficulty": 3
-    },
-    {
-      "type": "multi",
-      "prompt": "Quelles affirmations sur les sollicitations composées sont vraies ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "En flexion–traction, σN et σf s'additionnent parce que ce sont deux contraintes normales"
-        },
-        {
-          "id": "b",
-          "text": "En flexion–torsion, on additionne la contrainte normale σ et la contrainte tangentielle τ"
-        },
-        {
-          "id": "c",
-          "text": "Avec un effort normal N négatif, la condition ‖N‖ / S + ‖Mfz max‖ / (IGz / v) ≤ Rpe s'écrit de la même façon"
-        },
-        {
-          "id": "d",
-          "text": "Si N = 0, la condition de la flexion–traction devient celle de la flexion simple"
-        },
-        {
-          "id": "e",
-          "text": "En flexion–torsion d'un acier, le moment idéal vaut Mf + Mt"
-        }
-      ],
-      "answerKey": {
-        "correct": [
-          "a",
-          "c",
-          "d"
-        ]
-      },
-      "explanation": "Deux contraintes normales ont la même direction et s'additionnent ; avec N négatif, la fibre la plus comprimée porte la même somme en valeur absolue ; si N = 0 il ne reste que le terme de flexion. En flexion–torsion, σ est normale et τ tangentielle : elles ne s'additionnent pas, et le moment idéal d'un acier est √(Mf² + Mt²), plus petit que la somme Mf + Mt.",
       "difficulty": 3
     },
     {

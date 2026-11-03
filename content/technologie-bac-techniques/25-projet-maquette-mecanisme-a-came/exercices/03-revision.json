@@ -1,0 +1,200 @@
+{
+  "title": "⭐⭐ Révision (type examen) : nomenclature, comparaison, familles et surfaces",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "282-288",
+    "items": [
+      "nomenclature (p.284)",
+      "métrologie (p.286)",
+      "plasturgie (p.287-288)",
+      "surfaces de base (p.285)"
+    ]
+  },
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans la nomenclature du banc, le repère 10 est une vis M6-25 en 3 exemplaires et le repère 12 une vis M6-10 en 4 exemplaires. Combien de vis M6 le banc compte-t-il ?",
+      "answerKey": {
+        "value": 7,
+        "unit": "vis"
+      },
+      "explanation": "On additionne la colonne Nbr. des deux lignes : 3 + 4 = 7 vis M6. Répondre 2 compterait les lignes au lieu des exemplaires.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque objet à la famille de plastique à laquelle le manuel le rattache.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Une brosse à dents"
+        },
+        {
+          "id": "l2",
+          "text": "Un bouton noir (molette)"
+        },
+        {
+          "id": "l3",
+          "text": "Un sabot souple"
+        },
+        {
+          "id": "l4",
+          "text": "Un casque en fibres et résine"
+        },
+        {
+          "id": "r1",
+          "text": "Thermoplastique"
+        },
+        {
+          "id": "r2",
+          "text": "Thermodurcissable"
+        },
+        {
+          "id": "r3",
+          "text": "Élastomère"
+        },
+        {
+          "id": "r4",
+          "text": "Composite"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La brosse à dents est un thermoplastique, le bouton noir un thermodurcissable, le sabot souple un élastomère, et le casque, qui associe fibres et résine, un composite.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes d'une ligne de thermoformage.",
+      "options": [
+        {
+          "id": "d",
+          "text": "Découper les pièces dans la plaque"
+        },
+        {
+          "id": "a",
+          "text": "Préchauffer la plaque déroulée de la bobine"
+        },
+        {
+          "id": "f",
+          "text": "Conditionner les pièces empilées"
+        },
+        {
+          "id": "c",
+          "text": "Former la plaque sur le moule"
+        },
+        {
+          "id": "e",
+          "text": "Empiler les pièces découpées"
+        },
+        {
+          "id": "b",
+          "text": "Chauffer la plaque jusqu'à la ramollir"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      "explanation": "La plaque se déroule de la bobine et se préchauffe, puis se chauffe jusqu'à être ramollie. Elle est alors formée sur le moule ; la plaque ne se découpe qu'une fois les pièces formées, puis on empile et on conditionne.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sur le contrôle par comparaison sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La cale étalon a la même longueur nominale que la pièce"
+        },
+        {
+          "id": "b",
+          "text": "Le comparateur donne l'écart entre la pièce et la cale"
+        },
+        {
+          "id": "c",
+          "text": "Le comparateur donne directement la longueur de la pièce"
+        },
+        {
+          "id": "d",
+          "text": "Le zéro se règle sur la pièce, puis on lit la cale"
+        },
+        {
+          "id": "e",
+          "text": "Le montage repose sur un marbre"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "On compare la pièce à une cale de même longueur nominale, avec un comparateur posé sur un marbre. Le comparateur donne seulement l'écart ; la longueur est cale plus écart. Le zéro se règle sur la cale, la référence, et non sur la pièce.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un comparateur est réglé à zéro sur une cale étalon de 50,000 mm. Il lit +0,03 sur la pièce A et −0,02 sur la pièce B. De combien la pièce A est-elle plus longue que la pièce B, en mm ?",
+      "answerKey": {
+        "value": 0.05,
+        "unit": "mm"
+      },
+      "explanation": "La pièce A mesure 50,03 mm et la pièce B 49,98 mm : la différence est 0,05 mm, soit 0,03 − (−0,02). Les deux écarts sont de signes contraires : 0,03 − (−0,02) revient à additionner 0,03 et 0,02 ; calculer 0,03 − 0,02 = 0,01 oublierait le signe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour la première phase d'usinage d'une pièce brute de fonderie, sur quel type de surface de base la pièce repose-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une surface usinée, appelée surface de référence (SR)"
+        },
+        {
+          "id": "b",
+          "text": "Une surface brute, appelée surface de référence (SR)"
+        },
+        {
+          "id": "c",
+          "text": "Une surface usinée, appelée surface de départ (SD)"
+        },
+        {
+          "id": "d",
+          "text": "Une surface brute, appelée surface de départ (SD)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Aucune surface n'est encore usinée : la pièce repose sur une surface brute, que le manuel appelle surface de départ (SD). Une surface de référence (SR) est une surface déjà usinée, qui sert aux phases suivantes.",
+      "difficulty": 2
+    }
+  ]
+}

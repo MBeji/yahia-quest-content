@@ -2,7 +2,7 @@
 
 > 💡 « Avant de se demander comment une pièce tourne ou résiste, il faut savoir comment elle naît. Une coque ne se taille pas dans un bloc : elle se moule, et son procédé se choisit à sa forme. »
 
-Ce chapitre ouvre l'**axe 3 « Réalisation et production »** et son thème **Obtention des pièces**. Jusqu'ici tu analysais des mécanismes ; ici tu te demandes **comment une pièce est obtenue** : taillée dans un bloc, construite couche par couche, ou moulée dans une matière plastique. Le thème compte quatre séquences ; la dernière, la **plasturgie**, trouve son premier support dans ce chapitre.
+Ce chapitre ouvre l'**axe 3 « Réalisation et production »** et son thème **Obtention des pièces**. Jusqu'ici tu analysais des mécanismes ; ici tu te demandes **comment une pièce est obtenue** : taillée dans un bloc, construite couche par couche, ou moulée dans une matière plastique. Le thème compte quatre séquences ; l'une d'elles, la **plasturgie**, trouve son premier support dans ce chapitre.
 
 Le support est un **bateau à pédales** (pédalo) : une coque, un pédalier, des pales de roue, un gouvernail. Le dossier technique donne deux photos, une **nomenclature de 18 repères** et les caractéristiques commerciales. La question du manuel : quelles techniques de transformation du plastique pour obtenir les pièces, **en particulier la coque (6)** ?
 
@@ -52,7 +52,7 @@ Cas limite : une même pièce peut passer par plusieurs séquences (moulée, pui
 :::
 
 ::: verifie
-Une pièce en plastique est moulée, puis on perce un trou dedans, puis on mesure le diamètre de ce trou. Quelles séquences du thème intervient-elles, dans l'ordre ?
+Une pièce en plastique est moulée, puis on perce un trou dedans, puis on mesure le diamètre de ce trou. Quelles séquences du thème interviennent-elles, dans l'ordre ?
 ---
 Le **moulage** relève de la **plasturgie** (la matière est mise en forme dans un moule). Le **perçage** retire de la matière : c'est de l'**enlèvement de matière**. La **mesure** du diamètre est de la **métrologie**. On classe chaque opération selon ce que devient la matière, ou selon qu'elle ne fabrique rien et contrôle.
 :::
@@ -158,7 +158,7 @@ On croit que « thermodurcissable » veut dire plus dur et « thermoplastique »
 - **Thermoplastique** : mis en forme par chauffage puis refroidissement, **refondable**, donc **recyclable par refonte**.
 - **Thermodurcissable** : mis en forme **une seule fois**, en général solide et résistant à la chaleur, **non refondable**, donc non recyclable par refonte.
 
-Cas limite : « réversible » ne veut pas dire « éternel ». À force d'être rechauffé, un thermoplastique se dégrade : la famille dit si le recyclage par refonte est possible, pas combien de fois.
+Cas limite : « réversible » ne veut pas dire « éternel ». À force d'être réchauffé, un thermoplastique se dégrade : la famille dit si le recyclage par refonte est possible, pas combien de fois.
 :::
 
 ::: verifie
@@ -296,7 +296,7 @@ On imagine le rotomoulage comme une injection plus lente : un moule rempli de ma
 - des **corps creux**, y compris de **grande dimension**, d'un seul tenant ;
 - **pas de haute pression** : le moule est plus simple et moins coûteux que celui d'une injection, ce qui convient aux **petites et moyennes séries** ;
 - des formes creuses de **complexité modérée** : ni la précision fine ni la très grande complexité de l'injection ;
-- une matière **dosée** : très peu de perte.
+- une matière **dosée** : pratiquement aucune perte, la poudre mise dans le moule devient la pièce.
 
 Cas limite : le moule entier doit être chauffé puis refroidi, le cycle est long. Le procédé est peu adapté aux **très grandes séries**.
 :::

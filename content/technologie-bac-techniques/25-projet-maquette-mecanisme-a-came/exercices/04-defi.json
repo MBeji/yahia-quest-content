@@ -1,0 +1,182 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : concevoir, critiquer, justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "281-288",
+    "items": [
+      "nomenclature (p.284)",
+      "surfaces de base (p.285)",
+      "cotes de fabrication (p.285-286)",
+      "procédés (p.288)"
+    ]
+  },
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque procédé de mise en œuvre à la matière dont il part.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Extrusion-soufflage"
+        },
+        {
+          "id": "l2",
+          "text": "Injection-soufflage"
+        },
+        {
+          "id": "l3",
+          "text": "Thermoformage"
+        },
+        {
+          "id": "l4",
+          "text": "Rotomoulage"
+        },
+        {
+          "id": "r1",
+          "text": "Une paraison extrudée entre deux demi-moules"
+        },
+        {
+          "id": "r2",
+          "text": "Une ébauche injectée, puis gonflée"
+        },
+        {
+          "id": "r3",
+          "text": "Une plaque chauffée, formée sur un moule"
+        },
+        {
+          "id": "r4",
+          "text": "Une poudre dans un moule fermé, chauffé et mis en rotation"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "L'extrusion-soufflage part d'une paraison extrudée, l'injection-soufflage d'une ébauche injectée, le thermoformage d'une plaque chauffée, et le rotomoulage d'une poudre mise dans un moule fermé, chauffé et mis en double rotation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève relève le déplacement du poussoir d'un banc à came, mis à zéro sur le cercle de base :\nAngle : 0° ; 90° ; 135° ; 180° ; 225° ; 270° ; 315° ; 360°\nLecture (mm) : 0 ; 0 ; 2 ; 5 ; 8 ; 4 ; 1 ; 0,5\nQuel relevé est impossible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le relevé à 225°"
+        },
+        {
+          "id": "b",
+          "text": "Le relevé à 90°"
+        },
+        {
+          "id": "c",
+          "text": "Le relevé à 360°"
+        },
+        {
+          "id": "d",
+          "text": "Le relevé à 135°"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Après un tour complet, la came est revenue à sa position de départ : le relevé à 360° doit être celui de 0°, soit 0, pas 0,5. Les relevés à 90° (pause), 135° (début de montée) et 225° (maximum, 8 mm) sont tous possibles.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les cotes de fabrication Cf1 = 75 ±0,1 et Cf2 = 40 ±0,05 donnent la cote du dessin B = Cf1 − Cf2. Quelle est la valeur maximale de B, en mm ?",
+      "answerKey": {
+        "value": 35.15,
+        "unit": "mm"
+      },
+      "explanation": "B est maxi quand Cf1 est maxi et Cf2 mini : 75,1 − 39,95 = 35,15 mm. Prendre les deux cotes au maxi donnerait 75,1 − 40,05 = 35,05, qui n'est pas une borne de B. Le contrôle B mini = 74,9 − 40,05 = 34,85 confirme B = 35 ±0,15.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une cote est 80 (+0,02 / −0,06). Une cale étalon de 80,000 mm règle le zéro du comparateur, qui lit ensuite +0,02, −0,06, −0,07 et +0,01 sur quatre pièces. Combien de pièces sont bonnes ?",
+      "answerKey": {
+        "value": 3,
+        "unit": "pièces"
+      },
+      "explanation": "Les limites sont 80,02 et 79,94. Les lectures donnent 80,02 et 79,94, qui sont sur les limites et donc bonnes, 79,93, qui est en dessous, et 80,01, qui est bonne. 3 pièces sont bonnes.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une pièce brute est usinée en deux phases. Phase 10 : on fraise la face A en posant la pièce sur une face brute F. Phase 20 : on retourne la pièce pour fraiser la face opposée en la posant sur la face A. Quelle affirmation est juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En phase 10, F est une surface de référence ; en phase 20, A est une surface de départ"
+        },
+        {
+          "id": "b",
+          "text": "En phase 10, F est une surface de départ ; en phase 20, A est une surface de référence"
+        },
+        {
+          "id": "c",
+          "text": "En phase 10 comme en phase 20, la pièce repose sur une surface de départ"
+        },
+        {
+          "id": "d",
+          "text": "En phase 10 comme en phase 20, la pièce repose sur une surface de référence"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En phase 10, rien n'est usiné : F est brute, c'est une surface de départ. Une fois fraisée, A est une surface usinée : en phase 20 elle devient surface de référence. Les deux phases reposent donc sur des surfaces de nature différente, dans cet ordre : surface de départ, puis surface de référence.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Extrait de la nomenclature : rep. 2, 1 plaque support en PA 6 ; rep. 5, 2 coussinets en CuSn8P ; rep. 8, 1 disque en PLA ; rep. 9, 1 came en PLA ; rep. 11, 4 pieds en PLA ; rep. 13, 1 semelle en PA 6 ; rep. 16, 1 écrou en PLA ; rep. 23 et 25, 1 vis M4-25 chacun ; rep. 26, 4 vis M4-6 ; rep. 28, 6 vis M4-16. Lesquelles de ces affirmations sur l'extrait sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les pièces en PLA sont au nombre de 7"
+        },
+        {
+          "id": "b",
+          "text": "Les vis M4 sont au nombre de 12"
+        },
+        {
+          "id": "c",
+          "text": "Les coussinets sont en PA 6"
+        },
+        {
+          "id": "d",
+          "text": "L'extrait compte autant de pièces que de repères"
+        },
+        {
+          "id": "e",
+          "text": "Les pièces en PA 6 sont au nombre de 2"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "PLA : 1 + 1 + 4 + 1 = 7 pièces. Vis M4 : 1 + 1 + 4 + 6 = 12. PA 6 : la plaque support et la semelle, soit 2. Les coussinets sont en CuSn8P, pas en PA 6. L'extrait compte 11 repères pour 23 pièces, donc pas autant de pièces que de repères.",
+      "difficulty": 3
+    }
+  ]
+}

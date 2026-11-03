@@ -1,0 +1,97 @@
+{
+  "title": "Test de compréhension ⭐ : la maquette de train épicycloïdal",
+  "questions": [
+    {
+      "prompt": "On immobilise l'une des trois pièces d'axe commun d'un train épicycloïdal (planétaire, couronne ou porte-satellite), les deux autres restant libres. Que devient le train ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un système à une entrée et une sortie, qui adapte la vitesse et le couple"
+        },
+        {
+          "id": "b",
+          "text": "Un système à une entrée et deux sorties, qui répartit la puissance reçue"
+        },
+        {
+          "id": "c",
+          "text": "Un système à deux entrées et une sortie, qui combine deux moteurs distincts"
+        },
+        {
+          "id": "d",
+          "text": "Un système à une entrée et une sortie, qui ne change jamais la vitesse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En bloquant une pièce, il ne reste qu'une entrée et une sortie : le train transmet et adapte la vitesse et le couple, comme un réducteur ou un multiplicateur. Répartir (une entrée, deux sorties) ou combiner (deux entrées, une sortie) demande de laisser les trois pièces libres, et la vitesse de sortie change toujours, d'un rapport fixé par les nombres de dents.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un arbre est coté Ø16 avec un écart supérieur de −0,016 et un écart inférieur de −0,034. Quel est son intervalle de tolérance IT, en mm ?",
+      "answerKey": {
+        "value": 0.018,
+        "unit": "mm"
+      },
+      "explanation": "IT = cote maxi − cote mini = (16 − 0,016) − (16 − 0,034) = 15,984 − 15,966 = 0,018 mm, ce qui est aussi la différence des deux écarts. Lire 0,034 ou 0,016 comme l'IT confond un écart avec la largeur de la zone de tolérance.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On veut tarauder un trou M5, dont le pas est de 0,8 mm. Quel diamètre de foret faut-il utiliser pour le perçage, en mm ?",
+      "answerKey": {
+        "value": 4.2,
+        "unit": "mm"
+      },
+      "explanation": "Le trou se perce au diamètre nominal moins le pas : 5 − 0,8 = 4,2 mm. Percer à 5 mm ne laisserait aucune matière pour le filet, et le taraud n'accrocherait rien.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un programme ISO, quelle ligne commande un déplacement rapide de l'outil, hors matière ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N30 G01 X8 Z-1 F0.04"
+        },
+        {
+          "id": "b",
+          "text": "N30 M03 S1500"
+        },
+        {
+          "id": "c",
+          "text": "N30 G95 T1"
+        },
+        {
+          "id": "d",
+          "text": "N30 G00 X8 Z-1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La ligne N30 G00 X8 Z-1 est un déplacement rapide, hors matière, utilisé pour approcher et dégager l'outil : c'est le rôle de G00. G01 usine en ligne droite à l'avance F, M03 lance la broche à la vitesse S, et G95 fixe l'unité d'avance avec T1 pour l'outil : aucune de ces lignes ne déplace l'outil à vide.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Après le tranchage d'un modèle 3D, quel fichier met-on sur la carte SD pour que l'imprimante fabrique la pièce ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le modèle 3D, enregistré au format de conception"
+        },
+        {
+          "id": "b",
+          "text": "Le maillage de la pièce, au format .STL"
+        },
+        {
+          "id": "c",
+          "text": "Le programme des déplacements, au format .Gcode"
+        },
+        {
+          "id": "d",
+          "text": "Le dessin de définition, au format .PDF"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le .Gcode contient les mouvements de l'imprimante : c'est le seul fichier qu'elle exécute, et le tranchage le produit. Le .STL et le modèle 3D décrivent la forme sans aucun mouvement, et un dessin de définition n'est pas un fichier de machine.",
+      "difficulty": 1
+    }
+  ]
+}

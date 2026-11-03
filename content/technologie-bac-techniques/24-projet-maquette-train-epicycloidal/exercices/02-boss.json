@@ -1,0 +1,143 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : du jeu à la passe, du train au programme",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "262-279",
+    "items": [
+      "étape 12 (rapports du train)",
+      "étape 15 (chaîne Ja)",
+      "étape 20 h (programme phase 20)"
+    ]
+  },
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Voici les zones de tolérance d'un alésage Ø16H7 et d'un arbre Ø16f7, en micromètres. Quel est le jeu maximal de l'ajustement, en mm ?\n<svg viewBox=\"0 0 340 190\"><title>Zones de tolérance d'un alésage Ø16H7 et d'un arbre Ø16f7, en micromètres, par rapport à la cote nominale</title><line x1=\"24\" y1=\"96\" x2=\"316\" y2=\"96\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"316\" y=\"90\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0 = Ø16</text><rect x=\"70\" y=\"56.4\" width=\"70\" height=\"39.6\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"200\" y=\"131.2\" width=\"70\" height=\"39.6\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"62\" y=\"59.9\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+18</text><text x=\"62\" y=\"99.5\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"278\" y=\"134.7\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"start\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−16</text><text x=\"278\" y=\"174.3\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"start\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−34</text><text x=\"105\" y=\"48.4\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">alésage Ø16H7</text><text x=\"235\" y=\"186.8\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">arbre Ø16f7</text></svg>",
+      "answerKey": {
+        "value": 0.052,
+        "unit": "mm"
+      },
+      "explanation": "Jeu maxi = alésage maxi − arbre mini = (+18) − (−34) = 52 µm, soit 0,052 mm. Le piège est de prendre l'arbre maxi : 18 − (−16) = 34 µm mélange l'alésage maxi avec l'arbre maxi, ce qui n'est pas le cas le plus lâche.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le dessin impose entre deux surfaces une cote de 40 ±0,15, obtenue comme différence de deux cotes machine mesurées depuis la même face. La première cote machine est tenue à ±0,05. Quelle tolérance maximale peut-on admettre sur la seconde ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±0,05"
+        },
+        {
+          "id": "b",
+          "text": "±0,10"
+        },
+        {
+          "id": "c",
+          "text": "±0,15"
+        },
+        {
+          "id": "d",
+          "text": "±0,30"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'IT de la cote du dessin est de 0,30 et se partage entre les deux cotes machine : 0,30 − 0,10 (la première, à ±0,05) = 0,20, soit ±0,10 pour la seconde. Garder ±0,05 serait inutilement serré ; ±0,15 oublie la première cote ; ±0,30 prend l'IT pour un écart.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une portée de Ø12 doit être amenée à Ø10 en trois passes. Les deux premières ont pour profondeur de passe a = 0,55 mm (ébauche) puis a = 0,3 mm (demi-finition). Quelle profondeur de passe reste-t-il pour la finition, en mm ?",
+      "answerKey": {
+        "value": 0.15,
+        "unit": "mm"
+      },
+      "explanation": "La profondeur de passe se compte au rayon : il faut enlever (12 − 10) / 2 = 1 mm. Après 0,55 + 0,3 = 0,85 mm, il reste 1 − 0,85 = 0,15 mm pour la finition. Raisonner sur le diamètre, 2 − 0,85 = 1,15, donnerait une passe de finition impossible.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une chaîne analogue à celle du jeu Ja, l'arbre vaut a32 = 36 ±0,1 et les cinq pièces enfermées valent 1 ±0,05 ; 3 ±0,05 ; 28 ±0,05 ; 3 ±0,05 et 0,7 ±0,05. Quel est le jeu Ja mini, en mm ? (Un résultat négatif signifie qu'un serrage est possible.)",
+      "answerKey": {
+        "value": -0.05,
+        "unit": "mm"
+      },
+      "explanation": "Pour Ja mini, l'arbre est le plus court (35,9) et les cinq pièces les plus longues : 1,05 + 3,05 + 28,05 + 3,05 + 0,75 = 35,95. Donc Ja mini = 35,9 − 35,95 = −0,05 mm. Le jeu nominal de 36 − 35,7 = 0,3 cache un serrage possible : avec ces tolérances, certains montages ne tournent pas.",
+      "difficulty": 3
+    },
+    {
+      "type": "matching",
+      "prompt": "Un train a un planétaire de 20 dents et une couronne de 80 dents ; l'entrée tourne à 200 tr/min. Associe chaque configuration à la vitesse de sortie.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Couronne bloquée, planétaire en entrée, porte-satellite en sortie"
+        },
+        {
+          "id": "l2",
+          "text": "Planétaire bloqué, couronne en entrée, porte-satellite en sortie"
+        },
+        {
+          "id": "l3",
+          "text": "Porte-satellite bloqué, planétaire en entrée, couronne en sortie"
+        },
+        {
+          "id": "l4",
+          "text": "Porte-satellite bloqué, couronne en entrée, planétaire en sortie"
+        },
+        {
+          "id": "r1",
+          "text": "40 tr/min"
+        },
+        {
+          "id": "r2",
+          "text": "160 tr/min"
+        },
+        {
+          "id": "r3",
+          "text": "−50 tr/min"
+        },
+        {
+          "id": "r4",
+          "text": "−800 tr/min"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Couronne bloquée : r = 20 / (20 + 80) = 0,2, donc 40 tr/min. Planétaire bloqué, couronne en entrée : r = 80 / (80 + 20) = 0,8, donc 160 tr/min. Porte-satellite bloqué : r = −20 / 80 = −0,25 avec le planétaire en entrée, soit −50 tr/min, et r = −80 / 20 = −4 avec la couronne en entrée, soit −800 tr/min : la sortie tourne alors en sens inverse.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Voici des lignes du programme de la phase 20 de la douille taraudée (30) :\nN10 S1500 M03\nN20 G95 T1 D1 M6\nN30 G00 X8 Z-1\nN40 G01 X0 Z-1 F0.04\nN50 G01 X4.5 Z-1\nN60 G01 X5 Z-1.5\nN70 G01 X5 Z-15\nL'avance F reste active tant qu'on ne la change pas et X est un rayon. Quelle est la durée du déplacement de la ligne N70, en s ?",
+      "answerKey": {
+        "value": 13.5,
+        "unit": "s",
+        "tolerance": 0.1
+      },
+      "explanation": "N70 va de Z−1,5 à Z−15 : 13,5 mm. G95 donne l'avance en mm/tr, donc Vf = 0,04 × 1 500 = 60 mm/min, et la durée est 13,5 / 60 = 0,225 min, soit 13,5 s. Lire F0.04 comme 0,04 mm/min donnerait 337,5 min : l'unité vient de G95.",
+      "difficulty": 3
+    }
+  ]
+}
