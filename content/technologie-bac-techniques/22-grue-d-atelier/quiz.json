@@ -1,0 +1,98 @@
+{
+  "title": "Test de compréhension ⭐ : la flèche, ses efforts et ses contraintes",
+  "questions": [
+    {
+      "prompt": "Parmi les efforts extérieurs qui s'exercent sur la flèche d'une grue, lequel n'est pas donné et se calcule par l'équilibre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La charge P appliquée en C"
+        },
+        {
+          "id": "b",
+          "text": "L'effort FV du vérin, exercé en B"
+        },
+        {
+          "id": "c",
+          "text": "Le poids de la flèche, en son milieu"
+        },
+        {
+          "id": "d",
+          "text": "L'action FA du pied, appliquée en A"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La charge P et l'effort du vérin FV sont donnés par le dossier ; l'action du pied FA ne l'est pas : un pivot peut pousser dans n'importe quelle direction, et ses deux composantes se calculent en écrivant que la somme des forces est nulle sur chaque axe. Le poids de la flèche n'est pas une inconnue à calculer : l'hypothèse du manuel est de le négliger devant les efforts extérieurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une section de la flèche, l'effort normal N est positif. Que subit cette section ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une compression, la section est écrasée"
+        },
+        {
+          "id": "b",
+          "text": "Une traction, la section est étirée"
+        },
+        {
+          "id": "c",
+          "text": "Un cisaillement, la section est coupée"
+        },
+        {
+          "id": "d",
+          "text": "Une torsion, la section est vrillée"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un effort normal positif tire la section dans le sens de la flèche : c'est de la traction. Un effort normal négatif donnerait une compression ; le cisaillement vient de l'effort tranchant Ty, perpendiculaire à la flèche ; la torsion vient d'un moment de torsion, qui n'existe pas ici.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une flèche est inclinée de 30° sur l'horizontale et porte à son extrémité une charge verticale de 3 000 N (schéma de principe). Quelle part de cette charge est perpendiculaire à la flèche, en N ?\n<svg viewBox=\"0 0 300 200\"><title>Flèche inclinée de 30° sur l'horizontale, chargée à son extrémité C par une force verticale de 3000 N</title><line x1=\"20\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><path d=\"M24 190 L15 199 M36 190 L27 199 M48 190 L39 199 M60 190 L51 199 M72 190 L63 199 M84 190 L75 199 M96 190 L87 199 M108 190 L99 199 M120 190 L111 199 M132 190 L123 199 M144 190 L135 199 M156 190 L147 199 M168 190 L159 199 M180 190 L171 199 M192 190 L183 199 M204 190 L195 199 M216 190 L207 199 M228 190 L219 199 M240 190 L231 199 M252 190 L243 199 M264 190 L255 199 M276 190 L267 199 M288 190 L279 199\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"150\" x2=\"233.21\" y2=\"50\" stroke=\"#0f6e56\" stroke-width=\"8\"/><line x1=\"60\" y1=\"150\" x2=\"233.21\" y2=\"50\" stroke=\"#bbf7d0\" stroke-width=\"3.5\"/><line x1=\"60\" y1=\"150\" x2=\"180\" y2=\"150\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M 111.96 120 A 60 60 0 0 1 120 150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"233.21\" y1=\"50\" x2=\"233.21\" y2=\"120\" stroke=\"#ef4444\" stroke-width=\"3\"/><polygon points=\"233.21,120 228.71,111 237.71,111\" fill=\"#ef4444\"/><circle cx=\"60\" cy=\"150\" r=\"5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"233.21\" cy=\"50\" r=\"4\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"50\" y=\"142\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">A</text><text x=\"241.21\" y=\"42\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">C</text><text x=\"144\" y=\"142\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"12\">30°</text><text x=\"261.21\" y=\"94\" text-anchor=\"middle\" fill=\"#ef4444\" font-size=\"12\">3000 N</text></g></svg>",
+      "answerKey": {
+        "value": 2598,
+        "tolerance": 2,
+        "unit": "N"
+      },
+      "explanation": "La charge est verticale, donc elle fait 30° avec la perpendiculaire à la flèche : sa part perpendiculaire vaut 3 000 × cos 30° ≈ 2598 N. Utiliser le sinus, 3 000 × sin 30° = 1 500 N, donne la part selon la flèche, celle qui la comprime sans la plier.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Quelle est l'aire S de la section d'un tube carré creux de côté extérieur 50 mm et d'épaisseur 4 mm (tube 50 × 50 × 4), en mm² ?",
+      "answerKey": {
+        "value": 736,
+        "unit": "mm²"
+      },
+      "explanation": "Le vide a pour côté 50 − 2 × 4 = 42 mm. S = 50² − 42² = 2 500 − 1 764 = 736 mm². Retrancher une seule épaisseur (46 mm) donnerait 2 500 − 2 116 = 384 mm², car la paroi existe de chaque côté du vide.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une fibre d'une poutre, la traction crée une contrainte normale σN = 3 MPa et la flexion une contrainte σf = 20 MPa, toutes deux positives. Quelle est la contrainte normale dans cette fibre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17 MPa"
+        },
+        {
+          "id": "b",
+          "text": "20 MPa"
+        },
+        {
+          "id": "c",
+          "text": "23 MPa"
+        },
+        {
+          "id": "d",
+          "text": "60 MPa"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les deux contraintes sont normales et de même signe dans cette fibre : elles s'additionnent, 3 + 20 = 23 MPa. 17 MPa vient d'une soustraction, qui vaudrait pour la fibre opposée ; 20 MPa oublie la traction ; 60 MPa multiplie au lieu d'additionner.",
+      "difficulty": 2
+    }
+  ]
+}

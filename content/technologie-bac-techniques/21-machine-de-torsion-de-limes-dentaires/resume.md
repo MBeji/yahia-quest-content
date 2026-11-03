@@ -1,0 +1,10 @@
+# 📜 Résumé : la machine de torsion de limes dentaires, du couple à la section
+
+- **Puissance et couple** — P = η × Pm (η = 0,97 pour la boîte du manuel), ω = 2π × N / 60 et C = P / ω. N en tr/min se convertit en rad/s avant de diviser. Le rendement ne fait que retrancher : la sortie ne dépasse jamais l'entrée.
+- **Efforts sur la denture** — l'effort F de la dent se décompose en T (tangent, il fait tourner l'arbre) et R (radial, vers l'axe). C = T × r avec r en mètres, R = T × tan α et F = T / cos α, avec α = 20°. R se calcule avec la tangente, pas avec le sinus. Le manuel demande de négliger R dans le modèle : c'est une hypothèse.
+- **Modèle de poutre** — appui articulé A, appui à rouleaux B, effort T en C, extrémité D (cotes 40, 50 et 35 mm). R_A + R_B = T et R_B × AB = T × AC, d'où R_A = T × CB / AB et R_B = T × AC / AB : l'appui le plus proche de la charge porte le plus.
+- **Moment de torsion** — Mt est le couple que transmet la section. Il est constant entre la denture, où le couple entre (C), et l'endroit où il ressort (D), nul ailleurs : le diagramme est fait de paliers et de sauts.
+- **Moment fléchissant** — on coupe, on regarde un côté et on écrit une expression par tronçon : Mf = R_A × x de A à C, puis Mf = R_A × x − T × (x − 40) de C à B, et 0 au-delà de B. Le diagramme est fait de droites, nul aux extrémités, maximal sous la charge.
+- **Section dangereuse** — c'est celle où Mf et Mt sont tous deux au maximum : ici la section C, côté D. Flexion et torsion y agissent ensemble : sollicitation composée, ou flexion–torsion.
+- **Moment idéal** — Mfi = (1 − 1/(2λ)) × Mf + (1/(2λ)) × √(Mf² + Mt²). Pour l'acier, λ = 0,5 et Mfi = √(Mf² + Mt²). Les moments ne s'additionnent pas : Mfi est plus grand que chacun et plus petit que leur somme.
+- **Section creuse** — la condition de résistance est Mfi / (I/v) ≤ Re / s, avec I/v = π × (D⁴ − d⁴) / (32 × D) ≈ 0,0788 × D³ pour D = 3/2 × d. Mfi en N·mm et Re / s en MPa. D_min varie comme la racine cubique de Mfi, et d = D / 1,5 est le plus grand trou permis.

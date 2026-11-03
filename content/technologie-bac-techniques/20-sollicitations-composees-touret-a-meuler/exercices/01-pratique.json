@@ -1,0 +1,195 @@
+{
+  "title": "⭐ Exercice : du modèle de poutre au moment de torsion",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "233-236",
+    "items": [
+      "mise en situation p.233",
+      "A.1 (équilibre autour de l'axe x)",
+      "A.2 (modèle de poutre)"
+    ]
+  },
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Sur le modèle du touret, les distances OA, AC et CB valent 100, 240 et 90 mm. Quelle est la distance OB entre la meule et la poulie, en mm ?",
+      "answerKey": {
+        "value": 430,
+        "unit": "mm"
+      },
+      "explanation": "Les trois cotes se suivent bout à bout : OB = OA + AC + CB = 100 + 240 + 90 = 430 mm.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour passer de l'effort tangentiel FT au moment de torsion Mt, quel rayon faut-il utiliser ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le rayon de la poulie, rp"
+        },
+        {
+          "id": "b",
+          "text": "Le rayon de la meule, rm"
+        },
+        {
+          "id": "c",
+          "text": "La distance AC entre les paliers"
+        },
+        {
+          "id": "d",
+          "text": "La distance OB entre meule et poulie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "FT est appliqué au bord de la meule : son bras de levier par rapport à l'axe est le rayon de la meule, d'où Mt = FT × rm. Le rayon de la poulie sert à l'autre côté de l'équilibre, avec T − t ; les distances entre points sont des abscisses, pas des bras de FT.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une meule de rayon 60 mm reçoit un effort tangentiel de 90 N (valeurs d'illustration). Quel moment de torsion l'arbre transmet-il, en N·m ?",
+      "answerKey": {
+        "value": 5.4,
+        "unit": "N·m",
+        "tolerance": 0.01
+      },
+      "explanation": "Mt = FT × rm = 90 × 60 = 5 400 N·mm. En divisant par 1 000, cela fait 5,4 N·m.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les calculs du touret, de l'effort sur la meule jusqu'aux réactions des paliers.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Trouver t puis T avec T ≈ 4 t"
+        },
+        {
+          "id": "e",
+          "text": "Déduire RA de la somme des forces suivant y"
+        },
+        {
+          "id": "a",
+          "text": "Calculer Mt = FT × rm"
+        },
+        {
+          "id": "d",
+          "text": "Calculer RC par les moments en A, avec T + t en B"
+        },
+        {
+          "id": "b",
+          "text": "En déduire T − t par l'équilibre de rotation"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "Mt ne dépend que de FT et rm ; T − t a besoin de Mt ; T et t ont besoin de T − t ; les moments en A ont besoin de T + t ; RA ne se tire des forces qu'une fois RC connue.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Une meule de rayon 60 mm reçoit FT = 100 N ; la poulie a un rayon de 25 mm et T = 4 t (valeurs d'illustration). Associe chaque grandeur à sa valeur.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Le moment de torsion Mt"
+        },
+        {
+          "id": "l2",
+          "text": "La différence T − t"
+        },
+        {
+          "id": "l3",
+          "text": "Le brin mou t"
+        },
+        {
+          "id": "l4",
+          "text": "Le brin tendu T"
+        },
+        {
+          "id": "r1",
+          "text": "6 N·m"
+        },
+        {
+          "id": "r2",
+          "text": "240 N"
+        },
+        {
+          "id": "r3",
+          "text": "80 N"
+        },
+        {
+          "id": "r4",
+          "text": "320 N"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Mt = 100 × 60 = 6 000 N·mm = 6 N·m. L'équilibre de rotation donne T − t = 6 000 / 25 = 240 N. Avec T = 4 t, 3 t = 240, donc t = 80 N et T = 320 N, et l'on contrôle que 320 − 80 = 240.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sur les brins T et t de la courroie sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La somme T + t plie l'arbre : c'est la force verticale de la courroie"
+        },
+        {
+          "id": "b",
+          "text": "La différence T − t tord l'arbre : multipliée par rp, elle donne Mt"
+        },
+        {
+          "id": "c",
+          "text": "Le moment de torsion vaut (T + t) × rp"
+        },
+        {
+          "id": "d",
+          "text": "Les brins T et t ont la même valeur, puisque la courroie est continue"
+        },
+        {
+          "id": "e",
+          "text": "Avec T = 4 t, la différence T − t vaut 3 t"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Les deux brins tirent vers le bas, donc leurs forces s'ajoutent pour fléchir l'arbre : T + t. Ils tirent de part et d'autre de l'axe, donc leurs moments se retranchent et la différence T − t, multipliée par rp, donne le couple. Avec T = 4 t, T − t = 3 t. Mais le moment n'est pas (T + t) × rp, et les deux brins ne sont pas égaux : si c'était le cas, la poulie ne transmettrait aucun couple.",
+      "difficulty": 2
+    }
+  ]
+}

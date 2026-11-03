@@ -1,0 +1,176 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : comparer, enchaîner, justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque situation à la sollicitation de la section étudiée.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Un arbre qui transmet seulement un couple, sans aucune charge transversale"
+        },
+        {
+          "id": "l2",
+          "text": "Une poutre sur deux appuis qui porte une charge, sans transmettre de couple"
+        },
+        {
+          "id": "l3",
+          "text": "Un arbre sur deux paliers qui porte une roue dentée et transmet un couple"
+        },
+        {
+          "id": "r1",
+          "text": "Torsion simple"
+        },
+        {
+          "id": "r2",
+          "text": "Flexion simple"
+        },
+        {
+          "id": "r3",
+          "text": "Flexion–torsion, sollicitation composée"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Sans charge transversale, seul Mt agit : torsion simple. Sans couple transmis, seul Mf agit : flexion simple. Un arbre qui porte une roue dentée est plié par l'effort de la denture et tordu par le couple qu'il transmet : Mf et Mt agissent dans la même section, c'est une flexion–torsion.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Voici, en valeur absolue, les diagrammes d'un arbre de modèle analogue au pignon arbré : le couple entre par la denture en C et ressort à l'extrémité D, la charge T est en C, et les appuis sont A et B. Quelle section est la plus sollicitée ?\n<svg viewBox=\"0 0 430 330\"><title>Diagrammes de Mt (palier de 90 N·m entre C et D) et de Mf (pointe de 72 N·m en C)</title><line x1=\"45\" y1=\"28\" x2=\"45\" y2=\"300\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"45\" y=\"20\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><line x1=\"173.6\" y1=\"28\" x2=\"173.6\" y2=\"300\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"173.6\" y=\"20\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><line x1=\"259.3\" y1=\"28\" x2=\"259.3\" y2=\"300\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"259.3\" y=\"20\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><line x1=\"345\" y1=\"28\" x2=\"345\" y2=\"300\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"345\" y=\"20\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text><line x1=\"33\" y1=\"134\" x2=\"361\" y2=\"134\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"45 134 173.6 134 173.6 80 345 80 345 134\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"6\" y=\"46\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Mt (N·m)</text><text x=\"259.3\" y=\"73\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">90</text><text x=\"109.3\" y=\"126\" font-size=\"12\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"369\" y=\"138\" font-size=\"12\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><line x1=\"33\" y1=\"280\" x2=\"361\" y2=\"280\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"45 280 173.6 236.8 259.3 280 345 280\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"6\" y=\"192\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Mf (N·m)</text><text x=\"173.6\" y=\"229.8\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">72</text><text x=\"369\" y=\"284\" font-size=\"12\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La section B, sur l'appui à rouleaux"
+        },
+        {
+          "id": "b",
+          "text": "La section C, juste à gauche de la denture"
+        },
+        {
+          "id": "c",
+          "text": "La section C, juste à droite de la denture"
+        },
+        {
+          "id": "d",
+          "text": "La section D, à l'extrémité de l'arbre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les moments idéaux (λ = 0,5) sont : juste à gauche de C, Mf = 72 et Mt = 0, soit 72 N·m ; en B et en D, Mf = 0 et Mt = 90, soit 90 N·m ; juste à droite de C, Mfi = √(72² + 90²) ≈ 115,3 N·m, la plus grande valeur. Seule cette section cumule le maximum de flexion et le maximum de torsion.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Classe ces cinq sections de la moins sollicitée à la plus sollicitée, d'après leur moment idéal de flexion (acier, λ = 0,5). Les moments sont en N·m.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mf = 0 ; Mt = 90"
+        },
+        {
+          "id": "b",
+          "text": "Mf = 75 ; Mt = 0"
+        },
+        {
+          "id": "c",
+          "text": "Mf = 63 ; Mt = 16"
+        },
+        {
+          "id": "d",
+          "text": "Mf = 80 ; Mt = 60"
+        },
+        {
+          "id": "e",
+          "text": "Mf = 40 ; Mt = 96"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "b",
+          "a",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "Avec Mfi = √(Mf² + Mt²) : 63 et 16 donnent 65 ; 75 et 0 donnent 75 ; 0 et 90 donnent 90 ; 80 et 60 donnent 100 ; 40 et 96 donnent 104. D'où l'ordre du moins au plus sollicité. Classer d'après la somme Mf + Mt (79, 75, 90, 140, 136) ou d'après le plus grand des deux moments donnerait un autre ordre.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un moteur de 2 000 W alimente une boîte de rendement 0,95, dont l'arbre de sortie tourne à 190 tr/min. Le pignon de cet arbre, de rayon primitif 30 mm, est porté par deux appuis A et B distants de 120 mm ; la denture agit en C, à 45 mm de A, et le couple ressort à l'extrémité D. L'effort radial est négligé. Quel est le moment idéal de flexion dans la section C, côté D (acier, λ = 0,5), en N·m ?",
+      "answerKey": {
+        "value": 130.9,
+        "tolerance": 1,
+        "unit": "N·m"
+      },
+      "explanation": "P = 0,95 × 2 000 = 1 900 W ; ω = 2π × 190 / 60 ≈ 19,90 rad/s ; C = 1 900 / 19,90 ≈ 95,49 N·m ; T = 95,49 / 0,03 ≈ 3 183 N. CB = 75 mm : R_A = T × 75 / 120 ≈ 1 989 N ; Mf(C) = 1 989 × 45 ≈ 89 525 N·mm ≈ 89,5 N·m, et Mt = 95,5 N·m. Mfi = √(89,5² + 95,5²) ≈ 130,9 N·m. Additionner donnerait 185 N·m.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On veut alléger la machine : l'arbre plein est remplacé par un tube de 30 mm à l'extérieur et 20 mm à l'intérieur, en acier Re = 450 MPa, calculé avec s = 2,25. Jusqu'à quelle valeur le moment idéal de flexion peut-il monter, en N·m ?",
+      "answerKey": {
+        "value": 425.4,
+        "tolerance": 2,
+        "unit": "N·m"
+      },
+      "explanation": "Rpe = 450 / 2,25 = 200 MPa. I/v = π × (30⁴ − 20⁴) / (32 × 30) = π × 650 000 / 960 ≈ 2 127 mm³. La condition Mfi / (I/v) ≤ Rpe donne Mfi ≤ 2 127 × 200 ≈ 425 400 N·mm, soit 425,4 N·m. Le piège courant est de traiter l'arbre comme plein (π × 30³ / 32 ≈ 2 651 mm³), ce qui surestime la charge admissible.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sont vraies pour un arbre en acier (λ = 0,5) soumis à de la flexion–torsion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le moment idéal est toujours supérieur ou égal au moment fléchissant"
+        },
+        {
+          "id": "b",
+          "text": "Dans une section où Mf est nul, le moment idéal est égal à Mt"
+        },
+        {
+          "id": "c",
+          "text": "Doubler D, avec D = 1,5 × d conservé, multiplie le module de flexion par 8"
+        },
+        {
+          "id": "d",
+          "text": "Le moment idéal est égal à la somme Mf + Mt"
+        },
+        {
+          "id": "e",
+          "text": "Avec un angle de 20°, l'effort radial est plus grand que l'effort tangentiel"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Mfi = √(Mf² + Mt²) est au moins égal à Mf, et vaut Mt quand Mf est nul. Le module de flexion est proportionnel à D³ avec D = 1,5 × d : doubler D le multiplie par 2³ = 8. Le moment idéal n'est pas la somme Mf + Mt, qui lui est supérieure ; et R = T × tan 20° ≈ 0,364 × T est plus petit que T.",
+      "difficulty": 3
+    }
+  ]
+}
