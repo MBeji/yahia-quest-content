@@ -56,7 +56,7 @@ pièges) : `FableEtudes/METHODE-GENERATION-CONTENU.md` § Phase 0.1 ; poste :
 site du CNP, injoignable depuis une session cloud. Connecteur Google Drive sur le compte
 propriétaire du dossier ; lecture **texte d'abord, vision en dernier** (échelle L0 → L3) ; une page
 lue par la couche texte compte comme lue après un sondage image noté. Procédure unique :
-[`.claude/skills/content-ingest/references/source-drive.md`](.claude/skills/content-ingest/references/source-drive.md).
+[`content-ingest`](.claude/skills/content-ingest/SKILL.md) § « Source et lecture ».
 
 ## Chaîne PR → merge → prod
 

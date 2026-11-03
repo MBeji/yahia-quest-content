@@ -68,7 +68,7 @@ Drive de la session voit le dossier `cnp-officiel` (décision du 2026-11-03). Co
 avec `title = 'index.csv'` doit rendre l'inventaire du dossier ; « Requested entity was not found »
 sur le dossier ⇒ le connecteur est sur un autre compte, le dire à l'humain et s'arrêter là. La
 lecture suit l'échelle texte d'abord, vision en dernier :
-[`content-ingest/references/source-drive.md`](../content-ingest/references/source-drive.md).
+[`content-ingest`](../content-ingest/SKILL.md) § « Source et lecture ».
 **ScribeKit n'est plus un préalable** (facultatif, pour échafauder une fiche neuve). Un LOT B seul
 (profil sans-source) n'a besoin d'aucune source.
 
@@ -230,6 +230,28 @@ Points de vigilance, tous hérités de la méthode :
   les candidats gabarit, croisés avec les chapitres publiés ; ses groupes vont au mandat de
   l'auditeur. L'auditeur d'une tranche est un sous-agent en contexte vierge par chapitre ; pour
   une correction de contenu publié, son mandat est `content-engine/references/audit-correction.md`.
+
+### 3 bis. Choisir le modèle de chaque sous-agent (décision de Mohamed du 2026-11-03)
+
+Règle : **le modèle le moins cher qui tient la tâche**, sauf pour l'audit, où l'indépendance et la
+sévérité passent avant le coût. Tu passes le modèle **explicitement** à chaque sous-agent (`model` de
+l'outil Agent, option `model` d'un `agent()` de workflow) : un sous-agent n'hérite jamais par défaut du
+modèle de l'orchestrateur. Les familles se nomment ici par leur nom court ; les identifiants exacts ne
+vivent que dans `harness/models.json` du moteur.
+
+| Tâche du sous-agent | Famille | Pourquoi |
+| --- | --- | --- |
+| Inventaire et recherche (Drive, `index.csv`, registre), extraction de la couche texte (L0-L2), décodage par la table d'une fiche, comptages, scan 1 bis, extraction des constats d'un long rapport | **haiku** | mécanique, gros volume, aucune décision pédagogique |
+| Lecture vision (L3 : formules, tableaux, figures) et sondage image | **sonnet** | fidélité visuelle ; **opus** pour l'arabe vocalisé ou une page manuscrite |
+| Auteur de chapitre (cours au patron, items), auteur de mission de gisement, correcteur qui applique un rapport d'audit | **sonnet** | écriture longue au gabarit, guidée par un brief et une fiche |
+| Auditeur de tranche (B3), relecture R-7, auditeur de gisement, second audit | **opus** | contexte vierge, re-résolution à l'aveugle : c'est là qu'un défaut laissé coûte le plus |
+| Fiche à profondeur de génération (A4), plan d'une matière neuve, arbitrage de scope | **opus** | jugement de programme, rare |
+| Gates, git, PR, publication, mesures de tranche | **aucun sous-agent** | scripts déterministes, lancés par l'orchestrateur (T-1) |
+
+Escalade d'un cran, jamais d'emblée : un auteur sonnet dont le chapitre échoue deux fois aux gates
+ou revient de l'audit avec un BLOCKER passe en opus pour ce chapitre ; un lecteur haiku qui rend du
+texte inexploitable cède la page au barreau suivant (vision, sonnet). Le modèle de l'orchestrateur,
+lui, est le choix de l'humain (`/model`). ≤ 4 sous-agents en parallèle (`PILOTAGE.md` § 1, règle 4).
 
 ## 4. Gates, PR, garde jusqu'au merge
 

@@ -8,7 +8,10 @@ consignes de rôle sont à côté : `gisement-lecteur.md`, `gisement-auteur-devo
 
 **Tu orchestres, tu n'écris pas de mission.** Les rôles vont à des sous-agents au contexte frais
 (T-4) : le lecteur lit, l'auteur écrit, l'auditeur relit. Toi, tu fixes l'échantillon, tu tiens le
-registre, tu fais la carte et le plan, tu contrôles, tu livres, tu publies.
+registre, tu fais la carte et le plan, tu contrôles, tu livres, tu publies. Modèles (skill `campagne`
+§ 3 bis) : le **lecteur** en sonnet (il classe les exercices en archétypes, ce n'est pas une simple
+extraction), haiku seulement pour récupérer et décoder le texte d'un sujet ; l'**auteur** en sonnet ;
+l'**auditeur** en opus.
 
 ## Variables de session
 

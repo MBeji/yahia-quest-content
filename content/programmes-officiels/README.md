@@ -34,7 +34,9 @@ Pour un couple **(niveau, matière)** :
 
 ## 📚 Le corpus CNP (téléchargé)
 
-- **Emplacement** : `YahiaAcademy/cnp-officiel/` — dossier **frère du repo**, **hors git** (~2.8 GB).
+- **Emplacement** : le dossier **Google Drive `cnp-officiel`** du compte du projet (depuis le
+  2026-11-03 ; même arborescence que l'ancien `YahiaAcademy/cnp-officiel/` local, toujours **hors git**).
+  Accès et lecture : skill [`content-ingest`](../../.claude/skills/content-ingest/SKILL.md) § « Source et lecture ».
 - **Contenu** : **346 PDF** — base (1ère→9ème) + secondaire (1ère→4ème), **élève** (manuels) **et**
   **enseignant** (guides méthodologiques / أدلة مرجعية = le programme détaillé).
 - **Index** : `cnp-officiel/CATALOGUE.md` (lisible, groupé par niveau/matière) ; bruts :
@@ -44,19 +46,18 @@ Pour un couple **(niveau, matière)** :
   2 = secondaire) · chiffres 2-3 = **matière** (01 arabe, 02 maths, 03 éveil, 05 SVT, 06 géo, 07 histoire,
   08 arts/tech/musique, 11 sociales/islamique/civique, 12 EPS, 21 français, 22 maths-fr, 23 physique,
   24 chimie, 25 SVT, 33 informatique, 41 anglais…) · chiffre 4 = **classe**.
-- 📖 **Lire le corpus** — **désormais orchestré par ScribeKit** (cf. § « Transcription outillée » ci-dessous) ;
-  ce qui suit reste la méthode **vision** des scans, exécutée par **l'agent** avec l'abonnement Max (0 clé API).
-  (⚠️ **réservé à la session « couche de persistance »** : la génération consomme la
-  transcription `programme/…`, elle ne scanne pas) : les manuels sont des scans et les guides ont une
-  couche-texte cassée (mojibake) → `pdftotext` est **inutile**. On **rasterise en PNG puis on lit en vision**
-  (outil Read). Helper :
-  **`bash cnp-officiel/render.sh <pdf> <p_début> <p_fin> [dpi]`** → écrit `cnp-officiel/_render/<nom>-NNN.png`
-  à ouvrir avec l'outil Read. (poppler installé sous `YahiaAcademy/_tools/poppler/`.) Lire **les deux sources
-  et les combiner** : le **guide enseignant** porte le **programme détaillé** (compétences, progression,
-  bornes — la pièce à lire en priorité pour le **scope**) ; le **manuel élève** porte le **contenu** (leçons,
-  exemples, exercices, profondeur) — complément **indispensable** pour un contenu complet. Une seule source
-  dispo ⇒ référence ; plusieurs ⇒ combiner (cf. « Sources officielles combinées » ci-dessus).
-- **Re-télécharger / compléter** : `bash cnp-officiel/_dl-manuels.sh` (résumable, met à jour les index).
+- 📖 **Lire le corpus** — **texte d'abord, vision en dernier** (échelle L0 → L3 de `content-ingest`) :
+  `_txt/` (texte déjà extrait), puis la couche texte du PDF (propre pour les manuels en français et en
+  anglais ; décodable pour les guides arabes), et la **vision** sur les PNG de `_render/` seulement pour
+  formules, tableaux, figures, encadrés vocalisés et le sondage de contrôle. (⚠️ **réservé à la session
+  « couche de persistance »** : la génération consomme la transcription `programme/…`, elle ne lit pas les
+  PDF.) Lire **les deux sources et les combiner** : le **guide enseignant** porte le **programme détaillé**
+  (compétences, progression, bornes — la pièce à lire en priorité pour le **scope**) ; le **manuel élève**
+  porte le **contenu** (leçons, exemples, exercices, profondeur). Une seule source dispo ⇒ référence ;
+  plusieurs ⇒ combiner (cf. « Sources officielles combinées » ci-dessus).
+- **Compléter le corpus** : verser le PDF manquant dans le Drive (même nommage `<code><tome>.pdf`) et
+  mettre à jour `index.csv` ; `_dl-manuels.sh` (téléchargement depuis le CNP) ne marche que depuis un poste
+  local.
 
 ## 📇 Suivi de transcription : le registre machine-vérifiable (`suivi/`)
 
@@ -80,53 +81,21 @@ fiche (anti-doublon), fiche disque ⇔ entrée registre, plages valides, `comple
 couverture ET profondeur de génération (R-5), index jamais désynchronisé. **Toute session qui touche
 une fiche met à jour le registre dans le même commit.** Schéma : `src/shared/content/transcription-suivi.ts`.
 
-## 🤖 Transcription outillée : ScribeKit (agent-in-the-loop, abonnement — 0 clé API)
+## 🤖 Transcription : texte d'abord, ScribeKit facultatif (0 clé API)
 
-La couche de persistance est **industrialisée par ScribeKit** (repo `YahiaAcademy/ScribeKit`, moteur
-autonome — étude [`FableEtudes/13-moteur-transcription`](../../../../../FableEtudes/13-moteur-transcription/ETUDE.md)).
-Il **transcrit fidèlement, ne génère jamais**. Il **ne remplace pas** la lecture-vision des scans — elle
-reste faite par **l'agent Claude Code avec l'abonnement Max** (⚠️ **pas de clé API** : l'API Anthropic
-serait facturée au token et n'utilise **pas** l'abonnement) — mais il **orchestre, extrait le déterministe,
-échafaude et trace** tout autour, et rend le flux **résumable**.
+Depuis le 2026-11-03 (décision de Mohamed), la recette d'un couple niveau × matière est celle du skill
+[`content-ingest`](../../.claude/skills/content-ingest/SKILL.md) § « Source et lecture » : lire chaque page au
+barreau le moins cher (L0 `_txt/` → L1 couche texte → L2 couche texte décodée → L3 vision), **sonder** les
+pages lues par le texte (≥ 1 sur 10, confrontées au PNG ; noté dans la fiche) — elles comptent alors comme
+lues au registre —, curer §1-§4 en combinant guide + manuel, codifier `manifest/<grade>.json`, puis
+`npm run programme:index` + `npm run programme:check`.
 
-**Ce que ScribeKit fait (0 LLM, 0 clé)** :
-
-- **parcourt le corpus** (arborescence, plusieurs répertoires) et route chaque source par **qualité de
-  couche-texte** ;
-- **extrait en déterministe** les PDF à couche-texte intacte (rares dans le CNP : secondaire 1ère-sec,
-  `pdfs_9raya/`) + Word/texte — **0 token** ; **marque les scans `pending`** (couche cassée → OCR requis) ;
-- **échafaude** au format app : `programme/<grade>/<matière>.md` (gabarit `_TEMPLATE.md` — transcription brute
-  des sources à couche-texte **en annexe** + placeholders « à compléter » pour l'analyse §1-§4) **+
-  `manifest/<grade>.json` validé** (schéma Zod `program-manifest.ts`, `chapters:[]` si pas encore codifié) ;
-- **trace** tout dans un ledger + un **`AVANCEMENT.md`** régénéré (**remplace** le cochage manuel de
-  `programme/_INDEX.md`), **résumable** (ne refait jamais un fichier à jour) ; **valide** via `scribekit qa`.
-
-**Ce que l'AGENT fait (vision d'abonnement Max, 0 clé)** :
-
-- lire les scans marqués `pending` — outil **Read** (vision) directement sur le PDF, ou `render.sh`→PNG→Read
-  pour maîtriser le DPI — et les **transcrire fidèlement** (chiffres 0-9, LTR, jamais d'arabo-indiens) dans
-  `programme/<grade>/<matière>.md` ;
-- **curer §1-§4** (compétences, plan annuel + bornes ✅/⛔, chapitrage) en **combinant guide enseignant +
-  manuel élève**, puis **codifier** la liste des chapitres dans `manifest/<grade>.json`.
-
-**Recette (par couple niveau × matière)** — `scribekit` = `node YahiaAcademy/ScribeKit/dist/bin.js` (ou
-`npm link` depuis le repo ScribeKit) :
-
-```bash
-# 1) ScribeKit : déterministe + échafaudage + manifeste validé (0 clé), pour un (grade, matière) :
-scribekit app-cnp <guide.pdf> <manuel.pdf> --grade <gradeSlug> --subject <id> --lang <ar|fr|en> \
-  --manuel <codeManuel> --pages <plages> -o <chemin programmes-officiels>
-# 2) l'AGENT lit les pages scannées restantes (vision abonnement) → remplit la transcription fidèle,
-#    puis cure §1-§4 et codifie manifest/<grade>.json (guide + manuel combinés).
-# 3) contrôle :
-scribekit qa <chemin programmes-officiels>       # schéma manifeste + notation + non-vides
-scribekit status <chemin programmes-officiels>   # fait / en attente (scans) / à revoir
-```
-
-> **Aucune clé API requise.** Un `--provider anthropic` existe pour l'OCR **batch non-supervisé**, mais il
-> **nécessite une `ANTHROPIC_API_KEY` facturée au token** (≠ abonnement) — à n'utiliser que si tu en disposes
-> et veux du non-supervisé. Par défaut : **agent-in-the-loop (abonnement)**. Le skill d'orchestration
-> **`content-ingest`** enchaîne automatiquement ScribeKit → OCR agent → hand-off génération.
+**ScribeKit** (repo `YahiaAcademy/ScribeKit`, étude
+[`13-moteur-transcription`](../../FableEtudes/EtudeRealisé/13-moteur-transcription/ETUDE.md)) reste disponible
+pour **échafauder** une fiche neuve au gabarit et valider le manifeste (`scribekit app-cnp <guide.pdf>
+<manuel.pdf> --grade <gradeSlug> --subject <id> --lang <ar|fr|en> -o <programmes-officiels>`, puis
+`scribekit qa`) ; il n'est plus un préalable à la lecture. Aucune clé API : la vision est celle de l'agent
+(abonnement) ; le `--provider anthropic` de ScribeKit exige une clé facturée, seulement sur demande.
 
 ## 🏫 Fichiers école (vérification / séquençage) — Taybah Primaire
 

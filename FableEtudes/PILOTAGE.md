@@ -16,7 +16,7 @@
 
 **Le Bac d'abord, les matières principales de chaque section en tête.** Cette priorité ordonne la
 présentation de `/campagne` ; le choix du couple reste à l'humain à chaque fois. Les sources sont dans le
-Drive `cnp-officiel` (`content-ingest/references/source-drive.md`) : les manuels scientifiques du Bac
+Drive `cnp-officiel` (`content-ingest` § « Source et lecture ») : les manuels scientifiques du Bac
 sont **en français**, donc lisibles au barreau L1 (couche texte), le moins cher — mesuré sur `222422`
 le 2026-11-03, à vérifier à l'ouverture de chaque manuel.
 
@@ -72,8 +72,9 @@ Règles qui empêchent le double travail :
 3. **Savepoints** sur une branche `wip/<couple>` (jamais d'automerge), **livraison** recomposée en
    quelques commits thématiques sur la branche désignée de la session (le titre du squash = le dernier
    commit) ; une seule PR privée ouverte à la fois par couple.
-4. **≤ 4 agents** en parallèle (quota « five_hour » consommé, pas une durée) ; auteurs sonnet,
-   auditeurs opus ; chaque agent écrit ses fichiers au fil de l'eau ; après une coupure, le reprendre
+4. **≤ 4 agents** en parallèle (quota « five_hour » consommé, pas une durée) ; le modèle de chaque
+   agent se choisit par la table du skill `campagne` § 3 bis (lecteurs texte haiku, auteurs et
+   correcteurs sonnet, auditeurs opus) ; chaque agent écrit ses fichiers au fil de l'eau ; après une coupure, le reprendre
    par `SendMessage` (contexte conservé) une fois le quota rouvert.
 5. **Rendu vérifié avant toute PR de cours** : le moteur n'affiche ni une liste dans une citation
    (`> - …`), ni une ligne `>` seule, ni un gras qui enjambe un retour à la ligne, ni un tableau collé
