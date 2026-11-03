@@ -1,0 +1,195 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : comparer, critiquer, justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "206-210",
+    "items": [
+      "6.1 B.4",
+      "6.2 B.4 c",
+      "6.2 B.4 d"
+    ]
+  },
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "La charge accrochée au palan devient trop lourde, puis on la réduit. Remets dans l'ordre ce qui se passe au niveau du limiteur.",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'adhérence reprend entre (28) et (26), et la noix est de nouveau entraînée"
+        },
+        {
+          "id": "b",
+          "text": "Le couple résistant dépasse le couple nominal du limiteur"
+        },
+        {
+          "id": "c",
+          "text": "Le disque (26), le planétaire (20) et la noix s'arrêtent"
+        },
+        {
+          "id": "d",
+          "text": "On retire la surcharge : le couple repasse sous le couple nominal"
+        },
+        {
+          "id": "e",
+          "text": "Le disque (28) glisse sur le disque limiteur (26)"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "e",
+          "c",
+          "d",
+          "a"
+        ]
+      },
+      "explanation": "Le couple résistant dépasse d'abord le couple nominal ; le disque (28) glisse alors sur le disque (26) ; la sortie, c'est-à-dire (26), (20) et la noix, s'arrête. Quand on retire la surcharge, le couple repasse sous le couple nominal, et c'est seulement alors que l'adhérence reprend et que la noix est de nouveau entraînée.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque besoin au mécanisme de transformation de mouvement qui y répond.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Faire avancer une pièce d'un pas à chaque tour d'une tige filetée"
+        },
+        {
+          "id": "l2",
+          "text": "Faire avancer une barre dentée d'une longueur égale au rayon multiplié par l'angle en radians"
+        },
+        {
+          "id": "l3",
+          "text": "Déplacer une charge au bout d'une chaîne enroulée sur une noix"
+        },
+        {
+          "id": "l4",
+          "text": "Obtenir une course égale à deux fois le décalage de l'axe d'un disque"
+        },
+        {
+          "id": "r1",
+          "text": "Vis-écrou"
+        },
+        {
+          "id": "r2",
+          "text": "Pignon-crémaillère"
+        },
+        {
+          "id": "r3",
+          "text": "Lien flexible"
+        },
+        {
+          "id": "r4",
+          "text": "Excentrique"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le déplacement d'un pas par tour est celui de la vis-écrou. Un déplacement égal au rayon fois l'angle est celui du pignon-crémaillère. Une chaîne enroulée sur une noix est un lien flexible, avec V = R × ω. Une course égale à deux fois le décalage de l'axe est celle de l'excentrique, C = 2e.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève calcule le déplacement d'une crémaillère entraînée par un pignon de rayon 20 mm qui tourne de 90° : il écrit x = 20 × 90 = 1 800 mm. Quelle est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il aurait dû prendre le diamètre du pignon"
+        },
+        {
+          "id": "b",
+          "text": "Il a oublié de convertir le rayon en mètres"
+        },
+        {
+          "id": "c",
+          "text": "Il a mis l'angle en degrés et non en radians"
+        },
+        {
+          "id": "d",
+          "text": "Il a confondu le déplacement x et la vitesse V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La formule x = R × θ suppose θ en radians : 90° = π/2 rad, donc x = 20 × π/2 ≈ 31,4 mm, et non 1 800 mm. Le rayon, et non le diamètre, est le bon facteur ; les millimètres donnent un résultat en millimètres, sans conversion ; et x est bien un déplacement, la vitesse n'est pas demandée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un frein de palan doit offrir au moins 25 N·m (valeur d'illustration). Ses garnitures frottent entre les rayons 40 mm et 60 mm, avec f = 0,35, sous l'effort F = 600 N du ressort. Combien de surfaces de frottement faut-il au minimum ?",
+      "answerKey": {
+        "value": 3,
+        "unit": "surfaces"
+      },
+      "explanation": "Rayon d'action : Rm = (2/3) × (60³ − 40³) / (60² − 40²) = (2/3) × 152 000 / 2 000 ≈ 50,7 mm. Chaque surface apporte f × F × Rm = 0,35 × 600 × 50,7 ≈ 10 640 N·mm, soit 10,6 N·m. Deux surfaces donnent 21,3 N·m, insuffisant ; trois donnent 31,9 N·m, supérieur à 25 N·m : il en faut 3.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le moteur d'un palan tourne à 1 312 tr/min et la puissance utile est de 600 W. On supprime le second étage : il ne reste qu'un étage épicycloïdal à planétaire de 15 dents et couronne bloquée de 89 dents, et la noix a un diamètre d'enroulement de 42 mm. À moteur et puissance utile inchangés, quelle charge maximale, en newtons, le palan pourrait-il soulever ?",
+      "answerKey": {
+        "value": 1442,
+        "tolerance": 15,
+        "unit": "N"
+      },
+      "explanation": "Le rapport d'un seul étage vaut 15 / (15 + 89) = 15 / 104 ≈ 0,144, donc la noix tourne à 1 312 × 0,144 ≈ 189,2 tr/min. La chaîne avance de π × 0,042 ≈ 0,132 m par tour : V ≈ 24,97 m/min ≈ 0,416 m/s. Alors F = P / V = 600 / 0,416 ≈ 1442 N, soit environ 144 kg : sans le second étage, la charge serait près de sept fois plus petite.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Le ressort (30) du frein du palan a perdu toute sa force. Lesquelles de ces conséquences sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hors tension, la garniture (33) n'est plus pressée contre le disque (28)."
+        },
+        {
+          "id": "b",
+          "text": "Le couple de freinage Cf, proportionnel à l'effort du ressort, tombe à zéro."
+        },
+        {
+          "id": "c",
+          "text": "Sous tension, le palan peut encore lever normalement."
+        },
+        {
+          "id": "d",
+          "text": "Le limiteur de couple ne glisse plus jamais."
+        },
+        {
+          "id": "e",
+          "text": "Le palan est freiné en permanence, même sous tension."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "C'est le ressort (30) qui serre le frein hors tension : sans lui, la garniture n'est plus pressée et Cf, proportionnel à F30, devient nul. Sous tension, le frein est de toute façon libre, donc le levage reste possible. Le limiteur dépend de l'autre ressort, (36), et le palan n'est jamais freiné sous tension.",
+      "difficulty": 3
+    }
+  ]
+}
