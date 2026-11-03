@@ -1,0 +1,189 @@
+{
+  "title": "⭐ Exercice : bloquer, tolérancer, programmer, imprimer",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "262-280",
+    "items": [
+      "étape 12 (rapports du train)",
+      "étape 20 g (codes, p.276)",
+      "fabrication additive (p.280)"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Dans la gamme de l'arbre planétaire, quelle est la toute première phase, la phase 10 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vérifier l'état de surface Ra 3,2 à la plaquette rugotest"
+        },
+        {
+          "id": "b",
+          "text": "Dresser la première face en finition directe au tour"
+        },
+        {
+          "id": "c",
+          "text": "Tarauder à la main l'extrémité de l'arbre percé"
+        },
+        {
+          "id": "d",
+          "text": "Contrôler le brut scié au pied à coulisse au 1/50"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La gamme commence par la phase 10 : on contrôle le brut scié (Ø12, L = 80) avant d'y consacrer du temps machine. Le dressage et le taraudage sont des usinages qui viennent ensuite, et la plaquette rugotest contrôle une surface déjà finie, le taraudage ne pouvant même avoir lieu qu'après le tournage et le perçage.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque mot du programme ISO à ce qu'il commande.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "G00"
+        },
+        {
+          "id": "l2",
+          "text": "G01"
+        },
+        {
+          "id": "l3",
+          "text": "M03"
+        },
+        {
+          "id": "l4",
+          "text": "M02"
+        },
+        {
+          "id": "r1",
+          "text": "Déplacement rapide, hors matière"
+        },
+        {
+          "id": "r2",
+          "text": "Déplacement en ligne droite à l'avance programmée"
+        },
+        {
+          "id": "r3",
+          "text": "Rotation de la broche dans le sens horaire"
+        },
+        {
+          "id": "r4",
+          "text": "Fin du programme"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "G00 est le déplacement rapide, hors matière ; G01 est l'interpolation linéaire, en ligne droite à l'avance F ; M03 lance la broche dans le sens horaire ; M02 termine le programme.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour imprimer le porte-satellite, remets dans l'ordre les étapes de la fiche de fabrication additive.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Trancher le fichier et l'exporter en .Gcode sur la carte SD"
+        },
+        {
+          "id": "a",
+          "text": "Modéliser la pièce en 3D à l'échelle 1"
+        },
+        {
+          "id": "d",
+          "text": "Insérer la carte SD dans l'imprimante et lancer l'impression"
+        },
+        {
+          "id": "b",
+          "text": "Exporter le maillage de la pièce en fichier .STL"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On modélise d'abord la pièce, puis on exporte son maillage en .STL, qui décrit la forme. Le tranchage transforme ce fichier en couches et en .Gcode, écrit sur la carte SD. L'impression ne se lance qu'une fois la carte insérée.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une portée est cotée Ø10 avec un écart supérieur de −0,013 et un écart inférieur de −0,028. Quel est son diamètre maximal accepté, en mm ?",
+      "answerKey": {
+        "value": 9.987,
+        "unit": "mm"
+      },
+      "explanation": "La cote maxi s'obtient avec l'écart supérieur : 10 − 0,013 = 9,987 mm. La cote mini, avec l'écart inférieur, vaut 10 − 0,028 = 9,972 mm. Les deux écarts étant négatifs, la portée est toujours plus petite que 10.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur la maquette (planétaire de 18 dents, couronne de 54 dents), la couronne est bloquée et le planétaire est l'entrée. Combien de tours le porte-satellite fait-il pendant que le planétaire en fait 8 ?",
+      "answerKey": {
+        "value": 2,
+        "unit": "tours"
+      },
+      "explanation": "Couronne bloquée, planétaire en entrée, porte-satellite en sortie : r = Z planétaire / (Z planétaire + Z couronne) = 18 / 72 = 0,25. Le porte-satellite fait donc 8 × 0,25 = 2 tours, dans le même sens : c'est un réducteur. Utiliser 18 / 54 = 1/3 oublierait que les satellites s'appuient aussi sur le planétaire.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Un arbre est tenu au tour comme sur la figure : centrage long (points 1 à 4) et appui ponctuel (point 5). Lesquelles de ces affirmations sont justes ?\n<svg viewBox=\"0 0 340 176\"><title>Arbre tenu au tour : centrage long par les points 1 à 4 et appui ponctuel 5 sur l'extrémité</title><rect x=\"24\" y=\"56\" width=\"56\" height=\"60\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><rect x=\"80\" y=\"66\" width=\"210\" height=\"40\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"14\" y1=\"86\" x2=\"310\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\" stroke-dasharray=\"10 3 2 3\"/><text x=\"52\" y=\"48\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">mandrin</text><line x1=\"96\" y1=\"118\" x2=\"196\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"106\" y1=\"106\" x2=\"106\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><line x1=\"106\" y1=\"118\" x2=\"106\" y2=\"126\" stroke=\"#0f172a\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><circle cx=\"106\" cy=\"134\" r=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"106\" y=\"137.5\" font-size=\"9.5\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"134\" y1=\"106\" x2=\"134\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><line x1=\"134\" y1=\"118\" x2=\"134\" y2=\"126\" stroke=\"#0f172a\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><circle cx=\"134\" cy=\"134\" r=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"134\" y=\"137.5\" font-size=\"9.5\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"164\" y1=\"106\" x2=\"164\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><line x1=\"164\" y1=\"118\" x2=\"164\" y2=\"126\" stroke=\"#0f172a\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><circle cx=\"164\" cy=\"134\" r=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"164\" y=\"137.5\" font-size=\"9.5\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"190\" y1=\"106\" x2=\"190\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"118\" x2=\"190\" y2=\"126\" stroke=\"#0f172a\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"134\" r=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"190\" y=\"137.5\" font-size=\"9.5\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><rect x=\"290\" y=\"70\" width=\"8\" height=\"32\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><line x1=\"298\" y1=\"86\" x2=\"304\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><circle cx=\"312\" cy=\"86\" r=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"312\" y=\"89.5\" font-size=\"9.5\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><text x=\"146\" y=\"160\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">centrage long</text><text x=\"312\" y=\"112\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">appui</text><text x=\"312\" y=\"124\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">ponctuel</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le centrage long supprime quatre degrés de liberté"
+        },
+        {
+          "id": "b",
+          "text": "L'appui ponctuel arrête la translation le long de l'axe"
+        },
+        {
+          "id": "c",
+          "text": "Le serrage supprime le sixième degré de liberté"
+        },
+        {
+          "id": "d",
+          "text": "Cinq points suffisent : tourner l'arbre sur son axe ne change rien"
+        },
+        {
+          "id": "e",
+          "text": "Un sixième contact est indispensable pour positionner l'arbre"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Le centrage long compte quatre points, l'appui ponctuel un : cinq degrés de liberté sont supprimés, dont la translation le long de l'axe pour le point 5. La rotation autour de l'axe ne change la position d'aucune surface d'un arbre de révolution, donc cinq points suffisent. Le serrage, lui, ne supprime aucun degré de liberté : il maintient les contacts, et un sixième contact n'est pas nécessaire ici.",
+      "difficulty": 2
+    }
+  ]
+}
