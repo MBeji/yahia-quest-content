@@ -1,0 +1,210 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : comparer, critiquer, justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "194-200",
+    "items": [
+      "A.3 (couronne)",
+      "A.6 (moyeu amortisseur)",
+      "B.1 (positions du levier)",
+      "B.7 (compteur)",
+      "temps 1 et 2 du synchroniseur"
+    ]
+  },
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "Tu enclenches la 5e vitesse en partant du point mort. Remets dans l'ordre ce qui se passe.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il entraîne la bague de synchronisation par les clavettes"
+        },
+        {
+          "id": "b",
+          "text": "Le baladeur poursuit sa course, les clavettes s'effacent"
+        },
+        {
+          "id": "c",
+          "text": "Les crabots s'emboîtent : le pignon fou est lié au moyeu"
+        },
+        {
+          "id": "d",
+          "text": "Le baladeur se déplace vers le pignon fou"
+        },
+        {
+          "id": "e",
+          "text": "La bague frotte sur le cône et le pignon fou prend sa vitesse"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "d",
+          "a",
+          "e",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Au temps 1, le baladeur se déplace, entraîne la bague par les clavettes, et le frottement de la bague sur le cône donne au pignon fou la vitesse de la bague. Seulement après, au temps 2, le baladeur poursuit sa course, les clavettes s'effacent et les crabots s'emboîtent : on égalise avant de lier.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque pièce de la chaîne volant-boîte à ce qu'elle fait.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "La couronne dentée (7)"
+        },
+        {
+          "id": "l2",
+          "text": "Les ressorts du moyeu amortisseur"
+        },
+        {
+          "id": "l3",
+          "text": "La fourchette (18)"
+        },
+        {
+          "id": "l4",
+          "text": "Le ressort (24)"
+        },
+        {
+          "id": "r1",
+          "text": "Absorber les à-coups de couple"
+        },
+        {
+          "id": "r2",
+          "text": "Ramener la fourchette, ce qui embraye"
+        },
+        {
+          "id": "r3",
+          "text": "Laisser le démarreur lancer le moteur"
+        },
+        {
+          "id": "r4",
+          "text": "Pousser la butée pour débrayer"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r1"
+          ],
+          [
+            "l3",
+            "r4"
+          ],
+          [
+            "l4",
+            "r2"
+          ]
+        ]
+      },
+      "explanation": "La couronne dentée, montée sur le volant, permet au démarreur de lancer le moteur ; les ressorts du moyeu amortisseur absorbent les à-coups de couple ; la fourchette pousse la butée pour débrayer ; le ressort (24) la ramène, ce qui embraye.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sur la vitesse du piston et du point A de la manivelle sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au PMH et au PMB, la vitesse du piston est nulle"
+        },
+        {
+          "id": "b",
+          "text": "À vitesse de rotation constante, la norme de la vitesse de A reste constante"
+        },
+        {
+          "id": "c",
+          "text": "La norme de la vitesse du piston reste égale à celle de A pendant toute la rotation"
+        },
+        {
+          "id": "d",
+          "text": "La vitesse de A est dirigée le long de la bielle"
+        },
+        {
+          "id": "e",
+          "text": "Les points A et B de la bielle ont toujours la même vitesse"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Au PMH et au PMB, la vitesse de A est perpendiculaire à la bielle, donc sa projection sur AB est nulle, et celle du piston aussi. La norme de la vitesse de A vaut ω × R, constante à N constant. La vitesse du piston varie de 0 à une valeur maximale ; la vitesse de A est tangente au cercle, pas le long de la bielle ; et A et B n'ont pas la même vitesse, seules leurs projections sur AB sont égales.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un véhicule roule à 45 km/h, avec des pneus de 0,55 m de diamètre ; le pont arrière ne change pas la vitesse. Le câble du compteur est entraîné par une roue de 30 dents que mène une vis sans fin à 2 filets (valeurs d'entraînement), montée sur l'arbre de sortie de la boîte. À quelle vitesse tourne le câble, en tr/min ?",
+      "answerKey": {
+        "value": 28.9,
+        "unit": "tr/min",
+        "tolerance": 0.3
+      },
+      "explanation": "45 km/h = 750 m/min ; le périmètre du pneu est π × 0,55 ≈ 1,728 m, donc la roue et l'arbre de sortie tournent à 750 / 1,728 ≈ 434,1 tr/min. La vis à 2 filets fait avancer la roue de 2 dents par tour : r = 2 / 30 = 1 / 15. Le câble tourne à 434,1 / 15 ≈ 28,9 tr/min.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour 10 tours de l'arbre d'entrée en 1re vitesse, un élève écrit N sortie = 10 × 37 / 47 ≈ 7,9 tours. Quelle erreur a-t-il commise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a multiplié 10 par r, alors qu'il fallait diviser 10 par r"
+        },
+        {
+          "id": "b",
+          "text": "Il n'a pas tenu compte du changement de sens, qui réduit le nombre de tours"
+        },
+        {
+          "id": "c",
+          "text": "Il n'a pris que le premier étage, (1) et (2), et oublié (10) et (9)"
+        },
+        {
+          "id": "d",
+          "text": "Il a écrit Z menante / Z menée, alors qu'il fallait Z menée / Z menante"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les paires de la 1re vitesse sont (1, 2) puis (10, 9) : le rapport est le produit 37 / 47 × 13 / 37 = 13 / 47, et l'élève n'a calculé que le premier étage, d'où 7,9 tours au lieu d'environ 2,8. Multiplier N d'entrée par r est correct, le sens de rotation ne change pas le nombre de tours, et Z menante / Z menée est bien la bonne écriture.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le véhicule démarre dans une côte. Pourquoi choisir la 1re vitesse (r ≈ 0,277) plutôt que la 4e (r = 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que la boîte crée alors plus de puissance pour le véhicule"
+        },
+        {
+          "id": "b",
+          "text": "Parce que la sortie ralentit et que son couple augmente"
+        },
+        {
+          "id": "c",
+          "text": "Parce que la sortie tourne plus vite que l'entrée du moteur"
+        },
+        {
+          "id": "d",
+          "text": "Parce que l'embrayage transmet plus de couple en 1re"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec r < 1, l'arbre de sortie tourne plus lentement que l'entrée et, aux pertes près, la puissance se conserve : le couple augmente à peu près dans le rapport inverse, ce qui aide à démarrer en côte. La boîte ne crée pas de puissance, une sortie plus rapide demanderait r > 1, et le couple transmissible de l'embrayage ne dépend pas de la vitesse engagée.",
+      "difficulty": 3
+    }
+  ]
+}

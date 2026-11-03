@@ -1,0 +1,170 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : comparer, critiquer, justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "167-180",
+    "items": [
+      "4.1 (question 8)",
+      "4.2 (questions 4.a à 4.g)",
+      "4.3 (questions 8 à 11)"
+    ]
+  },
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Le frein de la fraiseuse serre avec Cf = n × f × Fp × Rm. On modifie un seul élément, le reste étant inchangé. Associe chaque modification à son effet sur Cf.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Une garniture sur les deux s'arrache (n passe de 2 à 1)"
+        },
+        {
+          "id": "l2",
+          "text": "Un ressort sur les trois casse"
+        },
+        {
+          "id": "l3",
+          "text": "Le coefficient f passe de 0,4 à 0,3"
+        },
+        {
+          "id": "l4",
+          "text": "La vitesse de rotation de l'arbre double"
+        },
+        {
+          "id": "r1",
+          "text": "Cf est multiplié par 2/3"
+        },
+        {
+          "id": "r2",
+          "text": "Cf ne change pas"
+        },
+        {
+          "id": "r3",
+          "text": "Cf est divisé par 2"
+        },
+        {
+          "id": "r4",
+          "text": "Cf est multiplié par 3/4"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r1"
+          ],
+          [
+            "l3",
+            "r4"
+          ],
+          [
+            "l4",
+            "r2"
+          ]
+        ]
+      },
+      "explanation": "Avec une seule garniture, n est divisé par 2 : Cf est divisé par 2. Un ressort sur trois cassé fait tomber Fp aux 2/3, donc Cf aussi. Passer de f = 0,4 à 0,3 multiplie Cf par 0,3 / 0,4 = 3/4. La vitesse de rotation n'apparaît pas dans la formule : Cf ne change pas.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Nm et le dernier étage sont les mêmes. Classe ces cinq chaînes de la plus lente à la plus rapide (nombres de dents menante / menée).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étage 1 : 16 / 42 ; étage 2 : 34 / 34"
+        },
+        {
+          "id": "b",
+          "text": "Étage 1 : 24 / 34 ; étage 2 : 19 / 49"
+        },
+        {
+          "id": "c",
+          "text": "Étage 1 : 21 / 37 ; étage 2 : 19 / 49"
+        },
+        {
+          "id": "d",
+          "text": "Étage 1 : 16 / 42 ; étage 2 : 19 / 49"
+        },
+        {
+          "id": "e",
+          "text": "Étage 1 : 24 / 34 ; étage 2 : 34 / 34"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "d",
+          "c",
+          "b",
+          "a",
+          "e"
+        ]
+      },
+      "explanation": "Le dernier étage et Nm étant communs, on compare les produits des deux premiers rapports : 0,381 × 0,388 ≈ 0,148 pour 16 / 42 puis 19 / 49 ; 0,568 × 0,388 ≈ 0,220 pour 21 / 37 puis 19 / 49 ; 0,706 × 0,388 ≈ 0,274 pour 24 / 34 puis 19 / 49 ; 0,381 × 1 ≈ 0,381 pour 16 / 42 puis 34 / 34 ; 0,706 × 1 ≈ 0,706 pour 24 / 34 puis 34 / 34. D'où l'ordre du plus lent au plus rapide.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "À la plus basse vitesse, 50 tr/min, la broche exerce un couple de 300 N·m. Le moteur fournit la même puissance dans les deux cas et le rendement de la boîte ne change pas. À quelle vitesse la broche exerce-t-elle un couple de 12 N·m, en tr/min ?",
+      "answerKey": {
+        "value": 1250,
+        "unit": "tr/min"
+      },
+      "explanation": "La puissance du moteur et le rendement étant inchangés, la puissance P26 = C × ω reste la même : C × N est constant. Donc 12 × N = 300 × 50 = 15 000, soit N = 1250 tr/min. Le couple est divisé par 25, la vitesse est multipliée par 25 : ce n'est pas le couple qui monte avec la vitesse.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pendant un usinage en avance automatique, la table parcourt 54 cm en 1 min 30 s. Sa vis d'entraînement, à deux filets, a un pas de 3 mm. Quelle est la vitesse de rotation de cette vis, en tr/min ?",
+      "answerKey": {
+        "value": 60,
+        "unit": "tr/min"
+      },
+      "explanation": "La vitesse d'avance est V = 0,54 / 1,5 = 0,36 m/min = 360 mm/min. Un tour de vis avance la table de k × p = 2 × 3 = 6 mm, donc la vis tourne à 360 / 6 = 60 tr/min. Ne compter que le pas, 3 mm par tour, donnerait 120 tr/min.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour supprimer le jeu à l'inversion, un élève serre très fort l'écrou réglable contre l'écrou. Le jeu disparaît, mais le volant devient dur et les filets s'usent vite. Quelle est la bonne analyse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le réglage est bon : un volant dur prouve qu'il ne reste aucun jeu dans la vis"
+        },
+        {
+          "id": "b",
+          "text": "Il faut serrer encore : l'usure cessera quand les filets seront bien à fond"
+        },
+        {
+          "id": "c",
+          "text": "La vis est devenue réversible : c'est la table qui freine à présent le volant"
+        },
+        {
+          "id": "d",
+          "text": "Les deux écrous pressent les deux flancs de la vis : il faut desserrer un peu"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les deux écrous, appuyés sur des flancs opposés, suppriment le jeu, mais un serrage excessif multiplie le frottement : volant dur, usure rapide. Il faut desserrer jusqu'à ce que la table suive sans jeu ni dureté. Un volant dur ne prouve pas un bon réglage, serrer encore aggrave l'usure, et le serrage ne change pas l'irréversibilité de la vis.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans le dernier étage, un pignon de 17 dents mène une roue de 73 dents de la broche. Le même baladeur porte aussi une roue de 56 dents, qui doit s'engrener avec une autre roue de la broche, sur le même entraxe et avec le même module. L'arbre cannelé (21) tourne à 120 tr/min. À quelle vitesse tourne la broche avec la paire de 56 dents, en tr/min ?",
+      "answerKey": {
+        "value": 197.6,
+        "tolerance": 0.5,
+        "unit": "tr/min"
+      },
+      "explanation": "La somme de dents reste constante : 17 + 73 = 90, donc la roue qui s'engrène avec les 56 dents en a 90 − 56 = 34. Le rapport est r = 56 / 34 ≈ 1,647, donc la broche tourne à 120 × 1,647 ≈ 197,6 tr/min. Prendre la paire 17 / 73 donnerait seulement 120 × 0,233 ≈ 28 tr/min.",
+      "difficulty": 3
+    }
+  ]
+}

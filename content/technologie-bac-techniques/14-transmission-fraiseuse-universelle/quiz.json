@@ -1,0 +1,121 @@
+{
+  "title": "Test de compréhension ⭐ : la fraiseuse, son frein, sa boîte et sa vis",
+  "questions": [
+    {
+      "prompt": "Le manuel range dans la classe A l'armature de bobine (4), le flasque (10), la bobine (22) et le câble d'alimentation (20) du frein. Que représente cette classe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le bâti : des pièces sans mouvement relatif entre elles"
+        },
+        {
+          "id": "b",
+          "text": "L'ensemble tournant : des pièces liées à l'arbre moteur"
+        },
+        {
+          "id": "c",
+          "text": "Les pièces glissantes : des pièces qui vont et viennent"
+        },
+        {
+          "id": "d",
+          "text": "Les pièces de friction : des pièces qui frottent le disque"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ces pièces ne bougent pas les unes par rapport aux autres : elles forment la classe du bâti, fixe. Le disque tourne avec l'arbre moteur et appartient à une autre classe ; le plateau mobile glisse sans tourner ; et les pièces qui frottent sont les garnitures, qui ne figurent pas dans A.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On coupe le courant d'alimentation pendant que la broche de la fraiseuse tourne. Que devient le frein électromagnétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il se desserre : la bobine n'attire plus le plateau, donc plus rien ne presse le disque"
+        },
+        {
+          "id": "b",
+          "text": "Il reste libre : la broche s'arrête seule, par le frottement de ses roulements"
+        },
+        {
+          "id": "c",
+          "text": "Il serre : la bobine, encore parcourue par un courant résiduel, presse le disque"
+        },
+        {
+          "id": "d",
+          "text": "Il serre : les ressorts repoussent le plateau mobile contre le disque, qui est pincé"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sans courant, la bobine n'est plus excitée et n'attire plus le plateau mobile : les ressorts, qui fournissent l'effort presseur, le repoussent contre le disque et le pincent. Le frein serre donc ; la bobine, elle, ne freine jamais, elle desserre tant qu'elle est alimentée, et ce ne sont pas les roulements qui arrêtent la broche.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux roues cylindriques à denture droite, de module 3 mm, ont un entraxe de 87 mm. Que vaut la somme de leurs nombres de dents ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "29 dents"
+        },
+        {
+          "id": "b",
+          "text": "58 dents"
+        },
+        {
+          "id": "c",
+          "text": "174 dents"
+        },
+        {
+          "id": "d",
+          "text": "261 dents"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'entraxe vaut m × (Z1 + Z2) / 2, donc Z1 + Z2 = 2 × a / m = 2 × 87 / 3 = 58. Calculer a / m = 29 oublie le facteur 2 ; 174 = 2 × a oublie de diviser par le module ; 261 = a × m multiplie au lieu de diviser.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le couple de freinage d'un frein à disque vaut 9 N·m. On remplace ses ressorts par d'autres qui exercent un effort presseur Fp 1,5 fois plus grand, le reste étant inchangé. Quel est le nouveau couple de freinage, en N·m ?",
+      "answerKey": {
+        "value": 13.5,
+        "unit": "N·m"
+      },
+      "explanation": "Cf = n × f × Fp × Rm : n, f et Rm ne changent pas, donc Cf varie dans le même rapport que Fp. Il est multiplié par 1,5 : 9 × 1,5 = 13,5 N·m. Ajouter 1,5 N·m au couple serait une erreur : la formule est un produit, pas une somme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un étage de la boîte, le baladeur peut mettre en prise quatre paires (nombre de dents de la menante / de la menée) : 15 / 45, 20 / 40, 25 / 35 ou 30 / 30. Laquelle donne la sortie la plus lente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 / 30"
+        },
+        {
+          "id": "b",
+          "text": "20 / 40"
+        },
+        {
+          "id": "c",
+          "text": "15 / 45"
+        },
+        {
+          "id": "d",
+          "text": "25 / 35"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le rapport r = Z menante / Z menée vaut 1 pour 30 / 30, 0,5 pour 20 / 40, 0,333 pour 15 / 45 et 0,714 pour 25 / 35. La sortie la plus lente est celle du plus petit rapport, donc 15 / 45 ; la paire de roues égales, elle, ne change pas la vitesse et ne ralentit pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une vis d'entraînement a deux filets et un pas de 4 mm. De combien la table avance-t-elle pour 3 tours du volant, en mm ?",
+      "answerKey": {
+        "value": 24,
+        "unit": "mm"
+      },
+      "explanation": "Un tour avance la table de k × p = 2 × 4 = 8 mm, donc trois tours donnent C = 3 × 8 = 24 mm. Ne compter que le pas (3 × 4 = 12 mm) oublie le deuxième filet.",
+      "difficulty": 2
+    }
+  ]
+}

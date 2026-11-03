@@ -1,0 +1,136 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : le moteur sous le scalpel",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "182-200",
+    "items": [
+      "cours p.182",
+      "B.10 (cinématique du piston)",
+      "B.7 c (vitesse du véhicule)",
+      "dessin p.185",
+      "synchroniseur p.200"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Les quatre cylindres ci-dessous sont à un même instant de leurs cycles : soupape d'admission à gauche, soupape d'échappement à droite, flèche rouge pour le sens du piston. Lequel est au temps moteur ?\n<svg viewBox=\"0 0 460 190\"><title>Quatre cylindres du même moteur, chacun à un temps différent du cycle</title><rect x=\"34\" y=\"36\" width=\"48\" height=\"48\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><line x1=\"34\" y1=\"36\" x2=\"34\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"36\" x2=\"82\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><rect x=\"31\" y=\"28\" width=\"54\" height=\"8\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"38\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"38\" y=\"38\" width=\"14\" height=\"3.5\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"71\" y1=\"20\" x2=\"71\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"64\" y=\"45\" width=\"14\" height=\"3.5\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"58\" y1=\"20\" x2=\"58\" y2=\"36\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"36\" y=\"84\" width=\"44\" height=\"14\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"58\" y1=\"98\" x2=\"58\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"58\" y1=\"78\" x2=\"58\" y2=\"59\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><polygon points=\"58,52 61.1,59 54.9,59\" fill=\"#dc2626\"/><text x=\"58\" y=\"182\" font-size=\"26\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><rect x=\"149\" y=\"36\" width=\"48\" height=\"48\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><line x1=\"149\" y1=\"36\" x2=\"149\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"197\" y1=\"36\" x2=\"197\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><rect x=\"146\" y=\"28\" width=\"54\" height=\"8\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"38\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"153\" y=\"38\" width=\"14\" height=\"3.5\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"186\" y1=\"20\" x2=\"186\" y2=\"38\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"179\" y=\"38\" width=\"14\" height=\"3.5\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"173\" y1=\"20\" x2=\"173\" y2=\"36\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"151\" y=\"84\" width=\"44\" height=\"14\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"173\" y1=\"98\" x2=\"173\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"173\" y1=\"52\" x2=\"173\" y2=\"71\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><polygon points=\"173,78 169.8,71 176.2,71\" fill=\"#dc2626\"/><text x=\"173\" y=\"182\" font-size=\"26\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><rect x=\"264\" y=\"36\" width=\"48\" height=\"48\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><line x1=\"264\" y1=\"36\" x2=\"264\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"312\" y1=\"36\" x2=\"312\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><rect x=\"261\" y=\"28\" width=\"54\" height=\"8\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"275\" y1=\"20\" x2=\"275\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"268\" y=\"45\" width=\"14\" height=\"3.5\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"301\" y1=\"20\" x2=\"301\" y2=\"38\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"294\" y=\"38\" width=\"14\" height=\"3.5\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"288\" y1=\"20\" x2=\"288\" y2=\"36\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"266\" y=\"84\" width=\"44\" height=\"14\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"288\" y1=\"98\" x2=\"288\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"288\" y1=\"52\" x2=\"288\" y2=\"71\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><polygon points=\"288,78 284.9,71 291.1,71\" fill=\"#dc2626\"/><text x=\"288\" y=\"182\" font-size=\"26\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><rect x=\"379\" y=\"36\" width=\"48\" height=\"48\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"0\" stroke-linejoin=\"round\"/><line x1=\"379\" y1=\"36\" x2=\"379\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"427\" y1=\"36\" x2=\"427\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><rect x=\"376\" y=\"28\" width=\"54\" height=\"8\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"390\" y1=\"20\" x2=\"390\" y2=\"38\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"383\" y=\"38\" width=\"14\" height=\"3.5\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"416\" y1=\"20\" x2=\"416\" y2=\"38\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"409\" y=\"38\" width=\"14\" height=\"3.5\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"403\" y1=\"20\" x2=\"403\" y2=\"36\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"381\" y=\"84\" width=\"44\" height=\"14\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"403\" y1=\"98\" x2=\"403\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"403\" y1=\"78\" x2=\"403\" y2=\"59\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><polygon points=\"403,52 406.1,59 399.9,59\" fill=\"#dc2626\"/><text x=\"403\" y=\"182\" font-size=\"26\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cylindre A"
+        },
+        {
+          "id": "b",
+          "text": "Le cylindre B"
+        },
+        {
+          "id": "c",
+          "text": "Le cylindre C"
+        },
+        {
+          "id": "d",
+          "text": "Le cylindre D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Au temps moteur, les deux soupapes sont fermées et le piston descend, poussé par les gaz : c'est le cylindre B. Le cylindre A, piston montant avec la soupape d'échappement ouverte, est à l'échappement ; le cylindre C, piston descendant avec la soupape d'admission ouverte, à l'admission ; le cylindre D, soupapes fermées et piston montant, à la compression.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Pendant le temps 1 du synchroniseur (synchronisation), lesquelles de ces affirmations sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le baladeur entraîne la bague de synchronisation par les clavettes"
+        },
+        {
+          "id": "b",
+          "text": "La bague frotte sur la surface conique du pignon fou"
+        },
+        {
+          "id": "c",
+          "text": "Les crabots du baladeur sont déjà emboîtés dans ceux du pignon fou"
+        },
+        {
+          "id": "d",
+          "text": "À la fin du temps, le pignon fou tourne à la vitesse de la bague"
+        },
+        {
+          "id": "e",
+          "text": "Le pignon fou est déjà lié au moyeu"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Au temps 1, le baladeur pousse la bague par les clavettes, la bague frotte sur le cône du pignon fou, et ce frottement donne au pignon fou la vitesse de la bague. L'emboîtement des crabots et la liaison du pignon fou avec le moyeu n'arrivent qu'au temps 2, le crabotage.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un moteur tourne à 2 400 tr/min ; le rayon du vilebrequin est de 35 mm (valeur d'entraînement). On représente la vitesse du point A, tangente au cercle, à l'échelle 0,3 m/s pour 1 mm. Quelle est la longueur de la flèche, en mm ?",
+      "answerKey": {
+        "value": 29.3,
+        "unit": "mm",
+        "tolerance": 0.3
+      },
+      "explanation": "ω = 2π × 2 400 / 60 ≈ 251,3 rad/s ; V_A = ω × R = 251,3 × 0,035 ≈ 8,80 m/s, avec R en mètre. À l'échelle de 0,3 m/s pour 1 mm, la flèche mesure 8,80 / 0,3 ≈ 29,3 mm.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur un dessin (valeurs d'entraînement), la vitesse du point A de la manivelle vaut 6,7 m/s. Les vitesses de A et de B (point du piston, qui se déplace le long de l'axe du cylindre) font respectivement 40° et 15° avec la direction de A vers B de la bielle. Quelle est la vitesse de B, en m/s ?",
+      "answerKey": {
+        "value": 5.3,
+        "unit": "m/s",
+        "tolerance": 0.1
+      },
+      "explanation": "L'équiprojectivité égale les projections sur AB : V_A × cos 40° = V_B × cos 15°. Donc V_B = 6,7 × 0,766 / 0,966 ≈ 5,3 m/s. Poser V_B = V_A ignorerait les angles, et ne vaudrait que pour la position où les deux vitesses font le même angle avec AB.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le vilebrequin tourne à 3 000 tr/min. Quelle est la vitesse de l'arbre à cames, et combien de fois la soupape d'admission d'un cylindre s'ouvre-t-elle pendant 2 secondes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 000 tr/min ; 100 ouvertures"
+        },
+        {
+          "id": "b",
+          "text": "1 500 tr/min ; 100 ouvertures"
+        },
+        {
+          "id": "c",
+          "text": "3 000 tr/min ; 50 ouvertures"
+        },
+        {
+          "id": "d",
+          "text": "1 500 tr/min ; 50 ouvertures"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'arbre à cames tourne deux fois moins vite que le vilebrequin : 1 500 tr/min, soit 25 tr/s. Une soupape s'ouvre une fois par tour de came, donc 25 fois par seconde et 50 fois en 2 secondes. 100 ouvertures correspondraient à une ouverture par tour de vilebrequin, et 3 000 tr/min pour l'arbre à cames ignorerait le rapport un demi.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "En 1re vitesse, le rapport de la boîte de la maquette vaut r = 13 / 47 (valeur lue sur la nomenclature, comme dans le cours). Un véhicule roule à 24 km/h, avec des pneus de 0,5 m de diamètre ; le pont arrière ne change pas la vitesse. À quelle vitesse tourne le moteur, en tr/min ?",
+      "answerKey": {
+        "value": 921,
+        "unit": "tr/min",
+        "tolerance": 5
+      },
+      "explanation": "24 km/h = 400 m/min ; un tour de roue avance de π × 0,5 ≈ 1,571 m ; la roue, donc l'arbre de sortie, tourne à 400 / 1,571 ≈ 254,6 tr/min. Comme r = N sortie / N entrée, N moteur = 254,6 × 47 / 13 ≈ 921 tr/min.",
+      "difficulty": 3
+    }
+  ]
+}

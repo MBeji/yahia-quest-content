@@ -1,0 +1,197 @@
+{
+  "title": "⭐ Exercice : du cycle à quatre temps au débrayage",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "181-192",
+    "items": [
+      "cours p.181-183",
+      "B.3 (course)",
+      "B.5 (cylindrée)",
+      "B.9 (termes généraux)",
+      "fonctionnement p.192"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Sur la maquette, un cylindre travaille en quatre temps. Lequel de ces temps fournit de l'énergie au moteur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'admission, quand le piston descend en aspirant l'air"
+        },
+        {
+          "id": "b",
+          "text": "L'explosion-détente, quand la pression pousse le piston"
+        },
+        {
+          "id": "c",
+          "text": "La compression, quand le piston monte en comprimant le mélange"
+        },
+        {
+          "id": "d",
+          "text": "L'échappement, quand le piston monte en chassant les gaz"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seul le troisième temps, l'explosion-détente, est moteur : le mélange enflammé pousse le piston. L'admission, la compression et l'échappement sont résistants, car le piston y est entraîné par le vilebrequin ; la compression, en particulier, s'oppose au piston qui monte.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur une maquette, on mesure une course de 76 mm entre le PMH et le PMB (valeur d'entraînement). Quel est le rayon du vilebrequin, en mm ?",
+      "answerKey": {
+        "value": 38,
+        "unit": "mm"
+      },
+      "explanation": "La course vaut le double du rayon : c = 2 × R, donc R = c / 2 = 76 / 2 = 38 mm.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un piston balaie un volume de 450 cm³ entre le PMH et le PMB, et le moteur a 4 cylindres. Quelle est sa cylindrée, en litre ?",
+      "answerKey": {
+        "value": 1.8,
+        "unit": "L",
+        "tolerance": 0.01
+      },
+      "explanation": "La cylindrée est le volume balayé par un piston multiplié par le nombre de cylindres : 450 × 4 = 1 800 cm³. Comme 1 L = 1 000 cm³, cela fait 1,8 L.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque pièce du moteur à ce qu'elle fait.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Le volant moteur"
+        },
+        {
+          "id": "l2",
+          "text": "L'arbre à cames"
+        },
+        {
+          "id": "l3",
+          "text": "La bielle"
+        },
+        {
+          "id": "l4",
+          "text": "Le ressort de soupape"
+        },
+        {
+          "id": "r1",
+          "text": "Relie le piston au vilebrequin"
+        },
+        {
+          "id": "r2",
+          "text": "Commande l'ouverture des soupapes"
+        },
+        {
+          "id": "r3",
+          "text": "Ramène la soupape en position fermée"
+        },
+        {
+          "id": "r4",
+          "text": "Aide le vilebrequin à franchir les points morts"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r4"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l4",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Le volant moteur aide le vilebrequin à franchir les points morts et régularise sa rotation ; l'arbre à cames commande l'ouverture des soupapes par ses cames ; la bielle relie le piston au vilebrequin ; le ressort de soupape ramène la soupape en position fermée.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Tu appuies sur la pédale de la maquette. Remets dans l'ordre ce qui se passe, de la fourchette au disque.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La butée appuie sur le diaphragme (11)"
+        },
+        {
+          "id": "b",
+          "text": "Le plateau (8) recule"
+        },
+        {
+          "id": "c",
+          "text": "La fourchette (18) pousse la butée (13)"
+        },
+        {
+          "id": "d",
+          "text": "Le disque (26) n'est plus serré : la liaison est coupée"
+        },
+        {
+          "id": "e",
+          "text": "Le diaphragme se déforme"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "a",
+          "e",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "La poussée suit la chaîne du débrayage : la fourchette pousse la butée, qui appuie sur le diaphragme ; celui-ci se déforme, ce qui fait reculer le plateau ; une fois le plateau reculé, le disque n'est plus serré et ne transmet plus.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sur le mécanisme bielle-manivelle de la maquette sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le piston est le coulisseau du mécanisme, le cylindre sa glissière"
+        },
+        {
+          "id": "b",
+          "text": "La course est la distance entre le PMH et le PMB"
+        },
+        {
+          "id": "c",
+          "text": "La transformation de mouvement est irréversible"
+        },
+        {
+          "id": "d",
+          "text": "La course est égale au rayon du vilebrequin"
+        },
+        {
+          "id": "e",
+          "text": "Le volant moteur aide le vilebrequin à franchir les points morts"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Le piston est le coulisseau et le cylindre la glissière ; la course est bien la distance entre le PMH et le PMB ; le volant moteur aide à franchir les points morts. La transformation est réversible : en tournant le vilebrequin à la manivelle, on déplace le piston. Et la course vaut 2R, le double du rayon, pas le rayon.",
+      "difficulty": 2
+    }
+  ]
+}
