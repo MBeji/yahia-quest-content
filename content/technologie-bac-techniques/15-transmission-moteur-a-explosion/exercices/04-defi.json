@@ -1,0 +1,123 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : comparer, critiquer, justifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "194-200",
+    "items": [
+      "A.3 (couronne)",
+      "A.6 (moyeu amortisseur)",
+      "B.1 (positions du levier)",
+      "B.7 (compteur)",
+      "temps 1 et 2 du synchroniseur"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "En passant une vitesse, on entend les crabots craquer : le baladeur a atteint le pignon fou avant la fin du temps 1. Qu'est-ce qui manquait au moment du crabotage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'égalité de vitesse entre pignon fou et moyeu"
+        },
+        {
+          "id": "b",
+          "text": "L'effacement complet des clavettes devant le baladeur"
+        },
+        {
+          "id": "c",
+          "text": "Le serrage du disque contre le volant moteur"
+        },
+        {
+          "id": "d",
+          "text": "Le contact de la fourchette avec le baladeur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le crabotage ne doit se faire qu'une fois les vitesses égalisées : c'est le rôle du temps 1, où la bague frotte sur le cône du pignon fou. Si le baladeur pousse trop tôt, les crabots tournent à des vitesses différentes et craquent. L'effacement des clavettes appartient au temps 2 et en est la suite ; le disque et le volant relèvent de l'embrayage, pas du synchroniseur ; la fourchette est déjà en contact, puisqu'elle déplace le baladeur.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les pistons d'un trois-cylindres de 1,2 L ont une course de 90 mm. Quel est leur diamètre, en mm ?",
+      "answerKey": {
+        "value": 75.2,
+        "unit": "mm",
+        "tolerance": 0.3
+      },
+      "explanation": "Un piston balaie 1,2 L / 3 = 0,4 L = 400 cm³ = 400 000 mm³. Sa surface est 400 000 / 90 ≈ 4 444 mm². Comme S = π d² / 4, d = √(4 × 4 444 / π) ≈ 75,2 mm.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un moteur à 4 cylindres tourne à 2 400 tr/min. Combien de temps moteur fournit-il au total en une seconde ?",
+      "answerKey": {
+        "value": 80
+      },
+      "explanation": "2 400 tr/min = 40 tr/s. Un cycle dure 2 tours : chaque cylindre fait 40 / 2 = 20 cycles par seconde, donc 20 temps moteur par seconde. Avec 4 cylindres : 4 × 20 = 80 temps moteur par seconde.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un véhicule roule à 45 km/h, avec des pneus de 0,55 m de diamètre ; le pont arrière ne change pas la vitesse. Le câble du compteur est entraîné par une roue de 30 dents que mène une vis sans fin à 2 filets (valeurs d'entraînement), montée sur l'arbre de sortie de la boîte. À quelle vitesse tourne le câble, en tr/min ?",
+      "answerKey": {
+        "value": 28.9,
+        "unit": "tr/min",
+        "tolerance": 0.3
+      },
+      "explanation": "45 km/h = 750 m/min ; le périmètre du pneu est π × 0,55 ≈ 1,728 m, donc la roue et l'arbre de sortie tournent à 750 / 1,728 ≈ 434,1 tr/min. La vis à 2 filets fait avancer la roue de 2 dents par tour : r = 2 / 30 = 1 / 15. Le câble tourne à 434,1 / 15 ≈ 28,9 tr/min.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour 10 tours de l'arbre d'entrée en 1re vitesse, un élève écrit N sortie = 10 × 37 / 47 ≈ 7,9 tours. Quelle erreur a-t-il commise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a multiplié 10 par r, alors qu'il fallait diviser 10 par r"
+        },
+        {
+          "id": "b",
+          "text": "Il n'a pas tenu compte du changement de sens, qui réduit le nombre de tours"
+        },
+        {
+          "id": "c",
+          "text": "Il n'a pris que le premier étage, (1) et (2), et oublié (10) et (9)"
+        },
+        {
+          "id": "d",
+          "text": "Il a écrit Z menante / Z menée, alors qu'il fallait Z menée / Z menante"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les paires de la 1re vitesse sont (1, 2) puis (10, 9) : le rapport est le produit 37 / 47 × 13 / 37 = 13 / 47, et l'élève n'a calculé que le premier étage, d'où 7,9 tours au lieu d'environ 2,8. Multiplier N d'entrée par r est correct, le sens de rotation ne change pas le nombre de tours, et Z menante / Z menée est bien la bonne écriture.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le véhicule démarre dans une côte. Pourquoi choisir la 1re vitesse (r ≈ 0,277) plutôt que la 4e (r = 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que la boîte crée alors plus de puissance pour le véhicule"
+        },
+        {
+          "id": "b",
+          "text": "Parce que la sortie ralentit et que son couple augmente"
+        },
+        {
+          "id": "c",
+          "text": "Parce que la sortie tourne plus vite que l'entrée du moteur"
+        },
+        {
+          "id": "d",
+          "text": "Parce que l'embrayage transmet plus de couple en 1re"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec r < 1, l'arbre de sortie tourne plus lentement que l'entrée et, aux pertes près, la puissance se conserve : le couple augmente à peu près dans le rapport inverse, ce qui aide à démarrer en côte. La boîte ne crée pas de puissance, une sortie plus rapide demanderait r > 1, et le couple transmissible de l'embrayage ne dépend pas de la vitesse engagée.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "title": "⭐ Exercice : lire le palan, ses pièces et sa synthèse",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "201-202",
+    "items": [
+      "description du frein-limiteur",
+      "organigramme de la synthèse"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Dans l'organigramme de la synthèse, avec lequel de ces organes le limiteur de couple est-il rangé dans la même branche ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La boîte de vitesses"
+        },
+        {
+          "id": "b",
+          "text": "L'embrayage"
+        },
+        {
+          "id": "c",
+          "text": "La vis-écrou"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le manuel place dans cette branche les accouplements, les embrayages, les limiteurs de couple et les freins : l'embrayage y est donc. La boîte de vitesses modifie la vitesse angulaire, et la vis-écrou transforme la rotation en translation.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur cette vue de face d'un étage épicycloïdal, quel repère désigne le porte-satellites ?\n<svg viewBox=\"0 0 340 276\"><title>Vue de face d'un étage épicycloïdal avec des repères A, B, C et D</title><circle cx=\"170\" cy=\"136\" r=\"134\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"170\" cy=\"136\" r=\"120\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><circle cx=\"170\" cy=\"65.9\" r=\"49.9\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"109.3\" cy=\"171.1\" r=\"49.9\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"230.7\" cy=\"171.1\" r=\"49.9\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"170\" cy=\"136\" r=\"20.2\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"170 65.9 109.3 171.1 230.7 171.1\" fill=\"#3b82f6\" stroke=\"#1d4ed8\" stroke-width=\"1.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\" fill-opacity=\"0.35\"/><circle cx=\"170\" cy=\"65.9\" r=\"3.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"109.3\" cy=\"171.1\" r=\"3.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"230.7\" cy=\"171.1\" r=\"3.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"170\" cy=\"136\" r=\"2.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"73\" y1=\"37\" x2=\"80\" y2=\"46\" stroke=\"#0f172a\" stroke-width=\"1\" /><text x=\"66\" y=\"32\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"95.3\" y=\"185.1\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"170\" y=\"153\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><text x=\"170\" y=\"168.1\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le repère A"
+        },
+        {
+          "id": "b",
+          "text": "Le repère B"
+        },
+        {
+          "id": "c",
+          "text": "Le repère C"
+        },
+        {
+          "id": "d",
+          "text": "Le repère D"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le porte-satellites est la plaque qui relie les axes des satellites et les entraîne autour du centre : c'est le repère D. Le repère A est la couronne à denture intérieure, B un satellite et C le planétaire central.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un moteur de palan est annoncé à 1,5 cv. Quelle est sa puissance, en watts ?",
+      "answerKey": {
+        "value": 1104,
+        "unit": "W"
+      },
+      "explanation": "On convertit avec 1 cv = 736 W : 1,5 × 736 = 1104 W. Le résultat est supérieur à 1 kW, ce qui est cohérent pour un moteur d'un cheval et demi.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque pièce du frein-limiteur au rôle que lui donne la description du manuel.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Électro-aimant (31)"
+        },
+        {
+          "id": "l2",
+          "text": "Ressort (30)"
+        },
+        {
+          "id": "l3",
+          "text": "Ressort (36)"
+        },
+        {
+          "id": "l4",
+          "text": "Disque (28)"
+        },
+        {
+          "id": "r1",
+          "text": "Se plaque sur le disque d'ancrage quand il est alimenté"
+        },
+        {
+          "id": "r2",
+          "text": "Repousse la garniture sur le disque quand le courant cesse"
+        },
+        {
+          "id": "r3",
+          "text": "Presse le disque de frein sur le disque limiteur"
+        },
+        {
+          "id": "r4",
+          "text": "Tourne avec l'arbre mais peut coulisser sur lui"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "L'électro-aimant, sous tension, est plaqué sur le disque d'ancrage (29). Le ressort (30) repousse l'électro-aimant et sa garniture sur le disque quand le courant cesse : il serre le frein. Le ressort (36) maintient le disque (28) pressé sur le disque limiteur (26), ce qui fixe le couple de glissement. Le disque (28) est lié à l'arbre par des cannelures : il tourne avec lui et glisse le long.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le frein d'un palan, avec un ressort de 500 N et un coefficient de frottement f = 0,4, offre un couple de freinage de 12 N·m. On monte un ressort de 600 N et une garniture de coefficient f = 0,3, sans toucher au nombre de surfaces ni aux rayons (valeurs d'entraînement). Quel est le nouveau couple de freinage, en N·m ?",
+      "answerKey": {
+        "value": 10.8,
+        "tolerance": 0.1,
+        "unit": "N·m"
+      },
+      "explanation": "Cf est proportionnel à l'effort du ressort et au coefficient de frottement ; n, R et r ne changent pas, donc Rm non plus. Le couple est multiplié par 600 / 500 = 1,2 pour le ressort et par 0,3 / 0,4 = 0,75 pour la garniture : 12 × 1,2 × 0,75 = 10,8 N·m. Le ressort plus fort ne compense donc pas la garniture moins adhérente.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sur le premier étage épicycloïdal du palan sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les satellites tournent autour d'axes qui ne sont pas fixes par rapport au bâti."
+        },
+        {
+          "id": "b",
+          "text": "La couronne est liée au carter : elle est bloquée."
+        },
+        {
+          "id": "c",
+          "text": "Le porte-satellites est la sortie du premier étage."
+        },
+        {
+          "id": "d",
+          "text": "Le planétaire a plus de dents que chaque satellite."
+        },
+        {
+          "id": "e",
+          "text": "La sortie du premier étage tourne en sens inverse du planétaire."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "C'est la définition d'un train épicycloïdal : les satellites ont des axes mobiles. Dans le palan, la couronne est bloquée (liée au carter) et le porte-satellites restitue la rotation. Le planétaire (15 dents) en a moins que le satellite (37), et la sortie tourne dans le même sens que le planétaire, puisque le rapport 15 / 104 est positif.",
+      "difficulty": 2
+    }
+  ]
+}

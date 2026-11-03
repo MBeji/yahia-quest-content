@@ -26,7 +26,7 @@ le même jour :
 
 | Section | Matière principale | Manuel(s) au Drive | Fiche | Contenu | Prochaine étape |
 | --- | --- | --- | --- | --- | --- |
-| Sciences techniques | technologie (génie mécanique) | `228462` P01-P02 | ✅ complète | 13/25 chapitres (ch. 14-16 en écriture, branche `claude/technologie-bac-techniques-tranche3`) | B2, tranches suivantes |
+| Sciences techniques | technologie (génie mécanique) | `228462` P01-P02 | ✅ complète | 16/25 chapitres (ch. 14-16 livrés le 2026-11-03) | B2, tranches suivantes |
 | Sciences techniques | technologie (génie électrique) | `228461` P01-P03 | ❌ aucune | — | A1 |
 | Sciences techniques | mathématiques | `222451` | ❌ aucune | — | A1 |
 | Sciences techniques | physique | `223451` | ❌ aucune | — | A1 |

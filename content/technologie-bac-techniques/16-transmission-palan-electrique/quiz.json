@@ -1,0 +1,135 @@
+{
+  "title": "Test de compréhension ⭐ : le palan, son frein et son train épicycloïdal",
+  "questions": [
+    {
+      "prompt": "Dans le diagramme FAST du palan, quelle fonction technique remplit le réducteur à double train épicycloïdal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adapter le couple"
+        },
+        {
+          "id": "b",
+          "text": "Créer le couple"
+        },
+        {
+          "id": "c",
+          "text": "Protéger le palan contre les surcharges"
+        },
+        {
+          "id": "d",
+          "text": "Immobiliser la charge"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le réducteur ralentit la rotation et augmente le couple : il adapte le couple (FT212). Créer le couple est le rôle du moteur, protéger contre les surcharges celui du limiteur, immobiliser la charge celui du frein.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pendant la montée de la charge, dans quel état sont l'électro-aimant (31) et le frein du palan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non alimenté, repoussé par le ressort : le frein est serré"
+        },
+        {
+          "id": "b",
+          "text": "Alimenté, plaqué sur le disque d'ancrage : le frein est serré"
+        },
+        {
+          "id": "c",
+          "text": "Alimenté, plaqué sur le disque d'ancrage : le frein est libre"
+        },
+        {
+          "id": "d",
+          "text": "Non alimenté, repoussé par le ressort : le frein est libre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pendant la montée, l'électro-aimant est sous tension : il est plaqué sur le disque d'ancrage (29), le ressort (30) est comprimé et la garniture est décollée, donc le frein est libre. C'est hors tension seulement que le ressort repousse l'électro-aimant sur le disque et que le palan est freiné.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le moteur du palan fournit 800 W et le rendement du palan est de 0,75. Quelle puissance reçoit la charge ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 W"
+        },
+        {
+          "id": "b",
+          "text": "600 W"
+        },
+        {
+          "id": "c",
+          "text": "800 W"
+        },
+        {
+          "id": "d",
+          "text": "1 067 W"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rendement est le quotient de la puissance de sortie par celle d'entrée : P utile = η × Pm = 0,75 × 800 = 600 W. Les 200 W sont la puissance perdue, 800 W ignore le rendement et 1 067 W divise par η au lieu de multiplier.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans le premier étage du réducteur d'un autre palan, la couronne a 96 dents et chaque satellite 36 dents. Combien de dents le planétaire central a-t-il ?",
+      "answerKey": {
+        "value": 24,
+        "unit": "dents"
+      },
+      "explanation": "Sur un diamètre, la couronne contient le planétaire et deux satellites : Z couronne = Z planétaire + 2 × Z satellite. Donc Z planétaire = 96 − 2 × 36 = 96 − 72 = 24 dents.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la formule de Willis appliquée au premier étage du palan, on suit la chaîne du planétaire (repère 20) au satellite (repère 19), puis à la couronne (repère 37). Que vaut k, le nombre de contacts extérieurs entre le planétaire et la couronne ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le contact entre le planétaire (20) et le satellite (19) est extérieur, celui entre le satellite (19) et la couronne (37) est intérieur : k = 1. Compter les deux contacts donnerait 2, et le nombre de satellites (3) n'intervient pas dans k.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le couple dépasse le couple nominal du limiteur du palan. Que se passe-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le moteur s'arrête, car le limiteur coupe son alimentation"
+        },
+        {
+          "id": "b",
+          "text": "Le ressort (30) serre le frein et immobilise l'arbre (2)"
+        },
+        {
+          "id": "c",
+          "text": "L'électro-aimant (31) se plaque sur (28) et bloque la charge"
+        },
+        {
+          "id": "d",
+          "text": "Le disque (28) glisse sur (26) : la sortie s'arrête"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Au-delà du couple nominal, le disque (28), lié à l'arbre (2), glisse sur le disque limiteur (26) : le planétaire (20) et la noix s'arrêtent et la charge n'est pas soulevée, alors que le moteur continue de tourner. Le limiteur ne coupe pas l'alimentation, et le frein ne se serre qu'hors tension.",
+      "difficulty": 2
+    }
+  ]
+}

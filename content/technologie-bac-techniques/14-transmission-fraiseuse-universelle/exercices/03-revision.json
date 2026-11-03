@@ -1,0 +1,153 @@
+{
+  "title": "⭐⭐ Révision (type examen) : frein, dents et vis",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "167-180",
+    "items": [
+      "4.1 (question 9)",
+      "4.2 (question 3.b)",
+      "4.3 (questions 3, 5, 6)"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Quel est le rôle des écrous hexagonaux autofreinés (6) de la nomenclature du frein ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transmettre le couple de l'arbre moteur au disque de frein par obstacle"
+        },
+        {
+          "id": "b",
+          "text": "Empêcher l'assemblage de se desserrer seul sous les vibrations du moteur"
+        },
+        {
+          "id": "c",
+          "text": "Régler à la main, sans outil, l'effort presseur exercé par les ressorts"
+        },
+        {
+          "id": "d",
+          "text": "Freiner la rotation de la broche quand le courant d'alimentation est coupé"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'insert déformable de l'écrou serre le filet : l'écrou ne se desserre pas seul sous les vibrations du moteur. Il ne transmet pas le couple (rôle de la clavette et du moyeu), ne règle rien à la main, et le freinage de la broche vient des ressorts et du disque, pas de lui.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Deux roues cylindriques à denture droite de module 2,5 mm ont 20 et 36 dents. Quel est leur entraxe, en mm ?",
+      "answerKey": {
+        "value": 70,
+        "unit": "mm"
+      },
+      "explanation": "L'entraxe est la demi-somme des diamètres primitifs : d1 = 2,5 × 20 = 50 mm et d2 = 2,5 × 36 = 90 mm, donc a = (50 + 90) / 2 = 70 mm. On peut aussi écrire a = m × (Z1 + Z2) / 2 = 2,5 × 56 / 2.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On tourne le volant de 4 tours et la table avance de 24 mm. Le pas de la vis d'entraînement, mesuré entre deux crêtes voisines, est de 3 mm. Combien de filets cette vis a-t-elle ?",
+      "answerKey": {
+        "value": 2,
+        "unit": "filets"
+      },
+      "explanation": "Un tour avance la table de C / n = 24 / 4 = 6 mm. Comme cette avance vaut k × p, k = 6 / 3 = 2 : la vis a deux filets. Avec un seul filet, la table n'aurait avancé que de 3 mm par tour.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un opérateur pousse la table à la main : la vis d'entraînement ne tourne pas. Que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est irréversible : le frottement dans le filet l'emporte sur la poussée"
+        },
+        {
+          "id": "b",
+          "text": "Le frein électromagnétique est serré et bloque la vis d'entraînement en rotation"
+        },
+        {
+          "id": "c",
+          "text": "La table est trop lourde : plus légère, elle ferait tourner la vis sans difficulté"
+        },
+        {
+          "id": "d",
+          "text": "Le jeu est trop grand : la vis devrait suivre le mouvement de la table poussée"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une vis-écrou usuelle de machine-outil est irréversible : le frottement dans le filet l'emporte, et la translation de la table ne peut pas faire tourner la vis. Le frein est en bout d'arbre moteur et n'y est pour rien ; le poids n'explique pas l'irréversibilité, et le jeu ne fait que retarder le début du mouvement.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "On inverse le sens de rotation du volant. Remets dans l'ordre ce qui se passe, du geste à l'avance de la table.",
+      "options": [
+        {
+          "id": "d",
+          "text": "La table repart dans l'autre sens"
+        },
+        {
+          "id": "b",
+          "text": "La vis traverse le jeu à vide et la table ne bouge pas"
+        },
+        {
+          "id": "a",
+          "text": "La vis se met à tourner dans l'autre sens"
+        },
+        {
+          "id": "c",
+          "text": "Un flanc de la vis vient au contact du flanc opposé de l'écrou"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "La vis tourne d'abord dans le nouveau sens, mais elle traverse le jeu à vide : aucun flanc ne pousse l'écrou et la table reste immobile. Quand un flanc de la vis atteint le flanc opposé de l'écrou, il le pousse, et seulement alors la table repart.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sur l'indexage par bille et ressort sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La vis de pression augmente le nombre de vitesses de la boîte"
+        },
+        {
+          "id": "b",
+          "text": "Le ressort pousse la bille dans un cran de la pièce commandée"
+        },
+        {
+          "id": "c",
+          "text": "La vis de pression ferme le logement de la bille et du ressort"
+        },
+        {
+          "id": "d",
+          "text": "La bille transmet la rotation de l'arbre moteur à la broche"
+        },
+        {
+          "id": "e",
+          "text": "Visser davantage la vis augmente l'effort pour sortir du cran"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Le ressort pousse la bille dans un cran, ce qui maintient la commande en position ; la vis de pression ferme le logement, donc la bille ne s'éjecte plus au montage, et plus elle est vissée, plus le ressort est comprimé, donc plus il faut d'effort pour sortir du cran. La vis ne crée aucune vitesse, et la bille ne transmet aucune rotation : elle ne fait que maintenir une position.",
+      "difficulty": 2
+    }
+  ]
+}

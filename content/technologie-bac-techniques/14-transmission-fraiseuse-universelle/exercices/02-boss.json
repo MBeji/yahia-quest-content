@@ -1,0 +1,122 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : frein, boîte et vis sous le scalpel",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "166-180",
+    "items": [
+      "4.1 (questions 7, 8)",
+      "4.2 (questions 4.a à 4.d)",
+      "4.3 (questions 1 à 4)"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Voici une demi-coupe de principe (écarts exagérés) du frein d'une fraiseuse. Quelle affirmation la décrit correctement ?\n<svg viewBox=\"0 0 340 152\"><title>Demi-coupe de principe d'un frein électromagnétique de fraiseuse, disque et plateau mobile étiquetés</title><rect x=\"15\" y=\"126\" width=\"300\" height=\"8\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"45\" y=\"62\" width=\"54\" height=\"44\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"102\" y=\"110\" width=\"24\" height=\"16\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"108\" y=\"74\" width=\"12\" height=\"36\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"99\" y=\"74\" width=\"9\" height=\"22\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"120\" y=\"74\" width=\"9\" height=\"22\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><rect x=\"195\" y=\"58\" width=\"84\" height=\"50\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"195\" y=\"64\" width=\"27\" height=\"18\" fill=\"#fdba74\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><rect x=\"162\" y=\"62\" width=\"18\" height=\"44\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polyline points=\"180 96 183.8 96 185.6 100 189.4 92 191.2 96 195 96\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"9\" y1=\"134\" x2=\"321\" y2=\"134\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\" stroke-dasharray=\"7 4\"/><text x=\"118\" y=\"26\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">disque (16)</text><line x1=\"114\" y1=\"74\" x2=\"118\" y2=\"29\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><text x=\"196\" y=\"10\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">plateau (17)</text><line x1=\"171\" y1=\"62\" x2=\"196\" y2=\"13\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><text x=\"246\" y=\"26\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">bobine (22)</text><line x1=\"208.5\" y1=\"64\" x2=\"246\" y2=\"29\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><line x1=\"187.5\" y1=\"90\" x2=\"187.5\" y2=\"56\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><text x=\"189.5\" y=\"50\" font-size=\"9.5\" font-weight=\"500\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">ressort (7)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La bobine n'est pas excitée et les ressorts ont poussé le plateau sur le disque"
+        },
+        {
+          "id": "b",
+          "text": "La bobine est excitée et presse le plateau contre le disque, qui est pincé"
+        },
+        {
+          "id": "c",
+          "text": "La bobine est excitée et a attiré le plateau, qui ne presse donc plus le disque"
+        },
+        {
+          "id": "d",
+          "text": "La bobine n'est pas excitée et les ressorts ont écarté le plateau du disque"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le plateau est loin du disque et rapproché de l'armature : la bobine est excitée, elle a attiré le plateau et comprimé les ressorts, donc le disque n'est plus pincé et le frein est libre. Une bobine excitée ne presse jamais le disque, et des ressorts qui poussent le plateau le rapprochent du disque, ils ne l'en écartent pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Entre deux arbres, une paire de roues droites de même module a pour nombres de dents 18 et 58. Un autre baladeur doit mettre en prise, entre les mêmes arbres, une autre paire de roues du même module. Laquelle est possible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "28 et 48 dents"
+        },
+        {
+          "id": "b",
+          "text": "9 et 29 dents"
+        },
+        {
+          "id": "c",
+          "text": "30 et 48 dents"
+        },
+        {
+          "id": "d",
+          "text": "40 et 40 dents"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'entraxe étant fixe, toutes les paires du même module ont la même somme de dents : 18 + 58 = 76, et 28 + 48 = 76 convient. 9 + 29 = 38 donne un entraxe deux fois plus petit malgré le même rapport ; 30 + 48 = 78 et 40 + 40 = 80 donnent un entraxe trop grand. Le rapport n'est pas la condition, c'est la somme.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un frein à trois ressorts identiques a n = 2 surfaces de frottement, f = 0,35, R = 55 mm et r = 35 mm (valeurs d'illustration). Quel effort chaque ressort doit-il fournir pour un couple de freinage Cf = 15 N·m, en N ?",
+      "answerKey": {
+        "value": 156.2,
+        "tolerance": 1.5,
+        "unit": "N"
+      },
+      "explanation": "Rm = (2/3) × (55³ − 35³) / (55² − 35²) = (2/3) × 123 500 / 1 800 ≈ 45,7 mm. Avec Cf = 15 000 N·mm : Fp = 15 000 / (2 × 0,35 × 45,7) ≈ 468,5 N pour l'ensemble des ressorts, soit 468,5 / 3 ≈ 156,2 N par ressort.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève calcule l'effort presseur Fp pour Cf = 12 N·m, n = 2, f = 0,4 et une couronne de frottement de rayons R = 50 mm et r = 34 mm. Il trouve Fp ≈ 177 N, alors que la bonne valeur est environ 353 N. Quelle erreur explique son résultat ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a oublié le nombre de surfaces de frottement n dans son calcul"
+        },
+        {
+          "id": "b",
+          "text": "Il a divisé son résultat par trois, le nombre de ressorts du frein"
+        },
+        {
+          "id": "c",
+          "text": "Il a gardé Cf en N·m alors que les rayons sont exprimés en mm"
+        },
+        {
+          "id": "d",
+          "text": "Il a utilisé les diamètres de la couronne à la place des rayons"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec les bons rayons, Rm ≈ 42,5 mm et Fp = 12 000 / (2 × 0,4 × 42,5) ≈ 353 N. Avec les diamètres, Rm double (≈ 85 mm), donc Fp est divisé par deux : ≈ 177 N. Oublier n donnerait 706 N, diviser par trois 118 N, et garder Cf en N·m environ 0,35 N.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une vis d'entraînement (figure d'illustration) est vue de côté ci-dessous. Les traits colorés sont les crêtes du ou des filets, une couleur par filet, et la distance entre deux crêtes voisines est cotée. Combien de tours du volant faut-il pour déplacer la table de 60 mm ?\n<svg viewBox=\"0 0 340 100\"><title>Vis d'entraînement vue de côté, deux couleurs de crêtes, distance entre deux crêtes voisines cotée 5 mm</title><rect x=\"20\" y=\"40\" width=\"300\" height=\"50\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"34\" y1=\"90\" x2=\"48\" y2=\"40\" stroke=\"#1d4ed8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"64\" y1=\"90\" x2=\"78\" y2=\"40\" stroke=\"#ea580c\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"90\" x2=\"108\" y2=\"40\" stroke=\"#1d4ed8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"124\" y1=\"90\" x2=\"138\" y2=\"40\" stroke=\"#ea580c\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"154\" y1=\"90\" x2=\"168\" y2=\"40\" stroke=\"#1d4ed8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"184\" y1=\"90\" x2=\"198\" y2=\"40\" stroke=\"#ea580c\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"214\" y1=\"90\" x2=\"228\" y2=\"40\" stroke=\"#1d4ed8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"244\" y1=\"90\" x2=\"258\" y2=\"40\" stroke=\"#ea580c\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"274\" y1=\"90\" x2=\"288\" y2=\"40\" stroke=\"#1d4ed8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"123\" y1=\"26\" x2=\"108\" y2=\"26\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><polygon points=\"115.2 22.5 108 26 115.2 29.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"123\" y1=\"26\" x2=\"138\" y2=\"26\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><polygon points=\"130.8 29.5 138 26 130.8 22.5\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"108\" y1=\"22\" x2=\"108\" y2=\"38\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><line x1=\"138\" y1=\"22\" x2=\"138\" y2=\"38\" stroke=\"#0f172a\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><text x=\"123\" y=\"18\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5 mm</text><rect x=\"20\" y=\"100\" width=\"0.1\" height=\"0.1\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"0.1\" stroke-linejoin=\"round\"/></svg>",
+      "answerKey": {
+        "value": 6,
+        "unit": "tours"
+      },
+      "explanation": "Deux couleurs alternent : la vis a deux filets. Le pas, entre deux crêtes voisines, vaut 5 mm, donc un tour avance la table de 2 × 5 = 10 mm et il faut 60 / 10 = 6 tours. Prendre 5 mm pour l'avance d'un tour donnerait 12 tours, le double du bon nombre.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans la boîte de la fraiseuse, trois paires sont en prise : un pignon de 24 dents mène une roue de 34 dents, un pignon de 19 dents mène une roue de 49 dents, puis un pignon de 56 dents mène une roue de 34 dents. Le moteur tourne à Nm = 1 450 tr/min (valeur d'illustration). Quelle est la vitesse de la broche, en tr/min ?",
+      "answerKey": {
+        "value": 653.7,
+        "tolerance": 2,
+        "unit": "tr/min"
+      },
+      "explanation": "Les rapports d'étage se multiplient : r = 24/34 × 19/49 × 56/34 ≈ 0,7059 × 0,3878 × 1,6471 ≈ 0,4508. La broche tourne à N26 = 1 450 × 0,4508 ≈ 653,7 tr/min, ce qui retombe sur la valeur 653 de la plaque.",
+      "difficulty": 3
+    }
+  ]
+}
