@@ -1,0 +1,137 @@
+{
+  "title": "⭐⭐ Révision (type examen) : frein, train épicycloïdal et synthèse",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle est la forme des surfaces de contact du frein à disque du palan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Planes, perpendiculaires à l'axe de l'arbre"
+        },
+        {
+          "id": "b",
+          "text": "Coniques, inclinées par rapport à l'axe"
+        },
+        {
+          "id": "c",
+          "text": "Cylindriques, parallèles à l'axe de l'arbre"
+        },
+        {
+          "id": "d",
+          "text": "Dentées, à dents frontales qui s'emboîtent"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le disque et sa garniture se pressent l'un contre l'autre dans le sens de l'axe : les surfaces de contact sont planes et perpendiculaires à l'axe, ce qui fait un frein à disque. Les formes conique et cylindrique n'ont pas cette orientation, et des dents qui s'emboîtent transmettraient par obstacle, sans frottement.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un étage épicycloïdal a un planétaire de 18 dents et des satellites de 30 dents. Combien de dents la couronne doit-elle avoir pour que l'étage engrène ?",
+      "answerKey": {
+        "value": 78,
+        "unit": "dents"
+      },
+      "explanation": "Sur un diamètre, la couronne contient le planétaire et deux satellites : Z couronne = Z planétaire + 2 × Z satellite = 18 + 2 × 30 = 78 dents. Ajouter un seul satellite donnerait 48, ce qui oublie le satellite de l'autre côté du planétaire.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque cas de train épicycloïdal à son rapport, Z1 étant le planétaire et Z4 la couronne.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Couronne bloquée, planétaire en entrée, porte-satellites en sortie"
+        },
+        {
+          "id": "l2",
+          "text": "Planétaire bloqué, couronne en entrée, porte-satellites en sortie"
+        },
+        {
+          "id": "l3",
+          "text": "Porte-satellites bloqué, planétaire en entrée, couronne en sortie"
+        },
+        {
+          "id": "r1",
+          "text": "Z1 / (Z1 + Z4)"
+        },
+        {
+          "id": "r2",
+          "text": "Z4 / (Z1 + Z4)"
+        },
+        {
+          "id": "r3",
+          "text": "−Z1 / Z4"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Couronne bloquée : le rapport est Z1 / (Z1 + Z4), c'est le cas du palan. Planétaire bloqué : on permute les rôles et le rapport est Z4 / (Z1 + Z4). Porte-satellites bloqué : le train se comporte comme un train ordinaire, d'où −Z1 / Z4, avec un signe négatif qui marque l'inversion du sens.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'écrou d'une vis de pas 4 mm avance quand la vis tourne de 270°. De combien avance-t-il, en mm ?",
+      "answerKey": {
+        "value": 3,
+        "unit": "mm"
+      },
+      "explanation": "270° = 3π/2 rad, soit les trois quarts d'un tour. x = (P / 2π) × θ = (4 / 2π) × 3π/2 = 4 × 3/4 = 3 mm : le pas est le déplacement d'un tour, et il faut les trois quarts de ce déplacement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un mécanisme doit donner une course de 50 mm. Lequel convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un excentrique d'excentricité 50 mm"
+        },
+        {
+          "id": "b",
+          "text": "Un excentrique d'excentricité 12,5 mm"
+        },
+        {
+          "id": "c",
+          "text": "Une bielle-manivelle de manivelle 25 mm et de bielle 120 mm"
+        },
+        {
+          "id": "d",
+          "text": "Une bielle-manivelle de manivelle 50 mm et de bielle 120 mm"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La course d'une bielle-manivelle vaut 2 × R : pour 50 mm, il faut R = 25 mm, et la longueur de la bielle, 120 mm, n'intervient pas. Un excentrique de 50 mm donnerait 100 mm, un excentrique de 12,5 mm donnerait 25 mm, et une manivelle de 50 mm donnerait 100 mm.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un moteur à 4 cylindres a une cylindrée totale de 1 600 cm³ et une course L = 80 mm (valeurs d'entraînement). Quel est l'alésage D de chaque cylindre, en mm ?",
+      "answerKey": {
+        "value": 79.8,
+        "tolerance": 0.5,
+        "unit": "mm"
+      },
+      "explanation": "Un cylindre balaie 1 600 / 4 = 400 cm³ = 400 000 mm³. Comme V = π × D² × L / 4, D² = 4 × V / (π × L) = 4 × 400 000 / (π × 80) ≈ 6 366 mm², donc D ≈ 79,8 mm. Oublier de diviser par les 4 cylindres donnerait un alésage près de deux fois trop grand, environ 159,6 mm.",
+      "difficulty": 2
+    }
+  ]
+}

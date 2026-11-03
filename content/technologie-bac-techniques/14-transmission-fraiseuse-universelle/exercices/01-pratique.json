@@ -1,0 +1,176 @@
+{
+  "title": "⭐ Exercice : qui bouge, qui serre, quelle vitesse",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "163-167",
+    "items": [
+      "4.1 (mise en situation, question 4)",
+      "4.1 (questions 6, 7)"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Pourquoi équipe-t-on une fraiseuse d'un frein, d'après la mise en situation du manuel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Régler la vitesse de rotation de la broche selon la matière usinée"
+        },
+        {
+          "id": "b",
+          "text": "Arrêter la broche très vite, entre deux pièces ou en cas d'accident"
+        },
+        {
+          "id": "c",
+          "text": "Maintenir la pièce immobile sur la table de la machine pendant la coupe"
+        },
+        {
+          "id": "d",
+          "text": "Protéger le moteur contre les surtensions et les coupures du réseau"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le frein sert à gagner du temps au changement de pièce, en réduisant le temps d'arrêt de l'outil, et à stopper la broche immédiatement en cas d'accident. Régler la vitesse est le rôle de la boîte de vitesses, tenir la pièce celui du bridage sur la table, et protéger le moteur celui de l'installation électrique.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque pièce du frein électromagnétique à son mouvement par rapport au bâti.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Disque de frein (16)"
+        },
+        {
+          "id": "l2",
+          "text": "Plateau mobile (17)"
+        },
+        {
+          "id": "l3",
+          "text": "Armature de bobine (4)"
+        },
+        {
+          "id": "r1",
+          "text": "Tournante"
+        },
+        {
+          "id": "r2",
+          "text": "Glissante"
+        },
+        {
+          "id": "r3",
+          "text": "Fixe"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Le disque est entraîné par l'arbre moteur : c'est une pièce tournante. Le plateau mobile va et vient le long de l'axe pour pincer ou lâcher le disque sans tourner : c'est une pièce glissante. L'armature appartient à la classe A du bâti : elle est fixe.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour observer le frein de la fraiseuse en marche, remets dans l'ordre les opérations de la consigne du manuel.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Lancer le moteur avec le bouton d'essai, à bonne distance"
+        },
+        {
+          "id": "a",
+          "text": "Retirer la cage du ventilateur (1), machine hors tension"
+        },
+        {
+          "id": "d",
+          "text": "Observer le mouvement de chaque pièce du frein"
+        },
+        {
+          "id": "b",
+          "text": "Mettre la machine sous tension"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "La machine doit d'abord être hors tension : on retire la cage avant tout, pour ne pas toucher une pièce qui peut tourner. On met ensuite sous tension, puis on lance le moteur avec le bouton d'essai en restant à distance ; on n'observe les pièces en mouvement qu'une fois la machine lancée.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "La plaque de la fraiseuse porte douze vitesses, lues ligne après ligne : 50 et 128, puis 240 et 92, puis 68 et 180, puis 910 et 352, puis 653 et 1 700, puis 1 280 et 490 tr/min. Quelle est la dixième vitesse dans l'ordre croissant, en tr/min ?",
+      "answerKey": {
+        "value": 910,
+        "unit": "tr/min"
+      },
+      "explanation": "Une fois triée, la gamme est 50, 68, 92, 128, 180, 240, 352, 490, 653, 910, 1 280, 1 700 : la dixième est 910 tr/min. Lire la plaque ligne après ligne, sans trier, donnerait 1 700 en dixième position.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un frein a n = 2 surfaces de frottement, un coefficient de frottement f = 0,4 et un rayon d'action Rm = 40 mm. On veut un couple de freinage Cf = 12,8 N·m. Quel effort presseur total Fp les ressorts doivent-ils exercer, en N ?",
+      "answerKey": {
+        "value": 400,
+        "unit": "N"
+      },
+      "explanation": "On isole Fp dans Cf = n × f × Fp × Rm, avec Cf = 12,8 N·m = 12 800 N·mm : Fp = 12 800 / (2 × 0,4 × 40) = 12 800 / 32 = 400 N. Garder Cf en N·m avec un rayon en mm donnerait un effort mille fois trop petit.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sur le frein électromagnétique de la fraiseuse sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La commande est électrique : elle repose sur un courant dans la bobine"
+        },
+        {
+          "id": "b",
+          "text": "Les ressorts de la nomenclature servent à desserrer le disque"
+        },
+        {
+          "id": "c",
+          "text": "Une bobine excitée attire le plateau mobile et comprime les ressorts"
+        },
+        {
+          "id": "d",
+          "text": "Les ressorts exercent l'effort presseur Fp qui pince le disque"
+        },
+        {
+          "id": "e",
+          "text": "Sans courant dans la bobine, le disque est libre de tourner"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "La commande est électrique, puisque l'ordre vient d'un courant dans la bobine. Une bobine excitée attire le plateau et comprime les ressorts, ce qui libère le disque ; les ressorts exercent l'effort presseur Fp qui le pince. Les ressorts servent à serrer et non à desserrer le disque, et sans courant celui-ci est au contraire pincé, donc freiné.",
+      "difficulty": 2
+    }
+  ]
+}
