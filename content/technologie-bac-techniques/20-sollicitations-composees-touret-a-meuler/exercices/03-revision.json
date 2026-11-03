@@ -1,0 +1,150 @@
+{
+  "title": "⭐⭐ Révision (type examen) : moments, réactions et résistance",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "On calcule le diamètre d'un arbre avec le moment idéal en N·mm et la résistance pratique Rpe en MPa. Dans quelle unité le diamètre sort-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En centimètres"
+        },
+        {
+          "id": "b",
+          "text": "En millimètres"
+        },
+        {
+          "id": "c",
+          "text": "En mètres"
+        },
+        {
+          "id": "d",
+          "text": "En N/mm²"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un MPa vaut un N/mm². Dans d³ ≥ 32 × Mfi / (π × Rpe), les N s'éliminent et il reste des mm³ : le diamètre sort en millimètres. Les mètres ou les centimètres demanderaient des conversions que la formule ne fait pas, et N/mm² est l'unité de Rpe, pas d'une longueur.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un arbre est en acier S355, de limite d'élasticité 355 MPa, avec un coefficient de sécurité s = 2,5 (valeurs d'illustration). Quelle est sa résistance pratique à l'extension Rpe, en MPa ?",
+      "answerKey": {
+        "value": 142,
+        "unit": "MPa"
+      },
+      "explanation": "Rpe = Re / s = 355 / 2,5 = 142 MPa. C'est cette valeur, et non Re, que la contrainte ne doit pas dépasser.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour une variante du touret (valeurs d'illustration), FT = 90 N vers le haut, P = 30 N et T + t = 500 N vers le bas. Quelle est la somme RA + RC des deux réactions, en N, l'axe y étant dirigé vers le haut ?",
+      "answerKey": {
+        "value": 440,
+        "unit": "N"
+      },
+      "explanation": "La somme des forces suivant y est nulle : 90 + RA + RC − 30 − 500 = 0, donc RA + RC = 30 + 500 − 90 = 440 N. Le poids et T + t sont comptés négativement, car ils sont dirigés vers le bas ; FT l'est positivement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "T + t = 625 N est la plus grande force du touret. Pourquoi la section B n'est-elle pas la plus sollicitée en flexion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que la réaction RC annule l'effet de T + t en B"
+        },
+        {
+          "id": "b",
+          "text": "Parce que le bras de levier est nul en B : Mf(B) = 0"
+        },
+        {
+          "id": "c",
+          "text": "Parce que la torsion est nulle en B"
+        },
+        {
+          "id": "d",
+          "text": "Parce que T + t n'agit pas sur l'arbre lui-même"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un moment est une force multipliée par une distance : en B, extrémité libre de l'arbre, la distance entre la section et le point d'application de T + t est nulle, donc Mf(B) = 0. La réaction RC agit en C et ne s'annule pas avec T + t ; la torsion, elle, vaut encore 8,25 N·m en B ; et T + t est bien appliquée à l'arbre par la poulie.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur du dimensionnement à ce qu'elle représente.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Le moment de torsion Mt"
+        },
+        {
+          "id": "l2",
+          "text": "Le moment fléchissant Mf"
+        },
+        {
+          "id": "l3",
+          "text": "Le moment idéal de flexion Mfi"
+        },
+        {
+          "id": "l4",
+          "text": "Le rapport λ"
+        },
+        {
+          "id": "r1",
+          "text": "Le couple transmis de la meule à la poulie"
+        },
+        {
+          "id": "r2",
+          "text": "Le moment des forces situées à gauche de la coupure"
+        },
+        {
+          "id": "r3",
+          "text": "Le moment de flexion qui remplace Mf et Mt ensemble"
+        },
+        {
+          "id": "r4",
+          "text": "Le rapport Rpg / Rpe des résistances pratiques"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "Mt est le couple que l'arbre transmet de la meule à la poulie. Mf est le moment, par rapport à la section, des forces situées à gauche de la coupure. Mfi est le moment de flexion unique qui remplace Mf et Mt ensemble pour le calcul du diamètre. Le rapport λ est celui des résistances pratiques au glissement et à l'extension, Rpg / Rpe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Avec λ = 0,5, que valent les deux coefficients 1 − 1/(2λ) et 1/(2λ) de la formule du moment idéal de flexion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 et 1"
+        },
+        {
+          "id": "b",
+          "text": "0,5 et 0,5"
+        },
+        {
+          "id": "c",
+          "text": "1 et 0"
+        },
+        {
+          "id": "d",
+          "text": "−1 et 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec λ = 0,5, 2λ = 1, donc 1/(2λ) = 1 et 1 − 1/(2λ) = 0. Le terme en Mf disparaît et il reste Mfi = √(Mf² + Mt²). Inverser les deux coefficients donnerait Mfi = Mf, sans torsion ; 0,5 confond λ avec les coefficients ; −1 et 2 correspondraient à λ = 0,25.",
+      "difficulty": 2
+    }
+  ]
+}

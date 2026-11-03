@@ -1,0 +1,121 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : corriger, remonter, vérifier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "manuel": {
+    "pages": "236-238",
+    "items": [
+      "A.3 (réactions)",
+      "B.8 (type de sollicitation)",
+      "B.9 (moment idéal)",
+      "B.10 et B.11 (diamètre et vérification)"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Pour calculer RC, un élève écrit les moments en A : « 110 × 100 + RC × 240 − 30 × 115 − 625 × 330 = 0 ». Où est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le bras de P devrait être 215 mm, car on mesure depuis O"
+        },
+        {
+          "id": "b",
+          "text": "Le moment de FT a un mauvais signe : FT tourne à l'inverse de RC"
+        },
+        {
+          "id": "c",
+          "text": "Il manque le terme de RA, car le bras de RA vaut 100 mm"
+        },
+        {
+          "id": "d",
+          "text": "Le bras de T + t devrait être 90 mm, car T + t agit à 90 mm de C"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chasse à l'erreur : la clé désigne l'erreur de l'élève. FT agit vers le haut à gauche de A, donc elle tourne dans le sens horaire, à l'inverse de RC : son terme est −110 × 100. Les bras 115 et 330 sont bien mesurés depuis A, et le bras de RA est nul en A, donc RA est absente à bon droit.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur un touret (valeurs d'illustration), on mesure t = 100 N sur le brin mou, avec T = 4 t. La poulie a un rayon de 22 mm et la meule un rayon de 75 mm. Quel effort FT sur la meule équilibre cette courroie, en N ?",
+      "answerKey": {
+        "value": 88,
+        "unit": "N"
+      },
+      "explanation": "Avec T = 4 t = 400 N, T − t = 300 N. Le couple de la courroie vaut 300 × 22 = 6 600 N·mm. À l'équilibre il égale FT × 75, donc FT = 6 600 / 75 = 88 N.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sur l'arbre du touret (Mf maximal 56,25 N·m, Mt = 8,25 N·m) sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le moment de torsion est le même en toute section de O à B"
+        },
+        {
+          "id": "b",
+          "text": "En valeur absolue, le moment fléchissant est maximal en C"
+        },
+        {
+          "id": "c",
+          "text": "Le moment fléchissant change de signe entre A et G"
+        },
+        {
+          "id": "d",
+          "text": "La réaction du palier A est dirigée vers le haut"
+        },
+        {
+          "id": "e",
+          "text": "La section B est la plus sollicitée, car T + t y est la plus grande force"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le couple traverse l'arbre sans changer entre la meule et la poulie, donc Mt est constant. En valeur absolue, Mf atteint 56,25 N·m en C, plus que partout ailleurs. Mf vaut +11 N·m en A et −19,4 N·m en G : il s'annule entre les deux, donc change de signe. RA ≈ −374,6 N : son signe négatif la dirige vers le bas. Et en B, le bras de T + t est nul : Mf(B) = 0.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un arbre plein de 20 mm de diamètre est en acier de résistance pratique Rpe = 137,5 MPa. Quel moment idéal maximal peut-il supporter, en N·m ?",
+      "answerKey": {
+        "value": 107.99,
+        "unit": "N·m",
+        "tolerance": 0.2
+      },
+      "explanation": "La condition Mfi / (π d³ / 32) ≤ Rpe donne Mfi ≤ Rpe × π × d³ / 32 = 137,5 × π × 8 000 / 32 = 137,5 × π × 250 ≈ 107 992 N·mm, soit environ 107,99 N·m. Le touret du cours n'en demande que 56,85 : l'arbre de 20 mm a donc de la marge.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le dessin d'un touret (valeur d'illustration) donne un arbre plein de 15 mm de diamètre au droit du palier C, la section la plus sollicitée, où Mfi = 56,85 N·m. Quelle est la contrainte maximale dans cette section, en MPa ?",
+      "answerKey": {
+        "value": 171.6,
+        "unit": "MPa",
+        "tolerance": 0.3
+      },
+      "explanation": "On convertit Mfi = 56 852 N·mm. Alors σ = 32 × 56 852 / (π × 15³) = 1 819 264 / 10 603 ≈ 171,6 MPa. Cette valeur dépasse Rpe = 137,5 MPa : le diamètre de 15 mm est inférieur au minimum de 16,15 mm, le choix n'est pas valable avec s = 2.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On garde l'arbre du touret (Mfi = 56,85 N·m dans la section C, acier S275, Re = 275 MPa), mais on exige un coefficient de sécurité s = 3 (valeur d'illustration). Quel diamètre minimal d'arbre plein faut-il, en mm ?",
+      "answerKey": {
+        "value": 18.49,
+        "unit": "mm",
+        "tolerance": 0.05
+      },
+      "explanation": "Rpe = Re / s = 275 / 3 ≈ 91,67 MPa. Avec Mfi = 56 852 N·mm : d³ ≥ 32 × 56 852 / (π × 91,67) ≈ 1 819 264 / 287,98 ≈ 6 317 mm³, donc d ≥ 18,49 mm. Passer de s = 2 à s = 3 multiplie d³ par 1,5, donc d par ∛1,5 ≈ 1,145 : 16,15 × 1,145 ≈ 18,49 mm.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "title": "⭐ Exercice : lire les efforts de la grue",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur de cohésion à son effet sur la section.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "L'effort normal N"
+        },
+        {
+          "id": "l2",
+          "text": "L'effort tranchant Ty"
+        },
+        {
+          "id": "l3",
+          "text": "Le moment fléchissant Mfz"
+        },
+        {
+          "id": "l4",
+          "text": "Le moment de torsion Mt"
+        },
+        {
+          "id": "r1",
+          "text": "Tire ou comprime la section, selon la flèche"
+        },
+        {
+          "id": "r2",
+          "text": "Cisaille la section, perpendiculairement à la flèche"
+        },
+        {
+          "id": "r3",
+          "text": "Plie la flèche autour de l'axe z"
+        },
+        {
+          "id": "r4",
+          "text": "Tord la poutre autour de sa ligne moyenne"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "L'effort normal N agit selon la flèche : il tire ou comprime. L'effort tranchant Ty est perpendiculaire à la flèche : il cisaille. Le moment fléchissant Mfz plie la flèche autour de l'axe z. Le moment de torsion Mt tord la poutre autour de sa ligne moyenne, ce qui n'arrive pas à la flèche de la grue.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de la vérification d'une flèche de grue.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Couper la poutre, calculer N, Ty et Mfz, et tracer les diagrammes pour repérer la section la plus sollicitée"
+        },
+        {
+          "id": "a",
+          "text": "Modéliser la flèche en poutre, avec ses hypothèses et un repère lié à la flèche"
+        },
+        {
+          "id": "e",
+          "text": "Comparer σN + σf à Rpe = Re / s et garder le plus petit tube qui convient"
+        },
+        {
+          "id": "b",
+          "text": "Projeter P et FV, puis écrire l'équilibre pour trouver l'action FA du pied"
+        },
+        {
+          "id": "d",
+          "text": "Calculer S et IGz / v du tube, puis les contraintes σN et σf"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On modélise d'abord, car les projections ont besoin du repère et des hypothèses. Les projections et l'équilibre donnent ensuite FA, qui est nécessaire pour écrire N, Ty et Mfz par coupure. Les diagrammes désignent la section la plus sollicitée, dont on calcule les contraintes avec les caractéristiques du tube ; la comparaison à Rpe vient en dernier, parce qu'elle a besoin de la contrainte.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "D'après les diagrammes de cette flèche ABC (figure), en quelle section la flexion est-elle la plus forte ?\n<svg viewBox=\"0 0 360 322\"><title>Diagrammes de N, Ty et Mfz d'une autre flèche ABC</title><line x1=\"70\" y1=\"18\" x2=\"70\" y2=\"318\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><line x1=\"132.5\" y1=\"18\" x2=\"132.5\" y2=\"318\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><line x1=\"320\" y1=\"18\" x2=\"320\" y2=\"318\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><line x1=\"62\" y1=\"62\" x2=\"330\" y2=\"62\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"70,62 70,26 132.5,26 132.5,62\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"/><polygon points=\"132.5,62 132.5,76.4 320,76.4 320,62\" fill=\"#fecaca\" stroke=\"#ef4444\" stroke-width=\"2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"101.25\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">+2000</text><text x=\"226.25\" y=\"90.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">−800</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"8\" y=\"22\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"11\">N (N)</text></g><line x1=\"62\" y1=\"160\" x2=\"330\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"70,160 70,124 132.5,124 132.5,160\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"/><polygon points=\"132.5,160 132.5,172 320,172 320,160\" fill=\"#fecaca\" stroke=\"#ef4444\" stroke-width=\"2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"101.25\" y=\"119\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">+1500</text><text x=\"226.25\" y=\"186\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">−500</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"8\" y=\"120\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"11\">Ty (N)</text></g><line x1=\"62\" y1=\"262\" x2=\"330\" y2=\"262\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"70,262 132.5,226 320,262\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"138.5\" y=\"220\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"11\">450</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"8\" y=\"222\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"11\">Mfz (N·m)</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"70\" y=\"12\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">A</text><text x=\"132.5\" y=\"12\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">B</text><text x=\"320\" y=\"12\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "En A, au pied de la flèche"
+        },
+        {
+          "id": "b",
+          "text": "En B, à l'attache du vérin"
+        },
+        {
+          "id": "c",
+          "text": "En C, à l'extrémité de la flèche"
+        },
+        {
+          "id": "d",
+          "text": "Partout pareil, de A jusqu'à C"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le moment fléchissant est le diagramme du bas : il part de 0 en A, monte jusqu'à 450 N·m en B, puis redescend à 0 en C. La flexion est donc la plus forte en B. L'effort tranchant est grand en A (1 500 N), mais en A le moment est nul : le pied ne plie rien.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un vérin pousse une flèche avec FV = 8 000 N, en faisant un angle de 60° avec la flèche. Quelle est la composante de FV perpendiculaire à la flèche, en N ?",
+      "answerKey": {
+        "value": 6928,
+        "tolerance": 1,
+        "unit": "N"
+      },
+      "explanation": "L'angle est mesuré avec la flèche, donc la composante perpendiculaire est celle du sinus : 8 000 × sin 60° ≈ 6928 N. Le cosinus, 8 000 × cos 60° = 4 000 N, donne la composante selon la flèche, qui la tire sans la plier.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Quel est le module de flexion IGz / v d'un tube carré creux de côté extérieur 100 mm et d'épaisseur 6 mm (tube 100 × 100 × 6), en mm³ ?",
+      "answerKey": {
+        "value": 66717,
+        "tolerance": 10,
+        "unit": "mm³"
+      },
+      "explanation": "Le vide a pour côté 100 − 12 = 88 mm. IGz = (100⁴ − 88⁴) / 12 = (100 000 000 − 59 969 536) / 12 ≈ 3 335 872 mm⁴, et v = 50 mm, donc IGz / v ≈ 66717 mm³. Calculer avec le carré plein, 100⁴ / 12 / 50 ≈ 166 667 mm³, oublie le vide ; prendre v = 100 mm diviserait le résultat par deux.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles grandeurs figurent dans la condition de résistance d'une section en flexion–traction ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'effort normal N"
+        },
+        {
+          "id": "b",
+          "text": "L'effort tranchant Ty"
+        },
+        {
+          "id": "c",
+          "text": "L'aire S de la section"
+        },
+        {
+          "id": "d",
+          "text": "Le module de flexion IGz / v"
+        },
+        {
+          "id": "e",
+          "text": "Le module d'élasticité transversale G"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "La condition ‖N‖ / S + ‖Mfz max‖ / (IGz / v) ≤ Rpe contient l'effort normal N, l'aire S et le module de flexion IGz / v. L'effort tranchant Ty n'y entre pas : le manuel compare seulement les contraintes normales. Le module G sert à la rigidité en torsion, pas à la résistance en flexion–traction.",
+      "difficulty": 2
+    }
+  ]
+}

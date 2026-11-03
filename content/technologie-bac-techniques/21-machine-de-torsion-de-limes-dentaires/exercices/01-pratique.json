@@ -1,0 +1,188 @@
+{
+  "title": "⭐ Exercice : du moteur à la poutre, lire les grandeurs",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Que signifie un rendement η = 0,97 pour une boîte de vitesses ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "97 % de la puissance reçue est perdue en frottements dans la boîte"
+        },
+        {
+          "id": "b",
+          "text": "97 % de la puissance reçue arrive à la sortie"
+        },
+        {
+          "id": "c",
+          "text": "L'arbre de sortie tourne à 97 % de la vitesse d'entrée"
+        },
+        {
+          "id": "d",
+          "text": "Le couple de sortie vaut 97 % du couple d'entrée"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rendement est le rapport entre la puissance de sortie et la puissance d'entrée : η = 0,97 signifie que 97 % de la puissance arrive en sortie et que 3 % sont perdus en chaleur. Il ne dit rien de la vitesse ni du couple, qui dépendent des engrenages ; et ce ne sont pas 97 % qui sont perdus.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur du pignon arbré à son effet sur l'arbre.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Effort tangentiel T"
+        },
+        {
+          "id": "l2",
+          "text": "Effort radial R"
+        },
+        {
+          "id": "l3",
+          "text": "Moment de torsion Mt"
+        },
+        {
+          "id": "l4",
+          "text": "Moment fléchissant Mf"
+        },
+        {
+          "id": "r1",
+          "text": "Fait tourner l'arbre : il produit le couple"
+        },
+        {
+          "id": "r2",
+          "text": "Presse l'arbre vers son axe, sans le faire tourner"
+        },
+        {
+          "id": "r3",
+          "text": "Tord l'arbre autour de son axe"
+        },
+        {
+          "id": "r4",
+          "text": "Plie l'arbre perpendiculairement à son axe"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "L'effort tangentiel T est tangent au cercle primitif : il fait tourner l'arbre et produit le couple. L'effort radial R pointe vers l'axe : il presse l'arbre sans le faire tourner. Le moment de torsion Mt tord l'arbre autour de son axe ; le moment fléchissant Mf le plie perpendiculairement à son axe.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes du dimensionnement du pignon arbré.",
+      "options": [
+        {
+          "id": "d",
+          "text": "Tracer les diagrammes de Mt et de Mf, et repérer la section dangereuse"
+        },
+        {
+          "id": "a",
+          "text": "Calculer le couple C39 à partir de la puissance et de la vitesse"
+        },
+        {
+          "id": "e",
+          "text": "Calculer le moment idéal, puis le diamètre minimal"
+        },
+        {
+          "id": "b",
+          "text": "Déduire l'effort tangentiel T à partir du couple et du rayon"
+        },
+        {
+          "id": "c",
+          "text": "Calculer les réactions des appuis de la poutre"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "Le couple vient en premier, car T = C39 / r en dépend. T donne ensuite les réactions des appuis, qui sont nécessaires pour écrire le moment fléchissant. Les diagrammes de Mt et de Mf permettent alors de trouver la section dangereuse, dont les moments donnent le moment idéal et enfin le diamètre minimal.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un réducteur de rendement 0,9 reçoit 800 W de son moteur. Son arbre de sortie tourne à 60 tr/min. Quel couple transmet-il, en N·m ?",
+      "answerKey": {
+        "value": 114.6,
+        "tolerance": 0.5,
+        "unit": "N·m"
+      },
+      "explanation": "P = 0,9 × 800 = 720 W ; ω = 2π × 60 / 60 ≈ 6,283 rad/s ; C = 720 / 6,283 ≈ 114,6 N·m. Partir de 800 W au lieu de 720 W donnerait 127,3 N·m, en oubliant les pertes.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Avec un angle de pression de 20°, la denture d'un pignon exerce un effort tangentiel T = 2 000 N. Quel est l'effort radial R, en N ?",
+      "answerKey": {
+        "value": 727.9,
+        "tolerance": 1,
+        "unit": "N"
+      },
+      "explanation": "R = T × tan 20° ≈ 2 000 × 0,364 ≈ 727,9 N, car R est le côté opposé à l'angle et T le côté adjacent. Utiliser le sinus, R = T × sin 20° ≈ 684,0 N, relie à tort R à l'effort total F.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Un arbre repose sur un appui articulé A et un appui à rouleaux B ; il porte une seule charge entre A et B et se prolonge au-delà de B, sans autre charge. Quelles affirmations sur son moment fléchissant sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est nul à l'appui A"
+        },
+        {
+          "id": "b",
+          "text": "Il est maximal sous la charge"
+        },
+        {
+          "id": "c",
+          "text": "Il reste constant entre A et la charge"
+        },
+        {
+          "id": "d",
+          "text": "Il reste nul au-delà de B, sur la partie sans charge"
+        },
+        {
+          "id": "e",
+          "text": "Il fait un saut brusque sous la charge"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Le moment fléchissant est nul à l'appui A (aucun bras de levier), maximal sous la charge, et nul au-delà de B puisqu'aucune force n'y agit. Il n'est pas constant entre A et la charge : il y croît en ligne droite à partir de 0. Il ne fait pas non plus de saut sous la charge : les deux tronçons donnent la même valeur en ce point.",
+      "difficulty": 2
+    }
+  ]
+}
