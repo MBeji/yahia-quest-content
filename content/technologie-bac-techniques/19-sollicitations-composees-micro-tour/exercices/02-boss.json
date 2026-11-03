@@ -1,0 +1,110 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : de la puissance au diamètre de la broche",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "229-232",
+    "items": [
+      "Act. 3 — q. 4 à 6 (p.230-231)",
+      "Act. 3 — B.1 et B.2 (p.232)",
+      "Act. 3 — B.3 (p.232)"
+    ]
+  },
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une broche pleine de Ø 20 mm (valeur d'illustration) subit le moment idéal du cours, Mfi = 86,88 N·m, avec Rpe = 100 N/mm². Quelle contrainte σ subit-elle, en N/mm², arrondie au dixième ?",
+      "answerKey": {
+        "value": 110.6,
+        "tolerance": 0.3,
+        "unit": "N/mm²"
+      },
+      "explanation": "π × 20³ / 32 ≈ 785,4 mm³, donc σ = 86 880 / 785,4 ≈ 110,6 N/mm² ✓. C'est plus que Rpe = 100 N/mm² : Ø 20 mm, inférieur au minimum de 20,7 mm, ne résiste pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur la broche du cours (pièce de Ø 18 mm, rayon 9 mm), on veut un effort FT = 1 000 N, la broche tournant à 375 tr/min, avec le rendement η = 0,92. Quelle puissance Pm le moteur doit-il fournir, en W, arrondie à l'unité ?",
+      "answerKey": {
+        "value": 384,
+        "tolerance": 1,
+        "unit": "W"
+      },
+      "explanation": "C11 = FT × 0,009 = 9 N·m ; ω = 2π × 375 / 60 ≈ 39,27 rad/s ; P11 = C11 × ω ≈ 353,4 W ; Pm = P11 / η = 353,4 / 0,92 ≈ 384 W ✓. La chaîne du cours est parcourue à l'envers, et le rendement se divise.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Variante d'illustration de la broche : mêmes cotes (OA = 40, AB = 80, BC = 60 mm) et mêmes appuis, mais F19/13 = 300 N vers le bas en O et FT = 764 N vers le haut en C. Que vaut RB, en N, en comptant positivement le sens vers le haut ?",
+      "answerKey": {
+        "value": -1487,
+        "tolerance": 3,
+        "unit": "N"
+      },
+      "explanation": "Moments en A : (−300) × (0 − 40) + RB × 80 + 764 × 140 = 0, soit 12 000 + 80 RB + 106 960 = 0, donc RB = −118 960 / 80 = −1487 N : dirigée vers le bas. Contrôle : RA = 300 − 764 + 1 487 = 1 023 N, et les moments en B donnent (−300) × (−120) + 1 023 × (−80) + 764 × 60 = 36 000 − 81 840 + 45 840 = 0 ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans la variante précédente (FT = 764 N, BC = 60 mm), la section la plus sollicitée en flexion est celle de B. Quel y est le moment fléchissant, en valeur absolue, en N·m, arrondi au centième ?",
+      "answerKey": {
+        "value": 45.84,
+        "tolerance": 0.05,
+        "unit": "N·m"
+      },
+      "explanation": "On regarde à droite de B, où seule FT agit : |Mf| = 764 × 60 = 45 840 N·mm = 45,84 N·m ✓. Le calcul à gauche, avec RA = 1 023 N et RB = −1 487 N, donne la même valeur, mais il demande bien plus de termes.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un tube d'illustration, dont le trou fait 60 % du diamètre extérieur (d/D = 0,6), doit résister à Mfi = 46,47 N·m avec la même limite admissible de 100 N/mm². Quel diamètre extérieur minimal, en mm, arrondi au dixième ?",
+      "answerKey": {
+        "value": 17.6,
+        "tolerance": 0.1,
+        "unit": "mm"
+      },
+      "explanation": "k = 0,6 donne k⁴ = 0,1296 et 1 − k⁴ = 0,8704. D³ ≥ 32 × 46 470 / (π × 100 × 0,8704) = 1 487 040 / 273,4 ≈ 5 438 mm³, donc D ≈ 17,6 mm ✓. Avec 1 − k² = 0,64, on trouverait environ 19,5 mm : ce serait le piège de l'aire.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la méthode qui mène des actions extérieures au diamètre d'une broche pleine, Mt étant déjà connu.",
+      "options": [
+        {
+          "id": "d",
+          "text": "Composer Mf et Mt en moment idéal Mfi dans cette section"
+        },
+        {
+          "id": "a",
+          "text": "Calculer les actions des appuis par l'équilibre de la poutre"
+        },
+        {
+          "id": "e",
+          "text": "Résoudre d³ ≥ 32 × Mfi / (π × Rpe) pour obtenir d"
+        },
+        {
+          "id": "c",
+          "text": "Repérer la section où la valeur absolue de Mf est maximale"
+        },
+        {
+          "id": "b",
+          "text": "Calculer le moment fléchissant Mf tronçon par tronçon"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "Les moments fléchissants ne se calculent qu'une fois les réactions connues ; on cherche ensuite la section où |Mf| est maximal, car Mt y est le même qu'ailleurs ; Mfi se calcule dans cette seule section, puis le diamètre se déduit de la condition de résistance.",
+      "difficulty": 2
+    }
+  ]
+}

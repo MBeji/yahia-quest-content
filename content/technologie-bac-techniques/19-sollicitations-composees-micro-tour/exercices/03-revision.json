@@ -1,0 +1,141 @@
+{
+  "title": "⭐⭐ Révision (type examen) : des unités au diagramme",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "230-232",
+    "items": [
+      "Act. 3 — q. 5 à 7 (p.230-231)",
+      "Act. 3 — q. 8 et 9 (p.232)",
+      "Act. 3 — B.1 (p.232)"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Un moment idéal Mfi = 52 N·m doit être utilisé avec Rpe = 100 N/mm² dans la condition de résistance. Quelle valeur de Mfi faut-il écrire dans la formule du diamètre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "52 000 N·mm"
+        },
+        {
+          "id": "b",
+          "text": "520 000 N·mm"
+        },
+        {
+          "id": "c",
+          "text": "5 200 N·mm"
+        },
+        {
+          "id": "d",
+          "text": "52 N·mm"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Rpe est exprimé en N/mm², donc Mfi doit l'être en N·mm : 1 N·m = 1 000 N·mm, donc 52 N·m = 52 000 N·mm. En écrivant 52, le diamètre calculé serait dix fois trop petit, et les autres valeurs ne correspondent à aucune conversion de N·m en N·mm.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur ce diagramme d'illustration, Mf varie en ligne droite entre A et B. À quelle abscisse x, en mm, le moment fléchissant s'annule-t-il ?\n<svg viewBox=\"0 0 330 216\"><title>Diagramme de Mf entre les points A et B d'une poutre d'illustration</title><line x1=\"30\" y1=\"110\" x2=\"292.0\" y2=\"110\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"104.0\" y1=\"24\" x2=\"104.0\" y2=\"196\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/><text x=\"104.0\" y=\"16\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><line x1=\"232.0\" y1=\"24\" x2=\"232.0\" y2=\"196\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/><text x=\"232.0\" y=\"16\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><polyline points=\"104.0,128.0 232.0,56.0\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2.6\"/><text x=\"104.0\" y=\"142.0\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#9a3412\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Mf = −15 N·m</text><text x=\"232.0\" y=\"50.0\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#9a3412\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Mf = +45 N·m</text><text x=\"104.0\" y=\"208\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x = 40 mm</text><text x=\"232.0\" y=\"208\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x = 120 mm</text><text x=\"292.0\" y=\"124\" font-size=\"11\" font-weight=\"600\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text></svg>",
+      "answerKey": {
+        "value": 60,
+        "tolerance": 1,
+        "unit": "mm"
+      },
+      "explanation": "Mf passe de −15 à +45 N·m, soit 60 N·m sur 80 mm (de x = 40 à x = 120), donc 0,75 N·m par mm. Il faut 15 / 0,75 = 20 mm pour monter de −15 à 0, donc x = 40 + 20 = 60 mm ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sont justes pour la broche du cours entre O et C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le moment de torsion est le même en toute section"
+        },
+        {
+          "id": "b",
+          "text": "Le moment fléchissant est nul en O et en C"
+        },
+        {
+          "id": "c",
+          "text": "Le moment fléchissant est maximal en A, au premier roulement"
+        },
+        {
+          "id": "d",
+          "text": "Le moment de torsion s'annule entre les deux roulements"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Mt vaut C11 de O à C, car les roulements parfaits n'en retirent pas, et Mf est nul aux deux extrémités libres O et C. Mf n'est pas maximal en A, mais en B (85,92 N·m contre 21,48 en valeur absolue), et Mt ne s'annule pas entre les roulements.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "En une section d'illustration d'un arbre en acier (λ = 0,5), le moment idéal vaut Mfi = 130 N·m et le moment de torsion Mt = 50 N·m. Quel est le moment fléchissant Mf, en N·m ?",
+      "answerKey": {
+        "value": 120,
+        "unit": "N·m"
+      },
+      "explanation": "Avec λ = 0,5, Mfi² = Mf² + Mt², donc Mf = √(Mfi² − Mt²) = √(16 900 − 2 500) = √14 400 = 120 N·m ✓. Contrôle : √(120² + 50²) = 130, et Mf est plus petit que Mfi.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un acier a Rpg = 12 daN/mm² et λ = Rpg / Rpe = 0,5. Quelle est sa résistance pratique à l'extension Rpe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "120 N/mm²"
+        },
+        {
+          "id": "b",
+          "text": "24 N/mm²"
+        },
+        {
+          "id": "c",
+          "text": "60 N/mm²"
+        },
+        {
+          "id": "d",
+          "text": "240 N/mm²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Rpe = Rpg / λ = 12 / 0,5 = 24 daN/mm², soit 240 N/mm² puisque 1 daN = 10 N. 120 oublie de diviser par λ, 24 oublie de convertir les daN en N, et 60 multiplie par λ au lieu de diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la broche du cours, pourquoi la réaction RB du roulement en B est-elle dirigée vers le bas ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que le roulement B est plus chargé que le roulement A, dont il partage la charge"
+        },
+        {
+          "id": "b",
+          "text": "Parce que la courroie tire plus fort sur la broche que l'outil ne la pousse"
+        },
+        {
+          "id": "c",
+          "text": "Parce que la courroie et l'outil font basculer la broche autour de A, et que B la retient"
+        },
+        {
+          "id": "d",
+          "text": "Parce que le roulement B ne peut agir que vers le bas sur la broche"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Autour de A, les deux actions connues tournent dans le même sens : la courroie tire O (à 40 mm à gauche de A) vers le bas, l'outil pousse C (à 140 mm à droite) vers le haut, et leurs moments s'ajoutent : 537 × 40 + 1 432 × 140 = 221 960 N·mm. Seul B peut s'y opposer, en tirant la broche vers le bas : RB = −221 960 / 80 = −2 774,5 N. Ce n'est pas une question de force la plus grande, puisque les deux moments s'additionnent, et le roulement réel retient la broche dans les deux sens perpendiculairement à l'axe.",
+      "difficulty": 2
+    }
+  ]
+}
