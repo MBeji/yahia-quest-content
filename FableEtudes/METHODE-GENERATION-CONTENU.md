@@ -1,5 +1,13 @@
 # MÉTHODE — Génération de contenu : la référence (source → fiche → contenu → prod)
 
+> ⛔ **CE DOCUMENT N'EST PLUS LA PROCÉDURE (2026-11-03, décision de Mohamed : une seule procédure,
+> simple, moins coûteuse).** La procédure unique de génération de contenu, du choix du couple à la
+> production, est le skill [`campagne`](../.claude/skills/campagne/SKILL.md). Ce fichier devient une
+> **annexe** : il garde l'historique et le détail des règles que d'autres documents citent (R-x, T-x,
+> § B2…). **Ne pas le lire en entier, ne pas le dérouler** ; n'en ouvrir qu'un paragraphe cité. En cas
+> de désaccord, `campagne` gagne.
+
+
 > **LA méthode.** Toute production de contenu pédagogique à partir d'une source — corpus CNP,
 > manuel du secondaire, PDF d'enseignant, polycopié, annales papier — suit ce document, de la
 > transcription à la mise en prod, quel que soit l'exécutant : session Claude Code interne (le
@@ -40,15 +48,6 @@
 >   et s'applique par le workflow `apply-content.yml` du dépôt privé (§ B3). Un agent qui
 >   commite une migration `supabase/migrations/*_generated_*_content.sql` s'est trompé de
 >   décennie — et de dépôt.
->
-> ⭐ **Simplification du 2026-11-03 (décision de Mohamed) — à lire avant A2/A3.** La source des
-> manuels est désormais le dossier Drive `cnp-officiel` (plus le site du CNP), et la lecture suit
-> l'échelle **texte d'abord, vision en dernier** (L0 texte déjà extrait → L1 couche texte → L2
-> couche texte décodée → L3 vision). ScribeKit devient facultatif. Une page lue par le texte compte
-> comme lue après un sondage image noté. Tout est dans
-> [`content-ingest`](../.claude/skills/content-ingest/SKILL.md) § « Source et lecture »,
-> qui **prime** sur Phase 0.2, A2 et A3.1-2 ci-dessous. La priorité de travail (Bac, matières
-> principales) est au [`PILOTAGE.md`](./PILOTAGE.md) § 0.
 >
 > Panorama complet de la scission :
 > [`docs/content-generation-pipeline.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/content-generation-pipeline.md)
@@ -225,7 +224,7 @@ publié le chapitre suivant.
 - **T-4 — Un lot = une matière = un contexte frais.** Deux matières dans une même fenêtre =
   le budget de lecture de chacune dilué + le cadrage payé deux fois. Sous-agents pour les lots,
   orchestrateur mince pour la boucle. Le modèle de chaque sous-agent se choisit par tâche (le moins
-  cher qui la tient, opus pour l'audit) : table du skill `campagne` § 3 bis.
+  cher qui la tient, opus pour l'audit) : table du skill `campagne` § « Les modèles ».
 - **T-5 — En génération, l'unité de travail = le chapitre.** Chaque chapitre est généré avec :
   le **brief matière** (T-6) + **LA section de la fiche** couvrant ce chapitre (le chapitrage
   §4 / le manifeste découpent la fiche exprès pour ça) — jamais la fiche entière (70–200 k)
@@ -445,7 +444,7 @@ la fois**, qui reçoit sa plage de numéros ; **une tranche n'est finie qu'en pr
      corpus) : `rm` sur le lien en POSIX, `(Get-Item <lien> -Force).Delete()` en PowerShell.
 
 2. **Brancher la source : le connecteur Google Drive** sur le compte propriétaire du dossier
-   `cnp-officiel`, et vérifier qu'il voit `index.csv` (`content-ingest` § « Source et lecture »). **ScribeKit est
+   `cnp-officiel`, et vérifier qu'il voit `index.csv` (`campagne` étape 3). **ScribeKit est
    facultatif** depuis le 2026-11-03 : seulement pour échafauder une fiche neuve
    (`scribekit app-cnp`), jamais comme préalable à la lecture. Si on le veut :
 
@@ -566,12 +565,12 @@ Selon le profil (§ Profils) : **combiner toutes les sources officielles disponi
 enseignant + manuel élève) ; une seule disponible ⇒ elle fait référence (le signaler dans la
 fiche). **Les PDF se prennent dans le dossier Drive `cnp-officiel`** : `index.csv` dit d'abord
 s'ils existent (par code à 6 chiffres), `search_files` les trouve par titre `<code><tome>.pdf`
-(`content-ingest` § « Source et lecture »). Absent du Drive ⇒ le demander à Mohamed et continuer avec les couples
+(`campagne` étape 3). Absent du Drive ⇒ le demander à Mohamed et continuer avec les couples
 suivants. **Jamais de contenu inventé faute de source.**
 
 ### A3 — Lire et transcrire (échelle L0 → L3 : texte d'abord, vision en dernier)
 
-0. **Chaque page se lit au barreau le moins cher qui suffit** — `content-ingest` § « Source et lecture » : L0 le
+0. **Chaque page se lit au barreau le moins cher qui suffit** — `campagne` étape 3 : L0 le
    `.txt` déjà extrait de `_txt/`, L1 la couche texte du PDF (`read_file_content` ; propre pour
    les manuels en français et en anglais, donc tout le Bac scientifique), L2 la couche texte
    décodée (arabe à polices propriétaires, table de la fiche du couple), L3 la vision sur les PNG

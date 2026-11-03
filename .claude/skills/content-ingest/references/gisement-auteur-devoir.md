@@ -1,4 +1,4 @@
-# Consigne de l'AUTEUR — devoirs et séries en ligne, salle blanche (étude 36, étage G5)
+# Consigne de l'AUTEUR — devoirs et séries en ligne, salle blanche (étude 36, procédure `campagne`, étape 4)
 
 Tu es l'**auteur** `prof-<matière>-<classe>`. Des lecteurs ont lu des devoirs et des séries
 publiés en ligne ; l'orchestrateur en a tiré une **carte**, dans ses mots. **Tu n'as jamais vu ces

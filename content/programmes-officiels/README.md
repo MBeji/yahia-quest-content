@@ -36,7 +36,7 @@ Pour un couple **(niveau, matière)** :
 
 - **Emplacement** : le dossier **Google Drive `cnp-officiel`** du compte du projet (depuis le
   2026-11-03 ; même arborescence que l'ancien `YahiaAcademy/cnp-officiel/` local, toujours **hors git**).
-  Accès et lecture : skill [`content-ingest`](../../.claude/skills/content-ingest/SKILL.md) § « Source et lecture ».
+  Accès et lecture : skill [`campagne`](../../.claude/skills/campagne/SKILL.md), étape 3.
 - **Contenu** : **346 PDF** — base (1ère→9ème) + secondaire (1ère→4ème), **élève** (manuels) **et**
   **enseignant** (guides méthodologiques / أدلة مرجعية = le programme détaillé).
 - **Index** : `cnp-officiel/CATALOGUE.md` (lisible, groupé par niveau/matière) ; bruts :
@@ -84,7 +84,7 @@ une fiche met à jour le registre dans le même commit.** Schéma : `src/shared/
 ## 🤖 Transcription : texte d'abord, ScribeKit facultatif (0 clé API)
 
 Depuis le 2026-11-03 (décision de Mohamed), la recette d'un couple niveau × matière est celle du skill
-[`content-ingest`](../../.claude/skills/content-ingest/SKILL.md) § « Source et lecture » : lire chaque page au
+[`campagne`](../../.claude/skills/campagne/SKILL.md), étape 3 : lire chaque page au
 barreau le moins cher (L0 `_txt/` → L1 couche texte → L2 couche texte décodée → L3 vision), **sonder** les
 pages lues par le texte (≥ 1 sur 10, confrontées au PNG ; noté dans la fiche) — elles comptent alors comme
 lues au registre —, curer §1-§4 en combinant guide + manuel, codifier `manifest/<grade>.json`, puis
