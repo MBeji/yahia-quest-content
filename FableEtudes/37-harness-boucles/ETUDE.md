@@ -57,14 +57,14 @@ souvenir) :
 
 | #   | Constat                                                                                                                                                                                                                                                         | Mesure                                                                                                                           | Remède (lot)                                                                      |
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| C-1 | **Du 4 au 9 octobre, aucune tête d'agent n'a tourné** — les trois gardes du moteur, la garde du corpus et la routine cloud ont toutes été refusées par le même message, « _Your organization has disabled Claude subscription access for Claude Code_ » — et **le dépôt ne le savait pas** | 17 runs rouges consécutifs de `report-triage` (5 j 1 h), 2 lots `upgrade-guard` en draft, 1 audit privé rouge, 1 routine `ACCESS_DENIED` ; la cause trouvée le 11/10 **dans un journal de job**, écrite nulle part | la garde des gardes **nomme la cause** et compte la série (L3) ; Q-1              |
+| C-1 | **Du 4 au 9 octobre, aucune tête d'agent n'a pu répondre** — les trois gardes du moteur, la garde du corpus et la routine cloud ont toutes été refusées par le même message, « _Your organization has disabled Claude subscription access for Claude Code_ » — et **le dépôt ne le savait pas** | 17 runs rouges consécutifs de `report-triage` (5 j 1 h), 2 lots `upgrade-guard` en draft, 1 audit privé rouge, 1 routine `ACCESS_DENIED` ; le symptôme lu le 11/10 dans un journal de job, écrit nulle part ; la cause, donnée le même jour par le propriétaire, est la suspension de l'abonnement du 2 au 8 octobre | la garde des gardes **nomme la cause** et compte la série (L3) ; Q-1              |
 | C-2 | Les gardes ouvrent des PR **sans après** : un lot patch/minor par jour, jamais mené au merge, chacun entrant en conflit avec le précédent                                                                                                                       | **6 PR de dépendances ouvertes** (#1111, #1128, #1135, #1153, #1157, #1158), 4 `needs-rebase`, 2 drafts `needs-review`, **dernier lot mergé le 2026-07-31** | un seul lot ouvert à la fois, le lot du jour **remplace** celui d'hier (L2)        |
 | C-3 | La garde après push (DoD §8) est une **discipline de prose** : `passation.md` §7.10 dit « abonnement + réveil différé ~45 min », aucune commande, aucun skill, aucun script ne la porte ; chaque session la réinvente, et `collaboration.md` documente déjà la boucle `until` qui annonce un faux merge | 0 skill, 0 script ; 1 mention de `send_later` dans tout le dépôt                                                                  | le skill `/garde-pr` + l'observateur `pr-state.mjs` (L1)                           |
 | C-4 | **La routine porte son savoir hors dépôt** : son prompt de 2 400 caractères (la procédure entière de re-sonde) vit dans claude.ai, pas dans un skill — à rebours de la règle 3 des gardes (« le savoir vit dans le skill, versionné ») — et sa panne n'est visible d'aucun workflow | 1 routine, `last_run` = `FAILED` ; `list_sessions` **exclut** les sessions de routine : le dépôt ne peut même pas compter ses runs | le skill `status-resonde` ; toute clôture de session relève `list_triggers` (L4)  |
 | C-5 | Les primitives de boucle de l'outil (`/loop`, `ScheduleWakeup`, `CronCreate`, `Monitor`, `send_later`, `create_trigger`, `subscribe_pr_activity`, hook `Stop`) ne sont **nommées nulle part** dans le harness, avec leurs limites (60 s–1 h par tick, 7 jours, 30 min, « ne tire que session inactive ») | 0 occurrence dans `AGENTS.md`, `docs/agents/`, `harness/`                                                                          | `docs/agents/boucles.md` + registre `harness/loops.json` (L0)                     |
 | C-6 | **22 horloges**, toutes des événements : 16 crons au moteur, 6 au privé ; seules trois surfaces raisonnent par état (`automerge`, `guard-watch`, les gardes « à issue » de 2026-09)                                                                                 | 22 `schedule`, 3 réconciliateurs                                                                                                   | le contrat de boucle, déclaré par mécanisme (L0), et vérifié (`harness:check`)    |
 | C-7 | `STATUS.md` ment depuis 13 jours (#1126, 63 PR de retard) : la garde qui **mesure** la dérive existe, celle qui devait la **corriger** (la routine) est morte, et personne ne relie les deux                                                                      | issue `status-perime` ouverte le 2026-09-28, routine en échec                                                                      | la re-sonde devient un skill jouable par toute session ; Q-4                       |
-| C-8 | Une boucle sans sortie coûte : `passation.md` §7.11 a mesuré ~100 $ de sessions filles tournant après livraison (2026-09-20), et le relevé du jour compte **29 sessions filles** sur les 100 dernières                                                              | 29/100 sessions d'origine `claude_code_mcp_seed`                                                                                   | budget et sortie obligatoires pour toute boucle, archivage au merge (D-7)         |
+| C-8 | Une boucle sans sortie coûte : `passation.md` §7.11 a mesuré ~100 $ de sessions filles tournant après livraison (2026-09-20), et le relevé du jour compte **29 sessions** d'origine `claude_code_mcp_seed` sur les 100 dernières, sans savoir lesquelles sont des filles                                                              | 29/100 sessions d'origine `claude_code_mcp_seed`                                                                                   | budget et sortie obligatoires pour toute boucle, archivage au merge (D-7)         |
 | C-9 | Le mur du classifieur est **aussi** un mur de boucle : pendant la rédaction de cette étude, quatre commandes **en lecture seule et `allow` dans `policy.json`** (`sed -n`, `git ls-remote`, un `python3` de dépouillement) ont été refusées en mode auto                      | 4 refus en 15 min, le 2026-10-11 vers 17:40 UTC                                                                                   | une boucle n'insiste jamais sur un refus : elle le nomme et change d'outil (D-8)   |
 
 **Ce que l'étude ne fait pas** : elle ne remplace pas GitHub Actions par des sessions qui
@@ -146,7 +146,7 @@ fini** — et le dit.
 
 | KPI                                                                      | Aujourd'hui (2026-10-11)                                                       | Cible                                                                           | Relevé                                                   |
 | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| K-1 PR de garde ouvertes sans suite (`dependencies`)                     | **6**, dont 4 en conflit entre elles                                           | ≤ 1 (le lot courant), jamais deux lots patch/minor ouverts                       | `actions:census --lots` (L5), à la main avant            |
+| K-1 PR de garde ouvertes sans suite (`dependencies`)                     | **6**, dont 4 en conflit avec `main`                                           | ≤ 1 (le lot courant), jamais deux lots patch/minor ouverts                       | `actions:census --lots` (L5), à la main avant            |
 | K-2 Délai lot patch/minor → merge, quand le gate est vert                | **aucun merge depuis le 2026-07-31** (72 j)                                     | ≤ 48 h                                                                          | idem                                                     |
 | K-3 Durée d'une série de rouges identiques **sans cause nommée**         | **5 j 1 h** (17 runs, C-1)                                                      | ≤ 6 h (la fenêtre de `guard-watch`), la cause dans l'issue                       | corps des issues `garde-rouge`                           |
 | K-4 Sessions qui poussent une PR **sans** garde outillée                 | 100 % (aucun outil)                                                            | 0 % des sessions de ce dépôt après L1 (le skill est le chemin)                   | `passation.md` §7 relue à chaque clôture ; journal       |
@@ -173,8 +173,8 @@ OAuth (#1002). Les tableaux bruts sont en annexe A.
 ### 2.2 Les gardes agent, run par run
 
 **`regression-guard`** (lun. + jeu. 23:00 UTC) — 20 derniers runs, du 2026-08-04 au 10-09 :
-12 `success`, 8 `failure`. Sur les 12 verts, **7 sont des skips du pré-gate** (0,2–0,4 min) et
-5 de vrais balayages (4–14 min). Sur les cinq dernières semaines : balayages le 09-04 (rouge,
+12 `success`, 8 `failure`. Sur les 12 verts, **6 sont des skips du pré-gate** (0,2–0,4 min) et
+6 de vrais balayages (4–14 min). Sur les cinq dernières semaines : balayages le 09-04 (rouge,
 6,9 min), 09-15 (rouge, 6,5), 09-18 (vert), 09-22 (vert), 10-02 (rouge, 9,1 min, « _failed at
 the Claude level: (no message)_ ») ; skips le 09-11, 09-25, 09-29, 10-06, 10-09. **Dernier
 balayage réussi : le 2026-09-22.** Un rouge coûte le balayage jusqu'au cron suivant, trois ou
@@ -192,9 +192,7 @@ septembre a fini rouge**, et chaque lot a ouvert sa PR : #1111 (09-25), #1128 (0
 Dependabot #1135 (09-29). **Dernier lot mergé : #684, le 2026-07-31.** `gardes.md` avait mesuré
 « dix-huit jours sans lot appliqué » le 2026-09-22 ; on en est à soixante-douze.
 
-Les quatre `needs-rebase` ne sont pas quatre conflits avec `main` : ce sont des lots qui
-touchent le même `package-lock.json` les uns après les autres, puis une correction manuelle
-(#1159, 2026-10-10) qui les met tous en conflit d'un coup. **Le garde n'observe jamais sa propre
+Les quatre `needs-rebase` sont des conflits avec `main` : `automerge` pose le label quand sa mise à jour de la branche échoue sur un conflit. Personne ne rebase ces lots, et `upgrade-guard` n'en ferme aucun : à chaque tir de sa cadence (cinq fois depuis le 25 septembre), il ouvre un lot de plus. **Le garde n'observe jamais sa propre
 sortie de la veille** : il ne sait pas qu'un lot est déjà ouvert, et `automerge` ne sait que
 poser un label.
 
@@ -272,8 +270,8 @@ pousse applique ce qu'elle a lu, ou pas.
 ### 2.6 Le coût d'une boucle qui ne sort pas
 
 `passation.md` §7.11 : trois sessions filles mesurées le 2026-09-20 tournant des heures après
-le merge de leurs PR, ~100 $. Le relevé du jour : **29 des 100 dernières sessions** sont des
-filles (`claude_code_mcp_seed`). La session qui rédige a coûté 7,63 $ en sept heures, pour
+le merge de leurs PR, ~100 $. Le relevé du jour : **29 des 100 dernières sessions** ont l'origine
+`claude_code_mcp_seed` ; le champ ne dit pas si ce sont des filles. La session qui rédige a coûté 7,63 $ en sept heures, pour
 4,9 M de tokens lus en cache : un tick de boucle est un tour de modèle sur ce contexte — des
 centimes, pas des dollars, mais 24 ticks par jour pendant sept jours ne sont pas gratuits. D'où
 le budget de D-7, et la règle déjà écrite dans les consignes de garde de l'outil : trois
@@ -295,10 +293,10 @@ refusée est une boucle infinie sur un mur**. D'où D-8.
 
 §2.2 donne la frise. Trois choses à retenir, chacune avec son remède :
 
-1. **Le message était explicite dès le premier run** (« _Your organization has disabled Claude
+1. **Le message était explicite dès que l'agent a pu être appelé** (la session de la routine le 5 octobre, le journal d'`upgrade-guard` le 9 octobre : « _Your organization has disabled Claude
    subscription access for Claude Code_ ») et `check-claude-result.py` le remonte en annotation
    `::error` du job. Mais `guard-watch.mjs` ne lit que la **conclusion** des runs : son issue
-   dit « 1 run rouge », jamais l'étape ni le message. Dix-sept runs plus tard elle dit toujours
+   dit « 1 run rouge », jamais l'étape ni le message. L'issue ouverte le 4 octobre dit encore
    « 1 run rouge » (fenêtre de 8 h). → L3 : l'étape en échec, sa première annotation et la
    **longueur de la série** entrent dans l'issue, et un message d'une classe connue (jeton,
    abonnement, 401) cite le mur qu'il désigne.
@@ -622,6 +620,7 @@ Cases à cocher :
 | ---------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 2026-10-11 | —   | Étude rédigée depuis une session cloud sur le relevé du jour (§2) ; mesures brutes en annexe A. Livrée en brouillon par privé#649 (cette étude, la ligne d'index) et moteur #1164 (`STATUS.md` §4, §6.3, journal) — les deux poussées par la session, PR ouvertes par `auto-pr`, gate `verify` vert au `pre-push` (352 fichiers, 4 682 tests). Test du réveil différé : `send_later` posé à 17:33 UTC pour 17:37 (`trig_018dKSt77Ebjht9b3hpHmvnb`). **Reçu** : tiré à 17:37:21, il a attendu dans la file de notifications de la session pendant tout le tour en cours (23 min) et a été lu à 18:00:46, à la fin du tour, avec les six événements GitHub des PR abonnées. **Le chemin H2 fonctionne** malgré le refus des routines « session neuve » du 2026-10-05 : un réveil dans une session existante n'est pas une routine qui crée une session. Deux leçons pour D-2 et L1 : un réveil ne coupe jamais un tour (il attend la fin du tour, donc une boucle H1 qui ne rend pas la main ne sera jamais réveillée par H2) ; et les événements GitHub arrivent par la même file — la boucle les lit d'un coup au réveil, dans l'ordre. |
 | 2026-10-11 | —   | **Le propriétaire donne la cause de C-1 : l'abonnement Claude a été suspendu du 2 au 8 octobre.** C-1, la frise de §2.2 et Q-1 sont mis à jour ; Q-1 se réduit à « une clé API de secours pendant une suspension ? » (recommandation : attendre en le disant) et ne bloque plus aucun lot. L'en-tête ne cite plus Q-1 comme condition : l'étude passe `validée` sur validation du plan. |
+| 2026-11-03 | — | Relecture avant clôture : plusieurs affirmations corrigées à la source (message d'erreur du premier run, décompte du pré-gate, sens du label `needs-rebase`, origine des sessions, symptôme distingué de la cause, profil de #425). Aucune conclusion ne change. |
 
 ## Annexe A — Relevé brut du 2026-10-11
 
@@ -653,7 +652,7 @@ content-audit.yml (privé, 26 runs au total)
 
 - `report-triage` #438 (10-09 15:22) : secrets ✓, checkout ✓, export ✓, ids déjà triés ✓,
   pré-gate ✓, modèle ✓, **« Run the report-triage agent » ✗ en 16 s**, « Fail loudly » ✗,
-  issue de suivi ✓. Même profil pour #425 (10-05).
+  issue de suivi ✓. #425 (10-05) : la même étape échoue, ses étapes ne sont pas relevées.
 - `report-triage` #439 (10-09 21:01) : identique jusqu'au modèle, puis **l'agent tourne
   21:02 → 21:25**, vert, #1162 ouverte.
 - `upgrade-guard` #123 (10-09) : journal — « _failed at the Claude level: Your organization has
