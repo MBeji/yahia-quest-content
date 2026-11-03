@@ -41,6 +41,15 @@
 >   commite une migration `supabase/migrations/*_generated_*_content.sql` s'est trompé de
 >   décennie — et de dépôt.
 >
+> ⭐ **Simplification du 2026-11-03 (décision de Mohamed) — à lire avant A2/A3.** La source des
+> manuels est désormais le dossier Drive `cnp-officiel` (plus le site du CNP), et la lecture suit
+> l'échelle **texte d'abord, vision en dernier** (L0 texte déjà extrait → L1 couche texte → L2
+> couche texte décodée → L3 vision). ScribeKit devient facultatif. Une page lue par le texte compte
+> comme lue après un sondage image noté. Tout est dans
+> [`content-ingest/references/source-drive.md`](../.claude/skills/content-ingest/references/source-drive.md),
+> qui **prime** sur Phase 0.2, A2 et A3.1-2 ci-dessous. La priorité de travail (Bac, matières
+> principales) est au [`PILOTAGE.md`](./PILOTAGE.md) § 0.
+>
 > Panorama complet de la scission :
 > [`docs/content-generation-pipeline.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/content-generation-pipeline.md)
 > (moteur) et [`24-protection-ip-contenu/ETUDE.md`](./24-protection-ip-contenu/ETUDE.md).
@@ -78,7 +87,7 @@ BUDGET     : <optionnel>        # plafond de la session (tokens ou temps) ; la c
 ```
 PHASE 0 (une fois par campagne) : setup 2 dépôts + cadrage + file de travail (priorité)
 pour chaque UNITÉ de la file (couple niveau × matière, ou document libre) :
-  LOT A — LA FICHE   : A1 existant → A2 sources → A3 transcription (ScribeKit + vision)
+  LOT A — LA FICHE   : A1 existant → A2 sources (Drive) → A3 lecture L0→L3 (texte, puis vision)
                        → A4 profondeur de génération → A5 audits (QA, R-7, _INDEX)
                        → A6 push → 1 PR → Content CI verte → merge confirmé
   si GENERATION = oui :
@@ -434,7 +443,10 @@ la fois**, qui reçoit sa plage de numéros ; **une tranche n'est finie qu'en pr
    - ⚠️ Un lien/jonction ne se supprime **jamais** par `rm -rf` (ça viderait la cible, donc le
      corpus) : `rm` sur le lien en POSIX, `(Get-Item <lien> -Force).Delete()` en PowerShell.
 
-2. **Cloner + builder ScribeKit** (moteur déterministe — 0 LLM, 0 clé API) :
+2. **Brancher la source : le connecteur Google Drive** sur le compte propriétaire du dossier
+   `cnp-officiel`, et vérifier qu'il voit `index.csv` (`source-drive.md` § 1). **ScribeKit est
+   facultatif** depuis le 2026-11-03 : seulement pour échafauder une fiche neuve
+   (`scribekit app-cnp`), jamais comme préalable à la lecture. Si on le veut :
 
    ```bash
    git clone https://github.com/MBeji/ScribeKit.git ../ScribeKit
@@ -551,14 +563,23 @@ suivant). Puis, dans le registre frais (`suivi/<grade>.json`) :
 
 Selon le profil (§ Profils) : **combiner toutes les sources officielles disponibles** (guide
 enseignant + manuel élève) ; une seule disponible ⇒ elle fait référence (le signaler dans la
-fiche). `FICHIERS` fournis ⇒ identifier qui est guide / qui est manuel par le code à 6
-chiffres. Téléchargement bloqué ⇒ demander les PDF et continuer avec les couples suivants.
-**Jamais de contenu inventé faute de source.**
+fiche). **Les PDF se prennent dans le dossier Drive `cnp-officiel`** : `index.csv` dit d'abord
+s'ils existent (par code à 6 chiffres), `search_files` les trouve par titre `<code><tome>.pdf`
+(`source-drive.md` § 1). Absent du Drive ⇒ le demander à Mohamed et continuer avec les couples
+suivants. **Jamais de contenu inventé faute de source.**
 
-### A3 — Transcrire (phase 1 : ScribeKit + ta vision)
+### A3 — Lire et transcrire (échelle L0 → L3 : texte d'abord, vision en dernier)
 
-1. **ScribeKit d'abord** (T-1 — il extrait le déterministe, échafaude au gabarit, crée/valide le
-   manifeste) :
+0. **Chaque page se lit au barreau le moins cher qui suffit** — `source-drive.md` § 2 : L0 le
+   `.txt` déjà extrait de `_txt/`, L1 la couche texte du PDF (`read_file_content` ; propre pour
+   les manuels en français et en anglais, donc tout le Bac scientifique), L2 la couche texte
+   décodée (arabe à polices propriétaires, table de la fiche du couple), L3 la vision sur les PNG
+   de `_render/` — **seulement** pour formules, tableaux, figures, encadrés vocalisés, pages sans
+   texte, et le sondage qui valide L0-L2 (§ 3 du même fichier). Le point 1 ci-dessous
+   (ScribeKit) est **facultatif** ; le point 2 ne vaut plus que pour le barreau L3.
+
+1. **ScribeKit (facultatif)** — utile pour échafauder une fiche neuve au gabarit et créer/valider
+   le manifeste :
 
    ```bash
    # depuis corpus/ — les chemins -o sont relatifs au dépôt de contenu
@@ -572,10 +593,9 @@ chiffres. Téléchargement bloqué ⇒ demander les PDF et continuer avec les co
    (`<subject-id>` : convention du README programmes-officiels § identifiants — ex. `math-3eme`,
    `arabic-5eme` ; en cas de doute, proposer + signaler dans la fiche.)
 
-2. `scribekit status <cible>` liste les unités **`pending`** (scans à couche-texte cassée — le
-   cas général du corpus CNP). Pour chacune : lire les pages **en vision** et transcrire **par
-   tranches de 10–20 pages, écriture immédiate au format final** (T-2). DPI 150 par défaut
-   (`render.sh` → PNG si besoin de le maîtriser). ⚠️ **Pas de clé API** : l'OCR passe par TA
+2. **Barreau L3 (vision)** — pour les seules pages que le texte ne rend pas : lire les PNG de
+   `_render/<code><tome>-NNN.png` (sinon `render.sh`, DPI 150) et transcrire **par tranches de
+   10–20 pages, écriture immédiate au format final** (T-2). ⚠️ **Pas de clé API** : l'OCR passe par TA
    vision d'agent (abonnement) ; le `--provider anthropic` de ScribeKit est un mode batch
    **facturé** — uniquement si le contributeur fournit une clé et le demande.
 
@@ -611,13 +631,17 @@ guide + manuel :
 
 ### A5 — Auditer (rien ne part sans ça)
 
-1. **QA déterministe** (T-1) — 0 erreur exigé :
+1. **QA déterministe** (T-1) — 0 erreur exigé : `npm run programme:check` depuis `engine/`
+   (point 3) ; **si** ScribeKit a servi à échafauder, aussi :
 
    ```bash
    # depuis corpus/
    scribekit qa content/programmes-officiels
    scribekit status content/programmes-officiels  # plus aucun pending
    ```
+
+   Et le **sondage image** de chaque plage lue par la couche texte (L0-L2), noté dans la fiche
+   (`source-drive.md` § 3) : sans lui, ces pages ne comptent pas comme lues.
 
 2. **R-7 — relecture indépendante par sondage dirigé (T-8)** : un second agent/sous-agent au
    **contexte vierge** re-vérifie la fiche **contre les PDF sources** (pas contre le travail du

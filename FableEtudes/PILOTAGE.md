@@ -12,6 +12,46 @@
 > pour les fiches, `misconceptions.json` pour les étiquettes) > ce fichier > tout journal. Un écart
 > trouvé se corrige ICI dans la PR qui le constate.
 
+## 0. Priorité (décision de Mohamed du 2026-11-03)
+
+**Le Bac d'abord, les matières principales de chaque section en tête.** Cette priorité ordonne la
+présentation de `/campagne` ; le choix du couple reste à l'humain à chaque fois. Les sources sont dans le
+Drive `cnp-officiel` (`content-ingest/references/source-drive.md`) : les manuels scientifiques du Bac
+sont **en français**, donc lisibles au barreau L1 (couche texte), le moins cher — mesuré sur `222422`
+le 2026-11-03, à vérifier à l'ouverture de chaque manuel.
+
+Matières principales retenues par section (liste établie le 2026-11-03 sur les manuels présents au
+Drive — **à confirmer par Mohamed**, une ligne fausse se corrige ici) et état mesuré par `programme:etat`
+le même jour :
+
+| Section | Matière principale | Manuel(s) au Drive | Fiche | Contenu | Prochaine étape |
+| --- | --- | --- | --- | --- | --- |
+| Sciences techniques | technologie (génie mécanique) | `228462` P01-P02 | ✅ complète | 13/25 chapitres (ch. 14-16 en écriture, branche `claude/technologie-bac-techniques-tranche3`) | B2, tranches suivantes |
+| Sciences techniques | technologie (génie électrique) | `228461` P01-P03 | ❌ aucune | — | A1 |
+| Sciences techniques | mathématiques | `222451` | ❌ aucune | — | A1 |
+| Sciences techniques | physique | `223451` | ❌ aucune | — | A1 |
+| Mathématiques | mathématiques | `222445` + `222446` | ✅ validée R-7 | 19/19 | — (gisement possible) |
+| Mathématiques | physique | `223432` | ❌ aucune | — | A1 |
+| Mathématiques | chimie | `224432` | ❌ aucune | — | A1 |
+| Sciences expérimentales | SVT | `225432` | ❌ aucune | — | A1 |
+| Sciences expérimentales | mathématiques | `222433` + `222434` | ❌ aucune | — | A1 |
+| Sciences expérimentales | physique | `223433` | ❌ aucune | — | A1 |
+| Sciences expérimentales | chimie | `224433` | ❌ aucune | — | A1 |
+| Sciences de l'informatique | mathématiques | `222472` | ❌ aucune | — | A1 |
+| Sciences de l'informatique | physique / chimie | `223471` / `224471` | ❌ aucune | — | A1 |
+| Sciences de l'informatique | algorithmique, STI | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
+| Économie et gestion | gestion | `229464` | ❌ aucune | — | A1 |
+| Économie et gestion | mathématiques | `222463` | ❌ aucune | — | A1 |
+| Économie et gestion | économie | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
+| Lettres | arabe | `201421` + `201422` | ❌ aucune | — | A1 |
+| Lettres | philosophie | `210422` + `210423` | ❌ aucune | — | A1 |
+
+Matières communes, au rang suivant : philosophie des sections scientifiques (`210402` ; fiche `bac-math`
+partielle 75 %, tenue par `feat/transcription-bac-philosophie-mabhath2`), arabe (`201403`), français
+(`221402`, fiche `bac-math` complète, 7/7), anglais (`241403` + guide `641404`, fiche `bac-math`
+partielle 92 %, 15/42, tenue par trois branches `english-bac`). Les sujets communs déjà en base
+(`philosophie-`, `english-`, `french-bac-<section>`) attendent leur rattachement A5.4.
+
 ## 1. La méthode — un seul passage par couple (niveau × matière)
 
 | # | Étape | Produit | Preuve |

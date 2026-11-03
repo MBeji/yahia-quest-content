@@ -17,7 +17,8 @@ avant d'être crue. Texte canonique :
 AVANT toute action de contenu, à mettre à jour DANS la PR qui fait avancer un couple. Depuis le
 2026-10-12, la campagne « 9ᵉ au patron » et le gisement (étude 36) sont fusionnés : un seul passage
 par couple (lecture manuel + sujets + devoirs → cours au patron + exercices + missions → étiquettes →
-audit → armement → publication), une seule session, aucune étape refaite.
+audit → armement → publication), une seule session, aucune étape refaite. **Priorité fixée par
+Mohamed le 2026-11-03 : le Bac, matières principales d'abord** (`PILOTAGE.md` § 0).
 
 - **Propriété intellectuelle** : tous droits réservés (`LICENSE-CONTENT.md` du moteur).
 - **Authoring** : méthode de référence `FableEtudes/METHODE-GENERATION-CONTENU.md`. Ouvrir la
@@ -51,10 +52,11 @@ proches, candidats **gabarit** pour l'auditeur). ⚠️ `content:catalogue` **r�
 pièges) : `FableEtudes/METHODE-GENERATION-CONTENU.md` § Phase 0.1 ; poste :
 `FableEtudes/POSTE-DE-TRAVAIL.md`.
 
-⚠️ **TLS en session** : le CNP sert son certificat feuille seul (`curl` sort en 60).
-`cat ../engine/scripts/cloud/ca-chain/*.pem /root/.ccr/ca-bundle.crt > /tmp/cnp-ca.pem`, puis
-`CURL_CA_BUNDLE` / `NODE_EXTRA_CA_CERTS` dessus — le hook du moteur ne tourne pas ici. Jamais
-`-k` ni `NODE_TLS_REJECT_UNAUTHORIZED=0`.
+📂 **Source des manuels : le dossier Drive `cnp-officiel`** (décision du 2026-11-03), plus le
+site du CNP, injoignable depuis une session cloud. Connecteur Google Drive sur le compte
+propriétaire du dossier ; lecture **texte d'abord, vision en dernier** (échelle L0 → L3) ; une page
+lue par la couche texte compte comme lue après un sondage image noté. Procédure unique :
+[`.claude/skills/content-ingest/references/source-drive.md`](.claude/skills/content-ingest/references/source-drive.md).
 
 ## Chaîne PR → merge → prod
 
