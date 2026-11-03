@@ -119,7 +119,9 @@ marqueur de page fiable : ancrer chaque passage sur le numéro imprimé.
 
 **Compte comme lu** au registre une page lue en L0-L2 **après un sondage image** : ≥ 1 page sur 10,
 parmi les plus denses, confrontée au PNG, 0 écart substantiel (un écart ⇒ sonder la section entière,
-trois ⇒ la lire en L3). Le sondage se note dans la fiche.
+trois ⇒ la lire en L3). Le sondage se note dans la fiche. Règle validée par Mohamed le 2026-11-03 ; elle
+remplace celle du 2026-09-22 (« une couverture par décodage n'est pas une lecture ») : une fiche à 100 %
+restée `partielle` pour ce seul motif (5ᵉ et 6ᵉ arabe) passe à `complete` une fois le sondage fait et noté.
 
 **Ce qu'on écrit :** la fiche `content/programmes-officiels/programme/<niveau>/<matière>.md`, à
 **profondeur de génération** — chaque activité décrite (énoncé, données, demande), les encadrés de

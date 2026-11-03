@@ -21,8 +21,7 @@ sont **en français**, donc lisibles au barreau L1 (couche texte), le moins cher
 le 2026-11-03, à vérifier à l'ouverture de chaque manuel.
 
 Matières principales retenues par section (liste établie le 2026-11-03 sur les manuels présents au
-Drive — **à confirmer par Mohamed**, une ligne fausse se corrige ici) et état mesuré par `programme:etat`
-le même jour :
+Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:etat` le même jour :
 
 | Section | Matière principale | Manuel(s) au Drive | Fiche | Contenu | Prochaine étape |
 | --- | --- | --- | --- | --- | --- |
