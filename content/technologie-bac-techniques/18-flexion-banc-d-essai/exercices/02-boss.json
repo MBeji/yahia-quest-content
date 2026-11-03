@@ -1,0 +1,108 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : de la charge à la validation",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "manuel": {
+    "pages": "222-226",
+    "items": [
+      "B.1 a, b réactions et moment",
+      "B.1 c contrainte maximale",
+      "B.1 d condition de résistance"
+    ]
+  },
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une poutre de 500 mm porte F = 24 N en C, avec AC = 150 mm et CB = 350 mm. Calcule le moment fléchissant maximal Mfmax, en N·mm.",
+      "answerKey": {
+        "value": 2520,
+        "unit": "N·mm"
+      },
+      "explanation": "RA = F × CB / L = 24 × 350 / 500 = 16,8 N. Le moment est maximal sous la charge : Mfmax = RA × AC = 16,8 × 150 = 2520 N·mm. Contrôle par l'autre côté : RB = 24 × 150 / 500 = 7,2 N et RB × 350 = 2520 N·mm.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une poutre de 600 mm porte une charge F en C, avec AC = 450 mm et CB = 150 mm. Où le moment fléchissant est-il maximal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au milieu de la poutre, à 300 mm de A"
+        },
+        {
+          "id": "b",
+          "text": "En A, là où est l'articulation"
+        },
+        {
+          "id": "c",
+          "text": "En C, à 450 mm de A et 150 mm de B"
+        },
+        {
+          "id": "d",
+          "text": "En B, l'appui le plus proche de F"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "RA = F × 150 / 600 = F / 4. Sous la charge, Mf(C) = F / 4 × 450 = 112,5 × F (N·mm), contre 75 × F au milieu. Mf est nul aux deux appuis : B porte la plus grande réaction (3F/4), mais le moment y est nul.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une barre rectangulaire de 20 × 6 mm est posée sur chant (h = 20 mm dans le sens de la charge). Calcule son module de flexion IGz / v, en mm³.",
+      "answerKey": {
+        "value": 400,
+        "unit": "mm³"
+      },
+      "explanation": "Sur chant, b = 6 mm et h = 20 mm : IGz = 6 × 20³ / 12 = 4 000 mm⁴. La fibre extrême est à v = h / 2 = 10 mm, donc IGz / v = 4 000 / 10 = 400 mm³. Le piège courant est de prendre v = h = 20 mm, ce qui donnerait 200 mm³.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Poutre d'acier Ø 10 mm, portée L = 400 mm, charge ponctuelle F = 30 N située à 100 mm de A. Calcule σmax, en MPa, arrondi au dixième.",
+      "answerKey": {
+        "value": 22.9,
+        "tolerance": 0.2,
+        "unit": "MPa"
+      },
+      "explanation": "Réaction : RA = 30 × 300 / 400 = 22,5 N. Moment maximal sous la charge : Mfmax = 22,5 × 100 = 2 250 N·mm. Module de flexion : IGz / v = π × 10³ / 32 ≈ 98,2 mm³. Donc σmax = 2 250 / 98,2 ≈ 22,9 MPa. Le piège courant est de garder Mf en N·m, ce qui donne un résultat mille fois trop petit.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour la poutre précédente (Ø 10 mm, L = 400 mm, F à 100 mm de A), l'acier a Re = 240 MPa et on prend s = 3. Quelle charge F maximale peut-elle porter ? Réponds en N, arrondi au dixième.",
+      "answerKey": {
+        "value": 104.7,
+        "tolerance": 0.6,
+        "unit": "N"
+      },
+      "explanation": "Rpe = 240 / 3 = 80 MPa. Mfmax = F × 100 × 300 / 400 = 75 × F (en N·mm). La condition 75 × F / 98,2 ≤ 80 donne F ≤ 80 × 98,2 / 75 ≈ 104,7 N. Le piège courant est de comparer à Re = 240 MPa, qui donnerait 314 N, charge où la poutre n'aurait plus aucune marge.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une barre rectangulaire de 30 × 5 mm est posée à plat, puis sur chant, avec la même portée, la même charge et le même matériau. Que devient la flèche quand on passe de à plat à sur chant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est divisée par 6"
+        },
+        {
+          "id": "b",
+          "text": "Elle est divisée par 36"
+        },
+        {
+          "id": "c",
+          "text": "Elle est divisée par 216"
+        },
+        {
+          "id": "d",
+          "text": "Elle est divisée par 1 296"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La flèche est inversement proportionnelle à IGz. À plat, IGz = 30 × 5³ / 12 = 312,5 mm⁴ ; sur chant, IGz = 5 × 30³ / 12 = 11 250 mm⁴. Le rapport est 11 250 / 312,5 = 36 : la flèche est divisée par 36. Le piège courant est de ne comparer que les hauteurs (30 / 5 = 6) ou de ne cuber que h en oubliant que b change aussi (6³ = 216). Autre erreur : multiplier 216 par 6 au lieu de le diviser (1 296).",
+      "difficulty": 3
+    }
+  ]
+}

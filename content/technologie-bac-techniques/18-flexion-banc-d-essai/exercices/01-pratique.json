@@ -1,0 +1,162 @@
+{
+  "title": "⭐ Exercice : lire l'essai de flexion",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "222-226",
+    "items": [
+      "Mise en situation p.222",
+      "A.1 f = f(F)",
+      "B.1 a à d, ordre des étapes"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Sur le banc, comment sont réalisés les deux appuis de la poutre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A est un appui articulé et B un appui à rouleaux"
+        },
+        {
+          "id": "b",
+          "text": "A est un appui à rouleaux et B un appui articulé"
+        },
+        {
+          "id": "c",
+          "text": "A et B sont deux appuis articulés identiques"
+        },
+        {
+          "id": "d",
+          "text": "A et B sont deux encastrements de la poutre"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur le schéma de l'essai, la poutre repose sur un appui articulé en A et sur un appui à rouleaux en B, qui la laisse glisser le long de son axe. Deux appuis articulés bloqueraient ce glissement, et des encastrements empêcheraient la poutre de tourner aux appuis, ce qui n'est pas le montage du banc.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque définition à la grandeur qu'elle désigne.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Distance entre les appuis A et B"
+        },
+        {
+          "id": "l2",
+          "text": "Déplacement vertical lu au comparateur"
+        },
+        {
+          "id": "l3",
+          "text": "Forme prise par la ligne moyenne sous charge"
+        },
+        {
+          "id": "l4",
+          "text": "Grandeur de la section exprimée en mm⁴"
+        },
+        {
+          "id": "r1",
+          "text": "La portée L"
+        },
+        {
+          "id": "r2",
+          "text": "La flèche f"
+        },
+        {
+          "id": "r3",
+          "text": "La déformée"
+        },
+        {
+          "id": "r4",
+          "text": "Le moment quadratique IGz"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "La portée est la distance entre les appuis ; la flèche est le déplacement vertical que lit le comparateur ; la déformée est la forme de la ligne moyenne sous charge ; le moment quadratique IGz est la grandeur de la section exprimée en mm⁴.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une section rectangulaire a une largeur b = 12 mm (parallèle à Gz) et une hauteur h = 3 mm (dans le sens de la charge). Calcule son moment quadratique IGz, en mm⁴.",
+      "answerKey": {
+        "value": 27,
+        "unit": "mm⁴"
+      },
+      "explanation": "IGz = b × h³ / 12 = 12 × 3³ / 12 = 12 × 27 / 12 = 27 mm⁴. La hauteur h, dans le sens de la charge, est élevée au cube ; la largeur b ne l'est pas.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de l'étude théorique de la poutre de la partie B.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer les réactions RA et RB"
+        },
+        {
+          "id": "b",
+          "text": "Écrire Mf le long de la poutre et en déduire Mfmax"
+        },
+        {
+          "id": "c",
+          "text": "Calculer la contrainte σmax = Mfmax / (IGz / v)"
+        },
+        {
+          "id": "d",
+          "text": "Comparer σmax à Rpe = Re / s"
+        }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "Chaque étape se sert de la précédente : les réactions permettent d'écrire le moment fléchissant, le moment maximal donne la contrainte maximale, et celle-ci se compare enfin à la résistance pratique.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une poutre de 400 mm porte une charge F posée à 100 mm de l'appui A. Que peut-on dire des réactions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RA et RB sont égales, où que soit posée F"
+        },
+        {
+          "id": "b",
+          "text": "RB est supérieure à RA, car B est loin de F"
+        },
+        {
+          "id": "c",
+          "text": "RA et RB valent chacune la charge F entière"
+        },
+        {
+          "id": "d",
+          "text": "RA est supérieure à RB, car A est près de F"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'appui le plus proche de la charge porte la plus grande part : RA = F × 300 / 400 = 0,75 F et RB = F × 100 / 400 = 0,25 F. Elles ne sont égales que pour une charge au milieu, et leur somme vaut F, pas 2 F.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour F = 10 N, la flèche mesurée vaut 0,176 mm. La flèche étant proportionnelle à la charge, quelle flèche prévoit-on pour F = 17,5 N ? Réponds en mm, arrondi au millième.",
+      "answerKey": {
+        "value": 0.308,
+        "tolerance": 0.003,
+        "unit": "mm"
+      },
+      "explanation": "f est proportionnelle à F : f = 0,176 × 17,5 / 10 = 0,176 × 1,75 = 0,308 mm. Le rapport f / F = 0,0176 mm/N reste le même, et 0,0176 × 17,5 = 0,308.",
+      "difficulty": 2
+    }
+  ]
+}

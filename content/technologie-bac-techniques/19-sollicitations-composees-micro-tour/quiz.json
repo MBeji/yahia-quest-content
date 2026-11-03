@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : la broche du micro-tour",
+  "questions": [
+    {
+      "prompt": "Dans le modèle de poutre de la broche, quelle est la distance entre le point A et le point C, sachant que AB = 80 mm et BC = 60 mm ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "140 mm"
+        },
+        {
+          "id": "b",
+          "text": "60 mm"
+        },
+        {
+          "id": "c",
+          "text": "180 mm"
+        },
+        {
+          "id": "d",
+          "text": "80 mm"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "A et C ne sont pas voisins : entre eux se trouve B, donc la distance est AB + BC = 80 + 60 = 140 mm. 60 et 80 ne sont que les distances BC et AB, et 180 est la longueur totale OC de la poutre, qui commence en O, à 40 mm de A.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un moteur tourne à 750 tr/min et entraîne la broche par une poulie motrice de 24 mm et une poulie réceptrice de 48 mm. À quelle vitesse tourne la broche ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "750 tr/min"
+        },
+        {
+          "id": "b",
+          "text": "1 500 tr/min"
+        },
+        {
+          "id": "c",
+          "text": "375 tr/min"
+        },
+        {
+          "id": "d",
+          "text": "1 125 tr/min"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "N11 = Nm × D20 / D13 = 750 × 24 / 48 = 375 tr/min : la poulie réceptrice est deux fois plus grande, donc elle tourne deux fois moins vite. 750 oublie le rapport, 1 500 l'inverse, et 1 125 multiplie par un rapport mal calculé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le calcul des actions des appuis donne RB = −2 774,5 N, alors que la flèche dessinée pointait vers le haut. Que faut-il conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le calcul est faux : la réaction de 2 774,5 N ne peut pas être négative"
+        },
+        {
+          "id": "b",
+          "text": "La réaction de 2 774,5 N est dirigée vers le bas, contre le sens dessiné"
+        },
+        {
+          "id": "c",
+          "text": "La réaction de 2 774,5 N est dirigée vers le haut, et le signe est sans effet"
+        },
+        {
+          "id": "d",
+          "text": "L'appui B ne porte rien : la valeur de 2 774,5 N est un reste de calcul"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le signe négatif indique que le sens supposé était faux : l'appui B pousse la broche vers le bas avec 2 774,5 N, et l'équilibre des forces est alors respecté. Rendre la valeur positive violerait la somme des forces, et l'appui B porte bien une action, puisqu'il retient la broche qui bascule autour de A.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la section B de la broche, quelle valeur du moment de torsion Mt faut-il utiliser pour le moment idéal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12,89 N·m, le couple C11 de la broche"
+        },
+        {
+          "id": "b",
+          "text": "0 N·m, puisque B est un appui"
+        },
+        {
+          "id": "c",
+          "text": "6,44 N·m, le couple calculé avec 750 tr/min"
+        },
+        {
+          "id": "d",
+          "text": "25,77 N·m, le double du couple C11"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Mt vaut C11 = 12,89 N·m en toute section de O à C : les roulements, supposés parfaits, ne retirent aucun couple, donc B n'annule pas Mt. 6,44 N·m est l'erreur de la vitesse du moteur, et rien ne double le couple dans la broche.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "En B, la broche subit un moment fléchissant Mf = 85,92 N·m et un moment de torsion Mt = 12,89 N·m. Comment nomme-t-on sa sollicitation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une flexion simple, puisque Mf est bien plus grand que Mt"
+        },
+        {
+          "id": "b",
+          "text": "Une torsion simple, puisque la broche transmet un couple"
+        },
+        {
+          "id": "c",
+          "text": "Une flexion-torsion, car Mf et Mt sont tous deux non nuls"
+        },
+        {
+          "id": "d",
+          "text": "Une traction-flexion, puisque l'outil appuie sur la pièce"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une section soumise à plusieurs sollicitations simples à la fois subit une sollicitation composée : ici Mf ≠ 0 et Mt ≠ 0, donc flexion-torsion, même si Mt est près de sept fois plus petit que Mf. L'effort axial de l'outil est négligé, donc il n'y a pas de traction.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : résister, ne pas trop se vriller, choisir",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un arbre plein en aluminium, de diamètre d = 12 mm, doit travailler à la limite de la condition de résistance, avec Rpg = 20 N/mm². Quel moment de torsion Mt maximal, en N·mm, peut-il transmettre ?",
+      "answerKey": {
+        "value": 6786,
+        "tolerance": 20,
+        "unit": "N·mm"
+      },
+      "explanation": "À la limite, τmax = Rpg. Avec τmax = 16 × Mt / (π × d³), on isole Mt = Rpg × π × d³ / 16 = 20 × π × 1 728 / 16 ≈ 6786 N·mm. Contrôle en sens direct : τmax = 16 × 6786 / (π × 1 728) ≈ 20 N/mm².",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le même arbre (d = 12 mm, aluminium, G = 28 000 N/mm²) doit respecter une condition de rigidité θ ≤ θlimite avec θlimite = 1,0 × 10⁻⁴ rad/mm. Quel moment Mt maximal, en N·mm, cette condition autorise-t-elle ?",
+      "answerKey": {
+        "value": 5700,
+        "tolerance": 20,
+        "unit": "N·mm"
+      },
+      "explanation": "À la limite, θ = Mt / (G × I₀) = θlimite, donc Mt = θlimite × G × I₀. Avec I₀ = π × 12⁴ / 32 ≈ 2 035,7 mm⁴ : Mt = 1,0 × 10⁻⁴ × 28 000 × 2 035,7 ≈ 5700 N·mm. Le piège courant est d'oublier I₀ ou de le calculer avec d³ au lieu de d⁴.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un arbre plein en acier (G = 80 000 N/mm²), de diamètre d = 10 mm, doit tenir les deux conditions suivantes : Rpg = 30 N/mm² et θlimite = 2,0 × 10⁻⁴ rad/mm. Quel moment Mt maximal peut-il transmettre, et quelle condition le fixe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 500 N·mm, fixé par la rigidité"
+        },
+        {
+          "id": "b",
+          "text": "5 890 N·mm, fixé par la résistance"
+        },
+        {
+          "id": "c",
+          "text": "5 890 N·mm, fixé par la rigidité"
+        },
+        {
+          "id": "d",
+          "text": "15 710 N·mm, fixé par la résistance"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour la résistance, Mt = Rpg × π × d³ / 16 = 30 × π × 1 000 / 16 ≈ 5 890 N·mm. Pour la rigidité, I₀ = π × 10⁴ / 32 ≈ 981,7 mm⁴ et Mt = θlimite × G × I₀ = 2,0 × 10⁻⁴ × 80 000 × 981,7 ≈ 15 710 N·mm. Le moment admissible est le plus petit des deux, 5 890 N·mm, et c'est la résistance qui le fixe. Avec de l'aluminium (G = 28 000), la rigidité donnerait 5 500 N·mm et passerait la première : c'est le changement de matière qui change la condition décisive.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Voici la solution d'un élève pour vérifier un arbre plein. Données : Mt = 3 600 N·mm ; d = 10 mm ; Reg = 60 N/mm² ; s = 3.\n1. Rpg = Reg / s = 60 / 3 = 20 N/mm².\n2. I₀ = π × d⁴ / 32 = π × 10 000 / 32 ≈ 981,7 mm⁴.\n3. I₀ / R = 981,7 / 10 = 98,2 mm³.\n4. τmax = Mt / (I₀ / R) = 3 600 / 98,2 ≈ 36,7 N/mm².\n5. τmax > Rpg : l'arbre ne résiste pas.\nQuelle étape contient l'erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1 : le calcul de Rpg"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2 : le calcul de I₀"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3 : le calcul de I₀ / R"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 5 : la comparaison finale"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'erreur est à l'étape 3 ; l'étape 5 compare correctement les valeurs qu'elle reçoit, sa conclusion n'est fausse que par héritage. I₀ / R se calcule avec le rayon R = d / 2 = 5 mm : 981,7 / 5 ≈ 196,3 mm³, et non avec le diamètre. Alors τmax = 3 600 / 196,3 ≈ 18,3 N/mm², qui est inférieur à Rpg = 20 N/mm² : l'arbre résiste, et la conclusion de l'élève est inversée. Le piège courant est de prendre d pour ρmax.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Mt, la longueur L et la matière ne changent pas, mais on double le diamètre d de l'arbre plein. Lesquelles de ces conséquences sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "τmax est divisée par 8"
+        },
+        {
+          "id": "b",
+          "text": "α est divisé par 16"
+        },
+        {
+          "id": "c",
+          "text": "τmax est divisée par 16"
+        },
+        {
+          "id": "d",
+          "text": "α est divisé par 8"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "τmax = 16 × Mt / (π × d³) varie comme 1 / d³ : doubler d la divise par 2³ = 8. L'angle α = Mt × L / (G × I₀) varie comme 1 / I₀, donc comme 1 / d⁴ : doubler d le divise par 2⁴ = 16. Les deux autres affirmations échangent les exposants, 16 pour la contrainte et 8 pour l'angle.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un arbre plein en aluminium (G = 28 000 N/mm²) transmet Mt = 9 000 N·mm. Il doit vérifier à la fois la condition de résistance, avec Rpg = 30 N/mm², et la condition de rigidité, avec θlimite = 1,5 × 10⁻⁴ rad/mm. Quel est le plus petit diamètre entier, en mm, qui les vérifie toutes les deux ?",
+      "answerKey": {
+        "value": 13,
+        "unit": "mm"
+      },
+      "explanation": "Résistance : d³ ≥ 16 × 9 000 / (π × 30) ≈ 1 528 mm³, donc d ≥ 11,5 mm. Rigidité : d⁴ ≥ 32 × 9 000 / (π × 28 000 × 1,5 × 10⁻⁴) ≈ 21 830 mm⁴, donc d ≥ 12,2 mm. Il faut retenir la plus exigeante des deux, puis arrondir par excès : 13 mm. Contrôle : 12 mm vérifierait la résistance mais donnerait θ ≈ 1,58 × 10⁻⁴ rad/mm, au-dessus de la limite ; 13 mm donne τmax ≈ 20,9 N/mm² et θ ≈ 1,15 × 10⁻⁴ rad/mm, tous deux admissibles.",
+      "difficulty": 3
+    }
+  ]
+}

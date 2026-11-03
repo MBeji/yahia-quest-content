@@ -1,0 +1,122 @@
+{
+  "title": "⭐⭐ Révision (type examen) : de la flèche à la contrainte",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "manuel": {
+    "pages": "222-226",
+    "items": [
+      "A.2 d formule de f(L)",
+      "B.1 c contrainte maximale",
+      "B.1 d rapport σmax / Rp"
+    ]
+  },
+  "questions": [
+    {
+      "prompt": "Les mesures montrent que le rapport f / L³ reste constant quand la portée L varie, la charge étant fixe. Quelle formule faut-il cocher, k étant une constante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f = k / L³"
+        },
+        {
+          "id": "b",
+          "text": "f = k × L³"
+        },
+        {
+          "id": "c",
+          "text": "f = k / L"
+        },
+        {
+          "id": "d",
+          "text": "f = k × L"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un rapport f / L³ constant signifie f = k × L³ : la flèche est proportionnelle au cube de la portée. f = k × L supposerait f / L constant, et les formules en k / L ou k / L³ feraient diminuer la flèche quand les appuis s'écartent, alors qu'elle augmente.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Calcule le moment quadratique IGz d'une barre ronde pleine de diamètre d = 8 mm, en mm⁴, arrondi au dixième.",
+      "answerKey": {
+        "value": 201.1,
+        "tolerance": 0.2,
+        "unit": "mm⁴"
+      },
+      "explanation": "IGz = π × d⁴ / 64 = π × 4 096 / 64 = 64 × π ≈ 201,1 mm⁴. Le diamètre est élevé à la puissance 4, non au cube.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une poutre de 400 mm porte F = 30 N, posée à 120 mm de l'appui A. Calcule la réaction RA, en N.",
+      "answerKey": {
+        "value": 21,
+        "unit": "N"
+      },
+      "explanation": "La charge est à 120 mm de A et à 280 mm de B. RA = F × 280 / 400 = 30 × 0,7 = 21 N. Contrôle : RB = 30 × 120 / 400 = 9 N et 21 + 9 = 30 N.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une poutre sur deux appuis est chargée vers le bas par F. Quelles fibres sont tendues, c'est-à-dire en traction ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Celles du dessous, qui s'allongent"
+        },
+        {
+          "id": "b",
+          "text": "Celles du dessus, qui se raccourcissent"
+        },
+        {
+          "id": "c",
+          "text": "Celles de l'axe neutre, au centre de la section"
+        },
+        {
+          "id": "d",
+          "text": "Toutes, car la poutre s'allonge globalement"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sous une charge vers le bas, la poutre se courbe : le dessous s'allonge, donc il est en traction, et le dessus se raccourcit, donc il est en compression. L'axe neutre garde sa longueur, avec σ = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une poutre en acier (Re = 300 MPa, s = 4) subit σmax = 90 MPa. Un élève conclut : « elle résiste, car 90 est inférieur à 300 ». Quelle est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il devait la comparer à Re × s = 1 200 MPa"
+        },
+        {
+          "id": "b",
+          "text": "Il devait la comparer au coefficient s = 4"
+        },
+        {
+          "id": "c",
+          "text": "Il devait la diviser par s, puis la comparer à Re"
+        },
+        {
+          "id": "d",
+          "text": "Il devait la comparer à Re / s, soit 75 MPa"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La condition de résistance est σmax ≤ Rpe = Re / s = 300 / 4 = 75 MPa. Ici 90 MPa dépasse 75 MPa : la poutre ne résiste pas, bien que 90 soit inférieur à Re. Comparer à 1 200 MPa agrandirait la limite au lieu de la réduire, et diviser σmax par s donnerait 22,5 MPa, ce qui ferait conclure à tort que la poutre tient.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une barre rectangulaire de 12 mm de large et 4 mm de haut est posée à plat (h = 4 mm dans le sens de la charge) et subit Mf = 900 N·mm. Calcule σmax, en MPa, arrondi au dixième.",
+      "answerKey": {
+        "value": 28.1,
+        "tolerance": 0.2,
+        "unit": "MPa"
+      },
+      "explanation": "IGz = 12 × 4³ / 12 = 64 mm⁴ et v = h / 2 = 2 mm. σmax = Mf × v / IGz = 900 × 2 / 64 = 28,125 ≈ 28,1 MPa. Mf est en N·mm, donc le résultat sort en MPa.",
+      "difficulty": 2
+    }
+  ]
+}

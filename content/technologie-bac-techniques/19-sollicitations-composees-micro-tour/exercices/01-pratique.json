@@ -1,0 +1,140 @@
+{
+  "title": "⭐ Exercice : du modèle de poutre à l'effort de l'outil",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "manuel": {
+    "pages": "229-230",
+    "items": [
+      "Act. 3 — données (p.229)",
+      "Act. 3 — q. 1 et 2 (p.230)",
+      "Act. 3 — q. 3 (p.230)"
+    ]
+  },
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Sur un modèle de poutre d'illustration, OA = 25 mm, AB = 90 mm et BC = 45 mm. Quelle est l'abscisse du point C, mesurée depuis O, en mm ?",
+      "answerKey": {
+        "value": 160,
+        "unit": "mm"
+      },
+      "explanation": "Les cotes sont des distances entre points voisins : xB = 25 + 90 = 115 mm, puis xC = 115 + 45 = 160 mm. Contrôle : 25 + 90 + 45 = 160 ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un moteur d'illustration tourne à 800 tr/min et la broche doit tourner à 200 tr/min. La poulie motrice mesure 30 mm. Quel diamètre faut-il donner à la poulie réceptrice, en mm ?",
+      "answerKey": {
+        "value": 120,
+        "unit": "mm"
+      },
+      "explanation": "N11 = Nm × D20 / D13, donc D13 = Nm × D20 / N11 = 800 × 30 / 200 = 120 mm ✓. La broche tourne quatre fois moins vite que le moteur, donc la poulie réceptrice est quatre fois plus grande que la motrice : 4 × 30 = 120 mm.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une broche d'illustration reçoit une puissance P11 = 400 W et tourne à 250 tr/min. Quel est son couple C11, en N·m, arrondi au centième ?",
+      "answerKey": {
+        "value": 15.28,
+        "tolerance": 0.02,
+        "unit": "N·m"
+      },
+      "explanation": "ω = 2π × 250 / 60 ≈ 26,18 rad/s, puis C11 = P11 / ω = 400 / 26,18 ≈ 15,28 N·m ✓. La vitesse doit être convertie en rad/s avant de diviser.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un élève calcule le couple d'une broche avec la vitesse de rotation de son moteur au lieu de celle de la broche, qui tourne deux fois moins vite que le moteur. Comparé à la bonne valeur, que trouve-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un couple deux fois plus grand"
+        },
+        {
+          "id": "b",
+          "text": "Le même couple, car la puissance ne change pas"
+        },
+        {
+          "id": "c",
+          "text": "Un couple deux fois plus petit"
+        },
+        {
+          "id": "d",
+          "text": "Un couple quatre fois plus petit"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C = P / ω : si l'on met une vitesse deux fois trop grande au dénominateur, le couple sort deux fois trop petit, comme le calcul de 6,44 au lieu de 12,89 N·m dans le cours. Le couple dépend de la vitesse, et la puissance, elle, est celle de la broche, pas du moteur. Un facteur quatre supposerait un carré qui n'existe pas dans la formule.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche du cours qui mène de la puissance P11 de la broche à l'effort FT de l'outil.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Obtenir le couple C11 en divisant P11 par ω"
+        },
+        {
+          "id": "a",
+          "text": "Calculer la vitesse N11 de la broche par le rapport des poulies"
+        },
+        {
+          "id": "d",
+          "text": "Obtenir FT en divisant C11 par le rayon de la pièce"
+        },
+        {
+          "id": "b",
+          "text": "Convertir N11 en vitesse angulaire ω, en rad/s"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Il faut d'abord la vitesse de la broche, car ω s'en déduit ; ω est nécessaire pour diviser la puissance et obtenir C11 ; et l'effort FT ne se calcule qu'à partir du couple, en le divisant par le rayon. Chaque étape utilise le résultat de la précédente.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces actions sont prises en compte dans le modèle de poutre de la broche ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'action F19/13 de la courroie, en O, vers le bas"
+        },
+        {
+          "id": "b",
+          "text": "L'effort FT de l'outil sur la pièce, en C, vers le haut"
+        },
+        {
+          "id": "c",
+          "text": "Le poids de la broche, appliqué en son milieu"
+        },
+        {
+          "id": "d",
+          "text": "Les actions RA et RB des deux roulements, en A et B"
+        },
+        {
+          "id": "e",
+          "text": "L'effort axial de l'outil, suivant l'axe x"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Le modèle retient F19/13, FT, RA et RB. Les hypothèses du manuel écartent le poids de la broche, négligeable devant les actions mécaniques, et l'effort axial de l'outil, qui est négligé : ils ne figurent pas dans le modèle.",
+      "difficulty": 2
+    }
+  ]
+}
