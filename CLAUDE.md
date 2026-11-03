@@ -14,23 +14,25 @@ avant d'être crue. Texte canonique :
 [`docs/agents/zero-intervention.md`](https://github.com/MBeji/yahia-quest-arena/blob/main/docs/agents/zero-intervention.md).
 
 🧭 **Pilotage unique du contenu scolaire : [`FableEtudes/PILOTAGE.md`](FableEtudes/PILOTAGE.md)** — à lire
-AVANT toute action de contenu, à mettre à jour DANS la PR qui fait avancer un couple. Depuis le
-2026-10-12, la campagne « 9ᵉ au patron » et le gisement (étude 36) sont fusionnés : un seul passage
-par couple (lecture manuel + sujets + devoirs → cours au patron + exercices + missions → étiquettes →
-audit → armement → publication), une seule session, aucune étape refaite. **Priorité fixée par
-Mohamed le 2026-11-03 : le Bac, matières principales d'abord** (`PILOTAGE.md` § 0).
+AVANT toute action de contenu, à mettre à jour DANS la PR qui fait avancer un couple. **Priorité
+fixée par Mohamed le 2026-11-03 : le Bac, matières principales d'abord** (`PILOTAGE.md` § 0).
+
+⭐ **Une seule procédure de génération de contenu : le skill
+[`campagne`](.claude/skills/campagne/SKILL.md)** (2026-11-03) — choisir le couple (l'humain tranche),
+lire les sources une fois (Drive, texte d'abord), écrire chapitre par chapitre en un passage (cours au
+patron, exercices, missions des examens nationaux), un audit, livrer, publier. La méthode
+`FableEtudes/METHODE-GENERATION-CONTENU.md` n'est plus qu'une annexe ; `content-ingest` garde les
+règles de fidélité et les consignes de rôle.
 
 - **Propriété intellectuelle** : tous droits réservés (`LICENSE-CONTENT.md` du moteur).
-- **Authoring** : méthode de référence `FableEtudes/METHODE-GENERATION-CONTENU.md`. Ouvrir la
-  session ici, `add_repo MBeji/yahia-quest-arena`, éditer `content/`, laisser `content-ci`
-  valider. Campagne : `/campagne` — il donne les faits, **l'humain choisit le couple**.
+- **Authoring** : `/campagne`. Ouvrir la session ici, `add_repo MBeji/yahia-quest-arena`, éditer
+  `content/`, laisser `content-ci` valider.
 - **Corpus officiel** (méthode R-2) : les manuels et guides du CNP **et les sujets officiels des
   examens nationaux** — concours de 6ᵉ et de 9ᵉ, baccalauréat, toutes sessions (décision du
   2026-09-28, étude 27 Q-6) : reprise possible, citée dans `sources[]`. Corrigés de tiers,
   devoirs d'établissement et séries d'enseignants restent des sources web : rien n'en est repris.
-- **Gisement** (étude 36, fusion des études 12 et 27) : sujets d'examen repris et cités, devoirs en
-  ligne réécrits en salle blanche, couple après couple (la 9ᵉ, puis la 6ᵉ) — `content-ingest`,
-  mode gisement (`references/gisement.md`).
+- **Anciens examens** (étude 36) : lus avec la fiche, une mission par exercice dans le chapitre qu'il
+  mobilise (`campagne` étapes 3-4) ; devoirs en ligne en salle blanche, sur demande seulement.
 - **Ne jamais committer de SQL ici, ni de migration de contenu dans le moteur** :
   `content:emit` → `sql/content/<subject>.sql`, appliqué par `apply-content.yml`.
 
@@ -49,14 +51,13 @@ npm ci && npm run content:gates -- --tranche
 proches, candidats **gabarit** pour l'auditeur). ⚠️ `content:catalogue` **régénère
 `content/CATALOGUE.md`**, que la CI compare par `git diff` : tout chapitre neuf le périme —
 **le committer** (`content:gates` le signale). Détails (Windows,
-pièges) : `FableEtudes/METHODE-GENERATION-CONTENU.md` § Phase 0.1 ; poste :
+pièges) : `campagne` étape 1 ; poste :
 `FableEtudes/POSTE-DE-TRAVAIL.md`.
 
 📂 **Source des manuels : le dossier Drive `cnp-officiel`** (décision du 2026-11-03), plus le
 site du CNP, injoignable depuis une session cloud. Connecteur Google Drive sur le compte
 propriétaire du dossier ; lecture **texte d'abord, vision en dernier** (échelle L0 → L3) ; une page
-lue par la couche texte compte comme lue après un sondage image noté. Procédure unique :
-[`content-ingest`](.claude/skills/content-ingest/SKILL.md) § « Source et lecture ».
+lue par la couche texte compte comme lue après un sondage image noté (`campagne` étape 3).
 
 ## Chaîne PR → merge → prod
 

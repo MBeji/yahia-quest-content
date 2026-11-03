@@ -1,360 +1,254 @@
 ---
 name: campagne
 description: >-
-  Point d'entrée UNIQUE d'une campagne de contenu : établit l'état des lieux vérifié
-  (`programme:etat` — fiche × programme × contenu), DEMANDE à l'humain quel couple
-  niveau × matière lancer, puis déroule la chaîne complète de la méthode pour ce
-  couple — LOT A (transcription de la source) et/ou LOT B (génération du contenu) —
-  en appelant les bons skills (content-ingest, content-ecole-tn, content-cours,
-  content-interactif, prof-*), en passant les gates, en tenant le registre et en
-  poussant la PR jusqu'à son merge. Use whenever the user says « lance une campagne »,
-  « /campagne », « on fait quoi ensuite en contenu ? », « état des lieux et on y va »,
-  « continue la campagne », « transcris et génère <niveau> <matière> ». Ne choisit
-  JAMAIS le couple à la place de l'humain : il présente les faits, l'humain tranche.
+  LA procédure unique de génération de contenu, du choix du couple à la production :
+  état des lieux (`programme:etat`), question à l'humain (il choisit le couple
+  niveau × matière), lecture des sources du Drive au moindre coût (texte d'abord,
+  vision en dernier), fiche, puis chapitre par chapitre en un seul passage — cours
+  au patron, exercices et missions tirées des examens nationaux —, audit, PR,
+  publication. Remplace la méthode, le workflow de content-ingest et le mode
+  gisement comme déroulé. Use whenever the user says « lance une campagne »,
+  « /campagne », « on fait quoi ensuite en contenu ? », « continue », « transcris et
+  génère <niveau> <matière> », « exploite les anciens examens ». Ne choisit JAMAIS le
+  couple à la place de l'humain : il présente les faits, l'humain tranche.
 ---
 
-# campagne — établir l'état, demander, dérouler
+# campagne — la procédure unique de génération de contenu
 
-**Rôle.** Une seule entrée pour toute la chaîne contenu. Tu **orchestres** : tu ne réinventes ni la
-méthode, ni les règles d'authoring. La référence de processus est
-[`FableEtudes/METHODE-GENERATION-CONTENU.md`](../../../FableEtudes/METHODE-GENERATION-CONTENU.md)
-(boucle, lots, profils, socle R-1…R-7, charte tokens T-1…T-10) ; la carte des skills d'écriture est
-[`content-engine/references/generation-pipeline.md`](../content-engine/references/generation-pipeline.md).
-En cas de désaccord : **AGENTS.md du moteur → skills & docs normatifs → la méthode → ce skill**.
+**Ce fichier est LA procédure** (décision de Mohamed du 2026-11-03 : *une seule procédure, simple,
+claire, moins coûteuse*). Du choix du couple à la production, tout se fait ici, dans cet ordre. Les
+autres documents ne sont plus des déroulés :
 
-**Ce que tu ne fais jamais.** Choisir le couple. L'outillage établit les faits — statut, couverture,
-trous, contenu présent ou non, et **l'étape que la méthode prescrit pour ce couple** — mais
-« par quoi on commence » est une décision humaine (méthode, Phase 0.4 ; décision du 2026-07-26).
-Tu présentes, tu demandes, tu exécutes. Aucun « je recommande », aucun tri par priorité **de ton
-cru** (la seule priorité est celle que l'humain a écrite au `PILOTAGE.md` § 0), aucun
-« je lance le plus rentable ». Si l'humain ne répond pas, tu ne lances rien.
+| Document | Ce qu'il reste | Quand le lire |
+| --- | --- | --- |
+| `content-engine` + ses `references/` | **règles d'écriture** (schéma, barre de qualité, patron de notion, figures, récompenses) | l'auteur et l'auditeur, au moment d'écrire ou de relire |
+| `content-ecole-tn`, `prof-<matière>-<cycle>`, `content-cours`, `content-interactif` | règles d'écriture par programme et par matière | l'auteur |
+| `content-ingest` | les règles de fidélité R-1…R-7 et les **consignes de rôle** du lecteur, des auteurs de mission et de l'auditeur (`references/gisement-*.md`) | les sous-agents de lecture et de mission |
+| `FableEtudes/METHODE-GENERATION-CONTENU.md` | **annexe** : l'historique et le détail des règles citées (R-x, T-x, § B2…) | jamais en entier ; seulement un paragraphe cité |
+| `FableEtudes/PILOTAGE.md` | la **priorité** (§ 0) et le **tableau de bord** des couples | au début, et mis à jour dans chaque PR |
+
+En cas de désaccord : **AGENTS.md du moteur → règles d'écriture → ce fichier → l'annexe**.
+
+**Les cinq règles qui ne bougent pas.**
+
+1. **L'humain choisit le couple.** Tu présentes les faits et tu demandes ; jamais « je recommande »,
+   jamais de priorité de ton cru (la seule est celle du `PILOTAGE.md` § 0). Pas de réponse ⇒ rien ne
+   se lance.
+2. **Fidélité.** Rien d'inventé ; le programme officiel gagne ; `[?]` pour l'illisible.
+3. **Une étape ne se refait pas.** Une page lue ne se relit pas, un chapitre a un seul auteur à la
+   fois, un audit fait se cite.
+4. **Aucun SQL, aucune migration, jamais `content:build`** dans le corpus.
+5. **Fini = en production**, pas au merge.
 
 ---
 
-## 0. Préalables (une fois par session)
+## Étape 1 — Préparer (une fois par session)
 
-La campagne a besoin des **deux dépôts** (étude 24) : ce dépôt (le corpus, où tout se commite) et le
-moteur public (les commandes). Vérifie, depuis la racine du corpus :
-
-```bash
-test -x ../engine/node_modules/.bin/tsc &&
-  test -f ../engine/content/misconceptions.json &&
-  test -d ../engine/content/programmes-officiels/manifest &&
-  echo "moteur + corpus + skills branchés"
-```
-
-Ce sont les **deux assertions de la Content CI** (méthode, Phase 0.1) : tester la seule existence de
-`engine/content` dirait « prêt » avec le lien des skills manquant, et `programme:etat` échouerait la
-commande suivante. Absent ⇒ dérouler **Phase 0.1 de la méthode** (double clone, `npm ci`, les DEUX
-lien `engine/content` — un seul depuis l'étude 32, variante jonction sous Windows) et **s'arrêter là
-si un lien échoue** : sans corpus branché, toutes les commandes mentent par omission.
-
-⚠️ **Branché ne suffit pas : le moteur doit être à JOUR.** Les gates tournent avec le code du
-clone moteur, donc un clone en retard rend un verdict qui n'engage personne — **dans les deux
-sens**. Mesure-le, ne le suppose pas :
+Deux clones côte à côte, le corpus (ici, où l'on commite) et le moteur `../engine` (où l'on lance les
+commandes), reliés par un lien :
 
 ```bash
-git -C ../engine fetch -q origin && git -C ../engine rev-list --count HEAD..origin/main  # doit rendre 0
+test -x ../engine/node_modules/.bin/tsc && test -f ../engine/content/misconceptions.json && echo "branché"
+git -C ../engine fetch -q origin && git -C ../engine rev-list --count HEAD..origin/main   # doit rendre 0
 ```
 
-Un **vert** de trop : le clone n'a pas la garde qui aurait crié (constaté avec 167 commits de
-retard). Un **rouge** de trop, plus traître parce qu'il ressemble à du travail à faire : le
-2026-09-01, `content:figures:check` signalait 32 figures invalides dans trois matières — toutes
-déjà réparées en amont (arena #936), sur un clone à 7 commits de retard. Conclure sans avoir
-mesuré ce retard, c'est ouvrir un lot pour réparer ce qui l'est déjà.
+Absent ⇒ `git clone` des deux dépôts, `npm ci` dans le moteur, `ln -s "$PWD/content" ../engine/content`
+(jamais `rm -rf` sur un lien). Un moteur en retard rend des verdicts faux dans les deux sens : le
+mettre à jour avant tout gate.
 
-Un LOT A (ou un gisement) a un second préalable — **la source branchée** : le connecteur Google
-Drive de la session voit le dossier `cnp-officiel` (décision du 2026-11-03). Contrôle : `search_files`
-avec `title = 'index.csv'` doit rendre l'inventaire du dossier ; « Requested entity was not found »
-sur le dossier ⇒ le connecteur est sur un autre compte, le dire à l'humain et s'arrêter là. La
-lecture suit l'échelle texte d'abord, vision en dernier :
-[`content-ingest`](../content-ingest/SKILL.md) § « Source et lecture ».
-**ScribeKit n'est plus un préalable** (facultatif, pour échafauder une fiche neuve). Un LOT B seul
-(profil sans-source) n'a besoin d'aucune source.
+**La source** (seulement si l'étape choisie lit un document) : le connecteur Google Drive doit voir le
+dossier `cnp-officiel` — `search_files` avec `title = 'index.csv'` rend l'inventaire. « Requested
+entity was not found » ⇒ le connecteur est sur un autre compte : le dire et s'arrêter.
 
-Rappels de posture, valables tout du long :
-
-- **`npm run …` depuis `engine/`**, **`git`/`gh` depuis le corpus**. Le corpus n'a pas de
-  `package.json`, pas de husky, pas de Prettier — rien ne s'y formate au commit.
-- Une jonction/lien ne se supprime **jamais** par `rm -rf` (ça viderait le corpus).
-
-## 1. Établir l'état des lieux
+## Étape 2 — Choisir (l'humain tranche)
 
 ```bash
-cd ../engine && npm run programme:etat -- --json          # tout ; ou --grade <niveau>
+cd ../engine && npm run programme:etat -- --json      # ou --grade <niveau> si l'humain l'a nommé
 ```
 
-Tu obtiens, par couple : l'état de la **fiche** (statut, profondeur, couverture calculée, plages non
-lues, R-7, génération autorisée), l'état du **contenu** (sujet présent, chapitres couverts/attendus,
-incomplets), les **constats**, et **`prochaineEtape`** — `{ lot, etape, action, motif, bloquant }`,
-c'est-à-dire ce que la méthode prescrit **si** on choisit ce couple.
+Par couple : fiche (statut, couverture, plages non lues), contenu (chapitres présents/attendus) et
+`prochaineEtape` (l'étape à faire **si** on choisit ce couple).
 
-Restreins avec `--grade` quand l'humain a déjà nommé un niveau : c'est du budget de contexte gagné
-(T-6), pas une présélection.
-
-**Limite assumée du point d'entrée.** L'état des lieux se calcule sur le registre et les manifestes :
-il ne voit que les profils `ecole-cnp`, `ecole-secondaire` et `sans-source`. Un **document-libre**
-(PDF d'enseignant, polycopié, annales papier) n'a ni ligne de registre ni couple à proposer — il se
-traite hors `/campagne`, par la méthode (§ Profils, checklist droits R-2) et `content-ingest`, sur
-demande explicite de l'humain. Ne l'invente pas dans la liste des options.
-
-### 1 bis. Qui travaille déjà dessus — à faire AVANT de présenter quoi que ce soit
-
-`programme:etat` lit le registre et les manifestes : il ne voit **que `main`**. Il ne peut pas savoir
-qu'une autre session tient déjà un couple. Ce scan-là est le seul qui le sache, et il se lance
-**avant** l'étape 2, parce qu'il change ce qu'on a le droit de proposer.
+**Qui tient déjà le couple ?** Avant de présenter, depuis le corpus, les trois pattes — chacune voit ce
+que les autres ratent :
 
 ```bash
-cd <corpus> && git fetch --prune -q origin
-GR=2eme-sec ; MA=anglais ; SU=english        # SU = préfixe des ids de sujet (english/french/math…)
-
-git worktree list                                                    # (1) sessions de CETTE machine
-git branch -r --no-merged origin/main | grep -iE "($MA|$SU)" | grep -i "$GR"   # (2) travail poussé
-gh pr list --state open --limit 50 --json number,title,headRefName,isDraft     # (3) travail déclaré
+git fetch --prune -q origin
+git worktree list                                                     # sessions de cette machine
+git branch -r --no-merged origin/main | grep -iE "(<matière FR>|<préfixe sujet>)" | grep -i "<niveau>"
+gh pr list --state open --limit 50 --json number,title,headRefName,isDraft   # tout lire, ne rien filtrer
 ```
 
-**Les trois pattes sont nécessaires, et chacune rattrape ce que les autres ratent** — mesuré sur ce
-dépôt le 2026-08-31 :
+Le nom de matière change de langue d'une branche à l'autre (`anglais`/`english`) et le préfixe de
+branche n'est pas normalisé : greper les deux noms, jamais un préfixe. Un couple trouvé est **TENU** :
+il se présente quand même, préfixé `⚠️ TENU par <branche ou #PR>`.
 
-| Patte | Ce qu'elle voit | Ce qu'elle rate |
+**Présenter** dans l'ordre du `PILOTAGE.md` § 0 (depuis le 2026-11-03 : le Bac d'abord, matières
+principales en tête), puis l'ordre du registre. Question par `AskUserQuestion` : une option = un couple
+`<niveau> / <matière>`, description = le fait + l'étape (« complète, 13/25 — écrire ch. 14-16 »). Un
+couple bloquant se présente préfixé `⛔`, avec ce qui reste faisable (« ⛔ génération interdite —
+compléter la fiche »). Plus de 4 couples ⇒ ceux du niveau demandé, « Other » ouvert. Les matières
+annexes (musique, dessin, EPS, 3ᵉ langue) se refusent. Un couple imposé directement (« finalise
+l'anglais de 2ème ») se scanne **aussi** avant la première ligne de travail.
+
+Choix fait ⇒ **branche fraîche** depuis `origin/main`, poussée tout de suite sur `wip/<couple>` : c'est
+la réservation (visible des trois pattes). Le statut `en-cours` du registre ne se pose **que** pour
+une fiche qui n'existe pas encore — sur une fiche exploitée, il coupe la génération pour tout le monde.
+
+## Étape 3 — Lire les sources, une seule fois (seulement si la fiche manque ou est partielle)
+
+**Où :** le dossier Drive `cnp-officiel`
+(<https://drive.google.com/drive/folders/1ZUUgEx71bKFsXulk_WL7cSfNxc6U9tmX>) : `index.csv` (l'inventaire,
+`cycle,classe,type,code,file,bytes,status` ; classe 4 du cycle 2 = Bac), `manuels/` (`<code><tome>.pdf`),
+`_txt/` (textes déjà extraits), `_render/` (pages déjà rendues en PNG `<code><tome>-NNN.png`). Trouver
+un fichier : `search_files` avec `title = '<code><tome>.pdf'`. Le site du CNP n'est plus la source
+(injoignable en cloud). Absent du Drive ⇒ le demander à Mohamed.
+
+**Comment, au moindre coût — chaque page au premier barreau qui suffit :**
+
+| Barreau | Quand | Comment |
 | --- | --- | --- |
-| (1) `git worktree list` | une session de la même machine **avant tout push** — le seul signal précoce | une session sur une autre machine |
-| (2) branches non mergées | du travail poussé **sans PR** — `bac × anglais` avait 4 branches vivantes et **zéro PR ouverte** | ce qui n'est pas encore poussé |
-| (3) PR ouvertes | le travail déclaré, avec son état draft/wip | ce qui n'a pas encore de PR |
+| L0 | `_txt/<code><tome>-*.txt` existe | `read_file_content` sur le `.txt` |
+| L1 | manuel en français ou en anglais (tout le Bac scientifique) | `read_file_content` sur le PDF : prose propre ; formules et figures perdues |
+| L2 | manuel arabe à polices propriétaires (sortie brouillée) | `read_file_content` puis la table glyphe → lettre de la fiche (`programme/6eme-base/arabe.md` § 7) |
+| L3 | formules, tableaux, figures, encadrés vocalisés, pages sans texte, **et** le sondage | vision sur le PNG de `_render/` |
 
-⚠️ **Deux pièges de filtrage, tous deux constatés :**
+Au-delà d'environ 80 000 caractères, `read_file_content` écrit son résultat dans un fichier local :
+le traiter en sous-agent (`python3 -I`). Jamais `download_file_content` sur un PDF. Le texte n'a pas de
+marqueur de page fiable : ancrer chaque passage sur le numéro imprimé.
 
-- **le nom de matière change de langue selon la branche** — `feat/programme-**anglais**-2eme-sec-…`
-  et `feat/content-**english**-2eme-sec-…` désignent le même couple. Grepper l'un sans l'autre rate
-  la moitié du travail. D'où les deux jetons `$MA|$SU`.
-- **le préfixe de branche n'est pas normalisé** : `feat/content-`, `feat/programme-`, `claude/`,
-  `wip/` sont tous en usage. Ne filtre **jamais** sur un préfixe.
+**Compte comme lu** au registre une page lue en L0-L2 **après un sondage image** : ≥ 1 page sur 10,
+parmi les plus denses, confrontée au PNG, 0 écart substantiel (un écart ⇒ sonder la section entière,
+trois ⇒ la lire en L3). Le sondage se note dans la fiche.
 
-⚠️ **`--no-merged origin/main` n'est pas cosmétique** : sans lui le scan remonte tout l'historique du
-couple et noie le travail vivant sous les branches finies.
+**Ce qu'on écrit :** la fiche `content/programmes-officiels/programme/<niveau>/<matière>.md`, à
+**profondeur de génération** — chaque activité décrite (énoncé, données, demande), les encadrés de
+règles verbatim, le vocabulaire officiel, les bornes INCLUS/EXCLU, et le chapitrage codifié dans
+`manifest/<niveau>.json`. Guide enseignant pour le scope, manuel élève pour le contenu. Puis le
+registre `suivi/<niveau>.json` (statut, plages `pagesLues`, sondage) et
+`npm run programme:index && npm run programme:check` (0 erreur). Un auditeur opus relit 100 % des
+encadrés et du chapitrage et ≥ 15 % des pages contre la source (R-7) avant le passage à `complete`.
+Une fiche se livre dans sa propre PR (étape 6), sans rien publier.
 
-⭐ **La patte (3) ne filtre volontairement rien** : elle liste **toutes** les PR ouvertes et c'est toi
-qui lis. Le dépôt en compte une poignée, et un filtre `--search` ou `jq` mal quoté rend un tableau
-vide — c'est-à-dire le message « personne ne travaille dessus », qui est exactement la panne qu'on
-répare ici. Une liste courte à relire vaut mieux qu'un filtre qui peut mentir.
+Les **sujets des examens nationaux** du couple (concours de 6ᵉ, de 9ᵉ, Bac — corpus officiel, repris et
+cités) se lisent **dans la même passe** : transcription fidèle sous
+`content/programmes-officiels/examens-nationaux/<classe>/<matière>/<session>.md`, archive du Ministère
+d'abord (fiche `web-echoexam-edunet-tn`). Toutes les sessions publiées pour la matière ; le lecteur
+marque celles d'un programme ancien.
 
-**Ce que tu en fais** : tout couple qui ressort d'une des trois pattes est **TENU**. Il se présente
-quand même à l'étape 2 — masquer une option n'est jamais permis — mais préfixé `⚠️ TENU par
-<branche ou #PR>`, et l'humain arbitre en connaissance de cause.
+Une étape `A5.4` (déclarer les `sujets` d'une fiche) se fait sans lecture : éditer le registre avec
+des ids du manifeste du niveau, jamais inventés (`[]` + note si aucun).
 
-## 2. Demander — et seulement demander
+## Étape 4 — Écrire, chapitre par chapitre, en un seul passage
 
-Présente l'état **dans l'ordre de priorité fixé par l'humain** au
-[`PILOTAGE.md`](../../../FableEtudes/PILOTAGE.md) § 0 — depuis le 2026-11-03 : **les couples du Bac
-d'abord, matières principales en tête**, puis le reste dans l'ordre du registre. Cet ordre est celui de
-Mohamed, pas le tien : tu n'en ajoutes aucun, et à l'intérieur d'un même rang tu gardes l'ordre du
-registre. Puis pose la question avec `AskUserQuestion`. Règles de la question :
+La **fiche** est la seule source de l'auteur : on ne rouvre pas les PDF. Unité de travail : **le
+chapitre**, par **tranches de 3** (jamais plus de 4 non poussés), **un auteur par chapitre** en
+parallèle (≤ 4 sous-agents). Chaque auteur produit, pour son chapitre et lui seul :
 
-- une option = un couple, libellé `<niveau> / <matière>`, description = **le fait + l'étape**
-  (ex. « partielle 48 %, 4 plages non lues — [LOT A A3] compléter la fiche ») ;
-- les couples **bloquants** se présentent quand même, préfixés `⛔`, avec leur motif **et l'étape
-  prescrite** : `bloquant` veut dire « pas lançable **tel quel** », pas « pas lançable ». Un couple
-  `en-cours` est réellement fermé (réservé par une session) ; un couple sous la barre R-5 a la
-  **génération** interdite, mais son étape `A3` — compléter la fiche — est parfaitement lançable et
-  se libelle « ⛔ génération interdite — [LOT A A3] compléter la fiche (4 plages non lues) » ;
-- **jamais** « (recommandé) », jamais un ordre autre que celui du `PILOTAGE.md` § 0 puis du
-  registre, jamais un couple masqué parce qu'il te paraît moins utile ;
-- au-delà de 4 couples plausibles, propose ceux du niveau demandé et laisse « Other » ouvert plutôt
-  que d'en écarter selon ton propre critère ;
-- l'humain peut aussi répondre un couple absent de la liste : c'est son droit, tu l'exécutes — à
-  une exception, les **matières annexes hors périmètre** (musique, éducation artistique/dessin,
-  EPS et la section sport, 3èmes langues : allemand, espagnol, italien). Celles-là ne se proposent
-  pas et se **refusent** si elles sont demandées, en rappelant la règle (méthode, Phase 0.4) ; puis
-  tu redemandes.
+- `chapter.json`, `cours.md` **au patron de notion** (ancrer → nommer → voir → exemple résolu →
+  erreur typique → règle → `::: verifie` ; `content-engine/references/course-explanation.md`),
+  `resume.md`, `quiz.json`, les quatre exercices de la ladder (pratique, boss, révision, défi) ;
+- **les missions des examens nationaux rattachés à ce chapitre** — une mission par exercice d'examen,
+  placée au chapitre le plus avancé qu'il mobilise, reprise fidèlement et citée dans `sources[]`
+  (consigne de rôle : `content-ingest/references/gisement-auteur-examen.md`).
 
-Choix d'un couple `en-cours` ⇒ redis qu'une autre session le tient (R-4), et **redemande**.
+Le brief de chaque auteur contient : la section de la fiche de son chapitre, les fichiers exacts qu'il
+écrit, le chemin des **chapitres déjà publiés** de la matière (à lire avant d'écrire, pour changer la
+**tâche** et pas seulement le décor), les sessions d'examen à reprendre, et la liste des défauts
+récurrents ci-dessous. Il valide seul son chapitre (`content:check`, `content:qa:strict`,
+`content:figures:check`, `content:tranche -- --changed --fresh --strict-lessons`) avant de rendre.
 
-⚠️⚠️ **Le scan 1 bis vaut aussi — et surtout — quand le couple ne vient pas de la question.** Le cas
-qui a coûté le plus cher n'est pas celui d'un humain qui choisit mal dans une liste : c'est celui
-d'une session à qui l'on confie directement un couple (« finalise l'anglais de 2ème année »), qui
-saute donc l'étape 2, et avec elle le contrôle qui vit en dessous. **Un couple imposé se scanne
-avant la première ligne de travail**, exactement comme un couple choisi ; s'il ressort TENU, tu le
-dis et tu attends l'arbitrage plutôt que de démarrer en parallèle.
+**Défauts récurrents à éviter dès l'écriture** (mesurés par les audits de 2026) : cours qui se
+contredit (tableau, exemple, piège, résumé) ; règle énoncée en absolu ; distracteur absurde, contredit
+par l'énoncé ou synonyme d'un autre ; clé la plus longue, la plus courte, ou seule à porter une marque ;
+option « consensus » ; explication qui cite une option par son rang ; question qui en révèle une autre
+ou qui rejoue le `::: verifie` ; difficulté 3 sur du rappel ; notion testée non enseignée ; plus de 8
+notions par chapitre ; légende qui cite un repère absent du dessin ; valeur d'illustration non annoncée
+comme telle.
 
-Coût mesuré du contraire, le 2026-08-31 sur `2eme-sec × anglais` : une fiche LOT A entière écrite
-puis jetée, et **85 questions générées deux fois** par deux sessions qui s'ignoraient.
+**Devoirs d'établissement en ligne** (sites d'enseignants) : **seulement si l'humain le demande**. Ils
+sont une source web — rien n'en est repris : un lecteur rend une ligne anonyme par exercice, un auteur
+écrit une mission neuve par archétype sans voir la source, et le contrôle local le prouve (aucune
+plage de ≥ 8 mots, pas 3 nombres non triviaux d'un même exercice). Échantillon fixé et mergé **avant**
+toute lecture : vagues de neuf devoirs, ≤ 2 par auteur, une vague de plus seulement si la précédente a
+apporté ≥ 30 % de signatures neuves. Consignes : `gisement-lecteur.md`, `gisement-auteur-devoir.md`,
+registre `sources-externes/web-<couple>/gisement.json`.
 
-## 3. Dérouler l'étape prescrite
-
-Avant tout : **branche fraîche depuis `origin/main` fetchée**, dans le corpus (A1/B1 de la méthode),
-et **rejoue le scan 1 bis** — entre la question et le premier commit, une autre session a pu pousser.
-
-> ⚠️ **Ce paragraphe prescrivait jusqu'au 2026-08-31 un contrôle qui ne marchait pas**, et c'est
-> pire qu'aucun contrôle, parce qu'il rend une réponse vide avec assurance. Il demandait
-> `gh pr list --search "<niveau> <matière>"` — sur `2eme-sec anglais`, cette requête ne remontait
-> **aucune** des PR concurrentes, les titres étant écrits « english-2eme-sec » ou « anglais 2ème
-> sec » — et un grep sur `feat/transcription-<niveau>-*`, préfixe qu'**aucune** des huit branches
-> réelles du couple ne portait ; sur `2eme-sec` il ne trouvait qu'une branche **de français**.
-> La version 1 bis a été construite contre ces branches-là et vérifiée sur trois couples.
-
-| `prochaineEtape.etape` | Ce que tu déroules                                                     | Qui écrit                                                              |
-| ---------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| `A1`                   | LOT A complet : sources → transcription → profondeur → audits → PR     | `content-ingest`                                                       |
-| `A3`                   | LOT A partiel : **uniquement les plages listées**, puis profondeur R-5 | `content-ingest`                                                       |
-| `A5.4`                 | déclarer `sujets` (+ statut/couverture) au registre, régénérer la vue  | toi — édition du registre, aucun skill d'écriture                      |
-| `B1`                   | LOT B : `subject.json` + **première tranche** de chapitres             | `content-ecole-tn` (carte `generation-pipeline.md`)                    |
-| `B2`                   | LOT B : tranches suivantes, chapitres manquants ou incomplets          | idem + `content-cours`, `content-interactif`, `prof-<matière>-<cycle>` |
-| `gisement` (demandé)   | étude 36 sur un couple **déjà ouvert** : examens nationaux repris et cités, devoirs en ligne en salle blanche | `content-ingest` (mode gisement) + `prof-<matière>-<cycle>` |
-
-Points de vigilance, tous hérités de la méthode :
-
-- **LOT A** : fidélité absolue, jamais d'invention ; tranches de 10–20 pages écrites au format final
-  (T-2) ; **jamais rouvrir un PDF déjà transcrit** (T-3) ; R-7 par sondage dirigé avant promotion.
-- **LOT B** : la **fiche** est la source de scope et de contenu — on ne rouvre pas les PDF ; unité de
-  travail = le chapitre, avec le brief matière + LA section de la fiche (T-5) ; tranches de **3
-  chapitres complets par défaut, jamais plus de 4 non poussés** (T-10), commit local par chapitre ;
-  illustration systématique des notions spatiales. **Chaque cours neuf s'écrit au patron de notion**
-  (é35, `content-engine/references/course-explanation.md` : ancrer → nommer → voir → exemple résolu
-  → erreur typique → règle → `::: verifie`) — la Content CI refuse un chapitre neuf du programme
-  qui ne l'est pas (`--strict-lessons`). **Chaque question évite les indices de forme**
-  (`quality-bar.md` § « No form clue ») — la CI ne voit que la longueur, le reste est à toi et à
-  l'auditeur.
-- **Gisement** (étude 36) : il approfondit un couple ouvert, il n'ouvre rien. Échantillon fixé et
-  mergé **avant** toute lecture ; lecteur, auteur et auditeur sont trois sous-agents distincts ;
-  **un chapitre = un auteur à la fois**, avec sa plage de numéros ; chaque tranche se livre depuis
-  un worktree frais d'`origin/main` et se publie dans la foulée. Déroulé complet :
-  `content-ingest/references/gisement.md`.
-- **A5.4** : `sujets` doit désigner des ids du manifeste du niveau — `programme:check` refuse le
-  reste. Aucun sujet correspondant (matière hors programme codifié) ⇒ laisser `[]` et l'écrire en
-  note, jamais inventer un id pour faire disparaître un constat.
-- **Sous-agents** : un lot = un contexte frais (T-4). Délègue le lot à un sous-agent quand le harnais
-  le permet, et garde le rôle d'orchestrateur mince. Écriture parallèle ⇒ **périmètre nommé** par
-  agent **et chemin des chapitres déjà publiés**, sinon le moule d'un item se rejoue d'un chapitre à
-  l'autre : c'est le défaut n°1 des tranches livrées (méthode, B2 « le doublon de gabarit »).
-  Avant chaque commit : `npm run content:tranche -- --changed` — les trois mesures muettes **et**
-  les candidats gabarit, croisés avec les chapitres publiés ; ses groupes vont au mandat de
-  l'auditeur. L'auditeur d'une tranche est un sous-agent en contexte vierge par chapitre ; pour
-  une correction de contenu publié, son mandat est `content-engine/references/audit-correction.md`.
-
-### 3 bis. Choisir le modèle de chaque sous-agent (décision de Mohamed du 2026-11-03)
-
-Règle : **le modèle le moins cher qui tient la tâche**, sauf pour l'audit, où l'indépendance et la
-sévérité passent avant le coût. Tu passes le modèle **explicitement** à chaque sous-agent (`model` de
-l'outil Agent, option `model` d'un `agent()` de workflow) : un sous-agent n'hérite jamais par défaut du
-modèle de l'orchestrateur. Les familles se nomment ici par leur nom court ; les identifiants exacts ne
-vivent que dans `harness/models.json` du moteur.
-
-| Tâche du sous-agent | Famille | Pourquoi |
-| --- | --- | --- |
-| Inventaire et recherche (Drive, `index.csv`, registre), extraction de la couche texte (L0-L2), décodage par la table d'une fiche, comptages, scan 1 bis, extraction des constats d'un long rapport | **haiku** | mécanique, gros volume, aucune décision pédagogique |
-| Lecture vision (L3 : formules, tableaux, figures) et sondage image | **sonnet** | fidélité visuelle ; **opus** pour l'arabe vocalisé ou une page manuscrite |
-| Auteur de chapitre (cours au patron, items), auteur de mission de gisement, correcteur qui applique un rapport d'audit | **sonnet** | écriture longue au gabarit, guidée par un brief et une fiche |
-| Auditeur de tranche (B3), relecture R-7, auditeur de gisement, second audit | **opus** | contexte vierge, re-résolution à l'aveugle : c'est là qu'un défaut laissé coûte le plus |
-| Fiche à profondeur de génération (A4), plan d'une matière neuve, arbitrage de scope | **opus** | jugement de programme, rare |
-| Gates, git, PR, publication, mesures de tranche | **aucun sous-agent** | scripts déterministes, lancés par l'orchestrateur (T-1) |
-
-Escalade d'un cran, jamais d'emblée : un auteur sonnet dont le chapitre échoue deux fois aux gates
-ou revient de l'audit avec un BLOCKER passe en opus pour ce chapitre ; un lecteur haiku qui rend du
-texte inexploitable cède la page au barreau suivant (vision, sonnet). Le modèle de l'orchestrateur,
-lui, est le choix de l'humain (`/model`). ≤ 4 sous-agents en parallèle (`PILOTAGE.md` § 1, règle 4).
-
-## 4. Gates, PR, garde jusqu'au merge
-
-Depuis `engine/`, 0 erreur exigé — **`npm run content:gates -- --tranche`** rejoue d'un coup les sept
-étages de la Content CI (dont `programme:check` pour un lot de fiche ; `content:check`,
-`content:qa:strict`, `content:audit` pour un lot de contenu) et les mesures de tranche, et mesure le
-retard du moteur (§ 0) — (+ l'audit pédagogique `content-audit` sur les chapitres de la
-tranche — **un auditeur par chapitre, en contexte vierge, qui n'a rien écrit de ce qu'il relit** ;
-les quatre points de son mandat sont en B3 de la méthode) pour un lot de contenu. Un gate vert ne
-dit rien du fond : sur deux tranches d'anglais 1ère sec, les quatre gates étaient verts, les
-138 clés justes, et l'audit a trouvé 5 BLOCKER et 33 MAJOR.
-
-**Aucun SQL, aucune migration** dans un commit de campagne : le
-contenu se compile hors des migrations (méthode, B3). ⚠️ Et **jamais `npm run content:build`** :
-sans `--sql-dir` il écrit des migrations horodatées dans le dépôt **moteur** — canal mort depuis
-l'étude 24, et une fuite de corpus que son gate `leak:check` bloque.
-
-Puis commit, push, `gh pr create --fill`. La chaîne de merge du dépôt merge une PR entièrement
-verte ; tu restes **de garde** jusqu'au merge réel (surveiller, corriger les rouges, confirmer).
-Sauvegarde d'une session interrompue : branche `wip/…` + PR draft.
-
-**Puis publier — un merge n'applique rien.** Contrairement au canal schéma du moteur,
-`apply-content.yml` est en `workflow_dispatch` **seul** (méthode, B3) : une tranche de contenu mergée
-reste invisible en prod tant qu'on ne l'a pas dispatchée, depuis le corpus :
+## Étape 5 — Vérifier : un audit, une reprise
 
 ```bash
-gh workflow run apply-content.yml -f subjects="<subject-id>" -f dry_run=true    # le plan
-gh workflow run apply-content.yml -f subjects="<subject-id>" -f dry_run=false   # l'application
+cd ../engine && npm run content:gates -- --tranche     # 7 étages + mesures de tranche, 0 erreur
 ```
 
-Vérifier le run vert **et** la ligne journalisée dans `content_releases` (l'application est
-idempotente : un run rouge ou coupé se redispatche, jamais de rattrapage à la main). Sans droit de
-dispatch : s'arrêter au merge et le dire. Un lot de **fiche** (LOT A) ne publie rien.
+`content:catalogue` régénère `content/CATALOGUE.md` : le committer avec la tranche.
 
-**Première tranche complète d'une classe ⇒ ouvrir la classe en production** (R-8, règle d'ouverture
-du 2026-07-19) : on n'attend pas la matière complète — bascule `coming_soon → available`, les
-chapitres suivants, d3/d4 et annales s'ajoutent en continu sans bloquer.
+Puis **un auditeur opus par chapitre**, en contexte vierge (`content-audit` ; pour les missions,
+`gisement-auditeur.md`) : il re-résout chaque question à l'aveugle (calculs refaits), cherche les
+indices de forme, les doublons avec les chapitres publiés et frères, les contradictions du cours, la
+vérité des figures, la fidélité à la fiche. Il rend BLOCKER / MAJOR / MINOR avec la correction précise.
 
-⚠️ **Mais l'ouverture n'est pas un geste de campagne.** La bascule est une **migration `open_*` du
-dépôt moteur** — une par section (R-8) —, donc une **PR distincte, sur l'autre dépôt**, avec son
-test pgTAP et le gate `verify` :
+Les corrections reviennent à **l'auteur du chapitre** (par `SendMessage` : il a gardé son contexte, ça
+coûte une fraction d'une réécriture). Puis le **même auditeur** revérifie **seulement les points
+corrigés** et les questions réécrites — pas de second audit complet. Une clé fausse ou un BLOCKER
+restant ⇒ la tranche ne part pas.
 
-```
-supabase/migrations/<horodatage>_open_<parcours>_parcours.sql   # UPDATE parcours … available
-supabase/tests/NN_open_<parcours>_parcours.test.sql             # le pgTAP qui l'atteste
-```
+## Étape 6 — Livrer et publier
 
-Elle ne va **jamais** dans la PR de campagne (§ B3 : aucun SQL, aucune migration dans le corpus) et
-ne se déclenche qu'après le merge **et** l'application vérifiée de la tranche. Tu la portes en PR
-moteur si l'humain te le demande ; sinon tu la **rapportes comme reste à faire** (§ 5), nommément —
-une classe dont le contenu est en base mais le parcours resté `coming_soon` est invisible pour les
-élèves, et rien dans les gates ne le signale.
+On ne change **jamais** de branche dans l'arbre où des auteurs écrivent : la livraison se fait depuis
+la branche de la session, poussée une fois les gates et l'audit verts.
 
-## 4 bis. Poser — et ne pas poser — la réservation `en-cours`
-
-Le registre porte un statut de réservation, `en-cours` (« réservé par une session »). L'étape 2 sait
-**le lire** ; encore faut-il que quelqu'un l'**écrive**. Personne ne le faisait : au 2026-08-31,
-**zéro fiche** du dépôt était marquée `en-cours`.
-
-**Quand l'écrire** : à l'ouverture d'un **LOT A sur une fiche qui n'existe pas encore**, ou dont
-rien n'est encore générable. Tu écris `"statut": "en-cours"`, tu commites, **tu pousses tout de
-suite** — une réservation qui dort sur une branche locale ne réserve rien — et tu la remplaces par
-le vrai statut en fin de lot.
-
-⚠️⚠️ **Quand ne PAS l'écrire, et c'est impératif.** `en-cours` n'est pas un drapeau « je travaille
-ici » : il **coupe la génération pour tout le monde**. Le moteur est explicite —
-
-```ts
-export function chapitresGenerables(entry: FicheEntry): string[] {
-  if (generationAutorisee(entry)) return [];
-  if (entry.statut === "en-cours") return [];   // ← la levée R-5 disparaît
-  return entry.chapitresGeneration;
-}
+```bash
+git add content/… && git commit -m "feat(<sujet>): ch.NN-MM …"    # fichiers content/ seuls
+git push -u origin <branche>           # auto-pr.yml ouvre la PR ; automerge.yml la merge au vert
 ```
 
-Posé sur une fiche `partielle` dont `chapitresGeneration` est peuplé, il **rend non générables des
-chapitres qui l'étaient**, y compris pour la session qui les génère légitimement. Donc : `en-cours`
-**ne réserve jamais un LOT B**, et ne se pose jamais sur une fiche déjà exploitée.
+Tu restes de garde jusqu'au merge réel (corriger un rouge, rebaser sur `main` si une PR intermédiaire
+a été mergée). **Puis publier** — un merge n'applique rien :
 
-**Pour un LOT B, la réservation est le scan 1 bis**, pas un statut : une branche poussée tôt (même
-vide) est visible par les trois pattes, ne casse rien, et n'a pas besoin d'être relâchée.
-⚠️ Et **`_tranches-wip/` n'est pas un verrou** : c'est un sas de sauvegarde de transcriptions brutes,
-avec son propre contrat (voir son README). Ne l'utilise pas pour signaler du travail en cours.
+```bash
+gh workflow run apply-content.yml -f subjects="<subject-id>" -f dry_run=true     # le plan
+gh workflow run apply-content.yml -f subjects="<subject-id>" -f dry_run=false    # l'application
+```
 
-## 5. Boucler, ou s'arrêter proprement
+`subjects` toujours renseigné (vide = tout le corpus, ~45 min de charge). Vérifier les étapes
+« Appliquer », « Vérifier en base », « Journaliser », puis l'issue `content-drift` close. Un lot de
+fiche ne publie rien.
 
-Merge confirmé ⇒ **re-établis l'état des lieux** (il a changé) et **redemande** — le couple suivant
-est de nouveau un choix humain, y compris « on s'arrête ». À l'approche du budget ou de la fenêtre
-de contexte : finir le palier poussable en cours, étiqueter honnêtement la profondeur atteinte,
-pousser, rapporter le coût (T-9/T-10). Jamais de travail non poussé en fin de session.
+Mettre à jour dans la même PR : le registre du couple (missions `publiee`) et la ligne du couple au
+`PILOTAGE.md`. **Première tranche d'une classe** ⇒ son parcours reste `coming_soon` tant qu'une
+migration `open_<parcours>` n'est pas mergée **au moteur** (PR distincte, avec son pgTAP) : la porter
+si l'humain le demande, sinon la signaler nommément comme reste à faire.
 
-Rapport de fin : par couple traité, la PR, la profondeur atteinte, le verdict R-7, le coût, l'état
-de la **publication** (dispatch appliqué, ligne `content_releases`) et celui de l'**ouverture**
-(migration `open_*` portée, ou à faire — dis-le nommément, personne d'autre ne le verra) ; les
-couples écartés et pourquoi ; ce qui reste. Le coût par chapitre publié est le KPI de l'étude 12.
+## Étape 7 — Boucler
+
+Merge publié ⇒ refaire l'étape 2 et **redemander** (le couple suivant est un choix humain, « on
+s'arrête » compris). Fin de budget ⇒ finir le chapitre en cours, pousser sur `wip/`, étiqueter
+honnêtement. Rapport : par couple, la PR, ce qui est publié, les restes, ce qui attend l'humain.
+
+## Les modèles : le moins cher qui tient la tâche (décision du 2026-11-03)
+
+Le modèle se passe **explicitement** à chaque sous-agent (`model` de l'outil Agent ou d'un `agent()`
+de workflow) ; un sous-agent n'hérite jamais par défaut de l'orchestrateur, dont le modèle est le
+choix de l'humain (`/model`). Familles par nom court ; les identifiants exacts ne vivent que dans
+`harness/models.json` du moteur.
+
+| Tâche | Famille |
+| --- | --- |
+| Inventaire, recherche Drive, extraction et décodage de la couche texte, comptages, scan, extraction des constats d'un long rapport | **haiku** |
+| Lecture vision (L3), sondage image, lecteur de devoirs ou d'examens (classement en archétypes) | **sonnet** (opus pour l'arabe vocalisé ou le manuscrit) |
+| Auteur de chapitre et de missions, correcteur qui applique un audit | **sonnet** |
+| Auditeur de tranche, relecture R-7 de fiche, fiche à profondeur de génération | **opus** |
+| Gates, git, PR, publication | aucun sous-agent (scripts) |
+
+Escalade d'un cran, jamais d'emblée : un chapitre qui échoue deux fois aux gates ou garde un BLOCKER
+passe à un auteur opus ; un texte inexploitable passe au barreau de vision.
 
 ## STOP — ne jamais improviser
 
-Les conditions d'arrêt sont celles de la méthode (§ STOP) et s'appliquent telles quelles : doute sur
-les **droits** d'une source hors corpus officiel, source introuvable, scan illisible, divergence
-fiche ↔ programme officiel, LOT B sur une fiche restée sous la barre R-5, format de contenu
-inexistant dans le moteur, budget insuffisant. Deux de plus, propres à ce point d'entrée :
-
-- **l'humain n'a pas tranché** ⇒ on ne lance rien, on redemande ;
-- **l'état des lieux n'a pas pu être établi** (corpus non branché, manifeste invalide) ⇒ on répare le
-  préalable, on ne devine pas l'état.
+- l'humain n'a pas tranché ⇒ redemander ;
+- l'état des lieux n'a pas pu être établi (moteur non branché, manifeste invalide) ⇒ réparer d'abord ;
+- doute sur les droits d'une source hors corpus officiel ⇒ elle sort ;
+- source absente du Drive, page illisible, divergence fiche ↔ programme ⇒ le dire, ne pas deviner ;
+- génération demandée sur une fiche sous la barre (statut `partielle` sans chapitre générable) ⇒
+  compléter la fiche d'abord ;
+- clé fausse à l'audit ⇒ la tranche ne part pas ; tranche mergée mais pas publiée ⇒ pas finie.

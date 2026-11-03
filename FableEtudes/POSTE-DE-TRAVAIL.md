@@ -148,7 +148,7 @@ les logiciels s'installent mais ne fonctionnent pas.
 | --------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | `github.com` · `api.github.com` · `codeload.github.com` · `objects.githubusercontent.com` | clones, *pull requests*, état des vérifications |
 | `registry.npmjs.org`                                                        | installation des dépendances                                   |
-| `www.cnp.com.tn` · `edunet.tn`                                              | re-télécharger le corpus en local seulement — depuis le 2026-11-03 la source des sessions est le dossier Google Drive `cnp-officiel` (`content-ingest` § « Source et lecture ») |
+| `www.cnp.com.tn` · `edunet.tn`                                              | re-télécharger le corpus en local seulement — depuis le 2026-11-03 la source des sessions est le dossier Google Drive `cnp-officiel` (`campagne` étape 3) |
 | `crt.sectigo.com`                                                           | **indispensable** : le CNP ne sert pas son certificat intermédiaire — sans ce domaine, tout téléchargement du corpus échoue en erreur TLS |
 | `www.na9ranal3ab.tn` · `*.supabase.co`                                      | vérifier la production après publication                       |
 

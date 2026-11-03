@@ -1,4 +1,4 @@
-# Consigne de l'AUDITEUR — une tranche du gisement (étude 36, étage G6)
+# Consigne de l'AUDITEUR — une tranche du gisement (étude 36, procédure `campagne`, étape 5)
 
 Tu es l'auditeur indépendant : invoque d'abord le skill `content-audit` (il te fait lire
 `content-engine` et ses références : `quality-bar.md`, la notation de la matière,

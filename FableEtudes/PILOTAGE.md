@@ -16,7 +16,7 @@
 
 **Le Bac d'abord, les matières principales de chaque section en tête.** Cette priorité ordonne la
 présentation de `/campagne` ; le choix du couple reste à l'humain à chaque fois. Les sources sont dans le
-Drive `cnp-officiel` (`content-ingest` § « Source et lecture ») : les manuels scientifiques du Bac
+Drive `cnp-officiel` (`campagne` étape 3) : les manuels scientifiques du Bac
 sont **en français**, donc lisibles au barreau L1 (couche texte), le moins cher — mesuré sur `222422`
 le 2026-11-03, à vérifier à l'ouverture de chaque manuel.
 
@@ -52,15 +52,12 @@ partielle 75 %, tenue par `feat/transcription-bac-philosophie-mabhath2`), arabe 
 partielle 92 %, 15/42, tenue par trois branches `english-bac`). Les sujets communs déjà en base
 (`philosophie-`, `english-`, `french-bac-<section>`) attendent leur rattachement A5.4.
 
-## 1. La méthode — un seul passage par couple (niveau × matière)
+## 1. La procédure
 
-| # | Étape | Produit | Preuve |
-| --- | --- | --- | --- |
-| 1 | **Lecture unique** : manuel élève (fiche R-5) **et** sujets d'examen nationaux **et** devoirs du registre du couple, dans la même passe | notes versionnées sous `FableEtudes/` (jamais seulement dans un scratchpad) ; registre `gisement.json` (documents `lu`) ; `suivi/*.json` | `programme:check` |
-| 2 | **Chapitre par chapitre, un seul auteur** : le cours au patron (s'il n'est pas déjà armé), les items du chapitre, **et** les missions du gisement rattachées à ce chapitre (examens repris et cités, devoirs réécrits en salle blanche) | `content/<matière>/<chapitre>/` ; registre `planifiee` → `mergee` | `content:check`, `content:qa`, `content:tranche --changed --fresh --strict-longest` |
-| 3 | **Une seule passe d'étiquettes** par couple : vocabulaire d'erreurs (phase 1), pose sur les distracteurs + `coursePitfalls` (phase 2, C-5) | `misconceptions.json`, `misconceptionTag`, `chapter.json` | `content:qa` (tags connus, C-5) |
-| 4 | **Un seul audit indépendant** (opus) par lot de chapitres, sur tout : cours, items, missions — re-résolution à l'aveugle, fidélité au manuel, rendu | rapport versionné, corrections appliquées | rendu `renderLesson` / `renderSummary` propre |
-| 5 | **Armement et livraison** : `coursePattern: "notion"`, `content:gates`, PR propre, merge, `apply-content.yml` (`subjects` renseigné), issue `content-drift` close, registre → `publiee`, ce fichier mis à jour | prod | les trois étapes « Appliquer », « Vérifier en base », « Journaliser » |
+La procédure unique — choisir, lire une fois, écrire chapitre par chapitre (cours au patron,
+exercices, missions des examens nationaux), un audit, livrer, publier — est le skill
+[`campagne`](../.claude/skills/campagne/SKILL.md) (2026-11-03). Ce fichier ne garde que la priorité
+(§ 0), les règles anti-double-travail ci-dessous et le tableau de bord (§ 2).
 
 Règles qui empêchent le double travail :
 
@@ -73,7 +70,7 @@ Règles qui empêchent le double travail :
    quelques commits thématiques sur la branche désignée de la session (le titre du squash = le dernier
    commit) ; une seule PR privée ouverte à la fois par couple.
 4. **≤ 4 agents** en parallèle (quota « five_hour » consommé, pas une durée) ; le modèle de chaque
-   agent se choisit par la table du skill `campagne` § 3 bis (lecteurs texte haiku, auteurs et
+   agent se choisit par la table du skill `campagne` § « Les modèles » (lecteurs texte haiku, auteurs et
    correcteurs sonnet, auditeurs opus) ; chaque agent écrit ses fichiers au fil de l'eau ; après une coupure, le reprendre
    par `SendMessage` (contexte conservé) une fois le quota rouvert.
 5. **Rendu vérifié avant toute PR de cours** : le moteur n'affiche ni une liste dans une citation

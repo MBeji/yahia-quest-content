@@ -1,4 +1,4 @@
-# Consigne du LECTEUR — mode gisement (étude 36, étage G2)
+# Consigne du LECTEUR — mode gisement (étude 36, procédure `campagne`, étape 3)
 
 Tu es le **lecteur**. Tu es le SEUL à ouvrir les documents. Ta sortie traverse une frontière :
 pour un **devoir** ou une **série**, un auteur écrira des exercices neufs sans rien voir de ce que
