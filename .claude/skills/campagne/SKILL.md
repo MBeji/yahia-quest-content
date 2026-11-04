@@ -104,18 +104,23 @@ une fiche qui n'existe pas encore — sur une fiche exploitée, il coupe la gén
 un fichier : `search_files` avec `title = '<code><tome>.pdf'`. Le site du CNP n'est plus la source
 (injoignable en cloud). Absent du Drive ⇒ le demander à Mohamed.
 
-**Comment, au moindre coût — chaque page au premier barreau qui suffit :**
+**Récupérer le PDF une fois** (mesuré le 2026-11-04 sur `222451P00`, 4,8 Mo, 392 p.) :
+`download_file_content` sur le PDF écrit son contenu (JSON `{content}` en base64) dans un fichier
+local au lieu de la conversation ; le décoder dans `~/.cache/yqa-manuels/<code><tome>.pdf` (dossier
+privé 0700, **jamais dans git**), puis `pdftotext -layout -f N -l N` page par page — le texte garde
+alors ses vrais numéros de page — et `pdftoppm -r 110 -png -f N -l N` pour l'image d'une page.
+
+**Lire au moindre coût — chaque page au premier barreau qui suffit :**
 
 | Barreau | Quand | Comment |
 | --- | --- | --- |
 | L0 | `_txt/<code><tome>-*.txt` existe | `read_file_content` sur le `.txt` |
-| L1 | manuel en français ou en anglais (tout le Bac scientifique) | `read_file_content` sur le PDF : prose propre ; formules et figures perdues |
-| L2 | manuel arabe à polices propriétaires (sortie brouillée) | `read_file_content` puis la table glyphe → lettre de la fiche (`programme/6eme-base/arabe.md` § 7) |
-| L3 | formules, tableaux, figures, encadrés vocalisés, pages sans texte, **et** le sondage | vision sur le PNG de `_render/` |
+| L1 | manuel en français ou en anglais (tout le Bac scientifique) | `pdftotext -layout` page par page sur le PDF récupéré : prose propre ; formules, exposants, vecteurs et figures dégradés |
+| L2 | manuel arabe à polices propriétaires (sortie brouillée) | `pdftotext`, puis la table glyphe → lettre de la fiche (`programme/6eme-base/arabe.md` § 7) |
+| L3 | formules, tableaux, figures, encadrés (toujours vérifiés sur l'image), pages sans texte, **et** le sondage | `pdftoppm` → PNG lu avec Read (ou les PNG de `_render/` quand ils existent) |
 
-Au-delà d'environ 80 000 caractères, `read_file_content` écrit son résultat dans un fichier local :
-le traiter en sous-agent (`python3 -I`). Jamais `download_file_content` sur un PDF. Le texte n'a pas de
-marqueur de page fiable : ancrer chaque passage sur le numéro imprimé.
+À défaut de pouvoir récupérer le PDF, `read_file_content` rend la couche texte sans marqueur de page
+(au-delà d'environ 80 000 caractères, dans un fichier local à traiter en sous-agent).
 
 **Compte comme lu** au registre une page lue en L0-L2 **après un sondage image** : ≥ 1 page sur 10,
 parmi les plus denses, confrontée au PNG, 0 écart substantiel (un écart ⇒ sonder la section entière,
