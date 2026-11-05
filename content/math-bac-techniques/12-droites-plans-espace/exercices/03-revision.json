@@ -1,0 +1,148 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Droites et plans de l'espace",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le plan P a pour équation 3x − y + 2z − 4 = 0. Pour quelle valeur du réel m le vecteur u⃗(m, 5, −2) est-il un vecteur de P ?",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "Un vecteur (α, β, γ) est un vecteur de P si et seulement si 3α − β + 2γ = 0. Pour u⃗(m, 5, −2), cela donne 3m − 5 − 4 = 0, soit 3m = 9 et m = 3 ✓. Contrôle : 3×3 − 5 + 2×(−2) = 9 − 5 − 4 = 0. La constante −4 de l'équation de P ne joue aucun rôle : elle fixe la position du plan, pas ses vecteurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est une équation cartésienne du plan P de représentation paramétrique x = 1 + λ + μ ; y = 2λ ; z = 3 − λ + 2μ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4x − 3y − 2z + 2 = 0"
+        },
+        {
+          "id": "b",
+          "text": "4x + 3y − 2z + 2 = 0"
+        },
+        {
+          "id": "c",
+          "text": "4x − 3y − 2z = 0"
+        },
+        {
+          "id": "d",
+          "text": "4x + 3y − 2z = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le plan passe par A(1, 0, 3) et a pour vecteurs directeurs u⃗(1, 2, −1) et v⃗(1, 0, 2). Avec AM⃗(x − 1, y, z − 3) : b′c″ − b″c′ = 2×2 − 0×(−1) = 4, a′c″ − a″c′ = 1×2 − 1×(−1) = 3 et a′b″ − a″b′ = 1×0 − 1×2 = −2. Le déterminant vaut 4(x − 1) − 3y − 2(z − 3) = 4x − 3y − 2z + 2, d'où 4x − 3y − 2z + 2 = 0 ✓. Contrôle : A donne 4 − 0 − 6 + 2 = 0, u⃗ donne 4 − 6 + 2 = 0 et v⃗ donne 4 − 4 = 0. Oublier le signe moins du terme central donne +3y ; oublier le point A supprime la constante ; cumuler les deux erreurs donne 4x + 3y − 2z = 0, que A ne vérifie pas (4 + 0 − 6 = −2).",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les étapes de la méthode pour étudier la position relative de deux droites données par des représentations paramétriques.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relever les vecteurs directeurs de D et de D′"
+        },
+        {
+          "id": "b",
+          "text": "Tester leur colinéarité avec les trois déterminants d'ordre 2"
+        },
+        {
+          "id": "c",
+          "text": "S'ils ne sont pas colinéaires, égaler les coordonnées avec deux paramètres distincts λ et μ"
+        },
+        {
+          "id": "d",
+          "text": "Résoudre avec deux équations, puis vérifier la troisième"
+        },
+        {
+          "id": "e",
+          "text": "Conclure : sécantes si le couple (λ, μ) convient aux trois équations, non coplanaires sinon"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On lit d'abord les directions, puis on teste leur colinéarité : c'est ce test qui décide si l'on cherche un point commun (cas non colinéaire) ou si l'on compare un point de chaque droite (cas parallèle). Ensuite on égale les coordonnées avec deux paramètres distincts, on résout avec deux équations et on contrôle avec la troisième ; la conclusion vient en dernier, car elle dépend de ce contrôle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit P : x − 2y + z + 5 = 0 et Q : 3x − 6y + 3z + 15 = 0. Quelle affirmation est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P et Q sont strictement parallèles, car 5 et 15 sont différents"
+        },
+        {
+          "id": "b",
+          "text": "P et Q sont confondus, car l'équation de Q est 3 fois celle de P"
+        },
+        {
+          "id": "c",
+          "text": "P et Q sont sécants, car 5 et 15 sont différents"
+        },
+        {
+          "id": "d",
+          "text": "P et Q sont sécants, car 3, −6 et 3 ne sont pas égaux à 1, −2 et 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a (3, −6, 3) = 3×(1, −2, 1) et 15 = 3×5 : l'équation de Q est 3 fois celle de P, donc P et Q ont les mêmes points, ils sont confondus ✓. Deux constantes différentes ne séparent pas deux plans dont les équations sont proportionnelles, et des coefficients différents mais proportionnels ne rendent pas les plans sécants.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un rayon laser suit la droite de représentation x = 3 + λ ; y = −λ ; z = 1 + 2λ et touche une vitre plane d'équation 2x + y − z − 3 = 0 en un point I. Quelle est l'abscisse de I ?",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "En reportant, 2(3 + λ) + (−λ) − (1 + 2λ) − 3 = 2 − λ = 0, donc λ = 2. Le point I est alors (3 + 2, −2, 1 + 4) = (5, −2, 5), d'abscisse 5 ✓. Contrôle : 2×5 − 2 − 5 − 3 = 0. Le vecteur directeur (1, −1, 2) donne 2 − 1 − 2 = −1 ≠ 0 : le rayon n'est pas parallèle à la vitre, l'intersection est bien un seul point.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Cocher toutes les propriétés exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux droites dont les vecteurs directeurs ne sont pas colinéaires sont sécantes ou non coplanaires"
+        },
+        {
+          "id": "b",
+          "text": "Si trois vecteurs sont coplanaires, deux d'entre eux sont toujours colinéaires"
+        },
+        {
+          "id": "c",
+          "text": "Deux plans dont les triplets de coefficients (a, b, c) sont proportionnels sont parallèles"
+        },
+        {
+          "id": "d",
+          "text": "Une droite parallèle à un plan n'a jamais de point commun avec lui"
+        },
+        {
+          "id": "e",
+          "text": "Deux plans non parallèles se coupent suivant une droite"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Sont vraies : des directions non colinéaires donnent des droites sécantes (système avec une solution) ou non coplanaires (système sans solution) ✓ ; des coefficients proportionnels donnent les mêmes vecteurs, donc des plans parallèles ✓ ; deux plans non parallèles sont sécants suivant une droite ✓. Est fausse « deux d'entre eux sont toujours colinéaires » : les vecteurs (1, 0, 0), (0, 1, 0) et (1, 1, 0) sont coplanaires sans qu'aucun couple soit colinéaire. Est fausse « une droite parallèle à un plan n'a jamais de point commun avec lui » : une droite parallèle à un plan peut être incluse dans ce plan, et elle a alors tous ses points en commun avec lui.",
+      "difficulty": 2
+    }
+  ]
+}

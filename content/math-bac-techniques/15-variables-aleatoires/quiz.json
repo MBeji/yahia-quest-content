@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Variables aléatoires réelles",
+  "questions": [
+    {
+      "prompt": "Une variable aléatoire X prend les valeurs 0, 1 et 2. On sait que p(X = 0) = 0,3 et p(X = 2) = 0,45. Quelle est p(X = 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,15"
+        },
+        {
+          "id": "b",
+          "text": "0,25"
+        },
+        {
+          "id": "c",
+          "text": "0,55"
+        },
+        {
+          "id": "d",
+          "text": "0,75"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les probabilités d'une loi ont pour somme 1 : p(X = 1) = 1 − 0,3 − 0,45 = 0,25 ✓. Le nombre 0,75 est la somme des deux probabilités connues, 0,55 = 1 − 0,45 oublie de retrancher p(X = 0), et 0,15 est la différence 0,45 − 0,3 : aucune de ces opérations ne complète une loi.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On sait que p(X = 1) = 0,2, p(X = 3) = 0,5 et p(X = 6) = 0,3, et que X ne prend pas d'autre valeur. Quelle est F(4), c'est-à-dire p(X ≤ 4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,2"
+        },
+        {
+          "id": "b",
+          "text": "0,3"
+        },
+        {
+          "id": "c",
+          "text": "0,5"
+        },
+        {
+          "id": "d",
+          "text": "0,7"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "F(4) cumule les probabilités des valeurs inférieures ou égales à 4 : ce sont 1 et 3, donc F(4) = 0,2 + 0,5 = 0,7 ✓. La probabilité 0,5 est celle de la valeur 3 seule, 0,3 = 1 − 0,7 est p(X > 4), et 0,2 ne compte que la valeur 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un jeu a pour gain algébrique X : X vaut −2 avec la probabilité 0,4, vaut 0 avec la probabilité 0,2 et vaut 4 avec la probabilité 0,4. Quelle est l'espérance de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,8"
+        },
+        {
+          "id": "b",
+          "text": "0,8"
+        },
+        {
+          "id": "c",
+          "text": "1,6"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E(X) = (−2) × 0,4 + 0 × 0,2 + 4 × 0,4 = −0,8 + 0 + 1,6 = 0,8 ✓ : le jeu est favorable. La valeur 2 est la somme des valeurs sans leurs poids, 1,6 ne garde que la contribution du gain, et −0,8 que celle de la perte.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "X suit la loi binomiale ℬ(25 ; 0,2). Quel est l'écart-type de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,4"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a E(X) = 25 × 0,2 = 5 et V(X) = 25 × 0,2 × 0,8 = 4, donc σ(X) = √4 = 2 ✓. Le nombre 5 est l'espérance, 4 est la variance sans la racine carrée, et 0,4 = √(0,2 × 0,8) oublie le facteur n = 25 dans V(X).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "X suit la loi exponentielle de paramètre 0,5. Quelle est son espérance ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25"
+        },
+        {
+          "id": "b",
+          "text": "0,5"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour une loi exponentielle, E(X) = 1/λ = 1/0,5 = 2 ✓. Le nombre 0,5 est le paramètre lui-même, 4 = 1/λ² est la variance, et 0,25 = λ² n'est la valeur d'aucune de ces grandeurs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "X suit la loi uniforme sur [2 ; 10]. Quelle est la probabilité p(3 ≤ X ≤ 5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,125"
+        },
+        {
+          "id": "b",
+          "text": "0,2"
+        },
+        {
+          "id": "c",
+          "text": "0,25"
+        },
+        {
+          "id": "d",
+          "text": "0,75"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La densité vaut 1/(10 − 2) = 1/8, donc p(3 ≤ X ≤ 5) = (5 − 3)/8 = 2/8 = 0,25 ✓. Le nombre 0,125 est la densité 1/8 elle-même, 0,2 = 2/10 divise par b au lieu de b − a, et 0,75 est la probabilité contraire.",
+      "difficulty": 2
+    }
+  ]
+}

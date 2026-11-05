@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Nombres complexes",
+  "questions": [
+    {
+      "prompt": "Quelle est la partie imaginaire du nombre complexe z = (2 − 3i)(1 + i) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−i"
+        },
+        {
+          "id": "b",
+          "text": "−1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Développons : (2 − 3i)(1 + i) = 2 + 2i − 3i − 3i² = 2 − i + 3 = 5 − i. La partie imaginaire est le coefficient réel de i, donc Im(z) = −1 ✓. La valeur 5 est la partie réelle ; la valeur 1 oublie le signe ; −i garde le i, alors qu'une partie imaginaire est un réel.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le module du nombre complexe z = −6 + 8i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "|z| = √((−6)² + 8²) = √(36 + 64) = √100 = 10 ✓. Le résultat 14 additionne 6 et 8 ; 2 additionne −6 et 8 ; 100 oublie la racine carrée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est un argument du nombre complexe z = −3i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π"
+        },
+        {
+          "id": "b",
+          "text": "π/2"
+        },
+        {
+          "id": "c",
+          "text": "−π/4"
+        },
+        {
+          "id": "d",
+          "text": "−π/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le point d'affixe −3i est sur l'axe des imaginaires, sous l'origine : l'angle orienté de u⃗ vers OM⃗ mesure −π/2 ✓. L'argument π/2 est celui de 3i (point au-dessus de l'origine) ; π convient aux réels négatifs ; −π/4 est l'argument de 1 − i, un point qui n'est pas sur l'axe des imaginaires.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la forme trigonométrique du nombre complexe z = −2 − 2i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2(cos(π/4) + i sin(π/4))"
+        },
+        {
+          "id": "b",
+          "text": "8(cos(π/4) + i sin(π/4))"
+        },
+        {
+          "id": "c",
+          "text": "2√2(cos(−3π/4) + i sin(−3π/4))"
+        },
+        {
+          "id": "d",
+          "text": "2√2(cos(−5π/4) + i sin(−5π/4))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "|z| = √(4 + 4) = 2√2, cos θ = −2/(2√2) = −√2/2 et sin θ = −√2/2 : le point est dans le troisième quadrant, donc θ = −3π/4 ✓. L'angle π/4 vient de b/a = 1 sans le quadrant ; 8(cos(π/4) + i sin(π/4)) cumule les deux erreurs : la racine carrée oubliée et l'angle lu sur b/a ; l'angle −5π/4 est celui de −2 + 2i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la forme algébrique du nombre (2 e^(i2π/3))² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2 + 2i√3"
+        },
+        {
+          "id": "b",
+          "text": "−2 − 2i√3"
+        },
+        {
+          "id": "c",
+          "text": "−1/2 − i√3/2"
+        },
+        {
+          "id": "d",
+          "text": "2 + 2i√3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(2 e^(i2π/3))² = 4 e^(i4π/3) = 4(−1/2 − i√3/2) = −2 − 2i√3 ✓, car le module se met au carré et l'angle se double ; 4π/3 est dans le troisième quadrant. Le résultat −2 + 2i√3 oublie de doubler l'angle (c'est 4 e^(i2π/3)) ; −1/2 − i√3/2 oublie le module 4 ; 2 + 2i√3 retranche π à 4π/3 au lieu de 2π et prend l'angle π/3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les points A(1 + 2i), B(3 + 3i) et C(−1 + 6i) sont donnés. Que peut-on affirmer du triangle ABC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rectangle en A, avec AC = 2 AB"
+        },
+        {
+          "id": "b",
+          "text": "Rectangle en A, avec AB = 2 AC"
+        },
+        {
+          "id": "c",
+          "text": "Isocèle en A, sans angle droit"
+        },
+        {
+          "id": "d",
+          "text": "A, B et C sont alignés"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les affixes des vecteurs sont z_B − z_A = 2 + i et z_C − z_A = −2 + 4i. Le quotient (−2 + 4i)/(2 + i) = (−2 + 4i)(2 − i)/5 = 10i/5 = 2i : il est imaginaire pur, donc (AB) ⟂ (AC), et son module 2 donne AC/AB = 2, soit AC = 2 AB ✓. Un quotient réel aurait donné des points alignés ; un module 1, un triangle isocèle.",
+      "difficulty": 2
+    }
+  ]
+}

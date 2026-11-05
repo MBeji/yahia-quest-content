@@ -1,0 +1,139 @@
+{
+  "title": "⭐ Exercice : Premiers pas sur la pente",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Soit f(x) = x³. En utilisant l'approximation affine f(2 + h) ≈ f(2) + h f′(2) avec h = 0,01, quelle valeur approchée de (2,01)³ obtient-on ? Donner le résultat au centième.",
+      "answerKey": {
+        "value": 8.12
+      },
+      "explanation": "On a f(2) = 8 et f′(x) = 3x², donc f′(2) = 12. L'approximation affine donne (2,01)³ = f(2 + 0,01) ≈ 8 + 0,01 × 12 = 8,12 ✓ (la valeur exacte est 8,120601, très proche).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur la figure, la droite T est la tangente à la courbe C_f au point A(1 ; 3) et passe aussi par le point B(3 ; −1). Que vaut le nombre dérivé f′(1) ?\n<svg viewBox=\"0 0 300 240\">\n<title>Courbe C_f et sa tangente T au point A(1 ; 3), qui passe aussi par B(3 ; −1)</title>\n<line x1=\"48.75\" y1=\"214\" x2=\"48.75\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"90\" y1=\"214\" x2=\"90\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"172.5\" y1=\"214\" x2=\"172.5\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"213.75\" y1=\"214\" x2=\"213.75\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"255\" y1=\"214\" x2=\"255\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"204\" x2=\"288\" y2=\"204\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"179\" x2=\"288\" y2=\"179\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"129\" x2=\"288\" y2=\"129\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"104\" x2=\"288\" y2=\"104\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"79\" x2=\"288\" y2=\"79\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"54\" x2=\"288\" y2=\"54\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"29\" x2=\"288\" y2=\"29\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"154\" x2=\"288\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"288,154 280,158 280,150\" fill=\"#0f172a\"/><line x1=\"131.25\" y1=\"214\" x2=\"131.25\" y2=\"14\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"131.25,14 135.25,22 127.25,22\" fill=\"#0f172a\"/><line x1=\"48.75\" y1=\"151\" x2=\"48.75\" y2=\"157\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"90\" y1=\"151\" x2=\"90\" y2=\"157\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"172.5\" y1=\"151\" x2=\"172.5\" y2=\"157\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"213.75\" y1=\"151\" x2=\"213.75\" y2=\"157\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"255\" y1=\"151\" x2=\"255\" y2=\"157\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"128.25\" y1=\"204\" x2=\"134.25\" y2=\"204\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"128.25\" y1=\"179\" x2=\"134.25\" y2=\"179\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"128.25\" y1=\"129\" x2=\"134.25\" y2=\"129\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"128.25\" y1=\"104\" x2=\"134.25\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"128.25\" y1=\"79\" x2=\"134.25\" y2=\"79\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"128.25\" y1=\"54\" x2=\"134.25\" y2=\"54\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"128.25\" y1=\"29\" x2=\"134.25\" y2=\"29\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"48.75\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">−2</text><text x=\"90\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">−1</text><text x=\"172.5\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">1</text><text x=\"213.75\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">2</text><text x=\"255\" y=\"169\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">3</text><text x=\"125.25\" y=\"207.5\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">−2</text><text x=\"125.25\" y=\"182.5\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">−1</text><text x=\"125.25\" y=\"132.5\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">1</text><text x=\"125.25\" y=\"107.5\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">2</text><text x=\"125.25\" y=\"82.5\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">3</text><text x=\"125.25\" y=\"57.5\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">4</text><text x=\"125.25\" y=\"32.5\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">5</text><text x=\"284\" y=\"148\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\">x</text><text x=\"139.25\" y=\"22\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"12\">y</text></g><polyline points=\"40.5,175 41.63,171.99 42.77,169.03 43.9,166.1 45.04,163.2 46.17,160.35 47.31,157.53 48.44,154.75 49.58,152.01 50.71,149.31 51.84,146.64 52.98,144.01 54.11,141.42 55.25,138.87 56.38,136.36 57.52,133.88 58.65,131.44 59.78,129.04 60.92,126.68 62.05,124.35 63.19,122.06 64.32,119.81 65.46,117.6 66.59,115.43 67.72,113.29 68.86,111.19 69.99,109.13 71.13,107.11 72.26,105.12 73.4,103.18 74.53,101.27 75.67,99.39 76.8,97.56 77.93,95.76 79.07,94.01 80.2,92.29 81.34,90.6 82.47,88.96 83.61,87.35 84.74,85.78 85.88,84.25 87.01,82.76 88.14,81.3 89.28,79.88 90.41,78.5 91.55,77.16 92.68,75.86 93.82,74.59 94.95,73.36 96.08,72.17 97.22,71.02 98.35,69.9 99.49,68.82 100.62,67.78 101.76,66.78 102.89,65.82 104.03,64.89 105.16,64 106.29,63.15 107.43,62.34 108.56,61.56 109.7,60.83 110.83,60.13 111.97,59.46 113.1,58.84 114.23,58.25 115.37,57.71 116.5,57.2 117.64,56.72 118.77,56.29 119.91,55.89 121.04,55.53 122.18,55.21 123.31,54.93 124.44,54.68 125.58,54.47 126.71,54.3 127.85,54.17 128.98,54.08 130.12,54.02 131.25,54 132.38,54.02 133.52,54.08 134.65,54.17 135.79,54.3 136.92,54.47 138.06,54.68 139.19,54.93 140.33,55.21 141.46,55.53 142.59,55.89 143.73,56.29 144.86,56.72 146,57.2 147.13,57.71 148.27,58.25 149.4,58.84 150.53,59.46 151.67,60.13 152.8,60.83 153.94,61.56 155.07,62.34 156.21,63.15 157.34,64 158.48,64.89 159.61,65.82 160.74,66.78 161.88,67.78 163.01,68.82 164.15,69.9 165.28,71.02 166.42,72.17 167.55,73.36 168.68,74.59 169.82,75.86 170.95,77.16 172.09,78.5 173.22,79.88 174.36,81.3 175.49,82.76 176.63,84.25 177.76,85.78 178.89,87.35 180.03,88.96 181.16,90.6 182.3,92.29 183.43,94.01 184.57,95.76 185.7,97.56 186.83,99.39 187.97,101.27 189.1,103.18 190.24,105.12 191.37,107.11 192.51,109.13 193.64,111.19 194.78,113.29 195.91,115.43 197.04,117.6 198.18,119.81 199.31,122.06 200.45,124.35 201.58,126.68 202.72,129.04 203.85,131.44 204.98,133.88 206.12,136.36 207.25,138.87 208.39,141.42 209.52,144.01 210.66,146.64 211.79,149.31 212.93,152.01 214.06,154.75 215.19,157.53 216.33,160.35 217.46,163.2 218.6,166.1 219.73,169.03 220.87,171.99 222,175\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\"/><line x1=\"118.88\" y1=\"14\" x2=\"275.63\" y2=\"204\" stroke=\"#d97706\" stroke-width=\"2.4\"/><circle cx=\"172.5\" cy=\"79\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><circle cx=\"255\" cy=\"179\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"181.5\" y=\"71\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"11\">A(1 ; 3)</text><text x=\"247\" y=\"195\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">B(3 ; −1)</text><text x=\"65.25\" y=\"110\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"13\">C_f</text><text x=\"279.63\" y=\"201.5\" text-anchor=\"start\" fill=\"#d97706\" font-size=\"13\">T</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2"
+        },
+        {
+          "id": "b",
+          "text": "−1/2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le nombre dérivé f′(1) est la pente de la tangente en A. Elle passe par A(1 ; 3) et B(3 ; −1) : pente = (−1 − 3)/(3 − 1) = −4/2 = −2 ✓. La valeur 3 est l'ordonnée de A, c'est-à-dire f(1), pas f′(1). La valeur −1/2 inverse le rapport (on a divisé les abscisses par les ordonnées). La valeur 2 oublie que la tangente descend.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la dérivée de f(x) = 5x² + 2/x sur ℝ* ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10x − 2/x"
+        },
+        {
+          "id": "b",
+          "text": "10x − 2/x²"
+        },
+        {
+          "id": "c",
+          "text": "10x − 1/x²"
+        },
+        {
+          "id": "d",
+          "text": "10x + 2/x²"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On dérive terme à terme : (5x²)′ = 10x et (2/x)′ = 2 × (−1/x²) = −2/x², donc f′(x) = 10x − 2/x² ✓. La réponse « 10x − 2/x » ne met pas x au carré au dénominateur. La réponse « 10x − 1/x² » oublie le coefficient 2. La réponse « 10x + 2/x² » perd le signe moins de la dérivée de 1/x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur quel ensemble la fonction f(x) = √(2x − 6) est-elle dérivable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; 3["
+        },
+        {
+          "id": "b",
+          "text": "]3 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "[3 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]6 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La racine √u est dérivable là où u > 0 strictement : 2x − 6 > 0 ⟺ x > 3, donc sur ]3 ; +∞[ ✓. L'ensemble [3 ; +∞[ est le domaine de définition : en 3 la dérivée 1/√(2x − 6) n'existe pas (demi-tangente verticale). L'ensemble ]−∞ ; 3[ vient d'une inégalité retournée. L'ensemble ]6 ; +∞[ oublie de diviser 6 par 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = x³ − 9x² + 24x. Quel est son point d'inflexion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2 ; 20)"
+        },
+        {
+          "id": "b",
+          "text": "(3 ; −3)"
+        },
+        {
+          "id": "c",
+          "text": "(3 ; 18)"
+        },
+        {
+          "id": "d",
+          "text": "(4 ; 16)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a f′(x) = 3x² − 18x + 24 et f″(x) = 6x − 18, qui s'annule en x = 3 en changeant de signe. L'ordonnée est f(3) = 27 − 81 + 72 = 18 : le point d'inflexion est (3 ; 18) ✓. Les points (2 ; 20) et (4 ; 16) correspondent aux zéros de f′ (extrema, pas inflexion). Le point (3 ; −3) donne f′(3) = −3 à la place de l'ordonnée f(3).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = −x² + 6x. Sur quel intervalle f est-elle croissante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; 3]"
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; 6]"
+        },
+        {
+          "id": "c",
+          "text": "[0 ; 6]"
+        },
+        {
+          "id": "d",
+          "text": "[3 ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f′(x) = −2x + 6 ≥ 0 ⟺ x ≤ 3 : f est croissante sur ]−∞ ; 3] ✓ (son sommet est en x = 3, où f vaut 9). L'intervalle [3 ; +∞[ lit le signe de f′ à l'envers. L'intervalle ]−∞ ; 6] vient de −x + 6, où le coefficient 2 a été oublié. L'intervalle [0 ; 6] est celui où f est positive, et non celui où elle croît.",
+      "difficulty": 2
+    }
+  ]
+}

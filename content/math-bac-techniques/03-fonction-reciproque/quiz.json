@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Fonction réciproque",
+  "questions": [
+    {
+      "prompt": "Soit f(x) = (x − 3)² définie sur ℝ. Sur lequel de ces intervalles la restriction de f est-elle strictement croissante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; 3]"
+        },
+        {
+          "id": "b",
+          "text": "[1 ; 5]"
+        },
+        {
+          "id": "c",
+          "text": "[3 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]−∞ ; +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a f′(x) = 2(x − 3), positive pour x ≥ 3 : la restriction de f à [3 ; +∞[ est strictement croissante ✓ (f(3) = 0, f(4) = 1, f(5) = 4). L'intervalle ]−∞ ; 3] est celui où f décroît. L'intervalle [1 ; 5] contient le sommet x = 3 : f y décroît puis croît, avec f(1) = f(5) = 4. Sur ]−∞ ; +∞[, la « restriction » est f elle-même, qui n'est pas monotone.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une fonction f est continue et strictement décroissante sur [1 ; +∞[, avec f(1) = 4 et lim x→+∞ f(x) = −1. Quelle est l'image f([1 ; +∞[) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−1 ; 4["
+        },
+        {
+          "id": "b",
+          "text": "]−1 ; 4]"
+        },
+        {
+          "id": "c",
+          "text": "]−∞ ; 4]"
+        },
+        {
+          "id": "d",
+          "text": "[4 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f décroît de f(1) = 4 vers la limite −1, qu'elle n'atteint jamais : f([1 ; +∞[) = ]lim f ; f(1)] = ]−1 ; 4] ✓ (fermé en 4, valeur atteinte en x = 1 ; ouvert en −1, limite jamais atteinte). L'intervalle [−1 ; 4[ inverse les deux crochets : il ferme la limite et ouvre la valeur atteinte. L'intervalle ]−∞ ; 4] suppose que l'image descend sans fin parce que l'intervalle de départ est illimité. L'intervalle [4 ; +∞[ lit f comme croissante.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une fonction f est une bijection d'un intervalle I sur un intervalle J, et f(3) = 10. Quelle égalité est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f⁻¹(3) = 10"
+        },
+        {
+          "id": "b",
+          "text": "f⁻¹(3) = 1/10"
+        },
+        {
+          "id": "c",
+          "text": "f⁻¹(10) = 1/3"
+        },
+        {
+          "id": "d",
+          "text": "f⁻¹(10) = 3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par définition y = f(x) ⟺ x = f⁻¹(y) : de f(3) = 10, on tire f⁻¹(10) = 3 ✓. L'égalité f⁻¹(3) = 10 échange les rôles de x et de y. Les égalités avec 1/10 et 1/3 confondent f⁻¹ avec 1/f : la réciproque ne prend pas l'inverse des nombres, elle remonte de l'image à l'antécédent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un repère orthonormé, le point A(2 ; 7) appartient à la courbe d'une bijection f. Lequel de ces points appartient à la courbe de f⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2 ; 7)"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; −7)"
+        },
+        {
+          "id": "c",
+          "text": "(7 ; 2)"
+        },
+        {
+          "id": "d",
+          "text": "(−7 ; −2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "y = f(x) ⟺ x = f⁻¹(y) : f(2) = 7 donne f⁻¹(7) = 2, donc (7 ; 2) est sur la courbe de f⁻¹, symétrique de A par rapport à la droite y = x ✓. Le point (2 ; 7) est A lui-même : l'échange des coordonnées n'est pas fait. Le point (2 ; −7) est le symétrique de A par rapport à l'axe des abscisses, et (−7 ; −2) son symétrique par rapport à la droite y = −x : aucun n'est le symétrique par rapport à y = x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut 27^(2/3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "243"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par définition x^(p/q) = (x^p)^(1/q) : 27^(2/3) = (27²)^(1/3) = ∛729 = 9 ✓ car 9³ = 729. La valeur 3 est ∛27 : le numérateur 2 de l'exposant est oublié. La valeur 18 lit 2/3 comme un facteur multiplicatif : 27 × 2/3. La valeur 243 est 729/3 : elle divise par 3 au lieu de prendre la racine cubique.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bijection f d'un intervalle I sur un intervalle J est dérivable en 2, avec f(2) = 5 et f′(2) = 4. Que vaut (f⁻¹)′(5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4/25"
+        },
+        {
+          "id": "b",
+          "text": "1/5"
+        },
+        {
+          "id": "c",
+          "text": "1/4"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a x₀ = f⁻¹(5) = 2 et f′(2) = 4 ≠ 0, donc (f⁻¹)′(5) = 1/f′(2) = 1/4 ✓. La valeur 4 est f′(2) elle-même, sans passage à l'inverse. La valeur 1/5 inverse l'image f(2) = 5 au lieu de la dérivée f′(2). La valeur −4/25 est la dérivée de 1/f en 2, soit −f′(2)/f(2)² : elle confond f⁻¹ avec 1/f.",
+      "difficulty": 2
+    }
+  ]
+}

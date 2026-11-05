@@ -1,0 +1,124 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de l'espace",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Les points A(1, 1, 0), B(2, 3, 1), C(0, 2, 3) et D(−1, 0, m) sont coplanaires. Quelle est la valeur du réel m ?",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "On a AB⃗(1, 2, 1), AC⃗(−1, 1, 3) et AD⃗(−2, −1, m). Les quatre points sont coplanaires si det(AB⃗, AC⃗, AD⃗) = 0 : b′c″ − b″c′ = 1×m − (−1)×3 = m + 3, a′c″ − a″c′ = (−1)×m − (−2)×3 = 6 − m et a′b″ − a″b′ = (−1)×(−1) − (−2)×1 = 3, donc det = (m + 3) − 2(6 − m) + 3 = 3m − 6, nul pour m = 2 ✓. Contrôle : AD⃗(−2, −1, 2) = −AB⃗ + AC⃗.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un drone suit la droite D de représentation paramétrique x = 4 + 3λ ; y = −2 − λ ; z = 1 + 2λ. Quel système d'équations de plans définit cette droite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x + 3y + 2 = 0 ; 2x − 3z − 5 = 0"
+        },
+        {
+          "id": "b",
+          "text": "x − 3y − 10 = 0 ; 2x + 3z − 11 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x + 3y + 2 = 0 ; 2x + 3z − 11 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x + 3y − 2 = 0 ; 2x − 3z − 5 = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La première équation donne λ = (x − 4)/3. Alors y = −2 − (x − 4)/3 donne 3y = −6 − x + 4, soit x + 3y + 2 = 0, et z = 1 + 2(x − 4)/3 donne 3z = 3 + 2x − 8, soit 2x − 3z − 5 = 0 ✓. Contrôle avec les points (4, −2, 1) pour λ = 0 et (7, −3, 3) pour λ = 1 : 4 − 6 + 2 = 0, 8 − 3 − 5 = 0, 7 − 9 + 2 = 0 et 14 − 9 − 5 = 0. Écrire λ = (4 − x)/3 donne x − 3y − 10 = 0 et 2x + 3z − 11 = 0, que (7, −3, 3) ne vérifie pas ; garder ce signe pour z seulement donne 2x + 3z − 11 = 0 (avec x + 3y + 2 = 0), que le point (7, −3, 3) ne vérifie pas ; un signe faux sur la constante de la première équation donne x + 3y − 2 = 0, que (4, −2, 1) ne vérifie pas non plus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On donne D : x = 1 + λ ; y = −λ ; z = 2 + 2λ et D′ : x = 5 + 2μ ; y = −1 + μ ; z = 5 − μ. Ces droites sont sécantes : quel est leur point d'intersection ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0, 1, 0)"
+        },
+        {
+          "id": "b",
+          "text": "(2, −1, 4)"
+        },
+        {
+          "id": "c",
+          "text": "(3, −2, 6)"
+        },
+        {
+          "id": "d",
+          "text": "(9, 1, 3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les vecteurs directeurs (1, −1, 2) et (2, 1, −1) ne sont pas colinéaires (1×1 − 2×(−1) = 3 ≠ 0). On résout 1 + λ = 5 + 2μ ; −λ = −1 + μ ; 2 + 2λ = 5 − μ. La deuxième équation donne λ = 1 − μ ; la première devient 2 − μ = 5 + 2μ, donc μ = −1 et λ = 2. La troisième donne 2 + 4 = 6 = 5 + 1 ✓. Le point commun est D(λ = 2) = D′(μ = −1) = (3, −2, 6). Les autres options reportent une valeur dans la mauvaise droite : (9, 1, 3) est D′ pour μ = 2, (0, 1, 0) est D pour λ = −1, et (2, −1, 4) est D pour λ = 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit A(1, 0, −1), B(0, 2, 1) et u⃗(1, 1, −2). Quelle est une équation du plan passant par A et B et dirigé aussi par u⃗ (parallèle à la droite de vecteur directeur u⃗) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x + z − 1 = 0"
+        },
+        {
+          "id": "b",
+          "text": "x + y − 2z − 3 = 0"
+        },
+        {
+          "id": "c",
+          "text": "2x + z + 1 = 0"
+        },
+        {
+          "id": "d",
+          "text": "2x + y + z − 1 = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le plan est dirigé par AB⃗(−1, 2, 2) et u⃗(1, 1, −2), non colinéaires. Avec AM⃗(x − 1, y, z + 1) : b′c″ − b″c′ = 2×(−2) − 1×2 = −6, a′c″ − a″c′ = (−1)×(−2) − 1×2 = 0 et a′b″ − a″b′ = (−1)×1 − 1×2 = −3. Le déterminant vaut −6(x − 1) − 0×y − 3(z + 1) = −6x − 3z + 3 = −3(2x + z − 1), d'où 2x + z − 1 = 0 ✓. Contrôle : A donne 2 − 1 − 1 = 0, B donne 0 + 1 − 1 = 0 et u⃗ vérifie 2×1 + 0×1 + 1×(−2) = 0. Lire u⃗ comme le triplet des coefficients donne x + y − 2z − 3 = 0, que B ne vérifie pas ; les deux autres choix ne passent pas par A et B à la fois.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit P : 2x + y − z + 3 = 0 et D : x = 1 + λ ; y = 2 − λ ; z = mλ, où m est un réel. Pour quelle valeur de m la droite D est-elle strictement parallèle à P ?",
+      "answerKey": {
+        "value": 1
+      },
+      "explanation": "D est parallèle à P si son vecteur directeur (1, −1, m) est un vecteur de P : 2×1 + (−1) − m = 1 − m = 0, donc m = 1. Il reste à écarter que D soit incluse dans P : le point (1, 2, 0) de D donne 2 + 2 − 0 + 3 = 7 ≠ 0, il n'est pas dans P. Pour m = 1, D est donc strictement parallèle à P ✓ ; en reportant, 2(1 + λ) + (2 − λ) − λ + 3 = 7, constante non nulle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit P : x + my + 2z − 1 = 0 et Q : 2x − 4y + 4z + 5 = 0, où m est un réel. Pour quelle valeur de m les plans P et Q sont-ils parallèles, et que sont-ils alors ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = −2, confondus"
+        },
+        {
+          "id": "b",
+          "text": "m = −2, strictement parallèles"
+        },
+        {
+          "id": "c",
+          "text": "m = −4, confondus"
+        },
+        {
+          "id": "d",
+          "text": "m = −4, strictement parallèles"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le triplet (1, m, 2) doit être proportionnel à (2, −4, 4) : le facteur est 1/2 (1 = 2×1/2 et 2 = 4×1/2), donc m = −4×1/2 = −2. Pour être confondus, il faudrait −1 = 5×1/2 = 5/2, ce qui est faux : les plans sont strictement parallèles ✓. Avec m = −4 (le coefficient −4 de Q recopié sans diviser par 2), le triplet (1, −4, 2) n'est pas proportionnel à (2, −4, 4) : les plans sont alors sécants, ni confondus ni strictement parallèles ; « confondus » avec m = −2 oublie de comparer les constantes.",
+      "difficulty": 3
+    }
+  ]
+}

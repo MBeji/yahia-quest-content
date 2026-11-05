@@ -1,0 +1,150 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Calcul intégral",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Que vaut ∫₀^{ln 3} eˣ dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln 3"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une primitive de eˣ est eˣ : ∫₀^{ln 3} eˣ dx = e^{ln 3} − e⁰ = 3 − 1 = 2 ✓. La valeur 3 ne garde que F(b) et oublie de soustraire F(a) = 1. La valeur 4 ajoute F(a). La valeur ln 3 est l'intégrale de la constante 1, non de eˣ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut ∫₁ᵉ (1 + 1/x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "e − 1"
+        },
+        {
+          "id": "c",
+          "text": "e"
+        },
+        {
+          "id": "d",
+          "text": "e + 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une primitive de 1 + 1/x est x + ln x : [x + ln x]₁ᵉ = (e + 1) − (1 + 0) = e ✓. La valeur e − 1 oublie le terme 1/x, qui apporte ln e = 1. La valeur 1 ne garde que ce terme-là. La valeur e + 1 ne soustrait pas F(1).",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "f est continue sur ℝ. Lesquelles de ces égalités sont vraies pour tous réels a, b, c ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "∫ₐᵇ f = ∫ₐᶜ f + ∫_cᵇ f"
+        },
+        {
+          "id": "b",
+          "text": "∫_bᵃ f = −∫ₐᵇ f"
+        },
+        {
+          "id": "c",
+          "text": "∫ₐᵇ (f(x))² dx = (∫ₐᵇ f(x)dx)²"
+        },
+        {
+          "id": "d",
+          "text": "∫ₐᵇ 2f = 2∫ₐᵇ f"
+        },
+        {
+          "id": "e",
+          "text": "|∫ₐᵇ f| = ∫ₐᵇ |f|"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Sont vraies la relation de Chasles, valable même si c sort de [a ; b] ✓, l'échange des bornes qui change le signe ✓, et la linéarité ∫ₐᵇ 2f = 2∫ₐᵇ f ✓. Est fausse l'égalité avec le carré : pour f(x) = x sur [0 ; 1], ∫ x² = 1/3 alors que (∫ x)² = 1/4. Est fausse aussi l'égalité des valeurs absolues : pour f(x) = x − 3 sur [0 ; 4], |−4| = 4 alors que ∫ |x − 3| = 5.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Calculer ∫₀^{ln 2} 4e^{2x} dx.",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "Une primitive de 4e^{2x} est 2e^{2x}, car (2e^{2x})′ = 4e^{2x}. Alors ∫₀^{ln 2} 4e^{2x} dx = 2e^{2 ln 2} − 2e⁰ = 2 × 4 − 2 = 6 ✓, puisque e^{2 ln 2} = (e^{ln 2})² = 4. Oublier le facteur 1/2 de la primitive de e^{2x} conduirait à 12.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On encadre I = ∫₁³ dx/x en utilisant m ≤ 1/x ≤ M sur [1 ; 3]. Quel encadrement est justifié ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3 ≤ I ≤ 1"
+        },
+        {
+          "id": "b",
+          "text": "2/3 ≤ I ≤ 1"
+        },
+        {
+          "id": "c",
+          "text": "2/3 ≤ I ≤ 2"
+        },
+        {
+          "id": "d",
+          "text": "2 ≤ I ≤ 6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur [1 ; 3], 1/3 ≤ 1/x ≤ 1, et la longueur de l'intervalle est 2 : on obtient 2/3 ≤ I ≤ 2 ✓ (en effet I = ln 3 ≈ 1,10). L'encadrement 1/3 ≤ I ≤ 1 oublie de multiplier par la longueur 2, et il exclut ln 3. L'encadrement 2/3 ≤ I ≤ 1 ne l'applique qu'à la borne inférieure. L'encadrement 2 ≤ I ≤ 6 encadre x au lieu de 1/x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut ∫₀¹ x e^{−x} dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2/e − 1"
+        },
+        {
+          "id": "c",
+          "text": "1 − 1/e"
+        },
+        {
+          "id": "d",
+          "text": "1 − 2/e"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On pose v(x) = x et u′(x) = e^{−x}, de primitive u(x) = −e^{−x} : ∫₀¹ x e^{−x} dx = [−x e^{−x}]₀¹ + ∫₀¹ e^{−x} dx = −1/e + (1 − 1/e) = 1 − 2/e ✓. La valeur 2/e − 1 prend e^{−x} pour primitive de e^{−x}, d'où un signe inversé. La valeur 1 − 1/e oublie le terme du crochet. La valeur 1 perd le signe de u(x) = −e^{−x} dans le crochet : 1/e + (1 − 1/e).",
+      "difficulty": 3
+    }
+  ]
+}

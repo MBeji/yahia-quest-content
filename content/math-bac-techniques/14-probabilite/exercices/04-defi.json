@@ -1,0 +1,135 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les maîtres du hasard",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un robot de tri est en service ou en panne chaque jour. S'il est en service un jour, il l'est encore le lendemain avec la probabilité 0,9 ; s'il est en panne un jour, il est en service le lendemain avec la probabilité 0,6. Le jour 1, il est en service. Quelle est la probabilité qu'il soit en service le jour 3 ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.87
+      },
+      "explanation": "Notons Sₖ « le robot est en service le jour k ». Le jour 2, p(S₂) = 0,9 et p(S̅₂) = 0,1. Avec la partition {S₂, S̅₂}, p(S₃) = 0,9 × 0,9 + 0,1 × 0,6 = 0,81 + 0,06 = 0,87 ✓. Contrôle : p(S̅₃) = 0,9 × 0,1 + 0,1 × 0,4 = 0,09 + 0,04 = 0,13, et 0,87 + 0,13 = 1 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un lycée, 50 % des élèves font du sport (A). Parmi les sportifs, 40 % font aussi de la musique (B), et parmi les élèves qui ne font pas de sport, 20 % font de la musique. Quelle est la probabilité qu'un élève choisi au hasard fasse du sport ou de la musique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,5"
+        },
+        {
+          "id": "b",
+          "text": "0,6"
+        },
+        {
+          "id": "c",
+          "text": "0,7"
+        },
+        {
+          "id": "d",
+          "text": "0,8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "p(A ∩ B) = p(A) × p(B/A) = 0,5 × 0,4 = 0,2 ; p(B) = 0,2 + p(A̅) × p(B/A̅) = 0,2 + 0,5 × 0,2 = 0,3 ; p(A ∪ B) = 0,5 + 0,3 − 0,2 = 0,6 ✓. Contrôle par le contraire : p(A̅ ∩ B̅) = 0,5 × 0,8 = 0,4 et 1 − 0,4 = 0,6 ✓. 0,8 oublie de retrancher p(A ∩ B) ; 0,7 = 0,5 + 0,4 − 0,2 prend p(B/A) pour p(B) ; 0,5 ne garde que p(A).",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "On lance un dé équilibré. On considère A « le résultat est pair », B « le résultat est un multiple de 3 », C « le résultat est au moins 5 » et D « le résultat est un nombre premier ». Quelles paires d'événements sont indépendantes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A et D"
+        },
+        {
+          "id": "b",
+          "text": "B et C"
+        },
+        {
+          "id": "c",
+          "text": "C et D"
+        },
+        {
+          "id": "d",
+          "text": "A et B"
+        },
+        {
+          "id": "e",
+          "text": "A et C"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On a p(A) = 1/2, p(B) = 1/3, p(C) = 1/3 (faces 5 et 6) et p(D) = 1/2 (faces 2, 3 et 5). « A et B » : A ∩ B = {6}, 1/6 = 1/2 × 1/3 ✓. « A et C » : A ∩ C = {6}, 1/6 = 1/2 × 1/3 ✓. « C et D » : C ∩ D = {5}, 1/6 = 1/3 × 1/2 ✓. « A et D » : A ∩ D = {2}, 1/6 mais 1/2 × 1/2 = 1/4 ✗. « B et C » : B ∩ C = {6}, 1/6 mais 1/3 × 1/3 = 1/9 ✗. Seul le produit p(X) × p(Y) tranche : partager un résultat ne prouve ni n'exclut l'indépendance.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une urne contient 6 boules rouges et 4 boules noires. On tire simultanément 3 boules. Sachant qu'au moins une boule noire est tirée, quelle est la probabilité d'avoir exactement 1 boule noire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "15/29"
+        },
+        {
+          "id": "c",
+          "text": "3/5"
+        },
+        {
+          "id": "d",
+          "text": "5/8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Soit N « au moins une noire » et E « exactement une noire ». card Ω = C₁₀³ = 120 ; « aucune noire » compte C₆³ = 20 tirages, donc N en compte 100. E est inclus dans N, et E compte C₄¹ × C₆² = 4 × 15 = 60 tirages. Alors p(E/N) = 60/100 = 3/5 ✓. 1/2 = 60/120 est p(E) sans condition ; 15/29 = 60/116 conditionne par « au moins une rouge » (116 tirages) au lieu de « au moins une noire » ; 5/8 = 60/96 oublie, dans N, les 4 tirages à trois noires.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une société de livraison A transporte 40 % des colis, dont 3 % arrivent abîmés ; une société B transporte les 60 % restants, dont 1 % arrivent abîmés. Pour trouver la probabilité qu'un colis abîmé ait été livré par A, un élève écrit : (1) p(A ∩ D) = 0,4 × 0,03 = 0,012. (2) p(D) = 0,012 + 0,6 × 0,01 = 0,018. (3) p(A/D) = p(A ∩ D) / p(A) = 0,012/0,4 = 0,03. (4) Donc 3 % des colis abîmés viennent de A. Quelle est la première étape erronée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "étape (1) : le produit p(A) × p(D/A)"
+        },
+        {
+          "id": "b",
+          "text": "étape (2) : l'addition des deux chemins qui mènent à D"
+        },
+        {
+          "id": "c",
+          "text": "étape (3) : le dénominateur choisi pour p(A/D)"
+        },
+        {
+          "id": "d",
+          "text": "étape (4) : la traduction du résultat en pourcentage"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les étapes (1) et (2) sont justes : 0,4 × 0,03 = 0,012 et p(D) = 0,012 + 0,006 = 0,018. À l'étape (3), l'élève divise par p(A) au lieu de p(D) : il obtient p(D/A) = 0,03, la probabilité qu'un colis de A soit abîmé, et non p(A/D). Le bon calcul est p(A/D) = 0,012/0,018 = 2/3 ✓ : environ 67 % des colis abîmés viennent de A. Dans cette question de chasse à l'erreur, la bonne réponse est l'étape fausse, et (4) n'est que la conséquence de (3).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans cet arbre pondéré, les deux branches issues de A̅ portent des probabilités inconnues. On sait de plus que p(B) = 0,405. Quelle est la probabilité conditionnelle p(B/A̅) ? Donne le résultat sous forme décimale.\n<svg viewBox=\"0 0 260 170\">\n<title>Arbre pondéré : A de probabilité 0,35, puis B avec 0,6 ; Ā de probabilité 0,65, puis B et B̄ avec des probabilités inconnues</title>\n<g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\">\n<path d=\"M18 85.0 L92 45.6\"/>\n<path d=\"M92 45.6 L178 26.0\"/>\n<path d=\"M92 45.6 L178 65.3\"/>\n<path d=\"M18 85.0 L92 124.3\"/>\n<path d=\"M92 124.3 L178 104.7\"/>\n<path d=\"M92 124.3 L178 144.0\"/>\n</g>\n<circle cx=\"18\" cy=\"85.0\" r=\"4.5\" fill=\"#0f172a\"/>\n<circle cx=\"92\" cy=\"45.6\" r=\"4.5\" fill=\"#0f172a\"/>\n<circle cx=\"92\" cy=\"124.3\" r=\"4.5\" fill=\"#0f172a\"/>\n<text x=\"55.0\" y=\"58.3\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,35</text>\n<text x=\"96\" y=\"36.6\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text>\n<circle cx=\"178\" cy=\"26.0\" r=\"4\" fill=\"#0f172a\"/>\n<text x=\"135.0\" y=\"28.8\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,6</text>\n<text x=\"188\" y=\"30.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text>\n<circle cx=\"178\" cy=\"65.3\" r=\"4\" fill=\"#0f172a\"/>\n<text x=\"135.0\" y=\"70.5\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,4</text>\n<text x=\"188\" y=\"69.3\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B̅</text>\n<text x=\"55.0\" y=\"119.7\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,65</text>\n<text x=\"96\" y=\"146.3\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A̅</text>\n<circle cx=\"178\" cy=\"104.7\" r=\"4\" fill=\"#0f172a\"/>\n<text x=\"135.0\" y=\"107.5\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">?</text>\n<text x=\"188\" y=\"108.7\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text>\n<circle cx=\"178\" cy=\"144.0\" r=\"4\" fill=\"#0f172a\"/>\n<text x=\"135.0\" y=\"149.2\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">?</text>\n<text x=\"188\" y=\"148.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B̅</text>\n</svg>",
+      "answerKey": {
+        "value": 0.3
+      },
+      "explanation": "A et A̅ forment une partition : p(B) = p(A) × p(B/A) + p(A̅) × p(B/A̅), soit 0,405 = 0,35 × 0,6 + 0,65 × x = 0,21 + 0,65x. Donc 0,65x = 0,195 et x = 0,195/0,65 = 0,3 ✓. Contrôle : 0,21 + 0,65 × 0,3 = 0,21 + 0,195 = 0,405 ✓, et la branche voisine vaut 1 − 0,3 = 0,7.",
+      "difficulty": 3
+    }
+  ]
+}

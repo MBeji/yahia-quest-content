@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Calcul intégral",
+  "questions": [
+    {
+      "prompt": "Que vaut ∫₁³ 3x² dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−26"
+        },
+        {
+          "id": "b",
+          "text": "26"
+        },
+        {
+          "id": "c",
+          "text": "27"
+        },
+        {
+          "id": "d",
+          "text": "28"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une primitive de 3x² est x³, donc [x³]₁³ = 27 − 1 = 26 ✓. La valeur 27 ne garde que F(3). La valeur 28 ajoute F(1) au lieu de le retrancher. La valeur −26 inverse l'ordre de la soustraction.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "f est continue sur ℝ avec ∫₀² f(x)dx = 5 et ∫₂⁵ f(x)dx = 3. Que vaut ∫₀⁵ f(x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "D'après la relation de Chasles, ∫₀⁵ f = ∫₀² f + ∫₂⁵ f = 5 + 3 = 8 ✓. La valeur 2 soustrait les deux intégrales. La valeur 4 en fait la moyenne. La valeur 15 les multiplie, alors que Chasles s'écrit avec une somme.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "f est continue et impaire sur ℝ, avec ∫₀³ f(x)dx = 4. Que vaut ∫₋₃³ f(x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour une fonction impaire sur un intervalle symétrique, ∫₋₃³ f = 0 : la partie sur [−3 ; 0] vaut −4 et compense la partie sur [0 ; 3] ✓. La valeur 8 serait celle d'une fonction paire, 2 × 4. La valeur 4 ne compte qu'une moitié, et −4 que l'autre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la valeur moyenne de f(x) = x² sur [0 ; 2] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4/3"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "8/3"
+        },
+        {
+          "id": "d",
+          "text": "16/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "∫₀² x² dx = [x³/3]₀² = 8/3, donc μ = (1/2) × 8/3 = 4/3 ✓. La valeur 8/3 oublie de diviser par b − a = 2. La valeur 2 est la moyenne (0 + 4)/2 des valeurs aux bornes, qui ne convient pas ici. La valeur 16/3 multiplie par 2 au lieu de diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut ∫₀¹ x eˣ dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "e − 1"
+        },
+        {
+          "id": "c",
+          "text": "e"
+        },
+        {
+          "id": "d",
+          "text": "2e − 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose v(x) = x et u′(x) = eˣ : ∫₀¹ x eˣ dx = [x eˣ]₀¹ − ∫₀¹ eˣ dx = e − (e − 1) = 1 ✓. La valeur e oublie l'intégrale restante. La valeur e − 1 traite eˣ comme une primitive de x eˣ. La valeur 2e − 1 additionne l'intégrale restante au lieu de la soustraire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'aire, en u.a, de la partie du plan limitée par la droite d'équation y = x − 2, l'axe des abscisses et les droites x = 0 et x = 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La droite passe sous l'axe sur [0 ; 2] et au-dessus sur [2 ; 4] : l'aire est la somme de deux triangles d'aire 2, donc 4 ✓. La valeur 0 est ∫₀⁴ (x − 2)dx, où les deux morceaux se compensent. La valeur 2 ne compte qu'un triangle. La valeur 8 est l'aire du rectangle de côtés 4 et 2.",
+      "difficulty": 2
+    }
+  ]
+}

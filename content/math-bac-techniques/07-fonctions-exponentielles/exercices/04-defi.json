@@ -1,0 +1,150 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des exponentielles",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Sélectionner toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour tous réels a et b, e^(a + b) = eᵃ + eᵇ"
+        },
+        {
+          "id": "b",
+          "text": "L'équation eˣ = −5 n'a aucune solution dans ℝ"
+        },
+        {
+          "id": "c",
+          "text": "Pour tout réel x, eˣ ≥ x + 1"
+        },
+        {
+          "id": "d",
+          "text": "lim x→+∞ x³ e⁻ˣ = +∞"
+        },
+        {
+          "id": "e",
+          "text": "La fonction x ↦ (1/2)ˣ est strictement décroissante sur ℝ"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Sont vraies : eˣ > 0 pour tout réel x, donc eˣ = −5 est impossible ✓ ; la fonction eˣ − x − 1 a pour minimum 0 en x = 0, donc eˣ ≥ x + 1 ✓ ; (1/2)ˣ = e^(−x ln 2) a pour dérivée −ln 2 × (1/2)ˣ < 0 ✓. Sont fausses : e^(a + b) = eᵃ × eᵇ et non une somme (a = b = 0 donne 1 et non 2) ; x³e⁻ˣ = x³/eˣ tend vers 0 par croissance comparée, et non vers +∞.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fonction f définie par f(x) = a e^(kx), où a et k sont des réels, vérifie f(0) = 5 et f(2) = 20. Que vaut f(4) ?",
+      "answerKey": {
+        "value": 80
+      },
+      "explanation": "f(0) = a = 5. Puis f(2) = 5e^(2k) = 20 donne e^(2k) = 4. Alors f(4) = 5e^(4k) = 5 × (e^(2k))² = 5 × 16 = 80 ✓ (on a k = ln 2, donc f(x) = 5 × 2ˣ, et f(4) = 5 × 16).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève résout l'inéquation e^(x²) ≥ e^(3x) et rédige :\nLigne 1 : e^(x²) ≥ e^(3x) ⇔ x² ≥ 3x.\nLigne 2 : on divise par x, d'où x ≥ 3.\nLigne 3 : S = [3 ; +∞[.\nQuelle est l'erreur de cette copie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ligne 1 : l'équivalence e^(x²) ≥ e^(3x) ⇔ x² ≥ 3x est fausse"
+        },
+        {
+          "id": "b",
+          "text": "Ligne 2 : la division par x, dont le signe n'est pas connu"
+        },
+        {
+          "id": "c",
+          "text": "Ligne 3 : l'ensemble devrait s'écrire ]3 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "Aucune : la copie est correcte et S = [3 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'erreur est à la ligne 2. La ligne 1 est correcte, car exp est strictement croissante : e^u ≥ e^v ⇔ u ≥ v. Mais x² ≥ 3x ⇔ x(x − 3) ≥ 0, et le signe de x n'est pas connu : diviser par x fait perdre les solutions x ≤ 0. L'ensemble correct est S = ]−∞ ; 0] ∪ [3 ; +∞[ ; contrôle en x = −1 : e¹ ≥ e⁻³ est vraie, alors que −1 n'est pas dans [3 ; +∞[. La ligne 3 hérite seulement de l'erreur de la ligne 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une fonction f définie par f(x) = (ax + b) e^(−x) vérifie f(0) = 2, et sa courbe admet une tangente horizontale au point d'abscisse 3. Que vaut f(−1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e"
+        },
+        {
+          "id": "b",
+          "text": "2e"
+        },
+        {
+          "id": "c",
+          "text": "5e/2"
+        },
+        {
+          "id": "d",
+          "text": "3e"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(0) = b = 2. Ensuite f′(x) = a e^(−x) − (ax + b) e^(−x) = (a − ax − b) e^(−x). La tangente est horizontale en 3 : f′(3) = (a − 3a − 2) e⁻³ = 0, donc −2a − 2 = 0 et a = −1. Ainsi f(x) = (2 − x) e^(−x) et f(−1) = 3e ✓. La valeur e vient de a = 1 (erreur de signe) ; 2e de a = 0 (on ne garde que le terme a e^(−x) de la dérivée du produit) ; 5e/2 de a = −1/2 (on oublie le signe de la dérivée de e^(−x)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [−2 ; +∞[ par f(x) = e^(x/(x + 2)) pour x > −2 et f(−2) = 0. Que vaut le nombre dérivé à droite de f en −2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "il n'existe pas, car x/(x + 2) n'est pas défini en −2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x > −2, on pose h = x + 2 > 0 : x/(x + 2) = (h − 2)/h = 1 − 2/h. Le taux d'accroissement vaut (f(x) − f(−2))/(x + 2) = e^(1 − 2/h)/h = e × e^(−2/h)/h. Avec X = 2/h → +∞, il s'écrit (e/2) × X e^(−X) = (e/2) × X/e^X, qui tend vers 0 par croissance comparée ✓ : la demi-tangente en (−2 ; 0) est horizontale. La valeur 1 recopie la limite de (eˣ − 1)/x ; +∞ suppose une demi-tangente verticale parce que le dénominateur x + 2 tend vers 0 ; « il n'existe pas » oublie que f(−2) = 0 est posé et que le taux n'utilise x/(x + 2) que pour x > −2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Combien de solutions réelles l'équation eˣ = x + 2 admet-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose g(x) = eˣ − x − 2, de dérivée g′(x) = eˣ − 1 : g décroît sur ]−∞ ; 0], puis croît sur [0 ; +∞[, avec g(0) = −1 < 0. De plus g(x) → +∞ quand x → −∞ (car −x → +∞ et eˣ → 0) et quand x → +∞ (car eˣ l'emporte sur x). Sur chacun des deux intervalles, g est continue, strictement monotone et change de signe : une solution sur ]−∞ ; 0[ et une sur ]0 ; +∞[, soit 2 solutions ✓ (environ −1,84 et 1,15). Le choix 0 invoque eˣ ≥ x + 1, qui ne dit rien de x + 2 ; le choix 1 suppose qu'une droite ne coupe la courbe de exp qu'une fois ; le choix 3 compte une solution de trop : g, strictement monotone de chaque côté de 0, s'annule au plus une fois sur chacun des deux intervalles.",
+      "difficulty": 3
+    }
+  ]
+}

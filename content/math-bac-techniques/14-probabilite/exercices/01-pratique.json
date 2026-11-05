@@ -1,0 +1,124 @@
+{
+  "title": "⭐ Exercice : Premiers calculs de probabilités",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans un collège, 50 % des élèves jouent au football (F), 60 % au basket (B) et 80 % pratiquent au moins l'un des deux sports. Quelle est la probabilité qu'un élève choisi au hasard pratique les deux sports ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.3
+      },
+      "explanation": "De p(F ∪ B) = p(F) + p(B) − p(F ∩ B) on tire p(F ∩ B) = p(F) + p(B) − p(F ∪ B) = 0,5 + 0,6 − 0,8 = 0,3 ✓. Contrôle : « football seul » vaut 0,5 − 0,3 = 0,2, « basket seul » 0,6 − 0,3 = 0,3, et 0,2 + 0,3 + 0,3 = 0,8 ✓.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Au cours d'un tournoi, un joueur gagne un match avec la probabilité 0,18, fait match nul avec la probabilité 0,27 et perd dans tous les autres cas. Quelle est la probabilité qu'il perde ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,45"
+        },
+        {
+          "id": "b",
+          "text": "0,55"
+        },
+        {
+          "id": "c",
+          "text": "0,73"
+        },
+        {
+          "id": "d",
+          "text": "0,82"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Gagner, faire nul et perdre sont incompatibles et couvrent tous les cas : p(perdre) = 1 − (0,18 + 0,27) = 1 − 0,45 = 0,55 ✓. 0,45 est la probabilité de ne pas perdre ; 0,73 = 1 − 0,27 oublie la victoire ; 0,82 = 1 − 0,18 oublie le match nul.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une classe, 60 % des élèves sont des filles et, parmi elles, 35 % font du théâtre. Quelle est la probabilité qu'un élève choisi au hasard soit une fille qui fait du théâtre ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.21
+      },
+      "explanation": "Notons F « l'élève est une fille » et T « l'élève fait du théâtre » : p(F) = 0,6 et p(T/F) = 0,35, car les 35 % se calculent parmi les filles. Alors p(F ∩ T) = p(F) × p(T/F) = 0,6 × 0,35 = 0,21 ✓, soit 21 % de la classe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une roue est divisée en 12 secteurs égaux, numérotés de 1 à 12. Elle s'arrête sur un secteur au hasard. Quelle est la probabilité d'obtenir un multiple de 3 ou un multiple de 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "5/12"
+        },
+        {
+          "id": "c",
+          "text": "1/3"
+        },
+        {
+          "id": "d",
+          "text": "7/12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Multiples de 3 : 3, 6, 9, 12 (4 secteurs) ; multiples de 4 : 4, 8, 12 (3 secteurs) ; le 12 est dans les deux. Alors p = 4/12 + 3/12 − 1/12 = 6/12 = 1/2 ✓ (les secteurs 3, 4, 6, 8, 9 et 12). 7/12 additionne sans retrancher le 12 ; 5/12 oublie le 12 ; 1/3 ne garde que les multiples de 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une boîte, il y a 4 stylos rouges et 3 stylos verts. On prend 2 stylos d'un seul geste. Quelle est la probabilité qu'ils soient tous les deux rouges ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12/49"
+        },
+        {
+          "id": "b",
+          "text": "2/7"
+        },
+        {
+          "id": "c",
+          "text": "16/49"
+        },
+        {
+          "id": "d",
+          "text": "4/7"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le tirage est simultané : card Ω = C₇² = 21 et les cas favorables sont C₄² = 6, donc p = 6/21 = 2/7 ✓. Contrôle en tirages successifs sans remise : 4/7 × 3/6 = 2/7. 16/49 = (4/7)² suppose qu'on remet le premier stylo ; 12/49 = 4/7 × 3/7 correspond à un rouge puis un vert avec remise ; 4/7 est seulement la probabilité que le premier stylo soit rouge.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un groupe de 48 élèves, il y a 30 filles. Parmi elles, 12 font du théâtre, et 6 garçons en font aussi. On choisit un élève au hasard et l'on sait que c'est une fille. Quelle est la probabilité qu'elle fasse du théâtre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "3/8"
+        },
+        {
+          "id": "c",
+          "text": "2/5"
+        },
+        {
+          "id": "d",
+          "text": "2/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On cherche p(T/F) : parmi les 30 filles, 12 font du théâtre, donc p(T/F) = 12/30 = 2/5 ✓. Par la formule : p(T ∩ F) = 12/48 et p(F) = 30/48, dont le quotient est 12/30. 1/4 = 12/48 est p(T ∩ F) ; 3/8 = 18/48 est p(T), garçons et filles confondus ; 2/3 = 12/18 est p(F/T), la probabilité inverse.",
+      "difficulty": 2
+    }
+  ]
+}

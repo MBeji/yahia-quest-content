@@ -1,0 +1,165 @@
+{
+  "title": "⭐ Exercice : Les premiers pas du mobile",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Sachant que ln 2 ≈ 0,693, une valeur approchée de ln(1/4) est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1,386"
+        },
+        {
+          "id": "b",
+          "text": "−0,347"
+        },
+        {
+          "id": "c",
+          "text": "0,173"
+        },
+        {
+          "id": "d",
+          "text": "1,386"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ln(1/4) = −ln 4 = −2 ln 2 ≈ −1,386 ✓, car ln(1/x) = −ln x et ln 4 = ln(2²) = 2 ln 2. La valeur 1,386 oublie le signe ; −0,347 ≈ −(ln 2)/2 divise par 2 au lieu de multiplier par 2 ; 0,173 ≈ (ln 2)/4 traite ln comme une division par 4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La courbe de ln admet au point A(1 ; 0) une tangente T. Quelle est l'équation de T ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 1 − x"
+        },
+        {
+          "id": "b",
+          "text": "y = x"
+        },
+        {
+          "id": "c",
+          "text": "y = x + 1"
+        },
+        {
+          "id": "d",
+          "text": "y = x − 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a ln′(1) = 1/1 = 1 et ln 1 = 0, donc la tangente est y = 1 × (x − 1) + 0 = x − 1 ✓ : elle passe par (1 ; 0). La droite y = x passe par l'origine, qui n'est pas le point de tangence. La droite y = 1 − x a pour pente −1, la dérivée de 1/x en 1 et non celle de ln. La droite y = x + 1 passe par (0 ; 1), alors que la courbe de ln n'a aucun point d'abscisse 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Résoudre dans ]0 ; +∞[ l'inéquation ln x ≥ 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "]0 ; e]"
+        },
+        {
+          "id": "b",
+          "text": "[e ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "[1 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "[1/e ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a 1 = ln e et ln est strictement croissante : ln x ≥ ln e équivaut à x ≥ e, donc S = [e ; +∞[ ✓. L'intervalle [1 ; +∞[ compare x à 1 au lieu de ln x ; ]0 ; e] inverse le sens, alors que ln conserve l'ordre ; [1/e ; +∞[ résout ln x ≥ −1, car ln(1/e) = −1.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la fonction ln sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln est strictement croissante sur ]0 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "ln 0 = 1"
+        },
+        {
+          "id": "c",
+          "text": "ln(1/2) = −ln 2"
+        },
+        {
+          "id": "d",
+          "text": "ln(−2) = −ln 2"
+        },
+        {
+          "id": "e",
+          "text": "ln′(2) = 1/2"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Sont vraies : ln′(x) = 1/x > 0, donc ln est strictement croissante ; ln(1/2) = −ln 2, car ln(1/x) = −ln x ; ln′(2) = 1/2. Sont fausses : ln 0 n'existe pas, car 0 n'est pas dans ]0 ; +∞[ (la valeur 1 est celle de ln e) ; ln(−2) n'existe pas non plus : le signe « − » ne peut pas sortir du logarithme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour x proche de 0, on approche ln(1 + x) par x. Quelle valeur approchée de ln(1,03) obtient-on ainsi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,003"
+        },
+        {
+          "id": "b",
+          "text": "0,03"
+        },
+        {
+          "id": "c",
+          "text": "0,3"
+        },
+        {
+          "id": "d",
+          "text": "1,03"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec x = 0,03, on a 1,03 = 1 + x et ln(1 + x) ≈ x, donc ln(1,03) ≈ 0,03 ✓ (la calculatrice donne 0,0296). La valeur 0,003 divise x par 10 ; 0,3 le multiplie par 10 ; 1,03 recopie l'argument du logarithme, alors que ln 1,03 est proche de ln 1 = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = ln(x² − 2x + 2) sur ℝ. Quelle est f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x² − 2x + 2)/(2x − 2)"
+        },
+        {
+          "id": "b",
+          "text": "(2x − 2)/(x² − 2x + 2)"
+        },
+        {
+          "id": "c",
+          "text": "(2x − 2)/(x² − 2x + 2)²"
+        },
+        {
+          "id": "d",
+          "text": "1/(x² − 2x + 2)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a x² − 2x + 2 = (x − 1)² + 1 > 0, donc f est définie et dérivable sur ℝ. Avec u′(x) = 2x − 2, f′ = u′/u = (2x − 2)/(x² − 2x + 2) ✓. Le quotient inversé u/u′ renverse la formule ; u′/u² est la dérivée de −1/u, pas celle de ln u ; 1/u oublie u′.",
+      "difficulty": 2
+    }
+  ]
+}

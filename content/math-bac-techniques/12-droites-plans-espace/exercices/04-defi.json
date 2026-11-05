@@ -1,0 +1,150 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les maîtres de l'espace",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Un élève étudie D : x = 2 + λ ; y = 1 − λ ; z = 3λ et D′ : x = 3 + 2μ ; y = −μ ; z = 3 + μ. Il rédige : (1) « Les vecteurs directeurs (1, −1, 3) et (2, −1, 1) ne sont pas colinéaires. » (2) « Je pose le même paramètre t pour les deux droites. » (3) « 2 + t = 3 + 2t donne t = −1, puis 1 − t = 2 et −t = 1 : impossible. » (4) « Donc D et D′ sont non coplanaires. » Quelle est sa première erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le test de colinéarité des deux vecteurs directeurs"
+        },
+        {
+          "id": "b",
+          "text": "le choix d'un même paramètre t pour les deux droites"
+        },
+        {
+          "id": "c",
+          "text": "la résolution de 2 + t = 3 + 2t pour trouver t"
+        },
+        {
+          "id": "d",
+          "text": "la conclusion « non coplanaires » de la dernière étape"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les vecteurs (1, −1, 3) et (2, −1, 1) ne sont pas colinéaires (1×(−1) − 2×(−1) = 1 ≠ 0), et 2 + t = 3 + 2t donne bien t = −1 : ces deux étapes sont exactes. L'erreur est le même paramètre pour les deux droites. Avec λ et μ, 2 + λ = 3 + 2μ et 1 − λ = −μ donnent μ = 0 et λ = 1, et la troisième équation 3λ = 3 + μ devient 3 = 3 ✓ : les droites sont sécantes en (3, 0, 3). La conclusion « non coplanaires » est fausse elle aussi, mais elle découle de l'erreur précédente : c'est donc l'étape du paramètre qu'il faut corriger en premier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le cube ABCDEFGH ci-dessous, l'espace est rapporté au repère (A, AB⃗, AD⃗, AE⃗). Laquelle de ces paires de droites n'est pas coplanaire ?\n<svg viewBox=\"0 0 300 230\">\n<title>Cube ABCDEFGH, repère (A, AB, AD, AE)</title>\n<path d=\"M70 190 L122 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/>\n<path d=\"M122 150 L232 150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/>\n<path d=\"M122 150 L122 40\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/>\n<path d=\"M70 190 L180 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M180 190 L232 150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M70 80 L180 80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M180 80 L232 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M232 40 L122 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M122 40 L70 80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M70 190 L70 80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M180 190 L180 80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M232 150 L232 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<circle cx=\"70\" cy=\"190\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"58\" y=\"200\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A</text>\n<circle cx=\"180\" cy=\"190\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"192\" y=\"200\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B</text>\n<circle cx=\"232\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"246\" y=\"154\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">C</text>\n<circle cx=\"122\" cy=\"150\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"110\" y=\"152\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">D</text>\n<circle cx=\"70\" cy=\"80\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"58\" y=\"76\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">E</text>\n<circle cx=\"180\" cy=\"80\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"168\" y=\"74\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">F</text>\n<circle cx=\"232\" cy=\"40\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"244\" y=\"34\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">G</text>\n<circle cx=\"122\" cy=\"40\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"110\" y=\"34\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">H</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AC) et (FH)"
+        },
+        {
+          "id": "b",
+          "text": "(AB) et (GH)"
+        },
+        {
+          "id": "c",
+          "text": "(AF) et (BE)"
+        },
+        {
+          "id": "d",
+          "text": "(AG) et (BH)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans le repère (A, AB⃗, AD⃗, AE⃗), A(0, 0, 0), C(1, 1, 0), F(1, 0, 1) et H(0, 1, 1). Les directions AC⃗(1, 1, 0) et FH⃗(−1, 1, 0) ne sont pas colinéaires (1×1 − (−1)×1 = 2 ≠ 0), et un point commun demanderait z = 0 sur (AC) et z = 1 sur (FH) : il n'y en a pas, donc (AC) et (FH) sont non coplanaires ✓. Les droites (AG) et (BH) se coupent au centre du cube, (AB) et (GH) sont parallèles, et (AF) et (BE) se coupent au centre de la face ABFE : toutes trois sont coplanaires.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Cocher toutes les affirmations exactes sur les plans et les droites.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si trois plans sont deux à deux sécants, ils ont toujours un point commun"
+        },
+        {
+          "id": "b",
+          "text": "Si P₁ ∩ P₂ est une droite parallèle à P₃ sans être incluse dans P₃, les trois plans n'ont aucun point commun"
+        },
+        {
+          "id": "c",
+          "text": "Si P₁ et P₂ sont sécants et si une équation de P₃ est la somme de celles de P₁ et P₂, les trois plans contiennent une même droite"
+        },
+        {
+          "id": "d",
+          "text": "Une droite dont le vecteur directeur est un vecteur du plan P est incluse dans P"
+        },
+        {
+          "id": "e",
+          "text": "Deux droites dont les vecteurs directeurs ne sont pas colinéaires et qui ont un point commun sont coplanaires"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Sont vraies : la droite P₁ ∩ P₂ parallèle à P₃ sans y être incluse n'a aucun point dans P₃, donc les trois plans n'ont rien en commun ✓ ; une équation somme de deux autres est vérifiée par tous les points de P₁ ∩ P₂, qui est une droite ✓ ; deux droites sécantes sont coplanaires ✓. Est fausse « trois plans deux à deux sécants ont toujours un point commun » : trois plans deux à deux sécants peuvent former un prisme sans point commun, comme P₁ : x + y + z − 6 = 0, P₂ : 2x − y + z − 3 = 0 et 3x + 2z − 10 = 0. Est fausse « une droite dont le vecteur directeur est un vecteur de P est incluse dans P » : la droite est bien parallèle au plan, mais elle peut lui être strictement parallèle, donc hors du plan.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le repère (A, AB⃗, AD⃗, AE⃗) d'un cube ABCDEFGH, on a B(1, 0, 0), D(0, 1, 0), E(0, 0, 1), C(1, 1, 0) et G(1, 1, 1). En quel point le plan (BDG) coupe-t-il la droite (EC) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0, 0, 1)"
+        },
+        {
+          "id": "b",
+          "text": "(1/3, 1/3, 2/3)"
+        },
+        {
+          "id": "c",
+          "text": "(2/3, 2/3, 1/3)"
+        },
+        {
+          "id": "d",
+          "text": "(1/2, 1/2, 1/2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "BD⃗(−1, 1, 0) et BG⃗(0, 1, 1) ne sont pas colinéaires. Avec BM⃗(x − 1, y, z) : b′c″ − b″c′ = 1×1 − 1×0 = 1, a′c″ − a″c′ = (−1)×1 − 0×0 = −1 et a′b″ − a″b′ = (−1)×1 − 0×1 = −1, donc det = (x − 1) + y − z = 0, soit x + y − z − 1 = 0 (D donne 0 + 1 − 0 − 1 = 0 et G donne 1 + 1 − 1 − 1 = 0 ✓). La droite (EC) est x = t ; y = t ; z = 1 − t : t + t − (1 − t) − 1 = 3t − 2 = 0, donc t = 2/3 et le point est (2/3, 2/3, 1/3) ✓. Oublier la constante −1 donne t = 1/3, changer le signe de z donne E(0, 0, 1), et le centre (1/2, 1/2, 1/2) n'est pas sur le plan : 1/2 + 1/2 − 1/2 − 1 ≠ 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit P : x + y + z − 1 = 0, Q : x + 2y − z − 2 = 0 et R : 2x + 3y + mz − k = 0, où m et k sont des réels. Pour quelles valeurs de m et de k les trois plans ont-ils une droite commune ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = 0 et k = 3"
+        },
+        {
+          "id": "b",
+          "text": "m = 0 et k = 4"
+        },
+        {
+          "id": "c",
+          "text": "m = 1 et k = 3"
+        },
+        {
+          "id": "d",
+          "text": "m = 1 et k = 4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La somme des équations de P et de Q donne 2x + 3y + 0×z − 3 = 0. Si R est cette équation, c'est-à-dire pour m = 0 et k = 3, elle est une conséquence des deux autres et les trois plans contiennent la droite P ∩ Q ✓. Pour m = 0 et k = 4, R contredit P + Q : aucun point commun, bien que les plans soient deux à deux sécants. Pour m ≠ 0, il y a un seul point commun : pour m = 1 et k = 3, R − (P + Q) donne z = 0, puis le point (0, 1, 0) ; pour m = 1 et k = 4, elle donne z = 1, puis le point (−3, 3, 1).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est rapporté au repère (B, BC⃗, BD⃗, BA⃗) d'un tétraèdre ABCD : B(0, 0, 0), C(1, 0, 0), D(0, 1, 0) et A(0, 0, 1). Les points P(0, 0, 1/2), Q(1/4, 0, 3/4) et R(1/2, 1/2, 0) sont sur les arêtes [BA], [AC] et [CD]. Le plan (PQR) coupe la droite (BD) en S. Quelle est l'ordonnée de S, en écriture décimale ?",
+      "answerKey": {
+        "value": 0.25
+      },
+      "explanation": "PQ⃗(1/4, 0, 1/4) et PR⃗(1/2, 1/2, −1/2) ne sont pas colinéaires ; en les multipliant par 4 et par 2, on prend u⃗(1, 0, 1) et v⃗(1, 1, −1). Avec PM⃗(x, y, z − 1/2) : b′c″ − b″c′ = 0×(−1) − 1×1 = −1, a′c″ − a″c′ = 1×(−1) − 1×1 = −2 et a′b″ − a″b′ = 1×1 − 1×0 = 1, donc det = −x + 2y + (z − 1/2) = 0, soit x − 2y − z + 1/2 = 0. La droite (BD) est x = 0 et z = 0 : −2y + 1/2 = 0 donne y = 1/4 = 0,25 ✓. Contrôle : P donne 0 − 0 − 1/2 + 1/2 = 0, Q donne 1/4 − 0 − 3/4 + 1/2 = 0 et R donne 1/2 − 1 − 0 + 1/2 = 0.",
+      "difficulty": 3
+    }
+  ]
+}

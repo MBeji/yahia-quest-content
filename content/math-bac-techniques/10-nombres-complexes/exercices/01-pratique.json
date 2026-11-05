@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas dans le plan complexe",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Écrire sous forme algébrique le produit (3 + 2i)(1 − 4i).",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5 − 10i"
+        },
+        {
+          "id": "b",
+          "text": "3 − 8i"
+        },
+        {
+          "id": "c",
+          "text": "11 − 14i"
+        },
+        {
+          "id": "d",
+          "text": "11 − 10i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(3 + 2i)(1 − 4i) = 3 − 12i + 2i − 8i² = 3 − 10i + 8 = 11 − 10i ✓, car i² = −1. Le résultat −5 − 10i prend i² = 1 ; 3 − 8i multiplie les parties réelles entre elles et les parties imaginaires entre elles ; 11 − 14i se trompe de signe sur le terme 2i × 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut i²⁰²⁷ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−i"
+        },
+        {
+          "id": "b",
+          "text": "−1"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les puissances de i se répètent de 4 en 4. Comme 2027 = 4 × 506 + 3, i²⁰²⁷ = i³ = i² × i = −i ✓. Le résultat i correspond au reste 1, −1 au reste 2, et 1 au reste 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit z = 5 − 12i. Que vaut |z̄| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        },
+        {
+          "id": "d",
+          "text": "169"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le conjugué z̄ = 5 + 12i a le même module que z : |z̄| = |z| = √(25 + 144) = √169 = 13 ✓. Le résultat 17 additionne 5 et 12 ; 7 est la valeur absolue de 5 − 12 ; 169 oublie la racine carrée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le point M a pour affixe 3 + 3i. Quelle est une mesure de l'angle orienté (u⃗, OM⃗) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3π/4"
+        },
+        {
+          "id": "b",
+          "text": "π/3"
+        },
+        {
+          "id": "c",
+          "text": "π/4"
+        },
+        {
+          "id": "d",
+          "text": "−π/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "|z| = √(9 + 9) = 3√2, cos θ = 3/(3√2) = √2/2 et sin θ = √2/2 : le point est dans le premier quadrant et θ = π/4 ✓. Les angles 3π/4 et −π/4 ont un cosinus ou un sinus de mauvais signe ; π/3 correspond à b/a = √3, non à 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la forme algébrique du nombre 6(cos(3π/4) + i sin(3π/4)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6√2 + 6i√2"
+        },
+        {
+          "id": "b",
+          "text": "3√2 − 3i√2"
+        },
+        {
+          "id": "c",
+          "text": "−3√2 + 3i√2"
+        },
+        {
+          "id": "d",
+          "text": "3√2 + 3i√2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "cos(3π/4) = −√2/2 et sin(3π/4) = √2/2, donc 6(−√2/2 + i√2/2) = −3√2 + 3i√2 ✓. Le résultat −6√2 + 6i√2 oublie de diviser par 2 ; 3√2 + 3i√2 est le point de l'angle π/4 ; 3√2 − 3i√2 change les deux signes : c'est le point de l'angle −π/4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'écriture exponentielle du nombre complexe z = 2 − 2i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2 e^(iπ/4)"
+        },
+        {
+          "id": "b",
+          "text": "4 e^(iπ/4)"
+        },
+        {
+          "id": "c",
+          "text": "2√2 e^(i3π/4)"
+        },
+        {
+          "id": "d",
+          "text": "2√2 e^(−iπ/4)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "|z| = √(4 + 4) = 2√2, cos θ = 2/(2√2) = √2/2 et sin θ = −√2/2 : le point est dans le quatrième quadrant, donc θ = −π/4 et z = 2√2 e^(−iπ/4) ✓. L'angle π/4 oublie le signe négatif de la partie imaginaire ; 3π/4 est l'argument de −2 + 2i ; 4 e^(iπ/4) additionne 2 et 2 pour le module et oublie en plus le signe de l'angle.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Dérivabilité",
+  "questions": [
+    {
+      "prompt": "Une fonction f vérifie f(2) = −4 et f′(2) = −3. Quelle est l'équation de la tangente à sa courbe au point d'abscisse 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = −3x + 2"
+        },
+        {
+          "id": "b",
+          "text": "y = −3x − 10"
+        },
+        {
+          "id": "c",
+          "text": "y = −3x − 4"
+        },
+        {
+          "id": "d",
+          "text": "y = −4x + 5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La tangente en a est y = f′(a)(x − a) + f(a) = −3(x − 2) − 4 = −3x + 2 ✓ (contrôle : en x = 2 on retrouve −6 + 2 = −4 = f(2)). L'équation « y = −3x − 4 » oublie de décaler x de a : elle passe par (0 ; −4) et non par (2 ; −4). L'équation « y = −3x − 10 » écrit x + 2 au lieu de x − 2. L'équation « y = −4x + 5 » échange les rôles de f(2) et de f′(2).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une fonction f est définie autour de 1 et vérifie f′g(1) = 2 et f′d(1) = 5. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est dérivable en 1 et f′(1) = 3,5, la moyenne des deux nombres dérivés"
+        },
+        {
+          "id": "b",
+          "text": "f est dérivable en 1 et f′(1) = 5, la valeur du côté où l'on avance"
+        },
+        {
+          "id": "c",
+          "text": "f n'est pas continue en 1 : la courbe fait un saut"
+        },
+        {
+          "id": "d",
+          "text": "f n'est pas dérivable en 1 : les deux nombres dérivés sont différents"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f est dérivable en 1 si et seulement si f′g(1) = f′d(1). Ici 2 ≠ 5, donc f n'est pas dérivable en 1 : la courbe a un point anguleux, avec deux demi-tangentes de pentes 2 et 5 ✓. Une moyenne ou la valeur d'un seul côté ne définit aucun nombre dérivé. Et l'existence de deux nombres dérivés finis impose la continuité : la courbe ne fait donc pas de saut, elle forme une pointe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la dérivée de f(x) = x³ + √x sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3x + 1/(2√x)"
+        },
+        {
+          "id": "b",
+          "text": "3x² + 1/(2√x)"
+        },
+        {
+          "id": "c",
+          "text": "3x² + 1/(2x)"
+        },
+        {
+          "id": "d",
+          "text": "3x² + 1/(2x√x)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On dérive terme à terme : (x³)′ = 3x² et (√x)′ = 1/(2√x), donc f′(x) = 3x² + 1/(2√x) ✓. La réponse « 3x + 1/(2√x) » baisse l'exposant sans le multiplier par 3. La réponse « 3x² + 1/(2x) » perd la racine au dénominateur. La réponse « 3x² + 1/(2x√x) » met x√x au dénominateur au lieu de √x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la dérivée de f(x) = (2x + 1)³ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2(2x + 1)²"
+        },
+        {
+          "id": "b",
+          "text": "3(2x + 1)²"
+        },
+        {
+          "id": "c",
+          "text": "6(2x + 1)²"
+        },
+        {
+          "id": "d",
+          "text": "6(2x + 1)³"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C'est une composée : (uⁿ)′ = nu′uⁿ⁻¹ avec u = 2x + 1, u′ = 2 et n = 3, donc f′(x) = 3 × 2 × (2x + 1)² = 6(2x + 1)² ✓ (en x = 0 : f′(0) = 6, et le développement 8x³ + 12x² + 6x + 1 donne bien 6). Le résultat « 3(2x + 1)² » oublie la dérivée de l'intérieur. Le résultat « 6(2x + 1)³ » ne baisse pas l'exposant. Le résultat « 2(2x + 1)² » oublie le facteur n = 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x³ − 12x² + 5. Quelle est l'abscisse de son point d'inflexion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −4"
+        },
+        {
+          "id": "b",
+          "text": "x = 0"
+        },
+        {
+          "id": "c",
+          "text": "x = 4"
+        },
+        {
+          "id": "d",
+          "text": "x = 8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On calcule f′(x) = 3x² − 24x puis f″(x) = 6x − 24, qui s'annule en x = 4 en changeant de signe (fonction affine de pente 6 > 0) : l'inflexion a pour abscisse 4 ✓. Les abscisses 0 et 8 annulent f′(x) = 3x(x − 8) et non f″ : ce sont des extrema, pas des inflexions. L'abscisse −4 vient d'une erreur de signe en résolvant 6x − 24 = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe ci-dessous est celle de la dérivée f′ d'une fonction f dérivable sur ℝ. Que peut-on dire de f en x = 4 ?\n<svg viewBox=\"0 0 320 240\">\n<title>Courbe de la fonction dérivée f′ : parabole qui coupe l'axe des abscisses en −2 et en 4</title>\n<line x1=\"73.39\" y1=\"214\" x2=\"73.39\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"166\" y1=\"214\" x2=\"166\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"258.61\" y1=\"214\" x2=\"258.61\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"188.47\" x2=\"308\" y2=\"188.47\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"154.43\" x2=\"308\" y2=\"154.43\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"86.34\" x2=\"308\" y2=\"86.34\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"52.3\" x2=\"308\" y2=\"52.3\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"24\" y1=\"120.38\" x2=\"308\" y2=\"120.38\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"308,120.38 300,124.38 300,116.38\" fill=\"#0f172a\"/><line x1=\"135.13\" y1=\"214\" x2=\"135.13\" y2=\"14\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"135.13,14 139.13,22 131.13,22\" fill=\"#0f172a\"/><line x1=\"73.39\" y1=\"117.38\" x2=\"73.39\" y2=\"123.38\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"166\" y1=\"117.38\" x2=\"166\" y2=\"123.38\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"258.61\" y1=\"117.38\" x2=\"258.61\" y2=\"123.38\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"132.13\" y1=\"188.47\" x2=\"138.13\" y2=\"188.47\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"132.13\" y1=\"154.43\" x2=\"138.13\" y2=\"154.43\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"132.13\" y1=\"86.34\" x2=\"138.13\" y2=\"86.34\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"132.13\" y1=\"52.3\" x2=\"138.13\" y2=\"52.3\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"73.39\" y=\"135.38\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">−2</text><text x=\"166\" y=\"135.38\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">1</text><text x=\"258.61\" y=\"135.38\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">4</text><text x=\"129.13\" y=\"191.97\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">−8</text><text x=\"129.13\" y=\"157.93\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">−4</text><text x=\"129.13\" y=\"89.84\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">4</text><text x=\"129.13\" y=\"55.8\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">8</text><text x=\"304\" y=\"114.38\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\">x</text><text x=\"143.13\" y=\"22\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"12\">y</text></g><polyline points=\"27.09,24.64 28.82,28.92 30.56,33.15 32.3,37.32 34.03,41.44 35.77,45.51 37.51,49.52 39.24,53.48 40.98,57.38 42.71,61.23 44.45,65.03 46.19,68.77 47.92,72.46 49.66,76.1 51.4,79.68 53.13,83.21 54.87,86.68 56.61,90.1 58.34,93.47 60.08,96.78 61.82,100.04 63.55,103.24 65.29,106.39 67.02,109.49 68.76,112.53 70.5,115.52 72.23,118.46 73.97,121.34 75.71,124.16 77.44,126.94 79.18,129.66 80.92,132.32 82.65,134.94 84.39,137.49 86.13,140 87.86,142.45 89.6,144.85 91.33,147.19 93.07,149.48 94.81,151.71 96.54,153.89 98.28,156.02 100.02,158.09 101.75,160.11 103.49,162.08 105.23,163.99 106.96,165.85 108.7,167.65 110.43,169.4 112.17,171.1 113.91,172.74 115.64,174.33 117.38,175.87 119.12,177.35 120.85,178.78 122.59,180.15 124.33,181.47 126.06,182.73 127.8,183.95 129.54,185.1 131.27,186.21 133.01,187.26 134.74,188.25 136.48,189.2 138.22,190.09 139.95,190.92 141.69,191.7 143.43,192.43 145.16,193.1 146.9,193.72 148.64,194.29 150.37,194.8 152.11,195.26 153.85,195.66 155.58,196.01 157.32,196.31 159.05,196.55 160.79,196.74 162.53,196.87 164.26,196.95 166,196.98 167.74,196.95 169.47,196.87 171.21,196.74 172.95,196.55 174.68,196.31 176.42,196.01 178.15,195.66 179.89,195.26 181.63,194.8 183.36,194.29 185.1,193.72 186.84,193.1 188.57,192.43 190.31,191.7 192.05,190.92 193.78,190.09 195.52,189.2 197.26,188.25 198.99,187.26 200.73,186.21 202.46,185.1 204.2,183.95 205.94,182.73 207.67,181.47 209.41,180.15 211.15,178.78 212.88,177.35 214.62,175.87 216.36,174.33 218.09,172.74 219.83,171.1 221.57,169.4 223.3,167.65 225.04,165.85 226.77,163.99 228.51,162.08 230.25,160.11 231.98,158.09 233.72,156.02 235.46,153.89 237.19,151.71 238.93,149.48 240.67,147.19 242.4,144.85 244.14,142.45 245.88,140 247.61,137.49 249.35,134.94 251.08,132.32 252.82,129.66 254.56,126.94 256.29,124.16 258.03,121.34 259.77,118.46 261.5,115.52 263.24,112.53 264.98,109.49 266.71,106.39 268.45,103.24 270.18,100.04 271.92,96.78 273.66,93.47 275.39,90.1 277.13,86.68 278.87,83.21 280.6,79.68 282.34,76.1 284.08,72.46 285.81,68.77 287.55,65.03 289.29,61.23 291.02,57.38 292.76,53.48 294.49,49.52 296.23,45.51 297.97,41.44 299.7,37.32 301.44,33.15 303.18,28.92 304.91,24.64\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\"/><circle cx=\"73.39\" cy=\"120.38\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><circle cx=\"258.61\" cy=\"120.38\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"303.37\" y=\"42.45\" text-anchor=\"end\" fill=\"#0f6e56\" font-size=\"11\">courbe de f′</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f admet un maximum local en x = 4"
+        },
+        {
+          "id": "b",
+          "text": "f admet un minimum local en x = 4"
+        },
+        {
+          "id": "c",
+          "text": "f admet un minimum local en x = 1"
+        },
+        {
+          "id": "d",
+          "text": "f n'admet aucun extremum local en x = 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La courbe de f′ coupe l'axe des abscisses en x = 4 en passant du dessous (f′ < 0) au dessus (f′ > 0) : f′ s'annule en changeant de signe de − à +, donc f décroît puis croît et admet un minimum local en 4 ✓. Un maximum demanderait le passage de + à −, comme en x = −2. En x = 1, f′ vaut −9, il n'y a donc ni tangente horizontale ni extremum : c'est le sommet de la courbe de f′, pas celui de f. Enfin f′(4) = 0 avec changement de signe interdit de conclure à l'absence d'extremum.",
+      "difficulty": 2
+    }
+  ]
+}

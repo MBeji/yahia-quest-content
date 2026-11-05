@@ -1,0 +1,139 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du hasard",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Dans une classe de 9 élèves (6 filles et 3 garçons), on tire au sort 3 délégués. Quelle est la probabilité qu'il y ait au moins un garçon parmi eux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5/21"
+        },
+        {
+          "id": "b",
+          "text": "15/28"
+        },
+        {
+          "id": "c",
+          "text": "19/27"
+        },
+        {
+          "id": "d",
+          "text": "16/21"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les 3 délégués forment un tirage simultané. Le contraire de « au moins un garçon » est « aucun garçon », c'est-à-dire 3 filles : p = C₆³ / C₉³ = 20/84 = 5/21. Donc p(au moins un garçon) = 1 − 5/21 = 16/21 ✓. 5/21 est la probabilité du contraire ; 15/28 = C₃¹ × C₆² / C₉³ = 45/84 est celle d'avoir exactement un garçon ; 19/27 = 1 − (2/3)³ supposerait qu'un élève peut être tiré plusieurs fois.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On lance deux dés équilibrés. Sachant que la somme des résultats est 6, quelle est la probabilité que les deux dés aient donné des nombres différents ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/9"
+        },
+        {
+          "id": "b",
+          "text": "5/36"
+        },
+        {
+          "id": "c",
+          "text": "4/5"
+        },
+        {
+          "id": "d",
+          "text": "5/6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Somme 6 : (1 ; 5), (2 ; 4), (3 ; 3), (4 ; 2), (5 ; 1), donc p(S) = 5/36. Les deux dés sont différents pour tous ces couples sauf (3 ; 3) : p(A ∩ S) = 4/36. Alors p(A/S) = (4/36)/(5/36) = 4/5 ✓. 5/6 = 30/36 est p(A) sans condition ; 1/9 = 4/36 est p(A ∩ S) non divisé par p(S) ; 5/36 est p(S).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un sac contient 5 jetons rouges, 3 jetons blancs et 2 jetons verts. On tire successivement et sans remise trois jetons. Quelle est la probabilité d'obtenir, dans cet ordre, un rouge, un blanc puis un vert ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/100"
+        },
+        {
+          "id": "b",
+          "text": "1/24"
+        },
+        {
+          "id": "c",
+          "text": "1/6"
+        },
+        {
+          "id": "d",
+          "text": "1/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "p(R₁) = 5/10 ; après un rouge, il reste 3 blancs sur 9 jetons, donc p(B₂/R₁) = 3/9 ; après un rouge et un blanc, il reste 2 verts sur 8 jetons, donc p(V₃/R₁ ∩ B₂) = 2/8. Les probabilités composées donnent 5/10 × 3/9 × 2/8 = 30/720 = 1/24 ✓. 3/100 = 0,5 × 0,3 × 0,2 suppose des tirages avec remise ; 1/6 = 5/10 × 3/9 oublie le troisième tirage ; 1/4 est la probabilité d'obtenir un jeton de chaque couleur dans un ordre quelconque.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On lance un dé équilibré. S'il donne 1 ou 2, on tire une boule dans l'urne U₁ (3 rouges, 1 verte) ; sinon on tire une boule dans l'urne U₂ (1 rouge, 3 vertes). Quelle est la probabilité d'obtenir une boule rouge ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5/12"
+        },
+        {
+          "id": "b",
+          "text": "1/4"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "7/12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "U₁ (résultat 1 ou 2) a pour probabilité 2/6 = 1/3 et U₂ a pour probabilité 2/3 : ils forment une partition. p(R) = 1/3 × 3/4 + 2/3 × 1/4 = 1/4 + 1/6 = 5/12 ✓. 1/2 est la moyenne simple de 3/4 et 1/4, qui oublie que U₂ est deux fois plus probable ; 7/12 inverse les poids (2/3 sur U₁) ; 1/4 ne garde que le chemin passant par U₁.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On dispose de deux pièces d'apparence identique : l'une est équilibrée, l'autre donne pile avec la probabilité 3/4. On choisit une pièce au hasard (chacune avec la probabilité 1/2), on la lance et on obtient pile. Quelle est la probabilité que ce soit la pièce truquée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/8"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "3/5"
+        },
+        {
+          "id": "d",
+          "text": "3/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Soit T « la pièce est truquée » et P « on obtient pile ». p(T ∩ P) = 1/2 × 3/4 = 3/8 et p(P) = 3/8 + 1/2 × 1/2 = 3/8 + 2/8 = 5/8. La formule de Bayes donne p(T/P) = (3/8)/(5/8) = 3/5 ✓. 3/4 est p(P/T), la probabilité inverse ; 3/8 est p(T ∩ P) non divisé par p(P) ; 1/2 est la probabilité avant le lancer, qui ignore l'information.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On choisit l'urne U₁ avec la probabilité 0,4 et l'urne U₂ avec la probabilité 0,6, puis on tire une boule dans l'urne choisie. La probabilité de tirer une boule rouge dans U₁ vaut 0,5 et la probabilité globale de tirer une boule rouge vaut 0,41. Quelle est la probabilité de tirer une boule rouge dans U₂ ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.35
+      },
+      "explanation": "Notons x = p(R/U₂). U₁ et U₂ forment une partition : 0,41 = 0,4 × 0,5 + 0,6 × x = 0,2 + 0,6x. Donc 0,6x = 0,21 et x = 0,21/0,6 = 0,35 ✓. Contrôle : 0,2 + 0,6 × 0,35 = 0,2 + 0,21 = 0,41 ✓.",
+      "difficulty": 3
+    }
+  ]
+}

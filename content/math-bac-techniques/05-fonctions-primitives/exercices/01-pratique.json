@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Les premières remontées",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Laquelle de ces fonctions admet x ↦ x⁴ + 3x pour primitive sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4x³ + 3"
+        },
+        {
+          "id": "b",
+          "text": "x⁵/5 + 3x²/2"
+        },
+        {
+          "id": "c",
+          "text": "4x³"
+        },
+        {
+          "id": "d",
+          "text": "4x³ + 3x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si F est une primitive de f, alors f = F′. Ici f(x) = (x⁴ + 3x)′ = 4x³ + 3 ✓. La fonction x⁵/5 + 3x²/2 est une primitive de F : on a primitivé au lieu de dériver. La fonction 4x³ oublie que la dérivée de 3x est 3. La fonction 4x³ + 3x dérive x⁴ mais laisse 3x inchangé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est l'ensemble de toutes les primitives de f(x) = 12 sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{12 + c ; c ∈ ℝ}"
+        },
+        {
+          "id": "b",
+          "text": "{12x + c ; c ∈ ℝ}"
+        },
+        {
+          "id": "c",
+          "text": "{6x² + c ; c ∈ ℝ}"
+        },
+        {
+          "id": "d",
+          "text": "{12x}"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a (12x)′ = 12, donc 12x est une primitive, et les primitives sont les 12x + c, avec c réel ✓. L'ensemble {12 + c} est formé de constantes, de dérivée nulle. L'ensemble {6x² + c} applique à 12 la règle de x, de primitive x²/2 : sa dérivée est 12x. L'ensemble {12x} oublie la constante c, donc ne contient qu'une primitive.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une primitive de f(x) = 10x⁴ sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x⁵"
+        },
+        {
+          "id": "b",
+          "text": "10x⁵"
+        },
+        {
+          "id": "c",
+          "text": "2x⁵"
+        },
+        {
+          "id": "d",
+          "text": "40x³"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On primitive x⁴ en x⁵/5, donc 10x⁴ a pour primitive 10 × x⁵/5 = 2x⁵ ✓ (dérivée : 10x⁴). La fonction x⁵ oublie le facteur 10. La fonction 10x⁵ oublie la division par 5. La fonction 40x³ est la dérivée de f : le sens est inversé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une primitive de f(x) = sin x + 2 sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "cos x + 2x"
+        },
+        {
+          "id": "b",
+          "text": "−cos x + 2"
+        },
+        {
+          "id": "c",
+          "text": "−cos x + x²"
+        },
+        {
+          "id": "d",
+          "text": "−cos x + 2x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On primitive terme à terme : sin x donne −cos x et la constante 2 donne 2x, soit F(x) = −cos x + 2x, de dérivée sin x + 2 ✓. La fonction cos x + 2x a le mauvais signe, car (cos x)′ = −sin x. La fonction −cos x + 2 laisse 2 inchangé, or la dérivée de 2 est 0. La fonction −cos x + x² primitive la constante 2 comme si c'était 2x, de primitive x².",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la primitive F de f(x) = 4x − 3 sur ℝ qui vérifie F(2) = 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x² − 3x + 3"
+        },
+        {
+          "id": "b",
+          "text": "2x² − 3x − 3"
+        },
+        {
+          "id": "c",
+          "text": "2x² − 3x + 5"
+        },
+        {
+          "id": "d",
+          "text": "2x² − 3x + 7"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une primitive est F₀(x) = 2x² − 3x, avec F₀(2) = 8 − 6 = 2. On cherche c tel que 2 + c = 5, soit c = 3 : F(x) = 2x² − 3x + 3 ✓ (F(2) = 8 − 6 + 3 = 5). La constante 5 est la valeur imposée, sans tenir compte de F₀(2). La constante 7 additionne 5 et F₀(2) au lieu de les soustraire. La constante −3 inverse la soustraction.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé, D est la droite d'équation y = 4x. Le point A de D a pour abscisse x > 0 et B a pour coordonnées (x ; 0). Quelle est l'aire S(x) du triangle OAB ?\n<svg viewBox=\"0 0 340 250\">\n<title>La droite D d'équation y = 4x et le triangle OAB, avec A sur D et B sur l'axe des abscisses</title>\n<polygon points=\"60,232 112.5,22 112.5,232\" fill=\"#2563eb\" fill-opacity=\"0.18\" stroke=\"#2563eb\" stroke-width=\"2.4\"/>\n<line x1=\"48\" y1=\"232\" x2=\"250\" y2=\"232\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"250,232 242,236 242,228\" fill=\"#0f172a\"/>\n<line x1=\"60\" y1=\"244\" x2=\"60\" y2=\"8\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"60,8 64,16 56,16\" fill=\"#0f172a\"/>\n<line x1=\"60\" y1=\"232\" x2=\"115.65\" y2=\"9.4\" stroke=\"#0f6e56\" stroke-width=\"3\"/>\n<path d=\"M 103.5 232 L 103.5 223 L 112.5 223\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<circle cx=\"60\" cy=\"232\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/>\n<circle cx=\"112.5\" cy=\"232\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/>\n<circle cx=\"112.5\" cy=\"22\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"50\" y=\"247\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">O</text><text x=\"116.5\" y=\"248\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">B</text><text x=\"102.5\" y=\"16\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">A</text><text x=\"86.25\" y=\"248\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"12\">x</text><text x=\"123.65\" y=\"19.4\" text-anchor=\"start\" fill=\"#0f6e56\" font-size=\"13\">D</text><text x=\"123.65\" y=\"35.4\" text-anchor=\"start\" fill=\"#0f6e56\" font-size=\"12\">y = 4x</text><text x=\"245\" y=\"247\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\">x</text><text x=\"68\" y=\"18\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"12\">y</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x²"
+        },
+        {
+          "id": "b",
+          "text": "4x"
+        },
+        {
+          "id": "c",
+          "text": "2x²"
+        },
+        {
+          "id": "d",
+          "text": "4x²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La base OB mesure x et la hauteur AB mesure 4x : S(x) = (1/2) × x × 4x = 2x² ✓. On vérifie que S′(x) = 4x : S est une primitive de f(x) = 4x, celle qui vaut 0 en 0. L'expression 4x² oublie le facteur 1/2 du triangle. L'expression 4x est la hauteur AB, pas l'aire. L'expression x² est l'aire pour la droite y = 2x.",
+      "difficulty": 2
+    }
+  ]
+}

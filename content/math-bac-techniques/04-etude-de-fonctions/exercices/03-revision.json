@@ -1,0 +1,172 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Étude de fonctions",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes du plan d'étude d'une fonction.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Calculer les limites de f aux bornes du domaine d'étude"
+        },
+        {
+          "id": "e",
+          "text": "Étudier les branches infinies et les asymptotes de la courbe"
+        },
+        {
+          "id": "a",
+          "text": "Déterminer l'ensemble de définition de f"
+        },
+        {
+          "id": "f",
+          "text": "Placer les points particuliers, puis tracer la courbe"
+        },
+        {
+          "id": "b",
+          "text": "Réduire le domaine d'étude grâce à la parité ou à la périodicité"
+        },
+        {
+          "id": "d",
+          "text": "Étudier le sens de variation de f et dresser le tableau de variation"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      "explanation": "Le plan va du général au particulier. On commence par le domaine, car on ne peut rien calculer hors de D. On réduit ensuite le domaine d'étude par la parité ou la périodicité pour faire moins de calculs, puis on calcule les limites aux bornes, qui alimentent le tableau de variation. Les branches infinies se lisent avec les limites et le tableau, et le tracé vient en dernier, une fois tous les éléments rassemblés.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La fonction f est paire sur ℝ. Son tableau de variation sur [0 ; +∞[ est donné ci-dessous. Combien de solutions l'équation f(x) = 0 admet-elle sur ℝ ?\n<svg viewBox=\"0 0 300 150\">\n<title>Tableau de variation de f sur [0 ; +∞[ : décroissante de 3 à −1, puis croissante vers +∞</title>\n<rect x=\"8\" y=\"8\" width=\"284\" height=\"134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"8\" y1=\"46\" x2=\"292\" y2=\"46\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"8\" x2=\"70\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"123\" y1=\"88\" x2=\"165\" y2=\"116\" stroke=\"#d97706\" stroke-width=\"2.2\"/><polygon points=\"165,116 157.14,114.5 160.6,109.32\" fill=\"#d97706\"/><line x1=\"197\" y1=\"116\" x2=\"239\" y2=\"88\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><polygon points=\"239,88 234.6,94.68 231.14,89.5\" fill=\"#2563eb\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"39\" y=\"33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">x</text><text x=\"39\" y=\"100\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\">f</text><text x=\"107\" y=\"33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">0</text><text x=\"107\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">3</text><text x=\"181\" y=\"33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">2</text><text x=\"181\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">−1</text><text x=\"255\" y=\"33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">+∞</text><text x=\"255\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">+∞</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur [0 ; 2], f décroît strictement de 3 à −1 : elle s'annule exactement une fois, car 0 est compris entre −1 et 3. Sur [2 ; +∞[, f croît strictement de −1 à +∞ : elle s'annule exactement une fois. Cela fait 2 solutions positives. f est paire : à chacune correspond la solution opposée, soit 4 solutions au total ✓, et x = 0 n'en est pas une puisque f(0) = 3. Répondre 2 oublie x < 0 ; répondre 3 ou 5 compte x = 0 à tort.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour quelle valeur de a la droite x = a est-elle un axe de symétrie de la courbe de f(x) = 5/(x² − 8x + 20) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le dénominateur x² − 8x + 20 = (x − 4)² + 4 est invariant par x ↦ 8 − x : (8 − x)² − 8(8 − x) + 20 = 64 − 16x + x² − 64 + 8x + 20 = x² − 8x + 20. Donc f(8 − x) = f(x) et l'axe est x = 4, la moitié de 8 ✓. La valeur 8 est 2a et non a. La valeur −4 garde le signe du coefficient −8 en le divisant par 2. La valeur 5 est le numérateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe C_f de f(x) = (3x² − 5x − 5)/(x − 2) admet pour asymptote oblique la droite Δ : y = 3x + 1. Quelle est la position de C_f par rapport à Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C_f est au-dessus de Δ sur ]2 ; +∞[ et au-dessous sur ]−∞ ; 2["
+        },
+        {
+          "id": "b",
+          "text": "C_f est au-dessous de Δ sur ]2 ; +∞[ et au-dessus sur ]−∞ ; 2["
+        },
+        {
+          "id": "c",
+          "text": "C_f est au-dessus de Δ sur ]−∞ ; 2[ et sur ]2 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "C_f est au-dessous de Δ sur ]−∞ ; 2[ et sur ]2 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x) − (3x + 1) = (3x² − 5x − 5 − (3x + 1)(x − 2))/(x − 2) = (3x² − 5x − 5 − 3x² + 5x + 2)/(x − 2) = −3/(x − 2). Ce quotient est négatif pour x > 2 (courbe au-dessous de Δ) et positif pour x < 2 (au-dessus) ✓. Inverser les signes ou garder le même côté partout oublie que x − 2 change de signe en 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √(x² − 6x + 5), définie sur ]−∞ ; 1] ∪ [5 ; +∞[. Que peut-on dire de f en x = 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est dérivable en 5 et f′(5) = 0 : la tangente est horizontale"
+        },
+        {
+          "id": "b",
+          "text": "f n'est pas dérivable en 5 : la courbe a un point anguleux"
+        },
+        {
+          "id": "c",
+          "text": "f n'est pas définie en 5 : la droite x = 5 est une asymptote verticale"
+        },
+        {
+          "id": "d",
+          "text": "f n'est pas dérivable en 5 : la courbe a une demi-tangente verticale"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a f(5) = 0. Pour x > 5, (f(x) − f(5))/(x − 5) = √((x − 5)(x − 1))/(x − 5) = √((x − 1)/(x − 5)), qui tend vers +∞ quand x tend vers 5 par valeurs supérieures : f n'est pas dérivable à droite en 5, et la courbe a une demi-tangente verticale ✓. L'idée f′(5) = 0 est fausse : f′(x) = (x − 3)/√(x² − 6x + 5) tend vers +∞. Un point anguleux demande deux demi-tangentes, une de chaque côté ; or f n'est pas définie sur ]1 ; 5[, il n'y en a qu'une, verticale. Et f est bien définie en 5, avec f(5) = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève étudie f(x) = √(x² − 4x) en −∞. Étape 1 : pour x < 0, f(x)/x = √(1 − 4/x), qui tend vers 1. Étape 2 : f(x) − x = (x² − 4x − x²)/(f(x) + x) = −4x/(f(x) + x) = −4/(√(1 − 4/x) + 1), qui tend vers −2. Étape 3 : il en conclut que la droite y = x − 2 est asymptote en −∞. Quelle étape contient la première erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étape 1 : pour x < 0, f(x)/x tend vers −1 et non vers 1"
+        },
+        {
+          "id": "b",
+          "text": "Étape 2 : l'identité f(x) − x = −4x/(f(x) + x) est inexacte"
+        },
+        {
+          "id": "c",
+          "text": "Étape 3 : la limite −2 donne b = 2 et non b = −2"
+        },
+        {
+          "id": "d",
+          "text": "Aucune étape : le calcul est correct de bout en bout"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x < 0, √(x²) = |x| = −x, donc f(x)/x = −√(1 − 4/x) tend vers −1 : l'erreur est dès l'étape 1, car la pente est −1 et non 1. La suite en découle. L'identité de l'étape 2 est exacte, puisque (x² − 4x) − x² = −4x. La bonne asymptote en −∞ est y = −x + 2, symétrique de y = x − 2 par rapport à l'axe x = 2. Test : f(−10) = √140 ≈ 11,8 est positif, alors que la droite y = x − 2 vaut −12 en −10.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Les premières exponentielles",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Si x > 0 et ln x = −3, que vaut x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3"
+        },
+        {
+          "id": "b",
+          "text": "e/3"
+        },
+        {
+          "id": "c",
+          "text": "e³"
+        },
+        {
+          "id": "d",
+          "text": "e⁻³"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par définition de exp, ln x = −3 ⇔ x = exp(−3) = e⁻³ ✓ (environ 0,05). La valeur e³ perd le signe de l'exposant ; 1/3 inverse le nombre 3 au lieu de passer à l'exponentielle ; e/3 mélange e et 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut exp(ln 6 − ln 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "exp(ln 6 − ln 2) = exp(ln 6)/exp(ln 2) = 6/2 = 3 ✓ (ou bien ln 6 − ln 2 = ln 3, et exp(ln 3) = 3). Le résultat 4 soustrait 6 − 2 ; 8 additionne 6 + 2 ; 12 multiplie 6 × 2 : chacun oublie que exp change une différence en quotient.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Simplifier eˣ × e⁻ˣ, pour tout réel x.",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(2x)"
+        },
+        {
+          "id": "b",
+          "text": "e^(−x²)"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "eˣ × e⁻ˣ = e^(x − x) = e⁰ = 1 ✓. Le résultat 0 prend e⁰ = 0 ; e^(2x) additionne les exposants en valeur absolue ; e^(−x²) multiplie les exposants au lieu de les additionner.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour quels réels x a-t-on eˣ > 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x < 0"
+        },
+        {
+          "id": "b",
+          "text": "x > 0"
+        },
+        {
+          "id": "c",
+          "text": "x > 1"
+        },
+        {
+          "id": "d",
+          "text": "x > e"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a 1 = e⁰ et exp est strictement croissante, donc eˣ > e⁰ ⇔ x > 0 ✓ (en x = 0,5, e^(0,5) ≈ 1,65 > 1). L'ensemble x > 1 confond le seuil avec celui de e¹ = e ; x > e confond l'argument et la valeur ; x < 0 inverse le sens, car pour x < 0 on a 0 < eˣ < 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour quel réel x a-t-on e^(2x − 1) = e^(x + 3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "ln 4"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme exp est strictement croissante, e^u = e^v ⇔ u = v. Ici 2x − 1 = x + 3, donc x = 4 ✓ (contrôle : les deux membres valent e⁷). La valeur 2 vient d'une erreur de signe sur −1 en changeant de membre ; −4 d'une erreur de signe sur les deux termes ; ln 4 traite l'équation comme eˣ = 4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'inéquation eˣ < 1/e.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x > −1"
+        },
+        {
+          "id": "b",
+          "text": "x < −1"
+        },
+        {
+          "id": "c",
+          "text": "x < 0"
+        },
+        {
+          "id": "d",
+          "text": "x < 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a 1/e = e⁻¹ et exp est strictement croissante, donc eˣ < e⁻¹ ⇔ x < −1 ✓ (contrôle : en x = −2, e⁻² ≈ 0,135 < 0,368). L'inégalité x > −1 inverse le sens ; x < 0 compare avec 1 = e⁰ ; x < 1 lit 1/e comme e.",
+      "difficulty": 2
+    }
+  ]
+}
