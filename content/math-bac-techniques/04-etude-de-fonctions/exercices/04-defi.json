@@ -1,0 +1,165 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les pointes et les pivots",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "La courbe ci-dessous est celle de |f|, où f(x) = x³ + 3x². En quelles abscisses la fonction |f| n'est-elle pas dérivable ?\n<svg viewBox=\"0 0 300 240\">\n<title>Courbe de la fonction |f| où f(x) = x³ + 3x², repère gradué de 1 en 1</title>\n<line x1=\"50\" y1=\"218\" x2=\"50\" y2=\"12\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"100\" y1=\"218\" x2=\"100\" y2=\"12\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"150\" y1=\"218\" x2=\"150\" y2=\"12\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"250\" y1=\"218\" x2=\"250\" y2=\"12\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"14\" y1=\"168.69\" x2=\"288\" y2=\"168.69\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"14\" y1=\"138.69\" x2=\"288\" y2=\"138.69\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"14\" y1=\"108.69\" x2=\"288\" y2=\"108.69\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"14\" y1=\"78.69\" x2=\"288\" y2=\"78.69\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"14\" y1=\"48.69\" x2=\"288\" y2=\"48.69\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"14\" y1=\"18.69\" x2=\"288\" y2=\"18.69\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"8\" y1=\"198.69\" x2=\"294\" y2=\"198.69\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"294,198.69 286,202.69 286,194.69\" fill=\"#0f172a\"/>\n<line x1=\"200\" y1=\"222\" x2=\"200\" y2=\"10\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"200,10 204,18 196,18\" fill=\"#0f172a\"/>\n<line x1=\"50\" y1=\"195.69\" x2=\"50\" y2=\"201.69\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"100\" y1=\"195.69\" x2=\"100\" y2=\"201.69\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"150\" y1=\"195.69\" x2=\"150\" y2=\"201.69\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"250\" y1=\"195.69\" x2=\"250\" y2=\"201.69\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"197\" y1=\"168.69\" x2=\"203\" y2=\"168.69\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"197\" y1=\"138.69\" x2=\"203\" y2=\"138.69\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"197\" y1=\"108.69\" x2=\"203\" y2=\"108.69\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"197\" y1=\"78.69\" x2=\"203\" y2=\"78.69\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"197\" y1=\"48.69\" x2=\"203\" y2=\"48.69\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"197\" y1=\"18.69\" x2=\"203\" y2=\"18.69\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<polyline points=\"25.0,14.94 25.5,19.64 26.0,24.3 26.5,28.91 27.0,33.48 27.5,38.01 28.0,42.49 28.5,46.92 29.0,51.32 29.5,55.66 30.0,59.97 30.5,64.23 31.0,68.45 31.5,72.63 32.0,76.76 32.5,80.85 33.0,84.9 33.5,88.91 34.0,92.87 34.5,96.8 35.0,100.68 35.5,104.52 36.0,108.32 36.5,112.08 37.0,115.79 37.5,119.47 38.0,123.11 38.5,126.7 39.0,130.26 39.5,133.77 40.0,137.25 40.5,140.69 41.0,144.08 41.5,147.44 42.0,150.76 42.5,154.04 43.0,157.28 43.5,160.48 44.0,163.65 44.5,166.77 45.0,169.86 45.5,172.91 46.0,175.92 46.5,178.9 47.0,181.84 47.5,184.74 48.0,187.6 48.5,190.43 49.0,193.22 49.5,195.97 50.0,198.69 50.5,196.01 51.0,193.36 51.5,190.75 52.0,188.18 52.5,185.64 53.0,183.13 53.5,180.66 54.0,178.23 54.5,175.83 55.0,173.46 55.5,171.13 56.0,168.83 56.5,166.57 57.0,164.34 57.5,162.14 58.0,159.98 58.5,157.84 59.0,155.75 59.5,153.68 60.0,151.65 60.5,149.65 61.0,147.68 61.5,145.75 62.0,143.84 62.5,141.97 63.0,140.13 63.5,138.32 64.0,136.54 64.5,134.8 65.0,133.08 65.5,131.39 66.0,129.74 66.5,128.11 67.0,126.52 67.5,124.95 68.0,123.42 68.5,121.91 69.0,120.44 69.5,118.99 70.0,117.57 70.5,116.18 71.0,114.82 71.5,113.49 72.0,112.18 72.5,110.91 73.0,109.66 73.5,108.44 74.0,107.24 74.5,106.08 75.0,104.94 75.5,103.83 76.0,102.74 76.5,101.69 77.0,100.65 77.5,99.65 78.0,98.67 78.5,97.72 79.0,96.79 79.5,95.89 80.0,95.01 80.5,94.16 81.0,93.33 81.5,92.53 82.0,91.75 82.5,91.0 83.0,90.27 83.5,89.57 84.0,88.89 84.5,88.23 85.0,87.6 85.5,86.99 86.0,86.4 86.5,85.84 87.0,85.3 87.5,84.78 88.0,84.29 88.5,83.82 89.0,83.37 89.5,82.94 90.0,82.53 90.5,82.14 91.0,81.78 91.5,81.44 92.0,81.12 92.5,80.82 93.0,80.54 93.5,80.28 94.0,80.04 94.5,79.82 95.0,79.62 95.5,79.44 96.0,79.28 96.5,79.14 97.0,79.02 97.5,78.92 98.0,78.84 98.5,78.77 99.0,78.73 99.5,78.7 100.0,78.69 100.5,78.7 101.0,78.73 101.5,78.77 102.0,78.83 102.5,78.91 103.0,79.01 103.5,79.12 104.0,79.25 104.5,79.4 105.0,79.56 105.5,79.74 106.0,79.93 106.5,80.15 107.0,80.37 107.5,80.61 108.0,80.87 108.5,81.14 109.0,81.43 109.5,81.73 110.0,82.05 110.5,82.38 111.0,82.73 111.5,83.09 112.0,83.46 112.5,83.85 113.0,84.25 113.5,84.66 114.0,85.09 114.5,85.53 115.0,85.98 115.5,86.45 116.0,86.92 116.5,87.41 117.0,87.91 117.5,88.43 118.0,88.95 118.5,89.49 119.0,90.04 119.5,90.6 120.0,91.17 120.5,91.75 121.0,92.34 121.5,92.95 122.0,93.56 122.5,94.18 123.0,94.81 123.5,95.46 124.0,96.11 124.5,96.77 125.0,97.44 125.5,98.12 126.0,98.81 126.5,99.5 127.0,100.21 127.5,100.92 128.0,101.65 128.5,102.38 129.0,103.11 129.5,103.86 130.0,104.61 130.5,105.37 131.0,106.14 131.5,106.91 132.0,107.69 132.5,108.48 133.0,109.27 133.5,110.07 134.0,110.87 134.5,111.68 135.0,112.5 135.5,113.32 136.0,114.15 136.5,114.98 137.0,115.82 137.5,116.66 138.0,117.5 138.5,118.36 139.0,119.21 139.5,120.07 140.0,120.93 140.5,121.8 141.0,122.66 141.5,123.54 142.0,124.41 142.5,125.29 143.0,126.17 143.5,127.06 144.0,127.94 144.5,128.83 145.0,129.72 145.5,130.61 146.0,131.51 146.5,132.4 147.0,133.3 147.5,134.19 148.0,135.09 148.5,135.99 149.0,136.89 149.5,137.79 150.0,138.69 150.5,139.59 151.0,140.49 151.5,141.39 152.0,142.29 152.5,143.19 153.0,144.08 153.5,144.98 154.0,145.87 154.5,146.77 155.0,147.66 155.5,148.55 156.0,149.44 156.5,150.32 157.0,151.21 157.5,152.09 158.0,152.97 158.5,153.84 159.0,154.72 159.5,155.58 160.0,156.45 160.5,157.31 161.0,158.17 161.5,159.02 162.0,159.88 162.5,160.72 163.0,161.56 163.5,162.4 164.0,163.23 164.5,164.06 165.0,164.88 165.5,165.7 166.0,166.51 166.5,167.31 167.0,168.11 167.5,168.9 168.0,169.69 168.5,170.47 169.0,171.24 169.5,172.01 170.0,172.77 170.5,173.52 171.0,174.27 171.5,175.0 172.0,175.73 172.5,176.46 173.0,177.17 173.5,177.88 174.0,178.57 174.5,179.26 175.0,179.94 175.5,180.61 176.0,181.27 176.5,181.92 177.0,182.57 177.5,183.2 178.0,183.82 178.5,184.43 179.0,185.04 179.5,185.63 180.0,186.21 180.5,186.78 181.0,187.34 181.5,187.89 182.0,188.43 182.5,188.95 183.0,189.47 183.5,189.97 184.0,190.46 184.5,190.93 185.0,191.4 185.5,191.85 186.0,192.29 186.5,192.72 187.0,193.13 187.5,193.53 188.0,193.92 188.5,194.29 189.0,194.65 189.5,195.0 190.0,195.33 190.5,195.65 191.0,195.95 191.5,196.24 192.0,196.51 192.5,196.77 193.0,197.01 193.5,197.23 194.0,197.45 194.5,197.64 195.0,197.82 195.5,197.98 196.0,198.13 196.5,198.26 197.0,198.37 197.5,198.47 198.0,198.55 198.5,198.61 199.0,198.65 199.5,198.68 200.0,198.69 200.5,198.68 201.0,198.65 201.5,198.61 202.0,198.54 202.5,198.46 203.0,198.36 203.5,198.24 204.0,198.1 204.5,197.94 205.0,197.76 205.5,197.56 206.0,197.34 206.5,197.1 207.0,196.84 207.5,196.56 208.0,196.26 208.5,195.94 209.0,195.6 209.5,195.24 210.0,194.85 210.5,194.44 211.0,194.01 211.5,193.56 212.0,193.09 212.5,192.6 213.0,192.08 213.5,191.54 214.0,190.98 214.5,190.39 215.0,189.78 215.5,189.15 216.0,188.49 216.5,187.81 217.0,187.11 217.5,186.38 218.0,185.63 218.5,184.85 219.0,184.05 219.5,183.22 220.0,182.37 220.5,181.49 221.0,180.59 221.5,179.66 222.0,178.71 222.5,177.73 223.0,176.73 223.5,175.69 224.0,174.64 224.5,173.55 225.0,172.44 225.5,171.3 226.0,170.14 226.5,168.94 227.0,167.72 227.5,166.47 228.0,165.2 228.5,163.89 229.0,162.56 229.5,161.2 230.0,159.81 230.5,158.39 231.0,156.94 231.5,155.47 232.0,153.96 232.5,152.43 233.0,150.86 233.5,149.27 234.0,147.64 234.5,145.99 235.0,144.3 235.5,142.58 236.0,140.84 236.5,139.06 237.0,137.25 237.5,135.41 238.0,133.54 238.5,131.63 239.0,129.7 239.5,127.73 240.0,125.73 240.5,123.7 241.0,121.63 241.5,119.54 242.0,117.4 242.5,115.24 243.0,113.04 243.5,110.81 244.0,108.55 244.5,106.25 245.0,103.92 245.5,101.55 246.0,99.15 246.5,96.72 247.0,94.25 247.5,91.74 248.0,89.2 248.5,86.63 249.0,84.02 249.5,81.37 250.0,78.69 250.5,75.97 251.0,73.22 251.5,70.43 252.0,67.6 252.5,64.74 253.0,61.84 253.5,58.9 254.0,55.92 254.5,52.91 255.0,49.86 255.5,46.77 256.0,43.65 256.5,40.48 257.0,37.28 257.5,34.04 258.0,30.76 258.5,27.44 259.0,24.08 259.5,20.69 260.0,17.25\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"50\" y=\"213.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">−3</text><text x=\"100\" y=\"213.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">−2</text><text x=\"150\" y=\"213.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">−1</text><text x=\"250\" y=\"213.69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">1</text><text x=\"194\" y=\"172.19\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">1</text><text x=\"194\" y=\"142.19\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">2</text><text x=\"194\" y=\"112.19\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">3</text><text x=\"194\" y=\"82.19\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">4</text><text x=\"194\" y=\"52.19\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">5</text><text x=\"194\" y=\"22.19\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">6</text><text x=\"290\" y=\"192.69\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\">x</text><text x=\"208\" y=\"20\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"12\">y</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3 et 0"
+        },
+        {
+          "id": "b",
+          "text": "−3 seulement"
+        },
+        {
+          "id": "c",
+          "text": "−2 et 0"
+        },
+        {
+          "id": "d",
+          "text": "−2 seulement"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "|f| a une pointe aux zéros de f où f′ ≠ 0. f(x) = x²(x + 3) s'annule en −3 et en 0, et f′(x) = 3x² + 6x vaut 9 en −3 : pointe en −3, où la courbe change de pente de façon visible ✓. En 0, f′(0) = 0 et f = x²(x + 3) reste positive de part et d'autre, donc |f| = f y est dérivable, avec une tangente horizontale (cas limite de la notion 7). L'abscisse −2 est celle du maximum local de f, de valeur 4 : c'est un sommet arrondi de |f|, où elle reste dérivable. Les réponses avec 0 oublient ce cas limite, et celles avec −2 prennent le sommet arrondi pour une pointe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe de f(x) = x³ + ax² + bx a pour centre de symétrie le point W(2 ; 4). Que valent a et b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = −6 et b = 10"
+        },
+        {
+          "id": "b",
+          "text": "a = −6 et b = 12"
+        },
+        {
+          "id": "c",
+          "text": "a = 6 et b = −14"
+        },
+        {
+          "id": "d",
+          "text": "a = 6 et b = 10"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans le repère d'origine W, F(X) = f(2 + X) − 4 = X³ + (6 + a)X² + (12 + 4a + b)X + (4 + 4a + 2b). F est impaire si et seulement si les coefficients de X² et le terme constant sont nuls : 6 + a = 0 donne a = −6, puis 4 − 24 + 2b = 0 donne b = 10 ✓ (alors F(X) = X³ − 2X). L'erreur sur le signe de a donne a = 6, avec b = −14 si on garde le terme constant nul, ou b = 10 si on ne le recalcule pas. La valeur b = 12 annule le coefficient de X au lieu du terme constant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (ax² + bx + c)/(x − 1), avec a, b, c réels. La courbe de f admet la droite y = 2x + 3 pour asymptote oblique et passe par l'origine O. Que valent a, b et c ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 2, b = 1 et c = −3"
+        },
+        {
+          "id": "b",
+          "text": "a = 2, b = 3 et c = 0"
+        },
+        {
+          "id": "c",
+          "text": "a = 2, b = 1 et c = 0"
+        },
+        {
+          "id": "d",
+          "text": "a = 2, b = 3 et c = −3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dire que y = 2x + 3 est asymptote oblique, c'est écrire f(x) = 2x + 3 + k/(x − 1) = ((2x + 3)(x − 1) + k)/(x − 1) = (2x² + x − 3 + k)/(x − 1) : a = 2, b = 1, c = k − 3. Comme la courbe passe par O, f(0) = c/(−1) = 0 donne c = 0, soit k = 3 ✓. Contrôle : (2x² + x)/(x − 1) − (2x + 3) = 3/(x − 1) tend vers 0. Le triplet avec b = 1 et c = −3 oublie la fraction k/(x − 1) : avec k = 0, f(x) = 2x + 3 et f(0) = 3, la courbe ne passe pas par O ; les deux triplets avec b = 3 lisent b sur l'asymptote, mais leurs courbes ont pour asymptote y = 2x + 5.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Soit f(x) = (x² + 1)/x, définie sur ℝ*. Sélectionne toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est impaire"
+        },
+        {
+          "id": "b",
+          "text": "La droite (Oy) est un axe de symétrie de la courbe de f"
+        },
+        {
+          "id": "c",
+          "text": "La droite y = x est asymptote oblique en +∞ et en −∞"
+        },
+        {
+          "id": "d",
+          "text": "Sur ]0 ; +∞[, la courbe de f est au-dessus de la droite y = x"
+        },
+        {
+          "id": "e",
+          "text": "2 est le minimum de f sur ℝ*"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "f(−x) = ((−x)² + 1)/(−x) = −f(x) : f est impaire, donc sa courbe a O pour centre de symétrie ; un axe (Oy) exigerait f(−x) = f(x), ce qui est faux (f(1) = 2 et f(−1) = −2). Ensuite f(x) − x = 1/x tend vers 0 en +∞ comme en −∞ : y = x est asymptote oblique des deux côtés, et 1/x > 0 pour x > 0 place la courbe au-dessus de la droite sur ]0 ; +∞[. Enfin 2 = f(1) n'est le minimum que sur ]0 ; +∞[ : f(−1) = −2, donc f prend des valeurs plus petites sur ℝ*.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Combien de solutions l'équation |x⁴ − 6x² + 5| = 2 admet-elle dans ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "|f(x)| = 2 équivaut à f(x) = 2 ou f(x) = −2, avec f(x) = x⁴ − 6x² + 5. Le tableau de f (minimum −4 en ±√3, maximum local 5 en 0) donne 4 solutions pour toute valeur de m dans ]−4 ; 5[, et 2 comme −2 sont dans cet intervalle : chaque équation a 4 solutions. Elles sont toutes distinctes, car f(x) ne peut valoir à la fois 2 et −2 : 4 + 4 = 8 ✓. Contrôle : x⁴ − 6x² + 3 = 0 donne x² = 3 ± √6, deux positifs ; x⁴ − 6x² + 7 = 0 donne x² = 3 ± √2, deux positifs. Répondre 4 oublie l'une des deux équations, 6 compte f(x) = −2 comme deux solutions seulement.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = 2cos x + cos 2x, fonction paire et 2π-périodique. Sur [0 ; π], f décroît de f(0) = 3 à f(2π/3) = −3/2, puis croît jusqu'à f(π) = −1. Combien de solutions l'équation f(x) = −1 admet-elle dans [0 ; 2π[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur [0 ; 2π/3], f décroît strictement de 3 à −3/2 : la valeur −1 est atteinte une fois, en un réel x₀ de ]0 ; 2π/3[. Sur ]2π/3 ; π[, f croît de −3/2 vers −1 sans l'atteindre, mais f(π) = −1 : une solution en π. Sur ]π ; 2π[, f est paire et 2π-périodique, donc f(2π − x) = f(x) : la solution symétrique 2π − x₀ s'ajoute. Au total x₀, π et 2π − x₀ : 3 solutions ✓. Répondre 2 oublie le point x = π, où la courbe touche la droite y = −1 ; répondre 4 le compte deux fois.",
+      "difficulty": 3
+    }
+  ]
+}

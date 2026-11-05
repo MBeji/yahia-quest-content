@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Étude de fonctions",
+  "questions": [
+    {
+      "prompt": "Une fonction f est impaire sur ℝ. Après avoir étudié f sur [0 ; +∞[, quelle transformation de la courbe obtenue donne le reste de la courbe de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une symétrie par rapport à l'origine O du repère"
+        },
+        {
+          "id": "b",
+          "text": "Une symétrie par rapport à l'axe des ordonnées"
+        },
+        {
+          "id": "c",
+          "text": "Une symétrie par rapport à l'axe des abscisses"
+        },
+        {
+          "id": "d",
+          "text": "Une symétrie par rapport à la droite d'équation y = x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f impaire signifie f(−x) = −f(x) : le point (−x ; −f(x)) est le symétrique de (x ; f(x)) par rapport à l'origine O ✓. La symétrie par rapport à l'axe des ordonnées correspond à une fonction paire. La symétrie par rapport à l'axe des abscisses change f en −f sans changer x. La symétrie par rapport à la droite y = x échange les rôles de x et de y, comme pour une fonction et sa réciproque.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une fonction f est définie sur ℝ. Quelle égalité, vraie pour tout réel x, exprime que la droite x = 3 est un axe de symétrie de sa courbe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(6 − x) = f(x)"
+        },
+        {
+          "id": "b",
+          "text": "f(3 − x) = f(x)"
+        },
+        {
+          "id": "c",
+          "text": "f(3 − x) = −f(x)"
+        },
+        {
+          "id": "d",
+          "text": "f(6 − x) = −f(x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le symétrique de x par rapport à 3 est 2 × 3 − x = 6 − x, et un axe de symétrie impose la même image aux deux abscisses : f(6 − x) = f(x) ✓. L'égalité f(3 − x) = f(x) emploie a − x au lieu de 2a − x : elle correspond à l'axe x = 3/2. L'égalité f(6 − x) = −f(x) est celle d'un centre de symétrie placé en (3 ; 0). L'égalité f(3 − x) = −f(x) cumule les deux erreurs : c'est un centre en (3/2 ; 0).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le point W(2 ; 5) est un centre de symétrie de la courbe d'une fonction f définie sur ℝ, et f(0) = 1. Que vaut f(4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "11"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour un centre W(a ; b), f(2a − x) = 2b − f(x). Avec a = 2, b = 5 et x = 0, on obtient f(4) = 10 − f(0) = 10 − 1 = 9 ✓. La valeur 1 serait celle d'un axe de symétrie x = 2 (f(4) = f(0)). La valeur −1 est −f(0), celle d'un centre en O. La valeur 11 ajoute f(0) au lieu de le retrancher.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelles droites sont asymptotes à la courbe de f(x) = 2x + 1 + 3/(x − 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −2 et y = 2x + 1"
+        },
+        {
+          "id": "b",
+          "text": "x = 2 et y = 2x + 4"
+        },
+        {
+          "id": "c",
+          "text": "x = −2 et y = 2x + 4"
+        },
+        {
+          "id": "d",
+          "text": "x = 2 et y = 2x + 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le terme 3/(x − 2) tend vers +∞ ou −∞ quand x tend vers 2 : x = 2 est asymptote verticale. Il tend vers 0 quand x tend vers +∞ ou −∞, donc f(x) − (2x + 1) tend vers 0 : y = 2x + 1 est asymptote oblique ✓. La droite x = −2 change le signe de la valeur interdite, y = 2x + 4 ajoute le numérateur 3 à l'ordonnée à l'origine, et « x = −2 et y = 2x + 4 » cumule les deux erreurs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces réels, lequel est une période de f(x) = sin(3x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/3"
+        },
+        {
+          "id": "b",
+          "text": "2π/3"
+        },
+        {
+          "id": "c",
+          "text": "3π/2"
+        },
+        {
+          "id": "d",
+          "text": "3π"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a sin(3(x + T)) = sin(3x + 3T), qui vaut sin(3x) pour tout x lorsque 3T = 2π, soit T = 2π/3 ✓. Pour T = π/3, 3T = π et sin(3x + π) = −sin 3x. Pour T = 3π/2, 3T = 9π/2 et sin(3x + 9π/2) = cos 3x. Pour T = 3π, 3T = 9π et sin(3x + 9π) = −sin 3x : aucune de ces trois valeurs ne redonne sin 3x.",
+      "difficulty": 2
+    }
+  ]
+}
