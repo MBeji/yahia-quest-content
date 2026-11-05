@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Remonter la pente",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Soit F définie sur ℝ par F(x) = x⁵ − 4x² + 9. La fonction F est une primitive sur ℝ de laquelle de ces fonctions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ x⁶/6 − 4x³/3 + 9x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ 5x⁴ − 8x"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ 5x⁴ − 8x + 9"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 5x⁴ − 4x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dire que F est une primitive de f, c'est dire que F′ = f : il suffit de dériver F. Or F′(x) = 5x⁴ − 8x ✓ : F est une primitive de x ↦ 5x⁴ − 8x. La réponse 5x⁴ − 8x + 9 ne fait pas disparaître la constante 9, qui a pour dérivée 0. La réponse 5x⁴ − 4x oublie le facteur 2 en dérivant −4x² (il donne −8x). La réponse x⁶/6 − 4x³/3 + 9x part dans l'autre sens : c'est une primitive de F, alors que la question demande la fonction dont F est la primitive.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une primitive de f(x) = 4 sin x − cos x sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ 4 cos x − sin x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ −4 cos x + sin x"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ 4 cos x + sin x"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ −4 cos x − sin x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par linéarité on primitive terme à terme en gardant les coefficients : sin x donne −cos x, donc 4 sin x donne −4 cos x ; cos x donne sin x, donc −cos x donne −sin x. D'où F(x) = −4 cos x − sin x ✓ (contrôle : F′(x) = 4 sin x − cos x ✓). La réponse 4 cos x − sin x oublie le signe de la ligne sin → −cos : sa dérivée vaut −4 sin x − cos x. La réponse −4 cos x + sin x se trompe de signe sur le second terme : sa dérivée vaut 4 sin x + cos x. La réponse 4 cos x + sin x inverse les deux signes : sa dérivée vaut −4 sin x + cos x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une primitive de f(x) = cos(2x − π/3) sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ (1/2) sin(2x − π/3)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ 2 sin(2x − π/3)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ −(1/2) sin(2x − π/3)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ sin(2x − π/3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La ligne cos(ωx + φ) de la table donne (1/ω) sin(ωx + φ), ici avec ω = 2 et φ = −π/3 : F(x) = (1/2) sin(2x − π/3) ✓. Contrôle : F′(x) = (1/2) × 2 cos(2x − π/3) = cos(2x − π/3) ✓. La réponse sin(2x − π/3) oublie le facteur 1/ω : sa dérivée vaut 2cos(2x − π/3). La réponse 2 sin(2x − π/3) multiplie par ω au lieu de diviser : sa dérivée vaut 4cos(2x − π/3). La réponse −(1/2) sin(2x − π/3) ajoute un signe moins qui n'appartient qu'à la ligne du sinus : sa dérivée vaut −cos(2x − π/3).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un repère, la courbe d'une primitive F de f(x) = 4x³ − 1 sur ℝ passe par le point A(−1 ; 5). Quelle est l'expression de F(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = x⁴ − x + 5"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = x⁴ − x + 7"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = x⁴ − x + 3"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = x⁴ − x − 3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On écrit d'abord la famille des primitives : x⁴ − x + c. Puis la condition « la courbe passe par A(−1 ; 5) », c'est-à-dire F(−1) = 5 : 1 + 1 + c = 2 + c = 5, donc c = 3 et F(x) = x⁴ − x + 3 ✓ (contrôle : F′(x) = 4x³ − 1 ✓ et F(−1) = 1 + 1 + 3 = 5 ✓). La réponse x⁴ − x + 5 recopie y₀ = 5 comme constante sans calculer F(−1) : elle donne F(−1) = 7. La réponse x⁴ − x + 7 additionne F(−1) = 2 au lieu de le soustraire : c = 5 + 2. La réponse x⁴ − x − 3 prend l'opposé de la bonne constante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = (2x + 3)/(x² + 3x)³ sur ]0, +∞[. Une primitive de f sur ]0, +∞[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ 1/(2(x² + 3x)²)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ −1/(2(x² + 3x)²)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ −1/(x² + 3x)²"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ −1/(4(x² + 3x)⁴)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On repère le motif u′/uⁿ avec u(x) = x² + 3x, de dérivée u′(x) = 2x + 3 ; u ne s'annule pas sur ]0, +∞[ : f = u′/u³ avec n = 3. La table donne u^(−2)/(−2) = −1/(2u²), soit −1/(2(x² + 3x)²) ✓. Contrôle : (−(1/2)u^(−2))′ = u^(−3)u′ = f(x) ✓. La réponse 1/(2(x² + 3x)²) oublie le signe moins : sa dérivée vaut −f(x). La réponse −1/(x² + 3x)² oublie le facteur 1/(−n + 1) : sa dérivée vaut 2f(x). La réponse −1/(4(x² + 3x)⁴) monte l'exposant au lieu de le descendre : sa dérivée fait apparaître (x² + 3x)⁻⁵.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x²√(x³ + 1) sur [−1, +∞[. Une primitive de f sur [−1, +∞[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ (2/3)(x³ + 1)√(x³ + 1)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ (1/3)(x³ + 1)√(x³ + 1)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ (1/3)x³√(x³ + 1)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ (2/9)(x³ + 1)√(x³ + 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On pose u(x) = x³ + 1, positive sur [−1, +∞[, avec u′(x) = 3x². Il manque le facteur constant 3 : f = (1/3) u′√u. La table donne (2/3)u√u pour u′√u, donc F(x) = (1/3) × (2/3)(x³ + 1)√(x³ + 1) = (2/9)(x³ + 1)√(x³ + 1) ✓. Contrôle : F = (2/9)u^(3/2) se dérive en (2/9)(3/2)u^(1/2) × 3x² = x²√(x³ + 1) ✓. La réponse (2/3)(x³ + 1)√(x³ + 1) applique la table sans compenser : sa dérivée vaut 3f(x). La réponse (1/3)(x³ + 1)√(x³ + 1) compense par 1/3 mais oublie le 2/3 de la table : sa dérivée vaut (3/2)f(x). La réponse (1/3)x³√(x³ + 1) primitive le facteur x² en laissant la racine intacte, ce qu'aucune règle n'autorise.",
+      "difficulty": 2
+    }
+  ]
+}

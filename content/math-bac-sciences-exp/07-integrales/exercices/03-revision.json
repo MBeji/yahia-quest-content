@@ -1,0 +1,139 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Intégrales",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Laquelle de ces intégrales donne l'aire, en u.a, de la partie du plan limitée par la courbe de f(x) = x² − 9, l'axe des abscisses et les droites x = 0 et x = 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "∫₀⁵ |x² − 9|dx"
+        },
+        {
+          "id": "b",
+          "text": "∫₀⁵ (x² − 9)²dx"
+        },
+        {
+          "id": "c",
+          "text": "∫₀⁵ (x² − 9)dx"
+        },
+        {
+          "id": "d",
+          "text": "|∫₀⁵ (x² − 9)dx|"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fonction x² − 9 change de signe en 3 : négative sur [0, 3], positive sur [3, 5]. L'aire est l'intégrale de la valeur absolue, ∫₀⁵ |x² − 9|dx ✓, qui compte les deux parties positivement. L'intégrale ∫₀⁵ (x² − 9)dx est un bilan algébrique où la partie sous l'axe se retranche. La valeur absolue de ce bilan, |∫₀⁵ (x² − 9)dx|, est seulement une borne inférieure de l'aire : les deux parties se compensent avant la valeur absolue. L'intégrale du carré ∫₀⁵ (x² − 9)²dx est une quantité sans lien avec l'aire.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "On encadre A = ∫₁³ dx/x² avec des rectangles : [1, 3] est coupé en deux intervalles de longueur 1, et f(x) = 1/x² est décroissante. Quelle est la somme des aires des rectangles par excès, donnée en valeur décimale ?",
+      "answerKey": {
+        "value": 1.25
+      },
+      "explanation": "Sur [1, 3], f décroît : le rectangle par excès de [1, 2] a pour hauteur f(1) = 1 et celui de [2, 3] a pour hauteur f(2) = 1/4. Chacun a pour largeur 1, donc la somme par excès vaut 1 + 1/4 = 1,25 ✓. La somme par défaut utiliserait f(2) = 1/4 et f(3) = 1/9 et donnerait 13/36 ≈ 0,36 ; la valeur exacte A = 2/3 est bien entre les deux.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'aire, en u.a, de la partie du plan limitée par les courbes de f(x) = x² et g(x) = x³ et les droites x = 0 et x = 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/12"
+        },
+        {
+          "id": "b",
+          "text": "4/3"
+        },
+        {
+          "id": "c",
+          "text": "17/12"
+        },
+        {
+          "id": "d",
+          "text": "3/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On étudie le signe de f − g = x²(1 − x) : positif sur [0, 1] et négatif sur [1, 2]. D'où l'aire ∫₀² |f − g| = ∫₀¹ (x² − x³)dx + ∫₁² (x³ − x²)dx = (1/3 − 1/4) + (4/3 + 1/12) = 1/12 + 17/12 = 3/2 u.a ✓. La réponse 4/3 vient de |∫₀² (x² − x³)dx| = |8/3 − 4| : les deux parties se compensent. La réponse 1/12 ne compte que la partie sur [0, 1]. La réponse 17/12 ne compte que la partie sur [1, 2].",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f continue sur ℝ, périodique de période 3, avec ∫₀³ f(x)dx = 5. Que vaut ∫₂¹⁷ f(x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "25"
+        },
+        {
+          "id": "c",
+          "text": "30"
+        },
+        {
+          "id": "d",
+          "text": "75"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'intervalle [2, 17] a pour longueur 15 = 5 × 3 : il contient exactement 5 périodes. Pour une fonction de période T, l'intégrale sur n'importe quel intervalle de longueur T vaut ∫₀ᵀ f, donc ∫₂¹⁷ f(x)dx = 5 × 5 = 25 ✓. La réponse 15 est la longueur de l'intervalle, sans l'intégrale. La réponse 75 multiplie la longueur 15 par 5 : on a compté 15 périodes. La réponse 30 compte 6 périodes, en ajoutant une période aux deux extrémités.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La valeur moyenne de f(x) = 3x² + ax sur [0 ; 2] est égale à 7. Quelle est la valeur de a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "−1/2"
+        },
+        {
+          "id": "c",
+          "text": "−9/4"
+        },
+        {
+          "id": "d",
+          "text": "−5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule ∫₀² (3x² + ax)dx = [x³ + ax²/2]₀² = 8 + 2a. La valeur moyenne vaut (8 + 2a)/2 = 4 + a. L'égalité 4 + a = 7 donne a = 3 ✓ (contrôle : f(x) = 3x² + 3x, ∫₀² f = 14, 14/2 = 7). La réponse −1/2 oublie de diviser par la longueur 2 et résout 8 + 2a = 7. La réponse −9/4 multiplie par la longueur et résout 2(8 + 2a) = 7. La réponse −5 primitive 3x² en 3x³ : elle résout 12 + a = 7.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Que vaut ∫_{−π}^{π} (x² sin x + 2cos²x) dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "π"
+        },
+        {
+          "id": "c",
+          "text": "2π"
+        },
+        {
+          "id": "d",
+          "text": "4π"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La fonction x ↦ x² sin x est impaire (x² est pair, sin est impair) : son intégrale sur [−π, π] est nulle. La fonction x ↦ 2cos²x = 1 + cos 2x est paire : ∫_{−π}^{π} (1 + cos 2x)dx = [x + sin(2x)/2]_{−π}^{π} = 2π ✓. Donc l'intégrale totale vaut 0 + 2π = 2π. La réponse 0 déclare tout l'intégrande impair. La réponse π oublie le facteur 2 de 2cos²x. La réponse 4π double deux fois : elle écrit 2 × ∫_{−π}^{π} 2cos²x dx, alors que ∫_{−π}^{π} 2cos²x dx vaut déjà 2π.",
+      "difficulty": 3
+    }
+  ]
+}

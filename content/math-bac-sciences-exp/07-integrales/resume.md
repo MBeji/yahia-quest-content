@@ -1,0 +1,10 @@
+# 📜 Résumé : Intégrales
+
+- **Aire et intégrale positive** : l'unité d'aire (u.a) est l'aire du rectangle de côtés ‖i⃗‖ et ‖j⃗‖ ; pour f continue et positive sur [a, b], l'aire sous C_f vaut F(b) − F(a), notée ∫ₐᵇ f(x)dx, pour **toute** primitive F (deux primitives diffèrent d'une constante). F(b) seul ne mesure rien.
+- **Intégrale d'une fonction continue** : ∫ₐᵇ f(x)dx = [F(x)]ₐᵇ = F(b) − F(a), de signe quelconque ; la variable est muette (∫ₐᵇ f(x)dx = ∫ₐᵇ f(t)dt) et ne se confond jamais avec une borne ; échanger les bornes change le signe ; ∫ₐᵃ f = 0.
+- **Chasles et linéarité** : ∫ₐᶜ f + ∫_cᵇ f = ∫ₐᵇ f, pour tout c de I ; ∫ₐᵇ (αf + βg) = α∫ₐᵇ f + β∫ₐᵇ g ; une somme d'intégrales non calculables peut se simplifier en une seule.
+- **Aires** : l'aire entre l'axe et C_f est ∫ₐᵇ |f| ; l'aire entre C_f et C_g est ∫ₐᵇ |f − g| ; on étudie le signe, on coupe à chaque changement ou croisement. Une intégrale nulle ne signifie pas une aire nulle.
+- **Inégalités** : f ≥ 0 entraîne ∫ₐᵇ f ≥ 0 (a < b), mais la réciproque est fausse ; h ≤ f ≤ g entraîne ∫h ≤ ∫f ≤ ∫g ; |∫f| ≤ ∫|f| ; on encadre l'intégrande puis on intègre. Méthode des rectangles : pour f monotone, des rectangles par défaut et par excès encadrent l'aire.
+- **Intégration par parties** : ∫ₐᵇ fg′ = [fg]ₐᵇ − ∫ₐᵇ f′g, avec f et g dérivables et f′, g′ continues ; on dérive le facteur qui se simplifie (t, t²) et on primitive l'autre (sin, cos) ; deux passages pour t².
+- **Valeur moyenne** : f̄ = 1/(b − a) × ∫ₐᵇ f, le rectangle de hauteur f̄ a la même aire que la partie sous la courbe ; si m ≤ f ≤ M, alors m ≤ f̄ ≤ M, donc m(b − a) ≤ ∫ₐᵇ f ≤ M(b − a) ; il existe c de [a, b] tel que f̄ = f(c).
+- **Volumes et fonctions définies par une intégrale** : le solide engendré par y = f(x), a ≤ x ≤ b, autour de (Ox) a pour volume π∫ₐᵇ f²(x)dx (le carré, jamais f seul) ; x ↦ ∫ₐˣ f(t)dt est la primitive de f qui s'annule en a ; on dérive une composée par u′(x) × f(u(x)) ; ∫_{−a}ᵃ f = 0 si f est impaire et 2∫₀ᵃ f si f est paire (|f| est paire même si f est impaire) ; ∫ₐ^{a+T} f = ∫₀ᵀ f pour une fonction de période T.

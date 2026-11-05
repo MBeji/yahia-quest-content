@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Cap sur la fonction racine",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quel est l'ensemble de définition de f(x) = √(x² + 4x + 7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℝ ∖ {−2}"
+        },
+        {
+          "id": "b",
+          "text": "]−2 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "[−2 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "ℝ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "x² + 4x + 7 = (x + 2)² + 3 ≥ 3 > 0 pour tout x (son discriminant 16 − 28 = −12 est négatif) : la racine existe toujours, D = ℝ ✓. Les ensembles [−2 ; +∞[ et ]−2 ; +∞[ confondent l'abscisse du sommet −2 avec une borne du domaine, et ℝ ∖ {−2} traite −2 comme une valeur interdite, alors que f(−2) = √3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces droites x = a, laquelle est un axe de symétrie de la courbe de f(x) = √(x² + 4x + 7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −4"
+        },
+        {
+          "id": "b",
+          "text": "x = −2"
+        },
+        {
+          "id": "c",
+          "text": "x = 2"
+        },
+        {
+          "id": "d",
+          "text": "x = 7/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "x² + 4x + 7 = (x + 2)² + 3 est inchangé quand x devient −4 − x : f(−4 − x) = f(x), donc l'axe est x = −2 ✓ (2a − x = −4 − x avec a = −2). La droite x = −4 reprend le coefficient 4 sans le diviser par 2, x = 2 se trompe de signe, et x = 7/2 prend la moitié du terme constant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut lim x→−∞ f(x)/x pour f(x) = √(x² + 4x + 7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x < 0, f(x) = √(x²(1 + 4/x + 7/x²)) = −x√(1 + 4/x + 7/x²), donc f(x)/x = −√(1 + 4/x + 7/x²), qui tend vers −1 ✓. La valeur 1 viendrait de √(x²) = x, valable seulement pour x > 0. La limite 0 et la limite +∞ ne correspondent pas à une racine qui se comporte comme |x|.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle droite est asymptote à la courbe de f(x) = √(x² + 4x + 7) quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = x + 7"
+        },
+        {
+          "id": "b",
+          "text": "y = x + 4"
+        },
+        {
+          "id": "c",
+          "text": "y = x + 2"
+        },
+        {
+          "id": "d",
+          "text": "y = x − 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(x)/x tend vers 1, puis f(x) − x = (f(x)² − x²)/(f(x) + x) = (4x + 7)/(f(x) + x) = (4 + 7/x)/(f(x)/x + 1) tend vers 4/2 = 2 : l'asymptote est y = x + 2 ✓. La droite y = x + 4 oublie que le dénominateur f(x) + x vaut environ 2x, y = x + 7 recopie le terme constant, et y = x − 2 se trompe de signe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Combien de solutions réelles l'équation √(x² + 4x + 7) = 2 admet-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x) = 2 équivaut à x² + 4x + 7 = 4, soit x² + 4x + 3 = 0, donc (x + 1)(x + 3) = 0 : deux solutions, x = −1 et x = −3, symétriques par rapport à l'axe x = −2 ✓. Il n'y en a qu'une seule seulement pour la valeur minimale f(−2) = √3 ≈ 1,73, et aucune en dessous ; 2 est supérieur à √3, donc la droite y = 2 coupe les deux branches.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit D la droite d'équation y = x + 1 et C la courbe de f(x) = √(x² + 4x + 7). Quelle est la position de la courbe par rapport à D sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au-dessus de D sur ℝ tout entier"
+        },
+        {
+          "id": "b",
+          "text": "Au-dessous de D sur ℝ tout entier"
+        },
+        {
+          "id": "c",
+          "text": "Au-dessus de D sur [−3 ; +∞[ et au-dessous de D sur ]−∞ ; −3]"
+        },
+        {
+          "id": "d",
+          "text": "Au-dessous de D sur [−3 ; +∞[ et au-dessus de D sur ]−∞ ; −3]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(x)² − (x + 1)² = x² + 4x + 7 − (x² + 2x + 1) = 2x + 6, qui change de signe en −3, mais cela ne décide pas de la position : si x + 1 < 0, alors f(x) > 0 > x + 1, et si x + 1 ≥ 0, alors x > −3 donc f(x)² > (x + 1)² et f(x) > x + 1. La courbe est au-dessus de D partout ✓. Test en x = −10 : f(−10) = √67 ≈ 8,19 est bien supérieur à −10 + 1 = −9. Le signe de f(x)² − (x + 1)² ne suffit pas, car comparer des carrés n'a de sens que si x + 1 ≥ 0.",
+      "difficulty": 3
+    }
+  ]
+}

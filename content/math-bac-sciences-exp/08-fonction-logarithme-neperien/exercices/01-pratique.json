@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec le logarithme népérien",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Simplifier ln(e² √e).",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3/2"
+        },
+        {
+          "id": "c",
+          "text": "5/2"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ln(e² √e) = ln(e²) + ln(√e) = 2 + 1/2 = 5/2 ✓ (le produit devient une somme). La valeur 1 multiplie les deux logarithmes 2 et 1/2 au lieu de les additionner. La valeur 3/2 soustrait 1/2, comme si l'on divisait par √e. La valeur 4 lit ln(√e) comme 2 au lieu de 1/2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces quatre nombres, lequel est le plus grand ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(e⁻¹)"
+        },
+        {
+          "id": "b",
+          "text": "ln(0,9)"
+        },
+        {
+          "id": "c",
+          "text": "ln 1"
+        },
+        {
+          "id": "d",
+          "text": "ln(1,1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ln est strictement croissante : ranger les logarithmes revient à ranger les arguments. Or e⁻¹ ≈ 0,368 < 0,9 < 1 < 1,1, donc le plus grand est ln(1,1) ≈ 0,095 ✓. Les trois autres valent respectivement −1, environ −0,105 et 0 : seul ln(1,1) est strictement positif, car 1,1 > 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On donne ln 2 ≈ 0,693 et ln 3 ≈ 1,099. Une valeur approchée de ln(4/3) est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,287"
+        },
+        {
+          "id": "b",
+          "text": "0,287"
+        },
+        {
+          "id": "c",
+          "text": "1,261"
+        },
+        {
+          "id": "d",
+          "text": "2,485"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ln(4/3) = ln 4 − ln 3 = 2 ln 2 − ln 3 ≈ 1,386 − 1,099 = 0,287 ✓ (4/3 est un peu supérieur à 1, donc le logarithme est petit et positif). La valeur −0,287 est ln 3 − ln 4, la différence prise à l'envers. La valeur 1,261 est le quotient ln 4 / ln 3. La valeur 2,485 est la somme ln 4 + ln 3 = ln 12.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'équation ln(2x − 1) = ln(x + 3).",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −2/3"
+        },
+        {
+          "id": "b",
+          "text": "x = 1/2"
+        },
+        {
+          "id": "c",
+          "text": "x = 2"
+        },
+        {
+          "id": "d",
+          "text": "x = 4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les conditions 2x − 1 > 0 et x + 3 > 0 donnent x > 1/2. Alors ln(2x − 1) = ln(x + 3) équivaut à 2x − 1 = x + 3, soit x = 4, qui est bien supérieur à 1/2 ✓ (ln 7 des deux côtés). La valeur −2/3 vient de 2x − 1 = −(x + 3) et sort du domaine. La valeur 1/2 annule 2x − 1 : ln 0 n'existe pas. La valeur 2 vient de l'erreur de signe 2x + 1 = x + 3 et donne ln 3 ≠ ln 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0, +∞[ par f(x) = x ln x. Que vaut f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "ln x"
+        },
+        {
+          "id": "c",
+          "text": "ln x + 1"
+        },
+        {
+          "id": "d",
+          "text": "ln x + 1/x"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C'est un produit : f′(x) = 1 × ln x + x × (1/x) = ln x + 1 ✓. La réponse 1 ne garde que le terme x × (1/x). La réponse ln x ne garde que le terme 1 × ln x. La réponse ln x + 1/x dérive ln sans multiplier par x. Contrôle en x = e : f′(e) = 2, tandis que ln e + 1/e vaut environ 1,37.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer lim_{x→0} ln(1 + 4x)/x.",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "1/4"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose t = 4x, qui tend vers 0 : ln(1 + 4x)/x = 4 × ln(1 + t)/t, et ln(1 + t)/t tend vers ln′(1) = 1. La limite vaut donc 4 ✓. La valeur 1 oublie le facteur 4. La valeur 1/4 l'inverse. La valeur 0 conclut trop vite de ln 1 = 0 : c'est une forme 0/0 qu'il faut lever avec le nombre dérivé.",
+      "difficulty": 2
+    }
+  ]
+}

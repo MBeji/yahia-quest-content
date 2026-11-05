@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Primitives",
+  "questions": [
+    {
+      "prompt": "Sur ]0, +∞[, on pose F(x) = 3√x et f(x) = 3/(2√x). Quelle affirmation est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est une primitive de F sur ]0, +∞[ (f′ = F)"
+        },
+        {
+          "id": "b",
+          "text": "F et f sont deux primitives d'une même fonction sur ]0, +∞["
+        },
+        {
+          "id": "c",
+          "text": "F est une primitive de f sur ]0, +∞[ (F′ = f)"
+        },
+        {
+          "id": "d",
+          "text": "F n'est pas une primitive de f, car F(x) ≠ f(x) pour tout x"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive F, jamais f : F′(x) = 3 × 1/(2√x) = 3/(2√x) = f(x) pour tout x de ]0, +∞[ ✓, donc F est une primitive de f. La réponse qui annonce que f est une primitive de F inverse les rôles : f′(x) = −3/(4x√x), qui n'est pas F(x). La réponse qui parle de deux primitives d'une même fonction est fausse : f′ ≠ F′, car F′ = f alors que f′ = −3/(4x√x). La réponse « F(x) ≠ f(x) donc F n'est pas une primitive » confond primitive et égalité : une primitive n'est jamais égale à la fonction, c'est sa dérivée qui l'est.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Laquelle de ces fonctions est une primitive de f(x) = 4x³ − 6x + 1 sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ x⁴ − 3x² + x + 2"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ 12x² − 6"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ x⁴ − 6x² + x"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 4x⁴ − 3x² + x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On dérive chaque candidat et l'on regarde s'il redonne f. (x⁴ − 3x² + x + 2)′ = 4x³ − 6x + 1 = f(x) ✓ : la constante 2 disparaît à la dérivation, ce qui n'empêche pas d'être primitive. La fonction 12x² − 6 est la dérivée de f, pas une primitive. La fonction x⁴ − 6x² + x oublie de diviser le terme en x par 2 : sa dérivée vaut 4x³ − 12x + 1. La fonction 4x⁴ − 3x² + x oublie de diviser par 4 : une primitive de 4x³ est 4x⁴/4 = x⁴, et non 4x⁴ ; sa dérivée vaut 16x³ − 6x + 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Laquelle de ces fonctions admet des primitives sur ℝ d'après le théorème d'existence du cours ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ 1/(x − 3)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ tan x"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ x pour x < 0 et x + 1 pour x ≥ 0"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ |x − 2|"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le théorème d'existence a pour hypothèse la continuité sur l'intervalle ℝ. La fonction x ↦ |x − 2| est continue sur ℝ ✓ (valeur absolue d'une fonction affine) ; elle n'est pas dérivable en 2, mais la dérivabilité n'est pas l'hypothèse, et elle a donc des primitives sur ℝ. La fonction x ↦ 1/(x − 3) n'est pas définie en 3. La fonction tan n'est pas définie en π/2. La fonction qui vaut x avant 0 et x + 1 ensuite saute de 0 à 1 en 0 : elle n'est pas continue sur ℝ, le théorème ne s'applique pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "F et G sont deux primitives d'une même fonction continue sur ℝ. Dans un repère (O, i⃗, j⃗), les courbes de F et de G se déduisent l'une de l'autre par :",
+      "options": [
+        {
+          "id": "a",
+          "text": "une translation de vecteur colinéaire à i⃗"
+        },
+        {
+          "id": "b",
+          "text": "une translation de vecteur colinéaire à j⃗"
+        },
+        {
+          "id": "c",
+          "text": "une symétrie par rapport à l'axe des abscisses"
+        },
+        {
+          "id": "d",
+          "text": "une symétrie par rapport à la droite d'équation y = x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le théorème du cours dit que F − G est constante : G(x) = F(x) + k pour tout x. Chaque point (x ; F(x)) devient (x ; F(x) + k) : c'est une translation verticale, de vecteur k·j⃗ ✓. Une translation horizontale, de vecteur colinéaire à i⃗, viendrait d'une relation G(x) = F(x − a), qui change les pentes à abscisse donnée. La symétrie d'axe les abscisses donnerait G = −F, donc G′ = −f : ce ne sont plus des primitives de la même fonction. La symétrie par rapport à y = x relie une fonction à sa réciproque, notion du chapitre 4 (fonctions réciproques) qui n'a rien à voir ici.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = 6x² sur ℝ. Quelle est la primitive F de f sur ℝ qui vérifie F(−1) = 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = 2x³ + 5"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = 2x³ + 3"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = 2x³ + 1"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = 2x³ − 5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La famille des primitives de f est x ↦ 2x³ + c. La condition F(−1) = 3 donne 2 × (−1)³ + c = −2 + c = 3, donc c = 5 et F(x) = 2x³ + 5 ✓ (F′(x) = 6x² ✓ et F(−1) = −2 + 5 = 3 ✓). La réponse 2x³ + 3 recopie la valeur 3 comme constante sans calculer F(−1) : elle donne F(−1) = 1. La réponse 2x³ + 1 se trompe de signe sur (−1)³ : elle écrit F(−1) = 2 + c. La réponse 2x³ − 5 prend l'opposé de la bonne constante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = 1/x⁵ sur ]0, +∞[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ 1/(4x⁴)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ −5/x⁶"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ −1/(4x⁴)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ −1/(5x⁴)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La ligne 1/xⁿ de la table donne x^(−n+1)/(−n+1) : avec n = 5, on obtient x^(−4)/(−4) = −1/(4x⁴) ✓. Contrôle : (−(1/4)x^(−4))′ = x^(−5) = 1/x⁵ ✓. La réponse 1/(4x⁴) oublie le signe moins : sa dérivée vaut −1/x⁵. La réponse −5/x⁶ est la dérivée de f, pas une primitive. La réponse −1/(5x⁴) divise par n au lieu de n − 1 : sa dérivée vaut 4/(5x⁵).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une primitive de f(x) = 2 sin(3x + 1) sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ (2/3) cos(3x + 1)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ −(2/3) cos(3x + 1)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ −6 cos(3x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ −2 cos(3x + 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La ligne sin(ωx + φ) de la table donne −(1/ω) cos(ωx + φ), ici avec ω = 3, et le facteur 2 sort par linéarité : F(x) = −(2/3) cos(3x + 1) ✓. Contrôle : F′(x) = −(2/3) × (−3 sin(3x + 1)) = 2 sin(3x + 1) ✓. La réponse (2/3) cos(3x + 1) oublie le signe moins de la ligne sin → −cos : sa dérivée vaut −2 sin(3x + 1). La réponse −6 cos(3x + 1) multiplie par ω au lieu de diviser : sa dérivée vaut 18 sin(3x + 1). La réponse −2 cos(3x + 1) oublie le facteur 1/ω : sa dérivée vaut 6 sin(3x + 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = √x + 1/x² sur ]0, +∞[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ (2/3)x√x + 1/x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ 1/(2√x) − 2/x³"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ 2√x − 1/x"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ (2/3)x√x − 1/x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par linéarité on primitive terme à terme : √x donne (2/3)x√x, et 1/x² donne −1/x. D'où F(x) = (2/3)x√x − 1/x ✓. Contrôle : F′(x) = √x + 1/x² ✓. La réponse (2/3)x√x + 1/x oublie le signe moins du second terme : sa dérivée vaut √x − 1/x². La réponse 1/(2√x) − 2/x³ est la dérivée de f (on a dérivé au lieu de primitiver). La réponse 2√x − 1/x prend pour √x la primitive de 1/√x : sa dérivée vaut 1/√x + 1/x².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = (2x − 3)/√(x² − 3x + 5) sur ℝ, où x² − 3x + 5 > 0. Une primitive de f sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ 2√(x² − 3x + 5)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ √(x² − 3x + 5)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ 4√(x² − 3x + 5)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ (2/3)(x² − 3x + 5)√(x² − 3x + 5)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On repère le motif u′/√u avec u(x) = x² − 3x + 5, de dérivée u′(x) = 2x − 3 : f est exactement u′/√u, et la table donne 2√u ✓. Contrôle : (2√u)′ = 2 × u′/(2√u) = u′/√u = f(x) ✓. La réponse √(x² − 3x + 5) oublie le facteur 2 de la table : sa dérivée vaut f(x)/2. La réponse 4√(x² − 3x + 5) double ce facteur : sa dérivée vaut 2f(x). La réponse (2/3)(x² − 3x + 5)√(x² − 3x + 5) applique la ligne u′√u alors que u′ est au dénominateur : sa dérivée vaut (2x − 3)√(x² − 3x + 5).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = 3/cos²x sur ]−π/2, π/2[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ tan x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ 6 sin x/cos³x"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ 3 tan x"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 3 tan x − 3x"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La table donne tan x comme primitive de 1 + tan²x = 1/cos²x, et le facteur 3 sort par linéarité : F(x) = 3 tan x ✓. Contrôle : (3 tan x)′ = 3(1 + tan²x) = 3/cos²x ✓. La réponse tan x oublie le facteur 3 : sa dérivée vaut 1/cos²x. La réponse 6 sin x/cos³x est la dérivée de f (on a dérivé au lieu de primitiver). La réponse 3 tan x − 3x confond 1/cos²x avec tan²x, dont la primitive est tan x − x : sa dérivée vaut 3tan²x.",
+      "difficulty": 2
+    }
+  ]
+}

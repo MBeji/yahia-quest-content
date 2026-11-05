@@ -1,0 +1,165 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les sources cachées",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Déterminer une primitive sur ℝ de la fonction f définie par f(x) = sin³(5x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = −cos(5x) + cos³(5x)/3"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = −cos(5x)/5 − cos³(5x)/15"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = −cos(5x)/5 + cos³(5x)/15"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = sin⁴(5x)/20"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un cube de sinus se traite par découpage : sin³(5x) = sin(5x)(1 − cos²(5x)) = sin(5x) − sin(5x)cos²(5x). Premier morceau : une primitive de sin(5x) est −(1/5)cos(5x). Second morceau : avec u(x) = cos(5x), u′(x) = −5 sin(5x), donc sin(5x)cos²(5x) = −(1/5)u′u², de primitive −(1/5) × u³/3 = −cos³(5x)/15, et le signe moins devant le morceau le transforme en +cos³(5x)/15. D'où F(x) = −cos(5x)/5 + cos³(5x)/15 ✓. Vérification : F′(x) = sin(5x) + (3cos²(5x) × (−5 sin 5x))/15 = sin(5x) − sin(5x)cos²(5x) = sin³(5x) ✓. Le piège courant : oublier le facteur 1/ω sur les deux termes, ce qui quintuple la dérivée (−cos(5x) + cos³(5x)/3 a pour dérivée 5sin³(5x)) ; se tromper de signe sur le second terme, de dérivée sin(5x)(1 + cos²(5x)) ; ou traiter sin³(5x) comme u³ en écrivant u⁴/4 corrigé du facteur 1/5, soit sin⁴(5x)/20, dont la dérivée sin³(5x)cos(5x) est un produit, donc jamais f.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la primitive F de f(x) = 1/cos⁴x sur ]−π/2, π/2[ qui vérifie F(π/4) = 2 ? (Indication : 1/cos²x = 1 + tan²x.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = tan x + (tan³x)/3 + 2/3"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = tan x + (tan³x)/3 + 2"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = (tan³x)/3 + 5/3"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = tan x + tan³x + 2/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On écrit 1/cos⁴x = (1/cos²x) × (1/cos²x) = (1 + tan²x)(1 + tan²x) = (1 + tan²x) + tan²x(1 + tan²x). Le premier terme a pour primitive tan x. Le second est un motif : avec u = tan x, u′ = 1 + tan²x, il vaut u′u², de primitive u³/3. Les primitives de f sont donc tan x + tan³x/3 + c. Condition : tan(π/4) = 1, donc F(π/4) = 1 + 1/3 + c = 2 donne c = 2/3, soit F(x) = tan x + (tan³x)/3 + 2/3 ✓. Vérification : F′(x) = (1 + tan²x) + tan²x(1 + tan²x) = (1 + tan²x)² = 1/cos⁴x ✓. Le piège courant : oublier d'ajuster la constante (tan x + tan³x/3 + 2 vaut 10/3 en π/4) ; abandonner le premier terme, comme dans (tan³x)/3 + 5/3 qui vérifie bien F(π/4) = 2 mais dont la dérivée est tan²x/cos²x ; ou oublier le diviseur 3 du motif u′u², ce qui donne tan x + tan³x + 2/3 et une dérivée (1 + tan²x)(1 + 3tan²x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur ]−2, +∞[ par f(x) = (2x² + 5x + 7)/(x + 2)⁴. Sachant que f(x) = b/(x + 2)² + c/(x + 2)³ + d/(x + 2)⁴, déterminer la primitive F de f sur ]−2, +∞[ telle que F(0) = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = −2/(x + 2) + 3/(2(x + 2)²) − 5/(3(x + 2)³)"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = −2/(x + 2) + 3/(2(x + 2)²) − 5/(3(x + 2)³) + 5/6"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = −2/(x + 2) + 3/(2(x + 2)²) − 5/(3(x + 2)³) − 5/6"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = −2/(x + 2) − 5/(2(x + 2)²) − 7/(3(x + 2)³) + 23/12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Étape 1, l'identification. En réduisant au même dénominateur, la forme proposée vaut (b(x + 2)² + c(x + 2) + d)/(x + 2)⁴ : il faut b(x + 2)² + c(x + 2) + d = 2x² + 5x + 7. Le terme en x² donne b = 2 ; le terme en x donne 4b + c = 5, donc c = −3 ; le terme constant donne 4b + 2c + d = 7, donc 8 − 6 + d = 7 et d = 5. Étape 2, la primitivation terme à terme avec la ligne 1/uⁿ : 2/(x + 2)² donne −2/(x + 2) ; −3/(x + 2)³ donne 3/(2(x + 2)²) ; 5/(x + 2)⁴ donne −5/(3(x + 2)³). Les primitives de f sont donc F_k(x) = −2/(x + 2) + 3/(2(x + 2)²) − 5/(3(x + 2)³) + k. Étape 3, la condition : F_k(0) = −1 + 3/8 − 5/24 + k = −20/24 + k = −5/6 + k, donc F(0) = 0 donne k = 5/6. D'où F(x) = −2/(x + 2) + 3/(2(x + 2)²) − 5/(3(x + 2)³) + 5/6 ✓. Vérification : F(0) = −5/6 + 5/6 = 0 et F′(x) = (2x² + 5x + 7)/(x + 2)⁴ ✓. Les pièges : oublier la constante (la première forme est une primitive, mais F(0) = −5/6 ≠ 0) ; se tromper de signe sur la constante (F(0) = −5/3 ≠ 0) ; ou lire les coefficients du numérateur comme b = 2, c = 5, d = 7 sans développer (x + 2)² : on obtient la dernière fonction proposée, qui vaut bien 0 en 0 (−1 − 5/8 − 7/24 + 23/12 = 0), mais dont la dérivée est (2x² + 13x + 25)/(x + 2)⁴ ≠ f(x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (x² + 4)/(x² + x + 4) sur [0, +∞[, F la primitive de f sur [0, +∞[ qui s'annule en 0, et, pour tout entier m ≥ 1, x_m l'unique réel positif tel que F(x_m) = m. Quelle relation est vraie pour tout m ≥ 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4m/5 ≤ x_m ≤ m"
+        },
+        {
+          "id": "b",
+          "text": "x_m = m"
+        },
+        {
+          "id": "c",
+          "text": "x_m ≤ 4m/5"
+        },
+        {
+          "id": "d",
+          "text": "m ≤ x_m ≤ 5m/4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Étude de f : f′(x) = (x² − 4)/(x² + x + 4)², donc f décroît de f(0) = 1 à f(2) = 8/10 = 4/5 sur [0, 2], puis croît vers sa limite 1. Ainsi 4/5 ≤ f(t) ≤ 1 pour tout t ≥ 0, avec f(t) < 1 dès que t > 0. Comme F′ = f et F(0) = 0, l'inégalité des accroissements finis donne (4/5)x ≤ F(x) ≤ x pour x ≥ 0. En x = x_m : (4/5)x_m ≤ F(x_m) = m ≤ x_m, donc m ≤ x_m et x_m ≤ 5m/4 ✓. La relation 4m/5 ≤ x_m ≤ m lit l'encadrement de F comme un encadrement de x_m sans l'inverser : en réalité F(x) < x impose x_m > m. La relation x_m = m suppose F(x) = x, alors que f < 1 pour x > 0. La relation x_m ≤ 4m/5 est contredite par x_m ≥ m.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Soit f(x) = 2 sin x cos x sur ℝ. Quelles fonctions sont des primitives de f sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ sin²x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ −cos²x"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ sin(2x)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ −(1/2) cos(2x)"
+        },
+        {
+          "id": "e",
+          "text": "x ↦ cos(2x)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Pour chaque fonction, on dérive. (sin²x)′ = 2 sin x cos x = f(x) ✓ (motif u′u avec u = sin x, doublé). (−cos²x)′ = −2cos x × (−sin x) = 2 sin x cos x = f(x) ✓ (motif u′u avec u = cos x). (−(1/2)cos 2x)′ = −(1/2) × (−2 sin 2x) = sin 2x = 2 sin x cos x = f(x) ✓. Ces trois fonctions sont bien primitives de la même f : elles diffèrent d'une constante, par exemple sin²x − (−cos²x) = 1 et sin²x − (−(1/2)cos 2x) = sin²x + (1 − 2sin²x)/2 = 1/2. En revanche sin(2x) est une primitive de 2cos(2x), pas de sin(2x) = f(x) : on a pris la ligne cos → sin au lieu de sin → −cos ; et (cos 2x)′ = −2 sin 2x vaut −2f(x), il manque le signe et le facteur 1/ω.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F la primitive de f(x) = 1/(4 + x²) sur ℝ qui s'annule en 0, et g la fonction définie sur ]−π/2, π/2[ par g(t) = F(2 tan t). On calcule g′(t), puis g(t). Que vaut alors F(2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/4"
+        },
+        {
+          "id": "b",
+          "text": "π/8"
+        },
+        {
+          "id": "c",
+          "text": "π/2"
+        },
+        {
+          "id": "d",
+          "text": "1/8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "F est dérivable et g(t) = F(2 tan t) est une composée : g′(t) = F′(2 tan t) × 2(1 + tan²t) = 2(1 + tan²t)/(4 + 4 tan²t) = 2(1 + tan²t)/(4(1 + tan²t)) = 1/2. Donc g(t) = t/2 + c, et g(0) = F(0) = 0 donne c = 0 : g(t) = t/2. Comme 2 = 2 tan(π/4), F(2) = g(π/4) = π/8 ✓. La réponse π/4 suppose g′ = 1 : elle oublie à la fois le facteur 2 de (2 tan t)′ et le facteur 4 du dénominateur 4 + 4 tan²t. La réponse π/2 garde le facteur 2 mais oublie le 4 du dénominateur : g′ = 2, donc g(t) = 2t. La réponse 1/8 confond F(2) avec f(2) = 1/(4 + 4) : la valeur de la primitive n'est pas celle de la fonction.",
+      "difficulty": 3
+    }
+  ]
+}
