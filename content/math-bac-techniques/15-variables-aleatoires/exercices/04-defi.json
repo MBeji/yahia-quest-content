@@ -1,0 +1,106 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les maîtres des lois",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Soit X une variable aléatoire continue, de densité f et de fonction de répartition F. Quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(X = 2) = 0"
+        },
+        {
+          "id": "b",
+          "text": "f(2) est la probabilité de l'événement (X = 2)"
+        },
+        {
+          "id": "c",
+          "text": "p(1 < X < 3) = p(1 ≤ X ≤ 3)"
+        },
+        {
+          "id": "d",
+          "text": "f ne prend jamais de valeur supérieure à 1"
+        },
+        {
+          "id": "e",
+          "text": "p(X > 2) = 1 − F(2)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Pour une variable continue, une valeur isolée a une probabilité nulle : p(X = 2) = 0, ce qui rend identiques les inégalités strictes et larges, donc p(1 < X < 3) = p(1 ≤ X ≤ 3). Le contraire de (X ≤ 2) est (X > 2), d'où p(X > 2) = 1 − F(2). En revanche, f(2) est une hauteur de courbe et non une probabilité, et une densité peut dépasser 1 : sur [0 ; 0,5], la loi uniforme a pour densité 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève calcule la variance de X, qui prend les valeurs 0, 1 et 3 avec les probabilités 0,3 ; 0,5 et 0,2. Ligne 1 : E(X) = 0 × 0,3 + 1 × 0,5 + 3 × 0,2 = 1,1. Ligne 2 : E(X²) = 0 × 0,3 + 1 × 0,5 + 9 × 0,2 = 2,3. Ligne 3 : V(X) = E(X²) − E(X) = 2,3 − 1,1 = 1,2. Ligne 4 : σ(X) = √1,2 ≈ 1,10. À quelle ligne se trouve la première erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ligne 1"
+        },
+        {
+          "id": "b",
+          "text": "Ligne 2"
+        },
+        {
+          "id": "c",
+          "text": "Ligne 3"
+        },
+        {
+          "id": "d",
+          "text": "Ligne 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les lignes 1 et 2 sont justes : E(X) = 0,5 + 0,6 = 1,1 et E(X²) = 0,5 + 1,8 = 2,3. L'erreur est à la ligne 3 : la formule retranche le carré de l'espérance, (E(X))² = 1,1² = 1,21, et non E(X) = 1,1. On obtient V(X) = 2,3 − 1,21 = 1,09 et σ(X) ≈ 1,04. La ligne 4 reprend une valeur fausse héritée de la ligne 3, mais son calcul de racine est correct : ce n'est pas la première erreur.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une urne contient 3 boules jaunes et 5 boules bleues. On tire simultanément 3 boules et on note X le nombre de boules jaunes obtenues. Calculer l'espérance de X. Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 1.125
+      },
+      "explanation": "Il y a C₈³ = 56 tirages équiprobables. p(X = 0) = C₅³/56 = 10/56 ; p(X = 1) = 3 × C₅²/56 = 30/56 ; p(X = 2) = C₃² × 5/56 = 15/56 ; p(X = 3) = 1/56, et 10 + 30 + 15 + 1 = 56 ✓. Alors E(X) = (0 × 10 + 1 × 30 + 2 × 15 + 3 × 1)/56 = 63/56 = 1,125 ✓. Le tirage simultané n'est pas une répétition indépendante : on ne peut pas utiliser une loi binomiale pour la loi de X.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une variable aléatoire X ne prend que les valeurs 0, 1, 2 et 3. Les probabilités de 0 et de 2 sont 0,1 et 0,4, celles de 1 et de 3 sont notées a et b. Sachant que E(X) = 1,9, calculer la variance de X. Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.89
+      },
+      "explanation": "La somme des probabilités vaut 1 : a + b = 1 − 0,1 − 0,4 = 0,5. L'espérance donne a + 0,8 + 3b = 1,9, soit a + 3b = 1,1. En soustrayant, 2b = 0,6 : b = 0,3 et a = 0,2. Alors E(X²) = 0,2 + 4 × 0,4 + 9 × 0,3 = 0,2 + 1,6 + 2,7 = 4,5, et V(X) = 4,5 − 1,9² = 4,5 − 3,61 = 0,89 ✓. Il faut d'abord déterminer a et b : sans eux, E(X²) est inconnue.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un capteur détecte un défaut avec la probabilité 0,3 à chaque contrôle, les contrôles étant indépendants. On effectue n contrôles. Quel est le plus petit entier n pour lequel la probabilité de détecter le défaut au moins une fois est supérieure ou égale à 0,95 ?",
+      "answerKey": {
+        "value": 9
+      },
+      "explanation": "Le nombre de détections suit ℬ(n ; 0,3), donc p(au moins une) = 1 − 0,7ⁿ. On veut 1 − 0,7ⁿ ≥ 0,95, soit 0,7ⁿ ≤ 0,05, soit n ln 0,7 ≤ ln 0,05. Comme ln 0,7 < 0 le sens s'inverse : n ≥ ln 0,05 / ln 0,7 ≈ 8,40. Contrôle : 0,7⁸ ≈ 0,0576 > 0,05 ne suffit pas, alors que 0,7⁹ ≈ 0,0404 ≤ 0,05 convient : n = 9 ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La durée de vie X d'une lampe, en années, suit la loi exponentielle de paramètre 0,5. Un lot comprend 6 lampes dont les durées de vie sont indépendantes. Soit Y le nombre de lampes encore en état de marche au bout de 2 ans. Calculer l'espérance de Y, arrondie au centième.",
+      "answerKey": {
+        "value": 2.2073,
+        "tolerance": 0.005
+      },
+      "explanation": "Une lampe fonctionne encore au bout de 2 ans avec la probabilité p(X > 2) = e^(−0,5 × 2) = e^(−1) ≈ 0,3679. Les 6 lampes sont indépendantes : Y suit ℬ(6 ; e^(−1)). Alors E(Y) = 6 × e^(−1) ≈ 6 × 0,3679 = 2,2073, soit 2,21 au centième ✓.",
+      "difficulty": 3
+    }
+  ]
+}

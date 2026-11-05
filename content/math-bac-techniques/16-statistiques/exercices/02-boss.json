@@ -1,0 +1,124 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la droite",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un parc éolien note sa production Y (en dizaines de MWh) pendant sept trimestres, X étant le rang du trimestre : (1 ; 4), (2 ; 8), (3 ; 9), (4 ; 11), (5 ; 12), (6 ; 16) et (7 ; 17). On ajuste le nuage par la méthode de Mayer, en plaçant les rangs 1 à 4 dans P₁ et les rangs 5 à 7 dans P₂. Quelle production prévoit-on au trimestre de rang 10 ?",
+      "answerKey": {
+        "value": 23
+      },
+      "explanation": "P₁ donne G₁(2,5 ; (4 + 8 + 9 + 11) / 4) = (2,5 ; 8) et P₂ donne G₂(6 ; (12 + 16 + 17) / 3) = (6 ; 15). La pente est (15 − 8) / (6 − 2,5) = 2, donc y − 8 = 2(x − 2,5), soit y = 2x + 3. Contrôle : G(4 ; 77 / 7) = (4 ; 11) vérifie 2 × 4 + 3 = 11 ✓. Pour x = 10, y = 23 dizaines de MWh.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule de ces affirmations sur les droites de régression D₁ (de Y en X) et D₂ (de X en Y) est correcte. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite D₁ ne passe pas par G, contrairement à la droite de Mayer"
+        },
+        {
+          "id": "b",
+          "text": "Les droites D₁ et D₂ se coupent toutes deux au point moyen G du nuage"
+        },
+        {
+          "id": "c",
+          "text": "Si Cov(X, Y) = 0, les droites D₁ et D₂ sont confondues en une seule droite"
+        },
+        {
+          "id": "d",
+          "text": "Les droites D₁ et D₂ sont confondues dès que |r| est au moins égal à 0,75"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "D₁ : y = ax + b avec b = Ȳ − aX̄ vérifie Ȳ = aX̄ + b, donc passe par G ; de même D₂ avec b' = X̄ − a'Ȳ. Elles se coupent donc en G. Si Cov = 0, D₁ est la droite horizontale y = Ȳ et D₂ la droite verticale x = X̄ : elles sont perpendiculaires, non confondues. Elles ne sont confondues que si |r| = 1 (points alignés), pas dès que |r| ≥ 0,75, et D₁ passe par G comme la droite de Mayer.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un artisan note, sur cinq semaines, le nombre Y de devis envoyés, X étant le rang de la semaine : (1 ; 3), (2 ; 4), (3 ; 7), (4 ; 8) et (5 ; 8). À l'aide de la droite de régression de Y en X obtenue par les moindres carrés, quel nombre de devis prévoit-on pour la semaine de rang 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8,5"
+        },
+        {
+          "id": "b",
+          "text": "9,8"
+        },
+        {
+          "id": "c",
+          "text": "11,6"
+        },
+        {
+          "id": "d",
+          "text": "15,8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a X̄ = 3, Ȳ = 30 / 5 = 6, V(X) = 2 et la moyenne des produits vaut 104 / 5 = 20,8, donc Cov = 20,8 − 18 = 2,8. Alors a = 2,8 / 2 = 1,4 et b = 6 − 1,4 × 3 = 1,8, d'où y = 1,4x + 1,8 et, pour x = 7, y = 9,8 + 1,8 = 11,6. Oublier b donne 9,8, prendre b = Ȳ donne 15,8, et prendre pour pente a' = Cov / V(Y) = 2,8 / 4,4 ≈ 0,64 dans y = a'x + (Ȳ − a'X̄) donne environ 8,5.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un nuage de 10 points est séparé en deux parties de 5 points. Les points moyens des deux parties sont G₁(3 ; 8) et G₂(9 ; 20), et la moyenne des abscisses du nuage est X̄ = 6. Quelle est la moyenne Ȳ des ordonnées ?",
+      "answerKey": {
+        "value": 14
+      },
+      "explanation": "La droite de Mayer (G₁G₂) passe par le point moyen G(X̄ ; Ȳ) du nuage. Sa pente est (20 − 8) / (9 − 3) = 2, donc y = 8 + 2(x − 3) et, pour x = X̄ = 6, Ȳ = 8 + 2 × 3 = 14. Contrôle : les deux parties ayant le même effectif, G est le milieu de [G₁G₂], soit (8 + 20) / 2 = 14 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur 40 ateliers, X est le nombre de machines utilisées (1, 2 ou 3) et Y le nombre de pièces produites par jour (10, 20 ou 30). Le tableau donne les effectifs. On a calculé X̄ = 2,1 et Ȳ = 20. Quelle est la covariance Cov(X, Y) ?\n<svg viewBox=\"0 0 330 158\">\n<title>Effectifs d'une série double : X (nombre de machines utilisées) en lignes, Y (pièces produites) en colonnes</title>\n<rect x=\"3\" y=\"3\" width=\"96\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"51\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >X ↓  Y →</text>\n<rect x=\"99\" y=\"3\" width=\"57\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"127.5\" y=\"22\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >10</text>\n<rect x=\"156\" y=\"3\" width=\"57\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184.5\" y=\"22\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >20</text>\n<rect x=\"213\" y=\"3\" width=\"57\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"241.5\" y=\"22\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >30</text>\n<rect x=\"270\" y=\"3\" width=\"57\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"298.5\" y=\"22\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >Total</text>\n<rect x=\"3\" y=\"33\" width=\"96\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"51\" y=\"52\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >1</text>\n<rect x=\"99\" y=\"33\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"127.5\" y=\"52\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >8</text>\n<rect x=\"156\" y=\"33\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184.5\" y=\"52\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >2</text>\n<rect x=\"213\" y=\"33\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"241.5\" y=\"52\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >0</text>\n<rect x=\"270\" y=\"33\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"298.5\" y=\"52\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >10</text>\n<rect x=\"3\" y=\"63\" width=\"96\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"51\" y=\"82\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >2</text>\n<rect x=\"99\" y=\"63\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"127.5\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >4</text>\n<rect x=\"156\" y=\"63\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184.5\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >10</text>\n<rect x=\"213\" y=\"63\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"241.5\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >2</text>\n<rect x=\"270\" y=\"63\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"298.5\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >16</text>\n<rect x=\"3\" y=\"93\" width=\"96\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"51\" y=\"112\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >3</text>\n<rect x=\"99\" y=\"93\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"127.5\" y=\"112\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >0</text>\n<rect x=\"156\" y=\"93\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184.5\" y=\"112\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >4</text>\n<rect x=\"213\" y=\"93\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"241.5\" y=\"112\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >10</text>\n<rect x=\"270\" y=\"93\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"298.5\" y=\"112\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >14</text>\n<rect x=\"3\" y=\"123\" width=\"96\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"51\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >Total</text>\n<rect x=\"99\" y=\"123\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"127.5\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >12</text>\n<rect x=\"156\" y=\"123\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184.5\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >16</text>\n<rect x=\"213\" y=\"123\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"241.5\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >12</text>\n<rect x=\"270\" y=\"123\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"298.5\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >40</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,5"
+        },
+        {
+          "id": "b",
+          "text": "42"
+        },
+        {
+          "id": "c",
+          "text": "46,5"
+        },
+        {
+          "id": "d",
+          "text": "88,5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La moyenne des produits vaut (1 × 10 × 8 + 1 × 20 × 2 + 2 × 10 × 4 + 2 × 20 × 10 + 2 × 30 × 2 + 3 × 20 × 4 + 3 × 30 × 10) / 40 = (80 + 40 + 80 + 400 + 120 + 240 + 900) / 40 = 1860 / 40 = 46,5. Donc Cov(X, Y) = 46,5 − 2,1 × 20 = 46,5 − 42 = 4,5. Le résultat 46,5 oublie de retrancher X̄ × Ȳ, 42 est ce produit, et 88,5 additionne les deux au lieu de les soustraire.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un nuage courbe (X, Y) a été redressé par le changement de variable Z = ln Y, et la droite de régression de Z en X a pour équation z = 0,3x + 2. Quelle expression de Y en fonction de x en déduit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Y ≈ 0,3e^(2x)"
+        },
+        {
+          "id": "b",
+          "text": "Y ≈ 2e^(0,3x)"
+        },
+        {
+          "id": "c",
+          "text": "Y ≈ 7,39e^(0,3x)"
+        },
+        {
+          "id": "d",
+          "text": "Y ≈ 7,39 + e^(0,3x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On revient à Y par l'exponentielle : Y = e^z = e^(0,3x + 2) = e² × e^(0,3x) ≈ 7,39 × e^(0,3x), car e^(u + v) = e^u × e^v. Garder 2 comme facteur oublie d'exponentier la constante, Y ≈ 0,3e^(2x) échange les deux coefficients, et 7,39 + e^(0,3x) transforme le produit en somme.",
+      "difficulty": 2
+    }
+  ]
+}

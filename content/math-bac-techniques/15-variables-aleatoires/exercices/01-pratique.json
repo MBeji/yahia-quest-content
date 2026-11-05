@@ -1,0 +1,109 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les variables aléatoires",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une urne contient 3 boules rouges et 2 boules noires. On tire une boule : si elle est rouge, on gagne 2 dinars ; si elle est noire, on perd 3 dinars. Soit X le gain algébrique. Calculer p(X = −3). Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.4
+      },
+      "explanation": "X = −3 correspond au tirage d'une boule noire : 2 boules sur 5, donc p(X = −3) = 2/5 = 0,4 ✓. Contrôle : p(X = 2) = 3/5 = 0,6 et 0,4 + 0,6 = 1 ✓.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un jeu a quatre issues numérotées de 1 à 4, de probabilités respectives 0,1 ; a ; 0,4 et 0,2. Quelle est la valeur de a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,3"
+        },
+        {
+          "id": "b",
+          "text": "0,5"
+        },
+        {
+          "id": "c",
+          "text": "0,6"
+        },
+        {
+          "id": "d",
+          "text": "0,7"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La somme des probabilités d'une loi vaut 1 : a = 1 − (0,1 + 0,4 + 0,2) = 1 − 0,7 = 0,3 ✓. Le nombre 0,7 est la somme des trois probabilités connues, 0,6 = 1 − 0,4 ne retranche que 0,4, et 0,5 = 1 − 0,1 − 0,4 oublie 0,2.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "X prend les valeurs 1, 2 et 5 avec les probabilités 0,4 ; 0,4 et 0,2. Calculer E(X). Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 2.2
+      },
+      "explanation": "E(X) = 1 × 0,4 + 2 × 0,4 + 5 × 0,2 = 0,4 + 0,8 + 1 = 2,2 ✓. La moyenne simple (1 + 2 + 5)/3 ≈ 2,67 ignorerait les probabilités et serait fausse.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La figure donne la fonction de répartition F d'une variable aléatoire X. Quelle est la probabilité p(X = 2) ?\n<svg viewBox=\"0 0 340 230\">\n<title>Graphique en escalier d'une fonction de répartition F : marches en 1, 2 et 4</title>\n<path d=\"M40 190 L334.4 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<path d=\"M50 196 L50 32\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<text x=\"334.4\" y=\"208\" text-anchor=\"end\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text>\n<text x=\"54\" y=\"28\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">F(x)</text>\n<path d=\"M50 190 L102 190\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M102 169 L154 169\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M154 106 L258 106\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M258 50 L320.4 50\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<circle cx=\"102\" cy=\"190\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"102\" cy=\"169\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"154\" cy=\"169\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"154\" cy=\"106\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"258\" cy=\"106\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"258\" cy=\"50\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<path d=\"M50 169 L46 169\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"165\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,15</text>\n<path d=\"M50 106 L46 106\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"102\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,6</text>\n<path d=\"M50 50 L46 50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"46\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text>\n<path d=\"M102 190 L102 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<path d=\"M154 190 L154 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<path d=\"M258 190 L258 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"102\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text>\n<text x=\"154\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text>\n<text x=\"258\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,15"
+        },
+        {
+          "id": "b",
+          "text": "0,4"
+        },
+        {
+          "id": "c",
+          "text": "0,45"
+        },
+        {
+          "id": "d",
+          "text": "0,6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La probabilité d'une valeur est la hauteur de la marche : en x = 2, F passe de 0,15 à 0,6, donc p(X = 2) = 0,6 − 0,15 = 0,45 ✓. Lire 0,6 confond F(2) avec p(X = 2), 0,15 est p(X = 1) et 0,4 est la hauteur de la dernière marche, en x = 4.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un élève répond au hasard à un questionnaire de 5 questions : à chacune, il tombe juste avec la probabilité 0,2, indépendamment des autres. Soit X le nombre de bonnes réponses. Calculer p(X = 1). Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.4096
+      },
+      "explanation": "L'élève répète 5 fois la même épreuve indépendante avec p = 0,2 : X suit ℬ(5 ; 0,2). Alors p(X = 1) = C₅¹ × 0,2 × 0,8⁴ = 5 × 0,2 × 0,4096 = 0,4096 ✓, car 0,8⁴ = 0,4096 et 5 × 0,2 = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "X suit la loi exponentielle de paramètre 0,4. Que vaut p(X ≥ 5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(−5)"
+        },
+        {
+          "id": "b",
+          "text": "0,4 e^(−2)"
+        },
+        {
+          "id": "c",
+          "text": "e^(−2)"
+        },
+        {
+          "id": "d",
+          "text": "1 − e^(−2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour une loi exponentielle, p(X ≥ t) = e^(−λt) = e^(−0,4 × 5) = e^(−2) ≈ 0,135 ✓. L'expression 1 − e^(−2) est p(X ≤ 5), la probabilité contraire ; 0,4 e^(−2) est la valeur f(5) de la densité, qui n'est pas une probabilité ; e^(−5) oublie de multiplier t par λ.",
+      "difficulty": 2
+    }
+  ]
+}

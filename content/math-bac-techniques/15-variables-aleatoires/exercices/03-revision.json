@@ -1,0 +1,144 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Variables aléatoires réelles",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Un jeu a pour gain algébrique X : X vaut −5, 0 et 10 avec les probabilités respectives 0,4 ; 0,4 et 0,2. Ce jeu est-il favorable, défavorable ou équitable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Favorable"
+        },
+        {
+          "id": "b",
+          "text": "Défavorable"
+        },
+        {
+          "id": "c",
+          "text": "Équitable"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut pas conclure sans la variance"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E(X) = (−5) × 0,4 + 0 × 0,4 + 10 × 0,2 = −2 + 0 + 2 = 0 : le jeu est équitable ✓. La variance mesure la dispersion des gains, pas l'équité : elle n'intervient pas dans cette conclusion, qui ne repose que sur le signe de l'espérance. Un jeu favorable aurait E(X) > 0 et un jeu défavorable E(X) < 0.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Soit F la fonction de répartition d'une variable aléatoire discrète X. Quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F est croissante sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = p(X = x) pour tout réel x"
+        },
+        {
+          "id": "c",
+          "text": "p(X > x) = 1 − F(x) pour tout réel x"
+        },
+        {
+          "id": "d",
+          "text": "F est continue à droite en chaque valeur prise par X"
+        },
+        {
+          "id": "e",
+          "text": "F peut prendre des valeurs supérieures à 1"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "F(x) = p(X ≤ x) ne peut que cumuler des probabilités quand x augmente : elle est croissante. L'événement (X > x) est le contraire de (X ≤ x), d'où p(X > x) = 1 − F(x). En une valeur xᵢ, F(xᵢ) est le haut de la marche, donc F est continue à droite. En revanche, F(x) = p(X ≤ x) cumule les probabilités, elle n'est pas égale à p(X = x), et comme F est une probabilité elle reste entre 0 et 1.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "On veut calculer une probabilité liée à un nombre de succès dans une série d'épreuves. Remets dans l'ordre les étapes de la méthode avec la loi binomiale.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Écrire p(X = k) = Cₙᵏ pᵏ (1 − p)ⁿ⁻ᵏ avec les valeurs de n et de p"
+        },
+        {
+          "id": "b",
+          "text": "Calculer la probabilité demandée, ou E(X) = np et V(X) = np(1 − p)"
+        },
+        {
+          "id": "c",
+          "text": "Vérifier que les épreuves sont identiques, indépendantes et à deux issues"
+        },
+        {
+          "id": "d",
+          "text": "En déduire que X suit ℬ(n ; p), en précisant n et p"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "d",
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "On vérifie d'abord que le schéma de Bernoulli s'applique : sans épreuves identiques et indépendantes, la formule serait fausse. On en déduit ensuite que X suit ℬ(n ; p) en précisant n et p, ce qui permet d'écrire p(X = k) avec ces valeurs. Le calcul de la probabilité demandée, ou de E(X) et V(X), vient en dernier car il utilise la formule écrite.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La figure montre la densité d'une variable aléatoire X qui suit la loi uniforme sur [1 ; 6]. Calculer p(2 ≤ X ≤ 4). Donne le résultat sous forme décimale.\n<svg viewBox=\"0 0 340 230\">\n<title>Densité de la loi uniforme sur [1 ; 6] ; la partie de 2 à 4 est colorée</title>\n<path d=\"M20 190 L328 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<path d=\"M30 196 L30 60\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<text x=\"328\" y=\"208\" text-anchor=\"end\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text>\n<rect x=\"70\" y=\"100\" width=\"200\" height=\"90\" fill=\"#0f6e56\" fill-opacity=\"0.10\" stroke=\"none\"/>\n<rect x=\"110\" y=\"100\" width=\"80\" height=\"90\" fill=\"#b45309\" fill-opacity=\"0.30\" stroke=\"none\"/>\n<path d=\"M30 190 L70 190 L70 100 L270 100 L270 190 L310 190\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<path d=\"M110 190 L110 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/>\n<path d=\"M190 190 L190 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/>\n<path d=\"M30 190 L30 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"30\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0</text>\n<path d=\"M70 190 L70 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"70\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text>\n<path d=\"M110 190 L110 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"110\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text>\n<path d=\"M150 190 L150 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"150\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3</text>\n<path d=\"M190 190 L190 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"190\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text>\n<path d=\"M230 190 L230 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"230\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">5</text>\n<path d=\"M270 190 L270 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"270\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">6</text>\n<path d=\"M310 190 L310 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"310\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">7</text>\n<text x=\"170\" y=\"92\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">f</text>\n</svg>",
+      "answerKey": {
+        "value": 0.4
+      },
+      "explanation": "Sur [1 ; 6], la densité vaut 1/(6 − 1) = 1/5. La partie colorée va de 2 à 4 : p(2 ≤ X ≤ 4) = (4 − 2)/5 = 2/5 = 0,4 ✓. Diviser par 6 au lieu de b − a = 5 donnerait 0,33, une erreur de lecture des bornes de la figure.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "X suit la loi exponentielle de paramètre 0,5. Calculer p(1 ≤ X ≤ 4), arrondi au centième.",
+      "answerKey": {
+        "value": 0.4712,
+        "tolerance": 0.005
+      },
+      "explanation": "Pour une loi exponentielle, p(a ≤ X ≤ b) = e^(−λa) − e^(−λb) : p(1 ≤ X ≤ 4) = e^(−0,5) − e^(−2) ≈ 0,6065 − 0,1353 = 0,4712, soit 0,47 au centième ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces fonctions, laquelle est une densité de probabilité sur [0 ; 1], nulle en dehors de cet intervalle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = x"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = 2x"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = x²"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = 1 − 2x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une densité est positive et d'aire 1 : f(x) = 2x est positive sur [0 ; 1] et ∫₀¹ 2x dx = [x²]₀¹ = 1 ✓. Pour les autres, ∫₀¹ x dx = 1/2 et ∫₀¹ x² dx = 1/3 ne valent pas 1, et 1 − 2x est négative dès que x > 1/2 (son intégrale est même nulle).",
+      "difficulty": 2
+    }
+  ]
+}
