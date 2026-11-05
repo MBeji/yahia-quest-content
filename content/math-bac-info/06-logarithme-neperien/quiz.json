@@ -98,27 +98,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Pour x > 0, on a x − x²/2 ≤ ln(1 + x) ≤ x − x²/2 + x³. Quel encadrement de ln 1,5 en résulte ?",
+      "prompt": "Pour x > 0, on a x − x²/2 ≤ ln(1 + x) ≤ x − x²/2 + x³. Avec x = 0,5, quelle est l'amplitude de l'encadrement de ln 1,5 obtenu, c'est-à-dire l'écart entre sa borne haute et sa borne basse ?",
       "options": [
         {
           "id": "a",
-          "text": "0,25 ≤ ln 1,5 ≤ 0,375"
+          "text": "0,0625"
         },
         {
           "id": "b",
-          "text": "0,375 ≤ ln 1,5 ≤ 0,5"
+          "text": "0,125"
         },
         {
           "id": "c",
-          "text": "0,5 ≤ ln 1,5 ≤ 0,625"
+          "text": "0,25"
         },
         {
           "id": "d",
-          "text": "0,625 ≤ ln 1,5 ≤ 0,75"
+          "text": "0,375"
         }
       ],
       "correctOption": "b",
-      "explanation": "Avec x = 0,5 : x − x²/2 = 0,5 − 0,125 = 0,375 et x³ = 0,125, donc 0,375 ≤ ln 1,5 ≤ 0,375 + 0,125 = 0,5 ✓ (ln 1,5 ≈ 0,405). L'encadrement 0,25 ≤ ln 1,5 ≤ 0,375 oublie le ½ de x²/2 (0,5 − 0,25 = 0,25), 0,5 ≤ ln 1,5 ≤ 0,625 oublie le terme −x²/2 (bornes x et x + x³), et 0,625 ≤ ln 1,5 ≤ 0,75 met un signe + devant x²/2 (bornes x + x²/2 et x + x²/2 + x³).",
+      "explanation": "Pour x > 0, l'encadrement est x − x²/2 ≤ ln(1 + x) ≤ x − x²/2 + x³ : l'écart entre les deux bornes est x³. Avec x = 0,5, l'amplitude vaut 0,5³ = 0,125 ✓ (bornes 0,375 et 0,5). La valeur 0,25 est x², qui confond x³ avec x² ; 0,375 est la borne basse x − x²/2, prise pour l'écart ; 0,0625 est la moitié de x³, comme si l'écart était x³/2.",
       "difficulty": 2
     },
     {
