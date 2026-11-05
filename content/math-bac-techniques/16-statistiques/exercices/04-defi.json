@@ -1,0 +1,125 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les juges du nuage",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Les droites de régression d'une série double ont pour équations y = −1,2x + 20 (de Y en X) et x = −0,3y + 9,2 (de X en Y). Quelle est la valeur de r ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": -0.6
+      },
+      "explanation": "a × a' = Cov² / (V(X) × V(Y)) = r². Ici a × a' = (−1,2) × (−0,3) = 0,36, donc |r| = 0,6. Les deux coefficients directeurs sont négatifs, comme Cov, donc r = −0,6. Contrôle : les deux droites se coupent en G(5 ; 14) ; |r| < 0,75, l'ajustement affine n'est pas justifié.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une série double, la droite de régression de Y en X est y = 2x + 1 et celle de X en Y est x = 0,4y + 0,2. Quelles sont les coordonnées du point moyen G ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−0,5 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "(1 ; 0,2)"
+        },
+        {
+          "id": "c",
+          "text": "(3 ; 7)"
+        },
+        {
+          "id": "d",
+          "text": "(7 ; 3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "G est le point commun aux deux droites. En remplaçant x par 0,4y + 0,2 dans y = 2x + 1, on a y = 0,8y + 0,4 + 1, donc 0,2y = 1,4 et y = 7, puis x = 0,4 × 7 + 0,2 = 3. Contrôle : 2 × 3 + 1 = 7 ✓. Lire la seconde droite comme y = 0,4x + 0,2 donne (−0,5 ; 0), les nombres (1 ; 0,2) sont les constantes, et (7 ; 3) échange les coordonnées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève ajuste la série (1 ; 5), (2 ; 6), (3 ; 9), (4 ; 10) et (5 ; 15) par la droite de régression de Y en X :\n(1) X̄ = 3 et Ȳ = 9.\n(2) Cov(X, Y) = 159 / 5 − 3 × 9 = 4,8.\n(3) V(X) = 55 / 5 − 3² = 2.\n(4) a = 4,8 / 2 = 2,4 puis b = 9 − 2,4 = 6,6.\n(5) Pour x = 6, y = 2,4 × 6 + 6,6 = 21.\nUne seule étape est fausse en elle-même. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étape (2) : le calcul de la covariance"
+        },
+        {
+          "id": "b",
+          "text": "Étape (3) : le calcul de la variance de X"
+        },
+        {
+          "id": "c",
+          "text": "Étape (4) : le calcul de la constante b"
+        },
+        {
+          "id": "d",
+          "text": "Étape (5) : le calcul de la prévision en x = 6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les étapes (1) à (3) sont justes : 159 / 5 − 27 = 4,8 et 55 / 5 − 9 = 2. À l'étape (4), a = 2,4 est juste mais b = Ȳ − aX̄ = 9 − 2,4 × 3 = 1,8, et non 9 − 2,4 : l'élève a oublié de multiplier a par X̄. L'étape (5) applique correctement une droite fausse ; la bonne prévision est 2,4 × 6 + 1,8 = 16,2. Contrôle : la droite y = 2,4x + 1,8 passe par G(3 ; 9).",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Une série double a pour coefficient de corrélation linéaire r = −0,92. Quelles affirmations sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un ajustement affine est justifié"
+        },
+        {
+          "id": "b",
+          "text": "La covariance Cov(X, Y) est positive"
+        },
+        {
+          "id": "c",
+          "text": "Le coefficient directeur de la droite de régression de Y en X est négatif"
+        },
+        {
+          "id": "d",
+          "text": "Le coefficient directeur de la droite de régression de X en Y est négatif"
+        },
+        {
+          "id": "e",
+          "text": "Y diminue de 0,92 quand X augmente de 1"
+        },
+        {
+          "id": "f",
+          "text": "Les deux droites de régression sont perpendiculaires"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Comme |r| = 0,92 ≥ 0,75, un ajustement affine est justifié. Cov(X, Y) a le signe de r, donc elle est négative, et a = Cov / V(X) et a' = Cov / V(Y) sont négatifs : les deux droites descendent. Le nombre 0,92 n'est pas une pente : la pente de D₁ vaut Cov / V(X), qui dépend des unités de X et de Y. Les droites ne sont perpendiculaires que si Cov = 0, ce qui donnerait r = 0.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour une série (X, Y), on pose Z = ln Y et l'on obtient X̄ = 4, Z̄ = 3, V(X) = 2 et Cov(X, Z) = 0,5. On ajuste (X, Z) par la droite de régression de Z en X, puis on revient à Y. À partir de quel rang entier x la valeur prévue de Y dépasse-t-elle 100 ?",
+      "answerKey": {
+        "value": 11
+      },
+      "explanation": "La droite de Z en X a pour coefficient a = 0,5 / 2 = 0,25 et pour constante b = 3 − 0,25 × 4 = 2, donc z = 0,25x + 2 et Y = e^(0,25x + 2). Y > 100 équivaut à 0,25x + 2 > ln 100 ≈ 4,605, soit x > 10,42. Contrôle : pour x = 10, Y = e^(4,5) ≈ 90,0 < 100, et pour x = 11, Y = e^(4,75) ≈ 115,6 > 100. Le plus petit rang entier est donc 11.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur 20 élèves, X est le nombre de séances de révision (1, 2 ou 3) et Y le nombre d'exercices réussis (0, 1 ou 2). Le tableau donne les effectifs. Calcule le coefficient de corrélation linéaire r, arrondi au centième.\n<svg viewBox=\"0 0 330 158\">\n<title>Effectifs d'une série double : X (séances de révision, de 1 à 3) en lignes, Y (exercices réussis, de 0 à 2) en colonnes</title>\n<rect x=\"3\" y=\"3\" width=\"96\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"51\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >X ↓  Y →</text>\n<rect x=\"99\" y=\"3\" width=\"57\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"127.5\" y=\"22\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >0</text>\n<rect x=\"156\" y=\"3\" width=\"57\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184.5\" y=\"22\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >1</text>\n<rect x=\"213\" y=\"3\" width=\"57\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"241.5\" y=\"22\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >2</text>\n<rect x=\"270\" y=\"3\" width=\"57\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"298.5\" y=\"22\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >Total</text>\n<rect x=\"3\" y=\"33\" width=\"96\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"51\" y=\"52\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >1</text>\n<rect x=\"99\" y=\"33\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"127.5\" y=\"52\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >5</text>\n<rect x=\"156\" y=\"33\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184.5\" y=\"52\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >1</text>\n<rect x=\"213\" y=\"33\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"241.5\" y=\"52\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >0</text>\n<rect x=\"270\" y=\"33\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"298.5\" y=\"52\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >6</text>\n<rect x=\"3\" y=\"63\" width=\"96\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"51\" y=\"82\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >2</text>\n<rect x=\"99\" y=\"63\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"127.5\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >2</text>\n<rect x=\"156\" y=\"63\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184.5\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >4</text>\n<rect x=\"213\" y=\"63\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"241.5\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >2</text>\n<rect x=\"270\" y=\"63\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"298.5\" y=\"82\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >8</text>\n<rect x=\"3\" y=\"93\" width=\"96\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"51\" y=\"112\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >3</text>\n<rect x=\"99\" y=\"93\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"127.5\" y=\"112\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >0</text>\n<rect x=\"156\" y=\"93\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184.5\" y=\"112\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >2</text>\n<rect x=\"213\" y=\"93\" width=\"57\" height=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"241.5\" y=\"112\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >4</text>\n<rect x=\"270\" y=\"93\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"298.5\" y=\"112\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >6</text>\n<rect x=\"3\" y=\"123\" width=\"96\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"51\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >Total</text>\n<rect x=\"99\" y=\"123\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"127.5\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >7</text>\n<rect x=\"156\" y=\"123\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184.5\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >7</text>\n<rect x=\"213\" y=\"123\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"241.5\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >6</text>\n<rect x=\"270\" y=\"123\" width=\"57\" height=\"30\" fill=\"#e6f4ef\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"298.5\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >20</text>\n</svg>",
+      "answerKey": {
+        "value": 0.72,
+        "tolerance": 0.01
+      },
+      "explanation": "Marges de X : 6, 8, 6 donc X̄ = (6 + 16 + 18) / 20 = 2 et V(X) = 92 / 20 − 4 = 0,6. Marges de Y : 7, 7, 6 donc Ȳ = (0 + 7 + 12) / 20 = 0,95 et V(Y) = 31 / 20 − 0,95² = 0,6475. La moyenne des produits vaut (1 × 1 + 2 × (4 × 1 + 2 × 2) + 3 × (2 × 1 + 4 × 2)) / 20 = 47 / 20 = 2,35, donc Cov = 2,35 − 2 × 0,95 = 0,45. Alors r = 0,45 / √(0,6 × 0,6475) ≈ 0,45 / 0,623 ≈ 0,72, inférieur à 0,75 : l'ajustement affine n'est pas justifié.",
+      "difficulty": 3
+    }
+  ]
+}
