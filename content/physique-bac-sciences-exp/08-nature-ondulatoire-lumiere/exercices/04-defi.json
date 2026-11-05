@@ -1,0 +1,148 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les ruses de la lumière-onde",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur la diffraction, lesquelles sont correctes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La diffraction d'une onde ne modifie pas sa longueur d'onde"
+        },
+        {
+          "id": "b",
+          "text": "Un cheveu de diamètre d donne la figure d'une fente de largeur a = d"
+        },
+        {
+          "id": "c",
+          "text": "Rétrécir la fente réduit la largeur de la tache centrale"
+        },
+        {
+          "id": "d",
+          "text": "La diffraction ne s'observe qu'avec des ondes lumineuses"
+        },
+        {
+          "id": "e",
+          "text": "La figure de diffraction contredit la propagation rectiligne de la lumière"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "Sont correctes : la longueur d'onde est conservée par la diffraction ; un obstacle de diamètre d et une fente de largeur d donnent la même figure ; la figure étalée met en défaut la propagation rectiligne ✓. Rétrécir la fente élargit la tache centrale, car L est inversement proportionnelle à a. La diffraction concerne aussi les ondes mécaniques, comme les rides d'une cuve à ondes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une seule de ces affirmations est FAUSSE. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un faisceau laser qui traverse un prisme de verre est dévié, sans être étalé en spectre"
+        },
+        {
+          "id": "b",
+          "text": "Dans le verre, la radiation bleue a une célérité plus petite que la radiation rouge"
+        },
+        {
+          "id": "c",
+          "text": "La lumière blanche est polychromatique : elle contient une infinité de radiations"
+        },
+        {
+          "id": "d",
+          "text": "L'air est dispersif : la radiation bleue y a une célérité plus petite que la rouge"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'affirmation fausse est celle qui rend l'air dispersif : l'air est un milieu non dispersif, la célérité y est pratiquement c pour toutes les radiations ✓. Les trois autres sont vraies : un laser, monochromatique, n'est que dévié ; dans le verre, n croît du rouge au bleu, donc v = c/n décroît ; la lumière blanche est polychromatique. (Question à réponse « fausse » : la clé est l'affirmation fausse.)",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Avec un même laser et un même écran (D = 2,0 m), un élève mesure la largeur L de la tache centrale pour quatre fentes. Une seule mesure est erronée.\na = 0,10 mm : L = 26 mm\na = 0,20 mm : L = 13 mm\na = 0,25 mm : L = 8 mm\na = 0,40 mm : L = 6,5 mm\nLaquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 0,10 mm"
+        },
+        {
+          "id": "b",
+          "text": "a = 0,20 mm"
+        },
+        {
+          "id": "c",
+          "text": "a = 0,25 mm"
+        },
+        {
+          "id": "d",
+          "text": "a = 0,40 mm"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L est inversement proportionnelle à a, donc le produit a × L est constant : 0,10 × 26 = 2,6 ; 0,20 × 13 = 2,6 ; 0,40 × 6,5 = 2,6, mais 0,25 × 8 = 2,0 ✓. La mesure erronée est celle de la fente de 0,25 mm : on attendait L = 2,6/0,25 = 10,4 mm. Les trois autres mesures sont cohérentes entre elles.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un laser de longueur d'onde 633 nm éclaire un cheveu tendu verticalement. Sur un écran placé à D = 2,50 m, la tache centrale mesure L = 3,8 cm. Quel est le diamètre du cheveu, en μm ? (petits angles)",
+      "answerKey": {
+        "value": 83.3,
+        "tolerance": 1.5,
+        "unit": "μm"
+      },
+      "explanation": "Le cheveu donne la figure d'une fente de largeur a = d. De L = 2λD/a on tire d = 2λD/L = 2 × 6,33 × 10⁻⁷ × 2,50 / 3,8 × 10⁻² = 8,33 × 10⁻⁵ m = 83,3 μm ✓, un diamètre réaliste pour un cheveu. Oublier le facteur 2 donnerait 42 μm ; laisser L en cm donnerait un résultat 100 fois trop petit.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On éclaire une fente rectangulaire avec un laser de longueur d'onde 633 nm ; l'écran est à D = 1,50 m. La figure obtenue est donnée ci-dessous (écran vu de face, graduation en mm repérant les milieux des zones sombres). Quelle est la largeur a de la fente ?\n<svg viewBox=\"0 0 340 200\"><title>Écran vu de face : tache centrale et taches latérales ; les milieux des zones sombres sont repérés à −28,5 ; −19 ; −9,5 ; 9,5 ; 19 ; 28,5 mm</title><rect x=\"20\" y=\"10\" width=\"300\" height=\"140\" rx=\"6\" fill=\"#111827\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"132\" y=\"30\" width=\"76\" height=\"100\" rx=\"3\" fill=\"#dc2626\" opacity=\"1.0\"/><rect x=\"217.75\" y=\"38\" width=\"32.75\" height=\"84\" rx=\"3\" fill=\"#dc2626\" opacity=\"0.6\"/><rect x=\"260.5\" y=\"38\" width=\"32.75\" height=\"84\" rx=\"3\" fill=\"#dc2626\" opacity=\"0.35\"/><rect x=\"89.5\" y=\"38\" width=\"32.75\" height=\"84\" rx=\"3\" fill=\"#dc2626\" opacity=\"0.6\"/><rect x=\"46.75\" y=\"38\" width=\"32.75\" height=\"84\" rx=\"3\" fill=\"#dc2626\" opacity=\"0.35\"/><line x1=\"41.75\" y1=\"150\" x2=\"41.75\" y2=\"158\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"41.75\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >−28,5</text><line x1=\"84.5\" y1=\"150\" x2=\"84.5\" y2=\"158\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"84.5\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >−19</text><line x1=\"127.25\" y1=\"150\" x2=\"127.25\" y2=\"158\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"127.25\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >−9,5</text><line x1=\"170\" y1=\"150\" x2=\"170\" y2=\"158\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"170\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >0</text><line x1=\"212.75\" y1=\"150\" x2=\"212.75\" y2=\"158\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"212.75\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >9,5</text><line x1=\"255.5\" y1=\"150\" x2=\"255.5\" y2=\"158\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"255.5\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >19</text><line x1=\"298.25\" y1=\"150\" x2=\"298.25\" y2=\"158\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"298.25\" y=\"174\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >28,5</text><text x=\"332\" y=\"194\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >x (mm)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,050 mm"
+        },
+        {
+          "id": "b",
+          "text": "0,100 mm"
+        },
+        {
+          "id": "c",
+          "text": "0,200 mm"
+        },
+        {
+          "id": "d",
+          "text": "1,00 mm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les milieux des zones sombres qui entourent la tache centrale sont à −9,5 mm et +9,5 mm : L = 19 mm. De L = 2λD/a on tire a = 2λD/L = 2 × 6,33 × 10⁻⁷ × 1,50 / 1,9 × 10⁻² = 1,0 × 10⁻⁴ m = 0,100 mm ✓. 0,050 mm oublie le facteur 2. 0,200 mm prend 9,5 mm, la demi-largeur, pour L. 1,00 mm vient d'une conversion de L en mètres décalée d'un facteur 10.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un verre d'indice n = 1,52, une radiation lumineuse a pour longueur d'onde 316 nm. Quelle est sa période ? (c = 3,00 × 10⁸ m/s)",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,69 × 10⁻¹⁵ s"
+        },
+        {
+          "id": "b",
+          "text": "1,05 × 10⁻¹⁵ s"
+        },
+        {
+          "id": "c",
+          "text": "1,60 × 10⁻¹⁵ s"
+        },
+        {
+          "id": "d",
+          "text": "2,43 × 10⁻¹⁵ s"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La période est celle de la source : elle se calcule avec la longueur d'onde dans le vide. λ₀ = n·λ = 1,52 × 316 = 480 nm, donc T = λ₀/c = 4,80 × 10⁻⁷ / 3,00 × 10⁸ = 1,60 × 10⁻¹⁵ s ✓. 1,05 × 10⁻¹⁵ s utilise λ/c, comme si c était la célérité dans le verre. 0,69 × 10⁻¹⁵ s divise λ par n au lieu de la multiplier. 2,43 × 10⁻¹⁵ s multiplie λ par n deux fois.",
+      "difficulty": 3
+    }
+  ]
+}

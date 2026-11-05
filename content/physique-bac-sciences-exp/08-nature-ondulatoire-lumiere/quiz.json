@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Nature ondulatoire de la lumière",
+  "questions": [
+    {
+      "prompt": "Dans une cuve à ondes, des rides rectilignes de longueur d'onde λ rencontrent une fente dont la largeur a est voisine de λ. Que voit-on de l'autre côté de la fente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des rides circulaires centrées sur la fente, de même longueur d'onde"
+        },
+        {
+          "id": "b",
+          "text": "Des rides rectilignes dans le prolongement de la fente, de même longueur d'onde"
+        },
+        {
+          "id": "c",
+          "text": "Des rides circulaires centrées sur la fente, de longueur d'onde plus petite"
+        },
+        {
+          "id": "d",
+          "text": "Aucune ride : la fente arrête complètement l'onde incidente"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand a est comparable à λ, l'onde rectiligne se transforme en onde diffractée : des rides circulaires centrées sur le milieu de la fente, de même longueur d'onde, car la diffraction ne modifie pas λ ✓. Des rides rectilignes limitées à la fente décriraient une propagation sans diffraction. Une longueur d'onde plus petite confond la forme des rides avec leur écartement, qui ne change pas. Une onde ne s'arrête pas sur une ouverture comparable à sa longueur d'onde : elle la franchit en se diffractant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un laser éclaire une fente fine verticale. Que montre l'écran placé derrière la fente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une seule tache, de la largeur de la fente"
+        },
+        {
+          "id": "b",
+          "text": "Des taches alignées horizontalement, de même largeur et de même éclat"
+        },
+        {
+          "id": "c",
+          "text": "Des taches alignées verticalement, la centrale étant la plus large"
+        },
+        {
+          "id": "d",
+          "text": "Des taches alignées horizontalement, la centrale étant la plus large"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La lumière s'étale perpendiculairement à la fente : pour une fente verticale, les taches sont alignées horizontalement, avec une tache centrale plus large et plus brillante que les taches latérales ✓. Une seule tache de la largeur de la fente serait le résultat de la propagation rectiligne, mise en défaut ici. Des taches toutes identiques ignorent que la tache centrale est la plus large. Un alignement vertical suivrait la direction de la fente au lieu de lui être perpendiculaire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le vide, une radiation lumineuse a pour période T = 2,0 × 10⁻¹⁵ s. Quelle est sa longueur d'onde ? (c = 3,0 × 10⁸ m/s)",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,7 × 10⁻²⁴ m"
+        },
+        {
+          "id": "b",
+          "text": "6,0 × 10⁻¹⁰ m"
+        },
+        {
+          "id": "c",
+          "text": "6,0 × 10⁻⁷ m"
+        },
+        {
+          "id": "d",
+          "text": "1,5 × 10²³ m"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "λ = c·T = 3,0 × 10⁸ × 2,0 × 10⁻¹⁵ = 6,0 × 10⁻⁷ m, soit 600 nm ✓. 6,7 × 10⁻²⁴ m vient de T/c, un quotient à l'envers. 1,5 × 10²³ m vient de c/T, l'autre quotient à l'envers. 6,0 × 10⁻¹⁰ m s'obtient en prenant c en km/s (3 × 10⁵) au lieu de m/s.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Avec une fente de largeur a = 0,40 mm, un laser donne une tache centrale de largeur L = 6 mm. On remplace la fente par une fente de largeur 0,20 mm, sans rien changer d'autre. Quelle est la nouvelle largeur de la tache centrale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5 mm"
+        },
+        {
+          "id": "b",
+          "text": "3 mm"
+        },
+        {
+          "id": "c",
+          "text": "6 mm"
+        },
+        {
+          "id": "d",
+          "text": "12 mm"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L est inversement proportionnelle à a : la largeur de la fente est divisée par 2, donc L est multipliée par 2, soit 12 mm ✓. 3 mm suppose que L diminue avec a, comme si L était proportionnelle à a. 6 mm suppose que L ne dépend pas de a. 1,5 mm correspond à L divisée par 4, comme si L variait comme a au carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans quel cas dit-on qu'un milieu transparent est dispersif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La célérité d'une radiation y dépend de sa fréquence"
+        },
+        {
+          "id": "b",
+          "text": "La célérité d'une radiation y est la même pour toutes les fréquences"
+        },
+        {
+          "id": "c",
+          "text": "Il dévie un faisceau de lumière monochromatique"
+        },
+        {
+          "id": "d",
+          "text": "Son indice de réfraction est égal à 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un milieu est dispersif lorsque la célérité d'une radiation y dépend de sa fréquence : l'indice n n'est alors pas le même pour toutes les radiations, et le prisme étale la lumière blanche ✓. Une célérité identique pour toutes les fréquences décrit au contraire un milieu non dispersif. Dévier un faisceau monochromatique, tout milieu transparent d'indice différent de 1 le fait, dispersif ou non. Un indice égal à 1 est celui du vide, qui est non dispersif.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la célérité de la lumière dans un verre d'indice n = 1,50 ? (c = 3,00 × 10⁸ m/s)",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,33 × 10⁸ m/s"
+        },
+        {
+          "id": "b",
+          "text": "2,00 × 10⁸ m/s"
+        },
+        {
+          "id": "c",
+          "text": "3,00 × 10⁸ m/s"
+        },
+        {
+          "id": "d",
+          "text": "4,50 × 10⁸ m/s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "v = c/n = 3,00 × 10⁸ / 1,50 = 2,00 × 10⁸ m/s ✓. 4,50 × 10⁸ m/s vient de c × n, une multiplication au lieu d'une division. 1,33 × 10⁸ m/s vient de c/n², une division en trop. 3,00 × 10⁸ m/s suppose que la lumière garde la célérité du vide dans le verre.",
+      "difficulty": 2
+    }
+  ]
+}

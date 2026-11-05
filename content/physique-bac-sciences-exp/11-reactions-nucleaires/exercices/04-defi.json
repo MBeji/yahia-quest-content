@@ -1,0 +1,152 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les secrets de la décroissance",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la radioactivité sont justes ? (plusieurs réponses possibles)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Doubler la masse d'un échantillon double son activité initiale A₀"
+        },
+        {
+          "id": "b",
+          "text": "La période d'un radioélément est la même à 20 °C et à 80 °C"
+        },
+        {
+          "id": "c",
+          "text": "À nombre de noyaux égal, une période plus longue donne une activité plus faible"
+        },
+        {
+          "id": "d",
+          "text": "Après deux périodes, il ne reste plus aucun noyau radioactif"
+        },
+        {
+          "id": "e",
+          "text": "Lier l'atome radioactif à un autre élément chimique diminue sa période"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Doubler la masse double le nombre de noyaux, donc A₀ = λ·N₀ double ✓. La période est une propriété du noyau, indépendante de la température ✓. Comme A = λ·N avec λ = ln 2 / T, une période plus longue donne un λ plus petit, donc une activité plus faible ✓. Après deux périodes, il reste le quart des noyaux, pas zéro. Une combinaison chimique ne modifie pas le noyau, donc ni λ ni T.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le thorium ²³⁴₉₀Th subit successivement deux désintégrations β⁻ puis deux désintégrations α. Quel est le noyau final ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "²³⁰₉₀Th"
+        },
+        {
+          "id": "b",
+          "text": "²²⁶₈₆Rn"
+        },
+        {
+          "id": "c",
+          "text": "²²⁶₈₄Po"
+        },
+        {
+          "id": "d",
+          "text": "²²⁶₈₈Ra"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "A : 234 − 2 × 4 = 226. Z : 90 + 1 + 1 − 2 − 2 = 88, soit ²²⁶₈₈Ra ✓. ²²⁶₈₆Rn ignore l'effet des deux β⁻ sur Z (90 − 4 = 86). ²²⁶₈₄Po retire 1 à Z pour chaque β⁻ (90 − 1 − 1 − 2 − 2 = 84). ²³⁰₉₀Th s'arrête après trois désintégrations sur les quatre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un radioélément a une période T = 8,0 jours. Au bout de combien de jours son activité est-elle réduite à 10 % de sa valeur initiale ? (ln 2 = 0,693 ; ln 10 = 2,303)",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,80 jour"
+        },
+        {
+          "id": "b",
+          "text": "18,4 jours"
+        },
+        {
+          "id": "c",
+          "text": "26,6 jours"
+        },
+        {
+          "id": "d",
+          "text": "80 jours"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "A/A₀ = 0,10 = e^(−λt) donne t = ln 10 / λ = T·ln 10 / ln 2 = 8,0 × 2,303 / 0,693 = 26,6 jours ✓. 80 jours prend 10 % pour 10 périodes. 18,4 jours calcule T·ln 10 en oubliant de diviser par ln 2. 0,80 jour divise T par 10.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le tracé de ln N en fonction de t (t en heures) est une droite de pente −3,5 × 10⁻² h⁻¹. Quelle est la période du radioélément, en heures ? (ln 2 = 0,693)",
+      "answerKey": {
+        "value": 19.8,
+        "tolerance": 0.1,
+        "unit": "h"
+      },
+      "explanation": "ln N = ln N₀ − λt : la pente de la droite est −λ, donc λ = 3,5 × 10⁻² h⁻¹. D'où T = ln 2 / λ = 0,693 / 3,5 × 10⁻² = 19,8 h ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Toutes ces équations commencent par ¹₀n + ²³⁵₉₂U →. Laquelle représente une fission IMPOSSIBLE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "¹³⁶₅₄Xe + ⁹⁸₃₈Sr + 3 ¹₀n"
+        },
+        {
+          "id": "b",
+          "text": "¹³⁷₅₂Te + ⁹⁷₄₀Zr + 2 ¹₀n"
+        },
+        {
+          "id": "c",
+          "text": "¹⁴²₅₆Ba + ⁹¹₃₆Kr + 3 ¹₀n"
+        },
+        {
+          "id": "d",
+          "text": "¹³⁹₅₄Xe + ⁹⁴₃₈Sr + 3 ¹₀n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avant la flèche, il y a 1 + 235 = 236 nucléons. ¹³⁶₅₄Xe + ⁹⁸₃₈Sr + 3 ¹₀n en compte 136 + 98 + 3 = 237 : la conservation du nombre de masse n'est pas respectée, la charge l'étant (54 + 38 = 92) ✓. Les trois autres donnent 137 + 97 + 2 = 236, 142 + 91 + 3 = 236 et 139 + 94 + 3 = 236, avec 92 de charge.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Deux échantillons X et Y contiennent au départ le même nombre de noyaux. La période de X est de 2 h, celle de Y de 6 h. Quel est le rapport A_X/A_Y de leurs activités à t = 6 h ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25"
+        },
+        {
+          "id": "b",
+          "text": "0,75"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "λ_X = ln 2 / 2 est trois fois plus grand que λ_Y = ln 2 / 6. À 6 h, X est à 3 périodes (N₀/8) et Y à 1 période (N₀/2). Le rapport est (λ_X·N₀/8) / (λ_Y·N₀/2) = 3 × (1/8) / (1/2) = 3 × 0,25 = 0,75 ✓. 3 est le rapport initial, sans tenir compte de la décroissance. 0,25 est le rapport des nombres de noyaux, sans les λ. 12 est le produit 3 × 4, avec le rapport des noyaux à l'envers.",
+      "difficulty": 3
+    }
+  ]
+}
