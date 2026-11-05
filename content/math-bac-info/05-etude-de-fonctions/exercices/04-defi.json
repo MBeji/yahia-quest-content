@@ -31,6 +31,30 @@
       "difficulty": 2
     },
     {
+      "prompt": "Dans un tableur, la colonne A contient les abscisses (A3 = 1), la colonne B les pentes f′(x) = 1/x, et la colonne D les valeurs approchées de f (D3 = 0) avec le pas h = 0,01. On écrit une formule en D4, puis on la recopie vers le bas. Laquelle applique correctement la méthode d'Euler ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "= D3 + B3*0,01"
+        },
+        {
+          "id": "b",
+          "text": "= D3 + B4*0,01"
+        },
+        {
+          "id": "c",
+          "text": "= D3 + B3"
+        },
+        {
+          "id": "d",
+          "text": "= D3 + A3*0,01"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque pas suit la tangente au point de départ : D4 = D3 + f′(x₃) × h, soit la valeur précédente D3 plus la pente de la ligne précédente, B3, multipliée par le pas 0,01. La formule avec B4 prend la pente d'arrivée ; celle sans le pas ajoute la pente entière au lieu de la pente fois h ; celle qui multiplie par A3 confond l'abscisse x₃ et la pente f′(x₃).",
+      "difficulty": 2
+    },
+    {
       "prompt": "La courbe de f(x) = ax + b + c/(x − 1) passe par A(0 ; −1), B(2 ; 5) et C(3 ; 5). Quelle est son asymptote oblique ?",
       "options": [
         {
@@ -124,30 +148,6 @@
       ],
       "correctOption": "c",
       "explanation": "On résout y = x + √(x² + 1) en x : √(x² + 1) = y − x, puis x² + 1 = y² − 2xy + x², d'où 2xy = y² − 1 et x = (y² − 1)/(2y). Contrôle : pour y = 3, x = 8/6 = 4/3 et f(4/3) = 4/3 + 5/3 = 3. L'expression (y² + 1)/(2y) est la réciproque de x + √(x² − 1) ; (1 − y²)/(2y) vient d'une erreur de signe en isolant 2xy ; 1/(y + √(y² + 1)) confond la réciproque f⁻¹ avec l'inverse 1/f.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Dans un tableur, la colonne A contient les abscisses (A3 = 1), la colonne B les pentes f′(x) = 1/x, et la colonne D les valeurs approchées de f (D3 = 0) avec le pas h = 0,01. On écrit une formule en D4, puis on la recopie vers le bas. Laquelle applique correctement la méthode d'Euler ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "= D3 + B3*0,01"
-        },
-        {
-          "id": "b",
-          "text": "= D3 + B4*0,01"
-        },
-        {
-          "id": "c",
-          "text": "= D3 + B3"
-        },
-        {
-          "id": "d",
-          "text": "= D4 + B3*0,01"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "Chaque pas suit la tangente au point de départ : D4 = D3 + f′(x₃) × h, soit la valeur précédente D3 plus la pente de la ligne précédente, B3, multipliée par le pas 0,01. La formule avec B4 prend la pente d'arrivée ; celle sans le pas ajoute la pente entière au lieu de la pente fois h ; celle qui utilise D4 dans D4 se référence elle-même, ce qui est impossible.",
       "difficulty": 3
     }
   ]
