@@ -1,0 +1,150 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le sphinx des deux produits",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Pour tous vecteurs u⃗, v⃗, w⃗ de l'espace orienté, quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u⃗ ∧ v⃗ = −(v⃗ ∧ u⃗)"
+        },
+        {
+          "id": "b",
+          "text": "Si u⃗ . v⃗ = u⃗ . w⃗, alors v⃗ = w⃗"
+        },
+        {
+          "id": "c",
+          "text": "Si u⃗ ∧ v⃗ = 0⃗ et u⃗ ≠ 0⃗, alors v⃗ est colinéaire à u⃗"
+        },
+        {
+          "id": "d",
+          "text": "Si u⃗ ∧ v⃗ = 0⃗, alors u⃗ et v⃗ sont orthogonaux"
+        },
+        {
+          "id": "e",
+          "text": "(2u⃗) ∧ (3v⃗) = 6 (u⃗ ∧ v⃗)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Sont vraies : u⃗ ∧ v⃗ = −(v⃗ ∧ u⃗), car échanger les facteurs renverse l'orientation ; si u⃗ ∧ v⃗ = 0⃗ avec u⃗ ≠ 0⃗, les deux vecteurs sont colinéaires ; et (2u⃗) ∧ (3v⃗) = 2 × 3 (u⃗ ∧ v⃗) par bilinéarité. Sont fausses : u⃗ . v⃗ = u⃗ . w⃗ signifie seulement que v⃗ − w⃗ est orthogonal à u⃗ (avec u⃗ = i⃗, v⃗ = j⃗ et w⃗ = k⃗, on a i⃗ . j⃗ = i⃗ . k⃗ = 0 et pourtant j⃗ ≠ k⃗) ; et u⃗ ∧ v⃗ = 0⃗ signifie colinéaires, non orthogonaux (avec u⃗ = v⃗ = i⃗, u⃗ ∧ v⃗ = 0⃗ alors que u⃗ . v⃗ = 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, u⃗(1 ; 2 ; 0), v⃗(0 ; 1 ; 1) et w⃗(2 ; m ; 3) sont les trois arêtes issues d'un même sommet d'un parallélépipède de volume 10. Quelles sont les valeurs possibles du réel m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = −3 ou m = 17"
+        },
+        {
+          "id": "b",
+          "text": "m = 3 ou m = −17"
+        },
+        {
+          "id": "c",
+          "text": "m = −7 ou m = 13"
+        },
+        {
+          "id": "d",
+          "text": "m = −53 ou m = 67"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le volume est |det(u⃗, v⃗, w⃗)|. Les trois parenthèses valent b′c″ − c′b″ = 1 × 3 − 1 × m = 3 − m, puis a′c″ − c′a″ = 0 × 3 − 1 × 2 = −2, puis a′b″ − b′a″ = 0 × m − 1 × 2 = −2, donc det = 1 × (3 − m) − 2 × (−2) + 0 × (−2) = 7 − m. La condition |7 − m| = 10 donne 7 − m = 10 ou 7 − m = −10, soit m = −3 ou m = 17 ✓. Les autres options viennent d'un signe changé dans le déterminant (|7 + m| = 10), d'un terme oublié (|3 − m| = 10) ou du facteur 1/6 du tétraèdre appliqué à tort (|7 − m| = 60).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un triangle ABC, on connaît AB = 2, AC = 5 et AB⃗ . AC⃗ = 6. Quelle est l'aire du triangle ABC, en unités d'aire ?",
+      "answerKey": {
+        "value": 4
+      },
+      "explanation": "On a cos Â = AB⃗ . AC⃗ / (AB × AC) = 6/10 = 3/5, donc sin Â = 4/5 (l'angle Â est géométrique, son sinus est positif). Alors ‖AB⃗ ∧ AC⃗‖ = 2 × 5 × 4/5 = 8, et l'aire du triangle est 8/2 = 4 ✓. Contrôle : ‖AB⃗ ∧ AC⃗‖² + (AB⃗ . AC⃗)² = 64 + 36 = 100 = (2 × 5)².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé, un élève calcule la distance du point M(5 ; 3 ; 5) à la droite D passant par A(1 ; 0 ; 2) de vecteur directeur u⃗(2 ; 3 ; 6).\nÉtape 1 : AM⃗(4 ; 3 ; 3).\nÉtape 2 : ‖u⃗‖ = √(4 + 9 + 36) = 7.\nÉtape 3 : AM⃗ ∧ u⃗ = (3 × 6 + 3 × 3 ; 3 × 2 − 4 × 6 ; 4 × 3 − 3 × 2) = (27 ; −18 ; 6).\nÉtape 4 : ‖AM⃗ ∧ u⃗‖ = √(729 + 324 + 36) = 33, d'où d = 33/7.\nQuelle étape contient la première erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'étape 3 est fausse : la première coordonnée de AM⃗ ∧ u⃗ est bc′ − cb′ = 3 × 6 − 3 × 3 = 9, et non 3 × 6 + 3 × 3 = 27, car le signe moins a été oublié. Le bon produit est (9 ; −18 ; 6), de norme √(81 + 324 + 36) = 21, et d = 21/7 = 3. L'étape 1 donne bien M − A = (4 ; 3 ; 3), l'étape 2 calcule correctement ‖u⃗‖ = 7, et l'étape 4 applique correctement la formule au vecteur obtenu.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, on donne u⃗(2 ; 1 ; 2) et w⃗(1 ; 2 ; −2). Lequel de ces vecteurs v⃗ vérifie u⃗ ∧ v⃗ = w⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 ; 0 ; −1)"
+        },
+        {
+          "id": "b",
+          "text": "(0 ; −1 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(1 ; 2 ; −2)"
+        },
+        {
+          "id": "d",
+          "text": "(2 ; 0 ; 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On calcule u⃗ ∧ (2 ; 0 ; 1) = (1 × 1 − 2 × 0 ; 2 × 2 − 2 × 1 ; 2 × 0 − 1 × 2) = (1 ; 2 ; −2) = w⃗ ✓. Le vecteur (−2 ; 0 ; −1) est l'opposé : il donne −w⃗. Pour (0 ; −1 ; 1), on trouve (3 ; −2 ; −2). Le vecteur (1 ; 2 ; −2) est w⃗ lui-même, et u⃗ ∧ w⃗ = (−6 ; 6 ; 3) est orthogonal à w⃗ mais pas égal à lui.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, on donne u⃗(−2 ; −1 ; 0), v⃗(1 ; −2 ; 2) et w⃗(0 ; 1 ; 3). Quel est le vecteur (u⃗ ∧ v⃗) ∧ w⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−7 ; −6 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "(7 ; 6 ; −2)"
+        },
+        {
+          "id": "c",
+          "text": "(−1 ; 2 ; −2)"
+        },
+        {
+          "id": "d",
+          "text": "(0 ; 4 ; 15)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule d'abord u⃗ ∧ v⃗ = ((−1) × 2 − 0 × (−2) ; 0 × 1 − (−2) × 2 ; (−2)(−2) − (−1) × 1) = (−2 ; 4 ; 5), puis (−2 ; 4 ; 5) ∧ w⃗ = (4 × 3 − 5 × 1 ; 5 × 0 − (−2) × 3 ; (−2) × 1 − 4 × 0) = (7 ; 6 ; −2) ✓. Le vecteur (−1 ; 2 ; −2) est u⃗ ∧ (v⃗ ∧ w⃗) : le produit vectoriel n'est pas associatif. Le vecteur (−7 ; −6 ; 2) est l'opposé, w⃗ ∧ (u⃗ ∧ v⃗), et (0 ; 4 ; 15) multiplie les coordonnées de u⃗ ∧ v⃗ et de w⃗ une à une.",
+      "difficulty": 3
+    }
+  ]
+}

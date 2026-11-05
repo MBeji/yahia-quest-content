@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Produit scalaire et produit vectoriel",
+  "questions": [
+    {
+      "prompt": "Dans un repère orthonormé, on donne u⃗(2 ; −3 ; 4) et v⃗(5 ; 2 ; 1). Combien vaut u⃗ . v⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En repère orthonormé, u⃗ . v⃗ = xx′ + yy′ + zz′ = 2 × 5 + (−3) × 2 + 4 × 1 = 10 − 6 + 4 = 8 ✓. Le résultat 4 oublie le troisième terme, 0 change le signe du dernier terme, et 20 additionne les valeurs absolues des trois produits.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une base de l'espace, on donne u⃗(2 ; 1 ; 0), v⃗(1 ; −1 ; 3) et w⃗(0 ; 2 ; 1). Que vaut det(u⃗, v⃗, w⃗) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−15"
+        },
+        {
+          "id": "b",
+          "text": "−13"
+        },
+        {
+          "id": "c",
+          "text": "−2"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les trois parenthèses valent b′c″ − c′b″ = (−1) × 1 − 3 × 2 = −7, puis a′c″ − c′a″ = 1 × 1 − 3 × 0 = 1, puis a′b″ − b′a″ = 1 × 2 − (−1) × 0 = 2. Donc det = 2 × (−7) − 1 × 1 + 0 × 2 = −15 ✓. Le résultat −13 additionne le deuxième terme au lieu de le retrancher, 15 est l'opposé obtenu en inversant l'ordre de deux vecteurs, et −2 ne garde que le produit des coefficients diagonaux 2 × (−1) × 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On sait que la base (i⃗, j⃗, k⃗) est directe. Laquelle de ces bases est indirecte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(j⃗, k⃗, i⃗)"
+        },
+        {
+          "id": "b",
+          "text": "(−i⃗, −j⃗, k⃗)"
+        },
+        {
+          "id": "c",
+          "text": "(i⃗, k⃗, −j⃗)"
+        },
+        {
+          "id": "d",
+          "text": "(j⃗, i⃗, k⃗)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(j⃗, i⃗, k⃗) s'obtient de (i⃗, j⃗, k⃗) par un seul échange : elle est indirecte ✓. (j⃗, k⃗, i⃗) est une permutation circulaire, donc directe. (−i⃗, −j⃗, k⃗) change deux fois le signe d'un vecteur : deux changements d'orientation, donc directe. (i⃗, k⃗, −j⃗) combine un échange et un changement de signe : deux changements d'orientation, donc directe aussi.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, on donne u⃗(1 ; 0 ; 2) et v⃗(3 ; 1 ; −1). Quel est le vecteur u⃗ ∧ v⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 ; 7 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "(−2 ; −7 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; −7 ; −1)"
+        },
+        {
+          "id": "d",
+          "text": "(3 ; 0 ; −2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La formule (bc′ − cb′ ; ca′ − ac′ ; ab′ − ba′) donne (0 × (−1) − 2 × 1 ; 2 × 3 − 1 × (−1) ; 1 × 1 − 0 × 3) = (−2 ; 7 ; 1) ✓. Contrôle : (−2 ; 7 ; 1) . u⃗ = −2 + 0 + 2 = 0 et (−2 ; 7 ; 1) . v⃗ = −6 + 7 − 1 = 0. Le vecteur (2 ; −7 ; −1) est v⃗ ∧ u⃗, l'opposé ; (−2 ; −7 ; 1) se trompe de signe sur la deuxième coordonnée, et (3 ; 0 ; −2) multiplie les coordonnées une à une.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le cube ABCDEFGH de la figure, d'arête 1, est muni du repère orthonormé direct (A ; AB⃗, AD⃗, AE⃗). Quel est le vecteur BC⃗ ∧ BF⃗ ?\n<svg viewBox=\"0 0 250 232\">\n<title>Cube ABCDEFGH muni du repère orthonormé direct (A, AB, AD, AE)</title>\n<polygon points=\"36,200 136,200 136,100 36,100\" fill=\"#0f6e56\" opacity=\"0.1\"/>\n<line x1=\"179.3\" y1=\"175\" x2=\"79.3\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"79.3\" y1=\"175\" x2=\"36\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"79.3\" y1=\"175\" x2=\"79.3\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"36\" y1=\"200\" x2=\"136\" y2=\"200\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"179.3\" y2=\"175\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"36\" y1=\"100\" x2=\"136\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"100\" x2=\"179.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"179.3\" y1=\"75\" x2=\"79.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"79.3\" y1=\"75\" x2=\"36\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"36\" y1=\"200\" x2=\"36\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"136\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"179.3\" y1=\"175\" x2=\"179.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<circle cx=\"36\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"136\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"179.3\" cy=\"175\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"79.3\" cy=\"175\" r=\"3.5\" fill=\"#94a3b8\"/>\n<circle cx=\"36\" cy=\"100\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"136\" cy=\"100\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"179.3\" cy=\"75\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"79.3\" cy=\"75\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"24\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text>\n<text x=\"146\" y=\"218\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text>\n<text x=\"193.3\" y=\"180\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text>\n<text x=\"67.3\" y=\"169\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text>\n<text x=\"24\" y=\"98\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text>\n<text x=\"124\" y=\"92\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">F</text>\n<text x=\"193.3\" y=\"69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">G</text>\n<text x=\"75.3\" y=\"65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">H</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0⃗"
+        },
+        {
+          "id": "b",
+          "text": "AE⃗"
+        },
+        {
+          "id": "c",
+          "text": "BA⃗"
+        },
+        {
+          "id": "d",
+          "text": "AB⃗"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "BC⃗ = AD⃗ et BF⃗ = AE⃗. Le vecteur AD⃗ ∧ AE⃗ est orthogonal à AD⃗ et à AE⃗, de norme 1 × 1 × sin(π/2) = 1, et la base (AD⃗, AE⃗, AB⃗) est une permutation circulaire de (AB⃗, AD⃗, AE⃗), donc directe : BC⃗ ∧ BF⃗ = AB⃗ ✓. Le vecteur BA⃗ est l'opposé, obtenu en inversant l'ordre des facteurs ; AE⃗ est le résultat de AB⃗ ∧ AD⃗ ; 0⃗ confond orthogonaux et colinéaires.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, on donne A(0 ; 1 ; 1), B(−2 ; 2 ; 3) et C(2 ; −2 ; 3). Quelle est l'aire du triangle ABC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "72"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "AB⃗(−2 ; 1 ; 2) et AC⃗(2 ; −3 ; 2) donnent AB⃗ ∧ AC⃗ = (1 × 2 − 2 × (−3) ; 2 × 2 − (−2) × 2 ; (−2)(−3) − 1 × 2) = (8 ; 8 ; 4), de norme √(64 + 64 + 16) = 12. C'est l'aire du parallélogramme : le triangle vaut 12/2 = 6 ✓. Le résultat 12 oublie le facteur 1/2, 72 prend la moitié du carré de la norme sans la racine carrée, et 3 reprend la valeur absolue du produit scalaire AB⃗ . AC⃗ = −4 − 3 + 4 = −3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé, D est la droite passant par A(−1 ; 2 ; 1) de vecteur directeur u⃗(2 ; 2 ; 1), et M a pour coordonnées (3 ; 1 ; −2). Quelle est la distance de M à D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "√26"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "MA⃗(−4 ; 1 ; 3) et MA⃗ ∧ u⃗ = (1 × 1 − 3 × 2 ; 3 × 2 − (−4) × 1 ; (−4) × 2 − 1 × 2) = (−5 ; 10 ; −10), de norme √(25 + 100 + 100) = 15. Avec ‖u⃗‖ = 3, d(M, D) = 15/3 = 5 ✓. Le résultat 15 oublie de diviser par ‖u⃗‖, √26 est la longueur AM, et non la distance à la droite, et 1 est la longueur de la projection de AM⃗ sur u⃗ : AM⃗ . u⃗ / ‖u⃗‖ = 3/3 = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, on donne A(1 ; −1 ; 1), B(2 ; −2 ; 0), C(−2 ; 4 ; 0) et D(4 ; −2 ; 3). Quel est le volume du tétraèdre ABCD ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "AB⃗(1 ; −1 ; −1), AC⃗(−3 ; 5 ; −1) et AD⃗(3 ; −1 ; 2). AB⃗ ∧ AC⃗ = ((−1)(−1) − (−1) × 5 ; (−1)(−3) − 1 × (−1) ; 1 × 5 − (−1)(−3)) = (6 ; 4 ; 2), puis (AB⃗ ∧ AC⃗) . AD⃗ = 18 − 4 + 4 = 18. Le volume est (1/6) × |18| = 3 ✓. Le résultat 18 oublie le facteur 1/6, 9 prend la moitié du déterminant, et 3/2 son douzième.",
+      "difficulty": 2
+    }
+  ]
+}

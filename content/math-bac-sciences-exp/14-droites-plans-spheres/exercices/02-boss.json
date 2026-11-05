@@ -1,0 +1,124 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des sphères",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. Quelle est une équation cartésienne du plan (ABC) pour A(2, 1, 0), B(3, −1, 1) et C(0, 2, 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5x + 4y + 3z − 14 = 0"
+        },
+        {
+          "id": "b",
+          "text": "5x − 4y + 3z − 6 = 0"
+        },
+        {
+          "id": "c",
+          "text": "5x + 4y + 3z + 14 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x + y − z − 3 = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "AB⃗(1, −2, 1) et AC⃗(−2, 1, 2), donc AB⃗ ∧ AC⃗ = (−2×2 − 1×1, 1×(−2) − 1×2, 1×1 − (−2)×(−2)) = (−5, −4, −3), colinéaire à (5, 4, 3). Avec A : 5(x − 2) + 4(y − 1) + 3z = 0, soit 5x + 4y + 3z − 14 = 0 ✓ ; B donne 15 − 4 + 3 − 14 = 0 et C donne 0 + 8 + 6 − 14 = 0. Le signe de la deuxième composante oublié donne 5x − 4y + 3z − 6 = 0 ; la constante +14 est une erreur de signe ; le produit terme à terme (−2, −2, 2) donne x + y − z − 3 = 0, qui ne contient pas B.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est muni d'un repère orthonormé. Les plans P : 2x + my − 3z + 1 = 0 et Q : x − 2y + 4z − 5 = 0 sont perpendiculaires. Quelle est la valeur du réel m ?",
+      "answerKey": {
+        "value": -5
+      },
+      "explanation": "Les vecteurs normaux (2, m, −3) et (1, −2, 4) doivent être orthogonaux : 2 − 2m − 12 = 0, donc −2m = 10 et m = −5 ✓. Contrôle : (2, −5, −3).(1, −2, 4) = 2 + 10 − 12 = 0.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les plans P : x + y + z − 6 = 0 et Q : x − y + 2z − 3 = 0 se coupent suivant une droite Δ. Quelle est l'ordonnée du point de Δ de cote 1 ?",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "Pour z = 1, les équations deviennent x + y = 5 et x − y = 1. En additionnant, 2x = 6, donc x = 3 et y = 2 ✓. Contrôle : 3 + 2 + 1 − 6 = 0 et 3 − 2 + 2 − 3 = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. Quelles sont les coordonnées du projeté orthogonal H du point A(2, −1, 0) sur le plan P : 2x − 2y + z + 3 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "H(−4, 5, −3)"
+        },
+        {
+          "id": "b",
+          "text": "H(0, 1, −1)"
+        },
+        {
+          "id": "c",
+          "text": "H(2, −1, −9)"
+        },
+        {
+          "id": "d",
+          "text": "H(4, −3, 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le vecteur normal est n⃗(2, −2, 1) et H = A + kn⃗ = (2 + 2k, −1 − 2k, k). Dans P : 2(2 + 2k) − 2(−1 − 2k) + k + 3 = 9 + 9k = 0, donc k = −1 et H(0, 1, −1) ✓. Contrôle : 0 − 2 − 1 + 3 = 0, et AH = ‖n⃗‖ = 3 = 9/3. Prendre k = −3 oublie de diviser par ‖n⃗‖² ; k = +1 se trompe de sens ; le point (2, −1, −9) est la projection parallèle à l'axe des cotes, pas orthogonale.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. Soit S : x² + y² + z² + 4x − 2y − 6z + 7 = 0 et P : x + y + z + 1 = 0. Quelle est l'intersection de S et de P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le cercle de centre I(−2, 1, 3) et de rayon 2"
+        },
+        {
+          "id": "b",
+          "text": "le cercle de centre H(−3, 0, 2) et de rayon √7"
+        },
+        {
+          "id": "c",
+          "text": "le cercle de centre H(−3, 0, 2) et de rayon 2"
+        },
+        {
+          "id": "d",
+          "text": "le cercle de centre H(−3, 0, 2) et de rayon √3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a (x + 2)² + (y − 1)² + (z − 3)² = 4 + 1 + 9 − 7 = 7 : centre I(−2, 1, 3), R = √7. La distance de I à P est h = |−2 + 1 + 3 + 1|/√3 = √3 < √7 : c'est un cercle de rayon r = √(7 − 3) = 2. Son centre est le projeté H = I + kn⃗ avec n⃗(1, 1, 1) : −2 + 1 + 3 + 1 + 3k = 0 donne k = −1 et H(−3, 0, 2) ✓. Le centre n'est pas I, qui n'est pas dans P ; le rayon n'est pas R ; et √3 est la distance h du centre au plan, pas le rayon du cercle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé. Soit A(−1, 2, 1), B(3, 0, −1) et M(2, t, 2). Pour quelles valeurs de t le point M est-il sur la sphère de diamètre [AB] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "t = −2 ou t = 0"
+        },
+        {
+          "id": "b",
+          "text": "t = 1"
+        },
+        {
+          "id": "c",
+          "text": "t = 2"
+        },
+        {
+          "id": "d",
+          "text": "t = 0 ou t = 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "M est sur la sphère si MA⃗.MB⃗ = 0 avec MA⃗(−3, 2 − t, −1) et MB⃗(1, −t, −3) : −3 − t(2 − t) + 3 = t² − 2t = t(t − 2) = 0, donc t = 0 ou t = 2 ✓. Contrôle sur la sphère de centre (1, 1, 0) et R² = 6 : 1 + (t − 1)² + 4 = 6 donne (t − 1)² = 1 ✓. Garder t = 2 seul revient à diviser par t ; t = 1 est la condition MA = MB du plan médiateur ; t = −2 ou 0 vient d'un centre mal lu avec l'ordonnée −1.",
+      "difficulty": 3
+    }
+  ]
+}

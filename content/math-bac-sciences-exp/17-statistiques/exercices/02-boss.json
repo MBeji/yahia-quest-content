@@ -1,0 +1,126 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du point moyen",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Une station météo relève la température moyenne Y (en °C) à l'altitude X (en centaines de mètres) : (1 ; 19), (2 ; 16), (3 ; 16), (4 ; 13), (5 ; 11), (6 ; 9). On ajuste par la méthode de Mayer, en scindant le nuage en ses trois premiers points et ses trois derniers. Quelle température (en °C) prévoit-on à l'altitude X = 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−14"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le premier groupe a pour point moyen G₁(2 ; 17), car (1 + 2 + 3)/3 = 2 et (19 + 16 + 16)/3 = 17. Le second a pour point moyen G₂(5 ; 11), car (4 + 5 + 6)/3 = 5 et (13 + 11 + 9)/3 = 11. La pente vaut a = (11 − 17)/(5 − 2) = −2 et b = 17 − (−2) × 2 = 21, donc y = −2x + 21. Contrôle : la droite passe par le point moyen G(3,5 ; 14), car −2 × 3,5 + 21 = 14 ✓. À X = 7 : y = −14 + 21 = 7 ✓. Le nombre −14 oublie l'ordonnée à l'origine b ; le nombre 1 vient d'un b mal calculé (15 au lieu de 21, en partant de G₂ avec l'abscisse de G₁) ; le nombre 9 se contente de répéter la dernière mesure, sans utiliser la droite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Laquelle de ces affirmations sur les deux méthodes d'ajustement affine est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite des moindres carrés ne passe par G que si tous les points du nuage sont alignés."
+        },
+        {
+          "id": "b",
+          "text": "Pour une même série, la somme ΣMᵢHᵢ² de la droite de Mayer est toujours inférieure à celle des moindres carrés."
+        },
+        {
+          "id": "c",
+          "text": "La droite de régression de Y en X a pour pente cov(X, Y)/σ_X, avec l'écart-type au dénominateur."
+        },
+        {
+          "id": "d",
+          "text": "La droite de Mayer passe toujours par G ; un autre découpage en deux parties donne en général une autre droite."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La droite (G₁G₂) passe par le point moyen G du nuage entier, mais le découpage en deux parties est un choix : changer de découpage change G₁ et G₂, donc en général la droite ✓. Les trois autres affirmations sont fausses. Les deux droites de régression passent par G pour toute série, alignée ou non. La droite des moindres carrés est, par construction, celle qui rend ΣMᵢHᵢ² minimale : la somme de Mayer lui est donc supérieure ou égale, jamais inférieure. Enfin la pente est cov(X, Y)/σ_X², avec la variance au dénominateur, pas l'écart-type.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une application de cartographie relève son nombre de téléchargements Y (en milliers) la semaine de rang X : (0 ; 5), (1 ; 8), (2 ; 8), (3 ; 11), (4 ; 13). On prévoit la semaine de rang 7 avec la droite de régression de Y en X. Quelle valeur obtient-on, en milliers de téléchargements ?",
+      "answerKey": {
+        "value": 18.5,
+        "tolerance": 0.05
+      },
+      "explanation": "On a X̄ = 10/5 = 2 et Ȳ = 45/5 = 9. Ensuite Σxᵢ² = 0 + 1 + 4 + 9 + 16 = 30, donc V(X) = 30/5 − 2² = 2, et Σxᵢyᵢ = 0 + 8 + 16 + 33 + 52 = 109, donc cov(X, Y) = 109/5 − 2 × 9 = 21,8 − 18 = 3,8. La pente est a = 3,8/2 = 1,9 et b = 9 − 1,9 × 2 = 5,2, d'où y = 1,9x + 5,2. Contrôle : en X = 2, 1,9 × 2 + 5,2 = 9 = Ȳ ✓. Au rang 7 : y = 1,9 × 7 + 5,2 = 13,3 + 5,2 = 18,5 milliers ✓. Pour savoir si la prévision est raisonnable, on calcule ρ : V(Y) = 443/5 − 81 = 7,6, donc ρ = 3,8/(√2 × √7,6) ≈ 0,975, qui dépasse √3/2 ≈ 0,866 : l'ajustement est justifié. Le piège courant est de diviser cov(X, Y) par σ_X ≈ 1,414 au lieu de V(X) = 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une même série (X, Y), les droites de régression de Y en X et de X en Y ont pour équations y = 0,4x + 2 et x = 0,9y + 1,4. Quelles sont les coordonnées du point moyen G ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(1,2 ; 2,48)"
+        },
+        {
+          "id": "b",
+          "text": "G(5 ; 4)"
+        },
+        {
+          "id": "c",
+          "text": "G(1,4 ; 2)"
+        },
+        {
+          "id": "d",
+          "text": "G(4 ; 5)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les deux droites de régression passent par le point moyen G, donc G est leur point d'intersection. En remplaçant y par 0,4x + 2 dans la seconde équation : x = 0,9(0,4x + 2) + 1,4 = 0,36x + 3,2, donc 0,64x = 3,2 et x = 5, puis y = 0,4 × 5 + 2 = 4. Contrôle sur la seconde droite : 0,9 × 4 + 1,4 = 5 ✓. On trouve G(5 ; 4). Le point G(4 ; 5) échange les coordonnées. Le point G(1,2 ; 2,48) lit la seconde équation comme y = 0,9x + 1,4, en oubliant qu'elle exprime x en fonction de y. Le point G(1,4 ; 2) recopie les ordonnées à l'origine, qui n'ont rien de commun avec le point d'intersection.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On mesure l'aire Y (en cm²) de disques de rayon X (en cm), puis on pose Z = √Y. La série (X, Z) donne ρ_XZ ≈ 0,999 et pour droite de régression z = 1,8x + 0,1. Quelle aire prévoit-on pour un disque de rayon 5 cm ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "82,81"
+        },
+        {
+          "id": "b",
+          "text": "81,01"
+        },
+        {
+          "id": "c",
+          "text": "45,1"
+        },
+        {
+          "id": "d",
+          "text": "9,1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme ρ_XZ ≈ 0,999 dépasse √3/2, l'ajustement affine de Z en X est justifié. Pour X = 5, z = 1,8 × 5 + 0,1 = 9,1. Mais Z = √Y : on revient à Y en élevant au carré, Y = Z² = 9,1² = 82,81 cm² ✓. Le nombre 9,1 est la valeur de Z, à laquelle on a oublié de repasser par le carré. Le nombre 45,1 élève X au carré au lieu de Z (1,8 × 25 + 0,1). Le nombre 81,01 développe mal le carré : 9² + 0,1² oublie le double produit 2 × 9 × 0,1 = 1,8, alors que (a + b)² = a² + 2ab + b² donne 81 + 1,8 + 0,01 = 82,81.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un artisan vend x objets par mois au prix unitaire y (en DT). Un ajustement affine donne y = −0,06x + 48 pour 100 ≤ x ≤ 700, et sa recette mensuelle est r(x) = x·y. Quelle est la recette maximale, en DT ?",
+      "answerKey": {
+        "value": 9600,
+        "tolerance": 1
+      },
+      "explanation": "La recette est r(x) = x(−0,06x + 48) = −0,06x² + 48x. Sa dérivée r'(x) = −0,12x + 48 s'annule en x = 48/0,12 = 400, positive avant et négative après : le maximum est atteint pour x = 400, valeur qui appartient bien à l'intervalle [100 ; 700]. Le prix correspondant est y = −0,06 × 400 + 48 = 24 DT, donc r(400) = 400 × 24 = 9600 DT ✓. Contrôle sur les bords : r(100) = 4200 et r(700) = 4200, bien inférieurs. Le piège courant est de maximiser le prix y, ce qui pousse à vendre le moins possible, ou de prendre le plus grand x de l'intervalle.",
+      "difficulty": 3
+    }
+  ]
+}
