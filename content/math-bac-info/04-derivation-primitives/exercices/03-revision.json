@@ -1,5 +1,5 @@
 {
-  "title": "⭐⭐ Révision (type examen) : Les douze pas de la pente",
+  "title": "⭐⭐ Révision (type examen) : Les huit pas de la pente",
   "difficulty": 2,
   "mode": "practice",
   "xpReward": 75,
@@ -11,22 +11,22 @@
       "options": [
         {
           "id": "a",
-          "text": "1"
+          "text": "−3"
         },
         {
           "id": "b",
-          "text": "2"
-        },
-        {
-          "id": "c",
           "text": "−1"
         },
         {
+          "id": "c",
+          "text": "1"
+        },
+        {
           "id": "d",
-          "text": "−3"
+          "text": "2"
         }
       ],
-      "correctOption": "c",
+      "correctOption": "b",
       "explanation": "f′(1) est la pente de la tangente en A, c'est-à-dire de la droite (BC) : (0 − 3)/(3 − 0) = −1. Son équation est y = −x + 3, qui passe bien par A(1 ; 2). Le nombre 2 est f(1), l'ordonnée de A, non une pente ; 1 oublie le signe de la pente ; −3 est la différence des ordonnées, sans division par la différence des abscisses.",
       "difficulty": 1
     },
@@ -90,7 +90,7 @@
     },
     {
       "type": "numeric",
-      "prompt": "Un programme approche f′(3) pour f(x) = x² :\nx0 ← 3 ; h ← 1\npour k de 1 à 3 :\np ← (f(x0 + h) − f(x0))/h\nafficher p\nh ← h/2\nQuelle valeur de p est affichée au troisième tour (k = 3) ?",
+      "prompt": "Un programme approche f′(3) pour f(x) = x² :\nx0 ← 3 ; h ← 1\npour k de 1 à 3 :\n    p ← (f(x0 + h) − f(x0))/h\n    afficher p\n    h ← h/2\nQuelle valeur de p est affichée au troisième tour (k = 3) ?",
       "answerKey": {
         "value": 6.25
       },
@@ -98,27 +98,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Une primitive de f(x) = x(x² − 4)³ sur ℝ est :",
+      "prompt": "Une primitive de f(x) = x²(x³ − 4)³ sur ℝ est :",
       "options": [
         {
           "id": "a",
-          "text": "F(x) = (x² − 4)⁴/8"
+          "text": "F(x) = (x³ − 4)⁴/12"
         },
         {
           "id": "b",
-          "text": "F(x) = (x² − 4)⁴/4"
+          "text": "F(x) = (x³ − 4)⁴/4"
         },
         {
           "id": "c",
-          "text": "F(x) = x²(x² − 4)⁴/8"
+          "text": "F(x) = x³(x³ − 4)⁴/12"
         },
         {
           "id": "d",
-          "text": "F(x) = 6x(x² − 4)²"
+          "text": "F(x) = 9x²(x³ − 4)²"
         }
       ],
       "correctOption": "a",
-      "explanation": "On pose u(x) = x² − 4, donc u′(x) = 2x : f = (1/2)u′u³. Une primitive de u′u³ est u⁴/4, donc F(x) = (1/2) × u⁴/4 = (x² − 4)⁴/8. Contrôle : F′(x) = 4 × 2x(x² − 4)³/8 = x(x² − 4)³ ✓. L'expression avec le dénominateur 4 oublie de compenser le facteur 2 de u′, celle avec x² en facteur primitive les deux facteurs séparément, et 6x(x² − 4)² est la dérivée de (x² − 4)³.",
+      "explanation": "On pose u(x) = x³ − 4, donc u′(x) = 3x² : f = (1/3)u′u³. Une primitive de u′u³ est u⁴/4, donc F(x) = (1/3) × u⁴/4 = (x³ − 4)⁴/12. Contrôle : F′(x) = 4 × 3x²(x³ − 4)³/12 = x²(x³ − 4)³ ✓. L'expression avec le dénominateur 4 oublie de compenser le facteur 3 de u′, celle avec x³ en facteur primitive les deux facteurs séparément, et 9x²(x³ − 4)² est la dérivée de (x³ − 4)³.",
       "difficulty": 2
     },
     {
@@ -126,23 +126,23 @@
       "options": [
         {
           "id": "a",
-          "text": "−2"
+          "text": "2/√3"
         },
         {
           "id": "b",
-          "text": "2"
+          "text": "8/5"
         },
         {
           "id": "c",
-          "text": "5/2"
+          "text": "2"
         },
         {
           "id": "d",
-          "text": "4"
+          "text": "5/2"
         }
       ],
-      "correctOption": "b",
-      "explanation": "f est continue sur [1 ; 4] et dérivable sur ]1 ; 4[. La pente de la corde est (f(4) − f(1))/(4 − 1) = (1/4 − 1)/3 = −1/4. On résout f′(c) = −1/c² = −1/4, donc c² = 4 et c = 2 (la valeur −2 n'est pas dans ]1 ; 4[). Le milieu 5/2 ne convient pas, car c n'est pas le milieu en général, et 4 s'obtient en oubliant d'extraire la racine de c² = 4.",
+      "correctOption": "c",
+      "explanation": "f est continue sur [1 ; 4] et dérivable sur ]1 ; 4[. La pente de la corde est (f(4) − f(1))/(4 − 1) = (1/4 − 1)/3 = −1/4. On résout f′(c) = −1/c² = −1/4, donc c² = 4 et c = 2 (−2 est rejeté, hors de ]1 ; 4[). La valeur 2/√3 vient d'un oubli de la division par b − a (−1/c² = −3/4) ; 8/5 confond le théorème avec une valeur moyenne de f (1/c = (1 + 1/4)/2) ; 5/2, le milieu, ne convient pas en général.",
       "difficulty": 2
     }
   ]
