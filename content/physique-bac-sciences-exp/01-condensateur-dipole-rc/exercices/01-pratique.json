@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec le condensateur",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un dipôle RC (E = 9,0 V, R = 1,0 kΩ) est relié au générateur par la fermeture de K ; le condensateur est déchargé. Quelle est l'intensité du courant à cet instant précis ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 mA"
+        },
+        {
+          "id": "b",
+          "text": "9,0 mA"
+        },
+        {
+          "id": "c",
+          "text": "9,0 µA"
+        },
+        {
+          "id": "d",
+          "text": "9,0 A"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Juste après la fermeture, u_C = 0 : toute la tension E est aux bornes de R, donc i = E/R = 9,0 V / 1,0·10³ Ω = 9,0·10⁻³ A = 9,0 mA ✓. La valeur 0 mA est celle de la fin de la charge, pas du début ; 9,0 µA prend les kΩ pour des MΩ ; 9,0 A oublie de convertir les kΩ en Ω.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un dipôle RC (E = 6,0 V, R = 300 Ω) vient de terminer sa charge. Quelles sont les valeurs de u_C et de i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u_C = 0 et i = 0"
+        },
+        {
+          "id": "b",
+          "text": "u_C = 0 et i = 20 mA"
+        },
+        {
+          "id": "c",
+          "text": "u_C = 6,0 V et i = 20 mA"
+        },
+        {
+          "id": "d",
+          "text": "u_C = 6,0 V et i = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En fin de charge, u_C tend vers E = 6,0 V et i = I₀·e^(−t/τ) tend vers 0 : le courant s'arrête quand la tension du condensateur égale celle du générateur ✓. Garder i = E/R = 20 mA est la valeur de l'instant initial ; u_C = 0 est la valeur initiale de la tension ; le couple (0 ; 0) ne correspond à aucun instant de la charge.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On enregistre u_R = R·i dans un dipôle RC avec R = 1,0 kΩ (figure) ; K passe de la position 1 à la position 2 à t = 50 ms. Quelle est l'intensité i juste après la bascule ?\n<svg viewBox=\"0 0 340 230\"><title>Oscillogramme de u_R(t) : positif jusqu'à t = 50 ms puis négatif, tendant vers 0 dans les deux phases</title><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"106.8\" y1=\"22\" x2=\"106.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"161.6\" y1=\"22\" x2=\"161.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"216.4\" y1=\"22\" x2=\"216.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"271.2\" y1=\"22\" x2=\"271.2\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326\" y1=\"22\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"176\" x2=\"326\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"106\" x2=\"326\" y2=\"106\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"36\" x2=\"326\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"106\" x2=\"332\" y2=\"106\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52\" y1=\"196\" x2=\"52\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,106 328,102 328,110\" fill=\"#0f172a\"/><polygon points=\"52,12 48,20 56,20\" fill=\"#0f172a\"/><line x1=\"52\" y1=\"103\" x2=\"52\" y2=\"109\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"52\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"106.8\" y1=\"103\" x2=\"106.8\" y2=\"109\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"106.8\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><line x1=\"161.6\" y1=\"103\" x2=\"161.6\" y2=\"109\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"161.6\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><line x1=\"216.4\" y1=\"103\" x2=\"216.4\" y2=\"109\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"216.4\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><line x1=\"271.2\" y1=\"103\" x2=\"271.2\" y2=\"109\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"271.2\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">80</text><line x1=\"326\" y1=\"103\" x2=\"326\" y2=\"109\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"326\" y=\"122\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">100</text><line x1=\"49\" y1=\"176\" x2=\"55\" y2=\"176\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"180\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−5</text><line x1=\"49\" y1=\"106\" x2=\"55\" y2=\"106\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"110\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"49\" y1=\"36\" x2=\"55\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"40\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><text x=\"322\" y=\"224\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"60\" y=\"14\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_R (V)</text><polyline points=\"52,36 53.1,38.9 54.3,41.6 55.4,44.2 56.6,46.7 57.7,49.2 58.9,51.5 60,53.7 61.1,55.8 62.3,57.9 63.4,59.9 64.6,61.7 65.7,63.5 66.8,65.3 68,66.9 69.1,68.5 70.3,70.1 71.4,71.5 72.5,72.9 73.7,74.3 74.8,75.6 76,76.8 77.1,78 78.3,79.2 79.4,80.2 80.5,81.3 81.7,82.3 82.8,83.3 84,84.2 85.1,85.1 86.2,85.9 87.4,86.8 88.5,87.5 89.7,88.3 90.8,89 92,89.7 93.1,90.4 94.2,91 95.4,91.6 96.5,92.2 97.7,92.8 98.8,93.3 100,93.8 101.1,94.3 102.2,94.8 103.4,95.3 104.5,95.7 105.7,96.1 106.8,96.5 107.9,96.9 109.1,97.3 110.2,97.6 111.4,98 112.5,98.3 113.7,98.6 114.8,98.9 115.9,99.2 117.1,99.5 118.2,99.8 119.4,100 120.5,100.3 121.6,100.5 122.8,100.7 123.9,100.9 125.1,101.1 126.2,101.3 127.3,101.5 128.5,101.7 129.6,101.9 130.8,102.1 131.9,102.2 133.1,102.4 134.2,102.5 135.3,102.7 136.5,102.8 137.6,102.9 138.8,103 139.9,103.2 141.1,103.3 142.2,103.4 143.3,103.5 144.5,103.6 145.6,103.7 146.8,103.8 147.9,103.9 149,104 150.2,104.1 151.3,104.1 152.5,104.2 153.6,104.3 154.8,104.4 155.9,104.4 157,104.5 158.2,104.5 159.3,104.6 160.5,104.7 161.6,104.7 162.7,104.8 163.9,104.8 165,104.9 166.2,104.9 167.3,105 168.4,105 169.6,105 170.7,105.1 171.9,105.1 173,105.2 174.2,105.2 175.3,105.2 176.4,105.3 177.6,105.3 178.7,105.3 179.9,105.3 181,105.4 182.2,105.4 183.3,105.4 184.4,105.4 185.6,105.5 186.7,105.5 187.9,105.5 189,105.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"189\" y1=\"105.5\" x2=\"189\" y2=\"176\" stroke=\"#0f6e56\" stroke-width=\"1.6\" stroke-dasharray=\"2 3\"/><polyline points=\"189,176 190.1,173.1 191.3,170.4 192.4,167.8 193.6,165.3 194.7,162.8 195.8,160.5 197,158.3 198.1,156.2 199.3,154.1 200.4,152.1 201.6,150.3 202.7,148.5 203.8,146.7 205,145.1 206.1,143.5 207.3,141.9 208.4,140.5 209.6,139.1 210.7,137.7 211.8,136.4 213,135.2 214.1,134 215.3,132.8 216.4,131.8 217.5,130.7 218.7,129.7 219.8,128.7 221,127.8 222.1,126.9 223.2,126.1 224.4,125.2 225.5,124.5 226.7,123.7 227.8,123 229,122.3 230.1,121.6 231.2,121 232.4,120.4 233.5,119.8 234.7,119.2 235.8,118.7 236.9,118.2 238.1,117.7 239.2,117.2 240.4,116.7 241.5,116.3 242.7,115.9 243.8,115.5 244.9,115.1 246.1,114.7 247.2,114.4 248.4,114 249.5,113.7 250.7,113.4 251.8,113.1 252.9,112.8 254.1,112.5 255.2,112.2 256.4,112 257.5,111.7 258.6,111.5 259.8,111.3 260.9,111.1 262.1,110.9 263.2,110.7 264.4,110.5 265.5,110.3 266.6,110.1 267.8,109.9 268.9,109.8 270.1,109.6 271.2,109.5 272.3,109.3 273.5,109.2 274.6,109.1 275.8,109 276.9,108.8 278.1,108.7 279.2,108.6 280.3,108.5 281.5,108.4 282.6,108.3 283.8,108.2 284.9,108.1 286,108 287.2,107.9 288.3,107.9 289.5,107.8 290.6,107.7 291.8,107.6 292.9,107.6 294,107.5 295.2,107.5 296.3,107.4 297.5,107.3 298.6,107.3 299.7,107.2 300.9,107.2 302,107.1 303.2,107.1 304.3,107 305.4,107 306.6,107 307.7,106.9 308.9,106.9 310,106.8 311.2,106.8 312.3,106.8 313.4,106.7 314.6,106.7 315.7,106.7 316.9,106.7 318,106.6 319.1,106.6 320.3,106.6 321.4,106.6 322.6,106.5 323.7,106.5 324.9,106.5 326,106.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5,0 mA"
+        },
+        {
+          "id": "b",
+          "text": "+5,0 mA"
+        },
+        {
+          "id": "c",
+          "text": "0 mA"
+        },
+        {
+          "id": "d",
+          "text": "−5,0 A"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Juste après la bascule, la figure donne u_R = −5 V, donc i = u_R/R = −5 V / 1,0·10³ Ω = −5,0 mA : c'est le courant de décharge, de sens contraire au sens positif ✓. La valeur +5,0 mA oublie le signe ; 0 mA confond avec la fin de la charge ; −5,0 A oublie que R est en kΩ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un générateur de courant débite I = 80 µA dans un condensateur neutre : la tension u_C croît de 0 à 6,0 V en 12 s. Quelle est la capacité C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "13 µF"
+        },
+        {
+          "id": "b",
+          "text": "40 µF"
+        },
+        {
+          "id": "c",
+          "text": "160 µF"
+        },
+        {
+          "id": "d",
+          "text": "960 µF"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À courant constant, q = I·t = 80 µA × 12 s = 960 µC ; C = q/u_C = 960 µC / 6,0 V = 160 µF ✓. Autre voie : k = 6,0/12 = 0,50 V·s⁻¹ et C = I/k = 80 µA / 0,50 = 160 µF. La valeur 13 µF oublie la durée (I/u_C) ; 40 µF multiplie I par k au lieu de les diviser ; 960 µF s'arrête à la charge q sans diviser par la tension.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un condensateur plan a pour armatures S = 0,50 m², écartées de e = 0,40 mm, avec un diélectrique de permittivité relative ε_r = 4,0 (ε₀ ≈ 8,85·10⁻¹² F·m⁻¹). Quelle est sa capacité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,18 µF"
+        },
+        {
+          "id": "b",
+          "text": "44 nF"
+        },
+        {
+          "id": "c",
+          "text": "11 nF"
+        },
+        {
+          "id": "d",
+          "text": "44 pF"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C = ε_r·ε₀·S/e = 4,0 × 8,85·10⁻¹² × 0,50 / 4,0·10⁻⁴ ≈ 4,4·10⁻⁸ F = 44 nF ✓ (e converti en 4,0·10⁻⁴ m). La valeur 44 pF vient de e = 0,40 laissé « en mètres » ; 11 nF oublie ε_r ; 0,18 µF compte ε_r deux fois.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un condensateur de capacité C fixée est chargé sous une tension u ; on multiplie u par 3. Par quel facteur l'énergie emmagasinée est-elle multipliée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E_C = ½·C·u² : u est au carré, donc multiplier u par 3 multiplie E_C par 3² = 9 ✓. Le facteur 3 suppose une proportionnalité à u ; 6 = 2 × 3 : on double au lieu d'élever au carré ; 18 = 2 × 3² : on oublie le facteur ½ en le traitant comme un facteur 2.",
+      "difficulty": 2
+    }
+  ]
+}

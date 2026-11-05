@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Le condensateur et le dipôle RC",
+  "questions": [
+    {
+      "prompt": "Un condensateur se charge sous une tension continue. Que se passe-t-il au niveau de son diélectrique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune charge ne le traverse : il est isolant"
+        },
+        {
+          "id": "b",
+          "text": "Des électrons le traversent de A vers B"
+        },
+        {
+          "id": "c",
+          "text": "Des électrons le traversent de B vers A"
+        },
+        {
+          "id": "d",
+          "text": "Des ions positifs le traversent lentement de A vers B"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le diélectrique est un isolant : pendant la charge, des électrons arrivent sur une armature et quittent l'autre par les fils, mais aucune charge ne traverse le diélectrique ✓. Dire que des électrons le traversent, quel que soit le sens retenu, revient à croire que le courant passe à travers le condensateur ; quant aux ions positifs, ils ne se déplacent pas dans les fils métalliques.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le sens positif du courant est orienté vers l'armature A. Pendant la décharge, la charge q de A diminue. Que peut-on dire de i = dq/dt ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "i > 0, car l'intensité d'un courant est toujours positive"
+        },
+        {
+          "id": "b",
+          "text": "i = 0, car le condensateur se vide"
+        },
+        {
+          "id": "c",
+          "text": "i > 0, car la charge q de A reste positive"
+        },
+        {
+          "id": "d",
+          "text": "i < 0, car le courant circule en sens contraire"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "i = dq/dt est la dérivée de q : q diminue, donc i < 0 ✓. L'intensité est une grandeur algébrique : un signe négatif indique que le courant circule en sens contraire du sens positif choisi. Dire que i est toujours positif oublie ce caractère algébrique ; dire que i est nul confond « charge qui diminue » et « charge constante » ; le signe de q n'impose pas celui de dq/dt.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un condensateur de capacité 22 µF est soumis à la tension u_C = 5,0 V. Quelle est sa charge q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,1 mC"
+        },
+        {
+          "id": "b",
+          "text": "110 µC"
+        },
+        {
+          "id": "c",
+          "text": "110 nC"
+        },
+        {
+          "id": "d",
+          "text": "4,4 µC"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "q = C·u_C = 22 µF × 5,0 V = 110 µC ✓ (soit 1,1·10⁻⁴ C). La valeur 4,4 µC vient de l'inversion C/u_C ; 110 nC lit les µF comme des nF ; 1,1 mC est faux d'un facteur 10 sur la puissance de dix.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la valeur de 4,7 nF en farads ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,7·10⁻³ F"
+        },
+        {
+          "id": "b",
+          "text": "4,7·10⁻⁶ F"
+        },
+        {
+          "id": "c",
+          "text": "4,7·10⁻⁹ F"
+        },
+        {
+          "id": "d",
+          "text": "4,7·10⁻¹² F"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le préfixe nano vaut 10⁻⁹ : 4,7 nF = 4,7·10⁻⁹ F ✓. La puissance −3 est celle du millifarad, −6 celle du microfarad et −12 celle du picofarad.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On double l'écartement e entre les armatures d'un condensateur plan, sans modifier S ni le diélectrique. Que devient la capacité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est multipliée par 2"
+        },
+        {
+          "id": "b",
+          "text": "Elle est divisée par 4"
+        },
+        {
+          "id": "c",
+          "text": "Elle reste inchangée"
+        },
+        {
+          "id": "d",
+          "text": "Elle est divisée par 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "C = ε·S/e est inversement proportionnelle à e : si e double, C est divisée par 2 ✓. Multiplier par 2 oublie que e est au dénominateur ; diviser par 4 suppose que e intervient au carré, ce qui n'est pas le cas ; C ne reste pas inchangée, car elle dépend de la géométrie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le boîtier d'un condensateur indique une tension de service de 25 V. Comment est la tension de claquage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nettement supérieure à 25 V"
+        },
+        {
+          "id": "b",
+          "text": "Nettement inférieure à 25 V"
+        },
+        {
+          "id": "c",
+          "text": "Égale à 25 V"
+        },
+        {
+          "id": "d",
+          "text": "Légèrement inférieure à 25 V"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La tension de service (25 V ici) est la tension nominale ; elle est nettement inférieure à la tension de claquage, qui fait jaillir l'étincelle dans le diélectrique ✓. Une tension de claquage égale ou inférieure à la tension de service ferait claquer le composant en fonctionnement normal.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pendant la décharge d'un dipôle RC initialement chargé sous E, quelle est la tension u_C à l'instant t = τ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,63 E"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "0,37 E"
+        },
+        {
+          "id": "d",
+          "text": "E/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En décharge, u_C(t) = E·e^(−t/τ), donc u_C(τ) = E·e^(−1) ≈ 0,37 E ✓. La valeur 0,63 E est celle de la charge à t = τ ; 0 est la valeur atteinte seulement au bout d'une durée infinie ; E/2 n'est pas atteinte à t = τ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle énergie emmagasine un condensateur de capacité 200 µF chargé sous 6,0 V ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,2 mJ"
+        },
+        {
+          "id": "b",
+          "text": "3,6 mJ"
+        },
+        {
+          "id": "c",
+          "text": "1,2 mJ"
+        },
+        {
+          "id": "d",
+          "text": "0,60 mJ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E_C = ½·C·u² = ½ × 200·10⁻⁶ × 6,0² = ½ × 200·10⁻⁶ × 36 = 3,6·10⁻³ J = 3,6 mJ ✓. La valeur 7,2 mJ oublie le facteur ½ ; 0,60 mJ oublie de mettre u au carré ; 1,2 mJ est la valeur de la charge q = C·u (en mC), pas d'une énergie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle équation différentielle régit u_C(t) pendant la charge d'un dipôle RC alimenté par une tension E ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u_C + RC·du_C/dt = 0"
+        },
+        {
+          "id": "b",
+          "text": "u_C + RC·du_C/dt = E"
+        },
+        {
+          "id": "c",
+          "text": "u_C − RC·du_C/dt = E"
+        },
+        {
+          "id": "d",
+          "text": "RC·u_C + du_C/dt = E"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La loi des mailles u_R + u_C = E, avec u_R = R·i et i = C·du_C/dt, donne u_C + RC·du_C/dt = E ✓. L'équation à second membre nul décrit la décharge ; le signe − et le produit RC·u_C ne découlent d'aucune étape de la mise en équation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un résistor de 4,0 kΩ est associé à un condensateur de 2,5 µF. Quelle est la constante de temps τ du dipôle RC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 ms"
+        },
+        {
+          "id": "b",
+          "text": "10 µs"
+        },
+        {
+          "id": "c",
+          "text": "10 s"
+        },
+        {
+          "id": "d",
+          "text": "10 000 s"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "τ = R·C = 4,0·10³ Ω × 2,5·10⁻⁶ F = 1,0·10⁻² s = 10 ms ✓. La valeur 10 µs oublie de convertir les kΩ en Ω ; 10 s lit la capacité en mF ; 10 000 s oublie de convertir les µF en F.",
+      "difficulty": 2
+    }
+  ]
+}

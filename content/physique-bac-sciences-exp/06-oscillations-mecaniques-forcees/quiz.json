@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Les oscillations mécaniques forcées",
+  "questions": [
+    {
+      "prompt": "Un pendule élastique, de fréquence propre N₀ = 1,0 Hz, est entraîné par un moteur qui tourne à 90 tr/min. En régime permanent, quelle est la fréquence de ses oscillations ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,0 Hz"
+        },
+        {
+          "id": "b",
+          "text": "1,5 Hz"
+        },
+        {
+          "id": "c",
+          "text": "90 Hz"
+        },
+        {
+          "id": "d",
+          "text": "0,5 Hz"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La fréquence est imposée par l'excitateur : N = 90 tr/min ÷ 60 = 1,5 tr/s = 1,5 Hz ✓. 1,0 Hz est la fréquence propre N₀, celle des oscillations libres. 90 Hz lit la valeur en tr/min comme si elle était en hertz. 0,5 Hz est l'écart N − N₀, qui n'est la fréquence de rien.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un palet est relié par un ressort à un moteur à excentrique qui entretient ses oscillations. Quel est le rôle de chaque élément ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le moteur est le résonateur et le système {palet, ressort} est l'excitateur"
+        },
+        {
+          "id": "b",
+          "text": "Le ressort est l'excitateur et le palet est le résonateur"
+        },
+        {
+          "id": "c",
+          "text": "Le moteur est l'excitateur et le système {palet, ressort} est le résonateur"
+        },
+        {
+          "id": "d",
+          "text": "Le moteur est à la fois l'excitateur et le résonateur"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le moteur apporte périodiquement l'énergie et impose sa fréquence : c'est l'excitateur ; le système {palet, ressort}, qui oscille à cette fréquence imposée, est le résonateur ✓. Inverser les deux rôles revient à croire que le pendule impose sa fréquence au moteur. Le ressort fait partie du résonateur, il ne l'excite pas. Un même élément ne peut pas à la fois imposer et subir la fréquence.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un enregistrement du palet en régime permanent montre 5 oscillations complètes en 4,0 s. Quelle est la fréquence N de ces oscillations ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,80 Hz"
+        },
+        {
+          "id": "b",
+          "text": "20 Hz"
+        },
+        {
+          "id": "c",
+          "text": "7,9 Hz"
+        },
+        {
+          "id": "d",
+          "text": "1,25 Hz"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "N = nombre d'oscillations ÷ durée = 5 / 4,0 = 1,25 Hz ✓. 0,80 correspond à la période T = 4,0 / 5 = 0,80 s, donnée comme si c'était une fréquence. 20 est le produit 5 × 4,0. 7,9 est la pulsation ω = 2π × 1,25 = 7,85 rad/s lue comme des hertz.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Par analogie avec le circuit RLC série (q ↔ x, L ↔ m, R ↔ h, 1/C ↔ k, u ↔ F), quelle équation régit les oscillations forcées de l'élongation x ? On note x′ = dx/dt et x″ = d²x/dt².",
+      "options": [
+        {
+          "id": "a",
+          "text": "m·x″ + h·x′ + k·x = F_m sin ωt"
+        },
+        {
+          "id": "b",
+          "text": "m·x″ + h·x′ + k·x = 0"
+        },
+        {
+          "id": "c",
+          "text": "m·x″ + h·x′ + x/k = F_m sin ωt"
+        },
+        {
+          "id": "d",
+          "text": "m·x″ + k·x′ + h·x = F_m sin ωt"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On remplace L par m, R par h, 1/C par k et u par F : m·x″ + h·x′ + k·x = F_m sin ωt ✓. Le second membre nul décrit des oscillations libres amorties, qui s'éteignent. Mettre x/k confond 1/C avec C : c'est k lui-même qui correspond à 1/C. Permuter h et k attribue le rappel au frottement et inversement : h multiplie x′, k multiplie x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un pendule élastique est excité en régime permanent. On double l'amplitude F_m de la force excitatrice, sans rien changer d'autre (m, k, h, fréquence du moteur). Comment varient l'amplitude X_m des oscillations et la fréquence N_r de la résonance d'élongation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X_m est inchangée et N_r est inchangée"
+        },
+        {
+          "id": "b",
+          "text": "X_m est doublée et N_r est inchangée"
+        },
+        {
+          "id": "c",
+          "text": "X_m est inchangée et N_r est doublée"
+        },
+        {
+          "id": "d",
+          "text": "X_m est doublée et N_r est doublée"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "X_m = F_m / √(h²ω² + (mω² − k)²) est proportionnelle à F_m : elle est doublée. N_r = √(N₀² − h²/(8π²m²)) ne contient pas F_m : elle est inchangée ✓. « X_m inchangée » nie la proportionnalité entre l'amplitude et la force. « N_r doublée » attribue à la force un rôle dans la position de la résonance, qui ne dépend que de m, k et h.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un pendule élastique (m = 0,25 kg ; k = 100 N/m) a pour fréquence propre N₀ = 3,18 Hz. Avec un coefficient de frottement h = 1,0 kg/s, quelle est la fréquence N_r de sa résonance d'élongation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,18 Hz"
+        },
+        {
+          "id": "b",
+          "text": "3,21 Hz"
+        },
+        {
+          "id": "c",
+          "text": "3,12 Hz"
+        },
+        {
+          "id": "d",
+          "text": "3,15 Hz"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "N_r = √(N₀² − h²/(8π²m²)) = √(10,13 − 1,0 / (78,96 × 0,0625)) = √(10,13 − 0,203) = √9,93 = 3,15 Hz ✓, un peu en dessous de N₀. 3,18 Hz place la résonance en N₀, comme pour la vitesse. 3,21 Hz additionne le terme d'amortissement au lieu de le retrancher. 3,12 Hz utilise 4π² au lieu de 8π², donc un terme deux fois trop grand.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un pendule amorti oscille en régime forcé avec une amplitude de vitesse V_m = 0,40 m/s ; son coefficient de frottement est h = 0,25 kg/s. Quelle est la puissance mécanique moyenne P reçue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 mW"
+        },
+        {
+          "id": "b",
+          "text": "50 mW"
+        },
+        {
+          "id": "c",
+          "text": "20 mW"
+        },
+        {
+          "id": "d",
+          "text": "10 mW"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "P = ½·h·V_m² = ½ × 0,25 × 0,40² = 0,5 × 0,25 × 0,16 = 0,020 W = 20 mW ✓. 40 mW oublie le facteur ½. 50 mW ne met pas V_m au carré : ½ × 0,25 × 0,40. 10 mW applique le facteur ½ deux fois.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une voiture roule sur une route dont les bosses sont espacées de d = 6,0 m. La période propre de sa suspension est T₀ = 0,80 s ; les frottements de la suspension sont faibles. À quelle vitesse la voiture est-elle la plus secouée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "27 km/h"
+        },
+        {
+          "id": "b",
+          "text": "7,5 km/h"
+        },
+        {
+          "id": "c",
+          "text": "17 km/h"
+        },
+        {
+          "id": "d",
+          "text": "2,1 km/h"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La résonance a lieu pour T = d/v = T₀, donc v_c = d/T₀ = 6,0 / 0,80 = 7,5 m/s, soit 7,5 × 3,6 = 27 km/h ✓. 7,5 km/h oublie la conversion des m/s en km/h. 17 km/h multiplie d par T₀ (4,8 m/s) au lieu de les diviser. 2,1 km/h convertit à l'envers, en divisant 7,5 par 3,6.",
+      "difficulty": 2
+    }
+  ]
+}

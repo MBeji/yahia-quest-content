@@ -1,0 +1,165 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les secrets du circuit oscillant",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Dans un circuit LC non amorti, on enregistre l'énergie électrique E_C(t) : deux maxima successifs sont séparés de 2,0 ms. Quelle est la pulsation propre ω₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,1·10³ rad·s⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "7,9·10² rad·s⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "2,5·10² rad·s⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "1,6·10³ rad·s⁻¹"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "E_C a pour période T₀/2, donc T₀ = 2 × 2,0 = 4,0 ms et ω₀ = 2π/T₀ = 2π / 4,0·10⁻³ ≈ 1,57·10³, soit 1,6·10³ rad·s⁻¹ ✓. La valeur 3,1·10³ prend 2,0 ms pour T₀ (la période de q, au lieu de celle de l'énergie). La valeur 7,9·10² suppose T₀ = 8,0 ms. La valeur 2,5·10² est la fréquence N₀ = 1/T₀ = 250 Hz, dont l'unité n'est pas celle d'une pulsation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un circuit LC où C = 0,30 µF, l'intensité s'écrit i(t) = 12·10⁻³·sin(2500·t + π) (en A). Quelle est l'amplitude U_m de la tension u_C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11 V"
+        },
+        {
+          "id": "b",
+          "text": "16 V"
+        },
+        {
+          "id": "c",
+          "text": "4,8 V"
+        },
+        {
+          "id": "d",
+          "text": "40 kV"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ω₀ = 2500 rad·s⁻¹ et I_m = 12 mA ; l'amplitude de la charge est Q_m = I_m/ω₀ = 4,8 µC et U_m = Q_m/C = 4,8·10⁻⁶ / 0,30·10⁻⁶ = 16 V ✓ (L = 1/(ω₀²C) ≈ 0,53 H donne le même résultat par E = ½·L·I_m² = ½·C·U_m²). La valeur 11 V traite E = C·U_m² (facteur ½ oublié : 16/√2 ≈ 11,3 V). La valeur 4,8 V est la charge Q_m en µC lue comme une tension. La valeur 40 kV divise I_m par C sans diviser par ω₀.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un circuit LC où L = 0,50 H, l'intensité s'écrit i(t) = I_m·sin(ω₀t) avec I_m = 20 mA. Quelle est l'énergie magnétique E_L de la bobine à l'instant t = T₀/8 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 µJ"
+        },
+        {
+          "id": "b",
+          "text": "100 µJ"
+        },
+        {
+          "id": "c",
+          "text": "71 µJ"
+        },
+        {
+          "id": "d",
+          "text": "25 µJ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "À t = T₀/8, ω₀t = π/4 et i = I_m·sin(π/4) = I_m/√2 ; donc E_L = ½·L·i² = ¼·L·I_m² = ¼ × 0,50 × (2,0·10⁻²)² = 5,0·10⁻⁵ J = 50 µJ ✓ (même résultat par E_L = ¼·L·I_m²·(1 − cos 2ω₀t) avec cos(π/2) = 0). La valeur 100 µJ est l'énergie totale ½·L·I_m², non la part magnétique à cet instant. La valeur 71 µJ oublie de mettre sin(π/4) au carré. La valeur 25 µJ prend sin(π/4) ≈ 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un condensateur de 1,0 µF est fermé sur une bobine en série avec un résistor. À deux extrema successifs de u_C, l'énergie totale du circuit vaut 50 µJ puis 32 µJ. Que valent |u_C| à ces deux instants ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,1 V puis 5,7 V"
+        },
+        {
+          "id": "b",
+          "text": "50 V puis 32 V"
+        },
+        {
+          "id": "c",
+          "text": "10 V puis 8,0 V"
+        },
+        {
+          "id": "d",
+          "text": "100 V puis 64 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "i = 0 à ces instants, donc E = ½·C·u_C² et |u_C| = √(2E/C) : √(2 × 50·10⁻⁶ / 1,0·10⁻⁶) = √100 = 10 V, puis √64 = 8,0 V ✓. Les valeurs 7,1 V et 5,7 V correspondent à E = C·u_C² (facteur ½ oublié). Les valeurs 50 V et 32 V sont E/C, sans le facteur 2 ni la racine. Les valeurs 100 V et 64 V sont 2E/C, avec la racine oubliée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un circuit LC non amorti de période propre T₀ = 8,0 ms, le condensateur est chargé à son maximum à t = 0. À quelle date a-t-on, pour la première fois, E_C = E_L ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,3 ms"
+        },
+        {
+          "id": "b",
+          "text": "1,0 ms"
+        },
+        {
+          "id": "c",
+          "text": "2,0 ms"
+        },
+        {
+          "id": "d",
+          "text": "4,0 ms"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E_C = (Q_m²/2C)·cos²ω₀t vaut la moitié de E quand cos²ω₀t = ½, soit ω₀t = π/4 et t = T₀/8 = 1,0 ms ✓. La valeur 1,3 ms (T₀/6) correspond à q = Q_m/2, c'est-à-dire E_C = E/4 et non E/2. La valeur 2,0 ms (T₀/4) est l'instant où q = 0 : toute l'énergie est magnétique. La valeur 4,0 ms (T₀/2) est celui où le condensateur est de nouveau entièrement chargé.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans un circuit RLC libre faiblement amorti, la pseudo-période est voisine de 2π√(LC)."
+        },
+        {
+          "id": "b",
+          "text": "Dans un circuit LC non amorti, doubler la charge initiale double la période propre."
+        },
+        {
+          "id": "c",
+          "text": "Dans un circuit LC non amorti, doubler l'amplitude Q_m multiplie l'énergie totale par 4."
+        },
+        {
+          "id": "d",
+          "text": "Dans un circuit RLC libre, l'énergie totale reste constante parce que E_C et E_L s'échangent."
+        },
+        {
+          "id": "e",
+          "text": "Dans un circuit LC non amorti, quadrupler L (C inchangée) double la période propre."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Vraies : avec un faible amortissement T ≈ T₀ = 2π√(LC) ; E = Q_m²/(2C) est proportionnelle à Q_m², donc elle est multipliée par 4 quand Q_m double ; T₀ = 2π√(LC) est proportionnelle à √L, donc quadrupler L la double. Fausses : T₀ ne dépend que de L et de C, jamais de la charge initiale ; dans un circuit RLC, dE/dt = −R·i² < 0 : l'énergie diminue même si E_C et E_L s'échangent.",
+      "difficulty": 3
+    }
+  ]
+}

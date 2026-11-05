@@ -1,0 +1,141 @@
+{
+  "title": "⭐ Exercice : Les premiers pas du régime forcé",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un GBF est branché sur un circuit RLC série et le régime permanent est établi. Quelle grandeur le GBF, qui joue le rôle d'excitateur, impose-t-il au circuit résonateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fréquence N du GBF"
+        },
+        {
+          "id": "b",
+          "text": "La fréquence propre N₀ du circuit"
+        },
+        {
+          "id": "c",
+          "text": "La résistance totale R du circuit"
+        },
+        {
+          "id": "d",
+          "text": "L'impédance Z du circuit"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'excitateur impose la fréquence N : i et q oscillent à N, la fréquence réglée sur le GBF ✓. La fréquence propre N₀ = 1/(2π√(LC)) ne dépend que de L et de C, pas du GBF. La résistance totale R est celle des composants. L'impédance Z est une propriété du circuit, qui varie avec N mais que le GBF ne fixe pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un RLC série est alimenté par u de valeur maximale U_m = 4,0 V. Une voie de l'oscilloscope visualise la tension aux bornes d'un résistor R₀ = 20 Ω, d'amplitude 0,80 V. Quelle est l'impédance Z du circuit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,0 Ω"
+        },
+        {
+          "id": "b",
+          "text": "100 Ω"
+        },
+        {
+          "id": "c",
+          "text": "20 Ω"
+        },
+        {
+          "id": "d",
+          "text": "0,010 Ω"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "I_m = U_R0m / R₀ = 0,80 / 20 = 40 mA, puis Z = U_m / I_m = 4,0 / 0,040 = 100 Ω ✓. 5,0 est le quotient U_m / U_R0m : il ne passe pas par R₀ et n'a pas d'unité. 20 Ω est la résistance R₀ seule, non l'impédance du circuit. 0,010 Ω est le quotient inversé I_m / U_m.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur l'écran, la période d'une tension occupe 5,0 div, avec une base de temps de 0,10 ms/div. Quelle est sa fréquence ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 kHz"
+        },
+        {
+          "id": "b",
+          "text": "200 Hz"
+        },
+        {
+          "id": "c",
+          "text": "2,0 kHz"
+        },
+        {
+          "id": "d",
+          "text": "0,20 Hz"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "T = 5,0 div × 0,10 ms/div = 0,50 ms, donc N = 1/T = 1/(0,50 × 10⁻³) = 2,0 kHz ✓. 10 kHz est l'inverse de la sensibilité seule (1/0,10 ms). 200 Hz lit la période comme 5,0 ms, en prenant les divisions pour des millisecondes. 0,20 Hz est 1/5,0, sans la sensibilité.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un circuit RLC série est parcouru par un courant d'amplitude I_m = 60 mA à la fréquence N = 400 Hz. Calculer l'amplitude Q_m de la charge du condensateur, en µC.",
+      "answerKey": {
+        "value": 23.9,
+        "tolerance": 0.3,
+        "unit": "µC"
+      },
+      "explanation": "Q_m = I_m / (2πN) = 0,060 / (2π × 400) = 0,060 / 2513 = 2,39 × 10⁻⁵ C, soit environ 23,9 µC ✓ (unité : A divisé par s⁻¹ donne des coulombs).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur les oscillogrammes de la même période T = 2,0 ms, les maxima de q(t) sont atteints 0,50 ms après ceux de i(t). Quel est le déphasage φ_i − φ_q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/2 rad"
+        },
+        {
+          "id": "b",
+          "text": "+π rad"
+        },
+        {
+          "id": "c",
+          "text": "+π/4 rad"
+        },
+        {
+          "id": "d",
+          "text": "+π/2 rad"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Δt / T = 0,50 / 2,0 = 1/4, donc |Δφ| = π/2 rad. Le maximum de i arrive avant celui de q : i est en avance, φ_i − φ_q = +π/2 rad ✓, ce qui est cohérent avec i = dq/dt. −π/2 rad inverse l'avance et le retard. +π rad correspondrait à un décalage d'une demi-période. +π/4 rad oublie le facteur 2 de 2π.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour un RLC série à une pulsation donnée, R = 60 Ω, Lω = 100 Ω et 1/(Cω) = 20 Ω, avec U_m = 8,0 V. Quelle est l'intensité maximale I_m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80 mA"
+        },
+        {
+          "id": "b",
+          "text": "133 mA"
+        },
+        {
+          "id": "c",
+          "text": "57 mA"
+        },
+        {
+          "id": "d",
+          "text": "60 mA"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Z = √(60² + (100 − 20)²) = √(3600 + 6400) = 100 Ω, donc I_m = 8,0 / 100 = 80 mA ✓. 133 mA correspond à Z = R = 60 Ω (cas de la résonance, qui n'est pas ici). 57 mA correspond à Z = 60 + 100 − 20 = 140 Ω, somme arithmétique. 60 mA vient de Lω + 1/(Cω) = 120 Ω au lieu de la différence : Z = √(60² + 120²) = 134 Ω.",
+      "difficulty": 2
+    }
+  ]
+}

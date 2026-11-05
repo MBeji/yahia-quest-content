@@ -1,0 +1,141 @@
+{
+  "title": "⭐ Exercice : Les premiers pas du régime forcé",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle phrase distingue correctement des oscillations forcées, en régime permanent, d'oscillations libres amorties ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fréquence est celle du pendule, et l'amplitude décroît avec le temps"
+        },
+        {
+          "id": "b",
+          "text": "La fréquence est celle de l'excitateur, et l'amplitude reste constante"
+        },
+        {
+          "id": "c",
+          "text": "La fréquence est celle de l'excitateur, et l'amplitude décroît avec le temps"
+        },
+        {
+          "id": "d",
+          "text": "La fréquence est celle du pendule, et l'amplitude reste constante"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En régime forcé permanent, l'excitateur impose sa fréquence et compense les pertes d'énergie : l'amplitude reste constante ✓. Le couple « fréquence du pendule, amplitude décroissante » décrit les oscillations libres amorties. Une fréquence imposée avec une amplitude décroissante est incohérente, puisque l'excitateur compense justement l'amortissement. Une fréquence propre avec une amplitude constante supposerait que le pendule s'entretienne seul.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le mouvement d'un palet en régime permanent a pour équation x(t) = 3,0 × 10⁻² sin(8πt + π/3), en unités SI. Quelles sont l'amplitude X_m et la fréquence N ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X_m = 3,0 cm ; N = 4,0 Hz"
+        },
+        {
+          "id": "b",
+          "text": "X_m = 3,0 cm ; N = 25 Hz"
+        },
+        {
+          "id": "c",
+          "text": "X_m = 0,30 cm ; N = 4,0 Hz"
+        },
+        {
+          "id": "d",
+          "text": "X_m = 0,30 cm ; N = 25 Hz"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "X_m = 3,0 × 10⁻² m = 3,0 cm, et 8π est la pulsation ω = 2πN, donc N = 8π / 2π = 4,0 Hz ✓. 25 Hz vient de 8π = 25,1 lu directement comme une fréquence. 0,30 cm convertit mal 3,0 × 10⁻² m en centimètres, avec un facteur 10 au lieu de 100.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'enregistrement de l'élongation d'un palet, en régime permanent, est donné ci-dessous. Quelles sont l'amplitude X_m et la fréquence N ?\n<svg viewBox=\"0 0 340 214\"><title>Enregistrement x(t) du palet en régime permanent : sinusoïde d'amplitude 3 cm qui passe par zéro à t = 0</title><line x1=\"54\" y1=\"80.6\" x2=\"322\" y2=\"80.6\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"123.4\" x2=\"322\" y2=\"123.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"59.1\" x2=\"322\" y2=\"59.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"144.9\" x2=\"322\" y2=\"144.9\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"37.7\" x2=\"322\" y2=\"37.7\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"166.3\" x2=\"322\" y2=\"166.3\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"86.5\" y1=\"28\" x2=\"86.5\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"119\" y1=\"28\" x2=\"119\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"151.5\" y1=\"28\" x2=\"151.5\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"184\" y1=\"28\" x2=\"184\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"216.5\" y1=\"28\" x2=\"216.5\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"249\" y1=\"28\" x2=\"249\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"281.5\" y1=\"28\" x2=\"281.5\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"314\" y1=\"28\" x2=\"314\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"102\" x2=\"324\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"330,102 322,98 322,106\" fill=\"#0f172a\"/><line x1=\"54\" y1=\"182\" x2=\"54\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"54,16 50,24 58,24\" fill=\"#0f172a\"/><polyline points=\"54,102 54.9,99.3 55.7,96.6 56.6,93.9 57.5,91.3 58.3,88.6 59.2,86 60.1,83.4 60.9,80.8 61.8,78.3 62.7,75.8 63.5,73.4 64.4,71 65.3,68.7 66.1,66.4 67,64.2 67.9,62 68.7,60 69.6,58 70.5,56 71.3,54.2 72.2,52.4 73.1,50.7 73.9,49.2 74.8,47.7 75.7,46.3 76.5,45 77.4,43.8 78.3,42.7 79.1,41.7 80,40.8 80.9,40 81.7,39.4 82.6,38.8 83.5,38.3 84.3,38 85.2,37.8 86.1,37.7 86.9,37.7 87.8,37.8 88.7,38 89.5,38.3 90.4,38.8 91.3,39.4 92.1,40 93,40.8 93.9,41.7 94.7,42.7 95.6,43.8 96.5,45 97.3,46.3 98.2,47.7 99.1,49.2 99.9,50.7 100.8,52.4 101.7,54.2 102.5,56 103.4,58 104.3,60 105.1,62 106,64.2 106.9,66.4 107.7,68.7 108.6,71 109.5,73.4 110.3,75.8 111.2,78.3 112.1,80.8 112.9,83.4 113.8,86 114.7,88.6 115.5,91.3 116.4,93.9 117.3,96.6 118.1,99.3 119,102 119.9,104.7 120.7,107.4 121.6,110.1 122.5,112.7 123.3,115.4 124.2,118 125.1,120.6 125.9,123.2 126.8,125.7 127.7,128.2 128.5,130.6 129.4,133 130.3,135.3 131.1,137.6 132,139.8 132.9,142 133.7,144 134.6,146 135.5,148 136.3,149.8 137.2,151.6 138.1,153.3 138.9,154.8 139.8,156.3 140.7,157.7 141.5,159 142.4,160.2 143.3,161.3 144.1,162.3 145,163.2 145.9,164 146.7,164.6 147.6,165.2 148.5,165.7 149.3,166 150.2,166.2 151.1,166.3 151.9,166.3 152.8,166.2 153.7,166 154.5,165.7 155.4,165.2 156.3,164.6 157.1,164 158,163.2 158.9,162.3 159.7,161.3 160.6,160.2 161.5,159 162.3,157.7 163.2,156.3 164.1,154.8 164.9,153.3 165.8,151.6 166.7,149.8 167.5,148 168.4,146 169.3,144 170.1,142 171,139.8 171.9,137.6 172.7,135.3 173.6,133 174.5,130.6 175.3,128.2 176.2,125.7 177.1,123.2 177.9,120.6 178.8,118 179.7,115.4 180.5,112.7 181.4,110.1 182.3,107.4 183.1,104.7 184,102 184.9,99.3 185.7,96.6 186.6,93.9 187.5,91.3 188.3,88.6 189.2,86 190.1,83.4 190.9,80.8 191.8,78.3 192.7,75.8 193.5,73.4 194.4,71 195.3,68.7 196.1,66.4 197,64.2 197.9,62 198.7,60 199.6,58 200.5,56 201.3,54.2 202.2,52.4 203.1,50.7 203.9,49.2 204.8,47.7 205.7,46.3 206.5,45 207.4,43.8 208.3,42.7 209.1,41.7 210,40.8 210.9,40 211.7,39.4 212.6,38.8 213.5,38.3 214.3,38 215.2,37.8 216.1,37.7 216.9,37.7 217.8,37.8 218.7,38 219.5,38.3 220.4,38.8 221.3,39.4 222.1,40 223,40.8 223.9,41.7 224.7,42.7 225.6,43.8 226.5,45 227.3,46.3 228.2,47.7 229.1,49.2 229.9,50.7 230.8,52.4 231.7,54.2 232.5,56 233.4,58 234.3,60 235.1,62 236,64.2 236.9,66.4 237.7,68.7 238.6,71 239.5,73.4 240.3,75.8 241.2,78.3 242.1,80.8 242.9,83.4 243.8,86 244.7,88.6 245.5,91.3 246.4,93.9 247.3,96.6 248.1,99.3 249,102 249.9,104.7 250.7,107.4 251.6,110.1 252.5,112.7 253.3,115.4 254.2,118 255.1,120.6 255.9,123.2 256.8,125.7 257.7,128.2 258.5,130.6 259.4,133 260.3,135.3 261.1,137.6 262,139.8 262.9,142 263.7,144 264.6,146 265.5,148 266.3,149.8 267.2,151.6 268.1,153.3 268.9,154.8 269.8,156.3 270.7,157.7 271.5,159 272.4,160.2 273.3,161.3 274.1,162.3 275,163.2 275.9,164 276.7,164.6 277.6,165.2 278.5,165.7 279.3,166 280.2,166.2 281.1,166.3 281.9,166.3 282.8,166.2 283.7,166 284.5,165.7 285.4,165.2 286.3,164.6 287.1,164 288,163.2 288.9,162.3 289.7,161.3 290.6,160.2 291.5,159 292.3,157.7 293.2,156.3 294.1,154.8 294.9,153.3 295.8,151.6 296.7,149.8 297.5,148 298.4,146 299.3,144 300.1,142 301,139.8 301.9,137.6 302.7,135.3 303.6,133 304.5,130.6 305.3,128.2 306.2,125.7 307.1,123.2 307.9,120.6 308.8,118 309.7,115.4 310.5,112.7 311.4,110.1 312.3,107.4 313.1,104.7 314,102\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"51\" y1=\"80.6\" x2=\"54\" y2=\"80.6\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"84.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+1</text><line x1=\"51\" y1=\"123.4\" x2=\"54\" y2=\"123.4\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"127.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−1</text><line x1=\"51\" y1=\"59.1\" x2=\"54\" y2=\"59.1\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"63.1\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+2</text><line x1=\"51\" y1=\"144.9\" x2=\"54\" y2=\"144.9\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"148.9\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−2</text><line x1=\"51\" y1=\"37.7\" x2=\"54\" y2=\"37.7\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"41.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+3</text><line x1=\"51\" y1=\"166.3\" x2=\"54\" y2=\"166.3\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"170.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−3</text><text x=\"47\" y=\"106\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"86.5\" y1=\"99\" x2=\"86.5\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"86.5\" y=\"193\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,2</text><line x1=\"119\" y1=\"99\" x2=\"119\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"119\" y=\"193\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,4</text><line x1=\"151.5\" y1=\"99\" x2=\"151.5\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"151.5\" y=\"193\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,6</text><line x1=\"184\" y1=\"99\" x2=\"184\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"184\" y=\"193\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,8</text><line x1=\"216.5\" y1=\"99\" x2=\"216.5\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"216.5\" y=\"193\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"249\" y1=\"99\" x2=\"249\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"249\" y=\"193\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,2</text><line x1=\"281.5\" y1=\"99\" x2=\"281.5\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"281.5\" y=\"193\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,4</text><line x1=\"314\" y1=\"99\" x2=\"314\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"314\" y=\"193\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,6</text><text x=\"326\" y=\"207\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (s)</text><text x=\"62\" y=\"20\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x (cm)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "X_m = 6,0 cm ; N = 1,25 Hz"
+        },
+        {
+          "id": "b",
+          "text": "X_m = 3,0 cm ; N = 0,80 Hz"
+        },
+        {
+          "id": "c",
+          "text": "X_m = 3,0 cm ; N = 1,25 Hz"
+        },
+        {
+          "id": "d",
+          "text": "X_m = 6,0 cm ; N = 0,80 Hz"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'amplitude se lit de l'axe à la crête : X_m = 3,0 cm. Deux crêtes consécutives sont distantes de 0,80 s (de 0,2 s à 1,0 s), donc T = 0,80 s et N = 1/T = 1,25 Hz ✓. 6,0 cm est la distance d'une crête à l'autre, c'est-à-dire le double de l'amplitude. 0,80 donne la période T, exprimée en secondes, comme si c'était la fréquence.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un palet de masse m = 0,100 kg est relié à un ressort de raideur k = 9,0 N/m. Calculer sa fréquence propre N₀, en Hz.",
+      "answerKey": {
+        "value": 1.51,
+        "tolerance": 0.02,
+        "unit": "Hz"
+      },
+      "explanation": "N₀ = (1/2π)√(k/m) = (1/2π)√(9,0 / 0,100) = (1/2π)√90 = 9,49 / 6,283 = 1,51 Hz ✓ (contrôle : T₀ = 1/N₀ = 0,66 s, cohérent avec 2π√(m/k) = 2π × 0,105).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un pendule forcé reçoit une force excitatrice d'amplitude F_m = 0,60 N ; l'amplitude de sa vitesse est V_m = 0,15 m/s. Quelle est son impédance mécanique Z ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25 kg/s"
+        },
+        {
+          "id": "b",
+          "text": "0,090 kg/s"
+        },
+        {
+          "id": "c",
+          "text": "40 kg/s"
+        },
+        {
+          "id": "d",
+          "text": "4,0 kg/s"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Z = F_m / V_m = 0,60 / 0,15 = 4,0 kg/s ✓ : des newtons divisés par des mètres par seconde donnent des kg/s. 0,25 kg/s est le quotient inversé V_m / F_m. 0,090 kg/s est le produit F_m × V_m. 40 kg/s divise par 0,015 m/s au lieu de 0,15 m/s : la virgule de V_m est décalée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une voiture roule à 16 m/s sur une route dont les bosses sont espacées de d = 8,0 m. Quelle est la fréquence N de l'excitation qu'elle subit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,0 Hz"
+        },
+        {
+          "id": "b",
+          "text": "0,50 Hz"
+        },
+        {
+          "id": "c",
+          "text": "13 Hz"
+        },
+        {
+          "id": "d",
+          "text": "128 Hz"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La voiture franchit une bosse toutes les T = d/v = 8,0 / 16 = 0,50 s, donc N = v/d = 16 / 8,0 = 2,0 Hz ✓. 0,50 donne la période T, pas la fréquence. 13 Hz multiplie par 2π, qui n'a pas lieu d'être ici : il n'y a pas de pulsation à calculer. 128 Hz est le produit v × d.",
+      "difficulty": 2
+    }
+  ]
+}
