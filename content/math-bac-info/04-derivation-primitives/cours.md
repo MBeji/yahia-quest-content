@@ -215,6 +215,14 @@ Soit f = sin sur [0 ; π/2], bijection de [0 ; π/2] sur [0 ; 1]. Calculer (f⁻
 On cherche l'antécédent de √2/2 : sin(π/4) = √2/2, donc f⁻¹(√2/2) = π/4. Puis f′(π/4) = cos(π/4) = √2/2, non nul. D'où (f⁻¹)′(√2/2) = 1/(√2/2) = √2 : on a évalué f′ à l'antécédent π/4, pas en √2/2.
 :::
 
+::: verifie
+Soit f(x) = √(x² + x + 1). Justifier que f est dérivable sur ℝ et calculer f′(0).
+
+---
+
+Le trinôme u(x) = x² + x + 1 a pour discriminant 1 − 4 = −3 < 0, donc u(x) > 0 pour tout x : √u est dérivable sur ℝ. Alors f′(x) = u′/(2√u) = (2x + 1)/(2√(x² + x + 1)), et f′(0) = 1/(2√1) = 1/2 : on a multiplié par u′, la dérivée de l'intérieur.
+:::
+
 ::: retenir
 (g∘f)′ = f′ × (g′∘f) : on dérive l'extérieur, puis l'on multiplie par la dérivée de l'intérieur ; (f⁻¹)′(y) = 1/f′(f⁻¹(y)) quand f′(f⁻¹(y)) ≠ 0 : on cherche d'abord l'antécédent de y.
 :::
