@@ -83,22 +83,22 @@
       "options": [
         {
           "id": "a",
-          "text": "(x − 1)²"
+          "text": "x² − 2x"
         },
         {
           "id": "b",
-          "text": "−(x − 1)²"
-        },
-        {
-          "id": "c",
           "text": "(x − 1)³"
         },
         {
+          "id": "c",
+          "text": "−(x − 1)²"
+        },
+        {
           "id": "d",
-          "text": "x² − 2x"
+          "text": "(x − 1)²"
         }
       ],
-      "correctOption": "a",
+      "correctOption": "d",
       "explanation": "f(1) = 4 et f′(x) = 2x − 4, donc f′(1) = −2 : T : y = −2(x − 1) + 4 = −2x + 6. L'écart est f(x) − T(x) = x² − 4x + 7 + 2x − 6 = x² − 2x + 1 = (x − 1)². Il est positif ou nul : la courbe est au-dessus de T et la touche seulement en 1. L'expression (x − 1)³ est celle d'un écart qui change de signe, ce qui n'est pas le cas ici ; x² − 2x oublie le +1 ; −(x − 1)² se trompe de sens de soustraction.",
       "difficulty": 2
     },
@@ -131,22 +131,22 @@
       "options": [
         {
           "id": "a",
-          "text": "décroissante sur ]−∞ ; −2], croissante sur [−2 ; +∞["
+          "text": "croissante sur ℝ"
         },
         {
           "id": "b",
-          "text": "croissante sur ]−∞ ; −2], décroissante sur [−2 ; +∞["
-        },
-        {
-          "id": "c",
           "text": "décroissante sur ]−∞ ; 2], croissante sur [2 ; +∞["
         },
         {
+          "id": "c",
+          "text": "croissante sur ]−∞ ; −2], décroissante sur [−2 ; +∞["
+        },
+        {
           "id": "d",
-          "text": "croissante sur ℝ"
+          "text": "décroissante sur ]−∞ ; −2], croissante sur [−2 ; +∞["
         }
       ],
-      "correctOption": "a",
+      "correctOption": "d",
       "explanation": "x² + 4x + 20 = (x + 2)² + 16 > 0 : f est définie et dérivable sur ℝ, et f′(x) = (x + 2)/√(x² + 4x + 20) a le signe de x + 2. Elle décroît donc sur ]−∞ ; −2] et croît sur [−2 ; +∞[, avec le minimum f(−2) = 4. L'axe est x = −b/(2a) = −2 et non 2 ; inverser les sens ferait de −2 un maximum, ce qui est faux puisque f tend vers +∞ des deux côtés.",
       "difficulty": 2
     }

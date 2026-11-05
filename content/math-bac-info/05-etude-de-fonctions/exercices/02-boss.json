@@ -59,22 +59,22 @@
       "options": [
         {
           "id": "a",
-          "text": "au-dessus de T, sans la traverser"
+          "text": "confondue avec T"
         },
         {
           "id": "b",
-          "text": "au-dessous de T, sans la traverser"
-        },
-        {
-          "id": "c",
           "text": "de part et d'autre de T : elle traverse T en A"
         },
         {
+          "id": "c",
+          "text": "au-dessous de T, sans la traverser"
+        },
+        {
           "id": "d",
-          "text": "confondue avec T"
+          "text": "au-dessus de T, sans la traverser"
         }
       ],
-      "correctOption": "a",
+      "correctOption": "d",
       "explanation": "L'écart est d(x) = 1/(x² + 1) + x/2 − 1 = (2 + x(x² + 1) − 2(x² + 1))/(2(x² + 1)) = (x³ − 2x² + x)/(2(x² + 1)) = x(x − 1)²/(2(x² + 1)). Près de 1, x est positif et (x − 1)² aussi : d(x) ≥ 0 des deux côtés de 1, avec d(1) = 0. La courbe est donc au-dessus de T et la touche en A sans la traverser. Le changement de signe de d a lieu en 0, où T recoupe la courbe au point (0 ; 1), pas en A.",
       "difficulty": 3
     },
@@ -83,22 +83,22 @@
       "options": [
         {
           "id": "a",
-          "text": "2"
+          "text": "2π"
         },
         {
           "id": "b",
-          "text": "4"
-        },
-        {
-          "id": "c",
           "text": "6"
         },
         {
+          "id": "c",
+          "text": "4"
+        },
+        {
           "id": "d",
-          "text": "2π"
+          "text": "2"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "c",
       "explanation": "sin(πx) a pour période 2 et cos(πx/2) a pour période 4 : avec T = 4, sin(πx + 4π) = sin(πx) et cos(πx/2 + 2π) = cos(πx/2), donc f(x + 4) = f(x). Avec T = 2, f(2) = sin 2π + cos π = −1 alors que f(0) = 1 : 2 n'est pas une période, la seconde composante change de signe. De même 6 = 2 + 4 donne cos(πx/2 + 3π) = −cos(πx/2). Et 2π n'est un multiple d'aucune des deux périodes.",
       "difficulty": 3
     },
