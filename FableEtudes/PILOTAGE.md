@@ -32,11 +32,11 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Mathématiques | mathématiques | `222445` + `222446` | ✅ validée R-7 | 19/19 | — (gisement possible) |
 | Mathématiques | physique | `223432` | ❌ aucune | — | A1 |
 | Mathématiques | chimie | `224432` | ❌ aucune | — | A1 |
-| Sciences expérimentales | SVT | `225432` | ❌ aucune | — | A1 |
+| Sciences expérimentales | SVT | `225432` | 🔄 en cours (`claude/sciences-bac-sciences-exp`, 2026-11-05) — PDF de 13 Mo à récupérer | 0 chapitre | choix de Mohamed du 2026-11-05 (physique + chimie + SVT) |
 | Sciences expérimentales | mathématiques | `222433` + `222434` | ✅ validée R-7 (2026-11-05) | 17/17 chapitres — matière complète (2026-11-05) | fiche différentielle + adaptation des chapitres de `math-bac-math` / `math-bac-techniques` (décision de Mohamed du 2026-11-05 : même collection, version allégée) |
-| Sciences expérimentales | physique | `223433` | ❌ aucune | — | A1 |
-| Sciences expérimentales | chimie | `224433` | ❌ aucune | — | A1 |
-| Sciences de l'informatique | mathématiques | `222472` | ✅ validée R-7 (2026-11-05) — 304 p., 13 chapitres, couche texte L1 + image à 100 % | 0/13 | adaptation des chapitres de `math-bac-techniques` / `math-bac-sciences-exp` / `math-bac-math` selon la fiche **différentielle** (demande de Mohamed du 2026-11-05 : « utilise ce qui est fait sur la branche mathématique ») ; ch.11 systèmes d'équations linéaires sans référence, à écrire de zéro ; ⏳ tenu par `claude/friendly-keller-d3ya0w` |
+| Sciences expérimentales | physique | `223433` | ✅ validée R-7 (2026-11-05) | 6/11 chapitres | choix de Mohamed du 2026-11-05 (physique + chimie + SVT) ; génération depuis le manuel (aucun chapitre de référence) |
+| Sciences expérimentales | chimie | `224433` | 🔄 en cours (`claude/sciences-bac-sciences-exp`, 2026-11-05) — PDF de 9,8 Mo à récupérer | 0/13 chapitres | choix de Mohamed du 2026-11-05 (physique + chimie + SVT) |
+| Sciences de l'informatique | mathématiques | `222472` | ❌ aucune | — | A1 |
 | Sciences de l'informatique | physique / chimie | `223471` / `224471` | ❌ aucune | — | A1 |
 | Sciences de l'informatique | algorithmique, STI | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
 | Économie et gestion | gestion | `229464` | ❌ aucune | — | A1 |

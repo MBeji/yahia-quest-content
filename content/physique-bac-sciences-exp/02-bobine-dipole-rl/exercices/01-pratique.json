@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers courants induits",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Une bobine est fermée sur un résistor, et un oscilloscope visualise la tension u_R à ses bornes. Quand on approche le pôle nord d'un aimant, on observe une impulsion négative de u_R. Que montre u_R quand on éloigne ensuite ce même pôle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une impulsion négative : le courant induit garde le même sens"
+        },
+        {
+          "id": "b",
+          "text": "Aucune impulsion : seule l'approche fait varier le champ"
+        },
+        {
+          "id": "c",
+          "text": "Une impulsion positive : le courant induit change de sens"
+        },
+        {
+          "id": "d",
+          "text": "Une tension positive constante tant que l'aimant reste éloigné"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À l'éloignement, ‖B⃗‖ diminue : le champ induit b⃗ prend le même sens que B⃗ au lieu du sens opposé. Le courant induit s'inverse donc, et u_R = R × i change de signe : impulsion positive ✓. Garder le même sens supposerait que la bobine réagit de la même façon à une augmentation et à une diminution. Éloigner l'aimant fait bien varier le champ, donc il y a une impulsion. Une tension constante n'a pas de sens : l'aimant immobile ne produit aucun courant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une f.e.m. d'auto-induction e = +1,2 V apparaît dans une bobine d'inductance L = 0,30 H. Quelle est la valeur de di/dt à cet instant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4,0 A/s"
+        },
+        {
+          "id": "b",
+          "text": "+4,0 A/s"
+        },
+        {
+          "id": "c",
+          "text": "−0,36 A/s"
+        },
+        {
+          "id": "d",
+          "text": "+0,36 A/s"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La relation e = −L di/dt donne di/dt = −e/L = −1,2 / 0,30 = −4,0 A/s ✓ : le courant décroît, ce qui est cohérent avec e > 0. +4,0 A/s oublie le signe − de la loi de Lenz. −0,36 A/s multiplie e par L au lieu de diviser. +0,36 A/s cumule les deux erreurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine d'inductance L et de résistance r est traversée par un courant d'intensité i, de A vers B, qui augmente au cours du temps. Quelle expression donne la tension u_AB ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u_AB = −L di/dt + r i"
+        },
+        {
+          "id": "b",
+          "text": "u_AB = L di/dt + r i"
+        },
+        {
+          "id": "c",
+          "text": "u_AB = L di/dt − r i"
+        },
+        {
+          "id": "d",
+          "text": "u_AB = L i + r di/dt"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a u_AB = −e + r i avec e = −L di/dt, donc u_AB = L di/dt + r i ✓. Garder le signe − de e dans la tension confond la f.e.m. avec la tension. Le terme r i est une chute de tension positive quand i circule de A vers B. L'expression L i + r di/dt intervertit les rôles : L multiplie la variation di/dt, pas i.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine (L = 0,10 H, r = 6,0 Ω) est traversée de A vers B par un courant de 0,25 A, qui croît à raison de 20 A/s. Quelle est la tension u_AB ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,5 V"
+        },
+        {
+          "id": "b",
+          "text": "1,5 V"
+        },
+        {
+          "id": "c",
+          "text": "2,0 V"
+        },
+        {
+          "id": "d",
+          "text": "3,5 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "u_AB = L di/dt + r i = 0,10 × 20 + 6,0 × 0,25 = 2,0 + 1,5 = 3,5 V ✓. 2,0 V oublie le terme r i. 1,5 V oublie le terme L di/dt. −0,5 V vient de −2,0 + 1,5 : le signe − de e a été gardé dans la tension.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bobine emmagasine une énergie magnétique de 18 mJ quand elle est traversée par un courant de 0,30 A. Quelle est son inductance ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,060 H"
+        },
+        {
+          "id": "b",
+          "text": "0,12 H"
+        },
+        {
+          "id": "c",
+          "text": "0,20 H"
+        },
+        {
+          "id": "d",
+          "text": "0,40 H"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "De E_L = ½ L i² on tire L = 2 E_L / i² = 2 × 0,018 / (0,30)² = 0,036 / 0,090 = 0,40 H ✓. 0,20 H oublie le facteur 2 (E/i²). 0,12 H oublie d'élever i au carré (2E/i). 0,060 H calcule simplement E/i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL, de constante de temps τ = 4,0 ms, est en régime permanent avec I₀ = 0,40 A. On ouvre K, une diode laissant passer le courant de la bobine. Quelle est l'intensité 4,0 ms après l'ouverture ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 A"
+        },
+        {
+          "id": "b",
+          "text": "0,15 A"
+        },
+        {
+          "id": "c",
+          "text": "0,20 A"
+        },
+        {
+          "id": "d",
+          "text": "0,25 A"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À la rupture, i(t) = I₀ e^(−t/τ) ; à t = τ, i = 0,37 I₀ = 0,37 × 0,40 ≈ 0,15 A ✓. 0 A suppose que le courant s'annule dès l'ouverture, alors qu'il est continu. 0,20 A prend τ pour la durée qui divise le courant par 2. 0,25 A utilise 0,63 I₀, valeur de l'établissement.",
+      "difficulty": 2
+    }
+  ]
+}

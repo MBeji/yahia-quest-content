@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Oscillations libres d'un pendule élastique",
+  "questions": [
+    {
+      "prompt": "On écarte un solide accroché à un ressort horizontal, puis on l'abandonne sans vitesse. Pourquoi dit-on que les oscillations qui suivent sont libres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que l'amplitude reste exactement la même d'une oscillation à la suivante"
+        },
+        {
+          "id": "b",
+          "text": "Parce que le système évolue seul après l'écart initial, sans excitateur extérieur"
+        },
+        {
+          "id": "c",
+          "text": "Parce que le solide glisse sans aucun frottement sur le coussin d'air qui le porte"
+        },
+        {
+          "id": "d",
+          "text": "Parce que la période dépend de la force exercée pour écarter le solide au départ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Des oscillations sont libres quand aucun dispositif extérieur ne leur impose son rythme : après l'écart initial, le système évolue seul ✓. Une amplitude constante caractérise des oscillations non amorties, mais des oscillations libres peuvent aussi être amorties. L'absence de frottement n'est pas la définition du mot « libres » : un pendule freiné par l'eau reste libre. Enfin la période propre ne dépend pas de la façon dont on a écarté le solide, mais seulement de m et de k.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur l'enregistrement de x(t) d'un pendule élastique non amorti, on compte 6 oscillations complètes en 2,4 s. Que vaut la période propre T₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,40 s"
+        },
+        {
+          "id": "b",
+          "text": "2,5 s"
+        },
+        {
+          "id": "c",
+          "text": "14 s"
+        },
+        {
+          "id": "d",
+          "text": "0,20 s"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La période est la durée d'une oscillation : T₀ = 2,4/6 = 0,40 s ✓. La valeur 2,5 est le rapport inverse 6/2,4, c'est-à-dire la fréquence propre N₀ en Hz et non une période en s. La valeur 14 s est le produit 6 × 2,4, qui n'a pas de sens physique. La valeur 0,20 s correspond à la moitié d'une oscillation, obtenue en comptant 12 alternances au lieu de 6 oscillations.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On remplace le solide d'un pendule élastique par un solide 4 fois plus massif, sans changer le ressort. Comment varie la période propre T₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est multipliée par 4"
+        },
+        {
+          "id": "b",
+          "text": "Elle est divisée par 2"
+        },
+        {
+          "id": "c",
+          "text": "Elle ne change pas"
+        },
+        {
+          "id": "d",
+          "text": "Elle est multipliée par 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "T₀ = 2π·√(m/k) : la masse est sous la racine, donc m multipliée par 4 multiplie T₀ par √4 = 2 ✓. Une multiplication par 4 supposerait T₀ proportionnelle à m. Une division par 2 inverse le sens : un solide plus lourd oscille plus lentement. Une période inchangée serait celle d'un changement d'amplitude, qui n'influe pas sur T₀, alors que la masse y intervient.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un solide abandonné au bout d'un ressort horizontal subit la force de rappel T⃗ = −k·x·i⃗. Quelle équation différentielle vérifie son élongation x, sans frottement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m·d²x/dt² − k·x = 0"
+        },
+        {
+          "id": "b",
+          "text": "d²x/dt² + k·m·x = 0"
+        },
+        {
+          "id": "c",
+          "text": "d²x/dt² + (k/m)·x = 0"
+        },
+        {
+          "id": "d",
+          "text": "d²x/dt² + (k/m)·dx/dt = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La relation fondamentale de la dynamique projetée sur x′x donne −k·x = m·d²x/dt², soit d²x/dt² + (k/m)·x = 0 ✓, avec ω₀² = k/m. Le signe « − » devant k·x correspondrait à une force qui éloigne de O, non à une force de rappel. Le produit k·m n'a pas la dimension de ω₀² (s⁻²) : c'est le rapport k/m qu'il faut. Le coefficient (k/m) multiplie ici dx/dt au lieu de x : on confond l'élongation et sa dérivée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un pendule élastique non amorti passe par la position d'équilibre O. À cet instant, que peut-on dire de son énergie mécanique E ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est entièrement cinétique, la vitesse étant maximale"
+        },
+        {
+          "id": "b",
+          "text": "Elle est entièrement potentielle, car le ressort est étiré au maximum"
+        },
+        {
+          "id": "c",
+          "text": "Elle est nulle, car l'élongation x est nulle"
+        },
+        {
+          "id": "d",
+          "text": "Elle est partagée à parts égales entre E_c et E_p"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En O, x = 0 donc E_p = ½·k·x² = 0 : toute l'énergie est cinétique, E = ½·m·V_m², et la vitesse est maximale ✓. Le ressort est alors à sa longueur naturelle, pas étiré au maximum : c'est aux extrémités que l'énergie est potentielle. L'énergie mécanique est constante, elle n'est donc jamais nulle quand le pendule oscille. Le partage à parts égales n'a lieu qu'à deux élongations particulières, pas en O.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un pendule élastique plongé dans l'eau donne des maxima de x successifs de 4,0 cm ; 2,6 cm ; 1,7 cm, aux dates 0 ; 0,50 s ; 1,00 s. Comment qualifie-t-on ce régime ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Périodique : le mouvement se reproduit à l'identique"
+        },
+        {
+          "id": "b",
+          "text": "Apériodique : le solide ne dépasse jamais la position d'équilibre"
+        },
+        {
+          "id": "c",
+          "text": "Non amorti : l'amplitude reste constante"
+        },
+        {
+          "id": "d",
+          "text": "Pseudopériodique : amplitude décroissante, maxima équidistants"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'amplitude diminue (4,0 puis 2,6 puis 1,7 cm) alors que les maxima restent séparés de 0,50 s : c'est le régime pseudopériodique, de pseudo-période T = 0,50 s ✓. Le mouvement ne se reproduit pas à l'identique puisque l'amplitude change, donc il n'est pas périodique. Un régime apériodique ne comporterait aucun maximum après le départ. Des oscillations non amorties auraient trois maxima égaux.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un liquide visqueux, la force de frottement exercée sur le solide d'un pendule élastique s'écrit f⃗ = −h·v⃗, avec h > 0. Que traduit le signe « − » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La force a le sens de la vitesse et accélère le solide"
+        },
+        {
+          "id": "b",
+          "text": "La force est de sens contraire à la vitesse et freine le solide"
+        },
+        {
+          "id": "c",
+          "text": "La force est dirigée vers la position d'équilibre O, comme la force de rappel"
+        },
+        {
+          "id": "d",
+          "text": "La force est toujours négative, car le coefficient h est négatif"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le signe « − » dit que f⃗ est opposée à v⃗ : elle s'oppose au mouvement et freine le solide ✓. Une force dans le sens de la vitesse l'accélérerait, ce qui ne dissipe aucune énergie. La force de rappel est dirigée vers O, mais f⃗ dépend de la vitesse, pas de l'élongation : elle peut pointer à l'opposé de O. Enfin h est positif, et le sens de f⃗ change avec celui de v⃗.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un pendule élastique oscille dans un liquide visqueux et son énergie vérifie dE/dt = −h·v². À quels instants l'énergie mécanique cesse-t-elle brièvement de diminuer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quand le solide passe par la position d'équilibre O"
+        },
+        {
+          "id": "b",
+          "text": "Quand la force de frottement atteint sa valeur maximale"
+        },
+        {
+          "id": "c",
+          "text": "Quand le solide s'arrête, aux extrema de l'élongation"
+        },
+        {
+          "id": "d",
+          "text": "À aucun instant : dE/dt reste négative tant que le liquide freine"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "dE/dt = −h·v² s'annule dès que v = 0, c'est-à-dire quand le solide s'arrête aux extrema de x : l'énergie y a une tangente horizontale avant de diminuer de nouveau ✓. Près de O la vitesse est maximale, donc la perte aussi. La force de frottement f = h·v est maximale quand la vitesse l'est, c'est-à-dire vers O. Quant à l'affirmation d'une perte à tout instant, elle oublie que v change de signe et passe par zéro à chaque extremum.",
+      "difficulty": 2
+    }
+  ]
+}

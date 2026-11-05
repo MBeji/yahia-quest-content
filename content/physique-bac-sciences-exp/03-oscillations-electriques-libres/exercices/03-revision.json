@@ -1,0 +1,128 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Oscillations électriques libres",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Un condensateur initialement chargé (q = Q_m) est fermé sur une bobine sans résistance. Entre t = 0 et t = T₀/4, comment évoluent |q| et |i| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "|q| et |i| diminuent tous deux jusqu'à s'annuler"
+        },
+        {
+          "id": "b",
+          "text": "|q| diminue de Q_m à 0 et |i| augmente de 0 à I_m"
+        },
+        {
+          "id": "c",
+          "text": "|q| reste égale à Q_m pendant que |i| augmente"
+        },
+        {
+          "id": "d",
+          "text": "|q| augmente de 0 à Q_m et |i| diminue de I_m à 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pendant le premier quart de période, le condensateur se décharge dans la bobine : |q| diminue jusqu'à 0, tandis que |i| = |dq/dt| augmente jusqu'à I_m ; l'énergie passe de E_C à E_L ✓. Si |q| et |i| diminuaient ensemble, l'énergie totale disparaîtrait, alors qu'elle se conserve sans résistance. Si |q| restait égale à Q_m, le condensateur ne se déchargerait pas. L'évolution inverse (|q| qui augmente pendant que |i| diminue) est celle du quart de période suivant.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une bobine de 60 mH est associée à un condensateur de 3,0 µF dans un circuit LC non amorti. Calculer la fréquence propre N₀ en Hz, arrondie à l'unité.",
+      "answerKey": {
+        "value": 375,
+        "tolerance": 1.5,
+        "unit": "Hz"
+      },
+      "explanation": "T₀ = 2π√(LC) = 2π√(60·10⁻³ × 3,0·10⁻⁶) = 2π × 4,24·10⁻⁴ ≈ 2,67·10⁻³ s, donc N₀ = 1/T₀ ≈ 375 Hz ✓ (oublier de convertir mH ou µF donnerait un résultat faux de plusieurs ordres de grandeur).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur l'écran d'un oscilloscope relié aux bornes du résistor R₀ d'un circuit RLC libre, u_R₀ s'annule pour la première fois après t = 0. Que peut-on dire de u_C à cet instant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u_C est nulle, car un courant nul signifie un condensateur déchargé"
+        },
+        {
+          "id": "b",
+          "text": "u_C est égale à sa valeur initiale, car i est nul comme à t = 0"
+        },
+        {
+          "id": "c",
+          "text": "u_C est opposée à sa valeur initiale, car q s'est entièrement inversée"
+        },
+        {
+          "id": "d",
+          "text": "u_C passe par un extremum, car i = dq/dt est nul à cet instant"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "u_R₀ = R₀·i s'annule quand i = dq/dt = 0, c'est-à-dire quand q passe par un extremum : u_C = q/C est alors extrémale, et toute l'énergie est électrique ✓. Un condensateur déchargé correspond à q = 0, quand |i| est au contraire maximale. À cet instant u_C est de signe opposé à sa valeur initiale, mais la résistance a fait décroître l'amplitude : q ne s'est pas entièrement inversée, et u_C n'est pas l'opposée exacte de sa valeur initiale.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un condensateur de capacité 0,20 µF, chargé sous 15 V, est fermé sur une bobine en série avec un résistor. Le premier minimum de u_C vaut −9,0 V. Calculer la variation d'énergie ΔE du circuit entre t = 0 (fermeture, u_C = 15 V, i = 0) et ce premier minimum, en µJ (valeur négative si l'énergie diminue).",
+      "answerKey": {
+        "value": -14.4,
+        "tolerance": 0.15,
+        "unit": "µJ"
+      },
+      "explanation": "Aux deux instants i = 0, donc E = ½·C·u_C² : ΔE = ½ × 0,20·10⁻⁶ × (9,0² − 15²) = 1,0·10⁻⁷ × (81 − 225) = −1,44·10⁻⁵ J = −14,4 µJ ✓ (élever au carré la différence 15 − 9,0 donnerait 3,6 µJ, ce qui est faux).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un résistor R₀ = 100 Ω est branché dans un circuit RLC libre (L = 0,50 H). Sur l'oscillogramme de u_R₀ ci-dessous, quelle est l'énergie magnétique de la bobine au premier extremum de |u_R₀| ?\n<svg viewBox=\"50 0 240 262\"><title>Oscillogramme de u_R₀ d'un circuit RLC libre, sensibilité 0,5 V/div, balayage 1 ms/div</title><line x1=\"70\" y1=\"16\" x2=\"70\" y2=\"216\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"16\" x2=\"90\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"110\" y1=\"16\" x2=\"110\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"130\" y1=\"16\" x2=\"130\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"150\" y1=\"16\" x2=\"150\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"170\" y1=\"16\" x2=\"170\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"190\" y1=\"16\" x2=\"190\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"210\" y1=\"16\" x2=\"210\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"230\" y1=\"16\" x2=\"230\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"250\" y1=\"16\" x2=\"250\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"270\" y1=\"16\" x2=\"270\" y2=\"216\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"70\" y1=\"16\" x2=\"270\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"70\" y1=\"36\" x2=\"270\" y2=\"36\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"56\" x2=\"270\" y2=\"56\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"76\" x2=\"270\" y2=\"76\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"96\" x2=\"270\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"116\" x2=\"270\" y2=\"116\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"136\" x2=\"270\" y2=\"136\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"156\" x2=\"270\" y2=\"156\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"176\" x2=\"270\" y2=\"176\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"196\" x2=\"270\" y2=\"196\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"216\" x2=\"270\" y2=\"216\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"70\" y1=\"116.0\" x2=\"270\" y2=\"116.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"70,116 70.4,117.9 70.8,119.7 71.2,121.6 71.6,123.4 72,125.3 72.4,127.1 72.8,128.9 73.2,130.7 73.6,132.5 74,134.3 74.4,136 74.8,137.8 75.2,139.5 75.6,141.2 76,142.9 76.4,144.6 76.8,146.2 77.2,147.8 77.6,149.5 78,151.1 78.4,152.6 78.8,154.2 79.2,155.7 79.6,157.2 80,158.7 80.4,160.2 80.8,161.6 81.2,163 81.6,164.4 82,165.7 82.4,167.1 82.8,168.4 83.2,169.7 83.6,170.9 84,172.1 84.4,173.3 84.8,174.5 85.2,175.7 85.6,176.8 86,177.9 86.4,178.9 86.8,179.9 87.2,180.9 87.6,181.9 88,182.8 88.4,183.7 88.8,184.6 89.2,185.5 89.6,186.3 90,187 90.4,187.8 90.8,188.5 91.2,189.2 91.6,189.8 92,190.5 92.4,191 92.8,191.6 93.2,192.1 93.6,192.6 94,193.1 94.4,193.5 94.8,193.9 95.2,194.2 95.6,194.5 96,194.8 96.4,195.1 96.8,195.3 97.2,195.5 97.6,195.7 98,195.8 98.4,195.9 98.8,196 99.2,196 99.6,196 100,196 100.4,195.9 100.8,195.8 101.2,195.7 101.6,195.5 102,195.3 102.4,195.1 102.8,194.9 103.2,194.6 103.6,194.3 104,193.9 104.4,193.5 104.8,193.1 105.2,192.7 105.6,192.3 106,191.8 106.4,191.3 106.8,190.7 107.2,190.1 107.6,189.5 108,188.9 108.4,188.3 108.8,187.6 109.2,186.9 109.6,186.2 110,185.4 110.4,184.6 110.8,183.8 111.2,183 111.6,182.2 112,181.3 112.4,180.4 112.8,179.5 113.2,178.6 113.6,177.6 114,176.6 114.4,175.6 114.8,174.6 115.2,173.6 115.6,172.5 116,171.5 116.4,170.4 116.8,169.3 117.2,168.1 117.6,167 118,165.9 118.4,164.7 118.8,163.5 119.2,162.3 119.6,161.1 120,159.9 120.4,158.6 120.8,157.4 121.2,156.1 121.6,154.9 122,153.6 122.4,152.3 122.8,151 123.2,149.7 123.6,148.4 124,147.1 124.4,145.8 124.8,144.4 125.2,143.1 125.6,141.7 126,140.4 126.4,139.1 126.8,137.7 127.2,136.3 127.6,135 128,133.6 128.4,132.3 128.8,130.9 129.2,129.5 129.6,128.2 130,126.8 130.4,125.5 130.8,124.1 131.2,122.8 131.6,121.4 132,120.1 132.4,118.7 132.8,117.4 133.2,116.1 133.6,114.7 134,113.4 134.4,112.1 134.8,110.8 135.2,109.5 135.6,108.2 136,106.9 136.4,105.7 136.8,104.4 137.2,103.1 137.6,101.9 138,100.7 138.4,99.5 138.8,98.2 139.2,97.1 139.6,95.9 140,94.7 140.4,93.5 140.8,92.4 141.2,91.3 141.6,90.2 142,89.1 142.4,88 142.8,86.9 143.2,85.9 143.6,84.9 144,83.8 144.4,82.8 144.8,81.9 145.2,80.9 145.6,80 146,79 146.4,78.1 146.8,77.2 147.2,76.4 147.6,75.5 148,74.7 148.4,73.9 148.8,73.1 149.2,72.3 149.6,71.6 150,70.9 150.4,70.2 150.8,69.5 151.2,68.8 151.6,68.2 152,67.6 152.4,67 152.8,66.4 153.2,65.8 153.6,65.3 154,64.8 154.4,64.3 154.8,63.9 155.2,63.4 155.6,63 156,62.6 156.4,62.3 156.8,61.9 157.2,61.6 157.6,61.3 158,61 158.4,60.8 158.8,60.5 159.2,60.3 159.6,60.1 160,60 160.4,59.8 160.8,59.7 161.2,59.6 161.6,59.6 162,59.5 162.4,59.5 162.8,59.5 163.2,59.5 163.6,59.6 164,59.6 164.4,59.7 164.8,59.8 165.2,60 165.6,60.1 166,60.3 166.4,60.5 166.8,60.7 167.2,61 167.6,61.2 168,61.5 168.4,61.8 168.8,62.1 169.2,62.5 169.6,62.8 170,63.2 170.4,63.6 170.8,64 171.2,64.5 171.6,64.9 172,65.4 172.4,65.9 172.8,66.4 173.2,66.9 173.6,67.5 174,68.1 174.4,68.6 174.8,69.2 175.2,69.9 175.6,70.5 176,71.1 176.4,71.8 176.8,72.5 177.2,73.2 177.6,73.9 178,74.6 178.4,75.3 178.8,76 179.2,76.8 179.6,77.6 180,78.3 180.4,79.1 180.8,79.9 181.2,80.8 181.6,81.6 182,82.4 182.4,83.3 182.8,84.1 183.2,85 183.6,85.8 184,86.7 184.4,87.6 184.8,88.5 185.2,89.4 185.6,90.3 186,91.2 186.4,92.2 186.8,93.1 187.2,94 187.6,94.9 188,95.9 188.4,96.8 188.8,97.8 189.2,98.7 189.6,99.7 190,100.6 190.4,101.6 190.8,102.6 191.2,103.5 191.6,104.5 192,105.4 192.4,106.4 192.8,107.4 193.2,108.3 193.6,109.3 194,110.2 194.4,111.2 194.8,112.1 195.2,113.1 195.6,114 196,115 196.4,115.9 196.8,116.9 197.2,117.8 197.6,118.7 198,119.6 198.4,120.6 198.8,121.5 199.2,122.4 199.6,123.3 200,124.2 200.4,125.1 200.8,125.9 201.2,126.8 201.6,127.7 202,128.5 202.4,129.4 202.8,130.2 203.2,131 203.6,131.8 204,132.6 204.4,133.4 204.8,134.2 205.2,135 205.6,135.7 206,136.5 206.4,137.2 206.8,138 207.2,138.7 207.6,139.4 208,140.1 208.4,140.8 208.8,141.4 209.2,142.1 209.6,142.7 210,143.4 210.4,144 210.8,144.6 211.2,145.1 211.6,145.7 212,146.3 212.4,146.8 212.8,147.3 213.2,147.9 213.6,148.4 214,148.8 214.4,149.3 214.8,149.8 215.2,150.2 215.6,150.6 216,151 216.4,151.4 216.8,151.8 217.2,152.1 217.6,152.5 218,152.8 218.4,153.1 218.8,153.4 219.2,153.7 219.6,154 220,154.2 220.4,154.4 220.8,154.6 221.2,154.8 221.6,155 222,155.2 222.4,155.3 222.8,155.5 223.2,155.6 223.6,155.7 224,155.7 224.4,155.8 224.8,155.9 225.2,155.9 225.6,155.9 226,155.9 226.4,155.9 226.8,155.9 227.2,155.8 227.6,155.8 228,155.7 228.4,155.6 228.8,155.5 229.2,155.3 229.6,155.2 230,155.1 230.4,154.9 230.8,154.7 231.2,154.5 231.6,154.3 232,154.1 232.4,153.8 232.8,153.6 233.2,153.3 233.6,153 234,152.7 234.4,152.4 234.8,152.1 235.2,151.7 235.6,151.4 236,151 236.4,150.7 236.8,150.3 237.2,149.9 237.6,149.5 238,149 238.4,148.6 238.8,148.2 239.2,147.7 239.6,147.2 240,146.8 240.4,146.3 240.8,145.8 241.2,145.3 241.6,144.8 242,144.2 242.4,143.7 242.8,143.2 243.2,142.6 243.6,142.1 244,141.5 244.4,140.9 244.8,140.3 245.2,139.7 245.6,139.1 246,138.5 246.4,137.9 246.8,137.3 247.2,136.7 247.6,136.1 248,135.4 248.4,134.8 248.8,134.2 249.2,133.5 249.6,132.9 250,132.2 250.4,131.6 250.8,130.9 251.2,130.2 251.6,129.6 252,128.9 252.4,128.2 252.8,127.6 253.2,126.9 253.6,126.2 254,125.5 254.4,124.8 254.8,124.2 255.2,123.5 255.6,122.8 256,122.1 256.4,121.5 256.8,120.8 257.2,120.1 257.6,119.4 258,118.7 258.4,118.1 258.8,117.4 259.2,116.7 259.6,116.1 260,115.4 260.4,114.8 260.8,114.1 261.2,113.5 261.6,112.8 262,112.2 262.4,111.5 262.8,110.9 263.2,110.3 263.6,109.6 264,109 264.4,108.4 264.8,107.8 265.2,107.2 265.6,106.6 266,106 266.4,105.4 266.8,104.8 267.2,104.3 267.6,103.7 268,103.2 268.4,102.6 268.8,102.1 269.2,101.5 269.6,101 270,100.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"170\" y=\"233\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">balayage : 1 ms/div</text><text x=\"170\" y=\"251\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">sensibilité : 0,5 V/div</text><text x=\"65\" y=\"121\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 µJ"
+        },
+        {
+          "id": "b",
+          "text": "200 µJ"
+        },
+        {
+          "id": "c",
+          "text": "400 µJ"
+        },
+        {
+          "id": "d",
+          "text": "1,0 J"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Lecture : au premier extremum, |u_R₀| = 4 div × 0,5 V = 2,0 V, donc |i| = u_R₀/R₀ = 2,0 / 100 = 20 mA et E_L = ½·L·i² = ½ × 0,50 × (2,0·10⁻²)² = 1,0·10⁻⁴ J = 100 µJ ✓. La valeur 200 µJ oublie le facteur ½. La valeur 400 µJ double l'amplitude lue (8 div, soit 40 mA). La valeur 1,0 J utilise la tension u_R₀ à la place de l'intensité dans ½·L·i².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un circuit LC (C = 2,0 µF ; L = 0,50 H) est fermé à t = 0 alors que q(0) = 0 et i(0) = +20 mA. Quelle expression de q(t) convient, avec q = Q_m·sin(ω₀t + φ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "q(t) = 20·10⁻⁶·sin(1000·t + π)"
+        },
+        {
+          "id": "b",
+          "text": "q(t) = 20·10⁻³·sin(1000·t)"
+        },
+        {
+          "id": "c",
+          "text": "q(t) = 20·10⁻⁶·sin(1000·t)"
+        },
+        {
+          "id": "d",
+          "text": "q(t) = 20·10⁻⁶·sin(1000·t + π/2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ω₀ = 1/√(0,50 × 2,0·10⁻⁶) = 1000 rad·s⁻¹. q(0) = Q_m·sin φ = 0 donne φ = 0 ou π ; i(0) = ω₀Q_m·cos φ > 0 impose cos φ > 0, donc φ = 0, et Q_m = I₀/ω₀ = 20·10⁻³/1000 = 20 µC ✓. La phase π donnerait un courant initial négatif. L'amplitude 20·10⁻³ C prend I₀ pour Q_m, sans diviser par ω₀. La phase π/2 donnerait q(0) = Q_m, c'est-à-dire un condensateur chargé et un courant nul.",
+      "difficulty": 3
+    }
+  ]
+}

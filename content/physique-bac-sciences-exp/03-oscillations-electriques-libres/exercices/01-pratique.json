@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premières oscillations libres",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Sur un oscillogramme de u_C, trois extrema successifs valent +6,0 V, −4,5 V et +3,4 V, et deux extrema de même signe sont séparés par une durée constante de 8 ms. Quel qualificatif convient le mieux à ces oscillations ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Libres, non amorties et périodiques"
+        },
+        {
+          "id": "b",
+          "text": "Libres, amorties et apériodiques"
+        },
+        {
+          "id": "c",
+          "text": "Libres, amorties et pseudopériodiques"
+        },
+        {
+          "id": "d",
+          "text": "Libres, amorties et strictement périodiques"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Aucun générateur n'est mentionné : les oscillations sont libres. Les valeurs absolues 6,0 > 4,5 > 3,4 décroissent, elles sont donc amorties, et la durée constante entre extrema de même sens les rend pseudopériodiques ✓. Le qualificatif non amortie contredit la décroissance des extrema. Apériodique contredit les changements de signe. Strictement périodique supposerait que le motif se reproduise à l'identique, ce qui est faux avec une amplitude qui décroît.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux circuits RLC libres, de même condensateur et de même bobine, sont en régime apériodique, l'un avec R = 4 kΩ, l'autre avec R = 8 kΩ. Lequel revient le plus lentement à zéro ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "R = 8 kΩ, car une résistance plus grande ralentit le retour à zéro"
+        },
+        {
+          "id": "b",
+          "text": "R = 4 kΩ, car une résistance plus grande accélère toujours la décharge"
+        },
+        {
+          "id": "c",
+          "text": "Aucune différence, car les deux régimes sont apériodiques"
+        },
+        {
+          "id": "d",
+          "text": "R = 3 kΩ, car ses oscillations s'éteignent plus lentement"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En régime apériodique, la décharge dure d'autant plus longtemps que R est grande : avec R = 8 kΩ, u_C met environ deux fois plus de temps à passer sous 10 % de sa valeur initiale qu'avec R = 4 kΩ ✓. Dire qu'une résistance plus grande accélère toujours la décharge est vrai seulement tant que le régime est pseudopériodique. Les deux régimes sont apériodiques, mais pas équivalents : leur durée dépend de R. En régime apériodique il n'y a aucune oscillation.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour L = 0,20 H, R = 40 Ω et C = 5,0 µF, l'équation de la charge s'écrit d²q/dt² + a·dq/dt + b·q = 0, avec a = 2,0·10² s⁻¹. Que vaut b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,0·10⁻⁶ s⁻²"
+        },
+        {
+          "id": "b",
+          "text": "1,0·10³ s⁻²"
+        },
+        {
+          "id": "c",
+          "text": "2,0·10⁵ s⁻²"
+        },
+        {
+          "id": "d",
+          "text": "1,0·10⁶ s⁻²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On divise l'équation L·d²q/dt² + R·dq/dt + q/C = 0 par L : b = 1/(LC) = 1 / (0,20 × 5,0·10⁻⁶) = 1,0·10⁶ s⁻² ✓. La valeur 1,0·10⁻⁶ est le produit LC lui-même, non son inverse. La valeur 1,0·10³ est ω₀ = 1/√(LC), alors que b = ω₀². La valeur 2,0·10⁵ est 1/C : le facteur L est oublié.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un circuit RLC a une résistance totale R = 25 Ω. À l'instant où l'intensité vaut 40 mA, quelle est la valeur de dE/dt ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+40 mW"
+        },
+        {
+          "id": "b",
+          "text": "−40 mW"
+        },
+        {
+          "id": "c",
+          "text": "−1,0 W"
+        },
+        {
+          "id": "d",
+          "text": "−20 mW"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "dE/dt = −R·i² = −25 × (40·10⁻³)² = −25 × 1,6·10⁻³ = −4,0·10⁻² W = −40 mW ✓ : l'énergie totale diminue. Le signe + est impossible, car R·i² est toujours positif. La valeur −1,0 W calcule R·i sans élever i au carré. La valeur −20 mW ajoute un facteur ½ qui n'a rien à faire dans cette relation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un circuit LC a pour période propre T₀. On remplace la bobine par une bobine d'inductance 4 fois plus grande et le condensateur par un condensateur de capacité 9 fois plus petite. Que devient la période propre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4T₀/9"
+        },
+        {
+          "id": "b",
+          "text": "2T₀/3"
+        },
+        {
+          "id": "c",
+          "text": "3T₀/2"
+        },
+        {
+          "id": "d",
+          "text": "T₀/9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "T₀′ = 2π√(4L × C/9) = 2π√(LC) × √(4/9) = (2/3)·T₀ ✓. La valeur 4T₀/9 oublie la racine carrée. La valeur 3T₀/2 inverse le rapport. La valeur T₀/9 ne tient compte que du condensateur, sans la bobine ni la racine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un circuit LC (C = 2,0 µF ; L = 0,50 H) oscille avec une charge d'amplitude Q_m = 40 µC. Quelle est l'amplitude I_m de l'intensité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 mA"
+        },
+        {
+          "id": "b",
+          "text": "6,4 mA"
+        },
+        {
+          "id": "c",
+          "text": "4,0 mA"
+        },
+        {
+          "id": "d",
+          "text": "40 A"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ω₀ = 1/√(LC) = 1/√(0,50 × 2,0·10⁻⁶) = 1,0·10³ rad·s⁻¹ et I_m = ω₀·Q_m = 1000 × 40·10⁻⁶ = 4,0·10⁻² A = 40 mA ✓. La valeur 6,4 mA multiplie Q_m par la fréquence N₀ ≈ 159 Hz au lieu de la pulsation. La valeur 4,0 mA se trompe d'une puissance de dix sur le produit ω₀·Q_m. La valeur 40 A multiplie par ω₀², alors que la dérivée de q ne fait apparaître ω₀ qu'une fois.",
+      "difficulty": 2
+    }
+  ]
+}

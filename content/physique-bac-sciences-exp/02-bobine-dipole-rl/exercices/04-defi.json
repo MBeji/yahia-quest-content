@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les ruses de l'inductance",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Une bobine d'inductance L = 0,20 H et de résistance r = 4,0 Ω est traversée de A vers B par un courant d'intensité i(t) = 0,10 t² (i en A, t en s). Quelle est la tension u_AB à t = 3,0 s ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,48 V"
+        },
+        {
+          "id": "b",
+          "text": "3,60 V"
+        },
+        {
+          "id": "c",
+          "text": "3,66 V"
+        },
+        {
+          "id": "d",
+          "text": "3,72 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On dérive : di/dt = 0,20 t = 0,60 A/s à t = 3,0 s, et i = 0,10 × 9,0 = 0,90 A. Alors u_AB = L di/dt + r i = 0,20 × 0,60 + 4,0 × 0,90 = 0,12 + 3,6 = 3,72 V ✓. 3,60 V oublie le terme L di/dt. 3,66 V dérive 0,10 t² en 0,10 t (di/dt = 0,30 A/s). 3,48 V garde le signe − de e : −0,12 + 3,6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL est soumis à un échelon de tension E = 8,0 V : une bobine (L, r) en série avec un résistor R₀ = 60 Ω. On enregistre la tension aux bornes de la bobine et celle aux bornes du résistor (figure). Quelle courbe représente la tension aux bornes de la bobine, et quelle est la résistance r ?\n<svg viewBox=\"0 0 330 215\"><title>Deux courbes enregistrées : la courbe 1 croît de 0 à 6,0 V, la courbe 2 décroît de 8,0 V à 2,0 V</title><line x1=\"44\" y1=\"190\" x2=\"312\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"190\" x2=\"44\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"316,190 308,186 308,194\" fill=\"#0f172a\"/><polygon points=\"44,12 40,20 48,20\" fill=\"#0f172a\"/><line x1=\"44\" y1=\"150\" x2=\"308\" y2=\"150\" stroke=\"#e2e8f0\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><text x=\"38\" y=\"154\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"44\" y1=\"110\" x2=\"308\" y2=\"110\" stroke=\"#e2e8f0\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><text x=\"38\" y=\"114\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"44\" y1=\"70\" x2=\"308\" y2=\"70\" stroke=\"#e2e8f0\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><text x=\"38\" y=\"74\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"44\" y1=\"30\" x2=\"308\" y2=\"30\" stroke=\"#e2e8f0\" stroke-width=\"1.0\" stroke-linecap=\"round\"/><text x=\"38\" y=\"34\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><polyline points=\"44,190 50,178.6 56,168.2 62,158.9 68,150.4 74,142.8 80,135.9 86,129.6 92,123.9 98,118.8 104,114.1 110,109.9 116,106.1 122,102.7 128,99.6 134,96.8 140,94.2 146,91.9 152,89.8 158,87.9 164,86.2 170,84.7 176,83.3 182,82 188,80.9 194,79.9 200,78.9 206,78.1 212,77.3 218,76.6 224,76 230,75.4 236,74.9 242,74.4 248,74 254,73.6 260,73.3 266,73 272,72.7 278,72.4 284,72.2 290,72 296,71.8 302,71.6 308,71.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"44,30 50,41.4 56,51.8 62,61.1 68,69.6 74,77.2 80,84.1 86,90.4 92,96.1 98,101.2 104,105.9 110,110.1 116,113.9 122,117.3 128,120.4 134,123.2 140,125.8 146,128.1 152,130.2 158,132.1 164,133.8 170,135.3 176,136.7 182,138 188,139.1 194,140.1 200,141.1 206,141.9 212,142.7 218,143.4 224,144 230,144.6 236,145.1 242,145.6 248,146 254,146.4 260,146.7 266,147 272,147.3 278,147.6 284,147.8 290,148 296,148.2 302,148.4 308,148.5\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"260\" y=\"90.3\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"152\" y=\"122.2\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"54\" y=\"18\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u (V)</text><text x=\"306\" y=\"206\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t</text><text x=\"38\" y=\"194\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Courbe 2 ; r = 20 Ω"
+        },
+        {
+          "id": "b",
+          "text": "Courbe 1 ; r = 20 Ω"
+        },
+        {
+          "id": "c",
+          "text": "Courbe 2 ; r = 2,0 Ω"
+        },
+        {
+          "id": "d",
+          "text": "Courbe 1 ; r = 2,0 Ω"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "À t = 0, i = 0 : le résistor n'a aucune tension, et la bobine porte toute la tension E = 8,0 V. C'est la courbe 2, qui part de 8,0 V ✓. En régime permanent, la tension du résistor R₀ I₀ = 6,0 V donne I₀ = 6,0 / 60 = 0,10 A, et la bobine garde r I₀ = 2,0 V, d'où r = 2,0 / 0,10 = 20 Ω ✓. Prendre la courbe 1 pour la bobine ignore qu'elle part de zéro. Lire r = 2,0 Ω confond la tension 2,0 V avec la résistance : il faut diviser par I₀.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Après l'ouverture de K, le courant d'un dipôle RL de résistance totale R = 50 Ω vaut 100 mA à t = 0, puis 37 mA à t = 6,0 ms. Quelle est l'inductance L ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,12 mH"
+        },
+        {
+          "id": "b",
+          "text": "0,060 H"
+        },
+        {
+          "id": "c",
+          "text": "0,30 H"
+        },
+        {
+          "id": "d",
+          "text": "300 H"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À la rupture, i(τ) = 0,37 I₀ : 37 mA sur 100 mA correspond à t = τ = 6,0 ms. Alors L = τ R = 6,0 × 10⁻³ × 50 = 0,30 H ✓. 300 H oublie de convertir les millisecondes. 0,12 mH calcule τ/R. 0,060 H prend 6,0 ms pour 5τ, soit τ = 1,2 ms.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un dipôle RL est soumis à un échelon de tension. À l'instant t = τ, quelle fraction de l'énergie magnétique finale la bobine a-t-elle emmagasinée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "32 %"
+        },
+        {
+          "id": "b",
+          "text": "37 %"
+        },
+        {
+          "id": "c",
+          "text": "40 %"
+        },
+        {
+          "id": "d",
+          "text": "63 %"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À t = τ, i = 0,63 I₀ ; l'énergie étant proportionnelle à i², E_L(τ) / E_L(∞) = (0,63)² ≈ 0,40, soit 40 % ✓. 63 % est la fraction du courant, pas de l'énergie. 37 % est la fraction qui reste à la rupture. 32 % applique à 63 % le facteur ½ de la formule, alors qu'il disparaît dans le rapport.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On passe de l'enregistrement A à l'enregistrement B du courant dans un dipôle RL (figure), avec le même générateur, en ne changeant que R ou que L. Qu'a-t-on fait ?\n<svg viewBox=\"0 0 330 230\"><title>Deux enregistrements A et B de i(t) tendant vers la même valeur 0,20 A, avec leurs tangentes à l'origine</title><line x1=\"44\" y1=\"190\" x2=\"312\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"190\" x2=\"44\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"316,190 308,186 308,194\" fill=\"#0f172a\"/><polygon points=\"44,26 40,34 48,34\" fill=\"#0f172a\"/><line x1=\"44\" y1=\"50\" x2=\"302\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><polyline points=\"44,190 48.5,173.5 53,159 57.5,146.2 62,134.9 66.5,124.9 71,116.1 75.5,108.4 80,101.5 84.5,95.5 89,90.1 93.5,85.4 98,81.2 102.5,77.6 107,74.3 111.5,71.5 116,68.9 120.5,66.7 125,64.8 129.5,63 134,61.5 138.5,60.1 143,58.9 147.5,57.9 152,57 156.5,56.2 161,55.4 165.5,54.8 170,54.2 174.5,53.7 179,53.3 183.5,52.9 188,52.6 192.5,52.3 197,52 201.5,51.8 206,51.6 210.5,51.4 215,51.2 219.5,51.1 224,50.9 228.5,50.8 233,50.7 237.5,50.6 242,50.6 246.5,50.5 251,50.4 255.5,50.4 260,50.3 264.5,50.3 269,50.3 273.5,50.2 278,50.2 282.5,50.2 287,50.2 291.5,50.1 296,50.1\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"44,190 48.5,184.3 53,178.8 57.5,173.5 62,168.5 66.5,163.7 71,159 75.5,154.6 80,150.3 84.5,146.2 89,142.3 93.5,138.5 98,134.9 102.5,131.4 107,128.1 111.5,124.9 116,121.9 120.5,118.9 125,116.1 129.5,113.4 134,110.8 138.5,108.4 143,106 147.5,103.7 152,101.5 156.5,99.4 161,97.4 165.5,95.5 170,93.6 174.5,91.8 179,90.1 183.5,88.5 188,86.9 192.5,85.4 197,84 201.5,82.6 206,81.2 210.5,80 215,78.7 219.5,77.6 224,76.4 228.5,75.4 233,74.3 237.5,73.3 242,72.4 246.5,71.5 251,70.6 255.5,69.8 260,68.9 264.5,68.2 269,67.4 273.5,66.7 278,66 282.5,65.4 287,64.8 291.5,64.2 296,63.6\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"190\" x2=\"80\" y2=\"50\" stroke=\"#0f6e56\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"190\" x2=\"152\" y2=\"50\" stroke=\"#b45309\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><text x=\"80\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"116\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"152\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><text x=\"188\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><text x=\"224\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"260\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text><text x=\"296\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">14</text><text x=\"38\" y=\"54\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,20</text><text x=\"54\" y=\"30\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i (A)</text><text x=\"304\" y=\"222\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"38\" y=\"194\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"101.6\" y=\"96.3\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"242\" y=\"90.4\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "R est divisée par 3, L est inchangée"
+        },
+        {
+          "id": "b",
+          "text": "L est triplée, R est inchangée"
+        },
+        {
+          "id": "c",
+          "text": "R est triplée, L est inchangée"
+        },
+        {
+          "id": "d",
+          "text": "L est divisée par 3, R est inchangée"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les deux courbes ont la même asymptote 0,20 A, donc le même I₀ = E/R : R n'a pas changé. Les tangentes coupent l'asymptote à 2 ms (A) et à 6 ms (B) : τ est triplée, donc L est triplée ✓. Diviser R par 3 triplerait aussi τ, mais I₀ serait triplé aussi : les asymptotes seraient différentes. Tripler R ou diviser L par 3 diviserait τ par 3 au lieu de la tripler.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une bobine d'inductance L = 30 mH est traversée par un courant périodique. Sa f.e.m. d'auto-induction e(t) est représentée (figure) et i(0) = 50 mA. Quelle est l'intensité à t = 2 ms ?\n<svg viewBox=\"0 0 320 140\"><title>Force électromotrice d'auto-induction e(t) : +0,60 V entre 0 et 2 ms, puis −0,20 V entre 2 et 8 ms</title><line x1=\"44\" y1=\"100\" x2=\"296\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"100\" x2=\"44\" y2=\"14\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"300,100 292,96 292,104\" fill=\"#0f172a\"/><polygon points=\"44,10 40,18 48,18\" fill=\"#0f172a\"/><polyline points=\"44,40 94,40 94,120 244,120\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"100\" x2=\"94\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" stroke-linecap=\"round\"/><line x1=\"244\" y1=\"100\" x2=\"244\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" stroke-linecap=\"round\"/><text x=\"94\" y=\"92\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"244\" y=\"92\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><text x=\"288\" y=\"114\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"38\" y=\"44\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+0,60</text><text x=\"38\" y=\"124\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−0,20</text><text x=\"54\" y=\"16\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">e (V)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 mA"
+        },
+        {
+          "id": "b",
+          "text": "40 mA"
+        },
+        {
+          "id": "c",
+          "text": "49 mA"
+        },
+        {
+          "id": "d",
+          "text": "90 mA"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Entre 0 et 2 ms, e = +0,60 V, donc di/dt = −e/L = −0,60 / 0,030 = −20 A/s. La variation vaut Δi = −20 × 0,002 = −0,040 A = −40 mA, d'où i(2 ms) = 50 − 40 = 10 mA ✓. 40 mA prend la variation pour la valeur. 90 mA oublie le signe − de e = −L di/dt. 49 mA oublie L : Δi = −0,60 × 0,002 = −1,2 mA.",
+      "difficulty": 3
+    }
+  ]
+}
