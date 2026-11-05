@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Les premiers repères de la courbe",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Voici une portion de la courbe d'une fonction f périodique. Quelle est sa plus petite période ?\n<svg viewBox=\"0 0 330 170\"><title>Courbe d'une fonction f tracée sur [0 ; 8] : un motif se répète</title><line x1=\"18\" y1=\"80.6\" x2=\"318\" y2=\"80.6\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"43\" y1=\"148\" x2=\"43\" y2=\"8\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"318,80.6 311,77.1 311,84.1\" fill=\"#0f172a\"/><polygon points=\"43,8 39.5,15 46.5,15\" fill=\"#0f172a\"/><text x=\"314\" y=\"73.6\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><text x=\"51\" y=\"16\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">y</text><line x1=\"74.2\" y1=\"77.6\" x2=\"74.2\" y2=\"83.6\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"74.2\" y=\"95.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"105.5\" y1=\"77.6\" x2=\"105.5\" y2=\"83.6\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"105.5\" y=\"95.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"136.7\" y1=\"77.6\" x2=\"136.7\" y2=\"83.6\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"136.7\" y=\"95.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"168\" y1=\"77.6\" x2=\"168\" y2=\"83.6\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"168\" y=\"95.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"199.2\" y1=\"77.6\" x2=\"199.2\" y2=\"83.6\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"199.2\" y=\"95.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"230.5\" y1=\"77.6\" x2=\"230.5\" y2=\"83.6\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"230.5\" y=\"95.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"261.8\" y1=\"77.6\" x2=\"261.8\" y2=\"83.6\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"261.8\" y=\"95.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">7</text><line x1=\"293\" y1=\"77.6\" x2=\"293\" y2=\"83.6\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"293\" y=\"95.6\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><line x1=\"40\" y1=\"132.4\" x2=\"46\" y2=\"132.4\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"37\" y=\"136.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−2</text><line x1=\"40\" y1=\"28.7\" x2=\"46\" y2=\"28.7\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"37\" y=\"32.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"43\" y1=\"80.6\" x2=\"74.2\" y2=\"28.7\" stroke=\"#0f6e56\" stroke-width=\"2.8\"/><line x1=\"74.2\" y1=\"28.7\" x2=\"136.7\" y2=\"132.4\" stroke=\"#0f6e56\" stroke-width=\"2.8\"/><line x1=\"136.7\" y1=\"132.4\" x2=\"168\" y2=\"80.6\" stroke=\"#0f6e56\" stroke-width=\"2.8\"/><line x1=\"168\" y1=\"80.6\" x2=\"199.2\" y2=\"28.7\" stroke=\"#0f6e56\" stroke-width=\"2.8\"/><line x1=\"199.2\" y1=\"28.7\" x2=\"261.8\" y2=\"132.4\" stroke=\"#0f6e56\" stroke-width=\"2.8\"/><line x1=\"261.8\" y1=\"132.4\" x2=\"293\" y2=\"80.6\" stroke=\"#0f6e56\" stroke-width=\"2.8\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le motif « monte de 0 à 2, descend de 2 à −2, remonte de −2 à 0 » commence en x = 0 et se retrouve identique en x = 4 : sommets en 1 et 5, creux en 3 et 7. La plus petite période est donc 4. La courbe coupe l'axe des abscisses tous les 2, mais deux passages consécutifs ne sont pas identiques : en 0 elle monte, en 2 elle descend. 8 est bien une période (deux motifs), mais pas la plus petite.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour une fonction f définie sur ℝ ∖ {2}, on a établi que f(4 − x) + f(x) = 6 pour tout x ≠ 2. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point (2 ; 3) est centre de symétrie de la courbe"
+        },
+        {
+          "id": "b",
+          "text": "Le point (4 ; 6) est centre de symétrie de la courbe"
+        },
+        {
+          "id": "c",
+          "text": "Le point (2 ; 6) est centre de symétrie de la courbe"
+        },
+        {
+          "id": "d",
+          "text": "La droite x = 2 est axe de symétrie de la courbe"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La relation f(2a − x) + f(x) = 2b caractérise un centre Ω(a ; b). Ici 2a = 4 et 2b = 6, donc a = 2 et b = 3 : le centre est (2 ; 3), et 4 − x ≠ 2 équivaut à x ≠ 2, le domaine reste donc symétrique. Le point (4 ; 6) lit 2a et 2b à la place de a et b. Une somme égale à une constante ne donne pas un axe : l'axe demanderait f(4 − x) = f(x).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est l'écriture de f(x) = (x² + 5x + 1)/(x + 1) sous la forme ax + b + c/(x + 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x + 5 + 1/(x + 1)"
+        },
+        {
+          "id": "b",
+          "text": "x + 4 − 3/(x + 1)"
+        },
+        {
+          "id": "c",
+          "text": "x + 4 + 3/(x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "x + 5 − 4/(x + 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(ax + b)(x + 1) + c = ax² + (a + b)x + (b + c). On identifie avec x² + 5x + 1 : a = 1, a + b = 5 donc b = 4, b + c = 1 donc c = −3. Contrôle : (x + 4)(x + 1) − 3 = x² + 5x + 1. L'écriture x + 5 + 1/(x + 1) lit les coefficients tels quels ; x + 5 − 4/(x + 1) prend b = 5 ; x + 4 + 3/(x + 1) se trompe de signe pour c.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x² − 4x + 7 et T sa tangente au point d'abscisse 1. Quelle est l'expression de l'écart f(x) − T(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − 2x"
+        },
+        {
+          "id": "b",
+          "text": "x² − 6x + 5"
+        },
+        {
+          "id": "c",
+          "text": "−(x − 1)²"
+        },
+        {
+          "id": "d",
+          "text": "(x − 1)²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(1) = 4 et f′(x) = 2x − 4, donc f′(1) = −2 : T : y = −2(x − 1) + 4 = −2x + 6. L'écart est f(x) − T(x) = x² − 4x + 7 + 2x − 6 = x² − 2x + 1 = (x − 1)². Il est positif ou nul : la courbe est au-dessus de T et la touche seulement en 1. L'expression x² − 6x + 5 vient d'une tangente de pente +2 au lieu de −2 (erreur de signe sur f′(1)) ; x² − 2x oublie le +1 ; −(x − 1)² se trompe de sens de soustraction.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit k(x) = x²/(x² − 1). La fonction k est paire et k′(x) = −2x/(x² − 1)². Sur ]−∞ ; −1[, k est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "croissante, de 1 à +∞"
+        },
+        {
+          "id": "b",
+          "text": "croissante, de −∞ à 1"
+        },
+        {
+          "id": "c",
+          "text": "décroissante, de +∞ à 1"
+        },
+        {
+          "id": "d",
+          "text": "décroissante, de 1 à −∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur ]−∞ ; −1[, x < 0 donc k′(x) > 0 : k est croissante. En −∞, k(x) = 1 + 1/(x² − 1) tend vers 1 ; en −1⁻, x² − 1 tend vers 0⁺ et k tend vers +∞ : k croît de 1 à +∞. La description « décroissante de +∞ à 1 » est celle de k sur ]1 ; +∞[, que la parité renverse par rapport à l'axe des ordonnées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le sens de variation de f(x) = √(x² + 4x + 20) sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "croissante sur ]−∞ ; 2], décroissante sur [2 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "décroissante sur ]−∞ ; 2], croissante sur [2 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "croissante sur ]−∞ ; −2], décroissante sur [−2 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "décroissante sur ]−∞ ; −2], croissante sur [−2 ; +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "x² + 4x + 20 = (x + 2)² + 16 > 0 : f est définie et dérivable sur ℝ, et f′(x) = (x + 2)/√(x² + 4x + 20) a le signe de x + 2. Elle décroît donc sur ]−∞ ; −2] et croît sur [−2 ; +∞[, avec le minimum f(−2) = 4. L'axe est x = −b/(2a) = −2 et non 2 ; les options qui inversent les sens ou placent un maximum en 2 sont fausses puisque f tend vers +∞ des deux côtés.",
+      "difficulty": 2
+    }
+  ]
+}

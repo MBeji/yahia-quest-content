@@ -1,0 +1,190 @@
+{
+  "title": "⭐ Exercice : Les premiers pas de la pente",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Pour f(x) = x² + x, que vaut le nombre dérivé f′(3), défini par lim h→0 (f(3 + h) − f(3))/h ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(3) = 12 et f(3 + h) = (9 + 6h + h²) + (3 + h) = 12 + 7h + h². Le taux d'accroissement est (7h + h²)/h = 7 + h, qui tend vers 7 : f′(3) = 7. On trouve 6 en oubliant la partie x de f, 9 en ne gardant que 3², et 12 en donnant la valeur f(3) au lieu de la pente.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est l'abscisse du point de la courbe de f(x) = x² − 4x + 1 où la tangente est horizontale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une tangente horizontale a pour pente f′(x) = 0. Or f′(x) = 2x − 4 s'annule en x = 2 : le point est (2 ; f(2)) = (2 ; −3). Le nombre −3 est l'ordonnée de ce point, non son abscisse ; 1 est la valeur f(0), et 4 est le coefficient de x dans f.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer à chaque fonction sa dérivée.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "f₁(x) = (2x + 1)/(x − 3)"
+        },
+        {
+          "id": "l2",
+          "text": "f₂(x) = √(2x + 1)"
+        },
+        {
+          "id": "l3",
+          "text": "f₃(x) = sin(3x)"
+        },
+        {
+          "id": "l4",
+          "text": "f₄(x) = (x² + 1)³"
+        },
+        {
+          "id": "r1",
+          "text": "3cos(3x)"
+        },
+        {
+          "id": "r2",
+          "text": "6x(x² + 1)²"
+        },
+        {
+          "id": "r3",
+          "text": "−7/(x − 3)²"
+        },
+        {
+          "id": "r4",
+          "text": "1/√(2x + 1)"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l4",
+            "r2"
+          ]
+        ]
+      },
+      "explanation": "Pour le quotient, (u′v − uv′)/v² = (2(x − 3) − (2x + 1))/(x − 3)² = −7/(x − 3)². Pour la racine, (√u)′ = u′/(2√u) = 2/(2√(2x + 1)) = 1/√(2x + 1). Pour le sinus, (sin(ax))′ = a cos(ax) = 3cos(3x). Pour la puissance, (u³)′ = 3u′u² = 3 × 2x × (x² + 1)² = 6x(x² + 1)².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = 2x³ − 3x² − 12x. Sur quel intervalle f est-elle décroissante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−2 ; 1]"
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; −1]"
+        },
+        {
+          "id": "c",
+          "text": "[2 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "[−1 ; 2]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′(x) = 6x² − 6x − 12 = 6(x − 2)(x + 1), négative entre ses racines −1 et 2 : f est décroissante sur [−1 ; 2]. L'intervalle [−2 ; 1] vient de racines au signe changé, et les deux autres intervalles sont des zones où f′ est positive, donc où f croît.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = 6x − 1/x² sur ]0 ; +∞[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = 3x² + 1/x"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = 3x² − 1/x"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = 3x² + 1/(3x³)"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = 6 + 2/x³"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une primitive de 6x est 3x². Pour 1/x² = x⁻², la ligne xⁿ avec n = −2 donne x⁻¹/(−1) = −1/x, donc une primitive de −1/x² est +1/x : F(x) = 3x² + 1/x. Contrôle : F′(x) = 6x − 1/x² ✓. Le signe est perdu avec 3x² − 1/x, l'exposant est abaissé au lieu d'être augmenté avec 3x² + 1/(3x³), et 6 + 2/x³ est la dérivée de f.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe de f(x) = x³ − 6x² + 9x + 1 admet un point d'inflexion. Lequel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2 ; 3)"
+        },
+        {
+          "id": "b",
+          "text": "(1 ; 5)"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; −3)"
+        },
+        {
+          "id": "d",
+          "text": "(3 ; 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f′(x) = 3x² − 12x + 9 et f″(x) = 6x − 12 = 6(x − 2), qui s'annule en 2 en changeant de signe ; f(2) = 8 − 24 + 18 + 1 = 3 : le point d'inflexion est (2 ; 3). Les points (1 ; 5) et (3 ; 1) annulent f′ (racines de 3(x − 1)(x − 3)) : ce sont des extrémums locaux. Le point (2 ; −3) prend f′(2) comme ordonnée au lieu de f(2).",
+      "difficulty": 2
+    }
+  ]
+}
