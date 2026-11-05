@@ -87,7 +87,7 @@
         },
         {
           "id": "b",
-          "text": "Si f n'est pas continue en a, alors g∘f n'est pas continue en a."
+          "text": "Si f est continue sur ℝ et g est continue sur ]0 ; +∞[, alors g∘f est continue sur ℝ."
         },
         {
           "id": "c",
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "La composée de deux fonctions continues sur ℝ est continue sur ℝ : c'est le théorème. Les autres sont fausses. Avec g constante, g∘f est constante donc continue, quelle que soit f : cela réfute les deux premières. Pour la dernière, il faut g continue en f(a), pas en a : avec f(x) = x + 1, g(y) = y² si y ≠ 1 et g(1) = 5, g est continue en 0 et f en 0, mais g(f(x)) = (x + 1)² tend vers 1 en 0 alors que g(f(0)) = 5.",
+      "explanation": "La composée de deux fonctions continues sur ℝ est continue sur ℝ : c'est le théorème, la condition f(ℝ) ⊂ ℝ étant automatique ✓. « Si g∘f est continue en a, alors f est continue en a » est fausse : avec g constante, g∘f est constante donc continue, quelle que soit f. « Si f est continue sur ℝ et g est continue sur ]0 ; +∞[… » oublie la condition f(ℝ) ⊂ ]0 ; +∞[ : avec f(x) = x et g(y) = 1/y si y ≠ 0, g(0) = 0, la composée g∘f = g n'est pas continue en 0. « Si f est continue en a et g est continue en a… » se trompe de point : il faut g continue en f(a) ; avec f(x) = x + 1 et g(y) = y² si y ≠ 1, g(1) = 5, f et g sont continues en 0, mais g(f(x)) = (x + 1)² tend vers 1 en 0 alors que g(f(0)) = 5.",
       "difficulty": 3
     },
     {
@@ -127,27 +127,27 @@
       "difficulty": 3
     },
     {
-      "prompt": "La fonction f(x) = (2x + 1)/(x − 1), définie pour x > 1, prend exactement les valeurs y qui vérifient :",
+      "prompt": "La fonction f(x) = (3x + 2)/(x + 1), définie pour x > −1, prend exactement les valeurs y qui vérifient :",
       "options": [
         {
           "id": "a",
-          "text": "y > 1"
+          "text": "y > −1"
         },
         {
           "id": "b",
-          "text": "y < 2"
+          "text": "y > 3"
         },
         {
           "id": "c",
-          "text": "y ≥ 2"
+          "text": "y ≤ 3"
         },
         {
           "id": "d",
-          "text": "y > 2"
+          "text": "y < 3"
         }
       ],
       "correctOption": "d",
-      "explanation": "Pour x > 1, f(x) = 2 + 3/(x − 1). Si 1 < a < b, alors 0 < a − 1 < b − 1 donc 3/(a − 1) > 3/(b − 1) : f est strictement décroissante, et continue. Elle tend vers +∞ quand x → 1⁺ (numérateur proche de 3, dénominateur positif proche de 0) et vers 2 quand x → +∞ : l'image de ]1 ; +∞[ est ]2 ; +∞[, borne 2 non atteinte. y < 2 inverse le sens de variation, y ≥ 2 ferme la borne, et y > 1 recopie le domaine de départ.",
+      "explanation": "Pour x > −1, f(x) = 3 − 1/(x + 1). Si −1 < a < b, alors 0 < a + 1 < b + 1, donc 1/(a + 1) > 1/(b + 1) et f(a) < f(b) : f est strictement croissante, et continue. Elle tend vers −∞ quand x → −1⁺ (numérateur proche de −1, dénominateur positif proche de 0) et vers 3 quand x → +∞ : l'image de ]−1 ; +∞[ est ]−∞ ; 3[, borne 3 non atteinte ✓. y > 3 inverse le sens de variation, y ≤ 3 ferme la borne, et y > −1 recopie le domaine de départ.",
       "difficulty": 3
     }
   ]
