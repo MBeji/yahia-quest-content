@@ -36,7 +36,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Sciences expérimentales | mathématiques | `222433` + `222434` | ✅ validée R-7 (2026-11-05) | 17/17 chapitres — matière complète (2026-11-05) | fiche différentielle + adaptation des chapitres de `math-bac-math` / `math-bac-techniques` (décision de Mohamed du 2026-11-05 : même collection, version allégée) |
 | Sciences expérimentales | physique | `223433` | ❌ aucune | — | A1 |
 | Sciences expérimentales | chimie | `224433` | ❌ aucune | — | A1 |
-| Sciences de l'informatique | mathématiques | `222472` | ❌ aucune | — | A1 |
+| Sciences de l'informatique | mathématiques | `222472` | ⏳ en cours (`wip/math-bac-info`, 2026-11-05) — manuel de 304 p., 13 chapitres, couche texte (L1) | — | A1 : fiche **différentielle** contre `math-bac-math` / `math-bac-techniques` / `math-bac-sciences-exp`, puis adaptation de leurs chapitres (demande de Mohamed du 2026-11-05 : « utilise ce qui est fait sur la branche mathématique ») ; ⚠️ autre collection CNP (autres auteurs), 2 chapitres sans référence : systèmes d'équations linéaires, séries statistiques à deux caractères (à confirmer) |
 | Sciences de l'informatique | physique / chimie | `223471` / `224471` | ❌ aucune | — | A1 |
 | Sciences de l'informatique | algorithmique, STI | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
 | Économie et gestion | gestion | `229464` | ❌ aucune | — | A1 |
