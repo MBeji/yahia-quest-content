@@ -1,0 +1,146 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve de l'espace",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "A et B sont deux points distincts de l'espace. Quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'ensemble des points M tels que AM⃗ ∧ AB⃗ = 0⃗ est la droite (AB)"
+        },
+        {
+          "id": "b",
+          "text": "L'ensemble des points M tels que AM⃗ . AB⃗ = 0 est le plan passant par A et orthogonal à (AB)"
+        },
+        {
+          "id": "c",
+          "text": "L'ensemble des points M tels que MA⃗ . MB⃗ = 0 est la sphère de diamètre [AB]"
+        },
+        {
+          "id": "d",
+          "text": "Pour u⃗ et v⃗ non colinéaires, l'ensemble des points M tels que (u⃗, v⃗, AM⃗) = 0 est une droite"
+        },
+        {
+          "id": "e",
+          "text": "L'ensemble des points M tels que AM = AB est le cercle de centre A et de rayon AB"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c"]
+      },
+      "explanation": "Le produit vectoriel AM⃗ ∧ AB⃗ est nul si et seulement si AM⃗ et AB⃗ sont colinéaires, c'est-à-dire M ∈ (AB) ✓. La condition AM⃗ . AB⃗ = 0 est celle du plan passant par A de vecteur normal AB⃗ ✓. La condition MA⃗ . MB⃗ = 0 caractérise la sphère de diamètre [AB] ✓. En revanche (u⃗, v⃗, AM⃗) = 0 exprime que AM⃗ est coplanaire avec u⃗ et v⃗ : l'ensemble est un plan, pas une droite ; et AM = AB décrit la sphère de centre A et de rayon AB, pas un cercle, qui serait une courbe plane.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève cherche l'équation du plan (ABC) pour A(2 ; 0 ; 0), B(0 ; 3 ; 0) et C(0 ; 0 ; 1), dans un repère orthonormé direct.\nÉtape 1 : AB⃗(−2 ; 3 ; 0) et AC⃗(−2 ; 0 ; 1).\nÉtape 2 : AB⃗ ∧ AC⃗ = (3 ; 2 ; 6).\nÉtape 3 : le plan a une équation 3x + 2y + 6z + d = 0, et A donne 6 + d = 0, donc d = 6.\nÉtape 4 : le plan (ABC) a pour équation 3x + 2y + 6z + 6 = 0.\nQuelle est la première étape qui contient une erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les étapes 1 et 2 sont justes : AB⃗ = B − A = (−2 ; 3 ; 0), AC⃗ = (−2 ; 0 ; 1) et AB⃗ ∧ AC⃗ = (3 × 1 − 0 × 0 ; 0 × (−2) − (−2) × 1 ; (−2) × 0 − 3 × (−2)) = (3 ; 2 ; 6). L'erreur est à l'étape 3 : 6 + d = 0 donne d = −6 et non 6. Le plan est 3x + 2y + 6z − 6 = 0, ce que confirment B (6 − 6 = 0) et C (6 − 6 = 0). L'étape 4 recopie l'erreur sans en commettre de nouvelle : la première erreur est donc bien à l'étape 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé, la sphère S a pour centre I(2 ; −1 ; 1) et passe par A(4 ; 1 ; 0). Quelle est une équation du plan tangent à S en A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x + 2y − z − 10 = 0"
+        },
+        {
+          "id": "b",
+          "text": "2x + 2y − z + 10 = 0"
+        },
+        {
+          "id": "c",
+          "text": "2x + 2y − z − 1 = 0"
+        },
+        {
+          "id": "d",
+          "text": "4x + y − 17 = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le plan tangent en A a pour vecteur normal IA⃗(2 ; 2 ; −1), donc 2(x − 4) + 2(y − 1) − z = 0, soit 2x + 2y − z − 10 = 0 ✓. Contrôle : d(I, plan) = |4 − 2 − 1 − 10|/3 = 3 = IA = R. L'équation en −1 est celle du plan de même normale passant par le centre I, celle en +10 se trompe de signe sur la constante, et 4x + y − 17 = 0 prend OA⃗ au lieu de IA⃗ comme vecteur normal.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un repère orthonormé direct, les droites D et D′ sont données par :\nD : x = 1 + α ; y = 2α ; z = −1 + 2α\nD′ : x = 4 + 2β ; y = β ; z = 2 − 2β\nQuelle est la distance de D à D′ ?",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "D passe par A(1 ; 0 ; −1) avec u⃗(1 ; 2 ; 2), D′ passe par A′(4 ; 0 ; 2) avec u′⃗(2 ; 1 ; −2). On a u⃗ ∧ u′⃗ = (−6 ; 6 ; −3), de norme 9, et AA′⃗(3 ; 0 ; 3) donne (u⃗, u′⃗, AA′⃗) = −18 + 0 − 9 = −27, non nul : les droites ne sont pas coplanaires. La distance est |−27|/9 = 3 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé, le tétraèdre OABC a pour sommets O(0 ; 0 ; 0), A(3 ; 0 ; 0), B(0 ; 2 ; 0) et C(0 ; 0 ; 1). Quelle est la hauteur issue de O ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36/7"
+        },
+        {
+          "id": "b",
+          "text": "6/7"
+        },
+        {
+          "id": "c",
+          "text": "3/7"
+        },
+        {
+          "id": "d",
+          "text": "2/7"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le volume est (1/6)|(OA⃗, OB⃗, OC⃗)| = (1/6) × 6 = 1. Puis AB⃗(−3 ; 2 ; 0) et AC⃗(−3 ; 0 ; 1) donnent AB⃗ ∧ AC⃗ = (2 ; 3 ; 6), de norme 7, donc l'aire de ABC est 7/2. Comme V = (1/3) × aire × h, on a h = 3 × 1/(7/2) = 6/7 ✓. Le résultat 3/7 oublie le 1/2 de l'aire, 2/7 oublie le 3 de V = (1/3) × aire × h, et 36/7 oublie le facteur 1/6 du volume.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé, pour quelles valeurs du réel m le plan P_m d'équation x + y + z = m est-il tangent à la sphère de centre O et de rayon 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = −3 ou m = 3"
+        },
+        {
+          "id": "b",
+          "text": "m = −3√3 ou m = 3√3"
+        },
+        {
+          "id": "c",
+          "text": "m = −9√3 ou m = 9√3"
+        },
+        {
+          "id": "d",
+          "text": "m = 3√3 uniquement"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "P_m a pour équation x + y + z − m = 0 et il est tangent si et seulement si d(O, P_m) = R, soit |−m|/√3 = 3, donc |m| = 3√3 : deux valeurs, m = 3√3 et m = −3√3 ✓. Les valeurs ±3 oublient de multiplier par √3, ±9√3 prennent R² = 9 au lieu de R = 3, et 3√3 seule oublie que la valeur absolue admet deux solutions.",
+      "difficulty": 3
+    }
+  ]
+}

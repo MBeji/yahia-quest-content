@@ -1,0 +1,146 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de l'espace",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Dans le cube ABCDEFGH d'arête 2 de la figure, quelles paires de droites sont orthogonales ?\n<svg viewBox=\"0 0 230 224\">\n<title>Cube ABCDEFGH d'arête 2</title>\n<polygon points=\"36.00,196.00 140.00,196.00 140.00,92.00 36.00,92.00\" fill=\"#0f6e56\" opacity=\"0.07\"/><line x1=\"81.03\" y1=\"170\" x2=\"36\" y2=\"196\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"81.03\" y1=\"170\" x2=\"185.03\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"81.03\" y1=\"170\" x2=\"81.03\" y2=\"66\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"36\" y1=\"196\" x2=\"140\" y2=\"196\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"140\" y1=\"196\" x2=\"185.03\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"36\" y1=\"196\" x2=\"36\" y2=\"92\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"140\" y1=\"196\" x2=\"140\" y2=\"92\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"185.03\" y1=\"170\" x2=\"185.03\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"36\" y1=\"92\" x2=\"140\" y2=\"92\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"140\" y1=\"92\" x2=\"185.03\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"185.03\" y1=\"66\" x2=\"81.03\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"81.03\" y1=\"66\" x2=\"36\" y2=\"92\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"36\" cy=\"196\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"140\" cy=\"196\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"185.03\" cy=\"170\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"81.03\" cy=\"170\" r=\"3.5\" fill=\"#94a3b8\"/><circle cx=\"36\" cy=\"92\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"140\" cy=\"92\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"185.03\" cy=\"66\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"81.03\" cy=\"66\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"24\" y=\"212\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"150\" y=\"214\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"199.03\" y=\"175\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><text x=\"69.03\" y=\"164\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text><text x=\"24\" y=\"90\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><text x=\"128\" y=\"84\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">F</text><text x=\"199.03\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">G</text><text x=\"77.03\" y=\"56\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">H</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AC) et (BD)"
+        },
+        {
+          "id": "b",
+          "text": "(AC) et (AF)"
+        },
+        {
+          "id": "c",
+          "text": "(EC) et (FH)"
+        },
+        {
+          "id": "d",
+          "text": "(AH) et (BG)"
+        },
+        {
+          "id": "e",
+          "text": "(BE) et (AF)"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "Dans le repère (A ; AB⃗/2, AD⃗/2, AE⃗/2), AC⃗(2 ; 2 ; 0) et BD⃗(−2 ; 2 ; 0) donnent −4 + 4 + 0 = 0 : orthogonales ✓. EC⃗(2 ; 2 ; −2) et FH⃗(−2 ; 2 ; 0) donnent −4 + 4 + 0 = 0 : orthogonales ✓. BE⃗(−2 ; 0 ; 2) et AF⃗(2 ; 0 ; 2) donnent −4 + 0 + 4 = 0 : orthogonales ✓. En revanche AC⃗ . AF⃗ = 4 + 0 + 0 = 4 ≠ 0, et AH⃗(0 ; 2 ; 2) = BG⃗ : ces deux droites sont parallèles, leur produit scalaire vaut 8.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé, u⃗(1 ; 2 ; 2) et v⃗(2 ; −3 ; 6) forment un angle θ. Quelle est la valeur de cos θ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8/49"
+        },
+        {
+          "id": "b",
+          "text": "8/21"
+        },
+        {
+          "id": "c",
+          "text": "4/5"
+        },
+        {
+          "id": "d",
+          "text": "8/9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "u⃗ . v⃗ = 2 − 6 + 12 = 8, ‖u⃗‖ = √9 = 3 et ‖v⃗‖ = √49 = 7, donc cos θ = 8/(3 × 7) = 8/21 ✓. Le quotient 4/5 divise par la somme des normes (8/10), 8/9 par ‖u⃗‖² seulement, et 8/49 par ‖v⃗‖² seulement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé, le plan P a pour équation 2x − y + 2z − 9 = 0 et A a pour coordonnées (1 ; 2 ; 0). Quelles sont les coordonnées du projeté orthogonal H de A sur P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−1 ; 3 ; −2)"
+        },
+        {
+          "id": "b",
+          "text": "(5/3 ; 5/3 ; 2/3)"
+        },
+        {
+          "id": "c",
+          "text": "(7 ; −1 ; 6)"
+        },
+        {
+          "id": "d",
+          "text": "(3 ; 1 ; 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "N⃗(2 ; −1 ; 2) est normal à P, donc H = (1 + 2α ; 2 − α ; 2α). H est dans P : 2(1 + 2α) − (2 − α) + 2(2α) − 9 = 9α − 9 = 0, d'où α = 1 et H(3 ; 1 ; 2) ✓. Contrôle : 6 − 1 + 4 − 9 = 0 et AH = ‖N⃗‖ = 3 = d(A, P). Le point (−1 ; 3 ; −2) correspond à α = −1 (mauvais sens), (7 ; −1 ; 6) à α = 3 (la distance prise pour paramètre) et (5/3 ; 5/3 ; 2/3) à α = 1/3 (la distance 3 divisée par ‖N⃗‖² = 9 au lieu de ‖N⃗‖ = 3).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A(1 ; 1 ; 0), B(2 ; 2 ; 2) et C(0 ; 3 ; 1) définissent un plan, et D a pour coordonnées (1 ; 4 ; −1). Quelle est la distance de D au plan (ABC) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "4√3/3"
+        },
+        {
+          "id": "c",
+          "text": "4/3"
+        },
+        {
+          "id": "d",
+          "text": "4√3/9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "AB⃗(1 ; 1 ; 2) et AC⃗(−1 ; 2 ; 1) donnent AB⃗ ∧ AC⃗ = (−3 ; −3 ; 3), normal à (ABC) : le plan a pour équation x + y − z + d = 0 et A donne d = −2. Alors d(D, (ABC)) = |1 + 4 + 1 − 2|/√3 = 4/√3 = 4√3/3 ✓. Contrôle par le volume : AD⃗(0 ; 3 ; −1) donne (AB⃗, AC⃗, AD⃗) = −12, donc V = 2, et (1/3) × (3√3/2) × (4/√3) = 2. Le résultat 4 oublie de diviser par la norme, 4/3 divise par 3 au lieu de √3, et 4√3/9 oublie le facteur 3 de V = (1/3) × aire × hauteur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A(1 ; 0 ; 1), B(2 ; 1 ; 0), C(0 ; 2 ; 1) et D(m ; 1 ; 1) Pour quelles valeurs du réel m le tétraèdre ABCD a-t-il pour volume 1/2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = 2 uniquement"
+        },
+        {
+          "id": "b",
+          "text": "m = 1/4 ou m = 3/4"
+        },
+        {
+          "id": "c",
+          "text": "m = −1 ou m = 2"
+        },
+        {
+          "id": "d",
+          "text": "m = −1/4 ou m = 5/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "AB⃗(1 ; 1 ; −1), AC⃗(−1 ; 2 ; 0) et AD⃗(m − 1 ; 1 ; 0). On a AB⃗ ∧ AC⃗ = (1 × 0 − (−1) × 2 ; (−1)(−1) − 1 × 0 ; 1 × 2 − 1 × (−1)) = (2 ; 1 ; 3), donc le produit mixte vaut 2(m − 1) + 1 + 0 = 2m − 1. Alors V = |2m − 1|/6 = 1/2 équivaut à |2m − 1| = 3, c'est-à-dire m = 2 ou m = −1 ✓. « m = 2 uniquement » oublie la valeur absolue. Les valeurs 1/4 et 3/4 oublient le facteur 1/6, et −1/4 et 5/4 prennent 1/3 au lieu de 1/6.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un repère orthonormé, on donne la sphère S et le plan P :\nS : x² + y² + z² − 2x − 2y + 4z − 94 = 0\nP : 2x − 2y + z + 20 = 0\nLeur intersection est un cercle. Quel est son rayon ?",
+      "answerKey": {
+        "value": 8
+      },
+      "explanation": "On complète les carrés : (x − 1)² + (y − 1)² + (z + 2)² = 94 + 1 + 1 + 4 = 100, donc I(1 ; 1 ; −2) et R = 10. La distance du centre au plan est d = |2 − 2 − 2 + 20|/√(4 + 4 + 1) = 18/3 = 6, inférieure à R, et le rayon du cercle est r = √(100 − 36) = √64 = 8 ✓.",
+      "difficulty": 3
+    }
+  ]
+}

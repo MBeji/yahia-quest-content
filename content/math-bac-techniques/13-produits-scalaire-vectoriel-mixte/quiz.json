@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Produit scalaire, vectoriel et mixte",
+  "questions": [
+    {
+      "prompt": "Dans un repère orthonormé, on donne u⃗(2 ; −1 ; 3) et v⃗(1 ; 4 ; 2). Combien vaut u⃗ . v⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−8"
+        },
+        {
+          "id": "b",
+          "text": "−2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En base orthonormée, u⃗ . v⃗ = xx′ + yy′ + zz′ = 2 × 1 + (−1) × 4 + 3 × 2 = 2 − 4 + 6 = 4 ✓. Le résultat 12 additionne les valeurs absolues des trois produits, −2 oublie le troisième terme, et −8 change le signe du dernier.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel vecteur est normal au plan d'équation 2x − 3y + z − 5 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2 ; −3 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "(1 ; −3 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; −3 ; −5)"
+        },
+        {
+          "id": "d",
+          "text": "(3 ; 2 ; 0)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour le plan ax + by + cz + d = 0, le vecteur (a ; b ; c) est normal : ici (2 ; −3 ; 1) ✓. Le vecteur (2 ; −3 ; −5) prend la constante pour troisième composante, (1 ; −3 ; 2) permute les coefficients, et (3 ; 2 ; 0) est orthogonal à (2 ; −3 ; 1) puisque 6 − 6 + 0 = 0 : c'est un vecteur du plan, pas un vecteur normal.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel vecteur obtient-on en calculant u⃗ ∧ v⃗, pour u⃗(0 ; 1 ; 1) et v⃗(1 ; 0 ; 2) en repère orthonormé direct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0 ; 0 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; 1 ; −1)"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; −1 ; −1)"
+        },
+        {
+          "id": "d",
+          "text": "(−2 ; −1 ; 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On applique (yz′ − zy′ ; zx′ − xz′ ; xy′ − yx′) : (1 × 2 − 1 × 0 ; 1 × 1 − 0 × 2 ; 0 × 0 − 1 × 1) = (2 ; 1 ; −1) ✓. Contrôle : (2 ; 1 ; −1) . u⃗ = 0 + 1 − 1 = 0 et (2 ; 1 ; −1) . v⃗ = 2 + 0 − 2 = 0. Le vecteur (−2 ; −1 ; 1) est l'opposé, obtenu en échangeant les facteurs ; (2 ; −1 ; −1) se trompe de signe sur la deuxième composante, et (0 ; 0 ; 2) multiplie les composantes une à une.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est l'équation de la sphère de centre I(2 ; −1 ; 0) et de rayon 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − 2)² + (y + 1)² + z² = 3"
+        },
+        {
+          "id": "b",
+          "text": "(x − 2)² + (y + 1)² + z² = 6"
+        },
+        {
+          "id": "c",
+          "text": "(x − 2)² + (y + 1)² + z² = 9"
+        },
+        {
+          "id": "d",
+          "text": "(x + 2)² + (y − 1)² + z² = 9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "M est sur la sphère si et seulement si IM² = R² = 9, et IM² = (x − 2)² + (y + 1)² + (z − 0)² ✓. Le second membre 3 confond R et R², 6 double le rayon au lieu de l'élever au carré, et (x + 2)² + (y − 1)² + z² = 9 donne le centre (−2 ; 1 ; 0), de signe opposé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la distance du point A(1 ; 2 ; 3) au plan d'équation 2x − y + 2z − 1 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5/9"
+        },
+        {
+          "id": "b",
+          "text": "5/3"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "d = |2 × 1 − 2 + 2 × 3 − 1| / √(4 + 1 + 4) = 5/3 ✓. Le résultat 5 oublie de diviser par la norme du vecteur normal, 5/9 divise par a² + b² + c² sans racine carrée, et 2 oublie le terme constant (6/3).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "A(1 ; 1 ; 1), B(2 ; 3 ; 3) et C(3 ; 2 ; −1) sont les sommets d'un triangle dans un repère orthonormé direct. Quelle est son aire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9√2/2"
+        },
+        {
+          "id": "b",
+          "text": "9/2"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "81/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "AB⃗(1 ; 2 ; 2) et AC⃗(2 ; 1 ; −2) donnent AB⃗ ∧ AC⃗ = (−6 ; 6 ; −3), de norme √(36 + 36 + 9) = 9, donc l'aire du triangle est 9/2 ✓. Le triangle est rectangle en A (AB⃗ . AC⃗ = 2 + 2 − 4 = 0) ; 9√2/2 = (1/2) × AB × BC prend l'hypoténuse BC = 3√2 au lieu du côté AC = 3 ; 9 oublie le facteur 1/2, et 81/2 oublie la racine carrée dans la norme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé, on considère le tétraèdre OABC avec O(0 ; 0 ; 0), A(1 ; 0 ; 0), B(0 ; 2 ; 0) et C(0 ; 0 ; 3). Quel est son volume ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "OA⃗ ∧ OB⃗ = (0 ; 0 ; 2), donc (OA⃗, OB⃗, OC⃗) = 6 et le volume est (1/6) × |6| = 1 ✓. Le résultat 6 oublie le facteur 1/6, 3 prend 1/2 au lieu de 1/6, et 2 prend 1/3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une sphère de rayon 5 est coupée par un plan situé à la distance 4 de son centre. Quel est le rayon du cercle d'intersection ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "√41"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans le triangle rectangle formé par le centre, le centre du cercle et un point du cercle, r² + 4² = 5², donc r = √(25 − 16) = 3 ✓. Le résultat 1 vaut R − d, 4 recopie la distance d, et √41 additionne les carrés au lieu de les soustraire.",
+      "difficulty": 2
+    }
+  ]
+}
