@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des bornes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Que vaut ∫₁ᵉ x² ln x dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2e³/9"
+        },
+        {
+          "id": "b",
+          "text": "(2e³ + 1)/9"
+        },
+        {
+          "id": "c",
+          "text": "e³/3"
+        },
+        {
+          "id": "d",
+          "text": "(4e³ − 1)/9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose v(x) = ln x et u′(x) = x², de primitive x³/3 : ∫₁ᵉ x² ln x dx = [x³ ln x/3]₁ᵉ − ∫₁ᵉ x²/3 dx = e³/3 − (e³ − 1)/9 = (2e³ + 1)/9 ✓. La valeur 2e³/9 oublie la borne inférieure de l'intégrale restante, ici −1/9. La valeur e³/3 ne garde que le crochet et oublie l'intégrale restante. La valeur (4e³ − 1)/9 additionne l'intégrale restante au lieu de la soustraire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "G(x) = ∫₀ˣ √(1 + t²)dt pour tout réel x. Que vaut G′(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2 − 1"
+        },
+        {
+          "id": "b",
+          "text": "√2/2"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "√2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Notons f(t) = √(1 + t²). La fonction f est continue sur ℝ, donc G est dérivable et G′(x) = √(1 + x²) : G′(1) = √2 ✓. La valeur √2 − 1 est f(1) − f(0), c'est-à-dire f(x) − f(a). La valeur 1 est f(0), prise à la borne inférieure. La valeur √2/2 est la dérivée de l'intégrande en 1, f′(1), et non f(1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'aire, en u.a, de la partie limitée par les courbes de f(x) = x² et de g(x) = 6 − x ? (figure non à l'échelle)\n<svg viewBox=\"0 0 340 230\">\n<title>Les courbes d'équations y = x² et y = 6 − x se coupent en deux points ; la partie qu'elles limitent est colorée</title>\n<polygon points=\"55.82,29.5 59.55,30.96 63.28,32.42 67.01,33.88 70.75,35.33 74.48,36.79 78.21,38.25 81.94,39.71 85.67,41.17 89.4,42.62 93.13,44.08 96.87,45.54 100.6,47 104.33,48.46 108.06,49.92 111.79,51.38 115.52,52.83 119.25,54.29 122.99,55.75 126.72,57.21 130.45,58.67 134.18,60.12 137.91,61.58 141.64,63.04 145.37,64.5 149.1,65.96 152.84,67.42 156.57,68.88 160.3,70.33 164.03,71.79 167.76,73.25 171.49,74.71 175.22,76.17 178.96,77.62 182.69,79.08 186.42,80.54 190.15,82 193.88,83.46 197.61,84.92 201.34,86.38 205.07,87.83 208.81,89.29 212.54,90.75 216.27,92.21 220,93.67 223.73,95.12 227.46,96.58 231.19,98.04 234.93,99.5 238.66,100.96 242.39,102.42 246.12,103.88 249.85,105.33 253.58,106.79 257.31,108.25 261.04,109.71 264.78,111.17 268.51,112.62 272.24,114.08 275.97,115.54 279.7,117 279.7,117 275.97,122.71 272.24,128.18 268.51,133.41 264.78,138.39 261.04,143.13 257.31,147.62 253.58,151.88 249.85,155.89 246.12,159.66 242.39,163.18 238.66,166.46 234.93,169.5 231.19,172.3 227.46,174.85 223.73,177.16 220,179.22 216.27,181.05 212.54,182.62 208.81,183.96 205.07,185.06 201.34,185.91 197.61,186.51 193.88,186.88 190.15,187 186.42,186.88 182.69,186.51 178.96,185.91 175.22,185.06 171.49,183.96 167.76,182.62 164.03,181.05 160.3,179.22 156.57,177.16 152.84,174.85 149.1,172.3 145.37,169.5 141.64,166.46 137.91,163.18 134.18,159.66 130.45,155.89 126.72,151.88 122.99,147.62 119.25,143.13 115.52,138.39 111.79,133.41 108.06,128.18 104.33,122.71 100.6,117 96.87,111.05 93.13,104.85 89.4,98.41 85.67,91.72 81.94,84.8 78.21,77.62 74.48,70.21 70.75,62.56 67.01,54.66 63.28,46.51 59.55,38.13 55.82,29.5\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\" stroke-width=\"0\"/>\n<line x1=\"28.96\" y1=\"187\" x2=\"315.52\" y2=\"187\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"190.15\" y1=\"204.5\" x2=\"190.15\" y2=\"15.5\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"315.52,187 307.52,191 307.52,183\" fill=\"#0f172a\"/>\n<polygon points=\"190.15,15.5 194.15,23.5 186.15,23.5\" fill=\"#0f172a\"/>\n<line x1=\"145.37\" y1=\"184\" x2=\"145.37\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"234.93\" y1=\"184\" x2=\"234.93\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"187.15\" y1=\"169.5\" x2=\"193.15\" y2=\"169.5\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<polyline points=\"49.1,13.36 53.32,23.58 57.54,33.5 61.75,43.11 65.97,52.4 70.19,61.39 74.4,70.06 78.62,78.43 82.84,86.48 87.05,94.22 91.27,101.66 95.49,108.78 99.7,115.59 103.92,122.1 108.13,128.29 112.35,134.17 116.57,139.74 120.78,145 125,149.95 129.22,154.59 133.43,158.92 137.65,162.94 141.87,166.65 146.08,170.05 150.3,173.14 154.51,175.92 158.73,178.38 162.95,180.54 167.16,182.39 171.38,183.93 175.6,185.15 179.81,186.07 184.03,186.67 188.25,186.97 192.46,186.95 196.68,186.63 200.9,185.99 205.11,185.05 209.33,183.79 213.54,182.22 217.76,180.35 221.98,178.16 226.19,175.66 230.41,172.85 234.63,169.73 238.84,166.3 243.06,162.56 247.28,158.51 251.49,154.15 255.71,149.48 259.93,144.5 264.14,139.21 268.36,133.61 272.57,127.7 276.79,121.48 281.01,114.94 285.22,108.1 289.44,100.95 293.66,93.48 297.87,85.71 302.09,77.62\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.8\"/>\n<polyline points=\"33.43,20.75 61.64,31.77 89.85,42.8 118.06,53.82 146.27,64.85 174.48,75.88 202.69,86.9 230.9,97.92 259.1,108.95 287.31,119.97 315.52,131\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.8\"/>\n<circle cx=\"55.82\" cy=\"29.5\" r=\"3.8\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/>\n<circle cx=\"279.7\" cy=\"117\" r=\"3.8\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"311.52\" y=\"205\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\">x</text><text x=\"200.15\" y=\"23.5\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"12\">y</text><text x=\"296\" y=\"60\" text-anchor=\"end\" fill=\"#2563eb\" font-size=\"13\">y = x²</text><text x=\"90.69\" y=\"29.5\" text-anchor=\"start\" fill=\"#d97706\" font-size=\"12\">y = 6 − x</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "22/3"
+        },
+        {
+          "id": "b",
+          "text": "40/3"
+        },
+        {
+          "id": "c",
+          "text": "125/6"
+        },
+        {
+          "id": "d",
+          "text": "35"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les courbes se coupent là où x² = 6 − x, soit x² + x − 6 = 0, donc x = −3 et x = 2. Entre ces valeurs, g ≥ f : l'aire est ∫₋₃² (6 − x − x²)dx = [6x − x²/2 − x³/3]₋₃² = 22/3 + 27/2 = 125/6 ✓. La valeur 22/3 intègre de 0 à 2 seulement. La valeur 40/3 prend x pour primitive de x. La valeur 35 prend x²/2 pour primitive de x².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On fait tourner autour de l'axe des abscisses l'arc de la courbe y = e^{−x} pour 0 ≤ x ≤ 1, dans un repère orthonormé. Quel est le volume engendré ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π(1 − e⁻²)/2"
+        },
+        {
+          "id": "b",
+          "text": "π(e² − 1)/2"
+        },
+        {
+          "id": "c",
+          "text": "π(1 − e⁻¹)"
+        },
+        {
+          "id": "d",
+          "text": "π(1 − e⁻¹)²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le volume est V = π∫₀¹ (e^{−x})² dx = π∫₀¹ e^{−2x} dx = π[−e^{−2x}/2]₀¹ = π(1 − e⁻²)/2 ✓. La valeur π(e² − 1)/2 prend (e^{−x})² pour e^{2x} et perd le signe de l'exposant. La valeur π(1 − e⁻¹) oublie de mettre la fonction au carré. La valeur π(1 − e⁻¹)² élève l'intégrale au carré au lieu d'intégrer le carré.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = 1/x² sur [1 ; 2]. Quel réel c de [1 ; 2] vérifie f(c) = (1/(2 − 1))∫₁² f(x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√(8/5)"
+        },
+        {
+          "id": "b",
+          "text": "√2"
+        },
+        {
+          "id": "c",
+          "text": "3/2"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a ∫₁² dx/x² = [−1/x]₁² = 1/2, donc la valeur moyenne est μ = 1/2. L'équation 1/c² = 1/2 donne c² = 2, donc c = √2 ≈ 1,41, qui appartient à [1 ; 2] ✓. La valeur √(8/5) ≈ 1,26 prend pour μ la moyenne des valeurs aux bornes, (1 + 1/4)/2 = 5/8. La valeur 2 résout 1/c = 1/2, en oubliant le carré. La valeur 3/2 est le milieu de [1 ; 2], qui n'a aucune raison de convenir.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Que vaut ∫_{−π/2}^{π/2} (x sin x + x cos x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "π"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur [−π/2 ; π/2], x sin x est paire et x cos x est impaire : l'intégrale vaut 2∫₀^{π/2} x sin x dx. Par parties, ∫₀^{π/2} x sin x dx = [−x cos x]₀^{π/2} + ∫₀^{π/2} cos x dx = 0 + 1 = 1, donc le résultat est 2 ✓. La valeur 0 traite tout comme impair. La valeur 1 oublie le facteur 2 de la parité. La valeur π double aussi x cos x, qui est impaire.",
+      "difficulty": 3
+    }
+  ]
+}

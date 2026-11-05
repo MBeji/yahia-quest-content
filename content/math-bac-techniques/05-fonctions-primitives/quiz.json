@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Fonctions primitives",
+  "questions": [
+    {
+      "prompt": "Soit f(x) = 3x² − 2 sur ℝ. Laquelle de ces fonctions est une primitive de f sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6x"
+        },
+        {
+          "id": "b",
+          "text": "x³ − 2"
+        },
+        {
+          "id": "c",
+          "text": "x³ − 2x + 1"
+        },
+        {
+          "id": "d",
+          "text": "x³/3 − 2x + 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une primitive se vérifie en dérivant la candidate : (x³ − 2x + 1)′ = 3x² − 2 = f(x) ✓. La fonction 6x est la dérivée de f, pas une primitive : le sens est inversé. La fonction x³ − 2 primitive le terme 3x² mais pas le terme −2, dont la primitive est −2x. La fonction x³/3 − 2x + 1 a pour dérivée x² − 2 : elle divise par 3 un terme qui ne le demandait pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La fonction f(x) = 1/(x − 2) est continue en tout point où elle est définie. Sur lequel de ces ensembles le théorème d'existence garantit-il que f admet des primitives ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℝ \\ {2}"
+        },
+        {
+          "id": "b",
+          "text": "[0 ; 3]"
+        },
+        {
+          "id": "c",
+          "text": "[1 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]2 ; +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le théorème s'applique à une fonction continue sur un intervalle : f est continue sur l'intervalle ]2 ; +∞[, donc elle y admet des primitives ✓. L'ensemble ℝ \\ {2} n'est pas un intervalle (il est en deux morceaux). Les intervalles [0 ; 3] et [1 ; +∞[ contiennent 2, où f n'est pas définie, donc f n'y est pas continue.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On sait que x ↦ x² est une primitive de x ↦ 2x sur ℝ. Quelle autre fonction est aussi une primitive de x ↦ 2x sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² + 7"
+        },
+        {
+          "id": "b",
+          "text": "7x²"
+        },
+        {
+          "id": "c",
+          "text": "x² + 7x"
+        },
+        {
+          "id": "d",
+          "text": "2x + 7"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les primitives de f sont les F + c : (x² + 7)′ = 2x = f(x) ✓, avec c = 7. La fonction 7x² a pour dérivée 14x : on multiplie F au lieu de lui ajouter une constante. La fonction x² + 7x a pour dérivée 2x + 7, car 7x n'est pas une constante. La fonction 2x + 7 a pour dérivée 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Combien de primitives F de f(x) = 2x sur ℝ vérifient F(1) = 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune"
+        },
+        {
+          "id": "b",
+          "text": "Exactement une"
+        },
+        {
+          "id": "c",
+          "text": "Exactement deux"
+        },
+        {
+          "id": "d",
+          "text": "Une infinité"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les primitives de f sont les x² + c. La condition F(1) = 3 donne 1 + c = 3, donc c = 2 : une seule primitive convient, x² + 2 ✓. Une infinité est le nombre de primitives sans condition. Aucune et deux ne correspondent à aucun calcul : l'équation 1 + c = 3 a une seule solution.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = cos(2x) sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "−(1/2) sin(2x)"
+        },
+        {
+          "id": "b",
+          "text": "sin(2x)"
+        },
+        {
+          "id": "c",
+          "text": "(1/2) sin(2x)"
+        },
+        {
+          "id": "d",
+          "text": "2 sin(2x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a (sin 2x)′ = 2cos(2x), donc il faut diviser par 2 : F(x) = (1/2) sin(2x), dont la dérivée est cos(2x) ✓. La fonction sin(2x) oublie de diviser par le coefficient de x. La fonction 2 sin(2x) multiplie par 2 au lieu de diviser. La fonction −(1/2) sin(2x) a le bon coefficient mais le mauvais signe : c'est la règle de sin qui donne −cos.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = 3x²(x³ − 2)⁴ sur ℝ. Une primitive de f sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x³ − 2)⁵"
+        },
+        {
+          "id": "b",
+          "text": "(x³ − 2)⁵/5"
+        },
+        {
+          "id": "c",
+          "text": "(x³ − 2)⁵/15"
+        },
+        {
+          "id": "d",
+          "text": "x³(x³ − 2)⁵/5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec u(x) = x³ − 2, on a u′(x) = 3x² et f = u′u⁴, de primitive u⁵/5 = (x³ − 2)⁵/5 ✓. La fonction (x³ − 2)⁵ oublie la division par le nouvel exposant 5. La fonction (x³ − 2)⁵/15 divise encore par 3, alors que le facteur 3x² est déjà exactement u′. La fonction x³(x³ − 2)⁵/5 multiplie la primitive de 3x², qui est x³, par celle de (x³ − 2)⁴ : on ne primitive pas un produit facteur par facteur.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des constantes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Une primitive de f(x) = 6/√x + 8/x² − 5 sur ]0 ; +∞[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "12√x + 8/x − 5x"
+        },
+        {
+          "id": "b",
+          "text": "12√x − 8/x − 5x"
+        },
+        {
+          "id": "c",
+          "text": "6√x − 8/x − 5x"
+        },
+        {
+          "id": "d",
+          "text": "12√x − 8/x − 5x²/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On primitive terme à terme : 6/√x donne 6 × 2√x = 12√x ; 8/x² donne 8 × (−1/x) = −8/x ; la constante −5 donne −5x. D'où F(x) = 12√x − 8/x − 5x ✓ (dérivée : 6/√x + 8/x² − 5). Le signe + devant 8/x oublie que la primitive de 1/x² est −1/x. L'expression 6√x oublie le facteur 2 de la primitive de 1/√x. L'expression −5x²/2 traite la constante −5 comme si c'était x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = x²/√(x³ + 8) sur ]−2 ; +∞[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√(x³ + 8)"
+        },
+        {
+          "id": "b",
+          "text": "(1/3)√(x³ + 8)"
+        },
+        {
+          "id": "c",
+          "text": "(1/6)√(x³ + 8)"
+        },
+        {
+          "id": "d",
+          "text": "(2/3)√(x³ + 8)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec u(x) = x³ + 8 > 0 sur cet intervalle, u′(x) = 3x² et f = (1/3) u′/√u. Une primitive de u′/√u est 2√u, donc F(x) = (1/3) × 2√u = (2/3)√(x³ + 8) ✓ (dérivée : (2/3) × 3x²/(2√u) = x²/√u). L'expression 2√(x³ + 8) oublie la compensation 1/3. L'expression (1/3)√(x³ + 8) oublie le facteur 2. L'expression (1/6)√(x³ + 8) reprend le 1/2 de la dérivée de √u au lieu du facteur 2 de la primitive.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = x sin(2x² + 1) sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "−(1/4) cos(2x² + 1)"
+        },
+        {
+          "id": "b",
+          "text": "−cos(2x² + 1)"
+        },
+        {
+          "id": "c",
+          "text": "−(1/2) cos(2x² + 1)"
+        },
+        {
+          "id": "d",
+          "text": "(1/4) cos(2x² + 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec u(x) = 2x² + 1, u′(x) = 4x et f = (1/4) u′ sin u. Une primitive de u′ sin u est −cos u, donc F(x) = −(1/4) cos(2x² + 1) ✓ (dérivée : −(1/4) × (−sin u) × 4x = x sin u). L'expression −cos(2x² + 1) oublie la compensation 1/4. L'expression −(1/2) cos(2x² + 1) prend u′ = 2x au lieu de 4x. L'expression (1/4) cos(2x² + 1) oublie que la primitive de sin est −cos.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (6x + 3)/(x² + x + 2)³ sur ℝ, où x² + x + 2 > 0. Une primitive de f sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/(2(x² + x + 2)²)"
+        },
+        {
+          "id": "b",
+          "text": "−1/(x² + x + 2)²"
+        },
+        {
+          "id": "c",
+          "text": "−3/(2(x² + x + 2)²)"
+        },
+        {
+          "id": "d",
+          "text": "−3/(2(x² + x + 2)⁴)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec u(x) = x² + x + 2, u′(x) = 2x + 1 et f = 3 u′/u³ = 3 u′u⁻³. Une primitive de u′u⁻³ est u⁻²/(−2) = −1/(2u²), donc F(x) = −3/(2(x² + x + 2)²) ✓. L'expression positive oublie le signe de l'exposant négatif. L'expression −1/(x² + x + 2)² divise par 3, l'exposant de départ, au lieu de 2. L'expression avec le carré du carré a pour exposant 4 : elle ajoute 1 à 3 au lieu de passer à l'exposant −2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (x² − 2x)/(x − 1)² sur ]1 ; +∞[. En posant u(x) = x² et v(x) = x − 1, quelle est la primitive F de f sur ]1 ; +∞[ vérifiant F(2) = 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x²/(x − 1) + 3"
+        },
+        {
+          "id": "b",
+          "text": "x²/(x − 1) + 7"
+        },
+        {
+          "id": "c",
+          "text": "x²/(x − 1) + 11"
+        },
+        {
+          "id": "d",
+          "text": "x²/(x − 1) − 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule u′v − v′u = 2x(x − 1) − x² = x² − 2x : f = (u′v − v′u)/v², donc F₀(x) = u/v = x²/(x − 1) est une primitive de f. On a F₀(2) = 4/1 = 4, et 4 + c = 7 donne c = 3 : F(x) = x²/(x − 1) + 3 ✓. La constante 7 est la valeur imposée sans tenir compte de F₀(2). La constante 11 additionne 7 et F₀(2). La constante −3 inverse la soustraction.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une primitive de f(x) = sin(7x) cos(3x) sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "−cos(10x)/10 − cos(4x)/4"
+        },
+        {
+          "id": "b",
+          "text": "−cos(10x)/20 − cos(4x)/8"
+        },
+        {
+          "id": "c",
+          "text": "cos(10x)/20 + cos(4x)/8"
+        },
+        {
+          "id": "d",
+          "text": "−cos(10x)/2 − cos(4x)/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec a = 7x et b = 3x, sin 10x + sin 4x = 2 sin 7x cos 3x, donc f(x) = (1/2)(sin 10x + sin 4x). Chaque terme se primitive : F(x) = (1/2)(−cos 10x/10 − cos 4x/4) = −cos(10x)/20 − cos(4x)/8 ✓. L'expression avec −cos(10x)/10 oublie le facteur 1/2 de la linéarisation. L'expression avec cos(10x)/20 positif se trompe de signe, car la primitive de sin est −cos. L'expression avec −cos(10x)/2 oublie de diviser par les coefficients 10 et 4.",
+      "difficulty": 3
+    }
+  ]
+}

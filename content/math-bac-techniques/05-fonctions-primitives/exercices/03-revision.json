@@ -1,0 +1,151 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Fonctions primitives",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "F et G sont deux primitives d'une même fonction f sur ℝ, avec F(1) − G(1) = 3. Que vaut F(4) − G(4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux primitives de f sur un intervalle diffèrent d'une constante : F − G = c pour tout x. Comme F(1) − G(1) = 3, la constante est c = 3, donc F(4) − G(4) = 3 ✓. La valeur 0 suppose F = G. La valeur 4 recopie l'abscisse. La valeur 12 multiplie la constante par 4, comme si F − G dépendait de x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une primitive de f(x) = 1 + tan²(3x) sur l'intervalle ]−π/6 ; π/6[ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "tan(3x)"
+        },
+        {
+          "id": "b",
+          "text": "3 tan(3x)"
+        },
+        {
+          "id": "c",
+          "text": "x + (1/9) tan³(3x)"
+        },
+        {
+          "id": "d",
+          "text": "(1/3) tan(3x)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a (tan 3x)′ = 3(1 + tan²(3x)), donc il faut diviser par 3 : F(x) = (1/3) tan(3x) ✓. La fonction tan(3x) oublie de diviser par le coefficient de x. La fonction 3 tan(3x) multiplie par 3 au lieu de diviser. La fonction x + (1/9) tan³(3x) traite tan² comme x², en appliquant la règle des puissances à une fonction non réduite à x.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces fonctions sont des primitives de f(x) = 2x sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x²"
+        },
+        {
+          "id": "b",
+          "text": "x² − 9"
+        },
+        {
+          "id": "c",
+          "text": "(x − 3)² + 6x"
+        },
+        {
+          "id": "d",
+          "text": "(x + 3)²"
+        },
+        {
+          "id": "e",
+          "text": "x² + 2x"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Les primitives de f sont les x² + c. La fonction x² convient (c = 0) et x² − 9 aussi (c = −9) ✓. Après développement, (x − 3)² + 6x = x² − 6x + 9 + 6x = x² + 9 : c'est x² + c avec c = 9 ✓. La fonction (x + 3)² = x² + 6x + 9 a pour dérivée 2x + 6, car 6x n'est pas une constante. La fonction x² + 2x a pour dérivée 2x + 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "F est une primitive de f sur ℝ. La courbe C de F est tracée ci-dessous. Quelle affirmation sur f est exacte ?\n<svg viewBox=\"0 0 340 226\">\n<title>Courbe C de la fonction F : une parabole qui coupe l'axe des abscisses en 1 et 3 et passe par le point (2 ; −1)</title>\n<line x1=\"20\" y1=\"170\" x2=\"322\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"322,170 314,174 314,166\" fill=\"#0f172a\"/>\n<line x1=\"100\" y1=\"214\" x2=\"100\" y2=\"8\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"100,8 104,16 96,16\" fill=\"#0f172a\"/>\n<line x1=\"66\" y1=\"167\" x2=\"66\" y2=\"173\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"134\" y1=\"167\" x2=\"134\" y2=\"173\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"168\" y1=\"167\" x2=\"168\" y2=\"173\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"202\" y1=\"167\" x2=\"202\" y2=\"173\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"236\" y1=\"167\" x2=\"236\" y2=\"173\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"270\" y1=\"167\" x2=\"270\" y2=\"173\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"97\" y1=\"204\" x2=\"103\" y2=\"204\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"97\" y1=\"136\" x2=\"103\" y2=\"136\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"97\" y1=\"102\" x2=\"103\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"97\" y1=\"68\" x2=\"103\" y2=\"68\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"97\" y1=\"34\" x2=\"103\" y2=\"34\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<polyline points=\"59.2,-144.16 61.58,-129.09 63.96,-114.36 66.34,-99.96 68.72,-85.9 71.1,-72.16 73.48,-58.77 75.86,-45.7 78.24,-32.97 80.62,-20.57 83,-8.5 85.38,3.23 87.76,14.63 90.14,25.7 92.52,36.43 94.9,46.84 97.28,56.9 99.66,66.64 102.04,76.04 104.42,85.11 106.8,93.84 109.18,102.24 111.56,110.31 113.94,118.04 116.32,125.45 118.7,132.52 121.08,139.25 123.46,145.65 125.84,151.72 128.22,157.46 130.6,162.86 132.98,167.93 135.36,172.67 137.74,177.07 140.12,181.14 142.5,184.88 144.88,188.28 147.26,191.35 149.64,194.09 152.02,196.49 154.4,198.56 156.78,200.3 159.16,201.7 161.54,202.77 163.92,203.51 166.3,203.92 168.68,203.99 171.06,203.72 173.44,203.13 175.82,202.2 178.2,200.94 180.58,199.35 182.96,197.42 185.34,195.16 187.72,192.56 190.1,189.64 192.48,186.37 194.86,182.78 197.24,178.85 199.62,174.59 202,170 204.38,165.07 206.76,159.81 209.14,154.22 211.52,148.29 213.9,142.03 216.28,135.44 218.66,128.52 221.04,121.26 223.42,113.67 225.8,105.74 228.18,97.48 230.56,88.89 232.94,79.96 235.32,70.71 237.7,61.11 240.08,51.19 242.46,40.93 244.84,30.34 247.22,19.42 249.6,8.16 251.98,-3.43 254.36,-15.35 256.74,-27.61 259.12,-40.2 261.5,-53.12 263.88,-66.38 266.26,-79.97 268.64,-93.89 271.02,-108.15\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n<circle cx=\"134\" cy=\"170\" r=\"3.8\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/>\n<circle cx=\"202\" cy=\"170\" r=\"3.8\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/>\n<circle cx=\"168\" cy=\"204\" r=\"3.8\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/>\n<circle cx=\"100\" cy=\"68\" r=\"3.8\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"66\" y=\"185\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">−1</text><text x=\"134\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">1</text><text x=\"168\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">2</text><text x=\"206\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">3</text><text x=\"236\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">4</text><text x=\"270\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">5</text><text x=\"93\" y=\"140\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">1</text><text x=\"93\" y=\"106\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">2</text><text x=\"93\" y=\"72\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">3</text><text x=\"93\" y=\"38\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">4</text><text x=\"93\" y=\"208\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">−1</text><text x=\"273.4\" y=\"185\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\">x</text><text x=\"108\" y=\"18\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"12\">y</text><text x=\"239.4\" y=\"32.06\" text-anchor=\"start\" fill=\"#2563eb\" font-size=\"13\">C</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est négative sur ]−∞ ; 2] et positive sur [2 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "f est positive sur ]−∞ ; 2] et négative sur [2 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f est négative sur ]1 ; 3[ et positive sur le reste de ℝ"
+        },
+        {
+          "id": "d",
+          "text": "f s'annule en x = 1 et en x = 3, où C coupe l'axe"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a F′ = f, donc le signe de f est le sens de variation de F. La courbe décroît jusqu'à son sommet d'abscisse 2 puis croît : f est négative sur ]−∞ ; 2] et positive sur [2 ; +∞[ ✓, et f(2) = 0 au sommet. L'affirmation inverse lit la décroissance comme une positivité. L'affirmation sur ]1 ; 3[ lit le signe de F, négatif entre 1 et 3, au lieu de son sens de variation. L'affirmation sur x = 1 et x = 3 prend les zéros de F pour ceux de f.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un chariot a pour vitesse v(t) = 3t² − 2t (en m/s) et se trouve à la position 2 m à l'instant t = 0. Quelle est sa position, en m, à l'instant t = 2 s ?",
+      "answerKey": {
+        "value": 6,
+        "unit": "m"
+      },
+      "explanation": "La position x est une primitive de v : x(t) = t³ − t² + c. La condition x(0) = 2 donne c = 2, donc x(t) = t³ − t² + 2 (dérivée : 3t² − 2t ✓). Alors x(2) = 8 − 4 + 2 = 6 m. Si l'on oublie la constante, on trouve 4 m, ce qui revient à partir de l'origine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = −2/x³ sur ℝ*, F(x) = 1/x² et G définie par G(x) = 1/x² − 4 si x > 0 et G(x) = 1/x² + 1 si x < 0. G est dérivable en tout x non nul, avec G′ = F′ = f. Que vaut G(x) − F(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4 si x > 0 et 1 si x < 0"
+        },
+        {
+          "id": "b",
+          "text": "−4 pour tout x non nul de ℝ*"
+        },
+        {
+          "id": "c",
+          "text": "1 pour tout x non nul de ℝ*"
+        },
+        {
+          "id": "d",
+          "text": "−4 si x < 0 et 1 si x > 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur ]0 ; +∞[, G − F = −4 ; sur ]−∞ ; 0[, G − F = 1 ✓. Bien que G′ = F′ en tout x non nul, G − F n'est pas constante : le théorème « deux primitives diffèrent d'une constante » exige un intervalle, et ℝ* n'en est pas un. « −4 pour tout x » et « 1 pour tout x » appliquent ce théorème hors d'un intervalle. L'échange des deux valeurs se trompe de morceau.",
+      "difficulty": 2
+    }
+  ]
+}

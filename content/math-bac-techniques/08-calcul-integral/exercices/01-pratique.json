@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Les premières intégrales",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Que vaut ∫₀² (3x² − 2)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4/3"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une primitive de 3x² − 2 est x³ − 2x, donc l'intégrale vaut [x³ − 2x]₀² = 8 − 4 = 4 ✓. La valeur 8 oublie la primitive −2x de la constante −2. La valeur 12 évalue f(2) − f(0) = 10 − (−2), c'est-à-dire f au lieu d'une primitive. La valeur −4/3 prend x³/3 pour primitive de 3x².",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut ∫₅² 4 dt ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−12"
+        },
+        {
+          "id": "b",
+          "text": "−3"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour une constante k, ∫ₐᵇ k dt = k(b − a) : ici 4 × (2 − 5) = −12 ✓, car les bornes sont dans le sens décroissant. La valeur 12 oublie le sens des bornes. La valeur −3 est 2 − 5 : elle oublie le facteur 4. La valeur 20 est 4 × 5 et n'utilise qu'une seule borne.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "f est continue sur ℝ avec ∫₀⁴ f(x)dx = 7 et ∫₀¹ f(x)dx = 2. Que vaut ∫₁⁴ f(x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "14"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par Chasles, ∫₀⁴ f = ∫₀¹ f + ∫₁⁴ f, donc ∫₁⁴ f = 7 − 2 = 5 ✓. La valeur 9 additionne les deux données. La valeur 14 les multiplie. La valeur −5 est ∫₄¹ f, le résultat avec les bornes échangées.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "∫₀¹ f(x)dx = 3 et ∫₀¹ g(x)dx = 2. Que vaut ∫₀¹ (2f(x) − g(x))dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par linéarité, ∫₀¹ (2f − g) = 2 × 3 − 2 = 4 ✓. La valeur 1 oublie le coefficient 2 devant f. La valeur 6 oublie le terme en g. La valeur 8 additionne g au lieu de le soustraire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut ∫₋₂² (x⁴ − 3x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "4/5"
+        },
+        {
+          "id": "c",
+          "text": "32/5"
+        },
+        {
+          "id": "d",
+          "text": "64/5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sur [−2 ; 2], x⁴ est paire et −3x est impaire : ∫₋₂² (x⁴ − 3x)dx = 2∫₀² x⁴ dx + 0 = 2 × 32/5 = 64/5 ✓. La valeur 0 traite toute la fonction comme impaire. La valeur 32/5 oublie le facteur 2 de la parité. La valeur 4/5 double aussi le terme −3x, qui est pourtant impair : 2(32/5 − 6).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut ∫₀^{π/3} sin(3x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2/3"
+        },
+        {
+          "id": "b",
+          "text": "2/3"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une primitive de sin(3x) est −cos(3x)/3 : [−cos(3x)/3]₀^{π/3} = 1/3 + 1/3 = 2/3 ✓. La valeur 2 oublie de diviser par 3. La valeur 6 multiplie par 3 au lieu de diviser. La valeur −2/3 prend cos(3x)/3, de signe opposé, pour primitive.",
+      "difficulty": 2
+    }
+  ]
+}

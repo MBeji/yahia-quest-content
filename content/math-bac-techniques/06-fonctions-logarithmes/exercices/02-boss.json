@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du produit",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Résoudre dans ℝ l'inéquation ln(x + 1) + ln(x − 2) ≤ ln 4.",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−2 ; 3]"
+        },
+        {
+          "id": "b",
+          "text": "]−1 ; 3]"
+        },
+        {
+          "id": "c",
+          "text": "]2 ; 3]"
+        },
+        {
+          "id": "d",
+          "text": "[3 ; +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Domaine : x + 1 > 0 et x − 2 > 0, donc x > 2. Sur ce domaine, ln(x + 1) + ln(x − 2) = ln[(x + 1)(x − 2)] et, ln étant croissante, l'inéquation devient (x + 1)(x − 2) ≤ 4, soit x² − x − 6 = (x − 3)(x + 2) ≤ 0, donc −2 ≤ x ≤ 3. En intersectant avec x > 2 : S = ]2 ; 3] ✓. Contrôle en x = 3 : ln 4 + ln 1 = ln 4. L'intervalle [−2 ; 3] oublie tout le domaine ; ]−1 ; 3] ne retient que la condition x + 1 > 0 ; [3 ; +∞[ résout x² − x − 6 ≥ 0, le sens inverse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une machine perd 8 % de sa valeur chaque année : sa valeur est multipliée par 0,92 chaque année. Au bout de combien d'années pleines, au minimum, sa valeur est-elle inférieure ou égale à la moitié de sa valeur initiale ? On donne ln 2 ≈ 0,693 et ln 0,92 ≈ −0,0834.",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Après n années la valeur est multipliée par 0,92ⁿ et on veut 0,92ⁿ ≤ 1/2. Comme ln est croissante : n ln 0,92 ≤ ln(1/2) = −ln 2. Puisque ln 0,92 < 0, on divise en changeant le sens : n ≥ ln 2 / (−ln 0,92) ≈ 0,693 / 0,0834 ≈ 8,31, donc le plus petit entier est 9 ✓. Contrôle : 0,92⁸ ≈ 0,513 > 0,5 et 0,92⁹ ≈ 0,472 ≤ 0,5. Les réponses 6 et 7 viennent du calcul linéaire 50/8 = 6,25 (une perte de 8 points par an) ; 8 garde la partie entière de 8,31 ou oublie de changer le sens.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer lim x→+∞ x ln(1 + 2/x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose t = 2/x, qui tend vers 0⁺ quand x tend vers +∞ : x ln(1 + 2/x) = (2/t) ln(1 + t) = 2 × ln(1 + t)/t, qui tend vers 2 × 1 = 2 ✓. La réponse 0 remplace ln(1 + 2/x) par ln 1 = 0 sans voir que x tend vers +∞ ; 1 oublie le facteur 2 (c'est le cas de x ln(1 + 1/x)) ; +∞ ne retient que le facteur x.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la valeur minimale sur ]0 ; +∞[ de la fonction x ↦ x ln x − x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "−2/e"
+        },
+        {
+          "id": "c",
+          "text": "−1/e"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f′(x) = (ln x + x × 1/x) − 1 = ln x : f décroît sur ]0 ; 1] et croît sur [1 ; +∞[. Le minimum est f(1) = 1 × 0 − 1 = −1 ✓. La valeur −1/e est le minimum de x ln x, atteint en 1/e, pas celui de f ; −2/e est f(1/e) = −1/e − 1/e, une valeur que f dépasse en 1 ; 0 est f(e) = e − e, atteinte plus loin sur la partie croissante.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fonction f : x ↦ ln x / x, définie sur [e ; +∞[, prend toutes ses valeurs dans un intervalle I, et seulement elles. Quel est I ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[0 ; 1/e]"
+        },
+        {
+          "id": "b",
+          "text": "]0 ; 1/e]"
+        },
+        {
+          "id": "c",
+          "text": "[1/e ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]−∞ ; 1/e]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a f′(x) = (1 − ln x)/x² ≤ 0 sur [e ; +∞[, nulle seulement en e : f est continue et strictement décroissante. En e, f(e) = 1/e est atteinte ; en +∞, f tend vers 0 par valeurs positives (ln x/x → 0 et ln x > 0), sans jamais valoir 0. L'image est donc ]0 ; 1/e] ✓. L'intervalle [0 ; 1/e] ferme le crochet en 0, valeur jamais atteinte ; [1/e ; +∞[ lit f comme croissante ; ]−∞ ; 1/e] suppose une décroissance sans limite finie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Laquelle de ces affirmations est FAUSSE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour tout x > 0, ln x ≤ x − 1."
+        },
+        {
+          "id": "b",
+          "text": "Pour tout réel m, l'équation ln x = m a une solution unique dans ]0 ; +∞[."
+        },
+        {
+          "id": "c",
+          "text": "En 0⁺, la limite de ln x / x est −∞."
+        },
+        {
+          "id": "d",
+          "text": "Pour tous réels a et b non nuls, ln(ab) = ln a + ln b."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'affirmation fausse est celle sur ln(ab) = ln a + ln b pour tous a et b non nuls : la règle exige a > 0 et b > 0 ; pour a = b = −1, ln(ab) = ln 1 = 0 mais ln(−1) n'existe pas. Les trois autres énoncent des résultats du cours : la courbe de ln est au-dessous de sa tangente y = x − 1 ; ln est une bijection de ]0 ; +∞[ sur ℝ ; en 0⁺, ln x tend vers −∞ et 1/x vers +∞, donc ln x / x tend vers −∞.",
+      "difficulty": 3
+    }
+  ]
+}

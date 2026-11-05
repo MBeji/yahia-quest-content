@@ -1,0 +1,136 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : La conquête de l'intégrale",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations, lesquelles sont vraies pour des fonctions continues, a < b et r > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si f ≥ 0 sur [a ; b], alors ∫ₐᵇ f ≥ 0"
+        },
+        {
+          "id": "b",
+          "text": "Si ∫ₐᵇ f ≥ 0, alors f ≥ 0 sur [a ; b]"
+        },
+        {
+          "id": "c",
+          "text": "Si f ≤ g sur [a ; b], alors ∫ₐᵇ f ≤ ∫ₐᵇ g"
+        },
+        {
+          "id": "d",
+          "text": "Si f est impaire sur [−r ; r], alors ∫₋ᵣʳ f = 0"
+        },
+        {
+          "id": "e",
+          "text": "Si ∫₋ᵣʳ f = 0, alors f est impaire sur [−r ; r]"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Sont vraies la positivité ✓, la comparaison ✓ et l'annulation pour une fonction impaire sur un intervalle symétrique ✓. Est fausse la réciproque de la positivité : f(x) = x − 1 sur [0 ; 3] a pour intégrale 3/2 ≥ 0 et prend pourtant des valeurs négatives. Est fausse aussi la réciproque de l'imparité : f(x) = 3x² − 1 sur [−1 ; 1] a pour intégrale [x³ − x]₋₁¹ = 0 sans être impaire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève cherche c dans [0 ; 2] tel que f(c) soit la valeur moyenne de f(x) = 3x² sur [0 ; 2].\n(1) ∫₀² 3x² dx = 8, donc μ = 8/2 = 4.\n(2) On résout f(c) = μ, soit 3c² = 4.\n(3) Donc c = 2√3/3 ou c = −2√3/3 : il y a deux valeurs de c.\nOù est l'erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape (1) : il ne faut pas diviser par 2"
+        },
+        {
+          "id": "b",
+          "text": "L'étape (2) : f(c) = μ n'a pas de solution"
+        },
+        {
+          "id": "c",
+          "text": "L'étape (3) : −2√3/3 n'appartient pas à [0 ; 2]"
+        },
+        {
+          "id": "d",
+          "text": "L'étape (2) : il faut résoudre f(c) = 8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'étape (1) est exacte : [x³]₀² = 8 et μ = 8/2 = 4. L'équation 3c² = 4 a deux solutions réelles, ±2√3/3 ≈ ±1,15. Le théorème cherche c dans [0 ; 2], donc seul c = 2√3/3 convient ✓. Résoudre f(c) = 8 oublierait la division par b − a.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x² − 3x sur [0 ; 4] et C sa courbe. Quelle est l'aire, en u.a, de la partie limitée par C, l'axe des abscisses et les droites x = 0 et x = 4 ?\n<svg viewBox=\"0 0 340 230\">\n<title>La courbe C de f(x) = x² − 3x pour x de 0 à 4 : elle passe sous l'axe des abscisses entre 0 et 3, puis au-dessus entre 3 et 4</title>\n<polygon points=\"68.3,132 71.04,132 73.77,132 76.51,132 79.25,132 81.98,132 84.72,132 87.45,132 90.19,132 92.92,132 95.66,132 98.4,132 101.13,132 103.87,132 106.6,132 109.34,132 112.08,132 114.81,132 117.55,132 120.28,132 123.02,132 125.75,132 128.49,132 131.23,132 133.96,132 136.7,132 139.43,132 142.17,132 144.91,132 147.64,132 150.38,132 153.11,132 155.85,132 158.58,132 161.32,132 164.06,132 166.79,132 169.53,132 172.26,132 175,132 177.74,132 180.47,132 183.21,132 185.94,132 188.68,132 191.42,132 194.15,132 196.89,132 199.62,132 202.36,132 205.09,132 207.83,132 210.57,132 213.3,132 216.04,132 218.77,132 221.51,132 224.25,132 226.98,132 229.72,132 232.45,132 232.45,132 229.72,135.54 226.98,138.96 224.25,142.26 221.51,145.44 218.77,148.5 216.04,151.44 213.3,154.26 210.57,156.96 207.83,159.54 205.09,162 202.36,164.34 199.62,166.56 196.89,168.66 194.15,170.64 191.42,172.5 188.68,174.24 185.94,175.86 183.21,177.36 180.47,178.74 177.74,180 175,181.14 172.26,182.16 169.53,183.06 166.79,183.84 164.06,184.5 161.32,185.04 158.58,185.46 155.85,185.76 153.11,185.94 150.38,186 147.64,185.94 144.91,185.76 142.17,185.46 139.43,185.04 136.7,184.5 133.96,183.84 131.23,183.06 128.49,182.16 125.75,181.14 123.02,180 120.28,178.74 117.55,177.36 114.81,175.86 112.08,174.24 109.34,172.5 106.6,170.64 103.87,168.66 101.13,166.56 98.4,164.34 95.66,162 92.92,159.54 90.19,156.96 87.45,154.26 84.72,151.44 81.98,148.5 79.25,145.44 76.51,142.26 73.77,138.96 71.04,135.54 68.3,132\" fill=\"#d97706\" fill-opacity=\"0.22\" stroke=\"none\" stroke-width=\"0\"/>\n<polygon points=\"232.45,132 233.36,130.79 234.28,129.57 235.19,128.34 236.1,127.09 237.01,125.83 237.92,124.56 238.84,123.27 239.75,121.97 240.66,120.66 241.57,119.33 242.48,117.99 243.4,116.64 244.31,115.27 245.22,113.89 246.13,112.5 247.04,111.09 247.96,109.67 248.87,108.24 249.78,106.79 250.69,105.33 251.6,103.86 252.52,102.37 253.43,100.87 254.34,99.36 255.25,97.83 256.16,96.29 257.08,94.74 257.99,93.17 258.9,91.59 259.81,90 260.72,88.39 261.64,86.77 262.55,85.14 263.46,83.49 264.37,81.83 265.28,80.16 266.19,78.47 267.11,76.77 268.02,75.06 268.93,73.33 269.84,71.59 270.75,69.84 271.67,68.07 272.58,66.29 273.49,64.5 274.4,62.69 275.31,60.87 276.23,59.04 277.14,57.19 278.05,55.33 278.96,53.46 279.87,51.57 280.79,49.67 281.7,47.76 282.61,45.83 283.52,43.89 284.43,41.94 285.35,39.97 286.26,37.99 287.17,36 287.17,132 286.26,132 285.35,132 284.43,132 283.52,132 282.61,132 281.7,132 280.79,132 279.87,132 278.96,132 278.05,132 277.14,132 276.23,132 275.31,132 274.4,132 273.49,132 272.58,132 271.67,132 270.75,132 269.84,132 268.93,132 268.02,132 267.11,132 266.19,132 265.28,132 264.37,132 263.46,132 262.55,132 261.64,132 260.72,132 259.81,132 258.9,132 257.99,132 257.08,132 256.16,132 255.25,132 254.34,132 253.43,132 252.52,132 251.6,132 250.69,132 249.78,132 248.87,132 247.96,132 247.04,132 246.13,132 245.22,132 244.31,132 243.4,132 242.48,132 241.57,132 240.66,132 239.75,132 238.84,132 237.92,132 237.01,132 236.1,132 235.19,132 234.28,132 233.36,132 232.45,132\" fill=\"#0f6e56\" fill-opacity=\"0.22\" stroke=\"none\" stroke-width=\"0\"/>\n<line x1=\"40.94\" y1=\"132\" x2=\"309.06\" y2=\"132\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"68.3\" y1=\"199.2\" x2=\"68.3\" y2=\"16.8\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"309.06,132 301.06,136 301.06,128\" fill=\"#0f172a\"/>\n<polygon points=\"68.3,16.8 72.3,24.8 64.3,24.8\" fill=\"#0f172a\"/>\n<line x1=\"123.02\" y1=\"129\" x2=\"123.02\" y2=\"135\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"177.74\" y1=\"129\" x2=\"177.74\" y2=\"135\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"232.45\" y1=\"129\" x2=\"232.45\" y2=\"135\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"287.17\" y1=\"129\" x2=\"287.17\" y2=\"135\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<polyline points=\"51.89,108.24 55.37,113.64 58.84,118.84 62.32,123.84 65.8,128.66 69.28,133.28 72.76,137.7 76.24,141.94 79.71,145.97 83.19,149.82 86.67,153.47 90.15,156.92 93.63,160.18 97.11,163.25 100.58,166.13 104.06,168.81 107.54,171.29 111.02,173.58 114.5,175.68 117.98,177.58 121.46,179.29 124.93,180.81 128.41,182.13 131.89,183.26 135.37,184.19 138.85,184.93 142.33,185.48 145.8,185.83 149.28,185.99 152.76,185.95 156.24,185.72 159.72,185.3 163.2,184.68 166.68,183.87 170.15,182.86 173.63,181.66 177.11,180.27 180.59,178.68 184.07,176.9 187.55,174.93 191.02,172.76 194.5,170.39 197.98,167.83 201.46,165.08 204.94,162.14 208.42,159 211.89,155.66 215.37,152.14 218.85,148.41 222.33,144.5 225.81,140.39 229.29,136.09 232.77,131.59 236.24,126.9 239.72,122.01 243.2,116.93 246.68,111.66 250.16,106.19 253.64,100.53 257.11,94.67 260.59,88.62 264.07,82.38 267.55,75.94 271.03,69.31 274.51,62.49 277.99,55.47 281.46,48.25 284.94,40.85 288.42,33.24 291.9,25.45 295.38,17.46\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.8\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"305.06\" y=\"150\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\">x</text><text x=\"78.3\" y=\"24.8\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"12\">y</text><text x=\"123.02\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">1</text><text x=\"177.74\" y=\"124\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">2</text><text x=\"232.45\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">3</text><text x=\"287.17\" y=\"148\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">4</text><text x=\"298.64\" y=\"23.76\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"13\">C</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "11/6"
+        },
+        {
+          "id": "b",
+          "text": "8/3"
+        },
+        {
+          "id": "c",
+          "text": "9/2"
+        },
+        {
+          "id": "d",
+          "text": "19/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La courbe est sous l'axe sur [0 ; 3] et au-dessus sur [3 ; 4]. Avec la primitive x³/3 − 3x²/2 : ∫₀³ f = −9/2 et ∫₃⁴ f = 11/6. L'aire est 9/2 + 11/6 = 38/6 = 19/3 ✓. La valeur 8/3 est |∫₀⁴ f| = |−9/2 + 11/6|, où les deux morceaux se compensent. La valeur 9/2 ne compte que la partie sous l'axe, et 11/6 que la partie au-dessus.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit a > 0. La valeur moyenne de f(x) = x² sur [0 ; a] vaut 12. Déterminer a.",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "On a ∫₀ᵃ x² dx = a³/3, donc la valeur moyenne est (1/a) × a³/3 = a²/3. L'équation a²/3 = 12 donne a² = 36, donc a = 6 car a > 0 ✓. Avec (f(0) + f(a))/2 = a²/2 = 12, on trouverait √24 ≈ 4,9, ce qui est faux : cette formule ne vaut que pour une fonction affine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "G(x) = ∫₀ˣ (t − 2)e^{−t} dt pour tout réel x. Sa dérivée G′(x) = (x − 2)e^{−x} change de signe en 2, où G a donc son minimum. Que vaut G(2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 − e⁻²"
+        },
+        {
+          "id": "b",
+          "text": "−1 + e⁻²"
+        },
+        {
+          "id": "c",
+          "text": "1 − e⁻²"
+        },
+        {
+          "id": "d",
+          "text": "1 + e⁻²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On intègre par parties avec v(t) = t − 2 et u′(t) = e^{−t}, de primitive −e^{−t} : G(2) = [−(t − 2)e^{−t}]₀² + ∫₀² e^{−t} dt = (0 − 2) + (1 − e⁻²) = −1 − e⁻² ✓. La valeur 1 + e⁻² prend e^{−t} pour primitive de e^{−t}, ce qui renverse les signes. La valeur 1 − e⁻² oublie le terme du crochet. La valeur −1 + e⁻² cumule cet oubli et un signe inversé.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le solide est engendré par la rotation autour de l'axe des abscisses de l'arc de la courbe de f(x) = √x · e^{x/2} pour 0 ≤ x ≤ 2, dans un repère orthonormé. Calculer son volume en u.v, arrondi au centième.",
+      "answerKey": {
+        "value": 26.35,
+        "tolerance": 0.01
+      },
+      "explanation": "On a (f(x))² = x eˣ, donc V = π∫₀² x eˣ dx. Par parties, avec v(x) = x et u′(x) = eˣ : ∫₀² x eˣ dx = [x eˣ]₀² − ∫₀² eˣ dx = 2e² − (e² − 1) = e² + 1. Alors V = π(e² + 1) ≈ 26,35 u.v ✓. Oublier de mettre f au carré remplacerait x eˣ par √x e^{x/2}, qui n'a pas de primitive simple.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la croissance",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "On donne f(x) = (x + 1) e^(2x) pour tout réel x. Calculer f′(x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "2e^(2x)"
+        },
+        {
+          "id": "b",
+          "text": "(x + 2) e^(2x)"
+        },
+        {
+          "id": "c",
+          "text": "(2x + 2) e^(2x)"
+        },
+        {
+          "id": "d",
+          "text": "(2x + 3) e^(2x)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Produit de x + 1, de dérivée 1, et de e^(2x), de dérivée 2e^(2x) (car u = 2x et u′ = 2) : f′(x) = 1 × e^(2x) + (x + 1) × 2e^(2x) = (2x + 3) e^(2x) ✓. Le résultat 2e^(2x) est le produit des deux dérivées ; (x + 2) e^(2x) oublie le facteur 2 de u′ ; (2x + 2) e^(2x) oublie le terme 1 × e^(2x).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Déterminer une primitive de f(x) = (x + 1) e^(x² + 2x) sur ℝ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/2) e^(x² + 2x)"
+        },
+        {
+          "id": "b",
+          "text": "2e^(x² + 2x)"
+        },
+        {
+          "id": "c",
+          "text": "e^(x² + 2x)"
+        },
+        {
+          "id": "d",
+          "text": "((x + 1)²/2) e^(x² + 2x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec u(x) = x² + 2x, on a u′(x) = 2x + 2 = 2(x + 1), donc f = (1/2) u′ e^u et une primitive est (1/2) e^(x² + 2x) ✓ (dérivée : (1/2)(2x + 2) e^(x² + 2x) = f(x)). L'expression 2e^(x² + 2x) multiplie par 2 au lieu de diviser ; e^(x² + 2x) oublie la compensation 1/2 ; ((x + 1)²/2) e^(x² + 2x) primitive x + 1 seul et garde l'exponentielle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'inéquation e^(2x) − 2eˣ − 8 > 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x < ln 4"
+        },
+        {
+          "id": "b",
+          "text": "x > ln 4"
+        },
+        {
+          "id": "c",
+          "text": "x > 4"
+        },
+        {
+          "id": "d",
+          "text": "x > −2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec X = eˣ > 0, l'inéquation devient X² − 2X − 8 = (X − 4)(X + 2) > 0. Comme X + 2 > 0, il reste X > 4, soit eˣ > 4 ⇔ x > ln 4 ✓ (contrôle : en x = 2, e⁴ − 2e² − 8 ≈ 54,60 − 14,78 − 8 = 31,82 > 0). Le choix x < ln 4 lit le trinôme entre ses racines ; x > 4 oublie de revenir de X à x ; x > −2 garde la racine X = −2 sans la passer au logarithme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Que vaut lim x→+∞ (e^(2x) − 3eˣ + x)/(e^(2x) + 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On divise numérateur et dénominateur par e^(2x) : (1 − 3e⁻ˣ + x e^(−2x))/(1 + e^(−2x)). Or e⁻ˣ → 0 et x e^(−2x) → 0 par croissance comparée, donc la limite vaut 1/1 = 1 ✓. La valeur −3 ne retient que le coefficient du terme −3eˣ ; 0 suppose que le dénominateur l'emporte ; +∞ traite ∞/∞ comme infini sans comparer les termes dominants.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Donner la valeur exacte du réel x tel que 2^(x + 1) = 3ˣ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln 2/(ln 2 − ln 3)"
+        },
+        {
+          "id": "b",
+          "text": "ln 2/ln 3"
+        },
+        {
+          "id": "c",
+          "text": "ln 3/ln 2 − 1"
+        },
+        {
+          "id": "d",
+          "text": "ln 2/(ln 3 − ln 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On passe aux logarithmes : (x + 1) ln 2 = x ln 3, donc x(ln 3 − ln 2) = ln 2 et x = ln 2/(ln 3 − ln 2) ≈ 1,71 ✓ (contrôle : 2^(2,71) ≈ 6,54 et 3^(1,71) ≈ 6,54). L'expression avec ln 2 − ln 3 est l'opposée, par une erreur de signe ; ln 2/ln 3 oublie le terme x ln 2 du membre de gauche ; ln 3/ln 2 − 1 résout 2^(x + 1) = 3, où l'exposant x de 3 a disparu.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe C ci-dessous, tracée sur [−0,8 ; 5,3], représente la fonction f définie sur ℝ par f(x) = x e^(−x). Pour quelles valeurs du réel k l'équation f(x) = k admet-elle exactement deux solutions dans ℝ ?\n<svg viewBox=\"0 0 340 232\">\n<title>Courbe C de la fonction f définie par f(x) = x e^(−x), tracée sur [−0,8 ; 5,3]</title>\n<line x1=\"8.4\" y1=\"60\" x2=\"325.6\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"325.6,60 317.6,56 317.6,64\" fill=\"#0f172a\"/>\n<line x1=\"50\" y1=\"221.5\" x2=\"50\" y2=\"7.3\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"50,7.3 46,15.3 54,15.3\" fill=\"#0f172a\"/>\n<line x1=\"102\" y1=\"57\" x2=\"102\" y2=\"63\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"154\" y1=\"57\" x2=\"154\" y2=\"63\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"206\" y1=\"57\" x2=\"206\" y2=\"63\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"258\" y1=\"57\" x2=\"258\" y2=\"63\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"310\" y1=\"57\" x2=\"310\" y2=\"63\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"47\" y1=\"145\" x2=\"53\" y2=\"145\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"47\" y1=\"43\" x2=\"53\" y2=\"43\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"47\" y1=\"26\" x2=\"53\" y2=\"26\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<polyline points=\"8.4,211.34 10.84,195.93 13.28,181.62 15.72,168.33 18.16,156.01 20.6,144.59 23.04,134.01 25.48,124.23 27.92,115.19 30.36,106.84 32.8,99.14 35.24,92.05 37.68,85.52 40.12,79.53 42.56,74.03 45,69 47.44,64.4 49.88,60.2 52.32,56.37 54.76,52.9 57.2,49.75 59.64,46.91 62.08,44.35 64.52,42.05 66.96,39.99 69.4,38.16 71.84,36.54 74.28,35.12 76.72,33.87 79.16,32.79 81.6,31.87 84.04,31.09 86.48,30.43 88.92,29.9 91.36,29.48 93.8,29.16 96.24,28.94 98.68,28.8 101.12,28.73 103.56,28.74 106,28.82 108.44,28.95 110.88,29.14 113.32,29.37 115.76,29.65 118.2,29.97 120.64,30.32 123.08,30.7 125.52,31.11 127.96,31.54 130.4,32 132.84,32.47 135.28,32.96 137.72,33.46 140.16,33.97 142.6,34.49 145.04,35.02 147.48,35.55 149.92,36.09 152.36,36.63 154.8,37.17 157.24,37.71 159.68,38.25 162.12,38.78 164.56,39.31 167,39.84 169.44,40.37 171.88,40.88 174.32,41.39 176.76,41.9 179.2,42.4 181.64,42.89 184.08,43.37 186.52,43.84 188.96,44.31 191.4,44.76 193.84,45.21 196.28,45.65 198.72,46.08 201.16,46.5 203.6,46.91 206.04,47.31 208.48,47.7 210.92,48.09 213.36,48.46 215.8,48.82 218.24,49.18 220.68,49.53 223.12,49.86 225.56,50.19 228,50.51 230.44,50.82 232.88,51.12 235.32,51.42 237.76,51.7 240.2,51.98 242.64,52.25 245.08,52.51 247.52,52.77 249.96,53.01 252.4,53.25 254.84,53.48 257.28,53.71 259.72,53.93 262.16,54.14 264.6,54.34 267.04,54.54 269.48,54.73 271.92,54.92 274.36,55.1 276.8,55.27 279.24,55.44 281.68,55.6 284.12,55.76 286.56,55.91 289,56.06 291.44,56.2 293.88,56.34 296.32,56.47 298.76,56.6 301.2,56.72 303.64,56.84 306.08,56.96 308.52,57.07 310.96,57.18 313.4,57.28 315.84,57.38 318.28,57.48 320.72,57.57 323.16,57.66 325.6,57.75\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"102\" y=\"75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">1</text><text x=\"154\" y=\"75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">2</text><text x=\"206\" y=\"75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">3</text><text x=\"258\" y=\"75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">4</text><text x=\"310\" y=\"75\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">5</text><text x=\"43\" y=\"149\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">−1</text><text x=\"43\" y=\"47\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">0,2</text><text x=\"43\" y=\"30\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">0,4</text><text x=\"321.6\" y=\"52\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\" font-style=\"italic\">x</text><text x=\"58\" y=\"17.3\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"12\" font-style=\"italic\">y</text><text x=\"16.4\" y=\"191.75\" text-anchor=\"start\" fill=\"#0f6e56\" font-size=\"13\">C</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 ≤ k < 1/e"
+        },
+        {
+          "id": "b",
+          "text": "0 ≤ k ≤ 1/e"
+        },
+        {
+          "id": "c",
+          "text": "0 < k < 1/e"
+        },
+        {
+          "id": "d",
+          "text": "k < 1/e"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a f′(x) = (1 − x) e^(−x) : f croît sur ]−∞ ; 1], décroît sur [1 ; +∞[, avec un maximum f(1) = 1/e ≈ 0,37. De plus f(x) → −∞ quand x → −∞, f(0) = 0, f(x) > 0 pour x > 0, et f(x) → 0 quand x → +∞. Pour 0 < k < 1/e, il y a une solution dans ]0 ; 1[ et une dans ]1 ; +∞[ : deux solutions ✓. Pour k = 1/e, seul x = 1 convient ; pour k = 0, seul x = 0 convient ; pour k < 0, il n'y a qu'une solution, dans ]−∞ ; 0[.",
+      "difficulty": 3
+    }
+  ]
+}
