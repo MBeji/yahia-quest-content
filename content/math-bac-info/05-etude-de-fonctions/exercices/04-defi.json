@@ -11,11 +11,11 @@
       "options": [
         {
           "id": "a",
-          "text": "−3"
+          "text": "−7"
         },
         {
           "id": "b",
-          "text": "0"
+          "text": "−3"
         },
         {
           "id": "c",
@@ -26,8 +26,8 @@
           "text": "7"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Par périodicité, f(−5) = f(−5 + 4) = f(−1). Par imparité, f(−1) = −f(1) = −3. Si l'on oublie l'imparité on trouve f(1) = 3 ; si l'on suppose f paire, f(−5) = f(5) = f(1) = 3 aussi ; 7 = 3 + 4 ajoute la période à la valeur au lieu de l'ajouter à la variable ; 0 est la valeur de f(0), mais pas de f(−5).",
+      "correctOption": "b",
+      "explanation": "Par périodicité, f(−5) = f(−5 + 4) = f(−1). Par imparité, f(−1) = −f(1) = −3. Si l'on oublie l'imparité, on trouve f(1) = 3 ; si l'on suppose f paire, f(−5) = f(5) = f(1) = 3 aussi ; 7 = 3 + 4 et −7 = −3 − 4 ajoutent la période à la valeur au lieu de l'ajouter à la variable.",
       "difficulty": 2
     },
     {
@@ -59,7 +59,7 @@
       "options": [
         {
           "id": "a",
-          "text": "y = x − 4 est asymptote en +∞ et C est au-dessus de cette droite"
+          "text": "y = −x + 4 est asymptote en +∞ et C est au-dessous de cette droite"
         },
         {
           "id": "b",
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "x² − 8x + 12 = (x − 4)² − 4 : β = −4 et γ = −4 < 0. En −∞, g(x) ressemble à |x − 4| = −(x − 4), donc l'asymptote est y = −x + 4 ; comme γ < 0, g(x) < |x − 4| et la courbe est au-dessous de cette droite (la droite y = x − 4 est celle de +∞, et la courbe y est aussi au-dessous). Les deux affirmations avec « au-dessus » se trompent sur le signe de γ.",
+      "explanation": "x² − 8x + 12 = (x − 4)² − 4 : β = −4 et γ = −4 < 0. En −∞, g(x) ressemble à |x − 4| = −(x − 4), donc l'asymptote est y = −x + 4 ; comme γ < 0, g(x) < |x − 4| et la courbe est au-dessous de cette droite. En +∞, l'asymptote est y = x − 4 (et non y = −x + 4), et en −∞ ce n'est pas y = x − 4. L'affirmation avec « au-dessus » se trompe sur le signe de γ.",
       "difficulty": 3
     },
     {
@@ -127,7 +127,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "On sait que f(1) = 0 et f′(x) = 1/x pour x > 0. Avec la méthode d'Euler de pas h = 0,5, quelle valeur approchée obtient-on pour f(2) ?",
+      "prompt": "Un programme part de x = 1 et y = 0, puis répète deux fois de suite : y ← y + 0,5/x, puis x ← x + 0,5. Que vaut y à la fin ?",
       "options": [
         {
           "id": "a",
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "x₀ = 1, y₀ = 0. y₁ = 0 + 0,5 × f′(1) = 0,5 (x₁ = 1,5). y₂ = 0,5 + 0,5 × f′(1,5) = 0,5 + 0,5 × 2/3 = 0,5 + 1/3 = 5/6 (x₂ = 2). La valeur 1/2 est le premier pas seulement ; 1 utilise la pente f′(1) = 1 aux deux pas ; 7/12 utilise les pentes d'arrivée (1/3 puis 1/3 + 1/4).",
+      "explanation": "Premier tour : y = 0 + 0,5/1 = 0,5, puis x = 1,5. Second tour : y = 0,5 + 0,5/1,5 = 0,5 + 1/3 = 5/6, puis x = 2. Ce programme est la méthode d'Euler de pas 0,5 pour f′(x) = 1/x : la pente utilisée est celle du point de départ du tour. La valeur 1/2 est celle d'un seul tour ; 7/12 s'obtient en mettant x à jour avant y (1/3 puis 1/3 + 0,5/2) ; 1 oublie de mettre x à jour (0,5 + 0,5).",
       "difficulty": 3
     }
   ]

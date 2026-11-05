@@ -98,27 +98,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Soit f(x) = (3x² + x − 5)/(x − 2). Quelle droite est asymptote oblique à la courbe de f ?",
+      "prompt": "On écrit f(x) = (3x² + x − 5)/(x − 2) sous la forme ax + b + c/(x − 2). Que vaut c ?",
       "options": [
         {
           "id": "a",
-          "text": "y = 3x − 5"
+          "text": "−5"
         },
         {
           "id": "b",
-          "text": "y = 3x + 1"
+          "text": "3"
         },
         {
           "id": "c",
-          "text": "y = 3x + 7"
+          "text": "7"
         },
         {
           "id": "d",
-          "text": "y = 3x + 9"
+          "text": "9"
         }
       ],
-      "correctOption": "c",
-      "explanation": "On cherche f(x) = ax + b + c/(x − 2) : (ax + b)(x − 2) + c = ax² + (b − 2a)x + (c − 2b). On identifie : a = 3, b − 6 = 1 donc b = 7, c − 14 = −5 donc c = 9. Ainsi f(x) = 3x + 7 + 9/(x − 2), et 9/(x − 2) tend vers 0 : l'asymptote est y = 3x + 7. La droite y = 3x + 1 lit le coefficient de x du numérateur à la place de b, y = 3x − 5 son terme constant, et y = 3x + 9 confond b avec c.",
+      "correctOption": "d",
+      "explanation": "(ax + b)(x − 2) + c = ax² + (b − 2a)x + (c − 2b). On identifie avec 3x² + x − 5 : a = 3, b − 6 = 1 donc b = 7, c − 14 = −5 donc c = 9. Ainsi f(x) = 3x + 7 + 9/(x − 2). Contrôle : (3x + 7)(x − 2) + 9 = 3x² + x − 14 + 9 = 3x² + x − 5. La valeur −5 est le terme constant du numérateur, 3 est a, et 7 est b : on ne lit pas c dans le numérateur, on le calcule après a et b.",
       "difficulty": 2
     },
     {

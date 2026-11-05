@@ -79,27 +79,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Soit f(x) = x² − 4x + 7 et T sa tangente au point d'abscisse 1. Par rapport à T, la courbe de f est :",
+      "prompt": "Soit f(x) = x² − 4x + 7 et T sa tangente au point d'abscisse 1. Quelle est l'expression de l'écart f(x) − T(x) ?",
       "options": [
         {
           "id": "a",
-          "text": "au-dessus de T pour x > 1 et au-dessous pour x < 1"
+          "text": "(x − 1)²"
         },
         {
           "id": "b",
-          "text": "au-dessus de T pour tout x"
+          "text": "−(x − 1)²"
         },
         {
           "id": "c",
-          "text": "au-dessous de T pour tout x"
+          "text": "(x − 1)³"
         },
         {
           "id": "d",
-          "text": "au-dessous de T pour x > 1 et au-dessus pour x < 1"
+          "text": "x² − 2x"
         }
       ],
-      "correctOption": "b",
-      "explanation": "f(1) = 4 et f′(x) = 2x − 4, donc f′(1) = −2 : T : y = −2(x − 1) + 4 = −2x + 6. L'écart est f(x) − T(x) = x² − 4x + 7 + 2x − 6 = x² − 2x + 1 = (x − 1)², qui est positif ou nul : la courbe est au-dessus de T et la touche seulement en 1, sans la traverser. Le changement de côté de l'écart est propre à un écart en (x − 1)³, pas en (x − 1)².",
+      "correctOption": "a",
+      "explanation": "f(1) = 4 et f′(x) = 2x − 4, donc f′(1) = −2 : T : y = −2(x − 1) + 4 = −2x + 6. L'écart est f(x) − T(x) = x² − 4x + 7 + 2x − 6 = x² − 2x + 1 = (x − 1)². Il est positif ou nul : la courbe est au-dessus de T et la touche seulement en 1. L'expression (x − 1)³ est celle d'un écart qui change de signe, ce qui n'est pas le cas ici ; x² − 2x oublie le +1 ; −(x − 1)² se trompe de sens de soustraction.",
       "difficulty": 2
     },
     {

@@ -2,7 +2,7 @@
 
 > 💡 «Avant de tracer une courbe, on l'interroge : se répète-t-elle, est-elle symétrique, de quelle droite se rapproche-t-elle ? Chaque réponse économise des calculs.»
 
-Bienvenue, héros de la section Sciences de l'informatique. Ce chapitre réunit tes outils (limites, continuité, dérivée) pour étudier une fonction de bout en bout. Huit notions : la périodicité, l'axe et le centre de symétrie, la décomposition d'une fraction rationnelle, la tangente et sa position, l'étude complète d'une fonction rationnelle, puis les fonctions x ↦ √(ax² + bx + c) en trois étapes. Une ouverture clôt le chapitre : la méthode d'Euler, qui construit une courbe pas à pas. On suppose acquis les limites, les asymptotes et le critère de symétrie du chapitre 2 ; la dérivée, la dérivée seconde et l'équation d'une tangente servent d'outils (chapitre 4).
+Bienvenue, héros de la section Sciences de l'informatique. Ce chapitre réunit tes outils (limites, continuité, dérivée) pour étudier une fonction de bout en bout. Huit notions : la périodicité, l'axe et le centre de symétrie, la décomposition d'une fraction rationnelle, la position d'une courbe par rapport à sa tangente, l'étude complète d'une fonction rationnelle, puis les fonctions x ↦ √(ax² + bx + c) en trois étapes. Une ouverture clôt le chapitre : la méthode d'Euler, qui construit une courbe pas à pas. On suppose acquis les limites, les asymptotes et le critère de symétrie du chapitre 2 ; la dérivée, la dérivée seconde, l'équation d'une tangente et les demi-tangentes servent d'outils (chapitre 4).
 
 ## ⏱️ Périodicité : une période suffit
 
@@ -145,6 +145,8 @@ Si f(x) = ax + b + r(x) avec r(x) → 0 en +∞ (ou en −∞), la droite y = ax
 
 Si r(x) = c/(x − x₀) avec c ≠ 0, la droite x = x₀ est asymptote verticale et le point I(x₀ ; ax₀ + b), où les deux asymptotes se coupent, est centre de symétrie de C.
 
+Avec deux valeurs interdites x₁ et x₂, on écrit de même f(x) = a + b/(x − x₁) + c/(x − x₂) : on réduit au même dénominateur, on identifie, et chaque valeur interdite donne une asymptote verticale, y = a étant asymptote horizontale.
+
 Cas limite : si c = 0, la fraction se simplifie et f est une fonction affine privée d'un point.
 :::
 
@@ -169,62 +171,61 @@ On écrit h(x) = ax + b + c/(x − 2) : (ax + b)(x − 2) + c = ax² + (b − 2a
 Écrire f(x) = ax + b + c/(x − x₀) donne d'un coup l'asymptote oblique y = ax + b, sa position par le signe de c/(x − x₀), l'asymptote verticale x = x₀ et le centre de symétrie ; on trouve a, b, c par identification des coefficients.
 :::
 
-## 📏 Tangente, position relative et point d'inflexion
+## 📏 Position d'une courbe par rapport à sa tangente : le signe de l'écart
 
-Le profil d'une piste de VTT est la courbe de f(x) = x³ − 3x² + 2. Au point A(1 ; 0), on pose une règle droite, tangente à la piste.
-La règle reste-t-elle d'un seul côté de la piste, ou la traverse-t-elle ?
+Pour f(x) = x/(x² + 1), la tangente en l'origine O est la droite T : y = x, car f(0) = 0 et f′(0) = 1. Près de O, la courbe reste-t-elle d'un seul côté de cette droite, ou la traverse-t-elle ?
+Et que se passe-t-il en A(1 ; 1/2), où la tangente est horizontale ?
 
 ::: definition
-Si f est dérivable en a, la **tangente** T à la courbe C au point A(a ; f(a)) a pour équation y = f′(a)(x − a) + f(a). Le point A est un **point d'inflexion** de C si la courbe traverse sa tangente en A ; quand f est deux fois dérivable, c'est le cas lorsque f″ s'annule en a en changeant de signe.
+Pour une droite D : y = mx + p, la position de la courbe C de f par rapport à D se lit sur le signe de l'**écart** d(x) = f(x) − (mx + p) : C est au-dessus de D là où d(x) > 0, au-dessous là où d(x) < 0, et elle coupe D là où d(x) = 0. Quand D est la tangente en A(a ; f(a)), d(x) = f(x) − f′(a)(x − a) − f(a).
 :::
 
-::: figure La tangente T en A traverse la courbe : C est au-dessous de T à gauche de A et au-dessus à droite
-<svg viewBox="0 0 340 230"><title>Courbe de f(x) = x³ − 3x² + 2 et sa tangente T en A(1 ; 0) : la courbe est au-dessus de T à droite de A et au-dessous à gauche</title><line x1="18" y1="113.9" x2="328" y2="113.9" stroke="#0f172a" stroke-width="1.6"/><line x1="102.5" y1="208" x2="102.5" y2="8" stroke="#0f172a" stroke-width="1.6"/><polygon points="328,113.9 321,110.4 321,117.4" fill="#0f172a"/><polygon points="102.5,8 99,15 106,15" fill="#0f172a"/><text x="324" y="106.9" text-anchor="end" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">x</text><text x="110.5" y="16" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">y</text><line x1="32.1" y1="110.9" x2="32.1" y2="116.9" stroke="#0f172a" stroke-width="1.3"/><text x="32.1" y="128.9" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">−1</text><line x1="173" y1="110.9" x2="173" y2="116.9" stroke="#0f172a" stroke-width="1.3"/><text x="173" y="128.9" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">1</text><line x1="243.5" y1="110.9" x2="243.5" y2="116.9" stroke="#0f172a" stroke-width="1.3"/><text x="243.5" y="128.9" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">2</text><line x1="313.9" y1="110.9" x2="313.9" y2="116.9" stroke="#0f172a" stroke-width="1.3"/><text x="313.9" y="128.9" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">3</text><line x1="99.5" y1="172.7" x2="105.5" y2="172.7" stroke="#0f172a" stroke-width="1.3"/><text x="96.5" y="176.7" text-anchor="end" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">−2</text><line x1="99.5" y1="55.1" x2="105.5" y2="55.1" stroke="#0f172a" stroke-width="1.3"/><text x="96.5" y="59.1" text-anchor="end" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">2</text><line x1="88.5" y1="8" x2="248.2" y2="208" stroke="#b45309" stroke-width="1.8"/><polyline points="39.1,148 41.5,140.5 43.8,133.4 46.2,126.6 48.5,120.2 50.9,114.1 53.2,108.4 55.6,103 57.9,97.9 60.3,93.2 62.6,88.7 65,84.6 67.3,80.8 69.7,77.3 72,74 74.4,71.1 76.7,68.4 79.1,66 81.4,63.8 83.8,61.9 86.1,60.2 88.5,58.8 90.8,57.6 93.2,56.7 95.5,56 97.8,55.5 100.2,55.2 102.5,55.1 104.9,55.2 107.2,55.4 109.6,55.9 111.9,56.6 114.3,57.4 116.6,58.4 119,59.5 121.3,60.8 123.7,62.2 126,63.8 128.4,65.5 130.7,67.3 133.1,69.2 135.4,71.3 137.8,73.4 140.1,75.7 142.5,78 144.8,80.5 147.2,83 149.5,85.6 151.9,88.2 154.2,90.9 156.6,93.7 158.9,96.5 161.3,99.3 163.6,102.2 166,105.1 168.3,108 170.7,110.9 173,113.9 175.3,116.8 177.7,119.8 180,122.7 182.4,125.6 184.7,128.5 187.1,131.3 189.4,134.1 191.8,136.9 194.1,139.6 196.5,142.2 198.8,144.8 201.2,147.3 203.5,149.7 205.9,152.1 208.2,154.3 210.6,156.5 212.9,158.5 215.3,160.5 217.6,162.3 220,164 222.3,165.6 224.7,167 227,168.3 229.4,169.4 231.7,170.4 234.1,171.2 236.4,171.9 238.8,172.3 241.1,172.6 243.5,172.7 245.8,172.6 248.2,172.3 250.5,171.8 252.8,171.1 255.2,170.1 257.5,168.9 259.9,167.5 262.2,165.9 264.6,164 266.9,161.8 269.3,159.4 271.6,156.7 274,153.7 276.3,150.5 278.7,147 281,143.1 283.4,139 285.7,134.6 288.1,129.8 290.4,124.8 292.8,119.4 295.1,113.7 297.5,107.6 299.8,101.2 302.2,94.4 304.5,87.3 306.9,79.8 309.2,71.9 311.6,63.7 313.9,55.1 316.3,46 318.6,36.6 321,26.8" fill="none" stroke="#0f6e56" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="173" cy="113.9" r="4" fill="#b45309" stroke="#0f172a" stroke-width="1"/><text x="163" y="105.9" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">A</text><text x="123" y="33" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">T</text><text x="299.8" y="72.7" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">C_f</text></svg>
+::: figure La tangente T traverse la courbe en O ; la tangente horizontale T′ reste au-dessus de la courbe et la touche en A
+<svg viewBox="0 0 340 200"><title>Courbe de f(x) = x/(x² + 1) : la tangente T traverse la courbe en O, la tangente horizontale T′ la touche en A(1 ; 1/2) sans la traverser</title><line x1="14" y1="93" x2="326" y2="93" stroke="#0f172a" stroke-width="1.6"/><line x1="170" y1="178" x2="170" y2="8" stroke="#0f172a" stroke-width="1.6"/><polygon points="326,93 319,89.5 319,96.5" fill="#0f172a"/><polygon points="170,8 166.5,15 173.5,15" fill="#0f172a"/><text x="322" y="86" text-anchor="end" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">x</text><text x="178" y="16" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">y</text><line x1="58.6" y1="90" x2="58.6" y2="96" stroke="#0f172a" stroke-width="1.3"/><text x="58.6" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">−3</text><line x1="132.9" y1="90" x2="132.9" y2="96" stroke="#0f172a" stroke-width="1.3"/><text x="132.9" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">−1</text><line x1="207.1" y1="90" x2="207.1" y2="96" stroke="#0f172a" stroke-width="1.3"/><text x="207.1" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">1</text><line x1="281.4" y1="90" x2="281.4" y2="96" stroke="#0f172a" stroke-width="1.3"/><text x="281.4" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">3</text><line x1="167" y1="133.5" x2="173" y2="133.5" stroke="#0f172a" stroke-width="1.3"/><text x="164" y="137.5" text-anchor="end" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">−1/2</text><line x1="167" y1="52.5" x2="173" y2="52.5" stroke="#0f172a" stroke-width="1.3"/><text x="164" y="56.5" text-anchor="end" font-size="11" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">1/2</text><line x1="131" y1="178" x2="209" y2="8" stroke="#b45309" stroke-width="1.8"/><line x1="162.6" y1="52.5" x2="288.9" y2="52.5" stroke="#7c3aed" stroke-width="1.8"/><polyline points="14,111.2 15.6,111.4 17.1,111.6 18.7,111.7 20.2,111.9 21.8,112.1 23.4,112.3 24.9,112.5 26.5,112.6 28,112.8 29.6,113 31.2,113.2 32.7,113.4 34.3,113.6 35.8,113.8 37.4,114 39,114.2 40.5,114.5 42.1,114.7 43.6,114.9 45.2,115.1 46.8,115.4 48.3,115.6 49.9,115.8 51.4,116.1 53,116.3 54.6,116.6 56.1,116.9 57.7,117.1 59.2,117.4 60.8,117.7 62.4,118 63.9,118.2 65.5,118.5 67,118.8 68.6,119.1 70.2,119.5 71.7,119.8 73.3,120.1 74.8,120.4 76.4,120.8 78,121.1 79.5,121.4 81.1,121.8 82.6,122.1 84.2,122.5 85.8,122.9 87.3,123.3 88.9,123.6 90.4,124 92,124.4 93.6,124.8 95.1,125.2 96.7,125.6 98.2,126 99.8,126.5 101.4,126.9 102.9,127.3 104.5,127.7 106,128.2 107.6,128.6 109.2,129 110.7,129.4 112.3,129.8 113.8,130.2 115.4,130.6 117,131 118.5,131.4 120.1,131.8 121.6,132.1 123.2,132.4 124.8,132.7 126.3,133 127.9,133.2 129.4,133.3 131,133.4 132.6,133.5 134.1,133.5 135.7,133.4 137.2,133.2 138.8,132.9 140.4,132.5 141.9,131.9 143.5,131.3 145,130.5 146.6,129.5 148.2,128.4 149.7,127 151.3,125.5 152.8,123.8 154.4,121.9 156,119.8 157.5,117.4 159.1,114.9 160.6,112.2 162.2,109.3 163.8,106.2 165.3,103 166.9,99.8 168.4,96.4 170,93 171.6,89.6 173.1,86.2 174.7,83 176.2,79.8 177.8,76.7 179.4,73.8 180.9,71.1 182.5,68.6 184,66.2 185.6,64.1 187.2,62.2 188.7,60.5 190.3,59 191.8,57.6 193.4,56.5 195,55.5 196.5,54.7 198.1,54.1 199.6,53.5 201.2,53.1 202.8,52.8 204.3,52.6 205.9,52.5 207.4,52.5 209,52.6 210.6,52.7 212.1,52.8 213.7,53 215.2,53.3 216.8,53.6 218.4,53.9 219.9,54.2 221.5,54.6 223,55 224.6,55.4 226.2,55.8 227.7,56.2 229.3,56.6 230.8,57 232.4,57.4 234,57.8 235.5,58.3 237.1,58.7 238.6,59.1 240.2,59.5 241.8,60 243.3,60.4 244.9,60.8 246.4,61.2 248,61.6 249.6,62 251.1,62.4 252.7,62.7 254.2,63.1 255.8,63.5 257.4,63.9 258.9,64.2 260.5,64.6 262,64.9 263.6,65.2 265.2,65.6 266.7,65.9 268.3,66.2 269.8,66.5 271.4,66.9 273,67.2 274.5,67.5 276.1,67.8 277.6,68 279.2,68.3 280.8,68.6 282.3,68.9 283.9,69.1 285.4,69.4 287,69.7 288.6,69.9 290.1,70.2 291.7,70.4 293.2,70.6 294.8,70.9 296.4,71.1 297.9,71.3 299.5,71.5 301,71.8 302.6,72 304.2,72.2 305.7,72.4 307.3,72.6 308.8,72.8 310.4,73 312,73.2 313.5,73.4 315.1,73.5 316.6,73.7 318.2,73.9 319.8,74.1 321.3,74.3 322.9,74.4 324.4,74.6 326,74.8" fill="none" stroke="#0f6e56" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="170" cy="93" r="4" fill="#b45309" stroke="#0f172a" stroke-width="1"/><circle cx="207.1" cy="52.5" r="4" fill="#7c3aed" stroke="#0f172a" stroke-width="1"/><text x="137" y="156.1" text-anchor="end" font-size="11" font-weight="700" fill="#b45309" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">T : y = x</text><text x="288.9" y="45.5" text-anchor="end" font-size="11" font-weight="700" fill="#7c3aed" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">T′ : y = 1/2</text><text x="160" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">O</text><text x="207.1" y="70.5" text-anchor="middle" font-size="13" font-weight="700" fill="#7c3aed" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">A</text><text x="266.6" y="78.9" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">f</text></svg>
 :::
 
-La différence f(x) − T(x) est l'écart vertical entre la courbe et la règle : négative à gauche de A, positive à droite, comme le montre l'exemple.
+L'écart d(x) est la distance verticale entre la courbe et la droite : à gauche de O la courbe est au-dessus de T, à droite elle est au-dessous ; autour de A elle est au-dessous de T′. Les deux exemples le démontrent.
 
-::: exemple Position de C par rapport à sa tangente en A(1 ; 0), pour f(x) = x³ − 3x² + 2
-1. f′(x) = 3x² − 6x, donc f′(1) = −3 : T a pour équation y = −3(x − 1) + 0 = −3x + 3.
-2. On forme l'écart d(x) = f(x) − T(x) = x³ − 3x² + 2 + 3x − 3 = x³ − 3x² + 3x − 1.
-3. On reconnaît le développement d'un cube : d(x) = (x − 1)³.
-4. d(x) < 0 pour x < 1 et d(x) > 0 pour x > 1 : C est au-dessous de T à gauche de A et au-dessus à droite, elle traverse T.
-5. A est un point d'inflexion. Contrôle : f″(x) = 6x − 6 s'annule en 1 en changeant de signe.
+::: exemple Position de C par rapport à la tangente T : y = x en O
+1. f′(x) = (1 − x²)/(x² + 1)², donc f′(0) = 1 et f(0) = 0 : la tangente en O est y = x.
+2. d(x) = x/(x² + 1) − x = (x − x(x² + 1))/(x² + 1) = −x³/(x² + 1).
+3. Le dénominateur est positif : d(x) a le signe de −x³, positif pour x < 0 et négatif pour x > 0.
+4. La courbe est au-dessus de T à gauche de O et au-dessous à droite : elle traverse T en O.
 
 :::
 
-::: piege Croire que f″(a) = 0 suffit pour un point d'inflexion
-Pour f(x) = x⁴, f″(x) = 12x² s'annule en 0 et l'on annonce « O est un point d'inflexion ». Cela tente parce que l'exemple précédent s'est terminé par f″(1) = 0. Mais f″(x) = 12x² est positif des deux côtés de 0 : elle ne change pas de signe. La tangente en O est y = 0 et f(x) − 0 = x⁴ ≥ 0 : la courbe reste au-dessus de sa tangente, il n'y a pas d'inflexion en 0.
+::: exemple Position de C par rapport à la tangente T′ en A(1 ; 1/2)
+1. f(1) = 1/2 et f′(1) = (1 − 1)/4 = 0 : la tangente en A est horizontale, T′ : y = 1/2.
+2. d(x) = x/(x² + 1) − 1/2 = (2x − (x² + 1))/(2(x² + 1)) = −(x − 1)²/(2(x² + 1)).
+3. Un carré est positif : d(x) ≤ 0 des deux côtés de 1 et ne s'annule qu'en 1.
+4. La courbe est au-dessous de T′ autour de A et la touche seulement en A : elle ne la traverse pas. A est le maximum de f.
+
+:::
+
+::: piege Croire qu'un zéro de l'écart est un croisement
+Dans le second exemple, d(1) = 0 : on écrit « la tangente coupe la courbe en A, donc la traverse ». Cela tente parce que, pour la tangente en O, l'écart s'annulait aussi et la courbe traversait. Mais d(x) = −(x − 1)²/(2(x² + 1)) garde le même signe de part et d'autre de 1 : le carré (x − 1)² ne change pas de signe. Un zéro d'écart donne un point commun ; il faut regarder le signe de chaque côté pour savoir si la courbe traverse.
 :::
 
 ::: propriete
-Soit T la tangente à C en A(a ; f(a)) et d(x) = f(x) − f′(a)(x − a) − f(a).
+Soit T la tangente à C en A(a ; f(a)) et d(x) = f(x) − T(x).
 
-- Si d(x) ≥ 0 près de a, la courbe est au-dessus de T ; si d(x) ≤ 0, elle est au-dessous.
-- Si d(x) change de signe en a, la courbe traverse T : A est un point d'inflexion.
-- Pour trouver les candidats, on résout f″(x) = 0, puis on contrôle le changement de signe de f″.
+- d(a) = 0 : la courbe et sa tangente ont toujours A en commun.
+- Si d(x) garde le même signe de part et d'autre de a, la courbe reste du même côté de T : au-dessus si d ≥ 0, au-dessous si d ≤ 0.
+- Si d(x) change de signe en a, la courbe traverse sa tangente : A est un point d'inflexion (chapitre 4).
 
-Cas limite : f″ peut s'annuler sans changer de signe (x⁴ en 0) : c'est le signe de f″, ou celui de d(x), qui tranche.
-:::
-
-::: exemple Les points d'inflexion de f(x) = x/(x² + 1)
-1. f′(x) = (1 − x²)/(x² + 1)², puis f″(x) = (−2x(x² + 1) − 4x(1 − x²))/(x² + 1)³ = (2x³ − 6x)/(x² + 1)³ = 2x(x² − 3)/(x² + 1)³.
-2. Le dénominateur est positif : f″ a le signe de 2x(x² − 3), et s'annule en −√3, 0 et √3.
-3. Signe : négatif pour x < −√3, positif sur ]−√3 ; 0[, négatif sur ]0 ; √3[, positif pour x > √3. Il change en chacun des trois zéros.
-4. La courbe a donc trois points d'inflexion, d'abscisses −√3, 0 et √3. En 0 : f(0) = 0 et f′(0) = 1, la tangente est y = x, et f(x) − x = −x³/(x² + 1) change de signe en 0 : la courbe traverse bien sa tangente.
-
+Cas limite : comme d(a) = 0 et que la pente de d s'annule aussi en a, l'écart contient en pratique le facteur (x − a)², toujours positif ; son signe est celui du facteur restant. C'est −x³/(x² + 1) = x² × (−x/(x² + 1)) en O, dont le second facteur change de signe, et −(x − 1)² × 1/(2(x² + 1)) en A, dont le second facteur est de signe constant.
 :::
 
 ::: verifie
-Montrer que A(−1 ; 2) est un point d'inflexion de la courbe de f(x) = x³ + 3x², et donner la position de la courbe par rapport à sa tangente en A.
+Soit f(x) = x²/(x² + 1). Donner la tangente en O, puis la position de la courbe par rapport à elle.
 
 ---
 
-f(−1) = −1 + 3 = 2. f′(x) = 3x² + 6x, donc f′(−1) = 3 − 6 = −3 : T : y = −3(x + 1) + 2 = −3x − 1. L'écart est d(x) = x³ + 3x² + 3x + 1 = (x + 1)³ : négatif avant −1, positif après : la courbe est au-dessous de T à gauche de A, au-dessus à droite, elle la traverse. A est un point d'inflexion, ce que confirme f″(x) = 6x + 6, qui change de signe en −1.
+f(0) = 0 et f′(x) = 2x/(x² + 1)², donc f′(0) = 0 : la tangente est T : y = 0. L'écart est d(x) = x²/(x² + 1) − 0 = x²/(x² + 1) ≥ 0, qui ne s'annule qu'en 0 : la courbe est au-dessus de T et la touche seulement en O, sans la traverser. O est un minimum, pas un point d'inflexion. On a regardé le signe de d(x) de part et d'autre de 0.
 :::
 
 ::: retenir
-La tangente en A est y = f′(a)(x − a) + f(a) ; le signe de f(x) − T(x) donne la position de la courbe, et un changement de signe de cet écart, ou de f″, signale un point d'inflexion.
+La position de C par rapport à une droite se lit sur le signe de d(x) = f(x) − (mx + p) ; pour la tangente en A, d(a) = 0 toujours, et la courbe traverse la tangente seulement si d change de signe en a.
 :::
 
 ## 🧭 Étudier une fonction rationnelle de A à Z
@@ -408,8 +409,8 @@ Les traits violets figurent les demi-tangentes verticales aux deux pieds de l'ar
 
 :::
 
-::: piege Conclure qu'il n'y a pas de tangente
-En 3, la formule f′(x) = 2(1 − x)/√(…) n'a plus de sens (division par 0), et l'on écrit « il n'y a pas de tangente en (3 ; 0) ». Cela tente parce qu'on associe « pas de nombre dérivé » à « pas de tangente ». Mais le taux d'accroissement tend vers −∞ : la courbe arrive au point en montant ou descendant à la verticale, c'est une demi-tangente verticale, tracée en violet sur le dessin.
+::: piege Chercher des limites en l'infini là où f n'existe pas
+Pour f(x) = √(−2x² + 4x + 6), on veut « les asymptotes » comme pour la lampe, et l'on écrit lim x→+∞ f(x) = +∞ « puisque c'est une racine ». Cela tente parce que, pour a > 0, le radicande tend vers +∞. Mais ici a < 0 : le radicande tend vers −∞ et f n'est définie que sur [−1 ; 3]. Il n'y a ni limite en ±∞ ni asymptote ; les seuls bords de la courbe sont les extrémités −1 et 3 du domaine.
 :::
 
 ::: propriete

@@ -7,27 +7,27 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "On admet que D : y = 2x + 1 est asymptote oblique à la courbe C de f(x) = (2x² + 3x − 1)/(x + 1). Quelle est la position de C par rapport à D ?",
+      "prompt": "On écrit g(x) = (x² + 2x + 4)/(x² − 4) sous la forme 1 + b/(x − 2) + c/(x + 2). Que valent b et c ?",
       "options": [
         {
           "id": "a",
-          "text": "au-dessus de D pour x < −1 et au-dessous pour x > −1"
+          "text": "b = 3 et c = −1"
         },
         {
           "id": "b",
-          "text": "au-dessous de D pour x < −1 et au-dessus pour x > −1"
+          "text": "b = −1 et c = 3"
         },
         {
           "id": "c",
-          "text": "au-dessus de D sur ℝ ∖ {−1}"
+          "text": "b = 1 et c = 1"
         },
         {
           "id": "d",
-          "text": "au-dessous de D sur ℝ ∖ {−1}"
+          "text": "b = 2 et c = 0"
         }
       ],
       "correctOption": "a",
-      "explanation": "f(x) − (2x + 1) = (2x² + 3x − 1 − (2x + 1)(x + 1))/(x + 1) = (2x² + 3x − 1 − 2x² − 3x − 1)/(x + 1) = −2/(x + 1). Pour x < −1, x + 1 < 0 et −2/(x + 1) > 0 : C est au-dessus de D ; pour x > −1, −2/(x + 1) < 0 : C est au-dessous. Comme le signe de c/(x − x₀) change en x₀, la position ne peut pas être la même des deux côtés de la valeur interdite.",
+      "explanation": "On réduit au même dénominateur : (x² − 4) + b(x + 2) + c(x − 2) = x² + (b + c)x + (2b − 2c − 4). On identifie avec x² + 2x + 4 : b + c = 2 et 2b − 2c − 4 = 4, soit b − c = 4. Donc b = 3 et c = −1. Contrôle en x = 0 : 1 + 3/(−2) − 1/2 = −1 = g(0). Les couples (1 ; 1) et (2 ; 0) vérifient b + c = 2 mais pas b − c = 4 ; (−1 ; 3) inverse les deux valeurs.",
       "difficulty": 2
     },
     {
@@ -55,28 +55,28 @@
       "difficulty": 2
     },
     {
-      "prompt": "Où la courbe de f(x) = x⁴ − 4x³ a-t-elle des points d'inflexion ?",
+      "prompt": "Soit f(x) = 1/(x² + 1). Sa tangente T au point A(1 ; 1/2) a pour équation y = −x/2 + 1. Au voisinage de A, la courbe de f est :",
       "options": [
         {
           "id": "a",
-          "text": "en x = 0 et en x = 2"
+          "text": "au-dessus de T, sans la traverser"
         },
         {
           "id": "b",
-          "text": "en x = 0 seulement"
+          "text": "au-dessous de T, sans la traverser"
         },
         {
           "id": "c",
-          "text": "en x = 3 seulement"
+          "text": "de part et d'autre de T : elle traverse T en A"
         },
         {
           "id": "d",
-          "text": "en x = 0, en x = 2 et en x = 3"
+          "text": "confondue avec T"
         }
       ],
       "correctOption": "a",
-      "explanation": "f′(x) = 4x³ − 12x² et f″(x) = 12x² − 24x = 12x(x − 2). f″ s'annule en 0 et en 2 en changeant de signe (positive, négative, puis positive) : il y a deux points d'inflexion, d'abscisses 0 et 2. En 3, c'est f′ qui s'annule (minimum), et f″(3) = 36 > 0 : pas d'inflexion. En 0, la tangente est horizontale, mais f″ change bien de signe, donc le point d'inflexion est confirmé.",
-      "difficulty": 2
+      "explanation": "L'écart est d(x) = 1/(x² + 1) + x/2 − 1 = (2 + x(x² + 1) − 2(x² + 1))/(2(x² + 1)) = (x³ − 2x² + x)/(2(x² + 1)) = x(x − 1)²/(2(x² + 1)). Près de 1, x est positif et (x − 1)² aussi : d(x) ≥ 0 des deux côtés de 1, avec d(1) = 0. La courbe est donc au-dessus de T et la touche en A sans la traverser. Le changement de signe de d a lieu en 0, où T recoupe la courbe au point (0 ; 1), pas en A.",
+      "difficulty": 3
     },
     {
       "prompt": "Parmi ces réels, lequel est une période de f(x) = sin(πx) + cos(πx/2) ?",
@@ -103,27 +103,27 @@
       "difficulty": 3
     },
     {
-      "prompt": "La courbe de g(x) = (x² + 2x + 4)/(x² − 4) a pour asymptote horizontale y = 1. En quel point la coupe-t-elle ?",
+      "prompt": "La courbe de g(x) = (x² + 3x − 2)/(x² − 1) a pour asymptote horizontale y = 1. En quel point la coupe-t-elle ?",
       "options": [
         {
           "id": "a",
-          "text": "A(−4 ; 1)"
+          "text": "A(−1/3 ; 1)"
         },
         {
           "id": "b",
-          "text": "A(0 ; 1)"
+          "text": "A(1/3 ; 1)"
         },
         {
           "id": "c",
-          "text": "A(4 ; 1)"
+          "text": "A(3 ; 1)"
         },
         {
           "id": "d",
           "text": "elle ne la coupe en aucun point"
         }
       ],
-      "correctOption": "a",
-      "explanation": "g(x) − 1 = (x² + 2x + 4 − (x² − 4))/(x² − 4) = (2x + 8)/(x² − 4). Cette différence s'annule pour 2x + 8 = 0, soit x = −4 : g(−4) = 12/12 = 1, la courbe coupe y = 1 en A(−4 ; 1). Une asymptote peut être coupée : elle décrit seulement le comportement en ±∞. Le point d'abscisse 0 vient d'une erreur en soustrayant −4, et celui d'abscisse 4 d'une erreur de signe sur 2x + 8 = 0.",
+      "correctOption": "b",
+      "explanation": "g(x) − 1 = (x² + 3x − 2 − (x² − 1))/(x² − 1) = (3x − 1)/(x² − 1). Cette différence s'annule pour 3x − 1 = 0, soit x = 1/3 : g(1/3) = (1/9 + 1 − 2)/(1/9 − 1) = 1, la courbe coupe y = 1 en A(1/3 ; 1). Une asymptote peut être coupée : elle décrit seulement le comportement en ±∞. L'abscisse −1/3 vient d'une erreur de signe, et 3 d'une inversion dans 3x = 1.",
       "difficulty": 3
     },
     {
