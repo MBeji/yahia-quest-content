@@ -1,0 +1,10 @@
+# 📜 Résumé : Limites de fonctions
+
+- **Composée** : (g∘f)(x) = g(f(x)), définie pour les x de D tels que f(x) est dans le domaine de g ; f∘g ≠ g∘f en général ; g∘f est croissante si f et g varient dans le même sens, décroissante sinon.
+- **Fonctions associées** : f(x) + k translate C_f de k j⃗ ; f(x + λ) la translate de −λ i⃗ ; −f et f(−x) la retournent par rapport à l'axe des abscisses et à l'axe des ordonnées ; |f| rabat vers le haut les arcs situés sous l'axe des abscisses.
+- **Limite en un point** : lim x→a f(x) = L si f(x) est aussi proche de L qu'on veut pour x assez proche de a, x ≠ a ; elle est unique ; elle existe si et seulement si les limites à gauche et à droite sont égales ; pour une fonction usuelle définie en a, elle vaut f(a) ; on simplifie (0/0) avant de substituer.
+- **Calcul de limites** : à l'infini, un polynôme a la limite de son terme de plus haut degré, une fraction rationnelle celle du quotient simplifié de ses termes de plus haut degré ; les tableaux concluent sauf pour (+∞) + (−∞), 0 × ∞, ∞/∞ et 0/0 ; on factorise, on met le terme dominant en facteur ou on multiplie par l'expression conjuguée ; en un réel, avec un dénominateur qui tend vers 0, on étudie le signe.
+- **Limite d'une composée** : si lim x→a u(x) = b et lim y→b v(y) = l, alors lim x→a v(u(x)) = l (a, b, l réels ou ±∞) ; si u approche b d'un seul côté, on prend la limite de v de ce côté.
+- **Asymptotes** : limite infinie en a ⟹ droite x = a ; limite finie L en ±∞ ⟹ droite y = L ; f(x) − (ax + b) de limite 0 en ±∞ ⟹ droite y = ax + b (a ≠ 0) ; le signe de f(x) − (ax + b) donne la position ; une valeur interdite ne suffit pas.
+- **Comparaison** : f ≥ u et lim u = +∞ ⟹ lim f = +∞ ; f ≤ v et lim v = −∞ ⟹ lim f = −∞ ; u ≤ f ≤ v avec lim u = lim v = ℓ ⟹ lim f = ℓ ; |f − ℓ| ≤ g avec lim g = 0 ⟹ lim f = ℓ ; majorer ne donne pas +∞.
+- **Symétries** : la droite x = a est axe de symétrie si X ↦ f(a + X) est paire ; Ω(a ; b) est centre de symétrie si X ↦ f(a + X) − b est impaire ; le domaine doit être symétrique ; la parité est le cas a = 0 (et b = 0) ; le test f(−x) ne détecte rien d'autre.

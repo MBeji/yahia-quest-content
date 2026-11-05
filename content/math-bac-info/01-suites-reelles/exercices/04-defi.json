@@ -1,0 +1,135 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : La conquête des limites",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "u₀ = 0 et uₙ₊₁ = (3/5)uₙ + 4. On donne (3/5)⁹ ≈ 0,01008 et (3/5)¹⁰ ≈ 0,00605. Quel est le plus petit entier n tel que |uₙ − 10| < 0,1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "11"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le point fixe est ℓ = 10. La suite vₙ = uₙ − 10 est géométrique de raison 3/5 et de premier terme v₀ = −10, donc |uₙ − 10| = 10 × (3/5)ⁿ. La condition 10 × (3/5)ⁿ < 0,1 s'écrit (3/5)ⁿ < 0,01. Pour n = 9, (3/5)⁹ ≈ 0,01008 n'est pas inférieur à 0,01 ; pour n = 10, (3/5)¹⁰ ≈ 0,00605 l'est. Le plus petit entier est donc 10 ✓. Le rang 5 résout (3/5)ⁿ < 0,1 en oubliant le facteur 10 ; le rang 9 est trop petit, et le rang 11 convient mais n'est pas le plus petit.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, pₙ = (1 − 1/2²)(1 − 1/3²)…(1 − 1/n²). En écrivant 1 − 1/k² = ((k − 1)/k) × ((k + 1)/k), déterminer lim pₙ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "3/4"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le produit des (k − 1)/k pour k = 2 à n se simplifie en 1/n, celui des (k + 1)/k en (n + 1)/2. Donc pₙ = (n + 1)/(2n), qui tend vers 1/2 ✓ (p₂ = 3/4, p₃ = 2/3). La valeur 0 suppose qu'un produit de facteurs inférieurs à 1 tend forcément vers 0. La valeur 1 suppose que le produit tend vers 1 parce que chaque facteur tend vers 1. La valeur 3/4 est seulement le premier facteur p₂.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces suites sont convergentes (n ≥ 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ = (−1)ⁿ/(n + 1)"
+        },
+        {
+          "id": "b",
+          "text": "uₙ = (−1)ⁿ × n/(n + 1)"
+        },
+        {
+          "id": "c",
+          "text": "uₙ = (3n − 2 sin n)/(n + 1)"
+        },
+        {
+          "id": "d",
+          "text": "uₙ = (−11/10)ⁿ"
+        },
+        {
+          "id": "e",
+          "text": "uₙ = 1 + (9/10)ⁿ"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "(−1)ⁿ/(n + 1) converge vers 0 : sa valeur absolue 1/(n + 1) tend vers 0 ✓. (3n − 2 sin n)/(n + 1) converge vers 3 : comme −1 ≤ sin n ≤ 1, elle est encadrée par (3n − 2)/(n + 1) et (3n + 2)/(n + 1), qui tendent toutes deux vers 3 ✓. 1 + (9/10)ⁿ converge vers 1, car −1 < 9/10 < 1 ✓. (−1)ⁿ × n/(n + 1) est bornée mais diverge : pour n ≥ 1, deux termes consécutifs sont de signes contraires et de valeur absolue au moins 1/2, donc distants d'au moins 1 ; aucun intervalle ]ℓ − 1/2 ; ℓ + 1/2[ ne peut les contenir tous à partir d'un rang. (−11/10)ⁿ est géométrique de raison −11/10 < −1 : elle n'a pas de limite.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "u₀ = 2 et uₙ₊₁ = 3uₙ/(uₙ + 3). On admet que uₙ > 0 pour tout n. Quelle est la limite de la suite (n × uₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose vₙ = 1/uₙ : vₙ₊₁ = (uₙ + 3)/(3uₙ) = 1/3 + vₙ, donc (vₙ) est arithmétique de raison 1/3 et de premier terme 1/2. Ainsi vₙ = 1/2 + n/3 = (2n + 3)/6 et uₙ = 6/(2n + 3). Alors n × uₙ = 6n/(2n + 3) = 6/(2 + 3/n), qui tend vers 6/2 = 3 ✓. La valeur 0 traite 0 × ∞ comme égal à 0, alors que c'est une forme indéterminée. La valeur 6 oublie le dénominateur qui tend vers 2. La valeur +∞ ne retient que le facteur n.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "u₀ = 1, u₁ = 2 et, pour tout n ∈ ℕ, uₙ₊₂ = 5uₙ₊₁ − 4uₙ. En cherchant uₙ sous la forme α × 4ⁿ + β, calculer u₁₀ (un nombre entier).",
+      "answerKey": {
+        "value": 349526
+      },
+      "explanation": "L'équation x² = 5x − 4 a pour racines 1 et 4. Avec uₙ = α × 4ⁿ + β : u₀ = α + β = 1 et u₁ = 4α + β = 2, donc 3α = 1, α = 1/3 et β = 2/3. La suite (4ⁿ + 2)/3 a les mêmes deux premiers termes et la même relation, donc uₙ = (4ⁿ + 2)/3. Alors u₁₀ = (1048576 + 2)/3 = 349526 ✓. Contrôle : u₂ = 5 × 2 − 4 × 1 = 6 = (16 + 2)/3.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La suite de Syracuse est définie par u₀ = 7 et uₙ₊₁ = uₙ/2 si uₙ est pair, uₙ₊₁ = 3uₙ + 1 si uₙ est impair. Quel est le plus petit entier n tel que uₙ = 1 ?",
+      "answerKey": {
+        "value": 16
+      },
+      "explanation": "On déroule la suite : 7 ; 22 ; 11 ; 34 ; 17 ; 52 ; 26 ; 13 ; 40 ; 20 ; 10 ; 5 ; 16 ; 8 ; 4 ; 2 ; 1. Le terme u₀ vaut 7, et la valeur 1 apparaît pour la première fois au 17ᵉ terme de la liste, c'est-à-dire au rang n = 16 ✓. Le nombre 16 est aussi un terme de la liste, mais en position u₁₂.",
+      "difficulty": 3
+    }
+  ]
+}

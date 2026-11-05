@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Suites réelles",
+  "questions": [
+    {
+      "prompt": "Pour tout n ∈ ℕ, uₙ₊₁ − uₙ = −4/((n + 1)(n + 2)). Que peut-on affirmer de la suite (uₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) est strictement croissante"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) est strictement décroissante"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) est constante"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) tend vers −4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme n + 1 et n + 2 sont positifs, la différence −4/((n + 1)(n + 2)) est strictement négative : chaque terme est inférieur au précédent, donc (uₙ) est strictement décroissante ✓ (la baisse vaut 2 de u₀ à u₁, puis 2/3). La réponse « strictement croissante » inverse le signe de la différence. La réponse « constante » exigerait une différence nulle. La réponse « tend vers −4 » confond la différence de deux termes consécutifs avec la limite de la suite.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le plus petit réel de cette liste qui majore tous les termes de uₙ = (2n + 1)/(n + 1), n ∈ ℕ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "5/2"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit uₙ = 2 − 1/(n + 1) < 2 : le réel 2 est un majorant ✓. Les réels 5/2 et 3 sont aussi des majorants, mais plus grands. Le réel 3/2 n'en est pas un : u₂ = 5/3 > 3/2. Parmi les quatre propositions, 2 est donc le plus petit majorant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tout réel ε > 0, il existe un entier p tel que, pour tout n ≥ p, |uₙ − 3| < ε. Que traduit cette phrase ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ = 3 pour tout n ≥ p"
+        },
+        {
+          "id": "b",
+          "text": "uₙ ≤ 3 pour tout n"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) est croissante à partir du rang p"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) converge vers 3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La phrase dit que la distance de uₙ à 3 devient plus petite que n'importe quel ε > 0 à partir d'un rang : c'est la définition de lim uₙ = 3 ✓. Elle n'impose pas uₙ = 3 : uₙ = 3 + 1/(n + 1) ne vaut jamais 3 et vérifie la phrase. Elle n'impose pas uₙ ≤ 3, puisque cette même suite reste au-dessus de 3. Elle n'impose pas la croissance : 3 + (−1)ⁿ/(n + 1) vérifie la phrase en alternant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces suites, laquelle est convergente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ = (−3/4)ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "uₙ = (4/3)ⁿ"
+        },
+        {
+          "id": "c",
+          "text": "uₙ = (−4/3)ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "uₙ = 1,01ⁿ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme −1 < −3/4 < 1, (−3/4)ⁿ tend vers 0 en changeant de signe à chaque terme : elle converge ✓. La suite (4/3)ⁿ a une raison supérieure à 1, donc elle tend vers +∞. La suite (−4/3)ⁿ a une raison inférieure à −1 : ses termes grandissent en alternant de signe et elle n'a pas de limite. La suite 1,01ⁿ semble proche de 1, mais 1,01 > 1 : elle tend vers +∞.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On sait que lim uₙ = +∞ et lim vₙ = −∞. Pour laquelle de ces suites les tableaux de limites permettent-ils de conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ + vₙ"
+        },
+        {
+          "id": "b",
+          "text": "uₙ/vₙ"
+        },
+        {
+          "id": "c",
+          "text": "uₙ × vₙ"
+        },
+        {
+          "id": "d",
+          "text": "uₙ + 3vₙ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le produit d'une suite qui tend vers +∞ par une suite qui tend vers −∞ tend vers −∞ par la règle des signes ✓. La somme uₙ + vₙ est de la forme +∞ − ∞, sans valeur générale. Le quotient uₙ/vₙ est de la forme ∞/∞, sans valeur générale. La suite uₙ + 3vₙ, avec 3vₙ qui tend vers −∞, est encore de la forme +∞ − ∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout n ≥ 1, |xₙ − 2| ≤ 1/n. Que peut-on en déduire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "lim xₙ = 1"
+        },
+        {
+          "id": "b",
+          "text": "lim xₙ = 2"
+        },
+        {
+          "id": "c",
+          "text": "xₙ ≤ 2 pour tout n"
+        },
+        {
+          "id": "d",
+          "text": "lim xₙ = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La distance de xₙ à 2 est majorée par 1/n, qui tend vers 0 : par le théorème de comparaison, (xₙ) converge vers 2 ✓. La valeur 0 est la limite de 1/n, pas celle de xₙ. La valeur 1 est la borne 1/n pour n = 1, pas une limite. L'inégalité xₙ ≤ 2 n'est pas assurée : xₙ = 2 + 1/n vérifie l'hypothèse et dépasse 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "(uₙ) est décroissante et uₙ ≥ 0 pour tout n. Quelle conclusion est assurée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) converge vers 0"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) tend vers −∞"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) est constante à partir d'un certain rang"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) converge vers un réel ℓ avec ℓ ≥ 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une suite décroissante et minorée converge vers un réel ℓ, et l'inégalité large uₙ ≥ 0 passe à la limite : ℓ ≥ 0 ✓. La limite n'est pas forcément 0 : uₙ = 1 + 1/(n + 1) est décroissante, positive, de limite 1. Tendre vers −∞ est impossible puisque les termes restent positifs. Être constante à partir d'un rang n'est pas assuré : 1 + 1/(n + 1) ne l'est jamais.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "u₀ = 1 et uₙ₊₁ = √(5uₙ + 14). On admet que (uₙ) converge. Quelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "−2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "√19"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme la fonction x ↦ √(5x + 14) est continue, la limite ℓ vérifie ℓ = √(5ℓ + 14), donc ℓ² − 5ℓ − 14 = 0, soit (ℓ − 7)(ℓ + 2) = 0. Tous les termes sont supérieurs ou égaux à 1, donc ℓ ≥ 1 et ℓ = 7 ✓ (u₁ ≈ 4,36 ; u₂ ≈ 5,98). La valeur −2 est une racine de l'équation élevée au carré, mais elle est négative. La valeur 2 vient d'une factorisation fausse, (ℓ + 7)(ℓ − 2). La valeur √19 ≈ 4,36 est u₁, un terme de la suite, pas sa limite.",
+      "difficulty": 2
+    }
+  ]
+}

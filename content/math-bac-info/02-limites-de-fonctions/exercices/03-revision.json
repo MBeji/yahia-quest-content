@@ -1,0 +1,153 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les huit sceaux du chapitre",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Soit u(x) = x − 5 et v(x) = x². Quelle est l'expression de (v∘u)(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − 25"
+        },
+        {
+          "id": "b",
+          "text": "x² − 5x + 25"
+        },
+        {
+          "id": "c",
+          "text": "x² − 10x − 25"
+        },
+        {
+          "id": "d",
+          "text": "x² − 10x + 25"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(v∘u)(x) = v(u(x)) = (x − 5)² = x² − 10x + 25 ✓ : le double produit est 2 × x × (−5) = −10x et le carré de −5 est +25. x² − 25 oublie le double produit ; x² − 5x + 25 oublie le facteur 2 ; x² − 10x − 25 se trompe de signe sur le carré de 5, qui est positif.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Calculer lim x→4 (x − 4)/(√x − 2). Donner le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 4
+      },
+      "explanation": "En 4, le quotient est de la forme 0/0. On multiplie haut et bas par l'expression conjuguée √x + 2 : (√x − 2)(√x + 2) = x − 4. Pour x ≠ 4, le quotient vaut (x − 4)(√x + 2)/(x − 4) = √x + 2, fonction définie en 4 : la limite est √4 + 2 = 4 ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces fonctions, lesquelles sont impaires (leur courbe est symétrique par rapport à l'origine) ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ x³ − 4x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ x/(x² − 4)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ x² + x"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ |x|"
+        },
+        {
+          "id": "e",
+          "text": "x ↦ x³ − x, définie sur [−1 ; 2]"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "x³ − 4x est impaire : (−x)³ − 4(−x) = −(x³ − 4x). x/(x² − 4) est impaire : son domaine ℝ ∖ {−2 ; 2} est symétrique et f(−x) = −x/(x² − 4) = −f(x). x² + x n'est ni paire ni impaire : f(−x) = x² − x diffère de f(x) et de −f(x). |x| est paire et non impaire, car |−x| = |x|. x ↦ x³ − x sur [−1 ; 2] n'est pas impaire : son domaine n'est pas symétrique (2 y est, −2 n'y est pas).",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Soit f(x) = (2 + sin x)/x² pour x > 0. Pour montrer que lim x→+∞ f(x) = 0, on procède par encadrement. Remettre dans l'ordre les étapes de la démonstration.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diviser par x² > 0, ce qui conserve le sens des inégalités : 1/x² ≤ f(x) ≤ 3/x²"
+        },
+        {
+          "id": "b",
+          "text": "Encadrer le sinus : pour tout x, −1 ≤ sin x ≤ 1"
+        },
+        {
+          "id": "c",
+          "text": "Conclure par le théorème d'encadrement : lim x→+∞ f(x) = 0"
+        },
+        {
+          "id": "d",
+          "text": "Ajouter 2 aux trois membres : 1 ≤ 2 + sin x ≤ 3"
+        },
+        {
+          "id": "e",
+          "text": "Calculer la limite de chaque borne en +∞ : 1/x² et 3/x² tendent vers 0"
+        }
+      ],
+      "answerKey": {
+        "order": ["b", "d", "a", "e", "c"]
+      },
+      "explanation": "On encadre d'abord sin x, la seule partie qui oscille, puis on reconstruit le numérateur 2 + sin x en ajoutant 2. On divise ensuite par x² > 0, ce qui conserve le sens des inégalités. Ce n'est qu'une fois l'encadrement de f écrit qu'on calcule les limites des deux bornes ; leur égalité permet de conclure par le théorème d'encadrement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer lim x→0⁻ (2 − x)/x³.",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "−∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Quand x → 0⁻, le numérateur 2 − x tend vers 2 > 0 et x³ tend vers 0 par valeurs négatives, puisque x < 0 donne x³ < 0. Le quotient est de la forme 2/(0⁻) : la limite est −∞ ✓. +∞ oublie que x³ garde le signe de x ; 0 prend le dénominateur pour le numérateur ; 2 ne regarde que le numérateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le point Ω(−2 ; 3) est centre de symétrie de la courbe de f(x) = (3x − 1)/(x + 2). Dans le repère (Ω ; i⃗, j⃗), quelle est l'équation de la courbe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Y = 7/X"
+        },
+        {
+          "id": "b",
+          "text": "Y = 3 − 7/X"
+        },
+        {
+          "id": "c",
+          "text": "Y = −7/X"
+        },
+        {
+          "id": "d",
+          "text": "Y = −7/(X + 2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose x = −2 + X et y = 3 + Y. Alors Y = f(−2 + X) − 3 = (3(−2 + X) − 1)/X − 3 = (3X − 7)/X − 3 = −7/X ✓ : c'est une fonction impaire, ce qui confirme que Ω est centre de symétrie. Y = 7/X se trompe de signe sur le 7 ; Y = 3 − 7/X oublie de retrancher 3 (c'est y, non Y, qui vaut 3 − 7/X) ; Y = −7/(X + 2) oublie que x + 2 devient X.",
+      "difficulty": 2
+    }
+  ]
+}

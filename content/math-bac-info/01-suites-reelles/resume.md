@@ -1,0 +1,10 @@
+# 📜 Résumé : Suites réelles
+
+- **Sens de variation et opérations** : (uₙ) est croissante si uₙ ≤ uₙ₊₁ pour tout n, décroissante si uₙ ≥ uₙ₊₁ ; on étudie le signe de uₙ₊₁ − uₙ, ou le rapport à 1 pour des termes strictement positifs, ou le sens de f si uₙ = f(n), ou une récurrence ; jamais sur les premiers termes seulement. La somme, le produit et le quotient (vₙ ≠ 0) de deux suites se définissent terme à terme.
+- **Majorée, minorée, bornée** : un réel M (majorant) ou m (minorant) limite tous les termes ; une suite croissante est minorée par u₀, une suite décroissante est majorée par u₀, mais décroissante n'entraîne pas minorée.
+- **Limite** : lim uₙ = ℓ signifie que, pour tout ε > 0, |uₙ − ℓ| < ε à partir d'un rang p ; la limite est unique ; lim 1/nᵖ = 0 et lim nᵖ = +∞ ; qⁿ → +∞ si q > 1, → 0 si −1 < q < 1, sans limite si q < −1 ; une suite convergente n'atteint pas forcément sa limite.
+- **Opérations sur les limites** : somme, produit et quotient se lisent dans les tableaux ; les cas +∞ − ∞, 0 × ∞, ∞/∞ et 0/0 n'ont pas de valeur générale et se lèvent par factorisation ou quantité conjuguée.
+- **Comparaison et encadrement** : uₙ ≤ xₙ et uₙ → +∞ donnent xₙ → +∞ ; uₙ ≤ xₙ ≤ vₙ avec uₙ et vₙ de même limite ℓ donnent xₙ → ℓ ; |xₙ − ℓ| ≤ uₙ avec uₙ → 0 donne xₙ → ℓ ; une inégalité stricte devient large à la limite.
+- **Suites monotones bornées (admis)** : croissante et majorée converge ; décroissante et minorée converge ; le théorème donne l'existence de la limite, pas sa valeur, et un majorant n'est pas la limite ; croissante et non majorée tend vers +∞ ; 1 + 1/2 + … + 1/n tend vers +∞ bien que 1/n → 0.
+- **Suites et fonctions** : si uₙ = f(n) et f(x) → ℓ en +∞, alors uₙ → ℓ ; si uₙ → ℓ et f est continue en ℓ, alors f(uₙ) → f(ℓ) ; si uₙ₊₁ = f(uₙ) converge vers ℓ et si f est continue en ℓ, alors f(ℓ) = ℓ, et l'encadrement de la suite désigne la bonne solution.
+- **Suite auxiliaire** : pour uₙ₊₁ = a uₙ + b, avec ℓ = b/(1 − a), vₙ = uₙ − ℓ est géométrique de raison a ; pour une récurrence homographique, vₙ = 1/uₙ peut être arithmétique ; pour uₙ₊₂ = a uₙ₊₁ + b uₙ, on utilise les racines de x² = ax + b ; la limite de uₙ n'est pas celle de vₙ.
