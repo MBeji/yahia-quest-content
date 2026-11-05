@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Les ondes mécaniques progressives",
+  "questions": [
+    {
+      "prompt": "Un bouchon de liège flotte sur un étang. Une ride circulaire, créée par un caillou tombé à 1 m de là, passe sous le bouchon. Que fait le bouchon pendant le passage de la ride ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il s'éloigne du point d'impact avec la ride, puis s'arrête plus loin"
+        },
+        {
+          "id": "b",
+          "text": "Il est emporté par la ride jusqu'au bord de l'étang"
+        },
+        {
+          "id": "c",
+          "text": "Il reste immobile, car la ride ne transporte rien"
+        },
+        {
+          "id": "d",
+          "text": "Il monte et descend sur place, sans suivre la ride"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La ride transporte de l'énergie, pas de matière : le bouchon reçoit cette énergie, monte et descend sur place, puis retrouve sa position ✓. L'idée qu'il est emporté jusqu'au bord confond la déformation qui avance avec de l'eau qui avance. L'idée qu'il s'éloigne avec la ride confond, elle aussi, la déformation qui avance avec la matière : le bouchon ne fait qu'osciller autour de sa place. L'idée qu'il reste immobile oublie que l'énergie transmise le met en mouvement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans laquelle de ces ondes les points du milieu se déplacent-ils parallèlement à la direction de propagation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une compression qui avance le long d'un ressort"
+        },
+        {
+          "id": "b",
+          "text": "Une bosse qui avance le long d'une corde bien tendue"
+        },
+        {
+          "id": "c",
+          "text": "Une ride circulaire à la surface d'un étang"
+        },
+        {
+          "id": "d",
+          "text": "Une secousse de cisaillement sismique (onde S)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans la compression qui avance le long d'un ressort, les spires vont et viennent le long de l'axe, dans la direction même de la propagation : l'onde est longitudinale ✓. La bosse de la corde, la ride de l'étang (le liège monte et descend) et l'onde S de cisaillement déplacent les points perpendiculairement à la propagation : ces trois ondes sont transversales.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux capteurs distants de 0,60 m détectent le passage d'un ébranlement avec 0,24 s d'écart. Quelle est sa célérité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,14 m/s"
+        },
+        {
+          "id": "b",
+          "text": "0,40 m/s"
+        },
+        {
+          "id": "c",
+          "text": "2,5 m/s"
+        },
+        {
+          "id": "d",
+          "text": "25 m/s"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La célérité est le quotient de la distance par la durée : v = d/Δt = 0,60/0,24 = 2,5 m/s ✓. La valeur 0,40 m/s est le quotient inversé Δt/d. La valeur 0,14 m/s est le produit d × Δt, qui n'est pas une vitesse. La valeur 25 m/s vient d'un décalage de la virgule dans Δt (0,024 s au lieu de 0,24 s).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un vibreur de fréquence 40 Hz engendre le long d'une corde une onde de célérité 12 m/s. Quelle est la longueur d'onde ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,025 m"
+        },
+        {
+          "id": "b",
+          "text": "0,30 m"
+        },
+        {
+          "id": "c",
+          "text": "3,3 m"
+        },
+        {
+          "id": "d",
+          "text": "480 m"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La longueur d'onde est λ = v/N = 12/40 = 0,30 m ✓. La valeur 0,025 est la période T = 1/N, qui s'exprime en secondes et non en mètres. La valeur 3,3 m est le quotient inversé N/v. La valeur 480 m est le produit v × N, qui n'a pas la dimension d'une longueur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une source S démarre à t = 0 et vibre selon :\nyS(t) = a sin ωt\nUn point M, à la distance x de S, est atteint avec le retard θ = x/v. Pour t ≥ θ, quelle est son élongation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "yM = a sin(ωt − 2πx/λ)"
+        },
+        {
+          "id": "b",
+          "text": "yM = a sin(ωt + 2πx/λ)"
+        },
+        {
+          "id": "c",
+          "text": "yM = a sin(ωt − x/λ)"
+        },
+        {
+          "id": "d",
+          "text": "yM = a sin(ωt − 2πλ/x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "M répète le mouvement de S avec le retard θ : yM = a sin ω(t − θ) = a sin(ωt − ωx/v). Comme ω/v = 2π/(vT) = 2π/λ, on obtient yM = a sin(ωt − 2πx/λ) ✓. Le signe plus ferait avancer M sur S, ce qui est impossible. L'écriture sans 2π oublie que le déphasage d'une longueur d'onde est 2π. L'écriture avec λ/x inverse le rapport : le déphasage croît avec x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur une corde, la longueur d'onde est λ = 0,24 m. Quelle distance peut séparer deux points de la corde qui vibrent en opposition de phase ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,06 m"
+        },
+        {
+          "id": "b",
+          "text": "0,18 m"
+        },
+        {
+          "id": "c",
+          "text": "0,24 m"
+        },
+        {
+          "id": "d",
+          "text": "0,36 m"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux points vibrent en opposition de phase lorsque leur distance est un nombre impair de demi-longueurs d'onde, (2k + 1)λ/2 : 0,12 m, 0,36 m, 0,60 m… La valeur 0,36 m (k = 1) convient ✓. La valeur 0,24 m est λ : les points sont en phase. Les valeurs 0,06 m (λ/4) et 0,18 m (3λ/4) donnent deux points en quadrature.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une source commence à vibrer à t = 0 sur une très longue corde, où la célérité est 4,0 m/s. À t = 0,30 s, jusqu'à quelle abscisse la corde est-elle ébranlée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,075 m"
+        },
+        {
+          "id": "b",
+          "text": "1,2 m"
+        },
+        {
+          "id": "c",
+          "text": "4,0 m"
+        },
+        {
+          "id": "d",
+          "text": "13 m"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le front d'onde est à la distance parcourue par l'onde : xf = v·t = 4,0 × 0,30 = 1,2 m ✓. La valeur 0,075 m est le quotient inversé t/v. La valeur 4,0 m est la célérité prise pour une distance, sans la durée. La valeur 13 m est le quotient v/t, qui n'est pas une longueur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un vibreur oscille à N = 50 Hz. Un stroboscope réglé sur Ne = 24 Hz éclaire la corde. Que voit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une sinusoïde immobile"
+        },
+        {
+          "id": "b",
+          "text": "Une sinusoïde qui avance lentement en sens inverse du sens réel"
+        },
+        {
+          "id": "c",
+          "text": "Une sinusoïde qui avance lentement dans le sens réel"
+        },
+        {
+          "id": "d",
+          "text": "Une bande floue, comme en lumière continue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La période de la source est T = 20 ms et celle des éclairs Te = 1/24 = 41,7 ms. Elle est un peu supérieure à 2T = 40 ms (k = 2) : l'onde paraît avancer lentement dans le sens réel ✓. L'immobilité exigerait Te = kT exactement, donc Ne = N/k, par exemple 50 Hz ou 25 Hz. Le mouvement en sens inverse correspondrait à Te un peu inférieure à kT. La bande floue est l'aspect en lumière continue, non sous stroboscope.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "title": "⭐ Exercice : Les premiers pas dans le noyau",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Combien de neutrons contient le noyau de molybdène ⁹⁵₄₂Mo ?",
+      "answerKey": {
+        "value": 53,
+        "unit": "neutrons"
+      },
+      "explanation": "N = A − Z = 95 − 42 = 53 neutrons ✓. Le nombre 95 compte tous les nucléons et 42 compte les protons : les neutrons sont la différence.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le rayon d'un atome est de l'ordre de 100 pm, et son noyau est environ 100 000 fois plus petit. Quel est l'ordre de grandeur du rayon du noyau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10⁻¹⁷ m"
+        },
+        {
+          "id": "b",
+          "text": "10⁻¹⁵ m"
+        },
+        {
+          "id": "c",
+          "text": "10⁻¹³ m"
+        },
+        {
+          "id": "d",
+          "text": "10⁻⁵ m"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "100 pm = 100 × 10⁻¹² m = 10⁻¹⁰ m, et diviser par 10⁵ donne 10⁻¹⁵ m, soit 1 fm ✓. 10⁻¹⁷ m oublie le facteur 100 de « 100 pm » (1 pm = 10⁻¹² m divisé par 10⁵). 10⁻¹³ m ne divise que par 10³. 10⁻⁵ m multiplie par 10⁵ au lieu de diviser.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un noyau de phosphore (symbole P) contient 15 protons et 16 neutrons. Quel est son symbole complet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "³¹₁₅P"
+        },
+        {
+          "id": "b",
+          "text": "¹⁵₁₅P"
+        },
+        {
+          "id": "c",
+          "text": "¹⁶₁₅P"
+        },
+        {
+          "id": "d",
+          "text": "³¹₁₆P"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "A = Z + N = 15 + 16 = 31 et Z = 15 : le symbole est ³¹₁₅P ✓. ¹⁵₁₅P prend A égal à Z, ce qui oublie les neutrons. ¹⁶₁₅P prend pour A le seul nombre de neutrons. ³¹₁₆P met 16, le nombre de neutrons, à la place de Z, qui compte les protons.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le noyau de béryllium ⁹₄Be a pour masse m = 9,00999 u. Calculer son défaut de masse, en u (m_p = 1,00728 u ; m_n = 1,00867 u).",
+      "answerKey": {
+        "value": 0.06248,
+        "tolerance": 2e-05,
+        "unit": "u"
+      },
+      "explanation": "⁹₄Be compte 4 protons et 9 − 4 = 5 neutrons : 4 × 1,00728 + 5 × 1,00867 = 4,02912 + 5,04335 = 9,07247 u. Donc Δm = 9,07247 − 9,00999 = 0,06248 u ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le noyau de fluor ¹⁹₉F a pour masse m = 18,99347 u. Quelle est son énergie de liaison ? (m_p = 1,00728 u ; m_n = 1,00867 u ; 1 u = 931,5 MeV·c⁻²)",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,1588 MeV"
+        },
+        {
+          "id": "b",
+          "text": "7,78 MeV"
+        },
+        {
+          "id": "c",
+          "text": "134,9 MeV"
+        },
+        {
+          "id": "d",
+          "text": "147,9 MeV"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "¹⁹₉F compte 9 protons et 10 neutrons : Δm = 9 × 1,00728 + 10 × 1,00867 − 18,99347 = 0,15875 u, donc E_ℓ = 0,15875 × 931,5 = 147,9 MeV ✓. 134,9 MeV traite les 19 nucléons comme des protons (Δm = 19 × 1,00728 − 18,99347 = 0,14485 u). 7,78 MeV est l'énergie par nucléon, 147,9 / 19 : on a divisé par A alors qu'on demande l'énergie de liaison. 0,1588 MeV garde le défaut de masse en u sans le convertir.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'énergie de masse d'un objet de masse m = 2,0 g ? (c = 3,00 × 10⁸ m/s)",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,2 × 10⁻²⁰ J"
+        },
+        {
+          "id": "b",
+          "text": "6,0 × 10⁵ J"
+        },
+        {
+          "id": "c",
+          "text": "1,8 × 10¹⁴ J"
+        },
+        {
+          "id": "d",
+          "text": "1,8 × 10¹⁷ J"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec m = 2,0 g = 2,0 × 10⁻³ kg : E₀ = m·c² = 2,0 × 10⁻³ × (3,00 × 10⁸)² = 1,8 × 10¹⁴ J ✓. 1,8 × 10¹⁷ J garde m en grammes au lieu de kilogrammes. 6,0 × 10⁵ J oublie le carré de c (m·c). 2,2 × 10⁻²⁰ J divise m par c² au lieu de le multiplier.",
+      "difficulty": 2
+    }
+  ]
+}

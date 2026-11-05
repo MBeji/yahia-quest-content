@@ -5,7 +5,7 @@
 > with `chapter.json`; a subject with 0 chapters is a ⚠ stub). Check here whether a subject /
 > grade already exists before creating one, and which slugs are taken.
 
-**100 subjects · 902 chapters · 4664 exercises · 6 themes · 0 stub(s)**
+**100 subjects · 907 chapters · 4684 exercises · 6 themes · 0 stub(s)**
 
 ## anglais
 
@@ -106,7 +106,7 @@
 | `math-bac-info` | Mathématiques | bac-info | fr | 3 | 12 | 3 |
 | `math-bac-math` | Mathématiques | bac-math | fr | 19 | 133 | 19 |
 | `math-bac-sciences-exp` | Mathématiques | bac-sciences-exp | fr | 17 | 68 | 17 |
-| `physique-bac-sciences-exp` | Physique | bac-sciences-exp | fr | 6 | 24 | 6 |
+| `physique-bac-sciences-exp` | Physique | bac-sciences-exp | fr | 11 | 44 | 11 |
 | `math-bac-techniques` | Mathématiques | bac-techniques | fr | 16 | 64 | 16 |
 | `technologie-bac-techniques` | Technologie | bac-techniques | fr | 25 | 100 | 25 |
 

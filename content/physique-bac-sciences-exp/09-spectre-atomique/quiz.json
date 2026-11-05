@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Spectre atomique",
+  "questions": [
+    {
+      "prompt": "Un satellite peut être placé à n'importe quelle distance de la Terre, alors que l'énergie d'un atome est dite « quantifiée ». Que signifie ce mot pour l'atome ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'énergie de l'atome varie de façon continue, comme celle d'un satellite que l'on déplace"
+        },
+        {
+          "id": "b",
+          "text": "L'énergie de l'atome ne peut prendre que certaines valeurs bien précises, propres à cet atome"
+        },
+        {
+          "id": "c",
+          "text": "L'énergie de l'atome peut prendre toutes les valeurs, à condition de dépasser un certain seuil"
+        },
+        {
+          "id": "d",
+          "text": "L'énergie de l'atome varie par sauts, mais chaque saut peut avoir n'importe quelle valeur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un atome ne possède que certaines valeurs d'énergie bien précises, propres à lui : ses niveaux d'énergie ✓. Une variation continue est le comportement d'un système macroscopique comme un satellite, pas celui d'un atome. Un seuil au-delà duquel toutes les valeurs seraient permises oublie que, même au-dessus du fondamental, seuls certains niveaux existent. Des sauts de valeur quelconque oublient que chaque saut est l'écart entre deux niveaux fixés.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Des électrons d'énergie cinétique Ec = 3,0 eV traversent de la vapeur de mercure, dont le seuil d'excitation est 4,9 eV (expérience de Franck et Hertz). Avec quelle énergie cinétique ressortent-ils ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 eV"
+        },
+        {
+          "id": "b",
+          "text": "1,9 eV"
+        },
+        {
+          "id": "c",
+          "text": "3,0 eV"
+        },
+        {
+          "id": "d",
+          "text": "4,9 eV"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec Ec = 3,0 eV, inférieure au seuil de 4,9 eV, le rapport Nc/Ne vaut 1 : les chocs sont élastiques, aucune énergie n'est cédée et les électrons ressortent avec 3,0 eV ✓. Le résultat 0 eV supposerait que l'atome absorbe toute l'énergie de l'électron. Le résultat 1,9 eV soustrait 3,0 eV de 4,9 eV, comme si l'atome prenait ce qui lui manque, alors qu'il ne prend rien sous le seuil. Le résultat 4,9 eV est le seuil lui-même, supérieur à l'énergie dont disposent les électrons.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On observe avec un spectroscope la lumière d'une lampe à vapeur d'hydrogène. Quel spectre voit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un spectre continu, du rouge au violet, sans aucune interruption"
+        },
+        {
+          "id": "b",
+          "text": "Un fond coloré continu, coupé de quelques raies noires"
+        },
+        {
+          "id": "c",
+          "text": "Un spectre continu dont les couleurs dépendent de la température de la lampe"
+        },
+        {
+          "id": "d",
+          "text": "Quelques raies colorées fines sur un fond sombre"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une lampe à vapeur d'atomes d'un élément donne un spectre d'émission : quelques raies colorées fines sur un fond sombre ✓. Le spectre continu du rouge au violet est celui de la lumière blanche. Un fond continu coupé de raies noires est un spectre d'absorption, obtenu quand de la lumière blanche traverse la vapeur. Un continu qui dépend de la température est celui d'un corps chaud, non d'une vapeur d'atomes isolés.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour l'atome d'hydrogène, Eₙ = −13,6/n² (en eV). Quelle est l'énergie du niveau n = 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−122 eV"
+        },
+        {
+          "id": "b",
+          "text": "−4,53 eV"
+        },
+        {
+          "id": "c",
+          "text": "−1,51 eV"
+        },
+        {
+          "id": "d",
+          "text": "+1,51 eV"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E₃ = −13,6/3² = −13,6/9 = −1,51 eV ✓. Le résultat −4,53 eV vient d'une division par n au lieu de n². Le résultat +1,51 eV oublie le signe : toutes les énergies liées de l'atome sont négatives. Le résultat −122 eV multiplie par n² au lieu de diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un atome d'hydrogène passe du niveau n = 3 au niveau n = 2. Que se passe-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il émet un photon d'énergie 1,89 eV"
+        },
+        {
+          "id": "b",
+          "text": "Il absorbe un photon d'énergie 1,89 eV"
+        },
+        {
+          "id": "c",
+          "text": "Il émet un photon d'énergie 3,40 eV"
+        },
+        {
+          "id": "d",
+          "text": "Il absorbe un photon d'énergie 1,51 eV"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "De n = 3 à n = 2, l'énergie passe de −1,51 eV à −3,40 eV : elle diminue, l'atome émet un photon d'énergie |ΔE| = |−3,40 − (−1,51)| = 1,89 eV ✓. Une absorption exigerait au contraire une énergie qui augmente. Le nombre 3,40 eV est l'énergie du niveau n = 2, non l'écart entre les deux niveaux ; de même 1,51 eV est celle du niveau n = 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un photon d'énergie 5,0 eV arrive sur un atome d'hydrogène dans son état fondamental. Que se passe-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est absorbé : l'atome passe au niveau n = 2 et conserve l'excédent d'énergie"
+        },
+        {
+          "id": "b",
+          "text": "Il n'est pas absorbé : son énergie ne correspond à aucune transition, il est diffusé"
+        },
+        {
+          "id": "c",
+          "text": "Il n'est pas absorbé : un atome dans son état fondamental ne peut absorber aucun photon"
+        },
+        {
+          "id": "d",
+          "text": "Il est absorbé : l'atome se place 5,0 eV au-dessus de l'état fondamental"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Depuis le fondamental, les photons absorbables ont 10,2 eV (vers n = 2), 12,09 eV (vers n = 3), 12,75 eV (vers n = 4), ou au moins 13,6 eV (ionisation). 5,0 eV ne correspond à aucun écart et reste inférieur à 13,6 eV : le photon n'est pas absorbé, il est diffusé ✓. Aller à n = 2 demande 10,2 eV, et l'atome ne garde pas d'excédent. Un atome fondamental peut absorber un photon dont l'énergie est un de ses écarts ou dépasse 13,6 eV, d'où l'erreur de croire qu'il n'en absorbe aucun. Aucun niveau ne se trouve à 5,0 eV du fondamental.",
+      "difficulty": 2
+    }
+  ]
+}
