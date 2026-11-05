@@ -1,0 +1,221 @@
+{
+  "title": "Test de compréhension ⭐ : La bobine et le dipôle RL",
+  "questions": [
+    {
+      "prompt": "Dans quel cas le milliampèremètre relié à une bobine fermée dévie-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On éloigne l'aimant de la bobine, qui reste fixe"
+        },
+        {
+          "id": "b",
+          "text": "On approche de la bobine une barre de fer doux non aimantée"
+        },
+        {
+          "id": "c",
+          "text": "L'aimant reste immobile, tout près de la bobine"
+        },
+        {
+          "id": "d",
+          "text": "Une bobine voisine est parcourue par un courant continu constant"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un courant induit apparaît quand le champ magnétique au niveau de la bobine varie : éloigner l'aimant le fait varier ✓. Un aimant immobile, même tout près, ne produit aucune variation. Un courant continu constant dans une bobine voisine crée un champ constant. Une barre de fer doux non aimantée ne crée aucun champ qui pourrait varier.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On approche le pôle nord d'un aimant d'une face d'une bobine fermée. Quelle face la bobine présente-t-elle à l'aimant, et que ressentent la bobine et l'aimant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une face sud : la bobine et l'aimant s'attirent mutuellement"
+        },
+        {
+          "id": "b",
+          "text": "Une face nord : la bobine et l'aimant s'attirent mutuellement"
+        },
+        {
+          "id": "c",
+          "text": "Une face sud : la bobine et l'aimant se repoussent"
+        },
+        {
+          "id": "d",
+          "text": "Une face nord : la bobine et l'aimant se repoussent"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le champ B⃗ de l'aimant augmente dans la bobine. La loi de Lenz impose un champ induit b⃗ de sens contraire, qui sort par la face en regard de l'aimant : cette face est une face nord ✓. Deux pôles de même nom se repoussent, ce qui s'oppose à l'approche. Une face sud serait attirée par le pôle nord, ce qui aiderait l'approche au lieu de s'y opposer, et une attraction avec une face nord contredit la règle des pôles de même nom.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine d'inductance 0,20 H voit son courant passer régulièrement de 0 à 0,50 A en 0,10 s. Quelle est sa f.e.m. d'auto-induction e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−25 V"
+        },
+        {
+          "id": "b",
+          "text": "−1,0 V"
+        },
+        {
+          "id": "c",
+          "text": "−0,10 V"
+        },
+        {
+          "id": "d",
+          "text": "+1,0 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a di/dt = 0,50 / 0,10 = 5,0 A/s, donc e = −L di/dt = −0,20 × 5,0 = −1,0 V ✓ : négative, puisque i croît. +1,0 V oublie le signe − de la loi de Lenz. −0,10 V est le produit L × Δi, sans division par la durée. −25 V place L au dénominateur : Δi / (L Δt).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine (L = 0,10 H, r = 8,0 Ω) est traversée par un courant constant I = 0,50 A. Quelle est la tension à ses bornes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 V"
+        },
+        {
+          "id": "b",
+          "text": "0,050 V"
+        },
+        {
+          "id": "c",
+          "text": "4,0 V"
+        },
+        {
+          "id": "d",
+          "text": "4,05 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le courant est constant, donc di/dt = 0 et u = L × 0 + r I = 8,0 × 0,50 = 4,0 V ✓. 0 V traite la bobine comme un fil sans résistance. 0,050 V est le produit L × I, qui n'est pas une tension. 4,05 V ajoute ce produit L × I au terme r I, alors que le terme inductif contient di/dt, nul ici.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle énergie magnétique une bobine d'inductance 0,20 H emmagasine-t-elle quand elle est traversée par un courant de 0,40 A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80 mJ"
+        },
+        {
+          "id": "b",
+          "text": "40 mJ"
+        },
+        {
+          "id": "c",
+          "text": "32 mJ"
+        },
+        {
+          "id": "d",
+          "text": "16 mJ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "E_L = ½ L i² = 0,5 × 0,20 × (0,40)² = 0,5 × 0,20 × 0,16 = 16 mJ ✓. 32 mJ oublie le facteur ½ (L i²). 40 mJ calcule ½ L i sans élever i au carré. 80 mJ calcule L i, sans ½ ni carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL est formé d'une bobine de résistance r = 8,0 Ω et d'un résistor R₀ = 40 Ω, soumis à un échelon de tension E = 12 V. Quelle est l'intensité du courant en régime permanent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5 A"
+        },
+        {
+          "id": "b",
+          "text": "0,30 A"
+        },
+        {
+          "id": "c",
+          "text": "0,25 A"
+        },
+        {
+          "id": "d",
+          "text": "0 A"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En régime permanent, la bobine se comporte comme un résistor de résistance r : I₀ = E / (R₀ + r) = 12 / 48 = 0,25 A ✓. 0 A suppose que la bobine bloque le courant, alors qu'elle ne fait que retarder son établissement. 0,30 A oublie la résistance r de la bobine (12 / 40). 1,5 A ne garde que r (12 / 8,0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL est en régime permanent, avec r ≠ 0. On ouvre l'interrupteur, une diode laissant passer le courant de la bobine. Laquelle de ces grandeurs varie brusquement à l'instant de l'ouverture ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'intensité i dans la bobine"
+        },
+        {
+          "id": "b",
+          "text": "La tension u_AB aux bornes de la bobine"
+        },
+        {
+          "id": "c",
+          "text": "L'énergie magnétique de la bobine"
+        },
+        {
+          "id": "d",
+          "text": "Aucune : toutes ces grandeurs varient continûment"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La tension u_AB passe de r I₀ à −R₀ I₀, soit un saut de −E ✓. L'intensité est continue, car la bobine s'oppose à sa variation. L'énergie ½ L i² est continue puisque i l'est : une énergie ne saute pas. Et « aucune » est faux, puisque la tension saute.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL a pour inductance L = 0,24 H, pour résistance de bobine r = 8,0 Ω et pour résistor R₀ = 40 Ω. Quelle est sa constante de temps ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,0 ms"
+        },
+        {
+          "id": "b",
+          "text": "6,0 ms"
+        },
+        {
+          "id": "c",
+          "text": "30 ms"
+        },
+        {
+          "id": "d",
+          "text": "5,0 s"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "τ = L/R avec R = R₀ + r = 48 Ω, donc τ = 0,24 / 48 = 5,0 ms ✓. 6,0 ms oublie la résistance r de la bobine (0,24 / 40). 30 ms ne garde que r (0,24 / 8,0). 5,0 s est la même valeur lue sans le facteur 10⁻³.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi un transformateur ne peut-il pas abaisser une tension continue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le noyau de fer doux se démagnétise sous tension continue"
+        },
+        {
+          "id": "b",
+          "text": "Un courant continu est trop faible pour créer un champ magnétique"
+        },
+        {
+          "id": "c",
+          "text": "La loi de Lenz interdit tout courant continu dans le secondaire"
+        },
+        {
+          "id": "d",
+          "text": "Un courant continu crée un champ constant, qui n'induit rien"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une tension continue établit au primaire un courant constant, donc un champ magnétique constant : le secondaire ne voit aucune variation, et rien n'est induit ✓. Un courant continu crée bien un champ, même faible. La loi de Lenz ne s'applique qu'à une variation de champ, elle n'interdit rien ici. Et le fer doux ne se démagnétise pas sous tension continue.",
+      "difficulty": 2
+    }
+  ]
+}

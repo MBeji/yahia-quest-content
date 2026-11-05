@@ -1,0 +1,141 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le condensateur et le dipôle RC",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Un condensateur chargé est relié à une petite lampe, sans générateur : la lampe brille un court instant puis s'éteint. D'où vient l'énergie lumineuse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des électrons qui traversent le diélectrique d'une armature à l'autre"
+        },
+        {
+          "id": "b",
+          "text": "Du diélectrique, qui se consume peu à peu"
+        },
+        {
+          "id": "c",
+          "text": "De l'énergie qu'il avait emmagasinée"
+        },
+        {
+          "id": "d",
+          "text": "De la charge électrique, qui disparaît presque"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le condensateur chargé est un réservoir d'énergie potentielle électrique : à la décharge, celle-ci se transforme en énergie lumineuse (et thermique) dans la lampe ✓. Il est faux de dire que des électrons traversent le diélectrique : il est isolant, n'en laisse passer aucun et ne fournit rien ; la charge ne disparaît pas, elle passe d'une armature à l'autre en traversant la lampe.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un condensateur de capacité 330 µF est chargé sous 4,0 V. Calculer l'énergie qu'il emmagasine, en mJ, arrondie au dixième.",
+      "answerKey": {
+        "value": 2.64,
+        "tolerance": 0.06,
+        "unit": "mJ"
+      },
+      "explanation": "E_C = ½·C·u² = ½ × 330·10⁻⁶ × 4,0² = ½ × 330·10⁻⁶ × 16 = 2,64·10⁻³ J, soit 2,64 mJ ≈ 2,6 mJ ✓ (l'oubli du facteur ½ donnerait 5,28 mJ).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi le constructeur indique-t-il une tension de service nettement inférieure à la tension de claquage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que la relation q = C·u cesse d'être valable au-delà de la tension de service"
+        },
+        {
+          "id": "b",
+          "text": "Parce que la capacité C augmente quand la tension dépasse la tension de service"
+        },
+        {
+          "id": "c",
+          "text": "Parce que le condensateur se décharge plus vite au-dessus de la tension de service"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'il faut une marge de sécurité avant l'étincelle qui perce le diélectrique"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La tension de service est la tension nominale d'utilisation : en restant nettement en dessous de la tension de claquage, on évite l'étincelle qui perce le diélectrique ✓. La proportionnalité q = C·u vaut tant qu'il n'y a pas de claquage et C ne dépend que de la géométrie et du diélectrique ; la vitesse de décharge dépend de τ = RC, pas de la tension.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La surface S des armatures d'un condensateur plan est doublée et leur écartement e est triplé, le diélectrique restant le même. Par quel facteur la capacité est-elle multipliée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/2"
+        },
+        {
+          "id": "b",
+          "text": "2/3"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C = ε·S/e : S × 2 multiplie C par 2 et e × 3 la divise par 3, donc C est multipliée par 2/3 ✓. Le facteur 3/2 inverse le rôle de S et de e ; 6 multiplie les deux facteurs sans voir que e est au dénominateur ; 5 les additionne.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La charge d'un dipôle RC est régie par l'équation 0,040·du_C/dt + u_C = 9,0 (unités SI) et le condensateur a pour capacité C = 8,0 µF. Quelle est la valeur de R ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,0 kΩ"
+        },
+        {
+          "id": "b",
+          "text": "0,20 mΩ"
+        },
+        {
+          "id": "c",
+          "text": "3,1 MΩ"
+        },
+        {
+          "id": "d",
+          "text": "1,1 MΩ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équation est de la forme τ·du_C/dt + u_C = E : le coefficient de du_C/dt donne τ = 0,040 s, donc R = τ/C = 0,040 / 8,0·10⁻⁶ = 5,0·10³ Ω = 5,0 kΩ ✓. La valeur 0,20 mΩ calcule C/τ au lieu de τ/C ; 3,1 MΩ prend τ = 25 s (le coefficient de u_C après division par 0,040) ; 1,1 MΩ prend pour τ le second membre 9,0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Après la charge sous E = 6,0 V, on enregistre la décharge du condensateur dans R = 5,0 kΩ (figure). Quelle est la capacité C ?\n<svg viewBox=\"0 0 340 230\"><title>Courbe de décharge u_C(t) depuis 6,0 V, graduée en ms et en V</title><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"82.4\" y1=\"22\" x2=\"82.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"112.9\" y1=\"22\" x2=\"112.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"143.3\" y1=\"22\" x2=\"143.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"173.8\" y1=\"22\" x2=\"173.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"204.2\" y1=\"22\" x2=\"204.2\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"234.7\" y1=\"22\" x2=\"234.7\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"265.1\" y1=\"22\" x2=\"265.1\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"295.6\" y1=\"22\" x2=\"295.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326\" y1=\"22\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"162\" x2=\"326\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"134\" x2=\"326\" y2=\"134\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"106\" x2=\"326\" y2=\"106\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"78\" x2=\"326\" y2=\"78\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"50\" x2=\"326\" y2=\"50\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"22\" x2=\"326\" y2=\"22\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52\" y1=\"196\" x2=\"52\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"52,12 48,20 56,20\" fill=\"#0f172a\"/><line x1=\"52\" y1=\"187\" x2=\"52\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"52\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"82.4\" y1=\"187\" x2=\"82.4\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"82.4\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><line x1=\"112.9\" y1=\"187\" x2=\"112.9\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"112.9\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><line x1=\"143.3\" y1=\"187\" x2=\"143.3\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"143.3\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><line x1=\"173.8\" y1=\"187\" x2=\"173.8\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"173.8\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><line x1=\"204.2\" y1=\"187\" x2=\"204.2\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"204.2\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">50</text><line x1=\"234.7\" y1=\"187\" x2=\"234.7\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"234.7\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><line x1=\"265.1\" y1=\"187\" x2=\"265.1\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"265.1\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">70</text><line x1=\"295.6\" y1=\"187\" x2=\"295.6\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"295.6\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">80</text><line x1=\"326\" y1=\"187\" x2=\"326\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"326\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">90</text><line x1=\"49\" y1=\"190\" x2=\"55\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"194\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"49\" y1=\"162\" x2=\"55\" y2=\"162\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"166\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"49\" y1=\"134\" x2=\"55\" y2=\"134\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"138\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"49\" y1=\"106\" x2=\"55\" y2=\"106\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"110\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"49\" y1=\"78\" x2=\"55\" y2=\"78\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"82\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"49\" y1=\"50\" x2=\"55\" y2=\"50\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"54\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"49\" y1=\"22\" x2=\"55\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"26\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><text x=\"322\" y=\"224\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"60\" y=\"14\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_C (V)</text><polyline points=\"52,22 54.3,30.2 56.6,38 58.9,45.4 61.1,52.5 63.4,59.2 65.7,65.5 68,71.6 70.3,77.4 72.5,82.9 74.8,88.1 77.1,93.1 79.4,97.8 81.7,102.3 84,106.6 86.2,110.6 88.5,114.5 90.8,118.2 93.1,121.7 95.4,125 97.7,128.2 100,131.2 102.2,134.1 104.5,136.8 106.8,139.4 109.1,141.9 111.4,144.2 113.7,146.4 115.9,148.6 118.2,150.6 120.5,152.5 122.8,154.3 125.1,156.1 127.3,157.7 129.6,159.3 131.9,160.8 134.2,162.2 136.5,163.6 138.8,164.9 141.1,166.1 143.3,167.3 145.6,168.4 147.9,169.4 150.2,170.4 152.5,171.4 154.8,172.3 157,173.2 159.3,174 161.6,174.8 163.9,175.5 166.2,176.2 168.4,176.9 170.7,177.5 173,178.1 175.3,178.7 177.6,179.3 179.9,179.8 182.2,180.3 184.4,180.8 186.7,181.2 189,181.6 191.3,182 193.6,182.4 195.8,182.8 198.1,183.2 200.4,183.5 202.7,183.8 205,184.1 207.3,184.4 209.6,184.7 211.8,184.9 214.1,185.2 216.4,185.4 218.7,185.6 221,185.8 223.2,186 225.5,186.2 227.8,186.4 230.1,186.6 232.4,186.8 234.7,186.9 236.9,187.1 239.2,187.2 241.5,187.4 243.8,187.5 246.1,187.6 248.4,187.7 250.7,187.8 252.9,187.9 255.2,188 257.5,188.1 259.8,188.2 262.1,188.3 264.4,188.4 266.6,188.5 268.9,188.5 271.2,188.6 273.5,188.7 275.8,188.7 278.1,188.8 280.3,188.9 282.6,188.9 284.9,189 287.2,189 289.5,189.1 291.8,189.1 294,189.2 296.3,189.2 298.6,189.2 300.9,189.3 303.2,189.3 305.4,189.3 307.7,189.4 310,189.4 312.3,189.4 314.6,189.5 316.9,189.5 319.1,189.5 321.4,189.5 323.7,189.6 326,189.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,0 mF"
+        },
+        {
+          "id": "b",
+          "text": "3,0 µF"
+        },
+        {
+          "id": "c",
+          "text": "2,1 µF"
+        },
+        {
+          "id": "d",
+          "text": "1,4 µF"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En décharge, τ est l'abscisse de 0,37 E = 0,37 × 6,0 V ≈ 2,2 V : la courbe y passe vers 15 ms, donc τ = 15 ms et C = τ/R = 15·10⁻³ / 5,0·10³ = 3,0·10⁻⁶ F = 3,0 µF ✓. La valeur 1,4 µF lit l'abscisse de 0,63 E (≈ 7 ms) ; 2,1 µF celle de E/2 (≈ 10 ms) ; 3,0 mF se trompe sur la puissance de dix.",
+      "difficulty": 3
+    }
+  ]
+}

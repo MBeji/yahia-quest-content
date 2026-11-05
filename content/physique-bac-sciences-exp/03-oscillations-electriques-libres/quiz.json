@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Oscillations électriques libres",
+  "questions": [
+    {
+      "prompt": "Un condensateur chargé est fermé, à t = 0, sur une bobine en série avec un résistor, la résistance totale étant faible. Aucun générateur n'est dans le circuit. Comment évolue la tension u_C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle décroît régulièrement vers 0 sans jamais changer de signe"
+        },
+        {
+          "id": "b",
+          "text": "Elle change de signe plusieurs fois en perdant de l'amplitude"
+        },
+        {
+          "id": "c",
+          "text": "Elle oscille indéfiniment sans que son amplitude ne varie"
+        },
+        {
+          "id": "d",
+          "text": "Elle croît jusqu'à une valeur maximale puis reste constante"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec une résistance totale faible, le circuit RLC libre est en régime pseudopériodique : la bobine fait circuler le courant même quand u_C = 0, donc q change de signe, et la résistance dissipe de l'énergie, donc l'amplitude décroît ✓. La décroissance sans changement de signe est celle d'un condensateur déchargé dans un simple résistor, sans bobine. Une amplitude constante exigerait une résistance nulle. La croissance vers un palier est la charge d'un dipôle RC, qui demande un générateur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une voie de l'oscilloscope est reliée aux bornes du résistor R₀ d'un circuit RLC libre. Que visualise-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une tension proportionnelle à l'intensité : u_R₀ = R₀·i"
+        },
+        {
+          "id": "b",
+          "text": "Une tension proportionnelle à la charge : u_R₀ = q/C"
+        },
+        {
+          "id": "c",
+          "text": "Une tension proportionnelle à di/dt : u_R₀ = L·di/dt"
+        },
+        {
+          "id": "d",
+          "text": "Une tension toujours positive, quel que soit le sens de i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Aux bornes d'un résistor, la loi d'Ohm donne u_R₀ = R₀·i : la voie est l'image de l'intensité, et elle change de signe quand i change de sens ✓. La relation q/C est celle du condensateur, qui donne u_C et non u_R₀. Le terme L·di/dt est l'auto-induction de la bobine. Une tension toujours positive ignorerait que i s'inverse à chaque demi-pseudo-période.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On augmente fortement la résistance totale R d'un circuit RLC libre, L et C restant inchangées. Que finit-on par observer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les oscillations s'amplifient, car la résistance fournit de l'énergie"
+        },
+        {
+          "id": "b",
+          "text": "Les oscillations deviennent non amorties, de période T₀"
+        },
+        {
+          "id": "c",
+          "text": "Les oscillations disparaissent : le régime devient apériodique"
+        },
+        {
+          "id": "d",
+          "text": "Les oscillations durent plus longtemps avec la même amplitude initiale"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand R augmente, l'amortissement augmente : le nombre d'oscillations diminue, puis elles disparaissent et la tension revient à zéro sans osciller, c'est le régime apériodique ✓. Une résistance ne fournit pas d'énergie, elle en dissipe : elle ne peut pas amplifier les oscillations. Des oscillations non amorties correspondent à R = 0, le cas inverse. Des oscillations plus longues correspondent à un amortissement plus faible, pas plus fort.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle équation différentielle vérifie la charge q d'un circuit RLC série en régime libre, de résistance totale R ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L·d²q/dt² + R·dq/dt + C·q = 0"
+        },
+        {
+          "id": "b",
+          "text": "d²q/dt² + R·dq/dt + q/(LC) = 0"
+        },
+        {
+          "id": "c",
+          "text": "L·dq/dt + R·q + q/C = 0"
+        },
+        {
+          "id": "d",
+          "text": "L·d²q/dt² + R·dq/dt + q/C = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La loi des mailles u_C + u_b + u_R₀ = 0, avec u_C = q/C, u_b + u_R₀ = R·i + L·di/dt et i = dq/dt, donne L·d²q/dt² + R·dq/dt + q/C = 0 ✓. Écrire C·q confond la tension q/C du condensateur avec un produit. En divisant par L, le terme devient (R/L)·dq/dt et non R·dq/dt. L'écriture L·dq/dt + R·q + q/C = 0 décale chaque dérivée d'un ordre : R·q n'a pas la dimension d'une tension, alors que R·i en a une.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un circuit LC non amorti est formé d'une bobine de 0,25 H et d'un condensateur de 1,0 µF. Quelle est sa période propre T₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,14 ms"
+        },
+        {
+          "id": "b",
+          "text": "0,50 ms"
+        },
+        {
+          "id": "c",
+          "text": "3,14 s"
+        },
+        {
+          "id": "d",
+          "text": "1,57 ms"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "T₀ = 2π√(LC) = 2π√(0,25 × 1,0·10⁻⁶) = 2π × 5,0·10⁻⁴ ≈ 3,14·10⁻³ s = 3,14 ms ✓. La valeur 0,50 ms est √(LC) seul, le facteur 2π est oublié. La valeur 3,14 s résulte d'une capacité laissée à 1,0 au lieu de 1,0·10⁻⁶ F. La valeur 1,57 ms est π√(LC) : le facteur 2 de 2π est oublié.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'énergie totale d'un circuit LC non amorti vaut 80 µJ. À un instant où l'intensité est nulle, que valent E_C et E_L ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E_C = 0 et E_L = 80 µJ"
+        },
+        {
+          "id": "b",
+          "text": "E_C = 80 µJ et E_L = 0"
+        },
+        {
+          "id": "c",
+          "text": "E_C = 40 µJ et E_L = 40 µJ"
+        },
+        {
+          "id": "d",
+          "text": "E_C = 80 µJ et E_L = 80 µJ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E_L = ½·L·i² s'annule quand i = 0, et l'énergie totale se conserve sans résistance : E_C = E = 80 µJ ✓. Le couple (0 ; 80 µJ) décrit l'instant opposé, où q = 0 et |i| est maximale. Le partage en 40 µJ et 40 µJ n'a lieu qu'à certains instants intermédiaires. Le couple (80 µJ ; 80 µJ) donnerait une énergie totale de 160 µJ, ce qui contredit la conservation.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que devient l'énergie totale E = E_C + E_L d'un circuit RLC série en régime libre amorti ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle reste constante : E_C perdue est regagnée par E_L"
+        },
+        {
+          "id": "b",
+          "text": "Elle augmente : la bobine ajoute de l'énergie à chaque oscillation"
+        },
+        {
+          "id": "c",
+          "text": "Elle diminue : une partie est transformée en chaleur dans R"
+        },
+        {
+          "id": "d",
+          "text": "Elle diminue : la charge q disparaît à chaque changement de signe"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On établit dE/dt = −R·i² : l'énergie totale ne peut que décroître, et la perte est transformée en chaleur par effet Joule dans la résistance ✓. Dire qu'elle reste constante ne vaut que pour R = 0. Une bobine emmagasine de l'énergie, elle n'en crée pas. La charge ne disparaît pas quand elle change de signe : elle s'inverse d'une armature à l'autre, et c'est la résistance qui dissipe l'énergie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un condensateur chargé à q(0) = +Q_m est fermé à t = 0 sur une bobine, sans courant initial. Avec q(t) = Q_m·sin(ω₀t + φ), quelle est la phase initiale φ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 rad"
+        },
+        {
+          "id": "b",
+          "text": "π/2 rad"
+        },
+        {
+          "id": "c",
+          "text": "π rad"
+        },
+        {
+          "id": "d",
+          "text": "−π/2 rad"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À t = 0, q(0) = Q_m·sin φ = Q_m impose sin φ = 1, donc φ = π/2 rad ✓ ; on vérifie que i(0) = ω₀Q_m·cos φ = 0. La valeur 0 rad donnerait q(0) = 0, donc un condensateur déchargé à t = 0. La valeur π rad donnerait aussi q(0) = 0, avec un courant initial négatif. La valeur −π/2 rad correspond à q(0) = −Q_m, la polarité opposée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur un oscillogramme de u_C (0,2 ms/div), deux maxima de même signe sont séparés de 5,0 divisions. Quelle est la pseudo-période T ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,50 ms"
+        },
+        {
+          "id": "b",
+          "text": "10 ms"
+        },
+        {
+          "id": "c",
+          "text": "25 ms"
+        },
+        {
+          "id": "d",
+          "text": "1,0 ms"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La pseudo-période est la durée entre deux maxima de même signe : T = 5,0 div × 0,2 ms/div = 1,0 ms ✓. La valeur 0,50 ms prend la moitié, c'est-à-dire la durée entre un maximum et le minimum suivant. La valeur 10 ms lit le balayage comme 2 ms/div. La valeur 25 ms divise le nombre de divisions par le balayage au lieu de les multiplier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bobine de 0,40 H est associée à un condensateur dans un circuit RLC faiblement amorti. La pseudo-période mesurée est T = 2,0 ms. Quelle est la capacité C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,0 µF"
+        },
+        {
+          "id": "b",
+          "text": "10 µF"
+        },
+        {
+          "id": "c",
+          "text": "0,25 µF"
+        },
+        {
+          "id": "d",
+          "text": "1,3·10² µF"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'amortissement est faible, donc T ≈ T₀ = 2π√(LC), d'où C = T²/(4π²·L) = (2,0·10⁻³)² / (4π² × 0,40) ≈ 2,5·10⁻⁷ F = 0,25 µF ✓. La valeur 1,0 µF utilise π² au lieu de 4π². La valeur 10 µF oublie le facteur 4π². La valeur 1,3·10² µF oublie d'élever T au carré.",
+      "difficulty": 2
+    }
+  ]
+}

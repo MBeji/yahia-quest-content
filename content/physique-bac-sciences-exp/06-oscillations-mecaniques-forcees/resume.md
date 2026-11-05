@@ -1,0 +1,10 @@
+# 📜 Résumé : Les oscillations mécaniques forcées
+
+- **Régime forcé** : le moteur à excentrique (excitateur) impose sa fréquence N au pendule élastique (résonateur) ; en régime permanent x = X_m sin(2πNt + φ_x), à la fréquence N et non à N₀ = (1/2π)√(k/m). X_m se lit de l'axe à la crête, T entre deux crêtes, et φ_x se tire de x(0) et du sens de variation.
+- **Équation différentielle** : par analogie avec le RLC (q ↔ x, i ↔ v, L ↔ m, R ↔ h, 1/C ↔ k, u ↔ F), m·x″ + h·x′ + k·x = F_m sin ωt, soit m·dv/dt + h·v + k·∫v dt = F_m sin ωt ; second membre non nul. v = V_m sin(ωt + φ_v) avec V_m = ω·X_m et φ_v = φ_x + π/2.
+- **Amplitude et impédance** : X_m = F_m / √(h²ω² + (mω² − k)²) avec ω = 2πN (et non N dans la forme en ω) ; V_m = F_m/Z avec Z = √(h² + (mω − k/ω)²) en kg/s. Pour N tendant vers 0, X_m tend vers F_m/k.
+- **Résonance d'élongation** : X_m est maximale pour N_r = √(N₀² − h²/(8π²m²)), légèrement inférieure à N₀ ; elle n'existe que si h² < 2mk ; l'écart N₀ − N_r croît avec h ; pour h = 0, X_m deviendrait infinie (cas idéal).
+- **Résonance de vitesse** : V_m est maximale à N₀ pour toute valeur de h, avec Z = h et V_m = F_m/h ; v est en phase avec F et x en retard de π/2 ; tan(φ_v − φ_F) = (k/ω − mω)/h ; x est en retard sur F à toute fréquence (de 0 à π).
+- **Amortissement** : plus h est faible, plus la résonance est aiguë ; plus h est grand, plus elle est floue, plus le pic est bas et plus N_r s'éloigne de N₀ ; pour h ≥ √(2mk) il n'y a plus de résonance d'élongation (régime forcé linéaire) ; N₀ ne dépend ni de h ni de F_m.
+- **Puissance moyenne** : P = ½·F_m·V_m·cos φ = ½·h·V_m² en watt, avec cos φ = h/Z ; elle est maximale à N₀, où P₀ = F_m²/(2h) ; ne pas oublier le facteur ½.
+- **Vitesse critique** : un véhicule qui franchit des bosses espacées de d à la vitesse v subit l'excitation de période T = d/v ; la résonance a lieu pour T = T₀ = 2π√(m/k), soit v_c = d/T₀ (× 3,6 pour les km/h) ; les amortisseurs rendent la résonance floue ; on cherche la résonance (caisse d'un instrument, marées) ou on l'évite (pont, machine tournante).

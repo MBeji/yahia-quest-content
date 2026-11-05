@@ -1,0 +1,141 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La bobine et le dipôle RL",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Dans l'alternateur d'une voiture, quel élément tourne, et quel est son rôle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les bobines, qui sont l'induit : elles tournent devant un aimant fixe"
+        },
+        {
+          "id": "b",
+          "text": "L'aimant, l'inducteur : il fait varier le champ dans les bobines"
+        },
+        {
+          "id": "c",
+          "text": "Les bobines, qui sont l'inducteur : elles tournent et fournissent le courant"
+        },
+        {
+          "id": "d",
+          "text": "L'aimant, qui est l'induit : il fournit le courant au circuit"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans un alternateur à induit fixe (stator), l'inducteur est un aimant multipolaire qui tourne (rotor) : en tournant, il fait varier le champ à travers les bobines fixes ✓. Dans l'alternateur de voiture, l'induit (les bobines) est fixe : ce ne sont pas les bobines qui tournent. L'aimant ne fournit pas le courant : ce sont les bobines de l'induit qui le fournissent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On approche le pôle nord d'un aimant d'une bobine fermée sur un résistor, d'abord lentement, puis deux fois plus vite. Comparée à l'approche lente, l'impulsion de la tension aux bornes du résistor est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "de même signe et plus haute"
+        },
+        {
+          "id": "b",
+          "text": "de même signe et de même hauteur"
+        },
+        {
+          "id": "c",
+          "text": "de signe opposé et plus haute"
+        },
+        {
+          "id": "d",
+          "text": "de signe opposé et de même hauteur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le sens du déplacement est le même, donc le courant induit garde le même sens et le signe de l'impulsion ne change pas. Une variation de champ plus rapide produit un courant induit plus intense : l'impulsion est plus haute ✓. « Même hauteur » ignore l'effet de la rapidité. « Signe opposé » confond la vitesse avec le sens du déplacement : le signe ne s'inverse qu'à l'éloignement. « Signe opposé et même hauteur » cumule les deux erreurs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle modification fait augmenter l'inductance d'un solénoïde ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Doubler l'intensité du courant qui le traverse"
+        },
+        {
+          "id": "b",
+          "text": "Doubler sa longueur, le nombre de spires et la section restant identiques"
+        },
+        {
+          "id": "c",
+          "text": "Le brancher sur un générateur de fréquence plus élevée"
+        },
+        {
+          "id": "d",
+          "text": "Doubler son nombre de spires, longueur et section restant identiques"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'inductance ne dépend que de la géométrie : elle augmente avec le nombre de spires et avec la section, et diminue quand la longueur augmente ✓. Ni l'intensité du courant, ni la fréquence du générateur n'interviennent. Doubler la longueur à nombre de spires constant diminue L.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un dipôle RL, de résistance totale R = 40 Ω et d'inductance L = 0,20 H, est soumis à un échelon de tension E = 10 V. Calculer, en mA, l'intensité du courant à l'instant t = τ après la fermeture de l'interrupteur.",
+      "answerKey": {
+        "value": 158,
+        "tolerance": 3,
+        "unit": "mA"
+      },
+      "explanation": "On a I₀ = E/R = 10 / 40 = 0,25 A et τ = L/R = 0,20 / 40 = 5,0 ms. À t = τ, i = I₀ (1 − e^(−1)) ≈ 0,63 × 0,25 ≈ 0,158 A, soit environ 158 mA.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL, de constante de temps τ = 8,0 ms et d'intensité finale I₀ = 0,50 A, voit sa résistance totale R divisée par 2 et son inductance L doublée, E restant inchangée. Quelles sont les nouvelles valeurs de τ et de I₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "τ = 32 ms et I₀ = 1,0 A"
+        },
+        {
+          "id": "b",
+          "text": "τ = 32 ms et I₀ = 0,50 A"
+        },
+        {
+          "id": "c",
+          "text": "τ = 8,0 ms et I₀ = 1,0 A"
+        },
+        {
+          "id": "d",
+          "text": "τ = 16 ms et I₀ = 0,25 A"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a τ = L/R : L doublée multiplie τ par 2 et R divisée par 2 le multiplie encore par 2, soit τ = 4 × 8,0 = 32 ms. Et I₀ = E/R : R divisée par 2 double I₀, soit 1,0 A ✓. Garder I₀ à 0,50 A oublie que l'intensité finale dépend de la résistance totale. Garder τ à 8,0 ms oublie que τ dépend de L et de R. 16 ms et 0,25 A inversent le rôle de R dans I₀ et ne tiennent pas compte de L.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le courant dans une bobine de 0,50 H passe de 0,50 A à 0,20 A. Quelle énergie magnétique la bobine a-t-elle restituée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 mJ"
+        },
+        {
+          "id": "b",
+          "text": "22,5 mJ"
+        },
+        {
+          "id": "c",
+          "text": "52,5 mJ"
+        },
+        {
+          "id": "d",
+          "text": "62,5 mJ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'énergie initiale vaut ½ × 0,50 × (0,50)² = 62,5 mJ et l'énergie finale ½ × 0,50 × (0,20)² = 10 mJ : la bobine a restitué 62,5 − 10 = 52,5 mJ ✓. 62,5 mJ est l'énergie initiale seule. 10 mJ est l'énergie finale seule. 22,5 mJ calcule ½ L (Δi)² = ½ × 0,50 × (0,30)² : l'énergie ne dépend pas du carré de la différence des courants.",
+      "difficulty": 2
+    }
+  ]
+}

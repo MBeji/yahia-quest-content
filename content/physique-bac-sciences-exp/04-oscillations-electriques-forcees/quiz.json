@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Les oscillations électriques forcées",
+  "questions": [
+    {
+      "prompt": "Un GBF impose u(t) = U_m sin(2πNt) à un circuit RLC série de fréquence propre N₀ = 250 Hz, avec N = 300 Hz. Une fois le régime permanent établi, quelle est la fréquence de i(t) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "250 Hz"
+        },
+        {
+          "id": "b",
+          "text": "300 Hz"
+        },
+        {
+          "id": "c",
+          "text": "50 Hz"
+        },
+        {
+          "id": "d",
+          "text": "550 Hz"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En régime forcé permanent, i(t) oscille à la fréquence N imposée par le GBF, ici 300 Hz ✓. 250 Hz est la fréquence propre N₀, celle des oscillations libres. 50 Hz est l'écart N − N₀ et 550 Hz la somme N + N₀ : aucune de ces combinaisons n'est une fréquence du circuit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un circuit RLC série est alimenté par une tension de valeur maximale U_m = 9,0 V et parcouru par un courant de valeur maximale I_m = 30 mA. Quelle est son impédance Z à cette fréquence ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,30 Ω"
+        },
+        {
+          "id": "b",
+          "text": "3,3 × 10⁻³ Ω"
+        },
+        {
+          "id": "c",
+          "text": "300 Ω"
+        },
+        {
+          "id": "d",
+          "text": "270 Ω"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Z = U_m / I_m = 9,0 / 0,030 = 300 Ω ✓ (30 mA = 0,030 A). 0,30 Ω divise 9,0 par 30 sans convertir les mA en A. 3,3 × 10⁻³ Ω est le quotient inversé I_m / U_m. 270 Ω est le produit 9,0 × 30, qui ne correspond à aucune loi.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le montage de la figure, la voie Y1 de l'oscilloscope est reliée à A et la voie Y2 à B. On veut visualiser la tension u du GBF et la tension u_R0 aux bornes du résistor R₀. Quel point doit être relié à la masse de l'oscilloscope ?\n<svg viewBox=\"0 0 340 176\"><title>Circuit RLC série alimenté par un GBF : points A, D, B et M</title><line x1=\"50\" y1=\"78\" x2=\"50\" y2=\"40\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"40\" x2=\"92\" y2=\"40\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"102\" y1=\"40\" x2=\"150\" y2=\"40\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"40\" x2=\"170\" y2=\"40\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"40\" x2=\"270\" y2=\"40\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"40\" x2=\"270\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"120\" x2=\"270\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"160\" x2=\"50\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"160\" x2=\"50\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"100\" r=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"50\" y=\"104\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">GBF</text><line x1=\"92\" y1=\"28\" x2=\"92\" y2=\"52\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"102\" y1=\"28\" x2=\"102\" y2=\"52\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"97\" y=\"20\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><rect x=\"170\" y=\"30\" width=\"60\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"200\" y=\"44\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">L, r</text><rect x=\"260\" y=\"70\" width=\"20\" height=\"50\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"296\" y=\"100\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₀</text><circle cx=\"50\" cy=\"40\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"36\" y=\"36\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><circle cx=\"150\" cy=\"40\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"150\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text><circle cx=\"270\" cy=\"40\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"284\" y=\"38\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><circle cx=\"270\" cy=\"160\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"284\" y=\"164\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point A"
+        },
+        {
+          "id": "b",
+          "text": "Le point D"
+        },
+        {
+          "id": "c",
+          "text": "Le point B"
+        },
+        {
+          "id": "d",
+          "text": "Le point M"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La masse doit être le point commun aux deux tensions observées : u est la tension entre A et M, u_R0 la tension entre B et M, et le point M est commun aux deux ✓. Mettre A à la masse annulerait la tension vue par la voie Y1 ; mettre B à la masse annulerait celle de la voie Y2. Le point D n'est une borne ni du GBF ni du résistor : il ne donnerait ni u ni u_R0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur l'écran, la période de u occupe 8,0 div. Le maximum de i apparaît 2,0 div après celui de u. Quel est le déphasage φ_i − φ_u ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/2 rad"
+        },
+        {
+          "id": "b",
+          "text": "+π/2 rad"
+        },
+        {
+          "id": "c",
+          "text": "−π/4 rad"
+        },
+        {
+          "id": "d",
+          "text": "+π/4 rad"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Δt / T = 2,0 / 8,0 = 1/4, donc |Δφ| = 2π × 1/4 = π/2 rad. Le maximum de i arrive après celui de u : i est en retard, donc φ_i − φ_u = −π/2 rad ✓. +π/2 rad inverse le sens, puisque cela voudrait dire que i est en avance. ±π/4 rad résulte de la formule |Δφ| = π Δt / T, qui oublie le facteur 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour un RLC série à une pulsation donnée, R = 30 Ω, Lω = 90 Ω et 1/(Cω) = 50 Ω. Quelle est l'impédance Z ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 Ω"
+        },
+        {
+          "id": "b",
+          "text": "50 Ω"
+        },
+        {
+          "id": "c",
+          "text": "70 Ω"
+        },
+        {
+          "id": "d",
+          "text": "143 Ω"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Z = √(R² + (Lω − 1/(Cω))²) = √(30² + 40²) = √2500 = 50 Ω ✓. 30 Ω ne garde que R, ce qui n'est valable qu'à la résonance. 70 Ω additionne arithmétiquement R + Lω − 1/(Cω) au lieu de composer des vecteurs. 143 Ω additionne Lω et 1/(Cω) au lieu de les soustraire : √(30² + 140²).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un RLC série est alimenté à une fréquence N inférieure à sa fréquence propre N₀. Quel est son caractère, et comment est i par rapport à u ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inductif ; i en retard sur u"
+        },
+        {
+          "id": "b",
+          "text": "Inductif ; i en avance sur u"
+        },
+        {
+          "id": "c",
+          "text": "Capacitif ; i en avance sur u"
+        },
+        {
+          "id": "d",
+          "text": "Capacitif ; i en retard sur u"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour N < N₀, Lω est plus petit que 1/(Cω) : la tension du condensateur l'emporte, φ_i est positif, i est en avance sur u et le circuit est capacitif ✓. Inductif avec i en retard décrit le cas N > N₀. Les deux autres associent un caractère à la phase qui ne lui correspond pas : un circuit inductif a toujours i en retard, un circuit capacitif i en avance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un circuit RLC série a pour inductance L = 0,25 H et pour capacité C = 1,0 µF. Quelle est sa fréquence de résonance d'intensité N₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "318 Hz"
+        },
+        {
+          "id": "b",
+          "text": "637 Hz"
+        },
+        {
+          "id": "c",
+          "text": "2,0 × 10³ Hz"
+        },
+        {
+          "id": "d",
+          "text": "0,32 Hz"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "N₀ = 1/(2π√(LC)) = 1/(2π × √(0,25 × 1,0 × 10⁻⁶)) = 1/(2π × 5,0 × 10⁻⁴) = 318 Hz ✓. 2,0 × 10³ est ω₀ = 1/√(LC), exprimée en rad/s et non en Hz. 637 Hz remplace 2π par π. 0,32 Hz oublie de convertir les µF en F, c'est-à-dire prend C = 1,0 F.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle affirmation sur la résonance de charge d'un circuit RLC série est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À N₀, quelle que soit la résistance"
+        },
+        {
+          "id": "b",
+          "text": "À N_r > N₀, si R est assez faible"
+        },
+        {
+          "id": "c",
+          "text": "À N_r < N₀, quelle que soit la résistance"
+        },
+        {
+          "id": "d",
+          "text": "À N_r < N₀, si R est assez faible"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La charge passe par un maximum à N_r = √(N₀² − R²/(8π²L²)) < N₀, et seulement si R² < 2L/C, donc si R est assez faible ✓. Une résonance à N₀ pour toute résistance décrit la résonance d'intensité. N_r est toujours inférieure à N₀, jamais supérieure. Et pour une résistance trop grande, Q_m décroît à partir de N = 0 : il n'y a plus de maximum.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À la résonance d'intensité, un circuit RLC série a pour résistance totale R = 25 Ω, pour inductance L = 0,50 H et pour capacité C = 2,0 µF. Quel est son facteur de surtension Q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,020"
+        },
+        {
+          "id": "b",
+          "text": "500"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        },
+        {
+          "id": "d",
+          "text": "1,25 × 10⁴"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Q = (1/R)√(L/C) = (1/25) × √(0,50 / (2,0 × 10⁻⁶)) = (1/25) × 500 = 20 ✓. 500 est √(L/C) sans le facteur 1/R. 1,25 × 10⁴ multiplie par R au lieu de diviser. 0,020 correspond à une capacité prise égale à 2,0 F : (1/25) × √(0,50/2,0) = 0,020.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle est soumis à une tension de valeur efficace 12 V ; il est traversé par un courant de valeur efficace 0,50 A, déphasé de 60° par rapport à la tension. Quelle est la puissance moyenne reçue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,0 W"
+        },
+        {
+          "id": "b",
+          "text": "3,0 W"
+        },
+        {
+          "id": "c",
+          "text": "4,2 W"
+        },
+        {
+          "id": "d",
+          "text": "5,2 W"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "P = UI cos φ = 12 × 0,50 × cos 60° = 6,0 × 0,50 = 3,0 W ✓. 6,0 W est la puissance apparente UI, exprimée en V·A, où cos φ est oublié. 5,2 W utilise sin 60° ≈ 0,87 au lieu de cos 60°. 4,2 W divise UI par √2, alors que U et I sont déjà des valeurs efficaces.",
+      "difficulty": 2
+    }
+  ]
+}

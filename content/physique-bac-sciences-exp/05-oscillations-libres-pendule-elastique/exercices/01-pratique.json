@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers va-et-vient du ressort",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un solide de masse m = 0,50 kg est fixé à un ressort horizontal de raideur k = 8,0 N·m⁻¹. Quelle est sa période propre T₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 s"
+        },
+        {
+          "id": "b",
+          "text": "0,25 s"
+        },
+        {
+          "id": "c",
+          "text": "1,6 s"
+        },
+        {
+          "id": "d",
+          "text": "0,39 s"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "m/k = 0,50/8,0 = 0,0625 s², dont la racine est 0,25 s ; T₀ = 2π × 0,25 ≈ 1,6 s ✓. La valeur 25 s retourne le rapport : 2π·√(k/m) donne 25 s, c'est la pulsation inversée. La valeur 0,25 s oublie le facteur 2π. La valeur 0,39 s oublie la racine : 2π × (m/k) = 0,39.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'élongation d'un pendule élastique non amorti oscille entre +6,0 cm et −6,0 cm ; deux maxima successifs sont séparés de 0,25 s. Que valent l'amplitude X_m et la fréquence propre N₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X_m = 12 cm ; N₀ = 4,0 Hz"
+        },
+        {
+          "id": "b",
+          "text": "X_m = 6,0 cm ; N₀ = 0,25 Hz"
+        },
+        {
+          "id": "c",
+          "text": "X_m = 6,0 cm ; N₀ = 25 rad·s⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "X_m = 6,0 cm ; N₀ = 4,0 Hz"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'amplitude se mesure de O au sommet : X_m = 6,0 cm. La période est T₀ = 0,25 s, donc N₀ = 1/T₀ = 4,0 Hz ✓. La valeur 12 cm est l'écart entre le minimum et le maximum, soit le double de l'amplitude. La valeur 0,25 est la période elle-même, exprimée en secondes, non la fréquence. La valeur 25 rad·s⁻¹ est la pulsation propre 2π/T₀ ≈ 25 : elle a une autre unité que la fréquence en Hz.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On écarte un solide de 2,0 cm puis, avec le même ressort, de 6,0 cm, et on l'abandonne sans vitesse à chaque fois. Que dire des périodes propres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elles sont égales : T₀ ne dépend que de la masse du solide et de la raideur du ressort"
+        },
+        {
+          "id": "b",
+          "text": "Elle est plus courte pour 6,0 cm, car le solide atteint une vitesse maximale plus grande"
+        },
+        {
+          "id": "c",
+          "text": "Elle est plus longue pour 6,0 cm, car le solide parcourt une distance plus grande"
+        },
+        {
+          "id": "d",
+          "text": "Elle est trois fois plus longue pour 6,0 cm, car T₀ est proportionnelle à l'amplitude"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "T₀ = 2π·√(m/k) ne contient pas l'amplitude : les deux périodes sont égales ✓. Avec 6,0 cm la vitesse maximale est trois fois plus grande (V_m = X_m·ω₀), mais la distance à parcourir l'est aussi : les deux effets se compensent exactement. Invoquer seulement la vitesse, ou seulement la distance, conduit à des périodes différentes qu'aucune mesure n'a jamais données. Une période proportionnelle à X_m est contredite par l'expérience : elle ne dépend pas de l'amplitude.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un pendule élastique de masse m = 0,20 kg a pour période propre T₀ = 0,40 s. Quelle est la raideur k du ressort ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12,3 N·m⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "49,3 N·m⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "31,6 N·m⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "197 N·m⁻¹"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "De T₀ = 2π·√(m/k) on tire k = 4π²·m/T₀² = 39,5 × 0,20/0,16 ≈ 49,3 N·m⁻¹ ✓. La valeur 12,3 oublie le facteur 4 : π²·m/T₀². La valeur 31,6 met T₀² au numérateur : 4π²·T₀²/m. La valeur 197 compte le facteur 4 deux fois : (4π)²·m/T₀².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un pendule élastique de raideur k = 80 N·m⁻¹ oscille avec l'amplitude X_m = 5,0 cm. Quelle est son énergie mécanique E ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,0·10⁻¹ J"
+        },
+        {
+          "id": "b",
+          "text": "5,0·10⁻² J"
+        },
+        {
+          "id": "c",
+          "text": "1,0·10⁻¹ J"
+        },
+        {
+          "id": "d",
+          "text": "2,0 J"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E = ½·k·X_m² = ½ × 80 × (0,050)² = 0,10 J = 1,0·10⁻¹ J ✓. La valeur 2,0·10⁻¹ J oublie le facteur ½ : k·X_m². La valeur 5,0·10⁻² J prend le facteur ¼ qui précède les termes en cos 2(ω₀·t + φ) de E_c et de E_p, non celui de E. La valeur 2,0 J oublie d'élever l'amplitude au carré : ½·k·X_m.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les maxima successifs de x(t) d'un pendule dans un liquide valent 6,0 cm ; 3,0 cm ; 1,5 cm, aux dates 0 ; 0,50 s ; 1,0 s. Quelle est la pseudo-période T, et comment varie l'énergie mécanique entre deux maxima successifs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T = 0,50 s ; E est divisée par 4"
+        },
+        {
+          "id": "b",
+          "text": "T = 0,50 s ; E est divisée par 2"
+        },
+        {
+          "id": "c",
+          "text": "T = 1,0 s ; E est divisée par 4"
+        },
+        {
+          "id": "d",
+          "text": "T = 0,50 s ; E reste constante, puisque T l'est"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux maxima successifs sont séparés de T = 0,50 s. À un maximum, v = 0 et E = ½·k·X² : l'amplitude est divisée par 2, donc E est divisée par 2² = 4 ✓. Une division par 2 oublie que E varie comme le carré de l'amplitude. La valeur 1,0 s est la durée entre le premier et le troisième maximum, soit 2T. Une énergie constante est celle d'un pendule non amorti : ici l'amplitude diminue, donc E aussi, même si T reste la même.",
+      "difficulty": 2
+    }
+  ]
+}
