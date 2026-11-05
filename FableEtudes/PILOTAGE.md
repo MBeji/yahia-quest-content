@@ -32,10 +32,10 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Mathématiques | mathématiques | `222445` + `222446` | ✅ validée R-7 | 19/19 | — (gisement possible) |
 | Mathématiques | physique | `223432` | ❌ aucune | — | A1 |
 | Mathématiques | chimie | `224432` | ❌ aucune | — | A1 |
-| Sciences expérimentales | SVT | `225432` | ❌ aucune | — | A1 |
+| Sciences expérimentales | SVT | `225432` | 🔄 en cours (`claude/sciences-bac-sciences-exp`, 2026-11-05) — PDF de 13 Mo à récupérer | 0 chapitre | choix de Mohamed du 2026-11-05 (physique + chimie + SVT) |
 | Sciences expérimentales | mathématiques | `222433` + `222434` | ✅ validée R-7 (2026-11-05) | 17/17 chapitres — matière complète (2026-11-05) | fiche différentielle + adaptation des chapitres de `math-bac-math` / `math-bac-techniques` (décision de Mohamed du 2026-11-05 : même collection, version allégée) |
-| Sciences expérimentales | physique | `223433` | ❌ aucune | — | A1 |
-| Sciences expérimentales | chimie | `224433` | ❌ aucune | — | A1 |
+| Sciences expérimentales | physique | `223433` | 🔄 en cours (`claude/sciences-bac-sciences-exp`, 2026-11-05) | 0/11 chapitres | choix de Mohamed du 2026-11-05 (physique + chimie + SVT) |
+| Sciences expérimentales | chimie | `224433` | 🔄 en cours (`claude/sciences-bac-sciences-exp`, 2026-11-05) — PDF de 9,8 Mo à récupérer | 0/13 chapitres | choix de Mohamed du 2026-11-05 (physique + chimie + SVT) |
 | Sciences de l'informatique | mathématiques | `222472` | ❌ aucune | — | A1 |
 | Sciences de l'informatique | physique / chimie | `223471` / `224471` | ❌ aucune | — | A1 |
 | Sciences de l'informatique | algorithmique, STI | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
