@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve de Briggs",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Parmi ces inégalités, laquelle est vraie pour tout réel x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln x ≥ x − 1"
+        },
+        {
+          "id": "b",
+          "text": "ln x ≤ x − 1"
+        },
+        {
+          "id": "c",
+          "text": "ln x ≤ 1 − 1/x"
+        },
+        {
+          "id": "d",
+          "text": "ln x ≥ 1/x − 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec g(x) = x − 1 − ln x, g′(x) = 1 − 1/x = (x − 1)/x : g décroît sur ]0 ; 1[, croît sur ]1 ; +∞[ et g(1) = 0 est son minimum, donc g ≥ 0, c'est-à-dire ln x ≤ x − 1 ✓. Les trois autres sont fausses : en x = e, ln e = 1 < e − 1 ≈ 1,72 réfute ln x ≥ x − 1 ; ln e = 1 > 1 − 1/e ≈ 0,63 réfute ln x ≤ 1 − 1/x (c'est l'inégalité inverse qui est vraie) ; et en x = ½, ln ½ ≈ −0,69 < 1/x − 1 = 1 réfute ln x ≥ 1/x − 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une machine seule produit un bruit de 74 dB ; les intensités sonores de machines identiques s'additionnent. On rappelle d(I) = 10 log(I/I₀) et l'on donne log 5 ≈ 0,70. Quel niveau sonore produisent cinq de ces machines ensemble ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "370 dB"
+        },
+        {
+          "id": "b",
+          "text": "84 dB"
+        },
+        {
+          "id": "c",
+          "text": "81 dB"
+        },
+        {
+          "id": "d",
+          "text": "77 dB"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'intensité totale est 5I, donc d(5I) = 10 log(5I/I₀) = 10 log 5 + 10 log(I/I₀) ≈ 7 + 74 = 81 dB ✓ : le produit dans le log devient une somme. 370 dB additionne les niveaux, ce qui confond décibels et intensités ; 77 dB applique à cinq machines la règle « +3 dB » du doublement ; 84 dB ajoute 10 dB, comme si l'intensité était multipliée par 10.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un entier N s'écrit avec 25 chiffres. Quel encadrement de log N est exact ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24 < log N ≤ 25"
+        },
+        {
+          "id": "b",
+          "text": "25 ≤ log N < 26"
+        },
+        {
+          "id": "c",
+          "text": "24 ≤ log N < 25"
+        },
+        {
+          "id": "d",
+          "text": "10²⁴ ≤ log N < 10²⁵"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si N = a × 10ᵖ avec 1 ≤ a < 10, N a p + 1 chiffres : ici p = 24, donc log N = log a + 24 avec 0 ≤ log a < 1, soit 24 ≤ log N < 25 ✓. La borne 24 est atteinte : N = 10²⁴ a bien 25 chiffres et log N = 24. L'encadrement 25 ≤ log N < 26 correspond à 26 chiffres, et 10²⁴ ≤ N < 10²⁵ est l'encadrement de N, pas celui de log N. L'encadrement 24 < log N ≤ 25 inverse les crochets : N = 10²⁴ aurait 25 chiffres et serait exclu à tort.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour quelle valeur du réel a > 0 la fonction f définie sur ]0 ; +∞[ par f(x) = ln x − ax admet-elle un maximum égal à −2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/e"
+        },
+        {
+          "id": "b",
+          "text": "e"
+        },
+        {
+          "id": "c",
+          "text": "e²"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f′(x) = 1/x − a est positive sur ]0 ; 1/a[ et négative ensuite : le maximum est f(1/a) = ln(1/a) − 1 = −ln a − 1. Il vaut −2 si ln a = 1, soit a = e ✓ (alors f(1/e) = −1 − 1 = −2). La valeur 1/e correspond à ln a = −1, et e² à ln a = 2 ; la valeur 2 vient de −ln a − 1 = −2 lu comme a = 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On pose u₀ = 1 et, pour tout entier n, uₙ₊₁ = ln(1 + uₙ). On admet que tous les termes sont strictement positifs. Vers quoi converge la suite (uₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "ln 2"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "+∞ : la suite diverge"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x > 0, ln(1 + x) < x (la fonction x − ln(1 + x) a pour dérivée x/(1 + x) > 0 et vaut 0 en 0), donc uₙ₊₁ < uₙ : la suite est décroissante et minorée par 0, donc convergente vers ℓ ≥ 0. Par continuité de ln, ℓ = ln(1 + ℓ), et x − ln(1 + x) > 0 pour x > 0 impose ℓ = 0 ✓ (u₁ ≈ 0,693, u₂ ≈ 0,527, u₃ ≈ 0,423). La valeur ln 2 n'est que u₁, 1 est u₀, et une suite décroissante ne peut pas tendre vers +∞.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un programme calcule log x ainsi :\nsi x < 1 : x ← 1/x ; afficher « − »\nn ← 0\ntant que x ≥ 10 : x ← x/10 ; n ← n + 1\nafficher n, « , »\nOn l'exécute pour x = 0,00052. Que commence-t-il par afficher, et quelle est la partie entière de log 0,00052 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "« −4, » ; la partie entière est −4"
+        },
+        {
+          "id": "b",
+          "text": "« −4, » ; la partie entière est −3"
+        },
+        {
+          "id": "c",
+          "text": "« −3, » ; la partie entière est −3"
+        },
+        {
+          "id": "d",
+          "text": "« −3, » ; la partie entière est −4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme 0,00052 < 1, le programme affiche « − » puis travaille sur 1/0,00052 ≈ 1 923 : trois divisions par 10 la ramènent à 1,923, donc n = 3 et il affiche « −3, » (la suite donne −3,28…). Or 0,00052 = 5,2 × 10⁻⁴, donc log 0,00052 = log 5,2 − 4 ≈ 0,716 − 4 = −3,284, et sa partie entière, le plus grand entier inférieur ou égal, est −4 ✓. L'affichage « −3, » ne donne pas la partie entière d'un nombre négatif : c'est son écriture décimale, pas un plancher.",
+      "difficulty": 3
+    }
+  ]
+}

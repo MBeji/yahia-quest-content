@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Les premières lignes du carnet de Napier",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Simplifier A = ln(e³) + ln(1/e).",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ln(e³) = 3 ln e = 3 et ln(1/e) = −ln e = −1, donc A = 3 − 1 = 2 ✓. Le résultat 4 prend ln(1/e) pour +1, 3 le prend pour 0, et −2 change le signe des deux termes (−3 + 1).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour quelles valeurs de x l'expression ln(3x − 6) est-elle définie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x > 2"
+        },
+        {
+          "id": "b",
+          "text": "x < 2"
+        },
+        {
+          "id": "c",
+          "text": "x ≥ 2"
+        },
+        {
+          "id": "d",
+          "text": "x > 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ln n'existe que pour un nombre strictement positif : 3x − 6 > 0 équivaut à x > 2 ✓. La condition x ≥ 2 donnerait ln 0 en x = 2, qui n'existe pas ; x < 2 est le cas où 3x − 6 < 0 ; et x > 0 est la condition pour ln x, pas pour ln(3x − 6).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On donne ln 2 ≈ 0,693 et ln 5 ≈ 1,609. Quelle est une valeur approchée de ln 0,4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2,302"
+        },
+        {
+          "id": "b",
+          "text": "−0,916"
+        },
+        {
+          "id": "c",
+          "text": "0,431"
+        },
+        {
+          "id": "d",
+          "text": "0,916"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "0,4 = 2/5, donc ln 0,4 = ln 2 − ln 5 ≈ 0,693 − 1,609 = −0,916 ✓ ; c'est bien négatif puisque 0,4 < 1. La valeur −2,302 change de signe la somme ln 2 + ln 5 = ln 10, 0,431 est le quotient ln 2/ln 5 (or ln(a/b) n'est pas ln a/ln b), et 0,916 est ln 5 − ln 2 = ln 2,5, la différence prise à l'envers.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'inéquation ln(x − 4) > 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "]0 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "]4 ; 5["
+        },
+        {
+          "id": "c",
+          "text": "]4 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]5 ; +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Conditions : x − 4 > 0, donc x > 4. Comme ln a > 0 équivaut à a > 1, on a x − 4 > 1, soit x > 5, ce qui contient déjà la condition : S = ]5 ; +∞[ ✓ (en x = 6, ln 2 > 0 ; en x = 4,5, ln 0,5 < 0). L'intervalle ]4 ; +∞[ ne retient que le domaine, et ]4 ; 5[ est l'ensemble où ln(x − 4) < 0. L'intervalle ]0 ; +∞[ est le domaine de ln x, pas l'ensemble des solutions de ln(x − 4) > 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut log(0,01 × √10) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5/2"
+        },
+        {
+          "id": "b",
+          "text": "−2"
+        },
+        {
+          "id": "c",
+          "text": "−3/2"
+        },
+        {
+          "id": "d",
+          "text": "−1/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "log(0,01 × √10) = log 0,01 + log √10 = −2 + ½ log 10 = −2 + ½ = −3/2 ✓, car log vérifie les mêmes règles que ln, log(10⁻²) = −2 et log 10 = 1. La réponse −5/2 retranche ½ au lieu de l'ajouter, −2 oublie le facteur √10, et −1/2 prend log 0,01 pour −1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est une primitive de x ↦ 1/(x − 3) sur l'intervalle ]3 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ ln(x − 3)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ −1/(x − 3)²"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ ln x − 3"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ (x − 3) ln(x − 3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec u(x) = x − 3, u′(x) = 1 et la fonction est u′/u : une primitive est ln|u| = ln(x − 3), puisque x − 3 > 0 sur ]3 ; +∞[ ✓ (sa dérivée est 1/(x − 3)). La fonction −1/(x − 3)² est la dérivée de 1/(x − 3), ln x − 3 a pour dérivée 1/x, et (x − 3) ln(x − 3) a pour dérivée ln(x − 3) + 1.",
+      "difficulty": 2
+    }
+  ]
+}

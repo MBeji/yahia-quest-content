@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la pente",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Soit f(x) = √(x² + 3). Quelle est l'ordonnée à l'origine de la tangente à la courbe de f au point d'abscisse 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3/2"
+        },
+        {
+          "id": "c",
+          "text": "7/4"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(1) = √4 = 2. Avec u(x) = x² + 3 > 0 et u′ = 2x, f′(x) = 2x/(2√(x² + 3)) = x/√(x² + 3), donc f′(1) = 1/2. La tangente est y = (1/2)(x − 1) + 2 = x/2 + 3/2, d'ordonnée à l'origine 3/2. La valeur 7/4 vient de la dérivée de l'intérieur oubliée (f′(1) = 1/4 donne y = x/4 + 7/4), la valeur 2 de la formule fausse y = f′(1)x + f(1), et la valeur 1 du facteur 2 de 2√u oublié (f′(1) = 1 donne y = x + 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On définit f par :\nf(x) = ax² + bx si x < 1\nf(x) = x³ + 1 si x ≥ 1\noù a et b sont deux réels. Pour quel couple (a ; b) les deux morceaux se raccordent-ils sans pli en 1, c'est-à-dire f dérivable en 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = −1 et b = 3"
+        },
+        {
+          "id": "b",
+          "text": "a = 1 et b = 1"
+        },
+        {
+          "id": "c",
+          "text": "a = 3/2 et b = 1/2"
+        },
+        {
+          "id": "d",
+          "text": "a = 2 et b = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dérivable en 1 exige d'abord la continuité : f(1) = 2 et lim x→1⁻ (ax² + bx) = a + b, donc a + b = 2. Ensuite f′d(1) = 3 (dérivée de x³ + 1 en 1) et f′g(1) = 2a + b (dérivée de ax² + bx en 1) : 2a + b = 3. En retranchant, a = 1 puis b = 1. Les trois autres couples vérifient a + b = 2 (continuité seule) mais donnent 2a + b = 1, 7/2 et 4 : les pentes ne se raccordent pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La fonction tangente est une bijection de ]−π/2 ; π/2[ sur ℝ ; on note g sa fonction réciproque. Que vaut g′(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/4"
+        },
+        {
+          "id": "b",
+          "text": "1/(1 + tan² 1)"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "g′(1) = 1/f′(g(1)) avec f = tan. Comme tan(π/4) = 1, g(1) = π/4, et f′(x) = 1 + tan²x donne f′(π/4) = 1 + 1 = 2. Donc g′(1) = 1/2. La valeur 2 oublie d'inverser, 1/(1 + tan² 1) évalue f′ en 1 au lieu de l'antécédent π/4, et π/4 est la valeur g(1), pas g′(1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On applique l'inégalité des accroissements finis à f(x) = √x sur [36 ; 38], en utilisant √38 < 6,2. Quel encadrement de √38 obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 + 5/31 ≤ √38 ≤ 6 + 1/6"
+        },
+        {
+          "id": "b",
+          "text": "6 + 1/38 ≤ √38 ≤ 6 + 1/36"
+        },
+        {
+          "id": "c",
+          "text": "6 + 5/62 ≤ √38 ≤ 6 + 1/12"
+        },
+        {
+          "id": "d",
+          "text": "6 + 10/31 ≤ √38 ≤ 6 + 1/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f′(x) = 1/(2√x) : pour 36 < x < 38, 6 < √x < 6,2, donc 1/12,4 < f′(x) < 1/12. L'inégalité multiplie par b − a = 2 : 2/12,4 ≤ √38 − 6 ≤ 2/12, soit 5/31 ≤ √38 − 6 ≤ 1/6 ✓ (√38 ≈ 6,164). L'encadrement avec 1/38 et 1/36 dérive √x en 1/(2x), en oubliant la racine ; l'encadrement avec 5/62 et 1/12 oublie le facteur b − a = 2 ; celui avec 10/31 et 1/3 oublie le 2 de 2√x.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un trapèze a pour aire A(x) = (1 + x)√(1 − x²), pour x dans [0 ; 1]. On admet que A′(x) = (1 − x − 2x²)/√(1 − x²) sur [0 ; 1[. Quelle est l'aire maximale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√3/4"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "9/8"
+        },
+        {
+          "id": "d",
+          "text": "3√3/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le signe de A′ est celui de 1 − x − 2x² = −(2x − 1)(x + 1) : positif sur [0 ; 1/2[, négatif sur ]1/2 ; 1[. A croît puis décroît, avec un maximum en x = 1/2 de valeur A(1/2) = (3/2) × √(3/4) = (3/2)(√3/2) = 3√3/4 ≈ 1,30. La valeur 1 est l'aire en x = 0, une borne, pas le maximum ; 9/8 oublie la racine de 1 − x² (calcul de (3/2)(3/4)) ; 3√3/2 oublie le facteur 1/2 de √3/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fonction f(x) = (−x² − 6x − 4)/(x² + 2x + 2)² admet sur ℝ une primitive de la forme x ↦ (ax + b)/(x² + 2x + 2). Quelle est la primitive F de f telle que F(0) = 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = (x + 6)/(x² + 2x + 2) + 2"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = (x + 3)/(x² + 2x + 2) − 1/2"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = (x + 6)/(x² + 2x + 2) − 1"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = (x + 3)/(x² + 2x + 2) + 1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On dérive (ax + b)/(x² + 2x + 2) : le numérateur est a(x² + 2x + 2) − (ax + b)(2x + 2) = −ax² − 2bx + 2a − 2b. On identifie avec −x² − 6x − 4 : a = 1, 2b = 6 donc b = 3, et 2a − 2b = −4 ✓. Les primitives sont (x + 3)/(x² + 2x + 2) + c ; F(0) = 3/2 + c = 2 donne c = 1/2. La constante −1/2 inverse le signe de c, le couple (1 ; 6) avec −1 (oubli du 2 dans 2bx) donnerait F(0) = 3, d'où c = −1, et (x + 6)/(x² + 2x + 2) + 2 cumule l'oubli du 2 dans 2bx et l'oubli de la valeur 3 de la fraction en 0.",
+      "difficulty": 3
+    }
+  ]
+}
