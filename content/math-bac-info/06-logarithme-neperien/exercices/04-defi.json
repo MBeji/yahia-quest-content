@@ -27,31 +27,31 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Avec g(x) = x − 1 − ln x, g′(x) = 1 − 1/x = (x − 1)/x : g décroît sur ]0 ; 1[, croît sur ]1 ; +∞[ et g(1) = 0 est son minimum, donc g ≥ 0, c'est-à-dire ln x ≤ x − 1 ✓. Les autres sont fausses : en x = e, ln e = 1 < e − 1 ≈ 1,72 réfute la première, ln e = 1 > 1 − 1/e ≈ 0,63 réfute la troisième, et en x = ½, ln ½ ≈ −0,69 < 1/x − 1 = 1 réfute la dernière.",
+      "explanation": "Avec g(x) = x − 1 − ln x, g′(x) = 1 − 1/x = (x − 1)/x : g décroît sur ]0 ; 1[, croît sur ]1 ; +∞[ et g(1) = 0 est son minimum, donc g ≥ 0, c'est-à-dire ln x ≤ x − 1 ✓. Les trois autres sont fausses : en x = e, ln e = 1 < e − 1 ≈ 1,72 réfute ln x ≥ x − 1 ; ln e = 1 > 1 − 1/e ≈ 0,63 réfute ln x ≤ 1 − 1/x (c'est l'inégalité inverse qui est vraie) ; et en x = ½, ln ½ ≈ −0,69 < 1/x − 1 = 1 réfute ln x ≥ 1/x − 1.",
       "difficulty": 2
     },
     {
-      "prompt": "Deux machines identiques produisent chacune un bruit de 80 dB ; leurs intensités sonores s'additionnent. On rappelle d(I) = 10 log(I/I₀) et l'on donne log 2 ≈ 0,30. Quel niveau sonore produisent-elles ensemble ?",
+      "prompt": "Une machine seule produit un bruit de 74 dB ; les intensités sonores de machines identiques s'additionnent. On rappelle d(I) = 10 log(I/I₀) et l'on donne log 5 ≈ 0,70. Quel niveau sonore produisent cinq de ces machines ensemble ?",
       "options": [
         {
           "id": "a",
-          "text": "160 dB"
+          "text": "370 dB"
         },
         {
           "id": "b",
-          "text": "90 dB"
+          "text": "84 dB"
         },
         {
           "id": "c",
-          "text": "86 dB"
+          "text": "81 dB"
         },
         {
           "id": "d",
-          "text": "83 dB"
+          "text": "77 dB"
         }
       ],
-      "correctOption": "d",
-      "explanation": "L'intensité totale est 2I, donc d(2I) = 10 log(2I/I₀) = 10 log 2 + 10 log(I/I₀) ≈ 3 + 80 = 83 dB ✓. Additionner les niveaux (160 dB) confond décibels et intensités : doubler l'intensité ajoute seulement 10 log 2 ≈ 3 dB. Les valeurs 86 et 90 viennent de 10 log 4 et de 10 log 10, qui supposent quatre et dix fois plus d'intensité.",
+      "correctOption": "c",
+      "explanation": "L'intensité totale est 5I, donc d(5I) = 10 log(5I/I₀) = 10 log 5 + 10 log(I/I₀) ≈ 7 + 74 = 81 dB ✓ : le produit dans le log devient une somme. 370 dB additionne les niveaux, ce qui confond décibels et intensités ; 77 dB applique à cinq machines la règle « +3 dB » du doublement ; 84 dB ajoute 10 dB, comme si l'intensité était multipliée par 10.",
       "difficulty": 2
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Si N = a × 10ᵖ avec 1 ≤ a < 10, N a p + 1 chiffres : ici p = 24, donc log N = log a + 24 avec 0 ≤ log a < 1, soit 24 ≤ log N < 25 ✓. La borne 24 est atteinte : N = 10²⁴ a bien 25 chiffres et log N = 24. L'encadrement 25 ≤ log N < 26 correspond à 26 chiffres, et 10²⁴ ≤ N < 10²⁵ est l'encadrement de N, pas celui de log N.",
+      "explanation": "Si N = a × 10ᵖ avec 1 ≤ a < 10, N a p + 1 chiffres : ici p = 24, donc log N = log a + 24 avec 0 ≤ log a < 1, soit 24 ≤ log N < 25 ✓. La borne 24 est atteinte : N = 10²⁴ a bien 25 chiffres et log N = 24. L'encadrement 25 ≤ log N < 26 correspond à 26 chiffres, et 10²⁴ ≤ N < 10²⁵ est l'encadrement de N, pas celui de log N. L'encadrement 24 < log N ≤ 25 inverse les crochets : N = 10²⁴ aurait 25 chiffres et serait exclu à tort.",
       "difficulty": 3
     },
     {
@@ -127,27 +127,27 @@
       "difficulty": 3
     },
     {
-      "prompt": "Un programme calcule log x ainsi :\nsi x < 1 : x ← 1/x ; afficher « − »\nn ← 0\ntant que x ≥ 10 : x ← x/10 ; n ← n + 1\nafficher n, « , »\nOn l'exécute pour x = 0,0073. Que commence-t-il par afficher, et quelle est la partie entière de log 0,0073 ?",
+      "prompt": "Un programme calcule log x ainsi :\nsi x < 1 : x ← 1/x ; afficher « − »\nn ← 0\ntant que x ≥ 10 : x ← x/10 ; n ← n + 1\nafficher n, « , »\nOn l'exécute pour x = 0,00052. Que commence-t-il par afficher, et quelle est la partie entière de log 0,00052 ?",
       "options": [
         {
           "id": "a",
-          "text": "« −3, » ; la partie entière est −3"
+          "text": "« −4, » ; la partie entière est −4"
         },
         {
           "id": "b",
-          "text": "« −3, » ; la partie entière est −2"
+          "text": "« −4, » ; la partie entière est −3"
         },
         {
           "id": "c",
-          "text": "« −2, » ; la partie entière est −2"
+          "text": "« −3, » ; la partie entière est −3"
         },
         {
           "id": "d",
-          "text": "« −2, » ; la partie entière est −3"
+          "text": "« −3, » ; la partie entière est −4"
         }
       ],
       "correctOption": "d",
-      "explanation": "Comme 0,0073 < 1, le programme affiche « − » puis travaille sur 1/0,0073 ≈ 137 : deux divisions par 10 ramènent 137 à 1,37, donc n = 2 et il affiche « −2, » (la suite donne −2,13…). Or 0,0073 = 7,3 × 10⁻³, donc log 0,0073 = log 7,3 − 3 ≈ −2,137 et sa partie entière, plus grand entier inférieur ou égal, est −3 ✓. L'affichage « −2, » ne donne pas la partie entière d'un nombre négatif : c'est une écriture décimale, pas un plancher.",
+      "explanation": "Comme 0,00052 < 1, le programme affiche « − » puis travaille sur 1/0,00052 ≈ 1 923 : trois divisions par 10 la ramènent à 1,923, donc n = 3 et il affiche « −3, » (la suite donne −3,28…). Or 0,00052 = 5,2 × 10⁻⁴, donc log 0,00052 = log 5,2 − 4 ≈ 0,716 − 4 = −3,284, et sa partie entière, le plus grand entier inférieur ou égal, est −4 ✓. L'affichage « −3, » ne donne pas la partie entière d'un nombre négatif : c'est son écriture décimale, pas un plancher.",
       "difficulty": 3
     }
   ]

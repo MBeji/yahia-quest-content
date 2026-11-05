@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "ln(e³) = 3 ln e = 3 et ln(1/e) = −ln e = −1, donc A = 3 − 1 = 2 ✓. Le résultat 4 prend ln(1/e) pour +1, 3 le prend pour 0, et −2 inverse la somme.",
+      "explanation": "ln(e³) = 3 ln e = 3 et ln(1/e) = −ln e = −1, donc A = 3 − 1 = 2 ✓. Le résultat 4 prend ln(1/e) pour +1, 3 le prend pour 0, et −2 change le signe des deux termes (−3 + 1).",
       "difficulty": 1
     },
     {
@@ -63,19 +63,19 @@
         },
         {
           "id": "b",
-          "text": "−1,115"
+          "text": "−0,916"
         },
         {
           "id": "c",
-          "text": "−0,916"
+          "text": "0,431"
         },
         {
           "id": "d",
           "text": "0,916"
         }
       ],
-      "correctOption": "c",
-      "explanation": "0,4 = 2/5, donc ln 0,4 = ln 2 − ln 5 ≈ 0,693 − 1,609 = −0,916 ✓ ; c'est bien négatif puisque 0,4 < 1. La valeur −2,302 est ln 2 + ln 5 changé de signe (ln 10), −1,115 est le produit 0,693 × 1,609, et 0,916 oublie le signe.",
+      "correctOption": "b",
+      "explanation": "0,4 = 2/5, donc ln 0,4 = ln 2 − ln 5 ≈ 0,693 − 1,609 = −0,916 ✓ ; c'est bien négatif puisque 0,4 < 1. La valeur −2,302 change de signe la somme ln 2 + ln 5 = ln 10, 0,431 est le quotient ln 2/ln 5 (or ln(a/b) n'est pas ln a/ln b), et 0,916 est ln 5 − ln 2 = ln 2,5, la différence prise à l'envers.",
       "difficulty": 1
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Conditions : x − 4 > 0, donc x > 4. Comme ln a > 0 équivaut à a > 1, on a x − 4 > 1, soit x > 5, ce qui contient déjà la condition : S = ]5 ; +∞[ ✓ (en x = 6, ln 2 > 0 ; en x = 4,5, ln 0,5 < 0). L'intervalle ]4 ; +∞[ ne retient que le domaine, et ]4 ; 5[ est l'ensemble où ln(x − 4) < 0.",
+      "explanation": "Conditions : x − 4 > 0, donc x > 4. Comme ln a > 0 équivaut à a > 1, on a x − 4 > 1, soit x > 5, ce qui contient déjà la condition : S = ]5 ; +∞[ ✓ (en x = 6, ln 2 > 0 ; en x = 4,5, ln 0,5 < 0). L'intervalle ]4 ; +∞[ ne retient que le domaine, et ]4 ; 5[ est l'ensemble où ln(x − 4) < 0. L'intervalle ]0 ; +∞[ est le domaine de ln x, pas l'ensemble des solutions de ln(x − 4) > 0.",
       "difficulty": 2
     },
     {

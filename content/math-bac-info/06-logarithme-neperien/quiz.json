@@ -86,15 +86,15 @@
         },
         {
           "id": "c",
-          "text": "{1}"
+          "text": "{1/2}"
         },
         {
           "id": "d",
-          "text": "{3}"
+          "text": "{1}"
         }
       ],
-      "correctOption": "c",
-      "explanation": "Conditions : x + 2 > 0 et x > 0, donc x > 0. Alors ln(x + 2) + ln x = ln(x(x + 2)), et l'équation devient x² + 2x = 3, soit (x + 3)(x − 1) = 0. La racine −3 viole x > 0 : S = {1} ✓ (ln 3 + ln 1 = ln 3). Garder −3 oublie les conditions d'existence, et x = 3 donne ln 5 + ln 3 = ln 15 ≠ ln 3.",
+      "correctOption": "d",
+      "explanation": "Conditions : x + 2 > 0 et x > 0, donc x > 0. Alors ln(x + 2) + ln x = ln(x(x + 2)), et l'équation devient x² + 2x = 3, soit (x + 3)(x − 1) = 0. La racine −3 viole x > 0 : S = {1} ✓ (ln 3 + ln 1 = ln 3). Garder −3 oublie les conditions d'existence (et {−3} seul rejette en plus la bonne racine) ; {1/2} applique la fausse règle ln a + ln b = ln(a + b), qui donne 2x + 2 = 3.",
       "difficulty": 2
     },
     {
@@ -102,27 +102,27 @@
       "options": [
         {
           "id": "a",
-          "text": "0,375 ≤ ln 1,5 ≤ 0,5"
-        },
-        {
-          "id": "b",
-          "text": "0,125 ≤ ln 1,5 ≤ 0,375"
-        },
-        {
-          "id": "c",
           "text": "0,25 ≤ ln 1,5 ≤ 0,375"
         },
         {
-          "id": "d",
+          "id": "b",
+          "text": "0,375 ≤ ln 1,5 ≤ 0,5"
+        },
+        {
+          "id": "c",
           "text": "0,5 ≤ ln 1,5 ≤ 0,625"
+        },
+        {
+          "id": "d",
+          "text": "0,625 ≤ ln 1,5 ≤ 0,75"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Avec x = 0,5 : x − x²/2 = 0,5 − 0,125 = 0,375 et x³ = 0,125, donc 0,375 ≤ ln 1,5 ≤ 0,375 + 0,125 = 0,5 ✓ (ln 1,5 ≈ 0,405). Les autres encadrements viennent d'un oubli : le facteur ½ de x²/2 (0,25), le terme −x²/2 (0,5 et 0,625), ou une borne basse prise égale à x³ ; aucun ne contient ln 1,5 ≈ 0,405.",
+      "correctOption": "b",
+      "explanation": "Avec x = 0,5 : x − x²/2 = 0,5 − 0,125 = 0,375 et x³ = 0,125, donc 0,375 ≤ ln 1,5 ≤ 0,375 + 0,125 = 0,5 ✓ (ln 1,5 ≈ 0,405). L'encadrement 0,25 ≤ ln 1,5 ≤ 0,375 oublie le ½ de x²/2 (0,5 − 0,25 = 0,25), 0,5 ≤ ln 1,5 ≤ 0,625 oublie le terme −x²/2 (bornes x et x + x³), et 0,625 ≤ ln 1,5 ≤ 0,75 met un signe + devant x²/2 (bornes x + x²/2 et x + x²/2 + x³).",
       "difficulty": 2
     },
     {
-      "prompt": "Que vaut lim x→0⁺ x ln x ?",
+      "prompt": "Que vaut lim x→0⁺ x² ln x ?",
       "options": [
         {
           "id": "a",
@@ -142,7 +142,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "C'est un résultat de croissances comparées : en 0⁺, x tend vers 0 plus vite que ln x ne tend vers −∞, et x ln x → 0 ✓. Avec X = 1/x, x ln x = −(ln X)/X qui tend vers 0 quand X → +∞. La réponse −∞ suppose que ln x l'emporte, +∞ ne tient pas compte du signe négatif de ln x près de 0, et 1 est la limite de ln(1 + h)/h, un autre résultat.",
+      "explanation": "C'est une limite de référence du cours : x² ln x = x × (x ln x), et x ln x → 0 quand x → 0⁺ (avec X = 1/x, x ln x = −(ln X)/X, qui tend vers 0 quand X → +∞), donc le produit tend vers 0 ✓. La réponse −∞ suppose que ln x l'emporte, +∞ ne tient pas compte du signe négatif de ln x près de 0, et 1 est la limite de ln(1 + h)/h, un autre résultat.",
       "difficulty": 2
     },
     {
@@ -190,7 +190,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "4 500 = 4,5 × 10³ avec 1 ≤ 4,5 < 10, donc log 4 500 = log 4,5 + 3 ≈ 0,65 + 3 = 3,65 : la partie entière est 3 ✓. La valeur 4 est le nombre de chiffres de 4 500, c'est-à-dire la partie entière plus 1 ; 2 et 5 ne correspondent à aucune puissance de 10 encadrant 4 500.",
+      "explanation": "4 500 = 4,5 × 10³ avec 1 ≤ 4,5 < 10, donc log 4 500 = log 4,5 + 3 ≈ 0,65 + 3 = 3,65 : la partie entière est 3 ✓. La valeur 4 est le nombre de chiffres de 4 500 (partie entière plus 1), 2 compte les zéros de 4 500, ce qui ne vaut que pour une puissance de 10, et 5 placerait 4 500 au-delà de 10⁵.",
       "difficulty": 1
     }
   ]

@@ -39,7 +39,7 @@
         },
         {
           "id": "b",
-          "text": "]1/e ; 1["
+          "text": "]−∞ ; e["
         },
         {
           "id": "c",
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Comme ln(1/e) = −1, l'inéquation s'écrit ln x < ln(1/e), et la croissance de ln donne x < 1/e. Avec x > 0 : S = ]0 ; 1/e[ ✓ (en x = 0,1, ln 0,1 ≈ −2,30 < −1). L'intervalle ]−∞ ; 1/e[ oublie que ln n'existe pas pour x ≤ 0, ]1/e ; 1[ est l'ensemble où −1 < ln x < 0, et ]0 ; e[ est celui où ln x < 1.",
+      "explanation": "Comme ln(1/e) = −1, l'inéquation s'écrit ln x < ln(1/e), et la croissance de ln donne x < 1/e. Avec x > 0 : S = ]0 ; 1/e[ ✓ (en x = 0,1, ln 0,1 ≈ −2,30 < −1). L'intervalle ]−∞ ; 1/e[ oublie que ln n'existe pas pour x ≤ 0, ]−∞ ; e[ cumule cet oubli avec la condition ln x < 1, et ]0 ; e[ est l'ensemble où ln x < 1.",
       "difficulty": 2
     },
     {
@@ -75,31 +75,31 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Conditions : x > 0 et y > 0. Alors ln x + ln y = ln(xy) = ln 24 donne xy = 24, et x = y + 2 conduit à y² + 2y − 24 = 0, soit (y + 6)(y − 4) = 0. Seul y = 4 est strictement positif, d'où x = 6 : (6 ; 4) uniquement ✓ (6 − 4 = 2 et ln 6 + ln 4 = ln 24). Le couple (−4 ; −6) vérifie x − y = 2 et xy = 24, mais ln(−4) n'existe pas.",
+      "explanation": "Conditions : x > 0 et y > 0. Alors ln x + ln y = ln(xy) = ln 24 donne xy = 24, et x = y + 2 conduit à y² + 2y − 24 = 0, soit (y + 6)(y − 4) = 0. Seul y = 4 est strictement positif, d'où x = 6 : (6 ; 4) uniquement ✓ (6 − 4 = 2 et ln 6 + ln 4 = ln 24). Le couple (−4 ; −6) vérifie x − y = 2 et xy = 24, mais ln(−4) n'existe pas. La réponse « aucun couple » oublie (6 ; 4), et (−4 ; −6) seul est justement le couple hors domaine.",
       "difficulty": 2
     },
     {
-      "prompt": "On sait que 0,18 ≤ ln 1,2 ≤ 0,188. Que peut-on affirmer ?",
+      "prompt": "Pour x = 0,15, l'encadrement x − x²/2 ≤ ln(1 + x) ≤ x − x²/2 + x³ donne 0,13875 ≤ ln 1,15 ≤ 0,142125. Que peut-on affirmer ?",
       "options": [
         {
           "id": "a",
-          "text": "0,18 approche ln 1,2 à 10⁻³ près"
+          "text": "0,13875 approche ln 1,15 à 10⁻³ près"
         },
         {
           "id": "b",
-          "text": "0,18 approche ln 1,2 à 10⁻⁴ près"
+          "text": "0,13875 approche ln 1,15 à 10⁻⁴ près"
         },
         {
           "id": "c",
-          "text": "ln 1,2 = 0,184, le milieu de l'encadrement"
+          "text": "ln 1,15 = 0,1404375, le milieu de l'encadrement"
         },
         {
           "id": "d",
-          "text": "0,18 approche ln 1,2 à 10⁻² près"
+          "text": "0,13875 approche ln 1,15 à 10⁻² près"
         }
       ],
       "correctOption": "d",
-      "explanation": "L'amplitude de l'encadrement est 0,188 − 0,18 = 0,008 : l'écart entre 0,18 et ln 1,2 est au plus 0,008 ≤ 10⁻², donc 0,18 approche ln 1,2 à 10⁻² près ✓. Rien ne garantit 10⁻³ ni 10⁻⁴ puisque l'écart pourrait aller jusqu'à 0,008 (en fait ln 1,2 ≈ 0,1823). Quant à 0,184, c'est le milieu de l'encadrement, pas la valeur de ln 1,2.",
+      "explanation": "L'amplitude de l'encadrement est 0,142125 − 0,13875 = 0,003375, c'est x³ : l'écart entre 0,13875 et ln 1,15 est au plus 0,003375 ≤ 10⁻², donc 0,13875 approche ln 1,15 à 10⁻² près ✓. Rien ne garantit 10⁻³ ni 10⁻⁴, puisque l'écart peut atteindre 0,003375 (de fait ln 1,15 ≈ 0,13976, à plus de 10⁻³ de 0,13875). Et 0,1404375 n'est que le milieu de l'encadrement, pas la valeur de ln 1,15.",
       "difficulty": 2
     },
     {
@@ -123,8 +123,8 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "C'est une forme +∞ − ∞. On factorise 1/x : 2/x + 5 ln x = (1/x)(2 + 5x ln x). Comme x ln x → 0 quand x → 0⁺, la parenthèse tend vers 2 et 1/x tend vers +∞ : la limite est +∞ ✓ (en x = 0,001 : 2 000 − 34,5 ≈ 1 965). La réponse −∞ croit que ln x l'emporte sur 1/x, alors que x ln x → 0 prouve le contraire.",
-      "difficulty": 3
+      "explanation": "C'est une forme +∞ − ∞. On factorise 1/x : 2/x + 5 ln x = (1/x)(2 + 5x ln x). Comme x ln x → 0 quand x → 0⁺, la parenthèse tend vers 2 et 1/x tend vers +∞ : la limite est +∞ ✓ (en x = 0,001 : 2 000 − 34,5 ≈ 1 965). La réponse −∞ croit que ln x l'emporte sur 1/x, alors que x ln x → 0 prouve le contraire. La réponse 0 oublie le facteur 1/x, et 2 n'est que la limite de la parenthèse.",
+      "difficulty": 2
     },
     {
       "prompt": "Soit f(x) = ln(x² − 4), définie sur ]−∞ ; −2[ ∪ ]2 ; +∞[. Quel est son sens de variation ?",
@@ -148,7 +148,7 @@
       ],
       "correctOption": "b",
       "explanation": "Avec u(x) = x² − 4 > 0 sur le domaine, f′(x) = u′/u = 2x/(x² − 4), et le dénominateur est positif : f′ a le signe de 2x. Sur ]−∞ ; −2[, f′ < 0 : f décroît ; sur ]2 ; +∞[, f′ > 0 : f croît ✓ (f(−4) = ln 12 > f(−3) = ln 5, et f(3) = ln 5 < f(4) = ln 12). La parabole x² − 4 décroît à gauche de 0 et croît à droite, et ln conserve cette monotonie.",
-      "difficulty": 3
+      "difficulty": 2
     }
   ]
 }

@@ -39,7 +39,7 @@
         },
         {
           "id": "b",
-          "text": "x = 1 seulement"
+          "text": "x = 0 ou x = e"
         },
         {
           "id": "c",
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "L'équation équivaut à (ln x)² − ln x = 0, soit ln x (ln x − 1) = 0 : ln x = 0 ou ln x = 1, donc x = 1 ou x = e ✓ (en x = 1 : 0² = 0 ; en x = e : 1² = 1). Diviser les deux membres par ln x ferait perdre la solution x = 1, car ln 1 = 0 ; et « x = 0 ou x = 1 » confond ln x = 1 avec x = 1, alors que ln 0 n'existe même pas.",
+      "explanation": "L'équation équivaut à (ln x)² − ln x = 0, soit ln x (ln x − 1) = 0 : ln x = 0 ou ln x = 1, donc x = 1 ou x = e ✓ (en x = 1 : 0² = 0 ; en x = e : 1² = 1). Diviser les deux membres par ln x fait perdre x = 1, car ln 1 = 0 : il ne reste que x = e. « x = 0 ou x = e » lit ln x = 0 comme x = 0, alors que ln x = 0 ⟺ x = 1 et que ln 0 n'existe pas ; « x = 0 ou x = 1 » résout x² = x au lieu de (ln x)² = ln x.",
       "difficulty": 2
     },
     {
@@ -67,7 +67,7 @@
         },
         {
           "id": "c",
-          "text": "[1 ; +∞["
+          "text": "[−2 ; 1["
         },
         {
           "id": "d",
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Conditions : x + 3 > 0 et x + 1 > 0, donc x > −1. Comme 2 ln(x + 1) = ln (x + 1)², la croissance de ln donne x + 3 ≥ (x + 1)², soit x² + x − 2 ≤ 0, c'est-à-dire (x + 2)(x − 1) ≤ 0, donc −2 ≤ x ≤ 1. On garde ce qui vérifie aussi x > −1 : S = ]−1 ; 1] ✓ (en x = 1, ln 4 = 2 ln 2 : l'égalité est atteinte ; en x = 2, ln 5 < 2 ln 3). L'intervalle [−2 ; 1] oublie les conditions, et ]−1 ; 1[ exclut à tort l'égalité.",
+      "explanation": "Conditions : x + 3 > 0 et x + 1 > 0, donc x > −1. Comme 2 ln(x + 1) = ln (x + 1)², la croissance de ln donne x + 3 ≥ (x + 1)², soit x² + x − 2 ≤ 0, c'est-à-dire (x + 2)(x − 1) ≤ 0, donc −2 ≤ x ≤ 1. On garde ce qui vérifie aussi x > −1 : S = ]−1 ; 1] ✓ (en x = 1, ln 4 = 2 ln 2 : l'égalité est atteinte ; en x = 2, ln 5 < 2 ln 3). [−2 ; 1] oublie les conditions, ]−1 ; 1[ exclut à tort l'égalité, et [−2 ; 1[ cumule les deux fautes.",
       "difficulty": 3
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Pour x > 0, ln(x² + 1) = ln(x²(1 + 1/x²)) = 2 ln x + ln(1 + 1/x²), donc le quotient vaut 2 + ln(1 + 1/x²)/ln x. Quand x → +∞, ln(1 + 1/x²) → ln 1 = 0 et ln x → +∞ : le second terme tend vers 0 et la limite est 2 ✓ (en x = 1 000, le quotient vaut 13,8155/6,9078 ≈ 2,000). La réponse 1 croit que ln(x² + 1) ≈ ln x, et +∞ oublie que les deux logarithmes croissent de la même façon.",
+      "explanation": "Pour x > 0, ln(x² + 1) = ln(x²(1 + 1/x²)) = 2 ln x + ln(1 + 1/x²), donc le quotient vaut 2 + ln(1 + 1/x²)/ln x. Quand x → +∞, ln(1 + 1/x²) → ln 1 = 0 et ln x → +∞ : le second terme tend vers 0 et la limite est 2 ✓ (en x = 1 000, le quotient vaut 13,8155/6,9078 ≈ 2,000). La réponse 1 croit que ln(x² + 1) ≈ ln x, et +∞ oublie que les deux logarithmes croissent de la même façon. La réponse 0 prend le quotient de deux logarithmes infinis pour un rapport qui s'annule.",
       "difficulty": 3
     },
     {
@@ -119,11 +119,11 @@
         },
         {
           "id": "d",
-          "text": "Trois"
+          "text": "Une infinité"
         }
       ],
       "correctOption": "a",
-      "explanation": "On étudie h(x) = ln x − x/e. Alors h′(x) = 1/x − 1/e est positive sur ]0 ; e[ et négative sur ]e ; +∞[ : h admet un maximum en e, valant h(e) = 1 − 1 = 0. Donc h(x) ≤ 0 pour tout x > 0, avec égalité seulement en x = e : l'équation a une seule solution ✓. La droite y = x/e est tangente à la courbe de ln en son point d'abscisse e : elle la touche sans la recouper, d'où ni « aucune » ni « deux ».",
+      "explanation": "On étudie h(x) = ln x − x/e. Alors h′(x) = 1/x − 1/e est positive sur ]0 ; e[ et négative sur ]e ; +∞[ : h admet un maximum en e, valant h(e) = 1 − 1 = 0. Donc h(x) ≤ 0 pour tout x > 0, avec égalité seulement en x = e : l'équation a une seule solution ✓. La droite y = x/e est tangente à la courbe de ln en son point d'abscisse e : elle la touche sans la recouper. « Aucune » oublie x = e, où les deux membres valent 1 ; « deux » ou « une infinité » supposent que h s'annule ailleurs, ce que h ≤ 0 avec égalité seulement en e interdit.",
       "difficulty": 3
     },
     {
