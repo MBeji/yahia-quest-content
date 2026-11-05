@@ -11,7 +11,7 @@
       "options": [
         {
           "id": "a",
-          "text": "(−2/3)ⁿ"
+          "text": "2 × (−2/3)ⁿ"
         },
         {
           "id": "b",
@@ -23,11 +23,11 @@
         },
         {
           "id": "d",
-          "text": "3 − 2 × (−2/3)ⁿ"
+          "text": "2 × (2/3)ⁿ"
         }
       ],
       "correctOption": "b",
-      "explanation": "Le point fixe est ℓ = 3, solution de ℓ = −(2/3)ℓ + 5. Alors vₙ₊₁ = −(2/3)uₙ + 2 = −(2/3)(uₙ − 3) = −(2/3)vₙ : (vₙ) est géométrique de raison −2/3 et de premier terme v₀ = 1 − 3 = −2, donc vₙ = −2 × (−2/3)ⁿ ✓. L'expression (−2/3)ⁿ oublie le premier terme v₀ = −2. L'expression avec (2/3)ⁿ oublie le signe de la raison. L'expression 3 − 2 × (−2/3)ⁿ est celle de uₙ = vₙ + 3, pas de vₙ.",
+      "explanation": "Le point fixe est ℓ = 3, solution de ℓ = −(2/3)ℓ + 5. Alors vₙ₊₁ = −(2/3)uₙ + 2 = −(2/3)(uₙ − 3) = −(2/3)vₙ : (vₙ) est géométrique de raison −2/3 et de premier terme v₀ = 1 − 3 = −2, donc vₙ = −2 × (−2/3)ⁿ ✓. L'expression 2 × (−2/3)ⁿ prend v₀ = 3 − u₀ = 2 au lieu de v₀ = u₀ − 3 = −2. L'expression −2 × (2/3)ⁿ oublie le signe de la raison. L'expression 2 × (2/3)ⁿ cumule les deux erreurs.",
       "difficulty": 3
     },
     {
@@ -79,7 +79,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "u₀ = 0 et uₙ₊₁ = (uₙ² + 2)/3. On a montré que 0 ≤ uₙ ≤ 1 pour tout n et que (uₙ) est croissante. Quelle est sa limite ?",
+      "prompt": "u₀ = 0 et uₙ₊₁ = (uₙ² + 2)/3. On a montré que 0 ≤ uₙ ≤ 3/2 pour tout n et que (uₙ) est croissante. Quelle est sa limite ?",
       "options": [
         {
           "id": "a",
@@ -87,7 +87,7 @@
         },
         {
           "id": "b",
-          "text": "2/3"
+          "text": "3/2"
         },
         {
           "id": "c",
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "La suite est croissante et majorée, donc elle converge vers un réel ℓ avec 0 ≤ ℓ ≤ 1. La fonction x ↦ (x² + 2)/3 est continue, donc ℓ = (ℓ² + 2)/3, soit ℓ² − 3ℓ + 2 = 0 et (ℓ − 1)(ℓ − 2) = 0. Comme ℓ ≤ 1, ℓ = 1 ✓ (u₁ = 2/3 ; u₂ ≈ 0,81 ; u₃ ≈ 0,89). La valeur 2 est l'autre solution de l'équation, écartée par l'encadrement. La valeur 0 est le premier terme, et 2/3 le deuxième.",
+      "explanation": "La suite est croissante et majorée, donc elle converge vers un réel ℓ avec 0 ≤ ℓ ≤ 3/2. La fonction x ↦ (x² + 2)/3 est continue, donc ℓ = (ℓ² + 2)/3, soit ℓ² − 3ℓ + 2 = 0 et (ℓ − 1)(ℓ − 2) = 0. Comme ℓ ≤ 3/2, ℓ = 1 ✓ (u₁ = 2/3 ; u₂ ≈ 0,81 ; u₃ ≈ 0,89). La valeur 2 est l'autre solution de l'équation, écartée par l'encadrement. La valeur 3/2 est le majorant donné : le théorème assure la convergence, il ne dit pas que la limite est le majorant. La valeur 0 est le premier terme.",
       "difficulty": 3
     },
     {
@@ -157,7 +157,7 @@
           "c"
         ]
       },
-      "explanation": "La première est vraie : c'est le théorème de comparaison, vₙ ≥ uₙ et uₙ → +∞ donnent vₙ → +∞ ✓. La troisième est vraie : une inégalité large passe à la limite ✓. La deuxième est fausse : uₙ = 1/(n + 2) < vₙ = 1/(n + 1) ont toutes deux pour limite 0, donc ℓ = ℓ′ : l'inégalité stricte devient large. La quatrième est fausse : +∞ − ∞ n'a pas de valeur générale, et uₙ = n, vₙ = −n + 1 donnent une somme égale à 1. La cinquième est fausse : uₙ = 1/n et vₙ = n² donnent un produit égal à n, qui tend vers +∞.",
+      "explanation": "« Si uₙ ≤ vₙ pour tout n et lim uₙ = +∞, alors lim vₙ = +∞ » est vraie : c'est le théorème de comparaison ✓. « Si uₙ ≤ vₙ pour tout n, lim uₙ = ℓ et lim vₙ = ℓ′, alors ℓ ≤ ℓ′ » est vraie : une inégalité large passe à la limite ✓. La version stricte « ℓ < ℓ′ » est fausse : uₙ = 1/(n + 2) < vₙ = 1/(n + 1) ont toutes deux pour limite 0, donc ℓ = ℓ′ : l'inégalité stricte devient large. « lim (uₙ + vₙ) = 0 » est fausse : +∞ − ∞ n'a pas de valeur générale, et uₙ = n, vₙ = −n + 1 donnent une somme égale à 1. « lim (uₙ × vₙ) = 0 quelle que soit (vₙ) » est fausse : uₙ = 1/n et vₙ = n² donnent un produit égal à n, qui tend vers +∞.",
       "difficulty": 3
     }
   ]

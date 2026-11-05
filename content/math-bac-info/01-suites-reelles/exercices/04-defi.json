@@ -11,7 +11,7 @@
       "options": [
         {
           "id": "a",
-          "text": "8"
+          "text": "5"
         },
         {
           "id": "b",
@@ -27,31 +27,31 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Le point fixe est ℓ = 10. La suite vₙ = uₙ − 10 est géométrique de raison 3/5 et de premier terme v₀ = −10, donc |uₙ − 10| = 10 × (3/5)ⁿ. La condition 10 × (3/5)ⁿ < 0,1 s'écrit (3/5)ⁿ < 0,01. Pour n = 9, (3/5)⁹ ≈ 0,01008 n'est pas inférieur à 0,01 ; pour n = 10, (3/5)¹⁰ ≈ 0,00605 l'est. Le plus petit entier est donc 10 ✓. Les rangs 8 et 9 sont trop petits, et le rang 11 convient mais n'est pas le plus petit.",
+      "explanation": "Le point fixe est ℓ = 10. La suite vₙ = uₙ − 10 est géométrique de raison 3/5 et de premier terme v₀ = −10, donc |uₙ − 10| = 10 × (3/5)ⁿ. La condition 10 × (3/5)ⁿ < 0,1 s'écrit (3/5)ⁿ < 0,01. Pour n = 9, (3/5)⁹ ≈ 0,01008 n'est pas inférieur à 0,01 ; pour n = 10, (3/5)¹⁰ ≈ 0,00605 l'est. Le plus petit entier est donc 10 ✓. Le rang 5 résout (3/5)ⁿ < 0,1 en oubliant le facteur 10 ; le rang 9 est trop petit, et le rang 11 convient mais n'est pas le plus petit.",
       "difficulty": 3
     },
     {
-      "prompt": "u₀ = 1/2 et uₙ₊₁ = uₙ² pour tout n. Quelle est la limite de (uₙ) ?",
+      "prompt": "Pour n ≥ 2, pₙ = (1 − 1/2²)(1 − 1/3²)…(1 − 1/n²). En écrivant 1 − 1/k² = ((k − 1)/k) × ((k + 1)/k), déterminer lim pₙ.",
       "options": [
         {
           "id": "a",
-          "text": "1"
-        },
-        {
-          "id": "b",
           "text": "0"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "1/2"
         },
         {
+          "id": "c",
+          "text": "3/4"
+        },
+        {
           "id": "d",
-          "text": "1/4"
+          "text": "1"
         }
       ],
       "correctOption": "b",
-      "explanation": "Tous les termes sont dans [0 ; 1/2] et uₙ₊₁ = uₙ × uₙ ≤ uₙ/2 ≤ uₙ : la suite est décroissante et minorée par 0, donc elle converge vers un réel ℓ avec 0 ≤ ℓ ≤ 1/2. La fonction x ↦ x² est continue, donc ℓ = ℓ², soit ℓ(ℓ − 1) = 0, et ℓ = 0 ou ℓ = 1. Comme ℓ ≤ 1/2, ℓ = 0 ✓. La valeur 1 est l'autre solution de l'équation, écartée par l'encadrement. Les valeurs 1/2 et 1/4 sont les deux premiers termes.",
+      "explanation": "Le produit des (k − 1)/k pour k = 2 à n se simplifie en 1/n, celui des (k + 1)/k en (n + 1)/2. Donc pₙ = (n + 1)/(2n), qui tend vers 1/2 ✓ (p₂ = 3/4, p₃ = 2/3). La valeur 0 suppose qu'un produit de facteurs inférieurs à 1 tend forcément vers 0. La valeur 1 suppose que le produit tend vers 1 parce que chaque facteur tend vers 1. La valeur 3/4 est seulement le premier facteur p₂.",
       "difficulty": 3
     },
     {
@@ -64,11 +64,11 @@
         },
         {
           "id": "b",
-          "text": "uₙ = n(1 + (−1)ⁿ)"
+          "text": "uₙ = (−1)ⁿ × n/(n + 1)"
         },
         {
           "id": "c",
-          "text": "uₙ = (2n + (−1)ⁿ)/n"
+          "text": "uₙ = (3n − 2 sin n)/(n + 1)"
         },
         {
           "id": "d",
@@ -86,7 +86,7 @@
           "e"
         ]
       },
-      "explanation": "La première converge vers 0 : |uₙ| = 1/(n + 1) tend vers 0 ✓. La troisième converge vers 2 : elle s'écrit 2 + (−1)ⁿ/n, avec |(−1)ⁿ/n| = 1/n qui tend vers 0 ✓. La cinquième converge vers 1 : −1 < 9/10 < 1 donne (9/10)ⁿ → 0 ✓. La deuxième vaut 0 pour n impair et 2n pour n pair : elle n'est pas majorée et revient à 0, donc elle diverge. La quatrième est une suite géométrique de raison −11/10 < −1 : elle n'a pas de limite.",
+      "explanation": "(−1)ⁿ/(n + 1) converge vers 0 : sa valeur absolue 1/(n + 1) tend vers 0 ✓. (3n − 2 sin n)/(n + 1) converge vers 3 : comme −1 ≤ sin n ≤ 1, elle est encadrée par (3n − 2)/(n + 1) et (3n + 2)/(n + 1), qui tendent toutes deux vers 3 ✓. 1 + (9/10)ⁿ converge vers 1, car −1 < 9/10 < 1 ✓. (−1)ⁿ × n/(n + 1) est bornée mais diverge : pour n ≥ 1, deux termes consécutifs sont de signes contraires et de valeur absolue au moins 1/2, donc distants d'au moins 1 ; aucun intervalle ]ℓ − 1/2 ; ℓ + 1/2[ ne peut les contenir tous à partir d'un rang. (−11/10)ⁿ est géométrique de raison −11/10 < −1 : elle n'a pas de limite.",
       "difficulty": 3
     },
     {

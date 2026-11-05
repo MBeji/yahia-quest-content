@@ -79,27 +79,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Que peut-on dire de la suite uₙ = n(2 + cos n) ?",
+      "prompt": "Que peut-on dire de la suite uₙ = 3 sin n − n² ?",
       "options": [
         {
           "id": "a",
-          "text": "Elle tend vers 0"
+          "text": "Elle est bornée, car −1 ≤ sin n ≤ 1"
         },
         {
           "id": "b",
-          "text": "Elle n'a pas de limite, car cos n oscille"
+          "text": "Elle n'a pas de limite, car sin n oscille"
         },
         {
           "id": "c",
-          "text": "Elle converge vers 2"
+          "text": "On ne peut pas conclure : forme +∞ − ∞"
         },
         {
           "id": "d",
-          "text": "Elle tend vers +∞"
+          "text": "Elle tend vers −∞, car uₙ ≤ 3 − n²"
         }
       ],
       "correctOption": "d",
-      "explanation": "Comme cos n ≥ −1, on a 2 + cos n ≥ 1 et uₙ ≥ n pour tout n. Or lim n = +∞ : par comparaison, lim uₙ = +∞ ✓. Le facteur cos n oscille, mais il est borné et ne peut pas compenser la croissance de n : l'oscillation seule ne supprime pas la limite. La valeur 2 est la constante du facteur, sans rapport avec la limite du produit. La valeur 0 suppose que le produit s'écrase, alors que le facteur reste supérieur ou égal à 1.",
+      "explanation": "Comme sin n ≤ 1, uₙ ≤ 3 − n² pour tout n. Or lim (3 − n²) = −∞ : par comparaison (majoration), lim uₙ = −∞ ✓. Le terme 3 sin n est borné, mais −n² ne l'est pas : la suite n'est pas bornée. L'oscillation de 3 sin n reste entre −3 et 3 et ne peut pas compenser −n² : elle ne supprime pas la limite. Ce n'est pas la forme +∞ − ∞, car 3 sin n ne tend pas vers +∞ : il reste borné.",
       "difficulty": 2
     },
     {
@@ -131,7 +131,7 @@
       "options": [
         {
           "id": "a",
-          "text": "(uₙ) est décroissante et converge vers −1"
+          "text": "(uₙ) est décroissante et converge vers 1"
         },
         {
           "id": "b",
@@ -139,15 +139,15 @@
         },
         {
           "id": "c",
-          "text": "(uₙ) est croissante et tend vers +∞"
+          "text": "(uₙ) est croissante et converge vers 0"
         },
         {
           "id": "d",
-          "text": "(uₙ) n'est pas monotone et converge vers 1"
+          "text": "(uₙ) est décroissante et converge vers 0"
         }
       ],
       "correctOption": "b",
-      "explanation": "On écrit uₙ = 1 − 2/(n² + 1). Quand n grandit, 2/(n² + 1) décroît vers 0, donc uₙ croît vers 1 ✓ (−1 ; 0 ; 3/5 ; 4/5 ; …). La valeur −1 est le premier terme u₀, pas la limite. La limite +∞ est impossible puisque uₙ < 1. Quant à la monotonie, la fonction x ↦ 1 − 2/(x² + 1) est croissante sur [0 ; +∞[, donc la suite est monotone.",
+      "explanation": "On écrit uₙ = 1 − 2/(n² + 1). Quand n grandit, 2/(n² + 1) décroît vers 0, donc uₙ croît vers 1 ✓ (−1 ; 0 ; 3/5 ; 4/5 ; …). « Décroissante » vient d'une erreur de signe : 2/(n² + 1) décroît, donc son opposé −2/(n² + 1) croît. La valeur 0 est la limite de 2/(n² + 1), pas celle de uₙ = 1 − 2/(n² + 1).",
       "difficulty": 2
     }
   ]

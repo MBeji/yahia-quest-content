@@ -1,4 +1,4 @@
-# ⚔️ Suites réelles — suivre un nombre qui avance pas à pas
+# ⚔️ Suites réelles — prévoir où va une boucle
 
 > 💡 «Une boucle de programme fabrique une suite : avant de la lancer, on voudrait savoir où elle va.»
 
@@ -144,7 +144,7 @@ Une suite est majorée, minorée ou bornée lorsqu'un réel fixe limite tous ses
 Les valeurs de tₙ semblent se rapprocher de 2 ms sans jamais l'atteindre. « Se rapprocher » reste vague : à partir de quel rang le temps est-il à moins de 1 ms de 2 ? à moins de 0,1 ms ?
 Comment dire précisément qu'une suite tend vers un réel, ou vers l'infini ?
 
-::: figure À partir du rang 6, tous les points (n ; tₙ) restent dans la bande centrée en ℓ = 2 et de demi-largeur ε = 1 ; le point n = 5 est sur le bord, donc il n'y est pas
+::: figure À partir du rang 6, tous les points (n ; tₙ) restent dans la bande centrée en ℓ = 2 et de demi-largeur ε = 1 ; le point n = 5 est sur le bord, donc il n'y est pas (l'axe horizontal est tracé à la hauteur 0,5)
 <svg viewBox="0 0 340 236">
 <title>Les points (n ; tₙ) pour n de 0 à 10 : à partir de n = 6, ils restent dans la bande ]1 ; 3[ centrée en 2</title>
 <rect x="50" y="151.0" width="275.6" height="44.0" fill="#0f6e56" opacity="0.12"/>
@@ -177,7 +177,8 @@ Comment dire précisément qu'une suite tend vers un réel, ou vers l'infini ?
 <text x="42" y="155.0" text-anchor="end" fill="#0f172a" font-size="12" font-weight="700">3</text>
 <text x="323.59999999999997" y="168.0" text-anchor="end" fill="#0f6e56" font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">ℓ = 2</text>
 <text x="323.59999999999997" y="146.0" text-anchor="end" fill="#0f6e56" font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">ℓ + ε</text>
-<text x="323.59999999999997" y="209.0" text-anchor="end" fill="#0f6e56" font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">ℓ − ε</text>
+<text x="323.59999999999997" y="190.0" text-anchor="end" fill="#0f6e56" font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">ℓ − ε</text>
+<text x="62" y="22" text-anchor="start" fill="#0f172a" font-size="12" font-weight="700">tₙ</text>
 <text x="330" y="198" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">n</text>
 </svg>
 :::
@@ -250,7 +251,7 @@ lim uₙ = ℓ signifie que |uₙ − ℓ| devient plus petit que tout ε > 0 à
 
 ## 🧮 Opérations sur les limites
 
-Le fournisseur facture le serveur : le coût du jour n est cₙ = (3n² + 5n)/(n² + 1) euros. Le numérateur et le dénominateur tendent tous deux vers +∞ : le quotient est de la forme « infini sur infini », et le calcul direct ne dit pas ce qu'il devient.
+Le fournisseur facture le serveur : le coût du jour n est cₙ = (3n² + 5n)/(n² + 1) dinars. Le numérateur et le dénominateur tendent tous deux vers +∞ : le quotient est de la forme « infini sur infini », et le calcul direct ne dit pas ce qu'il devient.
 Comment obtenir la limite d'une somme, d'un produit ou d'un quotient, et que faire quand le tableau ne conclut pas ?
 
 Les tableaux ci-dessous donnent la limite de uₙ + vₙ, de uₙ × vₙ et de uₙ/vₙ lorsque lim uₙ = a et lim vₙ = b, avec a et b réels, +∞ ou −∞. Le signe « ? » marque une case où l'on ne peut pas conclure.
@@ -263,23 +264,23 @@ Les tableaux ci-dessous donnent la limite de uₙ + vₙ, de uₙ × vₙ et de 
 
 | a \ b | b réel | +∞ | −∞ |
 | --- | --- | --- | --- |
-| a réel : limite du produit | ab | ±∞ si a ≠ 0 | ±∞ si a ≠ 0 |
-| a = +∞ : limite du produit | ±∞ si b ≠ 0 | +∞ | −∞ |
-| a = −∞ : limite du produit | ±∞ si b ≠ 0 | −∞ | +∞ |
+| a réel : limite du produit | ab | ±∞ si a ≠ 0 ; ? si a = 0 | ±∞ si a ≠ 0 ; ? si a = 0 |
+| a = +∞ : limite du produit | ±∞ si b ≠ 0 ; ? si b = 0 | +∞ | −∞ |
+| a = −∞ : limite du produit | ±∞ si b ≠ 0 ; ? si b = 0 | −∞ | +∞ |
 
 | a \ b | b réel, b ≠ 0 | +∞ ou −∞ |
 | --- | --- | --- |
 | a réel : limite du quotient | a/b | 0 |
 | a = +∞ ou −∞ : limite du quotient | ±∞ | ? |
 
-Le signe ±∞ se détermine par la règle des signes. Les cas « ? » sont : +∞ − ∞, 0 × ∞, ∞/∞ et 0/0.
+Le signe ±∞ se détermine par la règle des signes. Les cas « ? » sont +∞ − ∞, 0 × ∞ et ∞/∞ ; le quotient 0/0 (b = 0, hors tableau) ne permet pas non plus de conclure.
 
 ::: exemple La limite du coût
 
 1. cₙ = (3n² + 5n)/(n² + 1) est de la forme ∞/∞ : le tableau ne conclut pas.
 2. On met n² en facteur au numérateur et au dénominateur : cₙ = n²(3 + 5/n)/(n²(1 + 1/n²)) = (3 + 5/n)/(1 + 1/n²), pour n ≥ 1.
 3. Quand n → +∞, 5/n → 0 et 1/n² → 0 : le numérateur tend vers 3 et le dénominateur vers 1, un réel non nul.
-4. lim cₙ = 3/1 = 3 euros.
+4. lim cₙ = 3/1 = 3 dinars.
 
 :::
 
@@ -372,7 +373,7 @@ Une inégalité permet de conclure sans calculer : minorer par une suite qui ten
 
 ## 🧱 Suites monotones bornées
 
-Le serveur gagne du temps à chaque série, mais le gain diminue. Dans un autre test, on mesure un débit qui ne cesse de croître sans jamais dépasser la capacité du réseau. Peut-on affirmer que ce débit se stabilise, sans connaître sa formule ?
+Le temps tₙ décroît et reste au-dessus de 2 : il semble ne pouvoir que se stabiliser. Dans un autre test, un débit ne cesse de croître sans jamais dépasser la capacité du réseau. Peut-on affirmer que ce débit se stabilise, sans connaître sa formule ?
 Que garantit un sens de variation joint à une borne ?
 
 ::: propriete
@@ -423,37 +424,37 @@ Comment relier une suite à une fonction pour calculer une limite ?
 ::: figure L'escalier de la suite : de u₀ = 1, les termes montent vers l'abscisse 5 du point d'intersection de la courbe y = f(x) et de la droite y = x
 <svg viewBox="0 0 340 260">
 <title>Escalier de la suite uₙ₊₁ = √(4uₙ + 5) avec u₀ = 1 : les marches montent vers l'abscisse 5 du point d'intersection de la courbe et de la droite y = x</title>
-<line x1="40" y1="220" x2="320.0" y2="220" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="40" y1="220" x2="264.0" y2="220" stroke="#0f172a" stroke-width="1.6"/>
 <line x1="40" y1="228" x2="40" y2="12" stroke="#0f172a" stroke-width="1.6"/>
-<polygon points="320.0,220 312.0,216 312.0,224" fill="#0f172a"/>
+<polygon points="264.0,220 256.0,216 256.0,224" fill="#0f172a"/>
 <polygon points="40,12 36,20 44,20" fill="#0f172a"/>
-<line x1="40" y1="220" x2="300.0" y2="12.0" stroke="#94a3b8" stroke-width="1.8"/>
-<polyline points="40.0,130.6 42.5,128.8 45.0,127.0 47.5,125.3 50.0,123.7 52.5,122.0 55.0,120.4 57.5,118.8 60.0,117.2 62.5,115.7 65.0,114.2 67.5,112.7 70.0,111.2 72.5,109.7 75.0,108.3 77.5,106.9 80.0,105.5 82.5,104.1 85.0,102.7 87.5,101.3 90.0,100.0 92.5,98.7 95.0,97.4 97.5,96.1 100.0,94.8 102.5,93.5 105.0,92.3 107.5,91.0 110.0,89.8 112.5,88.5 115.0,87.3 117.5,86.1 120.0,84.9 122.5,83.8 125.0,82.6 127.5,81.4 130.0,80.3 132.5,79.1 135.0,78.0 137.5,76.9 140.0,75.8 142.5,74.7 145.0,73.6 147.5,72.5 150.0,71.4 152.5,70.3 155.0,69.3 157.5,68.2 160.0,67.2 162.5,66.1 165.0,65.1 167.5,64.1 170.0,63.0 172.5,62.0 175.0,61.0 177.5,60.0 180.0,59.0 182.5,58.0 185.0,57.0 187.5,56.0 190.0,55.1 192.5,54.1 195.0,53.1 197.5,52.2 200.0,51.2 202.5,50.3 205.0,49.4 207.5,48.4 210.0,47.5 212.5,46.6 215.0,45.6 217.5,44.7 220.0,43.8 222.5,42.9 225.0,42.0 227.5,41.1 230.0,40.2 232.5,39.3 235.0,38.5 237.5,37.6 240.0,36.7 242.5,35.8 245.0,35.0 247.5,34.1 250.0,33.2 252.5,32.4 255.0,31.5 257.5,30.7 260.0,29.8 262.5,29.0 265.0,28.2 267.5,27.3 270.0,26.5 272.5,25.7 275.0,24.9 277.5,24.0 280.0,23.2 282.5,22.4 285.0,21.6 287.5,20.8 290.0,20.0 292.5,19.2 295.0,18.4 297.5,17.6 300.0,16.8" fill="none" stroke="#d97706" stroke-width="2.4"/>
-<line x1="290" y1="20" x2="290" y2="220" stroke="#0f6e56" stroke-width="1.2" stroke-dasharray="4 3"/>
-<line x1="290" y1="20" x2="40" y2="20" stroke="#0f6e56" stroke-width="1.2" stroke-dasharray="4 3"/>
-<line x1="90.0" y1="220.0" x2="90.0" y2="100.0" stroke="#0f6e56" stroke-width="1.6"/>
-<line x1="90.0" y1="100.0" x2="190.0" y2="100.0" stroke="#0f6e56" stroke-width="1.6"/>
-<line x1="190.0" y1="100.0" x2="190.0" y2="55.1" stroke="#0f6e56" stroke-width="1.6"/>
-<line x1="190.0" y1="55.1" x2="246.2" y2="55.1" stroke="#0f6e56" stroke-width="1.6"/>
-<line x1="246.2" y1="55.1" x2="246.2" y2="34.6" stroke="#0f6e56" stroke-width="1.6"/>
-<line x1="246.2" y1="34.6" x2="271.8" y2="34.6" stroke="#0f6e56" stroke-width="1.6"/>
-<line x1="271.8" y1="34.6" x2="271.8" y2="25.9" stroke="#0f6e56" stroke-width="1.6"/>
-<line x1="271.8" y1="25.9" x2="282.6" y2="25.9" stroke="#0f6e56" stroke-width="1.6"/>
-<line x1="90.0" y1="217" x2="90.0" y2="223" stroke="#0f172a" stroke-width="1.2"/>
-<line x1="190.0" y1="217" x2="190.0" y2="223" stroke="#0f172a" stroke-width="1.2"/>
-<line x1="246.2" y1="217" x2="246.2" y2="223" stroke="#0f172a" stroke-width="1.2"/>
-<line x1="271.8" y1="217" x2="271.8" y2="223" stroke="#0f172a" stroke-width="1.2"/>
-<circle cx="290" cy="20" r="4.2" fill="#0f6e56" stroke="#0f172a" stroke-width="1.2"/>
-<text x="90.0" y="238" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">u₀</text>
-<text x="190.0" y="252" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">u₁</text>
-<text x="246.2" y="238" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">u₂</text>
-<text x="271.8" y="252" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">u₃</text>
-<text x="290" y="238" text-anchor="middle" fill="#0f6e56" font-size="12" font-weight="700">5</text>
+<line x1="40" y1="220" x2="248.0" y2="12.0" stroke="#94a3b8" stroke-width="1.8"/>
+<polyline points="40.0,130.6 42.0,128.8 44.0,127.0 46.0,125.3 48.0,123.7 50.0,122.0 52.0,120.4 54.0,118.8 56.0,117.2 58.0,115.7 60.0,114.2 62.0,112.7 64.0,111.2 66.0,109.7 68.0,108.3 70.0,106.9 72.0,105.5 74.0,104.1 76.0,102.7 78.0,101.3 80.0,100.0 82.0,98.7 84.0,97.4 86.0,96.1 88.0,94.8 90.0,93.5 92.0,92.3 94.0,91.0 96.0,89.8 98.0,88.5 100.0,87.3 102.0,86.1 104.0,84.9 106.0,83.8 108.0,82.6 110.0,81.4 112.0,80.3 114.0,79.1 116.0,78.0 118.0,76.9 120.0,75.8 122.0,74.7 124.0,73.6 126.0,72.5 128.0,71.4 130.0,70.3 132.0,69.3 134.0,68.2 136.0,67.2 138.0,66.1 140.0,65.1 142.0,64.1 144.0,63.0 146.0,62.0 148.0,61.0 150.0,60.0 152.0,59.0 154.0,58.0 156.0,57.0 158.0,56.0 160.0,55.1 162.0,54.1 164.0,53.1 166.0,52.2 168.0,51.2 170.0,50.3 172.0,49.4 174.0,48.4 176.0,47.5 178.0,46.6 180.0,45.6 182.0,44.7 184.0,43.8 186.0,42.9 188.0,42.0 190.0,41.1 192.0,40.2 194.0,39.3 196.0,38.5 198.0,37.6 200.0,36.7 202.0,35.8 204.0,35.0 206.0,34.1 208.0,33.2 210.0,32.4 212.0,31.5 214.0,30.7 216.0,29.8 218.0,29.0 220.0,28.2 222.0,27.3 224.0,26.5 226.0,25.7 228.0,24.9 230.0,24.0 232.0,23.2 234.0,22.4 236.0,21.6 238.0,20.8 240.0,20.0 242.0,19.2 244.0,18.4 246.0,17.6 248.0,16.8" fill="none" stroke="#d97706" stroke-width="2.4"/>
+<line x1="240" y1="20" x2="240" y2="220" stroke="#0f6e56" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="240" y1="20" x2="40" y2="20" stroke="#0f6e56" stroke-width="1.2" stroke-dasharray="4 3"/>
+<line x1="80.0" y1="220.0" x2="80.0" y2="100.0" stroke="#0f6e56" stroke-width="1.6"/>
+<line x1="80.0" y1="100.0" x2="160.0" y2="100.0" stroke="#0f6e56" stroke-width="1.6"/>
+<line x1="160.0" y1="100.0" x2="160.0" y2="55.1" stroke="#0f6e56" stroke-width="1.6"/>
+<line x1="160.0" y1="55.1" x2="204.9" y2="55.1" stroke="#0f6e56" stroke-width="1.6"/>
+<line x1="204.9" y1="55.1" x2="204.9" y2="34.6" stroke="#0f6e56" stroke-width="1.6"/>
+<line x1="204.9" y1="34.6" x2="225.4" y2="34.6" stroke="#0f6e56" stroke-width="1.6"/>
+<line x1="225.4" y1="34.6" x2="225.4" y2="25.9" stroke="#0f6e56" stroke-width="1.6"/>
+<line x1="225.4" y1="25.9" x2="234.1" y2="25.9" stroke="#0f6e56" stroke-width="1.6"/>
+<line x1="80.0" y1="217" x2="80.0" y2="223" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="160.0" y1="217" x2="160.0" y2="223" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="204.9" y1="217" x2="204.9" y2="223" stroke="#0f172a" stroke-width="1.2"/>
+<line x1="225.4" y1="217" x2="225.4" y2="223" stroke="#0f172a" stroke-width="1.2"/>
+<circle cx="240" cy="20" r="4.2" fill="#0f6e56" stroke="#0f172a" stroke-width="1.2"/>
+<text x="80.0" y="238" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">u₀</text>
+<text x="160.0" y="252" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">u₁</text>
+<text x="204.9" y="238" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">u₂</text>
+<text x="225.4" y="252" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">u₃</text>
+<text x="240" y="238" text-anchor="middle" fill="#0f6e56" font-size="12" font-weight="700">5</text>
 <text x="32" y="24" text-anchor="end" fill="#0f6e56" font-size="12" font-weight="700">5</text>
-<text x="316.0" y="212" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">x</text>
+<text x="260.0" y="212" text-anchor="middle" fill="#0f172a" font-size="12" font-weight="700">x</text>
 <text x="50" y="20" text-anchor="start" fill="#0f172a" font-size="12" font-weight="700">y</text>
-<text x="296.0" y="6.0" text-anchor="end" fill="#475569" font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">y = x</text>
-<text x="190.0" y="45.1" text-anchor="middle" fill="#b45309" font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">y = f(x)</text>
+<text x="244.0" y="6.0" text-anchor="end" fill="#475569" font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">y = x</text>
+<text x="160.0" y="45.1" text-anchor="middle" fill="#b45309" font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">y = f(x)</text>
 </svg>
 :::
 
@@ -509,7 +510,7 @@ Comment trouver la bonne suite auxiliaire, et que faire d'une récurrence à deu
 1. u₀ = 9 et uₙ₊₁ = −uₙ/2 + 3. Le point fixe de x ↦ −x/2 + 3 est ℓ = 2, solution de ℓ = −ℓ/2 + 3.
 2. On pose vₙ = uₙ − 2. Alors vₙ₊₁ = uₙ₊₁ − 2 = −uₙ/2 + 1 = −(uₙ − 2)/2 = −vₙ/2.
 3. (vₙ) est géométrique de raison −1/2 et de premier terme v₀ = 7 : vₙ = 7(−1/2)ⁿ, donc uₙ = 2 + 7(−1/2)ⁿ.
-4. Comme −1 < −1/2 < 1, lim vₙ = 0 et lim uₙ = 2. La suite oscille autour de 2 : 9 ; −1,5 ; 3,75 ; 1,125 ; … (elle n'est pas monotone).
+4. Comme −1 < −1/2 < 1, lim vₙ = 0 et lim uₙ = 2. La suite oscille autour de 2 : 9 ; −1,5 ; 3,75 ; 1,125 ; … (elle n'est pas monotone). Sur le graphique de x ↦ −x/2 + 3, les marches s'enroulent autour du point d'intersection avec y = x (représentation en « escargot »), parce que la pente −1/2 est négative.
 
 :::
 
@@ -525,7 +526,7 @@ Comment trouver la bonne suite auxiliaire, et que faire d'une récurrence à deu
 ::: exemple Récurrence à deux pas
 
 1. u₀ = 0, u₁ = 5 et uₙ₊₂ = 7uₙ₊₁ − 6uₙ. On résout x² = 7x − 6, soit (x − 1)(x − 6) = 0 : les racines sont 1 et 6.
-2. On cherche uₙ = α × 6ⁿ + β. Avec u₀ = 0 : α + β = 0. Avec u₁ = 5 : 6α + β = 5. Donc 5α = 5, α = 1 et β = −1.
+2. Les racines 1 et 6 donnent les suites 1ⁿ = 1 et 6ⁿ, qui vérifient la relation ; on les combine en cherchant uₙ = α × 6ⁿ + β. Avec u₀ = 0 : α + β = 0. Avec u₁ = 5 : 6α + β = 5. Donc 5α = 5, α = 1 et β = −1.
 3. La suite wₙ = 6ⁿ − 1 vérifie w₀ = 0, w₁ = 5 et la même relation, car 7(6ⁿ⁺¹ − 1) − 6(6ⁿ − 1) = 6ⁿ⁺¹(7 − 1) − 1 = 6ⁿ⁺² − 1. Une suite est déterminée par ses deux premiers termes et sa relation : uₙ = 6ⁿ − 1.
 4. Contrôle : u₂ = 7 × 5 − 0 = 35 = 6² − 1.
 
