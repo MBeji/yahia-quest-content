@@ -1,0 +1,140 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Primitives",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Soit F une primitive de f(x) = 8 − 2x sur ℝ. Quelle affirmation sur les variations de F est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F est décroissante sur ]−∞, 4] et croissante sur [4, +∞["
+        },
+        {
+          "id": "b",
+          "text": "F est croissante sur ℝ"
+        },
+        {
+          "id": "c",
+          "text": "F est croissante sur ]−∞, 8] et décroissante sur [8, +∞["
+        },
+        {
+          "id": "d",
+          "text": "F est croissante sur ]−∞, 4] et décroissante sur [4, +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Puisque F′ = f, le signe de f donne les variations de F. Or f(x) = 8 − 2x est positive pour x < 4, nulle en 4, et négative pour x > 4 ✓. Donc F croît sur ]−∞, 4] puis décroît sur [4, +∞[, avec un maximum local en 4. La réponse « décroissante puis croissante » inverse le signe de f. La réponse « croissante sur ℝ » ne regarde pas le signe de f : f change de signe en 4. La réponse qui place le changement de sens en 8 lit la valeur de f(0) au lieu de la racine de f : f s'annule en 4, pas en 8.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "F est une primitive de f sur ℝ. Laquelle de ces fonctions est une primitive de x ↦ f(x + 7) sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ F(x) + 7"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ F(7x)/7"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ F(x + 7)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 7F(x + 7)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive la composée : (F(x + 7))′ = F′(x + 7) × 1 = f(x + 7) ✓ (la dérivée de x + 7 vaut 1, aucun facteur parasite). La fonction F(x) + 7 est une primitive de f, mais f(x) est une autre fonction que f(x + 7) : sa dérivée vaut f(x). La fonction F(7x)/7 a pour dérivée f(7x), le facteur 7 de l'intérieur se simplifie avec le 1/7 mais l'intérieur n'est plus x + 7. La fonction 7F(x + 7) a pour dérivée 7f(x + 7) : le facteur 7 est en trop.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une particule se déplace sur un axe avec la vitesse v(t) = 6 sin(2t) (en m/s). À l'instant t = 0, son abscisse est 2 m. Quelle est son abscisse, en mètres, à l'instant t = π/3 s ?",
+      "answerKey": {
+        "value": 6.5,
+        "unit": "m"
+      },
+      "explanation": "Comme x′ = v, une primitive de 6 sin(2t) est −3 cos(2t) (ligne sin(ωx + φ), ω = 2 : −(1/2)cos(2t), puis le facteur 6). Donc x(t) = −3 cos(2t) + c. La condition x(0) = 2 donne −3 + c = 2, soit c = 5, et x(t) = 5 − 3 cos(2t). Enfin x(π/3) = 5 − 3 cos(2π/3) = 5 − 3 × (−1/2) = 5 + 3/2 = 6,5 m ✓. Contrôle : x′(t) = 6 sin(2t) = v(t) ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = tan(2x)(1 + tan²(2x)) sur ]−π/4, π/4[. Quelle est la primitive F de f sur cet intervalle qui vérifie F(π/8) = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = (tan²(2x) − 1)/4"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = (tan²(2x) + 1)/4"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = (tan²(2x) − 1)/2"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = tan²(2x)/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose u(x) = tan(2x) : u′(x) = 2(1 + tan²(2x)), donc f = (1/2) u′u (il manque la constante 1/2). La table donne u²/2 pour u′u, d'où une primitive (1/2) × tan²(2x)/2 = tan²(2x)/4, et les primitives de f sont x ↦ tan²(2x)/4 + c. Condition : tan(2 × π/8) = tan(π/4) = 1, donc F(π/8) = 1/4 + c = 0 et c = −1/4, soit F(x) = (tan²(2x) − 1)/4 ✓. Vérification : F′(x) = (2 tan(2x) × 2(1 + tan²(2x)))/4 = f(x) ✓. Le piège courant : oublier de compenser le facteur 2 de u′, ce qui donne (tan²(2x) − 1)/2, de dérivée 2f(x) ; oublier la condition initiale et livrer tan²(2x)/4, qui vaut 1/4 en π/8 ; ou se tromper de signe sur la constante, (tan²(2x) + 1)/4, qui vaut 1/2 en π/8.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x cos x et g(x) = x sin x sur ℝ. En calculant f′(x) + g(x), déterminer une primitive G de g sur ℝ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(x) = x cos x − sin x"
+        },
+        {
+          "id": "b",
+          "text": "G(x) = sin x − x cos x"
+        },
+        {
+          "id": "c",
+          "text": "G(x) = sin x + x cos x"
+        },
+        {
+          "id": "d",
+          "text": "G(x) = x sin x + cos x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On dérive f : f′(x) = cos x − x sin x, donc f′(x) + g(x) = cos x. Ainsi g = cos − f′, et une primitive s'obtient terme à terme : sin pour cos, et f pour f′. D'où G(x) = sin x − x cos x ✓. Vérification : G′(x) = cos x − (cos x − x sin x) = x sin x = g(x) ✓. Les pièges : x cos x − sin x est l'opposée de G, de dérivée −g(x) ; sin x + x cos x a pour dérivée 2cos x − x sin x, le signe de f est mal reporté ; x sin x + cos x a pour dérivée x cos x = f(x), c'est une primitive de f et non de g.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (x − 1)(x − 3)² sur ℝ et F une primitive de f sur ℝ. Quelle affirmation sur les extrema locaux de F est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F admet un maximum local en 1 et un minimum local en 3"
+        },
+        {
+          "id": "b",
+          "text": "F admet un minimum local en 1 et un maximum local en 3"
+        },
+        {
+          "id": "c",
+          "text": "F admet un minimum local en 1 et un minimum local en 3"
+        },
+        {
+          "id": "d",
+          "text": "F admet un minimum local en 1 et aucun autre extremum local"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "F′ = f : les extrema locaux de F se trouvent là où f change de signe. Or (x − 3)² est positif sauf en 3, donc f a le signe de x − 1 : f < 0 sur ]−∞, 1[ et f > 0 sur ]1, 3[ comme sur ]3, +∞[ ✓. F décroît puis croît en 1 : minimum local. En 3, f s'annule sans changer de signe : F est croissante de part et d'autre, la tangente est horizontale mais il n'y a pas d'extremum. Les réponses qui placent un extremum en 3 confondent « f s'annule » avec « f change de signe » ; celle qui met un maximum en 1 inverse le signe de f à gauche de 1.",
+      "difficulty": 3
+    }
+  ]
+}

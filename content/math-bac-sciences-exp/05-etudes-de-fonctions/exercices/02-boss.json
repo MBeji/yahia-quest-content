@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des branches infinies",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Quelle est la nature de la branche infinie en +∞ de la courbe de f(x) = 3x − 4√x, définie sur [0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une asymptote oblique d'équation y = 3x"
+        },
+        {
+          "id": "b",
+          "text": "Une branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "c",
+          "text": "Une branche parabolique de direction l'axe des abscisses"
+        },
+        {
+          "id": "d",
+          "text": "Une direction asymptotique d'équation y = 3x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(x) tend vers +∞, on calcule f(x)/x = 3 − 4/√x, qui tend vers 3 : a = 3. Puis f(x) − 3x = −4√x tend vers −∞ : la différence est infinie, donc il n'y a pas d'asymptote, mais la droite y = 3x est direction asymptotique ✓. Une asymptote oblique exigerait une limite finie pour f(x) − 3x (par exemple f(100) = 260 pour 3x = 300 : l'écart grandit). Les directions (Oy) et (Ox) correspondraient à des limites de f(x)/x infinie ou nulle, pas à 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour x négatif très grand, la courbe de f(x) = √(x² + 6x + 4) se rapproche d'une droite. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = −x − 3"
+        },
+        {
+          "id": "b",
+          "text": "y = x + 3"
+        },
+        {
+          "id": "c",
+          "text": "y = −x + 3"
+        },
+        {
+          "id": "d",
+          "text": "y = −x − 6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x < 0, √(x²) = −x : f(x) = −x√(1 + 6/x + 4/x²), donc f(x)/x tend vers −1. Puis f(x) + x = (f(x)² − x²)/(f(x) − x) = (6x + 4)/(f(x) − x) = (6 + 4/x)/(f(x)/x − 1), qui tend vers 6/(−2) = −3 ; l'asymptote est donc y = −x − 3 ✓. La droite y = x + 3 vient de √(x²) = x, erreur de signe en −∞ ; y = −x + 3 inverse le signe de la limite ; y = −x − 6 prend −1 au lieu de −2 pour la limite de f(x)/x − 1, c'est-à-dire oublie que f(x) − x vaut environ −2x, et ne divise pas par 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe de f(x) = (3x² − 4x + 1)/(x − 2) admet un centre de symétrie I. Quelle est l'ordonnée de I ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On divise : 3x² − 4x + 1 = (3x + 2)(x − 2) + 5, donc f(x) = 3x + 2 + 5/(x − 2). Les asymptotes x = 2 et y = 3x + 2 se coupent en (2 ; 3 × 2 + 2) = (2 ; 8), qui est le centre : f(4 − x) = 14 − 3x − 5/(x − 2) = 16 − f(x), donc l'ordonnée de I est 8 ✓. La valeur 2 ne garde que la constante de l'asymptote, 6 oublie cette constante et ne garde que 3 × 2, et 16 est la somme f(x) + f(4 − x), soit le double de l'ordonnée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = x + 1/(x + 1), définie sur ℝ ∖ {−1}. Pour quelles valeurs de m l'équation g(x) = m admet-elle exactement deux solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m < −3 ou m > 1"
+        },
+        {
+          "id": "b",
+          "text": "m > 1"
+        },
+        {
+          "id": "c",
+          "text": "m ≤ −3 ou m ≥ 1"
+        },
+        {
+          "id": "d",
+          "text": "−3 < m < 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "g′(x) = 1 − 1/(x + 1)² = x(x + 2)/(x + 1)², qui s'annule en −2 et en 0 ; g(−2) = −3 et g(0) = 1. Sur ]−∞ ; −2], g croît de −∞ à −3 ; sur [−2 ; −1[, elle décroît de −3 à −∞ ; sur ]−1 ; 0], elle décroît de +∞ à 1 ; sur [0 ; +∞[, elle croît de 1 à +∞. Pour m < −3 : une solution sur chacun des deux premiers intervalles ; pour m > 1 : une sur chacun des deux derniers ✓ ; pour m = −3 ou m = 1 : une seule ; pour −3 < m < 1 : aucune. Contrôle avec m = −4 : x² + 5x + 5 = 0, de discriminant 5 > 0, donc deux solutions.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe de f(x) = x³ − 6x² + mx + 2 admet un point d'inflexion d'ordonnée 6. Quelle est la valeur de m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "−18"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f″(x) = 6x − 12 s'annule en 2 en changeant de signe : le point d'inflexion a pour abscisse 2. Alors f(2) = 8 − 24 + 2m + 2 = 2m − 14 = 6, donc m = 10 ✓. Avec m = −18, on aurait pris −2 pour abscisse ; avec m = 9, on aurait pris pour abscisse 4, zéro non nul de 3x² − 12x (f′ privée de m), au lieu du zéro de f″ ; avec m = 11, on aurait oublié le terme constant 2 dans f(2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On étudie f(x) = cos x + sin 2x sur ℝ. Quelle affirmation est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est paire, donc l'étude sur [0 ; π] suffit pour tracer toute la courbe, par symétrie d'axe (Oy)"
+        },
+        {
+          "id": "b",
+          "text": "f est impaire, donc l'étude sur [0 ; π] suffit pour tracer toute la courbe, par symétrie de centre O"
+        },
+        {
+          "id": "c",
+          "text": "f n'est ni paire ni impaire, mais f(x + 2π) = f(x) : il faut l'étudier sur une période entière, [−π ; π] par exemple"
+        },
+        {
+          "id": "d",
+          "text": "f n'est ni paire ni impaire et n'admet aucune période : aucun morceau de la courbe ne permet d'en déduire le reste, il faut tout calculer"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(π/4) = cos(π/4) + sin(π/2) = √2/2 + 1 ≈ 1,71 et f(−π/4) = √2/2 − 1 ≈ −0,29 : ce n'est ni f(π/4) (f n'est pas paire) ni −f(π/4) ≈ −1,71 (f n'est pas impaire). En revanche cos(x + 2π) = cos x et sin(2x + 4π) = sin 2x, donc f(x + 2π) = f(x) ✓ : il faut étudier une période entière. Prétendre à la parité ou à l'imparité supprime à tort la moitié de l'étude, et nier toute période oublie le calcul de f(x + 2π).",
+      "difficulty": 3
+    }
+  ]
+}

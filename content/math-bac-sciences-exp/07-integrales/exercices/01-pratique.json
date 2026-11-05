@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Du crochet à l'aire",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Que vaut [x³ − 4x]₁² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La notation [F(x)]₁² se lit « F(x) pris entre 1 et 2 » et vaut F(2) − F(1). Ici F(2) = 8 − 8 = 0 et F(1) = 1 − 4 = −3, donc [x³ − 4x]₁² = 0 − (−3) = 3 ✓. La réponse 0 est F(2) seul. La réponse −3 est F(1) − F(2), les bornes étant échangées. La réponse 9 calcule f(2) − f(1) avec f(x) = 3x² − 4, soit 8 − (−1) : on a dérivé au lieu d'évaluer.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut ∫₀^{π/4} dx/cos²x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "π/4"
+        },
+        {
+          "id": "d",
+          "text": "−1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une primitive de 1/cos²x est tan x (contrôle : (tan x)′ = 1 + tan²x = 1/cos²x ✓). Donc ∫₀^{π/4} dx/cos²x = tan(π/4) − tan 0 = 1 ✓. La réponse 2 est la valeur de l'intégrande en π/4, 1/cos²(π/4) = 2, et non de l'intégrale. La réponse π/4 est la borne supérieure : on n'a rien intégré. La réponse −1 est tan 0 − tan(π/4), c'est-à-dire que les bornes sont échangées.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut ∫₃¹ (2x − 1)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "−6"
+        },
+        {
+          "id": "d",
+          "text": "−8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une primitive de 2x − 1 est F(x) = x² − x. Les bornes sont dans l'ordre inverse : ∫₃¹ (2x − 1)dx = F(1) − F(3) = 0 − 6 = −6 ✓. La réponse 6 calcule ∫₁³ : elle oublie qu'échanger les bornes change le signe. La réponse 5 est la valeur f(3) de l'intégrande en une borne. La réponse −8 primitive 2x − 1 en x² et calcule 1 − 9, en oubliant le terme −x de la primitive.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f continue sur ℝ avec ∫₂⁹ f(x)dx = 11 et ∫₂⁵ f(x)dx = 4. Que vaut ∫₉⁵ f(x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "−7"
+        },
+        {
+          "id": "d",
+          "text": "−15"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Par Chasles, ∫₂⁵ f + ∫₅⁹ f = ∫₂⁹ f, donc ∫₅⁹ f = 11 − 4 = 7. Les bornes de la question sont inversées : ∫₉⁵ f = −∫₅⁹ f = −7 ✓. La réponse 7 oublie le changement de signe dû à l'échange des bornes. La réponse 15 additionne 11 + 4 au lieu de retrancher. La réponse −15 cumule cette addition et le changement de signe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la valeur moyenne de f(x) = 1/x² sur l'intervalle [1 ; 4] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "17/32"
+        },
+        {
+          "id": "c",
+          "text": "3/4"
+        },
+        {
+          "id": "d",
+          "text": "9/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule ∫₁⁴ dx/x² = [−1/x]₁⁴ = −1/4 + 1 = 3/4, puis on divise par la longueur 4 − 1 = 3 : f̄ = (3/4)/3 = 1/4 ✓. Contrôle : f varie de 1/16 à 1 sur [1, 4], et 1/4 est bien dans cet intervalle. La réponse 3/4 s'arrête à l'intégrale et oublie le facteur 1/(b − a). La réponse 9/4 multiplie par la longueur 3 au lieu de diviser. La réponse 17/32 est la moyenne arithmétique des extrémités, (f(1) + f(4))/2 = (1 + 1/16)/2, qui n'est pas la valeur moyenne.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La partie colorée est limitée par la courbe de f(x) = x² + 1, l'axe des abscisses et les droites x = 0 et x = 3. Quelle est son aire, en u.a ?\n<svg viewBox=\"0 0 340 230\"><title>Courbe de f(x) = x² + 1 et partie colorée entre la courbe, l'axe des abscisses, x = 0 et x = 3</title><line x1=\"24\" y1=\"179.9\" x2=\"328\" y2=\"179.9\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"63.7\" y1=\"206\" x2=\"63.7\" y2=\"7\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"328,179.9 320,175.9 320,183.9\" fill=\"#0f172a\"/><polygon points=\"63.7,7 59.7,15 67.7,15\" fill=\"#0f172a\"/><polygon points=\"63.7,165.6 68.8,165.5 73.8,165.3 78.9,164.9 84,164.3 89,163.6 94.1,162.7 99.1,161.6 104.2,160.4 109.2,159 114.3,157.5 119.4,155.8 124.4,154 129.5,151.9 134.5,149.8 139.6,147.4 144.7,144.9 149.7,142.3 154.8,139.4 159.8,136.5 164.9,133.3 169.9,130 175,126.5 180.1,122.9 185.1,119.1 190.2,115.2 195.2,111 200.3,106.8 205.3,102.3 210.4,97.7 215.5,93 220.5,88.1 225.6,83 230.6,77.7 235.7,72.3 240.8,66.8 245.8,61 250.9,55.1 255.9,49.1 261,42.9 266,36.5 266,179.9 261,179.9 255.9,179.9 250.9,179.9 245.8,179.9 240.8,179.9 235.7,179.9 230.6,179.9 225.6,179.9 220.5,179.9 215.5,179.9 210.4,179.9 205.3,179.9 200.3,179.9 195.2,179.9 190.2,179.9 185.1,179.9 180.1,179.9 175,179.9 169.9,179.9 164.9,179.9 159.8,179.9 154.8,179.9 149.7,179.9 144.7,179.9 139.6,179.9 134.5,179.9 129.5,179.9 124.4,179.9 119.4,179.9 114.3,179.9 109.2,179.9 104.2,179.9 99.1,179.9 94.1,179.9 89,179.9 84,179.9 78.9,179.9 73.8,179.9 68.8,179.9 63.7,179.9\" fill=\"#0f6e56\" fill-opacity=\"0.2\"/><polyline points=\"50.2,165 54.8,165.3 59.4,165.5 64,165.6 68.6,165.5 73.2,165.3 77.7,165 82.3,164.5 86.9,163.9 91.5,163.1 96.1,162.3 100.7,161.3 105.3,160.1 109.9,158.9 114.4,157.5 119,155.9 123.6,154.3 128.2,152.5 132.8,150.5 137.4,148.5 142,146.3 146.5,144 151.1,141.5 155.7,138.9 160.3,136.2 164.9,133.3 169.5,130.3 174.1,127.2 178.6,123.9 183.2,120.6 187.8,117 192.4,113.4 197,109.6 201.6,105.7 206.2,101.6 210.7,97.4 215.3,93.1 219.9,88.7 224.5,84.1 229.1,79.4 233.7,74.5 238.3,69.5 242.8,64.4 247.4,59.2 252,53.8 256.6,48.3 261.2,42.6 265.8,36.9 270.4,30.9 274.9,24.9 279.5,18.7\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"266\" y1=\"179.9\" x2=\"266\" y2=\"36.5\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"\"/><text x=\"63.7\" y=\"195.7\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"266\" y=\"195.7\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><text x=\"303.1\" y=\"42.2\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C_f</text><line x1=\"58.3\" y1=\"165.6\" x2=\"69.1\" y2=\"165.6\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"\"/><text x=\"43.5\" y=\"165.6\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "30"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La fonction f est continue et positive sur [0, 3], donc l'aire vaut ∫₀³ (x² + 1)dx = [x³/3 + x]₀³ = 9 + 3 = 12 u.a ✓. La réponse 9 oublie le terme constant 1 : elle calcule ∫₀³ x² dx. La réponse 10 est f(3), la valeur de la fonction en la borne droite, qui n'est pas une aire. La réponse 30 primitive x² en x³ sans le diviseur 3 : elle calcule [x³ + x]₀³ = 27 + 3.",
+      "difficulty": 2
+    }
+  ]
+}

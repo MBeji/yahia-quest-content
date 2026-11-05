@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des études à logarithme",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Une seule des affirmations suivantes est FAUSSE. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sur ℝ*, (ln(x²))′ = 1/x"
+        },
+        {
+          "id": "b",
+          "text": "Pour tout x > 0, ln x ≤ x − 1"
+        },
+        {
+          "id": "c",
+          "text": "lim_{x→+∞} (x − ln x) = +∞"
+        },
+        {
+          "id": "d",
+          "text": "lim_{x→0⁺} (1/x + ln x) = +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Question de chasse à l'erreur : la bonne réponse est l'affirmation fausse. Pour x ≠ 0, ln(x²) = 2 ln|x|, de dérivée 2x/x² = 2/x, non 1/x : l'affirmation sur ln(x²) est fausse ✓. Les trois autres sont vraies : la fonction 1 − x + ln x a pour maximum 0 en x = 1, donc ln x ≤ x − 1 ; x − ln x = x(1 − (ln x)/x) tend vers +∞ ; et 1/x + ln x = (1/x)(1 + x ln x) avec x ln x → 0, donc la limite en 0⁺ est +∞. Le piège courant est de croire que ln(x²) se dérive comme ln x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit α un réel de ]0, 1[. On note 𝒜(α) l'aire, en u.a, du domaine coloré limité par la courbe de x ↦ x ln x, l'axe des abscisses et les droites x = α et x = 1. Déterminer lim_{α→0⁺} 𝒜(α).\n\n<svg viewBox=\"0 0 340 150\">\n<title>Courbe de x ↦ x ln x : sous l'axe des abscisses sur ]0 ; 1[, avec la partie entre les abscisses α et 1 colorée</title>\n<polygon points=\"80,112.7 90,118.3 110,124.2 130,125 150,122 170,116 190,107.5 210,96.8 230,84.2 250,70 250,70 80,70\" fill=\"#0f6e56\" fill-opacity=\"0.18\"/>\n<line x1=\"30\" y1=\"70\" x2=\"326\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"50\" y1=\"140\" x2=\"50\" y2=\"14\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"326,70 318,66 318,74\" fill=\"#0f172a\"/><polygon points=\"50,14 46,22 54,22\" fill=\"#0f172a\"/>\n<polyline points=\"54,81.7 60,92.5 66,100.3 74,108.2 80,112.7 90,118.3 110,124.2 130,125 150,122 170,116 190,107.5 210,96.8 230,84.2 250,70 270,54.3 290,37.2 310,18.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<line x1=\"80\" y1=\"112.7\" x2=\"80\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n<g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">\n<text x=\"42\" y=\"64\" text-anchor=\"end\" fill=\"#0f172a\">O</text>\n<text x=\"80\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\">α</text>\n<text x=\"253\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\">1</text>\n<text x=\"250\" y=\"12.8\" fill=\"#0f6e56\">y = x ln x</text>\n</g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La limite vaut 1/2"
+        },
+        {
+          "id": "b",
+          "text": "La limite vaut 1/4"
+        },
+        {
+          "id": "c",
+          "text": "La limite vaut 0"
+        },
+        {
+          "id": "d",
+          "text": "La limite vaut −1/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur ]0, 1[, x ln x ≤ 0 : la courbe est sous l'axe (comme sur la figure), donc 𝒜(α) = −∫_α¹ x ln x dx. Par parties, une primitive de x ln x est (x²/2) ln x − x²/4, d'où ∫_α¹ x ln x dx = −1/4 − (α²/2) ln α + α²/4 et 𝒜(α) = 1/4 + (α²/2) ln α − α²/4. Par croissance comparée α² ln α → 0, donc 𝒜(α) → 1/4 ✓. La limite −1/4 oublie de changer le signe d'une intégrale négative pour obtenir une aire. La limite 1/2 vient d'une primitive fausse, (x²/2) ln x − x²/2. La limite 0 prend à tort l'intégrande, qui tend vers 0, pour l'aire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a un réel strictement positif et f la fonction définie sur ]0, +∞[ par f(x) = x² − a ln x. Pour quelle valeur de a le minimum de f est-il égal à 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 2/e"
+        },
+        {
+          "id": "b",
+          "text": "a = e"
+        },
+        {
+          "id": "c",
+          "text": "a = 2e"
+        },
+        {
+          "id": "d",
+          "text": "Aucune valeur de a"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f′(x) = 2x − a/x = (2x² − a)/x : f décroît sur ]0, √(a/2)] et croît ensuite, son minimum est f(√(a/2)) = a/2 − (a/2) ln(a/2) = (a/2)(1 − ln(a/2)). Il est nul si et seulement si ln(a/2) = 1, c'est-à-dire a = 2e ✓ (contrôle : x = √e, f = e − 2e × (1/2) = 0). La valeur a = e oublie le /2 : elle revient à poser ln a = 1. La valeur a = 2/e donne ln(a/2) = −1, soit une erreur de signe sur 1 − ln. Écrire « aucune valeur » suppose que le minimum reste strictement positif, ce qui est faux puisque (a/2)(1 − ln(a/2)) s'annule en a = 2e.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève résout l'inéquation ln(3x + 1) − ln(x − 1) ≥ ln 5.\n\nÉtape 1 : les deux logarithmes existent si 3x + 1 > 0 et x − 1 > 0, donc si x > 1.\nÉtape 2 : ln(3x + 1) − ln(x − 1) = ln((3x + 1)/(x − 1)).\nÉtape 3 : ln est croissante, donc (3x + 1)/(x − 1) ≥ 5 ; comme x − 1 > 0, 3x + 1 ≥ 5x − 5, soit x ≤ 3.\nÉtape 4 : l'ensemble des solutions est donc ]−∞, 3].\n\nQuelle est la première étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étape 4 : la conclusion de l'élève"
+        },
+        {
+          "id": "b",
+          "text": "Étape 3 : le passage à l'inégalité sans logarithme"
+        },
+        {
+          "id": "c",
+          "text": "Étape 2 : le regroupement des deux logarithmes"
+        },
+        {
+          "id": "d",
+          "text": "Étape 1 : les conditions d'existence"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Question de chasse à l'erreur : la bonne réponse est l'étape fautive. Les étapes 1 à 3 sont exactes : les conditions donnent x > 1, la différence de logarithmes devient le logarithme du quotient (licite pour x > 1), et multiplier par x − 1 > 0 conserve le sens de l'inégalité. L'erreur est à l'étape 4 : l'élève n'intersecte pas avec la condition x > 1 de l'étape 1. L'ensemble correct est ]1, 3] ✓. Contrôle : en x = 3, ln 10 − ln 2 = ln 5 ✓. En revanche x = 0 vérifie x ≤ 3, mais ln(−1) n'existe pas : 0 n'est pas solution. C'est le piège courant des inéquations en ln : oublier de revenir au domaine à la fin.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g la fonction définie sur [4, 5] par g(x) = 5 − (1/3) ln x. On admet que la suite (uₙ) définie par u₀ = 4 et uₙ₊₁ = g(uₙ) reste dans [4, 5], que l'équation g(x) = x a une unique solution a dans [4, 5], et que |uₙ₊₁ − a| ≤ (1/12)|uₙ − a| pour tout n. On donne ln 10 ≈ 2,3026 et ln 12 ≈ 2,4849. Quel est le plus petit entier n garantissant |uₙ − a| ≤ 10⁻⁶ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 14"
+        },
+        {
+          "id": "b",
+          "text": "n = 6"
+        },
+        {
+          "id": "c",
+          "text": "n = 5"
+        },
+        {
+          "id": "d",
+          "text": "n = 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "De |uₙ₊₁ − a| ≤ (1/12)|uₙ − a| on tire par récurrence |uₙ − a| ≤ (1/12)ⁿ|u₀ − a| ≤ (1/12)ⁿ, car u₀ = 4 et a sont dans [4, 5]. Il suffit donc que (1/12)ⁿ ≤ 10⁻⁶, c'est-à-dire n ln 12 ≥ 6 ln 10, soit n ≥ 13,8156/2,4849 ≈ 5,56 : n = 6 ✓. Contrôle : 12⁵ = 248 832 < 10⁶ ≤ 2 985 984 = 12⁶. La valeur 5 arrondit 5,56 à l'entier inférieur, ce qui ne garantit pas la précision. La valeur 14 oublie de diviser par ln 12. La valeur 1 oublie le facteur 6 de 10⁶.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0, +∞[ par f(x) = x ln((x + 3)/x) pour x > 0 et f(0) = 0. Que peut-on dire de f en 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continue et dérivable à droite en 0, avec f′_d(0) = 0"
+        },
+        {
+          "id": "b",
+          "text": "Continue et dérivable à droite en 0, avec f′_d(0) = ln 3"
+        },
+        {
+          "id": "c",
+          "text": "Non continue en 0"
+        },
+        {
+          "id": "d",
+          "text": "Continue en 0, non dérivable à droite : la courbe a une demi-tangente verticale à l'origine"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Continuité : f(x) = x ln(x + 3) − x ln x, avec x ln(x + 3) → 0 × ln 3 = 0 et x ln x → 0 par croissance comparée, donc f(x) → 0 = f(0) ✓. Dérivabilité : le taux (f(x) − f(0))/x = ln((x + 3)/x) = ln(x + 3) − ln x tend vers +∞ quand x → 0⁺, donc f n'est pas dérivable à droite en 0 et la courbe admet une demi-tangente verticale ✓. Conclure f′_d(0) = 0 revient à oublier de diviser par x dans le taux d'accroissement : f(x) → 0 ne suffit pas pour la dérivabilité. Conclure f′_d(0) = ln 3 ne garde que ln(x + 3) et oublie − ln x. Conclure « non continue » croit que ln((x + 3)/x) → +∞ l'emporte, alors que le facteur x écrase le logarithme.",
+      "difficulty": 3
+    }
+  ]
+}

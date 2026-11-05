@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Logarithme népérien",
+  "questions": [
+    {
+      "prompt": "Sur ]0, +∞[, la fonction ln est la primitive de t ↦ 1/t qui prend quelle valeur en 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "e"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par définition, ln x = ∫₁ˣ dt/t, donc ln 1 = ∫₁¹ dt/t = 0 : c'est la primitive de t ↦ 1/t qui s'annule en 1 ✓. La valeur 1 est celle de ln en e (ln e = 1), pas en 1. La valeur e est l'abscisse où ln vaut 1, pas une valeur de ln. La valeur −1 serait celle de ln en 1/e.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle affirmation est exacte pour le nombre ln(0,8) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(0,8) > 0"
+        },
+        {
+          "id": "b",
+          "text": "ln(0,8) = 0"
+        },
+        {
+          "id": "c",
+          "text": "ln(0,8) n'est pas défini"
+        },
+        {
+          "id": "d",
+          "text": "ln(0,8) < 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a 0 < 0,8 < 1, ln est strictement croissante et ln 1 = 0, donc ln(0,8) < ln 1 = 0 : le nombre est strictement négatif (ln 0,8 ≈ −0,223) ✓. Dire qu'il est positif confond « 0,8 est positif » et « ln(0,8) est positif ». Dire qu'il est nul confond avec ln 1. Dire qu'il n'est pas défini oublie que ln existe sur tout ]0, +∞[, donc en 0,8.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut ln′(5), la dérivée de la fonction ln en 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/25"
+        },
+        {
+          "id": "b",
+          "text": "1/5"
+        },
+        {
+          "id": "c",
+          "text": "ln 5"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme ln′(x) = 1/x pour tout x > 0, ln′(5) = 1/5 ✓. La valeur −1/25 est la dérivée de x ↦ 1/x en 5, c'est-à-dire ln″(5) : on a dérivé une fois de trop. La valeur ln 5 ≈ 1,609 est la hauteur de la courbe en 5, pas sa pente. La valeur 5 est l'abscisse.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut ln(e⁴) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "1/4"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "e⁴"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ln(e⁴) = 4 ln e = 4 × 1 = 4 ✓. La valeur −4 serait celle de ln(1/e⁴) = ln(e⁻⁴). La valeur 1/4 serait celle de ln(⁴√e) = (1/4) ln e. Quant à e⁴, ce serait supposer que ln renvoie son argument : ln(e⁴) est l'exposant 4, non le nombre e⁴ ≈ 54,6.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tout réel b > 0, ln(1/b) est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/ln b"
+        },
+        {
+          "id": "b",
+          "text": "ln b"
+        },
+        {
+          "id": "c",
+          "text": "1 − ln b"
+        },
+        {
+          "id": "d",
+          "text": "−ln b"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ln(1/b) = ln 1 − ln b = −ln b, puisque ln 1 = 0 ✓. Contrôle avec b = e : ln(1/e) = −1 = −ln e ✓. La réponse 1/ln b inverse le nombre ln b au lieu de passer à l'opposé. La réponse ln b oublie le signe. La réponse 1 − ln b prend ln 1 pour 1, alors que ln 1 = 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On donne ln 2 ≈ 0,693 et ln 3 ≈ 1,099. Une valeur approchée de ln 18 est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,891"
+        },
+        {
+          "id": "b",
+          "text": "2,198"
+        },
+        {
+          "id": "c",
+          "text": "1,792"
+        },
+        {
+          "id": "d",
+          "text": "1,523"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On factorise 18 = 2 × 3², donc ln 18 = ln 2 + 2 ln 3 ≈ 0,693 + 2,198 = 2,891 ✓ (la calculatrice donne 2,890). La valeur 2,198 est 2 ln 3 : elle oublie le facteur 2. La valeur 1,792 est ln 2 + ln 3 = ln 6 : elle oublie le carré. La valeur 1,523 multiplie ln 2 par 2 ln 3 au lieu de les additionner.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est l'ensemble de définition de la fonction f : x ↦ ln(5 − 2x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]0, 5/2["
+        },
+        {
+          "id": "b",
+          "text": "]5/2, +∞["
+        },
+        {
+          "id": "c",
+          "text": "]−∞, 5/2["
+        },
+        {
+          "id": "d",
+          "text": "]−∞, 5/2]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il faut 5 − 2x > 0, soit −2x > −5, soit x < 5/2 (en divisant par −2 on renverse l'inégalité) : D_f = ]−∞, 5/2[ ✓. L'intervalle ]5/2, +∞[ oublie ce renversement. L'intervalle ]−∞, 5/2] ferme la borne, or en 5/2 on aurait ln 0, qui n'existe pas. L'intervalle ]0, 5/2[ ajoute la condition x > 0, qui concerne ln x et non ln(5 − 2x).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre l'équation ln x = −2.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = e²"
+        },
+        {
+          "id": "b",
+          "text": "x = 1/e²"
+        },
+        {
+          "id": "c",
+          "text": "x = 1/e"
+        },
+        {
+          "id": "d",
+          "text": "x = 1/e⁴"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a ln(1/e²) = −2 ln e = −2, et ln est une bijection : l'unique solution est x = 1/e² ≈ 0,135 ✓. La valeur e² vérifie ln x = +2, pas −2. La valeur 1/e vérifie ln x = −1 : elle oublie l'exposant 2. La valeur 1/e⁴ vérifie ln x = −4 : elle double l'exposant par erreur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−∞, 2[ par f(x) = ln(2 − x). Que vaut f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "1/(2 − x)"
+        },
+        {
+          "id": "c",
+          "text": "1/(2 − x)²"
+        },
+        {
+          "id": "d",
+          "text": "1/(x − 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec u(x) = 2 − x > 0 et u′(x) = −1, f′(x) = u′(x)/u(x) = −1/(2 − x) = 1/(x − 2) ✓. Ce nombre est négatif sur ]−∞, 2[, comme il se doit : 2 − x décroît, donc ln(2 − x) aussi. La réponse 1/(2 − x) oublie le facteur u′ = −1. La réponse −1 ne garde que u′. La réponse 1/(2 − x)² est la dérivée de 1/(2 − x), non celle de son logarithme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut lim_{x→0⁺} ln x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a ln x = −ln(1/x) et 1/x tend vers +∞ quand x tend vers 0⁺, donc ln x tend vers −∞ ✓ : l'axe des ordonnées est asymptote verticale. La valeur 0 est celle de ln en 1, non en 0⁺. La valeur 1 est celle de ln en e. La valeur +∞ est la limite de ln en +∞, pas en 0⁺.",
+      "difficulty": 2
+    }
+  ]
+}

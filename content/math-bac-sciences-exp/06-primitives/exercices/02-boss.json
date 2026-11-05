@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des primitives",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Déterminer une primitive sur ℝ de la fonction f définie par f(x) = sin²(4x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = x/2 + sin(8x)/16"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = x/2 − sin(8x)/2"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = x/2 − sin(8x)/16"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = sin³(4x)/12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un carré de sinus ne figure dans aucune table : on linéarise d'abord. Avec sin²t = (1 − cos 2t)/2 appliquée à t = 4x, on obtient f(x) = 1/2 − (1/2)cos(8x). La linéarité donne une primitive terme à terme : 1/2 se primitive en x/2, et cos(8x) en (1/8)sin(8x) (facteur 1/ω avec ω = 8), donc −(1/2)cos(8x) se primitive en −(1/16)sin(8x). D'où F(x) = x/2 − sin(8x)/16 ✓. Vérification : F′(x) = 1/2 − (8/16)cos(8x) = (1 − cos 8x)/2 = sin²(4x) ✓. Le piège courant : confondre avec la formule de cos²t = (1 + cos 2t)/2, qui renverse le signe et donne x/2 + sin(8x)/16, de dérivée cos²(4x) ; perdre le facteur 1/ω et écrire sin(8x)/2, de dérivée 1/2 − 4cos(8x) ; ou traiter sin²(4x) comme un uⁿ en écrivant « u³/3 » sans u′, ce qui donne sin³(4x)/12, dont la dérivée sin²(4x)cos(4x) est un produit qui n'a rien à voir avec f.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Déterminer une primitive sur ℝ de la fonction f définie par f(x) = sin(3x)cos⁴(3x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = −cos⁵(3x)/15"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = cos⁵(3x)/15"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = −cos⁵(3x)/5"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = −cos⁴(3x)/12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le motif se cache derrière un signe et un facteur. On pose u(x) = cos(3x), donc u′(x) = −3 sin(3x), et f(x) = −(1/3) u′(x) u(x)⁴. La table donne u⁵/5 pour u′u⁴, donc F(x) = −(1/3) × cos⁵(3x)/5 = −cos⁵(3x)/15 ✓. Vérification : F′(x) = −(1/15) × 5cos⁴(3x) × (−3 sin 3x) = sin(3x)cos⁴(3x) ✓. Le piège courant : oublier que u′ = −3 sin(3x) porte un signe et un facteur 3. Sans le signe, on livre cos⁵(3x)/15, de dérivée −f(x) ; sans le facteur 3, on obtient −cos⁵(3x)/5, de dérivée 3f(x) ; et en n'élevant pas la puissance (u⁴ au lieu de u⁵), on fabrique −cos⁴(3x)/12, de dérivée cos³(3x)sin(3x).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur ]−1, +∞[ par f(x) = (2x³ + x² − 4x + 2)/(x + 1)². Après avoir écrit f(x) sous la forme ax + b + c/(x + 1)², déterminer une primitive de f sur ]−1, +∞[.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = x² − 3x + 5/(x + 1)"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = x² − 3x − 5/(2(x + 1)²)"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = x² + x − 5/(x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = x² − 3x − 5/(x + 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Étape 1, l'identification : (ax + b)(x + 1)² + c = ax³ + (2a + b)x² + (a + 2b)x + (b + c). On identifie avec 2x³ + x² − 4x + 2 : a = 2, puis 2a + b = 1 donne b = −3 ; contrôle sur le terme en x : a + 2b = 2 − 6 = −4 ✓ ; enfin b + c = 2 donne c = 5. Donc f(x) = 2x − 3 + 5/(x + 1)². Étape 2, la primitivation terme à terme : 2x − 3 donne x² − 3x ; 5/(x + 1)² donne −5/(x + 1). D'où F(x) = x² − 3x − 5/(x + 1) ✓. Vérification : F′(x) = 2x − 3 + 5/(x + 1)² = f(x) ✓. Le piège courant : oublier le signe de la table 1/uⁿ, ce qui donne x² − 3x + 5/(x + 1), de dérivée 2x − 3 − 5/(x + 1)² ; lire b = 1 sur le terme en x², ce qui donne x² + x − 5/(x + 1) et ignore le décalage dû à (x + 1)² ; ou diviser par n au lieu de n − 1 et fabriquer −5/(2(x + 1)²), de dérivée 5/(x + 1)³.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur ]1/2, +∞[ par f(x) = (3x − 2)/√(2x − 1). Après avoir écrit 3x − 2 = (3/2)(2x − 1) − 1/2, déterminer une primitive de f sur ]1/2, +∞[.",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = (1/2)(2x − 1)√(2x − 1) + (1/2)√(2x − 1)"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = (1/2)(2x − 1)√(2x − 1) − (1/2)√(2x − 1)"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = (2x − 1)√(2x − 1) − √(2x − 1)"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = (1/2)(2x − 1)√(2x − 1) − √(2x − 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Aucun motif n'apparaît tel quel : on réécrit f avant de primitiver. Avec u(x) = 2x − 1, f(x) = (3/2)√u − (1/2)/√u. Comme u′ = 2, √u = (1/2)u′√u a pour primitive (1/2) × (2/3)u√u = (1/3)u√u, et 1/√u = (1/2)u′/√u a pour primitive (1/2) × 2√u = √u. D'où F = (3/2) × (1/3)u√u − (1/2)√u = (1/2)(2x − 1)√(2x − 1) − (1/2)√(2x − 1) ✓. Vérification : F′(x) = (3/2)√(2x − 1) − (1/2)/√(2x − 1) = (3(2x − 1) − 1)/(2√(2x − 1)) = (3x − 2)/√(2x − 1) ✓. Le piège courant : se tromper de signe sur le second terme, ce qui donne une dérivée (3x − 1)/√(2x − 1) ; oublier la dérivée u′ = 2 de l'intérieur sur les deux termes, ce qui double la primitive ; ou ne l'oublier que sur le second terme, ce qui laisse −√(2x − 1) et une dérivée (6x − 5)/(2√(2x − 1)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un mobile se déplace sur un axe. À l'instant t = 0, il se trouve à l'origine avec une vitesse de 1 m/s. Son accélération à l'instant t est a(t) = 12/(t + 2)⁴ (en m/s²), pour t ≥ 0. Quelle est son abscisse à l'instant t = 2 s ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x(2) = −3/8 m"
+        },
+        {
+          "id": "b",
+          "text": "x(2) = 23/16 m"
+        },
+        {
+          "id": "c",
+          "text": "x(2) = 21/8 m"
+        },
+        {
+          "id": "d",
+          "text": "x(2) = 25/8 m"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux remontées, donc deux conditions initiales. Première remontée : v′ = a et une primitive de 12/(t + 2)⁴ est 12 × (t + 2)^(−3)/(−3) = −4/(t + 2)³, donc v(t) = −4/(t + 2)³ + c ; v(0) = −4/8 + c = 1 impose c = 3/2. Seconde remontée : x′ = v, donc x(t) = 2/(t + 2)² + (3/2)t + c′ ; x(0) = 2/4 + c′ = 0 impose c′ = −1/2. Enfin x(2) = 2/16 + 3 − 1/2 = 1/8 + 5/2 = 21/8 m ✓. Le piège courant : oublier la condition v(0) = 1, ce qui supprime le terme (3/2)t et donne 1/8 − 1/2 = −3/8 ; oublier x(0) = 0 en gardant c′ = 0, ce qui donne 1/8 + 3 = 25/8 ; ou prendre la vitesse v(2) = −1/16 + 3/2 = 23/16 pour la position.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Laquelle de ces quatre affirmations sur les primitives est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toute primitive sur ℝ d'une fonction continue sur ℝ est elle-même continue sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "Si F est une primitive de f sur ℝ, alors x ↦ F(x²) est une primitive de x ↦ f(x²) sur ℝ"
+        },
+        {
+          "id": "c",
+          "text": "Si f est paire et continue sur ℝ, alors toutes ses primitives sur ℝ sont paires"
+        },
+        {
+          "id": "d",
+          "text": "Toute primitive sur ℝ d'une fonction positive sur ℝ est positive sur ℝ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Seule la première affirmation est vraie ✓ : une primitive F est dérivable sur ℝ par définition, donc continue sur ℝ. L'affirmation sur x ↦ F(x²) est fausse : (F(x²))′ = 2x F′(x²) = 2x f(x²), pas f(x²) ; avec f = cos et F = sin, (sin x²)′ = 2x cos x². L'affirmation « f paire, donc toutes les primitives sont paires » est fausse : pour f(x) = x², la fonction F(x) = x³/3 est une primitive, elle est impaire et non paire (F(1) = 1/3 ≠ F(−1) = −1/3). L'affirmation « f positive, donc toute primitive positive » est fausse : pour f = 1, la fonction F(x) = x − 5 est une primitive qui prend des valeurs négatives ; f positive donne seulement F croissante. Le piège courant est de transporter une propriété de f à ses primitives sans la dérivée, ou de confondre le sens de variation de F (donné par le signe de f) avec le signe de F.",
+      "difficulty": 3
+    }
+  ]
+}
