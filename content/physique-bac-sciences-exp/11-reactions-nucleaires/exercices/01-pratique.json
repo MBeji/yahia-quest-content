@@ -1,0 +1,126 @@
+{
+  "title": "⭐ Exercice : Les premiers pas dans les réactions nucléaires",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le strontium 90, ⁹⁰₃₈Sr, est un émetteur β⁻. Quel est le nombre de charge Z du noyau fils ?",
+      "answerKey": {
+        "value": 39
+      },
+      "explanation": "Une désintégration β⁻ ajoute 1 au nombre de charge : Z = 38 + 1 = 39 (yttrium) ✓. Contrôle de la charge : 38 = −1 + 39.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une feuille de papier est placée devant une source qui émet tous les rayonnements. Quel rayonnement est presque entièrement arrêté par cette seule feuille ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le rayonnement γ"
+        },
+        {
+          "id": "b",
+          "text": "Le rayonnement α"
+        },
+        {
+          "id": "c",
+          "text": "Le rayonnement β⁻"
+        },
+        {
+          "id": "d",
+          "text": "Le rayonnement β⁺"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rayonnement α est très ionisant mais très peu pénétrant : une feuille de papier ou quelques centimètres d'air l'arrêtent ✓. Les rayonnements β⁻ et β⁺ traversent le papier et ne sont arrêtés que par environ 7 mm d'aluminium. Le rayonnement γ traverse même plusieurs centimètres de plomb.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un échantillon a une activité de 3,0 × 10⁴ Bq. Que signifie cette valeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,0 × 10⁴ désintégrations par seconde"
+        },
+        {
+          "id": "b",
+          "text": "3,0 × 10⁴ désintégrations par minute"
+        },
+        {
+          "id": "c",
+          "text": "3,0 × 10⁴ noyaux radioactifs dans l'échantillon"
+        },
+        {
+          "id": "d",
+          "text": "une période radioactive de 3,0 × 10⁴ s"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1 Bq est une désintégration par seconde, donc 3,0 × 10⁴ Bq sont 3,0 × 10⁴ désintégrations chaque seconde (en moyenne) ✓. « Par minute » confond la seconde et la minute. « Noyaux radioactifs » confond l'activité A avec le nombre de noyaux N. « Une période » confond l'activité avec une durée.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'iode 131 a pour période T = 8,0 jours. Un échantillon a une activité de 6,4 × 10⁵ Bq à t = 0. Quelle est son activité après 24 jours, en 10⁴ Bq ?",
+      "answerKey": {
+        "value": 8.0,
+        "tolerance": 0.05,
+        "unit": "10⁴ Bq"
+      },
+      "explanation": "24 jours = 24 / 8,0 = 3 périodes, donc A = A₀/2³ = 6,4 × 10⁵ / 8 = 8,0 × 10⁴ Bq ✓, soit 8,0 en unité de 10⁴ Bq.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans l'équation ²¹⁰₈₂Pb → ²¹⁰₈₃Bi + X, quelle est la particule X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un positon ⁰₁e"
+        },
+        {
+          "id": "b",
+          "text": "Un neutron ¹₀n"
+        },
+        {
+          "id": "c",
+          "text": "Un électron ⁰₋₁e"
+        },
+        {
+          "id": "d",
+          "text": "Une particule α ⁴₂He"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Charge : 82 = 83 + Z_X donc Z_X = −1 ; masse : 210 = 210 + A_X donc A_X = 0. C'est un électron ⁰₋₁e : désintégration β⁻ ✓. Un positon porterait +1, ce qui donnerait 84 et non 82 au second membre. Un neutron a une masse 1 et une charge nulle. Une particule α a une masse 4 et une charge +2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une substance radioactive a pour période T = 20,0 min. Quelle est sa constante radioactive λ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,73 × 10³ s⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "3,47 × 10⁻² s⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "8,33 × 10⁻⁴ s⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "5,78 × 10⁻⁴ s⁻¹"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "T = 20,0 × 60 = 1200 s, donc λ = ln 2 / T = 0,693 / 1200 = 5,78 × 10⁻⁴ s⁻¹ ✓. 3,47 × 10⁻² laisse T en minutes. 8,33 × 10⁻⁴ calcule 1/T en oubliant ln 2. 1,73 × 10³ calcule T/ln 2, la relation inversée.",
+      "difficulty": 2
+    }
+  ]
+}

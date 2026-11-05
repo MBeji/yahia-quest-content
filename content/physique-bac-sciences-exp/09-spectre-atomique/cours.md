@@ -111,7 +111,7 @@ Sur le dessin, plus un trait est haut, plus l'énergie est grande ; E₁ = −10
 1. L'état fondamental est le niveau le plus bas, c'est-à-dire le plus négatif : E₁ = −10,0 eV.
 2. De E₁ à E₃, l'énergie passe de −10,0 à −3,0 eV : elle augmente, l'atome doit recevoir ΔE = E₃ − E₁ = +7,0 eV.
 3. De E₃ à E₂, elle passe de −3,0 à −6,0 eV : elle diminue, l'atome cède ΔE = E₂ − E₃ = −3,0 eV.
-4. Un apport de 6,0 eV ou de 8,0 eV ne convient pas pour aller de E₁ à E₃ : seul l'écart exact entre les deux niveaux, 7,0 eV, permet la transition.
+4. Un photon de 6,0 eV ou de 8,0 eV ne convient pas pour aller de E₁ à E₃ : seul un photon d'énergie exactement égale à l'écart, 7,0 eV, est absorbé (un électron, lui, peut céder 7,0 eV et garder le reste).
 
 :::
 
@@ -120,7 +120,7 @@ Sur le dessin, plus un trait est haut, plus l'énergie est grande ; E₁ = −10
 :::
 
 ::: propriete
-**Ce qui reste vrai** — Chaque atome possède sa propre suite de niveaux. Un atome dans son état fondamental est au plus stable ; un apport d'énergie extérieur (choc, photon) peut le placer dans un état excité. Cas limite : un apport inférieur à l'énergie d'ionisation, qui ne correspond à aucun écart entre deux niveaux, ne change pas l'état de l'atome (notion 7).
+**Ce qui reste vrai** — Chaque atome possède sa propre suite de niveaux. Un atome dans son état fondamental est au plus stable ; un apport d'énergie extérieur (choc, photon) peut le placer dans un état excité. Cas limite : un photon d'énergie inférieure à l'énergie d'ionisation, qui ne correspond à aucun écart entre deux niveaux, n'est pas absorbé (notion 7) ; un électron qui heurte l'atome peut, lui, céder un écart inférieur à son énergie cinétique (notion 2).
 :::
 
 ::: verifie À toi : un autre atome
@@ -276,9 +276,13 @@ Un spectre de raies d'émission ou d'absorption est la carte d'identité d'un é
 Les niveaux Eₙ de l'hydrogène et l'énergie W = hν d'un photon permettent de prédire les raies que la lampe émet. L'atome n'a pourtant qu'un électron, et la lampe montre quatre raies visibles.
 Quelle transition donne la raie rouge, et que se passe-t-il quand un photon arrive sur l'atome au lieu d'en partir ?
 
+::: definition
+**Raie d'une transition** — Une raie correspond à une transition entre deux niveaux n < p ; le photon émis ou absorbé porte W = Eₚ − Eₙ = E₀·(1/n² − 1/p²). Une **série** regroupe les raies qui aboutissent au même niveau n : Lyman (n = 1), Balmer (n = 2), Paschen (n = 3), Brackett (n = 4), Pfund (n = 5).
+:::
+
 ::: exemple Longueur d'onde de la raie rouge : transition de n = 3 à n = 2 (E₀ = 13,6 eV)
 
-1. ΔE = E₃ − E₂ = −1,51 − (−3,40) = +1,89 eV, car l'atome perd de l'énergie en passant de n = 3 à n = 2 : il émet un photon d'énergie W = |ΔE| = 1,89 eV.
+1. ΔE = E₂ − E₃ = −3,40 − (−1,51) = −1,89 eV : l'énergie diminue, l'atome émet un photon d'énergie W = |ΔE| = 1,89 eV.
 2. En joules : W = 1,89 × 1,6×10⁻¹⁹ = 3,02×10⁻¹⁹ J, car 1 eV = 1,6×10⁻¹⁹ J.
 3. λ = h·c/W = 1,99×10⁻²⁵ / 3,02×10⁻¹⁹ = 6,57×10⁻⁷ m = 657 nm, car W = h·c/λ.
 4. 657 nm est dans l'intervalle 400 nm à 800 nm : la raie est visible, rouge-orangée. Les valeurs mesurées donnent 656 nm : l'écart d'un nanomètre vient des arrondis de h, de c et de e.
@@ -287,10 +291,10 @@ Quelle transition donne la raie rouge, et que se passe-t-il quand un photon arri
 
 ::: methode Une transition entre deux niveaux n < p de l'hydrogène
 
-1. Écart d'énergie : ΔE = Eₚ − Eₙ = E₀·(1/n² − 1/p²), positif, en eV.
-2. Émission (de p vers n) : l'atome perd ΔE et émet un photon d'énergie W = ΔE. Absorption (de n vers p) : l'atome absorbe un photon seulement si son énergie est exactement ΔE ; sinon le photon est diffusé.
+1. Énergie du photon : W = Eₚ − Eₙ = E₀·(1/n² − 1/p²), positive, en eV.
+2. Émission (de p vers n) : l'atome perd W et émet un photon d'énergie W. Absorption (de n vers p) : l'atome absorbe un photon seulement si son énergie est exactement W ; sinon le photon est diffusé.
 3. Longueur d'onde : λ = h·c/W, avec W en joules.
-4. Si W est au moins égale à l'énergie d'ionisation, le photon peut être absorbé : l'atome est ionisé et l'électron éjecté emporte l'excédent W − 13,6 eV en énergie cinétique. Un électron incident de Ec ≥ ΔE peut aussi exciter l'atome par choc.
+4. Si W est au moins égale à l'énergie d'ionisation, le photon peut être absorbé : l'atome est ionisé et l'électron éjecté emporte l'excédent W − Eᵢ (Eᵢ = 13,6 eV depuis le fondamental, 3,40 eV depuis n = 2) en énergie cinétique. Un électron incident de Ec ≥ W peut aussi exciter l'atome par choc.
 
 :::
 
@@ -298,7 +302,7 @@ Quelle transition donne la raie rouge, et que se passe-t-il quand un photon arri
 <svg viewBox="0 0 310 210"><title>Diagramme des niveaux n = 1 à 5 de l'atome d'hydrogène : flèches d'émission vers n = 1 (série de Lyman), vers n = 2 (série de Balmer) et vers n = 3 (série de Paschen) ; espacements non à l'échelle</title><line x1="40" y1="58" x2="250" y2="58" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/><text x="256" y="62" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">n = 5</text><line x1="40" y1="78" x2="250" y2="78" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/><text x="256" y="82" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">n = 4</text><line x1="40" y1="104" x2="250" y2="104" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/><text x="256" y="108" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">n = 3</text><line x1="40" y1="138" x2="250" y2="138" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/><text x="256" y="142" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">n = 2</text><line x1="40" y1="182" x2="250" y2="182" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/><text x="256" y="186" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">n = 1</text><line x1="40" y1="30" x2="250" y2="30" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 3"/><text x="256" y="34" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">∞</text><line x1="60" y1="138" x2="60" y2="177" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round"/><polygon points="60,182 56.5,175 63.5,175" fill="#7c3aed"/><line x1="74" y1="104" x2="74" y2="177" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round"/><polygon points="74,182 70.5,175 77.5,175" fill="#7c3aed"/><line x1="88" y1="78" x2="88" y2="177" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round"/><polygon points="88,182 84.5,175 91.5,175" fill="#7c3aed"/><text x="74" y="198" text-anchor="middle" font-size="12" font-weight="700" fill="#7c3aed" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">Lyman</text><line x1="130" y1="104" x2="130" y2="133" stroke="#dc2626" stroke-width="1.8" stroke-linecap="round"/><polygon points="130,138 126.5,131 133.5,131" fill="#dc2626"/><line x1="144" y1="78" x2="144" y2="133" stroke="#dc2626" stroke-width="1.8" stroke-linecap="round"/><polygon points="144,138 140.5,131 147.5,131" fill="#dc2626"/><line x1="158" y1="58" x2="158" y2="133" stroke="#dc2626" stroke-width="1.8" stroke-linecap="round"/><polygon points="158,138 154.5,131 161.5,131" fill="#dc2626"/><text x="144" y="158" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">Balmer</text><line x1="200" y1="78" x2="200" y2="99" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/><polygon points="200,104 196.5,97 203.5,97" fill="#0f172a"/><line x1="214" y1="58" x2="214" y2="99" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/><polygon points="214,104 210.5,97 217.5,97" fill="#0f172a"/><text x="207" y="122" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">Paschen</text></svg>
 :::
 
-Sur le dessin, chaque flèche est une raie d'émission ; la série porte le nom du niveau d'arrivée. Voici la première raie de chaque série, calculée comme dans l'exemple :
+Voici la première raie de chaque série, calculée comme dans l'exemple :
 
 | Série    | Niveau d'arrivée | Première raie | λ calculée | Domaine     |
 | -------- | ---------------- | ------------- | ---------- | ----------- |
@@ -324,7 +328,7 @@ La série de Balmer contient les quatre raies visibles Hα (3 → 2, 657 nm), H�
 :::
 
 ::: propriete
-**Ce qui reste vrai** — Émission et absorption entre les mêmes niveaux mettent en jeu le même écart ΔE, donc la même longueur d'onde : raie brillante et raie noire sont superposées. Les raies d'une série sont d'autant plus énergétiques que le niveau d'arrivée est bas. Cas limite : à partir de 13,6 eV, l'atome fondamental peut absorber un photon d'énergie quelconque, l'excédent allant à l'électron ; en dessous, seules les valeurs exactes des écarts sont absorbées.
+**Ce qui reste vrai** — Émission et absorption entre les mêmes niveaux mettent en jeu le même écart d'énergie, donc la même longueur d'onde : raie brillante et raie noire sont superposées. Les raies d'une série sont d'autant plus énergétiques que le niveau d'arrivée est bas. Cas limite : à partir de 13,6 eV, l'atome fondamental peut absorber un photon d'énergie quelconque, l'excédent allant à l'électron ; en dessous, seules les valeurs exactes des écarts sont absorbées.
 :::
 
 ::: verifie À toi : de n = 4 à n = 2
@@ -332,11 +336,11 @@ Un atome d'hydrogène passe du niveau n = 4 au niveau n = 2. Calculer l'énergie
 
 ---
 
-ΔE = E₄ − E₂ = −0,85 − (−3,40) = 2,55 eV : l'atome émet un photon d'énergie W = 2,55 eV = 2,55 × 1,6×10⁻¹⁹ = 4,08×10⁻¹⁹ J. Alors λ = h·c/W = 1,99×10⁻²⁵ / 4,08×10⁻¹⁹ = 4,87×10⁻⁷ m = 487 nm : c'est la raie bleue Hβ de la série de Balmer.
+ΔE = E₂ − E₄ = −3,40 − (−0,85) = −2,55 eV : l'atome émet un photon d'énergie W = |ΔE| = 2,55 eV = 2,55 × 1,6×10⁻¹⁹ = 4,08×10⁻¹⁹ J. Alors λ = h·c/W = 1,99×10⁻²⁵ / 4,08×10⁻¹⁹ = 4,87×10⁻⁷ m = 487 nm : c'est la raie bleue Hβ de la série de Balmer.
 :::
 
 ::: retenir
-Pour une transition de l'hydrogène, W = |ΔE| = E₀·(1/n² − 1/p²) puis λ = hc/W ; un photon n'est absorbé que s'il apporte exactement ΔE, ou au moins 13,6 eV depuis le fondamental.
+Pour une transition de l'hydrogène, W = |ΔE| = E₀·(1/n² − 1/p²) puis λ = hc/W ; un photon n'est absorbé que s'il apporte exactement l'écart entre deux niveaux, ou au moins 13,6 eV depuis le fondamental.
 :::
 
 ## 🔭 Lire la lumière d'un alliage ou d'une étoile

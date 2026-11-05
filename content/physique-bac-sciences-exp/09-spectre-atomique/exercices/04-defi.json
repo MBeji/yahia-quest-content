@@ -20,7 +20,7 @@
         },
         {
           "id": "c",
-          "text": "Un photon de 12,75 eV"
+          "text": "Un photon de 12,09 eV"
         },
         {
           "id": "d",
@@ -34,7 +34,7 @@
       "answerKey": {
         "correct": ["a", "c", "d"]
       },
-      "explanation": "10,2 eV est l'écart vers n = 2 : absorbé. 12,75 eV est l'écart vers n = 4 (13,6 × 15/16) : absorbé. 20 eV dépasse 13,6 eV : absorbé, l'atome est ionisé et l'électron emporte l'excédent, 6,4 eV. Un photon de 10,0 eV n'est égal à aucun écart et reste inférieur à 13,6 eV : il est diffusé. Un photon de 3,4 eV est l'énergie du niveau n = 2, pas un écart depuis le fondamental : il est diffusé aussi.",
+      "explanation": "10,2 eV est l'écart vers n = 2 : absorbé. 12,09 eV est l'écart vers n = 3 (13,6 × 8/9) : absorbé. 20 eV dépasse 13,6 eV : absorbé, l'atome est ionisé et l'électron emporte l'excédent, 6,4 eV. Un photon de 10,0 eV n'est égal à aucun écart et reste inférieur à 13,6 eV : il est diffusé. Un photon de 3,4 eV est l'énergie du niveau n = 2, pas un écart depuis le fondamental : il est diffusé aussi.",
       "difficulty": 2
     },
     {
@@ -49,15 +49,15 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un élève calcule la longueur d'onde du photon émis dans la transition n = 4 → n = 2 de l'atome d'hydrogène :\nE₂ = −13,6/2² = −3,40 eV ; E₄ = −13,6/4² = −0,85 eV\nΔE = E₄ − E₂ = 2,55 eV\nν = ΔE/h = 2,55 / (6,62×10⁻³⁴) = 3,9×10³³ Hz\nλ = c/ν = 3,00×10⁸ / (3,9×10³³) = 7,7×10⁻²⁶ m\nLe résultat est absurde pour une lumière. Où se trouve l'erreur ?",
+      "prompt": "Un élève calcule la longueur d'onde du photon émis dans la transition n = 5 → n = 2 de l'atome d'hydrogène :\nE₂ = −13,6/2² = −3,40 eV ; E₅ = −13,6/5² = −0,54 eV\nW = E₅ − E₂ = 2,86 eV\nν = W/h = 2,86 / (6,62×10⁻³⁴) = 4,3×10³³ Hz\nλ = c/ν = 3,00×10⁸ / (4,3×10³³) = 7,0×10⁻²⁶ m\nLe résultat est absurde pour une lumière. Où se trouve l'erreur ?",
       "options": [
         {
           "id": "a",
-          "text": "Dans le calcul de E₂ et de E₄"
+          "text": "Dans le calcul de E₂ et de E₅"
         },
         {
           "id": "b",
-          "text": "Dans le calcul de ΔE"
+          "text": "Dans le calcul de W"
         },
         {
           "id": "c",
@@ -69,7 +69,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Les niveaux E₂ = −3,40 eV et E₄ = −0,85 eV sont justes, et l'écart ΔE = 2,55 eV aussi. L'erreur est dans ν : il faut convertir ΔE en joules avant de diviser par h, soit ν = 2,55 × 1,6×10⁻¹⁹ / 6,62×10⁻³⁴ = 6,2×10¹⁴ Hz ✓. La formule λ = c/ν est correcte, et donne alors 4,9×10⁻⁷ m, soit 487 nm : c'est la raie Hβ. L'erreur classique est de mélanger eV et joules dans un même quotient.",
+      "explanation": "Les niveaux E₂ = −3,40 eV et E₅ = −0,54 eV sont justes, et l'écart W = 2,86 eV aussi. L'erreur est dans ν : il faut convertir W en joules avant de diviser par h, soit ν = 2,86 × 1,6×10⁻¹⁹ / 6,62×10⁻³⁴ = 6,9×10¹⁴ Hz ✓. La formule λ = c/ν est correcte, et donne alors 4,35×10⁻⁷ m, soit 435 nm : c'est la raie Hγ. L'erreur classique est de mélanger eV et joules dans un même quotient.",
       "difficulty": 3
     },
     {

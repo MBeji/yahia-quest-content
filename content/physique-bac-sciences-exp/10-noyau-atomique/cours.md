@@ -8,7 +8,7 @@ Sauf indication contraire, on utilise : m_p = 1,00728 u ; m_n = 1,00867 u ; 1 u 
 
 ## 🧱 Le noyau, ses nucléons et ses isotopes
 
-Un atome de chlore 35 a une masse de 34,96885 u, et ses 17 électrons n'en pèsent qu'environ 0,03 % : presque toute la masse est dans le noyau, dont le rayon est environ 100 000 fois plus petit que celui de l'atome (de l'ordre de 100 pm).
+Au centre de l'atome, le noyau renferme la quasi-totalité de sa masse, alors que son rayon est environ 100 000 fois plus petit que celui de l'atome (de l'ordre de 100 pm).
 Comment désigner un noyau sans ambiguïté ? Et le chlore du sel de cuisine est-il fait d'un seul type de noyau ?
 
 ::: definition
@@ -27,7 +27,6 @@ Des noyaux de même Z et de A différents sont des **isotopes** : un élément n
 2. Pour ³⁷₁₇Cl : Z = 17 comme avant, A = 37, donc N = 37 − 17 = 20. Même nombre de protons (même élément), deux neutrons de plus : ces deux noyaux sont des isotopes du chlore.
 3. Un noyau de 26 protons et 30 neutrons a A = 26 + 30 = 56 nucléons. Z = 26 identifie l'élément fer : son symbole est ⁵⁶₂₆Fe.
 4. Ordre de grandeur : le rayon de l'atome est de l'ordre de 100 pm = 10⁻¹⁰ m ; divisé par 10⁵, celui du noyau est de l'ordre de 10⁻¹⁵ m, soit 1 fm (un fermi).
-5. Contrôle de la masse : les 17 électrons pèsent 17 × 0,00055 u = 0,0093 u sur 34,969 u, soit 0,03 % : on peut confondre la masse de l'atome et celle de son noyau à ce niveau de précision.
 
 :::
 
@@ -187,7 +186,7 @@ Dans le tableau, la colonne de droite se lit aussi comme une masse en MeV·c⁻�
 :::
 
 ::: propriete
-**Ce qui reste vrai** — La masse est une forme d'énergie : E₀ = m·c², ΔE = Δm·c², et E (en MeV) = m (en u) × 931,5. Cas limite d'arrondi : le chemin par le kilogramme donne 1,66 × 10⁻²⁷ × (3,00 × 10⁸)² / 1,60 × 10⁻¹³ ≈ 934 MeV, soit 0,3 % de plus que 931,5 : ce petit écart vient des arrondis de 1,66, de 3,00 et de 1,60. On retient 931,5 MeV·c⁻² pour 1 u.
+**Ce qui reste vrai** — La masse est une forme d'énergie : E₀ = m·c², ΔE = Δm·c², et E (en MeV) = m (en u) × 931,5. Cas limite d'arrondi : le chemin par le kilogramme donne 1,66 × 10⁻²⁷ × (3,00 × 10⁸)² / 1,60 × 10⁻¹³ ≈ 934 MeV, soit environ 0,2 % de plus que 931,5 : ce petit écart vient des arrondis de 1,66, de 3,00 et de 1,60. On retient 931,5 MeV·c⁻² pour 1 u.
 :::
 
 ::: verifie À toi : l'électron
@@ -303,8 +302,8 @@ Quelle forme dessinent-ils, et où se trouvent les noyaux les plus stables ?
 **Courbe d'Aston** — C'est le graphique de E_ℓ/A (en MeV, positive) en fonction du nombre de masse A. Elle présente trois zones :
 
 - pour A < 20 environ, E_ℓ/A est plus petite et croît très vite avec A ;
-- vers A ≈ 60, elle atteint son maximum, entre 7,8 et 8,8 MeV (« de l'ordre de 8 MeV »), au voisinage du fer ⁵⁶Fe : ce sont les noyaux les plus stables ;
-- pour A > 190 environ, elle décroît lentement.
+- vers A ≈ 60, elle atteint son maximum (≈ 8,8 MeV, au voisinage du fer ⁵⁶Fe) ; les noyaux de nombre de masse voisin de 60 ont 7,8 MeV < E_ℓ/A < 8,8 MeV (« de l'ordre de 8 MeV ») : ce sont les plus stables ;
+- au-delà de A ≈ 60, elle décroît lentement : pour A > 190 environ, les noyaux lourds sont nettement moins liés.
 :::
 
 ::: figure Courbe d'Aston (valeurs arrondies) : E_ℓ/A en MeV en fonction de A ; le maximum se trouve vers le fer ⁵⁶Fe, le plomb et l'uranium sont plus bas, et le noyau d'hélium ⁴He forme un pic au-dessus de ses voisins légers
@@ -318,7 +317,7 @@ Sur la courbe, chaque point est un noyau : son abscisse est A, son ordonnée est
 1. On lit E_ℓ/A ≈ 8,0 MeV pour ¹⁶O, ≈ 8,8 MeV pour ⁵⁶Fe et ≈ 7,9 MeV pour ²⁰⁸Pb.
 2. Par stabilité décroissante : ⁵⁶Fe, puis ¹⁶O, puis ²⁰⁸Pb, car plus l'ordonnée est grande, plus le noyau est stable.
 3. Pour ²³⁸U, on lit environ 7,6 MeV : il est moins lié que ⁵⁶Fe, bien qu'il ait beaucoup plus de nucléons.
-4. Les noyaux légers ⁴He, ¹²C et ¹⁶O, qui vérifient A = 2Z, forment des pics au-dessus de leurs voisins : ils sont particulièrement stables.
+4. Le noyau ⁴He, qui vérifie A = 2Z, forme un pic au-dessus de ses voisins légers (≈ 7,1 MeV, contre ≈ 2,6 MeV pour ³He et ≈ 5,3 MeV pour ⁶Li) : il est particulièrement stable. D'autres noyaux légers tels que A = 2Z (¹²C, ¹⁶O) sont aussi plus liés que leurs voisins immédiats, ce que l'échelle de la figure ne montre pas.
 5. Le fer 56 est aussi très abondant : l'isotope ⁵⁶Fe représente plus de 90 % du fer naturel, ce qui s'accorde avec sa grande stabilité.
 
 :::
