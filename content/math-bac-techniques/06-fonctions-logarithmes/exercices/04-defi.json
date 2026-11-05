@@ -1,0 +1,165 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du logarithme",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "La courbe ci-dessous est celle de l'une des fonctions suivantes. La droite verticale en pointillés a pour équation x = 1. Laquelle ?\n<svg viewBox=\"0 0 340 250\">\n<title>Courbe d'une fonction f définie sur un intervalle ]1 ; +∞[, avec la droite verticale x = 1 en pointillés</title>\n<line x1=\"32\" y1=\"102.95\" x2=\"328\" y2=\"102.95\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"328,102.95 320,106.95 320,98.95\" fill=\"#0f172a\"/>\n<line x1=\"32\" y1=\"228\" x2=\"32\" y2=\"12\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"32,12 36,20 28,20\" fill=\"#0f172a\"/>\n<line x1=\"72\" y1=\"99.95\" x2=\"72\" y2=\"105.95\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"112\" y1=\"99.95\" x2=\"112\" y2=\"105.95\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"152\" y1=\"99.95\" x2=\"152\" y2=\"105.95\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"192\" y1=\"99.95\" x2=\"192\" y2=\"105.95\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"232\" y1=\"99.95\" x2=\"232\" y2=\"105.95\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"272\" y1=\"99.95\" x2=\"272\" y2=\"105.95\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"312\" y1=\"99.95\" x2=\"312\" y2=\"105.95\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"29\" y1=\"216.63\" x2=\"35\" y2=\"216.63\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"29\" y1=\"178.74\" x2=\"35\" y2=\"178.74\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"29\" y1=\"140.84\" x2=\"35\" y2=\"140.84\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"29\" y1=\"65.05\" x2=\"35\" y2=\"65.05\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"29\" y1=\"27.16\" x2=\"35\" y2=\"27.16\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"72\" y1=\"228\" x2=\"72\" y2=\"12\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\"/>\n<polyline points=\"73.6,224.93 74.66,205.66 75.72,192.95 76.78,183.45 77.84,175.86 78.9,169.54 79.96,164.13 81.02,159.39 82.08,155.18 83.14,151.39 84.2,147.95 85.26,144.79 86.32,141.87 87.38,139.17 88.44,136.64 89.5,134.27 90.56,132.05 91.62,129.94 92.68,127.95 93.74,126.05 94.8,124.25 95.86,122.53 96.92,120.88 97.98,119.3 99.04,117.79 100.1,116.33 101.16,114.93 102.22,113.57 103.28,112.27 104.34,111 105.4,109.78 106.46,108.6 107.52,107.45 108.58,106.33 109.64,105.25 110.7,104.2 111.76,103.18 112.82,102.18 113.88,101.21 114.94,100.26 116,99.34 117.06,98.43 118.12,97.55 119.18,96.69 120.24,95.85 121.3,95.03 122.36,94.22 123.42,93.43 124.48,92.66 125.54,91.9 126.6,91.16 127.66,90.43 128.72,89.71 129.78,89.01 130.84,88.32 131.9,87.65 132.96,86.98 134.02,86.33 135.08,85.69 136.14,85.05 137.2,84.43 138.26,83.82 139.32,83.22 140.38,82.63 141.44,82.05 142.5,81.47 143.56,80.91 144.62,80.35 145.68,79.8 146.74,79.26 147.8,78.72 148.86,78.2 149.92,77.68 150.98,77.17 152.04,76.66 153.1,76.16 154.16,75.67 155.22,75.19 156.28,74.71 157.34,74.23 158.4,73.76 159.46,73.3 160.52,72.85 161.58,72.39 162.64,71.95 163.7,71.51 164.76,71.07 165.82,70.64 166.88,70.22 167.94,69.8 169,69.38 170.06,68.97 171.12,68.56 172.18,68.16 173.24,67.76 174.3,67.36 175.36,66.97 176.42,66.59 177.48,66.2 178.54,65.82 179.6,65.45 180.66,65.08 181.72,64.71 182.78,64.35 183.84,63.98 184.9,63.63 185.96,63.27 187.02,62.92 188.08,62.57 189.14,62.23 190.2,61.89 191.26,61.55 192.32,61.21 193.38,60.88 194.44,60.55 195.5,60.23 196.56,59.9 197.62,59.58 198.68,59.26 199.74,58.95 200.8,58.63 201.86,58.32 202.92,58.02 203.98,57.71 205.04,57.41 206.1,57.11 207.16,56.81 208.22,56.51 209.28,56.22 210.34,55.93 211.4,55.64 212.46,55.35 213.52,55.07 214.58,54.78 215.64,54.5 216.7,54.22 217.76,53.95 218.82,53.67 219.88,53.4 220.94,53.13 222,52.86 223.06,52.59 224.12,52.33 225.18,52.06 226.24,51.8 227.3,51.54 228.36,51.29 229.42,51.03 230.48,50.78 231.54,50.52 232.6,50.27 233.66,50.02 234.72,49.78 235.78,49.53 236.84,49.28 237.9,49.04 238.96,48.8 240.02,48.56 241.08,48.32 242.14,48.09 243.2,47.85 244.26,47.62 245.32,47.38 246.38,47.15 247.44,46.92 248.5,46.69 249.56,46.47 250.62,46.24 251.68,46.02 252.74,45.8 253.8,45.57 254.86,45.35 255.92,45.13 256.98,44.92 258.04,44.7 259.1,44.48 260.16,44.27 261.22,44.06 262.28,43.85 263.34,43.64 264.4,43.43 265.46,43.22 266.52,43.01 267.58,42.81 268.64,42.6 269.7,42.4 270.76,42.19 271.82,41.99 272.88,41.79 273.94,41.59 275,41.39 276.06,41.2 277.12,41 278.18,40.8 279.24,40.61 280.3,40.42 281.36,40.22 282.42,40.03 283.48,39.84 284.54,39.65 285.6,39.47 286.66,39.28 287.72,39.09 288.78,38.91 289.84,38.72 290.9,38.54 291.96,38.35 293.02,38.17 294.08,37.99 295.14,37.81 296.2,37.63 297.26,37.45 298.32,37.27 299.38,37.1 300.44,36.92 301.5,36.74 302.56,36.57 303.62,36.4 304.68,36.22 305.74,36.05 306.8,35.88 307.86,35.71 308.92,35.54 309.98,35.37 311.04,35.2 312.1,35.03 313.16,34.87 314.22,34.7 315.28,34.53 316.34,34.37 317.4,34.21 318.46,34.04 319.52,33.88 320.58,33.72 321.64,33.56 322.7,33.4 323.76,33.24 324.82,33.08 325.88,32.92 326.94,32.76 328,32.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"72\" y=\"117.95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">1</text><text x=\"112\" y=\"117.95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">2</text><text x=\"152\" y=\"117.95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">3</text><text x=\"192\" y=\"117.95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">4</text><text x=\"232\" y=\"117.95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">5</text><text x=\"272\" y=\"117.95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">6</text><text x=\"312\" y=\"117.95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">7</text><text x=\"25\" y=\"220.13\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">−3</text><text x=\"25\" y=\"182.24\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">−2</text><text x=\"25\" y=\"144.34\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">−1</text><text x=\"25\" y=\"68.55\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">1</text><text x=\"25\" y=\"30.66\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">2</text><text x=\"326\" y=\"96.95\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\">x</text><text x=\"40\" y=\"22\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"12\">y</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = ln(x − 1)"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = ln(1 − x)"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = ln(x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = ln x − 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La courbe n'existe qu'à droite de x = 1 et plonge vers −∞ le long de cette droite : l'argument du logarithme s'annule en x = 1 et reste positif à droite, ce qui correspond à x − 1 ✓. Elle coupe l'axe des abscisses en x = 2, où ln(2 − 1) = ln 1 = 0. La fonction ln(1 − x) est définie à gauche de 1 ; ln(x + 1) a pour asymptote x = −1 et s'annule en 0 ; ln x − 1 a pour asymptote l'axe des ordonnées et s'annule en e.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève résout l'inéquation ln(x − 1) + ln(x − 3) ≤ 0 :\nÉtape 1 : les deux logarithmes existent si x > 3.\nÉtape 2 : ln(x − 1) + ln(x − 3) = ln P, avec P = (x − 1)(x − 3).\nÉtape 3 : ln P ≤ 0 ⟺ P ≤ 0.\nÉtape 4 : (x − 1)(x − 3) ≤ 0 ⟺ x ∈ [1 ; 3].\nÉtape 5 : [1 ; 3] ne contient aucun réel x > 3, donc S = ∅.\nOù est l'erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étape 1 : la condition x > 3"
+        },
+        {
+          "id": "b",
+          "text": "Étape 2 : ln a + ln b = ln(ab)"
+        },
+        {
+          "id": "c",
+          "text": "Étape 3 : ln P ≤ 0 ⟺ P ≤ 0"
+        },
+        {
+          "id": "d",
+          "text": "Étape 5 : l'intersection avec x > 3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'erreur est à l'étape 3 : ln P ≤ 0 s'écrit ln P ≤ ln 1, donc 0 < P ≤ 1, et non P ≤ 0 (ln n'est pas l'identité, et ln 0 n'existe pas). La suite correcte est (x − 1)(x − 3) ≤ 1 ⟺ x² − 4x + 2 ≤ 0 ⟺ 2 − √2 ≤ x ≤ 2 + √2 ; avec x > 3, S = ]3 ; 2 + √2] (2 + √2 ≈ 3,41). Contrôle en x = 3,2 : ln 2,2 + ln 0,2 ≈ 0,79 − 1,61 ≈ −0,82 ≤ 0. Les autres étapes sont correctes en elles-mêmes : le domaine est bien x > 3, la somme devient bien le logarithme du produit, et [1 ; 3] est bien l'ensemble solution de (x − 1)(x − 3) ≤ 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h(x) = ln x + x² sur ]0 ; +∞[. La fonction h est une bijection de ]0 ; +∞[ sur ℝ. Que vaut (h⁻¹)′(1 + e²) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3"
+        },
+        {
+          "id": "b",
+          "text": "(1 + 2e²)/e"
+        },
+        {
+          "id": "c",
+          "text": "(1 + e²)/(1 + 2(1 + e²)²)"
+        },
+        {
+          "id": "d",
+          "text": "e/(1 + 2e²)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On cherche x₀ tel que h(x₀) = 1 + e² : h(e) = ln e + e² = 1 + e², donc x₀ = e. Comme h′(x) = 1/x + 2x, h′(e) = 1/e + 2e = (1 + 2e²)/e et (h⁻¹)′(1 + e²) = 1/h′(e) = e/(1 + 2e²) ✓ (≈ 0,17). La valeur 1/3 est 1/h′(1) : elle utilise l'antécédent de 1, non celui de 1 + e² ; (1 + 2e²)/e oublie d'inverser h′(e) ; l'expression à rallonge calcule h′ en 1 + e², la valeur de y, au lieu de l'antécédent e.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = x + 1 + (2 ln x)/x sur ]0 ; +∞[. Que peut-on dire de la courbe de g en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asymptote y = x + 1, courbe au-dessus pour x > 1"
+        },
+        {
+          "id": "b",
+          "text": "Asymptote y = x + 1, courbe au-dessous pour x > 1"
+        },
+        {
+          "id": "c",
+          "text": "Asymptote y = x, courbe au-dessus pour x > 1"
+        },
+        {
+          "id": "d",
+          "text": "Branche parabolique de direction y = x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a g(x) − (x + 1) = 2 ln x/x, qui tend vers 0 en +∞ par croissance comparée : la droite y = x + 1 est asymptote. Pour x > 1, ln x > 0, donc la courbe est au-dessus ✓. « Au-dessous » se trompe sur le signe de ln x ; y = x oublie que g(x) − x = 1 + 2 ln x/x tend vers 1 et non vers 0 ; une branche parabolique exigerait que g(x) − x tende vers l'infini.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour tout x > −1, ln(1 + x) ≤ x"
+        },
+        {
+          "id": "b",
+          "text": "lim x→+∞ ln(x²)/x = 0"
+        },
+        {
+          "id": "c",
+          "text": "lim x→0⁺ x ln x = −∞"
+        },
+        {
+          "id": "d",
+          "text": "lim x→1 ln x/(x − 1) = 0"
+        },
+        {
+          "id": "e",
+          "text": "Pour tout x > 0, ln x ≥ 1 − 1/x"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Sont vraies : ln(1 + x) ≤ x est l'inégalité ln t ≤ t − 1 avec t = 1 + x ; ln(x²)/x = 2 ln x / x tend vers 2 × 0 = 0 ; ln x ≥ 1 − 1/x s'obtient avec t = 1/x, car ln(1/x) ≤ 1/x − 1 s'écrit −ln x ≤ 1/x − 1. Sont fausses : x ln x tend vers 0 en 0⁺ (le facteur x l'emporte) ; ln x/(x − 1) tend vers 1, nombre dérivé de ln en 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le pH d'une solution est pH = −log c, où c est sa concentration en ions H₃O⁺ en mol/L. Une solution a un pH de 2,9. On la dilue plusieurs fois de suite, et chaque dilution divise la concentration par 2. Combien de dilutions faut-il au minimum pour que le pH soit supérieur ou égal à 4 ? On donne log 2 ≈ 0,301.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Après n dilutions, pH = −log(c/2ⁿ) = 2,9 + n log 2. On veut 2,9 + 0,301n ≥ 4, soit n ≥ 1,1/0,301 ≈ 3,65, donc n = 4 ✓. Contrôle : 2,9 + 3 × 0,301 ≈ 3,80 < 4 et 2,9 + 4 × 0,301 ≈ 4,10 ≥ 4. 3 est la partie entière de 3,65 ; 2 utilise ln 2 au lieu de log 2 (1,1/0,693 ≈ 1,6) ; 1 croit que diviser c par 2 double le pH.",
+      "difficulty": 3
+    }
+  ]
+}

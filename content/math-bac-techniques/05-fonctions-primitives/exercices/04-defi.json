@@ -1,0 +1,136 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : La remontée sans filet",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations, lesquelles sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si F′ = G′ sur un intervalle I, alors F − G est constante sur I"
+        },
+        {
+          "id": "b",
+          "text": "Si F′ = G′ sur ℝ*, alors F − G est constante sur ℝ*"
+        },
+        {
+          "id": "c",
+          "text": "Toute fonction continue sur [0 ; 1] admet une primitive sur [0 ; 1]"
+        },
+        {
+          "id": "d",
+          "text": "Si F et G sont deux primitives de f sur I, alors F + G est une primitive de f sur I"
+        },
+        {
+          "id": "e",
+          "text": "Si F est une primitive de f sur I, alors 2F est une primitive de 2f sur I"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Sont vraies : F′ = G′ sur un intervalle donne (F − G)′ = 0, donc F − G constante ✓ ; une fonction continue sur un intervalle, ici [0 ; 1], admet des primitives ✓ ; (2F)′ = 2F′ = 2f ✓. Est fausse l'affirmation sur ℝ*, qui n'est pas un intervalle : F − G peut y prendre des constantes différentes de chaque côté de 0. Est fausse aussi celle sur F + G : (F + G)′ = f + f = 2f, donc F + G est une primitive de 2f et non de f.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "F(x) = (x² + a)/(x − 1) est une primitive de f(x) = (x² − 2x − 3)/(x − 1)² sur ]1 ; +∞[, où a est un réel. Que vaut F(3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive : F′(x) = (2x(x − 1) − (x² + a))/(x − 1)² = (x² − 2x − a)/(x − 1)². L'égalité avec f donne −a = −3, donc a = 3. Alors F(3) = (9 + 3)/(3 − 1) = 12/2 = 6 ✓. La valeur 3 vient de a = −3, un signe mal lu. La valeur 12 oublie de diviser par x − 1. La valeur 4 divise 12 par 3, c'est-à-dire par x au lieu de x − 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = 2x sur ℝ et F définie par F(x) = x² + 3 si x ≥ 0 et F(x) = x² si x < 0. F est-elle une primitive de f sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, car F est dérivable et F′(x) = 2x pour tout x non nul"
+        },
+        {
+          "id": "b",
+          "text": "Oui, car F est de la forme x² + c sur chaque intervalle"
+        },
+        {
+          "id": "c",
+          "text": "Non, car F n'est pas continue en 0, donc pas dérivable en 0"
+        },
+        {
+          "id": "d",
+          "text": "Non, car la valeur F(0) = 3 est différente de la valeur f(0) = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En 0, F(0) = 3 mais F(x) tend vers 0 par valeurs négatives : F n'est pas continue en 0, donc pas dérivable en 0, et ne peut pas être une primitive sur ℝ ✓. Dériver en tout x non nul ne suffit pas, car la définition exige la dérivabilité en tout point de ℝ. L'écriture x² + c sur chaque morceau donne deux constantes différentes, alors qu'un intervalle impose une seule constante. La raison « F(0) ≠ f(0) » est fausse : une primitive F n'a aucune raison d'avoir la même valeur que f.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit f(x) = cos³x et F la primitive de f sur ℝ telle que F(π/2) = 0. Calculer F(π/6), arrondi au centième.",
+      "answerKey": {
+        "value": -0.2083,
+        "tolerance": 0.005
+      },
+      "explanation": "On écrit cos³x = cos x (1 − sin²x) = cos x − cos x sin²x. Avec u = sin x, une primitive est F₀(x) = sin x − sin³x/3. On a F₀(π/2) = 1 − 1/3 = 2/3, donc c = −2/3 et F(x) = sin x − sin³x/3 − 2/3. Alors F(π/6) = 1/2 − 1/24 − 2/3 = −5/24 ≈ −0,2083, soit −0,21 au centième ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On cherche la primitive F de f(x) = 6x² − 2x sur ℝ telle que F(−1) = 1. Voici une résolution.\nÉtape 1 : F(x) = 2x³ − x² + c.\nÉtape 2 : F(−1) = 2 × (−1)³ − (−1)² + c = −3 + c.\nÉtape 3 : −3 + c = 1, donc c = 1 − 3 = −2.\nÉtape 4 : F(x) = 2x³ − x² − 2.\nOù se situe l'erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À l'étape 3 : la constante c est mal isolée, elle vaut 4"
+        },
+        {
+          "id": "b",
+          "text": "À l'étape 1 : la primitive de 6x² − 2x est fausse"
+        },
+        {
+          "id": "c",
+          "text": "À l'étape 2 : le calcul de F(−1) est faux, il vaut −1 + c"
+        },
+        {
+          "id": "d",
+          "text": "À l'étape 4 : il faut écrire F(x) = 2x³ − x² + 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'étape 1 est juste : (2x³ − x²)′ = 6x² − 2x. L'étape 2 est juste : −2 − 1 = −3. L'étape 3 est fausse : de −3 + c = 1, on tire c = 1 + 3 = 4 et non 1 − 3. On obtient F(x) = 2x³ − x² + 4, et F(−1) = −2 − 1 + 4 = 1 ✓. Écrire F(x) = 2x³ − x² + 1 reprend la valeur imposée comme constante.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit f(x) = (3x³ − 7x² + 5x + 1)/(x − 1)² sur ]1 ; +∞[. On admet que f(x) = ax + b + c/(x − 1)² avec a, b, c réels. Soit F la primitive de f sur ]1 ; +∞[ vérifiant F(2) = 5. Calculer F(3).",
+      "answerKey": {
+        "value": 12.5
+      },
+      "explanation": "On développe (ax + b)(x − 1)² + c = ax³ + (b − 2a)x² + (a − 2b)x + b + c et on identifie avec 3x³ − 7x² + 5x + 1 : a = 3, b − 6 = −7 donc b = −1, contrôle a − 2b = 3 + 2 = 5 ✓, et b + c = 1 donc c = 2. Ainsi f(x) = 3x − 1 + 2/(x − 1)², de primitive F₀(x) = (3/2)x² − x − 2/(x − 1). On a F₀(2) = 6 − 2 − 2 = 2, donc 2 + c = 5 et c = 3. Alors F(3) = 27/2 − 3 − 1 + 3 = 12,5 ✓.",
+      "difficulty": 3
+    }
+  ]
+}

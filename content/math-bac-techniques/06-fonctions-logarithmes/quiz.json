@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Fonctions logarithmes",
+  "questions": [
+    {
+      "prompt": "Soit F une primitive de x ↦ 1/x sur ]0 ; +∞[. Quelle condition faut-il imposer à F pour que ce soit la fonction ln ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(1) = 0"
+        },
+        {
+          "id": "b",
+          "text": "F(1) = 1"
+        },
+        {
+          "id": "c",
+          "text": "F(2) = 0"
+        },
+        {
+          "id": "d",
+          "text": "F(2) = 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fonction ln est, par définition, la primitive de x ↦ 1/x sur ]0 ; +∞[ qui s'annule en 1 : F(1) = 0 ✓. Les primitives de 1/x sont les fonctions x ↦ ln x + k. La condition F(1) = 1 donne k = 1, et F(2) = 0 donne k = −ln 2 : dans les deux cas F n'est pas ln. De même F(2) = 1 donne k = 1 − ln 2, différent de 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On pose a = ln 2. Que vaut ln 32 en fonction de a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a⁵"
+        },
+        {
+          "id": "b",
+          "text": "a + 5"
+        },
+        {
+          "id": "c",
+          "text": "32a"
+        },
+        {
+          "id": "d",
+          "text": "5a"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme 32 = 2⁵, ln 32 = ln(2⁵) = 5 ln 2 = 5a ✓, car ln(xⁿ) = n ln x. L'écriture a⁵ confond ln(2⁵) avec (ln 2)⁵ ; a + 5 additionne l'exposant au lieu de le multiplier par ln 2 ; 32a suppose que ln se comporte comme une multiplication par 32. Contrôle : ln 32 ≈ 3,47 = 5 × 0,693.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la solution de l'équation ln x = −1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −1"
+        },
+        {
+          "id": "b",
+          "text": "x = −1/e"
+        },
+        {
+          "id": "c",
+          "text": "x = 1/e"
+        },
+        {
+          "id": "d",
+          "text": "x = e"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a ln(1/e) = −ln e = −1 ✓, et ln est injective : ln x = −1 équivaut à x = 1/e (≈ 0,37). La valeur −1 recopie le second membre, mais ln(−1) n'existe pas ; −1/e fait sortir le signe − du logarithme, alors que ln n'est défini que sur ]0 ; +∞[ ; x = e donne ln e = 1 : le signe est perdu.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour x > 0, quelle est la dérivée de x ↦ ln(5x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/(5x)"
+        },
+        {
+          "id": "b",
+          "text": "1/x"
+        },
+        {
+          "id": "c",
+          "text": "5/x"
+        },
+        {
+          "id": "d",
+          "text": "(ln 5)/x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec u(x) = 5x et u′(x) = 5, (ln u)′ = u′/u = 5/(5x) = 1/x ✓. On peut aussi écrire ln(5x) = ln 5 + ln x : ln 5 est une constante, de dérivée nulle, donc la dérivée est celle de ln x. Le résultat 1/(5x) oublie u′ ; 5/x multiplie u′ par 1/x au lieu de le diviser par u ; (ln 5)/x traite ln 5 comme un coefficient de ln x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut lim x→0⁺ x ln x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En 0⁺, x tend vers 0 et ln x vers −∞ : c'est une forme 0 × ∞. Avec t = 1/x, x ln x = −ln t / t, qui tend vers 0 quand t tend vers +∞ (croissances comparées) ✓. Numériquement, pour x = 0,001, x ln x ≈ −0,0069. La réponse −∞ ne lit que le facteur ln x ; +∞ suppose un signe contraire ; 1 est la limite de ln x/(x − 1) en 1, une autre limite du cours.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Fonctions logarithmes",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Soit a et b deux réels strictement positifs tels que ln a = 3 et ln b = −2. Que vaut ln(a²/b) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a ln(a²/b) = 2 ln a − ln b = 2 × 3 − (−2) = 8 ✓. La valeur 1 oublie le carré (3 − 2) ; 4 calcule ln(a²b) = 6 + (−2), le quotient par b devenant un produit ; 10 élève aussi b au carré : ln(a²/b²) = 6 − 2 × (−2).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut ln(e⁴/√e) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−7/2"
+        },
+        {
+          "id": "b",
+          "text": "7/2"
+        },
+        {
+          "id": "c",
+          "text": "9/2"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a ln(e⁴/√e) = ln(e⁴) − ln(√e) = 4 − 1/2 = 7/2 ✓, car ln(eʳ) = r et ln √e = (1/2) ln e = 1/2. La valeur −7/2 inverse le quotient ; 9/2 = ln(e⁴ × √e) transforme le quotient en produit ; 8 divise les exposants au lieu de les soustraire : 4 ÷ 1/2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est l'ensemble de définition de la fonction f : x ↦ ln((x + 1)/(x − 2)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−1 ; 2["
+        },
+        {
+          "id": "b",
+          "text": "]2 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "]−∞ ; −1] ∪ [2 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]−∞ ; −1[ ∪ ]2 ; +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le logarithme existe quand son argument est strictement positif : (x + 1)/(x − 2) > 0 équivaut à (x + 1)(x − 2) > 0, soit x < −1 ou x > 2 : D = ]−∞ ; −1[ ∪ ]2 ; +∞[ ✓. En x = −1 le quotient vaut 0 et ln 0 n'existe pas, donc le crochet est ouvert ; en x = 2 le quotient n'existe pas. L'intervalle ]−1 ; 2[ est celui où le quotient est négatif ; ]2 ; +∞[ n'en retient que la moitié.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = (ln x)² sur ]0 ; +∞[. Quelle est f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 ln x / x"
+        },
+        {
+          "id": "b",
+          "text": "2/x"
+        },
+        {
+          "id": "c",
+          "text": "2 ln x"
+        },
+        {
+          "id": "d",
+          "text": "(ln x)² / x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On écrit f = u² avec u = ln x et u′ = 1/x : f′ = 2 u u′ = 2 ln x × 1/x = 2 ln x / x ✓. La réponse 2/x est la dérivée de ln(x²) = 2 ln x, une autre fonction ; 2 ln x oublie le facteur u′ = 1/x ; (ln x)² / x multiplie u² par u′ au lieu d'appliquer la règle de la puissance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces fonctions, laquelle est une primitive sur ℝ de f : x ↦ 4x/(x² + 5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(x² + 5)"
+        },
+        {
+          "id": "b",
+          "text": "2 ln(x² + 5)"
+        },
+        {
+          "id": "c",
+          "text": "4 ln(x² + 5)"
+        },
+        {
+          "id": "d",
+          "text": "2x ln(x² + 5)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec u(x) = x² + 5 > 0 et u′(x) = 2x, on a f = 2 × u′/u, donc F(x) = 2 ln(x² + 5) ✓ ; contrôle : F′(x) = 2 × 2x/(x² + 5) = 4x/(x² + 5). La fonction ln(x² + 5) a pour dérivée 2x/(x² + 5), deux fois trop petite ; 4 ln(x² + 5) a pour dérivée 8x/(x² + 5), deux fois trop grande ; 2x ln(x² + 5) transpose la règle des produits à une primitive.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x − ln x sur ]0 ; +∞[, strictement croissante sur [1 ; +∞[, avec f(1) = 1 et une limite +∞ en +∞. L'équation f(x) = 2 admet une solution β dans [1 ; +∞[. On donne ln 3 ≈ 1,10 et ln 4 ≈ 1,39. Quel encadrement de β est correct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 < β < 2"
+        },
+        {
+          "id": "b",
+          "text": "2 < β < 3"
+        },
+        {
+          "id": "c",
+          "text": "3 < β < 4"
+        },
+        {
+          "id": "d",
+          "text": "4 < β < 5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On calcule f(3) = 3 − ln 3 ≈ 1,90 < 2 et f(4) = 4 − ln 4 ≈ 2,61 > 2. Comme f est continue et strictement croissante sur [1 ; +∞[, le théorème des valeurs intermédiaires place β dans ]3 ; 4[ ✓. Pour 2 < β < 3, il faudrait f(3) ≥ 2, or f(3) ≈ 1,90 ; pour 1 < β < 2, il faudrait f(2) ≥ 2, or f(2) = 2 − ln 2 ≈ 1,31 ; au-delà de 4, f(4) dépasse déjà 2.",
+      "difficulty": 3
+    }
+  ]
+}
