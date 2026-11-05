@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Limites, rangs et suites auxiliaires",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "u₀ = 1 et uₙ₊₁ = 4uₙ/(uₙ + 4). On admet que uₙ > 0 pour tout n et l'on pose vₙ = 1/uₙ. Quelle est la nature de la suite (vₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "arithmétique de raison 1/4"
+        },
+        {
+          "id": "b",
+          "text": "géométrique de raison 1/4"
+        },
+        {
+          "id": "c",
+          "text": "arithmétique de raison 4"
+        },
+        {
+          "id": "d",
+          "text": "ni arithmétique ni géométrique"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "vₙ₊₁ = (uₙ + 4)/(4uₙ) = 1/4 + 1/uₙ = vₙ + 1/4 : on ajoute toujours 1/4, donc (vₙ) est arithmétique de raison 1/4 ✓ (v₀ = 1, v₁ = 5/4). La raison 1/4 n'est pas un facteur multiplicatif : v₁/v₀ = 5/4 et v₂/v₁ = 6/5 ne sont pas égaux. La raison 4 est le coefficient de la récurrence, pas la différence entre deux termes consécutifs de (vₙ). Enfin la différence vₙ₊₁ − vₙ est constante, donc la suite n'est pas « ni l'un ni l'autre ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On donne uₙ = 4/(n + 4) pour tout n ∈ ℕ. Quel est le plus petit entier n tel que uₙ < 0,1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36"
+        },
+        {
+          "id": "b",
+          "text": "40"
+        },
+        {
+          "id": "c",
+          "text": "37"
+        },
+        {
+          "id": "d",
+          "text": "44"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "4/(n + 4) < 0,1 ⟺ n + 4 > 40 ⟺ n > 36, donc le plus petit entier est 37 ✓ (u₃₇ = 4/41 ≈ 0,0976). Pour n = 36, u₃₆ = 4/40 = 0,1 n'est pas strictement inférieur à 0,1. Les valeurs 40 et 44 vérifient aussi l'inégalité (u₄₀ = 1/11), mais ne sont pas les plus petites.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que devient le rapport uₙ = (2 × 5ⁿ + 3ⁿ)/(5ⁿ − 2ⁿ) lorsque n grandit indéfiniment ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il tend vers +∞"
+        },
+        {
+          "id": "b",
+          "text": "Il tend vers 2"
+        },
+        {
+          "id": "c",
+          "text": "Il tend vers 1"
+        },
+        {
+          "id": "d",
+          "text": "Il tend vers 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On met 5ⁿ en facteur : uₙ = (2 + (3/5)ⁿ)/(1 − (2/5)ⁿ). Comme (3/5)ⁿ → 0 et (2/5)ⁿ → 0, le numérateur tend vers 2 et le dénominateur vers 1, donc lim uₙ = 2 ✓. La limite +∞ suppose que le numérateur l'emporte, alors que les deux termes sont du même ordre de grandeur. La limite 1 confond 2 × 5ⁿ avec 5ⁿ. La limite 0 suppose que le dénominateur l'emporte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que peut-on dire de la suite uₙ = n(2 + cos n) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle tend vers 0"
+        },
+        {
+          "id": "b",
+          "text": "Elle n'a pas de limite, car cos n oscille"
+        },
+        {
+          "id": "c",
+          "text": "Elle converge vers 2"
+        },
+        {
+          "id": "d",
+          "text": "Elle tend vers +∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme cos n ≥ −1, on a 2 + cos n ≥ 1 et uₙ ≥ n pour tout n. Or lim n = +∞ : par comparaison, lim uₙ = +∞ ✓. Le facteur cos n oscille, mais il est borné et ne peut pas compenser la croissance de n : l'oscillation seule ne supprime pas la limite. La valeur 2 est la constante du facteur, sans rapport avec la limite du produit. La valeur 0 suppose que le produit s'écrase, alors que le facteur reste supérieur ou égal à 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "(uₙ) est croissante, et uₙ ≤ 2 − 1/n pour tout n ≥ 1. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) converge vers un réel ℓ avec ℓ ≤ 2"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) converge vers 2"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) diverge"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) converge vers un réel ℓ avec ℓ < 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme uₙ ≤ 2 − 1/n ≤ 2, la suite est croissante et majorée : elle converge vers un réel ℓ. En passant à la limite dans uₙ ≤ 2 − 1/n, on obtient ℓ ≤ 2 ✓. On ne peut pas dire que ℓ = 2, car le théorème ne donne pas la valeur de la limite. L'affirmation « diverge » contredit le théorème. L'affirmation ℓ < 2 n'est pas assurée : en passant à la limite, une inégalité large reste large, et rien n'interdit ℓ = 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle affirmation est vraie pour uₙ = (n² − 1)/(n² + 1) définie sur ℕ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) est décroissante et converge vers −1"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) est croissante et converge vers 1"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) est croissante et tend vers +∞"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) n'est pas monotone et converge vers 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit uₙ = 1 − 2/(n² + 1). Quand n grandit, 2/(n² + 1) décroît vers 0, donc uₙ croît vers 1 ✓ (−1 ; 0 ; 3/5 ; 4/5 ; …). La valeur −1 est le premier terme u₀, pas la limite. La limite +∞ est impossible puisque uₙ < 1. Quant à la monotonie, la fonction x ↦ 1 − 2/(x² + 1) est croissante sur [0 ; +∞[, donc la suite est monotone.",
+      "difficulty": 2
+    }
+  ]
+}

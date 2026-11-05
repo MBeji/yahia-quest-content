@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du pont",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "La fonction f est définie sur ℝ par f(x) = mx − 2 si x ≤ 4, et f(x) = (x² − 2x − 8)/(x − 4) si x > 4. Pour quelle valeur de m est-elle continue en 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = 1/2"
+        },
+        {
+          "id": "b",
+          "text": "m = 1"
+        },
+        {
+          "id": "c",
+          "text": "m = 3/2"
+        },
+        {
+          "id": "d",
+          "text": "m = 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À droite de 4, x² − 2x − 8 = (x − 4)(x + 2), donc f(x) = x + 2 et lim x→4⁺ f(x) = 6. À gauche et en 4, f(4) = 4m − 2. La continuité exige 4m − 2 = 6, soit m = 2 ✓ (vérification : 4 × 2 − 2 = 6). m = 1/2 vient de « 0/0 = 0 » (4m − 2 = 0), m = 1 d'une erreur de signe (4m + 2 = 6), et m = 3/2 de l'oubli du −2 (4m = 6).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = x³ − 3x + 1, continue sur [1 ; 2], avec g(1) = −1 et g(2) = 3. On applique deux étapes de dichotomie à partir de [1 ; 2] : on évalue g au milieu de [1 ; 2], puis au milieu de l'intervalle retenu. Quel intervalle contient alors une solution de g(x) = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[1,75 ; 2]"
+        },
+        {
+          "id": "b",
+          "text": "[1,5 ; 2]"
+        },
+        {
+          "id": "c",
+          "text": "[1,5 ; 1,75]"
+        },
+        {
+          "id": "d",
+          "text": "[1,25 ; 1,5]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Étape 1 : g(1,5) = 3,375 − 4,5 + 1 = −0,125 < 0, du signe de g(1), donc la solution est dans [1,5 ; 2]. Étape 2 : g(1,75) = 5,359375 − 5,25 + 1 = 1,109375 > 0, du signe de g(2), donc la solution est dans [1,5 ; 1,75] ✓. Lire g(1,5) comme positif mènerait à [1 ; 1,5] puis à [1,25 ; 1,5] ; s'arrêter après la première étape donne [1,5 ; 2] ; et lire g(1,75) à l'envers donne [1,75 ; 2].",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer ³√9 × ³√3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "27"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "³√12"
+        },
+        {
+          "id": "d",
+          "text": "√3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On utilise ⁿ√a × ⁿ√b = ⁿ√(ab) : ³√9 × ³√3 = ³√27 = 3, car 3³ = 27 et 3 est positif. ³√12 viendrait d'une addition sous la racine (9 + 3), √3 = ⁶√27 d'une addition des indices (3 + 3), et 27 d'un produit où l'on oublie la racine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "f et g sont deux fonctions définies sur ℝ. Une seule de ces affirmations est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si g∘f est continue en a, alors f est continue en a."
+        },
+        {
+          "id": "b",
+          "text": "Si f n'est pas continue en a, alors g∘f n'est pas continue en a."
+        },
+        {
+          "id": "c",
+          "text": "Si f et g sont continues sur ℝ, alors g∘f est continue sur ℝ."
+        },
+        {
+          "id": "d",
+          "text": "Si f est continue en a et g est continue en a, alors g∘f est continue en a."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La composée de deux fonctions continues sur ℝ est continue sur ℝ : c'est le théorème. Les autres sont fausses. Avec g constante, g∘f est constante donc continue, quelle que soit f : cela réfute les deux premières. Pour la dernière, il faut g continue en f(a), pas en a : avec f(x) = x + 1, g(y) = y² si y ≠ 1 et g(1) = 5, g est continue en 0 et f en 0, mais g(f(x)) = (x + 1)² tend vers 1 en 0 alors que g(f(0)) = 5.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x² + 6x + 5 sur I = ]−∞ ; −3]. On admet que f est une bijection de I sur [−4 ; +∞[. Que vaut f⁻¹(5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6"
+        },
+        {
+          "id": "b",
+          "text": "−4"
+        },
+        {
+          "id": "c",
+          "text": "−3"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f⁻¹(5) est l'antécédent de 5 dans I. f(x) = (x + 3)² − 4, donc f(x) = 5 équivaut à (x + 3)² = 9, soit x + 3 = 3 ou x + 3 = −3, donc x = 0 ou x = −6. Seule x = −6 est dans ]−∞ ; −3] : f⁻¹(5) = −6 ✓ (f(−6) = 36 − 36 + 5 = 5). Le piège est 0, l'autre solution, hors de I ; −3 est l'abscisse du sommet et −4 la valeur minimale de f.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fonction f(x) = (2x + 1)/(x − 1), définie pour x > 1, prend exactement les valeurs y qui vérifient :",
+      "options": [
+        {
+          "id": "a",
+          "text": "y > 1"
+        },
+        {
+          "id": "b",
+          "text": "y < 2"
+        },
+        {
+          "id": "c",
+          "text": "y ≥ 2"
+        },
+        {
+          "id": "d",
+          "text": "y > 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x > 1, f(x) = 2 + 3/(x − 1). Si 1 < a < b, alors 0 < a − 1 < b − 1 donc 3/(a − 1) > 3/(b − 1) : f est strictement décroissante, et continue. Elle tend vers +∞ quand x → 1⁺ (numérateur proche de 3, dénominateur positif proche de 0) et vers 2 quand x → +∞ : l'image de ]1 ; +∞[ est ]2 ; +∞[, borne 2 non atteinte. y < 2 inverse le sens de variation, y ≥ 2 ferme la borne, et y > 1 recopie le domaine de départ.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du programmeur",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Soit f(x) = (x + 1)/(x − 2) et g(x) = 1/x. Quel est l'ensemble de définition de f∘g ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℝ ∖ {1/2}"
+        },
+        {
+          "id": "b",
+          "text": "ℝ ∖ {0 ; 2}"
+        },
+        {
+          "id": "c",
+          "text": "ℝ ∖ {0 ; −1/2}"
+        },
+        {
+          "id": "d",
+          "text": "ℝ ∖ {0 ; 1/2}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(f∘g)(x) = f(1/x) existe si x ≠ 0 (condition de g) et si g(x) ≠ 2 (condition de f), c'est-à-dire 1/x ≠ 2, soit x ≠ 1/2 : le domaine est ℝ ∖ {0 ; 1/2} ✓. Après simplification, f(g(x)) = (1 + x)/(1 − 2x) semble définie en 0, mais 0 n'est pas dans le domaine de g : ℝ ∖ {1/2} oublie cette condition. ℝ ∖ {0 ; 2} reprend la valeur interdite 2 de f au lieu de la condition g(x) ≠ 2 ; ℝ ∖ {0 ; −1/2} se trompe de signe en résolvant 1/x = 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La limite lim x→1 (x² + ax − 2)/(x − 1) est un nombre réel pour une seule valeur de a. Que vaut alors cette limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le dénominateur tend vers 0 : pour que la limite soit réelle, le numérateur doit s'annuler en 1, soit 1 + a − 2 = 0, donc a = 1 (sinon le numérateur tend vers a − 1 ≠ 0 et le quotient vers ±∞). Alors x² + x − 2 = (x − 1)(x + 2), et pour x ≠ 1 le quotient vaut x + 2, qui tend vers 3 ✓. La valeur 1 est celle de a ; 0 substitue x = 1 dans le facteur x − 1 ; 2 est le terme constant du facteur x + 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'asymptote de la courbe de f(x) = x + √(x² + 2x) en −∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 2x + 1"
+        },
+        {
+          "id": "b",
+          "text": "y = 1"
+        },
+        {
+          "id": "c",
+          "text": "y = −1"
+        },
+        {
+          "id": "d",
+          "text": "y = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En −∞, (−∞) + (+∞) est indéterminée : on multiplie par l'expression conjuguée √(x² + 2x) − x, ce qui donne f(x) = 2x/(√(x² + 2x) − x). On divise haut et bas par x < 0 : √(x² + 2x)/x = −√(1 + 2/x), donc f(x) = 2/(−√(1 + 2/x) − 1), qui tend vers 2/(−2) = −1 ✓ : y = −1 est asymptote horizontale en −∞. Prendre √(x²) = x donne y = 2x + 1, qui est en réalité l'asymptote en +∞ ; y = 1 se trompe de signe ; y = 0 traite ∞ − ∞ comme 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On exécute l'algorithme suivant, avec f(x) = 2 + 1/√x.\nx ← 1\nTant que f(x) − 2 ≥ 0,05 : x ← 4 × x\nAfficher x\nQuelle valeur est affichée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "256"
+        },
+        {
+          "id": "b",
+          "text": "400"
+        },
+        {
+          "id": "c",
+          "text": "1024"
+        },
+        {
+          "id": "d",
+          "text": "4096"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On suit f(x) − 2 = 1/√x : x = 1 donne 1 ; x = 4 donne 0,5 ; x = 16 donne 0,25 ; x = 64 donne 0,125 ; x = 256 donne 0,0625 ≥ 0,05, la boucle continue ; x = 1024 donne 0,03125 < 0,05, elle s'arrête : l'algorithme affiche 1024 ✓. 256 s'arrête une étape trop tôt (0,0625 est encore au-dessus du seuil) ; 400 est la solution exacte de 1/√x = 0,05, mais x ne prend que les valeurs 4, 16, 64… ; 4096 fait un passage de trop.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe de f(x) = 2x + 3 + 1/(x + 1) admet un centre de symétrie. Quel est-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ω(−1 ; 3)"
+        },
+        {
+          "id": "b",
+          "text": "Ω(−1 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "Ω(1 ; −1)"
+        },
+        {
+          "id": "d",
+          "text": "Ω(1 ; 5)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans le repère centré en Ω(−1 ; 1), x = −1 + X et y = 1 + Y. Alors Y = f(−1 + X) − 1 = 2(−1 + X) + 3 + 1/X − 1 = 2X + 1/X, fonction impaire sur ℝ* (φ(−X) = −2X − 1/X = −φ(X)) : Ω(−1 ; 1) est centre de symétrie ✓. Ω(−1 ; 3) retient seulement la constante 3 ; Ω(1 ; −1) échange les coordonnées ; Ω(1 ; 5) se trompe de signe sur l'abscisse de la valeur interdite x + 1 = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Calculer lim x→+∞ (√(x + √x) − √x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1/4"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(+∞) − (+∞) : on multiplie par l'expression conjuguée √(x + √x) + √x. Le numérateur devient (x + √x) − x = √x, donc la différence vaut √x/(√(x + √x) + √x). En divisant haut et bas par √x, on obtient 1/(√(1 + 1/√x) + 1), qui tend vers 1/(1 + 1) = 1/2 ✓. 0 traite ∞ − ∞ comme 0 ; 1/4 élève au carré le dénominateur 1 + 1 ; 1 oublie un des deux termes du dénominateur.",
+      "difficulty": 3
+    }
+  ]
+}

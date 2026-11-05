@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Limites de fonctions",
+  "questions": [
+    {
+      "prompt": "Soit f(x) = x + 3 et g(x) = x². Que vaut (g∘f)(2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "25"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(g∘f)(2) = g(f(2)) : on calcule d'abord f(2) = 5, puis g(5) = 25 ✓. La valeur 7 est (f∘g)(2) = f(4), l'ordre des fonctions inversé ; 9 additionne f(2) = 5 et g(2) = 4 ; 13 élève séparément 2 et 3 au carré avant d'additionner (g(2) + g(3)).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur ]−∞ ; 3[, u(x) = 3 − x est décroissante et prend ses valeurs dans ]0 ; +∞[, où v(y) = 1/y est décroissante. Comment varie w(x) = 1/(3 − x) sur ]−∞ ; 3[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "strictement décroissante"
+        },
+        {
+          "id": "b",
+          "text": "strictement croissante"
+        },
+        {
+          "id": "c",
+          "text": "croissante puis décroissante"
+        },
+        {
+          "id": "d",
+          "text": "décroissante puis croissante"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "w = v∘u, avec u et v qui varient dans le même sens (toutes deux décroissantes) : la composée est croissante ✓. Contrôle : w(0) = 1/3, w(1) = 1/2, w(2) = 1. Répondre « décroissante » reprend le sens de u ou de v sans les composer ; les deux autres réponses supposent un changement de sens qui n'existe pas ici.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La courbe de h(x) = f(x + 3) s'obtient à partir de la courbe de f par une translation de…",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 unités vers la droite"
+        },
+        {
+          "id": "b",
+          "text": "3 unités vers la gauche"
+        },
+        {
+          "id": "c",
+          "text": "3 unités vers le haut"
+        },
+        {
+          "id": "d",
+          "text": "3 unités vers le bas"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x + 3) = f(x + λ) avec λ = 3 : c'est la translation de vecteur −3 i⃗, soit 3 unités vers la gauche ✓ (le point (a ; f(a)) devient (a − 3 ; f(a)), car h(a − 3) = f(a)). Vers la droite est le sens opposé ; vers le haut ou vers le bas correspondrait à f(x) + 3 ou à f(x) − 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer lim x→0⁻ |x|/x.",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x < 0, |x| = −x, donc |x|/x = −1 pour tout x < 0 : la limite à gauche en 0 est −1 ✓. À droite, |x| = x et le quotient vaut 1, ce qui explique pourquoi 1 tente ; 0 vient du numérateur qui tend vers 0, et +∞ d'une division par 0 prise pour infinie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer lim x→−∞ (3 − 2x + x³).",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "−∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un polynôme a, à l'infini, la limite de son terme de plus haut degré : x³ tend vers −∞ quand x → −∞, donc la limite est −∞ ✓. Le terme −2x tend vers +∞ et donnerait à lui seul +∞ ; 3 est le terme constant ; 0 traite (+∞) + (−∞) comme si les deux se compensaient.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer lim x→+∞ cos(π/x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "π"
+        },
+        {
+          "id": "d",
+          "text": "La limite n'existe pas"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose u(x) = π/x, qui tend vers 0 en +∞, puis v = cos, fonction usuelle définie en 0 : lim y→0 cos y = cos 0 = 1. Par composée, la limite vaut 1 ✓. La valeur 0 est la limite de la fonction intérieure π/x ; π est la valeur de u(1) ; et cos n'oscille pas ici, puisque son argument tend vers 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour f(x) = (3x − 2)/(x + 4), quelles droites sont asymptotes à la courbe de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 4 et y = 3"
+        },
+        {
+          "id": "b",
+          "text": "x = −4 et y = −1/2"
+        },
+        {
+          "id": "c",
+          "text": "x = −4 et y = 3"
+        },
+        {
+          "id": "d",
+          "text": "x = 3 et y = −4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En −4, le dénominateur s'annule et le numérateur vaut −14 ≠ 0 : f tend vers ±∞, donc x = −4 est asymptote verticale. À l'infini, f a la limite de 3x/x = 3 : y = 3 est asymptote horizontale ✓. x = 4 se trompe de signe ; y = −1/2 divise les termes constants au lieu des termes de plus haut degré ; x = 3 et y = −4 échangent les rôles des deux droites.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour démontrer que lim x→+∞ f(x) = −∞, laquelle de ces hypothèses suffit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) ≥ g(x) pour x assez grand, avec lim x→+∞ g(x) = −∞"
+        },
+        {
+          "id": "b",
+          "text": "f(x) ≥ g(x) pour x assez grand, avec lim x→+∞ g(x) = +∞"
+        },
+        {
+          "id": "c",
+          "text": "f(x) ≤ g(x) pour x assez grand, avec lim x→+∞ g(x) = −∞"
+        },
+        {
+          "id": "d",
+          "text": "f(x) ≤ g(x) pour x assez grand, avec lim x→+∞ g(x) = +∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si f est au-dessous de g et que g tend vers −∞, f descend encore plus bas : lim f = −∞ ✓ (comparaison vers −∞). Avec f ≥ g et g qui tend vers −∞, f est seulement au-dessus de valeurs très négatives : f(x) = 0 convient et ne tend pas vers −∞. Quand g tend vers +∞, une fonction f ≥ g tend vers +∞ ; et f ≤ g n'impose rien.",
+      "difficulty": 2
+    }
+  ]
+}

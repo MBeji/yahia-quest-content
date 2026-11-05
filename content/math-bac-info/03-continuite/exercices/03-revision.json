@@ -1,0 +1,149 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les huit pas du pont",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Le point (5 ; 2) appartient à la courbe de f⁻¹, où f est une bijection d'un intervalle I sur un intervalle J. Que vaut f(2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/5"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dire que (5 ; 2) est sur la courbe de f⁻¹ signifie f⁻¹(5) = 2, c'est-à-dire, par définition de la réciproque, f(2) = 5 : on échange les coordonnées. La valeur 2 lit f(5) à la place de f(2), et 1/5 ou 1/2 confondent f⁻¹ avec un inverse multiplicatif.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "f est continue et strictement croissante sur ]−3 ; 2], avec lim x→−3⁺ f(x) = −1 et f(2) = 4. Quelle est l'image f(]−3 ; 2]) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−1 ; 4]"
+        },
+        {
+          "id": "b",
+          "text": "]−1 ; 4]"
+        },
+        {
+          "id": "c",
+          "text": "]−1 ; 4["
+        },
+        {
+          "id": "d",
+          "text": "]−3 ; 2]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f est continue et strictement croissante sur ]a ; b] : l'image est ] lim x→a⁺ f(x) ; f(b)], soit ]−1 ; 4]. La borne −1 est seulement approchée, donc ouverte ; la borne 4 est atteinte en x = 2, donc fermée. [−1 ; 4] ferme à tort −1, ]−1 ; 4[ ouvre à tort 4, et ]−3 ; 2] recopie l'ensemble de départ.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces fonctions, lesquelles admettent un prolongement par continuité en 0 ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ x²/|x|"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ x/|x|"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ (1 − √(1 − x))/x"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 1/x²"
+        },
+        {
+          "id": "e",
+          "text": "x ↦ |x|/x²"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Pour x ≠ 0, x²/|x| = |x| tend vers 0 : prolongement par la valeur 0. Pour (1 − √(1 − x))/x, la quantité conjuguée donne 1/(1 + √(1 − x)), qui tend vers 1/2 : prolongement par la valeur 1/2. En revanche x/|x| vaut −1 à gauche de 0 et 1 à droite (limites différentes), 1/x² tend vers +∞, et |x|/x² = 1/|x| tend aussi vers +∞ : une limite infinie ou inexistante interdit le prolongement.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On cherche une valeur approchée de √5 comme solution de f(x) = 0 avec f(x) = x² − 5. On applique l'algorithme suivant avec n = 4. (1) a ← 2 et b ← 3. (2) Répéter n − 1 = 3 fois : m ← (a + b)/2 ; si f(m) a le même signe que f(a), alors a ← m, sinon b ← m. (3) Renvoyer (a + b)/2. Quelle valeur renvoie-t-il ? (Donner la valeur décimale exacte.)",
+      "answerKey": {
+        "value": 2.1875
+      },
+      "explanation": "Au départ f(2) = −1 < 0. Passage 1 : m = 2,5 et f(2,5) = 1,25 > 0, signe opposé à celui de f(a), donc b ← 2,5. Passage 2 : m = 2,25 et f(2,25) = 0,0625 > 0, donc b ← 2,25. Passage 3 : m = 2,125 et f(2,125) = −0,484375 < 0, même signe que f(a), donc a ← 2,125. L'algorithme renvoie (2,125 + 2,25)/2 = 2,1875, valeur proche de √5 ≈ 2,236 à 0,05 près.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe ci-dessous est celle d'une fonction f continue sur [0 ; 5]. D'après la courbe, combien de solutions l'équation f(x) = 1 a-t-elle dans [0 ; 5] ?\n<svg viewBox=\"0 0 330 230\"><title>Courbe d'une fonction f continue sur [0 ; 5] et droite d'équation y = 1</title><line x1=\"22\" y1=\"110.9\" x2=\"318\" y2=\"110.9\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"42.4\" y1=\"208\" x2=\"42.4\" y2=\"8\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"318,110.9 311,107.4 311,114.4\" fill=\"#0f172a\"/><polygon points=\"42.4,8 38.9,15 45.9,15\" fill=\"#0f172a\"/><text x=\"314\" y=\"103.9\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><text x=\"50.4\" y=\"16\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">y</text><line x1=\"93.4\" y1=\"107.9\" x2=\"93.4\" y2=\"113.9\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"93.4\" y=\"125.9\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"144.5\" y1=\"107.9\" x2=\"144.5\" y2=\"113.9\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"144.5\" y=\"125.9\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"195.5\" y1=\"107.9\" x2=\"195.5\" y2=\"113.9\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"195.5\" y=\"125.9\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"246.6\" y1=\"107.9\" x2=\"246.6\" y2=\"113.9\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"246.6\" y=\"125.9\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"297.6\" y1=\"107.9\" x2=\"297.6\" y2=\"113.9\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"297.6\" y=\"125.9\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"39.4\" y1=\"196.6\" x2=\"45.4\" y2=\"196.6\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"36.4\" y=\"200.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−3</text><line x1=\"39.4\" y1=\"168\" x2=\"45.4\" y2=\"168\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"36.4\" y=\"172\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−2</text><line x1=\"39.4\" y1=\"139.4\" x2=\"45.4\" y2=\"139.4\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"36.4\" y=\"143.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−1</text><line x1=\"39.4\" y1=\"82.3\" x2=\"45.4\" y2=\"82.3\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"36.4\" y=\"86.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"39.4\" y1=\"53.7\" x2=\"45.4\" y2=\"53.7\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"36.4\" y=\"57.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"39.4\" y1=\"25.1\" x2=\"45.4\" y2=\"25.1\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"36.4\" y=\"29.1\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><polyline points=\"42.4,191.2 45,180.9 47.5,171.2 50.1,162 52.6,153.2 55.2,145 57.7,137.3 60.3,130 62.8,123.2 65.4,116.8 67.9,110.9 70.5,105.4 73,100.3 75.6,95.6 78.1,91.3 80.7,87.4 83.2,83.9 85.8,80.7 88.3,77.9 90.9,75.5 93.4,73.4 96,71.6 98.6,70.1 101.1,68.9 103.7,68 106.2,67.3 108.8,67 111.3,66.9 113.9,67 116.4,67.4 119,68 121.5,68.8 124.1,69.8 126.6,71.1 129.2,72.5 131.7,74 134.3,75.8 136.8,77.6 139.4,79.7 141.9,81.8 144.5,84.1 147,86.4 149.6,88.9 152.1,91.5 154.7,94.1 157.2,96.8 159.8,99.5 162.3,102.3 164.9,105.2 167.4,108 170,110.9 172.6,113.7 175.1,116.6 177.7,119.4 180.2,122.2 182.8,124.9 185.3,127.6 187.9,130.2 190.4,132.8 193,135.3 195.5,137.6 198.1,139.9 200.6,142.1 203.2,144.1 205.7,146 208.3,147.7 210.8,149.3 213.4,150.7 215.9,151.9 218.5,152.9 221,153.7 223.6,154.3 226.1,154.7 228.7,154.8 231.2,154.7 233.8,154.4 236.3,153.8 238.9,152.9 241.4,151.7 244,150.2 246.6,148.4 249.1,146.2 251.7,143.8 254.2,141 256.8,137.8 259.3,134.3 261.9,130.4 264.4,126.1 267,121.4 269.5,116.4 272.1,110.9 274.6,104.9 277.2,98.6 279.7,91.7 282.3,84.5 284.8,76.7 287.4,68.5 289.9,59.7 292.5,50.5 295,40.8 297.6,30.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"22\" y1=\"82.3\" x2=\"318\" y2=\"82.3\" stroke=\"#b45309\" stroke-width=\"1.5\" stroke-dasharray=\"5 3\"/><text x=\"316\" y=\"75.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">y = 1</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On compte les points d'intersection de la courbe avec la droite y = 1. La courbe monte de −3 à un maximum d'environ 1,5, redescend jusqu'à un minimum d'environ −1,5, puis remonte vers 3 : elle coupe la droite y = 1 une fois en montant, une fois en descendant et une fois en remontant, soit 3 solutions. Ne retenir que le premier croisement, ou oublier la remontée finale, donnerait 1 ou 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "f est une fonction continue de [2 ; 5] dans [2 ; 5], c'est-à-dire que f(x) appartient à [2 ; 5] pour tout x de [2 ; 5]. Combien de solutions l'équation f(x) = x a-t-elle au minimum dans [2 ; 5] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose g(x) = f(x) − x, continue sur [2 ; 5]. Comme f(2) ≥ 2, g(2) ≥ 0, et comme f(5) ≤ 5, g(5) ≤ 0 : g(2) × g(5) ≤ 0, donc g s'annule au moins une fois dans [2 ; 5] : le minimum garanti est 1 solution. On ne peut pas en garantir davantage : f(x) = (x + 5)/2 est continue de [2 ; 5] dans [2 ; 5] et n'a que la solution x = 5. Garantir 0 oublierait l'argument de signe sur g.",
+      "difficulty": 2
+    }
+  ]
+}
