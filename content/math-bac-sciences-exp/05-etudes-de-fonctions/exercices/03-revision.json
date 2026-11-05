@@ -127,7 +127,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Soit D la droite d'équation y = x + 2 et C la courbe de f(x) = √(x² + 4x + 7). Quelle est la position de la courbe par rapport à D sur ℝ ?",
+      "prompt": "Soit D la droite d'équation y = x + 1 et C la courbe de f(x) = √(x² + 4x + 7). Quelle est la position de la courbe par rapport à D sur ℝ ?",
       "options": [
         {
           "id": "a",
@@ -139,15 +139,15 @@
         },
         {
           "id": "c",
-          "text": "Au-dessus de D sur [−2 ; +∞[ et au-dessous de D sur ]−∞ ; −2]"
+          "text": "Au-dessus de D sur [−3 ; +∞[ et au-dessous de D sur ]−∞ ; −3]"
         },
         {
           "id": "d",
-          "text": "Au-dessous de D sur [−2 ; +∞[ et au-dessus de D sur ]−∞ ; −2]"
+          "text": "Au-dessous de D sur [−3 ; +∞[ et au-dessus de D sur ]−∞ ; −3]"
         }
       ],
       "correctOption": "a",
-      "explanation": "f(x)² − (x + 2)² = x² + 4x + 7 − (x² + 4x + 4) = 3 > 0, donc f(x) > |x + 2| ≥ x + 2 pour tout réel x : la courbe est au-dessus de D partout ✓. Test en x = −10 : f(−10) = √67 ≈ 8,19 est bien supérieur à −10 + 2 = −8. Le signe de x + 2 ne gouverne pas la position : c'est la différence f(x) − (x + 2) = 3/(f(x) + x + 2), toujours positive.",
+      "explanation": "f(x)² − (x + 1)² = x² + 4x + 7 − (x² + 2x + 1) = 2x + 6, qui change de signe en −3, mais cela ne décide pas de la position : si x + 1 < 0, alors f(x) > 0 > x + 1, et si x + 1 ≥ 0, alors x > −3 donc f(x)² > (x + 1)² et f(x) > x + 1. La courbe est au-dessus de D partout ✓. Test en x = −10 : f(−10) = √67 ≈ 8,19 est bien supérieur à −10 + 1 = −9. Le signe de f(x)² − (x + 1)² ne suffit pas, car comparer des carrés n'a de sens que si x + 1 ≥ 0.",
       "difficulty": 3
     }
   ]

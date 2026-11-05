@@ -55,7 +55,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "Résoudre dans [0, +∞[ l'équation ∛(x + 7) = ∛x + 1.",
+      "prompt": "Résoudre dans [0, +∞[ l'équation ∛(x + 19) = ∛x + 1.",
       "options": [
         {
           "id": "a",
@@ -63,19 +63,19 @@
         },
         {
           "id": "b",
-          "text": "S = {8}"
+          "text": "S = {27}"
         },
         {
           "id": "c",
-          "text": "S = {1 ; −8}"
+          "text": "S = {8 ; −27}"
         },
         {
           "id": "d",
-          "text": "S = {1}"
+          "text": "S = {8}"
         }
       ],
       "correctOption": "d",
-      "explanation": "On élève au cube : x + 7 = x + 3∛(x²) + 3∛x + 1. Avec t = ∛x ≥ 0, cela donne 3t² + 3t − 6 = 0, soit t² + t − 2 = (t − 1)(t + 2) = 0, donc t = 1 et x = 1 ✓ (vérification : ∛8 = 2 = 1 + 1). La réponse S = ∅ croit qu'aucune solution n'existe parce que ⁿ√(a + b) ≠ ⁿ√a + ⁿ√b. La réponse {8} prend la valeur de x + 7 pour celle de x. La réponse {1 ; −8} garde t = −2, mais −8 n'est pas dans [0, +∞[.",
+      "explanation": "On élève au cube : x + 19 = x + 3∛(x²) + 3∛x + 1. Avec t = ∛x ≥ 0, cela donne 3t² + 3t − 18 = 0, soit t² + t − 6 = (t − 2)(t + 3) = 0, donc t = 2 et x = 8 ✓ (vérification : ∛27 = 3 = 2 + 1). La réponse S = ∅ croit qu'aucune solution n'existe parce que ⁿ√(a + b) ≠ ⁿ√a + ⁿ√b. La réponse {27} prend la valeur de x + 19 pour celle de x. La réponse {8 ; −27} garde t = −3, mais −27 n'est pas dans [0, +∞[.",
       "difficulty": 3
     },
     {

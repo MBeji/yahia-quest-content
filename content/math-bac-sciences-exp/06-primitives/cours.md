@@ -239,7 +239,7 @@ La troisième ligne est la dérivée de w∘u, lue à l'envers : (w∘u)′ = u�
 2. f(x) = (x cos x − sin x)/x² sur ]0, +∞[. Avec u(x) = sin x et v(x) = x, on a u′v − v′u = x cos x − sin x et v ne s'annule pas : F(x) = (sin x)/x. Contrôle : F′(x) = (x cos x − sin x)/x² ✓.
 3. f(x) = x² sin(x³ + 1) sur ℝ. On pose u(x) = x³ + 1, u′(x) = 3x² : f = (1/3) u′ sin(u). Comme −cos est une primitive de sin, F(x) = −(1/3) cos(x³ + 1). Contrôle : F′(x) = −(1/3) × (−sin(x³ + 1)) × 3x² = f(x) ✓.
 4. f(x) = cos(√x)/√x sur ]0, +∞[. On pose u(x) = √x, u′(x) = 1/(2√x) : f = 2u′ cos(u), donc F(x) = 2 sin(√x).
-5. f(x) = x sin x sur ℝ. On dérive x cos x : (x cos x)′ = cos x − x sin x, donc x sin x = cos x − (x cos x)′ et F(x) = sin x − x cos x. Contrôle : F′(x) = cos x − (cos x − x sin x) = x sin x ✓.
+5. f(x) = x cos 2x sur ℝ. On dérive x sin 2x : (x sin 2x)′ = sin 2x + 2x cos 2x, donc x cos 2x = ½(x sin 2x)′ − ½ sin 2x et F(x) = ½ x sin 2x + ¼ cos 2x. Contrôle : F′(x) = ½ sin 2x + x cos 2x − ½ sin 2x = x cos 2x ✓.
 
 :::
 

@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Pour x < 0, √(x²) = −x : f(x) = −x√(1 + 6/x + 4/x²), donc f(x)/x tend vers −1. Puis f(x) + x = (f(x)² − x²)/(f(x) − x) = (6x + 4)/(f(x) − x) = (6 + 4/x)/(f(x)/x − 1), qui tend vers 6/(−2) = −3 ; l'asymptote est donc y = −x − 3 ✓. La droite y = x + 3 vient de √(x²) = x, erreur de signe en −∞ ; y = −x + 3 inverse le signe de la limite ; y = −x − 6 oublie que f(x)/x − 1 tend vers −2 et non vers −1, et ne divise pas par 2.",
+      "explanation": "Pour x < 0, √(x²) = −x : f(x) = −x√(1 + 6/x + 4/x²), donc f(x)/x tend vers −1. Puis f(x) + x = (f(x)² − x²)/(f(x) − x) = (6x + 4)/(f(x) − x) = (6 + 4/x)/(f(x)/x − 1), qui tend vers 6/(−2) = −3 ; l'asymptote est donc y = −x − 3 ✓. La droite y = x + 3 vient de √(x²) = x, erreur de signe en −∞ ; y = −x + 3 inverse le signe de la limite ; y = −x − 6 prend −1 au lieu de −2 pour la limite de f(x)/x − 1, c'est-à-dire oublie que f(x) − x vaut environ −2x, et ne divise pas par 2.",
       "difficulty": 3
     },
     {
