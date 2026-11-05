@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Continuité et limites",
+  "questions": [
+    {
+      "prompt": "Laquelle de ces fonctions est continue en tout réel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ (x − 1)/(x² + 1)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ (x − 1)/(x² − 1)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ √(x − 1)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ |x − 1|/(x − 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une fraction rationnelle est continue en tout réel où elle est définie. Or x² + 1 ≥ 1 ne s'annule jamais : (x − 1)/(x² + 1) est définie, donc continue, sur ℝ tout entier. Les trois autres ne sont pas définies partout : x² − 1 s'annule en −1 et en 1, √(x − 1) n'existe que pour x ≥ 1, et |x − 1|/(x − 1) n'existe pas en 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer lim x→+∞ (x³ − 5x²).",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "−5"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un polynôme a, en +∞, la même limite que son terme de plus haut degré : lim x³ = +∞. Écrire « (+∞) − (+∞) = 0 » est faux, c'est une forme indéterminée ; on la lève en mettant x³ en facteur : x³(1 − 5/x) avec 1 − 5/x → 1, donc le produit tend vers +∞. Le résultat −∞ viendrait de −5x² seul, et −5 du coefficient de x².",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour justifier que f : x ↦ cos(x² + 3) est continue sur ℝ, quelle décomposition faut-il utiliser ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = u(x) + v(x), avec u(x) = x² + 3 et v = cos, continues sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = u(x) × v(x), avec u(x) = x² + 3 et v = cos, continues sur ℝ"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = v(u(x)), avec u(x) = x² + 3 et v = cos, continues sur ℝ"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = u(v(x)), avec u(x) = x² + 3 et v = cos, continues sur ℝ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans cos(x² + 3), on calcule d'abord x² + 3 puis on en prend le cosinus : f = v∘u avec u(x) = x² + 3 et v = cos. Comme u est continue sur ℝ et v continue en chaque u(x), la composée est continue sur ℝ. La somme donnerait x² + 3 + cos x, le produit (x² + 3)cos x, et la composée dans l'autre ordre (cos x)² + 3 : ce ne sont pas des écritures de f.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tout x ≠ 0, on a 5 − x² ≤ f(x) ≤ 5 + 3x². Que vaut lim x→0 f(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut pas conclure"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand x tend vers 0, les deux bornes 5 − x² et 5 + 3x² tendent vers 5 : f est coincée entre deux fonctions de même limite, donc lim x→0 f(x) = 5 (théorème d'encadrement). Les bornes sont des expressions différentes, mais seule compte l'égalité de leurs limites. 0 et 8 ne sont la limite d'aucune des deux bornes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "f est continue sur [−3 ; 2], avec f(−3) = 6 et f(2) = −1. Pour laquelle de ces valeurs de k le théorème des valeurs intermédiaires garantit-il que l'équation f(x) = k a une solution dans [−3 ; 2] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "k = 7"
+        },
+        {
+          "id": "b",
+          "text": "k = −2"
+        },
+        {
+          "id": "c",
+          "text": "k = 6,5"
+        },
+        {
+          "id": "d",
+          "text": "k = −1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Seul −1/2 est compris entre f(2) = −1 et f(−3) = 6. 7 et 6,5 dépassent 6, −2 est sous −1 : pour eux le théorème ne dit rien. Il ne dit pas non plus qu'il n'y a pas de solution.",
+      "difficulty": 2
+    }
+  ]
+}

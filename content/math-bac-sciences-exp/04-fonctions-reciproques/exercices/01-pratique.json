@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec la réciproque",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Soit h définie sur I = [−2, +∞[ par h(x) = x² + 4x. Combien de solutions l'équation h(x) = 5 admet-elle dans ℝ, puis dans I ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 dans ℝ, 2 dans I"
+        },
+        {
+          "id": "b",
+          "text": "1 dans ℝ, 1 dans I"
+        },
+        {
+          "id": "c",
+          "text": "2 dans ℝ, 1 dans I"
+        },
+        {
+          "id": "d",
+          "text": "2 dans ℝ, aucune dans I"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(x + 5)(x − 1) = 0 donne −5 et 1 dans ℝ. Seul 1 est dans I = [−2, +∞[ ✓ (vérification : h(1) = 1 + 4 = 5). Garder les deux racines oublie de filtrer par I. Une seule solution dans ℝ oublie la racine −5. Aucune solution dans I rejette aussi 1, qui est pourtant ≥ −2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f définie sur I = [1, +∞[ par f(x) = √(x − 1) + 2. Elle réalise une bijection de I sur [2, +∞[. Quelle est l'expression de f⁻¹(y) pour y ≥ 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(y − 2)² − 1"
+        },
+        {
+          "id": "b",
+          "text": "(y − 2)² + 1"
+        },
+        {
+          "id": "c",
+          "text": "(y + 2)² + 1"
+        },
+        {
+          "id": "d",
+          "text": "√(y − 1) + 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On résout y = √(x − 1) + 2 en x : √(x − 1) = y − 2 (positif car y ≥ 2), donc x − 1 = (y − 2)², soit f⁻¹(y) = (y − 2)² + 1 ✓ (vérification : f⁻¹(3) = 2 et f(2) = 1 + 2 = 3). L'expression (y − 2)² − 1 se trompe de signe en isolant x. L'expression (y + 2)² + 1 se trompe de signe sur le 2. L'expression √(y − 1) + 2 est f(y) : elle réécrit f au lieu de l'inverser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe ci-dessous représente une fonction f, bijection de [0 ; 4] sur [1 ; 6]. Que vaut f⁻¹(5) ?\n<svg viewBox=\"0 0 268 215\">\n<title>Courbe d'une fonction f sur [0 ; 4], formée de segments passant par les points de coordonnées entières</title>\n<line x1=\"26.6\" y1=\"184\" x2=\"262.2\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"38\" y1=\"191.2\" x2=\"38\" y2=\"13.6\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"262.2,184 254.2,180 254.2,188\" fill=\"#0f172a\"/>\n<polygon points=\"38,13.6 34,21.6 42,21.6\" fill=\"#0f172a\"/>\n<line x1=\"76\" y1=\"184\" x2=\"76\" y2=\"25.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<line x1=\"114\" y1=\"184\" x2=\"114\" y2=\"25.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<line x1=\"152\" y1=\"184\" x2=\"152\" y2=\"25.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<line x1=\"190\" y1=\"184\" x2=\"190\" y2=\"25.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<line x1=\"228\" y1=\"184\" x2=\"228\" y2=\"25.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<line x1=\"38\" y1=\"160\" x2=\"250.8\" y2=\"160\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<line x1=\"38\" y1=\"136\" x2=\"250.8\" y2=\"136\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<line x1=\"38\" y1=\"112\" x2=\"250.8\" y2=\"112\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<line x1=\"38\" y1=\"88\" x2=\"250.8\" y2=\"88\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<line x1=\"38\" y1=\"64\" x2=\"250.8\" y2=\"64\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<line x1=\"38\" y1=\"40\" x2=\"250.8\" y2=\"40\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<polyline points=\"38,160 76,136 114,88 152,64 190,40\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<circle cx=\"38\" cy=\"160\" r=\"3.5\" fill=\"#0f6e56\"/>\n<circle cx=\"76\" cy=\"136\" r=\"3.5\" fill=\"#0f6e56\"/>\n<circle cx=\"114\" cy=\"88\" r=\"3.5\" fill=\"#0f6e56\"/>\n<circle cx=\"152\" cy=\"64\" r=\"3.5\" fill=\"#0f6e56\"/>\n<circle cx=\"190\" cy=\"40\" r=\"3.5\" fill=\"#0f6e56\"/>\n<line x1=\"76\" y1=\"181\" x2=\"76\" y2=\"187\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"114\" y1=\"181\" x2=\"114\" y2=\"187\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"152\" y1=\"181\" x2=\"152\" y2=\"187\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"190\" y1=\"181\" x2=\"190\" y2=\"187\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"228\" y1=\"181\" x2=\"228\" y2=\"187\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"35\" y1=\"160\" x2=\"41\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"35\" y1=\"136\" x2=\"41\" y2=\"136\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"35\" y1=\"112\" x2=\"41\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"35\" y1=\"88\" x2=\"41\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"35\" y1=\"64\" x2=\"41\" y2=\"64\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"35\" y1=\"40\" x2=\"41\" y2=\"40\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"76\" y=\"199\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">1</text><text x=\"114\" y=\"199\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">2</text><text x=\"152\" y=\"199\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">3</text><text x=\"190\" y=\"199\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">4</text><text x=\"228\" y=\"199\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">5</text><text x=\"32\" y=\"164\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">1</text><text x=\"32\" y=\"140\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">2</text><text x=\"32\" y=\"116\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">3</text><text x=\"32\" y=\"92\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">4</text><text x=\"32\" y=\"68\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">5</text><text x=\"32\" y=\"44\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">6</text><text x=\"198\" y=\"38\" text-anchor=\"start\" fill=\"#0f6e56\" font-size=\"13\">f</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f⁻¹(5) est l'abscisse du point de la courbe d'ordonnée 5 : on lit f(3) = 5, donc f⁻¹(5) = 3 ✓. La valeur 4 est f(2), l'ordonnée au rang précédent. La valeur 5 repart de l'ordonnée sans passer à l'abscisse. La valeur 6 est f(4), l'ordonnée du dernier point.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f définie sur I = [0, +∞[ par f(x) = 4 − x². Quel est l'intervalle f(I) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞, 4["
+        },
+        {
+          "id": "b",
+          "text": "[0, 4]"
+        },
+        {
+          "id": "c",
+          "text": "[4, +∞["
+        },
+        {
+          "id": "d",
+          "text": "]−∞, 4]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′(x) = −2x < 0 sur ]0, +∞[ : f est strictement décroissante sur I, avec f(0) = 4 et f(x) → −∞ en +∞, donc f(I) = ]−∞, 4] ✓. La borne 4 est atteinte en x = 0, donc fermée : ]−∞, 4[ l'ouvre à tort. L'intervalle [0, 4] confond f(I) avec une partie de l'ensemble de départ. L'intervalle [4, +∞[ suppose f croissante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f définie sur [0, π] par f(x) = 2cos x + 3, bijection de [0, π] sur [1, 5]. Que vaut f⁻¹(2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2π/3"
+        },
+        {
+          "id": "b",
+          "text": "π/3"
+        },
+        {
+          "id": "c",
+          "text": "4π/3"
+        },
+        {
+          "id": "d",
+          "text": "−1/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f⁻¹(2) est l'unique solution dans [0, π] de 2cos x + 3 = 2, soit cos x = −1/2 : x = 2π/3 ✓ (vérification : 2 × (−1/2) + 3 = 2). La valeur π/3 résout cos x = 1/2 en perdant le signe. La valeur 4π/3 vérifie aussi cos x = −1/2 mais n'est pas dans [0, π]. La valeur −1/2 est celle de cos x, pas celle de x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut (∛5)⁶ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "25"
+        },
+        {
+          "id": "c",
+          "text": "30"
+        },
+        {
+          "id": "d",
+          "text": "125"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(ⁿ√a)ⁿ = a donne (∛5)³ = 5, donc (∛5)⁶ = ((∛5)³)² = 5² = 25 ✓. Le résultat 10 multiplie 5 par 6/3. Le résultat 30 multiplie 5 par 6. Le résultat 125 est 5³ : il retranche les exposants 6 − 3 au lieu de les diviser.",
+      "difficulty": 1
+    }
+  ]
+}

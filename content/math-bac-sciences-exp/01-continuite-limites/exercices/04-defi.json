@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du physicien",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Un élève affirme : « Si f est continue sur [a ; b] et si l'équation f(x) = 0 admet une solution dans [a ; b], alors f(a) × f(b) < 0. » Laquelle de ces fonctions, sur l'intervalle indiqué, prouve qu'il a tort ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = x³ sur [−2 ; 2]"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = x + 3 sur [−2 ; 2]"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = 2x − 1 sur [0 ; 1]"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = (x − 1)² sur [0 ; 2]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(x − 1)² est continue sur [0 ; 2] et s'annule en 1 ∈ [0 ; 2], alors que f(0) × f(2) = 1 × 1 = 1 > 0 : l'hypothèse est vraie et la conclusion fausse, c'est un contre-exemple ✓. x³ (f(−2) × f(2) = −64) et 2x − 1 (f(0) × f(1) = −1) vérifient la conclusion, donc ne contredisent rien ; x + 3 ne s'annule qu'en −3, hors de [−2 ; 2], donc ne vérifie même pas l'hypothèse. Le théorème des valeurs intermédiaires ne se lit que dans un sens.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "f est une fonction continue de [0 ; 1] dans [0 ; 1], c'est-à-dire que f(x) ∈ [0 ; 1] pour tout x de [0 ; 1]. On pose g(x) = f(x) − x. Que peut-on affirmer sur le produit g(0) × g(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(0) × g(1) < 0"
+        },
+        {
+          "id": "b",
+          "text": "g(0) × g(1) ≥ 0"
+        },
+        {
+          "id": "c",
+          "text": "g(0) × g(1) ≤ 0"
+        },
+        {
+          "id": "d",
+          "text": "g(0) × g(1) = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "g(0) = f(0) ≥ 0 car f(0) ∈ [0 ; 1], et g(1) = f(1) − 1 ≤ 0 car f(1) ≤ 1 : un nombre positif ou nul multiplié par un nombre négatif ou nul donne un produit ≤ 0 ✓. L'inégalité ne peut pas être stricte en général (si f(0) = 0, alors g(0) = 0), et le produit n'est pas toujours nul. Comme g est continue, il en résulte que g s'annule : f(x) = x a au moins une solution.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a un réel et f la fonction définie par f(x) = (√(x + a) − 3)/(x − 5) pour x ≠ 5 proche de 5. On suppose que f est prolongeable par continuité en 5. Quelle est la valeur du prolongement en 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1/6"
+        },
+        {
+          "id": "c",
+          "text": "1/3"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Si √(5 + a) ≠ 3, le numérateur a une limite non nulle en 5 et f tend vers l'infini : pas de prolongement. Il faut donc √(5 + a) = 3, soit a = 4. Alors, pour x ≠ 5, f(x) = (x + 4 − 9)/((x − 5)(√(x + 4) + 3)) = 1/(√(x + 4) + 3), qui tend vers 1/6 ✓. 1/3 oublie le + 3 du conjugué (1/√9), 3 est la valeur de la racine, et 0 confond « numérateur nul » avec « quotient nul ».",
+      "difficulty": 3
+    },
+    {
+      "prompt": "f est croissante sur [0 ; +∞[ et vérifie f(n) ≥ 2n pour tout entier naturel n. Que peut-on affirmer sur le comportement de f en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f admet une limite finie en +∞, car elle est croissante"
+        },
+        {
+          "id": "b",
+          "text": "f tend vers +∞ en +∞, car elle est croissante et non majorée"
+        },
+        {
+          "id": "c",
+          "text": "On ne peut rien conclure, car l'hypothèse ne porte que sur les entiers"
+        },
+        {
+          "id": "d",
+          "text": "f admet une limite en +∞, mais on ne peut pas dire si elle est finie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f est croissante sur [0 ; +∞[, donc elle a une limite en +∞ : finie si f est majorée, +∞ sinon. Or f(n) ≥ 2n : pour tout réel M, il existe un entier n tel que 2n > M, donc f(n) > M, et f n'est majorée par aucun réel. Croissante et non majorée : lim x→+∞ f(x) = +∞ ✓. Connaître f sur les entiers suffit, car la monotonie contrôle tous les réels entre deux entiers ; et croissante ne signifie pas limite finie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe ci-dessous est celle d'une fonction f continue sur [0 ; 6], strictement croissante sur [0 ; 2], strictement décroissante sur [2 ; 6], avec f(0) = −1, f(2) = 4 et f(6) = 1. Pour quelles valeurs du réel k l'équation f(x) = k admet-elle exactement deux solutions dans [0 ; 6] ?\n<svg viewBox=\"0 0 320 240\"><title>Courbe d'une fonction continue sur l'intervalle de 0 à 6, croissante jusqu'à l'abscisse 2 puis décroissante</title><path d=\"M26.0 159.5 H306.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M49.4 218.0 V14.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M306.0 159.5 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M49.4 14.0 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"127.2\" y1=\"156.5\" x2=\"127.2\" y2=\"162.5\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"127.2\" y=\"174.5\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"204.9\" y1=\"156.5\" x2=\"204.9\" y2=\"162.5\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"204.9\" y=\"174.5\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"282.7\" y1=\"156.5\" x2=\"282.7\" y2=\"162.5\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"282.7\" y=\"174.5\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"46.4\" y1=\"189.8\" x2=\"52.4\" y2=\"189.8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"43.4\" y=\"193.8\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−1</text><line x1=\"46.4\" y1=\"129.2\" x2=\"52.4\" y2=\"129.2\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"43.4\" y=\"133.2\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"46.4\" y1=\"98.8\" x2=\"52.4\" y2=\"98.8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"43.4\" y=\"102.8\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"46.4\" y1=\"68.5\" x2=\"52.4\" y2=\"68.5\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"43.4\" y=\"72.5\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"46.4\" y1=\"38.2\" x2=\"52.4\" y2=\"38.2\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"43.4\" y=\"42.2\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"304.0\" y=\"153.5\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><text x=\"57.4\" y=\"22.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">y</text><path d=\"M49.4 189.8 L50.4 186.0 L51.4 182.3 L52.4 178.6 L53.3 175.0 L54.3 171.4 L55.3 167.9 L56.2 164.4 L57.2 161.0 L58.2 157.6 L59.2 154.2 L60.1 151.0 L61.1 147.7 L62.1 144.5 L63.0 141.4 L64.0 138.3 L65.0 135.2 L66.0 132.2 L66.9 129.2 L67.9 126.3 L68.9 123.5 L69.8 120.7 L70.8 117.9 L71.8 115.2 L72.8 112.5 L73.7 109.9 L74.7 107.3 L75.7 104.7 L76.6 102.3 L77.6 99.8 L78.6 97.4 L79.6 95.1 L80.5 92.8 L81.5 90.5 L82.5 88.3 L83.5 86.2 L84.4 84.1 L85.4 82.0 L86.4 80.0 L87.3 78.0 L88.3 76.1 L89.3 74.3 L90.3 72.4 L91.2 70.7 L92.2 68.9 L93.2 67.2 L94.1 65.6 L95.1 64.0 L96.1 62.5 L97.1 61.0 L98.0 59.5 L99.0 58.2 L100.0 56.8 L100.9 55.5 L101.9 54.2 L102.9 53.0 L103.9 51.9 L104.8 50.8 L105.8 49.7 L106.8 48.7 L107.7 47.7 L108.7 46.8 L109.7 45.9 L110.7 45.1 L111.6 44.3 L112.6 43.6 L113.6 42.9 L114.5 42.2 L115.5 41.7 L116.5 41.1 L117.5 40.6 L118.4 40.2 L119.4 39.8 L120.4 39.4 L121.4 39.1 L122.3 38.8 L123.3 38.6 L124.3 38.5 L125.2 38.3 L126.2 38.3 L127.2 38.2 L128.2 38.2 L129.1 38.3 L130.1 38.3 L131.1 38.3 L132.0 38.3 L133.0 38.4 L134.0 38.4 L135.0 38.5 L135.9 38.5 L136.9 38.6 L137.9 38.7 L138.8 38.8 L139.8 38.8 L140.8 38.9 L141.8 39.0 L142.7 39.2 L143.7 39.3 L144.7 39.4 L145.6 39.5 L146.6 39.7 L147.6 39.8 L148.6 40.0 L149.5 40.1 L150.5 40.3 L151.5 40.5 L152.5 40.6 L153.4 40.8 L154.4 41.0 L155.4 41.2 L156.3 41.4 L157.3 41.7 L158.3 41.9 L159.3 42.1 L160.2 42.3 L161.2 42.6 L162.2 42.8 L163.1 43.1 L164.1 43.4 L165.1 43.6 L166.1 43.9 L167.0 44.2 L168.0 44.5 L169.0 44.8 L169.9 45.1 L170.9 45.4 L171.9 45.8 L172.9 46.1 L173.8 46.4 L174.8 46.8 L175.8 47.1 L176.7 47.5 L177.7 47.8 L178.7 48.2 L179.7 48.6 L180.6 49.0 L181.6 49.4 L182.6 49.8 L183.5 50.2 L184.5 50.6 L185.5 51.0 L186.5 51.5 L187.4 51.9 L188.4 52.3 L189.4 52.8 L190.4 53.2 L191.3 53.7 L192.3 54.2 L193.3 54.7 L194.2 55.1 L195.2 55.6 L196.2 56.1 L197.2 56.7 L198.1 57.2 L199.1 57.7 L200.1 58.2 L201.0 58.8 L202.0 59.3 L203.0 59.8 L204.0 60.4 L204.9 61.0 L205.9 61.5 L206.9 62.1 L207.8 62.7 L208.8 63.3 L209.8 63.9 L210.8 64.5 L211.7 65.1 L212.7 65.7 L213.7 66.4 L214.6 67.0 L215.6 67.6 L216.6 68.3 L217.6 69.0 L218.5 69.6 L219.5 70.3 L220.5 71.0 L221.5 71.7 L222.4 72.3 L223.4 73.0 L224.4 73.8 L225.3 74.5 L226.3 75.2 L227.3 75.9 L228.3 76.7 L229.2 77.4 L230.2 78.1 L231.2 78.9 L232.1 79.7 L233.1 80.4 L234.1 81.2 L235.1 82.0 L236.0 82.8 L237.0 83.6 L238.0 84.4 L238.9 85.2 L239.9 86.0 L240.9 86.9 L241.9 87.7 L242.8 88.5 L243.8 89.4 L244.8 90.2 L245.7 91.1 L246.7 92.0 L247.7 92.8 L248.7 93.7 L249.6 94.6 L250.6 95.5 L251.6 96.4 L252.5 97.3 L253.5 98.3 L254.5 99.2 L255.5 100.1 L256.4 101.1 L257.4 102.0 L258.4 103.0 L259.4 103.9 L260.3 104.9 L261.3 105.9 L262.3 106.9 L263.2 107.8 L264.2 108.8 L265.2 109.8 L266.2 110.9 L267.1 111.9 L268.1 112.9 L269.1 113.9 L270.0 115.0 L271.0 116.0 L272.0 117.1 L273.0 118.1 L273.9 119.2 L274.9 120.3 L275.9 121.4 L276.8 122.5 L277.8 123.6 L278.8 124.7 L279.8 125.8 L280.7 126.9 L281.7 128.0 L282.7 129.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"49.4\" cy=\"189.8\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"127.2\" cy=\"38.2\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"282.7\" cy=\"129.2\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 ≤ k < 4"
+        },
+        {
+          "id": "b",
+          "text": "1 < k < 4"
+        },
+        {
+          "id": "c",
+          "text": "1 ≤ k ≤ 4"
+        },
+        {
+          "id": "d",
+          "text": "−1 ≤ k < 4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur [0 ; 2], f est continue et strictement croissante : f([0 ; 2]) = [−1 ; 4], et chaque k de cet intervalle a une unique solution. Sur [2 ; 6], f est strictement décroissante : f([2 ; 6]) = [1 ; 4], et chaque k de cet intervalle a une unique solution. Il y a une solution dans chaque morceau pour k ∈ [1 ; 4]. Mais pour k = 4 les deux coïncident (x = 2), donc deux solutions exactement pour 1 ≤ k < 4 ✓ ; pour k = 1, on a x = 6 et une solution dans ]0 ; 2[. Pour −1 ≤ k < 1, seul le premier morceau convient : une solution.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une fonction f vérifie lim y→1⁻ f(y) = 3, lim y→1⁺ f(y) = −1 et lim y→+∞ f(y) = 2 (voir la courbe). Que vaut lim x→+∞ f((2x + 1)/(2x − 1)) ?\n<svg viewBox=\"0 0 330 240\"><title>Courbe d'une fonction f : près de l'abscisse 1 elle tend vers 3 à gauche et vers −1 à droite, et elle se rapproche de 2 quand l'abscisse devient grande</title><path d=\"M26.0 149.7 H316.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M65.0 218.0 V14.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M316.0 149.7 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M65.0 14.0 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"94.2\" y1=\"146.7\" x2=\"94.2\" y2=\"152.7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"94.2\" y=\"164.7\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"181.8\" y1=\"146.7\" x2=\"181.8\" y2=\"152.7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"181.8\" y=\"164.7\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"298.5\" y1=\"146.7\" x2=\"298.5\" y2=\"152.7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"298.5\" y=\"164.7\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><line x1=\"62.0\" y1=\"185.4\" x2=\"68.0\" y2=\"185.4\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"59.0\" y=\"189.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−1</text><line x1=\"62.0\" y1=\"78.3\" x2=\"68.0\" y2=\"78.3\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"59.0\" y=\"82.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"62.0\" y1=\"42.6\" x2=\"68.0\" y2=\"42.6\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"59.0\" y=\"46.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><text x=\"314.0\" y=\"143.7\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><text x=\"73.0\" y=\"22.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">y</text><line x1=\"94.2\" y1=\"78.3\" x2=\"316.0\" y2=\"78.3\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"5 3\"/><path d=\"M32.9 117.6 L33.2 117.3 L33.4 116.9 L33.7 116.6 L33.9 116.3 L34.2 116.0 L34.4 115.7 L34.7 115.4 L35.0 115.1 L35.2 114.8 L35.5 114.4 L35.7 114.1 L36.0 113.8 L36.2 113.5 L36.5 113.2 L36.7 112.9 L37.0 112.6 L37.3 112.3 L37.5 111.9 L37.8 111.6 L38.0 111.3 L38.3 111.0 L38.5 110.7 L38.8 110.4 L39.0 110.1 L39.3 109.8 L39.6 109.5 L39.8 109.1 L40.1 108.8 L40.3 108.5 L40.6 108.2 L40.8 107.9 L41.1 107.6 L41.3 107.3 L41.6 107.0 L41.9 106.6 L42.1 106.3 L42.4 106.0 L42.6 105.7 L42.9 105.4 L43.1 105.1 L43.4 104.8 L43.6 104.5 L43.9 104.1 L44.1 103.8 L44.4 103.5 L44.7 103.2 L44.9 102.9 L45.2 102.6 L45.4 102.3 L45.7 102.0 L45.9 101.6 L46.2 101.3 L46.4 101.0 L46.7 100.7 L47.0 100.4 L47.2 100.1 L47.5 99.8 L47.7 99.5 L48.0 99.1 L48.2 98.8 L48.5 98.5 L48.7 98.2 L49.0 97.9 L49.3 97.6 L49.5 97.3 L49.8 97.0 L50.0 96.6 L50.3 96.3 L50.5 96.0 L50.8 95.7 L51.0 95.4 L51.3 95.1 L51.6 94.8 L51.8 94.5 L52.1 94.1 L52.3 93.8 L52.6 93.5 L52.8 93.2 L53.1 92.9 L53.3 92.6 L53.6 92.3 L53.8 92.0 L54.1 91.6 L54.4 91.3 L54.6 91.0 L54.9 90.7 L55.1 90.4 L55.4 90.1 L55.6 89.8 L55.9 89.5 L56.1 89.1 L56.4 88.8 L56.7 88.5 L56.9 88.2 L57.2 87.9 L57.4 87.6 L57.7 87.3 L57.9 87.0 L58.2 86.6 L58.4 86.3 L58.7 86.0 L59.0 85.7 L59.2 85.4 L59.5 85.1 L59.7 84.8 L60.0 84.5 L60.2 84.1 L60.5 83.8 L60.7 83.5 L61.0 83.2 L61.2 82.9 L61.5 82.6 L61.8 82.3 L62.0 82.0 L62.3 81.7 L62.5 81.3 L62.8 81.0 L63.0 80.7 L63.3 80.4 L63.5 80.1 L63.8 79.8 L64.1 79.5 L64.3 79.2 L64.6 78.8 L64.8 78.5 L65.1 78.2 L65.3 77.9 L65.6 77.6 L65.8 77.3 L66.1 77.0 L66.4 76.7 L66.6 76.3 L66.9 76.0 L67.1 75.7 L67.4 75.4 L67.6 75.1 L67.9 74.8 L68.1 74.5 L68.4 74.2 L68.7 73.8 L68.9 73.5 L69.2 73.2 L69.4 72.9 L69.7 72.6 L69.9 72.3 L70.2 72.0 L70.4 71.7 L70.7 71.3 L70.9 71.0 L71.2 70.7 L71.5 70.4 L71.7 70.1 L72.0 69.8 L72.2 69.5 L72.5 69.2 L72.7 68.8 L73.0 68.5 L73.2 68.2 L73.5 67.9 L73.8 67.6 L74.0 67.3 L74.3 67.0 L74.5 66.7 L74.8 66.3 L75.0 66.0 L75.3 65.7 L75.5 65.4 L75.8 65.1 L76.1 64.8 L76.3 64.5 L76.6 64.2 L76.8 63.8 L77.1 63.5 L77.3 63.2 L77.6 62.9 L77.8 62.6 L78.1 62.3 L78.4 62.0 L78.6 61.7 L78.9 61.3 L79.1 61.0 L79.4 60.7 L79.6 60.4 L79.9 60.1 L80.1 59.8 L80.4 59.5 L80.6 59.2 L80.9 58.8 L81.2 58.5 L81.4 58.2 L81.7 57.9 L81.9 57.6 L82.2 57.3 L82.4 57.0 L82.7 56.7 L82.9 56.4 L83.2 56.0 L83.5 55.7 L83.7 55.4 L84.0 55.1 L84.2 54.8 L84.5 54.5 L84.7 54.2 L85.0 53.9 L85.2 53.5 L85.5 53.2 L85.8 52.9 L86.0 52.6 L86.3 52.3 L86.5 52.0 L86.8 51.7 L87.0 51.4 L87.3 51.0 L87.5 50.7 L87.8 50.4 L88.0 50.1 L88.3 49.8 L88.6 49.5 L88.8 49.2 L89.1 48.9 L89.3 48.5 L89.6 48.2 L89.8 47.9 L90.1 47.6 L90.3 47.3 L90.6 47.0 L90.9 46.7 L91.1 46.4 L91.4 46.0 L91.6 45.7 L91.9 45.4 L92.1 45.1 L92.4 44.8 L92.6 44.5 L92.9 44.2 L93.2 43.9 L93.4 43.5 L93.7 43.2 L93.9 42.9 L94.2 42.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M94.2 185.3 L95.1 182.1 L96.1 179.0 L97.0 176.2 L97.9 173.4 L98.8 170.9 L99.7 168.4 L100.6 166.1 L101.5 163.9 L102.4 161.8 L103.4 159.9 L104.3 158.0 L105.2 156.2 L106.1 154.4 L107.0 152.8 L107.9 151.2 L108.8 149.7 L109.7 148.2 L110.6 146.8 L111.6 145.5 L112.5 144.2 L113.4 142.9 L114.3 141.7 L115.2 140.6 L116.1 139.5 L117.0 138.4 L117.9 137.4 L118.9 136.4 L119.8 135.4 L120.7 134.5 L121.6 133.6 L122.5 132.7 L123.4 131.8 L124.3 131.0 L125.2 130.2 L126.1 129.4 L127.1 128.7 L128.0 128.0 L128.9 127.2 L129.8 126.6 L130.7 125.9 L131.6 125.2 L132.5 124.6 L133.4 124.0 L134.4 123.4 L135.3 122.8 L136.2 122.2 L137.1 121.7 L138.0 121.1 L138.9 120.6 L139.8 120.1 L140.7 119.6 L141.7 119.1 L142.6 118.6 L143.5 118.1 L144.4 117.7 L145.3 117.2 L146.2 116.8 L147.1 116.4 L148.0 116.0 L148.9 115.5 L149.9 115.1 L150.8 114.8 L151.7 114.4 L152.6 114.0 L153.5 113.6 L154.4 113.3 L155.3 112.9 L156.2 112.6 L157.2 112.2 L158.1 111.9 L159.0 111.6 L159.9 111.2 L160.8 110.9 L161.7 110.6 L162.6 110.3 L163.5 110.0 L164.4 109.7 L165.4 109.4 L166.3 109.2 L167.2 108.9 L168.1 108.6 L169.0 108.4 L169.9 108.1 L170.8 107.8 L171.7 107.6 L172.7 107.3 L173.6 107.1 L174.5 106.9 L175.4 106.6 L176.3 106.4 L177.2 106.2 L178.1 105.9 L179.0 105.7 L179.9 105.5 L180.9 105.3 L181.8 105.1 L182.7 104.9 L183.6 104.7 L184.5 104.5 L185.4 104.3 L186.3 104.1 L187.2 103.9 L188.2 103.7 L189.1 103.5 L190.0 103.3 L190.9 103.1 L191.8 102.9 L192.7 102.8 L193.6 102.6 L194.5 102.4 L195.5 102.3 L196.4 102.1 L197.3 101.9 L198.2 101.8 L199.1 101.6 L200.0 101.4 L200.9 101.3 L201.8 101.1 L202.7 101.0 L203.7 100.8 L204.6 100.7 L205.5 100.5 L206.4 100.4 L207.3 100.3 L208.2 100.1 L209.1 100.0 L210.0 99.8 L211.0 99.7 L211.9 99.6 L212.8 99.4 L213.7 99.3 L214.6 99.2 L215.5 99.1 L216.4 98.9 L217.3 98.8 L218.2 98.7 L219.2 98.6 L220.1 98.5 L221.0 98.3 L221.9 98.2 L222.8 98.1 L223.7 98.0 L224.6 97.9 L225.5 97.8 L226.5 97.7 L227.4 97.5 L228.3 97.4 L229.2 97.3 L230.1 97.2 L231.0 97.1 L231.9 97.0 L232.8 96.9 L233.7 96.8 L234.7 96.7 L235.6 96.6 L236.5 96.5 L237.4 96.4 L238.3 96.3 L239.2 96.2 L240.1 96.1 L241.0 96.0 L242.0 96.0 L242.9 95.9 L243.8 95.8 L244.7 95.7 L245.6 95.6 L246.5 95.5 L247.4 95.4 L248.3 95.3 L249.3 95.3 L250.2 95.2 L251.1 95.1 L252.0 95.0 L252.9 94.9 L253.8 94.8 L254.7 94.8 L255.6 94.7 L256.5 94.6 L257.5 94.5 L258.4 94.5 L259.3 94.4 L260.2 94.3 L261.1 94.2 L262.0 94.2 L262.9 94.1 L263.8 94.0 L264.8 93.9 L265.7 93.9 L266.6 93.8 L267.5 93.7 L268.4 93.7 L269.3 93.6 L270.2 93.5 L271.1 93.5 L272.0 93.4 L273.0 93.3 L273.9 93.3 L274.8 93.2 L275.7 93.1 L276.6 93.1 L277.5 93.0 L278.4 92.9 L279.3 92.9 L280.3 92.8 L281.2 92.8 L282.1 92.7 L283.0 92.6 L283.9 92.6 L284.8 92.5 L285.7 92.5 L286.6 92.4 L287.5 92.3 L288.5 92.3 L289.4 92.2 L290.3 92.2 L291.2 92.1 L292.1 92.1 L293.0 92.0 L293.9 91.9 L294.8 91.9 L295.8 91.8 L296.7 91.8 L297.6 91.7 L298.5 91.7 L299.4 91.6 L300.3 91.6 L301.2 91.5 L302.1 91.5 L303.1 91.4 L304.0 91.4 L304.9 91.3 L305.8 91.3 L306.7 91.2 L307.6 91.2 L308.5 91.1 L309.4 91.1 L310.3 91.0 L311.3 91.0 L312.2 90.9 L313.1 90.9\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"94.2\" cy=\"42.6\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2.3\"/><circle cx=\"94.2\" cy=\"185.4\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2.3\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "La limite n'existe pas"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x > 1/2, (2x + 1)/(2x − 1) = 1 + 2/(2x − 1) est strictement supérieur à 1 et tend vers 1 : la variable de f s'approche de 1 par la droite. On utilise donc la limite à droite en 1 : lim x→+∞ f((2x + 1)/(2x − 1)) = lim y→1⁺ f(y) = −1 ✓. Le résultat 3 prend la limite à gauche, 2 applique la limite de f en +∞ alors que la variable tend vers 1, et « n'existe pas » oublie que seule la limite du côté de l'approche compte.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Dérivabilité et accroissements finis",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Soit g(x) = cos(2x) sur ℝ. Quelle est la dérivée troisième g⁽³⁾(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 sin(2x)"
+        },
+        {
+          "id": "b",
+          "text": "−8 sin(2x)"
+        },
+        {
+          "id": "c",
+          "text": "8 cos(2x)"
+        },
+        {
+          "id": "d",
+          "text": "6 sin(2x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On dérive trois fois : g′(x) = −2 sin(2x), g″(x) = −4 cos(2x), puis g⁽³⁾(x) = 8 sin(2x) ✓ : chaque dérivation ajoute un facteur 2 venu de l'intérieur, soit 2³ = 8. La réponse « −8 sin(2x) » se trompe de signe au dernier pas : la dérivée de −4 cos(2x) est +8 sin(2x). La réponse « 8 cos(2x) » ne transforme pas le cosinus de g″ en sinus. La réponse « 6 sin(2x) » ajoute 2 + 2 + 2 au lieu de multiplier.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle valeur approchée de √4,04 obtient-on par l'approximation affine de f(x) = √x au voisinage de 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,005"
+        },
+        {
+          "id": "b",
+          "text": "2,01"
+        },
+        {
+          "id": "c",
+          "text": "2,02"
+        },
+        {
+          "id": "d",
+          "text": "2,1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a f(4) = 2 et f′(x) = 1/(2√x), donc f′(4) = 1/4. Avec h = 0,04 : f(4 + h) ≈ 2 + 0,04/4 = 2 + 0,01 = 2,01 ✓ (la calculatrice donne 2,00998…). La valeur 2,02 prend f′(4) = 1/2, en oubliant que √4 = 2 dans 2√x. La valeur 2,005 prend f′(4) = 1/8, comme si (√x)′ valait 1/(2x). La valeur 2,1 lit h = 0,4 au lieu de 0,04.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √(x² + 2x), définie en 0 et à droite de 0. Quelle est la limite du taux d'accroissement (f(x) − f(0))/x quand x tend vers 0 par valeurs supérieures, et que peut-on en déduire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 : f est dérivable à droite en 0 et f′_d(0) = 0"
+        },
+        {
+          "id": "b",
+          "text": "1 : f est dérivable à droite en 0 et f′_d(0) = 1"
+        },
+        {
+          "id": "c",
+          "text": "−∞ : f n'est pas dérivable à droite en 0 (demi-tangente verticale)"
+        },
+        {
+          "id": "d",
+          "text": "+∞ : f n'est pas dérivable à droite en 0 (demi-tangente verticale)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a f(0) = 0 et, pour x > 0, (f(x) − f(0))/x = √(x² + 2x)/x = √((x² + 2x)/x²) = √(1 + 2/x). Quand x tend vers 0 par valeurs positives, 2/x tend vers +∞, donc le taux tend vers +∞ ✓ : f n'est pas dérivable à droite en 0 et sa courbe a une demi-tangente verticale. La limite ne peut pas être −∞ : le taux est positif. La limite 0 confond f(0) = 0 avec le nombre dérivé. La limite 1 remplace √(x² + 2x) par x, en oubliant le terme 2x qui domine x² près de 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √(x² − 4) + 3 sur [2 ; +∞[. On admet que f est continue sur [2 ; +∞[ et que lim x→+∞ f(x) = +∞. Quelle est l'image f([2 ; +∞[) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]3 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "[0 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "[3 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]−∞ ; 3]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur ]2 ; +∞[, f′(x) = x/√(x² − 4) > 0 : f est strictement croissante sur ]2 ; +∞[, donc sur [2 ; +∞[ puisqu'elle est continue en 2 (prolongement aux bornes). Son image est l'intervalle qui va de f(2) = 0 + 3 = 3, valeur atteinte, jusqu'à la limite +∞ : [3 ; +∞[ ✓. L'intervalle ouvert en 3 oublie que f atteint 3 en x = 2. L'intervalle [0 ; +∞[ oublie le +3. L'intervalle ]−∞ ; 3] lit le signe de f′ à l'envers.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f dérivable sur [1 ; 2] telle que |f′(x)| ≤ 4 pour tout x de [1 ; 2], avec f(1) = −1. Quel encadrement de f(5/4) l'inégalité des accroissements finis fournit-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5/4 ≤ f(5/4) ≤ −3/4"
+        },
+        {
+          "id": "b",
+          "text": "−2 ≤ f(5/4) ≤ 0"
+        },
+        {
+          "id": "c",
+          "text": "−5 ≤ f(5/4) ≤ 3"
+        },
+        {
+          "id": "d",
+          "text": "−17 ≤ f(5/4) ≤ 15"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le corollaire donne |f(b) − f(a)| ≤ M|b − a| avec M = 4, a = 1 et b = 5/4 : |f(5/4) − (−1)| ≤ 4 × 1/4 = 1, soit −2 ≤ f(5/4) ≤ 0 ✓. L'encadrement −5 ≤ f(5/4) ≤ 3 utilise |b − a| = 1 au lieu de 1/4. L'encadrement −5/4 ≤ f(5/4) ≤ −3/4 oublie la borne M = 4 : il retranche et ajoute seulement 1/4. L'encadrement −17 ≤ f(5/4) ≤ 15 divise par 1/4 au lieu de multiplier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = (x + 3)x(x − 2). Que peut-on affirmer, sans calculer f′, sur les tangentes horizontales de C_f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exactement deux : une dans ]−3 ; 0[ et une dans ]0 ; 2["
+        },
+        {
+          "id": "b",
+          "text": "Au moins deux, et rien n'empêche qu'il y en ait davantage"
+        },
+        {
+          "id": "c",
+          "text": "Exactement une, dans ]−3 ; 2["
+        },
+        {
+          "id": "d",
+          "text": "Exactement trois, une en chaque racine de f"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f s'annule en −3, 0 et 2, et elle est continue et dérivable sur ℝ. Rolle sur [−3 ; 0] puis sur [0 ; 2] donne un zéro de f′ dans ]−3 ; 0[ et un autre dans ]0 ; 2[ : deux tangentes horizontales au moins. Or f est un polynôme de degré 3, donc f′ est de degré 2 et a au plus deux racines : il y en a exactement deux ✓. La réponse « au moins deux, et rien n'empêche qu'il y en ait davantage » ignore ce plafond. La réponse « exactement une » oublie le second intervalle. La réponse « exactement trois » confond les racines de f (trois) avec celles de f′.",
+      "difficulty": 3
+    }
+  ]
+}

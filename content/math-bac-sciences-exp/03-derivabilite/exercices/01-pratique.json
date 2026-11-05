@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Lire la pente d'une courbe",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Soit f(x) = 2x⁴ − 5x² + x − 6 sur ℝ. Quelle est la dérivée f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8x³ − 10x"
+        },
+        {
+          "id": "b",
+          "text": "8x³ − 10x + 1"
+        },
+        {
+          "id": "c",
+          "text": "8x³ − 5x + 1"
+        },
+        {
+          "id": "d",
+          "text": "4x³ − 10x + 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On dérive terme à terme : (2x⁴)′ = 8x³, (−5x²)′ = −10x, (x)′ = 1 et (−6)′ = 0, donc f′(x) = 8x³ − 10x + 1 ✓. La réponse « 8x³ − 10x » oublie la dérivée de x, qui vaut 1. La réponse « 8x³ − 5x + 1 » ne multiplie pas par l'exposant 2 pour −5x². La réponse « 4x³ − 10x + 1 » oublie le coefficient 2 du premier terme.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = 3x² − x sur ℝ. Quel est le nombre dérivé f′(−2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−13"
+        },
+        {
+          "id": "b",
+          "text": "−12"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "14"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a f′(x) = 6x − 1, donc f′(−2) = −12 − 1 = −13 ✓. La réponse −12 oublie le terme −1 de la dérivée. La réponse 11 donne le signe + à 6 × (−2). La réponse 14 est l'image f(−2) = 12 + 2, pas le nombre dérivé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = x² − 6x + 1 sur ℝ. En quel point la tangente à C_f est-elle horizontale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−8 ; 3)"
+        },
+        {
+          "id": "b",
+          "text": "(0 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(3 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "(3 ; −8)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une tangente horizontale a une pente nulle : f′(x) = 2x − 6 = 0 donne x = 3, puis f(3) = 9 − 18 + 1 = −8. Le point est (3 ; −8) ✓. La réponse (3 ; 0) confond f′(3) = 0 avec l'ordonnée f(3). La réponse (−8 ; 3) échange l'abscisse et l'ordonnée. La réponse (0 ; 1) est le point de la courbe d'abscisse 0 (f(0) = 1), où la pente vaut f′(0) = −6.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = cos(2x + π/3) sur ℝ. Quelle est la dérivée f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−sin(2x + π/3)"
+        },
+        {
+          "id": "b",
+          "text": "2 sin(2x + π/3)"
+        },
+        {
+          "id": "c",
+          "text": "−2 sin(2x + π/3)"
+        },
+        {
+          "id": "d",
+          "text": "−2 cos(2x + π/3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La table donne (cos(ax + b))′ = −a sin(ax + b) ; ici a = 2 et b = π/3, donc f′(x) = −2 sin(2x + π/3) ✓. La réponse « −sin(2x + π/3) » oublie le facteur a = 2. La réponse « 2 sin(2x + π/3) » perd le signe moins de la dérivée du cosinus. La réponse « −2 cos(2x + π/3) » garde la fonction cosinus au lieu de la transformer en sinus.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = x³ − 12x sur ℝ. Quel est son sens de variation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Décroissante sur ]−∞ ; −2], croissante sur [−2 ; 2], décroissante sur [2 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "Croissante sur ]−∞ ; −2], décroissante sur [−2 ; 2], croissante sur [2 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "Croissante sur ]−∞ ; −2√3], décroissante sur [−2√3 ; 2√3], croissante sur [2√3 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "Décroissante sur ]−∞ ; 2], croissante sur [2 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a f′(x) = 3x² − 12 = 3(x − 2)(x + 2). f′ est positive sur ]−∞ ; −2[, négative sur ]−2 ; 2[ et positive sur ]2 ; +∞[ : f est croissante sur ]−∞ ; −2], décroissante sur [−2 ; 2] puis croissante sur [2 ; +∞[ ✓ (maximum local f(−2) = 16, minimum local f(2) = −16). Lire les signes à l'envers donne le tableau inversé. La réponse avec −2√3 et 2√3 résout x² = 12 au lieu de x² = 4 (3x² = 12 se divise par 3). La réponse « Décroissante sur ]−∞ ; 2], croissante sur [2 ; +∞[ » ne garde que la racine 2 et traite f′ comme celle d'une parabole.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f le produit défini sur ℝ par f(x) = (x² + 2)(x³ − 1). Quelle est sa dérivée f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5x⁴ + 6x² − 2x"
+        },
+        {
+          "id": "b",
+          "text": "6x³"
+        },
+        {
+          "id": "c",
+          "text": "5x⁴ + 6x² + 2x"
+        },
+        {
+          "id": "d",
+          "text": "−x⁴ − 6x² − 2x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec (u × v)′ = u′v + v′u, où u = x² + 2 et v = x³ − 1 : f′(x) = 2x(x³ − 1) + 3x²(x² + 2) = 2x⁴ − 2x + 3x⁴ + 6x² = 5x⁴ + 6x² − 2x ✓ (contrôle en développant : f(x) = x⁵ + 2x³ − x² − 2). La réponse 6x³ multiplie les dérivées : 2x × 3x². La réponse « 5x⁴ + 6x² + 2x » se trompe de signe sur 2x × (−1). La réponse « −x⁴ − 6x² − 2x » soustrait les deux produits : c'est la règle du quotient plaquée sur un produit.",
+      "difficulty": 2
+    }
+  ]
+}

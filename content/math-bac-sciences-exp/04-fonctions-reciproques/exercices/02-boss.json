@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du chemin de retour",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Soit f définie sur [0, +∞[ par f(x) = x + ⁴√x. On admet que f réalise une bijection de [0, +∞[ sur [0, +∞[. Calculer (f⁻¹)′(18).",
+      "options": [
+        {
+          "id": "a",
+          "text": "32"
+        },
+        {
+          "id": "b",
+          "text": "33/32"
+        },
+        {
+          "id": "c",
+          "text": "32/33"
+        },
+        {
+          "id": "d",
+          "text": "8/9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On cherche d'abord a tel que f(a) = 18 : f(16) = 16 + 2 = 18, donc a = 16 (seule solution, f est strictement croissante). Ensuite f′(x) = 1 + 1/(4·⁴√(x³)), donc f′(16) = 1 + 1/(4 × 8) = 33/32, car ⁴√(16³) = 8. D'où (f⁻¹)′(18) = 1/f′(16) = 32/33 ✓. Le résultat 33/32 oublie de prendre l'inverse. Le résultat 32 oublie le terme x de f. Le résultat 8/9 remplace ⁴√(16³) par ⁴√16 = 2, ce qui donne f′(16) = 9/8.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur [0, 1] par f(x) = √(1 − x²), bijection de [0, 1] sur [0, 1]. Que peut-on dire de f⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dérivable à droite en 0 (nombre dérivé 0), non dérivable à gauche en 1"
+        },
+        {
+          "id": "b",
+          "text": "Non dérivable à droite en 0, dérivable à gauche en 1 (nombre dérivé 0)"
+        },
+        {
+          "id": "c",
+          "text": "Dérivable à droite en 0 et dérivable à gauche en 1"
+        },
+        {
+          "id": "d",
+          "text": "Non dérivable à droite en 0 et non dérivable à gauche en 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En x = 0, f′(x) = −x/√(1 − x²) tend vers 0 : C_f a une demi-tangente horizontale en (0 ; 1), donc C_{f⁻¹} a une demi-tangente verticale en (1 ; 0) : f⁻¹ n'est pas dérivable à gauche en 1. En x = 1, f′(x) tend vers −∞ : C_f a une demi-tangente verticale en (1 ; 0), donc C_{f⁻¹} a une demi-tangente horizontale en (0 ; 1) : f⁻¹ est dérivable à droite en 0, de nombre dérivé 0 ✓. La réponse qui échange les deux points ne dérive pas en 0 mais en 1. La réponse « dérivable en 0 et en 1 » oublie la demi-tangente verticale de C_{f⁻¹} en 1. La réponse « non dérivable des deux côtés » oublie que la tangente verticale de C_f donne une tangente horizontale de C_{f⁻¹}, donc un nombre dérivé 0 en 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur [0, π] par f(x) = 1 − 2cos x, bijection de [0, π] sur [−1, 3]. Calculer (f⁻¹)′(0).",
+      "options": [
+        {
+          "id": "a",
+          "text": "−√3/3"
+        },
+        {
+          "id": "b",
+          "text": "√3/3"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "√3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On cherche a tel que 1 − 2cos a = 0 : cos a = 1/2, donc a = π/3 dans [0, π]. Puis f′(x) = 2sin x et f′(π/3) = √3 ≠ 0. D'où (f⁻¹)′(0) = 1/√3 = √3/3 ✓. Le résultat √3 oublie l'inverse. Le résultat 1 utilise f′ = 2cos x, ce qui donne 1/(2 × 1/2). Le résultat −√3/3 dérive 1 − 2cos x en −2sin x : la dérivée de −2cos x est +2sin x.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quel est l'ensemble des solutions de l'équation (3 − ⁴√x)³ = −8 dans [0, +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = ∅"
+        },
+        {
+          "id": "b",
+          "text": "S = {1}"
+        },
+        {
+          "id": "c",
+          "text": "S = {125}"
+        },
+        {
+          "id": "d",
+          "text": "S = {625}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Posons t = 3 − ⁴√x. Comme t ↦ t³ est strictement croissante sur ℝ, t³ = −8 équivaut à t = −2. Donc ⁴√x = 5 et x = 5⁴ = 625 ✓ (vérification : 3 − 5 = −2 et (−2)³ = −8). L'ensemble vide est l'erreur de celui qui pense qu'un cube négatif n'a pas de solution. La valeur 1 résout (3 − ⁴√x) = 2 en oubliant le signe de −8. La valeur 125 élève 5 au cube au lieu de la puissance 4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur ]−π/2, π/2[ par f(x) = 3 − 2tan x, bijection de ]−π/2, π/2[ sur ℝ. Que vaut (f⁻¹)′(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "−1/2"
+        },
+        {
+          "id": "c",
+          "text": "−1/4"
+        },
+        {
+          "id": "d",
+          "text": "1/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On cherche a tel que 3 − 2tan a = 1 : tan a = 1, donc a = π/4. Puis f′(x) = −2(1 + tan²x), donc f′(π/4) = −4. D'où (f⁻¹)′(1) = −1/4 ✓. Le résultat −4 oublie l'inverse. Le résultat −1/2 prend tan′ = 1 au lieu de 1 + tan², ce qui donne f′ = −2. Le résultat 1/4 perd le signe de la dérivée de −2tan x.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On définit la suite (uₙ) par u₀ = 0 et uₙ₊₁ = ∛(uₙ + 6). On admet qu'elle converge. Quelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "∛6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La fonction x ↦ ∛(x + 6) est continue, donc la limite ℓ vérifie ℓ = ∛(ℓ + 6), soit ℓ³ = ℓ + 6, c'est-à-dire ℓ³ − ℓ − 6 = 0. Or ℓ³ − ℓ − 6 = (ℓ − 2)(ℓ² + 2ℓ + 3) et le second facteur n'a pas de racine réelle (discriminant 4 − 12 < 0) : ℓ = 2 ✓. La valeur 0 est le premier terme u₀. La valeur 6 est la constante de la récurrence. La valeur ∛6 ≈ 1,82 est u₁, pas la limite.",
+      "difficulty": 3
+    }
+  ]
+}
