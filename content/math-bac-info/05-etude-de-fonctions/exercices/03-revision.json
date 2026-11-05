@@ -1,5 +1,5 @@
 {
-  "title": "⭐⭐ Révision (type examen) : Les neuf étapes du portrait",
+  "title": "⭐⭐ Révision (type examen) : Les huit étapes du portrait",
   "difficulty": 2,
   "mode": "practice",
   "xpReward": 75,
@@ -55,27 +55,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Soit f(x) = x − 3 + 5/(x + 2). Quel est le centre de symétrie de la courbe de f ?",
+      "prompt": "Soit f(x) = 1 + 1/(x − 1) + 1/(x − 3), définie sur ℝ ∖ {1 ; 3}. Sa courbe admet un centre de symétrie. Lequel ?",
       "options": [
         {
           "id": "a",
-          "text": "(−2 ; −5)"
+          "text": "(4 ; 2)"
         },
         {
           "id": "b",
-          "text": "(−2 ; −3)"
+          "text": "(2 ; 0)"
         },
         {
           "id": "c",
-          "text": "(−2 ; 5)"
+          "text": "(2 ; 2)"
         },
         {
           "id": "d",
-          "text": "(2 ; −1)"
+          "text": "(2 ; 1)"
         }
       ],
-      "correctOption": "a",
-      "explanation": "L'asymptote verticale est x = −2 et l'asymptote oblique y = x − 3. Elles se coupent au point d'abscisse −2 et d'ordonnée −2 − 3 = −5 : I(−2 ; −5) est centre de symétrie, car f(−2 + X) + 5 = X + 5/X est impaire en X. L'ordonnée −3 est le terme constant b de l'écriture, qui est l'ordonnée à l'origine de la droite et non celle de l'intersection ; (2 ; −1) se trompe sur le signe de la valeur interdite.",
+      "correctOption": "d",
+      "explanation": "Le candidat a est le milieu des valeurs interdites 1 et 3, soit 2 ; si x ∈ D, 4 − x ∈ D. Puis f(4 − x) = 1 + 1/(3 − x) + 1/(1 − x) = 1 − 1/(x − 3) − 1/(x − 1), donc f(4 − x) + f(x) = 2 = 2b : b = 1 et le centre est (2 ; 1). Le point (2 ; 2) prend 2b pour b ; (2 ; 0) oublie la constante 1 ; (4 ; 2) lit 2a et 2b au lieu de a et b.",
       "difficulty": 2
     },
     {
@@ -83,22 +83,22 @@
       "options": [
         {
           "id": "a",
-          "text": "au-dessous sur ℝ ∖ {−1 ; 1}"
+          "text": "au-dessous pour |x| > 1 et au-dessus pour |x| < 1"
         },
         {
           "id": "b",
-          "text": "au-dessus sur ℝ ∖ {−1 ; 1}"
-        },
-        {
-          "id": "c",
           "text": "au-dessus pour |x| > 1 et au-dessous pour |x| < 1"
         },
         {
+          "id": "c",
+          "text": "au-dessus sur ℝ ∖ {−1 ; 1}"
+        },
+        {
           "id": "d",
-          "text": "au-dessous pour |x| > 1 et au-dessus pour |x| < 1"
+          "text": "au-dessous sur ℝ ∖ {−1 ; 1}"
         }
       ],
-      "correctOption": "d",
+      "correctOption": "a",
       "explanation": "m(x) − 1 = (x² − 3 − (x² − 1))/(x² − 1) = −2/(x² − 1). Pour |x| > 1, x² − 1 > 0 donc la différence est négative : la courbe est au-dessous de y = 1. Pour |x| < 1, x² − 1 < 0 et la différence est positive : la courbe est au-dessus. Le signe change aux valeurs interdites ±1, donc la position n'est pas la même partout.",
       "difficulty": 2
     },
@@ -107,23 +107,23 @@
       "options": [
         {
           "id": "a",
-          "text": "au-dessus de D"
+          "text": "au-dessous de D pour x > 2 et au-dessus pour x < 2"
         },
         {
           "id": "b",
-          "text": "au-dessous de D"
+          "text": "au-dessus de D pour x > 2 et au-dessous pour x < 2"
         },
         {
           "id": "c",
-          "text": "elle coupe D en x = 2"
+          "text": "au-dessous de D"
         },
         {
           "id": "d",
-          "text": "elle est confondue avec D pour x ≥ 2"
+          "text": "au-dessus de D"
         }
       ],
-      "correctOption": "a",
-      "explanation": "x² − 4x + 13 = (x − 2)² + 9, donc f(x)² = (x − 2)² + 9 > (x − 2)². Ainsi f(x) > |x − 2| ≥ x − 2 : la courbe est strictement au-dessus de D, avec un écart qui tend vers 0 mais ne s'annule jamais (9/(f(x) + x − 2) > 0). Comme γ = 9 est positif, elle est au-dessus ; elle ne coupe donc pas D.",
+      "correctOption": "d",
+      "explanation": "x² − 4x + 13 = (x − 2)² + 9, donc f(x)² = (x − 2)² + 9 > (x − 2)². Ainsi f(x) > |x − 2| ≥ x − 2 : la courbe est strictement au-dessus de D, avec un écart qui tend vers 0 mais ne s'annule jamais (9/(f(x) + x − 2) > 0). Les réponses qui changent de côté en 2 appliquent la règle des fractions c/(x − x₀) : ici l'écart 9/(f(x) + x − 2) a un dénominateur toujours positif, car f(x) > |x − 2|.",
       "difficulty": 2
     },
     {
@@ -131,22 +131,22 @@
       "options": [
         {
           "id": "a",
-          "text": "2,5"
+          "text": "5,25"
         },
         {
           "id": "b",
-          "text": "3,625"
-        },
-        {
-          "id": "c",
           "text": "5,125"
         },
         {
+          "id": "c",
+          "text": "3,625"
+        },
+        {
           "id": "d",
-          "text": "5,25"
+          "text": "2,5"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "c",
       "explanation": "x₀ = 1, y₀ = 2. y₁ = 2 + 0,5 × f′(1) = 2 + 0,5 × 1 = 2,5 (x₁ = 1,5). y₂ = 2,5 + 0,5 × f′(1,5) = 2,5 + 0,5 × 2,25 = 3,625 (x₂ = 2). La valeur 2,5 n'est que le premier pas ; 5,125 utilise la pente d'arrivée à chaque pas (2 + 0,5 × 2,25 = 3,125, puis 3,125 + 0,5 × 4) ; 5,25 oublie le facteur h (2 + 1 = 3, puis 3 + 2,25).",
       "difficulty": 2
     }

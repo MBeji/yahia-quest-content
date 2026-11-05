@@ -87,7 +87,7 @@
         },
         {
           "id": "b",
-          "text": "(x − 1)³"
+          "text": "x² − 6x + 5"
         },
         {
           "id": "c",
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "f(1) = 4 et f′(x) = 2x − 4, donc f′(1) = −2 : T : y = −2(x − 1) + 4 = −2x + 6. L'écart est f(x) − T(x) = x² − 4x + 7 + 2x − 6 = x² − 2x + 1 = (x − 1)². Il est positif ou nul : la courbe est au-dessus de T et la touche seulement en 1. L'expression (x − 1)³ est celle d'un écart qui change de signe, ce qui n'est pas le cas ici ; x² − 2x oublie le +1 ; −(x − 1)² se trompe de sens de soustraction.",
+      "explanation": "f(1) = 4 et f′(x) = 2x − 4, donc f′(1) = −2 : T : y = −2(x − 1) + 4 = −2x + 6. L'écart est f(x) − T(x) = x² − 4x + 7 + 2x − 6 = x² − 2x + 1 = (x − 1)². Il est positif ou nul : la courbe est au-dessus de T et la touche seulement en 1. L'expression x² − 6x + 5 vient d'une tangente de pente +2 au lieu de −2 (erreur de signe sur f′(1)) ; x² − 2x oublie le +1 ; −(x − 1)² se trompe de sens de soustraction.",
       "difficulty": 2
     },
     {
@@ -131,7 +131,7 @@
       "options": [
         {
           "id": "a",
-          "text": "croissante sur ℝ"
+          "text": "croissante sur ]−∞ ; 2], décroissante sur [2 ; +∞["
         },
         {
           "id": "b",
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "x² + 4x + 20 = (x + 2)² + 16 > 0 : f est définie et dérivable sur ℝ, et f′(x) = (x + 2)/√(x² + 4x + 20) a le signe de x + 2. Elle décroît donc sur ]−∞ ; −2] et croît sur [−2 ; +∞[, avec le minimum f(−2) = 4. L'axe est x = −b/(2a) = −2 et non 2 ; inverser les sens ferait de −2 un maximum, ce qui est faux puisque f tend vers +∞ des deux côtés.",
+      "explanation": "x² + 4x + 20 = (x + 2)² + 16 > 0 : f est définie et dérivable sur ℝ, et f′(x) = (x + 2)/√(x² + 4x + 20) a le signe de x + 2. Elle décroît donc sur ]−∞ ; −2] et croît sur [−2 ; +∞[, avec le minimum f(−2) = 4. L'axe est x = −b/(2a) = −2 et non 2 ; les options qui inversent les sens ou placent un maximum en 2 sont fausses puisque f tend vers +∞ des deux côtés.",
       "difficulty": 2
     }
   ]

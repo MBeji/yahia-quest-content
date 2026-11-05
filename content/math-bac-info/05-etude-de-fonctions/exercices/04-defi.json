@@ -11,22 +11,22 @@
       "options": [
         {
           "id": "a",
-          "text": "7"
+          "text": "−7"
         },
         {
           "id": "b",
-          "text": "3"
-        },
-        {
-          "id": "c",
           "text": "−3"
         },
         {
+          "id": "c",
+          "text": "3"
+        },
+        {
           "id": "d",
-          "text": "−7"
+          "text": "7"
         }
       ],
-      "correctOption": "c",
+      "correctOption": "b",
       "explanation": "Par périodicité, f(−5) = f(−5 + 4) = f(−1). Par imparité, f(−1) = −f(1) = −3. Si l'on oublie l'imparité, on trouve f(1) = 3 ; si l'on suppose f paire, f(−5) = f(5) = f(1) = 3 aussi ; 7 = 3 + 4 et −7 = −3 − 4 ajoutent la période à la valeur au lieu de l'ajouter à la variable.",
       "difficulty": 2
     },
@@ -35,35 +35,35 @@
       "options": [
         {
           "id": "a",
-          "text": "y = x − 1"
+          "text": "y = x + 3"
         },
         {
           "id": "b",
-          "text": "y = x + 1"
-        },
-        {
-          "id": "c",
           "text": "y = x + 2"
         },
         {
+          "id": "c",
+          "text": "y = x + 1"
+        },
+        {
           "id": "d",
-          "text": "y = 2x + 1"
+          "text": "y = x − 1"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Les trois points donnent b − c = −1, 2a + b + c = 5 et 3a + b + c/2 = 5. De la première, b = c − 1 ; la deuxième devient a + c = 3, la troisième 2a + c = 4. Donc a = 1, c = 2, b = 1, et f(x) = x + 1 + 2/(x − 1) : l'asymptote oblique est y = x + 1. Contrôle : f(3) = 3 + 1 + 1 = 5. La droite y = x + 2 confond b et c, y = x − 1 lit b − c, et y = 2x + 1 échange a et c − 1.",
-      "difficulty": 2
+      "correctOption": "c",
+      "explanation": "Les trois points donnent b − c = −1, 2a + b + c = 5 et 3a + b + c/2 = 5. De la première, b = c − 1 ; la deuxième devient a + c = 3, la troisième 2a + c = 4. Donc a = 1, c = 2, b = 1, et f(x) = x + 1 + 2/(x − 1) : l'asymptote oblique est y = x + 1. Contrôle : f(3) = 3 + 1 + 1 = 5. La droite y = x + 2 confond b et c, y = x − 1 lit b − c, et y = x + 3 prend pour b la somme a + c = 3 obtenue en cours de calcul.",
+      "difficulty": 3
     },
     {
       "prompt": "Soit g(x) = √(x² − 8x + 12) et C sa courbe. Une seule de ces affirmations est vraie. Laquelle ?",
       "options": [
         {
           "id": "a",
-          "text": "y = −x + 4 est asymptote en +∞ et C est au-dessous de cette droite"
+          "text": "y = x − 4 est asymptote en +∞ et C est au-dessus de cette droite"
         },
         {
           "id": "b",
-          "text": "y = x − 4 est asymptote en −∞ et C est au-dessous de cette droite"
+          "text": "y = −x − 4 est asymptote en −∞ et C est au-dessous de cette droite"
         },
         {
           "id": "c",
@@ -75,31 +75,31 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "x² − 8x + 12 = (x − 4)² − 4 : β = −4 et γ = −4 < 0. En −∞, g(x) ressemble à |x − 4| = −(x − 4), donc l'asymptote est y = −x + 4 ; comme γ < 0, g(x) < |x − 4| et la courbe est au-dessous de cette droite. En +∞, l'asymptote est y = x − 4 (et non y = −x + 4), et en −∞ ce n'est pas y = x − 4. L'affirmation avec « au-dessus » se trompe sur le signe de γ.",
+      "explanation": "x² − 8x + 12 = (x − 4)² − 4 : β = −4 et γ = −4 < 0. En −∞, g(x) ressemble à |x − 4| = −(x − 4), donc l'asymptote est y = −x + 4 ; comme γ < 0, g(x) < |x − 4| et la courbe est au-dessous de cette droite. En +∞, l'asymptote est bien y = x − 4, mais la courbe est au-dessous (γ < 0) ; en −∞, y = −x − 4 oublie le bon signe du décalage ; l'affirmation « au-dessus » en −∞ se trompe sur le signe de γ.",
       "difficulty": 3
     },
     {
-      "prompt": "Un rectangle est inscrit dans un demi-disque de centre O et de rayon 5, comme sur la figure (0 < x < 5). Son aire est A(x) = 2x√(25 − x²), et l'on admet que A′(x) = (50 − 4x²)/√(25 − x²). Pour quelle valeur de x l'aire est-elle maximale ?\n<svg viewBox=\"0 0 300 230\"><title>Demi-disque de centre O et de rayon 5, avec un rectangle inscrit de sommets (−x ; 0), (x ; 0), (x ; y) et (−x ; y)</title><line x1=\"10\" y1=\"187.2\" x2=\"290\" y2=\"187.2\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150\" y1=\"206\" x2=\"150\" y2=\"6\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"290,187.2 283,183.8 283,190.8\" fill=\"#0f172a\"/><polygon points=\"150,6 146.5,13 153.5,13\" fill=\"#0f172a\"/><text x=\"286\" y=\"180.2\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><text x=\"158\" y=\"14\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">y</text><line x1=\"29.3\" y1=\"184.2\" x2=\"29.3\" y2=\"190.2\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"29.3\" y=\"202.2\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−5</text><line x1=\"270.7\" y1=\"184.2\" x2=\"270.7\" y2=\"190.2\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"270.7\" y=\"202.2\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><polyline points=\"29.3,187.2 31.3,158.8 33.3,147.2 35.3,138.5 37.4,131.2 39.4,124.8 41.4,119.1 43.4,114 45.4,109.3 47.4,104.9 49.4,100.9 51.4,97.1 53.4,93.5 55.5,90.1 57.5,86.9 59.5,83.9 61.5,81 63.5,78.3 65.5,75.7 67.5,73.2 69.5,70.8 71.6,68.5 73.6,66.3 75.6,64.2 77.6,62.2 79.6,60.3 81.6,58.5 83.6,56.8 85.6,55.1 87.6,53.5 89.7,51.9 91.7,50.5 93.7,49.1 95.7,47.7 97.7,46.4 99.7,45.2 101.7,44 103.7,42.9 105.7,41.9 107.8,40.9 109.8,39.9 111.8,39 113.8,38.2 115.8,37.4 117.8,36.7 119.8,36 121.8,35.3 123.9,34.7 125.9,34.2 127.9,33.6 129.9,33.2 131.9,32.8 133.9,32.4 135.9,32.1 137.9,31.8 139.9,31.5 142,31.3 144,31.2 146,31.1 148,31 150,31 152,31 154,31.1 156,31.2 158,31.3 160.1,31.5 162.1,31.8 164.1,32.1 166.1,32.4 168.1,32.8 170.1,33.2 172.1,33.6 174.1,34.2 176.1,34.7 178.2,35.3 180.2,36 182.2,36.7 184.2,37.4 186.2,38.2 188.2,39 190.2,39.9 192.2,40.9 194.3,41.9 196.3,42.9 198.3,44 200.3,45.2 202.3,46.4 204.3,47.7 206.3,49.1 208.3,50.5 210.3,51.9 212.4,53.5 214.4,55.1 216.4,56.8 218.4,58.5 220.4,60.3 222.4,62.2 224.4,64.2 226.4,66.3 228.4,68.5 230.5,70.8 232.5,73.2 234.5,75.7 236.5,78.3 238.5,81 240.5,83.9 242.5,86.9 244.5,90.1 246.6,93.5 248.6,97.1 250.6,100.9 252.6,104.9 254.6,109.3 256.6,114 258.6,119.1 260.6,124.8 262.6,131.2 264.7,138.5 266.7,147.2 268.7,158.8 270.7,187.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"77.6\" y1=\"187.2\" x2=\"77.6\" y2=\"62.2\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><line x1=\"222.4\" y1=\"187.2\" x2=\"222.4\" y2=\"62.2\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><line x1=\"77.6\" y1=\"62.2\" x2=\"222.4\" y2=\"62.2\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><circle cx=\"222.4\" cy=\"62.2\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"77.6\" cy=\"62.2\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"222.4\" y=\"202.2\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><text x=\"77.6\" y=\"202.2\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−x</text><text x=\"159\" y=\"201.2\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">O</text></svg>",
+      "prompt": "Un rectangle est inscrit dans un demi-disque de centre O et de rayon 5, comme sur la figure (0 < x < 5). Son aire est A(x) = 2x√(25 − x²). Quelle est l'aire maximale du rectangle ?\n<svg viewBox=\"0 0 300 190\"><title>Demi-disque de centre O et de rayon 5, avec un rectangle inscrit de sommets (−x ; 0), (x ; 0), (x ; y) et (−x ; y)</title><line x1=\"10\" y1=\"146\" x2=\"290\" y2=\"146\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150\" y1=\"160.5\" x2=\"150\" y2=\"6\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"290,146 283,142.5 283,149.5\" fill=\"#0f172a\"/><polygon points=\"150,6 146.5,13 153.5,13\" fill=\"#0f172a\"/><text x=\"286\" y=\"139\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><text x=\"158\" y=\"14\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">y</text><line x1=\"29.3\" y1=\"143\" x2=\"29.3\" y2=\"149\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"29.3\" y=\"161\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−5</text><line x1=\"270.7\" y1=\"143\" x2=\"270.7\" y2=\"149\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"270.7\" y=\"161\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><polyline points=\"29.3,146 31.3,124.1 33.3,115.1 35.3,108.3 37.4,102.7 39.4,97.8 41.4,93.4 43.4,89.4 45.4,85.8 47.4,82.4 49.4,79.3 51.4,76.4 53.4,73.6 55.5,71 57.5,68.5 59.5,66.2 61.5,64 63.5,61.8 65.5,59.8 67.5,57.9 69.5,56 71.6,54.3 73.6,52.6 75.6,51 77.6,49.5 79.6,48 81.6,46.6 83.6,45.2 85.6,43.9 87.6,42.7 89.7,41.5 91.7,40.3 93.7,39.3 95.7,38.2 97.7,37.2 99.7,36.3 101.7,35.4 103.7,34.5 105.7,33.7 107.8,32.9 109.8,32.2 111.8,31.5 113.8,30.9 115.8,30.3 117.8,29.7 119.8,29.1 121.8,28.6 123.9,28.2 125.9,27.8 127.9,27.4 129.9,27 131.9,26.7 133.9,26.4 135.9,26.1 137.9,25.9 139.9,25.7 142,25.6 144,25.5 146,25.4 148,25.3 150,25.3 152,25.3 154,25.4 156,25.5 158,25.6 160.1,25.7 162.1,25.9 164.1,26.1 166.1,26.4 168.1,26.7 170.1,27 172.1,27.4 174.1,27.8 176.1,28.2 178.2,28.6 180.2,29.1 182.2,29.7 184.2,30.3 186.2,30.9 188.2,31.5 190.2,32.2 192.2,32.9 194.3,33.7 196.3,34.5 198.3,35.4 200.3,36.3 202.3,37.2 204.3,38.2 206.3,39.3 208.3,40.3 210.3,41.5 212.4,42.7 214.4,43.9 216.4,45.2 218.4,46.6 220.4,48 222.4,49.5 224.4,51 226.4,52.6 228.4,54.3 230.5,56 232.5,57.9 234.5,59.8 236.5,61.8 238.5,64 240.5,66.2 242.5,68.5 244.5,71 246.6,73.6 248.6,76.4 250.6,79.3 252.6,82.4 254.6,85.8 256.6,89.4 258.6,93.4 260.6,97.8 262.6,102.7 264.7,108.3 266.7,115.1 268.7,124.1 270.7,146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"77.6\" y1=\"146\" x2=\"77.6\" y2=\"49.5\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><line x1=\"222.4\" y1=\"146\" x2=\"222.4\" y2=\"49.5\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><line x1=\"77.6\" y1=\"49.5\" x2=\"222.4\" y2=\"49.5\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><circle cx=\"222.4\" cy=\"49.5\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"77.6\" cy=\"49.5\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"222.4\" y=\"161\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><text x=\"77.6\" y=\"161\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−x</text><text x=\"159\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">O</text></svg>",
       "options": [
         {
           "id": "a",
-          "text": "5"
+          "text": "25√3/2"
         },
         {
           "id": "b",
-          "text": "5√3/2"
+          "text": "25"
         },
         {
           "id": "c",
-          "text": "5√2/2"
+          "text": "25π/2"
         },
         {
           "id": "d",
-          "text": "5/2"
+          "text": "50"
         }
       ],
-      "correctOption": "c",
-      "explanation": "A′(x) a le signe de 50 − 4x², positif tant que x² < 12,5 et négatif ensuite : A croît puis décroît, avec un maximum en x = √12,5 = 5√2/2 ≈ 3,54. L'aire vaut alors 2 × (5√2/2) × (5/√2) = 25. La valeur 5/2 est la moitié du rayon, que l'intuition propose, mais A′(5/2) > 0 : l'aire croît encore ; 5√3/2 ≈ 4,33 donne A′ < 0 ; en x = 5 l'aire est nulle.",
+      "correctOption": "b",
+      "explanation": "A′(x) = 2√(25 − x²) − 2x²/√(25 − x²) = (50 − 4x²)/√(25 − x²), du signe de 50 − 4x² : A croît puis décroît, avec un maximum en x = 5√2/2. Alors √(25 − x²) = 5√2/2 et A = 2 × (5√2/2)² = 25. La valeur 25√3/2 est l'aire pour x = 5/2, la moitié du rayon que l'intuition propose ; 25π/2 est l'aire du demi-disque entier ; 50 = 2 × 5² est l'aire d'un rectangle 10 × 5, qui déborde du demi-disque.",
       "difficulty": 3
     },
     {
@@ -107,47 +107,47 @@
       "options": [
         {
           "id": "a",
-          "text": "(y² + 1)/(2y)"
+          "text": "1/(y + √(y² + 1))"
         },
         {
           "id": "b",
+          "text": "(1 − y²)/(2y)"
+        },
+        {
+          "id": "c",
           "text": "(y² − 1)/(2y)"
         },
         {
-          "id": "c",
-          "text": "(y² − 1)/y"
-        },
-        {
           "id": "d",
-          "text": "y − √(y² + 1)"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "On résout y = x + √(x² + 1) en x : √(x² + 1) = y − x, puis x² + 1 = y² − 2xy + x², d'où 2xy = y² − 1 et x = (y² − 1)/(2y). Contrôle : pour y = 3, x = 8/6 = 4/3 et f(4/3) = 4/3 + 5/3 = 3. L'expression (y² + 1)/(2y) est la réciproque de x + √(x² − 1) ; (y² − 1)/y oublie le 2 ; y − √(y² + 1) échange simplement x et y, ce qui ne résout pas l'équation.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Un programme part de x = 1 et y = 0, puis répète deux fois de suite : y ← y + 0,5/x, puis x ← x + 0,5. Que vaut y à la fin ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "1/2"
-        },
-        {
-          "id": "b",
-          "text": "7/12"
-        },
-        {
-          "id": "c",
-          "text": "5/6"
-        },
-        {
-          "id": "d",
-          "text": "1"
+          "text": "(y² + 1)/(2y)"
         }
       ],
       "correctOption": "c",
-      "explanation": "Premier tour : y = 0 + 0,5/1 = 0,5, puis x = 1,5. Second tour : y = 0,5 + 0,5/1,5 = 0,5 + 1/3 = 5/6, puis x = 2. Ce programme est la méthode d'Euler de pas 0,5 pour f′(x) = 1/x : la pente utilisée est celle du point de départ du tour. La valeur 1/2 est celle d'un seul tour ; 7/12 s'obtient en mettant x à jour avant y (1/3 puis 1/3 + 0,5/2) ; 1 oublie de mettre x à jour (0,5 + 0,5).",
+      "explanation": "On résout y = x + √(x² + 1) en x : √(x² + 1) = y − x, puis x² + 1 = y² − 2xy + x², d'où 2xy = y² − 1 et x = (y² − 1)/(2y). Contrôle : pour y = 3, x = 8/6 = 4/3 et f(4/3) = 4/3 + 5/3 = 3. L'expression (y² + 1)/(2y) est la réciproque de x + √(x² − 1) ; (1 − y²)/(2y) vient d'une erreur de signe en isolant 2xy ; 1/(y + √(y² + 1)) confond la réciproque f⁻¹ avec l'inverse 1/f.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un tableur, la colonne A contient les abscisses (A3 = 1), la colonne B les pentes f′(x) = 1/x, et la colonne D les valeurs approchées de f (D3 = 0) avec le pas h = 0,01. On écrit une formule en D4, puis on la recopie vers le bas. Laquelle applique correctement la méthode d'Euler ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "= D3 + B3*0,01"
+        },
+        {
+          "id": "b",
+          "text": "= D3 + B4*0,01"
+        },
+        {
+          "id": "c",
+          "text": "= D3 + B3"
+        },
+        {
+          "id": "d",
+          "text": "= D4 + B3*0,01"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque pas suit la tangente au point de départ : D4 = D3 + f′(x₃) × h, soit la valeur précédente D3 plus la pente de la ligne précédente, B3, multipliée par le pas 0,01. La formule avec B4 prend la pente d'arrivée ; celle sans le pas ajoute la pente entière au lieu de la pente fois h ; celle qui utilise D4 dans D4 se référence elle-même, ce qui est impossible.",
       "difficulty": 3
     }
   ]

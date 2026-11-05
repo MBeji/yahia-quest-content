@@ -26,51 +26,51 @@
       "difficulty": 1
     },
     {
-      "prompt": "Soit f(x) = (x² − 8x + 20)/(x² − 8x + 12), définie sur ℝ ∖ {2 ; 6}. La courbe de f est symétrique par rapport à la droite d'équation :",
+      "prompt": "Soit f(x) = (x² − 10x + 26)/(x² − 10x + 21), définie sur ℝ ∖ {3 ; 7}. La courbe de f est symétrique par rapport à la droite d'équation :",
       "options": [
         {
           "id": "a",
-          "text": "x = 12"
+          "text": "x = −5"
         },
         {
           "id": "b",
-          "text": "x = 8"
+          "text": "x = 3"
         },
         {
           "id": "c",
-          "text": "x = 4"
+          "text": "x = 5"
         },
         {
           "id": "d",
-          "text": "x = 0"
+          "text": "x = 10"
         }
       ],
       "correctOption": "c",
-      "explanation": "Les valeurs interdites 2 et 6 ont pour milieu 4. On le vérifie : 8 − x reste dans le domaine et (8 − x)² − 8(8 − x) = x² − 8x, donc f(8 − x) = f(x) et l'axe est x = 4. La droite x = 8 est la somme des valeurs interdites, x = 12 est le terme constant du dénominateur, et x = 0 serait l'axe des ordonnées, ce que f(−x) = (x² + 8x + 20)/(x² + 8x + 12) ≠ f(x) exclut.",
+      "explanation": "Les valeurs interdites 3 et 7 ont pour milieu 5. On le vérifie : 10 − x reste dans le domaine et (10 − x)² − 10(10 − x) = x² − 10x, donc f(10 − x) = f(x) : l'axe est x = 5. La droite x = 10 est la somme des valeurs interdites, c'est 2a et non a ; x = −5 se trompe de signe dans −b/(2a) ; x = 3 est une asymptote verticale (le numérateur vaut 5 ≠ 0 en 3), pas l'axe.",
       "difficulty": 1
     },
     {
-      "prompt": "Quelles sont les asymptotes de la courbe de h(x) = (x² − 3)/(x² − 9) ?",
+      "prompt": "La droite x = 5 est axe de symétrie de la courbe d'une fonction f définie sur ℝ ∖ {3 ; 7}. Quel est le domaine d'étude que donne cette symétrie ?",
       "options": [
         {
           "id": "a",
-          "text": "x = 3 et x = −3 seulement"
+          "text": "[5 ; 7[ ∪ ]7 ; +∞["
         },
         {
           "id": "b",
-          "text": "x = 3, x = −3 et y = 1"
+          "text": "]7 ; +∞["
         },
         {
           "id": "c",
-          "text": "x = 3, x = −3 et y = 0"
+          "text": "[0 ; 3[ ∪ ]3 ; +∞["
         },
         {
           "id": "d",
-          "text": "y = 1 seulement"
+          "text": "[5 ; +∞["
         }
       ],
-      "correctOption": "b",
-      "explanation": "On écrit h(x) = 1 + 6/(x² − 9), car (x² − 9) + 6 = x² − 3. En ±∞, 6/(x² − 9) tend vers 0, donc y = 1 est asymptote horizontale. En 3 et en −3, x² − 9 tend vers 0 et h tend vers l'infini : x = 3 et x = −3 sont asymptotes verticales. La droite y = 0 serait la limite de 6/(x² − 9) seule, sans le 1.",
+      "correctOption": "a",
+      "explanation": "Avec l'axe x = 5, on étudie f sur D ∩ [5 ; +∞[ = [5 ; 7[ ∪ ]7 ; +∞[, puis on complète la courbe par symétrie. L'intervalle ]7 ; +∞[ oublie la partie [5 ; 7[, que la symétrie n'envoie pas sur ]7 ; +∞[ ; [5 ; +∞[ garde la valeur interdite 7 ; [0 ; 3[ ∪ ]3 ; +∞[ applique la réduction de la parité (axe x = 0) au lieu de celle de l'axe x = 5.",
       "difficulty": 1
     },
     {
@@ -78,71 +78,71 @@
       "options": [
         {
           "id": "a",
-          "text": "[−2 ; 6]"
+          "text": "]−∞ ; −6] ∪ [2 ; +∞["
         },
         {
           "id": "b",
-          "text": "]−∞ ; −2] ∪ [6 ; +∞["
-        },
-        {
-          "id": "c",
           "text": "[−6 ; 2]"
         },
         {
-          "id": "d",
-          "text": "ℝ"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "−x² + 4x + 12 = −(x − 6)(x + 2). Comme le coefficient de x² est négatif, le trinôme est positif entre ses racines −2 et 6 : D = [−2 ; 6]. Les intervalles extérieurs seraient ceux d'un coefficient positif ; [−6 ; 2] oublie le changement de signe des racines (6 et −2 deviennent −6 et 2), et ℝ ignore que le radicande devient négatif, par exemple en x = 7 où il vaut −9.",
-      "difficulty": 1
-    },
-    {
-      "prompt": "On écrit f(x) = (3x² + x − 5)/(x − 2) sous la forme ax + b + c/(x − 2). Que vaut c ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "−5"
-        },
-        {
-          "id": "b",
-          "text": "3"
-        },
-        {
           "id": "c",
-          "text": "7"
+          "text": "]−∞ ; −2] ∪ [6 ; +∞["
         },
         {
           "id": "d",
-          "text": "9"
+          "text": "[−2 ; 6]"
         }
       ],
       "correctOption": "d",
-      "explanation": "(ax + b)(x − 2) + c = ax² + (b − 2a)x + (c − 2b). On identifie avec 3x² + x − 5 : a = 3, b − 6 = 1 donc b = 7, c − 14 = −5 donc c = 9. Ainsi f(x) = 3x + 7 + 9/(x − 2). Contrôle : (3x + 7)(x − 2) + 9 = 3x² + x − 14 + 9 = 3x² + x − 5. La valeur −5 est le terme constant du numérateur, 3 est a, et 7 est b : on ne lit pas c dans le numérateur, on le calcule après a et b.",
-      "difficulty": 2
+      "explanation": "−x² + 4x + 12 = −(x − 6)(x + 2). Comme le coefficient de x² est négatif, le trinôme est positif entre ses racines −2 et 6 : D = [−2 ; 6]. Les intervalles extérieurs seraient ceux d'un coefficient positif ; [−6 ; 2] oublie le changement de signe des racines (6 et −2 deviennent −6 et 2), et ]−∞ ; −6] ∪ [2 ; +∞[ cumule les deux erreurs.",
+      "difficulty": 1
     },
     {
-      "prompt": "La tangente à la courbe de f(x) = 2x³ − 6x au point O(0 ; 0) est T : y = −6x. Par rapport à T, la courbe est :",
+      "prompt": "On écrit f(x) = (2x² + 3x − 4)/(x − 3) sous la forme ax + b + c/(x − 3). Que vaut c ?",
       "options": [
         {
           "id": "a",
-          "text": "au-dessus de T pour x ≠ 0"
+          "text": "−4"
         },
         {
           "id": "b",
-          "text": "au-dessous de T pour x ≠ 0"
+          "text": "2"
         },
         {
           "id": "c",
-          "text": "au-dessous de T pour x < 0 et au-dessus pour x > 0"
+          "text": "9"
         },
         {
           "id": "d",
-          "text": "au-dessus de T pour x < 0 et au-dessous pour x > 0"
+          "text": "23"
         }
       ],
-      "correctOption": "c",
-      "explanation": "L'écart est f(x) − T(x) = 2x³ − 6x + 6x = 2x³. Il est négatif pour x < 0 et positif pour x > 0 : la courbe est au-dessous de T à gauche de O et au-dessus à droite, elle traverse sa tangente et O est un point d'inflexion. Une courbe qui resterait du même côté de T aurait un écart de signe constant, comme x² ou x⁴, ce qui n'est pas le cas de x³.",
+      "correctOption": "d",
+      "explanation": "(ax + b)(x − 3) + c = ax² + (b − 3a)x + (c − 3b). On identifie avec 2x² + 3x − 4 : a = 2, b − 6 = 3 donc b = 9, c − 27 = −4 donc c = 23. Contrôle : (2x + 9)(x − 3) + 23 = 2x² + 3x − 27 + 23 = 2x² + 3x − 4. La valeur −4 est le terme constant du numérateur, 2 est a et 9 est b : on ne lit pas c dans le numérateur, on le calcule après a et b.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La tangente à la courbe de f(x) = −x³ + 3x + 1 au point A(1 ; 3) est la droite horizontale T : y = 3. Au voisinage de A, la courbe de f est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "au-dessus de T, sans la traverser"
+        },
+        {
+          "id": "b",
+          "text": "au-dessous de T, sans la traverser"
+        },
+        {
+          "id": "c",
+          "text": "au-dessous de T avant A, puis au-dessus de T"
+        },
+        {
+          "id": "d",
+          "text": "au-dessus de T avant A, puis au-dessous de T"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(1) = 3 et f′(1) = −3 + 3 = 0. L'écart est f(x) − 3 = −x³ + 3x − 2 = −(x − 1)²(x + 2). Près de 1, (x − 1)² ≥ 0 et x + 2 > 0 : l'écart est négatif des deux côtés et ne s'annule qu'en 1. La courbe est au-dessous de T et la touche en A sans la traverser : A est un maximum local, pas un point d'inflexion. Les réponses « de part et d'autre » prennent un zéro de l'écart pour un changement de signe ; « au-dessus » oublie le signe moins devant (x − 1)².",
       "difficulty": 2
     },
     {
@@ -154,7 +154,7 @@
         },
         {
           "id": "b",
-          "text": "0"
+          "text": "2"
         },
         {
           "id": "c",
@@ -166,31 +166,31 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "x² − 6x + 13 = (x − 3)² + 4 ≥ 4, avec égalité en x = 3 : le minimum de f, égal à √4 = 2, est atteint en x = 3, sur l'axe de symétrie x = −b/(2a). On retrouve cette abscisse avec f′(x) = (x − 3)/√(x² − 6x + 13), qui change de signe en 3. L'abscisse 6 oublie la division par 2a, −3 se trompe de signe, et 0 est l'abscisse où l'on calcule f(0) = √13, qui n'est pas le minimum.",
+      "explanation": "x² − 6x + 13 = (x − 3)² + 4 ≥ 4, avec égalité en x = 3 : le minimum de f, égal à √4 = 2, est atteint en x = 3, sur l'axe de symétrie x = −b/(2a). On retrouve cette abscisse avec f′(x) = (x − 3)/√(x² − 6x + 13), qui change de signe en 3. L'abscisse 6 oublie la division par 2a, −3 se trompe de signe, et 2 est la valeur du minimum, f(3) = 2, pas son abscisse.",
       "difficulty": 2
     },
     {
-      "prompt": "Au voisinage de −∞, la courbe de f(x) = √(x² + 4x + 12) se rapproche de l'une de ces droites. Laquelle ?",
+      "prompt": "La courbe de f(x) = √(x² + 4x + 12) admet une asymptote oblique D en +∞ et une autre D′ en −∞. En quel point D et D′ se coupent-elles ?",
       "options": [
         {
           "id": "a",
-          "text": "y = x + 2"
+          "text": "(−2 ; 0)"
         },
         {
           "id": "b",
-          "text": "y = −x − 2"
+          "text": "(2 ; 0)"
         },
         {
           "id": "c",
-          "text": "y = −x"
+          "text": "(0 ; 2)"
         },
         {
           "id": "d",
-          "text": "y = −x + 2"
+          "text": "(−2 ; 2√2)"
         }
       ],
-      "correctOption": "b",
-      "explanation": "x² + 4x + 12 = (x + 2)² + 8, donc f(x) ressemble à |x + 2|. En −∞, x + 2 < 0 et |x + 2| = −(x + 2) : l'asymptote est y = −x − 2. La droite y = x + 2 est celle de +∞ ; y = −x oublie le décalage ; y = −x + 2 se trompe de signe pour le décalage 2.",
+      "correctOption": "a",
+      "explanation": "x² + 4x + 12 = (x + 2)² + 8 : D : y = x + 2 en +∞ et D′ : y = −x − 2 en −∞. Elles se coupent où x + 2 = −x − 2, soit x = −2 et y = 0 : le point (−2 ; 0), sur l'axe de symétrie x = −2. Le point (2 ; 0) se trompe de signe dans x + 2 ; (0 ; 2) est l'ordonnée à l'origine de D ; (−2 ; 2√2) est le minimum de la courbe, f(−2) = √8, qui est au-dessus du croisement.",
       "difficulty": 2
     }
   ]

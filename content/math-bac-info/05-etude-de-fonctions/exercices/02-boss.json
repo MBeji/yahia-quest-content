@@ -31,76 +31,28 @@
       "difficulty": 2
     },
     {
-      "prompt": "Quelle est la période de la fonction h(x) = sin(3πx − 1) ?",
+      "prompt": "Quelle est la plus petite période strictement positive de la fonction h(x) = 2x − E(2x), où E désigne la partie entière ?",
       "options": [
         {
           "id": "a",
-          "text": "1/3"
+          "text": "h n'est pas périodique"
         },
         {
           "id": "b",
-          "text": "2/3"
+          "text": "2"
         },
         {
           "id": "c",
-          "text": "3/2"
+          "text": "1"
         },
         {
           "id": "d",
-          "text": "2π/3"
-        }
-      ],
-      "correctOption": "b",
-      "explanation": "sin est 2π-périodique et le décalage −1 ne change pas la période : on cherche T tel que 3πT = 2π, soit T = 2/3. Contrôle : h(x + 2/3) = sin(3πx + 2π − 1) = h(x). La valeur 3/2 est l'inverse de la bonne (3π/2π au lieu de 2π/3π) ; 1/3 est la moitié, qui ne convient pas (h(x + 1/3) = sin(3πx + π − 1) = −sin(3πx − 1)) ; 2π/3 oublie le facteur π.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Soit f(x) = 1/(x² + 1). Sa tangente T au point A(1 ; 1/2) a pour équation y = −x/2 + 1. Au voisinage de A, la courbe de f est :",
-      "options": [
-        {
-          "id": "a",
-          "text": "confondue avec T"
-        },
-        {
-          "id": "b",
-          "text": "de part et d'autre de T : elle traverse T en A"
-        },
-        {
-          "id": "c",
-          "text": "au-dessous de T, sans la traverser"
-        },
-        {
-          "id": "d",
-          "text": "au-dessus de T, sans la traverser"
+          "text": "1/2"
         }
       ],
       "correctOption": "d",
-      "explanation": "L'écart est d(x) = 1/(x² + 1) + x/2 − 1 = (2 + x(x² + 1) − 2(x² + 1))/(2(x² + 1)) = (x³ − 2x² + x)/(2(x² + 1)) = x(x − 1)²/(2(x² + 1)). Près de 1, x est positif et (x − 1)² aussi : d(x) ≥ 0 des deux côtés de 1, avec d(1) = 0. La courbe est donc au-dessus de T et la touche en A sans la traverser. Le changement de signe de d a lieu en 0, où T recoupe la courbe au point (0 ; 1), pas en A.",
-      "difficulty": 3
-    },
-    {
-      "prompt": "Parmi ces réels, lequel est une période de f(x) = sin(πx) + cos(πx/2) ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "2π"
-        },
-        {
-          "id": "b",
-          "text": "6"
-        },
-        {
-          "id": "c",
-          "text": "4"
-        },
-        {
-          "id": "d",
-          "text": "2"
-        }
-      ],
-      "correctOption": "c",
-      "explanation": "sin(πx) a pour période 2 et cos(πx/2) a pour période 4 : avec T = 4, sin(πx + 4π) = sin(πx) et cos(πx/2 + 2π) = cos(πx/2), donc f(x + 4) = f(x). Avec T = 2, f(2) = sin 2π + cos π = −1 alors que f(0) = 1 : 2 n'est pas une période, la seconde composante change de signe. De même 6 = 2 + 4 donne cos(πx/2 + 3π) = −cos(πx/2). Et 2π n'est un multiple d'aucune des deux périodes.",
-      "difficulty": 3
+      "explanation": "h(x) = g(2x) avec g(x) = x − E(x), de plus petite période 1. D'après la propriété, x ↦ g(ax) a pour période 1/|a| : ici 1/2. Contrôle : h(x + 1/2) = 2x + 1 − E(2x + 1) = 2x + 1 − E(2x) − 1 = h(x). La valeur 1 est la période de g, sans tenir compte du facteur 2 ; 2 multiplie au lieu de diviser ; et le terme 2x qui grandit n'empêche rien, car E(2x) grandit d'autant.",
+      "difficulty": 2
     },
     {
       "prompt": "La courbe de g(x) = (x² + 3x − 2)/(x² − 1) a pour asymptote horizontale y = 1. En quel point la coupe-t-elle ?",
@@ -124,7 +76,7 @@
       ],
       "correctOption": "b",
       "explanation": "g(x) − 1 = (x² + 3x − 2 − (x² − 1))/(x² − 1) = (3x − 1)/(x² − 1). Cette différence s'annule pour 3x − 1 = 0, soit x = 1/3 : g(1/3) = (1/9 + 1 − 2)/(1/9 − 1) = 1, la courbe coupe y = 1 en A(1/3 ; 1). Une asymptote peut être coupée : elle décrit seulement le comportement en ±∞. L'abscisse −1/3 vient d'une erreur de signe, et 3 d'une inversion dans 3x = 1.",
-      "difficulty": 3
+      "difficulty": 2
     },
     {
       "prompt": "Quel est le maximum de f(x) = √(−4x² + 16x − 7) ?",
@@ -148,6 +100,54 @@
       ],
       "correctOption": "c",
       "explanation": "−4x² + 16x − 7 = −4(x − 2)² + 9. Le radicande est maximal en x = 2 et vaut alors 9, donc le maximum de f est √9 = 3. La valeur 9 est le maximum du radicande, pas de f ; 2 est l'abscisse du maximum ; 9/4 vient d'une division par 4 du radicande au lieu de passer à la racine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = 1/(x² + 1). Sa tangente T au point A(1 ; 1/2) a pour équation y = −x/2 + 1. En quel autre point T recoupe-t-elle la courbe de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; 0)"
+        },
+        {
+          "id": "c",
+          "text": "(−1 ; 3/2)"
+        },
+        {
+          "id": "d",
+          "text": "en aucun autre point"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'écart est d(x) = f(x) − T(x) = 1/(x² + 1) + x/2 − 1 = (2 + x(x² + 1) − 2(x² + 1))/(2(x² + 1)) = x(x − 1)²/(2(x² + 1)). Il s'annule en 1 (le point A, zéro double) et en 0 : T recoupe la courbe en (0 ; 1), car f(0) = 1 = T(0). Les points (2 ; 0) et (−1 ; 3/2) sont sur la droite T (zéro d'ordonnée en 2, T(−1) = 3/2) mais pas sur la courbe : f(2) = 1/5 et f(−1) = 1/2. En 1 le zéro est double : la courbe touche T sans la traverser, d'où l'absence d'autre changement de signe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Parmi ces réels, lequel est une période de f(x) = sin(πx) + cos(πx/2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "2π"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "sin(πx) a pour période 2 et cos(πx/2) a pour période 4 : avec T = 4, sin(πx + 4π) = sin(πx) et cos(πx/2 + 2π) = cos(πx/2), donc f(x + 4) = f(x). Avec T = 2, f(2) = sin 2π + cos π = −1 alors que f(0) = 1 : 2 n'est pas une période, la seconde composante change de signe. De même 6 = 2 + 4 donne cos(πx/2 + 3π) = −cos(πx/2). Et 2π n'est un multiple d'aucune des deux périodes.",
       "difficulty": 3
     }
   ]
