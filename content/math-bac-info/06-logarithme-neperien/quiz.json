@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Logarithme népérien",
+  "questions": [
+    {
+      "prompt": "On sait que ln est strictement croissante sur ]0 ; +∞[ et que ln 1 = 0. Pour quelles valeurs de x a-t-on ln x < 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x < 0"
+        },
+        {
+          "id": "b",
+          "text": "0 < x < 1"
+        },
+        {
+          "id": "c",
+          "text": "0 < x < e"
+        },
+        {
+          "id": "d",
+          "text": "x > 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ln est strictement croissante et ln 1 = 0 : pour x < 1, ln x < ln 1 = 0. Il faut aussi x > 0 pour que ln x existe, d'où 0 < x < 1 ✓. L'intervalle x < 0 confond le signe de x avec celui de ln x (et ln n'existe pas pour x < 0) ; sur 0 < x < e le logarithme est seulement inférieur à 1, il est positif dès que x > 1 ; et x > 1 donne justement ln x > 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle écriture de ln 12 n'utilise que ln 2 et ln 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 ln 2 + ln 3"
+        },
+        {
+          "id": "b",
+          "text": "ln 2 + 2 ln 3"
+        },
+        {
+          "id": "c",
+          "text": "2(ln 2 + ln 3)"
+        },
+        {
+          "id": "d",
+          "text": "2 ln 2 × ln 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "12 = 2² × 3, donc ln 12 = ln 2² + ln 3 = 2 ln 2 + ln 3 ≈ 1,3863 + 1,0986 = 2,4849 ✓. L'écriture ln 2 + 2 ln 3 vaut ln 18, 2(ln 2 + ln 3) vaut ln 36, et un produit de logarithmes ne correspond à rien : c'est le produit des arguments qui devient une somme de logarithmes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est l'unique solution de l'équation ln x = 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln 4"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "4e"
+        },
+        {
+          "id": "d",
+          "text": "e⁴"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ln est une bijection de ]0 ; +∞[ sur ℝ et ln x = n équivaut à x = eⁿ : la solution est x = e⁴ ≈ 54,6 ✓ (ln(e⁴) = 4 ln e = 4). Le nombre ln 4 ≈ 1,39 est le logarithme de 4, pas son antécédent ; 4 est faux car ln 4 ≈ 1,39 ≠ 4 ; et 4e ≈ 10,9 a pour logarithme ln 4 + 1 ≈ 2,39.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est l'ensemble des solutions de l'équation ln(x + 2) + ln x = ln 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−3}"
+        },
+        {
+          "id": "b",
+          "text": "{−3 ; 1}"
+        },
+        {
+          "id": "c",
+          "text": "{1}"
+        },
+        {
+          "id": "d",
+          "text": "{3}"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Conditions : x + 2 > 0 et x > 0, donc x > 0. Alors ln(x + 2) + ln x = ln(x(x + 2)), et l'équation devient x² + 2x = 3, soit (x + 3)(x − 1) = 0. La racine −3 viole x > 0 : S = {1} ✓ (ln 3 + ln 1 = ln 3). Garder −3 oublie les conditions d'existence, et x = 3 donne ln 5 + ln 3 = ln 15 ≠ ln 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour x > 0, on a x − x²/2 ≤ ln(1 + x) ≤ x − x²/2 + x³. Quel encadrement de ln 1,5 en résulte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,375 ≤ ln 1,5 ≤ 0,5"
+        },
+        {
+          "id": "b",
+          "text": "0,125 ≤ ln 1,5 ≤ 0,375"
+        },
+        {
+          "id": "c",
+          "text": "0,25 ≤ ln 1,5 ≤ 0,375"
+        },
+        {
+          "id": "d",
+          "text": "0,5 ≤ ln 1,5 ≤ 0,625"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec x = 0,5 : x − x²/2 = 0,5 − 0,125 = 0,375 et x³ = 0,125, donc 0,375 ≤ ln 1,5 ≤ 0,375 + 0,125 = 0,5 ✓ (ln 1,5 ≈ 0,405). Les autres encadrements viennent d'un oubli : le facteur ½ de x²/2 (0,25), le terme −x²/2 (0,5 et 0,625), ou une borne basse prise égale à x³ ; aucun ne contient ln 1,5 ≈ 0,405.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut lim x→0⁺ x ln x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "−∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C'est un résultat de croissances comparées : en 0⁺, x tend vers 0 plus vite que ln x ne tend vers −∞, et x ln x → 0 ✓. Avec X = 1/x, x ln x = −(ln X)/X qui tend vers 0 quand X → +∞. La réponse −∞ suppose que ln x l'emporte, +∞ ne tient pas compte du signe négatif de ln x près de 0, et 1 est la limite de ln(1 + h)/h, un autre résultat.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = ln(x² + 3). Que vaut f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/(x² + 3)"
+        },
+        {
+          "id": "b",
+          "text": "(x² + 3)/(2x)"
+        },
+        {
+          "id": "c",
+          "text": "2x ln(x² + 3)"
+        },
+        {
+          "id": "d",
+          "text": "2x/(x² + 3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La fonction u(x) = x² + 3 est strictement positive et dérivable sur ℝ, donc (ln u)′ = u′/u, soit f′(x) = 2x/(x² + 3) ✓ (en x = 1, f′(1) = 2/4 = 0,5). Oublier le facteur u′ = 2x donne 1/(x² + 3), inverser la fraction donne (x² + 3)/(2x), et multiplier par ln(x² + 3) mélange avec la dérivée d'un produit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la partie entière de log 4 500 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "4 500 = 4,5 × 10³ avec 1 ≤ 4,5 < 10, donc log 4 500 = log 4,5 + 3 ≈ 0,65 + 3 = 3,65 : la partie entière est 3 ✓. La valeur 4 est le nombre de chiffres de 4 500, c'est-à-dire la partie entière plus 1 ; 2 et 5 ne correspondent à aucune puissance de 10 encadrant 4 500.",
+      "difficulty": 1
+    }
+  ]
+}

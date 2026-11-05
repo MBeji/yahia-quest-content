@@ -1,0 +1,149 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les douze pas de la pente",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "La courbe d'une fonction f dérivable sur ℝ passe par le point A(1 ; 2). Sa tangente en A passe par B(0 ; 3) et par C(3 ; 0). Que vaut f′(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "−1"
+        },
+        {
+          "id": "d",
+          "text": "−3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f′(1) est la pente de la tangente en A, c'est-à-dire de la droite (BC) : (0 − 3)/(3 − 0) = −1. Son équation est y = −x + 3, qui passe bien par A(1 ; 2). Le nombre 2 est f(1), l'ordonnée de A, non une pente ; 1 oublie le signe de la pente ; −3 est la différence des ordonnées, sans division par la différence des abscisses.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la dérivée de f(x) = x²(2x − 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x³ − x²"
+        },
+        {
+          "id": "b",
+          "text": "4x"
+        },
+        {
+          "id": "c",
+          "text": "4x² − 2x"
+        },
+        {
+          "id": "d",
+          "text": "6x² − 2x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec u = x² (u′ = 2x) et v = 2x − 1 (v′ = 2) : f′ = u′v + uv′ = 2x(2x − 1) + x² × 2 = 4x² − 2x + 2x² = 6x² − 2x. Contrôle par développement : f(x) = 2x³ − x², donc f′(x) = 6x² − 2x ✓. La valeur 4x est le produit u′v′, 4x² − 2x oublie le terme uv′, et 2x³ − x² est f(x) lui-même.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Soit f une fonction définie sur un intervalle I, et x₀ un réel de I. Parmi ces affirmations, lesquelles sont vraies ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si f est dérivable en x₀, alors f est continue en x₀"
+        },
+        {
+          "id": "b",
+          "text": "Si f est continue en x₀, alors f est dérivable en x₀"
+        },
+        {
+          "id": "c",
+          "text": "Si f est dérivable à gauche et à droite en x₀, alors f est dérivable en x₀"
+        },
+        {
+          "id": "d",
+          "text": "Si f est dérivable sur I et f′ > 0 sur I, alors f est strictement croissante sur I"
+        },
+        {
+          "id": "e",
+          "text": "Si f est dérivable sur I et strictement croissante sur I, alors f′ > 0 sur I"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Sont vraies : une fonction dérivable en x₀ y est continue (théorème admis), et f′ > 0 sur un intervalle donne la stricte croissance (théorème des accroissements finis). Sont fausses : x ↦ |x| est continue en 0 sans y être dérivable ; dérivable à gauche et à droite ne suffit pas, il faut f′g(x₀) = f′d(x₀) (|x| en 0 a f′g = −1 et f′d = 1) ; x ↦ x³ est strictement croissante avec f′(0) = 0, donc le sens inverse du critère sur le signe de f′ est faux.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un programme approche f′(3) pour f(x) = x² :\nx0 ← 3 ; h ← 1\npour k de 1 à 3 :\np ← (f(x0 + h) − f(x0))/h\nafficher p\nh ← h/2\nQuelle valeur de p est affichée au troisième tour (k = 3) ?",
+      "answerKey": {
+        "value": 6.25
+      },
+      "explanation": "Au tour 1, h = 1 et p = (16 − 9)/1 = 7. Au tour 2, h = 0,5 et p = (3,5² − 9)/0,5 = (12,25 − 9)/0,5 = 6,5. Au tour 3, h = 0,25 et p = (3,25² − 9)/0,25 = (10,5625 − 9)/0,25 = 6,25. Ces valeurs 7, 6,5, 6,25 s'approchent de f′(3) = 6, car le taux vaut 6 + h pour tout h ≠ 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive de f(x) = x(x² − 4)³ sur ℝ est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = (x² − 4)⁴/8"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = (x² − 4)⁴/4"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = x²(x² − 4)⁴/8"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = 6x(x² − 4)²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose u(x) = x² − 4, donc u′(x) = 2x : f = (1/2)u′u³. Une primitive de u′u³ est u⁴/4, donc F(x) = (1/2) × u⁴/4 = (x² − 4)⁴/8. Contrôle : F′(x) = 4 × 2x(x² − 4)³/8 = x(x² − 4)³ ✓. L'expression avec le dénominateur 4 oublie de compenser le facteur 2 de u′, celle avec x² en facteur primitive les deux facteurs séparément, et 6x(x² − 4)² est la dérivée de (x² − 4)³.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = 1/x sur [1 ; 4]. Quel réel c de ]1 ; 4[ vérifie f(4) − f(1) = (4 − 1)f′(c) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "5/2"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f est continue sur [1 ; 4] et dérivable sur ]1 ; 4[. La pente de la corde est (f(4) − f(1))/(4 − 1) = (1/4 − 1)/3 = −1/4. On résout f′(c) = −1/c² = −1/4, donc c² = 4 et c = 2 (la valeur −2 n'est pas dans ]1 ; 4[). Le milieu 5/2 ne convient pas, car c n'est pas le milieu en général, et 4 s'obtient en oubliant d'extraire la racine de c² = 4.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du logarithme",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Pour quels réels x l'expression ln(x² − 3x + 2) existe-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; 1[ ∪ ]2 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "]1 ; 2["
+        },
+        {
+          "id": "c",
+          "text": "]−∞ ; 1] ∪ [2 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "ℝ \\ {1 ; 2}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Il faut x² − 3x + 2 = (x − 1)(x − 2) > 0. Un trinôme de coefficient dominant positif est positif à l'extérieur de ses racines : l'ensemble cherché est ]−∞ ; 1[ ∪ ]2 ; +∞[ ✓ (en x = 0, ln 2 existe ; en x = 1,5, le trinôme vaut −0,25 et ln n'existe pas). L'intervalle ]1 ; 2[ est celui où le trinôme est négatif, les crochets fermés en 1 et 2 donneraient ln 0, et ℝ \\ {1 ; 2} confond « ne s'annule pas » avec « est strictement positif ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelles valeurs de x vérifient (ln x)² = ln x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = e seulement"
+        },
+        {
+          "id": "b",
+          "text": "x = 1 seulement"
+        },
+        {
+          "id": "c",
+          "text": "x = 1 ou x = e"
+        },
+        {
+          "id": "d",
+          "text": "x = 0 ou x = 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'équation équivaut à (ln x)² − ln x = 0, soit ln x (ln x − 1) = 0 : ln x = 0 ou ln x = 1, donc x = 1 ou x = e ✓ (en x = 1 : 0² = 0 ; en x = e : 1² = 1). Diviser les deux membres par ln x ferait perdre la solution x = 1, car ln 1 = 0 ; et « x = 0 ou x = 1 » confond ln x = 1 avec x = 1, alors que ln 0 n'existe même pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour quelles valeurs de x a-t-on ln(x + 3) ≥ 2 ln(x + 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−2 ; 1]"
+        },
+        {
+          "id": "b",
+          "text": "]−1 ; 1["
+        },
+        {
+          "id": "c",
+          "text": "[1 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]−1 ; 1]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Conditions : x + 3 > 0 et x + 1 > 0, donc x > −1. Comme 2 ln(x + 1) = ln (x + 1)², la croissance de ln donne x + 3 ≥ (x + 1)², soit x² + x − 2 ≤ 0, c'est-à-dire (x + 2)(x − 1) ≤ 0, donc −2 ≤ x ≤ 1. On garde ce qui vérifie aussi x > −1 : S = ]−1 ; 1] ✓ (en x = 1, ln 4 = 2 ln 2 : l'égalité est atteinte ; en x = 2, ln 5 < 2 ln 3). L'intervalle [−2 ; 1] oublie les conditions, et ]−1 ; 1[ exclut à tort l'égalité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la limite de ln(x² + 1)/ln x quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x > 0, ln(x² + 1) = ln(x²(1 + 1/x²)) = 2 ln x + ln(1 + 1/x²), donc le quotient vaut 2 + ln(1 + 1/x²)/ln x. Quand x → +∞, ln(1 + 1/x²) → ln 1 = 0 et ln x → +∞ : le second terme tend vers 0 et la limite est 2 ✓ (en x = 1 000, le quotient vaut 13,8155/6,9078 ≈ 2,000). La réponse 1 croit que ln(x² + 1) ≈ ln x, et +∞ oublie que les deux logarithmes croissent de la même façon.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Combien de solutions l'équation ln x = x/e admet-elle dans ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une"
+        },
+        {
+          "id": "b",
+          "text": "Aucune"
+        },
+        {
+          "id": "c",
+          "text": "Deux"
+        },
+        {
+          "id": "d",
+          "text": "Trois"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On étudie h(x) = ln x − x/e. Alors h′(x) = 1/x − 1/e est positive sur ]0 ; e[ et négative sur ]e ; +∞[ : h admet un maximum en e, valant h(e) = 1 − 1 = 0. Donc h(x) ≤ 0 pour tout x > 0, avec égalité seulement en x = e : l'équation a une seule solution ✓. La droite y = x/e est tangente à la courbe de ln en son point d'abscisse e : elle la touche sans la recouper, d'où ni « aucune » ni « deux ».",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On donne ln 10 ≈ 2,3026 et ln 3 ≈ 1,0986. Quel est le plus petit entier naturel n tel que 0,9ⁿ ≤ 0,01 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "47"
+        },
+        {
+          "id": "b",
+          "text": "44"
+        },
+        {
+          "id": "c",
+          "text": "43"
+        },
+        {
+          "id": "d",
+          "text": "22"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "0,9ⁿ ≤ 0,01 donne n ln 0,9 ≤ ln 0,01. Or ln 0,9 = 2 ln 3 − ln 10 ≈ −0,1054 < 0 et ln 0,01 = −2 ln 10 ≈ −4,6052. En divisant par ln 0,9 < 0, l'inégalité change de sens : n ≥ 4,6052/0,1054 ≈ 43,7, donc n = 44 ✓ (0,9⁴³ ≈ 0,0108 > 0,01 et 0,9⁴⁴ ≈ 0,0097 ≤ 0,01). Le nombre 43 arrondit par défaut, 47 vient d'un arrondi trop grossier de ln 0,9 à −0,1, et 22 de ln 0,01 pris égal à −ln 10.",
+      "difficulty": 3
+    }
+  ]
+}

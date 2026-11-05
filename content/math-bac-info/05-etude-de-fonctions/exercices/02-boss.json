@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du tracé",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "On admet que D : y = 2x + 1 est asymptote oblique à la courbe C de f(x) = (2x² + 3x − 1)/(x + 1). Quelle est la position de C par rapport à D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "au-dessus de D pour x < −1 et au-dessous pour x > −1"
+        },
+        {
+          "id": "b",
+          "text": "au-dessous de D pour x < −1 et au-dessus pour x > −1"
+        },
+        {
+          "id": "c",
+          "text": "au-dessus de D sur ℝ ∖ {−1}"
+        },
+        {
+          "id": "d",
+          "text": "au-dessous de D sur ℝ ∖ {−1}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(x) − (2x + 1) = (2x² + 3x − 1 − (2x + 1)(x + 1))/(x + 1) = (2x² + 3x − 1 − 2x² − 3x − 1)/(x + 1) = −2/(x + 1). Pour x < −1, x + 1 < 0 et −2/(x + 1) > 0 : C est au-dessus de D ; pour x > −1, −2/(x + 1) < 0 : C est au-dessous. Comme le signe de c/(x − x₀) change en x₀, la position ne peut pas être la même des deux côtés de la valeur interdite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la période de la fonction h(x) = sin(3πx − 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3"
+        },
+        {
+          "id": "b",
+          "text": "2/3"
+        },
+        {
+          "id": "c",
+          "text": "3/2"
+        },
+        {
+          "id": "d",
+          "text": "2π/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "sin est 2π-périodique et le décalage −1 ne change pas la période : on cherche T tel que 3πT = 2π, soit T = 2/3. Contrôle : h(x + 2/3) = sin(3πx + 2π − 1) = h(x). La valeur 3/2 est l'inverse de la bonne (3π/2π au lieu de 2π/3π) ; 1/3 est la moitié, qui ne convient pas (h(x + 1/3) = sin(3πx + π − 1) = −sin(3πx − 1)) ; 2π/3 oublie le facteur π.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Où la courbe de f(x) = x⁴ − 4x³ a-t-elle des points d'inflexion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "en x = 0 et en x = 2"
+        },
+        {
+          "id": "b",
+          "text": "en x = 0 seulement"
+        },
+        {
+          "id": "c",
+          "text": "en x = 3 seulement"
+        },
+        {
+          "id": "d",
+          "text": "en x = 0, en x = 2 et en x = 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f′(x) = 4x³ − 12x² et f″(x) = 12x² − 24x = 12x(x − 2). f″ s'annule en 0 et en 2 en changeant de signe (positive, négative, puis positive) : il y a deux points d'inflexion, d'abscisses 0 et 2. En 3, c'est f′ qui s'annule (minimum), et f″(3) = 36 > 0 : pas d'inflexion. En 0, la tangente est horizontale, mais f″ change bien de signe, donc le point d'inflexion est confirmé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces réels, lequel est une période de f(x) = sin(πx) + cos(πx/2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "2π"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "sin(πx) a pour période 2 et cos(πx/2) a pour période 4 : avec T = 4, sin(πx + 4π) = sin(πx) et cos(πx/2 + 2π) = cos(πx/2), donc f(x + 4) = f(x). Avec T = 2, f(2) = sin 2π + cos π = −1 alors que f(0) = 1 : 2 n'est pas une période, la seconde composante change de signe. De même 6 = 2 + 4 donne cos(πx/2 + 3π) = −cos(πx/2). Et 2π n'est un multiple d'aucune des deux périodes.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe de g(x) = (x² + 2x + 4)/(x² − 4) a pour asymptote horizontale y = 1. En quel point la coupe-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A(−4 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "A(0 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "A(4 ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "elle ne la coupe en aucun point"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "g(x) − 1 = (x² + 2x + 4 − (x² − 4))/(x² − 4) = (2x + 8)/(x² − 4). Cette différence s'annule pour 2x + 8 = 0, soit x = −4 : g(−4) = 12/12 = 1, la courbe coupe y = 1 en A(−4 ; 1). Une asymptote peut être coupée : elle décrit seulement le comportement en ±∞. Le point d'abscisse 0 vient d'une erreur en soustrayant −4, et celui d'abscisse 4 d'une erreur de signe sur 2x + 8 = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quel est le maximum de f(x) = √(−4x² + 16x − 7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "9/4"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "−4x² + 16x − 7 = −4(x − 2)² + 9. Le radicande est maximal en x = 2 et vaut alors 9, donc le maximum de f est √9 = 3. La valeur 9 est le maximum du radicande, pas de f ; 2 est l'abscisse du maximum ; 9/4 vient d'une division par 4 du radicande au lieu de passer à la racine.",
+      "difficulty": 3
+    }
+  ]
+}

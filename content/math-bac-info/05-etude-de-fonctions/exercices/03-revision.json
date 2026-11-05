@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les neuf étapes du portrait",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Soit g(x) = x − E(x), où E(x) est la partie entière de x. Que vaut g(−2,3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,7"
+        },
+        {
+          "id": "b",
+          "text": "−0,3"
+        },
+        {
+          "id": "c",
+          "text": "0,3"
+        },
+        {
+          "id": "d",
+          "text": "0,7"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "E(−2,3) est le plus grand entier inférieur ou égal à −2,3, soit −3 : g(−2,3) = −2,3 + 3 = 0,7. On le retrouve par la période 1 : g(−2,3) = g(−2,3 + 3) = g(0,7) = 0,7. La valeur −0,3 vient de E(−2,3) = −2 (troncature) ; 0,3 est la partie décimale de 2,3 ; −0,7 se trompe de signe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les points M(−1 ; 2) et M′(5 ; 2) de la courbe d'une fonction f sont symétriques par rapport à la droite x = a, axe de symétrie de la courbe. Que vaut a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le symétrique de l'abscisse x = −1 est 2a − x = 2a + 1, et c'est 5 : 2a = 4, donc a = 2, milieu de −1 et 5. La valeur 3 est la demi-distance entre les deux points, 4 est 2a, et 6 est la distance entre eux.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = x − 3 + 5/(x + 2). Quel est le centre de symétrie de la courbe de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 ; −5)"
+        },
+        {
+          "id": "b",
+          "text": "(−2 ; −3)"
+        },
+        {
+          "id": "c",
+          "text": "(−2 ; 5)"
+        },
+        {
+          "id": "d",
+          "text": "(2 ; −1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'asymptote verticale est x = −2 et l'asymptote oblique y = x − 3. Elles se coupent au point d'abscisse −2 et d'ordonnée −2 − 3 = −5 : I(−2 ; −5) est centre de symétrie, car f(−2 + X) + 5 = X + 5/X est impaire en X. L'ordonnée −3 est le terme constant b de l'écriture, qui est l'ordonnée à l'origine de la droite et non celle de l'intersection ; (2 ; −1) se trompe sur le signe de la valeur interdite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit m(x) = (x² − 3)/(x² − 1). La droite y = 1 est asymptote horizontale à la courbe de m. Quelle est la position de la courbe par rapport à cette droite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "au-dessous pour |x| > 1 et au-dessus pour |x| < 1"
+        },
+        {
+          "id": "b",
+          "text": "au-dessus pour |x| > 1 et au-dessous pour |x| < 1"
+        },
+        {
+          "id": "c",
+          "text": "au-dessus sur ℝ ∖ {−1 ; 1}"
+        },
+        {
+          "id": "d",
+          "text": "au-dessous sur ℝ ∖ {−1 ; 1}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "m(x) − 1 = (x² − 3 − (x² − 1))/(x² − 1) = −2/(x² − 1). Pour |x| > 1, x² − 1 > 0 donc la différence est négative : la courbe est au-dessous de y = 1. Pour |x| < 1, x² − 1 < 0 et la différence est positive : la courbe est au-dessus. Le signe change aux valeurs interdites ±1, donc la position n'est pas la même partout.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe de f(x) = √(x² − 4x + 13) admet D : y = x − 2 pour asymptote en +∞. Quelle est la position de la courbe par rapport à D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "au-dessus de D"
+        },
+        {
+          "id": "b",
+          "text": "au-dessous de D"
+        },
+        {
+          "id": "c",
+          "text": "elle coupe D en x = 2"
+        },
+        {
+          "id": "d",
+          "text": "elle est confondue avec D pour x ≥ 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "x² − 4x + 13 = (x − 2)² + 9, donc f(x)² = (x − 2)² + 9 > (x − 2)². Ainsi f(x) > |x − 2| ≥ x − 2 : la courbe est strictement au-dessus de D, avec un écart qui tend vers 0 mais ne s'annule jamais (9/(f(x) + x − 2) > 0). Comme γ = 9 est positif, elle est au-dessus ; elle ne coupe donc pas D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On sait que f(1) = 2 et f′(x) = x². Avec la méthode d'Euler de pas h = 0,5, quelle valeur approchée obtient-on pour f(2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5"
+        },
+        {
+          "id": "b",
+          "text": "3,625"
+        },
+        {
+          "id": "c",
+          "text": "5,125"
+        },
+        {
+          "id": "d",
+          "text": "5,25"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "x₀ = 1, y₀ = 2. y₁ = 2 + 0,5 × f′(1) = 2 + 0,5 × 1 = 2,5 (x₁ = 1,5). y₂ = 2,5 + 0,5 × f′(1,5) = 2,5 + 0,5 × 2,25 = 3,625 (x₂ = 2). La valeur 2,5 n'est que le premier pas ; 5,125 utilise la pente d'arrivée à chaque pas (2 + 0,5 × 2,25 = 3,125, puis 3,125 + 0,5 × 4) ; 5,25 oublie le facteur h (2 + 1 = 3, puis 3 + 2,25).",
+      "difficulty": 2
+    }
+  ]
+}

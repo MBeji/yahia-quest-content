@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Études de fonctions",
+  "questions": [
+    {
+      "prompt": "Quelle est la période de la fonction f(x) = cos(πx/5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "2π"
+        },
+        {
+          "id": "d",
+          "text": "10π"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "cos est 2π-périodique : cos(πx/5) retrouve sa valeur quand l'argument πx/5 augmente de 2π, soit πT/5 = 2π et T = 10. Contrôle : f(x + 10) = cos(πx/5 + 2π) = f(x). La valeur 2π est la période de cos seul, pas de x ↦ cos(πx/5) ; avec T = 5 on ajouterait seulement π à l'argument, et f(x + 5) = −f(x) ; 10π vient d'une multiplication par 5 au lieu d'une division par π/5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = (x² − 8x + 20)/(x² − 8x + 12), définie sur ℝ ∖ {2 ; 6}. La courbe de f est symétrique par rapport à la droite d'équation :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 0"
+        },
+        {
+          "id": "b",
+          "text": "x = 4"
+        },
+        {
+          "id": "c",
+          "text": "x = 8"
+        },
+        {
+          "id": "d",
+          "text": "x = 12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les valeurs interdites 2 et 6 ont pour milieu 4. On le vérifie : 8 − x reste dans le domaine et (8 − x)² − 8(8 − x) = x² − 8x, donc f(8 − x) = f(x) et l'axe est x = 4. La droite x = 8 est la somme des valeurs interdites, x = 12 est le terme constant du dénominateur, et x = 0 serait l'axe des ordonnées, ce que f(−x) = (x² + 8x + 20)/(x² + 8x + 12) ≠ f(x) exclut.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelles sont les asymptotes de la courbe de h(x) = (x² − 3)/(x² − 9) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 3 et x = −3 seulement"
+        },
+        {
+          "id": "b",
+          "text": "x = 3, x = −3 et y = 1"
+        },
+        {
+          "id": "c",
+          "text": "x = 3, x = −3 et y = 0"
+        },
+        {
+          "id": "d",
+          "text": "y = 1 seulement"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit h(x) = 1 + 6/(x² − 9), car (x² − 9) + 6 = x² − 3. En ±∞, 6/(x² − 9) tend vers 0, donc y = 1 est asymptote horizontale. En 3 et en −3, x² − 9 tend vers 0 et h tend vers l'infini : x = 3 et x = −3 sont asymptotes verticales. La droite y = 0 serait la limite de 6/(x² − 9) seule, sans le 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = √(−x² + 4x + 12). Quel est son ensemble de définition ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−2 ; 6]"
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; −2] ∪ [6 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "[−6 ; 2]"
+        },
+        {
+          "id": "d",
+          "text": "ℝ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "−x² + 4x + 12 = −(x − 6)(x + 2). Comme le coefficient de x² est négatif, le trinôme est positif entre ses racines −2 et 6 : D = [−2 ; 6]. Les intervalles extérieurs seraient ceux d'un coefficient positif ; [−6 ; 2] oublie le changement de signe des racines (6 et −2 deviennent −6 et 2), et ℝ ignore que le radicande devient négatif, par exemple en x = 7 où il vaut −9.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = (3x² + x − 5)/(x − 2). Quelle droite est asymptote oblique à la courbe de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 3x − 5"
+        },
+        {
+          "id": "b",
+          "text": "y = 3x + 1"
+        },
+        {
+          "id": "c",
+          "text": "y = 3x + 7"
+        },
+        {
+          "id": "d",
+          "text": "y = 3x + 9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On cherche f(x) = ax + b + c/(x − 2) : (ax + b)(x − 2) + c = ax² + (b − 2a)x + (c − 2b). On identifie : a = 3, b − 6 = 1 donc b = 7, c − 14 = −5 donc c = 9. Ainsi f(x) = 3x + 7 + 9/(x − 2), et 9/(x − 2) tend vers 0 : l'asymptote est y = 3x + 7. La droite y = 3x + 1 lit le coefficient de x du numérateur à la place de b, y = 3x − 5 son terme constant, et y = 3x + 9 confond b avec c.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La tangente à la courbe de f(x) = 2x³ − 6x au point O(0 ; 0) est T : y = −6x. Par rapport à T, la courbe est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "au-dessus de T pour x ≠ 0"
+        },
+        {
+          "id": "b",
+          "text": "au-dessous de T pour x ≠ 0"
+        },
+        {
+          "id": "c",
+          "text": "au-dessous de T pour x < 0 et au-dessus pour x > 0"
+        },
+        {
+          "id": "d",
+          "text": "au-dessus de T pour x < 0 et au-dessous pour x > 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'écart est f(x) − T(x) = 2x³ − 6x + 6x = 2x³. Il est négatif pour x < 0 et positif pour x > 0 : la courbe est au-dessous de T à gauche de O et au-dessus à droite, elle traverse sa tangente et O est un point d'inflexion. Une courbe qui resterait du même côté de T aurait un écart de signe constant, comme x² ou x⁴, ce qui n'est pas le cas de x³.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le minimum de f(x) = √(x² − 6x + 13) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "√13"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "x² − 6x + 13 = (x − 3)² + 4 ≥ 4, avec égalité en x = 3 : le minimum de f est √4 = 2. La valeur 4 est le minimum du radicande, pas de f ; 3 est l'abscisse du minimum ; √13 est f(0), qui est supérieur à 2 (√13 ≈ 3,61).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle droite est asymptote à la courbe de f(x) = √(x² + 4x + 12) quand x tend vers −∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = x + 2"
+        },
+        {
+          "id": "b",
+          "text": "y = −x − 2"
+        },
+        {
+          "id": "c",
+          "text": "y = −x"
+        },
+        {
+          "id": "d",
+          "text": "y = −x + 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "x² + 4x + 12 = (x + 2)² + 8, donc f(x) ressemble à |x + 2|. En −∞, x + 2 < 0 et |x + 2| = −(x + 2) : l'asymptote est y = −x − 2. La droite y = x + 2 est celle de +∞ ; y = −x oublie le décalage ; y = −x + 2 se trompe de signe pour le décalage 2.",
+      "difficulty": 2
+    }
+  ]
+}
