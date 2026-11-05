@@ -1,0 +1,173 @@
+{
+  "title": "Test de compréhension ⭐ : Probabilité sur un ensemble fini",
+  "questions": [
+    {
+      "prompt": "Pour deux événements A et B, on connaît p(A) = 0,5, p(B) = 0,4 et p(A ∩ B) = 0,2. Quelle est p(A ∪ B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,2"
+        },
+        {
+          "id": "b",
+          "text": "0,3"
+        },
+        {
+          "id": "c",
+          "text": "0,7"
+        },
+        {
+          "id": "d",
+          "text": "0,9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On applique p(A ∪ B) = p(A) + p(B) − p(A ∩ B) = 0,5 + 0,4 − 0,2 = 0,7 ✓. Additionner sans retrancher l'intersection donne 0,9 ; p(A) − p(A ∩ B) = 0,3 est la probabilité de A sans B ; 0,2 est p(A ∩ B) lui-même.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On lance deux dés équilibrés, un rouge et un vert. Quelle est la probabilité que la somme des deux résultats soit égale à 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/12"
+        },
+        {
+          "id": "b",
+          "text": "1/18"
+        },
+        {
+          "id": "c",
+          "text": "1/11"
+        },
+        {
+          "id": "d",
+          "text": "1/9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'univers compte 6 × 6 = 36 couples équiprobables. La somme vaut 4 pour (1 ; 3), (2 ; 2) et (3 ; 1) : 3 cas favorables, donc p = 3/36 = 1/12 ✓. 1/11 vient de l'erreur Ω = {2, …, 12} ; 1/18 oublie un des couples (1 ; 3) ou (3 ; 1) ; 1/9 compte 4 cas au lieu de 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une urne contient 7 boules distinctes. On en tire 3 simultanément. Combien y a-t-il de tirages possibles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "35"
+        },
+        {
+          "id": "b",
+          "text": "70"
+        },
+        {
+          "id": "c",
+          "text": "210"
+        },
+        {
+          "id": "d",
+          "text": "343"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un tirage simultané est une partie de 3 éléments : C₇³ = A₇³ / 3! = 210/6 = 35 ✓. 210 = A₇³ compte les ordres (tirage successif sans remise) ; 343 = 7³ correspond à un tirage successif avec remise ; 70 = 210/3 divise par 3 au lieu de 3! = 6.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On sait que p(B) = 0,4 et p(A ∩ B) = 0,3. Quelle est la probabilité conditionnelle p(A/B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,1"
+        },
+        {
+          "id": "b",
+          "text": "0,12"
+        },
+        {
+          "id": "c",
+          "text": "0,7"
+        },
+        {
+          "id": "d",
+          "text": "0,75"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "p(A/B) = p(A ∩ B) / p(B) = 0,3/0,4 = 0,75 ✓. 0,12 est le produit 0,4 × 0,3 ; 0,1 est la différence 0,4 − 0,3 ; 0,7 est la somme 0,4 + 0,3 : aucune de ces opérations ne donne une probabilité conditionnelle.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux événements A et B sont indépendants, avec p(A) = 0,4 et p(B) = 0,25. Quelle est p(A ∩ B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "0,1"
+        },
+        {
+          "id": "c",
+          "text": "0,15"
+        },
+        {
+          "id": "d",
+          "text": "0,65"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'indépendance s'écrit p(A ∩ B) = p(A) × p(B) = 0,4 × 0,25 = 0,1 ✓. La valeur 0 conviendrait à deux événements incompatibles, qui ne sont pas indépendants ici ; 0,15 est la différence 0,4 − 0,25 ; 0,65 est la somme.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Au cours d'une expérience, l'événement A a la probabilité 0,6. Si A est réalisé, B l'est avec la probabilité 0,5 ; si A n'est pas réalisé, B l'est avec la probabilité 0,2. Quelle est la probabilité de B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,3"
+        },
+        {
+          "id": "b",
+          "text": "0,35"
+        },
+        {
+          "id": "c",
+          "text": "0,38"
+        },
+        {
+          "id": "d",
+          "text": "0,7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "A et A̅ forment une partition : p(B) = p(A) × p(B/A) + p(A̅) × p(B/A̅) = 0,6 × 0,5 + 0,4 × 0,2 = 0,3 + 0,08 = 0,38 ✓. 0,3 ne garde que le chemin passant par A ; 0,35 est la moyenne simple de 0,5 et 0,2, qui oublie les poids 0,6 et 0,4 ; 0,7 additionne les deux probabilités conditionnelles.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une usine fabrique 60 % de ses pièces sur la machine A et 40 % sur la machine B. 5 % des pièces de A et 10 % des pièces de B sont défectueuses. On choisit une pièce défectueuse : quelle est la probabilité qu'elle vienne de A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/20"
+        },
+        {
+          "id": "b",
+          "text": "3/7"
+        },
+        {
+          "id": "c",
+          "text": "3/5"
+        },
+        {
+          "id": "d",
+          "text": "3/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Soit D « la pièce est défectueuse ». p(A ∩ D) = 0,6 × 0,05 = 0,03 et p(B ∩ D) = 0,4 × 0,10 = 0,04, donc p(D) = 0,07 et p(A/D) = 0,03/0,07 = 3/7 ✓. 3/5 = 0,6 est p(A), qui ignore l'information ; 1/20 = 0,05 est p(D/A), la probabilité inverse ; 3/4 compare les deux chemins entre eux (0,03/0,04) au lieu de les rapporter à p(D).",
+      "difficulty": 2
+    }
+  ]
+}

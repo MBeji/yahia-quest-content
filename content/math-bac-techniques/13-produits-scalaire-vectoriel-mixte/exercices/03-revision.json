@@ -1,0 +1,112 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les trois produits",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans un repère orthonormé, calculer u⃗ . v⃗ pour u⃗(3 ; −2 ; 1) et v⃗(1 ; 4 ; −2).",
+      "answerKey": {
+        "value": -7
+      },
+      "explanation": "En base orthonormée, u⃗ . v⃗ = 3 × 1 + (−2) × 4 + 1 × (−2) = 3 − 8 − 2 = −7 ✓. Le résultat est un réel, négatif ici : l'angle des deux vecteurs est obtus.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux vecteurs orthogonaux u⃗ et v⃗ ont pour normes 3 et 4. Quelle est la norme de u⃗ ∧ v⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "25"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour des vecteurs orthogonaux, |sin| = 1 et ‖u⃗ ∧ v⃗‖ = 3 × 4 × 1 = 12 ✓. Le résultat 0 est celui de u⃗ . v⃗, produit scalaire nul pour des vecteurs orthogonaux, et non la norme du produit vectoriel ; 7 additionne les normes, et 25 additionne leurs carrés.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour calculer la distance d'un point M à une droite D de vecteur directeur u⃗ en passant par le projeté orthogonal H de M sur D, on procède en quatre étapes. Remettre ces étapes dans l'ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Traduire MH⃗ . u⃗ = 0 par une équation d'inconnue α"
+        },
+        {
+          "id": "b",
+          "text": "Remplacer α pour obtenir H, puis calculer la longueur MH"
+        },
+        {
+          "id": "c",
+          "text": "Écrire les coordonnées d'un point H de la droite D en fonction d'un paramètre α"
+        },
+        {
+          "id": "d",
+          "text": "Résoudre cette équation pour trouver la valeur de α"
+        }
+      ],
+      "answerKey": {
+        "order": ["c", "a", "d", "b"]
+      },
+      "explanation": "Il faut d'abord un point courant H de D (paramètre α) : sans lui, on ne peut pas écrire la condition d'orthogonalité MH⃗ . u⃗ = 0, qui donne l'équation d'inconnue α. On résout ensuite cette équation, car α détermine H. Enfin on remplace α dans les coordonnées de H, ce qui permet de calculer MH, la distance cherchée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un repère orthonormé, on donne les plans P et P′ d'équations :\nP : 2x + my − z + 1 = 0\nP′ : x − 3y + mz + 5 = 0\nPour quelle valeur du réel m ces deux plans sont-ils perpendiculaires ?",
+      "answerKey": {
+        "value": 0.5
+      },
+      "explanation": "Les plans sont perpendiculaires si et seulement si leurs vecteurs normaux N⃗(2 ; m ; −1) et N′⃗(1 ; −3 ; m) sont orthogonaux : N⃗ . N′⃗ = 2 − 3m − m = 2 − 4m = 0, donc m = 1/2 = 0,5 ✓. Contrôle : pour m = 1/2, N⃗(2 ; 1/2 ; −1) . N′⃗(1 ; −3 ; 1/2) = 2 − 3/2 − 1/2 = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé, on donne A(2 ; −1 ; 0) et B(0 ; 3 ; 4). Lequel de ces points appartient à la sphère de diamètre [AB] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0 ; 0 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "(1 ; 1 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "(1 ; 1 ; 5)"
+        },
+        {
+          "id": "d",
+          "text": "(3 ; 2 ; 2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "M appartient à la sphère de diamètre [AB] si et seulement si MA⃗ . MB⃗ = 0. Pour M(1 ; 1 ; 5), MA⃗(1 ; −2 ; −5) et MB⃗(−1 ; 2 ; −1) donnent −1 − 4 + 5 = 0 ✓ (de même, le centre est I(1 ; 1 ; 2), R = 3 et IM = 3). Pour les autres points : l'origine donne −3, (3 ; 2 ; 2) donne −4, et le centre (1 ; 1 ; 2) donne −9 : pour M = I, IM = 0 ≠ R = 3.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La figure montre la coupe d'une sphère de centre I et de rayon 13 par un plan P ; H est le projeté orthogonal de I sur P et IH = 5. Quel est le rayon du cercle d'intersection ?\n<svg viewBox=\"0 0 240 224\">\n<title>Coupe d'une sphère de centre I par un plan P : H est le projeté orthogonal de I sur P et M un point commun à la sphère et au plan</title>\n<circle cx=\"120\" cy=\"110\" r=\"104\" fill=\"#0f6e56\" opacity=\"0.10\"/><circle cx=\"120\" cy=\"110\" r=\"104\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"10\" y1=\"70\" x2=\"230\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"24\" y1=\"70\" x2=\"216\" y2=\"70\" stroke=\"#0f6e56\" stroke-width=\"4\"/><line x1=\"120\" y1=\"110\" x2=\"120\" y2=\"70\" stroke=\"#b45309\" stroke-width=\"2.4\"/><line x1=\"120\" y1=\"110\" x2=\"216\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"2\"/><polyline points=\"120,81 131,81 131,70\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"120\" cy=\"110\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"120\" cy=\"70\" r=\"3.5\" fill=\"#b45309\"/><circle cx=\"216\" cy=\"70\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"108\" y=\"126\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">I</text><text x=\"108\" y=\"64\" text-anchor=\"middle\" fill=\"#b45309\" font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">H</text><text x=\"222\" y=\"58\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><text x=\"14\" y=\"62\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">P</text>\n</svg>",
+      "answerKey": {
+        "value": 12
+      },
+      "explanation": "Le triangle IHM est rectangle en H, avec IM = R = 13 et IH = d = 5, donc r = HM = √(13² − 5²) = √(169 − 25) = √144 = 12 ✓.",
+      "difficulty": 2
+    }
+  ]
+}
