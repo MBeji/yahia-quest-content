@@ -1,0 +1,150 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve des équations",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Sélectionner toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un complexe non nul a exactement deux racines carrées, opposées l'une de l'autre"
+        },
+        {
+          "id": "b",
+          "text": "Si z₀ est solution de z² − (3 + i)z + 2 + 2i = 0, alors z̄₀ est aussi solution"
+        },
+        {
+          "id": "c",
+          "text": "Les images des solutions de z⁶ = 1 sont les sommets d'un hexagone régulier inscrit dans le cercle de rayon 1"
+        },
+        {
+          "id": "d",
+          "text": "Les n racines nièmes d'un complexe non nul ont toutes le même module"
+        },
+        {
+          "id": "e",
+          "text": "Les images des solutions de z⁵ = 1 + i sont sur le cercle de centre O et de rayon √2"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Sont exactes : un complexe non nul a deux racines carrées opposées ✓ ; les solutions de z⁶ = 1 sont les six points e^(i2kπ/6) du cercle de rayon 1, sommets d'un hexagone régulier ✓ ; les n racines nièmes ont toutes pour module ⁿ√r ✓. Est fausse l'affirmation sur z̄₀ : les coefficients ne sont pas tous réels et l'équation admet 1 + i mais pas 1 − i. Est fausse aussi l'affirmation sur le cercle de rayon √2 : pour z⁵ = 1 + i, le module de z vérifie |z|⁵ = √2, donc |z| = (√2)^(1/5) ≠ √2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève cherche les racines carrées de Z = −7 + 24i.\n(1) |Z| = √(49 + 576) = 25.\n(2) x² − y² = −7 et x² + y² = 25, donc x² = 9 et y² = 16.\n(3) Comme 2xy = 24 > 0, x et y sont de signes contraires : les racines carrées sont 3 − 4i et −3 + 4i.\nOù est l'erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étape (1) : le système doit contenir x² + y² = 625, c'est-à-dire |Z|² et non |Z|"
+        },
+        {
+          "id": "b",
+          "text": "Étape (2) : en additionnant, on trouve x² = 16 et y² = 9, et non l'inverse"
+        },
+        {
+          "id": "c",
+          "text": "Étape (3) : 2xy > 0 signifie que x et y ont le même signe, d'où 3 + 4i et −3 − 4i"
+        },
+        {
+          "id": "d",
+          "text": "Étape (3) : il faut garder les quatre couples (±3 ; ±4), soit quatre racines carrées"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'erreur est à l'étape (3). Les étapes (1) et (2) sont justes : |Z| = 25, et x² = (25 − 7)/2 = 9, y² = (25 + 7)/2 = 16. Mais 2xy = 24 > 0 impose que x et y aient le même signe, donc les racines carrées sont 3 + 4i et −3 − 4i ✓. Contrôle : (3 + 4i)² = 9 + 24i − 16 = −7 + 24i, alors que (3 − 4i)² = −7 − 24i. Garder les quatre couples serait une autre erreur : l'équation 2xy = 24 en écarte deux, et un complexe non nul n'a que deux racines carrées.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les points A et B sont les images des deux solutions de l'équation z² − 6z + 13 = 0. Calculer l'aire du triangle OAB.",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "Le discriminant réduit est Δ′ = 9 − 13 = −4, de racine carrée 2i, donc z = 3 ± 2i : A(3 ; 2) et B(3 ; −2). Le côté AB est vertical, de longueur 4, et la distance de O à la droite d'équation x = 3 vaut 3 ; l'aire est donc 4 × 3/2 = 6 ✓. Contrôle : OA = OB = √13 et la hauteur issue de O vaut √(13 − 4) = 3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit m un réel strictement supérieur à 1. Les images des deux solutions de l'équation z² + 2z + m = 0 sont à la distance 3 de l'origine. Que vaut m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les coefficients sont réels et Δ′ = 1 − m < 0, donc les solutions sont conjuguées : z = −1 ± i√(m − 1), de même module. Leur produit vaut c/a = m, et aussi |z|² = 9 : m = 9 ✓. Contrôle : z = −1 ± i√8, donc |z|² = 1 + 8 = 9. La valeur 3 est le module et non son carré ; 8 est m − 1, le carré de la partie imaginaire ; 10 prend 3 pour la partie imaginaire au lieu du module.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour θ ∈ ]0 ; π[, l'équation suivante a deux solutions :\nz² − 2 e^(iθ) z + e^(2iθ) − 4 = 0\nSoit M le point dont l'affixe est la solution de plus grande partie réelle. Quel est l'ensemble décrit par M quand θ décrit ]0 ; π[ (on ne tient pas compte des extrémités) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le demi-cercle supérieur de centre O et de rayon 1"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle entier de centre d'affixe 2 et de rayon 1, sans restriction"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle entier de centre O et de rayon 1, sans restriction"
+        },
+        {
+          "id": "d",
+          "text": "Le demi-cercle supérieur de centre d'affixe 2 et de rayon 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Ici b′ = −e^(iθ) et Δ′ = e^(2iθ) − (e^(2iθ) − 4) = 4, de racine carrée 2 : z = e^(iθ) ± 2. La solution de plus grande partie réelle est z₁ = e^(iθ) + 2, de partie réelle cos θ + 2 contre cos θ − 2. Alors z₁ − 2 = e^(iθ), donc |z₁ − 2| = 1 : M est sur le cercle de centre d'affixe 2 et de rayon 1. Comme Im(z₁) = sin θ > 0 sur ]0 ; π[, M décrit le demi-cercle supérieur ✓. Le centre O viendrait de |z₁| = 1, qui est faux ; le cercle entier oublie la restriction sur θ ; le cercle entier de centre O cumule les deux erreurs.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Que peut-on dire des points images des trois solutions de l'équation suivante ?\nz³ − 4z² + 6z − 4 = 0",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils forment un triangle rectangle isocèle"
+        },
+        {
+          "id": "b",
+          "text": "Ils sont alignés"
+        },
+        {
+          "id": "c",
+          "text": "Ils forment un triangle équilatéral"
+        },
+        {
+          "id": "d",
+          "text": "Ils forment un triangle isocèle sans angle droit"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a 2³ − 4 × 2² + 6 × 2 − 4 = 8 − 16 + 12 − 4 = 0 : 2 est solution. Par identification, z³ − 4z² + 6z − 4 = (z − 2)(z² − 2z + 2), et z² − 2z + 2 = 0 a pour solutions 1 + i et 1 − i (Δ′ = 1 − 2 = −1). Les points A(2), B(1 + i) et C(1 − i) vérifient AB = |−1 + i| = √2, AC = |−1 − i| = √2 et BC = |2i| = 2. Comme AB² + AC² = 4 = BC², le triangle est rectangle en A, et il est isocèle ✓.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des suites",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "cₙ = n(12 − n) pour tout n ∈ ℕ. À partir de quel entier n₀, le plus petit possible, la suite (cₙ) est-elle décroissante sur {n ≥ n₀} ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "cₙ₊₁ − cₙ = (n + 1)(11 − n) − n(12 − n) = 11 − 2n, qui est négatif ou nul si et seulement si n ≥ 5,5, c'est-à-dire n ≥ 6 ✓. Contrôle : c₅ = 35, c₆ = 36, c₇ = 35, donc c₇ ≤ c₆ mais c₆ > c₅. La valeur 5 arrondit 5,5 vers le bas : c₆ > c₅ contredit la décroissance. La valeur 7 est le premier rang où le terme baisse, mais la décroissance commence au rang 6. La valeur 12 est le zéro de cₙ, sans lien avec le sens de variation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Laquelle de ces suites n'est PAS bornée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ = (−1)ⁿ × n/(n + 1)"
+        },
+        {
+          "id": "b",
+          "text": "uₙ = cos n + sin n"
+        },
+        {
+          "id": "c",
+          "text": "uₙ = 5 − 1/(n + 1)"
+        },
+        {
+          "id": "d",
+          "text": "uₙ = (−1)ⁿ × (n + 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "|(−1)ⁿ(n + 1)| = n + 1 dépasse tout réel M à partir d'un certain rang : la suite n'est pas bornée ✓. La suite (−1)ⁿ n/(n + 1) vérifie |uₙ| < 1. La suite cos n + sin n vérifie |uₙ| ≤ 2. La suite 5 − 1/(n + 1) reste dans [4 ; 5[. Le signe alterné n'empêche pas d'être bornée : c'est la valeur absolue qui décide.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On pose uₙ = √n(√(n + 4) − √n). Que vaut lim n→+∞ uₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La différence √(n + 4) − √n est de la forme +∞ − ∞ : avec la quantité conjuguée, elle vaut 4/(√(n + 4) + √n). Alors uₙ = 4√n/(√(n + 4) + √n) = 4/(√(1 + 4/n) + 1), qui tend vers 4/2 = 2 ✓ (pour n = 10 000, uₙ ≈ 1,9998). La valeur 0 conclut trop vite que la différence tend vers 0 et annule le produit. La valeur +∞ ne voit que le facteur √n. La valeur 4 oublie le second terme du dénominateur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "u₀ = 1/2 et uₙ₊₁ = uₙ(2 − uₙ). On admet que (uₙ) est croissante et majorée par 1. Quelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(uₙ) est croissante et majorée, donc elle converge vers un réel ℓ. La fonction f(x) = x(2 − x) est continue, donc ℓ = ℓ(2 − ℓ), soit ℓ(1 − ℓ) = 0 et ℓ = 0 ou ℓ = 1. La suite est croissante, donc uₙ ≥ u₀ = 1/2 et ℓ ≥ 1/2 : ℓ = 1 ✓ (u₁ = 0,75 ; u₂ = 0,9375). La valeur 0 est l'autre solution, écartée par ℓ ≥ 1/2. La valeur 1/2 est le premier terme. La valeur 2 vient de 2 − ℓ = 0 pris pour l'équation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "(uₙ) est strictement positive, avec u₀ = 2 et uₙ₊₁ = 4uₙ/(uₙ + 3). On pose vₙ = 1 − 1/uₙ. Quelle est la raison de la suite géométrique (vₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/4"
+        },
+        {
+          "id": "b",
+          "text": "1/4"
+        },
+        {
+          "id": "c",
+          "text": "4/3"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "vₙ₊₁ = 1 − (uₙ + 3)/(4uₙ) = (4uₙ − uₙ − 3)/(4uₙ) = (3/4)(uₙ − 1)/uₙ = (3/4)vₙ ✓. Contrôle : v₀ = 1/2 et u₁ = 8/5, donc v₁ = 1 − 5/8 = 3/8 = (3/4) × (1/2). La valeur 4/3 est l'inverse de la raison. La valeur 3 lit le coefficient du dénominateur. La valeur 1/4 vient du terme 1/4 de 1/uₙ₊₁ = 1/4 + 3/(4uₙ), qui n'est pas la raison.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Déterminer lim n→+∞ (n² + n sin n)/(n² + 1).",
+      "options": [
+        {
+          "id": "a",
+          "text": "n'a pas de limite"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme |sin n| ≤ 1, n² − n ≤ n² + n sin n ≤ n² + n, donc (n² − n)/(n² + 1) ≤ uₙ ≤ (n² + n)/(n² + 1). Les deux bornes tendent vers 1 (quotient des termes en n²), donc lim uₙ = 1 par le théorème des gendarmes ✓. La réponse « n'a pas de limite » invoque l'absence de limite de sin n, alors que n sin n est négligeable devant n². La réponse +∞ ne regarde que le numérateur. La réponse 0 oublie que n² domine le numérateur.",
+      "difficulty": 3
+    }
+  ]
+}

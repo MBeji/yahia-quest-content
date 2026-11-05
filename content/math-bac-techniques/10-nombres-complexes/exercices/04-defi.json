@@ -1,0 +1,146 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du plan complexe",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Soit z et z′ deux nombres complexes non nuls. Sélectionner toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "z est réel si et seulement si arg(z) = kπ, avec k entier"
+        },
+        {
+          "id": "b",
+          "text": "arg(z + z′) = arg(z) + arg(z′)"
+        },
+        {
+          "id": "c",
+          "text": "|z + z′| ≤ |z| + |z′|"
+        },
+        {
+          "id": "d",
+          "text": "arg(z̄) = −arg(z)"
+        },
+        {
+          "id": "e",
+          "text": "z est imaginaire pur si et seulement si z = z̄"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "d"]
+      },
+      "explanation": "Sont exactes : un complexe non nul est réel ⇔ son argument est un multiple de π ✓ ; l'inégalité triangulaire ✓ ; arg(z̄) = −arg(z), car le conjugué est le symétrique par rapport à l'axe des réels ✓. Est fausse l'addition des arguments pour une somme : avec z = 1 et z′ = i, arg(1 + i) = π/4 alors que 0 + π/2 = π/2. Est fausse aussi l'affirmation « z imaginaire pur ⇔ z = z̄ » : z = z̄ caractérise les réels, et un imaginaire pur vérifie z = −z̄.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève cherche un argument de z = −1 − i√3.\n(1) |z| = √(1 + 3) = 2.\n(2) cos θ = −1/2, donc θ = 2π/3.\n(3) Ainsi z = 2 e^(i2π/3).\nOù est l'erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étape (1) : |z| = √(1 + 3) vaut √2 et non 2"
+        },
+        {
+          "id": "b",
+          "text": "Étape (2) : sin θ < 0, donc θ = −2π/3 et non 2π/3"
+        },
+        {
+          "id": "c",
+          "text": "Étape (2) : cos θ = −1/2 donne θ = π/3 et non 2π/3"
+        },
+        {
+          "id": "d",
+          "text": "Étape (3) : le module de z est 4 et non 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le module est bien √(1 + 3) = 2, et 2π/3 est bien une solution de cos θ = −1/2. Mais cos θ seul laisse deux angles, 2π/3 et −2π/3 : il faut aussi le signe de sin θ = −√3/2, négatif. Le point est dans le troisième quadrant, donc θ = −2π/3 et z = 2 e^(−i2π/3) ✓. Contrôle : 2(cos(−2π/3) + i sin(−2π/3)) = 2(−1/2 − i√3/2) = −1 − i√3 ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Donner la partie réelle du nombre complexe (√3 + i)⁸/(1 + i)⁴.",
+      "answerKey": {
+        "value": 32
+      },
+      "explanation": "On a √3 + i = 2 e^(iπ/6), donc (√3 + i)⁸ = 256 e^(i4π/3). D'autre part (1 + i)² = 2i, donc (1 + i)⁴ = (2i)² = −4. Alors z = 256 e^(i4π/3)/(−4) = −64 e^(i4π/3) = 64 e^(i(4π/3 + π)) = 64 e^(i7π/3) = 64 e^(iπ/3), car 7π/3 − 2π = π/3. La partie réelle est 64 cos(π/3) = 64 × 1/2 = 32 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour z ≠ i, on pose Z = (z + 1)/(z − i). L'ensemble des points M(z) tels que Z soit imaginaire pur non nul est un cercle privé de deux points. Quel est le rayon de ce cercle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2/4"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "√2/2"
+        },
+        {
+          "id": "d",
+          "text": "√2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec A(−1) et B(i), Z = (z − z_A)/(z − z_B) est imaginaire pur non nul ⇔ MA ⟂ MB : M décrit le cercle de diamètre [AB], privé de A et de B. Or AB = |i − (−1)| = |1 + i| = √2, donc le rayon est AB/2 = √2/2 ✓. Contrôle par le calcul : Z imaginaire pur ⇔ x² + x + y² − y = 0 ⇔ (x + 1/2)² + (y − 1/2)² = 1/2, de rayon √(1/2) = √2/2 ✓. La valeur √2 est le diamètre ; 1/2 est le carré du rayon ; √2/4 divise le diamètre par 4 au lieu de 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "A(1) et B(3 + i) sont deux sommets consécutifs d'un carré direct ABCD, c'est-à-dire parcouru dans le sens trigonométrique. Quelle est l'affixe du sommet C ?\n<svg viewBox=\"0 0 325 230\">\n<title>Les sommets A(1) et B(3 + i) du carré ABCD dans le plan complexe</title>\n<path d=\"M21.6 185 H319.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<path d=\"M60 223.4 V21.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<path d=\"M319.2 185 l-8 -4 l0 8 z\" fill=\"#0f172a\"/>\n<path d=\"M60 21.8 l-4 8 l8 0 z\" fill=\"#0f172a\"/>\n<path d=\"M108 182 V188\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"108\" y=\"201\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text>\n<path d=\"M156 182 V188\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"156\" y=\"201\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text>\n<path d=\"M204 182 V188\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"204\" y=\"201\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3</text>\n<path d=\"M252 182 V188\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"252\" y=\"201\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text>\n<path d=\"M57 137 H63\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"53\" y=\"141\" text-anchor=\"end\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">i</text>\n<path d=\"M57 89 H63\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"53\" y=\"93\" text-anchor=\"end\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2i</text>\n<path d=\"M57 41 H63\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"53\" y=\"45\" text-anchor=\"end\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3i</text>\n<text x=\"54\" y=\"200\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">O</text>\n<path d=\"M108 185 L204 137\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/>\n<circle cx=\"108\" cy=\"185\" r=\"4\" fill=\"#0f172a\"/>\n<circle cx=\"204\" cy=\"137\" r=\"4\" fill=\"#0f172a\"/>\n<text x=\"106\" y=\"215\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A(1)</text>\n<text x=\"212\" y=\"131\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B(3 + i)</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 + 3i"
+        },
+        {
+          "id": "b",
+          "text": "2i"
+        },
+        {
+          "id": "c",
+          "text": "4 − i"
+        },
+        {
+          "id": "d",
+          "text": "−1 + 2i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans un carré direct, AD⃗ s'obtient en tournant AB⃗ de +π/2, c'est-à-dire en multipliant z_B − z_A = 2 + i par i : i(2 + i) = −1 + 2i. Donc z_D = 1 + (−1 + 2i) = 2i. Comme BC⃗ = AD⃗, z_C = (3 + i) + (−1 + 2i) = 2 + 3i ✓. Contrôle : AB⃗ = (2 ; 1) et BC⃗ = (−1 ; 2) sont orthogonaux (−2 + 2 = 0) et de même longueur √5. Le sommet 4 − i correspond au carré indirect (rotation de −π/2) ; 2i est le sommet D ; −1 + 2i n'est que le vecteur AD⃗.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On linéarise cos³x, puis on intègre. Que vaut ∫₀^{π/2} cos³x dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "2/3"
+        },
+        {
+          "id": "c",
+          "text": "3/4"
+        },
+        {
+          "id": "d",
+          "text": "8/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par Euler, cos³x = (cos 3x + 3 cos x)/4. Une primitive est sin(3x)/12 + 3 sin(x)/4. Entre 0 et π/2 : sin(3π/2)/12 + 3/4 = −1/12 + 9/12 = 8/12 = 2/3 ✓. Le résultat 1/2 oublie le facteur 1/3 de la primitive de cos 3x ; 3/4 ne garde que le terme en cos x ; 8/3 oublie le facteur 1/4 de la linéarisation.",
+      "difficulty": 3
+    }
+  ]
+}
