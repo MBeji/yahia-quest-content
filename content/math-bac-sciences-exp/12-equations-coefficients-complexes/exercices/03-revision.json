@@ -1,0 +1,132 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Équations dans ℂ",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Les racines carrées de 35 + 12i s'écrivent ±(x + iy). Donner x² + y².",
+      "answerKey": {
+        "value": 37
+      },
+      "explanation": "On a |Z| = √(1225 + 144) = √1369 = 37. Or x² + y² = |z²| = |Z| pour toute racine carrée z = x + iy de Z : la valeur cherchée est 37 ✓. Contrôle : x² − y² = 35 et x² + y² = 37 donnent x² = 36 et y² = 1, soit ±(6 + i) ; en effet (6 + i)² = 36 + 12i − 1 = 35 + 12i et 36 + 1 = 37.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelles sont les solutions de l'équation z² − 3z + 3 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−3 ± i√3)/2"
+        },
+        {
+          "id": "b",
+          "text": "(3 ± i√3)/2"
+        },
+        {
+          "id": "c",
+          "text": "(3 ± 3i)/2"
+        },
+        {
+          "id": "d",
+          "text": "3 ± i√3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a Δ = 9 − 12 = −3 = (i√3)², donc z = (3 ± i√3)/2 ✓. Contrôle : la somme des deux solutions vaut 3 = −b/a et leur produit (9 + 3)/4 = 3 = c/a. Le choix (−3 ± i√3)/2 prend −b = −3 au lieu de 3 ; (3 ± 3i)/2 prend 3i pour racine carrée de −3 ; 3 ± i√3 oublie de diviser par 2a.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit (1 − i)z² + 2z + 4 + 2i = 0. Calculer la partie imaginaire du produit des deux solutions de cette équation.",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "Le produit des solutions vaut c/a = (4 + 2i)/(1 − i). En multipliant haut et bas par 1 + i : (4 + 2i)(1 + i)/2 = (4 + 4i + 2i − 2)/2 = (2 + 6i)/2 = 1 + 3i, dont la partie imaginaire est 3 ✓. Contrôle : (1 + 3i)(1 − i) = 1 − i + 3i + 3 = 4 + 2i = c.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la solution de l'équation z³ = −8 dont la partie imaginaire est strictement négative ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3 − i"
+        },
+        {
+          "id": "b",
+          "text": "−1 − i√3"
+        },
+        {
+          "id": "c",
+          "text": "−2i"
+        },
+        {
+          "id": "d",
+          "text": "1 − i√3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a −8 = 8 e^(iπ), donc le module des solutions est 2 et leurs arguments sont (π + 2kπ)/3 : π/3, π et 5π/3. Les solutions sont 1 + i√3, −2 et 1 − i√3, et seule 1 − i√3 = 2 e^(i5π/3) a une partie imaginaire négative ✓. Contrôle : (1 − i√3)³ = 8 e^(−iπ) = −8. Le nombre −1 − i√3 = 2 e^(i4π/3) a pour cube 8 ; √3 − i = 2 e^(−iπ/6) a pour cube 8 e^(−iπ/2) = −8i ; −2i a pour cube 8i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour θ réel, l'équation z² − 4z + 4 − 25 e^(2iθ) = 0 a deux solutions. Quel ensemble leurs images décrivent-elles quand θ décrit ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre d'affixe 2 et de rayon 5"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre d'affixe −2 et de rayon 5"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre O et de rayon 5"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre d'affixe 2 et de rayon 25"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équation s'écrit (z − 2)² = 25 e^(2iθ) = (5 e^(iθ))², donc z = 2 + 5 e^(iθ) ou z = 2 − 5 e^(iθ). Dans les deux cas |z − 2| = 5 : les images décrivent le cercle de centre d'affixe 2 et de rayon 5 ✓. Contrôle pour θ = 0 : z = 7 ou z = −3, à la distance 5 de 2. Le centre −2 vient d'un signe oublié ; le centre O confond |z − 2| avec |z| ; le rayon 25 oublie d'extraire la racine carrée de 25.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les étapes de la résolution d'une équation P(z) = 0 de degré 3 dont on sait qu'elle admet une solution imaginaire pure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chercher z₀ = iy en annulant à la fois la partie réelle et la partie imaginaire du premier membre"
+        },
+        {
+          "id": "b",
+          "text": "Écrire P(z) = (z − z₀)(z² + βz + γ) puis identifier les coefficients pour trouver β et γ"
+        },
+        {
+          "id": "c",
+          "text": "Résoudre z² + βz + γ = 0 avec son discriminant et une racine carrée de ce discriminant"
+        },
+        {
+          "id": "d",
+          "text": "Conclure en réunissant z₀ et les deux solutions du second degré"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On commence par chercher le zéro z₀, car la factorisation par (z − z₀) n'a de sens que si z₀ est connu. On identifie ensuite les coefficients de z² et de z pour obtenir β et γ, puis on résout le second degré obtenu, ce qui suppose que β et γ soient connus. La conclusion vient en dernier : l'ensemble des solutions réunit z₀ et les deux solutions du facteur de degré 2, soit trois solutions pour un degré 3.",
+      "difficulty": 2
+    }
+  ]
+}

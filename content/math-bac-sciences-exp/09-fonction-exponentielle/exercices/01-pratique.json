@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec l'exponentielle",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Que vaut e^(2 ln 3 − ln 6) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/3"
+        },
+        {
+          "id": "b",
+          "text": "3/2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "54"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a e^(2 ln 3 − ln 6) = e^(2 ln 3)/e^(ln 6) = 9/6 = 3/2 ✓, car e^(2 ln 3) = e^(ln 9) = 9. Contrôle : 2 ln 3 − ln 6 ≈ 2,197 − 1,792 = 0,405 et e^(0,405) ≈ 1,5. La valeur 2/3 est l'inverse : l'exposant a été pris de signe opposé. La valeur 3 soustrait 9 − 6 au lieu de diviser 9 par 6. La valeur 54 multiplie 9 par 6 : l'exposant −ln 6 a été traité comme +ln 6.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la solution de l'équation e^(4−x) = 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −ln 3"
+        },
+        {
+          "id": "b",
+          "text": "x = ln 7 − 4"
+        },
+        {
+          "id": "c",
+          "text": "x = 4 − ln 7"
+        },
+        {
+          "id": "d",
+          "text": "x = 4 + ln 7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme 7 > 0, e^(4−x) = 7 équivaut à 4 − x = ln 7, donc x = 4 − ln 7 ≈ 2,054 ✓. Contrôle : e^(4−2,054) = e^(1,946) ≈ 7. La réponse ln 7 − 4 oublie de changer le signe en isolant x : de 4 − x = ln 7, on tire −x = ln 7 − 4 puis x = 4 − ln 7. La réponse 4 + ln 7 se trompe de signe devant ln 7. La réponse −ln 3 suppose e^(−x) = 7 − 4 : on a retranché 4 de 7, alors qu'il faut diviser par e^4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'inéquation e^(3x−1) > e^(x+5).",
+      "options": [
+        {
+          "id": "a",
+          "text": "x > 3"
+        },
+        {
+          "id": "b",
+          "text": "x < 3"
+        },
+        {
+          "id": "c",
+          "text": "x > 2"
+        },
+        {
+          "id": "d",
+          "text": "x > 6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fonction exp est strictement croissante, donc e^A > e^B équivaut à A > B : 3x − 1 > x + 5, soit 2x > 6 et x > 3 ✓. Contrôle : en x = 4, e^11 > e^9 ✓ ; en x = 3, égalité e^8 = e^8. La réponse x < 3 inverse le sens, comme si exp était décroissante. La réponse x > 2 vient de 2x > 4 : le −1 a été passé de l'autre côté avec le mauvais signe. La réponse x > 6 vient de 2x > 6 sans diviser par 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On dérive la fonction f définie sur ℝ par f(x) = x²e^(−x). Que vaut f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−x²e^(−x)"
+        },
+        {
+          "id": "b",
+          "text": "2x e^(−x)"
+        },
+        {
+          "id": "c",
+          "text": "x(2 + x)e^(−x)"
+        },
+        {
+          "id": "d",
+          "text": "x(2 − x)e^(−x)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "C'est un produit u v avec u(x) = x² et v(x) = e^(−x), donc v′(x) = −e^(−x). Alors f′(x) = 2x e^(−x) − x² e^(−x) = x(2 − x)e^(−x) ✓. Contrôle en x = 1 : la formule donne e^(−1) ≈ 0,368, et le taux d'accroissement entre 1 et 1,001 vaut environ 0,368. La réponse −x²e^(−x) ne garde que le terme u v′. La réponse 2x e^(−x) ne garde que le terme u′ v. La réponse x(2 + x)e^(−x) prend v′ = +e^(−x), en oubliant le signe de u′.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer l'intégrale I = ∫₀² e^(−x/2) dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = 2(1 − e^(−1))"
+        },
+        {
+          "id": "b",
+          "text": "I = 2(1 − e^(−2))"
+        },
+        {
+          "id": "c",
+          "text": "I = (1 − e^(−1))/2"
+        },
+        {
+          "id": "d",
+          "text": "I = 1 − e^(−1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec u(x) = −x/2, u′ = −1/2, une primitive de e^(−x/2) est −2e^(−x/2). Donc I = [−2e^(−x/2)]₀² = −2e^(−1) + 2 = 2(1 − e^(−1)) ≈ 1,264 ✓. Contrôle : l'intégrande décroît de 1 à e^(−1) ≈ 0,368 sur une largeur 2, donc l'aire est comprise entre 0,74 et 2 ✓. La réponse (1 − e^(−1))/2 divise par 2 au lieu de multiplier. La réponse 1 − e^(−1) oublie le facteur 2 de la primitive. La réponse 2(1 − e^(−2)) calcule e^(−x) en 2 au lieu de e^(−x/2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe C ci-dessous est celle d'une fonction x ↦ b^x, où b est un réel strictement positif. Elle passe par le point A marqué sur la figure. Que vaut b ?\n<svg viewBox=\"0 0 340 250\">\n<title>Courbe C d'une fonction x ↦ b^x et point A marqué sur C, dont on lit l'abscisse et l'ordonnée sur les axes</title>\n<line x1=\"10\" y1=\"222\" x2=\"330\" y2=\"222\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"205\" y1=\"240\" x2=\"205\" y2=\"10\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"330,222 322,218 322,226\" fill=\"#0f172a\"/><polygon points=\"205,10 201,18 209,18\" fill=\"#0f172a\"/><polyline points=\"107.3,4.7 108.6,11.5 109.9,18.0 111.2,24.4 112.5,30.5 113.8,36.5 115.1,42.2 116.3,47.8 117.6,53.3 118.9,58.5 120.2,63.6 121.5,68.5 122.8,73.3 124.1,77.9 125.4,82.4 126.7,86.7 128.0,90.9 129.3,95.0 130.6,99.0 131.9,102.8 133.2,106.5 134.5,110.1 135.8,113.6 137.0,116.9 138.3,120.2 139.6,123.4 140.9,126.4 142.2,129.4 143.5,132.3 144.8,135.1 146.1,137.8 147.4,140.4 148.7,142.9 150.0,145.4 151.3,147.8 152.6,150.1 153.9,152.3 155.2,154.5 156.5,156.6 157.8,158.6 159.0,160.6 160.3,162.5 161.6,164.3 162.9,166.1 164.2,167.9 165.5,169.6 166.8,171.2 168.1,172.8 169.4,174.3 170.7,175.8 172.0,177.2 173.3,178.6 174.6,180.0 175.9,181.3 177.2,182.5 178.4,183.8 179.7,184.9 181.0,186.1 182.3,187.2 183.6,188.3 184.9,189.3 186.2,190.4 187.5,191.3 188.8,192.3 190.1,193.2 191.4,194.1 192.7,195.0 194.0,195.8 195.3,196.6 196.6,197.4 197.9,198.2 199.1,198.9 200.4,199.6 201.7,200.3 203.0,201.0 204.3,201.7 205.6,202.3 206.9,202.9 208.2,203.5 209.5,204.1 210.8,204.6 212.1,205.2 213.4,205.7 214.7,206.2 216.0,206.7 217.3,207.2 218.6,207.6 219.8,208.1 221.1,208.5 222.4,208.9 223.7,209.3 225.0,209.7 226.3,210.1 227.6,210.5 228.9,210.8 230.2,211.2 231.5,211.5 232.8,211.9 234.1,212.2 235.4,212.5 236.7,212.8 238.0,213.1 239.3,213.3 240.5,213.6 241.8,213.9 243.1,214.1 244.4,214.4 245.7,214.6 247.0,214.8 248.3,215.1 249.6,215.3 250.9,215.5 252.2,215.7 253.5,215.9 254.8,216.1 256.1,216.3 257.4,216.4 258.7,216.6 260.0,216.8 261.2,216.9 262.5,217.1 263.8,217.2 265.1,217.4 266.4,217.5 267.7,217.7 269.0,217.8 270.3,217.9 271.6,218.1 272.9,218.2 274.2,218.3 275.5,218.4 276.8,218.5 278.1,218.6 279.4,218.7 280.7,218.8 281.9,218.9 283.2,219.0 284.5,219.1 285.8,219.2 287.1,219.3 288.4,219.4 289.7,219.5 291.0,219.6 292.3,219.6 293.6,219.7 294.9,219.8 296.2,219.8 297.5,219.9 298.8,220.0 300.1,220.0 301.4,220.1 302.6,220.2 303.9,220.2 305.2,220.3 306.5,220.3 307.8,220.4 309.1,220.4 310.4,220.5 311.7,220.5 313.0,220.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"219\" x2=\"70\" y2=\"225\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"115\" y1=\"219\" x2=\"115\" y2=\"225\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"160\" y1=\"219\" x2=\"160\" y2=\"225\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"219\" x2=\"250\" y2=\"225\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"295\" y1=\"219\" x2=\"295\" y2=\"225\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"202\" y1=\"202\" x2=\"208\" y2=\"202\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"202\" y1=\"162\" x2=\"208\" y2=\"162\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"202\" y1=\"122\" x2=\"208\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"202\" y1=\"82\" x2=\"208\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"202\" y1=\"42\" x2=\"208\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"115.0\" y1=\"42.0\" x2=\"115.0\" y2=\"222.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"205.0\" y1=\"42.0\" x2=\"115.0\" y2=\"42.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><circle cx=\"115.0\" cy=\"42.0\" r=\"4\" fill=\"#0f172a\"/>\n<g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"199.0\" y=\"236.0\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"70.0\" y=\"238.0\" text-anchor=\"middle\" fill=\"#0f172a\">−3</text><text x=\"115.0\" y=\"238.0\" text-anchor=\"middle\" fill=\"#0f172a\">−2</text><text x=\"160.0\" y=\"238.0\" text-anchor=\"middle\" fill=\"#0f172a\">−1</text><text x=\"250.0\" y=\"238.0\" text-anchor=\"middle\" fill=\"#0f172a\">1</text><text x=\"295.0\" y=\"238.0\" text-anchor=\"middle\" fill=\"#0f172a\">2</text><text x=\"197.0\" y=\"206.0\" text-anchor=\"end\" fill=\"#0f172a\">1</text><text x=\"197.0\" y=\"166.0\" text-anchor=\"end\" fill=\"#0f172a\">3</text><text x=\"197.0\" y=\"126.0\" text-anchor=\"end\" fill=\"#0f172a\">5</text><text x=\"197.0\" y=\"86.0\" text-anchor=\"end\" fill=\"#0f172a\">7</text><text x=\"197.0\" y=\"46.0\" text-anchor=\"end\" fill=\"#0f172a\">9</text><text x=\"123.0\" y=\"40.0\" text-anchor=\"start\" fill=\"#0f172a\">A</text><text x=\"295.0\" y=\"190.0\" text-anchor=\"start\" fill=\"#0f6e56\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/9"
+        },
+        {
+          "id": "b",
+          "text": "1/3"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On lit sur la figure A(−2 ; 9). Comme A est sur C, b^(−2) = 9, soit 1/b² = 9, donc b² = 1/9 et b = 1/3 car b > 0 ✓. Contrôle : (1/3)^(−2) = 3² = 9, et la courbe est bien décroissante, comme il se doit pour 0 < b < 1. La valeur 3 oublie que l'abscisse de A est −2 : 3^(−2) = 1/9 et non 9, et 3^x est croissante alors que C descend. La valeur 9 donne 9^(−2) = 1/81. La valeur 1/9 donne (1/9)^(−2) = 81.",
+      "difficulty": 2
+    }
+  ]
+}

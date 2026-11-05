@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des suites et des aires",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Calculer lim_{x→0} (e^(2x) − 1)/(x² + 2x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x ≠ 0 voisin de 0, x² + 2x = x(x + 2), donc (e^(2x) − 1)/(x² + 2x) = [(e^(2x) − 1)/(2x)] × [2/(x + 2)]. Avec t = 2x → 0, le premier facteur tend vers 1 (nombre dérivé de exp en 0) et le second vers 2/2 = 1 : la limite vaut 1 ✓. Contrôle en x = 0,001 : 0,002002/0,002001 ≈ 1,0005. La valeur 2 est la limite de (e^(2x) − 1)/x : le facteur 1/(x + 2), qui tend vers 1/2, a été oublié. La valeur 0 conclut trop vite que le numérateur, qui tend vers 0, impose la limite. La valeur +∞ conclut que le dénominateur tend vers 0, alors que le numérateur tend aussi vers 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève étudie la fonction f définie sur ℝ par f(x) = (x² + x)e^(−x). Voici sa copie.\n① f est dérivable sur ℝ comme produit de deux fonctions dérivables.\n② On pose u(x) = x² + x et v(x) = e^(−x), donc u′(x) = 2x + 1 et v′(x) = e^(−x).\n③ Alors f′(x) = u′(x)v(x) + u(x)v′(x) = (2x + 1)e^(−x) + (x² + x)e^(−x) = (x² + 3x + 1)e^(−x).\n④ Le trinôme x² + 3x + 1 a pour discriminant 5 > 0, donc f′ change de signe deux fois.\nQuelle est la première ligne erronée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ligne ①"
+        },
+        {
+          "id": "b",
+          "text": "Ligne ②"
+        },
+        {
+          "id": "c",
+          "text": "Ligne ③"
+        },
+        {
+          "id": "d",
+          "text": "Ligne ④"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'erreur est à la ligne ② : v(x) = e^(−x) a pour dérivée v′(x) = −e^(−x), car u′ = −1 dans (e^u)′ = u′e^u. Les lignes ① et ④ sont justes en elles-mêmes, et la ligne ③ applique correctement la formule du produit à des données déjà fausses. La bonne dérivée est f′(x) = (2x + 1)e^(−x) − (x² + x)e^(−x) = (−x² + x + 1)e^(−x). Contrôle en x = 1 : la bonne formule donne e^(−1) ≈ 0,368, le taux d'accroissement numérique donne 0,368, alors que la copie donnerait 5e^(−1) ≈ 1,84.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer l'intégrale I = ∫₀² x e^(−x/2) dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = 2 − 2/e"
+        },
+        {
+          "id": "b",
+          "text": "I = 4"
+        },
+        {
+          "id": "c",
+          "text": "I = 4 − 4/e"
+        },
+        {
+          "id": "d",
+          "text": "I = 4 − 8/e"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On intègre par parties avec f(x) = x et g′(x) = e^(−x/2), donc g(x) = −2e^(−x/2) : I = [−2x e^(−x/2)]₀² + 2∫₀² e^(−x/2) dx = −4/e + 2 × [−2e^(−x/2)]₀² = −4/e + 4(1 − 1/e) = 4 − 8/e ≈ 1,057 ✓. Contrôle : l'intégrande vaut 0 en 0 et 2/e ≈ 0,736 en 2, donc une aire d'environ 1 sur une largeur 2 est cohérente. La réponse 4 − 4/e oublie le crochet et ne garde que 2∫. La réponse 4 met un signe + devant le crochet : 4/e + 4 − 4/e = 4. La réponse 2 − 2/e est l'intégrale de e^(−x/2) seule : le facteur x a été oublié.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit φ la fonction définie sur ℝ par φ(x) = e^(−x), I = [0,5 ; 0,65] et (u_n) la suite définie par u₀ = 0,5 et u_{n+1} = φ(u_n). On admet que φ(I) ⊂ I et que φ(x) = x a une unique solution α dans I. Soit k le plus petit majorant de |φ′| sur I : l'inégalité des accroissements finis donne |u_n − α| ≤ kⁿ|u₀ − α| ≤ 0,15 kⁿ. Quel est le plus petit entier n qui garantit |u_n − α| ≤ 10⁻² par cette majoration ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 3"
+        },
+        {
+          "id": "b",
+          "text": "n = 5"
+        },
+        {
+          "id": "c",
+          "text": "n = 6"
+        },
+        {
+          "id": "d",
+          "text": "n = 10"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a |φ′(x)| = e^(−x), fonction décroissante : son maximum sur I est atteint en 0,5, donc k = e^(−0,5) ≈ 0,607. On veut 0,15 e^(−n/2) ≤ 0,01, soit e^(−n/2) ≤ 1/15, donc n/2 ≥ ln 15 ≈ 2,708 et n ≥ 5,42 : le plus petit entier est n = 6 ✓. Contrôle : pour n = 5, 0,15 e^(−2,5) ≈ 0,0123 > 0,01 ; pour n = 6, 0,15 e^(−3) ≈ 0,0075 ≤ 0,01. La valeur 5 vient de k = e^(−0,65) : le maximum de |φ′| a été pris à la mauvaise extrémité. La valeur 3 vient de k = e^(−1), hors de I. La valeur 10 oublie le facteur 0,15 et résout e^(−n/2) ≤ 0,01.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier naturel n, on pose uₙ = ∫ₙ^(n+1) e^(−3t) dt, et Sₙ = u₀ + u₁ + … + uₙ₋₁. Quelle est la limite de Sₙ quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "(1 − e^(−3))/3"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "1/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par la relation de Chasles, Sₙ = ∫₀ⁿ e^(−3t) dt = [−(1/3)e^(−3t)]₀ⁿ = (1 − e^(−3n))/3, qui tend vers 1/3 ✓. Contrôle en n = 2 : (1 − e^(−6))/3 ≈ 0,3325. La valeur 3 prend −3e^(−3t) pour primitive. La valeur (1 − e^(−3))/3 ≈ 0,317 est celle de u₀ seul : c'est le premier terme, pas la somme. La limite +∞ suppose qu'une somme de termes positifs diverge toujours, alors qu'ici les termes uₙ = e^(−3n)(1 − e^(−3))/3 forment une suite géométrique de raison e^(−3) < 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g la fonction définie sur [0 ; +∞[ par g(x) = (x − 2)e^x + 2. Quelles sont les solutions de l'équation g(x) = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 et un réel α de ]1 ; 2["
+        },
+        {
+          "id": "b",
+          "text": "seulement 0"
+        },
+        {
+          "id": "c",
+          "text": "seulement un réel α de ]1 ; 2["
+        },
+        {
+          "id": "d",
+          "text": "0 et un réel de ]0 ; 1["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a g′(x) = e^x + (x − 2)e^x = (x − 1)e^x : g décroît sur [0 ; 1] puis croît. D'abord g(0) = −2 + 2 = 0 : 0 est solution. Comme g décroît à partir de 0, g(x) < 0 sur ]0 ; 1] (g(1) = 2 − e ≈ −0,72), donc aucune autre solution dans ]0 ; 1]. Puis g est continue et strictement croissante sur [1 ; 2], avec g(1) < 0 et g(2) = 2 > 0 : le théorème des valeurs intermédiaires donne un unique α dans ]1 ; 2[ (α ≈ 1,59), et g > 0 au-delà ✓. Contrôle : g(1,5) ≈ −0,24 et g(1,6) ≈ 0,02. La réponse « seulement 0 » oublie que g remonte après son minimum. La réponse « seulement α » oublie que 0 est une borne de l'intervalle et une solution. La réponse « 0 et un réel de ]0 ; 1[ » oublie que g reste négative tant qu'elle décroît.",
+      "difficulty": 3
+    }
+  ]
+}

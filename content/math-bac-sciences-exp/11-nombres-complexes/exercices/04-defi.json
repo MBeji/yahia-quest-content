@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des nombres complexes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Quelle est l'écriture exponentielle re^(iθ), avec r > 0 et θ dans ]−π ; π], du nombre z = −3e^(iπ/5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3e^(−iπ/5)"
+        },
+        {
+          "id": "b",
+          "text": "3e^(i6π/5)"
+        },
+        {
+          "id": "c",
+          "text": "3e^(−i4π/5)"
+        },
+        {
+          "id": "d",
+          "text": "3e^(i4π/5)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le facteur −1 s'écrit e^(iπ) : z = 3e^(iπ/5) e^(iπ) = 3e^(i6π/5). L'angle 6π/5 sort de ]−π ; π] ; on retranche 2π : 6π/5 − 2π = −4π/5, d'où z = 3e^(−i4π/5) ✓. Contrôle : z est l'opposé d'un point du premier quadrant, donc dans le troisième quadrant, où l'argument est négatif entre −π et −π/2 ✓. La réponse « 3e^(−iπ/5) » change le signe de l'angle au lieu d'ajouter π : c'est 3 fois le conjugué de e^(iπ/5), pas son opposé. La réponse « 3e^(i6π/5) » représente bien z, mais son angle est hors de l'intervalle demandé. La réponse « 3e^(i4π/5) » correspond au symétrique par rapport à l'axe des ordonnées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout réel θ, le nombre sin θ + i cos θ s'écrit e^(iφ) avec :",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ = π/2 − θ"
+        },
+        {
+          "id": "b",
+          "text": "φ = θ − π/2"
+        },
+        {
+          "id": "c",
+          "text": "φ = θ + π/2"
+        },
+        {
+          "id": "d",
+          "text": "φ = −θ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On utilise cos(π/2 − θ) = sin θ et sin(π/2 − θ) = cos θ : sin θ + i cos θ = cos(π/2 − θ) + i sin(π/2 − θ) = e^(i(π/2 − θ)) ✓. Contrôle en θ = 0 : sin 0 + i cos 0 = i = e^(iπ/2) ✓. La réponse φ = θ − π/2 donne e^(i(θ − π/2)) = −i e^(iθ) = sin θ − i cos θ. La réponse φ = θ + π/2 donne i e^(iθ) = −sin θ + i cos θ. La réponse φ = −θ donne cos θ − i sin θ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "En calculant le produit (1 + i√3)(1 + i), quelle est la valeur exacte de cos(7π/12) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√6 − √2)/4"
+        },
+        {
+          "id": "b",
+          "text": "(√2 − √6)/4"
+        },
+        {
+          "id": "c",
+          "text": "(√6 + √2)/4"
+        },
+        {
+          "id": "d",
+          "text": "−(√6 + √2)/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "|1 + i√3| = 2 et arg ≡ π/3 ; |1 + i| = √2 et arg ≡ π/4. Le produit a pour module 2√2 et pour argument π/3 + π/4 = 7π/12. Par ailleurs (1 + i√3)(1 + i) = 1 + i + i√3 − √3 = (1 − √3) + i(1 + √3). En identifiant les parties réelles, 2√2 cos(7π/12) = 1 − √3, donc cos(7π/12) = (1 − √3)/(2√2) = (√2 − √6)/4 ✓. Contrôle numérique : (1,414 − 2,449)/4 ≈ −0,259 = cos 105° ✓, négatif car 7π/12 > π/2. La réponse « (√6 − √2)/4 » est l'opposée : elle ignore le signe. La réponse « (√6 + √2)/4 » est cos(π/12), la partie réelle voisine. La dernière est −cos(π/12), soit cos(11π/12).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout réel x, sin²x cos³x est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2cos x + cos 3x + cos 5x)/16"
+        },
+        {
+          "id": "b",
+          "text": "(2cos x − cos 3x − cos 5x)/8"
+        },
+        {
+          "id": "c",
+          "text": "(cos x − cos 3x − cos 5x)/16"
+        },
+        {
+          "id": "d",
+          "text": "(2cos x − cos 3x − cos 5x)/16"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par Euler : sin²x cos³x = −(e^(ix) − e^(−ix))²(e^(ix) + e^(−ix))³/32. On regroupe (e^(ix) − e^(−ix))(e^(ix) + e^(−ix)) = e^(2ix) − e^(−2ix), d'où (e^(2ix) − e^(−2ix))²(e^(ix) + e^(−ix)) = (e^(4ix) − 2 + e^(−4ix))(e^(ix) + e^(−ix)) = 2cos 5x + 2cos 3x − 4cos x, et sin²x cos³x = (2cos x − cos 3x − cos 5x)/16 ✓. Une voie courte : sin²x cos³x = cos x (sin x cos x)² = cos x · sin²2x/4 = cos x (1 − cos 4x)/8, et cos x cos 4x = (cos 5x + cos 3x)/2, ce qui donne le même résultat. Contrôle en x = π/4 : sin² = 1/2 et cos³ = √2/4, donc le produit vaut √2/8 ≈ 0,177, et (√2 + √2/2 + √2/2)/16 = 2√2/16 = √2/8 ✓. L'expression avec les trois signes + donnerait 0 en x = π/4. L'expression divisée par 8 donnerait 0,354, deux fois trop. L'expression qui commence par cos x seul perd un facteur 2 et donnerait 0,133.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit φ ∈ ]0 ; π[ et z = ½(sin φ − i(1 + cos φ)). Quels sont le module et un argument de z ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Module sin(φ/2) et argument φ/2"
+        },
+        {
+          "id": "b",
+          "text": "Module cos(φ/2) et argument φ/2 − π/2"
+        },
+        {
+          "id": "c",
+          "text": "Module cos(φ/2) et argument φ/2"
+        },
+        {
+          "id": "d",
+          "text": "Module sin(φ/2) et argument φ/2 − π/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec l'angle moitié : sin φ = 2 sin(φ/2)cos(φ/2) et 1 + cos φ = 2cos²(φ/2). Donc z = cos(φ/2)(sin(φ/2) − i cos(φ/2)). Or sin a − i cos a = cos(a − π/2) + i sin(a − π/2) avec a = φ/2. Comme φ/2 ∈ ]0 ; π/2[, cos(φ/2) > 0 est bien le module, et un argument est φ/2 − π/2 ✓. Contrôle en φ = π/2 : z = ½(1 − i), de module √2/2 = cos(π/4) et d'argument −π/4 = π/4 − π/2 ✓. Les deux réponses à module sin(φ/2) se trompent de fonction : quand φ tend vers 0, z tend vers −i, de module 1 = cos 0, alors que sin 0 = 0. La réponse « module cos(φ/2) et argument φ/2 » oublie le facteur −i, c'est-à-dire la rotation de −π/2 : en φ = π/2 elle décrirait ½(1 + i) au lieu de ½(1 − i).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sur la figure, le repère est orthonormé direct, OAB est un triangle équilatéral de côté 2 (A est sur l'axe des abscisses, B au-dessus) et OACB est un losange. Quels sont le module et un argument de l'affixe de C ?\n<svg viewBox=\"0 0 280 205\"><title>Le losange OACB : OAB est un triangle équilatéral de côté 2, A est sur l'axe des abscisses</title><path d=\"M15 170 H260\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M40 200 V15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M260 170 l-8 -4 l0 8 z\" fill=\"#0f172a\"/><path d=\"M40 15 l-4 8 l8 0 z\" fill=\"#0f172a\"/><polygon points=\"40,170 140,170 190,83.4 90,83.4\" fill=\"#0f6e56\" opacity=\"0.10\"/><polygon points=\"40,170 140,170 190,83.4 90,83.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\"/><path d=\"M140 170 L90 83.4\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><circle cx=\"40\" cy=\"170\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"140\" cy=\"170\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"90\" cy=\"83.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"190\" cy=\"83.4\" r=\"4\" fill=\"#0f172a\"/><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"32\" y=\"186\" text-anchor=\"end\" fill=\"#0f172a\">O</text><text x=\"140\" y=\"186\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"82\" y=\"77.4\" text-anchor=\"end\" fill=\"#0f172a\">B</text><text x=\"198\" y=\"77.4\" text-anchor=\"start\" fill=\"#0f172a\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Module 2√3 et argument π/6"
+        },
+        {
+          "id": "b",
+          "text": "Module 2√3 et argument π/3"
+        },
+        {
+          "id": "c",
+          "text": "Module 4 et argument π/6"
+        },
+        {
+          "id": "d",
+          "text": "Module 4 et argument π/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "OACB est un parallélogramme (un losange), donc OC⃗ = OA⃗ + OB⃗ et z_C = z_A + z_B. Ici z_A = 2 et z_B = 2e^(iπ/3) = 1 + i√3, donc z_C = 3 + i√3. Son module est √(9 + 3) = 2√3 et cos θ = 3/(2√3) = √3/2, sin θ = 1/2, donc θ = π/6 ✓. Contrôle géométrique : la diagonale [OC] d'un losange coupe l'angle AOB (qui vaut π/3) en deux, d'où un argument π/6, et sa longueur est 2 × 2cos(π/6) = 2√3 ✓. L'argument π/3 est celui de B, pas de C. Le module 4 serait celui de la somme de deux vecteurs colinéaires de longueur 2 ; les deux vecteurs font ici un angle de π/3.",
+      "difficulty": 3
+    }
+  ]
+}

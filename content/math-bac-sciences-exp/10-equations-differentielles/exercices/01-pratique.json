@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les équations différentielles",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Parmi ces fonctions définies sur ℝ, laquelle est solution de l'équation différentielle y′ = −3y ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ −3e^x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ e^(3x)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ xe^(−3x)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ e^(−3x)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour tester une candidate, on la dérive et on réinjecte. Avec f(x) = e^(−3x) : f′(x) = −3e^(−3x) = −3f(x) pour tout x, donc f est solution ✓ (c'est aussi la formule ke^(ax) avec a = −3 et k = 1). La réponse « x ↦ e^(3x) » vérifie f′ = +3f : c'est une solution de y′ = 3y. La réponse « x ↦ −3e^x » place −3 devant l'exponentielle et non dans l'exposant : sa dérivée −3e^x vaut f, alors que −3f(x) = 9e^x. La réponse « x ↦ xe^(−3x) » n'est pas de la forme ke^(−3x) : sa dérivée e^(−3x) − 3xe^(−3x) ne vaut −3xe^(−3x) que si e^(−3x) = 0, ce qui n'arrive jamais.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Déterminer la solution f sur ℝ de l'équation différentielle y′ = −4y qui vérifie f(0) = 5.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ −5e^(−4x)"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ −4e^(5x)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ 5e^(−4x)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 5e^(4x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les solutions de y′ = −4y sont les x ↦ ke^(−4x) ; la condition f(0) = ke^0 = k = 5 fixe k, d'où f(x) = 5e^(−4x) ✓. Double contrôle : f′(x) = −20e^(−4x) = −4f(x) et f(0) = 5. La réponse « x ↦ 5e^(4x) » satisfait f(0) = 5 mais résout y′ = 4y : le signe de l'exposant est inversé. La réponse « x ↦ −5e^(−4x) » perd le signe de la condition initiale et donne f(0) = −5. La réponse « x ↦ −4e^(5x) » échange les rôles de a et de k.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la solution sur ℝ de l'équation différentielle y′ = −2y telle que f′(0) = 6. Que vaut f(0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−12"
+        },
+        {
+          "id": "b",
+          "text": "−3"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'équation elle-même transforme une donnée sur f′ en une donnée sur f : puisque f′(x) = −2f(x) pour tout x, on a f′(0) = −2f(0), soit 6 = −2f(0), donc f(0) = −3 ✓ (contrôle : f(x) = −3e^(−2x), et f′(0) = 6 ✓). La réponse 3 perd le signe de a : elle résout 6 = 2f(0). Les réponses 12 et −12 multiplient 6 par 2 au lieu de diviser par −2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces fonctions définies sur ℝ, laquelle est solution de l'équation différentielle y′ = 2y − 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ e^(2x) − 2"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ e^(2x) + 2"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ e^(−2x) + 2"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ 2e^(2x) − 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'équation est du type y′ = ay + b avec a = 2 et b = −4 : ses solutions sont les x ↦ ke^(2x) − b/a = ke^(2x) + 2, et x ↦ e^(2x) + 2 correspond à k = 1 ✓. Vérification : f′(x) = 2e^(2x) et 2f(x) − 4 = 2e^(2x) + 4 − 4 = 2e^(2x). La réponse « x ↦ e^(2x) − 2 » prend +b/a : 2f(x) − 4 = 2e^(2x) − 8 ≠ f′(x). La réponse « x ↦ e^(−2x) + 2 » inverse le signe de l'exposant : f′(x) = −2e^(−2x) alors que 2f(x) − 4 = 2e^(−2x). La réponse « x ↦ 2e^(2x) − 4 » recopie b : f′(x) = 4e^(2x) alors que 2f(x) − 4 = 4e^(2x) − 12.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la solution sur ℝ de l'équation différentielle y′ = 4y − 8 telle que f(2) = 3. Alors f(x) est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "3e^(4(x − 2)) + 2"
+        },
+        {
+          "id": "b",
+          "text": "e^(4(x + 2)) + 2"
+        },
+        {
+          "id": "c",
+          "text": "e^(4(x − 2)) + 2"
+        },
+        {
+          "id": "d",
+          "text": "5e^(4(x − 2)) − 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ici −b/a = 8/4 = 2, donc f(x) = ke^(4x) + 2. La condition f(2) = ke^8 + 2 = 3 donne k = e^(−8), d'où f(x) = e^(4x − 8) + 2 = e^(4(x − 2)) + 2 ✓ (formule du cours : (y₀ + b/a)e^(a(x − x₀)) − b/a avec y₀ + b/a = 3 − 2 = 1). Contrôle : f(2) = 1 + 2 = 3 ✓. La réponse « 3e^(4(x − 2)) + 2 » prend k = y₀ et donne f(2) = 5. La réponse « e^(4(x + 2)) + 2 » se trompe de signe sur x₀ : f(2) = e^16 + 2. La réponse « 5e^(4(x − 2)) − 2 » prend b/a = +2 dans la formule (y₀ + b/a)e^(a(x − x₀)) − b/a : elle vérifie f(2) = 3, mais la constante −2 n'annule pas 4y − 8 (4 × (−2) − 8 = −16).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la solution sur ℝ de l'équation différentielle y′ = −2y telle que f(0) = 8. Que vaut f(ln 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "32"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a f(x) = 8e^(−2x), donc f(ln 2) = 8e^(−2 ln 2) = 8 × (e^(ln 2))^(−2) = 8 × 2^(−2) = 8/4 = 2 ✓. La réponse 4 traite l'exposant −2 ln 2 comme −ln 2 et divise seulement par 2. La réponse 32 perd le signe de l'exposant : 8 × 2² = 32. La réponse 16 multiplie par e^(ln 2) = 2 au lieu de diviser par 4.",
+      "difficulty": 2
+    }
+  ]
+}

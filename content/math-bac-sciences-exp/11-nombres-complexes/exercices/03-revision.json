@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Nombres complexes",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Les points A, B et C ont pour affixes 1 + i, 4 + 5i et 9 + 5i. Quelle est la nature du triangle ABC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isocèle en B, sans angle droit"
+        },
+        {
+          "id": "b",
+          "text": "Isocèle et rectangle en B"
+        },
+        {
+          "id": "c",
+          "text": "Équilatéral"
+        },
+        {
+          "id": "d",
+          "text": "Rectangle en A, non isocèle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "AB = |3 + 4i| = 5 et BC = |5| = 5 : le triangle est isocèle en B. Pour l'angle droit en B, il faudrait que le quotient (z_C − z_B)/(z_A − z_B) = 5/(−3 − 4i) soit imaginaire pur ; il vaut (−3 + 4i)/5, ni réel ni imaginaire. Autre test : AC² = |8 + 4i|² = 80 alors que AB² + BC² = 50, donc pas de Pythagore ✓. Il n'est pas équilatéral car AC = 4√5 ≈ 8,94 ≠ 5. Il n'est pas rectangle en A : on aurait alors AB² + AC² = BC², soit 25 + 80 = 25, ce qui est faux.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le nombre complexe z qui vérifie z − 2z̄ = 3 + 6i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 + 2i"
+        },
+        {
+          "id": "b",
+          "text": "−3 − 2i"
+        },
+        {
+          "id": "c",
+          "text": "−3 + 6i"
+        },
+        {
+          "id": "d",
+          "text": "−3 + 2i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On pose z = x + iy avec x et y réels : z − 2z̄ = x + iy − 2x + 2iy = −x + 3iy. Par unicité de la forme algébrique, −x = 3 et 3y = 6, donc x = −3 et y = 2 ✓. Contrôle : (−3 + 2i) − 2(−3 − 2i) = −3 + 2i + 6 + 4i = 3 + 6i ✓. La réponse « 3 + 2i » oublie le signe de x. La réponse « −3 − 2i » oublie le signe de y. La réponse « −3 + 6i » prend 3y = 6 pour y = 6 et oublie de diviser par 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'affixe du symétrique du point M(4 − 3i) par rapport à l'axe des ordonnées ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 + 3i"
+        },
+        {
+          "id": "b",
+          "text": "−4 − 3i"
+        },
+        {
+          "id": "c",
+          "text": "−4 + 3i"
+        },
+        {
+          "id": "d",
+          "text": "−3 − 4i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le point M a pour coordonnées (4 ; −3). Sa symétrie par rapport à l'axe des ordonnées change l'abscisse en son opposée sans toucher à l'ordonnée : (−4 ; −3), soit −4 − 3i ✓ (c'est −z̄ pour z = 4 − 3i). La réponse « 4 + 3i » est le conjugué de z, symétrique par rapport à l'axe des abscisses. La réponse « −4 + 3i » est −z, symétrique par rapport à O. La réponse « −3 − 4i » échange les deux coordonnées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le nombre complexe non nul z a pour argument 5π/12. Quel est un argument de −2z̄ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−7π/12"
+        },
+        {
+          "id": "b",
+          "text": "−5π/12"
+        },
+        {
+          "id": "c",
+          "text": "7π/12"
+        },
+        {
+          "id": "d",
+          "text": "5π/12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "arg(z̄) ≡ −5π/12. Le facteur −2 est un réel négatif, donc on ajoute π : arg(−2z̄) ≡ π − 5π/12 = 7π/12 ✓. Contrôle géométrique : z̄ est sous l'axe des abscisses, son opposé −z̄ est le symétrique de z par rapport à l'axe des ordonnées, d'argument π − 5π/12 = 7π/12 ✓. La réponse −5π/12 est un argument de z̄ seul : elle oublie le facteur négatif. La réponse 5π/12 est un argument de z. La réponse −7π/12 ajoute π puis change le signe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'écriture exponentielle de 1 − e^(i2π/3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(iπ/3)"
+        },
+        {
+          "id": "b",
+          "text": "√3 e^(iπ/3)"
+        },
+        {
+          "id": "c",
+          "text": "3e^(−iπ/6)"
+        },
+        {
+          "id": "d",
+          "text": "√3 e^(−iπ/6)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec θ = 2π/3 : 1 − e^(iθ) = −2i sin(θ/2) e^(iθ/2) = −2i sin(π/3) e^(iπ/3) = −i√3 e^(iπ/3). Comme −i = e^(−iπ/2), on obtient √3 e^(i(π/3 − π/2)) = √3 e^(−iπ/6) ✓. Contrôle direct : 1 − (−1/2 + i√3/2) = 3/2 − i√3/2, de module √(9/4 + 3/4) = √3 et d'argument −π/6 (cosinus √3/2, sinus −1/2) ✓. La réponse « e^(iπ/3) » est 1 + e^(i2π/3), avec le mauvais signe. La réponse « √3 e^(iπ/3) » oublie le facteur −i. La réponse « 3e^(−iπ/6) » se trompe sur le module.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit θ ∈ ]0 ; π/2[. Les points A, M et P ont pour affixes 1, e^(iθ) et 1 + e^(iθ), si bien que OAPM est un parallélogramme. Pour quelles valeurs de θ les diagonales (OP) et (AM) sont-elles perpendiculaires ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seulement pour θ = π/4"
+        },
+        {
+          "id": "b",
+          "text": "Pour toutes les valeurs de θ"
+        },
+        {
+          "id": "c",
+          "text": "Seulement pour θ = π/3"
+        },
+        {
+          "id": "d",
+          "text": "Pour aucune valeur de θ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les diagonales ont pour affixes 1 + e^(iθ) et e^(iθ) − 1. Avec l'angle moitié : 1 + e^(iθ) = 2cos(θ/2) e^(iθ/2) et e^(iθ) − 1 = 2i sin(θ/2) e^(iθ/2). Le quotient vaut cos(θ/2)/(i sin(θ/2)) = −i/tan(θ/2), imaginaire pur pour tout θ de ]0 ; π/2[ ✓. Géométriquement, OA = OM = 1 : le parallélogramme est toujours un losange, et les diagonales d'un losange sont perpendiculaires. Contrôle en θ = π/3 : (3/2 + i√3/2)/(−1/2 + i√3/2) = −i√3, imaginaire pur, et −i/tan(π/6) = −i√3 ✓. Les valeurs particulières π/4 et π/3 ne sont donc pas les seules.",
+      "difficulty": 3
+    }
+  ]
+}
