@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Le noyau atomique",
+  "questions": [
+    {
+      "prompt": "Le noyau de cuivre ⁶⁵₂₉Cu contient :",
+      "options": [
+        {
+          "id": "a",
+          "text": "29 protons et 65 neutrons"
+        },
+        {
+          "id": "b",
+          "text": "29 protons et 94 neutrons"
+        },
+        {
+          "id": "c",
+          "text": "36 protons et 29 neutrons"
+        },
+        {
+          "id": "d",
+          "text": "29 protons et 36 neutrons"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Z = 29 donne le nombre de protons, et N = A − Z = 65 − 29 = 36 neutrons ✓. Annoncer 65 neutrons confond A, nombre total de nucléons, avec N. Annoncer 94 neutrons additionne A et Z au lieu de les soustraire. Annoncer 36 protons et 29 neutrons inverse les rôles de Z et de N.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle paire est formée de noyaux isotopes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "⁴⁰₁₈Ar et ⁴⁰₂₀Ca"
+        },
+        {
+          "id": "b",
+          "text": "¹³₆C et ¹⁴₇N"
+        },
+        {
+          "id": "c",
+          "text": "²⁰₁₀Ne et ²²₁₀Ne"
+        },
+        {
+          "id": "d",
+          "text": "¹²₆C et ²⁴₁₂Mg"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Des isotopes ont le même Z et des nombres de masse différents : ²⁰₁₀Ne et ²²₁₀Ne ont Z = 10 et 10 puis 12 neutrons ✓. ⁴⁰₁₈Ar et ⁴⁰₂₀Ca ont le même A mais des Z différents (18 et 20). ¹³₆C et ¹⁴₇N ont le même nombre de neutrons (7) et pas le même Z. ¹²₆C et ²⁴₁₂Mg ont des Z différents (6 et 12) : le rapport A/Z identique n'en fait pas des isotopes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'interaction forte, qui assure la cohésion du noyau, est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "attractive, quels que soient les deux nucléons concernés"
+        },
+        {
+          "id": "b",
+          "text": "attractive, mais seulement entre deux protons"
+        },
+        {
+          "id": "c",
+          "text": "répulsive, comme l'interaction électrique entre deux protons"
+        },
+        {
+          "id": "d",
+          "text": "attractive, de même nature que l'attraction gravitationnelle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'interaction forte est attractive et ne dépend pas de la nature des nucléons : elle s'exerce entre protons, entre neutrons et entre un proton et un neutron ✓. La limiter aux protons oublie les neutrons, qu'elle lie aussi. Une force répulsive disloquerait le noyau : la répulsion entre protons est de nature électrique. L'attraction gravitationnelle entre nucléons est bien trop faible pour assurer la cohésion.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle expression donne le défaut de masse du noyau ᴬ_Z X, de masse m_X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δm = A·m_p − m_X"
+        },
+        {
+          "id": "b",
+          "text": "Δm = m_X − [Z·m_p + (A − Z)·m_n]"
+        },
+        {
+          "id": "c",
+          "text": "Δm = Z·m_p + (A − Z)·m_n − m_X"
+        },
+        {
+          "id": "d",
+          "text": "Δm = Z·m_p + A·m_n − m_X"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le défaut de masse est la masse des nucléons séparés et au repos (Z protons et A − Z neutrons) moins la masse du noyau ✓. L'expression renversée donne une valeur négative, alors que Δm > 0. A·m_p traite tous les nucléons comme des protons. Z·m_p + A·m_n compte les neutrons A fois au lieu de A − Z fois.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un noyau de 30 nucléons, dont 15 protons, a un défaut de masse Δm = 0,2400 u (1 u = 931,5 MeV·c⁻²). Quelle est son énergie de liaison par nucléon ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,0080 MeV"
+        },
+        {
+          "id": "b",
+          "text": "7,45 MeV"
+        },
+        {
+          "id": "c",
+          "text": "14,9 MeV"
+        },
+        {
+          "id": "d",
+          "text": "223,6 MeV"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E_ℓ = Δm × 931,5 = 0,2400 × 931,5 = 223,6 MeV, puis E_ℓ/A = 223,6 / 30 = 7,45 MeV ✓. 223,6 MeV est l'énergie de liaison elle-même : la division par A est oubliée. 14,9 MeV divise par le nombre de protons (15) au lieu du nombre de nucléons. 0,0080 MeV divise Δm par A (0,2400 / 30) sans faire la conversion de u en MeV.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un noyau X a A = 90 et E_ℓ = 780 MeV ; un noyau Y a A = 235 et E_ℓ = 1 790 MeV. Lequel est le plus stable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Y : son nombre de nucléons A = 235 est le plus grand"
+        },
+        {
+          "id": "b",
+          "text": "X : son énergie de liaison E_ℓ = 780 MeV est la plus petite"
+        },
+        {
+          "id": "c",
+          "text": "Y : son énergie de liaison E_ℓ = 1 790 MeV est la plus grande"
+        },
+        {
+          "id": "d",
+          "text": "X : son E_ℓ/A = 8,67 MeV est la plus grande"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux noyaux de A différents se comparent par E_ℓ/A : pour X, 780 / 90 = 8,67 MeV ; pour Y, 1 790 / 235 = 7,62 MeV. X est le plus stable ✓. Une énergie de liaison plus petite n'est pas un critère de stabilité. L'énergie de liaison de Y est plus grande parce qu'il a plus de nucléons, pas parce qu'il est plus lié. Le nombre de nucléons ne mesure pas la stabilité.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -58,11 +58,11 @@
         },
         {
           "id": "d",
-          "text": "0,30 cm"
+          "text": "3,8 cm"
         }
       ],
       "correctOption": "c",
-      "explanation": "m·ω = 2,5 kg/s et k/ω = 1,6 kg/s, donc Z = √(1,2² + (2,5 − 1,6)²) = √2,25 = 1,5 kg/s. Alors V_m = F_m / Z = 0,45 / 1,5 = 0,30 m/s et X_m = V_m / ω = 0,30 / 10 = 0,030 m = 3,0 cm ✓. 30 cm prend V_m pour X_m, sans diviser par ω. 1,1 cm additionne m·ω et k/ω (Z = 4,3 kg/s) au lieu de les soustraire. 0,30 cm divise V_m par ω².",
+      "explanation": "m·ω = 2,5 kg/s et k/ω = 1,6 kg/s, donc Z = √(1,2² + (2,5 − 1,6)²) = √2,25 = 1,5 kg/s. Alors V_m = F_m / Z = 0,45 / 1,5 = 0,30 m/s et X_m = V_m / ω = 0,30 / 10 = 0,030 m = 3,0 cm ✓. 30 cm prend V_m pour X_m, sans diviser par ω. 1,1 cm additionne m·ω et k/ω (Z = 4,3 kg/s) au lieu de les soustraire. 3,8 cm prend X_m = F_m/(h·ω) = 0,45/12, en oubliant le terme (mω − k/ω).",
       "difficulty": 3
     },
     {
@@ -78,7 +78,7 @@
         },
         {
           "id": "c",
-          "text": "6,0 kg/s"
+          "text": "4,3 kg/s"
         },
         {
           "id": "d",
@@ -86,7 +86,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "N₀ = (1/2π)√(k/m) = 10 / 6,283 = 1,59 Hz, donc N₀² = 2,533 Hz². Avec N_r = 1,44 Hz, N_r² = 2,074 Hz². De N_r² = N₀² − h²/(8π²m²), on tire h² = 8π² m² (N₀² − N_r²) = 19,74 × 0,459 = 9,07, donc h = 3,0 kg/s ✓. 2,1 kg/s utilise 4π² au lieu de 8π². 6,0 kg/s oublie le carré de la masse. 9,1 kg/s donne h² sans en prendre la racine.",
+      "explanation": "N₀ = (1/2π)√(k/m) = 10 / 6,283 = 1,59 Hz, donc N₀² = 2,533 Hz². Avec N_r = 1,44 Hz, N_r² = 2,074 Hz². De N_r² = N₀² − h²/(8π²m²), on tire h² = 8π² m² (N₀² − N_r²) = 19,74 × 0,459 = 9,07, donc h = 3,0 kg/s ✓. 2,1 kg/s utilise 4π² au lieu de 8π². 4,3 kg/s oublie le carré de la masse : √(8π² × 0,50 × 0,459) = √18,1 = 4,3. 9,1 kg/s donne h² sans en prendre la racine.",
       "difficulty": 3
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "type": "numeric",
-      "prompt": "Un pendule (m = 0,10 kg ; k = 40 N/m ; h = 0,50 kg/s) est excité par une force d'amplitude F_m = 0,30 N ; la fréquence du moteur est réglée de façon que l'amplitude de la vitesse soit maximale. Calculer la puissance mécanique moyenne reçue, en mW.",
+      "prompt": "Un pendule (m = 0,20 kg ; k = 50 N/m ; h = 0,50 kg/s) est excité par une force d'amplitude F_m = 0,30 N ; la fréquence du moteur est réglée de façon que l'amplitude de la vitesse soit maximale. Calculer la puissance mécanique moyenne reçue, en mW.",
       "answerKey": {
         "value": 90,
         "tolerance": 1,

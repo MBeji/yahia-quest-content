@@ -1,0 +1,165 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Spectre atomique",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Dans un spectroscope à réseau, quel élément sépare les radiations de la lumière qui le traverse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le condenseur"
+        },
+        {
+          "id": "b",
+          "text": "La fente"
+        },
+        {
+          "id": "c",
+          "text": "Le réseau"
+        },
+        {
+          "id": "d",
+          "text": "La lentille"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le disperseur du spectroscope, ici le réseau (ou un prisme dans un autre montage), sépare les radiations selon leur longueur d'onde ✓. Le condenseur concentre la lumière de la source, la fente limite le faisceau et la lentille en forme l'image sur l'écran : aucun des trois ne trie les radiations.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "De la lumière blanche traverse de la vapeur de sodium, puis est analysée avec un spectroscope. Quel spectre obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un spectre continu coupé par une raie noire, à la position de la raie jaune d'émission du sodium"
+        },
+        {
+          "id": "b",
+          "text": "Une seule raie jaune brillante sur un fond sombre"
+        },
+        {
+          "id": "c",
+          "text": "Un spectre continu complet, sans raie, car la vapeur est transparente"
+        },
+        {
+          "id": "d",
+          "text": "Un fond sombre traversé de plusieurs raies colorées caractéristiques du sodium"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La vapeur absorbe les radiations qu'elle émettrait elle-même : le spectre est le continu de la lumière blanche, avec une raie noire à la position de la raie jaune d'émission du sodium ✓. Une raie jaune brillante sur fond sombre, ou plusieurs raies colorées sur fond sombre, sont des spectres d'émission, obtenus sans lumière blanche. Un continu sans raie ignore que la vapeur absorbe certaines radiations.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans l'atome d'hydrogène, la distance noyau–électron vaut r = 2,0×10⁻¹⁰ m. Quelle est la valeur de la force coulombienne F = k·e²/r² qui s'exerce entre eux ? (k = 9×10⁹ N·m²·C⁻² ; e = 1,6×10⁻¹⁹ C)",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,2×10⁻¹⁸ N"
+        },
+        {
+          "id": "b",
+          "text": "5,8×10⁻⁹ N"
+        },
+        {
+          "id": "c",
+          "text": "1,2×10⁻⁸ N"
+        },
+        {
+          "id": "d",
+          "text": "36 N"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "F = 9×10⁹ × (1,6×10⁻¹⁹)² / (2,0×10⁻¹⁰)² = 9×10⁹ × 2,56×10⁻³⁸ / 4,0×10⁻²⁰ = 5,8×10⁻⁹ N ✓. Le résultat 1,2×10⁻¹⁸ N oublie d'élever r au carré. Le résultat 1,2×10⁻⁸ N élève au carré seulement 10⁻¹⁰ et oublie le facteur 2,0. Le résultat 36 N oublie d'élever e au carré.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Calculer en eV l'énergie qu'un atome d'hydrogène doit absorber pour passer du niveau n = 1 au niveau n = 3 (E₀ = 13,6 eV).",
+      "answerKey": {
+        "value": 12.09,
+        "tolerance": 0.05,
+        "unit": "eV"
+      },
+      "explanation": "ΔE = E₃ − E₁ = −1,51 − (−13,6) = 12,09 eV, soit E₀·(1 − 1/9) = 13,6 × 8/9 = 12,09 eV ✓. Le calcul avec E₃ seul, 1,51 eV, donnerait l'énergie d'un niveau et non l'écart entre deux niveaux.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un atome passe d'un niveau d'énergie −2,0 eV à un niveau d'énergie −4,4 eV en émettant un photon. Quelle est la fréquence de ce photon ? (h = 6,62×10⁻³⁴ J·s ; 1 eV = 1,6×10⁻¹⁹ J)",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,7×10⁻¹⁵ Hz"
+        },
+        {
+          "id": "b",
+          "text": "5,8×10¹⁴ Hz"
+        },
+        {
+          "id": "c",
+          "text": "1,5×10¹⁵ Hz"
+        },
+        {
+          "id": "d",
+          "text": "3,6×10³³ Hz"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'écart est |−4,4 − (−2,0)| = 2,4 eV, soit 2,4 × 1,6×10⁻¹⁹ = 3,84×10⁻¹⁹ J. Alors ν = W/h = 3,84×10⁻¹⁹ / 6,62×10⁻³⁴ = 5,8×10¹⁴ Hz ✓. Le résultat 1,7×10⁻¹⁵ inverse le quotient (h/W). Le résultat 1,5×10¹⁵ additionne les valeurs 2,0 et 4,4 au lieu de les soustraire. Le résultat 3,6×10³³ oublie la conversion en joules.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le spectre de l'étoile A s'étend du rouge jusqu'au violet ; celui de l'étoile B s'arrête dans le jaune, sans bleu ni violet. Que peut-on dire de leurs températures de surface ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étoile B est plus chaude que l'étoile A"
+        },
+        {
+          "id": "b",
+          "text": "Les deux étoiles ont la même température ; seule leur composition diffère"
+        },
+        {
+          "id": "c",
+          "text": "On ne peut rien dire sans connaître leurs vitesses"
+        },
+        {
+          "id": "d",
+          "text": "L'étoile A est plus chaude que l'étoile B"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Plus une étoile est chaude, plus son spectre continu s'étend vers le violet : A, qui atteint le violet, est plus chaude que B ✓. Inverser le raisonnement, en pensant que le rouge signale la chaleur, donne l'erreur contraire : les étoiles rouges sont les plus froides. La composition se lit dans les raies, non dans l'extension du spectre. La vitesse décale les raies, elle ne change pas l'extension du spectre continu.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le spectre d'une galaxie, la raie Hα est observée à 660 nm, alors qu'elle est mesurée à 656 nm au laboratoire. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La galaxie contient un autre élément que l'hydrogène"
+        },
+        {
+          "id": "b",
+          "text": "La galaxie est plus chaude que le laboratoire"
+        },
+        {
+          "id": "c",
+          "text": "La galaxie se rapproche de nous"
+        },
+        {
+          "id": "d",
+          "text": "La galaxie s'éloigne de nous"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La longueur d'onde a augmenté (660 nm > 656 nm), donc la fréquence a diminué : la raie est décalée vers le rouge, ce qui signifie que la galaxie s'éloigne ✓. Un décalage vers le violet indiquerait un rapprochement. La raie est bien celle de l'hydrogène : seule sa position a bougé, pas son identité. La température ne décale pas une raie, elle modifie l'extension du spectre continu.",
+      "difficulty": 2
+    }
+  ]
+}

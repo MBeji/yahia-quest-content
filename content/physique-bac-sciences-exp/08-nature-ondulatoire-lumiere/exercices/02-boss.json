@@ -1,0 +1,141 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la diffraction",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Dans une cuve à ondes, la lame vibre à N = 25 Hz et la fente a pour largeur a = 2,0 cm. À une première profondeur d'eau, la célérité est 0,25 m/s ; en augmentant la profondeur, elle devient 0,45 m/s. Que devient le quotient λ/a, et que devient la diffraction ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "λ/a passe de 0,50 à 0,90 : la diffraction devient plus marquée"
+        },
+        {
+          "id": "b",
+          "text": "λ/a passe de 0,50 à 0,90 : la diffraction devient moins marquée"
+        },
+        {
+          "id": "c",
+          "text": "λ/a passe de 0,50 à 0,28 : la diffraction devient moins marquée"
+        },
+        {
+          "id": "d",
+          "text": "λ/a reste égal à 0,50 : la diffraction ne change pas"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "À N fixée, λ = v/N : λ₁ = 0,25/25 = 1,0 cm et λ₂ = 0,45/25 = 1,8 cm, donc λ/a passe de 1,0/2,0 = 0,50 à 1,8/2,0 = 0,90. Le quotient augmente, donc la diffraction devient plus marquée ✓. Conclure qu'elle est moins marquée inverse la règle. Un quotient de 0,28 suppose que λ diminue quand la célérité augmente. Un quotient inchangé suppose que λ ne dépend pas de la profondeur, alors que la célérité en dépend.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un laser de longueur d'onde 600 nm éclaire une fente de largeur a = 0,090 mm. L'écran est à D = 1,50 m de la fente. Quelle est la largeur L de la tache centrale, en mm ? (petits angles)",
+      "answerKey": {
+        "value": 20.0,
+        "tolerance": 0.5,
+        "unit": "mm"
+      },
+      "explanation": "L = 2λD/a = 2 × 6,00 × 10⁻⁷ × 1,50 / 9,0 × 10⁻⁵ = 2,0 × 10⁻² m = 20 mm ✓. Oublier le facteur 2 donnerait 10 mm ; oublier de convertir a de mm en m donnerait un résultat 1 000 fois trop petit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un laser de longueur d'onde 450 nm éclaire une fente de largeur 0,060 mm. L'écran est d'abord à D = 2,00 m, puis reculé à D' = 4,00 m. Quelle est la demi-largeur angulaire θ de la tache centrale lorsque l'écran est à D' ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,8 × 10⁻³ rad"
+        },
+        {
+          "id": "b",
+          "text": "7,5 × 10⁻³ rad"
+        },
+        {
+          "id": "c",
+          "text": "1,5 × 10⁻² rad"
+        },
+        {
+          "id": "d",
+          "text": "3,0 × 10⁻² rad"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À D' = 4,00 m, L' = 2λD'/a = 2 × 4,5 × 10⁻⁷ × 4,00 / 6,0 × 10⁻⁵ = 6,0 × 10⁻² m, donc θ = L'/(2D') = 6,0 × 10⁻² / 8,00 = 7,5 × 10⁻³ rad ✓ ; c'est aussi la valeur à D = 2,00 m, puisque θ ne dépend pas de D. 1,5 × 10⁻² rad vient de L'/D', sans le facteur 2. 3,0 × 10⁻² rad prend le demi-segment L'/2 pour un angle. 3,8 × 10⁻³ rad divise l'ancienne largeur (3,0 × 10⁻² m) par 2D', sans mettre L à jour.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec la même fente, on éclaire successivement deux lasers. Le laser A, de longueur d'onde 633 nm, donne une tache centrale de 18 mm avec l'écran à 2,0 m de la fente. Le laser B donne aussi une tache centrale de 18 mm, mais avec l'écran à 3,0 m. Quelle est la longueur d'onde du laser B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "950 nm"
+        },
+        {
+          "id": "b",
+          "text": "633 nm"
+        },
+        {
+          "id": "c",
+          "text": "422 nm"
+        },
+        {
+          "id": "d",
+          "text": "281 nm"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour la même fente, L est proportionnelle à λ·D, donc λB/λA = (LB/LA) × (DA/DB) = (18/18) × (2,0/3,0) = 2/3, soit λB = 633 × 2/3 = 422 nm ✓. 633 nm conclut de l'égalité des largeurs à l'égalité des longueurs d'onde, en oubliant que les écrans ne sont pas à la même distance. 950 nm vient du rapport des distances pris à l'envers. 281 nm élève le rapport 2/3 au carré.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un faisceau de lumière bleue arrive au centre I de la face plane d'un hémicylindre de verre, sous l'incidence i = 50° (figure). Pour cette radiation, l'indice du verre est n = 1,528. Quelle est la déviation D, angle entre le rayon incident prolongé et le rayon qui sort, au dixième de degré près ?\n<svg viewBox=\"0 0 340 210\"><title>Hémicylindre de verre : un rayon bleu arrive en I, centre de la face plane, avec l'angle d'incidence i ; il est réfracté dans le verre, traverse le verre le long d'un rayon et sort sans nouvelle déviation ; le pointillé gris prolonge le rayon incident</title><path d=\"M86 100 A84 84 0 0 0 254 100 Z\" fill=\"#bfdbfe\" opacity=\"0.6\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"170\" y1=\"20\" x2=\"170\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\" stroke-linecap=\"round\"/><line x1=\"101.1\" y1=\"42.1\" x2=\"170\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><polygon points=\"170,100 165.8,91.8 161.3,97.2\" fill=\"#0f172a\"/><line x1=\"170\" y1=\"100\" x2=\"212.1\" y2=\"172.7\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"212.1\" y1=\"172.7\" x2=\"227.1\" y2=\"198.6\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"100\" x2=\"257.3\" y2=\"173.3\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\" stroke-linecap=\"round\"/><circle cx=\"170\" cy=\"100\" r=\"3.5\" fill=\"#b45309\"/><text x=\"182\" y=\"92\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >I</text><path d=\"M170 70 A30 30 0 0 0 147 80.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"158\" y=\"62\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >i</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "80,1°"
+        },
+        {
+          "id": "b",
+          "text": "30,1°"
+        },
+        {
+          "id": "c",
+          "text": "19,9°"
+        },
+        {
+          "id": "d",
+          "text": "19,6°"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Descartes donne sin r = sin 50°/1,528 = 0,7660/1,528 = 0,5013, donc r = 30,1°. Le rayon sort de l'hémicylindre sans nouvelle déviation, donc D = i − r = 50 − 30,1 = 19,9° ✓. 30,1° est l'angle de réfraction r, pas la déviation. 80,1° additionne i et r au lieu de les soustraire. 19,6° vient de l'indice du rouge (1,514) utilisé à la place de celui du bleu.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une radiation de fréquence 6,00 × 10¹⁴ Hz passe de l'air dans un verre d'indice n = 1,50. Quelle est sa longueur d'onde dans le verre ? (c = 3,00 × 10⁸ m/s ; l'air est assimilé au vide)",
+      "options": [
+        {
+          "id": "a",
+          "text": "222 nm"
+        },
+        {
+          "id": "b",
+          "text": "333 nm"
+        },
+        {
+          "id": "c",
+          "text": "500 nm"
+        },
+        {
+          "id": "d",
+          "text": "750 nm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans le vide, λ₀ = c/ν = 3,00 × 10⁸ / 6,00 × 10¹⁴ = 500 nm. Dans le verre, λ = λ₀/n = 500/1,50 = 333 nm ✓. 500 nm oublie que la longueur d'onde change dans le verre. 750 nm multiplie par n au lieu de diviser. 222 nm divise par n deux fois, comme si v = c/n² intervenait aussi.",
+      "difficulty": 3
+    }
+  ]
+}

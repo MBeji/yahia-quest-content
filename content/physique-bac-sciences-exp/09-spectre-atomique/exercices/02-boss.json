@@ -1,0 +1,128 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des niveaux",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Dans une expérience de type Franck et Hertz, un gaz est dans son état fondamental ; son premier état excité se situe 5,2 eV au-dessus. Un électron d'énergie cinétique 8,0 eV subit un choc inélastique qui amène un atome dans ce premier état excité. Quelle est l'énergie cinétique de l'électron après le choc ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,8 eV"
+        },
+        {
+          "id": "b",
+          "text": "5,2 eV"
+        },
+        {
+          "id": "c",
+          "text": "8,0 eV"
+        },
+        {
+          "id": "d",
+          "text": "13,2 eV"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'atome reçoit exactement 5,2 eV ; par conservation de l'énergie, l'électron repart avec 8,0 − 5,2 = 2,8 eV ✓. Le nombre 5,2 eV est l'énergie cédée, non l'énergie restante. Le nombre 8,0 eV serait celle d'un choc élastique, où rien n'est cédé. Le nombre 13,2 eV additionne au lieu de soustraire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les niveaux d'un atome sont représentés sur le schéma, avec leurs énergies.\n<svg viewBox=\"0 0 330 200\"><title>Niveaux d'énergie d'un atome : E₁ = −8,0 eV (fondamental), E₂ = −4,4 eV, E₃ = −2,0 eV, E₄ = −0,8 eV, et le niveau 0 eV de l'atome ionisé</title><line x1=\"30\" y1=\"20\" x2=\"30\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"30,14 26.5,21 33.5,21\" fill=\"#0f172a\"/><text x=\"36\" y=\"12\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Énergie (eV)</text><line x1=\"60\" y1=\"24\" x2=\"200\" y2=\"24\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><text x=\"206\" y=\"28\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0 (ionisé)</text><line x1=\"60\" y1=\"38.4\" x2=\"200\" y2=\"38.4\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"206\" y=\"42.4\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">E₄ = −0,8 eV</text><line x1=\"60\" y1=\"60.0\" x2=\"200\" y2=\"60.0\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"206\" y=\"64.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">E₃ = −2,0 eV</text><line x1=\"60\" y1=\"103.2\" x2=\"200\" y2=\"103.2\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"206\" y=\"107.2\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">E₂ = −4,4 eV</text><line x1=\"60\" y1=\"168.0\" x2=\"200\" y2=\"168.0\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"206\" y=\"172.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">E₁ = −8,0 eV</text></svg>\nL'atome est dans son état fondamental. Quel photon peut être absorbé en l'amenant dans un état excité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un photon de 2,0 eV"
+        },
+        {
+          "id": "b",
+          "text": "Un photon de 4,4 eV"
+        },
+        {
+          "id": "c",
+          "text": "Un photon de 6,0 eV"
+        },
+        {
+          "id": "d",
+          "text": "Un photon de 6,8 eV"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Depuis E₁ = −8,0 eV, les écarts vers les niveaux excités sont E₂ − E₁ = 3,6 eV, E₃ − E₁ = −2,0 − (−8,0) = 6,0 eV et E₄ − E₁ = 7,2 eV ; un photon de 6,0 eV amène l'atome en E₃ ✓. Le nombre 2,0 eV est la valeur absolue de E₃, non un écart depuis le fondamental. De même 4,4 eV est celle de E₂. Et 6,8 eV ne correspond à aucun écart depuis le fondamental, ni à l'ionisation qui demande 8,0 eV : ce photon serait diffusé.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un atome d'hydrogène passe du niveau n = 5 au niveau n = 3. Calculer en nm la longueur d'onde du photon émis, arrondie à l'unité (E₀ = 13,6 eV ; h = 6,62×10⁻³⁴ J·s ; c = 3,00×10⁸ m/s ; 1 eV = 1,6×10⁻¹⁹ J).",
+      "answerKey": {
+        "value": 1283,
+        "tolerance": 10,
+        "unit": "nm"
+      },
+      "explanation": "ΔE = E₀·(1/3² − 1/5²) = 13,6 × (1/9 − 1/25) = 13,6 × 16/225 = 0,967 eV, soit 0,967 × 1,6×10⁻¹⁹ = 1,547×10⁻¹⁹ J. Alors λ = h·c/ΔE = 1,986×10⁻²⁵ / 1,547×10⁻¹⁹ = 1,283×10⁻⁶ m = 1283 nm ✓, une radiation infrarouge (au-delà de 800 nm). Oublier de convertir les eV en joules, ou prendre l'énergie du niveau n = 3 comme énergie du photon (1,51 eV, soit 821 nm), donnerait un résultat faux.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un atome a pour niveaux E₁ = −9,0 eV ; E₂ = −5,0 eV ; E₃ = −2,5 eV ; E₄ = −1,2 eV. Parmi ces désexcitations, laquelle émet la radiation de plus grande longueur d'onde ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E₂ → E₁"
+        },
+        {
+          "id": "b",
+          "text": "E₃ → E₂"
+        },
+        {
+          "id": "c",
+          "text": "E₄ → E₁"
+        },
+        {
+          "id": "d",
+          "text": "E₄ → E₃"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme λ = h·c/W, la plus grande longueur d'onde correspond au photon le moins énergétique, donc au plus petit écart. Les écarts valent : E₂ → E₁ : 4,0 eV ; E₃ → E₂ : 2,5 eV ; E₄ → E₁ : 7,8 eV ; E₄ → E₃ : −1,2 − (−2,5) = 1,3 eV. Le plus petit est 1,3 eV, soit λ ≈ 955 nm ✓. Le plus grand écart, 7,8 eV, donne au contraire la plus petite longueur d'onde (159 nm). Le saut E₂ → E₁ vaut 4,0 eV : ce n'est ni le plus petit écart, ni le plus grand.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un photon de 2,55 eV rencontre un atome d'hydrogène qui se trouve dans le niveau n = 2. Quel est son sort ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Absorbé : l'atome gagne le niveau n = 3"
+        },
+        {
+          "id": "b",
+          "text": "Absorbé : l'atome gagne le niveau n = 4"
+        },
+        {
+          "id": "c",
+          "text": "Absorbé : l'atome perd son électron"
+        },
+        {
+          "id": "d",
+          "text": "Renvoyé tel quel, sans transfert d'énergie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'énergie de l'atome est E₂ = −3,40 eV. Après absorption : −3,40 + 2,55 = −0,85 eV, ce qui est exactement E₄ = −13,6/16 ✓ : le photon est absorbé et l'atome passe à n = 4. Le passage à n = 3 demanderait 1,89 eV. L'ionisation depuis n = 2 demanderait au moins 3,40 eV. La diffusion ne se produirait que si 2,55 eV ne correspondait à aucun écart, ce qui n'est pas le cas.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un atome d'hydrogène dans son état fondamental absorbe un photon de longueur d'onde 80,0 nm : il est ionisé. Quelle est l'énergie cinétique de l'électron éjecté, en eV ? (h = 6,62×10⁻³⁴ J·s ; c = 3,00×10⁸ m/s ; 1 eV = 1,6×10⁻¹⁹ J ; E₀ = 13,6 eV)",
+      "answerKey": {
+        "value": 1.92,
+        "tolerance": 0.05,
+        "unit": "eV"
+      },
+      "explanation": "W = h·c/λ = 6,62×10⁻³⁴ × 3,00×10⁸ / 8,00×10⁻⁸ = 2,48×10⁻¹⁸ J, soit 2,48×10⁻¹⁸ / 1,6×10⁻¹⁹ = 15,5 eV. L'ionisation consomme 13,6 eV ; l'excédent est l'énergie cinétique de l'électron : Ec = 15,5 − 13,6 = 1,9 eV, soit 1,92 eV avec les valeurs non arrondies ✓. Donner 15,5 eV oublierait l'énergie d'ionisation.",
+      "difficulty": 3
+    }
+  ]
+}

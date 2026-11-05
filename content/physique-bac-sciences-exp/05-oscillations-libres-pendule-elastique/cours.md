@@ -377,8 +377,8 @@ Quelle grandeur mécanique joue le rôle de L, de R, de 1/C ?
 ::: exemple Traduire un pendule en circuit
 
 1. On prend un pendule de masse m = 0,50 kg, de raideur k = 32 N·m⁻¹ et de coefficient de frottement h = 0,20 N·s·m⁻¹. Il correspond à L = 0,50 H, à 1/C = 32 F⁻¹ et à R = 0,20 Ω.
-2. De 1/C = 32 on tire C = 1/32 = 3,1·10⁻² F.
-3. La période propre du circuit est alors T₀ = 2π·√(L·C) = 2π·√(0,50 × 3,1·10⁻²) ≈ 2π × 0,125 ≈ 0,785 s, la même que celle du pendule, 2π·√(0,50/32) ≈ 0,785 s ✓.
+2. De 1/C = 32 on tire C = 1/32 = 3,125·10⁻² F (≈ 3,1·10⁻² F).
+3. La période propre du circuit est alors T₀ = 2π·√(L·C) = 2π·√(0,50 × 3,125·10⁻²) = 2π × 0,125 ≈ 0,785 s, la même que celle du pendule, 2π·√(0,50/32) ≈ 0,785 s ✓.
 4. Les pertes se correspondent aussi : dE/dt = −h·v² pour le pendule devient dE/dt = −R·i² pour le circuit (effet Joule).
 
 :::
@@ -390,11 +390,11 @@ Quelle grandeur mécanique joue le rôle de L, de R, de 1/C ?
 :::
 
 ::: verifie À toi : de l'électrique au mécanique
-Un circuit LC (sans résistance) a L = 0,20 H et C = 5,0 µF. Quel pendule élastique est équivalent : quelle masse m et quelle raideur k ? Vérifie la période propre.
+Un circuit LC (sans résistance) a L = 0,20 H et C = 0,050 F. Quel pendule élastique est équivalent : quelle masse m et quelle raideur k ? Vérifie la période propre.
 
 ---
 
-m correspond à L : m = 0,20 kg. k correspond à 1/C : k = 1/(5,0·10⁻⁶) = 2,0·10⁵ N·m⁻¹. Période du circuit : T₀ = 2π·√(0,20 × 5,0·10⁻⁶) = 2π·√(1,0·10⁻⁶) = 2π·1,0·10⁻³ ≈ 6,3·10⁻³ s. Période du pendule : 2π·√(0,20/2,0·10⁵) = 2π·1,0·10⁻³ ≈ 6,3·10⁻³ s ✓.
+m correspond à L : m = 0,20 kg. k correspond à 1/C : k = 1/0,050 = 20 N·m⁻¹. Période du circuit : T₀ = 2π·√(0,20 × 0,050) = 2π·√(1,0·10⁻²) = 2π × 0,10 ≈ 0,63 s. Période du pendule : 2π·√(0,20/20) = 2π × 0,10 ≈ 0,63 s ✓.
 :::
 
 ::: retenir

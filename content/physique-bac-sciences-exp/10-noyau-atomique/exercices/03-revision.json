@@ -1,0 +1,128 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le noyau atomique",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Comment définit-on l'unité de masse atomique u ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le douzième de la masse d'un atome de carbone 12"
+        },
+        {
+          "id": "b",
+          "text": "La masse d'un proton"
+        },
+        {
+          "id": "c",
+          "text": "La masse d'un neutron"
+        },
+        {
+          "id": "d",
+          "text": "Le douzième de la masse d'un atome de carbone 14"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par définition, 1 u est le douzième de la masse d'un atome de carbone 12, soit 19,93 × 10⁻²⁷ / 12 = 1,66 × 10⁻²⁷ kg ✓. Un proton (1,00728 u) et un neutron (1,00867 u) ont une masse proche de 1 u, mais différente. Le carbone 14 n'est pas l'atome de référence.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la relation 1 u = 931,5 MeV·c⁻², le MeV·c⁻² est une unité de :",
+      "options": [
+        {
+          "id": "a",
+          "text": "énergie"
+        },
+        {
+          "id": "b",
+          "text": "masse"
+        },
+        {
+          "id": "c",
+          "text": "quantité de mouvement"
+        },
+        {
+          "id": "d",
+          "text": "vitesse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le MeV est une énergie, et l'énergie de masse vaut E₀ = m·c², donc m = E₀ / c² : une énergie divisée par c² est une masse ✓. L'énergie s'exprime en MeV tout court. Une quantité de mouvement ou une vitesse n'ont pas cette dimension.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le noyau d'aluminium ²⁷₁₃Al a une masse m = 26,97441 u. Quelle est son énergie de masse, en MeV, arrondie à l'unité ? (1 u = 931,5 MeV·c⁻²)",
+      "answerKey": {
+        "value": 25127,
+        "tolerance": 1,
+        "unit": "MeV"
+      },
+      "explanation": "E₀ = m × 931,5 = 26,97441 × 931,5 = 25127 MeV ✓ (2,5127 × 10⁴ MeV). Une masse exprimée en u se convertit directement en énergie de masse en MeV avec le facteur 931,5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On dissocie un noyau au repos en nucléons séparés et au repos, en lui fournissant l'énergie E_ℓ. Que devient la masse totale du système ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle diminue de Δm = E_ℓ / c²"
+        },
+        {
+          "id": "b",
+          "text": "Elle ne change pas, la masse étant indépendante de l'énergie"
+        },
+        {
+          "id": "c",
+          "text": "Elle augmente de Δm = E_ℓ · c²"
+        },
+        {
+          "id": "d",
+          "text": "Elle augmente de Δm = E_ℓ / c²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'énergie fournie devient énergie de masse des nucléons séparés : la masse augmente de Δm = E_ℓ / c², et c'est le défaut de masse du noyau ✓. Une diminution irait à l'inverse de l'énergie apportée. Une masse inchangée ignore l'équivalence masse-énergie. E_ℓ · c² n'a pas la dimension d'une masse : il faut diviser par c².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces noyaux, lequel ne peut pas être stable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "¹⁶₈O"
+        },
+        {
+          "id": "b",
+          "text": "⁵⁶₂₆Fe"
+        },
+        {
+          "id": "c",
+          "text": "⁶⁰₃₀Zn"
+        },
+        {
+          "id": "d",
+          "text": "²⁰⁸₈₂Pb"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Au-delà de Z = 20, un noyau stable a un excès de neutrons (N > Z). ⁶⁰₃₀Zn a N = 60 − 30 = 30 = Z : pas d'excès, il ne peut pas être stable ✓. ¹⁶₈O a Z = 8 et N = 8, ce qui convient pour un noyau léger. ⁵⁶₂₆Fe (N = 30 > 26) et ²⁰⁸₈₂Pb (N = 126 > 82) respectent la règle.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le noyau de chlore ³⁵₁₇Cl a pour masse m = 34,95953 u. Calculer son énergie de liaison par nucléon, en MeV, arrondie au centième (m_p = 1,00728 u ; m_n = 1,00867 u ; 1 u = 931,5 MeV·c⁻²).",
+      "answerKey": {
+        "value": 8.52,
+        "tolerance": 0.02,
+        "unit": "MeV"
+      },
+      "explanation": "³⁵₁₇Cl compte 17 protons et 18 neutrons : 17 × 1,00728 + 18 × 1,00867 = 35,27982 u, donc Δm = 35,27982 − 34,95953 = 0,32029 u. Puis E_ℓ = 0,32029 × 931,5 = 298,35 MeV et E_ℓ/A = 298,35 / 35 = 8,52 MeV ✓.",
+      "difficulty": 2
+    }
+  ]
+}

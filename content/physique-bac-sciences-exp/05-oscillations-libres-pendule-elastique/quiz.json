@@ -78,11 +78,11 @@
       "options": [
         {
           "id": "a",
-          "text": "d²x/dt² − (k/m)·x = 0"
+          "text": "m·d²x/dt² − k·x = 0"
         },
         {
           "id": "b",
-          "text": "d²x/dt² + (m/k)·x = 0"
+          "text": "d²x/dt² + k·m·x = 0"
         },
         {
           "id": "c",
@@ -90,11 +90,11 @@
         },
         {
           "id": "d",
-          "text": "d²x/dt² + √(k/m)·x = 0"
+          "text": "d²x/dt² + (k/m)·dx/dt = 0"
         }
       ],
       "correctOption": "c",
-      "explanation": "La relation fondamentale de la dynamique projetée sur x′x donne −k·x = m·d²x/dt², soit d²x/dt² + (k/m)·x = 0 ✓, avec ω₀² = k/m. Le signe « − » correspondrait à une force qui éloigne de O, non à une force de rappel. Le rapport m/k est le rapport retourné. Le coefficient √(k/m) est la pulsation ω₀ : il faut ω₀² devant x.",
+      "explanation": "La relation fondamentale de la dynamique projetée sur x′x donne −k·x = m·d²x/dt², soit d²x/dt² + (k/m)·x = 0 ✓, avec ω₀² = k/m. Le signe « − » devant k·x correspondrait à une force qui éloigne de O, non à une force de rappel. Le produit k·m n'a pas la dimension de ω₀² (s⁻²) : c'est le rapport k/m qu'il faut. Le coefficient (k/m) multiplie ici dx/dt au lieu de x : on confond l'élongation et sa dérivée.",
       "difficulty": 1
     },
     {
@@ -102,7 +102,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Elle est entièrement cinétique : E = ½·m·V_m²"
+          "text": "Elle est entièrement cinétique, la vitesse étant maximale"
         },
         {
           "id": "b",
