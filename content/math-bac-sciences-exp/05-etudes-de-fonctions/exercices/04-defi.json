@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les pivots de la courbe",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "On donne f(x) = (2x³ − 3x² − 2)/(x − 1)², définie sur ℝ ∖ {1}, de courbe C, et la droite D : y = 2x + 1. Que peut-on dire de C par rapport à D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C est au-dessus de D sur ℝ ∖ {1}"
+        },
+        {
+          "id": "b",
+          "text": "C est au-dessus de D sur ]1 ; +∞[ et au-dessous de D sur ]−∞ ; 1["
+        },
+        {
+          "id": "c",
+          "text": "C est au-dessous de D sur ]1 ; +∞[ et au-dessus de D sur ]−∞ ; 1["
+        },
+        {
+          "id": "d",
+          "text": "C est au-dessous de D sur ℝ ∖ {1}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(2x + 1)(x − 1)² = 2x³ − 3x² + 1, donc f(x) − (2x + 1) = (2x³ − 3x² − 2 − 2x³ + 3x² − 1)/(x − 1)² = −3/(x − 1)², soit f(x) = 2x + 1 − 3/(x − 1)². Le carré est positif des deux côtés de 1 : la différence est négative sur ℝ ∖ {1} et C est au-dessous de D ✓. Le piège courant traite (x − 1)² comme (x − 1) : on y verrait un changement de côté en 1, alors que le signe de −3/(x − 1)² ne change pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour quelles valeurs de a et b la courbe de f(x) = (ax² + bx + 1)/(x − 1) admet-elle la droite y = 2x + 3 pour asymptote oblique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 2 et b = 5"
+        },
+        {
+          "id": "b",
+          "text": "a = 2 et b = 3"
+        },
+        {
+          "id": "c",
+          "text": "a = 2 et b = 1"
+        },
+        {
+          "id": "d",
+          "text": "a = 2 et b = −1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On divise : ax² + bx + 1 = (ax + a + b)(x − 1) + (a + b + 1), donc f(x) = ax + (a + b) + (a + b + 1)/(x − 1) et l'asymptote oblique est y = ax + (a + b). On l'identifie à y = 2x + 3 : a = 2 et a + b = 3, soit b = 1 ✓ (alors f(x) = 2x + 3 + 4/(x − 1)). La valeur b = 3 lit directement la constante de la droite, b = 5 utilise b − a = 3, et b = −1 utilise a − b = 3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h(x) = x⁴ − 4x³, avec h′(x) = 4x²(x − 3) et h″(x) = 12x(x − 2). Quelle affirmation sur la courbe de h est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle a exactement deux points d'inflexion, d'abscisses 0 et 2"
+        },
+        {
+          "id": "b",
+          "text": "Elle n'a aucun point d'inflexion, car h″ s'annule deux fois"
+        },
+        {
+          "id": "c",
+          "text": "Elle a un seul point d'inflexion, d'abscisse 0, car h′(0) = 0"
+        },
+        {
+          "id": "d",
+          "text": "Elle a un point d'inflexion d'abscisse 3, car h′(3) = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "h″(x) = 12x(x − 2) s'annule en 0 et en 2 et change de signe en chacun (positive avant 0, négative sur ]0 ; 2[, positive après 2) : deux points d'inflexion ✓. Deux annulations de h″ ne suppriment pas les changements de signe. h′(0) = 0 donne seulement une tangente horizontale, et l'inflexion en 2 existe aussi. En 3, h′ s'annule en passant du négatif au positif : c'est un minimum, non une inflexion.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = 1 + x/√(x² + 3). On admet que f est une bijection de ℝ sur ]0 ; 2[, que f′(x) = 3/(x² + 3)^(3/2), et on note f⁻¹ sa réciproque. Que vaut (f⁻¹)′(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8/3"
+        },
+        {
+          "id": "b",
+          "text": "√3"
+        },
+        {
+          "id": "c",
+          "text": "1/√3"
+        },
+        {
+          "id": "d",
+          "text": "3/8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(f⁻¹)′(1) = 1/f′(f⁻¹(1)). Comme f(0) = 1, on a f⁻¹(1) = 0, et f′(0) = 3/3^(3/2) = 1/√3, donc (f⁻¹)′(1) = √3 ✓. La valeur 1/√3 oublie d'inverser, 3/8 = f′(1) prend 1 pour antécédent de 1, et 8/3 = 1/f′(1) fait la même confusion en inversant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour quelle valeur de a la courbe de f(x) = √(x² + ax) admet-elle la droite y = x + 3 pour asymptote en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6"
+        },
+        {
+          "id": "b",
+          "text": "3/2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x > 0, f(x) − x = (x² + ax − x²)/(f(x) + x) = ax/(f(x) + x) = a/(f(x)/x + 1), qui tend vers a/2 car f(x)/x tend vers 1. L'asymptote est donc y = x + a/2, et l'identification avec y = x + 3 donne a/2 = 3, soit a = 6 ✓ (contrôle : f(100) = √10 600 ≈ 102,96 et x + 3 = 103). La valeur a = 3 lit la constante de la droite sans diviser par 2, a = −6 se trompe de signe, et a = 3/2 divise deux fois par 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(u) = u/(2 − u), croissante sur ]−∞ ; 2[, et h(x) = f(sin x) = sin x/(2 − sin x), définie sur ℝ. Sur lequel de ces intervalles h est-elle décroissante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−π/2 ; π/2]"
+        },
+        {
+          "id": "b",
+          "text": "[0 ; π]"
+        },
+        {
+          "id": "c",
+          "text": "[π ; 2π]"
+        },
+        {
+          "id": "d",
+          "text": "[π/2 ; 3π/2]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "h = f∘sin avec f croissante : h varie dans le même sens que sin. Sur [π/2 ; 3π/2], sin décroît de 1 à −1, donc h décroît de 1 à −1/3 ✓. Sur [−π/2 ; π/2], sin croît, donc h croît. Sur [0 ; π], sin croît puis décroît ; sur [π ; 2π], sin décroît jusqu'à 3π/2 puis croît : h n'y est pas monotone.",
+      "difficulty": 3
+    }
+  ]
+}

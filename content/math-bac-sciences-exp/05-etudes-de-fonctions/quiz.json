@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Études de fonctions",
+  "questions": [
+    {
+      "prompt": "Quelle limite prouve que la droite x = 5 est asymptote verticale à la courbe de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "lim x→+∞ f(x) = 5"
+        },
+        {
+          "id": "b",
+          "text": "lim x→5⁺ f(x) = 0"
+        },
+        {
+          "id": "c",
+          "text": "lim x→+∞ [f(x) − 5x] = 0"
+        },
+        {
+          "id": "d",
+          "text": "lim x→5⁻ f(x) = −∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une asymptote verticale x = 5 exige une limite infinie quand x tend vers 5, d'un côté au moins : lim x→5⁻ f(x) = −∞ convient ✓. La limite 5 en +∞ donne la droite horizontale y = 5, pas x = 5. La limite 0 en 5 est finie : la courbe passe par un point ordinaire. Et lim [f(x) − 5x] = 0 décrit l'asymptote oblique y = 5x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La droite x = 2 est axe de symétrie de la courbe de f, et f(−1) = 7. Que vaut f(5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−7"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "14"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le symétrique de −1 par rapport à 2 est 2 × 2 − (−1) = 5, et un axe de symétrie impose la même image : f(5) = f(−1) = 7 ✓. La valeur −7 est celle d'un centre de symétrie (2 ; 0), pas d'un axe. La valeur 5 est l'abscisse du point symétrique, pas son ordonnée. La valeur 14 additionne les deux ordonnées.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est l'ensemble de définition de f(x) = √(x² − 9) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; −3[ ∪ ]3 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; −3] ∪ [3 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "[−3 ; 3]"
+        },
+        {
+          "id": "d",
+          "text": "[3 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x) existe quand x² − 9 ≥ 0, soit (x − 3)(x + 3) ≥ 0, donc x ≤ −3 ou x ≥ 3 : D = ]−∞ ; −3] ∪ [3 ; +∞[ ✓, bornes incluses car √0 = 0 existe. L'union d'intervalles ouverts exclut à tort −3 et 3. L'intervalle [−3 ; 3] est celui où x² − 9 ≤ 0. Et [3 ; +∞[ oublie les x ≤ −3 : pour x = −4, x² − 9 = 7 ≥ 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une fonction f vérifie : f(x) tend vers +∞ quand x tend vers +∞, et f(x)/x tend vers 0. Que peut-on affirmer sur sa courbe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle admet une branche parabolique de direction l'axe des abscisses"
+        },
+        {
+          "id": "b",
+          "text": "Elle admet une branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "c",
+          "text": "Elle admet la droite y = x pour direction asymptotique"
+        },
+        {
+          "id": "d",
+          "text": "Elle admet une asymptote oblique de pente non nulle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand f(x) tend vers l'infini, on regarde f(x)/x : une limite nulle donne une branche parabolique de direction l'axe des abscisses ✓ (comme √x, qui monte sans fin mais de plus en plus lentement). Une limite infinie donnerait la direction de l'axe des ordonnées. La direction asymptotique y = x et l'asymptote oblique de pente non nulle exigent une limite de f(x)/x non nulle (1 pour y = x).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le centre de symétrie de la courbe de f(x) = (x − 3)³ + 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−3 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "(3 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "(3 ; −2)"
+        },
+        {
+          "id": "d",
+          "text": "(2 ; 3)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour W(a ; b), il faut f(2a − x) = 2b − f(x). Avec a = 3 et b = 2 : f(6 − x) = (3 − x)³ + 2 = −(x − 3)³ + 2 = 4 − [(x − 3)³ + 2] = 2b − f(x) ✓, donc W(3 ; 2). Le point (−3 ; 2) change le signe de l'abscisse, (3 ; −2) celui de l'ordonnée, et (2 ; 3) échange les deux coordonnées.",
+      "difficulty": 2
+    }
+  ]
+}

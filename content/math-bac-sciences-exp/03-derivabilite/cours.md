@@ -149,7 +149,7 @@ f est **dérivable sur [a ; b]** si elle est dérivable sur ]a ; b[, à droite e
 
 ::: propriete
 Pour étudier une fonction définie par morceaux en a, on calcule séparément f′_g(a) et f′_d(a) à partir des taux d'accroissement, puis on les compare.
-Cas limite : si le taux tend vers +∞ ou −∞, f n'est pas dérivable en a et la courbe a une **tangente verticale**. Ainsi x ↦ √x n'est pas dérivable à droite en 0, car (√x − 0)/x = 1/√x tend vers +∞.
+Cas limite : si le taux tend vers +∞ ou −∞, f n'est pas dérivable en a et la courbe a une **demi-tangente verticale**. Ainsi x ↦ √x n'est pas dérivable à droite en 0, car (√x − 0)/x = 1/√x tend vers +∞.
 :::
 
 ::: verifie À toi : un point anguleux
@@ -161,7 +161,7 @@ h(3) = 0. Pour x > 3, x² − 9 > 0 : le taux est (x² − 9)/(x − 3) = x + 3 
 :::
 
 ::: retenir
-f est dérivable en a exactement quand f′_g(a) = f′_d(a) ; la continuité ne suffit pas, et un taux qui tend vers ±∞ donne une tangente verticale.
+f est dérivable en a exactement quand f′_g(a) = f′_d(a) ; la continuité ne suffit pas, et un taux qui tend vers ±∞ donne une demi-tangente verticale.
 :::
 
 ## 🔮 Dérivées usuelles, opérations et composée
@@ -347,7 +347,7 @@ La corde AB a pour pente 120 km/h, la vitesse moyenne ; la tangente orange est p
 ::: propriete
 **Théorème des accroissements finis** : soit a < b. Si f est continue sur [a ; b] et dérivable sur ]a ; b[, il existe c de ]a ; b[ tel que f(b) − f(a) = f′(c)(b − a). Graphiquement, une tangente est parallèle à la corde AB. Rolle en est le cas f(a) = f(b) ; la preuve applique Rolle à g(x) = f(x) − ((f(b) − f(a))/(b − a))(x − a).
 **Inégalité des accroissements finis** : si f est continue sur [a ; b], dérivable sur ]a ; b[ et si m ≤ f′(x) ≤ M sur ]a ; b[, alors m(b − a) ≤ f(b) − f(a) ≤ M(b − a). En particulier, si |f′(x)| ≤ M sur un intervalle I, alors |f(b) − f(a)| ≤ M|b − a| pour tous a et b de I.
-Cas limite : c existe mais n'est pas unique ni forcément calculable ; l'inégalité sert précisément quand on ne le calcule pas.
+Cas limite : c existe mais n'est pas forcément unique ni calculable ; l'inégalité sert précisément quand on ne le calcule pas.
 :::
 
 ::: verifie À toi : un c de parabole
