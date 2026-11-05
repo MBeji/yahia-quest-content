@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des courbes sans fin",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Calculer lim_{x→0⁺} (e^(3x) − 1)/√x.",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x > 0, (e^(3x) − 1)/√x = 3√x × (e^(3x) − 1)/(3x). Avec t = 3x → 0, (e^t − 1)/t → 1, et 3√x → 0 : la limite vaut 0 ✓. Contrôle en x = 10⁻⁴ : e^(0,0003) − 1 ≈ 3,0 × 10⁻⁴, divisé par 0,01, soit environ 0,03, déjà proche de 0. La valeur 3 applique (e^(3x) − 1)/x → 3 en oubliant que le dénominateur est √x et non x. La valeur 1 applique (e^t − 1)/t → 1 sans ajuster la variable ni le dénominateur. La valeur +∞ lit 0/0⁺ comme un quotient divergent, alors que le numérateur tend aussi vers 0, et plus vite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x² − 3x + 1)e^x. Déterminer l'intervalle de ℝ sur lequel f′(x) ≤ 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−1 ; 2]"
+        },
+        {
+          "id": "b",
+          "text": "[−2 ; 1]"
+        },
+        {
+          "id": "c",
+          "text": "]−∞ ; 3/2]"
+        },
+        {
+          "id": "d",
+          "text": "]−∞ ; −1] ∪ [2 ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par la dérivée d'un produit, f′(x) = (2x − 3)e^x + (x² − 3x + 1)e^x = (x² − x − 2)e^x = (x − 2)(x + 1)e^x. Comme e^x > 0, f′ a le signe du trinôme (x − 2)(x + 1), négatif entre ses racines −1 et 2 : f′ est négative, donc f décroît, sur [−1 ; 2] ✓. Contrôle : f′(0) = −2 < 0 et f′(3) = 4e³ > 0. L'intervalle [−2 ; 1] vient des racines lues avec le mauvais signe. L'intervalle ]−∞ ; 3/2] ne garde que le terme (2x − 3)e^x, en oubliant que e^x est lui aussi dérivé. La réunion lit le signe du trinôme à l'envers : c'est là que f croît.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer I = ∫₀^(π/2) e^(−x) sin x dx.",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = (1 + e^(−π/2))/2"
+        },
+        {
+          "id": "b",
+          "text": "I = (1 − e^(−π/2))/2"
+        },
+        {
+          "id": "c",
+          "text": "I = 1 − e^(−π/2)"
+        },
+        {
+          "id": "d",
+          "text": "I = (e^(−π/2) − 1)/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux intégrations par parties. Avec f = sin x et g′ = e^(−x), g = −e^(−x) : I = [−e^(−x) sin x]₀^(π/2) + ∫₀^(π/2) e^(−x) cos x dx = −e^(−π/2) + J. Puis J = [−e^(−x) cos x]₀^(π/2) − ∫₀^(π/2) e^(−x) sin x dx = 1 − I. Donc I = −e^(−π/2) + 1 − I, soit 2I = 1 − e^(−π/2) et I = (1 − e^(−π/2))/2 ≈ 0,396 ✓. Contrôle : l'intégrande est positif et inférieur à 0,33, sur une largeur 1,57 : I > 0 et I < 0,52. La réponse (1 + e^(−π/2))/2 perd le signe du crochet. La réponse 1 − e^(−π/2) s'arrête à 2I sans diviser par 2. La réponse (e^(−π/2) − 1)/2 est négative, ce qui est impossible pour une intégrale d'un intégrande positif : le signe de g a été oublié.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = a e^x + b e^(−x), où a et b sont deux réels. On sait que f(0) = 6 et f′(0) = 2. Que vaut f(ln 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(ln 2) = 6"
+        },
+        {
+          "id": "b",
+          "text": "f(ln 2) = 8"
+        },
+        {
+          "id": "c",
+          "text": "f(ln 2) = 9"
+        },
+        {
+          "id": "d",
+          "text": "f(ln 2) = 12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a f(0) = a + b = 6 et f′(x) = a e^x − b e^(−x), donc f′(0) = a − b = 2 : a = 4 et b = 2. Alors f(ln 2) = 4e^(ln 2) + 2e^(−ln 2) = 4 × 2 + 2 × 1/2 = 9 ✓. Contrôle : f(0) = 4 + 2 = 6 et f′(0) = 4 − 2 = 2. La valeur 6 correspond à a = 2 et b = 4 : le signe de b e^(−x) a été oublié en dérivant, d'où a − b lu comme b − a. La valeur 8 oublie le terme b e^(−x). La valeur 12 prend e^(−ln 2) = 2 au lieu de 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour quelles valeurs du réel m > 0 l'équation e^x = m x admet-elle au moins une solution dans ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m ≥ 1/e"
+        },
+        {
+          "id": "b",
+          "text": "m ≥ 1"
+        },
+        {
+          "id": "c",
+          "text": "0 < m ≤ e"
+        },
+        {
+          "id": "d",
+          "text": "m ≥ e"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme m > 0, une solution est nécessairement > 0, et e^x = m x équivaut à m = h(x) avec h(x) = e^x/x sur ]0, +∞[. On a h′(x) = e^x(x − 1)/x², donc h décroît jusqu'à x = 1 puis croît, avec un minimum h(1) = e ; et h tend vers +∞ en 0⁺ comme en +∞. Par le théorème des valeurs intermédiaires, h prend exactement les valeurs m ≥ e ✓. Contrôle : pour m = 2 < e, e^x − 2x ≥ 2 − 2 ln 2 ≈ 0,61 > 0 : aucune solution ; pour m = 3, e^x − 3x vaut 3 − 3 ln 3 ≈ −0,30 < 0 en x = ln 3, donc il y en a. La condition m ≥ 1 vient de e^x ≥ x + 1, qui ne dit rien sur m x. La condition m ≥ 1/e confond avec le maximum 1/e de x e^(−x) (atteint en x = 1). La condition 0 < m ≤ e inverse le sens.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule de ces quatre affirmations est FAUSSE. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fonction x ↦ (1/3)^x est strictement décroissante sur ℝ et tend vers +∞ quand x tend vers −∞."
+        },
+        {
+          "id": "b",
+          "text": "Pour tout rationnel r ≠ −1, la fonction x ↦ x^(r+1)/(r + 1) est une primitive de x ↦ x^r sur ]0, +∞[."
+        },
+        {
+          "id": "c",
+          "text": "La fonction x ↦ 2^x est égale à sa propre dérivée."
+        },
+        {
+          "id": "d",
+          "text": "Pour tout réel x > 0, on a ln x < x < e^x."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C'est l'affirmation « x ↦ 2^x est égale à sa propre dérivée » qui est fausse : (2^x)′ = (ln 2) 2^x, et ln 2 ≈ 0,693 ≠ 1 ; en 0, la pente de 2^x vaut 0,693, non 1 (seule la fonction exp est égale à sa dérivée). Les trois autres sont vraies : la base 1/3 est dans ]0, 1[, donc x ↦ (1/3)^x décroît, avec la limite +∞ en −∞ ; la dérivée de x^(r+1)/(r + 1) est x^r ; et ln x ≤ x − 1 < x < x + 1 ≤ e^x pour tout x > 0.",
+      "difficulty": 3
+    }
+  ]
+}

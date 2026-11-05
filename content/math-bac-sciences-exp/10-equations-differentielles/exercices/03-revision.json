@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Équations différentielles",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Parmi ces équations, laquelle est de la forme y″ + ω²y = 0 avec ω réel non nul ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y′ + 9y = 0"
+        },
+        {
+          "id": "b",
+          "text": "y″ + 9y′ = 0"
+        },
+        {
+          "id": "c",
+          "text": "y″ + 9y = 0"
+        },
+        {
+          "id": "d",
+          "text": "y″ + 9 = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il faut une dérivée seconde et un terme en y de coefficient strictement positif ω² : y″ + 9y = 0 convient avec ω² = 9, donc ω = 3 ✓. L'équation y′ + 9y = 0 est du premier ordre. L'équation y″ + 9y′ = 0 contient y″ et y′ mais pas y : on la traite en posant z = y′, ce n'est pas la forme y″ + ω²y = 0. L'équation y″ + 9 = 0 n'a pas de terme en y : son second membre est constant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "f est la solution de y′ = −3y avec f(0) = 2. Quelle est l'équation de la tangente à la courbe de f au point d'abscisse 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = −3x + 2"
+        },
+        {
+          "id": "b",
+          "text": "y = −6x + 2"
+        },
+        {
+          "id": "c",
+          "text": "y = 6x + 2"
+        },
+        {
+          "id": "d",
+          "text": "y = −6x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La tangente en 0 a pour équation y = f′(0)x + f(0). L'équation donne f′(0) = −3f(0) = −6, donc la tangente est y = −6x + 2 ✓. Contrôle : f(x) = 2e^(−3x), f′(0) = −6 et f(0) = 2 ✓. La réponse « y = −3x + 2 » prend a = −3 pour pente, sans multiplier par f(0). La réponse « y = 6x + 2 » commet une erreur de signe sur la pente. La réponse « y = −6x » oublie f(0) = 2 comme ordonnée à l'origine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Déterminer la solution f sur ℝ de l'équation différentielle y′ = −3y + 6 qui vérifie f(0) = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = 2(1 − e^(−3x))"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = 2(e^(−3x) − 1)"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = 2(1 − e^(3x))"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = 6(1 − e^(−3x))"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici a = −3 et b = 6, donc −b/a = 2 et f(x) = ke^(−3x) + 2. La condition f(0) = k + 2 = 0 donne k = −2, d'où f(x) = 2 − 2e^(−3x) = 2(1 − e^(−3x)) ✓. Contrôle : f′(x) = 6e^(−3x) et −3f(x) + 6 = −6 + 6e^(−3x) + 6 = 6e^(−3x) ✓. La réponse « 2(e^(−3x) − 1) » prend +b/a = −2 comme constante. La réponse « 2(1 − e^(3x)) » inverse le signe de l'exposant. La réponse « 6(1 − e^(−3x)) » recopie b = 6 sans le diviser par a.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La concentration C(t) d'un médicament (en mg/l, t en heures) vérifie C′ = −0,25C avec C(0) = 5. À partir de quel instant a-t-on C(t) < 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "t > (ln 5)/4 ≈ 0,4 h"
+        },
+        {
+          "id": "b",
+          "text": "t > 3,2 h"
+        },
+        {
+          "id": "c",
+          "text": "t > 4 ln 5 ≈ 6,4 h"
+        },
+        {
+          "id": "d",
+          "text": "t > 20 h"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a C(t) = 5e^(−t/4). Alors C(t) < 1 ⟺ e^(−t/4) < 1/5 ⟺ −t/4 < −ln 5 ⟺ t > 4 ln 5 ≈ 6,4 h ✓. Contrôle : C(6,44) = 5e^(−1,61) ≈ 1,0. La réponse « (ln 5)/4 » oublie que a = −1/4 : elle divise par 4 au lieu de multiplier. La réponse « 3,2 h » extrapole linéairement avec C′(0) = −1,25 (5 − 1,25t = 1). La réponse « 20 h » calcule 5/0,25 sans exponentielle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la solution sur ℝ de l'équation différentielle y′ = −2y + 6 telle que f(0) = 1. Quelle affirmation est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est croissante sur ℝ et sa limite en +∞ est 3"
+        },
+        {
+          "id": "b",
+          "text": "f est décroissante sur ℝ et sa limite en +∞ est 3"
+        },
+        {
+          "id": "c",
+          "text": "f est croissante sur ℝ et sa limite en +∞ est 0"
+        },
+        {
+          "id": "d",
+          "text": "f est positive sur ℝ et sa limite en +∞ est 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici −b/a = 3 et f(x) = ke^(−2x) + 3 ; f(0) = k + 3 = 1 donne k = −2, donc f(x) = 3 − 2e^(−2x). Alors f′(x) = 4e^(−2x) > 0 : f est croissante, de limite 3 en +∞ ✓. La réponse « décroissante » conclut du seul signe de a = −2, en oubliant que k = −2 < 0 renverse la variation. La réponse « limite 0 » oublie la constante −b/a. La réponse « positive » est fausse : f(x) < 0 dès que e^(−2x) > 3/2, c'est-à-dire pour x < −(ln 1,5)/2 ≈ −0,2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un café à 90 °C est posé dans une pièce à 20 °C. Sa température suit la loi f′(t) = a(f(t) − 20), avec t en minutes. Il est à 55 °C au bout de 10 minutes. Quelle est sa température au bout de 20 minutes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 °C"
+        },
+        {
+          "id": "b",
+          "text": "22,5 °C"
+        },
+        {
+          "id": "c",
+          "text": "27,5 °C"
+        },
+        {
+          "id": "d",
+          "text": "37,5 °C"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Posons g = f − 20 : g′ = ag, donc f(t) = 20 + 70e^(at). La donnée f(10) = 55 donne 70e^(10a) = 35, soit e^(10a) = 1/2. Alors f(20) = 20 + 70 × (e^(10a))² = 20 + 70/4 = 37,5 °C ✓. La réponse 20 °C extrapole linéairement (la température perd encore 35 °C), alors que l'écart à 20 °C est seulement divisé par 2 à chaque période de 10 minutes. La réponse 27,5 °C divise la température 55 par 2, au lieu de l'écart à la pièce. La réponse 22,5 °C divise 90 par 4 au lieu de l'écart 70 à la température de la pièce.",
+      "difficulty": 3
+    }
+  ]
+}

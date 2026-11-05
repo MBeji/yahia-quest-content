@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Nombres complexes",
+  "questions": [
+    {
+      "prompt": "Quel est le résultat de (3 − i)(2 + 4i) sous forme algébrique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 + 10i"
+        },
+        {
+          "id": "b",
+          "text": "6 − 4i"
+        },
+        {
+          "id": "c",
+          "text": "10 + 10i"
+        },
+        {
+          "id": "d",
+          "text": "10 − 10i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On développe terme à terme : (3 − i)(2 + 4i) = 6 + 12i − 2i − 4i². Comme i² = −1, le terme −4i² vaut +4, d'où 6 + 4 + 10i = 10 + 10i ✓. La réponse « 2 + 10i » prend i² = +1 et trouve 6 − 4 = 2 pour la partie réelle. La réponse « 6 − 4i » ne multiplie que les parties réelles entre elles et les coefficients de i entre eux, en oubliant les produits croisés. La réponse « 10 − 10i » est le conjugué du résultat : elle change le signe de la partie imaginaire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la partie réelle du nombre (1 − 2i)² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "−4"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(1 − 2i)² = 1 − 4i + 4i², et i² = −1 donne 1 − 4 − 4i = −3 − 4i. La partie réelle est donc −3 ✓. La réponse −4 est la partie imaginaire, pas la partie réelle. La réponse 1 élève au carré la seule partie réelle, en oubliant le terme 4i². La réponse 5 prend i² = +1 et ajoute 1 + 4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit z = 2 − 3i. Quel est le conjugué du nombre z² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5 − 12i"
+        },
+        {
+          "id": "b",
+          "text": "5 + 12i"
+        },
+        {
+          "id": "c",
+          "text": "13 + 12i"
+        },
+        {
+          "id": "d",
+          "text": "−5 + 12i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "z² = 4 − 12i + 9i² = −5 − 12i, et son conjugué est −5 + 12i ✓. Contrôle par la propriété (z²)‾ = (z̄)² : (2 + 3i)² = 4 + 12i − 9 = −5 + 12i ✓. La réponse « −5 − 12i » est z² lui-même : elle oublie de conjuguer. La réponse « 5 + 12i » est l'opposé −z². La réponse « 13 + 12i » développe (2 + 3i)² avec i² = +1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le plan complexe, A et B ont pour affixes 1 + 5i et −4 − 7i. Quelle est la distance AB ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        },
+        {
+          "id": "d",
+          "text": "169"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "AB = |z_B − z_A| = |−4 − 7i − (1 + 5i)| = |−5 − 12i| = √(25 + 144) = √169 = 13 ✓. La réponse 7 fait 12 − 5 : elle soustrait les valeurs absolues des deux parties. La réponse 17 additionne 5 + 12 au lieu de prendre la racine de la somme des carrés. La réponse 169 s'arrête à a² + b² et oublie la racine carrée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "A, B et C ont pour affixes 3 + i, −2 + 5i et 5 − 3i. Quelle est l'affixe du centre de gravité G du triangle ABC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 + i"
+        },
+        {
+          "id": "b",
+          "text": "2 + 3i"
+        },
+        {
+          "id": "c",
+          "text": "3 + (3/2)i"
+        },
+        {
+          "id": "d",
+          "text": "6 + 3i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'affixe de G est la moyenne des trois affixes : (3 + i − 2 + 5i + 5 − 3i)/3 = (6 + 3i)/3 = 2 + i ✓. Contrôle sur les coordonnées : (3 − 2 + 5)/3 = 2 et (1 + 5 − 3)/3 = 1. La réponse « 2 + 3i » ne divise que la partie réelle par 3. La réponse « 3 + (3/2)i » divise par 2 au lieu de 3. La réponse « 6 + 3i » est la somme des affixes, sans division.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux vecteurs ont pour affixes 2 + 4i et −6 + 3i. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils sont colinéaires de même sens"
+        },
+        {
+          "id": "b",
+          "text": "Ils sont colinéaires de sens contraires"
+        },
+        {
+          "id": "c",
+          "text": "Ils sont orthogonaux"
+        },
+        {
+          "id": "d",
+          "text": "Ils ne sont ni colinéaires ni orthogonaux"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le quotient des affixes vaut (2 + 4i)/(−6 + 3i) = (2 + 4i)(−6 − 3i)/45 = (−12 − 6i − 24i + 12)/45 = −30i/45 = −(2/3)i. Il est imaginaire pur, donc les vecteurs sont orthogonaux ✓. Contrôle par le produit scalaire : 2 × (−6) + 4 × 3 = 0 ✓. Un quotient réel positif donnerait des vecteurs colinéaires de même sens, un quotient réel négatif des vecteurs colinéaires de sens contraires ; ici le quotient n'est pas réel, et comme il est imaginaire pur le dernier cas est exclu aussi.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est un argument du nombre complexe z = 2 − 2i√3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/3"
+        },
+        {
+          "id": "b",
+          "text": "2π/3"
+        },
+        {
+          "id": "c",
+          "text": "−2π/3"
+        },
+        {
+          "id": "d",
+          "text": "−π/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le module est |z| = √(4 + 12) = 4, donc cos θ = 2/4 = 1/2 et sin θ = −2√3/4 = −√3/2. Le cosinus positif et le sinus négatif placent le point dans le quatrième quadrant : θ = −π/3 ✓. Les réponses π/3 et 2π/3 ont un sinus positif, donc un point au-dessus de l'axe des abscisses. La réponse −2π/3 a un cosinus négatif, donc un point dans le troisième quadrant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la forme algébrique du nombre 6e^(−i2π/3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3 − 3i√3"
+        },
+        {
+          "id": "b",
+          "text": "−3 + 3i√3"
+        },
+        {
+          "id": "c",
+          "text": "3 − 3i√3"
+        },
+        {
+          "id": "d",
+          "text": "−3√3 − 3i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "6e^(−i2π/3) = 6(cos(−2π/3) + i sin(−2π/3)) = 6(−1/2 − i√3/2) = −3 − 3i√3 ✓. Contrôle du module : √(9 + 27) = 6 ✓. La réponse « −3 + 3i√3 » correspond à l'argument +2π/3. La réponse « 3 − 3i√3 » correspond à l'argument −π/3. La réponse « −3√3 − 3i » échange le cosinus et le sinus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la valeur de (√2 e^(iπ/8))⁴ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "4i"
+        },
+        {
+          "id": "c",
+          "text": "2i"
+        },
+        {
+          "id": "d",
+          "text": "−4i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On met le module et l'exponentielle à la puissance : (√2)⁴ = 4 et (e^(iπ/8))⁴ = e^(i4π/8) = e^(iπ/2) = i, d'où 4i ✓. La réponse 4 oublie l'argument. La réponse 2i met le module au carré au lieu de la puissance quatrième. La réponse −4i correspond à l'angle −π/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout réel x, la formule d'Euler donne sin x égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "(e^(ix) + e^(−ix))/2i"
+        },
+        {
+          "id": "b",
+          "text": "(e^(ix) − e^(−ix))/2"
+        },
+        {
+          "id": "c",
+          "text": "(e^(ix) − e^(−ix))/2i"
+        },
+        {
+          "id": "d",
+          "text": "(e^(ix) + e^(−ix))/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a e^(ix) = cos x + i sin x et e^(−ix) = cos x − i sin x. La différence vaut 2i sin x, donc sin x = (e^(ix) − e^(−ix))/2i ✓. Contrôle en x = π/2 : (i − (−i))/2i = 1 ✓. La formule « (e^(ix) + e^(−ix))/2 » est celle du cosinus. La formule « (e^(ix) − e^(−ix))/2 » oublie le i du dénominateur et donne i sin x. La formule « (e^(ix) + e^(−ix))/2i » divise par 2i la somme qui vaut 2cos x, ce qui donne −i cos x.",
+      "difficulty": 2
+    }
+  ]
+}

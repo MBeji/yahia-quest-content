@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des familles de solutions",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Soit f la solution de y″ + 16y = 0 telle que f(0) = 1 et f′(0) = 4. Calculer la valeur moyenne de f sur [0, π/8].",
+      "options": [
+        {
+          "id": "a",
+          "text": "4/π"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "10/π"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici ω = 4 (car 16 = 4²), B = f(0) = 1 et f′(0) = 4A = 4 donne A = 1 : f(x) = sin(4x) + cos(4x). Une primitive est F(x) = −cos(4x)/4 + sin(4x)/4, donc ∫₀^(π/8) f = F(π/8) − F(0) = 1/4 − (−1/4) = 1/2. La valeur moyenne est (1/(π/8)) × 1/2 = 4/π ✓. Contrôle : f vaut 1 en 0 et √2 vers π/16, puis redescend à 1 en π/8, donc une moyenne proche de 1,27 est cohérente (4/π ≈ 1,273). La réponse « 1/2 » oublie le facteur 1/(b − a). La réponse « 0 » prend −sin(4x)/4 pour primitive de cos(4x) (erreur de signe) : F = −cos(4x)/4 − sin(4x)/4 donne F(π/8) − F(0) = −1/4 − (−1/4) = 0. La réponse « 10/π » prend A = f′(0) = 4 sans diviser par ω.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le nombre y(t) de microbes (t en heures) vérifie y′ = ky, k > 0, avec y(0) = N. Il a quadruplé en 2 heures. Combien y en a-t-il au bout de 3 heures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8N"
+        },
+        {
+          "id": "b",
+          "text": "5,5N"
+        },
+        {
+          "id": "c",
+          "text": "6N"
+        },
+        {
+          "id": "d",
+          "text": "64N"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a y(t) = Ne^(kt), et y(2) = 4N donne e^(2k) = 4. Alors y(3) = Ne^(3k) = N(e^(2k))^(3/2) = N × 4^(3/2) = 8N ✓. Contrôle : en 2 h le nombre est multiplié par 4, en 1 h par 2 (e^k = 2), donc en 3 h par 2³ = 8. La réponse « 5,5N » extrapole linéairement (+1,5N par heure). La réponse « 6N » applique la proportionnalité 4N × 3/2. La réponse « 64N » prend k = ln 4, sans diviser par 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les solutions sur ℝ de y‴ + y″ = 0 sont les fonctions :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ αe^(−x) + γ, (α, β, γ) ∈ ℝ³"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ αe^(−x) + βx + γ, (α, β, γ) ∈ ℝ³"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ αe^(x) + βx + γ, (α, β, γ) ∈ ℝ³"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ αe^(−x) + βx, (α, β) ∈ ℝ²"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Posons z = y″ : l'équation devient z′ = −z, donc z(x) = αe^(−x). Alors y′ est une primitive de z : y′(x) = −αe^(−x) + β, puis y(x) = αe^(−x) + βx + γ. On retrouve bien toutes les constantes (α, β, γ) ✓. Contrôle : y″ = αe^(−x), y‴ = −αe^(−x), donc y‴ + y″ = 0. La réponse « αe^(−x) + γ » s'arrête à y″ + y′ = 0 (ordre deux). La réponse « αe^(x) + βx + γ » résout z′ = z au lieu de z′ = −z : y‴ + y″ = 2αe^x ≠ 0. La réponse « αe^(−x) + βx » oublie la dernière constante d'intégration.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Laquelle de ces fonctions vérifie f′(x) = f(π − x) pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ cos x + sin x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ e^x"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ cos x − sin x"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ cos x"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si f′(x) = f(π − x), en dérivant : f″(x) = −f′(π − x) = −f(π − (π − x)) = −f(x). Donc f″ + f = 0 et f(x) = A cos x + B sin x. Alors f′(x) = −A sin x + B cos x et f(π − x) = −A cos x + B sin x, d'où B = −A : f(x) = A(cos x − sin x) ✓. Contrôle pour A = 1 : f′(x) = −sin x − cos x et f(π − x) = cos(π − x) − sin(π − x) = −cos x − sin x ✓. La réponse « cos x + sin x » prend A = B au lieu de A = −B : f′(0) = 1 mais f(π) = −1. La réponse « e^x » traite l'équation comme f′ = f : f′(0) = 1 mais f(π) = e^π. La réponse « cos x » prend A = 1 et B = 0 en oubliant la condition B = −A : f′(0) = 0 mais f(π) = −1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On injecte 2 unités d'un médicament à t = 0. La quantité vérifie Q′ = −αQ (α > 0) et 40 % de la quantité présente est éliminée en une heure. On réinjecte 2 unités à chaque heure entière. On note Rₙ la quantité juste après l'injection à t = n. Vers quelle valeur tend Rₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,2"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "10/3"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sans injection, Q(t) = Q(0)e^(−αt) et 40 % éliminés en une heure donnent e^(−α) = 0,6. Entre deux injections la quantité Rₙ est multipliée par 0,6, puis on ajoute 2 : R₍ₙ₊₁₎ = 0,6Rₙ + 2, avec R₀ = 2. Le point fixe ℓ vérifie ℓ = 0,6ℓ + 2, donc ℓ = 2/0,4 = 5, et comme 0 < 0,6 < 1 la suite tend vers 5 ✓. Contrôle : R₁ = 3,2, R₂ = 3,92, R₃ = 4,352, la suite croît vers 5. La réponse « 3,2 » s'arrête à R₁. La réponse « 10/3 » utilise la part éliminée : 0,4Rₙ + 2 donne ℓ = 2/0,6. La réponse « +∞ » oublie que l'élimination compense les apports.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si f est solution de y″ + 9y = 0 et si f(0) = 0, alors f est la fonction nulle"
+        },
+        {
+          "id": "b",
+          "text": "Si f est solution de y′ = −3y, alors f est décroissante sur ℝ"
+        },
+        {
+          "id": "c",
+          "text": "Si f est solution de y″ + 3y = 0, alors f(x) = A sin(3x) + B cos(3x)"
+        },
+        {
+          "id": "d",
+          "text": "Si f est solution de y″ + 4y = 0, alors f(x + π) = f(x) pour tout réel x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les solutions de y″ + 4y = 0 sont f(x) = A sin(2x) + B cos(2x), de période 2π/2 = π : f(x + π) = A sin(2x + 2π) + B cos(2x + 2π) = f(x) ✓. L'affirmation sur y″ + 9y = 0 est fausse : x ↦ sin(3x) est solution, s'annule en 0 et n'est pas nulle ; il faut les deux conditions f(0) = f′(0) = 0. L'affirmation sur y′ = −3y est fausse : f(x) = ke^(−3x) a pour dérivée −3ke^(−3x), positive si k < 0, donc f est alors croissante. L'affirmation sur y″ + 3y = 0 est fausse : ici ω² = 3, donc ω = √3 et les solutions sont A sin(√3 x) + B cos(√3 x).",
+      "difficulty": 3
+    }
+  ]
+}

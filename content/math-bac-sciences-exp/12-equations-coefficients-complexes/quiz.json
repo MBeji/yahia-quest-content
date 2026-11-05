@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Équations à coefficients complexes",
+  "questions": [
+    {
+      "prompt": "Quelles sont les racines carrées du nombre complexe Z = 15 − 8i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±(1 − 4i)"
+        },
+        {
+          "id": "b",
+          "text": "±(1 + 4i)"
+        },
+        {
+          "id": "c",
+          "text": "±(4 − i)"
+        },
+        {
+          "id": "d",
+          "text": "±(4 + i)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a |Z| = √(225 + 64) = √289 = 17, donc x² − y² = 15 et x² + y² = 17, d'où x² = 16 et y² = 1. Comme 2xy = −8 < 0, x et y sont de signes contraires : les racines carrées sont 4 − i et −4 + i ✓. Contrôle : (4 − i)² = 16 − 8i − 1 = 15 − 8i. Le couple (4 ; 1) donne (4 + i)² = 15 + 8i, de mauvais signe ; ±(1 − 4i) échange x et y, et son carré est −15 − 8i ; ±(1 + 4i) échange x et y et son carré est −15 + 8i.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelles sont les racines carrées de 8 e^(i2π/3), sous forme algébrique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±(√2 + i√6)"
+        },
+        {
+          "id": "b",
+          "text": "±(√6 + i√2)"
+        },
+        {
+          "id": "c",
+          "text": "±(2 + 2i√3)"
+        },
+        {
+          "id": "d",
+          "text": "±(−√2 + i√6)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une racine carrée a pour module √8 = 2√2 et pour argument la moitié de 2π/3, soit π/3 : elle vaut 2√2 e^(iπ/3) = 2√2 (1/2 + i√3/2) = √2 + i√6, l'autre racine étant son opposée ✓. Contrôle : (√2 + i√6)² = 2 − 6 + 2i√12 = −4 + 4i√3 = 8 e^(i2π/3). Le nombre √6 + i√2 = 2√2 e^(iπ/6) échange cosinus et sinus ; 2 + 2i√3 = 4 e^(iπ/3) divise le module par 2 au lieu de prendre la racine carrée ; −√2 + i√6 = 2√2 e^(i2π/3) garde l'argument 2π/3 du nombre de départ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la somme des cinq solutions de l'équation z⁵ = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les solutions sont z_k = z₁^k avec z₁ = e^(i2π/5), donc leur somme est (z₁⁵ − 1)/(z₁ − 1) = 0, car z₁⁵ = 1 et z₁ ≠ 1 ✓. Contrôle : les cinq points forment un pentagone régulier centré en O, dont le centre de gravité est O. La valeur 1 est la seule solution réelle ; 5 additionne cinq fois 1 ; −1 est la somme des quatre solutions non réelles, sans compter 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelles sont les solutions de l'équation z² − 3iz − 3 − i = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 − 2i et 1 − i"
+        },
+        {
+          "id": "b",
+          "text": "−1 + 2i et 1 + i"
+        },
+        {
+          "id": "c",
+          "text": "−2 + 2i et 2 + 4i"
+        },
+        {
+          "id": "d",
+          "text": "−1 + i et 1 + 2i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a Δ = (−3i)² − 4(−3 − i) = −9 + 12 + 4i = 3 + 4i, dont une racine carrée est δ = 2 + i. Alors z = (3i ± (2 + i))/2, soit (2 + 4i)/2 = 1 + 2i et (−2 + 2i)/2 = −1 + i ✓. Contrôle : la somme vaut 3i = −b/a et le produit (1 + 2i)(−1 + i) = −3 − i = c/a. Le choix −2 + 2i et 2 + 4i oublie de diviser par 2a ; −1 − 2i et 1 − i prend −b = −3i au lieu de 3i ; −1 + 2i et 1 + i prend 2 − i pour racine carrée de Δ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'équation 2z² − (7 + 3i)z + 4 + 6i = 0 admet pour solution 1 + i. Quelle est l'autre solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 + i"
+        },
+        {
+          "id": "b",
+          "text": "−1 + 5i"
+        },
+        {
+          "id": "c",
+          "text": "(5 + i)/2"
+        },
+        {
+          "id": "d",
+          "text": "1 + 2i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le produit des solutions vaut c/a = 2 + 3i, donc l'autre solution est (2 + 3i)/(1 + i) = (2 + 3i)(1 − i)/2 = (5 + i)/2 ✓. Contrôle par la somme : 1 + i + (5 + i)/2 = (7 + 3i)/2 = −b/a. Le résultat 5 + i prend c = 4 + 6i au lieu de c/a ; −1 + 5i multiplie 2 + 3i par 1 + i au lieu de diviser ; 1 + 2i soustrait 1 + i au lieu de diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les images des solutions de l'équation z³ = 125 sont les sommets d'un triangle équilatéral. Quelle est la longueur de son côté ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5√3/2"
+        },
+        {
+          "id": "b",
+          "text": "5√3"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les solutions ont pour module 5, car 5³ = 125 : ce sont 5, 5j et 5j², avec j = e^(i2π/3). Le côté du triangle est |5j − 5| = 5|j − 1|, et |j − 1|² = (−3/2)² + (√3/2)² = 3, donc le côté vaut 5√3 ✓. Contrôle : 5j − 5 = (−15 + 5i√3)/2, de module au carré (225 + 75)/4 = 75 = (5√3)². La valeur 5√3/2 est la moitié du côté ; 10 est le diamètre du cercle ; 15 additionne trois rayons.",
+      "difficulty": 2
+    }
+  ]
+}

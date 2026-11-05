@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Fonction exponentielle",
+  "questions": [
+    {
+      "prompt": "Que vaut e^(−ln 7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−7"
+        },
+        {
+          "id": "b",
+          "text": "−ln 7"
+        },
+        {
+          "id": "c",
+          "text": "1/7"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On écrit −ln 7 = ln(1/7), donc e^(−ln 7) = e^(ln(1/7)) = 1/7 ✓, puisque e^(ln x) = x pour tout x > 0. Contrôle : −ln 7 ≈ −1,946 et e^(−1,946) ≈ 0,143. La valeur 7 oublie le signe moins de l'exposant : c'est e^(ln 7). La valeur −ln 7 s'arrête à l'exposant sans appliquer l'exponentielle. La valeur −7 est impossible : une exponentielle est toujours strictement positive.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour quels réels x l'égalité e^(ln x) = x est-elle vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pour tout réel x ≥ 0"
+        },
+        {
+          "id": "b",
+          "text": "pour tout réel x > 0"
+        },
+        {
+          "id": "c",
+          "text": "pour tout réel x ≠ 0"
+        },
+        {
+          "id": "d",
+          "text": "pour tout réel x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ln x n'existe que pour x > 0, donc e^(ln x) = x n'a de sens que sur ]0, +∞[ ✓ ; par exemple e^(ln 2) = 2. La condition x ≥ 0 inclut x = 0, où ln 0 n'existe pas. La condition x ≠ 0 inclut les réels négatifs, où ln x n'existe pas non plus (ln(−3) n'est pas défini). « Pour tout réel x » est la propriété de la relation inverse ln(e^x) = x, qui, elle, vaut pour tout réel : on a échangé les deux relations.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tout réel x, e^(2x) × (e^(−x))⁴ est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(−2x)"
+        },
+        {
+          "id": "b",
+          "text": "e^(6x)"
+        },
+        {
+          "id": "c",
+          "text": "e^(x+4)"
+        },
+        {
+          "id": "d",
+          "text": "e^(−8x²)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a (e^(−x))⁴ = e^(−4x) (règle e^(na) = (e^a)^n), puis e^(2x) × e^(−4x) = e^(2x−4x) = e^(−2x) ✓. Contrôle en x = 1 : e² × e^(−4) = e^(−2) ≈ 0,135. L'écriture e^(6x) perd le signe : elle suppose (e^(−x))⁴ = e^(4x). L'écriture e^(x+4) lit (e^(−x))⁴ comme e^(−x+4) : on ajoute 4 au lieu de multiplier, d'où e^(2x−x+4). L'écriture e^(−8x²) multiplie les deux exposants au lieu de les additionner.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la solution de l'équation e^(3−2x) = e² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/2"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "5/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit e² = e^2 et, comme exp est strictement croissante, e^(3−2x) = e² équivaut à 3 − 2x = 2, soit x = 1/2 ✓. Contrôle : e^(3−1) = e². La valeur −1/2 vient de 3 + 2x = 2 : le signe du terme en x a été perdu. La valeur 1 vient de 2x = 1 sans diviser par 2. La valeur 5/2 vient de 2x = 3 + 2 : le 3 a été passé de l'autre côté sans changer de signe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tout réel x, quelle est la dérivée de x ↦ e^(−x/2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(−x/2)"
+        },
+        {
+          "id": "b",
+          "text": "(1/2)e^(−x/2)"
+        },
+        {
+          "id": "c",
+          "text": "−(x/2)e^(−x/2−1)"
+        },
+        {
+          "id": "d",
+          "text": "−(1/2)e^(−x/2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec u(x) = −x/2, on a u′(x) = −1/2, donc la dérivée est u′(x)e^(u(x)) = −(1/2)e^(−x/2) ✓. Contrôle : f(0) = 1 et f(0,2) = e^(−0,1) ≈ 0,905, soit un taux d'accroissement d'environ −0,48, proche de −1/2 (valeur de la dérivée en 0). La réponse e^(−x/2) oublie le facteur u′. La réponse (1/2)e^(−x/2) perd le signe de u′. La réponse −(x/2)e^(−x/2−1) dérive l'exposant comme une puissance de x, alors que l'exposant est une fonction de x : e^u se dérive en u′e^u.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une seule de ces quatre limites vaut +∞. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "lim_{x→−∞} x³e^x"
+        },
+        {
+          "id": "b",
+          "text": "lim_{x→+∞} x⁴/e^x"
+        },
+        {
+          "id": "c",
+          "text": "lim_{x→+∞} e^x/x⁴"
+        },
+        {
+          "id": "d",
+          "text": "lim_{x→+∞} (ln x)/x"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Par croissances comparées, e^x l'emporte sur toute puissance de x : e^x/x⁴ → +∞ ✓. Contrôle en x = 50 : e^50/50⁴ ≈ 5,2 × 10²¹ / 6,25 × 10⁶ ≈ 8 × 10¹⁴. Les trois autres tendent vers 0 : x⁴/e^x est l'inverse de la précédente ; x³e^x tend vers 0 en −∞ (théorème x^m e^(nx) → 0) ; et (ln x)/x tend vers 0 car le logarithme croît plus lentement que x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur ℝ, une primitive de x ↦ e^(5−2x) est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "−(1/2)e^(5−2x)"
+        },
+        {
+          "id": "b",
+          "text": "(1/2)e^(5−2x)"
+        },
+        {
+          "id": "c",
+          "text": "−(1/2)e^(2x−5)"
+        },
+        {
+          "id": "d",
+          "text": "e^(5−2x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec u(x) = 5 − 2x, u′(x) = −2 et e^(5−2x) = −(1/2) × u′(x)e^(u(x)) : une primitive est −(1/2)e^(5−2x) ✓. Vérification : la dérivée de −(1/2)e^(5−2x) vaut −(1/2) × (−2) × e^(5−2x) = e^(5−2x). La réponse (1/2)e^(5−2x) perd le signe : sa dérivée vaut −e^(5−2x). La réponse −(1/2)e^(2x−5) change le signe de l'exposant : sa dérivée vaut e^(2x−5), qui n'est pas e^(5−2x). La réponse e^(5−2x) oublie u′ : sa dérivée vaut −2e^(5−2x).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout réel x, que vaut (5^x)′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5^x"
+        },
+        {
+          "id": "b",
+          "text": "x · 5^(x−1)"
+        },
+        {
+          "id": "c",
+          "text": "(ln 5) · 5^x"
+        },
+        {
+          "id": "d",
+          "text": "(ln 5) · x · 5^(x−1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a 5^x = e^(x ln 5), donc (5^x)′ = (ln 5)e^(x ln 5) = (ln 5) · 5^x ✓, soit environ 1,609 × 5^x. Contrôle en 0 : (5^0,001 − 1)/0,001 ≈ 1,61 ≈ ln 5. La réponse x · 5^(x−1) applique la règle des puissances alors que x est l'exposant : en 0 elle donnerait 0, alors que 5^x est croissante. La réponse 5^x oublie le facteur ln 5. La réponse (ln 5) · x · 5^(x−1) mélange les deux : elle garde la règle des puissances et y ajoute le facteur ln 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout réel x > 0, que vaut (x^(5/3))′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3/5)x^(2/3)"
+        },
+        {
+          "id": "b",
+          "text": "(5/3)x^(8/3)"
+        },
+        {
+          "id": "c",
+          "text": "x^(2/3)"
+        },
+        {
+          "id": "d",
+          "text": "(5/3)x^(2/3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour un rationnel r, (x^r)′ = r x^(r−1) : avec r = 5/3, (x^(5/3))′ = (5/3)x^(5/3−1) = (5/3)x^(2/3) ✓. Contrôle en x = 8 : 8^(5/3) = 32, (8,001)^(5/3) ≈ 32,00667, soit un taux de 6,67 ≈ (5/3) × 8^(2/3) = (5/3) × 4. La réponse (3/5)x^(2/3) inverse le coefficient. La réponse (5/3)x^(8/3) ajoute 1 à l'exposant au lieu de le diminuer. La réponse x^(2/3) oublie le coefficient r.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est l'ensemble des solutions de l'inéquation e^(x(x−4)) ≤ 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[0 ; 4]"
+        },
+        {
+          "id": "b",
+          "text": "]0 ; 4["
+        },
+        {
+          "id": "c",
+          "text": "]−∞ ; 0] ∪ [4 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]−∞ ; 4]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme 1 = e^0 et que exp est strictement croissante, e^(x(x−4)) ≤ e^0 équivaut à x(x − 4) ≤ 0, c'est-à-dire 0 ≤ x ≤ 4 (un trinôme est négatif entre ses racines) ✓. Contrôle : en x = 2, e^(−4) ≈ 0,018 ≤ 1 ; en x = 5, e^5 > 1. L'intervalle ]0 ; 4[ exclut à tort les bornes, où l'on a égalité. La réunion ]−∞ ; 0] ∪ [4 ; +∞[ lit le signe du trinôme à l'envers (c'est la solution de ≥ 1). L'intervalle ]−∞ ; 4] ne retient qu'une seule des deux conditions.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des équations",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "L'équation (1 + i)z² − (2 + 2i)z − 1 + 3i = 0 a deux solutions. Quelle est la solution imaginaire pure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−i"
+        },
+        {
+          "id": "b",
+          "text": "i"
+        },
+        {
+          "id": "c",
+          "text": "2i"
+        },
+        {
+          "id": "d",
+          "text": "−2i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a Δ = (2 + 2i)² − 4(1 + i)(−1 + 3i) = 8i − 4(−4 + 2i) = 16, dont une racine carrée est 4. Alors z = ((2 + 2i) ± 4)/(2(1 + i)), soit (6 + 2i)/(2 + 2i) = 2 − i et (−2 + 2i)/(2 + 2i) = i : la solution imaginaire pure est i ✓ (2 − i a une partie réelle non nulle). Contrôle : la somme vaut 2 = −b/a et le produit (2 − i)i = 1 + 2i = c/a. Prendre b sans le signe moins donne −i (et −2 + i) ; diviser par a au lieu de 2a donne 2i et 4 − 2i ; cumuler les deux erreurs donne −2i ; diviser par 2 au lieu de 2a donne −1 + i et 3 + i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'affirmation FAUSSE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les images des solutions de z⁵ = 1 sont les sommets d'un pentagone régulier"
+        },
+        {
+          "id": "b",
+          "text": "Le nombre j = (−1 + i√3)/2 vérifie j² + j + 1 = 0"
+        },
+        {
+          "id": "c",
+          "text": "Le produit des solutions de 2z² − 3z + 8 = 0 vaut 4"
+        },
+        {
+          "id": "d",
+          "text": "La somme des solutions de az² + bz + c = 0 vaut b/a"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La somme des solutions de az² + bz + c = 0 vaut −b/a et non b/a : pour z² − 5z + 6 = 0, les solutions sont 2 et 3, de somme 5 = −b/a, alors que b/a = −5. Les trois autres affirmations sont vraies : les cinq solutions de z⁵ = 1 sont sur le cercle trigonométrique, espacées de 2π/5, donc sommets d'un pentagone régulier ✓ ; j vérifie 1 + j + j² = 0 ✓ ; le produit des solutions vaut c/a = 8/2 = 4 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est l'ensemble des solutions de l'équation z⁴ − (3 − 2i)z² + 8 + 6i = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2i ; 3 − 4i"
+        },
+        {
+          "id": "b",
+          "text": "1 + i ; 2 − i"
+        },
+        {
+          "id": "c",
+          "text": "±(1 + i) ; ±(2 − i)"
+        },
+        {
+          "id": "d",
+          "text": "±(1 − i) ; ±(2 − i)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose Z = z² : Z² − (3 − 2i)Z + 8 + 6i = 0, de discriminant Δ = (3 − 2i)² − 4(8 + 6i) = −27 − 36i. Comme |Δ| = 45, une racine carrée δ vérifie x² − y² = −27 et x² + y² = 45, donc x² = 9, y² = 36 et xy < 0, d'où δ = 3 − 6i. Alors Z = ((3 − 2i) ± (3 − 6i))/2, soit Z = 3 − 4i ou Z = 2i. Enfin z² = 2i donne ±(1 + i) et z² = 3 − 4i donne ±(2 − i) : quatre solutions ✓. Contrôle : (2 − i)² = 3 − 4i. Les nombres 2i et 3 − 4i s'arrêtent aux valeurs de Z ; 1 + i et 2 − i oublient les opposées ; ±(1 − i) a pour carré −2i et non 2i.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'équation z³ − (3 + 3i)z² + (3 + 8i)z − 3 − 9i = 0 admet une solution imaginaire pure. Quelles sont ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{3i ; 1 − i ; 2 + i}"
+        },
+        {
+          "id": "b",
+          "text": "{3i ; 1 + i ; 2 − i}"
+        },
+        {
+          "id": "c",
+          "text": "{−3i ; 1 − i ; 2 + i}"
+        },
+        {
+          "id": "d",
+          "text": "{3i ; −1 + i ; −2 − i}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour z = iy, la partie réelle 3y² − 8y − 3 s'annule pour y = 3 ou y = −1/3, et la partie imaginaire −y³ + 3y² + 3y − 9 s'annule pour y = 3 mais non pour y = −1/3 : donc z₀ = 3i. On factorise (z − 3i)(z² + βz + γ) : β − 3i = −3 − 3i donne β = −3, puis γ − 3iβ = 3 + 8i donne γ = 3 − i. Reste z² − 3z + 3 − i = 0 : Δ = −3 + 4i, de racine carrée 1 + 2i, donc z = (3 ± (1 + 2i))/2, soit 2 + i et 1 − i ✓. Contrôle : γ = (1 − i)(2 + i) = 3 − i. Le triplet 3i, 1 + i, 2 − i change le signe des parties imaginaires de 1 − i et 2 + i : le produit (1 + i)(2 − i) = 3 + i ne vaut pas γ = 3 − i ; −3i et le jeu de signes opposés ne vérifient pas l'équation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les points M₀, M₁, M₂, M₃, M₄ et M₅ de la figure sont les images des solutions d'une équation zⁿ = Z, rangés dans le sens direct, et M₀ a pour affixe 3 e^(iπ/12). Quelle est l'affixe de M₄ ?\n<svg viewBox=\"0 0 300 270\">\n<title>Six points M₀, M₁, M₂, M₃, M₄, M₅ répartis régulièrement sur le cercle de centre O et de rayon 3, sommets d'un hexagone régulier dont M₀ est le premier sommet dans le sens direct</title>\n<path d=\"M16.8 135 H290.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<path d=\"M150 257.4 V5.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<path d=\"M290.4 135 l-8 -4 l0 8 z\" fill=\"#0f172a\"/>\n<path d=\"M150 5.4 l-4 8 l8 0 z\" fill=\"#0f172a\"/>\n<text x=\"144\" y=\"150\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">O</text>\n<circle cx=\"150\" cy=\"135\" r=\"108\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/>\n<path d=\"M254.3 107 L178 30.7 L73.6 58.6 L45.7 163 L122 239.3 L226.4 211.4 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/>\n<path d=\"M254.3 107 L178 30.7 L73.6 58.6 L45.7 163 L122 239.3 L226.4 211.4 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<circle cx=\"254.3\" cy=\"107\" r=\"4\" fill=\"#0f6e56\"/>\n<circle cx=\"178\" cy=\"30.7\" r=\"4\" fill=\"#0f6e56\"/>\n<circle cx=\"73.6\" cy=\"58.6\" r=\"4\" fill=\"#0f6e56\"/>\n<circle cx=\"45.7\" cy=\"163\" r=\"4\" fill=\"#0f6e56\"/>\n<circle cx=\"122\" cy=\"239.3\" r=\"4\" fill=\"#0f6e56\"/>\n<circle cx=\"226.4\" cy=\"211.4\" r=\"4\" fill=\"#0f6e56\"/>\n<text x=\"262.3\" y=\"101\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₀</text>\n<text x=\"174\" y=\"22.7\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₁</text>\n<text x=\"65.6\" y=\"54.6\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₂</text>\n<text x=\"37.7\" y=\"175\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₃</text>\n<text x=\"114\" y=\"255.3\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₄</text>\n<text x=\"234.4\" y=\"223.4\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₅</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 e^(i3π/4)"
+        },
+        {
+          "id": "b",
+          "text": "3 e^(i13π/12)"
+        },
+        {
+          "id": "c",
+          "text": "3 e^(i17π/12)"
+        },
+        {
+          "id": "d",
+          "text": "3 e^(i7π/4)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les six points sont les sommets d'un hexagone régulier : n = 6, et M_k a pour affixe 3 e^(i(π/12 + 2kπ/6)). Pour M₄, k = 4 : π/12 + 8π/6 = π/12 + 16π/12 = 17π/12, donc l'affixe est 3 e^(i17π/12) ✓. Contrôle : M₄ est le point qui suit M₃ dans le sens direct, à l'angle π/3 = 4π/12 de plus que 13π/12. Écrire kπ/6 au lieu de 2kπ/6 donne 3 e^(i3π/4) ; k = 3 donne M₃ et 3 e^(i13π/12) ; k = 5 donne M₅ et 3 e^(i7π/4).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Combien de nombres complexes z vérifient l'équation z³ = z̄ ?",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "En prenant les modules, |z|³ = |z|, donc |z|(|z|² − 1) = 0 : z = 0 ou |z| = 1. Si |z| = 1, alors z z̄ = 1 et z̄ = 1/z, donc z³ = 1/z, soit z⁴ = 1 : quatre solutions 1, i, −1 et −i. Avec z = 0, l'équation a 4 + 1 = 5 solutions ✓. Contrôle : pour z = i, z³ = −i = z̄.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -33,7 +33,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Mathématiques | physique | `223432` | ❌ aucune | — | A1 |
 | Mathématiques | chimie | `224432` | ❌ aucune | — | A1 |
 | Sciences expérimentales | SVT | `225432` | ❌ aucune | — | A1 |
-| Sciences expérimentales | mathématiques | `222433` + `222434` | ✅ validée R-7 (2026-11-05) | 8/17 chapitres | fiche différentielle + adaptation des chapitres de `math-bac-math` / `math-bac-techniques` (décision de Mohamed du 2026-11-05 : même collection, version allégée) |
+| Sciences expérimentales | mathématiques | `222433` + `222434` | ✅ validée R-7 (2026-11-05) | 12/17 chapitres | fiche différentielle + adaptation des chapitres de `math-bac-math` / `math-bac-techniques` (décision de Mohamed du 2026-11-05 : même collection, version allégée) |
 | Sciences expérimentales | physique | `223433` | ❌ aucune | — | A1 |
 | Sciences expérimentales | chimie | `224433` | ❌ aucune | — | A1 |
 | Sciences de l'informatique | mathématiques | `222472` | ❌ aucune | — | A1 |

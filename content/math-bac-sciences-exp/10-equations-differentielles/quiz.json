@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Équations différentielles",
+  "questions": [
+    {
+      "prompt": "Une fonction f définie sur ℝ est solution de l'équation différentielle y′ = ay lorsque :",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est dérivable sur ℝ et f′(x) = a pour tout réel x"
+        },
+        {
+          "id": "b",
+          "text": "f est dérivable sur ℝ et f′(x) = af(x) pour un seul réel x"
+        },
+        {
+          "id": "c",
+          "text": "f est dérivable sur ℝ et f(x) = af′(x) pour tout réel x"
+        },
+        {
+          "id": "d",
+          "text": "f est dérivable sur ℝ et f′(x) = af(x) pour tout réel x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une solution est une fonction dérivable dont la dérivée vérifie la relation en chaque point : f′(x) = af(x) pour tout x ✓ (exemple : x ↦ e^(3x) pour a = 3, car sa dérivée 3e^(3x) vaut 3 fois la fonction). La réponse « f′(x) = a » confond avec y′ = a, où l'inconnue ne figure plus au second membre : la dérivée serait constante. La réponse « pour un seul réel x » ne vérifie la relation qu'en un point, alors qu'une équation différentielle exige l'égalité sur tout ℝ. La réponse « f(x) = af′(x) » intervertit f et f′ : elle équivaut à f′ = f/a.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'ensemble des solutions sur ℝ de l'équation différentielle y′ = −7y est l'ensemble des fonctions :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ ke^(−7x), k ∈ ℝ"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ ke^(7x), k ∈ ℝ"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ −7e^(kx), k ∈ ℝ"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ e^(−7x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "D'après le théorème du cours, les solutions de y′ = ay sont les x ↦ ke^(ax) ; ici a = −7, donc x ↦ ke^(−7x) ✓. Vérification : (ke^(−7x))′ = −7ke^(−7x). La réponse « x ↦ ke^(7x) » perd le signe de l'exposant : sa dérivée 7ke^(7x) est l'opposé de −7 fois la fonction. La réponse « x ↦ −7e^(kx) » met le coefficient devant et le paramètre dans l'exposant : sa dérivée vaut k fois la fonction, pas −7 fois. La réponse « x ↦ e^(−7x) » oublie le facteur k et ne donne qu'une solution sur une infinité.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La fonction f définie sur ℝ par f(x) = 6e^(−5x) est solution de l'équation différentielle :",
+      "options": [
+        {
+          "id": "a",
+          "text": "y′ = −30y"
+        },
+        {
+          "id": "b",
+          "text": "y′ = −5y"
+        },
+        {
+          "id": "c",
+          "text": "y′ = 5y"
+        },
+        {
+          "id": "d",
+          "text": "y′ = 6y"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On dérive et on réinjecte : f′(x) = 6 × (−5)e^(−5x) = −30e^(−5x), et −5f(x) = −5 × 6e^(−5x) = −30e^(−5x). Les deux expressions coïncident pour tout x, donc f est solution de y′ = −5y ✓. Le coefficient a est celui qui apparaît dans l'exposant. La réponse « y′ = 6y » prend pour a le facteur 6, qui joue le rôle de k. La réponse « y′ = −30y » prend le coefficient de f′ pour a : −30f(x) = −180e^(−5x), qui n'est pas f′(x). La réponse « y′ = 5y » perd le signe de l'exposant : ses solutions croissent au lieu de décroître.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La fonction x ↦ 5^x est solution de l'équation différentielle :",
+      "options": [
+        {
+          "id": "a",
+          "text": "y′ = 5y"
+        },
+        {
+          "id": "b",
+          "text": "y′ = (ln 5)y"
+        },
+        {
+          "id": "c",
+          "text": "y′ = y/(ln 5)"
+        },
+        {
+          "id": "d",
+          "text": "y′ = (x/5)y"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit 5^x = e^(x ln 5), de la forme e^(ax) avec a = ln 5 : la dérivée est (ln 5)e^(x ln 5) = (ln 5) × 5^x, donc la fonction est solution de y′ = (ln 5)y ✓. La réponse « y′ = 5y » prend la base pour coefficient, alors que a est le coefficient dans l'exposant e^(x ln 5). La réponse « y′ = y/(ln 5) » place ln 5 au dénominateur, comme si l'on primitivait. La réponse « y′ = (x/5)y » applique la règle (x^n)′ = nx^(n−1) à un exposant variable : x ↦ 5^x n'est pas une puissance de x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'équation différentielle y′ = 4y − 20 admet une solution constante. Quelle est cette constante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−20"
+        },
+        {
+          "id": "b",
+          "text": "−5"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si y est la fonction constante égale à c, alors y′ = 0 et l'équation devient 0 = 4c − 20, donc c = 5 ✓. C'est la formule −b/a du cours avec a = 4 et b = −20 : −(−20)/4 = 5. Contrôle : 4 × 5 − 20 = 0 ✓. La réponse −5 applique b/a au lieu de −b/a : 4 × (−5) − 20 = −40 ≠ 0. Les réponses −20 et 20 recopient b ou son opposé sans diviser par a : 4 × 20 − 20 = 60 et 4 × (−20) − 20 = −100, jamais 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soient f et g deux solutions sur ℝ de l'équation différentielle y′ = 2y telles que f(1) = g(1). Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = g(x) pour tout réel x"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = g(x) seulement pour x = 1"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = 2g(x) pour tout réel x"
+        },
+        {
+          "id": "d",
+          "text": "f et g sont toutes les deux la fonction nulle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On écrit f(x) = ke^(2x) et g(x) = k′e^(2x). L'égalité f(1) = g(1) donne ke² = k′e², donc k = k′ : f = g sur ℝ ✓. C'est le théorème de la condition initiale : une seule solution prend la valeur donnée en x₀ = 1. La réponse « seulement pour x = 1 » suppose que deux courbes distinctes de la famille puissent se croiser, ce qui est impossible puisque e^(2x) ne s'annule jamais. La réponse « f(x) = 2g(x) » invente un facteur 2 qui vient du coefficient de l'équation. La réponse « toutes les deux nulles » est un cas particulier (k = k′ = 0) qui n'est pas imposé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ℝ l'équation différentielle 4y′ − 3y = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ ke^(−4x/3), k ∈ ℝ"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ ke^(−3x/4), k ∈ ℝ"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ ke^(3x/4), k ∈ ℝ"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ ke^(4x/3), k ∈ ℝ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Premier geste : isoler y′. Ici 4y′ = 3y, donc y′ = (3/4)y, a = 3/4 et les solutions sont les x ↦ ke^(3x/4) ✓. Vérification : f′(x) = (3k/4)e^(3x/4), donc 4f′(x) − 3f(x) = 3ke^(3x/4) − 3ke^(3x/4) = 0. La réponse « x ↦ ke^(4x/3) » inverse la fraction : elle prend 4/3 au lieu de 3/4. La réponse « x ↦ ke^(−3x/4) » perd le signe : elle résout 4y′ + 3y = 0. La réponse « x ↦ ke^(−4x/3) » cumule les deux erreurs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'ensemble des solutions sur ℝ de l'équation différentielle y′ = 3y − 9 est l'ensemble des fonctions :",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ ke^(−3x) + 3, k ∈ ℝ"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ ke^(3x) − 9, k ∈ ℝ"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ ke^(3x) − 3, k ∈ ℝ"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ ke^(3x) + 3, k ∈ ℝ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'équation est du type y′ = ay + b avec a = 3 et b = −9, donc les solutions sont les x ↦ ke^(ax) − b/a, soit x ↦ ke^(3x) + 3 puisque −b/a = 9/3 = 3 ✓. Vérification : f′(x) = 3ke^(3x) et 3f(x) − 9 = 3ke^(3x) + 9 − 9 = 3ke^(3x). La réponse « x ↦ ke^(3x) − 3 » prend +b/a = −3 : le terme constant a le mauvais signe. La réponse « x ↦ ke^(3x) − 9 » recopie b sans le diviser par a. La réponse « x ↦ ke^(−3x) + 3 » garde la bonne constante mais inverse le signe de l'exposant : sa dérivée −3ke^(−3x) ne vaut pas 3f(x) − 9 = 3ke^(−3x).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la solution sur ℝ de l'équation différentielle y′ = −y + 2 telle que f(0) = 5. Quelle est la limite de f en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ici a = −1 et b = 2, donc −b/a = 2 et f(x) = ke^(−x) + 2. La condition f(0) = k + 2 = 5 donne k = 3, donc f(x) = 3e^(−x) + 2 ✓. Comme e^(−x) → 0 quand x → +∞, la limite vaut 2. La réponse 0 oublie le terme constant −b/a. La réponse 5 confond la limite avec la valeur initiale f(0). La réponse +∞ lit une exponentielle croissante, alors que l'exposant −x tend vers −∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La fonction x ↦ 3 sin(4x) − cos(4x) est solution de l'équation différentielle :",
+      "options": [
+        {
+          "id": "a",
+          "text": "y″ + 3y = 0"
+        },
+        {
+          "id": "b",
+          "text": "y″ + 4y = 0"
+        },
+        {
+          "id": "c",
+          "text": "y″ + 12y = 0"
+        },
+        {
+          "id": "d",
+          "text": "y″ + 16y = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour f(x) = 3 sin(4x) − cos(4x), on a f′(x) = 12cos(4x) + 4 sin(4x), puis f″(x) = −48 sin(4x) + 16cos(4x) = −16 × (3 sin(4x) − cos(4x)) = −16f(x). Donc f″ + 16f = 0 ✓ : le coefficient de y est ω² = 16. La réponse « y″ + 4y = 0 » prend ω lui-même (4) pour le coefficient. La réponse « y″ + 12y = 0 » prend le produit 3 × 4 des coefficients. La réponse « y″ + 3y = 0 » prend le facteur 3 de sin(4x).",
+      "difficulty": 2
+    }
+  ]
+}

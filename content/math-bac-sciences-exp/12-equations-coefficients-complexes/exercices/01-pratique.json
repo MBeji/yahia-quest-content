@@ -1,0 +1,139 @@
+{
+  "title": "⭐ Exercice : Les premières racines dans ℂ",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelles sont les solutions de l'équation z² + 25 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5i seulement"
+        },
+        {
+          "id": "b",
+          "text": "−25i et 25i"
+        },
+        {
+          "id": "c",
+          "text": "−5 et 5"
+        },
+        {
+          "id": "d",
+          "text": "−5i et 5i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a z² = −25 = (5i)², donc les racines carrées de −25 sont 5i et −5i : un complexe non nul a deux racines carrées opposées ✓. Contrôle : (5i)² = 25i² = −25 et (−5i)² = −25. Le choix 5i seul oublie l'opposée ; −5 et 5 ont pour carré 25 et non −25 ; −25i et 25i ne prennent pas la racine carrée de 25.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Lequel de ces nombres a pour carré 24 + 10i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 + i"
+        },
+        {
+          "id": "b",
+          "text": "5 − i"
+        },
+        {
+          "id": "c",
+          "text": "1 + 5i"
+        },
+        {
+          "id": "d",
+          "text": "12 + 5i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On cherche z = x + iy tel que x² − y² = 24, 2xy = 10 et x² + y² = |24 + 10i| = 26, donc x² = 25 et y² = 1 ; comme xy = 5 > 0, x = 5 et y = 1 ✓. Contrôle : (5 + i)² = 25 + 10i − 1 = 24 + 10i. Le nombre 5 − i a pour carré 24 − 10i ; 1 + 5i échange x et y et son carré est −24 + 10i ; 12 + 5i divise 24 par 2 au lieu de chercher une racine carrée : son carré est 119 + 120i.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces équations, laquelle admet pour solutions 2 + 3i et 1 − i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z² + (3 + 2i)z + 5 + i = 0"
+        },
+        {
+          "id": "b",
+          "text": "z² − (3 + 2i)z − 5 − i = 0"
+        },
+        {
+          "id": "c",
+          "text": "z² − (3 + 2i)z + 5 + i = 0"
+        },
+        {
+          "id": "d",
+          "text": "z² − (5 + i)z + 3 + 2i = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les deux nombres ont pour somme S = 3 + 2i et pour produit P = (2 + 3i)(1 − i) = 2 − 2i + 3i + 3 = 5 + i : ils sont donc les solutions de z² − Sz + P = 0, soit z² − (3 + 2i)z + 5 + i = 0 ✓. Contrôle : pour z = 1 − i, z² = −2i et (3 + 2i)(1 − i) = 5 − i, donc −2i − 5 + i + 5 + i = 0. Les autres propositions prennent S avec le signe opposé, P avec le signe opposé, ou échangent S et P.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'équation z¹⁰ = 1 admet dix solutions. Combien d'entre elles ne sont pas réelles ?",
+      "answerKey": {
+        "value": 8
+      },
+      "explanation": "Les solutions sont z_k = e^(i2kπ/10) = e^(ikπ/5) pour k = 0, 1, …, 9 : il y en a dix. Elles sont réelles pour k = 0, qui donne 1, et pour k = 5, qui donne e^(iπ) = −1 : les huit autres ont une partie imaginaire non nulle, soit 10 − 2 = 8 solutions non réelles ✓. Contrôle : les huit points restants sont les sommets du décagone régulier hors de l'axe des réels.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On pose j = (−1 + i√3)/2. Que vaut j²⁰²⁶ + j²⁰²⁷ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "−1"
+        },
+        {
+          "id": "c",
+          "text": "(1 + i√3)/2"
+        },
+        {
+          "id": "d",
+          "text": "(1 − i√3)/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a j³ = 1 et 2026 = 3 × 675 + 1, donc j²⁰²⁶ = j et j²⁰²⁷ = j² : la somme vaut j + j² = −1 ✓. Contrôle : 1 + j + j² = 0. Les restes (0 ; 1) donneraient 1 + j = (1 + i√3)/2 ; les restes (2 ; 0) donneraient j² + 1 = (1 − i√3)/2 ; la valeur 0 vient de 1 + j + j² = 0 appliqué sans tenir compte des restes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les images des solutions de l'équation z⁴ = 256i sont sur un cercle de centre O. Quel est son rayon ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "64"
+        },
+        {
+          "id": "d",
+          "text": "256"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le module de chaque solution vérifie |z|⁴ = |256i| = 256, donc |z| = 4, car 4⁴ = 256 ✓. Contrôle : 4² = 16 et 16² = 256. La valeur 64 divise 256 par 4 : le module se traite par une puissance et non par une division ; 16 est la racine carrée de 256 et non sa racine quatrième ; 256 est le module de a, sans extraction de racine.",
+      "difficulty": 2
+    }
+  ]
+}

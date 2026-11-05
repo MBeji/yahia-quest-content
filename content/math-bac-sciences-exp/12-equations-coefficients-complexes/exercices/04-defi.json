@@ -1,0 +1,150 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve des équations",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Sélectionner toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les solutions de z⁶ = 1 sont les puissances de e^(iπ/3)"
+        },
+        {
+          "id": "b",
+          "text": "Les sept solutions de z⁷ = 5i ont toutes le même module"
+        },
+        {
+          "id": "c",
+          "text": "Les solutions de z² − Sz + P = 0 ont pour somme S et pour produit P"
+        },
+        {
+          "id": "d",
+          "text": "L'équation z⁴ = 16 a exactement deux solutions dans ℂ"
+        },
+        {
+          "id": "e",
+          "text": "L'équation z⁶ = z³ équivaut à z³ = 1"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Sont exactes : les solutions de z⁶ = 1 sont z_k = e^(i2kπ/6) = (e^(iπ/3))^k pour k de 0 à 5 ✓ ; les sept solutions de z⁷ = 5i ont toutes pour module le réel positif r tel que r⁷ = 5 ✓ ; les solutions de z² − Sz + P = 0 sont celles de la factorisation (z − z₁)(z − z₂), de somme S et de produit P ✓. Est fausse l'affirmation sur z⁴ = 16 : elle a quatre solutions, 2, 2i, −2 et −2i, les racines quatrièmes de 16 (module 2, arguments kπ/2). Est fausse aussi l'équivalence z⁶ = z³ ⟺ z³ = 1 : elle oublie la solution z = 0, car z³(z³ − 1) = 0 équivaut à z = 0 ou z³ = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève résout l'équation z² − (1 + 2i)z − 3 + i = 0. ① On a a = 1, b = −1 − 2i et c = −3 + i. ② Δ = b² − 4ac = (−3 + 4i) − 4(−3 + i) = 9. ③ Une racine carrée de Δ est δ = 3, donc z = (b ± δ)/(2a) = (−1 − 2i ± 3)/2. ④ Les solutions sont 1 − i et −2 − i. Quelle est la première étape qui contient une erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ①, où les trois coefficients a, b et c sont mal relevés"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ②, où le discriminant Δ = b² − 4ac est mal calculé"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③, où la formule des solutions est mal appliquée"
+        },
+        {
+          "id": "d",
+          "text": "L'étape ④, où les deux valeurs numériques sont mal calculées"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'erreur est à l'étape ③ : la formule est z = (−b ± δ)/(2a), et l'élève a écrit b au lieu de −b. Les étapes ① et ② sont correctes : (1 + 2i)² = −3 + 4i, et −3 + 4i + 12 − 4i = 9. L'étape ④ découle correctement de ③ : (−1 − 2i + 3)/2 = 1 − i et (−1 − 2i − 3)/2 = −2 − i. Contrôle : 1 − i n'est pas solution, car (1 − i)² − (1 + 2i)(1 − i) − 3 + i = −2i − 3 − i − 3 + i = −6 − 2i ≠ 0. Les solutions justes sont 2 + i et −1 + i, de somme 1 + 2i ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les images des solutions de l'équation z⁴ = −64 sont les sommets d'un carré. Calculer l'aire de ce carré.",
+      "answerKey": {
+        "value": 16
+      },
+      "explanation": "Le module des solutions vérifie |z|⁴ = 64, donc |z|² = 8 et |z| = 2√2. Leurs arguments sont (π + 2kπ)/4, soit π/4 + kπ/2 : les solutions sont 2 + 2i, −2 + 2i, −2 − 2i et 2 − 2i. Le côté du carré vaut |(−2 + 2i) − (2 + 2i)| = 4, donc l'aire vaut 4² = 16 ✓. Contrôle : (2 + 2i)² = 8i et (8i)² = −64.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit m un réel strictement supérieur à 4. On note A et B les images des deux solutions de l'équation z² − 4z + m = 0. Pour quelle valeur de m le triangle OAB est-il rectangle en O ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a Δ = 16 − 4m = −4(m − 4), de racine carrée δ = 2i√(m − 4), donc z = 2 ± i s avec s = √(m − 4). Alors A(2 ; s) et B(2 ; −s), et le triangle est rectangle en O lorsque OA⃗ · OB⃗ = 4 − s² = 0, soit s = 2 et m = 4 + s² = 8 ✓. Contrôle : pour m = 8, z = 2 ± 2i et (2 + 2i)/(2 − 2i) = (2 + 2i)²/8 = i, un imaginaire pur. La valeur 5 donne s = 1 et 4 − 1 > 0 : l'angle en O est aigu ; 6 confond s avec m − 4 ; 12 donne s² = 8 et un angle obtus : 4 − 8 < 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout θ ∈ [0 ; 2π[, l'équation z² + (2 − 3 e^(iθ))z − 6 e^(iθ) = 0 admet −2 pour solution ; on note A son image et M l'image de l'autre solution. Quel ensemble le milieu I de [AM] décrit-il quand θ décrit [0 ; 2π[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre d'affixe −1 et de rayon 3/2"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre d'affixe −2 et de rayon 3"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre d'affixe −2 et de rayon 3/2"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre d'affixe −1 et de rayon 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La somme des solutions vaut −b/a = −2 + 3 e^(iθ), donc l'autre solution est (−2 + 3 e^(iθ)) − (−2) = 3 e^(iθ). Le milieu I a pour affixe z_I = (−2 + 3 e^(iθ))/2 = −1 + (3/2) e^(iθ), donc |z_I + 1| = 3/2 : I décrit le cercle de centre d'affixe −1 et de rayon 3/2 ✓. Contrôle pour θ = 0 : M = 3 et I = 1/2, à la distance 3/2 de −1. Le cercle de centre −2 et de rayon 3 est celui de l'affixe −2 + 3 e^(iθ), sans diviser par 2 ; le centre −2 avec le rayon 3/2 prend A pour centre au lieu du milieu ; le rayon 3 oublie de diviser par 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit z₁ la solution de l'équation z³ = 32√2(−1 + i) dont l'argument est 11π/12. Quelle est la partie réelle de z₁ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√6 + √2"
+        },
+        {
+          "id": "b",
+          "text": "−(√6 + √2)/4"
+        },
+        {
+          "id": "c",
+          "text": "−(√6 − √2)"
+        },
+        {
+          "id": "d",
+          "text": "−(√6 + √2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a 32√2(−1 + i) = 64 e^(i3π/4), donc une solution est z₀ = 4 e^(iπ/4) = 2√2(1 + i), et les autres s'obtiennent en multipliant par j. La solution d'argument π/4 + 2π/3 = 11π/12 est z₁ = z₀ j = 2√2(1 + i)(−1 + i√3)/2 = √2[(−1 − √3) + i(√3 − 1)]. Sa partie réelle est −√2 − √6 = −(√6 + √2) ✓. Contrôle : |z₁|² = (√2 + √6)² + (√6 − √2)² = 16, donc |z₁| = 4. Le signe positif oublie que cos(11π/12) < 0 ; −(√6 − √2) est la partie imaginaire changée de signe ; −(√6 + √2)/4 oublie le module 4.",
+      "difficulty": 3
+    }
+  ]
+}
