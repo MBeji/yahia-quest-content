@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des équations différentielles",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Combien de solutions de y″ + 9y = 0 vérifient f(0) = 1 et f(π/3) = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune"
+        },
+        {
+          "id": "b",
+          "text": "Une seule : x ↦ cos(3x)"
+        },
+        {
+          "id": "c",
+          "text": "Une infinité : x ↦ A sin(3x) + cos(3x), A ∈ ℝ"
+        },
+        {
+          "id": "d",
+          "text": "Une infinité : x ↦ A sin(3x) − cos(3x), A ∈ ℝ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici ω = 3 et f(x) = A sin(3x) + B cos(3x). La condition f(0) = B = 1 fixe B. Ensuite f(π/3) = A sin π + B cos π = −B, donc la seconde condition s'écrit −B = 1, soit B = −1 : elle contredit B = 1. Il n'existe donc aucune solution ✓. Contrôle : x ↦ cos(3x) vaut bien 1 en 0, mais cos π = −1 en π/3. La réponse « une seule : cos(3x) » croit que deux conditions fixent toujours la solution, sans tester la seconde. La famille x ↦ A sin(3x) + cos(3x) prend cos π = 1. La famille x ↦ A sin(3x) − cos(3x) n'utilise que f(π/3) = 1 et oublie f(0) = 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "f est dérivable sur ℝ, ne s'annule pas, vérifie y′ + 2y = y² et f(0) = 1. En posant g = 1/f, déterminer f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = 2/(1 + e^(−2x))"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = (1 + e^(2x))/2"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = 2/(2e^(2x) + 1)"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = 2/(1 + e^(2x))"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme f′ = f² − 2f, on a g′ = −f′/f² = −1 + 2/f = 2g − 1. Les solutions de y′ = 2y − 1 sont g(x) = ke^(2x) + 1/2 (car −b/a = 1/2). La condition g(0) = 1/f(0) = 1 donne k = 1/2, donc g(x) = (e^(2x) + 1)/2 et f(x) = 1/g(x) = 2/(1 + e^(2x)) ✓. Contrôle : f(0) = 1 et g ne s'annule jamais. La réponse « 2/(1 + e^(−2x)) » écrit g′ = f′/f² au lieu de −f′/f² (elle vérifie f(0) = 1 mais pas l'équation). La réponse « (1 + e^(2x))/2 » donne g et oublie d'inverser. La réponse « 2/(2e^(2x) + 1) » prend k = g(0) = 1 au lieu de g(0) − 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe ci-dessous représente, sur [0, +∞[, une solution f de l'équation différentielle y′ = ay + b (a et b réels, a ≠ 0). La droite d'équation y = 1 est asymptote à la courbe, et on lit f(0) = 5 puis f(ln 2) = 2. Déterminer le réel x₁ tel que f(x₁) = 3/2.\n\n<svg viewBox=\"0 0 340 210\"><path d=\"M45 175 H320\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M55 190 V25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M320 175 l-7 -3.5 l0 7 z\" fill=\"#0f172a\"/><path d=\"M55 25 l-3.5 7 l7 0 z\" fill=\"#0f172a\"/><line x1=\"50\" y1=\"153.0\" x2=\"310\" y2=\"153.0\" stroke=\"#b45309\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><polyline points=\"55.0,65.0 64.0,81.0 73.0,94.0 82.0,104.7 91.0,113.5 100.0,120.6 117.4,131.0 136.0,138.5 154.0,143.2 172.0,146.5 190.0,148.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"55\" y1=\"131.0\" x2=\"117.4\" y2=\"131.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"117.4\" y1=\"131.0\" x2=\"117.4\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><circle cx=\"55.0\" cy=\"65.0\" r=\"3\" fill=\"#0f172a\"/><circle cx=\"117.4\" cy=\"131.0\" r=\"3\" fill=\"#0f172a\"/><text x=\"50\" y=\"69.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"50\" y=\"135.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"50\" y=\"157.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">1</text><text x=\"52\" y=\"190\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">0</text><text x=\"117.4\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">ln 2</text><text x=\"250\" y=\"148.0\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">y = 1</text><text x=\"308\" y=\"168\" font-size=\"11\" fill=\"#0f172a\">x</text><text x=\"26\" y=\"34\" font-size=\"11\" fill=\"#0f172a\">f(x)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x₁ = 6 ln 2"
+        },
+        {
+          "id": "b",
+          "text": "x₁ = (3/2) ln 2"
+        },
+        {
+          "id": "c",
+          "text": "x₁ = (1/2) ln 10"
+        },
+        {
+          "id": "d",
+          "text": "x₁ = 3 ln 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'asymptote y = 1 est la solution constante −b/a = 1, donc f(x) = (f(0) − 1)e^(ax) + 1 = 4e^(ax) + 1. La lecture f(ln 2) = 2 donne 4e^(a ln 2) = 1, soit 2^a = 1/4 et a = −2 : f(x) = 4e^(−2x) + 1. Alors f(x₁) = 3/2 s'écrit 4e^(−2x₁) = 1/2, soit e^(−2x₁) = 1/8, donc −2x₁ = −3 ln 2 et x₁ = (3/2) ln 2 ✓. Contrôle : x₁ ≈ 1,04 > ln 2 ≈ 0,69, cohérent avec une courbe décroissante qui passe de 2 à 3/2. La réponse « 6 ln 2 » multiplie par 2 au lieu de diviser. La réponse « (1/2) ln 10 » prend k = f(0) = 5 au lieu de f(0) − 1 = 4. La réponse « 3 ln 2 » prend a = −1 au lieu de −2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On cherche la solution f de (E) : 2y′ + 6y = 9 vérifiant f(0) = 1. Voici une rédaction.\nÉtape 1 : (E) équivaut à y′ = −3y + 9/2, donc a = −3 et b = 9/2.\nÉtape 2 : la solution constante est c = b/a = −3/2.\nÉtape 3 : donc f(x) = ke^(−3x) − 3/2, et f(0) = k − 3/2 = 1 donne k = 5/2.\nÉtape 4 : donc f(x) = (5/2)e^(−3x) − 3/2.\nQuelle est la PREMIÈRE étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chasse à l'erreur : l'explication désigne l'étape fautive, qui est ici la bonne réponse. L'étape 1 est juste : 2y′ + 6y = 9 donne y′ = −3y + 9/2 ✓. L'étape 2 est fausse : la constante c vérifie 0 = ac + b, donc c = −b/a = −(9/2)/(−3) = 3/2, et non b/a = −3/2. Les étapes 3 et 4 sont cohérentes avec la constante erronée, mais elles en héritent l'erreur ; la bonne rédaction donne f(x) = ke^(−3x) + 3/2 avec k = −1/2, donc f(x) = −(1/2)e^(−3x) + 3/2. Contrôle : 3/2 annule bien −3y + 9/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une substance radioactive perd 20 % de ses noyaux en 3 ans. Quelle est sa demi-vie T ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T = 3 ln 2 / ln 5 ≈ 1,3 an"
+        },
+        {
+          "id": "b",
+          "text": "T = 7,5 ans"
+        },
+        {
+          "id": "c",
+          "text": "T = 3 ln 2 / ln(5/4) ≈ 9,3 ans"
+        },
+        {
+          "id": "d",
+          "text": "T = 3 ln 2 / 0,2 ≈ 10,4 ans"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec N(t) = N₀e^(−λt), la perte de 20 % en 3 ans s'écrit e^(−3λ) = 0,8, donc λ = −(ln 0,8)/3 = ln(5/4)/3. La demi-vie est T = (ln 2)/λ = 3 ln 2 / ln(5/4) ≈ 3 × 0,6931/0,2231 ≈ 9,3 ans ✓. Contrôle : 0,8^3,1 ≈ 0,5. La réponse « 7,5 ans » extrapole linéairement (20 % tous les 3 ans), alors que la perte ralentit avec la quantité. La réponse « 3 ln 2 / ln 5 » confond « il reste 20 % » avec « il perd 20 % ». La réponse « 3 ln 2 / 0,2 » remplace ln(5/4) ≈ 0,2231 par 0,2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un circuit formé d'une bobine d'inductance L = 0,5 H et d'un condensateur de capacité C = 0,02 F, la charge q(t) vérifie q″(t) + (1/(LC))q(t) = 0. À l'instant 0, q(0) = 0,03 C et q′(0) = 0. Quelle est la valeur maximale de l'intensité i(t) = −q′(t) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,003 A"
+        },
+        {
+          "id": "b",
+          "text": "0,03 A"
+        },
+        {
+          "id": "c",
+          "text": "0,3 A"
+        },
+        {
+          "id": "d",
+          "text": "3 A"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a LC = 0,5 × 0,02 = 0,01, donc 1/(LC) = 100 = 10² et ω = 10. Avec q(0) = 0,03 et q′(0) = 0 : q(t) = 0,03cos(10t). Alors i(t) = −q′(t) = 0,3 sin(10t), dont la valeur maximale est 0,3 A ✓. La réponse 0,03 A est l'amplitude de q, non celle de i : la dérivation multiplie l'amplitude par ω. La réponse 3 A prend 1/(LC) = 100 pour ω, et multiplie 0,03 par 100. La réponse 0,003 A divise 0,03 par ω au lieu de le multiplier.",
+      "difficulty": 3
+    }
+  ]
+}

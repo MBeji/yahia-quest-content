@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les nombres complexes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Écrire sous forme algébrique le nombre 3i + 2/i − 4.",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4 + 3i"
+        },
+        {
+          "id": "b",
+          "text": "−4 + 5i"
+        },
+        {
+          "id": "c",
+          "text": "4 + i"
+        },
+        {
+          "id": "d",
+          "text": "−4 + i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On calcule 1/i : comme i × (−i) = 1, on a 1/i = −i, donc 2/i = −2i. Alors 3i + 2/i − 4 = 3i − 2i − 4 = −4 + i ✓. Contrôle par réinjection : (−4 + i) − 3i + 4 = −2i = 2/i car 2/i = 2(−i) ✓. La réponse « −4 + 3i » oublie le terme 2/i. La réponse « −4 + 5i » prend 1/i = i et obtient 3i + 2i. La réponse « 4 + i » change le signe de la partie réelle.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le module du produit (4 + 3i)(−2 + 2i) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 + 2√2"
+        },
+        {
+          "id": "b",
+          "text": "10√2"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "50"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le module d'un produit est le produit des modules : |4 + 3i| = √(16 + 9) = 5 et |−2 + 2i| = √(4 + 4) = 2√2, d'où 5 × 2√2 = 10√2 ✓. Contrôle direct : (4 + 3i)(−2 + 2i) = −8 + 8i − 6i − 6 = −14 + 2i, de module √(196 + 4) = √200 = 10√2 ✓. La réponse « 5 + 2√2 » additionne les modules au lieu de les multiplier. La réponse 10 prend |−2 + 2i| = 2. La réponse 50 multiplie les carrés des modules, soit le module au carré du produit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On pose Z = (5 − 2i)/(4 + 3i) + (5 + 2i)/(4 − 3i). Quelle est la partie imaginaire de Z ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "−23/25"
+        },
+        {
+          "id": "c",
+          "text": "−46/25"
+        },
+        {
+          "id": "d",
+          "text": "28/25"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les deux termes sont conjugués : (5 + 2i)/(4 − 3i) est le conjugué de (5 − 2i)/(4 + 3i). Or la somme d'un nombre complexe et de son conjugué vaut 2Re(u), qui est réel, donc Im(Z) = 0 ✓. Contrôle par le calcul : (5 − 2i)/(4 + 3i) = (14 − 23i)/25, et la somme avec son conjugué vaut 28/25, un réel. La réponse −23/25 est la partie imaginaire d'un seul des deux termes. La réponse −46/25 la double. La réponse 28/25 est la partie réelle de Z.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est l'ensemble des points M d'affixe z tels que |z + 3 − i| = |z̄ − 1 + 2i| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La médiatrice du segment joignant les points d'affixes −3 + i et 1 − 2i"
+        },
+        {
+          "id": "b",
+          "text": "La médiatrice du segment joignant les points d'affixes 3 − i et 1 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de diamètre le segment joignant les points d'affixes −3 + i et 1 + 2i"
+        },
+        {
+          "id": "d",
+          "text": "La médiatrice du segment joignant les points d'affixes −3 + i et 1 + 2i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un complexe et son conjugué ont même module : |z̄ − 1 + 2i| = |z − 1 − 2i|. L'égalité s'écrit |z − (−3 + i)| = |z − (1 + 2i)|, soit KM = LM avec K(−3 + i) et L(1 + 2i) : M décrit la médiatrice de [KL] ✓. Contrôle : le milieu de [KL], d'affixe −1 + (3/2)i, vérifie bien KM = LM. La réponse avec 1 − 2i garde le conjugué sans le défaire. La réponse avec 3 − i lit mal le signe de z + 3 − i. La réponse « cercle de diamètre » confond l'équidistance avec l'orthogonalité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'écriture trigonométrique du nombre z = √6 − i√2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2(cos(π/6) + i sin(π/6))"
+        },
+        {
+          "id": "b",
+          "text": "2√2(cos(−π/3) + i sin(−π/3))"
+        },
+        {
+          "id": "c",
+          "text": "2√2(cos(−π/6) + i sin(−π/6))"
+        },
+        {
+          "id": "d",
+          "text": "8(cos(−π/6) + i sin(−π/6))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Module : |z| = √(6 + 2) = √8 = 2√2. Ensuite cos θ = √6/(2√2) = √3/2 et sin θ = −√2/(2√2) = −1/2, d'où θ = −π/6 (cosinus positif, sinus négatif : quatrième quadrant). Contrôle : 2√2 × √3/2 = √6 et 2√2 × (−1/2) = −√2 ✓. La forme avec cos(π/6) et sin(π/6) oublie le signe du sinus. La forme avec −π/3 échange le cosinus et le sinus (cos = 1/2 et sin = −√3/2 pour −π/3). La forme de module 8 prend a² + b² = 8 pour le module, en oubliant la racine carrée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la forme algébrique de (√3 − i)⁷ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "64√3 + 64i"
+        },
+        {
+          "id": "b",
+          "text": "−64√3 + 64i"
+        },
+        {
+          "id": "c",
+          "text": "−64√3 − 64i"
+        },
+        {
+          "id": "d",
+          "text": "64√3 − 64i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "|√3 − i| = 2 et arg(√3 − i) ≡ −π/6. Par Moivre, (√3 − i)⁷ = 2⁷(cos(−7π/6) + i sin(−7π/6)) = 128(−√3/2 + i/2) = −64√3 + 64i ✓. Contrôle par le module : √(64²×3 + 64²) = 64 × 2 = 128 = 2⁷ ✓, et −7π/6 ≡ 5π/6 place le point dans le deuxième quadrant, partie réelle négative et partie imaginaire positive. Les trois autres réponses placent le point dans un autre quadrant : elles résultent d'une erreur de signe sur l'argument.",
+      "difficulty": 2
+    }
+  ]
+}

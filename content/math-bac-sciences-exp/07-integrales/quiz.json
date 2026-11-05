@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Intégrales",
+  "questions": [
+    {
+      "prompt": "Le plan est muni d'un repère orthogonal (O, i⃗, j⃗) avec ‖i⃗‖ = 3 cm et ‖j⃗‖ = 2 cm. Une partie du plan a pour aire 5 u.a. Quelle est son aire en cm² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 cm²"
+        },
+        {
+          "id": "b",
+          "text": "25 cm²"
+        },
+        {
+          "id": "c",
+          "text": "15 cm²"
+        },
+        {
+          "id": "d",
+          "text": "10 cm²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'unité d'aire est l'aire du rectangle de dimensions ‖i⃗‖ et ‖j⃗‖, soit ici 3 × 2 = 6 cm². Donc 5 u.a = 5 × 6 = 30 cm² ✓. La réponse 10 cm² ne multiplie que par ‖j⃗‖ = 2. La réponse 15 cm² ne multiplie que par ‖i⃗‖ = 3. La réponse 25 cm² additionne les dimensions (3 + 2 = 5) au lieu de les multiplier : une unité d'aire est un produit de deux longueurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les fonctions F(x) = x² + 3 et G(x) = x² − 7 sont deux primitives de f(x) = 2x sur ℝ. En utilisant G, quelle est la valeur de ∫₁³ 2x dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−8"
+        },
+        {
+          "id": "b",
+          "text": "−6"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'intégrale vaut G(3) − G(1) = (9 − 7) − (1 − 7) = 2 + 6 = 8 ✓. Avec F, on trouverait (9 + 3) − (1 + 3) = 8 aussi : la différence F(b) − F(a) ne dépend pas de la primitive choisie, car deux primitives diffèrent d'une constante qui s'élimine. La réponse 2 est G(3) seul, sans retrancher G(1). La réponse −6 est G(1) seul. La réponse −8 est G(1) − G(3), c'est-à-dire l'opposé : les bornes sont échangées.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On note G(x) l'intégrale de f entre 1 et x, où f est continue sur ℝ. Quelle écriture est correcte pour définir G(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "∫ₓ¹ f(t)dt"
+        },
+        {
+          "id": "b",
+          "text": "∫₁ˣ f(t)dx"
+        },
+        {
+          "id": "c",
+          "text": "∫₁ˣ f(x)dx"
+        },
+        {
+          "id": "d",
+          "text": "∫₁ˣ f(t)dt"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La variable d'intégration est muette : elle disparaît du résultat, donc elle doit porter une autre lettre que la borne x. L'écriture ∫₁ˣ f(t)dt convient ✓ et définit bien une fonction de x. L'écriture ∫₁ˣ f(x)dx utilise la lettre x à la fois comme borne et comme variable : x est déjà pris. L'écriture ∫ₓ¹ f(t)dt échange les bornes : elle vaut −G(x). L'écriture ∫₁ˣ f(t)dx mélange t dans l'intégrande et x dans le dx : elle n'a pas de sens.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f une fonction continue sur ℝ telle que ∫₋₁⁵ f(x)dx = 3 et ∫₋₁² f(x)dx = 8. Que vaut ∫₂⁵ f(x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "−5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par la relation de Chasles, ∫₋₁² f + ∫₂⁵ f = ∫₋₁⁵ f, donc ∫₂⁵ f(x)dx = 3 − 8 = −5 ✓. Le résultat peut être négatif : une intégrale n'est pas une aire. La réponse 5 retranche dans le mauvais sens (8 − 3). La réponse 11 additionne les deux données. La réponse 24 multiplie 3 par 8, ce qui n'a aucune justification : Chasles est une relation additive.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On a ∫₀³ (x − 1)dx = 3/2. Soit f(x) = x − 1 sur [0, 3]. Quelle conclusion est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "∫₀³ |f(x)|dx = 3/2"
+        },
+        {
+          "id": "b",
+          "text": "l'aire de la partie limitée par C_f, l'axe et x = 0, x = 3 vaut 3/2 u.a"
+        },
+        {
+          "id": "c",
+          "text": "f est positive sur [0 ; 3]"
+        },
+        {
+          "id": "d",
+          "text": "∫₀³ |f(x)|dx ≥ 3/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La propriété |∫ₐᵇ f| ≤ ∫ₐᵇ |f| donne ∫₀³ |f(x)|dx ≥ 3/2 ✓. En effet f est négative sur [0, 1[ : ∫₀¹ (1 − x)dx = 1/2 et ∫₁³ (x − 1)dx = 2, donc ∫₀³ |f| = 5/2 ≥ 3/2. La réponse « f est positive » lit la positivité à l'envers : une intégrale positive n'impose pas f ≥ 0, et f(0) = −1. La réponse ∫|f| = 3/2 oublie que la partie sous l'axe compte en négatif dans l'intégrale mais en positif dans ∫|f|. La réponse « l'aire vaut 3/2 » prend l'intégrale pour l'aire, alors que l'aire vaut ∫|f| = 5/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut ∫₁⁴ 3/√x dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une primitive de 1/√x est 2√x, donc une primitive de 3/√x est F(x) = 6√x (contrôle : F′(x) = 6/(2√x) = 3/√x ✓). Alors ∫₁⁴ 3/√x dx = F(4) − F(1) = 12 − 6 = 6 ✓. La réponse 12 est F(4) seul. La réponse 3 vient de la primitive 3√x, qui oublie le facteur 2 de 2√x. La réponse 9 est 3 × (4 − 1), la valeur f(1) = 3 multipliée par la largeur : ce n'est pas l'intégrale, car f n'est pas constante.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f et g continues sur [1 ; 3] avec ∫₁³ f(x)dx = 5 et ∫₁³ g(x)dx = −2. Que vaut ∫₁³ (4f(x) + 3g(x) − 1)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par linéarité, ∫₁³ (4f + 3g − 1) = 4 × 5 + 3 × (−2) − ∫₁³ 1 dx = 20 − 6 − 2 = 12 ✓ : l'intégrale de la constante 1 sur [1, 3] vaut 3 − 1 = 2. La réponse 14 oublie de traiter la constante −1. La réponse 13 compte la constante comme −1 au lieu de −1 × 2. La réponse 24 change le signe de 3g en écrivant 20 + 6 − 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On considère f(x) = 2x − 8 sur [0 ; 6]. Quelle est, en u.a, l'aire de la partie du plan limitée par C_f, l'axe des abscisses et les droites x = 0 et x = 6 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "−12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fonction f s'annule en 4 : elle est négative sur [0, 4] et positive sur [4, 6], donc l'aire vaut ∫₀⁶ |f| = ∫₀⁴ (8 − 2x)dx + ∫₄⁶ (2x − 8)dx = [8x − x²]₀⁴ + [x² − 8x]₄⁶ = 16 + 4 = 20 u.a ✓. La réponse −12 est l'intégrale ∫₀⁶ f = 36 − 48 : un bilan algébrique, pas une aire. La réponse 16 ne compte que la partie sous l'axe. La réponse 4 ne compte que la partie au-dessus de l'axe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la valeur moyenne de f(x) = 3x² − 2x sur [1 ; 3] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "36"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule ∫₁³ (3x² − 2x)dx = [x³ − x²]₁³ = (27 − 9) − (1 − 1) = 18, puis on divise par la longueur 3 − 1 = 2 : f̄ = 18/2 = 9 ✓. La réponse 18 oublie de diviser par b − a. La réponse 36 multiplie par la longueur au lieu de diviser. La réponse 11 est la moyenne arithmétique des extrémités, (f(1) + f(3))/2 = (1 + 21)/2 : la valeur moyenne d'une fonction n'est pas la moyenne de ses valeurs aux bornes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'arc de la courbe d'équation y = √(2x), pour 0 ≤ x ≤ 3, tourne autour de l'axe (Ox) dans un repère orthonormé. Quel est le volume du solide engendré ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36π"
+        },
+        {
+          "id": "b",
+          "text": "18π"
+        },
+        {
+          "id": "c",
+          "text": "9π"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le volume vaut V = π∫₀³ f²(x)dx avec f²(x) = 2x, donc V = π[x²]₀³ = 9π ✓. La réponse 9 oublie le facteur π de l'aire d'un disque. La réponse 18π primitive 2x en 2x² au lieu de x² : le facteur 2 est dérivé deux fois. La réponse 36π écrit f²(x) = (2x)² = 4x² en oubliant que le carré porte sur la racine : f² = 2x, pas 4x².",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du plan complexe",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Écrire sous forme algébrique Z = (√3 + i)⁷/(1 − i)⁶.",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 − 8i√3"
+        },
+        {
+          "id": "b",
+          "text": "−8 + 8i√3"
+        },
+        {
+          "id": "c",
+          "text": "−8√3 + 8i"
+        },
+        {
+          "id": "d",
+          "text": "8 + 8i√3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Numérateur : |√3 + i| = 2 et arg ≡ π/6, donc (√3 + i)⁷ = 128 e^(i7π/6). Dénominateur : |1 − i| = √2 et arg ≡ −π/4, donc (1 − i)⁶ = 8 e^(−i3π/2) = 8 e^(iπ/2) = 8i. Le quotient vaut 16 e^(i(7π/6 − π/2)) = 16 e^(i2π/3) = 16(−1/2 + i√3/2) = −8 + 8i√3 ✓. Contrôle algébrique indépendant : (√3 + i)⁶ = (2 + 2i√3)³ = 8(1 + i√3)³ = 8 × (−8) = −64, donc le numérateur vaut −64(√3 + i) ; divisé par 8i, cela donne −8(√3 + i)/i = −8(√3 + i)(−i) = 8i(√3 + i) = −8 + 8i√3 ✓. La réponse « 8 − 8i√3 » prend arg(1 − i) = +π/4 : l'angle devient −π/3. La réponse « −8√3 + 8i » correspond à l'angle 5π/6 : elle ne retranche que π/3. La réponse « 8 + 8i√3 » correspond à l'angle π/3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour x = π/6, que vaut (1 + i tan x)/(1 − i tan x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3/2 + (1/2)i"
+        },
+        {
+          "id": "b",
+          "text": "1/2 − (√3/2)i"
+        },
+        {
+          "id": "c",
+          "text": "1/2 + (√3/2)i"
+        },
+        {
+          "id": "d",
+          "text": "−1/2 + (√3/2)i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour x ≠ (2k + 1)π/2, (1 + i tan x)/(1 − i tan x) = e^(2ix) : en effet 1 ± i tan x = e^(±ix)/cos x. Avec x = π/6, e^(2ix) = e^(iπ/3) = 1/2 + (√3/2)i ✓. Contrôle direct : tan(π/6) = √3/3, donc le quotient est (3 + i√3)/(3 − i√3) = (3 + i√3)²/12 = (6 + 6i√3)/12 = 1/2 + (√3/2)i ✓. La réponse « √3/2 + (1/2)i » est e^(iπ/6) : elle oublie le facteur 2 de l'exponentielle. La réponse « 1/2 − (√3/2)i » est l'inverse e^(−iπ/3). La réponse « −1/2 + (√3/2)i » est e^(i2π/3) : elle double une seconde fois l'angle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout réel x, sin³x est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3/4)sin x − (1/4)sin 3x"
+        },
+        {
+          "id": "b",
+          "text": "(1/4)sin 3x − (3/4)sin x"
+        },
+        {
+          "id": "c",
+          "text": "(3/4)sin x + (1/4)sin 3x"
+        },
+        {
+          "id": "d",
+          "text": "(3/8)sin x − (1/8)sin 3x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On écrit sin³x = (e^(ix) − e^(−ix))³/(2i)³ avec (2i)³ = −8i. Le binôme donne (e^(3ix) − e^(−3ix)) − 3(e^(ix) − e^(−ix)) = 2i sin 3x − 6i sin x. Donc sin³x = (2i sin 3x − 6i sin x)/(−8i) = (3/4)sin x − (1/4)sin 3x ✓. Contrôle en x = π/2 : sin³ = 1 et 3/4 − (1/4)(−1) = 1 ✓. L'expression (1/4)sin 3x − (3/4)sin x change le signe global et donnerait −1 en x = π/2. L'expression (3/4)sin x + (1/4)sin 3x donnerait 3/4 − 1/4 = 1/2 au même point. L'expression (3/8)sin x − (1/8)sin 3x divise par 8 au lieu de 4 et donnerait 1/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit Ω le point d'affixe −1 + 2i. Quel est l'ensemble des points M d'affixe z = −1 + 2i − 3e^(iθ), où θ décrit [0 ; π] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le demi-cercle supérieur de centre Ω et de rayon 3"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle entier de centre Ω et de rayon 3"
+        },
+        {
+          "id": "c",
+          "text": "Le demi-cercle inférieur de centre le point d'affixe 1 − 2i et de rayon 3"
+        },
+        {
+          "id": "d",
+          "text": "Le demi-cercle inférieur de centre Ω et de rayon 3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a z − z_Ω = −3e^(iθ) = 3e^(i(θ + π)), donc ΩM = 3 : M est sur le cercle de centre Ω et de rayon 3. L'angle θ + π décrit [π ; 2π], où le sinus est négatif : M reste sous la droite horizontale passant par Ω, c'est le demi-cercle inférieur ✓. Contrôle sur les extrémités : θ = 0 donne −4 + 2i et θ = π donne 2 + 2i, deux points à la hauteur de Ω, à distance 3 de part et d'autre ; θ = π/2 donne −1 − i, sous Ω ✓. Le demi-cercle supérieur oublie le signe moins devant 3e^(iθ). Le cercle entier oublie la restriction à [0 ; π] (il faudrait θ ∈ [0 ; 2π[). Le centre 1 − 2i confond Ω avec son opposé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit α ∈ [0 ; π/2] et t = e^(iα). Les points A et B ont pour affixes t³ et 2t. À quelle condition O, A et B sont-ils alignés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "cos 2α = 0"
+        },
+        {
+          "id": "b",
+          "text": "sin α = 0"
+        },
+        {
+          "id": "c",
+          "text": "sin 2α = 0"
+        },
+        {
+          "id": "d",
+          "text": "sin 4α = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "O, A et B sont alignés si et seulement si le quotient z_A/z_B est réel. Or t³/(2t) = t²/2 = e^(2iα)/2, dont la partie imaginaire est (sin 2α)/2. La condition est donc sin 2α = 0 ✓, soit α = 0 ou α = π/2 sur [0 ; π/2]. Contrôle : pour α = π/2, t = i, A(−i) et B(2i) sont bien sur l'axe des ordonnées avec O. La condition cos 2α = 0 rend le quotient imaginaire, donc OA et OB perpendiculaires : par exemple α = π/4 donne A d'affixe e^(i3π/4) et B d'affixe 2e^(iπ/4), orthogonaux. La condition sin α = 0 ne garde que α = 0 et manque α = π/2. La condition sin 4α = 0 ajouterait à tort α = π/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule de ces affirmations est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour tout nombre complexe z, |z + 1| ≤ |z| + 1"
+        },
+        {
+          "id": "b",
+          "text": "Si z³ est réel, alors z est réel"
+        },
+        {
+          "id": "c",
+          "text": "Si |z| = |z′|, alors z = z′ ou z = −z′"
+        },
+        {
+          "id": "d",
+          "text": "Si z² est imaginaire pur, alors z est imaginaire pur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'inégalité |z + 1| ≤ |z| + 1 est l'inégalité triangulaire |z + z′| ≤ |z| + |z′| appliquée à z′ = 1 ✓. Les trois autres affirmations tombent sur un contre-exemple : pour z = e^(iπ/3) = 1/2 + i√3/2, z³ = e^(iπ) = −1 est réel et z ne l'est pas ; pour z = 1 et z′ = i, |z| = |z′| = 1 mais z ≠ ±z′ (deux points du même cercle ne sont pas forcément opposés) ; pour z = 1 + i, z² = 2i est imaginaire pur et z ne l'est pas.",
+      "difficulty": 3
+    }
+  ]
+}

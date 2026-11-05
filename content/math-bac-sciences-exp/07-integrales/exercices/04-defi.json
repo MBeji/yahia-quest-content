@@ -1,0 +1,146 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les lois cachées de l'intégrale",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Calculer ∫₀^{π/2} t² sin t dt.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 − π"
+        },
+        {
+          "id": "b",
+          "text": "π/2 − 1"
+        },
+        {
+          "id": "c",
+          "text": "π − 2"
+        },
+        {
+          "id": "d",
+          "text": "π + 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On intègre par parties avec f(t) = t² (f′ = 2t) et g′(t) = sin t (g = −cos t) : ∫₀^{π/2} t² sin t dt = [−t² cos t]₀^{π/2} + 2∫₀^{π/2} t cos t dt. Le crochet est nul (cos(π/2) = 0). Une seconde intégration par parties donne ∫₀^{π/2} t cos t dt = [t sin t]₀^{π/2} − ∫₀^{π/2} sin t dt = π/2 − 1. D'où le résultat 2(π/2 − 1) = π − 2 ✓. La réponse π/2 − 1 oublie le facteur 2 venu de la dérivée de t². La réponse 2 − π est l'opposé : le signe + de la formule a été perdu. La réponse π + 2 se trompe de signe sur l'intégrale restante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève veut calculer l'aire 𝒜 de la partie limitée par la courbe de f(x) = x³ − x, l'axe des abscisses et les droites x = −1 et x = 1. Étape 1 : 𝒜 = ∫_{−1}¹ |x³ − x|dx. Étape 2 : x ↦ x³ − x est impaire, donc x ↦ |x³ − x| est impaire. Étape 3 : donc ∫_{−1}¹ |x³ − x|dx = 0. Étape 4 : donc 𝒜 = 0. Quelle est la première étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étape 1"
+        },
+        {
+          "id": "b",
+          "text": "Étape 2"
+        },
+        {
+          "id": "c",
+          "text": "Étape 3"
+        },
+        {
+          "id": "d",
+          "text": "Étape 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La première étape fausse est l'étape 2 ✓ (l'étape 1 est la bonne définition de l'aire). La fonction x ↦ x³ − x est bien impaire, mais sa valeur absolue est paire, car |−u| = |u| : |f(−x)| = |−f(x)| = |f(x)|. L'étape 3 est fausse aussi, par conséquence : |x³ − x| ≥ 0 ne s'annule qu'en 0 et en ±1, donc son intégrale est strictement positive (corollaire de la positivité). Le calcul correct : 𝒜 = 2∫₀¹ (x − x³)dx = 2(1/2 − 1/4) = 1/2 u.a. L'étape 4 est fausse aussi, mais seulement par conséquence de l'erreur de l'étape 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n, on pose Iₙ = ∫₀^π sinⁿx dx. On admet que, pour tout n ≥ 0, (n + 2)Iₙ₊₂ = (n + 1)Iₙ. Que vaut I₆ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5π/32"
+        },
+        {
+          "id": "b",
+          "text": "5π/16"
+        },
+        {
+          "id": "c",
+          "text": "3π/8"
+        },
+        {
+          "id": "d",
+          "text": "16π/5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule d'abord I₀ = ∫₀^π 1 dx = π. La relation avec n = 0 donne 2I₂ = I₀, donc I₂ = π/2. Avec n = 2 : 4I₄ = 3I₂, donc I₄ = 3π/8. Avec n = 4 : 6I₆ = 5I₄, donc I₆ = (5/6) × (3π/8) = 5π/16 ✓. La réponse 5π/32 part de I₀ = π/2 : c'est la valeur de ∫₀^{π/2} 1 dx, pas de ∫₀^π. La réponse 3π/8 s'arrête à I₄ : il manque le dernier pas de la relation. La réponse 16π/5 inverse le rapport, Iₙ₊₂ = ((n + 2)/(n + 1))Iₙ, ce qui donne I₂ = 2π, I₄ = 8π/3 puis I₆ = 16π/5.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Soit Φ la fonction définie sur ℝ par Φ(x) = ∫₁^{x²} (t − 2)/(t² + 1) dt. Pour quelles valeurs de x la fonction Φ admet-elle un extremum local ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −√2"
+        },
+        {
+          "id": "b",
+          "text": "x = 0"
+        },
+        {
+          "id": "c",
+          "text": "x = 1"
+        },
+        {
+          "id": "d",
+          "text": "x = √2"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "La fonction t ↦ (t − 2)/(t² + 1) est continue sur ℝ et x ↦ x² est dérivable : Φ = F∘u avec u(x) = x², donc Φ′(x) = 2x × (x² − 2)/(x⁴ + 1) = 2x(x² − 2)/(x⁴ + 1). Le dénominateur est positif : le signe de Φ′ est celui de 2x(x² − 2), qui s'annule en −√2, 0 et √2. Φ′ est négative sur ]−∞, −√2[, positive sur ]−√2, 0[, négative sur ]0, √2[ et positive sur ]√2, +∞[ : elle change de signe en chacun de ces trois points, qui sont donc trois extremums (deux minimums en ±√2 et un maximum en 0) ✓. En x = 1, Φ(1) = ∫₁¹ = 0, mais Φ′(1) = 2 × (−1)/2 = −1 ≠ 0 : c'est un zéro de Φ, pas un extremum.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour x ≥ 1, on pose F(x) = ∫₁ˣ (2 + sin t)/t² dt. Quelle affirmation est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F est croissante, majorée par 3 : elle converge en +∞ vers un réel L ≤ 3"
+        },
+        {
+          "id": "b",
+          "text": "F est croissante et non majorée : elle tend vers +∞ en +∞"
+        },
+        {
+          "id": "c",
+          "text": "F est décroissante, minorée par 0 : elle converge en +∞ vers un réel L ≥ 0"
+        },
+        {
+          "id": "d",
+          "text": "F est croissante, mais sans majorant disponible : on ne peut rien dire en +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fonction t ↦ (2 + sin t)/t² est continue sur [1, +∞[, donc F′(x) = (2 + sin x)/x² > 0 (car 2 + sin x ≥ 1) : F est croissante. Pour la majoration, 1 ≤ 2 + sin t ≤ 3 donne 0 ≤ (2 + sin t)/t² ≤ 3/t², donc F(x) ≤ ∫₁ˣ 3/t² dt = 3(1 − 1/x) ≤ 3. Une fonction croissante et majorée admet une limite finie en +∞ : F converge vers un réel L ≤ 3 ✓. L'affirmation « non majorée » ignore la majoration par 3 : croître n'impose pas de tendre vers +∞. L'affirmation « décroissante » lit le signe de F′ à l'envers : l'intégrande (2 + sin t)/t² tend vers 0, mais il reste strictement positif, donc F croît. L'affirmation « on ne peut rien dire » néglige que la comparaison avec 3/t² fournit précisément un majorant.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La parabole d'équation y = x(a − x), avec a > 0, coupe l'axe des abscisses en x = 0 et en x = a. La partie du plan limitée par la parabole et l'axe des abscisses a pour aire 36 u.a. Quelle est la valeur de a ?",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "La fonction x(a − x) est positive sur [0, a] : l'aire vaut ∫₀ᵃ (ax − x²)dx = [ax²/2 − x³/3]₀ᵃ = a³/2 − a³/3 = a³/6. L'équation a³/6 = 36 donne a³ = 216, donc a = 6 ✓ (contrôle : x(6 − x) a pour maximum 9 en x = 3, et l'aire 36 est comprise entre 6 × 9/2 = 27 et 6 × 9 = 54).",
+      "difficulty": 3
+    }
+  ]
+}
