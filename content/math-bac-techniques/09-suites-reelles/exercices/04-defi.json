@@ -1,0 +1,149 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : La conquête des suites",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces implications, lesquelles sont vraies pour toute suite réelle (uₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si (uₙ) converge, alors (uₙ) est bornée."
+        },
+        {
+          "id": "b",
+          "text": "Si (uₙ) est bornée, alors (uₙ) converge."
+        },
+        {
+          "id": "c",
+          "text": "Si (uₙ) est croissante et majorée, alors (uₙ) converge."
+        },
+        {
+          "id": "d",
+          "text": "Si (uₙ) est croissante, alors (uₙ) converge."
+        },
+        {
+          "id": "e",
+          "text": "Si (uₙ) est majorée, alors (uₙ) est croissante."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Toute suite convergente est bornée, et toute suite croissante et majorée converge (théorème admis) : ces deux implications sont vraies. La réciproque de la première est fausse : (−1)ⁿ est bornée sans converger. Croissante seule ne suffit pas : uₙ = n est croissante et diverge vers +∞. Majorée n'entraîne pas croissante : (−1)ⁿ est majorée par 1 et n'est pas croissante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "u₀ = 1 et uₙ₊₁ = √(uₙ + 6). On a montré que 1 ≤ uₙ ≤ 4 pour tout n et que (uₙ) est croissante. Un élève conclut : « (uₙ) converge vers 4, le majorant ». Quelle est la vraie limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(uₙ) converge, mais pas forcément vers un majorant. La limite ℓ vérifie ℓ = √(ℓ + 6), donc ℓ² − ℓ − 6 = 0, soit (ℓ − 3)(ℓ + 2) = 0. Comme 1 ≤ ℓ ≤ 4, ℓ = 3 ✓ (u₁ ≈ 2,65 ; u₂ ≈ 2,94 ; u₃ ≈ 2,99). La valeur 4 est un majorant, pas la limite : f(4) = √10 ≠ 4. La valeur 1 est le premier terme. La valeur 6 est le terme constant, sans lien avec l'équation.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "u₀ = 0 et uₙ₊₁ = (3/4)uₙ + 2. Calculer la limite, quand n tend vers +∞, de la somme (8 − u₀) + (8 − u₁) + … + (8 − uₙ). Donner la valeur exacte, un nombre entier.",
+      "answerKey": {
+        "value": 32
+      },
+      "explanation": "La limite de (uₙ) vérifie ℓ = (3/4)ℓ + 2, donc ℓ = 8. Avec vₙ = uₙ − 8, vₙ₊₁ = (3/4)vₙ et v₀ = −8, donc 8 − uₖ = 8(3/4)^k. La somme vaut 8(1 − (3/4)^{n+1})/(1 − 3/4) = 32(1 − (3/4)^{n+1}), qui tend vers 32 ✓ (les écarts 8 ; 6 ; 4,5 ; … ont pour somme 32).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle valeur prend lim n→+∞ n²(1 − cos(2/n)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose Xₙ = 2/n, qui tend vers 0, avec n² = 4/Xₙ². Alors uₙ = 4(1 − cos Xₙ)/Xₙ², et lim (1 − cos X)/X² = 1/2 en 0 : uₙ tend vers 4 × 1/2 = 2 ✓ (pour n = 1000, uₙ ≈ 2,000). La valeur 0 conclut que 1 − cos tend vers 0 et annule le produit, alors que n² tend vers +∞. La valeur 1/2 applique la limite usuelle sans le facteur 4. La valeur 4 oublie le 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "u₀ = 5 et uₙ₊₁ = 6 − 8/uₙ. On a montré que uₙ ≥ 4 pour tout n et que (uₙ) est décroissante. Quelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(uₙ) est décroissante et minorée par 4, donc elle converge vers un réel ℓ ≥ 4. La fonction f(x) = 6 − 8/x est continue en ℓ, donc ℓ = 6 − 8/ℓ, soit ℓ² − 6ℓ + 8 = 0 et (ℓ − 2)(ℓ − 4) = 0. Avec ℓ ≥ 4, ℓ = 4 ✓ (u₁ = 4,4 ; u₂ ≈ 4,18). La valeur 2 est l'autre solution de l'équation, écartée par ℓ ≥ 4. La valeur 5 est le premier terme. La valeur 6 est la limite de f en +∞, sans rapport avec le point fixe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Iₙ = ∫₀¹ xⁿ/(1 + x) dx pour n ∈ ℕ. On sait que (Iₙ) est décroissante et minorée par 0. Quelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "1 − ln 2"
+        },
+        {
+          "id": "d",
+          "text": "ln 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur [0 ; 1], 0 ≤ xⁿ/(1 + x) ≤ xⁿ, donc en intégrant 0 ≤ Iₙ ≤ ∫₀¹ xⁿ dx = 1/(n + 1). Comme 1/(n + 1) tend vers 0, lim Iₙ = 0 par les gendarmes ✓. La valeur ln 2 est I₀ et 1 − ln 2 est I₁ : ce sont des termes, et non la limite. La valeur 1/2 est celle de 1/(1 + x) en x = 1, une constante qui oublie le facteur xⁿ.",
+      "difficulty": 3
+    }
+  ]
+}

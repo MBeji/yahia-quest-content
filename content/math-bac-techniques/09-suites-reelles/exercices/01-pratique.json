@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Les premiers pas des suites",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "uₙ = n² + 3n pour tout n ∈ ℕ. Que vaut uₙ₊₁ − uₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2n − 4"
+        },
+        {
+          "id": "b",
+          "text": "2n + 1"
+        },
+        {
+          "id": "c",
+          "text": "2n + 4"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "uₙ₊₁ − uₙ = (n + 1)² + 3(n + 1) − n² − 3n = n² + 2n + 1 + 3n + 3 − n² − 3n = 2n + 4 ✓. Contrôle : u₁ = 4 et u₂ = 10, donc u₂ − u₁ = 6 = 2 × 1 + 4. La valeur 4 développe (n + 1)² en n² + 1. La valeur 2n + 1 oublie l'accroissement 3 de la partie 3n. La valeur −2n − 4 calcule uₙ − uₙ₊₁.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "vₙ = (n + 2)/2ⁿ pour tout n ∈ ℕ. Que vaut le rapport vₙ₊₁/vₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(n + 3)/(n + 2)"
+        },
+        {
+          "id": "b",
+          "text": "(n + 3)/(2n + 4)"
+        },
+        {
+          "id": "c",
+          "text": "2(n + 3)/(n + 2)"
+        },
+        {
+          "id": "d",
+          "text": "(n + 3)/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "vₙ₊₁ = (n + 3)/2^{n+1}, donc vₙ₊₁/vₙ = ((n + 3)/2^{n+1}) × (2ⁿ/(n + 2)) = (n + 3)/(2(n + 2)) = (n + 3)/(2n + 4) ✓. Contrôle : v₀ = 2 et v₁ = 3/2, le rapport est 3/4 = 3/(0 + 4). La réponse (n + 3)/(n + 2) oublie le facteur 1/2 de 2ⁿ/2^{n+1}. La réponse 2(n + 3)/(n + 2) multiplie par 2 au lieu de diviser. La réponse (n + 3)/2 oublie de diviser par n + 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "uₙ = 4 − 3/(n + 1) pour tout n ∈ ℕ. Quel encadrement est valable pour tout n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 ≤ uₙ ≤ 1"
+        },
+        {
+          "id": "b",
+          "text": "1 ≤ uₙ ≤ 3"
+        },
+        {
+          "id": "c",
+          "text": "1 ≤ uₙ ≤ 4"
+        },
+        {
+          "id": "d",
+          "text": "2 ≤ uₙ ≤ 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour tout n, 0 < 3/(n + 1) ≤ 3, donc 1 ≤ uₙ < 4 ✓ : le minimum 1 est atteint pour n = 0. L'encadrement 2 ≤ uₙ ≤ 4 est faux car u₀ = 1. L'encadrement 1 ≤ uₙ ≤ 3 est faux car u₃ = 4 − 3/4 = 3,25 dépasse 3. L'encadrement 0 ≤ uₙ ≤ 1 est faux car u₁ = 2,5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer lim n→+∞ uₙ pour uₙ = 5 + 3(2/3)ⁿ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme −1 < 2/3 < 1, (2/3)ⁿ tend vers 0, donc uₙ tend vers 5 + 3 × 0 = 5 ✓ (u₁₀ ≈ 5,05). La valeur 8 suppose que (2/3)ⁿ tend vers 1, ce qui est le cas de 1ⁿ seulement. La valeur 0 oublie la constante 5. La valeur +∞ suppose que 3(2/3)ⁿ grandit, alors que la base est inférieure à 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "u₀ = 1 et uₙ₊₁ = (uₙ + 8)/3. Que vaut uₙ₊₁ − uₙ en fonction de uₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(8 − 2uₙ)/3"
+        },
+        {
+          "id": "b",
+          "text": "(8 − uₙ)/3"
+        },
+        {
+          "id": "c",
+          "text": "(2uₙ − 8)/3"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ + 8)/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "uₙ₊₁ − uₙ = (uₙ + 8)/3 − uₙ = (uₙ + 8 − 3uₙ)/3 = (8 − 2uₙ)/3 = 2(4 − uₙ)/3 ✓. Contrôle : u₀ = 1 et u₁ = 3, donc la différence vaut 2 = (8 − 2)/3. La réponse (8 − uₙ)/3 oublie de multiplier uₙ par 3 en réduisant. La réponse (2uₙ − 8)/3 calcule uₙ − uₙ₊₁. La réponse (uₙ + 8)/3 est uₙ₊₁ lui-même, sans soustraire uₙ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "u₀ = 10 et uₙ₊₁ = (1/2)uₙ + 3. On pose vₙ = uₙ − 6. Que peut-on affirmer sur (vₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(vₙ) est géométrique de raison 1/2, avec v₀ = 4"
+        },
+        {
+          "id": "b",
+          "text": "(vₙ) est géométrique de raison 1/2, avec v₀ = 10"
+        },
+        {
+          "id": "c",
+          "text": "(vₙ) est géométrique de raison 1/2, avec v₀ = 16"
+        },
+        {
+          "id": "d",
+          "text": "(vₙ) est géométrique de raison 3, avec v₀ = 4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "vₙ₊₁ = (1/2)uₙ + 3 − 6 = (1/2)uₙ − 3 = (1/2)(uₙ − 6) = (1/2)vₙ : (vₙ) est géométrique de raison 1/2, et v₀ = u₀ − 6 = 4 ✓. Garder v₀ = 10 oublie de retrancher 6 au premier terme. Prendre v₀ = 16 ajoute 6 au lieu de le retrancher. Prendre la raison 3 lit le terme constant de la relation comme une raison.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Équations à coefficients complexes",
+  "questions": [
+    {
+      "prompt": "Quelles sont les racines carrées du nombre complexe Z = 21 + 20i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±(2 + 5i)"
+        },
+        {
+          "id": "b",
+          "text": "±(5 − 2i)"
+        },
+        {
+          "id": "c",
+          "text": "±(5 + 2i)"
+        },
+        {
+          "id": "d",
+          "text": "±(2 − 5i)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a |Z| = √(441 + 400) = √841 = 29, donc x² − y² = 21 et x² + y² = 29, d'où x² = 25 et y² = 4. Comme 2xy = 20 > 0, x et y ont le même signe : les racines carrées sont 5 + 2i et −5 − 2i ✓. Contrôle : (5 + 2i)² = 25 + 20i − 4 = 21 + 20i. Le couple (5 ; −2) donne (5 − 2i)² = 21 − 20i, de mauvais signe ; ±(2 + 5i) échange x et y, et son carré est −21 + 20i ; ±(2 − 5i) échange x et y et se trompe de signe : son carré est −21 − 20i.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelles sont les racines carrées du nombre complexe Z = 36 e^(i2π/3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±6 e^(iπ/3)"
+        },
+        {
+          "id": "b",
+          "text": "±6 e^(i2π/3)"
+        },
+        {
+          "id": "c",
+          "text": "±18 e^(iπ/3)"
+        },
+        {
+          "id": "d",
+          "text": "±18 e^(i2π/3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le module de z est √36 = 6 et son argument est la moitié de 2π/3, soit π/3 ; l'autre racine est l'opposée : les racines carrées sont 6 e^(iπ/3) et −6 e^(iπ/3) ✓. Contrôle : (6 e^(iπ/3))² = 36 e^(i2π/3). Diviser le module par 2 donne 18, ne pas diviser l'argument donne un nombre dont le carré a pour argument 4π/3, et ±18 e^(i2π/3) commet les deux erreurs à la fois.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelles sont les solutions de l'équation z² + 2z + 26 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 + 5i et −1 − 5i"
+        },
+        {
+          "id": "b",
+          "text": "−2 + 10i et −2 − 10i"
+        },
+        {
+          "id": "c",
+          "text": "−2 + 5i et −2 − 5i"
+        },
+        {
+          "id": "d",
+          "text": "1 + 5i et 1 − 5i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec b′ = 1, le discriminant réduit est Δ′ = 1 − 26 = −25, dont une racine carrée est 5i ; donc z = −1 ± 5i ✓, deux solutions conjuguées puisque les coefficients sont réels. Contrôle : la somme vaut −2 = −b/a et le produit 1 + 25 = 26 = c/a. Le choix −2 ± 10i oublie de diviser par 2a ; −2 ± 5i prend −b = −2 au lieu de −b′ = −1 ; 1 ± 5i oublie le signe de −b′.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est l'ensemble des solutions de l'équation z² − (2 + i)z + 1 + i = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−1 ; −1 − i}"
+        },
+        {
+          "id": "b",
+          "text": "{2 ; 2 + 2i}"
+        },
+        {
+          "id": "c",
+          "text": "{(1 + i)/2 ; (3 + i)/2}"
+        },
+        {
+          "id": "d",
+          "text": "{1 ; 1 + i}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a Δ = (2 + i)² − 4(1 + i) = 3 + 4i − 4 − 4i = −1, dont une racine carrée est i. Alors z = ((2 + i) ± i)/2, soit (2 + 2i)/2 = 1 + i et 2/2 = 1 ✓. Contrôle : la somme vaut 2 + i = −b/a et le produit 1 + i = c/a. L'ensemble {−1 ; −1 − i} change le signe de b ; {2 ; 2 + 2i} oublie de diviser par 2a ; {(1 + i)/2 ; (3 + i)/2} prend 1 pour racine carrée de Δ = −1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'équation z² − (1 + 3i)z − 2 + 2i = 0 admet pour solution 2i. Quelle est l'autre solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 − 5i"
+        },
+        {
+          "id": "b",
+          "text": "−1 − i"
+        },
+        {
+          "id": "c",
+          "text": "1 + i"
+        },
+        {
+          "id": "d",
+          "text": "1 + 5i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La somme des deux solutions vaut −b/a = 1 + 3i, donc l'autre solution est (1 + 3i) − 2i = 1 + i ✓. Contrôle par le produit : c/a = −2 + 2i et 2i(1 + i) = 2i − 2 ✓. Le résultat 1 + 5i ajoute 2i au lieu de le retrancher ; −1 − 5i vient d'une somme prise avec le signe de b ; −1 − i vient d'un produit pris avec le signe opposé à c/a.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les images des solutions de l'équation z⁴ = 16 sont les sommets d'un carré. Quelle est la longueur de son côté ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "2√2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "4√2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les solutions sont 2 e^(ikπ/2), soit 2, 2i, −2 et −2i : les sommets sont sur le cercle de rayon 2, et un côté joint 2 à 2i, de longueur |2i − 2| = √(4 + 4) = 2√2 ✓. La valeur 2 est le rayon du cercle ; 4 est la diagonale du carré ; 4√2 multiplie la diagonale par √2 au lieu de la diviser par √2.",
+      "difficulty": 2
+    }
+  ]
+}

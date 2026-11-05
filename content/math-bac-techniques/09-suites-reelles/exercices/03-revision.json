@@ -1,0 +1,145 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Suites réelles",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces suites définies sur ℕ, lesquelles sont monotones ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ = 3n − 7"
+        },
+        {
+          "id": "b",
+          "text": "uₙ = (−1)ⁿ"
+        },
+        {
+          "id": "c",
+          "text": "uₙ = (1/2)ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "uₙ = n² − 6n"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "La suite 3n − 7 est croissante : uₙ₊₁ − uₙ = 3 > 0. La suite (1/2)ⁿ est décroissante : son rapport uₙ₊₁/uₙ = 1/2 est inférieur à 1. La suite (−1)ⁿ vaut 1, −1, 1, … : elle alterne et n'est pas monotone. La suite n² − 6n a pour différence 2n − 5, négative pour n ≤ 2 et positive pour n ≥ 3 : elle décroît puis croît (0 ; −5 ; −8 ; −9 ; −8), donc elle n'est pas monotone sur ℕ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Laquelle de ces suites est minorée mais pas majorée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ = −n"
+        },
+        {
+          "id": "b",
+          "text": "uₙ = (−1)ⁿ"
+        },
+        {
+          "id": "c",
+          "text": "uₙ = 1/(n + 1)"
+        },
+        {
+          "id": "d",
+          "text": "uₙ = n²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "n² ≥ 0 : la suite est minorée par 0. Elle n'est pas majorée, car n² ≥ n dépasse tout réel M dès que n > M ✓. La suite −n est majorée par 0 mais pas minorée. La suite (−1)ⁿ est bornée par −1 et 1. La suite 1/(n + 1) reste dans ]0 ; 1].",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Calculer lim n→+∞ (√(n² + 6n) − n). Donner la valeur exacte, un nombre entier.",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "C'est une forme +∞ − ∞ : on multiplie par la quantité conjuguée √(n² + 6n) + n. Alors √(n² + 6n) − n = ((n² + 6n) − n²)/(√(n² + 6n) + n) = 6n/(√(n² + 6n) + n) = 6/(√(1 + 6/n) + 1), qui tend vers 6/(1 + 1) = 3 ✓ (pour n = 10 000, la différence vaut environ 2,9996).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "u₀ = 8 et uₙ₊₁ = (3/4)uₙ + 5. On admet que (uₙ) converge. Quelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "5/4"
+        },
+        {
+          "id": "c",
+          "text": "20/3"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La fonction f(x) = (3/4)x + 5 est continue, donc la limite ℓ vérifie ℓ = (3/4)ℓ + 5, soit (1/4)ℓ = 5 et ℓ = 20 ✓ (u₁ = 11 ; u₂ = 13,25 ; les termes montent vers 20). La valeur 5 lit le terme constant comme limite. La valeur 5/4 calcule 5 × (1 − 3/4) au lieu de 5/(1 − 3/4). La valeur 20/3 résout ℓ = 5/(3/4), en divisant par la raison.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut lim n→+∞ (4n + cos n)/(2n + 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "n'a pas de limite"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme −1 ≤ cos n ≤ 1, (4n − 1)/(2n + 1) ≤ uₙ ≤ (4n + 1)/(2n + 1). Les deux bornes tendent vers 4/2 = 2 (quotient des termes en n), donc lim uₙ = 2 par les gendarmes ✓. La valeur 4 oublie le facteur 2 du dénominateur. La réponse +∞ ne regarde que le numérateur. La réponse « n'a pas de limite » invoque cos n, qui n'a pas de limite, alors que son poids disparaît devant n.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "u₀ = 6 et uₙ₊₁ = (2/3)uₙ + 1. Laquelle de ces affirmations est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) est croissante et tend vers 3"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) est décroissante et tend vers 1"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) est décroissante et tend vers 3"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) est croissante et tend vers 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La limite ℓ vérifie ℓ = (2/3)ℓ + 1, donc ℓ = 3. Avec vₙ = uₙ − 3, vₙ₊₁ = (2/3)vₙ et v₀ = 3, donc uₙ = 3 + 3(2/3)ⁿ : cette suite décroît vers 3 ✓ (u₁ = 5 ; u₂ = 13/3). Dire « croissante » contredit u₁ = 5 < u₀ = 6. La limite 1 lit le terme constant. « Croissante et tend vers 1 » cumule les deux erreurs.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Nombres complexes",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Quelle est la partie imaginaire du carré de 1 + 2i ?",
+      "answerKey": {
+        "value": 4
+      },
+      "explanation": "(1 + 2i)² = 1 + 4i + 4i² = 1 + 4i − 4 = −3 + 4i. La partie imaginaire est le coefficient réel de i : Im(z) = 4 ✓.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un nombre complexe z non nul a pour argument π/3. Quel est un argument de z̄ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/3"
+        },
+        {
+          "id": "b",
+          "text": "π/3"
+        },
+        {
+          "id": "c",
+          "text": "2π/3"
+        },
+        {
+          "id": "d",
+          "text": "4π/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le conjugué est le symétrique de z par rapport à l'axe des réels : arg(z̄) = −arg(z) = −π/3 ✓. Le résultat π/3 oublie le signe ; 4π/3 est un argument de −z ; 2π/3 un argument de −z̄.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut |(1 + i)⁵/(√3 − i)²| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "√2"
+        },
+        {
+          "id": "c",
+          "text": "2√2"
+        },
+        {
+          "id": "d",
+          "text": "4√2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "|1 + i| = √2, donc |(1 + i)⁵| = (√2)⁵ = 4√2 ; |√3 − i| = 2, donc |(√3 − i)²| = 4. Le quotient vaut 4√2/4 = √2 ✓. Le résultat 4√2 oublie le dénominateur ; 2√2 prend |(√3 − i)²| = 2 ; 1 calcule (√2)⁴/4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le plus petit entier n ≥ 1 tel que (√3 − i)ⁿ soit un imaginaire pur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "√3 − i = 2 e^(−iπ/6), donc (√3 − i)ⁿ = 2ⁿ e^(−inπ/6). Il est imaginaire pur ⇔ −nπ/6 = π/2 + kπ ⇔ n = −3 − 6k, soit n = 3, 9, 15… Le plus petit est n = 3 : (√3 − i)³ = 8 e^(−iπ/2) = −8i ✓. Pour n = 9, 512 e^(−i3π/2) = 512i est imaginaire pur mais ce n'est pas le plus petit ; pour n = 6, l'argument vaut −π et le nombre est réel (−64) ; pour n = 1, √3 − i n'est ni réel ni imaginaire pur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut e^(iπ/6) + e^(−iπ/6) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "i"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "√3"
+        },
+        {
+          "id": "d",
+          "text": "√3/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "D'après Euler, e^(iθ) + e^(−iθ) = 2 cos θ. Avec θ = π/6 : 2 cos(π/6) = 2 × √3/2 = √3 ✓. Le résultat √3/2 oublie le facteur 2 ; 1 correspond à 2 sin(π/6) ; i à la différence e^(iπ/6) − e^(−iπ/6) = 2i sin(π/6).",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les étapes d'une preuve que le triangle ABC est rectangle isocèle en A.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer les affixes des vecteurs AB⃗ et AC⃗, soit z_B − z_A et z_C − z_A"
+        },
+        {
+          "id": "b",
+          "text": "Calculer le quotient (z_C − z_A)/(z_B − z_A) sous forme algébrique"
+        },
+        {
+          "id": "c",
+          "text": "Reconnaître que ce quotient est égal à i ou à −i"
+        },
+        {
+          "id": "d",
+          "text": "Conclure : le module 1 donne AC = AB et l'imaginaire pur donne (AB) ⟂ (AC)"
+        }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "On commence par les affixes des vecteurs, car l'angle et le rapport de longueurs se lisent sur des différences d'affixes. On forme ensuite le quotient, qui contient à la fois le rapport AC/AB et l'angle (AB⃗, AC⃗). On le simplifie jusqu'à reconnaître i ou −i, de module 1 et d'argument ±π/2. Seule cette dernière étape permet de conclure à l'égalité des longueurs et à l'angle droit.",
+      "difficulty": 2
+    }
+  ]
+}

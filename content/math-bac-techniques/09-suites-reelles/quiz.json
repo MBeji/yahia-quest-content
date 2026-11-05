@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Suites réelles",
+  "questions": [
+    {
+      "prompt": "Pour tout n ∈ ℕ, uₙ₊₁ − uₙ = −3/(n + 2). Que peut-on affirmer de la suite (uₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) est strictement croissante"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) est strictement décroissante"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) est constante à partir d'un certain rang"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) est alternée"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme n + 2 > 0, la différence −3/(n + 2) est strictement négative : chaque terme est strictement inférieur au précédent, donc (uₙ) est strictement décroissante ✓. La réponse « strictement croissante » inverse le signe de la différence. La réponse « constante à partir d'un certain rang » exigerait une différence nulle, alors que −3/(n + 2) ≠ 0. La réponse « alternée » suppose un signe qui change, alors que la différence reste négative.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On sait que 0 ≤ uₙ ≤ 7 pour tout n ∈ ℕ. Laquelle de ces affirmations est assurée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) est majorée et minorée"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) est convergente vers un réel"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) tend vers 7 quand n grandit"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) est monotone sur ℕ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'encadrement donne un minorant, 0, et un majorant, 7 : par définition (uₙ) est majorée et minorée, donc bornée ✓. Une suite bornée n'est pas forcément convergente : (−1)ⁿ est bornée sans limite. Le réel 7 est un majorant parmi d'autres, 8 convient aussi : ce n'est pas une limite. Une suite bornée peut osciller, donc elle n'est pas forcément monotone.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Vers quoi tend uₙ = (3n + 1)/(n + 2) quand n devient grand ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose f(x) = (3x + 1)/(x + 2), qui a la même limite en +∞ que 3x/x = 3 : donc lim uₙ = lim f(n) = 3 ✓ (u₁₀₀₀ = 3001/1002 ≈ 2,995). La valeur 1/2 est le quotient des termes constants, 1/2 = u₀. La valeur 0 suppose que le dénominateur l'emporte, alors que les deux ont le même degré. La valeur +∞ ne regarde que le numérateur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que dire de la suite vₙ = qⁿ pour q = −5/4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle tend vers 0, puisque q < 1"
+        },
+        {
+          "id": "b",
+          "text": "Elle tend vers −∞, puisque q < 0"
+        },
+        {
+          "id": "c",
+          "text": "Elle tend vers +∞, puisque |q| > 1"
+        },
+        {
+          "id": "d",
+          "text": "Pas de limite, puisque q < −1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour q < −1, les termes grandissent en valeur absolue en changeant de signe : 1 ; −1,25 ; 1,5625 ; −1,953125 ; … La suite n'a pas de limite ✓. La réponse « tend vers 0 » confond q < 1 avec −1 < q < 1. La réponse « tend vers −∞ » oublie que le signe alterne. La réponse « tend vers +∞ » oublie les termes négatifs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "(uₙ) est croissante et majorée par 5. Quelle conclusion est assurée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) converge vers exactement 5"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) tend vers +∞ en croissant"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) converge vers un certain réel"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) est constante à partir d'un rang"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une suite croissante et majorée converge, d'après le théorème admis ✓ ; sa limite existe mais le théorème ne la donne pas. Elle n'est pas forcément égale à 5 : uₙ = 4 − 1/(n + 1) est croissante, majorée par 5 et tend vers 4. Tendre vers +∞ est impossible puisqu'une suite majorée reste sous 5. Être constante n'est pas assuré : 4 − 1/(n + 1) ne l'est jamais.",
+      "difficulty": 2
+    }
+  ]
+}

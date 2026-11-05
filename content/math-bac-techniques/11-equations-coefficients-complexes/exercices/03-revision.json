@@ -1,0 +1,132 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Équations dans ℂ",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Soit z la racine carrée du nombre complexe 9 + 40i dont la partie imaginaire est positive. Donner la partie réelle de z.",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "On a |Z| = √(81 + 1600) = √1681 = 41, donc x² − y² = 9 et x² + y² = 41, d'où x² = 25 et y² = 16 ; comme 2xy = 40 > 0, x et y ont le même signe. La racine carrée de partie imaginaire positive est 5 + 4i, de partie réelle 5 ✓. Contrôle : (5 + 4i)² = 25 + 40i − 16 = 9 + 40i.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit z une solution de l'équation z² − 2z + 17 = 0. Que vaut |z| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "√15"
+        },
+        {
+          "id": "d",
+          "text": "√17"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a Δ′ = 1 − 17 = −16, de racine carrée 4i, donc z = 1 ± 4i et |1 ± 4i| = √(1 + 16) = √17 ✓. Contrôle : le produit des solutions est c/a = 17 = |z|². La valeur 4 est la partie imaginaire seule, 5 additionne 1 et 4, et √15 vient de la différence 16 − 1 au lieu de la somme 1 + 16.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le nombre complexe 1 + 2i est solution de l'équation z² + bz + c = 0, où b et c sont réels. Calculer b + c.",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "Les coefficients sont réels, donc 1 − 2i est l'autre solution. La somme des solutions est 2 = −b, donc b = −2, et leur produit (1 + 2i)(1 − 2i) = 1 + 4 = 5 vaut c. Alors b + c = −2 + 5 = 3 ✓. Contrôle : (1 + 2i)² − 2(1 + 2i) + 5 = −3 + 4i − 2 − 4i + 5 = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On pose j = e^(i2π/3) = −1/2 + i√3/2. Quelle est la forme algébrique de j⁷⁷ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "−1/2 + i√3/2"
+        },
+        {
+          "id": "c",
+          "text": "−1/2 − i√3/2"
+        },
+        {
+          "id": "d",
+          "text": "1/2 + i√3/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme j³ = 1, la puissance jⁿ ne dépend que du reste de n dans la division par 3. Or 77 = 3 × 25 + 2, donc j⁷⁷ = j² = e^(i4π/3) = −1/2 − i√3/2 ✓. Le reste 0 donnerait 1 et le reste 1 donnerait j ; le nombre 1/2 + i√3/2 est e^(iπ/3), qui n'est pas une puissance de j.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la solution de partie imaginaire négative de l'équation z² − 2(2 + i)z + 6 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3 − 3i"
+        },
+        {
+          "id": "b",
+          "text": "1 − i"
+        },
+        {
+          "id": "c",
+          "text": "3 − i"
+        },
+        {
+          "id": "d",
+          "text": "3 + 3i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ici b = 2b′ avec b′ = −(2 + i), et Δ′ = (2 + i)² − 6 = 3 + 4i − 6 = −3 + 4i. Une racine carrée de Δ′ est 1 + 2i, car (1 + 2i)² = −3 + 4i. Alors z = −b′ ± δ′ = (2 + i) ± (1 + 2i), soit 3 + 3i et 1 − i ; seule 1 − i a une partie imaginaire négative ✓. Contrôle : la somme vaut 4 + 2i et le produit (3 + 3i)(1 − i) = 6 ✓. Le nombre 3 + 3i est l'autre solution ; 3 − i vient de δ′ = 1 − 2i, de mauvais signe ; −3 − 3i oppose −b′.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les étapes de la résolution de l'équation z⁶ + 7z³ − 8 = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Poser Z = z³ pour obtenir l'équation du second degré Z² + 7Z − 8 = 0"
+        },
+        {
+          "id": "b",
+          "text": "Résoudre cette équation : Δ = 81, d'où Z = 1 ou Z = −8"
+        },
+        {
+          "id": "c",
+          "text": "Revenir à z en résolvant z³ = 1 puis z³ = −8"
+        },
+        {
+          "id": "d",
+          "text": "Conclure : chaque équation a trois solutions, donc l'équation de départ en a six"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On pose d'abord Z = z³, possible parce que l'équation ne contient que z⁶ = (z³)² et z³. On résout ensuite l'équation en Z, car l'on ne peut pas revenir à z sans connaître les valeurs de Z. Chaque valeur de Z donne alors une équation zⁿ = Z à trois solutions, et la conclusion vient en dernier : le comptage 3 + 3 = 6 suppose les deux équations résolues, et les solutions sont distinctes car leurs modules, 1 et 2, diffèrent.",
+      "difficulty": 2
+    }
+  ]
+}

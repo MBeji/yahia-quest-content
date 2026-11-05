@@ -1,0 +1,139 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des équations",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "L'équation z² − (1 + 3i)z + 4 − i = 0 a deux solutions. Laquelle a la plus grande partie imaginaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + 4i"
+        },
+        {
+          "id": "b",
+          "text": "i"
+        },
+        {
+          "id": "c",
+          "text": "4i"
+        },
+        {
+          "id": "d",
+          "text": "2 + 8i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a Δ = (1 + 3i)² − 4(4 − i) = −8 + 6i − 16 + 4i = −24 + 10i. Une racine carrée δ = x + iy vérifie x² − y² = −24 et x² + y² = √(576 + 100) = 26, donc x² = 1 et y² = 25 ; comme 2xy = 10 > 0, x et y ont le même signe et δ = 1 + 5i. Alors z = ((1 + 3i) ± (1 + 5i))/2, soit (2 + 8i)/2 = 1 + 4i et (−2i)/2 = −i ; la plus grande partie imaginaire est celle de 1 + 4i ✓. Contrôle : la somme vaut 1 + 3i et le produit (1 + 4i)(−i) = 4 − i ✓. Le nombre 4i vient de δ = 1 − 5i, de mauvais signe, qui donne les solutions 1 − i et 4i ; 2 + 8i oublie de diviser par 2a ; i vient d'un signe de b changé, qui donne les solutions −1 − 4i et i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour quel complexe m l'équation z² − 2(1 + i)z + m = 0 admet-elle une racine double ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2i"
+        },
+        {
+          "id": "b",
+          "text": "1 + i"
+        },
+        {
+          "id": "c",
+          "text": "2i"
+        },
+        {
+          "id": "d",
+          "text": "8i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ici b = 2b′ avec b′ = −(1 + i), et le discriminant réduit est Δ′ = b′² − m = (1 + i)² − m = 2i − m. La racine est double si et seulement si Δ′ = 0, c'est-à-dire m = 2i ✓. Contrôle : (z − 1 − i)² = z² − 2(1 + i)z + (1 + i)² = z² − 2(1 + i)z + 2i. Le résultat 8i vient de Δ = b² − m au lieu de b² − 4m ; −2i vient de Δ′ = b′² + m ; 1 + i est la racine double, non la valeur de m.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'équation suivante admet une solution imaginaire pure :\nz³ − (4 + 3i)z² + (1 + 11i)z + 6 − 6i = 0\nQuelle est la somme des deux autres solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4 − 3i"
+        },
+        {
+          "id": "b",
+          "text": "4 + i"
+        },
+        {
+          "id": "c",
+          "text": "4 + 3i"
+        },
+        {
+          "id": "d",
+          "text": "4 + 5i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose z = iy : la partie réelle donne 4y² − 11y + 6 = 0, soit y = 2 ou y = 3/4, et la partie imaginaire −y³ + 3y² + y − 6 s'annule pour y = 2 (−8 + 12 + 2 − 6 = 0) mais pas pour y = 3/4. La solution imaginaire pure est donc 2i. On factorise : le premier membre vaut (z − 2i)(z² + βz + γ) = z³ + (β − 2i)z² + (γ − 2iβ)z − 2iγ, et l'identification du coefficient de z² donne β − 2i = −(4 + 3i), soit β = −4 − i. Les deux autres solutions sont celles de z² + βz + γ = 0 : leur somme vaut −β = 4 + i ✓. Contrôle : γ − 2iβ = 1 + 11i donne γ = 3 + 3i, et −2iγ = 6 − 6i convient ; le facteur z² − (4 + i)z + 3 + 3i = 0 a pour solutions 1 + i et 3, de somme 4 + i. Le résultat 4 + 3i oublie de retrancher 2i du coefficient de z² ; 4 + 5i ajoute 2i au lieu de le retrancher ; −4 − 3i prend l'opposé de la somme des trois racines.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan complexe, les points M₀, M₁, M₂, M₃ et M₄ de la figure sont les images des solutions d'une équation zⁿ = Z, où M₀ a pour affixe 2 e^(iπ/10). Quel est le nombre complexe Z ?\n<svg viewBox=\"0 0 280 245\">\n<title>Cinq points M₀, M₁, M₂, M₃, M₄ répartis régulièrement sur le cercle de centre O et de rayon 2, sommets d'un pentagone régulier</title>\n<path d=\"M10 122 H260\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<path d=\"M130 232 V2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<path d=\"M260 122 l-8 -4 l0 8 z\" fill=\"#0f172a\"/>\n<path d=\"M130 2 l-4 8 l8 0 z\" fill=\"#0f172a\"/>\n<path d=\"M180 119 V125\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"180\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text>\n<path d=\"M230 119 V125\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"230\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text>\n<path d=\"M127 72 H133\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"123\" y=\"76\" text-anchor=\"end\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">i</text>\n<path d=\"M127 22 H133\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"121\" y=\"34\" text-anchor=\"end\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2i</text>\n<path d=\"M127 172 H133\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"123\" y=\"176\" text-anchor=\"end\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">−i</text>\n<path d=\"M127 222 H133\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"123\" y=\"226\" text-anchor=\"end\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">−2i</text>\n<text x=\"124\" y=\"137\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">O</text>\n<circle cx=\"130\" cy=\"122\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/>\n<path d=\"M225.1 91.1 L130 22 L34.9 91.1 L71.2 202.9 L188.8 202.9 Z\" fill=\"#0f6e56\" opacity=\"0.1\"/>\n<path d=\"M225.1 91.1 L130 22 L34.9 91.1 L71.2 202.9 L188.8 202.9 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<circle cx=\"225.1\" cy=\"91.1\" r=\"4\" fill=\"#0f6e56\"/>\n<circle cx=\"130\" cy=\"22\" r=\"4\" fill=\"#0f6e56\"/>\n<circle cx=\"34.9\" cy=\"91.1\" r=\"4\" fill=\"#0f6e56\"/>\n<circle cx=\"71.2\" cy=\"202.9\" r=\"4\" fill=\"#0f6e56\"/>\n<circle cx=\"188.8\" cy=\"202.9\" r=\"4\" fill=\"#0f6e56\"/>\n<text x=\"233.1\" y=\"85.1\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₀</text>\n<text x=\"139\" y=\"16\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₁</text>\n<text x=\"26.9\" y=\"85.1\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₂</text>\n<text x=\"71.2\" y=\"220.9\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₃</text>\n<text x=\"188.8\" y=\"220.9\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">M₄</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 e^(iπ/10)"
+        },
+        {
+          "id": "b",
+          "text": "10 e^(iπ/2)"
+        },
+        {
+          "id": "c",
+          "text": "32 e^(iπ/10)"
+        },
+        {
+          "id": "d",
+          "text": "32 e^(iπ/2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les cinq points sont les sommets d'un pentagone régulier : n = 5. Alors Z = z₀⁵ = 2⁵ e^(i5π/10) = 32 e^(iπ/2) = 32i ✓. Contrôle : M₁ a pour affixe 2 e^(iπ/10) e^(i2π/5) = 2 e^(iπ/2) = 2i, et (2i)⁵ = 32i. Le module 10 multiplie 2 par 5 au lieu de l'élever à la puissance 5 ; 10 e^(iπ/10) multiplie le module par 5 et oublie de multiplier l'argument ; l'argument π/10 n'est pas multiplié par 5.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule de ces affirmations est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si une équation du second degré à coefficients complexes admet z₀ pour solution, alors z̄₀ en est aussi solution"
+        },
+        {
+          "id": "b",
+          "text": "Un complexe non nul a deux racines carrées, qui sont toujours conjuguées l'une de l'autre"
+        },
+        {
+          "id": "c",
+          "text": "Si a, b et c sont réels et Δ < 0, les deux solutions de az² + bz + c = 0 ont le même module"
+        },
+        {
+          "id": "d",
+          "text": "Pour tout complexe Z non nul, l'équation z⁴ = Z a exactement deux solutions réelles"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si a, b et c sont réels et Δ < 0, les deux solutions sont conjuguées, et deux conjugués ont le même module (|z̄| = |z|) ✓. L'affirmation « si z₀ est solution, alors z̄₀ l'est aussi » est fausse dès qu'un coefficient n'est pas réel : iz² + 2z − 3i = 0 admet √2 + i, mais pas √2 − i, car i(√2 − i)² + 2(√2 − i) − 3i = 4√2 − 4i. Les deux racines carrées d'un complexe non nul sont opposées, non conjuguées : celles de 2i sont 1 + i et −1 − i. Enfin z⁴ = Z a quatre solutions, et pour Z = 16i aucune n'est réelle.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Combien de nombres complexes z non nuls vérifient l'équation suivante ?\n((z − 1)/z)³ = 1",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "Posons u = (z − 1)/z : l'équation devient u³ = 1, donc u = 1, j ou j² (racines cubiques de l'unité). Pour u = 1, z − 1 = z est impossible. Pour u = j, z − 1 = jz donne z = 1/(1 − j), et pour u = j² on obtient z = 1/(1 − j²) : il y a 2 solutions ✓, et non 3. Contrôle : (z − 1)³ = z³ se réduit à −3z² + 3z − 1 = 0, de discriminant 9 − 12 = −3 ≠ 0, donc deux solutions distinctes.",
+      "difficulty": 3
+    }
+  ]
+}
