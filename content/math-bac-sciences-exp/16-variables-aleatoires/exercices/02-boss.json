@@ -1,0 +1,95 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Les sept lois du hasard",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un dé cubique porte deux faces marquées 0, trois faces marquées 1 et une face marquée 4. On le lance deux fois et X est la somme des deux résultats. Quelle est l'espérance de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/6"
+        },
+        {
+          "id": "b",
+          "text": "7/3"
+        },
+        {
+          "id": "c",
+          "text": "5/3"
+        },
+        {
+          "id": "d",
+          "text": "10/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour un lancer, E = (0 × 2 + 1 × 3 + 4 × 1)/6 = 7/6. Par linéarité, l'espérance de la somme des deux lancers est la somme des espérances : E(X) = 7/6 + 7/6 = 7/3 ✓. Le nombre 7/6 n'est que l'espérance d'un seul lancer ; 5/3 et 10/3 supposent que les trois valeurs 0, 1 et 4 sont équiprobables, pour un lancer puis pour deux.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La figure donne la fonction de répartition F d'une variable aléatoire X, qui ne prend que les valeurs 2, 3, 5 et 6. Calculer E(X). Donne le résultat sous forme décimale.\n<svg viewBox=\"0 0 340 250\">\n<title>Fonction de répartition F : sauts en 2, 3, 5 et 6, aux hauteurs cumulées 0,1 ; 0,35 ; 0,75 et 1</title>\n<path d=\"M40 190 L334.4 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<path d=\"M50 196 L50 32\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<text x=\"334.4\" y=\"208\" text-anchor=\"end\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text>\n<text x=\"54\" y=\"28\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">F(x)</text>\n<path d=\"M50 190 L93.5 190\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M93.5 176 L137.1 176\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M137.1 141 L224.2 141\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M224.2 85 L267.7 85\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M267.7 50 L328 50\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<circle cx=\"93.5\" cy=\"190\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"93.5\" cy=\"176\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"137.1\" cy=\"176\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"137.1\" cy=\"141\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"224.2\" cy=\"141\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"224.2\" cy=\"85\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"267.7\" cy=\"85\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"267.7\" cy=\"50\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<path d=\"M50 176 L46 176\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"180\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,1</text>\n<path d=\"M50 141 L46 141\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"145\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,35</text>\n<path d=\"M50 85 L46 85\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"89\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,75</text>\n<path d=\"M50 50 L46 50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"54\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text>\n<path d=\"M93.5 190 L93.5 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"93.5\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text>\n<path d=\"M137.1 190 L137.1 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"137.1\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3</text>\n<path d=\"M224.2 190 L224.2 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"224.2\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">5</text>\n<path d=\"M267.7 190 L267.7 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"267.7\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">6</text>\n</svg>",
+      "answerKey": {
+        "value": 4.45
+      },
+      "explanation": "La probabilité de chaque valeur est la hauteur du saut de F : p(X = 2) = 0,1 ; p(X = 3) = 0,35 − 0,1 = 0,25 ; p(X = 5) = 0,75 − 0,35 = 0,4 ; p(X = 6) = 1 − 0,75 = 0,25 (somme 1 ✓). Alors E(X) = 2 × 0,1 + 3 × 0,25 + 5 × 0,4 + 6 × 0,25 = 0,2 + 0,75 + 2 + 1,5 = 4,45 ✓. Lire directement les hauteurs 0,1 ; 0,35 ; 0,75 et 1 comme des probabilités donnerait un résultat faux : ce sont des cumuls.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chaque ticket d'un jeu de grattage est gagnant avec la probabilité 0,35, indépendamment des autres tickets. On achète n tickets. Quel est le plus petit entier n pour lequel la probabilité d'avoir au moins un ticket gagnant est supérieure ou égale à 0,99 ?",
+      "answerKey": {
+        "value": 11
+      },
+      "explanation": "Le nombre de tickets gagnants suit ℬ(n ; 0,35), donc p(au moins un) = 1 − 0,65ⁿ. On veut 1 − 0,65ⁿ ≥ 0,99, soit 0,65ⁿ ≤ 0,01, soit n ln 0,65 ≤ ln 0,01. Comme ln 0,65 < 0, le sens s'inverse : n ≥ ln 0,01/ln 0,65 ≈ 10,69. Contrôle : 0,65¹⁰ ≈ 0,0135 > 0,01 ne suffit pas, alors que 0,65¹¹ ≈ 0,0088 ≤ 0,01 convient : n = 11 ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "X suit la loi uniforme sur [1 ; b], où b > 4 est un réel inconnu. On sait que p(1 ≤ X ≤ 4) = 0,5. Calculer b.",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "La densité vaut 1/(b − 1), donc p(1 ≤ X ≤ 4) = (4 − 1)/(b − 1) = 3/(b − 1). L'égalité 3/(b − 1) = 0,5 donne b − 1 = 6, donc b = 7 ✓. Contrôle : sur [1 ; 7], p(1 ≤ X ≤ 4) = 3/6 = 0,5. Le nombre 6 serait la longueur de l'intervalle, et non sa borne b.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La durée de vie d'un fusible suit une loi exponentielle. La probabilité qu'il dure plus de 6 heures est 1/9. Quelle est la probabilité qu'il dure plus de 3 heures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/9"
+        },
+        {
+          "id": "b",
+          "text": "1/18"
+        },
+        {
+          "id": "c",
+          "text": "2/3"
+        },
+        {
+          "id": "d",
+          "text": "1/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Si λ est le paramètre, e^(−6λ) = 1/9. Comme e^(−6λ) = (e^(−3λ))², le nombre p(X ≥ 3) = e^(−3λ) est la racine carrée positive de 1/9, soit 1/3 ✓ (contrôle : λ = ln 3/3 et e^(−ln 3) = 1/3). Les nombres 2/9 et 1/18 supposent une proportionnalité entre la durée et la probabilité, ce qui est faux pour une exponentielle ; 2/3 est la probabilité contraire p(X ≤ 3).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La durée de vie X, en années, d'un module électronique suit la loi exponentielle de paramètre 0,25. Un appareil contient 5 modules, dont les durées de vie sont indépendantes. Quelle est la probabilité qu'exactement 4 modules fonctionnent encore au bout de 2 ans ? Donne le résultat arrondi au millième.",
+      "answerKey": {
+        "value": 0.2663,
+        "tolerance": 0.0006
+      },
+      "explanation": "Un module fonctionne encore au bout de 2 ans avec la probabilité p(X ≥ 2) = e^(−0,25 × 2) = e^(−0,5) ≈ 0,6065. Les 5 modules sont indépendants : le nombre Y de modules en marche suit ℬ(5 ; e^(−0,5)). Alors p(Y = 4) = C₅⁴ × (e^(−0,5))⁴ × (1 − e^(−0,5)) = 5 × e^(−2) × (1 − e^(−0,5)) ≈ 5 × 0,1353 × 0,3935 ≈ 0,2663, soit 0,266 au millième ✓.",
+      "difficulty": 3
+    }
+  ]
+}

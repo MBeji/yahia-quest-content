@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Lire un tableau de vergers et en tirer les marges",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un domaine fruitier suit 50 vergers : X est le nombre de variétés cultivées (1, 2 ou 3) et Y le nombre de traitements par saison (0, 1 ou 2). Les effectifs nᵢⱼ figurent dans le tableau. Combien de vergers cultivent 2 variétés et reçoivent 1 traitement ? <svg viewBox=\"0 0 328 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 0</text><text x=\"209.5\" y=\"34\">Y = 1</text><text x=\"282.5\" y=\"34\">Y = 2</text><text x=\"55\" y=\"72\">X = 1</text><text x=\"55\" y=\"110\">X = 2</text><text x=\"55\" y=\"148\">X = 3</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">11</text><text x=\"209.5\" y=\"72\">11</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">9</text><text x=\"282.5\" y=\"110\">1</text><text x=\"136.5\" y=\"148\">1</text><text x=\"209.5\" y=\"148\">3</text><text x=\"282.5\" y=\"148\">9</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "23"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'effectif d'une case se lit à l'intersection de sa ligne et de sa colonne : la ligne X = 2 et la colonne Y = 1 se croisent sur 9 vergers ✓. Contrôle : les neuf cases totalisent 11 + 11 + 1 + 4 + 9 + 1 + 1 + 3 + 9 = 50 ✓. Le nombre 14 est le total de toute la ligne X = 2, une marge et non une case ; le nombre 23 est lui aussi un total de marge (celui de la colonne Y = 1) ; le nombre 4 est la case voisine, X = 2 et Y = 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un domaine fruitier suit 50 vergers : X est le nombre de variétés cultivées (1, 2 ou 3) et Y le nombre de traitements par saison (0, 1 ou 2). Les effectifs nᵢⱼ figurent dans le tableau. Quelle est la fréquence marginale de la valeur X = 3 ? <svg viewBox=\"0 0 328 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 0</text><text x=\"209.5\" y=\"34\">Y = 1</text><text x=\"282.5\" y=\"34\">Y = 2</text><text x=\"55\" y=\"72\">X = 1</text><text x=\"55\" y=\"110\">X = 2</text><text x=\"55\" y=\"148\">X = 3</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">11</text><text x=\"209.5\" y=\"72\">11</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">9</text><text x=\"282.5\" y=\"110\">1</text><text x=\"136.5\" y=\"148\">1</text><text x=\"209.5\" y=\"148\">3</text><text x=\"282.5\" y=\"148\">9</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,46"
+        },
+        {
+          "id": "b",
+          "text": "0,32"
+        },
+        {
+          "id": "c",
+          "text": "0,26"
+        },
+        {
+          "id": "d",
+          "text": "0,18"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La fréquence marginale de X = 3 est l'effectif total de la ligne X = 3 divisé par n : (1 + 3 + 9)/50 = 13/50 = 0,26 ✓. Contrôle : les trois fréquences marginales de X sont 23/50 = 0,46 ; 14/50 = 0,28 et 13/50 = 0,26, de somme 0,46 + 0,28 + 0,26 = 1 ✓. Le nombre 0,18 vient de la seule case (X = 3, Y = 2) : 9/50. Le nombre 0,32 est la fréquence marginale de Y = 0, soit 16/50, une valeur de l'autre variable. Le nombre 0,46 est la fréquence marginale de X = 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un domaine fruitier suit 50 vergers : X est le nombre de variétés cultivées (1, 2 ou 3) et Y le nombre de traitements par saison (0, 1 ou 2). Les effectifs nᵢⱼ figurent dans le tableau. Quelle est la moyenne Ȳ du nombre de traitements par saison ? <svg viewBox=\"0 0 328 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 0</text><text x=\"209.5\" y=\"34\">Y = 1</text><text x=\"282.5\" y=\"34\">Y = 2</text><text x=\"55\" y=\"72\">X = 1</text><text x=\"55\" y=\"110\">X = 2</text><text x=\"55\" y=\"148\">X = 3</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">11</text><text x=\"209.5\" y=\"72\">11</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">9</text><text x=\"282.5\" y=\"110\">1</text><text x=\"136.5\" y=\"148\">1</text><text x=\"209.5\" y=\"148\">3</text><text x=\"282.5\" y=\"148\">9</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,9"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "1,8"
+        },
+        {
+          "id": "d",
+          "text": "45"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les effectifs marginaux de Y sont 16 pour Y = 0, 23 pour Y = 1 et 11 pour Y = 2. Donc Σnⱼyⱼ = 0 × 16 + 1 × 23 + 2 × 11 = 45 et Ȳ = 45/50 = 0,9 ✓. Contrôle : 0,9 se situe entre 0 et 2 et penche vers les petites valeurs, qui sont les plus fréquentes. Le nombre 1 est la moyenne non pondérée de 0, 1 et 2 : elle ignore les effectifs. Le nombre 1,8 est la moyenne X̄ du nombre de variétés, calculée sur l'autre marge. Le nombre 45 est la somme Σnⱼyⱼ, qu'on a oublié de diviser par 50.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un domaine fruitier suit 50 vergers : X est le nombre de variétés cultivées (1, 2 ou 3) et Y le nombre de traitements par saison (0, 1 ou 2). Les effectifs nᵢⱼ figurent dans le tableau. Sachant que X̄ = 1,8, que vaut la variance V(X) ? <svg viewBox=\"0 0 328 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 0</text><text x=\"209.5\" y=\"34\">Y = 1</text><text x=\"282.5\" y=\"34\">Y = 2</text><text x=\"55\" y=\"72\">X = 1</text><text x=\"55\" y=\"110\">X = 2</text><text x=\"55\" y=\"148\">X = 3</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">11</text><text x=\"209.5\" y=\"72\">11</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">9</text><text x=\"282.5\" y=\"110\">1</text><text x=\"136.5\" y=\"148\">1</text><text x=\"209.5\" y=\"148\">3</text><text x=\"282.5\" y=\"148\">9</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,92"
+        },
+        {
+          "id": "b",
+          "text": "2,12"
+        },
+        {
+          "id": "c",
+          "text": "0,82"
+        },
+        {
+          "id": "d",
+          "text": "0,68"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les effectifs marginaux de X sont 23, 14 et 13 pour les valeurs 1, 2 et 3. Donc Σnᵢxᵢ² = 23 × 1 + 14 × 4 + 13 × 9 = 23 + 56 + 117 = 196, puis V(X) = 196/50 − 1,8² = 3,92 − 3,24 = 0,68 ✓. Contrôle par les écarts : 23 × (−0,8)² + 14 × 0,2² + 13 × 1,2² = 14,72 + 0,56 + 18,72 = 34, et 34/50 = 0,68 ✓. Le nombre 3,92 est la moyenne des carrés, sans X̄² retranché ; le nombre 2,12 retranche X̄ = 1,8 au lieu de X̄² ; le nombre 0,82 est l'écart-type √0,68, pas la variance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un domaine fruitier suit 50 vergers : X est le nombre de variétés cultivées (1, 2 ou 3) et Y le nombre de traitements par saison (0, 1 ou 2). Les effectifs nᵢⱼ figurent dans le tableau. Sachant que Ȳ = 0,9, que vaut la variance V(Y) ? <svg viewBox=\"0 0 328 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 0</text><text x=\"209.5\" y=\"34\">Y = 1</text><text x=\"282.5\" y=\"34\">Y = 2</text><text x=\"55\" y=\"72\">X = 1</text><text x=\"55\" y=\"110\">X = 2</text><text x=\"55\" y=\"148\">X = 3</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">11</text><text x=\"209.5\" y=\"72\">11</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">9</text><text x=\"282.5\" y=\"110\">1</text><text x=\"136.5\" y=\"148\">1</text><text x=\"209.5\" y=\"148\">3</text><text x=\"282.5\" y=\"148\">9</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,44"
+        },
+        {
+          "id": "b",
+          "text": "0,53"
+        },
+        {
+          "id": "c",
+          "text": "0,73"
+        },
+        {
+          "id": "d",
+          "text": "1,34"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les effectifs marginaux de Y sont 16, 23 et 11 pour les valeurs 0, 1 et 2. Donc Σnⱼyⱼ² = 0 × 16 + 1 × 23 + 4 × 11 = 67, puis V(Y) = 67/50 − 0,9² = 1,34 − 0,81 = 0,53 ✓. Contrôle par les écarts : 16 × (−0,9)² + 23 × 0,1² + 11 × 1,1² = 12,96 + 0,23 + 13,31 = 26,5, et 26,5/50 = 0,53 ✓. Le nombre 1,34 oublie de retrancher Ȳ², le nombre 0,44 retranche Ȳ = 0,9 au lieu de Ȳ², et le nombre 0,73 est l'écart-type √0,53.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un domaine fruitier suit 50 vergers : X est le nombre de variétés cultivées (1, 2 ou 3) et Y le nombre de traitements par saison (0, 1 ou 2). Les effectifs nᵢⱼ figurent dans le tableau. Sachant que X̄ = 1,8 et Ȳ = 0,9, que vaut cov(X, Y) ? <svg viewBox=\"0 0 328 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 0</text><text x=\"209.5\" y=\"34\">Y = 1</text><text x=\"282.5\" y=\"34\">Y = 2</text><text x=\"55\" y=\"72\">X = 1</text><text x=\"55\" y=\"110\">X = 2</text><text x=\"55\" y=\"148\">X = 3</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">11</text><text x=\"209.5\" y=\"72\">11</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">9</text><text x=\"282.5\" y=\"110\">1</text><text x=\"136.5\" y=\"148\">1</text><text x=\"209.5\" y=\"148\">3</text><text x=\"282.5\" y=\"148\">9</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,96"
+        },
+        {
+          "id": "b",
+          "text": "1,62"
+        },
+        {
+          "id": "c",
+          "text": "0,34"
+        },
+        {
+          "id": "d",
+          "text": "−0,74"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On balaie les cases non nulles de chaque ligne, en ignorant celles où un facteur est nul : X = 1 donne 11 × (1 × 1) + 1 × (1 × 2) = 13 ; X = 2 donne 9 × (2 × 1) + 1 × (2 × 2) = 22 ; X = 3 donne 3 × (3 × 1) + 9 × (3 × 2) = 63. Le total vaut 13 + 22 + 63 = 98, donc cov(X, Y) = 98/50 − 1,8 × 0,9 = 1,96 − 1,62 = 0,34 ✓. Positive : plus un verger mélange de variétés, plus il est traité. Le nombre 1,96 oublie de retrancher X̄Ȳ, le nombre 1,62 n'est que ce produit, et −0,74 soustrait les moyennes une à une (1,96 − 1,8 − 0,9) au lieu de leur produit.",
+      "difficulty": 2
+    }
+  ]
+}

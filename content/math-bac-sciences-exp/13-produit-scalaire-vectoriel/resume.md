@@ -1,0 +1,10 @@
+# 📜 Résumé : Produit scalaire et produit vectoriel dans l'espace
+
+- **Déterminant et coplanarité** : det(u⃗, v⃗, w⃗) = a(b′c″ − c′b″) − b(a′c″ − c′a″) + c(a′b″ − b′a″) ; quatre points A, B, C, D sont coplanaires si et seulement si det(AB⃗, AC⃗, AD⃗) = 0, avec des vecteurs issus d'un même point et jamais les coordonnées des points eux-mêmes.
+- **Produit scalaire** : AB⃗ . AC⃗ = AB × AC × cos BÂC, nul si l'un des vecteurs est nul ; en repère orthonormé, u⃗ . v⃗ = xx′ + yy′ + zz′ et ‖u⃗‖ = √(x² + y² + z²) ; orthogonaux si et seulement si le produit vaut 0, formule inutilisable dans un repère seulement orthogonal.
+- **Orientation** : un repère est direct si, pour l'observateur d'Ampère debout sur k⃗ et regardant vers i⃗, le vecteur j⃗ est à sa gauche ; échanger deux vecteurs d'une base ou en remplacer un par son opposé change l'orientation, une permutation circulaire la conserve.
+- **Produit vectoriel, définition** : u⃗ ∧ v⃗ = 0⃗ si u⃗ et v⃗ sont colinéaires ; sinon c'est le vecteur orthogonal à u⃗ et v⃗, tel que (u⃗, v⃗, u⃗ ∧ v⃗) soit directe, de norme ‖u⃗‖ ‖v⃗‖ sin α ; il est nul si et seulement si u⃗ et v⃗ sont colinéaires, et non lorsqu'ils sont orthogonaux.
+- **Propriétés et coordonnées** : u⃗ ∧ v⃗ = −(v⃗ ∧ u⃗), bilinéaire, jamais simplifiable ; en base orthonormée directe, u⃗ ∧ v⃗ = (bc′ − cb′ ; ca′ − ac′ ; ab′ − ba′) ; l'équation u⃗ ∧ v⃗ = w⃗ exige w⃗ orthogonal à u⃗, et ses solutions diffèrent d'un multiple de u⃗.
+- **Aire** : l'aire du parallélogramme ABCD est ‖AB⃗ ∧ AD⃗‖ et celle du triangle ABD la moitié ; AB⃗ ∧ AC⃗ = 0⃗ si et seulement si A, B, C sont alignés, et sinon il est orthogonal à AB⃗ et à AC⃗ ; ‖BC⃗ ∧ BA⃗‖ = ‖AB⃗ ∧ AC⃗‖ donne la loi des sinus.
+- **Distance à une droite** : d(M, D) = ‖MA⃗ ∧ u⃗‖ / ‖u⃗‖ pour A sur D et u⃗ directeur, en divisant par la norme de u⃗ ; elle est nulle si et seulement si M est sur D.
+- **Volumes** : (u⃗ ∧ v⃗) . w⃗ = det(u⃗, v⃗, w⃗) en repère orthonormé direct ; volume du parallélépipède |det(AB⃗, AD⃗, AE⃗)|, du tétraèdre (1/6) |det(BC⃗, BD⃗, BA⃗)|, toujours en valeur absolue.

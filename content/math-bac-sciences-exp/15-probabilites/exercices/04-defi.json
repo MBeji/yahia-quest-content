@@ -1,0 +1,124 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les maîtres du hasard",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans un groupe de 120 élèves, 40 font du théâtre (événement T) et 60 sont des garçons (événement G). Combien d'élèves doivent être à la fois garçons et comédiens pour que T et G soient indépendants ?",
+      "answerKey": {
+        "value": 20
+      },
+      "explanation": "Avec k élèves dans T ∩ G, on a p(T) = 40/120 = 1/3, p(G) = 60/120 = 1/2 et p(T ∩ G) = k/120. L'indépendance exige k/120 = (1/3)(1/2) = 1/6, donc k = 20 ✓. Contrôle : parmi les 40 comédiens, la moitié (20) sont des garçons, comme dans l'ensemble du groupe où 60 élèves sur 120 sont des garçons.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un salarié se rend à son travail en bus ou à vélo. Il prend le bus avec la probabilité b et le vélo avec la probabilité 1 − b. Il arrive à l'heure avec la probabilité 0,9 en bus et 0,6 à vélo. Sur l'ensemble des jours, il arrive à l'heure avec la probabilité 0,78. Quelle est la valeur de b ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.6
+      },
+      "explanation": "Bus et vélo forment une partition des jours : p(à l'heure) = 0,9 b + 0,6 (1 − b) = 0,6 + 0,3 b. Avec 0,78, on obtient 0,3 b = 0,18, donc b = 0,6 ✓. Contrôle : 0,6 × 0,9 + 0,4 × 0,6 = 0,54 + 0,24 = 0,78.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un lecteur de musique choisit chaque jour entre rock et jazz. S'il a écouté du rock la veille, il en réécoute avec la probabilité 0,9 ; sinon, il en écoute avec la probabilité 0,4. Soit pₙ la probabilité d'écouter du rock le jour n. Vers quelle valeur pₙ se stabilise-t-elle à long terme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,4"
+        },
+        {
+          "id": "b",
+          "text": "0,5"
+        },
+        {
+          "id": "c",
+          "text": "0,8"
+        },
+        {
+          "id": "d",
+          "text": "0,65"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec α = 0,9 et β = 0,4, la partition des deux états donne pₙ₊₁ = 0,9 pₙ + 0,4 (1 − pₙ) = 0,5 pₙ + 0,4. Un point fixe ℓ vérifie ℓ = 0,5ℓ + 0,4, donc ℓ = 0,8 ✓, et comme la raison 0,5 est comprise entre 0 et 1, pₙ − 0,8 tend vers 0. Contrôle : 0,9 × 0,8 + 0,4 × 0,2 = 0,72 + 0,08 = 0,8. La valeur 0,4 est le terme constant β, pris pour la limite ; 0,5 est la raison α − β de la suite géométrique ; 0,65 est la moyenne simple de 0,9 et 0,4, qui ignore le poids de chaque état.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Cet arbre pondéré décrit deux événements successifs : A ou A̅, puis B ou B̅. On apprend que B est réalisé. Quelle est la probabilité que A l'ait aussi été ?\n<svg viewBox=\"0 0 300 190\"><title>Arbre pondéré à deux niveaux : A ou A̅, puis B ou B̅</title><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"><path d=\"M30 95 L120 50\"/><path d=\"M30 95 L120 140\"/><path d=\"M120 50 L215 25\"/><path d=\"M120 50 L215 75\"/><path d=\"M120 140 L215 115\"/><path d=\"M120 140 L215 165\"/></g><g fill=\"#0f172a\"><circle cx=\"30\" cy=\"95\" r=\"3.5\"/><circle cx=\"120\" cy=\"50\" r=\"4\"/><circle cx=\"120\" cy=\"140\" r=\"4\"/><circle cx=\"215\" cy=\"25\" r=\"3.5\"/><circle cx=\"215\" cy=\"75\" r=\"3.5\"/><circle cx=\"215\" cy=\"115\" r=\"3.5\"/><circle cx=\"215\" cy=\"165\" r=\"3.5\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\"><text x=\"72\" y=\"66\" text-anchor=\"middle\">0,7</text><text x=\"72\" y=\"130\" text-anchor=\"middle\">0,3</text><text x=\"167\" y=\"31\" text-anchor=\"middle\">0,2</text><text x=\"167\" y=\"74\" text-anchor=\"middle\">0,8</text><text x=\"167\" y=\"121\" text-anchor=\"middle\">0,6</text><text x=\"167\" y=\"164\" text-anchor=\"middle\">0,4</text></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"120\" y=\"40\" text-anchor=\"middle\">A</text><text x=\"120\" y=\"158\" text-anchor=\"middle\">A̅</text><text x=\"228\" y=\"29\" text-anchor=\"middle\">B</text><text x=\"228\" y=\"79\" text-anchor=\"middle\">B̅</text><text x=\"228\" y=\"119\" text-anchor=\"middle\">B</text><text x=\"228\" y=\"169\" text-anchor=\"middle\">B̅</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/50"
+        },
+        {
+          "id": "b",
+          "text": "1/5"
+        },
+        {
+          "id": "c",
+          "text": "8/25"
+        },
+        {
+          "id": "d",
+          "text": "7/16"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On cherche p(A/B) = p(A ∩ B)/p(B). Le chemin A puis B donne p(A ∩ B) = 0,7 × 0,2 = 0,14. L'événement B se réalise par deux chemins : p(B) = 0,7 × 0,2 + 0,3 × 0,6 = 0,14 + 0,18 = 0,32. Donc p(A/B) = 0,14/0,32 = 7/16 ✓. La valeur 1/5 = 0,2 est p(B/A), lue directement sur la branche, c'est-à-dire le sens inverse ; 7/50 = 0,14 est l'intersection non divisée par p(B) ; 8/25 = 0,32 est p(B), la probabilité totale de la branche demandée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une urne contient 5 boules blanches et 7 boules noires. On tire 3 boules d'un seul geste. Sachant que les trois boules sont de la même couleur, quelle est la probabilité qu'elles soient blanches ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/22"
+        },
+        {
+          "id": "b",
+          "text": "2/9"
+        },
+        {
+          "id": "c",
+          "text": "5/12"
+        },
+        {
+          "id": "d",
+          "text": "7/9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Soit M « les trois boules ont la même couleur » et W « les trois boules sont blanches », avec W ⊂ M. Parmi C_12^3 = 220 tirages équiprobables, C_5^3 = 10 sont blancs et C_7^3 = 35 sont noirs, donc p(M) = 45/220. Alors p(W/M) = p(W ∩ M)/p(M) = p(W)/p(M) = 10/45 = 2/9 ✓. La valeur 1/22 = 10/220 est p(W), qui ne tient pas compte de l'information ; 7/9 est la probabilité d'avoir trois noires sachant qu'elles sont de même couleur ; 5/12 est la proportion de boules blanches dans l'urne, sans lien avec le tirage de trois boules.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, un sac contient n boules rouges et 3n boules noires, indiscernables au toucher. On tire 3 boules d'un seul geste et on note pₙ la probabilité d'obtenir exactement une boule rouge. Vers quelle limite tend pₙ quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "27/64"
+        },
+        {
+          "id": "b",
+          "text": "1/4"
+        },
+        {
+          "id": "c",
+          "text": "9/64"
+        },
+        {
+          "id": "d",
+          "text": "9/16"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Parmi C_4n^3 = 4n(4n − 1)(4n − 2)/6 tirages équiprobables, les tirages à exactement une rouge sont n × C_3n^2 = n × 3n(3n − 1)/2. Donc pₙ = [3n²(3n − 1)/2] × [6/(4n(4n − 1)(4n − 2))] = 9n(3n − 1)/(4(4n − 1)(4n − 2)). Le numérateur et le dénominateur sont équivalents à 27n² et 64n² en +∞, donc pₙ tend vers 27/64 ✓. Contrôle pour n = 2 : 9 × 2 × 5/(4 × 7 × 6) = 90/168 = 15/28, soit 30/56 comme le calcul direct 2 × 15/56. La valeur 9/64 oublie le facteur 3 des positions de la boule rouge ; 9/16 = (3/4)² oublie la probabilité 1/4 de la rouge et le facteur 3 ; 1/4 est la proportion de boules rouges, qui n'est pas la probabilité d'en tirer exactement une sur trois.",
+      "difficulty": 3
+    }
+  ]
+}

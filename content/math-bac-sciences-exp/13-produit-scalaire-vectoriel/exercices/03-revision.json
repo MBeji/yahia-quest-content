@@ -1,0 +1,117 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les deux produits",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans un repère orthonormé, pour quelle valeur de m les vecteurs u⃗(m ; −2 ; 3) et v⃗(4 ; m ; 2) sont-ils orthogonaux ?",
+      "answerKey": {
+        "value": -3
+      },
+      "explanation": "u⃗ . v⃗ = 4m − 2m + 6 = 2m + 6 = 0 donne m = −3 ✓. Contrôle : u⃗(−3 ; −2 ; 3) et v⃗(4 ; −3 ; 2) donnent −12 + 6 + 6 = 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux vecteurs u⃗ et v⃗ de normes 2 et 7 forment un angle géométrique de 30°. Quelle est l'aire du parallélogramme construit sur u⃗ et v⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "7√3"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "7/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'aire est ‖u⃗ ∧ v⃗‖ = ‖u⃗‖ ‖v⃗‖ sin α = 2 × 7 × sin 30° = 14 × 1/2 = 7 ✓. Le résultat 7/2 est l'aire du triangle, 7√3 utilise cos 30° au lieu de sin 30°, et 14 oublie le sinus.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tous vecteurs u⃗ et v⃗, que vaut (u⃗ + v⃗) ∧ (u⃗ − v⃗) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2 (u⃗ ∧ v⃗)"
+        },
+        {
+          "id": "b",
+          "text": "0⃗"
+        },
+        {
+          "id": "c",
+          "text": "2 (u⃗ ∧ v⃗)"
+        },
+        {
+          "id": "d",
+          "text": "‖u⃗‖² − ‖v⃗‖²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On développe : (u⃗ + v⃗) ∧ (u⃗ − v⃗) = u⃗ ∧ u⃗ − u⃗ ∧ v⃗ + v⃗ ∧ u⃗ − v⃗ ∧ v⃗. Or u⃗ ∧ u⃗ = v⃗ ∧ v⃗ = 0⃗ et v⃗ ∧ u⃗ = −(u⃗ ∧ v⃗), d'où −2 (u⃗ ∧ v⃗) ✓. Le résultat 0⃗ suppose le produit commutatif, 2 (u⃗ ∧ v⃗) oublie le signe de l'échange, et ‖u⃗‖² − ‖v⃗‖² est l'identité du produit scalaire (u⃗ + v⃗) . (u⃗ − v⃗), un réel et non un vecteur.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour calculer le volume du tétraèdre ABCD dans un repère orthonormé direct, on procède en quatre étapes. Remettre ces étapes dans l'ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prendre la valeur absolue du résultat, puis la multiplier par 1/6"
+        },
+        {
+          "id": "b",
+          "text": "Calculer les coordonnées des vecteurs BC⃗, BD⃗ et BA⃗"
+        },
+        {
+          "id": "c",
+          "text": "Calculer le produit vectoriel BC⃗ ∧ BD⃗"
+        },
+        {
+          "id": "d",
+          "text": "Faire le produit scalaire de BC⃗ ∧ BD⃗ avec BA⃗"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "c",
+          "d",
+          "a"
+        ]
+      },
+      "explanation": "On forme d'abord les trois vecteurs issus de B, dont dépendent tous les calculs suivants. Le produit vectoriel BC⃗ ∧ BD⃗ est calculé avant d'être multiplié scalairement par BA⃗, ce qui donne le déterminant det(BC⃗, BD⃗, BA⃗). Ce nombre peut être négatif : on en prend la valeur absolue en dernier, avant de multiplier par 1/6 pour passer du parallélépipède au tétraèdre.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un repère orthonormé direct, on donne A(1 ; 0 ; 2), B(3 ; 0 ; 1), C(−1 ; −1 ; 3) et D(m ; −2 ; 0). Pour quelle valeur de m les quatre points sont-ils coplanaires ?",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "AB⃗(2 ; 0 ; −1), AC⃗(−2 ; −1 ; 1) et AD⃗(m − 1 ; −2 ; −2). AB⃗ ∧ AC⃗ = (0 × 1 − (−1)(−1) ; (−1)(−2) − 2 × 1 ; 2 × (−1) − 0 × (−2)) = (−1 ; 0 ; −2). Le déterminant vaut (AB⃗ ∧ AC⃗) . AD⃗ = −(m − 1) + 0 + 4 = 5 − m. Les quatre points sont coplanaires si et seulement si ce déterminant est nul, soit m = 5 ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le cube ABCDEFGH de la figure a pour arête 6, et son repère (A ; AB⃗/6, AD⃗/6, AE⃗/6) est orthonormé direct. Quel est le volume du tétraèdre BDEG, dont les arêtes sont tracées en orange ?\n<svg viewBox=\"0 0 250 232\">\n<title>Cube ABCDEFGH d'arête 6 : le tétraèdre BDEG, arêtes en orange</title>\n<polygon points=\"36,200 136,200 136,100 36,100\" fill=\"#0f6e56\" opacity=\"0.1\"/>\n<line x1=\"179.3\" y1=\"175\" x2=\"79.3\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"79.3\" y1=\"175\" x2=\"36\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"79.3\" y1=\"175\" x2=\"79.3\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"36\" y1=\"200\" x2=\"136\" y2=\"200\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"179.3\" y2=\"175\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"36\" y1=\"100\" x2=\"136\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"100\" x2=\"179.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"179.3\" y1=\"75\" x2=\"79.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"79.3\" y1=\"75\" x2=\"36\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"36\" y1=\"200\" x2=\"36\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"136\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"179.3\" y1=\"175\" x2=\"179.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"79.3\" y2=\"175\" stroke=\"#b45309\" stroke-width=\"3.2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"36\" y2=\"100\" stroke=\"#b45309\" stroke-width=\"3.2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"179.3\" y2=\"75\" stroke=\"#b45309\" stroke-width=\"3.2\"/>\n<line x1=\"79.3\" y1=\"175\" x2=\"36\" y2=\"100\" stroke=\"#b45309\" stroke-width=\"3.2\"/>\n<line x1=\"79.3\" y1=\"175\" x2=\"179.3\" y2=\"75\" stroke=\"#b45309\" stroke-width=\"3.2\"/>\n<line x1=\"36\" y1=\"100\" x2=\"179.3\" y2=\"75\" stroke=\"#b45309\" stroke-width=\"3.2\"/>\n<circle cx=\"36\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"136\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"179.3\" cy=\"175\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"79.3\" cy=\"175\" r=\"3.5\" fill=\"#94a3b8\"/>\n<circle cx=\"36\" cy=\"100\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"136\" cy=\"100\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"179.3\" cy=\"75\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"79.3\" cy=\"75\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"24\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text>\n<text x=\"146\" y=\"218\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text>\n<text x=\"193.3\" y=\"180\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text>\n<text x=\"67.3\" y=\"169\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text>\n<text x=\"24\" y=\"98\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text>\n<text x=\"150\" y=\"110\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">F</text>\n<text x=\"193.3\" y=\"69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">G</text>\n<text x=\"75.3\" y=\"65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">H</text>\n</svg>",
+      "answerKey": {
+        "value": 72
+      },
+      "explanation": "BD⃗(−6 ; 6 ; 0), BE⃗(−6 ; 0 ; 6) et BG⃗(0 ; 6 ; 6). BE⃗ ∧ BG⃗ = (0 × 6 − 6 × 6 ; 6 × 0 − (−6) × 6 ; (−6) × 6 − 0 × 0) = (−36 ; 36 ; −36), puis det = BD⃗ . (BE⃗ ∧ BG⃗) = 216 + 216 + 0 = 432. Le volume est (1/6) × 432 = 72 ✓. Contrôle : du cube de volume 216, on retire quatre coins de volume 6³/6 = 36 chacun, et il reste 216 − 144 = 72.",
+      "difficulty": 2
+    }
+  ]
+}
