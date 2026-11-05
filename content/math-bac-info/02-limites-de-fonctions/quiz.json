@@ -6,15 +6,15 @@
       "options": [
         {
           "id": "a",
-          "text": "7"
+          "text": "5"
         },
         {
           "id": "b",
-          "text": "9"
+          "text": "7"
         },
         {
           "id": "c",
-          "text": "13"
+          "text": "20"
         },
         {
           "id": "d",
@@ -22,7 +22,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "(g∘f)(2) = g(f(2)) : on calcule d'abord f(2) = 5, puis g(5) = 25 ✓. La valeur 7 est (f∘g)(2) = f(4), l'ordre des fonctions inversé ; 9 additionne f(2) = 5 et g(2) = 4 ; 13 élève séparément 2 et 3 au carré avant d'additionner (g(2) + g(3)).",
+      "explanation": "(g∘f)(2) = g(f(2)) : on calcule d'abord f(2) = 5, puis g(5) = 25 ✓. La valeur 7 est (f∘g)(2) = f(4), l'ordre des fonctions inversé ; 20 est le produit f(2) × g(2) = 5 × 4, qui confond g∘f avec g × f ; 5 s'arrête à f(2) sans appliquer g.",
       "difficulty": 1
     },
     {
@@ -126,23 +126,23 @@
       "options": [
         {
           "id": "a",
-          "text": "0"
+          "text": "−1"
         },
         {
           "id": "b",
-          "text": "1"
+          "text": "0"
         },
         {
           "id": "c",
-          "text": "π"
+          "text": "1"
         },
         {
           "id": "d",
           "text": "La limite n'existe pas"
         }
       ],
-      "correctOption": "b",
-      "explanation": "On pose u(x) = π/x, qui tend vers 0 en +∞, puis v = cos, fonction usuelle définie en 0 : lim y→0 cos y = cos 0 = 1. Par composée, la limite vaut 1 ✓. La valeur 0 est la limite de la fonction intérieure π/x ; π est la valeur de u(1) ; et cos n'oscille pas ici, puisque son argument tend vers 0.",
+      "correctOption": "c",
+      "explanation": "On pose u(x) = π/x, qui tend vers 0 en +∞, puis v = cos, fonction usuelle définie en 0 : lim y→0 cos y = cos 0 = 1. Par composée, la limite vaut 1 ✓. La valeur 0 est la limite de la fonction intérieure π/x ; −1 = cos π vient de la substitution x = 1 au lieu de faire tendre x vers +∞ ; et cos n'oscille pas ici, puisque son argument tend vers 0.",
       "difficulty": 2
     },
     {

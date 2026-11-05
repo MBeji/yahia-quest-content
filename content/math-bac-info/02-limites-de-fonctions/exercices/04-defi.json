@@ -83,11 +83,11 @@
       "options": [
         {
           "id": "a",
-          "text": "256"
+          "text": "64"
         },
         {
           "id": "b",
-          "text": "400"
+          "text": "256"
         },
         {
           "id": "c",
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "On suit f(x) − 2 = 1/√x : x = 1 donne 1 ; x = 4 donne 0,5 ; x = 16 donne 0,25 ; x = 64 donne 0,125 ; x = 256 donne 0,0625 ≥ 0,05, la boucle continue ; x = 1024 donne 0,03125 < 0,05, elle s'arrête : l'algorithme affiche 1024 ✓. 256 s'arrête une étape trop tôt (0,0625 est encore au-dessus du seuil) ; 400 est la solution exacte de 1/√x = 0,05, mais x ne prend que les valeurs 4, 16, 64… ; 4096 fait un passage de trop.",
+      "explanation": "On suit f(x) − 2 = 1/√x : x = 1 donne 1 ; x = 4 donne 0,5 ; x = 16 donne 0,25 ; x = 64 donne 0,125 ; x = 256 donne 0,0625 ≥ 0,05, la boucle continue ; x = 1024 donne 0,03125 < 0,05, elle s'arrête : l'algorithme affiche 1024 ✓. 64 calcule 1/x au lieu de 1/√x (1/64 ≈ 0,016 < 0,05, alors que 1/√64 = 0,125 ≥ 0,05) ; 256 s'arrête une étape trop tôt (0,0625 est encore au-dessus du seuil) ; 4096 fait un passage de trop.",
       "difficulty": 3
     },
     {

@@ -99,31 +99,31 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "En −∞, x < 0, donc √(x² + 4) = |x|√(1 + 4/x²) = −x√(1 + 4/x²). Le quotient vaut (2x − 1)/(−x√(1 + 4/x²)) = (−2 + 1/x)/√(1 + 4/x²), qui tend vers −2/1 = −2 ✓. Poser √(x²) = x donnerait +2 ; 0 ne retient que le degré 1 du numérateur sans comparer au dénominateur ; +∞ conclut trop vite d'une forme ∞/∞.",
+      "explanation": "En −∞, x < 0, donc √(x² + 4) = |x|√(1 + 4/x²) = −x√(1 + 4/x²). Le quotient vaut (2x − 1)/(−x√(1 + 4/x²)) = (−2 + 1/x)/√(1 + 4/x²), qui tend vers −2/1 = −2 ✓. Poser √(x²) = x donnerait +2 ; 0 compte le x² sous la racine comme un degré 2 au dénominateur, alors que √(x² + 4) se comporte comme |x|, de degré 1 ; +∞ conclut trop vite d'une forme ∞/∞.",
       "difficulty": 3
     },
     {
-      "prompt": "Pour quelle valeur de a la courbe de f(x) = (2x² − x + 3)/(x − 1) admet-elle, en +∞, la droite d'équation y = 2x + a pour asymptote ?",
+      "prompt": "La courbe C de f(x) = (2x² − x + 3)/(x − 1) admet la droite D : y = 2x + 1 pour asymptote oblique. Sur quel ensemble C est-elle au-dessus de D ?",
       "options": [
         {
           "id": "a",
-          "text": "−1"
+          "text": "]−∞ ; 1["
         },
         {
           "id": "b",
-          "text": "1"
+          "text": "]1 ; +∞["
         },
         {
           "id": "c",
-          "text": "3"
+          "text": "ℝ ∖ {1}"
         },
         {
           "id": "d",
-          "text": "4"
+          "text": "]−∞ ; −3[ ∪ ]1 ; +∞["
         }
       ],
       "correctOption": "b",
-      "explanation": "On veut que f(x) − (2x + a) tende vers 0. Or f(x) − 2x = (2x² − x + 3 − 2x(x − 1))/(x − 1) = (x + 3)/(x − 1), qui tend vers 1 en +∞. Donc a = 1 ✓ (on retrouve f(x) = 2x + 1 + 4/(x − 1)). Le nombre 3 est le terme constant du numérateur, −1 celui du dénominateur ; 4 est le reste de la division, non le coefficient constant de la droite.",
+      "explanation": "On étudie le signe de d(x) = f(x) − (2x + 1) = (2x² − x + 3 − (2x + 1)(x − 1))/(x − 1) = 4/(x − 1), car (2x + 1)(x − 1) = 2x² − x − 1. Le numérateur 4 est positif : d(x) a le signe de x − 1, donc C est au-dessus de D sur ]1 ; +∞[ ✓ et au-dessous sur ]−∞ ; 1[. ]−∞ ; 1[ inverse le signe ; ℝ ∖ {1} ne regarde que le numérateur 4 ; ]−∞ ; −3[ ∪ ]1 ; +∞[ étudie f(x) − 2x = (x + 3)/(x − 1) en oubliant le 1 de la droite.",
       "difficulty": 3
     },
     {
