@@ -412,7 +412,7 @@ Soit ABC un triangle.
 ::: propriete
 • L'aire d'un parallélogramme ABCD est ‖AB⃗ ∧ AD⃗‖ ; celle d'un triangle ABD est (1/2) ‖AB⃗ ∧ AD⃗‖.
 • Trois points A, B, C sont alignés si et seulement si AB⃗ ∧ AC⃗ = 0⃗.
-Cas limite : si AD⃗ ∧ AE⃗ = λ (AB⃗ ∧ AC⃗) avec λ ≠ 0, alors det(AB⃗, AC⃗, AD⃗) = (AB⃗ ∧ AC⃗) . AD⃗ = (1/λ)(AD⃗ ∧ AE⃗) . AD⃗ = 0, et de même pour E : les cinq points A, B, C, D, E sont coplanaires.
+Cas limite : si A, B, D sont alignés, AB⃗ ∧ AD⃗ = 0⃗ et l'aire est nulle : le « triangle » ABD est aplati.
 :::
 
 ::: verifie À toi : l'aire d'un triangle

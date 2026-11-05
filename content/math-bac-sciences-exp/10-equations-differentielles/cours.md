@@ -295,11 +295,11 @@ A sin(ωx) + B cos(ωx) = r cos(ωx − φ) avec r = √(A² + B²), cos φ = B/
 
 ## 🗝️ Se ramener à un cas connu : solution particulière et z = y′
 
-Certains énoncés de bac posent une équation qui ne ressemble à aucune des précédentes : un second membre en x² ou en cos x, ou une dérivée seconde sans y.
+Certains énoncés de bac posent une équation qui ne ressemble à aucune des précédentes : un second membre en x² ou en cos x, ou une dérivée seconde sans y, ou une équation non linéaire (y²) ou intégrale.
 Le réflexe est de se ramener à un cas déjà résolu. Comment ramener chacune à y′ = ay + b ou y′ = ay ?
 
 ::: methode
-**Deux gestes.** (a) Second membre non nul : l'énoncé fournit la forme d'une solution particulière g ; on la détermine par identification, et f est solution de (E) ⟺ f − g est solution de l'équation sans second membre (E₀). (b) Dérivée seconde sans y : on pose z = y′, on résout l'équation d'ordre un en z, puis on **primitive** pour revenir à y. Même geste à l'ordre trois : pour y‴ + y″ = 0, z = y″ vérifie z′ = −z, puis on primitive deux fois. (c) Changement de fonction imposé par l'énoncé (g = 1/f, f = e^(ax)g, …) : on calcule g′, on reconnaît y′ = ay + b, puis on revient à f.
+**Trois gestes.** (a) Second membre non nul : l'énoncé fournit la forme d'une solution particulière g ; on la détermine par identification, et f est solution de (E) ⟺ f − g est solution de l'équation sans second membre (E₀). (b) Dérivée seconde sans y : on pose z = y′, on résout l'équation d'ordre un en z, puis on **primitive** pour revenir à y. Même geste à l'ordre trois : pour y‴ + y″ = 0, z = y″ vérifie z′ = −z, puis on primitive deux fois. (c) Changement de fonction imposé par l'énoncé (g = 1/f, f = e^(ax)g, …) : on calcule g′, on reconnaît y′ = ay + b, puis on revient à f.
 :::
 
 ::: exemple Cinq équations ramenées à un cas connu

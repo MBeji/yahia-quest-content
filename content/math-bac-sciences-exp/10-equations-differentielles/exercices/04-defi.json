@@ -31,27 +31,27 @@
       "difficulty": 3
     },
     {
-      "prompt": "f est dérivable sur ℝ, ne s'annule pas, vérifie y′ + 2y = y² et f(0) = 1. En posant g = 1/f, déterminer f.",
+      "prompt": "f est dérivable sur ℝ, ne s'annule pas, vérifie y′ + 2y = y² et f(0) = 4/3. En posant g = 1/f, déterminer f.",
       "options": [
         {
           "id": "a",
-          "text": "f(x) = 2/(1 + e^(−2x))"
+          "text": "f(x) = 4/(e^(−2x) + 2)"
         },
         {
           "id": "b",
-          "text": "f(x) = (1 + e^(2x))/2"
+          "text": "f(x) = (e^(2x) + 2)/4"
         },
         {
           "id": "c",
-          "text": "f(x) = 2/(2e^(2x) + 1)"
+          "text": "f(x) = 4/(3e^(2x) + 2)"
         },
         {
           "id": "d",
-          "text": "f(x) = 2/(1 + e^(2x))"
+          "text": "f(x) = 4/(e^(2x) + 2)"
         }
       ],
       "correctOption": "d",
-      "explanation": "Comme f′ = f² − 2f, on a g′ = −f′/f² = −1 + 2/f = 2g − 1. Les solutions de y′ = 2y − 1 sont g(x) = ke^(2x) + 1/2 (car −b/a = 1/2). La condition g(0) = 1/f(0) = 1 donne k = 1/2, donc g(x) = (e^(2x) + 1)/2 et f(x) = 1/g(x) = 2/(1 + e^(2x)) ✓. Contrôle : f(0) = 1 et g ne s'annule jamais. La réponse « 2/(1 + e^(−2x)) » écrit g′ = f′/f² au lieu de −f′/f² (elle vérifie f(0) = 1 mais pas l'équation). La réponse « (1 + e^(2x))/2 » donne g et oublie d'inverser. La réponse « 2/(2e^(2x) + 1) » prend k = g(0) = 1 au lieu de g(0) − 1/2.",
+      "explanation": "Comme f′ = f² − 2f, on a g′ = −f′/f² = −1 + 2/f = 2g − 1. Les solutions de y′ = 2y − 1 sont g(x) = ke^(2x) + 1/2 (car −b/a = 1/2). La condition g(0) = 1/f(0) = 3/4 donne k = 3/4 − 1/2 = 1/4, donc g(x) = (e^(2x) + 2)/4 et f(x) = 1/g(x) = 4/(e^(2x) + 2) ✓. Contrôle : f(0) = 4/3 et g ne s'annule jamais. La réponse « 4/(e^(−2x) + 2) » écrit g′ = f′/f² au lieu de −f′/f² (elle vérifie f(0) = 4/3 mais pas l'équation). La réponse « (e^(2x) + 2)/4 » donne g et oublie d'inverser. La réponse « 4/(3e^(2x) + 2) » prend k = g(0) = 3/4 au lieu de g(0) − 1/2.",
       "difficulty": 3
     },
     {

@@ -497,7 +497,7 @@ Sur la figure, le segment IH de longueur h est perpendiculaire à P, et le théo
 Soit S : x² + y² + z² − 6x + 2y − 4z + 5 = 0, de centre I(3, −1, 2) et de rayon 3.
 
 1. Pour P_d : 2x − 2y + z + d = 0, le numérateur en I vaut 6 + 2 + 2 + d = 10 + d, et ‖n⃗‖ = 3. Pour d = 2, h = 12/3 = 4 > 3 : l'intersection est vide. Pour d = −1, h = 9/3 = 3 = R : le plan est tangent. Pour d = −4, h = 6/3 = 2 < 3 : c'est un cercle de rayon √(9 − 4) = √5.
-2. Pour le plan Q : x + y + z − 1 = 0, le numérateur en I vaut 3 − 1 + 2 − 1 = 3 et ‖n⃗‖ = √3, donc h = √3 < 3. Le centre du cercle est H = I + kn⃗ avec n⃗(1, 1, 1) : H(3 + k, −1 + k, 2 + k), et k = −1 donne H(2, −2, 1) ; on contrôle H ∈ R : 2 − 2 + 1 − 1 = 0 ✓. Le rayon est r = √(9 − 3) = √6.
+2. Pour le plan Q : x + y + z − 1 = 0, le numérateur en I vaut 3 − 1 + 2 − 1 = 3 et ‖n⃗‖ = √3, donc h = √3 < 3. Le centre du cercle est H = I + kn⃗ avec n⃗(1, 1, 1) : H(3 + k, −1 + k, 2 + k), et k = −1 donne H(2, −2, 1) ; on contrôle H ∈ Q : 2 − 2 + 1 − 1 = 0 ✓. Le rayon est r = √(9 − 3) = √6.
 3. Le plan tangent à S en A(5, 0, 4) passe par A et a pour vecteur normal IA⃗(2, 1, 2) : 2(x − 5) + y + 2(z − 4) = 0, soit 2x + y + 2z − 18 = 0. Contrôle : sa distance à I vaut |6 − 1 + 4 − 18|/3 = 3 = R ✓.
 
 :::

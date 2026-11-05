@@ -213,7 +213,7 @@ On a |d| = √(144 + 256) = 20, donc x² − y² = 12 et x² + y² = 20, d'où x
 :::
 
 ::: retenir
-Pour z² = a + ib, on résout x² − y² = a, 2xy = b et x² + y² = |d| ; il y a deux racines carrées opposées, et le signe de 2xy dit si x et y ont le même signe ou des signes contraires.
+Pour z² = a + ib, on résout x² − y² = a, 2xy = b et x² + y² = |a + ib| ; il y a deux racines carrées opposées, et le signe de 2xy dit si x et y ont le même signe ou des signes contraires.
 :::
 
 ## 🧮 Le second degré dans ℂ

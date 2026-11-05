@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Ici ω = 4 (car 16 = 4²), B = f(0) = 1 et f′(0) = 4A = 4 donne A = 1 : f(x) = sin(4x) + cos(4x). Une primitive est F(x) = −cos(4x)/4 + sin(4x)/4, donc ∫₀^(π/8) f = F(π/8) − F(0) = 1/4 − (−1/4) = 1/2. La valeur moyenne est (1/(π/8)) × 1/2 = 4/π ✓. Contrôle : f vaut 1 en 0 et √2 vers π/16, puis redescend à 1 en π/8, donc une moyenne proche de 1,27 est cohérente (4/π ≈ 1,273). La réponse « 1/2 » oublie le facteur 1/(b − a). La réponse « 0 » prend pour primitives −sin et cos au lieu de −cos/4 et sin/4, avec un mauvais signe. La réponse « 10/π » prend A = f′(0) = 4 sans diviser par ω.",
+      "explanation": "Ici ω = 4 (car 16 = 4²), B = f(0) = 1 et f′(0) = 4A = 4 donne A = 1 : f(x) = sin(4x) + cos(4x). Une primitive est F(x) = −cos(4x)/4 + sin(4x)/4, donc ∫₀^(π/8) f = F(π/8) − F(0) = 1/4 − (−1/4) = 1/2. La valeur moyenne est (1/(π/8)) × 1/2 = 4/π ✓. Contrôle : f vaut 1 en 0 et √2 vers π/16, puis redescend à 1 en π/8, donc une moyenne proche de 1,27 est cohérente (4/π ≈ 1,273). La réponse « 1/2 » oublie le facteur 1/(b − a). La réponse « 0 » prend −sin(4x)/4 pour primitive de cos(4x) (erreur de signe) : F = −cos(4x)/4 − sin(4x)/4 donne F(π/8) − F(0) = −1/4 − (−1/4) = 0. La réponse « 10/π » prend A = f′(0) = 4 sans diviser par ω.",
       "difficulty": 3
     },
     {
@@ -71,7 +71,7 @@
         },
         {
           "id": "d",
-          "text": "x ↦ αe^(−x) + βx, (α, β, γ) ∈ ℝ³"
+          "text": "x ↦ αe^(−x) + βx, (α, β) ∈ ℝ²"
         }
       ],
       "correctOption": "b",
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Si f′(x) = f(π − x), en dérivant : f″(x) = −f′(π − x) = −f(π − (π − x)) = −f(x). Donc f″ + f = 0 et f(x) = A cos x + B sin x. Alors f′(x) = −A sin x + B cos x et f(π − x) = −A cos x + B sin x, d'où B = −A : f(x) = A(cos x − sin x) ✓. Contrôle pour A = 1 : f′(x) = −sin x − cos x et f(π − x) = cos(π − x) − sin(π − x) = −cos x − sin x ✓. La réponse « cos x + sin x » prend A = B au lieu de A = −B : f′(0) = 1 mais f(π) = −1. La réponse « e^x » traite l'équation comme f′ = f : f′(0) = 1 mais f(π) = e^π. La réponse « cos x » garde B = 1 en oubliant la condition sur A : f′(0) = 0 mais f(π) = −1.",
+      "explanation": "Si f′(x) = f(π − x), en dérivant : f″(x) = −f′(π − x) = −f(π − (π − x)) = −f(x). Donc f″ + f = 0 et f(x) = A cos x + B sin x. Alors f′(x) = −A sin x + B cos x et f(π − x) = −A cos x + B sin x, d'où B = −A : f(x) = A(cos x − sin x) ✓. Contrôle pour A = 1 : f′(x) = −sin x − cos x et f(π − x) = cos(π − x) − sin(π − x) = −cos x − sin x ✓. La réponse « cos x + sin x » prend A = B au lieu de A = −B : f′(0) = 1 mais f(π) = −1. La réponse « e^x » traite l'équation comme f′ = f : f′(0) = 1 mais f(π) = e^π. La réponse « cos x » prend A = 1 et B = 0 en oubliant la condition B = −A : f′(0) = 0 mais f(π) = −1.",
       "difficulty": 3
     },
     {

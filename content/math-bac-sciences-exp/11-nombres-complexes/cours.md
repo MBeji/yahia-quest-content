@@ -2,7 +2,7 @@
 
 > 💡 «Un nombre dont le carré vaut −1 n'existe pas sur la droite réelle. Il existe dans le plan — et il y range les distances, les angles et les directions.»
 
-En 1740, Euler écrit cos x = ½(e^(x√−1) + e^(−x√−1)) ; en 1748, il pose e^(x√−1) = cos x + √−1 sin x. De cette dernière formule, Dantzig dit qu'elle contient « les symboles les plus importants » : l'arithmétique par 0 et 1, l'algèbre par −1, la géométrie par π et l'analyse par e. Ce chapitre ouvre le **tome 2** : huit notions te mènent de la définition de ℂ jusqu'à la linéarisation de sin⁵x. Chaque notion garde la même route : on part d'une situation, on nomme, on regarde, on calcule, on se méfie du piège, puis on vérifie seul.
+En 1740, Euler écrit cos x = ½(e^(x√−1) + e^(−x√−1)) ; en 1748, il pose e^(x√−1) = cos x + √−1 sin x. De cette dernière formule, Dantzig dit qu'elle contient « les symboles les plus importants » : l'arithmétique par 0 et 1, l'algèbre par √−1 (notre i), la géométrie par π et l'analyse par e. Ce chapitre ouvre le **tome 2** : huit notions te mènent de la définition de ℂ jusqu'à la linéarisation de sin⁵x. Chaque notion garde la même route : on part d'une situation, on nomme, on regarde, on calcule, on se méfie du piège, puis on vérifie seul.
 
 ## 🏰 L'ensemble ℂ : forme algébrique et conjugué
 
