@@ -27,7 +27,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | --- | --- | --- | --- | --- | --- |
 | Sciences techniques | technologie (génie mécanique) | `228462` P01-P02 | ✅ complète | 25/25 chapitres — matière complète (ch. 23-25 livrés le 2026-11-03) | — (missions d'examen du Bac à ajouter dès que les sujets sont au Drive) |
 | Sciences techniques | technologie (génie électrique) | `228461` P01-P03 | ❌ aucune | — | A1 |
-| Sciences techniques | mathématiques | `222451` | ✅ validée R-7 (2026-11-04) | 0/16 chapitres | B1, génération |
+| Sciences techniques | mathématiques | `222451` | ✅ validée R-7 (2026-11-04) | 4/16 chapitres | B1, génération |
 | Sciences techniques | physique | `223451` | ❌ aucune | — | A1 |
 | Mathématiques | mathématiques | `222445` + `222446` | ✅ validée R-7 | 19/19 | — (gisement possible) |
 | Mathématiques | physique | `223432` | ❌ aucune | — | A1 |

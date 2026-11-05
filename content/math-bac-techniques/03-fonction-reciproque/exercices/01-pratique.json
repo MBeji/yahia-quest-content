@@ -1,0 +1,160 @@
+{
+  "title": "⭐ Exercice : Les premiers pas du retour",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Soit q la fonction définie sur ℝ par :\nq(x) = |x − 4| + 3x\nQuelle est l'expression de la restriction de q à ]−∞ ; 4] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−x + 4"
+        },
+        {
+          "id": "b",
+          "text": "2x + 4"
+        },
+        {
+          "id": "c",
+          "text": "4x − 4"
+        },
+        {
+          "id": "d",
+          "text": "4x + 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur ]−∞ ; 4], x − 4 ≤ 0, donc |x − 4| = 4 − x et q(x) = 4 − x + 3x = 2x + 4 ✓ (contrôle : q(0) = |−4| + 0 = 4 = 2 × 0 + 4). L'expression 4x − 4 est celle de la restriction à [4 ; +∞[, où |x − 4| = x − 4. L'expression −x + 4 oublie le terme 3x. L'expression 4x + 4 écrit |x − 4| = x + 4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La fonction f est continue sur ℝ ; son tableau de variation est donné ci-dessous. Quelle est l'image de l'intervalle [−1 ; 2] par f ?\n<svg viewBox=\"0 0 380 150\">\n<title>Tableau de variation de f : croissante de −∞ à 3 sur ]−∞ ; −1], décroissante de 3 à −1 sur [−1 ; 2], croissante de −1 à +∞ sur [2 ; +∞[</title>\n<rect x=\"8\" y=\"8\" width=\"364\" height=\"134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"8\" y1=\"44\" x2=\"372\" y2=\"44\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"78\" y1=\"8\" x2=\"78\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"126\" y1=\"110\" x2=\"162.67\" y2=\"78\" stroke=\"#2563eb\" stroke-width=\"2.4\"/>\n<polygon points=\"162.67,78 158.84,87.31 152.93,80.53\" fill=\"#2563eb\"/>\n<line x1=\"206.67\" y1=\"78\" x2=\"243.33\" y2=\"110\" stroke=\"#d97706\" stroke-width=\"2.4\"/>\n<polygon points=\"243.33,110 233.59,107.47 239.51,100.69\" fill=\"#d97706\"/>\n<line x1=\"287.33\" y1=\"110\" x2=\"324\" y2=\"78\" stroke=\"#2563eb\" stroke-width=\"2.4\"/>\n<polygon points=\"324,78 320.18,87.31 314.26,80.53\" fill=\"#2563eb\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"43\" y=\"31\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">x</text><text x=\"43\" y=\"98\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">f(x)</text><text x=\"104\" y=\"31\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">−∞</text><text x=\"104\" y=\"124\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\">−∞</text><text x=\"184.67\" y=\"31\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">−1</text><text x=\"184.67\" y=\"70\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\">3</text><text x=\"265.33\" y=\"31\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">2</text><text x=\"265.33\" y=\"124\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\">−1</text><text x=\"346\" y=\"31\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">+∞</text><text x=\"346\" y=\"70\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\">+∞</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; 3]"
+        },
+        {
+          "id": "b",
+          "text": "]−1 ; 3["
+        },
+        {
+          "id": "c",
+          "text": "[−1 ; 2]"
+        },
+        {
+          "id": "d",
+          "text": "[−1 ; 3]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sur [−1 ; 2], f est continue et strictement décroissante, de f(−1) = 3 à f(2) = −1 : l'image est [f(2) ; f(−1)] = [−1 ; 3] ✓, avec des crochets fermés car les deux valeurs sont atteintes. L'intervalle [−1 ; 2] recopie les abscisses au lieu de lire les valeurs de f. L'intervalle ]−1 ; 3[ ouvre des crochets sur des valeurs atteintes. L'intervalle ]−∞ ; 3] est l'image de ]−∞ ; −1], la première partie croissante du tableau.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit g la fonction définie sur [0 ; +∞[ par g(x) = x² − 2, bijection de [0 ; +∞[ sur [−2 ; +∞[. Que vaut g⁻¹(7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "√5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "g⁻¹(7) est l'antécédent de 7 dans [0 ; +∞[ : x² − 2 = 7 ⟺ x² = 9 ⟺ x = 3, car x = −3 n'est pas dans [0 ; +∞[ ✓ (contrôle : g(3) = 9 − 2 = 7). La valeur −3 est l'autre solution de x² = 9, hors de l'intervalle de départ. La valeur 9 oublie d'extraire la racine. La valeur √5 résout x² = 7 − 2 : elle retranche 2 au lieu de l'ajouter.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = 5 − 3x sur ℝ, bijection de ℝ sur ℝ. Quelle est l'expression de f⁻¹(y) pour y réel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(y − 5)/3"
+        },
+        {
+          "id": "b",
+          "text": "5 − y/3"
+        },
+        {
+          "id": "c",
+          "text": "(5 − y)/3"
+        },
+        {
+          "id": "d",
+          "text": "1/(5 − 3y)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "y = 5 − 3x ⟺ 3x = 5 − y ⟺ x = (5 − y)/3, donc f⁻¹(y) = (5 − y)/3 ✓ (contrôle : f(1) = 2 et f⁻¹(2) = 3/3 = 1). L'expression (y − 5)/3 oppose le signe de 3x. L'expression 5 − y/3 ne divise que y par 3 et oublie de diviser le 5. L'expression 1/(5 − 3y) est 1/f(y) : elle confond f⁻¹ avec 1/f.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans un repère orthonormé, la courbe d'une bijection f passe par A(1 ; 5) et B(4 ; 4). Quels points appartiennent nécessairement à la courbe de f⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(5 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "(4 ; 4)"
+        },
+        {
+          "id": "c",
+          "text": "(1 ; 5)"
+        },
+        {
+          "id": "d",
+          "text": "(−5 ; −1)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Un point (a ; b) de la courbe de f donne le point (b ; a) de la courbe de f⁻¹ : A(1 ; 5) donne (5 ; 1) ✓. B(4 ; 4) est sur Δ : f(4) = 4 donne f⁻¹(4) = 4, donc B est son propre symétrique et appartient aux deux courbes ✓. Le point (1 ; 5) est A lui-même : rien ne force f⁻¹(1) à valoir 5. Le point (−5 ; −1) est le symétrique de A par rapport à la droite y = −x, pas par rapport à y = x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Résoudre dans ]0 ; +∞[ l'équation suivante :\nx^(3/2) = 8",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "16√2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par définition x^(3/2) = (x³)^(1/2) = √(x³). L'équation √(x³) = 8 équivaut à x³ = 64, donc x = 4 ✓ (contrôle : 4³ = 64 et √64 = 8). La valeur 2 oublie d'élever 8 au carré : elle résout x³ = 8. La valeur 12 multiplie 8 par 3/2. La valeur 16√2 applique l'exposant 3/2 à 8 au lieu de son inverse 2/3 : 8^(3/2) = 16√2.",
+      "difficulty": 2
+    }
+  ]
+}

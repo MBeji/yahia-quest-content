@@ -1,0 +1,165 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du miroir",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "La fonction t ↦ t⁵ + t est strictement croissante sur ℝ. Quelles sont les solutions réelles de l'équation suivante ?\nx⁵ + x = (2x − 3)⁵ + (2x − 3)",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 1"
+        },
+        {
+          "id": "b",
+          "text": "x = 3"
+        },
+        {
+          "id": "c",
+          "text": "x = 3/2"
+        },
+        {
+          "id": "d",
+          "text": "x = 1 ou x = 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La fonction f(t) = t⁵ + t est strictement croissante (f′(t) = 5t⁴ + 1 > 0), donc une valeur n'a qu'un antécédent : f(a) = f(b) ⟺ a = b. L'équation équivaut à x = 2x − 3, soit x = 3 ✓ (contrôle : 3⁵ + 3 = 246 des deux côtés, car 2 × 3 − 3 = 3). La valeur x = 1 vient de x = −(2x − 3), valable pour une fonction paire comme t ↦ t², pas pour f : f(1) = 2 et f(−1) = −2. L'ensemble {1 ; 3} ajoute cette fausse branche. La valeur 3/2 annule 2x − 3 : f(3/2) ≈ 9,09 n'est pas f(0) = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La fonction f est continue sur ]−1 ; 5] ; son tableau de variation est donné ci-dessous. Pour quels réels m l'équation f(x) = m admet-elle exactement deux solutions dans ]−1 ; 5] ?\n<svg viewBox=\"0 0 380 150\">\n<title>Tableau de variation de f sur ]−1 ; 5] : décroissante de +∞ à −2 sur ]−1 ; 1], croissante de −2 à 6 sur [1 ; 5]</title>\n<rect x=\"8\" y=\"8\" width=\"364\" height=\"134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"8\" y1=\"44\" x2=\"372\" y2=\"44\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"78\" y1=\"8\" x2=\"78\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"126\" y1=\"78\" x2=\"203\" y2=\"110\" stroke=\"#d97706\" stroke-width=\"2.4\"/>\n<polygon points=\"203,110 192.96,110.7 196.42,102.39\" fill=\"#d97706\"/>\n<line x1=\"247\" y1=\"110\" x2=\"324\" y2=\"78\" stroke=\"#2563eb\" stroke-width=\"2.4\"/>\n<polygon points=\"324,78 317.42,85.61 313.96,77.3\" fill=\"#2563eb\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"43\" y=\"31\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">x</text><text x=\"43\" y=\"98\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">f(x)</text><text x=\"104\" y=\"31\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">−1</text><text x=\"104\" y=\"70\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\">+∞</text><text x=\"225\" y=\"31\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">1</text><text x=\"225\" y=\"124\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\">−2</text><text x=\"346\" y=\"31\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">5</text><text x=\"346\" y=\"70\" text-anchor=\"middle\" fill=\"#d97706\" font-size=\"13\">6</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−2 ; 6]"
+        },
+        {
+          "id": "b",
+          "text": "]−2 ; 6["
+        },
+        {
+          "id": "c",
+          "text": "]−2 ; 6]"
+        },
+        {
+          "id": "d",
+          "text": "]−2 ; +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur ]−1 ; 1], f est continue et strictement décroissante de +∞ à f(1) = −2 : elle prend une fois toute valeur de [−2 ; +∞[. Sur [1 ; 5], elle est continue et strictement croissante de −2 à 6 : elle prend une fois toute valeur de [−2 ; 6]. Pour m dans ]−2 ; 6], les deux solutions sont distinctes, une de chaque côté de 1 ✓ (pour m = 6, on a x = 5 et une solution dans ]−1 ; 1[). L'intervalle [−2 ; 6] ajoute m = −2, qui n'a qu'une solution, x = 1. L'intervalle ]−2 ; 6[ perd m = 6, atteint en x = 5. L'intervalle ]−2 ; +∞[ compte aussi les m > 6, qui n'ont qu'une solution, sur la branche décroissante.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Soit f continue et strictement croissante sur [0 ; 4], dérivable sur [0 ; 4], avec f(0) = 1, f(4) = 9 et f′(2) = 0. Quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f⁻¹ est définie sur [1 ; 9]"
+        },
+        {
+          "id": "b",
+          "text": "f⁻¹ est continue sur [1 ; 9]"
+        },
+        {
+          "id": "c",
+          "text": "f⁻¹(9) = 4"
+        },
+        {
+          "id": "d",
+          "text": "f⁻¹ est dérivable en f(2)"
+        },
+        {
+          "id": "e",
+          "text": "f⁻¹ est strictement décroissante sur [1 ; 9]"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "f est continue et strictement croissante : c'est une bijection de [0 ; 4] sur [f(0) ; f(4)] = [1 ; 9], et f⁻¹, définie sur [1 ; 9], est continue et croissante. Comme f(4) = 9, f⁻¹(9) = 4. En revanche f′(2) = 0 empêche f⁻¹ d'être dérivable en f(2) : sa courbe y a une tangente verticale (par exemple f(x) = 5 + (x − 2)³/2 convient). Et f⁻¹ varie dans le même sens que f, donc elle n'est pas décroissante.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par :\nf(x) = 2x si x ≤ 0\nf(x) = 2x + 3 si x > 0\nQuelle affirmation est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est une bijection de ℝ sur ℝ, car elle est strictement croissante sur tout l'intervalle ℝ"
+        },
+        {
+          "id": "b",
+          "text": "f n'a pas de réciproque, car elle n'est pas continue en 0 et donc elle n'est pas bijective"
+        },
+        {
+          "id": "c",
+          "text": "f n'a pas de réciproque, car la valeur 3/2 n'a aucun antécédent et f n'est donc pas bijective"
+        },
+        {
+          "id": "d",
+          "text": "f est une bijection de ℝ sur f(ℝ) = ]−∞ ; 0] ∪ ]3 ; +∞[, et f(ℝ) n'est pas un intervalle"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Si x ≤ 0 < x′, alors f(x) = 2x ≤ 0 et f(x′) = 2x′ + 3 > 3 : f est strictement croissante sur ℝ, donc bijection de ℝ sur f(ℝ) = ]−∞ ; 0] ∪ ]3 ; +∞[ ✓. Cette réunion n'est pas un intervalle (3/2 n'est atteint par aucun x), ce qui est possible parce que f n'est pas continue en 0. La stricte monotonie suffit à l'existence de f⁻¹ ; la continuité sert à garantir que f(I) est un intervalle. Dire que f va de ℝ sur ℝ oublie les valeurs de ]0 ; 3], jamais atteintes. Les deux autres affirmations nient l'existence de f⁻¹ : ni la discontinuité, ni une valeur sans antécédent n'empêchent une bijection sur f(ℝ).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit a un réel strictement positif et f(x) = x² + ax sur [0 ; +∞[, bijection de [0 ; +∞[ sur [0 ; +∞[. On sait que (f⁻¹)′(12) = 1/8. Que vaut a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Posons x₀ = f⁻¹(12). Alors (f⁻¹)′(12) = 1/f′(x₀) = 1/8 donne f′(x₀) = 2x₀ + a = 8, soit a = 8 − 2x₀, et f(x₀) = 12 donne x₀² + (8 − 2x₀)x₀ = 12, soit x₀² − 8x₀ + 12 = 0, d'où x₀ = 2 ou x₀ = 6. Pour x₀ = 2, a = 4 > 0 ✓ ; pour x₀ = 6, a = −4 est exclu. Contrôle : f(x) = x² + 4x vérifie f(2) = 12 et f′(2) = 8. La valeur 8 oublie le terme 2x₀ de f′. Les valeurs 6 et 2 viennent de x₀ = 1 et x₀ = 3, qui vérifient f′(x₀) = 8 mais pas f(x₀) = 12 (on trouverait f(1) = 7 et f(3) = 15).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit p(x) = (x³ + x)/2, bijection de ℝ sur ℝ. Quelle est l'équation de la tangente à la courbe de p⁻¹ au point d'abscisse 15 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = (x − 15)/14 + 3"
+        },
+        {
+          "id": "b",
+          "text": "y = 14(x − 15) + 3"
+        },
+        {
+          "id": "c",
+          "text": "y = (x − 3)/14 + 15"
+        },
+        {
+          "id": "d",
+          "text": "y = (x − 15)/338 + 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a p(3) = (27 + 3)/2 = 15, donc p⁻¹(15) = 3. Puis p′(x) = (3x² + 1)/2 donne p′(3) = 14 et (p⁻¹)′(15) = 1/14. La tangente au point (15 ; 3) est y = (x − 15)/14 + 3 ✓. L'équation y = 14(x − 15) + 3 garde la pente 14 de p. L'équation y = (x − 3)/14 + 15 utilise les coordonnées (3 ; 15) du point de la courbe de p. L'équation y = (x − 15)/338 + 3 évalue p′ en 15 (p′(15) = 338) au lieu de l'évaluer en 3.",
+      "difficulty": 3
+    }
+  ]
+}

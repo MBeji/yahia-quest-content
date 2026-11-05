@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Fonction réciproque",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Pourquoi la fonction f : x ↦ x², définie sur ℝ, n'est-elle pas une bijection de ℝ sur f(ℝ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle n'est pas continue sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "Sa dérivée s'annule en 0"
+        },
+        {
+          "id": "c",
+          "text": "Les réels négatifs n'ont aucun antécédent"
+        },
+        {
+          "id": "d",
+          "text": "4 a deux antécédents : −2 et 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a f(−2) = f(2) = 4 : le réel 4 de f(ℝ) = [0 ; +∞[ a deux antécédents, donc f n'est pas une bijection de ℝ sur f(ℝ) ✓ (c'est pourquoi on restreint f à [0 ; +∞[). La fonction f est continue sur ℝ : la continuité n'est pas en cause. Une dérivée qui s'annule en 0 n'empêche pas une bijection : x ↦ x³ en est une, de dérivée nulle en 0. Que les réels négatifs n'aient aucun antécédent est vrai, mais cela ne gêne pas une bijection sur f(ℝ) : seuls comptent les réels de f(ℝ), qui doivent avoir un seul antécédent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La courbe de f, continue et strictement croissante sur [0 ; 3], est tracée ci-dessous. Que vaut f⁻¹(5) ?\n<svg viewBox=\"0 0 312 240\">\n<title>Courbe d'une fonction f, strictement croissante sur [0 ; 3], tracée sur un quadrillage</title>\n<line x1=\"127\" y1=\"221.2\" x2=\"127\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"197\" y1=\"221.2\" x2=\"197\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"267\" y1=\"221.2\" x2=\"267\" y2=\"14\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"36\" y1=\"148.4\" x2=\"295\" y2=\"148.4\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"36\" y1=\"92.4\" x2=\"295\" y2=\"92.4\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"36\" y1=\"36.4\" x2=\"295\" y2=\"36.4\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<line x1=\"36\" y1=\"204.4\" x2=\"295\" y2=\"204.4\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"295,204.4 287,208.4 287,200.4\" fill=\"#0f172a\"/>\n<line x1=\"57\" y1=\"221.2\" x2=\"57\" y2=\"14\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"57,14 61,22 53,22\" fill=\"#0f172a\"/>\n<line x1=\"127\" y1=\"201.4\" x2=\"127\" y2=\"207.4\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"197\" y1=\"201.4\" x2=\"197\" y2=\"207.4\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"267\" y1=\"201.4\" x2=\"267\" y2=\"207.4\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"54\" y1=\"148.4\" x2=\"60\" y2=\"148.4\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"54\" y1=\"92.4\" x2=\"60\" y2=\"92.4\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<line x1=\"54\" y1=\"36.4\" x2=\"60\" y2=\"36.4\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<polyline points=\"57,204.4 58.33,204.29 59.67,204.19 61,204.08 62.34,203.97 63.67,203.86 65.01,203.75 66.34,203.64 67.67,203.53 69.01,203.41 70.34,203.29 71.68,203.17 73.01,203.05 74.35,202.93 75.68,202.8 77.02,202.67 78.35,202.53 79.68,202.39 81.02,202.25 82.35,202.11 83.69,201.95 85.02,201.8 86.36,201.64 87.69,201.47 89.02,201.3 90.36,201.13 91.69,200.94 93.03,200.75 94.36,200.56 95.7,200.36 97.03,200.15 98.37,199.94 99.7,199.71 101.03,199.48 102.37,199.25 103.7,199 105.04,198.75 106.37,198.49 107.71,198.21 109.04,197.94 110.38,197.65 111.71,197.35 113.04,197.04 114.38,196.73 115.71,196.4 117.05,196.06 118.38,195.71 119.72,195.36 121.05,194.99 122.38,194.61 123.72,194.21 125.05,193.81 126.39,193.39 127.72,192.97 129.06,192.53 130.39,192.07 131.72,191.61 133.06,191.13 134.39,190.64 135.73,190.13 137.06,189.62 138.4,189.08 139.73,188.54 141.07,187.98 142.4,187.4 143.73,186.81 145.07,186.2 146.4,185.58 147.74,184.94 149.07,184.29 150.41,183.62 151.74,182.94 153.07,182.24 154.41,181.52 155.74,180.78 157.08,180.03 158.41,179.26 159.75,178.47 161.08,177.67 162.42,176.84 163.75,176 165.08,175.14 166.42,174.26 167.75,173.36 169.09,172.44 170.42,171.5 171.76,170.55 173.09,169.57 174.42,168.57 175.76,167.55 177.09,166.51 178.43,165.45 179.76,164.37 181.1,163.27 182.43,162.15 183.77,161 185.1,159.83 186.43,158.64 187.77,157.43 189.1,156.19 190.44,154.93 191.77,153.65 193.11,152.35 194.44,151.02 195.77,149.66 197.11,148.29 198.44,146.88 199.78,145.46 201.11,144.01 202.45,142.53 203.78,141.03 205.12,139.5 206.45,137.95 207.78,136.37 209.12,134.76 210.45,133.13 211.79,131.47 213.12,129.78 214.46,128.07 215.79,126.33 217.12,124.56 218.46,122.76 219.79,120.94 221.13,119.09 222.46,117.2 223.8,115.29 225.13,113.35 226.47,111.38 227.8,109.39 229.13,107.36 230.47,105.3 231.8,103.21 233.14,101.09 234.47,98.94 235.81,96.76 237.14,94.55 238.47,92.31 239.81,90.03 241.14,87.72 242.48,85.38 243.81,83.01 245.15,80.61 246.48,78.17 247.82,75.7 249.15,73.2 250.48,70.66 251.82,68.09 253.15,65.49 254.49,62.85 255.82,60.18 257.16,57.47 258.49,54.73 259.82,51.95 261.16,49.14 262.49,46.29 263.83,43.4 265.16,40.48 266.5,37.52 267,36.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linejoin=\"round\"/>\n<g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"127\" y=\"219.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">1</text><text x=\"197\" y=\"219.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">2</text><text x=\"267\" y=\"219.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\">3</text><text x=\"50\" y=\"151.9\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">5</text><text x=\"50\" y=\"95.9\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">10</text><text x=\"50\" y=\"39.9\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\">15</text><text x=\"293\" y=\"220.4\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"12\">x</text><text x=\"65\" y=\"22\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"12\">y</text><text x=\"235.5\" y=\"148.4\" text-anchor=\"start\" fill=\"#0f6e56\" font-size=\"13\">C_f</text></g>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f⁻¹(5) est l'antécédent de 5 : on part de l'ordonnée 5, on avance horizontalement jusqu'à la courbe, puis on descend lire l'abscisse : x = 2 ✓ (le point (2 ; 5) est sur la courbe). La valeur 5 est l'ordonnée de départ, pas le résultat. La valeur 3 est l'abscisse du point d'ordonnée 15. La valeur 1 est l'ordonnée du point d'abscisse 1, c'est-à-dire f(1), et non f⁻¹(5).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une fonction f est continue et strictement décroissante sur [−1 ; 3], avec f(−1) = 6 et f(3) = −2. Quelle affirmation est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f⁻¹ est définie sur [−2 ; 6], strictement décroissante, et f⁻¹(−2) = 3"
+        },
+        {
+          "id": "b",
+          "text": "f⁻¹ est définie sur [−1 ; 3], strictement décroissante, et f⁻¹(−2) = 3"
+        },
+        {
+          "id": "c",
+          "text": "f⁻¹ est définie sur [−2 ; 6], strictement croissante, et f⁻¹(−2) = 3"
+        },
+        {
+          "id": "d",
+          "text": "f⁻¹ est définie sur [−2 ; 6], strictement décroissante, et f⁻¹(−2) = −1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f est une bijection de [−1 ; 3] sur f([−1 ; 3]) = [f(3) ; f(−1)] = [−2 ; 6]. Sa réciproque est définie sur [−2 ; 6], varie dans le même sens que f (strictement décroissante) et f⁻¹(−2) = 3 puisque f(3) = −2 ✓. Placer l'ensemble de définition en [−1 ; 3] confond départ et arrivée : [−1 ; 3] est l'ensemble des valeurs de f⁻¹. Dire f⁻¹ strictement croissante oublie que f et f⁻¹ ont le même sens de variation. Écrire f⁻¹(−2) = −1 échange les bornes de l'intervalle : −2 est l'image de 3, non de −1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la valeur en x = 27 de la dérivée de la fonction x ↦ ∛x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/81"
+        },
+        {
+          "id": "b",
+          "text": "1/27"
+        },
+        {
+          "id": "c",
+          "text": "1/9"
+        },
+        {
+          "id": "d",
+          "text": "1/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La fonction x ↦ ∛x est la réciproque de f(x) = x³, dont la dérivée 3x² ne s'annule pas en 3 = ∛27 : sa dérivée en 27 vaut 1/f′(3) = 1/(3 × 3²) = 1/27 ✓ (c'est aussi ∛x/(3x) = 3/81). La valeur 1/81 est 1/(3x) pour x = 27 : elle oublie le numérateur ∛27 = 3 de la formule ∛x/(3x). La valeur 1/9 écrit 1/(3∛x) : elle prend ∛x au lieu de (∛x)² au dénominateur. La valeur 1/3 retient seulement l'inverse de l'indice 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans quel cas peut-on affirmer que les courbes de f et de f⁻¹ sont symétriques par rapport à la droite d'équation y = x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans tout repère, pour toute bijection f"
+        },
+        {
+          "id": "b",
+          "text": "Dans un repère orthogonal quelconque, dont les unités peuvent différer, pour toute bijection f"
+        },
+        {
+          "id": "c",
+          "text": "Dans un repère orthonormé, mais seulement si f est croissante"
+        },
+        {
+          "id": "d",
+          "text": "Dans un repère orthonormé, pour toute bijection f"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La symétrie par rapport à Δ : y = x suppose un repère orthonormé, c'est-à-dire des axes perpendiculaires et la même unité sur les deux axes : alors M(a ; b) et M′(b ; a) sont symétriques, que f soit croissante ou décroissante ✓. Dans un repère dont les unités diffèrent (par exemple 1 cm et 0,5 cm), la droite y = x n'est plus la bissectrice du dessin : A(1 ; 3) et A′(3 ; 1) donnent sur le papier le vecteur (2 ; −1), non perpendiculaire à la direction (1 ; 0,5) de la droite. Dans un repère quelconque, aux axes éventuellement obliques, c'est encore moins vrai. Enfin la croissance de f n'est pas nécessaire : f⁻¹ varie dans le même sens que f, et la symétrie a lieu dans les deux cas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour x ≥ 0, on pose f(x) = x^(2/3). La fonction f est continue et strictement croissante de [0 ; +∞[ sur [0 ; +∞[. Quelle est l'expression de f⁻¹(y) pour y ≥ 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y^(2/3)"
+        },
+        {
+          "id": "b",
+          "text": "y^(3/2)"
+        },
+        {
+          "id": "c",
+          "text": "y³"
+        },
+        {
+          "id": "d",
+          "text": "y³/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a y = x^(2/3) = (x²)^(1/3), donc y³ = x² d'après (ⁿ√t)ⁿ = t. Comme x ≥ 0, x = √(y³) = y^(3/2), donc f⁻¹(y) = y^(3/2) ✓ (contrôle : f(8) = (8²)^(1/3) = ∛64 = 4, et f⁻¹(4) = (4³)^(1/2) = √64 = 8). La réponse y^(2/3) est f elle-même : f n'est pas sa propre réciproque. La réponse y³ oublie la racine carrée : elle donne x². La réponse y³/2 divise par 2 au lieu d'extraire la racine carrée.",
+      "difficulty": 3
+    }
+  ]
+}

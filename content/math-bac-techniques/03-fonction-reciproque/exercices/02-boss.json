@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du miroir",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Quelle est l'image de l'intervalle ]−∞ ; 2] par la fonction f définie sur ℝ par f(x) = x² − 4x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−4 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; −4]"
+        },
+        {
+          "id": "c",
+          "text": "[0 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "[−4 ; +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a f(x) = (x − 2)² − 4 et f′(x) = 2(x − 2) ≤ 0 sur ]−∞ ; 2] : f y est continue et strictement décroissante, avec lim x→−∞ f(x) = +∞ et f(2) = −4. L'image est [f(2) ; lim f[ = [−4 ; +∞[ ✓, fermée en −4 car cette valeur est atteinte en x = 2. L'intervalle ]−4 ; +∞[ ouvre un crochet sur une valeur atteinte. L'intervalle ]−∞ ; −4] lit la fonction comme croissante. L'intervalle [0 ; +∞[ oublie le terme −4 de (x − 2)² − 4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = (3x + ⁴√x)/(2x + 1) pour x > 0. Quelle est la limite de f en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "2/3"
+        },
+        {
+          "id": "c",
+          "text": "3/2"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On divise numérateur et dénominateur par x : (3x + ⁴√x)/(2x + 1) = (3 + ⁴√x/x)/(2 + 1/x). Comme lim ⁴√x / x = 0 (la racine croît moins vite que x) et lim 1/x = 0, la limite est 3/2 ✓. La valeur +∞ croit que ⁴√x, qui tend vers +∞, l'emporte sur x : elle lui est négligeable. La valeur 2/3 inverse numérateur et dénominateur. La valeur 0 retient seulement que ⁴√x / x tend vers 0, et oublie les termes 3x et 2x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur I = ]−∞ ; 3] par g(x) = x² − 6x + 4. On admet que g est une bijection de I sur [−5 ; +∞[. Quelle est l'expression de g⁻¹(y) pour y ≥ −5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 + √(y + 5)"
+        },
+        {
+          "id": "b",
+          "text": "3 − √(y + 5)"
+        },
+        {
+          "id": "c",
+          "text": "3 − √(y − 5)"
+        },
+        {
+          "id": "d",
+          "text": "√(y + 5) − 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a g(x) = (x − 3)² − 5, donc y = g(x) équivaut à (x − 3)² = y + 5. Comme x ≤ 3, x − 3 est négatif : x − 3 = −√(y + 5) et g⁻¹(y) = 3 − √(y + 5) ✓ (contrôle : g(1) = −1 et g⁻¹(−1) = 3 − √4 = 1). L'expression 3 + √(y + 5) est la réciproque de la restriction à [3 ; +∞[ : elle donnerait 5 pour y = −1, hors de I. L'expression √(y + 5) − 3 oppose le signe de x − 3 : elle donne −1 pour y = −1. L'expression 3 − √(y − 5) retranche 5 au lieu de l'ajouter et n'est pas définie sur [−5 ; 5[.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x³ + 4x sur ℝ ; f est une bijection de ℝ sur ℝ. Que vaut (f⁻¹)′(16) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/772"
+        },
+        {
+          "id": "b",
+          "text": "1/16"
+        },
+        {
+          "id": "c",
+          "text": "1/12"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On cherche x₀ tel que f(x₀) = 16 : f(2) = 8 + 8 = 16, donc f⁻¹(16) = 2. Puis f′(x) = 3x² + 4 donne f′(2) = 16, et (f⁻¹)′(16) = 1/f′(2) = 1/16 ✓. La valeur 1/772 évalue f′ en 16 (f′(16) = 772) au lieu de l'évaluer en f⁻¹(16) = 2. La valeur 1/12 oublie le terme 4 de f′(2) et prend 3x² = 12. La valeur 16 est f′(2), sans passage à l'inverse.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x² − 4x + 7 sur I = [2 ; +∞[, bijection de I sur J = [3 ; +∞[. Sur quel ensemble f⁻¹ est-elle dérivable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[3 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "[2 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "]2 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]3 ; +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a f′(x) = 2x − 4, qui s'annule en x = 2 où f(2) = 3 : f⁻¹ n'est pas dérivable en y = 3 (sa courbe y a une tangente verticale), mais elle l'est en tout y de ]3 ; +∞[ car f′ ne s'annule pas sur ]2 ; +∞[ ✓. L'ensemble [3 ; +∞[ est le domaine de f⁻¹, avec le point 3. L'ensemble [2 ; +∞[ est l'intervalle de départ I de f : il décrit des valeurs de x, pas l'ensemble J où vit la variable de f⁻¹. L'ensemble ]2 ; +∞[ décrit des valeurs de x, alors que f⁻¹ est dérivable pour la variable y, qui vit dans J.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h la restriction de tan à ]−π/2 ; π/2[ : h est une bijection de cet intervalle sur ℝ, et h⁻¹ est sa réciproque. Soit k(x) = h⁻¹(2x) pour x réel. Que vaut k′(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/5"
+        },
+        {
+          "id": "b",
+          "text": "1/5"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "2/(1 + tan² 2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "k est la composée de u : x ↦ 2x suivie de h⁻¹, donc k′(x) = u′(x) × (h⁻¹)′(u(x)) = 2/(1 + (2x)²), et k′(1) = 2/(1 + 2²) = 2/5 ✓ (avec (h⁻¹)′(t) = 1/h′(h⁻¹(t)) = 1/(1 + t²), car tan(h⁻¹(t)) = t). La valeur 1/5 est (h⁻¹)′(2) : elle oublie le facteur u′(1) = 2. La valeur 1/2 est (h⁻¹)′(1) : elle évalue en x = 1 au lieu de u(1) = 2 et oublie le facteur 2. L'expression 2/(1 + tan² 2) évalue h′ en 2 au lieu de l'évaluer en h⁻¹(2) : tan 2 n'est pas 2.",
+      "difficulty": 3
+    }
+  ]
+}

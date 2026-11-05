@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des symétries",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Quel est l'ensemble de définition de f(x) = x/(x² − 1), et que peut-on dire de sa parité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℝ ∖ {1}, f est impaire"
+        },
+        {
+          "id": "b",
+          "text": "ℝ ∖ {−1 ; 1}, f est paire"
+        },
+        {
+          "id": "c",
+          "text": "ℝ ∖ {1}, f n'est ni paire ni impaire"
+        },
+        {
+          "id": "d",
+          "text": "ℝ ∖ {−1 ; 1}, f est impaire"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "x² − 1 = (x − 1)(x + 1) s'annule en −1 et en 1 : D = ℝ ∖ {−1 ; 1}, symétrique par rapport à 0. Puis f(−x) = −x/((−x)² − 1) = −x/(x² − 1) = −f(x) pour tout x de D : f est impaire ✓. Oublier −1 donne ℝ ∖ {1}, non symétrique : on conclurait à tort « ni paire ni impaire », alors que le vrai domaine est symétrique et f(−x) = −f(x) y est vérifiée. Le numérateur x change de signe, donc f n'est pas paire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle droite est un axe de symétrie de la courbe de g(x) = (x − 1)²(x − 5)² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 1"
+        },
+        {
+          "id": "b",
+          "text": "x = 3"
+        },
+        {
+          "id": "c",
+          "text": "x = 5"
+        },
+        {
+          "id": "d",
+          "text": "x = 6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le symétrique de x par rapport à 3 est 6 − x, et g(6 − x) = (5 − x)²(1 − x)² = (x − 5)²(x − 1)² = g(x) pour tout x : x = 3 est un axe ✓ (3 est le milieu des racines 1 et 5). Les autres droites échouent au test en x = 0, où g(0) = 25 : pour x = 1, le symétrique de 0 est 2 et g(2) = 9 ; pour x = 5, c'est 10 et g(10) = 2025 ; pour x = 6, c'est 12 et g(12) = 5929. La droite x = 6 confond le milieu 3 avec la somme 1 + 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le centre de symétrie de la courbe de f(x) = x³ + 3x² − 9x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−3 ; 27)"
+        },
+        {
+          "id": "b",
+          "text": "(0 ; 0)"
+        },
+        {
+          "id": "c",
+          "text": "(−1 ; 11)"
+        },
+        {
+          "id": "d",
+          "text": "(1 ; −5)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On cherche W(a ; b) tel que F(X) = f(a + X) − b soit impaire. Pour a = −1 et b = f(−1) = −1 + 3 + 9 = 11, F(X) = (X − 1)³ + 3(X − 1)² − 9(X − 1) − 11 = X³ − 12X, impaire ✓ : W(−1 ; 11) est le centre. Les points (−3 ; 27) et (1 ; −5) sont les extrema locaux de f (f′(x) = 3(x + 3)(x − 1)), pas un centre. Le point (0 ; 0) n'est pas un centre : f n'est pas impaire, à cause du terme 3x².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe de f(x) = √(x² − 8x + 3) admet au voisinage de +∞ une asymptote oblique d'équation y = x + b. Que vaut b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−8"
+        },
+        {
+          "id": "b",
+          "text": "−4"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x > 0, f(x)/x = √(1 − 8/x + 3/x²) tend vers 1 : a = 1. Puis f(x) − x = (x² − 8x + 3 − x²)/(f(x) + x) = (−8x + 3)/(√(x² − 8x + 3) + x) = (−8 + 3/x)/(√(1 − 8/x + 3/x²) + 1) tend vers −8/2 = −4 : b = −4 ✓. La valeur −8 oublie que le dénominateur tend vers 2. La valeur 0 ignore le terme −8x sous la racine. La valeur 4 se trompe de signe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = cos x − (1/2)cos 2x, fonction paire et 2π-périodique. Quel est son minimum sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3/2"
+        },
+        {
+          "id": "b",
+          "text": "−1/2"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "3/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On étudie f sur [0 ; π]. f′(x) = −sin x + sin 2x = sin x (2cos x − 1), positif sur ]0 ; π/3[ et négatif sur ]π/3 ; π[. Donc f croît de f(0) = 1 − 1/2 = 1/2 à f(π/3) = 1/2 + 1/4 = 3/4, puis décroît jusqu'à f(π) = −1 − 1/2 = −3/2. Par parité et périodicité, le minimum sur ℝ est −3/2 ✓. La valeur 3/4 est le maximum, 1/2 est f(0), et −1/2 vient d'une erreur de signe dans f(π) = −1 + 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un enclos rectangulaire de 72 m² est adossé à un mur et clôturé sur les trois autres côtés. On note x (en m) la longueur du côté parallèle au mur, avec 18 ≤ x ≤ 24. La longueur de clôture est L(x) = x + 144/x. Quelle est la longueur minimale de clôture, en mètres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "22"
+        },
+        {
+          "id": "b",
+          "text": "24"
+        },
+        {
+          "id": "c",
+          "text": "26"
+        },
+        {
+          "id": "d",
+          "text": "30"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L′(x) = 1 − 144/x² = (x − 12)(x + 12)/x² est positive sur [18 ; 24] : L est croissante et son minimum est L(18) = 18 + 8 = 26 ✓. Le point critique x = 12 est hors de l'intervalle : L(12) = 24 n'est pas atteint. La valeur 30 est L(24), le maximum. La valeur 22 vient d'un modèle faux, x + y avec y = 4, qui oublie qu'il y a deux côtés de longueur y.",
+      "difficulty": 3
+    }
+  ]
+}

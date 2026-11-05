@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des limites",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Soit h définie sur ℝ par :\nh(x) = (x² − 4)/(x − 2) si x < 2\nh(2) = a\nh(x) = bx − 2 si x > 2\nOn suppose h continue en 2. Que vaut a + b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À gauche, h(x) = x + 2 pour x < 2, donc la limite à gauche est 4, et il faut a = 4. À droite, lim x→2⁺ (bx − 2) = 2b − 2 doit valoir 4, donc b = 3 ✓. Ainsi a + b = 7. Le total 1 vient de a = 0 (numérateur seul), 5 d'une erreur de signe (2b = 4 − 2 donne b = 1), 6 d'un oubli du − 2 (2b = 4 donne b = 2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout x > 0, on a f(x) ≥ x − 2 sin x. Que peut-on affirmer sur f en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f n'a pas de limite, car sin x oscille"
+        },
+        {
+          "id": "b",
+          "text": "f tend vers −∞ en +∞"
+        },
+        {
+          "id": "c",
+          "text": "f tend vers +∞ en +∞"
+        },
+        {
+          "id": "d",
+          "text": "f tend vers −2 en +∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme sin x ≤ 1, on a −2 sin x ≥ −2, donc f(x) ≥ x − 2 pour x > 0 ; or lim x→+∞ (x − 2) = +∞, donc lim x→+∞ f(x) = +∞ par comparaison ✓. Les oscillations de sin x sont absorbées par le terme x, qui domine ; une minoration qui tend vers +∞ interdit −∞ comme −2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "g est décroissante sur ]1 ; +∞[ et g(x) > 2 pour tout x de cet intervalle. Quelle est la seule conclusion sûre sur g en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g tend vers 2 en +∞"
+        },
+        {
+          "id": "b",
+          "text": "g admet une limite finie ℓ en +∞, avec ℓ ≥ 2"
+        },
+        {
+          "id": "c",
+          "text": "g admet une limite finie ℓ en +∞, avec ℓ > 2"
+        },
+        {
+          "id": "d",
+          "text": "g tend vers −∞ en +∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Décroissante et minorée par 2 sur ]1 ; +∞[ : g admet une limite finie ℓ en +∞. En passant à la limite, l'inégalité stricte g(x) > 2 devient large : ℓ ≥ 2 ✓. On ne peut pas assurer ℓ = 2 (g(x) = 3 + 1/x a pour limite 3) ni ℓ > 2 (g(x) = 2 + 1/x a pour limite 2), et −∞ contredit la minoration.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Calculer lim x→+∞ x²(1 − cos(2/x)).",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec X = 2/x, qui tend vers 0⁺, on a x² = 4/X², donc x²(1 − cos(2/x)) = 4 × (1 − cos X)/X², qui tend vers 4 × 1/2 = 2 ✓. La valeur 1/2 oublie le facteur 4 ; 4 oublie le 1/2 de la limite usuelle ; +∞ lit x² → +∞ sans voir que 1 − cos(2/x) tend vers 0 (forme indéterminée ∞ × 0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x² − 6x + 5, continue sur [0 ; 4]. Quelle est l'image f([0 ; 4]) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−3 ; 5]"
+        },
+        {
+          "id": "b",
+          "text": "[−4 ; −3]"
+        },
+        {
+          "id": "c",
+          "text": "[−4 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "[−4 ; 5]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f est continue, donc f([0 ; 4]) = [m ; M]. f(x) = (x − 3)² − 4 ≥ −4, avec égalité en x = 3 qui est dans [0 ; 4] : m = −4. f(x) − 5 = x(x − 6) ≤ 0 sur [0 ; 4], avec égalité en 0 : M = 5. Donc [−4 ; 5] ✓. Le piège : [f(4) ; f(0)] = [−3 ; 5] ignore le minimum intérieur ; [−4 ; +∞[ est l'image de ℝ tout entier.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On cherche la solution α de f(x) = 0 dans [1 ; 2], où f(x) = x³ + 3x − 5 est continue et strictement croissante, avec f(1) = −1 et f(2) = 9. On donne f(1,5) = 2,875 et f(1,25) ≈ 0,703. Quel encadrement obtient-on après ces deux étapes de dichotomie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 < α < 1,25"
+        },
+        {
+          "id": "b",
+          "text": "1,25 < α < 1,5"
+        },
+        {
+          "id": "c",
+          "text": "1,5 < α < 2"
+        },
+        {
+          "id": "d",
+          "text": "1,25 < α < 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(1) < 0 < f(1,5) : α est dans ]1 ; 1,5[. Puis f(1,25) ≈ 0,703 > 0 et f(1) < 0 : le signe change entre 1 et 1,25, donc 1 < α < 1,25 ✓. Lire « f(c) > 0 » comme « α à droite de c » donne les mauvais intervalles : ici f est croissante, un signe positif place α à gauche de c.",
+      "difficulty": 3
+    }
+  ]
+}

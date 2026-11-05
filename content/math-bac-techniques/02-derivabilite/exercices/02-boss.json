@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des tangentes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Quelle est la dérivée de f(x) = (x − 1)√(x² + 3) sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x/√(x² + 3)"
+        },
+        {
+          "id": "b",
+          "text": "(2x² + x + 5)/(2√(x² + 3))"
+        },
+        {
+          "id": "c",
+          "text": "(3x² − 2x + 3)/√(x² + 3)"
+        },
+        {
+          "id": "d",
+          "text": "(2x² − x + 3)/√(x² + 3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "x² + 3 > 0 sur ℝ, donc √(x² + 3) est dérivable sur ℝ, de dérivée 2x/(2√(x² + 3)) = x/√(x² + 3). Par la formule du produit : f′(x) = 1 × √(x² + 3) + (x − 1) × x/√(x² + 3) = (x² + 3 + x² − x)/√(x² + 3) = (2x² − x + 3)/√(x² + 3) ✓ (contrôle : f′(1) = √4 = 2 et (2 − 1 + 3)/2 = 2). La réponse « x/√(x² + 3) » multiplie les dérivées des facteurs, (uv)′ = u′v′. La réponse « (3x² − 2x + 3)/√(x² + 3) » oublie le 2 de 2√u. La réponse « (2x² + x + 5)/(2√(x² + 3)) » oublie de multiplier par u′ = 2x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x²/(x + 1) sur ]−1 ; +∞[. Quelle est l'équation de la tangente à sa courbe au point d'abscisse 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = (3/4)x − 1/4"
+        },
+        {
+          "id": "b",
+          "text": "y = (3/4)x + 1/2"
+        },
+        {
+          "id": "c",
+          "text": "y = (5/4)x − 3/4"
+        },
+        {
+          "id": "d",
+          "text": "y = 2x − 3/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(1) = 1/2 et f′(x) = (2x(x + 1) − x²)/(x + 1)² = (x² + 2x)/(x + 1)², donc f′(1) = 3/4. La tangente est y = (3/4)(x − 1) + 1/2 = (3/4)x − 1/4 ✓. L'équation « y = (3/4)x + 1/2 » oublie de décaler x de 1. L'équation « y = (5/4)x − 3/4 » additionne les deux termes du numérateur (u′v + v′u au lieu de u′v − v′u), ce qui donne la pente 5/4. L'équation « y = 2x − 3/2 » utilise le rapport u′/v′ = 2x à la place de la formule du quotient.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f dérivable sur [0 ; 2], telle que 1 ≤ f′(x) ≤ 3 pour tout x de [0 ; 2], et f(0) = 2. Quel encadrement de f(2) l'inégalité des accroissements finis donne-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 ≤ f(2) ≤ 3"
+        },
+        {
+          "id": "b",
+          "text": "2 ≤ f(2) ≤ 6"
+        },
+        {
+          "id": "c",
+          "text": "3 ≤ f(2) ≤ 5"
+        },
+        {
+          "id": "d",
+          "text": "4 ≤ f(2) ≤ 8"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'inégalité donne m(b − a) ≤ f(b) − f(a) ≤ M(b − a) avec m = 1, M = 3, a = 0 et b = 2 : 2 ≤ f(2) − 2 ≤ 6, donc 4 ≤ f(2) ≤ 8 ✓. L'encadrement « 2 ≤ f(2) ≤ 6 » encadre l'accroissement f(2) − f(0) et non f(2). L'encadrement « 3 ≤ f(2) ≤ 5 » oublie de multiplier par la longueur b − a = 2. L'encadrement « 1 ≤ f(2) ≤ 3 » recopie les bornes de f′.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par :\nf(x) = ax² + b si x ≤ 1\nf(x) = 1/x si x > 1\nPour quels réels a et b la fonction f est-elle dérivable en 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = −1 et b = 2"
+        },
+        {
+          "id": "b",
+          "text": "a = −1/2 et b = 1/2"
+        },
+        {
+          "id": "c",
+          "text": "a = −1/2 et b = 3/2"
+        },
+        {
+          "id": "d",
+          "text": "a = 1/2 et b = 1/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il faut d'abord la continuité en 1 : a + b = 1 (limite de 1/x en 1). Il faut ensuite f′g(1) = f′d(1) : 2a = −1 (dérivée de 1/x en 1), donc a = −1/2 et b = 1 − a = 3/2 ✓. Le couple (−1 ; 2) oublie le facteur 2 de (ax²)′ = 2ax. Le couple (1/2 ; 1/2) se trompe sur le signe de la dérivée de 1/x. Le couple (−1/2 ; 1/2) calcule b par b = 1 + a au lieu de b = 1 − a : il ne vérifie pas la continuité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "f est dérivable sur ℝ et sa dérivée est :\nf′(x) = x²(x − 2)(x + 1)\nQue peut-on dire des extrema locaux de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "deux : un minimum local en −1 et un maximum local en 2"
+        },
+        {
+          "id": "b",
+          "text": "deux : un maximum local en −1 et un minimum local en 2"
+        },
+        {
+          "id": "c",
+          "text": "trois : des extrema locaux en −1, en 0 et en 2"
+        },
+        {
+          "id": "d",
+          "text": "un seul : un minimum local en 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le facteur x² est positif sauf en 0, donc f′ a le signe de (x − 2)(x + 1) : + sur ]−∞ ; −1[, − sur ]−1 ; 2[ (sauf en 0 où f′ s'annule sans changer de signe), + sur ]2 ; +∞[. f′ change de signe en −1 (de + à −, maximum local) et en 2 (de − à +, minimum local) ✓. En 0, f′ s'annule sans changer de signe : ni maximum ni minimum. Compter 0 comme extremum confond « f′ s'annule » et « f′ change de signe ». Inverser les signes échange maximum et minimum. Ignorer le maximum en −1 oublie le premier changement de signe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une boîte sans couvercle, à base carrée de côté x dm, doit avoir un volume de 32 dm³. Sa surface totale (base et quatre faces latérales) est S(x) = x² + 128/x, pour x > 0. Pour quelle valeur de x la surface est-elle minimale, et que vaut alors S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 2 dm et S = 48 dm²"
+        },
+        {
+          "id": "b",
+          "text": "x = 4 dm et S = 16 dm²"
+        },
+        {
+          "id": "c",
+          "text": "x = 4 dm et S = 48 dm²"
+        },
+        {
+          "id": "d",
+          "text": "x = 8 dm et S = 80 dm²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "S′(x) = 2x − 128/x² = (2x³ − 128)/x² = 2(x³ − 64)/x², qui s'annule en x = 4 en passant de − à + sur ]0 ; +∞[ : minimum en x = 4, et S(4) = 16 + 32 = 48 ✓ (hauteur 32/16 = 2 dm). Le couple (4 ; 16) oublie le terme 128/x dans S(4). Le couple (8 ; 80) vient de (128/x)′ = −128/x au lieu de −128/x² : 2x² = 128 donne x = 8. Le couple (2 ; 48) répond avec la hauteur de la boîte et non avec le côté x demandé.",
+      "difficulty": 3
+    }
+  ]
+}

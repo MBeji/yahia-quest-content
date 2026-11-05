@@ -1,0 +1,139 @@
+{
+  "title": "⭐ Exercice : Premières armes — limite et continuité",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Calculer lim x→0 sin(5x)/x.",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "On utilise la limite usuelle lim x→0 sin(ax)/x = a avec a = 5 : la limite vaut 5 ✓. Si l'on écrivait sin(5x)/x = 5 × sin(5x)/(5x), on retrouverait 5 × 1 = 5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tout x ≠ 0, on a |f(x) − 4| ≤ |x|. Que vaut lim x→0 f(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "Aucune limite"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a 4 − |x| ≤ f(x) ≤ 4 + |x| et |x| tend vers 0 : f est coincée entre deux fonctions de limite 4, donc lim x→0 f(x) = 4 ✓. La valeur 0 est la limite de la borne |x|, pas celle de f.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La fonction g(x) = 3 − 1/x est définie sur ]0 ; +∞[. Quelle affirmation est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g est croissante et majorée par 3"
+        },
+        {
+          "id": "b",
+          "text": "g est décroissante et majorée par 3"
+        },
+        {
+          "id": "c",
+          "text": "g est croissante et minorée par 3"
+        },
+        {
+          "id": "d",
+          "text": "g est bornée sur ]0 ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si 0 < a < b, alors 1/a > 1/b, donc g(a) = 3 − 1/a < 3 − 1/b = g(b) : g est croissante ✓. Et g(x) < 3, car on retire 1/x > 0 : elle est majorée par 3. Elle n'est pas minorée (g(x) tend vers −∞ quand x tend vers 0⁺), donc pas bornée, et elle n'est pas minorée par 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer lim x→−1 √(4x² + 5).",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le polynôme 4x² + 5 tend vers 4 × 1 + 5 = 9 en −1, et la racine est continue en 9 : la limite vaut √9 = 3 ✓. La valeur 9 oublie la racine ; 1 vient de 4x + 5, où le carré a été oublié ; −3 donne un signe négatif à une racine, qui est toujours positive.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "f est continue sur [0 ; 5], ne s'annule en aucun point de [0 ; 5], et f(0) = −2. Que peut-on dire de f(5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(5) = −2"
+        },
+        {
+          "id": "b",
+          "text": "f(5) > 0"
+        },
+        {
+          "id": "c",
+          "text": "On ne peut rien dire du signe de f(5)"
+        },
+        {
+          "id": "d",
+          "text": "f(5) < 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une fonction continue qui ne s'annule pas sur un intervalle y garde un signe constant : comme f(0) = −2 < 0, on a f(x) < 0 pour tout x de [0 ; 5], donc f(5) < 0 ✓. Un changement de signe imposerait un zéro, par le théorème des valeurs intermédiaires ; et f(5) = −2 suppose à tort f constante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'asymptote verticale de la courbe de f(x) = 5/(2x − 6) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −3"
+        },
+        {
+          "id": "b",
+          "text": "x = 3"
+        },
+        {
+          "id": "c",
+          "text": "x = 6"
+        },
+        {
+          "id": "d",
+          "text": "y = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le dénominateur 2x − 6 s'annule en x = 3, et 5/(2x − 6) tend vers +∞ ou −∞ près de 3 : la droite x = 3 est asymptote verticale ✓. La droite y = 0 est l'asymptote horizontale (la limite en ±∞ est 0) ; x = 6 oublie de diviser par 2, et x = −3 inverse le signe.",
+      "difficulty": 2
+    }
+  ]
+}

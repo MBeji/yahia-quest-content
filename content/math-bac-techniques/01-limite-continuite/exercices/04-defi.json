@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du technicien",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Soit a un réel. La fonction f est définie sur ℝ par f(x) = (1 − cos(ax))/x² si x ≠ 0, et f(0) = 8. Pour quelles valeurs de a la fonction f est-elle continue en 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 4 uniquement"
+        },
+        {
+          "id": "b",
+          "text": "a = 4 ou a = −4"
+        },
+        {
+          "id": "c",
+          "text": "a = 8"
+        },
+        {
+          "id": "d",
+          "text": "a = 16"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec X = ax, (1 − cos(ax))/x² = a² × (1 − cos X)/X², qui tend vers a² × 1/2 = a²/2. La continuité en 0 exige a²/2 = 8, donc a² = 16, soit a = 4 ou a = −4 ✓. Répondre a = 4 seulement oublie la solution négative ; a = 8 suppose que la limite vaut a ; a = 16 oublie le carré (a/2 = 8).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout x > 0, on a 2x − 3 ≤ f(x) ≤ 2x + 3. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite y = 2x est une asymptote oblique à la courbe de f au voisinage de +∞"
+        },
+        {
+          "id": "b",
+          "text": "lim x→+∞ f(x)/x = 2, mais la courbe a une branche parabolique de direction y = 2x"
+        },
+        {
+          "id": "c",
+          "text": "lim x→+∞ f(x)/x = 2, mais l'existence d'une asymptote oblique n'est pas assurée"
+        },
+        {
+          "id": "d",
+          "text": "lim x→+∞ f(x) = 2, car f(x) est comprise entre 2x − 3 et 2x + 3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En divisant par x > 0, on obtient 2 − 3/x ≤ f(x)/x ≤ 2 + 3/x : les deux bornes tendent vers 2, donc lim f(x)/x = 2 ✓. Mais f(x) − 2x reste seulement entre −3 et 3 : cela ne suffit pas pour qu'il tende vers 0 (f(x) = 2x + 3 sin x vérifie l'encadrement et n'a pas d'asymptote). Une branche parabolique de direction y = 2x exigerait f(x) − 2x → ±∞, impossible puisque |f(x) − 2x| ≤ 3, et lim f(x) = 2 contredit f(x) ≥ 2x − 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour f(x) = √(4x − x²), un élève écrit : « f(0) = 0 et f(4) = 0, donc f([0 ; 4]) = [f(0) ; f(4)] = {0}. » Quelle est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il oublie que le minimum et le maximum de f peuvent être atteints à l'intérieur de [0 ; 4]"
+        },
+        {
+          "id": "b",
+          "text": "Il oublie que f n'est pas continue sur [0 ; 4], intervalle où elle n'est pas définie en entier"
+        },
+        {
+          "id": "c",
+          "text": "Il oublie que l'image d'un intervalle fermé par une fonction continue n'est jamais un point"
+        },
+        {
+          "id": "d",
+          "text": "Il oublie que la racine carrée n'est pas continue en 0, point où la fonction f s'annule"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "u(x) = 4x − x² = 4 − (x − 2)² vaut 4 en x = 2, donc f(2) = √4 = 2 : le maximum de f est 2, atteint à l'intérieur de [0 ; 4], et f([0 ; 4]) = [0 ; 2]. L'égalité f([a ; b]) = [f(a) ; f(b)] est garantie quand f est croissante, pas en général. f est pourtant continue sur [0 ; 4] (composée de u, continue et positive, avec la racine, continue sur [0 ; +∞[), et une fonction constante a un point pour image : ces deux objections sont fausses.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour quels entiers m l'équation x³ + x = m admet-elle une solution dans [1 ; 2] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tout entier m tel que 1 ≤ m ≤ 2"
+        },
+        {
+          "id": "b",
+          "text": "Tout entier m tel que 2 ≤ m ≤ 8"
+        },
+        {
+          "id": "c",
+          "text": "Tout entier m tel que 2 < m < 10"
+        },
+        {
+          "id": "d",
+          "text": "Tout entier m tel que 2 ≤ m ≤ 10"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(x) = x³ + x est continue et strictement croissante, donc f([1 ; 2]) = [f(1) ; f(2)] = [2 ; 10] : l'équation f(x) = m a une solution dans [1 ; 2] exactement quand 2 ≤ m ≤ 10 ✓, extrémités comprises car [1 ; 2] est fermé. Le choix 2 < m < 10 exclut les extrémités ; 2 ≤ m ≤ 8 oublie le terme + x dans f(2) ; 1 ≤ m ≤ 2 confond les valeurs de x et celles de m.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelles sont les asymptotes obliques de la courbe de k(x) = √(x² − 4x + 5), en +∞ et en −∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = x − 2 en +∞ et en −∞"
+        },
+        {
+          "id": "b",
+          "text": "y = x − 2 en +∞ et y = −x + 2 en −∞"
+        },
+        {
+          "id": "c",
+          "text": "y = x − 4 en +∞ et y = −x + 4 en −∞"
+        },
+        {
+          "id": "d",
+          "text": "y = x + 2 en +∞ et y = −x − 2 en −∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En +∞ : k(x)/x tend vers 1 et k(x) − x = (−4x + 5)/(k(x) + x) tend vers −4/2 = −2, d'où y = x − 2. En −∞ : k(x)/x tend vers −1 (car √(x²) = −x) et k(x) + x = (−4x + 5)/(k(x) − x) tend vers −4x/(−2x) = 2, d'où y = −x + 2 ✓. Reprendre y = x − 2 en −∞ est le piège ; y = x − 4 oublie de diviser par 2 ; les signes des ordonnées à l'origine sont inversés dans la dernière.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = (2x² + x − 5)/(x − 1) pour x ≠ 1. Sa courbe admet une asymptote oblique en ±∞. Quelle est sa position par rapport à cette asymptote ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En dessous pour x > 1, au-dessus pour x < 1"
+        },
+        {
+          "id": "b",
+          "text": "Toujours au-dessus de l'asymptote"
+        },
+        {
+          "id": "c",
+          "text": "Au-dessus pour x > 1, en dessous pour x < 1"
+        },
+        {
+          "id": "d",
+          "text": "Elle coupe l'asymptote en un point"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "2x² + x − 5 = (x − 1)(2x + 3) − 2, donc g(x) = 2x + 3 − 2/(x − 1) et l'asymptote oblique est y = 2x + 3. La différence g(x) − (2x + 3) = −2/(x − 1) a le signe contraire de x − 1 : négative pour x > 1, positive pour x < 1, donc la courbe est en dessous pour x > 1 et au-dessus pour x < 1 ✓. Elle ne s'annule jamais : la courbe ne coupe pas l'asymptote ; « toujours au-dessus » ignore le changement de signe en 1.",
+      "difficulty": 3
+    }
+  ]
+}
