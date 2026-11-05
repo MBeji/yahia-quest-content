@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers termes, premières limites",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un algorithme part de u = 5 et répète trois fois l'instruction u ← 2 × u − 7. Quelle est la valeur finale de u ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "−9"
+        },
+        {
+          "id": "d",
+          "text": "−25"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les trois passages donnent 2 × 5 − 7 = 3, puis 2 × 3 − 7 = −1, puis 2 × (−1) − 7 = −9 ✓. La valeur 3 s'arrête après un seul passage. La valeur −1 s'arrête après deux passages. La valeur −25 correspond à un quatrième passage : 2 × (−9) − 7.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour n ∈ ℕ, on pose uₙ = n + 1 et vₙ = n² − 9. Pour quelle valeur de n le quotient u/v n'est-il pas défini ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 3"
+        },
+        {
+          "id": "b",
+          "text": "Pour aucun n ∈ ℕ"
+        },
+        {
+          "id": "c",
+          "text": "n = 1"
+        },
+        {
+          "id": "d",
+          "text": "n = 9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le quotient u/v n'est défini que si vₙ ≠ 0. Or n² − 9 = 0 ⟺ n² = 9 ⟺ n = 3 ou n = −3, et seul n = 3 appartient à ℕ ✓ : il existe bien une valeur interdite. Écarter les deux racines parce que −3 n'est pas dans ℕ oublie que 3, lui, y est. Pour n = 1, v₁ = −8 et pour n = 9, v₉ = 72 : ces quotients existent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "uₙ = 2n² − 5n pour tout n ∈ ℕ. Que vaut uₙ₊₁ − uₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4n + 2"
+        },
+        {
+          "id": "b",
+          "text": "−3"
+        },
+        {
+          "id": "c",
+          "text": "4n − 5"
+        },
+        {
+          "id": "d",
+          "text": "4n − 3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "uₙ₊₁ − uₙ = 2(n + 1)² − 5(n + 1) − 2n² + 5n = 2n² + 4n + 2 − 5n − 5 − 2n² + 5n = 4n − 3 ✓. Contrôle : u₁ = −3 et u₂ = −2, donc u₂ − u₁ = 1 = 4 × 1 − 3. Le résultat 4n + 2 oublie la partie −5n. Le résultat 4n − 5 oublie le terme 2 de 2(n + 1)². Le résultat −3 développe (n + 1)² en n² + 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "uₙ = 5 − 4/(n + 2) pour tout n ∈ ℕ. Lequel de ces réels est un minorant de (uₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,5"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour tout n, n + 2 ≥ 2, donc 4/(n + 2) ≤ 2 et uₙ ≥ 3 ✓ : 3 est un minorant, atteint pour n = 0. Les réels 3,5 et 4 ne conviennent pas car u₀ = 3 est plus petit. Le réel 5 est un majorant de la suite (uₙ < 5), pas un minorant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la limite de uₙ = (4n² + 1)/(2n² − n + 3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On met n² en facteur : uₙ = (4 + 1/n²)/(2 − 1/n + 3/n²). Le numérateur tend vers 4 et le dénominateur vers 2, donc lim uₙ = 4/2 = 2 ✓. La valeur 4 est le coefficient du numérateur seul. La valeur 0 suppose que le dénominateur l'emporte, la valeur +∞ que le numérateur l'emporte, alors que les deux ont le même degré.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La suite uₙ = 5 − (1/3)ⁿ est-elle convergente, et si oui vers quoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle converge vers 4"
+        },
+        {
+          "id": "b",
+          "text": "Elle converge vers 0"
+        },
+        {
+          "id": "c",
+          "text": "Elle converge vers 5"
+        },
+        {
+          "id": "d",
+          "text": "Elle tend vers −∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme −1 < 1/3 < 1, (1/3)ⁿ tend vers 0, donc uₙ tend vers 5 − 0 = 5 ✓. La valeur 4 est le premier terme u₀ = 5 − 1. La valeur 0 est la limite de la partie géométrique seule. La valeur −∞ suppose que le terme soustrait grandit, alors qu'il tend vers 0.",
+      "difficulty": 2
+    }
+  ]
+}

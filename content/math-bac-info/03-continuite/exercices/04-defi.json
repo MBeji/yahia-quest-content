@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve de Bolzano",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Soit f définie par f(x) = (x² + ax + b)/(x − 2) pour x ≠ 2, et f(2) = 5, où a et b sont deux réels. Pour quelles valeurs de a et b la fonction f est-elle continue en 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 1 et b = −6"
+        },
+        {
+          "id": "b",
+          "text": "a = −5 et b = 6"
+        },
+        {
+          "id": "c",
+          "text": "a = 3 et b = −10"
+        },
+        {
+          "id": "d",
+          "text": "a = −9 et b = 14"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour que f ait une limite finie en 2, le numérateur doit s'annuler en 2 : il se factorise en (x − 2)(x − r), et f(x) = x − r pour x ≠ 2. La continuité exige lim x→2 f(x) = 2 − r = f(2) = 5, donc r = −3 et x² + ax + b = (x − 2)(x + 3) = x² + x − 6 : a = 1 et b = −6 ✓. Les trois autres couples annulent aussi le numérateur en 2 mais donnent d'autres limites : le facteur x − 3 (signe de r inversé) donne −1, le facteur x + 5 (f(2) pris pour −r) donne 7, et le facteur x − 7 (r = 2 + 5) donne −5, toutes différentes de 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une seule de ces égalités est FAUSSE. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "³√(⁴√(2¹²)) = 2"
+        },
+        {
+          "id": "b",
+          "text": "⁵√(²√(3¹⁰)) = 3"
+        },
+        {
+          "id": "c",
+          "text": "⁴√(³√(5⁷)) = 5"
+        },
+        {
+          "id": "d",
+          "text": "⁶√(3³) = √3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans ⁿ√(ᵖ√a), les indices se multiplient. ³√(⁴√(2¹²)) = ¹²√(2¹²) = 2 et ⁵√(²√(3¹⁰)) = ¹⁰√(3¹⁰) = 3 sont justes ; ⁶√(3³) = √3, car (√3)⁶ = 27 = 3³ avec √3 positif. En revanche ⁴√(³√(5⁷)) = ¹²√(5⁷), qui n'est pas égal à 5 (5¹² ≠ 5⁷) : l'égalité fausse est celle-là. Le piège est d'additionner les indices (3 + 4 = 7) au lieu de les multiplier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = E(x) + (x − E(x))², où E désigne la partie entière. Combien de points de discontinuité f a-t-elle dans l'intervalle ]0 ; 3[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur [n ; n + 1[, E(x) = n et f(x) = n + (x − n)². En un entier k de ]0 ; 3[, la limite à droite est f(k) = k + 0 = k ; la limite à gauche vaut (k − 1) + (x − (k − 1))² → (k − 1) + 1 = k. Limite à gauche, limite à droite et f(k) sont égales : f est continue en 1 et en 2, donc aucun point de discontinuité. Conclure « 2 points » parce que E saute en chaque entier oublie que (x − E(x))² compense exactement le saut.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit λ un réel et h définie par h(x) = (x − 1 + λ|x − 1|)/|x − 1| pour x ≠ 1, avec h(1) = 5. Laquelle de ces affirmations est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour λ = 4, h est continue en 1, car la limite à droite 1 + λ vaut h(1)"
+        },
+        {
+          "id": "b",
+          "text": "Aucune valeur de λ : les limites à droite et à gauche diffèrent"
+        },
+        {
+          "id": "c",
+          "text": "Pour toute valeur de λ, h est continue à droite en 1"
+        },
+        {
+          "id": "d",
+          "text": "Pour λ = 6, h est continue en 1, car la limite à gauche λ − 1 vaut h(1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x > 1, |x − 1| = x − 1 et h(x) = 1 + λ. Pour x < 1, |x − 1| = −(x − 1) et h(x) = λ − 1. Les limites à droite et à gauche en 1 valent donc λ + 1 et λ − 1 : elles diffèrent toujours de 2, donc h n'est jamais continue en 1. Pour λ = 4 la limite à droite vaut 5 = h(1) mais celle de gauche vaut 3 (continue à droite seulement) ; pour λ = 6 c'est l'inverse (à gauche seulement) ; pour toute valeur de λ, h vaut 1 + λ à droite de 1, mais la continuité à droite exige 1 + λ = h(1) = 5, ce qui n'arrive que pour λ = 4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x/(1 + |x|). On admet que f est une bijection de ℝ sur ]−1 ; 1[. Quelle est l'expression de f⁻¹(x) pour x ∈ ]−1 ; 1[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x/(1 + |x|)"
+        },
+        {
+          "id": "b",
+          "text": "(1 + |x|)/x"
+        },
+        {
+          "id": "c",
+          "text": "x/(|x| − 1)"
+        },
+        {
+          "id": "d",
+          "text": "x/(1 − |x|)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Soit x ∈ ]−1 ; 1[ et y ∈ ℝ, avec x = y/(1 + |y|). Pour x ≥ 0, y ≥ 0 et x = y/(1 + y) donne y = x/(1 − x). Pour x < 0, y < 0 et x = y/(1 − y) donne y = x/(1 + x). Dans les deux cas y = x/(1 − |x|) ✓ (contrôle : f(1) = 1/2 et f⁻¹(1/2) = (1/2)/(1/2) = 1). La fonction f elle-même ne convient pas, (1 + |x|)/x est 1/f, et x/(|x| − 1) a le mauvais signe (elle donne −1 en 1/2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = x³ + 2x, bijection de ℝ sur ℝ. Dans lequel de ces intervalles se trouve g⁻¹(5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]1,2 ; 1,3["
+        },
+        {
+          "id": "b",
+          "text": "]1,3 ; 1,4["
+        },
+        {
+          "id": "c",
+          "text": "]1,4 ; 1,5["
+        },
+        {
+          "id": "d",
+          "text": "]1,5 ; 1,6["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "g⁻¹(5) est l'unique réel α tel que g(α) = 5. g est continue, et g(1,3) = 2,197 + 2,6 = 4,797 < 5 < 5,544 = g(1,4) : par le théorème des valeurs intermédiaires, une solution de g(x) = 5 est dans ]1,3 ; 1,4[, et c'est α puisqu'elle est unique. Les intervalles voisins correspondent à des erreurs de lecture du signe de g(x) − 5 (g(1,2) = 4,128 et g(1,5) = 6,375 ne l'encadrent pas).",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des limites",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "u₀ = 1 et uₙ₊₁ = −(2/3)uₙ + 5. On pose vₙ = uₙ − 3. Quelle est l'expression de vₙ en fonction de n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 × (−2/3)ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "−2 × (−2/3)ⁿ"
+        },
+        {
+          "id": "c",
+          "text": "−2 × (2/3)ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "2 × (2/3)ⁿ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le point fixe est ℓ = 3, solution de ℓ = −(2/3)ℓ + 5. Alors vₙ₊₁ = −(2/3)uₙ + 2 = −(2/3)(uₙ − 3) = −(2/3)vₙ : (vₙ) est géométrique de raison −2/3 et de premier terme v₀ = 1 − 3 = −2, donc vₙ = −2 × (−2/3)ⁿ ✓. L'expression 2 × (−2/3)ⁿ prend v₀ = 3 − u₀ = 2 au lieu de v₀ = u₀ − 3 = −2. L'expression −2 × (2/3)ⁿ oublie le signe de la raison. L'expression 2 × (2/3)ⁿ cumule les deux erreurs.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "wₙ = n²/3ⁿ pour tout n ∈ ℕ. Quel est le plus petit rang n₀ tel que (wₙ) soit décroissante à partir de n₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n₀ = 2"
+        },
+        {
+          "id": "b",
+          "text": "n₀ = 0"
+        },
+        {
+          "id": "c",
+          "text": "n₀ = 1"
+        },
+        {
+          "id": "d",
+          "text": "n₀ = 3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour n ≥ 1, wₙ₊₁/wₙ = (n + 1)²/(3n²). Ce rapport est inférieur à 1 si et seulement si n + 1 < n√3, soit n > 1/(√3 − 1) ≈ 1,37 : il vaut 4/3 pour n = 1 et 3/4 pour n = 2. Donc w₁ < w₂ et w₂ > w₃ > w₄ > …, la suite est décroissante à partir de n₀ = 2 ✓ (w₂ = 4/9, w₃ = 1/3). Le rang 0 est exclu, car w₀ = 0 < w₁ = 1/3 ; le rang 1 aussi, car w₁ = 1/3 < w₂ = 4/9. Le rang 3 est correct mais n'est pas le plus petit.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On étudie uₙ = n − √(n² − 2n) pour n ≥ 2. Que devient uₙ à l'infini ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il se rapproche de 0"
+        },
+        {
+          "id": "b",
+          "text": "Il se rapproche de 2"
+        },
+        {
+          "id": "c",
+          "text": "Il tend vers +∞"
+        },
+        {
+          "id": "d",
+          "text": "Il se rapproche de 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "C'est la forme +∞ − ∞. Pour n ≥ 2, avec la quantité conjuguée, uₙ = (n² − (n² − 2n))/(n + √(n² − 2n)) = 2n/(n + √(n² − 2n)) = 2/(1 + √(1 − 2/n)). Quand n → +∞, √(1 − 2/n) → 1, donc lim uₙ = 2/2 = 1 ✓. La valeur 0 vient de l'idée fausse « +∞ − ∞ = 0 ». La valeur 2 oublie le dénominateur 1 + √(1 − 2/n) qui tend vers 2. La valeur +∞ ne retient que la forme de départ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "u₀ = 0 et uₙ₊₁ = (uₙ² + 2)/3. On a montré que 0 ≤ uₙ ≤ 3/2 pour tout n et que (uₙ) est croissante. Quelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "3/2"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La suite est croissante et majorée, donc elle converge vers un réel ℓ avec 0 ≤ ℓ ≤ 3/2. La fonction x ↦ (x² + 2)/3 est continue, donc ℓ = (ℓ² + 2)/3, soit ℓ² − 3ℓ + 2 = 0 et (ℓ − 1)(ℓ − 2) = 0. Comme ℓ ≤ 3/2, ℓ = 1 ✓ (u₁ = 2/3 ; u₂ ≈ 0,81 ; u₃ ≈ 0,89). La valeur 2 est l'autre solution de l'équation, écartée par l'encadrement. La valeur 3/2 est le majorant donné : le théorème assure la convergence, il ne dit pas que la limite est le majorant. La valeur 0 est le premier terme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sₙ = 1/(1 × 2) + 1/(2 × 3) + … + 1/(n(n + 1)) pour n ≥ 1. Quelle est la limite de (Sₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour tout k ≥ 1, 1/(k(k + 1)) = 1/k − 1/(k + 1). En sommant de k = 1 à n, les termes se simplifient deux à deux : Sₙ = 1 − 1/(n + 1), qui tend vers 1 ✓ (S₁ = 1/2, S₂ = 2/3). La valeur 1/2 est seulement le premier terme. La valeur 0 suppose que le terme général, qui tend vers 0, impose la limite de la somme. La valeur +∞ suppose une somme sans borne, alors que Sₙ < 1.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sont vraies pour toutes suites réelles (uₙ) et (vₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si uₙ ≤ vₙ pour tout n et lim uₙ = +∞, alors lim vₙ = +∞"
+        },
+        {
+          "id": "b",
+          "text": "Si uₙ < vₙ pour tout n, lim uₙ = ℓ et lim vₙ = ℓ′, alors ℓ < ℓ′"
+        },
+        {
+          "id": "c",
+          "text": "Si uₙ ≤ vₙ pour tout n, lim uₙ = ℓ et lim vₙ = ℓ′, alors ℓ ≤ ℓ′"
+        },
+        {
+          "id": "d",
+          "text": "Si lim uₙ = +∞ et lim vₙ = −∞, alors lim (uₙ + vₙ) = 0"
+        },
+        {
+          "id": "e",
+          "text": "Si lim uₙ = 0, alors lim (uₙ × vₙ) = 0 quelle que soit (vₙ)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "« Si uₙ ≤ vₙ pour tout n et lim uₙ = +∞, alors lim vₙ = +∞ » est vraie : c'est le théorème de comparaison ✓. « Si uₙ ≤ vₙ pour tout n, lim uₙ = ℓ et lim vₙ = ℓ′, alors ℓ ≤ ℓ′ » est vraie : une inégalité large passe à la limite ✓. La version stricte « ℓ < ℓ′ » est fausse : uₙ = 1/(n + 2) < vₙ = 1/(n + 1) ont toutes deux pour limite 0, donc ℓ = ℓ′ : l'inégalité stricte devient large. « lim (uₙ + vₙ) = 0 » est fausse : +∞ − ∞ n'a pas de valeur générale, et uₙ = n, vₙ = −n + 1 donnent une somme égale à 1. « lim (uₙ × vₙ) = 0 quelle que soit (vₙ) » est fausse : uₙ = 1/n et vₙ = n² donnent un produit égal à n, qui tend vers +∞.",
+      "difficulty": 3
+    }
+  ]
+}
