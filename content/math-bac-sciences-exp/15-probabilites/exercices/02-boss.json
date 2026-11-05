@@ -1,0 +1,124 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le stratège des urnes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un cube de 4 cm d'arête, peint sur ses six faces, est découpé en 64 petits cubes de 1 cm d'arête. On prend 2 petits cubes d'un seul geste, au hasard. Quelle est la probabilité qu'aucun des deux n'ait de face peinte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/72"
+        },
+        {
+          "id": "b",
+          "text": "1/8"
+        },
+        {
+          "id": "c",
+          "text": "1/64"
+        },
+        {
+          "id": "d",
+          "text": "1/144"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un petit cube n'a aucune face peinte s'il est intérieur : ils forment un cube de 2 × 2 × 2 = 8 petits cubes. Le prélèvement simultané de 2 cubes est équiprobable parmi C_64^2 = 2016 parties, et les prélèvements favorables sont C_8^2 = 28. Donc p = 28/2016 = 1/72 ✓. Contrôle par les rangs : (8/64)(7/63) = (1/8)(1/9) = 1/72. La valeur 1/64 = (8/64)² suppose une remise du premier cube ; 1/8 = 8/64 est la probabilité qu'un seul cube soit intérieur ; 1/144 divise 28 par les 4032 listes ordonnées de deux cubes alors que le numérateur ne compte que des groupes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une urne contient 5 boules noires et 4 boules blanches, indiscernables au toucher. On tire 3 boules d'un seul geste. Quelle est la probabilité d'obtenir au moins une boule noire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/21"
+        },
+        {
+          "id": "b",
+          "text": "5/9"
+        },
+        {
+          "id": "c",
+          "text": "5/14"
+        },
+        {
+          "id": "d",
+          "text": "20/21"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'univers compte C_9^3 = 84 tirages équiprobables. Le contraire de « au moins une noire » est « aucune noire », c'est-à-dire 3 boules blanches parmi 4 : C_4^3 = 4 tirages, donc p(aucune noire) = 4/84 = 1/21 et p(au moins une noire) = 1 − 1/21 = 20/21 ✓. La valeur 1/21 est la probabilité du contraire, jamais soustraite de 1 ; 5/14 = 30/84 est la probabilité d'avoir exactement une noire (C_5^1 × C_4^2 = 30), et non au moins une ; 5/9 est la proportion de boules noires dans l'urne, qui ne dépend pas du tirage de trois boules.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une bibliothèque, 50 % des lecteurs empruntent un roman. Parmi eux, 20 % empruntent aussi une bande dessinée ; parmi ceux qui n'empruntent pas de roman, 60 % empruntent une bande dessinée. On croise un lecteur qui n'a pas emprunté de bande dessinée. Quelle est la probabilité qu'il ait emprunté un roman ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/5"
+        },
+        {
+          "id": "b",
+          "text": "2/3"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "4/5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Notons R « roman » et B « bande dessinée ». Le lecteur n'a pas emprunté de BD : p(R ∩ B̅) = 0,5 × 0,8 = 0,4 et p(B̅) = 0,4 + 0,5 × 0,4 = 0,6 (le second terme est p(R̅ ∩ B̅) = 0,5 × 0,4). Donc p(R/B̅) = 0,4/0,6 = 2/3 ✓. La valeur 4/5 est p(B̅/R), la probabilité de ne pas prendre de BD sachant qu'on prend un roman, c'est-à-dire le sens inverse ; 2/5 est p(R ∩ B̅), l'intersection non divisée par p(B̅) ; 1/2 est p(R), qui ignore l'information donnée.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit pₙ la probabilité qu'un élève soit en retard le jour n. On sait que p₁ = 0,1. S'il est en retard un jour, il l'est le lendemain avec la probabilité 0,8 ; s'il ne l'est pas, il est en retard le lendemain avec la probabilité 0,3. Que vaut p₃ ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.475
+      },
+      "explanation": "La partition {en retard le jour n, pas en retard le jour n} donne pₙ₊₁ = 0,8 pₙ + 0,3 (1 − pₙ) = 0,5 pₙ + 0,3. Alors p₂ = 0,5 × 0,1 + 0,3 = 0,35, puis p₃ = 0,5 × 0,35 + 0,3 = 0,475 ✓. Contrôle sans la formule réduite : p₃ = 0,8 × 0,35 + 0,3 × 0,65 = 0,28 + 0,195 = 0,475.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Deux événements A et B sont indépendants. On sait que p(A) = 0,4 et p(A ∪ B) = 0,7. Quelle est la valeur de p(B) ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.5
+      },
+      "explanation": "Par indépendance, p(A ∩ B) = 0,4 × p(B), donc p(A ∪ B) = p(A) + p(B) − p(A ∩ B) donne 0,7 = 0,4 + p(B) − 0,4 p(B) = 0,4 + 0,6 p(B). Alors 0,6 p(B) = 0,3 et p(B) = 0,5 ✓. Contrôle : p(A ∩ B) = 0,4 × 0,5 = 0,2 et 0,4 + 0,5 − 0,2 = 0,7.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un sac contient 3 jetons rouges, 4 jetons bleus et 5 jetons jaunes, indiscernables au toucher. On tire 3 jetons d'un seul geste. Quelle est la probabilité d'obtenir un jeton de chaque couleur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/22"
+        },
+        {
+          "id": "b",
+          "text": "3/55"
+        },
+        {
+          "id": "c",
+          "text": "3/11"
+        },
+        {
+          "id": "d",
+          "text": "5/24"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'univers compte C_12^3 = 220 tirages équiprobables. Un tirage « un jeton de chaque couleur » choisit un rouge, un bleu et un jaune : 3 × 4 × 5 = 60 tirages. Donc p = 60/220 = 3/11 ✓. Contrôle avec des tirages successifs : les 3! = 6 ordres de couleurs ont chacun la probabilité (3 × 4 × 5)/(12 × 11 × 10) = 1/22, et 6/22 = 3/11. La valeur 1/22 ne garde qu'un seul ordre de couleurs ; 5/24 = 6 × 60/1728 vient de tirages avec remise ; 3/55 = 12/220 additionne 3 + 4 + 5 = 12 au lieu de multiplier, et compte donc 12 tirages favorables au lieu de 60.",
+      "difficulty": 3
+    }
+  ]
+}

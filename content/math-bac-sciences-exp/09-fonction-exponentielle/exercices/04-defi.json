@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Le piège de cette question est de chercher l'erreur là où elle se voit, alors qu'elle est plus haut ; c'est donc la ligne fautive elle-même qu'il faut désigner (cette question est une chasse à l'erreur). L'erreur est à la ligne ② : v(x) = e^(−x) a pour dérivée v′(x) = −e^(−x), car u′ = −1 dans (e^u)′ = u′e^u. Les lignes ① et ④ sont justes en elles-mêmes, et la ligne ③ applique correctement la formule du produit à des données déjà fausses. La bonne dérivée est f′(x) = (2x + 1)e^(−x) − (x² + x)e^(−x) = (−x² + x + 1)e^(−x). Contrôle en x = 1 : la bonne formule donne e^(−1) ≈ 0,368, le taux d'accroissement numérique donne 0,368, alors que la copie donnerait 5e^(−1) ≈ 1,84.",
+      "explanation": "L'erreur est à la ligne ② : v(x) = e^(−x) a pour dérivée v′(x) = −e^(−x), car u′ = −1 dans (e^u)′ = u′e^u. Les lignes ① et ④ sont justes en elles-mêmes, et la ligne ③ applique correctement la formule du produit à des données déjà fausses. La bonne dérivée est f′(x) = (2x + 1)e^(−x) − (x² + x)e^(−x) = (−x² + x + 1)e^(−x). Contrôle en x = 1 : la bonne formule donne e^(−1) ≈ 0,368, le taux d'accroissement numérique donne 0,368, alors que la copie donnerait 5e^(−1) ≈ 1,84.",
       "difficulty": 2
     },
     {
@@ -103,15 +103,15 @@
       "difficulty": 3
     },
     {
-      "prompt": "Pour tout entier naturel n, on pose uₙ = ∫ₙ^(n+1) e^(−t/2) dt, et Sₙ = u₀ + u₁ + … + uₙ₋₁. Quelle est la limite de Sₙ quand n tend vers +∞ ?",
+      "prompt": "Pour tout entier naturel n, on pose uₙ = ∫ₙ^(n+1) e^(−3t) dt, et Sₙ = u₀ + u₁ + … + uₙ₋₁. Quelle est la limite de Sₙ quand n tend vers +∞ ?",
       "options": [
         {
           "id": "a",
-          "text": "1"
+          "text": "3"
         },
         {
           "id": "b",
-          "text": "2(1 − e^(−1/2))"
+          "text": "(1 − e^(−3))/3"
         },
         {
           "id": "c",
@@ -119,11 +119,11 @@
         },
         {
           "id": "d",
-          "text": "2"
+          "text": "1/3"
         }
       ],
       "correctOption": "d",
-      "explanation": "Par la relation de Chasles, Sₙ = ∫₀ⁿ e^(−t/2) dt = [−2e^(−t/2)]₀ⁿ = 2(1 − e^(−n/2)), qui tend vers 2 ✓. Contrôle en n = 10 : 2(1 − e^(−5)) ≈ 1,987. La valeur 1 vient d'une primitive −e^(−t/2) au lieu de −2e^(−t/2). La valeur 2(1 − e^(−1/2)) ≈ 0,787 est celle de u₀ seul : c'est le premier terme, pas la somme. La limite +∞ suppose qu'une somme de termes positifs diverge toujours, alors que ici les termes uₙ = 2e^(−n/2)(1 − e^(−1/2)) forment une suite géométrique de raison e^(−1/2) < 1.",
+      "explanation": "Par la relation de Chasles, Sₙ = ∫₀ⁿ e^(−3t) dt = [−(1/3)e^(−3t)]₀ⁿ = (1 − e^(−3n))/3, qui tend vers 1/3 ✓. Contrôle en n = 2 : (1 − e^(−6))/3 ≈ 0,3325. La valeur 3 prend −3e^(−3t) pour primitive. La valeur (1 − e^(−3))/3 ≈ 0,317 est celle de u₀ seul : c'est le premier terme, pas la somme. La limite +∞ suppose qu'une somme de termes positifs diverge toujours, alors que ici les termes uₙ = e^(−3n)(1 − e^(−3))/3 forment une suite géométrique de raison e^(−3) < 1.",
       "difficulty": 3
     },
     {

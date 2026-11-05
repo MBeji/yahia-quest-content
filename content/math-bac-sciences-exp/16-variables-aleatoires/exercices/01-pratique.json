@@ -1,0 +1,111 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les lois de probabilité",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un sac contient des jetons numérotés 1, 2, 3 et 4 ; on en tire un au hasard, et les numéros ont pour probabilités 0,1 ; 2a ; a et 0,3, où a est un réel. X est le numéro tiré. Que vaut p(X ≥ 3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,2"
+        },
+        {
+          "id": "b",
+          "text": "0,5"
+        },
+        {
+          "id": "c",
+          "text": "0,4"
+        },
+        {
+          "id": "d",
+          "text": "0,9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La somme des probabilités vaut 1 : 0,1 + 2a + a + 0,3 = 1, donc 3a = 0,6 et a = 0,2. Alors p(X ≥ 3) = p(X = 3) + p(X = 4) = a + 0,3 = 0,5 ✓. Le nombre 0,2 est la constante a elle-même, 0,4 = 2a est p(X = 2), et 0,9 = 1 − 0,1 est p(X ≥ 2), qui compte aussi la valeur 2.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une loterie donne un gain X, en dinars : X vaut 0 avec la probabilité 0,55 ; vaut 3 avec la probabilité 0,35 et vaut 12 avec la probabilité 0,1. Calculer E(X). Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 2.25
+      },
+      "explanation": "E(X) = 0 × 0,55 + 3 × 0,35 + 12 × 0,1 = 0 + 1,05 + 1,2 = 2,25 ✓. La moyenne simple (0 + 3 + 12)/3 = 5 ignorerait les probabilités et serait fausse.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La figure donne la fonction de répartition F d'une variable aléatoire X, qui ne prend que les valeurs 1, 3, 4 et 6. Quelle est la probabilité p(X < 4) ?\n<svg viewBox=\"0 0 340 250\">\n<title>Fonction de répartition F : sauts en 1, 3, 4 et 6, de hauteurs 0,2 ; 0,3 ; 0,2 et 0,3</title>\n<path d=\"M40 190 L334.4 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<path d=\"M50 196 L50 32\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<text x=\"334.4\" y=\"208\" text-anchor=\"end\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">x</text>\n<text x=\"54\" y=\"28\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">F(x)</text>\n<path d=\"M50 190 L87.5 190\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M87.5 162 L162.5 162\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M162.5 120 L200 120\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M200 92 L275 92\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M275 50 L328 50\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<circle cx=\"87.5\" cy=\"190\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"87.5\" cy=\"162\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"162.5\" cy=\"162\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"162.5\" cy=\"120\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"200\" cy=\"120\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"200\" cy=\"92\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"275\" cy=\"92\" r=\"4\" fill=\"#ffffff\" stroke=\"#0f6e56\" stroke-width=\"2\"/>\n<circle cx=\"275\" cy=\"50\" r=\"4\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<path d=\"M50 176 L46 176\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"180\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,1</text>\n<path d=\"M50 162 L46 162\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"166\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,2</text>\n<path d=\"M50 148 L46 148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"152\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,3</text>\n<path d=\"M50 134 L46 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"138\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,4</text>\n<path d=\"M50 120 L46 120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"124\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,5</text>\n<path d=\"M50 106 L46 106\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"110\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,6</text>\n<path d=\"M50 92 L46 92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"96\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,7</text>\n<path d=\"M50 78 L46 78\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"82\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,8</text>\n<path d=\"M50 64 L46 64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"68\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0,9</text>\n<path d=\"M50 50 L46 50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"42\" y=\"54\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text>\n<path d=\"M87.5 190 L87.5 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"87.5\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text>\n<path d=\"M162.5 190 L162.5 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"162.5\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3</text>\n<path d=\"M200 190 L200 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"200\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text>\n<path d=\"M275 190 L275 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"275\" y=\"210\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">6</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,7"
+        },
+        {
+          "id": "b",
+          "text": "0,2"
+        },
+        {
+          "id": "c",
+          "text": "0,3"
+        },
+        {
+          "id": "d",
+          "text": "0,5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'inégalité est stricte : p(X < 4) ne compte pas la valeur 4, donc p(X < 4) = F(3) = 0,5 ✓, hauteur de la courbe juste avant le saut en 4. Le nombre 0,7 est F(4) = p(X ≤ 4), qui compte aussi la valeur 4 ; 0,2 est la hauteur du saut en 4, soit p(X = 4) ; 0,3 est la hauteur du saut en 3.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un tireur atteint sa cible avec la probabilité 0,7 à chaque tir, les tirs étant indépendants. Il effectue 5 tirs et X est le nombre de tirs réussis. Calculer p(X = 3). Donne le résultat arrondi au millième.",
+      "answerKey": {
+        "value": 0.3087,
+        "tolerance": 0.0006
+      },
+      "explanation": "Le tireur répète 5 fois la même épreuve indépendante avec p = 0,7 : X suit ℬ(5 ; 0,7). Alors p(X = 3) = C₅³ × 0,7³ × 0,3² = 10 × 0,343 × 0,09 = 0,3087, soit 0,309 au millième ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La tension X, en volts, mesurée aux bornes d'un composant suit la loi uniforme sur [3 ; 8]. Quelle est p(4 ≤ X ≤ 7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,6"
+        },
+        {
+          "id": "b",
+          "text": "0,375"
+        },
+        {
+          "id": "c",
+          "text": "0,4"
+        },
+        {
+          "id": "d",
+          "text": "0,2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La densité vaut 1/(8 − 3) = 1/5, donc p(4 ≤ X ≤ 7) = (7 − 4)/5 = 3/5 = 0,6 ✓. Le nombre 0,375 = 3/8 divise par b au lieu de b − a, 0,4 est la probabilité contraire, et 0,2 est la densité 1/5 elle-même.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La durée de vie X, en années, d'un routeur suit la loi exponentielle de paramètre 0,4. Quelle est la probabilité qu'il tombe en panne entre la fin de la 2ᵉ et la fin de la 5ᵉ année, c'est-à-dire p(2 ≤ X ≤ 5) ? Donne le résultat arrondi au millième.",
+      "answerKey": {
+        "value": 0.314,
+        "tolerance": 0.0006
+      },
+      "explanation": "Pour une loi exponentielle, p(c ≤ X ≤ d) = e^(−λc) − e^(−λd) : p(2 ≤ X ≤ 5) = e^(−0,8) − e^(−2) ≈ 0,4493 − 0,1353 = 0,3140, soit 0,314 au millième ✓.",
+      "difficulty": 2
+    }
+  ]
+}

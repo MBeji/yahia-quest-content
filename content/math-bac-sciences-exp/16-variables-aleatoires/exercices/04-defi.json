@@ -1,0 +1,109 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Maîtres du hasard",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "X suit la loi uniforme sur [0 ; 4], et Y suit la loi exponentielle de paramètre 2. Quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(X = 1) = 0"
+        },
+        {
+          "id": "b",
+          "text": "La densité de X vaut 1/4 sur [0 ; 4], donc p(X = 1) = 1/4"
+        },
+        {
+          "id": "c",
+          "text": "p(Y ≥ 1) = e^(−2)"
+        },
+        {
+          "id": "d",
+          "text": "La densité de Y vaut 2 en t = 0, qui dépasse 1 : ce n'est donc pas une densité"
+        },
+        {
+          "id": "e",
+          "text": "p(1 ≤ X ≤ 2) = p(1 < X < 2)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Pour la loi uniforme, une valeur isolée a une probabilité nulle : p(X = 1) = 0, et les inégalités strictes ou larges donnent la même probabilité, donc p(1 ≤ X ≤ 2) = p(1 < X < 2). Pour la loi exponentielle de paramètre 2, p(Y ≥ 1) = e^(−2 × 1) = e^(−2). En revanche, la valeur 1/4 de la densité est une hauteur, non une probabilité ; et une densité peut dépasser 1 : ce qui compte est que l'aire totale vaille 1, ce que garantit la loi exponentielle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On répète n fois une épreuve réussie avec la probabilité 0,12, de façon indépendante. On cherche le plus petit entier n pour lequel la probabilité d'obtenir au moins un succès est supérieure ou égale à 0,8. Voici une solution. Ligne 1 : p(au moins un succès) = 1 − 0,88ⁿ. Ligne 2 : 1 − 0,88ⁿ ≥ 0,8 équivaut à 0,88ⁿ ≤ 0,2. Ligne 3 : n ln 0,88 ≤ ln 0,2, d'où n ≤ ln 0,2/ln 0,88 ≈ 12,59. Ligne 4 : le plus grand entier possible est 12, donc n = 12. À quelle ligne se trouve la première erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ligne 1"
+        },
+        {
+          "id": "b",
+          "text": "Ligne 2"
+        },
+        {
+          "id": "c",
+          "text": "Ligne 3"
+        },
+        {
+          "id": "d",
+          "text": "Ligne 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les lignes 1 et 2 sont justes : « au moins un succès » est l'événement contraire de « aucun succès », et 1 − 0,88ⁿ ≥ 0,8 équivaut bien à 0,88ⁿ ≤ 0,2. L'erreur est à la ligne 3 : ln 0,88 est négatif, donc diviser par ln 0,88 inverse le sens de l'inégalité, et il faut écrire n ≥ ln 0,2/ln 0,88 ≈ 12,59. Le plus petit entier convenable est alors n = 13 (contrôle : 0,88¹² ≈ 0,216 > 0,2 ne suffit pas, 0,88¹³ ≈ 0,190 ≤ 0,2 convient). La ligne 4 tire une conclusion fausse, mais elle découle de l'erreur de la ligne précédente.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le temps d'attente d'un client à une borne, en minutes, suit une loi exponentielle de paramètre inconnu. La probabilité d'attendre au plus 2 minutes vaut 0,36. Quelle est la probabilité d'attendre au moins 6 minutes ? Donne le résultat arrondi au millième.",
+      "answerKey": {
+        "value": 0.262,
+        "tolerance": 0.0006
+      },
+      "explanation": "On a p(X ≥ 2) = 1 − 0,36 = 0,64, c'est-à-dire e^(−2λ) = 0,64. Alors p(X ≥ 6) = e^(−6λ) = (e^(−2λ))³ = 0,64³ = 0,262144, soit 0,262 au millième ✓, sans avoir besoin de calculer λ.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un capteur renvoie une mesure X, en unités, qui suit la loi uniforme sur [0 ; 25]. Une mesure est jugée anormale si X ≥ 21. On effectue 4 mesures indépendantes. Quelle est la probabilité qu'au moins une mesure soit anormale ? Donne le résultat arrondi au millième.",
+      "answerKey": {
+        "value": 0.5021,
+        "tolerance": 0.0006
+      },
+      "explanation": "Une mesure est anormale avec la probabilité p(21 ≤ X ≤ 25) = (25 − 21)/25 = 0,16. Le nombre de mesures anormales parmi 4 suit ℬ(4 ; 0,16), donc p(au moins une) = 1 − 0,84⁴ = 1 − 0,4979 = 0,5021, soit 0,502 au millième ✓. Le nombre 4 × 0,16 = 0,64 serait faux : il additionne des événements qui ne sont pas incompatibles.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une variable aléatoire X prend les valeurs 1, 2, 3, 4 et 5, avec p(X = k) = c × k pour chaque valeur k, où c est une constante. Calculer la variance de X. Donne le résultat arrondi au millième.",
+      "answerKey": {
+        "value": 1.5556,
+        "tolerance": 0.002
+      },
+      "explanation": "La somme des probabilités vaut 1 : c × (1 + 2 + 3 + 4 + 5) = 15c = 1, donc c = 1/15. Alors E(X) = (1² + 2² + 3² + 4² + 5²)/15 = 55/15 = 11/3 et E(X²) = (1³ + 2³ + 3³ + 4³ + 5³)/15 = 225/15 = 15. Donc V(X) = 15 − (11/3)² = 15 − 121/9 = 14/9 ≈ 1,5556, soit 1,556 au millième ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un mobile tourne sur un cercle de centre O et s'arrête au hasard : l'angle X entre sa position de départ et sa position d'arrêt, en radians, suit la loi uniforme sur [0 ; 2π]. Le joueur gagne si le mobile s'arrête dans l'un des deux secteurs correspondant à X ∈ [π/6 ; 2π/3] ou X ∈ [π ; 4π/3]. Quelle est la probabilité de gagner ? Donne le résultat arrondi au millième.",
+      "answerKey": {
+        "value": 0.4167,
+        "tolerance": 0.0006
+      },
+      "explanation": "Les deux intervalles n'ont aucun point commun : on additionne leurs probabilités. Leurs longueurs sont 2π/3 − π/6 = π/2 et 4π/3 − π = π/3. La densité vaut 1/(2π), donc p = (π/2 + π/3)/(2π) = (5π/6)/(2π) = 5/12 ≈ 0,4167, soit 0,417 au millième ✓.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -55,27 +55,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Pour tout réel x, sin³x est égal à :",
+      "prompt": "On linéarise cos⁵x, c'est-à-dire qu'on l'écrit sous la forme α cos x + β cos 3x + γ cos 5x. Que vaut β ?",
       "options": [
         {
           "id": "a",
-          "text": "(3/4)sin x − (1/4)sin 3x"
+          "text": "5/16"
         },
         {
           "id": "b",
-          "text": "(1/4)sin 3x − (3/4)sin x"
+          "text": "−5/16"
         },
         {
           "id": "c",
-          "text": "(3/4)sin x + (1/4)sin 3x"
+          "text": "5/8"
         },
         {
           "id": "d",
-          "text": "(3/8)sin x − (1/8)sin 3x"
+          "text": "5/32"
         }
       ],
       "correctOption": "a",
-      "explanation": "On écrit sin³x = (e^(ix) − e^(−ix))³/(2i)³ avec (2i)³ = −8i. Le binôme donne (e^(3ix) − e^(−3ix)) − 3(e^(ix) − e^(−ix)) = 2i sin 3x − 6i sin x. Donc sin³x = (2i sin 3x − 6i sin x)/(−8i) = (3/4)sin x − (1/4)sin 3x ✓. Contrôle en x = π/2 : sin³ = 1 et 3/4 − (1/4)(−1) = 1 ✓. L'expression (1/4)sin 3x − (3/4)sin x change le signe global et donnerait −1 en x = π/2. L'expression (3/4)sin x + (1/4)sin 3x donnerait 3/4 − 1/4 = 1/2 au même point. L'expression (3/8)sin x − (1/8)sin 3x divise par 8 au lieu de 4 et donnerait 1/2.",
+      "explanation": "cos⁵x = (e^(ix) + e^(−ix))⁵/2⁵. Le binôme donne (e^(5ix) + e^(−5ix)) + 5(e^(3ix) + e^(−3ix)) + 10(e^(ix) + e^(−ix)) = 2cos 5x + 10cos 3x + 20cos x, donc cos⁵x = (1/16)(cos 5x + 5cos 3x + 10cos x) et β = 5/16 ✓. Contrôle en x = 0 : (1 + 5 + 10)/16 = 1 ✓. La valeur −5/16 recopie les signes alternés de sin⁵x, dus au facteur e^(ix) − e^(−ix). La valeur 5/8 = 10/16 est le coefficient α de cos x. La valeur 5/32 oublie de regrouper e^(3ix) + e^(−3ix) en 2cos 3x.",
       "difficulty": 2
     },
     {
@@ -87,7 +87,7 @@
         },
         {
           "id": "b",
-          "text": "Le cercle entier de centre Ω et de rayon 3"
+          "text": "Le demi-cercle supérieur de centre le point d'affixe 1 − 2i et de rayon 3"
         },
         {
           "id": "c",
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "On a z − z_Ω = −3e^(iθ) = 3e^(i(θ + π)), donc ΩM = 3 : M est sur le cercle de centre Ω et de rayon 3. L'angle θ + π décrit [π ; 2π], où le sinus est négatif : M reste sous la droite horizontale passant par Ω, c'est le demi-cercle inférieur ✓. Contrôle sur les extrémités : θ = 0 donne −4 + 2i et θ = π donne 2 + 2i, deux points à la hauteur de Ω, à distance 3 de part et d'autre ; θ = π/2 donne −1 − i, sous Ω ✓. Le demi-cercle supérieur oublie le signe moins devant 3e^(iθ). Le cercle entier oublie la restriction à [0 ; π] (il faudrait θ ∈ [0 ; 2π[). Le centre 1 − 2i confond Ω avec son opposé.",
+      "explanation": "On a z − z_Ω = −3e^(iθ) = 3e^(i(θ + π)), donc ΩM = 3 : M est sur le cercle de centre Ω et de rayon 3. L'angle θ + π décrit [π ; 2π], où le sinus est négatif : M reste sous la droite horizontale passant par Ω, c'est le demi-cercle inférieur ✓. Contrôle sur les extrémités : θ = 0 donne −4 + 2i et θ = π donne 2 + 2i, deux points à la hauteur de Ω, à distance 3 de part et d'autre ; θ = π/2 donne −1 − i, sous Ω ✓. Le demi-cercle supérieur oublie le signe moins devant 3e^(iθ). Le demi-cercle supérieur de centre 1 − 2i cumule les deux erreurs. Le centre 1 − 2i confond Ω avec son opposé.",
       "difficulty": 3
     },
     {
@@ -119,11 +119,11 @@
         },
         {
           "id": "d",
-          "text": "sin 4α = 0"
+          "text": "cos 4α = 0"
         }
       ],
       "correctOption": "c",
-      "explanation": "O, A et B sont alignés si et seulement si le quotient z_A/z_B est réel. Or t³/(2t) = t²/2 = e^(2iα)/2, dont la partie imaginaire est (sin 2α)/2. La condition est donc sin 2α = 0 ✓, soit α = 0 ou α = π/2 sur [0 ; π/2]. Contrôle : pour α = π/2, t = i, A(−i) et B(2i) sont bien sur l'axe des ordonnées avec O. La condition cos 2α = 0 rend le quotient imaginaire, donc OA et OB perpendiculaires : par exemple α = π/4 donne A d'affixe e^(i3π/4) et B d'affixe 2e^(iπ/4), orthogonaux. La condition sin α = 0 ne garde que α = 0 et manque α = π/2. La condition sin 4α = 0 ajouterait à tort α = π/4.",
+      "explanation": "O, A et B sont alignés si et seulement si le quotient z_A/z_B est réel. Or t³/(2t) = t²/2 = e^(2iα)/2, dont la partie imaginaire est (sin 2α)/2. La condition est donc sin 2α = 0 ✓, soit α = 0 ou α = π/2 sur [0 ; π/2]. Contrôle : pour α = π/2, t = i, A(−i) et B(2i) sont bien sur l'axe des ordonnées avec O. La condition cos 2α = 0 rend le quotient imaginaire, donc OA et OB perpendiculaires : par exemple α = π/4 donne A d'affixe e^(i3π/4) et B d'affixe 2e^(iπ/4), orthogonaux. La condition sin α = 0 ne garde que α = 0 et manque α = π/2. La condition cos 4α = 0 donnerait α = π/8 ou 3π/8, où le quotient e^(2iα)/2 n'est pas réel.",
       "difficulty": 3
     },
     {
@@ -135,7 +135,7 @@
         },
         {
           "id": "b",
-          "text": "Si z³ est réel, alors z est réel"
+          "text": "Si z + z̄ = 0, alors z = 0"
         },
         {
           "id": "c",
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "L'inégalité |z + 1| ≤ |z| + 1 est l'inégalité triangulaire |z + z′| ≤ |z| + |z′| appliquée à z′ = 1 ✓. Les trois autres affirmations tombent sur un contre-exemple : pour z = e^(iπ/3) = 1/2 + i√3/2, z³ = e^(iπ) = −1 est réel et z ne l'est pas ; pour z = 1 et z′ = i, |z| = |z′| = 1 mais z ≠ ±z′ (deux points du même cercle ne sont pas forcément opposés) ; pour z = 1 + i, z² = 2i est imaginaire pur et z ne l'est pas.",
+      "explanation": "L'inégalité |z + 1| ≤ |z| + 1 est l'inégalité triangulaire |z + z′| ≤ |z| + |z′| appliquée à z′ = 1 ✓. Les trois autres affirmations tombent sur un contre-exemple : pour z = i, z + z̄ = 2Re(z) = 0 et z ≠ 0 ; pour z = 1 et z′ = i, |z| = |z′| = 1 mais z ≠ ±z′ (deux points du même cercle ne sont pas forcément opposés) ; pour z = 1 + i, z² = 2i est imaginaire pur et z ne l'est pas.",
       "difficulty": 3
     }
   ]

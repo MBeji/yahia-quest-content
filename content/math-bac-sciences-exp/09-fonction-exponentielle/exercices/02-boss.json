@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Comme m > 0, une solution est nécessairement > 0, et e^x = m x équivaut à m = h(x) avec h(x) = e^x/x sur ]0, +∞[. On a h′(x) = e^x(x − 1)/x², donc h décroît jusqu'à x = 1 puis croît, avec un minimum h(1) = e ; et h tend vers +∞ en 0⁺ comme en +∞. Par le théorème des valeurs intermédiaires, h prend exactement les valeurs m ≥ e ✓. Contrôle : pour m = 2 < e, e^x − 2x ≥ 2 − 2 ln 2 ≈ 0,61 > 0 : aucune solution ; pour m = 3, e^x − 3x vaut 3 − 3 ln 3 ≈ −0,30 < 0 en x = ln 3, donc il y en a. La condition m ≥ 1 vient de e^x ≥ x + 1, qui ne dit rien sur m x. La condition m ≥ 1/e confond avec le minimum de x e^(−x). La condition 0 < m ≤ e inverse le sens.",
+      "explanation": "Comme m > 0, une solution est nécessairement > 0, et e^x = m x équivaut à m = h(x) avec h(x) = e^x/x sur ]0, +∞[. On a h′(x) = e^x(x − 1)/x², donc h décroît jusqu'à x = 1 puis croît, avec un minimum h(1) = e ; et h tend vers +∞ en 0⁺ comme en +∞. Par le théorème des valeurs intermédiaires, h prend exactement les valeurs m ≥ e ✓. Contrôle : pour m = 2 < e, e^x − 2x ≥ 2 − 2 ln 2 ≈ 0,61 > 0 : aucune solution ; pour m = 3, e^x − 3x vaut 3 − 3 ln 3 ≈ −0,30 < 0 en x = ln 3, donc il y en a. La condition m ≥ 1 vient de e^x ≥ x + 1, qui ne dit rien sur m x. La condition m ≥ 1/e confond avec le maximum 1/e de x e^(−x) (atteint en x = 1). La condition 0 < m ≤ e inverse le sens.",
       "difficulty": 3
     },
     {
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "C'est l'affirmation « x ↦ 2^x est égale à sa propre dérivée » qui est fausse : (2^x)′ = (ln 2) 2^x, et ln 2 ≈ 0,693 ≠ 1 ; en 0, la pente de 2^x vaut 0,693, non 1 (seule la fonction exp est égale à sa dérivée). Les trois autres sont vraies : la base 1/3 est dans ]0, 1[, donc x ↦ (1/3)^x décroît, avec la limite +∞ en −∞ ; la dérivée de x^(r+1)/(r + 1) est x^r ; et ln x ≤ x − 1 < x < x + 1 ≤ e^x pour tout x > 0. Ici la réponse attendue est l'affirmation fausse elle-même.",
+      "explanation": "C'est l'affirmation « x ↦ 2^x est égale à sa propre dérivée » qui est fausse : (2^x)′ = (ln 2) 2^x, et ln 2 ≈ 0,693 ≠ 1 ; en 0, la pente de 2^x vaut 0,693, non 1 (seule la fonction exp est égale à sa dérivée). Les trois autres sont vraies : la base 1/3 est dans ]0, 1[, donc x ↦ (1/3)^x décroît, avec la limite +∞ en −∞ ; la dérivée de x^(r+1)/(r + 1) est x^r ; et ln x ≤ x − 1 < x < x + 1 ≤ e^x pour tout x > 0.",
       "difficulty": 3
     }
   ]

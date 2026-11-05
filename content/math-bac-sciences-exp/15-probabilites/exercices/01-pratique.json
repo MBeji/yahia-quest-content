@@ -1,0 +1,109 @@
+{
+  "title": "⭐ Exercice : Premiers pas dans le hasard",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une urne contient 5 jetons numérotés de 1 à 5. On tire 3 fois un jeton, en le remettant dans l'urne après chaque tirage. Combien de tirages ne contiennent aucun jeton portant le numéro 5 ?",
+      "answerKey": {
+        "value": 64
+      },
+      "explanation": "Un tirage est un 3-uplet de jetons, et exclure le numéro 5 laisse 4 numéros possibles à chaque rang, la remise rendant les rangs indépendants. Le nombre de tirages est 4³ = 4 × 4 × 4 = 64 ✓. Contrôle : sur les 5³ = 125 tirages possibles, 125 − 64 = 61 contiennent au moins un 5.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un lycée, 70 % des élèves ont un smartphone et 42 % ont à la fois un smartphone et une tablette. On interroge un élève qui a un smartphone. Quelle est la probabilité qu'il ait aussi une tablette ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.6
+      },
+      "explanation": "L'information « a un smartphone » est l'événement donné B ; on cherche p(tablette / smartphone) = p(tablette ∩ smartphone)/p(smartphone) = 0,42/0,70 = 0,6 ✓. Contrôle : sur 100 élèves, 70 ont un smartphone et 42 d'entre eux ont aussi une tablette, et 42/70 = 0,6.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un dé à six faces est truqué : la face 1 sort avec la probabilité 0,3 et les cinq autres faces sont équiprobables. Quelle est la probabilité d'obtenir un nombre impair ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,42"
+        },
+        {
+          "id": "b",
+          "text": "0,58"
+        },
+        {
+          "id": "c",
+          "text": "0,44"
+        },
+        {
+          "id": "d",
+          "text": "0,5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les cinq autres faces se partagent 1 − 0,3 = 0,7, soit 0,7/5 = 0,14 chacune. L'événement « impair » est {1, 3, 5} : p = 0,3 + 0,14 + 0,14 = 0,58 ✓. Contrôle : « pair » = {2, 4, 6} vaut 3 × 0,14 = 0,42 et 0,58 + 0,42 = 1. La valeur 0,5 suppose le dé équilibré, alors que la face 1 est favorisée ; 0,42 est la probabilité de « pair », l'événement contraire ; 0,44 = 0,3 + 0,14 ne compte que la face 1 et une seule autre face impaire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un tiroir contient 8 piles dont 3 sont usées. On prend 2 piles d'un seul geste, au hasard. Quelle est la probabilité que les deux soient usées ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/8"
+        },
+        {
+          "id": "b",
+          "text": "9/56"
+        },
+        {
+          "id": "c",
+          "text": "3/28"
+        },
+        {
+          "id": "d",
+          "text": "9/64"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un prélèvement simultané est une partie à 2 éléments, toutes équiprobables : card(E) = C_8^2 = 28. Les prélèvements de deux piles usées sont C_3^2 = 3. Donc p = 3/28 ✓. Contrôle par les rangs : (3/8) × (2/7) = 6/56 = 3/28. La valeur 9/64 = (3/8)² suppose que la première pile est remise avant la seconde ; 9/56 = (3/8)(3/7) oublie que la première pile usée n'est plus là ; 3/8 est la probabilité qu'une seule pile prise soit usée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Combien d'anagrammes (avec ou sans signification) le mot ANANAS possède-t-il ?",
+      "answerKey": {
+        "value": 60
+      },
+      "explanation": "Le mot a 6 lettres : trois A, deux N et un S. On choisit les 3 places des A parmi 6 : C_6^3 = 20 ; puis les 2 places des N parmi les 3 restantes : C_3^2 = 3 ; le S prend la dernière place. Total : 20 × 3 = 60 ✓. Contrôle : 6!/(3! × 2!) = 720/12 = 60. Écrire 6! = 720 compterait comme différents les rangements qui échangent deux A, alors qu'ils donnent le même mot.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On lance un dé équilibré. Soit A l'événement « le résultat est 3 ou 6 » et B l'événement « le résultat est pair ». Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A et B sont incompatibles, donc ils sont indépendants"
+        },
+        {
+          "id": "b",
+          "text": "A et B ne sont pas indépendants, car A ∩ B n'est pas vide"
+        },
+        {
+          "id": "c",
+          "text": "A et B ne sont pas indépendants, car 1/6 est différent de 1/3 + 1/2"
+        },
+        {
+          "id": "d",
+          "text": "A et B sont indépendants, car p(A ∩ B) = 1/6 = p(A) × p(B)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a A = {3, 6}, B = {2, 4, 6}, donc p(A) = 1/3, p(B) = 1/2 et A ∩ B = {6} avec p(A ∩ B) = 1/6. Or p(A) × p(B) = (1/3)(1/2) = 1/6 : les deux nombres sont égaux, donc A et B sont indépendants ✓. Dire que A et B sont incompatibles est faux, puisque le 6 appartient aux deux, et incompatible ne signifie de toute façon pas indépendant. Une intersection non vide n'empêche pas l'indépendance : c'est la comparaison avec le produit qui tranche. Enfin la somme 1/3 + 1/2 n'intervient pas dans la définition : c'est le produit qu'on compare à p(A ∩ B).",
+      "difficulty": 2
+    }
+  ]
+}

@@ -25,7 +25,7 @@ L'écriture z = a + ib est la **forme algébrique** de z : a est sa partie réel
 :::
 
 ::: propriete
-**Propriétés du conjugué** (p.7) — « Pour tous nombres complexes z et z′, (z + z′)‾ = z̄ + z̄′ ; (zz′)‾ = z̄ z̄′ ; (zⁿ)‾ = (z̄)ⁿ, n ∈ ℕ\*. Pour z′ non nul, (z/z′)‾ = z̄/z̄′. z + z̄ = 2 Re(z) ; z − z̄ = 2i Im(z) ; zz̄ = (Re(z))² + (Im(z))². z = z̄, si et seulement si, z est réel. z = −z̄, si et seulement si, z est imaginaire. »
+**Propriétés du conjugué** (p.7) — « • Pour tous nombres complexes z et z′, (z + z′)‾ = z̄ + z̄′ ; (zz′)‾ = z̄ z̄′ ; (zⁿ)‾ = (z̄)ⁿ ; n ∈ ℕ*. • Pour tout nombre complexe z et tout nombre complexe non nul z′, (z/z′)‾ = z̄/z̄′ ; (1/z′ⁿ)‾ = 1/(z̄′)ⁿ, n ∈ ℤ. • z + z̄ = 2 Re(z) ; z − z̄ = 2i Im(z) ; zz̄ = (Re(z))² + (Im(z))². • z = z̄, si et seulement si, z est réel. • z = −z̄, si et seulement si, z est imaginaire. »
 :::
 
 Les deux dernières lignes sont des **tests** : pour montrer qu'un nombre est réel, on montre qu'il est égal à son conjugué ; pour montrer qu'il est imaginaire, on montre qu'il est l'opposé de son conjugué.
@@ -52,7 +52,7 @@ Un drone se repère par deux coordonnées.
 Comment les ranger dans un seul nombre, pour que le déplacement d'un point à un autre devienne une simple soustraction, et que « parallèle » ou « perpendiculaire » se lise dans un quotient ?
 
 ::: definition
-**Affixe** (p.7) — « Le plan est muni d'un repère orthonormé direct (O, u⃗, v⃗). L'affixe d'un point M(a, b) du plan est le nombre complexe z = a + ib noté Aff(M) ou z_M. On dit aussi que le point M(a, b) est l'image de z. Soit w⃗ un vecteur et M et N deux points tels que w⃗ = MN⃗. Alors l'affixe du vecteur w⃗ est le nombre complexe z_w⃗ = z_N − z_M. Pour tous vecteurs w⃗ et w₁⃗ et tous réels α et β, Aff(αw⃗ + βw₁⃗) = αAff(w⃗) + βAff(w₁⃗). »
+**Affixe** (p.7) — « Le plan est muni d'un repère orthonormé direct (O, u⃗, v⃗). • L'affixe d'un point M(a, b) du plan est le nombre complexe z = a + ib noté Aff(M) ou z_M. On dit aussi que le point M(a, b) est l'image de z. • Soit w⃗ un vecteur et M et N deux points tels que w⃗ = MN⃗. Alors l'affixe du vecteur w⃗ est le nombre complexe noté Aff(w⃗) ou z_w⃗, vérifiant z_w⃗ = z_N − z_M. • Pour tous vecteurs w⃗ et w₁⃗ et tous réels α et β, Aff(αw⃗ + βw₁⃗) = αAff(w⃗) + βAff(w₁⃗). »
 :::
 
 On note M(z) le point d'affixe z. Les symétries se lisent directement sur l'affixe z = a + ib de M :
@@ -75,7 +75,7 @@ On note M(z) le point d'affixe z. Les symétries se lisent directement sur l'aff
 Le point 4 se généralise : c'est la propriété suivante, et sa jumelle sur l'orthogonalité.
 
 ::: propriete
-**Colinéarité et orthogonalité** (p.8) — « Soit w⃗ et w₁⃗ deux vecteurs tels que w₁⃗ est non nul. Les vecteurs w⃗ et w₁⃗ sont colinéaires, si et seulement si, z_w⃗/z_w₁⃗ est réel. Les vecteurs w⃗ et w₁⃗ sont orthogonaux, si et seulement si, z_w⃗/z_w₁⃗ est imaginaire. »
+**Colinéarité** (p.8) — « Soit w⃗ et w₁⃗ deux vecteurs tels que w₁⃗ ≠ 0⃗. Les vecteurs w⃗ et w₁⃗ sont colinéaires, si et seulement si, z_w⃗/z_w₁⃗ est réel. » **Orthogonalité** (p.8) — « Soit w⃗ et w₁⃗ deux vecteurs tels que w₁⃗ ≠ 0⃗. w⃗ et w₁⃗ sont orthogonaux, si et seulement si, z_w⃗/z_w₁⃗ est imaginaire. »
 **Démonstration.** Colinéaires ⟺ w⃗ = kw₁⃗ avec k réel ⟺ z_w⃗ = k z_w₁⃗ ⟺ z_w⃗/z_w₁⃗ = k, réel. Pour l'orthogonalité, posons z_w⃗ = a + ib et z_w₁⃗ = a′ + ib′ : le quotient vaut ((aa′ + bb′) + i(a′b − ab′))/(a′² + b′²). Il est imaginaire si et seulement si aa′ + bb′ = 0, c'est-à-dire si et seulement si le produit scalaire de (a ; b) et (a′ ; b′) est nul. ∎
 :::
 
@@ -107,11 +107,11 @@ Peut-on obtenir la distance MN sans sortir la règle, à partir des seuls nombre
 :::
 
 ::: figure Le module |z| est la longueur OM, et |z_N − z_M| la longueur MN : lire un module, c'est lire une distance sur la figure.
-<svg viewBox="0 0 340 260"><path d="M20 190 H330" fill="none" stroke="#0f172a" stroke-width="1.6"/><path d="M110 245 V20" fill="none" stroke="#0f172a" stroke-width="1.6"/><path d="M330 190 l-8 -4 l0 8 z" fill="#0f172a"/><path d="M110 20 l-4 8 l8 0 z" fill="#0f172a"/><path d="M230 110 V190 M230 110 H110" fill="none" stroke="#94a3b8" stroke-width="1.3" stroke-dasharray="5 4"/><path d="M110 190 L230 110" fill="none" stroke="#0f6e56" stroke-width="2.6"/><path d="M230 110 L70 150" fill="none" stroke="#b45309" stroke-width="2.2"/><path d="M110 190 L150 190 M110 190 L110 150" fill="none" stroke="#0f172a" stroke-width="3.4"/><g fill="#0f172a"><circle cx="230" cy="110" r="4"/><circle cx="70" cy="150" r="4"/><circle cx="230" cy="190" r="3"/><circle cx="110" cy="110" r="3"/></g><g font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="100" y="206" text-anchor="end" fill="#0f172a">O</text><text x="230" y="206" text-anchor="middle" fill="#0f172a">3</text><text x="102" y="114" text-anchor="end" fill="#0f172a">2</text><text x="238" y="102" fill="#0f172a">M(3 + 2i)</text><text x="62" y="142" text-anchor="end" fill="#0f172a">N(−1 + i)</text><text x="168" y="176" fill="#0f6e56">|z|</text><text x="140" y="148" text-anchor="middle" fill="#b45309">MN</text><text x="152" y="204" text-anchor="middle" fill="#0f172a">u</text><text x="98" y="154" text-anchor="end" fill="#0f172a">v</text></g></svg>
+<svg viewBox="-30 0 370 260"><path d="M20 190 H330" fill="none" stroke="#0f172a" stroke-width="1.6"/><path d="M110 245 V20" fill="none" stroke="#0f172a" stroke-width="1.6"/><path d="M330 190 l-8 -4 l0 8 z" fill="#0f172a"/><path d="M110 20 l-4 8 l8 0 z" fill="#0f172a"/><path d="M230 110 V190 M230 110 H110" fill="none" stroke="#94a3b8" stroke-width="1.3" stroke-dasharray="5 4"/><path d="M110 190 L230 110" fill="none" stroke="#0f6e56" stroke-width="2.6"/><path d="M230 110 L70 150" fill="none" stroke="#b45309" stroke-width="2.2"/><path d="M110 190 L150 190 M110 190 L110 150" fill="none" stroke="#0f172a" stroke-width="3.4"/><g fill="#0f172a"><circle cx="230" cy="110" r="4"/><circle cx="70" cy="150" r="4"/><circle cx="230" cy="190" r="3"/><circle cx="110" cy="110" r="3"/></g><g font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="100" y="206" text-anchor="end" fill="#0f172a">O</text><text x="230" y="206" text-anchor="middle" fill="#0f172a">3</text><text x="102" y="114" text-anchor="end" fill="#0f172a">2</text><text x="238" y="102" fill="#0f172a">M(3 + 2i)</text><text x="62" y="142" text-anchor="end" fill="#0f172a">N(−1 + i)</text><text x="168" y="176" fill="#0f6e56">|z|</text><text x="140" y="148" text-anchor="middle" fill="#b45309">MN</text><text x="152" y="204" text-anchor="middle" fill="#0f172a">u</text><text x="98" y="154" text-anchor="end" fill="#0f172a">v</text></g></svg>
 :::
 
 ::: propriete
-**Propriétés du module** (p.10) — « |z| = 0, si et seulement si, z = 0 ; |z + z′| ≤ |z| + |z′| ; |kz| = |k||z|, k ∈ ℝ. |zz′| = |z||z′| ; |z̄| = |z| ; |z|² = zz̄ ; |zⁿ| = |z|ⁿ, n ∈ ℕ\*. |1/z| = 1/|z| ; |z′/z| = |z′|/|z|, z ≠ 0. »
+**Propriétés du module** (p.10) — « Soit deux nombres complexes z et z′. |z| = 0, si et seulement si, z = 0 ; |z + z′| ≤ |z| + |z′| ; |kz| = |k||z|, k ∈ ℝ. |zz′| = |z||z′| ; |z̄| = |z| ; |z|² = zz̄ ; |zⁿ| = |z|ⁿ, n ∈ ℕ*. |1/z| = 1/|z|, z ≠ 0 ; |z′/z| = |z′|/|z|, z ≠ 0 ; |1/zⁿ| = 1/|z|ⁿ, z ≠ 0 et n ∈ ℤ. »
 :::
 
 ::: exemple Modules, nature d'un triangle
@@ -134,7 +134,7 @@ Peut-on obtenir la distance MN sans sortir la règle, à partir des seuls nombre
 :::
 
 ::: figure Le cercle de diamètre [AB] : tout point M du cercle, distinct de A et de B, voit [AB] sous un angle droit, donc AM⃗ et BM⃗ sont orthogonaux ; B, où le quotient n'existe pas, est exclu.
-<svg viewBox="0 0 300 250"><path d="M20 190 H285" fill="none" stroke="#0f172a" stroke-width="1.6"/><path d="M100 245 V15" fill="none" stroke="#0f172a" stroke-width="1.6"/><path d="M285 190 l-8 -4 l0 8 z" fill="#0f172a"/><path d="M100 15 l-4 8 l8 0 z" fill="#0f172a"/><circle cx="140" cy="150" r="56.6" fill="#0f6e56" opacity="0.08"/><circle cx="140" cy="150" r="56.6" fill="none" stroke="#0f6e56" stroke-width="2.6"/><path d="M100 110 L180 190" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/><path d="M168.3 101 L100 110 M168.3 101 L180 190" fill="none" stroke="#b45309" stroke-width="1.8"/><path d="M157.4 102.4 L158.8 113.4 L169.7 111.9" fill="none" stroke="#b45309" stroke-width="1.6"/><circle cx="100" cy="110" r="4" fill="#0f172a"/><circle cx="168.3" cy="101" r="4" fill="#0f172a"/><circle cx="100" cy="190" r="3" fill="#0f172a"/><circle cx="180" cy="190" r="4" fill="#ffffff" stroke="#0f172a" stroke-width="2"/><g font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="92" y="206" text-anchor="end" fill="#0f172a">O</text><text x="92" y="114" text-anchor="end" fill="#0f172a">A(i)</text><text x="188" y="206" text-anchor="start" fill="#0f172a">B(1)</text><text x="176.3" y="95" text-anchor="start" fill="#b45309">M</text><text x="126" y="172" text-anchor="start" fill="#94a3b8">Ω</text></g></svg>
+<svg viewBox="0 0 300 250"><path d="M20 190 H285" fill="none" stroke="#0f172a" stroke-width="1.6"/><path d="M100 245 V15" fill="none" stroke="#0f172a" stroke-width="1.6"/><path d="M285 190 l-8 -4 l0 8 z" fill="#0f172a"/><path d="M100 15 l-4 8 l8 0 z" fill="#0f172a"/><circle cx="140" cy="150" r="56.6" fill="#0f6e56" opacity="0.08"/><circle cx="140" cy="150" r="56.6" fill="none" stroke="#0f6e56" stroke-width="2.6"/><path d="M100 110 L180 190" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/><path d="M168.3 101 L100 110 M168.3 101 L180 190" fill="none" stroke="#b45309" stroke-width="1.8"/><path d="M157.4 102.4 L158.8 113.4 L169.7 111.9" fill="none" stroke="#b45309" stroke-width="1.6"/><circle cx="100" cy="110" r="4" fill="#0f172a"/><circle cx="168.3" cy="101" r="4" fill="#0f172a"/><circle cx="140" cy="150" r="3" fill="#94a3b8"/><circle cx="100" cy="190" r="3" fill="#0f172a"/><circle cx="180" cy="190" r="4" fill="#ffffff" stroke="#0f172a" stroke-width="2"/><g font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"><text x="92" y="206" text-anchor="end" fill="#0f172a">O</text><text x="92" y="114" text-anchor="end" fill="#0f172a">A(i)</text><text x="188" y="206" text-anchor="start" fill="#0f172a">B(1)</text><text x="176.3" y="95" text-anchor="start" fill="#b45309">M</text><text x="150" y="148" text-anchor="start" fill="#94a3b8">Ω</text></g></svg>
 :::
 
 ::: figure Le cercle d'équation |z − 1 + 2i| = 2 : tous les points M à distance 2 du point Ω(1 − 2i).
@@ -171,7 +171,7 @@ Les deux nombres (a ; b) sont une façon de le repérer ; existe-t-il un couple 
 :::
 
 ::: propriete
-**Écriture trigonométrique** (p.12) — « Soit z un nombre complexe non nul tel que arg(z) ≡ θ [2π]. Alors z = |z|(cos θ + i sin θ). Pour z = a + ib, arg(z) ≡ θ [2π], si et seulement si, cos θ = a/√(a² + b²) et sin θ = b/√(a² + b²). »
+**Écriture trigonométrique** (p.12) — « Soit z un nombre complexe non nul tel que arg(z) ≡ θ [2π]. Alors z = |z|(cos θ + i sin θ). L'écriture précédente est appelée écriture trigonométrique de z. » **Cosinus et sinus d'un argument** (p.12) — « Soit un nombre complexe non nul z = a + ib, a et b des réels. arg(z) ≡ θ [2π], si et seulement si, cos θ = a/√(a² + b²) et sin θ = b/√(a² + b²). »
 :::
 
 ::: exemple Trouver module et argument
@@ -253,7 +253,7 @@ Peut-on garder une notation qui rappelle cette propriété ?
 :::
 
 ::: propriete
-**Règles de calcul** (p.14–15) — « e^(i0) = 1, e^(iπ/2) = i, e^(−iπ/2) = −i, e^(iπ) = −1. Pour tout réel θ, |e^(iθ)| = 1, (e^(iθ))‾ = e^(−iθ) et −e^(iθ) = e^(i(θ+π)). e^(iθ)·e^(iθ′) = e^(i(θ+θ′)) ; 1/e^(iθ) = e^(−iθ) ; e^(iθ)/e^(iθ′) = e^(i(θ−θ′)) ; (e^(iθ))ⁿ = e^(inθ), n ∈ ℤ. Tout nombre complexe non nul z s'écrit z = re^(iθ), où r = |z| et arg(z) ≡ θ [2π] : c'est son écriture exponentielle. »
+**Conséquences** (p.14) — « • e^(i0) = 1, e^(iπ/2) = i, e^(−iπ/2) = −i, e^(iπ) = −1. • Pour tout réel θ et tout entier k, e^(iθ) = e^(i(θ+2kπ)). • Pour tout réel θ, |e^(iθ)| = 1 et (e^(iθ))‾ = e^(−iθ) et −e^(iθ) = e^(i(θ+π)). » **Propriétés** (p.14) — « Soit deux réels θ et θ′. e^(iθ)·e^(iθ′) = e^(i(θ+θ′)) ; 1/e^(iθ) = e^(−iθ) ; e^(iθ)/e^(iθ′) = e^(i(θ−θ′)) ; (e^(iθ))ⁿ = e^(inθ), n ∈ ℤ. » **Théorème et définition** (p.15) — « Tout nombre complexe non nul z, s'écrit sous la forme z = re^(iθ), où r = |z| et arg(z) ≡ θ [2π]. L'écriture z = re^(iθ) est appelée écriture exponentielle de z. »
 :::
 
 ::: exemple Calculer en exponentielle
@@ -261,7 +261,7 @@ Peut-on garder une notation qui rappelle cette propriété ?
 1. Passer à l'exponentielle. z = √3 + i = 2e^(iπ/6) et z′ = −1 + i = √2 e^(i3π/4) (module √2 ; cosinus −√2/2 et sinus √2/2, deuxième quadrant). D'un trait : zz′ = 2√2 e^(i11π/12), z̄ = 2e^(−iπ/6) et z/z′ = √2 e^(−i7π/12). Contrôle : π/6 = 2π/12 et 3π/4 = 9π/12, donc somme 11π/12 et différence −7π/12 ✓.
 2. Autres nombres : 2i = 2e^(iπ/2) ; −3i = 3e^(−iπ/2) ; −5/2 = (5/2)e^(iπ) ; √3(1 + i) = √6 e^(iπ/4).
 3. Un calcul de bac : (1 + i)¹⁴/(√3 − i)⁸ sous forme algébrique. 1 + i = √2 e^(iπ/4), donc (1 + i)¹⁴ = 128 e^(i7π/2) = 128 e^(i3π/2). √3 − i = 2e^(−iπ/6), donc (√3 − i)⁸ = 256 e^(−i4π/3) = 256 e^(i2π/3). Le quotient vaut (1/2) e^(i(3π/2 − 2π/3)) = (1/2) e^(i5π/6) = −√3/4 + i/4. Contrôle : module √(3/16 + 1/16) = 1/2 = 128/256 ✓.
-4. Un lieu. z = 1 + i + e^(iθ), θ ∈ [0, 2π[. Le point B(1 + 2i) en fait partie, car i = e^(iπ/2) donne z_B pour θ = π/2. Avec A(1 + i), z − z_A = e^(iθ) donne AM = |e^(iθ)| = 1 : M décrit le **cercle de centre A et de rayon 1**, en entier puisque θ parcourt un tour.
+4. Un lieu. z = 1 + i + e^(iθ), θ ∈ [0, 2π[. Le point B(1 + 2i) en fait partie, car i = e^(iπ/2) donne z_B pour θ = π/2. Avec A(1 + i), z − z_A = e^(iθ) donne AM = |e^(iθ)| = 1 : M décrit le **cercle de centre A et de rayon 1**, en entier puisque θ parcourt un tour. Si θ ne décrit que [0, π], M ne décrit que le demi-cercle supérieur ; avec −re^(iθ) = re^(i(θ+π)), c'est le demi-cercle inférieur.
 
 :::
 
@@ -345,6 +345,7 @@ La méthode : on remplace cos x ou sin x par les formules d'Euler, on développe
 2. Développer la puissance par le binôme de Newton.
 3. Regrouper les puissances opposées deux à deux en 2cos kx (pour cos) ou 2i sin kx (pour sin).
 4. Contrôler sur une valeur particulière de x.
+5. Pour un produit sinᵐx cosⁿx, remplacer chaque facteur par sa formule d'Euler, développer chaque puissance, puis le produit, et regrouper.
 :::
 
 ::: exemple Linéariser cos³x puis sin⁵x

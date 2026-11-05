@@ -214,6 +214,7 @@ Comment la reconnaître d'un coup d'œil dans une intégrale ?
 3. Primitive de f(x) = x e^(x²) sur ℝ. Avec u(x) = x², u′(x) = 2x, et x e^(x²) = ½ × 2x e^(x²) : une primitive est F(x) = ½e^(x²). Vérification : F′(x) = ½ × 2x × e^(x²) = x e^(x²) ✓.
 4. ∫₀¹ e^(−x+1) dx : avec u(x) = −x + 1, u′ = −1, une primitive de e^(−x+1) est −e^(1−x) ; l'intégrale vaut [−e^(1−x)]₀¹ = −1 + e = **e − 1 ≈ 1,718**. Et ∫₀¹ x e^(x²) dx = [½e^(x²)]₀¹ = (e − 1)/2 ≈ 0,859.
 5. ∫₀¹ x e^x dx exige une **intégration par parties** : avec f(x) = x et g′(x) = e^x, I = [x e^x]₀¹ − ∫₀¹ e^x dx = e − (e − 1) = **1**. Pour J = ∫₀¹ x² e^x dx, une seconde IPP donne J = [x² e^x]₀¹ − 2I = e − 2 ≈ 0,718. Contrôle : sur [0, 1], x² ≤ x, donc 0 < J < I ✓.
+6. **Deux parties qui reviennent au point de départ.** K = ∫₀^π e^x cos x dx. Avec f = cos x, g′ = e^x : K = [e^x cos x]₀^π + ∫₀^π e^x sin x dx = −e^π − 1 + L. Puis L = ∫₀^π e^x sin x dx = [e^x sin x]₀^π − ∫₀^π e^x cos x dx = 0 − K. Donc K = −e^π − 1 − K, soit **K = −(e^π + 1)/2 ≈ −12,07** : on ne calcule pas K, on résout une équation dont K est l'inconnue.
 
 :::
 
@@ -379,11 +380,11 @@ Et comment prouver qu'une suite définie par u_{n+1} = φ(u_n) converge vers la 
 
 :::
 
-::: figure L'« escalier » de la suite : la courbe C de φ (verte, décroissante) coupe la droite y = x en α ; les termes u₁, u₂, u₃, … tournent autour de α en s'en rapprochant.
+::: figure L'« escalier » de la suite : la courbe C de h (verte, décroissante) coupe la droite y = x en α ; les termes u₁, u₂, u₃, … tournent autour de α en s'en rapprochant.
 <svg viewBox="0 0 340 270">
-<title>Escalier de la suite définie par u₀ = 0 et u(n+1) = φ(u(n)), avec φ(x) = 1 − (1/2)eˣ : les termes alternent de part et d'autre de α, abscisse du point où la courbe de φ coupe la droite y = x, et s'en rapprochent</title>
+<title>Escalier de la suite définie par u₀ = 0 et u(n+1) = h(u(n)), avec h(x) = 1 − (1/2)eˣ : les termes alternent de part et d'autre de α, abscisse du point où la courbe de φ coupe la droite y = x, et s'en rapprochent</title>
 <line x1="10" y1="245" x2="330" y2="245" stroke="#0f172a" stroke-width="1.6"/><line x1="45" y1="256" x2="45" y2="12" stroke="#0f172a" stroke-width="1.6"/><polygon points="330,245 322,241 322,249" fill="#0f172a"/><polygon points="45,12 41,20 49,20" fill="#0f172a"/><line x1="45.0" y1="245.0" x2="285.0" y2="5.0" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/><polyline points="45.0,45.0 48.1,46.6 51.2,48.1 54.3,49.7 57.4,51.3 60.5,52.9 63.6,54.5 66.7,56.1 69.8,57.8 72.9,59.4 76.0,61.1 79.1,62.8 82.2,64.5 85.3,66.2 88.4,67.9 91.5,69.7 94.6,71.4 97.7,73.2 100.8,74.9 103.9,76.7 107.0,78.5 110.1,80.3 113.2,82.2 116.3,84.0 119.4,85.9 122.5,87.8 125.6,89.6 128.7,91.6 131.8,93.5 134.9,95.4 138.0,97.4 141.1,99.3 144.2,101.3 147.3,103.3 150.4,105.3 153.5,107.3 156.6,109.4 159.7,111.4 162.8,113.5 165.9,115.6 169.0,117.7 172.1,119.8 175.2,121.9 178.3,124.1 181.4,126.3 184.5,128.5 187.6,130.7 190.7,132.9 193.8,135.1 196.9,137.4 200.0,139.7 203.1,142.0 206.2,144.3 209.3,146.6 212.4,148.9 215.5,151.3 218.6,153.7 221.7,156.1 224.8,158.5 227.9,160.9 231.0,163.4 234.1,165.9 237.2,168.4 240.3,170.9 243.4,173.4 246.5,176.0 249.6,178.6 252.7,181.2 255.8,183.8 258.9,186.4 262.0,189.1 265.1,191.7 268.2,194.4 271.3,197.2 274.4,199.9 277.5,202.7 280.6,205.4 283.7,208.2 286.8,211.1 289.9,213.9 293.0,216.8" fill="none" stroke="#0f6e56" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/><polyline points="45.0,245.0 45.0,45.0 245.0,45.0 245.0,174.7 115.3,174.7 115.3,83.4 206.6,83.4 206.6,144.6 145.4,144.6" fill="none" stroke="#b45309" stroke-width="1.8"/><line x1="171.0" y1="119.0" x2="171.0" y2="245.0" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/><circle cx="171.0" cy="119.0" r="4" fill="#0f172a"/>
-<g font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="39.0" y="259.0" text-anchor="end" fill="#0f172a">O</text><text x="281.0" y="21.0" text-anchor="end" fill="#94a3b8">y = x</text><text x="284.0" y="198.0" text-anchor="start" fill="#0f6e56">C</text><text x="245.0" y="261.0" text-anchor="middle" fill="#0f172a">u₁</text><text x="115.3" y="261.0" text-anchor="middle" fill="#0f172a">u₂</text><text x="174.0" y="261.0" text-anchor="middle" fill="#0f172a">α</text><text x="214.6" y="261.0" text-anchor="middle" fill="#0f172a">u₃</text></g></svg>
+<g font-size="12" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="39.0" y="259.0" text-anchor="end" fill="#0f172a">O</text><text x="281.0" y="21.0" text-anchor="end" fill="#94a3b8">y = x</text><text x="284.0" y="198.0" text-anchor="start" fill="#0f6e56">C</text><text x="245.0" y="261.0" text-anchor="middle" fill="#0f172a">u₁</text><text x="115.3" y="261.0" text-anchor="middle" fill="#0f172a">u₂</text><text x="174.0" y="261.0" text-anchor="middle" fill="#0f172a">α</text><text x="206.6" y="261.0" text-anchor="middle" fill="#0f172a">u₃</text></g></svg>
 :::
 
 ::: exemple Une aire non bornée en apparence : F(X) = ∫₀^X e^(−x²) dx
@@ -391,7 +392,7 @@ Et comment prouver qu'une suite définie par u_{n+1} = φ(u_n) converge vers la 
 1. **Croissance.** L'intégrande est > 0, donc F est strictement croissante sur [0, +∞[.
 2. **Majoration.** Pour x ≥ 1, x² ≥ x, donc e^(−x²) ≤ e^(−x). Alors F(X) ≤ ∫₀¹ e^(−x²) dx + ∫₁^X e^(−x) dx. Or ∫₀¹ e^(−x²) dx ≤ 1 et ∫₁^X e^(−x) dx = e^(−1) − e^(−X) ≤ e^(−1) : F(X) ≤ 1 + e^(−1) ≈ 1,368.
 3. **Minoration.** Sur [0, 1], e^(−x²) ≥ e^(−1), donc F(X) ≥ ∫₀¹ e^(−x²) dx ≥ e^(−1) ≈ 0,368.
-4. **Conclusion.** F est croissante et majorée : elle a une limite finie L, avec e^(−1) ≤ L ≤ 1 + e^(−1), sans que l'on sache calculer F(X) — car x ↦ e^(−x²) n'est pas de la forme u′e^u.
+4. **Conclusion.** F est croissante et majorée : elle a une limite finie L, avec e^(−1) ≤ L ≤ 1 + e^(−1), sans que l'on sache calculer F(X) — car x ↦ e^(−x²) n'est pas de la forme u′e^u et n'a pas de primitive exprimable avec les fonctions usuelles.
 
 :::
 

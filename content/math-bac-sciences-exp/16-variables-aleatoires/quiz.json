@@ -1,0 +1,173 @@
+{
+  "title": "Test de compréhension ⭐ : Variables aléatoires",
+  "questions": [
+    {
+      "prompt": "Une variable aléatoire X prend les valeurs −1, 0, 3 et 5. On sait que p(X = −1) = 0,15 ; p(X = 0) = 0,35 et p(X = 5) = 0,2. Quelle est p(X = 3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,7"
+        },
+        {
+          "id": "b",
+          "text": "0,3"
+        },
+        {
+          "id": "c",
+          "text": "0,8"
+        },
+        {
+          "id": "d",
+          "text": "0,5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les probabilités d'une loi ont pour somme 1 : p(X = 3) = 1 − (0,15 + 0,35 + 0,2) = 1 − 0,7 = 0,3 ✓. Le nombre 0,7 est la somme des trois probabilités connues, 0,8 = 1 − 0,2 ne retranche que p(X = 5), et 0,5 = 0,15 + 0,35 n'en retranche que deux sur trois.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une loterie donne un gain X, en dinars : X vaut 0 avec la probabilité 0,5 ; vaut 4 avec la probabilité 0,3 et vaut 10 avec la probabilité 0,2. Quelle est l'espérance de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3,2"
+        },
+        {
+          "id": "d",
+          "text": "4,67"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E(X) = 0 × 0,5 + 4 × 0,3 + 10 × 0,2 = 0 + 1,2 + 2 = 3,2 ✓. La moyenne simple (0 + 4 + 10)/3 ≈ 4,67 ignore les probabilités ; 2 est la seule contribution de la valeur 10, et 1,2 celle de la valeur 4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une variable aléatoire X prend la valeur 0 avec la probabilité 0,75 et la valeur 6 avec la probabilité 0,25. Quelle est sa variance ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,75"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "7,5"
+        },
+        {
+          "id": "d",
+          "text": "2,6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "E(X) = 6 × 0,25 = 1,5 et E(X²) = 36 × 0,25 = 9, donc V(X) = E(X²) − (E(X))² = 9 − 2,25 = 6,75 ✓. Le nombre 9 oublie de retrancher le carré de l'espérance, 7,5 = 9 − 1,5 retranche E(X) au lieu de son carré, et 2,6 ≈ √6,75 est l'écart-type, non la variance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une variable aléatoire X prend les valeurs 2, 5, 8 et 11 avec les probabilités respectives 0,1 ; 0,3 ; 0,35 et 0,25. Quelle est p(X < 8) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,75"
+        },
+        {
+          "id": "b",
+          "text": "0,35"
+        },
+        {
+          "id": "c",
+          "text": "0,6"
+        },
+        {
+          "id": "d",
+          "text": "0,4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'inégalité est stricte : on ne garde que les valeurs 2 et 5, donc p(X < 8) = 0,1 + 0,3 = 0,4 ✓. Le nombre 0,75 est F(8) = p(X ≤ 8), qui compte aussi la valeur 8 ; 0,35 est la probabilité de la seule valeur 8 ; 0,6 = 0,35 + 0,25 est p(X ≥ 8).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "X suit la loi binomiale ℬ(4 ; 0,3). Quelle est p(X = 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,1029"
+        },
+        {
+          "id": "b",
+          "text": "0,0756"
+        },
+        {
+          "id": "c",
+          "text": "0,4116"
+        },
+        {
+          "id": "d",
+          "text": "0,84"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "p(X = 1) = C₄¹ × 0,3 × 0,7³ = 4 × 0,3 × 0,343 = 0,4116 ✓. Le nombre 0,1029 = 0,3 × 0,7³ oublie le coefficient 4, 0,0756 = 4 × 0,7 × 0,3³ échange les rôles de k et de n − k, et 0,84 = 4 × 0,3 × 0,7 oublie les exposants.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La durée X d'une pause, en minutes, suit la loi uniforme sur [10 ; 30]. Quelle est la probabilité que la pause dure au moins 25 minutes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,2"
+        },
+        {
+          "id": "b",
+          "text": "0,25"
+        },
+        {
+          "id": "c",
+          "text": "0,75"
+        },
+        {
+          "id": "d",
+          "text": "0,05"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La densité vaut 1/(30 − 10) = 1/20, donc p(X ≥ 25) = p(25 ≤ X ≤ 30) = (30 − 25)/20 = 5/20 = 0,25 ✓. Le nombre 0,2 = 5/25 divise par 25 au lieu de b − a = 20, 0,75 est la probabilité contraire p(X ≤ 25), et 0,05 est la densité 1/20 elle-même.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "X suit la loi exponentielle de paramètre λ, et p(X ≥ 4) = e^(−2). Quelle est la valeur de λ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,5"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "0,25"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a p(X ≥ 4) = e^(−4λ) = e^(−2), donc 4λ = 2 et λ = 0,5 ✓. Le nombre 2 est l'exposant lu sans tenir compte du facteur 4, 8 = 4 × 2 multiplie au lieu de diviser, et 0,25 est l'inverse de 4, qui n'a aucun lien avec l'exposant.",
+      "difficulty": 2
+    }
+  ]
+}

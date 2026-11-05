@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Le facteur −1 s'écrit e^(iπ) : z = 3e^(iπ/5) e^(iπ) = 3e^(i6π/5). L'angle 6π/5 sort de ]−π ; π] ; on retranche 2π : 6π/5 − 2π = −4π/5, d'où z = 3e^(−i4π/5) ✓. Contrôle : z est l'opposé d'un point du premier quadrant, donc dans le troisième quadrant, où l'argument est négatif entre −π et −π/2 ✓. La réponse « 3e^(−iπ/5) » est le conjugué de e^(iπ/5) multiplié par −1 mal compris : elle change le signe de l'angle. La réponse « 3e^(i6π/5) » représente bien z, mais son angle est hors de l'intervalle demandé. La réponse « 3e^(i4π/5) » correspond au symétrique par rapport à l'axe des ordonnées.",
+      "explanation": "Le facteur −1 s'écrit e^(iπ) : z = 3e^(iπ/5) e^(iπ) = 3e^(i6π/5). L'angle 6π/5 sort de ]−π ; π] ; on retranche 2π : 6π/5 − 2π = −4π/5, d'où z = 3e^(−i4π/5) ✓. Contrôle : z est l'opposé d'un point du premier quadrant, donc dans le troisième quadrant, où l'argument est négatif entre −π et −π/2 ✓. La réponse « 3e^(−iπ/5) » change le signe de l'angle au lieu d'ajouter π : c'est 3 fois le conjugué de e^(iπ/5), pas son opposé. La réponse « 3e^(i6π/5) » représente bien z, mais son angle est hors de l'intervalle demandé. La réponse « 3e^(i4π/5) » correspond au symétrique par rapport à l'axe des ordonnées.",
       "difficulty": 2
     },
     {
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Une voie courte : sin²x cos³x = cos x (sin x cos x)² = cos x · sin²2x/4 = cos x (1 − cos 4x)/8, et cos x cos 4x = (cos 5x + cos 3x)/2, d'où (1/8)cos x − (1/16)(cos 5x + cos 3x) = (2cos x − cos 3x − cos 5x)/16 ✓. La même méthode par Euler (sin²x = −(e^(ix) − e^(−ix))²/4 et cos³x = (e^(ix) + e^(−ix))³/8) donne le même résultat. Contrôle en x = π/4 : sin² = 1/2 et cos³ = √2/4, donc le produit vaut √2/8 ≈ 0,177, et (√2 + √2/2 + √2/2)/16 = 2√2/16 = √2/8 ✓. L'expression avec les trois signes + donnerait 0 en x = π/4. L'expression divisée par 8 donnerait 0,354, deux fois trop. L'expression qui commence par cos x seul perd un facteur 2 et donnerait 0,133.",
+      "explanation": "Par Euler : sin²x cos³x = −(e^(ix) − e^(−ix))²(e^(ix) + e^(−ix))³/32. On regroupe (e^(ix) − e^(−ix))(e^(ix) + e^(−ix)) = e^(2ix) − e^(−2ix), d'où (e^(2ix) − e^(−2ix))²(e^(ix) + e^(−ix)) = (e^(4ix) − 2 + e^(−4ix))(e^(ix) + e^(−ix)) = 2cos 5x + 2cos 3x − 4cos x, et sin²x cos³x = (2cos x − cos 3x − cos 5x)/16 ✓. Une voie courte : sin²x cos³x = cos x (sin x cos x)² = cos x · sin²2x/4 = cos x (1 − cos 4x)/8, et cos x cos 4x = (cos 5x + cos 3x)/2, ce qui donne le même résultat. Contrôle en x = π/4 : sin² = 1/2 et cos³ = √2/4, donc le produit vaut √2/8 ≈ 0,177, et (√2 + √2/2 + √2/2)/16 = 2√2/16 = √2/8 ✓. L'expression avec les trois signes + donnerait 0 en x = π/4. L'expression divisée par 8 donnerait 0,354, deux fois trop. L'expression qui commence par cos x seul perd un facteur 2 et donnerait 0,133.",
       "difficulty": 3
     },
     {

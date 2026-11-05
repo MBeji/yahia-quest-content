@@ -1,0 +1,139 @@
+{
+  "title": "⭐ Exercice : Les premiers produits",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans le cube ABCDEFGH d'arête 5 de la figure, quelle est la valeur de AC⃗ . AG⃗ ?\n<svg viewBox=\"0 0 250 232\">\n<title>Cube ABCDEFGH d'arête 5</title>\n<polygon points=\"36,200 136,200 136,100 36,100\" fill=\"#0f6e56\" opacity=\"0.1\"/>\n<line x1=\"179.3\" y1=\"175\" x2=\"79.3\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"79.3\" y1=\"175\" x2=\"36\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"79.3\" y1=\"175\" x2=\"79.3\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"36\" y1=\"200\" x2=\"136\" y2=\"200\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"179.3\" y2=\"175\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"36\" y1=\"100\" x2=\"136\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"100\" x2=\"179.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"179.3\" y1=\"75\" x2=\"79.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"79.3\" y1=\"75\" x2=\"36\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"36\" y1=\"200\" x2=\"36\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"136\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"179.3\" y1=\"175\" x2=\"179.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<circle cx=\"36\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"136\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"179.3\" cy=\"175\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"79.3\" cy=\"175\" r=\"3.5\" fill=\"#94a3b8\"/>\n<circle cx=\"36\" cy=\"100\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"136\" cy=\"100\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"179.3\" cy=\"75\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"79.3\" cy=\"75\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"24\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text>\n<text x=\"146\" y=\"218\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text>\n<text x=\"193.3\" y=\"180\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text>\n<text x=\"67.3\" y=\"169\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text>\n<text x=\"24\" y=\"98\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text>\n<text x=\"124\" y=\"92\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">F</text>\n<text x=\"193.3\" y=\"69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">G</text>\n<text x=\"75.3\" y=\"65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">H</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "25"
+        },
+        {
+          "id": "b",
+          "text": "50"
+        },
+        {
+          "id": "c",
+          "text": "25√6"
+        },
+        {
+          "id": "d",
+          "text": "75"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans le repère orthonormé (A ; AB⃗/5, AD⃗/5, AE⃗/5), AC⃗(5 ; 5 ; 0) et AG⃗(5 ; 5 ; 5), donc AC⃗ . AG⃗ = 25 + 25 + 0 = 50 ✓. Le résultat 25 ne garde qu'un seul des deux premiers termes, 75 est AG⃗ . AG⃗ = AG², et 25√6 est le produit des normes AC × AG = 5√2 × 5√3, qui oublie le cosinus.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la norme du vecteur u⃗(2 ; −6 ; 9) dans un repère orthonormé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "121"
+        },
+        {
+          "id": "b",
+          "text": "17"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "‖u⃗‖ = √(2² + (−6)² + 9²) = √(4 + 36 + 81) = √121 = 11 ✓. Le résultat 121 oublie la racine carrée, 17 additionne les valeurs absolues des coordonnées, et 5 additionne les coordonnées signées.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un repère de l'espace, on donne A(1 ; 0 ; 2), B(2 ; 1 ; 0) et C(0 ; 2 ; 1). Lequel de ces points D appartient au plan (ABC) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(4 ; 0 ; −1)"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; 2 ; 0)"
+        },
+        {
+          "id": "c",
+          "text": "(−1 ; 3 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "(1 ; −1 ; 2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "AB⃗(1 ; 1 ; −2) et AC⃗(−1 ; 2 ; −1) donnent AB⃗ ∧ AC⃗ = (3 ; 3 ; 3), et le point D est dans le plan (ABC) si et seulement si le déterminant (AB⃗ ∧ AC⃗) . AD⃗ est nul. Pour D(4 ; 0 ; −1), AD⃗(3 ; 0 ; −3) et 9 + 0 − 9 = 0 ✓. Les autres points donnent un déterminant non nul : AD⃗(1 ; 2 ; −2) pour D(2 ; 2 ; 0) donne 3, AD⃗(−2 ; 3 ; −2) pour D(−1 ; 3 ; 0) donne −3, et AD⃗(0 ; −1 ; 0) pour D(1 ; −1 ; 2) donne −3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le cube ABCDEFGH de la figure est muni du repère orthonormé direct (A ; AB⃗, AD⃗, AE⃗). Laquelle de ces bases est directe ?\n<svg viewBox=\"0 0 250 232\">\n<title>Cube ABCDEFGH muni du repère orthonormé direct (A, AB, AD, AE)</title>\n<polygon points=\"36,200 136,200 136,100 36,100\" fill=\"#0f6e56\" opacity=\"0.1\"/>\n<line x1=\"179.3\" y1=\"175\" x2=\"79.3\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"79.3\" y1=\"175\" x2=\"36\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"79.3\" y1=\"175\" x2=\"79.3\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/>\n<line x1=\"36\" y1=\"200\" x2=\"136\" y2=\"200\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"179.3\" y2=\"175\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"36\" y1=\"100\" x2=\"136\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"100\" x2=\"179.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"179.3\" y1=\"75\" x2=\"79.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"79.3\" y1=\"75\" x2=\"36\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"36\" y1=\"200\" x2=\"36\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"136\" y1=\"200\" x2=\"136\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<line x1=\"179.3\" y1=\"175\" x2=\"179.3\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<circle cx=\"36\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"136\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"179.3\" cy=\"175\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"79.3\" cy=\"175\" r=\"3.5\" fill=\"#94a3b8\"/>\n<circle cx=\"36\" cy=\"100\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"136\" cy=\"100\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"179.3\" cy=\"75\" r=\"3.5\" fill=\"#0f172a\"/>\n<circle cx=\"79.3\" cy=\"75\" r=\"3.5\" fill=\"#0f172a\"/>\n<text x=\"24\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text>\n<text x=\"146\" y=\"218\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text>\n<text x=\"193.3\" y=\"180\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text>\n<text x=\"67.3\" y=\"169\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text>\n<text x=\"24\" y=\"98\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text>\n<text x=\"124\" y=\"92\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">F</text>\n<text x=\"193.3\" y=\"69\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">G</text>\n<text x=\"75.3\" y=\"65\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"14\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">H</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(DA⃗, DH⃗, DC⃗)"
+        },
+        {
+          "id": "b",
+          "text": "(DC⃗, DA⃗, DH⃗)"
+        },
+        {
+          "id": "c",
+          "text": "(HD⃗, DA⃗, DC⃗)"
+        },
+        {
+          "id": "d",
+          "text": "(DH⃗, DA⃗, DC⃗)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "DA⃗ = −AD⃗, DC⃗ = AB⃗, DH⃗ = AE⃗ et HD⃗ = −AE⃗. La base (DH⃗, DA⃗, DC⃗) est donc (AE⃗, −AD⃗, AB⃗), permutation circulaire de (−AD⃗, AB⃗, AE⃗), soit un échange de AB⃗ et AD⃗ puis un changement de signe : deux changements d'orientation, donc elle est directe ✓. La base (DC⃗, DA⃗, DH⃗) = (AB⃗, −AD⃗, AE⃗) ne change qu'un signe : elle est indirecte. (DA⃗, DH⃗, DC⃗) = (−AD⃗, AE⃗, AB⃗) est une permutation circulaire de (AB⃗, −AD⃗, AE⃗), indirecte aussi. Enfin (HD⃗, DA⃗, DC⃗) = (−AE⃗, −AD⃗, AB⃗) : (AE⃗, AD⃗, AB⃗) est indirecte, et deux signes changés la laissent indirecte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct (O, i⃗, j⃗, k⃗), quel est le vecteur (2i⃗ − j⃗) ∧ (i⃗ + 3k⃗) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3i⃗ + 6j⃗ + k⃗"
+        },
+        {
+          "id": "b",
+          "text": "−3i⃗ − 6j⃗ + k⃗"
+        },
+        {
+          "id": "c",
+          "text": "−3i⃗ − 6j⃗ − k⃗"
+        },
+        {
+          "id": "d",
+          "text": "3i⃗ + 6j⃗ − k⃗"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par bilinéarité, (2i⃗ − j⃗) ∧ (i⃗ + 3k⃗) = 2 i⃗ ∧ i⃗ + 6 i⃗ ∧ k⃗ − j⃗ ∧ i⃗ − 3 j⃗ ∧ k⃗. Dans la base orthonormée directe, i⃗ ∧ j⃗ = k⃗, j⃗ ∧ k⃗ = i⃗ et k⃗ ∧ i⃗ = j⃗ (permutations circulaires), donc i⃗ ∧ k⃗ = −j⃗ et j⃗ ∧ i⃗ = −k⃗. Il reste 0 − 6j⃗ + k⃗ − 3i⃗ = −3i⃗ − 6j⃗ + k⃗ ✓. Contrôle en coordonnées : (2 ; −1 ; 0) ∧ (1 ; 0 ; 3) = ((−1) × 3 − 0 × 0 ; 0 × 1 − 2 × 3 ; 2 × 0 − (−1) × 1) = (−3 ; −6 ; 1). Le résultat −3i⃗ + 6j⃗ + k⃗ prend i⃗ ∧ k⃗ = j⃗, −3i⃗ − 6j⃗ − k⃗ prend j⃗ ∧ i⃗ = k⃗, et 3i⃗ + 6j⃗ − k⃗ est l'opposé, obtenu en inversant l'ordre des facteurs.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un repère orthonormé direct, ABCD est un parallélogramme avec A(1 ; 0 ; −1), B(3 ; 3 ; 1) et D(−1 ; 0 ; 0). Quelle est son aire, en unités d'aire ?",
+      "answerKey": {
+        "value": 9
+      },
+      "explanation": "AB⃗(2 ; 3 ; 2) et AD⃗(−2 ; 0 ; 1) donnent AB⃗ ∧ AD⃗ = (3 × 1 − 2 × 0 ; 2 × (−2) − 2 × 1 ; 2 × 0 − 3 × (−2)) = (3 ; −6 ; 6), de norme √(9 + 36 + 36) = 9. L'aire du parallélogramme est ‖AB⃗ ∧ AD⃗‖ = 9 ✓.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les arbitres de la droite",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Pour une série double (X, Y), la droite de régression de Y en X a pour pente 1,2, avec σ_X = 3 et ρ_XY = 0,9. Que vaut l'écart-type σ_Y ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,25"
+        },
+        {
+          "id": "b",
+          "text": "3,24"
+        },
+        {
+          "id": "c",
+          "text": "3,6"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La pente est a = cov(X, Y)/σ_X², et cov(X, Y) = ρ_XY σ_X σ_Y d'après la définition de ρ_XY. Donc a = ρ_XY σ_Y/σ_X, soit σ_Y = a σ_X/ρ_XY = 1,2 × 3/0,9 = 3,6/0,9 = 4 ✓. Contrôle : cov(X, Y) = 0,9 × 3 × 4 = 10,8 et 10,8/3² = 1,2 ✓. Le nombre 3,6 oublie de diviser par ρ_XY, le nombre 3,24 multiplie par ρ_XY au lieu de diviser, et le nombre 2,25 divise σ_X ρ_XY par a : le quotient est renversé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chasse à l'erreur. Un élève ajuste les couples (1 ; 4), (2 ; 7), (3 ; 7) et (4 ; 12) par les moindres carrés. Étape 1 : X̄ = 2,5 et Ȳ = 7,5. Étape 2 : cov(X, Y) = 87/4 − 2,5 × 7,5 = 3. Étape 3 : V(X) = 7,5 − 2,5² = 1,25, puis a = 3/√1,25 ≈ 2,68. Étape 4 : b = 7,5 − 2,68 × 2,5 ≈ 0,8. Quelle est la première étape fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étape 1 : les moyennes"
+        },
+        {
+          "id": "b",
+          "text": "Étape 2 : la covariance"
+        },
+        {
+          "id": "c",
+          "text": "Étape 3 : la pente a"
+        },
+        {
+          "id": "d",
+          "text": "Étape 4 : l'ordonnée à l'origine b"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On vérifie dans l'ordre. Étape 1 : (1 + 2 + 3 + 4)/4 = 2,5 et (4 + 7 + 7 + 12)/4 = 7,5, c'est juste. Étape 2 : Σxᵢyᵢ = 4 + 14 + 21 + 48 = 87, donc 87/4 − 18,75 = 21,75 − 18,75 = 3, c'est juste. À l'étape 3, V(X) = 30/4 − 6,25 = 1,25 est juste, mais la pente est cov(X, Y)/V(X) = 3/1,25 = 2,4 : l'élève a divisé par l'écart-type σ_X = √1,25 au lieu de la variance ✓. Le calcul de b à l'étape 4 est faux à son tour, mais seulement parce qu'il réutilise la pente fausse : avec a = 2,4, b = 7,5 − 2,4 × 2,5 = 1,5. La première erreur est donc celle de la pente.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On ajuste les cinq points (0 ; 2), (1 ; 4), (2 ; 6), (3 ; 11) et (4 ; 12) de deux façons : par la méthode de Mayer, avec les trois premiers points d'un côté et les deux derniers de l'autre, puis par les moindres carrés. On note S = Σ(yᵢ − zᵢ)², où zᵢ est la valeur donnée par la droite. Quelles sont les valeurs de S, dans l'ordre (Mayer ; moindres carrés) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = 4 puis S = 3,1"
+        },
+        {
+          "id": "b",
+          "text": "S = 0 puis S = 0"
+        },
+        {
+          "id": "c",
+          "text": "S = 4 puis S = 3,4"
+        },
+        {
+          "id": "d",
+          "text": "S = 3,1 puis S = 4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Mayer : G₁(1 ; 4) et G₂(3,5 ; 11,5) donnent a = 7,5/2,5 = 3 et b = 4 − 3 = 1, donc zᵢ = 1, 4, 7, 10, 13 et les écarts 1, 0, −1, 1, −1 : S = 1 + 0 + 1 + 1 + 1 = 4. Moindres carrés : X̄ = 2, Ȳ = 7, V(X) = 2 et cov(X, Y) = 97/5 − 14 = 5,4, donc a = 2,7 et b = 7 − 5,4 = 1,6 ; les zᵢ valent 1,6 ; 4,3 ; 7 ; 9,7 ; 12,4, les écarts 0,4 ; −0,3 ; −1 ; 1,3 ; −0,4, et S = 0,16 + 0,09 + 1 + 1,69 + 0,16 = 3,1 ✓. On a bien 3,1 ≤ 4 : aucune droite ne fait mieux que celle des moindres carrés. Le couple (0 ; 0) est la somme des écarts non élevés au carré, nulle pour toute droite passant par G. Le couple (4 ; 3,4) additionne les écarts en valeur absolue (0,4 + 0,3 + 1 + 1,3 + 0,4 = 3,4), sans carrés. Le couple (3,1 ; 4) inverse l'ordre des deux méthodes.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une grandeur Y mesurée chaque année (X est le nombre d'années écoulées), le nuage est incurvé ; on pose Z = ln Y et on obtient la droite z = 0,3x + 1,2, avec ρ_XZ = 0,998. De combien de pour cent Y augmente-t-il environ chaque année ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,3 %"
+        },
+        {
+          "id": "b",
+          "text": "30 %"
+        },
+        {
+          "id": "c",
+          "text": "35 %"
+        },
+        {
+          "id": "d",
+          "text": "135 %"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme ρ_XZ = 0,998 est supérieur à √3/2, l'ajustement est justifié. On revient à Y par l'exponentielle : y = e^(0,3x + 1,2) = e^1,2 × (e^0,3)^x. Chaque année, Y est donc multiplié par e^0,3 ≈ 1,35, soit une augmentation d'environ 35 % ✓. Contrôle : 1,35 − 1 = 0,35. Le nombre 30 % lit la pente 0,3 comme un taux, alors que c'est l'exposant. Le nombre 0,3 % traite 0,3 comme un pourcentage. Le nombre 135 % confond le coefficient multiplicateur 1,35 avec l'augmentation.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La population d'une ville est modélisée par f(t) = 20e^(0,04t), en milliers d'habitants, t étant le nombre d'années écoulées depuis 2000. Quelle est la valeur moyenne de f sur [0 ; 15], arrondie au dixième ?",
+      "answerKey": {
+        "value": 27.4,
+        "tolerance": 0.05
+      },
+      "explanation": "La valeur moyenne de f sur [0 ; 15] est (1/15)∫ f(t) dt sur [0 ; 15]. Une primitive de f est F(t) = (20/0,04)e^(0,04t) = 500e^(0,04t). Donc l'intégrale vaut 500(e^0,6 − 1) ≈ 500 × 0,8221 = 411,06, et la valeur moyenne est 411,06/15 ≈ 27,4 milliers d'habitants ✓. Le piège courant est de prendre la moyenne des valeurs extrêmes : (f(0) + f(15))/2 = (20 + 36,44)/2 ≈ 28,2. Elle est plus grande, car f est convexe : la courbe passe sous sa corde.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le diamètre D (en cm) d'une tige semble tendre vers 10 cm au cours des semaines. On pose U = ln(10/D − 1) et l'ajustement affine de U en fonction du nombre t de semaines donne u = 2 − 0,4t. Quel diamètre prévoit-on à t = 7 semaines, arrondi au dixième ?",
+      "answerKey": {
+        "value": 6.9,
+        "tolerance": 0.05
+      },
+      "explanation": "À t = 7, u = 2 − 0,4 × 7 = −0,8. Comme U = ln(10/D − 1), on a 10/D − 1 = e^(−0,8) ≈ 0,4493, donc 10/D ≈ 1,4493 et D ≈ 10/1,4493 ≈ 6,9 cm ✓. Contrôle : ln(10/6,9 − 1) = ln(0,4493) ≈ −0,80 ✓. Le résultat reste inférieur à 10 cm, ce qui est cohérent avec la limite attendue. Le piège courant est de s'arrêter à u = −0,8 ou d'écrire D = 10 × e^u : il faut inverser la transformation en entier, D = 10/(1 + e^u).",
+      "difficulty": 3
+    }
+  ]
+}

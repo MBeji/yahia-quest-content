@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Statistiques",
+  "questions": [
+    {
+      "prompt": "Sur 40 élèves, on relève X, le nombre de clubs fréquentés (0, 1 ou 2), et Y, le nombre de livres lus ce mois-ci (1, 2 ou 3). Les effectifs nᵢⱼ figurent dans le tableau. Quel est l'effectif marginal de la valeur Y = 2 ? <svg viewBox=\"0 0 328 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 1</text><text x=\"209.5\" y=\"34\">Y = 2</text><text x=\"282.5\" y=\"34\">Y = 3</text><text x=\"55\" y=\"72\">X = 0</text><text x=\"55\" y=\"110\">X = 1</text><text x=\"55\" y=\"148\">X = 2</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">7</text><text x=\"209.5\" y=\"72\">3</text><text x=\"282.5\" y=\"72\">2</text><text x=\"136.5\" y=\"110\">4</text><text x=\"209.5\" y=\"110\">9</text><text x=\"282.5\" y=\"110\">5</text><text x=\"136.5\" y=\"148\">2</text><text x=\"209.5\" y=\"148\">5</text><text x=\"282.5\" y=\"148\">3</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        },
+        {
+          "id": "d",
+          "text": "18"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'effectif marginal d'une valeur de Y est le total de sa colonne : 3 + 9 + 5 = 17 ✓. Contrôle : les trois colonnes totalisent 13, 17 et 10, soit 40 élèves, et les trois lignes 12, 18 et 10 redonnent aussi 40. Le nombre 9 est l'effectif de la seule case (X = 1, Y = 2) : c'est la confusion entre une case et une marge. Le nombre 18 est bien un total, mais celui de la ligne X = 1, donc une marge de l'autre variable. Le nombre 13 est l'effectif marginal de Y = 1, c'est-à-dire la mauvaise colonne.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Cinq parcelles donnent l'altitude X et le rendement Y : (3 ; 14), (5 ; 11), (7 ; 9), (9 ; 6) et (11 ; 5). Quel est le point moyen G du nuage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(7 ; 9)"
+        },
+        {
+          "id": "b",
+          "text": "G(7 ; 45)"
+        },
+        {
+          "id": "c",
+          "text": "G(9 ; 7)"
+        },
+        {
+          "id": "d",
+          "text": "G(35 ; 45)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le point moyen a pour coordonnées les deux moyennes marginales. Sur X : Σxᵢ = 3 + 5 + 7 + 9 + 11 = 35, donc X̄ = 35/5 = 7. Sur Y : Σyᵢ = 14 + 11 + 9 + 6 + 5 = 45, donc Ȳ = 45/5 = 9. Le point moyen est G(7 ; 9) ✓. Contrôle : les écarts à la moyenne se compensent, −4 − 2 + 0 + 2 + 4 = 0 pour X et 5 + 2 + 0 − 3 − 4 = 0 pour Y. Le point G(9 ; 7) échange les deux coordonnées, G(7 ; 45) oublie de diviser la somme des yᵢ par 5, et G(35 ; 45) garde les deux sommes brutes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour des villes d'un massif montagneux, on relève l'altitude X et la température moyenne annuelle Y. On trouve cov(X, Y) = −12,5. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X et Y ont tendance à varier dans le même sens."
+        },
+        {
+          "id": "b",
+          "text": "X et Y n'ont aucune tendance à varier ensemble."
+        },
+        {
+          "id": "c",
+          "text": "Le calcul est faux, car une covariance est toujours positive."
+        },
+        {
+          "id": "d",
+          "text": "X et Y ont tendance à varier en sens contraire."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le signe de la covariance donne le sens de variation commun : une covariance négative signifie que X et Y ont tendance à varier en sens contraire, ce qui se vérifie ici — quand l'altitude monte, la température tend à baisser ✓. Une covariance positive indiquerait le même sens. Une covariance n'est pas un carré comme la variance : c'est la moyenne de produits d'écarts de signes quelconques, donc elle peut très bien être négative. Enfin −12,5 est différent de 0 : il indique bien une tendance, et sa valeur dépend des unités choisies, seul son signe se lit directement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi les valeurs suivantes, laquelle NE PEUT PAS être celle d'un coefficient de corrélation linéaire ρ_XY ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,93"
+        },
+        {
+          "id": "b",
+          "text": "0,41"
+        },
+        {
+          "id": "c",
+          "text": "0,87"
+        },
+        {
+          "id": "d",
+          "text": "1,08"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un coefficient de corrélation linéaire vérifie toujours −1 ≤ ρ_XY ≤ 1. La valeur 1,08 dépasse 1 : elle est impossible ✓, il y a forcément une erreur de calcul (souvent un écart-type oublié ou mal calculé au dénominateur). Les trois autres valeurs sont dans [−1 ; 1], donc possibles : un coefficient négatif décrit simplement un nuage qui descend. Que ces valeurs justifient ou non un ajustement affine est une autre question, qui se règle avec le seuil √3/2 ≈ 0,866 : −0,93 et 0,87 le dépassent en valeur absolue, 0,41 non.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Cinq bocaux contiennent 2, 4, 4, 6 et 9 billes. Quelle est la variance V(X) du nombre de billes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,37"
+        },
+        {
+          "id": "b",
+          "text": "5,6"
+        },
+        {
+          "id": "c",
+          "text": "25,6"
+        },
+        {
+          "id": "d",
+          "text": "30,6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La moyenne est X̄ = (2 + 4 + 4 + 6 + 9)/5 = 25/5 = 5. La somme des carrés vaut 4 + 16 + 16 + 36 + 81 = 153, donc V(X) = 153/5 − 5² = 30,6 − 25 = 5,6 ✓. Contrôle par les écarts : (2 − 5)² + (4 − 5)² + (4 − 5)² + (6 − 5)² + (9 − 5)² = 9 + 1 + 1 + 1 + 16 = 28, et 28/5 = 5,6 ✓. Le nombre 30,6 est la moyenne des carrés, à laquelle on a oublié de retrancher X̄². Le nombre 25,6 retranche X̄ = 5 au lieu de X̄² = 25. Le nombre 2,37 est l'écart-type √5,6, pas la variance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Vingt randonneurs sont classés selon X, le nombre de sorties par mois (1, 2 ou 3), et Y, le nombre de sommets atteints (0, 1 ou 2). Les effectifs nᵢⱼ figurent dans le tableau, avec X̄ = 2,1 et Ȳ = 1,4. Que vaut cov(X, Y) ? <svg viewBox=\"0 0 328 172\"><g stroke=\"#0f172a\" stroke-width=\"1.4\" fill=\"none\"><rect x=\"10\" y=\"10\" width=\"309\" height=\"152\"/><path d=\"M100 10 V162 M173 10 V162 M246 10 V162 M10 48 H319 M10 86 H319 M10 124 H319\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f6e56\"><text x=\"55\" y=\"34\">Effectifs</text><text x=\"136.5\" y=\"34\">Y = 0</text><text x=\"209.5\" y=\"34\">Y = 1</text><text x=\"282.5\" y=\"34\">Y = 2</text><text x=\"55\" y=\"72\">X = 1</text><text x=\"55\" y=\"110\">X = 2</text><text x=\"55\" y=\"148\">X = 3</text></g><g font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\"><text x=\"136.5\" y=\"72\">1</text><text x=\"209.5\" y=\"72\">5</text><text x=\"282.5\" y=\"72\">1</text><text x=\"136.5\" y=\"110\">1</text><text x=\"209.5\" y=\"110\">1</text><text x=\"282.5\" y=\"110\">2</text><text x=\"136.5\" y=\"148\">0</text><text x=\"209.5\" y=\"148\">2</text><text x=\"282.5\" y=\"148\">7</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,31"
+        },
+        {
+          "id": "b",
+          "text": "0,31"
+        },
+        {
+          "id": "c",
+          "text": "2,94"
+        },
+        {
+          "id": "d",
+          "text": "3,25"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour un échantillon groupé, cov(X, Y) = (1/n)ΣΣ nᵢⱼxᵢyⱼ − X̄Ȳ. Cases non nulles, ligne par ligne : X = 1 donne 5 × (1 × 1) + 1 × (1 × 2) = 7 ; X = 2 donne 1 × (2 × 1) + 2 × (2 × 2) = 2 + 8 = 10 ; X = 3 donne 2 × (3 × 1) + 7 × (3 × 2) = 6 + 42 = 48. Le total vaut 7 + 10 + 48 = 65, d'où cov(X, Y) = 65/20 − 2,1 × 1,4 = 3,25 − 2,94 = 0,31 ✓. Le nombre 3,25 oublie de retrancher X̄Ȳ, le nombre 2,94 n'est que ce produit X̄Ȳ, et −0,31 inverse la soustraction : 2,94 − 3,25.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le nuage d'une série (X, Y) est scindé en deux parties, de points moyens G₁(3 ; 4,2) et G₂(9 ; 11,4). Quelle est l'équation de la droite de Mayer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 1,2x + 0,6"
+        },
+        {
+          "id": "b",
+          "text": "y = 1,2x + 7,8"
+        },
+        {
+          "id": "c",
+          "text": "y = 0,6x + 2,4"
+        },
+        {
+          "id": "d",
+          "text": "y = (5/6)x + 1,7"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La droite de Mayer est la droite (G₁G₂). Sa pente vaut a = (11,4 − 4,2)/(9 − 3) = 7,2/6 = 1,2, puis b = 4,2 − 1,2 × 3 = 4,2 − 3,6 = 0,6, donc y = 1,2x + 0,6 ✓. Contrôle sur l'autre point : 1,2 × 9 + 0,6 = 10,8 + 0,6 = 11,4 ✓. L'ordonnée 7,8 vient de b = 4,2 + 3,6, un signe mal posé. La pente 0,6 divise la différence des ordonnées par la somme des abscisses (3 + 9) au lieu de leur différence. La pente 5/6 renverse le quotient : 6/7,2 au lieu de 7,2/6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour une série double, on a X̄ = 6, Ȳ = 10, V(X) = 4,5 et cov(X, Y) = 7,2. Quelle est l'équation de la droite de régression de Y en X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 1,6x + 0,4"
+        },
+        {
+          "id": "b",
+          "text": "y = 0,625x + 6,25"
+        },
+        {
+          "id": "c",
+          "text": "y = 1,6x − 9,6"
+        },
+        {
+          "id": "d",
+          "text": "y = 1,6x + 19,6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La pente est a = cov(X, Y)/V(X) = 7,2/4,5 = 1,6, puis b = Ȳ − aX̄ = 10 − 1,6 × 6 = 10 − 9,6 = 0,4, donc y = 1,6x + 0,4 ✓. Contrôle : la droite passe par le point moyen, 1,6 × 6 + 0,4 = 10 = Ȳ ✓. La pente 0,625 inverse le quotient (4,5/7,2). L'ordonnée −9,6 oublie d'ajouter Ȳ, et 19,6 ajoute aX̄ au lieu de le retrancher : dans les deux cas la droite ne passerait plus par G.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour une série double, on a cov(X, Y) = −10,8, V(X) = 9 et V(Y) = 16. Quel est le coefficient de corrélation ρ_XY, et que dit-il de l'ajustement affine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ρ_XY = −0,9 ; l'ajustement affine n'est pas justifié"
+        },
+        {
+          "id": "b",
+          "text": "ρ_XY = −0,9 ; l'ajustement affine est justifié"
+        },
+        {
+          "id": "c",
+          "text": "ρ_XY = −0,3 ; l'ajustement affine n'est pas justifié"
+        },
+        {
+          "id": "d",
+          "text": "ρ_XY = −0,075 ; l'ajustement affine n'est pas justifié"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a σ_X = √9 = 3 et σ_Y = √16 = 4, donc ρ_XY = cov(X, Y)/(σ_X σ_Y) = −10,8/(3 × 4) = −10,8/12 = −0,9. Le critère porte sur la valeur absolue : |−0,9| = 0,9 > √3/2 ≈ 0,866, donc l'ajustement affine est justifié ✓ — le signe négatif dit seulement que la droite descend. Le coefficient −0,3 divise par V(X) × σ_Y et −0,075 par V(X) × V(Y) : on a oublié de prendre les racines carrées des variances. Rejeter l'ajustement à cause du signe est l'erreur de lecture du seuil.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le nuage d'une série (X, Y) est nettement incurvé ; on pose Z = ln Y. La série (X, Z) donne ρ_XZ = 0,97, alors que ρ_XY = 0,81. Que conclut-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'ajustement affine n'est pas justifié, car ρ_XY = 0,81 est inférieur à √3/2."
+        },
+        {
+          "id": "b",
+          "text": "L'ajustement affine n'est pas justifié, car ρ_XY et ρ_XZ doivent dépasser √3/2 tous les deux."
+        },
+        {
+          "id": "c",
+          "text": "L'ajustement affine est justifié, car la moyenne 0,89 des deux coefficients dépasse √3/2."
+        },
+        {
+          "id": "d",
+          "text": "L'ajustement affine de Z en X est justifié, car ρ_XZ = 0,97 dépasse √3/2."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La droite que l'on trace est celle de la série ajustée (X, Z) : c'est donc le coefficient de cette série, ρ_XZ = 0,97, qui la juge. Comme 0,97 > √3/2 ≈ 0,866, l'ajustement affine de Z en X est justifié ✓ ; on revient ensuite à Y par l'exponentielle. Le coefficient ρ_XY = 0,81 concerne une droite que l'on ne trace pas : il est faible précisément parce que le nuage est incurvé, ce qui motive le changement de variable. Exiger les deux coefficients, ou en faire la moyenne, mélange deux séries différentes.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "title": "Test de compréhension ⭐ : Probabilités sur un ensemble fini",
+  "questions": [
+    {
+      "prompt": "Un mot de passe est formé de 5 caractères, chacun étant l'une des trois lettres a, b ou c, une même lettre pouvant être répétée. Combien de mots de passe différents peut-on former ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "120"
+        },
+        {
+          "id": "c",
+          "text": "243"
+        },
+        {
+          "id": "d",
+          "text": "125"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un mot de passe est une liste ordonnée de 5 lettres avec répétitions permises, c'est-à-dire un 5-uplet d'un ensemble à 3 éléments : 3⁵ = 3 × 3 × 3 × 3 × 3 = 243 ✓. Contrôle : chaque caractère a 3 choix indépendants des autres. Le nombre 125 est 5³, où l'on a échangé la base et l'exposant ; 15 est le produit 3 × 5, qui ne compte qu'un seul choix par position ; 120 est 5!, le nombre de rangements de 5 éléments tous différents, alors qu'ici les lettres se répètent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux événements A et B vérifient p(A) = 0,55 ; p(B) = 0,3 et p(A ∪ B) = 0,65. Quelle est la probabilité de réaliser à la fois A et B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,85"
+        },
+        {
+          "id": "b",
+          "text": "0,2"
+        },
+        {
+          "id": "c",
+          "text": "0,165"
+        },
+        {
+          "id": "d",
+          "text": "0,35"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La formule p(A ∪ B) = p(A) + p(B) − p(A ∩ B) donne p(A ∩ B) = p(A) + p(B) − p(A ∪ B) = 0,55 + 0,3 − 0,65 = 0,2 ✓. La valeur 0,85 est p(A) + p(B), c'est-à-dire la somme sans retrancher p(A ∪ B) ; 0,165 est 0,55 × 0,3, un produit valable seulement si A et B étaient indépendants, ce que l'énoncé n'affirme pas (et ici 0,2 ≠ 0,165) ; 0,35 est p(A ∪ B) − p(B) = 0,65 − 0,3, la probabilité de réaliser A sans B.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un enseignant choisit 2 délégués parmi 11 volontaires, sans distinguer leur rôle. Combien de choix différents a-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "22"
+        },
+        {
+          "id": "b",
+          "text": "110"
+        },
+        {
+          "id": "c",
+          "text": "121"
+        },
+        {
+          "id": "d",
+          "text": "55"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux délégués sans rôle distinct forment une partie à 2 éléments : C_11^2 = 11!/(9! 2!) = (11 × 10)/2 = 55 ✓. Contrôle : il y a 11 × 10 = 110 listes ordonnées de deux élèves, et chaque groupe est écrit deux fois (2! = 2), d'où 110/2 = 55. Le nombre 110 est A_11^2 : il compte des couples ordonnés, donc chaque groupe deux fois ; 121 est 11², qui autoriserait un même élève à être choisi deux fois ; 22 est le produit 2 × 11, qui ne correspond à aucun comptage.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sept films sont en compétition. Un jury décerne, dans l'ordre, le Grand Prix, le Prix du jury et le Prix du public à trois films différents. Combien de palmarès différents peut-il y avoir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "210"
+        },
+        {
+          "id": "b",
+          "text": "35"
+        },
+        {
+          "id": "c",
+          "text": "343"
+        },
+        {
+          "id": "d",
+          "text": "5040"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les trois films sont distincts et les trois prix ne jouent pas le même rôle : l'ordre compte, on dénombre des arrangements. A_7^3 = 7!/4! = 7 × 6 × 5 = 210 ✓. Contrôle par étapes : 7 films pour le Grand Prix, 6 pour le Prix du jury, 5 pour le Prix du public. Le nombre 35 est C_7^3, qui compte des groupes de 3 films sans attribuer de prix (210 = 3! × 35) ; 343 est 7³, valable seulement si un même film pouvait recevoir plusieurs prix ; 5040 est 7!, le nombre de façons de classer les sept films.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On lance un dé bleu et un dé jaune équilibrés. Quelle est la probabilité d'obtenir au moins un 6 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11/36"
+        },
+        {
+          "id": "b",
+          "text": "1/6"
+        },
+        {
+          "id": "c",
+          "text": "1/3"
+        },
+        {
+          "id": "d",
+          "text": "25/36"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les 36 couples (bleu ; jaune) sont équiprobables. Le contraire « aucun 6 » compte 5 × 5 = 25 couples, donc « au moins un 6 » en compte 36 − 25 = 11 et p = 11/36 ✓. Contrôle direct : 6 couples ont un 6 au dé bleu, 6 au dé jaune, et le couple (6 ; 6) est compté deux fois : 6 + 6 − 1 = 11. La valeur 1/3 additionne 1/6 + 1/6 sans retrancher le couple commun ; 25/36 est la probabilité du contraire, « aucun 6 » ; 1/6 est la probabilité d'avoir un 6 sur un seul dé donné.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un groupe de 40 étudiants, 24 sont des filles. Parmi les filles, 9 portent des lunettes ; parmi les garçons, 5 en portent. On choisit au hasard un étudiant qui porte des lunettes. Quelle est la probabilité que ce soit une fille ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9/40"
+        },
+        {
+          "id": "b",
+          "text": "3/8"
+        },
+        {
+          "id": "c",
+          "text": "9/14"
+        },
+        {
+          "id": "d",
+          "text": "3/5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'information « porte des lunettes » réduit l'univers aux 9 + 5 = 14 étudiants à lunettes, dont 9 sont des filles : p(fille / lunettes) = 9/14 ✓. Avec la définition : p(fille ∩ lunettes) = 9/40 et p(lunettes) = 14/40, donc le quotient vaut 9/14. La valeur 3/8 = 9/24 est la probabilité de porter des lunettes sachant que c'est une fille, c'est-à-dire p(lunettes / fille), le sens inverse ; 9/40 est l'intersection non divisée ; 3/5 = 24/40 est la proportion de filles dans le groupe, sans tenir compte de l'information.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux alarmes fonctionnent indépendamment : l'une se déclenche à tort avec la probabilité 0,1 et l'autre avec la probabilité 0,2. Quelle est la probabilité qu'elles se déclenchent toutes les deux à tort ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,28"
+        },
+        {
+          "id": "b",
+          "text": "0,3"
+        },
+        {
+          "id": "c",
+          "text": "0,72"
+        },
+        {
+          "id": "d",
+          "text": "0,02"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les deux déclenchements sont indépendants, donc p(les deux) = 0,1 × 0,2 = 0,02 ✓. Contrôle d'ordre de grandeur : le résultat est plus petit que chacune des deux probabilités, comme il se doit pour une intersection. La valeur 0,3 additionne les deux probabilités, ce qui n'a pas de sens pour une intersection ; 0,28 = 0,1 + 0,2 − 0,02 est la probabilité qu'au moins une alarme se déclenche ; 0,72 = 0,9 × 0,8 est la probabilité qu'aucune alarme ne se déclenche.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une boutique reçoit ses cartes mémoire de trois grossistes : G₁ fournit 40 % des cartes, G₂ 25 % et G₃ 35 %. Les taux de cartes renvoyées pour défaut sont 3 % pour G₁, 4 % pour G₂ et 2 % pour G₃. Quelle est la probabilité qu'une carte prise au hasard soit renvoyée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,012"
+        },
+        {
+          "id": "b",
+          "text": "0,029"
+        },
+        {
+          "id": "c",
+          "text": "0,03"
+        },
+        {
+          "id": "d",
+          "text": "0,09"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les trois grossistes forment une partition des cartes, donc p = 0,4 × 0,03 + 0,25 × 0,04 + 0,35 × 0,02 = 0,012 + 0,01 + 0,007 = 0,029 ✓. Contrôle : le résultat est une moyenne pondérée, donc compris entre 0,02 et 0,04. La valeur 0,03 est la moyenne simple des trois taux, qui ignore les parts de marché ; 0,09 est la somme des trois taux, supérieure au plus grand d'entre eux ; 0,012 ne garde que le terme de G₁ et oublie les deux autres grossistes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une suite (pₙ) de probabilités vérifie pₙ₊₁ = 0,4 pₙ + 0,3 pour tout n ≥ 1. Quelle est la limite de (pₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,5"
+        },
+        {
+          "id": "b",
+          "text": "0,3"
+        },
+        {
+          "id": "c",
+          "text": "0,7"
+        },
+        {
+          "id": "d",
+          "text": "0,75"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une limite ℓ vérifie ℓ = 0,4ℓ + 0,3, soit 0,6ℓ = 0,3 et ℓ = 0,5 ✓. La suite pₙ − 0,5 est géométrique de raison 0,4, comprise entre 0 et 1, donc elle tend vers 0. Contrôle : 0,4 × 0,5 + 0,3 = 0,5 ✓. La valeur 0,75 vient de ℓ = 0,3/0,4, qui divise par 0,4 au lieu de 1 − 0,4 ; 0,3 est le seul terme constant b, pris pour la limite ; 0,7 est 1 − 0,3, qui n'a aucun lien avec l'équation de point fixe.",
+      "difficulty": 2
+    }
+  ]
+}

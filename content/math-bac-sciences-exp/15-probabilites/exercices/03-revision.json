@@ -1,0 +1,135 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Probabilités sur un ensemble fini",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Calculer C_8^5.",
+      "answerKey": {
+        "value": 56
+      },
+      "explanation": "C_8^5 = 8!/(3! 5!) = (8 × 7 × 6)/(3 × 2 × 1) = 336/6 = 56 ✓. Contrôle : A_8^5 = 6720 et chaque groupe de 5 éléments se range de 5! = 120 façons, donc 6720/120 = 56.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On lance un dé rouge et un dé vert équilibrés. La grille ci-dessous donne les 36 couples (rouge ; vert) ; les cases colorées forment un événement S. Quelle est la probabilité de S ?\n<svg viewBox=\"0 0 340 270\"><title>Grille des 36 couples (dé rouge en colonne, dé vert en ligne) dont certaines cases sont colorées</title><rect x=\"64\" y=\"46\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"64\" y=\"80\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"64\" y=\"114\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"64\" y=\"148\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"64\" y=\"182\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"64\" y=\"216\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"98\" y=\"46\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"98\" y=\"80\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"98\" y=\"114\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"98\" y=\"148\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"98\" y=\"182\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"98\" y=\"216\" width=\"34\" height=\"34\" fill=\"#b45309\" fill-opacity=\"0.35\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"132\" y=\"46\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"132\" y=\"80\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"132\" y=\"114\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"132\" y=\"148\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"132\" y=\"182\" width=\"34\" height=\"34\" fill=\"#b45309\" fill-opacity=\"0.35\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"132\" y=\"216\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"166\" y=\"46\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"166\" y=\"80\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"166\" y=\"114\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"166\" y=\"148\" width=\"34\" height=\"34\" fill=\"#b45309\" fill-opacity=\"0.35\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"166\" y=\"182\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"166\" y=\"216\" width=\"34\" height=\"34\" fill=\"#b45309\" fill-opacity=\"0.35\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"200\" y=\"46\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"200\" y=\"80\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"200\" y=\"114\" width=\"34\" height=\"34\" fill=\"#b45309\" fill-opacity=\"0.35\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"200\" y=\"148\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"200\" y=\"182\" width=\"34\" height=\"34\" fill=\"#b45309\" fill-opacity=\"0.35\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"200\" y=\"216\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"234\" y=\"46\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"234\" y=\"80\" width=\"34\" height=\"34\" fill=\"#b45309\" fill-opacity=\"0.35\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"234\" y=\"114\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"234\" y=\"148\" width=\"34\" height=\"34\" fill=\"#b45309\" fill-opacity=\"0.35\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"234\" y=\"182\" width=\"34\" height=\"34\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"234\" y=\"216\" width=\"34\" height=\"34\" fill=\"#b45309\" fill-opacity=\"0.35\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"81.0\" y=\"38\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text><text x=\"52\" y=\"68.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">1</text><text x=\"115.0\" y=\"38\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text><text x=\"52\" y=\"102.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">2</text><text x=\"149.0\" y=\"38\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3</text><text x=\"52\" y=\"136.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">3</text><text x=\"183.0\" y=\"38\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text><text x=\"52\" y=\"170.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">4</text><text x=\"217.0\" y=\"38\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">5</text><text x=\"52\" y=\"204.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">5</text><text x=\"251.0\" y=\"38\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">6</text><text x=\"52\" y=\"238.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">6</text><text x=\"166\" y=\"20\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">dé rouge</text><text x=\"22\" y=\"152\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">vert</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5/36"
+        },
+        {
+          "id": "b",
+          "text": "3/7"
+        },
+        {
+          "id": "c",
+          "text": "1/4"
+        },
+        {
+          "id": "d",
+          "text": "5/12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La grille compte 6 × 6 = 36 cases, toutes équiprobables, et 9 cases sont colorées. Donc p(S) = 9/36 = 1/4 ✓. Les cases colorées se lisent par diagonales : 5 sur la première, 3 sur la deuxième, 1 dans le coin, soit 5 + 3 + 1 = 9. La valeur 3/7 = 9/21 prend pour univers les 21 paires sans ordre, qui ne sont pas équiprobables ; 5/36 ne compte que la diagonale de somme 8 ; 5/12 = 15/36 compte toutes les cases de somme au moins 8, et ajoute à tort les sommes impaires 9 et 11 (4 + 2 = 6 cases de plus).",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Pour tout entier n ≥ 3, quelles égalités sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A_n^3 = 6 × C_n^3"
+        },
+        {
+          "id": "b",
+          "text": "C_n^2 = n(n − 1)"
+        },
+        {
+          "id": "c",
+          "text": "A_n^2 = n(n − 1)"
+        },
+        {
+          "id": "d",
+          "text": "C_n^n = 1"
+        },
+        {
+          "id": "e",
+          "text": "A_n^3 = n³"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "A_n^3 = 3! × C_n^3 = 6 × C_n^3 est vraie : on choisit 3 éléments, puis on les range de 3! façons. A_n^2 = n(n − 1) est vraie : n choix pour le premier élément, puis n − 1 pour le second. C_n^n = 1 est vraie : une seule partie à n éléments, E lui-même. L'égalité C_n^2 = n(n − 1) est fausse : n(n − 1) est le nombre de couples ordonnés, et C_n^2 = n(n − 1)/2 compte chaque groupe une seule fois. L'égalité A_n^3 = n³ est fausse : n³ compte les triplets avec répétitions, alors qu'un arrangement a ses trois éléments distincts, ce qui donne n(n − 1)(n − 2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un groupe d'élèves, 60 % pratiquent l'escrime. Parmi les escrimeurs, 30 % sont gauchers ; parmi les élèves qui ne pratiquent pas l'escrime, 10 % sont gauchers. Quelle est la proportion de gauchers dans le groupe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,22"
+        },
+        {
+          "id": "b",
+          "text": "0,18"
+        },
+        {
+          "id": "c",
+          "text": "0,2"
+        },
+        {
+          "id": "d",
+          "text": "0,4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les escrimeurs et les non-escrimeurs forment une partition du groupe, donc p(gaucher) = 0,6 × 0,3 + 0,4 × 0,1 = 0,18 + 0,04 = 0,22 ✓. Contrôle : le résultat est une moyenne pondérée, donc compris entre 0,1 et 0,3. La valeur 0,2 est la moyenne simple de 0,3 et 0,1, qui ignore les parts 60 % et 40 % ; 0,4 additionne les deux taux ; 0,18 ne garde que les gauchers escrimeurs et oublie les autres.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une classe, 50 % des élèves jouent aux échecs et 40 % des élèves fréquentent le club de lecture. Parmi les lecteurs du club, 30 % jouent aux échecs. On choisit un élève au hasard : quelle est la probabilité qu'il joue aux échecs ou fréquente le club (ou les deux) ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.78
+      },
+      "explanation": "Notons E « joue aux échecs » et L « fréquente le club ». Les 30 % sont une probabilité conditionnelle : p(E/L) = 0,3, donc p(E ∩ L) = p(L) × p(E/L) = 0,4 × 0,3 = 0,12. Alors p(E ∪ L) = 0,5 + 0,4 − 0,12 = 0,78 ✓. Contrôle : le résultat est compris entre 0,5 (le plus grand des deux nombres) et 0,9 (leur somme), ce qui est bien le cas. Les 30 % ne s'appliquent qu'aux lecteurs du club, pas à toute la classe : appliquer 30 % à 50 % ou à 100 % donnerait une intersection fausse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une suite (pₙ) vérifie p₁ = 0,9 et pₙ₊₁ = 0,2 pₙ + 0,4 pour tout n ≥ 1. Laquelle de ces expressions donne pₙ en fonction de n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pₙ = 0,4 + 0,5 × 0,2ⁿ⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "pₙ = 0,5 + 0,4 × 0,2ⁿ⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "pₙ = 0,5 + 0,4 × 0,2ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "pₙ = 0,5 + 0,9 × 0,2ⁿ⁻¹"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le réel ℓ vérifie ℓ = 0,2ℓ + 0,4, donc ℓ = 0,4/0,8 = 0,5. La suite qₙ = pₙ − 0,5 est géométrique de raison 0,2 et de premier terme q₁ = 0,9 − 0,5 = 0,4, donc pₙ = 0,5 + 0,4 × 0,2ⁿ⁻¹ ✓. Contrôle : n = 1 donne 0,9 et n = 2 donne 0,5 + 0,08 = 0,58 = 0,2 × 0,9 + 0,4. L'expression avec 0,2ⁿ décale l'indice : elle donne 0,58 pour n = 1 au lieu de 0,9 ; celle qui place 0,9 comme coefficient utilise p₁ au lieu de p₁ − ℓ et donne 1,4 pour n = 1 ; celle qui échange 0,4 et 0,5 vérifie p₁ = 0,9 mais donne p₂ = 0,5 au lieu de 0,58.",
+      "difficulty": 3
+    }
+  ]
+}

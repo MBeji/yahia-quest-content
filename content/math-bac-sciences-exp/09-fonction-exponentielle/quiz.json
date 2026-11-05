@@ -2,27 +2,27 @@
   "title": "Test de compréhension ⭐ : Fonction exponentielle",
   "questions": [
     {
-      "prompt": "Que vaut e^(−ln 4) ?",
+      "prompt": "Que vaut e^(−ln 7) ?",
       "options": [
         {
           "id": "a",
-          "text": "−4"
+          "text": "−7"
         },
         {
           "id": "b",
-          "text": "−ln 4"
+          "text": "−ln 7"
         },
         {
           "id": "c",
-          "text": "1/4"
+          "text": "1/7"
         },
         {
           "id": "d",
-          "text": "4"
+          "text": "7"
         }
       ],
       "correctOption": "c",
-      "explanation": "On écrit −ln 4 = ln(1/4), donc e^(−ln 4) = e^(ln(1/4)) = 1/4 ✓, puisque e^(ln x) = x pour tout x > 0. Contrôle : −ln 4 ≈ −1,386 et e^(−1,386) ≈ 0,25. La valeur 4 oublie le signe moins de l'exposant : c'est e^(ln 4). La valeur −ln 4 s'arrête à l'exposant sans appliquer l'exponentielle. La valeur −4 est impossible : une exponentielle est toujours strictement positive.",
+      "explanation": "On écrit −ln 7 = ln(1/7), donc e^(−ln 7) = e^(ln(1/7)) = 1/7 ✓, puisque e^(ln x) = x pour tout x > 0. Contrôle : −ln 7 ≈ −1,946 et e^(−1,946) ≈ 0,143. La valeur 7 oublie le signe moins de l'exposant : c'est e^(ln 7). La valeur −ln 7 s'arrête à l'exposant sans appliquer l'exponentielle. La valeur −7 est impossible : une exponentielle est toujours strictement positive.",
       "difficulty": 1
     },
     {
@@ -62,7 +62,7 @@
         },
         {
           "id": "c",
-          "text": "e^(x−4)"
+          "text": "e^(x+4)"
         },
         {
           "id": "d",
@@ -70,7 +70,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "On a (e^(−x))⁴ = e^(−4x) (règle e^(na) = (e^a)^n), puis e^(2x) × e^(−4x) = e^(2x−4x) = e^(−2x) ✓. Contrôle en x = 1 : e² × e^(−4) = e^(−2) ≈ 0,135. L'écriture e^(6x) perd le signe : elle suppose (e^(−x))⁴ = e^(4x). L'écriture e^(x−4) additionne −x et 4 au lieu de multiplier l'exposant −x par 4. L'écriture e^(−8x²) multiplie les deux exposants au lieu de les additionner.",
+      "explanation": "On a (e^(−x))⁴ = e^(−4x) (règle e^(na) = (e^a)^n), puis e^(2x) × e^(−4x) = e^(2x−4x) = e^(−2x) ✓. Contrôle en x = 1 : e² × e^(−4) = e^(−2) ≈ 0,135. L'écriture e^(6x) perd le signe : elle suppose (e^(−x))⁴ = e^(4x). L'écriture e^(x+4) lit (e^(−x))⁴ comme e^(−x+4) : on ajoute 4 au lieu de multiplier, d'où e^(2x−x+4). L'écriture e^(−8x²) multiplie les deux exposants au lieu de les additionner.",
       "difficulty": 1
     },
     {
