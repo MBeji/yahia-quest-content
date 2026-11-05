@@ -1,0 +1,135 @@
+{
+  "title": "⭐ Exercice : Premières secousses, premières ondes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle affirmation est exacte pour une onde mécanique qui se propage dans un milieu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle déplace la matière d'un bout à l'autre du milieu"
+        },
+        {
+          "id": "b",
+          "text": "Elle se propage aussi bien dans le vide que dans l'air"
+        },
+        {
+          "id": "c",
+          "text": "Elle transporte de l'énergie sans transporter de matière"
+        },
+        {
+          "id": "d",
+          "text": "Sa célérité augmente quand on augmente l'amplitude de la source"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une onde mécanique transmet de l'énergie de proche en proche : chaque point oscille autour de sa position sans suivre l'onde ✓. L'idée d'un déplacement de matière confond la déformation qui avance avec de la matière qui avance. Une onde mécanique a besoin d'un milieu matériel et ne traverse pas le vide. La célérité dépend du milieu, non de l'amplitude imposée par la source.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Range ces milieux du plus lent au plus rapide pour la propagation du son, à 20 °C (ordres de grandeur).",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'air"
+        },
+        {
+          "id": "b",
+          "text": "L'eau"
+        },
+        {
+          "id": "c",
+          "text": "L'acier"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le son se propage à environ 342 m/s dans l'air, 1500 m/s dans l'eau et 5000 m/s dans l'acier : plus le milieu est difficile à comprimer, plus la célérité est grande, donc l'ordre du plus lent au plus rapide est air, eau, acier.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Le long d'une corde tendue, quelles grandeurs modifient la célérité d'un ébranlement ? (plusieurs réponses possibles)",
+      "options": [
+        {
+          "id": "a",
+          "text": "La tension de la corde"
+        },
+        {
+          "id": "b",
+          "text": "L'amplitude de la secousse"
+        },
+        {
+          "id": "c",
+          "text": "L'inertie de la corde (une corde plus lourde)"
+        },
+        {
+          "id": "d",
+          "text": "L'énergie fournie par la source"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "La célérité dépend du milieu : elle augmente avec la tension de la corde et diminue quand l'inertie de la corde augmente ✓. Elle ne dépend ni de l'amplitude de la secousse ni de l'énergie fournie par la source : une secousse plus forte ne voyage pas plus vite.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un ébranlement se propage le long d'une corde avec la célérité 12 m/s. Quelle durée met-il pour parcourir 3,0 m ? Donner la réponse en millisecondes.",
+      "answerKey": {
+        "value": 250,
+        "unit": "ms"
+      },
+      "explanation": "La célérité est v = d/Δt, donc Δt = d/v = 3,0/12 = 0,25 s = 250 ms ✓. Cette durée est celle de la propagation de l'énergie sur 3,0 m, pas celle d'une oscillation d'un point de la corde.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La figure donne l'aspect d'une longue corde à un instant donné, loin de la source, en régime établi. Le vibreur a pour fréquence N = 50 Hz. Quelle est la célérité de l'onde ?\n<svg viewBox=\"0 0 340 170\"><title>Aspect d'une longue corde à un instant donné, en régime établi : sinusoïde d'amplitude 2 mm tracée en fonction de l'abscisse en centimètres</title><line x1=\"24\" y1=\"84\" x2=\"336\" y2=\"84\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,84 328,88 328,80\" fill=\"#0f172a\"/><line x1=\"30\" y1=\"152\" x2=\"30\" y2=\"12\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"30,12 34,20 26,20\" fill=\"#0f172a\"/><polyline points=\"30,84 30.74,81.98 31.48,79.97 32.22,77.96 32.96,75.97 33.7,74 34.44,72.04 35.18,70.12 35.92,68.22 36.66,66.36 37.4,64.54 38.14,62.77 38.88,61.04 39.62,59.36 40.36,57.73 41.1,56.17 41.84,54.66 42.58,53.22 43.32,51.85 44.06,50.55 44.8,49.33 45.54,48.18 46.28,47.11 47.02,46.12 47.76,45.22 48.5,44.41 49.24,43.68 49.98,43.04 50.72,42.49 51.46,42.03 52.2,41.67 52.94,41.4 53.68,41.23 54.42,41.15 55.16,41.16 55.9,41.27 56.64,41.48 57.38,41.78 58.12,42.17 58.86,42.66 59.6,43.24 60.34,43.91 61.08,44.67 61.82,45.51 62.56,46.44 63.3,47.46 64.04,48.55 64.78,49.73 65.52,50.98 66.26,52.3 67,53.7 67.74,55.16 68.48,56.68 69.22,58.27 69.96,59.91 70.7,61.61 71.44,63.35 72.18,65.15 72.92,66.98 73.66,68.85 74.4,70.76 75.14,72.69 75.88,74.65 76.62,76.63 77.36,78.63 78.1,80.64 78.84,82.65 79.58,84.67 80.32,86.69 81.06,88.7 81.8,90.7 82.54,92.69 83.28,94.66 84.02,96.6 84.76,98.52 85.5,100.4 86.24,102.25 86.98,104.05 87.72,105.82 88.46,107.53 89.2,109.19 89.94,110.8 90.68,112.34 91.42,113.82 92.16,115.24 92.9,116.59 93.64,117.86 94.38,119.06 95.12,120.19 95.86,121.23 96.6,122.19 97.34,123.06 98.08,123.85 98.82,124.55 99.56,125.16 100.3,125.67 101.04,126.1 101.78,126.43 102.52,126.67 103.26,126.81 104,126.86 104.74,126.81 105.48,126.67 106.22,126.43 106.96,126.1 107.7,125.67 108.44,125.16 109.18,124.55 109.92,123.85 110.66,123.06 111.4,122.19 112.14,121.23 112.88,120.19 113.62,119.06 114.36,117.86 115.1,116.59 115.84,115.24 116.58,113.82 117.32,112.34 118.06,110.8 118.8,109.19 119.54,107.53 120.28,105.82 121.02,104.05 121.76,102.25 122.5,100.4 123.24,98.52 123.98,96.6 124.72,94.66 125.46,92.69 126.2,90.7 126.94,88.7 127.68,86.69 128.42,84.67 129.16,82.65 129.9,80.64 130.64,78.63 131.38,76.63 132.12,74.65 132.86,72.69 133.6,70.76 134.34,68.85 135.08,66.98 135.82,65.15 136.56,63.35 137.3,61.61 138.04,59.91 138.78,58.27 139.52,56.68 140.26,55.16 141,53.7 141.74,52.3 142.48,50.98 143.22,49.73 143.96,48.55 144.7,47.46 145.44,46.44 146.18,45.51 146.92,44.67 147.66,43.91 148.4,43.24 149.14,42.66 149.88,42.17 150.62,41.78 151.36,41.48 152.1,41.27 152.84,41.16 153.58,41.15 154.32,41.23 155.06,41.4 155.8,41.67 156.54,42.03 157.28,42.49 158.02,43.04 158.76,43.68 159.5,44.41 160.24,45.22 160.98,46.12 161.72,47.11 162.46,48.18 163.2,49.33 163.94,50.55 164.68,51.85 165.42,53.22 166.16,54.66 166.9,56.17 167.64,57.73 168.38,59.36 169.12,61.04 169.86,62.77 170.6,64.54 171.34,66.36 172.08,68.22 172.82,70.12 173.56,72.04 174.3,74 175.04,75.97 175.78,77.96 176.52,79.97 177.26,81.98 178,84 178.74,86.02 179.48,88.03 180.22,90.04 180.96,92.03 181.7,94 182.44,95.96 183.18,97.88 183.92,99.78 184.66,101.64 185.4,103.46 186.14,105.23 186.88,106.96 187.62,108.64 188.36,110.27 189.1,111.83 189.84,113.34 190.58,114.78 191.32,116.15 192.06,117.45 192.8,118.67 193.54,119.82 194.28,120.89 195.02,121.88 195.76,122.78 196.5,123.59 197.24,124.32 197.98,124.96 198.72,125.51 199.46,125.97 200.2,126.33 200.94,126.6 201.68,126.77 202.42,126.85 203.16,126.84 203.9,126.73 204.64,126.52 205.38,126.22 206.12,125.83 206.86,125.34 207.6,124.76 208.34,124.09 209.08,123.33 209.82,122.49 210.56,121.56 211.3,120.54 212.04,119.45 212.78,118.27 213.52,117.02 214.26,115.7 215,114.3 215.74,112.84 216.48,111.32 217.22,109.73 217.96,108.09 218.7,106.39 219.44,104.65 220.18,102.85 220.92,101.02 221.66,99.15 222.4,97.24 223.14,95.31 223.88,93.35 224.62,91.37 225.36,89.37 226.1,87.36 226.84,85.35 227.58,83.33 228.32,81.31 229.06,79.3 229.8,77.3 230.54,75.31 231.28,73.34 232.02,71.4 232.76,69.48 233.5,67.6 234.24,65.75 234.98,63.95 235.72,62.18 236.46,60.47 237.2,58.81 237.94,57.2 238.68,55.66 239.42,54.18 240.16,52.76 240.9,51.41 241.64,50.14 242.38,48.94 243.12,47.81 243.86,46.77 244.6,45.81 245.34,44.94 246.08,44.15 246.82,43.45 247.56,42.84 248.3,42.33 249.04,41.9 249.78,41.57 250.52,41.33 251.26,41.19 252,41.14 252.74,41.19 253.48,41.33 254.22,41.57 254.96,41.9 255.7,42.33 256.44,42.84 257.18,43.45 257.92,44.15 258.66,44.94 259.4,45.81 260.14,46.77 260.88,47.81 261.62,48.94 262.36,50.14 263.1,51.41 263.84,52.76 264.58,54.18 265.32,55.66 266.06,57.2 266.8,58.81 267.54,60.47 268.28,62.18 269.02,63.95 269.76,65.75 270.5,67.6 271.24,69.48 271.98,71.4 272.72,73.34 273.46,75.31 274.2,77.3 274.94,79.3 275.68,81.31 276.42,83.33 277.16,85.35 277.9,87.36 278.64,89.37 279.38,91.37 280.12,93.35 280.86,95.31 281.6,97.24 282.34,99.15 283.08,101.02 283.82,102.85 284.56,104.65 285.3,106.39 286.04,108.09 286.78,109.73 287.52,111.32 288.26,112.84 289,114.3 289.74,115.7 290.48,117.02 291.22,118.27 291.96,119.45 292.7,120.54 293.44,121.56 294.18,122.49 294.92,123.33 295.66,124.09 296.4,124.76 297.14,125.34 297.88,125.83 298.62,126.22 299.36,126.52 300.1,126.73 300.84,126.84 301.58,126.85 302.32,126.77 303.06,126.6 303.8,126.33 304.54,125.97 305.28,125.51 306.02,124.96 306.76,124.32 307.5,123.59 308.24,122.78 308.98,121.88 309.72,120.89 310.46,119.82 311.2,118.67 311.94,117.45 312.68,116.15 313.42,114.78 314.16,113.34 314.9,111.83 315.64,110.27 316.38,108.64 317.12,106.96 317.86,105.23 318.6,103.46 319.34,101.64 320.08,99.78 320.82,97.88 321.56,95.96 322.3,94 323.04,92.03 323.78,90.04 324.52,88.03 325.26,86.02 326,84 326,84 326,84\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\"/><line x1=\"30\" y1=\"80\" x2=\"30\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"79.33\" y1=\"80\" x2=\"79.33\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"128.67\" y1=\"80\" x2=\"128.67\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"178\" y1=\"80\" x2=\"178\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"227.33\" y1=\"80\" x2=\"227.33\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"276.67\" y1=\"80\" x2=\"276.67\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"326\" y1=\"80\" x2=\"326\" y2=\"88\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"54.67\" y1=\"81\" x2=\"54.67\" y2=\"87\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"104\" y1=\"81\" x2=\"104\" y2=\"87\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"153.33\" y1=\"81\" x2=\"153.33\" y2=\"87\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"202.67\" y1=\"81\" x2=\"202.67\" y2=\"87\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"252\" y1=\"81\" x2=\"252\" y2=\"87\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"301.33\" y1=\"81\" x2=\"301.33\" y2=\"87\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"26\" y1=\"41.14\" x2=\"34\" y2=\"41.14\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"126.86\" x2=\"34\" y2=\"126.86\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"30\" y=\"101\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">0</text><text x=\"79.33\" y=\"101\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">8</text><text x=\"128.67\" y=\"101\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">16</text><text x=\"178\" y=\"101\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">24</text><text x=\"227.33\" y=\"101\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">32</text><text x=\"276.67\" y=\"101\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">40</text><text x=\"326\" y=\"101\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">48</text><text x=\"22\" y=\"45.14\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">+2</text><text x=\"22\" y=\"130.86\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">−2</text><text x=\"334\" y=\"76\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">x (cm)</text><text x=\"4\" y=\"9\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"11\">y (mm)</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,0 m/s"
+        },
+        {
+          "id": "b",
+          "text": "8,0 m/s"
+        },
+        {
+          "id": "c",
+          "text": "3,1 × 10² m/s"
+        },
+        {
+          "id": "d",
+          "text": "800 m/s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux crêtes consécutives sont en x = 4 cm et x = 20 cm : λ = 16 cm = 0,16 m. Alors v = λ·N = 0,16 × 50 = 8,0 m/s ✓. La valeur 4,0 m/s vient de la distance crête-creux (8 cm) prise pour λ. La valeur 3,1 × 10² m/s est le quotient inversé N/λ. La valeur 800 m/s oublie de convertir les centimètres en mètres.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un haut-parleur émet un son pur de fréquence 1360 Hz dans l'air, où la célérité du son est 340 m/s. Calculer la longueur d'onde, en cm.",
+      "answerKey": {
+        "value": 25,
+        "unit": "cm"
+      },
+      "explanation": "La longueur d'onde est λ = v/N = 340/1360 = 0,25 m = 25 cm ✓. La source impose la fréquence, l'air impose la célérité, et λ est la distance parcourue par le son pendant une période T = 1/1360 s = 0,74 ms.",
+      "difficulty": 2
+    }
+  ]
+}

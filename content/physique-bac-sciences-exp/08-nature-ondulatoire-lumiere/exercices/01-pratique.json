@@ -1,0 +1,128 @@
+{
+  "title": "⭐ Exercice : Les premiers pas de la lumière-onde",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une lame vibrante de fréquence N = 15 Hz produit dans une cuve à ondes des rides dont la célérité est 0,30 m/s. Quelle est la longueur d'onde de ces rides, en cm ?",
+      "answerKey": {
+        "value": 2.0,
+        "tolerance": 0.05,
+        "unit": "cm"
+      },
+      "explanation": "λ = v/N = 0,30/15 = 0,020 m, soit 2 cm ✓. Multiplier la célérité par la fréquence donnerait 4,5 m·s⁻², qui n'est pas une longueur ; inverser le quotient (N/v) donnerait 50, qui n'a pas la dimension d'une longueur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les rides d'une cuve à ondes ont pour longueur d'onde λ = 2,0 cm. Pour laquelle de ces largeurs de fente la diffraction est-elle la plus marquée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5 cm"
+        },
+        {
+          "id": "b",
+          "text": "4,0 cm"
+        },
+        {
+          "id": "c",
+          "text": "8 cm"
+        },
+        {
+          "id": "d",
+          "text": "12 cm"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La diffraction est d'autant plus marquée que λ/a est grand, donc que a est petite : pour a = 1,5 cm, λ/a = 2,0/1,5 = 1,3 ✓. Pour a = 4,0 cm, λ/a = 0,50 ; pour a = 8 cm, 0,25 ; pour a = 12 cm, 0,17 : ces fentes sont grandes devant λ et déforment à peine les rides. Croire que la fente la plus large diffracte le plus, c'est confondre ouverture et étalement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un laser éclaire un objet fin placé devant un écran ; on obtient la figure ci-dessous (écran vu de face). Quel objet a produit cette figure ?\n<svg viewBox=\"0 0 340 260\"><title>Écran vu de face : une colonne de taches rouges alignées verticalement, la tache centrale étant la plus large et la plus brillante</title><rect x=\"90\" y=\"8\" width=\"160\" height=\"244\" rx=\"6\" fill=\"#111827\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"124\" y=\"90\" width=\"92\" height=\"80\" rx=\"3\" fill=\"#dc2626\" opacity=\"1.0\"/><rect x=\"124\" y=\"174\" width=\"92\" height=\"32\" rx=\"3\" fill=\"#dc2626\" opacity=\"0.6\"/><rect x=\"124\" y=\"214\" width=\"92\" height=\"32\" rx=\"3\" fill=\"#dc2626\" opacity=\"0.35\"/><rect x=\"124\" y=\"54\" width=\"92\" height=\"32\" rx=\"3\" fill=\"#dc2626\" opacity=\"0.6\"/><rect x=\"124\" y=\"14\" width=\"92\" height=\"32\" rx=\"3\" fill=\"#dc2626\" opacity=\"0.35\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une fente fine verticale"
+        },
+        {
+          "id": "b",
+          "text": "Un trou circulaire de très petit diamètre"
+        },
+        {
+          "id": "c",
+          "text": "Une fente fine horizontale"
+        },
+        {
+          "id": "d",
+          "text": "Un fil fin incliné à 45°"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les taches sont alignées verticalement : la lumière s'étale perpendiculairement à la fente, donc la fente est horizontale ✓. Une fente verticale étalerait la figure horizontalement. Un trou circulaire donnerait des anneaux concentriques, pas des taches alignées. Un fil incliné à 45° étalerait la figure selon la direction perpendiculaire, à 45° elle aussi.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un faisceau de lumière blanche traverse un prisme de verre. Quelle radiation est la plus déviée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La radiation rouge"
+        },
+        {
+          "id": "b",
+          "text": "La radiation jaune"
+        },
+        {
+          "id": "c",
+          "text": "La radiation verte"
+        },
+        {
+          "id": "d",
+          "text": "La radiation bleue"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'indice du verre augmente du rouge au bleu, donc la déviation aussi : la radiation bleue est la plus déviée ✓. Désigner le rouge revient à inverser l'ordre des indices. Le jaune et le vert sont des radiations intermédiaires, déviées moins que le bleu.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un laser vert émet une radiation de longueur d'onde 532 nm dans l'air. Quelle est sa fréquence, en 10¹⁴ Hz ? (c = 3,00 × 10⁸ m/s)",
+      "answerKey": {
+        "value": 5.64,
+        "tolerance": 0.03,
+        "unit": "10¹⁴ Hz"
+      },
+      "explanation": "T = λ/c = 5,32 × 10⁻⁷ / 3,00 × 10⁸ = 1,77 × 10⁻¹⁵ s, donc ν = 1/T = 5,64 × 10¹⁴ Hz ✓. Oublier de convertir les nanomètres en mètres fausserait la fréquence d'un facteur mille ; s'arrêter à T donnerait la période et non la fréquence.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Même fente, même écran. Avec un laser de longueur d'onde 650 nm, la tache centrale mesure 13 mm. Quelle est sa largeur avec un laser de longueur d'onde 450 nm ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,2 mm"
+        },
+        {
+          "id": "b",
+          "text": "9,0 mm"
+        },
+        {
+          "id": "c",
+          "text": "13 mm"
+        },
+        {
+          "id": "d",
+          "text": "19 mm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L est proportionnelle à λ : L = 13 × 450/650 = 9,0 mm ✓. 19 mm vient du rapport 650/450 pris à l'envers, comme si L augmentait quand λ diminue. 13 mm suppose que L ne dépend pas de λ. 6,2 mm élève le rapport au carré, ce qui n'a pas de raison d'être.",
+      "difficulty": 2
+    }
+  ]
+}

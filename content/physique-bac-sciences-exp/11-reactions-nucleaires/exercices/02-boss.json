@@ -1,0 +1,128 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du noyau",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "L'uranium ²³⁵₉₂U se transforme en plomb ²⁰⁷₈₂Pb après une série de désintégrations α et β⁻. Quels sont le nombre x de désintégrations α et le nombre y de désintégrations β⁻ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 7 et y = 4"
+        },
+        {
+          "id": "b",
+          "text": "x = 4 et y = 7"
+        },
+        {
+          "id": "c",
+          "text": "x = 7 et y = 10"
+        },
+        {
+          "id": "d",
+          "text": "x = 28 et y = 4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Nombre de masse : 235 − 207 = 28 = 4x donc x = 7. Charge : 92 = 82 + 2x − y = 82 + 14 − y donc y = 4 ✓. x = 4 et y = 7 échange les deux nombres. y = 10 est la différence de Z (92 − 82) sans tenir compte des 2 protons emportés par chaque α. x = 28 oublie de diviser par 4 le nombre de nucléons perdus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'activité d'un échantillon vaut 800 Bq à t = 10 min et 200 Bq à t = 50 min. Quelle est la période du radioélément ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 min"
+        },
+        {
+          "id": "b",
+          "text": "20 min"
+        },
+        {
+          "id": "c",
+          "text": "13 min"
+        },
+        {
+          "id": "d",
+          "text": "10 min"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'activité est divisée par 800 / 200 = 4 = 2², donc deux périodes se sont écoulées entre les deux mesures : 2T = 50 − 10 = 40 min, soit T = 20 min ✓. 40 min prend l'intervalle entier pour une seule période. 10 min divise 40 min par le facteur 4 au lieu de 2. 13 min divise 40 min par 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le thorium ²³²₉₀Th capture un neutron et donne ²³³₉₀Th, qui subit deux désintégrations β⁻ successives. Quel noyau obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "²³²₉₂U"
+        },
+        {
+          "id": "b",
+          "text": "²³³₈₈Ra"
+        },
+        {
+          "id": "c",
+          "text": "²³³₉₁Pa"
+        },
+        {
+          "id": "d",
+          "text": "²³³₉₂U"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La capture ajoute un nucléon : A = 232 + 1 = 233 avec Z = 90. Chaque β⁻ ajoute 1 à Z et laisse A inchangé : Z = 90 + 2 = 92, soit ²³³₉₂U ✓. ²³²₉₂U oublie le neutron capturé. ²³³₈₈Ra retire des protons comme pour deux β⁺. ²³³₉₁Pa s'arrête après une seule β⁻.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une fusion libère 18,0 MeV et met en jeu 5 nucléons. La fission d'un noyau de plutonium 239 frappé par un neutron (240 nucléons en jeu) libère 200 MeV. Quel est le rapport des énergies libérées par nucléon, fusion sur fission ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,090"
+        },
+        {
+          "id": "b",
+          "text": "0,23"
+        },
+        {
+          "id": "c",
+          "text": "4,3"
+        },
+        {
+          "id": "d",
+          "text": "11"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Fusion : 18,0 / 5 = 3,6 MeV par nucléon. Fission : 200 / 240 = 0,83 MeV par nucléon. Rapport : 3,6 / 0,83 = 4,3 ✓. 0,090 est le rapport par noyau 18,0 / 200, qui ignore le nombre de nucléons. 11 est son inverse 200 / 18,0. 0,23 est le rapport par nucléon fission sur fusion, à l'envers.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un morceau de bois ancien donne 5,10 désintégrations par minute et par gramme de carbone, contre 13,6 pour du bois vivant. La période du carbone 14 est T = 5730 ans (ln 2 = 0,693). Quel est son âge, en milliers d'années ?",
+      "answerKey": {
+        "value": 8.11,
+        "tolerance": 0.05,
+        "unit": "10³ ans"
+      },
+      "explanation": "t = (T/ln 2)·ln(A₀/A) = (5730 / 0,693) × ln(13,6 / 5,10) = 8268 × ln 2,667 = 8268 × 0,981 = 8,11 × 10³ ans ✓, soit 8,11 en milliers d'années. Contrôle : 13,6 / 5,10 = 2,67 est compris entre 2 et 4, donc l'âge est entre T et 2T (5730 et 11 460 ans).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'américium 241 (²⁴¹₉₅Am) est un émetteur α qui donne du neptunium 237 (Z = 93). Masses des atomes : m(²⁴¹₉₅Am) = 241,05683 u ; m(²³⁷₉₃Np) = 237,04817 u ; m(⁴₂He) = 4,00260 u. Quelle énergie, en 10⁶ J, est libérée par la désintégration de 1,00 mg d'américium 241 ? (M = 241 g·mol⁻¹ ; 𝒩 = 6,02 × 10²³ mol⁻¹ ; 1 u = 931,5 MeV·c⁻² ; 1 MeV = 1,60 × 10⁻¹³ J)",
+      "answerKey": {
+        "value": 2.26,
+        "tolerance": 0.03,
+        "unit": "10⁶ J"
+      },
+      "explanation": "|Δm| = 241,05683 − (237,04817 + 4,00260) = 0,00606 u, donc E = 0,00606 × 931,5 = 5,64 MeV par noyau, soit 5,64 × 1,60 × 10⁻¹³ = 9,03 × 10⁻¹³ J. Le nombre de noyaux est (1,00 × 10⁻³ / 241) × 6,02 × 10²³ = 2,50 × 10¹⁸. D'où E = 2,50 × 10¹⁸ × 9,03 × 10⁻¹³ = 2,26 × 10⁶ J ✓, soit 2,26 en unité de 10⁶ J.",
+      "difficulty": 3
+    }
+  ]
+}
