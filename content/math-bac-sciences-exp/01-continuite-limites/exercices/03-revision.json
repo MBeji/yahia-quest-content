@@ -1,0 +1,158 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les huit clés du chapitre",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "f est continue et strictement croissante sur [0 ; +∞[, avec f(0) = −2 et lim x→+∞ f(x) = 5. Quelle est l'image f([0 ; +∞[) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−2 ; 5["
+        },
+        {
+          "id": "b",
+          "text": "[−2 ; 5]"
+        },
+        {
+          "id": "c",
+          "text": "]−2 ; 5["
+        },
+        {
+          "id": "d",
+          "text": "[0 ; 5["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour f continue et strictement croissante sur [a ; +∞[, f([a ; +∞[) = [f(a) ; lim f[. La borne −2 est atteinte (f(0) = −2), donc fermée ; 5 n'est qu'approché sans jamais être atteint (f est strictement croissante), donc ouvert : [−2 ; 5[ ✓. La borne gauche 0 est une abscisse, pas une valeur de f.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Calculer lim x→2⁻ (x² − 4)/|x − 2|. (Réponse numérique.)",
+      "answerKey": {
+        "value": -4
+      },
+      "explanation": "Pour x < 2, |x − 2| = 2 − x = −(x − 2), donc (x² − 4)/|x − 2| = (x − 2)(x + 2)/(−(x − 2)) = −(x + 2), qui tend vers −4 quand x → 2⁻ ✓. À droite de 2, le quotient vaut x + 2 et tend vers 4 : il n'a donc pas de limite en 2, mais sa limite à gauche vaut −4.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces fonctions, lesquelles sont continues sur ℝ ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ |x² − 6x + 4|"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ (x² − 9)/(x − 3)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ √(x² + 2x + 5)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ cos x/(sin²x + 2)"
+        },
+        {
+          "id": "e",
+          "text": "x ↦ √(x² − 2x)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "|x² − 6x + 4| est la valeur absolue d'un polynôme, continue sur ℝ. √(x² + 2x + 5) est continue car x² + 2x + 5 = (x + 1)² + 4 > 0 pour tout x. cos x/(sin²x + 2) est un quotient de fonctions continues dont le dénominateur est supérieur ou égal à 2. En revanche (x² − 9)/(x − 3) n'est pas définie en 3, même si elle se simplifie en x + 3 ailleurs, et √(x² − 2x) n'est pas définie sur ]0 ; 2[ où x² − 2x < 0.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Le théorème du signe constant dit : si f est continue sur un intervalle I et ne s'annule en aucun point de I, alors f garde un signe constant sur I. Remettre dans l'ordre les étapes de sa démonstration.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Appliquer le théorème des valeurs intermédiaires à f, continue sur [α ; β] : f s'annule dans [α ; β]"
+        },
+        {
+          "id": "b",
+          "text": "Supposer, par l'absurde, que f change de signe sur I"
+        },
+        {
+          "id": "c",
+          "text": "Conclure à une contradiction avec l'hypothèse « f ne s'annule en aucun point de I »"
+        },
+        {
+          "id": "d",
+          "text": "Choisir deux réels α < β de I tels que f(α) × f(β) < 0"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "On suppose d'abord le contraire de ce qu'on veut prouver : f change de signe. Ce changement de signe fournit deux réels α < β de I dont les images ont des signes opposés. La continuité de f sur [α ; β] permet alors d'appliquer le théorème des valeurs intermédiaires, qui crée un zéro de f. Ce zéro contredit l'hypothèse de départ, ce qui achève le raisonnement par l'absurde.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour encadrer la solution de f(x) = 0 dans [a ; b] par dichotomie, on utilise un tableur : A2 contient a, B2 contient b, C2 contient le milieu (A2 + B2)/2, D2 contient f(A2), E2 contient f(B2) et F2 contient f(C2). Quelle formule saisir en A3 pour obtenir la borne gauche de l'intervalle suivant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "=SI(F2*D2>0;A2;C2)"
+        },
+        {
+          "id": "b",
+          "text": "=SI(F2*E2>0;C2;A2)"
+        },
+        {
+          "id": "c",
+          "text": "=SI(F2*D2<0;C2;A2)"
+        },
+        {
+          "id": "d",
+          "text": "=SI(F2*D2>0;C2;A2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Si F2 × D2 > 0, f(c) a le même signe que f(a) : le changement de signe se trouve dans [c ; b], donc la nouvelle borne gauche est C2. Sinon, le changement de signe est dans [a ; c] et la borne gauche reste A2 : =SI(F2*D2>0;C2;A2) ✓. Inverser les deux issues, tester le signe contraire (< 0) ou comparer au signe de f(b) (colonne E) donne l'intervalle qui ne contient pas la solution.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = 2 − 3/(x + 1) sur I = ]−1 ; 2]. f est continue et strictement croissante sur I. Quelle est l'image f(I) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; 1["
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; 1]"
+        },
+        {
+          "id": "c",
+          "text": "[1 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]−1 ; 1]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f est continue et strictement croissante sur ]−1 ; 2], donc f(I) = ] lim x→−1⁺ f(x) ; f(2)]. Quand x → −1⁺, x + 1 tend vers 0 par valeurs positives, donc 3/(x + 1) → +∞ et f(x) → −∞ ; et f(2) = 2 − 1 = 1, atteint car 2 ∈ I. Donc f(I) = ]−∞ ; 1] ✓. ]−∞ ; 1[ ouvre à tort la borne atteinte, [1 ; +∞[ lit f comme décroissante, et ]−1 ; 1] prend la borne de I pour une limite de f.",
+      "difficulty": 3
+    }
+  ]
+}

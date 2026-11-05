@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les suites sous haute tension",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Une seule de ces affirmations est vraie pour toutes suites réelles (uₙ) et (vₙ). Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si (|uₙ|) converge, alors (uₙ) converge"
+        },
+        {
+          "id": "b",
+          "text": "Si (uₙ) et (vₙ) convergent, alors (uₙ + vₙ) converge"
+        },
+        {
+          "id": "c",
+          "text": "Si lim uₙ = lim vₙ, alors (uₙ) et (vₙ) sont adjacentes"
+        },
+        {
+          "id": "d",
+          "text": "Si (uₙ) ne prend qu'un nombre fini de valeurs, alors (uₙ) converge"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seule la somme est vraie (opérations sur les limites). uₙ = (−1)ⁿ : |uₙ| = 1 converge mais (uₙ) n'a pas de limite, et elle ne prend que deux valeurs sans converger. uₙ = vₙ = 1/n ont la même limite 0, mais (uₙ) est décroissante et ne peut donc pas être la suite croissante d'un couple adjacent.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On veut la limite de uₙ = (n + 4 sin n)/(n² + 1), n ≥ 1. Un élève rédige :\n① Pour tout n, sin n ≤ 1, donc uₙ ≤ (n + 4)/(n² + 1).\n② (n + 4)/(n² + 1) tend vers 0.\n③ Par le théorème des gendarmes, lim uₙ = 0.\nQuel est le défaut de ce raisonnement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape ① est fausse : sin n ≤ 1 ne vaut pas pour tout n"
+        },
+        {
+          "id": "b",
+          "text": "L'étape ② est fausse : (n + 4)/(n² + 1) ne tend pas vers 0"
+        },
+        {
+          "id": "c",
+          "text": "L'étape ③ est incomplète : il manque une minoration de uₙ"
+        },
+        {
+          "id": "d",
+          "text": "Aucun défaut : le raisonnement est correct"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le défaut est à l'étape ③ : les gendarmes exigent deux bornes de même limite, et l'on n'a majoré uₙ que par (n + 4)/(n² + 1). Les étapes ① (sin n ≤ 1 pour tout n) et ② ((n + 4)/(n² + 1) → 0, car le degré du dénominateur est plus grand) sont exactes. Il fallait aussi minorer : sin n ≥ −1 donne (n − 4)/(n² + 1) ≤ uₙ, borne qui tend aussi vers 0 ; la limite 0 est exacte, mais la preuve était incomplète.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit u₀ = 1 et uₙ₊₁ = λuₙ + 4, avec |λ| < 1. Pour quelle valeur de λ la suite converge-t-elle vers 10 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3/5"
+        },
+        {
+          "id": "b",
+          "text": "−2/5"
+        },
+        {
+          "id": "c",
+          "text": "2/5"
+        },
+        {
+          "id": "d",
+          "text": "3/5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(uₙ) converge vers ℓ avec ℓ = λℓ + 4, car f(x) = λx + 4 est continue, soit ℓ(1 − λ) = 4. Pour ℓ = 10, 1 − λ = 4/10, donc λ = 3/5 ✓ (|3/5| < 1 : la suite converge bien). Le piège courant : écrire ℓ = 4/λ, ce qui donne λ = 2/5 ; −2/5 vient de ℓ = −4/λ ; −3/5 vient de ℓ = 4/(1 + λ).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit u₀ = 2, v₀ = 9, uₙ₊₁ = (3uₙ + vₙ)/4 et vₙ₊₁ = (uₙ + 2vₙ)/3. On admet que (uₙ) et (vₙ) sont adjacentes. En remarquant que 4uₙ + 3vₙ est constante, déterminer leur limite commune.",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "11/2"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "35/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule 4uₙ₊₁ + 3vₙ₊₁ = (3uₙ + vₙ) + (uₙ + 2vₙ) = 4uₙ + 3vₙ : cette quantité est constante, égale à 4 × 2 + 3 × 9 = 35. Les suites ayant une même limite α, on obtient à la limite 4α + 3α = 35, donc α = 5 ✓. Le piège courant : prendre la moyenne (2 + 9)/2 = 11/2, ou (3 × 2 + 4 × 9)/7 = 6 avec des poids inversés ; 35/4 oublie le terme 3vₙ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Calculer lim n→+∞ Σ k=1→n 2/(k(k + 2)), sachant que 2/(k(k + 2)) = 1/k − 1/(k + 2).",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/4"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "3/2"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La somme se télescope avec un décalage de 2 : les termes 1/3, …, 1/n s'annulent deux à deux, et il reste Sₙ = 1 + 1/2 − 1/(n + 1) − 1/(n + 2). Comme les deux derniers termes tendent vers 0, lim Sₙ = 3/2 ✓. Le piège courant : appliquer un télescopage de pas 1 et ne garder que le premier terme, ce qui donne 1 ; 3/4 oublie le facteur 2 du numérateur ; 2 vient de la décomposition de 2/(k(k + 1)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, on admet (3/2)ⁿ ≥ n(n − 1)/8 (formule du binôme appliquée à 1 + 1/2). On pose bₙ = n/(3/2)ⁿ. À partir de quel plus petit entier n cette inégalité garantit-elle bₙ ≤ 0,01 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n ≥ 801"
+        },
+        {
+          "id": "b",
+          "text": "n ≥ 800"
+        },
+        {
+          "id": "c",
+          "text": "n ≥ 799"
+        },
+        {
+          "id": "d",
+          "text": "n ≥ 81"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "De (3/2)ⁿ ≥ n(n − 1)/8 on tire 0 < bₙ ≤ n × 8/(n(n − 1)) = 8/(n − 1). Cette borne vaut au plus 0,01 si n − 1 ≥ 800, soit n ≥ 801 (pour n = 800, 8/799 ≈ 0,01001 > 0,01) ✓. Le piège courant : résoudre 8/n ≤ 0,01 en oubliant le « − 1 », ce qui donne n ≥ 800 ; 799 vient de 8/(n + 1) ; 81 résout 8/(n − 1) ≤ 0,1.",
+      "difficulty": 3
+    }
+  ]
+}

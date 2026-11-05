@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les suites",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Vers quelle valeur tend uₙ = (4 − 5n)/(2n + 9) quand n devient grand ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5/2"
+        },
+        {
+          "id": "b",
+          "text": "−2/5"
+        },
+        {
+          "id": "c",
+          "text": "4/9"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On divise par le terme dominant n : uₙ = (4/n − 5)/(2 + 9/n). Le numérateur tend vers −5 et le dénominateur vers 2, non nul, donc lim uₙ = −5/2. Répondre −2/5 inverse le quotient des coefficients ; 4/9 compare les termes constants ; +∞ laisse la forme ∞/∞ sans la lever.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Calculer lim n→+∞ √((9n + 1)/(n + 4)).",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "1/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La fraction (9n + 1)/(n + 4) tend vers 9, rapport des coefficients dominants. La racine carrée étant continue en 9, la limite vaut √9 = 3. Répondre 9 oublie la racine ; 1/2 prend la racine du rapport des termes constants, √(1/4) ; +∞ ne lève pas la forme ∞/∞.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut lim uₙ pour uₙ = 6 − 2 × (0,8)ⁿ, n ≥ 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme |0,8| < 1, (0,8)ⁿ tend vers 0, donc la limite est 6 − 2 × 0 = 6. Répondre 4 donne la valeur du terme u₀ = 6 − 2 ; 0 oublie le terme constant 6 ; −∞ suppose à tort que (0,8)ⁿ tend vers +∞.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que peut-on affirmer de la suite définie pour n ≥ 0 par uₙ = 2 + (−1)ⁿ/(n + 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle converge vers 2"
+        },
+        {
+          "id": "b",
+          "text": "Elle converge vers 3"
+        },
+        {
+          "id": "c",
+          "text": "Elle converge vers 1"
+        },
+        {
+          "id": "d",
+          "text": "Elle n'a pas de limite"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les rangs pairs donnent u₂ₙ = 2 + 1/(2n + 1) → 2 et les rangs impairs u₂ₙ₊₁ = 2 − 1/(2n + 2) → 2 : même limite, donc lim uₙ = 2. Le facteur (−1)ⁿ ne fait pas diverger la suite, car il est multiplié par 1/(n + 1) qui tend vers 0 ; 1 et 3 correspondent à 2 − 1 et 2 + 1, c'est-à-dire à (−1)ⁿ pris seul.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut la somme S = Σ k=1→20 (2k + 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "420"
+        },
+        {
+          "id": "b",
+          "text": "440"
+        },
+        {
+          "id": "c",
+          "text": "441"
+        },
+        {
+          "id": "d",
+          "text": "880"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les termes 3 ; 5 ; … ; 41 forment une suite arithmétique de 20 termes : S = 20 × (3 + 41)/2 = 440, ou encore 2 × (20 × 21/2) + 20 = 420 + 20 = 440. Répondre 420 oublie les 20 termes égaux à 1 ; 441 compte 21 termes ; 880 oublie de diviser par 2 dans la formule (nombre de termes) × (premier + dernier)/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer lim n→+∞ (1 + 2/5 + (2/5)² + … + (2/5)ⁿ).",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/3"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "5/3"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C'est la somme d'une suite géométrique de raison q = 2/5 : (1 − (2/5)ⁿ⁺¹)/(1 − 2/5). Comme |2/5| < 1, (2/5)ⁿ⁺¹ tend vers 0 et la limite est 1/(1 − 2/5) = 5/3. Répondre 2/3 oublie le terme 1 de départ ; 1 ne garde que ce premier terme ; +∞ suppose à tort que la somme diverge alors que les termes décroissent géométriquement.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du pont de Bolzano",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "La fonction f est définie sur ℝ par f(x) = mx + 6 si x ≤ −3, et f(x) = (x³ + 27)/(x + 3) si x > −3. Pour quelle valeur de m est-elle continue en −3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = −9"
+        },
+        {
+          "id": "b",
+          "text": "m = −7"
+        },
+        {
+          "id": "c",
+          "text": "m = 7"
+        },
+        {
+          "id": "d",
+          "text": "m = 11"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À droite de −3, x³ + 27 = (x + 3)(x² − 3x + 9), donc f(x) = x² − 3x + 9 → 9 + 9 + 9 = 27. À gauche et en −3, f(−3) = −3m + 6. La continuité exige −3m + 6 = 27, soit m = −7 ✓ (vérification : −3 × (−7) + 6 = 27). m = −9 oublie le + 6 (−3m = 27), m = 7 se trompe de signe dans −3m = 21, et m = 11 calcule (27 + 6)/3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Déterminer lim x→−∞ (√(−x) + 2 sin x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "−∞"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "La limite n'existe pas"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour tout x, sin x ≥ −1, donc √(−x) + 2 sin x ≥ √(−x) − 2. Or lim x→−∞ (√(−x) − 2) = +∞ : par comparaison, la limite cherchée est +∞. Que sin x n'ait pas de limite en −∞ n'empêche pas de conclure, puisque f est minorée par une fonction qui tend vers +∞ ; le piège « la limite n'existe pas » oublie cette minoration, et −∞ confond x → −∞ avec √(−x) → −∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une seule de ces affirmations est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toute fonction croissante sur [0 ; +∞[ a pour limite +∞ en +∞."
+        },
+        {
+          "id": "b",
+          "text": "Si f(x) < g(x) pour tout x > 0, lim x→0⁺ f = ℓ et lim x→0⁺ g = ℓ′, alors ℓ < ℓ′."
+        },
+        {
+          "id": "c",
+          "text": "Si g(x) ≤ f(x) ≤ h(x) pour tout x, lim x→+∞ g = 1 et lim x→+∞ h = 4, alors f a une limite finie en +∞."
+        },
+        {
+          "id": "d",
+          "text": "Si f(x) ≤ g(x) pour tout x et lim x→+∞ g = −∞, alors lim x→+∞ f = −∞."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Si f(x) ≤ g(x) et que g tend vers −∞, f est encore plus petite : lim f = −∞, c'est la comparaison vers −∞. Les autres sont fausses. x ↦ 3 − 1/(x + 1) est croissante sur [0 ; +∞[ mais tend vers 3. Avec f(x) = 0 et g(x) = x, on a f < g sur ]0 ; +∞[ et pourtant les deux limites en 0⁺ valent 0 : l'inégalité stricte devient large. Enfin f(x) = 2,5 + 1,5 sin x reste entre 1 et 4 sans avoir de limite.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Déterminer lim x→+∞ sin(π(√(x² + 3x) − x)).",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "3/2"
+        },
+        {
+          "id": "c",
+          "text": "−1"
+        },
+        {
+          "id": "d",
+          "text": "3π/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sous le sinus, √(x² + 3x) − x est de la forme (+∞) − (+∞). Avec l'expression conjuguée, pour x > 0, √(x² + 3x) − x = 3x/(√(x² + 3x) + x) = 3/(√(1 + 3/x) + 1) → 3/2. Donc l'argument π(√(x² + 3x) − x) tend vers 3π/2, et par continuité de sin en 3π/2, la limite est sin(3π/2) = −1. Le piège 0 vient de (+∞) − (+∞) = 0, 3/2 oublie le facteur π et le sinus, et 3π/2 oublie le sinus.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = √x + x − 4, continue et strictement croissante sur [0 ; +∞[, avec g(2) < 0 < g(3). Par dichotomie sur [2 ; 3], on évalue g au milieu de [2 ; 3], puis au milieu de l'intervalle retenu. Quel encadrement de la solution α de g(x) = 0 obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 < α < 2,25"
+        },
+        {
+          "id": "b",
+          "text": "2,25 < α < 2,5"
+        },
+        {
+          "id": "c",
+          "text": "2,5 < α < 2,75"
+        },
+        {
+          "id": "d",
+          "text": "2,25 < α < 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Premier milieu 2,5 : g(2,5) = √2,5 − 1,5 > 0 car 2,5 > 2,25 = 1,5² ; le changement de signe est donc dans ]2 ; 2,5[. Second milieu 2,25 : g(2,25) = 1,5 + 2,25 − 4 = −0,25 < 0, donc α ∈ ]2,25 ; 2,5[ ✓. Prendre ]2 ; 2,25[ lit le signe de g(2,25) à l'envers, ]2,5 ; 2,75[ lit celui de g(2,5) à l'envers et poursuit du mauvais côté, et ]2,25 ; 3[ oublie la première étape.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est l'image de l'intervalle [−π/3 ; 2π/3] par la fonction cosinus ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−1/2 ; 1/2]"
+        },
+        {
+          "id": "b",
+          "text": "[−1 ; 1]"
+        },
+        {
+          "id": "c",
+          "text": "[−1/2 ; 1]"
+        },
+        {
+          "id": "d",
+          "text": "[1/2 ; 1]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "cos est continue : l'image du segment est [m ; M] avec m le minimum et M le maximum. cos croît de cos(−π/3) = 1/2 à cos 0 = 1 puis décroît jusqu'à cos(2π/3) = −1/2. Le maximum est donc 1 (atteint en 0) et le minimum −1/2 : l'image est [−1/2 ; 1] ✓. [−1/2 ; 1/2] ne retient que les valeurs aux bouts, [1/2 ; 1] oublie la descente jusqu'à −1/2, et [−1 ; 1] est l'image de tout ℝ, pas de ce segment.",
+      "difficulty": 3
+    }
+  ]
+}

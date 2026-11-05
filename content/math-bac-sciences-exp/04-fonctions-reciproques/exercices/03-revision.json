@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Bijections et racines",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Une fonction f est continue sur [0 ; 4] et vérifie f(0) = f(4) = 1. Peut-elle réaliser une bijection de [0 ; 4] sur f([0 ; 4]) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non : l'équation f(x) = 1 admet deux solutions distinctes, 0 et 4"
+        },
+        {
+          "id": "b",
+          "text": "Oui : f est continue sur [0 ; 4], et la continuité suffit pour une bijection"
+        },
+        {
+          "id": "c",
+          "text": "Oui : l'équation f(x) = 1 admet une solution dans [0 ; 4]"
+        },
+        {
+          "id": "d",
+          "text": "Non : une fonction continue ne peut jamais réaliser une bijection"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour une bijection, l'équation f(x) = y doit avoir une unique solution pour tout y de f(I). Ici f(0) = f(4) = 1 : l'équation f(x) = 1 a au moins deux solutions, 0 et 4 ✓, donc f n'est pas bijective. La continuité ne suffit pas à garantir l'unicité. Avoir au moins une solution n'est que l'existence, jamais l'unicité. Et une fonction continue strictement monotone est au contraire une bijection.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f définie sur I = ]1, +∞[ par f(x) = (x + 3)/(x − 1). On admet que f réalise une bijection de I sur ]1, +∞[. Que vaut f⁻¹(5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/2"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f⁻¹(5) est l'unique solution dans I de f(x) = 5 : x + 3 = 5(x − 1) donne 4x = 8, donc x = 2 ✓ (vérification : f(2) = 5/1 = 5). Le résultat 1/2 est 1/f(5) = 1/2, l'inverse multiplicatif et non la réciproque. Le résultat −1/2 vient d'un signe mal reporté en développant 5(x − 1). Le résultat 8 s'arrête à y + 3, sans diviser par y − 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f une bijection de ]−1, 2] sur [−4, +∞[, décroissante, dont la courbe admet la droite x = −1 pour asymptote verticale. Quelle est la limite de f⁻¹(x) quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "−1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dire que C_f a l'asymptote verticale x = −1, c'est dire que f(x) → +∞ quand x → −1⁺. Par symétrie, f⁻¹(y) tend vers −1 quand y → +∞ ✓ : l'asymptote verticale devient horizontale. La valeur 2 est f⁻¹(−4), un point de la courbe de f⁻¹ et non une limite. La valeur −4 est l'ordonnée de ce point, pas la limite en +∞. La valeur +∞ oublie l'échange des axes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut ∛12 × ∛18 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "∛30"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "30"
+        },
+        {
+          "id": "d",
+          "text": "216"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ⁿ√a × ⁿ√b = ⁿ√(ab) : ∛12 × ∛18 = ∛216 = 6, car 6³ = 216 ✓. Le résultat ∛30 additionne 12 et 18 sous la racine, alors que les règles portent sur les produits. Le résultat 30 additionne 12 et 18 sans racine. Le résultat 216 calcule le produit mais oublie d'extraire la racine cubique.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le bon classement par ordre croissant de ⁴√13, ∛7 et ⁶√50 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "⁴√13 < ∛7 < ⁶√50"
+        },
+        {
+          "id": "b",
+          "text": "∛7 < ⁴√13 < ⁶√50"
+        },
+        {
+          "id": "c",
+          "text": "⁶√50 < ∛7 < ⁴√13"
+        },
+        {
+          "id": "d",
+          "text": "∛7 < ⁶√50 < ⁴√13"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On met les trois radicaux à l'indice 12 : ⁴√13 = ¹²√(13³) = ¹²√2197, ∛7 = ¹²√(7⁴) = ¹²√2401 et ⁶√50 = ¹²√(50²) = ¹²√2500. Comme ¹²√ est croissante et 2197 < 2401 < 2500, on obtient ⁴√13 < ∛7 < ⁶√50 ✓. Le classement ∛7 < ⁴√13 < ⁶√50 vient de 7³ = 343 au lieu de 7⁴ = 2401. Le classement ∛7 < ⁶√50 < ⁴√13 vient de 13⁴ = 28561 au lieu de 13³. Le classement ⁶√50 < ∛7 < ⁴√13 renverse l'ordre exact, comme si un indice plus grand donnait un radical plus grand.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Parmi ces fonctions définies sur [0, +∞[, laquelle est dérivable à droite en 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ ⁶√x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ x + ⁶√x"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ ⁶√x − x"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ x·⁶√x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x ↦ x·⁶√x, le taux d'accroissement en 0 est (x·⁶√x − 0)/x = ⁶√x, qui tend vers 0 : la fonction est dérivable à droite en 0 ✓. Pour ⁶√x, le taux est 1/⁶√(x⁵) → +∞. Pour x + ⁶√x, il vaut 1 + 1/⁶√(x⁵) → +∞. Pour ⁶√x − x, il vaut 1/⁶√(x⁵) − 1 → +∞. Dans les trois cas, la demi-tangente est verticale.",
+      "difficulty": 2
+    }
+  ]
+}
