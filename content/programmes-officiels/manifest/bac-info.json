@@ -1,9 +1,120 @@
 {
   "grade": "bac-info",
   "sealed": false,
-  "source": "Section « Sciences de l'informatique » du baccalauréat tunisien (docs/lycee-architecture.md §2). CNP — manuel élève officiel de philosophie, 4ème année de l'enseignement secondaire : « كتاب الفلسفة — لتلاميذ السّنة الرّابعة من التّعليم الثانوي — الشّعب العلميّة » (code 210402P00, 408 p.). Aucun guide enseignant au corpus pour ce couple ⇒ le manuel élève fait référence (profil ecole-secondaire). Langue d'enseignement : arabe. Le manuel dessert les CINQ sections non-Lettres (constat §0 de la fiche : le catalogue CNP ne contient que deux manuels de philosophie pour la 4ème année — 210402 « الشعب العلمية » et 210422+210423 « شعبة الآداب »). Le scope est porté par l'unique fiche programme/bac-math/philosophie.md (R-4 : un code source, une seule fiche), et le contenu est mutualisé par compileTo depuis content/philosophie-bac/ (étude 16 D-4). bac-lettres n'est PAS desservi. | CNP — « SKILLS For LIFE », Year 4 Secondary (bac), manuel élève code 241403 (280 p.) + guide enseignant code 641404 (56 p.). ⚭ Manuel UNIQUE pour les six sections du bac : le sujet anglais est authored une fois sous content/english-bac/ et compilé en six sujets (compileTo, étude 16 D-4). Transcription : programme/bac-lettres/anglais.md (fiche unique portant le scope des six sujets, R-4).",
-  "note": "sealed=false. Seule la philosophie est codifiée à ce jour pour cette section : les autres matières du bac Sciences de l'informatique ne sont PAS encore transcrites et sont donc rapportées manquantes. ⚠️ CHAPITRAGE CODIFIÉ, CONTENU NON GÉNÉRABLE au 2026-08-04. Les 5 chapitres sont les 5 مباحث du programme, relevés sur le فهرس du manuel (p.404-408, lu intégralement) ; les plages de pages sont exactes. MAIS la fiche est en profondeur « first-pass » (ossature seule : titre, التقديم, خارطة الكتاب, فهرس) — le contenu enseigné des p.7-402 n'est pas transcrit, donc chapitresGeneration est vide au registre et le LOT B est interdit sur les 5 chapitres (R-5). Reprise : voir §6 de la fiche. — ANGLAIS (241403/641404) : Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration). ▸ FRANÇAIS (ajouté le 2026-08-05) : manuel élève 221402 « Au gré des textes » (264 p.), transcrit INTÉGRALEMENT à profondeur de génération — fiche programme/bac-math/francais.md, LOT B autorisé. Ce manuel dessert les CINQ sections non-Lettres, et c'est un CONSTAT et non une déduction : sa page de titre (p. 1) les nomme une par une — Mathématiques, Sciences techniques, Économie et gestion, Sciences expérimentales, Sciences de l'informatique. Contenu mutualisé par compileTo depuis content/french-bac/ ; chapitrage (7 modules) IDENTIQUE dans les 5 manifestes bac-*, toute évolution à répercuter sur les 5 à la fois. bac-lettres (manuel 221421) n'est PAS desservi.",
+  "source": "Section « Sciences de l'informatique » du baccalauréat tunisien (docs/lycee-architecture.md §2). CNP — manuel élève officiel de philosophie, 4ème année de l'enseignement secondaire : « كتاب الفلسفة — لتلاميذ السّنة الرّابعة من التّعليم الثانوي — الشّعب العلميّة » (code 210402P00, 408 p.). Aucun guide enseignant au corpus pour ce couple ⇒ le manuel élève fait référence (profil ecole-secondaire). Langue d'enseignement : arabe. Le manuel dessert les CINQ sections non-Lettres (constat §0 de la fiche : le catalogue CNP ne contient que deux manuels de philosophie pour la 4ème année — 210402 « الشعب العلمية » et 210422+210423 « شعبة الآداب »). Le scope est porté par l'unique fiche programme/bac-math/philosophie.md (R-4 : un code source, une seule fiche), et le contenu est mutualisé par compileTo depuis content/philosophie-bac/ (étude 16 D-4). bac-lettres n'est PAS desservi. | CNP — « SKILLS For LIFE », Year 4 Secondary (bac), manuel élève code 241403 (280 p.) + guide enseignant code 641404 (56 p.). ⚭ Manuel UNIQUE pour les six sections du bac : le sujet anglais est authored une fois sous content/english-bac/ et compilé en six sujets (compileTo, étude 16 D-4). Transcription : programme/bac-lettres/anglais.md (fiche unique portant le scope des six sujets, R-4). | CNP — manuel élève officiel de mathématiques, 4ème année secondaire Sciences de l'informatique, code 222472P00 (304 p., 13 chapitres ; auteurs M. Brahim, M. N. Souibki, M. Ben Mansour, M. Dga). Aucun guide enseignant au corpus ⇒ le manuel élève fait référence. Langue d'enseignement : fr. Fiche : programme/bac-info/mathematiques.md (différentielle contre math-bac-math / math-bac-techniques / math-bac-sciences-exp).",
+  "note": "sealed=false. Codifiés à ce jour : mathématiques (2026-11-05, 13 chapitres = sommaire du manuel 222472 p.4, PDF = pages imprimées), philosophie, anglais, français ; physique, chimie, algorithmique et STI ne sont PAS encore transcrites. ⚠️ CHAPITRAGE CODIFIÉ, CONTENU NON GÉNÉRABLE au 2026-08-04. Les 5 chapitres sont les 5 مباحث du programme, relevés sur le فهرس du manuel (p.404-408, lu intégralement) ; les plages de pages sont exactes. MAIS la fiche est en profondeur « first-pass » (ossature seule : titre, التقديم, خارطة الكتاب, فهرس) — le contenu enseigné des p.7-402 n'est pas transcrit, donc chapitresGeneration est vide au registre et le LOT B est interdit sur les 5 chapitres (R-5). Reprise : voir §6 de la fiche. — ANGLAIS (241403/641404) : Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration). ▸ FRANÇAIS (ajouté le 2026-08-05) : manuel élève 221402 « Au gré des textes » (264 p.), transcrit INTÉGRALEMENT à profondeur de génération — fiche programme/bac-math/francais.md, LOT B autorisé. Ce manuel dessert les CINQ sections non-Lettres, et c'est un CONSTAT et non une déduction : sa page de titre (p. 1) les nomme une par une — Mathématiques, Sciences techniques, Économie et gestion, Sciences expérimentales, Sciences de l'informatique. Contenu mutualisé par compileTo depuis content/french-bac/ ; chapitrage (7 modules) IDENTIQUE dans les 5 manifestes bac-*, toute évolution à répercuter sur les 5 à la fois. bac-lettres (manuel 221421) n'est PAS desservi.",
   "subjects": [
+    {
+      "id": "math-bac-info",
+      "name": "Mathématiques",
+      "contentLanguage": "fr",
+      "chapters": [
+        {
+          "slug": "01-suites-reelles",
+          "notion": "Suites réelles (ch.1)",
+          "manuel": {
+            "code": "222472",
+            "pages": "5-25"
+          }
+        },
+        {
+          "slug": "02-limites-de-fonctions",
+          "notion": "Limites de fonctions (ch.2)",
+          "manuel": {
+            "code": "222472",
+            "pages": "26-46"
+          }
+        },
+        {
+          "slug": "03-continuite",
+          "notion": "Continuité (ch.3)",
+          "manuel": {
+            "code": "222472",
+            "pages": "47-64"
+          }
+        },
+        {
+          "slug": "04-derivation-primitives",
+          "notion": "Dérivation – primitives (ch.4)",
+          "manuel": {
+            "code": "222472",
+            "pages": "65-86"
+          }
+        },
+        {
+          "slug": "05-etude-de-fonctions",
+          "notion": "Étude de fonctions (ch.5)",
+          "manuel": {
+            "code": "222472",
+            "pages": "87-108"
+          }
+        },
+        {
+          "slug": "06-logarithme-neperien",
+          "notion": "Logarithme népérien (ch.6)",
+          "manuel": {
+            "code": "222472",
+            "pages": "109-130"
+          }
+        },
+        {
+          "slug": "07-fonctions-exponentielles",
+          "notion": "Fonctions exponentielles (ch.7)",
+          "manuel": {
+            "code": "222472",
+            "pages": "131-148"
+          }
+        },
+        {
+          "slug": "08-calcul-integral",
+          "notion": "Calcul intégral (ch.8)",
+          "manuel": {
+            "code": "222472",
+            "pages": "149-163"
+          }
+        },
+        {
+          "slug": "09-arithmetique",
+          "notion": "Arithmétique (ch.9)",
+          "manuel": {
+            "code": "222472",
+            "pages": "164-188"
+          }
+        },
+        {
+          "slug": "10-nombres-complexes",
+          "notion": "Nombres complexes (ch.10)",
+          "manuel": {
+            "code": "222472",
+            "pages": "189-208"
+          }
+        },
+        {
+          "slug": "11-systemes-equations-lineaires",
+          "notion": "Systèmes d'équations linéaires (ch.11)",
+          "manuel": {
+            "code": "222472",
+            "pages": "209-234"
+          }
+        },
+        {
+          "slug": "12-series-statistiques-deux-caracteres",
+          "notion": "Séries statistiques à deux caractères (ch.12)",
+          "manuel": {
+            "code": "222472",
+            "pages": "235-268"
+          }
+        },
+        {
+          "slug": "13-probabilites",
+          "notion": "Probabilités (ch.13)",
+          "manuel": {
+            "code": "222472",
+            "pages": "269-302"
+          }
+        }
+      ]
+    },
     {
       "id": "philosophie-bac-info",
       "name": "الفلسفة",
