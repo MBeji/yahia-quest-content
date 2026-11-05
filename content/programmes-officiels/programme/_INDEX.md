@@ -142,6 +142,7 @@
 | statut | matière | profondeur | sources (couverture calculée) | R-7 | maj | notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | ✅ validée R-7 | **mathematiques** | generation | `222433` 100 % · `222434` 100 % | 2026-11-05 (sondage, CONFORME sur les 17 chapitres (R-7 independant par chapitre, opus, contexte vierge, contre le PDF : 100 % des encadres sur image, 100 % du chapitrage, sondage 11 a 24 pages par chapitre) ; aucun chapitre au seuil d'escalade ; corrections appliquees puis reverifiees par un second auditeur, 53 corr.) | 2026-11-05 (claude/math-bac-sciences-exp) | Lecture du 2026-11-05 depuis le Drive cnp-officiel (procedure campagne, etape 3) : PDF sans couche texte, donc OCR tesseract (fra, 150 dpi) page par page puis verification sur l'image de toutes les pages a formules. Fiche differentielle : meme collection CNP que la section Mathematiques, version allegee ; le contenu genere adapte les chapitres de math-bac-math et math-bac-techniques (decision de Mohamed du 2026-11-05). Aucun guide enseignant au corpus. |
+| ✅ validée R-7 | **physique** | generation | `223433` 100 % | 2026-11-05 (sondage, CONFORME sur les 11 chapitres (R-7 independant par chapitre, opus, contexte vierge, contre le PDF : 100 % des encadres et relations sur image, 100 % du plan, sondage 11 a 21 pages par chapitre) ; aucun chapitre au seuil d'escalade ; corrections appliquees puis reverifiees par un second auditeur, 8 corr.) | 2026-11-05 (claude/sciences-bac-sciences-exp) | Lecture du 2026-11-05 depuis le Drive cnp-officiel (procedure campagne, etape 3) : couche texte page par page (pdftotext -layout) et verification sur l'image de toutes les pages a formule, encadre, tableau ou figure exploitee ; reponses aux exercices p.316-318. Source unique : manuel eleve 223433P00, aucun guide enseignant au corpus. La chimie a son propre manuel (224433P00). |
 
 ## bac-techniques
 
@@ -166,7 +167,7 @@
 - **1ere-sec** : **arabe** (`201104`) · **islamique-civique** (`211105`, `211107`) · **maths** (`222105`)
 - **2eme-sec** : **arabe** (`201281`) · **chimie** (`224231`, `224271`) · **eco-gestion** (`229262`) · **geographie** (`206203`, `206271`) · **histoire** (`207202`, `207271`) · **islamique-civique** (`211203`, `211204`) · **maths** (`222221`, `222261`, `222281`) · **sciences-physiques** (`223231`, `223272`) · **svt** (`225202`, `225232`, `225281`)
 - **3eme-sec** : **arabe** (`201302`, `201321`, `201381`) · **chimie** (`224332`, `224333`, `224351`, `224371`) · **eco-gestion** (`229364`) · **francais** (`221302`, `221321`) · **geographie** (`206321`, `206331`) · **histoire** (`207321`, `207331`) · **islamique-civique** (`211306`, `211321`, `211322`) · **maths** (`222322`, `222333`, `222334`, `222343`, `222344`, `222351`, `222362`, `222371`, `222381`) · **philosophie** (`210301`, `210322`) · **sciences-physiques** (`223332`, `223333`, `223351`, `223371`) · **svt** (`225321`, `225333`, `225342`, `225381`)
-- **bac** : **arabe** (`201403`, `201421`, `201422`, `201481`) · **chimie** (`224432`, `224433`, `224451`, `224471`) · **eco-gestion** (`229464`) · **francais** (`221421`) · **geographie** (`206422`) · **histoire** (`207422`) · **islamique-civique** (`211421`) · **maths** (`222422`, `222463`, `222472`, `222481`) · **philosophie** (`210422`, `210423`) · **sciences-physiques** (`223432`, `223433`, `223451`, `223471`) · **svt** (`225421`, `225432`, `225441`, `225481`)
+- **bac** : **arabe** (`201403`, `201421`, `201422`, `201481`) · **chimie** (`224432`, `224433`, `224451`, `224471`) · **eco-gestion** (`229464`) · **francais** (`221421`) · **geographie** (`206422`) · **histoire** (`207422`) · **islamique-civique** (`211421`) · **maths** (`222422`, `222463`, `222472`, `222481`) · **philosophie** (`210422`, `210423`) · **sciences-physiques** (`223432`, `223451`, `223471`) · **svt** (`225421`, `225432`, `225441`, `225481`)
 
 ## Corpus hors transcription (classé, exhaustif)
 
@@ -176,4 +177,4 @@
 - **enrichissement** : 10 PDF
   - décisions en attente (`differee`) : `128703`, `128803`, `128903`, `228103`, `228233`, `228362`, `228363`, `228461`, `228462`
 
-**Totaux (calculés)** : 61 fiches suivies (36 partielle · 13 complete · 12 validee-r7) · 346 PDF au corpus · 129 œuvres principales restant à rattacher.
+**Totaux (calculés)** : 62 fiches suivies (36 partielle · 13 complete · 13 validee-r7) · 346 PDF au corpus · 128 œuvres principales restant à rattacher.

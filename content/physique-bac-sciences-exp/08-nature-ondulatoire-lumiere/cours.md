@@ -162,7 +162,7 @@ Sur le graphique, chaque point est une mesure : en suivant une courbe vers la dr
 :::
 
 ::: propriete
-**Ce qui reste vrai** — La diffraction est d'autant plus marquée que le quotient λ/a est grand. Pour l'onde mécanique, la célérité croît avec la profondeur d'eau ; à fréquence fixe, λ = v/N croît, donc λ/a croît. Pour la lumière, L augmente avec λ et quand a diminue. Pour la lumière, λ/a reste petit (≈ 10⁻³), mais l'écran éloigné (D ≫ a) agrandit l'étalement : la figure est perceptible dès que a vaut quelques dixièmes de mm. Les jugements « plus ou moins marquée » comparent des situations d'une même onde. Cas limite : si a est très grande devant λ, la diffraction est imperceptible ; avec λ = 633 nm et a = 2 mm, λ/a ≈ 3 × 10⁻⁴ et on ne voit plus qu'une tache de la taille de la fente.
+**Ce qui reste vrai** — La diffraction est d'autant plus marquée que le quotient λ/a est grand. Pour l'onde mécanique, la célérité croît avec la profondeur d'eau ; à fréquence fixe, λ = v/N croît, donc λ/a croît. Pour la lumière, L augmente avec λ et quand a diminue, mais λ/a reste petit (≈ 10⁻³), mais l'écran éloigné (D ≫ a) agrandit l'étalement : la figure est perceptible dès que a vaut quelques dixièmes de mm. Les jugements « plus ou moins marquée » comparent des situations d'une même onde. Cas limite : si a est très grande devant λ, la diffraction est imperceptible ; avec λ = 633 nm et a = 2 mm, λ/a ≈ 3 × 10⁻⁴ et on ne voit plus qu'une tache de la taille de la fente.
 :::
 
 ::: verifie À toi : une autre profondeur

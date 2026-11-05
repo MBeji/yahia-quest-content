@@ -33,6 +33,32 @@
       "maj": "2026-11-05",
       "par": "claude/math-bac-sciences-exp",
       "notes": "Lecture du 2026-11-05 depuis le Drive cnp-officiel (procedure campagne, etape 3) : PDF sans couche texte, donc OCR tesseract (fra, 150 dpi) page par page puis verification sur l'image de toutes les pages a formules. Fiche differentielle : meme collection CNP que la section Mathematiques, version allegee ; le contenu genere adapte les chapitres de math-bac-math et math-bac-techniques (decision de Mohamed du 2026-11-05). Aucun guide enseignant au corpus."
+    },
+    {
+      "matiere": "physique",
+      "statut": "validee-r7",
+      "profondeur": "generation",
+      "sources": [
+        {
+          "code": "223433",
+          "tomes": ["P00"],
+          "role": "eleve",
+          "pagesTotal": 318,
+          "pagesLues": [[1, 318]]
+        }
+      ],
+      "sujets": ["physique-bac-sciences-exp"],
+      "chapitresGeneration": [],
+      "sourcesLibres": [],
+      "r7": {
+        "date": "2026-11-05",
+        "portee": "sondage",
+        "verdict": "CONFORME sur les 11 chapitres (R-7 independant par chapitre, opus, contexte vierge, contre le PDF : 100 % des encadres et relations sur image, 100 % du plan, sondage 11 a 21 pages par chapitre) ; aucun chapitre au seuil d'escalade ; corrections appliquees puis reverifiees par un second auditeur",
+        "corrections": 8
+      },
+      "maj": "2026-11-05",
+      "par": "claude/sciences-bac-sciences-exp",
+      "notes": "Lecture du 2026-11-05 depuis le Drive cnp-officiel (procedure campagne, etape 3) : couche texte page par page (pdftotext -layout) et verification sur l'image de toutes les pages a formule, encadre, tableau ou figure exploitee ; reponses aux exercices p.316-318. Source unique : manuel eleve 223433P00, aucun guide enseignant au corpus. La chimie a son propre manuel (224433P00)."
     }
   ]
 }

@@ -7,7 +7,7 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Une corde très longue est excitée à l'extrémité S par un vibreur de fréquence 40 Hz :\nyS(t) = 4,0 × 10⁻³ sin(80πt)\n(en m, t en s). La célérité est 12 m/s et l'onde n'est pas amortie. Quelle équation donne l'élongation d'un point M situé à x = 0,375 m de S, pour t supérieur au retard θ ?",
+      "prompt": "Une corde très longue est excitée à l'extrémité S par un vibreur de fréquence 40 Hz :\nyS(t) = 4,0 × 10⁻³ sin(80πt)\n(en m, t en s). La célérité est 16 m/s et l'onde n'est pas amortie. Quelle équation donne l'élongation d'un point M situé à x = 0,50 m de S, pour t supérieur au retard θ ?",
       "options": [
         {
           "id": "a",
@@ -27,17 +27,17 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "λ = v/N = 12/40 = 0,30 m, donc x/λ = 0,375/0,30 = 1,25 et θ = x/v = 31,25 ms = 1,25 T. Alors yM = a sin(80πt − 2π × 1,25) = a sin(80πt − 2,5π) = a sin(80πt − π/2) en retirant 2π ✓ : M est en quadrature retard sur S. L'équation sans déphasage suppose x multiple de λ. Le signe plus ferait avancer M sur S, impossible. La phase −5π/4 oublie le facteur 2 de 2πx/λ.",
+      "explanation": "λ = v/N = 16/40 = 0,40 m, donc x/λ = 0,50/0,40 = 1,25 et θ = x/v = 31,25 ms = 1,25 T. Alors yM = a sin(80πt − 2π × 1,25) = a sin(80πt − 2,5π) = a sin(80πt − π/2) en retirant 2π ✓ : M est en quadrature retard sur S. L'équation sans déphasage suppose x multiple de λ. Le signe plus ferait avancer M sur S, impossible. La phase −5π/4 oublie le facteur 2 de 2πx/λ.",
       "difficulty": 2
     },
     {
       "type": "numeric",
-      "prompt": "Une corde très longue est excitée en S par un vibreur de 40 Hz ; la célérité est 12 m/s. Une fois l'onde établie, à quelle distance de S, en cm, se trouve le deuxième point (en s'éloignant de S) qui vibre en opposition de phase avec la source ?",
+      "prompt": "Une corde très longue est excitée en S par un vibreur de 40 Hz ; la célérité est 16 m/s. Une fois l'onde établie, à quelle distance de S, en cm, se trouve le deuxième point (en s'éloignant de S) qui vibre en opposition de phase avec la source ?",
       "answerKey": {
-        "value": 45,
+        "value": 60,
         "unit": "cm"
       },
-      "explanation": "λ = v/N = 12/40 = 0,30 m = 30 cm. Les points en opposition de phase sont à x = (2k + 1)λ/2 : 15 cm (k = 0), 45 cm (k = 1), 75 cm… Le deuxième est à 45 cm ✓. La valeur 15 cm est le premier point, et 30 cm est un point en phase avec S.",
+      "explanation": "λ = v/N = 16/40 = 0,40 m = 40 cm. Les points en opposition de phase sont à x = (2k + 1)λ/2 : 20 cm (k = 0), 60 cm (k = 1), 100 cm… Le deuxième est à 60 cm ✓. La valeur 20 cm est le premier point, et 40 cm est un point en phase avec S.",
       "difficulty": 2
     },
     {

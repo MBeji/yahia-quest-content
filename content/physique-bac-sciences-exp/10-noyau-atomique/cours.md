@@ -339,7 +339,7 @@ On lit E_ℓ/A ≈ 7,6 MeV pour ²³⁸U, ≈ 8,0 MeV pour ¹⁶O et ≈ 8,8 MeV
 :::
 
 ::: retenir
-La courbe d'Aston passe par un maximum (de l'ordre de 8 MeV) vers A ≈ 60 : les noyaux les plus stables sont ceux du fer, les noyaux légers et lourds sont moins liés.
+La courbe d'Aston passe par un maximum (≈ 8,8 MeV) vers A ≈ 60 : les noyaux les plus stables sont ceux du fer, les noyaux légers et lourds sont moins liés.
 :::
 
 ## 🧮 Les noyaux stables dans le diagramme (N, Z)
