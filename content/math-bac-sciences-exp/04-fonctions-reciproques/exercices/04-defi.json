@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le miroir des courbes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Soit m un réel et f définie sur [1, +∞[ par f(x) = x² − 2mx. Pour quelles valeurs de m la fonction f réalise-t-elle une bijection de [1, +∞[ sur f([1, +∞[) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m < 1"
+        },
+        {
+          "id": "b",
+          "text": "m ≤ 1"
+        },
+        {
+          "id": "c",
+          "text": "m ≥ 1"
+        },
+        {
+          "id": "d",
+          "text": "m ≤ 1/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f′(x) = 2(x − m) est strictement positive sur ]1, +∞[ si et seulement si m ≤ 1 ✓ : pour m = 1, f′(x) = 2(x − 1) > 0 dès que x > 1, donc f est strictement croissante sur [1, +∞[. Si m > 1, f décroît sur [1, m] puis croît, et f(1) = f(2m − 1) avec 2m − 1 > 1 : pas de bijection. La condition m < 1 exclut à tort le cas m = 1. La condition m ≥ 1 renverse l'inégalité. La condition m ≤ 1/2 confond m avec 2m.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur ℝ par f(x) = x⁵ + x, bijection de ℝ sur ℝ. La tangente à la courbe de f⁻¹ au point d'abscisse 34 coupe l'axe des ordonnées au point d'ordonnée :",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "−128"
+        },
+        {
+          "id": "c",
+          "text": "128/81"
+        },
+        {
+          "id": "d",
+          "text": "2752/81"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme f(2) = 32 + 2 = 34, on a f⁻¹(34) = 2. Puis f′(x) = 5x⁴ + 1 et f′(2) = 81, donc (f⁻¹)′(34) = 1/81. La tangente en (34 ; 2) est y = 2 + (x − 34)/81 = x/81 + 128/81 : l'ordonnée à l'origine est 128/81 ✓. La valeur 2 est f⁻¹(34), l'ordonnée du point de contact. La valeur −128 est l'ordonnée à l'origine de la tangente à C_f en (2 ; 34). La valeur 2752/81 est celle de la droite de pente 1/81 passant par (2 ; 34).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans [0, +∞[ l'équation ∛(x + 19) = ∛x + 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = ∅"
+        },
+        {
+          "id": "b",
+          "text": "S = {27}"
+        },
+        {
+          "id": "c",
+          "text": "S = {8 ; −27}"
+        },
+        {
+          "id": "d",
+          "text": "S = {8}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On élève au cube : x + 19 = x + 3∛(x²) + 3∛x + 1. Avec t = ∛x ≥ 0, cela donne 3t² + 3t − 18 = 0, soit t² + t − 6 = (t − 2)(t + 3) = 0, donc t = 2 et x = 8 ✓ (vérification : ∛27 = 3 = 2 + 1). La réponse S = ∅ croit qu'aucune solution n'existe parce que ⁿ√(a + b) ≠ ⁿ√a + ⁿ√b. La réponse {27} prend la valeur de x + 19 pour celle de x. La réponse {8 ; −27} garde t = −3, mais −27 n'est pas dans [0, +∞[.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur [0, π/2[ par f(x) = 1/cos x, bijection de [0, π/2[ sur [1, +∞[. Quelle est l'expression de (f⁻¹)′(y) pour y > 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/(y√(y² − 1))"
+        },
+        {
+          "id": "b",
+          "text": "1/√(y² − 1)"
+        },
+        {
+          "id": "c",
+          "text": "y√(y² − 1)"
+        },
+        {
+          "id": "d",
+          "text": "1/(y²√(y² − 1))"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Soit a = f⁻¹(y) : 1/cos a = y donne cos a = 1/y, et sin a = √(1 − 1/y²) = √(y² − 1)/y car a est dans [0, π/2[. Alors f′(a) = sin a/cos²a = (√(y² − 1)/y) × y² = y√(y² − 1), donc (f⁻¹)′(y) = 1/(y√(y² − 1)) ✓. L'expression 1/√(y² − 1) prend f′ = tan. L'expression y√(y² − 1) oublie l'inverse. L'expression 1/(y²√(y² − 1)) oublie de diviser sin a par y.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f définie sur I = ]2, +∞[ par f(x) = (2x + 1)/(x − 2). On admet que f réalise une bijection de I sur ]2, +∞[. Calculer (f⁻¹)′(3).",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5"
+        },
+        {
+          "id": "b",
+          "text": "−1/5"
+        },
+        {
+          "id": "c",
+          "text": "1/5"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On cherche a tel que f(a) = 3 : 2a + 1 = 3a − 6 donne a = 7. Puis f′(x) = −5/(x − 2)² et f′(7) = −1/5, donc (f⁻¹)′(3) = 1/f′(7) = −5 ✓. Autre voie : f∘f(x) = x, donc f⁻¹ = f et (f⁻¹)′(3) = f′(3) = −5/1 = −5. Le résultat −1/5 oublie l'inverse. Les résultats 1/5 et 5 perdent le signe : f est décroissante, donc f⁻¹ aussi.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = sin(2x) sur I = [−π/4, π/4], bijection de I sur [−1, 1]. Sur quel ensemble f⁻¹ est-elle dérivable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℝ"
+        },
+        {
+          "id": "b",
+          "text": "[−1, 1]"
+        },
+        {
+          "id": "c",
+          "text": "]−π/4, π/4["
+        },
+        {
+          "id": "d",
+          "text": "]−1, 1["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′(x) = 2cos(2x) est strictement positive sur ]−π/4, π/4[ et s'annule en ±π/4, où C_f a des tangentes horizontales aux points (±π/4 ; ±1). Par symétrie, C_{f⁻¹} a des demi-tangentes verticales en x = ±1 : f⁻¹ est dérivable sur ]−1, 1[ ✓ et pas aux extrémités. L'ensemble ]−π/4, π/4[ est l'ensemble de départ de f. L'intervalle [−1, 1] oublie les demi-tangentes verticales. L'ensemble ℝ ignore que f⁻¹ n'est même pas définie hors de [−1, 1].",
+      "difficulty": 3
+    }
+  ]
+}

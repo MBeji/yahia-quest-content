@@ -2,8 +2,151 @@
   "grade": "bac-sciences-exp",
   "sealed": false,
   "source": "Section « Sciences expérimentales » du baccalauréat tunisien (docs/lycee-architecture.md §2). CNP — manuel élève officiel de philosophie, 4ème année de l'enseignement secondaire : « كتاب الفلسفة — لتلاميذ السّنة الرّابعة من التّعليم الثانوي — الشّعب العلميّة » (code 210402P00, 408 p.). Aucun guide enseignant au corpus pour ce couple ⇒ le manuel élève fait référence (profil ecole-secondaire). Langue d'enseignement : arabe. Le manuel dessert les CINQ sections non-Lettres (constat §0 de la fiche : le catalogue CNP ne contient que deux manuels de philosophie pour la 4ème année — 210402 « الشعب العلمية » et 210422+210423 « شعبة الآداب »). Le scope est porté par l'unique fiche programme/bac-math/philosophie.md (R-4 : un code source, une seule fiche), et le contenu est mutualisé par compileTo depuis content/philosophie-bac/ (étude 16 D-4). bac-lettres n'est PAS desservi. | CNP — « SKILLS For LIFE », Year 4 Secondary (bac), manuel élève code 241403 (280 p.) + guide enseignant code 641404 (56 p.). ⚭ Manuel UNIQUE pour les six sections du bac : le sujet anglais est authored une fois sous content/english-bac/ et compilé en six sujets (compileTo, étude 16 D-4). Transcription : programme/bac-lettres/anglais.md (fiche unique portant le scope des six sujets, R-4).",
-  "note": "sealed=false. Seule la philosophie est codifiée à ce jour pour cette section : les autres matières du bac Sciences expérimentales ne sont PAS encore transcrites et sont donc rapportées manquantes. ⚠️ CHAPITRAGE CODIFIÉ, CONTENU NON GÉNÉRABLE au 2026-08-04. Les 5 chapitres sont les 5 مباحث du programme, relevés sur le فهرس du manuel (p.404-408, lu intégralement) ; les plages de pages sont exactes. MAIS la fiche est en profondeur « first-pass » (ossature seule : titre, التقديم, خارطة الكتاب, فهرس) — le contenu enseigné des p.7-402 n'est pas transcrit, donc chapitresGeneration est vide au registre et le LOT B est interdit sur les 5 chapitres (R-5). Reprise : voir §6 de la fiche. — ANGLAIS (241403/641404) : Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration). ▸ FRANÇAIS (ajouté le 2026-08-05) : manuel élève 221402 « Au gré des textes » (264 p.), transcrit INTÉGRALEMENT à profondeur de génération — fiche programme/bac-math/francais.md, LOT B autorisé. Ce manuel dessert les CINQ sections non-Lettres, et c'est un CONSTAT et non une déduction : sa page de titre (p. 1) les nomme une par une — Mathématiques, Sciences techniques, Économie et gestion, Sciences expérimentales, Sciences de l'informatique. Contenu mutualisé par compileTo depuis content/french-bac/ ; chapitrage (7 modules) IDENTIQUE dans les 5 manifestes bac-*, toute évolution à répercuter sur les 5 à la fois. bac-lettres (manuel 221421) n'est PAS desservi.",
+  "note": "sealed=false. Seule la philosophie est codifiée à ce jour pour cette section : les autres matières du bac Sciences expérimentales ne sont PAS encore transcrites et sont donc rapportées manquantes. ⚠️ CHAPITRAGE CODIFIÉ, CONTENU NON GÉNÉRABLE au 2026-08-04. Les 5 chapitres sont les 5 مباحث du programme, relevés sur le فهرس du manuel (p.404-408, lu intégralement) ; les plages de pages sont exactes. MAIS la fiche est en profondeur « first-pass » (ossature seule : titre, التقديم, خارطة الكتاب, فهرس) — le contenu enseigné des p.7-402 n'est pas transcrit, donc chapitresGeneration est vide au registre et le LOT B est interdit sur les 5 chapitres (R-5). Reprise : voir §6 de la fiche. — ANGLAIS (241403/641404) : Chapitrage = les 36 leçons de tronc commun du manuel + les 6 blocs non-leçons (Checking Year 3, Introductory Unit, Check your Punctuation, les deux Check your Language and Skills, Before we say Good Bye), soit 42 chapitres. Les 10 « sessions » For Arts Students du manuel sont RÉSERVÉES à la section Lettres (préface p.2, guide p.5) : elles ne figurent qu'au manifeste bac-lettres et sont restreintes côté contenu par chapter.gradeSlugs. LOT A partiel au 2026-08-04 : p.1-234 du manuel transcrites, p.235-280 restantes ⇒ les chapitres 41, 42 (et 50-52 en Lettres) ne sont pas encore générables (registre suivi/bac-lettres.json, champ chapitresGeneration). ▸ FRANÇAIS (ajouté le 2026-08-05) : manuel élève 221402 « Au gré des textes » (264 p.), transcrit INTÉGRALEMENT à profondeur de génération — fiche programme/bac-math/francais.md, LOT B autorisé. Ce manuel dessert les CINQ sections non-Lettres, et c'est un CONSTAT et non une déduction : sa page de titre (p. 1) les nomme une par une — Mathématiques, Sciences techniques, Économie et gestion, Sciences expérimentales, Sciences de l'informatique. Contenu mutualisé par compileTo depuis content/french-bac/ ; chapitrage (7 modules) IDENTIQUE dans les 5 manifestes bac-*, toute évolution à répercuter sur les 5 à la fois. bac-lettres (manuel 221421) n'est PAS desservi. | Mathématiques (2026-11-05) : manuels élèves 222433P00 (tome 1, 182 p., 10 chapitres) et 222434P00 (tome 2, 119 p., 7 chapitres), même collection CNP que ceux de la section Mathématiques en version allégée ; fiche programme/bac-sciences-exp/mathematiques.md.",
   "subjects": [
+    {
+      "id": "math-bac-sciences-exp",
+      "name": "Mathématiques",
+      "contentLanguage": "fr",
+      "chapters": [
+        {
+          "slug": "01-continuite-limites",
+          "notion": "Continuité et limites (tome 1, ch.1)",
+          "manuel": {
+            "code": "222433",
+            "pages": "5-22"
+          }
+        },
+        {
+          "slug": "02-suites-reelles",
+          "notion": "Suites réelles (tome 1, ch.2)",
+          "manuel": {
+            "code": "222433",
+            "pages": "23-38"
+          }
+        },
+        {
+          "slug": "03-derivabilite",
+          "notion": "Dérivabilité (tome 1, ch.3)",
+          "manuel": {
+            "code": "222433",
+            "pages": "39-53"
+          }
+        },
+        {
+          "slug": "04-fonctions-reciproques",
+          "notion": "Fonctions réciproques (tome 1, ch.4)",
+          "manuel": {
+            "code": "222433",
+            "pages": "54-66"
+          }
+        },
+        {
+          "slug": "05-etudes-de-fonctions",
+          "notion": "Études de fonctions (tome 1, ch.5)",
+          "manuel": {
+            "code": "222433",
+            "pages": "67-84"
+          }
+        },
+        {
+          "slug": "06-primitives",
+          "notion": "Primitives (tome 1, ch.6)",
+          "manuel": {
+            "code": "222433",
+            "pages": "85-98"
+          }
+        },
+        {
+          "slug": "07-integrales",
+          "notion": "Intégrales (tome 1, ch.7)",
+          "manuel": {
+            "code": "222433",
+            "pages": "99-122"
+          }
+        },
+        {
+          "slug": "08-fonction-logarithme-neperien",
+          "notion": "Fonction logarithme népérien (tome 1, ch.8)",
+          "manuel": {
+            "code": "222433",
+            "pages": "123-141"
+          }
+        },
+        {
+          "slug": "09-fonction-exponentielle",
+          "notion": "Fonction exponentielle (tome 1, ch.9)",
+          "manuel": {
+            "code": "222433",
+            "pages": "142-164"
+          }
+        },
+        {
+          "slug": "10-equations-differentielles",
+          "notion": "Équations différentielles (tome 1, ch.10)",
+          "manuel": {
+            "code": "222433",
+            "pages": "165-182"
+          }
+        },
+        {
+          "slug": "11-nombres-complexes",
+          "notion": "Nombres complexes (tome 2, ch.1)",
+          "manuel": {
+            "code": "222434",
+            "pages": "5-21"
+          }
+        },
+        {
+          "slug": "12-equations-coefficients-complexes",
+          "notion": "Équations à coefficients complexes (tome 2, ch.2)",
+          "manuel": {
+            "code": "222434",
+            "pages": "22-33"
+          }
+        },
+        {
+          "slug": "13-produit-scalaire-vectoriel",
+          "notion": "Produit scalaire — produit vectoriel dans l'espace (tome 2, ch.3)",
+          "manuel": {
+            "code": "222434",
+            "pages": "34-47"
+          }
+        },
+        {
+          "slug": "14-droites-plans-spheres",
+          "notion": "Équations de droites, de plans et de sphères (tome 2, ch.4)",
+          "manuel": {
+            "code": "222434",
+            "pages": "48-62"
+          }
+        },
+        {
+          "slug": "15-probabilites",
+          "notion": "Probabilités sur un ensemble fini (tome 2, ch.5)",
+          "manuel": {
+            "code": "222434",
+            "pages": "63-81"
+          }
+        },
+        {
+          "slug": "16-variables-aleatoires",
+          "notion": "Variables aléatoires (tome 2, ch.6)",
+          "manuel": {
+            "code": "222434",
+            "pages": "82-96"
+          }
+        },
+        {
+          "slug": "17-statistiques",
+          "notion": "Statistiques (tome 2, ch.7)",
+          "manuel": {
+            "code": "222434",
+            "pages": "97-119"
+          }
+        }
+      ]
+    },
     {
       "id": "philosophie-bac-sciences-exp",
       "name": "الفلسفة",

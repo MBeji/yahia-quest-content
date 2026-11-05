@@ -27,13 +27,13 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | --- | --- | --- | --- | --- | --- |
 | Sciences techniques | technologie (génie mécanique) | `228462` P01-P02 | ✅ complète | 25/25 chapitres — matière complète (ch. 23-25 livrés le 2026-11-03) | — (missions d'examen du Bac à ajouter dès que les sujets sont au Drive) |
 | Sciences techniques | technologie (génie électrique) | `228461` P01-P03 | ❌ aucune | — | A1 |
-| Sciences techniques | mathématiques | `222451` | ✅ validée R-7 (2026-11-04) | 16/16 chapitres | B1, génération |
+| Sciences techniques | mathématiques | `222451` | ✅ validée R-7 (2026-11-04) | 16/16 chapitres — matière complète (2026-11-05) | — (missions d'examen du Bac à ajouter dès que les sujets sont au Drive) |
 | Sciences techniques | physique | `223451` | ❌ aucune | — | A1 |
 | Mathématiques | mathématiques | `222445` + `222446` | ✅ validée R-7 | 19/19 | — (gisement possible) |
 | Mathématiques | physique | `223432` | ❌ aucune | — | A1 |
 | Mathématiques | chimie | `224432` | ❌ aucune | — | A1 |
 | Sciences expérimentales | SVT | `225432` | ❌ aucune | — | A1 |
-| Sciences expérimentales | mathématiques | `222433` + `222434` | ❌ aucune | — | A1 |
+| Sciences expérimentales | mathématiques | `222433` + `222434` | ✅ validée R-7 (2026-11-05) | 4/17 chapitres | fiche différentielle + adaptation des chapitres de `math-bac-math` / `math-bac-techniques` (décision de Mohamed du 2026-11-05 : même collection, version allégée) |
 | Sciences expérimentales | physique | `223433` | ❌ aucune | — | A1 |
 | Sciences expérimentales | chimie | `224433` | ❌ aucune | — | A1 |
 | Sciences de l'informatique | mathématiques | `222472` | ❌ aucune | — | A1 |

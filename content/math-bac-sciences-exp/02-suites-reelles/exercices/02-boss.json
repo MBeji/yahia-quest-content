@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la limite",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Soit uₙ = n × (3/5)ⁿ pour n ≥ 1. Quelle description de (uₙ) est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Strictement croissante pour tout n ≥ 1"
+        },
+        {
+          "id": "b",
+          "text": "Strictement décroissante pour tout n ≥ 1"
+        },
+        {
+          "id": "c",
+          "text": "u₁ < u₂, puis strictement décroissante à partir de u₂"
+        },
+        {
+          "id": "d",
+          "text": "u₁ < u₂ < u₃, puis strictement décroissante à partir de u₃"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour n ≥ 1, uₙ₊₁/uₙ = 3(n + 1)/(5n), et ce rapport dépasse 1 si et seulement si 3n + 3 > 5n, soit n < 3/2, donc seulement pour n = 1. Ainsi u₂/u₁ = 6/5 > 1 (u₁ = 0,6 et u₂ = 0,72), puis le rapport est inférieur à 1 pour n ≥ 2 : u₂ > u₃ > u₄ > … ✓ (u₃ = 0,648). Le piège courant : voir 3/5 < 1 et conclure « décroissante » sans regarder le facteur (n + 1)/n.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout n ≥ 1, on a 0 < uₙ < 3/n. Que peut-on dire de la limite de (uₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle existe et vaut 0"
+        },
+        {
+          "id": "b",
+          "text": "Elle est strictement positive"
+        },
+        {
+          "id": "c",
+          "text": "Elle vaut 3"
+        },
+        {
+          "id": "d",
+          "text": "Elle n'existe pas, car l'encadrement est strict"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les inégalités 0 ≤ uₙ ≤ 3/n sont vraies pour tout n ≥ 1, et les deux bornes tendent vers 0 : par le théorème des gendarmes, lim uₙ = 0. Le piège courant : garder l'inégalité stricte à la limite — 0 < uₙ n'entraîne pas lim uₙ > 0, comme le montre 1/n ; un encadrement strict n'empêche pas la convergence ; 3 est seulement le numérateur de la borne.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit u₀ = 7 et uₙ₊₁ = −2uₙ + 9. Que peut-on dire de la suite (uₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La suite converge vers le point fixe 3"
+        },
+        {
+          "id": "b",
+          "text": "La suite tend vers +∞"
+        },
+        {
+          "id": "c",
+          "text": "La suite tend vers −∞"
+        },
+        {
+          "id": "d",
+          "text": "La suite n'a pas de limite"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On cherche α tel que α = −2α + 9, soit α = 3, puis vₙ = uₙ − 3 vérifie vₙ₊₁ = −2uₙ + 9 − 3 = −2(uₙ − 3) = −2vₙ. (vₙ) est géométrique de raison −2 et de premier terme v₀ = 4, donc vₙ = 4 × (−2)ⁿ et uₙ = 3 + 4 × (−2)ⁿ. Comme −2 ≤ −1, (−2)ⁿ n'a pas de limite, donc (uₙ) n'a pas de limite ✓ (contrôle : u₁ = −5 = 3 − 8). Le piège courant : croire que la suite converge vers le point fixe 3 sans regarder la raison, ou lire |−2| > 1 comme +∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Déterminer lim n→+∞ (n² + 1) sin(2/n)/(n + 3).",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Posons Xₙ = 2/n → 0. Alors sin(2/n) = (2/n) × sin(Xₙ)/Xₙ, donc uₙ = 2(n² + 1)/(n² + 3n) × sin(Xₙ)/Xₙ. Le quotient tend vers 2 et sin(Xₙ)/Xₙ vers 1 : la limite est 2 ✓ (n = 10⁴ donne environ 1,9994). Répondre +∞ garde la forme ∞ × 0 sans la lever ; 0 la traite comme si sin(2/n) → 0 suffisait ; 1 oublie le facteur 2 de 2/n.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit u₀ = 5/2 et uₙ₊₁ = (uₙ² + 6)/5. On admet que (uₙ) est décroissante et que 2 ≤ uₙ ≤ 5/2 pour tout n. Quelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6/5"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "5/2"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(uₙ) est décroissante et minorée par 2 : elle converge vers un réel ℓ ≥ 2. f(x) = (x² + 6)/5 est continue, donc ℓ = (ℓ² + 6)/5, soit ℓ² − 5ℓ + 6 = (ℓ − 2)(ℓ − 3) = 0. Comme uₙ ≤ 5/2 pour tout n, ℓ ≤ 5/2, ce qui écarte 3 : ℓ = 2 ✓. Le piège courant : garder 3 comme limite parce que c'est un point fixe, ou prendre la majoration 5/2 pour la limite ; 6/5 vient de l'oubli du terme en ℓ².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Parmi ces couples de suites définies pour n ≥ 1, lequel est un couple de suites adjacentes (uₙ) et (vₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ = 3 − 1/n et vₙ = 3 + 2/n"
+        },
+        {
+          "id": "b",
+          "text": "uₙ = 2 − 1/n et vₙ = 2 + (−1)ⁿ/n"
+        },
+        {
+          "id": "c",
+          "text": "uₙ = n/(n + 1) et vₙ = 2n/(n + 1)"
+        },
+        {
+          "id": "d",
+          "text": "uₙ = 1/n et vₙ = 2/n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans le couple 3 − 1/n et 3 + 2/n : uₙ ≤ 3 ≤ vₙ, (uₙ) croît, (vₙ) décroît et vₙ − uₙ = 3/n → 0 : les trois conditions sont vérifiées ✓. Dans 2 − 1/n et 2 + (−1)ⁿ/n, (vₙ) n'est pas monotone ; dans n/(n + 1) et 2n/(n + 1), l'écart vaut n/(n + 1) → 1 et non 0 ; dans 1/n et 2/n, (uₙ) est décroissante au lieu de croissante, alors que les deux limites sont égales.",
+      "difficulty": 3
+    }
+  ]
+}

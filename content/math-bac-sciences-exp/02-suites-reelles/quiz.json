@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Suites réelles",
+  "questions": [
+    {
+      "prompt": "Pour une suite (uₙ), on sait que lim u₂ₙ = 3 et lim u₂ₙ₊₁ = 3. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La suite (uₙ) converge vers 3"
+        },
+        {
+          "id": "b",
+          "text": "La suite (uₙ) converge vers 6"
+        },
+        {
+          "id": "c",
+          "text": "La suite (uₙ) est constante, égale à 3"
+        },
+        {
+          "id": "d",
+          "text": "La suite (uₙ) peut ne pas avoir de limite"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "D'après le théorème des rangs pairs et impairs, lim uₙ = a si et seulement si lim u₂ₙ = a et lim u₂ₙ₊₁ = a. Ici a = 3, donc (uₙ) converge vers 3. Elle ne converge pas vers 6, car les deux limites ne s'additionnent pas ; elle n'est pas forcément constante ; et elle a bien une limite, puisque les deux sous-suites ont la même.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la limite de la suite définie pour n ≥ 1 par uₙ = (7n² − 3)/(n² + 5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3/5"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On divise par le terme dominant n² : uₙ = (7 − 3/n²)/(1 + 5/n²). Le numérateur tend vers 7 et le dénominateur vers 1, donc lim uₙ = 7. Répondre −3/5 compare les termes constants ; +∞ laisse la forme ∞/∞ sans la lever ; 0 confond la limite de 3/n² avec celle de toute la suite.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une suite (wₙ) n'est pas majorée. Que peut-on affirmer à coup sûr ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(wₙ) tend vers +∞"
+        },
+        {
+          "id": "b",
+          "text": "(wₙ) est croissante"
+        },
+        {
+          "id": "c",
+          "text": "(wₙ) n'est pas minorée"
+        },
+        {
+          "id": "d",
+          "text": "(wₙ) est divergente"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Toute suite convergente est bornée, donc une suite qui n'est pas majorée ne peut pas converger : (wₙ) est divergente. Les autres affirmations ne sont pas assurées : wₙ = (−1)ⁿ n n'est pas majorée sans tendre vers +∞ ni être croissante, et wₙ = n² n'est pas majorée alors qu'elle est minorée par 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la limite de la suite de terme général uₙ = (−√5/3)ⁿ, n ≥ 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle n'a pas de limite"
+        },
+        {
+          "id": "b",
+          "text": "Elle converge vers 0"
+        },
+        {
+          "id": "c",
+          "text": "Elle converge vers −√5/3"
+        },
+        {
+          "id": "d",
+          "text": "Elle tend vers +∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ici q = −√5/3 vérifie |q| = √5/3 ≈ 0,745 < 1, donc lim qⁿ = 0, avec des termes de signes alternés. Répondre que la suite n'a pas de limite confond une base négative avec une base inférieure ou égale à −1 ; +∞ confond avec q > 1 ; −√5/3 confond la limite avec la raison.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout n ≥ 0, on a uₙ ≥ 2n − 4. Que peut-on conclure sur la suite (uₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "lim uₙ = 2"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) est croissante"
+        },
+        {
+          "id": "c",
+          "text": "On ne peut rien conclure avec une seule minoration"
+        },
+        {
+          "id": "d",
+          "text": "lim uₙ = +∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme 2n − 4 tend vers +∞ et que uₙ ≥ 2n − 4, le résultat de comparaison vers l'infini donne lim uₙ = +∞. Une minoration suffit à conclure vers +∞ ; 2 est le coefficient de n, pas une limite ; l'inégalité ne renseigne pas sur le sens de variation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux suites (aₙ) et (bₙ) vérifient aₙ ≤ bₙ pour tout n, (aₙ) est croissante et (bₙ) est décroissante. Quelle condition supplémentaire les rend adjacentes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(bₙ) est minorée par 0"
+        },
+        {
+          "id": "b",
+          "text": "(bₙ − aₙ) tend vers 0"
+        },
+        {
+          "id": "c",
+          "text": "(aₙ) et (bₙ) sont bornées"
+        },
+        {
+          "id": "d",
+          "text": "(aₙ) converge"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les trois premières conditions ne suffisent pas : il faut que l'écart bₙ − aₙ tende vers 0. Les autres propositions sont déjà des conséquences des trois premières (a₀ ≤ aₙ ≤ bₙ ≤ b₀ borne les deux suites, et la suite (aₙ) croissante majorée converge) ou sans rapport (le minorant 0), et ne dispensent pas de l'écart : 1 − 1/n et 2 + 1/n les vérifient sans être adjacentes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une suite (uₙ) est décroissante, minorée par −4, et u₀ = 1. Quel encadrement de sa limite ℓ est assuré ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℓ = −4"
+        },
+        {
+          "id": "b",
+          "text": "ℓ ≤ −4"
+        },
+        {
+          "id": "c",
+          "text": "−4 ≤ ℓ ≤ 1"
+        },
+        {
+          "id": "d",
+          "text": "−4 < ℓ < 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Décroissante et minorée, (uₙ) converge vers ℓ, et uₙ ≥ ℓ pour tout n, donc ℓ ≤ u₀ = 1. La comparaison avec la suite constante −4 donne ℓ ≥ −4. Les bornes peuvent être atteintes : uₙ = −4 + 5/(n + 1) tend vers −4, et la suite constante 1 tend vers 1. L'encadrement strict est donc faux.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La suite définie par u₀ = 0 et uₙ₊₁ = (uₙ² + 12)/7 converge vers un réel ℓ. Quelles valeurs l'équation du point fixe autorise-t-elle pour ℓ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℓ = 3 ou ℓ = 4"
+        },
+        {
+          "id": "b",
+          "text": "ℓ = −3 ou ℓ = −4"
+        },
+        {
+          "id": "c",
+          "text": "ℓ = 0"
+        },
+        {
+          "id": "d",
+          "text": "ℓ = 12/7"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si (uₙ) converge vers ℓ et si f(x) = (x² + 12)/7 est continue, alors ℓ = (ℓ² + 12)/7, soit ℓ² − 7ℓ + 12 = (ℓ − 3)(ℓ − 4) = 0 : ℓ = 3 ou ℓ = 4. Les valeurs négatives viennent d'une erreur de signe dans l'équation ; 0 est seulement le premier terme ; 12/7 est la valeur de u₁, qui n'est pas un point fixe.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des tangentes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Soit h(x) = (√x − 3)/(√x + 3) sur ]0 ; +∞[. Quelle est la dérivée h′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6/(√x (√x + 3)²)"
+        },
+        {
+          "id": "b",
+          "text": "3/(2√x (√x + 3)²)"
+        },
+        {
+          "id": "c",
+          "text": "3/(√x (√x + 3)²)"
+        },
+        {
+          "id": "d",
+          "text": "6/(√x + 3)²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose u = √x − 3 et v = √x + 3, avec u′ = v′ = 1/(2√x). Alors h′ = (u′v − v′u)/v² = (1/(2√x)) × ((√x + 3) − (√x − 3))/(√x + 3)² = (1/(2√x)) × 6/(√x + 3)² = 3/(√x (√x + 3)²) ✓ (h est croissante, comme le montre ce signe positif). La réponse « 6/(√x (√x + 3)²) » prend (√x)′ = 1/√x, en oubliant le 2. La réponse « 3/(2√x (√x + 3)²) » divise deux fois par 2. La réponse « 6/(√x + 3)² » prend (√x)′ = 1 : elle dérive √x comme x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x√(x + 3) sur ]−3 ; +∞[. La tangente à C_f au point d'abscisse 1 coupe l'axe des abscisses en un point. Quelle est l'abscisse de ce point ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−7"
+        },
+        {
+          "id": "b",
+          "text": "−8/9"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "1/9"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a f(1) = 1 × √4 = 2. Avec (uv)′ = u′v + v′u où u = x et v = √(x + 3) : f′(x) = √(x + 3) + x/(2√(x + 3)), donc f′(1) = 2 + 1/4 = 9/4. La tangente est y = (9/4)(x − 1) + 2 = (9/4)x − 1/4, qui s'annule pour (9/4)x = 1/4, soit x = 1/9 ✓. L'abscisse −8/9 vient de y = (9/4)x + 2, c'est-à-dire de la formule fautive y = f′(a)x + f(a). L'abscisse 0 vient de y = 2x, obtenue en ne dérivant que le facteur x et en oubliant le terme x/(2√(x + 3)). L'abscisse −7 vient de y = (1/4)x + 7/4, obtenue en multipliant les dérivées 1 et 1/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (x − 1)|x − 1| sur ℝ. f est-elle dérivable en 1 ? Si oui, que vaut f′(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, avec f′(1) = 0"
+        },
+        {
+          "id": "b",
+          "text": "Non : le nombre dérivé à gauche vaut −1 et celui à droite vaut 1"
+        },
+        {
+          "id": "c",
+          "text": "Oui, avec f′(1) = 1"
+        },
+        {
+          "id": "d",
+          "text": "Non : le nombre dérivé à gauche vaut 1 et celui à droite vaut −1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a f(1) = 0. Le taux d'accroissement vaut (x − 1)|x − 1|/(x − 1) = |x − 1| pour x ≠ 1, qui tend vers 0 à gauche comme à droite : f′_g(1) = f′_d(1) = 0, donc f est dérivable en 1 et f′(1) = 0 ✓ (la courbe y est tangente à l'axe des abscisses, qu'elle traverse). Les réponses avec ±1 dérivent |x − 1| séparément, en oubliant que le facteur (x − 1) l'écrase : c'est la valeur absolue seule qui a un point anguleux. La réponse « f′(1) = 1 » prend (x − 1)′ = 1 sans tenir compte de |x − 1| = 0 en 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe de f(x) = (ax + b)/(x + 1) (x ≠ −1) passe par le point A(0 ; 1) et admet en A une tangente de pente 3. Quels sont les réels a et b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = −2 et b = 1"
+        },
+        {
+          "id": "b",
+          "text": "a = 4 et b = 1"
+        },
+        {
+          "id": "c",
+          "text": "a = 3 et b = 1"
+        },
+        {
+          "id": "d",
+          "text": "a = 1 et b = −2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le point A donne f(0) = b = 1. On a f′(x) = (a(x + 1) − (ax + b))/(x + 1)² = (a − b)/(x + 1)², donc la pente en 0 vaut a − b = 3, soit a = 4 ✓ (contrôle : f(0) = 1 et f′(0) = 4 − 1 = 3). La réponse « a = −2 et b = 1 » dérive le quotient dans l'autre sens, (b − a)/(x + 1)². La réponse « a = 3 et b = 1 » lit f′(0) comme a, sans tenir compte de b. La réponse « a = 1 et b = −2 » lit f(0) comme a au lieu de b, puis résout a − b = 3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une seule des affirmations suivantes est vraie. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si f est dérivable sur ℝ et si f′ > 0 sur ℝ*, alors f n'est pas strictement croissante sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "Pour f(x) = x³ − x, f(−1) = f(1) : Rolle assure que f′ s'annule dans ]−1 ; 1["
+        },
+        {
+          "id": "c",
+          "text": "Pour f(x) = |x − 2|, f(0) = f(4) : Rolle assure que f′ s'annule dans ]0 ; 4["
+        },
+        {
+          "id": "d",
+          "text": "Si f est dérivable sur ]0 ; 1[ et si f(0) = f(1), alors f′ s'annule dans ]0 ; 1["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seule l'affirmation sur x³ − x est vraie ✓ : f est dérivable sur ℝ, donc continue sur [−1 ; 1] et dérivable sur ]−1 ; 1[, et f(−1) = 0 = f(1) ; Rolle donne c avec f′(c) = 0 (ici f′(x) = 3x² − 1 s'annule en ±1/√3). Pour |x − 2|, f(0) = f(4) = 2 mais f n'est pas dérivable en 2 : f′ vaut −1 puis 1 et ne s'annule jamais. L'affirmation « f′ > 0 sur ℝ* ⟹ f n'est pas strictement croissante » est fausse : f(x) = x³ est strictement croissante sur ℝ bien que f′(0) = 0, car f′ ne s'annule qu'en un point isolé. L'affirmation sur ]0 ; 1[ oublie la continuité aux bornes : f(x) = x sur ]0 ; 1] avec f(0) = 1 vérifie f(0) = f(1) = 1, est dérivable sur ]0 ; 1[, et sa dérivée 1 ne s'annule jamais.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x⁴/12 − x³/2 sur ℝ. Quelles sont les abscisses des points d'inflexion de C_f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 0 et x = 9/2"
+        },
+        {
+          "id": "b",
+          "text": "x = 3 seulement"
+        },
+        {
+          "id": "c",
+          "text": "x = 0 et x = 3"
+        },
+        {
+          "id": "d",
+          "text": "x = 3/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a f′(x) = x³/3 − 3x²/2 puis f″(x) = x² − 3x = x(x − 3). Cette dérivée seconde s'annule en 0 et en 3 et change de signe en chacun (positive, négative entre 0 et 3, puis positive) : les deux abscisses sont des abscisses d'inflexion ✓. La réponse « x = 0 et x = 9/2 » annule f′ = x²(2x − 9)/6 au lieu de f″. La réponse « x = 3 seulement » simplifie f″ par x et perd la racine 0. La réponse « x = 3/2 » annule la dérivée de f″, c'est-à-dire f⁽³⁾(x) = 2x − 3.",
+      "difficulty": 3
+    }
+  ]
+}
