@@ -381,56 +381,53 @@ des carrés des écarts verticaux. Cette droite est la **droite de régression d
 :::
 
 ::: figure Les segments pointillés verticaux relient chaque point Mᵢ au point Pᵢ de la droite D de même abscisse : la droite de régression rend la somme de leurs carrés minimale
-<svg viewBox="0 0 340 250">
+<svg viewBox="0 0 340 330">
 <title>Nuage des six points et droite D : y = 2,2x + 5, avec les écarts verticaux MᵢPᵢ en pointillés dont les carrés valent 0,16 ; 0,36 ; 4,84 ; 1 ; 0,04 et 0</title>
-<line x1="94.7" y1="208" x2="94.7" y2="22" stroke="#e2e8f0" stroke-width="1"/>
-<line x1="139.3" y1="208" x2="139.3" y2="22" stroke="#e2e8f0" stroke-width="1"/>
-<line x1="184" y1="208" x2="184" y2="22" stroke="#e2e8f0" stroke-width="1"/>
-<line x1="228.7" y1="208" x2="228.7" y2="22" stroke="#e2e8f0" stroke-width="1"/>
-<line x1="273.3" y1="208" x2="273.3" y2="22" stroke="#e2e8f0" stroke-width="1"/>
-<line x1="318" y1="208" x2="318" y2="22" stroke="#e2e8f0" stroke-width="1"/>
-<line x1="50" y1="149.9" x2="318" y2="149.9" stroke="#e2e8f0" stroke-width="1"/>
-<line x1="50" y1="91.8" x2="318" y2="91.8" stroke="#e2e8f0" stroke-width="1"/>
-<line x1="50" y1="33.6" x2="318" y2="33.6" stroke="#e2e8f0" stroke-width="1"/>
-<path d="M50 22 L50 208 L318 208" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/>
-<line x1="94.7" y1="208" x2="94.7" y2="212" stroke="#0f172a" stroke-width="1.2"/>
-<text x="94.7" y="224" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >2</text>
-<line x1="139.3" y1="208" x2="139.3" y2="212" stroke="#0f172a" stroke-width="1.2"/>
-<text x="139.3" y="224" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >4</text>
-<line x1="184" y1="208" x2="184" y2="212" stroke="#0f172a" stroke-width="1.2"/>
-<text x="184" y="224" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >6</text>
-<line x1="228.7" y1="208" x2="228.7" y2="212" stroke="#0f172a" stroke-width="1.2"/>
-<text x="228.7" y="224" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >8</text>
-<line x1="273.3" y1="208" x2="273.3" y2="212" stroke="#0f172a" stroke-width="1.2"/>
-<text x="273.3" y="224" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >10</text>
-<line x1="318" y1="208" x2="318" y2="212" stroke="#0f172a" stroke-width="1.2"/>
-<text x="318" y="224" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >12</text>
-<line x1="46" y1="149.9" x2="50" y2="149.9" stroke="#0f172a" stroke-width="1.2"/>
-<text x="43" y="153.9" text-anchor="end" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >10</text>
-<line x1="46" y1="91.8" x2="50" y2="91.8" stroke="#0f172a" stroke-width="1.2"/>
-<text x="43" y="95.8" text-anchor="end" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >20</text>
-<line x1="46" y1="33.6" x2="50" y2="33.6" stroke="#0f172a" stroke-width="1.2"/>
-<text x="43" y="37.6" text-anchor="end" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >30</text>
-<text x="318" y="237" text-anchor="end" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >X (dizaines d'utilisateurs)</text>
+<line x1="75.5" y1="290" x2="75.5" y2="22" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="126.6" y1="290" x2="126.6" y2="22" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="177.6" y1="290" x2="177.6" y2="22" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="228.7" y1="290" x2="228.7" y2="22" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="279.7" y1="290" x2="279.7" y2="22" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="50" y1="238.5" x2="318" y2="238.5" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="50" y1="135.4" x2="318" y2="135.4" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="50" y1="32.3" x2="318" y2="32.3" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 22 L50 290 L318 290" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round"/>
+<line x1="75.5" y1="290" x2="75.5" y2="294" stroke="#0f172a" stroke-width="1.2"/>
+<text x="75.5" y="306" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >2</text>
+<line x1="126.6" y1="290" x2="126.6" y2="294" stroke="#0f172a" stroke-width="1.2"/>
+<text x="126.6" y="306" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >4</text>
+<line x1="177.6" y1="290" x2="177.6" y2="294" stroke="#0f172a" stroke-width="1.2"/>
+<text x="177.6" y="306" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >6</text>
+<line x1="228.7" y1="290" x2="228.7" y2="294" stroke="#0f172a" stroke-width="1.2"/>
+<text x="228.7" y="306" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >8</text>
+<line x1="279.7" y1="290" x2="279.7" y2="294" stroke="#0f172a" stroke-width="1.2"/>
+<text x="279.7" y="306" text-anchor="middle" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >10</text>
+<line x1="46" y1="238.5" x2="50" y2="238.5" stroke="#0f172a" stroke-width="1.2"/>
+<text x="43" y="242.5" text-anchor="end" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >10</text>
+<line x1="46" y1="135.4" x2="50" y2="135.4" stroke="#0f172a" stroke-width="1.2"/>
+<text x="43" y="139.4" text-anchor="end" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >20</text>
+<line x1="46" y1="32.3" x2="50" y2="32.3" stroke="#0f172a" stroke-width="1.2"/>
+<text x="43" y="36.3" text-anchor="end" font-size="11" font-weight="400" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >30</text>
+<text x="318" y="319" text-anchor="end" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >X (dizaines d'utilisateurs)</text>
 <text x="54" y="17" text-anchor="start" font-size="12" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >Y (ms)</text>
-<line x1="94.7" y1="155.7" x2="94.7" y2="153.4" stroke="#b45309" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="4 3"/>
-<line x1="117" y1="144.1" x2="117" y2="140.6" stroke="#b45309" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="4 3"/>
-<line x1="139.3" y1="115" x2="139.3" y2="127.8" stroke="#b45309" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="4 3"/>
-<line x1="161.7" y1="120.8" x2="161.7" y2="115" stroke="#b45309" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="4 3"/>
-<line x1="184" y1="103.4" x2="184" y2="102.2" stroke="#b45309" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="4 3"/>
-<line x1="273.3" y1="51.1" x2="273.3" y2="51.1" stroke="#b45309" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="4 3"/>
-<line x1="72.3" y1="166.2" x2="295.7" y2="38.3" stroke="#0f6e56" stroke-width="2.4" stroke-linecap="round"/>
-<circle cx="94.7" cy="155.7" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
-<circle cx="117" cy="144.1" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
-<circle cx="139.3" cy="115" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
-<circle cx="161.7" cy="120.8" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
-<circle cx="184" cy="103.4" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
-<circle cx="273.3" cy="51.1" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
-<text x="307.7" y="52.3" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >D</text>
+<line x1="55.1" y1="262.8" x2="305.2" y2="40.6" stroke="#0f6e56" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="75.5" y1="248.8" x2="75.5" y2="244.6" stroke="#b45309" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="4 3"/>
+<line x1="101" y1="228.2" x2="101" y2="222" stroke="#b45309" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="4 3"/>
+<line x1="126.6" y1="176.6" x2="126.6" y2="199.3" stroke="#b45309" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="4 3"/>
+<line x1="152.1" y1="186.9" x2="152.1" y2="176.6" stroke="#b45309" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="4 3"/>
+<line x1="177.6" y1="156" x2="177.6" y2="153.9" stroke="#b45309" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="4 3"/>
+<line x1="279.7" y1="63.2" x2="279.7" y2="63.2" stroke="#b45309" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="4 3"/>
+<circle cx="75.5" cy="248.8" r="3.5" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
+<circle cx="101" cy="228.2" r="3.5" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
+<circle cx="126.6" cy="176.6" r="3.5" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
+<circle cx="152.1" cy="186.9" r="3.5" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
+<circle cx="177.6" cy="156" r="3.5" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
+<circle cx="279.7" cy="63.2" r="3.5" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
+<text x="315.2" y="54.6" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >D</text>
 </svg>
 :::
 
-Sur la figure, la droite D : y = 2,2x + 5 coupe les segments MᵢPᵢ, dont les carrés valent 0,16 ; 0,36 ; 4,84 ; 1 ; 0,04 et 0 : la somme S est 6,4.
+Sur la figure, les écarts MᵢPᵢ entre les points et la droite D : y = 2,2x + 5 valent 0,4 ; 0,6 ; 2,2 ; 1 ; 0,2 et 0 : leurs carrés, 0,16 ; 0,36 ; 4,84 ; 1 ; 0,04 et 0, donnent la somme S = 6,4.
 
 ::: exemple Trouver la droite par un trinôme
 
