@@ -31,27 +31,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "L'inverse de la matrice A d'un système A × X = B est A⁻¹ = (2 −3 ; −1 2), et B = (7 ; 4). Quelle est la solution X ?",
+      "prompt": "L'inverse de la matrice A d'un système A × X = B est A⁻¹ = (1 0 −1 ; 2 1 0 ; 0 −1 1), et B = (3 ; 1 ; 2). Quelle est la solution X ?",
       "options": [
         {
           "id": "a",
-          "text": "(2 ; −15)"
+          "text": "(1 ; 5 ; 1)"
         },
         {
           "id": "b",
-          "text": "(2 ; 1)"
+          "text": "(1 ; 7 ; 1)"
         },
         {
           "id": "c",
-          "text": "(10 ; −13)"
+          "text": "(5 ; −1 ; −1)"
         },
         {
           "id": "d",
-          "text": "(14 ; −7)"
+          "text": "(5 ; 7 ; 3)"
         }
       ],
       "correctOption": "b",
-      "explanation": "Comme A est inversible, X = A⁻¹ × B, avec A⁻¹ à gauche : X = (2 × 7 − 3 × 4 ; −1 × 7 + 2 × 4) = (2 ; 1) ✓. Le vecteur (2 ; −15) a une erreur de signe sur 2 × 4. Le vecteur (10 ; −13) est le résultat de B × A⁻¹, avec B écrit en ligne et placé à droite. Le vecteur (14 ; −7) ne garde que le premier produit de chaque ligne.",
+      "explanation": "Comme A est inversible, X = A⁻¹ × B, avec A⁻¹ à gauche : chaque inconnue est le produit d'une ligne de A⁻¹ par la colonne B. x = 3 + 0 − 2 = 1, y = 6 + 1 + 0 = 7, z = 0 − 1 + 2 = 1, donc X = (1 ; 7 ; 1) ✓. Le vecteur (5 ; −1 ; −1) recopie en colonne le produit de la ligne (3 1 2) par A⁻¹, c'est-à-dire B placé à gauche de A⁻¹. Le vecteur (5 ; 7 ; 3) perd les signes des coefficients −1. Le vecteur (1 ; 5 ; 1) se trompe de signe sur le produit 1 × 1 de la deuxième ligne.",
       "difficulty": 2
     },
     {

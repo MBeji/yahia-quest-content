@@ -4,7 +4,7 @@
 
 Bienvenue, héros de la section Sciences de l'informatique. Les ingénieurs de l'ère des ordinateurs ne résolvent pas les systèmes à la main : ils rangent les coefficients dans une matrice et laissent un programme ou un tableur calculer. Huit étapes te mènent de la matrice au système de Cramer : matrices et somme, produit de matrices, déterminant, propriétés du déterminant, matrice inverse, pivot de Gauss, forme matricielle AX = B, formules de Cramer. On suppose acquis le calcul sur les systèmes de deux équations (substitution, élimination).
 
-Dans tout le chapitre, une matrice s'écrit **ligne par ligne**, les lignes étant séparées par « ; » : (1 2 ; 3 4) a pour lignes (1 2) et (3 4). Un vecteur-colonne s'écrit donc (x ; y ; z), et un déterminant |a b ; c d|.
+Dans tout le chapitre, une matrice s'écrit **ligne par ligne** : les coefficients d'une ligne sont séparés par une espace, les lignes par « ; ». Ainsi (1 2 ; 3 4) a pour lignes (1 2) et (3 4). Un coefficient négatif colle à son signe, (3 −1) a deux coefficients, alors que 3 − 1 est une soustraction. Un vecteur-colonne s'écrit (x ; y ; z), un déterminant |a b ; c d|, et dans une matrice augmentée la barre « | » sépare les seconds membres.
 
 ## 🗂️ Matrices : ranger les nombres, les additionner, les agrandir
 
@@ -16,6 +16,14 @@ Une **matrice** de dimension n × p est un tableau de nombres réels rangés en 
 
 Une matrice à une seule ligne est un **vecteur-ligne**, à une seule colonne un **vecteur-colonne**. Si n = p, la matrice est **carrée** d'ordre n.
 :::
+
+|            | jour 1 | jour 2 |
+| ---------- | ------ | ------ |
+| sans plomb | 1200   | 1400   |
+| super      | 900    | 800    |
+| gazole     | 2100   | 1900   |
+
+Ce tableau de ventes s'écrit en ligne M = (1200 1400 ; 900 800 ; 2100 1900).
 
 ::: exemple Lire et cumuler des ventes
 Les ventes de la première série forment M = (1200 1400 ; 900 800 ; 2100 1900) : lignes sans plomb, super, gazole ; colonnes jour 1, jour 2. Une seconde série donne N = (1000 1100 ; 1000 700 ; 1800 2200).
@@ -36,9 +44,11 @@ Pour des matrices A, B, C de même dimension n × p et un réel k :
 - A + B est la matrice des sommes de coefficients de même position, kA celle des coefficients multipliés par k ; A − B désigne A + (−1)B ;
 - A + B = B + A, (A + B) + C = A + (B + C) et k(A + B) = kA + kB.
 
-La **matrice nulle** θ, dont tous les coefficients sont nuls, vérifie A + θ = A. La **matrice unité** Iₙ est la matrice carrée dont la diagonale est formée de 1 et les autres coefficients de 0 ; une matrice **diagonale** n'a de coefficients non nuls que sur sa diagonale. Deux matrices sont **égales** si elles ont la même dimension et les mêmes coefficients aux mêmes positions.
-
 Cas limite : la somme n'existe que pour deux matrices de même dimension, même si elles ont autant de coefficients (une matrice 2 × 3 et une matrice 3 × 2 ne s'additionnent pas).
+:::
+
+::: definition
+La **matrice nulle** θ, dont tous les coefficients sont nuls, vérifie A + θ = A. La **matrice unité** Iₙ est la matrice carrée dont la diagonale est formée de 1 et les autres coefficients de 0 ; une matrice **diagonale** n'a de coefficients non nuls que sur sa diagonale. Deux matrices sont **égales** si elles ont la même dimension et les mêmes coefficients aux mêmes positions.
 :::
 
 ::: verifie
@@ -132,6 +142,8 @@ det(M) = a₁₁ × |a₂₂ a₂₃ ; a₃₂ a₃₃| − a₁₂ × |a₂₁ 
 
 Chaque déterminant 2 × 2 est obtenu en supprimant la ligne et la colonne du coefficient devant lequel il se trouve. On peut développer suivant n'importe quelle ligne ou colonne, en donnant au coefficient aᵢⱼ le signe (−1)ⁱ⁺ʲ, c'est-à-dire la grille + − + ; − + − ; + − +.
 
+Le manuel **définit** le déterminant en développant suivant la **1ʳᵉ colonne** : pour M = (a₁ b₁ c₁ ; a₂ b₂ c₂ ; a₃ b₃ c₃), det(M) = a₁ × |b₂ c₂ ; b₃ c₃| − a₂ × |b₁ c₁ ; b₃ c₃| + a₃ × |b₁ c₁ ; b₂ c₂|. Les deux développements donnent la même valeur.
+
 Cas limite : une ligne ou une colonne de zéros donne un déterminant nul, et développer suivant une ligne riche en zéros abrège le calcul.
 :::
 
@@ -191,7 +203,7 @@ Soit M une matrice 3 × 3 de déterminant 5. On écrit det(3M) = 3 × 5 = 15. Ce
 ::: propriete
 Pour des matrices carrées M et N de même ordre n et un réel k :
 
-- det(kM) = kⁿ × det(M) et det(Mᵗ) = det(M) ;
+- det(kM) = kⁿ × det(M) et det(Mᵗ) = det(M), où la **transposée** Mᵗ s'obtient en échangeant lignes et colonnes ;
 - det(M × N) = det(M) × det(N), propriété admise ;
 - un déterminant dont tous les coefficients sous la diagonale (ou tous ceux au-dessus) sont nuls vaut le produit des coefficients de la diagonale.
 
@@ -236,11 +248,11 @@ On échange a et d, on change le signe de b et de c, puis on divise par le déte
 
 1. Pour A = (2 1 ; 5 3), det(A) = 2 × 3 − 1 × 5 = 1, non nul : A est inversible.
 2. On échange 2 et 3, on change le signe de 1 et de 5 : A⁻¹ = (3 −1 ; −5 2), et le facteur 1/1 ne change rien.
-3. Contrôle : A × A⁻¹ = (2 × 3 + 1 × (−5), 2 × (−1) + 1 × 2 ; 5 × 3 + 3 × (−5), 5 × (−1) + 3 × 2) = (1 0 ; 0 1) ✓.
+3. Contrôle : la ligne 1 de A × A⁻¹ a pour coefficients 2 × 3 + 1 × (−5) = 1 et 2 × (−1) + 1 × 2 = 0, la ligne 2 a pour coefficients 5 × 3 + 3 × (−5) = 0 et 5 × (−1) + 3 × 2 = 1 : on trouve (1 0 ; 0 1) ✓.
 
 :::
 
-::: piege Changer le signe de a et de d
+::: piege Oublier d'échanger a et d
 Pour M = (3 1 ; 4 2), on écrit M⁻¹ = (1/2) × (3 −1 ; −4 2), en changeant le signe de b et de c sans échanger a et d. Cela tente parce que « les signes changent ». Mais M × (3 −1 ; −4 2) a pour première ligne (3 × 3 + 1 × (−4), …) = (5 …), qui n'est pas celle de 2I₂. La bonne matrice est (1/2) × (2 −1 ; −4 3).
 :::
 
@@ -258,7 +270,7 @@ Soit A = (1 1 0 ; 0 1 1 ; 1 0 1).
 1. det(A) = 1 × |1 1 ; 0 1| − 1 × |0 1 ; 1 1| + 0 = 1 + 1 = 2, non nul : A est inversible.
 2. α₁₁ = +|1 1 ; 0 1| = 1, α₁₂ = −|0 1 ; 1 1| = 1, α₁₃ = +|0 1 ; 1 0| = −1, et de même pour les six autres cofacteurs : Com A = (1 1 −1 ; −1 1 1 ; 1 −1 1).
 3. On transpose, puis on divise par 2 : A⁻¹ = (1/2) × (1 −1 1 ; 1 1 −1 ; −1 1 1).
-4. Contrôle sur la première ligne de A × A⁻¹ : (1 + 1 + 0, −1 + 1 + 0, 1 − 1 + 0)/2 = (2, 0, 0)/2 = (1 0 0) ✓.
+4. Contrôle sur la première ligne de A × A⁻¹ : les trois coefficients valent 1 + 1 + 0 = 2, −1 + 1 + 0 = 0 et 1 − 1 + 0 = 0, divisés par 2 : (1 0 0) ✓.
 
 :::
 
@@ -302,7 +314,7 @@ Pour supprimer x de la ligne 2, on écrit L₂ ← L₂ − 2L₁ sur les seuls 
 ::: methode
 Pour inverser une matrice carrée A par les lignes : (1) écrire (A | Iₙ) ; (2) enchaîner les opérations élémentaires, toujours sur la ligne entière, jusqu'à obtenir Iₙ à gauche ; (3) lire A⁻¹ à droite, car les mêmes opérations transforment Iₙ en A⁻¹.
 
-Cas limite : si un pivot est nul, on échange deux lignes. Si on ne peut plus en trouver un non nul dans la colonne, A n'est pas inversible. Une ligne (0 0 0 | c) avec c ≠ 0 rend le système impossible ; avec c = 0, elle ne dit plus rien et il reste une infinité de solutions.
+Cas limite : si un pivot est nul, on échange deux lignes. Si on ne peut plus en trouver un non nul dans la colonne, A n'est pas inversible. Pour un système, une ligne (0 0 0 | c) avec c ≠ 0 le rend impossible ; avec c = 0, elle disparaît, et si aucune autre ligne n'est impossible, le système a une infinité de solutions.
 :::
 
 ::: exemple Inverser la matrice du snack
@@ -311,7 +323,7 @@ Soit S = (1 1 1 ; 2 1 2 ; 1 3 2) et (S | I₃).
 1. L₂ ← L₂ − 2L₁ et L₃ ← L₃ − L₁ donnent (1 1 1 | 1 0 0 ; 0 −1 0 | −2 1 0 ; 0 2 1 | −1 0 1).
 2. L₃ ← L₃ + 2L₂ donne la ligne (0 0 1 | −5 2 1), puis L₂ ← −L₂ donne (0 1 0 | 2 −1 0).
 3. L₁ ← L₁ − L₂ − L₃ donne (1 0 0 | 4 −1 −1) : à gauche on lit I₃, et à droite S⁻¹ = (4 −1 −1 ; 2 −1 0 ; −5 2 1).
-4. Contrôle sur la première ligne de S × S⁻¹ : (4 + 2 − 5, −1 − 1 + 2, −1 + 0 + 1) = (1 0 0) ✓.
+4. Contrôle sur la première ligne de S × S⁻¹ : les trois coefficients valent 4 + 2 − 5 = 1, −1 − 1 + 2 = 0 et −1 + 0 + 1 = 0, soit (1 0 0) ✓.
 
 :::
 
@@ -356,10 +368,12 @@ Pour résoudre A × X = B, on écrit X = B × A⁻¹. Cela tente parce qu'on « 
 :::
 
 ::: exemple Un polynôme annulateur
+Pour obtenir A⁻¹ sans comatrice, on cherche une relation entre les puissances de la matrice.
+
 Soit C = (2 1 1 ; 1 2 1 ; 1 1 2).
 
 1. On calcule C² = (6 5 5 ; 5 6 5 ; 5 5 6), donc C² − 5C = −4I₃.
-2. On met C en facteur : C × (C − 5I₃) = −4I₃, donc C × ((5I₃ − C)/4) = I₃. La matrice C est inversible et C⁻¹ = (5I₃ − C)/4 = (1/4) × (3 −1 −1 ; −1 3 −1 ; −1 −1 3).
+2. On met C en facteur : C × (C − 5I₃) = −4I₃, donc C × ((5I₃ − C)/4) = I₃, et ((5I₃ − C)/4) × C = I₃ aussi, car C commute avec 5I₃ − C. La matrice C est inversible et C⁻¹ = (5I₃ − C)/4 = (1/4) × (3 −1 −1 ; −1 3 −1 ; −1 −1 3).
 3. Pour C × X = (3 ; 4 ; 1), X = C⁻¹ × (3 ; 4 ; 1) = (1/4) × (9 − 4 − 1 ; −3 + 12 − 1 ; −3 − 4 + 3) = (1 ; 2 ; −1).
 
 :::

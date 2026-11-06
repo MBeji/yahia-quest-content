@@ -52,30 +52,30 @@
       ],
       "correctOption": "d",
       "explanation": "Il faut que chaque produit enchaîne un nombre de colonnes égal au nombre de lignes suivant. C × A est défini (3 colonnes, 3 lignes) et de dimension 2 × 5, puis (C × A) × B est défini (5 colonnes, 5 lignes) et de dimension 2 × 1 ✓. A × B × C échoue : A × B est 3 × 1 et C a 2 lignes. A × C échoue : A a 5 colonnes et C a 2 lignes. B × C échoue : B a 1 colonne et C a 2 lignes.",
-      "difficulty": 3
+      "difficulty": 2
     },
     {
-      "prompt": "Pour tout réel a, on pose M = (1 a 0 ; 0 1 a ; a 0 1). Pour quelles valeurs de a la matrice M est-elle inversible ?",
+      "prompt": "Soit J la matrice carrée d'ordre 3 dont tous les coefficients valent 1. Quelle est la matrice J⁴ ?",
       "options": [
         {
           "id": "a",
-          "text": "a ≠ −1 et a ≠ 1"
+          "text": "J"
         },
         {
           "id": "b",
-          "text": "a ≠ −1"
+          "text": "4J"
         },
         {
           "id": "c",
-          "text": "a ≠ 1"
+          "text": "27J"
         },
         {
           "id": "d",
-          "text": "Pour tout réel a"
+          "text": "81J"
         }
       ],
-      "correctOption": "b",
-      "explanation": "En développant suivant la ligne 1, det(M) = 1 × 1 − a × (0 − a²) + 0 = 1 + a³. La matrice est inversible si et seulement si a³ ≠ −1, c'est-à-dire a ≠ −1 ✓. Écrire a ≠ 1 vient d'un déterminant 1 − a³. Écrire a ≠ ±1 résout a² = 1 au lieu de a³ = −1. Dire que M est inversible pour tout a oublie le terme −a(0 − a²) et ne garde que 1.",
+      "correctOption": "c",
+      "explanation": "Chaque coefficient de J × J est le produit d'une ligne (1 1 1) par une colonne (1 ; 1 ; 1), soit 3 : J² = 3J. Alors J³ = J² × J = 3J² = 9J et J⁴ = 9J² = 27J = 3³J ✓. La réponse J élève chaque coefficient à la puissance 4, ce qui ne vaut que pour une matrice diagonale. La réponse 4J confond J⁴ = J × J × J × J avec J + J + J + J. La réponse 81J = 3⁴J décale l'exposant d'un cran : J¹ = 3⁰J, donc Jⁿ = 3ⁿ⁻¹J.",
       "difficulty": 3
     },
     {
@@ -107,7 +107,7 @@
       "options": [
         {
           "id": "a",
-          "text": "m ≠ 0"
+          "text": "m ≠ 1 et m ≠ −1"
         },
         {
           "id": "b",
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Avec L₂ ← L₂ − L₁ et L₃ ← L₃ − L₁, on obtient (1 1 1 ; 0 m−1 m−1 ; 0 m−1 m²−1) et det(M) = (m − 1)(m² − 1) − (m − 1)² = (m − 1)(m² − m) = m(m − 1)². Il s'annule pour m = 0 et m = 1, donc le système est de Cramer pour m ≠ 0 et m ≠ 1 ✓. Écrire m ≠ 1 seul perd le facteur m. Écrire m ≠ 0 seul perd le carré (m − 1)². Ajouter m ≠ −1 vient de m² − 1 = 0, qui est un facteur intermédiaire et non du déterminant.",
+      "explanation": "Avec L₂ ← L₂ − L₁ et L₃ ← L₃ − L₁, on obtient (1 1 1 ; 0 m−1 m−1 ; 0 m−1 m²−1) et det(M) = (m − 1)(m² − 1) − (m − 1)² = (m − 1)(m² − m) = m(m − 1)². Il s'annule pour m = 0 et m = 1, donc le système est de Cramer pour m ≠ 0 et m ≠ 1 ✓. Écrire m ≠ 1 seul perd le facteur m. Écrire m ≠ 1 et m ≠ −1 garde (m − 1)(m² − 1) en oubliant de retrancher (m − 1)². Écrire m ≠ 0, m ≠ 1 et m ≠ −1 vient d'un développement avec un signe + sur le deuxième terme : (m³ − m²) + (m² − m) = m(m − 1)(m + 1).",
       "difficulty": 3
     },
     {

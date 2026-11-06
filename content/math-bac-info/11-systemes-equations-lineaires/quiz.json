@@ -2,7 +2,7 @@
   "title": "Test de compréhension ⭐ : Systèmes d'équations linéaires",
   "questions": [
     {
-      "prompt": "Dans la matrice K = (4 −1 7 0 ; 2 5 3 8 ; 6 9 −2 1), que vaut le coefficient a₃₂ ?",
+      "prompt": "Dans la matrice A = (4 −1 7 0 ; 2 5 3 8 ; 6 9 −2 1), que vaut le coefficient a₃₂ ?",
       "options": [
         {
           "id": "a",
@@ -46,7 +46,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "A a 3 colonnes et B a 3 lignes : le produit est défini, et sa dimension est formée du nombre de lignes de A et du nombre de colonnes de B, soit 2 × 4 ✓. La dimension 3 × 3 reprend les dimensions intérieures, qui s'annulent. La dimension 4 × 2 inverse lignes et colonnes. Dire que le produit n'existe pas confond la condition du produit (colonnes de A égales aux lignes de B) avec celle de la somme (même dimension).",
+      "explanation": "A a 3 colonnes et B a 3 lignes : le produit est défini, et sa dimension est formée du nombre de lignes de A et du nombre de colonnes de B, soit 2 × 4 ✓. La dimension 3 × 3 reprend les dimensions intérieures (3 et 3), qui disparaissent dans le produit. La dimension 4 × 2 inverse lignes et colonnes. Dire que le produit n'existe pas confond la condition du produit (colonnes de A égales aux lignes de B) avec celle de la somme (même dimension).",
       "difficulty": 1
     },
     {
@@ -102,7 +102,7 @@
       "options": [
         {
           "id": "a",
-          "text": "(1/10) × (3 −1 ; 4 2)"
+          "text": "(1/10) × (3 1 ; 4 2)"
         },
         {
           "id": "b",
@@ -118,7 +118,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Le déterminant vaut 2 × 3 − (−1) × 4 = 10, non nul. On échange 2 et 3, on change le signe de −1 et de 4, puis on divise par 10 : (1/10) × (3 1 ; −4 2) ✓. Échanger sans changer les signes donne (3 −1 ; 4 2) ; changer les signes sans échanger donne (2 1 ; −4 3). Oublier de diviser par 10 donne une matrice dont le produit avec M vaut 10 fois I₂.",
+      "explanation": "Le déterminant vaut 2 × 3 − (−1) × 4 = 10, non nul. On échange 2 et 3, on change le signe de −1 et de 4, puis on divise par 10 : (1/10) × (3 1 ; −4 2) ✓. Oublier le signe de 4 donne (3 1 ; 4 2) ; changer les signes sans échanger donne (2 1 ; −4 3). Oublier de diviser par 10 donne une matrice dont le produit avec M vaut 10 fois I₂.",
       "difficulty": 2
     },
     {
@@ -146,7 +146,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Le système 2x − y + 3z = 4, x + 5z = −1, −y + z = 0 s'écrit A × X = B avec X = (x ; y ; z). Quelle est la matrice A ?",
+      "prompt": "Le système\n2x − y + 3z = 4\nx + 5z = −1\n−y + z = 0\ns'écrit A × X = B avec X = (x ; y ; z). Quelle est la matrice A ?",
       "options": [
         {
           "id": "a",
@@ -170,7 +170,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Pour quelles valeurs du réel m le système 2x + my = 1, (m + 1)x + 3y = 4 n'est-il pas de Cramer ?",
+      "prompt": "Pour quelles valeurs du réel m le système\n2x + my = 1\n(m + 1)x + 3y = 4\nn'est-il pas de Cramer ?",
       "options": [
         {
           "id": "a",
@@ -186,11 +186,11 @@
         },
         {
           "id": "d",
-          "text": "m = 5 ou m = 6"
+          "text": "Pour aucune valeur de m"
         }
       ],
       "correctOption": "b",
-      "explanation": "Le système n'est pas de Cramer quand le déterminant s'annule : 2 × 3 − m(m + 1) = 0, soit m² + m − 6 = 0, donc (m − 2)(m + 3) = 0 et m = 2 ou m = −3 ✓. Les valeurs −1 et 0 annulent m(m + 1) et oublient le 6. Les valeurs −2 et 3 viennent de m² − m − 6, avec une erreur de signe sur le terme en m. Les valeurs 5 et 6 résolvent m = 6 ou m + 1 = 6, comme si un produit égal à 6 imposait un facteur égal à 6.",
+      "explanation": "Le système n'est pas de Cramer quand le déterminant s'annule : 2 × 3 − m(m + 1) = 0, soit m² + m − 6 = 0, donc (m − 2)(m + 3) = 0 et m = 2 ou m = −3 ✓. Les valeurs −1 et 0 annulent m(m + 1) et oublient le 6. Les valeurs −2 et 3 viennent de m² − m − 6, avec une erreur de signe sur le terme en m. Dire que le déterminant ne s'annule jamais vient d'un déterminant écrit 2 × 3 + m(m + 1), où l'équation m² + m + 6 = 0 n'a pas de racine réelle.",
       "difficulty": 2
     }
   ]
