@@ -39,7 +39,7 @@
         },
         {
           "id": "b",
-          "text": "e^(x²+3x) + 5"
+          "text": "(2x + 3)e^(x²+3x) + 2"
         },
         {
           "id": "c",
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Avec u(x) = x² + 3x, u′(x) = 2x + 3 et f = u′e^u : les primitives sont e^(x²+3x) + k. La condition F(0) = e⁰ + k = 1 + k = 5 donne k = 4, soit F(x) = e^(x²+3x) + 4 ✓. Le résultat avec +5 oublie que e⁰ = 1 ; celui avec −4 se trompe de signe sur la constante ; et (1/2)e^(x²+3x) + 9/2 vaut bien 5 en 0, mais sa dérivée est (x + 3/2)e^(x²+3x), pas f.",
+      "explanation": "Avec u(x) = x² + 3x, u′(x) = 2x + 3 et f = u′e^u : les primitives sont e^(x²+3x) + k. La condition F(0) = e⁰ + k = 1 + k = 5 donne k = 4, soit F(x) = e^(x²+3x) + 4 ✓. (2x + 3)e^(x²+3x) + 2 vaut bien 5 en 0, mais c'est f + 2 : on a pris f pour sa propre primitive, comme si e^u se primitivait en lui-même sans tenir compte de u′ ; celui avec −4 se trompe de signe sur la constante ; et (1/2)e^(x²+3x) + 9/2 vaut bien 5 en 0, mais sa dérivée est (x + 3/2)e^(x²+3x), pas f.",
       "difficulty": 2
     },
     {
@@ -103,7 +103,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "Pour quelles valeurs du réel m l'équation e^(2x) − 2eˣ + m = 0 admet-elle exactement deux solutions ?",
+      "prompt": "Soit m un réel. Pour quelles valeurs de m a-t-on exactement deux réels x tels que e^(2x) − 4eˣ + m = 0 ?",
       "options": [
         {
           "id": "a",
@@ -111,43 +111,43 @@
         },
         {
           "id": "b",
-          "text": "]0 ; 1["
+          "text": "]0 ; 4["
         },
         {
           "id": "c",
-          "text": "]0 ; 1]"
+          "text": "]0 ; 4]"
         },
         {
           "id": "d",
-          "text": "]−∞ ; 1["
+          "text": "]−∞ ; 4["
         }
       ],
       "correctOption": "b",
-      "explanation": "On pose X = eˣ > 0 : X² − 2X + m = 0. Chaque racine X > 0 donne une seule solution x = ln X, donc il faut deux racines distinctes strictement positives. Le discriminant 4 − 4m > 0 donne m < 1 ; la somme 2 > 0 et le produit m > 0 assurent des racines positives, d'où 0 < m < 1 ✓. Pour m = 1, la racine double X = 1 donne une seule solution x = 0 ; pour m ≤ 0, une seule racine est positive ; et ]−∞ ; 1[ oublie que le produit m doit être positif.",
+      "explanation": "On pose X = eˣ > 0 : X² − 4X + m = 0. Chaque racine X > 0 donne une seule solution x = ln X, donc il faut deux racines distinctes strictement positives. Le discriminant 16 − 4m > 0 donne m < 4 ; la somme 4 > 0 et le produit m > 0 assurent des racines positives, d'où 0 < m < 4 ✓. Pour m = 4, la racine double X = 2 donne une seule solution x = ln 2 ; pour m ≤ 0, une seule racine est positive ; et ]−∞ ; 4[ oublie que le produit m doit être positif.",
       "difficulty": 3
     },
     {
-      "prompt": "Une substance perd 15 % de sa masse chaque heure : après t heures (t réel), sa masse est m₀ × 0,85ᵗ. À quel instant t sa masse est-elle égale à m₀/2 ?",
+      "prompt": "La masse d'une substance radioactive est divisée par 2 toutes les 4 heures : m(t) = m₀ × aᵗ, avec t en heures. Quel pourcentage de sa masse la substance perd-elle chaque heure, arrondi à 0,1 % ?",
       "options": [
         {
           "id": "a",
-          "text": "t = −ln 2/ln 0,85"
+          "text": "12,5 %"
         },
         {
           "id": "b",
-          "text": "t = ln 2/ln 0,85"
+          "text": "15,9 %"
         },
         {
           "id": "c",
-          "text": "t = ln 0,5/ln 0,15"
+          "text": "84,1 %"
         },
         {
           "id": "d",
-          "text": "t = 10/3"
+          "text": "93,8 %"
         }
       ],
-      "correctOption": "a",
-      "explanation": "0,85ᵗ = 1/2 équivaut à t ln 0,85 = ln(1/2) = −ln 2, donc t = −ln 2/ln 0,85 ≈ 0,6931/0,1625 ≈ 4,27 heures ✓ (0,85^4,27 ≈ 0,50). Le quotient ln 2/ln 0,85 est négatif puisque ln 0,85 < 0 : un instant ne peut pas être négatif ici ; ln 0,5/ln 0,15 prend 0,15 pour le coefficient multiplicateur au lieu de 0,85 ; et 10/3 suppose une perte linéaire de 15 % de m₀ par heure.",
+      "correctOption": "b",
+      "explanation": "aᵗ vaut 1/2 pour t = 4, donc a⁴ = 1/2 et a = (1/2)^(1/4) = e^(−(ln 2)/4) ≈ e^(−0,1733) ≈ 0,841 : chaque heure, la masse est multipliée par 0,841, elle perd donc 1 − 0,841 ≈ 15,9 % ✓ (contrôle : 0,841⁴ ≈ 0,500). Le résultat 12,5 % répartit la perte de 50 % linéairement sur 4 heures ; 84,1 % est le coefficient a, la part qui reste ; 93,8 % élève 1/2 à la puissance 4 au lieu de 1/4 (1 − 0,5⁴ = 0,9375).",
       "difficulty": 3
     }
   ]

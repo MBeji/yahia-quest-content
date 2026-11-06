@@ -47,11 +47,11 @@
         },
         {
           "id": "d",
-          "text": "]0 ; 4]"
+          "text": "]−∞ ; ln 3]"
         }
       ],
       "correctOption": "b",
-      "explanation": "Conditions d'existence : eˣ − 1 > 0 équivaut à eˣ > 1, soit x > 0. Sur ce domaine, ln étant croissante, ln(eˣ − 1) ≤ ln 3 équivaut à eˣ − 1 ≤ 3, soit eˣ ≤ 4, donc x ≤ ln 4. S = ]0 ; ln 4] ✓ (en x = ln 4 : eˣ − 1 = 3). L'ensemble ]−∞ ; ln 4] oublie la condition d'existence ; ]0 ; ln 3] résout eˣ ≤ 3 sans ajouter 1 ; et ]0 ; 4] oublie de passer à l'exponentielle inverse, ln, pour eˣ ≤ 4.",
+      "explanation": "Conditions d'existence : eˣ − 1 > 0 équivaut à eˣ > 1, soit x > 0. Sur ce domaine, ln étant croissante, ln(eˣ − 1) ≤ ln 3 équivaut à eˣ − 1 ≤ 3, soit eˣ ≤ 4, donc x ≤ ln 4. S = ]0 ; ln 4] ✓ (en x = ln 4 : eˣ − 1 = 3). L'ensemble ]−∞ ; ln 4] oublie la condition d'existence ; ]0 ; ln 3] résout eˣ ≤ 3 sans ajouter 1 ; et ]−∞ ; ln 3] cumule les deux oublis.",
       "difficulty": 2
     },
     {
@@ -75,7 +75,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "P(t) = 10 équivaut à 1 + 19e^(−1,2t) = 2, soit e^(−1,2t) = 1/19, donc −1,2t = −ln 19 et t = ln 19/1,2 ≈ 2,45 semaines ✓ (19e^(−2,94) = 1, soit P = 20/2 = 10). Le résultat −ln 19/1,2 oublie le signe du double moins ; ln 2/1,2 confond la moitié de la limite avec un doublement ; et ln 19 oublie de diviser par 1,2.",
+      "explanation": "P(t) = 10 équivaut à 1 + 19e^(−1,2t) = 2, soit e^(−1,2t) = 1/19, donc −1,2t = −ln 19 et t = ln 19/1,2 ≈ 2,45 semaines ✓ (19e^(−2,94) = 1, soit P = 20/2 = 10). Le résultat −ln 19/1,2 oublie le signe du double moins ; ln 2/1,2 est le temps de doublement de e^(1,2t), qui ignore le dénominateur 1 + 19e^(−1,2t) ; et ln 19 oublie de diviser par 1,2.",
       "difficulty": 3
     },
     {
@@ -91,7 +91,7 @@
         },
         {
           "id": "c",
-          "text": "1"
+          "text": "(ln 2)¹⁰"
         },
         {
           "id": "d",
@@ -99,7 +99,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "On écrit 2ˣ = e^(x ln 2) et l'on pose X = x ln 2 → +∞ : 2ˣ/x¹⁰ = (ln 2)¹⁰ × e^X/X¹⁰, avec e^X/X¹⁰ → +∞, et (ln 2)¹⁰ > 0, donc la limite est +∞ ✓. La valeur 0 se lit sur des x modérés : 2¹⁰/10¹⁰ est minuscule, mais 2¹⁰⁰/100¹⁰ ≈ 1,3 × 10¹⁰ ; la valeur 1 ne correspond à aucun calcul ; et la forme +∞/+∞ n'interdit pas la limite, que la comparaison fixe.",
+      "explanation": "On écrit 2ˣ = e^(x ln 2) et l'on pose X = x ln 2 → +∞ : 2ˣ/x¹⁰ = (ln 2)¹⁰ × e^X/X¹⁰, avec e^X/X¹⁰ → +∞, et (ln 2)¹⁰ > 0, donc la limite est +∞ ✓. La valeur 0 se lit sur des x modérés : 2¹⁰/10¹⁰ est minuscule, mais 2¹⁰⁰/100¹⁰ ≈ 1,3 × 10¹⁰ ; (ln 2)¹⁰ garde le facteur constant de la réécriture mais oublie que e^X/X¹⁰ → +∞ ; et la forme +∞/+∞ n'interdit pas la limite, que la comparaison fixe.",
       "difficulty": 3
     },
     {
@@ -107,7 +107,7 @@
       "options": [
         {
           "id": "a",
-          "text": "(−3x − 1)e^(−2x)"
+          "text": "(−3x + 1)e^(−2x) + 2e^(−2)"
         },
         {
           "id": "b",
@@ -123,31 +123,31 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "On cherche F(x) = (αx + β)e^(−2x), donc F′(x) = (−2αx + α − 2β)e^(−2x). Il faut −2α = 6, soit α = −3, et α − 2β = −1, soit β = −1 : F(x) = (−3x − 1)e^(−2x). Les primitives sont F(x) + C et la condition s'écrit −4e^(−2) + C = 0, soit C = 4e^(−2) ✓. La réponse sans constante vaut −4e^(−2) en 1, pas 0 ; celle avec −4e^(−2) se trompe de signe sur C ; et (3x + 2)e^(−2x) vient de α = 3, signe de c = −2 oublié.",
+      "explanation": "On cherche F(x) = (αx + β)e^(−2x), donc F′(x) = (−2αx + α − 2β)e^(−2x). Il faut −2α = 6, soit α = −3, et α − 2β = −1, soit β = −1 : F(x) = (−3x − 1)e^(−2x). Les primitives sont F(x) + C et la condition s'écrit −4e^(−2) + C = 0, soit C = 4e^(−2) ✓. (−3x + 1)e^(−2x) + 2e^(−2) s'annule bien en 1, mais vient de β = +1, une erreur de signe dans α − 2β = −1 : sa dérivée est (6x − 5)e^(−2x) ; celle avec −4e^(−2) se trompe de signe sur C ; et (3x + 2)e^(−2x) vient de α = 3, signe de c = −2 oublié.",
       "difficulty": 3
     },
     {
-      "prompt": "Combien de solutions l'équation eˣ = x + 2 admet-elle dans ℝ ?",
+      "prompt": "Pour combien de réels x a-t-on 2ˣ = x² ?",
       "options": [
         {
           "id": "a",
-          "text": "aucune solution"
+          "text": "pour un seul réel"
         },
         {
           "id": "b",
-          "text": "une seule solution"
+          "text": "pour deux réels"
         },
         {
           "id": "c",
-          "text": "deux solutions"
+          "text": "pour trois réels"
         },
         {
           "id": "d",
-          "text": "trois solutions"
+          "text": "pour quatre réels"
         }
       ],
       "correctOption": "c",
-      "explanation": "Soit f(x) = eˣ − x − 2. Alors f′(x) = eˣ − 1 s'annule en 0, f décroît avant et croît après, avec le minimum f(0) = −1 < 0. Les limites sont +∞ en +∞ (eˣ domine) et +∞ en −∞ (car eˣ → 0 et −x − 2 → +∞). Par valeurs intermédiaires, f s'annule une fois de chaque côté de 0 : deux solutions ✓, environ −1,84 et 1,15. Aucune solution oublierait que le minimum est négatif, une seule ignorerait la branche de gauche, et trois dépasserait ce que la monotonie de chaque côté permet.",
+      "explanation": "Pour x < 0, h(x) = 2ˣ − x² a pour dérivée (ln 2)2ˣ − 2x > 0 : h croît de −∞ à h(0) = 1, donc une seule solution (≈ −0,77). Pour x > 0, 2ˣ = x² équivaut à x ln 2 = 2 ln x, soit (ln x)/x = (ln 2)/2 ; (ln x)/x croît sur ]0 ; e] jusqu'à 1/e ≈ 0,368 puis décroît vers 0, et (ln 2)/2 ≈ 0,347 < 1/e : deux solutions, x = 2 et x = 4. Total : 3 ✓. « Deux » ne voit que 2 et 4 et oublie la branche négative ; « quatre » croit les solutions symétriques parce que x² est paire ; « une seule » croit que l'exponentielle l'emporte partout.",
       "difficulty": 3
     }
   ]

@@ -265,9 +265,9 @@ Un entier n s'écrit n = aₖ10ᵏ + … + a₁10 + a₀, où les aᵢ sont ses 
 | 8 et 125        | 1000 ≡ 0 [8] et [125]              | divisible si ses trois derniers chiffres le sont     |
 | 11              | 10 ≡ −1 [11], donc 10ᵏ ≡ (−1)ᵏ     | n ≡ a₀ − a₁ + a₂ − a₃ + … (somme alternée)           |
 | 7               | n = 10a + b = 7(a + b) + 3(a − 2b) | 7 divise n si et seulement si 7 divise a − 2b        |
-| 13              | 4n = 40a + 4b ≡ a + 4b [13]        | 13 divise n si et seulement si 13 divise a + 4b      |
+| 13              | 4n = 40a + 4b ≡ a + 4b [13], et n = 10(a + 4b) − 39b | 13 divise n si et seulement si 13 divise a + 4b |
 
-Dans la dernière ligne, b est le chiffre des unités et a le nombre formé par les autres chiffres.
+Dans les deux dernières lignes, b est le chiffre des unités et a le nombre formé par les autres chiffres.
 :::
 
 ::: exemple Les tests sur 2457 et sur 6748
