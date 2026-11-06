@@ -1,0 +1,118 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve de Piazzi",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Pour deux caractères X et Y, on a cov(X ; Y) = −30, σ(X) = 4 et σ(Y) = 10. Un ajustement affine est-il justifié ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui : r = −0,75, et |r| = 0,75 atteint le seuil"
+        },
+        {
+          "id": "b",
+          "text": "Oui : r = −0,75 est négatif, ce qui renforce la corrélation"
+        },
+        {
+          "id": "c",
+          "text": "Non : r = −0,75, et il faudrait |r| > 0,75 strictement"
+        },
+        {
+          "id": "d",
+          "text": "Non : r = −0,75 est négatif, donc la liaison est faible"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule r = −30 / (4 × 10) = −0,75. Le seuil du programme est |r| ≥ 0,75, large : |r| = 0,75 le vérifie, la corrélation est forte et l'ajustement affine est justifié. Le signe négatif indique seulement que Y diminue quand X augmente : il ne renforce pas la corrélation et ne l'affaiblit pas, et l'inégalité du seuil n'est pas stricte.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un tableur ajuste un nuage par une courbe de tendance exponentielle d'équation y = 5,2 e^(0,31x). Ce calcul revient à ajuster z = ln y par une droite z = 0,31x + b. Que vaut b ? Arrondis au centième.",
+      "answerKey": {
+        "value": 1.65,
+        "tolerance": 0.01
+      },
+      "explanation": "De y = 5,2 e^(0,31x), on tire ln y = ln 5,2 + 0,31x. Donc b = ln 5,2 ≈ 1,65, tandis que 5,2 est la valeur de A = e^b, pas celle de b.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les droites de régression d'une série double sont D : y = −0,5x + 7 et D′ : x = a′y + b′. On sait que r = −0,8. Quelle est la valeur de a′ ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": -1.28
+      },
+      "explanation": "Les coefficients vérifient a a′ = r². Ici r² = 0,64 et a = −0,5, donc a′ = 0,64 / (−0,5) = −1,28. Ce résultat est négatif comme a, ce qui est cohérent : les deux coefficients ont le signe de la covariance, ici celui de r.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "On étudie la série (1 ; 3), (2 ; 1), (3 ; 1), (4 ; 3). Quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le coefficient de corrélation linéaire est r = 0"
+        },
+        {
+          "id": "b",
+          "text": "La droite de régression de Y en X a pour équation y = 2"
+        },
+        {
+          "id": "c",
+          "text": "La droite de régression de X en Y a pour équation x = 2"
+        },
+        {
+          "id": "d",
+          "text": "Les deux droites de régression sont confondues"
+        },
+        {
+          "id": "e",
+          "text": "Aucune fonction ne permet de calculer y à partir de x pour ces points"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "On a X̄ = 2,5 et Ȳ = 2. Les produits (xᵢ − X̄)(yᵢ − Ȳ) valent −1,5 ; 0,5 ; −0,5 ; 1,5, de somme 0 : cov(X ; Y) = 0, donc r = 0 et a = 0, d'où D : y = Ȳ = 2. De même a′ = 0, donc D′ : x = X̄ = 2,5, et non x = 2, qui est la valeur de Ȳ. D est horizontale et D′ verticale : elles sont perpendiculaires, pas confondues. Enfin les quatre points vérifient y = (x − 2,5)² + 0,75, donc y est une fonction de x : une covariance nulle n'exclut pas un lien non affine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On étudie les quatre points (1 ; 2), (2 ; 3), (3 ; 7) et (4 ; 8). Parmi ces droites, laquelle rend minimale la somme S = Σ (yᵢ − (axᵢ + b))² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = x + 2,5"
+        },
+        {
+          "id": "b",
+          "text": "y = 2x"
+        },
+        {
+          "id": "c",
+          "text": "y = 2,2x − 0,5"
+        },
+        {
+          "id": "d",
+          "text": "y = 2,5x − 1,25"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On calcule S pour chaque droite. Pour y = 2,2x − 0,5 (la droite de régression), les écarts valent 0,3 ; −0,9 ; 0,9 ; −0,3 et S = 1,8. Pour y = 2x, qui passe par deux points du nuage, S = 0 + 1 + 1 + 0 = 2. Pour y = 2,5x − 1,25 (droite de Mayer), S = 4 × 0,5625 = 2,25. Pour y = x + 2,5, S = 9. Passer par le plus de points ne garantit pas la plus petite somme des carrés.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les ventes y d'un produit sont observées aux rangs x = 1 à 5. On pose z = ln y et l'on obtient les couples (x ; z) : (1 ; 1,2), (2 ; 1,7), (3 ; 2,1), (4 ; 2,7), (5 ; 3,1). On ajuste ces couples par la droite des moindres carrés, puis on revient à y. Quelle valeur de y prévoit-on au rang 6 ? Arrondis au dixième.",
+      "answerKey": {
+        "value": 36.6,
+        "tolerance": 0.1
+      },
+      "explanation": "On a X̄ = 3, Z̄ = 10,8 / 5 = 2,16, Σ xᵢzᵢ = 37,2 donc cov(X ; Z) = 7,44 − 3 × 2,16 = 0,96, et V(X) = 2. Ainsi a = 0,96 / 2 = 0,48 et b = 2,16 − 0,48 × 3 = 0,72, soit z = 0,48x + 0,72. Pour x = 6, z = 3,6, puis y = e^3,6 ≈ 36,6 : la prévision de z doit être convertie en y.",
+      "difficulty": 3
+    }
+  ]
+}

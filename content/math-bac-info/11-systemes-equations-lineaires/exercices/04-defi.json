@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve de Cayley",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Pour un système de Cramer d'ordre 3, on a det(M) = −6, det(M₁) = 12, det(M₂) = −18 et det(M₃) = −6. Quelle est la solution (x ; y ; z) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 ; 3 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "(−1/2 ; 1/3 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; −3 ; −1)"
+        },
+        {
+          "id": "d",
+          "text": "(12 ; −18 ; −6)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque inconnue est xᵢ = det(Mᵢ)/det(M) : x = 12/(−6) = −2, y = −18/(−6) = 3 et z = −6/(−6) = 1 ✓. Le triplet (2 ; −3 ; −1) perd le signe de det(M). Le triplet (12 ; −18 ; −6) oublie de diviser. Le triplet (−1/2 ; 1/3 ; 1) place det(M) au numérateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit A de dimension 3 × 5, B de dimension 5 × 1 et C de dimension 2 × 3. Laquelle de ces écritures définit une matrice, et de quelle dimension ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A × B × C, de dimension 3 × 2"
+        },
+        {
+          "id": "b",
+          "text": "A × C × B, de dimension 3 × 1"
+        },
+        {
+          "id": "c",
+          "text": "B × C × A, de dimension 5 × 5"
+        },
+        {
+          "id": "d",
+          "text": "C × A × B, de dimension 2 × 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Il faut que chaque produit enchaîne un nombre de colonnes égal au nombre de lignes suivant. C × A est défini (3 colonnes, 3 lignes) et de dimension 2 × 5, puis (C × A) × B est défini (5 colonnes, 5 lignes) et de dimension 2 × 1 ✓. A × B × C échoue : A × B est 3 × 1 et C a 2 lignes. A × C échoue : A a 5 colonnes et C a 2 lignes. B × C échoue : B a 1 colonne et C a 2 lignes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit J la matrice carrée d'ordre 3 dont tous les coefficients valent 1. Quelle est la matrice J⁴ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "J"
+        },
+        {
+          "id": "b",
+          "text": "4J"
+        },
+        {
+          "id": "c",
+          "text": "27J"
+        },
+        {
+          "id": "d",
+          "text": "81J"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Chaque coefficient de J × J est le produit d'une ligne (1 1 1) par une colonne (1 ; 1 ; 1), soit 3 : J² = 3J. Alors J³ = J² × J = 3J² = 9J et J⁴ = 9J² = 27J = 3³J ✓. La réponse J élève chaque coefficient à la puissance 4, ce qui ne vaut que pour une matrice diagonale. La réponse 4J confond J⁴ = J × J × J × J avec J + J + J + J. La réponse 81J = 3⁴J décale l'exposant d'un cran : J¹ = 3⁰J, donc Jⁿ = 3ⁿ⁻¹J.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "A et B sont deux matrices carrées d'ordre 3 avec det(A) = −2 et det(B) = 5. Que vaut det(2A⁻¹ × B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−80"
+        },
+        {
+          "id": "b",
+          "text": "−20"
+        },
+        {
+          "id": "c",
+          "text": "−5"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le facteur 2 multiplie les trois lignes de A⁻¹, donc det(2A⁻¹ × B) = 2³ × det(A⁻¹) × det(B) = 8 × (−1/2) × 5 = −20 ✓. La valeur −5 met 2 en facteur une seule fois. La valeur −80 utilise det(A) = −2 au lieu de det(A⁻¹) = −1/2. La valeur 20 perd le signe de det(A⁻¹).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout réel m, on pose M = (1 1 1 ; 1 m m ; 1 m m²). Pour quelles valeurs de m le système M × X = K est-il de Cramer, quel que soit K ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m ≠ 1 et m ≠ −1"
+        },
+        {
+          "id": "b",
+          "text": "m ≠ 1"
+        },
+        {
+          "id": "c",
+          "text": "m ≠ 0, m ≠ 1 et m ≠ −1"
+        },
+        {
+          "id": "d",
+          "text": "m ≠ 0 et m ≠ 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec L₂ ← L₂ − L₁ et L₃ ← L₃ − L₁, on obtient (1 1 1 ; 0 m−1 m−1 ; 0 m−1 m²−1) et det(M) = (m − 1)(m² − 1) − (m − 1)² = (m − 1)(m² − m) = m(m − 1)². Il s'annule pour m = 0 et m = 1, donc le système est de Cramer pour m ≠ 0 et m ≠ 1 ✓. Écrire m ≠ 1 seul perd le facteur m. Écrire m ≠ 1 et m ≠ −1 garde (m − 1)(m² − 1) en oubliant de retrancher (m − 1)². Écrire m ≠ 0, m ≠ 1 et m ≠ −1 vient d'un développement avec un signe + sur le deuxième terme : (m³ − m²) + (m² − m) = m(m − 1)(m + 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On étudie le système\nx + y + z = 3\n2x + 3y − z = 7\n3x + 4y = 11\nQuelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une solution unique, car il y a autant d'équations que d'inconnues"
+        },
+        {
+          "id": "b",
+          "text": "Une infinité de solutions, car la troisième équation est une combinaison des deux autres"
+        },
+        {
+          "id": "c",
+          "text": "Aucune solution, car la somme des deux premières équations contredit la troisième"
+        },
+        {
+          "id": "d",
+          "text": "Une solution unique, car aucune équation n'est un multiple d'une autre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En ajoutant les deux premières équations, on obtient 3x + 4y = 10, alors que la troisième dit 3x + 4y = 11 : la ligne (0 0 0 | 1) apparaît au pivot de Gauss, donc le système est impossible ✓. Comme les premiers membres vérifient L₃ = L₁ + L₂, le déterminant des coefficients est nul : il n'y a pas de solution unique, même avec autant d'équations que d'inconnues. Une infinité de solutions exigerait que les seconds membres soient liés de la même façon, or 3 + 7 = 10 et non 11.",
+      "difficulty": 3
+    }
+  ]
+}
