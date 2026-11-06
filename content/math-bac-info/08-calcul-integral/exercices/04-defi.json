@@ -16,11 +16,11 @@
         },
         {
           "id": "b",
-          "text": "Si ∫₀¹ f(x)dx ≥ 0, alors f(x) ≥ 0 pour tout x de [0 ; 1]"
+          "text": "Si ∫₀¹ f(x)dx = 0, alors f(x) = 0 pour tout x de [0 ; 1]"
         },
         {
           "id": "c",
-          "text": "∫₀¹ f(x)g(x)dx = (∫₀¹ f(x)dx) × (∫₀¹ g(x)dx)"
+          "text": "∫₀¹ (f(x) + 1)dx = ∫₀¹ f(x)dx + 1"
         },
         {
           "id": "d",
@@ -28,34 +28,34 @@
         }
       ],
       "answerKey": {
-        "correct": ["a", "d"]
+        "correct": ["a", "c", "d"]
       },
-      "explanation": "La comparaison est vraie : ∫₀¹ (g − f) ≥ 0 par positivité, puis linéarité ✓. L'échange des bornes donne l'opposé ✓. La réciproque de la positivité est fausse : f(x) = 2x − 1/2 a pour intégrale 1/2 ≥ 0 mais f(0) < 0. L'intégrale d'un produit n'est pas le produit des intégrales : pour f = g = x, ∫₀¹ x² dx = 1/3 alors que 1/2 × 1/2 = 1/4.",
+      "explanation": "La comparaison est vraie : ∫₀¹ (g − f) ≥ 0 par positivité, puis linéarité ✓. ∫₀¹ (f + 1) = ∫₀¹ f + ∫₀¹ 1dx = ∫₀¹ f + 1 par linéarité, car l'intervalle a pour longueur 1 ✓. L'échange des bornes donne l'opposé ✓. Une intégrale nulle n'impose pas une fonction nulle : f(x) = 2x − 1 a pour intégrale [x² − x]₀¹ = 0, mais f(0) = −1 ; les parties négative et positive se compensent.",
       "difficulty": 2
     },
     {
-      "prompt": "Que vaut ∫₋₂² dx/x³ ?",
+      "prompt": "Pour tout entier n ≥ 0, on pose Kₙ = ∫₀¹ xⁿ e^(−x) dx. Que peut-on dire de la suite (Kₙ) ?",
       "options": [
         {
           "id": "a",
-          "text": "Elle vaut −1/4"
+          "text": "(Kₙ) converge vers 0"
         },
         {
           "id": "b",
-          "text": "Elle vaut 0"
+          "text": "(Kₙ) converge vers 1/e"
         },
         {
           "id": "c",
-          "text": "Elle diverge vers +∞"
+          "text": "(Kₙ) converge vers 1 − 1/e"
         },
         {
           "id": "d",
-          "text": "Elle n'existe pas"
+          "text": "(Kₙ) tend vers +∞"
         }
       ],
-      "correctOption": "d",
-      "explanation": "La fonction x ↦ 1/x³ n'est pas définie en 0, qui est dans [−2 ; 2] : elle n'est pas continue sur cet intervalle et l'intégrale n'existe pas ✓. Le calcul formel F(2) − F(−2) avec F(x) = −1/(2x²) donne bien 0, mais F n'est pas définie en 0 : la compensation par symétrie n'a aucun sens ici. La valeur −1/4 vient d'un signe oublié sur F(−2) = −1/8. Parler de divergence vers +∞ suppose une intégrale définie, alors qu'elle ne l'est même pas.",
-      "difficulty": 2
+      "correctOption": "a",
+      "explanation": "Sur [0 ; 1], e^(−1) ≤ e^(−x) ≤ 1 et xⁿ ≥ 0, donc xⁿ/e ≤ xⁿe^(−x) ≤ xⁿ. On intègre (0 ≤ 1) : 1/(e(n + 1)) ≤ Kₙ ≤ 1/(n + 1), et le théorème d'encadrement donne lim Kₙ = 0 ✓. La valeur 1 − 1/e est K₀ = ∫₀¹ e^(−x)dx, or la suite décroît puisque xⁿ⁺¹ ≤ xⁿ sur [0 ; 1]. La valeur 1/e est celle de e^(−x) en 1, seul point où xⁿ ne tend pas vers 0 ; l'encadrement impose pourtant Kₙ ≤ 1/(n + 1). Le comportement en +∞ vient de la relation Kₙ₊₁ = (n + 1)Kₙ − 1/e, obtenue par parties, qui semble faire exploser la suite : l'encadrement le dément.",
+      "difficulty": 3
     },
     {
       "prompt": "Dans un repère orthonormé, on considère f(x) = (x − 1)eˣ. Quelle est l'aire, en u.a, de la partie limitée par la courbe de f, l'axe des abscisses et les droites x = 0 et x = 2 ?",

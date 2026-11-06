@@ -7,55 +7,55 @@
   "displayOrder": 3,
   "questions": [
     {
-      "prompt": "Pour quels réels a l'intégrale ∫ₐ⁴ dt/(2 − t) existe-t-elle ?",
+      "prompt": "Pour quels réels a l'intégrale ∫₀ᵃ dt/(t² − 4) existe-t-elle ?",
       "options": [
         {
           "id": "a",
-          "text": "a > 2"
-        },
-        {
-          "id": "b",
           "text": "a < 2"
         },
         {
-          "id": "c",
-          "text": "a ≥ 2"
-        },
-        {
-          "id": "d",
-          "text": "a ≠ 2"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "La fonction t ↦ 1/(2 − t) est continue sauf en 2. Le segment entre a et 4 ne doit pas contenir 2 ; comme 4 > 2, il faut a > 2 ✓. La condition a < 2 correspond à 2 − t > 0, mais alors 2 est entre a et 4. La condition a ≠ 2 oublie ce cas. La condition a ≥ 2 inclut a = 2, où la fonction n'est pas définie.",
-      "difficulty": 1
-    },
-    {
-      "prompt": "Pour x > −2, (x² + 4x + 5)/(x + 2) = x + 2 + 1/(x + 2). Que vaut ∫₀² (x² + 4x + 5)/(x + 2) dx ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "6 + 1/4"
-        },
-        {
           "id": "b",
-          "text": "6 + ln 2"
+          "text": "−2 < a < 2"
         },
         {
           "id": "c",
-          "text": "6 + ln 4"
+          "text": "a ≠ −2 et a ≠ 2"
         },
         {
           "id": "d",
-          "text": "8 + ln 2"
+          "text": "a < −2 ou a > 2"
         }
       ],
       "correctOption": "b",
-      "explanation": "On intègre terme à terme : ∫₀² (x + 2)dx = [x²/2 + 2x]₀² = 6 et ∫₀² dx/(x + 2) = [ln(x + 2)]₀² = ln 4 − ln 2 = ln 2, donc 6 + ln 2 ✓. La valeur 6 + ln 4 oublie de retrancher la valeur en 0. La valeur 8 + ln 2 primitive x en x². La valeur 6 + 1/4 traite 1/(x + 2) comme 1/(x + 2)², de primitive −1/(x + 2).",
+      "explanation": "La fonction t ↦ 1/(t² − 4) est continue sauf en −2 et en 2. Le segment entre 0 et a ne doit contenir aucune de ces valeurs : comme 0 est entre −2 et 2, il faut −2 < a < 2 ✓. La condition a < 2 oublie la valeur interdite −2 : pour a = −3, −2 est entre a et 0. La condition a ≠ −2 et a ≠ 2 n'exclut que les bornes : pour a = 3, 2 est entre 0 et 3. La condition a < −2 ou a > 2 place a du mauvais côté : le segment contient alors −2 ou 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour x > −3, on écrit (2x² + 7x + 4)/(x + 3) = ax + b + c/(x + 3). Que vaut ∫₀¹ (2x² + 7x + 4)/(x + 3) dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + ln(4/3)"
+        },
+        {
+          "id": "b",
+          "text": "2 − ln(4/3)"
+        },
+        {
+          "id": "c",
+          "text": "2 + ln(4/3)"
+        },
+        {
+          "id": "d",
+          "text": "3 + ln(4/3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On multiplie par x + 3 : 2x² + 7x + 4 = ax² + (3a + b)x + (3b + c), d'où a = 2, b = 7 − 6 = 1 et c = 4 − 3 = 1. Alors ∫₀¹ (2x + 1)dx = [x² + x]₀¹ = 2 et ∫₀¹ dx/(x + 3) = ln 4 − ln 3 = ln(4/3), donc l'intégrale vaut 2 + ln(4/3) ✓. La valeur 1 + ln(4/3) oublie le terme b = 1. La valeur 3 + ln(4/3) primitive 2x en 2x² au lieu de x². La valeur 2 − ln(4/3) prend c = 3 − 4 = −1 au lieu de 4 − 3, ou évalue le logarithme à l'envers.",
       "difficulty": 2
     },
     {
-      "prompt": "Que vaut ∫₀¹ x e^{2x} dx ?",
+      "prompt": "Que vaut ∫₀¹ x e^(2x) dx ?",
       "options": [
         {
           "id": "a",
@@ -63,19 +63,19 @@
         },
         {
           "id": "b",
-          "text": "(e² − 1)/4"
-        },
-        {
-          "id": "c",
           "text": "(e² + 1)/4"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "e²/2"
+        },
+        {
+          "id": "d",
+          "text": "(3e² − 1)/4"
         }
       ],
-      "correctOption": "c",
-      "explanation": "On pose u = x et v′ = e^{2x}, donc u′ = 1 et v = e^{2x}/2 : [x e^{2x}/2]₀¹ − ∫₀¹ e^{2x}/2 dx = e²/2 − (e² − 1)/4 = (e² + 1)/4 ✓. La valeur e²/2 s'arrête au crochet. La valeur (e² − 1)/4 écrit « plus » devant l'intégrale restante. La valeur 1/2 prend v = e^{2x} au lieu de e^{2x}/2 dans l'intégrale restante : e²/2 − (e² − 1)/2.",
+      "correctOption": "b",
+      "explanation": "On pose u = x et v′ = e^(2x), donc u′ = 1 et v = e^(2x)/2 : [x e^(2x)/2]₀¹ − ∫₀¹ e^(2x)/2 dx = e²/2 − (e² − 1)/4 = (e² + 1)/4 ✓. La valeur e²/2 s'arrête au crochet. La valeur (3e² − 1)/4 écrit « plus » devant l'intégrale restante : e²/2 + (e² − 1)/4. La valeur 1/2 prend v = e^(2x) au lieu de e^(2x)/2 dans l'intégrale restante : e²/2 − (e² − 1)/2.",
       "difficulty": 2
     },
     {
@@ -99,11 +99,11 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Les bornes 0 et 1 sont dans l'ordre croissant : ∫₀¹ x² ≤ ∫₀¹ x. En échangeant les bornes, les deux membres changent de signe et l'inégalité se retourne : ∫₁⁰ x² ≥ ∫₁⁰ x ✓, soit −1/3 ≥ −1/2. L'affirmation avec les bornes 0 puis 1 est dans le mauvais sens. Celle qui garde ≤ malgré l'échange ignore le retournement. La dernière oublie que ∫₁⁰ x dx = −1/2 est négatif.",
+      "explanation": "Les bornes 0 et 1 sont dans l'ordre croissant : ∫₀¹ x² ≤ ∫₀¹ x. En échangeant les bornes, les deux membres changent de signe et l'inégalité se retourne : ∫₁⁰ x² ≥ ∫₁⁰ x ✓, soit −1/3 ≥ −1/2. L'affirmation avec les bornes 0 puis 1 est dans le mauvais sens. Celle qui garde ≤ malgré l'échange ignore le retournement. L'affirmation ∫₁⁰ x dx ≥ 0 oublie que ∫₁⁰ x dx = −1/2 est négatif.",
       "difficulty": 2
     },
     {
-      "prompt": "Le plan est rapporté à un repère orthonormé d'unité 1,5 cm. La partie colorée est limitée par la courbe de f(x) = 4 − x², l'axe des abscisses et les droites x = −2 et x = 2 (figure non à l'échelle). Quelle est son aire, en cm² ?\n<svg viewBox=\"0 0 340 215\"><title>Parabole y = 4 − x² et partie colorée limitée par la parabole et l’axe des abscisses entre x = −2 et x = 2</title><line x1=\"48.4\" y1=\"190.0\" x2=\"291.6\" y2=\"190.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"170.0\" y1=\"200.0\" x2=\"170.0\" y2=\"11.4\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"291.6,190.0 283.6,186.0 283.6,194.0\" fill=\"#0f172a\"/><polygon points=\"170.0,11.4 166.0,19.4 174.0,19.4\" fill=\"#0f172a\"/><polygon points=\"94.0,190.0 96.5,180.0 99.1,170.4 101.6,161.1 104.1,152.2 106.7,143.6 109.2,135.3 111.7,127.3 114.3,119.7 116.8,112.5 119.3,105.6 121.9,99.0 124.4,92.7 126.9,86.8 129.5,81.2 132.0,76.0 134.5,71.1 137.1,66.5 139.6,62.3 142.1,58.4 144.7,54.9 147.2,51.7 149.7,48.8 152.3,46.3 154.8,44.1 157.3,42.2 159.9,40.7 162.4,39.5 164.9,38.7 167.5,38.2 170.0,38.0 172.5,38.2 175.1,38.7 177.6,39.5 180.1,40.7 182.7,42.2 185.2,44.1 187.7,46.3 190.3,48.8 192.8,51.7 195.3,54.9 197.9,58.4 200.4,62.3 202.9,66.5 205.5,71.1 208.0,76.0 210.5,81.2 213.1,86.8 215.6,92.7 218.1,99.0 220.7,105.6 223.2,112.5 225.7,119.7 228.3,127.3 230.8,135.3 233.3,143.6 235.9,152.2 238.4,161.1 240.9,170.4 243.5,180.0 246.0,190.0\" fill=\"#0f6e56\" fill-opacity=\"0.25\"/><polyline points=\"94.0,190.0 95.9,182.5 97.8,175.2 99.7,168.1 101.6,161.1 103.5,154.4 105.4,147.8 107.3,141.5 109.2,135.3 111.1,129.3 113.0,123.5 114.9,117.9 116.8,112.5 118.7,107.3 120.6,102.2 122.5,97.4 124.4,92.7 126.3,88.3 128.2,84.0 130.1,79.9 132.0,76.0 133.9,72.3 135.8,68.8 137.7,65.5 139.6,62.3 141.5,59.4 143.4,56.6 145.3,54.1 147.2,51.7 149.1,49.5 151.0,47.5 152.9,45.7 154.8,44.1 156.7,42.7 158.6,41.4 160.5,40.4 162.4,39.5 164.3,38.9 166.2,38.4 168.1,38.1 170.0,38.0 171.9,38.1 173.8,38.4 175.7,38.9 177.6,39.5 179.5,40.4 181.4,41.4 183.3,42.7 185.2,44.1 187.1,45.7 189.0,47.5 190.9,49.5 192.8,51.7 194.7,54.1 196.6,56.6 198.5,59.4 200.4,62.3 202.3,65.5 204.2,68.8 206.1,72.3 208.0,76.0 209.9,79.9 211.8,84.0 213.7,88.3 215.6,92.7 217.5,97.4 219.4,102.2 221.3,107.3 223.2,112.5 225.1,117.9 227.0,123.5 228.9,129.3 230.8,135.3 232.7,141.5 234.6,147.8 236.5,154.4 238.4,161.1 240.3,168.1 242.2,175.2 244.1,182.5 246.0,190.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"94.0\" y=\"206.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−2</text><text x=\"246.0\" y=\"206.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"160.0\" y=\"206.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"163.0\" y=\"42.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"242.2\" y=\"98.8\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C_f</text></svg>",
+      "prompt": "Le plan est rapporté à un repère orthonormé d'unité 1,5 cm. La partie colorée est limitée par la courbe de f(x) = 4 − x², l'axe des abscisses et les droites x = −2 et x = 2 (figure non à l'échelle). Quelle est son aire, en cm² ?\n<svg viewBox=\"0 0 340 215\"><title>Parabole y = 4 − x² et partie colorée limitée par la parabole et l’axe des abscisses entre x = −2 et x = 2</title><line x1=\"48.4\" y1=\"190.0\" x2=\"291.6\" y2=\"190.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"170.0\" y1=\"200.0\" x2=\"170.0\" y2=\"11.4\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"291.6,190.0 283.6,186.0 283.6,194.0\" fill=\"#0f172a\"/><polygon points=\"170.0,11.4 166.0,19.4 174.0,19.4\" fill=\"#0f172a\"/><polygon points=\"94.0,190.0 96.5,180.0 99.1,170.4 101.6,161.1 104.1,152.2 106.7,143.6 109.2,135.3 111.7,127.3 114.3,119.7 116.8,112.5 119.3,105.6 121.9,99.0 124.4,92.7 126.9,86.8 129.5,81.2 132.0,76.0 134.5,71.1 137.1,66.5 139.6,62.3 142.1,58.4 144.7,54.9 147.2,51.7 149.7,48.8 152.3,46.3 154.8,44.1 157.3,42.2 159.9,40.7 162.4,39.5 164.9,38.7 167.5,38.2 170.0,38.0 172.5,38.2 175.1,38.7 177.6,39.5 180.1,40.7 182.7,42.2 185.2,44.1 187.7,46.3 190.3,48.8 192.8,51.7 195.3,54.9 197.9,58.4 200.4,62.3 202.9,66.5 205.5,71.1 208.0,76.0 210.5,81.2 213.1,86.8 215.6,92.7 218.1,99.0 220.7,105.6 223.2,112.5 225.7,119.7 228.3,127.3 230.8,135.3 233.3,143.6 235.9,152.2 238.4,161.1 240.9,170.4 243.5,180.0 246.0,190.0\" fill=\"#0f6e56\" fill-opacity=\"0.25\"/><polyline points=\"94.0,190.0 95.9,182.5 97.8,175.2 99.7,168.1 101.6,161.1 103.5,154.4 105.4,147.8 107.3,141.5 109.2,135.3 111.1,129.3 113.0,123.5 114.9,117.9 116.8,112.5 118.7,107.3 120.6,102.2 122.5,97.4 124.4,92.7 126.3,88.3 128.2,84.0 130.1,79.9 132.0,76.0 133.9,72.3 135.8,68.8 137.7,65.5 139.6,62.3 141.5,59.4 143.4,56.6 145.3,54.1 147.2,51.7 149.1,49.5 151.0,47.5 152.9,45.7 154.8,44.1 156.7,42.7 158.6,41.4 160.5,40.4 162.4,39.5 164.3,38.9 166.2,38.4 168.1,38.1 170.0,38.0 171.9,38.1 173.8,38.4 175.7,38.9 177.6,39.5 179.5,40.4 181.4,41.4 183.3,42.7 185.2,44.1 187.1,45.7 189.0,47.5 190.9,49.5 192.8,51.7 194.7,54.1 196.6,56.6 198.5,59.4 200.4,62.3 202.3,65.5 204.2,68.8 206.1,72.3 208.0,76.0 209.9,79.9 211.8,84.0 213.7,88.3 215.6,92.7 217.5,97.4 219.4,102.2 221.3,107.3 223.2,112.5 225.1,117.9 227.0,123.5 228.9,129.3 230.8,135.3 232.7,141.5 234.6,147.8 236.5,154.4 238.4,161.1 240.3,168.1 242.2,175.2 244.1,182.5 246.0,190.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"94.0\" y=\"206.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−2</text><text x=\"246.0\" y=\"206.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"160.0\" y=\"206.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"160.0\" y=\"30.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"242.2\" y=\"98.8\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C_f</text></svg>",
       "options": [
         {
           "id": "a",

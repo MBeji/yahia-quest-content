@@ -39,6 +39,8 @@ Pour tous nombres complexes z et z′ :
 
 Pour calculer, on développe comme dans ℝ et l'on remplace i² par −1. Les puissances de i se répètent tous les 4 crans : i² = −1, i³ = −i, i⁴ = 1, i⁵ = i, et ainsi de suite. Pour calculer iⁿ, on garde le reste r de la division de n par 4 et l'on calcule i élevé à la puissance r.
 
+Quand une équation contient z et z̄, on pose z = x + iy (x et y réels), puis on égale parties réelles et parties imaginaires.
+
 Cas limite : 0 est le seul nombre à la fois réel et imaginaire pur.
 :::
 
@@ -91,7 +93,7 @@ Le plan est rapporté à un repère orthonormé (O, e⃗₁, e⃗₂). Au point 
 <polygon points="70,110 190,150 230,70 110,30" fill="rgba(15,110,86,0.10)" stroke="#0f6e56" stroke-width="2.2"/>
 <line x1="190" y1="150" x2="110" y2="30" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="70" y1="110" x2="230" y2="70" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 4"/>
 <circle cx="70" cy="110" r="3.6" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="190" cy="150" r="3.6" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="110" cy="30" r="3.6" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="230" cy="70" r="3.6" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="150" cy="90" r="3.6" fill="#d97706" stroke="#0f172a" stroke-width="1"/>
-<g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="64" y="125" text-anchor="end" fill="#0f172a" font-size="13">A</text><text x="198" y="164" text-anchor="start" fill="#0f172a" font-size="13">B</text><text x="104" y="24" text-anchor="end" fill="#0f172a" font-size="13">C</text><text x="238" y="66" text-anchor="start" fill="#0f172a" font-size="13">D</text><text x="156" y="82" text-anchor="start" fill="#d97706" font-size="13">I</text><text x="278" y="205" text-anchor="end" fill="#64748b" font-size="11">axe réel</text><text x="38" y="14" text-anchor="start" fill="#64748b" font-size="11">axe imaginaire</text></g>
+<g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="64" y="125" text-anchor="end" fill="#0f172a" font-size="13">A</text><text x="198" y="164" text-anchor="start" fill="#0f172a" font-size="13">B</text><text x="104" y="24" text-anchor="end" fill="#0f172a" font-size="13">C</text><text x="238" y="66" text-anchor="start" fill="#0f172a" font-size="13">D</text><text x="156" y="82" text-anchor="start" fill="#d97706" font-size="13">I</text><text x="282" y="178" text-anchor="end" fill="#64748b" font-size="11">axe réel</text><text x="24" y="204" text-anchor="end" fill="#0f172a" font-size="13">O</text><text x="38" y="14" text-anchor="start" fill="#64748b" font-size="11">axe imaginaire</text></g>
 </svg>
 :::
 
@@ -148,7 +150,7 @@ Le **conjugué** de z = a + ib est le nombre **z̄ = a − ib**. Le produit z z�
 <polygon points="150,7 154,15 146,15" fill="#0f172a"/>
 <polygon points="240,40 240,160 60,160 60,40" fill="none" stroke-dasharray="5 4" stroke="#64748b" stroke-width="1.5"/>
 <line x1="240" y1="40" x2="60" y2="160" stroke="#0f6e56" stroke-width="2"/>
-<circle cx="240" cy="40" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="240" cy="160" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="60" cy="160" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="60" cy="40" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="248" y="34" text-anchor="start" fill="#0f172a" font-size="13">M(z)</text><text x="248" y="174" text-anchor="start" fill="#0f172a" font-size="13">M′(z̄)</text><text x="52" y="174" text-anchor="end" fill="#0f172a" font-size="13">M″(−z)</text><text x="52" y="34" text-anchor="end" fill="#0f172a" font-size="13">M‴(−z̄)</text><text x="285" y="128" text-anchor="end" fill="#64748b" font-size="11">axe réel</text><text x="158" y="10" text-anchor="start" fill="#64748b" font-size="11">axe imaginaire</text></g>
+<circle cx="240" cy="40" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="240" cy="160" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="60" cy="160" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="60" cy="40" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="248" y="34" text-anchor="start" fill="#0f172a" font-size="13">M(z)</text><text x="248" y="174" text-anchor="start" fill="#0f172a" font-size="13">M′(z̄)</text><text x="52" y="174" text-anchor="end" fill="#0f172a" font-size="13">M″(−z)</text><text x="52" y="34" text-anchor="end" fill="#0f172a" font-size="13">M‴(−z̄)</text><text x="250" y="114" text-anchor="start" fill="#0f172a" font-size="11">3</text><text x="160" y="36" text-anchor="start" fill="#0f172a" font-size="11">2</text><text x="285" y="128" text-anchor="end" fill="#64748b" font-size="11">axe réel</text><text x="158" y="10" text-anchor="start" fill="#64748b" font-size="11">axe imaginaire</text></g>
 </svg>
 :::
 
@@ -193,6 +195,26 @@ Le conjugué de a + ib est a − ib ; il commute avec la somme, le produit, la p
 
 Soit u⃗(2 ; 1), v⃗(6 ; 3) et w⃗(−1 ; 2). On voit que v⃗ = 3u⃗, donc u⃗ et v⃗ sont colinéaires, et que 2 × (−1) + 1 × 2 = 0, donc u⃗ et w⃗ sont orthogonaux.
 Calculons, avec z = 2 + i : z̄z′ pour z′ = 6 + 3i donne (2 − i)(6 + 3i) = 15, un réel ; pour z′ = −1 + 2i il donne (2 − i)(−1 + 2i) = 5i, un imaginaire pur. Est-ce un hasard ?
+
+::: figure Le vecteur v = 3u reste sur la direction de u (z̄z′ = 15, réel) ; le vecteur w fait un angle droit avec u (z̄z′ = 5i, imaginaire pur).
+<svg viewBox="0 0 270 175">
+<title>Plan complexe : les vecteurs u(2 ; 1) et v(6 ; 3) = 3u sont portés par la même droite, et w(−1 ; 2) forme un angle droit avec u</title>
+<line x1="5" y1="140" x2="248" y2="140" stroke="#0f172a" stroke-width="1.6"/>
+<polygon points="248,140 240,144 240,136" fill="#0f172a"/>
+<line x1="50" y1="149" x2="50" y2="38" stroke="#0f172a" stroke-width="1.6"/>
+<polygon points="50,38 54,46 46,46" fill="#0f172a"/>
+<line x1="50" y1="140" x2="230" y2="50" stroke="#fcd34d" stroke-width="6"/>
+<polygon points="230,50 221.95,60.73 216.58,50" fill="#fcd34d"/>
+<line x1="50" y1="140" x2="110" y2="110" stroke="#0f6e56" stroke-width="3"/>
+<polygon points="110,110 103.29,118.94 98.82,110" fill="#0f6e56"/>
+<line x1="50" y1="140" x2="20" y2="80" stroke="#2563eb" stroke-width="3"/>
+<polygon points="20,80 28.94,86.71 20,91.18" fill="#2563eb"/>
+<path d="M 58.94 135.53 L 54.47 126.58 L 45.53 131.06" fill="none" stroke="#0f172a" stroke-width="1.2"/>
+<g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="114" y="126" text-anchor="start" fill="#0f6e56" font-size="13">u(2 ; 1)</text><text x="226" y="40" text-anchor="end" fill="#d97706" font-size="13">v(6 ; 3)</text><text x="26" y="72" text-anchor="start" fill="#2563eb" font-size="13">w(−1 ; 2)</text><text x="44" y="154" text-anchor="end" fill="#0f172a" font-size="13">O</text></g>
+</svg>
+:::
+
+La partie réelle 15 de z̄z′ est le produit scalaire u · v, et sa partie imaginaire nulle dit que v reste sur la direction de u.
 
 ::: exemple Calculer z̄z′ en coordonnées
 1. Pour z = a + ib et z′ = a′ + ib′, on a z̄z′ = (a − ib)(a′ + ib′).
@@ -261,7 +283,7 @@ Le **module** du complexe z = a + ib est le réel positif **|z| = √(z z̄) = �
 <line x1="90" y1="150" x2="218" y2="150" stroke="#0f172a" stroke-width="3.2"/><line x1="218" y1="150" x2="218" y2="54" stroke="#0f172a" stroke-width="3.2"/>
 <path d="M 210 150 L 210 142 L 218 142" fill="none" stroke="#0f172a" stroke-width="1.2"/>
 <line x1="90" y1="150" x2="218" y2="54" stroke="#0f6e56" stroke-width="2.8"/><line x1="218" y1="54" x2="58" y2="118" stroke="#d97706" stroke-width="2.4"/>
-<circle cx="218" cy="54" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="58" cy="118" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="83" y="164" text-anchor="end" fill="#0f172a" font-size="13">O</text><text x="226" y="50" text-anchor="start" fill="#0f172a" font-size="13">M(4 + 3i)</text><text x="52" y="110" text-anchor="middle" fill="#0f172a" font-size="13">N(−1 + i)</text><text x="210" y="134" text-anchor="end" fill="#0f6e56" font-size="13">OM = |z| = 5</text><text x="132" y="74" text-anchor="end" fill="#d97706" font-size="13">MN</text><text x="226" y="106" text-anchor="start" fill="#0f172a" font-size="13">3</text></g>
+<circle cx="218" cy="54" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="58" cy="118" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="83" y="164" text-anchor="end" fill="#0f172a" font-size="13">O</text><text x="226" y="50" text-anchor="start" fill="#0f172a" font-size="13">M(4 + 3i)</text><text x="52" y="138" text-anchor="middle" fill="#0f172a" font-size="13">N(−1 + i)</text><text x="160" y="124" text-anchor="start" fill="#0f6e56" font-size="13">|z| = 5</text><text x="154" y="142" text-anchor="middle" fill="#0f172a" font-size="13">4</text><text x="132" y="74" text-anchor="end" fill="#d97706" font-size="13">MN</text><text x="226" y="106" text-anchor="start" fill="#0f172a" font-size="13">3</text></g>
 </svg>
 :::
 
@@ -287,7 +309,7 @@ Pour tous complexes z et z′, tout réel k et tout entier n ≥ 1 :
 - si z ≠ 0 : |1/z| = 1/|z| et |z′/z| = |z′|/|z| ;
 - **inégalité triangulaire** : |z + z′| ≤ |z| + |z′|, car dans le triangle O, A(z), C(z + z′), la longueur OC ne dépasse pas OA + AC, et AC = |z′|.
 
-Cas limite : l'égalité |z + z′| = |z| + |z′| a lieu pour z′ = 2z, deux nombres de même direction.
+Cas limite : l'égalité |z + z′| = |z| + |z′| a lieu par exemple pour z′ = 2z : les vecteurs sont colinéaires et de même sens.
 :::
 
 ::: verifie
@@ -304,7 +326,7 @@ Calculer |(2 − i)²(1 + 3i)|.
 
 ## 🎯 Lieux de points : cercles, médiatrices, droites
 
-Un phare est placé en A(2i) et éclaire jusqu'à 3 km exactement ; deux antennes sont en P(−1) et Q(3i), et un drone M(z) doit rester à égale distance des deux.
+Un phare est placé en A(2i) et éclaire une zone dont la limite est à 3 km exactement ; deux antennes sont en P(−1) et Q(3i), et un drone M(z) doit rester à égale distance des deux.
 Comment ces conditions s'écrivent-elles avec z, et quelles figures dessinent-elles ?
 
 ::: exemple Traduire un module en distance
@@ -313,6 +335,21 @@ Comment ces conditions s'écrivent-elles avec z, et quelles figures dessinent-el
 3. |z̄ − 1 + i| = 2 : le conjugué de z̄ − 1 + i est z − 1 − i et deux conjugués ont le même module, donc |z − (1 + i)| = 2 : le cercle de centre Ω(1 + i) et de rayon 2.
 
 :::
+
+::: figure La médiatrice de [PQ] : chacun de ses points, comme M, est à la même distance de P(−1) et de Q(3i), et elle passe par le milieu de [PQ].
+<svg viewBox="0 0 250 150">
+<title>Plan complexe : la médiatrice du segment [PQ] avec P(−1) et Q(3i) ; un point M de cette droite est à égale distance de P et de Q</title>
+<line x1="9.2" y1="110" x2="227.6" y2="110" stroke="#0f172a" stroke-width="1.6"/>
+<polygon points="227.6,110 219.6,114 219.6,106" fill="#0f172a"/>
+<line x1="110" y1="118.4" x2="110" y2="6.4" stroke="#0f172a" stroke-width="1.6"/>
+<polygon points="110,6.4 114,14.4 106,14.4" fill="#0f172a"/>
+<line x1="20.4" y1="42.8" x2="205.2" y2="104.4" stroke="#0f6e56" stroke-width="2.6"/><line x1="82" y1="110" x2="110" y2="26" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4"/>
+<line x1="180" y1="96" x2="82" y2="110" stroke="#d97706" stroke-width="2"/><line x1="180" y1="96" x2="110" y2="26" stroke="#d97706" stroke-width="2"/><line x1="130.43" y1="99.04" x2="131.57" y2="106.96" stroke="#d97706" stroke-width="1.6"/><line x1="147.83" y1="58.17" x2="142.17" y2="63.83" stroke="#d97706" stroke-width="1.6"/>
+<circle cx="82" cy="110" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="110" cy="26" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="180" cy="96" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="96" cy="68" r="2.8" fill="#64748b" stroke="#64748b" stroke-width="1"/><g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="76" y="125" text-anchor="end" fill="#0f172a" font-size="13">P(−1)</text><text x="118" y="30" text-anchor="start" fill="#0f172a" font-size="13">Q(3i)</text><text x="188" y="90" text-anchor="start" fill="#d97706" font-size="13">M</text><text x="219.2" y="138" text-anchor="end" fill="#64748b" font-size="11">axe réel</text></g>
+</svg>
+:::
+
+Le point M(5/2 + i/2) du dessin vérifie |z + 1| = |7/2 + i/2| = |z − 3i| = |5/2 − 5i/2|, soit PM = QM : c'est bien un point de la médiatrice.
 
 ::: figure Le cercle de diamètre [AB], avec A(−i) et B(2) : en tout point M du cercle autre que A et B, les vecteurs MA⃗ et MB⃗ sont orthogonaux.
 <svg viewBox="0 0 270 195">
@@ -325,7 +362,7 @@ Comment ces conditions s'écrivent-elles avec z, et quelles figures dessinent-el
 <line x1="70" y1="120" x2="170" y2="70" stroke="#64748b" stroke-width="1.6" stroke-dasharray="5 4"/>
 <line x1="170" y1="120" x2="70" y2="120" stroke="#d97706" stroke-width="2.2"/><line x1="170" y1="120" x2="170" y2="70" stroke="#d97706" stroke-width="2.2"/>
 <path d="M 161 120 L 161 111 L 170 111" fill="none" stroke="#d97706" stroke-width="1.2"/>
-<circle cx="70" cy="120" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="170" cy="70" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="170" cy="120" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="120" cy="95" r="2.6" fill="#64748b" stroke="#64748b" stroke-width="1"/><g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="63" y="136" text-anchor="end" fill="#0f172a" font-size="13">A(−i)</text><text x="178" y="64" text-anchor="start" fill="#0f172a" font-size="13">B(2)</text><text x="178" y="134" text-anchor="start" fill="#d97706" font-size="13">M(2 − i)</text><text x="118" y="88" text-anchor="middle" fill="#64748b" font-size="13">Ω</text><text x="217.5" y="85" text-anchor="end" fill="#64748b" font-size="11">axe réel</text><text x="78" y="27.5" text-anchor="start" fill="#64748b" font-size="11">axe imaginaire</text></g>
+<circle cx="70" cy="120" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="170" cy="70" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="170" cy="120" r="3.8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><circle cx="120" cy="95" r="2.6" fill="#64748b" stroke="#64748b" stroke-width="1"/><g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="63" y="136" text-anchor="end" fill="#0f172a" font-size="13">A(−i)</text><text x="178" y="64" text-anchor="start" fill="#0f172a" font-size="13">B(2)</text><text x="178" y="134" text-anchor="start" fill="#d97706" font-size="13">M(2 − i)</text><text x="118" y="88" text-anchor="middle" fill="#64748b" font-size="13">Ω</text><text x="262" y="85" text-anchor="end" fill="#64748b" font-size="11">axe réel</text><text x="78" y="27.5" text-anchor="start" fill="#64748b" font-size="11">axe imaginaire</text></g>
 </svg>
 :::
 
@@ -351,7 +388,7 @@ Soit A et B deux points distincts, d'affixes a et b, et r > 0.
 
 - |z − a| = r : le cercle de centre A et de rayon r.
 - |z − a| = |z − b| : la médiatrice de [AB].
-- Pour Z = (z − b)/(z − a), avec z ≠ a : Z est le quotient des affixes de BM⃗ et AM⃗. Z réel ⟺ M est sur la droite (AB) ; Z imaginaire pur ⟺ M est sur le cercle de diamètre [AB]. Dans les deux cas le point A est exclu.
+- Pour Z = (z − b)/(z − a), avec z ≠ a : en multipliant par le conjugué du dénominateur, Z = conj(z − a) × (z − b)/|z − a|². Le dénominateur est un réel strictement positif, donc Z est réel (ou imaginaire pur) exactement quand z̄₁z₂ l'est, où z₁ = z − a est l'affixe de AM⃗ et z₂ = z − b celle de BM⃗. Pour M distinct de A et de B : Z réel ⟺ AM⃗ et BM⃗ colinéaires ⟺ M est sur la droite (AB) ; Z imaginaire pur ⟺ AM⃗ ⟂ BM⃗ ⟺ M est sur le cercle de diamètre [AB]. Dans les deux cas le point A est exclu.
 
 Cas limite : M = B donne Z = 0, à la fois réel et imaginaire pur, donc B est dans les deux ensembles.
 :::
@@ -361,7 +398,7 @@ Soit A(i), B(1) et Z = (z − 1)/(z − i), avec z ≠ i. Décrire l'ensemble de
 
 ---
 
-Z est le quotient des affixes de BM⃗ et AM⃗. Z réel ⟺ ces vecteurs sont colinéaires ⟺ M est sur la droite (AB), privée de A. Z imaginaire pur ⟺ ils sont orthogonaux ⟺ M est sur le cercle de diamètre [AB], de centre (1 + i)/2, privé de A.
+Z = conj(z − i)(z − 1)/|z − i|² : Z a la nature de z̄₁z₂, avec z₁ = Aff(AM⃗) et z₂ = Aff(BM⃗). Z réel ⟺ AM⃗ et BM⃗ colinéaires (ou M = B) ⟺ M est sur la droite (AB), privée de A. Z imaginaire pur ⟺ AM⃗ ⟂ BM⃗ ⟺ M est sur le cercle de diamètre [AB], de centre (1 + i)/2, privé de A.
 :::
 
 ::: retenir
@@ -388,9 +425,6 @@ Après x² = 9 et y² = 4, on écrit z = ±3 ± 2i, soit quatre solutions. Cela 
 ::: propriete
 - Tout complexe d non nul a deux **racines carrées** opposées (résultat admis). Pour d = a + ib : x² − y² = a, x² + y² = |d|, et xy a le signe de b.
 - Si d est un réel positif, ses racines carrées sont ±√d ; s'il est négatif, elles sont ±i√(−d).
-- Équation az² + bz + c = 0 (a ≠ 0, coefficients complexes), de discriminant Δ = b² − 4ac, et δ une racine carrée de Δ : si Δ = 0, une solution −b/(2a) ; sinon deux solutions (−b + δ)/(2a) et (−b − δ)/(2a).
-- Si a, b, c sont réels et Δ < 0 : δ = i√(−Δ), et les solutions (−b ± i√(−Δ))/(2a) sont conjuguées.
-
 Cas limite : l'algorithme ci-dessous échoue pour un réel négatif, car alors a + |d| = 0.
 :::
 
@@ -403,10 +437,15 @@ y ← b/(2x)        (division par 0 si x = 0)
 ```
 
 ::: exemple Résoudre dans ℂ
-1. z² − 6z + 13 = 0 : Δ = 36 − 52 = −16 = (4i)², donc z = (6 ± 4i)/2 = 3 ± 2i.
+1. Comme dans ℝ, on calcule Δ = b² − 4ac puis une racine carrée δ de Δ, et z = (−b ± δ)/(2a). Pour z² − 6z + 13 = 0 : Δ = 36 − 52 = −16 = (4i)², donc z = (6 ± 4i)/2 = 3 ± 2i.
 2. z² − 3z + 3 + i = 0 : Δ = 9 − 4(3 + i) = −3 − 4i. Ses racines carrées vérifient x² + y² = 5 et x² − y² = −3, donc x² = 1, y² = 4, et xy est négatif : δ = 1 − 2i. Alors z = (3 + 1 − 2i)/2 = 2 − i ou z = (3 − 1 + 2i)/2 = 1 + i.
-3. Contrôle : (2 − i) + (1 + i) = 3 et (2 − i)(1 + i) = 3 + i ✓.
+3. Contrôle par réinjection : (2 − i)² − 3(2 − i) + 3 + i = 3 − 4i − 6 + 3i + 3 + i = 0 ✓.
 
+:::
+
+::: propriete
+- Équation az² + bz + c = 0 (a ≠ 0, coefficients complexes), de discriminant Δ = b² − 4ac, et δ une racine carrée de Δ : si Δ = 0, une solution −b/(2a) ; sinon deux solutions (−b + δ)/(2a) et (−b − δ)/(2a).
+- Si a, b, c sont réels et Δ < 0 : δ = i√(−Δ), et les solutions (−b ± i√(−Δ))/(2a) sont conjuguées.
 :::
 
 ::: verifie
@@ -441,6 +480,13 @@ Soit T(z) = az² + bz + c (a ≠ 0), de solutions z′ et z″ :
 - si a + b + c = 0, les solutions sont 1 et c/a ; si a − b + c = 0, elles sont −1 et −c/a.
 
 Cas limite : pour une solution double (Δ = 0), z′ = z″ = −b/(2a).
+:::
+
+::: exemple Une solution évidente
+1. Pour (1 + i)z² − (3 + 2i)z + 2 + i = 0 : a + b + c = (1 + i) − (3 + 2i) + (2 + i) = 0, donc 1 est solution.
+2. Le produit des solutions vaut c/a, donc l'autre est (2 + i)/(1 + i) = (2 + i)(1 − i)/2 = (3 − i)/2.
+3. Contrôle par la somme : 1 + (3 − i)/2 = (5 − i)/2, et −b/a = (3 + 2i)/(1 + i) = (5 − i)/2 ✓.
+
 :::
 
 ::: methode

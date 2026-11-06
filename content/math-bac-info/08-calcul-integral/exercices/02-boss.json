@@ -11,7 +11,7 @@
       "options": [
         {
           "id": "a",
-          "text": "2 ln 2 − 3/2"
+          "text": "4 ln 2 − 3/2"
         },
         {
           "id": "b",
@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "On pose u = ln x et v′ = x, donc u′ = 1/x et v = x²/2. Alors ∫₁² x ln x dx = [(x²/2)ln x]₁² − ∫₁² (x/2)dx = 2 ln 2 − [x²/4]₁² = 2 ln 2 − 3/4 ✓. La valeur 2 ln 2 s'arrête au crochet. La valeur 2 ln 2 − 3/2 intègre x au lieu de x/2 : elle oublie le facteur 1/2 de v. La valeur 2 ln 2 + 3/4 écrit « plus » devant l'intégrale restante.",
+      "explanation": "On pose u = ln x et v′ = x, donc u′ = 1/x et v = x²/2. Alors ∫₁² x ln x dx = [(x²/2)ln x]₁² − ∫₁² (x/2)dx = 2 ln 2 − [x²/4]₁² = 2 ln 2 − 3/4 ✓. La valeur 2 ln 2 s'arrête au crochet. La valeur 4 ln 2 − 3/2 prend v = x² au lieu de x²/2, dans le crochet comme dans l'intégrale : [x² ln x]₁² − ∫₁² x dx. La valeur 2 ln 2 + 3/4 écrit « plus » devant l'intégrale restante.",
       "difficulty": 2
     },
     {
@@ -83,23 +83,23 @@
       "options": [
         {
           "id": "a",
-          "text": "1 − ln((e + 1)/2)"
-        },
-        {
-          "id": "b",
           "text": "ln((e + 1)/2) − 1"
         },
         {
+          "id": "b",
+          "text": "1 − ln((e + 1)/2)"
+        },
+        {
           "id": "c",
-          "text": "ln((e + 1)/2)"
+          "text": "(1/2 + 1/(e + 1))/2"
         },
         {
           "id": "d",
-          "text": "1 + ln((e + 1)/2)"
+          "text": "ln((e + 1)/2)"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Par linéarité, I + J = ∫₀¹ (eˣ + 1)/(eˣ + 1)dx = ∫₀¹ 1dx = 1, donc J = 1 − ln((e + 1)/2) ≈ 0,38 ✓. Contrôle : sur [0 ; 1], 1/(e + 1) ≤ 1/(eˣ + 1) ≤ 1/2, donc J est entre 0,26 et 0,5. L'écriture ln((e + 1)/2) − 1 ≈ −0,38 est négative. Les valeurs ln((e + 1)/2) ≈ 0,62 et 1 + ln((e + 1)/2) ≈ 1,62 dépassent 0,5.",
+      "correctOption": "b",
+      "explanation": "Par linéarité, I + J = ∫₀¹ (eˣ + 1)/(eˣ + 1)dx = ∫₀¹ 1dx = 1, donc J = 1 − ln((e + 1)/2) ≈ 0,380 ✓. La valeur (1/2 + 1/(e + 1))/2 ≈ 0,384 est la demi-somme des valeurs de 1/(eˣ + 1) en 0 et en 1 : proche, mais la valeur moyenne d'une fonction qui n'est pas affine n'est pas, en général, cette demi-somme. La valeur ln((e + 1)/2) ≈ 0,620 est I, pas J. La valeur ln((e + 1)/2) − 1 ≈ −0,380 est l'opposé de J, impossible pour l'intégrale d'une fonction positive.",
       "difficulty": 3
     },
     {
@@ -123,11 +123,11 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "On a u′(x) = (n + 1)xⁿ et v(x) = eˣ. Le crochet [xⁿ⁺¹eˣ]₀¹ vaut e (le terme en 0 est nul), d'où Iₙ₊₁ = e − (n + 1)∫₀¹ xⁿ eˣ dx = e − (n + 1)Iₙ ✓. Le signe « plus » ignore le moins de la formule. La relation avec e − Iₙ oublie le facteur n + 1, qui vient de la dérivée de xⁿ⁺¹. La dernière est l'opposée de la bonne relation.",
+      "explanation": "On a u′(x) = (n + 1)xⁿ et v(x) = eˣ. Le crochet [xⁿ⁺¹eˣ]₀¹ vaut e (le terme en 0 est nul), d'où Iₙ₊₁ = e − (n + 1)∫₀¹ xⁿ eˣ dx = e − (n + 1)Iₙ ✓. Le signe « plus » ignore le moins de la formule. La relation avec e − Iₙ oublie le facteur n + 1, qui vient de la dérivée de xⁿ⁺¹. La relation Iₙ₊₁ = (n + 1)Iₙ − e est l'opposée de la bonne.",
       "difficulty": 3
     },
     {
-      "prompt": "Pour λ > 0, on note A(λ) l'aire, en u.a, de la partie du plan limitée par les courbes de f(x) = e^{−x} et g(x) = e^{−2x} et par les droites x = 0 et x = λ. Quelle est la limite de A(λ) quand λ tend vers +∞ ?",
+      "prompt": "Pour λ > 0, on note A(λ) l'aire, en u.a, de la partie du plan limitée par les courbes de f(x) = e^(−x) et g(x) = e^(−2x) et par les droites x = 0 et x = λ. Quelle est la limite de A(λ) quand λ tend vers +∞ ?",
       "options": [
         {
           "id": "a",
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Pour x ≥ 0, e^{−2x} ≤ e^{−x}, donc A(λ) = ∫₀^λ (e^{−x} − e^{−2x})dx = [−e^{−x} + e^{−2x}/2]₀^λ = 1/2 − e^{−λ} + e^{−2λ}/2, qui tend vers 1/2 ✓. La limite 1 est l'aire sous f seule : on a oublié de retrancher celle sous g, qui vaut 1/2. La limite 3/2 additionne ces deux aires au lieu de les soustraire. La limite +∞ suppose qu'une partie illimitée a une aire infinie.",
+      "explanation": "Pour x ≥ 0, e^(−2x) ≤ e^(−x), donc A(λ) = ∫₀^λ (e^(−x) − e^(−2x))dx = [−e^(−x) + e^(−2x)/2]₀^λ = 1/2 − e^(−λ) + e^(−2λ)/2, qui tend vers 1/2 ✓. La limite 1 est l'aire sous f seule : on a oublié de retrancher celle sous g, qui vaut 1/2. La limite 3/2 additionne ces deux aires au lieu de les soustraire. La limite +∞ suppose qu'une partie illimitée a une aire infinie.",
       "difficulty": 3
     }
   ]
