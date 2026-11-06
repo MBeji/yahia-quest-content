@@ -290,7 +290,7 @@ f̄ = (1/(b − a))∫ₐᵇ f ; si m ≤ f ≤ M, alors m ≤ f̄ ≤ M ; et il
 ## 📐 Aires planes : ∫|f| et ∫|g − f|
 
 Pour f(x) = x² − 2x sur [0 ; 3], on trouve ∫₀³ f = [x³/3 − x²]₀³ = 9 − 9 = 0. Pourtant la courbe ne reste pas sur l'axe : elle passe sous l'axe sur [0 ; 2], puis au-dessus sur [2 ; 3].
-Or la courbe s'écarte de l'axe : la partie qu'elle délimite avec lui a une aire strictement positive. Que mesure alors l'intégrale, et laquelle mesure l'aire ?
+La partie qu'elle délimite avec l'axe a donc une aire strictement positive. Que mesure alors l'intégrale, et laquelle mesure l'aire ?
 
 Le plan est rapporté à un repère orthonormé. L'**unité d'aire** (u.a) est l'aire du carré de côté 1 : si l'unité de longueur est 2 cm, 1 u.a = 4 cm².
 
