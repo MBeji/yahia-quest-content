@@ -516,7 +516,7 @@ $$ b′ = X̄ − a′Ȳ $$
 <circle cx="184" cy="112.3" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
 <circle cx="273.3" cy="64.5" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
 <line x1="156.7" y1="118" x2="166.7" y2="128" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/><line x1="156.7" y1="128" x2="166.7" y2="118" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/>
-<text x="147.7" y="113" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >G</text>
+<text x="170" y="109" text-anchor="start" font-size="13" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >G</text>
 <text x="291.7" y="38.5" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >D′</text>
 <text x="312.8" y="63" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >D</text>
 </svg>
