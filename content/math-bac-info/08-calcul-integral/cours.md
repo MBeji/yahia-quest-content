@@ -122,12 +122,12 @@ Pour ∫₀¹ x e^{x²}dx, on pose u = x² et l'on écrit [e^{x²}]₀¹ = e −
 
 Lues à l'envers, les formules de dérivation d'une composée donnent, pour u dérivable de dérivée continue :
 
-| f | une primitive | condition |
-| --- | --- | --- |
-| u′uⁿ (n entier, n ≠ −1) | uⁿ⁺¹/(n + 1) | u ≠ 0 sur I si n ≤ −2 |
-| u′/u | ln(u) si u > 0, ln(−u) si u < 0 | u ne s'annule pas sur I |
-| u′e^u | e^u | aucune |
-| u′/√u | 2√u | u > 0 sur I |
+| f                       | une primitive                   | condition               |
+| ----------------------- | ------------------------------- | ----------------------- |
+| u′uⁿ (n entier, n ≠ −1) | uⁿ⁺¹/(n + 1)                    | u ≠ 0 sur I si n ≤ −2   |
+| u′/u                    | ln(u) si u > 0, ln(−u) si u < 0 | u ne s'annule pas sur I |
+| u′e^u                   | e^u                             | aucune                  |
+| u′/√u                   | 2√u                             | u > 0 sur I             |
 
 ::: propriete
 **Méthode.** On repère u (contenu d'une parenthèse, d'un exposant ou d'un dénominateur), on calcule u′, on compare avec l'intégrande en compensant un facteur **constant**, on contrôle en dérivant, puis on calcule F(b) − F(a). Cas limite : u′/u² a pour primitive −1/u, jamais un logarithme ; et si le facteur manquant dépend de x, la forme est absente.
