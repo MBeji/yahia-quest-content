@@ -292,7 +292,7 @@ Un snack propose trois articles dont on ignore les prix en dinars : x pour un sa
 Comment retrouver les prix sans calculer neuf cofacteurs ?
 
 ::: propriete
-On range les coefficients et les seconds membres dans la **matrice augmentée** du système. Trois **opérations élémentaires** sur les lignes donnent un système équivalent, qui a les mêmes solutions : échanger deux lignes (Lᵢ ↔ Lⱼ), multiplier une ligne par un réel non nul (Lᵢ ← kLᵢ), ajouter à une ligne un multiple d'une autre (Lᵢ ← Lᵢ + kLⱼ).
+On range les coefficients et les seconds membres dans la **matrice augmentée** (ou matrice complète) du système. Trois **opérations élémentaires** sur les lignes donnent un système équivalent, qui a les mêmes solutions : échanger deux lignes (Lᵢ ↔ Lⱼ), multiplier une ligne par un réel non nul (Lᵢ ← kLᵢ), ajouter à une ligne un multiple d'une autre (Lᵢ ← Lᵢ + kLⱼ).
 
 Le **pivot de Gauss** consiste à les enchaîner pour annuler les coefficients sous chaque pivot, puis à remonter de la dernière équation à la première.
 :::
