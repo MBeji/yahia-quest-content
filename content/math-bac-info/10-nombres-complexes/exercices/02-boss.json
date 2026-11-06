@@ -7,27 +7,27 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Quelle est la solution de l'équation 2z + z̄ = 6 − 3i ?",
+      "prompt": "Quelle est la solution de l'équation z − 3z̄ = 2 + 8i ?",
       "options": [
         {
           "id": "a",
-          "text": "2 − i"
+          "text": "−1 − 4i"
         },
         {
           "id": "b",
-          "text": "2 − 3i"
+          "text": "−1 + 2i"
         },
         {
           "id": "c",
-          "text": "2 + 3i"
+          "text": "−1 − 2i"
         },
         {
           "id": "d",
-          "text": "6 − 3i"
+          "text": "1/2 + 2i"
         }
       ],
       "correctOption": "b",
-      "explanation": "On pose z = x + iy : 2z + z̄ = 2x + 2iy + x − iy = 3x + iy. Par unicité de la forme algébrique, 3x + iy = 6 − 3i donne x = 2 et y = −3, donc z = 2 − 3i ✓. Contrôle : 2(2 − 3i) + (2 + 3i) = 6 − 3i. La réponse 2 − i traite z̄ comme z et résout 3z = 6 − 3i. La réponse 2 + 3i se trompe de signe sur y. La réponse 6 − 3i recopie le second membre sans résoudre.",
+      "explanation": "On pose z = x + iy : z − 3z̄ = x + iy − 3x + 3iy = −2x + 4iy. Par unicité de la forme algébrique, −2x = 2 et 4y = 8, donc x = −1, y = 2 et z = −1 + 2i ✓. Contrôle : (−1 + 2i) − 3(−1 − 2i) = −1 + 2i + 3 + 6i = 2 + 8i. La réponse −1 − 4i traite z̄ comme z et résout −2z = 2 + 8i. La réponse 1/2 + 2i confond z̄ avec −z : z + 3z = 4z = 2 + 8i. La réponse −1 − 2i se trompe de signe sur y.",
       "difficulty": 2
     },
     {
@@ -35,47 +35,47 @@
       "options": [
         {
           "id": "a",
-          "text": "7/2 + 4i"
-        },
-        {
-          "id": "b",
-          "text": "9 + 9i"
-        },
-        {
-          "id": "c",
           "text": "3 − 3i"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "1 + 5i"
+        },
+        {
+          "id": "c",
+          "text": "7/2 + 4i"
+        },
+        {
+          "id": "d",
+          "text": "9 + 9i"
         }
       ],
-      "correctOption": "d",
+      "correctOption": "b",
       "explanation": "ABCD est un parallélogramme si et seulement si AB⃗ = DC⃗, donc z_B − z_A = z_C − z_D et z_D = z_A + z_C − z_B = (2 + i) + (5 + 7i) − (6 + 3i) = 1 + 5i ✓. Contrôle : Aff(DC⃗) = (5 + 7i) − (1 + 5i) = 4 + 2i = Aff(AB⃗). La réponse 9 + 9i est z_B + z_C − z_A, qui place D en face de A pour le parallélogramme ABDC. La réponse 3 − 3i est z_A + z_B − z_C. La réponse 7/2 + 4i est le milieu de [AC] : c'est le centre du parallélogramme, pas le sommet D.",
       "difficulty": 2
     },
     {
-      "prompt": "Quel est l'ensemble des points M(z) tels que |z − 1| = |z̄ + i| ?",
+      "prompt": "Soit z′ = (z − 2i)/(z + 1), avec z ≠ −1. Quel est l'ensemble des points M(z) tels que |z′| = 1 ?",
       "options": [
         {
           "id": "a",
-          "text": "La droite passant par les points d'affixes 1 et −i"
+          "text": "Un cercle de rayon 1"
         },
         {
           "id": "b",
-          "text": "La droite passant par les points d'affixes 1 et i"
+          "text": "Un cercle privé d'un point"
         },
         {
           "id": "c",
-          "text": "La médiatrice du segment joignant les points d'affixes 1 et −i"
+          "text": "Une droite privée d'un point"
         },
         {
           "id": "d",
-          "text": "La médiatrice du segment joignant les points d'affixes 1 et i"
+          "text": "Une droite entière"
         }
       ],
       "correctOption": "d",
-      "explanation": "Le conjugué de z̄ + i est z − i, et deux nombres conjugués ont le même module : |z̄ + i| = |z − i|. L'égalité devient |z − 1| = |z − i|, c'est-à-dire AM = BM avec A(1) et B(i) : la médiatrice de [AB] ✓. Lire |z̄ + i| comme |z + i| donnerait B(−i), en oubliant que le conjugué change aussi le signe de i. Une droite est le lieu d'un quotient réel, non d'une égalité de modules.",
+      "explanation": "Le module d'un quotient est le quotient des modules : |z′| = 1 ⟺ |z − 2i| = |z + 1| ⟺ AM = BM, avec A(2i) et B(−1). M décrit la médiatrice de [AB], une droite. La condition z ≠ −1 retire B, mais B n'est pas sur cette médiatrice : en z = −1, |z − 2i| = √5 alors que |z + 1| = 0. Il n'y a rien à retirer, l'ensemble est la droite entière ✓. Contrôle avec z = x + iy : x² + (y − 2)² = (x + 1)² + y² donne 2x + 4y = 3, que B(−1 ; 0) ne vérifie pas. « Une droite privée d'un point » retire B sans vérifier qu'il appartient à l'ensemble. « Un cercle de rayon 1 » lit |z′| = 1 comme si M était à distance 1 de O ; « un cercle privé d'un point » cumule les deux erreurs.",
       "difficulty": 3
     },
     {
@@ -127,7 +127,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "Les quatre solutions de z⁴ − 6z² + 25 = 0 sont les affixes de quatre points. Quelle est la nature du quadrilatère qu'ils forment ?",
+      "prompt": "Les quatre solutions de z⁴ + 4 = 0 sont les affixes de quatre points. Quelle est la nature du quadrilatère qu'ils forment ?",
       "options": [
         {
           "id": "a",
@@ -146,8 +146,8 @@
           "text": "Un rectangle qui n'est pas un carré"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Avec Z = z² : Z² − 6Z + 25 = 0, Δ = −64, donc Z = 3 ± 4i, dont les racines carrées sont ±(2 + i) et ±(2 − i). Les points (2 ; 1), (2 ; −1), (−2 ; −1) et (−2 ; 1) forment un rectangle de côtés 2 et 4 ✓. Les côtés ne sont pas égaux, car |(2 + i) − (2 − i)| = 2 alors que |(2 + i) − (−2 + i)| = 4 : ni carré ni losange. Ses angles sont droits, ce n'est donc pas un parallélogramme quelconque.",
+      "correctOption": "a",
+      "explanation": "Avec Z = z² : Z² = −4 donne Z = 2i ou Z = −2i. Les racines carrées de 2i sont ±(1 + i) et celles de −2i sont ±(1 − i), car (1 − i)² = −2i. Les points (1 ; 1), (1 ; −1), (−1 ; −1) et (−1 ; 1) forment un carré de côté 2 ✓ : côtés égaux et angles droits. Les quatre points sont à la distance √2 de O, ce qui ne suffit pas pour conclure : il faut comparer les côtés, tous égaux à 2, et vérifier les angles droits.",
       "difficulty": 3
     }
   ]

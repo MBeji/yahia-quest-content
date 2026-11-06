@@ -31,51 +31,51 @@
       "difficulty": 1
     },
     {
-      "prompt": "Pour quelles valeurs du réel p l'équation z² − 2z + p = 0 a-t-elle deux solutions non réelles ?",
+      "prompt": "Quelle est la factorisation de T(z) = z² − (3 + 2i)z + 6i ?",
       "options": [
         {
           "id": "a",
-          "text": "p < 1"
+          "text": "(z + 3)(z + 2i)"
         },
         {
           "id": "b",
-          "text": "p = 1"
+          "text": "(z − 2)(z − 3i)"
         },
         {
           "id": "c",
-          "text": "p > 1"
+          "text": "(z − 3)(z − 2i)"
         },
         {
           "id": "d",
-          "text": "p > 4"
+          "text": "(z − 1)(z − 2 − 2i)"
         }
       ],
       "correctOption": "c",
-      "explanation": "Les coefficients sont réels : les solutions sont non réelles si et seulement si Δ < 0. Ici Δ = 4 − 4p < 0 équivaut à p > 1 ✓ ; par exemple p = 5 donne 1 ± 2i. Pour p < 1, Δ > 0 et les solutions sont réelles ; pour p = 1, Δ = 0 et la solution double 1 est réelle. La condition p > 4 vient de Δ = 4 − p, qui oublie le facteur 4 du discriminant.",
+      "explanation": "Si z′ et z″ sont les solutions de T(z) = 0, alors T(z) = (z − z′)(z − z″), avec z′ + z″ = 3 + 2i et z′z″ = 6i. Les nombres 3 et 2i conviennent : 3 + 2i ✓ et 3 × 2i = 6i ✓, donc T(z) = (z − 3)(z − 2i). Contrôle : T(3) = 9 − 9 − 6i + 6i = 0. Le produit (z + 3)(z + 2i) se développe en z² + (3 + 2i)z + 6i : la somme a le mauvais signe. Le produit (z − 2)(z − 3i) a le bon produit 6i mais la somme 2 + 3i. Le produit (z − 1)(z − 2 − 2i) a la bonne somme 3 + 2i mais le produit 2 + 2i.",
       "difficulty": 2
     },
     {
-      "prompt": "Quel est l'ensemble des points M(z) tels que |z + 2 − i| = 3 ?",
+      "prompt": "Les points A et B ont pour affixes 1 + i et 3 + 2i. Lequel de ces points C est aligné avec A et B ?",
       "options": [
         {
           "id": "a",
-          "text": "Le cercle de centre Ω(2 − i) et de rayon 3"
+          "text": "C(3i)"
         },
         {
           "id": "b",
-          "text": "Le cercle de centre Ω(2 + i) et de rayon 3"
+          "text": "C(3)"
         },
         {
           "id": "c",
-          "text": "Le cercle de centre Ω(−2 − i) et de rayon 3"
+          "text": "C(5 + 5i)"
         },
         {
           "id": "d",
-          "text": "Le cercle de centre Ω(−2 + i) et de rayon 3"
+          "text": "C(7 + 4i)"
         }
       ],
       "correctOption": "d",
-      "explanation": "On écrit z + 2 − i = z − (−2 + i) : l'équation dit ΩM = 3 avec Ω d'affixe −2 + i, le cercle de centre Ω(−2 + i) et de rayon 3 ✓. Le centre se lit dans z − (affixe du centre) : ses signes sont opposés à ceux écrits dans la formule. Les autres centres recopient les signes de la formule, ou n'en inversent qu'un seul.",
+      "explanation": "Aff(AB⃗) = 2 + i. Pour C(7 + 4i), Aff(AC⃗) = 6 + 3i et z̄z′ = (2 − i)(6 + 3i) = 12 + 6i − 6i − 3i² = 15, un réel : AB⃗ et AC⃗ sont colinéaires, donc A, B et C sont alignés ✓. Pour C(3i), Aff(AC⃗) = −1 + 2i et z̄z′ = 5i est imaginaire pur : (AC) est perpendiculaire à (AB), on a interverti réel et imaginaire pur. Pour C(3), Aff(AC⃗) = 2 − i, conjugué de 2 + i : les deux vecteurs sont symétriques par rapport à l'axe réel, non alignés, et z̄z′ = (2 − i)² = 3 − 4i n'est pas réel. Pour C(5 + 5i), c'est le produit des affixes des points, (1 − i)(5 + 5i) = 10, qui est réel : il traduit l'alignement de O, A et C, pas celui de A, B et C ; ici z̄z′ = (2 − i)(4 + 4i) = 12 + 4i.",
       "difficulty": 2
     },
     {
@@ -83,71 +83,71 @@
       "options": [
         {
           "id": "a",
-          "text": "±(√2/2)(1 + i)"
+          "text": "±(1 + i)"
         },
         {
           "id": "b",
-          "text": "±(√2/2)(1 − i)"
+          "text": "±(√2/2)(1 + i)"
         },
         {
           "id": "c",
-          "text": "±(1/2)(1 + i)"
+          "text": "±(√2/2)(1 − i)"
         },
         {
           "id": "d",
-          "text": "±(1 + i)"
+          "text": "±(1/2)(1 + i)"
         }
       ],
-      "correctOption": "a",
+      "correctOption": "b",
       "explanation": "On cherche x² − y² = 0 et x² + y² = |i| = 1, donc x² = y² = 1/2. Comme 2xy = 1 est positif, x et y ont le même signe : z = ±(√2/2)(1 + i) ✓. Contrôle : ((√2/2)(1 + i))² = (1/2) × 2i = i. Le nombre ±(1 + i) a pour carré 2i ; le nombre ±(1/2)(1 + i) a pour carré i/2 ; le nombre ±(√2/2)(1 − i) a pour carré −i, car le signe de xy est ignoré.",
       "difficulty": 2
     },
     {
-      "prompt": "On exécute l'algorithme suivant pour obtenir une racine carrée de d = a + ib :\nmodu ← √(a² + b²)\nx ← √((a + modu)/2)\ny ← b/(2x)\nPour quel nombre d l'étape y ← b/(2x) divise-t-elle par 0 ?",
+      "prompt": "On exécute l'algorithme suivant avec a = 8 et b = 6 :\nmodu ← √(a² + b²)\nx ← √((a + modu)/2)\ny ← b/(2x)\nQuel nombre x + iy obtient-on ?",
       "options": [
         {
           "id": "a",
-          "text": "d = −9i"
+          "text": "1 + 3i"
         },
         {
           "id": "b",
-          "text": "d = 9"
+          "text": "3 + i"
         },
         {
           "id": "c",
-          "text": "d = 9i"
+          "text": "3 + 2i"
         },
         {
           "id": "d",
-          "text": "d = −9"
-        }
-      ],
-      "correctOption": "d",
-      "explanation": "Pour d = −9, a = −9, b = 0 et modu = 9, donc x = √((−9 + 9)/2) = 0 et l'étape y ← 0/(2 × 0) divise par 0 ✓. Pour d = 9, modu = 9 et x = 3. Pour d = 9i et d = −9i, a = 0 et modu = 9, donc x = √(9/2) n'est pas nul. Le nombre x ne s'annule que si a + modu = 0, c'est-à-dire pour un réel négatif.",
-      "difficulty": 2
-    },
-    {
-      "prompt": "Quelles sont les solutions de (1 + i)z² − (3 + 2i)z + 2 + i = 0 ?",
-      "options": [
-        {
-          "id": "a",
-          "text": "1 et (3 + i)/2"
-        },
-        {
-          "id": "b",
-          "text": "1 et (3 − i)/2"
-        },
-        {
-          "id": "c",
-          "text": "1 et 2 + i"
-        },
-        {
-          "id": "d",
-          "text": "−1 et (−3 + i)/2"
+          "text": "3√2 + (√2/2)i"
         }
       ],
       "correctOption": "b",
-      "explanation": "On a a + b + c = (1 + i) − (3 + 2i) + (2 + i) = 0, donc 1 est solution et l'autre vaut c/a = (2 + i)/(1 + i) = (2 + i)(1 − i)/2 = (3 − i)/2 ✓. Contrôle par la somme : 1 + (3 − i)/2 = (5 − i)/2 et (3 + 2i)/(1 + i) = (3 + 2i)(1 − i)/2 = (5 − i)/2 ✓. La réponse avec (3 + i)/2 se trompe de signe en multipliant par le conjugué. La réponse 1 et 2 + i oublie de diviser par a. La réponse −1 et (−3 + i)/2 applique la règle de a − b + c = 0.",
+      "explanation": "Avec a = 8 et b = 6 : modu = √(64 + 36) = 10, puis x = √((8 + 10)/2) = √9 = 3 et y = 6/(2 × 3) = 1. On obtient 3 + i ✓. Contrôle : (3 + i)² = 9 + 6i − 1 = 8 + 6i. La réponse 3 + 2i calcule y = b/x au lieu de b/(2x). La réponse 1 + 3i échange x et y. La réponse 3√2 + (√2/2)i oublie la division par 2 dans x : x = √18 et y = 6/(2√18).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Combien de solutions l'équation z² − 4z̄ + 4 = 0 a-t-elle dans ℂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose z = x + iy : z² − 4z̄ + 4 = (x² − y² − 4x + 4) + i(2xy + 4y). La partie imaginaire donne 2y(x + 2) = 0. Si y = 0 : x² − 4x + 4 = (x − 2)² = 0, donc z = 2. Si x = −2 : 4 − y² + 8 + 4 = 0, donc y² = 16 et z = −2 + 4i ou z = −2 − 4i. Il y a donc 3 solutions ✓. Contrôle : (−2 + 4i)² = −12 − 16i et −4(−2 − 4i) = 8 + 16i, d'où −12 − 16i + 8 + 16i + 4 = 0. La réponse 1 traite z̄ comme z, (z − 2)² = 0, ou ne garde que le cas y = 0 ; la réponse 2 ne garde que le cas x = −2, ou croit qu'une équation du second degré a toujours deux solutions ; la réponse 4 compte deux fois la solution double z = 2.",
       "difficulty": 2
     }
   ]
