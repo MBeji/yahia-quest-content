@@ -7,11 +7,11 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Trois serveurs traitent respectivement 50 %, 30 % et 20 % des requêtes. Une requête est lente dans 2 % des cas sur le premier serveur, 5 % sur le deuxième et 10 % sur le troisième. Quelle est la probabilité qu'une requête prise au hasard soit lente ?",
+      "prompt": "Trois serveurs traitent respectivement 50 %, 30 % et 20 % des requêtes. Une requête est lente dans 2 % des cas sur le premier serveur, 5 % sur le deuxième et 10 % sur le troisième. Une requête n'a pas été traitée par le premier serveur. Quelle est la probabilité qu'elle soit lente ?",
       "options": [
         {
           "id": "a",
-          "text": "0,01"
+          "text": "0,035"
         },
         {
           "id": "b",
@@ -19,15 +19,15 @@
         },
         {
           "id": "c",
-          "text": "0,057"
+          "text": "0,07"
         },
         {
           "id": "d",
-          "text": "0,17"
+          "text": "0,075"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Les trois serveurs forment une partition : p(lente) = 0,5 × 0,02 + 0,3 × 0,05 + 0,2 × 0,1 = 0,01 + 0,015 + 0,02 = 0,045 ✓. La valeur 0,057 est la moyenne simple de 2 %, 5 % et 10 %, qui ignore la part de chaque serveur. La valeur 0,17 additionne les trois taux. La valeur 0,01 ne garde que le premier serveur.",
+      "correctOption": "c",
+      "explanation": "Soit S₁ « traitée par le premier serveur » et L « lente ». Les chemins vers L qui évitent S₁ donnent p(L ∩ S̅₁) = 0,3 × 0,05 + 0,2 × 0,1 = 0,015 + 0,02 = 0,035, et p(S̅₁) = 0,3 + 0,2 = 0,5. Donc p(L/S̅₁) = 0,035/0,5 = 0,07 ✓. La valeur 0,035 oublie de diviser par p(S̅₁). La valeur 0,045 est p(L) pour toutes les requêtes, sans tenir compte de l'information. La valeur 0,075 est la moyenne simple de 5 % et 10 %, qui ignore que le deuxième serveur traite plus de requêtes que le troisième.",
       "difficulty": 2
     },
     {
@@ -103,27 +103,27 @@
       "difficulty": 3
     },
     {
-      "prompt": "La fonction de répartition d'une variable aléatoire X, qui prend les valeurs 0, 1, 2 et 3, vérifie F(0) = 0,1 ; F(1) = 0,4 ; F(2) = 0,7 et F(3) = 1. Quelle est l'espérance de X ?",
+      "prompt": "La fonction de répartition d'une variable aléatoire X, qui prend les valeurs 0, 1, 2 et 3, vérifie F(0) = 0,1 ; F(1) = 0,4 ; F(2) = 0,7 et F(3) = 1. Quelle est la probabilité p(X ≥ 2 / X ≥ 1) ?",
       "options": [
         {
           "id": "a",
-          "text": "1,5"
+          "text": "1/3"
         },
         {
           "id": "b",
-          "text": "1,6"
+          "text": "1/2"
         },
         {
           "id": "c",
-          "text": "1,8"
+          "text": "3/5"
         },
         {
           "id": "d",
-          "text": "4,8"
+          "text": "2/3"
         }
       ],
-      "correctOption": "c",
-      "explanation": "On revient à la loi par les sauts de F : p(X = 0) = 0,1 ; p(X = 1) = 0,4 − 0,1 = 0,3 ; p(X = 2) = 0,7 − 0,4 = 0,3 ; p(X = 3) = 1 − 0,7 = 0,3. Alors E(X) = 0 × 0,1 + 1 × 0,3 + 2 × 0,3 + 3 × 0,3 = 1,8 ✓. La valeur 4,8 utilise les valeurs de F comme des probabilités. La valeur 1,6 décale les probabilités d'un cran. La valeur 1,5 est la moyenne simple de 0, 1, 2 et 3.",
+      "correctOption": "d",
+      "explanation": "p(X ≥ 2) = 1 − F(1) = 0,6 et p(X ≥ 1) = 1 − F(0) = 0,9. Comme (X ≥ 2) ⊂ (X ≥ 1), p(X ≥ 2 / X ≥ 1) = 0,6/0,9 = 2/3 ✓. La valeur 3/5 = 0,6 ignore la condition. La valeur 1/3 = 0,3/0,9 ne garde que X = 2. La valeur 1/2 = 0,3/0,6 prend 1 − F(2) pour p(X ≥ 2), alors que p(X ≥ 2) = 1 − F(1).",
       "difficulty": 3
     },
     {

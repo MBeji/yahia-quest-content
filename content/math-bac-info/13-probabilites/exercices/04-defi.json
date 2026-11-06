@@ -11,23 +11,23 @@
       "options": [
         {
           "id": "a",
-          "text": "p ← 1/12"
+          "text": "p ← (b − a)/(a + b)"
         },
         {
           "id": "b",
-          "text": "p ← (b − a) × 12"
+          "text": "p ← 3/(b − a)"
         },
         {
           "id": "c",
-          "text": "p ← 1 − 1/(b − a)"
+          "text": "p ← (b − a)/12"
         },
         {
           "id": "d",
-          "text": "p ← (b − a)/12"
+          "text": "p ← (a + b)/24"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Pour la loi uniforme sur [0 ; 12], p(a ≤ X ≤ b) = (b − a)/(12 − 0). Avec a = 3 et b = 9, on obtient 6/12 = 0,5 ✓. L'instruction 1/(b − a) = 1/6 ≈ 0,17 ne dépend pas de la longueur de [0 ; 12] et diminue quand l'intervalle grandit, à l'inverse d'une probabilité. L'instruction 1/12 est la hauteur de la densité, pas une probabilité. L'instruction (b − a) × 12 donne 72, bien au-dessus de 1, et 1 − 1/(b − a) donne environ 0,83.",
+      "correctOption": "c",
+      "explanation": "Pour la loi uniforme sur [0 ; 12], p(a ≤ X ≤ b) = (b − a)/(12 − 0) : la probabilité est proportionnelle à la longueur b − a. Les quatre instructions affichent 0,5 pour a = 3 et b = 9 : un seul test ne valide pas un programme. Sur [2 ; 4], la probabilité vaut 2/12 = 1/6, et seule (b − a)/12 la donne ✓. L'instruction (b − a)/(a + b) divise par la somme des bornes au lieu de 12 (elle donne 1/3). L'instruction 3/(b − a) ajuste la constante sur le seul test et décroît quand l'intervalle grandit (elle donne 1,5, plus que 1). L'instruction (a + b)/24 mesure la position du milieu de [a ; b], pas sa longueur (elle donne 1/4).",
       "difficulty": 2
     },
     {
@@ -79,7 +79,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "Dans un repère orthonormé d'origine O, on place A(0 ; 1) et B(1 ; 1). Un point M est choisi au hasard sur le segment [AB]. Quelle est la probabilité que la distance OM soit au plus égale à 5/4 ?",
+      "prompt": "Dans un repère orthonormé d'origine O, on place A(0 ; 1) et B(1 ; 1). Un point M est choisi au hasard sur le segment [AB]. Quelle est la probabilité que la distance OM soit au plus égale à 5/4 ?\n<svg viewBox=\"0 0 260 210\">\n<title>Repère d'origine O ; A(0 ; 1) et B(1 ; 1) ; M est un point du segment [AB] et l'on mesure OM</title>\n<path d=\"M30 180 L240 180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<path d=\"M40 190 L40 20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<path d=\"M40 60 L160 60\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M40 180 L100 60\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/>\n<circle cx=\"40\" cy=\"60\" r=\"4\" fill=\"#0f172a\"/>\n<circle cx=\"160\" cy=\"60\" r=\"4\" fill=\"#0f172a\"/>\n<circle cx=\"100\" cy=\"60\" r=\"4\" fill=\"#b45309\"/>\n<path d=\"M160 176 L160 184\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"28\" y=\"196\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\" font-weight=\"700\">O</text>\n<text x=\"30\" y=\"56\" text-anchor=\"end\" font-size=\"13\" fill=\"#0f172a\" font-weight=\"700\">A</text>\n<text x=\"168\" y=\"56\" text-anchor=\"start\" font-size=\"13\" fill=\"#0f172a\" font-weight=\"700\">B</text>\n<text x=\"100\" y=\"48\" text-anchor=\"middle\" font-size=\"13\" fill=\"#b45309\" font-weight=\"700\">M</text>\n<text x=\"160\" y=\"200\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">1</text>\n<text x=\"30\" y=\"72\" text-anchor=\"end\" font-size=\"12\" fill=\"#0f172a\">1</text>\n<text x=\"240\" y=\"198\" text-anchor=\"end\" font-size=\"12\" fill=\"#0f172a\">x</text>\n<text x=\"48\" y=\"26\" text-anchor=\"start\" font-size=\"12\" fill=\"#0f172a\">y</text>\n</svg>",
       "options": [
         {
           "id": "a",
@@ -127,7 +127,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "Pour la loi exponentielle de paramètre 0,25, on définit la durée moyenne m comme la limite, quand A tend vers +∞, de l'intégrale ∫₀ᴬ 0,25x e^(−0,25x) dx. Quelle est la valeur de m ?",
+      "prompt": "Pour la loi exponentielle de paramètre 0,25, on définit la durée moyenne m comme la limite, quand A tend vers +∞, de l'intégrale suivante :\n∫₀ᴬ 0,25x e^(−0,25x) dx\nQuelle est la valeur de m ?",
       "options": [
         {
           "id": "a",

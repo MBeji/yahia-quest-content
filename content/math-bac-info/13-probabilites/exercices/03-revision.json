@@ -8,33 +8,37 @@
   "questions": [
     {
       "type": "multi",
-      "prompt": "On considère un espace probabilisé fini (Ω, 𝒫(Ω), p) et deux événements A et B tels que p(B) ≠ 0. Quelles affirmations sont toujours vraies ?",
+      "prompt": "Deux événements A et B d'un espace probabilisé fini sont incompatibles, avec p(A) ≠ 0 et p(B) ≠ 0. Quelles affirmations sont vraies ?",
       "options": [
         {
           "id": "a",
-          "text": "p(A̅) = 1 − p(A)"
-        },
-        {
-          "id": "b",
           "text": "p(A ∪ B) = p(A) + p(B)"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "p(A ∩ B) = p(A) × p(B)"
         },
         {
+          "id": "c",
+          "text": "p(A/B) = 0"
+        },
+        {
           "id": "d",
-          "text": "p(A/B) = p(A ∩ B)/p(B)"
+          "text": "A et B sont contraires"
         },
         {
           "id": "e",
-          "text": "p(A̅/B) = 1 − p(A/B)"
+          "text": "p(A) + p(B) ≤ 1"
         }
       ],
       "answerKey": {
-        "correct": ["a", "d", "e"]
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
       },
-      "explanation": "L'égalité p(A̅) = 1 − p(A) vient de p(Ω) = 1 et de l'additivité sur A et A̅, incompatibles. Le quotient p(A ∩ B)/p(B) est la définition de p(A/B). L'égalité p(A̅/B) = 1 − p(A/B) est vraie : A et A̅ partagent B en deux parties dont les probabilités s'additionnent à p(B). La somme p(A) + p(B) n'est celle de la réunion que pour des événements incompatibles, et le produit p(A) × p(B) n'est celui de l'intersection que pour des événements indépendants.",
+      "explanation": "Incompatibles veut dire A ∩ B = ∅, donc p(A ∩ B) = 0. L'additivité donne p(A ∪ B) = p(A) + p(B), et comme p(A ∪ B) ≤ 1, on a p(A) + p(B) ≤ 1. De plus p(A/B) = p(A ∩ B)/p(B) = 0. En revanche p(A) × p(B) n'est pas nul : A et B ne sont pas indépendants, ils sont au contraire dépendants. Enfin, ils ne sont contraires que si, de plus, A ∪ B = Ω, ce que l'énoncé ne dit pas.",
       "difficulty": 1
     },
     {
@@ -63,7 +67,13 @@
         }
       ],
       "answerKey": {
-        "order": ["c", "e", "b", "d", "a"]
+        "order": [
+          "c",
+          "e",
+          "b",
+          "d",
+          "a"
+        ]
       },
       "explanation": "On nomme d'abord les événements, ce qui permet de traduire l'énoncé en p(Aᵢ) et p(E/Aᵢ). Ces données servent ensuite à calculer p(E) par les probabilités totales, dénominateur de la formule de Bayes. On divise alors p(E/Aₖ) × p(Aₖ) par p(E), et l'on termine par le contrôle : une probabilité reste dans [0 ; 1].",
       "difficulty": 1
@@ -102,27 +112,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "On exécute le programme suivant :\nLire choix, a, b\nSi choix = 1 alors p ← (b − a)/10 (loi uniforme sur [0 ; 10])\nSinon p ← exp(−0,5 × a) − exp(−0,5 × b) (loi exponentielle de paramètre 0,5)\nAfficher p\nAvec choix = 2, a = 1 et b = 3, quelle valeur est affichée, arrondie au centième ?",
+      "prompt": "On exécute le programme suivant :\nLire choix, a, b\nSi choix = 1 alors p ← (b − a)/10 (loi uniforme sur [0 ; 10])\nSinon p ← exp(−0,5 × a) − exp(−0,5 × b) (loi exponentielle de paramètre 0,5)\nAfficher p\nAvec choix = 2, a = 2 et b = 4, quelle valeur est affichée, arrondie au centième ?",
       "options": [
         {
           "id": "a",
-          "text": "0,20"
+          "text": "0,14"
         },
         {
           "id": "b",
-          "text": "0,22"
+          "text": "0,20"
         },
         {
           "id": "c",
-          "text": "0,37"
+          "text": "0,23"
         },
         {
           "id": "d",
-          "text": "0,38"
+          "text": "0,37"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Comme choix vaut 2, le programme passe dans la seconde branche : p = exp(−0,5 × 1) − exp(−0,5 × 3) = exp(−0,5) − exp(−1,5) ≈ 0,6065 − 0,2231 = 0,3834, soit 0,38 ✓. La valeur 0,20 = (3 − 1)/10 applique la branche de la loi uniforme. La valeur 0,22 ne garde que le second terme. La valeur 0,37 = exp(−0,5 × (3 − 1)) croit que la probabilité ne dépend que de la longueur b − a, ce qui n'est vrai que pour la loi uniforme.",
+      "correctOption": "c",
+      "explanation": "Comme choix vaut 2, le programme passe dans la seconde branche : p = exp(−0,5 × 2) − exp(−0,5 × 4) = exp(−1) − exp(−2) ≈ 0,3679 − 0,1353 = 0,2325, soit 0,23 ✓. La valeur 0,20 = (4 − 2)/10 applique la branche de la loi uniforme. La valeur 0,14 ne garde que le second terme. La valeur 0,37 = exp(−0,5 × (4 − 2)) croit que la probabilité ne dépend que de la longueur b − a, ce qui n'est vrai que pour la loi uniforme.",
       "difficulty": 2
     },
     {

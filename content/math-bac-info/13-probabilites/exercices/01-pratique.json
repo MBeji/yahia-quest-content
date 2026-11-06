@@ -55,7 +55,7 @@
       "difficulty": 1
     },
     {
-      "prompt": "Dans un groupe de 40 étudiants, 24 sont des filles. Parmi les filles, 6 portent des lunettes ; parmi les 16 garçons, 8 en portent. On choisit au hasard un étudiant qui porte des lunettes. Quelle est la probabilité que ce soit une fille ?",
+      "prompt": "Dans un laboratoire, 60 % des postes sont des portables et 40 % des postes fixes. L'antivirus est périmé sur 25 % des portables et sur 50 % des postes fixes. On choisit au hasard un poste dont l'antivirus est périmé. Quelle est la probabilité que ce soit un portable ?",
       "options": [
         {
           "id": "a",
@@ -75,8 +75,8 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Il y a 6 + 8 = 14 étudiants à lunettes, dont 6 filles : p(fille/lunettes) = (6/40)/(14/40) = 6/14 = 3/7 ✓. La valeur 1/4 = 6/24 est la probabilité inverse, celle de porter des lunettes quand on est une fille. La valeur 3/20 = 6/40 ne divise pas par les étudiants à lunettes. La valeur 3/5 = 24/40 est la part des filles dans le groupe.",
-      "difficulty": 1
+      "explanation": "Par les probabilités totales, p(périmé) = 0,6 × 0,25 + 0,4 × 0,5 = 0,15 + 0,2 = 0,35. Alors p(portable/périmé) = 0,15/0,35 = 3/7 ✓. La valeur 1/4 = 0,25 est la probabilité inverse, p(périmé/portable). La valeur 3/20 = 0,15 est p(portable ∩ périmé), sans diviser par p(périmé). La valeur 3/5 = 0,6 est la part des portables, sans tenir compte de l'antivirus.",
+      "difficulty": 2
     },
     {
       "prompt": "Une urne contient 4 boules rouges et 6 boules noires. On tire successivement deux boules sans remise. Quelle est la probabilité d'obtenir deux boules rouges ?",
@@ -104,11 +104,11 @@
     },
     {
       "type": "numeric",
-      "prompt": "Un jeu a pour gain algébrique X, en dinars : X vaut −2 avec la probabilité 0,5 ; vaut 1 avec la probabilité 0,3 et vaut 5 avec la probabilité 0,2. Calculer l'espérance E(X). Donne le résultat sous forme décimale.",
+      "prompt": "Un jeu a pour gain algébrique X, en dinars : X vaut −3 avec la probabilité 0,4 ; vaut 1 avec la probabilité 0,4 et vaut 4 avec la probabilité 0,2. Calculer l'espérance E(X). Donne le résultat sous forme décimale.",
       "answerKey": {
-        "value": 0.3
+        "value": 0
       },
-      "explanation": "E(X) = −2 × 0,5 + 1 × 0,3 + 5 × 0,2 = −1 + 0,3 + 1 = 0,3 ✓. Le gain moyen est de 0,3 dinar par partie, donc le jeu est favorable au joueur. La moyenne simple des trois valeurs, (−2 + 1 + 5)/3, serait fausse : elle ignore les probabilités.",
+      "explanation": "E(X) = −3 × 0,4 + 1 × 0,4 + 4 × 0,2 = −1,2 + 0,4 + 0,8 = 0 ✓ : le jeu est équitable. La moyenne simple des valeurs, (−3 + 1 + 4)/3 = 2/3, serait fausse : elle ignore les probabilités.",
       "difficulty": 2
     },
     {

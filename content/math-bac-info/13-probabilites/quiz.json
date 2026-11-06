@@ -22,7 +22,7 @@
         }
       ],
       "correctOption": "a",
-      "explanation": "Une probabilité envoie 𝒫(Ω) dans [0 ; 1] avec p(Ω) = 1 : les quatre nombres doivent être dans [0 ; 1] et avoir pour somme 1. Ici 0,1 + 0,2 + 0,3 + 0,4 = 1 ✓. La liste en 0,25 a pour somme 0,9, celle en 0,4 a pour somme 1,1, et la dernière a bien pour somme 1 mais contient −0,1, qui sort de [0 ; 1].",
+      "explanation": "Une probabilité envoie 𝒫(Ω) dans [0 ; 1] avec p(Ω) = 1 : les quatre nombres doivent être dans [0 ; 1] et avoir pour somme 1. Ici 0,1 + 0,2 + 0,3 + 0,4 = 1 ✓. La liste 0,25 ; 0,25 ; 0,25 ; 0,15 a pour somme 0,9, la liste 0,4 ; 0,3 ; 0,2 ; 0,2 a pour somme 1,1, et la liste qui contient −0,1 a bien pour somme 1, mais −0,1 sort de [0 ; 1].",
       "difficulty": 1
     },
     {
@@ -122,19 +122,19 @@
       "difficulty": 1
     },
     {
-      "prompt": "Les événements A et B sont indépendants, avec p(A) = 0,5 et p(B) = 0,4. Quelle est la probabilité p(A ∪ B) ?",
+      "prompt": "Les événements A et B sont indépendants, avec p(A) = 0,7 et p(B) = 0,2. Quelle est la probabilité p(A ∪ B) ?",
       "options": [
         {
           "id": "a",
-          "text": "0,2"
+          "text": "0,14"
         },
         {
           "id": "b",
-          "text": "0,5"
+          "text": "0,7"
         },
         {
           "id": "c",
-          "text": "0,7"
+          "text": "0,76"
         },
         {
           "id": "d",
@@ -142,7 +142,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "L'indépendance donne p(A ∩ B) = 0,5 × 0,4 = 0,2, puis p(A ∪ B) = p(A) + p(B) − p(A ∩ B) = 0,5 + 0,4 − 0,2 = 0,7 ✓. La valeur 0,9 additionne sans retrancher l'intersection, comme pour des événements incompatibles. La valeur 0,2 ne donne que l'intersection. La valeur 0,5 suppose B inclus dans A, ce qui n'est pas l'indépendance.",
+      "explanation": "L'indépendance donne p(A ∩ B) = 0,7 × 0,2 = 0,14, puis p(A ∪ B) = p(A) + p(B) − p(A ∩ B) = 0,7 + 0,2 − 0,14 = 0,76 ✓. La valeur 0,9 additionne sans retrancher l'intersection, comme pour des événements incompatibles. La valeur 0,14 ne donne que l'intersection. La valeur 0,7 suppose B inclus dans A, ce qui n'est pas l'indépendance.",
       "difficulty": 2
     },
     {
@@ -170,27 +170,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Une variable aléatoire X a pour densité f(t) = kt sur [0 ; 2], où k est un réel. Quelle est la valeur de k ?",
+      "prompt": "Une variable aléatoire X a pour densité f(t) = kt sur [0 ; 3], où k est un réel. Quelle est la valeur de k ?",
       "options": [
         {
           "id": "a",
-          "text": "4"
+          "text": "9/2"
         },
         {
           "id": "b",
-          "text": "2"
+          "text": "1/3"
         },
         {
           "id": "c",
-          "text": "1/2"
+          "text": "2/9"
         },
         {
           "id": "d",
-          "text": "1/4"
+          "text": "1/9"
         }
       ],
       "correctOption": "c",
-      "explanation": "Une densité vérifie ∫₀² kt dt = 1. Or ∫₀² kt dt = [kt²/2]₀² = 2k, donc 2k = 1 et k = 1/2 ✓. La valeur 1/4 oublie le 1/2 de la primitive (elle résout 4k = 1). Les valeurs 2 et 4 inversent l'équation, comme si k valait l'inverse de ce qu'on trouve.",
+      "explanation": "Une densité vérifie ∫₀³ kt dt = 1. Or ∫₀³ kt dt = [kt²/2]₀³ = 9k/2, donc 9k/2 = 1 et k = 2/9 ✓. La valeur 1/9 oublie le 1/2 de la primitive (elle résout 9k = 1). La valeur 1/3 prend la hauteur f(3) = 1 ou le produit k × 3 = 1 pour l'aire. La valeur 9/2 inverse l'équation.",
       "difficulty": 2
     }
   ]

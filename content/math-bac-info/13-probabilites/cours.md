@@ -6,7 +6,7 @@ Ce chapitre apprend à mesurer le hasard, puis à le résumer par une moyenne et
 
 ## 🎲 Espace probabilisé fini : la définition et ses règles
 
-Un dé truqué sort le numéro k avec une chance proportionnelle à k : le 6 est six fois plus probable que le 1. Les faces ne sont plus équiprobables, et l'on veut pourtant la probabilité de « obtenir un résultat pair ».
+Un dé truqué sort chaque numéro pair deux fois plus souvent que chaque numéro impair. Les faces ne sont plus équiprobables, et l'on veut pourtant la probabilité de « obtenir un résultat pair ».
 Quelles règles minimales un nombre p(A) doit-il respecter pour être une probabilité, et comment calculer avec elles ?
 
 ::: definition
@@ -22,15 +22,15 @@ Le triplet (Ω, 𝒫(Ω), p) est un **espace probabilisé fini**.
 :::
 
 ::: exemple Le dé truqué
-1. Posons p({k}) = c × k pour k de 1 à 6. Les événements élémentaires sont incompatibles deux à deux et leur réunion est Ω, donc p(Ω) = 1 donne c × (1 + 2 + … + 6) = 21c = 1, soit c = 1/21.
-2. Soit A « le résultat est pair » = {2 ; 4 ; 6}. Par additivité, p(A) = (2 + 4 + 6)/21 = 12/21 = 4/7.
-3. Le contraire de A est {1 ; 3 ; 5} : p(A̅) = 1 − 4/7 = 3/7, et l'on vérifie (1 + 3 + 5)/21 = 9/21 = 3/7 ✓.
-4. Soit B « au moins 5 » = {5 ; 6}, avec p(B) = 11/21 et A ∩ B = {6} de probabilité 6/21. Alors p(A ∪ B) = 12/21 + 11/21 − 6/21 = 17/21 ✓, car {2 ; 4 ; 5 ; 6} donne bien (2 + 4 + 5 + 6)/21.
+1. Posons p({1}) = p({3}) = p({5}) = α et p({2}) = p({4}) = p({6}) = 2α. Les événements élémentaires sont incompatibles deux à deux et leur réunion est Ω, donc p(Ω) = 1 donne 3α + 3 × 2α = 9α = 1, soit α = 1/9.
+2. Soit A « le résultat est pair » = {2 ; 4 ; 6}. Par additivité, p(A) = 3 × 2/9 = 6/9 = 2/3.
+3. Le contraire de A est {1 ; 3 ; 5} : p(A̅) = 1 − 2/3 = 1/3, et l'on vérifie 3 × 1/9 = 1/3 ✓.
+4. Soit B « au moins 4 » = {4 ; 5 ; 6}, avec p(B) = 2/9 + 1/9 + 2/9 = 5/9 et A ∩ B = {4 ; 6} de probabilité 4/9. Alors p(A ∪ B) = 6/9 + 5/9 − 4/9 = 7/9 ✓, car {2 ; 4 ; 5 ; 6} donne bien (2 + 2 + 1 + 2)/9.
 
 :::
 
 ::: piege
-**Erreur : additionner p(A) + p(B) quand les événements se chevauchent.** Ici 12/21 + 11/21 = 23/21, un nombre supérieur à 1 : impossible pour une probabilité. Le résultat 6 est compté dans A et dans B ; on retranche p(A ∩ B).
+**Erreur : additionner p(A) + p(B) quand les événements se chevauchent.** Ici 6/9 + 5/9 = 11/9, un nombre supérieur à 1 : impossible pour une probabilité. Les résultats 4 et 6 sont comptés dans A et dans B ; on retranche p(A ∩ B).
 :::
 
 ::: propriete
@@ -71,7 +71,7 @@ $$ p(A/B) = p(A ∩ B) / p(B) $$
 | En état | 27 | 16 | 43 |
 | Total | 30 | 20 | 50 |
 
-La ligne « défectueuses » est le nouvel univers : 7 clés, dont 3 de marque A. C'est ce que calcule le quotient p(A ∩ D)/p(D) du tableau.
+La ligne « défectueuses » est le nouvel univers : 7 clés, dont 3 de marque A. C'est ce que calcule le quotient p(A ∩ D)/p(D) du tableau, où D désigne « défectueuse ».
 
 ::: exemple Les clés défectueuses
 1. Notons A « marque A » et D « défectueuse » : p(D) = 7/50 et p(A ∩ D) = 3/50.
@@ -188,8 +188,8 @@ Sur la figure, A₁, A₂, A₃ sont les documents, les images et les exécutabl
 :::
 
 ::: propriete
-Soit A₁, …, Aₙ une partition de Ω et E un événement de probabilité non nulle.
-- **Probabilités totales** : p(E) = p(E/A₁) p(A₁) + … + p(E/Aₙ) p(Aₙ). Avec n = 2, p(E) = p(E/A) p(A) + p(E/A̅) p(A̅).
+Soit A₁, …, Aₙ une partition de Ω formée d'événements de probabilités non nulles, et E un événement de probabilité non nulle.
+- **Probabilités totales** : p(E) = p(E/A₁) p(A₁) + … + p(E/Aₙ) p(Aₙ). Avec n = 2, si p(A) ≠ 0 et p(A̅) ≠ 0, p(E) = p(E/A) p(A) + p(E/A̅) p(A̅).
 - **Bayes** : pour tout k, p(Aₖ/E) = p(E/Aₖ) p(Aₖ) / [p(E/A₁) p(A₁) + … + p(E/Aₙ) p(Aₙ)].
 
 Bayes remonte de l'effet à la cause : on connaît p(E/Aₖ), on cherche p(Aₖ/E).
@@ -229,7 +229,7 @@ Le tableau est la loi de X : X = k regroupe les couples dont le maximum est k, s
 <path d="M40 190 L330 190" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
 <path d="M50 200 L50 30" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
 <text x="330" y="208" text-anchor="end" font-size="13" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">x</text>
-<text x="36" y="34" text-anchor="end" font-size="12" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">F(x)</text>
+<text x="56" y="30" text-anchor="start" font-size="12" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">F(x)</text>
 <path d="M50 190 L105 190" fill="none" stroke="#0f6e56" stroke-width="3" stroke-linecap="round"/>
 <path d="M105 180.6 L160 180.6" fill="none" stroke="#0f6e56" stroke-width="3" stroke-linecap="round"/>
 <path d="M160 152.5 L215 152.5" fill="none" stroke="#0f6e56" stroke-width="3" stroke-linecap="round"/>
@@ -308,8 +308,9 @@ Si X(Ω) = {x₁ ; … ; xₙ}, l'**espérance** de X est E(X) = Σ xᵢ p(X = x
 ::: exemple Le jeu du plus grand numéro
 1. E(X) = 1 × 1/16 + 2 × 3/16 + 3 × 5/16 + 4 × 7/16 = (1 + 6 + 15 + 28)/16 = 50/16 = 25/8 = 3,125.
 2. Pour la variance, on peut passer par E(X²) = (1 + 4 × 3 + 9 × 5 + 16 × 7)/16 = 170/16 = 85/8, la même somme avec les carrés des valeurs.
-3. V(X) = E(X²) − (E(X))² = 85/8 − 625/64 = 680/64 − 625/64 = 55/64.
+3. En développant le carré dans la définition, Σ (xᵢ − E(X))² p(X = xᵢ) = E(X²) − (E(X))² (formule rappelée dans la propriété ci-dessous) : V(X) = 85/8 − 625/64 = 680/64 − 625/64 = 55/64.
 4. σ(X) = √55/8 ≈ 0,93 dinar : l'écart typique autour de la moyenne 3,125 est d'environ 0,93 dinar.
+5. Si une partie coûte 3 dinars, le gain algébrique est X − 3, d'espérance 25/8 − 3 = 1/8 > 0 : le jeu est favorable au joueur.
 
 :::
 
@@ -318,6 +319,8 @@ Pour des variables aléatoires X et Y définies sur Ω et un réel a :
 - E(X + a) = E(X) + a, E(aX) = aE(X) et E(X + Y) = E(X) + E(Y) ;
 - V(X) = E(X²) − (E(X))², V(X + a) = V(X) et V(aX) = a²V(X) ;
 - σ(X + a) = σ(X) et σ(aX) = |a| σ(X).
+
+Si X est le gain algébrique d'un joueur, le jeu est **équitable** si E(X) = 0, **favorable** au joueur si E(X) > 0 et **défavorable** si E(X) < 0.
 
 Cas limite : a = 0 donne V(aX) = 0, car 0 × X est constante.
 :::
@@ -377,11 +380,11 @@ Cas limite : si l'on tire sans remise dans une urne, la probabilité de succès 
 :::
 
 ::: verifie À toi : cinq envois
-Cinq envois indépendants réussissent chacun avec la probabilité 0,7. Quelle est la probabilité d'exactement 4 réussites ?
+Cinq envois indépendants réussissent chacun avec la probabilité 0,6. Quelle est la probabilité d'exactement 4 réussites ?
 
 ---
 
-Le nombre de réussites suit ℬ(5 ; 0,7). p(X = 4) = C₅⁴ × 0,7⁴ × 0,3 = 5 × 0,2401 × 0,3 = 0,36015. Le facteur 5 compte les places possibles de l'unique échec.
+Le nombre de réussites suit ℬ(5 ; 0,6). p(X = 4) = C₅⁴ × 0,6⁴ × 0,4 = 5 × 0,1296 × 0,4 = 0,2592. Le facteur 5 compte les places possibles de l'unique échec.
 :::
 
 ::: retenir
@@ -390,11 +393,11 @@ Pour n épreuves identiques et indépendantes : p(X = k) = Cₙᵏ pᵏ(1 − p)
 
 ## 🌊 Variable continue : densité, loi uniforme et probabilités géométriques
 
-Un transfert de fichier se termine à un instant X, en secondes, compris entre 0 et 3, et les fins tardives sont plus probables que les précoces. X prend toutes les valeurs d'un intervalle : 1,2 s, 1,2037 s…
+Un transfert de fichier se termine à un instant X, en secondes, compris entre 0 et 3, et les fins tardives sont plus probables que les précoces : on modélise X par la densité f(t) = t²/9 sur [0 ; 3]. X prend toutes les valeurs d'un intervalle : 1,2 s, 1,2037 s…
 Quelle est la probabilité que X soit exactement 1 ? Et qu'il soit compris entre 1 et 2 ?
 
 ::: definition
-Une variable aléatoire est **continue** si elle peut prendre n'importe quelle valeur d'un intervalle [a ; b]. Sa **densité de probabilité** est une fonction f positive et continue sur [a ; b] telle que
+Une variable aléatoire est **continue** si elle peut prendre n'importe quelle valeur d'un intervalle, borné comme [a ; b] ou non borné comme [0 ; +∞[. Si X prend ses valeurs dans [a ; b], sa **densité de probabilité** est une fonction f positive et continue sur [a ; b] telle que
 $$ ∫ₐᵇ f(x)dx = 1 $$
 Pour a ≤ s ≤ t ≤ b, la probabilité p(s ≤ X ≤ t) est l'aire sous la courbe de f entre s et t :
 $$ p(s ≤ X ≤ t) = ∫ₛᵗ f(x)dx $$
@@ -421,7 +424,7 @@ La fonction de répartition est F(t) = p(X ≤ t) = ∫ₐᵗ f(x)dx.
 <text x="290" y="220" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">3</text>
 <path d="M46 40 L50 40" fill="none" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round"/>
 <text x="42" y="44" text-anchor="end" font-size="12" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">1</text>
-<text x="170.0" y="178" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">7/27</text>
+<text x="170.0" y="192" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">7/27</text>
 <text x="250.0" y="80.9" text-anchor="middle" font-size="15" fill="#0f6e56" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">f</text>
 </svg>
 :::
@@ -439,11 +442,33 @@ Sur la figure, la courbe est celle de f et la surface colorée est p(1 ≤ X ≤
 **Erreur : prendre la valeur f(1) pour une probabilité.** On écrirait p(X = 1) = 1/9, ce qui est faux. Une densité peut même dépasser 1 (la constante 2 sur [0 ; 1/2] est une densité) : seule l'aire est une probabilité, et p(X = a) = 0 pour une variable continue.
 :::
 
+Le métro passe toutes les 6 minutes : l'attente a-t-elle plus de chances d'être entre 1 et 2 minutes qu'entre 4 et 5 ? Si tous les instants se valent, la densité est constante.
+
 ::: definition
 La **loi uniforme** sur [a ; b] est la loi continue de densité constante f = 1/(b − a). Pour s et t dans [a ; b] :
 $$ p(s ≤ X ≤ t) = (t − s)/(b − a) $$
 Sa fonction de répartition vaut 0 si x < a, (x − a)/(b − a) si a ≤ x < b, et 1 si x ≥ b. Un point M choisi au hasard sur un segment suit cette loi : la probabilité ne dépend que des longueurs.
 :::
+
+::: figure Le segment [AB] mesure 10 : la partie colorée [3 ; 7] en mesure 4, donc la probabilité est le rapport des longueurs, 4/10
+<svg viewBox="0 0 260 90">
+<title>Segment AB de longueur 10 gradué de 0 à 10 ; la partie de 3 à 7 est colorée</title>
+<path d="M20 50 L240 50" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M86 50 L174 50" fill="none" stroke="#0f6e56" stroke-width="7" stroke-linecap="round"/>
+<path d="M20 44 L20 56" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<text x="20" y="74" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">0</text>
+<path d="M86 44 L86 56" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<text x="86" y="74" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">3</text>
+<path d="M174 44 L174 56" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<text x="174" y="74" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">7</text>
+<path d="M240 44 L240 56" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
+<text x="240" y="74" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">10</text>
+<text x="20" y="34" text-anchor="middle" font-size="13" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">A</text>
+<text x="240" y="34" text-anchor="middle" font-size="13" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">B</text>
+</svg>
+:::
+
+Sur la figure, x = AM varie de 0 à 10 et l'événement favorable est le morceau coloré.
 
 ::: exemple Un point au hasard sur un segment
 1. M est choisi au hasard sur [AB] avec AB = 10 : x = AM suit la loi uniforme sur [0 ; 10].
@@ -467,7 +492,7 @@ Une densité f est positive avec ∫ₐᵇ f(x)dx = 1 et p(s ≤ X ≤ t) = ∫�
 ## ⏳ Loi exponentielle, survie et algorithme
 
 Un site reçoit des visites, et le temps X entre deux visites consécutives, en minutes, suit la loi de densité f(x) = 0,5 e^(−0,5x) pour x ≥ 0 : les courts intervalles sont fréquents, les longs de plus en plus rares, sans borne.
-Quelle est la probabilité qu'on attende au moins 3 minutes ? Et entre 1 et 4 minutes ?
+Quelle est la probabilité qu'on attende au moins 3 minutes ? Et entre 2 et 5 minutes ?
 
 ::: definition
 Soit λ > 0. La **loi exponentielle de paramètre λ** a pour densité f(x) = λ e^(−λx) sur [0 ; +∞[. Si X la suit, pour 0 ≤ a ≤ b :
@@ -480,8 +505,8 @@ Ces formules viennent d'une intégrale : l'aire entre a et b est ∫ₐᵇ λe^(
 
 ::: exemple Les visites du site
 1. Ici λ = 0,5 : p(X ≥ 3) = e^(−0,5 × 3) = e^(−1,5) ≈ 0,223.
-2. p(1 ≤ X ≤ 4) = e^(−0,5) − e^(−2) ≈ 0,6065 − 0,1353 = 0,471.
-3. Sachant que l'on a déjà attendu 2 minutes, la probabilité d'attendre au moins 6 minutes est p(X ≥ 6/X ≥ 2) = p(X ≥ 6)/p(X ≥ 2) = e^(−3)/e^(−1) = e^(−2) ≈ 0,135, car (X ≥ 6) ⊂ (X ≥ 2) et la formule de la conditionnelle s'applique.
+2. p(2 ≤ X ≤ 5) = e^(−1) − e^(−2,5) ≈ 0,3679 − 0,0821 = 0,2858, soit environ 0,286.
+3. Sachant que l'on a déjà attendu 2 minutes, la probabilité que l'attente totale dure au moins 6 minutes est p(X ≥ 6 / X ≥ 2) = p(X ≥ 6)/p(X ≥ 2) = e^(−3)/e^(−1) = e^(−2) ≈ 0,135, car (X ≥ 6) ⊂ (X ≥ 2) et la formule de la conditionnelle s'applique.
 
 :::
 
@@ -498,8 +523,8 @@ afficher p
 ```
 
 ::: exemple Tracer le programme
-1. Loi exponentielle avec λ = 0,5, a = 1 et b = 4 : l'ordinateur évalue exp(−0,5) = 0,6065 puis exp(−2) = 0,1353.
-2. Il affiche p = 0,6065 − 0,1353 = 0,4712, le résultat de l'exemple précédent.
+1. Loi exponentielle avec λ = 0,5, a = 2 et b = 5 : l'ordinateur évalue exp(−1) = 0,3679 puis exp(−2,5) = 0,0821.
+2. Il affiche p = 0,3679 − 0,0821 = 0,2858, le résultat de l'exemple précédent.
 3. Pour une loi uniforme sur [0 ; 10] avec a = 2 et b = 5, p = (5 − 2)/(10 − 0) = 0,3. Écrire 1/(b − a) serait une faute : c'est la hauteur de la densité, pas une probabilité.
 
 :::
