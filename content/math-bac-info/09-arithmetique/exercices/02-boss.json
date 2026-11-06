@@ -7,27 +7,27 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Quelle égalité est la division euclidienne de −100 par −9 ?",
+      "prompt": "Sachant que 287025 = 635 × 452 + 5, quel est le reste de −287025 dans la division euclidienne par 635 ?",
       "options": [
         {
           "id": "a",
-          "text": "−100 = (−9) × 12 + 8"
+          "text": "630"
         },
         {
           "id": "b",
-          "text": "−100 = (−9) × 11 − 1"
+          "text": "447"
         },
         {
           "id": "c",
-          "text": "−100 = (−9) × 13 + 17"
+          "text": "5"
         },
         {
           "id": "d",
-          "text": "−100 = 9 × (−12) + 8"
+          "text": "−5"
         }
       ],
       "correctOption": "a",
-      "explanation": "Le reste doit vérifier 0 ≤ r < |−9| = 9 et le diviseur doit être −9. Avec q = 12 : (−9) × 12 = −108 et −100 − (−108) = 8, avec 0 ≤ 8 < 9 ✓. Les trois autres écritures sont des égalités vraies mais défectueuses : le reste −1 est négatif, le reste 17 dépasse 9, et la dernière divise par 9 au lieu de −9.",
+      "explanation": "On change les signes : −287025 = 635 × (−452) − 5. Le reste −5 est négatif ; on descend d'un multiple de 635 : −287025 = 635 × (−453) + 630, avec 0 ≤ 630 < 635 ✓. La valeur 5 est le reste de 287025, pas de −287025 ; −5 n'est pas un reste ; 447 est le reste de −287025 par 452 (−287025 = 452 × (−636) + 447), l'autre facteur.",
       "difficulty": 2
     },
     {
@@ -139,7 +139,7 @@
         },
         {
           "id": "c",
-          "text": "{(−3 + 4k ; 6 − 7k)}"
+          "text": "{(1 + 4k ; −1 − 7k)}"
         },
         {
           "id": "d",
@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "7 ∧ 4 = 1 : la relation 7 × (−1) + 4 × 2 = 1 multipliée par 3 donne la solution particulière (−3 ; 6), et 7 × (−3) + 4 × 6 = −21 + 24 = 3 ✓. Alors 7(x + 3) = −4(y − 6), Gauss donne 4 | x + 3, soit x = −3 + 4k, puis y = 6 − 7k. L'ensemble {(−1 + 4k ; 2 − 7k)} est celui de l'équation 7x + 4y = 1 (second membre non multiplié par 3) ; avec les coefficients échangés ou un signe faux, 7x + 4y ne reste pas égal à 3 quand k varie.",
+      "explanation": "7 ∧ 4 = 1 : la relation 7 × (−1) + 4 × 2 = 1 multipliée par 3 donne la solution particulière (−3 ; 6). Alors 7(x + 3) = −4(y − 6), Gauss donne 4 | x + 3, soit x = −3 + 4k et y = 6 − 7k. En remplaçant k par k + 1, la même famille s'écrit à partir de (1 ; −1) : {(1 + 4k ; −1 − 7k)} ✓ (contrôle : 7 − 4 = 3). L'ensemble {(−1 + 4k ; 2 − 7k)} est celui de 7x + 4y = 1 (second membre non multiplié par 3) ; avec les coefficients échangés ou un signe faux, 7x + 4y ne reste pas égal à 3 quand k varie.",
       "difficulty": 3
     }
   ]

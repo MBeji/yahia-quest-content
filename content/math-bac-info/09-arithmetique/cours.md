@@ -33,6 +33,7 @@ Soient a, b et c des entiers non nuls.
 - Si a divise b et b divise a, alors a = b ou a = −b.
 - Si a divise b et b divise c, alors a divise c (transitivité).
 - Si a divise b et a divise c, alors a divise nb + mc pour tous entiers relatifs n et m.
+- Si a divise b, alors ka divise kb pour tout entier k non nul.
 
 Cas limite : « a = b ou a = −b » ne donne pas toujours a = b : 3 divise −3 et −3 divise 3, sans que 3 = −3.
 :::
@@ -215,10 +216,10 @@ Soient n un entier naturel non nul et a, b, c, d des entiers relatifs tels que a
 ::: methode Reste de aᵏ modulo n
 
 1. Réduire la base : remplacer a par son reste modulo n (ou par −1 quand a ≡ −1 [n]).
-2. Calculer les restes de a, a², a³, … jusqu'à retrouver 1 : si le premier retour à 1 se produit en aᵖ, la période est p.
-3. Écrire k = pq + s avec 0 ≤ s < p, puis a^k = (a^p)^q × a^s ≡ a^s [n].
+2. Calculer les restes de a, a², a³, … jusqu'à retrouver un reste déjà obtenu ; si c'est 1 qui revient, en aᵖ, la période est p.
+3. Écrire k = pm + s avec 0 ≤ s < p, puis aᵏ = (aᵖ)ᵐ × aˢ ≡ aˢ [n].
 
-Cas limite : si k est un multiple de p, alors s = 0 et aᵏ ≡ 1 [n]. Si a ≡ −1 [n], alors aᵏ ≡ (−1)ᵏ [n], égal à 1 pour k pair et à −1 pour k impair.
+Cas limite : si k est un multiple de p, alors s = 0 et aᵏ ≡ 1 [n]. Si a ≡ −1 [n], alors aᵏ ≡ (−1)ᵏ [n], égal à 1 pour k pair et à −1 pour k impair. Si 1 ne revient jamais, on part de la première répétition : 2ⁿ modulo 10 donne 2, 4, 8, 6 puis 2⁵ ≡ 2, d'où 2ᵏ ≡ 2ˢ avec s ∈ {1 ; 2 ; 3 ; 4} et k ≡ s [4].
 :::
 
 ::: exemple Le chiffre des unités de 7²⁰²⁶ (reste modulo 10)
@@ -232,7 +233,7 @@ Cas limite : si k est un multiple de p, alors s = 0 et aᵏ ≡ 1 [n]. Si a ≡ 
 1. Un nombre de Mersenne est de la forme Mₙ = 2ⁿ − 1.
 2. 2³ = 8 ≡ 1 [7] car 7 = 2³ − 1. Donc 2¹⁵ = (2³)⁵ ≡ 1⁵ = 1 [7].
 3. Ainsi 7 divise 2¹⁵ − 1 = 32767, qui n'est pas premier : 32767 = 7 × 4681.
-4. Même raisonnement pour tout n = pq : 2ᵖ ≡ 1 [2ᵖ − 1], donc 2ⁿ = (2ᵖ)^q ≡ 1 et 2ᵖ − 1 divise 2ⁿ − 1.
+4. Même raisonnement pour tout n = pm : 2ᵖ ≡ 1 [2ᵖ − 1], donc 2ⁿ = (2ᵖ)ᵐ ≡ 1 et 2ᵖ − 1 divise 2ⁿ − 1.
 5. Donc, si 2ⁿ − 1 est premier, alors n est premier. La réciproque est fausse : 11 est premier, mais M₁₁ = 2047 = 23 × 89.
 
 :::
@@ -264,6 +265,7 @@ Un entier n s'écrit n = aₖ10ᵏ + … + a₁10 + a₀, où les aᵢ sont ses 
 | 8 et 125        | 1000 ≡ 0 [8] et [125]              | divisible si ses trois derniers chiffres le sont     |
 | 11              | 10 ≡ −1 [11], donc 10ᵏ ≡ (−1)ᵏ     | n ≡ a₀ − a₁ + a₂ − a₃ + … (somme alternée)           |
 | 7               | n = 10a + b = 7(a + b) + 3(a − 2b) | 7 divise n si et seulement si 7 divise a − 2b        |
+| 13              | 4n = 40a + 4b ≡ a + 4b [13]        | 13 divise n si et seulement si 13 divise a + 4b      |
 
 Dans la dernière ligne, b est le chiffre des unités et a le nombre formé par les autres chiffres.
 :::
@@ -277,7 +279,7 @@ Dans la dernière ligne, b est le chiffre des unités et a le nombre formé par 
 :::
 
 ::: piege Juger la divisibilité par 4 sur le dernier chiffre
-**Erreur : dire « 1326 est divisible par 4 puisqu'il finit par 6, un chiffre pair ».** Cela tente parce que 4 divise tous les nombres pairs de petite taille. Mais 100 ≡ 0 [4] ne dépend que de ce qui précède les deux derniers chiffres : il faut regarder 26. Or 26 = 4 × 6 + 2 n'est pas multiple de 4, donc 1326 ne l'est pas (1326 = 4 × 331 + 2).
+**Erreur : dire « 1326 est divisible par 4 puisqu'il finit par 6, un chiffre pair ».** Cela tente parce que la divisibilité par 2 se lit sur le dernier chiffre, et qu'on croit qu'il en va de même pour 4. Mais c'est 100 ≡ 0 [4] qui permet d'oublier les chiffres situés avant les deux derniers : il faut regarder 26 tout entier. Or 26 = 4 × 6 + 2 n'est pas multiple de 4, donc 1326 ne l'est pas (1326 = 4 × 331 + 2).
 :::
 
 Pourquoi le test de 7 est-il une équivalence ? Si 7 divise n = 7(a + b) + 3(a − 2b), il divise 3(a − 2b). Alors il divise 15(a − 2b) − 14(a − 2b) = a − 2b, par combinaison linéaire de deux multiples de 7. Réciproquement, si 7 divise a − 2b, il divise n.
@@ -292,11 +294,11 @@ Pourquoi le test de 7 est-il une équivalence ? Si 7 divise n = 7(a + b) + 3(a �
 :::
 
 ::: verifie
-Calcule la clé de l'ISBN 2-07-036822-?
+Calcule la clé de l'ISBN 2-07-036822-?, puis dis si 3857 est divisible par 7.
 
 ---
 
-Les neuf chiffres sont 2, 0, 7, 0, 3, 6, 8, 2, 2. Donc S = 2 + 0 + 21 + 0 + 15 + 36 + 56 + 16 + 18 = 164. Alors 164 = 11 × 14 + 10, le reste vaut 10 et la clé s'écrit X : le code complet est 2-07-036822-X.
+Les neuf chiffres sont 2, 0, 7, 0, 3, 6, 8, 2, 2. Donc S = 2 + 0 + 21 + 0 + 15 + 36 + 56 + 16 + 18 = 164. Alors 164 = 11 × 14 + 10, le reste vaut 10 et la clé s'écrit X : le code complet est 2-07-036822-X. Pour 7 : 3857 = 10 × 385 + 7, donc a − 2b = 385 − 14 = 371, puis 37 − 2 × 1 = 35 = 7 × 5 ; 7 divise donc 3857 (3857 = 7 × 551).
 :::
 
 ::: retenir
@@ -354,12 +356,12 @@ Après l'étape 4, la ligne suivante est (a ; b) = (18 ; 0) : la boucle s'arrêt
 ::: propriete
 Soient a et b deux entiers non nuls et k un entier non nul.
 
-- (ka) ∧ (kb) = |k| (a ∧ b).
-- Les diviseurs communs de a et b sont exactement les diviseurs de a ∧ b.
+- (ka) ∧ (kb) = |k| (a ∧ b) et (ka) ∨ (kb) = |k| (a ∨ b).
+- Les diviseurs communs de a et b sont exactement les diviseurs de a ∧ b, et leurs multiples communs exactement les multiples de a ∨ b.
 - Si d = a ∧ b, alors a = da′ et b = db′ avec a′ ∧ b′ = 1 ; réciproquement, une telle écriture avec d > 0 donne d = a ∧ b.
 - (a ∧ b) × (a ∨ b) = |ab|.
 
-Cas limite : si b divise a, alors a ∧ b = |b| et a ∨ b = |a|. Pour les signes, a ∧ b = |a| ∧ |b|.
+Cas limite : si b divise a, alors a ∧ b = |b| et a ∨ b = |a|. Pour les signes, a ∧ b = |a| ∧ |b|. Enfin a ∧ 0 = |a| : c'est pourquoi la boucle s'arrête sur (a ; 0) et affiche a.
 :::
 
 ::: exemple Le PPCM de 252 et 198, et le sens de a′ et b′
@@ -383,7 +385,7 @@ a ∧ b est le dernier reste non nul de l'algorithme d'Euclide ; a ∧ b = b ∧
 
 ## 🔗 Le théorème de Bézout et l'algorithme d'Euclide étendu
 
-Deux bidons de 35 L et de 13 L servent à mesurer un seul litre : on remplit le premier u fois et on le vide, on remplit le second v fois, et la différence des volumes versés est de 1 L.
+Avec un bidon de 35 L et un bidon de 13 L, on verse dans une cuve, ou on en retire, des bidons pleins : u bidons de 35 L (retirés si u < 0) et v bidons de 13 L. Peut-on laisser exactement 1 L dans la cuve ?
 Cela revient à chercher des entiers relatifs u et v tels que 35u + 13v = 1. Un tel couple existe-t-il, et comment le trouve-t-on ?
 
 ::: propriete
@@ -403,7 +405,11 @@ Cela revient à chercher des entiers relatifs u et v tels que 35u + 13v = 1. Un 
 
 Cette remontée se programme sans réécrire de formule : on garde pour chaque reste rₖ un couple (uₖ ; vₖ) tel que a × uₖ + b × vₖ = rₖ. On part de r₀ = a avec (1 ; 0) et de r₁ = b avec (0 ; 1), et pour chaque quotient qₖ de la division de rₖ₋₂ par rₖ₋₁ :
 
-$$ rₖ = rₖ₋₂ − qₖ rₖ₋₁, uₖ = uₖ₋₂ − qₖ uₖ₋₁, vₖ = vₖ₋₂ − qₖ vₖ₋₁ $$
+$$ rₖ = rₖ₋₂ − qₖ rₖ₋₁ $$
+
+$$ uₖ = uₖ₋₂ − qₖ uₖ₋₁ $$
+
+$$ vₖ = vₖ₋₂ − qₖ vₖ₋₁ $$
 
 Trace pour a = 35 et b = 13 (chaque ligne se vérifie : 35uₖ + 13vₖ = rₖ) :
 
@@ -493,11 +499,11 @@ La simplification d'une divisibilité n'est pas toujours permise. Quelle conditi
 :::
 
 ::: verifie
-Résous 4x + 6y = 10 dans ℤ × ℤ.
+Résous 6x + 10y = 8 dans ℤ × ℤ.
 
 ---
 
-4 ∧ 6 = 2 divise 10 : on divise par 2 et l'on résout 2x + 3y = 5. Une solution particulière est (1 ; 1), car 2 + 3 = 5. Alors 2(x − 1) = −3(y − 1), et comme 2 ∧ 3 = 1, Gauss donne 3 | x − 1 : x = 1 + 3k, puis y = 1 − 2k. Contrôle : k = 1 donne (4 ; −1) et 16 − 6 = 10 ✓. L'ensemble des solutions est {(1 + 3k ; 1 − 2k), k ∈ ℤ}.
+6 ∧ 10 = 2 divise 8 : on divise par 2 et l'on résout 3x + 5y = 4. Une solution particulière est (3 ; −1), car 9 − 5 = 4. Alors 3(x − 3) = −5(y + 1), et comme 3 ∧ 5 = 1, Gauss donne 5 | x − 3 : x = 3 + 5k, puis y = −1 − 3k. Contrôle : k = −1 donne (−2 ; 2) et −12 + 20 = 8 ✓. L'ensemble des solutions est {(3 + 5k ; −1 − 3k), k ∈ ℤ}.
 :::
 
 ::: retenir

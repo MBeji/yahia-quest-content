@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "Les congruences s'additionnent : a + b ≡ 5 + (−3) = 2 [12] ✓. Pour la différence, a − b ≡ 5 − (−3) = 8 [12], pas 2 : le signe de b a été oublié. Pour le produit, ab ≡ 5 × (−3) = −15 ≡ 9 [12], alors que 15 ≡ 3 [12]. Pour le carré, a² ≡ 25 ≡ 1 [12], pas 10.",
+      "explanation": "Les congruences s'additionnent : a + b ≡ 5 + (−3) = 2 [12] ✓. Pour la différence, a − b ≡ 5 − (−3) = 8 [12], pas 2 : le signe de b a été oublié. Pour le produit, ab ≡ 5 × (−3) = −15 ≡ 9 [12], alors que 15 ≡ 3 [12]. Pour le carré, a² ≡ 25 ≡ 1 [12], pas 10 : 10 = 2 × 5 double a au lieu de l'élever au carré.",
       "difficulty": 1
     },
     {
@@ -118,27 +118,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Pour un entier k, 15 divise 8k. Lequel de ces énoncés est vrai ?",
+      "prompt": "Lequel de ces nombres est divisible par 7 ?",
       "options": [
         {
           "id": "a",
-          "text": "8 divise k"
+          "text": "1311"
         },
         {
           "id": "b",
-          "text": "15 et k sont premiers entre eux"
+          "text": "1312"
         },
         {
           "id": "c",
-          "text": "120 divise k"
+          "text": "1315"
         },
         {
           "id": "d",
-          "text": "15 divise k"
+          "text": "1316"
         }
       ],
       "correctOption": "d",
-      "explanation": "15 ∧ 8 = 1, car 15 = 8 × 1 + 7, 8 = 7 × 1 + 1. Le lemme de Gauss donne alors : 15 divise 8k, donc 15 divise k ✓. Les autres énoncés échouent pour k = 15, où 15 divise bien 8k = 120 : 8 ne divise pas 15, 120 ne divise pas 15, et 15 ∧ 15 = 15 ≠ 1.",
+      "explanation": "On écrit 1316 = 10 × 131 + 6 : a − 2b = 131 − 12 = 119 = 7 × 17, donc 7 divise 1316 (1316 = 7 × 188) ✓. Le nombre 1311 passe le faux test a + 2b (131 + 2 = 133 = 7 × 19) mais laisse le reste 2 ; 1315 passe le faux test a − b (131 − 5 = 126) mais laisse le reste 6 ; 1312 a une somme des chiffres égale à 7, ce qui ne prouve rien pour 7 (reste 3).",
       "difficulty": 2
     }
   ]

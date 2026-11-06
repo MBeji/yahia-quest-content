@@ -11,7 +11,7 @@
       "options": [
         {
           "id": "a",
-          "text": "2"
+          "text": "5"
         },
         {
           "id": "b",
@@ -19,15 +19,15 @@
         },
         {
           "id": "c",
-          "text": "5"
+          "text": "3"
         },
         {
           "id": "d",
-          "text": "7"
+          "text": "2"
         }
       ],
-      "correctOption": "c",
-      "explanation": "Un multiple de 7 s'écrit 7k avec k entier : −21 = 7 × (−3), −14 = 7 × (−2), 0 = 7 × 0, 7 = 7 × 1 et 28 = 7 × 4, soit 5 éléments ✓. Les nombres −10 et 15 n'en sont pas. La valeur 2 ne garde que les multiples positifs ; la valeur 4 oublie 0, qui est multiple de tout entier ; la valeur 7 compte tout l'ensemble.",
+      "correctOption": "a",
+      "explanation": "Un multiple de 7 s'écrit 7k avec k entier : −21 = 7 × (−3), −14 = 7 × (−2), 0 = 7 × 0, 7 = 7 × 1 et 28 = 7 × 4, soit 5 éléments ✓. Les nombres −10 et 15 n'en sont pas. La valeur 3 ne garde que les multiples positifs ou nuls (0, 7, 28) ; la valeur 2 ne garde que les multiples strictement positifs ; la valeur 4 oublie 0, qui est multiple de tout entier.",
       "difficulty": 1
     },
     {
@@ -148,27 +148,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Sachant que a ∧ b = 12, que vaut (5a) ∧ (5b) ?",
+      "prompt": "Sachant que 14 ∧ 21 = 7, que vaut (−42) ∧ (−63) ?",
       "options": [
         {
           "id": "a",
-          "text": "300"
+          "text": "−21"
         },
         {
           "id": "b",
-          "text": "60"
+          "text": "3"
         },
         {
           "id": "c",
-          "text": "17"
+          "text": "7"
         },
         {
           "id": "d",
-          "text": "12"
+          "text": "21"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Pour tout entier non nul k, (ka) ∧ (kb) = |k| (a ∧ b). Avec k = 5, on obtient 5 × 12 = 60 ✓. La valeur 12 oublie que le PGCD est multiplié par 5 ; la valeur 17 l'additionne ; la valeur 300 multiplie par 5 une seconde fois.",
+      "correctOption": "d",
+      "explanation": "−42 = (−3) × 14 et −63 = (−3) × 21 : avec k = −3, (ka) ∧ (kb) = |k| (a ∧ b) = 3 × 7 = 21 ✓. La valeur −21 oublie la valeur absolue : un PGCD est toujours positif ; la valeur 7 oublie le facteur k ; la valeur 3 garde |k| sans le PGCD.",
       "difficulty": 2
     }
   ]

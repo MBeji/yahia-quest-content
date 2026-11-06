@@ -18,35 +18,35 @@
         },
         {
           "id": "d",
-          "text": "6 divise 5a − 2b + 3"
+          "text": "30 divise 5a − 2b"
         }
       ],
       "correctOption": "c",
-      "explanation": "On écrit a = 6p et b = 6q avec p et q entiers, donc 5a − 2b = 6(5p − 2q) : 6 divise cette combinaison linéaire ✓. Les autres affirmations tombent sur un contre-exemple : pour a = b = 6, la combinaison vaut 18, qui n'est multiple ni de 12 ni de 36, et 18 + 3 = 21 n'est pas multiple de 6. Un multiple de 6 reste multiple de 6 après une combinaison linéaire, mais pas après l'ajout de 3.",
+      "explanation": "On écrit a = 6p et b = 6q avec p et q entiers, donc 5a − 2b = 6(5p − 2q) : 6 divise cette combinaison linéaire ✓. Les autres affirmations tombent sur un contre-exemple : pour a = b = 6, la combinaison vaut 18, qui n'est multiple ni de 12, ni de 30, ni de 36. Un multiple de 6 reste multiple de 6 après une combinaison linéaire, mais le coefficient 5 ne multiplie pas le diviseur.",
       "difficulty": 1
     },
     {
-      "prompt": "Quelle égalité est la division euclidienne de −39 par 7 ?",
+      "prompt": "Quelle égalité est la division euclidienne de −47 par 6 ?",
       "options": [
         {
           "id": "a",
-          "text": "−39 = 7 × (−7) + 10"
+          "text": "−47 = 6 × (−9) + 7"
         },
         {
           "id": "b",
-          "text": "−39 = 7 × (−6) + 3"
+          "text": "−47 = 6 × (−8) + 1"
         },
         {
           "id": "c",
-          "text": "−39 = 7 × (−5) − 4"
+          "text": "−47 = 6 × (−7) − 5"
         },
         {
           "id": "d",
-          "text": "−39 = 7 × (−5) + 4"
+          "text": "−47 = 6 × (−7) + 5"
         }
       ],
       "correctOption": "b",
-      "explanation": "Le multiple de 7 situé juste en dessous de −39 est −42 = 7 × (−6), et −39 − (−42) = 3, avec 0 ≤ 3 < 7 ✓. L'écriture avec le reste 10 est vraie mais 10 dépasse 7 ; celle avec le reste −4 est vraie mais −4 est négatif. La dernière écriture est fausse : 7 × (−5) + 4 = −31, et 4 est le reste de 39, pas celui de −39.",
+      "explanation": "Le multiple de 6 situé juste en dessous de −47 est −48 = 6 × (−8), et −47 − (−48) = 1, avec 0 ≤ 1 < 6 ✓. L'écriture avec le reste 7 est vraie, mais 7 dépasse 6 ; celle avec le reste −5 est vraie, mais −5 est négatif. L'écriture 6 × (−7) + 5 est fausse : elle vaut −37, et 5 est le reste de 47, pas celui de −47.",
       "difficulty": 1
     },
     {
@@ -142,7 +142,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "17 ≡ −1 [18], donc 17²⁰²⁷ ≡ (−1)²⁰²⁷ = −1 [18], car l'exposant est impair. Alors 17²⁰²⁷ + 1 ≡ −1 + 1 = 0 [18] : le reste est 0 ✓. Le reste 2 vient de (−1)²⁰²⁷ = 1 (exposant pris pour pair) ; le reste 1 oublie d'ajouter 1 à ce résultat ; le reste 17 garde la base sans la réduire.",
+      "explanation": "17 ≡ −1 [18], donc 17²⁰²⁷ ≡ (−1)²⁰²⁷ = −1 [18], car l'exposant est impair. Alors 17²⁰²⁷ + 1 ≡ −1 + 1 = 0 [18] : le reste est 0 ✓. Le reste 2 vient de (−1)²⁰²⁷ lu comme 1 (exposant pris pour pair) ; le reste 1 vient de la même erreur sans ajouter le + 1 ; le reste 17 est celui de 17²⁰²⁷ seul (17 ≡ −1), le + 1 oublié.",
       "difficulty": 2
     },
     {
