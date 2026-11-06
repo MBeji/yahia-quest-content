@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des parts et des aires",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Que vaut ∫₁² x ln x dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 ln 2 − 3/2"
+        },
+        {
+          "id": "b",
+          "text": "2 ln 2 − 3/4"
+        },
+        {
+          "id": "c",
+          "text": "2 ln 2"
+        },
+        {
+          "id": "d",
+          "text": "2 ln 2 + 3/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose u = ln x et v′ = x, donc u′ = 1/x et v = x²/2. Alors ∫₁² x ln x dx = [(x²/2)ln x]₁² − ∫₁² (x/2)dx = 2 ln 2 − [x²/4]₁² = 2 ln 2 − 3/4 ✓. La valeur 2 ln 2 s'arrête au crochet. La valeur 2 ln 2 − 3/2 intègre x au lieu de x/2 : elle oublie le facteur 1/2 de v. La valeur 2 ln 2 + 3/4 écrit « plus » devant l'intégrale restante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On pose I = ∫₀² dx/(x² + 2). Pour x de [0 ; 2], on a 2 ≤ x² + 2 ≤ 6. Quel encadrement de I en déduit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/12 ≤ I ≤ 1/4"
+        },
+        {
+          "id": "b",
+          "text": "1/6 ≤ I ≤ 1/2"
+        },
+        {
+          "id": "c",
+          "text": "1/3 ≤ I ≤ 1"
+        },
+        {
+          "id": "d",
+          "text": "2 ≤ I ≤ 6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'inverse renverse l'ordre : 1/6 ≤ 1/(x² + 2) ≤ 1/2 sur [0 ; 2]. On intègre sur un intervalle de longueur 2 : 2 × 1/6 ≤ I ≤ 2 × 1/2, soit 1/3 ≤ I ≤ 1 ✓. L'encadrement 1/6 ≤ I ≤ 1/2 oublie la longueur. L'encadrement 1/12 ≤ I ≤ 1/4 divise par la longueur. L'encadrement 2 ≤ I ≤ 6 encadre le dénominateur au lieu de son inverse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x³ sur [0 ; 2]. L'égalité de la moyenne affirme qu'il existe c de [0 ; 2] tel que ∫₀² f(x)dx = (2 − 0)f(c). Que vaut c ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "∛2"
+        },
+        {
+          "id": "c",
+          "text": "√2"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a ∫₀² x³ dx = [x⁴/4]₀² = 4, donc 4 = 2c³, soit c³ = 2 et c = ∛2 ≈ 1,26, qui est dans [0 ; 2] ✓. Le milieu 1 est tentant, mais f(1) = 1 ≠ 2. La valeur √2 résout c² = 2, comme si f était x². La valeur 2 confond la valeur moyenne f̄ = 2 avec le réel c : f(2) = 8.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On admet que I = ∫₀¹ eˣ/(eˣ + 1)dx = ln((e + 1)/2). Soit J = ∫₀¹ 1/(eˣ + 1)dx. Que vaut J ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 − ln((e + 1)/2)"
+        },
+        {
+          "id": "b",
+          "text": "ln((e + 1)/2) − 1"
+        },
+        {
+          "id": "c",
+          "text": "ln((e + 1)/2)"
+        },
+        {
+          "id": "d",
+          "text": "1 + ln((e + 1)/2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par linéarité, I + J = ∫₀¹ (eˣ + 1)/(eˣ + 1)dx = ∫₀¹ 1dx = 1, donc J = 1 − ln((e + 1)/2) ≈ 0,38 ✓. Contrôle : sur [0 ; 1], 1/(e + 1) ≤ 1/(eˣ + 1) ≤ 1/2, donc J est entre 0,26 et 0,5. L'écriture ln((e + 1)/2) − 1 ≈ −0,38 est négative. Les valeurs ln((e + 1)/2) ≈ 0,62 et 1 + ln((e + 1)/2) ≈ 1,62 dépassent 0,5.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans Iₙ₊₁ = ∫₀¹ xⁿ⁺¹ eˣ dx, on intègre par parties avec u(x) = xⁿ⁺¹ et v′(x) = eˣ. Quelle relation obtient-on avec Iₙ = ∫₀¹ xⁿ eˣ dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iₙ₊₁ = e − (n + 1)Iₙ"
+        },
+        {
+          "id": "b",
+          "text": "Iₙ₊₁ = e + (n + 1)Iₙ"
+        },
+        {
+          "id": "c",
+          "text": "Iₙ₊₁ = e − Iₙ"
+        },
+        {
+          "id": "d",
+          "text": "Iₙ₊₁ = (n + 1)Iₙ − e"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a u′(x) = (n + 1)xⁿ et v(x) = eˣ. Le crochet [xⁿ⁺¹eˣ]₀¹ vaut e (le terme en 0 est nul), d'où Iₙ₊₁ = e − (n + 1)∫₀¹ xⁿ eˣ dx = e − (n + 1)Iₙ ✓. Le signe « plus » ignore le moins de la formule. La relation avec e − Iₙ oublie le facteur n + 1, qui vient de la dérivée de xⁿ⁺¹. La dernière est l'opposée de la bonne relation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour λ > 0, on note A(λ) l'aire, en u.a, de la partie du plan limitée par les courbes de f(x) = e^{−x} et g(x) = e^{−2x} et par les droites x = 0 et x = λ. Quelle est la limite de A(λ) quand λ tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x ≥ 0, e^{−2x} ≤ e^{−x}, donc A(λ) = ∫₀^λ (e^{−x} − e^{−2x})dx = [−e^{−x} + e^{−2x}/2]₀^λ = 1/2 − e^{−λ} + e^{−2λ}/2, qui tend vers 1/2 ✓. La limite 0 confond « les courbes tendent vers 0 » et « l'aire tend vers 0 ». La limite 1 est l'aire sous f seule : on a oublié de retrancher celle sous g, qui vaut 1/2. La limite +∞ suppose qu'une partie illimitée a une aire infinie.",
+      "difficulty": 3
+    }
+  ]
+}

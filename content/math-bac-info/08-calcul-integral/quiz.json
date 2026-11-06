@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Calcul intégral",
+  "questions": [
+    {
+      "prompt": "Laquelle de ces intégrales existe, c'est-à-dire a un sens ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "∫₋₁¹ dx/x"
+        },
+        {
+          "id": "b",
+          "text": "∫₀³ dx/(x − 2)"
+        },
+        {
+          "id": "c",
+          "text": "∫₋₃⁰ dx/(x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "∫₃⁵ dx/(x − 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une intégrale ∫ₐᵇ f(x)dx n'a de sens que si f est continue entre a et b. Sur [3 ; 5], x − 2 ≥ 1 : la fonction x ↦ 1/(x − 2) y est continue et l'intégrale vaut [ln(x − 2)]₃⁵ = ln 3 − ln 1 = ln 3 ✓. Dans les trois autres, une valeur interdite se trouve entre les bornes : 0 pour [−1 ; 1], 2 pour [0 ; 3] et −1 pour [−3 ; 0]. La formule F(b) − F(a) y serait écrite à travers un point où f n'existe pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "f est continue sur ℝ et f(x) ≥ 0 pour tout x de [2 ; 5]. Que peut-on dire de ∫₅² f(x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est positive ou nulle"
+        },
+        {
+          "id": "b",
+          "text": "Elle est négative ou nulle"
+        },
+        {
+          "id": "c",
+          "text": "Elle est nulle"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut pas conclure"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Échanger les bornes change le signe : ∫₅² f(x)dx = −∫₂⁵ f(x)dx. Comme f ≥ 0 sur [2 ; 5] et 2 ≤ 5, ∫₂⁵ f(x)dx ≥ 0 par positivité, donc ∫₅² f(x)dx ≤ 0 ✓. Dire « positive » oublie que les bornes sont dans l'ordre décroissant. Dire « nulle » confond avec des bornes égales. Le signe est pourtant connu sans connaître f.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour primitiver f(x) = x² e^{x³}, on reconnaît la forme u′e^u avec u(x) = x³. Quelle est une primitive de f sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/3)e^{x³}"
+        },
+        {
+          "id": "b",
+          "text": "e^{x³}"
+        },
+        {
+          "id": "c",
+          "text": "3e^{x³}"
+        },
+        {
+          "id": "d",
+          "text": "x³e^{x³}/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec u(x) = x³, u′(x) = 3x², donc f(x) = (1/3)u′(x)e^{u(x)} et une primitive est (1/3)e^{x³} ✓ : en dérivant, (1/3) × 3x² e^{x³} = f(x). La primitive e^{x³} n'a pas compensé le facteur et donne 3f. La primitive 3e^{x³} compense dans le mauvais sens et donne 9f. La primitive x³e^{x³}/3 primitive chaque facteur séparément, ce qui ne marche pas pour un produit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "f est continue, positive et décroissante sur [a ; b], partagé en n intervalles de même longueur. Sur chaque intervalle, quelle hauteur donne un rectangle « par défaut », situé sous la courbe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La valeur de f à l'extrémité gauche"
+        },
+        {
+          "id": "b",
+          "text": "La valeur de f à l'extrémité droite"
+        },
+        {
+          "id": "c",
+          "text": "La valeur de f au milieu"
+        },
+        {
+          "id": "d",
+          "text": "La valeur moyenne de f"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme f est décroissante, son minimum sur un intervalle est atteint à l'extrémité droite : un rectangle de cette hauteur reste sous la courbe ✓. La hauteur prise à gauche est le maximum et donne un rectangle par excès. La hauteur au milieu donne une valeur approchée, sans garantie d'être sous la courbe. La valeur moyenne de f est souvent supérieure au minimum, donc le rectangle peut dépasser la courbe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "f et g sont continues sur ℝ, avec ∫₀³ f(x)dx = 5 et ∫₀³ g(x)dx = −2. Que vaut ∫₃⁰ (2f(x) − 3g(x))dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "−4"
+        },
+        {
+          "id": "d",
+          "text": "−16"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par linéarité, ∫₀³ (2f − 3g) = 2 × 5 − 3 × (−2) = 10 + 6 = 16. Les bornes sont échangées, donc ∫₃⁰ (2f − 3g) = −16 ✓. La valeur 16 oublie l'échange des bornes. La valeur 4 additionne 2f et 3g (10 − 6) et oublie l'échange. La valeur −4 additionne aussi 2f et 3g mais échange bien les bornes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On calcule ∫₀¹ x e^{3x}dx par parties, avec u(x) = x et v′(x) = e^{3x}. Après le crochet, quelle intégrale reste-t-il, avec son signe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "− ∫₀¹ (1/3)e^{3x}dx"
+        },
+        {
+          "id": "b",
+          "text": "+ ∫₀¹ (1/3)e^{3x}dx"
+        },
+        {
+          "id": "c",
+          "text": "− ∫₀¹ e^{3x}dx"
+        },
+        {
+          "id": "d",
+          "text": "− ∫₀¹ 3e^{3x}dx"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a u′(x) = 1 et v(x) = e^{3x}/3, donc la formule donne [x e^{3x}/3]₀¹ − ∫₀¹ 1 × e^{3x}/3 dx ✓. Le signe devant l'intégrale restante est « moins ». Le terme à intégrer utilise une primitive de v′ : e^{3x}/3, et non e^{3x} (facteur 1/3 oublié) ni 3e^{3x}, qui est la dérivée de v′.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une fonction f continue sur [1 ; 4] a pour valeur moyenne 6 sur cet intervalle. Que vaut ∫₁⁴ f(x)dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "24"
+        },
+        {
+          "id": "d",
+          "text": "30"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La valeur moyenne vaut (1/(b − a))∫ₐᵇ f, donc ∫₁⁴ f = f̄ × (b − a) = 6 × 3 = 18 ✓. La valeur 2 divise par la longueur 3 au lieu de multiplier. La valeur 24 multiplie par la borne 4 au lieu de la longueur. La valeur 30 multiplie par la somme des bornes 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "f est continue et négative sur [1 ; 4], avec ∫₁⁴ f(x)dx = −7. Quelle est, en u.a, l'aire de la partie limitée par la courbe de f, l'axe des abscisses et les droites x = 1 et x = 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−7"
+        },
+        {
+          "id": "b",
+          "text": "7/3"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour f ≤ 0, l'aire est −∫ₐᵇ f(x)dx = 7 u.a ✓. Une aire n'est jamais négative : −7 est l'intégrale, pas l'aire. La valeur 7/3 divise par la longueur 3, ce qui donne la valeur moyenne en valeur absolue. La valeur 21 multiplie par la longueur 3.",
+      "difficulty": 2
+    }
+  ]
+}
