@@ -2753,8 +2753,8 @@ pas d'exercice résolu dans le cours.
 
 ### Apprendre à chercher (p.157)
 
-- **Situation 1** : Iₙ = (1/n!)∫₀¹ (1 − x)ⁿ eˣ dx sur IN* [« la suite la suite » sic]. 1) I₁, I₂ ; 2) a) Iₙ₊₁ = Iₙ + 1/(n + 1)! ;
-  b) pour x ∈ [0,1], 0 ≤ 1 − x ≤ 1 ; c) (Iₙ) positive et croissante ; 3) a) 0 ≤ Iₙ ≤ (e − 1)/n! (« On pourra utiliser
+- **Situation 1** : Iₙ = (1/n!)∫₀¹ (1 − x)ⁿ eˣ dx sur IN* [« la suite la suite » sic]. 1) I₁, I₂ ; 2) a) Iₙ₊₁ = Iₙ + 1/(n + 1)! [sic ? une intégration par parties donne Iₙ₊₁ = Iₙ − 1/(n + 1)!, vérifié à l'image p.157 le 2026-11-06] ;
+  b) pour x ∈ [0,1], 0 ≤ 1 − x ≤ 1 ; c) (Iₙ) positive et croissante [sic ? décroissante avec la relation corrigée ; ne pas reprendre tel quel] ; 3) a) 0 ≤ Iₙ ≤ (e − 1)/n! (« On pourra utiliser
   2)b) ») ; b) limite de (Iₙ).
 - **Situation 2** : **A)** f(x) = 1/(1 + x²), D = {M(x, y) / 0 ≤ x ≤ 1 et 0 ≤ y ≤ f(x)} (figure à rectangles, ordonnées
   1, 4/5, 1/2). 1) subdivision [0, 1/2], [1/2, 1] : montrer 13/20 < aire(D) < 9/10 ; 2) a) quatre intervalles

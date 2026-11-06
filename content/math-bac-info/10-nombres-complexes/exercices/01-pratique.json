@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Les premiers pas dans ℂ",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle est la partie réelle du nombre z = 2i(3 − 4i) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−8"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "6i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On développe : 2i(3 − 4i) = 6i − 8i² = 8 + 6i, car i² = −1. La partie réelle est donc 8 ✓. La valeur −8 vient de i² = +1, qui donnerait 6i − 8. La valeur 6 est la partie imaginaire. Quant à 6i, ce n'est pas un réel : la partie imaginaire est le coefficient de i, sans le i.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour quelle valeur du réel x le nombre (2x − 6) + i(x² − 4) est-il imaginaire pur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2 ou −2"
+        },
+        {
+          "id": "c",
+          "text": "−3"
+        },
+        {
+          "id": "d",
+          "text": "Aucun réel x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un nombre est imaginaire pur si sa partie réelle est nulle : 2x − 6 = 0 donne x = 3, et la partie imaginaire vaut alors 9 − 4 = 5 ✓. La réponse « 2 ou −2 » annule la partie imaginaire : elle rend le nombre réel, non imaginaire pur. La valeur −3 résout 2x + 6 = 0, avec une erreur de signe. La réponse « Aucun réel x » confond imaginaire pur et nul : exiger aussi x² − 4 = 0 rend le système impossible.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le module du nombre 8 − 15i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17"
+        },
+        {
+          "id": "b",
+          "text": "23"
+        },
+        {
+          "id": "c",
+          "text": "289"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "|8 − 15i| = √(8² + (−15)²) = √(64 + 225) = √289 = 17 ✓. La valeur 7 soustrait 15 − 8. La valeur 23 additionne 8 + 15 au lieu de prendre la racine de la somme des carrés. La valeur 289 s'arrête à a² + b² et oublie la racine carrée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la forme algébrique de 1/(3 + 4i) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3 + 4i)/25"
+        },
+        {
+          "id": "b",
+          "text": "(3 − 4i)/5"
+        },
+        {
+          "id": "c",
+          "text": "(3 − 4i)/7"
+        },
+        {
+          "id": "d",
+          "text": "(3 − 4i)/25"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On multiplie par le conjugué 3 − 4i : (3 + 4i)(3 − 4i) = 9 + 16 = 25, donc 1/(3 + 4i) = (3 − 4i)/25 ✓. Contrôle : (3 + 4i)(3 − 4i)/25 = 1. La réponse avec 5 divise par le module au lieu de son carré. La réponse avec 7 additionne 3 + 4 au lieu de 9 + 16. La réponse (3 + 4i)/25 oublie de conjuguer le numérateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit z un nombre complexe non nul. Les points M(z) et N(−z̄) sont symétriques par rapport à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "l'axe réel"
+        },
+        {
+          "id": "b",
+          "text": "l'axe imaginaire"
+        },
+        {
+          "id": "c",
+          "text": "l'origine O"
+        },
+        {
+          "id": "d",
+          "text": "la droite d'équation y = x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour z = a + ib, −z̄ = −(a − ib) = −a + ib : l'ordonnée est conservée et l'abscisse change de signe, donc N est le symétrique de M par rapport à l'axe imaginaire ✓. Le symétrique par rapport à l'axe réel a pour affixe z̄ = a − ib, et celui par rapport à O a pour affixe −z = −a − ib. La droite d'équation y = x échangerait a et b, ce que ne fait pas −z̄.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelles sont les solutions de l'équation z² + 2z + 10 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 ± 3i"
+        },
+        {
+          "id": "b",
+          "text": "−1 ± 6i"
+        },
+        {
+          "id": "c",
+          "text": "1 ± 3i"
+        },
+        {
+          "id": "d",
+          "text": "−2 ± 6i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Δ = 4 − 40 = −36 = (6i)², donc z = (−2 ± 6i)/2 = −1 ± 3i ✓, deux solutions conjuguées puisque les coefficients sont réels. Contrôle : leur somme vaut −2 et leur produit (−1)² + 3² = 10 ✓. La réponse −2 ± 6i oublie de diviser par 2a = 2. La réponse −1 ± 6i ne divise que la partie réelle. La réponse 1 ± 3i oublie le signe de −b.",
+      "difficulty": 2
+    }
+  ]
+}

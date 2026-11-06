@@ -1,0 +1,175 @@
+{
+  "title": "⭐ Exercice : Les premiers pas d'Euclide",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Combien d'éléments de l'ensemble {−21 ; −14 ; −10 ; 0 ; 7 ; 15 ; 28} sont des multiples de 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un multiple de 7 s'écrit 7k avec k entier : −21 = 7 × (−3), −14 = 7 × (−2), 0 = 7 × 0, 7 = 7 × 1 et 28 = 7 × 4, soit 5 éléments ✓. Les nombres −10 et 15 n'en sont pas. La valeur 3 ne garde que les multiples positifs ou nuls (0, 7, 28) ; la valeur 2 ne garde que les multiples strictement positifs ; la valeur 4 oublie 0, qui est multiple de tout entier.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un code ISBN-10 commence par 2-84-023567-?. La clé est le reste dans la division par 11 de S = a₁ + 2a₂ + … + 9a₉. Quelle est cette clé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "S = 2×1 + 8×2 + 4×3 + 0×4 + 2×5 + 3×6 + 5×7 + 6×8 + 7×9 = 2 + 16 + 12 + 0 + 10 + 18 + 35 + 48 + 63 = 204 = 11 × 18 + 6, donc la clé est 6 ✓. La valeur 4 vient de la simple somme des chiffres, 37 = 11 × 3 + 4. La valeur 1 vient de poids pris à l'envers (9 à 1), qui donnent 166. La valeur 2 vient de poids décalés (0 à 8), qui donnent 167.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque entier à son reste dans la division euclidienne par 6.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "18"
+        },
+        {
+          "id": "l2",
+          "text": "25"
+        },
+        {
+          "id": "l3",
+          "text": "−10"
+        },
+        {
+          "id": "l4",
+          "text": "−3"
+        },
+        {
+          "id": "r1",
+          "text": "3"
+        },
+        {
+          "id": "r2",
+          "text": "0"
+        },
+        {
+          "id": "r3",
+          "text": "2"
+        },
+        {
+          "id": "r4",
+          "text": "1"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r1"
+          ]
+        ]
+      },
+      "explanation": "18 = 6 × 3 + 0, donc le reste est 0. 25 = 6 × 4 + 1, donc le reste est 1. −10 = 6 × (−2) + 2, donc le reste est 2, et non 4 : le multiple de 6 pris est celui du dessous (−12), pas celui du dessus. −3 = 6 × (−1) + 3, donc le reste est 3. Un reste est toujours dans {0, …, 5}.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Quel est le chiffre des unités de 3²⁰²⁷ ? (Donner un entier entre 0 et 9.)",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "Le chiffre des unités est le reste modulo 10. Les puissances de 3 donnent 3, 9, 27 ≡ 7, 81 ≡ 1 : la période est 4. Comme 2027 = 4 × 506 + 3, on a 3²⁰²⁷ ≡ 3³ = 27 ≡ 7 [10]. Le chiffre des unités est donc 7.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lequel de ces nombres est divisible par 8 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5084"
+        },
+        {
+          "id": "b",
+          "text": "5124"
+        },
+        {
+          "id": "c",
+          "text": "5136"
+        },
+        {
+          "id": "d",
+          "text": "5162"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour 8, on regarde les trois derniers chiffres, car 1000 est multiple de 8 : 136 = 8 × 17, donc 5136 est divisible par 8 ✓. Les nombres 5084 et 5124 se terminent par 84 et 124, multiples de 4 mais pas de 8 (84 = 8 × 10 + 4 et 124 = 8 × 15 + 4) : ils passeraient le test de 4. Le nombre 5162 donne 162 = 8 × 20 + 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sachant que 14 ∧ 21 = 7, que vaut (−42) ∧ (−63) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−21"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "−42 = (−3) × 14 et −63 = (−3) × 21 : avec k = −3, (ka) ∧ (kb) = |k| (a ∧ b) = 3 × 7 = 21 ✓. La valeur −21 oublie la valeur absolue : un PGCD est toujours positif ; la valeur 7 oublie le facteur k ; la valeur 3 garde |k| sans le PGCD.",
+      "difficulty": 2
+    }
+  ]
+}

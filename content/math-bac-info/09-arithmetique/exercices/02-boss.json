@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des restes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Sachant que 287025 = 635 × 452 + 5, quel est le reste de −287025 dans la division euclidienne par 635 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "630"
+        },
+        {
+          "id": "b",
+          "text": "447"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "−5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On change les signes : −287025 = 635 × (−452) − 5. Le reste −5 est négatif ; on descend d'un multiple de 635 : −287025 = 635 × (−453) + 630, avec 0 ≤ 630 < 635 ✓. La valeur 5 est le reste de 287025, pas de −287025 ; −5 n'est pas un reste ; 447 est le reste de −287025 par 452 (−287025 = 452 × (−636) + 447), l'autre facteur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la plus petite valeur de l'entier n pour laquelle n + 2 divise 5n + 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−9"
+        },
+        {
+          "id": "b",
+          "text": "−7"
+        },
+        {
+          "id": "c",
+          "text": "−3"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "5n + 3 = 5(n + 2) − 7, donc n + 2 divise 5n + 3 si et seulement si n + 2 divise 7. Alors n + 2 ∈ {−7 ; −1 ; 1 ; 7}, d'où n ∈ {−9 ; −3 ; −1 ; 5}, dont la plus petite valeur est −9 ✓ (contrôle : −7 divise 5 × (−9) + 3 = −42). La valeur −7 est le plus petit diviseur de 7 pris pour n, sans retrancher 2 ; la valeur −3 est la deuxième solution ; la valeur 5 est la plus grande, pas la plus petite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux entiers a et b ont pour restes 4 et 7 dans la division par 9. Quel est le reste de 2a² − 3b dans la division par 9 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "a ≡ 4 donne a² ≡ 16 ≡ 7 [9], donc 2a² ≡ 14 ≡ 5. De plus 3b ≡ 21 ≡ 3 [9]. Alors 2a² − 3b ≡ 5 − 3 = 2 [9] ✓. La valeur 7 s'arrête au reste de a² ; la valeur 5 oublie de retrancher 3b ; la valeur 8 ajoute 3b (5 + 3) au lieu de le retrancher.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour lequel de ces exposants n le nombre 2ⁿ + 3ⁿ est-il divisible par 13 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "60"
+        },
+        {
+          "id": "b",
+          "text": "64"
+        },
+        {
+          "id": "c",
+          "text": "68"
+        },
+        {
+          "id": "d",
+          "text": "70"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Modulo 13, 2¹² = 4096 = 13 × 315 + 1 ≡ 1 et 3³ = 27 ≡ 1, donc les deux puissances se répètent avec une période qui divise 12. Pour n = 70 = 12 × 5 + 10 : 2⁷⁰ ≡ 2¹⁰ = 1024 = 13 × 78 + 10 et 3⁷⁰ ≡ 3 (car 70 = 3 × 23 + 1), donc 2⁷⁰ + 3⁷⁰ ≡ 10 + 3 = 13 ≡ 0 [13] ✓. Pour n = 60 (multiple de 12), les deux puissances valent 1 et la somme 2 ; pour n = 64, on trouve 3 + 3 = 6 ; pour n = 68, 9 + 9 = 18 ≡ 5.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soient a et b deux entiers naturels non nuls tels que a ∧ b = 1. Laquelle de ces égalités est vraie pour tous ces couples ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a + b) ∧ (a − b) = 1"
+        },
+        {
+          "id": "b",
+          "text": "a ∧ (a + b) = 1"
+        },
+        {
+          "id": "c",
+          "text": "(2a) ∧ b = 1"
+        },
+        {
+          "id": "d",
+          "text": "a ∧ (ab) = 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un diviseur commun d de a et de a + b divise la différence (a + b) − a = b, donc il divise a ∧ b = 1 : a ∧ (a + b) = 1 ✓. Chaque autre égalité a un contre-exemple : a = 3 et b = 1 donnent (a + b) ∧ (a − b) = 4 ∧ 2 = 2 et a ∧ (ab) = 3 ∧ 3 = 3 ; a = 1 et b = 2 donnent (2a) ∧ b = 2 ∧ 2 = 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quel est l'ensemble des solutions (x ; y) de l'équation 7x + 4y = 3 dans ℤ × ℤ ? (k désigne un entier relatif quelconque.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(−3 + 7k ; 6 − 4k)}"
+        },
+        {
+          "id": "b",
+          "text": "{(−1 + 4k ; 2 − 7k)}"
+        },
+        {
+          "id": "c",
+          "text": "{(1 + 4k ; −1 − 7k)}"
+        },
+        {
+          "id": "d",
+          "text": "{(−3 + 4k ; 6 + 7k)}"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "7 ∧ 4 = 1 : la relation 7 × (−1) + 4 × 2 = 1 multipliée par 3 donne la solution particulière (−3 ; 6). Alors 7(x + 3) = −4(y − 6), Gauss donne 4 | x + 3, soit x = −3 + 4k et y = 6 − 7k. En remplaçant k par k + 1, la même famille s'écrit à partir de (1 ; −1) : {(1 + 4k ; −1 − 7k)} ✓ (contrôle : 7 − 4 = 3). L'ensemble {(−1 + 4k ; 2 − 7k)} est celui de 7x + 4y = 1 (second membre non multiplié par 3) ; avec les coefficients échangés ou un signe faux, 7x + 4y ne reste pas égal à 3 quand k varie.",
+      "difficulty": 3
+    }
+  ]
+}
