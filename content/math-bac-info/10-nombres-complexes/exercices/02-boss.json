@@ -35,22 +35,22 @@
       "options": [
         {
           "id": "a",
-          "text": "3 − 3i"
-        },
-        {
-          "id": "b",
-          "text": "1 + 5i"
-        },
-        {
-          "id": "c",
           "text": "7/2 + 4i"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "9 + 9i"
+        },
+        {
+          "id": "c",
+          "text": "3 − 3i"
+        },
+        {
+          "id": "d",
+          "text": "1 + 5i"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "d",
       "explanation": "ABCD est un parallélogramme si et seulement si AB⃗ = DC⃗, donc z_B − z_A = z_C − z_D et z_D = z_A + z_C − z_B = (2 + i) + (5 + 7i) − (6 + 3i) = 1 + 5i ✓. Contrôle : Aff(DC⃗) = (5 + 7i) − (1 + 5i) = 4 + 2i = Aff(AB⃗). La réponse 9 + 9i est z_B + z_C − z_A, qui place D en face de A pour le parallélogramme ABDC. La réponse 3 − 3i est z_A + z_B − z_C. La réponse 7/2 + 4i est le milieu de [AC] : c'est le centre du parallélogramme, pas le sommet D.",
       "difficulty": 2
     },
@@ -83,22 +83,22 @@
       "options": [
         {
           "id": "a",
-          "text": "{1 ; 2 + 3i}"
-        },
-        {
-          "id": "b",
           "text": "{2 ; 1 + 3i}"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "{4 ; 2 + 6i}"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "{−2 ; −1 − 3i}"
+        },
+        {
+          "id": "d",
+          "text": "{1 ; 2 + 3i}"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "a",
       "explanation": "Δ = (3 + 3i)² − 4(2 + 6i) = 18i − 8 − 24i = −8 − 6i. Une racine carrée δ = x + iy vérifie x² + y² = 10 et x² − y² = −8, donc x² = 1 et y² = 9, et xy est négatif comme −6 : δ = 1 − 3i. Alors z = (3 + 3i ± (1 − 3i))/2, soit 4/2 = 2 ou (2 + 6i)/2 = 1 + 3i ✓. Contrôle : somme 3 + 3i et produit 2(1 + 3i) = 2 + 6i ✓. L'ensemble {1 ; 2 + 3i} choisit δ = 1 + 3i, avec le mauvais signe de xy. L'ensemble {4 ; 2 + 6i} oublie de diviser par 2a = 2. L'ensemble {−2 ; −1 − 3i} oublie le signe de −b.",
       "difficulty": 3
     },
@@ -107,22 +107,22 @@
       "options": [
         {
           "id": "a",
-          "text": "−1 + 2i et −1 − 2i"
+          "text": "2 + 4i et 2 − 4i"
         },
         {
           "id": "b",
-          "text": "1 + 2i et 1 − 2i"
+          "text": "−1 + 2i et −1 − 2i"
         },
         {
           "id": "c",
-          "text": "1 + 4i et 1 − 4i"
+          "text": "1 + 2i et 1 − 2i"
         },
         {
           "id": "d",
-          "text": "2 + 4i et 2 − 4i"
+          "text": "1 + 4i et 1 − 4i"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "c",
       "explanation": "On écrit (z − i)(z² + bz + c) = z³ + (b − i)z² + (c − ib)z − ic. En identifiant : b − i = −(2 + i) donne b = −2 ; c − ib = 5 + 2i donne c = 5 ; et −ic = −5i ✓. Il reste z² − 2z + 5 = 0 : Δ = 4 − 20 = −16 = (4i)², donc z = (2 ± 4i)/2 = 1 ± 2i ✓. La réponse 2 ± 4i oublie de diviser par 2. La réponse 1 ± 4i ne divise que la partie réelle. La réponse −1 ± 2i oublie le signe de −b.",
       "difficulty": 3
     },

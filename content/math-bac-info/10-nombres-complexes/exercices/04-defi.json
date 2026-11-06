@@ -59,22 +59,22 @@
       "options": [
         {
           "id": "a",
-          "text": "0"
-        },
-        {
-          "id": "b",
           "text": "1"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "j̄"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "675"
+        },
+        {
+          "id": "d",
+          "text": "0"
         }
       ],
-      "correctOption": "a",
+      "correctOption": "d",
       "explanation": "Comme j³ = 1, les termes se regroupent par trois : 1 + j + j² = 0, puis j³ + j⁴ + j⁵ = j³(1 + j + j²) = 0, et ainsi de suite. Les exposants vont de 0 à 2024 : il y a 2025 termes, soit 675 groupes de trois, tous nuls, donc S = 0 ✓. La valeur 1 ne garde que le premier terme. La valeur j̄ est celle du dernier terme j²⁰²⁴ = j², non de la somme. La valeur 675 est le nombre de groupes, non leur somme.",
       "difficulty": 3
     },
@@ -83,22 +83,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Équilatéral"
-        },
-        {
-          "id": "b",
-          "text": "Rectangle en O mais non isocèle"
-        },
-        {
-          "id": "c",
           "text": "Isocèle en O mais non rectangle"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "Rectangle et isocèle en O"
+        },
+        {
+          "id": "c",
+          "text": "Équilatéral"
+        },
+        {
+          "id": "d",
+          "text": "Rectangle en O mais non isocèle"
         }
       ],
-      "correctOption": "d",
+      "correctOption": "b",
       "explanation": "OB = |2 + i| = √5 et OC = |−1 + 2i| = √5 : le triangle est isocèle en O. Puis z̄z′ = (2 − i)(−1 + 2i) = −2 + 4i + i − 2i² = 5i, un imaginaire pur : OB⃗ ⟂ OC⃗, le triangle est rectangle en O ✓. Contrôle : BC = |−3 + i| = √10 = √(5 + 5), réciproque de Pythagore. Il n'est pas équilatéral, car BC = √10 ≠ √5.",
       "difficulty": 3
     },
@@ -107,22 +107,22 @@
       "options": [
         {
           "id": "a",
-          "text": "{i}"
-        },
-        {
-          "id": "b",
           "text": "{1 + i ; 1 − i}"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "{−1 + i ; −1 − i}"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "{i ; −i}"
+        },
+        {
+          "id": "d",
+          "text": "{i}"
         }
       ],
-      "correctOption": "d",
+      "correctOption": "c",
       "explanation": "On pose Z = (z − 1)/(z + 1) : Z² = −1 donne Z = i ou Z = −i. Pour Z = i : z − 1 = i(z + 1), donc z(1 − i) = 1 + i et z = (1 + i)/(1 − i) = i. Pour Z = −i : z − 1 = −i(z + 1), donc z(1 + i) = 1 − i et z = (1 − i)/(1 + i) = −i. Les solutions sont i et −i ✓. Contrôle : (i − 1)/(i + 1) = i, de carré −1. L'ensemble {1 + i ; 1 − i} s'arrête à z − 1 = ±i, l'ensemble {−1 + i ; −1 − i} à z + 1 = ±i, et {i} oublie Z = −i.",
       "difficulty": 3
     },
@@ -131,22 +131,22 @@
       "options": [
         {
           "id": "a",
-          "text": "−1 + i"
-        },
-        {
-          "id": "b",
-          "text": "1 + i"
-        },
-        {
-          "id": "c",
           "text": "2 + i"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "2 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "−1 + i"
+        },
+        {
+          "id": "d",
+          "text": "1 + i"
         }
       ],
-      "correctOption": "d",
+      "correctOption": "b",
       "explanation": "La somme des deux solutions vaut −b/a = 3 + i. L'autre solution est donc (3 + i) − (1 − i) = 2 + 2i ✓ ; on en déduit c = (1 − i)(2 + 2i) = 4. La conjuguée 1 + i n'est solution que pour des coefficients réels, ce qui n'est pas le cas puisque 3 + i ne l'est pas. La réponse 2 + i ne retranche que la partie réelle. La réponse −1 + i est l'opposée de la solution donnée.",
       "difficulty": 3
     }

@@ -59,22 +59,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Le cercle de centre Ω(−2 − i) et de rayon 3"
-        },
-        {
-          "id": "b",
-          "text": "Le cercle de centre Ω(−2 + i) et de rayon 3"
-        },
-        {
-          "id": "c",
           "text": "Le cercle de centre Ω(2 − i) et de rayon 3"
         },
         {
-          "id": "d",
+          "id": "b",
           "text": "Le cercle de centre Ω(2 + i) et de rayon 3"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre Ω(−2 − i) et de rayon 3"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre Ω(−2 + i) et de rayon 3"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "d",
       "explanation": "On écrit z + 2 − i = z − (−2 + i) : l'équation dit ΩM = 3 avec Ω d'affixe −2 + i, le cercle de centre Ω(−2 + i) et de rayon 3 ✓. Le centre se lit dans z − (affixe du centre) : ses signes sont opposés à ceux écrits dans la formule. Les autres centres recopient les signes de la formule, ou n'en inversent qu'un seul.",
       "difficulty": 2
     },
@@ -83,22 +83,22 @@
       "options": [
         {
           "id": "a",
-          "text": "±(1 + i)"
-        },
-        {
-          "id": "b",
           "text": "±(√2/2)(1 + i)"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "±(√2/2)(1 − i)"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "±(1/2)(1 + i)"
+        },
+        {
+          "id": "d",
+          "text": "±(1 + i)"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "a",
       "explanation": "On cherche x² − y² = 0 et x² + y² = |i| = 1, donc x² = y² = 1/2. Comme 2xy = 1 est positif, x et y ont le même signe : z = ±(√2/2)(1 + i) ✓. Contrôle : ((√2/2)(1 + i))² = (1/2) × 2i = i. Le nombre ±(1 + i) a pour carré 2i ; le nombre ±(1/2)(1 + i) a pour carré i/2 ; le nombre ±(√2/2)(1 − i) a pour carré −i, car le signe de xy est ignoré.",
       "difficulty": 2
     },
@@ -107,22 +107,22 @@
       "options": [
         {
           "id": "a",
-          "text": "d = 9"
+          "text": "d = −9i"
         },
         {
           "id": "b",
-          "text": "d = 9i"
+          "text": "d = 9"
         },
         {
           "id": "c",
-          "text": "d = −9"
+          "text": "d = 9i"
         },
         {
           "id": "d",
-          "text": "d = −9i"
+          "text": "d = −9"
         }
       ],
-      "correctOption": "c",
+      "correctOption": "d",
       "explanation": "Pour d = −9, a = −9, b = 0 et modu = 9, donc x = √((−9 + 9)/2) = 0 et l'étape y ← 0/(2 × 0) divise par 0 ✓. Pour d = 9, modu = 9 et x = 3. Pour d = 9i et d = −9i, a = 0 et modu = 9, donc x = √(9/2) n'est pas nul. Le nombre x ne s'annule que si a + modu = 0, c'est-à-dire pour un réel négatif.",
       "difficulty": 2
     },
@@ -131,22 +131,22 @@
       "options": [
         {
           "id": "a",
-          "text": "−1 et (−3 + i)/2"
-        },
-        {
-          "id": "b",
           "text": "1 et (3 + i)/2"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "1 et (3 − i)/2"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "1 et 2 + i"
+        },
+        {
+          "id": "d",
+          "text": "−1 et (−3 + i)/2"
         }
       ],
-      "correctOption": "c",
+      "correctOption": "b",
       "explanation": "On a a + b + c = (1 + i) − (3 + 2i) + (2 + i) = 0, donc 1 est solution et l'autre vaut c/a = (2 + i)/(1 + i) = (2 + i)(1 − i)/2 = (3 − i)/2 ✓. Contrôle par la somme : 1 + (3 − i)/2 = (5 − i)/2 et (3 + 2i)/(1 + i) = (3 + 2i)(1 − i)/2 = (5 − i)/2 ✓. La réponse avec (3 + i)/2 se trompe de signe en multipliant par le conjugué. La réponse 1 et 2 + i oublie de diviser par a. La réponse −1 et (−3 + i)/2 applique la règle de a − b + c = 0.",
       "difficulty": 2
     }
