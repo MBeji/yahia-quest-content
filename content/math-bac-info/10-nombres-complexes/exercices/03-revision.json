@@ -127,27 +127,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Combien de solutions l'équation z² − 4z̄ + 4 = 0 a-t-elle dans ℂ ?",
+      "prompt": "Dans ℂ, l'égalité z² − 4z̄ + 4 = 0 est vérifiée par exactement :",
       "options": [
         {
           "id": "a",
-          "text": "1"
+          "text": "1 nombre"
         },
         {
           "id": "b",
-          "text": "2"
+          "text": "2 nombres"
         },
         {
           "id": "c",
-          "text": "3"
+          "text": "3 nombres"
         },
         {
           "id": "d",
-          "text": "4"
+          "text": "4 nombres"
         }
       ],
       "correctOption": "c",
-      "explanation": "On pose z = x + iy : z² − 4z̄ + 4 = (x² − y² − 4x + 4) + i(2xy + 4y). La partie imaginaire donne 2y(x + 2) = 0. Si y = 0 : x² − 4x + 4 = (x − 2)² = 0, donc z = 2. Si x = −2 : 4 − y² + 8 + 4 = 0, donc y² = 16 et z = −2 + 4i ou z = −2 − 4i. Il y a donc 3 solutions ✓. Contrôle : (−2 + 4i)² = −12 − 16i et −4(−2 − 4i) = 8 + 16i, d'où −12 − 16i + 8 + 16i + 4 = 0. La réponse 1 traite z̄ comme z, (z − 2)² = 0, ou ne garde que le cas y = 0 ; la réponse 2 ne garde que le cas x = −2, ou croit qu'une équation du second degré a toujours deux solutions ; la réponse 4 compte deux fois la solution double z = 2.",
+      "explanation": "On pose z = x + iy : z² − 4z̄ + 4 = (x² − y² − 4x + 4) + i(2xy + 4y). La partie imaginaire donne 2y(x + 2) = 0. Si y = 0 : x² − 4x + 4 = (x − 2)² = 0, donc z = 2. Si x = −2 : 4 − y² + 8 + 4 = 0, donc y² = 16 et z = −2 + 4i ou z = −2 − 4i. Il y a donc 3 nombres qui conviennent ✓. Contrôle : (−2 + 4i)² = −12 − 16i et −4(−2 − 4i) = 8 + 16i, d'où −12 − 16i + 8 + 16i + 4 = 0. La réponse 1 traite z̄ comme z, (z − 2)² = 0, ou ne garde que le cas y = 0 ; la réponse 2 ne garde que le cas x = −2, ou croit qu'une équation du second degré a toujours deux solutions ; la réponse 4 compte deux fois la solution double z = 2.",
       "difficulty": 2
     }
   ]
