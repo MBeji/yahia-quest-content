@@ -450,6 +450,8 @@ $$ p(s ≤ X ≤ t) = (t − s)/(b − a) $$
 Sa fonction de répartition vaut 0 si x < a, (x − a)/(b − a) si a ≤ x < b, et 1 si x ≥ b. Un point M choisi au hasard sur un segment suit cette loi : la probabilité ne dépend que des longueurs.
 :::
 
+Pour le métro, p(1 ≤ X ≤ 2) = p(4 ≤ X ≤ 5) = 1/6 : seules les longueurs comptent.
+
 ::: figure Le segment [AB] mesure 10 : la partie colorée [3 ; 7] en mesure 4, donc la probabilité est le rapport des longueurs, 4/10
 <svg viewBox="0 0 260 90">
 <title>Segment AB de longueur 10 gradué de 0 à 10 ; la partie de 3 à 7 est colorée</title>
@@ -463,6 +465,8 @@ Sa fonction de répartition vaut 0 si x < a, (x − a)/(b − a) si a ≤ x < b,
 <text x="174" y="74" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">7</text>
 <path d="M240 44 L240 56" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round"/>
 <text x="240" y="74" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">10</text>
+<circle cx="130" cy="50" r="4" fill="#b45309" stroke="#0f172a" stroke-width="1.2"/>
+<text x="130" y="34" text-anchor="middle" font-size="13" fill="#b45309" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">M</text>
 <text x="20" y="34" text-anchor="middle" font-size="13" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">A</text>
 <text x="240" y="34" text-anchor="middle" font-size="13" fill="#0f172a" font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">B</text>
 </svg>

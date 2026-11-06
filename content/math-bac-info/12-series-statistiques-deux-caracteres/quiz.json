@@ -2,27 +2,27 @@
   "title": "Test de compréhension ⭐ : Séries statistiques à deux caractères",
   "questions": [
     {
-      "prompt": "Pour une série, on a X̄ = 10 et σ(X) = 2. On pose Y = −3X + 4. Que vaut σ(Y) ?",
+      "prompt": "Pour une série, on a X̄ = 10 et σ(X) = 6. On pose Y = −0,5X + 7. Que vaut σ(Y) ?",
       "options": [
         {
           "id": "a",
-          "text": "−6"
+          "text": "−3"
         },
         {
           "id": "b",
-          "text": "−2"
+          "text": "1,5"
         },
         {
           "id": "c",
-          "text": "2"
+          "text": "3"
         },
         {
           "id": "d",
-          "text": "6"
+          "text": "4"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Pour Y = aX + b, l'écart-type vaut |a| σ(X) = 3 × 2 = 6 : le facteur multiplicatif agit par sa valeur absolue et la constante 4 n'intervient pas. Un écart-type n'est jamais négatif, ce qui exclut −6 ; −2 viendrait de −3 × 2 + 4, qui traite l'écart-type comme la moyenne ; 2 ignorerait le facteur −3.",
+      "correctOption": "c",
+      "explanation": "Pour Y = aX + b, σ(Y) = |a| σ(X) = 0,5 × 6 = 3 : le facteur agit par sa valeur absolue et la constante 7 n'intervient pas. La valeur −3 garde le signe de a, alors qu'un écart-type n'est jamais négatif ; 4 = −0,5 × 6 + 7 traite l'écart-type comme la moyenne ; 1,5 = 0,5² × 6 applique à σ la règle a² de la variance.",
       "difficulty": 2
     },
     {
@@ -74,11 +74,11 @@
       "difficulty": 1
     },
     {
-      "prompt": "On sait que cov(X ; Y) = 8. Que vaut cov(3X + 2 ; Y) ?",
+      "prompt": "Pour une série, on sait que V(X) = 5. Que vaut cov(2X ; X) ?",
       "options": [
         {
           "id": "a",
-          "text": "8"
+          "text": "5"
         },
         {
           "id": "b",
@@ -86,39 +86,39 @@
         },
         {
           "id": "c",
-          "text": "24"
+          "text": "20"
         },
         {
           "id": "d",
-          "text": "26"
+          "text": "25"
         }
       ],
-      "correctOption": "c",
-      "explanation": "Pour tous réels a et b, cov(aX + b ; Y) = a cov(X ; Y) : ici a = 3, donc le résultat est 3 × 8 = 24 et la constante 2 ne joue aucun rôle. La valeur 8 ignorerait le facteur 3, 10 ajouterait 2 à 8, et 26 appliquerait « 3 × 8 + 2 » comme pour une fonction affine ordinaire.",
-      "difficulty": 1
+      "correctOption": "b",
+      "explanation": "D'après cov(aX + b ; Y) = a cov(X ; Y) avec a = 2 et Y = X, cov(2X ; X) = 2 cov(X ; X) = 2 V(X) = 2 × 5 = 10. La valeur 5 oublie le facteur 2 ; 20 = 2² × 5 applique la règle de la variance V(2X) = 4V(X), alors que X n'est multiplié qu'une fois ; 25 = V(X)² confond cov(X ; X) avec le carré de la variance.",
+      "difficulty": 2
     },
     {
-      "prompt": "Pour une série double, on trouve r = −0,62. Quelle conclusion est correcte ?",
+      "prompt": "Quatre séries doubles ont pour coefficients de corrélation linéaire les valeurs suivantes. Laquelle présente une corrélation linéaire forte ?",
       "options": [
         {
           "id": "a",
-          "text": "La corrélation linéaire est forte, et Y augmente quand X augmente"
+          "text": "r = −0,81"
         },
         {
           "id": "b",
-          "text": "La corrélation linéaire est forte, et Y diminue quand X augmente"
+          "text": "r = −0,50"
         },
         {
           "id": "c",
-          "text": "La corrélation linéaire est faible, et Y augmente quand X augmente"
+          "text": "r = 0,62"
         },
         {
           "id": "d",
-          "text": "La corrélation linéaire est faible, et Y diminue quand X augmente"
+          "text": "r = 0,74"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Le signe de r est celui de la covariance : r est négatif, donc Y a tendance à diminuer quand X augmente. La force se lit sur |r| = 0,62, qui est inférieur à 0,75 : la corrélation linéaire est faible. Les trois autres propositions se trompent sur le sens, sur la force, ou sur les deux.",
+      "correctOption": "a",
+      "explanation": "La force se lit sur |r| : seule r = −0,81 vérifie |r| = 0,81 ≥ 0,75, la corrélation est forte ; son signe négatif dit seulement que Y diminue quand X augmente. La valeur 0,74 est le plus grand nombre de la liste, mais |r| = 0,74 < 0,75 : la corrélation est faible, comme pour 0,62 et −0,50.",
       "difficulty": 1
     },
     {
@@ -170,27 +170,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Un nuage (x ; y) est ajusté en posant z = ln y ; la droite de régression de z en x est z = 0,5x + 1. Quelle expression de y en fonction de x en déduit-on ?",
+      "prompt": "Un nuage (x ; y) est ajusté en posant z = √y ; la droite de régression de z en x est z = 3x − 1. Quelle expression de y en fonction de x en déduit-on, pour x ≥ 1/3 ?",
       "options": [
         {
           "id": "a",
-          "text": "y = 0,5x + 1"
+          "text": "y = 3x − 1"
         },
         {
           "id": "b",
-          "text": "y = ln(0,5x + 1)"
+          "text": "y = √(3x − 1)"
         },
         {
           "id": "c",
-          "text": "y = e^(0,5x + 1)"
+          "text": "y = (3x − 1)²"
         },
         {
           "id": "d",
-          "text": "y = 0,5 e^x + 1"
+          "text": "y = 9x² − 1"
         }
       ],
       "correctOption": "c",
-      "explanation": "Comme z = ln y, on revient à y par la fonction réciproque : y = e^z = e^(0,5x + 1) = e × e^(0,5x). Garder y = 0,5x + 1 oublierait de revenir à y, ln(0,5x + 1) appliquerait ln au lieu de exp, et 0,5e^x + 1 appliquerait exp seulement à x.",
+      "explanation": "Comme z = √y, on revient à y par la fonction réciproque de la racine carrée sur [0 ; +∞[, le carré : y = z² = (3x − 1)² (et z ≥ 0 pour x ≥ 1/3). Garder y = 3x − 1 oublie de revenir à y ; √(3x − 1) applique la racine au lieu du carré ; 9x² − 1 élève chaque terme au carré séparément, alors que (3x − 1)² = 9x² − 6x + 1.",
       "difficulty": 2
     }
   ]

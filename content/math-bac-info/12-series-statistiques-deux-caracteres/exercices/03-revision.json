@@ -27,49 +27,8 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Une prévision est une interpolation quand la valeur de X appartient à l'intervalle des valeurs observées, ici [2015 ; 2022], et une extrapolation sinon. Les années 2016, 2019 et 2022 sont dans cet intervalle ; 2027 en est hors et suppose que le modèle reste plausible plus de cinq ans après la dernière observation.",
+      "explanation": "Une prévision est une interpolation quand la valeur de X appartient à l'intervalle des valeurs observées, ici [2015 ; 2022], et une extrapolation sinon. Les années 2016, 2019 et 2022 sont dans cet intervalle ; 2027 en est hors et suppose que le modèle reste plausible cinq ans après la dernière observation.",
       "difficulty": 1
-    },
-    {
-      "type": "numeric",
-      "prompt": "Les températures X (en °C) d'une salle de serveurs ont pour moyenne 18 et pour écart-type 3. On les convertit en degrés Fahrenheit avec F = 1,8X + 32. Quelle est la variance V(F) ? Donne le résultat sous forme décimale.",
-      "answerKey": {
-        "value": 29.16,
-        "tolerance": 0.01
-      },
-      "explanation": "Pour F = aX + b, V(F) = a² V(X). Ici V(X) = σ(X)² = 3² = 9 et a = 1,8, donc V(F) = 1,8² × 9 = 3,24 × 9 = 29,16. La constante 32 translate les températures sans changer leur dispersion.",
-      "difficulty": 2
-    },
-    {
-      "type": "multi",
-      "prompt": "Le diagramme en boîte ci-dessous résume une série. Quelles affirmations sont vraies ?\n<svg viewBox=\"0 0 340 170\">\n<title>Diagramme en boîte d'une série : minimum 12, Q₁ = 20, médiane 26, Q₃ = 38, maximum 60</title>\n<line x1=\"22\" y1=\"118\" x2=\"22\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"22\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >0</text>\n<line x1=\"71.3\" y1=\"118\" x2=\"71.3\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"71.3\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >10</text>\n<line x1=\"120.7\" y1=\"118\" x2=\"120.7\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"120.7\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >20</text>\n<line x1=\"170\" y1=\"118\" x2=\"170\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"170\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >30</text>\n<line x1=\"219.3\" y1=\"118\" x2=\"219.3\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"219.3\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >40</text>\n<line x1=\"268.7\" y1=\"118\" x2=\"268.7\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"268.7\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >50</text>\n<line x1=\"318\" y1=\"118\" x2=\"318\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"318\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >60</text>\n<path d=\"M22 118 L318 118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>\n<line x1=\"81.2\" y1=\"75\" x2=\"120.7\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"209.5\" y1=\"75\" x2=\"318\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"81.2\" y1=\"66\" x2=\"81.2\" y2=\"84\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"318\" y1=\"66\" x2=\"318\" y2=\"84\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<rect x=\"120.7\" y=\"58\" width=\"88.8\" height=\"34\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<line x1=\"150.3\" y1=\"58\" x2=\"150.3\" y2=\"92\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<text x=\"81.2\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >min = 12</text>\n<text x=\"150.3\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >Me = 26</text>\n<text x=\"294\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >max = 60</text>\n<text x=\"120.7\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >Q₁ = 20</text>\n<text x=\"209.5\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >Q₃ = 38</text>\n</svg>",
-      "options": [
-        {
-          "id": "a",
-          "text": "50 % des valeurs sont comprises entre 20 et 38"
-        },
-        {
-          "id": "b",
-          "text": "L'écart interquartile vaut 18"
-        },
-        {
-          "id": "c",
-          "text": "La moyenne de la série vaut 26"
-        },
-        {
-          "id": "d",
-          "text": "La moitié des valeurs sont supérieures ou égales à 38"
-        },
-        {
-          "id": "e",
-          "text": "Au moins un quart des valeurs sont inférieures ou égales à 20"
-        }
-      ],
-      "answerKey": {
-        "correct": ["a", "b", "e"]
-      },
-      "explanation": "La boîte va de Q₁ = 20 à Q₃ = 38 : elle contient 50 % des valeurs et l'écart interquartile vaut 38 − 20 = 18. Par définition de Q₁, au moins un quart des valeurs sont inférieures ou égales à 20. Le trait central marque la médiane 26, qui n'est pas la moyenne, et c'est la médiane, non Q₃ = 38, qui laisse la moitié des valeurs de chaque côté.",
-      "difficulty": 2
     },
     {
       "type": "ordering",
@@ -100,7 +59,7 @@
         "order": ["b", "e", "c", "a", "d"]
       },
       "explanation": "On range d'abord les couples par abscisses croissantes, sinon les groupes n'ont pas de sens. On les partage ensuite en deux groupes de même effectif (à un près), puis on calcule le point moyen de chaque groupe. L'équation de (G₁G₂) s'écrit avec ces deux points, et la vérification que G appartient à la droite vient en dernier, comme contrôle du résultat.",
-      "difficulty": 2
+      "difficulty": 1
     },
     {
       "type": "matching",
@@ -148,15 +107,56 @@
         ]
       },
       "explanation": "Pour y = A e^(Bx), ln y = ln A + Bx est affine en x. Pour y = k x^α, ln y = ln k + α ln x est affine en ln x. Pour y = (ax + b)², √y = ax + b (avec ax + b ≥ 0) est affine en x. Pour y = λ/x, y = λ × (1/x) est affine en 1/x.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les températures X (en °C) d'une salle de serveurs ont pour moyenne 18 et pour écart-type 3. On les convertit en degrés Fahrenheit avec F = 1,8X + 32. Quelle est la variance V(F) ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 29.16,
+        "tolerance": 0.01
+      },
+      "explanation": "Pour F = aX + b, V(F) = a² V(X). Ici V(X) = σ(X)² = 3² = 9 et a = 1,8, donc V(F) = 1,8² × 9 = 3,24 × 9 = 29,16. La constante 32 translate les températures sans changer leur dispersion.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Le diagramme en boîte ci-dessous résume une série. Quelles affirmations sont vraies ?\n<svg viewBox=\"0 0 340 170\">\n<title>Diagramme en boîte d'une série : minimum 12, Q₁ = 20, médiane 26, Q₃ = 38, maximum 60</title>\n<line x1=\"22\" y1=\"118\" x2=\"22\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"22\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >0</text>\n<line x1=\"71.3\" y1=\"118\" x2=\"71.3\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"71.3\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >10</text>\n<line x1=\"120.7\" y1=\"118\" x2=\"120.7\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"120.7\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >20</text>\n<line x1=\"170\" y1=\"118\" x2=\"170\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"170\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >30</text>\n<line x1=\"219.3\" y1=\"118\" x2=\"219.3\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"219.3\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >40</text>\n<line x1=\"268.7\" y1=\"118\" x2=\"268.7\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"268.7\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >50</text>\n<line x1=\"318\" y1=\"118\" x2=\"318\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"318\" y=\"134\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >60</text>\n<path d=\"M22 118 L318 118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/>\n<line x1=\"81.2\" y1=\"75\" x2=\"120.7\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"209.5\" y1=\"75\" x2=\"318\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"81.2\" y1=\"66\" x2=\"81.2\" y2=\"84\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"318\" y1=\"66\" x2=\"318\" y2=\"84\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<rect x=\"120.7\" y=\"58\" width=\"88.8\" height=\"34\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<line x1=\"150.3\" y1=\"58\" x2=\"150.3\" y2=\"92\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<text x=\"81.2\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >min = 12</text>\n<text x=\"150.3\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >Me = 26</text>\n<text x=\"294\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >max = 60</text>\n<text x=\"120.7\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >Q₁ = 20</text>\n<text x=\"209.5\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >Q₃ = 38</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au moins la moitié des valeurs sont comprises entre 20 et 38"
+        },
+        {
+          "id": "b",
+          "text": "L'écart interquartile vaut 18"
+        },
+        {
+          "id": "c",
+          "text": "Le diagramme indique que la moyenne de la série vaut 26"
+        },
+        {
+          "id": "d",
+          "text": "Au moins la moitié des valeurs sont supérieures ou égales à 38"
+        },
+        {
+          "id": "e",
+          "text": "Au moins un quart des valeurs sont inférieures ou égales à 20"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "La boîte va de Q₁ = 20 à Q₃ = 38 : elle contient au moins la moitié des valeurs, et l'écart interquartile vaut 38 − 20 = 18. Par définition de Q₁, au moins un quart des valeurs sont inférieures ou égales à 20. Le trait central marque la médiane 26 ; un diagramme en boîte ne donne pas la moyenne. Seul un quart des valeurs au moins est supérieur ou égal à Q₃ = 38, pas la moitié.",
       "difficulty": 2
     },
     {
       "type": "numeric",
-      "prompt": "Les ventes y d'un jeu suivent un modèle y = A e^(Bx), où x est le rang du mois. L'ajustement affine de z = ln y en x donne z = 0,45x + 1,2. À partir de quel rang x entier les ventes dépassent-elles 100 ?",
+      "prompt": "La quantité q (en mg) d'un médicament dans le sang suit un modèle q = A e^(Bt), où t est le temps en heures. L'ajustement affine de z = ln q en t donne z = −0,2t + 2,5. À partir de quelle heure entière t la quantité passe-t-elle sous 1 mg ?",
       "answerKey": {
-        "value": 8
+        "value": 13
       },
-      "explanation": "On veut y > 100, soit z = ln y > ln 100 ≈ 4,605. Donc 0,45x + 1,2 > 4,605, c'est-à-dire x > 3,405 / 0,45 ≈ 7,57. Le plus petit entier convenable est x = 8. Contrôle : pour x = 7, z = 4,35 et y ≈ 77,5 ; pour x = 8, z = 4,8 et y ≈ 121,5.",
+      "explanation": "q < 1 équivaut à z = ln q < ln 1 = 0, soit −0,2t + 2,5 < 0, donc t > 2,5 / 0,2 = 12,5 (on divise par −0,2 < 0 : le sens de l'inégalité change). Le plus petit entier est t = 13. Contrôle : t = 12 donne z = 0,1 et q ≈ 1,11 ; t = 13 donne z = −0,1 et q ≈ 0,90. Comparer z à 1 au lieu de ln 1 = 0 donnerait −0,2t + 2,5 < 1, soit t = 8, qui est faux.",
       "difficulty": 3
     }
   ]

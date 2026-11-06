@@ -2,7 +2,7 @@
 
 > 💡 «Une seule mesure décrit une série ; deux mesures prises sur les mêmes individus racontent comment elles varient ensemble.»
 
-Bienvenue, héros de la section Sciences de l'informatique. Le 1ᵉʳ janvier 1801, l'astronome Piazzi repère un astre inconnu, puis le perd de vue. À partir de ses quelques observations, Gauss calcule par la méthode des moindres carrés où le retrouver : l'astre réapparaît à la place prévue. Huit étapes te mènent de cette méthode : les rappels sur une variable (moyenne, écart-type, puis médiane et quartiles), le nuage de points et la droite de Mayer, la covariance, le coefficient de corrélation linéaire, la droite des moindres carrés, la seconde droite de régression et les ajustements non affines. Tu réutilises les fonctions affines, ln et exp ; chaque calcul se fait à la main, puis le tableur ou la calculatrice servent de contrôle.
+Bienvenue, héros de la section Sciences de l'informatique. Le 1ᵉʳ janvier 1801, l'astronome Piazzi repère un astre inconnu, puis le perd de vue. À partir de ses quelques observations, Gauss calcule par la méthode des moindres carrés où le retrouver : l'astre réapparaît à la place prévue. Huit étapes te mènent jusqu'à cette méthode : les rappels sur une variable (moyenne, écart-type, puis médiane et quartiles), le nuage de points et la droite de Mayer, la covariance, le coefficient de corrélation linéaire, la droite des moindres carrés, la seconde droite de régression et les ajustements non affines. Tu réutilises les fonctions affines, ln et exp ; chaque calcul se fait à la main, puis le tableur ou la calculatrice servent de contrôle.
 
 ## 📊 Moyenne, variance et écart-type : résumer une série
 
@@ -76,13 +76,13 @@ Quel nombre donne le trajet « du milieu » sans se laisser tromper par une vale
 Pour une série rangée dans l'ordre croissant :
 
 - la **médiane** Me partage la série en deux groupes de même effectif ;
-- les **quartiles** Q₁ et Q₃ la partagent en quatre groupes de même effectif ; l'**intervalle interquartile** [Q₁ ; Q₃] contient 50 % des valeurs et l'**écart interquartile** est Q₃ − Q₁ ;
-- Q₁ est la valeur de rang ⌈N/4⌉ et Q₃ celle de rang ⌈3N/4⌉, où ⌈t⌉ est le plus petit entier supérieur ou égal à t.
+- les **quartiles** Q₁ et Q₃ la partagent en quatre groupes d'effectifs à peu près égaux ; l'**intervalle interquartile** [Q₁ ; Q₃] contient environ 50 % des valeurs (au moins la moitié) et l'**écart interquartile** est Q₃ − Q₁ ;
+- Q₁ est la valeur de rang ⌈N/4⌉ et Q₃ celle de rang ⌈3N/4⌉, où ⌈t⌉ est le plus petit entier supérieur ou égal à t : Q₁ est la plus petite valeur telle qu'au moins un quart des valeurs lui soient inférieures ou égales, et Q₃ la plus petite telle qu'au moins trois quarts le soient.
 
 Le **diagramme en boîte** (boîte à moustaches) dessine les cinq nombres : minimum, Q₁, Me, Q₃, maximum.
 :::
 
-::: figure Diagramme en boîte des trajets : la boîte va de Q₁ à Q₃ et contient 50 % des élèves, le trait vert marque la médiane, les moustaches vont jusqu'au minimum et au maximum
+::: figure Diagramme en boîte des trajets : la boîte va de Q₁ à Q₃ et contient au moins la moitié des élèves (ici 10 sur 15), le trait vert marque la médiane, les moustaches vont jusqu'au minimum et au maximum
 <svg viewBox="0 0 340 170">
 <title>Diagramme en boîte des durées de trajet en minutes : minimum 5, Q₁ = 10, médiane 18, Q₃ = 25, maximum 50</title>
 <line x1="22" y1="118" x2="22" y2="122" stroke="#0f172a" stroke-width="1.2"/>
@@ -132,7 +132,7 @@ Un site compte 80 abonnés ; le tableau donne leur durée de connexion (en min).
 | Effectif        | 8        | 20        | 24        | 20        | 8         |
 | Effectif cumulé | 8        | 28        | 52        | 72        | 80        |
 
-1. Q₁ est la valeur de rang N/4 = 20. Le cumul passe de 8 à 28 dans la classe [10 ; 20[ : c'est la classe de Q₁.
+1. Pour une série en classes, on prend le rang N/4 sans l'arrondir : Q₁ est la valeur de rang N/4 = 20. Le cumul passe de 8 à 28 dans la classe [10 ; 20[ : c'est la classe de Q₁.
 2. On suppose les valeurs réparties uniformément dans la classe : (Q₁ − 10) / (20 − 10) = (20 − 8) / (28 − 8), donc Q₁ = 10 + 10 × 12/20 = 16 min.
 3. De même, Me est la valeur de rang 40, dans [20 ; 30[ où le cumul passe de 28 à 52 : Me = 20 + 10 × (40 − 28)/(52 − 28) = 25 min.
 
@@ -156,7 +156,7 @@ Q₃ est la valeur de rang 3N/4 = 60. Le cumul passe de 52 à 72 dans [30 ; 40[.
 :::
 
 ::: retenir
-Me coupe la série en deux moitiés, Q₁ et Q₃ en quarts ; la boîte de Q₁ à Q₃ contient 50 % des valeurs ; pour des classes, on repère le rang dans les effectifs cumulés puis on interpole.
+Me coupe la série en deux moitiés, Q₁ et Q₃ en quarts ; la boîte de Q₁ à Q₃ contient environ 50 % des valeurs (au moins la moitié) ; pour des classes, on repère le rang dans les effectifs cumulés puis on interpole.
 :::
 
 ## 🔵 Nuage de points, point moyen et droite de Mayer
@@ -215,12 +215,12 @@ Les n couples (xᵢ ; yᵢ) des valeurs de deux caractères X et Y observés sur
 <circle cx="161.7" cy="115" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
 <circle cx="184" cy="96.4" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
 <circle cx="273.3" cy="40.6" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
-<rect x="112" y="128.6" width="10" height="10" fill="#0f6e56" stroke="#ffffff" stroke-width="1"/>
-<rect x="201.3" y="79" width="10" height="10" fill="#0f6e56" stroke="#ffffff" stroke-width="1"/>
-<line x1="154.7" y1="101.8" x2="168.7" y2="115.8" stroke="#b45309" stroke-width="2.6" stroke-linecap="round"/><line x1="154.7" y1="115.8" x2="168.7" y2="101.8" stroke="#b45309" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="113" y="129.6" width="8" height="8" fill="#0f6e56" stroke="#ffffff" stroke-width="1"/>
+<rect x="202.3" y="80" width="8" height="8" fill="#0f6e56" stroke="#ffffff" stroke-width="1"/>
+<line x1="156.7" y1="103.8" x2="166.7" y2="113.8" stroke="#b45309" stroke-width="2.6" stroke-linecap="round"/><line x1="156.7" y1="113.8" x2="166.7" y2="103.8" stroke="#b45309" stroke-width="2.6" stroke-linecap="round"/>
 <text x="101" y="123.6" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >G₁</text>
 <text x="206.3" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >G₂</text>
-<text x="177.7" y="122.8" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >G</text>
+<text x="175.7" y="126.8" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >G</text>
 </svg>
 :::
 
@@ -237,7 +237,7 @@ Sur la figure, G₁(3 ; 12) est le point moyen des trois points de gauche, G₂(
 :::
 
 ::: piege
-**Erreur : partager les points sans les trier par abscisses croissantes.** Si le relevé est saisi dans le désordre, (10 ; 27), (2 ; 9), (5 ; 15), (6 ; 18), (3 ; 11), (4 ; 16), prendre les trois premiers couples tente parce que la liste est déjà coupée en deux. On obtient G₁(17/3 ; 17) et G₂(13/3 ; 15), donc la droite y = 1,5x + 8,5 au lieu de y = 2x + 6. Il faut d'abord ranger selon X.
+**Erreur : partager les points sans les trier par abscisses croissantes.** Si le relevé est saisi dans le désordre, (10 ; 27), (2 ; 9), (5 ; 15), (6 ; 18), (3 ; 11), (4 ; 16), il est tentant de prendre les trois premiers couples saisis, comme si la liste était déjà coupée en deux. On obtient G₁(17/3 ; 17) et G₂(13/3 ; 15), donc la droite y = 1,5x + 8,5 au lieu de y = 2x + 6. Il faut d'abord ranger selon X.
 :::
 
 ::: methode La droite de Mayer
@@ -380,7 +380,7 @@ $$ S = Σ (MᵢPᵢ)² = Σ (yᵢ − (axᵢ + b))² $$
 des carrés des écarts verticaux. Cette droite est la **droite de régression de Y en X**.
 :::
 
-::: figure Les segments pointillés verticaux relient chaque point Mᵢ au point Pᵢ de la droite D de même abscisse : la droite de régression rend la somme de leurs carrés minimale
+::: figure Les segments pointillés verticaux relient chaque point Mᵢ au point Pᵢ de la droite D de même abscisse (trois écarts sont si petits qu'ils se confondent avec le point) : la droite de régression rend la somme de leurs carrés minimale
 <svg viewBox="0 0 340 330">
 <title>Nuage des six points et droite D : y = 2,2x + 5, avec les écarts verticaux MᵢPᵢ en pointillés dont les carrés valent 0,16 ; 0,36 ; 4,84 ; 1 ; 0,04 et 0</title>
 <line x1="75.5" y1="290" x2="75.5" y2="22" stroke="#e2e8f0" stroke-width="1"/>
@@ -515,8 +515,8 @@ $$ b′ = X̄ − a′Ȳ $$
 <circle cx="161.7" cy="128.3" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
 <circle cx="184" cy="112.3" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
 <circle cx="273.3" cy="64.5" r="4" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
-<line x1="154.7" y1="116" x2="168.7" y2="130" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/><line x1="154.7" y1="130" x2="168.7" y2="116" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/>
-<text x="177.7" y="137" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >G</text>
+<line x1="156.7" y1="118" x2="166.7" y2="128" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/><line x1="156.7" y1="128" x2="166.7" y2="118" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round"/>
+<text x="147.7" y="113" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >G</text>
 <text x="291.7" y="38.5" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >D′</text>
 <text x="312.8" y="63" text-anchor="middle" font-size="13" font-weight="700" fill="#0f6e56" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" >D</text>
 </svg>
@@ -565,15 +565,16 @@ Les inscrits à une application (en centaines) sur cinq semaines : 6, 9, 14, 21,
 Ces signes + − − − + disent que le nuage se courbe : comment retrouver une droite pour prévoir ?
 
 ::: definition
-Pour **ajuster** un nuage courbe, on cherche une transformation z = φ(y) (ou X = φ(x)) qui aligne les points. On ajuste alors z par une droite des moindres carrés, puis on revient à y par la fonction réciproque.
+Pour les statisticiens, l'équation y = ax + b est un **modèle** : x est la variable **explicative** et y la variable **expliquée**. Pour **ajuster** un nuage courbe, on cherche une transformation z = φ(y) (ou X = φ(x)) qui aligne les points. On ajuste alors z par une droite des moindres carrés, puis on revient à y par la fonction réciproque.
 :::
 
-| Modèle                      | Droite à ajuster                 | Retour à y          |
-| --------------------------- | -------------------------------- | ------------------- |
-| y = A e^(Bx) (exponentiel)  | z = ln y en fonction de x        | y = e^z             |
-| y = k x^α (puissance)       | Y = ln y en fonction de X = ln x | y = e^Y             |
-| y = (ax + b)² (parabolique) | z = √y en fonction de x          | y = z²              |
-| y = λ / x (inverse)         | y en fonction de 1/x             | aucun, y est direct |
+| Modèle                         | Droite à ajuster                 | Retour à y          |
+| ------------------------------ | -------------------------------- | ------------------- |
+| y = A e^(Bx) (exponentiel)     | z = ln y en fonction de x        | y = e^z             |
+| y = k x^α (puissance)          | Y = ln y en fonction de X = ln x | y = e^Y             |
+| y = (ax + b)² (parabolique)    | z = √y en fonction de x          | y = z²              |
+| y = λ / x (inverse)            | y en fonction de 1/x             | aucun, y est direct |
+| y = a ln x + b (logarithmique) | y en fonction de ln x            | aucun, y est direct |
 
 La première colonne du tableau est le modèle, la deuxième la droite à tracer, la troisième l'opération qui ramène à y.
 
@@ -603,9 +604,9 @@ Les points (1 ; 3), (2 ; 8,5), (4 ; 24), (8 ; 68) suivent y = k xᵅ. Alors ln y
 ::: methode Avec un tableur
 Dans Excel : saisir les deux colonnes, insérer un graphique en nuage de points, faire un clic droit sur un point, choisir « Ajouter une courbe de tendance », puis le type (linéaire, exponentielle, puissance ou polynomiale d'ordre 2) et cocher « Afficher l'équation sur le graphique ».
 
-Le type exponentiel et le type puissance font exactement le calcul de ce cours (ajustement affine de ln y). Le type polynomial d'ordre 2 ajuste une parabole directement sur y par les moindres carrés. Pour nos inscrits, la courbe exponentielle affiche une équation de la forme y ≈ 3,9 e^(0,42x).
+Le type exponentiel et le type puissance font exactement le calcul de ce cours (ajustement affine de ln y en x pour l'exponentielle, de ln y en ln x pour la puissance). Le type polynomial d'ordre 2 ajuste une parabole directement sur y par les moindres carrés. Pour nos inscrits, la courbe exponentielle affiche une équation de la forme y ≈ 3,9 e^(0,42x).
 
-Cas limite : le logarithme n'existe que pour y > 0, donc ces deux types sont impossibles si une valeur de Y est négative ou nulle.
+Cas limite : le logarithme n'existe que pour des valeurs strictement positives : le type exponentiel est impossible si une valeur de Y est négative ou nulle, et le type puissance l'est aussi si une valeur de X l'est.
 :::
 
 ::: verifie À toi : une racine carrée
