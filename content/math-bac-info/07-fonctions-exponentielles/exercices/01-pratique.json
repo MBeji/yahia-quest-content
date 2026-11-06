@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Les premiers pas de la fonction exponentielle",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Simplifier A = e^(ln 8 − ln 2).",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ln 8 − ln 2 = ln(8/2) = ln 4, donc A = e^(ln 4) = 4 ✓ (e^(ln x) = x pour x > 0). Le résultat 6 répartit l'exponentielle sur la différence comme si A valait e^(ln 8) − e^(ln 2) = 8 − 2 ; 16 correspond à e^(ln 8 + ln 2) = 8 × 2, la mauvaise opération ; et 3 est le quotient ln 8/ln 2 des deux logarithmes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tout réel x, (eˣ)³/e^(x−2) est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "e⁵"
+        },
+        {
+          "id": "b",
+          "text": "e^(2x−2)"
+        },
+        {
+          "id": "c",
+          "text": "e^(2x+2)"
+        },
+        {
+          "id": "d",
+          "text": "e^(x³−x+2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(eˣ)³ = e^(3x), puis e^(3x)/e^(x−2) = e^(3x−(x−2)) = e^(2x+2) ✓ (en x = 0 : 1/e⁻² = e²). Le résultat e^(2x−2) oublie de changer le signe de −2 dans la soustraction ; e⁵ ajoute au lieu de multiplier, (eˣ)³ devenant e^(x+3) ; et e^(x³−x+2) confond (eˣ)³ avec e^(x³).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Résoudre dans ℝ : 5eˣ − 2 = 13.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "ln 3"
+        },
+        {
+          "id": "c",
+          "text": "ln(11/5)"
+        },
+        {
+          "id": "d",
+          "text": "ln(13/5)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On isole l'exponentielle : 5eˣ = 15, donc eˣ = 3 et x = ln 3 ≈ 1,10 ✓ (5e^(ln 3) − 2 = 15 − 2 = 13). Le résultat ln(13/5) oublie d'ajouter 2 avant de diviser par 5 ; ln(11/5) retranche 2 au lieu de l'ajouter ; et 3 est la valeur de eˣ, pas de x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la dérivée de f(x) = (x² + 1)e^(−3x) sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−3x² + 2x − 3)e^(−3x)"
+        },
+        {
+          "id": "b",
+          "text": "(x² + 2x + 1)e^(−3x)"
+        },
+        {
+          "id": "c",
+          "text": "(3x² + 2x + 3)e^(−3x)"
+        },
+        {
+          "id": "d",
+          "text": "−6x e^(−3x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec u = x² + 1 et v = e^(−3x) (v′ = −3e^(−3x)) : f′ = u′v + uv′ = 2x e^(−3x) − 3(x² + 1)e^(−3x) = (−3x² + 2x − 3)e^(−3x) ✓. Le résultat (x² + 2x + 1)e^(−3x) oublie le facteur −3 dans v′ ; (3x² + 2x + 3)e^(−3x) le prend égal à +3 ; et −6x e^(−3x) multiplie les dérivées u′v′ au lieu d'appliquer (uv)′ = u′v + uv′.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut la limite de (3eˣ − 1)/(eˣ + 2) quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/2"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On divise numérateur et dénominateur par eˣ : (3 − e^(−x))/(1 + 2e^(−x)). Comme e^(−x) → 0, la limite est 3/1 = 3 ✓. Le résultat −1/2 compare les termes constants alors que eˣ domine ; 1 ignore les coefficients, comme si eˣ/eˣ était tout ; +∞ conclut « grand sur grand » sans lever la forme indéterminée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour a > 0, quelle est l'écriture de a² × ³√a sous la forme aʳ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a^(2/3)"
+        },
+        {
+          "id": "b",
+          "text": "a^(5/3)"
+        },
+        {
+          "id": "c",
+          "text": "a³"
+        },
+        {
+          "id": "d",
+          "text": "a^(7/3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "³√a = a^(1/3), donc a² × a^(1/3) = a^(2+1/3) = a^(7/3) ✓ (6/3 + 1/3). Le résultat a^(2/3) multiplie les exposants 2 × 1/3 ; a^(5/3) les soustrait, 2 − 1/3 ; et a³ additionne 2 + 1 sans tenir compte de la racine cubique.",
+      "difficulty": 2
+    }
+  ]
+}

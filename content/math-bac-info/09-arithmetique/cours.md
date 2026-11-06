@@ -348,7 +348,7 @@ Trace pour a = 252 et b = 198 :
 Après l'étape 4, la ligne suivante est (a ; b) = (18 ; 0) : la boucle s'arrête et affiche a = 18.
 
 ::: piege Confondre « premiers entre eux » et « premiers »
-**Erreur : répondre « 8 et 15 ne sont pas premiers entre eux, car ni 8 ni 15 n'est un nombre premier ».** Cela tente parce que les deux expressions se ressemblent. Mais « premiers entre eux » parle du couple : 8 ∧ 15 = 1, puisque 8 = 15 × 0 + 8, 15 = 8 × 1 + 7, 8 = 7 × 1 + 1 donne un dernier reste non nul égal à 1. Aucun des deux n'est premier, et pourtant ils le sont entre eux.
+**Erreur : répondre « 8 et 15 ne sont pas premiers entre eux, car ni 8 ni 15 n'est un nombre premier ».** Cela tente parce que les deux expressions se ressemblent. Mais « premiers entre eux » parle du couple : 8 ∧ 15 = 1, puisque 15 = 8 × 1 + 7 puis 8 = 7 × 1 + 1 donne un dernier reste non nul égal à 1. Aucun des deux n'est premier, et pourtant ils le sont entre eux.
 :::
 
 ::: propriete

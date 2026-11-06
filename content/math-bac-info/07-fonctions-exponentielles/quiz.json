@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Fonctions exponentielles",
+  "questions": [
+    {
+      "prompt": "Un réel a vérifie eᵃ = 7. Quelle est la valeur de a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/ln 7"
+        },
+        {
+          "id": "b",
+          "text": "e⁷"
+        },
+        {
+          "id": "c",
+          "text": "ln 7"
+        },
+        {
+          "id": "d",
+          "text": "log 7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Par définition, y = eˣ équivaut à x = ln y : eᵃ = 7 donne a = ln 7 ≈ 1,95 ✓ (e^1,95 ≈ 7). Le logarithme décimal log 7 ≈ 0,85 donnerait e^0,85 ≈ 2,3 ; e⁷ ≈ 1 097 est le nombre dont 7 est l'exponentielle de l'autre côté, c'est le sens inverse ; et 1/ln 7 confond la fonction réciproque et l'inverse multiplicatif.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tout réel x, e^(2x) × e^(x+1) est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(2x) + e^(x+1)"
+        },
+        {
+          "id": "b",
+          "text": "e^(2x²+2x)"
+        },
+        {
+          "id": "c",
+          "text": "e^(3x−1)"
+        },
+        {
+          "id": "d",
+          "text": "e^(3x+1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les exposants s'additionnent : 2x + (x + 1) = 3x + 1, donc e^(2x) × e^(x+1) = e^(3x+1) ✓ (en x = 0 : 1 × e = e). Une somme d'exponentielles ne se simplifie pas ; e^(2x²+2x) multiplie les exposants, règle qui ne vaut que pour (eᵃ)ⁿ ; et e^(3x−1) se trompe de signe sur le +1 (en x = 0 il vaudrait 1/e).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la dérivée de f(x) = e^(1−3x) sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3e^(1−3x)"
+        },
+        {
+          "id": "b",
+          "text": "3e^(1−3x)"
+        },
+        {
+          "id": "c",
+          "text": "e^(1−3x)"
+        },
+        {
+          "id": "d",
+          "text": "(1 − 3x)e^(−3x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f = e^u avec u(x) = 1 − 3x et u′(x) = −3 : f′ = u′e^u = −3e^(1−3x) ✓. Écrire e^(1−3x) oublie le facteur u′ ; 3e^(1−3x) perd son signe ; et (1 − 3x)e^(−3x) dérive l'exponentielle comme une puissance (règle (uⁿ)′ = n uⁿ⁻¹ appliquée à tort).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la valeur de 64^(2/3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "32"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "64^(1/3) = ³√64 = 4 puisque 4³ = 64, puis 64^(2/3) = (64^(1/3))² = 4² = 16 ✓. Le résultat 4 oublie d'élever au carré ; 8 est √64 = 64^(1/2), la racine carrée ; et 32 traite l'exposant 2/3 comme une division de 64 par 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est l'ensemble des solutions de l'inéquation e^(1−x) ≤ e² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−3 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "[−1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "]−∞ ; −1]"
+        },
+        {
+          "id": "d",
+          "text": "]−∞ ; 3]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "exp est strictement croissante, donc e^(1−x) ≤ e² équivaut à 1 − x ≤ 2, soit −x ≤ 1. Multiplier par −1 renverse le sens : x ≥ −1, S = [−1 ; +∞[ ✓ (en x = 0 : e ≈ 2,72 ≤ e² ≈ 7,39 ; en x = −2 : e³ ≈ 20 > e², exclu). L'ensemble ]−∞ ; −1] oublie de renverser l'inégalité, et les deux autres ensembles viennent d'une erreur en déplaçant le 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut la limite de (e^(3x) − 1)/x quand x tend vers 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(e^(3x) − 1)/x = 3 × (e^(3x) − 1)/(3x) : avec h = 3x → 0, (e^h − 1)/h → 1, donc la limite est 3 × 1 = 3 ✓ (c'est le nombre dérivé de x ↦ e^(3x) en 0, soit 3e⁰). La valeur 1 oublie le coefficient 3 ; 0 conclut trop vite sur le numérateur qui tend vers 0 ; +∞ ne regarde que le dénominateur qui tend vers 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la dérivée de la fonction x ↦ 7ˣ sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(ln 7) × 7ˣ"
+        },
+        {
+          "id": "b",
+          "text": "7ˣ"
+        },
+        {
+          "id": "c",
+          "text": "7ˣ/ln 7"
+        },
+        {
+          "id": "d",
+          "text": "x × 7^(x−1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "7ˣ = e^(x ln 7) est de la forme e^u avec u′ = ln 7 : (7ˣ)′ = (ln 7) 7ˣ ✓. Écrire 7ˣ oublie le facteur ln 7 (vrai seulement pour la base e) ; x × 7^(x−1) applique la règle des puissances alors que la variable est en exposant ; et 7ˣ/ln 7 est une primitive de x ↦ 7ˣ, pas sa dérivée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "En quelle valeur de x la fonction f(x) = (x − 2)eˣ admet-elle son minimum sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = −1"
+        },
+        {
+          "id": "b",
+          "text": "x = 1"
+        },
+        {
+          "id": "c",
+          "text": "x = 2"
+        },
+        {
+          "id": "d",
+          "text": "x = 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par la formule du produit, f′(x) = 1 × eˣ + (x − 2)eˣ = (x − 1)eˣ ✓. Comme eˣ > 0, f′ a le signe de x − 1 : négative avant 1, positive après, donc le minimum est atteint en x = 1, où f(1) = −e. La valeur 2 oublie le terme (x − 2)′eˣ et ne garde que (x − 2)eˣ ; 3 se trompe de signe sur ce terme ; −1 se trompe de signe sur le facteur x − 1.",
+      "difficulty": 2
+    }
+  ]
+}

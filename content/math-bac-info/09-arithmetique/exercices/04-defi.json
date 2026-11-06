@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve d'Euclide",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Quel est l'ensemble des restes possibles de n² dans la division par 5, lorsque n décrit ℤ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{0 ; 1 ; 4}"
+        },
+        {
+          "id": "b",
+          "text": "{1 ; 4}"
+        },
+        {
+          "id": "c",
+          "text": "{0 ; 1 ; 2}"
+        },
+        {
+          "id": "d",
+          "text": "{0 ; 1 ; 2 ; 3 ; 4}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le reste de n par 5 est 0, 1, 2, 3 ou 4, et n² ≡ 0, 1, 4, 9 ≡ 4, 16 ≡ 1 [5]. Les restes de n² sont donc {0 ; 1 ; 4}, 0 compris (n = 5 donne 25). L'ensemble {1 ; 4} oublie le cas n multiple de 5 ; l'ensemble {0 ; 1 ; 2} lit les carrés de 0, 1, 2 comme des restes ; l'ensemble complet suppose que tous les restes sont des carrés.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour quelle valeur de n le nombre 2ⁿ − 1 est-il divisible par 31 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "20"
+        },
+        {
+          "id": "c",
+          "text": "24"
+        },
+        {
+          "id": "d",
+          "text": "31"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "31 = 2⁵ − 1, donc 2⁵ ≡ 1 [31]. Pour n = 20 = 5 × 4, 2²⁰ = (2⁵)⁴ ≡ 1, donc 31 divise 2²⁰ − 1 ✓. Pour n = 18 = 5 × 3 + 3, 2¹⁸ ≡ 2³ = 8 et 2¹⁸ − 1 ≡ 7 ; pour n = 24 = 5 × 4 + 4, 2²⁴ ≡ 16 et 2²⁴ − 1 ≡ 15 ; pour n = 31 = 5 × 6 + 1, 2³¹ ≡ 2 et 2³¹ − 1 ≡ 1. Seul un multiple de 5 convient, et la valeur 31 confond l'exposant avec le module.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quel est le plus grand entier d tel que d divise n(n + 1)(n + 2) pour tout entier naturel n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Parmi deux entiers consécutifs, l'un est pair ; parmi trois, l'un est multiple de 3 (les restes par 3 de n, n + 1, n + 2 sont 0, 1, 2 dans un certain ordre). Donc 2 et 3 divisent le produit, et 6 aussi, car 2 ∧ 3 = 1. Pour n = 1, le produit vaut 1 × 2 × 3 = 6, donc d divise 6 et ne peut pas être plus grand que 6 ✓. Les valeurs 12 et 24 échouent pour n = 1 ; la valeur 3 convient, mais n'est pas la plus grande.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On applique l'algorithme d'Euclide étendu à a = 47 et b = 18. Pour chaque reste rₖ on garde le couple (uₖ ; vₖ) tel que 47uₖ + 18vₖ = rₖ, avec rₖ = rₖ₋₂ − qₖrₖ₋₁, uₖ = uₖ₋₂ − qₖuₖ₋₁ et vₖ = vₖ₋₂ − qₖvₖ₋₁. On a obtenu r₂ = 11 avec (u₂ ; v₂) = (1 ; −2), r₃ = 7 avec (u₃ ; v₃) = (−1 ; 3), puis r₄ = 4. Que valent (u₄ ; v₄) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 ; 5)"
+        },
+        {
+          "id": "b",
+          "text": "(0 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(3 ; −8)"
+        },
+        {
+          "id": "d",
+          "text": "(2 ; −5)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "r₄ = r₂ − q₄r₃ avec 11 = 7 × 1 + 4, donc q₄ = 1. Alors u₄ = u₂ − q₄u₃ = 1 − 1 × (−1) = 2 et v₄ = v₂ − q₄v₃ = −2 − 1 × 3 = −5. Contrôle : 47 × 2 + 18 × (−5) = 94 − 90 = 4 ✓. Le couple (0 ; 1) additionne au lieu de soustraire ; le couple (−2 ; 5) échange les rôles de uₖ₋₂ et uₖ₋₁ ; le couple (3 ; −8) reprend le quotient 2 de l'étape précédente.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Deux entiers naturels a < b vérifient a ∧ b = 6 et a + b = 54. Combien de couples (a ; b) sont possibles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit a = 6a′ et b = 6b′ avec a′ ∧ b′ = 1 et a′ + b′ = 9, a′ < b′. Les couples (a′ ; b′) de somme 9 sont (1 ; 8), (2 ; 7), (3 ; 6), (4 ; 5), et (3 ; 6) est écarté car 3 ∧ 6 = 3. Il reste 3 couples, soit (6 ; 48), (12 ; 42) et (24 ; 30), de PGCD 6 et de somme 54 ✓. La valeur 4 oublie la condition a′ ∧ b′ = 1 ; la valeur 6 compte aussi les couples dans l'ordre inverse.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un code ISBN-10 correct, on remplace par erreur le chiffre a₅ = 2 par 6. Que devient S = a₁ + 2a₂ + … + 9a₉, et la clé repère-t-elle l'erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S augmente de 4 ; l'erreur est repérée"
+        },
+        {
+          "id": "b",
+          "text": "S augmente de 4 ; l'erreur n'est pas repérée"
+        },
+        {
+          "id": "c",
+          "text": "S augmente de 20 ; l'erreur est repérée"
+        },
+        {
+          "id": "d",
+          "text": "S augmente de 20 ; l'erreur n'est pas repérée"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le chiffre a₅ a le poids 5 : S varie de 5 × (6 − 2) = 20. Or 20 = 11 × 1 + 9 n'est pas un multiple de 11, donc le reste de S par 11 change et ne correspond plus à la clé imprimée : l'erreur est repérée ✓. Dire que S augmente de 4 oublie le poids du chiffre. Une erreur ne passerait inaperçue que si la variation de S était un multiple de 11.",
+      "difficulty": 3
+    }
+  ]
+}

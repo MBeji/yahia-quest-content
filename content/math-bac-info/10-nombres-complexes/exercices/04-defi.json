@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve de Bombelli",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Si |z| = 2, alors 1/z est égal à :",
+      "options": [
+        {
+          "id": "a",
+          "text": "z̄/2"
+        },
+        {
+          "id": "b",
+          "text": "z/4"
+        },
+        {
+          "id": "c",
+          "text": "z̄/4"
+        },
+        {
+          "id": "d",
+          "text": "−z/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour z ≠ 0, 1/z = z̄/(z z̄) = z̄/|z|² = z̄/4 ✓. Contrôle avec z = 2 : 1/2 et z̄/4 = 2/4 = 1/2. La réponse z̄/2 divise par le module au lieu de son carré. La réponse z/4 oublie de conjuguer. La réponse −z/4 confond z̄ avec −z.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit A(−1) et B(i). Quel est l'ensemble des points M(z), avec z ≠ −1, tels que Z = (z − i)/(z + 1) soit réel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (AB) privée de A"
+        },
+        {
+          "id": "b",
+          "text": "La droite (AB) privée de B"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de diamètre [AB] privé de A"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de diamètre [AB] privé de B"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Z est le quotient des affixes de BM⃗ et AM⃗. Il est réel si et seulement si ces vecteurs sont colinéaires, donc si M est sur la droite (AB). Le point A(−1) est exclu, puisque le quotient n'y existe pas, mais B(i) est conservé : Z = 0 est réel ✓. Contrôle : avec z = x + iy, Im(Z) = (y − x − 1)/((x + 1)² + y²), nulle sur la droite y = x + 1, qui passe par (−1 ; 0) et (0 ; 1). Le cercle de diamètre [AB] est le lieu d'un quotient imaginaire pur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On donne j = (−1 + i√3)/2, qui vérifie j³ = 1 et 1 + j + j² = 0. Que vaut S = 1 + j + j² + j³ + … + j²⁰²⁴ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "j̄"
+        },
+        {
+          "id": "d",
+          "text": "675"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme j³ = 1, les termes se regroupent par trois : 1 + j + j² = 0, puis j³ + j⁴ + j⁵ = j³(1 + j + j²) = 0, et ainsi de suite. Les exposants vont de 0 à 2024 : il y a 2025 termes, soit 675 groupes de trois, tous nuls, donc S = 0 ✓. La valeur 1 ne garde que le premier terme. La valeur j̄ est celle du dernier terme j²⁰²⁴ = j², non de la somme. La valeur 675 est le nombre de groupes, non leur somme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan complexe, O est l'origine, B a pour affixe 2 + i et C a pour affixe −1 + 2i. Quelle est la nature du triangle OBC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Équilatéral"
+        },
+        {
+          "id": "b",
+          "text": "Rectangle en O mais non isocèle"
+        },
+        {
+          "id": "c",
+          "text": "Isocèle en O mais non rectangle"
+        },
+        {
+          "id": "d",
+          "text": "Rectangle et isocèle en O"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "OB = |2 + i| = √5 et OC = |−1 + 2i| = √5 : le triangle est isocèle en O. Puis z̄z′ = (2 − i)(−1 + 2i) = −2 + 4i + i − 2i² = 5i, un imaginaire pur : OB⃗ ⟂ OC⃗, le triangle est rectangle en O ✓. Contrôle : BC = |−3 + i| = √10 = √(5 + 5), réciproque de Pythagore. Il n'est pas équilatéral, car BC = √10 ≠ √5.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelles sont les solutions de ((z − 1)/(z + 1))² = −1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{i}"
+        },
+        {
+          "id": "b",
+          "text": "{1 + i ; 1 − i}"
+        },
+        {
+          "id": "c",
+          "text": "{−1 + i ; −1 − i}"
+        },
+        {
+          "id": "d",
+          "text": "{i ; −i}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On pose Z = (z − 1)/(z + 1) : Z² = −1 donne Z = i ou Z = −i. Pour Z = i : z − 1 = i(z + 1), donc z(1 − i) = 1 + i et z = (1 + i)/(1 − i) = i. Pour Z = −i : z − 1 = −i(z + 1), donc z(1 + i) = 1 − i et z = (1 − i)/(1 + i) = −i. Les solutions sont i et −i ✓. Contrôle : (i − 1)/(i + 1) = i, de carré −1. L'ensemble {1 + i ; 1 − i} s'arrête à z − 1 = ±i, l'ensemble {−1 + i ; −1 − i} à z + 1 = ±i, et {i} oublie Z = −i.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le nombre 1 − i est solution de z² − (3 + i)z + c = 0, où c est un complexe. Quelle est l'autre solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 + i"
+        },
+        {
+          "id": "b",
+          "text": "1 + i"
+        },
+        {
+          "id": "c",
+          "text": "2 + i"
+        },
+        {
+          "id": "d",
+          "text": "2 + 2i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La somme des deux solutions vaut −b/a = 3 + i. L'autre solution est donc (3 + i) − (1 − i) = 2 + 2i ✓ ; on en déduit c = (1 − i)(2 + 2i) = 4. La conjuguée 1 + i n'est solution que pour des coefficients réels, ce qui n'est pas le cas puisque 3 + i ne l'est pas. La réponse 2 + i ne retranche que la partie réelle. La réponse −1 + i est l'opposée de la solution donnée.",
+      "difficulty": 3
+    }
+  ]
+}

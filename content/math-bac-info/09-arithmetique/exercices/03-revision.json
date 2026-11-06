@@ -1,0 +1,145 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les huit étapes d'Euclide",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Les entiers a et b vérifient a ≡ 5 [12] et b ≡ −3 [12]. Laquelle de ces congruences en découle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a − b ≡ 2 [12]"
+        },
+        {
+          "id": "b",
+          "text": "a + b ≡ 2 [12]"
+        },
+        {
+          "id": "c",
+          "text": "ab ≡ 15 [12]"
+        },
+        {
+          "id": "d",
+          "text": "a² ≡ 10 [12]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les congruences s'additionnent : a + b ≡ 5 + (−3) = 2 [12] ✓. Pour la différence, a − b ≡ 5 − (−3) = 8 [12], pas 2 : le signe de b a été oublié. Pour le produit, ab ≡ 5 × (−3) = −15 ≡ 9 [12], alors que 15 ≡ 3 [12]. Pour le carré, a² ≡ 25 ≡ 1 [12], pas 10.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le plus petit entier naturel congru à −29 modulo 8 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "29"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "−29 = 8 × (−4) + 3, donc −29 ≡ 3 [8] et 3 est le reste, donc le plus petit entier naturel concerné ✓. La valeur 11 est congrue à 3 (11 − 3 = 8) mais n'est pas la plus petite ; la valeur 5 est le reste de 29, obtenu en ignorant le signe ; la valeur 29 n'est pas congrue à −29, car la différence 58 n'est pas multiple de 8.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels nombres sont divisibles par 11 ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2915"
+        },
+        {
+          "id": "b",
+          "text": "4123"
+        },
+        {
+          "id": "c",
+          "text": "5281"
+        },
+        {
+          "id": "d",
+          "text": "6457"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "On utilise la somme alternée des chiffres, depuis les unités. 2915 : 5 − 1 + 9 − 2 = 11, multiple de 11 ✓. 6457 : 7 − 5 + 4 − 6 = 0 ✓. 4123 : 3 − 2 + 1 − 4 = −2, pas un multiple. 5281 : 1 − 8 + 2 − 5 = −10, pas un multiple.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Deux entiers naturels a et b vérifient a ∧ b = 15 et ab = 900. Que vaut a ∨ b ?",
+      "answerKey": {
+        "value": 60
+      },
+      "explanation": "Pour deux entiers naturels non nuls, (a ∧ b)(a ∨ b) = ab. Ici 15 × (a ∨ b) = 900, donc a ∨ b = 60. Un couple possible est a = 15 et b = 60 : 15 ∧ 60 = 15, 15 × 60 = 900 et 15 ∨ 60 = 60.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On vérifie que u = 6 et v = −4 donnent 10u + 14v = 4. Que peut-on affirmer sur d = 10 ∧ 14 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "d = 4"
+        },
+        {
+          "id": "b",
+          "text": "d divise 4"
+        },
+        {
+          "id": "c",
+          "text": "d est un multiple de 4"
+        },
+        {
+          "id": "d",
+          "text": "10 et 14 sont premiers entre eux"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "d divise 10 et 14, donc il divise la combinaison linéaire 10 × 6 + 14 × (−4) = 4 ✓. L'égalité ne dit pas que d vaut 4 : en réalité d = 2, qui divise 4 sans lui être égal ni en être un multiple. Pour conclure que 10 et 14 sont premiers entre eux, il faudrait une relation dont le second membre vaut 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour un entier k, 15 divise 8k. Lequel de ces énoncés est vrai ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 divise k"
+        },
+        {
+          "id": "b",
+          "text": "15 et k sont premiers entre eux"
+        },
+        {
+          "id": "c",
+          "text": "120 divise k"
+        },
+        {
+          "id": "d",
+          "text": "15 divise k"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "15 ∧ 8 = 1, car 15 = 8 × 1 + 7, 8 = 7 × 1 + 1. Le lemme de Gauss donne alors : 15 divise 8k, donc 15 divise k ✓. Les autres énoncés échouent pour k = 15, où 15 divise bien 8k = 120 : 8 ne divise pas 15, 120 ne divise pas 15, et 15 ∧ 15 = 15 ≠ 1.",
+      "difficulty": 2
+    }
+  ]
+}

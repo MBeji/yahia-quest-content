@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le grimoire de Cardan",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle égalité est vraie pour tous les nombres complexes z et z′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "|z + z′| = |z| + |z′|"
+        },
+        {
+          "id": "b",
+          "text": "|zz′| = |z||z′|"
+        },
+        {
+          "id": "c",
+          "text": "|z|² = z²"
+        },
+        {
+          "id": "d",
+          "text": "conj(z + z′) = z̄ z̄′"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le module d'un produit est le produit des modules : |zz′| = |z||z′| pour tous z et z′ ✓. L'égalité |z + z′| = |z| + |z′| n'est qu'une inégalité ≤ : avec z = 1 et z′ = −1, le premier membre vaut 0 et le second 2. On a |z|² = z z̄ et non z² : pour z = i, |i|² = 1 alors que i² = −1. Le conjugué d'une somme est la somme z̄ + z̄′, non le produit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour quelles valeurs du réel p l'équation z² − 2z + p = 0 a-t-elle deux solutions non réelles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p < 1"
+        },
+        {
+          "id": "b",
+          "text": "p = 1"
+        },
+        {
+          "id": "c",
+          "text": "p > 1"
+        },
+        {
+          "id": "d",
+          "text": "p > 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les coefficients sont réels : les solutions sont non réelles si et seulement si Δ < 0. Ici Δ = 4 − 4p < 0 équivaut à p > 1 ✓ ; par exemple p = 5 donne 1 ± 2i. Pour p < 1, Δ > 0 et les solutions sont réelles ; pour p = 1, Δ = 0 et la solution double 1 est réelle. La condition p > 4 vient de Δ = 4 − p, qui oublie le facteur 4 du discriminant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est l'ensemble des points M(z) tels que |z + 2 − i| = 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre Ω(−2 − i) et de rayon 3"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre Ω(−2 + i) et de rayon 3"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre Ω(2 − i) et de rayon 3"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre Ω(2 + i) et de rayon 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit z + 2 − i = z − (−2 + i) : l'équation dit ΩM = 3 avec Ω d'affixe −2 + i, le cercle de centre Ω(−2 + i) et de rayon 3 ✓. Le centre se lit dans z − (affixe du centre) : ses signes sont opposés à ceux écrits dans la formule. Les autres centres recopient les signes de la formule, ou n'en inversent qu'un seul.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelles sont les racines carrées de i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±(1 + i)"
+        },
+        {
+          "id": "b",
+          "text": "±(√2/2)(1 + i)"
+        },
+        {
+          "id": "c",
+          "text": "±(√2/2)(1 − i)"
+        },
+        {
+          "id": "d",
+          "text": "±(1/2)(1 + i)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On cherche x² − y² = 0 et x² + y² = |i| = 1, donc x² = y² = 1/2. Comme 2xy = 1 est positif, x et y ont le même signe : z = ±(√2/2)(1 + i) ✓. Contrôle : ((√2/2)(1 + i))² = (1/2) × 2i = i. Le nombre ±(1 + i) a pour carré 2i ; le nombre ±(1/2)(1 + i) a pour carré i/2 ; le nombre ±(√2/2)(1 − i) a pour carré −i, car le signe de xy est ignoré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On exécute l'algorithme suivant pour obtenir une racine carrée de d = a + ib :\nmodu ← √(a² + b²)\nx ← √((a + modu)/2)\ny ← b/(2x)\nPour quel nombre d l'étape y ← b/(2x) divise-t-elle par 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "d = 9"
+        },
+        {
+          "id": "b",
+          "text": "d = 9i"
+        },
+        {
+          "id": "c",
+          "text": "d = −9"
+        },
+        {
+          "id": "d",
+          "text": "d = −9i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour d = −9, a = −9, b = 0 et modu = 9, donc x = √((−9 + 9)/2) = 0 et l'étape y ← 0/(2 × 0) divise par 0 ✓. Pour d = 9, modu = 9 et x = 3. Pour d = 9i et d = −9i, a = 0 et modu = 9, donc x = √(9/2) n'est pas nul. Le nombre x ne s'annule que si a + modu = 0, c'est-à-dire pour un réel négatif.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelles sont les solutions de (1 + i)z² − (3 + 2i)z + 2 + i = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 et (−3 + i)/2"
+        },
+        {
+          "id": "b",
+          "text": "1 et (3 + i)/2"
+        },
+        {
+          "id": "c",
+          "text": "1 et (3 − i)/2"
+        },
+        {
+          "id": "d",
+          "text": "1 et 2 + i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a a + b + c = (1 + i) − (3 + 2i) + (2 + i) = 0, donc 1 est solution et l'autre vaut c/a = (2 + i)/(1 + i) = (2 + i)(1 − i)/2 = (3 − i)/2 ✓. Contrôle par la somme : 1 + (3 − i)/2 = (5 − i)/2 et (3 + 2i)/(1 + i) = (3 + 2i)(1 − i)/2 = (5 − i)/2 ✓. La réponse avec (3 + i)/2 se trompe de signe en multipliant par le conjugué. La réponse 1 et 2 + i oublie de diviser par a. La réponse −1 et (−3 + i)/2 applique la règle de a − b + c = 0.",
+      "difficulty": 2
+    }
+  ]
+}
