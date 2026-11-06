@@ -196,15 +196,15 @@ Le conjugué de a + ib est a − ib ; il commute avec la somme, le produit, la p
 Soit u⃗(2 ; 1), v⃗(6 ; 3) et w⃗(−1 ; 2). On voit que v⃗ = 3u⃗, donc u⃗ et v⃗ sont colinéaires, et que 2 × (−1) + 1 × 2 = 0, donc u⃗ et w⃗ sont orthogonaux.
 Calculons, avec z = 2 + i : z̄z′ pour z′ = 6 + 3i donne (2 − i)(6 + 3i) = 15, un réel ; pour z′ = −1 + 2i il donne (2 − i)(−1 + 2i) = 5i, un imaginaire pur. Est-ce un hasard ?
 
-::: figure Le vecteur v = 3u reste sur la direction de u (z̄z′ = 15, réel) ; le vecteur w fait un angle droit avec u (z̄z′ = 5i, imaginaire pur).
+::: figure Le vecteur v⃗ = 3u⃗ reste sur la direction de u⃗ (z̄z′ = 15, réel) ; le vecteur w⃗ fait un angle droit avec u⃗ (z̄z′ = 5i, imaginaire pur).
 <svg viewBox="0 0 270 175">
 <title>Plan complexe : les vecteurs u(2 ; 1) et v(6 ; 3) = 3u sont portés par la même droite, et w(−1 ; 2) forme un angle droit avec u</title>
 <line x1="5" y1="140" x2="248" y2="140" stroke="#0f172a" stroke-width="1.6"/>
 <polygon points="248,140 240,144 240,136" fill="#0f172a"/>
 <line x1="50" y1="149" x2="50" y2="38" stroke="#0f172a" stroke-width="1.6"/>
 <polygon points="50,38 54,46 46,46" fill="#0f172a"/>
-<line x1="50" y1="140" x2="230" y2="50" stroke="#fcd34d" stroke-width="6"/>
-<polygon points="230,50 221.95,60.73 216.58,50" fill="#fcd34d"/>
+<line x1="50" y1="140" x2="230" y2="50" stroke="#d97706" stroke-width="4" stroke-opacity="0.45"/>
+<polygon points="230,50 222.62,59.84 217.7,50" fill="#d97706" fill-opacity="0.45"/>
 <line x1="50" y1="140" x2="110" y2="110" stroke="#0f6e56" stroke-width="3"/>
 <polygon points="110,110 103.29,118.94 98.82,110" fill="#0f6e56"/>
 <line x1="50" y1="140" x2="20" y2="80" stroke="#2563eb" stroke-width="3"/>
@@ -214,7 +214,7 @@ Calculons, avec z = 2 + i : z̄z′ pour z′ = 6 + 3i donne (2 − i)(6 + 3i) =
 </svg>
 :::
 
-La partie réelle 15 de z̄z′ est le produit scalaire u · v, et sa partie imaginaire nulle dit que v reste sur la direction de u.
+La partie réelle 15 de z̄z′ est le produit scalaire u⃗ · v⃗, et sa partie imaginaire nulle dit que v⃗ reste sur la direction de u⃗.
 
 ::: exemple Calculer z̄z′ en coordonnées
 1. Pour z = a + ib et z′ = a′ + ib′, on a z̄z′ = (a − ib)(a′ + ib′).
@@ -425,6 +425,7 @@ Après x² = 9 et y² = 4, on écrit z = ±3 ± 2i, soit quatre solutions. Cela 
 ::: propriete
 - Tout complexe d non nul a deux **racines carrées** opposées (résultat admis). Pour d = a + ib : x² − y² = a, x² + y² = |d|, et xy a le signe de b.
 - Si d est un réel positif, ses racines carrées sont ±√d ; s'il est négatif, elles sont ±i√(−d).
+
 Cas limite : l'algorithme ci-dessous échoue pour un réel négatif, car alors a + |d| = 0.
 :::
 
