@@ -1,0 +1,110 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du nuage",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Les 60 joueurs d'un club sont classés selon leur temps de jeu hebdomadaire, en heures : [0 ; 5[ pour 6 joueurs, [5 ; 10[ pour 12, [10 ; 15[ pour 22, [15 ; 20[ pour 12 et [20 ; 25[ pour 8. En supposant les valeurs réparties uniformément dans chaque classe, quelle est la valeur de Q₁ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,25"
+        },
+        {
+          "id": "b",
+          "text": "7,5"
+        },
+        {
+          "id": "c",
+          "text": "8,75"
+        },
+        {
+          "id": "d",
+          "text": "9,17"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Q₁ est la valeur de rang 60/4 = 15. Les effectifs cumulés valent 6, 18, 40, 52, 60 : le rang 15 est dans la classe [5 ; 10[, où le cumul passe de 6 à 18. Par interpolation linéaire, Q₁ = 5 + 5 × (15 − 6) / (18 − 6) = 5 + 5 × 0,75 = 8,75 h. La valeur 7,5 est le centre de la classe, 6,25 inverse la proportion (18 − 15 au lieu de 15 − 6), et 9,17 = 5 + 5 × 15/18 oublie de retrancher l'effectif cumulé précédent.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une seule de ces paires peut être formée des deux droites de régression D : y = ax + b et D′ : x = a′y + b′ d'une même série. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D : y = 2x + 1 et D′ : x = −0,3y + 4"
+        },
+        {
+          "id": "b",
+          "text": "D : y = 2x + 1 et D′ : x = 0,3y + 4"
+        },
+        {
+          "id": "c",
+          "text": "D : y = 2x + 1 et D′ : x = 0,8y + 2"
+        },
+        {
+          "id": "d",
+          "text": "D : y = −0,5x + 3 et D′ : x = 0,5y + 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les coefficients doivent avoir le même signe et vérifier a a′ = r², donc 0 ≤ a a′ ≤ 1. La paire y = 2x + 1 et x = 0,3y + 4 donne a a′ = 0,6, valeur possible pour r². Avec x = −0,3y + 4, a a′ = −0,6 est négatif ; avec x = 0,8y + 2, a a′ = 1,6 dépasse 1 ; avec y = −0,5x + 3 et x = 0,5y + 1, a a′ = −0,25 est négatif.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les distances X d'une série double, exprimées en kilomètres, sont converties en mètres : X′ = 1000X. Que deviennent la covariance et le coefficient de corrélation linéaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "cov est multipliée par 1000 et r est inchangé"
+        },
+        {
+          "id": "b",
+          "text": "cov et r sont tous deux multipliés par 1000"
+        },
+        {
+          "id": "c",
+          "text": "cov est inchangée et r est multiplié par 1000"
+        },
+        {
+          "id": "d",
+          "text": "cov et r sont tous deux inchangés"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme cov(aX + b ; Y) = a cov(X ; Y), la covariance est multipliée par 1000. Le coefficient r = cov / (σ(X) σ(Y)) est inchangé : σ(X′) = 1000 σ(X) multiplie aussi le dénominateur par 1000. Le coefficient r ne dépend pas de l'unité, contrairement à la covariance.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour 6 points, on a calculé Σ (MᵢPᵢ)² = 24a² − 60a + 90, où a est le coefficient directeur de la droite y = ax + b qui passe par le point moyen. Pour quelle valeur de a cette somme est-elle minimale ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 1.25
+      },
+      "explanation": "La somme est un trinôme du second degré en a, de coefficient dominant 24 > 0 : il est minimal en a = −(−60) / (2 × 24) = 60 / 48 = 1,25. On retrouve a = cov(X ; Y) / V(X), car 24 = 6 V(X) donne V(X) = 4 et 60 = 2 × 6 × cov donne cov = 5, soit a = 5/4 = 1,25.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur 50 individus, on a Σxᵢ = 200, Σyᵢ = 350, Σxᵢ² = 1100 et Σxᵢyᵢ = 1800. À l'aide de la droite de régression de Y en X, quelle valeur de Y prévoit-on pour x = 10 ?",
+      "answerKey": {
+        "value": 15
+      },
+      "explanation": "On a X̄ = 200/50 = 4, Ȳ = 350/50 = 7, V(X) = 1100/50 − 4² = 22 − 16 = 6 et cov(X ; Y) = 1800/50 − 4 × 7 = 36 − 28 = 8. Donc a = 8/6 = 4/3 et b = 7 − (4/3) × 4 = 5/3, d'où y = (4x + 5) / 3. Pour x = 10, y = 45 / 3 = 15.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un nuage (x ; y), avec x > 0 et y > 0, est ajusté par le modèle y = k x^α : en posant X = ln x et Y = ln y, la droite des moindres carrés est Y = 0,5X + 3. Quelle valeur de y prévoit-on pour x = 4 ? Arrondis au dixième.",
+      "answerKey": {
+        "value": 40.2,
+        "tolerance": 0.1
+      },
+      "explanation": "Le modèle est ln y = 0,5 ln x + 3, donc y = e^(0,5 ln x + 3) = e³ × x^0,5 = e³ √x. Pour x = 4, y = e³ × 2 ≈ 20,09 × 2 ≈ 40,2. Donner Y = 0,5 ln 4 + 3 ≈ 3,69 comme prévision oublierait de revenir à y par l'exponentielle.",
+      "difficulty": 3
+    }
+  ]
+}

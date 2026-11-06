@@ -1,0 +1,153 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Probabilités",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "On considère un espace probabilisé fini (Ω, 𝒫(Ω), p) et deux événements A et B tels que p(B) ≠ 0. Quelles affirmations sont toujours vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(A̅) = 1 − p(A)"
+        },
+        {
+          "id": "b",
+          "text": "p(A ∪ B) = p(A) + p(B)"
+        },
+        {
+          "id": "c",
+          "text": "p(A ∩ B) = p(A) × p(B)"
+        },
+        {
+          "id": "d",
+          "text": "p(A/B) = p(A ∩ B)/p(B)"
+        },
+        {
+          "id": "e",
+          "text": "p(A̅/B) = 1 − p(A/B)"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "d", "e"]
+      },
+      "explanation": "L'égalité p(A̅) = 1 − p(A) vient de p(Ω) = 1 et de l'additivité sur A et A̅, incompatibles. Le quotient p(A ∩ B)/p(B) est la définition de p(A/B). L'égalité p(A̅/B) = 1 − p(A/B) est vraie : A et A̅ partagent B en deux parties dont les probabilités s'additionnent à p(B). La somme p(A) + p(B) n'est celle de la réunion que pour des événements incompatibles, et le produit p(A) × p(B) n'est celui de l'intersection que pour des événements indépendants.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour retrouver la cause d'un événement observé (quelle est la probabilité de la cause Aₖ sachant E ?), remets dans l'ordre les étapes de la méthode.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contrôler que le résultat est entre 0 et 1 et cohérent avec l'arbre"
+        },
+        {
+          "id": "b",
+          "text": "Calculer p(E) par la formule des probabilités totales"
+        },
+        {
+          "id": "c",
+          "text": "Nommer les événements : la partition A₁, A₂, A₃ des causes et l'événement observé E"
+        },
+        {
+          "id": "d",
+          "text": "Diviser p(E/Aₖ) × p(Aₖ) par p(E) pour obtenir p(Aₖ/E)"
+        },
+        {
+          "id": "e",
+          "text": "Traduire l'énoncé en probabilités : les p(Aᵢ) et les p(E/Aᵢ)"
+        }
+      ],
+      "answerKey": {
+        "order": ["c", "e", "b", "d", "a"]
+      },
+      "explanation": "On nomme d'abord les événements, ce qui permet de traduire l'énoncé en p(Aᵢ) et p(E/Aᵢ). Ces données servent ensuite à calculer p(E) par les probabilités totales, dénominateur de la formule de Bayes. On divise alors p(E/Aₖ) × p(Aₖ) par p(E), et l'on termine par le contrôle : une probabilité reste dans [0 ; 1].",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "X prend les valeurs 1, 2, 3 et 4 avec les probabilités 0,1 ; 0,2 ; 0,3 et 0,4. Calculer la variance V(X). Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 1
+      },
+      "explanation": "E(X) = 1 × 0,1 + 2 × 0,2 + 3 × 0,3 + 4 × 0,4 = 0,1 + 0,4 + 0,9 + 1,6 = 3. Puis E(X²) = 1 × 0,1 + 4 × 0,2 + 9 × 0,3 + 16 × 0,4 = 0,1 + 0,8 + 2,7 + 6,4 = 10. Alors V(X) = E(X²) − (E(X))² = 10 − 9 = 1 ✓. Contrôle par la définition : 4 × 0,1 + 1 × 0,2 + 0 × 0,3 + 1 × 0,4 = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit X la variable aléatoire de densité f(x) = x/4 sur l'intervalle [1 ; 3]. Quelle est la probabilité p(X ≤ 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "3/8"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "3/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une primitive de x/4 est x²/8. Contrôle de la densité : ∫₁³ (x/4)dx = [x²/8]₁³ = 9/8 − 1/8 = 1 ✓. Alors p(X ≤ 2) = ∫₁² (x/4)dx = [x²/8]₁² = 4/8 − 1/8 = 3/8 ✓. La valeur 3/4 prend x²/4 pour primitive. La valeur 1/2 traite X comme uniforme en prenant le milieu de [1 ; 3]. La valeur 1/4 est la hauteur f(1) de la courbe, pas une aire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On exécute le programme suivant :\nLire choix, a, b\nSi choix = 1 alors p ← (b − a)/10 (loi uniforme sur [0 ; 10])\nSinon p ← exp(−0,5 × a) − exp(−0,5 × b) (loi exponentielle de paramètre 0,5)\nAfficher p\nAvec choix = 2, a = 1 et b = 3, quelle valeur est affichée, arrondie au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,20"
+        },
+        {
+          "id": "b",
+          "text": "0,22"
+        },
+        {
+          "id": "c",
+          "text": "0,37"
+        },
+        {
+          "id": "d",
+          "text": "0,38"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme choix vaut 2, le programme passe dans la seconde branche : p = exp(−0,5 × 1) − exp(−0,5 × 3) = exp(−0,5) − exp(−1,5) ≈ 0,6065 − 0,2231 = 0,3834, soit 0,38 ✓. La valeur 0,20 = (3 − 1)/10 applique la branche de la loi uniforme. La valeur 0,22 ne garde que le second terme. La valeur 0,37 = exp(−0,5 × (3 − 1)) croit que la probabilité ne dépend que de la longueur b − a, ce qui n'est vrai que pour la loi uniforme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La durée de vie X d'une lampe, en années, suit la loi exponentielle de paramètre 0,1. La lampe a déjà fonctionné 3 ans. Quelle est la probabilité qu'elle fonctionne encore au moins 5 ans, arrondie au millième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,393"
+        },
+        {
+          "id": "b",
+          "text": "0,449"
+        },
+        {
+          "id": "c",
+          "text": "0,607"
+        },
+        {
+          "id": "d",
+          "text": "0,741"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Fonctionner encore 5 ans après 3 ans, c'est X ≥ 8 sachant X ≥ 3. Comme (X ≥ 8) ⊂ (X ≥ 3), p(X ≥ 8 / X ≥ 3) = p(X ≥ 8)/p(X ≥ 3) = e^(−0,8)/e^(−0,3) = e^(−0,5) ≈ 0,607 ✓. La valeur 0,449 = e^(−0,8) ignore la condition. La valeur 0,741 = e^(−0,3) est la probabilité de dépasser 3 ans. La valeur 0,393 = 1 − e^(−0,5) est la probabilité de tomber en panne avant 5 ans de plus.",
+      "difficulty": 3
+    }
+  ]
+}

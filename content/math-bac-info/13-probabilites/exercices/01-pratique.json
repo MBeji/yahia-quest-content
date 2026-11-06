@@ -1,0 +1,139 @@
+{
+  "title": "⭐ Exercice : Premiers pas dans le hasard",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans un parc de 40 ordinateurs, 25 fonctionnent sous Windows, 18 sous Linux (certains ont les deux systèmes) et 5 n'ont aucun des deux. On choisit un ordinateur au hasard. Quelle est la probabilité qu'il ait les deux systèmes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/8"
+        },
+        {
+          "id": "b",
+          "text": "1/5"
+        },
+        {
+          "id": "c",
+          "text": "9/20"
+        },
+        {
+          "id": "d",
+          "text": "7/8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les ordinateurs équiprobables ont au moins un système pour 40 − 5 = 35 d'entre eux. Comme p(W ∪ L) = p(W) + p(L) − p(W ∩ L), le nombre de machines à deux systèmes est 25 + 18 − 35 = 8, donc p(W ∩ L) = 8/40 = 1/5 ✓. La valeur 1/8 est la part des machines sans système, 9/20 celle des machines sous Linux, et 7/8 celle des machines qui ont au moins un système.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La durée de vie X d'un composant, en années, suit la loi exponentielle de paramètre 0,3. Quelle est, arrondie au centième, la probabilité que le composant dure au moins 2 ans ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,16"
+        },
+        {
+          "id": "b",
+          "text": "0,45"
+        },
+        {
+          "id": "c",
+          "text": "0,55"
+        },
+        {
+          "id": "d",
+          "text": "0,74"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour une loi exponentielle, p(X ≥ a) = e^(−λa), donc p(X ≥ 2) = e^(−0,3 × 2) = e^(−0,6) ≈ 0,549, soit 0,55 ✓. La valeur 0,45 est 1 − e^(−0,6) = F(2), la probabilité de tomber en panne avant 2 ans. La valeur 0,74 oublie le facteur 2 dans l'exposant : e^(−0,3). La valeur 0,16 multiplie par λ, ce qui donne la hauteur de la densité en 2 et non une probabilité.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un groupe de 40 étudiants, 24 sont des filles. Parmi les filles, 6 portent des lunettes ; parmi les 16 garçons, 8 en portent. On choisit au hasard un étudiant qui porte des lunettes. Quelle est la probabilité que ce soit une fille ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/20"
+        },
+        {
+          "id": "b",
+          "text": "1/4"
+        },
+        {
+          "id": "c",
+          "text": "3/7"
+        },
+        {
+          "id": "d",
+          "text": "3/5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il y a 6 + 8 = 14 étudiants à lunettes, dont 6 filles : p(fille/lunettes) = (6/40)/(14/40) = 6/14 = 3/7 ✓. La valeur 1/4 = 6/24 est la probabilité inverse, celle de porter des lunettes quand on est une fille. La valeur 3/20 = 6/40 ne divise pas par les étudiants à lunettes. La valeur 3/5 = 24/40 est la part des filles dans le groupe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une urne contient 4 boules rouges et 6 boules noires. On tire successivement deux boules sans remise. Quelle est la probabilité d'obtenir deux boules rouges ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/15"
+        },
+        {
+          "id": "b",
+          "text": "4/25"
+        },
+        {
+          "id": "c",
+          "text": "1/3"
+        },
+        {
+          "id": "d",
+          "text": "2/5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur l'arbre, p(R₁) = 4/10. Sachant R₁, il reste 3 rouges parmi 9 boules, donc p(R₂/R₁) = 3/9. Alors p(R₁ ∩ R₂) = 4/10 × 3/9 = 12/90 = 2/15 ✓. La valeur 4/25 = (4/10)² suppose un tirage avec remise. La valeur 2/5 ne garde que le premier tirage. La valeur 1/3 = 3/9 ne garde que la probabilité conditionnelle.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un jeu a pour gain algébrique X, en dinars : X vaut −2 avec la probabilité 0,5 ; vaut 1 avec la probabilité 0,3 et vaut 5 avec la probabilité 0,2. Calculer l'espérance E(X). Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": 0.3
+      },
+      "explanation": "E(X) = −2 × 0,5 + 1 × 0,3 + 5 × 0,2 = −1 + 0,3 + 1 = 0,3 ✓. Le gain moyen est de 0,3 dinar par partie, donc le jeu est favorable au joueur. La moyenne simple des trois valeurs, (−2 + 1 + 5)/3, serait fausse : elle ignore les probabilités.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un serveur reçoit 4 requêtes indépendantes ; chacune provient de l'étranger avec la probabilité 0,3. Quelle est la probabilité qu'aucune ne provienne de l'étranger ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,0081"
+        },
+        {
+          "id": "b",
+          "text": "0,2401"
+        },
+        {
+          "id": "c",
+          "text": "0,4116"
+        },
+        {
+          "id": "d",
+          "text": "0,7599"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le nombre X de requêtes venues de l'étranger suit la loi binomiale de paramètres 4 et 0,3 : p(X = 0) = C₄⁰ × 0,3⁰ × 0,7⁴ = 0,7⁴ = 0,2401 ✓. La valeur 0,0081 = 0,3⁴ est la probabilité que les quatre viennent de l'étranger. La valeur 0,4116 = 4 × 0,3 × 0,7³ est p(X = 1). La valeur 0,7599 = 1 − 0,2401 est la probabilité qu'au moins une vienne de l'étranger.",
+      "difficulty": 2
+    }
+  ]
+}

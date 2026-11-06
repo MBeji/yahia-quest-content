@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas dans les matrices",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Soit A = (1 −2 ; 4 0) et B = (0 5 ; −1 3). Quelle est la matrice A + 2B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 3 ; 3 3)"
+        },
+        {
+          "id": "b",
+          "text": "(1 −12 ; 6 −6)"
+        },
+        {
+          "id": "c",
+          "text": "(2 1 ; 7 3)"
+        },
+        {
+          "id": "d",
+          "text": "(1 8 ; 2 6)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On double chaque coefficient de B, puis on additionne case par case : 2B = (0 10 ; −2 6) et A + 2B = (1 8 ; 2 6) ✓. La matrice (1 3 ; 3 3) est A + B, sans le facteur 2. La matrice (1 −12 ; 6 −6) est A − 2B. La matrice (2 1 ; 7 3) double A au lieu de B.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les matrices A et C sont de dimension 2 × 3, B de dimension 3 × 2 et D de dimension 2 × 2. Laquelle de ces sommes est définie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A + B"
+        },
+        {
+          "id": "b",
+          "text": "A + C"
+        },
+        {
+          "id": "c",
+          "text": "A + D"
+        },
+        {
+          "id": "d",
+          "text": "B + D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une somme n'est définie que pour deux matrices de même dimension : A et C sont toutes deux 2 × 3, donc A + C existe ✓. A + B a le même nombre de coefficients, 6, mais les dimensions 2 × 3 et 3 × 2 diffèrent. A + D partage seulement le nombre de lignes, et B + D seulement le nombre de colonnes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit A = (2 −1 3 ; 0 4 1) et B = (1 5 ; −2 0 ; 3 2). Quel est le coefficient de la ligne 2 et de la colonne 1 du produit C = A × B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ce coefficient est le produit de la ligne 2 de A par la colonne 1 de B : 0 × 1 + 4 × (−2) + 1 × 3 = −5 ✓. La valeur 2 utilise la colonne 2 de B. La valeur 13 utilise la ligne 1 de A. La valeur 16 est le coefficient de la ligne 1 et de la colonne 2, c'est-à-dire que les deux indices sont échangés.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut le déterminant de M = (2 1 0 ; −1 3 4 ; 0 5 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−35"
+        },
+        {
+          "id": "b",
+          "text": "−34"
+        },
+        {
+          "id": "c",
+          "text": "−33"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On développe suivant la ligne 1 avec les signes + − + : 2 × (3 × 1 − 4 × 5) − 1 × (−1 × 1 − 4 × 0) + 0 = 2 × (−17) − 1 × (−1) = −34 + 1 = −33 ✓. La valeur −35 oublie que le deuxième terme est précédé d'un signe moins appliqué à −1. La valeur −34 oublie ce terme. La valeur 6 multiplie les coefficients de la diagonale, ce qui ne vaut que pour une matrice triangulaire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour quelle valeur du réel k la matrice (k 6 ; 2 3) n'est-elle pas inversible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "Aucune valeur de k"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La matrice n'est pas inversible quand son déterminant est nul : 3k − 6 × 2 = 0, donc 3k = 12 et k = 4 ✓. La valeur 12 oublie de diviser par 3. La valeur −4 vient d'un déterminant 3k + 12. Dire qu'aucune valeur ne convient suppose qu'une matrice dont tous les coefficients sont non nuls est toujours inversible, alors que k = 4 rend les deux lignes proportionnelles.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On résout par les formules de Cramer le système\n2x − y + z = 3\nx + 4y − z = 0\n3x + y + 2z = 5\nQuelle matrice donne le numérateur de la formule de y ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3 −1 1 ; 0 4 −1 ; 5 1 2)"
+        },
+        {
+          "id": "b",
+          "text": "(2 −1 1 ; 3 0 5 ; 3 1 2)"
+        },
+        {
+          "id": "c",
+          "text": "(2 3 1 ; 1 0 −1 ; 3 5 2)"
+        },
+        {
+          "id": "d",
+          "text": "(2 −1 3 ; 1 4 0 ; 3 1 5)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La colonne 2 de la matrice du système correspond à y : pour y, on la remplace par les seconds membres (3 ; 0 ; 5), ce qui donne (2 3 1 ; 1 0 −1 ; 3 5 2) ✓. Remplacer la colonne 1 donne le numérateur de x, et la colonne 3 celui de z. Placer les seconds membres sur une ligne au lieu d'une colonne ne suit pas la règle.",
+      "difficulty": 2
+    }
+  ]
+}

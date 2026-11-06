@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Séries statistiques à deux caractères",
+  "questions": [
+    {
+      "prompt": "Pour une série, on a X̄ = 10 et σ(X) = 2. On pose Y = −3X + 4. Que vaut σ(Y) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6"
+        },
+        {
+          "id": "b",
+          "text": "−2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour Y = aX + b, l'écart-type vaut |a| σ(X) = 3 × 2 = 6 : le facteur multiplicatif agit par sa valeur absolue et la constante 4 n'intervient pas. Un écart-type n'est jamais négatif, ce qui exclut −6 ; −2 viendrait de −3 × 2 + 4, qui traite l'écart-type comme la moyenne ; 2 ignorerait le facteur −3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Voici une série rangée de 11 valeurs : 4, 6, 7, 9, 10, 12, 13, 15, 18, 19, 25. Quel est son écart interquartile ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec N = 11, Q₁ est la valeur de rang ⌈11/4⌉ = ⌈2,75⌉ = 3, soit 7, et Q₃ celle de rang ⌈33/4⌉ = ⌈8,25⌉ = 9, soit 18. L'écart interquartile est 18 − 7 = 11. Le nombre 6 serait Q₃ − Me = 18 − 12, 14 serait Q₃ − 4 (écart avec la plus petite valeur) et 21 serait 25 − 4, écart entre les valeurs extrêmes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tracer la droite de Mayer d'un nuage de 10 points, comment forme-t-on les deux groupes de points ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les 5 points d'abscisses les plus petites et les 5 autres"
+        },
+        {
+          "id": "b",
+          "text": "Les 5 premiers points saisis dans le tableur et les 5 derniers"
+        },
+        {
+          "id": "c",
+          "text": "Les 5 points au-dessus d'une droite tracée à l'œil et les 5 au-dessous"
+        },
+        {
+          "id": "d",
+          "text": "Les 5 points d'ordonnées les plus petites et les 5 autres"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On range d'abord les points par abscisses croissantes, puis on les partage en deux groupes de même effectif : les 5 plus à gauche et les 5 plus à droite, dont on calcule les points moyens G₁ et G₂. L'ordre de saisie ne dit rien de la position des points, le partage selon une droite tracée à l'œil dépend de cette droite avant même qu'on l'ait calculée, et le tri par ordonnées mélange des points éloignés horizontalement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On sait que cov(X ; Y) = 8. Que vaut cov(3X + 2 ; Y) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "24"
+        },
+        {
+          "id": "d",
+          "text": "26"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour tous réels a et b, cov(aX + b ; Y) = a cov(X ; Y) : ici a = 3, donc le résultat est 3 × 8 = 24 et la constante 2 ne joue aucun rôle. La valeur 8 ignorerait le facteur 3, 10 ajouterait 2 à 8, et 26 appliquerait « 3 × 8 + 2 » comme pour une fonction affine ordinaire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour une série double, on trouve r = −0,62. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La corrélation linéaire est forte, et Y augmente quand X augmente"
+        },
+        {
+          "id": "b",
+          "text": "La corrélation linéaire est forte, et Y diminue quand X augmente"
+        },
+        {
+          "id": "c",
+          "text": "La corrélation linéaire est faible, et Y augmente quand X augmente"
+        },
+        {
+          "id": "d",
+          "text": "La corrélation linéaire est faible, et Y diminue quand X augmente"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le signe de r est celui de la covariance : r est négatif, donc Y a tendance à diminuer quand X augmente. La force se lit sur |r| = 0,62, qui est inférieur à 0,75 : la corrélation linéaire est faible. Les trois autres propositions se trompent sur le sens, sur la force, ou sur les deux.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour ajuster Y en X par une droite y = ax + b, quelle somme la méthode des moindres carrés rend-elle minimale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Σ (yᵢ − (axᵢ + b)), la somme simple des écarts verticaux avec leur signe"
+        },
+        {
+          "id": "b",
+          "text": "Σ (yᵢ − (axᵢ + b))², la somme des carrés des écarts verticaux"
+        },
+        {
+          "id": "c",
+          "text": "Le nombre de points du nuage situés exactement sur la droite y = ax + b"
+        },
+        {
+          "id": "d",
+          "text": "Σ |yᵢ − (axᵢ + b)|, la somme des valeurs absolues des écarts verticaux"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La méthode choisit a et b pour que la somme des carrés des écarts verticaux Σ (yᵢ − (axᵢ + b))² soit la plus petite possible. La somme sans carré s'annule pour toute droite passant par G à cause des compensations, le nombre de points sur la droite ne mesure pas la proximité des autres points, et la somme des valeurs absolues définit un autre critère d'ajustement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle formule donne le coefficient directeur a′ de la droite de régression de X en Y, d'équation x = a′y + b′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a′ = cov(X ; Y) / V(Y)"
+        },
+        {
+          "id": "b",
+          "text": "a′ = cov(X ; Y) / V(X)"
+        },
+        {
+          "id": "c",
+          "text": "a′ = cov(X ; Y) / (σ(X) σ(Y))"
+        },
+        {
+          "id": "d",
+          "text": "a′ = 1 / a, où a est le coefficient directeur de la droite de Y en X"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La droite de X en Y minimise les écarts horizontaux : on échange les rôles de X et de Y, donc a′ = cov(X ; Y) / V(Y). La formule avec V(X) est celle de a, le quotient par σ(X) σ(Y) définit r, et 1/a n'est a′ que lorsque |r| = 1 (car a a′ = r²).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un nuage (x ; y) est ajusté en posant z = ln y ; la droite de régression de z en x est z = 0,5x + 1. Quelle expression de y en fonction de x en déduit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 0,5x + 1"
+        },
+        {
+          "id": "b",
+          "text": "y = ln(0,5x + 1)"
+        },
+        {
+          "id": "c",
+          "text": "y = e^(0,5x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "y = 0,5 e^x + 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme z = ln y, on revient à y par la fonction réciproque : y = e^z = e^(0,5x + 1) = e × e^(0,5x). Garder y = 0,5x + 1 oublierait de revenir à y, ln(0,5x + 1) appliquerait ln au lieu de exp, et 0,5e^x + 1 appliquerait exp seulement à x.",
+      "difficulty": 2
+    }
+  ]
+}

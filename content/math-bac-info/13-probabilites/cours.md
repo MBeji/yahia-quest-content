@@ -473,6 +473,7 @@ Quelle est la probabilité qu'on attende au moins 3 minutes ? Et entre 1 et 4 mi
 Soit λ > 0. La **loi exponentielle de paramètre λ** a pour densité f(x) = λ e^(−λx) sur [0 ; +∞[. Si X la suit, pour 0 ≤ a ≤ b :
 - p(a ≤ X ≤ b) = e^(−λa) − e^(−λb) et p(X ≥ a) = e^(−λa) ;
 - F(x) = 1 − e^(−λx) si x ≥ 0, et F(x) = 0 si x < 0.
+
 :::
 
 Ces formules viennent d'une intégrale : l'aire entre a et b est ∫ₐᵇ λe^(−λx)dx = [−e^(−λx)]ₐᵇ = e^(−λa) − e^(−λb). La **fonction de survie** S(x) = p(X > x) = e^(−λx) donne la probabilité de « durer plus de x ».

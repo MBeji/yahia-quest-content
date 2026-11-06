@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du hasard",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Trois serveurs traitent respectivement 50 %, 30 % et 20 % des requêtes. Une requête est lente dans 2 % des cas sur le premier serveur, 5 % sur le deuxième et 10 % sur le troisième. Quelle est la probabilité qu'une requête prise au hasard soit lente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,01"
+        },
+        {
+          "id": "b",
+          "text": "0,045"
+        },
+        {
+          "id": "c",
+          "text": "0,057"
+        },
+        {
+          "id": "d",
+          "text": "0,17"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les trois serveurs forment une partition : p(lente) = 0,5 × 0,02 + 0,3 × 0,05 + 0,2 × 0,1 = 0,01 + 0,015 + 0,02 = 0,045 ✓. La valeur 0,057 est la moyenne simple de 2 %, 5 % et 10 %, qui ignore la part de chaque serveur. La valeur 0,17 additionne les trois taux. La valeur 0,01 ne garde que le premier serveur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "X suit la loi binomiale de paramètres 5 et 0,2. Quelle est, arrondie au millième, la probabilité de l'événement « X est au plus égal à 1 » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,737"
+        },
+        {
+          "id": "b",
+          "text": "0,410"
+        },
+        {
+          "id": "c",
+          "text": "0,328"
+        },
+        {
+          "id": "d",
+          "text": "0,263"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "« Au plus 1 » signifie 0 ou 1 succès : p(X = 0) = 0,8⁵ = 0,32768 et p(X = 1) = 5 × 0,2 × 0,8⁴ = 0,4096, donc p(X ≤ 1) = 0,73728 ≈ 0,737 ✓. La valeur 0,263 est p(X ≥ 2), la probabilité de l'événement contraire. La valeur 0,328 ne garde que p(X = 0), et 0,410 que p(X = 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une classe, jouer aux échecs (événement A, 60 % des élèves) et être inscrit au club de robotique (événement B, 30 % des élèves) sont deux événements indépendants. Parmi les élèves qui ne sont pas inscrits au club de robotique, quelle est la probabilité de ne pas jouer aux échecs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,6"
+        },
+        {
+          "id": "b",
+          "text": "0,4"
+        },
+        {
+          "id": "c",
+          "text": "0,28"
+        },
+        {
+          "id": "d",
+          "text": "0,18"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule p(A ∩ B) = 0,6 × 0,3 = 0,18, puis p(A ∪ B) = 0,6 + 0,3 − 0,18 = 0,72 et p(A̅ ∩ B̅) = 1 − 0,72 = 0,28. Comme p(B̅) = 0,7, p(A̅/B̅) = 0,28/0,7 = 0,4 ✓, qui est p(A̅) : savoir que B̅ est réalisé ne change rien. La valeur 0,18 est p(A ∩ B). La valeur 0,28 oublie de diviser par p(B̅). La valeur 0,6 est p(A) et non p(A̅).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un projet logiciel, 2 % des modules contiennent un bug. Un outil d'analyse signale 95 % des modules qui ont un bug et signale à tort 4 % des modules qui n'en ont pas. Un module est signalé. Quelle est la probabilité qu'il contienne un bug, arrondie au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,95"
+        },
+        {
+          "id": "b",
+          "text": "0,48"
+        },
+        {
+          "id": "c",
+          "text": "0,33"
+        },
+        {
+          "id": "d",
+          "text": "0,02"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Soit B « le module a un bug » et S « le module est signalé ». Par les probabilités totales, p(S) = 0,02 × 0,95 + 0,98 × 0,04 = 0,019 + 0,0392 = 0,0582. Par Bayes, p(B/S) = 0,019/0,0582 ≈ 0,326, soit 0,33 ✓. La valeur 0,95 est p(S/B), la probabilité inverse. La valeur 0,48 = 0,019/0,04 ne compte que les fausses alertes au dénominateur. La valeur 0,02 est la probabilité de départ, sans tenir compte du signal.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fonction de répartition d'une variable aléatoire X, qui prend les valeurs 0, 1, 2 et 3, vérifie F(0) = 0,1 ; F(1) = 0,4 ; F(2) = 0,7 et F(3) = 1. Quelle est l'espérance de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5"
+        },
+        {
+          "id": "b",
+          "text": "1,6"
+        },
+        {
+          "id": "c",
+          "text": "1,8"
+        },
+        {
+          "id": "d",
+          "text": "4,8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On revient à la loi par les sauts de F : p(X = 0) = 0,1 ; p(X = 1) = 0,4 − 0,1 = 0,3 ; p(X = 2) = 0,7 − 0,4 = 0,3 ; p(X = 3) = 1 − 0,7 = 0,3. Alors E(X) = 0 × 0,1 + 1 × 0,3 + 2 × 0,3 + 3 × 0,3 = 1,8 ✓. La valeur 4,8 utilise les valeurs de F comme des probabilités. La valeur 1,6 décale les probabilités d'un cran. La valeur 1,5 est la moyenne simple de 0, 1, 2 et 3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "X suit la loi uniforme sur [0 ; 10]. Quelle est la probabilité que X soit au plus égal à 6, sachant que X est au moins égal à 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/5"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "3/5"
+        },
+        {
+          "id": "d",
+          "text": "2/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On cherche p(X ≤ 6 / X ≥ 2) = p(2 ≤ X ≤ 6)/p(X ≥ 2). Pour la loi uniforme, p(2 ≤ X ≤ 6) = 4/10 et p(X ≥ 2) = 8/10, donc le quotient vaut 4/8 = 1/2 ✓. La valeur 2/5 est le numérateur seul, sans diviser par p(X ≥ 2). La valeur 3/5 est p(X ≤ 6), sans tenir compte de la condition. La valeur 2/3 = 4/6 divise par la longueur [0 ; 6] au lieu de [2 ; 10].",
+      "difficulty": 3
+    }
+  ]
+}

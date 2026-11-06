@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Probabilités",
+  "questions": [
+    {
+      "prompt": "Sur un univers à quatre issues ω₁, ω₂, ω₃ et ω₄, quelle liste de valeurs de p({ω₁}), p({ω₂}), p({ω₃}), p({ω₄}) définit une probabilité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,1 ; 0,2 ; 0,3 ; 0,4"
+        },
+        {
+          "id": "b",
+          "text": "0,25 ; 0,25 ; 0,25 ; 0,15"
+        },
+        {
+          "id": "c",
+          "text": "0,4 ; 0,3 ; 0,2 ; 0,2"
+        },
+        {
+          "id": "d",
+          "text": "0,5 ; 0,3 ; 0,3 ; −0,1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une probabilité envoie 𝒫(Ω) dans [0 ; 1] avec p(Ω) = 1 : les quatre nombres doivent être dans [0 ; 1] et avoir pour somme 1. Ici 0,1 + 0,2 + 0,3 + 0,4 = 1 ✓. La liste en 0,25 a pour somme 0,9, celle en 0,4 a pour somme 1,1, et la dernière a bien pour somme 1 mais contient −0,1, qui sort de [0 ; 1].",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un groupe de 50 élèves, 30 apprennent Python et, parmi ces 30, 12 apprennent aussi le langage C. On choisit au hasard un élève parmi ceux qui apprennent Python. Quelle est la probabilité qu'il apprenne aussi le C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6/25"
+        },
+        {
+          "id": "b",
+          "text": "2/5"
+        },
+        {
+          "id": "c",
+          "text": "3/5"
+        },
+        {
+          "id": "d",
+          "text": "2/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Savoir que l'élève apprend Python ramène l'univers à ces 30 élèves : p(C/Python) = p(C ∩ Python)/p(Python) = (12/50)/(30/50) = 12/30 = 2/5 ✓. La valeur 6/25 = 12/50 divise par tout le groupe au lieu de diviser par les élèves qui apprennent Python. La valeur 3/5 = 30/50 est la probabilité d'apprendre Python. La valeur 2/3 = 12/18 divise par les 18 élèves qui n'apprennent que Python.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un site reçoit 70 % de ses connexions depuis un mobile. Une connexion échoue dans 2 % des cas sur mobile et dans 5 % des cas sur les autres appareils. Quelle est la probabilité qu'une connexion prise au hasard échoue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,07"
+        },
+        {
+          "id": "b",
+          "text": "0,035"
+        },
+        {
+          "id": "c",
+          "text": "0,029"
+        },
+        {
+          "id": "d",
+          "text": "0,014"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Mobile et autres appareils forment une partition : p(échec) = 0,7 × 0,02 + 0,3 × 0,05 = 0,014 + 0,015 = 0,029 ✓. La valeur 0,035 est la moyenne simple de 2 % et 5 %, qui ignore les poids 70 % et 30 %. La valeur 0,07 additionne les deux taux. La valeur 0,014 ne compte que la branche du mobile.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une variable aléatoire X prend les valeurs 1, 2, 4 et 7 avec les probabilités 0,1 ; 0,3 ; 0,4 et 0,2. Quelle est p(2 < X ≤ 7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,4"
+        },
+        {
+          "id": "b",
+          "text": "0,6"
+        },
+        {
+          "id": "c",
+          "text": "0,7"
+        },
+        {
+          "id": "d",
+          "text": "0,9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les valeurs de X comprises entre 2 (exclu) et 7 (inclus) sont 4 et 7 : p(2 < X ≤ 7) = 0,4 + 0,2 = 0,6, soit F(7) − F(2) = 1 − 0,4 = 0,6 ✓. La valeur 0,4 oublie 7. La valeur 0,7 garde 2 mais oublie 7. La valeur 0,9 garde à la fois 2 et 7.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un joueur réussit chaque tir avec la probabilité 0,6, les tirs étant indépendants. Il tire 3 fois. Quelle est la probabilité qu'il réussisse exactement 2 tirs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,144"
+        },
+        {
+          "id": "b",
+          "text": "0,216"
+        },
+        {
+          "id": "c",
+          "text": "0,288"
+        },
+        {
+          "id": "d",
+          "text": "0,432"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le nombre de tirs réussis suit la loi binomiale de paramètres 3 et 0,6 : p(X = 2) = C₃² × 0,6² × 0,4 = 3 × 0,36 × 0,4 = 0,432 ✓. La valeur 0,144 oublie le coefficient C₃². La valeur 0,216 est 0,6³, la probabilité de réussir les trois tirs. La valeur 0,288 échange les exposants : c'est p(X = 1).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les événements A et B sont indépendants, avec p(A) = 0,5 et p(B) = 0,4. Quelle est la probabilité p(A ∪ B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,2"
+        },
+        {
+          "id": "b",
+          "text": "0,5"
+        },
+        {
+          "id": "c",
+          "text": "0,7"
+        },
+        {
+          "id": "d",
+          "text": "0,9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'indépendance donne p(A ∩ B) = 0,5 × 0,4 = 0,2, puis p(A ∪ B) = p(A) + p(B) − p(A ∩ B) = 0,5 + 0,4 − 0,2 = 0,7 ✓. La valeur 0,9 additionne sans retrancher l'intersection, comme pour des événements incompatibles. La valeur 0,2 ne donne que l'intersection. La valeur 0,5 suppose B inclus dans A, ce qui n'est pas l'indépendance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une variable aléatoire X prend les valeurs −1, 0 et 3 avec les probabilités 0,5 ; 0,3 et 0,2. On pose Y = 2X + 1. Quelle est l'espérance E(Y) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,2"
+        },
+        {
+          "id": "b",
+          "text": "1,2"
+        },
+        {
+          "id": "c",
+          "text": "1,1"
+        },
+        {
+          "id": "d",
+          "text": "0,2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E(X) = −1 × 0,5 + 0 × 0,3 + 3 × 0,2 = −0,5 + 0 + 0,6 = 0,1. Par linéarité, E(Y) = 2E(X) + 1 = 2 × 0,1 + 1 = 1,2 ✓. La valeur 0,2 oublie d'ajouter 1. La valeur 1,1 oublie le facteur 2. La valeur 2,2 double après avoir ajouté 1, soit 2(E(X) + 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une variable aléatoire X a pour densité f(t) = kt sur [0 ; 2], où k est un réel. Quelle est la valeur de k ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "1/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une densité vérifie ∫₀² kt dt = 1. Or ∫₀² kt dt = [kt²/2]₀² = 2k, donc 2k = 1 et k = 1/2 ✓. La valeur 1/4 oublie le 1/2 de la primitive (elle résout 4k = 1). Les valeurs 2 et 4 inversent l'équation, comme si k valait l'inverse de ce qu'on trouve.",
+      "difficulty": 2
+    }
+  ]
+}

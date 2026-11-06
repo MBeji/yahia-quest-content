@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le conseil des ingénieurs",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Trois classes commandent des cahiers de deux types. Les quantités forment C = (12 20 ; 15 10 ; 8 25) : lignes classes 1, 2, 3 ; colonnes grand cahier, petit cahier. Les prix en dinars forment p = (3 ; 1,5). Quelle est la dépense de la classe 3, lue dans le produit C × p ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "33"
+        },
+        {
+          "id": "b",
+          "text": "37,5"
+        },
+        {
+          "id": "c",
+          "text": "61,5"
+        },
+        {
+          "id": "d",
+          "text": "87"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La dépense de la classe 3 est le produit de la ligne 3 de C par la colonne p : 8 × 3 + 25 × 1,5 = 24 + 37,5 = 61,5 dinars ✓. La valeur 33 additionne les quantités 8 + 25 sans les prix. La valeur 37,5 oublie les grands cahiers. La valeur 87 échange les prix : 8 × 1,5 + 25 × 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'inverse de la matrice A d'un système A × X = B est A⁻¹ = (3 −1 ; −5 2), et B = (4 ; 7). Quelle est la solution X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(17 ; −27)"
+        },
+        {
+          "id": "b",
+          "text": "(5 ; −6)"
+        },
+        {
+          "id": "c",
+          "text": "(5 ; −34)"
+        },
+        {
+          "id": "d",
+          "text": "(−23 ; 10)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme A est inversible, X = A⁻¹ × B, avec A⁻¹ à gauche : X = (3 × 4 − 1 × 7 ; −5 × 4 + 2 × 7) = (5 ; −6) ✓. Le vecteur (5 ; −34) a une erreur de signe sur 2 × 7. Le vecteur (−23 ; 10) multiplie la transposée de A⁻¹ par B. Le vecteur (17 ; −27) intervertit les deux seconds membres.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On applique L₂ ← L₂ − 2L₁ et L₃ ← L₃ + L₁ à la matrice augmentée (1 2 −1 | 3 ; 2 3 1 | 12 ; −1 1 2 | 3). Quelles sont les nouvelles lignes 2 et 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L₂ = (0 −1 3 | 6) et L₃ = (0 3 1 | 6)"
+        },
+        {
+          "id": "b",
+          "text": "L₂ = (0 −1 3 | 12) et L₃ = (0 3 1 | 3)"
+        },
+        {
+          "id": "c",
+          "text": "L₂ = (0 7 3 | 6) et L₃ = (0 3 1 | 6)"
+        },
+        {
+          "id": "d",
+          "text": "L₂ = (0 −1 3 | 6) et L₃ = (−2 −1 3 | 0)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a L₂ − 2L₁ = (2 − 2, 3 − 4, 1 + 2 | 12 − 6) = (0 −1 3 | 6), et L₃ + L₁ = (−1 + 1, 1 + 2, 2 − 1 | 3 + 3) = (0 3 1 | 6) ✓. Garder 12 et 3 oublie de transformer les seconds membres. Le coefficient 7 vient de 3 + 4 au lieu de 3 − 4. La ligne (−2 −1 3 | 0) calcule L₃ − L₁ au lieu de L₃ + L₁ et ne supprime pas x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lequel de ces systèmes est un système de Cramer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x − 2y = 3 ; −3x + 6y = 1"
+        },
+        {
+          "id": "b",
+          "text": "6x − 4y = 2 ; 3x − 2y = 1"
+        },
+        {
+          "id": "c",
+          "text": "x + 3y = 4 ; 2x + 6y = 8"
+        },
+        {
+          "id": "d",
+          "text": "2x + 5y = 1 ; 4x + 9y = 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un système de Cramer a un déterminant non nul. Pour 2x + 5y = 1 et 4x + 9y = 2, le déterminant vaut 2 × 9 − 5 × 4 = −2 ✓. Les trois autres ont un déterminant nul : 1 × 6 − (−2) × (−3) = 0, 6 × (−2) − (−4) × 3 = 0 et 1 × 6 − 3 × 2 = 0. Leurs premiers membres sont proportionnels, même quand les seconds membres ne le sont pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un tableur, la matrice A (3 × 3, inversible) est dans la plage A1:C3 et la colonne B dans la plage E1:E3. Quelle formule matricielle, validée avec Ctrl Maj Entrée, donne la solution de A × X = B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "=PRODUITMAT(E1:E3 ; INVERSEMAT(A1:C3))"
+        },
+        {
+          "id": "b",
+          "text": "=INVERSEMAT(PRODUITMAT(A1:C3 ; E1:E3))"
+        },
+        {
+          "id": "c",
+          "text": "=PRODUITMAT(INVERSEMAT(A1:C3) ; E1:E3)"
+        },
+        {
+          "id": "d",
+          "text": "=PRODUITMAT(A1:C3 ; E1:E3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La solution est X = A⁻¹ × B : INVERSEMAT(A1:C3) calcule A⁻¹, de dimension 3 × 3, et PRODUITMAT la multiplie à gauche de la colonne 3 × 1 ✓. Placer la colonne en premier donne un produit 3 × 1 par 3 × 3, non défini. Inverser le produit A × B appliquerait INVERSEMAT à une colonne, qui n'est pas carrée. PRODUITMAT(A ; B) seul calcule A × B, c'est-à-dire un second membre, pas la solution.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "M et N sont deux matrices carrées d'ordre 3 avec det(M) = 2 et det(N) = −4. Quelles sont les valeurs de det(M × N) et de det(N⁻¹) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−8 et −4"
+        },
+        {
+          "id": "b",
+          "text": "−8 et −1/4"
+        },
+        {
+          "id": "c",
+          "text": "−8 et 1/4"
+        },
+        {
+          "id": "d",
+          "text": "−2 et −1/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le déterminant d'un produit est le produit des déterminants : det(M × N) = 2 × (−4) = −8. Celui de l'inverse est l'inverse du déterminant : det(N⁻¹) = 1/(−4) = −1/4 ✓. Garder −4 suppose que l'inverse ne change pas le déterminant. La valeur 1/4 perd le signe en inversant. La valeur −2 additionne 2 et −4 au lieu de les multiplier.",
+      "difficulty": 2
+    }
+  ]
+}

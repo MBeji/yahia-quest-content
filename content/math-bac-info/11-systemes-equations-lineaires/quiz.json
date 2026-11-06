@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Systèmes d'équations linéaires",
+  "questions": [
+    {
+      "prompt": "Dans la matrice K = (4 −1 7 0 ; 2 5 3 8 ; 6 9 −2 1), que vaut le coefficient a₃₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le premier indice désigne la ligne et le second la colonne : a₃₂ est à la ligne 3 et à la colonne 2, soit 9 ✓. La valeur 3 est a₂₃, lue en échangeant les deux indices. La valeur 6 est a₃₁ : bonne ligne, mais première colonne. La valeur 5 est a₂₂ : bonne colonne, mais deuxième ligne.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "A est une matrice de dimension 2 × 3 et B une matrice de dimension 3 × 4. Que peut-on dire de A × B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est défini et de dimension 3 × 3"
+        },
+        {
+          "id": "b",
+          "text": "Il est défini et de dimension 2 × 4"
+        },
+        {
+          "id": "c",
+          "text": "Il est défini et de dimension 4 × 2"
+        },
+        {
+          "id": "d",
+          "text": "Il n'est pas défini, car A et B n'ont pas la même dimension"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "A a 3 colonnes et B a 3 lignes : le produit est défini, et sa dimension est formée du nombre de lignes de A et du nombre de colonnes de B, soit 2 × 4 ✓. La dimension 3 × 3 reprend les dimensions intérieures, qui s'annulent. La dimension 4 × 2 inverse lignes et colonnes. Dire que le produit n'existe pas confond la condition du produit (colonnes de A égales aux lignes de B) avec celle de la somme (même dimension).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut le déterminant |3 −2 ; 5 4| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−22"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "22"
+        },
+        {
+          "id": "d",
+          "text": "23"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le déterminant vaut ad − bc = 3 × 4 − (−2) × 5 = 12 + 10 = 22 ✓. La valeur 2 oublie que retrancher (−2) × 5 revient à ajouter 10. La valeur −22 retranche dans l'ordre inverse, bc − ad. La valeur 23 croise les colonnes au lieu des diagonales : 3 × 5 − (−2) × 4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On permute deux lignes d'une matrice dont le déterminant vaut 5. Quel est le déterminant de la nouvelle matrice ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1/5"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Permuter deux lignes change le signe du déterminant : la nouvelle valeur est −5 ✓. La valeur 5 suppose que la permutation ne change rien. La valeur 0 est celle de deux lignes identiques ou proportionnelles, ce qui n'est pas le cas ici. La valeur 1/5 est l'inverse du déterminant, utile pour M⁻¹, sans rapport avec une permutation.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la matrice inverse de M = (2 −1 ; 4 3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/10) × (3 −1 ; 4 2)"
+        },
+        {
+          "id": "b",
+          "text": "(1/10) × (2 1 ; −4 3)"
+        },
+        {
+          "id": "c",
+          "text": "(3 1 ; −4 2)"
+        },
+        {
+          "id": "d",
+          "text": "(1/10) × (3 1 ; −4 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le déterminant vaut 2 × 3 − (−1) × 4 = 10, non nul. On échange 2 et 3, on change le signe de −1 et de 4, puis on divise par 10 : (1/10) × (3 1 ; −4 2) ✓. Échanger sans changer les signes donne (3 −1 ; 4 2) ; changer les signes sans échanger donne (2 1 ; −4 3). Oublier de diviser par 10 donne une matrice dont le produit avec M vaut 10 fois I₂.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On applique L₂ ← L₂ − 3L₁ à la matrice augmentée (1 2 | 5 ; 3 −1 | 4). Quelle est la nouvelle ligne 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0 −7 | 19)"
+        },
+        {
+          "id": "b",
+          "text": "(0 −7 | 4)"
+        },
+        {
+          "id": "c",
+          "text": "(0 −7 | −11)"
+        },
+        {
+          "id": "d",
+          "text": "(0 5 | −11)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On retranche 3 fois la ligne 1 à la ligne 2, sur toute la ligne, second membre compris : (3 − 3, −1 − 6 | 4 − 15) = (0 −7 | −11) ✓. Garder 4 oublie le second membre. Écrire 5 revient à calculer −1 + 6, donc L₂ + 3L₁ sur cette colonne. Écrire 19 additionne 4 + 15 au lieu de retrancher.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le système 2x − y + 3z = 4, x + 5z = −1, −y + z = 0 s'écrit A × X = B avec X = (x ; y ; z). Quelle est la matrice A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2 −1 3 ; 1 0 5 ; 0 −1 1)"
+        },
+        {
+          "id": "b",
+          "text": "(2 −1 3 ; 1 5 0 ; −1 1 0)"
+        },
+        {
+          "id": "c",
+          "text": "(2 1 3 ; 1 0 5 ; 0 1 1)"
+        },
+        {
+          "id": "d",
+          "text": "(2 1 0 ; −1 0 −1 ; 3 5 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque ligne de A contient les coefficients de x, de y et de z de l'équation correspondante, avec 0 quand l'inconnue est absente : (2 −1 3), (1 0 5), (0 −1 1) ✓. Écrire (1 5 0) pour la deuxième ligne omet le zéro de y et décale les coefficients. Perdre les signes de −y donne des 1 positifs. Transposer range les coefficients par inconnue au lieu de les ranger par équation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour quelles valeurs du réel m le système 2x + my = 1, (m + 1)x + 3y = 4 n'est-il pas de Cramer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = −1 ou m = 0"
+        },
+        {
+          "id": "b",
+          "text": "m = −3 ou m = 2"
+        },
+        {
+          "id": "c",
+          "text": "m = −2 ou m = 3"
+        },
+        {
+          "id": "d",
+          "text": "m = 5 ou m = 6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le système n'est pas de Cramer quand le déterminant s'annule : 2 × 3 − m(m + 1) = 0, soit m² + m − 6 = 0, donc (m − 2)(m + 3) = 0 et m = 2 ou m = −3 ✓. Les valeurs −1 et 0 annulent m(m + 1) et oublient le 6. Les valeurs −2 et 3 viennent de m² − m − 6, avec une erreur de signe sur le terme en m. Les valeurs 5 et 6 résolvent m = 6 ou m + 1 = 6, comme si un produit égal à 6 imposait un facteur égal à 6.",
+      "difficulty": 2
+    }
+  ]
+}

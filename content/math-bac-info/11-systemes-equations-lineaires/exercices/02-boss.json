@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du tableau",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Soit D = (2 0 0 ; 0 −1 0 ; 0 0 3). Quelle est la matrice D³ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(8 0 0 ; 0 −1 0 ; 0 0 27)"
+        },
+        {
+          "id": "b",
+          "text": "(8 0 0 ; 0 1 0 ; 0 0 27)"
+        },
+        {
+          "id": "c",
+          "text": "(6 0 0 ; 0 −3 0 ; 0 0 9)"
+        },
+        {
+          "id": "d",
+          "text": "(4 0 0 ; 0 1 0 ; 0 0 9)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "D est diagonale : D³ s'obtient en élevant chaque coefficient de la diagonale au cube, 2³ = 8, (−1)³ = −1 et 3³ = 27 ✓. La matrice avec 1 au milieu oublie que le cube d'un nombre négatif reste négatif. La matrice (6 0 0 ; 0 −3 0 ; 0 0 9) calcule 3D, une multiplication par 3 au lieu d'une puissance. La matrice (4 0 0 ; 0 1 0 ; 0 0 9) calcule D², avec un facteur de moins.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit M = (1 2 3 ; 0 4 5 ; 1 0 6) et α₂₃ le cofacteur du coefficient de la ligne 2 et de la colonne 3. Que vaut α₂₃ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "−2"
+        },
+        {
+          "id": "d",
+          "text": "−5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On supprime la ligne 2 et la colonne 3 : il reste (1 2 ; 1 0), de déterminant −2. Le cofacteur porte le signe (−1)²⁺³ = −1, donc α₂₃ = −(−2) = 2 ✓. La valeur −2 est le mineur sans le signe du cofacteur. La valeur −5 est le cofacteur α₃₂ et la valeur 5 son mineur : ce sont les cases de la ligne 3 et de la colonne 2, c'est-à-dire que les deux indices sont échangés.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit A = (1 2 ; 0 1) et B = (1 0 ; 3 1). Quelle est la matrice (A + B)² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(4 4 ; 9 4)"
+        },
+        {
+          "id": "b",
+          "text": "(4 8 ; 12 16)"
+        },
+        {
+          "id": "c",
+          "text": "(10 8 ; 12 10)"
+        },
+        {
+          "id": "d",
+          "text": "(16 8 ; 12 4)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a A + B = (2 2 ; 3 2). Son carré est (2 2 ; 3 2) × (2 2 ; 3 2) = (4 + 6, 4 + 4 ; 6 + 6, 6 + 4) = (10 8 ; 12 10) ✓. La matrice (4 4 ; 9 4) élève chaque coefficient au carré, ce qui n'est pas le produit de la matrice par elle-même. Les matrices (16 8 ; 12 4) et (4 8 ; 12 16) appliquent A² + 2AB + B² et A² + 2BA + B² : elles supposent AB = BA, alors que AB = (7 2 ; 3 1) et BA = (1 2 ; 3 7).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "M est une matrice carrée d'ordre 3 de déterminant 4. La matrice N est obtenue en multipliant la ligne 1 de M par 5, puis en permutant les lignes 2 et 3. Que vaut det(N) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20"
+        },
+        {
+          "id": "b",
+          "text": "−4"
+        },
+        {
+          "id": "c",
+          "text": "−20"
+        },
+        {
+          "id": "d",
+          "text": "−500"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Multiplier une seule ligne par 5 multiplie le déterminant par 5, et permuter deux lignes change le signe : det(N) = −5 × 4 = −20 ✓. La valeur 20 oublie la permutation. La valeur −4 oublie le facteur 5. La valeur −500 applique det(5M) = 5³ det(M), qui vaut quand les trois lignes sont multipliées par 5 et non une seule.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit A = (3 2 2 ; 0 2 −1 ; 2 3 0), de déterminant −3. Quel est le coefficient de la ligne 1 et de la colonne 2 de A⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "2/3"
+        },
+        {
+          "id": "d",
+          "text": "−2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On utilise A⁻¹ = (1/det(A)) × (Com A)ᵗ : le coefficient de la ligne 1 et de la colonne 2 de A⁻¹ est le cofacteur α₂₁ divisé par det(A). On a α₂₁ = −|2 2 ; 3 0| = 6, donc le coefficient vaut 6/(−3) = −2 ✓. La valeur 2/3 utilise α₁₂ = −2 sans transposer. La valeur 6 oublie de diviser par le déterminant. La valeur 2 divise le mineur −6 sans le signe du cofacteur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "M est une matrice carrée d'ordre 3 telle que M³ − M² = I₃. Quelle est l'inverse de M ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M − I₃"
+        },
+        {
+          "id": "b",
+          "text": "M − M²"
+        },
+        {
+          "id": "c",
+          "text": "M² − I₃"
+        },
+        {
+          "id": "d",
+          "text": "M² − M"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On factorise M : M × (M² − M) = M³ − M² = I₃, et (M² − M) × M = M³ − M² = I₃ aussi. Par définition, M² − M est donc l'inverse de M ✓. La matrice M − M² donne M × (M − M²) = −I₃, l'opposé. La matrice M − I₃ est le facteur de M² × (M − I₃) = I₃ : c'est l'inverse de M², pas de M. La matrice M² − I₃ donne M³ − M, qui n'est pas I₃ en général.",
+      "difficulty": 3
+    }
+  ]
+}
