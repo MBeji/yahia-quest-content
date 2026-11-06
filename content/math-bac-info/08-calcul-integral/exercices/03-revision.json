@@ -55,27 +55,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Que vaut ∫₀^π x cos x dx ?",
+      "prompt": "Que vaut ∫₀¹ x e^{2x} dx ?",
       "options": [
         {
           "id": "a",
-          "text": "2"
+          "text": "1/2"
         },
         {
           "id": "b",
-          "text": "π/2 − 1"
+          "text": "(e² − 1)/4"
         },
         {
           "id": "c",
-          "text": "0"
+          "text": "(e² + 1)/4"
         },
         {
           "id": "d",
-          "text": "−2"
+          "text": "e²/2"
         }
       ],
-      "correctOption": "d",
-      "explanation": "On pose u = x et v′ = cos x, donc v = sin x : [x sin x]₀^π − ∫₀^π sin x dx = 0 − [−cos x]₀^π = −(1 + 1) = −2 ✓. La valeur 0 s'arrête au crochet. La valeur 2 écrit « plus » devant l'intégrale restante. La valeur π/2 − 1 est celle de l'intégrale sur [0 ; π/2], pas sur [0 ; π].",
+      "correctOption": "c",
+      "explanation": "On pose u = x et v′ = e^{2x}, donc u′ = 1 et v = e^{2x}/2 : [x e^{2x}/2]₀¹ − ∫₀¹ e^{2x}/2 dx = e²/2 − (e² − 1)/4 = (e² + 1)/4 ✓. La valeur e²/2 s'arrête au crochet. La valeur (e² − 1)/4 écrit « plus » devant l'intégrale restante. La valeur 1/2 prend v = e^{2x} au lieu de e^{2x}/2 dans l'intégrale restante : e²/2 − (e² − 1)/2.",
       "difficulty": 2
     },
     {
