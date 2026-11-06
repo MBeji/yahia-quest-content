@@ -7,27 +7,27 @@
   "displayOrder": 2,
   "questions": [
     {
-      "prompt": "Soit D = (2 0 0 ; 0 −1 0 ; 0 0 3). Quelle est la matrice D³ ?",
+      "prompt": "Soit D = (−2 0 0 ; 0 1 0 ; 0 0 −1). Quelle est la matrice D³ ?",
       "options": [
         {
           "id": "a",
-          "text": "(8 0 0 ; 0 −1 0 ; 0 0 27)"
+          "text": "(−8 0 0 ; 0 1 0 ; 0 0 −1)"
         },
         {
           "id": "b",
-          "text": "(8 0 0 ; 0 1 0 ; 0 0 27)"
+          "text": "(4 0 0 ; 0 1 0 ; 0 0 1)"
         },
         {
           "id": "c",
-          "text": "(6 0 0 ; 0 −3 0 ; 0 0 9)"
+          "text": "(8 0 0 ; 0 1 0 ; 0 0 1)"
         },
         {
           "id": "d",
-          "text": "(4 0 0 ; 0 1 0 ; 0 0 9)"
+          "text": "(−6 0 0 ; 0 3 0 ; 0 0 −3)"
         }
       ],
       "correctOption": "a",
-      "explanation": "D est diagonale : D³ s'obtient en élevant chaque coefficient de la diagonale au cube, 2³ = 8, (−1)³ = −1 et 3³ = 27 ✓. La matrice avec 1 au milieu oublie que le cube d'un nombre négatif reste négatif. La matrice (6 0 0 ; 0 −3 0 ; 0 0 9) calcule 3D, une multiplication par 3 au lieu d'une puissance. La matrice (4 0 0 ; 0 1 0 ; 0 0 9) calcule D², avec un facteur de moins.",
+      "explanation": "D est diagonale : D³ s'obtient en élevant chaque coefficient de la diagonale au cube, (−2)³ = −8, 1³ = 1 et (−1)³ = −1 ✓. La matrice (8 0 0 ; 0 1 0 ; 0 0 1) oublie que le cube d'un nombre négatif reste négatif. La matrice (4 0 0 ; 0 1 0 ; 0 0 1) calcule D², avec un facteur de moins. La matrice (−6 0 0 ; 0 3 0 ; 0 0 −3) calcule 3D, une multiplication par 3 au lieu d'une puissance.",
       "difficulty": 2
     },
     {
@@ -55,27 +55,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Soit A = (1 2 ; 0 1) et B = (1 0 ; 3 1). Quelle est la matrice (A + B)² ?",
+      "prompt": "Soit A = (1 0 ; 0 2) et B = (1 1 ; 2 1). Quelle est la matrice (A + B)² ?",
       "options": [
         {
           "id": "a",
-          "text": "(4 4 ; 9 4)"
+          "text": "(4 1 ; 4 9)"
         },
         {
           "id": "b",
-          "text": "(4 8 ; 12 16)"
+          "text": "(6 4 ; 12 11)"
         },
         {
           "id": "c",
-          "text": "(10 8 ; 12 10)"
+          "text": "(6 5 ; 10 11)"
         },
         {
           "id": "d",
-          "text": "(16 8 ; 12 4)"
+          "text": "(6 6 ; 8 11)"
         }
       ],
       "correctOption": "c",
-      "explanation": "On a A + B = (2 2 ; 3 2). Son carré est (2 2 ; 3 2) × (2 2 ; 3 2) = (4 + 6, 4 + 4 ; 6 + 6, 6 + 4) = (10 8 ; 12 10) ✓. La matrice (4 4 ; 9 4) élève chaque coefficient au carré, ce qui n'est pas le produit de la matrice par elle-même. Les matrices (16 8 ; 12 4) et (4 8 ; 12 16) appliquent A² + 2AB + B² et A² + 2BA + B² : elles supposent AB = BA, alors que AB = (7 2 ; 3 1) et BA = (1 2 ; 3 7).",
+      "explanation": "On a A + B = (2 1 ; 2 3). Son carré est (2 1 ; 2 3) × (2 1 ; 2 3) = (4 + 2, 2 + 3 ; 4 + 6, 2 + 9) = (6 5 ; 10 11) ✓. La matrice (4 1 ; 4 9) élève chaque coefficient au carré, ce qui n'est pas le produit de la matrice par elle-même. Les matrices (6 4 ; 12 11) et (6 6 ; 8 11) appliquent A² + 2AB + B² et A² + 2BA + B² : elles supposent AB = BA, alors que AB = (1 1 ; 4 2) et BA = (1 2 ; 2 2).",
       "difficulty": 3
     },
     {

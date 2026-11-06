@@ -31,27 +31,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "L'inverse de la matrice A d'un système A × X = B est A⁻¹ = (3 −1 ; −5 2), et B = (4 ; 7). Quelle est la solution X ?",
+      "prompt": "L'inverse de la matrice A d'un système A × X = B est A⁻¹ = (2 −3 ; −1 2), et B = (7 ; 4). Quelle est la solution X ?",
       "options": [
         {
           "id": "a",
-          "text": "(17 ; −27)"
+          "text": "(2 ; −15)"
         },
         {
           "id": "b",
-          "text": "(5 ; −6)"
+          "text": "(2 ; 1)"
         },
         {
           "id": "c",
-          "text": "(5 ; −34)"
+          "text": "(10 ; −13)"
         },
         {
           "id": "d",
-          "text": "(−23 ; 10)"
+          "text": "(14 ; −7)"
         }
       ],
       "correctOption": "b",
-      "explanation": "Comme A est inversible, X = A⁻¹ × B, avec A⁻¹ à gauche : X = (3 × 4 − 1 × 7 ; −5 × 4 + 2 × 7) = (5 ; −6) ✓. Le vecteur (5 ; −34) a une erreur de signe sur 2 × 7. Le vecteur (−23 ; 10) multiplie la transposée de A⁻¹ par B. Le vecteur (17 ; −27) intervertit les deux seconds membres.",
+      "explanation": "Comme A est inversible, X = A⁻¹ × B, avec A⁻¹ à gauche : X = (2 × 7 − 3 × 4 ; −1 × 7 + 2 × 4) = (2 ; 1) ✓. Le vecteur (2 ; −15) a une erreur de signe sur 2 × 4. Le vecteur (10 ; −13) est le résultat de B × A⁻¹, avec B écrit en ligne et placé à droite. Le vecteur (14 ; −7) ne garde que le premier produit de chaque ligne.",
       "difficulty": 2
     },
     {

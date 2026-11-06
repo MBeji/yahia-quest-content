@@ -147,7 +147,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "En ajoutant les deux premières équations, on obtient 3x + 4y = 10, alors que la troisième dit 3x + 4y = 11 : la ligne (0 0 0 | 1) apparaît au pivot de Gauss, donc le système est impossible ✓. Le déterminant des coefficients est nul puisque L₃ = L₁ + L₂ sur les premiers membres, ce qui exclut la solution unique, quel que soit le nombre d'équations. Une infinité de solutions exigerait que les seconds membres soient eux aussi liés par 3 + 7 = 11, ce qui est faux.",
+      "explanation": "En ajoutant les deux premières équations, on obtient 3x + 4y = 10, alors que la troisième dit 3x + 4y = 11 : la ligne (0 0 0 | 1) apparaît au pivot de Gauss, donc le système est impossible ✓. Comme les premiers membres vérifient L₃ = L₁ + L₂, le déterminant des coefficients est nul : il n'y a pas de solution unique, même avec autant d'équations que d'inconnues. Une infinité de solutions exigerait que les seconds membres soient liés de la même façon, or 3 + 7 = 10 et non 11.",
       "difficulty": 3
     }
   ]
