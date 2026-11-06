@@ -23,7 +23,7 @@ Le choix de F ne compte pas : deux primitives diffèrent d'une constante k, qui 
 
 1. I = ∫₁² (6x² − 4x + 1)dx : on primitive terme à terme, F(x) = 2x³ − 2x² + x, donc I = F(2) − F(1) = 10 − 1 = 9.
 2. J = ∫₃⁵ dt/(t − 1) : t − 1 > 0 sur [3 ; 5], une primitive est ln(t − 1), donc J = ln 4 − ln 2 = ln 2. La lettre t est muette.
-3. L = ∫₀¹ e^{2x}dx : comme (e^{2x}/2)′ = e^{2x}, L = (e² − 1)/2.
+3. L = ∫₀¹ e^(2x)dx : comme (e^(2x)/2)′ = e^(2x), L = (e² − 1)/2.
 4. M = ∫₂⁰ 3x²dx = [x³]₂⁰ = 0 − 8 = −8 : la formule F(b) − F(a) vaut aussi quand a > b.
 
 :::
@@ -96,15 +96,15 @@ Les bornes échangées changent le signe, Chasles coupe un intervalle en deux (l
 
 ## 🧩 Reconnaître la forme pour primitiver
 
-Voici deux intégrales : ∫₀¹ (2x + 1)e^{x²+x}dx et ∫₁² (2x + 3)/(x² + 3x)dx. Aucune ligne de la table ne les donne telles quelles.
+Voici deux intégrales : ∫₀¹ (2x + 1)e^(x²+x)dx et ∫₁² (2x + 3)/(x² + 3x)dx. Aucune ligne de la table ne les donne telles quelles.
 Pourtant chacune cache la dérivée d'une composée, comme au chapitre 4 (u′uⁿ) et au chapitre 6 (u′/u). Comment la reconnaître, puis calculer F(b) − F(a) sans se tromper de facteur ?
 
 ::: exemple Reconnaître u′, compenser, évaluer
 
-1. A = ∫₀¹ (2x + 1)e^{x²+x}dx : on pose u(x) = x² + x, donc u′(x) = 2x + 1 et f = u′e^u. Une primitive est F(x) = e^{x²+x}, d'où A = F(1) − F(0) = e² − 1.
+1. A = ∫₀¹ (2x + 1)e^(x²+x)dx : on pose u(x) = x² + x, donc u′(x) = 2x + 1 et f = u′e^u. Une primitive est F(x) = e^(x²+x), d'où A = F(1) − F(0) = e² − 1.
 2. B = ∫₁² (2x + 3)/(x² + 3x)dx : u(x) = x² + 3x > 0 sur [1 ; 2] et u′(x) = 2x + 3, donc f = u′/u et F(x) = ln(x² + 3x). B = ln 10 − ln 4 = ln(5/2).
-3. C = ∫₀¹ x e^{−x²}dx : u(x) = −x², donc u′(x) = −2x. Il manque le facteur −2, une constante : x e^{−x²} = (−1/2)u′e^u et F(x) = −(1/2)e^{−x²}. D'où C = −(1/2)(e^{−1} − 1) = (1 − 1/e)/2.
-4. Contrôle de C en dérivant : F′(x) = −(1/2) × (−2x)e^{−x²} = x e^{−x²} ✓.
+3. C = ∫₀¹ x e^(−x²)dx : u(x) = −x², donc u′(x) = −2x. Il manque le facteur −2, une constante : x e^(−x²) = (−1/2)u′e^u et F(x) = −(1/2)e^(−x²). D'où C = −(1/2)(e^(−1) − 1) = (1 − 1/e)/2.
+4. Contrôle de C en dérivant : F′(x) = −(1/2) × (−2x)e^(−x²) = x e^(−x²) ✓.
 
 :::
 
@@ -117,7 +117,7 @@ Pourtant chacune cache la dérivée d'une composée, comme au chapitre 4 (u′u�
 :::
 
 ::: piege Poser u sans compenser le facteur
-Pour ∫₀¹ x e^{x²}dx, on pose u = x² et l'on écrit [e^{x²}]₀¹ = e − 1. Cela tente parce que la forme u′e^u saute aux yeux. Mais u′ = 2x et l'intégrande ne contient que x : (e^{x²})′ = 2x e^{x²}, le double de l'intégrande. Comme f = (1/2)u′e^u, la bonne valeur est (e − 1)/2.
+Pour ∫₀¹ x e^(1 − x²)dx, on pose u = 1 − x² et l'on écrit [e^(1 − x²)]₀¹ = 1 − e. Cela tente parce que la forme u′e^u saute aux yeux. Mais u′ = −2x : (e^(1 − x²))′ = −2x e^(1 − x²), soit −2 fois l'intégrande. Comme f = (−1/2)u′e^u, la bonne valeur est −(1/2)(1 − e) = (e − 1)/2 ; 1 − e < 0 était d'ailleurs impossible pour une fonction positive.
 :::
 
 Lues à l'envers, les formules de dérivation d'une composée donnent, pour u dérivable de dérivée continue :
@@ -150,7 +150,7 @@ On reconnaît u′uⁿ, u′/u, u′e^u ou u′/√u en posant u et en compensan
 La dérivée du produit x sin x est sin x + x cos x. Intégrons cette égalité entre 0 et π/2 : [x sin x]₀^{π/2} = π/2, donc ∫₀^{π/2} sin x dx + ∫₀^{π/2} x cos x dx = π/2. Comme ∫₀^{π/2} sin x dx = [−cos x]₀^{π/2} = 1, on obtient ∫₀^{π/2} x cos x dx = π/2 − 1.
 Une intégrale sans primitive visible s'est ramenée à une autre que l'on sait calculer : peut-on en faire une règle ?
 
-::: definition
+::: propriete
 **Intégration par parties.** Soient u et v dérivables sur un intervalle I, de dérivées continues, et a, b deux réels de I :
 
 $$ ∫ₐᵇ u(x)v′(x)dx = [u(x)v(x)]ₐᵇ − ∫ₐᵇ u′(x)v(x)dx $$
@@ -161,9 +161,9 @@ Elle vient de (uv)′ = u′v + uv′, intégrée entre a et b.
 ::: exemple Choisir u et v′, puis dérouler
 
 1. ∫₁ᵉ ln x dx : on pose u = ln x et v′ = 1, donc u′ = 1/x et v = x (on dérive ln, qui n'a pas de primitive connue). On obtient [x ln x]₁ᵉ − ∫₁ᵉ 1dx = e − (e − 1) = 1.
-2. ∫₀¹ x²e^{−x}dx : on pose u = x² et v′ = e^{−x}, donc u′ = 2x et v = −e^{−x}. On obtient [−x²e^{−x}]₀¹ + 2∫₀¹ x e^{−x}dx = −1/e + 2K.
-3. Pour K = ∫₀¹ x e^{−x}dx : u = x et v = −e^{−x} donnent [−x e^{−x}]₀¹ + ∫₀¹ e^{−x}dx = −1/e + (1 − 1/e) = 1 − 2/e. Un second passage était nécessaire, car x² demande deux dérivations pour disparaître.
-4. Donc ∫₀¹ x²e^{−x}dx = −1/e + 2(1 − 2/e) = 2 − 5/e.
+2. ∫₀¹ x²e^(−x)dx : on pose u = x² et v′ = e^(−x), donc u′ = 2x et v = −e^(−x). On obtient [−x²e^(−x)]₀¹ + 2∫₀¹ x e^(−x)dx = −1/e + 2K.
+3. Pour K = ∫₀¹ x e^(−x)dx : u = x et v = −e^(−x) donnent [−x e^(−x)]₀¹ + ∫₀¹ e^(−x)dx = −1/e + (1 − 1/e) = 1 − 2/e. Un second passage était nécessaire, car x² demande deux dérivations pour disparaître.
+4. Donc ∫₀¹ x²e^(−x)dx = −1/e + 2(1 − 2/e) = 2 − 5/e.
 
 :::
 
@@ -263,7 +263,7 @@ On lit « f barre ».
 :::
 
 ::: piege Prendre la demi-somme des valeurs extrêmes
-Pour f(x) = 1/x sur [1 ; 4], on écrit f̄ = (f(1) + f(4))/2 = (1 + 1/4)/2 = 0,625. Cela tente parce que « moyenne » évoque « milieu des extrêmes ». Mais f̄ = (ln 4)/3 ≈ 0,46 : la fonction passe plus de temps près de ses petites valeurs, et la demi-somme n'est la moyenne que pour une fonction affine.
+Pour f(x) = 1/x sur [1 ; 4], on écrit f̄ = (f(1) + f(4))/2 = (1 + 1/4)/2 = 0,625. Cela tente parce que « moyenne » évoque « milieu des extrêmes ». Mais f̄ = (ln 4)/3 ≈ 0,46 : la fonction passe plus de temps près de ses petites valeurs, et la demi-somme est toujours la moyenne pour une fonction affine, mais pas en général.
 :::
 
 ::: propriete
@@ -290,7 +290,7 @@ f̄ = (1/(b − a))∫ₐᵇ f ; si m ≤ f ≤ M, alors m ≤ f̄ ≤ M ; et il
 ## 📐 Aires planes : ∫|f| et ∫|g − f|
 
 Pour f(x) = x² − 2x sur [0 ; 3], on trouve ∫₀³ f = [x³/3 − x²]₀³ = 9 − 9 = 0. Pourtant la courbe ne reste pas sur l'axe : elle passe sous l'axe sur [0 ; 2], puis au-dessus sur [2 ; 3].
-Une aire n'est jamais nulle quand la partie n'est pas vide. Que mesure alors l'intégrale, et laquelle mesure l'aire ?
+Or la courbe s'écarte de l'axe : la partie qu'elle délimite avec lui a une aire strictement positive. Que mesure alors l'intégrale, et laquelle mesure l'aire ?
 
 Le plan est rapporté à un repère orthonormé. L'**unité d'aire** (u.a) est l'aire du carré de côté 1 : si l'unité de longueur est 2 cm, 1 u.a = 4 cm².
 
@@ -386,7 +386,7 @@ fonction Rectangles(a, b, n)
 2. Pour k = 0, somme = 1/(1 + 0,0625) ≈ 0,9412, puis x = 0,75.
 3. Pour k = 1, somme ≈ 0,9412 + 1/(1 + 0,5625) = 0,9412 + 0,64 = 1,5812.
 4. Le programme renvoie 1,5812 × 0,5 ≈ 0,7906.
-5. La valeur exacte est π/4 ≈ 0,7854 : la fonction g = tan est bijective de [0 ; π/4] sur [0 ; 1] et (g⁻¹)′(y) = 1/(1 + y²) (chapitre 4), donc ∫₀¹ dy/(1 + y²) = g⁻¹(1) − g⁻¹(0) = π/4. Ainsi 4 × 0,7906 ≈ 3,16 approche π ; plus n est grand, meilleure est l'approximation.
+5. La valeur exacte est π/4 ≈ 0,7854 : la fonction g = tan est bijective de [0 ; π/4] sur [0 ; 1], et comme g′ = 1 + tan², (g⁻¹)′(y) = 1/g′(g⁻¹(y)) = 1/(1 + y²) (chapitre 4), donc ∫₀¹ dy/(1 + y²) = g⁻¹(1) − g⁻¹(0) = π/4. Ainsi 4 × 0,7906 ≈ 3,16 approche π ; plus n est grand, meilleure est l'approximation.
 
 :::
 
