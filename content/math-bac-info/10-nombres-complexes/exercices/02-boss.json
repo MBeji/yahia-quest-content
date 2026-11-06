@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du plan complexe",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Quelle est la solution de l'équation z − 3z̄ = 2 + 8i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 − 4i"
+        },
+        {
+          "id": "b",
+          "text": "−1 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "−1 − 2i"
+        },
+        {
+          "id": "d",
+          "text": "1/2 + 2i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose z = x + iy : z − 3z̄ = x + iy − 3x + 3iy = −2x + 4iy. Par unicité de la forme algébrique, −2x = 2 et 4y = 8, donc x = −1, y = 2 et z = −1 + 2i ✓. Contrôle : (−1 + 2i) − 3(−1 − 2i) = −1 + 2i + 3 + 6i = 2 + 8i. La réponse −1 − 4i traite z̄ comme z et résout −2z = 2 + 8i. La réponse 1/2 + 2i confond z̄ avec −z : z + 3z = 4z = 2 + 8i. La réponse −1 − 2i se trompe de signe sur y.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les points A, B et C ont pour affixes 2 + i, 6 + 3i et 5 + 7i. Quelle est l'affixe du point D tel que ABCD soit un parallélogramme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 − 3i"
+        },
+        {
+          "id": "b",
+          "text": "1 + 5i"
+        },
+        {
+          "id": "c",
+          "text": "7/2 + 4i"
+        },
+        {
+          "id": "d",
+          "text": "9 + 9i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ABCD est un parallélogramme si et seulement si AB⃗ = DC⃗, donc z_B − z_A = z_C − z_D et z_D = z_A + z_C − z_B = (2 + i) + (5 + 7i) − (6 + 3i) = 1 + 5i ✓. Contrôle : Aff(DC⃗) = (5 + 7i) − (1 + 5i) = 4 + 2i = Aff(AB⃗). La réponse 9 + 9i est z_B + z_C − z_A, qui place D en face de A pour le parallélogramme ABDC. La réponse 3 − 3i est z_A + z_B − z_C. La réponse 7/2 + 4i est le milieu de [AC] : c'est le centre du parallélogramme, pas le sommet D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit z′ = (z − 2i)/(z + 1), avec z ≠ −1. Quel est l'ensemble des points M(z) tels que |z′| = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un cercle de rayon 1"
+        },
+        {
+          "id": "b",
+          "text": "Un cercle privé d'un point"
+        },
+        {
+          "id": "c",
+          "text": "Une droite privée d'un point"
+        },
+        {
+          "id": "d",
+          "text": "Une droite entière"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le module d'un quotient est le quotient des modules : |z′| = 1 ⟺ |z − 2i| = |z + 1| ⟺ AM = BM, avec A(2i) et B(−1). M décrit la médiatrice de [AB], une droite. La condition z ≠ −1 retire B, mais B n'est pas sur cette médiatrice : en z = −1, |z − 2i| = √5 alors que |z + 1| = 0. Il n'y a rien à retirer, l'ensemble est la droite entière ✓. Contrôle avec z = x + iy : x² + (y − 2)² = (x + 1)² + y² donne 2x + 4y = 3, que B(−1 ; 0) ne vérifie pas. « Une droite privée d'un point » retire B sans vérifier qu'il appartient à l'ensemble. « Un cercle de rayon 1 » lit |z′| = 1 comme si M était à distance 1 de O ; « un cercle privé d'un point » cumule les deux erreurs.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelles sont les solutions de l'équation z² − (3 + 3i)z + 2 + 6i = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{2 ; 1 + 3i}"
+        },
+        {
+          "id": "b",
+          "text": "{4 ; 2 + 6i}"
+        },
+        {
+          "id": "c",
+          "text": "{−2 ; −1 − 3i}"
+        },
+        {
+          "id": "d",
+          "text": "{1 ; 2 + 3i}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Δ = (3 + 3i)² − 4(2 + 6i) = 18i − 8 − 24i = −8 − 6i. Une racine carrée δ = x + iy vérifie x² + y² = 10 et x² − y² = −8, donc x² = 1 et y² = 9, et xy est négatif comme −6 : δ = 1 − 3i. Alors z = (3 + 3i ± (1 − 3i))/2, soit 4/2 = 2 ou (2 + 6i)/2 = 1 + 3i ✓. Contrôle : somme 3 + 3i et produit 2(1 + 3i) = 2 + 6i ✓. L'ensemble {1 ; 2 + 3i} choisit δ = 1 + 3i, avec le mauvais signe de xy. L'ensemble {4 ; 2 + 6i} oublie de diviser par 2a = 2. L'ensemble {−2 ; −1 − 3i} oublie le signe de −b.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le nombre i est solution de (E) : z³ − (2 + i)z² + (5 + 2i)z − 5i = 0. Quelles sont les deux autres solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 + 4i et 2 − 4i"
+        },
+        {
+          "id": "b",
+          "text": "−1 + 2i et −1 − 2i"
+        },
+        {
+          "id": "c",
+          "text": "1 + 2i et 1 − 2i"
+        },
+        {
+          "id": "d",
+          "text": "1 + 4i et 1 − 4i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On écrit (z − i)(z² + bz + c) = z³ + (b − i)z² + (c − ib)z − ic. En identifiant : b − i = −(2 + i) donne b = −2 ; c − ib = 5 + 2i donne c = 5 ; et −ic = −5i ✓. Il reste z² − 2z + 5 = 0 : Δ = 4 − 20 = −16 = (4i)², donc z = (2 ± 4i)/2 = 1 ± 2i ✓. La réponse 2 ± 4i oublie de diviser par 2. La réponse 1 ± 4i ne divise que la partie réelle. La réponse −1 ± 2i oublie le signe de −b.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les quatre solutions de z⁴ + 4 = 0 sont les affixes de quatre points. Quelle est la nature du quadrilatère qu'ils forment ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un carré"
+        },
+        {
+          "id": "b",
+          "text": "Un losange qui n'est pas un carré"
+        },
+        {
+          "id": "c",
+          "text": "Un parallélogramme qui n'est ni un rectangle ni un losange"
+        },
+        {
+          "id": "d",
+          "text": "Un rectangle qui n'est pas un carré"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec Z = z² : Z² = −4 donne Z = 2i ou Z = −2i. Les racines carrées de 2i sont ±(1 + i) et celles de −2i sont ±(1 − i), car (1 − i)² = −2i. Les points (1 ; 1), (1 ; −1), (−1 ; −1) et (−1 ; 1) forment un carré de côté 2 ✓ : côtés égaux et angles droits. Les quatre points sont à la distance √2 de O, ce qui ne suffit pas pour conclure : il faut comparer les côtés, tous égaux à 2, et vérifier les angles droits.",
+      "difficulty": 3
+    }
+  ]
+}
