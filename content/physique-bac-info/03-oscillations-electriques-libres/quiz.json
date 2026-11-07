@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Oscillations électriques libres",
+  "questions": [
+    {
+      "prompt": "Un circuit RLC série ne contient aucun générateur. Dans quelles conditions peut-il être le siège d'oscillations électriques libres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Condensateur déchargé au départ, résistance totale élevée"
+        },
+        {
+          "id": "b",
+          "text": "Condensateur chargé au départ, résistance totale élevée"
+        },
+        {
+          "id": "c",
+          "text": "Condensateur chargé au départ, résistance totale faible"
+        },
+        {
+          "id": "d",
+          "text": "Condensateur déchargé au départ, résistance totale faible"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sans générateur, l'énergie des oscillations vient de la charge initiale du condensateur, et une résistance totale faible laisse le régime pseudopériodique ✓. Un condensateur déchargé n'apporte aucune énergie au circuit. Une résistance totale élevée amortit si fort que le régime devient apériodique : u_C revient à 0 sans changer de signe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur l'oscillogramme de u_C d'un circuit RLC libre, deux maxima successifs sont séparés de 3,6 ms. Quelle durée sépare un maximum de u_C du minimum qui le suit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,9 ms"
+        },
+        {
+          "id": "b",
+          "text": "1,8 ms"
+        },
+        {
+          "id": "c",
+          "text": "3,6 ms"
+        },
+        {
+          "id": "d",
+          "text": "7,2 ms"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La durée entre deux maxima successifs est la pseudo-période T = 3,6 ms ; un maximum et le minimum suivant, extrema de sens opposés, sont séparés de T/2 = 1,8 ms ✓. La valeur 3,6 ms est T elle-même, 7,2 ms vaut 2T et 0,9 ms vaut T/4, ce qui ne correspond à aucun couple d'extrema consécutifs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un circuit RLC libre en régime pseudopériodique, on remplace le résistor par un résistor de résistance plus petite, sans changer L ni C. Qu'observe-t-on sur l'oscillogramme de u_C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moins d'oscillations visibles et T légèrement plus petite"
+        },
+        {
+          "id": "b",
+          "text": "Davantage d'oscillations visibles et T légèrement plus grande"
+        },
+        {
+          "id": "c",
+          "text": "Davantage d'oscillations visibles et T légèrement plus petite"
+        },
+        {
+          "id": "d",
+          "text": "Moins d'oscillations visibles et T légèrement plus grande"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand R diminue, l'amortissement est plus faible : l'amplitude s'éteint plus lentement, donc on voit davantage d'oscillations, et T diminue légèrement en se rapprochant de T₀ ✓. Moins d'oscillations correspond à un amortissement plus fort, donc à une résistance plus grande. Une pseudo-période qui augmente accompagne une résistance qui augmente, et non qui diminue : T se rapproche de T₀ quand R diminue.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "En convention récepteur, avec i = dq/dt, quelle est l'expression de la tension u_b aux bornes d'une bobine d'inductance L et de résistance r ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "r·i + L·di/dt"
+        },
+        {
+          "id": "b",
+          "text": "L·di/dt"
+        },
+        {
+          "id": "c",
+          "text": "L·i + r·di/dt"
+        },
+        {
+          "id": "d",
+          "text": "r·i − L·di/dt"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une bobine réelle équivaut à une inductance L en série avec sa résistance r : en convention récepteur, u_b = r·i + L·di/dt ✓. L·di/dt seul oublie la résistance r. Le signe moins devant L·di/dt inverserait l'effet d'auto-induction. L·i + r·di/dt échange les rôles de L et de r : L·i n'est pas une tension.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un circuit RLC série libre a L = 0,50 H, C = 4,0 µF et une résistance totale R = 40 Ω. L'équation de la charge s'écrit :\nd²q/dt² + a·dq/dt + b·q = 0\nQuel couple (a ; b) convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 80 s⁻¹ ; b = 2,0·10⁻⁶ s⁻²"
+        },
+        {
+          "id": "b",
+          "text": "a = 40 s⁻¹ ; b = 2,5·10⁵ s⁻²"
+        },
+        {
+          "id": "c",
+          "text": "a = 1,3·10⁻² s⁻¹ ; b = 5,0·10⁵ s⁻²"
+        },
+        {
+          "id": "d",
+          "text": "a = 80 s⁻¹ ; b = 5,0·10⁵ s⁻²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On divise la loi des mailles par L : a = R/L = 40/0,50 = 80 s⁻¹ et b = 1/(LC) = 1/(0,50 × 4,0·10⁻⁶) = 5,0·10⁵ s⁻² ✓. Garder a = 40 et b = 1/C = 2,5·10⁵ oublie la division par L. Inverser R/L en L/R donne 1,3·10⁻² s⁻¹. Prendre b = LC au lieu de 1/(LC) donne 2,0·10⁻⁶ s⁻², unité fausse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un circuit RLC série libre, que devient l'énergie totale E = E_C + E_L au cours du temps ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle reste constante : E_C et E_L se transforment intégralement l'une en l'autre"
+        },
+        {
+          "id": "b",
+          "text": "Elle augmente : la bobine accumule ce que le condensateur perd"
+        },
+        {
+          "id": "c",
+          "text": "Elle diminue : le condensateur la cède à la bobine sans retour"
+        },
+        {
+          "id": "d",
+          "text": "Elle diminue : l'effet Joule la transforme en énergie thermique"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme dE/dt = −R·i² est négatif, l'énergie totale décroît, transformée en chaleur par effet Joule dans la résistance totale ✓. Elle ne se conserve que si R = 0. La bobine ne crée pas d'énergie : elle la restitue ensuite au condensateur. L'énergie cédée à la bobine revient vers le condensateur, la perte vient de la résistance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la période propre T₀ d'un circuit LC de L = 0,16 H et C = 1,0 µF ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,40 ms"
+        },
+        {
+          "id": "b",
+          "text": "1,3 ms"
+        },
+        {
+          "id": "c",
+          "text": "2,5 ms"
+        },
+        {
+          "id": "d",
+          "text": "7,9 ms"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "T₀ = 2π√(LC) avec LC = 0,16 × 1,0·10⁻⁶ = 1,6·10⁻⁷ s², donc √(LC) = 4,0·10⁻⁴ s et T₀ = 2π × 4,0·10⁻⁴ ≈ 2,5 ms ✓. La valeur 0,40 ms oublie le facteur 2π ; 1,3 ms ne met qu'un π ; 7,9 ms correspond à C = 10 µF.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un circuit LC non amorti, comment l'énergie est-elle répartie à l'instant où la charge q du condensateur s'annule ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est nulle, puisque le condensateur est déchargé"
+        },
+        {
+          "id": "b",
+          "text": "Elle est entièrement magnétique : E_L = E"
+        },
+        {
+          "id": "c",
+          "text": "Elle est entièrement électrique : E_C = E"
+        },
+        {
+          "id": "d",
+          "text": "Elle est partagée à parts égales : E_C = E_L"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À cet instant E_C = q²/(2C) = 0, et l'énergie totale se conserve : elle vaut E = E_L = ½·L·I_m², |i| étant maximale ✓. L'énergie ne s'annule pas puisque E est constante. Elle est entièrement électrique quand q est maximale (i = 0). Le partage à parts égales a lieu T₀/8 après un maximum de q, pas quand q = 0.",
+      "difficulty": 2
+    }
+  ]
+}

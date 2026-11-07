@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec le condensateur",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "On oriente le sens positif du courant vers l'armature B d'un condensateur. Qu'appelle-t-on charge q du condensateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La charge portée par l'armature B"
+        },
+        {
+          "id": "b",
+          "text": "La charge portée par l'armature A"
+        },
+        {
+          "id": "c",
+          "text": "La somme des charges portées par A et B"
+        },
+        {
+          "id": "d",
+          "text": "La charge transportée à travers le diélectrique"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par définition, la charge q du condensateur est celle de l'armature vers laquelle le sens positif du courant est orienté : ici, l'armature B ✓. La charge de A est l'opposée de q ; la somme des deux est nulle ; et aucune charge ne traverse le diélectrique, qui est isolant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un galvanomètre est placé dans le circuit d'un condensateur : quand K passe en position 1 (charge), l'aiguille dévie dans un sens puis revient à zéro. K reste en 1 longtemps, puis passe en position 2 (décharge dans un résistor). Que fait l'aiguille ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle reste à zéro, car le condensateur est chargé"
+        },
+        {
+          "id": "b",
+          "text": "Elle dévie dans le même sens, puis revient à zéro"
+        },
+        {
+          "id": "c",
+          "text": "Elle dévie en sens opposé et reste déviée"
+        },
+        {
+          "id": "d",
+          "text": "Elle dévie en sens opposé, puis retombe à zéro"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À la décharge, les électrons repartent de B vers A à travers le résistor : le courant circule en sens contraire de celui de la charge, donc l'aiguille dévie en sens opposé, puis revient vers zéro quand A et B redeviennent neutres ✓. Rester à zéro oublie que le condensateur chargé restitue ses charges ; dévier dans le même sens ignore l'inversion du courant ; rester déviée supposerait un courant permanent alors que la décharge s'achève.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un résistor de 1,5 kΩ est associé en série à un condensateur de 20 µF. Quelle est la constante de temps de ce dipôle RC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 µs"
+        },
+        {
+          "id": "b",
+          "text": "30 ms"
+        },
+        {
+          "id": "c",
+          "text": "30 s"
+        },
+        {
+          "id": "d",
+          "text": "3,0·10⁴ s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "τ = R·C = 1,5·10³ Ω × 20·10⁻⁶ F = 3,0·10⁻² s = 30 ms ✓. La valeur 30 µs oublie la conversion des kΩ en Ω ; 30 s lit les µF comme des mF ; 3,0·10⁴ s oublie la conversion des µF en F.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À t = 120 ms, K passe de la position 1 à la position 2 : la figure donne u_C(t). Le sens positif du courant est celui de la charge. Que peut-on dire de i entre 120 ms et 200 ms ?\n<svg viewBox=\"0 0 340 230\"><title>Tension u_C(t) : elle monte jusqu'à environ 6 V, puis redescend vers 0 après la bascule de K à t = 120 ms</title><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"106.8\" y1=\"22\" x2=\"106.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"161.6\" y1=\"22\" x2=\"161.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"216.4\" y1=\"22\" x2=\"216.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"271.2\" y1=\"22\" x2=\"271.2\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326\" y1=\"22\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"162\" x2=\"326\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"134\" x2=\"326\" y2=\"134\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"106\" x2=\"326\" y2=\"106\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"78\" x2=\"326\" y2=\"78\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"50\" x2=\"326\" y2=\"50\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"22\" x2=\"326\" y2=\"22\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52\" y1=\"196\" x2=\"52\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"52,12 48,20 56,20\" fill=\"#0f172a\"/><line x1=\"52\" y1=\"187\" x2=\"52\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"52\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"106.8\" y1=\"187\" x2=\"106.8\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"106.8\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><line x1=\"161.6\" y1=\"187\" x2=\"161.6\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"161.6\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">80</text><line x1=\"216.4\" y1=\"187\" x2=\"216.4\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"216.4\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">120</text><line x1=\"271.2\" y1=\"187\" x2=\"271.2\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"271.2\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">160</text><line x1=\"326\" y1=\"187\" x2=\"326\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"326\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">200</text><line x1=\"49\" y1=\"162\" x2=\"55\" y2=\"162\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"166\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"49\" y1=\"134\" x2=\"55\" y2=\"134\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"138\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"49\" y1=\"106\" x2=\"55\" y2=\"106\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"110\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"49\" y1=\"78\" x2=\"55\" y2=\"78\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"82\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"49\" y1=\"50\" x2=\"55\" y2=\"50\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"54\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"49\" y1=\"22\" x2=\"55\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"26\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><text x=\"322\" y=\"224\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"60\" y=\"14\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_C (V)</text><line x1=\"216.4\" y1=\"190\" x2=\"216.4\" y2=\"22\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><polyline points=\"52,190 53.4,181.8 54.7,174 56.1,166.6 57.5,159.5 58.9,152.8 60.2,146.5 61.6,140.4 63,134.6 64.3,129.1 65.7,123.9 67.1,118.9 68.4,114.2 69.8,109.7 71.2,105.4 72.5,101.4 73.9,97.5 75.3,93.8 76.7,90.3 78,87 79.4,83.8 80.8,80.8 82.1,77.9 83.5,75.2 84.9,72.6 86.2,70.1 87.6,67.8 89,65.6 90.4,63.4 91.7,61.4 93.1,59.5 94.5,57.7 95.8,55.9 97.2,54.3 98.6,52.7 100,51.2 101.3,49.8 102.7,48.4 104.1,47.1 105.4,45.9 106.8,44.7 108.2,43.6 109.5,42.6 110.9,41.6 112.3,40.6 113.7,39.7 115,38.8 116.4,38 117.8,37.2 119.1,36.5 120.5,35.8 121.9,35.1 123.2,34.5 124.6,33.9 126,33.3 127.3,32.7 128.7,32.2 130.1,31.7 131.5,31.2 132.8,30.8 134.2,30.4 135.6,30 136.9,29.6 138.3,29.2 139.7,28.8 141.1,28.5 142.4,28.2 143.8,27.9 145.2,27.6 146.5,27.3 147.9,27.1 149.3,26.8 150.6,26.6 152,26.4 153.4,26.2 154.8,26 156.1,25.8 157.5,25.6 158.9,25.4 160.2,25.2 161.6,25.1 163,24.9 164.3,24.8 165.7,24.6 167.1,24.5 168.4,24.4 169.8,24.3 171.2,24.2 172.6,24.1 173.9,24 175.3,23.9 176.7,23.8 178,23.7 179.4,23.6 180.8,23.5 182.2,23.5 183.5,23.4 184.9,23.3 186.3,23.3 187.6,23.2 189,23.1 190.4,23.1 191.7,23 193.1,23 194.5,22.9 195.8,22.9 197.2,22.8 198.6,22.8 200,22.8 201.3,22.7 202.7,22.7 204.1,22.7 205.4,22.6 206.8,22.6 208.2,22.6 209.6,22.5 210.9,22.5 212.3,22.5 213.7,22.5 215,22.4 216.4,22.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"216.4,22.4 217.8,30.6 219.1,38.4 220.5,45.8 221.9,52.8 223.2,59.5 224.6,65.9 226,71.9 227.4,77.7 228.7,83.1 230.1,88.4 231.5,93.3 232.8,98 234.2,102.5 235.6,106.8 236.9,110.8 238.3,114.7 239.7,118.4 241.1,121.9 242.4,125.2 243.8,128.3 245.2,131.4 246.5,134.2 247.9,136.9 249.3,139.5 250.7,142 252,144.3 253.4,146.6 254.8,148.7 256.1,150.7 257.5,152.6 258.9,154.4 260.2,156.2 261.6,157.8 263,159.4 264.4,160.9 265.7,162.3 267.1,163.6 268.5,164.9 269.8,166.2 271.2,167.3 272.6,168.4 273.9,169.5 275.3,170.5 276.7,171.4 278.1,172.3 279.4,173.2 280.8,174 282.2,174.8 283.5,175.5 284.9,176.2 286.3,176.9 287.6,177.6 289,178.2 290.4,178.7 291.8,179.3 293.1,179.8 294.5,180.3 295.9,180.8 297.2,181.2 298.6,181.7 300,182.1 301.3,182.5 302.7,182.8 304.1,183.2 305.4,183.5 306.8,183.8 308.2,184.1 309.6,184.4 310.9,184.7 312.3,184.9 313.7,185.2 315,185.4 316.4,185.6 317.8,185.9 319.1,186.1 320.5,186.3 321.9,186.4 323.3,186.6 324.6,186.8 326,186.9\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"222.4\" y=\"34\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">K en 2</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "i est positif et sa valeur diminue"
+        },
+        {
+          "id": "b",
+          "text": "i est négatif et sa valeur absolue augmente"
+        },
+        {
+          "id": "c",
+          "text": "i est négatif et sa valeur absolue diminue"
+        },
+        {
+          "id": "d",
+          "text": "i est positif et constant"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Après la bascule, u_C donc q = C·u_C diminue : i = dq/dt est négatif. La pente de la courbe, très forte juste après 120 ms, s'adoucit ensuite : |i| diminue vers 0 ✓. Un i positif correspondrait à une charge qui augmente ; une valeur absolue croissante ou constante n'est pas celle d'une courbe dont la pente s'aplatit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un générateur de courant débite I = 50 µA dans un condensateur de 200 µF initialement neutre. Au bout de quelle durée la tension u_C atteint-elle 5,0 V ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 ms"
+        },
+        {
+          "id": "b",
+          "text": "50 ms"
+        },
+        {
+          "id": "c",
+          "text": "10 s"
+        },
+        {
+          "id": "d",
+          "text": "20 s"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À courant constant, q = I·t et q = C·u_C donnent t = C·u_C/I = 200·10⁻⁶ F × 5,0 V / 50·10⁻⁶ A = 20 s ✓. La valeur 10 s ajoute un facteur ½ propre à l'énergie ; 20 ms lit I comme 50 mA ; 50 ms vient du rapport inversé I/(C·u_C).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un condensateur plan a des armatures de surface S = 1000 cm², écartées de e = 0,10 mm, avec un diélectrique tel que ε_r = 6 (ε₀ ≈ 8,8·10⁻¹² F·m⁻¹). Quelle est sa capacité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "53 pF"
+        },
+        {
+          "id": "b",
+          "text": "8,8 nF"
+        },
+        {
+          "id": "c",
+          "text": "53 nF"
+        },
+        {
+          "id": "d",
+          "text": "530 µF"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En unités SI, S = 0,10 m² et e = 1,0·10⁻⁴ m ; C = ε_r·ε₀·S/e = 6 × 8,8·10⁻¹² × 0,10 / 1,0·10⁻⁴ = 5,3·10⁻⁸ F = 53 nF ✓. 53 pF laisse e en millimètres ; 8,8 nF oublie le facteur ε_r ; 530 µF laisse S en cm².",
+      "difficulty": 2
+    }
+  ]
+}
