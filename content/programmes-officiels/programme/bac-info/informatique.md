@@ -7,7 +7,7 @@
      n'est pas imprimé dans le PDF [?] ; la source est déclarée en `sourcesLibres` du registre (aucun code inventé).
      Lu le 2026-11-07 : couche texte (L1, `pdftotext -layout` page par page) puis sondage image par
      quatre lecteurs indépendants (opus) ; PDF = page imprimée (offset 0).
-     Statut : EN ATTENTE de la relecture R-7 (voir §6). -->
+     Statut : relecture R-7 faite le 2026-11-07 (voir §6 et le registre). -->
 
 # Informatique (algorithmique et programmation) — Bac Sciences de l'informatique (`bac-info`) · manuel officiel CNP
 
@@ -533,7 +533,6 @@ Remarque : « L'itération et la récursivité, correspondent à deux modes de p
     Else Puissance := a * Puissance (a, n - 1);
   End;
   ```
-- *[sic] p.84 : l'analyse écrit une troisième signature `Permuter (deb, maximum, T)`, en plus de l'algorithme `(T, deb, maximum)` et du Pascal `(T[deb], T[Maximum])`.*
 - **Application 3 — Tri par sélection récursif, ordre décroissant (p.83–85).** Programme `Selection` : `Saisir`, `Remplir`, `Tri_Sel_Rec (1, n, T)`, `Afficher_T` ; type `Tab = Tableau de n entiers`. Chaque appel : recherche de l'indice du maximum (`FN Max`), permutation si ≠ deb, puis appel sur `deb+1` si `deb+1 ≠ fin`. NB : Max et Permuter « ont été l'objet d'un apprentissage au niveau de la 3ème année ».
   ```
   0) Procedure Tri_Sel_Rec (deb, fin : Entier ; Var T : Tab)
@@ -566,6 +565,7 @@ Remarque : « L'itération et la récursivité, correspondent à deux modes de p
     If (deb+1 <> fin) Then Tri_Sel_Rec (deb+1, fin, T);
   End;
   ```
+- *[sic] p.84 : l'analyse écrit une troisième signature `Permuter (deb, maximum, T)`, en plus de l'algorithme `(T, deb, maximum)` et du Pascal `(T[deb], T[Maximum])`.*
 - **Application 4 — Recherche dichotomique récursive (p.86–88).** Tableau supposé trié croissant ; programme `Dichotom` (pp. `Recherche`). 4 cas : `m = T[milieu]` ; `m < T[milieu]` et `deb < milieu` → moitié gauche ; `m > T[milieu]` et `fin > milieu` → moitié droite ; sinon absent ; `milieu ← (deb + fin) Div 2`.
   ```
   0) Fonction Dichotomique (deb, fin, m : Entier ; T : Tab ) : Booléen
@@ -898,8 +898,8 @@ Conventions : `←` affectation (notation du manuel) ; `[sic]` = coquille/incoh�
 `[?]` = doute ; « Remarque du transcripteur » = observation hors texte, à ne pas reprendre comme contenu
 officiel. Pictogrammes : le manuel n'affiche ni étoiles ni code couleur ; sa légende p.5 définit quatre silhouettes de difficulté (rattachement non relevé ici `[?]`) ; il place une petite icône devant chaque énoncé. Trois icônes distinctes
 reviennent, notées ici : **[P?]** personnage tête dans la main + « ? » ; **[P♪]** personnage avec « ? » et
-notes de musique ; **[PR]** personnage « à rayons » (traits autour de la tête). Le rapport icône ↔
-difficulté n'est pas établi par le manuel : ne pas en déduire un niveau.
+notes de musique ; **[PR]** personnage « à rayons » (traits autour de la tête). Le rattachement des icônes de ces chapitres à la
+légende p.5 n'a pas été relevé `[?]` : ne pas en déduire un niveau.
 
 ---
 
@@ -2267,5 +2267,5 @@ ex.9 et 13-16 → 5b, ex.1 mixte : a → 5a, b-d → 5b ; ch.7 ex.1-2 → 7a, ex
   ch.4-5 64/64 (20 pages touchées) ; ch.6-7 38/61 (10). Les écarts portent sur des formules, exposants, symboles
   ou figures ; **aucun sur le code Pascal ni sur les algorithmes**. Détail dans la « Fiche de lecture » de
   chaque section.
-- **À valider** : (1) relecture R-7 par un auditeur opus indépendant ; (2) code CNP du manuel ; (3) niveaux de
+- **À valider** : (1) ~~relecture R-7~~ faite le 2026-11-07 (2 auditeurs opus indépendants, 0 BLOCKER, 16 constats corrigés puis revérifiés) ; (2) code CNP du manuel ; (3) niveaux de
   difficulté par exercice ; (4) sujets d'examen du Bac informatique (non au Drive à ce jour).
