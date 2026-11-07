@@ -110,6 +110,12 @@ local au lieu de la conversation ; le décoder dans `~/.cache/yqa-manuels/<code>
 privé 0700, **jamais dans git**), puis `pdftotext -layout -f N -l N` page par page — le texte garde
 alors ses vrais numéros de page — et `pdftoppm -r 110 -png -f N -l N` pour l'image d'une page.
 
+**Écarté : `markitdown`** (Microsoft, mesuré le 2026-11-07 sur `222451P00` et `101612P00`). Sur un
+PDF, il appelle pdfminer/pdfplumber : la même couche texte que `pdftotext`, mais 24 fois plus lent
+(41 s contre 1,7 s), sans limites de page (pas de `pagesLues` possible), le document entier à chaque
+appel, des formules encore plus éclatées, et sur l'arabe le même brouillage de glyphes. Ne pas le
+réévaluer sans fait nouveau, par exemple une source en DOCX ou PPTX.
+
 **Lire au moindre coût — chaque page au premier barreau qui suffit :**
 
 | Barreau | Quand | Comment |
