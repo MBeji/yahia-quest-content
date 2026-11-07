@@ -465,6 +465,7 @@ Contenu identique à 223433 ch1 (mêmes pages 10–41, mêmes figures, mêmes 13
   exploitée hors couche texte, sauf le symbole Fig.1 et les Fig.5/6, 12–14, 21 décrites d'après la couche
   texte et, pour leur contenu, d'après la fiche 223433 au texte identique — à revérifier si une figure de
   ces pages est reprise), 38, 40, 41 (prose : fiche technique p.38, foudre), 9 (garde de thème).
+- **Relecture R-7 (2026-11-07)** : les pages d'abord non vues sur l'image (ch.1 : p.12, 14, 19, 21, 24, 38, 40, 41) ont été vues sur l'image par l'auditeur indépendant et sont conformes au texte transcrit.
 - **Écarts texte/image** : p.15 encadré i = lim Δq/Δt = dq/dt absent du texte ; p.18 ε, ε₀, ε_r, π perdus ;
   p.20 fractions et carrés de E_C éclatés ; p.22, p.25 α, τ, ∫, ∀ perdus ; p.29 (du_C/dt)_{t=0} illisible ;
   p.30 ≤, ≥ perdus, « ≃ » rendu « b », « 1 ‰ » rendu « 1o/oo » ; p.31 ε rendu « e » (fidèle : coquille réelle)
@@ -826,7 +827,7 @@ i = f(t) décroissante ; t ∈ [5, 8 ms] ⇒ i = f(t) croissante (t en ms) · Ex
 6.r.t²).10⁻³ V ; 2°) u_AB ≃ 6,06 V · Ex. 7 : 1°) t ∈ [0, 40 ms] ⇒ u_AB = 3L ; t ∈ [40, 50 ms] ⇒ u_AB =
 −12.L ; 2°) [0, 40 ms] u_AB = 0,3 V ; [40, 50 ms] u_AB = −1,2 V · Ex. 8 : 1°) i(t) tend vers une limite I₀ ;
 2°) I₀ = E/(r + R₀) ; 3°) di/dt + (R/L).i = E/L ; 4°) on remplace i par son expression ; 5°) A = E/R ;
-α = R/L ; 6°) τ = L/R ; pour t = 5.τ le régime permanent s'étaablit [sic] · Ex. 9 : a) I₀ = E/R = 0,1 A ;
+α = R/L ; 6°) τ = L/R ; pour t = 5.τ le régime permanent s'établit · Ex. 9 : a) I₀ = E/R = 0,1 A ;
 b) τ = L/R = 0,83 ms · Ex. 10 : 1°) u_AB = L.di/dt + r.i ; 2°) u_BC = R.i ; 3°) courbe 1 : u_BC, courbe 2 : u_AB ;
 4°) I₀ = E/(r + R) = 28,6 mA ; 5°) I₀ = u_BC/r' [sic, lire /R] = 28,5 mA ; 6°) méthode de tangente ;
 7°) τ = 2,5.10⁻³ s ; 8°) τ = L/(r + R), donc « R » [sic, lire L] = τ.(r + R) = 0,53 H · Ex. 11 : 2°) u_AB =
@@ -880,6 +881,7 @@ Contenu identique à 223433 ch2 (pages 42–77, mêmes 14 exercices, même exerc
 - **Pages lues en L1** : 42–77 (toutes, couche texte présente partout, y compris p.66 et p.73) et 392.
 - **Pages lues sur l'image (110 dpi)** : 42 à 75 (les 34 pages) + 392 (160 dpi). Non vues sur l'image :
   76 (étude de texte, prose + photo) et 77 (prose seule).
+- **Relecture R-7 (2026-11-07)** : les pages d'abord non vues sur l'image (ch.2 : p.76, 77) ont été vues sur l'image par l'auditeur indépendant et sont conformes au texte transcrit.
 - **Écarts texte/image** : fractions, exposants, indices perdus (p.50–51, 54–55, 59–62, 65–66, 69–70) ;
   tableau de Lenz p.47 et tableau des bobines p.51 déstructurés ; signes des impulsions Fig.4a/4b/7c/7d,
   courbes Fig.12, 19, 23, 27 et graphes des ex. 5, 7, 10, 11, 12 uniquement sur l'image ; Fig.18 : diode absente
@@ -888,7 +890,7 @@ Contenu identique à 223433 ch2 (pages 42–77, mêmes 14 exercices, même exerc
   (p.51) ; « lorque » (p.52) ; « CIRULE », « milliampèremère » (p.53) ; « p_L = L.di/dt » (p.55) ; « Éxpression »
   (p.60) ; « atteingne » (p.64) ; « appéllation » (p.65) ; « graphiaue », « détermi-nanation » (Fig.31–32) ;
   exposant « t/t » (L'essentiel p.67) ; « (B/α) » et « 3,45 V » vs « 3.54 V » (p.69–70) ; « lavaleur » (ex. 11) ;
-  corrigé : « s'étaablit », « u_BC/r' », « R = τ.(r + R) = 0,53 H », « r' = 10 ? ».
+  corrigé : « u_BC/r' », « R = τ.(r + R) = 0,53 H », « r' = 10 ? ».
 - **Doutes [?]** : (1) Fig.18 sans la diode D que le texte et les questions 6°) (p.57) et 3°) (p.61)
   supposent ; voies Y1/Y2 inversées ; (2) p.54 « u_AB » vs « u_AM » pour la tension du condensateur ;
   (3) ex. 11 : l'énoncé annonce deux oscillogrammes, un seul est imprimé ; (4) ex. 8 6°) symbole τ manquant ;
@@ -1191,6 +1193,7 @@ Contenu identique à 223433 ch3 (pages 78–109, mêmes activités, mêmes 12 ex
 - **Pages lues sur l'image (110 dpi)** : 78, 80, 81, 83 à 109 (30 pages) + 392 (160 dpi). Non vues sur
   l'image : 79 (page d'ouverture, photo + 2 questions lues en L1) et 82 (prose du récit par étapes et
   Fig.4b–4d, Fig.5 — texte pris en L1).
+- **Relecture R-7 (2026-11-07)** : les pages d'abord non vues sur l'image (ch.3 : p.79, 82) ont été vues sur l'image par l'auditeur indépendant et sont conformes au texte transcrit.
 - **Écarts texte/image** : ω, φ, π, √ supprimés (p.88–92, 95, 98, 100 QCM III) ; équations éclatées (p.85, 86,
   108) ; E_L = ½(L/R₀²)u_R₀² illisible (p.86) ; « ≃ » rendu « b » (p.98, 108) ; φ = π (p.98) perdu ; 1/τ ex. 10
   perdu ; θ_p rendu « p » (p.107) ; valeurs des champs des Fig.13–14, échelles et courbes uniquement sur
