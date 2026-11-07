@@ -7,27 +7,27 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "Une bobine est fermée sur un résistor et un oscilloscope visualise la tension u_R à ses bornes. On approche rapidement le pôle nord d'un aimant d'une face de la bobine : u_R présente une impulsion négative. On recommence, à la même vitesse et du même côté, avec le pôle sud. Que montre u_R ?",
+      "prompt": "Un oscilloscope visualise la tension u_R aux bornes du résistor qui ferme une bobine. On approche rapidement le pôle nord d'un aimant d'une face de la bobine : u_R présente une impulsion négative. On garde maintenant l'aimant immobile et l'on approche la bobine de ce même pôle nord, par la même face et à la même vitesse. Que montre u_R ?",
       "options": [
         {
           "id": "a",
-          "text": "Une impulsion négative de même amplitude"
+          "text": "Une impulsion positive, de même amplitude qu'avant"
         },
         {
           "id": "b",
-          "text": "Une impulsion positive de même amplitude"
+          "text": "Une impulsion négative, de même amplitude qu'avant"
         },
         {
           "id": "c",
-          "text": "Une impulsion négative d'amplitude double"
+          "text": "Aucune impulsion, puisque l'aimant reste immobile"
         },
         {
           "id": "d",
-          "text": "Aucune impulsion, la bobine ne réagissant qu'au pôle nord"
+          "text": "Une impulsion négative, d'amplitude double de l'avant"
         }
       ],
       "correctOption": "b",
-      "explanation": "Le pôle sud crée un champ de sens opposé à celui du pôle nord. À l'approche, ‖B⃗‖ augmente toujours, mais B⃗ a changé de sens : par la loi de Lenz, b⃗ change de sens lui aussi, donc le courant induit s'inverse et u_R devient positive ✓. À même vitesse de variation, l'amplitude est la même. Aucun pôle n'est privilégié : la bobine réagit à toute variation du champ.",
+      "explanation": "Seul le mouvement relatif aimant-bobine compte : approcher la bobine de l'aimant à la même vitesse fait varier ‖B⃗‖ exactement comme avant, donc le courant induit a le même sens et la même intensité, et u_R présente la même impulsion négative ✓. Une bobine qui bouge devant un aimant immobile reçoit un champ variable. L'impulsion ne change pas de signe, puisque ni le pôle ni le sens relatif du déplacement n'ont changé, et la vitesse est la même, donc l'amplitude aussi.",
       "difficulty": 1
     },
     {
@@ -103,7 +103,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Une bobine d'inductance 0,20 H et de résistance 5,0 Ω est traversée par un courant qui va de B vers A. Son intensité vaut 0,40 A et croît de 10 A/s. Quelle est la tension u_AB ?",
+      "prompt": "Une bobine d'inductance 0,20 H et de résistance 5,0 Ω est traversée par un courant qui va de B vers A. Son intensité vaut 0,60 A et décroît de 5,0 A/s. Quelle est la tension u_AB ?",
       "options": [
         {
           "id": "a",
@@ -122,8 +122,8 @@
           "text": "+4,0 V"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Le courant va de B vers A : la formule u = L di/dt + r i donne la tension u_BA = 0,20 × 10 + 5,0 × 0,40 = 2,0 + 2,0 = 4,0 V, donc u_AB = −4,0 V ✓. +4,0 V oublie le sens du courant. Les valeurs ±2,0 V ne gardent qu'un seul des deux termes, L di/dt ou r i.",
+      "correctOption": "b",
+      "explanation": "Le courant va de B vers A : la formule u = L di/dt + r i donne la tension u_BA = 0,20 × (−5,0) + 5,0 × 0,60 = −1,0 + 3,0 = 2,0 V, donc u_AB = −2,0 V ✓. +2,0 V oublie le sens du courant. Les valeurs ±4,0 V prennent la pente pour positive : le terme inductif s'ajoute alors à r i au lieu de s'en retrancher.",
       "difficulty": 2
     },
     {

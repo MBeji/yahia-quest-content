@@ -31,7 +31,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un générateur de f.e.m. E = 10 V alimente, en série, une bobine de résistance r = 15 Ω et un résistor R₀ = 35 Ω ; le régime permanent est établi. On ouvre K : une diode idéale offre au courant de la bobine un chemin à travers R₀. De combien varie brusquement la tension u_AB de la bobine à l'ouverture ?",
+      "prompt": "Un dipôle RL (bobine de résistance r = 15 Ω, résistor R₀ = 35 Ω) est en régime permanent, parcouru par I₀ = 0,20 A. On ouvre K : une diode idéale offre au courant de la bobine un chemin à travers R₀. De combien varie brusquement la tension u_AB de la bobine à l'ouverture ?",
       "options": [
         {
           "id": "a",
@@ -39,7 +39,7 @@
         },
         {
           "id": "b",
-          "text": "−4,0 V"
+          "text": "+10 V"
         },
         {
           "id": "c",
@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Avant l'ouverture, I₀ = E/(R₀ + r) = 10 / 50 = 0,20 A et u_AB = r I₀ = +3,0 V. Juste après, i vaut toujours 0,20 A (continuité) et u_AB = −R₀ I₀ = −7,0 V. La variation vaut −7,0 − 3,0 = −10 V, soit −E ✓. +3,0 V est la valeur avant l'ouverture ; −7,0 V est la valeur après, non la variation ; −4,0 V additionne les deux valeurs au lieu de les soustraire.",
+      "explanation": "Avant l'ouverture, u_AB = r I₀ = 15 × 0,20 = +3,0 V. Juste après, i vaut toujours 0,20 A (continuité) et u_AB = −R₀ I₀ = −7,0 V. La variation vaut −7,0 − 3,0 = −10 V, soit −(R₀ + r) I₀ ✓. +3,0 V est la valeur avant l'ouverture, −7,0 V la valeur après. +10 V est la f.e.m. e(0⁺) = R I₀, positive : on la confond avec la variation de la tension.",
       "difficulty": 3
     },
     {

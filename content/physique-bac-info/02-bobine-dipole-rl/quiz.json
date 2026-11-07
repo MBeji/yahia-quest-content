@@ -26,27 +26,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "On approche le pôle nord d'un aimant d'une bobine fermée sur un résistor, d'abord lentement, puis deux fois plus vite. Que devient l'impulsion de tension aux bornes du résistor ?",
+      "prompt": "On approche le pôle nord d'un aimant d'une bobine fermée sur un résistor, puis on l'éloigne deux fois plus vite. Comparée à l'impulsion de tension de l'approche, celle de l'éloignement est :",
       "options": [
         {
           "id": "a",
-          "text": "Elle est plus grande, car le champ varie plus vite dans la bobine"
+          "text": "de signe contraire, d'amplitude plus grande"
         },
         {
           "id": "b",
-          "text": "Elle est identique, car ni la bobine ni l'aimant n'ont changé"
+          "text": "de même signe, d'amplitude plus grande"
         },
         {
           "id": "c",
-          "text": "Elle est plus petite, car l'aimant reste moins longtemps près de la bobine"
+          "text": "de signe contraire, de même amplitude"
         },
         {
           "id": "d",
-          "text": "Elle est de signe contraire, car la bobine s'oppose à un déplacement rapide"
+          "text": "de signe contraire, d'amplitude plus petite"
         }
       ],
       "correctOption": "a",
-      "explanation": "Le courant induit est d'autant plus intense que la variation du champ est rapide : deux fois plus vite, ‖B⃗‖ augmente deux fois plus vite et l'impulsion est plus grande ✓. Elle n'est pas identique, puisque la même variation se fait en moitié moins de temps. Le temps passé près de la bobine ne compte pas, c'est la rapidité de variation du champ qui compte. Le signe dépend du sens du déplacement et du pôle, qui n'ont pas changé.",
+      "explanation": "Éloigner l'aimant fait diminuer ‖B⃗‖ au lieu de l'augmenter : le courant induit s'inverse et l'impulsion change de signe. Deux fois plus vite, la variation du champ est plus rapide : l'amplitude est plus grande ✓. Même signe : le sens du déplacement a changé. Même amplitude ou plus petite : seule la rapidité de la variation compte, et elle a augmenté.",
       "difficulty": 1
     },
     {
@@ -74,27 +74,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Une bobine d'inductance 0,50 H et de résistance 12 Ω est traversée par un courant constant de 0,30 A. Quelle est la tension à ses bornes ?",
+      "prompt": "Une bobine d'inductance 0,50 H est traversée par un courant constant de 0,30 A ; un voltmètre lit 3,6 V à ses bornes. Quelle est sa résistance r ?",
       "options": [
         {
           "id": "a",
-          "text": "0 V"
+          "text": "1,1 Ω"
         },
         {
           "id": "b",
-          "text": "0,15 V"
+          "text": "7,2 Ω"
         },
         {
           "id": "c",
-          "text": "3,6 V"
+          "text": "12 Ω"
         },
         {
           "id": "d",
-          "text": "3,75 V"
+          "text": "24 Ω"
         }
       ],
       "correctOption": "c",
-      "explanation": "Le courant est constant : di/dt = 0, donc le terme inductif L di/dt est nul et u = r i = 12 × 0,30 = 3,6 V ✓. 0 V ignore la résistance du fil. 0,15 V est le produit L i, qui n'intervient pas dans la tension. 3,75 V ajoute ce produit L i à r i.",
+      "explanation": "Le courant est constant : di/dt = 0, donc le terme inductif est nul et u = r i, d'où r = u/i = 3,6 / 0,30 = 12 Ω ✓. 1,1 Ω est le produit u × i. 7,2 Ω divise la tension par L, qui n'intervient pas. 24 Ω divise par L i = 0,15, en prenant ce produit pour un terme de la tension.",
       "difficulty": 1
     },
     {
@@ -170,27 +170,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un dipôle RL est formé d'une bobine (L = 0,30 H, r = 10 Ω) et d'un résistor R₀ = 140 Ω. Quelle est sa constante de temps ?",
+      "prompt": "Un dipôle RL a une résistance totale R = 150 Ω ; on mesure une constante de temps τ = 2,0 ms. Quelle est l'inductance L de sa bobine ?",
       "options": [
         {
           "id": "a",
-          "text": "2,0 ms"
+          "text": "13,3 μH"
         },
         {
           "id": "b",
-          "text": "2,1 ms"
+          "text": "0,30 H"
         },
         {
           "id": "c",
-          "text": "45 s"
+          "text": "300 H"
         },
         {
           "id": "d",
-          "text": "500 s"
+          "text": "75 kH"
         }
       ],
-      "correctOption": "a",
-      "explanation": "La résistance totale est R = R₀ + r = 150 Ω, donc τ = L/R = 0,30 / 150 = 2,0 ms ✓. 2,1 ms vient de L/R₀, qui oublie la résistance de la bobine. 45 s est le produit L × R. 500 s est le quotient inversé R/L.",
+      "correctOption": "b",
+      "explanation": "De τ = L/R on tire L = τ R = 2,0 × 10⁻³ × 150 = 0,30 H ✓. 13,3 μH est le quotient τ/R. 300 H oublie de convertir les ms en s. 75 kH est le quotient R/τ.",
       "difficulty": 2
     }
   ]

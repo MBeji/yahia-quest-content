@@ -55,27 +55,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Une bobine d'inductance 0,50 H et de résistance 4,0 Ω est parcourue de A vers B par un courant i(t) = 0,30 t² (i en A, t en s). Quelle est la tension u_AB à t = 2,0 s ?",
+      "prompt": "Une bobine d'inductance 0,50 H et de résistance 4,0 Ω est parcourue de A vers B par un courant i(t) = 0,30 t² (i en A, t en s). À quel instant t > 0 le terme inductif L di/dt est-il égal au terme résistif r i ?",
       "options": [
         {
           "id": "a",
-          "text": "4,2 V"
+          "text": "4,0 s"
         },
         {
           "id": "b",
-          "text": "4,8 V"
+          "text": "1,0 s"
         },
         {
           "id": "c",
-          "text": "5,1 V"
+          "text": "0,25 s"
         },
         {
           "id": "d",
-          "text": "5,4 V"
+          "text": "0,125 s"
         }
       ],
-      "correctOption": "d",
-      "explanation": "On dérive : di/dt = 0,60 t = 1,2 A/s à t = 2,0 s, donc L di/dt = 0,50 × 1,2 = 0,60 V. Le courant vaut i = 0,30 × (2,0)² = 1,2 A, donc r i = 4,0 × 1,2 = 4,8 V. Le courant va de A vers B : u_AB = 0,60 + 4,8 = 5,4 V ✓. 4,8 V oublie le terme inductif ; 5,1 V dérive 0,30 t² en 0,60 au lieu de 0,60 t ; 4,2 V soustrait le terme inductif.",
+      "correctOption": "c",
+      "explanation": "On a L di/dt = 0,50 × 0,60 t = 0,30 t et r i = 4,0 × 0,30 t² = 1,2 t². L'égalité 0,30 t = 1,2 t² donne t = 0,25 s ✓ (t = 0 est la solution triviale). 0,125 s dérive 0,30 t² en 0,30 t au lieu de 0,60 t ; 1,0 s oublie la résistance r (r i = 0,30 t²) ; 4,0 s inverse le quotient (t = r/2L au lieu de 2L/r).",
       "difficulty": 2
     },
     {
@@ -135,19 +135,19 @@
         },
         {
           "id": "b",
-          "text": "Son inductance dépend de l'intensité du courant qui la traverse"
+          "text": "Un noyau de fer doux placé dans son solénoïde diminue son inductance"
         },
         {
           "id": "c",
-          "text": "En courant constant, elle équivaut à un résistor de résistance r"
+          "text": "Sans noyau, son inductance dépend de l'intensité qui la traverse"
         },
         {
           "id": "d",
-          "text": "Un noyau de fer doux placé dans son solénoïde diminue son inductance"
+          "text": "En courant constant, elle équivaut à un résistor de résistance r"
         }
       ],
-      "correctOption": "c",
-      "explanation": "En courant constant, di/dt = 0 et u = r i : la bobine équivaut à un résistor de résistance r ✓. Elle s'oppose aux variations de l'intensité du courant, non de la tension. Son inductance ne dépend que de ses caractéristiques géométriques et de son noyau, jamais de l'intensité. Un noyau de fer doux fait augmenter l'inductance.",
+      "correctOption": "d",
+      "explanation": "En courant constant, di/dt = 0 et u = r i : la bobine équivaut à un résistor de résistance r ✓. Elle s'oppose aux variations de l'intensité du courant, non de la tension. Un noyau de fer doux fait augmenter l'inductance. Sans noyau, l'inductance ne dépend que de la géométrie de la bobine, pas de l'intensité.",
       "difficulty": 2
     }
   ]
