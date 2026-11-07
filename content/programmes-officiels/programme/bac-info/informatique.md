@@ -1308,7 +1308,7 @@ calcul de PGCD et PPCM (simple liste — seul le PGCD est traité ici).
 
 **Combinaisons (Activité 2, p.157)**
 > Une combinaison de p éléments d'un ensemble E de n éléments est une partie de E formée par p éléments.
-> […] est représenté par la notation suivante (p.157) :
+> Le nombre de combinaisons de p éléments de l'ensemble E est représenté par la notation suivante :
 > C^p_n = A^p_n / p! = n! / (p!(n-p)!)
 > n et p sont des entiers qui vérifient la condition suivante : 0 ≤ p ≤ n
 
@@ -2187,7 +2187,7 @@ Il y a plus de 8 notions possibles : découpage proposé en 2 chapitres :
 
 - **Pages sondées en image** : 215, 217, 221, 222, 223, 226, 234, 235, 236, 237, 238, 239, 240, 242, soit 14 pages sur 33.
   - La section V a été sondée en entier (p.234–240) à cause d'un écart.
-  - Pour les sections II à IV, j'ai sondé les traces, les figures et la carte, sans aucun écart sur le texte.
+  - Pour les sections II à IV, les traces, les figures et la carte ont été sondées, sans aucun écart sur le texte.
   - Lues en texte seulement : 213, 214, 216, 218–220, 224, 225, 227–233, 241, 243–245.
 - **Écarts texte ↔ image (3)** :
   1. p.235 : les deux échiquiers solutions n'existent que sur l'image (positions : voir les figures ; non transcrites case par case) ;
@@ -2207,7 +2207,7 @@ Il y a plus de 8 notions possibles : découpage proposé en 2 chapitres :
   - pour [1, 2], M tombe à g−1 = 0, ce qui donne un accès hors tableau (T[0]) ;
   - sur le tableau même de l'Activité 1, l'algorithme finit par accéder à T[0].
   - **Seule la première partition (pivot 10, p.215–216) sert de trace de référence** ; la suite de la p.217 est incohérente avec le principe (voir le [sic] de la partie gauche, pivot 2).
-  - **Recommandation pour la génération** : tester le **principe** et la **trace** de partition, mais ne pas présenter l'algorithme p.220 comme une référence correcte, et ne pas fabriquer de questions « que produit ce code ? » à partir de lui.
+  - **Recommandation pour la génération** : tester le **principe** et la **trace** de la première partition, mais ne pas présenter l'algorithme p.220 comme une référence correcte, et ne pas fabriquer de questions « que produit ce code ? » à partir de lui.
 - **Doutes `[?]`** : aucun.
 
 ---
