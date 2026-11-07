@@ -50,27 +50,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Dans un circuit RLC libre en régime pseudopériodique, on remplace le résistor par un résistor de résistance plus grande, sans changer L ni C. Le régime reste pseudopériodique. Qu'observe-t-on ?",
+      "prompt": "Dans un circuit RLC libre en régime pseudopériodique, on remplace le résistor par un résistor de résistance plus petite, sans changer L ni C. Qu'observe-t-on sur l'oscillogramme de u_C ?",
       "options": [
         {
           "id": "a",
-          "text": "L'amplitude décroît plus lentement et T diminue nettement"
+          "text": "Moins d'oscillations visibles et T légèrement plus petite"
         },
         {
           "id": "b",
-          "text": "L'amplitude décroît plus vite et T diminue nettement"
+          "text": "Davantage d'oscillations visibles et T légèrement plus grande"
         },
         {
           "id": "c",
-          "text": "L'amplitude décroît plus vite et T augmente légèrement"
+          "text": "Davantage d'oscillations visibles et T légèrement plus petite"
         },
         {
           "id": "d",
-          "text": "L'amplitude décroît plus lentement et T reste égale à T₀"
+          "text": "Moins d'oscillations visibles et T légèrement plus grande"
         }
       ],
       "correctOption": "c",
-      "explanation": "Quand R augmente, l'amortissement est plus fort donc l'amplitude s'éteint plus vite, et la pseudo-période augmente légèrement ✓. Une résistance plus grande dissipe davantage d'énergie : l'amplitude ne peut pas décroître plus lentement. La pseudo-période ne diminue pas nettement : elle reste voisine de T₀ et croît un peu.",
+      "explanation": "Quand R diminue, l'amortissement est plus faible : l'amplitude s'éteint plus lentement, donc on voit davantage d'oscillations, et T diminue légèrement en se rapprochant de T₀ ✓. Moins d'oscillations correspond à un amortissement plus fort, donc à une résistance plus grande. Une pseudo-période qui augmente accompagne une résistance qui augmente, et non qui diminue : T se rapproche de T₀ quand R diminue.",
       "difficulty": 1
     },
     {
@@ -98,27 +98,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Un circuit RLC série libre a L = 0,20 H, C = 5,0 µF et une résistance totale R = 30 Ω. L'équation de la charge s'écrit :\nd²q/dt² + a·dq/dt + b·q = 0\nQuel couple (a ; b) convient ?",
+      "prompt": "Un circuit RLC série libre a L = 0,50 H, C = 4,0 µF et une résistance totale R = 40 Ω. L'équation de la charge s'écrit :\nd²q/dt² + a·dq/dt + b·q = 0\nQuel couple (a ; b) convient ?",
       "options": [
         {
           "id": "a",
-          "text": "a = 1,5·10² s⁻¹ ; b = 1,0·10⁻⁶ s⁻²"
+          "text": "a = 80 s⁻¹ ; b = 2,0·10⁻⁶ s⁻²"
         },
         {
           "id": "b",
-          "text": "a = 30 s⁻¹ ; b = 2,0·10⁵ s⁻²"
+          "text": "a = 40 s⁻¹ ; b = 2,5·10⁵ s⁻²"
         },
         {
           "id": "c",
-          "text": "a = 6,7·10⁻³ s⁻¹ ; b = 1,0·10⁶ s⁻²"
+          "text": "a = 1,3·10⁻² s⁻¹ ; b = 5,0·10⁵ s⁻²"
         },
         {
           "id": "d",
-          "text": "a = 1,5·10² s⁻¹ ; b = 1,0·10⁶ s⁻²"
+          "text": "a = 80 s⁻¹ ; b = 5,0·10⁵ s⁻²"
         }
       ],
       "correctOption": "d",
-      "explanation": "On divise la loi des mailles par L : a = R/L = 30/0,20 = 1,5·10² s⁻¹ et b = 1/(LC) = 1/(0,20 × 5,0·10⁻⁶) = 1,0·10⁶ s⁻² ✓. Garder a = 30 et b = 1/C = 2,0·10⁵ oublie la division par L. Inverser R/L en L/R donne 6,7·10⁻³ s⁻¹. Prendre b = LC au lieu de 1/(LC) donne 1,0·10⁻⁶ s⁻², unité fausse.",
+      "explanation": "On divise la loi des mailles par L : a = R/L = 40/0,50 = 80 s⁻¹ et b = 1/(LC) = 1/(0,50 × 4,0·10⁻⁶) = 5,0·10⁵ s⁻² ✓. Garder a = 40 et b = 1/C = 2,5·10⁵ oublie la division par L. Inverser R/L en L/R donne 1,3·10⁻² s⁻¹. Prendre b = LC au lieu de 1/(LC) donne 2,0·10⁻⁶ s⁻², unité fausse.",
       "difficulty": 2
     },
     {
@@ -146,27 +146,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Quelle est la période propre T₀ d'un circuit LC de L = 0,25 H et C = 1,0 µF ?",
+      "prompt": "Quelle est la période propre T₀ d'un circuit LC de L = 0,16 H et C = 1,0 µF ?",
       "options": [
         {
           "id": "a",
-          "text": "0,50 ms"
+          "text": "0,40 ms"
         },
         {
           "id": "b",
-          "text": "1,6 ms"
+          "text": "1,3 ms"
         },
         {
           "id": "c",
-          "text": "3,1 ms"
+          "text": "2,5 ms"
         },
         {
           "id": "d",
-          "text": "9,9 ms"
+          "text": "7,9 ms"
         }
       ],
       "correctOption": "c",
-      "explanation": "T₀ = 2π√(LC) avec LC = 0,25 × 1,0·10⁻⁶ = 2,5·10⁻⁷ s², donc √(LC) = 5,0·10⁻⁴ s et T₀ = 2π × 5,0·10⁻⁴ ≈ 3,1 ms ✓. La valeur 0,50 ms oublie le facteur 2π ; 1,6 ms ne met qu'un π ; 9,9 ms correspond à C = 10 µF.",
+      "explanation": "T₀ = 2π√(LC) avec LC = 0,16 × 1,0·10⁻⁶ = 1,6·10⁻⁷ s², donc √(LC) = 4,0·10⁻⁴ s et T₀ = 2π × 4,0·10⁻⁴ ≈ 2,5 ms ✓. La valeur 0,40 ms oublie le facteur 2π ; 1,3 ms ne met qu'un π ; 7,9 ms correspond à C = 10 µF.",
       "difficulty": 2
     },
     {
@@ -190,7 +190,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "À cet instant E_C = q²/(2C) = 0, et l'énergie totale se conserve : elle vaut E = E_L = ½·L·I_m², |i| étant maximale ✓. L'énergie ne s'annule pas puisque E est constante. Elle est entièrement électrique quand q est maximale (i = 0). Le partage à parts égales a lieu à T₀/8, pas quand q = 0.",
+      "explanation": "À cet instant E_C = q²/(2C) = 0, et l'énergie totale se conserve : elle vaut E = E_L = ½·L·I_m², |i| étant maximale ✓. L'énergie ne s'annule pas puisque E est constante. Elle est entièrement électrique quand q est maximale (i = 0). Le partage à parts égales a lieu T₀/8 après un maximum de q, pas quand q = 0.",
       "difficulty": 2
     }
   ]
