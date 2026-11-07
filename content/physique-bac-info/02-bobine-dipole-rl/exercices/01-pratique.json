@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Aimants, bobines et premiers réflexes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un oscilloscope visualise la tension u_R aux bornes du résistor qui ferme une bobine. On approche rapidement le pôle nord d'un aimant d'une face de la bobine : u_R présente une impulsion négative. On garde maintenant l'aimant immobile et l'on approche la bobine de ce même pôle nord, par la même face et à la même vitesse. Que montre u_R ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une impulsion positive, de même amplitude qu'avant"
+        },
+        {
+          "id": "b",
+          "text": "Une impulsion négative, de même amplitude qu'avant"
+        },
+        {
+          "id": "c",
+          "text": "Aucune impulsion, puisque l'aimant reste immobile"
+        },
+        {
+          "id": "d",
+          "text": "Une impulsion négative, d'amplitude double de l'avant"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seul le mouvement relatif aimant-bobine compte : approcher la bobine de l'aimant à la même vitesse fait varier ‖B⃗‖ exactement comme avant, donc le courant induit a le même sens et la même intensité, et u_R présente la même impulsion négative ✓. Une bobine qui bouge devant un aimant immobile reçoit un champ variable. L'impulsion ne change pas de signe, puisque ni le pôle ni le sens relatif du déplacement n'ont changé, et la vitesse est la même, donc l'amplitude aussi.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine est parcourue par un courant triangulaire d'amplitude 40 mA. On double la fréquence sans changer l'amplitude du courant. Comment évolue la valeur absolue de la f.e.m. d'auto-induction e pendant chaque montée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est divisée par 2, car chaque phase est plus brève"
+        },
+        {
+          "id": "b",
+          "text": "Elle reste la même, car L et l'amplitude de i ne changent pas"
+        },
+        {
+          "id": "c",
+          "text": "Elle double, car i varie autant en deux fois moins de temps"
+        },
+        {
+          "id": "d",
+          "text": "Elle est multipliée par 4, car la fréquence intervient au carré"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pendant une montée, i varie toujours de 40 mA, mais la durée est divisée par 2 : la pente di/dt double, donc |e| = L di/dt double aussi ✓. Une phase plus brève ne diminue pas e, elle augmente la pente. L et l'amplitude ne changent pas, mais e dépend de la pente. La fréquence n'intervient pas au carré : e est proportionnelle à di/dt.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le montage de la figure, l'interrupteur K est fermé depuis longtemps et le courant est établi. Que fait la diode D ?\n<svg viewBox=\"0 0 340 190\"><title>Circuit série : générateur E, interrupteur K, bobine (L, r) entre A et B, résistor R₀ entre B et M, diode D reliant M à A</title><line x1=\"50\" y1=\"45\" x2=\"95\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"45\" x2=\"165\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"45\" x2=\"185\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"95\" y1=\"45\" x2=\"130\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"95\" cy=\"45\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"130\" cy=\"45\" r=\"3.5\" fill=\"#0f172a\"/><path d=\"M185 45 a7.5 10 0 0 1 15 0 a7.5 10 0 0 1 15 0 a7.5 10 0 0 1 15 0 a7.5 10 0 0 1 15 0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"245\" y1=\"45\" x2=\"268\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"268\" cy=\"45\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"268\" y1=\"45\" x2=\"268\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><rect x=\"260\" y=\"82\" width=\"16\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"268\" y1=\"122\" x2=\"268\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"268\" y1=\"160\" x2=\"50\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"45\" x2=\"50\" y2=\"84\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"116\" x2=\"50\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"100\" r=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"50\" y=\"105\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><text x=\"68\" y=\"91\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+</text><text x=\"68\" y=\"121\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−</text><line x1=\"165\" y1=\"45\" x2=\"165\" y2=\"78\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"104\" x2=\"165\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"154,104 176,104 165,80\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"153\" y1=\"78\" x2=\"177\" y2=\"78\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"165\" cy=\"45\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"165\" cy=\"160\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"165\" y=\"31\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"258\" y=\"31\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"165\" y=\"178\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><text x=\"110\" y=\"17\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">K</text><text x=\"215\" y=\"26\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">L, r</text><text x=\"254\" y=\"106\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₀</text><text x=\"190\" y=\"100\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text><line x1=\"60\" y1=\"31\" x2=\"78.8\" y2=\"31\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"86,31 78,35 78,27\" fill=\"#0f6e56\"/><text x=\"73\" y=\"22\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est bloquée : A est relié à la borne +, donc elle est polarisée en inverse"
+        },
+        {
+          "id": "b",
+          "text": "Elle est passante : elle court-circuite la bobine et le résistor R₀ en dérivation"
+        },
+        {
+          "id": "c",
+          "text": "Elle est passante : elle partage le courant du générateur avec la bobine et R₀"
+        },
+        {
+          "id": "d",
+          "text": "Elle est bloquée : aucun courant ne circule dans le montage une fois K fermé"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le symbole montre que la diode ne laisse passer le courant que de M vers A. K fermé, A est au potentiel de la borne + par rapport à M : un courant irait de A vers M à travers la diode, sens interdit, donc elle est bloquée ✓ et tout le courant passe par la bobine et R₀. Si elle était passante, elle court-circuiterait la bobine et R₀. Le courant n'est pas nul : il vaut I₀ = E/R en régime permanent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quatre solénoïdes sans noyau sont décrits par leur nombre total de spires N, leur longueur ℓ et leur diamètre moyen D :\nB1 : N = 500, ℓ = 20 cm, D = 10 cm\nB2 : N = 500, ℓ = 30 cm, D = 10 cm\nB3 : N = 500, ℓ = 20 cm, D = 15 cm\nB4 : N = 250, ℓ = 20 cm, D = 10 cm\nLequel a la plus grande inductance ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "B1"
+        },
+        {
+          "id": "b",
+          "text": "B2"
+        },
+        {
+          "id": "c",
+          "text": "B3"
+        },
+        {
+          "id": "d",
+          "text": "B4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L augmente avec le nombre de spires et avec la section, et diminue quand la longueur augmente. Par rapport à B1, B2 est plus longue (L diminue), B4 a deux fois moins de spires (L diminue) et B3 a un diamètre plus grand, donc une plus grande section (L augmente) : B3 a la plus grande inductance ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bobine d'inductance 0,20 H et de résistance 5,0 Ω est traversée par un courant qui va de B vers A. Son intensité vaut 0,60 A et décroît de 5,0 A/s. Quelle est la tension u_AB ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4,0 V"
+        },
+        {
+          "id": "b",
+          "text": "−2,0 V"
+        },
+        {
+          "id": "c",
+          "text": "+2,0 V"
+        },
+        {
+          "id": "d",
+          "text": "+4,0 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le courant va de B vers A : la formule u = L di/dt + r i donne la tension u_BA = 0,20 × (−5,0) + 5,0 × 0,60 = −1,0 + 3,0 = 2,0 V, donc u_AB = −2,0 V ✓. +2,0 V oublie le sens du courant. Les valeurs ±4,0 V prennent la pente pour positive : le terme inductif s'ajoute alors à r i au lieu de s'en retrancher.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bobine d'inductance 80 mH emmagasine une énergie magnétique de 10 mJ. Quelle est l'intensité du courant qui la traverse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,125 A"
+        },
+        {
+          "id": "b",
+          "text": "0,25 A"
+        },
+        {
+          "id": "c",
+          "text": "0,35 A"
+        },
+        {
+          "id": "d",
+          "text": "0,50 A"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "De E_L = ½ L i² on tire i² = 2 E_L / L = 2 × 0,010 / 0,080 = 0,25, donc i = 0,50 A ✓. 0,125 A est E_L / L, sans le facteur 2 ni la racine. 0,25 A oublie la racine carrée. 0,35 A oublie le facteur 2 : i² = 0,125 donne 0,35 A.",
+      "difficulty": 2
+    }
+  ]
+}
