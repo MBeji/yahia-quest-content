@@ -1293,7 +1293,7 @@ En savoir plus « Amorçage et stabilisation des oscillations entretenues » (p.
   valeur de R' un peu supérieure à R (R' = 2070 Ω). Expliquer cette différence. 4°) Mesurer directement sur
   l'oscillogramme de la figure 7b, la période des oscillations entretenues et la comparer à la valeur de la période propre
   T₀ = 2π√LC de l'oscillateur. 5°) Expliquer l'augmentation de l'amplitude des oscillations quand R' est trop supérieure à
-  R, ainsi que leur écrétage [sic]. » (Lecture de Fig.7b : ≈ 5,5 périodes sur 10 div, soit ≈ 18 ms ; T₀ calculé =
+  R, ainsi que leur écrétage [sic]. » (Lecture de Fig.7b : crêtes espacées de ≈ 2 div, soit ≈ 20 ms ; T₀ calculé =
   2π√(1 × 47·10⁻⁶) ≈ 43 ms — voir doutes [?].)
 - **§3.2 Interprétation énergétique (p.116–117)** — question d'entrée : « Grâce à son alimentation en + 15 V et en -15 V,
   l'amplificateur opérationnel fournit au dipôle RLC série de l'énergie. Mais, avec les petites valeurs de R', cette
@@ -1422,7 +1422,7 @@ En savoir plus « Amorçage et stabilisation des oscillations entretenues » (p.
   oscillations sinusoïdales de fréquence N₀ (expression) ; 4°) a) énergie totale en fonction de L₀ et I_m ; b) origine
   de cette énergie.
 - **Ex. 7 (p.122)** — chronogramme de u aux bornes du condensateur d'un RLC entretenu, 5 ms/div (amplitude croissante sur
-  ≈ 3 périodes puis constante). 1°) début d'enregistrement ≈ fermeture : a) interpréter énergétiquement ; b) durée
+  ≈ 3,3 div, soit ≈ 15–17 ms, puis constante). 1°) début d'enregistrement ≈ fermeture : a) interpréter énergétiquement ; b) durée
   approximative d'amorçage ; 2°) période T ; 3°) comparer à la période propre ; C = 2,53 μF ; L = 0,25 H.
 - **Ex. 8 (p.122–123, synthèse)** — circuit (L, r)–C–interrupteur K, condensateur initialement chargé. 1°) décrire
   qualitativement après fermeture ; 2°) si r = 0, oscillations sinusoïdales de période T₀ ; 3°) K remplacé par un
@@ -1476,7 +1476,8 @@ Aucune réponse pour les ex. 1, 2 et 11.
   C : d²u_c/dt² + [1/(CR_osc) + (R₀ + r − R)/L] du_c/dt + ω₀²[1 + (R₀ + r − R')/R_osc] u_c = 0 [sic : « R » au lieu de R'
   dans le premier crochet, image] ; démarrage si 1/(CR_osc) + (R₀ + r − R')/L ≤ 0, soit **R' ≥ R₀ + r + L/(CR_osc)** ;
   choisir L petite et C grande (petit quotient L/C) ; contre-exemple : R₀ + r = 250 Ω, R_osc = 1 MΩ, L = 1 H, C = 1 mF →
-  L/(R_osc C) = 4(R₀ + r) ! → amorçage pour R' = 1250 Ω. Renvoie à la fiche technique du chapitre précédent (p.108–109).
+  L/(R_osc C) = 4(R₀ + r) ! → amorçage pour R' = 1250 Ω [?] (avec C = 1 mF, L/(R_osc C) = 10⁻³ Ω ; la valeur
+  annoncée suppose C = 1 nF : coquille probable mF/nF). Renvoie à la fiche technique du chapitre précédent (p.108–109).
 - **En savoir plus (p.128–129) « Amorçage et stabilisation des oscillations entretenues »** — en convention générateur
   u = R'i ; puissance p = − u.i = − R'i² < 0 ; « u = k i, où k est une constante ayant la dimension d'une résistance :
   k = R. » ; amorçage (ou accrochage) sans charger le condensateur (renvoi « figure 6 (p. 118) » [sic : la Fig.6 est
@@ -1532,8 +1533,8 @@ Aucune réponse pour les ex. 1, 2 et 11.
 
 - **Pages lues en L1** : 109 (fin du chapitre 3, pour la borne), 110 à 129 (les 20 pages), 130 (borne), 393 (réponses).
 - **Pages lues sur l'image** (110 dpi) : 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 122, 123, 124, 125, 126, 127,
-  128, 129, 393. Non vues sur l'image : 110 (objectifs/prérequis, listes sans formule) et 121 (V/F, QCM, ex. 3 : texte
-  sans formule ni figure).
+  128, 129, 393 ; p.110 et p.121 vues sur l'image par la relecture R-7 (auditeur B), conformes : le chapitre est
+  désormais entièrement vu sur l'image.
 - **Écarts texte/image** : p.111 légende inclinée illisible en L1 ; p.115, p.116, p.118, p.120 « T₀ = 2π√LC » et
   « N₀ = 1/(2π√LC) » rendus « T = 2 LC », « No = 1 / 2 LC » (π et √ perdus) ; p.116 « E » rond de l'énergie rendu « EE » ;
   p.126 ≤/≥ perdus ; p.127 toutes les équations déstructurées (« (Ro + r  R ') », « R'  Ro + r + L/CRosc ») ; p.128
@@ -1547,17 +1548,29 @@ Aucune réponse pour les ex. 1, 2 et 11.
   sans C (ex. 6, ex. 10 ; la valeur 3,96·10⁻⁶ J correspond à ½CU_m² ≈ 4·10⁻⁶ J), « T₀ = (LC)^1/2 » sans 2π (ex. 8), 1/L
   manquant dans l'équation de l'ex. 8.
 - **Doutes [?]** :
-  1. **§3.1, Fig.7b** : L = 1 H, C = 47 μF donnent T₀ = 2π√(47·10⁻⁶) ≈ 43 ms ; l'oscillogramme (10 ms/div) montre
-     ≈ 5,5 périodes sur 10 div, soit ≈ 1,8 div par période (≈ 18 ms) — incohérence probable entre données et figure ; le manuel ne donne pas la
-     valeur mesurée. Ne pas en tirer de valeur. 2. **§3.1** : R₀ = 2 kΩ et amorçage à « 2070 Ω environ » (> R₀ + r ≈ 2025 Ω) cohérent ; mais R₀ = 2 kΩ est très grand
-     pour un RLC (régime libre apériodique : 2√(L/C) ≈ 292 Ω) — sans conséquence sur le texte, à ne pas exploiter en
-     exercice de régime libre. 3. **Ex. résolu 2°a** : réponse « R' = r » alors que la Fig.6 comporte R₀ ; dans l'énoncé, R₀ n'est pas mentionné
-     (« montage de la figure 6 … mais avec R' réglable ») — on suppose R₀ absent. 4. **Ex. 5 réponse** : « R' = R − E/I = 90 Ω » : la relation n'est pas démontrée dans le chapitre (E et I mesurés dans
-     la maille générateur–R–dipôle) ; à vérifier avant de la reprendre. 5. **Ex. 9** : Fig.2 ≈ 3 div par pseudopériode → T ≈ 30 ms (conforme à la réponse). Fig.3 (10 ms/div, 10 div) : on
-     compte ≈ 4 périodes pour (1), ≈ 5 pour (2), ≈ 6,5 pour (3) ; T₀ = 2π√(0,5 × 35·10⁻⁶) ≈ 26,3 ms correspond à ≈ 3,8
-     périodes, soit l'oscillogramme **(1)**, alors que la réponse imprimée désigne « (2) » — à trancher. 6. **Ex. 7** : ≈ 10 périodes sur 10 div → T ≈ 5 ms (conforme) ; l'amplitude atteint son niveau stable après ≈ 2 div
-     (≈ 10 ms), alors que la réponse imprimée donne « 25 ms » — à trancher. 7. **Fig.3 (p.113)** : aucune valeur de pente ni de k n'est donnée ; la réponse attendue (k = − R') n'est imprimée
-     qu'implicitement (conclusion u = − R'i).
+  - [?] 1 — **§3.1, Fig.7b** : L = 1 H, C = 47 μF donnent T₀ = 2π√(47·10⁻⁶) ≈ 43 ms ; l'oscillogramme (10 ms/div) montre
+    des crêtes espacées de ≈ 2 div (≈ 20 ms) — incohérence probable entre données et figure ; le manuel ne donne pas la
+    valeur mesurée. Ne pas en tirer de valeur.
+  - [?] 2 — **§3.1** : R₀ = 2 kΩ et amorçage à « 2070 Ω environ » (> R₀ + r ≈ 2025 Ω) cohérent ; mais R₀ = 2 kΩ est très
+    grand pour un RLC (régime libre apériodique : 2√(L/C) ≈ 292 Ω) — sans conséquence sur le texte, à ne pas exploiter en
+    exercice de régime libre.
+  - [?] 3 — **Ex. résolu 2°a** : réponse « R' = r » alors que la Fig.6 comporte R₀ ; l'énoncé ne mentionne pas R₀
+    (« montage de la figure 6 … mais avec R' réglable ») — on suppose R₀ absent.
+  - [?] 4 — **Ex. 7** : 1 période = 1 div = 5 ms (T ≈ 5 ms, conforme) ; les crêtes croissent jusqu'à la 4ᵉ et le régime
+    est stable à partir de ≈ 3,3 div, soit une durée d'amorçage ≈ 15–17 ms, alors que la réponse imprimée donne « 25 ms »
+    — à trancher.
+  - [?] 5 — **Fig.3 (p.113)** : aucune valeur de pente ni de k n'est donnée ; la réponse attendue (k = − R') n'est imprimée
+    qu'implicitement (conclusion u = − R'i).
+  - [?] 6 — **Fiche technique p.127** : contre-exemple chiffré faux tel qu'imprimé (C = 1 mF au lieu de 1 nF probable) ;
+    par ailleurs la « Fig.4 » de la p.127, censée montrer l'entrée de l'oscilloscope (R_osc ∥ C_osc), reproduit le montage
+    de mesure de u = f(i) (Fig.1 p.125). Fiche technique EXCLUE de l'exigible.
+- **Doutes levés (relecture R-7)** :
+  - **Ex. 9** : mesure au zoom de la Fig.3 (10 div) : (1) crêtes à ≈ 4 div → T ≈ 40 ms ; (2) ≈ 3 div → T ≈ 30 ms ;
+    (3) ≈ 2 div → T ≈ 20 ms. (2) a la période de la Fig.2 (3 div = 30 ms) et est le plus proche de T₀ = 26,3 ms : la
+    réponse imprimée « Oscillogramme (2) dont T = T₀ » est **juste** (mon comptage initial en périodes visibles était
+    erroné).
+  - **Ex. 5** : « R' = R − E/I = 90 Ω » se démontre avec le cours : loi des mailles E = RI + u = RI − R'I, d'où
+    R' = R − E/I = 120 − 6/0,2 = 90 Ω. Réponse juste.
 
 ## 2.5 Chapitre 5 — Oscillations électriques forcées en régime sinusoïdal (manuel 223471, p.130–157)
 
@@ -1589,7 +1602,7 @@ RLC série. · Établir l'équation différentielle régissant les oscillations 
 la loi des mailles. · Calculer l'énergie totale d'un oscillateur RLC série.
 
 **Page d'ouverture (p.131)** — « OSCILLATIONS ÉLECTRIQUES FORCÉES EN RÉGIME SINUSOÏDAL », n° 5 ; photo de guitare
-électrique ; légende (inclinée ; reconstituée depuis les fragments L1 et la fiche 223433, même photo — page non vue sur l'image) : « La guitare électrique est munie d'une caisse creuse à laquelle sont
+électrique ; légende (inclinée, confirmée sur l'image par la relecture R-7) : « La guitare électrique est munie d'une caisse creuse à laquelle sont
 adjoints des microphones électromagnétiques. Grâce à la résonance électrique, le son amplifié prime sur la résonance
 naturelle de la caisse. » Questions (VERBATIM) : « En quoi consiste la recherche manuelle ou automatique d'une chaîne radio
 ou d'un canal de télévision? » · « Que veut-on dire par “résonance électrique” dont les applications sont trés [sic]
@@ -1890,7 +1903,8 @@ facteur de puissance cosφ ; p.142–145) · L'essentiel (p.146) · Exercices : 
   temps, constante, en fonction de L, U, R ; que devient l'énergie reçue ? 3°) E_t/E₀ en fonction de Q (« surtention »
   [sic]).
 - **Ex. 11 (p.153)** — G : N = 50 Hz, U = 6 V ; R = 300 Ω, C = 3 μF, bobine (L, r) ; u(t) sur Y₁ (4 V/div), u_R(t) sur Y₂
-  (2 V/div), 1 ms/div ; « Pour une valeur N₀ » : deux sinusoïdes en phase (Y₂ marquée, de plus faible amplitude) ; a) phénomène ;
+  (2 V/div), 1 ms/div ; « Pour une valeur N₀ » : deux sinusoïdes en phase ; la flèche « voie Y₂ » désigne la sinusoïde de plus grande
+  amplitude (≈ 2,5 div × 2 V/div = 5 V), Y₁ ≈ 1,5 div × 4 V/div = 6 V ; période ≈ 4 div = 4 ms (N₀ ≈ 250 Hz) ; a) phénomène ;
   b) L et r.
 - **Ex. 12 (p.153, synthèse)** — condensateur « EFD-CPM13B ; Capacité 1,2 MF ; Tolérence [sic] 10 % ; Tension maximale
   160 V » ; GBF U = 2 V, R = 10 Ω, bobine L = 58 mH (r) ; voltmètre, ampèremètre. 1°) schéma ; 2°) à N = 610 Hz, I maximale
@@ -1938,7 +1952,9 @@ la reprend pas.)
   valeurs.
 - ⛔ **À retirer à l'adaptation** (enseigné par la référence, absent de ce manuel) :
   - **Résonance de charge** tout entière : N_r = √(N₀² − R²/8π²L²) < N₀, condition R² < 2L/C, étude de g(ω), Q_m0,
-    résonance impossible, courbes Q_m(N) (Fig.9, Fig.11b de 223433), « réponse linéaire » ; résonance « très floue ».
+    résonance impossible, courbes Q_m(N) (Fig.9, Fig.11b de 223433). (« Réponse linéaire » et résonance « très floue »
+    figurent dans le manuel 223433 et sa fiche, mais pas dans le chapitre publié sciences-exp/04 : rien à retirer pour
+    eux à l'adaptation.)
   - **Charge q(t)** : montage avec condensateur côté masse (u_C image de q), **Q_m = I_m/ω**, **φ_i = φ_q + π/2** et le
     §1.2.2 « Déphasage entre i(t) et q(t) », −π < φ_q < 0 ; **équation différentielle en q** (L d²q/dt² + R dq/dt + q/C = u) ;
     les objectifs correspondants.
@@ -1978,10 +1994,9 @@ la reprend pas.)
 
 - **Pages lues en L1** : 130 à 157 (les 28 pages), 393 (réponses).
 - **Pages lues sur l'image** (110 dpi) : 132, 133, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 146, 147, 148, 149,
-  150, 153, 155, 156, 393. Non vues sur l'image : 130 (objectifs), 131 (ouverture : légende reprise de la fiche 223433,
-  identique en L1 par fragments), 134 (définition et questions du déphasage ; Fig.4–5 non vérifiées), 145 (prose + deux
-  formules P₀, I = P/(Ucosφ) reconstituées depuis L1), 151, 152, 154 (énoncés d'exercices ; √2 rétablis par analogie
-  avec la fiche 223433, à recontrôler), 157 (texte « En savoir plus »).
+  150, 153, 155, 156, 393 ; p.130, 131, 134, 145, 151, 152, 154 et 157 vues sur l'image par la relecture R-7 (auditeur B),
+  conformes : légende de la p.131 confirmée mot pour mot, Fig.4–5 de la p.134 conformes, √2 des énoncés des ex. 4, 5, 9,
+  13 confirmés, formules de la p.145 conformes. Le chapitre est désormais entièrement vu sur l'image.
 - **Écarts texte/image** : p.131 légende inclinée illisible en L1 ; p.133 ∫ et ω perdus (« i(t) = Imsin(tt + ) ») ; p.136–137
   toutes les phases (π/2, φ) et vecteurs OA⃗ perdus (« LLLI », « 8 OA1 ») ; p.138 √ et fractions éclatées, puces « ∞ »
   (présentes aussi sur l'image) ; p.139 accolade de l'encadré perdue ; p.140–141 ω₀ perdu (« Co », « L0 ») ; p.142 √2 perdus
@@ -1989,23 +2004,39 @@ la reprend pas.)
   ≈, φ, π perdus ; p.150 formules du QCM VI éclatées ; p.153 tableau EFD conforme ; p.154 tableau de l'ex. 15 conforme ;
   p.393 √ perdu.
 - **Coquilles [sic]** : p.131 « trés » ; p.132 « ÉLECTIRQUES », « plus au moins » ; p.134 « est égale », « précisement »,
-  « précedemment » ; p.135 « péride » ; p.138 « élèvées » ; p.139 « paragrahe », « déphase φ » (légende Fig.8b) ; p.141
+  « précedemment » ; p.135 « péride » ; p.138 « élèvées » ; p.139 « paragrahe », « déphase φ » (légende Fig.8b) ; p.140 bandeau « sinusoïdall » ; p.141
   « on cite » sans majuscule ; p.146 « étre » ; p.147 « branchechements », « pour le deux voies », « 3) » sans ° ; p.143 « T_p = 2/ω » (lire π/ω) ; p.149
   « 6,68 ∝F » ; p.150 QCM sans IV, « augmentantion », « quel que soit la fréquence » ; p.151 « fontion » ; p.152 numérotation
   « 2°) » répétée (ex. 9), « surtention » ; p.153 « Tolérence », « 1,2 MF » (sic voulu par l'exercice) ; p.154 « de 5 à
   5 kHz » ; p.155 « industrielle- par » ; p.393 « 2°) L < 1,6 H » (pour 3°).
 - **Doutes [?]** :
-  1. **Ex. 9, réponse « L₀ = 1 H »** : avec C = 1 μF et ω = 100π rad/s, L₀ = 1/(Cω²) ≈ 10,1 H ; Q = Lω/R = 6,28 correspond
-     à L = 1 H. Incohérence (C devrait valoir ≈ 10 μF pour L₀ = 1 H) ; la réponse « L < 1,6 H » (U_C ≤ 100 V) est
-     cohérente avec Q = Lω/R. Ne pas reprendre les valeurs sans recalcul. (Même erreur dans 223433.) 2. **Ex. 7, réponse « Q = 10,445 »** : r = U/I₀ = 15,4 Ω, L = 1/(4π²N₀²C) ≈ 9,37 mH, Q = Lω₀/r ≈ 8,9 (ou
-     (1/r)√(L/C) ≈ 8,9) — 10,445 non retrouvé ; P = 0,26 W cohérent. 3. **Ex. 11** : l'énoncé donne N = 50 Hz puis « pour une valeur N₀ » ; l'oscillogramme (1 ms/div) montre une période
-     ≈ 3,1 div ≈ 3,1 ms (≈ 320 Hz) — incompatible avec 50 Hz ; aucune réponse imprimée ici. 4. **Fig.11 (p.144)** : pic P ≈ 60 mW ; avec U_m = 2 V, R = 62,5 Ω, P_max = U²/R = (√2)²/62,5 = 32 mW ; 60–64 mW
-     correspond à U_m²/R (confusion efficace/maximale probable). Fig.6a cohérente (I_m0 = 2/62,5 = 32 mA, pic ≈ 31 mA). 5. **Fig.8a** : la courbe (1) (R₀₂ = 20 Ω, R = 32,5 Ω) devrait culminer à ≈ 61 mA ; elle culmine ≈ 30 mA (même valeur que
-     Fig.6a avec R₀ = 50 Ω) ; la courbe (2) (R₀₃ = 200 Ω) ≈ 8 mA cohérente (2/212,5 ≈ 9,4 mA). 6. **Tableau §4** : Q théoriques 20 ; 10,4 ; 3,07 → U_Cm 40 ; 20,9 ; 6,1 V : cohérent avec 40 / 21 / 6,5 V. 7. **Introduction p.132** « chapitre précédent » = oscillations libres : dans ce manuel le chapitre précédent est
-     l'entretien (texte non adapté). 8. **Exercice résolu, Fig.1 (p.147)** : l'énoncé demande de choisir « parmi les points A et B » le point de masse, mais
-     la Fig.1 de l'énoncé ne porte aucune lettre (A, B, D, E n'apparaissent que sur les Fig.4–5 de la solution). 9. **§3 / §4** : le §3 nomme R₀₂ = 20 Ω et R₀₃ = 200 Ω, le §4 nomme R₀₁ = 20 Ω, R₀₂ = 50 Ω, R₀₃ = 200 Ω (indices
-     incohérents d'un paragraphe à l'autre). 10. **Fig.3 (p.132)** : k = U_m/U_R0m ≈ 4/0,6 ≈ 6,7 (lecture approximative ; avec R₀ = 50 Ω, Z ≈ 333 Ω) — valeur non
-     imprimée.
+  - [?] 1 — **Ex. 9, réponse « L₀ = 1 H »** : avec C = 1 μF et ω = 100π rad/s, L₀ = 1/(Cω²) ≈ 10,1 H ; Q = Lω/R = 6,28
+    correspond à L = 1 H. Incohérence (C devrait valoir ≈ 10 μF pour L₀ = 1 H) ; la réponse « L < 1,6 H » (U_C ≤ 100 V)
+    est cohérente avec Q = Lω/R. Ne pas reprendre les valeurs sans recalcul. (Même erreur dans 223433.)
+  - [?] 2 — **Ex. 7, réponse « Q = 10,445 »** : r = U/I₀ = 15,4 Ω, L = 1/(4π²N₀²C) ≈ 9,37 mH, Q = Lω₀/r ≈ 8,9 ; 10,445
+    est exactement le Q théorique du cours §4 pour R₀ = 50 Ω ((1/62,5)√(0,2/0,47·10⁻⁶) = 10,44) : réponse très
+    probablement recopiée par erreur depuis le cours. P = 0,26 W cohérent.
+  - [?] 3 — **Ex. 11** : U = 6 V est donnée comme valeur efficace, mais 6 V est l'amplitude lue sur la voie Y₁
+    (1,5 div × 4 V/div) — seule incohérence résiduelle de l'énoncé (voir « doutes levés »).
+  - [?] 4 — **Fig.11 (p.144)** : pic P ≈ 60 mW ; avec U_m = 2 V, R = 62,5 Ω, P_max = U²/R = (√2)²/62,5 = 32 mW ; 60–64 mW
+    correspond à U_m²/R (confusion efficace/maximale probable). Fig.6a cohérente (I_m0 = 2/62,5 = 32 mA, pic ≈ 31 mA).
+  - [?] 5 — **Fig.8a** : la courbe (1) (R₀₂ = 20 Ω, R = 32,5 Ω) devrait culminer à ≈ 61 mA ; elle culmine à ≈ 30 mA (même
+    valeur que Fig.6a avec R₀ = 50 Ω) ; la courbe (2) (R₀₃ = 200 Ω) ≈ 8 mA cohérente (2/212,5 ≈ 9,4 mA).
+  - [?] 6 — **Introduction p.132** : « chapitre précédent » = oscillations libres ; dans ce manuel le chapitre précédent
+    est l'entretien (texte non adapté).
+  - [?] 7 — **Exercice résolu, Fig.1 (p.147)** : l'énoncé demande de choisir « parmi les points A et B » le point de masse,
+    mais la Fig.1 de l'énoncé ne porte aucune lettre (A, B, D, E n'apparaissent que sur les Fig.4–5 de la solution).
+  - [?] 8 — **§3 / §4** : le §3 nomme R₀₂ = 20 Ω et R₀₃ = 200 Ω, le §4 nomme R₀₁ = 20 Ω, R₀₂ = 50 Ω, R₀₃ = 200 Ω
+    (indices incohérents d'un paragraphe à l'autre).
+- **Contrôles (cohérents)** :
+  - Tableau §4 : Q théoriques 20,1 ; 10,44 ; 3,07 → U_Cm 40 ; 20,9 ; 6,1 V : cohérent avec 40 / 21 / 6,5 V.
+  - Fig.3 (p.132) : à 400 Hz avec R = 62,5 Ω, Lω = 502,7 Ω, 1/Cω = 846,6 Ω, Z ≈ 350 Ω et k = Z/R₀ ≈ 7,0 ; la lecture
+    graphique 4/0,6 ≈ 6,7 est compatible (valeur non imprimée).
+- **Doutes levés (relecture R-7)** :
+  - **Ex. 11** : période ≈ 4 div = 4 ms, soit N₀ ≈ 250 Hz (« N = 50 Hz » est la fréquence de départ du générateur ;
+    l'énoncé passe ensuite à « une valeur N₀ ») ; L = 1/(4π²N₀²C) ≈ 0,135 H et U_R/U = 5/6 = R/(R + r) donne r = 60 Ω,
+    exactement la réponse de 223433 (« L = 0,135 H ; r = 60 Ω »), non reprise dans ce manuel. Ma lecture initiale (Y₂ de
+    plus faible amplitude, période ≈ 3,1 ms) était erronée.
 
 ## 2.6 Chapitre 6 — Généralités sur les filtres (manuel 223471, p.158–173)
 
@@ -2262,30 +2293,36 @@ du signal traité n'est pas affectée. » Pas de réponse pour les ex. 1 et 2.
 ### Lecture
 
 - **Pages lues en L1** : 158 à 173 (les 16 pages), 393 (réponses).
-- **Pages lues sur l'image** (110 dpi) : 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 393. Non vues sur
-  l'image : 158 (objectifs/prérequis, listes) et 171–173 (« En savoir plus », prose ; leurs figures — signal carré
-  décomposé, signal filtré, spectrogramme — sont décrites d'après la légende du texte seulement).
+- **Pages lues sur l'image** (110 dpi) : 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 393 ; p.158 et
+  171–173 vues sur l'image par la relecture R-7 (auditeur C), conformes. Le chapitre est désormais entièrement vu sur
+  l'image.
 - **Écarts texte/image** : p.159 légende et courbe d'ouverture absentes du texte ; p.161–162 fractions et racines
   déstructurées (« (RC) + (LC2 1)2 », « & pour les basses fréquences ») ; p.164 T₀/√2 rendu « T  o 2 » ; p.165 ≥ perdus,
   « T ≥ T₀/√2 » illisible ; p.168 Δφ, π perdus ; p.169 courbes du QCM VI absentes ; p.170 courbes des ex. 5 et 6
   absentes (seuls des « ) » parasites) ; p.393 tableau de l'ex. 3 conforme.
 - **Coquilles [sic]** : p.160 « intêret », Fig.1 « R » pour R₀ ; p.161 « da la sensibilité » ; p.162 « shéma »,
-  « mesurses » ; p.163 « osillloscope », « voltmètres », « s'appyant », « proportionnellent » ; p.164 « physcien »,
+  « mesurses » ; p.163 « osillloscope », « s'appyant », « proportionnellent » ; p.164 « physcien »,
   « décibelmétre », « Graham Bell » qualifié de « physicien américain » ; p.165 « deux fréquence », « [ou (G0 -3dB] de G) »,
   « des chaîne » ; Fig.9b étiquettes « N_h N_b » à gauche ; p.166 « trie », « électriques électriques », « G ≥ G₀ - 3 »
-  (sans dB) ; p.167 « nécéssaires », « respectivemnet » ; p.168 « celle u_E », « G₀ - G₁ = -2,984 dB » (signe) ; p.169 QCM
+  (sans dB) ; p.167 « nécéssaires », « respectivemnet » ; p.168 « celle u_E », « G₀ - G₁ = -2,984 dB » (signe), étiquette « 0,25T_E » de la figure de la solution (le
+  décalage mesuré vaut ≈ 0,5 div pour une période de 4 div, soit T_E/8) ; p.169 QCM
   sans IV ni V, item 7 « supérieur à l'unité (G>1 dB) » ; p.170 « tranmittance », « voltmétre » ; p.171 « ci-essous »,
   « aigüs », « a diminuer » ; p.172 « Dresseurs » ; p.173 « des système » ; p.393 ex. 4 « 2°) » répété et réponse
   tronquée, ex. 5 « G₀ = logT₀ ».
 - **Doutes [?]** :
-  1. **Exercice résolu 3°a** : le texte donne τ = T_E/8 et φ_S = −π/4, mais la figure de la solution (p.168) porte
-     bien l'étiquette « 0,25T_E » sur le décalage (vu sur l'image), ce qui donnerait |Δφ| = π/2 ; contradiction interne
-     au manuel — à trancher (le texte et le résultat −π/4 sont cohérents entre eux). 2. **Ex. 5, réponse « N_b = 12 Hz et N_h = 15 Hz »** : sur la courbe (image p.170), G = G₀ − 3 = −2 dB est atteint
-     vers ≈ 10 Hz et ≈ 22 Hz (maximum ≈ 1 dB vers 14 Hz ; échelle irrégulière : 6, 7, 8, 9, 10 puis 20, 30, 40) ; la
-     réponse imprimée paraît fausse. 3. **Ex. 4** : « le voltmètre indique 1 V » pour U_Em = 1,000 V : ambiguïté valeur efficace / maximale (un voltmètre
-     indique une valeur efficace) ; la réponse 2°) parle de « valeur efficace maximale de la tension de sortie ». 4. **Ex. 6, courbe 2** : réponse U_Sm = 0,45 V, T = 0,56, « G = −5 dB » (20 log 0,56 = −5,04 : cohérent) ; courbe 3 :
-     T = 1,75, G = 4,86 dB cohérent. 5. **Tableau §2.1** : T ≈ 1,37 constant (2,75/2 = 1,375 ; 13,70/10 = 1,37) ; recalcul théorique à 400 Hz avec
-     R = 512,5 Ω : T ≈ 1,37 — cohérent.
+  - [?] 1 — **Ex. 5, réponse « N_b = 12 Hz et N_h = 15 Hz »** : sur la courbe (échelle logarithmique régulière), le
+    maximum ≈ 1 dB est vers 14 Hz et G = G₀ − 3 = −2 dB est atteint vers ≈ 10 Hz et ≈ 20 Hz ; la réponse imprimée paraît
+    fausse.
+  - [?] 2 — **Ex. 4** : « le voltmètre indique 1 V » pour U_Em = 1,000 V : ambiguïté valeur efficace / maximale (un
+    voltmètre indique une valeur efficace) ; la réponse 2°) parle de « valeur efficace maximale de la tension de sortie ».
+- **Contrôles (cohérents)** :
+  - Ex. 6 : courbe 2, U_Sm = 0,45 V, T = 0,56, « G = −5 dB » (20 log 0,56 = −5,04) ; courbe 3, T = 1,75, G = 4,86 dB.
+  - Tableau §2.1 : T ≈ 1,37 constant (2,75/2 = 1,375 ; 13,70/10 = 1,37) ; recalcul théorique à 400 Hz avec R = 512,5 Ω :
+    T ≈ 1,37.
+- **Doutes levés (relecture R-7)** :
+  - **Exercice résolu 3°a** : mesuré au zoom, le décalage entre les crêtes vaut ≈ 0,5 div pour une période de ≈ 4 div,
+    soit T_E/8 ; le crochet marqué « 0,25T_E » couvre lui aussi ≈ 0,5 div. τ = T_E/8 et φ_S = −π/4 rad sont confirmés ;
+    l'étiquette « 0,25T_E » est une coquille [sic] (relevée dans les coquilles).
 
 
 ## 2.7 Chapitre 7 — Exemples de filtres (manuel 223471, p.174–219)
@@ -2693,7 +2730,8 @@ plus « Technologies des filtres » (p.217–219).
 - **Ex. 3 (p.213)** — filtre RC (R entre E et S, C entre S et M), C = 0,1 µF, R = 1,59 kΩ, u_E(t) = U_Em sin(ωt). 1°) a) u_S(t)
   (filtre linéaire) ; b) fonction de transfert ; c) G en dB ; 2°) a) tableau G pour N = 10 / 100 / 200 / 500 / 1000 / 10⁴ /
   10⁵ Hz ; b) G = f(N) en semi-log, type de filtre ; c) fréquence de coupure et largeur de bande ; 3°) a) Δφ pour N = 1 kHz ;
-  b) u_S(t) avec « U_E = 2 V ».
+  b) u_S(t) avec « U_E = 2 V » [?] (notation d'une valeur efficace, mais la réponse p.393 « U_Sm ≈ 1,4 V » à N = N_h
+  suppose U_Em = 2 V).
 - **Ex. 4 (p.213)** — filtre CR (C entre E et S, R entre S et M), R = 1 kΩ, C = 10 nF. 1°) nature ; 2°) T, valeur pour
   N = 0 et N infinie ; 3°) N_c à 3 dB, bande passante ; 4°) allure de G = f(N) pour 0,1 N_c < N < 10 N_c.
 - **Ex. 5 (p.213)** — A.O. idéal, R₁ (entrée), R₂ et C en parallèle (rétroaction) : passe bas actif inverseur. 1°) fonction
@@ -2719,9 +2757,11 @@ plus « Technologies des filtres » (p.217–219).
   R = 50 Ω, L = 1 µH, C = 10 pF. 1°) tableau N (MHz) 5 / 20 / 50.3 / 70 / 85 ; I (A) 0,032 / 0,149 / 2 / 0,458 / 0,285 :
   a) ligne U_S ; b) U_S = f(N) ; c) nature du filtre ; 2.1°) condensateur : a) Z_C(N, C), U_C ; b) tableau Z_C (Ω) 3183 / – /
   316 / – / 187 ; U_C (V) – / 118,6 / – / 104 / – ; c) variation de Z_C ; d) cas limites ; 2.2°) bobine (« Comprtement »
-  [sic]) : a) Z_L, U_L ; b) tableau Z_L (Ω) – / 126 / – / 440 / – ; U_L (V) 0,98 / – / 632 / – / 53,3 ; c) variation ;
+  [sic]) : a) Z_L, U_L ; b) tableau Z_L (Ω) – / 126 / – / 440 / – ; U_L (V) 0,98 / – / 632 / – / 53,3 [?] (à 85 MHz, U_L = Z_L·I ≈ 534 × 0,285 ≈ 152 V ; 53,3 V est la valeur de U_C
+  = 187 × 0,285) ; c) variation ;
   d) cas limites ; e) comparer ; 2.3°) circuit : a) Z(R, L, C, N), U_S ; b) tableau Z (Ω) 3152 / 671 / – / 218 / 350 ;
-  U_S (V) 1,858 / 7,45 / – / 22,9 / 14,25 ; c) variations de u_S et principe du passe bande ; 3°) maximum de a) la fonction
+  U_S (V) 1,858 [?] / 7,45 / – / 22,9 / 14,25 (à 5 MHz, U_S = R·I = 50 × 0,032 = 1,6 V, ou U/Z = 1,586 V :
+  inversion de chiffres probable) ; c) variations de u_S et principe du passe bande ; 3°) maximum de a) la fonction
   de transfert ; b) du gain ; 4°) bande passante à « -3db » [sic].
 - **Ex. 11 — Étude de texte « Filtres et musique Techno » (p.216)** — filtres en techno et trip-hop ; passe-bas (Low Pass),
   passe-bande (Band Pass), passe-haut (Hi Pass), réjecteur de bande « notch » (karaoké) ; « l'atténuation d'un filtre est
@@ -2759,7 +2799,8 @@ T(∞) = 0 » · Pas de réponse pour les ex. 1, 2, 9, 10, 11 (la colonne passe 
   magnétique) ; filtres à quartz, SAW, céramiques, mécaniques. *Filtres actifs* : au moins un composant actif (transistor,
   A.O.…) ; pas de bobines ; gain positif possible ; signaux faibles ; alimentation nécessaire, saturation ; bruit.
   *Filtres numériques* : traitement numérique (CD audio), DSP, reproductibilité, filtre en peigne. *Autres* :
-  piézoélectriques (quartz), SAW (« filtre à réponse impulsionnelle finie »), atomiques (masers à césium, maser à rubis) ;
+  piézoélectriques (quartz), SAW (onde acoustique de surface ; « Les sorties retardées sont recombinées pour produire une implémentation d'un
+  filtre à réponse impulsionnelle finie »), atomiques (masers à césium, maser à rubis) ;
   note MASER (« Microwave Amplification by Stimulated Emission of Radiation »).
 
 ### Écart avec la référence (aucune)
@@ -2805,9 +2846,8 @@ T(∞) = 0 » · Pas de réponse pour les ex. 1, 2, 9, 10, 11 (la colonne passe 
 - **Pages lues en L1** : 174 à 219 (les 46 pages), 220 (borne), 393–394 (réponses).
 - **Pages lues sur l'image** (110 dpi) : 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190,
   191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215,
-  216, 217, 393, 394 (44 pages). Non vues sur l'image : 174 (objectifs/prérequis, listes), 201 (fin de l'analyse du
-  passe-bande et début de l'étude théorique : formules reconstituées depuis L1 et recoupées avec p.202 — à recontrôler),
-  218–219 (prose « En savoir plus »).
+  216, 217, 393, 394 (44 pages) ; p.174, 201, 218 et 219 vues sur l'image par la relecture R-7 (auditeur C), conformes
+  (p.201 : formules reconstituées depuis L1 exactes). Le chapitre est désormais entièrement vu sur l'image.
 - **Écarts texte/image** : figures et courbes (Fig.2–4, 6, 8, 13, 14, 16, 18, 20, 25–28, 33–34, 37) absentes du texte ;
   p.180–182, 189–191, 195–197, 201–205 : vecteurs de Fresnel rendus « LLLLI », ω, φ, π, √ perdus, fractions et crochets
   éclatés (« (           )² », « '!  #( ») ; p.191 « 10^0,3 − 1 ≈ 1 » rendu « 100,3  1 c 1 » ; p.203–204 inéquations
@@ -2828,19 +2868,31 @@ T(∞) = 0 » · Pas de réponse pour les ex. 1, 2, 9, 10, 11 (la colonne passe 
   « Calcuer » ; p.215 « lorque » ; p.216 « Comprtement », « tensin », « -3db », « fltre » ; p.219 « expresion » ; p.393–394
   numérotations des questions décalées (ex. 3, 4, 5, 7, 8), « N₁ » pour N₂ (ex. 7).
 - **Doutes [?]** :
-  1. **Ex. 4, réponse « N_c = 15,9 Hz »** : R = 1 kΩ, C = 10 nF donnent 1/(2πRC) ≈ 15,9 **kHz** ; idem **ex. 5 « N_h =
-     15,92 Hz »** avec R₂ = 1 kΩ, C = 0,01 µF → 15,9 kHz. Unités fausses dans les réponses. 2. **Ex. 7, réponses « N₁ = 1346,5 Hz ; N₂ = 1505,7 Hz »** : avec N₀ = 712 Hz et Q = 4,472, les formules donnent
-     N₁ ≈ 637 Hz et N₂ ≈ 796 Hz (ΔN = 159,2 Hz cohérent) ; et « T(2N₀) = 0,186 » : recalcul T = 0,9/√(1 + 20 × 2,25) ≈ 0,133
-     (ou 0,147 avec T₀ = 1) — à ne pas reprendre sans recalcul. 3. **Ex. 9** : C = 10 pF et R = 1 kΩ donnent N_b ≈ 15,9 MHz, alors que les fréquences des figures (10 kHz, 15 923 Hz,
-     20 kHz) supposent N_b = 15 923 Hz, soit C = 10 nF : valeur de C probablement fausse (pas de réponse imprimée). 4. **§1.2.1** : G₀ ≈ 6 dB lu (R₁/R₀ = 2 → 6,02 dB cohérent) ; N_h « sensiblement égale à 1050 Hz » vs théorie 1064 Hz :
-     cohérent. 5. **§2.1 (p.193)** : N_b ≈ 1050 Hz pour le CR, alors que §1.1 donnait 1070 Hz pour le RC avec les mêmes composants et
-     que la remarque p.194 affirme leur égalité « aux erreurs expérimentales près » — acceptable. 6. **§3.1 (p.200–201)** : bande [495 Hz, 545 Hz], ΔN = 50 Hz ; théorie avec R = 62,5 Ω : Q = Lω₀/R ≈ 10,4, ΔN = N₀/Q ≈ 50 Hz
-     — cohérent. Fig.34 : U_Sm max 1,6 V (= R₀ I_m0 = 50 × 32 mA) et G₀ = −1,94 dB (= 20 log 0,8) cohérents. 7. **Fig.37 (p.205)** : légende « R₀ = 50Ω, R₀₁ = 100Ω, R₀₂ = 500Ω » ; pics T ≈ 0,8 / 0,88 / 0,97 cohérents avec
-     T₀ = R₀/(R₀ + r) (0,8 ; 0,89 ; 0,976). 8. **Bande passante RLC (p.204)** : « log[…] ≤ 3/10 » utilise l'approximation log 2 ≈ 0,3, non signalée (comme
-     « 0,998 ≈ 1 » pour RC). 9. **Fig.34 (p.200)** : sur le même graphe, la courbe G = h(N) paraît nettement plus étroite que la courbe U_Sm = f(N)
-     (échelles verticales différentes, mêmes abscisses 410–580 Hz) : la lecture de la bande passante sur la courbe U_Sm
-     (niveau 1,13 V) ne redonne pas visiblement [495 Hz, 545 Hz] — figure à ne pas réutiliser telle quelle. 10. **Réponse ex. 7 (p.394)** : « z = √((r + R)² + (Lω − 1/C_o)²) » [sic, ω manquant] ; « c- = Q₀ ». 11. **Ex. 8, Fig.1** : à 100 Hz, u_S d'amplitude ≈ 2,5 div à 2 V/div ≈ 5 V pour U_Em = 1 V → T ≈ 5 (conforme à la
-     réponse) ; Fig.2 : légende « u_E » sur un oscillogramme censé montrer u_S [?].
+  - [?] 1 — **Ex. 4, réponse « N_c = 15,9 Hz »** : R = 1 kΩ, C = 10 nF donnent 1/(2πRC) ≈ 15,9 **kHz** ; idem **ex. 5
+    « N_h = 15,92 Hz »** avec R₂ = 1 kΩ, C = 0,01 µF → 15,9 kHz. Unités fausses dans les réponses.
+  - [?] 2 — **Ex. 7, réponses « N₁ = 1346,5 Hz ; N₂ = 1505,7 Hz »** : avec N₀ = 712 Hz et Q = 4,472, les formules donnent
+    N₁ ≈ 637 Hz et N₂ ≈ 796 Hz (ΔN = 159,2 Hz cohérent) ; « T(2N₀) = 0,186 » : recalcul ≈ 0,133 — à ne pas reprendre sans
+    recalcul. Réponse 7 p.394 : « z = √((r + R)² + (Lω − 1/C_o)²) » [sic, ω manquant] ; « c- = Q₀ ».
+  - [?] 3 — **Ex. 9** : C = 10 pF et R = 1 kΩ donnent N_b ≈ 15,9 MHz, alors que les fréquences des figures (10 kHz,
+    15 923 Hz, 20 kHz) supposent N_b = 15 923 Hz, soit C = 10 nF : valeur de C probablement fausse (pas de réponse
+    imprimée).
+  - [?] 4 — **Ex. 10** : U_S = 1,858 V à 5 MHz (attendu ≈ 1,6 V) et U_L = 53,3 V à 85 MHz (attendu ≈ 152 V ; 53,3 V = U_C)
+    dans les tableaux de l'énoncé ; les autres cases se recalculent juste.
+  - [?] 5 — **Ex. 3** : « U_E = 2 V » (efficace) contre U_Em = 2 V supposé par la réponse.
+  - [?] 6 — **Fig.34 (p.200)** : sur le même graphe, la courbe G = h(N) paraît nettement plus étroite que la courbe
+    U_Sm = f(N) (échelles verticales différentes, mêmes abscisses 410–580 Hz) : la lecture de la bande passante sur la
+    courbe U_Sm (niveau 1,13 V) ne redonne pas visiblement [495 Hz, 545 Hz] — figure à ne pas réutiliser telle quelle.
+  - [?] 7 — **Ex. 8, Fig.2** : légende « u_E » sur un oscillogramme censé montrer u_S (à 100 kHz, 0,5 V/div). Fig.1 : à
+    100 Hz, u_S ≈ 2,5 div × 2 V/div ≈ 5 V pour U_Em = 1 V → T ≈ 5, conforme à la réponse.
+  - [?] 8 — **Bande passante RLC (p.204)** : « log[…] ≤ 3/10 » utilise l'approximation log 2 ≈ 0,3, non signalée (comme
+    « 0,998 ≈ 1 » pour RC).
+- **Contrôles (cohérents)** :
+  - §1.2.1 : G₀ ≈ 6 dB lu (R₁/R₀ = 2 → 6,02 dB) ; N_h « sensiblement égale à 1050 Hz » contre 1064 Hz théorique.
+  - §2.1 : N_b ≈ 1050 Hz pour le CR contre 1070 Hz pour le RC avec les mêmes composants (égalité « aux erreurs
+    expérimentales près », p.194).
+  - §3.1 : bande [495 Hz, 545 Hz], ΔN = 50 Hz ; théorie avec R = 62,5 Ω : Q ≈ 10,4, ΔN ≈ 50 Hz ; Fig.34 : U_Sm max 1,6 V
+    (= 50 × 32 mA) et G₀ = −1,94 dB (= 20 log 0,8).
+  - Fig.37 : pics T ≈ 0,8 / 0,88 / 0,97, cohérents avec T₀ = R₀/(R₀ + r) (0,8 ; 0,89 ; 0,976).réponse) ; Fig.2 : légende « u_E » sur un oscillogramme censé montrer u_S [?].
 
 ## 2.8 Chapitre 8 — Production de signaux non sinusoïdaux (manuel 223471, p.220–247)
 
@@ -3163,8 +3215,8 @@ u_N = U_DD/2 → « 1 − e^(−T/2τ) = U_DD/(U_DD + U_DD/2) = 2/3 » ; « Donc
   lire R_A + R_B ?] et C = 100 nF.
 
 **Exercices de synthèse**
-- **Ex. 7** (p.242) : « Trigger de schmitt » : AO à réaction positive (u_E sur l'entrée +, R1 de + à la masse
-  [schéma], R2 de S vers +). 1°) comparateur ou multivibrateur ? 2°) seuils ± 6 V et période T_o = 1 ms ; entrée
+- **Ex. 7** (p.242) : « Trigger de schmitt » : AO à réaction positive (u_E sur l'entrée **−**, R1 de + à la masse,
+  R2 de S vers + — schéma vérifié au zoom 300 dpi : c'est le comparateur (M1) du cours, trigger **inverseur**). 1°) comparateur ou multivibrateur ? 2°) seuils ± 6 V et période T_o = 1 ms ; entrée
   u_e(t) = 12 sin(2π/T t) : a) u_s(t) en fonction de R1, R2, u_E et ε ; b) AO polarisé ± 15 V : valeur minimale de R2
   (R1 = 10 kΩ) ; c) tracer u_E et u_S, en déduire T de u_E.
 - **Ex. 8** (p.242–243) : astable à AO en commutation, u_s = ± U_sat = ± 12 V ; diodes D1, D2 idéales (u_D = 0
@@ -3201,7 +3253,9 @@ u_N = U_DD/2 → « 1 − e^(−T/2τ) = U_DD/(U_DD + U_DD/2) = 2/3 » ; « Donc
   U1 = - 4,67 V. »
 - Ex. 6 : « 1°) Uo = R1Us /(R1 + R2) ; 2°) Uo2 = - Uo1 = 6 V. 4°a) T1 = (R+R_A)CLog(1 + 2R1/R2) T2 = (R+R_B)CLog(1 +
   2R1/R2) 4°b) T = (R+Rv)CLog(1 + 2R1/R2) = 3,3 ms. » [formule incohérente avec la somme T1 + T2, voir doutes].
-- Ex. 7 : « 1°) Comparateur ; 2°a) u_F [sic, u_S] = (R1 + R2 /R1)(u_E - ε); 2°b) R2 = 2,5 kΩ. » [? voir doutes].
+- Ex. 7 : « 1°) Comparateur ; 2°a) u_F [sic, u_S] = (R1 + R2 /R1)(u_E - ε); 2°b) R2 = 2,5 kΩ. » [2°a : avec ε = V⁺ − V⁻
+  et u_E sur l'entrée −, on trouve u_S = (R1 + R2)/R1·(u_E + ε) : signe « − ε » à lire [sic, ?] (ou ε défini V⁻ − V⁺) ;
+  2°b cohérent, voir doute 6].
 - Ex. 1, 2, 8, 9, 10, 11 : pas de réponse.
 
 ### En savoir plus / Documents
@@ -3227,7 +3281,8 @@ générateurs de musique, sonneries, Game-Boy, « bip des premiers ordinateurs �
 223433 (Sciences expérimentales) ne traite ni l'AO en comparateur, ni les portes logiques, ni les multivibrateurs.
 Recherche dans `content/` (« multivibrateur », « astable », « comparateur », « amplificateur opérationnel »,
 « porte logique ») : **aucun chapitre proche** ; seul point d'appui réutilisable : **sciences-exp/01 Condensateur,
-dipôle RC** (équation différentielle de charge, solution α e^(−t/τ) + β, τ = RC, lecture de τ) dont ce chapitre est
+dipôle RC** (équation différentielle de charge, τ = RC, lecture de τ ; attention : le chapitre publié écrit la solution
+u_C(t) = B + A·e^(−αt) (cours.md l.229), alors que ce chapitre 8 utilise α·e^(−t/τ) + β (p.227) — notation à adapter) dont ce chapitre est
 une application directe. Le chapitre est donc **à écrire en entier** (✅ tout ce qui suit est à ajouter) :
 - ✅ multivibrateurs bistable / monostable / astable ; oscillateur de relaxation (vs harmonique) ;
 - ✅ comparateur à deux seuils (trigger) à AO : ε = R1/(R1+R2) u_S − u_E, U_BH, U_HB, saturation ± U_sat, cycle
@@ -3238,7 +3293,7 @@ une application directe. Le chapitre est donc **à écrire en entier** (✅ tout
   (T = RC Log((U_BH − U_DD)/(U_HB − U_DD) · U_HB/U_BH)), à deux portes NAND (T = RC Log((U2 − 2U1)/(U2 − U1) ·
   (U1 + U2)/U2), T = 2,2 RC si U2 = ½U_DD) ;
 - ✅ en exercices : astable à rapport cyclique variable (diodes + potentiomètre), comparateur à seuils dissymétriques
-  (diodes), trigger non inverseur attaqué par un sinus.
+  (diodes), trigger inverseur (comparateur à deux seuils (M1)) attaqué par un sinus.
 Vocabulaire et notations propres : « Log » (népérien), U_BH / U_HB, E_H / E_B, U_DD, « quasi-stable »,
 « relaxateur », « trigger de Schmitt », « horloge ».
 
@@ -3258,7 +3313,7 @@ Vocabulaire et notations propres : « Log » (népérien), U_BH / U_HB, E_H / E_
     Δt = τ Log((U_i − U_f)/(U_0 − U_f)) et son emploi pour T1, T2, T, δ.
   - Les trois montages du cours et leurs formules ; calculs de T, δ, N, R, C, seuils ; tracé et interprétation des
     chronogrammes u_C, u_S (u_S1, u_S2, u_E2, u_P, u_N) ; état des diodes idéales selon le signe de u_S (exercices).
-  - Trigger non inverseur (ex. 7) ; comparateur à seuils dissymétriques (ex. 5) ; astable à rapport cyclique
+  - Trigger inverseur (comparateur à deux seuils (M1)) attaqué par un sinus (ex. 7) ; comparateur à seuils dissymétriques (ex. 5) ; astable à rapport cyclique
     variable (ex. 6, 8) ; étude de texte.
 - ⛔ **EXCLU** (absent du chapitre) :
   - Monostable et bistable étudiés quantitativement (seulement définis) ; bascules RS, D, JK, compteurs (seulement
@@ -3273,10 +3328,9 @@ Vocabulaire et notations propres : « Log » (népérien), U_BH / U_HB, E_H / E_
 
 - **Pages lues en couche texte** (`pdftotext -layout`, page par page) : 220 à 247 (les 28 pages) et 394 (réponses du
   chapitre 8).
-- **Pages lues sur l'image** (110 dpi) : 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237,
-  238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 394 (**26 pages**) ; recadrages 250 dpi : p.228 (formule (4)),
-  p.241 (graphe de l'ex. 4). Pages non vues sur l'image : 220 (objectifs/prérequis, prose), 221 (ouverture, prose +
-  photos), 222 (prose, sans formule ni figure).
+- **Pages lues sur l'image** (110 dpi) : 220 à 247 (les 28 pages) et 394 (**29 pages**) ; recadrages 250 dpi : p.228
+  (formule (4)), p.241 (graphe de l'ex. 4) ; 300 dpi : p.242 (schéma de l'ex. 7, après relecture R-7). Pages 220, 221,
+  222 relues sur l'image après relecture R-7 (conformes au texte transcrit).
 - **Écarts couche texte / image constatés** : les symboles **δ, ε, τ, ±, ≠, flèches et racines sont perdus** dans la
   couche texte (« - = 1 » pour δ = T1/T p.226, « = R1 i - uE » pour ε p.224, « t = Log » pour Δt = τ Log p.228,
   « T = 2Log(1 + 2 R1/R2) » pour T = 2τLog p.229) ; toutes les fractions sont éclatées sur trois lignes ; p.230 le
@@ -3284,7 +3338,7 @@ Vocabulaire et notations propres : « Log » (népérien), U_BH / U_HB, E_H / E_
   entremêlées avec les schémas Fig.1–3 ; p.241 graphe de l'ex. 4 absent ; p.243 tableau de l'ex. 8 déstructuré ;
   p.394 réponses entremêlées avec la colonne du chapitre 7.
 - **Coquilles [sic]** : « perfermants » (p.221) ; « opérationel », « portes logiques NO » (p.220) ; deux figures
-  numérotées **Fig.7** (p.225) ; « fonction0nement » (p.233) ; « u_D » pour U_DD (Fig.20 u_S1, p.233 ; « ½ U_D »
+  numérotées **Fig.7** (p.225) ; « fonction0nement » (p.233) ; « sPour déterminer la période T » (p.228) ; « u_D » pour U_DD (Fig.20 u_S1, p.233 ; « ½ U_D »
   p.234) ; question §3.2 1°) renvoie à « la figure 15 » au lieu de 17 (p.231) ; **formule (4) p.228 : numérateur
   « U_iC − U_HB » au lieu de U_iC − E_H** ; p.229 « En supposant que u_S passe de son niveau haut à son niveau bas,
   u_c croît … vers U_sat » (contradiction : u_S doit être au niveau haut) ; « b' » pour β' (ex. 9) ; « d=0,5 » pour
@@ -3302,9 +3356,10 @@ Vocabulaire et notations propres : « Log » (népérien), U_BH / U_HB, E_H / E_
      R2 ≈ 14,5 kΩ — les réponses mélangent deux lectures. Le graphe lui-même (M ≈ −7,5 V, N ≈ +7 V à 3 ms) est trop
      grossier pour trancher. Exercice à reprendre avec données cohérentes. 5. **Réponse ex. 6 4°b** : T1 + T2 = (2R + R_A + R_B)C Log(1 + 2R1/R2) ; la formule imprimée « (R + R_v) » est fausse,
      mais la valeur 3,3 ms correspond à (2R + R_v)C Log3 avec R_v = R_A + R_B = 10 kΩ (« R_v » n'est défini nulle part
-     dans l'énoncé). 6. **Réponse ex. 7 2°b « R2 = 2,5 kΩ »** : pour un trigger non inverseur, seuils ± (R1/R2) U_sat ; ± 6 V avec
-     U_sat = 15 V donnerait R2 = 25 kΩ ; la condition « valeur minimale pour que le montage remplisse son rôle »
-     (amplitude 12 V > seuil) donnerait R2 ≥ 12,5 kΩ. Valeur 2,5 kΩ non retrouvée. 7. Exercice résolu : exposant « −(t − t1)/2τ » (image p.239) incohérent avec une constante de temps τ = RC ; il
+     dans l'énoncé). 6. **Ex. 7 (corrigé après relecture R-7)** : le montage est un trigger inverseur (u_E sur l'entrée −), seuils
+     ± R1/(R1+R2)·U_sat ; pour que le sinus d'amplitude 12 V fasse basculer l'AO polarisé ± 15 V, R1/(R1+R2)·15 < 12, soit
+     R2 > 2,5 kΩ : la réponse « R2 = 2,5 kΩ » (p.394) est **cohérente**. Seule incohérence restante : l'énoncé annonce
+     des seuils de ± 6 V, qui exigeraient R2 = 15 kΩ (non demandé ; ne pas mélanger les deux à l'adaptation). 7. Exercice résolu : exposant « −(t − t1)/2τ » (image p.239) incohérent avec une constante de temps τ = RC ; il
      sert à justifier T = 2RC Log3 ; la Fig.3 de la solution porte « −15V » alors que le texte donne u_N = 15 V après
      basculement. 8. Ex. 3 : la donnée « C = 9,6 μF » est fournie alors que 2°b demande de calculer C (= 9,6 μF, réponse). 9. Tableau de l'ex. 8, valeurs graphiques de §3.1 1°b) et §3.2 2°) : non fournies par le manuel.
 
@@ -3535,7 +3590,7 @@ cours du temps. ■ Un signal est dit logique si sa valeur varie de façon discr
 uniquement deux états, un état haut et un état bas. ■ Un C.N.A. est un montage électronique qui transforme une
 information numérique (un mot binaire [N]) en un signal analogique proportionnel à la valeur décimale du nombre
 binaire converti. ■ La tension pleine échelle (P.E.) d'un C.N.A. est la valeur maximale de la tension de sortie du
-convertisseur : **P.E. = U_smax =. K.N_max.** ■ Le quantum, noté q, pour un convertisseur C.N.A. correspond à la
+convertisseur : **P.E. = U_smax = K.N_max.** ■ Le quantum, noté q, pour un convertisseur C.N.A. correspond à la
 quantité élémentaire de variation du signal de sortie u_s correspondant à une variation de ± 1 de N en entrée. ■ Le
 quantum s'exprime : **q = U_smax/(2ⁿ − 1)**. ■ Un C.A.N. est un montage électronique qui transforme un signal analogique
 (une tension u_E) appliquée à son entrée en un nombre binaire [N] de sortie (proportionnel à cette tension u_E). ■ Le
@@ -3617,7 +3672,7 @@ exploitées ; elles donneraient q = 0,5 V et P.E. = 7,5 V < 12 V — calcul non 
 ### Réponses du manuel (p.395, lues sur l'image)
 
 - Ex. 3 : « 1°) I = a_oE / R . 2°) u_S= -(R'E/R)N. 3°) q=-R'E/R, q = - 1 V, P.E.= -7 V. »
-- Ex. 4 : « 1°) n = 2⁸ = 256. 2°) q = (P.E.)/2ⁿ - 1 = 39 mV. 3°) v_S [sic] = 7,84V. »
+- Ex. 4 : « 1°) n = 28 [sic, 2⁸ : exposant perdu dans le manuel] = 256. 2°) q = (P.E.)/2ⁿ - 1 = 39 mV. 3°) v_S [sic] = 7,84V. »
 - Ex. 5 : « 1°) a) I_o=-(a_oE_ref)/128R, b)u_S=(a_oR1/128R)E_ref. 2°) a1 = a3 = a6 = a7 =1 et a_o = a2 = a4 = a5 =0.
   3°) u_S=7,88V. 4°)U_S max< U_Sat de l'amplificateur. »
 - Ex. 6 : « 1°) u_S = -(R'E_ref4R)N [sic, lire −(R'E_ref/4R)N]. 2°) q = 143 mV. 2°) U_Smax = 1 V. 4°) N_max = 7.
@@ -3695,8 +3750,8 @@ binaire [N] », « caractéristique de transfert », U_ref/E_ref.
 
 - **Pages lues en couche texte** : 248 à 273 (les 26 pages) et 395 (réponses du chapitre 9).
 - **Pages lues sur l'image** (110 dpi) : 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264,
-  265, 266, 267, 268, 269, 270, 271, 272, 273, 249, 395 (**26 pages**) ; recadrage 250 dpi : p.259 (Fig.14, U_réf = 5 V).
-  Page non vue sur l'image : 248 (objectifs/prérequis, prose).
+  265, 266, 267, 268, 269, 270, 271, 272, 273, 249, 248, 395 (**27 pages** : 248 à 273 et 395) ; recadrage 250 dpi :
+  p.259 (Fig.14, U_réf = 5 V). Page 248 relue sur l'image après relecture R-7 (conforme).
 - **Écarts couche texte / image** : exposants perdus (« 2n-1an-1 », « Nmax = 2n -1 », « Rj = 2(n-j-1)R ») ; toutes les
   fractions éclatées (I_j, k, P.E., q) ; symboles ≠ et ± perdus p.259 ; crochets de la solution p.265 rendus
   « ' ( ! # " » ; schémas (Fig.11, 13, 14, 16, 17, ex. 3–8) déstructurés ou absents ; Fig.15 (escalier et tableau)
@@ -4113,8 +4168,10 @@ mot pour mot à ceux du manuel 223433 (ch.7, p.192–221) ; le chapitre publié 
 - ⛔ **À retirer** (présent dans 223433 / dans le chapitre publié, absent ici) :
   - **Ex. 15** de 223433 (source ponctuelle, coupe de la surface à t₁ = 0,2 s, y_s = Y_m sin(2πNt + π)) et **ex. 16
     « Quand la Terre tremble… »** (ondes sismiques P et S, compression/cisaillement, sujet de bac 2009) : **absents**
-    de 223471 (les exercices s'arrêtent à l'ex. 14, p.304). Le quiz publié (`quiz.json`) contient un item « secousse
-    de cisaillement sismique (onde S) » : à retirer ou à reformuler sans ondes P/S. (La ligne « Ebranlement sismique
+    de 223471 (les exercices s'arrêtent à l'ex. 14, p.304). Le chapitre publié `07-ondes-mecaniques-progressives`
+    mentionne les ondes P/S à trois endroits, à retirer ou à reformuler sans ondes P/S : `quiz.json` (item « secousse de
+    cisaillement sismique (onde S) »), `cours.md` l.87 (ligne de tableau « Séisme, onde S | cisaillement … |
+    transversale ») et `resume.md` l.4 (« … surface de l'eau, onde S) … ressort comprimé, son, onde P) »). (La ligne « Ebranlement sismique
     8000 m.s⁻¹ » du tableau de célérités reste, elle, présente p.281.)
   - « En savoir plus » de 223433 (propriétés des ondes, vitesses de phase et de groupe, vecteur d'onde, Fourier) :
     remplacé ici par la houle ; s'il a nourri le chapitre publié, retirer.
@@ -4124,8 +4181,11 @@ mot pour mot à ceux du manuel 223433 (ch.7, p.192–221) ; le chapitre publié 
     lecture culturelle facultative.
   - p.288 : « à λ/4 **avant** les points qui vibrent en phase » (texte correct ici, « ayant » dans 223433).
   - Conclusion p.287 sans « au repos » (nuance mineure).
-- Vocabulaire et notations : identiques (θ, φ_s, Δφ, T_e/N_e, x_f, « sinusoïde des espaces », « dilution d'énergie ») ;
-  coquilles identiques. Numérotation du chapitre : **10** (au lieu de 7) ; pages 274–307.
+- Vocabulaire et notations : identiques **à 223433** (θ, φ_s, Δφ, T_e/N_e, x_f, « sinusoïde des espaces », « dilution
+  d'énergie ») ; coquilles identiques. Mais **pas identiques au chapitre publié** : celui-ci écrit la quadrature avance
+  x = (4k + 3)λ/4 (cours.md l.304) et l'aspect y_t(x) = a sin(ωt − 2πx/λ) (cours.md l.328), alors que le manuel écrit
+  x = (4k − 1)λ/4 avec k ≥ 1 (p.288) et y_t(x) = a sin(2πx/λ − ωt + π) (p.289) ; formes équivalentes, mais l'adaptation
+  doit reprendre celles du manuel 223471 (exercice résolu, tableau k = 1…5). Numérotation du chapitre : **10** (au lieu de 7) ; pages 274–307.
 
 ### Bornes de scope
 
@@ -4151,8 +4211,8 @@ mot pour mot à ceux du manuel 223433 (ch.7, p.192–221) ; le chapitre publié 
 - **Pages lues en couche texte** : 274 à 307 (les 34 pages) et 395 (réponses du chapitre 10).
 - **Pages lues sur l'image** (110 dpi) : 274, 275, 276, 277, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289,
   290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 395 (**34 pages**) ;
-  recadrage 250 dpi : p.395 (réponse ex. 9 I-3°). Page non
-  vue sur l'image : 278 (prose et questions, sans formule ni figure).
+  recadrage 250 dpi : p.395 (réponse ex. 9 I-3°). Page 278 relue sur l'image après relecture R-7 (conforme) : les
+  34 pages 274–307 sont toutes vues sur l'image.
 - **Comparaison avec la fiche sciences-exp §2.7** : chaque encadré et chaque énoncé d'exercice ci-dessus a été relu sur
   l'image de 223471 et confronté à la transcription de 223433 : texte identique, sauf les deux nuances signalées
   (p.287 « au repos » absent ; p.288 « avant » au lieu de « ayant »).
@@ -4173,16 +4233,29 @@ mot pour mot à ceux du manuel 223433 (ch.7, p.192–221) ; le chapitre publié 
      « y_S = y_A = 4.10⁻³ sin(200πt) ») : la réponse de 223471 est fautive — ne pas la reprendre. 5. QCM III : réponse non fournie (règle T_e légèrement > 2T → ralenti dans le sens réel, O → A). 6. Ex. 14 : l'oscillogramme Fig.2 ne porte aucune indication de base de temps ; les réponses 1°) supposent
      s ≃ 0,1 ms/div non donnée dans l'énoncé.
 
-## 2.11 Chapitre 11 — Interactions onde-matière (manuel 223471, p.309–337)
+## 2.11 Chapitre 11 — Interactions onde-matière (manuel 223471, p.308–337)
 
 Partie du manuel : « Ondes » (bandeau « Ondes • Interactions onde - matière » sur chaque page). Plage exacte
-vérifiée : page d'ouverture p.309 → « En savoir plus » p.337. **La p.338 n'appartient PAS au chapitre 11** :
-c'est la page « Objectifs / Prérequis » du chapitre 12 (bandeau « Généralités sur la transmission des
-signaux »), placée avant la page d'ouverture n° 12 (p.339). Ce chapitre n'a **pas** de page Objectifs/Prérequis
-propre (aucune page entre p.308 et p.309 n'en porte ; à confirmer par le lecteur C, p.308).
+vérifiée : **p.308** (Objectifs / Prérequis, page précédant l'ouverture ; bandeau « Ondes • Interactions onde -
+matière ») → p.309 (page d'ouverture n° 11) → p.337 (« En savoir plus »). La p.307 est la fin du chapitre 10.
+**La p.338 n'appartient PAS au chapitre 11** : c'est la page « Objectifs / Prérequis » du chapitre 12 (bandeau
+« Généralités sur la transmission des signaux »), placée avant la page d'ouverture n° 12 (p.339).
 Notations du manuel : la fréquence d'une radiation est notée **ν** (lettre nu en italique, rendue « V »/« Vx »
 en couche texte), celle d'une onde mécanique **N** ; « tg » pour tangente ; angle d'incidence i / i₁, de
 réflexion i' ou r, de réfraction i₂.
+
+**Objectifs (p.308, VERBATIM)** — « Justifier le caractère ondulatoire de la lumière à partir d'expériences de
+diffraction d'ondes mécaniques et d'ondes lumineuses. » · « Préciser l'influence, sur le phénomène de diffraction,
+du quotient λ/a (λ étant la longueur d'onde et a la largeur de la fente). » · « Réaliser des expériences de
+réflexion, de réfraction et de dispersion d'ondes mécaniques. » · « Montrer que la lumière blanche est constituée
+d'une infinité de radiations monochromatiques. » · « Distinguer un milieu dispersif d'un milieu non dispersif. »
+
+**Prérequis (p.308)** — SAVOIR : définir une onde mécanique rectiligne ; définir la réflexion et la réfraction de
+la lumière ; énoncer les lois de Descartes relatives à la réflexion et à la réfraction de la lumière ; définir le
+phénomène de dispersion de la lumière blanche. SAVOIR FAIRE : reconnaître une onde mécanique rectiligne ;
+utiliser un stroboscope ; mesurer la longueur d'onde λ d'une onde plane progressive ; utiliser une source Laser ;
+« Appliquer le [sic] lois de Descartes relatives à la réflexion et à la réfraction de la lumière » ; reconnaître
+le phénomène de dispersion de la lumière blanche.
 
 **Page d'ouverture (p.309)** — titre « INTERACTIONS ONDE-MATIERE », n° 11 ; photo de soleil à travers un arbre,
 légende (VERBATIM) : « Les rayons solaires donnent, à travers les branches d'arbres, une lumière diffusée dans
@@ -4228,7 +4301,8 @@ Puis « L'essentiel » (p.329), « Exercices » : exercice résolu (p.330–331)
   largeur L de la tache centrale). Diaphragme à fente rectangulaire F de largeur réglable : a = 0,6 mm → figure
   étalée horizontalement, taches brillantes séparées de zones sombres, tache centrale de largeur L la plus
   brillante ; a = 0,3 mm → tache centrale L' = 2 L (Fig.4b, photo). Remarques : obstacle de même largeur → même
-  phénomène ; fente circulaire → « anneaux de diffraction » (Fig.4c, photo). Questions (VERBATIM) : « 1°)
+  phénomène ; fente circulaire → « anneaux de diffraction » (Fig.4c, photo, légendée « Figure de diffraction par un
+  trou »). Questions (VERBATIM) : « 1°)
   Comparer la largeur a de la fente (F) donnant sur (E) la figure étalée avec la valeur de λ. 2°) Les taches
   lumineuses formées sur l'écran E ont-elles la même largeur ? 3°) Comment se présentent les taches latérales
   par rapport à la tache centrale ? 4°) La forme de la fente a-t-elle un effet sur la nature des taches
@@ -4614,16 +4688,19 @@ l.3276 ; à vérifier dans `07-ondes-mecaniques-progressives/cours.md`, qui n'a 
 Interférences : **absentes des deux manuels** (le brief les citait avec « ? » : à écarter).
 
 - ⛔ (dans la référence, absent ici) : aucun écart notionnel majeur sur la partie commune. Points à vérifier à
-  l'adaptation : exemples chiffrés de la référence (N = 20 Hz, v = 0,24 m/s, fente 3,6/1,2/0,6 cm ; prisme à
-  i = 60° avec n = 1,514/1,528) — à remplacer par les données de CE manuel (a = 4 / 1,5 / 0,5 cm ; λ = 633 nm,
+  l'adaptation : exemples chiffrés de la référence (N = 20 Hz, v = 0,24 m/s, fente 3,6/1,2/0,6 cm ; hémicylindre
+  de verre à i = 60° avec n_rouge = 1,514, n_bleu = 1,528) — à remplacer par les données de CE manuel (a = 4 / 1,5 / 0,5 cm ; λ = 633 nm,
   a = 0,6/0,3 mm ; tableaux 1 et 2 à D = 2 m ; tableau ν/λ/n identique). L'étalement « perpendiculaire à la
   fente » est formulé ici « figure étalée horizontalement » ; le fil/cheveu n'apparaît ici qu'en exercice
   résolu (cheveu) et en remarque « obstacle de même largeur ».
 - ✅ (en plus ici, à ajouter) :
-  - **Relations de diffraction AU COURS** (p.315–316), alors que la fiche sciences-exp les exclut du cours :
-    L = k/a ; tg θ = L/2D, θ ≈ L/2D ; **θ = λ/a** ; **L = 2Dλ/a** ; exploitation graphique L = f(1/a) (droites
-    pour deux couleurs) ; calcul de λ, de d (cheveu), de L' pour une autre λ. En exercice : fente circulaire
-    **θ = 1,22 λ/a**, r = 1,22 λD/a (ex. 11, formule donnée).
+  - **Établissement expérimental des relations de diffraction AU COURS** (p.315–316). La référence publiée
+    (sciences-exp/08, section « 📏 La largeur L, l'angle θ et la distance D ») contient DÉJÀ θ = L/(2D) comme
+    définition et L = 2λD/a « admise ici comme outil de calcul » (exemple chiffré, piège θ = L/D). Reste à
+    ajouter : L = k/a tiré des droites L = f(1/a) pour deux couleurs (tableaux 1 et 2) ; tg θ = L/2D, θ ≈ L/2D ;
+    θ = k/2Da ; puis **θ = λ/a** (absent tel quel de la référence) ; L = 2Dλ/a présentée comme conséquence et
+    non plus admise. Calculs de λ, de d (cheveu), de L' pour une autre λ : déjà couverts par la référence. En
+    exercice : fente circulaire **θ = 1,22 λ/a**, r = 1,22 λD/a (ex. 11, formule donnée).
   - **Réflexion** (§2) : ébranlement sur ondoscope, extrémité libre (sans changement de signe) / fixe (avec
     changement de signe), ébranlement incident/réfléchi ; onde plane en cuve sur obstacle plan : λ' = λ, i = i'
     (deuxième loi de Descartes) ; onde sonore sur obstacle plan (tableau i'/amplitude, maximum pour i' = i) ;
@@ -4677,13 +4754,12 @@ Interférences : **absentes des deux manuels** (le brief les citait avec « ? »
 
 ### Lecture
 
-- **Pages lues en couche texte** (pdftotext -layout, page par page) : 309 à 337 (29 pages), 338 (rattachée au
+- **Pages lues en couche texte** (pdftotext -layout, page par page) : 308 à 337 (30 pages), 338 (rattachée au
   ch.12), 396 (réponses, colonne gauche), 398–399 (sites web).
-- **Pages lues sur l'image** (110 dpi) : 309, 310, 311, 312, 313, 314, 315, 316, 318, 319, 322, 323, 326, 327,
-  328, 329, 331, 332, 333, 334, 335, 336, 396 (23 pages). Pages non vues sur l'image : 317 (prose + Fig.8b
-  décrite par le texte, sens de la bosse réfléchie déduit du texte « changement de signe »), 320, 321, 324, 325
-  (prose ; Fig.11, 12, 14, 15 non vues — photos/schémas simples décrits par le texte), 330 (énoncé + tableau,
-  lisibles en texte), 337 (En savoir plus, prose ; figures d'ondelettes non vues).
+- **Pages lues sur l'image** (110 dpi) : 308 (ajoutée après la relecture R-7), 309, 310, 311, 312, 313, 314, 315,
+  316, 318, 319, 322, 323, 326, 327, 328, 329, 331, 332, 333, 334, 335, 336, 396 (24 pages). Pages 317, 320, 321,
+  324, 325, 330 et 337, d'abord non vues, vérifiées sur l'image par la relecture R-7 (lecteur E), conformes : toutes
+  les pages du chapitre sont désormais vues sur l'image.
 - **Écarts couche texte / image** : λ rendu « / » dans toutes les fractions (p.314, 316, 323, 328, 329, 332) ;
   θ perdu (« = L/2.D », « tg() ») p.315–316 ; ≈ rendu « $ » p.315–316 ; ν (nu) rendu « V »/« Vx » p.325–329 ;
   λ₀ = c/ν rendu « /0 = c/2 » p.328 ; √(‖g‖.e) illisible p.333 ; θ = 1,22.λ/a éclaté p.335 ; k = 3,15.10⁻⁶ rendu
@@ -4696,16 +4772,25 @@ Interférences : **absentes des deux manuels** (le brief les citait avec « ? »
   « λ/a² = 1 » ; p.334 ex. 8 « indice de réfaction » ; p.336 ex. 13 « angle de réfaction » ; p.396 ex. 5
   « v₂/N₂ = v₁/N₂ », ex. 6 « λ₁ = v₂/N », ex. 11 « θ = r/a ».
 - **Doutes [?]** :
-  1. **Ex. 7 : réponses incompatibles avec l'énoncé** — avec v₁ = 0,30 m.s⁻¹, v₂ = 0,25 m.s⁻¹, N = 20 Hz on
-     trouve λ₁ = 1,5.10⁻² m, λ₂ = 1,25.10⁻² m et sin i₂ = (0,25/0,30)·0,5 → i₂ ≈ 24,6° ; le manuel donne
-     2.10⁻² m, 1,33.10⁻² m et 19,47° (ce qui correspond à v₁ = 0,40, v₂ ≈ 0,27 m.s⁻¹). Ne pas reprendre. 2. **Ex. 9 2°b)** : réponse « λ/a = 6,3.10⁻⁶ < 0,174 » ; le calcul donne λ/a = 0,63.10⁻⁶/10⁻⁴ = 6,3.10⁻³ ; la
-     valeur 0,174 n'a pas d'origine identifiable. L = 2Dλ/a = 1,26.10⁻² m (non donné). Ne pas reprendre. 3. **Ex. 6 4°)** : réponse « non, car v₂ ≠ v₁, pour N = Cte » — la variation de v avec l'épaisseur à N
-     constant ne prouve pas l'absence de dispersion ; raisonnement à ne pas reprendre. λ₂ calculé ≈ 1,55.10⁻² m
-     (arrondi à 1,5.10⁻² m dans le manuel). 4. **Remarque p.328** : « augmentation de (0,006) pour chaque diminution de dix picomètres » — d'après le
-     tableau, n varie de 0,017 sur 334 nm, soit ≈ 5.10⁻⁷ par 10 pm : chiffre incohérent. Ne pas reprendre. 5. **p.312 Remarque 1** : « fente F de largeur a inférieure à la longueur d'onde λ » alors que a = 0,6 mm et
-     λ = 633 nm (a >> λ) ; de même §1.1 « lorsque la largeur a … est inférieure à λ » vs Fig.2b « a ≃ λ ».
-     Formulation à corriger à l'adaptation (diffraction observable dès que a n'est pas très grand devant λ). 6. **Ex. 4 4°)** : réponse « l << λ, pas de diffraction » — pour λ = 5 m et l = 30 m, c'est l >> λ. 7. Ex. 12 : x₂ = 5,5 cm et x₃ = 8 cm cotent la figure (Fig.5) ; la réponse déduit L₂ = (5,5 − 2,7)/2 =
-     1,4 cm. Cohérent. 8. Vérifiés cohérents : exercice résolu (λ = 525 nm, d = 0,21 mm), ex. 3, 10, 11 (λ ≈ 0,67 μm), 12, 13.
+  - **Doute 1** — **Ex. 7 : réponses incompatibles avec l'énoncé** — avec v₁ = 0,30 m.s⁻¹, v₂ = 0,25 m.s⁻¹, N = 20
+    Hz on trouve λ₁ = 1,5.10⁻² m, λ₂ = 1,25.10⁻² m et sin i₂ = (0,25/0,30)·0,5 → i₂ ≈ 24,6° ; le manuel donne 2.10⁻²
+    m, 1,33.10⁻² m et 19,47° (ce qui correspond à v₁ = 0,40, v₂ ≈ 0,27 m.s⁻¹). Ne pas reprendre.
+  - **Doute 2** — **Ex. 9 2°b)** : réponse « λ/a = 6,3.10⁻⁶ < 0,174 » ; le calcul donne λ/a = 0,63.10⁻⁶/10⁻⁴ =
+    6,3.10⁻³ ; la valeur 0,174 n'a pas d'origine identifiable. L = 2Dλ/a = 1,26.10⁻² m (non donné). Ne pas
+    reprendre.
+  - **Doute 3** — **Ex. 6 4°)** : réponse « non, car v₂ ≠ v₁, pour N = Cte » — la variation de v avec l'épaisseur
+    à N constant ne prouve pas l'absence de dispersion ; raisonnement à ne pas reprendre. λ₂ calculé ≈ 1,55.10⁻² m
+    (arrondi à 1,5.10⁻² m dans le manuel).
+  - **Doute 4** — **Remarque p.328** : « augmentation de (0,006) pour chaque diminution de dix picomètres » —
+    d'après le tableau, n varie de 0,017 sur 334 nm, soit ≈ 5.10⁻⁷ par 10 pm : chiffre incohérent. Ne pas reprendre.
+  - **Doute 5** — **p.312 Remarque 1** : « fente F de largeur a inférieure à la longueur d'onde λ » alors que a =
+    0,6 mm et λ = 633 nm (a >> λ) ; de même §1.1 « lorsque la largeur a … est inférieure à λ » vs Fig.2b « a ≃ λ ».
+    Formulation à corriger à l'adaptation (diffraction observable dès que a n'est pas très grand devant λ).
+  - **Doute 6** — **Ex. 4 4°)** : réponse « l << λ, pas de diffraction » — pour λ = 5 m et l = 30 m, c'est l >> λ.
+  - **Doute 7** — Ex. 12 : x₂ = 5,5 cm et x₃ = 8 cm cotent la figure (Fig.5) ; la réponse déduit L₂ = (5,5 −
+    2,7)/2 = 1,4 cm. Cohérent.
+  - **Doute 8** — Vérifiés cohérents : exercice résolu (λ = 525 nm, d = 0,21 mm), ex. 3, 10, 11 (λ ≈ 0,67 μm), 12,
+    13.
 
 ## 2.12 Chapitre 12 — Généralités sur la transmission des signaux (manuel 223471, p.338–363)
 
@@ -4802,7 +4887,7 @@ plus » (p.362–363).
   transmission des informations ? 3°) Est-ce que le signal et le support suffisent pour une transmission
   adéquate ? » ; diode infrarouge alimentée par un multivibrateur (tension en créneaux), rapport cyclique
   propre à chaque bouton, information codée → décodeur. **Exemple 2 — trois lasers** : vert = beau, rouge =
-  chaud, bleu = froid ; support = rayonnement laser (électromagnétique) ; information = couleur ; deux émetteurs
+  chaud, bleu = froid ; question (VERBATIM) : « Dans l'exemple 2, quel est le support de l'information ? » ; support = rayonnement laser (électromagnétique) ; information = couleur ; deux émetteurs
   identiques → besoin d'un canal (4ᵉ diode laser jaune pour l'un, orangée pour l'autre). **Exemple 3 —
   alarmes** : support = onde sonore ; information = fréquence (aigu/grave) ; « le timbre du son émis est le canal
   de transmission ».
@@ -4823,7 +4908,8 @@ plus » (p.362–363).
   rôle de relais en télécommunications ? » → SHF (3–30 GHz), ligne droite, traversent l'ionosphère ; paraboloïde
   directionnel ; GSM, télécommunication intercontinentale, télévision par satellite.
 - **§3.5.1 Antenne de Hertz (p.353)** — Fig.17 : GBF alimentant une tige T₁ de longueur L (deux demi-brins) ;
-  tige T₂ identique reliée à un micro-ampèremètre A. Question (VERBATIM) : « Sachant que les communications par
+  tige T₂ identique « liée à un micro-ampèremètre ou un fréquencemètre » (Fig.17, appareil noté A) ; le texte
+  précède d'un « Le premier pionnier des antennes est le physicien Hertz. » Question (VERBATIM) : « Sachant que les communications par
   GSM utilisent la gamme de fréquences (3 GHz - 30 GHz), montrer que l'antenne dont il faut munir les appareils
   de téléphone mobile peut être d'une longueur comprise entre 2,5 cm et 2,5 mm (Fig.18). » [? ces valeurs sont
   celles d'une antenne quart d'onde ; voir doutes]
@@ -5011,8 +5097,8 @@ blancs », Fig.4 « Nuages poussiéreux », photos).
 ### Exercices et problèmes (p.360–361) — 10 exercices au total (2 tests + 5 application + 3 synthèse)
 
 **Exercices d'application**
-- **Ex. 3** (p.360) : émetteurs E₁, E₂, nombre binaire à trois bits par trois LED bleues (allumée = 1, éteinte =
-  0) ; LED jaune = E₁, LED rouge = E₂ (figure à deux colonnes). 1°) nombres binaires ; 2°) support ; 3°) canaux.
+- **Ex. 3** (p.360) : émetteurs E₁, E₂, nombre binaire à trois bits par trois LED bleues (allumée = 1,
+  éteinte = 0) ; LED jaune = E₁, LED rouge = E₂ (figure à deux colonnes). 1°) nombres binaires ; 2°) support ; 3°) canaux.
 - **Ex. 4** (p.360) : 1°) différence AM / FM ; 2°) identifier les signaux Fig-a (amplitude constante, fréquence
   variable) et Fig-b (amplitude variable) en justifiant.
 - **Ex. 5** (p.360) : ondes courtes en radiodiffusion. 1°) nature ; 2°) pourquoi « courtes » ; 3°) longueurs d'onde
@@ -5110,10 +5196,9 @@ filtres (ch.6–7 de ce manuel) pour le « filtre passe bande » de la réceptio
 
 - **Pages lues en couche texte** : 338 à 363 (26 pages), 364 (rattachée au ch.13), 396–397 (réponses).
 - **Pages lues sur l'image** (110 dpi) : 338, 341, 342, 348, 350, 351, 352, 353, 358, 359, 360, 361, 362, 396, 397
-  (15 pages). Non vues sur l'image : 339 (ouverture, légende lisible en texte), 340, 343–347, 349, 354–357, 363
-  (prose ; figures photographiques ou chronogrammes décrits par le texte : Fig.1–3, 7–13, 19–22 ; Fig.4–6 de
-  l'« En savoir plus »). Formules de ces pages (v = c/n p.349–350, E⃗/B⃗ p.349, L = λ/2 p.353) relues sur les
-  images 350 et 353 ; p.349 « E⃗ et B⃗ » rendu « I I E et B » en texte, lu comme vecteurs [non vu sur image].
+  (15 pages). Pages 340, 343–347, 349, 354–357 et 363, d'abord non vues, vérifiées sur l'image par la relecture
+  R-7 (lecteur E), conformes ; E⃗ et B⃗ confirmés comme vecteurs p.349 (rendus « I I E et B » en couche texte).
+  Seule la p.339 (ouverture, légende et questions lisibles en texte) n'a pas été vue sur l'image.
 - **Écarts texte/image** : λ rendu « / » (p.350, 353) ; « k ∈ N* » rendu « k N * » (p.353) ; fraction de h
   (ex. 9) éclatée ; d = t₀·cv/(c − v) éclaté (p.358) ; tableau p.352 et tableau p.362 conformes ; colonnes
   ch.11/ch.12 entremêlées p.396.
@@ -5123,17 +5208,26 @@ filtres (ch.6–7 de ce manuel) pour le « filtre passe bande » de la réceptio
   « fréquence des ondes » ; p.361 « metta » (×2), « instrumnt », « La premier dispositif », « interrupeur » ;
   p.362–363 « abscence », « abscene » ; p.397 « Ondes électromagnetiques ».
 - **Doutes [?]** :
-  1. **Ondes hertziennes p.351** : « 300 kHz à 300 GHz » et « 1 mm et 30 km » sont incompatibles (300 kHz ↔
-     1 km ; 30 km ↔ 10 kHz) ; le tableau p.352 descend jusqu'à 10 kHz (VLF). À trancher à l'adaptation
-     (proposition : s'aligner sur le tableau, en le signalant). 2. **Antenne GSM p.353** : « entre 2,5 cm et 2,5 mm » pour 3–30 GHz = λ/4 (λ = 10 cm → 1 cm), alors que le
-     paragraphe impose la demi-onde (5 cm → 5 mm). Préciser « quart d'onde » si repris. 3. **Réponses ex. 4 2°)** inversées (image : Fig-a FM, Fig-b AM) ; **ex. 5 3°–4°)** (1–10 mm, 30–300 GHz) =
-     ondes millimétriques, alors que les ondes courtes sont décamétriques 10–100 m, 3–30 MHz (tableau p.352) ;
-     **ex. 7 1°)** « grandes ondes » faux (87–108 MHz = ondes métriques, radio FM). Ne pas reprendre. Ex. 7 3°–4°),
-     ex. 8 3°) (0,24 s), ex. 10 4°) (2,99.10⁸/9 = 33,2 MHz, imprimé 33,3 MHz) cohérents ; QCM II : λ = 3,26 m et
-     T = 10,87 ns cohérents. 4. **p.350** : « T de l'ordre de 10⁻²⁸ s (rayons γ) » et « un milliard de milliards de gigahertz » (10²⁷ Hz)
-     : ordres de grandeur extrêmes, à ne pas reprendre comme valeurs de référence. 5. **p.354–355 et L'essentiel** : « La portée … augmente avec sa fréquence » — conclusion du manuel tirée
-     d'une expérience de labo ; formulation générale physiquement contestable (absorption, ionosphère) :
-     reprendre comme résultat de l'expérience décrite, sans généraliser. 6. Exercice résolu 3°) : « La lumière ne se propage pas dans les lignes » — raisonnement du manuel, approximatif.
+  - **Doute 1** — **Ondes hertziennes p.351** : « 300 kHz à 300 GHz » et « 1 mm et 30 km » sont incompatibles (300
+    kHz ↔ 1 km ; 30 km ↔ 10 kHz) ; le tableau p.352 descend jusqu'à 10 kHz (VLF). À trancher à l'adaptation
+    (proposition : s'aligner sur le tableau, en le signalant).
+  - **Doute 2** — **Antenne GSM p.353** : « entre 2,5 cm et 2,5 mm » pour 3–30 GHz = λ/4 (λ = 10 cm → 1 cm), alors
+    que le paragraphe impose la demi-onde (5 cm → 5 mm). Préciser « quart d'onde » si repris.
+  - **Doute 3** — **Réponses ex. 4 2°)** inversées (image : Fig-a FM, Fig-b AM) ; **ex. 5 3°–4°)** (1–10 mm,
+    30–300 GHz) = ondes millimétriques, alors que les ondes courtes sont décamétriques 10–100 m, 3–30 MHz (tableau
+    p.352) ; **ex. 7 1°)** « grandes ondes » faux (87–108 MHz = ondes métriques, radio FM). Ne pas reprendre. Ex. 7
+    3°–4°), ex. 8 3°) (0,24 s), ex. 10 4°) (2,99.10⁸/9 = 33,2 MHz, imprimé 33,3 MHz) cohérents ; QCM II : λ = 3,26 m
+    et T = 10,87 ns cohérents.
+  - **Doute 4** — **p.350** : « T de l'ordre de 10⁻²⁸ s (rayons γ) » et « un milliard de milliards de gigahertz »
+    (10²⁷ Hz) : ordres de grandeur extrêmes, à ne pas reprendre comme valeurs de référence.
+  - **Doute 5** — **p.354–355 et L'essentiel** : « La portée … augmente avec sa fréquence » — conclusion du manuel
+    tirée d'une expérience de labo ; formulation générale physiquement contestable (absorption, ionosphère) :
+    reprendre comme résultat de l'expérience décrite, sans généraliser.
+  - **Doute 6** — Exercice résolu 3°) : « La lumière ne se propage pas dans les lignes » — raisonnement du manuel,
+    approximatif.
+  - **Doute 7** — Sigles p.351 / tableau p.352 : la liste de la p.351 donne « VLF, LF, MF, HF, VHF, UHF, SHF et
+    EHF », mais le tableau de la p.352 écrit « BF : basses fréquences » pour la ligne kilométrique (30–300 kHz).
+    Incohérence interne ; à l'adaptation, retenir LF en signalant le « BF » du manuel.
 
 ## 2.13 Chapitre 13 — Modulation et démodulation des signaux (manuel 223471, p.364–391)
 
@@ -5383,7 +5477,8 @@ Solution : 1°) USm min positive → m < 1, correctement modulé. 2°) **m = (16
 ½mA, pic central A. 3°b) rapport central/latéral = 2/m ; longueurs 24 mm et 4 mm : 2/m = 24/4 [imprimé
 « 2/m = 4/24 » sic] → « n = 0,33 » [sic, m]. 3°c) Np = N' = 100 kHz ; γ = Np/(Np − N) = 11/9 (lu sur le
 spectre) → « N = (1 − 1/8) Np » [sic, lire (1 − 1/γ)·Np] ; « A.N. : Np = 18,2 kHz » [sic, lire **N = 18,2 kHz**].
-4°a) surmodulation → m augmente → Uo a diminué. 4°b) **m = (21 − (−4))/(21 + (−4)) = 1,47** ; « m = Um/Uo, d'où
+4°a) surmodulation → m augmente → Uo a diminué. 4°b) **m = (21 − (−4))/(21 + (−4)) = 1,47** [imprimé « 21 (− 4) » au numérateur, sans signe moins : sic, lire
+21 − (−4)] ; « m = Um/Uo, d'où
 m = Uo = Um/m » [sic, Uo = Um/m] → **Uo ≃ 0,90 V**.
 
 ### Tests rapides des acquis (p.382)
@@ -5517,11 +5612,11 @@ sciences-exp/03 ou ch.3 de ce manuel pour N₀ = 1/(2π√LC) (circuit d'accord,
 
 - **Pages lues en couche texte** : 364 à 391 (28 pages) et 397 (réponses).
 - **Pages lues sur l'image** (110 dpi) : 364, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 377, 379, 380, 381,
-  382, 383, 384, 387, 397 (20 pages). Non vues sur l'image : 365 (ouverture), 376, 378 (prose), 385 (texte de
-  l'ex. 12), 386 (fiche technique : Fig.1 structure interne non vue ; formules relues en texte et confirmées par la
-  p.387), 388–391 (« En savoir plus », formules lues en couche texte seulement : φ(t) = 2πk∫sm dt et s(t) FM y sont
-  dégradés — « (t) = 2k ∫ sm(t) dt », « 2kAm/ sin t » — reconstitués ici par cohérence, non vérifiés sur l'image ;
-  spectres « ci-contre » non vus).
+  382, 383, 384, 387, 397 (20 pages). Pages 376, 378, 385, 386 et 388–390, d'abord non vues, vérifiées sur l'image
+  par la relecture R-7 (lecteur E), conformes : Fig.1 de la fiche technique (structure interne X1, X2, Y1, Y2, Z,
+  W, ±VS) ; formules de l'« En savoir plus » exactes — φ(t) = 2πk∫₀ᵗ sm(t)dt, s(t) = Ao cos[Ωo t + (2πkAm/ω)
+  sin ωt], mf = (fmax − fmin)/2f, P = ((Vm.Um)²/2R)(1 + m²/2) ; spectres p.389 : bandes F − f et F + f, avec la raie
+  A en F pour l'AM avec porteuse. Non vues sur l'image : 365 (ouverture) et 391 (prose PSK), lisibles en texte.
 - **Écarts texte/image** : ≪/≫ rendus « % » / « & » (p.374–375) ; ≃ rendu « b » (p.377, 381) ; fractions
   Um/Uo éclatées (p.371, 379) ; exposants perdus : « 10 t » pour 10⁵t et « 20.10 t » pour 20.10⁴t (ex. 3 p.383),
   « 6.108t » (QCM VI) ; « β = (Npmax − No)/N » éclaté p.377 ; symboles − perdus p.379 (« 1  Um/Uo ») ; γ perdu
@@ -5535,19 +5630,30 @@ sciences-exp/03 ou ch.3 de ce manuel pour N₀ = 1/(2π√LC) (circuit d'accord,
   Hertz » ; p.386 « Npm » ; p.387 « 1 + k.Upm cos 2πNpt » ; p.391 numérotation II → V ; p.397 « sur modultion »,
   « Np = 164,2.10⁶ Hz », « c = 103 rad.s⁻¹ », ex. 8 « 3°) ».
 - **Doutes [?]** :
-  1. **Expression du signal FM (p.377, encadrée)** : us(t) = Upm cos[2πNpt + (kUm/2πN) cos 2πNt] ; avec
-     Np(t) = No + kUm cos 2πNt, la phase vaut 2πNo t + (kUm/N) sin 2πNt (cohérent avec β = kUm/N et avec la
-     formule de l'« En savoir plus » p.390). Formule du cours fautive (cos au lieu de sin, facteur 2π, Np au lieu de
-     No) : ne pas la reprendre telle quelle (et elle est « démontrée » sans démonstration). 2. **Ex. 5** : la réponse N = ΔN/2 = 38,25 kHz et « pics latéraux 2,94 V » ne sont pas lisibles sur la figure
-     (seules 90 kHz et 5 V sont gradués) ; m = 117,6 % = 2 × 2,94/5 cohérent entre eux. Ex. non exploitable sans
-     redessiner la figure. 3. **Ex. 8 2°)** : réponse « amplitude 0,6 V » ; avec k = 0,1 V⁻¹, Upm = 3 V, Uo = 4 V, Um = 2 V, on attend
-     A = kUpmUo = 1,2 V (USm max = 1,8 V, USm min = 0,6 V). 0,6 V = kUpmUm ou USm min : ambigu, à recalculer.
-     1°) Y1 = u + Uo : la réponse « amplitude 2 V » omet la composante continue 4 V. 4. **Ex. 9 1°)** : « 164,2.10⁶ Hz » → 164,2 kHz (grandes ondes, cohérent avec Tp = 6,09 μs donné en 2°a). 5. **Exercice résolu 3°c)** : N = 18,2 kHz (imprimé « Np = 18,2 kHz ») ; le rapport 11/9 est « lu » sur un
-     spectre sans graduation de fréquence. 6. **Trapèze p.370** : « m = (L − l)/(L + l) = BC/AD » — le second membre est faux. 7. **Interprétation p.374** : charge « à travers la résistance » — en réalité à travers la diode (R en parallèle). 8. **Avantage FM p.378** : « la majeure partie de l'énergie est portée par le signal modulant et non par la
-     porteuse » ; inconvénient « se propage directement » — formulations du manuel, approximatives. 9. **Ex. 7 4°)** : ordre « détecteur, passe-haut, passe-bas » dans la réponse ≠ ordre du cours (détecteur →
-     passe-bas R'C' → passe-haut R''C''). 10. Vérifiés cohérents : spectre Fig.9 (A = 2,4 V, ½mA = 0,75 V), applications m = 0,29 / 0,83 / 2, Uo = 13,33 V
-      (Fig.16, avec Um = 4 V), ex. résolu (m = 0,33, Um = 1,32 V, m = 1,47, Uo = 0,90 V), ex. 3, 9 (encadrement C),
-      10, 11.
+  - **Doute 1** — **Expression du signal FM (p.377, encadrée)** : us(t) = Upm cos[2πNpt + (kUm/2πN) cos 2πNt] ;
+    avec Np(t) = No + kUm cos 2πNt, la phase vaut 2πNo t + (kUm/N) sin 2πNt (cohérent avec β = kUm/N et avec la
+    formule de l'« En savoir plus » p.390). Formule du cours fautive (cos au lieu de sin, facteur 2π, Np au lieu de
+    No) : ne pas la reprendre telle quelle (et elle est « démontrée » sans démonstration).
+  - **Doute 2** — **Ex. 5** : la réponse N = ΔN/2 = 38,25 kHz et « pics latéraux 2,94 V » ne sont pas lisibles sur
+    la figure (seules 90 kHz et 5 V sont gradués) ; m = 117,6 % = 2 × 2,94/5 cohérent entre eux. Ex. non exploitable
+    sans redessiner la figure.
+  - **Doute 3** — **Ex. 8 2°)** : réponse « amplitude 0,6 V » ; avec k = 0,1 V⁻¹, Upm = 3 V, Uo = 4 V, Um = 2 V,
+    on attend A = kUpmUo = 1,2 V (USm max = 1,8 V, USm min = 0,6 V). 0,6 V = kUpmUm ou USm min : ambigu, à
+    recalculer. 1°) Y1 = u + Uo : la réponse « amplitude 2 V » omet la composante continue 4 V.
+  - **Doute 4** — **Ex. 9 1°)** : « 164,2.10⁶ Hz » → 164,2 kHz (grandes ondes, cohérent avec Tp = 6,09 μs donné en
+    2°a).
+  - **Doute 5** — **Exercice résolu 3°c)** : N = 18,2 kHz (imprimé « Np = 18,2 kHz ») ; le rapport 11/9 est « lu »
+    sur un spectre sans graduation de fréquence.
+  - **Doute 6** — **Trapèze p.370** : « m = (L − l)/(L + l) = BC/AD » — le second membre est faux.
+  - **Doute 7** — **Interprétation p.374** : charge « à travers la résistance » — en réalité à travers la diode (R
+    en parallèle).
+  - **Doute 8** — **Avantage FM p.378** : « la majeure partie de l'énergie est portée par le signal modulant et
+    non par la porteuse » ; inconvénient « se propage directement » — formulations du manuel, approximatives.
+  - **Doute 9** — **Ex. 7 4°)** : ordre « détecteur, passe-haut, passe-bas » dans la réponse ≠ ordre du cours
+    (détecteur → passe-bas R'C' → passe-haut R''C'').
+  - **Doute 10** — Vérifiés cohérents : spectre Fig.9 (A = 2,4 V, ½mA = 0,75 V), applications m = 0,29 / 0,83 / 2,
+    Uo = 13,33 V (Fig.16, avec Um = 4 V), ex. résolu (m = 0,33, Um = 1,32 V, m = 1,47, Uo = 0,90 V), ex. 3, 9
+    (encadrement C), 10, 11.
 
 ---
 
