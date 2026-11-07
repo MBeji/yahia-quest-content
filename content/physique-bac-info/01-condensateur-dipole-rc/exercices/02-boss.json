@@ -55,28 +55,28 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un condensateur de 220 µF, chargé sous 10 V, se décharge dans un résistor. Quelle énergie reste emmagasinée dans le condensateur à l'instant t = τ ?",
+      "prompt": "Un condensateur de 220 µF, chargé sous 10 V, se décharge dans un résistor de 1,0 kΩ. À quel instant l'énergie emmagasinée ne vaut-elle plus que le quart de sa valeur initiale ? (Log 2 ≈ 0,69)",
       "options": [
         {
           "id": "a",
-          "text": "1,5 mJ"
+          "text": "76 ms"
         },
         {
           "id": "b",
-          "text": "4,1 mJ"
+          "text": "152 ms"
         },
         {
           "id": "c",
-          "text": "9,5 mJ"
+          "text": "220 ms"
         },
         {
           "id": "d",
-          "text": "11 mJ"
+          "text": "305 ms"
         }
       ],
-      "correctOption": "a",
-      "explanation": "À t = τ, u_C = 10 × 0,37 ≈ 3,7 V, donc E_C = ½·C·u² = ½ × 220·10⁻⁶ × 3,7² ≈ 1,5·10⁻³ J = 1,5 mJ ✓. La valeur 4,1 mJ applique 37 % à l'énergie au lieu de l'appliquer à la tension ; 9,5 mJ est l'énergie déjà dissipée ; 11 mJ est l'énergie initiale ½ × 220·10⁻⁶ × 10².",
-      "difficulty": 2
+      "correctOption": "b",
+      "explanation": "τ = R·C = 1,0·10³ × 220·10⁻⁶ = 0,22 s. E_C = ½·C·u² est proportionnelle à u² : un quart de l'énergie correspond à u_C = E/2, soit e^(−t/τ) = 1/2, d'où t = τ·Log 2 ≈ 0,69 × 220 ≈ 152 ms ✓. La valeur 305 ms (τ·Log 4) divise la tension par 4 au lieu de l'énergie ; 220 ms prend τ, instant où il reste 37 % de la tension et seulement 14 % de l'énergie ; 76 ms compte deux fois le carré.",
+      "difficulty": 3
     },
     {
       "prompt": "Un condensateur initialement chargé sous 8,0 V se décharge dans un résistor de 6,0 kΩ ; la figure donne u_C(t). Quelle est la capacité du condensateur ?\n<svg viewBox=\"0 0 340 230\"><title>Courbe de décharge de u_C(t) pour un condensateur initialement chargé sous 8,0 V</title><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"106.8\" y1=\"22\" x2=\"106.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"161.6\" y1=\"22\" x2=\"161.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"216.4\" y1=\"22\" x2=\"216.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"271.2\" y1=\"22\" x2=\"271.2\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326\" y1=\"22\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"148\" x2=\"326\" y2=\"148\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"106\" x2=\"326\" y2=\"106\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"64\" x2=\"326\" y2=\"64\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"22\" x2=\"326\" y2=\"22\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52\" y1=\"196\" x2=\"52\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"52,12 48,20 56,20\" fill=\"#0f172a\"/><line x1=\"52\" y1=\"187\" x2=\"52\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"52\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"106.8\" y1=\"187\" x2=\"106.8\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"106.8\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><line x1=\"161.6\" y1=\"187\" x2=\"161.6\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"161.6\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><line x1=\"216.4\" y1=\"187\" x2=\"216.4\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"216.4\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">90</text><line x1=\"271.2\" y1=\"187\" x2=\"271.2\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"271.2\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">120</text><line x1=\"326\" y1=\"187\" x2=\"326\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"326\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">150</text><line x1=\"49\" y1=\"148\" x2=\"55\" y2=\"148\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"152\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"49\" y1=\"106\" x2=\"55\" y2=\"106\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"110\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"49\" y1=\"64\" x2=\"55\" y2=\"64\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"68\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"49\" y1=\"22\" x2=\"55\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"26\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><text x=\"322\" y=\"224\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"60\" y=\"14\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_C (V)</text><polyline points=\"52,22 54.3,28.9 56.6,35.4 58.9,41.7 61.1,47.8 63.4,53.6 65.7,59.2 68,64.5 70.3,69.6 72.5,74.5 74.8,79.2 77.1,83.8 79.4,88.1 81.7,92.3 84,96.3 86.2,100.1 88.5,103.7 90.8,107.3 93.1,110.6 95.4,113.9 97.7,117 100,120 102.2,122.8 104.5,125.6 106.8,128.2 109.1,130.7 111.4,133.1 113.7,135.5 115.9,137.7 118.2,139.8 120.5,141.9 122.8,143.8 125.1,145.7 127.3,147.5 129.6,149.3 131.9,150.9 134.2,152.5 136.5,154 138.8,155.5 141.1,156.9 143.3,158.3 145.6,159.6 147.9,160.8 150.2,162 152.5,163.1 154.8,164.2 157,165.3 159.3,166.3 161.6,167.3 163.9,168.2 166.2,169.1 168.4,169.9 170.7,170.8 173,171.5 175.3,172.3 177.6,173 179.9,173.7 182.2,174.4 184.4,175 186.7,175.6 189,176.2 191.3,176.8 193.6,177.3 195.8,177.8 198.1,178.3 200.4,178.8 202.7,179.3 205,179.7 207.3,180.1 209.6,180.5 211.8,180.9 214.1,181.3 216.4,181.6 218.7,182 221,182.3 223.2,182.6 225.5,182.9 227.8,183.2 230.1,183.5 232.4,183.8 234.7,184 236.9,184.3 239.2,184.5 241.5,184.7 243.8,184.9 246.1,185.1 248.4,185.3 250.7,185.5 252.9,185.7 255.2,185.9 257.5,186 259.8,186.2 262.1,186.4 264.4,186.5 266.6,186.7 268.9,186.8 271.2,186.9 273.5,187 275.8,187.2 278.1,187.3 280.3,187.4 282.6,187.5 284.9,187.6 287.2,187.7 289.5,187.8 291.8,187.9 294,188 296.3,188.1 298.6,188.1 300.9,188.2 303.2,188.3 305.4,188.4 307.7,188.4 310,188.5 312.3,188.5 314.6,188.6 316.9,188.7 319.1,188.7 321.4,188.8 323.7,188.8 326,188.9\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
@@ -103,27 +103,27 @@
       "difficulty": 3
     },
     {
-      "prompt": "Un dipôle RC est alimenté par E = 12 V, avec une constante de temps τ = 30 ms. Condensateur neutre à t = 0, à quelle vitesse la tension u_C croît-elle juste après la fermeture ?",
+      "prompt": "Un dipôle RC est alimenté par E = 9,0 V, avec une constante de temps τ = 30 ms. Condensateur neutre à t = 0, à quelle vitesse la tension u_C croît-elle juste après la fermeture ?",
       "options": [
         {
           "id": "a",
-          "text": "2,5·10⁻³ V·s⁻¹"
+          "text": "3,3·10⁻³ V·s⁻¹"
         },
         {
           "id": "b",
-          "text": "0,36 V·s⁻¹"
+          "text": "0,27 V·s⁻¹"
         },
         {
           "id": "c",
-          "text": "0,40 V·s⁻¹"
+          "text": "0,30 V·s⁻¹"
         },
         {
           "id": "d",
-          "text": "4,0·10² V·s⁻¹"
+          "text": "3,0·10² V·s⁻¹"
         }
       ],
       "correctOption": "d",
-      "explanation": "À t = 0, u_C = 0 et l'équation u_C + τ·du_C/dt = E donne du_C/dt = E/τ = 12 V / 0,030 s = 4,0·10² V·s⁻¹ ✓ (c'est la pente de la tangente à l'origine). La valeur 0,40 V·s⁻¹ oublie de convertir les ms en s ; 0,36 vient du produit E·τ ; 2,5·10⁻³ est le rapport inversé τ/E.",
+      "explanation": "À t = 0, u_C = 0 et l'équation u_C + τ·du_C/dt = E donne du_C/dt = E/τ = 9,0 V / 0,030 s = 3,0·10² V·s⁻¹ ✓ (c'est la pente de la tangente à l'origine). La valeur 0,30 V·s⁻¹ oublie de convertir les ms en s ; 0,27 vient du produit E·τ ; 3,3·10⁻³ est le rapport inversé τ/E.",
       "difficulty": 3
     },
     {
