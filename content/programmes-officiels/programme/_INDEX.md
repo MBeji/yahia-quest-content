@@ -134,6 +134,12 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | ✅ validée R-7 | **mathematiques** | generation | `222472` 100 % | 2026-11-05 (sondage, CONFORME sur les 13 chapitres (R-7 independant, 4 auditeurs opus en contexte vierge, contre le PDF : 100 % des encadres sur image, 100 % du chapitrage, sondage 14 a 34 pages par chapitre ; 0 BLOCKER, 1 MAJOR (ch.4 : decomposition en elements simples classee a tort hors manuel), ~35 MINOR ; corrections appliquees par les lecteurs puis reverifiees point par point par le meme auditeur), 36 corr.) | 2026-11-05 (claude/math-bac-info) | Lecture du 2026-11-05 depuis le Drive cnp-officiel (procedure campagne, etape 3) : couche texte L1 (pdftotext -layout page par page) puis sondage image a 100 % (toutes les pages p.1-302 lues en PNG 110 dpi, zooms 200-250 dpi ; p.303-304 blanches) ; toutes les formules, encadres et tableaux viennent de l'image. Fiche differentielle : le contenu genere adaptera les chapitres de math-bac-math, math-bac-techniques et math-bac-sciences-exp (demande de Mohamed du 2026-11-05) ; ch.11 (systemes d'equations lineaires) sans reference, a ecrire de zero. Aucun guide enseignant au corpus. |
 
+## bac-lettres
+
+| statut | matière | profondeur | sources (couverture calculée) | R-7 | maj | notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 🚧 partielle — ⛔ génération interdite | **philosophie** | first-pass | `210422` 2 % (manque p.1–320) · `210423` 2 % (manque p.1–392) | — | 2026-11-07 (claude/campagne-wqgvi1) | A1 (2026-11-07) : sujet philosophie-bac-lettres, chapitrage codifié (8 محاور, un par chapitre) relevé sur les deux فهارس lus à l'image. Corps des deux manuels non lu : polices AXt* à encodage propriétaire (couche texte brouillée), lecture à l'image ou table glyphe→lettre à bâtir. |
+
 ## bac-math
 
 | statut | matière | profondeur | sources (couverture calculée) | R-7 | maj | notes |
@@ -173,7 +179,7 @@
 - **1ere-sec** : **arabe** (`201104`) · **islamique-civique** (`211105`, `211107`) · **maths** (`222105`)
 - **2eme-sec** : **arabe** (`201281`) · **chimie** (`224231`, `224271`) · **eco-gestion** (`229262`) · **geographie** (`206203`, `206271`) · **histoire** (`207202`, `207271`) · **islamique-civique** (`211203`, `211204`) · **maths** (`222221`, `222261`, `222281`) · **sciences-physiques** (`223231`, `223272`) · **svt** (`225202`, `225232`, `225281`)
 - **3eme-sec** : **arabe** (`201302`, `201321`, `201381`) · **chimie** (`224332`, `224333`, `224351`, `224371`) · **eco-gestion** (`229364`) · **francais** (`221302`, `221321`) · **geographie** (`206321`, `206331`) · **histoire** (`207321`, `207331`) · **islamique-civique** (`211306`, `211321`, `211322`) · **maths** (`222322`, `222333`, `222334`, `222343`, `222344`, `222351`, `222362`, `222371`, `222381`) · **philosophie** (`210301`, `210322`) · **sciences-physiques** (`223332`, `223333`, `223351`, `223371`) · **svt** (`225321`, `225333`, `225342`, `225381`)
-- **bac** : **arabe** (`201403`, `201421`, `201422`, `201481`) · **chimie** (`224432`, `224433`, `224451`, `224471`) · **eco-gestion** (`229464`) · **francais** (`221421`) · **geographie** (`206422`) · **histoire** (`207422`) · **islamique-civique** (`211421`) · **maths** (`222422`, `222463`, `222481`) · **philosophie** (`210422`, `210423`) · **sciences-physiques** (`223432`, `223451`, `223471`) · **svt** (`225421`, `225432`, `225441`, `225481`)
+- **bac** : **arabe** (`201403`, `201421`, `201422`, `201481`) · **chimie** (`224432`, `224433`, `224451`, `224471`) · **eco-gestion** (`229464`) · **francais** (`221421`) · **geographie** (`206422`) · **histoire** (`207422`) · **islamique-civique** (`211421`) · **maths** (`222422`, `222463`, `222481`) · **sciences-physiques** (`223432`, `223451`, `223471`) · **svt** (`225421`, `225432`, `225441`, `225481`)
 
 ## Corpus hors transcription (classé, exhaustif)
 
@@ -183,4 +189,4 @@
 - **enrichissement** : 10 PDF
   - décisions en attente (`differee`) : `128703`, `128803`, `128903`, `228103`, `228233`, `228362`, `228363`, `228461`, `228462`
 
-**Totaux (calculés)** : 63 fiches suivies (36 partielle · 13 complete · 14 validee-r7) · 346 PDF au corpus · 127 œuvres principales restant à rattacher.
+**Totaux (calculés)** : 64 fiches suivies (37 partielle · 13 complete · 14 validee-r7) · 346 PDF au corpus · 125 œuvres principales restant à rattacher.
