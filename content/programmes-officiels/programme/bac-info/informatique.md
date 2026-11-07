@@ -31,10 +31,11 @@ objectifs, plan, activités préliminaires, étude de la notion (syntaxe algorit
 applications résolues, série d'exercices, partie « Lecture » (culture informatique).
 
 **Légende des pictogrammes (p.5, vérifiée sur l'image)** : remarque importante (panneau stop) ; idée
-(bougie) ; solution d'une application/activité (clé) ; série d'exercices non corrigés ; lecture ;
+(bougie, = « Une idée ») ; solution d'une application/activité (clé) ; série d'exercices non corrigés ; lecture ;
 points à retenir ; **quatre silhouettes de difficulté : simple, moyen, assez élevé, élevé**.
-`[?]` Le rattachement de ces silhouettes à chaque activité/exercice n'a PAS été relevé de façon fiable
-par les lecteurs (certains chapitres n'en notent aucun) : ne pas s'en servir pour calibrer la difficulté.
+Rattachement aux exercices : **fiable et vérifié sur l'image pour les ch.1 à 3** (p.68-71, 90-92, 119-121) ;
+`[?]` **non relevé pour les ch.4 à 7** (les lecteurs y notent des icônes sans leur niveau) : ne pas calibrer la
+difficulté de ces chapitres sur les silhouettes.
 
 ## 2. Plan annuel (sommaire p.5-6)
 
@@ -56,11 +57,15 @@ par les lecteurs (certains chapitres n'en notent aucun) : ne pas s'en servir pou
   `Rechercher_Rang` ne compare rien, `Tri_Sel_Rec` non défini pour n = 1 ; ch.6 `Epsilon = 10E-4` vaut 10⁻³
   (le tableau annonce 10⁻⁴), « point gauche » du Retenons contre point milieu codé, formule de Wallis
   écrite avec des « + », série du sinus de l'exercice Bac 2001 sans signes alternés ; ch.7 **l'algorithme du
-  tri rapide p.220 est faux** (tester le principe et la trace p.215-217, jamais ce code) et le voyageur de
+  tri rapide p.220 est faux** (tester le principe et la première partition p.215-216, jamais ce code ni la suite de la trace p.217) et le voyageur de
   commerce compare depuis le rang de l'étape au lieu de la ville courante.
-- **Absents du manuel** (⛔ à ne pas introduire) : dichotomie/balayage/Newton (le ch.6 est le point fixe, π, e,
-  aires), nombres premiers, crible, PPCM, PGCD d'Euclide (le PGCD est la seule méthode par différences),
-  Pascal du tri par sélection et par bulles (seuls les algorithmes formels).
+- **Absents du manuel** (⛔ à ne pas introduire) : balayage et méthode de Newton (le ch.6 est le point fixe, π, e,
+  aires), crible, PGCD d'Euclide (le PGCD est la seule méthode par différences). **Présents seulement en partie** :
+  la dichotomie est une méthode de *recherche* (ch.2 App.4 p.86-88, ch.3 p.98), jamais une méthode d'approximation ;
+  le PPCM et la décomposition en facteurs premiers ne sont que des exercices non corrigés (ch.2 Ex.9-10 p.92) ;
+  tri par sélection et à bulles : pas de Pascal itératif dans le cours (Pascal *récursif* de la sélection au ch.2
+  p.85 ; algorithmes `pos_min` et `TRI_Bulles` dans les Ex.1-2 p.119). « Calcul de PGCD et PPCM » n'est cité qu'au préambule
+  p.152 du ch.5, sans algorithme du PPCM.
 - Plusieurs exercices sont des sujets de baccalauréat pratique/théorique (Bac TP 2001, 2004, 2005 ; Bac 1992,
   1995) : repris fidèlement ou adaptés, avec la source citée.
 
@@ -107,12 +112,12 @@ Source : manuel élève CNP « Algorithmique et programmation », 4ème année s
 
 #### Pictogrammes (lecture image)
 
-Aucune légende des pictogrammes dans le périmètre lu (elle est vraisemblablement dans les pages liminaires, non lues) ⇒ la gradation ci-dessous est **inférée** `[?]` :
+Légende p.5 (vérifiée sur l'image) : **P1 = simple, P2 = moyen, P3 = assez élevé, P4 = élevé**. Rattachement relevé sur les pages 68-71 :
 - **P1** personnage « rayonnant » (traits autour de la tête) : activités d'introduction/application directe ; exercices 1, 2, 3, 7, 8.
 - **P2** personnage pensif, main au menton, « ? » : B-Activité 15, Applications 1-2-3 ; exercices 4, 5, 9, 10, 11.
 - **P3** personnage qui se gratte la tête, « ? » et notes : A-Activités 8 et 11, B-Activité 16 ; exercices 6, 12, 13.
 - **P4** personnage qui s'arrache les cheveux : exercice 14 (seul).
-- Autres pictos : panneau **STOP** = remarque à retenir ; **bougie** = complément (p.47 IOResult, p.55 FileSize pour ajout) ; **quatre personnages portant une clé** = début de la solution.
+- Autres pictos : panneau **STOP** = remarque à retenir ; **bougie** = « Une idée » (légende p.5 ; p.47 IOResult, p.55 FileSize pour ajout) ; **quatre personnages portant une clé** = solution d'une application ou d'une activité / réponse aux questions (légende p.5).
 
 #### Activités, applications, exercices résolus
 
@@ -371,6 +376,7 @@ Le chapitre porte 12 notions testables ; il est trop large pour un chapitre de l
   Ailleurs, les ≤/≥ de la couche texte (p.24, 49, 58) sont corrects.
 - **Coquilles / erreurs du manuel `[sic]`** (à ne pas reproduire ; à corriger dans le contenu généré) :
   - p.12 « varaiable » ; p.14 le tableau des objets est titré « Tableau de déclaration des nouveaux types » ; p.15 « à condition qu'ils aient » ; p.32 « écris » ; p.36 « accèdons », « que l'on choisissons » ; p.40 « crées », p.42 « déjà crée » ; p.41 « en vu d' » ; p.66 « Un fichier est ensemble de données » ; p.68 « V (Vrai) ou (Faux) », « ont étés effacées » ; p.70 « peut importe » ; p.71 « fichier a accès direct », « saisit ».
+  - p.59-60 (B-Act.18) : l'algorithme déclare `Ftexte`, le Pascal `VAR Ftext : text` [sic].
   - Numérotation d'algorithmes : p.25 « 3) Fin Gestion » après 5) ; p.29 « 2) Fin Result » après 3) ; p.49 « 2) Fin Saisie » après 2).
   - p.29 guillemets mal appariés dans Ecrire ("Le nombre d'occurrences de ', G, …) ; p.31 « occurrencse » ; p.30 « Entrer le son code fiscal ».
   - p.38 type nommé `notes_élève` puis utilisé `notes_élèves`/`note_élèves` ; Pascal `notes : notes_eleves` sans « ; ».
@@ -381,15 +387,13 @@ Le chapitre porte 12 notions testables ; il est trop large pour un chapitre de l
   - p.62–65 fichiers texte : l'algorithme Affichage_Texte lit `ligne`, le Pascal lit `phrase` (non déclarée dans cette procédure : `phrase` est locale à Ecriture_Texte) ; Pascal Ecriture_Texte `ReadLn (ligne)` puis `WriteLn (Lignes, phrase)` ; p.63 « Affiche_Texte » pour Affichage_Texte ; le principal fait `Ouvrir (Lignes)` alors qu'Affichage_Texte rouvre déjà.
   - p.56 vs p.67 : `Rename (nom_logique, nouveau_nom_physique)` vs `Rename (nom_logique, nouveau_nom)` (même instruction, libellé différent).
   - p.69 Ex.3 : le programme à trous affiche `M.ordi` alors que le champ est `ordo`, et écrit `: =` avec espace (à traiter comme coquille, ou piège involontaire `[?]`).
-- **Doutes `[?]`** : signification exacte des pictogrammes P1–P4 (pas de légende dans le périmètre) ; rôle du pictogramme « bougie » (complément / « pour en savoir plus » supposé).
+- **Doutes `[?]`** : aucun sur les pictogrammes (légende p.5 lue et rattachement vérifié par la relecture R-7).
 
 ## Fiche de lecture ch.1
 
 - **pagesLues** : 7–72 (66 pages, couche texte L1 intégrale)
 - **Pages sondées (image)** : 7, 10, 13, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 37, 40, 41, 42, 45, 46, 47, 51, 54, 55, 56, 58, 60, 61, 62, 63, 66, 67, 68, 69, 70, 71 (40 pages)
 - **Nombre d'écarts texte ↔ image** : 2 (p.23 glyphe ≤ perdu ; p.34–36 information portée par les schémas seuls) — sections correspondantes (A.III.5, B.III) sondées en entier, sans autre écart.
-# Fiche de transcription — Bac Sciences de l'informatique / Algorithmique et programmation — chapitres 2 et 3
-
 Source unique : manuel élève CNP « Algorithmique et programmation », 4ème année secondaire, Sciences de l'informatique (248 p.). PDF = page imprimée (décalage 0). Aucun guide enseignant.
 Conventions : `[sic]` coquille de la source ; `[?]` illisible / doute ; « … » = verbatim. Notation algorithmique du manuel conservée (`←`, `Long`, `Sous_chaîne`, `Div`, `FN`, `Proc`).
 
@@ -529,6 +533,7 @@ Remarque : « L'itération et la récursivité, correspondent à deux modes de p
     Else Puissance := a * Puissance (a, n - 1);
   End;
   ```
+- *[sic] p.84 : l'analyse écrit une troisième signature `Permuter (deb, maximum, T)`, en plus de l'algorithme `(T, deb, maximum)` et du Pascal `(T[deb], T[Maximum])`.*
 - **Application 3 — Tri par sélection récursif, ordre décroissant (p.83–85).** Programme `Selection` : `Saisir`, `Remplir`, `Tri_Sel_Rec (1, n, T)`, `Afficher_T` ; type `Tab = Tableau de n entiers`. Chaque appel : recherche de l'indice du maximum (`FN Max`), permutation si ≠ deb, puis appel sur `deb+1` si `deb+1 ≠ fin`. NB : Max et Permuter « ont été l'objet d'un apprentissage au niveau de la 3ème année ».
   ```
   0) Procedure Tri_Sel_Rec (deb, fin : Entier ; Var T : Tab)
@@ -592,9 +597,9 @@ Remarque : « L'itération et la récursivité, correspondent à deux modes de p
 « – Tout objet est dit **récursif** s'il se définit à partir de lui-même. Ainsi, un sous-programme est dit **récursif** s'il comporte, dans son corps, au moins un appel à lui-même.
 – La réalisation d'un module récursif revient toujours à une analyse par cas, dans laquelle nous distinguons les **cas généraux** des **cas particuliers**. »
 
-#### Exercices non corrigés (p.90–92) — aucun pictogramme de difficulté dans le manuel (seule icône : personnage « question »)
+#### Exercices non corrigés (p.90–92) — difficulté (silhouettes de la légende p.5, vérifiées R-7) : Ex.1-3 simple ; Ex.4-7 moyen ; Ex.8-10 assez élevé
 1. **Ex.1 (p.90)** — Vrai/Faux à cases : (a) une procédure est obligatoirement / n'est jamais / peut être récursive ; (b) un module récursif utilise obligatoirement une structure conditionnelle / itérative à condition d'arrêt / itérative complète ; (c) pour la récursivité l'ordinateur utilise une pile / un fichier / un tableau ; (d) quels dessins sont réalisables par un module récursif — 3 figures (image seulement) : carrés emboîtés partageant un coin, arbre à branches ramifiées, cercles concentriques.
-2. **Ex.2 (p.90)** — « Que fait la fonction » `inconnue (st : chaîne)` : `Si st = "" Alors inconnue ← "" Sinon inconnue ← st[Long (st)] + FN inconnue (Sous_chaîne (st, 1, Long (st) - 1))` (inversion de chaîne).
+2. **Ex.2 (p.90)** — « Que fait la fonction » `inconnue (st : chaîne)` : `Si st = "" Alors inconnue ← "" Sinon inconnue ← st[Long (st)] + FN inconnue (Sous_chaîne (st, 1, Long (st) - 1))` (inversion de chaîne — déduction du transcripteur, exercice non corrigé).
 3. **Ex.3 (p.91)** — Trouver l'erreur dans deux fonctions Pascal : (a) `Pair` (`N=0 → True`, `N=1 → False`, sinon `Pair (N - 1)`) ; (b) `Impair` contenant une `Pair` locale, appels mutuels (`Pair := Impair (N - 1)`, `Impair` : `N = 1 → True`, sinon `Pair (N - 1)`).
 4. **Ex.4 (p.91)** — Analyse + algorithme d'une fonction récursive `Pair_C` : un mot contient-il un nombre pair d'occurrences d'un caractère C ?
 5. **Ex.5 (p.91)** — Fonction récursive : valeur la plus proche d'un entier M dans un tableau T de N entiers.
@@ -616,7 +621,7 @@ récursivité ; sous-programme / module récursif ; traitement récursif vs proc
 5. Pile : mémorisation d'une valeur du paramètre à chaque appel ; débordement ; avantage (lisibilité) vs limite (mémoire).
 6. Récursivité sur les chaînes : palindrome (2 conditions d'arrêt), inversion, `Copy (ch, 2, Length (ch) - 2)`.
 7. Récursivité sur les tableaux : tri par sélection récursif (Max + Permuter + appel sur deb+1), recherche dichotomique récursive (milieu, 4 cas).
-8. Itératif ↔ récursif (dérécursification), traduction Pascal (`Factorielle := m * Factorielle (m - 1)`), détection d'une erreur (cas d'arrêt manquant pour N négatif, récursivité croisée mal arrêtée — Ex.3).
+8. Itératif ↔ récursif (dérécursification), traduction Pascal (`Factorielle := m * Factorielle (m - 1)`), détection d'une erreur dans une fonction récursive (Ex.3, **non corrigé par le manuel** ; remarque du transcripteur, à valider avant tout corrigé : a) relation de récurrence erronée `Pair := Pair (N - 1)`, fausse dès N = 2 ; b) récursivité croisée qui ne s'arrête pas pour N pair).
 
 #### Bornes
 - ✅ INCLUS : fonctions et procédures récursives simples sur entiers, réels, chaînes et tableaux à une dimension ; récursivité directe, notion de récursivité indirecte/croisée ; condition d'arrêt, pile ; tri par sélection récursif ; recherche dichotomique et séquentielle récursives ; PPCM, facteurs premiers, inversion de chaîne (exercices) ; traduction en Pascal (Turbo Pascal : `Uses Crt`, `Word`, `LongInt`).
@@ -727,6 +732,7 @@ End;
 - **Application (p.102)** : proposer une solution récursive du tri par insertion.
 
 #### III. Tri Shell (p.103–107, section entièrement sondée en image)
+[sic] ch.3 : le programme principal appelle `Proc Trier (T, n)` (p.100, p.105) alors que l'en-tête est `Trier (n : entier; VAR T : Tab)` (p.101, p.106).
 III.1 (verbatim, extrait) : « […] en moyenne, il s'agit d'un algorithme d'ordre n² puisqu'il comporte deux boucles imbriquées d'ordre n chacune. Il est toutefois évident que si le vecteur est initialement presque trié dans le bon ordre, le nombre d'opérations sera beaucoup plus réduit. Si la méthode de tri par insertion est efficace quand la liste est à peu près triée, elle est inefficace en moyenne car elle ne change les valeurs que d'une position par instruction. »
 III.2 Principe (verbatim) : « Donald L. Shell proposa, en 1959, une variante du tri par insertion. Ce tri consiste à trier séparément des sous-tableaux du tableau initial objet du tri, formés par les éléments répartis de p éléments. »
 Encadré N.B. (verbatim) : « Le tri Shell est une amélioration du tri par insertion. Au lieu de faire une rotation de tous les éléments, nous ferons une rotation par pas de p ce qui permet d'affiner le tri du tableau et de faire moins de déplacements d'éléments. Nous commençons donc par un pas assez élevé et nous le diminuons au fur et à mesure jusqu'à arriver à un pas de 1. Ceci permet d'éliminer les plus grands désordres pour abréger le travail aux étapes suivantes. Le pas est diminué à l'aide d'une suite, mais il faut construire cette suite de manière à ce que les valeurs ne soient pas multiples entre elles sinon nous allons traiter des éléments et pas d'autres. »
@@ -840,7 +846,7 @@ Remarque (verbatim) : « Nous constatons que la méthode de tri par fusion néce
 - **D'autres méthodes de tri** existent telles que le tri par comptage, tri par création, tri radix, tri rapide, tri par permutation, etc. »
 Citation : « L'ordre conduit à toutes les vertus mais qu'est-ce qui conduit à l'ordre » — Georg Christoph Lichtenberg.
 
-#### Exercices non corrigés (p.119–121) — aucun pictogramme de difficulté ; Ex.1–4 étiquetés « (Bac TP 2005) »
+#### Exercices non corrigés (p.119–121) — difficulté : Ex.1-6 moyen (silhouettes, légende p.5) ; Ex.1–4 étiquetés « (Bac TP 2005) »
 1. **Ex.1 (Bac TP 2005, p.119)** — Donnée : algorithme de `pos_min (A : tab ; p, k : entier) : entier` (position du plus petit élément de A à partir de p). Demande : programme Pascal saisissant T de n réels, tri croissant par sélection en utilisant `pos_min`, affichage.
 2. **Ex.2 (Bac TP 2005, p.119–120)** — Donnée : `TRI_Bulles (Var T : Tab; n : entier)` : `Pour i de 1 à n-1`, `Pour j de 1 à n-i`, `Si (T[j] < T[j+1]) Alors Proc Permut (T[j], T[j+1])`. Demandes : (1) programme Pascal `Tri` saisissant p entiers dans V et appelant TRI_Bulles ; (2) en commentaire, ordre du tri (croissant/décroissant) ; (3) modifier TRI_Bulles pour éviter les parcours inutiles si V est déjà trié (aucune permutation).
 3. **Ex.3 (Bac TP 2005, p.120)** — Programme `Tri` : trier T de N entiers distincts (5 < N < 20) en comptant pour chaque élément le nombre d'éléments inférieurs → position dans un tableau résultat R. Exemple : T = [6, 2, 0, 5, 12, 25, 13, 8, 14, 3] ; 4 valeurs inférieures à 6 → position 5 de R. Distinction non vérifiée par le candidat.
@@ -855,7 +861,7 @@ tri ; ordre croissant / décroissant / alphabétique ; ordre total ; tris intern
 #### Notions testables — 8 (découpage proposé en 2 sous-chapitres si besoin : « insertion & Shell » / « fusion, classement & autres tris »)
 1. Définition du tri ; tris internes (mémoire centrale, tableaux) vs externes (fichiers, grandes masses).
 2. Tri par sélection (rappel 3ème) : principe (placer le minimum de T[i..N] en i, N-1 étapes), trace ; `pos_min`.
-3. Tri à bulles (rappel) : comparaisons adjacentes, plus grand en fin après un passage, au pire n passages, ordre selon le test (Ex.2 : `T[j] < T[j+1]` → décroissant), arrêt sans permutation.
+3. Tri à bulles (rappel) : comparaisons adjacentes, plus grand en fin après un passage, au pire n passages, ordre selon le test (Ex.2 : `T[j] < T[j+1]` → décroissant — déduction du transcripteur, exercice non corrigé), arrêt sans permutation.
 4. Tri par insertion : principe, rôle de Tmp, décalage à droite, `T[p+1] ← Tmp`, trace sur le tableau à 7 éléments, n-1 étapes pour n éléments [à confirmer : le manuel pose la question sans répondre], variante dichotomique, efficace sur liste presque triée, ordre n² en moyenne.
 5. Tri Shell : variante améliorée de l'insertion (Shell, 1959) ; suite `p ← 3*p + 1` jusqu'à `p ≥ n`, puis `p ← p Div 3` ; pas 13, 4, 1 pour n = 15 ; trace par sous-vecteurs ; dernier passage = insertion simple.
 6. Fusion / interclassement de deux tableaux triés : taille L1+L2, trace, copie du reste, tableau intermédiaire (inconvénient mémoire), « diviser pour régner ».
@@ -881,9 +887,6 @@ tri ; ordre croissant / décroissant / alphabétique ; ordre total ; tris intern
 - **pagesLues** : 73–122 (50 pages, couche texte L1 `pdftotext -layout`, une fois chacune).
 - **Pages sondées (image, pdftoppm)** : 74, 75, 76, 77, 78, 79, 80, 89, 90, 99, 103, 104, 105, 106, 107, 116, 118, 122 — 18 pages (36 %), dont deux sections sondées entièrement après écart (ch.2 §I p.74–80 ; ch.3 §III p.103–107).
 - **Nombre d'écarts texte↔image : 5** (p.75 partie colorée des formules ; p.80 vignettes du cube fractal ; p.90 dessins de l'Ex.1 d ; p.103 indices/exposants aplatis ; p.104/106 indices de la suite des pas + surlignage des cases modifiées). Aucun écart portant sur une valeur, un mot ou une ligne de code.
-- Chemin réel du PDF : `/root/.cache/yqa-manuels/4sci_AP.pdf` (le chemin `/home/user/.cache/…` indiqué n'existe pas). PDF non copié dans git.
-# Fiche de transcription — Bac Sciences de l'informatique / Algorithmique et programmation — ch.4-5
-
 Source unique : manuel élève CNP « Algorithmique et programmation », 4ème année secondaire, Sciences de
 l'informatique (248 p.). Décalage PDF ↔ page imprimée : 0. Aucun guide enseignant.
 Méthode : couche texte L1 (`pdftotext -layout`) page par page, puis sondage image (110 dpi). Des écarts
@@ -893,8 +896,7 @@ sont vérifiés sur l'image.
 
 Conventions : `←` affectation (notation du manuel) ; `[sic]` = coquille/incohérence du manuel conservée ;
 `[?]` = doute ; « Remarque du transcripteur » = observation hors texte, à ne pas reprendre comme contenu
-officiel. Pictogrammes : le manuel n'affiche **aucune échelle de difficulté** (pas d'étoiles, pas de
-légende) dans ce périmètre ; il place une petite icône devant chaque énoncé. Trois icônes distinctes
+officiel. Pictogrammes : le manuel n'affiche ni étoiles ni code couleur ; sa légende p.5 définit quatre silhouettes de difficulté (rattachement non relevé ici `[?]`) ; il place une petite icône devant chaque énoncé. Trois icônes distinctes
 reviennent, notées ici : **[P?]** personnage tête dans la main + « ? » ; **[P♪]** personnage avec « ? » et
 notes de musique ; **[PR]** personnage « à rayons » (traits autour de la tête). Le rapport icône ↔
 difficulté n'est pas établi par le manuel : ne pas en déduire un niveau.
@@ -1300,11 +1302,13 @@ calcul de PGCD et PPCM (simple liste — seul le PGCD est traité ici).
 
 **Arrangements (Activité 1, p.155)**
 > Un arrangement de p éléments d'un ensemble E à n éléments est un p-uplet d'éléments distincts de E.
+> Le nombre d'arrangements de p éléments de l'ensemble E est représenté par la notation suivante :
 > A^p_n = n(n-1)(n-2)…(n-p+1)   Ou encore   A^p_n = n! / (n-p)!
 > n et p sont des entiers qui vérifient la condition suivante : 1 ≤ p ≤ n
 
 **Combinaisons (Activité 2, p.157)**
 > Une combinaison de p éléments d'un ensemble E de n éléments est une partie de E formée par p éléments.
+> […] est représenté par la notation suivante (p.157) :
 > C^p_n = A^p_n / p! = n! / (p!(n-p)!)
 > n et p sont des entiers qui vérifient la condition suivante : 0 ≤ p ≤ n
 
@@ -1712,7 +1716,7 @@ Pascal : Val, Str, Length, Delete implicite, Copy, Upcase, Ord, Chr) ; Mod, Div.
   factorielles, par Arrange, récursif (Pascal) ; permutations p! (tableau de présentation) ; définitions de
   divisibilité ; règles par 2, 3, 4, 5, 9, 10, 25 (cours), 7, 11, 6 (exercices + lecture) ; saisie d'un entier
   comme chaîne ; numération bases 2, 8, 10, 12 (cité), 16 ; conversions déc→bin, hex→bin, oct→déc, bin→oct,
-  B1→B2 (cours), oct→bin, bin→hex, déc→bin, division de binaires (exercices) ; binôme de Newton et somme
+  B1→B2 (cours), oct→bin, bin→hex, déc→bin, division de binaires (exercices) ; formule du binôme (p.183) et somme
   alternée des C(n,k) (exercices) ; dénombrement d'anagrammes (exercice) ; recherche des diviseurs d'un
   entier (question IV.5).
 - ⛔ EXCLU (cité au préambule mais non traité, ou absent du chapitre) : test de primalité, nombres premiers,
@@ -1762,16 +1766,14 @@ page fournit donc des exemples supplémentaires réutilisables (7, 9, 25 non ill
   texte) et 1 formule absente de la couche texte (p.147, Viète). Toutes les formules et tous les encadrés de
   la fiche sont repris de l'image. Aucun écart sur le code Pascal.
 - Aucune copie du PDF dans git ; fichiers intermédiaires (txt/png) dans le scratchpad uniquement.
-# Fiche de transcription — Bac Sciences de l'informatique / Algorithmique et programmation — ch.6 et ch.7
-
 Source unique : manuel élève CNP « Algorithmique et programmation », 4e année secondaire, Sciences de l'informatique (248 p.), décalage PDF/page imprimée = 0.
 
-**Pictogrammes observés** (la correspondance avec la légende p.2–6 est à faire par l'orchestrateur, je ne l'ai pas relue) :
+**Pictogrammes observés** (la légende p.5 définit quatre silhouettes de difficulté ; leur correspondance avec ces icônes n'a pas été établie : `[?]`) :
 - **[P-?]** : personnage pensif seul avec un « ? » ; il accompagne la plupart des encadrés gris d'activité et les exercices 1 à 4 du ch.6 ;
 - **[P-??]** : personnage avec « ? » et deux crochets ; on le trouve sur l'Activité 2 du ch.6, les exercices 5 et 6 du ch.6 et tous les exercices du ch.7 ;
 - **[clé]** : quatre personnages qui portent une clé ; il marque le début de la solution rédigée qui suit un encadré.
 
-Les deux chapitres n'affichent **aucun niveau de difficulté explicite** (ni étoiles ni code couleur). Les seuls repères sont les mentions « Bac Tp 2001 » (ch.6, ex.2 et 3) et « Sujet de baccalauréat 1992 » (ch.7, ex.3).
+Les silhouettes de difficulté de la légende p.5 sont présentes mais leur rattachement à un niveau n'a pas été relevé `[?]` (ni étoiles ni code couleur). Les seuls repères sont les mentions « Bac Tp 2001 » (ch.6, ex.2 et 3) et « Sujet de baccalauréat 1992 » (ch.7, ex.3).
 
 **Forme des solutions.** Toutes les solutions du manuel suivent le même patron : a) analyse (Résultat / Traitement / Données), b) algorithme numéroté `0) Début … n) Fin`, accompagné d'un tableau de codification des objets (globaux, locaux, nouveaux types), puis c) traduction en Pascal (Turbo Pascal / Free Pascal, `Uses Crt`).
 
@@ -1789,8 +1791,8 @@ Les deux chapitres n'affichent **aucun niveau de difficulté explicite** (ni ét
 | I | Introduction | 188 |
 | II | Recherche du point fixe d'une fonction (présentation + Activité 1 `Pt_Fixe`) | 188–190 |
 | III | Calcul de valeurs approchées de constantes connues | 190–197 |
-| III.1 | Valeur approchée de π : présentation (Archimède), formule d'Euler (`Pi_Euler`), applications, formule de Wallis (`Pi_Wallis`), application | 191–195 |
-| III.2 | Valeur approchée de e : présentation, factorielles (`e_Fact`), applications | 195–197 |
+| 1) (numérotation du manuel ; notée III.1 ici) | Valeur approchée de π : présentation (Archimède), formule d'Euler (`Pi_Euler`), applications, formule de Wallis (`Pi_Wallis`), application | 191–195 |
+| 2) (numérotation du manuel ; notée III.2 ici) | Valeur approchée de e : présentation, factorielles (`e_Fact`), applications | 195–197 |
 | IV | Calcul d'aires : introduction, méthode des rectangles (`Meth_Rec`), méthode des trapèzes (`Meth_Tra`), questions | 197–203 |
 | — | Retenons | 204–205 (citation de B. Russell p.205) |
 | — | Exercices 1 à 6 | 206–207 |
@@ -1808,7 +1810,7 @@ Les deux chapitres n'affichent **aucun niveau de difficulté explicite** (ni ét
   - Solution : l'équation se réécrit f(x) = 1 − sin(x) = x, avec xact ← 1 « {choix arbitraire} » et i ← 0. On répète {xpre ← xact ; xact ← f(xact) ; i ← i+1} jusqu'à Abs(xact−xpre) < Epsilon.
   - Codification : Epsilon constante = 10⁻⁵ ; i entier non signé (`word`) ; xact, xpre réels ; f fonction.
   - Pascal p.190 : `Const Epsilon = 1E-5;`, fonction locale `f := 1 - sin(x)`, boucle `Repeat … Until (abs(xact-xpre) < Epsilon)`, affichage `xact:10:6`.
-  - **Capture Free Pascal p.190 (visible seulement sur l'image)** : « Le point fixe est : 0.51097, trouvé après : 83 itérations. » Ma simulation donne x ≈ 0,510969 après 83 itérations, ce qui confirme la capture.
+  - **Capture Free Pascal p.190 (visible seulement sur l'image)** : « Le point fixe est : 0.51097, trouvé après : 83 itérations. » La simulation du transcripteur donne x ≈ 0,510969 après 83 itérations, ce qui confirme la capture.
 
 - **III. Constantes (p.190–197).**
   - **Activité 2 [P-??] (p.190)** : « Citez quelques constantes numériques ? Donnez leurs valeurs respectives ? »
@@ -1998,7 +2000,7 @@ Les séries de Fibonacci et du nombre d'or (ex.4) et du sinus (ex.2) peuvent ser
   - **Activité 1 (p.215–217), trace détaillée et colorée** : N = 10, T = [10, 6, 13, 8, 19, 2, 1, 31, 3, 11], pivot 10.
     - Échange T[3]=13 ↔ T[9]=3, puis T[5]=19 ↔ T[7]=1, ce qui donne [10, 6, 3, 8, 1, 2, 19, 31, 13, 11].
     - Le pivot est permuté avec la position 6 : [2, 6, 3, 8, 1, 10, 19, 31, 13, 11].
-    - Partie gauche (pivot 2) : 6 ↔ 1, ce qui donne [2, 1, 3, 8, 6, …]. Le 3 reste en place (« aucun échange ») ; la position 3 est définitive.
+    - Partie gauche (pivot 2) : 6 ↔ 1, ce qui donne [2, 1, 3, 8, 6, …]. Le 3 reste en place (« aucun échange ») ; la position 3 est déclarée définitive. [sic : le pivot 2 n'est pas permuté (il reste en position 1) ; selon le principe de la p.215, il devrait être échangé avec T[2] = 1 et c'est la position 2 qui devient définitive.]
     - Sous-partie 1..2 : on obtient [1, 2, 3, 8, 6, 10, 19, 31, 13, 11].
   - **Activité 2 [P-?] (p.218)** : « Donnez la suite des étapes pour trier tout le tableau T. »
   - **Problème rédigé [P-?] (p.218–220)** : trier par tri rapide un tableau T de n entiers.
@@ -2136,11 +2138,11 @@ tri rapide / QuickSort / tri de Hoare ; pivot ; partition ; permutation (échang
 
 #### Notions testables
 
-Il y a plus de 8 notions possibles. Je propose de les répartir en 2 chapitres :
+Il y a plus de 8 notions possibles : découpage proposé en 2 chapitres :
 
 **7a — Tri rapide et Hanoï (récursivité « diviser pour régner »)**
 1. Principe du tri rapide : pivot (premier élément), partition, placement définitif, appels récursifs sur g..M−1 et M+1..d.
-2. Trace d'une partition sur un tableau donné (modèle des p.215–217 : indices i/j, échanges successifs, position finale du pivot).
+2. Trace d'une partition sur un tableau donné (modèle de la première partition p.215–216, pivot 10 — la suite p.217 est incohérente : indices i/j, échanges successifs, position finale du pivot).
 3. Choix du pivot : milieu ou premier ; pire cas quand le tableau est déjà trié ; efficacité croissante avec le désordre.
 4. Hanoï : décomposition récursive (n−1 vers l'intermédiaire, le grand disque vers la cible, n−1 vers la cible), séquence des déplacements pour n = 2 et n = 3.
 5. Nombre de déplacements 2ⁿ − 1 (tableau de n = 1 à 9 ; légende des 64 disques).
@@ -2204,7 +2206,7 @@ Il y a plus de 8 notions possibles. Je propose de les répartir en 2 chapitres :
   - [2, 1] reste [2, 1] (non trié) ;
   - pour [1, 2], M tombe à g−1 = 0, ce qui donne un accès hors tableau (T[0]) ;
   - sur le tableau même de l'Activité 1, l'algorithme finit par accéder à T[0].
-  - La trace pas à pas des p.215–217 reste juste comme illustration du principe.
+  - **Seule la première partition (pivot 10, p.215–216) sert de trace de référence** ; la suite de la p.217 est incohérente avec le principe (voir le [sic] de la partie gauche, pivot 2).
   - **Recommandation pour la génération** : tester le **principe** et la **trace** de partition, mais ne pas présenter l'algorithme p.220 comme une référence correcte, et ne pas fabriquer de questions « que produit ce code ? » à partir de lui.
 - **Doutes `[?]`** : aucun.
 
@@ -2239,7 +2241,7 @@ Il y a plus de 8 notions possibles. Je propose de les répartir en 2 chapitres :
 Règle : ≤ 8 notions par chapitre (`campagne`, étape 4). Les chapitres 1, 5 et 7 du manuel dépassent 8 notions
 (12, 8 « au plus juste », 11) : ils sont scindés selon le découpage proposé par leurs lecteurs. Les exercices de
 fin de chapitre se répartissent selon la notion qu'ils mobilisent (ch.1 ex.1-14 p.68-71 ; ch.5 ex.1-8 et 10-12 → 5a,
-ex.9 et 13-16 → 5b, ex.1 mixte : a → 5a, b-d → 5b ; ch.7 voir la section).
+ex.9 et 13-16 → 5b, ex.1 mixte : a → 5a, b-d → 5b ; ch.7 ex.1-2 → 7a, ex.3-5 → 7b).
 
 | # | slug | notion | pages |
 | --- | --- | --- | --- |
