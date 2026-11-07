@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le seigneur de l'inertie électrique",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Une bobine fermée présente une face sud à un pôle d'aimant situé en regard, et la bobine et l'aimant se repoussent. Que fait l'opérateur, et de quel pôle s'agit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il approche un pôle nord"
+        },
+        {
+          "id": "b",
+          "text": "Il approche un pôle sud"
+        },
+        {
+          "id": "c",
+          "text": "Il éloigne un pôle nord"
+        },
+        {
+          "id": "d",
+          "text": "Il éloigne un pôle sud"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux faces de même nom se repoussent : la face sud de la bobine repousse un pôle sud. Selon la loi de Lenz, le courant induit s'oppose à la cause : une répulsion freine un rapprochement, donc l'opérateur approche l'aimant ✓. Un pôle nord serait attiré par la face sud ; éloigner un pôle sud ferait naître une attraction qui retient l'aimant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bobine d'inductance L = 0,50 H et de résistance r = 25 Ω est traversée de A vers B par le courant représenté. Quelle est la tension u_AB à l'instant t = 15 ms ?\n<svg viewBox=\"0 0 335 160\"><title>Courant i(t) : montée linéaire de 0 à 80 mA entre 0 et 20 ms, palier à 80 mA jusqu'à 30 ms, retour à 0 à 40 ms</title><line x1=\"44\" y1=\"130\" x2=\"318\" y2=\"130\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"322,130 314,134 314,126\" fill=\"#0f172a\"/><line x1=\"44\" y1=\"130\" x2=\"44\" y2=\"24\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"44,20 48,28 40,28\" fill=\"#0f172a\"/><text x=\"52\" y=\"15\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i (mA)</text><text x=\"318\" y=\"122\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><line x1=\"44\" y1=\"30\" x2=\"164\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"164\" y1=\"30\" x2=\"164\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"224\" y1=\"30\" x2=\"224\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><polyline points=\"44,130 164,30 224,30 284,130\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"134\" y1=\"55\" x2=\"134\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><circle cx=\"134\" cy=\"55\" r=\"3.8\" fill=\"#0f6e56\"/><text x=\"38\" y=\"34\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">80</text><text x=\"134\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">15</text><text x=\"164\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"224\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"284\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,5 V"
+        },
+        {
+          "id": "b",
+          "text": "1,5 V"
+        },
+        {
+          "id": "c",
+          "text": "2,0 V"
+        },
+        {
+          "id": "d",
+          "text": "3,5 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Entre 0 et 20 ms, i croît linéairement de 0 à 80 mA : di/dt = 0,080 / 0,020 = 4,0 A/s et i(15 ms) = 60 mA. Donc u_AB = L di/dt + r i = 0,50 × 4,0 + 25 × 0,060 = 2,0 + 1,5 = 3,5 V ✓. 2,0 V oublie le terme résistif, 1,5 V le terme inductif ; −0,5 V met un signe − devant le terme inductif, signe qui appartient à e et non à la tension.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL, dont la bobine a une résistance r non nulle, est soumis à un échelon de tension E à t = 0. Quelle courbe représente la tension u_AB aux bornes de la bobine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "<svg viewBox=\"0 0 100 70\"><title>Allure proposée pour u_AB(t)</title><line x1=\"14\" y1=\"58\" x2=\"90\" y2=\"58\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"94,58 86,62 86,54\" fill=\"#0f172a\"/><line x1=\"14\" y1=\"58\" x2=\"14\" y2=\"12\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"14,8 18,16 10,16\" fill=\"#0f172a\"/><line x1=\"14\" y1=\"14\" x2=\"84\" y2=\"14\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><text x=\"88\" y=\"19\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><polyline points=\"14,58 16,54.86 18,52.02 20,49.45 22,47.12 24,45.02 26,43.11 28,41.39 30,39.83 32,38.42 34,37.14 36,35.98 38,34.94 40,33.99 42,33.14 44,32.36 46,31.66 48,31.03 50,30.45 52,29.94 54,29.47 56,29.04 58,28.66 60,28.31 62,27.99 64,27.71 66,27.45 68,27.22 70,27.01 72,26.82 74,26.64 76,26.49 78,26.35 80,26.22 82,26.1 84,26 86,25.9 88,25.82 90,25.74\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        },
+        {
+          "id": "b",
+          "text": "<svg viewBox=\"0 0 100 70\"><title>Allure proposée pour u_AB(t)</title><line x1=\"14\" y1=\"58\" x2=\"90\" y2=\"58\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"94,58 86,62 86,54\" fill=\"#0f172a\"/><line x1=\"14\" y1=\"58\" x2=\"14\" y2=\"12\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"14,8 18,16 10,16\" fill=\"#0f172a\"/><line x1=\"14\" y1=\"14\" x2=\"84\" y2=\"14\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><text x=\"88\" y=\"19\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><polyline points=\"14,14 16,18.19 18,21.98 20,25.4 22,28.51 24,31.31 26,33.85 28,36.15 30,38.23 32,40.11 34,41.81 36,43.35 38,44.75 40,46.01 42,47.15 44,48.18 46,49.12 48,49.96 50,50.73 52,51.42 54,52.05 56,52.61 58,53.12 60,53.59 62,54.01 64,54.39 66,54.73 68,55.04 70,55.32 72,55.58 74,55.81 76,56.02 78,56.21 80,56.38 82,56.53 84,56.67 86,56.8 88,56.91 90,57.02\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        },
+        {
+          "id": "c",
+          "text": "<svg viewBox=\"0 0 100 70\"><title>Allure proposée pour u_AB(t)</title><line x1=\"14\" y1=\"58\" x2=\"90\" y2=\"58\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"94,58 86,62 86,54\" fill=\"#0f172a\"/><line x1=\"14\" y1=\"58\" x2=\"14\" y2=\"12\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"14,8 18,16 10,16\" fill=\"#0f172a\"/><line x1=\"14\" y1=\"14\" x2=\"84\" y2=\"14\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><text x=\"88\" y=\"19\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><polyline points=\"14,14 16,17.14 18,19.98 20,22.55 22,24.88 24,26.98 26,28.89 28,30.61 30,32.17 32,33.58 34,34.86 36,36.02 38,37.06 40,38.01 42,38.86 44,39.64 46,40.34 48,40.97 50,41.55 52,42.06 54,42.53 56,42.96 58,43.34 60,43.69 62,44.01 64,44.29 66,44.55 68,44.78 70,44.99 72,45.18 74,45.36 76,45.51 78,45.65 80,45.78 82,45.9 84,46 86,46.1 88,46.18 90,46.26\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        },
+        {
+          "id": "d",
+          "text": "<svg viewBox=\"0 0 100 70\"><title>Allure proposée pour u_AB(t)</title><line x1=\"14\" y1=\"58\" x2=\"90\" y2=\"58\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"94,58 86,62 86,54\" fill=\"#0f172a\"/><line x1=\"14\" y1=\"58\" x2=\"14\" y2=\"12\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"14,8 18,16 10,16\" fill=\"#0f172a\"/><line x1=\"14\" y1=\"14\" x2=\"84\" y2=\"14\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><text x=\"88\" y=\"19\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><polyline points=\"14,47 90,47\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À t = 0, i = 0 : toute la tension E est aux bornes de la bobine, donc u_AB(0) = E. En régime permanent, di/dt = 0 et u_AB = r I₀ = rE/R, non nulle puisque r ≠ 0 : la courbe décroît de E vers cette valeur non nulle ✓. La courbe qui tend vers 0 correspond à r = 0 ; celle qui croît à partir de 0 est l'allure de i(t) ou de la tension du résistor ; la droite horizontale suppose que la bobine se comporte dès t = 0 comme un résistor, ce qu'elle interdit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un dipôle RL, la résistance totale de la boucle bobine-résistor vaut R = 75 Ω. On ouvre K ; une diode idéale laisse passer le courant de la bobine. On enregistre l'intensité i(t) après l'ouverture, avec la tangente à l'origine (figure). Quelle est la f.e.m. d'auto-induction e à t = 0⁺ ?\n<svg viewBox=\"0 0 335 170\"><title>Courant i(t) après l'ouverture de K, avec la tangente à l'origine qui coupe l'axe des temps en 4,0 ms</title><line x1=\"44\" y1=\"140\" x2=\"318\" y2=\"140\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"322,140 314,144 314,136\" fill=\"#0f172a\"/><line x1=\"44\" y1=\"140\" x2=\"44\" y2=\"26\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"44,22 48,30 40,30\" fill=\"#0f172a\"/><text x=\"52\" y=\"17\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i (mA)</text><text x=\"318\" y=\"132\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><polyline points=\"44,30 48,36.66 52,42.93 56,48.81 60,54.33 64,59.52 68,64.4 72,68.98 76,73.28 80,77.32 84,81.12 88,84.69 92,88.04 96,91.19 100,94.15 104,96.92 108,99.53 112,101.99 116,104.29 120,106.45 124,108.48 128,110.39 132,112.19 136,113.87 140,115.46 144,116.94 148,118.34 152,119.65 156,120.88 160,122.04 164,123.13 168,124.15 172,125.11 176,126.02 180,126.86 184,127.66 188,128.41 192,129.11 196,129.77 200,130.39 204,130.97 208,131.52 212,132.03 216,132.51 220,132.97 224,133.39 228,133.79 232,134.17 236,134.52 240,134.86 244,135.17 248,135.46 252,135.73 256,135.99 260,136.24 264,136.46 268,136.68 272,136.88 276,137.07 280,137.25 284,137.41 288,137.57 292,137.72 296,137.86 300,137.99\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"44,30 108,140\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"7 4\"/><circle cx=\"44\" cy=\"30\" r=\"3.8\" fill=\"#b45309\"/><circle cx=\"108\" cy=\"140\" r=\"3.8\" fill=\"#b45309\"/><text x=\"38\" y=\"34\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><text x=\"108\" y=\"156\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4,0</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "+3,0 V"
+        },
+        {
+          "id": "b",
+          "text": "+1,1 V"
+        },
+        {
+          "id": "c",
+          "text": "0 V"
+        },
+        {
+          "id": "d",
+          "text": "−3,0 V"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "À la rupture, la tangente à l'origine coupe l'axe des temps en τ = 4,0 ms, donc L = τ R = 4,0 × 10⁻³ × 75 = 0,30 H. À t = 0⁺, di/dt = −I₀/τ = −0,040 / 0,0040 = −10 A/s, d'où e = −L di/dt = +0,30 × 10 = +3,0 V ✓ (c'est aussi R I₀ = 75 × 0,040). −3,0 V a le signe d'une croissance de i. 0 V suppose que la continuité de i supprime la f.e.m., alors que c'est sa pente qui compte. +1,1 V est la valeur à t = τ, où e est multipliée par 0,37.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un dipôle RL est soumis à un échelon de tension E = 9,0 V ; le résistor vaut R₀ = 40 Ω. On enregistre la tension u_L aux bornes de la bobine, avec la tangente à l'origine (figure). Quelle est l'inductance L de la bobine ?\n<svg viewBox=\"0 0 335 175\"><title>Tension u_L(t) aux bornes de la bobine après la fermeture de K : de 9,0 V vers 3,0 V, avec la tangente à l'origine qui coupe l'asymptote en 4,0 ms et l'axe des temps en 6,0 ms</title><line x1=\"44\" y1=\"150\" x2=\"318\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"322,150 314,154 314,146\" fill=\"#0f172a\"/><line x1=\"44\" y1=\"150\" x2=\"44\" y2=\"24\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"44,20 48,28 40,28\" fill=\"#0f172a\"/><text x=\"52\" y=\"15\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_L (V)</text><text x=\"318\" y=\"142\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><line x1=\"44\" y1=\"108\" x2=\"296\" y2=\"108\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><polyline points=\"44,24 48.5,29.09 53,33.87 57.5,38.36 62,42.58 66.5,46.54 71,50.27 75.5,53.77 80,57.05 84.5,60.14 89,63.04 93.5,65.76 98,68.32 102.5,70.73 107,72.98 111.5,75.11 116,77.1 120.5,78.97 125,80.73 129.5,82.38 134,83.93 138.5,85.39 143,86.76 147.5,88.05 152,89.26 156.5,90.39 161,91.46 165.5,92.46 170,93.4 174.5,94.29 179,95.12 183.5,95.9 188,96.63 192.5,97.32 197,97.97 201.5,98.58 206,99.15 210.5,99.68 215,100.19 219.5,100.66 224,101.1 228.5,101.52 233,101.92 237.5,102.28 242,102.63 246.5,102.96 251,103.26 255.5,103.55 260,103.82 264.5,104.07 269,104.31 273.5,104.53 278,104.74 282.5,104.94 287,105.13 291.5,105.3 296,105.46\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"44,24 152,150\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"7 4\"/><line x1=\"116\" y1=\"108\" x2=\"116\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><circle cx=\"44\" cy=\"24\" r=\"3.8\" fill=\"#b45309\"/><circle cx=\"116\" cy=\"108\" r=\"3.8\" fill=\"#b45309\"/><circle cx=\"152\" cy=\"150\" r=\"3.8\" fill=\"#b45309\"/><text x=\"38\" y=\"28\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">9,0</text><text x=\"38\" y=\"112\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3,0</text><text x=\"110\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4,0</text><text x=\"162\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6,0</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,080 H"
+        },
+        {
+          "id": "b",
+          "text": "0,16 H"
+        },
+        {
+          "id": "c",
+          "text": "0,24 H"
+        },
+        {
+          "id": "d",
+          "text": "0,36 H"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour u_L(t), la tangente à l'origine coupe l'asymptote (3,0 V) à l'abscisse τ = 4,0 ms, non l'axe des temps (6,0 ms). En régime permanent u_L = rE/R, donc r/R = 3,0 / 9,0 = 1/3, soit R = 3r ; comme R = R₀ + r = 40 + r, on obtient r = 20 Ω et R = 60 Ω. Alors L = τ R = 4,0 × 10⁻³ × 60 = 0,24 H ✓. 0,16 H est τ R₀, qui oublie r ; 0,080 H est τ r, qui n'utilise que la bobine ; 0,36 H lit τ sur l'axe des temps (6,0 ms) avec R = 60 Ω.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un dipôle RL est alimenté par un générateur de f.e.m. E. On veut que la durée du régime transitoire double sans changer l'intensité I₀ du régime permanent. Que faut-il faire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Doubler E, sans changer L ni R"
+        },
+        {
+          "id": "b",
+          "text": "Doubler L, sans changer E ni R"
+        },
+        {
+          "id": "c",
+          "text": "Doubler R, sans changer E ni L"
+        },
+        {
+          "id": "d",
+          "text": "Doubler L et R, sans changer E"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La constante de temps τ = L/R règle la durée du transitoire et I₀ = E/R la valeur finale. Doubler L double τ sans toucher à I₀ ✓. Doubler E double I₀ et laisse τ inchangée ; doubler R divise τ et I₀ par 2 ; doubler L et R laisse τ inchangée et divise I₀ par 2.",
+      "difficulty": 3
+    }
+  ]
+}

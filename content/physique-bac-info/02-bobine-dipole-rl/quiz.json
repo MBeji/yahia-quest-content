@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : La bobine et le dipôle RL",
+  "questions": [
+    {
+      "prompt": "Un solénoïde B2, alimenté par un générateur basses fréquences, entoure une bobine B1 fermée sur un résistor. Tant que le courant de B2 varie, un courant circule dans B1. On remplace le générateur par une pile et l'on attend que le courant de B2 soit établi. Que se passe-t-il dans B1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un courant sinusoïdal continue de circuler dans B1, car B2 reste parcourue par un courant"
+        },
+        {
+          "id": "b",
+          "text": "Un courant continu constant circule dans B1, car le champ de B2 est devenu plus intense"
+        },
+        {
+          "id": "c",
+          "text": "Aucun courant ne circule dans B1, car le champ de B2 est devenu constant et ne varie plus"
+        },
+        {
+          "id": "d",
+          "text": "Un courant plus intense qu'avant circule dans B1, car la pile débite plus que le générateur"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un courant n'est induit dans B1 que si le champ créé par B2 varie. Une fois le courant de B2 établi et continu, ce champ est constant : aucun courant dans B1, bien que B2 soit toujours parcourue par un courant. Un champ intense mais constant n'induit rien non plus : seule la variation compte.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On approche le pôle nord d'un aimant d'une bobine fermée sur un résistor, d'abord lentement, puis deux fois plus vite. Que devient l'impulsion de tension aux bornes du résistor ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est plus grande, car le champ varie plus vite dans la bobine"
+        },
+        {
+          "id": "b",
+          "text": "Elle est identique, car ni la bobine ni l'aimant n'ont changé"
+        },
+        {
+          "id": "c",
+          "text": "Elle est plus petite, car l'aimant reste moins longtemps près de la bobine"
+        },
+        {
+          "id": "d",
+          "text": "Elle est de signe contraire, car la bobine s'oppose à un déplacement rapide"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le courant induit est d'autant plus intense que la variation du champ est rapide : deux fois plus vite, ‖B⃗‖ augmente deux fois plus vite et l'impulsion est plus grande ✓. Elle n'est pas identique, puisque la même variation se fait en moitié moins de temps. Le temps passé près de la bobine ne compte pas, c'est la rapidité de variation du champ qui compte. Le signe dépend du sens du déplacement et du pôle, qui n'ont pas changé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une bobine d'inductance 20 mH, le courant décroît régulièrement de 0,30 A à 0,10 A en 40 ms. Quelle est la f.e.m. d'auto-induction e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,10 V"
+        },
+        {
+          "id": "b",
+          "text": "+0,10 V"
+        },
+        {
+          "id": "c",
+          "text": "+0,15 V"
+        },
+        {
+          "id": "d",
+          "text": "+100 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a di/dt = (0,10 − 0,30) / 0,040 = −5,0 A/s, donc e = −L di/dt = −0,020 × (−5,0) = +0,10 V ✓, positive puisque i décroît. −0,10 V a le signe d'une croissance de i. +0,15 V prend 0,30 A pour la variation du courant au lieu de −0,20 A. +100 V oublie de convertir l'inductance de mH en H.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine d'inductance 0,50 H et de résistance 12 Ω est traversée par un courant constant de 0,30 A. Quelle est la tension à ses bornes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 V"
+        },
+        {
+          "id": "b",
+          "text": "0,15 V"
+        },
+        {
+          "id": "c",
+          "text": "3,6 V"
+        },
+        {
+          "id": "d",
+          "text": "3,75 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le courant est constant : di/dt = 0, donc le terme inductif L di/dt est nul et u = r i = 12 × 0,30 = 3,6 V ✓. 0 V ignore la résistance du fil. 0,15 V est le produit L i, qui n'intervient pas dans la tension. 3,75 V ajoute ce produit L i à r i.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle énergie magnétique une bobine d'inductance 120 mH emmagasine-t-elle quand elle est traversée par un courant de 0,20 A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24 mJ"
+        },
+        {
+          "id": "b",
+          "text": "12 mJ"
+        },
+        {
+          "id": "c",
+          "text": "4,8 mJ"
+        },
+        {
+          "id": "d",
+          "text": "2,4 mJ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "E_L = ½ L i² = 0,5 × 0,120 × (0,20)² = 0,5 × 0,120 × 0,040 = 2,4 mJ ✓. 4,8 mJ est L i², sans le facteur ½. 12 mJ est ½ L i, sans élever i au carré. 24 mJ est le produit L i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL est formé d'un générateur de f.e.m. E = 9,0 V, d'une bobine de résistance r = 5,0 Ω et d'un résistor R₀ = 25 Ω. On ferme K à t = 0. Quelles sont les intensités juste après la fermeture (t = 0⁺), puis en régime permanent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 A, puis 0,36 A"
+        },
+        {
+          "id": "b",
+          "text": "0 A, puis 0,30 A"
+        },
+        {
+          "id": "c",
+          "text": "0,30 A, puis 0,30 A"
+        },
+        {
+          "id": "d",
+          "text": "0,36 A, puis 0,30 A"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La bobine interdit tout saut d'intensité : i(0⁺) = 0 ✓. En régime permanent, I₀ = E/(R₀ + r) = 9,0 / 30 = 0,30 A ✓. Une intensité de 0,36 A est E/R₀ : elle oublie la résistance de la bobine. Une intensité initiale non nulle supposerait que la bobine se comporte comme un simple fil dès la fermeture.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un dipôle RL en régime permanent (générateur de f.e.m. E, bobine (L, r), résistor R₀), on ouvre K. Une diode idéale laisse passer le courant de la bobine à travers R₀. Quelle équation vérifie l'intensité i après l'ouverture ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L di/dt + (R₀ + r) i = 0"
+        },
+        {
+          "id": "b",
+          "text": "L di/dt + (R₀ + r) i = E"
+        },
+        {
+          "id": "c",
+          "text": "L di/dt + r i = 0"
+        },
+        {
+          "id": "d",
+          "text": "L di/dt + R₀ i = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Après l'ouverture, la boucle bobine-R₀-diode ne contient plus de générateur : u_AB + u_BM = 0, avec u_AB = L di/dt + r i et u_BM = R₀ i, d'où L di/dt + (R₀ + r) i = 0 ✓. Garder E supposerait que le générateur alimente encore la boucle. Omettre R₀ ou r oublie que les deux sont traversés par le courant de la bobine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL est formé d'une bobine (L = 0,30 H, r = 10 Ω) et d'un résistor R₀ = 140 Ω. Quelle est sa constante de temps ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,0 ms"
+        },
+        {
+          "id": "b",
+          "text": "2,1 ms"
+        },
+        {
+          "id": "c",
+          "text": "45 s"
+        },
+        {
+          "id": "d",
+          "text": "500 s"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La résistance totale est R = R₀ + r = 150 Ω, donc τ = L/R = 0,30 / 150 = 2,0 ms ✓. 2,1 ms vient de L/R₀, qui oublie la résistance de la bobine. 45 s est le produit L × R. 500 s est le quotient inversé R/L.",
+      "difficulty": 2
+    }
+  ]
+}

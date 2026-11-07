@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La bobine et le dipôle RL",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Le phare d'une bicyclette est alimenté par une dynamo : un aimant tourne devant une bobine fixe quand la roue tourne. Le phare s'éteint dès que le cycliste s'arrête. Quelle est l'explication ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'aimant perd son aimantation dès qu'il cesse de tourner devant la bobine"
+        },
+        {
+          "id": "b",
+          "text": "Aimant immobile, le champ ne varie plus dans la bobine : plus de courant induit"
+        },
+        {
+          "id": "c",
+          "text": "La bobine a épuisé l'énergie magnétique emmagasinée pendant la rotation de l'aimant"
+        },
+        {
+          "id": "d",
+          "text": "La loi de Lenz annule le courant induit dès que le vélo s'arrête de rouler"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un courant n'est induit que si le champ au niveau de la bobine varie. À l'arrêt, l'aimant est immobile, le champ est constant : plus de courant induit, donc le phare s'éteint ✓. L'aimant garde son aimantation. La lampe est alimentée pendant que le champ varie, non par une énergie que la bobine aurait emmagasinée. La loi de Lenz fixe le sens du courant induit, elle ne l'annule pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le circuit de la figure, la masse de l'oscilloscope est reliée à M, la voie 1 au point A et la voie 2 au point B. Que faut-il afficher pour visualiser la tension u_AB de la bobine ?\n<svg viewBox=\"0 0 340 190\"><title>Circuit série : générateur E, interrupteur K, bobine (L, r) entre A et B, résistor R₀ entre B et M, diode D reliant M à A</title><line x1=\"50\" y1=\"45\" x2=\"95\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"45\" x2=\"165\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"45\" x2=\"185\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"95\" y1=\"45\" x2=\"130\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"95\" cy=\"45\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"130\" cy=\"45\" r=\"3.5\" fill=\"#0f172a\"/><path d=\"M185 45 a7.5 10 0 0 1 15 0 a7.5 10 0 0 1 15 0 a7.5 10 0 0 1 15 0 a7.5 10 0 0 1 15 0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"245\" y1=\"45\" x2=\"268\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"268\" cy=\"45\" r=\"3.5\" fill=\"#0f172a\"/><line x1=\"268\" y1=\"45\" x2=\"268\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><rect x=\"260\" y=\"82\" width=\"16\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"268\" y1=\"122\" x2=\"268\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"268\" y1=\"160\" x2=\"50\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"45\" x2=\"50\" y2=\"84\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"116\" x2=\"50\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"100\" r=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"50\" y=\"105\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><text x=\"68\" y=\"91\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+</text><text x=\"68\" y=\"121\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−</text><line x1=\"165\" y1=\"45\" x2=\"165\" y2=\"78\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"104\" x2=\"165\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"154,104 176,104 165,80\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"153\" y1=\"78\" x2=\"177\" y2=\"78\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"165\" cy=\"45\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"165\" cy=\"160\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"165\" y=\"31\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"258\" y=\"31\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"165\" y=\"178\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><text x=\"110\" y=\"17\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">K</text><text x=\"215\" y=\"26\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">L, r</text><text x=\"254\" y=\"106\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₀</text><text x=\"190\" y=\"100\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text><line x1=\"60\" y1=\"31\" x2=\"78.8\" y2=\"31\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"86,31 78,35 78,27\" fill=\"#0f6e56\"/><text x=\"73\" y=\"22\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voie 1 seule"
+        },
+        {
+          "id": "b",
+          "text": "Voie 2 seule"
+        },
+        {
+          "id": "c",
+          "text": "Voie 1 − voie 2"
+        },
+        {
+          "id": "d",
+          "text": "Voie 1 + voie 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec la masse en M, la voie 1 donne u_AM et la voie 2 donne u_BM. Comme u_AB = u_AM − u_BM, il faut afficher la différence des deux voies, voie 1 moins voie 2 (voie 2 inversée puis addition) ✓. La voie 2 seule donne u_BM = R₀ i, image de l'intensité ; la voie 1 seule donne u_AM ; la somme u_AM + u_BM ne correspond à aucune tension utile ici.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bobine d'inductance 0,50 H et de résistance 4,0 Ω est parcourue de A vers B par un courant i(t) = 0,30 t² (i en A, t en s). Quelle est la tension u_AB à t = 2,0 s ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,2 V"
+        },
+        {
+          "id": "b",
+          "text": "4,8 V"
+        },
+        {
+          "id": "c",
+          "text": "5,1 V"
+        },
+        {
+          "id": "d",
+          "text": "5,4 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On dérive : di/dt = 0,60 t = 1,2 A/s à t = 2,0 s, donc L di/dt = 0,50 × 1,2 = 0,60 V. Le courant vaut i = 0,30 × (2,0)² = 1,2 A, donc r i = 4,0 × 1,2 = 4,8 V. Le courant va de A vers B : u_AB = 0,60 + 4,8 = 5,4 V ✓. 4,8 V oublie le terme inductif ; 5,1 V dérive 0,30 t² en 0,60 au lieu de 0,60 t ; 4,2 V soustrait le terme inductif.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À un instant donné, une bobine (L = 0,10 H, r = 8,0 Ω) est traversée par un courant de 0,20 A qui croît de 10 A/s. Quelle part de la puissance reçue par la bobine sert à augmenter son énergie magnétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,20 W"
+        },
+        {
+          "id": "b",
+          "text": "0,32 W"
+        },
+        {
+          "id": "c",
+          "text": "0,52 W"
+        },
+        {
+          "id": "d",
+          "text": "1,0 W"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La puissance reçue est p = u i = (L di/dt + r i) i = r i² + L i di/dt ; le second terme est la puissance qui augmente E_L : L i di/dt = 0,10 × 0,20 × 10 = 0,20 W ✓. 0,32 W est r i² = 8,0 × (0,20)², la puissance dissipée par effet Joule ; 0,52 W est la puissance totale reçue ; 1,0 W vient de L di/dt, qui est en volts, sans multiplier par i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL est formé d'une bobine (L = 0,30 H, r = 5,0 Ω) et d'un résistor R₀ = 55 Ω. Au bout de quelle durée environ le régime permanent est-il atteint, à 1 % près, après la fermeture de K ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,0 ms"
+        },
+        {
+          "id": "b",
+          "text": "25 ms"
+        },
+        {
+          "id": "c",
+          "text": "27 ms"
+        },
+        {
+          "id": "d",
+          "text": "1 000 s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La résistance totale est R = R₀ + r = 60 Ω, donc τ = L/R = 0,30 / 60 = 5,0 ms, et le régime permanent est atteint au bout de 5τ = 25 ms ✓. 5,0 ms est τ lui-même, où i n'atteint que 63 % de I₀. 27 ms oublie la résistance de la bobine (τ = L/R₀). 1 000 s inverse le quotient (R/L).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces affirmations sur une bobine, laquelle est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle s'oppose aux variations de la tension à ses bornes"
+        },
+        {
+          "id": "b",
+          "text": "Son inductance dépend de l'intensité du courant qui la traverse"
+        },
+        {
+          "id": "c",
+          "text": "En courant constant, elle équivaut à un résistor de résistance r"
+        },
+        {
+          "id": "d",
+          "text": "Un noyau de fer doux placé dans son solénoïde diminue son inductance"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En courant constant, di/dt = 0 et u = r i : la bobine équivaut à un résistor de résistance r ✓. Elle s'oppose aux variations de l'intensité du courant, non de la tension. Son inductance ne dépend que de ses caractéristiques géométriques et de son noyau, jamais de l'intensité. Un noyau de fer doux fait augmenter l'inductance.",
+      "difficulty": 2
+    }
+  ]
+}
