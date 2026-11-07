@@ -2895,7 +2895,7 @@ T(∞) = 0 » · Pas de réponse pour les ex. 1, 2, 9, 10, 11 (la colonne passe 
     expérimentales près », p.194).
   - §3.1 : bande [495 Hz, 545 Hz], ΔN = 50 Hz ; théorie avec R = 62,5 Ω : Q ≈ 10,4, ΔN ≈ 50 Hz ; Fig.34 : U_Sm max 1,6 V
     (= 50 × 32 mA) et G₀ = −1,94 dB (= 20 log 0,8).
-  - Fig.37 : pics T ≈ 0,8 / 0,88 / 0,97, cohérents avec T₀ = R₀/(R₀ + r) (0,8 ; 0,89 ; 0,976).réponse) ; Fig.2 : légende « u_E » sur un oscillogramme censé montrer u_S [?].
+  - Fig.37 : pics T ≈ 0,8 / 0,88 / 0,97, cohérents avec T₀ = R₀/(R₀ + r) (0,8 ; 0,89 ; 0,976).
 
 ## 2.8 Chapitre 8 — Production de signaux non sinusoïdaux (manuel 223471, p.220–247)
 
