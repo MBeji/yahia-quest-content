@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Oscillations libres d'un pendule élastique",
+  "questions": [
+    {
+      "prompt": "Parmi ces systèmes, lequel est un oscillateur libre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un circuit RLC série alimenté par un générateur de fréquence réglable"
+        },
+        {
+          "id": "b",
+          "text": "Un solide abandonné au bout d'un ressort après avoir été écarté de O"
+        },
+        {
+          "id": "c",
+          "text": "Un solide dont le support est animé par un moteur de fréquence réglable"
+        },
+        {
+          "id": "d",
+          "text": "Un ressort de suspension secoué par les bosses régulières d'une route"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un oscillateur est libre quand rien ne lui impose son rythme : après l'écart initial, le solide accroché au ressort évolue seul ✓. Dans le circuit alimenté par un générateur, dans le support secoué par un moteur et dans la suspension agitée par la route, un excitateur extérieur impose sa fréquence : ce sont des oscillations forcées, et non libres.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On chronomètre 10 oscillations complètes d'un pendule élastique non amorti : elles durent 7,2 s. Que valent la période propre T₀ et la fréquence propre N₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T₀ = 7,2 s ; N₀ = 0,14 Hz"
+        },
+        {
+          "id": "b",
+          "text": "T₀ = 1,4 s ; N₀ = 0,72 Hz"
+        },
+        {
+          "id": "c",
+          "text": "T₀ = 0,36 s ; N₀ = 2,8 Hz"
+        },
+        {
+          "id": "d",
+          "text": "T₀ = 0,72 s ; N₀ = 1,4 Hz"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La période est la durée d'une seule oscillation : T₀ = 7,2/10 = 0,72 s, puis N₀ = 1/T₀ = 1/0,72 ≈ 1,4 Hz ✓. Le couple 7,2 s et 0,14 Hz prend la durée des 10 oscillations pour une période. Le couple 1,4 s et 0,72 Hz échange la période et la fréquence. Le couple 0,36 s et 2,8 Hz compte 20 alternances au lieu de 10 oscillations.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un pendule élastique oscille avec la période propre T₀. On garde le même solide, mais on remplace le ressort par un autre dont la raideur est 9 fois plus grande. Que devient la période propre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est divisée par 3"
+        },
+        {
+          "id": "b",
+          "text": "Elle est divisée par 9"
+        },
+        {
+          "id": "c",
+          "text": "Elle est multipliée par 3"
+        },
+        {
+          "id": "d",
+          "text": "Elle est multipliée par 9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "T₀ = 2π·√(m/k) : la raideur est sous la racine, au dénominateur ; k multipliée par 9 divise T₀ par √9 = 3 ✓. Une division par 9 oublie la racine. Les deux multiplications vont dans le mauvais sens : un ressort plus raide ramène le solide plus vite, donc la période diminue.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un solide lié à un ressort horizontal, sans frottement, a une élongation x qui vérifie, en unités SI, l'équation d²x/dt² + 25·x = 0. Quelles sont sa pulsation propre ω₀ et sa période propre T₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ω₀ = 25 rad·s⁻¹ ; T₀ = 0,25 s"
+        },
+        {
+          "id": "b",
+          "text": "ω₀ = 5,0 rad·s⁻¹ ; T₀ = 0,20 s"
+        },
+        {
+          "id": "c",
+          "text": "ω₀ = 5,0 rad·s⁻¹ ; T₀ = 1,3 s"
+        },
+        {
+          "id": "d",
+          "text": "ω₀ = 0,20 rad·s⁻¹ ; T₀ = 31 s"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'équation d²x/dt² + ω₀²·x = 0 donne ω₀² = 25 s⁻², donc ω₀ = 5,0 rad·s⁻¹ ; puis T₀ = 2π/ω₀ = 2π/5,0 ≈ 1,3 s ✓. Le couple 25 rad·s⁻¹ et 0,25 s prend le coefficient 25, qui est ω₀², pour la pulsation. Le couple 5,0 rad·s⁻¹ et 0,20 s calcule 1/ω₀ et oublie le facteur 2π. Le couple 0,20 rad·s⁻¹ et 31 s retourne le rapport : 1/ω₀ au lieu de ω₀.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un pendule élastique non amorti a, à un instant donné, une énergie potentielle élastique de 12 mJ et une énergie cinétique de 18 mJ. Quelle est son énergie cinétique quand il passe par la position d'équilibre O ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18 mJ"
+        },
+        {
+          "id": "b",
+          "text": "12 mJ"
+        },
+        {
+          "id": "c",
+          "text": "6 mJ"
+        },
+        {
+          "id": "d",
+          "text": "30 mJ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'énergie mécanique E = E_c + E_p = 12 + 18 = 30 mJ est constante : le système est conservatif. En O, x = 0 donc E_p = 0 et toute l'énergie est cinétique : E_c = 30 mJ ✓. La valeur 18 mJ est l'énergie cinétique de l'instant considéré, non celle de O. La valeur 12 mJ est l'énergie potentielle initiale, qui s'annule en O. La valeur 6 mJ est la différence des deux énergies, qui n'a aucun sens physique ici.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sans frottement, un pendule élastique a pour période propre T₀ = 0,50 s. On le plonge dans une huile qui l'amortit faiblement. Quelle valeur est la plus plausible pour sa pseudo-période T ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,49 s"
+        },
+        {
+          "id": "b",
+          "text": "0,51 s"
+        },
+        {
+          "id": "c",
+          "text": "0,25 s"
+        },
+        {
+          "id": "d",
+          "text": "1,0 s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour un amortissement faible, la pseudo-période T est légèrement supérieure à la période propre T₀ : 0,51 s ✓. Une valeur inférieure à T₀, comme 0,49 s, est exclue : les frottements ne raccourcissent jamais la période. Les valeurs 0,25 s et 1,0 s sont T₀/2 et 2·T₀ : elles changeraient complètement le rythme, ce que ne fait pas un amortissement faible.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la force de frottement visqueux f = −h·v, la norme f s'exprime en newtons et la vitesse v en m·s⁻¹. Quelle est l'unité du coefficient h ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N·m⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "N·m·s⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "N·s·m⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "N·s²·m⁻¹"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "De f = h·v on tire h = f/v : des newtons divisés par des m·s⁻¹, soit N·s·m⁻¹ ✓. L'unité N·m⁻¹ est celle de la raideur k, pas du coefficient de frottement. L'unité N·m·s⁻¹ est celle d'une puissance : c'est le produit f·v, non le quotient. L'unité N·s²·m⁻¹ est celle d'une masse, puisque 1 N = 1 kg·m·s⁻².",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pourquoi l'énergie mécanique d'un pendule élastique amorti par un frottement visqueux ne peut-elle jamais augmenter ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que dE/dt = −h·v² est négative ou nulle, quel que soit le sens de v"
+        },
+        {
+          "id": "b",
+          "text": "Parce que la force de rappel −k·x est toujours de sens opposé à la vitesse v du solide"
+        },
+        {
+          "id": "c",
+          "text": "Parce que la raideur k du ressort diminue à chaque oscillation et affaiblit la force de rappel"
+        },
+        {
+          "id": "d",
+          "text": "Parce que la pseudo-période augmente au fil du temps et fait perdre de l'énergie au solide"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La dérivée dE/dt = −h·v² est le produit de −h < 0 par v² ≥ 0 : elle est négative ou nulle, jamais positive ✓. La force de rappel est dirigée vers O : elle est de même sens que la vitesse quand le solide s'en rapproche, donc elle n'est pas toujours opposée à v. La raideur k est une constante du ressort, elle ne diminue pas. Et la pseudo-période reste la même d'une oscillation à l'autre : elle n'explique pas la perte d'énergie.",
+      "difficulty": 2
+    }
+  ]
+}

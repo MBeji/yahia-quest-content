@@ -1,0 +1,128 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Oscillations électriques libres",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Parmi ces grandeurs d'un circuit LC non amorti, laquelle reste constante au cours du temps ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'énergie E_C du condensateur"
+        },
+        {
+          "id": "b",
+          "text": "L'énergie totale E_C + E_L"
+        },
+        {
+          "id": "c",
+          "text": "L'intensité i dans le circuit"
+        },
+        {
+          "id": "d",
+          "text": "La charge q de l'armature"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sans résistance, il n'y a pas d'effet Joule : dE/dt = −R·i² = 0, donc la somme E_C + E_L garde la valeur Q_m²/(2C) ✓. L'énergie E_C varie avec q, entre 0 et sa valeur maximale, avec la période T₀/2. L'intensité i = dq/dt oscille sinusoïdalement, elle change de signe. La charge q oscille aussi entre +Q_m et −Q_m avec la période T₀.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le circuit d'accord d'un petit récepteur radio associe une bobine de 0,25 mH et un condensateur de 100 pF dans un montage LC non amorti. Calculer sa fréquence propre N₀ en kHz, arrondie à l'unité.",
+      "answerKey": {
+        "value": 1007,
+        "tolerance": 3,
+        "unit": "kHz"
+      },
+      "explanation": "T₀ = 2π√(LC) = 2π√(0,25·10⁻³ × 100·10⁻¹²) = 2π × 1,58·10⁻⁷ ≈ 9,93·10⁻⁷ s, donc N₀ = 1/T₀ ≈ 1,007·10⁶ Hz = 1007 kHz ✓ (oublier de convertir mH ou pF donnerait un résultat faux de plusieurs ordres de grandeur).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un circuit RLC libre, C = 0,30 µF. À un instant, la tension u_R₀ aux bornes du résistor s'annule et u_C = −7,0 V. Quelle est l'énergie totale du circuit à cet instant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 µJ"
+        },
+        {
+          "id": "b",
+          "text": "15 µJ"
+        },
+        {
+          "id": "c",
+          "text": "1,1 µJ"
+        },
+        {
+          "id": "d",
+          "text": "7,4 µJ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "u_R₀ = R₀·i s'annule quand i = 0 : toute l'énergie est électrique, E = ½·C·u_C² = ½ × 0,30·10⁻⁶ × 7,0² ≈ 7,4·10⁻⁶ J = 7,4 µJ ✓. La valeur 0 µJ ne retient que l'énergie magnétique, nulle quand i = 0, et oublie celle du condensateur. La valeur 15 µJ oublie le facteur ½. La valeur 1,1 µJ ne met pas u_C au carré.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'équation de la charge d'un circuit RLC libre s'écrit d²q/dt² + 120·dq/dt + 9,0·10⁶·q = 0 (unités SI). Le condensateur a pour capacité 0,25 µF. Calculer la résistance totale R du circuit, en Ω, arrondie au dixième.",
+      "answerKey": {
+        "value": 53.3,
+        "tolerance": 0.6,
+        "unit": "Ω"
+      },
+      "explanation": "On identifie 1/(LC) = 9,0·10⁶ s⁻², d'où L = 1 / (9,0·10⁶ × 0,25·10⁻⁶) ≈ 0,444 H ; puis R/L = 120 s⁻¹ donne R = 120 × 0,444 ≈ 53,3 Ω ✓ (prendre R = 120 Ω oublierait que le coefficient de dq/dt est R/L, non R).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le circuit contient un résistor R₀ = 50 Ω et une bobine de résistance interne r = 10 Ω. Sur l'oscillogramme de u_R₀ ci-dessous, quelle est la puissance dissipée par effet Joule dans l'ensemble du circuit à l'instant du premier extremum de |u_R₀| ?\n<svg viewBox=\"50 0 240 262\"><title>Oscillogramme de u_R₀ d'un circuit RLC libre, sensibilité 0,2 V/div, balayage 0,5 ms/div</title><line x1=\"70\" y1=\"16\" x2=\"70\" y2=\"216\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"16\" x2=\"90\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"110\" y1=\"16\" x2=\"110\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"130\" y1=\"16\" x2=\"130\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"150\" y1=\"16\" x2=\"150\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"170\" y1=\"16\" x2=\"170\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"190\" y1=\"16\" x2=\"190\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"210\" y1=\"16\" x2=\"210\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"230\" y1=\"16\" x2=\"230\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"250\" y1=\"16\" x2=\"250\" y2=\"216\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"270\" y1=\"16\" x2=\"270\" y2=\"216\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"70\" y1=\"16\" x2=\"270\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"70\" y1=\"36\" x2=\"270\" y2=\"36\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"56\" x2=\"270\" y2=\"56\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"76\" x2=\"270\" y2=\"76\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"96\" x2=\"270\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"116\" x2=\"270\" y2=\"116\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"136\" x2=\"270\" y2=\"136\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"156\" x2=\"270\" y2=\"156\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"176\" x2=\"270\" y2=\"176\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"196\" x2=\"270\" y2=\"196\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"70\" y1=\"216\" x2=\"270\" y2=\"216\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"70\" y1=\"116.0\" x2=\"270\" y2=\"116.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"70,116 70.4,118 70.8,119.9 71.2,121.9 71.6,123.8 72,125.7 72.4,127.6 72.8,129.5 73.2,131.3 73.6,133.1 74,134.9 74.4,136.7 74.8,138.5 75.2,140.2 75.6,141.9 76,143.6 76.4,145.2 76.8,146.8 77.2,148.4 77.6,149.9 78,151.4 78.4,152.9 78.8,154.3 79.2,155.7 79.6,157 80,158.3 80.4,159.6 80.8,160.8 81.2,162 81.6,163.1 82,164.2 82.4,165.3 82.8,166.2 83.2,167.2 83.6,168.1 84,169 84.4,169.8 84.8,170.5 85.2,171.2 85.6,171.9 86,172.5 86.4,173.1 86.8,173.6 87.2,174.1 87.6,174.5 88,174.8 88.4,175.2 88.8,175.4 89.2,175.6 89.6,175.8 90,175.9 90.4,176 90.8,176 91.2,176 91.6,175.9 92,175.7 92.4,175.6 92.8,175.3 93.2,175.1 93.6,174.7 94,174.4 94.4,174 94.8,173.5 95.2,173 95.6,172.4 96,171.8 96.4,171.2 96.8,170.5 97.2,169.8 97.6,169.1 98,168.3 98.4,167.4 98.8,166.5 99.2,165.6 99.6,164.7 100,163.7 100.4,162.7 100.8,161.6 101.2,160.6 101.6,159.4 102,158.3 102.4,157.1 102.8,155.9 103.2,154.7 103.6,153.5 104,152.2 104.4,150.9 104.8,149.6 105.2,148.2 105.6,146.9 106,145.5 106.4,144.1 106.8,142.7 107.2,141.2 107.6,139.8 108,138.4 108.4,136.9 108.8,135.4 109.2,133.9 109.6,132.5 110,131 110.4,129.5 110.8,128 111.2,126.5 111.6,125 112,123.5 112.4,122 112.8,120.5 113.2,119 113.6,117.5 114,116 114.4,114.5 114.8,113.1 115.2,111.6 115.6,110.2 116,108.7 116.4,107.3 116.8,105.9 117.2,104.5 117.6,103.2 118,101.8 118.4,100.5 118.8,99.1 119.2,97.9 119.6,96.6 120,95.3 120.4,94.1 120.8,92.9 121.2,91.7 121.6,90.6 122,89.5 122.4,88.4 122.8,87.3 123.2,86.2 123.6,85.2 124,84.3 124.4,83.3 124.8,82.4 125.2,81.5 125.6,80.7 126,79.8 126.4,79.1 126.8,78.3 127.2,77.6 127.6,76.9 128,76.3 128.4,75.7 128.8,75.1 129.2,74.6 129.6,74.1 130,73.6 130.4,73.2 130.8,72.8 131.2,72.4 131.6,72.1 132,71.9 132.4,71.6 132.8,71.4 133.2,71.3 133.6,71.1 134,71.1 134.4,71 134.8,71 135.2,71 135.6,71.1 136,71.2 136.4,71.3 136.8,71.5 137.2,71.7 137.6,71.9 138,72.2 138.4,72.5 138.8,72.9 139.2,73.3 139.6,73.7 140,74.1 140.4,74.6 140.8,75.1 141.2,75.6 141.6,76.2 142,76.8 142.4,77.4 142.8,78.1 143.2,78.8 143.6,79.5 144,80.2 144.4,81 144.8,81.8 145.2,82.6 145.6,83.4 146,84.3 146.4,85.2 146.8,86.1 147.2,87 147.6,87.9 148,88.9 148.4,89.8 148.8,90.8 149.2,91.8 149.6,92.9 150,93.9 150.4,94.9 150.8,96 151.2,97.1 151.6,98.1 152,99.2 152.4,100.3 152.8,101.4 153.2,102.5 153.6,103.7 154,104.8 154.4,105.9 154.8,107 155.2,108.2 155.6,109.3 156,110.4 156.4,111.5 156.8,112.7 157.2,113.8 157.6,114.9 158,116 158.4,117.1 158.8,118.2 159.2,119.3 159.6,120.4 160,121.5 160.4,122.5 160.8,123.6 161.2,124.6 161.6,125.6 162,126.7 162.4,127.7 162.8,128.6 163.2,129.6 163.6,130.6 164,131.5 164.4,132.4 164.8,133.3 165.2,134.2 165.6,135.1 166,135.9 166.4,136.7 166.8,137.5 167.2,138.3 167.6,139.1 168,139.8 168.4,140.5 168.8,141.2 169.2,141.9 169.6,142.5 170,143.1 170.4,143.7 170.8,144.3 171.2,144.8 171.6,145.3 172,145.8 172.4,146.2 172.8,146.7 173.2,147.1 173.6,147.4 174,147.8 174.4,148.1 174.8,148.4 175.2,148.7 175.6,148.9 176,149.1 176.4,149.3 176.8,149.4 177.2,149.5 177.6,149.6 178,149.7 178.4,149.7 178.8,149.7 179.2,149.7 179.6,149.7 180,149.6 180.4,149.5 180.8,149.4 181.2,149.2 181.6,149 182,148.8 182.4,148.6 182.8,148.3 183.2,148.1 183.6,147.7 184,147.4 184.4,147.1 184.8,146.7 185.2,146.3 185.6,145.8 186,145.4 186.4,144.9 186.8,144.4 187.2,143.9 187.6,143.4 188,142.8 188.4,142.3 188.8,141.7 189.2,141.1 189.6,140.4 190,139.8 190.4,139.1 190.8,138.5 191.2,137.8 191.6,137.1 192,136.3 192.4,135.6 192.8,134.9 193.2,134.1 193.6,133.4 194,132.6 194.4,131.8 194.8,131 195.2,130.2 195.6,129.4 196,128.6 196.4,127.8 196.8,126.9 197.2,126.1 197.6,125.3 198,124.4 198.4,123.6 198.8,122.7 199.2,121.9 199.6,121 200,120.2 200.4,119.4 200.8,118.5 201.2,117.7 201.6,116.8 202,116 202.4,115.2 202.8,114.3 203.2,113.5 203.6,112.7 204,111.9 204.4,111.1 204.8,110.3 205.2,109.5 205.6,108.8 206,108 206.4,107.3 206.8,106.5 207.2,105.8 207.6,105.1 208,104.4 208.4,103.7 208.8,103 209.2,102.3 209.6,101.7 210,101.1 210.4,100.4 210.8,99.8 211.2,99.3 211.6,98.7 212,98.1 212.4,97.6 212.8,97.1 213.2,96.6 213.6,96.1 214,95.7 214.4,95.2 214.8,94.8 215.2,94.4 215.6,94 216,93.7 216.4,93.3 216.8,93 217.2,92.7 217.6,92.4 218,92.2 218.4,91.9 218.8,91.7 219.2,91.5 219.6,91.3 220,91.2 220.4,91 220.8,90.9 221.2,90.8 221.6,90.8 222,90.7 222.4,90.7 222.8,90.7 223.2,90.7 223.6,90.7 224,90.8 224.4,90.9 224.8,91 225.2,91.1 225.6,91.2 226,91.4 226.4,91.5 226.8,91.7 227.2,92 227.6,92.2 228,92.4 228.4,92.7 228.8,93 229.2,93.3 229.6,93.6 230,94 230.4,94.3 230.8,94.7 231.2,95.1 231.6,95.5 232,95.9 232.4,96.3 232.8,96.7 233.2,97.2 233.6,97.7 234,98.2 234.4,98.6 234.8,99.2 235.2,99.7 235.6,100.2 236,100.7 236.4,101.3 236.8,101.8 237.2,102.4 237.6,103 238,103.6 238.4,104.2 238.8,104.7 239.2,105.3 239.6,106 240,106.6 240.4,107.2 240.8,107.8 241.2,108.4 241.6,109.1 242,109.7 242.4,110.3 242.8,111 243.2,111.6 243.6,112.2 244,112.9 244.4,113.5 244.8,114.1 245.2,114.7 245.6,115.4 246,116 246.4,116.6 246.8,117.2 247.2,117.9 247.6,118.5 248,119.1 248.4,119.7 248.8,120.3 249.2,120.8 249.6,121.4 250,122 250.4,122.6 250.8,123.1 251.2,123.7 251.6,124.2 252,124.7 252.4,125.2 252.8,125.7 253.2,126.2 253.6,126.7 254,127.2 254.4,127.7 254.8,128.1 255.2,128.6 255.6,129 256,129.4 256.4,129.8 256.8,130.2 257.2,130.5 257.6,130.9 258,131.3 258.4,131.6 258.8,131.9 259.2,132.2 259.6,132.5 260,132.8 260.4,133 260.8,133.3 261.2,133.5 261.6,133.7 262,133.9 262.4,134.1 262.8,134.2 263.2,134.4 263.6,134.5 264,134.6 264.4,134.7 264.8,134.8 265.2,134.9 265.6,134.9 266,135 266.4,135 266.8,135 267.2,135 267.6,134.9 268,134.9 268.4,134.8 268.8,134.8 269.2,134.7 269.6,134.6 270,134.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"170\" y=\"233\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">balayage : 0,5 ms/div</text><text x=\"170\" y=\"251\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">sensibilité : 0,2 V/div</text><text x=\"65\" y=\"121\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,2 mW"
+        },
+        {
+          "id": "b",
+          "text": "0,72 W"
+        },
+        {
+          "id": "c",
+          "text": "8,6 mW"
+        },
+        {
+          "id": "d",
+          "text": "22 W"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Lecture : au premier extremum, |u_R₀| = 3 div × 0,2 V = 0,60 V, donc |i| = u_R₀/R₀ = 0,60 / 50 = 12 mA. La puissance dissipée dans tout le circuit est R·i² avec R = R₀ + r = 60 Ω : P = 60 × (1,2·10⁻²)² ≈ 8,6·10⁻³ W = 8,6 mW ✓. La valeur 7,2 mW ne compte que R₀ et oublie la résistance de la bobine. La valeur 0,72 W calcule R·i sans élever i au carré. La valeur 22 W utilise la tension au carré au lieu de l'intensité au carré.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un circuit LC (L = 0,125 H ; C = 2,0 µF) est chargé sous 7,5 V, avec la polarité opposée à celle prise pour orienter la charge : à t = 0, q(0) = −Q_m et i(0) = 0, avec q = Q_m·sin(ω₀t + φ). Quelle est l'expression de i(t) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "i(t) = 30·10⁻³·sin(2000·t)"
+        },
+        {
+          "id": "b",
+          "text": "i(t) = 30·10⁻³·cos(2000·t)"
+        },
+        {
+          "id": "c",
+          "text": "i(t) = 30·10⁻³·sin(2000·t + π)"
+        },
+        {
+          "id": "d",
+          "text": "i(t) = 4,8·10⁻³·sin(2000·t)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ω₀ = 1/√(0,125 × 2,0·10⁻⁶) = 2000 rad·s⁻¹ et Q_m = C·U = 15 µC. Avec q(0) = −Q_m, sin φ = −1 donc φ = −π/2 ; alors i = ω₀Q_m·cos(ω₀t − π/2) = I_m·sin(ω₀t − π/2 + π/2) = I_m·sin(ω₀t), avec I_m = 2000 × 15·10⁻⁶ = 30 mA ✓. L'expression en cosinus, I_m·sin(ω₀t + π/2), correspond à un condensateur déchargé à t = 0 avec un courant positif, non à q(0) = −Q_m. L'expression en sin(ω₀t + π) est celle du cas q(0) = +Q_m : elle ignore la polarité opposée. L'amplitude 4,8 mA multiplie Q_m par la fréquence N₀ ≈ 318 Hz au lieu de la pulsation.",
+      "difficulty": 3
+    }
+  ]
+}
