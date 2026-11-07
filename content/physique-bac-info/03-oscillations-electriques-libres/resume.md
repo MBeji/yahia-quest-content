@@ -1,0 +1,10 @@
+# 📜 Résumé : Oscillations électriques libres
+
+- **Oscillations libres amorties** : un condensateur chargé fermé sur une bobine (L ; r) et un résistor R₀, sans générateur, donne des oscillations de q et de i dont l'amplitude décroît ; elles sont pseudopériodiques, de pseudo-période T entre deux extrema de même sens (T/2 entre deux extrema de sens opposés). u_C = q/C est l'image de q, u_R₀ = R₀·i celle de i en convention récepteur.
+- **Régimes** : avec R = R₀ + r, plus R augmente, plus l'amortissement est fort, moins il y a d'oscillations et plus T augmente légèrement. Pour R assez grande le régime est apériodique et la décharge est d'autant plus lente que R est grande ; le régime critique est seulement nommé ; à R = 0 le régime est périodique.
+- **Équation différentielle** : u_C + u_b + u_R₀ = 0 avec u_b = r·i + L·di/dt et i = dq/dt donne d²q/dt² + (R/L)·dq/dt + q/(LC) = 0 ; R/L en s⁻¹, 1/(LC) en s⁻² ; q/C et non C·q.
+- **Bilan d'énergie** : E = E_C + E_L = q²/(2C) + ½·L·i² et dE/dt = −R·i². L'énergie décroît par effet Joule ; les transformations E_C ↔ E_L ne sont pas intégrales : le RLC libre est non conservatif ; aux extrema de u_C, E = ½·C·u_C².
+- **Circuit LC idéal** : d²q/dt² + ω₀²·q = 0 avec ω₀ = 1/√(LC) ; q = Q_m·sin(ω₀t + φ). Période propre T₀ = 2π√(LC), fréquence propre N₀ = 1/T₀, qui ne dépendent que de L et de C (L multipliée par 4 : T₀ multipliée par 2).
+- **Amplitude et phase** : Q_m vient de la charge initiale, φ du choix de l'origine des temps (φ = π/2 si l'origine est prise quand q est maximale et i = 0). i = dq/dt = I_m·sin(ω₀t + φ + π/2) avec I_m = ω₀Q_m.
+- **Conservation de l'énergie (LC)** : E = Q_m²/(2C) = ½·L·I_m² = ½·C·U_m², constante ; E_C = (Q_m²/4C)(1 + cos 2ω₀t) et E_L = ¼·L·I_m²(1 − cos 2ω₀t) oscillent en opposition avec la période T₀/2, les transformations étant intégrales.
+- **Exploiter un oscillogramme** : T = divisions × balayage entre deux extrema de même sens ; amplitude = divisions × sensibilité ; T ≈ T₀ si l'amortissement est faible, d'où L = T²/(4π²C) ; entre deux extrema (i = 0), ΔE = ½·C·(U₂² − U₁²) ; puissance moyenne dissipée = |ΔE|/Δt.
