@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas dans la récurrence",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle équation a pour solution positive le nombre d'or ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − x − 1 = 0"
+        },
+        {
+          "id": "b",
+          "text": "x² + x − 1 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x² − x − 2 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x² − 2x − 1 = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le nombre d'or (1 + √5) / 2 ≈ 1,618 vérifie x² = x + 1 : 1,618² ≈ 2,618 = 1,618 + 1 ✓. L'équation x² + x − 1 = 0 a pour solution positive (√5 − 1) / 2 ≈ 0,618, l'inverse du nombre d'or. L'équation x² − x − 2 = 0 a pour solution positive 2, car 4 − 2 − 2 = 0. L'équation x² − 2x − 1 = 0 a pour solution positive 1 + √2 ≈ 2,414.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La suite de Thue-Morse part de U0 = '0'. Combien de caractères a le terme U6 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "36"
+        },
+        {
+          "id": "d",
+          "text": "64"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaque caractère est remplacé par deux : la longueur double à chaque terme, donc U6 a 2⁶ = 64 caractères ✓. Le nombre 7 suppose un seul caractère de plus à chaque étape (6 + 1). Le nombre 12 double une seule fois la valeur 6 au lieu de doubler six fois. Le nombre 36 prend 6 × 6.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans Remplir_Mat, quelle instruction calcule une case intérieure T[ligne, colonne] du triangle de Pascal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T[ligne, colonne] := T[ligne - 1, colonne] + T[ligne - 1, colonne + 1]"
+        },
+        {
+          "id": "b",
+          "text": "T[ligne, colonne] := T[ligne, colonne - 1] + T[ligne - 1, colonne - 1]"
+        },
+        {
+          "id": "c",
+          "text": "T[ligne, colonne] := T[ligne - 1, colonne - 1] + T[ligne - 1, colonne - 2]"
+        },
+        {
+          "id": "d",
+          "text": "T[ligne, colonne] := T[ligne - 1, colonne] + T[ligne - 1, colonne - 1]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La formule additionne la case du dessus et sa voisine de gauche : T[ligne - 1, colonne] + T[ligne - 1, colonne - 1] ✓. Avec colonne + 1, on prend la voisine de droite : pour T[5,2], on obtient 3 + 3 = 6 au lieu de 4. Avec T[ligne, colonne - 1], on lit la case de la même ligne : T[5,2] vaudrait 1 + 1 = 2. Avec colonne - 2, on lit une case décalée de deux colonnes, qui n'existe même pas pour T[5,2].",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour N = 18 et U0 = N / 2, que vaut U1 = (U0 + N / U0) / 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,5"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "13,5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "U0 = 18 / 2 = 9, puis N / U0 = 18 / 9 = 2 et U1 = (9 + 2) / 2 = 5,5 ✓. Le nombre 10 oublie les parenthèses : 9 + 2 / 2 divise seulement 2 par 2. Le nombre 11 additionne 9 et 2 sans diviser par 2. Le nombre 13,5 additionne N au lieu de N / U0 : (9 + 18) / 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans Fibo_It1, avec u1 = u2 = 1 au départ, que contiennent u1 et u2 après la dernière passe de la boucle pour N = 8 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u1 = 21 et u2 = 34"
+        },
+        {
+          "id": "b",
+          "text": "u1 = 21 et u2 = 13"
+        },
+        {
+          "id": "c",
+          "text": "u1 = 13 et u2 = 21"
+        },
+        {
+          "id": "d",
+          "text": "u1 = 8 et u2 = 13"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Après la passe i = 7 : u1 = 8 et u2 = 13. À la passe i = 8 : F = 8 + 13 = 21, puis u1 = 13 et u2 = 21 ✓. Le couple (8, 13) est l'état après la passe 7 : la dernière passe est oubliée. Le couple (21, 13) inverse les rôles, alors que u2 est toujours le terme le plus récent. Le couple (21, 34) est l'état après la passe 9 : une passe de trop.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un type entier ne peut ranger que des valeurs inférieures ou égales à 1000. Quel est le plus grand terme de la suite de Fibonacci (U1 = U2 = 1) qu'il peut ranger ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "610"
+        },
+        {
+          "id": "b",
+          "text": "987"
+        },
+        {
+          "id": "c",
+          "text": "1000"
+        },
+        {
+          "id": "d",
+          "text": "1597"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les termes suivent 377, 610, 987, 1597 : 987 ≤ 1000 < 1597, donc 987 est le dernier terme qui tient ✓. Le nombre 610 est le terme précédent : on s'arrête un rang trop tôt. Le nombre 1000 n'est pas un terme de la suite. Le nombre 1597 dépasse la limite : il déborde.",
+      "difficulty": 2
+    }
+  ]
+}

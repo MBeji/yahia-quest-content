@@ -1,0 +1,153 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Lire et compléter du Pascal",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les trois actions d'une itération i du tri par insertion.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sauvegarder T[i] dans la variable Tmp"
+        },
+        {
+          "id": "b",
+          "text": "Décaler vers la droite les éléments supérieurs à Tmp, en partant de T[i − 1]"
+        },
+        {
+          "id": "c",
+          "text": "Écrire Tmp dans la case libérée T[j + 1]"
+        }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c"]
+      },
+      "explanation": "On sauvegarde d'abord T[i] dans Tmp, car le décalage va recouvrir sa case. On décale ensuite les éléments supérieurs à Tmp, ce qui libère une case. On écrit enfin Tmp dans cette case : écrire Tmp avant le décalage la ferait recouvrir un élément encore utile, et décaler avant la sauvegarde perdrait la valeur à insérer.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans Pos_Min (T, p, k), la variable m contient la position du plus petit élément déjà vu, avec m := p avant la boucle For i := p + 1 To k Do. Quelle instruction complète la boucle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "If T[i] < m Then m := i"
+        },
+        {
+          "id": "b",
+          "text": "If T[i] < T[m] Then m := i"
+        },
+        {
+          "id": "c",
+          "text": "If T[i] < T[m] Then m := T[i]"
+        },
+        {
+          "id": "d",
+          "text": "If T[i] > T[m] Then m := i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On compare la valeur T[i] à la valeur du meilleur candidat T[m], et si elle est plus petite on retient la position i ✓. L'instruction T[i] < m compare une valeur à une position, deux grandeurs qui n'ont rien en commun. L'instruction m := T[i] range une valeur dans une variable censée contenir une position. Le test T[i] > T[m] retient la position du plus grand élément, ce qui trierait en ordre décroissant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans Tri_Bulles (n, T), le passage numéro i (i de 1 à n − 1) compare des voisins avec For j := 1 To … Do. Quelle borne évite de comparer les valeurs déjà fixées en fin de tableau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "i"
+        },
+        {
+          "id": "b",
+          "text": "n"
+        },
+        {
+          "id": "c",
+          "text": "n - i"
+        },
+        {
+          "id": "d",
+          "text": "n - i + 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Au passage i, les i − 1 plus grandes valeurs sont déjà en fin ; il reste n − i + 1 cases, donc n − i couples de voisins : j va de 1 à n - i ✓. Avec n, le passage 1 compare T[n] à T[n + 1], qui n'existe pas. Avec n - i + 1, le passage 1 donne j = n et le même débordement. Avec i, le passage 1 ne compare qu'un seul couple et le tableau n'est pas parcouru.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans Tri_Insertion, la boucle While (j >= 1) And (T[j] > Tmp) Do décale les éléments vers la droite. Quelle instruction, placée après la boucle, range la valeur sauvegardée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T[j + 1] := Tmp"
+        },
+        {
+          "id": "b",
+          "text": "T[j] := Tmp"
+        },
+        {
+          "id": "c",
+          "text": "T[j - 1] := Tmp"
+        },
+        {
+          "id": "d",
+          "text": "T[i] := Tmp"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "À la sortie de la boucle, T[j] est le premier élément qui n'est pas supérieur à Tmp (ou j vaut 0) : la case libre est donc la case j + 1 ✓. Avec T[j], on écrase cet élément, ou la case 0 qui n'existe pas quand j vaut 0. Avec T[j - 1], on se trompe d'une case de plus, et la case peut même être la case − 1. Avec T[i], on remet Tmp dans sa case d'origine : pour [4, 6, 9, 2] à i = 4, les décalages donnent [4, 4, 6, 9], puis T[4] := 2 donne [4, 4, 6, 2], avec un 4 en double.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans Fusionner, la première boucle compare T1[c1] et T2[c2]. Quelle condition de While la fait s'arrêter dès qu'un des deux tableaux est épuisé, sans lire hors des données ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(c1 <= n1) And (c2 <= n2 + 1)"
+        },
+        {
+          "id": "b",
+          "text": "(c1 < n1) And (c2 < n2)"
+        },
+        {
+          "id": "c",
+          "text": "(c1 <= n1) Or (c2 <= n2)"
+        },
+        {
+          "id": "d",
+          "text": "(c1 <= n1) And (c2 <= n2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La boucle doit continuer tant que T1 et T2 ont encore un élément non lu : (c1 <= n1) And (c2 <= n2) ✓, et les deux boucles suivantes recopient le reste. Avec Or, la boucle continue tant qu'un seul tableau n'est pas épuisé, et elle lit T1[n1 + 1] ou T2[n2 + 1]. Avec c2 <= n2 + 1, elle lit T2[n2 + 1], qui n'existe pas, dès que T2 est épuisé. Avec les inégalités strictes, elle s'arrête un élément trop tôt : pour T1 = [1, 9] et T2 = [2, 3], on obtient [1, 9, 2, 3], qui n'est pas trié.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le tri par comptage, nb contient le nombre de valeurs strictement inférieures à T[i], toutes les valeurs de T étant distinctes. Dans quelle case de R faut-il ranger T[i] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "R[nb]"
+        },
+        {
+          "id": "b",
+          "text": "R[nb + 1]"
+        },
+        {
+          "id": "c",
+          "text": "R[i]"
+        },
+        {
+          "id": "d",
+          "text": "R[n - nb]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les nb valeurs plus petites occupent les cases 1 à nb de R, donc T[i] va en case nb + 1 ✓. Avec R[nb], le plus petit élément (nb = 0) viserait la case 0, qui n'existe pas, et tous les autres seraient décalés d'une case. Avec R[i], on recopie T sans le trier. Avec R[n - nb], les grandes valeurs vont en tête : ce serait un tri décroissant, et le plus petit élément viserait la case n.",
+      "difficulty": 2
+    }
+  ]
+}

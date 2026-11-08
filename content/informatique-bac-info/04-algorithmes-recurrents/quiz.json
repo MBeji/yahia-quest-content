@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Les algorithmes récurrents",
+  "questions": [
+    {
+      "prompt": "Quelle relation définit une suite récurrente d'ordre 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "V(n) = n × V(n−1)"
+        },
+        {
+          "id": "b",
+          "text": "V(n) = V(n−1) + 4"
+        },
+        {
+          "id": "c",
+          "text": "V(n) = V(n−1) + V(n−2) + V(n−3)"
+        },
+        {
+          "id": "d",
+          "text": "V(n) = V(n−1) + 2 × V(n−2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Cette relation a besoin des deux résultats précédents, V(n−1) et V(n−2) : c'est un ordre 2 ✓. La relation V(n−1) + 4 ne dépend que de V(n−1), le nombre 4 étant une constante, donc elle est d'ordre 1. La relation n × V(n−1) est d'ordre 1 aussi, car n n'est pas un résultat précédent. La relation à trois termes V(n−1), V(n−2) et V(n−3) est d'ordre 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les quotients Fib(n+1) / Fib(n) de la suite de Fibonacci se rapprochent de quel nombre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,618"
+        },
+        {
+          "id": "b",
+          "text": "1,5"
+        },
+        {
+          "id": "c",
+          "text": "1,618"
+        },
+        {
+          "id": "d",
+          "text": "2,236"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ces quotients tendent vers le nombre d'or (1 + √5) / 2 ≈ 1,618 ✓. Le nombre 0,618 est la limite du quotient inverse, Fib(n) / Fib(n+1). Le nombre 1,5 est le quotient 3 / 2 (n = 3), et non la limite : 8 / 5 = 1,6 et 13 / 8 = 1,625 le dépassent déjà. Le nombre 2,236 est √5 seul, sans le 1 ajouté ni la division par 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "En partant du caractère '1', que vaut le terme U3 de la suite de Thue-Morse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "01101001"
+        },
+        {
+          "id": "b",
+          "text": "10010110"
+        },
+        {
+          "id": "c",
+          "text": "10011001"
+        },
+        {
+          "id": "d",
+          "text": "11000011"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En partant de '1' : U1 = 10, U2 = 1001, puis chaque 1 devient 10 et chaque 0 devient 01, soit 10 01 01 10 = 10010110 ✓. La chaîne 01101001 vient de la règle inversée (1 devient 01, 0 devient 10) : c'est aussi U3 en partant de '0', le caractère de départ étant ignoré. La chaîne 10011001 recopie U2 deux fois au lieu de substituer. La chaîne 11000011 double chaque caractère (1 devient 11, 0 devient 00).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La ligne 7 du triangle de Pascal est 1 6 15 20 15 6 1. Que vaut MAT[8, 3] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "21"
+        },
+        {
+          "id": "c",
+          "text": "30"
+        },
+        {
+          "id": "d",
+          "text": "35"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "MAT[8,3] = MAT[7,3] + MAT[7,2] = 15 + 6 = 21 ✓. Le résultat 35 additionne MAT[7,3] et MAT[7,4], c'est-à-dire la case du dessus et sa voisine de droite au lieu de celle de gauche. Le résultat 30 compte la case du dessus deux fois (15 + 15). Le résultat 15 recopie la case du dessus sans rien ajouter.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle ligne forme un cas particulier correct pour une fonction récursive Fibo (N), avec U1 = U2 = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si N ≤ 2 Alors Fibo ← 1"
+        },
+        {
+          "id": "b",
+          "text": "Si N = 1 Alors Fibo ← 1"
+        },
+        {
+          "id": "c",
+          "text": "Si N ≤ 1 Alors Fibo ← 1"
+        },
+        {
+          "id": "d",
+          "text": "Si N ≤ 2 Alors Fibo ← 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec N ≤ 2 et la valeur 1, Fibo (1) = Fibo (2) = 1, puis Fibo (3) = Fibo (2) + Fibo (1) = 2 ✓. Avec le seul test N = 1, Fibo (2) appelle Fibo (1) et Fibo (0), puis Fibo (0) appelle Fibo (−1) : les appels ne s'arrêtent pas. Avec N ≤ 1, Fibo (2) = Fibo (1) + Fibo (0) = 1 + 1 = 2 : tous les termes sont décalés. Avec la valeur 2, Fibo (3) = 2 + 2 = 4 au lieu de 2.",
+      "difficulty": 2
+    }
+  ]
+}

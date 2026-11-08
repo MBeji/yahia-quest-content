@@ -1,0 +1,133 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des traces",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur les algorithmes de tri, lesquelles sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Après un passage du tri à bulles croissant, la plus grande valeur est à sa place définitive"
+        },
+        {
+          "id": "b",
+          "text": "Après l'étape i du tri par sélection, T[1..i] contient les i plus petits éléments, à leur place définitive"
+        },
+        {
+          "id": "c",
+          "text": "À chaque itération du tri par insertion, un seul élément est décalé"
+        },
+        {
+          "id": "d",
+          "text": "Le tri Shell peut s'arrêter dès que le pas vaut 4, car le tableau est alors trié"
+        },
+        {
+          "id": "e",
+          "text": "La fusion de deux tableaux triés de n1 et n2 éléments donne un tableau trié de n1 + n2 éléments"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "Le passage du tri à bulles pousse la plus grande valeur jusqu'en dernière case : elle y reste ✓. La sélection place à l'étape i le minimum de T[i..n] en case i, et les cases 1 à i sont donc définitives ✓. La fusion recopie chacun des n1 + n2 éléments dans le tableau résultat, qui est trié ✓. L'insertion peut décaler plusieurs éléments : pour [3, 4, 5, 2], l'itération 4 décale 5, 4 et 3. Un passage de pas 4 ne compare que des cases distantes de 4 : pour [5, 9, 1, 4, 7, 3], il donne [5, 3, 1, 4, 7, 9], qui n'est pas trié ; le pas 1 est indispensable.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On applique le tri par sélection à T = [10, 25, 3, 18, 31, 7, 40]. Combien d'échanges effectifs (entre deux cases différentes) sont faits en tout ? Une étape dont le minimum est déjà en place n'échange rien.",
+      "answerKey": {
+        "value": 3,
+        "unit": "échanges"
+      },
+      "explanation": "Étape 1 : le minimum 3 est en case 3, échange avec T[1], T = [3, 25, 10, 18, 31, 7, 40]. Étape 2 : le minimum de T[2..7] est 7, en case 6, échange avec T[2], T = [3, 7, 10, 18, 31, 25, 40]. Étapes 3 et 4 : 10 et 18 sont déjà en place, aucun échange. Étape 5 : le minimum de T[5..7] est 25, en case 6, échange avec T[5], T = [3, 7, 10, 18, 25, 31, 40]. Étape 6 : 31 est en place. Au total 3 échanges ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Combien de permutations le tri à bulles croissant (avec arrêt au passage sans permutation) effectue-t-il en tout sur T = [5, 3, 8, 1, 6] ?",
+      "answerKey": {
+        "value": 5,
+        "unit": "permutations"
+      },
+      "explanation": "Passage 1 : 5 > 3 permute, 8 > 1 permute, 8 > 6 permute, T = [3, 5, 1, 6, 8] (3 permutations). Passage 2 : 5 > 1 permute, T = [3, 1, 5, 6, 8] (1 permutation). Passage 3 : 3 > 1 permute, T = [1, 3, 5, 6, 8] (1 permutation). Passage 4 : aucune permutation, arrêt. Total 3 + 1 + 1 = 5 permutations ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On applique le tri Shell à T = [34, 7, 21, 12, 29, 3, 18, 9] (n = 8). Que contient T juste après le passage de pas 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[29, 7, 21, 12, 34, 3, 18, 9]"
+        },
+        {
+          "id": "b",
+          "text": "[29, 3, 18, 9, 34, 7, 21, 12]"
+        },
+        {
+          "id": "c",
+          "text": "[7, 12, 21, 34, 3, 9, 18, 29]"
+        },
+        {
+          "id": "d",
+          "text": "[3, 7, 9, 12, 18, 21, 29, 34]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les sous-vecteurs de pas 4 sont les cases {1, 5} = (34, 29), {2, 6} = (7, 3), {3, 7} = (21, 18) et {4, 8} = (12, 9) ; chacun est trié : (29, 34), (3, 7), (18, 21), (9, 12), d'où [29, 3, 18, 9, 34, 7, 21, 12] ✓. Le tableau [29, 7, 21, 12, 34, 3, 18, 9] ne traite que le premier sous-vecteur. Le tableau [7, 12, 21, 34, 3, 9, 18, 29] trie deux blocs de quatre cases consécutives, ce qui confond le pas avec une découpe en blocs. Le tableau trié [3, 7, 9, 12, 18, 21, 29, 34] est le résultat final, obtenu seulement après le passage de pas 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On fusionne T1 = [3, 11, 14, 26] et T2 = [5, 8, 9, 20, 30, 31]. Que vaut T[7], le septième élément du tableau fusionné ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        },
+        {
+          "id": "d",
+          "text": "26"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le tableau fusionné est [3, 5, 8, 9, 11, 14, 20, 26, 30, 31] : son septième élément est 20 ✓. La valeur 9 est le septième élément de T1 suivi de T2 sans interclassement, [3, 11, 14, 26, 5, 8, 9]. La valeur 14 est le sixième élément du tableau fusionné, un décalage d'une place. La valeur 26 est le septième si l'on prend un élément de chaque tableau tour à tour (3, 5, 11, 8, 14, 9, 26), ce qui ignore la comparaison.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Six élèves ont pour moyennes 14, 17, 14, 11, 17 et 14, dans cet ordre de saisie. Quels rangs reçoivent, dans cet ordre, l'élève de moyenne 11 puis un élève de moyenne 14 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 et 3"
+        },
+        {
+          "id": "b",
+          "text": "7 et 6"
+        },
+        {
+          "id": "c",
+          "text": "4 et 1"
+        },
+        {
+          "id": "d",
+          "text": "3 et 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour 11, les cinq autres moyennes sont strictement supérieures : rang 1 + 5 = 6. Pour 14, seules les deux moyennes 17 sont strictement supérieures : rang 1 + 2 = 3 ✓. Les rangs 7 et 6 comptent chaque élève lui-même avec ≥. Les rangs 4 et 1 sont les positions dans l'ordre de saisie (la moyenne 11 est saisie en quatrième, la première 14 en premier) et non des rangs. Les rangs 3 et 2 numérotent les valeurs distinctes 17, 14, 11 sans tenir compte des ex æquo, qui font sauter des rangs.",
+      "difficulty": 3
+    }
+  ]
+}
