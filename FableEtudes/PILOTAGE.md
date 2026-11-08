@@ -43,7 +43,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Économie et gestion | mathématiques | `222463` | ❌ aucune | — | A1 |
 | Économie et gestion | économie | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
 | Lettres | arabe | `201421` + `201422` | ❌ aucune | — | A1 |
-| Lettres | philosophie | `210422` + `210423` | 🔄 lue à 100 % à l'image (727 p.), `partielle`/`mixte` : R-7 sous la barre après deux passes (2026-11-08) ; 3e lecture ciblée des sections à fort taux d'écart requise | 0/8 chapitres | 3e lecture ciblée (voir `suivi/bac-lettres.json`), puis `validee-r7` ; ensuite A4+ (génération) |
+| Lettres | philosophie | `210422` + `210423` | ✅ validée R-7 avec réserve (2026-11-08) : 727 p. lues, 6 passes, bloc tome 1 p.183-193 à confronter à la page | 0/8 chapitres | génération des 8 chapitres (un par محور), thèses/mouvements confrontés à la page ; ouverture du parcours Bac Lettres au moteur à porter |
 
 Matières communes, au rang suivant : philosophie des sections scientifiques (`210402` ; fiche `bac-math`
 partielle 75 %, tenue par `feat/transcription-bac-philosophie-mabhath2`), arabe (`201403`), français

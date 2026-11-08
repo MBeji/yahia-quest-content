@@ -5,12 +5,12 @@
 > - **Tome 1** `210422P00.pdf` — 327 p. (page PDF = page imprimée) : محاور 1-4, فهرس ص 323.
 > - **Tome 2** `210423P00.pdf` — 400 p. (page PDF = page imprimée ; numérotation recommencée, توطئة ص 3) : محاور 1-4, فهرس ص 396.
 >
-> **Pages lues** : **les 727 pages des deux tomes, à l'image** (L3, 2026-11-07 ; pages de garde incluses). **Statut** : `partielle` / `mixte` —
-> transcription complète, **R-7 non passée** (voir §9) : génération interdite (R-5). **Langue** : `ar`. **gradeSlug** : `bac-lettres`. **subject id** : `philosophie-bac-lettres`.
+> **Pages lues** : **les 727 pages des deux tomes, à l'image** (L3, 2026-11-07 ; pages de garde incluses). **Statut** : `validee-r7` (avec réserve) / `generation` —
+> transcription complète, R-7 passée avec réserve (§9-§11) : génération autorisée. **Langue** : `ar`. **gradeSlug** : `bac-lettres`. **subject id** : `philosophie-bac-lettres`.
 > **Transcrit le** : 2026-11-07 (A1).
 >
 > ⚠️ Couche texte inexploitable en l'état : polices `AXt*` (Gihane, Youmna, Faten…) à encodage propriétaire.
-> Lecture suivante (A3) : à l'image par lots, ou table glyphe→lettre validée sur vérités-terrain (cf. `6eme-base/arabe.md` § 7).
+> Réserve R-7 : confronter les thèses et mouvements à la page du manuel à l'écriture, surtout tome 1 p.183-193.
 
 ## 4. Chapitrage retenu (→ `manifest/bac-lettres.json`)
 
