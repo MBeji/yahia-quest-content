@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers calculs d'arithmétique",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "On applique la méthode de la différence à (a, b) = (48, 18). Quel couple obtient-on après la deuxième étape ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(30, 18)"
+        },
+        {
+          "id": "b",
+          "text": "(12, 18)"
+        },
+        {
+          "id": "c",
+          "text": "(12, 6)"
+        },
+        {
+          "id": "d",
+          "text": "(6, 6)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Étape 1 : 48 > 18, donc a devient 48 − 18 = 30, couple (30, 18). Étape 2 : 30 > 18, donc a devient 30 − 18 = 12, couple (12, 18) ✓. Le couple (30, 18) est celui de la première étape. Le couple (12, 6) n'arrive qu'à la troisième étape, quand b devient 18 − 12 = 6. Le couple (6, 6) est le dernier : a = b = 6 est le PGCD.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut A₅⁴, le nombre d'arrangements de 4 éléments parmi 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "625"
+        },
+        {
+          "id": "b",
+          "text": "24"
+        },
+        {
+          "id": "c",
+          "text": "60"
+        },
+        {
+          "id": "d",
+          "text": "120"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "A₅⁴ = 5 × 4 × 3 × 2 = 120 ✓ : quatre facteurs, de 5 jusqu'à n − p + 1 = 2 ; c'est aussi A₅⁵ = 5!, car le facteur 1 manquant ne change pas le produit. Le nombre 24 = 4! confond le nombre d'arrangements avec p!. Le nombre 60 = A₅³ s'arrête un facteur trop tôt. Le nombre 625 = 5⁴ autorise le même élément plusieurs fois, alors qu'un arrangement prend des éléments distincts.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans quel cas calcule-t-on une combinaison, et non un arrangement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choisir 3 élèves parmi 10 pour former une équipe de volontaires"
+        },
+        {
+          "id": "b",
+          "text": "Classer 3 élèves parmi 10 sur le podium : 1er, 2e et 3e"
+        },
+        {
+          "id": "c",
+          "text": "Choisir parmi 10 élèves un président, un secrétaire et un trésorier"
+        },
+        {
+          "id": "d",
+          "text": "Composer un code de 3 chiffres tous différents, avec les chiffres de 0 à 9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une équipe de volontaires n'a ni ordre ni rôles : choisir Aya, Sami et Nour, c'est choisir la même équipe quel que soit l'ordre, donc une combinaison C₁₀³ ✓. Le podium, les trois rôles et le code de 3 chiffres distincts ont chacun un ordre qui compte : échanger deux éléments change le résultat, ce sont des arrangements.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Lequel de ces nombres est divisible par 5 mais pas par 10 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 332"
+        },
+        {
+          "id": "b",
+          "text": "3 240"
+        },
+        {
+          "id": "c",
+          "text": "7 050"
+        },
+        {
+          "id": "d",
+          "text": "8 615"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le nombre 8 615 se termine par 5 : il est divisible par 5, et pas par 10 qui exige un chiffre des unités égal à 0 ✓. Les nombres 3 240 et 7 050 se terminent par 0 : ils sont divisibles par 5 et par 10. Le nombre 2 332 se termine par 2 : il n'est divisible ni par 5 ni par 10.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la boucle de la fonction Pgcd, quelle instruction faut-il à la place des points ?\nTant que a ≠ b Faire Si a > b Alors a ← a - b Sinon … Fin Si Fin Tant que",
+      "options": [
+        {
+          "id": "a",
+          "text": "a ← a - b"
+        },
+        {
+          "id": "b",
+          "text": "b ← b - a"
+        },
+        {
+          "id": "c",
+          "text": "a ← b - a"
+        },
+        {
+          "id": "d",
+          "text": "b ← a - b"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand a < b, il faut retrancher a de b : b ← b - a garde un couple d'entiers positifs ✓. Avec a ← a - b, le couple (4, 6) donne a = −2, puis −8 : a s'éloigne de b et la boucle ne s'arrête pas. Avec a ← b - a, (4, 6) donne (2, 6), puis (4, 6) de nouveau : le couple tourne en rond. Avec b ← a - b, b devient négatif (4 − 6 = −2), puis a grandit sans fin.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lequel de ces nombres est divisible par 3 mais pas par 9 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 245"
+        },
+        {
+          "id": "b",
+          "text": "3 173"
+        },
+        {
+          "id": "c",
+          "text": "4 105"
+        },
+        {
+          "id": "d",
+          "text": "5 274"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour 1 245, la somme des chiffres vaut 1 + 2 + 4 + 5 = 12 : divisible par 3 (12 = 3 × 4), pas par 9 (12 = 9 + 3) ✓. Pour 5 274, la somme vaut 18, divisible par 3 et par 9 : ce nombre est donc divisible par 9, ce que la question exclut. Pour 3 173, la somme vaut 14, et pour 4 105 elle vaut 10 : ni 3 ni 9.",
+      "difficulty": 2
+    }
+  ]
+}

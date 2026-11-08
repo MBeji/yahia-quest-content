@@ -1,0 +1,126 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des suites",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces traitements, lesquels sont récurrents d'ordre 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "W(k) = 2 × W(k−1) − W(k−2)"
+        },
+        {
+          "id": "b",
+          "text": "W(k) = W(k−1) − 5"
+        },
+        {
+          "id": "c",
+          "text": "le calcul d'une case MAT[l, c] du triangle de Pascal"
+        },
+        {
+          "id": "d",
+          "text": "le passage de U(n−1) à U(n) dans la suite de Thue-Morse"
+        },
+        {
+          "id": "e",
+          "text": "S ← S + T[k], un cumul sur un tableau T"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c"]
+      },
+      "explanation": "La relation 2 × W(k−1) − W(k−2) a besoin des deux résultats précédents : ordre 2 ✓. Une case MAT[l, c] du triangle de Pascal dépend de deux cases de la ligne précédente, MAT[l−1, c] et MAT[l−1, c−1] : ordre 2 ✓. La relation W(k−1) − 5 ne dépend que de W(k−1) : ordre 1. Le passage de U(n−1) à U(n) en Thue-Morse ne dépend que du terme précédent : ordre 1. Le cumul S ← S + T[k] ne dépend que de l'ancien S : ordre 1.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On pose N = 20, U0 = N / 2 et U(n+1) = (U(n) + N / U(n)) / 2. Calculer U2, arrondi au millième.",
+      "answerKey": {
+        "value": 4.667,
+        "tolerance": 0.001
+      },
+      "explanation": "U0 = 20 / 2 = 10, puis U1 = (10 + 20 / 10) / 2 = (10 + 2) / 2 = 6. Ensuite U2 = (6 + 20 / 6) / 2 = (6 + 3,3333) / 2 = 4,6667, soit 4,667 au millième ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur Fibo_It1, Fibo_It2 et Fibo_Rec, lesquelles sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fibo_It2 range tous les termes de la suite dans le tableau T"
+        },
+        {
+          "id": "b",
+          "text": "Fibo_It1 ne conserve que les deux derniers termes, dans u1 et u2"
+        },
+        {
+          "id": "c",
+          "text": "Fibo_Rec contient une boucle Pour qui parcourt les rangs de 3 à N"
+        },
+        {
+          "id": "d",
+          "text": "Pour N = 1, les trois versions rendent 1"
+        },
+        {
+          "id": "e",
+          "text": "Fibo_It1 est d'ordre 1, car il n'utilise qu'une seule boucle"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "d"]
+      },
+      "explanation": "Fibo_It2 écrit chaque terme dans T[i] ✓, et Fibo_It1 ne garde que u1 et u2 ✓. Pour N = 1, la boucle de 3 à N est vide dans les versions itératives et le cas N ≤ 2 de Fibo_Rec rend 1 : les trois rendent 1 ✓. Fibo_Rec n'a aucune boucle : elle se rappelle elle-même. Fibonacci est d'ordre 2, le nombre de boucles n'entrant pas dans l'ordre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans Fibo_It1, on remplace l'initialisation par u1 ← 0 et u2 ← 1, le reste étant inchangé (N ≤ 2 donne toujours F ← 1). Que rend Fibo_It1 (8) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "21"
+        },
+        {
+          "id": "d",
+          "text": "34"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec u1 = 0 et u2 = 1, les six passes (i = 3 à 8) donnent 1, 2, 3, 5, 8, 13 : la fonction rend 13, soit Fibo (7), car la suite est décalée d'un rang ✓. Le nombre 8 est le résultat de la cinquième passe, la dernière étant oubliée. Le nombre 21 est la bonne valeur de Fibo (8), mais ce départ ne la produit pas. Le nombre 34 est Fibo (9) : il décale la suite dans le mauvais sens, alors que partir de 0 et 1 la retarde d'un rang.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Val_Triangle (col, lig) rend 1 si col = 1 ou col = lig, sinon Val_Triangle (col, lig − 1) + Val_Triangle (col − 1, lig − 1). Combien d'appels (le premier compris) lance Val_Triangle (4, 6) ? Répondre par un nombre d'appels.",
+      "answerKey": {
+        "value": 19,
+        "unit": "appels"
+      },
+      "explanation": "Notons n(c, l) le nombre d'appels : un bord compte 1, sinon 1 + n(c, l−1) + n(c−1, l−1). Alors n(4,4) = 1 et n(3,4) = 1 + n(3,3) + n(2,3) = 1 + 1 + 3 = 5, d'où n(4,5) = 1 + 1 + 5 = 7. De même n(3,5) = 1 + n(3,4) + n(2,4) = 1 + 5 + 5 = 11. Donc n(4,6) = 1 + n(4,5) + n(3,5) = 1 + 7 + 11 = 19 appels ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une suite vérifie U1 = 1, U2 = 3 et U(i) = U(i−1) + U(i−2), avec V(i) = U(i) / U(i−1). Un programme calcule V(2), puis répète i ← i + 1 et les calculs de U(i) et V(i) jusqu'à |V(i) − V(i−1)| < 0,01. Quel est le rang i d'arrêt ? Répondre par un rang.",
+      "answerKey": {
+        "value": 8,
+        "unit": "rang"
+      },
+      "explanation": "Les termes sont 1, 3, 4, 7, 11, 18, 29, 47. Les quotients valent V3 ≈ 1,3333, V4 = 1,75, V5 ≈ 1,5714, V6 ≈ 1,6364, V7 ≈ 1,6111 et V8 ≈ 1,6207. Les écarts successifs valent 1,6667, 0,4167, 0,1786, 0,0649, 0,0253, puis 0,0096 au rang 8. Le premier écart inférieur à 0,01 apparaît au rang 8 ✓.",
+      "difficulty": 3
+    }
+  ]
+}
