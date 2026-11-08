@@ -1,0 +1,7 @@
+# 📜 Résumé : Les enregistrements
+
+- **Définir un enregistrement** : un enregistrement regroupe des champs nommés de types différents ; on déclare d'abord le type (`Enregistrement … Fin` en algorithmique, `Record … End;` en Pascal), puis la variable de ce type. Un type utilisé comme champ se déclare avant celui qui le contient, et déclarer le type ne crée aucune fiche.
+- **Atteindre un champ** : `variable.champ` désigne un champ, qui se traite comme une variable de son type (affecter, `ReadLn`, `Write`) ; avec un champ imbriqué, on enchaîne les points. `k := j` recopie toute la fiche entre deux variables du même type, sans lier k à j.
+- **Avec … Faire** : `With j Do Begin … End;` évite de répéter `j.` ; Begin et End dès qu'il y a plusieurs instructions, et le préfixe reste obligatoire pour une autre variable.
+- **Vecteur d'enregistrements** : `Array[1..40] Of Joueur` ; la fiche de rang i est `T[i]`, son champ `T[i].champ`, jamais `T.champ[i]`. On contrôle N à la saisie avec `Jusqu'à (N ≥ 2) ET (N ≤ 40)`, on parcourt de 1 à N, on compte à partir de 0, le pourcentage vaut `nb * 100 / N`, et le paramètre que la procédure modifie se déclare avec `Var`.
+- **Recherche dans un vecteur** : on avance avec `Tant que (i ≤ N) ET (T[i].champ ≠ valeur)` ; à la sortie, i ≤ N signifie trouvé en T[i], et i = N + 1 signifie absent, d'où le test de i avant de lire T[i] ; la première fiche rencontrée l'emporte.

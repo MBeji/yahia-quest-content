@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Les premiers pas avec les fichiers",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle phrase décrit correctement un fichier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un groupe de champs de types différents, rangés en mémoire sous un seul nom"
+        },
+        {
+          "id": "b",
+          "text": "Un tableau dont la taille est fixée avant l'exécution du programme"
+        },
+        {
+          "id": "c",
+          "text": "Un ensemble de données de même type, nommé et enregistré sur un support"
+        },
+        {
+          "id": "d",
+          "text": "Une zone de mémoire qui se vide à la fin du programme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un fichier est un ensemble structuré de données de même type, nommé et enregistré sur un support comme un disque dur ou une clé USB ✓. Le groupe de champs de types différents décrit un enregistrement. Un tableau et une zone de mémoire vivent dans la mémoire et disparaissent avec le programme, alors qu'un fichier lui survit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un fichier contient 20, 30, 40, 50. On l'ouvre avec Reset, puis on exécute deux Read. Que vaut alors le pointeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Après Reset, le pointeur vaut 0. Chaque Read avance le pointeur d'une position : après deux lectures il vaut 2 ✓ et désigne l'élément 40. La valeur 1 correspond à une seule lecture. La valeur 3 vient d'un comptage à partir de 1. La valeur 4 est la taille du fichier.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle instruction Pascal correspond à Fermer (scores) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reset (scores)"
+        },
+        {
+          "id": "b",
+          "text": "Rewrite (scores)"
+        },
+        {
+          "id": "c",
+          "text": "Erase (scores)"
+        },
+        {
+          "id": "d",
+          "text": "Close (scores)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Fermer se traduit par Close en Pascal ✓. Reset traduit Ouvrir, Rewrite traduit Recréer et Erase traduit Effacer : ces trois instructions ouvrent ou détruisent le fichier au lieu de le fermer.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle déclaration définit un type fichier dont les composants sont des réels ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F_Reel = File Of Real;"
+        },
+        {
+          "id": "b",
+          "text": "F_Reel = Array[1..100] Of Real;"
+        },
+        {
+          "id": "c",
+          "text": "F_Reel = Record x : Real End;"
+        },
+        {
+          "id": "d",
+          "text": "F_Reel = Text;"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un type fichier se déclare par File Of suivi du type des composants : File Of Real pour des réels ✓. Un tableau de 100 réels reste en mémoire. Un enregistrement groupe des champs mais ne constitue pas un fichier. Le type Text déclare un fichier de caractères organisé en lignes, pas de réels.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le fichier f contient 7 éléments et son pointeur vaut 7. Que renvoie Eof (f) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faux, car il reste encore un élément à lire"
+        },
+        {
+          "id": "b",
+          "text": "Faux, car le fichier n'est pas fermé avant"
+        },
+        {
+          "id": "c",
+          "text": "Vrai, car le dernier élément a le numéro 6"
+        },
+        {
+          "id": "d",
+          "text": "Vrai, car le fichier ne contient aucun élément"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les éléments portent les numéros 0 à 6 : un pointeur à 7 est placé après le dernier élément, donc Eof (f) est vrai ✓. Il ne reste aucun élément à lire. L'état ouvert ou fermé ne change pas ce test. Le fichier n'est pas vide, il contient 7 éléments.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle instruction ajoute une ligne à la fin d'un fichier texte, sans effacer les lignes existantes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rewrite (f) puis WriteLn (f, ligne)"
+        },
+        {
+          "id": "b",
+          "text": "Reset (f) puis WriteLn (f, ligne)"
+        },
+        {
+          "id": "c",
+          "text": "Erase (f) puis WriteLn (f, ligne)"
+        },
+        {
+          "id": "d",
+          "text": "Append (f) puis WriteLn (f, ligne)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Append ouvre le fichier texte, place le pointeur à la fin et ne permet que l'ajout : les anciennes lignes restent, puis WriteLn écrit la nouvelle ✓. Rewrite ouvre en effaçant tout le contenu. Reset ouvre un fichier texte en lecture, donc l'écriture y est impossible. Erase supprime le fichier lui-même.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Chaînes, tableaux et traduction Pascal",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Dans Inverse (ch), on veut que Inverse ('abc') rende 'cba'. Quelle ligne complète le cas général Sinon Inverse := … ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ch[1] + Inverse (Copy (ch, 2, Length (ch) - 1))"
+        },
+        {
+          "id": "b",
+          "text": "ch[Length (ch)] + Inverse (Copy (ch, 2, Length (ch) - 1))"
+        },
+        {
+          "id": "c",
+          "text": "ch[Length (ch)] + Inverse (Copy (ch, 1, Length (ch) - 1))"
+        },
+        {
+          "id": "d",
+          "text": "Inverse (Copy (ch, 1, Length (ch) - 1))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On place le dernier caractère en tête, puis on inverse la chaîne privée de ce dernier caractère, soit Copy (ch, 1, Length (ch) - 1) : 'c' + 'ba' = 'cba' ✓. Avec ch[1] et le reste, l'ordre n'est jamais changé et on retrouve 'abc'. Avec le dernier caractère mais le reste pris à partir de la position 2, on obtient 'ccc'. Sans caractère ajouté, la fonction rend toujours la chaîne vide.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la traduction Pascal de Sous_chaîne (ch, 2, Long (ch) - 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Copy (ch, 2, Long (ch) - 2)"
+        },
+        {
+          "id": "b",
+          "text": "Copy (ch, Length (ch) - 2, 2)"
+        },
+        {
+          "id": "c",
+          "text": "Sous_chaîne (ch, 2, Length (ch) - 2)"
+        },
+        {
+          "id": "d",
+          "text": "Copy (ch, 2, Length (ch) - 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sous_chaîne se traduit par Copy et Long par Length, dans le même ordre d'arguments (chaîne, position de départ, nombre de caractères), ce qui donne Copy (ch, 2, Length (ch) - 2) ✓. Garder Long ou Sous_chaîne laisse un nom du pseudo-langage que Pascal ne connaît pas. Inverser les deux derniers arguments change la position de départ et le nombre de caractères copiés.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Prod2 (n) vaut 1 si n = 0, et n * Prod2 (n - 2) sinon. Quelle condition d'arrêt garantit l'arrêt pour tout n ≥ 0 et donne Prod2 (6) = 48 et Prod2 (7) = 105 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si n = 1 Alors Prod2 ← 1"
+        },
+        {
+          "id": "b",
+          "text": "Si n < 0 Alors Prod2 ← 1"
+        },
+        {
+          "id": "c",
+          "text": "Si n ≤ 1 Alors Prod2 ← 1"
+        },
+        {
+          "id": "d",
+          "text": "Si n = 0 Ou n = 2 Alors Prod2 ← 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec n ≤ 1, les arguments pairs finissent à 0 et les impairs à 1, tous deux attrapés : Prod2 (6) = 6 × 4 × 2 × 1 = 48 et Prod2 (7) = 7 × 5 × 3 × 1 = 105 ✓. Le test n = 1 laisse boucler les n pairs (6, 4, 2, 0, −2, …). Le test n < 0 arrête les appels, mais Prod2 (0) vaudrait 0 × 1 = 0 et Prod2 (6) serait nul. Le test n = 0 ou n = 2 laisse boucler les n impairs (7, 5, 3, 1, −1, …).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Cpt (ch) vaut 0 si ch est vide, sinon Cpt (ch) = x + Cpt (Copy (ch, 2, Length (ch) - 1)), avec x = 1 si ch[1] = 'a' et x = 0 sinon. Que renvoie Cpt ('banane') ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La fonction compte les lettres 'a' : dans 'banane', ch[1] = 'b' donne 0, puis 'a' donne 1, 'n' donne 0, 'a' donne 1, 'n' donne 0 et 'e' donne 0, soit 2 ✓. Le résultat 6 est la longueur de la chaîne, obtenue en comptant tous les caractères. Le résultat 3 compte toutes les voyelles (a, a, e). Le résultat 1 s'arrête au premier 'a' au lieu de parcourir toute la chaîne.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "T = [3, 6, 9, 12, 15, 18, 21, 24]. On appelle Dichotomique (1, 8, 18, T), avec milieu = (deb + fin) Div 2. Quelles valeurs successives prend milieu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 puis 5"
+        },
+        {
+          "id": "b",
+          "text": "4 puis 6"
+        },
+        {
+          "id": "c",
+          "text": "5 puis 6"
+        },
+        {
+          "id": "d",
+          "text": "5 puis 7"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Premier appel : (1 + 8) Div 2 = 4 et T[4] = 12 ; comme 18 > 12, on rappelle sur (5, 8). Second appel : (5 + 8) Div 2 = 6 et T[6] = 18 : valeur trouvée, la suite est donc 4 puis 6 ✓. La suite 5 puis 7 arrondit le premier milieu vers le haut (4,5 devient 5, T[5] = 15, puis sous-tableau (6, 8) et milieu 7). La suite 4 puis 5 rappelle bien sur (5, 8) mais prend milieu = deb. La suite 5 puis 6 arrondit le premier milieu vers le haut, garde ce milieu dans le sous-tableau (5, 8), puis calcule (5 + 8) Div 2 = 6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle version itérative est équivalente à Factorielle (n), pour tout n ≥ 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F := 0; For i := 1 To n Do F := F * i"
+        },
+        {
+          "id": "b",
+          "text": "F := 1; For i := 1 To n Do F := F + i"
+        },
+        {
+          "id": "c",
+          "text": "F := 1; For i := 2 To n - 1 Do F := F * i"
+        },
+        {
+          "id": "d",
+          "text": "F := 1; For i := 2 To n Do F := F * i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'initialisation F := 1 correspond au cas particulier (0! = 1), et le corps F := F * i au cas général, pour i de 2 à n ✓. Pour n = 0 ou n = 1, la boucle ne s'exécute pas et F reste 1. Avec F := 0, tous les produits sont nuls. Avec F + i, on calcule une somme. Avec n - 1 comme borne, le facteur n manque.",
+      "difficulty": 2
+    }
+  ]
+}

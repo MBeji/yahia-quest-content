@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Traduire, corriger, diagnostiquer",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle écriture Pascal traduit ce bloc algorithmique ?\nAvec e Faire\n  Lire (nom)\n  Lire (moy)\nFin Avec",
+      "options": [
+        {
+          "id": "a",
+          "text": "With e Faire Begin ReadLn(nom); ReadLn(moy); End;"
+        },
+        {
+          "id": "b",
+          "text": "With e Begin ReadLn(nom); ReadLn(moy); End;"
+        },
+        {
+          "id": "c",
+          "text": "With e Do Begin ReadLn(nom); ReadLn(moy); End;"
+        },
+        {
+          "id": "d",
+          "text": "With Do e Begin ReadLn(nom); ReadLn(moy); End;"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La structure Avec e Faire … Fin Avec se traduit par With e Do Begin … End; : le mot With, la variable, le mot Do, puis le bloc entouré de Begin et End ✓. Le mot Faire est algorithmique, Pascal écrit Do. Sans Do, la ligne n'est pas une instruction With. Placer Do avant la variable inverse l'ordre des mots.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle déclaration Pascal traduit Tab = Tableau de 40 Joueur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tab = Joueur[1..40];"
+        },
+        {
+          "id": "b",
+          "text": "Tab = Record[1..40] Of Joueur;"
+        },
+        {
+          "id": "c",
+          "text": "Tab = Array[Joueur] Of 1..40;"
+        },
+        {
+          "id": "d",
+          "text": "Tab = Array[1..40] Of Joueur;"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un tableau Pascal se déclare Array[bornes] Of type_des_éléments : Array[1..40] Of Joueur est un tableau de 40 fiches ✓. L'écriture Joueur[1..40] imite d'autres langages et n'existe pas en Pascal. Array[Joueur] Of 1..40 inverse les rôles, car les indices ne peuvent pas être des fiches. Le mot Record sert à définir une fiche, pas un tableau.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "e est de type Etudiant (champs nom et moy). Le compilateur refuse l'instruction suivante :\nReadLn(e);\nPourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ReadLn ne s'emploie qu'à l'intérieur d'une structure With"
+        },
+        {
+          "id": "b",
+          "text": "Une fiche doit d'abord être recopiée dans une autre variable avant d'être lue"
+        },
+        {
+          "id": "c",
+          "text": "Le champ nom est une chaîne : ReadLn ne sait lire que des nombres"
+        },
+        {
+          "id": "d",
+          "text": "ReadLn lit un champ à la fois : il faut ReadLn(e.nom) puis ReadLn(e.moy)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une lecture au clavier porte sur un champ à la fois : pour remplir une fiche, on écrit ReadLn(e.nom); puis ReadLn(e.moy); ✓. ReadLn s'emploie partout, la structure With n'étant qu'une commodité d'écriture. Il n'y a pas à recopier la fiche avant de la lire, et ReadLn sait lire une chaîne aussi bien qu'un nombre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "e est de type Etudiant (champs nom et moy) ; aucune autre variable ne s'appelle nom ou moy. Le compilateur refuse ce fragment :\nWith e Do\n  WriteLn(nom);\n  WriteLn(moy:0:1);\nPourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seule la première instruction est dans le With ; moy y est inconnu"
+        },
+        {
+          "id": "b",
+          "text": "Un With ne peut contenir que des affectations, jamais des écritures"
+        },
+        {
+          "id": "c",
+          "text": "WriteLn ne sait afficher qu'une variable simple, pas un champ d'enregistrement"
+        },
+        {
+          "id": "d",
+          "text": "Le mot Do doit être suivi d'un point-virgule avant les instructions"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sans Begin … End;, le With ne porte que sur l'instruction qui le suit, WriteLn(nom). La seconde écriture est hors du With, et moy n'y désigne plus le champ de e ✓. Un With accepte des écritures et des lectures comme des affectations. WriteLn affiche très bien un champ, et aucun point-virgule ne suit Do.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une procédure est déclarée ainsi :\nPROCEDURE Saisir (T : Tab; N : Integer);\nElle remplit T[1] à T[N] avec des ReadLn. Après l'appel Saisir(T, 3), le programme principal constate que T ne contient pas les valeurs saisies. Quelle est la cause ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ReadLn ne peut pas lire un champ d'enregistrement"
+        },
+        {
+          "id": "b",
+          "text": "Il manque une structure With dans la procédure"
+        },
+        {
+          "id": "c",
+          "text": "T est passé par valeur : la procédure remplit une copie de T"
+        },
+        {
+          "id": "d",
+          "text": "Il faut écrire Var devant N : c'est lui qui désigne les fiches à remplir"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sans Var, le paramètre T est une copie du tableau : la procédure remplit cette copie, perdue à la fin de l'appel, et le tableau du programme principal reste inchangé ✓. Il faut donc Var devant T, le paramètre que la procédure doit modifier, et non devant N, dont la procédure ne fait que lire la valeur. ReadLn lit très bien un champ, et un With n'est qu'une commodité d'écriture.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On redemande une réponse tant que rep (un caractère) n'est ni 'O' ni 'N'. Quelle condition d'arrêt place-t-on après UNTIL ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "rep = 'O' OR 'N'"
+        },
+        {
+          "id": "b",
+          "text": "(rep = 'O') OR (rep = 'N')"
+        },
+        {
+          "id": "c",
+          "text": "(rep = 'O') AND (rep = 'N')"
+        },
+        {
+          "id": "d",
+          "text": "(rep <> 'O') AND (rep <> 'N')"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On s'arrête dès que la réponse est O ou N : la condition d'arrêt est (rep = 'O') OR (rep = 'N'), vraie pour l'une ou l'autre lettre ✓. Avec AND entre deux égalités, la condition ne serait jamais vraie, puisque rep ne peut pas valoir O et N à la fois : la boucle ne s'arrêterait jamais. La condition à deux différences reliées par AND est vraie pour une réponse invalide : on s'arrêterait au mauvais moment. L'écriture rep = 'O' OR 'N' mélange un caractère et un booléen, et ne compile pas.",
+      "difficulty": 2
+    }
+  ]
+}

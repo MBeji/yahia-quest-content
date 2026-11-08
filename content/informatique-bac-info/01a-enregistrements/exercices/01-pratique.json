@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premières fiches",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans la section TYPE, quelle déclaration Pascal définit correctement un type Etudiant ayant un nom (chaîne de 30 caractères au plus) et une moyenne (réel) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Etudiant = Record nom : String[30], moy : Real; End;"
+        },
+        {
+          "id": "b",
+          "text": "Etudiant = Record nom : String[30]; moy : Real; End;"
+        },
+        {
+          "id": "c",
+          "text": "Etudiant = Record (nom : String[30]; moy : Real);"
+        },
+        {
+          "id": "d",
+          "text": "Etudiant = Record nom := String[30]; moy := Real; End;"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les champs sont séparés par des points-virgules, chacun écrit sous la forme nom de champ, deux-points, type, et la structure se termine par End; ✓. Une virgule entre deux champs n'est pas un séparateur de champs. L'écriture avec parenthèses ne ferme pas la structure par End;. Le signe := sert à affecter une valeur, jamais à donner un type à un champ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le type Eleve a un champ naissance de type Date, lui-même un enregistrement (jj, mm, aa). Où faut-il déclarer le type Date ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans la section TYPE, avant la déclaration de Eleve"
+        },
+        {
+          "id": "b",
+          "text": "Dans la section TYPE, après la déclaration de Eleve"
+        },
+        {
+          "id": "c",
+          "text": "Dans la section VAR, à côté de la variable de type Eleve"
+        },
+        {
+          "id": "d",
+          "text": "Dans le programme principal, entre Begin et End"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le compilateur lit de haut en bas : Date doit être déclaré dans la section TYPE avant Eleve, pour être connu quand le champ naissance : Date apparaît ✓. Placé après Eleve, Date serait inconnu à cet endroit. La section VAR ne déclare que des variables, et le programme principal ne contient que des instructions : aucun type ne s'y déclare.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "e1 et e2 sont deux variables de type Etudiant. Quelle instruction recopie toute la fiche e1 dans e2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e2.nom := e1.nom;"
+        },
+        {
+          "id": "b",
+          "text": "e2 := e1;"
+        },
+        {
+          "id": "c",
+          "text": "e1 := e2;"
+        },
+        {
+          "id": "d",
+          "text": "e2 = e1;"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'affectation globale e2 := e1; recopie tous les champs de e1 dans e2, car les deux variables sont du même type ✓. Écrire e2.nom := e1.nom; ne recopie que le nom, et e1 := e2; recopie dans l'autre sens. Le signe = compare deux valeurs, il n'affecte pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "e est de type Etudiant (champs nom et moy).\ne.moy := 12;\ne.moy := e.moy + 1.5;\nQuelle valeur contient e.moy à la fin ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.5"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "13.5"
+        },
+        {
+          "id": "d",
+          "text": "Erreur de compilation"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un champ se comporte comme une variable : e.moy vaut d'abord 12, puis la seconde affectation lit 12, ajoute 1.5 et range 13.5 dans le même champ ✓. La valeur 1.5 oublie l'ancien contenu, la valeur 12 ignore la seconde affectation. Lire un champ dans l'expression qui l'affecte est permis, comme pour toute variable.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "TYPE Tab = Array[1..40] Of Etudiant;\nVAR T : Tab;\nQue représente T[2] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une fiche complète, de type Etudiant"
+        },
+        {
+          "id": "b",
+          "text": "Le nom du deuxième étudiant, de type String[30]"
+        },
+        {
+          "id": "c",
+          "text": "La moyenne du deuxième étudiant, de type Real"
+        },
+        {
+          "id": "d",
+          "text": "Un tableau de deux champs"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "T est un tableau dont chaque case est une fiche : T[2] est la fiche complète du deuxième étudiant, de type Etudiant ✓. Pour atteindre son nom ou sa moyenne, il faut ajouter un point et le nom du champ. Une case de T ne contient pas un tableau de champs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle écriture équivaut à ce bloc ?\nWith e Do\nBegin\n  ReadLn(nom);\n  ReadLn(moy);\nEnd;",
+      "options": [
+        {
+          "id": "a",
+          "text": "ReadLn(nom); ReadLn(moy);"
+        },
+        {
+          "id": "b",
+          "text": "ReadLn(Etudiant.nom); ReadLn(Etudiant.moy);"
+        },
+        {
+          "id": "c",
+          "text": "ReadLn(e.nom); ReadLn(moy);"
+        },
+        {
+          "id": "d",
+          "text": "ReadLn(e.nom); ReadLn(e.moy);"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sous With e Do, nom et moy sont les champs de e : le bloc lit e.nom puis e.moy ✓. Sans le With, les noms nom et moy seuls ne désigneraient aucun champ de e. Le mélange de e.nom et de moy seul n'a de sens que sous un With. Le nom du type Etudiant ne désigne aucune fiche.",
+      "difficulty": 2
+    }
+  ]
+}

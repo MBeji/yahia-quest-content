@@ -1,0 +1,132 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les appels qui se répondent",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Deux fonctions se rappellent l'une l'autre. Pour n = 0, A et B rendent 0. Pour n > 0, A (n) rend 1 + B (n - 1) et B (n) rend 3 + A (n - 1). Quelle est la valeur de A (5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On remonte en alternant : A (0) = 0, A (1) = 1 + B (0) = 1, B (1) = 3 + A (0) = 3. A (2) = 1 + B (1) = 4, B (2) = 3 + A (1) = 4. A (3) = 1 + B (2) = 5, B (3) = 3 + A (2) = 7. A (4) = 1 + B (3) = 8, B (4) = 3 + A (3) = 8. A (5) = 1 + B (4) = 9 ✓. Le résultat 5 compte seulement le nombre d'appels. Le résultat 11 est B (5) = 3 + A (4). Le résultat 15 additionne 3 à chaque appel.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Puissance (a, n) vaut 1 si n = 0, 1 / Puissance (a, -n) si n < 0, et a * Puissance (a, n - 1) si n > 0. Combien d'appels (le premier compris) lance Puissance (3, -5) ? Répondre par un nombre d'appels.",
+      "answerKey": {
+        "value": 7,
+        "unit": "appels"
+      },
+      "explanation": "Les exposants successifs sont −5, 5, 4, 3, 2, 1, 0 : le premier appel renverse le signe, puis l'exposant décroît de 5 à 0 en passant par 6 valeurs, soit 1 + 6 = 7 appels ✓. En général, Puissance (a, n) avec n < 0 lance |n| + 2 appels.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans Palindrome, on remplace le test Length (ch) < 2 par Length (ch) = 1. Pour quelle chaîne le comportement devient-il anormal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "'a'"
+        },
+        {
+          "id": "b",
+          "text": "'abc'"
+        },
+        {
+          "id": "c",
+          "text": "'abba'"
+        },
+        {
+          "id": "d",
+          "text": "'abca'"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour 'abba', les extrémités sont égales et l'appel porte sur 'bb' (longueur 2, différente de 1), dont les extrémités sont aussi égales : Copy ('bb', 2, 0) donne la chaîne vide, et l'appel lit ch[1] hors de cette chaîne, ce qui est une anomalie (résultat imprévisible, ou appels sans fin) ✓. 'a' est arrêtée par le test Length (ch) = 1. 'abc' et 'abca' ont des extrémités différentes à un niveau ou à un autre (a ≠ c, puis b ≠ c) : la fonction rend Faux avant tout appel sur une chaîne vide.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "T = [2, 5, 8, 12, 16, 23, 38]. On appelle Dichotomique (1, 7, 13, T), la valeur 13 étant absente. Quels sous-tableaux (deb, fin) sont successivement examinés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1, 7), (4, 7), (4, 5)"
+        },
+        {
+          "id": "b",
+          "text": "(1, 7), (5, 7), (5, 6)"
+        },
+        {
+          "id": "c",
+          "text": "(1, 7), (5, 7), (5, 5)"
+        },
+        {
+          "id": "d",
+          "text": "(1, 7), (1, 3), (3, 3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Appel (1, 7) : milieu = 4, T[4] = 12 et 13 > 12, donc on rappelle sur (5, 7), sans le milieu. Appel (5, 7) : milieu = 6, T[6] = 23 et 13 < 23, donc (5, 5). Appel (5, 5) : milieu = 5, T[5] = 16 ; 13 < 16 mais deb < milieu est faux, la réponse est Faux ✓. Garder le milieu dans le sous-tableau donnerait (4, 7) puis (4, 5) ou (5, 6). Chercher dans la moitié gauche donnerait (1, 3) alors que 13 dépasse 12.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "T = [2, 5, 8, 12, 16, 23, 38]. Pour lesquelles de ces valeurs m l'appel Dichotomique (1, 7, m, T) rend-il Faux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = 1"
+        },
+        {
+          "id": "b",
+          "text": "m = 5"
+        },
+        {
+          "id": "c",
+          "text": "m = 20"
+        },
+        {
+          "id": "d",
+          "text": "m = 30"
+        },
+        {
+          "id": "e",
+          "text": "m = 16"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "d"]
+      },
+      "explanation": "Pour m = 1, les sous-tableaux (1, 7), (1, 3) puis (1, 1) aboutissent à T[1] = 2 : 1 est absent ✓. Pour m = 20, la recherche passe par (5, 7) puis (5, 5) sur T[5] = 16 : 20 > 16 mais fin > milieu est faux, donc absent ✓. Pour m = 30, elle passe par (5, 7) puis (7, 7) sur T[7] = 38 : 30 < 38 mais deb < milieu est faux, donc absent ✓. La valeur 5 est trouvée en T[2] et la valeur 16 en T[5] : l'appel rend Vrai pour ces deux valeurs.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La fonction Nb est définie par Nb (0) = 0, puis Nb (n) = 1 + Nb (n Div 2) pour tout n > 0. Calculer Nb (37).",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "Les arguments successifs sont 37, 18, 9, 4, 2, 1 puis 0 : les six premiers ne sont pas nuls et ajoutent chacun 1, le dernier rend 0, donc Nb (37) = 6 ✓. Cette fonction compte le nombre de chiffres de l'écriture binaire de n (37 = 100101 en binaire).",
+      "difficulty": 3
+    }
+  ]
+}
