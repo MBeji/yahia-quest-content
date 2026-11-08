@@ -1,0 +1,128 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la résonance",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un pendule (m = 0,200 kg ; h = 0,50 kg/s ; k = 18 N/m) est en régime forcé. À un instant, la force excitatrice vaut F = +0,12 N, l'élongation x = +2,0 cm et la vitesse v = +0,10 m/s. Quelle est, à cet instant, l'accélération du palet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,29 m/s²"
+        },
+        {
+          "id": "b",
+          "text": "−1,20 m/s²"
+        },
+        {
+          "id": "c",
+          "text": "−1,45 m/s²"
+        },
+        {
+          "id": "d",
+          "text": "−2,65 m/s²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'équation m·a + h·v + k·x = F donne a = (F − h·v − k·x)/m = (0,12 − 0,50 × 0,10 − 18 × 0,020)/0,200 = (0,12 − 0,05 − 0,36)/0,200 = −1,45 m/s² ✓ (contrôle d'unités : des newtons divisés par des kilogrammes). −0,29 m/s² oublie de diviser par la masse : c'est la valeur de F − h·v − k·x, en newtons. −1,20 m/s² oublie le terme de frottement h·v. −2,65 m/s² prend la force excitatrice avec le signe opposé.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un camion de 1800 kg, dont la suspension a une raideur équivalente k = 5,0 × 10⁴ N/m, roule sur une route dont les joints sont espacés de 7,5 m ; ses frottements sont faibles. Calculer sa vitesse critique, en km/h.",
+      "answerKey": {
+        "value": 22.6,
+        "tolerance": 0.3,
+        "unit": "km/h"
+      },
+      "explanation": "La période propre est T₀ = 2π√(m/k) = 2π√(1800 / 5,0 × 10⁴) = 2π × 0,190 = 1,19 s. Les frottements étant faibles, la résonance a lieu pour T = d/v = T₀, donc v_c = d/T₀ = 7,5 / 1,19 = 6,29 m/s ✓. Conversion : 6,29 × 3,6 = 22,6 km/h (contrôle : vitesse plausible pour un camion sur une route à joints).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une force sinusoïdale de pulsation 5,0 rad/s et d'amplitude 0,50 N agit sur un pendule de masse 0,50 kg, de raideur 20 N/m et de coefficient de frottement 2,0 kg/s. Calculer l'amplitude X_m des oscillations du palet, une fois le régime permanent établi.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,9 cm"
+        },
+        {
+          "id": "b",
+          "text": "4,0 cm"
+        },
+        {
+          "id": "c",
+          "text": "5,0 cm"
+        },
+        {
+          "id": "d",
+          "text": "6,7 cm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "h·ω = 2,0 × 5,0 = 10 N/m et k − m·ω² = 20 − 0,50 × 25 = 7,5 N/m, donc X_m = F_m / √(10² + 7,5²) = 0,50 / 12,5 = 0,040 m = 4,0 cm ✓. 2,9 cm additionne les deux termes au lieu de les composer par Pythagore (0,50 / 17,5). 5,0 cm oublie le terme k − mω² (0,50 / 10). 6,7 cm oublie le terme hω (0,50 / 7,5).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un pendule élastique (m = 0,20 kg ; k = 20 N/m ; fréquence propre N₀ = 1,59 Hz) est excité par une force d'amplitude constante. On relève l'amplitude X_m pour plusieurs fréquences N du moteur :\nN (Hz) : 0,6 ; 1,0 ; 1,2 ; 1,3 ; 1,4 ; 1,6 ; 2,0 ; 2,5\nX_m (cm) : 3,30 ; 3,81 ; 4,05 ; 4,09 ; 4,06 ; 3,73 ; 2,59 ; 1,55\nEn prenant pour N_r la fréquence du plus grand X_m mesuré, quel est le coefficient de frottement h du pendule ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,2 kg/s"
+        },
+        {
+          "id": "b",
+          "text": "1,6 kg/s"
+        },
+        {
+          "id": "c",
+          "text": "2,7 kg/s"
+        },
+        {
+          "id": "d",
+          "text": "8,2 kg/s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le plus grand X_m, 4,09 cm, est mesuré à N = 1,3 Hz : N_r ≈ 1,3 Hz. De N_r² = N₀² − h²/(8π²m²), on tire h² = 8π²m²(N₀² − N_r²) = 78,96 × 0,0400 × (2,533 − 1,69) = 3,158 × 0,843 = 2,66, donc h = 1,6 kg/s ✓ (condition h² < 2mk = 8,0 vérifiée : la résonance existe bien). 1,2 kg/s utilise 4π² au lieu de 8π². 2,7 kg/s donne h² sans en prendre la racine. 8,2 kg/s oublie le carré de la masse : √(8π² × 0,843).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On visualise simultanément la force excitatrice F (voie Y1) et l'élongation x du palet (voie Y2) d'un pendule en régime permanent. Quel est le déphasage φ de x par rapport à F, et que peut-on dire de la fréquence N de l'excitateur par rapport à la fréquence propre N₀ ?\n<svg viewBox=\"0 0 340 210\"><title>Oscillogramme de la force excitatrice F (voie Y1, amplitude 3 divisions) et de l'élongation x (voie Y2, amplitude 2 divisions) : deux sinusoïdes de période 12 divisions, la voie Y2 étant décalée de 2 divisions vers la droite par rapport à la voie Y1</title><line x1=\"20\" y1=\"22\" x2=\"20\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"22\" x2=\"45\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"22\" x2=\"70\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"95\" y1=\"22\" x2=\"95\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"22\" x2=\"120\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"145\" y1=\"22\" x2=\"145\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"22\" x2=\"170\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"195\" y1=\"22\" x2=\"195\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"22\" x2=\"220\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"245\" y1=\"22\" x2=\"245\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"22\" x2=\"270\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"295\" y1=\"22\" x2=\"295\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"320\" y1=\"22\" x2=\"320\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"22\" x2=\"320\" y2=\"22\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"42.2\" x2=\"320\" y2=\"42.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"62.5\" x2=\"320\" y2=\"62.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"82.8\" x2=\"320\" y2=\"82.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"103\" x2=\"320\" y2=\"103\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"123.2\" x2=\"320\" y2=\"123.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"143.5\" x2=\"320\" y2=\"143.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"163.8\" x2=\"320\" y2=\"163.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"184\" x2=\"320\" y2=\"184\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"103\" x2=\"320\" y2=\"103\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><polyline points=\"20,103 22.5,99.8 25,96.6 27.5,93.5 30,90.4 32.5,87.3 35,84.2 37.5,81.2 40,78.3 42.5,75.4 45,72.6 47.5,69.9 50,67.3 52.5,64.8 55,62.4 57.5,60 60,57.9 62.5,55.8 65,53.9 67.5,52.1 70,50.4 72.5,48.9 75,47.5 77.5,46.3 80,45.2 82.5,44.3 85,43.6 87.5,43 90,42.6 92.5,42.3 95,42.2 97.5,42.3 100,42.6 102.5,43 105,43.6 107.5,44.3 110,45.2 112.5,46.3 115,47.5 117.5,48.9 120,50.4 122.5,52.1 125,53.9 127.5,55.8 130,57.9 132.5,60 135,62.4 137.5,64.8 140,67.3 142.5,69.9 145,72.6 147.5,75.4 150,78.3 152.5,81.2 155,84.2 157.5,87.3 160,90.4 162.5,93.5 165,96.6 167.5,99.8 170,103 172.5,106.2 175,109.4 177.5,112.5 180,115.6 182.5,118.7 185,121.8 187.5,124.8 190,127.7 192.5,130.6 195,133.4 197.5,136.1 200,138.7 202.5,141.2 205,143.6 207.5,146 210,148.1 212.5,150.2 215,152.1 217.5,153.9 220,155.6 222.5,157.1 225,158.5 227.5,159.7 230,160.8 232.5,161.7 235,162.4 237.5,163 240,163.4 242.5,163.7 245,163.8 247.5,163.7 250,163.4 252.5,163 255,162.4 257.5,161.7 260,160.8 262.5,159.7 265,158.5 267.5,157.1 270,155.6 272.5,153.9 275,152.1 277.5,150.2 280,148.1 282.5,146 285,143.6 287.5,141.2 290,138.7 292.5,136.1 295,133.4 297.5,130.6 300,127.7 302.5,124.8 305,121.8 307.5,118.7 310,115.6 312.5,112.5 315,109.4 317.5,106.2 320,103\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"20,138.1 22.5,137 25,135.8 27.5,134.5 30,133.1 32.5,131.6 35,130.1 37.5,128.5 40,126.8 42.5,125.1 45,123.2 47.5,121.4 50,119.5 52.5,117.5 55,115.5 57.5,113.5 60,111.4 62.5,109.3 65,107.2 67.5,105.1 70,103 72.5,100.9 75,98.8 77.5,96.7 80,94.6 82.5,92.5 85,90.5 87.5,88.5 90,86.5 92.5,84.6 95,82.8 97.5,80.9 100,79.2 102.5,77.5 105,75.9 107.5,74.4 110,72.9 112.5,71.5 115,70.2 117.5,69 120,67.9 122.5,66.9 125,66 127.5,65.2 130,64.5 132.5,63.9 135,63.4 137.5,63 140,62.7 142.5,62.6 145,62.5 147.5,62.6 150,62.7 152.5,63 155,63.4 157.5,63.9 160,64.5 162.5,65.2 165,66 167.5,66.9 170,67.9 172.5,69 175,70.2 177.5,71.5 180,72.9 182.5,74.4 185,75.9 187.5,77.5 190,79.2 192.5,80.9 195,82.8 197.5,84.6 200,86.5 202.5,88.5 205,90.5 207.5,92.5 210,94.6 212.5,96.7 215,98.8 217.5,100.9 220,103 222.5,105.1 225,107.2 227.5,109.3 230,111.4 232.5,113.5 235,115.5 237.5,117.5 240,119.5 242.5,121.4 245,123.2 247.5,125.1 250,126.8 252.5,128.5 255,130.1 257.5,131.6 260,133.1 262.5,134.5 265,135.8 267.5,137 270,138.1 272.5,139.1 275,140 277.5,140.8 280,141.5 282.5,142.1 285,142.6 287.5,143 290,143.3 292.5,143.4 295,143.5 297.5,143.4 300,143.3 302.5,143 305,142.6 307.5,142.1 310,141.5 312.5,140.8 315,140 317.5,139.1 320,138.1\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"28.8\" y=\"76.8\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Y1</text><text x=\"28.8\" y=\"156\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Y2</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ = −π/3 ; N < N₀"
+        },
+        {
+          "id": "b",
+          "text": "φ = −π/3 ; N > N₀"
+        },
+        {
+          "id": "c",
+          "text": "φ = −2π/3 ; N > N₀"
+        },
+        {
+          "id": "d",
+          "text": "φ = −π/6 ; N < N₀"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La période est de 12 divisions et le maximum de x arrive 2 divisions après celui de F (à 5 divisions au lieu de 3) : x est en retard de 2π × 2/12 = π/3 rad, soit φ = −π/3. Comme −π/2 < φ < 0, on a ω < ω₀, donc N < N₀ ✓. Le même retard avec N > N₀ est impossible : il faudrait φ < −π/2. φ = −2π/3 correspond à un retard de 4 divisions et placerait N au-dessus de N₀. φ = −π/6 correspond à un retard d'une division seulement.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "À une fréquence donnée, l'impédance mécanique d'un pendule vaut Z = 1,8 kg/s, le double de son coefficient de frottement h = 0,90 kg/s. L'amplitude de la force excitatrice est F_m = 0,60 N. Calculer la puissance mécanique moyenne reçue, en mW.",
+      "answerKey": {
+        "value": 50,
+        "tolerance": 1,
+        "unit": "mW"
+      },
+      "explanation": "V_m = F_m / Z = 0,60 / 1,8 = 0,333 m/s et cos φ = h/Z = 0,50. Alors P = ½·F_m·V_m·cos φ = ½ × 0,60 × 0,333 × 0,50 = 0,050 W = 50 mW ✓ (contrôle : ½·h·V_m² = ½ × 0,90 × 0,111 = 0,050 W, soit le quart de la puissance maximale P₀ = F_m²/(2h) = 200 mW).",
+      "difficulty": 3
+    }
+  ]
+}
