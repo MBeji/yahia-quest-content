@@ -2183,8 +2183,8 @@ Six encadrés arrondis sans titre ni attribution imprimés (trois par page), sor
 - **Imprimé** : « السند عدد 12 » ; titre « التعرّف إلى الآخر » ; auteur/oeuvre (fin p.191) : « موريس ميرلوبونتي / فينومونولوجيا الإدراك، » ; « M.MERLEAU-PONTY phénoménologie de la perception éd Gallimard 1967 p p 400 - 401 ».
 - **التمهيد (verbatim)** : « التمهيد : ما يلاحظ في علاقة الثّقافات بعضها ببعض هو التّراوح بين موقف يرفض التّعامل والتّبادل بينها لاعتبارها غريبة وموقف آخر يرى في اختلاف الثّقافات مؤشّر تبادل وباعث على التّفاهم والتّعايش الممكن. »
 - **Encadré-citation (verbatim)** : « "لا أحد يشبه آخر، جسدي ليس جسدهم وفكري ليس فكرهم" » — « ستيرنار » (graphie imprimée, agrandie à 200 dpi). Illustration : cercle de personnages se tenant la main (en bas à gauche p.190).
-- **Thèse** : la civilisation à laquelle je participe existe avec évidence dans les « مواعين » (outils) qu'elle a fabriqués [R7-P5 : p. 190, « التي أشارك فيها » rétabli] ; devant une civilisation inconnue ou étrangère, je retrouve ses traces (outils, vestiges) et je perçois un monde culturel « غامض » pourtant « حاضر » ; dans le champ culturel, je sens la présence proche d'autrui comme une présence anonyme et voilée (« حضور نكرة متستّر ») ; je le vérifie en percevant un acte humain et un acte accompli par un autre homme (pipe, cuillère, cloche) [R7-P5 : p. 190, « compréhension d'un acte humain par un autre acte humain » était un contresens] ; la réponse « facile » selon laquelle le « المبني للمجهول » n'est qu'une forme générale pour désigner le « أنا » au pluriel ne règle pas la question [R7-P4 : présentée à tort comme thèse affirmée] ; il en va de même de la seconde réponse (« سنجيب مجدّدا ») : je vois les autres user des outils d'une certaine manière et j'interprète leur conduite par analogie avec la mienne, de sorte que le « on » ou le « nous » se comprend par le « je » — réponse elle aussi suspendue par « ولكن السؤال هو على وجه التحديد » [R7-P5 : p. 190, la fiche donnait l'analogie comme thèse affirmée] ; reste la question (l.21-26) : comment la conscience, qui est par principe connaissance de soi et existe sous la forme du « أنا », peut-elle être saisie sous la forme du « أنت » et dans le monde du « هُمْ » ? [R7-P3 : le lecteur en faisait une thèse affirmée (« conscience de soi par rapport à autrui »), c'est une question] ; la matière culturelle première est le corps d'autrui porteur de conduites ; la figure d'autrui ne rend pas entièrement claire celle de la société ; la société n'est pas une entité partagée par deux ou trois individus mais la « تعايش » (coexistence) d'un nombre indéfini de sujets conscients [R7-P2 : p. 191, reformulé au plus près] ; l'analyse de la perception d'autrui se heurte d'emblée à une difficulté que soulève le monde culturel : il faut dépasser le paradoxe d'une conscience regardée du dehors (« مفارقة الوعي ») [R7-P2 : p. 191, ce n'est pas le monde culturel qui « dépasse » le paradoxe ; il le soulève].
-- **Mouvement** : (1) civilisation = choses qui renvoient à autrui ; (2) comment connaître une culture « inconnue » ? (3) autrui se vérifie par la perception d'un acte humain, accompli par un autre homme ; (4) réponse « facile » (« من اليسير أن نجيب ») : le « on » (المبني للمجهول) n'est qu'une forme générale désignant l'« أنا » au pluriel ou les « أناءات » en général — réponse que le texte juge insuffisante [R7-P4 : statut de « réponse facile » rétabli] ; (5) seconde réponse du même type (« سنجيب مجدّدا ») : l'expérience de l'altérité par l'analogie des conduites, les actes d'autrui toujours compris à travers les miens [R7-P5 : p. 190, statut de réponse provisoire rétabli] ; (6) la question précise demeure (l.22-26) : comment le « أنا » peut-il se mettre au pluriel, comment parler d'un autre « أنا », et comment la conscience, connaissance de soi sous la forme du « أنا », peut-elle être saisie sous la forme du « أنت » et dans le monde du « هُمْ » ? [R7-P4 : la fiche affirmait comme acquis ce que le texte pose en question] ; (7) la matière culturelle première est le corps d'autrui comme porteur de comportements ; (8) la société n'est pas une entité partagée par deux ou trois individus mais la coexistence d'un nombre indéfini de consciences [R7-P3 : « communauté de consciences » non imprimé] ; (9) le monde culturel soulève une difficulté de principe pour l'analyse de la perception d'autrui : dépasser le paradoxe de la conscience vue du dehors [R7-P2 : p. 191, contresens corrigé].
+- **Thèse** [R7-P6 : réécrite à l'image p. 190-191 ; les versions antérieures résolvaient ce que le texte laisse ouvert] : le texte ne formule pas de thèse conclusive ; il pose une question et la laisse en suspens. Ce qu'il affirme : la civilisation à laquelle je participe existe avec évidence dans les « مواعين » qu'elle a fabriqués ; le monde culturel d'une civilisation inconnue est « غامض » mais « حاضر » ; dans le champ culturel, je sens la présence proche d'autrui comme « حضور نكرة متستّر » ; la première des matières culturelles est le corps d'autrui « حامل لسلوك » ; la figure d'autrui ne rend pas « تماما » claire celle de la société, qui n'est pas une entité partagée par deux ou trois individus mais la « تعايش » d'un nombre indéfini de consciences. Ce qu'il laisse ouvert : comment la conscience, connaissance de soi par principe et existant sous la forme du « أنا », peut-elle être saisie sous la forme du « أنت » et dans le monde du « هُمْ » ? Il finit sur une difficulté de principe (« صعوبة مبدئيا ») que soulève le monde culturel pour l'analyse de la perception d'autrui : il faudrait (« ينبغي ») dépasser le paradoxe de la conscience vue du dehors ; le texte ne dit pas comment.
+- **Mouvement** [R7-P6 : connecteurs et statut de chaque énoncé, image p. 190-191] : (1) l.1-6 : constat (« بداهة ») pour ma civilisation ; concession (« أمّا إذا ») pour une civilisation inconnue : traces (outils brisés, vestiges, paysage) ; posé : le monde culturel est « عالم غامض، إلاّ أنّه حاضر » ; question : « فكيف يكون هذا ممكنا ؟ » ; (2) l.7-9 : présence anonyme d'autrui ; exemples (le « الغليون » pour fumer, la « الملعقة » pour manger, la cloche pour appeler) ; je puis le vérifier par la perception d'un acte humain et d'un acte accompli par un autre homme ; (3) l.10-12 : nouvelle question : comment absorber un acte ou une pensée humaine dans le monde du « هُمْ », alors que ce procédé renvoie par principe au « ضمير المتكلّم » ? (incise imprimée « [كيف ذلك] ») ; (4) l.13-16 : première réponse, introduite comme facile (« من اليسير أن نجيب ») : le « الضمير المبني للمجهول » n'est qu'une forme générale désignant le « أنا » au pluriel ou les « الأناءات » ; justification (« فأنا لي تجربة … ») : analogie devant les vestiges ; (5) l.17-20 : objection (« ولكن ينبغي أن نعرف أولا ») : comment ai-je l'expérience de mon propre monde culturel ? seconde réponse (« سنجيب مجدّدا ») : je vois les autres user des outils et j'interprète leur conduite par comparaison avec la mienne ; (6) l.21-26 : récapitulation (« وأخيرا، يمكن أن نفهم … ») : les actes d'autrui compris par les miens ; puis objection (« ولكن السؤال هو على وجه التحديد ») : série de questions (comment le « أنا » au pluriel, comment parler d'un autre « أنا », comment la conscience saisie sous la forme du « أنت » / « هُمْ ») ; le texte ne dit pas explicitement que les deux réponses sont fausses : il les fait suivre de « ولكن » et d'une question ; (7) l.27-30 et p. 191 : affirmation (« إنّ أوّل المواد الثقافية … هو جسد الآخر ») ; question : comment une matière devient vestige parlant d'une existence et, inversement (« وكيف يمكن على العكس »), comment une intention, idée ou projet se détache d'un sujet et devient visible dehors ; (8) p. 191 l.1-3 : négation (« إن هيئة الآخر لا توضّح تماما هيئة المجتمع ») justifiée (« إذ ليس … وإنما ») : la société = « تعايش » d'un nombre indéfini de « الذوات الواعية » ; (9) p. 191 l.3-4 : clôture sur la difficulté de principe et le « ينبغي » (cf. Thèse) [R7-P6 : les questions (3) et (7), absentes des versions précédentes, rétablies ; « civilisation = choses qui renvoient à autrui » et « réponse que le texte juge insuffisante », non imprimés, retirés].
 - **Concepts** : الآخر، الأنا [R7-P5 : coquille « الآنا » corrigée]، الأنت، الهُمْ، المواعين، العالم الثقافي، الوعي، التعايش، الذوات، السلوك، البينذاتية.
 - **الكاتب (p.191)** : « انظر التعريف بالكاتب في السند عدد 19 الوارد في مسألة الإنية والغيرية. »
 - **الحاشية (p.191, verbatim)** : (1) « المواعين : جمع ماعون، أي كل ما يتصل بالأدوات أو الوسائل التقنية التي يستخدمها الإنسان في أنشطته اليومية. » ; (2) « العالم الثقافي : لا يحيا الإنسان وسط عالم فيزيائي فقط، بل في عالم من الأدوات والرموز والعلاقات الاجتماعية والتاريخية، ويمثل كل هذا عالما ثقافيا يدل على الفعل الإنساني؛ ويؤكّد الكاتب في موضع آخر أن الإنسان كائن ثقافي ومدعو إلى التفكير في ما نعيشه ثقافيا من أجل التغيير والإضافة . » ; (3) « الهمْ [R7-P2 : 300 dpi, sukun imprimé (« هُمْ » = eux), non « الهمّ »] : يستعمل الكاتب "الهم" أو "النحن" للدلالة على شبكة العلاقات القائمة بين الأنا والآخر . » ; (4) « الأناءات : ليس ثمّت صيغة الجمع [R7-P2 : graphie imprimée « ثمّت »] للأنا حسب القواعد المعتادة في اللغة العربية ومع ذلك اخترقت الكتابة الفلسفية هذه القاعدة وجازفت بتقديم صيغة الجمع للأنا. والأنا ليس كيانا منفصلا عن العالم أو الآخر، بل يتمّ النظر في الأنا من جهة وضعيته في العالم وعلاقته بالآخر، فهو يرتبط بوضعيات ثقافية وتاريخية. » ; (5) « وعي : لا وجود لوعي مستقل بذاته، الوعي هو وعي الأنا بالآخر، يرفض ميرلوبونتي التعامل مع الآخر كموضوع بالنسبة إلى الذات، فعلاقة [R7-P2 : imprimé « كموضوع بالنسبة إلى الذات », non « كموضوع بذاته »] الأنا بالآخر هي علاقة تفاهم و تبادل. » ; (6) « حاملة للسلوك : الذات الإنسانية ذات حية وعلائقية وحمالّة [R7-P5 : 300 dpi, graphie imprimée « وحمالّة » (shadda sur le lām), non « وحمالةً »] معنى حيث يرتسم نمط علاقاتها بالآخر، فالذات وهي تنخرط في العالم وتلازمه أي تحسّ بعالم الآخرين وأجسادهم تصبح متجسدة ومنفتحة على مجموعة علاقات بين الذوات، وهذا ما يسميه ميرلوبونتي بالبينذاتية الإنسانية أو البينذاتية المعيشة أي علاقات قائمة بين الأشخاص وسلوكاتهم وانتماءاتهم وأفعالهم المشتركة. » ; (7) « التعايش : تفهم علاقة الأنا بالآخر على أساس الاعتراف بالتنوّع والتكامل، تجاوزا للمركزية، فالأنا لا يكون بمفرده وإنما في إطار من التبادل بينه وبين الآخر من ناحية، وبينه وبين العالم من ناحية أخرى، بهذا ينشأ التفاعل بين الحياة الفردية والحياة الجماعية. »
@@ -2194,11 +2194,11 @@ Six encadrés arrondis sans titre ni attribution imprimés (trois par page), sor
 - **Imprimé** : « السند عدد 13 » ; titre « وحدة الدّين وتعدّد الشّرائع » ; auteur/oeuvre : « غاندي كلّ البشر أخوة » ; « GANDHI : Tous les hommes sont frères. Coll. Idées 1969.pp 120-121 ».
 - **التمهيد (verbatim)** : « التمهيد : عادة ما يأخذ المتديّن إعجاب مفرط بشعائر الدّين الّذي ينتسب إليه ؛ وغالبا ما يشعره ذلك بالتفوّق على غيره من أصحاب الدّيانات الأخرى فيولّد لديه ذلك رغبة في إقصائهم ومعاداتهم الأمر الّذي يجعله في تناقض حتّى مع روح الدّين الّذي ينتسب إليه. » [R7-P5 : 300 dpi, fatha « المتديّنَ » non imprimée ; « الّذي » avec shadda imprimée (3 occurrences)]
 - **Encadré-citation (verbatim)** : « "أفتح نوافذي لكلّ رياح العالم لكن دون أن تقتلعني من جذوري" » — « غاندي ». Illustration : statue du Bouddha en méditation.
-- **Thèse** : la religion est trop souvent réduite à des interdits alimentaires ou à l'appartenance à une communauté ; ce qui compte est la voie que l'on suit, non l'origine ; toutes les grandes religions sont vraies (voulues par Dieu), branches d'un même arbre (« arbres d'une même forêt » n'est pas imprimé — R7-A2) : « شجرة واحدة بفروع عديدة » ; il ne croit pas qu'il y aura un jour une religion unique, mais on peut aussi considérer qu'en un sens il n'existe, aujourd'hui déjà, qu'une seule religion fondamentale ; qui ne regarde que les branches conclut à la pluralité des confessions, qui regarde l'arbre entier comprend que la religion est une [R7-P5 : p. 192, la seconde moitié (« إلاّ دين أساسي واحد »), qui porte le titre وحدة الدين, manquait] ; la religion est inséparable de l'action (il ne conçoit pas la religion comme une activité parmi d'autres) et de la politique pour lui.
-- **Mouvement** : (1) déplore la réduction de la religion à des interdits et à l'appartenance ; (2) les grandes religions sont vraies, Dieu les a voulues ; (3) pas de religion unique à venir, mais déjà, en un sens, une seule religion fondamentale ; l'arbre et ses branches [R7-P5 : p. 192] ; (4) anecdote du chrétien venu lui dire qu'il voulait embrasser l'hindouisme, séduit par la lecture de la « الباهاغويّة » (Bhagayat, graphie latine imprimée) : Gandhi lui répond « لا تفعل شيئا », l'Évangile contient tout ce que « الباهاغويّة » peut lui donner, mais il n'a pas vraiment cherché à le découvrir ; qu'il renonce à cet effort et soit un bon chrétien [R7-P3 : « Bhagavad » non imprimé → graphie imprimée ; reproche ajouté ; numérotation marginale imprimée 10, 25, 20 (coquille « 25 » pour 15)] [R7-A2 : p. 192, la fiche inversait l'anecdote] ; (5) la religion n'est pas une activité séparée ; sa politique découle de sa foi.
-- **Concepts** : الدين، الشرائع، وحدة الدين، تعدّد الديانات، الشجرة والأغصان، التسامح، التديّن.
-- **الكاتب (p.193)** : « الكاتب مهنداس كارامشند غاندي (1869–1948) » [R7-A2 : p. 193, « كارامشند »] : titre de « المهاتما » (« صاحب الروح العظيمة ») ; chef politique indien, guide de la résistance non violente contre le colonialisme anglais ; diplômé en droit (Angleterre) ; mouvement pour l'indépendance ; assassiné à New Delhi par un hindou fanatique ; oeuvres : « سيرتي الذاتية أو تجارب مع الحقيقة », « كلّ البشر إخوة ».
-- **الحاشية (p.193, verbatim)** : (1) « الدين : يعرّف غاندي الدّين قائلا : ليس الدّين مجموعة الطقوس والعادات وإنّما هو مصدر كلّ الدّيانات وهو ما يجعلنا قبالة الخالق. الخالق هو الله وهو الحقيقة والحبّ إنّه الخير الأسمى مصدر الأخلاق. » ; (2) « الدّيانات الكبرى : لا يُفاضل غاندي بين الأنبياء إذ يقول في موقع آخر من الكتاب : "ثلاثة من بين أعظم معلّمي البشرية" : بوذا والمسيح ومحمّد تركوا لنا شاهدا أكيدا على أنّ الوحي جاءهم لحظة الصّلاة. » (R7-A2 : « أكيدا » confirmé p. 193) ; (3) « الدّيانة الهندوسيّة : المقصود بها البوذية نسبة إلى بوذا أو حكيم ساكاي ... » (note sur Siddhartha Gautama, 480 av. J.-C., prince de la tribu des Sakya, qui abandonna son palais à vingt-neuf ans, chercha la vérité et enseigna) ; (4) « الباهاغوية : هو اسم من بين الأسماء الشرفية العشرة لبوذا ويعني حرفيا "هو الفائز بسعادة الانعتاق" ... » (la note intitulée « الدّيانة الهندوسية » glose le bouddhisme : incohérence de l'imprimé, confirmée par R7-A2 p. 193 ; `[?]` levé).
+- **Thèse** [R7-P6 : réécrite à l'image p. 192 ; « inséparable de l'action », « la voie que l'on suit », « sa politique découle de sa foi » non imprimés, retirés] : le texte affirme (« قناعتي هي ») que toutes les grandes religions du monde sont des religions vraies, que Dieu a voulues ; puis deux énoncés juxtaposés par « و » : il ne croit pas (« إنّني لا أعتقد ») qu'un jour viendra où il n'y aura qu'une religion, et l'on peut aussi considérer qu'« en un sens » (« بمعنى ما ») il n'y a dès aujourd'hui qu'« دين أساسي واحد » ; image imprimée : « والدّين شجرة واحدة بفروع عديدة » — qui ne regarde que les branches conclut qu'il y a « شرائع عدّة », qui regarde l'arbre comme un tout comprend qu'il y a une seule religion. En amont, il déplore (« إنّها لمأساة ») la réduction de la religion à des interdits de nourriture et de boisson ou au contentement d'appartenir à une « طائفة رفيعة أو وضيعة ». En aval, il dit ne pas concevoir la religion comme une activité parmi d'autres, et que sa conception ne le fait pas quitter la politique (« ليس بالوجه الّذي يجعلني أترك السياسة »).
+- **Mouvement** [R7-P6 : connecteurs et modalités de l'image p. 192] : (1) l.1-2 : constat déploré (« إنّها لمأساة ») : religion réduite aux interdits et à l'appartenance à une caste haute ou basse ; (2) l.3-7 : jugement (« ليس ثمّت جهالة أشنع من هذه ») ; négation : l'élévation d'une personne ne vient ni de sa naissance ni de sa fidélité à un slogan ; affirmation : le seul facteur est la manière dont on se conduit (« الطريقة التي نتصرّف بها ») ; argument : Dieu n'a pas créé les hommes marqués de hauteur ou de bassesse ; conditionnelle (« وإذا شرّع نصّ … فلا ينبغي التصديق بذلك ») : un texte qui fonde la bassesse ou l'élévation sur la naissance ne doit pas être cru, sinon (« وإلاّ ») ce serait démentir l'existence divine ; (3) l.8-9 : conviction : les grandes religions sont vraies, voulues par Dieu ; (4) l.9-11 : « لا أعتقد » / « ويمكن أيضا » (cf. Thèse) ; phrase elliptique imprimée « فنحن لا نجد في الطّبيعة مثالا عن المستقيم » : formulation ambiguë, le texte ne la rattache pas explicitement à ce qui précède ou suit ; (5) l.12-14 : l'arbre et ses branches (« فإذا … لكن إذا ») ; (6) l.25[sic]-18 : cas hypothétique (« إذا جاءني مسيحيّ يوما … سأجيبه ») et non récit d'un fait : à un chrétien voulant embrasser la « الدّيانة الهندوسيّة », séduit par la « الباهاغويّة » (Bhagayat), il répondrait « لا تفعل شيئا » : l'Évangile contient tout ce qu'elle peut lui donner, mais il n'a pas vraiment cherché à le découvrir ; qu'il consacre cet effort et soit un bon chrétien ; (7) l.19-21 : négation (« إنّني لا أتصوّر الدّين نشاطا من بين الأنشطة ») ; la même activité peut être accomplie dans un esprit religieux ou non ; sa conception ne lui fait pas quitter la politique ; le moindre de ses actes est orienté par ce qu'il tient pour sa « ديانة » [R7-P6 : la fiche narrait l'épisode du chrétien comme un fait ; l'imprimé est conditionnel (la 4e مهمة, « ممّن جاءه », le traite pourtant comme advenu : à signaler à l'élève)].
+- **Concepts** : الدين، الشرائع، وحدة الدين، الدّيانات الكبرى، الشجرة والفروع/الأغصان، الطائفة، المتديّن [R7-P6 : « التسامح » et « التديّن » non imprimés p. 192-193, retirés ; « الطائفة » et « المتديّن » (تمهيد) imprimés].
+- **الكاتب (p.193)** : « الكاتب مهنداس كارامشند غاندي (1869–1948) » [R7-A2 : p. 193, « كارامشند »] : surnommé « المهاتما » (« صاحب الرّوح العظيمة ») ; « قائد سياسي مشهور » et chef spirituel du mouvement d'indépendance indien contre le colonialisme anglais ; pionnier d'une théorie de la résistance appelant à refuser l'hégémonie par la désobéissance civile et la non-violence ; diplôme d'avocat obtenu en Angleterre, retour au pays pour organiser le mouvement des pauvres, libérer les femmes et conduire l'Inde à l'indépendance ; cousait lui-même ses vêtements, suivait une philosophie indienne d'ascèse et de longs jeûnes ; tué à « نيودلهي » par un hindou fanatique ; grand admirateur de l'islam ; rédacteur en chef de nombreux journaux, auteur de nombreux articles ; oeuvres : « سيرتي الذّاتية أو تجارب مع الحقيقة », « كلّ البشر إخوة » ; écrits sur le régime alimentaire végétal (« النظام الغذائي العشبي »), la santé et la religion [R7-P6 : p. 193, notice complétée (islam, presse, pauvres, femmes, ascèse, régime) ; « إخوة » ici, « أخوة » dans la référence p. 192 : graphies imprimées].
+- **الحاشية (p.193, verbatim)** : (1) « الدين : يعرّف غاندي الدّين قائلا : ليس الدّين مجموعة الطقوس والعادات وإنّما هو مصدر كلّ الدّيانات وهو ما يجعلنا قبالة الخالق. الخالق هو الله وهو الحقيقة والحبّ إنّه الخير الأسمى مصدر الأخلاق. » ; (2) « الدّيانات الكبرى : لا يُفاضل غاندي بين الأنبياء إذ يقول في موقع آخر من الكتاب : "ثلاثة من بين أعظم معلّمي البشرية" : بوذا والمسيح ومحمّد تركوا لنا شاهدا أكيدا على أنّ الوحي جاءهم لحظة الصّلاة. » (R7-A2 : « أكيدا » confirmé p. 193) ; (3) « الدّيانة الهندوسيّة : المقصود بها البوذية نسبة إلى بوذا أو حكيم ساكاي و هو اسم أطلق على مؤسس البوذية سيدارتا كوداما (480 قبل الميلاد) وهو أمير من سلالة قبيلة كاكاي تزهّد وهو في التاسعة والعشرين من عمره إذ هجر قصره، وساح بحثا عن الحقيقة الّتي عثر عليها بعد زهد مضن جاهد فيه النّفس وأعدم شهواته. عاش متجوّلا في أرجاء الهند مدرّسا تعاليمه إلى مريديه. » ; (4) « الباهاغوية : هو اسم من بين الأسماء الشرفية العشرة لبوذا ويعني حرفيا "هو الفائز بسعادة الانعتاق"، يستعمل هذا الاسم عند مخاطبة كائنات مقدّسة ؛ وعموما فالتسمية دالّة على الخير وحبّ الخير لكلّ الكائنات الحيّة. » [R7-P6 : 300 dpi, notes (3) et (4) rendues en entier ; « Siddhartha Gautama » et « Sakya » non imprimés : graphies imprimées « سيدارتا كوداما », « ساكاي », « كاكاي »] (la note intitulée « الدّيانة الهندوسية » glose le bouddhisme : incohérence de l'imprimé, confirmée par R7-A2 p. 193 ; `[?]` levé).
 - **المهام (p.193, verbatim, 4)** : « – لماذا انزعج الكاتب من اختزال الدّين في مسائل الحلال والحرام؟ – ما رأيك في مجاز الشجرة الذي اعتمده الكاتب لبيان وحدة الدّين وتعدّد الشرائع؟ – كيف تفهم تأكيد الكاتب بأنّه لا يعتقد أن يسود في يوم ما دين واحد وقوله أنّه لا يوجد بمعنى ما إلا دين واحد ؟ – ما هي الصفة التي تصدق على موقف الكاتب ممّن جاءه يطلب الدخول في الباهاغوية والتخلّي عن المسيحية؟ اذكرها وبيّن مدى وجاهتها وأبعادها. »
 
 ##### SND 14 — الحضارة العالميّة — p.194-195 (se termine p.195 ; le SND 15 débute p.196, hors tranche)
@@ -8958,3 +8958,256 @@ Tous les constats sont corrigés dans la fiche. Les trois sections en échec app
 
 #### Verdict (seuil : moins de 3 substantiels pour 10 pages, compté avant correction)
 B et D passent. A (3,6) et C (4,5) ne passent pas. Sur l'ensemble, 3,0 ne passe pas, à la limite. Tous les constats sont corrigés, mais A et C restent fragiles sur le rendu des mouvements argumentatifs.
+
+## 11. R-7 passes 4 à 6 — rapports (2026-11-08)
+
+---
+
+### Rapport `R7-P4-1`
+
+### R7-P4-1 — Audit indépendant, passe 4 (philosophie Bac Lettres, tome 1, 210422P00)
+
+Date : 2026-11-08. Fiche : `content/programmes-officiels/programme/bac-lettres/philosophie.md` §8.
+Méthode : 30 pages rendues à 170 dpi (`/root/.cache/yqa-manuels/render-p4-P4-1/`), 300 dpi pour le تمهيد p. 184 ; pour chaque سند, thèse et mouvement rédigés à partir de l'image avant de lire la fiche, puis comparaison ; verbatim (تمهيد، حواشي، مهام، encadrés, notices) comparés mot à mot. Toutes les corrections portent la marque `[R7-P4 : …]`.
+
+#### Pages vérifiées
+- p. 15-24 : سند 2 (p. 15 seulement : حاشية + مهام), سندات 3, 4, 5, 6, سند 7 (p. 24).
+- p. 183-192 : SND 8 (p. 183), SND 9, 10, 11, 12, SND 13 (p. 192).
+- p. 196-205 : A.1-A.3 (سندات 15, 16, 17), A.4.1 سياقات فكرية (p. 202-203), A.4.2 تدقيقات مفهومية (p. 204-205).
+
+#### Section p. 15-24 — 0 substantiel, 6 forme (0 / 10 p.) — PASSE
+Forme (tous corrigés) :
+1. سند 3 thèse : « universel concret qui se pose en ses déterminations » (glose) → texte : le vrai universel se fait particulier et se pose avec son contraire.
+2. سند 3 mouvement (2)-(3) : « concret/abstrait » non imprimé ; la confusion visée est entre « الكلي الحقيقي » et le simple commun.
+3. سند 5 thèse : « tout en doutant de ses organes » → il ne les affirme pas (le texte ne dit pas qu'il en doute).
+4. سند 6 thèse : « le sentiment d'abolition est un nouveau sentiment » non imprimé → une seconde conscience assiste à l'extinction de la première.
+5. سند 6 mouvement (2) : même correction.
+6. سند 7 mouvement (3) : « l'âme jouit » non imprimé ; argument du désir des réalités divines (l. 21-26) ajouté.
+
+#### Section p. 183-192 — 4 substantiels, 1 forme (4 / 10 p.) — NE PASSE PAS (avant correction)
+Substantiels (tous corrigés) :
+1. SND 9 التمهيد (verbatim) : « والمؤسسات » ajouté, absent de l'imprimé (vérifié 300 dpi).
+2. SND 9 thèse : relation inversée, « l'universalisme est l'expression logique de l'impérialisme » → l'impérialisme est la conséquence logique de la prétention à l'universalité.
+3. SND 10 thèse : les autres cultures sont mortes « de leur spécificité » (mort naturelle), nous mourons de la perte de toute spécificité ; la fiche attribuait la « perte de spécificité » aux autres cultures.
+4. SND 12 thèse et mouvement (4)/(6) : la « réponse facile » (le المبني للمجهول comme forme générale du أنا) était présentée comme une thèse, et la question de la l. 22-26 (le أنا au pluriel, saisi comme أنت et dans le هُمْ) comme une affirmation (« le أنا peut devenir أنت et هم »).
+Forme : SND 12 mouvement (3) reformulé (« perception d'un acte humain, accompli par un autre homme »).
+Sans écart : SND 8 (p. 183), SND 11, SND 13 (p. 192).
+
+#### Section p. 196-205 — 0 substantiel, 4 forme (0 / 10 p.) — PASSE
+Forme (tous corrigés) : A.3 حاشية (4) « الارادي » → « الإرادي » ; A.4.2 هوية « ittiḥād » → « الوحدة » imprimé ; ما بعد الحداثة « valeurs universelles » → « القيم التنويرية المطلقة » ; العالمية « l'universel » → « العالمي ».
+
+#### Notes
+- Numérotation marginale fautive à l'imprimé : p. 196 (« 25 » pour 15, puis 20), p. 200 (« 25, 30 » pour 15, 20), p. 192 (« 25 » pour 15, déjà signalé).
+- Aucune plage de plus de 8 mots d'un texte de سند copiée dans les passages relus ou ajoutés.
+
+#### Bilan
+- 30 pages vérifiées ; 4 substantiels, 11 forme ; tous corrigés : oui.
+- Taux : 0 / 10 (p. 15-24), 4 / 10 (p. 183-192), 0 / 10 (p. 196-205) ; global 1,3 / 10.
+
+---
+
+### Rapport `R7-P4-2`
+
+### R7 — passe 4, auditeur P4-2 (contexte vierge, indépendant)
+
+- Fiche : `content/programmes-officiels/programme/bac-lettres/philosophie.md` (§8, tranches a06 et a07).
+- Source : tome 1, 210422P00, محور 4 « العلم بين الحقيقة والنمذجة ».
+- Pages vérifiées : 256 à 289 (34 pages), plus 290 (fin du سند 34 : notice, حاشية, مهام). Rendu 170 dpi (`render-p4-P4-2/`), 300 dpi sur p. 260, 263, 269.
+- سندات couverts : 15 à 34 (20 سندات). Pour chacun : texte lu à l'image et résumé de mon côté avant toute comparaison avec la fiche, puis comparaison de la thèse, du mouvement et des verbatim (تمهيد, encadrés, notices, حواشي, مهام).
+- Copie de texte de سند : aucune plage de plus de 8 mots ajoutée (citations arabes courtes seulement).
+
+#### Écarts substantiels (7), tous corrigés (balises `[R7-P4 : …]`)
+
+1. سند 15 (Granger), thèse : « le savoir n'est pas la réalité même » et « aucune forme de connaissance ne peut dire le réel en totalité » ne sont pas imprimés ; le second inverse la conclusion, qui fait du savoir scientifique un privilège exclusif. Thèse réécrite.
+2. سند 16 (Nouvel), mouvement : « le débat, c'est la guerre » était donné comme exemple de modèle. C'est le contre-exemple, la métaphore que le modèle n'est PAS.
+3. سند 21 (Bouleau), thèse : la relation était inversée (« la validité est le critère de la confrontation »). Le texte dit que la confrontation est le critère de la validité.
+4. سند 30 (Duhem), mouvement : le modèle « aurait aidé » Maxwell, alors que le texte dit « لا يبدو … قد قدّم العون ». La négation était inversée.
+5. سند 30, même passage : « courants de conduction » n'est pas imprimé. Le texte porte « تيارات التنقل » (courants de déplacement).
+6. سند 32 (Blanché), thèse : « l'auteur ne défend pas le conventionnalisme » était faux. Le sujet de « لا يدافع » est indéfini : seuls ceux qui coupent l'axiomatique de ses fondements intuitifs défendent le conventionnalisme.
+7. سند 33 (Bachelard), thèse : la fiche disait « la pensée simplifie ». À l'image, c'est « معنى التّراكب » qui simplifie les problèmes, et la pensée est ce qui se trouve simplifié.
+
+#### Écarts de forme (6), tous corrigés
+
+1. سند 17, مهمة 5 : la « coquille توّكد » n'existe pas. L'image porte « تؤكد » (vérifié à 300 dpi).
+2. سند 19, تمهيد : l'image porte « أن لا يهدأ », pas « ألاّ يهدأ » (300 dpi).
+3. سند 24, تمهيد : le mot « يجعل » manquait (« علم مركّب يجعل من النسق… »).
+4. Notes a06, anomalie 5 : la fausse coquille « توّكد » a été retirée, et « بربروس » / « كبلر » alignés sur les graphies imprimées « بربـاروس » / « كبلار ».
+5. سند 29, thèse : « l'anarchisme est un progrès » remplacé par « contribue au progrès » (« تسهم في التقدّم »).
+6. سند 32 : ajout du préalable omis (les génies diffèrent ; l'analogie du moteur thermique et de la différence de température).
+
+#### Taux par 10 pages (base : 34 pages)
+
+- Substantiels : 7, soit 2,06 pour 10 pages.
+- Forme : 6, soit 1,76 pour 10 pages.
+- Tous corrigés : oui.
+
+#### Verdict
+
+La section **passe** : moins de 3 écarts substantiels pour 10 pages.
+
+Les سندات 18, 19, 20, 22, 23, 24, 25, 26, 27, 28, 31 et 34 sont conformes sur la thèse et le mouvement.
+
+Points laissés tels quels (pas des écarts) :
+- سند 22 : la notice de Thom contient « والتي أشرفت », qui peut se rapporter à Cartan ou au groupe بورباكي ; la fiche le rapporte à Cartan.
+- سند 29 : « مهمّة العالم » et « انتباه العالم » peuvent se lire « savant » ou « monde » ; la lecture de la fiche n'a pas été changée.
+
+---
+
+### Rapport `R7-P4-3`
+
+### R7-P4-3 — Audit indépendant, passe 4 (philosophie Bac Lettres, tomes 1 et 2)
+
+Date : 2026-11-08. Fiche : `content/programmes-officiels/programme/bac-lettres/philosophie.md` §8.
+Méthode : 31 pages rendues à 170 dpi (`/root/.cache/yqa-manuels/render-p4-P4-3/`), 300 dpi pour la marge p. 316 (tome 1). Pour chaque سند, thèse et mouvement rédigés d'après l'image avant de lire la fiche, puis comparaison. Verbatim (تمهيد، حواشي، مهام، encadrés, notices, marges) comparés mot à mot. Toutes les corrections portent la marque `[R7-P4 : …]`.
+
+#### Pages vérifiées
+- Tome 1 (210422), p. 300-309 : fin du سند 39 (notice, حاشية, مهام p. 300), سند 40 (p. 301-302), سياقات فكرية (p. 303-306), تدقيقات مفهومية (p. 307-309).
+- Tome 1, p. 310-319 : تعريفات بمؤلّفات et لمزيد الاطّلاع (p. 310-311), نافذة كيفيات التفكير (p. 312-315), نصوص مطولة (Kuhn, p. 316-319).
+- Tome 2 (210423), p. 334-344 : سندات 10 (Artaud), 11 (Platon), 12 (Nietzsche), 13 (Caillois), 14 (Vinci), 15 (al-Farabi).
+
+#### Tome 1, p. 300-309 : 0 substantiel, 4 forme (0 / 10 p.), PASSE
+Forme (tous corrigés) :
+1. سند 40, thèse : « se soumettre … à l'essor des moyens de destruction » remplacé : il en vient à *accepter* cet essor continu.
+2. المفاهيم الأساسية للسيبرنيطيقا (p. 304) : « système défini par ses éléments et relations » n'est pas imprimé ; le texte parle de délimiter les frontières du système et de l'exprimer en langage mathématique. Le premier terme de la classification temps / temps-espace était omis.
+3. الإبستيمولوجيا البنائية (p. 304) : « cela aboutit à un إبستيمولوجيا بنائية » n'est pas imprimé ; l'image des pas qui produisent le chemin est rétablie.
+4. الواقع (p. 308), sens philosophique : « opposé à la représentation » ; l'imprimé dit « صورة المعرفة » (la forme de la connaissance, par opposition à sa matière).
+Sans écart : notice de Heisenberg, حاشية et مهام p. 300 ; التمهيد, marge, notice, حاشية, tableau et مهام du سند 40 ; التجربة, قابلية التكذيب, البراديغم et les encadrés « قيل في ».
+
+#### Tome 1, p. 310-319 : 1 substantiel, 2 forme (1 / 10 p.), PASSE
+Substantiel (corrigé) :
+1. نصوص مطولة (Kuhn, p. 316-319), thèse et mouvement. La fiche mettait vérification et falsification sur le même plan, sous une « critique de leur insuffisance ». Elle présentait les théories probabilistes comme une simple « comparaison de plusieurs théories », sans l'objection de Kuhn (un langage d'observation neutre est impossible). Elle omettait aussi sa solution : les deux écoles ont fusionné deux processus distincts, la falsification étant un processus ultérieur et séparé, la victoire du nouveau paradigme, et la vérification ressemblant à la sélection naturelle. Elle omettait enfin l'analogie des échecs et le fait que l'exemple Priestley/Lavoisier est ensuite qualifié de « simplification extrême ». Le mouvement (1)-(4) est réécrit.
+Forme (corrigés) : marge p. 316, graphie imprimée « البرادايغم » (300 dpi) ; dans la même réécriture, trois détails non imprimés retirés : « ceux qui l'adoptent » (ce sont les innovateurs qui sont jeunes), « l'échec tient au chercheur » et « preuve logique / persuasion ».
+Sans écart : notices de الأسطورة الإطار et de بحث في مفهوم النموذج, liens et livres p. 311, toutes les نشاطات et تنبيهات p. 312-315, texte de Popper p. 315, plan marginal p. 317-319.
+
+#### Tome 2, p. 334-344 (11 p.) : 1 substantiel, 3 forme (0,9 / 10 p.), PASSE
+Substantiel (corrigé) :
+1. سند 10 (Artaud), mouvement (1) : « toute forme d'art demande un certain dépaysement » contredit le texte. Pour Artaud, le langage, la musique, la peinture, la poésie et le cinéma demandent une étrangeté « لا نجده في الفنون الأخرى » (que les autres arts n'ont pas).
+Forme (corrigés) :
+1. سند 10, thèse : « que seule la caméra dévoile » et « antérieur à toute médiation » ne sont pas imprimés. La visée expressive (pensée et conscience intérieure) et la critique du cinéma qui raconte des histoires sont ajoutées.
+2. سند 12 (Nietzsche) : en (4), « le public peut l'ignorer » est imprécis ; le texte dit qu'au niveau élevé où il parvient, il ne trouve plus personne capable d'en jouir. L'improvisation et les autres domaines (bonté, vertu, vice) sont ajoutés.
+3. سند 14 (Vinci), thèse : « en choisissant le meilleur » n'est pas imprimé (l'imprimé porte « من بين الأشياء الأقل حسنا »).
+Sans écart : سند 11 (Platon), سند 13 (Caillois), سند 15 (al-Farabi), toutes les تمهيدات, notices, حواشي, مهام et encadrés.
+
+#### Notes
+- Coquille imprimée, déjà signalée par la fiche : la notice d'Einstein (p. 302, tome 1) porte « 1901-1976 », les dates de Heisenberg.
+- Aucune plage de plus de 8 mots d'un texte de سند n'est copiée dans les passages ajoutés.
+
+#### Bilan
+- 31 pages vérifiées ; 2 substantiels et 9 de forme ; tous corrigés : oui.
+- Taux : 0 / 10 (tome 1, p. 300-309), 1 / 10 (tome 1, p. 310-319), 0,9 / 10 (tome 2, p. 334-344) ; global 0,65 / 10.
+
+---
+
+### Rapport `R7-P4-4`
+
+##### R7-P4-4 — Audit R-7, passe 4 : philosophie Bac Lettres, tome 2 (210423P00), pp. 53-82 et 287-297
+
+- Fiche auditée : `content/programmes-officiels/programme/bac-lettres/philosophie.md` (§8, tranches b02, b03 début, b07).
+- Méthode : chaque page rendue à 170 dpi (`/root/.cache/yqa-manuels/render-p4-P4-4/p-NNN.png`) ; pour chaque سند, thèse et mouvement rédigés à partir de l'image avant de lire la fiche, puis comparaison (thèse, mouvement, verbatim des تمهيد, حواشي, مهام, encadrés, notices, noms, dates). p.83 rendue à 110 dpi pour un seul contrôle (Smith/Ricardo). Corrections appliquées dans la fiche par Edit ancré, marquées « [R7-P4 : …] ».
+- Date : 2026-11-08. Pages vérifiées : 41/41 (53-82, 287-297).
+
+###### Progression et constats par section
+
+| Pages | Substantiels | Forme | Corrigés |
+|---|---|---|---|
+| 53-62 (سندات 21-25) | 0 | 6 | oui |
+| 63-72 (سندات 26-30) | 2 | 8 | oui |
+| 73-82 (سندات 31-33, نافذة p.81-82) | 2 | 3 | oui |
+| 287-297 (سند 34, نافذة دعائم) | 0 | 3 | oui |
+| **Total (41 p.)** | **4** | **20** | **oui** |
+
+###### 53-62
+- F : سند 21, mouvement : étape partie/tout (injustice partielle, partie de l'injustice totale) omise.
+- F : سند 22 : « la plus naïve » pour « أقدم القوانين وأبسطها ».
+- F : سند 24, mouvement : « question de point de vue » ne rendait pas l'argument (deux faces inconciliables, choix arbitraire) ; glose (2) : « القدر الأقصى من النفع الاجتماعي » omis ; notice : « célèbre par On Liberty » (l'imprimé : livre sur la liberté, l'utilitarisme et le gouvernement représentatif).
+- F : سند 25, glose (4) : phrase « قيمة الأشياء والمنافع نابعة من العمل » omise.
+- سند 23 (Weil) : conforme.
+
+###### 63-72
+- S : سند 29 (Arvon), thèse : « espoir d'une libération (puissance cosmique) » non imprimé — le texte parle de promesse d'un monde meilleur et de « رقادها الكوني » ; amour et « dignité à conquérir » omis ; concept « قوّة كونية » non imprimé.
+- S : سند 30 (Aron), mouvement : gardait la liste « hiérarchie, délimitation, conscience », contredisant la thèse corrigée en passe 3 (délimitation, différences psychologiques, conscience).
+- F : سند 26 (S. Weil) : « les machines » ne produisent pas des esclaves, ce sont les usines-prisons ; « مبهمة » (l. 12) bien imprimé, retiré à tort en passe 2.
+- F : سند 27 (Fromm) : renoncement du socialisme/communisme à une société nouvelle omis ; « la politique » pour « الحكومة », « الأذواق » omis.
+- F : سند 28 : bornes « l. 20-27 » (le texte a 24 lignes).
+- F : سند 30 : « fils d'ouvrier … président de la République » ; notice : « influencé un temps » pour « لفترة طويلة », rejet des prédictions marxistes.
+
+###### 73-82
+- S : سند 31 (Marcuse), mouvement : « problème social de répartition » non imprimé (l. 6-10 : processus social objectif, non décadence morale).
+- S : سند 33 (Sartre), thèse : « absorption des classes défavorisées par le travail » — l'imprimé dit « امتصاص الطبقات المحظوظة » (privilégiées), société « عُرّف بالعمل ».
+- F : سند 33 : étape « rapport de chose à chose » omise ; سند 32 (Touraine) : gloses (2) et (6) amputées par des « ... » non imprimés ; p.82 : Smith et Ricardo sont p.83, non p.82.
+- سند 32, encadré Ricœur, notices, p.81 (المساواة) : conformes.
+
+###### 287-297
+- F : تدقيقات p.289 : résumé « obligation intérieure » (l'imprimé donne deux sources, intérieure et extérieure).
+- F : notice Bergson (p.295-296) : « supplément d'âme » non imprimé ; « الدافع التصوّفي » (p.295) confondu avec « الدافع الحيوي » (p.296) ; contenu des quatre chapitres ajouté.
+- F : notice Kant (p.296-297) : contenu des trois sections incomplet, rétabli.
+- سند 34 (Pena-Ruiz), سياقات (رواقية، نفعية), notices Miskawayh et al-Kindi : conformes.
+
+###### Verdict
+Taux par 10 pages : 53-62 = 0/10 ; 63-72 = 2/10 ; 73-82 = 2/10 ; 287-297 = 0/11 (moyenne 1,0/10 avant correction).
+Toutes les sections passent (< 3 substantiels / 10 p.). Tous les constats sont corrigés dans la fiche.
+
+---
+
+### Rapport `R7-P5`
+
+### R7 — Passe 5 — bac-lettres/philosophie.md, pages 183-192 (tome 1, 210422P00)
+
+Auditeur indépendant, contexte vierge, 2026-11-08. Rendu 170 dpi (`render-p5/p-183…192.png`), 300 dpi pour 3 recadrages (p. 191 l. « حاملة للسلوك » ; p. 192 تمهيد, début et fin). Thèse et mouvement de chaque سند rédigés depuis l'image AVANT lecture de la fiche, puis comparaison bloc par bloc (fiche l. 2146-2199).
+
+#### Pages vérifiées
+183 (fin سند 8 : حاشية 4, مهام), 184-185 (سند 9 Huntington), 186-187 (سند 10 Baudrillard), 188-189 (سند 11 Kant), 190-191 (سند 12 Merleau-Ponty), 192 (سند 13 Gandhi, première page). 10/10.
+
+Conformes sans changement : تمهيد des سندات 9-12, encadrés-citations (غليون، باربار، غارودي، كانط، ستيرنار، غاندي), références imprimées, notices الكاتب (hors une omission, ci-dessous), حواشي 9-11 et 12 (1-5, 7), toutes les مهام p. 183, 185, 187, 189, 191 (comparées mot à mot).
+
+#### Écarts substantiels (4) — tous corrigés
+1. سند 10 (p. 186), thèse : la fiche prêtait au texte la « التلازم العبثي » (sexe et violence), qui n'est que dans la حاشية (2) p. 187 ; le texte dit : la diffusion mondiale le long des réseaux est la pornographie, la copulation interactive suffit.
+2. سند 12 (p. 190), thèse : « compréhension d'un acte humain par un autre acte humain » → percevoir un acte humain et un acte accompli par un autre homme ; ajout de la présence d'autrui « نكرة متستّر » (anonyme, voilée), et de « la civilisation à laquelle je participe ».
+3. سند 12 (p. 190), thèse + mouvement (5) : l'analogie des conduites (« سنجيب مجدّدا ») était donnée comme thèse affirmée ; c'est la seconde réponse provisoire, suspendue par « ولكن السؤال هو على وجه التحديد ».
+4. سند 13 (p. 192), thèse + mouvement (3) : seule la moitié « pas de religion unique à venir » figurait ; manquait « en un sens il n'existe déjà qu'une religion fondamentale », qui porte le titre وحدة الدين.
+
+#### Écarts de forme (6) — tous corrigés
+- سند 9 thèse : « immorale » → « immorale dans ses conséquences » (« في نتائجها »).
+- سند 9 الكاتب : « الغرب والآخر » et « الصراعات التي ولدها الغرب » rétablis.
+- سند 10 thèse : c'est l'universel (non les valeurs) qui est sans équivalent dans aucune autre culture.
+- سند 12 concepts : coquille « الآنا » → « الأنا ».
+- سند 12 حاشية (6) : graphie imprimée « وحمالّة » (300 dpi), non « وحمالةً ».
+- سند 13 تمهيد : fatha « المتديّنَ » non imprimée ; « الّذي » avec shadda (3 occurrences), 300 dpi.
+
+#### Bilan
+Pages 10/10 ; substantiels 4, forme 6 ; tous corrigés : oui (Edit ancrés « [R7-P5 : …] »). Aucune plage de plus de 8 mots d'un texte de سند ajoutée (citations courtes en arabe ≤ 7 mots). Verdict : 4 substantiels pour 10 pages ≥ 3 → la tranche 183-192 NE PASSE PAS en passe 5 (passe 6 recommandée, centrée sur les mouvements des سندات 12-13 et la fin du سند 13 p. 193).
+
+---
+
+### Rapport `R7-P6`
+
+### R7 — Passe 6 — philosophie Bac Lettres, tome 1 (210422P00), p. 188-193
+
+Auditeur indépendant, contexte vierge, 2026-11-08. Rendu 200 dpi (`render-p6/p-188..193.png`), recadrages 300 dpi : p. 189 (حاشية 2), p. 193 (حاشية 1-3), p. 192 (marge). Lecture à l'image AVANT la fiche.
+
+#### Correction du périmètre annoncé
+La consigne annonçait « سند 11 Kant fin, سند 12 Merleau-Ponty, سند 13 Lévi-Strauss, début du 14 ». L'image dit autre chose, conforme au §7 de la fiche :
+- p. 188-189 : سند 11 **en entier** (Kant, « الكونيّة ووحدة البشريّة ») ;
+- p. 190-191 : سند 12 (Merleau-Ponty, « التعرّف إلى الآخر ») ;
+- p. 192-193 : سند 13 = **غاندي** (« وحدة الدّين وتعدّد الشّرائع »), clos p. 193 par ses مهام ;
+- le سند 14 (Lévi-Strauss) commence p. 194 : rien de lui sur p. 193.
+
+#### Substantiels (3)
+1. **SND 11, thèse** : « relations pacifiques légalement réglées » aplatissait la modalité imprimée (« يمكن أن تصبح في آخر المطاف » publiques et légales ; s'approcher « أكثر فأكثر ») ; argument « مجبرون … » et restriction « إلاّ أنّ … البحث عن شروط » incomplets. Thèse et mouvement réécrits avec connecteurs.
+2. **SND 12, mouvement** : deux questions structurantes omises (l.10-12 : absorber un acte humain dans le monde du « هُمْ » ; l.28-30 : comment une matière devient vestige / une intention devient visible) ; ajouts non imprimés (« civilisation = choses qui renvoient à autrui », réponse « jugée insuffisante »). Thèse réécrite : le texte n'a pas de thèse conclusive, il se clôt sur une difficulté et un « ينبغي » sans solution.
+3. **SND 13, thèse/mouvement** : l'épisode du chrétien est imprimé au **conditionnel** (« إذا جاءني … سأجيبه »), la fiche le narrait comme un fait ; « inséparable de l'action », « la voie que l'on suit », « sa politique découle de sa foi » non imprimés ; argument l.3-7 (Dieu n'a pas créé de rangs ; un texte fondant le rang sur la naissance ne doit pas être cru) omis.
+
+#### Forme (7)
+- SND 11 حاشية (2) : ponctuation imprimée « هما؛ » (fiche « : »).
+- SND 11 notice : Newton « modèle épistémique » et rétribution par les étudiants omis → rétablis.
+- SND 13 notice Gandhi très résumée (islam, presse, pauvres, femmes, ascèse, régime végétal omis) → complétée ; « إخوة » (notice) / « أخوة » (référence p. 192) signalés.
+- SND 13 حاشية (3) et (4) tronquées par « ... » et glosées par des noms non imprimés (Siddhartha Gautama, Sakya) → rendues en entier, graphies « سيدارتا كوداما », « ساكاي », « كاكاي ».
+- SND 13 concepts : « التسامح », « التديّن » non imprimés → retirés.
+- SND 13 : phrase elliptique « فنحن لا نجد في الطّبيعة مثالا عن المستقيم » signalée comme ambiguë (lien non explicite).
+- SND 13 : 4e مهمة (« ممّن جاءه ») traite comme advenu un cas que le texte pose au conditionnel : signalé.
+
+#### Conformes (comparés mot à mot)
+تمهيد des 3 سندات ; encadrés (كانط ; ستيرنار ; غاندي) ; références d'œuvre FR/AR ; حواشي SND 11 (1)(3)(4), SND 12 (1)-(7), SND 13 (1)(2) ; renvoi « السند عدد 19 » ; مهام des 3 سندات (4, 5, 4) ; numérotation marginale p. 192 « 25 » pour 15 (déjà notée).
+
+#### Verdict
+3 substantiels sur 6 pages → **ne passe pas** au seuil (< 3) ; tous trois corrigés dans la fiche (marques « [R7-P6 : …] »). Les trois portaient sur thèse/mouvement : la cause de l'instabilité entre passes était l'ajout d'interprétation ; la version P6 ne retient que les énoncés imprimés avec leurs connecteurs et modalités. Une passe 7 courte sur ces seuls paragraphes est conseillée.
