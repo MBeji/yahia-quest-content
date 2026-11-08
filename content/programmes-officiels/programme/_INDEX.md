@@ -138,7 +138,7 @@
 
 | statut | matière | profondeur | sources (couverture calculée) | R-7 | maj | notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| 🚧 partielle — ⛔ génération interdite | **philosophie** | first-pass | `210422` 2 % (manque p.1–320) · `210423` 2 % (manque p.1–392) | — | 2026-11-07 (claude/campagne-wqgvi1) | A1 (2026-11-07) : sujet philosophie-bac-lettres, chapitrage codifié (8 محاور, un par chapitre) relevé sur les deux فهارس lus à l'image. Corps des deux manuels non lu : polices AXt* à encodage propriétaire (couche texte brouillée), lecture à l'image ou table glyphe→lettre à bâtir. |
+| 🚧 partielle — ⛔ génération interdite | **philosophie** | mixte | `210422` 100 % · `210423` 100 % | — | 2026-11-08 (claude/campagne-wqgvi1) | Lecture integrale a l'image (L3, 100 dpi) des deux manuels le 2026-11-07 par 16 lecteurs sonnet (tranches brutes sous _tranches-wip/bac-lettres-philosophie/), police AXt* : couche texte inutilisable. R-7 passe 1 (6 auditeurs opus, 2026-11-08) : 183 constats SUBSTANTIELS corriges sur ~290 pages sondees de 727 (contresens de theses, verbatim faux, details inventes, plages copiees) => SOUS LA BARRE ; les pages non sondees sont suspectes (environ un ecart substantiel toutes les deux pages sondees). Statut maintenu partielle : generation interdite tant qu'une passe de verification des pages restantes n'a pas ete faite. Les rapports R7-*.md listent les pages sondees et les ecarts du plan §7 (auteurs decales au محور 3 du tome 1). |
 
 ## bac-math
 
