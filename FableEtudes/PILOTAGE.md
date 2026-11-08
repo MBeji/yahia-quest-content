@@ -43,7 +43,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Économie et gestion | mathématiques | `222463` | ❌ aucune | — | A1 |
 | Économie et gestion | économie | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
 | Lettres | arabe | `201421` + `201422` | ❌ aucune | — | A1 |
-| Lettres | philosophie | `210422` + `210423` | 🔄 ossature A1 (2026-11-07, `claude/campagne-wqgvi1`) : sujet `philosophie-bac-lettres`, 8 محاور codifiés ; corps des manuels (727 p., polices `AXt*`) non lu | 0/8 chapitres | A3 : lecture du corps (image ou table glyphe→lettre), puis R-7 |
+| Lettres | philosophie | `210422` + `210423` | 🔄 lue à 100 % à l'image (727 p.), `partielle`/`mixte` : R-7 sous la barre après deux passes (2026-11-08) ; 3e lecture ciblée des sections à fort taux d'écart requise | 0/8 chapitres | 3e lecture ciblée (voir `suivi/bac-lettres.json`), puis `validee-r7` ; ensuite A4+ (génération) |
 
 Matières communes, au rang suivant : philosophie des sections scientifiques (`210402` ; fiche `bac-math`
 partielle 75 %, tenue par `feat/transcription-bac-philosophie-mabhath2`), arabe (`201403`), français
