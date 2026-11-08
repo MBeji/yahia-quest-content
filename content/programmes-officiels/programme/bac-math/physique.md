@@ -4005,8 +4005,8 @@ Relecture indépendante (auditeur en contexte vierge, opus) de chaque chapitre *
 | 06 oscillations-mecaniques-forcees | 14 | 1 |
 | 07 ondes-mecaniques-progressives | 17 | 2 |
 | 08 nature-ondulatoire-lumiere | 21 | 2 |
-| 09 Spectre atomique | 11 | n/d |
-| 10 | n/d | n/d |
-| 11 | n/d | n/d |
+| 09 spectre-atomique | 11 | 1 |
+| 10 noyau-atomique | 11 | 1 |
+| 11 reactions-nucleaires | 19 | 0 |
 
-Total : 11 corrections, 131 pages sondées en image par les auditeurs (sur 320).
+Total : 13 corrections, 161 pages sondées en image par les auditeurs (sur 320), en plus des pages lues en image par les lecteurs (toutes les pages à formule, encadré, tableau ou figure exploitée).
