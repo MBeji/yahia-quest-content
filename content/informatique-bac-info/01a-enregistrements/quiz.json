@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Les enregistrements",
+  "questions": [
+    {
+      "prompt": "Une application de livraison garde, pour chaque colis, son numéro (entier), son poids (réel) et un indicateur « fragile » (booléen). Quelle structure regroupe ces trois informations dans une seule fiche ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un tableau de 3 cases"
+        },
+        {
+          "id": "b",
+          "text": "Un enregistrement à 3 champs"
+        },
+        {
+          "id": "c",
+          "text": "Un type énuméré à 3 valeurs distinctes"
+        },
+        {
+          "id": "d",
+          "text": "Trois variables simples déclarées séparément"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un enregistrement à 3 champs regroupe des types différents, ici un entier, un réel et un booléen ✓. Un tableau n'accepte qu'un seul type d'élément, alors que les trois informations n'ont pas le même type. Un type énuméré ne décrit que les valeurs possibles d'une seule information, et trois variables déclarées séparément ne forment pas une seule fiche.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "TYPE Colis = Record numero : Integer; poids : Real; fragile : Boolean; End;\nVAR c : Colis;\nQuelle instruction range 2.5 dans le champ poids de c ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Colis.poids := 2.5;"
+        },
+        {
+          "id": "b",
+          "text": "c[poids] := 2.5;"
+        },
+        {
+          "id": "c",
+          "text": "c.poids := 2.5;"
+        },
+        {
+          "id": "d",
+          "text": "poids.c := 2.5;"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un champ se désigne par la variable, un point, puis le nom du champ : c.poids := 2.5; ✓. Le nom du type Colis ne désigne aucune fiche, donc rien ne peut être rempli avec Colis.poids. Les écritures c[poids] (crochets, comme pour un tableau) et poids.c (ordre inversé) ne respectent pas la notation variable.champ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "c est une variable de type Colis. Que fait cette instruction ?\nWith c Do\nBegin\n  numero := 7;\n  fragile := True;\nEnd;",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle affecte 7 à c.numero et True à c.fragile"
+        },
+        {
+          "id": "b",
+          "text": "Elle affecte 7 et True à c tout entier"
+        },
+        {
+          "id": "c",
+          "text": "Elle déclare deux variables locales numero et fragile"
+        },
+        {
+          "id": "d",
+          "text": "Elle affecte 7 à c.numero seulement, fragile reste inchangé"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sous With c Do, les noms numero et fragile désignent les champs de c : les deux affectations portent sur c.numero et c.fragile ✓. Le bloc Begin … End; contient bien les deux instructions, donc fragile est aussi modifié. Aucune variable n'est déclarée, et c n'est pas un champ unique qui recevrait deux valeurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "c1 et c2 sont de type Colis, et c1.poids vaut 2.5.\nc2 := c1;\nc2.poids := 4;\nQuelle est alors la valeur de c1.poids ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.5"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "6.5"
+        },
+        {
+          "id": "d",
+          "text": "Erreur de compilation"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "c2 := c1 recopie les champs de c1 dans c2, puis c2.poids := 4 ne change que la copie : c1.poids vaut toujours 2.5 ✓. La valeur 4 supposerait que c2 et c1 sont la même fiche. La valeur 6.5 additionne les deux poids, ce que rien n'ordonne. L'affectation globale est permise entre deux variables du même type, donc le programme compile.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "TYPE Tab = Array[1..50] Of Colis;\nVAR T : Tab;\nQuelle expression désigne le poids du troisième colis de T ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "poids[T[3]]"
+        },
+        {
+          "id": "b",
+          "text": "T.poids[3]"
+        },
+        {
+          "id": "c",
+          "text": "T[poids].3"
+        },
+        {
+          "id": "d",
+          "text": "T[3].poids"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "T[3] est la fiche du troisième colis et le point mène à son champ : T[3].poids ✓. L'écriture T.poids[3] traite T comme une fiche qui contiendrait un tableau poids, alors que T est un tableau de fiches. Les écritures T[poids].3 et poids[T[3]] inversent les rôles de l'indice et du champ.",
+      "difficulty": 2
+    }
+  ]
+}

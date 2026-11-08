@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du pointeur",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Le fichier d'entiers scores contient 12, 7, 15, 9, 11. On exécute :\nReset(scores); Seek(scores, 3);\nRead(scores, v); Read(scores, w);\nWriteLn(v + w);\nQuelle valeur est affichée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "19"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        },
+        {
+          "id": "d",
+          "text": "24"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seek(scores, 3) place le pointeur sur l'élément de numéro 3, qui vaut 9. Le premier Read donne v = 9 et avance le pointeur sur l'élément de numéro 4, qui vaut 11 : le second Read donne w = 11. L'affichage est 9 + 11 = 20 ✓. La valeur 18 suppose qu'un Read n'avance pas le pointeur. La valeur 19 oublie le Seek et lit 12 + 7. La valeur 24 additionne 15 + 9, en comptant le numéro 3 à partir de 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le fichier d'entiers f contient 12, 7, 15, 9, 11. On exécute :\nReset(f); Seek(f, 1);\nv := 99; Write(f, v);\nClose(f);\nQuel est alors le contenu de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12, 99, 15, 9, 11"
+        },
+        {
+          "id": "b",
+          "text": "12, 7, 15, 9, 11, 99"
+        },
+        {
+          "id": "c",
+          "text": "12, 99, 7, 15, 9, 11"
+        },
+        {
+          "id": "d",
+          "text": "99, 7, 15, 9, 11"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Seek(f, 1) place le pointeur sur l'élément de numéro 1, qui vaut 7. Write remplace cet élément sans rien insérer : le contenu devient 12, 99, 15, 9, 11 ✓. Le contenu « 99, 7, 15, 9, 11 » remplace le premier élément, par un comptage à partir de 1. Le contenu « 12, 99, 7, 15, 9, 11 » suppose une insertion, que Write ne fait pas. Le contenu « 12, 7, 15, 9, 11, 99 » suppose un ajout en fin, qui exige de pointer la taille du fichier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Ce programme doit ajouter v à la fin du fichier scores sans effacer les scores existants :\nAssign(scores, 'C:/Club/scores.dat');\nRewrite(scores);\nSeek(scores, FileSize(scores));\nWrite(scores, v);\nClose(scores);\nQue faut-il corriger ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remplacer FileSize (scores) par FileSize (scores) - 1"
+        },
+        {
+          "id": "b",
+          "text": "Ajouter Truncate (scores) après Write"
+        },
+        {
+          "id": "c",
+          "text": "Déplacer Close (scores) avant Seek"
+        },
+        {
+          "id": "d",
+          "text": "Remplacer Rewrite par Reset"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Rewrite ouvre le fichier en effaçant son contenu : FileSize (scores) vaut alors 0 et seul v est écrit. Avec Reset, le fichier garde ses éléments et Seek (scores, FileSize (scores)) place le pointeur après le dernier ✓. Soustraire 1 écraserait le dernier score au lieu d'ajouter. Truncate après Write ne rend pas les scores effacés. Fermer avant Seek rend l'écriture impossible.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le fichier d'entiers scores contient 12, 7, 15, 9, 11. On exécute :\nnb ← 0 ; Ouvrir (scores)\nTant que Non Fin_fichier (scores) Faire\nLire (scores, v)\nSi v < 10 Alors nb ← nb + 1\nFin Si\nFin Tant que\nEcrire (nb, Position_fichier (scores))\nQuelles valeurs sont écrites, dans cet ordre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 et 4"
+        },
+        {
+          "id": "b",
+          "text": "2 et 5"
+        },
+        {
+          "id": "c",
+          "text": "3 et 4"
+        },
+        {
+          "id": "d",
+          "text": "3 et 5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La condition v < 10 compte 7 et 9 : nb vaut 2. La boucle lit les 5 éléments et chaque lecture avance le pointeur : à la sortie, Position_fichier vaut 5, juste après le dernier élément ✓. La valeur 3 pour nb compterait 12, 15 et 11, c'est-à-dire les scores supérieurs ou égaux à 10. La valeur 4 pour la position oublie que la dernière lecture avance aussi le pointeur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le fichier d'entiers f contient 6 éléments. On exécute :\nReset(f); Seek(f, FileSize(f) - 2);\nRead(f, v); v := v + 1; Write(f, v);\nWriteLn(FilePos(f), ' ', FileSize(f));\nQuelle ligne est affichée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 6"
+        },
+        {
+          "id": "b",
+          "text": "5 7"
+        },
+        {
+          "id": "c",
+          "text": "6 6"
+        },
+        {
+          "id": "d",
+          "text": "6 7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "FileSize (f) vaut 6, donc Seek (f, 4) place le pointeur sur l'avant-dernier élément. Read le lit et avance le pointeur à 5. Write remplace alors le dernier élément, de numéro 5, et avance le pointeur à 6 : FilePos vaut 6. Aucun élément n'est ajouté, donc FileSize reste 6 ✓. Une position de 5 oublie que Write avance le pointeur. Une taille de 7 suppose que Write ajoute un élément, alors qu'il en remplace un.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un fichier d'entiers f contient N éléments, avec N ≥ 1. Quelle suite supprime uniquement son dernier élément ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reset (f) ; Seek (f, FileSize (f)) ; Truncate (f) ; Close (f)"
+        },
+        {
+          "id": "b",
+          "text": "Reset (f) ; Seek (f, FileSize (f) - 1) ; Truncate (f) ; Close (f)"
+        },
+        {
+          "id": "c",
+          "text": "Reset (f) ; Seek (f, FileSize (f) - 2) ; Truncate (f) ; Close (f)"
+        },
+        {
+          "id": "d",
+          "text": "Rewrite (f) ; Seek (f, FileSize (f) - 1) ; Truncate (f) ; Close (f)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Truncate garde les éléments situés avant le pointeur. Pour ne retirer que le dernier, de numéro N − 1, on pointe ce numéro : il reste les éléments 0 à N − 2 ✓. Pointer FileSize (f) place le pointeur après le dernier élément et ne retire rien. Pointer FileSize (f) − 2 retire les deux derniers. Rewrite efface tout le fichier dès l'ouverture, avant que Seek et Truncate agissent.",
+      "difficulty": 3
+    }
+  ]
+}

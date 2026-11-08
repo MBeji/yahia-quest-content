@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'archiviste du tournoi",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "TYPE\n  Date = Record jj : Integer; mm : Integer; aa : Integer; End;\n  Inscrit = Record nom : String[10]; naissance : Date; End;\nVAR a, b : Inscrit;\na.naissance.aa := 2008;\nb := a;\nb.naissance.aa := 2007;\nQue valent a.naissance.aa et b.naissance.aa à la fin ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2007 et 2007"
+        },
+        {
+          "id": "b",
+          "text": "2007 et 2008"
+        },
+        {
+          "id": "c",
+          "text": "2008 et 2007"
+        },
+        {
+          "id": "d",
+          "text": "2008 et 2008"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'affectation b := a recopie tous les champs de a dans b, y compris le champ naissance avec ses trois champs : b reçoit sa propre date. Modifier ensuite b.naissance.aa ne change que b : a.naissance.aa reste 2008 et b.naissance.aa vaut 2007 ✓. Le couple 2007 et 2007 supposerait que la date est partagée entre a et b. Le couple 2008 et 2008 ignorerait la dernière instruction, et 2007 et 2008 inverse les deux fiches.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "TYPE\n  Date = Record jj : Integer; mm : Integer; aa : Integer; End;\n  Inscrit = Record nom : String[10]; naissance : Date; End;\n  Tab = Array[1..40] Of Inscrit;\nVAR T : Tab;\nQuelle instruction range 2008 dans l'année de naissance de la deuxième fiche de T ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T[2].aa := 2008;"
+        },
+        {
+          "id": "b",
+          "text": "T[2].naissance.aa := 2008;"
+        },
+        {
+          "id": "c",
+          "text": "T.naissance[2].aa := 2008;"
+        },
+        {
+          "id": "d",
+          "text": "Inscrit.naissance.aa := 2008;"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "T[2] est la deuxième fiche, son champ naissance est une Date, et le dernier point mène au champ aa de cette date : T[2].naissance.aa := 2008; ✓. L'écriture T[2].aa saute le niveau naissance, car aa n'est pas un champ direct de Inscrit. T.naissance[2].aa traite T comme une fiche, alors que T est un tableau de fiches, et Inscrit.naissance.aa emploie le nom du type au lieu d'une variable.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "T[1], T[2] et T[3] contiennent (annee, points) : (3, 12), (2, 9), (3, 14), et N = 3.\nFOR i := 1 TO N DO\n  WITH T[i] DO\n    IF annee = 3 THEN points := points + 2;\nQuelle est la somme des champs points des trois fiches après la boucle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "35"
+        },
+        {
+          "id": "b",
+          "text": "37"
+        },
+        {
+          "id": "c",
+          "text": "39"
+        },
+        {
+          "id": "d",
+          "text": "41"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seules les fiches dont annee vaut 3 sont modifiées : T[1] passe de 12 à 14 et T[3] de 14 à 16, tandis que T[2] reste à 9. La somme vaut 14 + 9 + 16 = 39 ✓. La valeur 35 est la somme avant la boucle. La valeur 37 ne compte qu'une seule fiche modifiée, et la valeur 41 ajoute 2 aux trois fiches.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "N = 4 et T contient (annee, points) : (3, 12.5), (2, 9), (3, 14), (4, 11.5). Moyenne est une fonction de type Real qui rend la moyenne des points des joueurs de l'année a.\ns := 0; nb := 0;\nFOR i := 1 TO N DO\n  IF T[i].annee = a THEN\n  BEGIN\n    s := s + T[i].points;\n    nb := nb + 1;\n  END;\nMoyenne := s / nb;\nPour laquelle de ces valeurs de a le programme s'arrête-t-il sur une erreur d'exécution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour a = 1, aucune des quatre fiches ne vérifie T[i].annee = 1 : nb reste à 0 et s / nb divise par zéro, ce qui arrête le programme ✓. Pour a = 2 et a = 4, une seule fiche convient : nb vaut 1 et la moyenne est 9 ou 11.5. Pour a = 3, deux fiches conviennent : nb vaut 2 et la moyenne est 13.25.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "T contient 6 fiches (nom, annee, points) : Sana, 3, 12.5 ; Omar, 2, 9 ; Lina, 3, 14 ; Yassine, 4, 11.5 ; Amel, 3, 8 ; Hedi, 3, 10.\nQuel pourcentage des joueurs de 3ème année ont au moins 10 points ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25"
+        },
+        {
+          "id": "b",
+          "text": "50"
+        },
+        {
+          "id": "c",
+          "text": "66.67"
+        },
+        {
+          "id": "d",
+          "text": "75"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Il y a quatre joueurs de 3ème année (Sana, Lina, Amel et Hedi), dont trois ont au moins 10 points (12.5 ; 14 ; 10) : 3 × 100 / 4 = 75 ✓. La valeur 50 divise par les six joueurs au lieu des quatre de 3ème année. La valeur 66.67 divise le nombre de joueurs de 3ème année par six, sans tenir compte des points. La valeur 25 est la part de ceux qui n'atteignent pas 10 points.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "TYPE Joueur = Record nom : String[10]; points : Integer; End;\nT est un vecteur de Joueur et aux une variable de type Joueur. Quelle suite d'instructions échange complètement les fiches T[i] et T[j] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "aux := T[i]; T[i] := T[j]; T[j] := aux;"
+        },
+        {
+          "id": "b",
+          "text": "T[i] := T[j]; T[j] := T[i];"
+        },
+        {
+          "id": "c",
+          "text": "aux.points := T[i].points; T[i].points := T[j].points; T[j].points := aux.points;"
+        },
+        {
+          "id": "d",
+          "text": "T[i].nom := T[j].nom; T[j].nom := T[i].nom;"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La variable aux sert de case intermédiaire : aux := T[i] garde la fiche de rang i, T[i] := T[j] la remplace, puis T[j] := aux la remet à l'autre place ; les affectations globales déplacent tous les champs d'un coup ✓. Sans variable intermédiaire, la seconde ligne recopierait une fiche déjà écrasée : les deux cases contiendraient la même fiche. Échanger seulement les points ou seulement les noms laisserait l'autre champ à sa place, donc les fiches ne seraient pas échangées en entier.",
+      "difficulty": 3
+    }
+  ]
+}
