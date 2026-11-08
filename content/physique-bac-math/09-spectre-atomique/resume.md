@@ -1,0 +1,11 @@
+# 📜 Résumé : Spectre atomique
+
+- **Énergie et mécanique de Newton** : l'énergie d'un système macroscopique varie de façon continue ; pour l'atome, la force coulombienne F = k·e²/r² attire l'électron, mais une charge accélérée rayonne et s'écraserait sur le noyau : la mécanique de Newton ne suffit pas.
+- **Franck et Hertz** : pour Ec inférieure au seuil (4,9 eV pour le mercure), les chocs sont élastiques et Nc/Ne = 1 ; au-delà, l'atome ne reçoit que 4,9 eV (choc inélastique) et l'électron garde le reste : le transfert d'énergie est quantifié.
+- **Niveaux d'énergie** : l'énergie d'un atome ne prend que des valeurs discrètes Eₙ ; le niveau le plus bas (le plus négatif) est le fondamental, les autres sont excités ; une transition a pour variation ΔE = E(final) − E(initial), positive à l'absorption, négative à l'émission.
+- **Photon** : W = hν = hc/λ avec h = 6,62×10⁻³⁴ J·s, c = 3,00×10⁸ m/s ; lors d'une transition, W = |ΔE| ; convertir 1 eV = 1,6×10⁻¹⁹ J et les nm en m ; UV < 400 nm, visible de 400 à 800 nm, IR au-delà.
+- **Hydrogène** : Eₙ = −13,6/n² (eV), n ≥ 1 ; E₁ = −13,6 eV est le fondamental, Eₙ → 0 donne l'atome ionisé ; l'ionisation depuis le fondamental demande 13,6 eV (moins depuis un niveau excité).
+- **Spectres** : le spectre continu est celui de la lumière blanche, le spectre d'émission est un spectre de raies colorées sur fond sombre, le spectre d'absorption est le continu avec des raies noires aux mêmes positions : c'est la carte d'identité de l'élément.
+- **Raies de l'hydrogène** : W = |ΔE| = 13,6·(1/n² − 1/p²) puis λ = hc/W ; séries de Lyman (vers n = 1, UV), de Balmer (vers n = 2, visible : 657, 487, 435, 411 nm calculées), de Paschen, de Brackett et de Pfund (IR) ; le photon utilisé est l'écart entre deux niveaux, pas l'énergie d'un niveau.
+- **Absorption** : un photon est absorbé s'il apporte exactement l'écart d'énergie entre deux niveaux ; sinon il est diffusé ; à partir de 13,6 eV depuis le fondamental, l'atome est ionisé et l'électron emporte l'excédent en énergie cinétique.
+- **Applications** : les positions des raies identifient les éléments (alliage, étoile), leur noirceur l'abondance ; un spectre étendu vers le violet indique une étoile chaude (les rouges sont les plus froides) ; un décalage vers le rouge indique que l'astre s'éloigne, vers le violet qu'il s'approche.

@@ -1,0 +1,140 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Diffraction, réflexion, réfraction et dispersion",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une chauve-souris émet des ultrasons de fréquence 40 kHz dans l'air, où la célérité du son est 340 m/s. Quel est le quotient λ/a pour un papillon d'envergure a = 4,0 cm ?",
+      "answerKey": {
+        "value": 0.21,
+        "tolerance": 0.01
+      },
+      "explanation": "λ = v/N = 340/(40 × 10³) = 8,5 × 10⁻³ m = 8,5 mm, donc λ/a = 8,5/40 = 0,21 ✓ (rapport de deux longueurs, sans unité). Un quotient aussi petit signifie que le papillon est grand devant λ : les ultrasons sont réfléchis, non contournés. Garder a en cm avec λ en mm donnerait 2,1 ; inverser le quotient (a/λ) donnerait 4,7.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le long d'une même corde, une bosse incidente revient en bosse après réflexion en B, et en creux après réflexion en C. Comment sont les extrémités B et C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "B fixe, C libre"
+        },
+        {
+          "id": "b",
+          "text": "B et C libres"
+        },
+        {
+          "id": "c",
+          "text": "B libre, C fixe"
+        },
+        {
+          "id": "d",
+          "text": "B et C fixes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une bosse qui revient en bosse garde son sens de déformation : B est libre. Une bosse qui revient en creux a un sens contraire : C est fixe ✓. B fixe et C libre inverse les deux cas. Deux extrémités libres donneraient une bosse après chaque réflexion, deux extrémités fixes un creux après chaque réflexion.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une cuve à ondes, une plaque de plexiglas crée une zone 2 où les rides sont plus serrées que dans la zone 1. Que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La zone 2 est moins profonde, car la célérité y est plus petite"
+        },
+        {
+          "id": "b",
+          "text": "La zone 2 est moins profonde, car la fréquence y est plus petite"
+        },
+        {
+          "id": "c",
+          "text": "La zone 2 est plus profonde, car la célérité y est plus petite"
+        },
+        {
+          "id": "d",
+          "text": "La zone 2 est plus profonde, car la longueur d'onde y est plus petite"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Des rides plus serrées signifient une longueur d'onde plus petite ; la fréquence étant celle de la lame, la célérité est plus petite dans la zone 2, c'est-à-dire la zone la moins profonde ✓. La fréquence ne change pas à la traversée, donc elle ne peut pas y être plus petite. Une célérité plus petite va avec la zone la moins profonde, non la plus profonde. Une longueur d'onde plus petite est la conséquence de la célérité plus petite, et la célérité croît avec la profondeur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On superpose les faisceaux d'un laser rouge et d'un laser bleu, puis on les envoie sur un prisme de verre. Que voit-on sur l'écran ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un spectre continu du rouge au bleu"
+        },
+        {
+          "id": "b",
+          "text": "Une seule tache, car le prisme ne sépare que la lumière blanche"
+        },
+        {
+          "id": "c",
+          "text": "Deux taches non déviées, une rouge et une bleue"
+        },
+        {
+          "id": "d",
+          "text": "Deux taches séparées, la bleue étant la plus déviée"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaque laser est monochromatique : le prisme dévie chacun d'un angle différent, le bleu plus que le rouge, d'où deux taches séparées ✓. Un spectre continu exige une infinité de radiations, comme dans la lumière blanche. Une seule tache supposerait la même déviation pour les deux radiations. Des taches non déviées ignorent que le prisme dévie toute radiation.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une cuve à ondes, on mesure la longueur d'onde λ des rides pour trois fréquences N :\nN = 10 Hz : λ = 20 mm\nN = 25 Hz : λ = 10 mm\nN = 40 Hz : λ = 7,5 mm\nQuelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La longueur d'onde diminue quand N augmente, donc la célérité diminue : le milieu est dispersif"
+        },
+        {
+          "id": "b",
+          "text": "La célérité passe de 0,20 à 0,30 m/s quand N augmente : le milieu est dispersif pour ces ondes"
+        },
+        {
+          "id": "c",
+          "text": "La célérité est la même aux trois fréquences, car λ diminue quand N augmente : le milieu est non dispersif"
+        },
+        {
+          "id": "d",
+          "text": "Les trois mesures ne permettent aucune conclusion, car la fréquence est imposée par la lame"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "v = λ·N donne 0,20 m/s à 10 Hz, 0,25 m/s à 25 Hz et 0,30 m/s à 40 Hz : la célérité dépend de la fréquence, donc le milieu est dispersif pour ces ondes ✓. Que λ diminue quand N augmente ne dit rien de v : le produit λ·N augmente ici de 0,20 à 0,30. Une célérité identique aux trois fréquences est contredite par ces produits. Que la lame impose la fréquence n'empêche pas d'étudier comment la célérité en dépend : c'est précisément le test de la dispersion.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Avec le même laser et le même écran, deux fils de diamètres d₁ = 0,080 mm et d₂ = 0,120 mm donnent des taches centrales de largeurs L₁ et L₂. Quel est le rapport L₁/L₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,67"
+        },
+        {
+          "id": "b",
+          "text": "1,0"
+        },
+        {
+          "id": "c",
+          "text": "1,5"
+        },
+        {
+          "id": "d",
+          "text": "2,3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un fil de diamètre d donne la figure d'une fente de largeur a = d, et L = 2λD/a est inversement proportionnelle à a : L₁/L₂ = d₂/d₁ = 0,120/0,080 = 1,5 ✓. 0,67 prend le rapport d₁/d₂, à l'envers. 1,0 suppose que L ne dépend pas de a. 2,3 élève le rapport au carré (1,5² = 2,25), comme si L variait avec 1/a².",
+      "difficulty": 2
+    }
+  ]
+}

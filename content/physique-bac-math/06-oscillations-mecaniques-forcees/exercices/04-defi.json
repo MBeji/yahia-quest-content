@@ -1,0 +1,139 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les secrets de la résonance",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un excitateur applique à un pendule de masse 0,15 kg une force sinusoïdale d'amplitude 0,36 N. Réglé sur 1,6 Hz, il rend l'amplitude de la vitesse maximale, égale à 0,30 m/s. En déduire la fréquence N_r pour laquelle l'amplitude des oscillations de x est maximale, en Hz.",
+      "answerKey": {
+        "value": 1.32,
+        "tolerance": 0.02,
+        "unit": "Hz"
+      },
+      "explanation": "À la résonance de vitesse, Z = h : h = F_m / V_m = 0,36 / 0,30 = 1,2 kg/s. Condition d'existence : k = m·ω₀² = 0,15 × (2π × 1,6)² = 15 N/m, donc 2mk = 4,5 et h² = 1,44 est inférieur : la résonance d'élongation existe. Alors N_r² = N₀² − h²/(8π²m²) = 2,56 − 1,44 / (78,96 × 0,0225) = 2,56 − 0,81 = 1,75 Hz², soit N_r = 1,32 Hz ✓, inférieure à N₀.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La construction de Fresnel ci-dessous représente, à l'échelle indiquée, les vecteurs kX_m, hωX_m, mω²X_m et F_m d'un pendule (m = 0,25 kg ; k = 20 N/m) en régime forcé. Quelle est la pulsation ω de l'excitateur ?\n<svg viewBox=\"0 0 340 240\"><title>Construction de Fresnel d'un pendule forcé : les vecteurs kXm, hωXm et mω²Xm, mis bout à bout, se referment sur Fm, horizontal ; kXm mesure 1,00 N, hωXm 0,60 N et mω²Xm 1,80 N sur l'échelle de 0,5 N</title><line x1=\"132\" y1=\"34\" x2=\"352\" y2=\"34\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 4\" stroke-linecap=\"round\"/><line x1=\"152\" y1=\"34\" x2=\"45.8\" y2=\"113.7\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><polygon points=\"40,118 44.8,109.4 49.6,115.8\" fill=\"#1d4ed8\"/><line x1=\"40\" y1=\"118\" x2=\"86.1\" y2=\"179.4\" stroke=\"#b45309\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><polygon points=\"90.4,185.2 81.8,180.4 88.2,175.6\" fill=\"#b45309\"/><line x1=\"90.4\" y1=\"185.2\" x2=\"286.2\" y2=\"38.3\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><polygon points=\"292,34 287.2,42.6 282.4,36.2\" fill=\"#0f6e56\"/><line x1=\"152\" y1=\"34\" x2=\"284\" y2=\"34\" stroke=\"#0f172a\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><polygon points=\"292,34 282,38.5 282,29.5\" fill=\"#0f172a\"/><text x=\"88\" y=\"80\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">kXm</text><text x=\"73.2\" y=\"165.6\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">hωXm</text><text x=\"203.2\" y=\"111.6\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">mω²Xm</text><text x=\"222\" y=\"25\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Fm</text><circle cx=\"152\" cy=\"34\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"144\" y=\"28\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">O</text><line x1=\"152\" y1=\"226\" x2=\"222\" y2=\"226\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"152\" y1=\"222\" x2=\"152\" y2=\"230\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"222\" y1=\"222\" x2=\"222\" y2=\"230\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"230\" y=\"230\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,5 N</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,7 rad/s"
+        },
+        {
+          "id": "b",
+          "text": "8,9 rad/s"
+        },
+        {
+          "id": "c",
+          "text": "12 rad/s"
+        },
+        {
+          "id": "d",
+          "text": "16 rad/s"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les longueurs sont proportionnelles à kX_m et à mω²X_m : leur rapport est mω²/k. Sur la figure, mω²X_m mesure 1,80 N et kX_m 1,00 N (échelle de 0,5 N), donc mω²/k = 1,8 et ω² = 1,8 × k/m = 1,8 × 80 = 144, soit ω = 12 rad/s ✓. 8,9 rad/s est ω₀, qui donnerait deux vecteurs kX_m et mω²X_m de même longueur. 16 rad/s oublie la racine carrée (1,8 × 8,9). 6,7 rad/s inverse le rapport des longueurs (8,9/√1,8).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un camion de 12 tonnes roule sur une route dont les joints sont espacés de 0,60 m. Ses suspensions s'affaissent de 1,5 mm lorsqu'on ajoute une charge de 8,0 tonnes. On modélise l'ensemble par un ressort de raideur k portant la masse de 12 tonnes, avec g = 9,8 N/kg et des frottements faibles. Calculer la vitesse à laquelle le camion est le plus secoué, en km/h.",
+      "answerKey": {
+        "value": 22.7,
+        "tolerance": 0.3,
+        "unit": "km/h"
+      },
+      "explanation": "La charge ajoutée pèse 8000 × 9,8 = 7,84 × 10⁴ N et allonge le ressort de 1,5 mm : k = 7,84 × 10⁴ / 1,5 × 10⁻³ = 5,23 × 10⁷ N/m. La période propre est T₀ = 2π√(m/k) = 2π√(12000 / 5,23 × 10⁷) = 2π × 0,01515 = 0,0952 s. La résonance a lieu pour d/v_c = T₀, donc v_c = 0,60 / 0,0952 = 6,30 m/s ✓. Conversion : 6,30 × 3,6 = 22,7 km/h (contrôle : vitesse plausible sur une tôle ondulée).",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Pour un pendule élastique (m = 0,40 kg ; k = 10 N/m ; h = 0,80 kg/s), on balaie la fréquence N de l'excitateur en gardant F_m constante. Quelles affirmations sont exactes ? (plusieurs réponses possibles)",
+      "options": [
+        {
+          "id": "a",
+          "text": "À N = N₀, l'amplitude X_m est maximale"
+        },
+        {
+          "id": "b",
+          "text": "À N = N₀, l'élongation x est en retard de π/2 sur la force"
+        },
+        {
+          "id": "c",
+          "text": "La résonance d'élongation existe, à une fréquence N_r inférieure à N₀"
+        },
+        {
+          "id": "d",
+          "text": "La puissance moyenne reçue est maximale à la fréquence N_r"
+        },
+        {
+          "id": "e",
+          "text": "Pour N < N₀, l'élongation x est en retard de moins de π/2 sur la force"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Ici 2mk = 2 × 0,40 × 10 = 8,0 et h² = 0,64 est inférieur : la résonance d'élongation existe, à N_r = 0,76 Hz, inférieure à N₀ = (1/2π)√25 = 0,80 Hz ; l'amplitude X_m n'est donc pas maximale en N₀. À N₀, ω = ω₀ : le retard de x sur F est exactement π/2 (cas ω = ω₀ de la construction de Fresnel). Pour N < N₀, on a −π/2 < φ < 0 : x est en retard de moins de π/2. La puissance moyenne est maximale à N₀, là où V_m est maximale, et non en N_r.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le même pendule (m = 0,20 kg ; N₀ = 2,0 Hz), soumis à une force d'amplitude F_m inchangée, est freiné successivement par deux plaques A et B : la figure donne les deux courbes X_m(N), la fréquence de chaque maximum et N₀ (pointillés). Une troisième plaque C double le coefficient de frottement obtenu avec B. Avec C, la courbe X_m(N) aura-t-elle un maximum ?\n<svg viewBox=\"0 0 340 226\"><title>Courbes de résonance Xm(N) obtenues avec deux plaques A et B sur le même pendule : le maximum de A est à 1,8 Hz, celui de B à 1,0 Hz, et la droite en pointillés repère N0 = 2,0 Hz</title><line x1=\"54\" y1=\"150.4\" x2=\"324\" y2=\"150.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"122.7\" x2=\"324\" y2=\"122.7\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"95.1\" x2=\"324\" y2=\"95.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"67.5\" x2=\"324\" y2=\"67.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"39.8\" x2=\"324\" y2=\"39.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"99\" y1=\"178\" x2=\"99\" y2=\"26\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"178\" x2=\"144\" y2=\"26\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"189\" y1=\"178\" x2=\"189\" y2=\"26\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"234\" y1=\"178\" x2=\"234\" y2=\"26\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"279\" y1=\"178\" x2=\"279\" y2=\"26\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"324\" y1=\"178\" x2=\"324\" y2=\"26\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"178\" x2=\"326\" y2=\"178\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"332,178 324,174 324,182\" fill=\"#0f172a\"/><line x1=\"54\" y1=\"178\" x2=\"54\" y2=\"24\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"54,18 50,26 58,26\" fill=\"#0f172a\"/><line x1=\"99\" y1=\"175\" x2=\"99\" y2=\"181\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"99\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,5</text><line x1=\"144\" y1=\"175\" x2=\"144\" y2=\"181\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"144\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,0</text><line x1=\"189\" y1=\"175\" x2=\"189\" y2=\"181\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"189\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,5</text><line x1=\"234\" y1=\"175\" x2=\"234\" y2=\"181\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"234\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2,0</text><line x1=\"279\" y1=\"175\" x2=\"279\" y2=\"181\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"279\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2,5</text><line x1=\"324\" y1=\"175\" x2=\"324\" y2=\"181\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"324\" y=\"192\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3,0</text><line x1=\"51\" y1=\"150.4\" x2=\"54\" y2=\"150.4\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"154.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"51\" y1=\"122.7\" x2=\"54\" y2=\"122.7\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"126.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"51\" y1=\"95.1\" x2=\"54\" y2=\"95.1\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"99.1\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"51\" y1=\"67.5\" x2=\"54\" y2=\"67.5\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"71.5\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"51\" y1=\"39.8\" x2=\"54\" y2=\"39.8\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"43.8\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><text x=\"322\" y=\"208\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">N (Hz)</text><text x=\"62\" y=\"22\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Xm (cm)</text><line x1=\"234\" y1=\"178\" x2=\"234\" y2=\"26\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><text x=\"239\" y=\"36\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">N₀</text><polyline points=\"54,90.5 55.1,90.5 56.2,90.5 57.4,90.5 58.5,90.5 59.6,90.4 60.8,90.4 61.9,90.4 63,90.3 64.1,90.3 65.2,90.2 66.4,90.2 67.5,90.1 68.6,90 69.8,90 70.9,89.9 72,89.8 73.1,89.7 74.2,89.6 75.4,89.5 76.5,89.4 77.6,89.3 78.8,89.1 79.9,89 81,88.9 82.1,88.7 83.2,88.6 84.4,88.4 85.5,88.3 86.6,88.1 87.8,88 88.9,87.8 90,87.6 91.1,87.4 92.2,87.2 93.4,87 94.5,86.8 95.6,86.6 96.8,86.4 97.9,86.1 99,85.9 100.1,85.7 101.2,85.4 102.4,85.2 103.5,84.9 104.6,84.6 105.8,84.3 106.9,84.1 108,83.8 109.1,83.5 110.2,83.2 111.4,82.8 112.5,82.5 113.6,82.2 114.8,81.9 115.9,81.5 117,81.2 118.1,80.8 119.2,80.4 120.4,80.1 121.5,79.7 122.6,79.3 123.8,78.9 124.9,78.5 126,78 127.1,77.6 128.2,77.2 129.4,76.7 130.5,76.3 131.6,75.8 132.8,75.3 133.9,74.9 135,74.4 136.1,73.9 137.2,73.4 138.4,72.8 139.5,72.3 140.6,71.8 141.8,71.2 142.9,70.7 144,70.1 145.1,69.5 146.2,68.9 147.4,68.3 148.5,67.7 149.6,67.1 150.8,66.5 151.9,65.8 153,65.2 154.1,64.5 155.2,63.8 156.4,63.2 157.5,62.5 158.6,61.8 159.8,61.1 160.9,60.3 162,59.6 163.1,58.9 164.2,58.1 165.4,57.4 166.5,56.6 167.6,55.9 168.8,55.1 169.9,54.3 171,53.5 172.1,52.7 173.2,51.9 174.4,51.1 175.5,50.3 176.6,49.5 177.8,48.7 178.9,47.8 180,47 181.1,46.2 182.2,45.4 183.4,44.6 184.5,43.7 185.6,42.9 186.8,42.1 187.9,41.3 189,40.5 190.1,39.7 191.2,39 192.4,38.2 193.5,37.5 194.6,36.7 195.8,36 196.9,35.3 198,34.7 199.1,34 200.2,33.4 201.4,32.8 202.5,32.3 203.6,31.8 204.8,31.3 205.9,30.8 207,30.4 208.1,30 209.3,29.7 210.4,29.4 211.5,29.2 212.6,29 213.8,28.9 214.9,28.8 216,28.8 217.1,28.8 218.2,28.9 219.4,29 220.5,29.2 221.6,29.5 222.8,29.8 223.9,30.2 225,30.6 226.1,31.1 227.2,31.6 228.4,32.2 229.5,32.9 230.6,33.6 231.8,34.4 232.9,35.2 234,36 235.1,37 236.2,37.9 237.4,38.9 238.5,40 239.6,41 240.8,42.1 241.9,43.3 243,44.5 244.1,45.7 245.2,46.9 246.4,48.2 247.5,49.4 248.6,50.7 249.8,52.1 250.9,53.4 252,54.7 253.1,56.1 254.2,57.4 255.4,58.8 256.5,60.2 257.6,61.5 258.8,62.9 259.9,64.3 261,65.6 262.1,67 263.2,68.4 264.4,69.7 265.5,71.1 266.6,72.4 267.8,73.7 268.9,75 270,76.3 271.1,77.6 272.2,78.9 273.4,80.2 274.5,81.4 275.6,82.7 276.8,83.9 277.9,85.1 279,86.3 280.1,87.5 281.2,88.6 282.4,89.8 283.5,90.9 284.6,92 285.8,93.1 286.9,94.2 288,95.3 289.1,96.3 290.2,97.3 291.4,98.4 292.5,99.4 293.6,100.3 294.8,101.3 295.9,102.3 297,103.2 298.1,104.1 299.2,105.1 300.4,105.9 301.5,106.8 302.6,107.7 303.8,108.5 304.9,109.4 306,110.2 307.1,111 308.2,111.8 309.4,112.6 310.5,113.4 311.6,114.1 312.8,114.9 313.9,115.6 315,116.3 316.1,117.1 317.2,117.8 318.4,118.4 319.5,119.1 320.6,119.8 321.8,120.4 322.9,121.1 324,121.7\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"216\" y1=\"178\" x2=\"216\" y2=\"28.8\" stroke=\"#0f6e56\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" stroke-linecap=\"round\"/><circle cx=\"216\" cy=\"28.8\" r=\"4\" fill=\"#0f6e56\"/><text x=\"218\" y=\"20.8\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"220\" y=\"173\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,8</text><polyline points=\"54,90.5 55.1,90.5 56.2,90.5 57.4,90.5 58.5,90.5 59.6,90.5 60.8,90.5 61.9,90.5 63,90.4 64.1,90.4 65.2,90.4 66.4,90.4 67.5,90.4 68.6,90.4 69.8,90.3 70.9,90.3 72,90.3 73.1,90.3 74.2,90.2 75.4,90.2 76.5,90.2 77.6,90.1 78.8,90.1 79.9,90.1 81,90 82.1,90 83.2,89.9 84.4,89.9 85.5,89.9 86.6,89.8 87.8,89.8 88.9,89.7 90,89.7 91.1,89.6 92.2,89.6 93.4,89.5 94.5,89.5 95.6,89.4 96.8,89.4 97.9,89.3 99,89.3 100.1,89.2 101.2,89.2 102.4,89.1 103.5,89.1 104.6,89 105.8,88.9 106.9,88.9 108,88.8 109.1,88.8 110.2,88.7 111.4,88.7 112.5,88.6 113.6,88.6 114.8,88.5 115.9,88.5 117,88.4 118.1,88.3 119.2,88.3 120.4,88.2 121.5,88.2 122.6,88.1 123.8,88.1 124.9,88.1 126,88 127.1,88 128.2,87.9 129.4,87.9 130.5,87.9 131.6,87.8 132.8,87.8 133.9,87.8 135,87.7 136.1,87.7 137.2,87.7 138.4,87.7 139.5,87.7 140.6,87.6 141.8,87.6 142.9,87.6 144,87.6 145.1,87.6 146.2,87.6 147.4,87.6 148.5,87.7 149.6,87.7 150.8,87.7 151.9,87.7 153,87.8 154.1,87.8 155.2,87.8 156.4,87.9 157.5,87.9 158.6,88 159.8,88.1 160.9,88.1 162,88.2 163.1,88.3 164.2,88.4 165.4,88.5 166.5,88.6 167.6,88.7 168.8,88.8 169.9,88.9 171,89 172.1,89.2 173.2,89.3 174.4,89.4 175.5,89.6 176.6,89.8 177.8,89.9 178.9,90.1 180,90.3 181.1,90.5 182.2,90.7 183.4,90.9 184.5,91.1 185.6,91.3 186.8,91.5 187.9,91.8 189,92 190.1,92.2 191.2,92.5 192.4,92.8 193.5,93 194.6,93.3 195.8,93.6 196.9,93.9 198,94.2 199.1,94.5 200.2,94.8 201.4,95.1 202.5,95.4 203.6,95.8 204.8,96.1 205.9,96.4 207,96.8 208.1,97.1 209.3,97.5 210.4,97.9 211.5,98.2 212.6,98.6 213.8,99 214.9,99.4 216,99.8 217.1,100.2 218.2,100.6 219.4,101 220.5,101.4 221.6,101.8 222.8,102.2 223.9,102.6 225,103.1 226.1,103.5 227.2,103.9 228.4,104.3 229.5,104.8 230.6,105.2 231.8,105.7 232.9,106.1 234,106.6 235.1,107 236.2,107.4 237.4,107.9 238.5,108.4 239.6,108.8 240.8,109.3 241.9,109.7 243,110.2 244.1,110.6 245.2,111.1 246.4,111.5 247.5,112 248.6,112.5 249.8,112.9 250.9,113.4 252,113.8 253.1,114.3 254.2,114.7 255.4,115.2 256.5,115.6 257.6,116.1 258.8,116.5 259.9,117 261,117.4 262.1,117.9 263.2,118.3 264.4,118.8 265.5,119.2 266.6,119.7 267.8,120.1 268.9,120.5 270,121 271.1,121.4 272.2,121.8 273.4,122.2 274.5,122.7 275.6,123.1 276.8,123.5 277.9,123.9 279,124.3 280.1,124.8 281.2,125.2 282.4,125.6 283.5,126 284.6,126.4 285.8,126.8 286.9,127.2 288,127.6 289.1,128 290.2,128.4 291.4,128.7 292.5,129.1 293.6,129.5 294.8,129.9 295.9,130.2 297,130.6 298.1,131 299.2,131.3 300.4,131.7 301.5,132.1 302.6,132.4 303.8,132.8 304.9,133.1 306,133.5 307.1,133.8 308.2,134.2 309.4,134.5 310.5,134.8 311.6,135.2 312.8,135.5 313.9,135.8 315,136.1 316.1,136.5 317.2,136.8 318.4,137.1 319.5,137.4 320.6,137.7 321.8,138 322.9,138.3 324,138.6\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"144\" y1=\"178\" x2=\"144\" y2=\"87.6\" stroke=\"#b45309\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" stroke-linecap=\"round\"/><circle cx=\"144\" cy=\"87.6\" r=\"4\" fill=\"#b45309\"/><text x=\"146\" y=\"79.6\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"148\" y=\"173\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,0</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, à la fréquence propre N₀ = 2,0 Hz du pendule"
+        },
+        {
+          "id": "b",
+          "text": "Oui, à une fréquence de résonance inférieure à 1,0 Hz"
+        },
+        {
+          "id": "c",
+          "text": "Non, car h_C dépasse la valeur limite h_l ≈ 3,6 kg/s"
+        },
+        {
+          "id": "d",
+          "text": "Oui, à 1,0 Hz, car N_r ne dépend que de m et de k"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Courbe B : h_B² = 8π²m²(N₀² − N_r²) = 78,96 × 0,040 × (4,0 − 1,0) = 9,5, donc h_B ≈ 3,1 kg/s et h_C ≈ 6,2 kg/s. La valeur limite est h_l = m·ω₀·√2 = 0,20 × 12,6 × 1,41 = 3,6 kg/s : h_C la dépasse, N_r² serait négatif, et X_m décroît dès N = 0, sans maximum ✓. Prolonger la tendance de A vers B (maximum sous 1,0 Hz) oublie que la résonance d'élongation disparaît au-delà de h_l. Un maximum à N₀ est celui de la vitesse, non de l'élongation. N_r inchangée oublie le terme en h² de N_r.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un pendule (m = 0,16 kg ; k = 16 N/m ; h = 1,2 kg/s) est excité par une force d'amplitude constante. Réglé sur la résonance de vitesse, le moteur lui fournit en moyenne 50 mW. Quelle puissance moyenne lui fournit-il quand la pulsation vaut 8,0 rad/s ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "37 mW"
+        },
+        {
+          "id": "b",
+          "text": "13 mW"
+        },
+        {
+          "id": "c",
+          "text": "43 mW"
+        },
+        {
+          "id": "d",
+          "text": "74 mW"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "À la résonance de vitesse, Z = h et P₀ = F_m²/(2h) = 50 mW. En général P = ½·h·V_m² = ½·h·F_m²/Z², donc P/P₀ = h²/Z². Ici ω₀ = √(k/m) = 10 rad/s ; à ω = 8,0 rad/s, m·ω = 1,28 kg/s et k/ω = 2,0 kg/s, donc Z² = 1,44 + 0,52 = 1,96 (kg/s)² et P = 50 × 1,44 / 1,96 = 37 mW ✓. 43 mW multiplie P₀ par h/Z = cos φ au lieu de son carré. 13 mW multiplie P₀ par sin² φ = 1 − h²/Z². 74 mW oublie le facteur ½ dans P sans le retirer de P₀, ce qui double le rapport.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Les oscillations mécaniques forcées",
+  "questions": [
+    {
+      "prompt": "Un excentrique entraîné par un moteur à 48 tr/min impose son mouvement à l'extrémité du ressort d'un pendule de période propre 0,50 s. Quelle est la période de ses oscillations forcées en régime permanent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,021 s"
+        },
+        {
+          "id": "b",
+          "text": "1,25 s"
+        },
+        {
+          "id": "c",
+          "text": "0,50 s"
+        },
+        {
+          "id": "d",
+          "text": "0,20 s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le moteur impose sa fréquence : 48 / 60 = 0,80 tr/s, soit N = 0,80 Hz et T = 1/N = 1,25 s ✓. 0,50 s est la période propre, qui ne gouverne plus le mouvement forcé. 0,021 s prend 48 tr/min pour 48 Hz. 0,20 s calcule T = 1/ω avec ω = 2π × 0,80 rad/s, au lieu de T = 2π/ω.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une voiture roule à vitesse constante sur une route couverte de bosses régulièrement espacées ; sa caisse est suspendue à des ressorts. Quel élément joue le rôle d'excitateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le profil de la route, qui impose la fréquence des secousses"
+        },
+        {
+          "id": "b",
+          "text": "La suspension de la voiture, qui impose alors sa fréquence propre"
+        },
+        {
+          "id": "c",
+          "text": "Le moteur de la voiture, qui impose son régime de rotation"
+        },
+        {
+          "id": "d",
+          "text": "Les amortisseurs, qui limitent l'amplitude des secousses"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le profil de la route impose la fréquence v/d à laquelle la voiture est secouée : c'est l'excitateur ✓ ; la suspension, qui oscille à cette fréquence imposée, est le résonateur. Dire que la suspension impose sa fréquence propre inverse les deux rôles. Le moteur de la voiture ne fixe pas le rythme des secousses de la caisse. Les amortisseurs agissent sur l'amplitude, via le coefficient de frottement, et non sur la fréquence.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur l'enregistrement d'un palet en régime permanent, on compte 7 oscillations complètes en 4,0 s. Quelle est la période T de ces oscillations ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "28 s"
+        },
+        {
+          "id": "b",
+          "text": "1,75 s"
+        },
+        {
+          "id": "c",
+          "text": "0,57 s"
+        },
+        {
+          "id": "d",
+          "text": "0,14 s"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La période est la durée d'une oscillation : T = 4,0 / 7 = 0,57 s ✓. 1,75 s est la fréquence N = 7 / 4,0 = 1,75 Hz, écrite en secondes. 28 s est le produit 7 × 4,0. 0,14 s divise encore 0,57 s par 4,0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un palet de masse m est relié à un ressort de raideur k dont l'extrémité B, déplacée par un excentrique, a pour élongation x_B. Le frottement est visqueux, f = −h·v. Quelle équation la relation fondamentale de la dynamique donne-t-elle pour l'élongation x du palet ? On note x′ = dx/dt et x″ = d²x/dt².",
+      "options": [
+        {
+          "id": "a",
+          "text": "m·x″ + h·x′ + k·x_B = k·x"
+        },
+        {
+          "id": "b",
+          "text": "m·x″ + k·x′ + h·x = k·x_B"
+        },
+        {
+          "id": "c",
+          "text": "m·x″ + h·x′ + k·x = 0"
+        },
+        {
+          "id": "d",
+          "text": "m·x″ + h·x′ + k·x = k·x_B"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La tension du ressort est T = −k(x − x_B) et le frottement f = −h·x′ : m·x″ = −k(x − x_B) − h·x′, soit m·x″ + h·x′ + k·x = k·x_B ✓. Un second membre nul décrit des oscillations libres amorties : il suppose B immobile. Permuter x et x_B dans le terme de rappel renverse le signe de la tension. Permuter h et k attribue le rappel au frottement et inversement : h multiplie x′, k multiplie x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On remplace la plaque fixée au palet par une plaque plus grande, sans rien changer d'autre (m, k, force excitatrice). Comment varient l'amplitude X_m à la résonance d'élongation et la fréquence N_r de cette résonance ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X_m à la résonance augmente ; N_r diminue"
+        },
+        {
+          "id": "b",
+          "text": "X_m à la résonance ne change pas ; N_r ne change pas"
+        },
+        {
+          "id": "c",
+          "text": "X_m à la résonance diminue ; N_r ne change pas"
+        },
+        {
+          "id": "d",
+          "text": "X_m à la résonance diminue ; N_r diminue"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une plaque plus grande augmente le coefficient de frottement h. Le pic s'abaisse, donc X_m à la résonance diminue ; et N_r = √(N₀² − h²/(8π²m²)) diminue, elle s'éloigne de N₀ ✓. Garder N_r inchangée oublie le terme en h². Une amplitude qui augmente contredit l'effet d'un frottement accru : X_m décroît quand h croît. Rien ne change ne serait vrai que sans effet de la plaque sur h.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer la fréquence de résonance d'élongation N_r d'un pendule élastique de masse 0,50 kg, de raideur 18 N/m et de coefficient de frottement 2,0 kg/s.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,06 Hz"
+        },
+        {
+          "id": "b",
+          "text": "0,96 Hz"
+        },
+        {
+          "id": "c",
+          "text": "0,84 Hz"
+        },
+        {
+          "id": "d",
+          "text": "0,71 Hz"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "N₀ = (1/2π)√(18/0,50) = 6,0/6,283 = 0,955 Hz, donc N₀² = 0,912 Hz². Alors N_r = √(N₀² − h²/(8π²m²)) = √(0,912 − 4,0 / (78,96 × 0,25)) = √(0,912 − 0,203) = √0,709 = 0,84 Hz ✓, un peu en dessous de N₀. 1,06 Hz additionne le terme d'amortissement au lieu de le retrancher. 0,96 Hz place la résonance en N₀. 0,71 Hz utilise 4π² au lieu de 8π², donc un terme deux fois trop grand.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "En régime forcé, la force excitatrice a pour amplitude F_m = 0,40 N et la vitesse du palet pour amplitude V_m = 0,20 m/s ; la vitesse est en avance de π/6 rad sur la force. Quelle puissance mécanique moyenne le palet reçoit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 mW"
+        },
+        {
+          "id": "b",
+          "text": "35 mW"
+        },
+        {
+          "id": "c",
+          "text": "40 mW"
+        },
+        {
+          "id": "d",
+          "text": "69 mW"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "P = ½·F_m·V_m·cos φ, avec φ = φ_v − φ_F = π/6 : P = ½ × 0,40 × 0,20 × 0,866 = 0,0346 W, soit 35 mW ✓. 40 mW oublie le facteur de puissance cos φ. 20 mW prend sin φ au lieu de cos φ. 69 mW oublie le facteur ½.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un camion est le plus secoué lorsqu'il roule à 36 km/h sur une route dont les joints sont espacés de 6,0 m ; les frottements de sa suspension sont faibles. Quelle est la période propre T₀ de sa suspension ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,17 s"
+        },
+        {
+          "id": "b",
+          "text": "1,7 s"
+        },
+        {
+          "id": "c",
+          "text": "6,0 s"
+        },
+        {
+          "id": "d",
+          "text": "0,60 s"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À la résonance, T = d/v = T₀ ; avec v = 36 / 3,6 = 10 m/s, T₀ = 6,0 / 10 = 0,60 s ✓. 0,17 s divise 6,0 par 36 sans convertir les km/h. 1,7 s est v/d = 10 / 6,0 : c'est une fréquence (1,7 Hz), écrite en secondes. 6,0 s est le quotient inversé et non converti 36 / 6,0.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -7,27 +7,27 @@
   "displayOrder": 1,
   "questions": [
     {
-      "prompt": "Un solide de masse m = 0,30 kg est fixé à un ressort horizontal de raideur k = 45 N·m⁻¹. Quelle est sa période propre T₀ ?",
+      "prompt": "Un solide de masse m = 0,30 kg, accroché à un ressort horizontal de raideur k = 75 N·m⁻¹, oscille sans frottement. Quelle est sa fréquence propre N₀ ?",
       "options": [
         {
           "id": "a",
-          "text": "77 s"
+          "text": "16 Hz"
         },
         {
           "id": "b",
-          "text": "0,082 s"
+          "text": "0,010 Hz"
         },
         {
           "id": "c",
-          "text": "0,51 s"
+          "text": "2,5 Hz"
         },
         {
           "id": "d",
-          "text": "0,042 s"
+          "text": "40 Hz"
         }
       ],
       "correctOption": "c",
-      "explanation": "m/k = 0,30/45 = 6,7·10⁻³ s², dont la racine est 0,082 s ; T₀ = 2π × 0,082 ≈ 0,51 s ✓. La valeur 77 s retourne le rapport sous la racine : 2π·√(k/m) = 2π × 12,2 ≈ 77, ce n'est pas une période. La valeur 0,082 s oublie le facteur 2π. La valeur 0,042 s oublie la racine : 2π × (m/k) = 0,042.",
+      "explanation": "k/m = 250 s⁻², donc ω₀ = √250 ≈ 15,8 rad·s⁻¹ et N₀ = ω₀/2π ≈ 2,5 Hz ✓ (ou T₀ = 2π·√(m/k) ≈ 0,40 s, puis N₀ = 1/T₀). La valeur 16 Hz prend la pulsation ω₀, en rad·s⁻¹, pour la fréquence. La valeur 40 Hz oublie la racine : (k/m)/2π. La valeur 0,010 Hz retourne le rapport : √(m/k)/2π.",
       "difficulty": 1
     },
     {
@@ -47,11 +47,11 @@
         },
         {
           "id": "d",
-          "text": "X_m = 4,5 cm ; ω₀ = 3,8 rad·s⁻¹"
+          "text": "X_m = 9,0 cm ; ω₀ = 1,7 rad·s⁻¹"
         }
       ],
       "correctOption": "a",
-      "explanation": "L'amplitude se mesure de O à une extrémité : X_m = 9,0/2 = 4,5 cm. La période est T₀ = 2,4/4 = 0,60 s, donc ω₀ = 2π/T₀ = 2π/0,60 ≈ 10,5 rad·s⁻¹ ✓. La valeur 9,0 cm est l'écart entre les deux extrémités, soit le double de l'amplitude. La valeur 1,7 rad·s⁻¹ est la fréquence propre N₀ = 1/T₀ en Hz : elle a une autre unité que la pulsation. La valeur 3,8 rad·s⁻¹ divise 2π par la fréquence au lieu de la multiplier : 2π/N₀.",
+      "explanation": "L'amplitude se mesure de O à une extrémité : X_m = 9,0/2 = 4,5 cm. La période est T₀ = 2,4/4 = 0,60 s, donc ω₀ = 2π/T₀ = 2π/0,60 ≈ 10,5 rad·s⁻¹ ✓. La valeur 9,0 cm est l'écart entre les deux extrémités, soit le double de l'amplitude. La valeur 1,7 rad·s⁻¹ est la fréquence propre N₀ = 1/T₀ en Hz : elle a une autre unité que la pulsation. Le couple 9,0 cm et 1,7 rad·s⁻¹ cumule les deux erreurs.",
       "difficulty": 1
     },
     {

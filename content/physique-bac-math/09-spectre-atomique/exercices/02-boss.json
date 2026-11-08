@@ -1,0 +1,128 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des niveaux",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Des électrons bombardent des atomes d'hydrogène dans leur état fondamental. Quelle énergie cinétique minimale doit avoir un électron pour amener un atome au niveau n = 3 par un choc inélastique ? (E₀ = 13,6 eV)",
+      "options": [
+        {
+          "id": "a",
+          "text": "10,2 eV"
+        },
+        {
+          "id": "b",
+          "text": "12,09 eV"
+        },
+        {
+          "id": "c",
+          "text": "13,6 eV"
+        },
+        {
+          "id": "d",
+          "text": "15,11 eV"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'atome doit recevoir l'écart E₃ − E₁ = −1,51 − (−13,6) = 12,09 eV ; l'électron ne peut céder cet écart que si son énergie cinétique est au moins égale à 12,09 eV ✓. Le nombre 10,2 eV amène seulement l'atome au niveau n = 2. Le nombre 13,6 eV est l'énergie d'ionisation, plus que nécessaire pour atteindre n = 3. Le nombre 15,11 eV additionne 13,6 eV et 1,51 eV au lieu de les soustraire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les niveaux d'énergie d'un atome sont représentés sur le schéma.\n<svg viewBox=\"0 0 330 200\"><title>Niveaux d'énergie d'un atome : E₁ = −7,5 eV (fondamental), E₂ = −4,1 eV, E₃ = −2,2 eV, E₄ = −1,0 eV, et le niveau 0 eV de l'atome ionisé</title><line x1=\"30\" y1=\"20\" x2=\"30\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"30,14 26.5,21 33.5,21\" fill=\"#0f172a\"/><text x=\"36\" y=\"12\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Énergie (eV)</text><line x1=\"60\" y1=\"24\" x2=\"200\" y2=\"24\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><text x=\"206\" y=\"28\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">0 (ionisé)</text><line x1=\"60\" y1=\"43.2\" x2=\"200\" y2=\"43.2\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"206\" y=\"47.2\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">E₄ = −1,0 eV</text><line x1=\"60\" y1=\"66.2\" x2=\"200\" y2=\"66.2\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"206\" y=\"70.2\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">E₃ = −2,2 eV</text><line x1=\"60\" y1=\"102.7\" x2=\"200\" y2=\"102.7\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"206\" y=\"106.7\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">E₂ = −4,1 eV</text><line x1=\"60\" y1=\"168.0\" x2=\"200\" y2=\"168.0\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"206\" y=\"172.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">E₁ = −7,5 eV</text></svg>\nL'atome, dans l'état E₃, passe à un niveau inférieur en émettant un seul photon. Quelle énergie ce photon peut-il avoir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9,7 eV"
+        },
+        {
+          "id": "b",
+          "text": "5,3 eV"
+        },
+        {
+          "id": "c",
+          "text": "3,4 eV"
+        },
+        {
+          "id": "d",
+          "text": "2,2 eV"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Depuis E₃ = −2,2 eV, l'atome peut descendre en E₂ ou en E₁. L'écart E₃ − E₁ = −2,2 − (−7,5) = 5,3 eV correspond à un photon possible ✓ (l'autre transition, vers E₂, donnerait 1,9 eV, qui ne figure pas parmi les propositions). Le nombre 3,4 eV est l'écart E₂ − E₁ : l'atome ne le libère pas en partant de E₃ en un seul saut. Le nombre 2,2 eV est la valeur absolue de E₃, non un écart. Le nombre 9,7 eV additionne 7,5 eV et 2,2 eV au lieu de les soustraire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un atome d'hydrogène passe du niveau n = 6 au niveau n = 3. Calculer en nm la longueur d'onde du photon émis, arrondie à l'unité (E₀ = 13,6 eV ; h = 6,62×10⁻³⁴ J·s ; c = 3,00×10⁸ m/s ; 1 eV = 1,6×10⁻¹⁹ J).",
+      "explanation": "W = E₀·(1/3² − 1/6²) = 13,6 × (1/9 − 1/36) = 13,6 × 3/36 = 1,133 eV, soit 1,133 × 1,6×10⁻¹⁹ = 1,813×10⁻¹⁹ J. Alors λ = h·c/W = 1,986×10⁻²⁵ / 1,813×10⁻¹⁹ = 1,095×10⁻⁶ m = 1095 nm ✓, une radiation infrarouge (au-delà de 800 nm). Oublier de convertir les eV en joules, ou prendre l'énergie du niveau n = 3 comme énergie du photon (1,51 eV, soit 821 nm), donnerait un résultat faux.",
+      "difficulty": 3,
+      "type": "numeric",
+      "answerKey": {
+        "value": 1095,
+        "tolerance": 10,
+        "unit": "nm"
+      }
+    },
+    {
+      "prompt": "Un atome a pour niveaux E₁ = −12,0 eV ; E₂ = −6,0 eV ; E₃ = −3,5 eV ; E₄ = −2,0 eV. Parmi ces désexcitations, laquelle émet la radiation de plus grande longueur d'onde ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E₂ → E₁"
+        },
+        {
+          "id": "b",
+          "text": "E₃ → E₁"
+        },
+        {
+          "id": "c",
+          "text": "E₄ → E₂"
+        },
+        {
+          "id": "d",
+          "text": "E₄ → E₃"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme λ = h·c/W, la plus grande longueur d'onde correspond au photon le moins énergétique, donc au plus petit écart. Les écarts valent : E₂ → E₁ : 6,0 eV ; E₃ → E₁ : 8,5 eV ; E₄ → E₂ : 4,0 eV ; E₄ → E₃ : −2,0 − (−3,5) = 1,5 eV. Le plus petit est 1,5 eV, soit λ ≈ 828 nm ✓. Le plus grand écart, 8,5 eV, donne au contraire la plus petite longueur d'onde (146 nm). Les sauts de 6,0 eV et de 4,0 eV donnent 207 nm et 310 nm : ni l'un ni l'autre n'est le plus petit écart.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un photon de 1,13 eV rencontre un atome d'hydrogène qui se trouve dans le niveau n = 3. Quel est son sort ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Absorbé : l'atome gagne le niveau n = 6"
+        },
+        {
+          "id": "b",
+          "text": "Absorbé : l'atome gagne le niveau n = 5"
+        },
+        {
+          "id": "c",
+          "text": "Absorbé : l'atome gagne le niveau n = 4"
+        },
+        {
+          "id": "d",
+          "text": "Non absorbé : le photon est diffusé tel quel"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'énergie de l'atome est E₃ = −1,51 eV. Après absorption : −1,51 + 1,13 = −0,38 eV, ce qui est exactement E₆ = −13,6/36 ✓ : le photon est absorbé et l'atome passe à n = 6. Le passage à n = 5 demanderait 0,97 eV (E₅ = −0,54 eV) et celui à n = 4 demanderait 0,66 eV (E₄ = −0,85 eV). La diffusion ne se produirait que si 1,13 eV ne correspondait à aucun écart, ce qui n'est pas le cas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un atome d'hydrogène au niveau n = 2 absorbe un photon de longueur d'onde 240 nm : il est ionisé. Quelle est l'énergie cinétique de l'électron éjecté, en eV ? (h = 6,62×10⁻³⁴ J·s ; c = 3,00×10⁸ m/s ; 1 eV = 1,6×10⁻¹⁹ J ; E₀ = 13,6 eV)",
+      "explanation": "W = h·c/λ = 6,62×10⁻³⁴ × 3,00×10⁸ / 2,40×10⁻⁷ = 8,28×10⁻¹⁹ J, soit 8,28×10⁻¹⁹ / 1,6×10⁻¹⁹ = 5,17 eV. L'ionisation depuis n = 2 consomme 0 − (−3,40) = 3,40 eV ; l'excédent est l'énergie cinétique de l'électron : Ec = 5,17 − 3,40 = 1,77 eV ✓. Donner 5,17 eV oublierait l'énergie d'ionisation ; soustraire 13,6 eV, énergie d'ionisation depuis le fondamental, donnerait un résultat négatif absurde.",
+      "difficulty": 3,
+      "type": "numeric",
+      "answerKey": {
+        "value": 1.77,
+        "tolerance": 0.03,
+        "unit": "eV"
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Spectre atomique",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Un spectroscope contient un réseau (ou un prisme). Quel est son rôle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Renforcer l'intensité de chaque radiation"
+        },
+        {
+          "id": "b",
+          "text": "Éliminer les radiations ultraviolettes et infrarouges"
+        },
+        {
+          "id": "c",
+          "text": "Séparer les radiations selon leur longueur d'onde"
+        },
+        {
+          "id": "d",
+          "text": "Transformer les raies en un fond continu"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le réseau (ou le prisme) disperse la lumière : il sépare les radiations selon leur longueur d'onde, ce qui fait apparaître le spectre ✓. Il ne renforce aucune radiation, il les étale seulement. Il n'élimine pas non plus l'ultraviolet ni l'infrarouge, qui sont simplement invisibles à l'œil. Enfin, il ne crée pas de fond continu : s'il y a des raies, il les sépare, il ne les efface pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le spectre d'émission d'une vapeur de mercure présente des raies à 436 nm, 546 nm et 578 nm. On fait traverser cette vapeur par de la lumière blanche. Où apparaissent les raies noires du spectre d'absorption obtenu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aux mêmes positions que ses raies d'émission : 436, 546 et 578 nm"
+        },
+        {
+          "id": "b",
+          "text": "À des positions décalées vers le rouge par rapport à ses raies d'émission"
+        },
+        {
+          "id": "c",
+          "text": "Partout sauf à 436, 546 et 578 nm, qui restent lumineuses"
+        },
+        {
+          "id": "d",
+          "text": "Uniquement à 546 nm, la raie la plus intense de l'émission"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La vapeur absorbe les radiations qu'elle émettrait elle-même : les raies noires sont aux positions des raies d'émission, soit 436, 546 et 578 nm ✓ (renversement des raies). Un décalage vers le rouge est l'effet d'un mouvement de l'astre, non d'une propriété de la vapeur. Des raies noires partout sauf à ces trois longueurs d'onde inverseraient la situation : ce sont précisément ces radiations qui sont retirées. L'intensité de la raie d'émission ne limite pas l'absorption à une seule raie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un modèle planétaire de l'atome d'hydrogène, on prend une distance noyau–électron r = 4,0×10⁻¹¹ m (valeur choisie pour l'exercice). Quelle est la valeur de la force coulombienne F = k·e²/r² qui s'exerce entre eux ? (k = 9×10⁹ N·m²·C⁻² ; e = 1,6×10⁻¹⁹ C)",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,8×10⁻¹⁸ N"
+        },
+        {
+          "id": "b",
+          "text": "1,4×10⁻⁷ N"
+        },
+        {
+          "id": "c",
+          "text": "2,3×10⁻⁶ N"
+        },
+        {
+          "id": "d",
+          "text": "9,0×10¹¹ N"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "F = 9×10⁹ × (1,6×10⁻¹⁹)² / (4,0×10⁻¹¹)² = 9×10⁹ × 2,56×10⁻³⁸ / 1,6×10⁻²¹ = 1,4×10⁻⁷ N ✓. Le résultat 5,8×10⁻¹⁸ N oublie d'élever r au carré. Le résultat 2,3×10⁻⁶ N élève au carré seulement 10⁻¹¹ et oublie le facteur 4,0. Le résultat 9,0×10¹¹ N oublie d'élever e au carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Calculer en eV l'énergie qu'un atome d'hydrogène doit absorber pour passer du niveau n = 2 au niveau n = 6 (E₀ = 13,6 eV).",
+      "explanation": "ΔE = E₆ − E₂ = −0,38 − (−3,40) = 3,02 eV, soit E₀·(1/2² − 1/6²) = 13,6 × (1/4 − 1/36) = 13,6 × 8/36 = 3,02 eV ✓. Le calcul avec E₆ seul, 0,38 eV, donnerait l'énergie d'un niveau et non l'écart entre deux niveaux.",
+      "difficulty": 2,
+      "type": "numeric",
+      "answerKey": {
+        "value": 3.02,
+        "tolerance": 0.03,
+        "unit": "eV"
+      }
+    },
+    {
+      "prompt": "Un atome passe d'un niveau d'énergie −2,8 eV à un niveau d'énergie −6,3 eV en émettant un photon. Quelle est la fréquence de ce photon ? (h = 6,62×10⁻³⁴ J·s ; 1 eV = 1,6×10⁻¹⁹ J)",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,2×10⁻¹⁵ Hz"
+        },
+        {
+          "id": "b",
+          "text": "8,5×10¹⁴ Hz"
+        },
+        {
+          "id": "c",
+          "text": "2,2×10¹⁵ Hz"
+        },
+        {
+          "id": "d",
+          "text": "5,3×10³³ Hz"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'écart est |−6,3 − (−2,8)| = 3,5 eV, soit 3,5 × 1,6×10⁻¹⁹ = 5,6×10⁻¹⁹ J. Alors ν = W/h = 5,6×10⁻¹⁹ / 6,62×10⁻³⁴ = 8,5×10¹⁴ Hz ✓. Le résultat 1,2×10⁻¹⁵ inverse le quotient (h/W). Le résultat 2,2×10¹⁵ additionne les valeurs 2,8 et 6,3 au lieu de les soustraire. Le résultat 5,3×10³³ oublie la conversion en joules.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'étoile P est blanche, l'étoile Q est rouge et l'étoile R est jaune. Quel est le classement de leurs températures de surface, de la plus froide à la plus chaude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P, puis R, puis Q"
+        },
+        {
+          "id": "b",
+          "text": "Q, puis P, puis R"
+        },
+        {
+          "id": "c",
+          "text": "R, puis Q, puis P"
+        },
+        {
+          "id": "d",
+          "text": "Q, puis R, puis P"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour les étoiles, les rouges sont les plus froides (2500 °C pour Bételgeuse), puis viennent les jaunes (5500 °C pour le Soleil), puis les blanches (10000 °C pour Sirius) : Q, puis R, puis P ✓. Le classement inverse, P, R, Q, associe le rouge à la chaleur, ce qui est l'erreur courante. Les deux autres classements placent la blanche ou la jaune au mauvais rang.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le spectre d'une étoile, la raie du sodium mesurée à 589 nm au laboratoire est observée à 592 nm. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étoile s'éloigne de nous"
+        },
+        {
+          "id": "b",
+          "text": "L'étoile se rapproche de nous"
+        },
+        {
+          "id": "c",
+          "text": "L'étoile contient un autre élément que le sodium"
+        },
+        {
+          "id": "d",
+          "text": "L'étoile est plus chaude que le laboratoire"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La longueur d'onde a augmenté (592 nm > 589 nm), donc la fréquence a diminué : la raie est décalée vers le rouge, ce qui signifie que l'étoile s'éloigne ✓. Un décalage vers le violet indiquerait un rapprochement. La raie est bien celle du sodium : seule sa position a bougé, pas son identité. La température ne décale pas une raie, elle modifie l'extension du spectre continu.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des ondes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans une cuve à ondes, la fente a pour largeur a = 1,5 cm. On néglige la dispersion : la célérité vaut 0,30 m/s quelle que soit la fréquence. Quelle est la fréquence maximale de la lame pour que λ reste au moins égale à a (diffraction très marquée), en Hz ?",
+      "answerKey": {
+        "value": 20,
+        "tolerance": 0.5,
+        "unit": "Hz"
+      },
+      "explanation": "La condition λ ≥ a s'écrit v/N ≥ a, soit N ≤ v/a = 0,30/0,015 = 20 Hz ✓ : au-delà, λ devient plus petite que la fente et la diffraction s'affaiblit. Garder a en centimètres donnerait 0,20, un résultat 100 fois trop petit ; écrire N ≤ v·a donnerait 0,0045, qui n'est pas une fréquence.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un faisceau laser traverse une fente de 0,060 mm de large. À 1,20 m derrière la fente, la tache centrale mesure 28 mm de large sur l'écran. Quelle est la longueur d'onde du laser, en nm ? (petits angles)",
+      "answerKey": {
+        "value": 700,
+        "tolerance": 5,
+        "unit": "nm"
+      },
+      "explanation": "De L = 2λD/a on tire λ = L·a/(2D) = 28 × 10⁻³ × 6,0 × 10⁻⁵ / 2,40 = 7,0 × 10⁻⁷ m = 700 nm ✓, valeur d'une radiation rouge. Oublier le facteur 2 donnerait 1 400 nm, hors du domaine visible ; ne pas convertir a de mm en m donnerait un résultat 1 000 fois trop grand.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une fente de 0,070 mm de large, éclairée par un laser de longueur d'onde 532 nm, diffracte la lumière sur un écran situé 3,50 m plus loin. Quelle distance sépare le centre de la tache centrale du milieu de la première bande sombre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "53,2 mm"
+        },
+        {
+          "id": "b",
+          "text": "13,3 mm"
+        },
+        {
+          "id": "c",
+          "text": "7,6 mm"
+        },
+        {
+          "id": "d",
+          "text": "26,6 mm"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La première bande sombre est à L/2 du centre, avec L = 2λD/a = 2 × 5,32 × 10⁻⁷ × 3,50 / 7,0 × 10⁻⁵ = 5,32 × 10⁻² m. Donc L/2 = 2,66 × 10⁻² m = 26,6 mm ✓. 53,2 mm est la largeur totale L, non la demi-largeur. 13,3 mm divise L par 4, en prenant deux fois la moitié. 7,6 mm lit θ = λ/a = 7,6 × 10⁻³ rad comme une distance, en oubliant de multiplier par D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une onde de cuve à ondes passe d'un milieu où λ₁ = 2,0 cm à un milieu où λ₂ = 1,4 cm, sous l'incidence i₁ = 40°. Quel est l'angle de réfraction i₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "26,7°"
+        },
+        {
+          "id": "b",
+          "text": "66,7°"
+        },
+        {
+          "id": "c",
+          "text": "28,0°"
+        },
+        {
+          "id": "d",
+          "text": "40,0°"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "sin i₂ = sin i₁ × λ₂/λ₁ = 0,6428 × 1,4/2,0 = 0,4500, donc i₂ = 26,7° ✓. 66,7° vient du rapport λ₁/λ₂ pris à l'envers. 28,0° suppose les angles proportionnels aux longueurs d'onde (40 × 0,7), alors que ce sont les sinus qui le sont. 40,0° applique la loi de la réflexion (i' = i) à une onde qui change de milieu.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un rayon de lumière jaune atteint le centre I de la face plane d'un hémicylindre de verre, sous l'incidence i = 65° (figure) ; le rayon émergent est dévié de D = 28,0°, angle entre son prolongement initial et la direction du rayon émergent. Quel est l'indice du verre pour cette radiation ?\n<svg viewBox=\"0 0 340 210\"><title>Hémicylindre de verre : un rayon jaune arrive en I, centre de la face plane, avec l'angle d'incidence i ; il est réfracté dans le verre, traverse le verre le long d'un rayon et sort sans nouvelle déviation ; le pointillé gris prolonge le rayon incident</title><path d=\"M86 100 A84 84 0 0 0 254 100 Z\" fill=\"#bfdbfe\" opacity=\"0.6\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"170\" y1=\"20\" x2=\"170\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\" stroke-linecap=\"round\"/><line x1=\"88.4\" y1=\"62\" x2=\"170\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><polygon points=\"170,100 159,99.9 162.8,91.7\" fill=\"#0f172a\"/><line x1=\"170\" y1=\"100\" x2=\"220.2\" y2=\"167.4\" stroke=\"#ca8a04\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"220.2\" y1=\"167.4\" x2=\"238.1\" y2=\"191.4\" stroke=\"#ca8a04\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"100\" x2=\"260.6\" y2=\"142.3\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\" stroke-linecap=\"round\"/><circle cx=\"170\" cy=\"100\" r=\"3.5\" fill=\"#b45309\"/><text x=\"182\" y=\"92\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >I</text><path d=\"M170 70 A30 30 0 0 0 142.8 87.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"158\" y=\"62\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >i</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,93"
+        },
+        {
+          "id": "b",
+          "text": "1,76"
+        },
+        {
+          "id": "c",
+          "text": "1,51"
+        },
+        {
+          "id": "d",
+          "text": "1,89"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le rayon sort de l'hémicylindre sans nouvelle déviation, donc D = i − r et r = 65,0 − 28,0 = 37,0°. Descartes donne n = sin i/sin r = 0,9063/0,6018 = 1,51 ✓. 1,93 prend D pour l'angle r (0,9063/sin 28,0°). 1,76 prend le rapport des angles 65/37 au lieu de celui des sinus. 1,89 calcule cos 37,0°/cos 65°, des cosinus au lieu des sinus.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "En passant de l'air à un verre d'indice n = 1,52, une radiation de fréquence 5,5 × 10¹⁴ Hz voit sa longueur d'onde raccourcir. De combien de nanomètres ? (c = 3,00 × 10⁸ m/s ; l'air est assimilé au vide)",
+      "options": [
+        {
+          "id": "a",
+          "text": "359 nm"
+        },
+        {
+          "id": "b",
+          "text": "187 nm"
+        },
+        {
+          "id": "c",
+          "text": "309 nm"
+        },
+        {
+          "id": "d",
+          "text": "545 nm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans le vide, λ₀ = c/ν = 3,00 × 10⁸ / 5,5 × 10¹⁴ = 545,5 nm. Dans le verre, λ = λ₀/n = 545,5/1,52 = 358,9 nm. La diminution vaut 545,5 − 358,9 = 186,6 nm, soit 187 nm ✓. 359 nm est la longueur d'onde dans le verre, non sa diminution. 545 nm est la longueur d'onde dans l'air. 309 nm est la diminution calculée avec λ = λ₀/n² (545,5 − 236,1), une division en trop.",
+      "difficulty": 3
+    }
+  ]
+}
