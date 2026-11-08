@@ -1,0 +1,138 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les secrets de la stabilité",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Dans le noyau de lithium ⁶₃Li (3 protons, 3 neutrons), quelles affirmations sont justes ? (plusieurs réponses possibles)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les paires de deux neutrons voisins ne subissent aucune interaction forte"
+        },
+        {
+          "id": "b",
+          "text": "Chaque paire de deux protons voisins subit à la fois une attraction forte et une répulsion électrique"
+        },
+        {
+          "id": "c",
+          "text": "La répulsion électrique s'exerce aussi entre un proton et un neutron voisins"
+        },
+        {
+          "id": "d",
+          "text": "L'interaction forte entre deux protons voisins est environ 100 fois plus faible que leur répulsion électrique"
+        },
+        {
+          "id": "e",
+          "text": "Le noyau compte 15 paires de nucléons, dont 9 paires proton–neutron"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Deux protons voisins s'attirent par interaction forte et se repoussent par interaction électrique ✓. Le noyau compte 6 × 5 / 2 = 15 paires : 3 paires proton–proton, 3 paires neutron–neutron et 3 × 3 = 9 paires proton–neutron ✓. L'interaction forte agit aussi entre deux neutrons, car elle ne dépend pas de la nature des nucléons. Un neutron n'a pas de charge : il ne subit aucune répulsion électrique. À distance de deux nucléons voisins, l'interaction forte est environ 100 fois plus intense que la répulsion électrique, et non plus faible.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux noyaux X et Y ont le même nombre de masse A = 84. L'énergie de liaison de X est 727 MeV et celle de Y est 712 MeV. Que peut-on dire de leur stabilité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Y est le plus stable, car une énergie de liaison plus faible signifie un noyau plus léger"
+        },
+        {
+          "id": "b",
+          "text": "Aucune conclusion n'est possible : il faut calculer E_ℓ/A, même si les deux nombres de masse sont égaux"
+        },
+        {
+          "id": "c",
+          "text": "Aucune conclusion n'est possible : il faut connaître le nombre de protons de chacun des deux noyaux"
+        },
+        {
+          "id": "d",
+          "text": "X est le plus stable, car pour un même A, la plus grande E_ℓ donne aussi la plus grande E_ℓ/A"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec le même A, E_ℓ/A = E_ℓ / 84 : X a 727 / 84 = 8,65 MeV et Y a 712 / 84 = 8,48 MeV. X a la plus grande énergie par nucléon, donc il est le plus stable ✓. Comparer les énergies de liaison ne pose problème que pour des nombres de masse différents : ici le diviseur est le même, et le classement est identique. Une énergie de liaison plus faible signifie un défaut de masse plus petit, donc des nucléons moins liés : le noyau est moins stable, et pas « plus léger » pour autant. Le nombre de protons n'intervient pas dans la comparaison : E_ℓ/A suffit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le diagramme (Z, N) ci-dessous, la droite en pointillés est N = Z. Quel noyau a un excès de neutrons N − Z égal à 40 ?\n<svg viewBox=\"0 0 340 236\"><title>Diagramme (Z, N) avec la droite N = Z en pointillés et quatre noyaux repérés par les lettres T, U, V et W</title><line x1=\"46.0\" y1=\"200.0\" x2=\"326.0\" y2=\"200.0\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"200.0\" x2=\"46.0\" y2=\"16.0\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"332,200 324,196.5 324,203.5\" fill=\"#0f172a\"/><polygon points=\"46,10 42.5,18 49.5,18\" fill=\"#0f172a\"/><line x1=\"46.0\" y1=\"200.0\" x2=\"46.0\" y2=\"204.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"46.0\" y=\"217.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"108.2\" y1=\"200.0\" x2=\"108.2\" y2=\"204.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"108.2\" y=\"217.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><line x1=\"170.4\" y1=\"200.0\" x2=\"170.4\" y2=\"204.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"170.4\" y=\"217.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><line x1=\"232.7\" y1=\"200.0\" x2=\"232.7\" y2=\"204.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"232.7\" y=\"217.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><line x1=\"294.9\" y1=\"200.0\" x2=\"294.9\" y2=\"204.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"294.9\" y=\"217.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">80</text><line x1=\"42.0\" y1=\"200.0\" x2=\"46.0\" y2=\"200.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"39.0\" y=\"204.0\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"42.0\" y1=\"140.7\" x2=\"46.0\" y2=\"140.7\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"39.0\" y=\"144.7\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">50</text><line x1=\"42.0\" y1=\"81.3\" x2=\"46.0\" y2=\"81.3\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"39.0\" y=\"85.3\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">100</text><line x1=\"42.0\" y1=\"22.0\" x2=\"46.0\" y2=\"22.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"39.0\" y=\"26.0\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">150</text><text x=\"326.0\" y=\"229.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Z</text><text x=\"56.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">N</text><line x1=\"46.0\" y1=\"200.0\" x2=\"326.0\" y2=\"93.2\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><text x=\"317.8\" y=\"85.2\" text-anchor=\"end\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">N = Z</text><circle cx=\"232.7\" cy=\"81.3\" r=\"4.2\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"242.7\" y=\"75.3\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">T</text><circle cx=\"170.4\" cy=\"140.7\" r=\"4.2\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"180.4\" y=\"134.7\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">U</text><circle cx=\"170.4\" cy=\"81.3\" r=\"4.2\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"180.4\" y=\"75.3\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">V</text><circle cx=\"232.7\" cy=\"140.7\" r=\"4.2\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"242.7\" y=\"134.7\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">W</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le noyau T"
+        },
+        {
+          "id": "b",
+          "text": "Le noyau U"
+        },
+        {
+          "id": "c",
+          "text": "Le noyau V"
+        },
+        {
+          "id": "d",
+          "text": "Le noyau W"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On lit Z et N pour chaque noyau puis on calcule N − Z : T (Z = 60, N = 100) donne 40 ✓ ; U (Z = 40, N = 50) donne 10 ; V (Z = 40, N = 100) donne 60 ; W (Z = 60, N = 50) donne −10, il est sous la droite N = Z. Seul T convient. Le noyau V a le même N que T mais un Z plus petit, donc un excès plus grand ; le noyau U a le même Z que V mais N plus petit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la courbe d'Aston ci-dessous (E_ℓ/A en MeV en fonction de A), le point K correspond à un noyau de nombre de masse A = 160. Estimer son défaut de masse Δm. (1 u = 931,5 MeV·c⁻²)\n<svg viewBox=\"0 0 340 236\"><title>Courbe d'Aston : énergie de liaison par nucléon en fonction du nombre de masse A, avec un noyau repéré par la lettre K à l'abscisse A = 160</title><line x1=\"46.0\" y1=\"187.3\" x2=\"326.0\" y2=\"187.3\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"178.7\" x2=\"326.0\" y2=\"178.7\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"170.0\" x2=\"326.0\" y2=\"170.0\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"161.3\" x2=\"326.0\" y2=\"161.3\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"152.7\" x2=\"326.0\" y2=\"152.7\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"144.0\" x2=\"326.0\" y2=\"144.0\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"135.3\" x2=\"326.0\" y2=\"135.3\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"126.7\" x2=\"326.0\" y2=\"126.7\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"118.0\" x2=\"326.0\" y2=\"118.0\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"109.3\" x2=\"326.0\" y2=\"109.3\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"100.7\" x2=\"326.0\" y2=\"100.7\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"92.0\" x2=\"326.0\" y2=\"92.0\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"83.3\" x2=\"326.0\" y2=\"83.3\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"74.7\" x2=\"326.0\" y2=\"74.7\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"66.0\" x2=\"326.0\" y2=\"66.0\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"57.3\" x2=\"326.0\" y2=\"57.3\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"48.7\" x2=\"326.0\" y2=\"48.7\" stroke=\"#e2e8f0\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"178.7\" x2=\"326.0\" y2=\"178.7\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"182.7\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"46.0\" y1=\"161.3\" x2=\"326.0\" y2=\"161.3\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"165.3\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"46.0\" y1=\"144.0\" x2=\"326.0\" y2=\"144.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"148.0\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"46.0\" y1=\"126.7\" x2=\"326.0\" y2=\"126.7\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"130.7\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"46.0\" y1=\"109.3\" x2=\"326.0\" y2=\"109.3\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"113.3\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"46.0\" y1=\"92.0\" x2=\"326.0\" y2=\"92.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"96.0\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"46.0\" y1=\"74.7\" x2=\"326.0\" y2=\"74.7\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"78.7\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">7</text><line x1=\"46.0\" y1=\"57.3\" x2=\"326.0\" y2=\"57.3\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"61.3\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><line x1=\"46.0\" y1=\"40.0\" x2=\"326.0\" y2=\"40.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"44.0\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">9</text><text x=\"40.0\" y=\"200.0\" text-anchor=\"end\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"46.0\" y1=\"196.0\" x2=\"326.0\" y2=\"196.0\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"46.0\" y1=\"196.0\" x2=\"46.0\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"332,196 324,192.5 324,199.5\" fill=\"#0f172a\"/><polygon points=\"46,24 42.5,32 49.5,32\" fill=\"#0f172a\"/><line x1=\"46.0\" y1=\"196.0\" x2=\"46.0\" y2=\"200.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"46.0\" y=\"213.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"92.7\" y1=\"196.0\" x2=\"92.7\" y2=\"200.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"92.7\" y=\"213.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><line x1=\"139.3\" y1=\"196.0\" x2=\"139.3\" y2=\"200.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"139.3\" y=\"213.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">80</text><line x1=\"186.0\" y1=\"196.0\" x2=\"186.0\" y2=\"200.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"186.0\" y=\"213.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">120</text><line x1=\"232.7\" y1=\"196.0\" x2=\"232.7\" y2=\"200.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"232.7\" y=\"213.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">160</text><line x1=\"279.3\" y1=\"196.0\" x2=\"279.3\" y2=\"200.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"279.3\" y=\"213.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">200</text><line x1=\"326.0\" y1=\"196.0\" x2=\"326.0\" y2=\"200.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"326.0\" y=\"213.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">240</text><text x=\"326.0\" y=\"225.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"54.0\" y=\"13.0\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E_ℓ/A (MeV)</text><polyline points=\"47.2,196.0 48.3,176.9 49.5,150.9 53.0,104.1 56.5,83.3 60.0,62.5 64.7,57.3 69.3,57.3 77.5,51.6 92.7,47.8 111.3,43.6 139.3,45.0 186.0,48.5 232.7,54.2 288.7,59.6 323.7,64.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"232.7\" cy=\"54.2\" r=\"4.2\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"232.7\" y=\"44.2\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">K</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 8,8 × 10⁻³ u"
+        },
+        {
+          "id": "b",
+          "text": "≈ 1,3 × 10³ u"
+        },
+        {
+          "id": "c",
+          "text": "≈ 1,41 u"
+        },
+        {
+          "id": "d",
+          "text": "≈ 1,2 × 10⁶ u"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On lit l'ordonnée de K : E_ℓ/A ≈ 8,2 MeV. Comme E_ℓ = (E_ℓ/A) × A, on obtient E_ℓ ≈ 8,2 × 160 ≈ 1 312 MeV, puis Δm = E_ℓ / 931,5 ≈ 1 312 / 931,5 ≈ 1,41 u ✓. 8,8 × 10⁻³ u divise la valeur lue par 931,5 sans multiplier par A. 1,3 × 10³ u prend E_ℓ en MeV pour une masse en u : la division par 931,5 est oubliée. 1,2 × 10⁶ u multiplie E_ℓ par 931,5 au lieu de la diviser.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le noyau de lithium ⁷₃Li a pour masse m = 7,01435 u. Quelle énergie minimale, en 10¹² J, faut-il fournir pour dissocier tous les noyaux contenus dans 2,00 g de lithium 7 ? (M = 7,00 g/mol ; 𝒩 = 6,02 × 10²³ mol⁻¹ ; m_p = 1,00728 u ; m_n = 1,00867 u ; 1 u = 931,5 MeV·c⁻² ; 1 MeV = 1,60 × 10⁻¹³ J)",
+      "answerKey": {
+        "value": 1.08,
+        "tolerance": 0.03,
+        "unit": "10¹² J"
+      },
+      "explanation": "⁷₃Li compte 3 protons et 4 neutrons : Δm = 3 × 1,00728 + 4 × 1,00867 − 7,01435 = 0,04217 u, donc E_ℓ = 0,04217 × 931,5 = 39,28 MeV par noyau, soit 39,28 × 1,60 × 10⁻¹³ = 6,285 × 10⁻¹² J. Le nombre de noyaux est (2,00 / 7,00) × 6,02 × 10²³ = 1,72 × 10²³. D'où W = 1,72 × 10²³ × 6,285 × 10⁻¹² = 1,08 × 10¹² J ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le noyau de potassium ³⁹₁₉K a pour énergie de masse E_X = 36 285,0 MeV. Les énergies de masse du proton et du neutron valent E_p = 938,28 MeV et E_n = 939,58 MeV. Calculer l'énergie de liaison par nucléon de ce noyau, en MeV, arrondie au centième.",
+      "answerKey": {
+        "value": 8.56,
+        "tolerance": 0.01,
+        "unit": "MeV"
+      },
+      "explanation": "³⁹₁₉K compte 19 protons et 39 − 19 = 20 neutrons. D'après E_ℓ = Z·E_p + (A − Z)·E_n − E_X : 19 × 938,28 + 20 × 939,58 − 36 285,0 = 17 827,32 + 18 791,60 − 36 285,0 = 333,9 MeV, puis E_ℓ/A = 333,9 / 39 = 8,56 MeV ✓. Les nucléons séparés ont une énergie de masse supérieure à celle du noyau, et la différence est l'énergie à fournir pour les séparer.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "title": "⭐ Exercice : Les premiers pas dans les réactions nucléaires",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le thorium 228, ²²⁸₉₀Th, est un émetteur α. Quel est le nombre de masse A du noyau fils ?",
+      "answerKey": {
+        "value": 224
+      },
+      "explanation": "Une désintégration α retire 4 au nombre de masse : A = 228 − 4 = 224 ✓ (le noyau fils est le radium, de nombre de charge 88). Contrôle : 228 = 4 + 224.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le noyau, quelle transformation est à l'origine de l'émission d'un électron β⁻ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "¹₁p → ¹₀n + ⁰₋₁e"
+        },
+        {
+          "id": "b",
+          "text": "¹₀n → ¹₁p + ⁰₁e"
+        },
+        {
+          "id": "c",
+          "text": "¹₁p → ¹₀n + ⁰₁e"
+        },
+        {
+          "id": "d",
+          "text": "¹₀n → ¹₁p + ⁰₋₁e"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un neutron se change en proton en émettant un électron : ¹₀n → ¹₁p + ⁰₋₁e ✓ (charge : 0 = 1 − 1). La transformation d'un proton en neutron avec émission d'un positon, ¹₁p → ¹₀n + ⁰₁e, est celle de la radioactivité β⁺. L'équation d'un proton en neutron avec un électron ne conserve pas la charge (1 ≠ 0 − 1). L'équation d'un neutron en proton avec un positon ne la conserve pas non plus (0 ≠ 1 + 1).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une source a une activité de 5,0 × 10² Bq. Combien de désintégrations s'y produisent pendant 2,0 min, en supposant l'activité constante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,0 × 10⁴"
+        },
+        {
+          "id": "b",
+          "text": "1,0 × 10³"
+        },
+        {
+          "id": "c",
+          "text": "3,0 × 10⁴"
+        },
+        {
+          "id": "d",
+          "text": "2,5 × 10²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1 Bq est une désintégration par seconde : 2,0 min = 120 s, donc 5,0 × 10² × 120 = 6,0 × 10⁴ désintégrations ✓. 1,0 × 10³ multiplie par 2,0 sans convertir les minutes en secondes. 3,0 × 10⁴ multiplie par 60 sans tenir compte des 2,0 minutes. 2,5 × 10² divise l'activité par la durée en minutes.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le technétium 99m, utilisé en imagerie médicale, a pour période T = 6,0 h. Un échantillon a une activité de 3,2 × 10⁸ Bq à t = 0. Quelle est son activité après 30 h, en 10⁷ Bq ?",
+      "answerKey": {
+        "value": 1.0,
+        "tolerance": 0.05,
+        "unit": "10⁷ Bq"
+      },
+      "explanation": "30 h = 30 / 6,0 = 5 périodes, donc A = A₀/2⁵ = 3,2 × 10⁸ / 32 = 1,0 × 10⁷ Bq ✓, soit 1,0 en unité de 10⁷ Bq.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le magnésium 23 (²³₁₂Mg) se transforme spontanément en sodium 23 (²³₁₁Na). Quelle particule le noyau émet-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un électron ⁰₋₁e"
+        },
+        {
+          "id": "b",
+          "text": "Un positon ⁰₁e"
+        },
+        {
+          "id": "c",
+          "text": "Un proton ¹₁p"
+        },
+        {
+          "id": "d",
+          "text": "Un photon γ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Charge : 12 = 11 + Z_X donc Z_X = +1 ; masse : 23 = 23 + A_X donc A_X = 0. C'est un positon ⁰₁e : désintégration β⁺ ✓. Un électron porterait −1, ce qui donnerait 10 et non 12 au second membre. Un proton a une masse 1, alors que les nombres de masse sont déjà égaux. Un photon γ n'a pas de charge, et ne compenserait pas les 12 − 11 = 1 de charge.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une substance radioactive a pour constante radioactive λ = 3,85 × 10⁻³ s⁻¹. Quelle est sa période, en minutes ? (ln 2 = 0,693)",
+      "options": [
+        {
+          "id": "a",
+          "text": "180 min"
+        },
+        {
+          "id": "b",
+          "text": "4,33 min"
+        },
+        {
+          "id": "c",
+          "text": "3,00 min"
+        },
+        {
+          "id": "d",
+          "text": "0,00556 min"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "T = ln 2 / λ = 0,693 / 3,85 × 10⁻³ = 180 s, soit 180 / 60 = 3,00 min ✓. 180 min lit les 180 secondes comme des minutes. 4,33 min calcule 1/λ en oubliant ln 2. 0,00556 min calcule λ/ln 2, la relation inversée.",
+      "difficulty": 2
+    }
+  ]
+}
