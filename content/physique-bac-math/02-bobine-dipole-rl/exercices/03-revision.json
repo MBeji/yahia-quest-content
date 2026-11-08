@@ -1,0 +1,141 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La bobine et le dipôle RL",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle conversion d'énergie réalise un alternateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Énergie mécanique en énergie électrique"
+        },
+        {
+          "id": "b",
+          "text": "Énergie électrique en énergie mécanique"
+        },
+        {
+          "id": "c",
+          "text": "Énergie chimique en énergie électrique"
+        },
+        {
+          "id": "d",
+          "text": "Énergie lumineuse en énergie électrique"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans un alternateur, un inducteur en rotation fait varier le champ magnétique à travers les bobines de l'induit : l'énergie mécanique de la rotation devient de l'énergie électrique ✓. La conversion inverse est celle d'un moteur. Une pile convertit de l'énergie chimique, une cellule photovoltaïque de l'énergie lumineuse : aucune ne passe par l'induction.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine sans noyau de fer a une inductance de 40 mH quand le courant qui la traverse vaut 0,10 A. Quelle est son inductance quand il vaut 0,30 A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "13 mH"
+        },
+        {
+          "id": "b",
+          "text": "40 mH"
+        },
+        {
+          "id": "c",
+          "text": "120 mH"
+        },
+        {
+          "id": "d",
+          "text": "360 mH"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sans noyau de fer, l'inductance ne dépend que de la géométrie de la bobine, jamais de l'intensité du courant : elle reste 40 mH ✓. 120 mH suppose L proportionnelle à i. 13 mH la suppose inversement proportionnelle à i. 360 mH la suppose proportionnelle à i².",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Avec L en henry (H) et R en ohm (Ω), laquelle de ces grandeurs s'exprime en seconde ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L × R"
+        },
+        {
+          "id": "b",
+          "text": "R / L"
+        },
+        {
+          "id": "c",
+          "text": "L / R²"
+        },
+        {
+          "id": "d",
+          "text": "L / R"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le henry est un ohm-seconde (H = Ω·s) : L / R = Ω·s / Ω = s ✓, c'est la constante de temps. R / L est l'inverse d'une durée (s⁻¹). L × R donne des Ω²·s. L / R² donne des s/Ω.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un dipôle RL, de résistance totale R = 25 Ω et d'inductance L = 75 mH, est soumis à un échelon de tension E = 6,0 V. Calculer, en mA, l'intensité du courant 6,0 ms après la fermeture de l'interrupteur.",
+      "answerKey": {
+        "value": 207,
+        "tolerance": 3,
+        "unit": "mA"
+      },
+      "explanation": "On a I₀ = E/R = 6,0 / 25 = 0,24 A et τ = L/R = 0,075 / 25 = 3,0 ms. À t = 6,0 ms = 2τ, i = I₀ (1 − e^(−2)) ≈ 0,24 × 0,865 ≈ 0,2075 A, soit environ 207 mA.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL, de constante de temps τ = 9,0 ms et d'intensité finale I₀ = 0,60 A, voit sa résistance totale R triplée et son inductance L doublée, E restant inchangée. Quelles sont les nouvelles valeurs de τ et de I₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "τ = 3,0 ms et I₀ = 0,20 A"
+        },
+        {
+          "id": "b",
+          "text": "τ = 6,0 ms et I₀ = 0,20 A"
+        },
+        {
+          "id": "c",
+          "text": "τ = 6,0 ms et I₀ = 1,8 A"
+        },
+        {
+          "id": "d",
+          "text": "τ = 54 ms et I₀ = 0,20 A"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a τ = L/R : L doublée multiplie τ par 2 et R triplée le divise par 3, soit τ = 9,0 × 2 / 3 = 6,0 ms. Et I₀ = E/R : R triplée divise I₀ par 3, soit 0,20 A ✓. Garder τ = 3,0 ms oublie l'effet de L. Prendre I₀ = 1,8 A suppose que l'intensité finale croît avec R. Prendre τ = 54 ms multiplie L par R au lieu de les diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le courant dans une bobine de 0,80 H passe de 0,30 A à 0,10 A. Quelle énergie magnétique la bobine a-t-elle restituée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,0 mJ"
+        },
+        {
+          "id": "b",
+          "text": "16 mJ"
+        },
+        {
+          "id": "c",
+          "text": "32 mJ"
+        },
+        {
+          "id": "d",
+          "text": "36 mJ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'énergie initiale vaut ½ × 0,80 × (0,30)² = 36 mJ et l'énergie finale ½ × 0,80 × (0,10)² = 4,0 mJ : la bobine a restitué 36 − 4,0 = 32 mJ ✓. 36 mJ est l'énergie initiale seule. 4,0 mJ est l'énergie finale seule. 16 mJ calcule ½ L (Δi)² = ½ × 0,80 × (0,20)² : l'énergie ne dépend pas du carré de la différence des courants.",
+      "difficulty": 2
+    }
+  ]
+}

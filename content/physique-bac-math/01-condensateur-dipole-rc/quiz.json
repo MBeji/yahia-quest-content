@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Le condensateur et le dipôle RC",
+  "questions": [
+    {
+      "prompt": "Un condensateur idéal chargé est ensuite isolé : aucun conducteur ne relie ses bornes. Que devient sa charge q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle reste constante, sans circuit qui la décharge"
+        },
+        {
+          "id": "b",
+          "text": "Elle double, puisque plus aucun courant ne la limite"
+        },
+        {
+          "id": "c",
+          "text": "Elle s'annule dès que le générateur est débranché"
+        },
+        {
+          "id": "d",
+          "text": "Elle s'inverse, l'armature positive devenant négative"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les charges ne peuvent pas traverser le diélectrique isolant et aucun circuit extérieur ne les ramène d'une armature à l'autre : q reste constante ✓. Dire que q double suppose une source qui continue de charger, alors que le condensateur est isolé ; croire qu'elle s'annule sans le générateur confond « charge stockée » et « courant fourni par le générateur » ; une inversion des armatures ne correspond à aucun mécanisme.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un condensateur de 47 µF porte la charge q = 0,235 mC. Quelle est la tension u_C à ses bornes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,0 mV"
+        },
+        {
+          "id": "b",
+          "text": "0,20 V"
+        },
+        {
+          "id": "c",
+          "text": "5,0 V"
+        },
+        {
+          "id": "d",
+          "text": "5,0 kV"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "u_C = q/C = 0,235·10⁻³ C / 47·10⁻⁶ F = 5,0 V ✓. La valeur 5,0 mV lit les mC comme des µC ; 0,20 V vient de l'inversion C/q ; 5,0 kV lit les µF comme des nF.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Lequel de ces condensateurs a la plus grande capacité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,047 µF"
+        },
+        {
+          "id": "b",
+          "text": "220 nF"
+        },
+        {
+          "id": "c",
+          "text": "4 700 pF"
+        },
+        {
+          "id": "d",
+          "text": "0,000 1 mF"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Tout ramener en nF : 0,047 µF = 47 nF ; 220 nF ; 4 700 pF = 4,7 nF ; 0,000 1 mF = 0,1 µF = 100 nF. Le plus grand est 220 nF ✓ ; on se laisse piéger en comparant les nombres sans tenir compte des préfixes (4 700 paraît le plus grand, alors que c'est le plus petit).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Laquelle de ces modifications double la capacité d'un condensateur plan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Doubler la surface S des armatures"
+        },
+        {
+          "id": "b",
+          "text": "Doubler l'écartement e des armatures"
+        },
+        {
+          "id": "c",
+          "text": "Doubler la tension u appliquée"
+        },
+        {
+          "id": "d",
+          "text": "Doubler la charge q portée par les armatures"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C = ε·S/e est proportionnelle à S : doubler S double C ✓. Doubler e divise C par 2 puisque e est au dénominateur ; la capacité ne dépend ni de la tension appliquée ni de la charge portée, seulement de la géométrie et du diélectrique : doubler u ou q double q ou u, pas C.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Outre sa capacité, quelle grandeur le constructeur inscrit-il sur le boîtier d'un condensateur ? (une seule réponse parmi celles-ci)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sa charge électrique q"
+        },
+        {
+          "id": "b",
+          "text": "Sa constante de temps τ"
+        },
+        {
+          "id": "c",
+          "text": "Son énergie emmagasinée"
+        },
+        {
+          "id": "d",
+          "text": "Sa tension de service"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le boîtier porte la tension de service, tension nominale d'utilisation, nettement inférieure à la tension de claquage (également indiquée par le constructeur) ✓. La charge q = C·u dépend de la tension appliquée ; τ = RC dépend du résistor associé ; l'énergie emmagasinée dépend de la tension à l'instant considéré.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur la courbe de charge u_C(t) d'un dipôle RC, à quel instant la tangente à l'origine coupe-t-elle l'asymptote u_C = E ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "t = 5τ"
+        },
+        {
+          "id": "b",
+          "text": "t = 2τ"
+        },
+        {
+          "id": "c",
+          "text": "t = τ"
+        },
+        {
+          "id": "d",
+          "text": "t = 0,63 τ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La tangente à l'origine a pour équation u_C = (E/τ)·t : elle atteint E quand t = τ ✓. L'instant 0,63 τ confond l'abscisse avec l'ordonnée 0,63 E ; 5τ est la durée de charge complète à 1 % près ; 2τ ne correspond à aucune propriété de la courbe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le sens positif est orienté vers l'armature A, de charge initiale q = 20 µC. Un courant de décharge d'intensité constante i = −2,0 µA circule pendant 5,0 s. Quelle est alors la charge de A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−10 µC"
+        },
+        {
+          "id": "b",
+          "text": "4,0 µC"
+        },
+        {
+          "id": "c",
+          "text": "10 µC"
+        },
+        {
+          "id": "d",
+          "text": "30 µC"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "i = dq/dt avec i constante donne Δq = i·Δt = −2,0 µA × 5,0 s = −10 µC, donc q = 20 − 10 = 10 µC ✓. La valeur −10 µC est la variation Δq, pas la charge ; 4,0 µC divise la charge initiale par la durée ; 30 µC ajoute Δq en oubliant que i est négative.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un condensateur de capacité 20 µF porte la charge q = 120 µC. Quelle énergie emmagasine-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,060 mJ"
+        },
+        {
+          "id": "b",
+          "text": "0,36 mJ"
+        },
+        {
+          "id": "c",
+          "text": "0,72 mJ"
+        },
+        {
+          "id": "d",
+          "text": "3,6 mJ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E_C = q²/(2C) = (120·10⁻⁶)² / (2 × 20·10⁻⁶) = 1,44·10⁻⁸ / 4,0·10⁻⁵ = 3,6·10⁻⁴ J = 0,36 mJ ✓ (aussi : u = q/C = 6,0 V puis ½·q·u). La valeur 0,72 mJ oublie le facteur 2 du dénominateur ; 0,060 mJ utilise ½·C·u avec u non élevée au carré ; 3,6 mJ décale la puissance de dix.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle équation différentielle vérifie la charge q(t) d'un condensateur pendant sa décharge dans un résistor R ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "dq/dt + q/(RC) = E/R"
+        },
+        {
+          "id": "b",
+          "text": "dq/dt − q/(RC) = 0"
+        },
+        {
+          "id": "c",
+          "text": "dq/dt + RC·q = 0"
+        },
+        {
+          "id": "d",
+          "text": "dq/dt + q/(RC) = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La loi des mailles u_C + u_R = 0 avec u_C = q/C et u_R = R·i = R·dq/dt donne q/C + R·dq/dt = 0, soit dq/dt + q/(RC) = 0 ✓. L'équation à second membre E/R est celle de la charge ; le signe − ferait croître q exponentiellement ; le produit RC·q n'apparaît dans aucune étape de la mise en équation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RC (R = 2,0 kΩ, C = 50 nF) a la constante de temps τ = 0,10 ms. On remplace R par 500 Ω. Que devient τ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 µs"
+        },
+        {
+          "id": "b",
+          "text": "0,40 ms"
+        },
+        {
+          "id": "c",
+          "text": "0,10 ms"
+        },
+        {
+          "id": "d",
+          "text": "25 ms"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "τ = R·C est proportionnelle à R : R est divisée par 4, donc τ aussi, soit 0,10 ms / 4 = 25 µs ✓ (500 Ω × 50 nF = 25 µs). La valeur 0,40 ms inverse le rapport ; 0,10 ms suppose que τ ne dépend que de C ; 25 ms lit les nF comme des µF.",
+      "difficulty": 2
+    }
+  ]
+}
