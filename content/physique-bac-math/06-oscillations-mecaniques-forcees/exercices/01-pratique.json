@@ -1,0 +1,141 @@
+{
+  "title": "⭐ Exercice : Premiers pas dans le régime forcé",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "En régime permanent, quelle est la fréquence des oscillations d'un pendule élastique soumis à un excitateur périodique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fréquence propre N₀ du pendule élastique"
+        },
+        {
+          "id": "b",
+          "text": "La fréquence de résonance N_r du pendule"
+        },
+        {
+          "id": "c",
+          "text": "La fréquence N du moteur qui excite le pendule"
+        },
+        {
+          "id": "d",
+          "text": "La pseudo-fréquence des oscillations libres amorties"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En régime permanent, l'excitateur impose sa fréquence N au résonateur ✓. N₀ est la fréquence des oscillations libres. N_r est une valeur particulière de N, celle qui donne l'amplitude maximale : le pendule oscille à N pour toute valeur réglée. La pseudo-fréquence décrit les oscillations libres amorties, qui s'éteignent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un palet oscille, en régime permanent, selon x(t) = 2,4 × 10⁻² sin(5πt + π/6) (unités SI). Donner sa pulsation ω et sa fréquence N.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ω = 5,0 rad/s ; N = 0,80 Hz"
+        },
+        {
+          "id": "b",
+          "text": "ω = 15,7 rad/s ; N = 5,0 Hz"
+        },
+        {
+          "id": "c",
+          "text": "ω = 15,7 rad/s ; N = 15,7 Hz"
+        },
+        {
+          "id": "d",
+          "text": "ω = 15,7 rad/s ; N = 2,5 Hz"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La pulsation est le coefficient de t : ω = 5π = 15,7 rad/s, et N = ω/2π = 2,5 Hz ✓. N = 5,0 Hz divise ω par π au lieu de 2π. N = 15,7 Hz lit la pulsation comme une fréquence. Le couple (5,0 rad/s ; 0,80 Hz) oublie le facteur π dans la pulsation.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'enregistrement de l'élongation d'un pendule, en régime permanent, est donné ci-dessous (x en cm, t en s). La fréquence propre du pendule est N₀ = 3,2 Hz. À quelle vitesse tourne le moteur qui l'entraîne, en tr/min ?\n<svg viewBox=\"0 0 340 214\"><title>Enregistrement x(t) d'un palet en régime permanent : sinusoïde d'amplitude 4 cm qui passe par zéro à t = 0 en croissant, crêtes à 0,1 s, 0,5 s et 0,9 s</title><line x1=\"54\" y1=\"166.1\" x2=\"322\" y2=\"166.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"149.6\" x2=\"322\" y2=\"149.6\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"133\" x2=\"322\" y2=\"133\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"116.5\" x2=\"322\" y2=\"116.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"83.5\" x2=\"322\" y2=\"83.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"67\" x2=\"322\" y2=\"67\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"50.4\" x2=\"322\" y2=\"50.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"33.9\" x2=\"322\" y2=\"33.9\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"107.6\" y1=\"176\" x2=\"107.6\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"161.2\" y1=\"176\" x2=\"161.2\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"214.8\" y1=\"176\" x2=\"214.8\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"268.4\" y1=\"176\" x2=\"268.4\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"322\" y1=\"176\" x2=\"322\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"54\" y1=\"100\" x2=\"324\" y2=\"100\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"330,100 322,96 322,104\" fill=\"#0f172a\"/><line x1=\"54\" y1=\"176\" x2=\"54\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"54,16 50,24 58,24\" fill=\"#0f172a\"/><line x1=\"107.6\" y1=\"97\" x2=\"107.6\" y2=\"103\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"107.6\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,2</text><line x1=\"161.2\" y1=\"97\" x2=\"161.2\" y2=\"103\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"161.2\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,4</text><line x1=\"214.8\" y1=\"97\" x2=\"214.8\" y2=\"103\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"214.8\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,6</text><line x1=\"268.4\" y1=\"97\" x2=\"268.4\" y2=\"103\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"268.4\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,8</text><line x1=\"322\" y1=\"97\" x2=\"322\" y2=\"103\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"322\" y=\"190\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"51\" y1=\"166.1\" x2=\"54\" y2=\"166.1\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"170.1\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−4</text><line x1=\"51\" y1=\"149.6\" x2=\"54\" y2=\"149.6\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"153.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−3</text><line x1=\"51\" y1=\"133\" x2=\"54\" y2=\"133\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"137\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−2</text><line x1=\"51\" y1=\"116.5\" x2=\"54\" y2=\"116.5\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"120.5\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−1</text><line x1=\"51\" y1=\"83.5\" x2=\"54\" y2=\"83.5\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"87.5\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+1</text><line x1=\"51\" y1=\"67\" x2=\"54\" y2=\"67\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"71\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+2</text><line x1=\"51\" y1=\"50.4\" x2=\"54\" y2=\"50.4\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"54.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+3</text><line x1=\"51\" y1=\"33.9\" x2=\"54\" y2=\"33.9\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47\" y=\"37.9\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+4</text><text x=\"320\" y=\"206\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (s)</text><text x=\"62\" y=\"20\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x (cm)</text><polyline points=\"54,100 55.8,93.1 57.6,86.3 59.4,79.6 61.1,73.1 62.9,67 64.7,61.2 66.5,55.8 68.3,50.9 70.1,46.5 71.9,42.8 73.7,39.6 75.4,37.1 77.2,35.4 79,34.3 80.8,33.9 82.6,34.3 84.4,35.4 86.2,37.1 87.9,39.6 89.7,42.8 91.5,46.5 93.3,50.9 95.1,55.8 96.9,61.2 98.7,67 100.5,73.1 102.2,79.6 104,86.3 105.8,93.1 107.6,100 109.4,106.9 111.2,113.7 113,120.4 114.7,126.9 116.5,133 118.3,138.8 120.1,144.2 121.9,149.1 123.7,153.5 125.5,157.2 127.3,160.4 129,162.9 130.8,164.6 132.6,165.7 134.4,166.1 136.2,165.7 138,164.6 139.8,162.9 141.5,160.4 143.3,157.2 145.1,153.5 146.9,149.1 148.7,144.2 150.5,138.8 152.3,133 154.1,126.9 155.8,120.4 157.6,113.7 159.4,106.9 161.2,100 163,93.1 164.8,86.3 166.6,79.6 168.3,73.1 170.1,67 171.9,61.2 173.7,55.8 175.5,50.9 177.3,46.5 179.1,42.8 180.9,39.6 182.6,37.1 184.4,35.4 186.2,34.3 188,33.9 189.8,34.3 191.6,35.4 193.4,37.1 195.1,39.6 196.9,42.8 198.7,46.5 200.5,50.9 202.3,55.8 204.1,61.2 205.9,67 207.7,73.1 209.4,79.6 211.2,86.3 213,93.1 214.8,100 216.6,106.9 218.4,113.7 220.2,120.4 221.9,126.9 223.7,133 225.5,138.8 227.3,144.2 229.1,149.1 230.9,153.5 232.7,157.2 234.5,160.4 236.2,162.9 238,164.6 239.8,165.7 241.6,166.1 243.4,165.7 245.2,164.6 247,162.9 248.7,160.4 250.5,157.2 252.3,153.5 254.1,149.1 255.9,144.2 257.7,138.8 259.5,133 261.3,126.9 263,120.4 264.8,113.7 266.6,106.9 268.4,100 270.2,93.1 272,86.3 273.8,79.6 275.5,73.1 277.3,67 279.1,61.2 280.9,55.8 282.7,50.9 284.5,46.5 286.3,42.8 288.1,39.6 289.8,37.1 291.6,35.4 293.4,34.3 295.2,33.9 297,34.3 298.8,35.4 300.6,37.1 302.3,39.6 304.1,42.8 305.9,46.5 307.7,50.9 309.5,55.8 311.3,61.2 313.1,67 314.9,73.1 316.6,79.6 318.4,86.3 320.2,93.1 322,100\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "192 tr/min"
+        },
+        {
+          "id": "b",
+          "text": "150 tr/min"
+        },
+        {
+          "id": "c",
+          "text": "24 tr/min"
+        },
+        {
+          "id": "d",
+          "text": "2,5 tr/min"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les crêtes sont à 0,1 s, 0,5 s et 0,9 s : T = 0,40 s, donc N = 1/T = 2,5 Hz = 2,5 tr/s, soit 2,5 × 60 = 150 tr/min ✓ : en régime forcé, le moteur impose cette fréquence. 192 tr/min vaut 60 × N₀ : la fréquence propre n'est pas celle du moteur. 24 tr/min multiplie la période par 60. 2,5 tr/min oublie la conversion des secondes en minutes.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un ressort de raideur k = 7,5 N/m porte un palet de 60 g. Calculer la période propre T₀ de ce pendule, en secondes.",
+      "answerKey": {
+        "value": 0.56,
+        "tolerance": 0.01,
+        "unit": "s"
+      },
+      "explanation": "T₀ = 2π√(m/k) = 2π√(0,060 / 7,5) = 2π × 0,0894 = 0,56 s ✓ (le palet est converti en 0,060 kg ; contrôle : N₀ = 1/T₀ = 1,78 Hz, soit (1/2π)√125 = 11,18 / 6,283).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un palet est relié à un ressort de raideur k = 12 N/m. À un instant, son élongation est x = +2,0 cm et celle de l'extrémité B du ressort, déplacée par un excentrique, est x_B = −1,0 cm. Quelle est la valeur algébrique de la tension T exercée par le ressort sur le palet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,36 N"
+        },
+        {
+          "id": "b",
+          "text": "−0,24 N"
+        },
+        {
+          "id": "c",
+          "text": "−0,12 N"
+        },
+        {
+          "id": "d",
+          "text": "+0,36 N"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le ressort est allongé de x − x_B = 0,020 − (−0,010) = 0,030 m, donc T = −k(x − x_B) = −12 × 0,030 = −0,36 N ✓ : la tension tire le palet vers B. −0,24 N prend B immobile (T = −k·x). −0,12 N additionne x et x_B au lieu de les soustraire. +0,36 N donne la bonne norme avec le mauvais signe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À une certaine fréquence, l'impédance mécanique d'un pendule forcé vaut Z = 2,5 kg/s ; la force excitatrice a pour amplitude F_m = 0,60 N. Quelle est l'amplitude V_m de la vitesse du palet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,24 m/s"
+        },
+        {
+          "id": "b",
+          "text": "1,50 m/s"
+        },
+        {
+          "id": "c",
+          "text": "4,17 m/s"
+        },
+        {
+          "id": "d",
+          "text": "24 m/s"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Z = F_m / V_m donne V_m = F_m / Z = 0,60 / 2,5 = 0,24 m/s ✓ : des newtons divisés par des kg/s donnent des m/s. 1,50 m/s est le produit F_m × Z. 4,17 m/s est le quotient inversé Z / F_m. 24 m/s décale la virgule du résultat.",
+      "difficulty": 2
+    }
+  ]
+}

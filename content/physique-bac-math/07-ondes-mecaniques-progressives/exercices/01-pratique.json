@@ -1,0 +1,140 @@
+{
+  "title": "⭐ Exercice : Premières secousses, premières ondes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Une onde a parcouru toute une corde : la corde a retrouvé sa forme et chacun de ses points sa position initiale. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'onde a transporté de la matière, qui est ensuite revenue à sa place"
+        },
+        {
+          "id": "b",
+          "text": "L'onde n'a transporté ni énergie ni matière, puisque la corde est revenue"
+        },
+        {
+          "id": "c",
+          "text": "L'onde a transporté de l'énergie et de la matière, en parts égales"
+        },
+        {
+          "id": "d",
+          "text": "L'onde a transporté de l'énergie, mais aucune matière d'un bout à l'autre"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaque point de la corde a oscillé autour de sa position puis l'a retrouvée : aucune matière n'a été transportée d'un bout à l'autre. Pourtant le dernier point a bien reçu un mouvement : de l'énergie a voyagé ✓. Penser que la matière avance puis revient, ou qu'elle voyage en même temps que l'énergie, confond la déformation qui avance avec de la matière qui avance. Dire qu'aucune énergie n'est transportée oublie que les points éloignés se sont mis en mouvement.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Range ces ébranlements du plus lent au plus rapide (ordres de grandeur) :",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le son dans l'air à 20 °C"
+        },
+        {
+          "id": "b",
+          "text": "Une onde sismique"
+        },
+        {
+          "id": "c",
+          "text": "Une secousse le long d'une corde"
+        },
+        {
+          "id": "d",
+          "text": "Une ride à la surface de l'eau"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "d",
+          "c",
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "La ride à la surface de l'eau avance à environ 0,3 m/s, la secousse le long d'une corde à environ 10 m/s, le son dans l'air à 342 m/s et l'onde sismique à environ 8000 m/s : l'ordre du plus lent au plus rapide est ride, corde, son dans l'air, onde sismique.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un marteau frappe l'extrémité d'un long rail d'acier. Le son s'y propage à 5000 m/s. Au bout de combien de temps, en millisecondes, un capteur placé à 35 m de l'extrémité le détecte ?",
+      "answerKey": {
+        "value": 7,
+        "unit": "ms"
+      },
+      "explanation": "La célérité est v = d/Δt, donc Δt = d/v = 35/5000 = 0,0070 s = 7 ms ✓. Cette durée est celle de la propagation de l'énergie sur 35 m, pas celle d'une oscillation d'un point du rail.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "On veut augmenter la longueur d'onde d'une onde sinusoïdale le long d'une corde. Quelles actions conviennent ? (plusieurs réponses possibles)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diminuer la fréquence du vibreur, sans toucher à la corde"
+        },
+        {
+          "id": "b",
+          "text": "Tendre davantage la corde, sans toucher à la fréquence"
+        },
+        {
+          "id": "c",
+          "text": "Augmenter l'amplitude du vibreur, sans toucher à la fréquence"
+        },
+        {
+          "id": "d",
+          "text": "Remplacer la corde par une corde plus lourde, à tension constante"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "La longueur d'onde est λ = v/N. Diminuer N augmente λ ✓. Tendre la corde augmente la célérité v, donc λ à fréquence constante ✓. L'amplitude du vibreur ne modifie ni la célérité ni la fréquence, donc pas λ. Une corde plus lourde, à tension constante, a plus d'inertie : la célérité diminue et λ diminue aussi.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La figure donne l'élongation d'un point M d'une corde en fonction du temps, en régime établi. La longueur d'onde est λ = 0,36 m. Quelle est la célérité de l'onde ?\n<svg viewBox=\"0 0 340 168\"><title>Diagramme du mouvement d'un point M d'une corde en régime établi : élongation en millimètres, d'amplitude 3 mm, en fonction du temps en millisecondes</title><line x1=\"30\" y1=\"79\" x2=\"334\" y2=\"79\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"334,79 326,83 326,75\" fill=\"#0f172a\"/><line x1=\"36\" y1=\"146\" x2=\"36\" y2=\"14\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"36,14 40,22 32,22\" fill=\"#0f172a\"/><polyline points=\"36,79 36.74,76.1 37.48,73.22 38.22,70.39 38.96,67.62 39.7,64.94 40.44,62.37 41.18,59.93 41.92,57.64 42.66,55.51 43.39,53.57 44.13,51.82 44.87,50.28 45.61,48.96 46.35,47.88 47.09,47.03 47.83,46.44 48.57,46.09 49.31,46 50.05,46.17 50.79,46.59 51.53,47.26 52.27,48.18 53.01,49.33 53.75,50.72 54.49,52.32 55.23,54.13 55.97,56.13 56.71,58.31 57.45,60.65 58.18,63.13 58.92,65.74 59.66,68.44 60.4,71.23 61.14,74.08 61.88,76.97 62.62,79.87 63.36,82.77 64.1,85.63 64.84,88.45 65.58,91.19 66.32,93.84 67.06,96.37 67.8,98.77 68.54,101.02 69.28,103.09 70.02,104.98 70.76,106.67 71.5,108.14 72.24,109.39 72.97,110.4 73.71,111.17 74.45,111.69 75.19,111.96 75.93,111.97 76.67,111.73 77.41,111.24 78.15,110.49 78.89,109.5 79.63,108.28 80.37,106.83 81.11,105.16 81.85,103.29 82.59,101.23 83.33,99 84.07,96.62 84.81,94.1 85.55,91.46 86.29,88.73 87.03,85.92 87.76,83.06 88.5,80.16 89.24,77.26 89.98,74.37 90.72,71.52 91.46,68.72 92.2,66 92.94,63.39 93.68,60.89 94.42,58.54 95.16,56.34 95.9,54.32 96.64,52.49 97.38,50.87 98.12,49.46 98.86,48.28 99.6,47.34 100.34,46.64 101.08,46.2 101.82,46.01 102.55,46.07 103.29,46.39 104.03,46.96 104.77,47.78 105.51,48.84 106.25,50.14 106.99,51.65 107.73,53.38 108.47,55.31 109.21,57.42 109.95,59.7 110.69,62.12 111.43,64.68 112.17,67.35 112.91,70.11 113.65,72.94 114.39,75.81 115.13,78.71 115.87,81.61 116.61,84.49 117.34,87.33 118.08,90.1 118.82,92.79 119.56,95.37 120.3,97.83 121.04,100.14 121.78,102.28 122.52,104.25 123.26,106.02 124,107.58 124.74,108.92 125.48,110.03 126.22,110.89 126.96,111.52 127.7,111.88 128.44,112 129.18,111.86 129.92,111.46 130.66,110.82 131.39,109.93 132.13,108.79 132.87,107.43 133.61,105.85 134.35,104.06 135.09,102.08 135.83,99.91 136.57,97.59 137.31,95.12 138.05,92.53 138.79,89.83 139.53,87.05 140.27,84.21 141.01,81.32 141.75,78.42 142.49,75.52 143.23,72.65 143.97,69.83 144.71,67.08 145.45,64.42 146.18,61.88 146.92,59.46 147.66,57.2 148.4,55.11 149.14,53.2 149.88,51.49 150.62,50 151.36,48.72 152.1,47.69 152.84,46.89 153.58,46.35 154.32,46.05 155.06,46.02 155.8,46.23 156.54,46.7 157.28,47.42 158.02,48.39 158.76,49.59 159.5,51.02 160.24,52.67 160.97,54.52 161.71,56.55 162.45,58.77 163.19,61.14 163.93,63.64 164.67,66.27 165.41,69 166.15,71.8 166.89,74.66 167.63,77.55 168.37,80.45 169.11,83.34 169.85,86.2 170.59,89 171.33,91.73 172.07,94.36 172.81,96.86 173.55,99.23 174.29,101.45 175.03,103.48 175.76,105.33 176.5,106.98 177.24,108.41 177.98,109.61 178.72,110.58 179.46,111.3 180.2,111.77 180.94,111.98 181.68,111.95 182.42,111.65 183.16,111.11 183.9,110.31 184.64,109.28 185.38,108 186.12,106.51 186.86,104.8 187.6,102.89 188.34,100.8 189.08,98.54 189.82,96.12 190.55,93.58 191.29,90.92 192.03,88.17 192.77,85.35 193.51,82.48 194.25,79.58 194.99,76.68 195.73,73.79 196.47,70.95 197.21,68.17 197.95,65.47 198.69,62.88 199.43,60.41 200.17,58.09 200.91,55.92 201.65,53.94 202.39,52.15 203.13,50.57 203.87,49.21 204.61,48.07 205.34,47.18 206.08,46.54 206.82,46.14 207.56,46 208.3,46.12 209.04,46.48 209.78,47.11 210.52,47.97 211.26,49.08 212,50.42 212.74,51.98 213.48,53.75 214.22,55.72 214.96,57.86 215.7,60.17 216.44,62.63 217.18,65.21 217.92,67.9 218.66,70.67 219.39,73.51 220.13,76.39 220.87,79.29 221.61,82.19 222.35,85.06 223.09,87.89 223.83,90.65 224.57,93.32 225.31,95.88 226.05,98.3 226.79,100.58 227.53,102.69 228.27,104.62 229.01,106.35 229.75,107.86 230.49,109.16 231.23,110.22 231.97,111.04 232.71,111.61 233.45,111.93 234.18,111.99 234.92,111.8 235.66,111.36 236.4,110.66 237.14,109.72 237.88,108.54 238.62,107.13 239.36,105.51 240.1,103.68 240.84,101.66 241.58,99.46 242.32,97.11 243.06,94.61 243.8,92 244.54,89.28 245.28,86.48 246.02,83.63 246.76,80.74 247.5,77.84 248.24,74.94 248.97,72.08 249.71,69.27 250.45,66.54 251.19,63.9 251.93,61.38 252.67,59 253.41,56.77 254.15,54.71 254.89,52.84 255.63,51.17 256.37,49.72 257.11,48.5 257.85,47.51 258.59,46.76 259.33,46.27 260.07,46.03 260.81,46.04 261.55,46.31 262.29,46.83 263.03,47.6 263.76,48.61 264.5,49.86 265.24,51.33 265.98,53.02 266.72,54.91 267.46,56.98 268.2,59.23 268.94,61.63 269.68,64.16 270.42,66.81 271.16,69.55 271.9,72.37 272.64,75.23 273.38,78.13 274.12,81.03 274.86,83.92 275.6,86.77 276.34,89.56 277.08,92.26 277.82,94.87 278.55,97.35 279.29,99.69 280.03,101.87 280.77,103.87 281.51,105.68 282.25,107.28 282.99,108.67 283.73,109.82 284.47,110.74 285.21,111.41 285.95,111.83 286.69,112 287.43,111.91 288.17,111.56 288.91,110.97 289.65,110.12 290.39,109.04 291.13,107.72 291.87,106.18 292.61,104.43 293.34,102.49 294.08,100.36 294.82,98.07 295.56,95.63 296.3,93.06 297.04,90.38 297.78,87.61 298.52,84.78 299.26,81.9 300,79\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\"/><line x1=\"36\" y1=\"75\" x2=\"36\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"88.8\" y1=\"75\" x2=\"88.8\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"141.6\" y1=\"75\" x2=\"141.6\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"194.4\" y1=\"75\" x2=\"194.4\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"247.2\" y1=\"75\" x2=\"247.2\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"300\" y1=\"75\" x2=\"300\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"62.4\" y1=\"76\" x2=\"62.4\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"115.2\" y1=\"76\" x2=\"115.2\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"168\" y1=\"76\" x2=\"168\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"220.8\" y1=\"76\" x2=\"220.8\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"273.6\" y1=\"76\" x2=\"273.6\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"32\" y1=\"46\" x2=\"40\" y2=\"46\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"32\" y1=\"112\" x2=\"40\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"36\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">0</text><text x=\"88.8\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">20</text><text x=\"141.6\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">40</text><text x=\"194.4\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">60</text><text x=\"247.2\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">80</text><text x=\"300\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">100</text><text x=\"28\" y=\"50\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">+3</text><text x=\"28\" y=\"116\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">−3</text><text x=\"334\" y=\"71\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">t (ms)</text><text x=\"54\" y=\"22\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"11\">y (mm)</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,056 m/s"
+        },
+        {
+          "id": "b",
+          "text": "9,0 m/s"
+        },
+        {
+          "id": "c",
+          "text": "18 m/s"
+        },
+        {
+          "id": "d",
+          "text": "36 m/s"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur le diagramme, M retrouve le même état tous les 20 ms : la période est T = 20 ms = 0,020 s. Alors v = λ/T = 0,36/0,020 = 18 m/s ✓. La valeur 36 m/s vient de la demi-période (10 ms, d'un passage par zéro au suivant) prise pour T. La valeur 9,0 m/s prend deux périodes (40 ms). La valeur 0,056 est le quotient inversé T/λ.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un sonar émet dans l'eau de mer une onde sonore de fréquence 25 kHz. La célérité du son dans l'eau est 1500 m/s. Calculer la longueur d'onde, en cm.",
+      "answerKey": {
+        "value": 6,
+        "unit": "cm"
+      },
+      "explanation": "La longueur d'onde est λ = v/N = 1500/25 000 = 0,060 m = 6 cm ✓. Le sonar impose la fréquence, l'eau impose la célérité, et λ est la distance parcourue par le son pendant une période T = 1/25 000 s = 40 μs.",
+      "difficulty": 2
+    }
+  ]
+}
