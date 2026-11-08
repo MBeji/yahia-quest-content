@@ -26,7 +26,7 @@
       "difficulty": 1
     },
     {
-      "prompt": "Des électrons d'énergie cinétique Ec = 4,2 eV traversent de la vapeur de mercure, dont le seuil d'excitation est 4,9 eV (expérience de Franck et Hertz). Avec quelle énergie cinétique ressortent-ils ?",
+      "prompt": "Un électron d'énergie cinétique Ec = 4,2 eV traverse de la vapeur de mercure, dont le seuil d'excitation est 4,9 eV (expérience de Franck et Hertz). Quelle énergie cède-t-il à un atome qu'il heurte ?",
       "options": [
         {
           "id": "a",
@@ -34,7 +34,7 @@
         },
         {
           "id": "b",
-          "text": "4,2 eV"
+          "text": "0 eV"
         },
         {
           "id": "c",
@@ -42,11 +42,11 @@
         },
         {
           "id": "d",
-          "text": "0 eV"
+          "text": "4,2 eV"
         }
       ],
       "correctOption": "b",
-      "explanation": "Avec Ec = 4,2 eV, inférieure au seuil de 4,9 eV, le rapport Nc/Ne vaut 1 : les chocs sont élastiques, aucune énergie n'est cédée et les électrons ressortent avec 4,2 eV ✓. Le résultat 4,9 eV est le seuil lui-même, supérieur à l'énergie dont disposent les électrons. Le résultat 0,7 eV soustrait 4,2 eV de 4,9 eV, comme si l'atome prenait ce qui lui manque, alors qu'il ne prend rien sous le seuil. Le résultat 0 eV supposerait que l'atome absorbe toute l'énergie de l'électron.",
+      "explanation": "Avec Ec = 4,2 eV, inférieure au seuil de 4,9 eV, les chocs sont élastiques : l'atome ne peut recevoir aucune énergie, l'électron lui cède 0 eV et ressort avec ses 4,2 eV ✓. Le nombre 4,9 eV est le seuil lui-même, que l'électron n'atteint pas. Le nombre 0,7 eV soustrait 4,2 eV de 4,9 eV, comme si l'atome prenait ce qui lui manque, alors qu'il ne prend rien sous le seuil. Le nombre 4,2 eV est l'énergie cinétique de l'électron, que l'atome ne lui prend pas.",
       "difficulty": 1
     },
     {
@@ -54,7 +54,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Un spectre continu complet, du rouge au violet, sans interruption"
+          "text": "Un spectre continu complet, du rouge au violet, sans aucune interruption"
         },
         {
           "id": "b",
@@ -66,7 +66,7 @@
         },
         {
           "id": "d",
-          "text": "Quelques raies colorées fines sur un fond sombre"
+          "text": "Quelques raies colorées fines et séparées, sur un fond sombre"
         }
       ],
       "correctOption": "d",
@@ -74,75 +74,75 @@
       "difficulty": 1
     },
     {
-      "prompt": "Pour l'atome d'hydrogène, Eₙ = −13,6/n² (en eV). Quelle est l'énergie du niveau n = 6 ?",
+      "prompt": "Un niveau de l'atome d'hydrogène a pour énergie −0,38 eV (Eₙ = −13,6/n², en eV). Quelle est la valeur de n ?",
       "options": [
         {
           "id": "a",
-          "text": "−490 eV"
+          "text": "n = 36"
         },
         {
           "id": "b",
-          "text": "−2,27 eV"
+          "text": "n = 3"
         },
         {
           "id": "c",
-          "text": "−0,38 eV"
+          "text": "n = 5"
         },
         {
           "id": "d",
-          "text": "+0,38 eV"
+          "text": "n = 6"
         }
       ],
-      "correctOption": "c",
-      "explanation": "E₆ = −13,6/6² = −13,6/36 = −0,38 eV ✓. Le résultat −2,27 eV vient d'une division par n au lieu de n². Le résultat +0,38 eV oublie le signe : toutes les énergies liées de l'atome sont négatives. Le résultat −490 eV multiplie par n² au lieu de diviser.",
+      "correctOption": "d",
+      "explanation": "−13,6/n² = −0,38 donne n² = 13,6/0,38 ≈ 36, donc n = 6 ✓. Le nombre 36 est n², que l'on a oublié de ramener par la racine carrée. Le niveau n = 3 vaut −1,51 eV et le niveau n = 5 vaut −0,54 eV : aucun des deux n'a l'énergie demandée.",
       "difficulty": 2
     },
     {
-      "prompt": "Un atome d'hydrogène passe du niveau n = 4 au niveau n = 3. Que se passe-t-il ?",
+      "prompt": "Un atome d'hydrogène émet un photon d'énergie 0,66 eV. Quelle transition a-t-il effectuée ?",
       "options": [
         {
           "id": "a",
-          "text": "Il émet un photon d'énergie 0,66 eV"
+          "text": "De n = 4 à n = 3"
         },
         {
           "id": "b",
-          "text": "Il absorbe un photon d'énergie 0,66 eV"
+          "text": "De n = 3 à n = 4"
         },
         {
           "id": "c",
-          "text": "Il émet un photon d'énergie 0,85 eV"
+          "text": "De n = 5 à n = 4"
         },
         {
           "id": "d",
-          "text": "Il absorbe un photon d'énergie 2,36 eV"
+          "text": "De n = 4 à n = 2"
         }
       ],
       "correctOption": "a",
-      "explanation": "De n = 4 à n = 3, l'énergie passe de −0,85 eV à −1,51 eV : elle diminue, l'atome émet un photon d'énergie |ΔE| = |−1,51 − (−0,85)| = 0,66 eV ✓. Une absorption exigerait au contraire une énergie qui augmente. Le nombre 0,85 eV est l'énergie du niveau n = 4, non l'écart entre les deux niveaux. Le nombre 2,36 eV additionne 1,51 eV et 0,85 eV au lieu de les soustraire.",
+      "explanation": "De n = 4 à n = 3, l'énergie passe de −0,85 eV à −1,51 eV : elle diminue de 0,66 eV, ce qui correspond à l'émission d'un photon de 0,66 eV ✓. De n = 3 à n = 4, le même écart de 0,66 eV serait absorbé, non émis. De n = 5 à n = 4, l'écart vaut −0,54 − (−0,85) = 0,31 eV. De n = 4 à n = 2, l'écart vaut −0,85 − (−3,40) = 2,55 eV.",
       "difficulty": 2
     },
     {
-      "prompt": "Un photon d'énergie 8,5 eV arrive sur un atome d'hydrogène dans son état fondamental. Que se passe-t-il ?",
+      "prompt": "Un atome d'hydrogène dans son état fondamental n'absorbe pas un photon de 8,5 eV, mais il absorbe un photon de 10,2 eV et un photon de 15 eV, et n'absorbe pas un photon de 11 eV. Quelle règle explique ces observations ?",
       "options": [
         {
           "id": "a",
-          "text": "Il est absorbé : l'atome passe à n = 2 et garde l'excédent d'énergie"
+          "text": "Un photon n'est absorbé que s'il dépasse l'énergie d'ionisation, quelle que soit sa valeur exacte"
         },
         {
           "id": "b",
-          "text": "Il n'est pas absorbé : aucune transition n'a un écart de 8,5 eV"
+          "text": "Au-delà de 13,6 eV tout photon peut ioniser l'atome ; en dessous, seuls les écarts exacts sont absorbés"
         },
         {
           "id": "c",
-          "text": "Il est absorbé : l'atome monte de 8,5 eV au-dessus du fondamental"
+          "text": "Le photon de 15 eV a une plus grande longueur d'onde, donc il est mieux absorbé que celui de 8,5 eV"
         },
         {
           "id": "d",
-          "text": "Il n'est pas absorbé : un atome fondamental n'absorbe aucun photon"
+          "text": "L'atome absorbe tout photon dont l'énergie dépasse 10,2 eV, qui est le premier écart possible depuis n = 1"
         }
       ],
       "correctOption": "b",
-      "explanation": "Depuis le fondamental, les photons absorbables ont 10,2 eV (vers n = 2), 12,09 eV (vers n = 3), 12,75 eV (vers n = 4), ou au moins 13,6 eV (ionisation). 8,5 eV ne correspond à aucun écart et reste inférieur à 13,6 eV : le photon n'est pas absorbé, il est diffusé ✓. Aller à n = 2 demande 10,2 eV, et l'atome ne garde pas d'excédent. Aucun niveau ne se trouve à 8,5 eV du fondamental. Un atome fondamental peut absorber un photon dont l'énergie est l'un de ses écarts ou dépasse 13,6 eV, d'où l'erreur de croire qu'il n'en absorbe aucun.",
+      "explanation": "Depuis le fondamental, un photon est absorbé si son énergie est exactement un écart (10,2 eV vers n = 2, 12,09 eV vers n = 3, …) ou si elle atteint au moins 13,6 eV (ionisation) ✓. 8,5 eV ne correspond à aucun écart et reste inférieur à 13,6 eV : il n'est pas absorbé. Dire qu'il faut dépasser l'énergie d'ionisation est contredit par l'absorption à 10,2 eV. Un photon plus énergétique a une plus petite longueur d'onde, non une plus grande. Enfin, un photon de 11 eV, supérieur à 10,2 eV, ne serait pas absorbé : il ne correspond à aucun écart.",
       "difficulty": 2
     }
   ]

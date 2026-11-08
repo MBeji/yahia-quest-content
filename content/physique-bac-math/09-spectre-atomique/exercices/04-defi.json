@@ -27,10 +27,10 @@
         },
         {
           "id": "e",
-          "text": "Un photon de 5,0 eV"
+          "text": "Un photon de 5,00 eV"
         }
       ],
-      "explanation": "Depuis n = 2, les écarts sont E₃ − E₂ = 1,89 eV, E₄ − E₂ = 2,55 eV et E₅ − E₂ = 2,86 eV, et l'ionisation demande 3,40 eV. 1,89 eV est l'écart vers n = 3 : absorbé. 2,86 eV est l'écart vers n = 5 : absorbé. 5,0 eV dépasse 3,40 eV : absorbé, l'atome est ionisé et l'électron emporte l'excédent, 1,6 eV. Un photon de 2,40 eV n'est égal à aucun écart et reste inférieur à 3,40 eV : il est diffusé. Un photon de 1,51 eV est l'énergie du niveau n = 3, pas un écart depuis n = 2 : il est diffusé aussi.",
+      "explanation": "Depuis n = 2, les écarts sont E₃ − E₂ = 1,89 eV, E₄ − E₂ = 2,55 eV et E₅ − E₂ = 2,86 eV, et l'ionisation demande 3,40 eV. 1,89 eV est l'écart vers n = 3 : absorbé. 2,86 eV est l'écart vers n = 5 : absorbé. 5,00 eV dépasse 3,40 eV : absorbé, l'atome est ionisé et l'électron emporte l'excédent, 1,60 eV. Un photon de 2,40 eV n'est égal à aucun écart et reste inférieur à 3,40 eV : il est diffusé. Un photon de 1,51 eV est l'énergie du niveau n = 3, pas un écart depuis n = 2 : il est diffusé aussi.",
       "difficulty": 2,
       "type": "multi",
       "answerKey": {
@@ -53,69 +53,69 @@
       }
     },
     {
-      "prompt": "Un élève calcule la longueur d'onde du photon émis dans la transition n = 3 → n = 1 de l'atome d'hydrogène :\nE₁ = −13,6 eV ; E₃ = −13,6/3² = −1,51 eV\nW = E₃ − E₁ = 12,09 eV\nW = 12,09 / (1,6×10⁻¹⁹) = 7,56×10¹⁹ J\nλ = h·c/W = 6,62×10⁻³⁴ × 3,00×10⁸ / 7,56×10¹⁹ = 2,63×10⁻⁴⁵ m\nLe résultat est absurde pour une lumière. Où se trouve l'erreur ?",
+      "prompt": "Un élève calcule la longueur d'onde de la raie Hβ de l'hydrogène (transition de n = 4 à n = 2) :\nE₂ = −3,40 eV ; E₄ = −0,85 eV\nW = |E₄| = 0,85 eV = 1,36×10⁻¹⁹ J\nλ = h·c/W = 1,986×10⁻²⁵ / 1,36×10⁻¹⁹ = 1,46×10⁻⁶ m\nIl en conclut que Hβ est infrarouge, alors qu'elle est bleue. Où se trouve l'erreur ?",
       "options": [
         {
           "id": "a",
-          "text": "Dans le calcul de E₁ et de E₃"
+          "text": "Dans le choix de W comme valeur absolue de E₄"
         },
         {
           "id": "b",
-          "text": "Dans le calcul de l'écart W en eV"
+          "text": "Dans le calcul des énergies E₂ et E₄ à partir de n"
         },
         {
           "id": "c",
-          "text": "Dans le passage de W en joules"
+          "text": "Dans le passage de W en joules avec le facteur 1,6×10⁻¹⁹"
         },
         {
           "id": "d",
-          "text": "Dans le calcul de λ à partir de W"
+          "text": "Dans le calcul de λ à partir de W par la formule h·c/W"
         }
       ],
-      "correctOption": "c",
-      "explanation": "Les niveaux E₁ = −13,6 eV et E₃ = −1,51 eV sont justes, et l'écart W = 12,09 eV aussi. L'erreur est dans le passage aux joules : pour convertir des eV en J, on multiplie par 1,6×10⁻¹⁹, soit W = 12,09 × 1,6×10⁻¹⁹ = 1,93×10⁻¹⁸ J ✓. La formule λ = h·c/W est correcte, et donne alors λ = 1,986×10⁻²⁵ / 1,93×10⁻¹⁸ ≈ 1,03×10⁻⁷ m, soit environ 103 nm, une radiation ultraviolette. Diviser par 1,6×10⁻¹⁹ au lieu de multiplier rend l'énergie 10³⁷ fois trop grande.",
+      "correctOption": "a",
+      "explanation": "Les niveaux E₂ = −3,40 eV et E₄ = −0,85 eV sont justes, la conversion 0,85 eV = 1,36×10⁻¹⁹ J et le calcul de λ aussi. L'erreur est dans le choix de W : l'énergie du photon est l'écart entre les deux niveaux, W = E₄ − E₂ = −0,85 − (−3,40) = 2,55 eV, non l'énergie du seul niveau E₄ ✓. Avec W = 2,55 eV = 4,08×10⁻¹⁹ J, on obtient λ = 1,986×10⁻²⁵ / 4,08×10⁻¹⁹ ≈ 4,87×10⁻⁷ m = 487 nm, la raie bleue attendue.",
       "difficulty": 2
     },
     {
-      "prompt": "Un atome d'hydrogène dans le niveau n = 4 absorbe un photon de fréquence 1,38×10¹⁴ Hz (domaine infrarouge) et passe au niveau p. Quelle est la valeur de p ? (E₀ = 13,6 eV ; h = 6,62×10⁻³⁴ J·s ; 1 eV = 1,6×10⁻¹⁹ J)",
-      "explanation": "W = h·ν = 6,62×10⁻³⁴ × 1,38×10¹⁴ = 9,14×10⁻²⁰ J, soit 9,14×10⁻²⁰ / 1,6×10⁻¹⁹ = 0,571 eV. L'énergie finale est E_p = E₄ + W = −0,85 + 0,571 = −0,279 eV. Comme E_p = −13,6/p², on obtient p² = 13,6/0,279 ≈ 48,7, donc p ≈ 6,98, soit p = 7 ✓. Le niveau d'arrivée est un entier : on arrondit 6,98 à 7.",
+      "prompt": "En absorbant un photon de fréquence 7,40×10¹³ Hz, un atome d'hydrogène passe d'un niveau n au niveau n + 1. Quelle est la valeur de n ? (E₀ = 13,6 eV ; h = 6,62×10⁻³⁴ J·s ; 1 eV = 1,6×10⁻¹⁹ J)",
+      "explanation": "W = h·ν = 6,62×10⁻³⁴ × 7,40×10¹³ = 4,90×10⁻²⁰ J, soit 4,90×10⁻²⁰ / 1,6×10⁻¹⁹ = 0,306 eV. On cherche n tel que E_{n+1} − Eₙ = 0,306 eV. Pour n = 3 l'écart vaut 1,51 − 0,85 = 0,66 eV ; pour n = 4 il vaut 0,85 − 0,54 = 0,31 eV ; pour n = 5 il vaut 0,54 − 0,38 = 0,17 eV. Seul n = 4 convient ✓ : l'atome passe de n = 4 à n = 5. Les écarts diminuent quand n augmente, donc un seul entier convient.",
       "difficulty": 3,
       "type": "numeric",
       "answerKey": {
-        "value": 7
+        "value": 4
       }
     },
     {
-      "prompt": "Des atomes d'hydrogène sont tous portés au niveau n = 5, puis se désexcitent en passant par tous les chemins possibles, directement ou par des niveaux intermédiaires. Combien de raies d'émission distinctes situées dans le visible (de 400 nm à 800 nm) peut-on observer au maximum ? (E₀ = 13,6 eV ; h·c = 1,99×10⁻²⁵ J·m ; 1 eV = 1,6×10⁻¹⁹ J)",
-      "explanation": "Les dix transitions possibles sont 5 → 4 (4056 nm, infrarouge), 5 → 3 (1283 nm, infrarouge), 5 → 2 (435 nm, visible), 5 → 1 (95 nm, ultraviolet), 4 → 3 (1878 nm, infrarouge), 4 → 2 (487 nm, visible), 4 → 1 (97 nm, ultraviolet), 3 → 2 (657 nm, visible), 3 → 1 (103 nm, ultraviolet) et 2 → 1 (122 nm, ultraviolet). Seules 5 → 2, 4 → 2 et 3 → 2 tombent entre 400 nm et 800 nm : on observe 3 raies visibles ✓. Compter les dix transitions sans vérifier leur domaine donnerait 10.",
+      "prompt": "Des atomes d'hydrogène, tous portés au même niveau, émettent en se désexcitant 10 raies distinctes au plus. Combien de ces raies sont dans l'ultraviolet (longueur d'onde inférieure à 400 nm) ? (E₀ = 13,6 eV ; h = 6,62×10⁻³⁴ J·s ; c = 3,00×10⁸ m/s ; 1 eV = 1,6×10⁻¹⁹ J)",
+      "explanation": "Des atomes portés au niveau n peuvent émettre au plus n(n − 1)/2 raies distinctes : 10 raies correspondent à n = 5 : 10 raies correspondent à n = 5. Les dix transitions sont 5 → 4, 5 → 3, 5 → 2, 5 → 1, 4 → 3, 4 → 2, 4 → 1, 3 → 2, 3 → 1 et 2 → 1. Les transitions qui aboutissent à n = 1 libèrent au moins 10,2 eV : 122 nm (2 → 1), 103 nm (3 → 1), 97 nm (4 → 1) et 95 nm (5 → 1), toutes sous 400 nm. La transition 5 → 2 donne 435 nm (visible) et les autres sont dans le visible ou l'infrarouge. On compte 4 raies ultraviolettes ✓.",
       "difficulty": 3,
       "type": "numeric",
       "answerKey": {
-        "value": 3
+        "value": 4
       }
     },
     {
-      "prompt": "Des électrons d'énergie cinétique 12,9 eV bombardent des atomes d'hydrogène dans leur état fondamental. Un électron peut céder à un atome l'écart entre deux niveaux, à condition que cet écart ne dépasse pas son énergie cinétique. Quel est le niveau le plus élevé que peut atteindre un atome ?",
+      "prompt": "Des électrons bombardent des atomes d'hydrogène dans leur état fondamental. En un seul choc, un électron cède à un atome l'écart entre le fondamental et un niveau excité. Quelle énergie cinétique minimale doivent avoir les électrons pour qu'on puisse observer la raie Hβ (transition de n = 4 à n = 2) ? (E₀ = 13,6 eV)",
       "options": [
         {
           "id": "a",
-          "text": "n = 3"
+          "text": "2,55 eV"
         },
         {
           "id": "b",
-          "text": "n = 4"
+          "text": "12,09 eV"
         },
         {
           "id": "c",
-          "text": "n = 5"
+          "text": "12,75 eV"
         },
         {
           "id": "d",
-          "text": "n → ∞ (atome ionisé)"
+          "text": "13,6 eV"
         }
       ],
-      "correctOption": "b",
-      "explanation": "Depuis n = 1, les écarts sont 10,2 eV (vers n = 2), 12,09 eV (vers n = 3), 12,75 eV (vers n = 4), 13,06 eV (vers n = 5) et 13,6 eV (ionisation). Comme 12,75 eV ≤ 12,9 eV < 13,06 eV, l'électron peut amener l'atome au niveau n = 4 mais pas au niveau n = 5 ✓. Le niveau n = 3 n'est pas le plus élevé accessible. Le niveau n = 5 demande 13,06 eV, un peu plus que les 12,9 eV disponibles. L'ionisation demande 13,6 eV.",
+      "correctOption": "c",
+      "explanation": "Pour émettre Hβ, l'atome doit d'abord être au niveau n = 4. Depuis le fondamental, il faut lui fournir E₄ − E₁ = −0,85 − (−13,6) = 12,75 eV, donc l'électron doit avoir au moins 12,75 eV ✓. Le nombre 2,55 eV est l'énergie du photon Hβ, non l'énergie nécessaire pour atteindre n = 4. Le nombre 12,09 eV amène l'atome seulement à n = 3. Le nombre 13,6 eV est l'énergie d'ionisation, plus que nécessaire.",
       "difficulty": 3
     }
   ]

@@ -1,0 +1,152 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les secrets de la décroissance",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur les réactions nucléaires sont justes ? (plusieurs réponses possibles)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un noyau fissile comme ²³⁵U se scinde de lui-même, sans qu'un neutron le frappe"
+        },
+        {
+          "id": "b",
+          "text": "Un noyau fils formé par désintégration β⁻ a le même nombre de masse que son noyau père"
+        },
+        {
+          "id": "c",
+          "text": "Pour la fission d'un noyau ᴬ_Z X frappé par un neutron, la somme des nombres de masse des fragments et des neutrons émis vaut A + 1"
+        },
+        {
+          "id": "d",
+          "text": "Une simple feuille de papier suffit à arrêter presque tout le rayonnement γ"
+        },
+        {
+          "id": "e",
+          "text": "La fusion de deux noyaux légers exige une température de 10⁷ à 10⁸ K pour vaincre leur répulsion électrique"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Une désintégration β⁻ ajoute 1 à Z et laisse A inchangé ✓. Le bilan de la fission compte le neutron incident, donc A + 1 ✓. Deux noyaux positifs se repoussent : la fusion exige 10⁷ à 10⁸ K ✓. Un noyau fissile ne se scinde pas sans neutron : la fission est provoquée, ce n'est pas une radioactivité spontanée. Le rayonnement γ est le plus pénétrant : il traverse plusieurs centimètres de plomb, bien plus qu'une feuille de papier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un noyau X subit successivement une désintégration α puis deux désintégrations β⁻ et donne l'uranium ²³⁴₉₂U. Quel est le noyau X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "²³⁸₉₀Th"
+        },
+        {
+          "id": "b",
+          "text": "²³⁸₉₂U"
+        },
+        {
+          "id": "c",
+          "text": "²³⁴₉₀Th"
+        },
+        {
+          "id": "d",
+          "text": "²³⁸₉₄Pu"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En remontant : A = 234 + 4 = 238, car l'α a retiré 4 nucléons et les β⁻ n'en changent pas. Charge : 92 = Z_X − 2 + 1 + 1 donc Z_X = 92, soit ²³⁸₉₂U ✓ (contrôle : ²³⁸₉₂U → α → ²³⁴₉₀Th → β⁻ → ²³⁴₉₁Pa → β⁻ → ²³⁴₉₂U). ²³⁸₉₀Th oublie que l'α a retiré 2 protons (92 − 2). ²³⁸₉₄Pu oublie l'effet des deux β⁻ (92 + 2). ²³⁴₉₀Th est le noyau obtenu juste après l'α, d'où partent les deux β⁻ : c'est un intermédiaire, pas le noyau de départ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un radioélément a pour constante radioactive λ = 5,0 × 10⁻³ min⁻¹. Au bout de combien de temps son activité est-elle réduite à 10 % de sa valeur initiale ? (ln 2 = 0,693 ; ln 10 = 2,303)",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,4 × 10² min"
+        },
+        {
+          "id": "b",
+          "text": "2,0 × 10¹ min"
+        },
+        {
+          "id": "c",
+          "text": "4,6 × 10² min"
+        },
+        {
+          "id": "d",
+          "text": "2,0 × 10³ min"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "A/A₀ = 0,10 = e^(−λt) donne t = ln 10 / λ = 2,303 / 5,0 × 10⁻³ = 4,6 × 10² min ✓. Contrôle : la période est T = 0,693 / 5,0 × 10⁻³ = 139 min, et 10 % est compris entre 1/8 (3T = 416 min) et 1/16 (4T = 555 min). 1,4 × 10² min est la période ln 2 / λ, qui correspond à 50 %. 2,0 × 10¹ min calcule 0,10 / λ. 2,0 × 10³ min calcule 10 / λ.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le radium 226 a pour période T = 1600 ans. Quelle est l'activité de 1,00 g de radium 226, en 10¹⁰ Bq ? (M = 226 g·mol⁻¹ ; 𝒩 = 6,02 × 10²³ mol⁻¹ ; 1 an = 3,15 × 10⁷ s ; ln 2 = 0,693)",
+      "answerKey": {
+        "value": 3.66,
+        "tolerance": 0.03,
+        "unit": "10¹⁰ Bq"
+      },
+      "explanation": "T = 1600 × 3,15 × 10⁷ = 5,04 × 10¹⁰ s, donc λ = ln 2 / T = 0,693 / 5,04 × 10¹⁰ = 1,375 × 10⁻¹¹ s⁻¹. Le nombre de noyaux est N = (1,00 / 226) × 6,02 × 10²³ = 2,66 × 10²¹. D'où A = λ·N = 1,375 × 10⁻¹¹ × 2,66 × 10²¹ = 3,66 × 10¹⁰ Bq ✓ (des s⁻¹ multipliés par des noyaux donnent des Bq), soit 3,66 en unité de 10¹⁰ Bq.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fusion ⁶₃Li + ²₁H → 2 ⁴₂He libère 22,4 MeV ; la fission d'un noyau d'uranium 233 frappé par un neutron libère 196 MeV. Quelle masse d'uranium 233 faut-il fissionner pour libérer autant d'énergie que la fusion complète de 1,0 g d'un mélange de noyaux ⁶Li et ²H en nombres égaux ? (masse molaire d'une paire ⁶Li + ²H : 8,0 g·mol⁻¹ ; M(²³³U) = 233 g·mol⁻¹)",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,11 g"
+        },
+        {
+          "id": "b",
+          "text": "8,8 g"
+        },
+        {
+          "id": "c",
+          "text": "0,30 g"
+        },
+        {
+          "id": "d",
+          "text": "3,3 g"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "1,0 g contient 1,0/8,0 = 0,125 mol de paires, qui libèrent 0,125 × 22,4 = 2,80 MeV par 𝒩 de paires ; chaque noyau d'uranium libérant 196 MeV, il faut 2,80/196 = 1,43 × 10⁻² mol d'uranium 233, soit 1,43 × 10⁻² × 233 = 3,3 g ✓. 0,30 g inverse le rapport. 0,11 g compare par noyau (22,4/196) en ignorant les masses molaires. 8,8 g est 196/22,4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Deux échantillons X et Y ont la même activité initiale A₀. La période de X est de 4,0 h, celle de Y de 12 h. Quel est le rapport N_X/N_Y de leurs nombres de noyaux radioactifs à t = 12 h ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,083"
+        },
+        {
+          "id": "b",
+          "text": "0,250"
+        },
+        {
+          "id": "c",
+          "text": "0,333"
+        },
+        {
+          "id": "d",
+          "text": "0,750"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme A = λ·N, à t = 0 on a N = A₀/λ, donc N_X/N_Y = λ_Y/λ_X = T_X/T_Y = 4,0 / 12 = 1/3. À t = 12 h, X a subi 3 périodes (facteur 1/8) et Y une seule (facteur 1/2) : N_X/N_Y = 1/3 × (1/8) / (1/2) = 1/3 × 1/4 = 1/12 = 0,083 ✓. Le rapport 0,333 (1/3) est celui de l'instant initial, sans la décroissance. Le rapport 0,250 (1/4) ne garde que les facteurs de décroissance et oublie le rapport initial. Le rapport 0,750 (3/4) inverse le rapport des périodes (3 × 1/4).",
+      "difficulty": 3
+    }
+  ]
+}

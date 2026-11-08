@@ -1,0 +1,10 @@
+# 📜 Résumé : Le noyau atomique
+
+- **Noyau et isotopes** : le noyau ᴬ_Z X contient Z protons et N = A − Z neutrons (A = nombre de nucléons) ; des isotopes ont le même Z et des A différents. Le rayon du noyau (de l'ordre de 10⁻¹⁵ m) est environ 10⁵ fois plus petit que celui de l'atome, et A compte tous les nucléons, pas seulement les neutrons.
+- **Interaction forte** : force attractive de très courte portée (de l'ordre du fermi) entre tous les nucléons, protons ou neutrons ; à courte distance, environ 100 fois plus intense que la répulsion électrique entre protons, elle assure la cohésion du noyau.
+- **Défaut de masse** : 1 u = 1,66 × 10⁻²⁷ kg est le douzième de la masse d'un atome de carbone 12 ; Δm = Z·m_p + (A − Z)·m_n − m_X (nucléons séparés moins noyau) est positif dès que le noyau a plusieurs nucléons, et nul pour un proton seul.
+- **Relation d'Einstein** : une particule au repos a l'énergie de masse E₀ = m·c², et ΔE = Δm·c² ; 1 u = 931,5 MeV·c⁻², donc E (MeV) = m (u) × 931,5 ; avec m en kg et c en m/s, E est en joules (1 MeV = 1,60 × 10⁻¹³ J).
+- **Énergie de liaison** : E_ℓ = Δm·c² est l'énergie à fournir au noyau au repos pour le dissocier en nucléons isolés et au repos (E_ℓ = Z·E_p + (A − Z)·E_n − E_X) ; ce n'est pas son énergie de masse m_X·c².
+- **Énergie par nucléon** : E_ℓ/A = Δm·c² / A ; plus elle est grande, plus le noyau est stable ; deux noyaux de A différents se comparent avec E_ℓ/A et non avec E_ℓ (le fer 56 est plus stable que le plomb 208 malgré une E_ℓ trois fois plus petite).
+- **Courbe d'Aston** : E_ℓ/A en fonction de A passe par un maximum vers A ≈ 60 (fer 56) ; les noyaux voisins ont 7,8 MeV < E_ℓ/A < 8,8 MeV (de l'ordre de 8 MeV) ; les noyaux légers (A < 20) et lourds (A > 190) sont moins liés ; la stabilité se lit sur la hauteur de la courbe, pas sur A.
+- **Noyaux stables (N, Z)** : pour Z ≤ 20 environ, N est voisin de Z ; pour Z > 20, un noyau stable a N > Z avec un excès croissant (¹²⁰Sn : N = 70, ²⁰⁸Pb : N = 126) parce que la répulsion électrique agit à longue portée ; aucun noyau stable au-delà de Z = 83.

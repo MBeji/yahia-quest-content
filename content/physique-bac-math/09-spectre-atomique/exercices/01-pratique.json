@@ -31,12 +31,12 @@
       "difficulty": 1
     },
     {
-      "prompt": "Un photon a pour énergie W = 5,6×10⁻¹⁹ J. Exprimer cette énergie en électron-volt (1 eV = 1,6×10⁻¹⁹ J).",
-      "explanation": "W = 5,6×10⁻¹⁹ / 1,6×10⁻¹⁹ = 3,5 eV ✓. Pour passer des joules aux électron-volts, on divise par 1,6×10⁻¹⁹ ; multiplier donnerait 9,0×10⁻³⁸, un nombre absurde pour une énergie en eV.",
+      "prompt": "Ioniser un atome de sodium demande une énergie de 8,24×10⁻¹⁹ J. Exprimer cette énergie en électron-volt (1 eV = 1,6×10⁻¹⁹ J).",
+      "explanation": "W = 8,24×10⁻¹⁹ / 1,6×10⁻¹⁹ = 5,15 eV ✓. Pour passer des joules aux électron-volts, on divise par 1,6×10⁻¹⁹ ; multiplier donnerait 1,3×10⁻³⁷, un nombre absurde pour une énergie en eV.",
       "difficulty": 1,
       "type": "numeric",
       "answerKey": {
-        "value": 3.5,
+        "value": 5.15,
         "tolerance": 0.05,
         "unit": "eV"
       }
@@ -66,36 +66,36 @@
       "difficulty": 1
     },
     {
-      "prompt": "Le spectre d'une étoile montre, sur un fond continu, des raies noires à 410 nm, 434 nm et 502 nm. Les raies d'émission principales sont : hydrogène 410, 434, 486, 656 nm ; hélium 447, 502, 588, 668 nm ; sodium 569, 589, 616 nm. Quels éléments la couche superficielle de l'étoile contient-elle ?",
+      "prompt": "On cherche de l'hélium dans une étoile. Les raies d'émission de l'hélium sont à 447, 502, 588 et 668 nm. Quelle observation du spectre de l'étoile prouve sa présence ?",
       "options": [
         {
           "id": "a",
-          "text": "De l'hydrogène et du sodium"
+          "text": "Une raie noire à 502 nm sur le fond continu"
         },
         {
           "id": "b",
-          "text": "De l'hélium et du sodium"
+          "text": "Une raie noire à 486 nm sur le fond continu"
         },
         {
           "id": "c",
-          "text": "De l'hydrogène, de l'hélium et du sodium"
+          "text": "L'absence de lumière au-delà de 668 nm"
         },
         {
           "id": "d",
-          "text": "De l'hydrogène et de l'hélium"
+          "text": "Un fond continu qui s'étend jusqu'au violet"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Les raies noires d'absorption sont aux positions des raies d'émission du même élément. 410 nm et 434 nm sont des raies de l'hydrogène ; 502 nm est une raie de l'hélium ✓. Aucune des trois raies n'appartient au sodium, dont les raies sont 569, 589 et 616 nm : le sodium n'est donc révélé par rien. L'hydrogène seul n'explique pas la raie à 502 nm, et l'hélium seul n'explique ni 410 nm ni 434 nm.",
+      "correctOption": "a",
+      "explanation": "Les raies noires d'absorption se trouvent aux positions des raies d'émission du même élément : une raie noire à 502 nm est une raie de l'hélium ✓. Une raie noire à 486 nm n'appartient à aucune des quatre raies de l'hélium. L'absence de lumière au-delà de 668 nm ne dessine pas une raie fine : elle ne désigne aucun élément. L'étendue du fond continu renseigne sur la température de l'étoile, non sur sa composition.",
       "difficulty": 2
     },
     {
-      "prompt": "Une radiation lumineuse a pour longueur d'onde λ = 450 nm dans le vide. Calculer l'énergie d'un de ses photons, en eV, arrondie au centième (h = 6,62×10⁻³⁴ J·s ; c = 3,00×10⁸ m/s ; 1 eV = 1,6×10⁻¹⁹ J).",
-      "explanation": "λ = 450 nm = 4,50×10⁻⁷ m. W = h·c/λ = 6,62×10⁻³⁴ × 3,00×10⁸ / 4,50×10⁻⁷ = 4,41×10⁻¹⁹ J, soit 4,41×10⁻¹⁹ / 1,6×10⁻¹⁹ = 2,76 eV ✓, une valeur comprise entre 1,55 eV et 3,10 eV, comme il se doit pour une radiation visible. Oublier de convertir les nanomètres en mètres donnerait une énergie 10⁹ fois trop grande ; oublier de passer des joules aux électron-volts laisserait 4,41×10⁻¹⁹.",
+      "prompt": "Une radiation lumineuse a pour fréquence ν = 7,0×10¹⁴ Hz. Calculer l'énergie d'un de ses photons, en eV, arrondie au centième (h = 6,62×10⁻³⁴ J·s ; 1 eV = 1,6×10⁻¹⁹ J).",
+      "explanation": "W = h·ν = 6,62×10⁻³⁴ × 7,0×10¹⁴ = 4,63×10⁻¹⁹ J, soit 4,63×10⁻¹⁹ / 1,6×10⁻¹⁹ = 2,90 eV (2,9 eV) ✓, une valeur comprise entre 1,55 eV et 3,10 eV, comme il se doit pour une radiation visible. Oublier de passer des joules aux électron-volts laisserait 4,63×10⁻¹⁹.",
       "difficulty": 2,
       "type": "numeric",
       "answerKey": {
-        "value": 2.76,
+        "value": 2.9,
         "tolerance": 0.02,
         "unit": "eV"
       }

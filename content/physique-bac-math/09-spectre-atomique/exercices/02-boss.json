@@ -55,18 +55,31 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un atome d'hydrogène passe du niveau n = 6 au niveau n = 3. Calculer en nm la longueur d'onde du photon émis, arrondie à l'unité (E₀ = 13,6 eV ; h = 6,62×10⁻³⁴ J·s ; c = 3,00×10⁸ m/s ; 1 eV = 1,6×10⁻¹⁹ J).",
-      "explanation": "W = E₀·(1/3² − 1/6²) = 13,6 × (1/9 − 1/36) = 13,6 × 3/36 = 1,133 eV, soit 1,133 × 1,6×10⁻¹⁹ = 1,813×10⁻¹⁹ J. Alors λ = h·c/W = 1,986×10⁻²⁵ / 1,813×10⁻¹⁹ = 1,095×10⁻⁶ m = 1095 nm ✓, une radiation infrarouge (au-delà de 800 nm). Oublier de convertir les eV en joules, ou prendre l'énergie du niveau n = 3 comme énergie du photon (1,51 eV, soit 821 nm), donnerait un résultat faux.",
-      "difficulty": 3,
-      "type": "numeric",
-      "answerKey": {
-        "value": 1095,
-        "tolerance": 10,
-        "unit": "nm"
-      }
+      "prompt": "Parmi ces transitions de l'atome d'hydrogène, laquelle émet une radiation de longueur d'onde voisine de 1,09 µm ? (h = 6,62×10⁻³⁴ J·s ; c = 3,00×10⁸ m/s ; 1 eV = 1,6×10⁻¹⁹ J ; E₀ = 13,6 eV)",
+      "options": [
+        {
+          "id": "a",
+          "text": "De n = 7 à n = 3"
+        },
+        {
+          "id": "b",
+          "text": "De n = 5 à n = 3"
+        },
+        {
+          "id": "c",
+          "text": "De n = 6 à n = 3"
+        },
+        {
+          "id": "d",
+          "text": "De n = 6 à n = 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour la transition de n = 6 à n = 3, W = 13,6 × (1/9 − 1/36) = 1,133 eV = 1,813×10⁻¹⁹ J, donc λ = h·c/W = 1,986×10⁻²⁵ / 1,813×10⁻¹⁹ ≈ 1,095×10⁻⁶ m ✓. De n = 7 à n = 3, W = 1,234 eV et λ ≈ 1006 nm. De n = 5 à n = 3, W = 0,967 eV et λ ≈ 1283 nm. De n = 6 à n = 4, W = 0,472 eV et λ ≈ 2627 nm. Seule la première transition donne 1,09 µm.",
+      "difficulty": 3
     },
     {
-      "prompt": "Un atome a pour niveaux E₁ = −12,0 eV ; E₂ = −6,0 eV ; E₃ = −3,5 eV ; E₄ = −2,0 eV. Parmi ces désexcitations, laquelle émet la radiation de plus grande longueur d'onde ?",
+      "prompt": "Un atome a pour niveaux E₁ = −12,0 eV ; E₂ = −6,0 eV ; E₃ = −3,5 eV ; E₄ = −2,0 eV. Des atomes portés au niveau E₄ se désexcitent. Parmi ces raies, laquelle est visible (de 400 nm à 800 nm) ? (h = 6,62×10⁻³⁴ J·s ; c = 3,00×10⁸ m/s ; 1 eV = 1,6×10⁻¹⁹ J)",
       "options": [
         {
           "id": "a",
@@ -74,7 +87,7 @@
         },
         {
           "id": "b",
-          "text": "E₃ → E₁"
+          "text": "E₄ → E₃"
         },
         {
           "id": "c",
@@ -82,35 +95,35 @@
         },
         {
           "id": "d",
-          "text": "E₄ → E₃"
+          "text": "E₃ → E₂"
         }
       ],
       "correctOption": "d",
-      "explanation": "Comme λ = h·c/W, la plus grande longueur d'onde correspond au photon le moins énergétique, donc au plus petit écart. Les écarts valent : E₂ → E₁ : 6,0 eV ; E₃ → E₁ : 8,5 eV ; E₄ → E₂ : 4,0 eV ; E₄ → E₃ : −2,0 − (−3,5) = 1,5 eV. Le plus petit est 1,5 eV, soit λ ≈ 828 nm ✓. Le plus grand écart, 8,5 eV, donne au contraire la plus petite longueur d'onde (146 nm). Les sauts de 6,0 eV et de 4,0 eV donnent 207 nm et 310 nm : ni l'un ni l'autre n'est le plus petit écart.",
+      "explanation": "L'écart E₃ − E₂ = −3,5 − (−6,0) = 2,5 eV = 4,0×10⁻¹⁹ J donne λ = h·c/W = 1,986×10⁻²⁵ / 4,0×10⁻¹⁹ ≈ 497 nm : visible ✓. E₂ → E₁ : 6,0 eV, soit 207 nm (ultraviolet). E₄ → E₃ : 1,5 eV, soit 828 nm (juste au-delà du visible, infrarouge). E₄ → E₂ : 4,0 eV, soit 310 nm (ultraviolet).",
       "difficulty": 3
     },
     {
-      "prompt": "Un photon de 1,13 eV rencontre un atome d'hydrogène qui se trouve dans le niveau n = 3. Quel est son sort ?",
+      "prompt": "Un photon de 0,97 eV traverse de l'hydrogène dont les atomes sont aux niveaux n = 2, n = 3 ou n = 4. Lesquels peuvent l'absorber ? (E₀ = 13,6 eV)",
       "options": [
         {
           "id": "a",
-          "text": "Absorbé : l'atome gagne le niveau n = 6"
+          "text": "Seulement ceux en n = 3, par la transition de n = 3 à n = 5"
         },
         {
           "id": "b",
-          "text": "Absorbé : l'atome gagne le niveau n = 5"
+          "text": "Seulement ceux en n = 4, qui se trouvent proches de l'ionisation"
         },
         {
           "id": "c",
-          "text": "Absorbé : l'atome gagne le niveau n = 4"
+          "text": "Aucun, car 0,97 eV ne correspond à aucun écart exact depuis ces niveaux"
         },
         {
           "id": "d",
-          "text": "Non absorbé : le photon est diffusé tel quel"
+          "text": "Ceux en n = 3 (vers n = 5) et ceux en n = 4 (ionisés)"
         }
       ],
-      "correctOption": "a",
-      "explanation": "L'énergie de l'atome est E₃ = −1,51 eV. Après absorption : −1,51 + 1,13 = −0,38 eV, ce qui est exactement E₆ = −13,6/36 ✓ : le photon est absorbé et l'atome passe à n = 6. Le passage à n = 5 demanderait 0,97 eV (E₅ = −0,54 eV) et celui à n = 4 demanderait 0,66 eV (E₄ = −0,85 eV). La diffusion ne se produirait que si 1,13 eV ne correspondait à aucun écart, ce qui n'est pas le cas.",
+      "correctOption": "d",
+      "explanation": "Depuis n = 3, l'écart vers n = 5 vaut 13,6 × (1/9 − 1/25) = 0,967 eV ≈ 0,97 eV : le photon est absorbé. Depuis n = 4, l'ionisation demande 0,85 eV ; le photon, qui dépasse cette valeur, est absorbé, et l'électron éjecté emporte 0,97 − 0,85 = 0,12 eV ✓. Depuis n = 2, il faudrait au moins 3,40 eV (ionisation) ou 1,89 eV (vers n = 3) : le photon n'est pas absorbé. Les trois autres réponses oublient soit l'ionisation depuis n = 4, soit la transition de n = 3 à n = 5.",
       "difficulty": 3
     },
     {

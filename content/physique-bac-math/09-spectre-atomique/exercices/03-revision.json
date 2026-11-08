@@ -55,62 +55,61 @@
       "difficulty": 1
     },
     {
-      "prompt": "Dans un modèle planétaire de l'atome d'hydrogène, on prend une distance noyau–électron r = 4,0×10⁻¹¹ m (valeur choisie pour l'exercice). Quelle est la valeur de la force coulombienne F = k·e²/r² qui s'exerce entre eux ? (k = 9×10⁹ N·m²·C⁻² ; e = 1,6×10⁻¹⁹ C)",
+      "prompt": "Dans un modèle planétaire de l'atome, la force coulombienne entre le noyau et l'électron vaut F = 3,6×10⁻⁸ N (valeur choisie pour l'exercice). Quelle est la distance r qui les sépare ? (F = k·e²/r² ; k = 9×10⁹ N·m²·C⁻² ; e = 1,6×10⁻¹⁹ C)",
       "options": [
         {
           "id": "a",
-          "text": "5,8×10⁻¹⁸ N"
+          "text": "6,4×10⁻²¹ m"
         },
         {
           "id": "b",
-          "text": "1,4×10⁻⁷ N"
+          "text": "8,0×10⁻¹¹ m"
         },
         {
           "id": "c",
-          "text": "2,3×10⁻⁶ N"
+          "text": "2,5×10⁻¹¹ m"
         },
         {
           "id": "d",
-          "text": "9,0×10¹¹ N"
+          "text": "0,20 m"
         }
       ],
       "correctOption": "b",
-      "explanation": "F = 9×10⁹ × (1,6×10⁻¹⁹)² / (4,0×10⁻¹¹)² = 9×10⁹ × 2,56×10⁻³⁸ / 1,6×10⁻²¹ = 1,4×10⁻⁷ N ✓. Le résultat 5,8×10⁻¹⁸ N oublie d'élever r au carré. Le résultat 2,3×10⁻⁶ N élève au carré seulement 10⁻¹¹ et oublie le facteur 4,0. Le résultat 9,0×10¹¹ N oublie d'élever e au carré.",
+      "explanation": "r² = k·e²/F = 9×10⁹ × (1,6×10⁻¹⁹)² / 3,6×10⁻⁸ = 2,304×10⁻²⁸ / 3,6×10⁻⁸ = 6,4×10⁻²¹ m². On écrit 6,4×10⁻²¹ = 64×10⁻²² pour extraire la racine : r = 8,0×10⁻¹¹ m ✓. Le résultat 6,4×10⁻²¹ m est r², la racine carrée est oubliée. Le résultat 2,5×10⁻¹¹ m prend la racine de 6,4 sans réécrire la puissance de 10 en exposant pair. Le résultat 0,20 m oublie d'élever e au carré.",
       "difficulty": 2
     },
     {
-      "prompt": "Calculer en eV l'énergie qu'un atome d'hydrogène doit absorber pour passer du niveau n = 2 au niveau n = 6 (E₀ = 13,6 eV).",
-      "explanation": "ΔE = E₆ − E₂ = −0,38 − (−3,40) = 3,02 eV, soit E₀·(1/2² − 1/6²) = 13,6 × (1/4 − 1/36) = 13,6 × 8/36 = 3,02 eV ✓. Le calcul avec E₆ seul, 0,38 eV, donnerait l'énergie d'un niveau et non l'écart entre deux niveaux.",
+      "prompt": "Calculer le rapport λ(3→2)/λ(4→2) des longueurs d'onde des raies Hα (transition de n = 3 à n = 2) et Hβ (transition de n = 4 à n = 2) de l'atome d'hydrogène (E₀ = 13,6 eV).",
+      "explanation": "Comme λ = h·c/W, le rapport des longueurs d'onde est l'inverse du rapport des énergies : λ(3→2)/λ(4→2) = W(4→2)/W(3→2). W(3→2) = 13,6 × (1/4 − 1/9) = 1,889 eV et W(4→2) = 13,6 × (1/4 − 1/16) = 2,55 eV. Le rapport vaut 2,55 / 1,889 = 1,35 ✓, ce qui est cohérent avec Hα rouge (657 nm) et Hβ bleue (487 nm). Calculer W(3→2)/W(4→2) = 0,74 inverserait le rapport.",
       "difficulty": 2,
       "type": "numeric",
       "answerKey": {
-        "value": 3.02,
-        "tolerance": 0.03,
-        "unit": "eV"
+        "value": 1.35,
+        "tolerance": 0.01
       }
     },
     {
-      "prompt": "Un atome passe d'un niveau d'énergie −2,8 eV à un niveau d'énergie −6,3 eV en émettant un photon. Quelle est la fréquence de ce photon ? (h = 6,62×10⁻³⁴ J·s ; 1 eV = 1,6×10⁻¹⁹ J)",
+      "prompt": "Un atome émet un photon de fréquence 6,0×10¹⁴ Hz en arrivant sur le niveau d'énergie −5,4 eV. Quelle était l'énergie du niveau de départ ? (h = 6,62×10⁻³⁴ J·s ; 1 eV = 1,6×10⁻¹⁹ J)",
       "options": [
         {
           "id": "a",
-          "text": "1,2×10⁻¹⁵ Hz"
+          "text": "−7,9 eV"
         },
         {
           "id": "b",
-          "text": "8,5×10¹⁴ Hz"
+          "text": "−2,5 eV"
         },
         {
           "id": "c",
-          "text": "2,2×10¹⁵ Hz"
+          "text": "−2,9 eV"
         },
         {
           "id": "d",
-          "text": "5,3×10³³ Hz"
+          "text": "−1,4 eV"
         }
       ],
-      "correctOption": "b",
-      "explanation": "L'écart est |−6,3 − (−2,8)| = 3,5 eV, soit 3,5 × 1,6×10⁻¹⁹ = 5,6×10⁻¹⁹ J. Alors ν = W/h = 5,6×10⁻¹⁹ / 6,62×10⁻³⁴ = 8,5×10¹⁴ Hz ✓. Le résultat 1,2×10⁻¹⁵ inverse le quotient (h/W). Le résultat 2,2×10¹⁵ additionne les valeurs 2,8 et 6,3 au lieu de les soustraire. Le résultat 5,3×10³³ oublie la conversion en joules.",
+      "correctOption": "c",
+      "explanation": "W = h·ν = 6,62×10⁻³⁴ × 6,0×10¹⁴ = 3,97×10⁻¹⁹ J = 2,48 eV. L'atome a perdu W en émettant : E_départ = E_arrivée + W = −5,4 + 2,48 = −2,9 eV ✓. Le résultat −7,9 eV soustrait W au lieu de l'ajouter, ce qui place le départ sous le niveau d'arrivée. Le résultat −2,5 eV prend W pour l'énergie d'un niveau (−2,48 eV) au lieu de l'ajouter à −5,4 eV. Le résultat −1,4 eV lit 3,97 comme des eV, sans diviser par 1,6×10⁻¹⁹.",
       "difficulty": 2
     },
     {
