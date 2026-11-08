@@ -1,0 +1,152 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le temps, l'énergie et les courbes RC",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Dans la charge d'un dipôle RC alimenté par E = 15 V, la charge finale du condensateur vaut 90 µC et l'intensité initiale 2,0 mA. Quelle est la constante de temps τ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "22 s"
+        },
+        {
+          "id": "b",
+          "text": "0,68 s"
+        },
+        {
+          "id": "c",
+          "text": "45 ms"
+        },
+        {
+          "id": "d",
+          "text": "45 µs"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Q₀ = C·E donne C = 90 µC / 15 V = 6,0 µF ; I₀ = E/R donne R = 15 V / 2,0·10⁻³ A = 7,5 kΩ ; τ = R·C = 7,5·10³ × 6,0·10⁻⁶ = 4,5·10⁻² s = 45 ms ✓ (raccourci : τ = Q₀/I₀). La valeur 45 µs oublie de convertir les mA en A ; 22 s inverse le rapport, I₀/Q₀ au lieu de Q₀/I₀ ; 0,68 s prend Q₀ = 90 µC pour la capacité en µF.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un condensateur de capacité 5,0 µF, chargé sous une tension E inconnue, se décharge dans un résistor. À l'instant t = τ, la charge de l'armature positive vaut 11 µC. Quelle est la valeur de E ? (On donne e^(−1) ≈ 0,37.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,81 V"
+        },
+        {
+          "id": "b",
+          "text": "2,2 V"
+        },
+        {
+          "id": "c",
+          "text": "3,5 V"
+        },
+        {
+          "id": "d",
+          "text": "6,0 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En décharge, q(τ) = Q₀·e^(−1), donc Q₀ = 11 µC / 0,37 ≈ 30 µC et E = Q₀/C = 30 µC / 5,0 µF ≈ 6,0 V ✓. La valeur 2,2 V est q/C, soit u_C à l'instant τ et non E ; 3,5 V divise par 0,63 au lieu de 0,37 ; 0,81 V multiplie par 0,37 au lieu de diviser.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Un dipôle RC est alimenté par un échelon de tension E. Quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pendant la décharge, la tension u_R = R·i aux bornes du résistor est négative."
+        },
+        {
+          "id": "b",
+          "text": "Si on double R, E et C restant fixes, la charge finale Q₀ double."
+        },
+        {
+          "id": "c",
+          "text": "Si on double C, E et R restant fixes, la constante de temps τ double."
+        },
+        {
+          "id": "d",
+          "text": "À t = τ, pendant la charge, la tension u_C ne vaut que 0,37 E."
+        },
+        {
+          "id": "e",
+          "text": "Si on double E, l'énergie finale est multipliée par 4."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Vraies : en décharge i < 0 et R > 0 donc u_R = R·i < 0 ; τ = R·C double avec C ; l'énergie finale ½·C·E² est proportionnelle à E², donc multipliée par 4 quand E double. Fausses : Q₀ = C·E ne dépend pas de R ; à t = τ, en charge, u_C vaut 0,63 E, la valeur 0,37 E étant celle de la décharge.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Deux condensateurs, de capacités C₁ = 2,0 µF et C₂, chargés sous E = 8,0 V, se déchargent successivement dans un même résistor R : les courbes (1) et (2) sont enregistrées (figure), la courbe 1 correspondant à C₁. Quelle est la capacité C₂ ?\n<svg viewBox=\"0 0 340 230\"><title>Deux courbes de décharge u_C(t)</title><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"65.7\" y1=\"22\" x2=\"65.7\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"79.4\" y1=\"22\" x2=\"79.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"93.1\" y1=\"22\" x2=\"93.1\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"106.8\" y1=\"22\" x2=\"106.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"120.5\" y1=\"22\" x2=\"120.5\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"134.2\" y1=\"22\" x2=\"134.2\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"147.9\" y1=\"22\" x2=\"147.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"161.6\" y1=\"22\" x2=\"161.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"175.3\" y1=\"22\" x2=\"175.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"189\" y1=\"22\" x2=\"189\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"202.7\" y1=\"22\" x2=\"202.7\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"216.4\" y1=\"22\" x2=\"216.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"230.1\" y1=\"22\" x2=\"230.1\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"243.8\" y1=\"22\" x2=\"243.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"257.5\" y1=\"22\" x2=\"257.5\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"271.2\" y1=\"22\" x2=\"271.2\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"284.9\" y1=\"22\" x2=\"284.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"298.6\" y1=\"22\" x2=\"298.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"312.3\" y1=\"22\" x2=\"312.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326\" y1=\"22\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"169\" x2=\"326\" y2=\"169\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"148\" x2=\"326\" y2=\"148\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"127\" x2=\"326\" y2=\"127\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"106\" x2=\"326\" y2=\"106\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"85\" x2=\"326\" y2=\"85\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"64\" x2=\"326\" y2=\"64\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"43\" x2=\"326\" y2=\"43\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"22\" x2=\"326\" y2=\"22\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52\" y1=\"196\" x2=\"52\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"52,12 48,20 56,20\" fill=\"#0f172a\"/><line x1=\"52\" y1=\"187\" x2=\"52\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"52\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"79.4\" y1=\"187\" x2=\"79.4\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"79.4\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><line x1=\"106.8\" y1=\"187\" x2=\"106.8\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"106.8\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><line x1=\"134.2\" y1=\"187\" x2=\"134.2\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"134.2\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><line x1=\"161.6\" y1=\"187\" x2=\"161.6\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"161.6\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><line x1=\"189\" y1=\"187\" x2=\"189\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"189\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">50</text><line x1=\"216.4\" y1=\"187\" x2=\"216.4\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"216.4\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><line x1=\"243.8\" y1=\"187\" x2=\"243.8\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"243.8\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">70</text><line x1=\"271.2\" y1=\"187\" x2=\"271.2\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"271.2\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">80</text><line x1=\"298.6\" y1=\"187\" x2=\"298.6\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"298.6\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">90</text><line x1=\"326\" y1=\"187\" x2=\"326\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"326\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">100</text><line x1=\"49\" y1=\"190\" x2=\"55\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"194\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"49\" y1=\"169\" x2=\"55\" y2=\"169\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"173\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"49\" y1=\"148\" x2=\"55\" y2=\"148\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"152\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"49\" y1=\"127\" x2=\"55\" y2=\"127\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"131\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"49\" y1=\"106\" x2=\"55\" y2=\"106\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"110\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"49\" y1=\"85\" x2=\"55\" y2=\"85\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"89\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"49\" y1=\"64\" x2=\"55\" y2=\"64\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"68\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"49\" y1=\"43\" x2=\"55\" y2=\"43\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"47\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">7</text><line x1=\"49\" y1=\"22\" x2=\"55\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"26\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><text x=\"322\" y=\"224\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"60\" y=\"14\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_C (V)</text><polyline points=\"52,22 54.3,38.6 56.6,53.6 58.9,67.1 61.1,79.2 63.4,90.2 65.7,100.1 68,109 70.3,117 72.5,124.2 74.8,130.7 77.1,136.6 79.4,141.9 81.7,146.6 84,150.9 86.2,154.8 88.5,158.3 90.8,161.4 93.1,164.2 95.4,166.8 97.7,169.1 100,171.2 102.2,173 104.5,174.7 106.8,176.2 109.1,177.6 111.4,178.8 113.7,179.9 115.9,180.9 118.2,181.8 120.5,182.6 122.8,183.3 125.1,184 127.3,184.6 129.6,185.1 131.9,185.6 134.2,186 136.5,186.4 138.8,186.8 141.1,187.1 143.3,187.4 145.6,187.7 147.9,187.9 150.2,188.1 152.5,188.3 154.8,188.5 157,188.6 159.3,188.7 161.6,188.9 163.9,189 166.2,189.1 168.4,189.2 170.7,189.3 173,189.3 175.3,189.4 177.6,189.5 179.9,189.5 182.2,189.6 184.4,189.6 186.7,189.6 189,189.7 191.3,189.7 193.6,189.7 195.8,189.8 198.1,189.8 200.4,189.8 202.7,189.8 205,189.8 207.3,189.9 209.6,189.9 211.8,189.9 214.1,189.9 216.4,189.9 218.7,189.9 221,189.9 223.2,189.9 225.5,189.9 227.8,189.9 230.1,190 232.4,190 234.7,190 236.9,190 239.2,190 241.5,190 243.8,190 246.1,190 248.4,190 250.7,190 252.9,190 255.2,190 257.5,190 259.8,190 262.1,190 264.4,190 266.6,190 268.9,190 271.2,190 273.5,190 275.8,190 278.1,190 280.3,190 282.6,190 284.9,190 287.2,190 289.5,190 291.8,190 294,190 296.3,190 298.6,190 300.9,190 303.2,190 305.4,190 307.7,190 310,190 312.3,190 314.6,190 316.9,190 319.1,190 321.4,190 323.7,190 326,190\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"52,22 54.3,28.9 56.6,35.4 58.9,41.7 61.1,47.8 63.4,53.6 65.7,59.2 68,64.5 70.3,69.6 72.5,74.5 74.8,79.2 77.1,83.8 79.4,88.1 81.7,92.3 84,96.3 86.2,100.1 88.5,103.7 90.8,107.3 93.1,110.6 95.4,113.9 97.7,117 100,120 102.2,122.8 104.5,125.6 106.8,128.2 109.1,130.7 111.4,133.1 113.7,135.5 115.9,137.7 118.2,139.8 120.5,141.9 122.8,143.8 125.1,145.7 127.3,147.5 129.6,149.3 131.9,150.9 134.2,152.5 136.5,154 138.8,155.5 141.1,156.9 143.3,158.3 145.6,159.6 147.9,160.8 150.2,162 152.5,163.1 154.8,164.2 157,165.3 159.3,166.3 161.6,167.3 163.9,168.2 166.2,169.1 168.4,169.9 170.7,170.8 173,171.5 175.3,172.3 177.6,173 179.9,173.7 182.2,174.4 184.4,175 186.7,175.6 189,176.2 191.3,176.8 193.6,177.3 195.8,177.8 198.1,178.3 200.4,178.8 202.7,179.3 205,179.7 207.3,180.1 209.6,180.5 211.8,180.9 214.1,181.3 216.4,181.6 218.7,182 221,182.3 223.2,182.6 225.5,182.9 227.8,183.2 230.1,183.5 232.4,183.8 234.7,184 236.9,184.3 239.2,184.5 241.5,184.7 243.8,184.9 246.1,185.1 248.4,185.3 250.7,185.5 252.9,185.7 255.2,185.9 257.5,186 259.8,186.2 262.1,186.4 264.4,186.5 266.6,186.7 268.9,186.8 271.2,186.9 273.5,187 275.8,187.2 278.1,187.3 280.3,187.4 282.6,187.5 284.9,187.6 287.2,187.7 289.5,187.8 291.8,187.9 294,188 296.3,188.1 298.6,188.1 300.9,188.2 303.2,188.3 305.4,188.4 307.7,188.4 310,188.5 312.3,188.5 314.6,188.6 316.9,188.7 319.1,188.7 321.4,188.8 323.7,188.8 326,188.9\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"123.2\" y=\"175.5\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">courbe 1</text><text x=\"205.4\" y=\"171.8\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">courbe 2</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,80 µF"
+        },
+        {
+          "id": "b",
+          "text": "3,0 µF"
+        },
+        {
+          "id": "c",
+          "text": "5,0 µF"
+        },
+        {
+          "id": "d",
+          "text": "20 µF"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On lit sur chaque courbe l'abscisse de 0,37 E = 0,37 × 8,0 V ≈ 3,0 V : environ 8 ms pour la courbe 1 et 20 ms pour la courbe 2, donc τ₁ = 8 ms et τ₂ = 20 ms. Comme R est la même, τ est proportionnelle à C : C₂ = C₁ × τ₂/τ₁ = 2,0 × 20/8 = 5,0 µF ✓. La valeur 0,80 µF inverse le rapport des durées ; 3,0 µF calcule C₁·(τ₂ − τ₁)/τ₁ : il prend l'écart des durées au lieu de leur rapport ; 20 µF prend la valeur de τ₂ pour la capacité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un condensateur se charge à travers un résistor sous la tension E. Quel pourcentage de son énergie finale ½·C·E² a-t-il emmagasiné à l'instant t = τ ? (On donne e^(−1) ≈ 0,37.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "37 %"
+        },
+        {
+          "id": "b",
+          "text": "40 %"
+        },
+        {
+          "id": "c",
+          "text": "63 %"
+        },
+        {
+          "id": "d",
+          "text": "86 %"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À t = τ, u_C = E(1 − e^(−1)) ≈ 0,63 E, donc E_C = ½·C·u_C² = ½·C·(0,63 E)² = 0,63² × ½·C·E² ≈ 0,40 × ½·C·E² : 40 % de l'énergie finale ✓. La valeur 63 % traite l'énergie comme proportionnelle à u_C au lieu de u_C² ; 37 % prend la valeur de la décharge (e^(−1)) ; 86 % correspond à 1 − 0,37².",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un condensateur chargé sous E = 10 V se décharge dans un résistor de résistance R = 4,0 kΩ ; u_C vaut 2,0 V au bout de 12,9 ms. Calculer la capacité C, en µF, arrondie au dixième. (On donne Log 5 ≈ 1,609, Log étant le logarithme népérien.)",
+      "answerKey": {
+        "value": 2.0,
+        "tolerance": 0.05,
+        "unit": "µF"
+      },
+      "explanation": "u_C = E·e^(−t/τ) = 2,0 donne e^(−t/τ) = 0,20 = 1/5, d'où t = τ·Log 5 et τ = 12,9 / 1,609 ≈ 8,0 ms ; puis C = τ/R = 8,0·10⁻³ / 4,0·10³ = 2,0·10⁻⁶ F, soit 2 µF ✓.",
+      "difficulty": 3
+    }
+  ]
+}

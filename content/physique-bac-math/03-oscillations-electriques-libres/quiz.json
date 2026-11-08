@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : Oscillations électriques libres",
+  "questions": [
+    {
+      "prompt": "Dans lequel de ces montages observe-t-on des oscillations électriques libres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un condensateur chargé, fermé sur un résistor seul, sans autre source"
+        },
+        {
+          "id": "b",
+          "text": "Un condensateur et une bobine en série, alimentés en permanence par un générateur de tension continue"
+        },
+        {
+          "id": "c",
+          "text": "Un condensateur chargé, fermé à t = 0 sur une bobine en série avec un résistor, sans autre source"
+        },
+        {
+          "id": "d",
+          "text": "Une bobine seule, parcourue par un courant continu que l'on coupe à t = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les oscillations sont libres quand aucun générateur n'entretient le circuit : l'énergie vient de la charge initiale du condensateur, et la bobine fait circuler le courant même quand u_C = 0, ce qui renverse la charge ✓. Un condensateur fermé sur un résistor seul se décharge sans jamais changer de signe. Avec un générateur continu dans le circuit, la tension finit par se stabiliser : l'énergie n'est plus celle d'une décharge libre. Une bobine seule dont on coupe le courant ne contient aucun condensateur : il n'y a pas d'échange d'énergie à répétition.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un circuit RLC libre, quelle grandeur est l'image de la charge q de l'armature du condensateur lorsqu'on la visualise à l'oscilloscope ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La tension u_C = q/C aux bornes du condensateur"
+        },
+        {
+          "id": "b",
+          "text": "La tension u_R₀ = R₀·i aux bornes du résistor"
+        },
+        {
+          "id": "c",
+          "text": "La tension u_b = r·i + L·di/dt aux bornes de la bobine"
+        },
+        {
+          "id": "d",
+          "text": "La f.é.m. auto-induite e = −L·di/dt"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Aux bornes du condensateur, u_C = q/C : la tension est proportionnelle à la charge, et la voie de l'oscilloscope en est l'image ✓. La tension u_R₀ = R₀·i est l'image de l'intensité, non de la charge. La tension de la bobine fait intervenir r·i et di/dt : elle n'est pas proportionnelle à q. La f.é.m. −L·di/dt est proportionnelle à la variation de l'intensité, pas à la charge.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un circuit RLC libre, on diminue progressivement la résistance totale R, L et C restant inchangées, sans jamais l'annuler. Que constate-t-on sur u_C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les oscillations sont moins nombreuses, car l'amplitude décroît plus vite"
+        },
+        {
+          "id": "b",
+          "text": "Le nombre d'oscillations ne change pas : seule la pseudo-période varie un peu"
+        },
+        {
+          "id": "c",
+          "text": "L'amplitude croît à chaque alternance, car l'énergie dissipée diminue"
+        },
+        {
+          "id": "d",
+          "text": "Les oscillations sont plus nombreuses, l'amplitude décroît plus lentement"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Quand R diminue, l'amortissement diminue : l'énergie dissipée par effet Joule est plus faible, donc l'amplitude décroît plus lentement et l'on compte davantage d'oscillations ✓. La disparition des oscillations est observée quand R augmente, le cas inverse. Le nombre d'oscillations dépend directement de l'amortissement, donc de R. Une amplitude qui croît supposerait qu'un élément fournit de l'énergie, alors que la résistance n'en fournit jamais : à R très petite, l'amplitude décroît seulement très lentement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle équation différentielle la tension u_C aux bornes du condensateur vérifie-t-elle dans un circuit RLC série libre, de résistance totale R ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "d²u_C/dt² + R·L·du_C/dt + u_C/(LC) = 0"
+        },
+        {
+          "id": "b",
+          "text": "d²u_C/dt² + (R/L)·du_C/dt + u_C/(LC) = 0"
+        },
+        {
+          "id": "c",
+          "text": "d²u_C/dt² + (R/L)·du_C/dt − u_C/(LC) = 0"
+        },
+        {
+          "id": "d",
+          "text": "d²u_C/dt² + (L/R)·du_C/dt + u_C/(LC) = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme q = C·u_C, l'équation L·d²q/dt² + R·dq/dt + q/C = 0 s'écrit de la même façon en u_C ; en divisant par L, on obtient d²u_C/dt² + (R/L)·du_C/dt + u_C/(LC) = 0 ✓. Le coefficient R·L n'a pas la dimension d'un s⁻¹, alors que R/L en est une. Le signe − devant u_C/(LC) donnerait une solution qui diverge, et non des oscillations. Le coefficient L/R est l'inverse du bon, il s'exprime en secondes et non en s⁻¹.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine de résistance négligeable (40 mH) est branchée à t = 0 aux bornes d'un condensateur chargé de 0,25 µF. À quelle pulsation la charge q oscille-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,0·10⁴ rad·s⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "1,0·10⁸ rad·s⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "1,6·10³ rad·s⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "6,3·10⁴ rad·s⁻¹"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ω₀ = 1/√(LC) = 1/√(40·10⁻³ × 0,25·10⁻⁶) = 1/(1,0·10⁻⁴) = 1,0·10⁴ rad·s⁻¹ ✓. La valeur 1,0·10⁸ rad·s⁻¹ est 1/(LC) : la racine carrée est oubliée. La valeur 1,6·10³ est la fréquence propre N₀ = ω₀/2π ≈ 1,6·10³ Hz, dont l'unité n'est pas celle d'une pulsation. La valeur 6,3·10⁴ rad·s⁻¹ multiplie ω₀ par 2π au lieu de le laisser tel quel.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'énergie totale d'un circuit LC non amorti vaut 60 µJ. À un instant donné, le condensateur emmagasine E_C = 15 µJ. Que vaut alors l'énergie E_L de la bobine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15 µJ"
+        },
+        {
+          "id": "b",
+          "text": "30 µJ"
+        },
+        {
+          "id": "c",
+          "text": "45 µJ"
+        },
+        {
+          "id": "d",
+          "text": "75 µJ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sans résistance, E = E_C + E_L reste égale à 60 µJ : E_L = 60 − 15 = 45 µJ ✓. La valeur 15 µJ attribue à la bobine la même énergie qu'au condensateur, alors que leur somme doit faire 60 µJ. La valeur 30 µJ suppose que la bobine possède la moitié de l'énergie totale, ce qui n'est vrai qu'à certains instants. La valeur 75 µJ additionne E et E_C au lieu de les soustraire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un circuit RLC libre, l'énergie totale diminue. Où l'énergie perdue est-elle dissipée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seulement dans le résistor R₀, la bobine n'en dissipe pas"
+        },
+        {
+          "id": "b",
+          "text": "Dans le résistor R₀ et dans le fil de la bobine réelle"
+        },
+        {
+          "id": "c",
+          "text": "Dans le condensateur, à chaque inversion de sa charge"
+        },
+        {
+          "id": "d",
+          "text": "Dans la bobine, à cause de la variation de l'intensité"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'énergie est dissipée par effet Joule dans la résistance totale R = R₀ + r : le résistor R₀ et la résistance r du fil de la bobine y participent tous les deux ✓. Limiter la perte à R₀ oublie que la bobine réelle a une résistance r. Un condensateur idéal emmagasine et restitue l'énergie sans la dissiper. L'auto-induction échange de l'énergie magnétique avec le reste du circuit : elle ne la transforme pas en chaleur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un circuit LC non amorti, on choisit l'origine des temps à un instant où la charge est nulle et où l'intensité i = dq/dt est négative. Avec q = Q_m·sin(ω₀t + φ) et Q_m > 0, quelle est la phase initiale φ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 rad"
+        },
+        {
+          "id": "b",
+          "text": "π/2 rad"
+        },
+        {
+          "id": "c",
+          "text": "−π/2 rad"
+        },
+        {
+          "id": "d",
+          "text": "π rad"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dans ce choix d'origine, q(0) = Q_m·sin φ = 0, donc φ = 0 ou π ; or i(0) = ω₀Q_m·cos φ doit être négative, ce qui impose cos φ < 0, donc φ = π rad ✓. La valeur 0 rad donnerait cos φ = 1, donc un courant initial positif. La valeur π/2 rad donnerait q(0) = Q_m : le condensateur serait chargé au maximum, avec un courant nul. La valeur −π/2 rad donnerait q(0) = −Q_m, un condensateur chargé en sens inverse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur l'oscillogramme de u_C d'un circuit RLC libre (balayage 5 ms/div), un maximum et le minimum qui le suit sont séparés de 1,6 division. Quelle est la pseudo-période T ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8,0 ms"
+        },
+        {
+          "id": "b",
+          "text": "32 ms"
+        },
+        {
+          "id": "c",
+          "text": "16 ms"
+        },
+        {
+          "id": "d",
+          "text": "0,32 ms"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un maximum et le minimum suivant sont séparés d'une demi-pseudo-période : T/2 = 1,6 div × 5 ms/div = 8,0 ms, donc T = 16 ms ✓. La valeur 8,0 ms prend cette durée pour la pseudo-période entière. La valeur 32 ms prend l'écart maximum → minimum pour un quart de pseudo-période, alors qu'il en vaut la moitié. La valeur 0,32 ms divise le nombre de divisions par le balayage au lieu de les multiplier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un circuit LC non amorti, de condensateur C = 10 µF, a pour fréquence propre N₀ = 500 Hz. Quelle est l'inductance L de la bobine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "41 mH"
+        },
+        {
+          "id": "b",
+          "text": "10 mH"
+        },
+        {
+          "id": "c",
+          "text": "0,40 H"
+        },
+        {
+          "id": "d",
+          "text": "5,1 H"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "N₀ = 1/(2π√(LC)) donne L = 1/(4π²·N₀²·C) = 1 / (4π² × 500² × 10·10⁻⁶) ≈ 1,0·10⁻² H = 10 mH ✓. La valeur 41 mH utilise π² au lieu de 4π² au dénominateur. La valeur 0,40 H oublie le facteur 4π². La valeur 5,1 H ne met pas N₀ au carré.",
+      "difficulty": 2
+    }
+  ]
+}
