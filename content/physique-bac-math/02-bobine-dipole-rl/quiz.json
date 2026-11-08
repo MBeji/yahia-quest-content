@@ -1,0 +1,245 @@
+{
+  "title": "Test de compréhension ⭐ : La bobine et le dipôle RL",
+  "questions": [
+    {
+      "prompt": "Une bobine est fermée sur un milliampèremètre, sans aucun générateur. Dans lequel de ces cas l'aiguille dévie-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un aimant est maintenu immobile contre une face de la bobine"
+        },
+        {
+          "id": "b",
+          "text": "Un aimant et la bobine se déplacent ensemble, à la même vitesse"
+        },
+        {
+          "id": "c",
+          "text": "L'aimant reste fixe pendant qu'on rapproche la bobine de cet aimant"
+        },
+        {
+          "id": "d",
+          "text": "Une bobine voisine immobile est parcourue par un courant continu constant"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seul le mouvement relatif de l'aimant et de la bobine fait varier le champ magnétique au niveau de la bobine : rapprocher la bobine d'un aimant fixe revient à rapprocher l'aimant ✓. Un aimant immobile contre la bobine crée un champ constant. Si l'aimant et la bobine se déplacent ensemble, le champ qu'elle reçoit ne varie pas. Une bobine voisine parcourue par un courant constant crée elle aussi un champ constant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On éloigne le pôle nord d'un aimant de la face de gauche d'une bobine fermée. À l'intérieur de la bobine, le champ induit b⃗ est-il dirigé vers l'aimant ou à l'opposé, et la bobine est-elle attirée ou repoussée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "b⃗ dirigé vers l'aimant ; attirée"
+        },
+        {
+          "id": "b",
+          "text": "b⃗ dirigé vers l'aimant ; repoussée"
+        },
+        {
+          "id": "c",
+          "text": "b⃗ dirigé à l'opposé de l'aimant ; repoussée"
+        },
+        {
+          "id": "d",
+          "text": "b⃗ dirigé à l'opposé de l'aimant ; attirée"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "B⃗ sort du pôle nord, donc pointe à l'opposé de l'aimant, et sa valeur diminue. Lenz impose donc un b⃗ de même sens, à l'opposé de l'aimant. La face en regard est une face sud, d'où l'attraction ✓. Un b⃗ dirigé vers l'aimant s'opposerait à B⃗, ce qui est la réponse à une augmentation. La répulsion favoriserait l'éloignement au lieu de le freiner.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine d'inductance L = 0,18 H est parcourue par un courant qui passe régulièrement de 0,60 A à 0,20 A en 0,20 s. Quelle est sa f.e.m. d'auto-induction e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,36 V"
+        },
+        {
+          "id": "b",
+          "text": "+0,072 V"
+        },
+        {
+          "id": "c",
+          "text": "+0,36 V"
+        },
+        {
+          "id": "d",
+          "text": "+11 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a di/dt = (0,20 − 0,60) / 0,20 = −2,0 A/s, donc e = −L di/dt = −0,18 × (−2,0) = +0,36 V ✓ : positive, puisque i décroît. −0,36 V oublie que i décroît, donc le signe de di/dt. +0,072 V est le produit L × Δi, sans division par la durée. +11 V place L au dénominateur : Δi / (L Δt).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine d'inductance 60 mH, de résistance négligeable, est traversée par un courant qui passe régulièrement de 0,20 A à 0,50 A en 0,15 s. Quelle est la tension u_AB à ses bornes, le courant allant de A vers B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+0,20 V"
+        },
+        {
+          "id": "b",
+          "text": "+0,12 V"
+        },
+        {
+          "id": "c",
+          "text": "+0,018 V"
+        },
+        {
+          "id": "d",
+          "text": "−0,12 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La résistance est négligeable, donc u_AB = L di/dt. Ici di/dt = (0,50 − 0,20) / 0,15 = 2,0 A/s, d'où u_AB = 0,060 × 2,0 = +0,12 V ✓, positive puisque i croît. +0,20 V utilise la valeur finale du courant au lieu de sa variation. +0,018 V est le produit L × Δi, sans division par la durée. −0,12 V garde le signe − de la f.e.m. dans la tension.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pourquoi une étincelle jaillit-elle à l'interrupteur quand on coupe brusquement le courant dans une bobine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La tension du générateur se retrouve seule aux bornes de l'interrupteur"
+        },
+        {
+          "id": "b",
+          "text": "La résistance r de la bobine augmente fortement à l'instant de la coupure"
+        },
+        {
+          "id": "c",
+          "text": "L'énergie ½ L i² de la bobine augmente quand i s'annule"
+        },
+        {
+          "id": "d",
+          "text": "La f.e.m. d'auto-induction devient très grande, car i chute très vite"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une coupure brusque fait tomber i en un temps très court : |e| ≈ L Δi/Δt devient très grande, assez pour ioniser l'air entre les contacts ✓. La tension du générateur ne vaut que quelques volts : trop peu pour ioniser l'air, la forte tension vient de la f.e.m. d'auto-induction. La résistance r est celle du fil et ne change pas. L'énergie ½ L i² tend vers 0 quand i s'annule : elle ne peut pas augmenter.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un courant de 0,60 A traverse une bobine de 0,35 H. Calculer l'énergie magnétique stockée.",
+      "options": [
+        {
+          "id": "a",
+          "text": "63 mJ"
+        },
+        {
+          "id": "b",
+          "text": "105 mJ"
+        },
+        {
+          "id": "c",
+          "text": "126 mJ"
+        },
+        {
+          "id": "d",
+          "text": "210 mJ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "E_L = ½ L i² = 0,5 × 0,35 × (0,60)² = 0,5 × 0,35 × 0,36 = 63 mJ ✓. 105 mJ calcule ½ L i sans élever i au carré. 126 mJ oublie le facteur ½ (L i²). 210 mJ calcule L i, sans ½ ni carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL est formé d'une bobine de résistance r = 6,0 Ω et d'un résistor R₀ = 44 Ω, soumis à un échelon de tension E = 7,5 V. Quelle est l'intensité du courant en régime permanent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 A"
+        },
+        {
+          "id": "b",
+          "text": "0,15 A"
+        },
+        {
+          "id": "c",
+          "text": "0,17 A"
+        },
+        {
+          "id": "d",
+          "text": "1,25 A"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En régime permanent, di/dt = 0 et la bobine se comporte comme un résistor de résistance r : I₀ = E / (R₀ + r) = 7,5 / 50 = 0,15 A ✓. 0 A suppose que la bobine bloque le courant, alors qu'elle ne fait que retarder son établissement. 0,17 A oublie la résistance r de la bobine (7,5 / 44). 1,25 A ne garde que r (7,5 / 6,0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL de résistance totale R = 30 Ω a une constante de temps τ = 3,0 ms. Quelle est son inductance L ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,10 mH"
+        },
+        {
+          "id": "b",
+          "text": "90 mH"
+        },
+        {
+          "id": "c",
+          "text": "90 H"
+        },
+        {
+          "id": "d",
+          "text": "10 kH"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "τ = L/R donne L = τ R = 3,0 × 10⁻³ × 30 = 0,090 H = 90 mH ✓. 0,10 mH calcule τ / R, en divisant au lieu de multiplier. 90 H oublie de convertir les millisecondes. 10 kH calcule R / τ, en inversant le rapport.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le primaire d'un transformateur est relié à une pile par un interrupteur K. Quand une tension apparaît-elle aux bornes du secondaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En permanence, tant que K reste fermé"
+        },
+        {
+          "id": "b",
+          "text": "Seulement aux instants où l'on ferme ou ouvre K"
+        },
+        {
+          "id": "c",
+          "text": "Jamais : une pile ne crée aucun champ magnétique"
+        },
+        {
+          "id": "d",
+          "text": "En permanence, mais plus faible que celle de la pile"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le champ magnétique du primaire ne varie qu'à la fermeture et à l'ouverture de K, quand le courant change : le secondaire n'est alors le siège d'une f.e.m. induite qu'à ces instants ✓. Tant que K reste fermé, le courant est constant, donc le champ aussi, et la tension s'annule. La pile fait circuler un courant, donc crée bien un champ magnétique : c'est sa constance qui empêche l'induction. Une tension permanente, même réduite, supposerait un champ qui varie en continu.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On ferme K sur un dipôle RL alimenté par E = 9,0 V, dont la bobine a une résistance r = 5,0 Ω et le résistor une résistance R₀ = 45 Ω. Quelles sont les tensions u_AB de la bobine et u_BM du résistor juste après la fermeture ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u_AB = 0,90 V et u_BM = 8,1 V"
+        },
+        {
+          "id": "b",
+          "text": "u_AB = 8,1 V et u_BM = 0,90 V"
+        },
+        {
+          "id": "c",
+          "text": "u_AB = 0 V et u_BM = 9,0 V"
+        },
+        {
+          "id": "d",
+          "text": "u_AB = 9,0 V et u_BM = 0 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Juste après la fermeture, la bobine interdit tout saut de courant : i = 0. Le résistor n'a donc aucune tension (u_BM = R₀ i = 0), et la loi des mailles u_AB + u_BM = E donne u_AB = 9,0 V ✓. Le couple 0,90 V et 8,1 V est celui du régime permanent (I₀ = 9,0 / 50 = 0,18 A, donc r I₀ = 0,90 V et R₀ I₀ = 8,1 V), pas celui de l'instant initial ; son inverse échange en plus les deux tensions. Le couple 0 V et 9,0 V suppose au contraire que le courant s'établit aussitôt, comme dans un résistor seul.",
+      "difficulty": 2
+    }
+  ]
+}

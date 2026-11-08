@@ -1,0 +1,141 @@
+{
+  "title": "⭐ Exercice : Le ressort prend son rythme",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un solide de masse m = 0,30 kg, accroché à un ressort horizontal de raideur k = 75 N·m⁻¹, oscille sans frottement. Quelle est sa fréquence propre N₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16 Hz"
+        },
+        {
+          "id": "b",
+          "text": "0,010 Hz"
+        },
+        {
+          "id": "c",
+          "text": "2,5 Hz"
+        },
+        {
+          "id": "d",
+          "text": "40 Hz"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "k/m = 250 s⁻², donc ω₀ = √250 ≈ 15,8 rad·s⁻¹ et N₀ = ω₀/2π ≈ 2,5 Hz ✓ (ou T₀ = 2π·√(m/k) ≈ 0,40 s, puis N₀ = 1/T₀). La valeur 16 Hz prend la pulsation ω₀, en rad·s⁻¹, pour la fréquence. La valeur 40 Hz oublie la racine : (k/m)/2π. La valeur 0,010 Hz retourne le rapport : √(m/k)/2π.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un solide oscille de part et d'autre de O sur un banc à coussin d'air : ses deux positions extrêmes sont distantes de 9,0 cm, et il effectue 4 oscillations complètes en 2,4 s. Que valent l'amplitude X_m et la pulsation propre ω₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X_m = 4,5 cm ; ω₀ = 10,5 rad·s⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "X_m = 9,0 cm ; ω₀ = 10,5 rad·s⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "X_m = 4,5 cm ; ω₀ = 1,7 rad·s⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "X_m = 9,0 cm ; ω₀ = 1,7 rad·s⁻¹"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'amplitude se mesure de O à une extrémité : X_m = 9,0/2 = 4,5 cm. La période est T₀ = 2,4/4 = 0,60 s, donc ω₀ = 2π/T₀ = 2π/0,60 ≈ 10,5 rad·s⁻¹ ✓. La valeur 9,0 cm est l'écart entre les deux extrémités, soit le double de l'amplitude. La valeur 1,7 rad·s⁻¹ est la fréquence propre N₀ = 1/T₀ en Hz : elle a une autre unité que la pulsation. Le couple 9,0 cm et 1,7 rad·s⁻¹ cumule les deux erreurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un pendule élastique vertical oscille sur Terre avec la période propre T₀. On le transporte sur la Lune, où le champ de pesanteur est six fois plus faible, avec le même ressort et le même solide. Que devient sa période propre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T₀ est multipliée par √6 : le poids du solide est six fois plus faible"
+        },
+        {
+          "id": "b",
+          "text": "T₀ est divisée par √6 : le ressort se détend moins sous un poids plus faible"
+        },
+        {
+          "id": "c",
+          "text": "T₀ est divisée par 6 : le solide, moins pesant, est ramené six fois plus vite"
+        },
+        {
+          "id": "d",
+          "text": "T₀ est inchangée : elle ne dépend que de m et de k, qui ne changent pas"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "T₀ = 2π·√(m/k) ne contient pas g : avec la même masse et la même raideur, la période reste identique ✓. Sur la Lune, l'allongement statique Δl = m·g/k est plus petit, mais cela déplace seulement la position d'équilibre sans changer le rythme des oscillations. Les trois autres réponses font intervenir le poids dans la période, ce que la formule exclut : le rapport m/k ne change pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On mesure la pulsation propre ω₀ = 16 rad·s⁻¹ d'un pendule dont le solide a pour masse m = 0,18 kg. Quelle raideur k a son ressort ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,9 N·m⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "46 N·m⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "23 N·m⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "1,4·10³ N·m⁻¹"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "De ω₀² = k/m on tire k = m·ω₀² = 0,18 × 16² = 0,18 × 256 ≈ 46 N·m⁻¹ ✓. La valeur 2,9 oublie d'élever ω₀ au carré : m·ω₀. La valeur 23 introduit un facteur ½ qui appartient à l'énergie, non à la raideur. La valeur 1,4·10³ retourne le rapport : ω₀²/m au lieu de m·ω₀².",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le ressort d'un oscillateur a une raideur k = 60 N·m⁻¹. Écarté de 4,0 cm de sa position de repos puis abandonné sans vitesse, le solide oscille. Quelle est l'énergie de l'oscillateur, en mJ ?",
+      "answerKey": {
+        "value": 48,
+        "tolerance": 0.5,
+        "unit": "mJ"
+      },
+      "explanation": "Abandonné sans vitesse, le solide a pour amplitude X_m = 4,0 cm, et E = ½·k·X_m² = ½ × 60 × (0,040)² = 4,8·10⁻² J = 48 mJ. L'amplitude doit être convertie en mètres avant d'être élevée au carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Entre deux instants séparés par 4 pseudo-périodes, l'amplitude d'un pendule élastique amorti passe de 9,0 cm à 3,0 cm. Que devient son énergie mécanique entre ces deux instants ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est divisée par 3"
+        },
+        {
+          "id": "b",
+          "text": "Elle est divisée par 81"
+        },
+        {
+          "id": "c",
+          "text": "Elle est divisée par 9"
+        },
+        {
+          "id": "d",
+          "text": "Elle est divisée par 6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Aux maxima de x, la vitesse est nulle et E = ½·k·X² : l'énergie varie comme le carré de l'amplitude. L'amplitude étant divisée par 3, E est divisée par 3² = 9 ✓. Une division par 3 traite E comme proportionnelle à l'amplitude. Une division par 81 élève le facteur au carré deux fois. Une division par 6 soustrait les amplitudes (9,0 − 3,0) au lieu de comparer les énergies, ce qui n'a aucune justification.",
+      "difficulty": 2
+    }
+  ]
+}

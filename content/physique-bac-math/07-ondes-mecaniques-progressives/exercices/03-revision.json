@@ -1,0 +1,165 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les ondes mécaniques progressives",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Sur une échelle de perroquet, on mesure la célérité de la torsion entre deux capteurs. Laquelle de ces modifications change la valeur mesurée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Écarter les masselottes de l'axe du fil"
+        },
+        {
+          "id": "b",
+          "text": "Doubler l'angle de torsion initial"
+        },
+        {
+          "id": "c",
+          "text": "Placer les capteurs plus près de la source"
+        },
+        {
+          "id": "d",
+          "text": "Lâcher le barreau du haut un peu plus tard"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Écarter les masselottes augmente l'inertie du milieu : la célérité diminue ✓. Doubler l'angle de torsion change l'amplitude de l'ébranlement, qui ne fixe pas la célérité. Déplacer les capteurs change la distance parcourue, mais la célérité reste la même dans un milieu homogène (le quotient d/Δt est constant). La date du lâcher décale seulement le début de la mesure.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Au large, des flotteurs ancrés montent et descendent au passage de la houle et entraînent des générateurs électriques. Qu'est-ce qui produit l'électricité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'eau de mer, déplacée du large jusqu'aux flotteurs"
+        },
+        {
+          "id": "b",
+          "text": "Le vent, qui agit directement sur les flotteurs"
+        },
+        {
+          "id": "c",
+          "text": "L'énergie que la houle transmet aux flotteurs"
+        },
+        {
+          "id": "d",
+          "text": "La marée, qui soulève lentement les flotteurs deux fois par jour"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La houle transporte de l'énergie sans transporter l'eau : chaque flotteur oscille sur place et reçoit cette énergie de proche en proche ✓. L'eau ne voyage pas du large aux flotteurs. Le vent a créé la houle, mais ce sont les vagues qui actionnent ici les flotteurs. La marée est bien plus lente : les flotteurs suivent ici la période de la houle, de quelques secondes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Au large, une houle a une période de 10 s et une longueur d'onde de 150 m. Quelle est sa célérité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,067 m/s"
+        },
+        {
+          "id": "b",
+          "text": "15 m/s"
+        },
+        {
+          "id": "c",
+          "text": "150 m/s"
+        },
+        {
+          "id": "d",
+          "text": "1500 m/s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "λ = v·T, donc v = λ/T = 150/10 = 15 m/s ✓. 0,067 m/s est T/λ ; 1500 m/s est λ·T ; 150 m/s prend λ pour une vitesse.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une onde de longueur d'onde 0,24 m parcourt une corde. Le point M₁ est à 0,18 m de la source et le point M₂ à 0,48 m. Quelle relation de phase lie M₂ à M₁ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En phase"
+        },
+        {
+          "id": "b",
+          "text": "En opposition de phase"
+        },
+        {
+          "id": "c",
+          "text": "En quadrature avance"
+        },
+        {
+          "id": "d",
+          "text": "En quadrature retard"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On remplace x par la distance M₁M₂ = 0,48 − 0,18 = 0,30 m = 1,25 λ : Δφ = φ₂ − φ₁ = −2π × 1,25 = −2,5π. On ajoute 2π : Δφ = −π/2, donc M₂ est en quadrature retard sur M₁ ✓. M₂ est plus loin de la source, donc il retarde sur M₁ : la quadrature avance serait celle de 3λ/4. L'opposition exigerait une distance λ/2 modulo λ, et la phase un nombre entier de λ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le diagramme donne les mouvements de la source S (noir), qui démarre à t = 0, et d'un point M (vert) de la corde situé à 0,60 m de S. Quelle est la célérité de l'onde ?\n<svg viewBox=\"0 0 340 168\"><title>Diagrammes du mouvement de la source S en noir et d'un point M de la corde en vert : élongation en millimètres, d'amplitude 2 mm, en fonction du temps en millisecondes</title><line x1=\"30\" y1=\"79\" x2=\"334\" y2=\"79\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"334,79 326,83 326,75\" fill=\"#0f172a\"/><line x1=\"36\" y1=\"146\" x2=\"36\" y2=\"14\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"36,14 40,22 32,22\" fill=\"#0f172a\"/><polyline points=\"36,79 36.74,75.63 37.48,72.29 38.22,69.03 38.96,65.88 39.7,62.88 40.44,60.05 41.18,57.44 41.92,55.07 42.66,52.96 43.39,51.15 44.13,49.64 44.87,48.46 45.61,47.63 46.35,47.14 47.09,47 47.83,47.23 48.57,47.8 49.31,48.73 50.05,49.99 50.79,51.57 51.53,53.46 52.27,55.64 53.01,58.07 53.75,60.74 54.49,63.61 55.23,66.66 55.97,69.84 56.71,73.12 57.45,76.47 58.18,79.84 58.92,83.21 59.66,86.53 60.4,89.77 61.14,92.88 61.88,95.85 62.62,98.62 63.36,101.17 64.1,103.48 64.84,105.52 65.58,107.26 66.32,108.68 67.06,109.78 67.8,110.53 68.54,110.93 69.28,110.97 70.02,110.66 70.76,110 71.5,108.99 72.24,107.65 72.97,105.98 73.71,104.02 74.45,101.78 75.19,99.28 75.93,96.56 76.67,93.64 77.41,90.56 78.15,87.35 78.89,84.05 79.63,80.69 80.37,77.31 81.11,73.95 81.85,70.65 82.59,67.44 83.33,64.36 84.07,61.44 84.81,58.72 85.55,56.22 86.29,53.98 87.03,52.02 87.76,50.35 88.5,49.01 89.24,48 89.98,47.34 90.72,47.03 91.46,47.07 92.2,47.47 92.94,48.22 93.68,49.32 94.42,50.74 95.16,52.48 95.9,54.52 96.64,56.83 97.38,59.38 98.12,62.15 98.86,65.12 99.6,68.23 100.34,71.47 101.08,74.79 101.82,78.16 102.55,81.53 103.29,84.88 104.03,88.16 104.77,91.34 105.51,94.39 106.25,97.26 106.99,99.93 107.73,102.36 108.47,104.54 109.21,106.43 109.95,108.01 110.69,109.27 111.43,110.2 112.17,110.77 112.91,111 113.65,110.86 114.39,110.37 115.13,109.54 115.87,108.36 116.61,106.85 117.34,105.04 118.08,102.93 118.82,100.56 119.56,97.95 120.3,95.12 121.04,92.12 121.78,88.97 122.52,85.71 123.26,82.37 124,79 124.74,75.63 125.48,72.29 126.22,69.03 126.96,65.88 127.7,62.88 128.44,60.05 129.18,57.44 129.92,55.07 130.66,52.96 131.39,51.15 132.13,49.64 132.87,48.46 133.61,47.63 134.35,47.14 135.09,47 135.83,47.23 136.57,47.8 137.31,48.73 138.05,49.99 138.79,51.57 139.53,53.46 140.27,55.64 141.01,58.07 141.75,60.74 142.49,63.61 143.23,66.66 143.97,69.84 144.71,73.12 145.45,76.47 146.18,79.84 146.92,83.21 147.66,86.53 148.4,89.77 149.14,92.88 149.88,95.85 150.62,98.62 151.36,101.17 152.1,103.48 152.84,105.52 153.58,107.26 154.32,108.68 155.06,109.78 155.8,110.53 156.54,110.93 157.28,110.97 158.02,110.66 158.76,110 159.5,108.99 160.24,107.65 160.97,105.98 161.71,104.02 162.45,101.78 163.19,99.28 163.93,96.56 164.67,93.64 165.41,90.56 166.15,87.35 166.89,84.05 167.63,80.69 168.37,77.31 169.11,73.95 169.85,70.65 170.59,67.44 171.33,64.36 172.07,61.44 172.81,58.72 173.55,56.22 174.29,53.98 175.03,52.02 175.76,50.35 176.5,49.01 177.24,48 177.98,47.34 178.72,47.03 179.46,47.07 180.2,47.47 180.94,48.22 181.68,49.32 182.42,50.74 183.16,52.48 183.9,54.52 184.64,56.83 185.38,59.38 186.12,62.15 186.86,65.12 187.6,68.23 188.34,71.47 189.08,74.79 189.82,78.16 190.55,81.53 191.29,84.88 192.03,88.16 192.77,91.34 193.51,94.39 194.25,97.26 194.99,99.93 195.73,102.36 196.47,104.54 197.21,106.43 197.95,108.01 198.69,109.27 199.43,110.2 200.17,110.77 200.91,111 201.65,110.86 202.39,110.37 203.13,109.54 203.87,108.36 204.61,106.85 205.34,105.04 206.08,102.93 206.82,100.56 207.56,97.95 208.3,95.12 209.04,92.12 209.78,88.97 210.52,85.71 211.26,82.37 212,79 212.74,75.63 213.48,72.29 214.22,69.03 214.96,65.88 215.7,62.88 216.44,60.05 217.18,57.44 217.92,55.07 218.66,52.96 219.39,51.15 220.13,49.64 220.87,48.46 221.61,47.63 222.35,47.14 223.09,47 223.83,47.23 224.57,47.8 225.31,48.73 226.05,49.99 226.79,51.57 227.53,53.46 228.27,55.64 229.01,58.07 229.75,60.74 230.49,63.61 231.23,66.66 231.97,69.84 232.71,73.12 233.45,76.47 234.18,79.84 234.92,83.21 235.66,86.53 236.4,89.77 237.14,92.88 237.88,95.85 238.62,98.62 239.36,101.17 240.1,103.48 240.84,105.52 241.58,107.26 242.32,108.68 243.06,109.78 243.8,110.53 244.54,110.93 245.28,110.97 246.02,110.66 246.76,110 247.5,108.99 248.24,107.65 248.97,105.98 249.71,104.02 250.45,101.78 251.19,99.28 251.93,96.56 252.67,93.64 253.41,90.56 254.15,87.35 254.89,84.05 255.63,80.69 256.37,77.31 257.11,73.95 257.85,70.65 258.59,67.44 259.33,64.36 260.07,61.44 260.81,58.72 261.55,56.22 262.29,53.98 263.03,52.02 263.76,50.35 264.5,49.01 265.24,48 265.98,47.34 266.72,47.03 267.46,47.07 268.2,47.47 268.94,48.22 269.68,49.32 270.42,50.74 271.16,52.48 271.9,54.52 272.64,56.83 273.38,59.38 274.12,62.15 274.86,65.12 275.6,68.23 276.34,71.47 277.08,74.79 277.82,78.16 278.55,81.53 279.29,84.88 280.03,88.16 280.77,91.34 281.51,94.39 282.25,97.26 282.99,99.93 283.73,102.36 284.47,104.54 285.21,106.43 285.95,108.01 286.69,109.27 287.43,110.2 288.17,110.77 288.91,111 289.65,110.86 290.39,110.37 291.13,109.54 291.87,108.36 292.61,106.85 293.34,105.04 294.08,102.93 294.82,100.56 295.56,97.95 296.3,95.12 297.04,92.12 297.78,88.97 298.52,85.71 299.26,82.37 300,79\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.6\"/><polyline points=\"36,79 146,79 146,79 146.74,75.62 147.48,72.28 148.22,69.02 148.96,65.87 149.7,62.86 150.44,60.03 151.18,57.42 151.92,55.05 152.66,52.94 153.4,51.13 154.14,49.62 154.88,48.45 155.62,47.61 156.37,47.13 157.11,47 157.85,47.23 158.59,47.82 159.33,48.75 160.07,50.02 160.81,51.61 161.55,53.51 162.29,55.7 163.03,58.14 163.77,60.82 164.51,63.7 165.25,66.75 165.99,69.94 166.73,73.23 167.47,76.59 168.21,79.97 168.95,83.34 169.69,86.66 170.43,89.89 171.17,93.01 171.91,95.97 172.65,98.74 173.39,101.28 174.13,103.58 174.88,105.61 175.62,107.33 176.36,108.75 177.1,109.82 177.84,110.56 178.58,110.94 179.32,110.97 180.06,110.64 180.8,109.95 181.54,108.92 182.28,107.56 183.02,105.87 183.76,103.89 184.5,101.63 185.24,99.11 185.98,96.37 186.72,93.44 187.46,90.35 188.2,87.13 188.94,83.81 189.68,80.45 190.42,77.07 191.16,73.71 191.9,70.41 192.64,67.2 193.38,64.13 194.12,61.22 194.87,58.51 195.61,56.03 196.35,53.81 197.09,51.87 197.83,50.23 198.57,48.91 199.31,47.93 200.05,47.3 200.79,47.01 201.53,47.09 202.27,47.52 203.01,48.31 203.75,49.44 204.49,50.89 205.23,52.66 205.97,54.73 206.71,57.07 207.45,59.65 208.19,62.45 208.93,65.43 209.67,68.56 210.41,71.81 211.15,75.14 211.89,78.52 212.63,81.9 213.38,85.24 214.12,88.52 214.86,91.69 215.6,94.72 216.34,97.57 217.08,100.22 217.82,102.63 218.56,104.77 219.3,106.63 220.04,108.18 220.78,109.4 221.52,110.29 222.26,110.82 223,111 223.74,110.82 224.48,110.29 225.22,109.4 225.96,108.18 226.7,106.63 227.44,104.77 228.18,102.63 228.92,100.22 229.66,97.57 230.4,94.72 231.14,91.69 231.88,88.52 232.63,85.24 233.37,81.9 234.11,78.52 234.85,75.14 235.59,71.81 236.33,68.56 237.07,65.43 237.81,62.45 238.55,59.65 239.29,57.07 240.03,54.73 240.77,52.66 241.51,50.89 242.25,49.44 242.99,48.31 243.73,47.52 244.47,47.09 245.21,47.01 245.95,47.3 246.69,47.93 247.43,48.91 248.17,50.23 248.91,51.87 249.65,53.81 250.39,56.03 251.13,58.51 251.88,61.22 252.62,64.13 253.36,67.2 254.1,70.41 254.84,73.71 255.58,77.07 256.32,80.45 257.06,83.81 257.8,87.13 258.54,90.35 259.28,93.44 260.02,96.37 260.76,99.11 261.5,101.63 262.24,103.89 262.98,105.87 263.72,107.56 264.46,108.92 265.2,109.95 265.94,110.64 266.68,110.97 267.42,110.94 268.16,110.56 268.9,109.82 269.64,108.75 270.38,107.33 271.12,105.61 271.87,103.58 272.61,101.28 273.35,98.74 274.09,95.97 274.83,93.01 275.57,89.89 276.31,86.66 277.05,83.34 277.79,79.97 278.53,76.59 279.27,73.23 280.01,69.94 280.75,66.75 281.49,63.7 282.23,60.82 282.97,58.14 283.71,55.7 284.45,53.51 285.19,51.61 285.93,50.02 286.67,48.75 287.41,47.82 288.15,47.23 288.89,47 289.63,47.13 290.38,47.61 291.12,48.45 291.86,49.62 292.6,51.13 293.34,52.94 294.08,55.05 294.82,57.42 295.56,60.03 296.3,62.86 297.04,65.87 297.78,69.02 298.52,72.28 299.26,75.62 300,79\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><line x1=\"36\" y1=\"75\" x2=\"36\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"80\" y1=\"75\" x2=\"80\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"124\" y1=\"75\" x2=\"124\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"168\" y1=\"75\" x2=\"168\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"212\" y1=\"75\" x2=\"212\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"256\" y1=\"75\" x2=\"256\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"300\" y1=\"75\" x2=\"300\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"58\" y1=\"76\" x2=\"58\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"102\" y1=\"76\" x2=\"102\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"146\" y1=\"76\" x2=\"146\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"190\" y1=\"76\" x2=\"190\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"234\" y1=\"76\" x2=\"234\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"278\" y1=\"76\" x2=\"278\" y2=\"82\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"32\" y1=\"47\" x2=\"40\" y2=\"47\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"32\" y1=\"111\" x2=\"40\" y2=\"111\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"36\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">0</text><text x=\"80\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">20</text><text x=\"124\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">40</text><text x=\"168\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">60</text><text x=\"212\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">80</text><text x=\"256\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">100</text><text x=\"300\" y=\"96\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\">120</text><text x=\"28\" y=\"51\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">+2</text><text x=\"28\" y=\"115\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">−2</text><text x=\"334\" y=\"71\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"11\">t (ms)</text><text x=\"54\" y=\"14\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"11\">y (mm)</text></g><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\"><text x=\"43\" y=\"41\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"13\">S</text><text x=\"152\" y=\"41\" text-anchor=\"start\" fill=\"#0f6e56\" font-size=\"13\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,083 m/s"
+        },
+        {
+          "id": "b",
+          "text": "11 m/s"
+        },
+        {
+          "id": "c",
+          "text": "12 m/s"
+        },
+        {
+          "id": "d",
+          "text": "30 m/s"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "M reste au repos jusqu'à t = 50 ms, puis répète le mouvement de S : le retard est θ = 50 ms, durée de propagation sur 0,60 m. Alors v = x/θ = 0,60/0,050 = 12 m/s ✓. La valeur 11 m/s lit la date du premier sommet de M (55 ms) au lieu du début de son mouvement. La valeur 30 m/s utilise la période (20 ms) comme retard. La valeur 0,083 est le quotient inversé θ/x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un film de science-fiction, on entend l'explosion d'un vaisseau situé dans l'espace, loin du spectateur. Pourquoi est-ce irréaliste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un son ne peut pas se propager dans le vide : il lui faut un milieu matériel"
+        },
+        {
+          "id": "b",
+          "text": "Un son se propage dans le vide, mais sa célérité y est trop faible"
+        },
+        {
+          "id": "c",
+          "text": "Un son se propage dans le vide, mais la dilution de l'énergie l'éteint aussitôt"
+        },
+        {
+          "id": "d",
+          "text": "Un son ne se propage que dans l'air, jamais dans un liquide ni un solide"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le son est une onde mécanique : elle se transmet de proche en proche dans la matière, et il n'y a pas de matière entre le vaisseau et le spectateur ✓. Il ne se propage donc pas dans le vide, même lentement ou faiblement. Et il ne se limite pas à l'air : sa célérité vaut 1500 m/s dans l'eau et 5000 m/s dans l'acier.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un haut-parleur émet un son pur de 2000 Hz. On promène un microphone le long de son axe : les courbes de l'oscilloscope sont en phase (même allure, superposables) en une position P₁, puis en cinq autres positions successives, la dernière, P₆, étant à 85,0 cm de P₁. Calculer la célérité du son, en m/s.",
+      "answerKey": {
+        "value": 340,
+        "tolerance": 1,
+        "unit": "m/s"
+      },
+      "explanation": "Entre la première et la sixième position en phase, il y a 5 intervalles, chacun égal à une longueur d'onde : λ = 85,0/5 = 17,0 cm = 0,170 m. Alors v = λ·N = 0,170 × 2000 = 340 m/s ✓ (ordre de grandeur du son dans l'air). Diviser par 6 donnerait λ = 14,2 cm et 283 m/s, valeur qui oublie qu'il y a un intervalle de moins que de positions.",
+      "difficulty": 2
+    }
+  ]
+}

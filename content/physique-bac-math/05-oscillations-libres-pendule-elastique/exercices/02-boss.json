@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le colosse du ressort",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un pendule élastique de masse m = 0,40 kg et de raideur k = 90 N·m⁻¹ oscille avec l'amplitude X_m = 5,0 cm. Quelle est sa vitesse quand il passe par l'élongation x = 4,0 cm ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,75 m·s⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "0,32 m·s⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "0,45 m·s⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "0,15 m·s⁻¹"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E = ½ × 90 × (0,050)² = 0,1125 J et E_p = ½ × 90 × (0,040)² = 7,2·10⁻² J ; donc E_c = 4,05·10⁻² J et v = √(2·E_c/m) = √0,2025 = 0,45 m·s⁻¹ ✓. La valeur 0,75 est V_m = √(2E/m), atteinte seulement en O. La valeur 0,32 oublie le facteur 2 sous la racine. La valeur 0,15 calcule l'énergie cinétique par ½·k·(X_m − x)², qui n'est pas une énergie du système.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un solide est fixé à un ressort ; la pulsation propre vaut ω₀ = 20 rad·s⁻¹. À t = 0, on l'abandonne sans vitesse à l'élongation x₀ = −4,0 cm. Quelle est son équation horaire (x en m, t en s) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 4,0·10⁻²·sin(20·t + π/2)"
+        },
+        {
+          "id": "b",
+          "text": "x = 4,0·10⁻²·sin(20·t)"
+        },
+        {
+          "id": "c",
+          "text": "x = −4,0·10⁻²·sin(20·t)"
+        },
+        {
+          "id": "d",
+          "text": "x = 4,0·10⁻²·sin(20·t − π/2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec ω₀ = 20 rad·s⁻¹ et sans vitesse initiale, X_m = |x₀| = 4,0·10⁻² m. À t = 0, v₀ = 0 donne cos φ = 0, et x₀ < 0 donne sin φ < 0 : φ = −π/2 rad ✓. La phase +π/2 donnerait x₀ = +4,0 cm, de l'autre côté de O. Une phase nulle, avec ou sans signe devant l'amplitude, donnerait x₀ = 0 et une vitesse non nulle : le solide passerait par O à t = 0 au lieu d'être abandonné à −4,0 cm.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À t = 0, un pendule élastique de pulsation propre ω₀ = 15 rad·s⁻¹ est lancé depuis l'élongation x₀ = −3,0 cm avec la vitesse v₀ = +0,60 m·s⁻¹. Quelle est son amplitude X_m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,0 cm"
+        },
+        {
+          "id": "b",
+          "text": "7,0 cm"
+        },
+        {
+          "id": "c",
+          "text": "4,0 cm"
+        },
+        {
+          "id": "d",
+          "text": "3,0 cm"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'énergie se conserve : ½·k·X_m² = ½·m·v₀² + ½·k·x₀², soit X_m² = x₀² + (v₀/ω₀)² = (3,0)² + (4,0)² = 25 cm², donc X_m = 5,0 cm ✓ (v₀/ω₀ = 0,60/15 = 4,0 cm). La valeur 7,0 cm additionne les deux longueurs 3,0 et 4,0 au lieu de combiner leurs carrés. La valeur 4,0 cm est v₀/ω₀, qui est l'amplitude d'un départ depuis O seulement. La valeur 3,0 cm confond X_m avec |x₀|, ce qui n'est vrai que si v₀ = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le graphe donne, en fonction de l'élongation x, l'énergie mécanique E d'un pendule élastique non amorti (droite horizontale) et son énergie potentielle élastique E_p (parabole). La masse du solide est m = 0,50 kg. Quelle est sa période propre T₀ ?\n<svg viewBox=\"0 0 340 230\"><title>Énergie mécanique E (horizontale) et énergie potentielle E_p (parabole) en fonction de x</title><line x1=\"68\" y1=\"34\" x2=\"68\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"268\" y1=\"34\" x2=\"268\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"44\" y1=\"142.6\" x2=\"292\" y2=\"142.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"44\" y1=\"99.1\" x2=\"292\" y2=\"99.1\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"44\" y1=\"55.7\" x2=\"292\" y2=\"55.7\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"40\" y1=\"186\" x2=\"294\" y2=\"186\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"302,186 294,190 294,182\" fill=\"#0f172a\"/><line x1=\"168\" y1=\"190\" x2=\"168\" y2=\"32\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"168,24 172,32 164,32\" fill=\"#0f172a\"/><text x=\"338\" y=\"200\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x (cm)</text><text x=\"174\" y=\"20\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">énergie (mJ)</text><line x1=\"68\" y1=\"183\" x2=\"68\" y2=\"189\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"68\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−5</text><line x1=\"88\" y1=\"183\" x2=\"88\" y2=\"189\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"88\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−4</text><line x1=\"108\" y1=\"183\" x2=\"108\" y2=\"189\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"108\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−3</text><line x1=\"128\" y1=\"183\" x2=\"128\" y2=\"189\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"128\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−2</text><line x1=\"148\" y1=\"183\" x2=\"148\" y2=\"189\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"148\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−1</text><line x1=\"188\" y1=\"183\" x2=\"188\" y2=\"189\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"188\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"208\" y1=\"183\" x2=\"208\" y2=\"189\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"208\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"228\" y1=\"183\" x2=\"228\" y2=\"189\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"228\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"248\" y1=\"183\" x2=\"248\" y2=\"189\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"248\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"268\" y1=\"183\" x2=\"268\" y2=\"189\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"268\" y=\"201\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"165\" y1=\"142.6\" x2=\"171\" y2=\"142.6\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"162\" y=\"146.1\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><line x1=\"165\" y1=\"99.1\" x2=\"171\" y2=\"99.1\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"162\" y=\"102.6\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><line x1=\"165\" y1=\"55.7\" x2=\"171\" y2=\"55.7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"162\" y=\"50\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">90</text><line x1=\"68\" y1=\"55.7\" x2=\"268\" y2=\"55.7\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polyline points=\"68,55.7 70,60.9 72,65.9 74,70.9 76,75.7 78,80.5 80,85.1 82,89.6 84,94.1 86,98.4 88,102.6 90,106.7 92,110.7 94,114.7 96,118.5 98,122.2 100,125.8 102,129.2 104,132.6 106,135.9 108,139.1 110,142.2 112,145.1 114,148 116,150.8 118,153.4 120,156 122,158.4 124,160.8 126,163 128,165.2 130,167.2 132,169.1 134,170.9 136,172.7 138,174.3 140,175.8 142,177.2 144,178.5 146,179.7 148,180.8 150,181.8 152,182.7 154,183.4 156,184.1 158,184.7 160,185.2 162,185.5 164,185.8 166,185.9 168,186 170,185.9 172,185.8 174,185.5 176,185.2 178,184.7 180,184.1 182,183.4 184,182.7 186,181.8 188,180.8 190,179.7 192,178.5 194,177.2 196,175.8 198,174.3 200,172.7 202,170.9 204,169.1 206,167.2 208,165.2 210,163 212,160.8 214,158.4 216,156 218,153.4 220,150.8 222,148 224,145.1 226,142.2 228,139.1 230,135.9 232,132.6 234,129.2 236,125.8 238,122.2 240,118.5 242,114.7 244,110.7 246,106.7 248,102.6 250,98.4 252,94.1 254,89.6 256,85.1 258,80.5 260,75.7 262,70.9 264,65.9 266,60.9 268,55.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"68\" cy=\"55.7\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"268\" cy=\"55.7\" r=\"4\" fill=\"#0f172a\"/><text x=\"272\" y=\"49.7\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><text x=\"102\" y=\"131.2\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E_p</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,74 s"
+        },
+        {
+          "id": "b",
+          "text": "0,52 s"
+        },
+        {
+          "id": "c",
+          "text": "0,083 s"
+        },
+        {
+          "id": "d",
+          "text": "0,37 s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur le graphe, E = 90 mJ et les deux courbes se rejoignent en x = ±5,0 cm, où E_p = E : X_m = 5,0 cm. Donc k = 2E/X_m² = 2 × 0,090/(0,050)² = 72 N·m⁻¹ et T₀ = 2π·√(m/k) = 2π·√(0,50/72) ≈ 0,52 s ✓. La valeur 0,74 s oublie le facteur 2 dans k = E/X_m² (k = 36 N·m⁻¹). La valeur 0,083 s oublie le facteur 2π. La valeur 0,37 s compte le facteur 2 deux fois : k = 4E/X_m² (k = 144 N·m⁻¹).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un pendule élastique plongé dans un liquide perd 50 mJ d'énergie mécanique par seconde à un instant où sa vitesse vaut 0,25 m·s⁻¹. Quel est le coefficient de frottement h du liquide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,80 N·s·m⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "0,20 N·s·m⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "1,6 N·s·m⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "1,3·10⁻² N·s·m⁻¹"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La puissance perdue vaut −dE/dt = h·v², donc h = 0,050/(0,25)² = 0,050/0,0625 = 0,80 N·s·m⁻¹ ✓. La valeur 0,20 divise par v au lieu de v² : P/v. La valeur 1,6 compte un facteur 2 de trop : 2P/v², alors que la puissance perdue n'a pas de facteur ½. La valeur 1,3·10⁻² multiplie par v au lieu de diviser par v².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un pendule élastique de masse m = 0,40 kg et de raideur k = 250 N·m⁻¹ doit être imité par un circuit LC série, sans résistance, de même période propre, avec une bobine d'inductance L = 0,40 H. Quelle capacité C faut-il choisir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5·10² F"
+        },
+        {
+          "id": "b",
+          "text": "1,6·10⁻³ F"
+        },
+        {
+          "id": "c",
+          "text": "1,0·10² F"
+        },
+        {
+          "id": "d",
+          "text": "4,0·10⁻³ F"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Même période propre ⇔ L·C = m/k, donc C = m/(k·L) = 0,40/(250 × 0,40) = 4,0·10⁻³ F ; comme L a ici la valeur de m, on retrouve C = 1/k, conformément à l'analogie k ↔ 1/C. Vérification : T₀ = 2π·√(L·C) = 2π·√(0,40 × 4,0·10⁻³) = 2π × 0,040 ≈ 0,25 s, comme 2π·√(0,40/250) ✓. La valeur 2,5·10² prend C = k, alors que k correspond à l'inverse de C. La valeur 1,6·10⁻³ est m/k, qui est le carré de T₀/2π, non une capacité. La valeur 1,0·10² est le produit m·k, qui n'intervient pas dans la période.",
+      "difficulty": 2
+    }
+  ]
+}

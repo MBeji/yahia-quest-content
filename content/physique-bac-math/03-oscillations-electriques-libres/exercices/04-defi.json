@@ -1,0 +1,165 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les secrets du circuit oscillant",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Un logiciel trace E_L(t) pour un circuit LC non amorti (C = 0,50 µF) : l'énergie magnétique est nulle à t = 0,40 ms, puis de nouveau à t = 1,90 ms sans s'annuler entre-temps. Quelle est l'inductance L de la bobine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,46 H"
+        },
+        {
+          "id": "b",
+          "text": "0,11 H"
+        },
+        {
+          "id": "c",
+          "text": "1,8 H"
+        },
+        {
+          "id": "d",
+          "text": "18 H"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "E_L a pour période T₀/2 : elle s'annule toutes les T₀/2 = 1,5 ms, donc T₀ = 3,0 ms ; alors L = T₀²/(4π²·C) = (3,0·10⁻³)² / (4π² × 0,50·10⁻⁶) ≈ 0,46 H ✓. La valeur 0,11 H prend 1,5 ms pour la période propre T₀. La valeur 1,8 H suppose T₀ = 6,0 ms, comme si E_L avait la période de q. La valeur 18 H oublie le facteur 4π².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un circuit LC où C = 0,25 µF, la tension aux bornes du condensateur s'écrit u_C(t) = 15·sin(4000·t + π/2) (en V). Quelle est l'amplitude I_m de l'intensité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,4 mA"
+        },
+        {
+          "id": "b",
+          "text": "15 mA"
+        },
+        {
+          "id": "c",
+          "text": "3,8 mA"
+        },
+        {
+          "id": "d",
+          "text": "60 A"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ω₀ = 4000 rad·s⁻¹ et Q_m = C·U_m = 0,25·10⁻⁶ × 15 = 3,75 µC ; alors I_m = ω₀·Q_m = 4000 × 3,75·10⁻⁶ = 1,5·10⁻² A = 15 mA ✓ (L = 1/(ω₀²C) = 0,25 H donne le même résultat par ½·L·I_m² = ½·C·U_m²). La valeur 2,4 mA multiplie Q_m par la fréquence N₀ ≈ 637 Hz. La valeur 3,8 mA lit la charge Q_m = 3,75 µC comme une intensité en mA. La valeur 60 A multiplie Q_m par ω₀², alors que la dérivée de q ne fait apparaître ω₀ qu'une fois.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un circuit LC où C = 2,0 µF, la charge s'écrit q = Q_m·cos(ω₀t) avec Q_m = 30 µC. Quelle est l'énergie magnétique E_L de la bobine à l'instant t = T₀/6 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "56 µJ"
+        },
+        {
+          "id": "b",
+          "text": "1,9·10² µJ"
+        },
+        {
+          "id": "c",
+          "text": "1,7·10² µJ"
+        },
+        {
+          "id": "d",
+          "text": "1,1·10² µJ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'énergie totale vaut E = Q_m²/(2C) = (30·10⁻⁶)² / (4,0·10⁻⁶) = 225 µJ. À t = T₀/6, ω₀t = π/3 : q = Q_m/2, donc E_C = q²/(2C) = E/4 ≈ 56 µJ et E_L = E − E_C = ¾E ≈ 169 µJ, soit 1,7·10² µJ ✓. La valeur 56 µJ est l'énergie électrique E_C, non celle de la bobine. La valeur 1,9·10² µJ vient de E·sin(π/3) : le carré du sinus est oublié. La valeur 1,1·10² µJ est E/2, la répartition à parts égales qui a lieu pour la première fois à t = T₀/8.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un circuit RLC libre comporte un condensateur de 0,40 µF. Au premier maximum de u_C, son énergie vaut 45 µJ ; au minimum qui suit, elle n'est plus que de 20 µJ. De combien la valeur absolue de u_C a-t-elle diminué ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De 3,5 V"
+        },
+        {
+          "id": "b",
+          "text": "De 63 V"
+        },
+        {
+          "id": "c",
+          "text": "De 125 V"
+        },
+        {
+          "id": "d",
+          "text": "De 5,0 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "i = 0 à ces instants, donc E = ½·C·u_C² et |u_C| = √(2E/C) : √(2 × 45·10⁻⁶ / 0,40·10⁻⁶) = 15 V puis √(2 × 20·10⁻⁶ / 0,40·10⁻⁶) = 10 V ; la valeur absolue a diminué de 5,0 V ✓. La valeur 3,5 V vient de E = C·u_C² (facteur ½ oublié). La valeur 63 V est la différence de E/C, sans le facteur 2 ni la racine. La valeur 125 V est la différence de 2E/C, avec la racine oubliée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un circuit LC non amorti (L = 0,40 H ; C = 0,10 µF), la charge a pour amplitude Q_m = 8,0 µC. À un instant où E_C = E_L, quelle est la valeur absolue de l'intensité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 mA"
+        },
+        {
+          "id": "b",
+          "text": "28 mA"
+        },
+        {
+          "id": "c",
+          "text": "40 mA"
+        },
+        {
+          "id": "d",
+          "text": "57 mA"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ω₀ = 1/√(0,40 × 0,10·10⁻⁶) = 5,0·10³ rad·s⁻¹ et I_m = ω₀Q_m = 40 mA. Quand E_C = E_L, E_L = E/2, soit ½·L·i² = ½ × (½·L·I_m²), donc i = I_m/√2 ≈ 28 mA ✓. La valeur 20 mA prend la moitié de I_m, ce qui revient à E_L = E/4. La valeur 40 mA est I_m, atteinte quand toute l'énergie est magnétique. La valeur 57 mA multiplie I_m par √2 au lieu de le diviser : elle dépasse l'amplitude.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans un circuit LC non amorti, doubler C (L inchangée) multiplie la pulsation propre par √2."
+        },
+        {
+          "id": "b",
+          "text": "Dans un circuit RLC libre, à intensité donnée, doubler la résistance totale double la puissance dissipée par effet Joule."
+        },
+        {
+          "id": "c",
+          "text": "Dans un circuit LC non amorti, l'énergie E_C du condensateur oscille avec la période T₀/2."
+        },
+        {
+          "id": "d",
+          "text": "Dans un circuit RLC libre, l'amplitude de u_C décroît parce que l'inductance L de la bobine transforme de l'énergie en chaleur."
+        },
+        {
+          "id": "e",
+          "text": "Dans un circuit LC non amorti, quand la charge q est nulle, la valeur absolue de l'intensité vaut ω₀·Q_m."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Vraies : la puissance dissipée vaut R·i², donc proportionnelle à R à intensité donnée ; E_C = (Q_m²/4C)(1 + cos 2ω₀t) a pour période T₀/2 ; quand q = 0, toute l'énergie est magnétique et |i| = I_m = ω₀·Q_m. Fausses : ω₀ = 1/√(LC), donc doubler C divise ω₀ par √2 et ne le multiplie pas ; dans un circuit RLC, c'est la résistance totale R = R₀ + r qui dissipe l'énergie par effet Joule ; l'inductance L ne fait qu'échanger de l'énergie magnétique avec le condensateur.",
+      "difficulty": 3
+    }
+  ]
+}
