@@ -1,0 +1,127 @@
+{
+  "title": "⭐ Exercice : Les premiers pas dans le noyau",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Combien de neutrons contient le noyau d'argent ¹⁰⁷₄₇Ag ?",
+      "answerKey": {
+        "value": 60,
+        "unit": "neutrons"
+      },
+      "explanation": "N = A − Z = 107 − 47 = 60 neutrons ✓. Le nombre 107 compte tous les nucléons et 47 compte les protons : les neutrons sont la différence.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le noyau d'un atome est environ 100 000 fois plus petit que l'atome. On agrandit un noyau jusqu'à la taille d'une bille de rayon 1 cm. Quel serait alors le rayon de l'atome ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 m"
+        },
+        {
+          "id": "b",
+          "text": "100 m"
+        },
+        {
+          "id": "c",
+          "text": "1 km"
+        },
+        {
+          "id": "d",
+          "text": "10 km"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le rapport est 10⁵ : 1 cm = 10⁻² m, et 10⁻² × 10⁵ = 10³ m = 1 km ✓. 10 m ne multiplie que par 10³, et 100 m que par 10⁴. 10 km multiplie par 10⁶, un facteur dix de trop.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un noyau de soufre (symbole S) contient 16 protons et 18 neutrons. Quel est son symbole complet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "¹⁶₁₆S"
+        },
+        {
+          "id": "b",
+          "text": "¹⁸₁₆S"
+        },
+        {
+          "id": "c",
+          "text": "³⁴₁₈S"
+        },
+        {
+          "id": "d",
+          "text": "³⁴₁₆S"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "A = Z + N = 16 + 18 = 34 et Z = 16 : le symbole est ³⁴₁₆S ✓. ¹⁶₁₆S prend A égal à Z, ce qui oublie les neutrons. ¹⁸₁₆S prend pour A le seul nombre de neutrons. ³⁴₁₈S met 18, le nombre de neutrons, à la place de Z, qui compte les protons.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le noyau de sodium ²³₁₁Na a pour masse m = 22,98374 u. Calculer son défaut de masse, en u (m_p = 1,00728 u ; m_n = 1,00867 u).",
+      "answerKey": {
+        "value": 0.20038,
+        "tolerance": 2e-05,
+        "unit": "u"
+      },
+      "explanation": "²³₁₁Na compte 11 protons et 23 − 11 = 12 neutrons : 11 × 1,00728 + 12 × 1,00867 = 11,08008 + 12,10404 = 23,18412 u. Donc Δm = 23,18412 − 22,98374 = 0,20038 u ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le noyau de silicium ²⁸₁₄Si a pour masse m = 27,96925 u. Quelle est son énergie de liaison ? (m_p = 1,00728 u ; m_n = 1,00867 u ; 1 u = 931,5 MeV·c⁻²)",
+      "options": [
+        {
+          "id": "a",
+          "text": "236,6 MeV"
+        },
+        {
+          "id": "b",
+          "text": "218,5 MeV"
+        },
+        {
+          "id": "c",
+          "text": "8,45 MeV"
+        },
+        {
+          "id": "d",
+          "text": "0,254 MeV"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "²⁸₁₄Si compte 14 protons et 14 neutrons : Δm = 14 × 1,00728 + 14 × 1,00867 − 27,96925 = 0,25405 u, donc E_ℓ = 0,25405 × 931,5 = 236,6 MeV ✓. 218,5 MeV traite les 28 nucléons comme des protons (Δm = 28 × 1,00728 − 27,96925 = 0,23459 u). 8,45 MeV est l'énergie par nucléon, 236,6 / 28 : on a divisé par A alors qu'on demande l'énergie de liaison. 0,254 MeV garde le défaut de masse en u sans le convertir.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'énergie de masse d'un objet est E₀ = 2,7 × 10¹⁴ J. Quelle est sa masse ? (c = 3,00 × 10⁸ m/s)",
+      "options": [
+        {
+          "id": "a",
+          "text": "9,0 × 10⁵ kg"
+        },
+        {
+          "id": "b",
+          "text": "3,0 × 10⁻³ kg"
+        },
+        {
+          "id": "c",
+          "text": "2,7 × 10¹⁴ kg"
+        },
+        {
+          "id": "d",
+          "text": "2,4 × 10³¹ kg"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "De E₀ = m·c², on tire m = E₀ / c² = 2,7 × 10¹⁴ / (3,00 × 10⁸)² = 2,7 × 10¹⁴ / 9,0 × 10¹⁶ = 3,0 × 10⁻³ kg ✓. 9,0 × 10⁵ kg divise par c au lieu de c². 2,7 × 10¹⁴ kg reprend la valeur en joules comme si c'était une masse. 2,4 × 10³¹ kg multiplie par c² au lieu de diviser.",
+      "difficulty": 2
+    }
+  ]
+}

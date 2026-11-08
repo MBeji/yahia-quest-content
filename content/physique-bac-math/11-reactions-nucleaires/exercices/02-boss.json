@@ -1,0 +1,128 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du noyau",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Le neptunium ²³⁷₉₃Np aboutit à un noyau stable après 8 désintégrations α et 4 désintégrations β⁻. Quel est ce noyau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "²⁰⁵₇₇Ir"
+        },
+        {
+          "id": "b",
+          "text": "²⁰⁵₇₃Ta"
+        },
+        {
+          "id": "c",
+          "text": "²⁰⁵₈₁Tl"
+        },
+        {
+          "id": "d",
+          "text": "²⁰⁵₈₉Ac"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "A = 237 − 4 × 8 = 205 ; Z = 93 − 2 × 8 + 4 = 81 : ²⁰⁵₈₁Tl ✓. ²⁰⁵₇₇Ir oublie les β⁻ (93 − 16). ²⁰⁵₇₃Ta retire 1 à Z à chaque β⁻ (93 − 16 − 4). ²⁰⁵₈₉Ac ne retire qu'un proton par α (93 − 8 + 4).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'activité d'un échantillon passe de 1,0 × 10⁴ Bq à 4,0 × 10³ Bq en 30 min. Quelle est la période du radioélément ? (ln 2 = 0,693 ; ln 2,5 = 0,916)",
+      "options": [
+        {
+          "id": "a",
+          "text": "39,7 min"
+        },
+        {
+          "id": "b",
+          "text": "32,8 min"
+        },
+        {
+          "id": "c",
+          "text": "12,0 min"
+        },
+        {
+          "id": "d",
+          "text": "22,7 min"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "A = A₀·e^(−λt) donne λ = ln(A₀/A) / t = ln 2,5 / 30 = 0,916 / 30 = 3,05 × 10⁻² min⁻¹, puis T = ln 2 / λ = 0,693 / 3,05 × 10⁻² = 22,7 min ✓. Contrôle : A/A₀ = 0,40 est compris entre 1/2 et 1/4, donc la durée de 30 min est comprise entre T et 2T. 39,7 min inverse le rapport des logarithmes (t·ln 2,5 / ln 2). 32,8 min calcule 1/λ en oubliant ln 2. 12,0 min divise la durée par le rapport 2,5 des activités, ce qui ne tient pas compte de la loi exponentielle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un fragment de fission, le krypton ⁹⁰₃₆Kr, subit quatre désintégrations β⁻ successives et atteint un noyau stable. Quel est ce noyau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "⁹⁰₄₀Zr"
+        },
+        {
+          "id": "b",
+          "text": "⁹⁰₃₂Ge"
+        },
+        {
+          "id": "c",
+          "text": "⁹⁰₃₉Y"
+        },
+        {
+          "id": "d",
+          "text": "⁹⁰₄₄Ru"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque β⁻ ajoute 1 à Z et laisse A inchangé : A = 90 et Z = 36 + 4 = 40, soit ⁹⁰₄₀Zr ✓. ⁹⁰₃₂Ge retire 1 à Z à chaque β⁻ (36 − 4 = 32). ⁹⁰₃₉Y s'arrête après trois désintégrations sur les quatre. ⁹⁰₄₄Ru ajoute 2 à Z à chaque β⁻ (36 + 8), comme si chaque électron emportait deux charges.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une centrale nucléaire fournit une puissance thermique de 2,4 × 10⁹ W. Chaque fission libère 200 MeV. Combien de fissions se produisent par seconde ? (1 MeV = 1,60 × 10⁻¹³ J) (1 W = 1 J·s⁻¹ : la puissance est l'énergie libérée par seconde)",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,5 × 10²⁵ s⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "7,5 × 10¹⁹ s⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "1,2 × 10⁷ s⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "7,7 × 10⁻² s⁻¹"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'énergie d'une fission est 200 × 1,60 × 10⁻¹³ = 3,20 × 10⁻¹¹ J. Comme 1 W = 1 J·s⁻¹, le nombre de fissions par seconde est 2,4 × 10⁹ / 3,20 × 10⁻¹¹ = 7,5 × 10¹⁹ s⁻¹ ✓ (des J·s⁻¹ divisés par des J par fission donnent des fissions par seconde). 7,5 × 10²⁵ s⁻¹ convertit les MeV avec 1,6 × 10⁻¹⁹ J, valeur de l'électronvolt. 1,2 × 10⁷ s⁻¹ divise la puissance par 200 sans convertir les MeV en joules. 7,7 × 10⁻² s⁻¹ multiplie la puissance par l'énergie d'une fission au lieu de la diviser.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un échantillon de 2,50 g de carbone extrait d'un charbon de bois ancien donne 11,0 désintégrations par minute. Le bois vivant donne 13,6 désintégrations par minute et par gramme de carbone. La période du carbone 14 est T = 5730 ans (ln 2 = 0,693 ; ln 3,09 = 1,128). Quel est l'âge du charbon, en milliers d'années ?",
+      "answerKey": {
+        "value": 9.33,
+        "tolerance": 0.05,
+        "unit": "10³ ans"
+      },
+      "explanation": "L'activité par gramme du charbon est 11,0 / 2,50 = 4,40 désintégrations par minute et par gramme, donc A₀/A = 13,6 / 4,40 = 3,09. Alors t = (T/ln 2)·ln(A₀/A) = (5730 / 0,693) × 1,128 = 8268 × 1,128 = 9,33 × 10³ ans ✓, soit 9,33 en milliers d'années. Contrôle : 3,09 est compris entre 2 et 4, donc l'âge est compris entre T et 2T (5730 et 11 460 ans).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le polonium 210 (²¹⁰₈₄Po) est un émetteur α qui donne du plomb 206 (Z = 82). Masses des atomes : m(²¹⁰₈₄Po) = 209,98287 u ; m(²⁰⁶₈₂Pb) = 205,97447 u ; m(⁴₂He) = 4,00260 u (les masses des électrons se compensent dans le bilan). Une source de polonium 210 a une activité de 3,7 × 10¹⁰ Bq. Quelle puissance libère-t-elle, en 10⁻² W, si toute l'énergie des désintégrations est absorbée ? (1 u = 931,5 MeV·c⁻² ; 1 MeV = 1,60 × 10⁻¹³ J) (1 W = 1 J·s⁻¹ : la puissance est l'énergie libérée par seconde)",
+      "answerKey": {
+        "value": 3.2,
+        "tolerance": 0.03,
+        "unit": "10⁻² W"
+      },
+      "explanation": "|Δm| = 209,98287 − (205,97447 + 4,00260) = 0,00580 u, donc E = 0,00580 × 931,5 = 5,40 MeV par noyau, soit 5,40 × 1,60 × 10⁻¹³ = 8,64 × 10⁻¹³ J. L'activité est de 3,7 × 10¹⁰ désintégrations par seconde, donc la puissance vaut P = 3,7 × 10¹⁰ × 8,64 × 10⁻¹³ = 3,2 × 10⁻² W ✓ (des J par désintégration multipliés par des désintégrations par seconde donnent des J·s⁻¹, soit des W), soit 3,2 en unité de 10⁻² W.",
+      "difficulty": 3
+    }
+  ]
+}
