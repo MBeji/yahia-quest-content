@@ -1,0 +1,139 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les ruses de l'onde",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur la réflexion et la réfraction d'une onde, lesquelles sont correctes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lors de la réfraction d'une onde, la fréquence ne change pas"
+        },
+        {
+          "id": "b",
+          "text": "Un ébranlement réfléchi à une extrémité fixe garde le même sens de déformation"
+        },
+        {
+          "id": "c",
+          "text": "Lors de la réflexion d'une onde plane, la longueur d'onde ne change pas"
+        },
+        {
+          "id": "d",
+          "text": "Lors de la réfraction, λ₁/λ₂ = sin i₁ / sin i₂"
+        },
+        {
+          "id": "e",
+          "text": "Une onde qui passe dans un milieu où sa célérité est plus grande se rapproche de la normale"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Sont correctes : la fréquence est imposée par la source et ne change pas dans la réfraction ; la réflexion, dans le même milieu, conserve λ ; λ₁·sin i₂ = λ₂·sin i₁ donne λ₁/λ₂ = sin i₁/sin i₂ ✓. À une extrémité fixe, le sens de déformation est contraire. Quand la célérité augmente, l'angle augmente aussi : le rayon s'éloigne de la normale.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une même cuve à ondes (mêmes milieux, même fréquence), quatre couples (i₁ ; i₂) sont relevés :\ni₁ = 20° : i₂ = 13°\ni₁ = 30° : i₂ = 19,5°\ni₁ = 45° : i₂ = 33°\ni₁ = 60° : i₂ = 35°\nLequel n'obéit pas à la loi de la réfraction ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "i₁ = 45°"
+        },
+        {
+          "id": "b",
+          "text": "i₁ = 20°"
+        },
+        {
+          "id": "c",
+          "text": "i₁ = 30°"
+        },
+        {
+          "id": "d",
+          "text": "i₁ = 60°"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour les mêmes milieux, sin i₁/sin i₂ est constant (il vaut λ₁/λ₂) : 0,342/0,225 = 1,52 ; 0,500/0,334 = 1,50 ; 0,866/0,574 = 1,51, mais 0,707/0,545 = 1,30 ✓. La mesure erronée est celle de i₁ = 45° : on attendait sin i₂ = 0,707/1,51 = 0,468, soit i₂ = 27,9°. Le rapport des angles i₁/i₂ n'est pas constant (1,54 ; 1,54 ; 1,36 ; 1,71) : il ne permet pas de juger.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On trace la largeur L de la tache centrale en fonction de 1/a pour un laser, avec un écran à D = 1,80 m. La droite obtenue passe par l'origine et par le point (1/a = 8,0 × 10³ m⁻¹ ; L = 17 mm). Quelle est la longueur d'onde du laser, en nm ?",
+      "answerKey": {
+        "value": 590,
+        "tolerance": 5,
+        "unit": "nm"
+      },
+      "explanation": "La pente de la droite est k = L/(1/a) = 17 × 10⁻³ / 8,0 × 10³ = 2,125 × 10⁻⁶ m². Avec k = 2Dλ, λ = k/(2D) = 2,125 × 10⁻⁶ / 3,60 = 5,9 × 10⁻⁷ m = 590 nm ✓ (m²/m = m). Oublier le facteur 2 donnerait 1 180 nm ; laisser L en mm donnerait un résultat 1 000 fois trop grand.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une radiation passe de l'air, où sa célérité est c = 3,00 × 10⁸ m/s, dans un verre où sa célérité est 1,98 × 10⁸ m/s, sous l'incidence i₁ = 50°. Quel est l'angle de réfraction i₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "33,0°"
+        },
+        {
+          "id": "b",
+          "text": "19,5°"
+        },
+        {
+          "id": "c",
+          "text": "30,4°"
+        },
+        {
+          "id": "d",
+          "text": "50,0°"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La relation sin i₁/v₁ = sin i₂/v₂ donne sin i₂ = sin i₁ × v₂/v₁ = 0,7660 × 1,98/3,00 = 0,5056, donc i₂ = 30,4° ✓, plus petit que i₁ puisque la radiation ralentit. 33,0° suppose les angles proportionnels aux célérités (50 × 0,66). 19,5° applique deux fois le rapport v₂/v₁. 50,0° ne tient pas compte du changement de milieu.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec une même fente de largeur réglable et un même écran, on mesure L en fonction de 1/a pour deux lasers A et B (figure). Le laser B a pour longueur d'onde 450 nm. Quelle est la longueur d'onde du laser A ?\n<svg viewBox=\"0 0 340 230\"><title>Largeur L de la tache centrale en fonction de 1/a pour deux lasers A et B : deux droites issues de l'origine, passant par les points (8,0 ; 14,4) pour A et (8,0 ; 10,8) pour B</title><line x1=\"56\" y1=\"164\" x2=\"316\" y2=\"164\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"115.1\" x2=\"316\" y2=\"115.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"133.8\" x2=\"316\" y2=\"133.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"86\" x2=\"316\" y2=\"86\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"190\" x2=\"318\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"190\" x2=\"56\" y2=\"28\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"326,190 318,186 318,194\" fill=\"#0f172a\"/><polygon points=\"56,22 52,30 60,30\" fill=\"#0f172a\"/><line x1=\"56\" y1=\"190\" x2=\"56\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"56\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >0</text><line x1=\"99.3\" y1=\"190\" x2=\"99.3\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"99.3\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >2</text><line x1=\"142.7\" y1=\"190\" x2=\"142.7\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"142.7\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >4</text><line x1=\"186\" y1=\"190\" x2=\"186\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"186\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >6</text><line x1=\"229.3\" y1=\"190\" x2=\"229.3\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"229.3\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >8</text><line x1=\"272.7\" y1=\"190\" x2=\"272.7\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"272.7\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >10</text><line x1=\"316\" y1=\"190\" x2=\"316\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"316\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >12</text><line x1=\"52\" y1=\"190\" x2=\"56\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"48\" y=\"194\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >0</text><line x1=\"52\" y1=\"164\" x2=\"56\" y2=\"164\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"48\" y=\"168\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >5</text><line x1=\"52\" y1=\"115.1\" x2=\"56\" y2=\"115.1\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"48\" y=\"119.1\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >14,4</text><line x1=\"52\" y1=\"133.8\" x2=\"56\" y2=\"133.8\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"48\" y=\"137.8\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >10,8</text><line x1=\"52\" y1=\"86\" x2=\"56\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"48\" y=\"90\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >20</text><text x=\"316\" y=\"226\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >1/a (10³ m⁻¹)</text><text x=\"64\" y=\"20\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >L (mm)</text><line x1=\"56\" y1=\"190\" x2=\"294.3\" y2=\"87\" stroke=\"#7c3aed\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"229.3\" cy=\"115.1\" r=\"3.8\" fill=\"#7c3aed\"/><text x=\"298.3\" y=\"81\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#7c3aed\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >A</text><line x1=\"56\" y1=\"190\" x2=\"294.3\" y2=\"112.8\" stroke=\"#0369a1\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"229.3\" cy=\"133.8\" r=\"3.8\" fill=\"#0369a1\"/><text x=\"298.3\" y=\"107\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" >B</text><line x1=\"229.3\" y1=\"190\" x2=\"229.3\" y2=\"115.1\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"115.1\" x2=\"229.3\" y2=\"115.1\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\" stroke-linecap=\"round\"/><line x1=\"229.3\" y1=\"190\" x2=\"229.3\" y2=\"133.8\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"133.8\" x2=\"229.3\" y2=\"133.8\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 2\" stroke-linecap=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "338 nm"
+        },
+        {
+          "id": "b",
+          "text": "450 nm"
+        },
+        {
+          "id": "c",
+          "text": "800 nm"
+        },
+        {
+          "id": "d",
+          "text": "600 nm"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les pentes se lisent au point 1/a = 8,0 × 10³ m⁻¹ : L = 14,4 mm pour A et 10,8 mm pour B. Comme k = 2Dλ avec le même D, λ_A/λ_B = k_A/k_B = 14,4/10,8, donc λ_A = 450 × 14,4/10,8 = 600 nm ✓. 338 nm vient du rapport 10,8/14,4 pris à l'envers. 450 nm suppose que deux lasers éclairant la même fente avec le même écran ont la même longueur d'onde, alors que les pentes diffèrent. 800 nm élève le rapport au carré.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une lumière monochromatique de longueur d'onde 589 nm éclaire une fente. On veut que la demi-largeur angulaire de la tache centrale soit θ = 1,0°. Quelle largeur a faut-il donner à la fente, en μm ? (petits angles)",
+      "answerKey": {
+        "value": 33.7,
+        "tolerance": 0.3,
+        "unit": "μm"
+      },
+      "explanation": "Avec θ en radian : θ = 1,0° = 1,0 × π/180 = 1,75 × 10⁻² rad, et θ = λ/a donne a = λ/θ = 5,89 × 10⁻⁷ / 1,75 × 10⁻² = 3,37 × 10⁻⁵ m = 33,7 μm ✓. Garder θ en degrés donnerait 0,59 μm, 57 fois trop petit ; écrire θ = λ/(2a), comme pour L/(2D), donnerait 16,9 μm.",
+      "difficulty": 3
+    }
+  ]
+}

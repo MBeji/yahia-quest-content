@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : La récursivité",
+  "questions": [
+    {
+      "prompt": "Parmi ces sous-programmes, lequel est récursif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perimetre (r) : Perimetre ← 2 * Pi * r"
+        },
+        {
+          "id": "b",
+          "text": "Aire (r) : Aire ← Pi * Carre (r), où Carre (x) rend x * x"
+        },
+        {
+          "id": "c",
+          "text": "Total (m) : Si m = 0 Alors Total ← 0 Sinon Total ← m + Total (m - 1)"
+        },
+        {
+          "id": "d",
+          "text": "Moyenne (T, n) : une boucle Pour additionne les éléments de T puis divise par n"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Total contient l'appel Total (m - 1) dans son propre corps : c'est la définition d'un sous-programme récursif ✓. Le sous-programme qui appelle Carre ne l'est pas, car Carre n'appelle ni lui ni son appelant. Celui qui calcule 2 × π × r ne contient aucun appel. La boucle Pour est un procédé itératif, pas une récursivité.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la fonction Factorielle, quel est le rôle de la ligne Si n = 0 Alors Factorielle ← 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle traite le cas particulier, qui est la condition d'arrêt"
+        },
+        {
+          "id": "b",
+          "text": "Elle effectue l'appel récursif qui traite le cas général"
+        },
+        {
+          "id": "c",
+          "text": "Elle initialise le compteur d'une boucle Pour avant le calcul du produit"
+        },
+        {
+          "id": "d",
+          "text": "Elle diminue la valeur du paramètre avant chaque appel récursif"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand n vaut 0, le résultat est connu sans calcul : c'est le cas particulier, résolu directement, et c'est lui qui arrête la suite des appels ✓. L'appel récursif du cas général est la ligne Factorielle ← n * Factorielle (n - 1). C'est cette dernière aussi qui fait baisser le paramètre. Il n'y a aucune boucle dans une version récursive.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Somme (m) vaut 0 si m = 0, et m + Somme (m - 1) sinon. Que renvoie Somme (3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Somme (3) = 3 + Somme (2) = 3 + 2 + Somme (1) = 3 + 2 + 1 + Somme (0) = 3 + 2 + 1 + 0 = 6 ✓. Le résultat 3 s'arrête au premier terme. Le résultat 5 oublie le terme 1. Le résultat 7 suppose un cas particulier valant 1 au lieu de 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "G (n) vaut 0 si n = 10, et 1 + G (n + 3) sinon. Quel appel ne s'arrête jamais ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G (1)"
+        },
+        {
+          "id": "b",
+          "text": "G (4)"
+        },
+        {
+          "id": "c",
+          "text": "G (7)"
+        },
+        {
+          "id": "d",
+          "text": "G (8)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les arguments de G (8) sont 8, 11, 14, … : ils sautent par-dessus 10 et la condition n = 10 n'est jamais vraie, donc l'appel ne s'arrête pas ✓. Les arguments de G (1) sont 1, 4, 7, 10, ceux de G (4) sont 4, 7, 10 et ceux de G (7) sont 7, 10 : ces trois appels atteignent 10.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pendant l'exécution de Somme (0), appelée par Somme (1), elle-même appelée par Somme (2), que contient la pile ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une seule valeur de m, 0, qui a remplacé les valeurs précédentes"
+        },
+        {
+          "id": "b",
+          "text": "Trois valeurs de m, une par appel en attente ou en cours : 2, 1 et 0"
+        },
+        {
+          "id": "c",
+          "text": "Deux valeurs de m, 2 et 1, car le cas d'arrêt n'est pas empilé"
+        },
+        {
+          "id": "d",
+          "text": "Aucune valeur, car la pile reste vide tant qu'aucun résultat n'est calculé"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chaque appel empile sa propre valeur du paramètre, et aucun n'est terminé quand Somme (0) s'exécute : la pile contient m = 2, m = 1 et m = 0 ✓. Le nouvel appel n'écrase pas le paramètre de l'appelant. Le cas particulier est lui aussi un appel, donc il est empilé. La pile se remplit dès le premier appel, avant tout résultat.",
+      "difficulty": 2
+    }
+  ]
+}

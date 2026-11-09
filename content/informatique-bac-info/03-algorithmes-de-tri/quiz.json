@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Les algorithmes de tri",
+  "questions": [
+    {
+      "prompt": "Un programme trie en mémoire centrale les 60 relevés de température rangés dans un tableau. De quelle famille de tris relève-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un tri externe, car la mémoire centrale est trop petite"
+        },
+        {
+          "id": "b",
+          "text": "Un tri interne, car toutes les valeurs sont des nombres entiers"
+        },
+        {
+          "id": "c",
+          "text": "Un tri interne, car les données sont en mémoire centrale"
+        },
+        {
+          "id": "d",
+          "text": "Un tri externe, car les données sont rangées dans un tableau"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un tri interne traite une masse de données limitée, stockée en mémoire centrale, par exemple dans un tableau ✓. Rien n'indique que la mémoire soit trop petite : 60 valeurs y tiennent largement, et c'est justement le cas du tri interne. Le type des valeurs (entiers) ne décide pas de la famille. Le tableau est la structure du tri interne ; celle du tri externe est le fichier.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À l'étape 1 du tri par sélection d'un tableau T de n éléments, que fait-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On compare T[1] et T[2], puis on les permute s'ils sont mal rangés"
+        },
+        {
+          "id": "b",
+          "text": "On échange T[1] avec le plus petit élément de tout le tableau"
+        },
+        {
+          "id": "c",
+          "text": "On sauvegarde T[1] dans Tmp puis on décale les éléments plus grands"
+        },
+        {
+          "id": "d",
+          "text": "On échange T[2] avec le plus petit élément de T[2..n]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À l'étape 1, on cherche le plus petit élément de T[1..n] et on l'échange avec T[1] ✓. La comparaison de deux voisins avec permutation est le geste du tri à bulles. La sauvegarde dans Tmp suivie d'un décalage est celui du tri par insertion. L'échange de T[2] avec le minimum de T[2..n] est l'étape 2 de la sélection, pas la première.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On applique un premier passage complet du tri à bulles (ordre croissant) à T = [7, 2, 9, 4]. Que contient T ensuite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[2, 7, 4, 9]"
+        },
+        {
+          "id": "b",
+          "text": "[2, 4, 7, 9]"
+        },
+        {
+          "id": "c",
+          "text": "[2, 7, 9, 4]"
+        },
+        {
+          "id": "d",
+          "text": "[7, 9, 4, 2]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Passage 1 : 7 > 2 permute, 7 < 9 non, 9 > 4 permute, d'où T = [2, 7, 4, 9] ✓ et le 9 est à sa place. Un seul passage ne trie pas tout : dans [2, 4, 7, 9], le 4 aurait déjà reculé de deux cases. Le tableau [2, 7, 9, 4] est ce qu'on obtient après la première permutation seule, ou après l'étape 1 du tri par sélection. Le tableau [7, 9, 4, 2] est le résultat d'un passage où l'on permute quand le premier est plus petit : un tri décroissant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le tri par insertion, pourquoi sauvegarde-t-on T[i] dans Tmp avant de décaler les éléments ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tmp compte le nombre de décalages effectués à cette itération"
+        },
+        {
+          "id": "b",
+          "text": "Tmp garde le plus petit élément du tableau pour le placer en tête"
+        },
+        {
+          "id": "c",
+          "text": "Pascal interdit de relire T[i] après l'avoir comparé à T[i − 1]"
+        },
+        {
+          "id": "d",
+          "text": "Le premier décalage écrase T[i] : la valeur serait perdue"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le premier décalage recopie T[i − 1] dans la case i, donc il écrase T[i] ; sans Tmp, la valeur à insérer est perdue ✓. Un compteur de décalages serait une autre variable, et Tmp contient une valeur du tableau, pas un nombre de décalages. Garder le plus petit élément est le rôle de la recherche de minimum du tri par sélection, pas de Tmp. Pascal permet de relire T[i] à tout moment : le danger vient de l'écriture qui le recouvre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le tri Shell, que fait-on au dernier passage, quand le pas vaut 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On trie tout le tableau par insertion simple, déjà dégrossi"
+        },
+        {
+          "id": "b",
+          "text": "On ne fait rien : les passages précédents ont déjà trié le tableau"
+        },
+        {
+          "id": "c",
+          "text": "On fusionne les deux moitiés du tableau, triées pendant les passages précédents"
+        },
+        {
+          "id": "d",
+          "text": "On échange le plus petit élément avec T[1], puis on s'arrête"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Au pas 1, les sous-vecteurs sont formés de cases voisines : c'est l'insertion simple sur tout le tableau, rapide parce que les grands désordres ont disparu ✓. Les passages de pas supérieur ne comparent que des cases éloignées : des voisins peuvent rester mal rangés, donc le tableau n'est pas encore trié. La fusion est une autre méthode, qui ne coupe pas le tableau en moitiés ici. L'échange du minimum avec T[1] est le début du tri par sélection.",
+      "difficulty": 2
+    }
+  ]
+}

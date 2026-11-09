@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Lire et corriger du Pascal",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "On adapte Div_4 pour tester si un entier m est divisible par 25. Quelle condition faut-il écrire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(m Mod 10) Mod 25 = 0"
+        },
+        {
+          "id": "b",
+          "text": "(m Div 100) Mod 25 = 0"
+        },
+        {
+          "id": "c",
+          "text": "(m Mod 100) Mod 25 = 0"
+        },
+        {
+          "id": "d",
+          "text": "(m Mod 100) Div 25 = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour m = 6 275, m Mod 100 = 75 et 75 Mod 25 = 0 : la condition reconnaît bien un multiple de 25 ✓ (6 275 = 25 × 251). La condition (m Mod 10) Mod 25 = 0 ne regarde que le chiffre des unités : elle donne 5 pour 6 275, qu'elle refuse à tort, et elle accepte 130 (0), qui n'est pas un multiple de 25. La condition (m Div 100) Mod 25 teste le début du nombre, 62, au lieu des deux derniers chiffres. La condition (m Mod 100) Div 25 prend le quotient au lieu du reste : 75 Div 25 = 3, donc elle refuse 6 275 à tort.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans Div_3, quelle instruction remplace les points ?\nFor i := 1 To Length (ch) Do Begin Val (ch[i], nb, e); … End",
+      "options": [
+        {
+          "id": "a",
+          "text": "somme := nb"
+        },
+        {
+          "id": "b",
+          "text": "somme := somme * nb"
+        },
+        {
+          "id": "c",
+          "text": "somme := somme + i"
+        },
+        {
+          "id": "d",
+          "text": "somme := somme + nb"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaque tour doit cumuler le chiffre converti : somme := somme + nb ✓ (pour '531', 5 + 3 + 1 = 9, divisible par 3). Avec somme := nb, la somme ne garde que le dernier chiffre : '531' donne 1 et conclut à tort que 531 n'est pas divisible par 3. Avec somme := somme + i, on additionne les positions 1 + 2 + 3 = 6, quel que soit le nombre : '542', non divisible par 3, est déclaré divisible. Avec somme := somme * nb, somme part de 0 et y reste : tout nombre est déclaré divisible par 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On supprime le test p = n de Comb : il reste Si p = 0 Alors Comb ← 1 Sinon Comb ← Comb (n - 1, p) + Comb (n - 1, p - 1). Pour quels appels Comb (n, p), avec 0 ≤ p ≤ n, l'exécution s'arrête-t-elle encore ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour tout p strictement inférieur à n"
+        },
+        {
+          "id": "b",
+          "text": "Quand p vaut 0 ou quand p est égal à n"
+        },
+        {
+          "id": "c",
+          "text": "Seulement quand p vaut 0 dès l'appel"
+        },
+        {
+          "id": "d",
+          "text": "Pour tous les couples (n, p) du domaine"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si p = 0, le cas particulier répond 1 tout de suite. Si p ≥ 1, l'appel Comb (n - 1, p) fait baisser n sans changer p jusqu'à n = p, où plus aucun test n'arrête les appels : ils continuent avec n négatif, sans fin ✓. Un p strictement inférieur à n ne protège pas : Comb (4, 2) atteint Comb (2, 2) et ne s'arrête pas. Le cas p = n est justement celui qui ne s'arrête plus. Et tous les couples ne s'arrêtent pas, puisque seul p = 0 est traité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle version de la fonction Pgcd (x, y) est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "If x > y Then Pgcd := Pgcd (x - y, y) Else If x < y Then Pgcd := Pgcd (x, y - x) Else Pgcd := x"
+        },
+        {
+          "id": "b",
+          "text": "If x > y Then Pgcd := Pgcd (x - y, y) Else If x < y Then Pgcd := Pgcd (x, y - x) Else Pgcd := 1"
+        },
+        {
+          "id": "c",
+          "text": "If x > y Then Pgcd := Pgcd (x, y - x) Else If x < y Then Pgcd := Pgcd (x - y, y) Else Pgcd := x"
+        },
+        {
+          "id": "d",
+          "text": "If x > y Then Pgcd := Pgcd (x - y, y) Else Pgcd := Pgcd (x, y - x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La version qui rend x quand x = y traite chaque cas : x > y retranche y de x, x < y retranche x de y, et x = y rend x ✓. Celle qui rend 1 quand x = y se trompe : Pgcd (14, 21) arrive à (7, 7) et rend 1 au lieu de 7. Celle qui échange les branches ne s'arrête pas : pour (14, 21), x < y appelle Pgcd (−7, 21), puis Pgcd (−28, 21), et ainsi de suite sans fin. Celle qui n'a pas de cas x = y ne s'arrête pas non plus : (7, 7) appelle Pgcd (7, 0), qui se rappelle lui-même sans fin.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Règle de 11 (rangs comptés depuis la gauche) : un nombre est divisible par 11 si la différence entre la somme des chiffres de rang impair et celle des chiffres de rang pair est un multiple de 11. Lequel de ces nombres est divisible par 11 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 728"
+        },
+        {
+          "id": "b",
+          "text": "4 205"
+        },
+        {
+          "id": "c",
+          "text": "5 713"
+        },
+        {
+          "id": "d",
+          "text": "7 654"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour 2 728, (2 + 2) − (7 + 8) = 4 − 15 = −11, multiple de 11 ✓ (2 728 = 11 × 248). Pour 4 205, (4 + 0) − (2 + 5) = −3. Pour 5 713, (5 + 1) − (7 + 3) = −4. Pour 7 654, (7 + 5) − (6 + 4) = 2 : la somme de ses chiffres vaut 22, multiple de 11, mais ce n'est pas le critère, qui porte sur la différence.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Combien d'entiers n compris entre 1 et 100 vérifient : n divise n + 8 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme n divise déjà n, il divise n + 8 exactement quand il divise 8 : les valeurs sont les diviseurs de 8, soit 1, 2, 4 et 8, donc 4 valeurs ✓. Le nombre 8 compte tous les n de 1 à 8, alors que 3, 5, 6 et 7 ne divisent pas 8. Le nombre 3 oublie un diviseur, par exemple 1. Le nombre 2 ne garde que 2 et 4 et oublie 1 et 8.",
+      "difficulty": 2
+    }
+  ]
+}

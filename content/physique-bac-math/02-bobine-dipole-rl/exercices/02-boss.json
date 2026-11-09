@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du courant tardif",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Le pôle sud d'un aimant est en regard de la face de droite d'une bobine fermée. Le champ b⃗ créé par le courant induit est dirigé vers la gauche à l'intérieur de la bobine. L'aimant s'approche-t-il ou s'éloigne-t-il, et pourquoi ?\n<svg viewBox=\"0 0 280 120\"><title>Un aimant, de pôle sud en regard, est à droite d'une bobine ; le sens de son déplacement est inconnu (?) ; le champ induit b est dirigé vers la gauche dans la bobine</title><rect x=\"180\" y=\"55\" width=\"80\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"220\" y=\"43\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">?</text><text x=\"192\" y=\"80\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">S</text><ellipse cx=\"60\" cy=\"75\" rx=\"6\" ry=\"34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><ellipse cx=\"76\" cy=\"75\" rx=\"6\" ry=\"34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><ellipse cx=\"92\" cy=\"75\" rx=\"6\" ry=\"34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><ellipse cx=\"108\" cy=\"75\" rx=\"6\" ry=\"34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><ellipse cx=\"124\" cy=\"75\" rx=\"6\" ry=\"34\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"120\" y1=\"75\" x2=\"64\" y2=\"75\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><polygon points=\"56,75 64,71 64,79\" fill=\"#0f6e56\"/><text x=\"90\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">b</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il s'approche : B⃗ pointe vers l'aimant, b⃗ s'y oppose"
+        },
+        {
+          "id": "b",
+          "text": "Il s'éloigne : B⃗ pointe vers la gauche, b⃗ a le même sens"
+        },
+        {
+          "id": "c",
+          "text": "Il s'éloigne : B⃗ pointe vers l'aimant, b⃗ s'y oppose"
+        },
+        {
+          "id": "d",
+          "text": "Il s'approche : B⃗ pointe vers la gauche, b⃗ a le même sens"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "B⃗ rentre dans le pôle sud : en un point de la bobine, il est dirigé vers l'aimant, donc vers la droite. Le champ induit b⃗ est dirigé vers la gauche, opposé à B⃗ : la loi de Lenz l'impose quand ‖B⃗‖ augmente, donc quand l'aimant s'approche ✓. Un B⃗ dirigé vers la gauche contredit le pôle sud, dont les lignes de champ rentrent. Un b⃗ opposé à B⃗ ne peut pas accompagner un éloignement : il s'opposerait à une diminution. Un b⃗ de même sens que B⃗ correspondrait à une diminution de ‖B⃗‖, donc à un éloignement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bobine d'inductance L = 0,40 H, de résistance négligeable, est traversée de A vers B par le courant dont la courbe est représentée. Quelle est la tension u_AB pendant la descente du courant, entre 20 ms et 30 ms ?\n<svg viewBox=\"0 0 320 160\"><title>Courant i(t) : montée linéaire de 0 à 90 mA entre 0 et 20 ms, puis descente linéaire jusqu'à 30 mA à 30 ms</title><line x1=\"40\" y1=\"130\" x2=\"296\" y2=\"130\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"130\" x2=\"40\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"300,130 292,126 292,134\" fill=\"#0f172a\"/><polygon points=\"40,14 36,22 44,22\" fill=\"#0f172a\"/><polyline points=\"40,130 200,40 280,100\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"40\" x2=\"200\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" stroke-linecap=\"round\"/><line x1=\"280\" y1=\"100\" x2=\"280\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"100\" x2=\"280\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\" stroke-linecap=\"round\"/><text x=\"34\" y=\"44\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">90</text><text x=\"34\" y=\"104\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"50\" y=\"20\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i (mA)</text><text x=\"200\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"280\" y=\"146\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"312\" y=\"157\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"34\" y=\"134\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−24 V"
+        },
+        {
+          "id": "b",
+          "text": "−2,4 V"
+        },
+        {
+          "id": "c",
+          "text": "+1,8 V"
+        },
+        {
+          "id": "d",
+          "text": "+2,4 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pendant la descente, di/dt = (0,030 − 0,090) / (0,030 − 0,020) = −6,0 A/s. La résistance est négligeable, donc u_AB = L di/dt = 0,40 × (−6,0) = −2,4 V ✓. +2,4 V oublie que i décroît. +1,8 V est la tension de la phase de montée (0,40 × 4,5 A/s). −24 V lit la durée de descente comme 1 ms au lieu de 10 ms.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bobine d'inductance 0,60 H est parcourue par un courant de 50 mA. On veut l'interrompre, i décroissant régulièrement, sans que la valeur absolue de la f.e.m. d'auto-induction dépasse 30 V. Quelle est la durée minimale de la coupure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,0 s"
+        },
+        {
+          "id": "b",
+          "text": "2,8 ms"
+        },
+        {
+          "id": "c",
+          "text": "1,0 ms"
+        },
+        {
+          "id": "d",
+          "text": "0,50 ms"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On veut |e| = L Δi/Δt ≤ 30 V, donc Δt ≥ L Δi / 30 = 0,60 × 0,050 / 30 = 1,0 ms ✓. 0,50 ms glisse le facteur ½ de l'énergie dans la f.e.m. 2,8 ms place L au dénominateur : Δi / (L × 30). 1,0 s oublie de convertir les 50 mA en ampères.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL est soumis à un échelon de tension E = 6,0 V : une bobine (L = 0,25 H, r = 10 Ω) en série avec un résistor R₀ = 40 Ω. À un instant t, la tension aux bornes de R₀ vaut 2,0 V. Quelle est la valeur de di/dt à cet instant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24 A/s"
+        },
+        {
+          "id": "b",
+          "text": "18 A/s"
+        },
+        {
+          "id": "c",
+          "text": "16 A/s"
+        },
+        {
+          "id": "d",
+          "text": "14 A/s"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À cet instant, i = 2,0 / 40 = 0,050 A. La loi des mailles donne u_AB = E − u_BM = 6,0 − 2,0 = 4,0 V. Alors L di/dt = u_AB − r i = 4,0 − 10 × 0,050 = 3,5 V, d'où di/dt = 3,5 / 0,25 = 14 A/s ✓. 16 A/s oublie le terme r i (4,0 / 0,25). 18 A/s ajoute r i au lieu de le retrancher. 24 A/s est E/L, valeur de di/dt à t = 0 seulement.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un dipôle RL (E = 9,0 V, résistor R₀ = 30 Ω, résistance r de la bobine inconnue) est en régime permanent. On ouvre K ; une diode laisse passer le courant de la bobine, et la tension u_AB vaut −6,0 V juste après l'ouverture. Quelle est la résistance r de la bobine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15 Ω"
+        },
+        {
+          "id": "b",
+          "text": "60 Ω"
+        },
+        {
+          "id": "c",
+          "text": "45 Ω"
+        },
+        {
+          "id": "d",
+          "text": "75 Ω"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Juste après l'ouverture, u_AB = −R₀ i avec i = I₀, donc I₀ = 6,0 / 30 = 0,20 A. En régime permanent, I₀ = E / (R₀ + r), donc R₀ + r = 9,0 / 0,20 = 45 Ω et r = 45 − 30 = 15 Ω ✓. 60 Ω écrit u_AB = −r I₀ au lieu de −R₀ I₀ : r × 9,0 / (30 + r) = 6,0. 45 Ω donne la résistance totale, sans retrancher R₀. 75 Ω ajoute R₀ au lieu de le retrancher.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La figure montre le courant i(t) d'un dipôle RL après l'ouverture de K, une diode laissant passer le courant de la bobine, avec la tangente à l'origine. La bobine a une résistance r = 9,0 Ω et le résistor une résistance R₀ = 36 Ω. Quelle est l'inductance L de la bobine ?\n<svg viewBox=\"0 0 320 190\"><title>Courbe i(t) à la rupture, décroissante à partir de 0,30 A ; la tangente à l'origine coupe l'axe des temps à l'abscisse 6 ms</title><line x1=\"40\" y1=\"150\" x2=\"296\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"150\" x2=\"40\" y2=\"14\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"300,150 292,146 292,154\" fill=\"#0f172a\"/><polygon points=\"40,10 36,18 44,18\" fill=\"#0f172a\"/><polyline points=\"40,40 45,47.4 50,54.3 55,60.7 60,66.7 65,72.3 70,77.5 75,82.3 80,86.9 85,91.1 90,95.1 95,98.8 100,102.2 105,105.4 110,108.4 115,111.2 120,113.8 125,116.2 130,118.5 135,120.6 140,122.6 145,124.4 150,126.1 155,127.7 160,129.2 165,130.6 170,131.9 175,133.1 180,134.3 185,135.3 190,136.3 195,137.2 200,138.1 205,138.9 210,139.6 215,140.3 220,141 225,141.6 230,142.1 235,142.7 240,143.2 245,143.6 250,144 255,144.4 260,144.8 265,145.2 270,145.5 275,145.8 280,146.1\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"40\" x2=\"112\" y2=\"150\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\"/><circle cx=\"112\" cy=\"150\" r=\"3.5\" fill=\"#b45309\"/><text x=\"88\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"136\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><text x=\"184\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text><text x=\"232\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">16</text><text x=\"280\" y=\"166\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"34\" y=\"44\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,30</text><text x=\"34\" y=\"154\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"50\" y=\"16\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i (A)</text><text x=\"290\" y=\"184\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"130\" y=\"70\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">tangente</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,054 H"
+        },
+        {
+          "id": "b",
+          "text": "0,22 H"
+        },
+        {
+          "id": "c",
+          "text": "0,27 H"
+        },
+        {
+          "id": "d",
+          "text": "270 H"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À la rupture, la tangente à l'origine coupe l'axe des temps à l'abscisse τ = 6,0 ms. La résistance totale vaut R = R₀ + r = 45 Ω, donc L = τ R = 6,0 × 10⁻³ × 45 = 0,27 H ✓. 0,22 H oublie la résistance de la bobine (τ R₀). 0,054 H ne garde que r (τ r). 270 H oublie de convertir les millisecondes.",
+      "difficulty": 3
+    }
+  ]
+}

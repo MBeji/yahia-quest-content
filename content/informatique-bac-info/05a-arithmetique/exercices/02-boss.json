@@ -1,0 +1,161 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des chiffres",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur les règles de divisibilité, lesquelles sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un nombre est divisible par 4 si ses deux derniers chiffres forment un multiple de 4"
+        },
+        {
+          "id": "b",
+          "text": "Un nombre divisible par 9 est toujours divisible par 3"
+        },
+        {
+          "id": "c",
+          "text": "Un nombre est divisible par 3 si son chiffre des unités est divisible par 3"
+        },
+        {
+          "id": "d",
+          "text": "Un nombre est divisible par 25 s'il se termine par 0 ou par 5"
+        },
+        {
+          "id": "e",
+          "text": "Un nombre divisible par 2 et par 3 est divisible par 6"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "La règle de 4 porte bien sur les deux derniers chiffres ✓. Comme 9 = 3 × 3, tout multiple de 9 est un multiple de 3 ✓. Un nombre divisible par 2 et par 3 est divisible par 6 ✓. En revanche, la règle de 3 ne regarde pas le dernier chiffre : 21 se termine par 1 et vaut 3 × 7, alors que 13 se termine par 3 et n'est pas divisible par 3. Quant à 25, finir par 0 ou 5 suffit pour 5 seulement : 35 se termine par 5 et n'est pas un multiple de 25, qui exige 00, 25, 50 ou 75.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Combien de soustractions la boucle de la méthode de la différence effectue-t-elle pour PGCD (63, 28) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "35"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les couples successifs sont (63, 28), (35, 28), (7, 28), (7, 21), (7, 14), puis (7, 7) : 5 soustractions, et PGCD (63, 28) = 7 ✓. Le nombre 6 compte les six couples écrits, y compris le couple de départ. Le nombre 7 est le PGCD, pas un nombre d'étapes. Le nombre 35 est la première différence 63 − 28.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le mot CLAVIER a 7 lettres toutes différentes, dont 3 voyelles (A, I et E). Combien de ses anagrammes commencent par une voyelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "720"
+        },
+        {
+          "id": "b",
+          "text": "2 160"
+        },
+        {
+          "id": "c",
+          "text": "5 040"
+        },
+        {
+          "id": "d",
+          "text": "15 120"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Il y a 3 choix de voyelle pour la première place, puis les 6 lettres restantes s'ordonnent de 6! = 720 façons : 3 × 720 = 2 160 ✓. Le nombre 720 oublie les 3 choix de la première lettre. Le nombre 5 040 = 7! compte tous les anagrammes, quelle que soit la première lettre. Le nombre 15 120 = 3 × 7! multiplie le nombre de voyelles par le total au lieu de fixer la première lettre.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans Arrange, on écrit par erreur For i := n Downto n - p Do ar := ar * i. Que renvoie alors Arrange (5, 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "20"
+        },
+        {
+          "id": "c",
+          "text": "60"
+        },
+        {
+          "id": "d",
+          "text": "120"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La boucle descend de n = 5 jusqu'à n − p = 3 inclus : trois tours (i = 5, 4, 3) au lieu de deux, soit 5 × 4 × 3 = 60 ✓, un facteur de trop. La valeur correcte A₅² = 20 est celle que l'on obtient si l'on ne voit pas l'erreur. Le nombre 120 = 5! suppose que la boucle va jusqu'à 1. Le nombre 10 = C₅² est une combinaison : Arrange ne divise jamais par p!.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fonction Comb (n, p) vaut 1 si p = 0 ou p = n, sinon Comb (n - 1, p) + Comb (n - 1, p - 1). Combien d'appels (le premier compris) lance Comb (6, 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "19"
+        },
+        {
+          "id": "d",
+          "text": "29"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comb (6, 2) se ramène à Comb (5, 2) et Comb (5, 1). Comb (5, 2) lance 19 appels et Comb (5, 1) en lance 9, d'où 1 + 19 + 9 = 29 appels ✓. Le nombre 15 est la valeur renvoyée par Comb (6, 2), pas un nombre d'appels. Le nombre 14 ne compte que les appels qui ne sont pas des cas d'arrêt : il y a aussi 15 cas d'arrêt. Le nombre 19 ne compte que les appels de Comb (5, 2), en oubliant la branche Comb (5, 1) et l'appel initial.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "n = 36d5, où d est un chiffre de 0 à 9. Combien de valeurs de d rendent n divisible par 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La somme des chiffres vaut 3 + 6 + d + 5 = 14 + d, multiple de 3 pour 15, 18 ou 21 : d = 1, 4 ou 7, soit 3 valeurs ✓. Le nombre 4 compte d = 10, qui n'est pas un chiffre (14 + 10 = 24). Le nombre 2 oublie l'une des trois sommes possibles, par exemple 21. Le nombre 1 exige en plus la divisibilité par 9, que seul d = 4 réalise (somme 18).",
+      "difficulty": 3
+    }
+  ]
+}

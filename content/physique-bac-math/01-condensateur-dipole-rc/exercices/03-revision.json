@@ -1,0 +1,141 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le condensateur et le dipôle RC",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Dans un défibrillateur, un condensateur est chargé lentement sous haute tension, puis déchargé en une impulsion brève dans le patient. Pourquoi utilise-t-on un condensateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il fabrique lui-même l'énergie électrique qu'il délivre"
+        },
+        {
+          "id": "b",
+          "text": "Il stocke de l'énergie puis la restitue très vite"
+        },
+        {
+          "id": "c",
+          "text": "Il laisse passer sans fin le courant continu"
+        },
+        {
+          "id": "d",
+          "text": "Sa capacité croît avec la tension à ses bornes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le condensateur est un réservoir d'énergie potentielle électrique : il l'emmagasine pendant la charge, lente, et la restitue en peu de temps à la décharge ✓. Il ne produit aucune énergie par lui-même, il ne fait que restituer ce qu'il a reçu ; le diélectrique isolant bloque le courant continu en régime permanent ; la capacité ne dépend que de la géométrie et du diélectrique, pas de la tension.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un condensateur porte la charge q = 0,30 mC sous la tension u = 12 V. Calculer l'énergie qu'il emmagasine, en mJ, arrondie au dixième.",
+      "answerKey": {
+        "value": 1.8,
+        "tolerance": 0.05,
+        "unit": "mJ"
+      },
+      "explanation": "E_C = ½·q·u = ½ × 3,0·10⁻⁴ C × 12 V = 1,8·10⁻³ J, soit 1,8 mJ ✓ (l'oubli du facteur ½ donnerait 3,6 mJ).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On remplace l'air (ε_r = 1) d'un condensateur plan par du mica (ε_r = 6), la surface S restant la même. Par quel facteur faut-il multiplier l'écartement e pour conserver la même capacité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/6"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "C = ε_r·ε₀·S/e reste constante si ε_r/e ne change pas : ε_r est multiplié par 6, donc e doit l'être aussi ✓. Le facteur 1/6 inverse le sens ; 1 suppose que C ne dépend que de S ; 5 ajoute 6 − 1 au lieu de multiplier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À l'instant où l'on ferme K pour charger un condensateur neutre à travers un résistor, laquelle de ces grandeurs ne subit aucun saut brutal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'intensité i du courant dans R"
+        },
+        {
+          "id": "b",
+          "text": "La tension u_C du condensateur"
+        },
+        {
+          "id": "c",
+          "text": "La tension u_R aux bornes de R"
+        },
+        {
+          "id": "d",
+          "text": "La puissance dissipée dans R"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La tension u_C reste égale à 0 juste avant et juste après la fermeture : elle ne peut pas sauter, car la charge du condensateur varie progressivement ✓. En revanche i passe de 0 à E/R, u_R = R·i de 0 à E, et la puissance reçue par le résistor de 0 à E²/R.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La charge q(t) d'un dipôle RC en charge vérifie dq/dt + 250·q = 3,0·10⁻³ (unités SI) et la capacité est C = 10 µF. Quelle est la f.é.m. E du générateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 µV"
+        },
+        {
+          "id": "b",
+          "text": "3,0 mV"
+        },
+        {
+          "id": "c",
+          "text": "0,75 V"
+        },
+        {
+          "id": "d",
+          "text": "1,2 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'équation a la forme dq/dt + q/τ = E/R : 1/τ = 250 s⁻¹ donne τ = 4,0 ms, puis R = τ/C = 4,0·10⁻³ / 10·10⁻⁶ = 400 Ω ; E/R = 3,0·10⁻³ A donne E = 400 × 3,0·10⁻³ = 1,2 V ✓. La valeur 3,0 mV prend le second membre pour E ; 0,75 V le multiplie par 250 ; 12 µV le multiplie par τ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un condensateur de capacité C = 4,0 µF, initialement chargé, se décharge dans un résistor R ; on enregistre u_C(t) (figure, la tangente à l'origine est tracée en pointillés). Quelle est la résistance R ?\n<svg viewBox=\"0 0 340 230\"><title>Courbe de décharge u_C(t) et sa tangente à l'origine</title><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"61.1\" y1=\"22\" x2=\"61.1\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"70.3\" y1=\"22\" x2=\"70.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"79.4\" y1=\"22\" x2=\"79.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"88.5\" y1=\"22\" x2=\"88.5\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"97.7\" y1=\"22\" x2=\"97.7\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"106.8\" y1=\"22\" x2=\"106.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"115.9\" y1=\"22\" x2=\"115.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"125.1\" y1=\"22\" x2=\"125.1\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"134.2\" y1=\"22\" x2=\"134.2\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"143.3\" y1=\"22\" x2=\"143.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"152.5\" y1=\"22\" x2=\"152.5\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"161.6\" y1=\"22\" x2=\"161.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"170.7\" y1=\"22\" x2=\"170.7\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"179.9\" y1=\"22\" x2=\"179.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"189\" y1=\"22\" x2=\"189\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"198.1\" y1=\"22\" x2=\"198.1\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"207.3\" y1=\"22\" x2=\"207.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"216.4\" y1=\"22\" x2=\"216.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"225.5\" y1=\"22\" x2=\"225.5\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"234.7\" y1=\"22\" x2=\"234.7\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"243.8\" y1=\"22\" x2=\"243.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"252.9\" y1=\"22\" x2=\"252.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"262.1\" y1=\"22\" x2=\"262.1\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"271.2\" y1=\"22\" x2=\"271.2\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"280.3\" y1=\"22\" x2=\"280.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289.5\" y1=\"22\" x2=\"289.5\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"298.6\" y1=\"22\" x2=\"298.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"307.7\" y1=\"22\" x2=\"307.7\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"316.9\" y1=\"22\" x2=\"316.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326\" y1=\"22\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"171.3\" x2=\"326\" y2=\"171.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"152.7\" x2=\"326\" y2=\"152.7\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"134\" x2=\"326\" y2=\"134\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"115.3\" x2=\"326\" y2=\"115.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"96.7\" x2=\"326\" y2=\"96.7\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"78\" x2=\"326\" y2=\"78\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"59.3\" x2=\"326\" y2=\"59.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"40.7\" x2=\"326\" y2=\"40.7\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"22\" x2=\"326\" y2=\"22\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52\" y1=\"196\" x2=\"52\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"52,12 48,20 56,20\" fill=\"#0f172a\"/><line x1=\"52\" y1=\"187\" x2=\"52\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"52\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"97.7\" y1=\"187\" x2=\"97.7\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"97.7\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><line x1=\"143.3\" y1=\"187\" x2=\"143.3\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"143.3\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><line x1=\"189\" y1=\"187\" x2=\"189\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"189\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><line x1=\"234.7\" y1=\"187\" x2=\"234.7\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"234.7\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><line x1=\"280.3\" y1=\"187\" x2=\"280.3\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"280.3\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">50</text><line x1=\"326\" y1=\"187\" x2=\"326\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"326\" y=\"208\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><line x1=\"49\" y1=\"190\" x2=\"55\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"194\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"49\" y1=\"171.3\" x2=\"55\" y2=\"171.3\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"175.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"49\" y1=\"152.7\" x2=\"55\" y2=\"152.7\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"156.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"49\" y1=\"134\" x2=\"55\" y2=\"134\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"138\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"49\" y1=\"115.3\" x2=\"55\" y2=\"115.3\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"119.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"49\" y1=\"96.7\" x2=\"55\" y2=\"96.7\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"100.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"49\" y1=\"78\" x2=\"55\" y2=\"78\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"82\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"49\" y1=\"59.3\" x2=\"55\" y2=\"59.3\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"63.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">7</text><line x1=\"49\" y1=\"40.7\" x2=\"55\" y2=\"40.7\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"44.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><line x1=\"49\" y1=\"22\" x2=\"55\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"26\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">9</text><text x=\"322\" y=\"224\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"60\" y=\"14\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_C (V)</text><line x1=\"52\" y1=\"22\" x2=\"106.8\" y2=\"190\" stroke=\"#c2410c\" stroke-width=\"1.8\" stroke-dasharray=\"6 3\"/><polyline points=\"52,22 54.3,28.9 56.6,35.4 58.9,41.7 61.1,47.8 63.4,53.6 65.7,59.2 68,64.5 70.3,69.6 72.5,74.5 74.8,79.2 77.1,83.8 79.4,88.1 81.7,92.3 84,96.3 86.2,100.1 88.5,103.7 90.8,107.3 93.1,110.6 95.4,113.9 97.7,117 100,120 102.2,122.8 104.5,125.6 106.8,128.2 109.1,130.7 111.4,133.1 113.7,135.5 115.9,137.7 118.2,139.8 120.5,141.9 122.8,143.8 125.1,145.7 127.3,147.5 129.6,149.3 131.9,150.9 134.2,152.5 136.5,154 138.8,155.5 141.1,156.9 143.3,158.3 145.6,159.6 147.9,160.8 150.2,162 152.5,163.1 154.8,164.2 157,165.3 159.3,166.3 161.6,167.3 163.9,168.2 166.2,169.1 168.4,169.9 170.7,170.8 173,171.5 175.3,172.3 177.6,173 179.9,173.7 182.2,174.4 184.4,175 186.7,175.6 189,176.2 191.3,176.8 193.6,177.3 195.8,177.8 198.1,178.3 200.4,178.8 202.7,179.3 205,179.7 207.3,180.1 209.6,180.5 211.8,180.9 214.1,181.3 216.4,181.6 218.7,182 221,182.3 223.2,182.6 225.5,182.9 227.8,183.2 230.1,183.5 232.4,183.8 234.7,184 236.9,184.3 239.2,184.5 241.5,184.7 243.8,184.9 246.1,185.1 248.4,185.3 250.7,185.5 252.9,185.7 255.2,185.9 257.5,186 259.8,186.2 262.1,186.4 264.4,186.5 266.6,186.7 268.9,186.8 271.2,186.9 273.5,187 275.8,187.2 278.1,187.3 280.3,187.4 282.6,187.5 284.9,187.6 287.2,187.7 289.5,187.8 291.8,187.9 294,188 296.3,188.1 298.6,188.1 300.9,188.2 303.2,188.3 305.4,188.4 307.7,188.4 310,188.5 312.3,188.5 314.6,188.6 316.9,188.7 319.1,188.7 321.4,188.8 323.7,188.8 326,188.9\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,0 Ω"
+        },
+        {
+          "id": "b",
+          "text": "2,1 kΩ"
+        },
+        {
+          "id": "c",
+          "text": "3,0 kΩ"
+        },
+        {
+          "id": "d",
+          "text": "15 kΩ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La tangente à l'origine coupe l'axe des temps en t = τ : la figure donne τ = 12 ms, donc R = τ/C = 12·10⁻³ / 4,0·10⁻⁶ = 3,0·10³ Ω = 3,0 kΩ ✓ (on retrouve τ à l'abscisse de 0,37 E ≈ 3,3 V). La valeur 3,0 Ω lit la capacité en mF ; 2,1 kΩ prend l'abscisse de E/2 (≈ 8,3 ms) pour τ ; 15 kΩ prend pour τ la durée de décharge complète (≈ 60 ms).",
+      "difficulty": 3
+    }
+  ]
+}

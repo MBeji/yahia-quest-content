@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers courants induits",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Une bobine est fermée sur un résistor, et un oscilloscope visualise la tension u_R à ses bornes. Quand on approche le pôle nord d'un aimant, on observe une impulsion positive de u_R. On retourne l'aimant et on approche son pôle sud à la même vitesse. Que montre u_R ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une impulsion négative, de hauteur identique"
+        },
+        {
+          "id": "b",
+          "text": "Une impulsion positive, comme pour le pôle nord"
+        },
+        {
+          "id": "c",
+          "text": "Aucune impulsion : seul le pôle nord induit un courant"
+        },
+        {
+          "id": "d",
+          "text": "Une impulsion négative, deux fois plus haute"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec le pôle sud, le champ B⃗ a le sens opposé à celui du pôle nord, mais sa valeur augmente toujours : le champ induit b⃗ s'inverse donc, ainsi que le courant induit et u_R = R × i : impulsion négative ✓. La vitesse d'approche est la même, donc la hauteur ne change pas. Garder une impulsion positive suppose que le sens du courant ne dépend pas du pôle. Les deux pôles font varier le champ, donc les deux induisent un courant. Une hauteur doublée supposerait une approche deux fois plus rapide.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une f.e.m. d'auto-induction e = −2,7 V apparaît dans une bobine d'inductance L = 0,45 H. Quelle est la valeur de di/dt à cet instant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6,0 A/s"
+        },
+        {
+          "id": "b",
+          "text": "−1,2 A/s"
+        },
+        {
+          "id": "c",
+          "text": "+1,2 A/s"
+        },
+        {
+          "id": "d",
+          "text": "+6,0 A/s"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La relation e = −L di/dt donne di/dt = −e/L = 2,7 / 0,45 = +6,0 A/s ✓ : le courant croît, ce qui est cohérent avec e < 0. −6,0 A/s oublie le signe − de la loi de Lenz. +1,2 A/s multiplie e par L au lieu de diviser. −1,2 A/s cumule les deux erreurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine de résistance négligeable est traversée de A vers B par un courant d'intensité i qui décroît. Quels sont les signes de la tension u_AB et de la f.e.m. d'auto-induction e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u_AB > 0 et e < 0"
+        },
+        {
+          "id": "b",
+          "text": "u_AB < 0 et e < 0"
+        },
+        {
+          "id": "c",
+          "text": "u_AB < 0 et e > 0"
+        },
+        {
+          "id": "d",
+          "text": "u_AB = 0 et e > 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le courant décroît : di/dt < 0, donc e = −L di/dt > 0 : la f.e.m. s'oppose à la diminution. La résistance étant négligeable, u_AB = L di/dt < 0 ✓, de signe opposé à e. u_AB > 0 et e < 0 est le cas d'un courant qui croît. u_AB < 0 et e < 0 garde le signe de di/dt pour les deux grandeurs. u_AB = 0 confond résistance négligeable et courant constant : le terme L di/dt reste non nul.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une bobine (L = 0,16 H, r = 4,0 Ω) est traversée de A vers B par un courant de 0,35 A, qui décroît à raison de 15 A/s. Quelle est la tension u_AB ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3,8 V"
+        },
+        {
+          "id": "b",
+          "text": "−2,4 V"
+        },
+        {
+          "id": "c",
+          "text": "−1,0 V"
+        },
+        {
+          "id": "d",
+          "text": "+1,4 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "u_AB = L di/dt + r i = 0,16 × (−15) + 4,0 × 0,35 = −2,4 + 1,4 = −1,0 V ✓. +1,4 V oublie le terme L di/dt. −2,4 V oublie le terme r i. −3,8 V soustrait le terme r i au lieu de l'ajouter.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bobine stocke 12 mJ lorsque 0,20 A la traversent. Quelle inductance a-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,060 H"
+        },
+        {
+          "id": "b",
+          "text": "0,12 H"
+        },
+        {
+          "id": "c",
+          "text": "0,30 H"
+        },
+        {
+          "id": "d",
+          "text": "0,60 H"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "De E_L = ½ L i² on tire L = 2 E_L / i² = 2 × 0,012 / (0,20)² = 0,024 / 0,040 = 0,60 H ✓. 0,30 H oublie le facteur 2 (E/i²). 0,12 H oublie d'élever i au carré (2E/i). 0,060 H calcule simplement E/i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dipôle RL est parcouru par 0,50 A en régime permanent. On ouvre K, une diode laissant passer le courant de la bobine ; 9,0 ms plus tard, l'intensité vaut 0,185 A. Quelle est la constante de temps τ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,5 ms"
+        },
+        {
+          "id": "b",
+          "text": "9,0 ms"
+        },
+        {
+          "id": "c",
+          "text": "24 ms"
+        },
+        {
+          "id": "d",
+          "text": "45 ms"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À la rupture, i(t) = I₀ e^(−t/τ) et i(τ) = 0,37 I₀. Ici 0,185 / 0,50 = 0,37, donc 9,0 ms est la durée τ ✓. 4,5 ms suppose que la durée mesurée vaut 2τ, or i(2τ) = 0,135 I₀ ≈ 0,068 A. 24 ms divise la durée par 0,37 au lieu de la lire directement. 45 ms confond τ avec la durée 5τ du régime permanent.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Le condensateur et le dipôle RC",
+  "questions": [
+    {
+      "prompt": "Un condensateur neutre est branché aux bornes d'une pile, à travers un résistor. Au bout de quelques instants, le courant dans le circuit s'annule alors que K reste fermé. Pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La pile a cédé toute sa charge disponible au condensateur neutre"
+        },
+        {
+          "id": "b",
+          "text": "Les électrons ont fini de traverser le diélectrique"
+        },
+        {
+          "id": "c",
+          "text": "Le condensateur a atteint sa tension de claquage"
+        },
+        {
+          "id": "d",
+          "text": "La tension du condensateur égale désormais celle de la pile"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le courant n'existe que tant que la tension u_C entre les armatures diffère de celle de la pile : quand elles sont égales, plus aucune charge ne circule dans les fils ✓. Dire que les électrons traversent le diélectrique est faux, car c'est un isolant ; la pile ne se vide pas dans le condensateur ; et une tension de claquage atteinte ferait jaillir une étincelle, pas cesser le courant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le sens positif du courant est orienté vers l'armature A. À un instant donné, on mesure i = −3,0 mA. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La charge q de l'armature A est en train de diminuer"
+        },
+        {
+          "id": "b",
+          "text": "La charge q de l'armature A est en train d'augmenter"
+        },
+        {
+          "id": "c",
+          "text": "La charge q de l'armature A est négative à cet instant"
+        },
+        {
+          "id": "d",
+          "text": "L'ampèremètre est mal branché : la mesure est inutilisable"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme i = dq/dt, une intensité négative signifie que q diminue : le courant circule en sens contraire du sens positif choisi ✓. Une charge qui augmente donnerait i > 0 ; le signe de i ne renseigne pas sur le signe de q ; et une intensité négative est une valeur algébrique parfaitement exploitable, non une erreur de branchement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un condensateur de capacité 4,7 µF porte la charge q = 94 µC. Quelle est la tension à ses bornes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 µV"
+        },
+        {
+          "id": "b",
+          "text": "0,050 V"
+        },
+        {
+          "id": "c",
+          "text": "20 V"
+        },
+        {
+          "id": "d",
+          "text": "4,4·10² V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "q = C·u_C donne u_C = q/C = 94 µC / 4,7 µF = 20 V ✓ (les µ se simplifient). La valeur 0,050 V vient de l'inversion C/q ; 4,4·10² V vient du produit C·q ; 20 µV vient d'une capacité utilisée en farads sans avoir converti les µF.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un condensateur plan, on triple la surface S des armatures en regard, sans changer leur écartement ni le diélectrique. Que devient la capacité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est divisée par 3"
+        },
+        {
+          "id": "b",
+          "text": "Elle est multipliée par 3"
+        },
+        {
+          "id": "c",
+          "text": "Elle est multipliée par 9"
+        },
+        {
+          "id": "d",
+          "text": "Elle reste inchangée"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C = ε·S/e est proportionnelle à S : si S est multipliée par 3, C l'est aussi ✓. La diviser par 3 revient à placer S au dénominateur ; la multiplier par 9 suppose que S intervient au carré ; la croire inchangée oublie que C dépend de la géométrie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un condensateur de capacité fixée emmagasine 20 mJ. On double sa charge q. Quelle énergie emmagasine-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,010 J"
+        },
+        {
+          "id": "b",
+          "text": "0,020 J"
+        },
+        {
+          "id": "c",
+          "text": "0,040 J"
+        },
+        {
+          "id": "d",
+          "text": "0,080 J"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "E_C = q²/(2C) est proportionnelle à q² quand C est fixée : doubler q multiplie l'énergie par 2² = 4, soit 20 mJ × 4 = 80 mJ = 0,080 J ✓. La valeur 0,040 J suppose une énergie proportionnelle à q ; 0,020 J croit que l'énergie ne dépend que de C ; 0,010 J place q au dénominateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un condensateur chargé se décharge dans un résistor R. Quelle équation différentielle vérifie u_C(t) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u_C + RC·du_C/dt = 0"
+        },
+        {
+          "id": "b",
+          "text": "u_C + RC·du_C/dt = E"
+        },
+        {
+          "id": "c",
+          "text": "u_C − RC·du_C/dt = 0"
+        },
+        {
+          "id": "d",
+          "text": "RC·u_C + du_C/dt = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi des mailles u_C + u_R = 0 avec u_R = R·i et i = C·du_C/dt donne u_C + RC·du_C/dt = 0 ✓ : sans générateur, le second membre est nul. Le second membre E est celui de la charge ; le signe moins et le produit RC placé devant u_C ne découlent d'aucune étape de la loi des mailles.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La figure donne la courbe de charge d'un condensateur sous E = 8 V et la tangente à l'origine. Que vaut la constante de temps τ ?\n<svg viewBox=\"0 0 340 230\"><title>Courbe de charge d'un condensateur sous E = 8 V, avec la tangente à l'origine tracée en pointillés</title><line x1=\"52\" y1=\"22\" x2=\"52\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"97.7\" y1=\"22\" x2=\"97.7\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"143.3\" y1=\"22\" x2=\"143.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"189\" y1=\"22\" x2=\"189\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"234.7\" y1=\"22\" x2=\"234.7\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"280.3\" y1=\"22\" x2=\"280.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326\" y1=\"22\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"326\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"148\" x2=\"326\" y2=\"148\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"106\" x2=\"326\" y2=\"106\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"64\" x2=\"326\" y2=\"64\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"22\" x2=\"326\" y2=\"22\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52\" y1=\"196\" x2=\"52\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"52,12 48,20 56,20\" fill=\"#0f172a\"/><line x1=\"52\" y1=\"187\" x2=\"52\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"52\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"97.7\" y1=\"187\" x2=\"97.7\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"97.7\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">15</text><line x1=\"143.3\" y1=\"187\" x2=\"143.3\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"143.3\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><line x1=\"189\" y1=\"187\" x2=\"189\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"189\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">45</text><line x1=\"234.7\" y1=\"187\" x2=\"234.7\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"234.7\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><line x1=\"280.3\" y1=\"187\" x2=\"280.3\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"280.3\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">75</text><line x1=\"326\" y1=\"187\" x2=\"326\" y2=\"193\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"326\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">90</text><line x1=\"49\" y1=\"148\" x2=\"55\" y2=\"148\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"152\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"49\" y1=\"106\" x2=\"55\" y2=\"106\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"110\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"49\" y1=\"64\" x2=\"55\" y2=\"64\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"68\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"49\" y1=\"22\" x2=\"55\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"26\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><text x=\"322\" y=\"224\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (ms)</text><text x=\"60\" y=\"14\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_C (V)</text><line x1=\"52\" y1=\"22\" x2=\"326\" y2=\"22\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><text x=\"322\" y=\"16\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><line x1=\"52\" y1=\"190\" x2=\"97.7\" y2=\"22\" stroke=\"#c2410c\" stroke-width=\"1.8\" stroke-dasharray=\"6 3\"/><polyline points=\"52,190 54.3,181.8 56.6,174 58.9,166.6 61.1,159.5 63.4,152.8 65.7,146.5 68,140.4 70.3,134.6 72.5,129.1 74.8,123.9 77.1,118.9 79.4,114.2 81.7,109.7 84,105.4 86.2,101.4 88.5,97.5 90.8,93.8 93.1,90.3 95.4,87 97.7,83.8 100,80.8 102.2,77.9 104.5,75.2 106.8,72.6 109.1,70.1 111.4,67.8 113.7,65.6 115.9,63.4 118.2,61.4 120.5,59.5 122.8,57.7 125.1,55.9 127.3,54.3 129.6,52.7 131.9,51.2 134.2,49.8 136.5,48.4 138.8,47.1 141.1,45.9 143.3,44.7 145.6,43.6 147.9,42.6 150.2,41.6 152.5,40.6 154.8,39.7 157,38.8 159.3,38 161.6,37.2 163.9,36.5 166.2,35.8 168.4,35.1 170.7,34.5 173,33.9 175.3,33.3 177.6,32.7 179.9,32.2 182.2,31.7 184.4,31.2 186.7,30.8 189,30.4 191.3,30 193.6,29.6 195.8,29.2 198.1,28.8 200.4,28.5 202.7,28.2 205,27.9 207.3,27.6 209.6,27.3 211.8,27.1 214.1,26.8 216.4,26.6 218.7,26.4 221,26.2 223.2,26 225.5,25.8 227.8,25.6 230.1,25.4 232.4,25.2 234.7,25.1 236.9,24.9 239.2,24.8 241.5,24.6 243.8,24.5 246.1,24.4 248.4,24.3 250.7,24.2 252.9,24.1 255.2,24 257.5,23.9 259.8,23.8 262.1,23.7 264.4,23.6 266.6,23.5 268.9,23.5 271.2,23.4 273.5,23.3 275.8,23.3 278.1,23.2 280.3,23.1 282.6,23.1 284.9,23 287.2,23 289.5,22.9 291.8,22.9 294,22.8 296.3,22.8 298.6,22.8 300.9,22.7 303.2,22.7 305.4,22.7 307.7,22.6 310,22.6 312.3,22.6 314.6,22.5 316.9,22.5 319.1,22.5 321.4,22.5 323.7,22.4 326,22.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,5 ms"
+        },
+        {
+          "id": "b",
+          "text": "10 ms"
+        },
+        {
+          "id": "c",
+          "text": "15 ms"
+        },
+        {
+          "id": "d",
+          "text": "75 ms"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La tangente à l'origine coupe l'asymptote u_C = E à l'abscisse t = τ : sur la figure, cette abscisse est 15 ms ✓. La valeur 7,5 ms est l'abscisse où la tangente atteint E/2 ; 10 ms est l'instant où u_C atteint environ E/2 ; 75 ms est la durée de charge à 1 % près, soit environ 5τ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un condensateur de tension initiale u_C = 9,0 V commence à se décharger dans un résistor de 3,0 kΩ. Le sens positif du courant est celui de la charge. Quelle est l'intensité i à cet instant initial ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3,0 A"
+        },
+        {
+          "id": "b",
+          "text": "−3,0 mA"
+        },
+        {
+          "id": "c",
+          "text": "0 mA"
+        },
+        {
+          "id": "d",
+          "text": "+3,0 mA"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En début de décharge, toute la tension u_C se retrouve aux bornes de R : |i| = u_C/R = 9,0 V / 3,0·10³ Ω = 3,0 mA, et le courant est de sens contraire à celui de la charge, donc i = −3,0 mA ✓. Le signe + décrirait un courant de charge ; 0 mA est la valeur de fin de décharge ; −3,0 A oublie de convertir les kΩ en Ω.",
+      "difficulty": 2
+    }
+  ]
+}

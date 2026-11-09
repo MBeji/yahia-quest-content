@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Écrire, compléter et traduire",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Dans Val_Triangle (col, lig), quelle ligne exprime le cas général ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Val_Triangle := Val_Triangle (col, lig - 1) + Val_Triangle (col - 1, lig - 1)"
+        },
+        {
+          "id": "b",
+          "text": "Val_Triangle := Val_Triangle (col - 1, lig) + Val_Triangle (col - 1, lig - 1)"
+        },
+        {
+          "id": "c",
+          "text": "Val_Triangle := Val_Triangle (col, lig - 1) + Val_Triangle (col + 1, lig - 1)"
+        },
+        {
+          "id": "d",
+          "text": "Val_Triangle := Val_Triangle (col, lig - 1) * Val_Triangle (col - 1, lig - 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La case (col, lig) est la somme de la case du dessus et de sa voisine de gauche, soit (col, lig − 1) et (col − 1, lig − 1) ✓. Avec (col − 1, lig), la ligne ne diminue pas pour l'un des deux appels, et Val_Triangle (3, 4) rendrait 4 au lieu de 3. Avec (col + 1, lig − 1), les appels atteignent des cases hors du triangle, comme (4, 3), qui ne s'arrêtent jamais. Avec un produit, tous les bords valant 1, chaque case vaudrait 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans Remplir_Mat, les bords T[ligne, 1] et T[ligne, ligne] sont déjà posés à 1. Quelle boucle calcule exactement les cases intérieures de la ligne ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour colonne de 2 à ligne − 1"
+        },
+        {
+          "id": "b",
+          "text": "Pour colonne de 1 à ligne"
+        },
+        {
+          "id": "c",
+          "text": "Pour colonne de 2 à ligne"
+        },
+        {
+          "id": "d",
+          "text": "Pour colonne de 3 à ligne − 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les cases intérieures vont de la colonne 2 à la colonne ligne − 1 : les colonnes 1 et ligne sont les bords ✓. Une boucle qui commence à 1 lit T[ligne − 1, 0], une case qui n'existe pas, et écrase le bord. Une boucle qui va jusqu'à ligne écrase le bord T[ligne, ligne] avec une somme qui lit T[ligne − 1, ligne], hors du triangle. Une boucle qui commence à 3 saute la colonne 2 : T[4,2] ne serait jamais calculée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la traduction correcte en Pascal de : Pour i de 3 à N Faire T[i] ← T[i-1] + T[i-2] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "For i = 3 To N Do T[i] := T[i - 1] + T[i - 2];"
+        },
+        {
+          "id": "b",
+          "text": "For i := 3 To N Do T[i] := T[i - 1] + T[i - 2];"
+        },
+        {
+          "id": "c",
+          "text": "For i := 3 To N Do T[i] = T[i - 1] + T[i - 2];"
+        },
+        {
+          "id": "d",
+          "text": "For i := 3 To N Do Begin T[i] := T[i - 1] + T[i - 2];"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En Pascal, la boucle s'écrit For i := 3 To N Do, et l'affectation T[i] := … avec :=, ce que fait cette ligne ✓. L'écriture For i = 3 utilise le signe de comparaison, alors que la variable de contrôle se positionne avec :=. L'écriture T[i] = … compare au lieu d'affecter. L'écriture avec Begin ouvre un bloc qu'aucun End ne ferme, et une seule instruction n'en a pas besoin.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pendant une passe de Thue_Morse, Ch vaut '0110' et j = 3. Après le traitement de Ch[3], la chaîne vaut '01100'. Quelle valeur de j permet de lire le caractère suivant du terme d'origine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On vient d'insérer un caractère en position 4 : le caractère d'origine suivant, le dernier '0', est maintenant en position 5, soit j + 2 ✓. Avec j = 3, on relit le même caractère et la boucle ne progresse pas. Avec j = 4, on lit le caractère qu'on vient d'insérer : on lui ajouterait un caractère de plus, et la chaîne obtenue serait fausse. Avec j = 6, on dépasse la longueur 5 : le dernier caractère d'origine ne serait pas traité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une suite vérifie U1 = 2, U2 = 1 et U(n) = U(n−1) + U(n−2). Que vaut U7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "29"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les termes sont 2, 1, 3, 4, 7, 11, 18 : U7 vaut 18 ✓. Le nombre 11 est U6 : on s'arrête un rang trop tôt. Le nombre 13 est le septième terme de Fibonacci (départ 1 et 1), alors que le départ est ici 2 et 1. Le nombre 29 est U8, un rang trop loin.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une matrice 30 × 30 contient des entiers compris entre 0 et 100, que l'on additionne dans une variable S. Quel type peut ranger S sans jamais déborder ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Byte"
+        },
+        {
+          "id": "b",
+          "text": "Word"
+        },
+        {
+          "id": "c",
+          "text": "Integer"
+        },
+        {
+          "id": "d",
+          "text": "LongInt"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La somme maximale vaut 30 × 30 × 100 = 90000. Seul le type LongInt, qui va jusqu'à 2147483647, la contient ✓. Le type Byte s'arrête à 255. Le type Word s'arrête à 65535, inférieur à 90000. Le type Integer s'arrête à 32767.",
+      "difficulty": 2
+    }
+  ]
+}

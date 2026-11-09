@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les pièges du pointeur",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "On exécute :\nRewrite(f); v := 5;\nWrite(f, v); Write(f, v); Write(f, v);\nWriteLn(FilePos(f), ' ', FileSize(f));\nQuelle ligne est affichée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 3"
+        },
+        {
+          "id": "b",
+          "text": "2 3"
+        },
+        {
+          "id": "c",
+          "text": "3 0"
+        },
+        {
+          "id": "d",
+          "text": "3 3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Rewrite crée un fichier vide. Chaque Write ajoute un élément et avance le pointeur : après trois écritures, FilePos vaut 3 et FileSize vaut 3 ✓. Une position de 2 désigne le dernier élément écrit, alors que le pointeur est déjà passé après lui. Une position de 0 suppose que le pointeur revient au début, ce que seul Reset fait. Une taille de 0 ignore que les écritures agrandissent le fichier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le fichier d'entiers f contient 5, 8, 2, 6. Ce programme doit afficher ses éléments :\nReset(f);\nFor i := 1 To FileSize(f) Do\nBegin Seek(f, i); Read(f, v); WriteLn(v); End;\nQuel est son défaut ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il lit deux fois de suite le premier élément du fichier"
+        },
+        {
+          "id": "b",
+          "text": "Il efface les éléments du fichier avant de les afficher"
+        },
+        {
+          "id": "c",
+          "text": "Il saute le premier élément puis lit après le dernier"
+        },
+        {
+          "id": "d",
+          "text": "Il affiche seulement le dernier élément puis s'arrête"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les numéros valides vont de 0 à 3, mais i parcourt 1 à 4. Le premier tour pointe le numéro 1 : le 5 du numéro 0 n'est jamais affiché. Le dernier tour pointe le numéro 4, qui est la fin du fichier, et Read y échoue ✓. Le programme ne lit aucun élément deux fois, n'efface rien et n'affiche pas que le dernier : il affiche 8, 2, 6 puis s'arrête sur une erreur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le journal journal.txt contient les lignes A, B, C. On exécute :\nReset(f); ReadLn(f, s); ReadLn(f, s);\nClose(f);\nAppend(f); WriteLn(f, 'D');\nClose(f);\nQuelles lignes contient le journal à la fin ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D"
+        },
+        {
+          "id": "b",
+          "text": "A, B, D"
+        },
+        {
+          "id": "c",
+          "text": "A, B, C, D"
+        },
+        {
+          "id": "d",
+          "text": "D, A, B, C"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les deux ReadLn ne modifient pas le fichier, et Close le referme. Append ouvre ensuite le fichier en plaçant le pointeur à sa fin, quel que soit l'endroit où la lecture s'était arrêtée : D s'écrit après C, et le journal contient A, B, C, D ✓. Le contenu « A, B, D » suppose que l'écriture reprend là où la lecture s'était arrêtée. Le contenu « D » est celui qu'aurait laissé Rewrite. Le contenu « D, A, B, C » suppose une insertion au début, impossible avec Append.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un fichier d'entiers contient 1000 éléments, numérotés de 0 à 999. On veut additionner uniquement ceux de numéros pairs : 0, 2, 4, …, 998. Combien d'appels à Read suffisent, au minimum, en accès direct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "499"
+        },
+        {
+          "id": "b",
+          "text": "500"
+        },
+        {
+          "id": "c",
+          "text": "501"
+        },
+        {
+          "id": "d",
+          "text": "1000"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les numéros pairs de 0 à 998 sont 0, 2, …, 998, soit 998 ÷ 2 + 1 = 500 éléments ✓. En accès direct, on pointe chacun avec Seek et on le lit une fois : 500 lectures. Le nombre 1000 correspond à un parcours séquentiel, qui lit tous les éléments. Les nombres 499 et 501 sont décalés d'une unité : 499 oublie un élément, 501 en compte un de trop, comme si le numéro 1000 existait.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le fichier d'entiers notes contient 4, 9, 6, 2, 8, 5. On exécute :\nReset(notes); Seek(notes, 4); Truncate(notes);\nSeek(notes, FileSize(notes));\nv := 1; Write(notes, v); Close(notes);\nQuel est alors le contenu du fichier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4, 9, 6, 2, 8, 5, 1"
+        },
+        {
+          "id": "b",
+          "text": "4, 9, 6, 2, 8, 1"
+        },
+        {
+          "id": "c",
+          "text": "4, 9, 6, 2, 5, 1"
+        },
+        {
+          "id": "d",
+          "text": "4, 9, 6, 2, 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Truncate au pointeur 4 ne garde que les éléments des numéros 0 à 3 : 4, 9, 6, 2, et FileSize vaut 4. Seek (notes, 4) place alors le pointeur après le dernier élément : Write ajoute 1 et le fichier devient 4, 9, 6, 2, 1 ✓. Le contenu « 4, 9, 6, 2, 8, 5, 1 » ignore la troncature. Le contenu « 4, 9, 6, 2, 5, 1 » suppose que seul l'élément 8 a été retiré. Le contenu « 4, 9, 6, 2, 8, 1 » suppose que 1 remplace le dernier élément du fichier d'origine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le fichier d'entiers f contient 3, 5, 8, 1. On exécute :\nReset(f);\nWhile Not Eof(f) Do\nBegin Read(f, v); v := v * 2; Write(f, v); End;\nClose(f);\nQuel est le contenu final de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3, 6, 8, 16"
+        },
+        {
+          "id": "b",
+          "text": "3, 10, 8, 2"
+        },
+        {
+          "id": "c",
+          "text": "6, 5, 16, 1"
+        },
+        {
+          "id": "d",
+          "text": "6, 10, 16, 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Read lit l'élément de numéro 0 (v = 3) et avance le pointeur sur le numéro 1 : Write y écrit 6, donc il remplace le 5, et le pointeur passe au numéro 2. Le tour suivant lit 8, écrit 16 à la place du 1, et le pointeur atteint la fin. Le contenu final est 3, 6, 8, 16 ✓. Le contenu « 6, 10, 16, 2 » suppose que Write retombe sur l'élément qui vient d'être lu, ce qui est faux puisque Read a déjà avancé le pointeur. Le contenu « 6, 5, 16, 1 » double les éléments des numéros 0 et 2 à leur place : il oublie que Read a déjà avancé le pointeur avant Write. Le contenu « 3, 10, 8, 2 » écrit bien aux numéros 1 et 3, mais y met le double de l'élément qui s'y trouvait (5 puis 1) au lieu du double de l'élément lu juste avant (3 puis 8).",
+      "difficulty": 3
+    }
+  ]
+}

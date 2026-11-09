@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premières oscillations libres",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Après la fermeture sur la bobine, u_C passe de +12 V à +6,0 V, puis à +3,0 V, puis à +1,5 V, toujours positive, à intervalles de 10 ms. Quel est le régime du circuit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pseudopériodique : l'amplitude décroît, donc les oscillations sont amorties"
+        },
+        {
+          "id": "b",
+          "text": "Apériodique : u_C revient vers zéro sans jamais changer de signe"
+        },
+        {
+          "id": "c",
+          "text": "Périodique non amorti : le circuit oscille régulièrement autour de zéro"
+        },
+        {
+          "id": "d",
+          "text": "Impossible : une bobine impose toujours au moins une oscillation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "u_C ne change jamais de signe et revient vers 0 : il n'y a aucune oscillation, c'est le régime apériodique, obtenu quand la résistance totale est élevée ✓. La décroissance des valeurs ne suffit pas à parler de pseudo-oscillations : il faudrait que u_C change de signe à chaque demi-pseudo-période. Un régime périodique non amorti exigerait une amplitude constante et R = 0. Une bobine ne garantit pas d'oscillation : si R est trop grande, la dissipation éteint la tension avant tout changement de signe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un circuit RLC libre reste pseudopériodique quand on fait passer R de 20 Ω à 200 Ω. Comment varie sa pseudo-période T ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle augmente un peu, en restant supérieure à T₀"
+        },
+        {
+          "id": "b",
+          "text": "Elle reste rigoureusement égale à T₀ = 2π√(LC)"
+        },
+        {
+          "id": "c",
+          "text": "Elle diminue légèrement, car les oscillations s'éteignent plus vite"
+        },
+        {
+          "id": "d",
+          "text": "Elle est multipliée par 10, comme la résistance"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand R augmente, l'amortissement augmente et la pseudo-période augmente légèrement : elle reste toujours un peu supérieure à T₀ = 2π√(LC) ✓. L'égalité rigoureuse avec T₀ n'a lieu que pour R = 0, un cas idéal. Une diminution de T ne correspond pas à l'observation : plus d'amortissement allonge légèrement la durée entre deux extrema. T n'est pas proportionnelle à R : sa variation reste faible tant que le régime est pseudopériodique.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un circuit RLC libre comprend une bobine de 0,25 H dont la résistance interne est r = 7,0 Ω, un résistor R₀ = 18 Ω et un condensateur de 2,0 µF. L'équation de la charge s'écrit d²q/dt² + a·dq/dt + b·q = 0. Que vaut a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "72 s⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "25 s⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "1,0·10⁻² s⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "1,0·10² s⁻¹"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le coefficient a vaut R/L avec R = R₀ + r = 25 Ω : a = 25 / 0,25 = 1,0·10² s⁻¹ ✓ (et b = 1/(LC) = 2,0·10⁶ s⁻²). La valeur 72 s⁻¹ est R₀/L : la résistance r de la bobine est oubliée. La valeur 25 s⁻¹ est R lui-même, sans la division par L. La valeur 1,0·10⁻² s⁻¹ est L/R, l'inverse du bon quotient, qui s'exprime en secondes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un circuit RLC dont la résistance totale est R = 40 Ω, la puissance dissipée par effet Joule vaut, à un instant donné, 0,10 W. Quelle est la valeur absolue de l'intensité à cet instant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5 mA"
+        },
+        {
+          "id": "b",
+          "text": "71 mA"
+        },
+        {
+          "id": "c",
+          "text": "50 mA"
+        },
+        {
+          "id": "d",
+          "text": "2,0 A"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La puissance dissipée est |dE/dt| = R·i², donc |i| = √(0,10 / 40) = √(2,5·10⁻³) = 5,0·10⁻² A = 50 mA ✓. La valeur 2,5 mA est P/R, sans racine carrée. La valeur 71 mA vient de √(2P/R) : un facteur 2 qui n'a pas sa place ici. La valeur 2,0 A est √(P·R), où l'on multiplie par R au lieu de diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un circuit LC a pour fréquence propre N₀ = 400 Hz. On remplace son condensateur par un autre de capacité 16 fois plus petite, la bobine restant la même. Quelle est la nouvelle fréquence propre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,6 kHz"
+        },
+        {
+          "id": "b",
+          "text": "6,4 kHz"
+        },
+        {
+          "id": "c",
+          "text": "100 Hz"
+        },
+        {
+          "id": "d",
+          "text": "25 Hz"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "N₀ = 1/(2π√(LC)) varie en 1/√C : avec C/16, N₀′ = N₀ × √16 = 4 × 400 = 1,6·10³ Hz = 1,6 kHz ✓. La valeur 6,4 kHz multiplie par 16 sans prendre la racine carrée. La valeur 100 Hz divise par 4 : elle inverse le sens de la variation, alors qu'une capacité plus petite raccourcit la période. La valeur 25 Hz divise par 16, doublement fausse (sens et racine carrée).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un circuit LC non amorti (L = 0,10 H ; C = 0,40 µF) oscille avec une charge d'amplitude Q_m = 12 µC. Quelle est l'énergie maximale emmagasinée dans la bobine au cours des oscillations ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,6·10² µJ"
+        },
+        {
+          "id": "b",
+          "text": "90 µJ"
+        },
+        {
+          "id": "c",
+          "text": "1,8·10² µJ"
+        },
+        {
+          "id": "d",
+          "text": "6,0 µJ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'énergie se conserve : E = Q_m²/(2C) = (12·10⁻⁶)² / (2 × 0,40·10⁻⁶) = 1,8·10⁻⁴ J = 1,8·10² µJ ; la bobine atteint cette valeur quand toute l'énergie est magnétique, soit ½·L·I_m² avec I_m = ω₀Q_m = 60 mA ✓. La valeur 3,6·10² µJ oublie le facteur ½. La valeur 90 µJ est la moitié de l'énergie totale, valeur atteinte seulement à certains instants. La valeur 6,0 µJ calcule ½·C·U avec U = Q_m/C sans élever au carré.",
+      "difficulty": 2
+    }
+  ]
+}
