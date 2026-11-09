@@ -1,0 +1,112 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Circuits, permutations et dames",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Combien de solutions distinctes le problème des 6 dames a-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le problème des 6 dames a 4 solutions ✓. Le nombre 2 est celui des 4 dames, le nombre 10 celui des 5 dames et le nombre 40 celui des 7 dames : la suite des solutions ne croît pas régulièrement (1, 0, 0, 2, 10, 4, 40, 92).",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans l'itinéraire 1, 2, 3, on insère la ville 4 entre la dernière ville (3) et la première (1), avec d(3, 4) = 11, d(4, 1) = 16 et d(3, 1) = 9. De combien l'itinéraire s'allonge-t-il ? Répondre par un nombre de km.",
+      "answerKey": {
+        "value": 18,
+        "unit": "km"
+      },
+      "explanation": "Le coût d'insertion est d(3, 4) + d(4, 1) − d(3, 1) = 11 + 16 − 9 = 18 ✓ : on ajoute deux nouveaux segments et on retire l'ancien segment 3-1, celui du retour. Oublier de retrancher donne 27.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour laquelle de ces permutations de (1, 2, 3, 4) la fonction PGI rend-elle 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1, 2, 3, 4)"
+        },
+        {
+          "id": "b",
+          "text": "(2, 1, 4, 3)"
+        },
+        {
+          "id": "c",
+          "text": "(3, 4, 2, 1)"
+        },
+        {
+          "id": "d",
+          "text": "(4, 3, 2, 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "PGI rend 0 quand aucun T[i − 1] n'est inférieur à T[i], c'est-à-dire quand T est strictement décroissante : c'est (4, 3, 2, 1), la dernière permutation ✓. Pour (1, 2, 3, 4), le plus grand indice valable est 4 (3 < 4). Pour (2, 1, 4, 3), c'est 3 (1 < 4). Pour (3, 4, 2, 1), c'est 2 (3 < 4) : cette permutation a encore un successeur, (4, 1, 2, 3).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "T = (2, 5, 4, 3, 1) et r = PGI (T) = 2. Que rend PGJ (T, r) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "PGJ rend le plus grand indice j tel que T[1] = 2 < T[j] : T[5] = 1 ne convient pas, T[4] = 3 convient, donc j = 4 ✓. La valeur 3 est T[4], pas son indice. La valeur 2 est l'indice r lui-même, le plus petit indice possible. La valeur 5 est l'indice de la dernière case, dont la valeur 1 n'est pas supérieure à 2.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur un échiquier 6 × 6, les dames des lignes 1 à 3 sont en colonnes 4, 1 et 3. Combien de cases de la ligne 4 ne sont menacées par aucune de ces dames ? Répondre par un nombre de cases.",
+      "answerKey": {
+        "value": 2,
+        "unit": "cases"
+      },
+      "explanation": "Colonnes 1, 3 et 4 : même colonne qu'une dame déjà placée (lignes 2, 3 et 1). Colonne 2 : Abs (3 − 2) = 1 = 4 − 3, même diagonale que la dame de la ligne 3. Colonne 5 : Abs (4 − 5) = 1 est différent de 3, Abs (1 − 5) = 4 est différent de 2 et Abs (3 − 5) = 2 est différent de 1 : libre. Colonne 6 : Abs (4 − 6) = 2 est différent de 3, Abs (1 − 6) = 5 est différent de 2 et Abs (3 − 6) = 3 est différent de 1 : libre. Il y a donc 2 cases libres ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour nbd = 3, combien d'appels de Place_dame (le premier compris) le programme lance-t-il ? Répondre par un nombre d'appels.",
+      "answerKey": {
+        "value": 6,
+        "unit": "appels"
+      },
+      "explanation": "L'appel avec lig = 1 trouve les 3 colonnes libres : 3 appels avec lig = 2. Avec T[1] = 1, la ligne 2 n'a que la colonne 3 de libre ; avec T[1] = 2, aucune ; avec T[1] = 3, la colonne 1 seule : 2 appels avec lig = 3. Les deux appels avec lig = 3 sont des impasses et n'en lancent aucun. Total : 1 + 3 + 2 = 6 appels ✓, sans solution.",
+      "difficulty": 2
+    }
+  ]
+}

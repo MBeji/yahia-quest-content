@@ -1,0 +1,119 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des piquets",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur le tri rapide (pivot = premier élément), lesquelles sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un sous-tableau d'un seul élément n'a besoin d'aucune partition"
+        },
+        {
+          "id": "b",
+          "text": "Un tableau déjà trié est un pire cas"
+        },
+        {
+          "id": "c",
+          "text": "Le tri rapide recopie T dans un second tableau de même taille pour partitionner"
+        },
+        {
+          "id": "d",
+          "text": "Si aucune valeur n'est inférieure ou égale au pivot, le pivot reste en case g"
+        },
+        {
+          "id": "e",
+          "text": "Le choix du pivot ne change jamais le nombre de partitions"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "d"]
+      },
+      "explanation": "Un sous-tableau d'un seul élément est déjà trié : g ≥ d arrête les appels ✓. Un tableau trié donne un pivot plus petit que tous les autres : un côté est vide et l'autre garde n − 1 éléments ✓. Si aucune valeur n'est inférieure ou égale au pivot, m = g + 0 = g : pour [3, 8, 6, 9], le pivot 3 reste en case 1 ✓. Le tri rapide travaille par échanges dans T lui-même, sans second tableau : c'est la fusion qui en demande un. Le choix du pivot compte : pour [1, 2, 3, 4, 5, 6, 7], le pivot 1 donne 6 partitions et le pivot du milieu en donne 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La procédure Hanoi (n, depart, cible, inter) est celle du cours. Quel appel déplace 4 disques du piquet 2 vers le piquet 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hanoi (4, 2, 3, 1)"
+        },
+        {
+          "id": "b",
+          "text": "Hanoi (4, 3, 2, 1)"
+        },
+        {
+          "id": "c",
+          "text": "Hanoi (4, 2, 1, 3)"
+        },
+        {
+          "id": "d",
+          "text": "Hanoi (4, 1, 3, 2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les paramètres suivent l'ordre n, depart, cible, inter : le départ est 2, la cible est 3 et l'intermédiaire est le piquet restant, 1 ✓. L'appel Hanoi (4, 3, 2, 1) inverse le départ et la cible : il part du piquet 3 pour arriver sur le 2. L'appel Hanoi (4, 2, 1, 3) fait du piquet 1 la cible : la tour finirait sur le piquet 1. L'appel Hanoi (4, 1, 3, 2) prend le piquet 1 pour départ.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On résout les tours de Hanoï à 7 disques avec la méthode du cours. Combien de déplacements ont été faits avant que le plus grand disque ne soit déplacé ?",
+      "answerKey": {
+        "value": 63,
+        "unit": "déplacements"
+      },
+      "explanation": "Avant le déplacement du plus grand disque, la méthode a garé les 6 autres disques sur l'intermédiaire : 2⁶ − 1 = 63 déplacements ✓. Le grand disque fait ensuite le 64e déplacement, puis 63 autres suivent, pour un total de 63 + 1 + 63 = 127 = 2⁷ − 1. La valeur 127 est le total de la résolution, pas le nombre de déplacements qui précèdent le grand disque.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Tri_Rapide, avec le premier élément pour pivot, trie un tableau de 12 valeurs distinctes. Au maximum, combien de partitions (appels avec g < d) peuvent avoir lieu ?",
+      "answerKey": {
+        "value": 11,
+        "unit": "partitions"
+      },
+      "explanation": "Chaque partition place définitivement un pivot, et il n'y en a que sur des sous-tableaux d'au moins deux éléments. Le pire cas est celui où chaque partition ne retire que son pivot : les sous-tableaux successifs ont 12, 11, 10, ..., 2 éléments, soit 11 partitions ✓. Un sous-tableau d'un seul élément, resté à la fin, est déjà à sa place. Chaque partition fixe un pivot différent, et un élément au moins finit seul dans un sous-tableau sans avoir été pivot : au plus 12 − 1 = 11 partitions.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Combien d'échanges (l'échange final du pivot compris) la partition fait-elle sur T = [20, 31, 4, 25, 8, 27, 2, 16, 7], avec le pivot T[1] = 20 ?",
+      "answerKey": {
+        "value": 4,
+        "unit": "échanges"
+      },
+      "explanation": "i s'arrête sur 31 (case 2) et j sur 7 (case 9) : premier échange, T = [20, 7, 4, 25, 8, 27, 2, 16, 31]. i s'arrête sur 25 (case 4) et j sur 16 (case 8) : deuxième échange, T = [20, 7, 4, 16, 8, 27, 2, 25, 31]. i s'arrête sur 27 (case 6) et j sur 2 (case 7) : troisième échange, T = [20, 7, 4, 16, 8, 2, 27, 25, 31]. Alors i = 7 dépasse j = 6 : le quatrième échange place le pivot, T = [2, 7, 4, 16, 8, 20, 27, 25, 31] ✓. Total : 3 échanges dans la boucle plus 1 échange final, soit 4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La partition du cours range les valeurs égales au pivot à sa gauche. Quel tableau obtient-on pour T = [15, 9, 22, 9, 4, 15, 30, 9] avec le pivot T[1] = 15 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[4, 9, 9, 9, 15, 15, 30, 22]"
+        },
+        {
+          "id": "b",
+          "text": "[4, 9, 9, 9, 15, 15, 22, 30]"
+        },
+        {
+          "id": "c",
+          "text": "[15, 9, 9, 9, 4, 15, 30, 22]"
+        },
+        {
+          "id": "d",
+          "text": "[30, 9, 9, 9, 4, 15, 15, 22]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "i s'arrête sur 22 (case 3) et j sur le dernier 9 (case 8) : on les échange, T = [15, 9, 9, 9, 4, 15, 30, 22]. Puis i passe sur 9, 4 et le second 15, qui est égal au pivot donc reste à gauche, et s'arrête sur 30 (case 7) ; j recule de la case 7 à la case 6 et les indices se croisent. L'échange final du pivot avec T[6], qui vaut aussi 15, ne change rien : [15, 9, 9, 9, 4, 15, 30, 22] ✓, avec le pivot en case 6. Le tableau [4, 9, 9, 9, 15, 15, 30, 22] range les valeurs égales à droite, une autre convention que celle de l'énoncé. Le tableau [30, 9, 9, 9, 4, 15, 15, 22] vient d'un échange du pivot avec T[7], supérieur au pivot. Le tableau trié est le résultat du tri complet, pas d'une partition.",
+      "difficulty": 3
+    }
+  ]
+}
