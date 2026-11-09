@@ -1,0 +1,131 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les pièges du voyageur et des dames",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Dans Ville_proche_non_visit, la ville en cours est c = 2 et Visite = (Vrai, Vrai, Faux, Faux, Faux). On a d(2, 3) = 8, d(2, 4) = 15 et d(2, 5) = 8. Quelle ville la fonction rend-elle, avec le test strict < ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La ville 5"
+        },
+        {
+          "id": "b",
+          "text": "La ville 4"
+        },
+        {
+          "id": "c",
+          "text": "La ville 3"
+        },
+        {
+          "id": "d",
+          "text": "La ville 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ind prend d'abord la première ville non visitée, la ville 3 (8). Pour j = 4 : 15 < 8 est faux. Pour j = 5 : 8 < 8 est faux, car le test est strict : la ville 3 reste la candidate ✓. Avec un test ≤, la fonction rendrait la ville 5. La ville 4 est la plus éloignée. La ville 1 est déjà visitée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Cinq villes : Distance[1, 2] = 36, Distance[1, 3] = 8, Distance[1, 4] = 27, Distance[1, 5] = 17, Distance[2, 3] = 40, Distance[2, 4] = 29, Distance[2, 5] = 21, Distance[3, 4] = 25, Distance[3, 5] = 20, Distance[4, 5] = 15. Le départ est la ville 1, mais Former_Trajet oublie Visite[depart] := Vrai. Quel trajet obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1, 1, 2, 3, 4"
+        },
+        {
+          "id": "b",
+          "text": "1, 3, 5, 4, 1"
+        },
+        {
+          "id": "c",
+          "text": "1, 3, 5, 4, 2"
+        },
+        {
+          "id": "d",
+          "text": "1, 1, 3, 5, 4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La ville 1 reste non visitée : à l'étape 2, Distance[1, 1] = 0 est plus petit que 36, 8, 27 et 17, donc Trajet[2] = 1. On repart de la ville 1 : 3 (8), puis 5 (20, contre 40 et 25), puis 4 (15, contre 21) : Trajet = 1, 1, 3, 5, 4 ✓, et la ville 2 n'est jamais visitée. Le trajet 1, 3, 5, 4, 2 est le bon trajet, obtenu avec l'initialisation correcte. Le trajet 1, 3, 5, 4, 1 range le retour dans Trajet, alors que Trajet n'en contient pas. Le trajet 1, 1, 2, 3, 4 répète le départ puis suit l'ordre des numéros, ce que le calcul des distances ne produit pas.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Soit T = (1, 5, 8, 6, 3, 7, 2, 4) une solution du problème des 8 dames. Quelles transformations de T donnent encore une solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T'[i] = 9 − T[i] pour chaque ligne i (miroir gauche-droite)"
+        },
+        {
+          "id": "b",
+          "text": "T'[i] = T[9 − i] pour chaque ligne i (miroir haut-bas)"
+        },
+        {
+          "id": "c",
+          "text": "T'[i] = T[i] + 1 pour chaque ligne i (décalage d'une colonne)"
+        },
+        {
+          "id": "d",
+          "text": "T' = (4, 5, 8, 6, 3, 7, 2, 1) (T[1] et T[8] échangés)"
+        },
+        {
+          "id": "e",
+          "text": "T'[i] = 9 − T[9 − i] pour chaque ligne i (les deux miroirs)"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "Un miroir gauche-droite remplace chaque colonne par 9 − colonne : les colonnes restent distinctes et les écarts de colonnes ne changent pas ✓. Lire T de la ligne 8 à la ligne 1 conserve les écarts de lignes et de colonnes ✓. Les deux miroirs combinés restent une solution ✓. Le décalage d'une colonne place la dame de la ligne 3 en colonne 9, hors de l'échiquier. L'échange de T[1] et T[8] met les dames des lignes 1 et 2 en colonnes 4 et 5 : Abs (4 − 5) = 1 = 2 − 1, elles se menacent en diagonale.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un programme teste la menace seulement par Abs (T[j] − col) = lig − j, sans tester la même colonne. Pour nbd = 3, combien de placements complets (une dame par ligne) accepte-t-il ? Répondre par un nombre.",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "Sans test de colonne, seules les diagonales interdisent un placement. Pour T[1] = 1, la ligne 2 admet les colonnes 1 et 3, puis la ligne 3 n'admet que la colonne 1 dans les deux cas : (1, 1, 1) et (1, 3, 1). Pour T[1] = 2, la ligne 2 admet seulement la colonne 2, puis la ligne 3 aussi : (2, 2, 2). Pour T[1] = 3, par symétrie : (3, 1, 3) et (3, 3, 3). Total 5 ✓, alors que le problème correct n'a aucune solution pour n = 3.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On liste les permutations de (1, 2, 3, 4, 5) dans l'ordre lexicographique, à partir de (1, 2, 3, 4, 5). Combien de permutations précèdent (1, 3, 2, 5, 4) ? Répondre par un nombre.",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "Toutes les permutations qui commencent par (1, 2) précèdent (1, 3, …) : 3 ! = 6 permutations. Parmi celles qui commencent par (1, 3), la permutation (1, 3, 2, 4, 5) précède (1, 3, 2, 5, 4), et c'est la seule : 1 de plus. Total : 6 + 1 = 7 ✓. Le résultat 6 oublie (1, 3, 2, 4, 5).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour 6 villes et un départ fixé, combien de circuits différents existe-t-il si l'on ne distingue pas un circuit de son parcours en sens inverse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30"
+        },
+        {
+          "id": "b",
+          "text": "60"
+        },
+        {
+          "id": "c",
+          "text": "120"
+        },
+        {
+          "id": "d",
+          "text": "720"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le départ est fixé : les 5 autres villes se placent dans 5 ! = 120 ordres, c'est-à-dire 120 trajets. Chaque circuit apparaît deux fois, une fois dans chaque sens : 120 ÷ 2 = 60 circuits ✓. Le résultat 120 compte les deux sens, le résultat 720 est 6 !, qui ferait aussi varier le départ, et le résultat 30 divise une seconde fois par 2.",
+      "difficulty": 3
+    }
+  ]
+}

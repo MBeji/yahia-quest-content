@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Les bases de numération",
+  "questions": [
+    {
+      "prompt": "Dans un système de numération de base N, quels sont les chiffres utilisables ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "de 1 à N"
+        },
+        {
+          "id": "b",
+          "text": "de 0 à N"
+        },
+        {
+          "id": "c",
+          "text": "de 1 à N − 1"
+        },
+        {
+          "id": "d",
+          "text": "de 0 à N − 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La base N a exactement N chiffres, de 0 à N − 1 ✓ : en base 10, ce sont les chiffres de 0 à 9. Les chiffres de 1 à N oublient le 0 et incluent N, qui s'écrit 10 dans la base N. Les chiffres de 0 à N feraient N + 1 chiffres, un de trop. Les chiffres de 1 à N − 1 oublient aussi le 0 : il n'y en aurait que N − 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel groupe de 4 bits représente le chiffre hexadécimal F ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1011"
+        },
+        {
+          "id": "b",
+          "text": "1100"
+        },
+        {
+          "id": "c",
+          "text": "1110"
+        },
+        {
+          "id": "d",
+          "text": "1111"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "F vaut 15, soit 8 + 4 + 2 + 1 : les quatre bits valent 1, donc 1111 ✓. Le groupe 1110 est E (14), le groupe 1100 est C (12) et le groupe 1011 est B (11) : ce sont les chiffres qui précèdent F dans la liste, qu'on prend pour F quand on compte mal la fin des lettres.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est l'équivalent octal du nombre binaire 100110 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "64"
+        },
+        {
+          "id": "b",
+          "text": "46"
+        },
+        {
+          "id": "c",
+          "text": "38"
+        },
+        {
+          "id": "d",
+          "text": "26"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On découpe depuis la droite : 100 puis 110, soit 4 puis 6 : 46 ✓. Le nombre 64 lit les deux groupes dans l'ordre inverse. Le nombre 38 est la valeur décimale de 100110 (32 + 4 + 2). Le nombre 26 vient d'un découpage par 4 bits (0010 puis 0110) : c'est l'écriture hexadécimale, pas l'octale.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la valeur décimale de (132)₅ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "132"
+        },
+        {
+          "id": "b",
+          "text": "66"
+        },
+        {
+          "id": "c",
+          "text": "42"
+        },
+        {
+          "id": "d",
+          "text": "30"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "1 × 5² + 3 × 5¹ + 2 × 5⁰ = 25 + 15 + 2 = 42 ✓. La valeur 66 numérote les rangs depuis la gauche (1 × 1 + 3 × 5 + 2 × 25). La valeur 132 lit les chiffres comme du décimal. La valeur 30 multiplie la somme des chiffres par la base, (1 + 3 + 2) × 5, au lieu d'employer des puissances.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On convertit 50 en base 6. Quel est le résultat ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "221"
+        },
+        {
+          "id": "b",
+          "text": "122"
+        },
+        {
+          "id": "c",
+          "text": "62"
+        },
+        {
+          "id": "d",
+          "text": "32"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "50 = 8 × 6 + 2, reste 2 ; 8 = 1 × 6 + 2, reste 2 ; 1 = 0 × 6 + 1, reste 1 : lus à l'envers, ces restes donnent 122 ✓. L'écriture 221 lit les restes dans l'ordre où on les obtient. L'écriture 62 est l'écriture octale de 50 (50 = 6 × 8 + 2), obtenue en divisant par 8. L'écriture 32 est l'écriture hexadécimale de 50 (50 = 3 × 16 + 2), obtenue en divisant par 16.",
+      "difficulty": 2
+    }
+  ]
+}

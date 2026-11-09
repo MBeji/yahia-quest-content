@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Tri rapide, Hanoï et comptage",
+  "questions": [
+    {
+      "prompt": "Dans le tri rapide, que fait-on une fois le pivot placé à sa place définitive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On recommence la partition sur le tableau entier, pivot compris"
+        },
+        {
+          "id": "b",
+          "text": "On trie de la même façon le côté gauche puis le côté droit"
+        },
+        {
+          "id": "c",
+          "text": "On fusionne le côté gauche et le côté droit en un seul tableau"
+        },
+        {
+          "id": "d",
+          "text": "On s'arrête : le tableau est alors entièrement trié"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le pivot est définitif, et chaque côté est un sous-tableau plus petit qui reçoit le même traitement : c'est la récursivité ✓. Recommencer sur le tableau entier, pivot compris, ne ferait aucun progrès. La fusion appartient à un autre tri, qui coupe le tableau avant de trier. S'arrêter serait faux, car la partition ne trie pas les côtés : elle sépare seulement les valeurs inférieures ou égales au pivot des valeurs supérieures.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour amener n disques du piquet de départ vers le piquet cible, quelle est la première étape de la méthode récursive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Déplacer directement le plus grand disque vers le piquet cible"
+        },
+        {
+          "id": "b",
+          "text": "Déplacer les n − 1 disques du dessus vers la cible"
+        },
+        {
+          "id": "c",
+          "text": "Déplacer tous les disques à la fois vers le piquet intermédiaire"
+        },
+        {
+          "id": "d",
+          "text": "Déplacer les n − 1 disques du dessus vers l'intermédiaire"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le grand disque est sous les autres : il ne peut bouger qu'après que les n − 1 disques du dessus ont été garés sur l'intermédiaire ✓. Les poser sur la cible occuperait la place où doit aller le grand disque. Déplacer directement le plus grand disque est impossible tant qu'il est recouvert. Déplacer tous les disques à la fois viole la règle d'un seul disque à la fois.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une tour de Hanoï exige 255 déplacements au minimum. Combien de disques comporte-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "127"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le minimum est 2ⁿ − 1 : 2ⁿ − 1 = 255 donne 2ⁿ = 256 = 2⁸, donc n = 8 ✓. Avec 7 disques, il faudrait 2⁷ − 1 = 127 déplacements, et avec 9 disques 2⁹ − 1 = 511. La valeur 127 est un nombre de déplacements (celui de 7 disques), pas un nombre de disques.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On applique la partition du cours à T = [5, 8, 2, 9, 1, 6] avec le pivot T[1] = 5. Quel tableau obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[2, 1, 5, 9, 8, 6]"
+        },
+        {
+          "id": "b",
+          "text": "[9, 1, 2, 5, 8, 6]"
+        },
+        {
+          "id": "c",
+          "text": "[5, 1, 2, 9, 8, 6]"
+        },
+        {
+          "id": "d",
+          "text": "[1, 2, 5, 6, 8, 9]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "i s'arrête sur 8 (case 2) et j sur 1 (case 5) : on les échange, T = [5, 1, 2, 9, 8, 6]. Puis i passe sur 2 et s'arrête sur 9 (case 4), tandis que j recule de la case 4 à la case 3 : les indices se croisent et l'on échange le pivot avec T[3], ce qui donne [2, 1, 5, 9, 8, 6] ✓. Le tableau [9, 1, 2, 5, 8, 6] vient d'un échange avec T[4], dont la valeur 9 est supérieure au pivot. Le tableau [5, 1, 2, 9, 8, 6] oublie l'échange final du pivot. Le tableau [1, 2, 5, 6, 8, 9] est le résultat du tri entier, pas d'une seule partition.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un tri comptage trie T = [2, 0, 2, 1, 2, 0], dont les valeurs sont comprises entre 0 et 2. Que contient occ[0..2] après le décompte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[1, 1, 1]"
+        },
+        {
+          "id": "b",
+          "text": "[2, 1, 3]"
+        },
+        {
+          "id": "c",
+          "text": "[2, 3, 6]"
+        },
+        {
+          "id": "d",
+          "text": "[3, 2, 1]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le 0 apparaît 2 fois, le 1 une fois et le 2 trois fois : occ = [2, 1, 3], de total 6 = n ✓. Le tableau [1, 1, 1] note seulement la présence de chaque valeur. Le tableau [2, 3, 6] donne des effectifs cumulés (2, puis 2 + 1, puis 2 + 1 + 3), pas des occurrences. Le tableau [3, 2, 1] range les décomptes dans l'ordre d'apparition des valeurs (2, puis 0, puis 1) au lieu de les ranger par valeur.",
+      "difficulty": 2
+    }
+  ]
+}

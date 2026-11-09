@@ -1,0 +1,146 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des bases",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quelles écritures n'utilisent que des chiffres autorisés par leur base ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1203)₃"
+        },
+        {
+          "id": "b",
+          "text": "(5F)₁₆"
+        },
+        {
+          "id": "c",
+          "text": "(A9)₁₀"
+        },
+        {
+          "id": "d",
+          "text": "(402)₅"
+        },
+        {
+          "id": "e",
+          "text": "(G2)₁₆"
+        }
+      ],
+      "answerKey": {
+        "correct": ["b", "d"]
+      },
+      "explanation": "L'écriture (5F)₁₆ est valide : 5 et F sont des chiffres hexadécimaux ✓. L'écriture (402)₅ est valide : les chiffres 4, 0 et 2 sont tous inférieurs à 5 ✓. L'écriture (1203)₃ ne l'est pas : en base 3 les chiffres vont de 0 à 2, donc 3 est interdit. L'écriture (A9)₁₀ ne l'est pas : une lettre n'existe qu'au-delà de la base 10. L'écriture (G2)₁₆ ne l'est pas : les chiffres hexadécimaux s'arrêtent à F.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'écriture octale du nombre binaire 1101101 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "109"
+        },
+        {
+          "id": "b",
+          "text": "155"
+        },
+        {
+          "id": "c",
+          "text": "661"
+        },
+        {
+          "id": "d",
+          "text": "664"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On découpe depuis la droite : 101, 101, puis il reste 1, complété en 001 : les chiffres 1, 5, 5 donnent 155 ✓. L'écriture 661 découpe depuis la gauche (110, 110, 1). L'écriture 664 découpe aussi depuis la gauche et complète le dernier groupe à droite (100). Le nombre 109 est la valeur décimale, pas l'écriture octale.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Au début de Conv_Oct, la boucle `While Length (bin) Mod 3 <> 0 Do bin := '0' + bin` s'exécute avec bin = '10110'. Quelle chaîne bin contient-elle ensuite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "010110"
+        },
+        {
+          "id": "b",
+          "text": "10110"
+        },
+        {
+          "id": "c",
+          "text": "101100"
+        },
+        {
+          "id": "d",
+          "text": "110110"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La longueur est 5 et 5 Mod 3 = 2 : un zéro est ajouté à gauche, la longueur devient 6 et la boucle s'arrête : 010110 ✓. La chaîne 10110 resterait inchangée, comme si 5 était un multiple de 3. La chaîne 101100 ajoute le zéro à droite, ce qui double la valeur du nombre. La chaîne 110110 complète avec un 1 au lieu d'un 0 : le nombre change.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On appelle Ranger (300, 16, restes, r), puis Renverser (restes, r), puis on écrit Convert (restes[i]) pour i de 1 à r. Quelle chaîne obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C21"
+        },
+        {
+          "id": "b",
+          "text": "1212"
+        },
+        {
+          "id": "c",
+          "text": "12B"
+        },
+        {
+          "id": "d",
+          "text": "12C"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "300 = 18 × 16 + 12, reste 12 ; 18 = 1 × 16 + 2, reste 2 ; 1 = 0 × 16 + 1, reste 1. Les restes 12, 2, 1 deviennent 1, 2, 12 après Renverser, et Convert (12) donne C : 12C ✓. La chaîne C21 oublie Renverser. La chaîne 1212 oublie Convert et écrit le reste 12 avec ses deux chiffres décimaux. La chaîne 12B vient d'un Convert décalé d'un cran (Chr (54 + v) donne B pour 12).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Div_Bin lit deux nombres binaires, 110111 et 1100, les convertit en décimal, puis calcule le reste de la division du premier par le second avec Mod. Quelle valeur ce reste a-t-il, écrite en décimal ?",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "(110111)₂ = 32 + 16 + 4 + 2 + 1 = 55 et (1100)₂ = 8 + 4 = 12. Comme 55 = 4 × 12 + 7, le reste vaut 7 ✓ (55 Mod 12 = 7).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fonction Conversion ('4C', 13, 6) convertit 4C de la base 13 vers la base 6. Quel résultat renvoie-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "441"
+        },
+        {
+          "id": "b",
+          "text": "204"
+        },
+        {
+          "id": "c",
+          "text": "144"
+        },
+        {
+          "id": "d",
+          "text": "24"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Vers le décimal : C vaut 12, donc 4 × 13 + 12 = 64. Puis 64 = 10 × 6 + 4, reste 4 ; 10 = 1 × 6 + 4, reste 4 ; 1 = 0 × 6 + 1, reste 1 : les restes 4, 4, 1 lus à l'envers donnent 144 ✓. L'écriture 441 lit les restes dans l'ordre obtenu. L'écriture 204 est celle de 76, valeur de 4C lu en base 16. L'écriture 24 est celle de 16, la somme 4 + 12 des chiffres.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premières conversions",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle est la valeur décimale du chiffre hexadécimal E ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "14"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "A vaut 10, B 11, C 12, D 13 et E 14 ✓ : Ord ('E') = 69 et 69 − 55 = 14. La valeur 15 est celle de F, la dernière lettre. La valeur 13 est celle de D. La valeur 5 est le rang de E dans l'alphabet, alors que le comptage des lettres commence à 10.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est l'écriture binaire du nombre hexadécimal 9C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11001001"
+        },
+        {
+          "id": "b",
+          "text": "10011100"
+        },
+        {
+          "id": "c",
+          "text": "10011011"
+        },
+        {
+          "id": "d",
+          "text": "10010011"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "9 donne 1001 et C vaut 12, donc donne 1100 : 1001 1100, soit 10011100 ✓. L'écriture 11001001 met les groupes dans l'ordre inverse, 1100 puis 1001. L'écriture 10010011 donne à C la valeur 3 (rang de C dans l'alphabet : 0011). L'écriture 10011011 donne à C la valeur 11 (1011), qui est celle de B.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est l'écriture binaire du nombre octal 52 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1010010"
+        },
+        {
+          "id": "b",
+          "text": "110100"
+        },
+        {
+          "id": "c",
+          "text": "101010"
+        },
+        {
+          "id": "d",
+          "text": "10110"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "5 donne 101 et 2 donne 010, chacun sur 3 bits : 101 010, soit 101010 ✓. L'écriture 10110 code 2 sur deux bits seulement (10) au lieu de 010. L'écriture 1010010 code chaque chiffre sur 4 bits (0101 puis 0010) au lieu de 3. L'écriture 110100 est celle du nombre décimal 52, quand on lit 52 comme un nombre décimal.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La conversion de 19 en base 2 utilise une boucle qui divise n par 2 à chaque tour, jusqu'à n = 0. Combien de tours cette boucle fait-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "19"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les quotients successifs sont 9, 4, 2, 1 puis 0 : la boucle fait 5 tours ✓, autant que de chiffres de (10011)₂. Le nombre 6 compte une division de plus, celle du quotient 0, alors que la boucle s'arrête dès que n vaut 0. Le nombre 9 est le premier quotient. Le nombre 19 est la valeur de départ, pas un nombre de tours.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la valeur décimale de (2F)₁₆ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17"
+        },
+        {
+          "id": "b",
+          "text": "32"
+        },
+        {
+          "id": "c",
+          "text": "35"
+        },
+        {
+          "id": "d",
+          "text": "47"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "2 × 16 + 15 = 47 ✓. La valeur 17 additionne les chiffres, 2 + 15. La valeur 35 pèse les chiffres avec la base 10, 2 × 10 + 15. La valeur 32 oublie le chiffre F : elle ne garde que 2 × 16.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On convertit (21)₃ en base 2 en passant par le décimal. Quelle écriture obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "101"
+        },
+        {
+          "id": "c",
+          "text": "111"
+        },
+        {
+          "id": "d",
+          "text": "10101"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(21)₃ = 2 × 3 + 1 = 7, puis 7 = 3 × 2 + 1, 3 = 1 × 2 + 1 et 1 = 0 × 2 + 1 : les restes 1, 1, 1 donnent 111 ✓. L'écriture 11 est celle de 3, la somme des chiffres 2 + 1. L'écriture 101 est celle de 5, avec les rangs numérotés depuis la gauche (2 × 1 + 1 × 3). L'écriture 10101 est celle de 21, le nombre de départ lu comme un décimal.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Les algorithmes d'approximation",
+  "questions": [
+    {
+      "prompt": "Quel nombre est un point fixe de la fonction f(x) = 3x − 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 4/3"
+        },
+        {
+          "id": "b",
+          "text": "x = 2"
+        },
+        {
+          "id": "c",
+          "text": "x = −2"
+        },
+        {
+          "id": "d",
+          "text": "x = 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un point fixe vérifie f(x) = x, soit 3x − 4 = x, donc 2x = 4 et x = 2 ✓ (f(2) = 2). La valeur 4/3 annule f (3 × 4/3 − 4 = 0) : elle résout f(x) = 0, pas f(x) = x. La valeur −2 vient d'un signe perdu (3x = x − 4), et f(−2) = −10. La valeur 4 oublie de diviser 2x = 4 par 2 : f(4) = 8, différent de 4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle valeur décimale désigne la constante Pascal 10E-6 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,000001"
+        },
+        {
+          "id": "b",
+          "text": "0,0000001"
+        },
+        {
+          "id": "c",
+          "text": "0,00001"
+        },
+        {
+          "id": "d",
+          "text": "1000000"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le nombre 10E-6 vaut 10 × 10⁻⁶ = 10⁻⁵ = 0,00001 ✓ : le 10 avant le E est un multiplicateur. La valeur 0,000001 ignore ce multiplicateur et ne lit que 10⁻⁶. La valeur 0,0000001 divise par 10 au lieu de multiplier. La valeur 1000000 lit 10⁶ : elle perd le signe moins de l'exposant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans Pi_Euler, après les passes i = 2 à 6, la somme vaut S2 = 1 + 1/4 + 1/9 + 1/16 + 1/25 + 1/36 ≈ 1,4914. Quelle estimation de π le programme calcule-t-il à cet instant, au millième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,491"
+        },
+        {
+          "id": "b",
+          "text": "3,653"
+        },
+        {
+          "id": "c",
+          "text": "8,948"
+        },
+        {
+          "id": "d",
+          "text": "2,991"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a 6 × S2 ≈ 8,9483, puis π ≈ √8,9483 ≈ 2,991 ✓. La valeur 1,491 est S2 lui-même, qui tend vers π²/6 et non vers π. La valeur 8,948 s'arrête à 6 × S2, sans la racine carrée. La valeur 3,653 est √6 × S2 ≈ 2,449 × 1,4914 : la racine ne porte que sur 6 au lieu du produit entier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les facteurs de la formule de Wallis sont 2/1, 2/3, 4/3, 4/5, 6/5, 6/7, … Quel est le huitième facteur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8/9"
+        },
+        {
+          "id": "b",
+          "text": "8/7"
+        },
+        {
+          "id": "c",
+          "text": "10/9"
+        },
+        {
+          "id": "d",
+          "text": "6/9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "À tour de rôle, le numérateur puis le dénominateur augmentent de 2 : après 6/7 vient 8/7 (septième facteur), puis 8/9 (huitième) ✓. Le facteur 8/7 est le septième, un rang trop tôt. Le facteur 10/9 est le neuvième. Le facteur 6/9 fait avancer deux fois de suite le dénominateur, sans alterner avec le numérateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Avec f(x) = x², la méthode des trapèzes sur [0 ; 4] avec n = 2 donne quelle aire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "20"
+        },
+        {
+          "id": "c",
+          "text": "24"
+        },
+        {
+          "id": "d",
+          "text": "48"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a h = (4 − 0)/2 = 2, avec f(0) = 0, f(2) = 4 et f(4) = 16. Les trapèzes valent (0 + 4)/2 = 2 et (4 + 16)/2 = 10, et l'aire est 2 × (2 + 10) = 24 ✓. La valeur 12 est la somme des deux trapèzes, sans multiplier par h. La valeur 20 est celle du point milieu (x = 1 et 3 : 2 × (1 + 9)), une autre méthode. La valeur 48 oublie de diviser par 2 : 2 × (4 + 20).",
+      "difficulty": 2
+    }
+  ]
+}

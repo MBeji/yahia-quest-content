@@ -1,0 +1,140 @@
+{
+  "title": "⭐ Exercice : Premiers circuits et premières dames",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Il y a n = 6 villes et le départ est la ville 4. Juste avant le premier appel de Ville_proche_non_visit, quelles cases de Visite valent Vrai ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les cases 1 à 4"
+        },
+        {
+          "id": "b",
+          "text": "Aucune case"
+        },
+        {
+          "id": "c",
+          "text": "Les six cases"
+        },
+        {
+          "id": "d",
+          "text": "Seule la case 4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Former_Trajet met toutes les cases à Faux, puis Visite[depart] à Vrai : seule la case 4 vaut Vrai avant le premier choix ✓. Si aucune case ne valait Vrai, le départ pourrait être choisi comme ville la plus proche de lui-même (distance 0). Les cases 1 à 4 confondent le numéro du départ avec un nombre de villes visitées. Avec les six cases à Vrai, il ne resterait aucune ville à choisir.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Quatre villes, distances en km : d(1, 2) = 14, d(1, 3) = 9, d(1, 4) = 21, d(2, 3) = 12, d(2, 4) = 7, d(3, 4) = 16. Combien de kilomètres parcourt-on sur le circuit 1, 2, 4, 3, puis retour en 1 ? Répondre par un nombre de km.",
+      "answerKey": {
+        "value": 46,
+        "unit": "km"
+      },
+      "explanation": "On additionne d(1, 2) = 14, d(2, 4) = 7, d(4, 3) = 16, puis le retour d(3, 1) = 9 : 14 + 7 + 16 + 9 = 46 ✓. Oublier le retour au départ donne 37.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quatre villes : d(3, 1) = 9, d(3, 2) = 12 et d(3, 4) = 16. Les villes 1 et 3 sont déjà visitées et la ville en cours est la 3. Quelle ville rend Ville_proche_non_visit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La ville 1"
+        },
+        {
+          "id": "b",
+          "text": "La ville 2"
+        },
+        {
+          "id": "c",
+          "text": "La ville 3"
+        },
+        {
+          "id": "d",
+          "text": "La ville 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les villes non visitées sont 2 et 4, à 12 et 16 de la ville 3 : la fonction rend la ville 2 ✓. La ville 1 est la plus proche (9), mais elle est déjà visitée. La ville 3 est la ville en cours, à distance 0, et déjà visitée. La ville 4 est plus loin que la ville 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quatre villes : d(2, 1) = 14, d(2, 3) = 12, d(2, 4) = 7, d(4, 1) = 21, d(4, 3) = 16, d(3, 1) = 9. Quel trajet la stratégie de la ville la plus proche donne-t-elle depuis la ville 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2, 1, 3, 4"
+        },
+        {
+          "id": "b",
+          "text": "2, 3, 1, 4"
+        },
+        {
+          "id": "c",
+          "text": "2, 4, 3, 1"
+        },
+        {
+          "id": "d",
+          "text": "2, 4, 1, 3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Depuis 2, les villes 1, 3 et 4 sont à 14, 12 et 7 : on va en 4. Depuis 4, les villes 1 et 3 sont à 21 et 16 : on va en 3. Il reste la ville 1 ✓. Le trajet 2, 1, 3, 4 suit l'ordre des numéros sans comparer les distances. Le trajet 2, 3, 1, 4 s'arrête à 12 sans voir que 7 est plus petit. Le trajet 2, 4, 1, 3 choisit la ville 1, à 21 de la ville 4, alors que la ville 3 est à 16.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur un échiquier 5 × 5, deux dames occupent la case (ligne 1, colonne 1) et la case (ligne 2, colonne 3). Quelle colonne reste libre pour la dame de la ligne 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Colonne 5"
+        },
+        {
+          "id": "b",
+          "text": "Colonne 4"
+        },
+        {
+          "id": "c",
+          "text": "Colonne 3"
+        },
+        {
+          "id": "d",
+          "text": "Colonne 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Colonne 5 : Abs (1 − 5) = 4 est différent de 3 − 1 = 2, et Abs (3 − 5) = 2 est différent de 1 : la case est libre ✓. Colonne 4 : Abs (3 − 4) = 1 = 3 − 2, même diagonale que la dame de la ligne 2. Colonne 3 : même colonne que la dame de la ligne 2. Colonne 2 : Abs (3 − 2) = 1 = 3 − 2, même diagonale que la dame de la ligne 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le successeur de (1, 2, 4, 3) dans l'ordre lexicographique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1, 3, 2, 4)"
+        },
+        {
+          "id": "b",
+          "text": "(1, 3, 4, 2)"
+        },
+        {
+          "id": "c",
+          "text": "(1, 4, 2, 3)"
+        },
+        {
+          "id": "d",
+          "text": "(1, 4, 3, 2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On trouve i = 3 (T[2] = 2 < T[3] = 4) puis j = 4 (T[2] = 2 < T[4] = 3). On permute T[2] et T[4] : (1, 3, 4, 2), puis on renverse T[3], T[4] : (1, 3, 2, 4) ✓. Le résultat (1, 3, 4, 2) oublie le renversement. Les résultats (1, 4, 2, 3) et (1, 4, 3, 2) permutent T[2] avec T[3] au lieu de T[4], sans puis avec renversement.",
+      "difficulty": 2
+    }
+  ]
+}
