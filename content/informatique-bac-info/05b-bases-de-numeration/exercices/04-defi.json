@@ -1,0 +1,117 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des bases",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans une base b, l'écriture 1000 désigne le nombre qui vaut 125 en décimal. Quelle est la base b ?",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "L'écriture 1000 en base b vaut 1 × b³ + 0 × b² + 0 × b + 0 = b³. Il faut b³ = 125, donc b = 5 ✓ (5 × 5 × 5 = 125). Les chiffres 1 et 0 existent bien en base 5.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est l'écriture de 1000 en base 8, obtenue par divisions successives ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3E8"
+        },
+        {
+          "id": "b",
+          "text": "0571"
+        },
+        {
+          "id": "c",
+          "text": "175"
+        },
+        {
+          "id": "d",
+          "text": "1750"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "1000 = 125 × 8 + 0, reste 0 ; 125 = 15 × 8 + 5, reste 5 ; 15 = 1 × 8 + 7, reste 7 ; 1 = 0 × 8 + 1, reste 1. Les restes 0, 5, 7, 1 lus à l'envers donnent 1750 ✓. L'écriture 175 oublie le premier reste, 0 : elle vaut 125, c'est-à-dire 1000 ÷ 8. L'écriture 0571 lit les restes dans l'ordre obtenu. L'écriture 3E8 est l'écriture hexadécimale de 1000, obtenue en divisant par 16.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur le nombre de chiffres d'une écriture, lesquelles sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un nombre binaire de 12 chiffres s'écrit avec exactement 3 chiffres hexadécimaux"
+        },
+        {
+          "id": "b",
+          "text": "Un nombre hexadécimal de 2 chiffres s'écrit toujours avec 3 chiffres octaux"
+        },
+        {
+          "id": "c",
+          "text": "En base 7, le plus grand nombre de 3 chiffres vaut 7³ − 1, soit 342"
+        },
+        {
+          "id": "d",
+          "text": "(20)₈ vaut vingt en décimal"
+        },
+        {
+          "id": "e",
+          "text": "Un nombre hexadécimal de 2 chiffres dont le premier chiffre est au moins 8 s'écrit avec exactement 8 bits"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "Douze bits forment 3 groupes de 4, et le premier bit vaut 1 : le premier groupe n'est pas nul, donc 3 chiffres hexadécimaux exactement ✓. En base 7, le plus grand nombre de 3 chiffres est 666, soit 6 × 49 + 6 × 7 + 6 = 342 = 7³ − 1 ✓. Un premier chiffre au moins égal à 8 commence par le bit 1 sur 4 bits : aucun zéro de tête n'est supprimé, d'où 8 bits ✓. En revanche, (10)₁₆ = 16 = (20)₈ n'a que 2 chiffres octaux. Et (20)₈ = 2 × 8 = 16, non 20 : la base fait partie de l'écriture.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans Ranger, le tableau restes a RMAX = 8 cases. Quel est le plus grand nombre N que l'on peut convertir en base 3 sans dépasser le tableau ?",
+      "answerKey": {
+        "value": 6560
+      },
+      "explanation": "Le tableau reçoit un reste par chiffre : au plus 8 chiffres en base 3. Le plus grand nombre à 8 chiffres est 22222222, soit 3⁸ − 1 = 6561 − 1 = 6560 ✓. Le nombre 6561 s'écrit 100000000, avec 9 chiffres : il dépasse le tableau.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Combien d'entiers s'écrivent avec exactement 3 chiffres en base 5, sachant que le premier chiffre n'est pas 0 ?",
+      "answerKey": {
+        "value": 100,
+        "unit": "entiers"
+      },
+      "explanation": "Le premier chiffre va de 1 à 4 : 4 choix. Chacun des deux autres va de 0 à 4 : 5 choix. 4 × 5 × 5 = 100 ✓. Contrôle : ces nombres vont de 5² = 25 à 5³ − 1 = 124 en décimal, soit 124 − 25 + 1 = 100 nombres.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est l'écriture hexadécimale du nombre octal 1273, obtenue en passant par le binaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AEC"
+        },
+        {
+          "id": "b",
+          "text": "699"
+        },
+        {
+          "id": "c",
+          "text": "2BB"
+        },
+        {
+          "id": "d",
+          "text": "1273"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "1 donne 001, 2 donne 010, 7 donne 111 et 3 donne 011 : le binaire est 1010111011, sur 10 bits. Depuis la droite : 1011, 1011, puis 10 complété en 0010 : les chiffres 2, B, B donnent 2BB ✓. L'écriture AEC découpe depuis la gauche (1010, 1110, 11 complété à droite en 1100). L'écriture 1273 recopie les chiffres octaux comme s'ils étaient hexadécimaux. Le nombre 699 est la valeur décimale.",
+      "difficulty": 3
+    }
+  ]
+}

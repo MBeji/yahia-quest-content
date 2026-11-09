@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Écrire, compléter et traduire",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Pour Pt_Fixe, dont les termes oscillent autour du point fixe (1, puis 0,1585, puis 0,8421, …), quelle ligne traduit « répéter jusqu'à ce que l'écart entre deux termes consécutifs soit inférieur à Epsilon » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Until xact - xpre < Epsilon;"
+        },
+        {
+          "id": "b",
+          "text": "Until Abs (xact - xpre) > Epsilon;"
+        },
+        {
+          "id": "c",
+          "text": "While Abs (xact - xpre) < Epsilon Do"
+        },
+        {
+          "id": "d",
+          "text": "Until Abs (xact - xpre) < Epsilon;"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Until Abs (xact - xpre) < Epsilon s'arrête quand les deux termes sont proches, quel que soit le sens de l'écart ✓. Sans Abs, un écart négatif est toujours inférieur à Epsilon : pour Pt_Fixe, xact − xpre vaut 0,1585 − 1 ≈ −0,84 dès la première passe, et la boucle s'arrête aussitôt. Le signe > inverse le test : Repeat s'arrête alors dès que l'écart est grand, donc tant que la suite bouge encore. Le While … < Epsilon Do n'entre dans la boucle que si les termes sont déjà proches : c'est l'inverse du but.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour la série de Leibniz, quelle instruction fait alterner Signe entre 1 et −1, en partant de 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Signe := -Signe;"
+        },
+        {
+          "id": "b",
+          "text": "Signe := 1 - Signe;"
+        },
+        {
+          "id": "c",
+          "text": "Signe := 1;"
+        },
+        {
+          "id": "d",
+          "text": "Signe := Signe * Signe;"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Signe := -Signe change 1 en −1, puis −1 en 1 ✓. Signe := 1 - Signe donne 0 puis 1 : il alterne entre 1 et 0, donc annule un terme sur deux. Signe := 1 remet toujours 1 : le signe ne change jamais. Signe := Signe * Signe vaut toujours 1, car le carré de −1 est 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la fonction Trapezes, on écrit Somme := Somme + (f (a + k * h) + f (…)) / 2. Que faut-il écrire à la place des points de suspension ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a + k * h"
+        },
+        {
+          "id": "b",
+          "text": "b"
+        },
+        {
+          "id": "c",
+          "text": "a + (k + 1) * h"
+        },
+        {
+          "id": "d",
+          "text": "a + k * h + h / 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le trapèze numéro k a pour bases f(a + k·h) et f(a + (k + 1)·h) ✓. Écrire a + k * h deux fois donne (f + f)/2 = f(a + k·h) : on retombe sur le rectangle à gauche. Écrire b prend la borne de tout l'intervalle au lieu de l'extrémité droite du sous-intervalle courant : la base est fausse sauf pour le dernier trapèze. Écrire a + k * h + h / 2 prend le milieu : la moyenne mêle le point gauche et le point milieu, et non l'extrémité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans sin(x) = x − x³/3! + x⁵/5! − …, quel est le terme suivant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+ x⁷/7!"
+        },
+        {
+          "id": "b",
+          "text": "− x⁷/7!"
+        },
+        {
+          "id": "c",
+          "text": "− x⁶/6!"
+        },
+        {
+          "id": "d",
+          "text": "− x⁷/6!"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les exposants impairs 1, 3, 5, 7 se suivent, chacun avec la factorielle du même nombre, et les signes alternent : le terme suivant est − x⁷/7! ✓. Le terme + x⁷/7! oublie l'alternance. Le terme − x⁶/6! suit la série du cosinus, 1 − x²/2! + x⁴/4! − x⁶/6!, qui a des exposants pairs. Le terme − x⁷/6! décale la factorielle : elle doit porter le même nombre que l'exposant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans Rectangles, juste après Somme := Somme + f (x), quelle instruction fait passer au rectangle suivant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x := x + 1;"
+        },
+        {
+          "id": "b",
+          "text": "x := x + h / 2;"
+        },
+        {
+          "id": "c",
+          "text": "x := x * h;"
+        },
+        {
+          "id": "d",
+          "text": "x := x + h;"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaque rectangle a pour largeur h : pour passer d'un milieu au suivant, x avance de h ✓ (a + h/2, puis a + 3h/2, …). L'instruction x := x + 1 avance d'une unité, ce qui ne convient que si h vaut 1. L'instruction x := x + h / 2 n'avance que d'un demi-intervalle : x tombe tour à tour sur un bord puis sur un milieu, mélangeant les deux méthodes. L'instruction x := x * h multiplie au lieu d'additionner : x ne parcourt plus l'intervalle à pas réguliers.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle initialisation de e_Fact, avant la boucle Répéter S1 ← S2, i ← i + 1, S2 ← S1 + 1/Fact (i), donne e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S2 ← 1 et i ← 0"
+        },
+        {
+          "id": "b",
+          "text": "S2 ← 0 et i ← 0"
+        },
+        {
+          "id": "c",
+          "text": "S2 ← 1 et i ← 1"
+        },
+        {
+          "id": "d",
+          "text": "S2 ← 0 et i ← 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec S2 ← 1 et i ← 0, S2 contient d'abord 1/0! puis la boucle ajoute 1/1!, 1/2!, … : on obtient e ✓. L'initialisation S2 ← 0 et i ← 0 oublie le terme 1/0! et donne e − 1. L'initialisation S2 ← 1 et i ← 1 saute le terme 1/1! (i passe à 2 dès la première passe) et donne aussi e − 1. L'initialisation S2 ← 0 et i ← 1 oublie les deux premiers termes et donne e − 2 ≈ 0,718.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Compléter et lire du Pascal",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Dans Partition (Var T : Tab ; g, d : Integer ; Var m : Integer), après pivot := T[g], quelles initialisations des indices i et j convient-il d'écrire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "i := g ; j := d + 1"
+        },
+        {
+          "id": "b",
+          "text": "i := g + 1 ; j := d - 1"
+        },
+        {
+          "id": "c",
+          "text": "i := 1 ; j := d"
+        },
+        {
+          "id": "d",
+          "text": "i := g + 1 ; j := d"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "i commence juste après le pivot et j sur la dernière case du sous-tableau : i := g + 1 ; j := d ✓. Avec j := d - 1, la dernière case n'est jamais examinée : pour T = [5, 2, 9, 1], la partition donne [2, 5, 9, 1], où 1 reste à droite du pivot alors qu'il est plus petit. Avec j := d + 1, on lit T[d + 1], hors du sous-tableau. Avec i := 1, on examine des cases à gauche de g dès que g > 1, donc hors du sous-tableau.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Voici Hanoi (n, depart, cible, inter) : If n > 0 Then Begin Hanoi (n - 1, depart, inter, cible) ; WriteLn (depart, ' vers ', cible) ; ... End. Quelle instruction remplace les points de suspension ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hanoi (n - 1, depart, cible, inter)"
+        },
+        {
+          "id": "b",
+          "text": "Hanoi (n - 1, inter, cible, depart)"
+        },
+        {
+          "id": "c",
+          "text": "Hanoi (n, inter, cible, depart)"
+        },
+        {
+          "id": "d",
+          "text": "Hanoi (n - 1, cible, inter, depart)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Après le déplacement du grand disque, les n − 1 petits disques sont sur l'intermédiaire et doivent aller sur la cible, en s'aidant du départ, devenu vide : Hanoi (n - 1, inter, cible, depart) ✓. L'appel Hanoi (n - 1, depart, cible, inter) ferait partir les petits disques du piquet de départ, maintenant vide. L'appel Hanoi (n, ...) ne diminue pas n : il ne se terminerait jamais. L'appel Hanoi (n - 1, cible, inter, depart) les ferait partir de la cible, qui porte le grand disque.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un programme a lu n valeurs dans T[1..n]. Quelle instruction lance le tri rapide sur tout le tableau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tri_Rapide (T, 1, n)"
+        },
+        {
+          "id": "b",
+          "text": "Tri_Rapide (T, 0, n)"
+        },
+        {
+          "id": "c",
+          "text": "Tri_Rapide (T, 1, n - 1)"
+        },
+        {
+          "id": "d",
+          "text": "Tri_Rapide (T, n, 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le tableau occupe les cases 1 à n : l'appel de départ porte sur g = 1 et d = n ✓. Avec g = 0, la partition lit T[0], qui n'existe pas. Avec d = n - 1, la dernière case est écartée : pour [2, 3, 1], le tri de T[1..2] laisse 1 en dernière case. Avec g = n et d = 1, on a g ≥ d : l'appel ne fait rien.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans Tri_Comptage, la boucle For i := 1 To n Do doit compter les occurrences des valeurs de T dans occ, initialement rempli de zéros. Quelle instruction convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "occ[i] := occ[T[i]] + 1"
+        },
+        {
+          "id": "b",
+          "text": "occ[T[i]] := occ[T[i]] + 1"
+        },
+        {
+          "id": "c",
+          "text": "occ[T[i]] := occ[T[i]] + i"
+        },
+        {
+          "id": "d",
+          "text": "T[i] := occ[T[i]] + 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La valeur T[i] est l'indice de la case à incrémenter : occ[T[i]] := occ[T[i]] + 1 ✓. L'instruction occ[i] := occ[T[i]] + 1 range le décompte dans la case i, qui n'est pas la case de la valeur. L'instruction occ[T[i]] := occ[T[i]] + i ajoute la position i au lieu de 1 : la case contiendrait une somme de positions, pas un nombre d'occurrences. L'instruction T[i] := occ[T[i]] + 1 écrase le tableau à trier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On veut que Partition range les valeurs ≥ pivot à gauche et les valeurs < pivot à droite, pour trier T en ordre décroissant. Quelle modification suffit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inverser seulement le test de i : T[i] >= pivot, sans toucher à T[j] > pivot"
+        },
+        {
+          "id": "b",
+          "text": "Rendre les deux tests stricts : T[i] < pivot et T[j] >= pivot, sans autre changement"
+        },
+        {
+          "id": "c",
+          "text": "Inverser les deux tests : T[i] >= pivot, puis T[j] < pivot"
+        },
+        {
+          "id": "d",
+          "text": "Échanger l'ordre des deux appels récursifs de Tri_Rapide après la partition"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour un ordre décroissant, i avance tant que T[i] >= pivot et j recule tant que T[j] < pivot ✓. Inverser un seul test mélange les deux conventions : sur [6, 4, 1, 6, 2, 4, 6], on obtient [6, 6, 4, 6, 2, 4, 1], qui n'est pas trié. Rendre les tests stricts ne fait que changer le côté des valeurs égales au pivot : le tri reste croissant. Échanger l'ordre des deux appels ne change rien, car les deux côtés sont disjoints : le tableau reste trié en ordre croissant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelles lignes Hanoi (2, 1, 3, 2) affiche-t-il, avec les paramètres n, depart, cible, inter ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 vers 3, puis 1 vers 3, puis 2 vers 3"
+        },
+        {
+          "id": "b",
+          "text": "1 vers 3, puis 1 vers 2, puis 3 vers 2"
+        },
+        {
+          "id": "c",
+          "text": "1 vers 2, puis 1 vers 3, puis 2 vers 3"
+        },
+        {
+          "id": "d",
+          "text": "1 vers 2, puis 1 vers 3, puis 3 vers 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le départ est 1, la cible est 3 et l'intermédiaire est 2. Le premier appel, Hanoi (1, 1, 2, 3), affiche 1 vers 2 : le petit disque se gare sur l'intermédiaire. La procédure affiche 1 vers 3 pour le grand disque, puis Hanoi (1, 2, 3, 1) affiche 2 vers 3 ✓. La séquence 1 vers 3, 1 vers 2, 3 vers 2 est celle d'une cible 2 : elle lit les deux derniers paramètres à l'envers. La séquence 1 vers 3, 1 vers 3, 2 vers 3 est celle d'une procédure qui garde les mêmes rôles dans le premier appel récursif : le grand disque serait posé sur le petit. La séquence qui finit par 3 vers 2 se trompe dans le second appel : elle part de la cible au lieu de l'intermédiaire, comme Hanoi (1, 3, 2, 1). Le grand disque, seul sur le piquet 3, serait posé sur le petit disque garé en 2.",
+      "difficulty": 2
+    }
+  ]
+}

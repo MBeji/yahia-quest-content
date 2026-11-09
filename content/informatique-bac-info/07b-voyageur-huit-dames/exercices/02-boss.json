@@ -1,0 +1,132 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des circuits",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur la stratégie de la ville la plus proche, lesquelles sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle construit un circuit qui visite chaque ville une seule fois"
+        },
+        {
+          "id": "b",
+          "text": "Le circuit obtenu peut être plus long que le circuit minimal"
+        },
+        {
+          "id": "c",
+          "text": "Le circuit obtenu est toujours le plus court"
+        },
+        {
+          "id": "d",
+          "text": "Le circuit obtenu ne dépend pas de la ville de départ"
+        },
+        {
+          "id": "e",
+          "text": "Elle examine les (n − 1) ! trajets avant de choisir"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "Elle fait n − 1 choix successifs parmi les villes non visitées, donc chaque ville est visitée une fois ✓. Elle est gloutonne : sur l'exemple du cours, elle donne 91 depuis la ville 1 alors qu'un circuit de 74 existe ✓. Les trois autres affirmations sont fausses : « toujours le plus court » est contredit par ce 91 contre 74 ; le résultat dépend du départ (74 depuis la ville 4 sur le même exemple) ; elle ne regarde jamais que la ville en cours et n'examine pas les (n − 1) ! trajets, ce que fait l'énumération, la seule méthode à garantir le minimum.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans Place_dame, la ligne lig n'a aucune colonne libre : la boucle For se termine sans lancer d'appel. Qu'est-ce qui reprend la recherche à la colonne suivante de la ligne précédente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le test If lig = nbd + 1, qui renvoie aussitôt la main à la boucle de l'appel précédent"
+        },
+        {
+          "id": "b",
+          "text": "L'affectation T[lig] := col, qui efface la dernière dame posée sur l'échiquier"
+        },
+        {
+          "id": "c",
+          "text": "La fin de l'appel : la boucle For de l'appel précédent passe à la colonne suivante"
+        },
+        {
+          "id": "d",
+          "text": "La fonction Menace, qui revient sur la dernière décision prise par le programme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand un appel se termine, l'appel précédent reprend juste après son appel récursif et sa boucle For passe à la colonne suivante : c'est le retour sur trace ✓. Le test lig = nbd + 1 ne sert qu'à compter une solution. L'affectation T[lig] := col pose une dame et n'efface rien : la case est simplement écrasée à l'essai suivant. La fonction Menace répond seulement à la question « cette case est-elle menacée ? ».",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Cinq villes, distances en km : d(1, 2) = 12, d(1, 3) = 34, d(1, 4) = 18, d(1, 5) = 32, d(2, 3) = 22, d(2, 4) = 15, d(2, 5) = 20, d(3, 4) = 23, d(3, 5) = 14, d(4, 5) = 29. Partant de la ville 1, la stratégie de la ville la plus proche parcourt un circuit. Combien de kilomètres fait-il, retour au départ compris ? Répondre par un nombre de km.",
+      "answerKey": {
+        "value": 96,
+        "unit": "km"
+      },
+      "explanation": "Depuis 1, la plus proche est 2 (12, contre 34, 18 et 32). Depuis 2, on compare 22, 15 et 20 : la ville 4 (15). Depuis 4, on compare 23 et 29 : la ville 3 (23). Depuis 3, il reste la ville 5 (14). Retour de 5 à 1 : 32. Total : 12 + 15 + 23 + 14 + 32 = 96 ✓. Sans le retour, on trouverait 64.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Cinq villes, distances en km : d(1, 2) = 19, d(1, 3) = 13, d(1, 4) = 27, d(1, 5) = 6, d(2, 3) = 17, d(2, 4) = 35, d(2, 5) = 14, d(3, 4) = 18, d(3, 5) = 9, d(4, 5) = 26. On applique la méthode d'insertion à partir de l'itinéraire 1, 2, en insérant les villes 3, 4 puis 5. Quel itinéraire obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1, 5, 2, 3, 4"
+        },
+        {
+          "id": "b",
+          "text": "1, 2, 3, 4, 5"
+        },
+        {
+          "id": "c",
+          "text": "1, 5, 2, 4, 3"
+        },
+        {
+          "id": "d",
+          "text": "1, 5, 3, 2, 4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ville 3 : les deux places coûtent 13 + 17 − 19 = 11, on garde la dernière : 1, 2, 3. Ville 4 : les trois places coûtent 43, 36 et 32 ; la plus petite est entre 3 et 1 : 1, 2, 3, 4. Ville 5 : les quatre places coûtent 1, 6, 17 et 5 ; la plus petite est entre 1 et 2 : 1, 5, 2, 3, 4 ✓. Le résultat 1, 2, 3, 4, 5 ajoute chaque ville à la fin sans comparer. Le résultat 1, 5, 2, 4, 3 oublie la place entre la dernière ville et la première pour la ville 4 (32). Le résultat 1, 5, 3, 2, 4 est le circuit de la ville la plus proche, une autre méthode.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour cinq dames, la dame de la ligne 1 est en colonne 3. Combien de solutions du problème commencent par T[1] = 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Après T[1] = 3, la ligne 2 admet les colonnes 1 et 5. La colonne 1 mène à (3, 1, 4, 2, 5) et la colonne 5 à (3, 5, 2, 4, 1), chaque ligne suivante n'ayant qu'une colonne libre : 2 solutions ✓. Le résultat 1 oublie une des deux branches. Les colonnes 2 et 4 de la ligne 2 sont menacées en diagonale par la dame de la ligne 1, donc elles n'ajoutent rien, et les résultats 3 et 4 comptent des branches qui n'existent pas.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un programme remplace le test lig = nbd + 1 par lig = nbd dans Place_dame. Pour nbd = 5, quelle valeur de solution affiche-t-il ? Répondre par un nombre.",
+      "answerKey": {
+        "value": 12
+      },
+      "explanation": "Le compteur augmente chaque fois que quatre dames sont placées sans menace : l'appel avec lig = 5 n'a pas encore posé la cinquième dame. Il y a 12 tels placements : les 10 solutions du problème (chacune commence par un placement de quatre dames) et 2 placements de quatre dames, (2, 5, 1, 4) et (4, 1, 5, 2), qui ne peuvent recevoir aucune cinquième dame ✓. Le résultat 10 oublie ces deux impasses.",
+      "difficulty": 3
+    }
+  ]
+}

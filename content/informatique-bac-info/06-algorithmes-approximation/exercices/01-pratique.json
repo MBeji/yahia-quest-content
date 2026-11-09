@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas dans l'approximation",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Combien la fonction f(x) = x³ a-t-elle de points fixes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "aucun"
+        },
+        {
+          "id": "b",
+          "text": "un seul : x = 1"
+        },
+        {
+          "id": "c",
+          "text": "trois : −1, 0 et 1"
+        },
+        {
+          "id": "d",
+          "text": "deux : x = 0 et x = 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un point fixe vérifie x³ = x, soit x(x − 1)(x + 1) = 0 : trois points fixes, −1, 0 et 1 ✓. Répondre « un seul, 1 » revient à simplifier par x (ce qui perd la solution 0), puis à ne garder que la racine positive de x² = 1. Répondre « deux, 0 et 1 » oublie −1, alors que (−1)³ = −1. Répondre « aucun » ignore que 0³ = 0 et 1³ = 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle somme se rapproche du nombre e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + 1/1! + 1/2! + 1/3! + …"
+        },
+        {
+          "id": "b",
+          "text": "1 + 1/2² + 1/3² + 1/4² + …"
+        },
+        {
+          "id": "c",
+          "text": "1 − 1/3 + 1/5 − 1/7 + …"
+        },
+        {
+          "id": "d",
+          "text": "1 + 1/1 + 1/2 + 1/3 + …"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La somme 1 + 1/1! + 1/2! + 1/3! + … tend vers e ≈ 2,718 ✓. La somme 1 + 1/2² + 1/3² + … est celle d'Euler : elle tend vers π²/6 ≈ 1,645. La somme 1 − 1/3 + 1/5 − … est celle de Leibniz : elle tend vers π/4. La somme 1 + 1/1 + 1/2 + 1/3 + … n'a pas de factorielles : elle diverge.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On calcule l'aire sous une courbe entre a = 2 et b = 10 avec n = 4 intervalles. Quelle est la largeur h de chaque intervalle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a h = (b − a)/n = (10 − 2)/4 = 2 ✓. Le résultat 3 vient de (a + b)/n = 12/4, la somme au lieu de la différence. Le résultat 4 recopie n. Le résultat 8 est b − a sans diviser par n.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le terme général de la série de Leibniz est U(n) = (−1)ⁿ / (2n + 1). Que vaut U3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/7"
+        },
+        {
+          "id": "b",
+          "text": "−1/7"
+        },
+        {
+          "id": "c",
+          "text": "−1/5"
+        },
+        {
+          "id": "d",
+          "text": "−1/6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour n = 3, (−1)³ = −1 et 2 × 3 + 1 = 7, donc U3 = −1/7 ✓. Le terme 1/7 oublie l'alternance : il est positif au lieu de négatif. Le terme −1/5 utilise 2n − 1 au lieu de 2n + 1. Le terme −1/6 utilise 2n au lieu de 2n + 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour f(x) = x/3 + 2, la boucle part de xact = 0 et répète xpre ← xact puis xact ← f (xact). Que vaut xact après deux passes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8/3"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "26/9"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a x1 = 0/3 + 2 = 2, puis x2 = 2/3 + 2 = 8/3 ≈ 2,667 ✓ après deux passes. La valeur 2 est atteinte après une seule passe. La valeur 26/9 ≈ 2,889 est x3, après trois passes. La valeur 3 est le point fixe (3 = 3/3 + 2) : la suite s'en rapproche sans jamais l'atteindre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un programme calcule S2 = 1 + 1/3 + 1/9 + 1/27 + … avec S1 ← S2, S2 ← S1 + (terme suivant), jusqu'à S2 − S1 < 0,05. Quelle valeur de S2 affiche-t-il, à 10⁻⁴ près ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,4444"
+        },
+        {
+          "id": "b",
+          "text": "1,4815"
+        },
+        {
+          "id": "c",
+          "text": "1,4938"
+        },
+        {
+          "id": "d",
+          "text": "1,5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les termes ajoutés sont 1/3 ≈ 0,333, 1/9 ≈ 0,111 puis 1/27 ≈ 0,037. Les deux premiers écarts dépassent 0,05, le troisième est inférieur : arrêt avec S2 = 1 + 1/3 + 1/9 + 1/27 ≈ 1,4815 ✓. La valeur 1,4444 s'arrête une passe trop tôt (1 + 1/3 + 1/9). La valeur 1,4938 va une passe trop loin (+ 1/81). La valeur 1,5 est la limite exacte, que le programme n'atteint jamais.",
+      "difficulty": 2
+    }
+  ]
+}
