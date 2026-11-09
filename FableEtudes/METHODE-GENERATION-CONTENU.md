@@ -142,10 +142,12 @@ Règles de boucle (non négociables) :
   de 9ᵉ, baccalauréat, **toutes sessions** (décision du propriétaire du 2026-09-28, étude 27
   Q-6). Un ancien sujet d'examen fait partie de la source officielle du programme, au régime
   d'un manuel : reprise possible, données comprises, citée dans `sources[]`. Est officiel ce
-  que le Ministère publie : le sujet, de préférence lu sur son portail (`echoexam.edunet.tn`,
-  `edunet.tn`) ; d'un site qui le ré-héberge, on ne prend que le sujet. Le corrigé d'un tiers,
-  le devoir d'un établissement (même de collège pilote) et la série d'un enseignant restent
-  des sources tierces (§ Profils → `source-web`). R-3 tient : un sujet ancien qui porte une
+  que le Ministère publie : le sujet **et son corrigé officiel** (décision du propriétaire du
+  2026-11-09), de préférence lus sur son portail (`echoexam.edunet.tn`, `edunet.tn` et ses
+  archives `6web`/`9web` — fichiers `_c` —, `bacweb.tn`) ; d'un site qui les ré-héberge, on ne
+  prend que le document du Ministère, tel quel. Le corrigé d'un tiers (site, enseignant), le
+  devoir d'un établissement (même de collège pilote) et la série d'un enseignant restent des
+  sources tierces (§ Profils → `source-web`) ; un corrigé d'origine douteuse est tiers. R-3 tient : un sujet ancien qui porte une
   notion sortie du programme en vigueur la signale, il ne la fait pas enseigner.
   Tout autre document porte auteur / origine / autorisation, sinon **refus**. Doute ⇒
   STOP. Pas de verbatim d'œuvres périphériques sous droits (chansons, textes littéraires
@@ -292,15 +294,20 @@ Notes par profil :
   provenance (auteur, origine, autorisation, date) ; les `sources[]` du chapitre généré
   citeront le document. R-3 : si une transcription CNP du couple existe, confronter — le
   programme gagne. Un recueil d'annales mêle deux régimes : ses sujets d'examens nationaux
-  sont du corpus officiel (R-2), ses corrigés et commentaires sont ceux de son auteur.
+  sont du corpus officiel (R-2), et leurs corrigés seulement s'ils sont ceux du Ministère ;
+  les autres corrigés et les commentaires sont ceux de l'auteur du recueil.
 - **source-web.** Voir la section dédiée ci-dessous : le tier se déclare **avant** le premier
   token, et il est opposable pour toute session ultérieure.
 - **examen-national.** Corpus officiel (R-2) : on transcrit le sujet **fidèlement**, données et
   figures comprises, une session par fichier, et chaque exercice devient une mission qui le
   **reprend** et le **cite** (`sources[]` : examen, session, exercice). Pas de salle blanche,
   pas de garde anti-verbatim : la reprise est le but. R-3 tient : un item d'un programme ancien
-  se marque `[hors programme en vigueur]` et ne s'enseigne pas. Le corrigé d'un tiers reste une
-  source tierce. Le pipeline qui l'exploite est § Le gisement.
+  se marque `[hors programme en vigueur]` et ne s'enseigne pas. Le **corrigé officiel**, quand le
+  Ministère en publie un, se transcrit dans le même fichier que le sujet et sert de référence aux
+  explications (démarche, résultats), cité comme le sujet ; il ne dispense pas de re-résoudre :
+  un écart entre la re-résolution et le corrigé officiel ne se tranche pas en silence, il se
+  signale. Le corrigé d'un tiers reste une source tierce. Le pipeline qui l'exploite est § Le
+  gisement.
 - **sans-source.** Vérifier que la fiche est bien à **profondeur de génération** (R-5 — une
   first-pass ne se génère pas), puis dérouler directement le LOT B.
 
@@ -333,7 +340,8 @@ Cinq règles qui s'ajoutent au socle R :
   pas le périmètre officiel. « Aucune source officielle trouvable ⇒ STOP » reste entier — une
   source web ne comble pas ce STOP. Le sujet officiel d'un examen national n'est **pas** une
   source web, même lu sur un site qui le ré-héberge : c'est du corpus officiel (R-2, étude 27
-  Q-6). Ce que le site y ajoute (corrigé, commentaire, mise en page) en reste une.
+  Q-6), et son corrigé officiel aussi (2026-11-09). Ce que le site y ajoute (son propre corrigé,
+  commentaire, mise en page) en reste une.
 - **Le défaut est la surveillance.** Fiche sans en-tête, autorisation `aucune` ou `demandée` :
   surveillée. Seule une autorisation `accordée` la lève.
 - **Le snapshot ne rentre pas dans le dépôt.** Le PDF/HTML consulté vit dans le wrapper hors git

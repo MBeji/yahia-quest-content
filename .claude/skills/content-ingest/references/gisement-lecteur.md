@@ -32,7 +32,13 @@ tu n'écris rien sous un dépôt.
      données, unités et questions numérotées comprises ; une figure se décrit entre crochets
      (`[figure : triangle ABC rectangle en A, H pied de la hauteur…]`) avec toutes ses données ;
    - un item illisible se note `[illisible]`, jamais deviné ; un item hors du programme en vigueur
-     de la classe se marque `[hors programme en vigueur : <notion>]` à la fin de sa ligne.
+     de la classe se marque `[hors programme en vigueur : <notion>]` à la fin de sa ligne ;
+   - le **corrigé officiel** de la session, quand le Ministère en publie un (dans le même PDF ou
+     dans un fichier `_c`) : corpus officiel (R-2, décision du 2026-11-09). L'en-tête porte
+     `corrige` (URL du PDF, ou `aucun`) et `corrige_sha256` ; après les exercices, une section
+     `## Corrigé officiel` avec un `### Exercice N` par exercice, **tel qu'imprimé**, mêmes
+     conventions (`[figure : …]`, `[illisible]`). Un corrigé rédigé par un site ou un enseignant
+     n'y entre jamais ; origine douteuse ⇒ tiers.
 
 ## Rendre — une ligne par exercice, dans `$SP/lines/<id>.tsv`
 

@@ -29,7 +29,8 @@ règles de fidélité et les consignes de rôle.
   `content/`, laisser `content-ci` valider.
 - **Corpus officiel** (méthode R-2) : les manuels et guides du CNP **et les sujets officiels des
   examens nationaux** — concours de 6ᵉ et de 9ᵉ, baccalauréat, toutes sessions (décision du
-  2026-09-28, étude 27 Q-6) : reprise possible, citée dans `sources[]`. Corrigés de tiers,
+  2026-09-28, étude 27 Q-6) — **et leurs corrigés officiels**, publiés par le Ministère (décision
+  du 2026-11-09) : reprise possible, citée dans `sources[]`. Corrigés de tiers,
   devoirs d'établissement et séries d'enseignants restent des sources web : rien n'en est repris.
 - **Anciens examens** (étude 36) : lus avec la fiche, une mission par exercice dans le chapitre qu'il
   mobilise (`campagne` étapes 3-4) ; devoirs en ligne en salle blanche, sur demande seulement.

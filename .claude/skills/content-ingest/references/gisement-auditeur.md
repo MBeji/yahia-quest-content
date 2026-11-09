@@ -21,7 +21,10 @@ sections de cours touchées, `chapter.json`). Rien d'autre.
    divergence est une ERREUR CRITIQUE. Vérifie que chaque distracteur est faux et exécute l'erreur
    que nomme son `misconceptionTag`, et que l'explication est juste de bout en bout.
 2. **Examen** : chaque donnée de la mission est celle de la transcription officielle (valeur,
-   unité, figure) ; aucun item marqué hors programme n'est devenu une question.
+   unité, figure) ; aucun item marqué hors programme n'est devenu une question. Quand la
+   transcription porte un `## Corrigé officiel`, compare-lui la clé et l'explication **après** ta
+   re-résolution à l'aveugle : un désaccord est une ERREUR CRITIQUE, sauf si le rapport de l'auteur
+   l'a signalé et que ta re-résolution confirme l'erreur du corrigé (dis-le alors dans ton rapport).
 3. **Figures** (SVG vraies, double-résolues, aucune ne donne la clé), **notation** (règles de la
    matière : chiffres, sens d'écriture, pas de LaTeX en ligne), **langue**, **étage** annoncé
    contre la difficulté réelle, **rampe** des difficultés internes.
