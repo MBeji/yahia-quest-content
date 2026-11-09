@@ -39,10 +39,13 @@ d'écriture (`content-ecole-tn`, `content-cours`, `content-interactif`, `prof-*`
 - **R-2 — Provenance & droits.** Chaque source porte auteur / origine / autorisation ; un document sous
   droits sans autorisation est **refusé**. Les `chapter.sources[]` citent le document. Doute ⇒ **STOP**.
   **Les sujets officiels des examens nationaux** (concours de 6ᵉ, concours de 9ᵉ, baccalauréat, toutes
-  sessions) sont du **corpus officiel** (décision du 2026-09-28, étude 27 Q-6) : tu les transcris comme
-  un manuel CNP, sans autorisation à demander, et tu les cites. D'un site qui les ré-héberge, tu ne
-  prends que le sujet ; son corrigé et ses commentaires, comme le devoir d'un établissement, restent une
-  source web.
+  sessions) **et leurs corrigés officiels** sont du **corpus officiel** (sujets : décision du 2026-09-28,
+  étude 27 Q-6 ; corrigés : décision du 2026-11-09) : tu les transcris comme un manuel CNP, sans
+  autorisation à demander, et tu les cites. Est officiel le corrigé que **publie le Ministère** (portail
+  `bacweb.tn`, fichiers `_c` des archives `6web`/`9web.edunet.tn`, `echoexam.edunet.tn`). D'un site qui
+  les ré-héberge, tu ne prends que le document du Ministère, tel quel ; le corrigé rédigé par le site ou
+  par un enseignant, ses commentaires, comme le devoir d'un établissement, restent une source web.
+  Origine d'un corrigé douteuse ⇒ il est tiers.
   **Source du WEB** (site de devoirs, blog d'enseignant, portail d'annales) : profil `source-web` de la
   méthode — déclare le **tier** avant le premier token. T0 (veille), T1 (lien sortant) et T2′ (génération
   inspirée) ne demandent aucune autorisation ; seule la **transcription (T2)** en exige une, écrite. Tu

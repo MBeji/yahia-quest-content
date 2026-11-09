@@ -17,12 +17,17 @@ la barre de qualité.
 
 - la **transcription officielle** de la session, versionnée sous
   `content/programmes-officiels/examens-nationaux/<classe>/<matière>/<session>.md` (lis seulement
-  les exercices qui te sont confiés) ;
+  les exercices qui te sont confiés, et leur section du `## Corrigé officiel` quand elle existe) ;
 - ton affectation : pour chaque mission, la session, le numéro de l'exercice, son étage estimé, le
   **chapitre** où elle va et sa **plage de numéros de fichiers**.
 
 Tu n'ouvres rien d'autre sous `content/programmes-officiels/sources-externes/`, et aucun corrigé de
-site tiers : l'explication est **la tienne**, re-résolue.
+site tiers. Le **corrigé officiel** du Ministère, lui, est du corpus officiel (R-2, décision du
+2026-11-09) : tes explications en reprennent la démarche et les résultats. Tu **re-résous** quand même
+chaque étape avant d'écrire la clé ; si ta re-résolution et le corrigé officiel divergent, tu ne
+tranches pas en silence : la clé suit le calcul que tu as vérifié, et l'écart va dans ton rapport
+(l'orchestrateur le soumet à l'audit). Sans corrigé officiel, l'explication est **la tienne**,
+re-résolue.
 
 ## Ce que tu écris — une mission par exercice officiel
 
@@ -42,7 +47,8 @@ site tiers : l'explication est **la tienne**, re-résolue.
 - **Distracteurs** : les erreurs typiques de l'élève sur cette étape, exécutées jusqu'au bout,
   étiquetées par le registre (`misconceptionTag`) ; la clé n'est jamais l'option la plus longue,
   aucune valeur ne trahit la clé par sa fréquence.
-- **Explications** : les tiennes, justes de bout en bout, dans le vocabulaire du manuel.
+- **Explications** : justes de bout en bout, dans le vocabulaire du manuel ; avec un corrigé
+  officiel, elles suivent sa démarche (jamais celle d'un corrigé tiers).
 - **Programme en vigueur (R-3)** : un item marqué `[hors programme en vigueur]` dans la
   transcription ne devient pas une question ; si une étape suivante en dépend, donne son résultat
   dans l'énoncé (« on admet que … ») et dis-le dans ton rapport. Un item `[illisible]` ne s'invente

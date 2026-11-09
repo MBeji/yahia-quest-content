@@ -60,3 +60,17 @@ Source officielle, lue pour ce pilote au régime T2′.
   2 de 2009 à 2018, 4 de 2019 à 2026 ; mardi 23 juin 2026) : 2011 et 2014 répondent 404, sur `6web`
   comme sur `www.echoexam` (ajout du 2026-10-20). Couple qui l'utilise :
   [`web-6eme-base-eveil`](../web-6eme-base-eveil/fiche.md).
+
+## 5. Corrigés officiels — corpus officiel (décision du 2026-11-09)
+
+- **Décision.** Le propriétaire, le 2026-11-09 : « le corrigé officiel publié par le Ministère
+  (bacweb, ou les fichiers `_c` de 9web) doit compter comme corpus officiel » (méthode R-2,
+  étude 27 Q-6 élargie). Il se transcrit avec son sujet, dans le même fichier de
+  `examens-nationaux/`, et sert de référence aux explications des missions, re-résolues.
+- **Les fichiers `_c`** des archives `6web` et `9web` sont ces corrigés (`/<année>/<matière>_c.pdf`) :
+  ceux qu'on a écartés jusqu'ici comme non repris (`9web` arabe et anglais 2004, seuls servis
+  cette année-là) relèvent désormais du corpus officiel.
+- **Baccalauréat — `bacweb.tn`.** Portail du Ministère pour les sujets et corrigés du Bac. **Non
+  qualifié** : injoignable depuis une session cloud le 2026-11-09 (connexion réinitialisée,
+  comme `6web`, `9web` et `echoexam`, qui ne répondent plus). À qualifier ici (structure des
+  URL, sessions et sections servies) à la première lecture, depuis un poste ou depuis le Drive.

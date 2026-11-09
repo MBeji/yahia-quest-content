@@ -355,6 +355,13 @@ réglage revient en arrière.
   cours, le propriétaire garde le protocole fixé avant lecture : les sujets du concours y sont
   lus **sans reprise**, comme le reste ; leur reprise fidèle et citée sera un lot à part. La
   règle quitte l'étude pour le socle de la méthode (R-2).
+  ✅ **Élargie le 2026-11-09 par le propriétaire** : « le corrigé officiel publié par le
+  Ministère (bacweb, ou les fichiers `_c` de 9web) doit compter comme corpus officiel ». Le
+  corrigé que publie le Ministère suit donc le régime de son sujet : transcrit avec lui, repris
+  et cité, référence des explications — toujours re-résolu, un écart se signale. Les corrigés
+  de tiers (sites, enseignants), même lorsqu'un site les annonce « officiels » sans être le
+  document du Ministère, restent des sources tierces. Portée reportée dans R-2 (méthode,
+  `content-ingest`) et les consignes du lecteur, de l'auteur et de l'auditeur d'examen.
 
 ---
 
