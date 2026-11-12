@@ -4,9 +4,9 @@
 > relevé du code du jour (`main` du moteur à #1204, `main` du corpus à privé#754) ; Q-1 à Q-3
 > arbitrées par le propriétaire, toutes sur les recommandations (§7). **Chantier court livré le
 > 2026-10-31** — lots 0, 1 et 3 au moteur (#1209 ; #1210, #1211, #1212 ; #1214), détail au journal (§8) ;
-> **lot 2 livré le 2026-11-12** (#1257) ; le lot 5 est en cours d'exécution depuis le même jour (commande du
-> propriétaire : le retour après la première visite), le lot 4 attend la fusion du premier rendu dans la langue
-> du cookie (mêmes fichiers). Le budget `i18n-` n'est plus un frein depuis le découpage par langue (moteur #1229).
+> **lots 2 et 5 livrés le 2026-11-12** (#1257, #1268) sur commande du propriétaire (le retour après la première
+> visite) ; le lot 4 est en cours d'exécution depuis le même jour. Le budget `i18n-` n'est plus un frein depuis
+> le découpage par langue (moteur #1229).
 > **Priorité** : 38 · **Valeur** : 🚪 le visiteur qui lit un cours ou finit un entraînement et
 > crée son compte **revient exactement là où il était**, au lieu d'atterrir au Hall des Héros puis
 > dans un assistant de trois écrans ; l'élève dont la session expire en pleine quête **retrouve sa
@@ -692,7 +692,7 @@ worker).
       les deux schémas de couleur, zéro script ; `sw.js` `VERSION = "v2"` ; `smoke:shell` vert,
       budget `index-` tenu (RISK-6). **Stop-point** : aucun cache, aucune persistance, pas de
       `vite-plugin-pwa`, pas de route `/offline`.
-- [ ] **Lot 5 — La continuité du visiteur** (Q-1 tranchée : 30 jours, portes quiz + dernier chapitre ; en file, après les lots 2 et 4). Périmètre : R-13, US-6 ;
+- [x] **Lot 5 — La continuité du visiteur** (livré, moteur #1268 ; Q-1 tranchée : 30 jours, portes quiz + dernier chapitre). Périmètre : R-13, US-6 ;
       carte « Reprendre » sur `/` et `/programme` ; `resumeHere` anonyme sur le hub. Critères :
       lecture d'un chapitre ⇒ carte au prochain `/` ; TTL échu ⇒ rien ; « oublier » ⇒ rien ;
       porte quiz réussie ⇒ ouverte dans un nouvel onglet ; `localStorage` jeté ⇒ comportement
@@ -851,6 +851,28 @@ recommandations**. Plus rien n'est ouvert : l'étude est `validée`.
   quiz d'un chapitre scolaire, choisit sa classe, la base le confirme) est écrit mais **n'a pas tourné
   en session** — pas de projet Supabase TEST ; `e2e-auth.yml` a été déclenché sur `main` le jour même,
   son verdict est à lire avant la nuit.
+- **2026-11-12 — lot 5 livré (moteur #1268).** L'appareil d'un visiteur sans compte se souvient de lui
+  30 jours : `anon-continuity.ts` (dernier chapitre lu, quiz de compréhension réussis), la carte
+  « Reprendre » sur `/` et `/programme` (`resume-card.tsx`), les portes de quiz réussies conservées
+  d'un onglet à l'autre. « Oublier » efface les deux mémoires ; la carte ne se monte que sans
+  session ; `localStorage` indisponible ⇒ comportement d'avant ; rien n'atteint le serveur, aucun
+  score mémorisé (stop-point tenu). L'inventaire INPDP du moteur porte la mémoire locale (deux clés,
+  hors base). Mesuré en local, téléphone émulé : la carte n'ajoute aucun décalage de mise en page
+  (`/` 0,2191 avec et sans, `/programme` 0,1742 avec et sans) — le décalage préexistant vient de
+  l'en-tête, transmis à l'axe accessibilité. **Fusionné, pas encore en ligne** : le déploiement
+  Vercel est gelé depuis le 2026-11-12 ~09:00 UTC (plafond du plan gratuit) ; à vérifier en
+  production à la reprise — lire un chapitre, revenir sur `/`, voir la carte, la suivre, « Oublier » ;
+  quiz réussi puis onglet neuf sur une mission du même chapitre ⇒ la question, pas le verrou.
+  Écarts acceptés — l'exécuteur n'a pas pu lire ce dépôt (accès refusé à sa session), il a travaillé
+  d'après la consigne et le code : (a) les clés s'appellent `na9ra.anon.lastChapter.v1` et
+  `na9ra.anon.quizPassed.v1` (le §3.1 écrivait `na9ra.anonLastChapter` et `na9ra.anonQuizPassed`) ;
+  (b) l'ancienne mémoire `sessionStorage` des quiz n'est pas reprise — un quiz réussi dans l'onglet
+  ouvert au moment du déploiement est à repasser une fois ; (c) sur `/programme`, rendu côté serveur
+  depuis #1266, la carte flotte en bas d'écran ; sur `/` elle remplace la pastille « 100 % gratuit » ;
+  (d) un chapitre disparu du catalogue (404) est oublié ; (e) un événement rejoint la liste fermée,
+  amendement écrit ici : `resume_card_clicked` `{surface, days_since}` — `days_since >= 1` est la
+  première mesure d'un RETOUR de visiteur sans compte. Dette notée : le cas « quiz réussi → onglet
+  neuf » est prouvé en unitaire et à la main, son e2e (tier `public-anon`) est demandé à l'exécuteur.
 - **Dettes notées.** (1) `e2e/authed/logout.spec.ts` (déconnexion depuis une page publique) et
   `session-invalidation.spec.ts` (aller-retour complet, rafraîchissement coupé pour forcer le chemin
   du hook) sont écrits mais **n'ont pas tourné en session** — pas de projet Supabase TEST : à
