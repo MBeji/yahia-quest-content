@@ -21,7 +21,8 @@
 > **Dépend de** : é31 (push, pipeline de priorité, liste fermée d'événements, R-4 et R-20) · é38
 > (lot 0 : tunnel sans compte ; lot 2 : accueil sans péage, #1257 ; **lot 5 : carte « Reprendre »,
 > en cours d'exécution le 2026-11-12 — non re-spécifiée ici**) · é39 (partage du test de niveau,
-> mémoire d'appareil) · é08 lot 2 (digest parent, en cours — non re-spécifié) · chantier « être
+> mémoire d'appareil) · é08 lot 2 (digest parent — fusionné le 2026-11-12, moteur #1265, en ligne
+> à la reprise du déploiement ; non re-spécifié) · chantier « être
 > trouvé » (#1246, #1247) · **Bloque** : rien ; **informe** é06 (gelée) sans la dégeler — Q-5
 > **Docs normatifs liés** : AGENTS.md, ARCHITECTURE.md, `docs/doctrine-verticale.md`,
 > `docs/content-voice-and-composition.md`, `docs/inventaire-traitements-inpdp.md`,
@@ -214,6 +215,14 @@ celui de l'enfant. Aujourd'hui **rien ne part de l'élève vers lui** en moins d
 - **Push** : `push_optin` / `push_optout` existent au catalogue ; avec T-1 ils ne peuvent pas
   partir.
 - **Installation** : rien.
+
+#### T-6 — Le volume, pour garder les proportions
+
+**[prod-db]** Sur les quatorze jours du 2026-10-30 au 2026-11-12 : 5 comptes créés (4 élèves),
+31 tentatives enregistrées, et jamais plus de 2 comptes actifs le même jour ; aucune activité de
+compte les 9, 10, 11 et 12 novembre (à l'heure du relevé). L'effet du chantier « être trouvé » du
+11 novembre ne se lit pas encore dans les comptes — il ne peut se lire, avant le lot 0, que dans
+la Search Console et les pages vues.
 
 ### 1.3 Les trous, classés par ce qu'ils coûtent
 
@@ -625,6 +634,13 @@ Ce n'est pas un lot : aucune session du jour n'a l'accès à l'équipe Vercel (4
   `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`, et `VITE_VAPID_PUBLIC_KEY` **égale à**
   `VAPID_PUBLIC_KEY` (paire absente : `npx web-push generate-vapid-keys`, une fois) ; puis
   **redéployer sans cache de build** — la clé publique s'incruste à la compilation.
+- **La cible et le plafond** (rapporté par la session orchestratrice le 2026-11-12, non constaté
+  par celle-ci, qui n'a pas l'accès Vercel) : le dépôt du moteur se déploie dans **deux** projets
+  Vercel (`na9ranal3ab` et `yahia-quest-arena`). Le geste vise **celui qui sert
+  `www.na9ranal3ab.tn`** — poser la clé dans l'autre ne change rien. Et le redéploiement compte
+  dans le plafond du plan (100 déploiements par jour, épuisé le 2026-11-12 à 09:06 UTC par la
+  vague de sessions : production figée sur l'état de ~08:55 UTC jusqu'à la reprise) : P-0 se fait
+  **après** la reprise, en un seul redéploiement.
 - **Le constat après coup**, dans cet ordre : (1) le chunk `assets/enable-push-card-*.js` servi par
   `www` ne contient plus `useEffect(()=>{g()?t("unconfigured")…` mais la branche qui lit la
   permission ; (2) connecté, la carte « Rappels » est visible au bas du hall ; (3) après une
@@ -644,12 +660,22 @@ L'audience « compte créé, jamais joué » (`first-quest`, migration B) est de
 effet : elle ne joint que des élèves ayant accordé le push. Sa partie **mesure** — combien
 d'inscrits n'ont jamais joué — est dans le lot 0 (KPI-2), famille A.
 
+**Contrainte de livraison (incident du 2026-11-12).** Chaque push au moteur crée un déploiement
+dans chacun des deux projets Vercel, sous un plafond quotidien que dix sessions simultanées ont
+épuisé en une matinée. Ce plan se livre donc en **peu de PR, complètes** : un lot = une PR = un
+push final (les points de sauvegarde restent locaux, ou sur une branche `wip/` si elle ne
+déclenche pas de prévisualisation) ; au plus deux lots en vol à la fois ; et **une vérification en
+production groupée** par vague, une fois les PR de la vague fusionnées et le déploiement constaté
+— pas une sonde par session. Un lot fusionné n'est dit « en ligne » qu'après ce constat ; d'ici
+là il est « fusionné le AAAA-MM-JJ, en ligne à la reprise du déploiement ».
+
 **Ordre.** 0 et 1 partent ensemble (fichiers disjoints). 2 suit 1 (et P-0 pour son effet). 3 et 4 suivent 0 et peuvent
 aller en parallèle **si** `exercice.$exerciseId.tsx` est réparti : le lot 4 y monte `KeepRow`, le
 lot 3 y monte `InstallInvite` — deux insertions voisines dans `renderResultFooter` ; le second à
 fusionner rebase. 5 en dernier.
 
-**Collisions à connaître le 2026-11-12** : é38 lot 5 touche `index.tsx`, `programme.tsx`,
+**Collisions à connaître le 2026-11-12** : é38 lot 5 (moteur #1268, en cours de fusion ce jour)
+touche `index.tsx`, `programme.tsx`,
 `chapitre.$chapterId.tsx`, `subject-hub.tsx`, `anon-quiz-gate.ts` — **aucun** fichier des lots 0 à
 2 ; `exercice.$exerciseId.tsx` et `lesson-reader.tsx` (lots 3 et 4) sont à vérifier contre sa PR.
 é08 lot 2 touche `notifications.cron.server.ts` et `parent-report.tsx` : le lot 2 d'ici ne touche
@@ -779,6 +805,8 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
 - **RISK-7 — Deux sessions touchent le même écran de résultat le même jour.** Probable le
   2026-11-12. Mitigation : la table des collisions du §4 ; les lots 3 et 4 ne partent qu'après la
   fusion de é38 lot 5.
+- **RISK-9 — Le plafond de déploiement fige la production pendant l'exécution du plan.** Constaté
+  le 2026-11-12. Mitigation : la contrainte de livraison du §4 ; P-0 après la reprise.
 - **RISK-8 — La mémoire de visite est lue comme un traceur.** Faible / fort (INPDP). Mitigation :
   elle ne quitte pas l'appareil, ne porte que deux jours civils, et entre à l'inventaire au lot 0.
 
@@ -820,4 +848,6 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
   (T-1) — corrigé par la session orchestratrice, pas par celle-ci (qui ne modifie ni `STATUS.md` ni le
   code du moteur) ; le geste Vercel est remonté au propriétaire (P-0).
 - **2026-11-12** — sur demande de la session orchestratrice : les lots sont classés en deux
-  familles (§4), le geste Vercel devient le prérequis P-0, hors lot.
+  familles (§4), le geste Vercel devient le prérequis P-0, hors lot. Versés aussi : les deux
+  projets Vercel et le plafond de déploiement atteint à 09:06 UTC (contrainte de livraison, §4),
+  le volume sur quatorze jours (T-6).
