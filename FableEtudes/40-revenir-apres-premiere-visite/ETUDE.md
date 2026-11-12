@@ -216,6 +216,26 @@ celui de l'enfant. Aujourd'hui **rien ne part de l'élève vers lui** en moins d
   partir.
 - **Installation** : rien.
 
+#### T-5 bis — Ce que la première visite elle-même coûte (relevé voisin, même jour)
+
+Le relevé « première visite » est sur `main` du moteur
+(`docs/audit-premiere-visite-2026-11-12.md`). Deux de ses chiffres bornent ce que cette étude peut
+espérer : **4 657 des 5 477 pages d'exercice du sitemap (85 %)** s'ouvrent sur la porte du quiz, et
+le premier verdict demande **14 touchers et 40 s** sur une mission scolaire contre **2 touchers et
+7 s** sur une mission non scolaire. Or les invitations de cette étude (installer, s'envoyer la
+suite, partager) sont accrochées à une **réussite** : un visiteur qui n'atteint pas de verdict ne
+les verra pas. Trois décisions de cet audit sont **en arbitrage** devant le propriétaire (aperçu de
+deux questions avant la porte ; dire lesquelles étaient justes après un quiz raté) : cette étude ne
+les rouvre pas, elle en dépend pour sa portée. L'audit a aussi posé « Quête suivante » en premier
+bouton de l'écran de résultat sans compte (son C-3, `exercice.$exerciseId.tsx`) : les lots 3 et 4
+s'insèrent **sous** ce bouton, jamais avant.
+
+Événements déjà entrés dans la liste fermée ce jour, sur lesquels le lot 0 **s'appuie** sans les
+re-spécifier : `resume_card_clicked{surface, days_since}` (é38 lot 5, moteur #1268 — `days_since
+≥ 1` est déjà un retour constaté du visiteur sans compte, mais seulement de celui qui clique la
+carte) ; `public_practice_started{exercise_id, is_quiz}` et `public_gate_shown{exercise_id}`
+(session « première visite », autorisés le 2026-11-12, PR à venir).
+
 #### T-6 — Le volume, pour garder les proportions
 
 **[prod-db]** Sur les quatorze jours du 2026-10-30 au 2026-11-12 : 5 comptes créés (4 élèves),
@@ -256,7 +276,7 @@ qu'il dure le lot 2 et le digest parent de é08 n'ont aucun effet. G-7 n'est pas
 
 | KPI | Définition | Où on le lit | Départ (2026-11-12) | Cible |
 | --- | --- | --- | --- | --- |
-| **KPI-1** retour du visiteur | navigateurs émettant `visit_first` une semaine N qui émettent `visit_returned` dans les 7 jours | PostHog (insight posé au lot 0) ; ligne du relevé hebdomadaire si Q-2 | non mesuré | **instrument d'abord** ; la cible se fixe après quatre semaines |
+| **KPI-1** retour du visiteur | navigateurs émettant `visit_first` une semaine N qui émettent `visit_returned` dans les 7 jours ; recoupé par `resume_card_clicked{days_since ≥ 1}` (é38 lot 5), borne basse déjà en place | PostHog (insight posé au lot 0) ; ligne du relevé hebdomadaire si Q-2 | non mesuré | **instrument d'abord** ; la cible se fixe après quatre semaines |
 | **KPI-2** première quête | inscrits de la semaine N ayant un jour d'activité dans les 7 jours | `admin_return_overview` → `/admin/engagement` et #962 | 24/60 depuis l'origine ; 6/13 sur 30 jours | ≥ 70 % |
 | **KPI-3** portée du push | élèves actifs sur 30 jours ayant ≥ 1 souscription | idem | 0/8 | ≥ 30 % |
 | **KPI-4** D7 des comptes | KPI-B de é31, inchangé | `/admin/engagement` | bruit (`n` de 1 à 5) | lu, pas ciblé, tant que `n` < 20 |
@@ -695,7 +715,9 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
       x/y ». `index-` ne grossit pas de plus de 1 Ko.
       **Tests** : ceux du tableau ; pgTAP avec une cohorte dont la fenêtre n'est pas écoulée (elle
       ne compte pas comme perdue) et un compte non confirmé.
-      **Stop-point** : aucune carte, aucun bouton, aucun changement d'écran hors la console admin.
+      **Stop-point** : aucune carte, aucun bouton, aucun changement d'écran hors la console admin ;
+      `resume_card_clicked`, `public_practice_started` et `public_gate_shown` ne sont ni
+      redéclarés ni modifiés — le lot ajoute ses quatre lignes au catalogue tel qu'il le trouve.
 - [ ] **Lot 1 — Le push se prouve** (famille A).
       **Périmètre** : (a) `push` dans `/api/health` — `configured` si les quatre variables
       serveur sont présentes, aucune valeur rendue ; (b) une garde de build — `build:check`
@@ -850,4 +872,5 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
 - **2026-11-12** — sur demande de la session orchestratrice : les lots sont classés en deux
   familles (§4), le geste Vercel devient le prérequis P-0, hors lot. Versés aussi : les deux
   projets Vercel et le plafond de déploiement atteint à 09:06 UTC (contrainte de livraison, §4),
-  le volume sur quatorze jours (T-6).
+  le volume sur quatorze jours (T-6), le relevé « première visite » et les trois événements déjà
+  entrés au catalogue (T-5 bis).
