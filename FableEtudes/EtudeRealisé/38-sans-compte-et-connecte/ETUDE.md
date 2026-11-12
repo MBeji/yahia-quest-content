@@ -1,11 +1,11 @@
 # Étude 38 — Sans compte et connecté : les deux modes d'usage, de bout en bout (entrée, passage, retour, réseau)
 
-> **Statut** : **validée** (2026-10-30) — rédigée le même jour depuis une session cloud, sur un
+> **Statut** : **livrée** (2026-11-12, les six lots) — validée le 2026-10-30, rédigée le même jour depuis une session cloud, sur un
 > relevé du code du jour (`main` du moteur à #1204, `main` du corpus à privé#754) ; Q-1 à Q-3
 > arbitrées par le propriétaire, toutes sur les recommandations (§7). **Chantier court livré le
 > 2026-10-31** — lots 0, 1 et 3 au moteur (#1209 ; #1210, #1211, #1212 ; #1214), détail au journal (§8) ;
 > **lots 2 et 5 livrés le 2026-11-12** (#1257, #1268) sur commande du propriétaire (le retour après la première
-> visite) ; le lot 4 est en cours d'exécution depuis le même jour. Le budget `i18n-` n'est plus un frein depuis
+> visite) ; **lot 4 livré le même jour** (#1288). Le budget `i18n-` n'est plus un frein depuis
 > le découpage par langue (moteur #1229).
 > **Priorité** : 38 · **Valeur** : 🚪 le visiteur qui lit un cours ou finit un entraînement et
 > crée son compte **revient exactement là où il était**, au lieu d'atterrir au Hall des Héros puis
@@ -25,8 +25,8 @@
 > **Docs normatifs liés** : AGENTS.md, ARCHITECTURE.md, `docs/doctrine-verticale.md`,
 > `docs/content-voice-and-composition.md` (§1 registres, §5 erreurs), `docs/design-surfaces.md`,
 > `docs/xss-rendering-policy.md`, `docs/inventaire-traitements-inpdp.md`, `e2e/README.md` ;
-> antécédents : [`go-live/livrables/08-refonte-publique/audit-coexistence-public-connecte.md`](../go-live/livrables/08-refonte-publique/audit-coexistence-public-connecte.md)
-> (2026-06-23) et [`plan-execution-L2-harmonisation.md`](../go-live/livrables/08-refonte-publique/plan-execution-L2-harmonisation.md)
+> antécédents : [`go-live/livrables/08-refonte-publique/audit-coexistence-public-connecte.md`](../../go-live/livrables/08-refonte-publique/audit-coexistence-public-connecte.md)
+> (2026-06-23) et [`plan-execution-L2-harmonisation.md`](../../go-live/livrables/08-refonte-publique/plan-execution-L2-harmonisation.md)
 >
 > **Fiche de verticalité** (doctrine verticale, é26 D-2) :
 > **Verticale** : V1 « apprendre & maîtriser » — **approfondissement** de deux capacités LIVE :
@@ -685,7 +685,7 @@ worker).
       est de nouveau à l'écran et `login{reason:"expired", return_to_kept:true}` part ; le hint
       est visible sur `/auth`. **Stop-point** : aucune modification de `auth-attacher`,
       `session-freshness`, `auth-refusals`.
-- [ ] **Lot 4 — Le réseau se voit.** Périmètre : R-9, R-10, R-11, R-12, R-15, US-5, US-8, D-4,
+- [x] **Lot 4 — Le réseau se voit** (livré, moteur #1288). Périmètre : R-9, R-10, R-11, R-12, R-15, US-5, US-8, D-4,
       D-5. Critères : hors-ligne, bandeau dans les deux coquilles ; `/matiere/x` neuf ⇒ « En
       attente du réseau » et jamais le squelette ; retour en ligne ⇒ contenu sans reload ; une
       mission en file ⇒ « 1 mission en attente d'envoi » ; `/offline.html` trilingue, lisible dans
@@ -873,6 +873,57 @@ recommandations**. Plus rien n'est ouvert : l'étude est `validée`.
   amendement écrit ici : `resume_card_clicked` `{surface, days_since}` — `days_since >= 1` est la
   première mesure d'un RETOUR de visiteur sans compte. Dette notée : le cas « quiz réussi → onglet
   neuf » est prouvé en unitaire et à la main, son e2e (tier `public-anon`) est demandé à l'exécuteur.
+- **2026-11-12 — lot 4 livré (moteur #1288).** Le réseau se voit. `useOnlineStatus` lit
+  `onlineManager` (D-4) ; `NetworkBanner` est posé dans les deux coquilles — une région
+  `role="status"` toujours présente, annonce polie, focus intact, collée sous l'en-tête au
+  défilement — et compte les missions de la file d'envoi (« 1 mission en attente d'envoi ») ;
+  `isWaitingForNetwork` + `WaitingForNetwork` remplacent le squelette sur sept routes (programme,
+  extras, niveau, matière, chapitre, hall, parcours) ; `offline.html` est en trois langues, clair et
+  sombre, zéro script ; `sw.js` est en `v2` ; le refus du limiteur des deux corrections publiques
+  lève `RATE_LIMITED`, traduit côté client. Stop-point tenu : aucun cache, aucune persistance, aucune
+  option nouvelle sur le `QueryClient`.
+  **Mesuré dans Chromium (Pixel 7 émulé, réseau coupé par `context.setOffline`)** — avant, en
+  production : un clic vers une page matière rend 24 blocs de squelette, sans un mot, tant que le
+  réseau manque. Après, sur le bundle de production servi en local avec le vrai catalogue : bandeau
+  - « En attente du réseau », zéro squelette ; au retour du réseau le contenu arrive seul, zéro
+    rechargement. `smoke:shell` joue désormais la mise à jour du worker `v1` → `v2` (prise de main sans
+    rechargement, ancien cache purgé), le bandeau, l'état d'attente et la page de repli. `index-`
+    +0,08 Ko ; `i18n-fr` 61,49 Ko pour 64, `i18n-en` 54,73 pour 60, `i18n-ar` 73,45 pour 76.
+    **Vérifié en production le 2026-11-12 (20:00 UTC, `main` à 5ae039d servi)**, Chromium, Pixel 7
+    émulé, par l'exécuteur : `/offline.html` rend ses trois blocs (fr, en, ar en RTL), zéro script, fond
+    clair et fond sombre selon le schéma du système ; `/sw.js` est en `v2` ; un visiteur porteur du
+    worker `v1` passe en `v2` sans rechargement ni erreur, le cache `xp-offline-v1` est purgé ; une
+    navigation complète sans réseau rend la page de repli à l'adresse demandée ; une page matière
+    ouverte réseau coupé dit « En attente du réseau » sous le bandeau, zéro squelette, puis son contenu
+    arrive au retour du réseau, zéro rechargement. Recoupé le même soir par la session qui orchestre :
+    `sw.js` en `v2`, `offline.html` en trois langues, zéro script.
+    Écarts acceptés : (a) **une page dont le code n'a jamais été chargé sur l'appareil ne peut pas dire
+    « en attente du réseau »** : sans réseau le routeur ne trouve pas son chunk, passe en navigation
+    complète, et le service worker sert `offline.html` — y remédier demande un précache, donc é06
+    (gelée) ; l'état d'attente vaut pour toute page déjà ouverte une fois (le worker garde ses
+    `/assets/*`) ; (b) « Réessayer » de `offline.html` est un lien vers **la page demandée**
+    (`href=""`), pas vers `/` : l'adresse est restée celle que le lecteur voulait ; (c) les clés
+    d'erreur vivent dans `errors.offline` et `errors.rateLimited` (et non `offline.checkError`,
+    `public.practice.rateLimited`) parce que `userFacingError` lit `t.errors` — toute erreur affichée
+    par le lecteur de mission en profite, pas la seule correction anonyme ; `practice.checkError`, lui,
+    n'était lu par aucun écran ; (d) `offline.retry` n'existe pas : `common.retry` sert ; le compteur a
+    deux clés (`pendingOne`, `pendingMany`) pour que l'arabe s'accorde ; (e) « Réessayer » de l'état
+    d'attente relit `navigator.onLine` **au geste de l'élève** pour rattraper un événement `online`
+    manqué — ce n'est pas un second écouteur (D-4), mais c'est une seconde lecture ; (f) hors ligne,
+    « Valider » d'un entraînement ne dit pas « pas de réseau » : la soumission est mise en pause par
+    TanStack Query et part seule au retour — le bandeau le dit entre-temps ; le message `errors.offline`
+    sort quand un appel déjà parti échoue ; (g) le `theme-color` dynamique de `__root.tsx` (§2.4, « en
+    passant ») n'est pas pris : le fichier venait de changer (#1259) ; `offline.html`, lui, a ses deux
+    `theme-color` ; (h) l'exécuteur n'a pas pu écrire dans ce dépôt (accès refusé à sa session) : cette
+    entrée est son texte, posé par la session qui orchestre.
+    Dettes notées : `e2e/public/offline.spec.ts` ne prouve que le bandeau (le serveur de dev redemande
+    ses modules à chaque navigation : l'état d'attente ne s'y rend pas) — l'attente et le repli se
+    prouvent dans `smoke:shell` ; le hall n'a été rendu dans aucun navigateur (pas de compte de test),
+    il est couvert par `waiting-for-network.test.tsx` sur un vrai `QueryClient`.
+- **2026-11-12 — étude close.** Les six lots sont livrés (0, 1, 3 le 2026-10-31 ; 2, 5 et 4 le
+  2026-11-12) ; le dossier passe dans `EtudeRealisé/`. Ce qui reste ouvert n'appartient plus à cette
+  étude : la lecture hors ligne d'une page jamais ouverte (é06, gelée), et la suite du retour du
+  visiteur (é40).
 - **Dettes notées.** (1) `e2e/authed/logout.spec.ts` (déconnexion depuis une page publique) et
   `session-invalidation.spec.ts` (aller-retour complet, rafraîchissement coupé pour forcer le chemin
   du hook) sont écrits mais **n'ont pas tourné en session** — pas de projet Supabase TEST : à
