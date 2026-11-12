@@ -3,16 +3,18 @@
 > **Statut** : **brouillon** (2026-11-12) — rédigée depuis une session cloud, sur un relevé du jour :
 > code du moteur à `b25edd6` (#1257), bundle servi par `www.na9ranal3ab.tn`, base de production lue
 > en agrégats (lecture seule, aucune ligne nominative), parcours visiteur joué dans Chromium en
-> émulation Pixel 7. Cinq questions au propriétaire (§7) ; les lots 0 à 2 ne dépendent d'aucune.
+> émulation Pixel 7. Cinq questions au propriétaire (§7). Deux familles de lots (§4) : 0, 1, 3, 4 et 5 ne dépendent
+> d'aucun geste du propriétaire ; le lot 2 attend, pour son effet, le geste Vercel (prérequis P-0).
 > **Priorité** : 40 · **Valeur** : 🔁 la commande du propriétaire, mot pour mot — « je veux que les
 > utilisateurs reviennent après une première visite ». Le relevé dit pourquoi ils ne reviennent
 > pas : **le canal de retour construit par l'étude 31 est éteint en production** (la clé publique
 > VAPID manque au build : zéro souscription push, jamais), **le visiteur sans compte — l'audience
 > principale depuis le 11 novembre — n'a aucun fil de retour**, et **six élèves sur dix n'ont jamais
 > joué après avoir créé leur compte**, ce qui les place hors de toutes les audiences de rappel. Cette
-> étude rallume, mesure, puis pose trois fils sobres : l'invitation à installer, le lien de reprise
+> étude mesure, rend la panne du push visible (son rallumage est un geste du propriétaire, P-0), puis
+> pose trois fils sobres : l'invitation à installer, le lien de reprise
 > que l'on s'envoie, et le rappel proposé après une victoire · **Complexité** : moyenne — une
-> variable d'environnement, deux migrations additives (une lecture d'admin, une audience de push),
+> sonde de santé, deux migrations additives (une lecture d'admin, une audience de push),
 > quatre événements produit, trois composants ; aucun prestataire nouveau, aucune donnée
 > personnelle nouvelle
 > **Architecte** : Fable (session Claude Code), 2026-11-12 · **Exécuteur cible** : Sonnet (ou équiv.)
@@ -83,8 +85,9 @@ créer son compte, le parent — et répond par des faits, pas par un inventaire
    (`admin_engagement_overview`) mais ne séparent pas « jamais joué » de « joué une fois ».
 
 **Ce que l'étude décide** : sept lots, chacun une PR verte utile seule.
-**0** la mesure du retour (deux événements, une lecture d'admin) · **1** rallumer le push et le
-prouver (variable, sonde de santé, garde nocturne) · **2** le rappel proposé après une victoire,
+**0** la mesure du retour (deux événements, une lecture d'admin) · **1** le push se prouve (sonde
+de santé, garde de build, garde nocturne — le geste Vercel lui-même est un prérequis du
+propriétaire, P-0) · **2** le rappel proposé après une victoire,
 dit en gain, plus l'audience « pas encore joué » · **3** l'invitation à installer après une
 réussite (Android natif, iPhone guidé) · **4** le lien de reprise et le partage d'une réussite
 (WhatsApp, zéro donnée) · **5** le parent dans la boucle (l'élève invite son parent en un geste) ·
@@ -128,7 +131,7 @@ de production · **[nav]** Chromium (Playwright, profil Pixel 7, visiteur, aucun
 | **Clé publique dans le build de production** | **ABSENTE** | **[bundle]** `assets/enable-push-card-0jvXA2Bl.js` : `useEffect(()=>{g()?t("unconfigured"):t("unsupported")},[])` et `enable: async()=>{g()}` — la branche « clé présente » a été éliminée à la compilation |
 | Carte d'activation visible | **jamais** | **[code]** `enable-push-card.tsx:16` : `unconfigured` ⇒ `return null` |
 | Souscriptions enregistrées | **0** | **[prod-db]** `push_subscriptions` : 0 ligne ; `push_consent_events` : 0 ligne |
-| Variables serveur (`VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`) | **non constaté** | l'accès Vercel de la session a été refusé (403 sur le périmètre de l'équipe) — le lot 1 le constate |
+| Variables serveur (`VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`) | **non constaté** | l'accès Vercel de la session a été refusé (403 sur le périmètre de l'équipe) — constaté par le propriétaire au prérequis P-0 (§4) |
 
 Conséquence : **aucun des rappels décrits comme livrés n'a jamais été reçu**. Ce n'est pas un trou
 de conception, c'est une panne muette — exactement ce que la leçon de STATUS §8 nomme « un
@@ -226,8 +229,8 @@ celui de l'enfant. Aujourd'hui **rien ne part de l'élève vers lui** en moins d
 | **G-8** | Le rendez-vous de la semaine est vide et invisible avant le compte | tous | le lundi | T-2, TL;DR 6 |
 | **G-9** | Aucun canal vers un adulte qui n'a pas accordé le push | le parent | — | T-3, T-4 |
 
-G-1 passe devant G-2 bien qu'il touche moins de monde : il coûte une variable, et tant qu'il dure
-les lots 2 et 5 n'ont aucun effet. G-7 n'est pas « moins grave » que les autres : il est traité
+G-1 passe devant G-2 bien qu'il touche moins de monde : il coûte cinq variables et un redéploiement, et tant
+qu'il dure le lot 2 et le digest parent de é08 n'ont aucun effet. G-7 n'est pas « moins grave » que les autres : il est traité
 **en premier** (lot 0) parce qu'il décide de tout le reste (P-6).
 
 ### 1.4 Résultat attendu
@@ -604,14 +607,44 @@ Journal serveur : `Push cron complete` porte déjà `byTag` ; rien à ajouter.
 | lot | contenu (résumé) | fichiers/objets créés ou touchés | tests exigés | dépend de |
 | --- | --- | --- | --- | --- |
 | 0 | La mesure du retour : `visit_first` / `visit_returned`, `admin_return_overview`, bloc console, trois lignes au relevé | `visit-memory.ts`, `entry-source.ts`, `product-events.ts`, `__root.tsx`, migration A, `engagement.server.ts`, `engagement-admin.tsx`, script `reports:engagement`, inventaire INPDP | Vitest : classement des jours, un événement par jour, stockage absent, `?src=` hostile, zéro PII ; pgTAP : garde admin, cohortes, fenêtres non écoulées ; `db:check-chain` | — |
-| 1 | Rallumer le push et le prouver : variable de build, `push` dans `/api/health`, garde nocturne, STATUS corrigé | Vercel (variable), `src/server.ts` (santé), test de build, workflow nocturne public, `STATUS.md` §3, `docs/environment-variables.md` | Vitest : santé ; garde de build (échoue si la clé manque en production) ; constat en production | — |
-| 2 | Le rappel après une victoire, en gain ; singulier ; audience `first-quest` | `nudge-memory.ts`, `enable-push-card.tsx`, `use-push.ts` (`moment`), `quest-result-nudges.tsx`, `quest.$exerciseId.tsx`, `push-copy.ts`, `push-audience.ts`, migration B, i18n | Vitest : R-6 (quatre conditions), deux refus, R-9, priorité de `first-quest` ; pgTAP : J+1, J+3, jamais J+2 ni J+4, jamais un élève actif | 1 |
+| 1 | Le push se prouve : `push` dans `/api/health`, garde de build, assertion nocturne (le geste Vercel est le prérequis P-0, hors lot) | `src/server.ts` (santé), script de garde de build, workflow nocturne public, `docs/environment-variables.md` (le constat après coup) | Vitest : santé ; garde de build (échoue si la clé manque en production) | — |
+| 2 | Le rappel après une victoire, en gain ; singulier ; audience `first-quest` — **famille B** | `nudge-memory.ts`, `enable-push-card.tsx`, `use-push.ts` (`moment`), `quest-result-nudges.tsx`, `quest.$exerciseId.tsx`, `push-copy.ts`, `push-audience.ts`, migration B, i18n | Vitest : R-6 (quatre conditions), deux refus, R-9, priorité de `first-quest` ; pgTAP : J+1, J+3, jamais J+2 ni J+4, jamais un élève actif | 1 ; effet : P-0 |
 | 3 | L'invitation à installer après une réussite | `install-prompt.ts`, `install-invite.tsx`, `exercice.$exerciseId.tsx`, `quest.$exerciseId.tsx`, `suivi.tsx`, `_public.tsx`, `_authenticated.tsx`, `manifest.webmanifest`, `product-events.ts`, i18n | Vitest : modes native / ios / none, standalone, R-11, R-12 ; e2e `public-anon` : événement simulé ⇒ carte après réussite, absente après échec ; `build:check` + `smoke:shell` | 0 |
 | 4 | Le lien de reprise et le partage d'une réussite | `share-text.ts`, `keep-row.tsx`, `exercice.$exerciseId.tsx`, `lesson-reader.tsx`, `suivi.tsx`, `parent-report.tsx`, `placement-bilan.ts`, `product-events.ts`, i18n | Vitest : textes R-16 dans les trois langues, R-17, repli partage → WhatsApp → copie, non-régression des trois appelants ; e2e `public-anon` : lien ouvert ⇒ chapitre, `?src=` retiré de l'URL | 0 |
 | 5 | Le parent dans la boucle : « Inviter mon parent », installation sur `/suivi` | `parametrage.tsx`, `quest-result-nudges.tsx`, `quest.$exerciseId.tsx`, `suivi.tsx`, i18n | Vitest : R-19 (texte, lien), R-20 (lien actif ⇒ pas de carte), ordre R-12 ; e2e `authed` : le lien ouvre `/suivi` avec le bilan | 3, 4 |
 | 6 | *Gelé (doctrine verticale)* — un défi de la semaine visible avant le compte | — | — | Q-3 |
 
-**Ordre.** 0 et 1 partent ensemble (fichiers disjoints). 2 suit 1. 3 et 4 suivent 0 et peuvent
+#### Le prérequis P-0 — le geste Vercel (propriétaire, remonté le 2026-11-12)
+
+Ce n'est pas un lot : aucune session du jour n'a l'accès à l'équipe Vercel (403), et
+`zero-intervention.md` range ce cas parmi les gestes qui restent au propriétaire. Il conditionne
+**l'effet** — pas la fusion — de tout ce qui repose sur le push.
+
+- **Le geste** : Vercel → Settings → Environment Variables, environnement Production — les cinq
+  variables de `docs/environment-variables.md` § Web Push : `VAPID_PUBLIC_KEY`,
+  `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`, et `VITE_VAPID_PUBLIC_KEY` **égale à**
+  `VAPID_PUBLIC_KEY` (paire absente : `npx web-push generate-vapid-keys`, une fois) ; puis
+  **redéployer sans cache de build** — la clé publique s'incruste à la compilation.
+- **Le constat après coup**, dans cet ordre : (1) le chunk `assets/enable-push-card-*.js` servi par
+  `www` ne contient plus `useEffect(()=>{g()?t("unconfigured")…` mais la branche qui lit la
+  permission ; (2) connecté, la carte « Rappels » est visible au bas du hall ; (3) après une
+  activation réelle, `push_subscriptions` et `push_consent_events` comptent chacune une ligne
+  (agrégat, lecture seule) ; (4) la réponse du cron du soir porte `audience` ≥ 1. Une fois le
+  lot 1 fusionné, `/api/health` rend `push:"configured"` et le nightly le vérifie chaque nuit.
+
+#### Deux familles de lots
+
+| Famille | Lots | Ce qui les distingue |
+| --- | --- | --- |
+| **A — aucun geste du propriétaire** : exécutables et **utiles** dès la fusion de l'étude | **0** (mesure du retour) · **1** (sonde et gardes du push — elles disent « éteint » tant que P-0 n'est pas fait, et c'est leur rôle) · **3** (installation) · **4** (lien de reprise, partage) · **5** (inviter son parent) | rien n'y dépend d'une variable, d'un prestataire ni d'une question ouverte |
+| **B — attendent le push (P-0)** pour avoir un effet | **2** (rappel après une victoire, singulier, audience `first-quest`) | fusionnable avant P-0 sans risque — la carte reste masquée tant que la clé manque, l'audience ne trouve aucune souscription — mais **sans effet** ; ses critères en production ne se constatent qu'après P-0 |
+| **Gelé** | **6** (défi de la semaine avant le compte) | attend Q-3 — une ouverture de capacité ne se lance pas sans arbitrage (P-7) |
+
+L'audience « compte créé, jamais joué » (`first-quest`, migration B) est de la famille B par son
+effet : elle ne joint que des élèves ayant accordé le push. Sa partie **mesure** — combien
+d'inscrits n'ont jamais joué — est dans le lot 0 (KPI-2), famille A.
+
+**Ordre.** 0 et 1 partent ensemble (fichiers disjoints). 2 suit 1 (et P-0 pour son effet). 3 et 4 suivent 0 et peuvent
 aller en parallèle **si** `exercice.$exerciseId.tsx` est réparti : le lot 4 y monte `KeepRow`, le
 lot 3 y monte `InstallInvite` — deux insertions voisines dans `renderResultFooter` ; le second à
 fusionner rebase. 5 en dernier.
@@ -637,24 +670,26 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
       **Tests** : ceux du tableau ; pgTAP avec une cohorte dont la fenêtre n'est pas écoulée (elle
       ne compte pas comme perdue) et un compte non confirmé.
       **Stop-point** : aucune carte, aucun bouton, aucun changement d'écran hors la console admin.
-- [ ] **Lot 1 — Rallumer le push et le prouver.**
-      **Périmètre** : (a) constater dans Vercel les quatre variables serveur et poser
-      `VITE_VAPID_PUBLIC_KEY` égale à `VAPID_PUBLIC_KEY`, production et prévisualisation, puis
-      redéployer (si la paire serveur manque : la générer selon `docs/environment-variables.md`
-      §push) ; (b) `push` dans `/api/health` ; (c) une garde de build — `build:check` échoue quand
-      `VERCEL_ENV=production` et que la clé est vide — et une assertion dans le nightly public :
-      `/api/health` rend `push:"configured"` ; (d) corriger la ligne « Notifications push » de
-      `STATUS.md` §3 (état réel et date) et ajouter la panne aux leçons du §8.
-      **Critères** (US-2) : sur `www`, connecté, la carte « Rappels » est visible au hall ; une
-      souscription réelle crée une ligne dans `push_subscriptions` et une dans
-      `push_consent_events` ; la réponse du cron du soir porte `audience` ≥ 1 ; retirer la clé
-      d'un build de prévisualisation fait rougir `build:check`.
+- [ ] **Lot 1 — Le push se prouve** (famille A).
+      **Périmètre** : (a) `push` dans `/api/health` — `configured` si les quatre variables
+      serveur sont présentes, aucune valeur rendue ; (b) une garde de build — `build:check`
+      échoue quand `VERCEL_ENV=production` et que `VITE_VAPID_PUBLIC_KEY` est vide ; (c) une
+      assertion dans le nightly public : `/api/health` rend `push:"configured"` — elle tient
+      l'issue du nightly ouverte tant que P-0 n'est pas fait, puis veille ; (d) le « constat
+      après coup » de P-0 recopié dans `docs/environment-variables.md` § Web Push, et la panne
+      aux leçons de `STATUS.md` §8 (la ligne du §3 est corrigée par la session orchestratrice du
+      2026-11-12).
+      **Critères** (US-2) : `/api/health` dit `unconfigured` avant P-0 et `configured` après ;
+      retirer la clé d'un build de production fait rougir `build:check` ; le nightly porte
+      l'assertion.
       **Tests** : Vitest sur le champ de santé (quatre variables présentes / une absente) ; test
       du script de garde.
-      **Stop-point** : aucun texte, aucun emplacement de carte ne change (c'est le lot 2). Si la
-      session n'a pas l'accès Vercel, elle livre (b), (c), (d) et s'arrête sur Q-1 — elle ne
-      contourne pas.
-- [ ] **Lot 2 — Le rappel après une victoire.**
+      **Stop-point** : aucun texte, aucun emplacement de carte ne change (c'est le lot 2) ; le lot
+      ne pose aucune variable et ne contourne pas P-0. ⚠️ La garde (b) rougit le déploiement de
+      production tant que P-0 n'est pas fait : elle se fusionne **après** P-0, ou en
+      avertissement d'abord puis en échec — à l'exécuteur de constater l'état de P-0 avant de
+      choisir, et de l'écrire dans sa PR.
+- [ ] **Lot 2 — Le rappel après une victoire** (famille B — effet après P-0).
       **Périmètre** : R-5 à R-10, R-12 pour `push` ; migration B ; `first-quest` dans
       `PUSH_PRIORITY` (avant-dernier) et `PUSH_COPY` (trois langues) ; `push_optin{moment}`.
       **Critères** (US-3, US-4) : quête réussie, permission jamais demandée ⇒ la carte paraît sous
@@ -716,7 +751,7 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
 - **Non-régression** : `enable-push-card.test.tsx`, `use-push.test.ts`, `push-audience.test.ts`,
   `notifications.cron.test.ts`, `report-share.test.ts`, `placement-summary.test.tsx`, e2e
   `public-anon` existants restent verts sans retouche de leurs attentes.
-- **Constat en production** (lot 1 seulement, lecture seule plus une souscription de test par le
+- **Constat en production** (P-0 seulement, lecture seule plus une souscription de test par le
   propriétaire ou un compte de test) : c'est le seul critère de ce plan qu'aucune CI ne peut
   porter, et c'est celui qui a manqué : la table existe depuis le 2026-06-13 et n'a jamais reçu
   une ligne.
@@ -749,11 +784,12 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
 
 ## 7. Questions ouvertes (pour l'humain)
 
-- **Q-1 — Qui pose la clé VAPID en production ?** La session qui a écrit l'étude n'a pas l'accès
-  Vercel (403 sur le périmètre de l'équipe). **Recommandation** : autoriser le connecteur Vercel
-  de la session d'exécution sur l'équipe (un clic), pour que le lot 1 se fasse de bout en bout ; à
-  défaut, poser soi-même `VITE_VAPID_PUBLIC_KEY` = `VAPID_PUBLIC_KEY` et redéployer. **Débloque** :
-  le lot 1, donc le lot 2 et le bilan parent du dimanche de é08.
+- **Q-1 — Le geste Vercel (P-0, §4).** Aucune session n'a l'accès à l'équipe Vercel : le geste
+  est remonté au propriétaire le 2026-11-12 par la session orchestratrice. **Recommandation** : le
+  faire avant tout le reste — cinq variables, un redéploiement sans cache, et le constat en quatre
+  points du §4 ; ou autoriser le connecteur Vercel d'une session sur l'équipe, qui le fera.
+  **Débloque** : l'effet du lot 2 et le bilan parent du dimanche de é08. Ne bloque aucun lot de
+  la famille A.
 - **Q-2 — Une clé de lecture PostHog en secret GitHub (`POSTHOG_PERSONAL_API_KEY`) ?**
   **Recommandation : oui**, en lecture seule sur le projet : le relevé du lundi (#962) dira alors
   KPI-1 et KPI-5 sans que personne ouvre PostHog. Sans elle, ces deux chiffres se lisent à la
@@ -781,5 +817,7 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
 - **2026-11-12** — étude rédigée (brouillon). Relevé envoyé à la session orchestratrice du jour,
   qui répartit l'exécution des lots. Constat hors étude remonté le même jour : `STATUS.md` §3
   déclare les notifications push « 🟢 M3 » alors que la clé publique manque au build de production
-  (T-1) — corrigé par le lot 1, pas par cette session (qui ne modifie ni `STATUS.md` ni le code du
-  moteur).
+  (T-1) — corrigé par la session orchestratrice, pas par celle-ci (qui ne modifie ni `STATUS.md` ni le
+  code du moteur) ; le geste Vercel est remonté au propriétaire (P-0).
+- **2026-11-12** — sur demande de la session orchestratrice : les lots sont classés en deux
+  familles (§4), le geste Vercel devient le prérequis P-0, hors lot.
