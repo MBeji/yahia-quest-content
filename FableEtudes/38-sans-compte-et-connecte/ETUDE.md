@@ -4,7 +4,9 @@
 > relevé du code du jour (`main` du moteur à #1204, `main` du corpus à privé#754) ; Q-1 à Q-3
 > arbitrées par le propriétaire, toutes sur les recommandations (§7). **Chantier court livré le
 > 2026-10-31** — lots 0, 1 et 3 au moteur (#1209 ; #1210, #1211, #1212 ; #1214), détail au journal (§8) ;
-> les lots 2, 4 et 5 attendent une place de code, et un budget (le chunk `i18n-` est à 0,06 Ko de son plafond).
+> **lot 2 livré le 2026-11-12** (#1257) ; le lot 5 est en cours d'exécution depuis le même jour (commande du
+> propriétaire : le retour après la première visite), le lot 4 attend la fusion du premier rendu dans la langue
+> du cookie (mêmes fichiers). Le budget `i18n-` n'est plus un frein depuis le découpage par langue (moteur #1229).
 > **Priorité** : 38 · **Valeur** : 🚪 le visiteur qui lit un cours ou finit un entraînement et
 > crée son compte **revient exactement là où il était**, au lieu d'atterrir au Hall des Héros puis
 > dans un assistant de trois écrans ; l'élève dont la session expire en pleine quête **retrouve sa
@@ -673,7 +675,7 @@ worker).
       header public sans CTA pendant `loading` ; déconnexion depuis `/chapitre/x` ⇒ même page,
       HUD disparu, mémoire locale intacte. **Stop-point** : pas de carte de classe, rien sur le
       réseau.
-- [ ] **Lot 2 — L'accueil n'est plus un péage.** Périmètre : R-5, US-2, D-3. Critères : élève
+- [x] **Lot 2 — L'accueil n'est plus un péage** (livré, moteur #1257). Périmètre : R-5, US-2, D-3. Critères : élève
       `student` sans parcours sur `/quest/<id>` joue ; carte présente ; « Choisir » ⇒
       `setCurrentParcours` + `claimWelcomePack` + `onboarding_completed{source:"quest_card"}` ;
       « Plus tard » ⇒ carte fermée pour la session ; `/dashboard` sans parcours ⇒ assistant,
@@ -828,6 +830,27 @@ recommandations**. Plus rien n'est ouvert : l'étude est `validée`.
   `login` part avec `reason: "expired"`. Limite connue : une session que `auth-attacher` termine **en
   cours d'usage** (refus prouvé du rafraîchissement) ne passe pas par ce hook et la garde ne retient
   rien pour qui avait une session — le chargement à froid sur une session morte, lui, est couvert.
+- **2026-11-12 — lot 2 livré (moteur #1257).** La garde d'accueil épargne `/quest/*`, et elle seule
+  (`shouldRedirectToOnboarding` ; `/quests` et `/quest` nus ne sont pas épargnés) ; la route de la quête
+  pose `ParcoursQuickPick` au-dessus du lecteur pour un `student` sans parcours — la lecture
+  `getExerciseParcours` ne part pour personne d'autre ; « Choisir » appelle `setCurrentParcours` puis
+  `claimWelcomePack` et émet `onboarding_completed{intent:"unknown", source:"quest_card"}` ; « Plus
+  tard » ferme la carte pour la session de navigation. La dérivation (thème, niveau) → parcours est
+  sortie de `getSubject` vers `resolveSubjectParcours` (`quest.parcours.server.ts`) : une seule
+  définition, deux appelants. L'assistant n'est pas modifié (stop-point tenu). Vérifié en production
+  dans le bundle servi (le chunk de la route porte la carte et la source `quest_card`).
+  Écarts acceptés : (a) `intent` vaut `"unknown"` — la carte ne pose pas la question d'intention de
+  l'assistant ; (b) la victoire de fin d'accueil (é31 R-19) est une notification « C'est parti ! +N
+  pièces de bienvenue », pas l'écran de célébration de l'assistant : l'élève est au milieu d'une
+  quête, on ne lui retire pas l'écran ; (c) un pack de bienvenue en échec ne défait pas le choix de la
+  classe (même tolérance que l'assistant) ; (d) la clé de « Plus tard » est en `sessionStorage`
+  (`xp-scholars-quickpick-later`), hors de la famille `na9ra.*` du §3.1, qui ne décrit que le
+  `localStorage` ; (e) trois clés i18n dans les catalogues principaux (`i18n-fr` 61,15 Ko pour 64) —
+  trop courtes pour un catalogue à part. `index-` inchangé (413,08 Ko).
+  Dette notée : `e2e/authed/quest-without-parcours.spec.ts` (compte jetable sans classe → joue le
+  quiz d'un chapitre scolaire, choisit sa classe, la base le confirme) est écrit mais **n'a pas tourné
+  en session** — pas de projet Supabase TEST ; `e2e-auth.yml` a été déclenché sur `main` le jour même,
+  son verdict est à lire avant la nuit.
 - **Dettes notées.** (1) `e2e/authed/logout.spec.ts` (déconnexion depuis une page publique) et
   `session-invalidation.spec.ts` (aller-retour complet, rafraîchissement coupé pour forcer le chemin
   du hook) sont écrits mais **n'ont pas tourné en session** — pas de projet Supabase TEST : à
