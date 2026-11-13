@@ -1,0 +1,112 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de l'équilibre",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le bilan d'une quincaillerie montre des stocks de 90 000 D, des créances clients de 55 000 D, une caisse de 12 000 D, des dettes fournisseurs de 48 000 D et un découvert de 9 000 D. Calculer son BFR, en D.",
+      "answerKey": {
+        "value": 97000,
+        "unit": "D"
+      },
+      "explanation": "Hors trésorerie : stocks et clients 90 000 + 55 000 = 145 000 D ; fournisseurs 48 000 D. BFR = 145 000 − 48 000 = 97 000 D ✓. Garder la caisse et le découvert (157 000 − 57 000 = 100 000 D) donnerait le FDR, pas le BFR.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une entreprise a un fonds de roulement négatif. Quelle conséquence en tire-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des dettes à court terme financent une partie des emplois stables"
+        },
+        {
+          "id": "b",
+          "text": "Elle garde une marge de sécurité pour financer ses actifs courants"
+        },
+        {
+          "id": "c",
+          "text": "Son besoin de financement du cycle d'exploitation est nul"
+        },
+        {
+          "id": "d",
+          "text": "Ses actifs courants sont supérieurs à ses passifs courants"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "FDR = ressources stables − emplois stables est négatif : les ressources stables ne couvrent pas les emplois stables, donc des dettes à court terme en financent une partie, avec un risque de liquidité ✓. La marge de sécurité est la propriété d'un FDR positif, et un FDR négatif signifie que les actifs courants sont inférieurs aux passifs courants.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise a un FDR de 95 000 D, un BFR de 82 000 D, 40 000 D de liquidités et 27 000 D de découvert. Elle paie par chèque une machine de 30 000 D, sans autre opération. Quelle est sa nouvelle trésorerie nette, en D ?",
+      "answerKey": {
+        "value": -17000,
+        "unit": "D"
+      },
+      "explanation": "Les emplois stables montent de 30 000 D : FDR = 95 000 − 30 000 = 65 000 D. Le BFR ne change pas (82 000 D). TN = 65 000 − 82 000 = −17 000 D ✓. Contrôle : la trésorerie nette baisse de 30 000 D, de 40 000 − 27 000 = 13 000 D à −17 000 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une entreprise a un FDR de 52 000 D, un BFR de 61 000 D et une TN de −9 000 D. Elle encaisse en banque un emprunt de 40 000 D remboursable dans 5 ans. Quels sont ses nouveaux FDR, BFR et TN ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FDR 92 000 D, BFR 61 000 D, TN −9 000 D"
+        },
+        {
+          "id": "b",
+          "text": "FDR 52 000 D, BFR 21 000 D, TN 31 000 D"
+        },
+        {
+          "id": "c",
+          "text": "FDR 92 000 D, BFR 61 000 D, TN 31 000 D"
+        },
+        {
+          "id": "d",
+          "text": "FDR 92 000 D, BFR 101 000 D, TN −9 000 D"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'emprunt à 5 ans est une ressource stable : FDR = 52 000 + 40 000 = 92 000 D. L'argent entre en banque, donc en trésorerie, que le BFR écarte : BFR inchangé à 61 000 D. TN = 92 000 − 61 000 = 31 000 D ✓, soit −9 000 + 40 000. Un BFR de 21 000 D ou de 101 000 D le fait varier à tort, et garder le FDR à 52 000 D ignore une ressource stable.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un bilan fonctionnel montre : emplois stables 360 000 D ; actifs courants 250 000 D, dont 20 000 D de liquidités ; ressources stables 420 000 D ; passifs courants 190 000 D, dont 30 000 D de découvert. Quelle lecture est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FDR 60 000 D, BFR 40 000 D, TN 20 000 D : équilibre assuré"
+        },
+        {
+          "id": "b",
+          "text": "FDR 60 000 D, BFR 90 000 D, TN −30 000 D : équilibre rompu"
+        },
+        {
+          "id": "c",
+          "text": "FDR 60 000 D, BFR 70 000 D, TN −10 000 D : équilibre rompu"
+        },
+        {
+          "id": "d",
+          "text": "FDR 60 000 D, BFR 70 000 D, TN 10 000 D : équilibre assuré"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "FDR = 420 000 − 360 000 = 60 000 D. BFR = (250 000 − 20 000) − (190 000 − 30 000) = 230 000 − 160 000 = 70 000 D. TN = 60 000 − 70 000 = −10 000 D ✓, que confirme 20 000 − 30 000. La TN est négative : le FDR ne finance qu'une partie du BFR, l'équilibre est rompu. Oublier de retirer la trésorerie d'un seul côté donne un BFR de 40 000 D ou de 90 000 D, et inverser la différence donne +10 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise a un FDR de 120 000 D, une trésorerie de l'actif de 35 000 D et une trésorerie du passif de 20 000 D. Calculer son BFR, en D.",
+      "answerKey": {
+        "value": 105000,
+        "unit": "D"
+      },
+      "explanation": "TN = trésorerie de l'actif − trésorerie du passif = 35 000 − 20 000 = 15 000 D. Comme TN = FDR − BFR, on a BFR = FDR − TN = 120 000 − 15 000 = 105 000 D ✓. Contrôle : 120 000 − 105 000 = 15 000 D.",
+      "difficulty": 3
+    }
+  ]
+}

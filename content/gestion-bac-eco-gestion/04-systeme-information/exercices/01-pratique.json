@@ -1,0 +1,184 @@
+{
+  "title": "⭐ Exercice : Premières armes — information, étapes et sources",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle phrase décrit le mieux un système d'information ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un logiciel de gestion installé sur tous les ordinateurs du service comptable"
+        },
+        {
+          "id": "b",
+          "text": "Des relations entre hommes, machines et procédures qui font circuler des informations utiles"
+        },
+        {
+          "id": "c",
+          "text": "Le classeur où l'entreprise garde tous ses documents anciens"
+        },
+        {
+          "id": "d",
+          "text": "L'ensemble des décisions prises par la direction générale"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le système d'information associe des hommes, des machines et des procédures pour produire des flux ordonnés d'informations qui servent de base aux décisions. Un logiciel n'en est qu'un élément, un classeur n'en est qu'un support, et les décisions sont ce qu'il éclaire.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associez chaque étape de gestion de l'information à sa description.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Collecte"
+        },
+        {
+          "id": "l2",
+          "text": "Saisie"
+        },
+        {
+          "id": "l3",
+          "text": "Traitement"
+        },
+        {
+          "id": "l4",
+          "text": "Diffusion"
+        },
+        {
+          "id": "r3",
+          "text": "La classer, la calculer, lui donner un sens"
+        },
+        {
+          "id": "r1",
+          "text": "Recueillir l'information auprès de sa source"
+        },
+        {
+          "id": "r4",
+          "text": "La transmettre à ceux qui en ont besoin"
+        },
+        {
+          "id": "r2",
+          "text": "L'enregistrer sur un support"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La collecte recueille, la saisie enregistre, le traitement donne un sens, la diffusion transmet. Les quatre étapes se suivent dans cet ordre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un prospect renvoie un coupon-réponse qui porte seulement le mot « oui », sans nom ni référence d'article. Que peut-on dire de cette information ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est exploitable, puisque le client accepte bien l'offre proposée"
+        },
+        {
+          "id": "b",
+          "text": "Elle est inexploitable : on ignore qui répond et sur quoi"
+        },
+        {
+          "id": "c",
+          "text": "Elle est exploitable, car un simple « oui » suffit pour préparer la livraison"
+        },
+        {
+          "id": "d",
+          "text": "Elle est inexploitable, car elle est écrite et non orale"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le coupon dit qu'un prospect est intéressé, mais l'entreprise ignore qui il est et quel article il veut : elle ne peut ni livrer ni relancer. Une information est exploitable quand on sait de quoi elle parle et de qui elle vient ; sa nature écrite n'y change rien.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un client commande par téléphone ; remettez dans l'ordre le parcours de cette commande dans l'entreprise.",
+      "options": [
+        {
+          "id": "s3",
+          "text": "Le logiciel calcule le montant et vérifie le stock"
+        },
+        {
+          "id": "s1",
+          "text": "La vendeuse écoute le client et note la commande"
+        },
+        {
+          "id": "s4",
+          "text": "Le bon de préparation est envoyé au magasin"
+        },
+        {
+          "id": "s2",
+          "text": "Elle inscrit la commande dans le logiciel"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "explanation": "La vendeuse recueille d'abord l'information (collecte), puis l'enregistre (saisie). Le logiciel la traite ensuite, et seulement après, le bon part au magasin (diffusion) : le magasin ne peut préparer qu'une commande traitée et transmise.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Des contrats, des rapports de dirigeants et des documents comptables relèvent de quelle source d'information ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des sources externes, car ils concernent des clients"
+        },
+        {
+          "id": "b",
+          "text": "Des sources internes, car ils émanent de l'entreprise"
+        },
+        {
+          "id": "c",
+          "text": "Des sources externes, car ils sont écrits"
+        },
+        {
+          "id": "d",
+          "text": "Des sources internes, car ils sont obligatoirement secrets"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ces documents émanent de l'entreprise : ce sont des sources internes. Qu'ils concernent des clients ou qu'ils soient écrits ne change pas leur origine, et leur confidentialité n'est pas le critère de la source.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une information met 10 minutes à être collectée, 5 minutes à être saisie, 15 minutes à être traitée et 5 minutes à être diffusée, les étapes se suivant sans attente. Quel est le délai total entre la collecte et la fin de la diffusion, en minutes ?",
+      "answerKey": {
+        "value": 35,
+        "unit": "min"
+      },
+      "explanation": "Les quatre étapes se suivent : 10 + 5 + 15 + 5 = 35 minutes ✓. Ne compter que les trois premières étapes donnerait 30 minutes, en oubliant la diffusion.",
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître d'œuvre",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "La fonction commerciale a vendu 500 meubles. De quoi la production a-t-elle besoin pour les fabriquer, et à quelle fonction l'adresse-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De matières premières, qu'elle demande à la fonction financière"
+        },
+        {
+          "id": "b",
+          "text": "De matières premières, qu'elle demande à l'approvisionnement"
+        },
+        {
+          "id": "c",
+          "text": "De personnel qualifié, qu'elle demande à la fonction commerciale"
+        },
+        {
+          "id": "d",
+          "text": "D'une livraison, qu'elle demande aux ressources humaines"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour fabriquer, la production exprime ses besoins en matières premières à la fonction approvisionnement, qui les lui livre ; la financière fournit des ressources, pas les matières. Les produits finis sortent de la production, et le personnel vient des ressources humaines.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une diététicienne extérieure propose à la direction d'une cantine de nouveaux menus ; la direction reste libre de les adopter. Quel lien la relie à la direction ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un lien hiérarchique, car la direction suit souvent ses propositions"
+        },
+        {
+          "id": "b",
+          "text": "Un lien fonctionnel, car elle est compétente en nutrition"
+        },
+        {
+          "id": "c",
+          "text": "Un lien de conseil, car elle éclaire la direction sans décider"
+        },
+        {
+          "id": "d",
+          "text": "Un lien fonctionnel, car ses menus concernent tous les repas"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Elle contribue au fonctionnement de la direction par ses propositions, sans décider à sa place : c'est un lien de conseil. La direction suit ou non ses avis, donc il n'y a pas de subordination ; et ses menus ne sont pas une décision qui s'impose aux services.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans une usine de pâtes, on relève cinq situations. Lesquelles illustrent un lien hiérarchique ? Sélectionne toutes celles qui conviennent.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le chef de la ligne de séchage donne ses consignes du jour aux opérateurs de sa ligne"
+        },
+        {
+          "id": "b",
+          "text": "Une opératrice signale au chef de ligne une panne et attend ses instructions"
+        },
+        {
+          "id": "c",
+          "text": "La responsable qualité impose aux trois lignes la même procédure de contrôle"
+        },
+        {
+          "id": "d",
+          "text": "Un consultant extérieur propose à la direction un nouvel horaire d'équipes"
+        },
+        {
+          "id": "e",
+          "text": "Le contrôleur de gestion impose à tous les services le même modèle de budget mensuel"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Les consignes données par le chef de ligne et l'attente d'instructions de l'opératrice traduisent une subordination : ce sont des liens hiérarchiques. La procédure imposée aux trois lignes est un lien fonctionnel, l'avis du consultant un lien de conseil, et le modèle de budget imposé à tous les services est, lui aussi, un lien fonctionnel.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'organigramme d'une entreprise comprend un P.D.G., 5 fonctions, 3 services sous l'approvisionnement, 4 ateliers sous la production, 3 services sous la commerciale, 2 sous les ressources humaines, 2 sous la financière, et un secrétariat rattaché au P.D.G. Combien de cases contient-il ?",
+      "answerKey": {
+        "value": 21,
+        "unit": "cases"
+      },
+      "explanation": "Services et ateliers : 3 + 4 + 3 + 2 + 2 = 14. Cases : P.D.G. 1 + fonctions 5 + 14 + secrétariat 1 = 21 ✓. Oublier le secrétariat donnerait 20 ; compter le P.D.G. et les services, sans les fonctions ni le secrétariat, donnerait 15.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un organigramme place le « contrôle de qualité » sous la fonction commerciale et le « service après-vente » sous la fonction financière. Quelle correction est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contrôle de qualité sous la production, service après-vente sous la commerciale"
+        },
+        {
+          "id": "b",
+          "text": "Contrôle de qualité sous l'approvisionnement, service après-vente sous la production"
+        },
+        {
+          "id": "c",
+          "text": "Contrôle de qualité sous l'approvisionnement, service après-vente sous les ressources humaines"
+        },
+        {
+          "id": "d",
+          "text": "Contrôle de qualité sous la financière, service après-vente sous la production"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le contrôle de qualité est un service de la production et le service après-vente un service de la fonction commerciale. Les autres propositions placent les deux services dans des fonctions dont les attributions ne les concernent pas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le fournisseur de tôles n'a pas respecté le délai de livraison et l'atelier de fabrication est à l'arrêt. Quel flux de sortie de la production est, par ricochet, menacé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les besoins d'investissement adressés à la financière"
+        },
+        {
+          "id": "b",
+          "text": "Les besoins en qualifications adressés aux RH"
+        },
+        {
+          "id": "c",
+          "text": "Les besoins en matières adressés à l'approvisionnement"
+        },
+        {
+          "id": "d",
+          "text": "Les produits finis adressés à la fonction commerciale"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sans tôles, la production ne fabrique plus : les produits finis adressés à la commerciale manquent. Les besoins en matières, eux, continuent d'être exprimés : ce sont eux qui ont déclenché la livraison attendue. Les besoins d'investissement et de qualifications ne dépendent pas de ce retard.",
+      "difficulty": 3
+    }
+  ]
+}

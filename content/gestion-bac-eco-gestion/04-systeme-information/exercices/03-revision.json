@@ -1,0 +1,195 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le système d'information de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Une banque demande à une entreprise de prouver qu'une dette a été payée. Quel outil d'obtention de l'information fournit cette preuve ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La comptabilité"
+        },
+        {
+          "id": "b",
+          "text": "Les statistiques"
+        },
+        {
+          "id": "c",
+          "text": "Les mathématiques financières"
+        },
+        {
+          "id": "d",
+          "text": "L'informatique"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La comptabilité est un moyen de preuve entre commerçants : elle garde les écritures qui attestent le paiement. L'informatique traite les données, les statistiques résument des séries et les mathématiques financières calculent, mais aucune ne sert de preuve.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associez chaque critère de classement de l'information à la question qu'il pose.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Source"
+        },
+        {
+          "id": "l2",
+          "text": "Nature"
+        },
+        {
+          "id": "l3",
+          "text": "Domaine"
+        },
+        {
+          "id": "l4",
+          "text": "Niveau d'utilisation"
+        },
+        {
+          "id": "r2",
+          "text": "L'information est-elle écrite ou orale ?"
+        },
+        {
+          "id": "r4",
+          "text": "Qui s'en sert : cadres supérieurs, cadres moyens, opérateurs ?"
+        },
+        {
+          "id": "r1",
+          "text": "L'information vient-elle de l'intérieur ou de l'extérieur ?"
+        },
+        {
+          "id": "r3",
+          "text": "L'information est-elle commerciale, juridique, comptable… ?"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La source donne l'origine interne ou externe, la nature le mode écrit ou oral, le domaine le sujet traité, et le niveau d'utilisation le public qui s'en sert. Les quatre critères sont indépendants.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un candidat envoie son CV ; remettez dans l'ordre le parcours de cette information au service du personnel.",
+      "options": [
+        {
+          "id": "s3",
+          "text": "Elle le compare au profil du poste à pourvoir"
+        },
+        {
+          "id": "s1",
+          "text": "Le service reçoit le CV envoyé par le candidat"
+        },
+        {
+          "id": "s4",
+          "text": "Le résultat de la comparaison est transmis au directeur"
+        },
+        {
+          "id": "s2",
+          "text": "Une employée l'enregistre dans le fichier des candidats"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "explanation": "Le CV est d'abord recueilli (collecte), puis enregistré (saisie). Il est ensuite comparé au profil (traitement), et le résultat est transmis au directeur (diffusion) : on ne diffuse qu'après avoir traité.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pendant 5 jours, une entreprise collecte chaque jour 14 informations, dont 6 d'origine externe. Combien d'informations internes a-t-elle collectées en tout sur les 5 jours ?",
+      "answerKey": {
+        "value": 40,
+        "unit": "informations"
+      },
+      "explanation": "Chaque jour : 14 − 6 = 8 informations internes. Sur 5 jours : 8 × 5 = 40 ✓. Multiplier 14 par 5 donnerait 70 informations, internes et externes mélangées.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels sont des outils d'obtention de l'information cités par le manuel ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La comptabilité"
+        },
+        {
+          "id": "b",
+          "text": "L'informatique"
+        },
+        {
+          "id": "c",
+          "text": "Les statistiques"
+        },
+        {
+          "id": "d",
+          "text": "La publicité"
+        },
+        {
+          "id": "e",
+          "text": "L'organigramme"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La comptabilité, l'informatique, les mathématiques financières et les statistiques sont les quatre outils principaux. La publicité sert à vendre et l'organigramme représente la structure de l'entreprise ; ni l'une ni l'autre ne produit d'informations de gestion.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi dit-on que l'informatique a transformé la manière de décider ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce qu'elle prend les décisions à la place du dirigeant"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'elle rend inutiles les informations venues de l'extérieur"
+        },
+        {
+          "id": "c",
+          "text": "Parce qu'elle traite beaucoup de données en très peu de temps"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'elle garantit la fiabilité de toute donnée saisie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'informatique traite une grande quantité de données en très peu de temps, ce qui permet de décider avec des informations plus nombreuses et plus rapides. Elle n'élimine ni le décideur, ni les sources externes, et elle ne rend pas fiable une donnée de mauvaise origine.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "title": "⭐ Exercice : Premiers pas à l'atelier de Sana",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "L'entreprise Azur livre des sacs à un client qui règle par chèque. Comment qualifier la nature du flux correspondant à ce chèque ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flux réel : une entrée de biens"
+        },
+        {
+          "id": "b",
+          "text": "Flux financier : un décaissement"
+        },
+        {
+          "id": "c",
+          "text": "Flux financier : un encaissement"
+        },
+        {
+          "id": "d",
+          "text": "Flux réel : une sortie de biens"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le chèque reçu est de la monnaie qui entre : c'est un flux financier, et comme l'entreprise reçoit de l'argent il s'agit d'un encaissement ✓. Il est la contrepartie du flux réel, qui est la sortie des sacs. Le décaissement correspondrait à un paiement fait par l'entreprise.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associez chaque terme à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Flux réel"
+        },
+        {
+          "id": "l2",
+          "text": "Flux financier"
+        },
+        {
+          "id": "l3",
+          "text": "Origine d'un flux"
+        },
+        {
+          "id": "l4",
+          "text": "Destination d'un flux"
+        },
+        {
+          "id": "r1",
+          "text": "D'où vient la valeur : c'est la ressource"
+        },
+        {
+          "id": "r2",
+          "text": "Échange de biens ou de services avec un partenaire"
+        },
+        {
+          "id": "r3",
+          "text": "Là où va la valeur : c'est l'emploi"
+        },
+        {
+          "id": "r4",
+          "text": "Encaissement ou décaissement de monnaie, en contrepartie d'un flux réel"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l4",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Un flux réel est un échange de biens ou de services ; le flux financier est la monnaie qui lui répond, encaissée ou décaissée. L'origine d'un flux est la ressource (d'où part la valeur) ; la destination est l'emploi (là où elle arrive).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel avantage le journal présente-t-il par rapport à un enregistrement direct dans les comptes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il regroupe en un seul endroit les opérations de même nature"
+        },
+        {
+          "id": "b",
+          "text": "Il dispense de respecter la partie double dans chaque article"
+        },
+        {
+          "id": "c",
+          "text": "Il garde l'ordre chronologique des opérations"
+        },
+        {
+          "id": "d",
+          "text": "Il calcule automatiquement la TVA de chaque opération"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le journal enregistre les opérations jour après jour, dans l'ordre où elles ont eu lieu : on peut donc reconstituer leur déroulement ✓. Regrouper les opérations de même nature est le rôle des comptes, auxquels on reporte les montants ensuite. La partie double s'applique dans le journal comme partout, et le journal ne calcule aucune TVA.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un atelier achète du tissu pour 750 D et le paie par chèque. Quelle est l'analyse en emploi et en ressource ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Emploi : Banque ; ressource : Achats"
+        },
+        {
+          "id": "b",
+          "text": "Emploi : Achats ; ressource : Banque"
+        },
+        {
+          "id": "c",
+          "text": "Emploi : Achats ; ressource : Fournisseurs"
+        },
+        {
+          "id": "d",
+          "text": "Emploi : Fournisseurs ; ressource : Banque"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le tissu est acquis (destination : emploi, Achats) avec une somme qui sort du compte en banque (origine : ressource, Banque) ✓. Le compte Fournisseurs intervient si l'achat est fait à crédit : ici le chèque règle l'achat tout de suite, il n'y a pas de dette. Inverser les deux comptes confond la destination et l'origine.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une facture d'achat indique : brut 3 200 D, remise 5 %. Quel est le net commercial, en D ?",
+      "answerKey": {
+        "value": 3040,
+        "unit": "D"
+      },
+      "explanation": "Remise : 3 200 × 5 % = 160 D. Net commercial : 3 200 − 160 = 3 040 D ✓ (on retranche la remise du brut, on ne l'ajoute pas).",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettez dans l'ordre les étapes qui mènent du brut au net à payer d'une facture d'achat.",
+      "options": [
+        {
+          "id": "s3",
+          "text": "Calculer la TVA sur le net commercial"
+        },
+        {
+          "id": "s1",
+          "text": "Calculer la remise sur le brut"
+        },
+        {
+          "id": "s4",
+          "text": "Ajouter la TVA au net commercial pour obtenir le net à payer"
+        },
+        {
+          "id": "s2",
+          "text": "Retrancher la remise du brut pour obtenir le net commercial"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "explanation": "La remise se calcule d'abord, sur le brut, et donne le net commercial. La TVA ne peut se calculer qu'après, car sa base est le net commercial et non le brut. Le net à payer s'obtient en dernier, en ajoutant cette TVA.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : La journée de Sana au journal",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un atelier reçoit une facture : brut 8 000 D, remise 5 %, TVA de 18 %. Dès la réception il signe un chèque d'un quart de la somme à payer ; le solde est dû plus tard. Dans l'article unique du journal, quelle somme figure au crédit de la Banque, en D ?",
+      "answerKey": {
+        "value": 2242,
+        "unit": "D"
+      },
+      "explanation": "Remise : 8 000 × 5 % = 400 D, net commercial 7 600 D. TVA : 7 600 × 18 % = 1 368 D. Net à payer : 7 600 + 1 368 = 8 968 D. Le quart payé par chèque est 8 968 ÷ 4 = 2 242 D, crédité à la Banque ✓ ; le reste, 6 726 D, est crédité à 401. Contrôle : 2 242 + 6 726 = 8 968 D, égal au total débité 7 600 + 1 368.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Voici un article du journal : débit 601 : 3 200 D ; débit 4366 : 576 D ; crédit 401 : 3 776 D. Quelles affirmations sont vraies ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le total débité est de 3 776 D"
+        },
+        {
+          "id": "b",
+          "text": "Le compte 601 appartient à la classe 6 : l'achat est une charge"
+        },
+        {
+          "id": "c",
+          "text": "Le fournisseur est l'origine du flux : une ressource de 3 776 D"
+        },
+        {
+          "id": "d",
+          "text": "Le compte 401 est débité de 3 776 D : le fournisseur est un emploi"
+        },
+        {
+          "id": "e",
+          "text": "Le montant de 601 inclut la TVA : 3 776 D"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le total débité vaut 3 200 + 576 = 3 776 D, égal au total crédité ✓. Le compte 601 est un compte de charges de la classe 6. Le fournisseur est l'origine de la valeur : une ressource, créditée de 3 776 D. En revanche 4366 est débité (TVA récupérable), et 401 est crédité : le fournisseur est une ressource, non un emploi. Et 601 porte le net commercial de 3 200 D, hors TVA.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une entreprise vend 12 sacs à 85 D et 8 portefeuilles à 40 D. La moitié est encaissée en espèces, l'autre moitié par chèque déposé en banque (aucune TVA à considérer). Quel article du journal l'enregistre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Débit Clients : 1 340 ; crédit Ventes : 1 340"
+        },
+        {
+          "id": "b",
+          "text": "Débit Caisse : 1 340 ; crédit Ventes : 1 340"
+        },
+        {
+          "id": "c",
+          "text": "Débit Ventes : 1 340 ; crédit Caisse : 670 ; crédit Banque : 670"
+        },
+        {
+          "id": "d",
+          "text": "Débit Caisse : 670 ; débit Banque : 670 ; crédit Ventes : 1 340"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Total des ventes : 12 × 85 + 8 × 40 = 1 020 + 320 = 1 340 D. Les emplois sont la caisse (670) et la banque (670), la ressource définitive est Ventes (1 340, classe 7, produit) ; le total débité égale le total crédité ✓. Débiter Clients supposerait une vente à crédit. Tout en caisse ignore le chèque. Débiter Ventes inverse les côtés.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une société reçoit deux factures d'achat de matières. La première a un net commercial de 4 500 D. La seconde porte un net à payer TTC de 3 540 D. TVA de 18 % pour les deux. Quel est le total de TVA déductible à porter au compte 4366, en D ?",
+      "answerKey": {
+        "value": 1350,
+        "unit": "D"
+      },
+      "explanation": "Première facture : 4 500 × 18 % = 810 D. Seconde facture : HT = 3 540 ÷ 1,18 = 3 000 D, TVA = 3 540 − 3 000 = 540 D. Total : 810 + 540 = 1 350 D ✓. Appliquer 18 % au TTC de la seconde facture serait l'erreur classique.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une facture d'achat a pour brut 12 000 D, remise 10 %, TVA 18 % sur le net commercial. Elle est réglée pour moitié par chèque à la réception, le reste à crédit, en un seul article au journal. Quel montant reste dû au fournisseur et est crédité au compte 401, en D ?",
+      "answerKey": {
+        "value": 6372,
+        "unit": "D"
+      },
+      "explanation": "Remise : 1 200 D, net commercial 10 800 D, TVA 10 800 × 18 % = 1 944 D, net à payer 12 744 D. La moitié, 6 372 D, est payée par chèque (crédit de la banque) ; l'autre moitié, 6 372 D, reste due au fournisseur (crédit de 401) ✓. Le total crédité est bien 12 744 D, égal au total débité 10 800 + 1 944. Si l'on passait deux articles, 401 serait crédité de 12 744 D puis débité de 6 372 D : la dette restante est la même, 6 372 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une journée, une entreprise réalise : un apport de 30 000 D déposé en banque ; un achat de matières à crédit (brut 2 000 D, remise 10 %, TVA 18 % sur le net commercial) ; une vente de 900 D encaissée en espèces. Quel est le total des montants portés au débit du journal, en D ?",
+      "answerKey": {
+        "value": 33024,
+        "unit": "D"
+      },
+      "explanation": "Apport : débit Banque 30 000 D. Achat : remise 200 D, net commercial 1 800 D, TVA 324 D, donc débit 601 de 1 800 D et débit 4366 de 324 D (net à payer 2 124 D crédité à 401). Vente : débit Caisse 900 D. Total débité : 30 000 + 1 800 + 324 + 900 = 33 024 D ✓. Contrôle par la partie double : le total crédité est 30 000 (capital) + 2 124 (fournisseurs) + 900 (ventes) = 33 024 D.",
+      "difficulty": 3
+    }
+  ]
+}
