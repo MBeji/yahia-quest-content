@@ -1,0 +1,105 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des lots",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La quincaillerie Ferchichi gère le sac de ciment au CUMP de fin de période. Le mois s'ouvre sur 120 sacs à 11 D. Deux livraisons suivent : 80 sacs à 12,5 D, puis 200 sacs à 13 D. Au fil du mois, 260 sacs sont sortis. Quel est le CUMP, en D ?",
+      "answerKey": {
+        "value": 12.3,
+        "unit": "D"
+      },
+      "explanation": "Valeur cumulée : 120 × 11 + 80 × 12,5 + 200 × 13 = 1 320 + 1 000 + 2 600 = 4 920 D, pour 400 sacs. CUMP = 4 920 ÷ 400 = 12,3 D ✓. La moyenne simple des trois prix, (11 + 12,5 + 13) ÷ 3 ≈ 12,17 D, ignore les quantités.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans son épicerie fine, Hajer valorise les bidons d'huile d'olive au PEPS. Stock de départ : 60 bidons à 90 D. Mouvements, dans l'ordre : sortie de 40 ; achat de 100 bidons à 96 D ; sortie de 80 ; achat de 50 bidons à 102 D ; sortie de 70. Quelle est la valeur totale des sorties, en D ?",
+      "answerKey": {
+        "value": 18060,
+        "unit": "D"
+      },
+      "explanation": "Sortie 1 : 40 × 90 = 3 600 D. Sortie 2 : les 20 bidons restants à 90 D (1 800 D), puis 60 à 96 D (5 760 D) : 7 560 D. Sortie 3 : les 40 bidons restants à 96 D (3 840 D), puis 30 à 102 D (3 060 D) : 6 900 D. Total : 3 600 + 7 560 + 6 900 = 18 060 D ✓. Contrôle : 20 100 D valorisés − stock final (20 × 102 = 2 040 D) = 18 060 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La librairie Sassi tient ses ramettes de papier au CUMP calculé après chaque entrée. Au départ, elle en a 150 à 6 D. Chronologie : 50 ramettes sorties ; 100 reçues à 7 D ; 120 sorties ; 120 reçues à 6,4 D. Quel est le coût unitaire du stock juste après la dernière réception, en D ?",
+      "answerKey": {
+        "value": 6.44,
+        "unit": "D"
+      },
+      "explanation": "Après la première sortie : 100 ramettes à 6 D. La réception à 7 D donne (600 + 700) ÷ 200 = 6,5 D. Après la deuxième sortie : 80 ramettes à 6,5 D, soit 520 D. La dernière réception ajoute 120 × 6,4 = 768 D : 1 288 D pour 200 ramettes. Nouveau coût : 1 288 ÷ 200 = 6,44 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le garage Bouzid valorise ses pneus au DEPS. Il détient 80 pneus à 120 D. Il reçoit 40 pneus à 130 D, en sort 70, reçoit 60 pneus à 140 D, en sort 80, reçoit 30 pneus à 125 D, puis en sort 20. Quelle est la valeur du stock final, en D ?",
+      "answerKey": {
+        "value": 4850,
+        "unit": "D"
+      },
+      "explanation": "Stock initial et entrées : 80 × 120 + 40 × 130 + 60 × 140 + 30 × 125 = 9 600 + 5 200 + 8 400 + 3 750 = 26 950 D. Sorties au DEPS : 40 × 130 + 30 × 120 = 8 800 D ; 60 × 140 + 20 × 120 = 10 800 D ; 20 × 125 = 2 500 D ; total 22 100 D. Stock final : 26 950 − 22 100 = 4 850 D ✓, soit 30 pneus à 120 D et 10 à 125 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une torréfaction achète son café à des prix qui montent : 100 kg à 20 D au départ, puis 60 kg à 26 D après une première sortie de 60 kg. Une seconde sortie de 70 kg suit. Les 130 kg sortis sont vendus 40 D le kilo. Parmi les quatre méthodes de valorisation, laquelle laisse la marge commerciale la plus élevée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le DEPS (dernier entré, premier sorti)"
+        },
+        {
+          "id": "b",
+          "text": "Le PEPS (premier entré, premier sorti)"
+        },
+        {
+          "id": "c",
+          "text": "Le CUMP de fin de période"
+        },
+        {
+          "id": "d",
+          "text": "Le CUMP recalculé après chaque entrée en stock"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ventes : 130 × 40 = 5 200 D. Les prix montent : le PEPS sort les lots anciens, les moins chers, et ses sorties valent 1 200 + 1 580 = 2 780 D, soit une marge de 2 420 D. Les autres donnent 2 348 D (CUMP après chaque entrée, sorties de 2 852 D), 2 307,50 D (CUMP de fin de période, 130 × 22,25 = 2 892,50 D) et 2 240 D (DEPS, sorties de 2 960 D).",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Les prix d'achat baissent tout au long de la période. Coche toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le PEPS valorise les sorties aux coûts les plus hauts"
+        },
+        {
+          "id": "b",
+          "text": "Le CUMP de fin de période donne le résultat le plus élevé des quatre méthodes"
+        },
+        {
+          "id": "c",
+          "text": "Le stock final en PEPS est valorisé aux coûts les plus bas"
+        },
+        {
+          "id": "d",
+          "text": "Le stock final en DEPS est valorisé aux coûts les plus anciens, donc les plus hauts"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "En baisse, les lots anciens sont les plus chers : le PEPS les sort en premier (sorties hautes) et garde les lots récents, les moins chers, en stock. Le DEPS garde au contraire les lots anciens, les plus chers. Le PEPS donne donc le résultat le plus faible ; le CUMP compense les variations et se situe entre les deux, il n'est pas le plus élevé.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du grand messager",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La pâtisserie « Le Sablé d'Or » a collecté 60 informations ce mois-ci. Trente-cinq pour cent sont externes, et parmi elles les deux septièmes viennent des médias. Combien d'informations viennent des médias ?",
+      "answerKey": {
+        "value": 6,
+        "unit": "informations"
+      },
+      "explanation": "Externes : 60 × 35 % = 21. Médias : 21 × 2/7 = 6 ✓. Prendre les deux septièmes des 60 informations donnerait environ 17, un nombre non entier : on oublierait de retenir d'abord les informations externes.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "À la pâtisserie « Le Sablé d'Or », la gérante dispose de 52 semaines de ventes saisies dans un tableur et veut en tirer la tendance de l'année avant d'en parler à son associé. Quel outil d'obtention de l'information utilise-t-elle, et à quelle étape ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les statistiques, au moment du traitement des données"
+        },
+        {
+          "id": "b",
+          "text": "La comptabilité, au moment de la collecte"
+        },
+        {
+          "id": "c",
+          "text": "Les mathématiques financières, au moment de la saisie des chiffres"
+        },
+        {
+          "id": "d",
+          "text": "L'informatique, au moment de la diffusion"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Résumer une série de chiffres, moyenne ou évolution, relève des statistiques. Comme elles donnent un sens à des données déjà saisies, elles interviennent au traitement. La comptabilité sert de preuve, les mathématiques financières mesurent un emprunt ou un placement, et la diffusion vient après le calcul, pas avant.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Au « Sablé d'Or », deux informations arrivent cette semaine : un fournisseur laisse un message vocal annonçant une hausse du prix du beurre, et la vendeuse remet à la gérante un tableau écrit des ventes de la semaine. Quelles affirmations sont justes ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le message du fournisseur est de source externe et de nature orale"
+        },
+        {
+          "id": "b",
+          "text": "Le tableau des ventes est de source interne et de nature écrite"
+        },
+        {
+          "id": "c",
+          "text": "Le message du fournisseur est de domaine comptable"
+        },
+        {
+          "id": "d",
+          "text": "Le tableau des ventes est de source externe, car il concerne des clients"
+        },
+        {
+          "id": "e",
+          "text": "Le tableau des ventes est de domaine commercial"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Le message vient d'un fournisseur (source externe) et il est dit de vive voix (nature orale). Le tableau est établi par l'entreprise (source interne), il est écrit, et il porte sur les ventes : domaine commercial. Le message parle d'un prix d'achat, pas d'écritures comptables, et un document qui concerne des clients n'est pas pour autant externe.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "À la pâtisserie « Le Sablé d'Or », la gérante affiche chaque matin sur la porte du laboratoire les 12 pages de son tableur ; les pâtissiers ne les lisent plus. Quelles mesures vont dans le bon sens ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Afficher seulement la liste des gâteaux à produire dans la journée"
+        },
+        {
+          "id": "b",
+          "text": "Envoyer à chaque service l'ensemble des relevés, pour que personne ne manque d'information"
+        },
+        {
+          "id": "c",
+          "text": "Ajouter au tableau affiché le détail des ventes de chaque jour"
+        },
+        {
+          "id": "d",
+          "text": "Remplacer l'affichage par un rapport comptable détaillé remis à chaque pâtissier"
+        },
+        {
+          "id": "e",
+          "text": "Présenter la liste sur un support lisible depuis le laboratoire"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "e"
+        ]
+      },
+      "explanation": "Une information maîtrisée est en bonne quantité et sur un support adapté. Réduire l'affichage à la liste utile et la présenter sur un support lisible depuis le laboratoire traitent la surinformation. Envoyer tous les relevés à tous l'aggrave, ajouter le détail des ventes de chaque jour alourdit encore l'affichage, et un rapport comptable détaillé ne convient pas au niveau d'utilisation des pâtissiers.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un chauffeur de livraison note des horaires ; remettez dans l'ordre le parcours de cette information jusqu'à la décision.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le logiciel compare les heures aux délais promis et calcule le taux de retards"
+        },
+        {
+          "id": "b",
+          "text": "Le chauffeur note l'heure et l'état du colis à la porte du client"
+        },
+        {
+          "id": "c",
+          "text": "Le responsable reçoit le tableau des retards pour décider d'une mesure"
+        },
+        {
+          "id": "d",
+          "text": "Le chauffeur reporte l'heure et l'état du colis sur la feuille de route en fin de tournée"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Le chauffeur recueille l'information sur place, puis la reporte sur la feuille de route. Le logiciel la traite en calculant le taux de retards, et le responsable la reçoit en dernier pour décider. L'ordre est celui des quatre étapes : collecte, saisie, traitement, diffusion.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un directeur affirme : « Nous avons rédigé un manuel de procédures, donc notre système d'information est en place. » Que répondre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est exact : des procédures écrites font circuler l'information entre les services"
+        },
+        {
+          "id": "b",
+          "text": "C'est incomplet : il manque les hommes formés et les machines de traitement"
+        },
+        {
+          "id": "c",
+          "text": "C'est incomplet : il manque les sources externes"
+        },
+        {
+          "id": "d",
+          "text": "C'est exact, à condition d'ajouter un classeur dans chaque service"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le système d'information associe trois ingrédients : des hommes, des machines et des procédures. Le manuel ne fournit que les procédures. Sans personnes formées pour saisir et lire, et sans machines pour traiter, il ne produit pas de flux ordonnés. Les sources externes ne sont pas un ingrédient du système, et un classeur n'y change rien.",
+      "difficulty": 3
+    }
+  ]
+}

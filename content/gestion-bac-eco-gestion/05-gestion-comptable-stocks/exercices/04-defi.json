@@ -1,0 +1,84 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du comptable des lots",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Chez Dhahbi Parfums, le flacon d'eau de toilette est suivi au CUMP de fin de période : 250 flacons à 18 D en stock au premier jour, puis 150 flacons achetés à 22 D (le transporteur a facturé 300 D pour cette livraison), puis 100 à 20 D. Il est sorti 380 flacons sur le mois. Quelle est la valeur du stock final, en D ?",
+      "answerKey": {
+        "value": 2424,
+        "unit": "D"
+      },
+      "explanation": "Le transport s'ajoute au coût d'achat de la 2e livraison : 150 × 22 + 300 = 3 600 D. Valeur cumulée : 250 × 18 + 3 600 + 100 × 20 = 4 500 + 3 600 + 2 000 = 10 100 D, pour 500 flacons. CUMP = 10 100 ÷ 500 = 20,2 D. Stock final : 500 − 380 = 120 flacons × 20,2 = 2 424 D ✓. Contrôle : 10 100 − 380 × 20,2 = 10 100 − 7 676 = 2 424 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La menuiserie Karray utilise le PEPS pour ses planches de chêne. Stock initial : 90 planches à 15 D. Ensuite : 30 planches sortent ; 120 planches arrivent à 14 D ; 150 sortent ; 60 arrivent à 16 D ; 40 sortent. Quelle est la valeur du stock juste après la 2e sortie, en D ?",
+      "answerKey": {
+        "value": 420,
+        "unit": "D"
+      },
+      "explanation": "Sortie 1 : 30 × 15 = 450 D ; il reste 60 planches à 15 D. Après l'arrivée de 120 planches à 14 D, la sortie 2 prend 60 planches à 15 D (900 D), puis 90 à 14 D (1 260 D) : 2 160 D. Il reste 30 planches à 14 D : 30 × 14 = 420 D ✓. Contrôle : 90 × 15 + 120 × 14 = 3 030 D valorisés − sorties 450 + 2 160 = 2 610 D = 420 D. La 2e arrivée et la 3e sortie ne comptent pas ici.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La coopérative Ghannouchi gère l'orge en sacs, au DEPS. Elle dispose de 200 sacs à 25 D. Elle reçoit 150 sacs à 27 D, en vend 100, reçoit 250 sacs à 24 D, puis en vend 300. Quelle est la valeur de cette dernière sortie de 300 sacs, en D ?",
+      "answerKey": {
+        "value": 7350,
+        "unit": "D"
+      },
+      "explanation": "La première sortie de 100 sacs a pris sur le lot à 27 D, qui en garde 50. À la seconde sortie, le lot le plus récent (250 sacs à 24 D) part d'abord : 250 × 24 = 6 000 D. Il reste 50 sacs à prendre sur le lot à 27 D : 50 × 27 = 1 350 D. Valeur : 6 000 + 1 350 = 7 350 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une parapharmacie suit son gel hydroalcoolique : 100 boîtes à 8 D au départ ; réception de 200 boîtes à 10 D ; sortie de 150 ; réception de 100 boîtes à 9 D ; sortie de 120. Toutes les boîtes sorties sont vendues. De combien la marge en PEPS dépasse-t-elle la marge en DEPS, en D ?",
+      "answerKey": {
+        "value": 100,
+        "unit": "D"
+      },
+      "explanation": "Les ventes sont identiques : l'écart de marge est l'écart de valeur des sorties. PEPS : 100 × 8 + 50 × 10 = 1 300 D, puis 120 × 10 = 1 200 D ; total 2 500 D. DEPS : 150 × 10 = 1 500 D, puis 100 × 9 + 20 × 10 = 1 100 D ; total 2 600 D. Écart : 2 600 − 2 500 = 100 D ✓, en faveur du PEPS.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un dépôt de farine démarre le mois avec un stock initial de q sacs à 20 D le sac. Il reçoit 300 sacs à 26 D le sac. Le CUMP de fin de période est de 23 D. Quel était, en sacs, le stock initial ?",
+      "answerKey": {
+        "value": 300,
+        "unit": "sacs"
+      },
+      "explanation": "Le CUMP vaut (20q + 300 × 26) ÷ (q + 300) = 23. On obtient 20q + 7 800 = 23q + 6 900, donc 3q = 900 et q = 300 sacs ✓. Contrôle : (6 000 + 7 800) ÷ 600 = 23 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La Savonnerie Nour suit un article, le carton de savon : stock initial 300 cartons à 30 D ; sortie de 100 ; entrée de 400 cartons à 28 D ; sortie de 500 ; entrée de 300 cartons à 33 D ; sortie de 300 (dans cet ordre). Un employé a valorisé la sortie de 500 cartons à 15 000 D, selon le PEPS. Quelle est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a appliqué le DEPS aux dernières entrées"
+        },
+        {
+          "id": "b",
+          "text": "Il a tout valorisé à 30 D, sans changer de lot"
+        },
+        {
+          "id": "c",
+          "text": "Il a employé le CUMP de fin de période, soit 30,1 D"
+        },
+        {
+          "id": "d",
+          "text": "Il a pris le coût de la dernière entrée avant la sortie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "15 000 D = 500 × 30 D : l'employé a valorisé les 500 cartons au prix du lot le plus ancien, alors que ce lot n'en contient que 200 ; la valeur exacte est 200 × 30 + 300 × 28 = 14 400 D. Le DEPS aurait donné 14 200 D, le CUMP 500 × 30,1 = 15 050 D, et le coût de la dernière entrée 500 × 28 = 14 000 D.",
+      "difficulty": 3
+    }
+  ]
+}

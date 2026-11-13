@@ -1,0 +1,104 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le contrôleur de stock",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La menuiserie Ben Salah commence l'exercice avec 25 000 D de matières en stock et le termine avec 35 000 D ; elle a acheté pour 250 000 D de bois au cours de l'année. Combien de fois son stock s'est-il renouvelé sur l'année ?",
+      "answerKey": {
+        "value": 8,
+        "unit": "fois"
+      },
+      "explanation": "Stock moyen = (25 000 + 35 000) ÷ 2 = 30 000 D. Achats consommés = 250 000 + 25 000 − 35 000 = 240 000 D. Coefficient = 240 000 ÷ 30 000 = 8 ✓. Diviser les achats, 250 000 D, par le stock moyen donnerait environ 8,33, un coefficient faux.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'actif d'une entreprise comprend 70 000 D d'immobilisations, 45 000 D de stocks, 25 000 D de créances clients et 10 000 D de disponibilités. Quelle est la part des stocks dans l'actif, en % ?",
+      "answerKey": {
+        "value": 30,
+        "unit": "%"
+      },
+      "explanation": "Total des actifs = 70 000 + 45 000 + 25 000 + 10 000 = 150 000 D, stocks compris. Part des stocks = 45 000 ÷ 150 000 = 0,30, soit 30 % ✓. Oublier les stocks dans le total (105 000 D) donnerait un taux de 42,9 %, faux.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un grossiste a un coefficient de rotation de 8 et un stock moyen de 45 000 D. Son stock initial est de 40 000 D et son stock final de 50 000 D. Quel est le montant de ses achats de l'année, en D ?",
+      "answerKey": {
+        "value": 370000,
+        "unit": "D"
+      },
+      "explanation": "Achats consommés = coefficient × stock moyen = 8 × 45 000 = 360 000 D. Comme achats consommés = achats + stock initial − stock final, achats = 360 000 − 40 000 + 50 000 = 370 000 D ✓. Le stock a augmenté de 10 000 D : il a fallu acheter 10 000 D de plus que ce qui est sorti.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une entreprise a un coefficient de rotation de 5 en N-1 et le secteur est à 5. En N, son stock moyen passe de 80 000 D à 100 000 D et ses achats consommés de 400 000 D à 450 000 D. Que conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La rotation s'accélère, de 5 à 5,6, et dépasse celle du secteur"
+        },
+        {
+          "id": "b",
+          "text": "La rotation ralentit, de 5 à 4,5, et passe sous celle du secteur"
+        },
+        {
+          "id": "c",
+          "text": "La rotation ralentit, de 5 à 4,5, car l'entreprise vend moins qu'en N-1"
+        },
+        {
+          "id": "d",
+          "text": "La rotation reste stable à 5, car achats consommés et stock moyen augmentent tous deux"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En N, le coefficient est 450 000 ÷ 100 000 = 4,5, contre 400 000 ÷ 80 000 = 5 en N-1. La rotation ralentit et passe sous le secteur (5). Le chiffre 5,6 viendrait du mélange des deux années, 450 000 ÷ 80 000 ; et la hausse simultanée des deux montants ne garantit pas un coefficient stable, car le stock moyen a augmenté plus vite (+25 %) que les achats consommés (+12,5 %). L'entreprise ne vend pas moins : ses achats consommés montent de 12,5 % ; c'est le stock moyen qui grossit plus vite.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise consomme régulièrement 14 400 litres de produit par an et veut limiter son stock moyen à 600 litres. Combien de commandes égales doit-elle passer par an ?",
+      "answerKey": {
+        "value": 12,
+        "unit": "commandes"
+      },
+      "explanation": "Stock moyen = Q ÷ (2 × N), donc N = Q ÷ (2 × stock moyen) = 14 400 ÷ (2 × 600) = 14 400 ÷ 1 200 = 12 commandes ✓. Vérification : 12 commandes de 1 200 litres, stock moyen 1 200 ÷ 2 = 600 litres.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Le stock initial, le stock final et le total des actifs d'une entreprise restent inchangés, mais ses ventes, mesurées en achats consommés, doublent. Coche toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le coefficient de rotation double"
+        },
+        {
+          "id": "b",
+          "text": "La durée du stockage est divisée par deux"
+        },
+        {
+          "id": "c",
+          "text": "La part des stocks dans l'actif double"
+        },
+        {
+          "id": "d",
+          "text": "Le coût de possession du stock double"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Le coefficient de rotation est le rapport entre achats consommés et stock moyen : le numérateur double, le dénominateur ne bouge pas, donc le coefficient double. La durée, 360 ÷ r, est alors divisée par deux. La part dans l'actif ne dépend pas des ventes mais du stock et du total des actifs, que l'énoncé laisse inchangés. Enfin, le coût de possession dépend du stock détenu, pas des ventes : le stock moyen n'ayant pas changé, ce coût ne double pas.",
+      "difficulty": 3
+    }
+  ]
+}

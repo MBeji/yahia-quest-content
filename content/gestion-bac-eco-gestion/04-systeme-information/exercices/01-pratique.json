@@ -1,0 +1,184 @@
+{
+  "title": "⭐ Exercice : Premières armes — information, étapes et sources",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle phrase décrit le mieux un système d'information ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un logiciel de gestion installé sur tous les ordinateurs du service comptable"
+        },
+        {
+          "id": "b",
+          "text": "Des liens entre hommes, machines et procédures qui échangent l'information"
+        },
+        {
+          "id": "c",
+          "text": "Le grand classeur où l'entreprise garde tous ses documents anciens"
+        },
+        {
+          "id": "d",
+          "text": "Le service qui recueille et classe le courrier de l'entreprise"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le système d'information associe des hommes, des machines et des procédures pour produire des flux ordonnés d'informations qui servent de base aux décisions. Un logiciel n'en est qu'un élément, un classeur n'en est qu'un support, et un service du courrier n'en est qu'un rouage.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associez chaque étape de gestion de l'information à sa description.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Collecte"
+        },
+        {
+          "id": "l2",
+          "text": "Saisie"
+        },
+        {
+          "id": "l3",
+          "text": "Traitement"
+        },
+        {
+          "id": "l4",
+          "text": "Diffusion"
+        },
+        {
+          "id": "r1",
+          "text": "La classer, la calculer, lui donner un sens"
+        },
+        {
+          "id": "r2",
+          "text": "Recueillir l'information auprès de sa source"
+        },
+        {
+          "id": "r3",
+          "text": "La transmettre à ceux qui en ont besoin"
+        },
+        {
+          "id": "r4",
+          "text": "L'enregistrer sur un support"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l4",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "La collecte recueille, la saisie enregistre, le traitement donne un sens, la diffusion transmet. Les quatre étapes se suivent dans cet ordre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un club de sport envoie à des prospects un bulletin d'inscription avec un coupon « oui / non ». L'un d'eux le renvoie avec le seul mot « oui », sans nom ni formule choisie. Que peut-on dire de cette information ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est exploitable, puisque le prospect accepte bien la proposition"
+        },
+        {
+          "id": "b",
+          "text": "Elle est exploitable, car elle vient d'un prospect extérieur au club"
+        },
+        {
+          "id": "c",
+          "text": "Elle est inexploitable, car elle arrive par courrier et non par téléphone"
+        },
+        {
+          "id": "d",
+          "text": "Elle est inexploitable, car on ignore qui répond et sur quelle formule"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le coupon dit qu'un prospect est intéressé, mais le club ignore qui il est et quelle formule il veut : il ne peut ni l'inscrire ni le relancer. Une information est exploitable quand on sait de quoi elle parle et de qui elle vient ; le mode d'envoi ou l'origine extérieure n'y changent rien.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Une entreprise reçoit la facture d'un fournisseur ; remettez dans l'ordre le parcours de cette information.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La comptable enregistre la facture dans le logiciel"
+        },
+        {
+          "id": "b",
+          "text": "Le résultat du rapprochement est transmis au trésorier"
+        },
+        {
+          "id": "c",
+          "text": "L'entreprise reçoit la facture envoyée par le fournisseur"
+        },
+        {
+          "id": "d",
+          "text": "Le logiciel rapproche la facture du bon de commande"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "a",
+          "d",
+          "b"
+        ]
+      },
+      "explanation": "La facture est d'abord reçue (collecte), puis enregistrée (saisie). Le logiciel la rapproche ensuite du bon de commande (traitement), et seulement après, le résultat part chez le trésorier (diffusion) : on ne transmet un résultat qu'une fois qu'il existe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le bilan social, établi chaque année par l'entreprise sur la situation de ses salariés, relève de quelle source, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une source externe, car il concerne des personnes"
+        },
+        {
+          "id": "b",
+          "text": "Une source interne, car l'entreprise elle-même l'établit"
+        },
+        {
+          "id": "c",
+          "text": "Une source externe, car il est diffusé tous les ans"
+        },
+        {
+          "id": "d",
+          "text": "Une source interne, car il est rangé dans le classeur du service"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le bilan social est établi par l'entreprise elle-même : c'est une information sociale des salariés, donc une source interne. Le fait qu'il concerne des personnes, qu'il soit diffusé chaque année ou qu'il soit rangé dans un classeur ne détermine pas la source.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les ventes de 4 semaines sont 120, 200, 160 et 180 boîtes. Le traitement calcule la moyenne par semaine avant de la diffuser au directeur. Quelle moyenne diffuse-t-il, en boîtes ?",
+      "answerKey": {
+        "value": 165,
+        "unit": "boîtes"
+      },
+      "explanation": "Le traitement des données utilise ici un outil statistique, la moyenne. La somme est 120 + 200 + 160 + 180 = 660 boîtes ; divisée par 4 semaines, elle donne 165 ✓. S'arrêter à la somme donnerait 660 : la moyenne n'aurait pas été calculée.",
+      "difficulty": 2
+    }
+  ]
+}

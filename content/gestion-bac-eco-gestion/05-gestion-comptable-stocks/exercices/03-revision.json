@@ -1,0 +1,187 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les stocks de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur à sa formule.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Coût d'achat d'un lot"
+        },
+        {
+          "id": "l2",
+          "text": "CUMP de fin de période"
+        },
+        {
+          "id": "l3",
+          "text": "CUMP après une entrée"
+        },
+        {
+          "id": "l4",
+          "text": "Stock final en valeur"
+        },
+        {
+          "id": "r1",
+          "text": "Prix d'achat + frais externes + frais internes"
+        },
+        {
+          "id": "r2",
+          "text": "(Stock initial + entrées) en valeur ÷ (stock initial + entrées) en quantité"
+        },
+        {
+          "id": "r3",
+          "text": "Valeur du stock existant après l'entrée ÷ sa quantité"
+        },
+        {
+          "id": "r4",
+          "text": "Stock initial + entrées − sorties, en valeur"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le coût d'achat additionne prix et frais. Le CUMP de fin de période cumule tout le mois ; le CUMP après entrée ne porte que sur le stock existant à cet instant. Le stock final en valeur se contrôle par stock initial plus entrées moins sorties.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Coche tout ce qui entre dans le coût d'achat d'un lot de marchandises.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le prix figurant sur la facture du fournisseur"
+        },
+        {
+          "id": "b",
+          "text": "Le transport payé pour acheminer le lot"
+        },
+        {
+          "id": "c",
+          "text": "Les emballages non récupérables"
+        },
+        {
+          "id": "d",
+          "text": "Le transport payé pour livrer les clients"
+        },
+        {
+          "id": "e",
+          "text": "Les frais de réception supportés par le personnel du magasin"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Le coût d'achat réunit le prix d'achat, les frais externes (transport, emballages non récupérables) et les frais internes (réception). Le transport de livraison aux clients est un frais de vente, pas un frais d'achat.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une librairie démarre avec 200 cahiers à 12 D. Elle reçoit 300 cahiers à 14 D, puis 100 cahiers à 18 D, et elle vend 450 cahiers dans le mois. Selon le CUMP de fin de période, quelle est la valeur du stock final, en D ?",
+      "answerKey": {
+        "value": 2100,
+        "unit": "D"
+      },
+      "explanation": "Valeur cumulée : 2 400 + 4 200 + 1 800 = 8 400 D, pour 600 cahiers : CUMP = 14 D. Stock final : 600 − 450 = 150 cahiers × 14 = 2 100 D ✓. Contrôle : 8 400 − 450 × 14 = 8 400 − 6 300 = 2 100 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de valorisation d'une sortie par le PEPS.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additionner les prélèvements pour obtenir la valeur de la sortie"
+        },
+        {
+          "id": "b",
+          "text": "Repérer le lot le plus ancien encore en stock"
+        },
+        {
+          "id": "c",
+          "text": "Une fois la sortie entièrement couverte, valoriser chaque prélèvement à son coût unitaire"
+        },
+        {
+          "id": "d",
+          "text": "Prélever sur ce lot, sans dépasser sa quantité disponible"
+        },
+        {
+          "id": "e",
+          "text": "Passer au lot suivant, plus récent, si la sortie n'est pas couverte"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "e",
+          "c",
+          "a"
+        ]
+      },
+      "explanation": "On identifie d'abord le lot à entamer, puis on le prélève ; si besoin, on enchaîne sur le lot suivant. La valorisation de chaque prélèvement précède la somme finale. La valorisation se fait quand tous les lots nécessaires ont été prélevés.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi le système comptable déconseille-t-il le DEPS ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce qu'il empêche de valoriser le stock restant en fin de période comptable"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'il oblige à attendre la clôture avant de valoriser les sorties"
+        },
+        {
+          "id": "c",
+          "text": "Parce qu'il valorise les sorties aux coûts récents et peut gonfler les coûts"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'il sort d'abord les lots anciens et sous-estime les coûts de revient"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le DEPS valorise les sorties aux coûts des entrées les plus récentes : les coûts de revient peuvent s'en trouver gonflés. Il valorise bien le stock restant, il ne se calcule pas à la clôture (c'est le CUMP de fin de période), et ce sont les lots récents, non anciens, qu'il sort.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une boutique a 50 articles à 20 D en stock, puis reçoit 100 articles à 24 D. Elle en vend 120 à 30 D l'un, servis selon le DEPS. Quelle est sa marge commerciale globale, en D ?",
+      "answerKey": {
+        "value": 800,
+        "unit": "D"
+      },
+      "explanation": "Ventes : 120 × 30 = 3 600 D. Sorties en DEPS : 100 × 24 + 20 × 20 = 2 400 + 400 = 2 800 D. Marge = 3 600 − 2 800 = 800 D ✓.",
+      "difficulty": 2
+    }
+  ]
+}
