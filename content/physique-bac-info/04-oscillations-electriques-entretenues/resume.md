@@ -1,0 +1,9 @@
+# 📜 Résumé : Oscillations électriques entretenues
+
+- **Principe d'entretien** : un dipôle D en série, de tension u = −R·i, compense la chute u_R = R·i de la résistance totale R ; c'est un dipôle à résistance négative (−R), qui apporte de l'énergie. Un dipôle u = k·i a une « résistance » k (en Ω), négative si k < 0.
+- **Dipôle à A.O.** : A.O. idéal en régime linéaire (ε = 0, i⁺ = i⁻ = 0), R₁ de E⁻ à S, R₂ de S à D (relié à E⁺), R′ de D à M. Mailles et nœuds donnent u = −(R₁/R₂)·R′·i, soit **u = −R′·i** pour R₁ = R₂. Mesure de R′ avec un générateur continu E : R′ = R − E/I.
+- **Caractéristique en N** : segment central de pente p = −R′/R (u′ = R·i ; pour R fixée, p ne dépend que de R′), d'où k = p·R = −R′ ; pente à lire avec les sensibilités des deux voies. Hors du segment, l'A.O. sature ; le domaine linéaire est d'autant plus étroit que R′ ou R₁ = R₂ est grande.
+- **Entretien d'un RLC série** : R = R₀ + r. R′ < R : pas d'oscillations entretenues ; R′ un peu supérieure à R : amorçage puis oscillations quasi-sinusoïdales de période T = T₀ = 2π√(LC) ; plus R′ est grande, plus l'amplitude l'est ; R′ trop grande : oscillations distordues et écrêtées (saturation).
+- **Équation et bilan** : q/C + L·di/dt + R_t·i = 0 avec R_t = R₀ + r − R′, et dE/dt = −R_t·i² = −(R₀ + r)·i² + R′·i². R′ < R : E diminue ; R′ = R : E constante, fréquence N₀ = 1/(2π√(LC)) ; R′ > R : E augmente pendant l'amorçage, puis l'amplitude se stabilise (dans certaines limites, d'autant plus grande que R′ est grande) ; avec u = k·i, R_t = R₀ + r + k.
+- **Exploiter les mesures** : T et U_m en divisions × sensibilités ; L = T²/(4π²·C) ; I_m = (2π/T)·C·U_m ; E = ½·C·U_m² = ½·L·I_m² ; à la limite d'entretien R′ = R₀ + r.
+- **Générateur non autonome** : l'énergie apportée par le dipôle vient de l'alimentation de l'A.O., en bouffées, et compense l'effet Joule ; elle ne fixe pas la fréquence, qui reste la fréquence propre (comme la lamelle d'une montre à quartz).

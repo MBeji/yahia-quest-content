@@ -1,0 +1,152 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Généralités sur les filtres",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "À une fréquence donnée, le rapport U_Sm/U_Em d'un filtre s'appelle :",
+      "options": [
+        {
+          "id": "a",
+          "text": "la transmittance T"
+        },
+        {
+          "id": "b",
+          "text": "le gain G en décibels"
+        },
+        {
+          "id": "c",
+          "text": "la bande passante"
+        },
+        {
+          "id": "d",
+          "text": "la sélectivité"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le rapport des amplitudes de sortie et d'entrée, sans unité, est la transmittance T, aussi appelée fonction de transfert ✓. Le gain est 20 log T et s'exprime en dB ; la bande passante est un intervalle de fréquences ; la sélectivité qualifie l'étroitesse de cet intervalle.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À fréquence fixée, on mesure :\nU_Em = 2,0 V puis U_Sm = 3,0 V\nU_Em = 4,0 V puis U_Sm = 5,0 V\nU_Em = 6,0 V puis U_Sm = 7,0 V\nQuelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T augmente avec U_Em : le quadripôle n'est pas linéaire"
+        },
+        {
+          "id": "b",
+          "text": "T ≈ 1,3 en moyenne : le quadripôle est linéaire"
+        },
+        {
+          "id": "c",
+          "text": "T n'est pas constant : le quadripôle n'est pas linéaire"
+        },
+        {
+          "id": "d",
+          "text": "T = 1,0 car l'écart reste de 1 V : le quadripôle est linéaire"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les rapports U_Sm/U_Em valent 3,0/2,0 = 1,5 ; 5,0/4,0 = 1,25 et 7,0/6,0 ≈ 1,17 : ils ne sont pas constants (1,5 → 1,25 → 1,17 : T diminue), donc U_Sm n'est pas proportionnelle à U_Em et le quadripôle n'est pas linéaire à cette fréquence ✓. Dire que T augmente lit le tableau à l'envers ; prendre la moyenne (≈ 1,3) suppose la constance qu'on cherche à vérifier ; T = 1,0 confond écart constant (1 V) et rapport constant.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Deux voltmètres mesurent à la sortie et à l'entrée d'un filtre U_S = 0,45 V et U_E = 1,50 V (valeurs efficaces). Calculer son gain, en dB (log 3 = 0,477).",
+      "answerKey": {
+        "value": -10.5,
+        "tolerance": 0.1,
+        "unit": "dB"
+      },
+      "explanation": "T = U_S/U_E = 0,45/1,50 = 0,30, puis G = 20 log 0,30 = 20 × (0,477 − 1) ≈ −10,5 dB ✓ : négatif car le signal est atténué (T < 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe (C_G) ci-dessous est celle d'un filtre. Quelle est sa transmittance maximale T₀ ? (log 8 = 0,90)\n<svg viewBox=\"0 0 340 214\"><title>Courbe de réponse G = h(N) d'un filtre, de 100 Hz à 2000 Hz, avec un quadrillage tous les 250 Hz et tous les 2 dB</title><line x1=\"85.0\" y1=\"22.0\" x2=\"85.0\" y2=\"176.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"118.0\" y1=\"22.0\" x2=\"118.0\" y2=\"176.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"151.0\" y1=\"22.0\" x2=\"151.0\" y2=\"176.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184.0\" y1=\"22.0\" x2=\"184.0\" y2=\"176.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"217.0\" y1=\"22.0\" x2=\"217.0\" y2=\"176.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"250.0\" y1=\"22.0\" x2=\"250.0\" y2=\"176.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"283.0\" y1=\"22.0\" x2=\"283.0\" y2=\"176.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"316.0\" y1=\"22.0\" x2=\"316.0\" y2=\"176.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"176.0\" x2=\"316.0\" y2=\"176.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"166.4\" x2=\"316.0\" y2=\"166.4\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"156.8\" x2=\"316.0\" y2=\"156.8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"147.1\" x2=\"316.0\" y2=\"147.1\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"137.5\" x2=\"316.0\" y2=\"137.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"127.9\" x2=\"316.0\" y2=\"127.9\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"118.2\" x2=\"316.0\" y2=\"118.2\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"108.6\" x2=\"316.0\" y2=\"108.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"99.0\" x2=\"316.0\" y2=\"99.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"89.4\" x2=\"316.0\" y2=\"89.4\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"79.8\" x2=\"316.0\" y2=\"79.8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"70.1\" x2=\"316.0\" y2=\"70.1\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"60.5\" x2=\"316.0\" y2=\"60.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"50.9\" x2=\"316.0\" y2=\"50.9\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"41.2\" x2=\"316.0\" y2=\"41.2\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"31.6\" x2=\"316.0\" y2=\"31.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"22.0\" x2=\"316.0\" y2=\"22.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"180.0\" x2=\"52.0\" y2=\"16.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52.0\" y1=\"176.0\" x2=\"322.0\" y2=\"176.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"326.0,176.0 319.0,179.5 319.0,172.5\" fill=\"#0f172a\"/><polygon points=\"52.0,12.0 55.5,19.0 48.5,19.0\" fill=\"#0f172a\"/><line x1=\"52.0\" y1=\"173.0\" x2=\"52.0\" y2=\"179.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"52.0\" y=\"190.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"118.0\" y1=\"173.0\" x2=\"118.0\" y2=\"179.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"118.0\" y=\"190.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">500</text><line x1=\"184.0\" y1=\"173.0\" x2=\"184.0\" y2=\"179.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"184.0\" y=\"190.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1000</text><line x1=\"250.0\" y1=\"173.0\" x2=\"250.0\" y2=\"179.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"250.0\" y=\"190.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1500</text><line x1=\"316.0\" y1=\"173.0\" x2=\"316.0\" y2=\"179.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"316.0\" y=\"190.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2000</text><line x1=\"49.0\" y1=\"176.0\" x2=\"55.0\" y2=\"176.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"46.0\" y=\"179.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−12</text><line x1=\"49.0\" y1=\"156.8\" x2=\"55.0\" y2=\"156.8\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"46.0\" y=\"160.2\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−8</text><line x1=\"49.0\" y1=\"137.5\" x2=\"55.0\" y2=\"137.5\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"46.0\" y=\"141.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−4</text><line x1=\"49.0\" y1=\"118.2\" x2=\"55.0\" y2=\"118.2\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"46.0\" y=\"121.8\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"49.0\" y1=\"99.0\" x2=\"55.0\" y2=\"99.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"46.0\" y=\"102.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"49.0\" y1=\"79.8\" x2=\"55.0\" y2=\"79.8\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"46.0\" y=\"83.2\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><line x1=\"49.0\" y1=\"60.5\" x2=\"55.0\" y2=\"60.5\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"46.0\" y=\"64.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text><line x1=\"49.0\" y1=\"41.2\" x2=\"55.0\" y2=\"41.2\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"46.0\" y=\"44.8\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">16</text><line x1=\"49.0\" y1=\"22.0\" x2=\"55.0\" y2=\"22.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"46.0\" y=\"25.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"328.0\" y=\"202.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">N (Hz)</text><text x=\"56.0\" y=\"10.0\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">G (dB)</text><polyline points=\"65.2,160.6 65.8,158.6 66.5,156.7 67.1,154.9 67.7,153.1 68.3,151.5 69.0,149.9 69.6,148.3 70.2,146.8 70.8,145.3 71.5,143.9 72.1,142.5 72.7,141.2 73.4,139.9 74.0,138.6 74.6,137.4 75.2,136.1 75.9,135.0 76.5,133.8 77.1,132.7 77.7,131.6 78.4,130.5 79.0,129.5 79.6,128.4 80.2,127.4 80.9,126.4 81.5,125.4 82.1,124.5 82.8,123.5 83.4,122.6 84.0,121.7 84.6,120.8 85.3,119.9 85.9,119.0 86.5,118.1 87.1,117.3 87.8,116.5 88.4,115.6 89.0,114.8 89.7,114.0 90.3,113.2 90.9,112.4 91.5,111.6 92.2,110.9 92.8,110.1 93.4,109.3 94.0,108.6 94.7,107.8 95.3,107.1 95.9,106.4 96.6,105.7 97.2,104.9 97.8,104.2 98.4,103.5 99.1,102.8 99.7,102.1 100.3,101.5 100.9,100.8 101.6,100.1 102.2,99.4 102.8,98.7 103.4,98.1 104.1,97.4 104.7,96.8 105.3,96.1 106.0,95.5 106.6,94.8 107.2,94.2 107.8,93.5 108.5,92.9 109.1,92.3 109.7,91.6 110.3,91.0 111.0,90.4 111.6,89.7 112.2,89.1 112.9,88.5 113.5,87.9 114.1,87.3 114.7,86.6 115.4,86.0 116.0,85.4 116.6,84.8 117.2,84.2 117.9,83.6 118.5,83.0 119.1,82.4 119.7,81.8 120.4,81.2 121.0,80.6 121.6,80.0 122.3,79.4 122.9,78.8 123.5,78.2 124.1,77.6 124.8,77.0 125.4,76.4 126.0,75.8 126.6,75.2 127.3,74.6 127.9,74.0 128.5,73.4 129.2,72.8 129.8,72.2 130.4,71.6 131.0,71.0 131.7,70.4 132.3,69.8 132.9,69.2 133.5,68.6 134.2,68.0 134.8,67.4 135.4,66.8 136.1,66.2 136.7,65.6 137.3,65.0 137.9,64.4 138.6,63.8 139.2,63.2 139.8,62.6 140.4,62.0 141.1,61.4 141.7,60.8 142.3,60.2 142.9,59.6 143.6,59.0 144.2,58.4 144.8,57.8 145.5,57.2 146.1,56.6 146.7,56.0 147.3,55.4 148.0,54.8 148.6,54.2 149.2,53.6 149.8,53.0 150.5,52.4 151.1,51.8 151.7,51.2 152.4,50.7 153.0,50.1 153.6,49.5 154.2,48.9 154.9,48.3 155.5,47.7 156.1,47.2 156.7,46.6 157.4,46.0 158.0,45.5 158.6,44.9 159.2,44.3 159.9,43.8 160.5,43.2 161.1,42.7 161.8,42.2 162.4,41.6 163.0,41.1 163.6,40.6 164.3,40.1 164.9,39.6 165.5,39.1 166.1,38.7 166.8,38.2 167.4,37.7 168.0,37.3 168.7,36.9 169.3,36.4 169.9,36.0 170.5,35.6 171.2,35.3 171.8,34.9 172.4,34.6 173.0,34.2 173.7,33.9 174.3,33.6 174.9,33.3 175.6,33.1 176.2,32.8 176.8,32.6 177.4,32.4 178.1,32.2 178.7,32.0 179.3,31.9 179.9,31.7 180.6,31.6 181.2,31.5 181.8,31.4 182.4,31.4 183.1,31.3 183.7,31.3 184.3,31.3 185.0,31.3 185.6,31.4 186.2,31.4 186.8,31.5 187.5,31.6 188.1,31.7 188.7,31.8 189.3,32.0 190.0,32.1 190.6,32.3 191.2,32.5 191.9,32.7 192.5,32.9 193.1,33.1 193.7,33.3 194.4,33.6 195.0,33.8 195.6,34.1 196.2,34.4 196.9,34.6 197.5,34.9 198.1,35.2 198.8,35.5 199.4,35.8 200.0,36.2 200.6,36.5 201.3,36.8 201.9,37.1 202.5,37.5 203.1,37.8 203.8,38.2 204.4,38.5 205.0,38.9 205.6,39.2 206.3,39.6 206.9,39.9 207.5,40.3 208.2,40.7 208.8,41.0 209.4,41.4 210.0,41.8 210.7,42.1 211.3,42.5 211.9,42.9 212.5,43.2 213.2,43.6 213.8,44.0 214.4,44.3 215.1,44.7 215.7,45.1 216.3,45.4 216.9,45.8 217.6,46.1 218.2,46.5 218.8,46.9 219.4,47.2 220.1,47.6 220.7,47.9 221.3,48.3 222.0,48.6 222.6,49.0 223.2,49.3 223.8,49.7 224.5,50.0 225.1,50.4 225.7,50.7 226.3,51.0 227.0,51.4 227.6,51.7 228.2,52.1 228.8,52.4 229.5,52.7 230.1,53.0 230.7,53.4 231.4,53.7 232.0,54.0 232.6,54.3 233.2,54.7 233.9,55.0 234.5,55.3 235.1,55.6 235.7,55.9 236.4,56.2 237.0,56.5 237.6,56.8 238.3,57.1 238.9,57.4 239.5,57.7 240.1,58.0 240.8,58.3 241.4,58.6 242.0,58.9 242.6,59.2 243.3,59.5 243.9,59.8 244.5,60.0 245.1,60.3 245.8,60.6 246.4,60.9 247.0,61.2 247.7,61.4 248.3,61.7 248.9,62.0 249.5,62.2 250.2,62.5 250.8,62.8 251.4,63.0 252.0,63.3 252.7,63.6 253.3,63.8 253.9,64.1 254.6,64.3 255.2,64.6 255.8,64.8 256.4,65.1 257.1,65.3 257.7,65.6 258.3,65.8 258.9,66.1 259.6,66.3 260.2,66.5 260.8,66.8 261.5,67.0 262.1,67.3 262.7,67.5 263.3,67.7 264.0,68.0 264.6,68.2 265.2,68.4 265.8,68.7 266.5,68.9 267.1,69.1 267.7,69.3 268.3,69.6 269.0,69.8 269.6,70.0 270.2,70.2 270.9,70.4 271.5,70.6 272.1,70.9 272.7,71.1 273.4,71.3 274.0,71.5 274.6,71.7 275.2,71.9 275.9,72.1 276.5,72.3 277.1,72.5 277.8,72.7 278.4,73.0 279.0,73.2 279.6,73.4 280.3,73.6 280.9,73.8 281.5,74.0 282.1,74.2 282.8,74.3 283.4,74.5 284.0,74.7 284.6,74.9 285.3,75.1 285.9,75.3 286.5,75.5 287.2,75.7 287.8,75.9 288.4,76.1 289.0,76.3 289.7,76.4 290.3,76.6 290.9,76.8 291.5,77.0 292.2,77.2 292.8,77.3 293.4,77.5 294.1,77.7 294.7,77.9 295.3,78.1 295.9,78.2 296.6,78.4 297.2,78.6 297.8,78.8 298.4,78.9 299.1,79.1 299.7,79.3 300.3,79.4 301.0,79.6 301.6,79.8 302.2,79.9 302.8,80.1 303.5,80.3 304.1,80.4 304.7,80.6 305.3,80.8 306.0,80.9 306.6,81.1 307.2,81.3 307.8,81.4 308.5,81.6 309.1,81.7 309.7,81.9 310.4,82.1 311.0,82.2 311.6,82.4 312.2,82.5 312.9,82.7 313.5,82.8 314.1,83.0 314.7,83.2 315.4,83.3 316.0,83.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,13"
+        },
+        {
+          "id": "b",
+          "text": "8,0"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "63"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le maximum de la courbe est G₀ ≈ 18 dB. De G₀ = 20 log T₀, on tire log T₀ = 18/20 = 0,90, donc T₀ = 10^0,90 ≈ 8,0 ✓. 18 prend le gain pour la transmittance, 63 utilise 10^(G/10) et 0,13 inverse le rapport (ce serait −18 dB).",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la bande passante à −3 dB d'un filtre sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est l'intervalle [N_b ; N_h] où G ≥ G₀ − 3 dB"
+        },
+        {
+          "id": "b",
+          "text": "À N_b et à N_h, la transmittance vaut T₀/√2"
+        },
+        {
+          "id": "c",
+          "text": "Plus elle est étroite, plus le filtre est sélectif"
+        },
+        {
+          "id": "d",
+          "text": "Hors de la bande passante, la tension de sortie est nulle"
+        },
+        {
+          "id": "e",
+          "text": "Aux fréquences de coupure, le gain vaut −3 dB"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La bande passante est l'intervalle où G ≥ G₀ − 3 dB, équivalent à T ≥ T₀/√2, donc T = T₀/√2 à N_b et à N_h ✓ ; plus elle est étroite, plus le filtre est sélectif ✓. Hors de la bande, la sortie est atténuée mais pas nulle ; et le gain à la coupure vaut G₀ − 3 dB, qui n'est égal à −3 dB que si G₀ = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le gain d'un filtre est relevé à plusieurs fréquences :\nN = 100 Hz : G = 0 dB\nN = 500 Hz : G = −0,3 dB\nN = 1000 Hz : G = −1,0 dB\nN = 2000 Hz : G = −3,0 dB\nN = 4000 Hz : G = −7,0 dB\nN = 8000 Hz : G = −12 dB\nLe gain maximal, G₀ = 0 dB, est atteint aux basses fréquences (palier). Quelle est la bande passante à −3 dB ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[0 ; 2,0 kHz] : une seule fréquence de coupure"
+        },
+        {
+          "id": "b",
+          "text": "[2,0 kHz ; +∞[ : une seule fréquence de coupure"
+        },
+        {
+          "id": "c",
+          "text": "[1,0 kHz ; 2,0 kHz] : deux fréquences de coupure"
+        },
+        {
+          "id": "d",
+          "text": "[0 ; 4,0 kHz] : une seule fréquence de coupure"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le maximum est G₀ = 0 dB, donc le niveau de coupure est G₀ − 3 = −3 dB, atteint à 2000 Hz. Le gain est supérieur à −3 dB en dessous de cette fréquence : la bande passante est [0 ; 2,0 kHz], limitée par la seule fréquence de coupure haute N_h = 2,0 kHz ✓. La bande [2,0 kHz ; +∞[ inverse les côtés ; [1,0 kHz ; 2,0 kHz] suppose une coupure basse à 1 kHz (−1,0 dB, au-dessus du seuil) ; [0 ; 4,0 kHz] prend le niveau −7 dB.",
+      "difficulty": 3
+    }
+  ]
+}

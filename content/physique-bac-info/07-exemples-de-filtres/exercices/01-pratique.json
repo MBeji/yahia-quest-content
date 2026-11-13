@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les filtres",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un quadripôle est alimenté sous U_Em = 6,0 V. On relève U_Sm à plusieurs fréquences :\nN = 20 Hz : U_Sm = 6,0 V\nN = 1000 Hz : U_Sm = 5,37 V\nN = 2000 Hz : U_Sm = 4,24 V\nN = 4000 Hz : U_Sm = 2,68 V\nN = 20 000 Hz : U_Sm = 0,60 V\nQuelle est sa fréquence de coupure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1000 Hz"
+        },
+        {
+          "id": "b",
+          "text": "2000 Hz"
+        },
+        {
+          "id": "c",
+          "text": "4000 Hz"
+        },
+        {
+          "id": "d",
+          "text": "20 000 Hz"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La valeur maximale est U_Smo = 6,0 V, donc le seuil est U_Smo/√2 = 6,0/1,41 = 4,24 V, atteint pour N = 2000 Hz ✓. À 1000 Hz la tension est encore bien supérieure au seuil. À 4000 Hz elle vaut 2,68 V : c'est la mesure la plus proche de U_Smo/2 = 3,0 V, d'où l'erreur de qui prend U_Smo/2 au lieu de U_Smo/√2. À 20 000 Hz le signal est presque éteint.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un passe-bas RC a une résistance R = 1,0 kΩ. À sa fréquence de coupure N_h, que vaut l'impédance Z_C = 1/(Cω) de son condensateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,0 kΩ"
+        },
+        {
+          "id": "b",
+          "text": "1,4 kΩ"
+        },
+        {
+          "id": "c",
+          "text": "1,0 kΩ"
+        },
+        {
+          "id": "d",
+          "text": "0,71 kΩ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À N_h, 2πRC·N_h = 1, soit RCω = 1, donc Z_C = 1/(Cω) = R = 1,0 kΩ ✓. La valeur 1,4 kΩ est l'impédance totale Z = √(R² + Z_C²) = √2·R. La valeur 0,71 kΩ applique à une impédance le facteur 1/√2 des amplitudes. La valeur 2,0 kΩ ajoute R et Z_C comme des nombres, ce que la construction de Fresnel interdit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un filtre passe-haut a pour fréquence de coupure basse N_b = 800 Hz. Quelle est sa bande passante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[0 ; 800 Hz]"
+        },
+        {
+          "id": "b",
+          "text": "[800 Hz ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "[400 Hz ; 1600 Hz]"
+        },
+        {
+          "id": "d",
+          "text": "]0 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un passe-haut laisse passer les fréquences supérieures à sa coupure basse : sa bande passante est [N_b ; +∞[ = [800 Hz ; +∞[ ✓. L'intervalle [0 ; 800 Hz] est celui d'un passe-bas de même coupure. L'intervalle [400 Hz ; 1600 Hz] encadre N_b d'une octave de chaque côté, ce qui n'a pas de sens pour ce filtre. L'intervalle ]0 ; +∞[ supprimerait toute coupure.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On double la capacité C d'un passe-haut CR, sans toucher à R. Que devient sa fréquence de coupure N_b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est inchangée"
+        },
+        {
+          "id": "b",
+          "text": "Elle est multipliée par 2"
+        },
+        {
+          "id": "c",
+          "text": "Elle est divisée par 2"
+        },
+        {
+          "id": "d",
+          "text": "Elle est divisée par 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "N_b = 1/(2πRC) est inversement proportionnelle à C : doubler C divise N_b par 2 ✓. Une division par 4 supposerait N_b proportionnelle à 1/C². Une multiplication par 2 inverse le sens de la dépendance, comme si N_b était proportionnelle à RC. Une fréquence inchangée ignorerait que C intervient dans la formule.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un passe-bas RC est alimenté sous U_Em = 3,0 V, à sa fréquence de coupure N_h. Quelle est l'amplitude U_Sm de sa tension de sortie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5 V"
+        },
+        {
+          "id": "b",
+          "text": "2,1 V"
+        },
+        {
+          "id": "c",
+          "text": "3,0 V"
+        },
+        {
+          "id": "d",
+          "text": "4,2 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À la coupure, T = 1/√2, donc U_Sm = 3,0/√2 = 3,0/1,41 ≈ 2,1 V ✓. La valeur 1,5 V divise par 2 au lieu de √2. La valeur 3,0 V ignorerait toute atténuation. La valeur 4,2 V multiplie par √2 : un filtre passif ne peut pas amplifier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le montage ci-dessous, R₀ = 2,0 kΩ et R₁ = 20 kΩ. Quel est le gain maximal G₀ du filtre ?\n<svg viewBox=\"0 0 360 215\"><title>Passe-bas actif : R₀ relie E à l'entrée inverseuse ; R₁ et C, en parallèle, relient cette entrée à la sortie S ; l'entrée non inverseuse est à la masse</title><line x1=\"40.0\" y1=\"190.0\" x2=\"300.0\" y2=\"190.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"40.0\" y1=\"108.0\" x2=\"70.0\" y2=\"108.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"70.0\" y=\"100.0\" width=\"56\" height=\"16\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"98.0\" y=\"94.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₀</text><line x1=\"126.0\" y1=\"108.0\" x2=\"150.0\" y2=\"108.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150.0\" y1=\"108.0\" x2=\"190.0\" y2=\"108.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"190,84 190,164 270,124\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"198.0\" y=\"104.0\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−</text><text x=\"198.0\" y=\"156.0\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+</text><line x1=\"190.0\" y1=\"152.0\" x2=\"172.0\" y2=\"152.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"172.0\" y1=\"152.0\" x2=\"172.0\" y2=\"190.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"270.0\" y1=\"124.0\" x2=\"300.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150.0\" y1=\"108.0\" x2=\"150.0\" y2=\"28.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"150\" cy=\"108\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"150.0\" y1=\"62.0\" x2=\"196.0\" y2=\"62.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"196.0\" y=\"54.0\" width=\"56\" height=\"16\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"224.0\" y=\"88.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₁</text><circle cx=\"150\" cy=\"62\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"252.0\" y1=\"62.0\" x2=\"300.0\" y2=\"62.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150.0\" y1=\"28.0\" x2=\"226.0\" y2=\"28.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"226.0\" y1=\"12.0\" x2=\"226.0\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"3\"/><line x1=\"238.0\" y1=\"12.0\" x2=\"238.0\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"232.0\" y=\"10.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><line x1=\"238.0\" y1=\"28.0\" x2=\"300.0\" y2=\"28.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"300.0\" y1=\"28.0\" x2=\"300.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"300\" cy=\"62\" r=\"2.6\" fill=\"#0f172a\"/><circle cx=\"300\" cy=\"124\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"300.0\" y1=\"124.0\" x2=\"330.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"40.0\" cy=\"108.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"40.0\" y=\"99.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><circle cx=\"40.0\" cy=\"190.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"40.0\" y=\"207.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><circle cx=\"330.0\" cy=\"124.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"330.0\" y=\"115.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S</text><circle cx=\"330.0\" cy=\"190.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"330.0\" y=\"207.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><line x1=\"300.0\" y1=\"190.0\" x2=\"330.0\" y2=\"190.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"18.0\" y1=\"184.0\" x2=\"18.0\" y2=\"116.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"18.0,116.0 21.5,123.0 14.5,123.0\" fill=\"#2563eb\"/><text x=\"18.0\" y=\"106.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_E</text><line x1=\"350.0\" y1=\"184.0\" x2=\"350.0\" y2=\"132.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"350.0,132.0 353.5,139.0 346.5,139.0\" fill=\"#2563eb\"/><text x=\"350.0\" y=\"122.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_S</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−20 dB"
+        },
+        {
+          "id": "b",
+          "text": "10 dB"
+        },
+        {
+          "id": "c",
+          "text": "20 dB"
+        },
+        {
+          "id": "d",
+          "text": "40 dB"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "T₀ = R₁/R₀ = 20/2,0 = 10, donc G₀ = 20 log 10 = 20 dB ✓. La valeur −20 dB vient du rapport inversé R₀/R₁. La valeur 10 dB confond 10 log et 20 log. La valeur 40 dB double le résultat sans raison.",
+      "difficulty": 2
+    }
+  ]
+}
