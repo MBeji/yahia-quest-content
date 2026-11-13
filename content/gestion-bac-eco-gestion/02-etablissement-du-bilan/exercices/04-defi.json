@@ -1,0 +1,108 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du banquier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un bilan fonctionnel est équilibré à 700 000 D de chaque côté. Les emplois stables valent 430 000 D et les passifs courants 90 000 D. Calculer le FDR, en D.",
+      "answerKey": {
+        "value": 180000,
+        "unit": "D"
+      },
+      "explanation": "Les ressources stables valent 700 000 − 90 000 = 610 000 D, donc FDR = 610 000 − 430 000 = 180 000 D ✓. Contrôle par le bas : actifs courants = 700 000 − 430 000 = 270 000 D, et 270 000 − 90 000 = 180 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une boutique a un FDR de 45 000 D, un BFR de 30 000 D et une TN de 15 000 D. Elle encaisse par chèque 10 000 D d'un client, puis paie 6 000 D à un fournisseur par chèque. Quel est son BFR après ces deux opérations, en D ?",
+      "answerKey": {
+        "value": 26000,
+        "unit": "D"
+      },
+      "explanation": "L'encaissement fait baisser les créances de 10 000 D : le BFR passe à 20 000 D. Le paiement fait baisser les dettes fournisseurs de 6 000 D : le BFR remonte à 26 000 D ✓. Le FDR reste à 45 000 D et la TN vaut 45 000 − 26 000 = 19 000 D, soit 15 000 + 10 000 − 6 000.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Une entreprise a un FDR de 40 000 D et un BFR de 55 000 D. Quelles affirmations sont exactes ? Sélectionne toutes celles qui conviennent.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sa trésorerie nette est de −15 000 D"
+        },
+        {
+          "id": "b",
+          "text": "Son équilibre financier est respecté, car son FDR est positif"
+        },
+        {
+          "id": "c",
+          "text": "Elle complète le financement de son BFR par des crédits de trésorerie"
+        },
+        {
+          "id": "d",
+          "text": "Ses ressources stables sont inférieures à ses emplois stables"
+        },
+        {
+          "id": "e",
+          "text": "Sa trésorerie nette est de 15 000 D"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "TN = FDR − BFR = 40 000 − 55 000 = −15 000 D, et la TN négative signifie que le FDR ne finance qu'une partie du BFR, le reste venant de crédits de trésorerie comme le découvert. Le signe de la TN, non celui du FDR, juge l'équilibre. Le FDR est positif, donc les ressources stables sont supérieures aux emplois stables, et +15 000 D inverse la différence.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise a des emplois stables de 200 000 D, des stocks de 120 000 D, des créances clients de 85 000 D, 30 000 D de liquidités, 70 000 D de dettes fournisseurs et 18 000 D de découvert bancaire. Quel montant de ressources stables couvrirait exactement ses emplois stables et son BFR, en D ?",
+      "answerKey": {
+        "value": 335000,
+        "unit": "D"
+      },
+      "explanation": "BFR = (120 000 + 85 000) − 70 000 = 135 000 D, la trésorerie (30 000 D et 18 000 D) étant écartée. Pour que la TN soit nulle, il faut FDR = BFR = 135 000 D, donc ressources stables = 200 000 + 135 000 = 335 000 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une entreprise achète un camion de 90 000 D financé entièrement par un découvert bancaire. Quel est l'effet sur ses FDR, BFR et TN ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FDR inchangé, BFR inchangé, TN inchangée"
+        },
+        {
+          "id": "b",
+          "text": "FDR −90 000 D, BFR −90 000 D, TN inchangée"
+        },
+        {
+          "id": "c",
+          "text": "FDR inchangé, BFR +90 000 D, TN −90 000 D"
+        },
+        {
+          "id": "d",
+          "text": "FDR −90 000 D, BFR inchangé, TN −90 000 D"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le camion ajoute 90 000 D aux emplois stables sans ressource stable : le FDR baisse de 90 000 D. Le découvert est une trésorerie du passif, que le BFR écarte : BFR inchangé. TN = FDR − BFR baisse donc de 90 000 D, ce que confirme le découvert supplémentaire de 90 000 D ✓. Placer le découvert dans le BFR le ferait monter à tort.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise a un FDR de 70 000 D, un BFR de 50 000 D et une TN de 20 000 D. Elle achète un camion de 80 000 D, payé 40 000 D par chèque et 40 000 D par un emprunt à 4 ans. Elle achète aussi des marchandises de 15 000 D payables à 30 jours. Quelle est sa TN finale, en D ?",
+      "answerKey": {
+        "value": -20000,
+        "unit": "D"
+      },
+      "explanation": "Camion : les emplois stables montent de 80 000 D et les ressources stables de 40 000 D, donc FDR = 70 000 − 80 000 + 40 000 = 30 000 D. Marchandises à crédit : les marchandises encore en stock à la date du bilan et les fournisseurs montent de 15 000 D, le BFR reste à 50 000 D. TN = 30 000 − 50 000 = −20 000 D ✓, soit 20 000 − 40 000 payés par chèque.",
+      "difficulty": 3
+    }
+  ]
+}

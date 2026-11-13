@@ -1,0 +1,170 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Journal, charges et TVA",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associez chaque opération de l'atelier à la nature du flux qu'elle représente pour lui.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Réparation de la machine par un artisan"
+        },
+        {
+          "id": "l2",
+          "text": "Livraison de 20 sacs à un client"
+        },
+        {
+          "id": "l3",
+          "text": "Espèces reçues d'une cliente en règlement de sa facture"
+        },
+        {
+          "id": "l4",
+          "text": "Salaire versé en espèces à une employée"
+        },
+        {
+          "id": "r1",
+          "text": "Flux financier : décaissement"
+        },
+        {
+          "id": "r2",
+          "text": "Flux réel entrant"
+        },
+        {
+          "id": "r3",
+          "text": "Flux financier : encaissement"
+        },
+        {
+          "id": "r4",
+          "text": "Flux réel sortant"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r1"
+          ]
+        ]
+      },
+      "explanation": "La réparation est un service reçu : flux réel entrant (un service est un flux réel, comme un bien). Les sacs livrés sont des biens qui sortent : flux réel sortant. Les espèces reçues sont de la monnaie qui entre : encaissement. Le salaire versé est de la monnaie qui sort : décaissement. Le sens se lit toujours du côté de l'entreprise.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur un mois, une entreprise a des produits de 5 800 D et des charges de 4 650 D. Quel est son résultat, en D (positif si bénéfice, négatif si perte) ?",
+      "answerKey": {
+        "value": 1150,
+        "unit": "D"
+      },
+      "explanation": "Le résultat est la différence entre les produits (enrichissements) et les charges (appauvrissements) : 5 800 − 4 650 = 1 150 D ✓. Le résultat est positif : c'est un bénéfice de 1 150 D.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans l'article d'une facture d'achat de matières à crédit avec TVA, que devient le compte 4366 (Etat, TCA déductibles) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est crédité de la TVA, qui est due à l'État"
+        },
+        {
+          "id": "b",
+          "text": "Il est ajouté au compte 601, dont il fait partie intégrante"
+        },
+        {
+          "id": "c",
+          "text": "Il n'est pas enregistré, car la TVA se récupère auprès de l'État"
+        },
+        {
+          "id": "d",
+          "text": "Il est débité de la TVA, car elle est récupérable"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La TVA payée au fournisseur est récupérable : elle est enregistrée au débit de 4366, à côté de 601 (le net commercial), et le fournisseur est crédité du TTC ✓. La créditer reviendrait à confondre TVA déductible et TVA due. L'ajouter à 601 grossirait la charge d'achat de la TVA. Ne pas l'enregistrer ferait perdre une somme que l'entreprise a bien payée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Deux associés créent une société. L'un verse 26 000 D en banque ; l'autre apporte un stock de marchandises de 12 500 D et un logiciel de 4 500 D. Quel est le total débité de l'article de constitution, en D ?",
+      "answerKey": {
+        "value": 43000,
+        "unit": "D"
+      },
+      "explanation": "Chaque apport est un emploi pour la société : banque 26 000, stock 12 500 et logiciel 4 500 sont débités. Le total débité est 26 000 + 12 500 + 4 500 = 43 000 D ✓. Il est égal au total crédité : le compte Capital, seule ressource, est crédité de 43 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettez dans l'ordre les étapes pour enregistrer une facture d'achat de matières à crédit.",
+      "options": [
+        {
+          "id": "s3",
+          "text": "Écrire l'article au journal : les débits d'abord, puis les crédits décalés"
+        },
+        {
+          "id": "s4",
+          "text": "Vérifier que le total débité est égal au total crédité"
+        },
+        {
+          "id": "s1",
+          "text": "Calculer le net commercial, la TVA et le net à payer"
+        },
+        {
+          "id": "s2",
+          "text": "Repérer les comptes d'emploi (601 et 4366) et le compte de ressource (401)"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "explanation": "On part des montants : il faut d'abord les calculer pour savoir ce qu'on enregistre. On repère ensuite le rôle de chaque compte (emploi ou ressource), ce qui commande le côté de l'article. On écrit alors l'article au journal. Le contrôle de l'égalité des totaux vient en dernier, une fois toutes les lignes écrites.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une facture d'achat de cuir porte « Net à payer TTC : 2 596 D » avec une TVA de 18 %, sans détail. Quel est le montant HT à porter au compte d'achats ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "396 D"
+        },
+        {
+          "id": "b",
+          "text": "2 128,72 D"
+        },
+        {
+          "id": "c",
+          "text": "2 200 D"
+        },
+        {
+          "id": "d",
+          "text": "3 063,28 D"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "HT = TTC ÷ 1,18 = 2 596 ÷ 1,18 = 2 200 D ✓ (contrôle : 2 200 × 1,18 = 2 596 ; la TVA est de 396 D). Le montant de 396 D est la TVA, pas le HT. Celui de 2 128,72 D retranche 18 % du TTC (2 596 × 0,82), alors que 18 % s'applique au HT. Celui de 3 063,28 D majore encore le TTC de 18 %.",
+      "difficulty": 2
+    }
+  ]
+}

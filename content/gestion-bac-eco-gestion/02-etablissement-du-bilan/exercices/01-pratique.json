@@ -1,0 +1,156 @@
+{
+  "title": "⭐ Exercice : Premières armes — le bilan et ses grandeurs",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque masse du bilan à sa description.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Actifs non courants"
+        },
+        {
+          "id": "l2",
+          "text": "Actifs courants"
+        },
+        {
+          "id": "l3",
+          "text": "Passifs non courants"
+        },
+        {
+          "id": "l4",
+          "text": "Passifs courants"
+        },
+        {
+          "id": "r1",
+          "text": "Des biens durables : constructions, machines"
+        },
+        {
+          "id": "r2",
+          "text": "Des biens à rotation rapide : stocks, clients, liquidités"
+        },
+        {
+          "id": "r3",
+          "text": "Des dettes longues : emprunt à 5 ans"
+        },
+        {
+          "id": "r4",
+          "text": "Des dettes courtes : fournisseurs, découvert"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Les actifs non courants sont les biens gardés longtemps (constructions, machines) ; les actifs courants tournent vite (stocks, clients, liquidités). Côté ressources, l'emprunt à 5 ans est un passif non courant, tandis que fournisseurs et découvert sont des passifs courants.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans quelle masse du bilan range-t-on le stock de farine d'une boulangerie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans les actifs non courants"
+        },
+        {
+          "id": "b",
+          "text": "Dans les actifs courants"
+        },
+        {
+          "id": "c",
+          "text": "Dans les passifs courants"
+        },
+        {
+          "id": "d",
+          "text": "Dans les capitaux propres"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le stock de farine est un bien qui sera consommé ou vendu vite : c'est un actif courant. Il est à gauche du bilan, puisque c'est un bien que l'entreprise possède, et non une source de financement.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un artisan apporte un atelier de 90 000 D et dépose 15 000 D en banque. Il n'a aucune dette. Quel est son capital, en D ?",
+      "answerKey": {
+        "value": 105000,
+        "unit": "D"
+      },
+      "explanation": "Total des actifs : 90 000 + 15 000 = 105 000 D. Sans dette, le capital égale le total des actifs : 105 000 D ✓, et les deux côtés du bilan valent 105 000 D.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Au bilan fonctionnel d'une société, les actifs courants totalisent 190 000 D et les passifs courants 120 000 D. Quel est le fonds de roulement, en D ?",
+      "answerKey": {
+        "value": 70000,
+        "unit": "D"
+      },
+      "explanation": "FDR = actifs courants − passifs courants = 190 000 − 120 000 = 70 000 D ✓. Cette voie par le bas du bilan donne le même résultat que ressources stables − emplois stables.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise garde 30 000 D de liquidités en banque et doit 12 000 D de découvert bancaire. Quelle est sa trésorerie nette, en D ?",
+      "answerKey": {
+        "value": 18000,
+        "unit": "D"
+      },
+      "explanation": "TN = trésorerie de l'actif − trésorerie du passif = 30 000 − 12 000 = 18 000 D ✓. La TN est positive : les liquidités dépassent le découvert, ce qui est la marque d'un équilibre financier respecté.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes pour établir le bilan après une opération.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repérer les lignes du bilan touchées par l'opération (au moins deux)"
+        },
+        {
+          "id": "b",
+          "text": "Modifier chacune de ces lignes du montant de l'opération"
+        },
+        {
+          "id": "c",
+          "text": "Recalculer le total de gauche et le total de droite"
+        },
+        {
+          "id": "d",
+          "text": "Vérifier que les deux totaux sont égaux"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On repère d'abord les lignes touchées, puis on les modifie du montant de l'opération. Les totaux ne se recalculent qu'après ces modifications, et la vérification de leur égalité vient en dernier, une fois les deux sommes connues.",
+      "difficulty": 1
+    }
+  ]
+}

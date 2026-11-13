@@ -1,0 +1,200 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La structure de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle est la finalité de l'entreprise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Distribuer des salaires à tous ses salariés"
+        },
+        {
+          "id": "b",
+          "text": "La maximisation du surplus de valeur créée"
+        },
+        {
+          "id": "c",
+          "text": "Vendre au plus bas prix du marché possible"
+        },
+        {
+          "id": "d",
+          "text": "Couvrir seulement ses charges de chaque mois"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La finalité, c'est-à-dire ce que l'entreprise cherche à atteindre, est la maximisation du surplus de valeur créée. Les salaires et la couverture des charges sont des moyens ou des conditions, non son but.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque notion à sa description.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Lien hiérarchique"
+        },
+        {
+          "id": "l2",
+          "text": "Lien fonctionnel"
+        },
+        {
+          "id": "l3",
+          "text": "Lien de conseil"
+        },
+        {
+          "id": "l4",
+          "text": "Organigramme"
+        },
+        {
+          "id": "r1",
+          "text": "Subordination entre deux éléments de la structure"
+        },
+        {
+          "id": "r2",
+          "text": "Décision applicable aux éléments dépendant d'un centre de compétence"
+        },
+        {
+          "id": "r3",
+          "text": "Contribution d'un élément au fonctionnement d'un autre"
+        },
+        {
+          "id": "r4",
+          "text": "Schéma de la répartition des tâches et des liaisons"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le lien hiérarchique fixe une subordination. Le lien fonctionnel étend les décisions d'un centre de compétence aux éléments qui en dépendent. Le lien de conseil est une contribution au fonctionnement d'un autre élément. L'organigramme schématise l'ensemble.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes pour construire un organigramme.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aligner les fonctions juste en dessous de la direction"
+        },
+        {
+          "id": "b",
+          "text": "Compter les cases et relire la description"
+        },
+        {
+          "id": "c",
+          "text": "Rattacher à chaque fonction ses services"
+        },
+        {
+          "id": "d",
+          "text": "Placer la direction en haut du dessin"
+        },
+        {
+          "id": "e",
+          "text": "Placer à côté de la direction les postes qui l'assistent"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "d",
+          "a",
+          "c",
+          "e",
+          "b"
+        ]
+      },
+      "explanation": "On part de la direction, puis on place les fonctions qui en dépendent et les services qui dépendent d'elles. Les postes d'assistance se placent à côté, une fois la chaîne hiérarchique dessinée, et on termine en comptant les cases et en relisant la description pour vérifier que rien n'est oublié.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un organigramme comprend un P.D.G. relié à 5 fonctions, et 9 services répartis sous ces fonctions ; un secrétariat relié au P.D.G. par un lien de conseil. Combien de liens hiérarchiques compte-t-il ?",
+      "answerKey": {
+        "value": 14,
+        "unit": "liens"
+      },
+      "explanation": "Chaque fonction est reliée à la direction : 5 liens. Chaque service est relié à sa fonction : 9 liens. Total : 5 + 9 = 14 ✓. Le secrétariat est relié par un lien de conseil, qu'on ne compte pas parmi les liens hiérarchiques ; 15 l'y ajouterait.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur les fonctions de l'entreprise sont exactes ? Sélectionne toutes celles qui conviennent.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une fonction est un ensemble d'activités spécialisées placées sous une autorité commune"
+        },
+        {
+          "id": "b",
+          "text": "La gestion des stocks fait partie des attributions de l'approvisionnement"
+        },
+        {
+          "id": "c",
+          "text": "Selon certains auteurs, la direction peut être une fonction principale"
+        },
+        {
+          "id": "d",
+          "text": "Le choix des modes de financement relève des ressources humaines"
+        },
+        {
+          "id": "e",
+          "text": "Le service méthodes relève de la fonction commerciale"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La définition de la fonction est exacte, la gestion des stocks est bien une attribution de l'approvisionnement, et la direction est une fonction principale pour certains auteurs. Le choix des modes de financement relève de la fonction financière, et le service méthodes de la production.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel flux la production adresse-t-elle à la direction générale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les contraintes techniques"
+        },
+        {
+          "id": "b",
+          "text": "Les objectifs généraux"
+        },
+        {
+          "id": "c",
+          "text": "Les besoins d'investissement"
+        },
+        {
+          "id": "d",
+          "text": "Les besoins en qualifications"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La production adresse à la direction ses contraintes techniques, et reçoit d'elle les objectifs généraux. Les besoins d'investissement vont à la financière et les besoins en qualifications aux ressources humaines.",
+      "difficulty": 2
+    }
+  ]
+}
