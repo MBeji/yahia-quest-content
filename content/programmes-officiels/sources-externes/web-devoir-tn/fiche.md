@@ -107,3 +107,24 @@ que Q-2 n'est pas arbitrée, pas de T2 : le site ré-héberge des œuvres d'ense
   ferme ces chemins.
 - **Tier** inchangé : **T2′** (salle blanche).
 - Échantillon et empreintes : [`web-6eme-base-eveil`](../web-6eme-base-eveil/fiche.md).
+
+## 9. Bac — sujets d'examen ré-hébergés (ajout du 2026-11-13)
+
+- **Pourquoi ici.** `bacweb.tn` et les archives `edunet.tn` ne répondent pas depuis une session
+  cloud (2026-11-09, 2026-11-13). `devoir.tn` ré-héberge les sujets du Bac, rubrique
+  `secondaire/4-ème-مواضيع-البكالوريا/<section>/<matière>.html`, fichiers sous
+  `secondaire/Doc/4-ème-مواضيع-البكالوريا/<section>/<matière>/<matière>-<année>-<principale|contrôle>[-correction].pdf`.
+- **Récolte du 2026-11-13.** 1 890 PDF listés (7 sections, sessions 2009 à 2024 ; 2009-2019 presque
+  complètes, 2020-2024 partielles, 2025-2026 absentes), 1 889 retenus — `Mathématiques/Mathématiques/
+  pdfannatator.pdf` est une archive RAR, écartée. 788 corrigés. Déposés au Drive
+  `cnp-officiel/examens-nationaux/bac/` : ZIP ≤ 9,5 Mo par section × matière × années, `index.csv`
+  (URL d'origine et SHA-256 de chaque fichier), `README.md`. La page « Économie » de la section
+  économie-gestion sert aussi les sujets de gestion 2009-2010 (rangés sous `gestion`) ; les épreuves
+  communes à plusieurs sections (même empreinte) ne sont rangées qu'une fois.
+- **Régime (R-2).** Ce que le site ré-héberge du Ministère reste du Ministère : un **sujet** est du
+  corpus officiel quand son en-tête le montre (« République tunisienne — Ministère de l'Éducation —
+  Examen du baccalauréat », constaté sur maths, section mathématiques, 2019). Les **corrigés**
+  ré-hébergés ne portent pas cet en-tête (même échantillon : « CORRECTION : EPREUVE MATHEMATIQUES /
+  Session de JUIN 2019 / BAC MATHS ») : origine **à établir**, donc source tierce tant qu'elle ne
+  l'est pas — `statut = corrige-origine-a-etablir` dans l'index.
+- **robots.txt** : `Allow: /` au 2026-10-20 (§ 8) ; les chemins `secondaire/Doc/` ne sont pas fermés.

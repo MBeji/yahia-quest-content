@@ -74,3 +74,5 @@ Source officielle, lue pour ce pilote au régime T2′.
   qualifié** : injoignable depuis une session cloud le 2026-11-09 (connexion réinitialisée,
   comme `6web`, `9web` et `echoexam`, qui ne répondent plus). À qualifier ici (structure des
   URL, sessions et sections servies) à la première lecture, depuis un poste ou depuis le Drive.
+  En attendant, les sujets du Bac ont été pris là où ils sont ré-hébergés (`devoir.tn`, fiche
+  [`web-devoir-tn`](../web-devoir-tn/fiche.md) § 9) et déposés au Drive le 2026-11-13.
