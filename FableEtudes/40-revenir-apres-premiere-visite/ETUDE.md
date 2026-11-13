@@ -92,7 +92,7 @@ propriétaire, P-0) · **2** le rappel proposé après une victoire,
 dit en gain, plus l'audience « pas encore joué » · **3** l'invitation à installer après une
 réussite (Android natif, iPhone guidé) · **4** le lien de reprise et le partage d'une réussite
 (WhatsApp, zéro donnée) · **5** le parent dans la boucle (l'élève invite son parent en un geste) ·
-**6** *gelé* — un défi de la semaine visible avant le compte (Q-3). Un canal e-mail pour les
+**6** _gelé_ — un défi de la semaine visible avant le compte (Q-3). Un canal e-mail pour les
 parents reste une question (Q-4), pas un lot.
 
 ## 1. Contexte & objectif produit
@@ -122,17 +122,17 @@ de production · **[nav]** Chromium (Playwright, profil Pixel 7, visiteur, aucun
 
 #### T-1 — Le canal push, de bout en bout
 
-| Maillon | État | Preuve |
-| --- | --- | --- |
-| Service worker, événements `push` et `notificationclick` | en place | **[code]** `public/sw.js` ; **[nav]** `sw.js` enregistré sur une page de chapitre |
-| Cron quotidien 18:00 UTC (~19:00 Tunis) | déclaré | **[code]** `vercel.json` `crons` → `/api/cron/notify` → `handlePushCron` |
-| Six audiences d'élève, au plus un push par jour | en place | **[code]** `push_daily_audiences` (`20260902160000`), `resolveDailyPushPlan` |
-| Textes FR/EN/AR, ton sans reproche | en place | **[code]** `push-copy.ts` |
-| Souscription : exige un compte | par construction | **[code]** `push_subscriptions.user_id NOT NULL`, `save_push_subscription` lève `Unauthorized` sans `auth.uid()` |
-| **Clé publique dans le build de production** | **ABSENTE** | **[bundle]** `assets/enable-push-card-0jvXA2Bl.js` : `useEffect(()=>{g()?t("unconfigured"):t("unsupported")},[])` et `enable: async()=>{g()}` — la branche « clé présente » a été éliminée à la compilation |
-| Carte d'activation visible | **jamais** | **[code]** `enable-push-card.tsx:16` : `unconfigured` ⇒ `return null` |
-| Souscriptions enregistrées | **0** | **[prod-db]** `push_subscriptions` : 0 ligne ; `push_consent_events` : 0 ligne |
-| Variables serveur (`VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`) | **non constaté** | l'accès Vercel de la session a été refusé (403 sur le périmètre de l'équipe) — constaté par le propriétaire au prérequis P-0 (§4) |
+| Maillon                                                                                     | État             | Preuve                                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Service worker, événements `push` et `notificationclick`                                    | en place         | **[code]** `public/sw.js` ; **[nav]** `sw.js` enregistré sur une page de chapitre                                                                                                                           |
+| Cron quotidien 18:00 UTC (~19:00 Tunis)                                                     | déclaré          | **[code]** `vercel.json` `crons` → `/api/cron/notify` → `handlePushCron`                                                                                                                                    |
+| Six audiences d'élève, au plus un push par jour                                             | en place         | **[code]** `push_daily_audiences` (`20260902160000`), `resolveDailyPushPlan`                                                                                                                                |
+| Textes FR/EN/AR, ton sans reproche                                                          | en place         | **[code]** `push-copy.ts`                                                                                                                                                                                   |
+| Souscription : exige un compte                                                              | par construction | **[code]** `push_subscriptions.user_id NOT NULL`, `save_push_subscription` lève `Unauthorized` sans `auth.uid()`                                                                                            |
+| **Clé publique dans le build de production**                                                | **ABSENTE**      | **[bundle]** `assets/enable-push-card-0jvXA2Bl.js` : `useEffect(()=>{g()?t("unconfigured"):t("unsupported")},[])` et `enable: async()=>{g()}` — la branche « clé présente » a été éliminée à la compilation |
+| Carte d'activation visible                                                                  | **jamais**       | **[code]** `enable-push-card.tsx:16` : `unconfigured` ⇒ `return null`                                                                                                                                       |
+| Souscriptions enregistrées                                                                  | **0**            | **[prod-db]** `push_subscriptions` : 0 ligne ; `push_consent_events` : 0 ligne                                                                                                                              |
+| Variables serveur (`VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`) | **non constaté** | l'accès Vercel de la session a été refusé (403 sur le périmètre de l'équipe) — constaté par le propriétaire au prérequis P-0 (§4)                                                                           |
 
 Conséquence : **aucun des rappels décrits comme livrés n'a jamais été reçu**. Ce n'est pas un trou
 de conception, c'est une panne muette — exactement ce que la leçon de STATUS §8 nomme « un
@@ -148,17 +148,17 @@ Deux défauts de second rang, visibles dans le code et sans effet tant que T-1 d
 
 #### T-2 — Le visiteur sans compte
 
-| Moment | Ce qui se passe | Preuve |
-| --- | --- | --- |
-| Arrivée sur un cours | lecture libre ; en-tête : Programme · Extras · Test de niveau · Suivi parent · Connexion · Créer mon compte | **[nav]** `/chapitre/2bd52d30-…` |
-| Bas du cours | étapes « Cours → Quiz → Missions », bouton du quiz, puis l'invitation « Apprends en jouant — Crée ton compte gratuit pour gagner des XP, garder tes chapitres débloqués et suivre ta progression » | **[nav]** ; **[code]** `lesson-reader.tsx:483` |
-| Fin d'un quiz ou d'une mission | score, « Recommencer », « Retour à la matière », puis « Avec un compte, cette mission vaut jusqu'à 20 XP. — Créer mon compte » | **[nav]** `/exercice/6c069575-…` ; **[code]** `exercice.$exerciseId.tsx:200-265` |
-| Ce que l'appareil garde | `na9ra.ph_did` (compteur PostHog) et `nn:outbox:v1` ; le quiz réussi vit en `sessionStorage` (`na9ra.anonQuizPassed`) jusqu'au lot 5 de é38 | **[nav]** clés lues après le parcours ; **[code]** |
-| Invitation à installer | aucune | **[code]** zéro occurrence de `beforeinstallprompt`, `appinstalled`, `display-mode` dans `src/` ; le manifeste (`display: standalone`, icônes 192/512/maskable) et l'icône Apple sont pourtant servis |
-| Notification | impossible | T-1 ; et la souscription exige un compte |
-| Lien à s'envoyer, partage d'une réussite | aucun sur le cours ni sur le résultat ; le partage n'existe que sur le bilan du test de niveau et le bilan parent | **[code]** `navigator.share` : `placement-bilan.ts`, `suivi.tsx`, `parent-report.tsx` seulement |
-| Rendez-vous visible | aucun : ligue, classement, arène, donjon sont sous `_authenticated` ; la page d'accueil ne porte aucune date | **[code]** `src/routes/_public/*` ; **[nav]** `/` |
-| Seule raison de revenir déjà en chantier | la carte « Reprendre » (30 jours, é38 lot 5) | étude 38 §4, lot 5 |
+| Moment                                   | Ce qui se passe                                                                                                                                                                                    | Preuve                                                                                                                                                                                                |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Arrivée sur un cours                     | lecture libre ; en-tête : Programme · Extras · Test de niveau · Suivi parent · Connexion · Créer mon compte                                                                                        | **[nav]** `/chapitre/2bd52d30-…`                                                                                                                                                                      |
+| Bas du cours                             | étapes « Cours → Quiz → Missions », bouton du quiz, puis l'invitation « Apprends en jouant — Crée ton compte gratuit pour gagner des XP, garder tes chapitres débloqués et suivre ta progression » | **[nav]** ; **[code]** `lesson-reader.tsx:483`                                                                                                                                                        |
+| Fin d'un quiz ou d'une mission           | score, « Recommencer », « Retour à la matière », puis « Avec un compte, cette mission vaut jusqu'à 20 XP. — Créer mon compte »                                                                     | **[nav]** `/exercice/6c069575-…` ; **[code]** `exercice.$exerciseId.tsx:200-265`                                                                                                                      |
+| Ce que l'appareil garde                  | `na9ra.ph_did` (compteur PostHog) et `nn:outbox:v1` ; le quiz réussi vit en `sessionStorage` (`na9ra.anonQuizPassed`) jusqu'au lot 5 de é38                                                        | **[nav]** clés lues après le parcours ; **[code]**                                                                                                                                                    |
+| Invitation à installer                   | aucune                                                                                                                                                                                             | **[code]** zéro occurrence de `beforeinstallprompt`, `appinstalled`, `display-mode` dans `src/` ; le manifeste (`display: standalone`, icônes 192/512/maskable) et l'icône Apple sont pourtant servis |
+| Notification                             | impossible                                                                                                                                                                                         | T-1 ; et la souscription exige un compte                                                                                                                                                              |
+| Lien à s'envoyer, partage d'une réussite | aucun sur le cours ni sur le résultat ; le partage n'existe que sur le bilan du test de niveau et le bilan parent                                                                                  | **[code]** `navigator.share` : `placement-bilan.ts`, `suivi.tsx`, `parent-report.tsx` seulement                                                                                                       |
+| Rendez-vous visible                      | aucun : ligue, classement, arène, donjon sont sous `_authenticated` ; la page d'accueil ne porte aucune date                                                                                       | **[code]** `src/routes/_public/*` ; **[nav]** `/`                                                                                                                                                     |
+| Seule raison de revenir déjà en chantier | la carte « Reprendre » (30 jours, é38 lot 5)                                                                                                                                                       | étude 38 §4, lot 5                                                                                                                                                                                    |
 
 **L'hypothèse de départ est confirmée** : le visiteur sans compte n'a aucun fil de retour. Le seul
 geste que la première visite lui propose pour « garder » quelque chose est de créer un compte —
@@ -166,14 +166,14 @@ c'est-à-dire un formulaire, à l'instant où il vient de finir ce qu'il était 
 
 #### T-3 — L'élève qui vient de créer son compte
 
-| Fil | Condition pour qu'il s'active | Quand la première visite le propose | Preuve |
-| --- | --- | --- | --- |
-| Confirmation d'e-mail (inscription par mot de passe) | ouvrir le lien reçu | écran « e-mail envoyé », avec renvoi | **[code]** `auth.tsx:212,252`, `auth-sent-screens.tsx` ; **[prod-db]** 10 comptes sur 78 jamais confirmés ni connectés (33 comptes sont passés par Google) |
-| Classe choisie | assistant d'accueil, ou la carte en un geste depuis une quête (é38 lot 2) | à l'arrivée | **[prod-db]** 27 élèves sur 60 sans classe |
-| Série (`current_streak`) | avoir fini **une** quête | — | **[code]** `award_xp` ; **[prod-db]** 36 élèves sur 60 n'ont jamais été actifs ; 15 ne l'ont été que le jour de l'inscription |
-| Missions du jour, pack de bienvenue, « Ta semaine » | revenir de soi-même au hall | visibles au hall | **[code]** `dashboard.tsx` zones 1-2 |
-| Push : série en danger, série perdue, jalon, plan du jour, ligue, « reprends » à J+7 | T-1 réparé **et** permission accordée **et**, pour chacune, une activité passée (`current_streak > 0`, ou `last_active_date` renseignée, ou un duel) | carte au bas du hall et dans le paramétrage — jamais sur l'écran de résultat | **[code]** `push_daily_audiences`, `dashboard.tsx:649-655`, `parametrage.tsx:468` |
-| E-mail | — | — | **[code]** aucun envoi hors authentification Supabase (ni prestataire, ni gabarit) |
+| Fil                                                                                  | Condition pour qu'il s'active                                                                                                                        | Quand la première visite le propose                                          | Preuve                                                                                                                                                     |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Confirmation d'e-mail (inscription par mot de passe)                                 | ouvrir le lien reçu                                                                                                                                  | écran « e-mail envoyé », avec renvoi                                         | **[code]** `auth.tsx:212,252`, `auth-sent-screens.tsx` ; **[prod-db]** 10 comptes sur 78 jamais confirmés ni connectés (33 comptes sont passés par Google) |
+| Classe choisie                                                                       | assistant d'accueil, ou la carte en un geste depuis une quête (é38 lot 2)                                                                            | à l'arrivée                                                                  | **[prod-db]** 27 élèves sur 60 sans classe                                                                                                                 |
+| Série (`current_streak`)                                                             | avoir fini **une** quête                                                                                                                             | —                                                                            | **[code]** `award_xp` ; **[prod-db]** 36 élèves sur 60 n'ont jamais été actifs ; 15 ne l'ont été que le jour de l'inscription                              |
+| Missions du jour, pack de bienvenue, « Ta semaine »                                  | revenir de soi-même au hall                                                                                                                          | visibles au hall                                                             | **[code]** `dashboard.tsx` zones 1-2                                                                                                                       |
+| Push : série en danger, série perdue, jalon, plan du jour, ligue, « reprends » à J+7 | T-1 réparé **et** permission accordée **et**, pour chacune, une activité passée (`current_streak > 0`, ou `last_active_date` renseignée, ou un duel) | carte au bas du hall et dans le paramétrage — jamais sur l'écran de résultat | **[code]** `push_daily_audiences`, `dashboard.tsx:649-655`, `parametrage.tsx:468`                                                                          |
+| E-mail                                                                               | —                                                                                                                                                    | —                                                                            | **[code]** aucun envoi hors authentification Supabase (ni prestataire, ni gabarit)                                                                         |
 
 Trois constats :
 
@@ -190,13 +190,13 @@ lot 5), rachat de série, bilan de départ (é39). Cette étude n'y ajoute pas d
 
 #### T-4 — Le parent
 
-| Fil | Condition | Preuve |
-| --- | --- | --- |
-| Suivi sans compte par code Alliance | recevoir le code de l'enfant ; `/suivi?code=…` le pré-remplit | **[code]** `suivi.tsx:32` |
-| « Se souvenir de ce code sur cet appareil » | case cochée par défaut | **[code]** `remembered-code.ts` ; **[nav]** `/suivi` |
-| Partage du bilan (WhatsApp / feuille de partage) | bilan affiché — le parent **envoie**, il ne reçoit pas | **[code]** `suivi.tsx:287-292` |
-| Push « bilan famille » du dimanche | compte parent + lien actif + permission ; **T-1** | **[code]** `dispatchParentDigest` ; **[prod-db]** 17 parents, 2 liens actifs, 0 souscription |
-| Comment le parent apprend que le site existe | la page d'accueil (« Je suis parent ») ; côté élève, le code se copie depuis Paramétrage › Mon compte | **[code]** `parametrage.tsx:397-410` (bouton « copier », aucun partage) |
+| Fil                                              | Condition                                                                                             | Preuve                                                                                       |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Suivi sans compte par code Alliance              | recevoir le code de l'enfant ; `/suivi?code=…` le pré-remplit                                         | **[code]** `suivi.tsx:32`                                                                    |
+| « Se souvenir de ce code sur cet appareil »      | case cochée par défaut                                                                                | **[code]** `remembered-code.ts` ; **[nav]** `/suivi`                                         |
+| Partage du bilan (WhatsApp / feuille de partage) | bilan affiché — le parent **envoie**, il ne reçoit pas                                                | **[code]** `suivi.tsx:287-292`                                                               |
+| Push « bilan famille » du dimanche               | compte parent + lien actif + permission ; **T-1**                                                     | **[code]** `dispatchParentDigest` ; **[prod-db]** 17 parents, 2 liens actifs, 0 souscription |
+| Comment le parent apprend que le site existe     | la page d'accueil (« Je suis parent ») ; côté élève, le code se copie depuis Paramétrage › Mon compte | **[code]** `parametrage.tsx:397-410` (bouton « copier », aucun partage)                      |
 
 Le parent est le seul public adulte, joignable par WhatsApp, et celui dont le retour entraîne
 celui de l'enfant. Aujourd'hui **rien ne part de l'élève vers lui** en moins de cinq gestes.
@@ -246,17 +246,17 @@ la Search Console et les pages vues.
 
 ### 1.3 Les trous, classés par ce qu'ils coûtent
 
-| # | Trou | Qui | À quel moment | Preuve |
-| --- | --- | --- | --- | --- |
-| **G-1** | Le push est éteint : la carte ne s'affiche jamais | tout compte, élève et parent | toute la vie du compte | T-1 |
-| **G-2** | Aucun fil de retour sans compte | le visiteur — l'audience principale | à la fin de la première visite | T-2 |
-| **G-3** | Inscrit, jamais joué : dans aucune audience | 36 élèves sur 60 | entre l'inscription et la première quête | T-3 |
-| **G-4** | Le rappel n'est jamais proposé après une victoire, et son texte dit la perte | l'élève qui vient de jouer | écran de résultat de la première quête | T-3, `fr.ts:810` |
-| **G-5** | iPhone : ni push sans installation, ni invitation à installer | tout utilisateur iOS | — | T-1, T-2 |
-| **G-6** | Rien ne part de l'élève vers son parent | l'élève, donc le parent | après une réussite ; au paramétrage | T-4 |
-| **G-7** | « Revenu » n'est lu nulle part pour un visiteur ; « a joué » n'est pas séparé de « s'est inscrit » | l'équipe | chaque décision de ce plan | T-5 |
-| **G-8** | Le rendez-vous de la semaine est vide et invisible avant le compte | tous | le lundi | T-2, TL;DR 6 |
-| **G-9** | Aucun canal vers un adulte qui n'a pas accordé le push | le parent | — | T-3, T-4 |
+| #       | Trou                                                                                               | Qui                                 | À quel moment                            | Preuve           |
+| ------- | -------------------------------------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------- | ---------------- |
+| **G-1** | Le push est éteint : la carte ne s'affiche jamais                                                  | tout compte, élève et parent        | toute la vie du compte                   | T-1              |
+| **G-2** | Aucun fil de retour sans compte                                                                    | le visiteur — l'audience principale | à la fin de la première visite           | T-2              |
+| **G-3** | Inscrit, jamais joué : dans aucune audience                                                        | 36 élèves sur 60                    | entre l'inscription et la première quête | T-3              |
+| **G-4** | Le rappel n'est jamais proposé après une victoire, et son texte dit la perte                       | l'élève qui vient de jouer          | écran de résultat de la première quête   | T-3, `fr.ts:810` |
+| **G-5** | iPhone : ni push sans installation, ni invitation à installer                                      | tout utilisateur iOS                | —                                        | T-1, T-2         |
+| **G-6** | Rien ne part de l'élève vers son parent                                                            | l'élève, donc le parent             | après une réussite ; au paramétrage      | T-4              |
+| **G-7** | « Revenu » n'est lu nulle part pour un visiteur ; « a joué » n'est pas séparé de « s'est inscrit » | l'équipe                            | chaque décision de ce plan               | T-5              |
+| **G-8** | Le rendez-vous de la semaine est vide et invisible avant le compte                                 | tous                                | le lundi                                 | T-2, TL;DR 6     |
+| **G-9** | Aucun canal vers un adulte qui n'a pas accordé le push                                             | le parent                           | —                                        | T-3, T-4         |
 
 G-1 passe devant G-2 bien qu'il touche moins de monde : il coûte cinq variables et un redéploiement, et tant
 qu'il dure le lot 2 et le digest parent de é08 n'ont aucun effet. G-7 n'est pas « moins grave » que les autres : il est traité
@@ -274,13 +274,13 @@ qu'il dure le lot 2 et le digest parent de é08 n'ont aucun effet. G-7 n'est pas
 
 ### 1.5 Indicateurs (P-6)
 
-| KPI | Définition | Où on le lit | Départ (2026-11-12) | Cible |
-| --- | --- | --- | --- | --- |
-| **KPI-1** retour du visiteur | navigateurs émettant `visit_first` une semaine N qui émettent `visit_returned` dans les 7 jours ; recoupé par `resume_card_clicked{days_since ≥ 1}` (é38 lot 5), borne basse déjà en place | PostHog (insight posé au lot 0) ; ligne du relevé hebdomadaire si Q-2 | non mesuré | **instrument d'abord** ; la cible se fixe après quatre semaines |
-| **KPI-2** première quête | inscrits de la semaine N ayant un jour d'activité dans les 7 jours | `admin_return_overview` → `/admin/engagement` et #962 | 24/60 depuis l'origine ; 6/13 sur 30 jours | ≥ 70 % |
-| **KPI-3** portée du push | élèves actifs sur 30 jours ayant ≥ 1 souscription | idem | 0/8 | ≥ 30 % |
-| **KPI-4** D7 des comptes | KPI-B de é31, inchangé | `/admin/engagement` | bruit (`n` de 1 à 5) | lu, pas ciblé, tant que `n` < 20 |
-| **KPI-5** installation | `install_invite{action:"accepted"}` / `{action:"shown"}` | PostHog | non mesuré | instrument d'abord |
+| KPI                          | Définition                                                                                                                                                                                 | Où on le lit                                                          | Départ (2026-11-12)                        | Cible                                                           |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------------- |
+| **KPI-1** retour du visiteur | navigateurs émettant `visit_first` une semaine N qui émettent `visit_returned` dans les 7 jours ; recoupé par `resume_card_clicked{days_since ≥ 1}` (é38 lot 5), borne basse déjà en place | PostHog (insight posé au lot 0) ; ligne du relevé hebdomadaire si Q-2 | non mesuré                                 | **instrument d'abord** ; la cible se fixe après quatre semaines |
+| **KPI-2** première quête     | inscrits de la semaine N ayant un jour d'activité dans les 7 jours                                                                                                                         | `admin_return_overview` → `/admin/engagement` et #962                 | 24/60 depuis l'origine ; 6/13 sur 30 jours | ≥ 70 %                                                          |
+| **KPI-3** portée du push     | élèves actifs sur 30 jours ayant ≥ 1 souscription                                                                                                                                          | idem                                                                  | 0/8                                        | ≥ 30 %                                                          |
+| **KPI-4** D7 des comptes     | KPI-B de é31, inchangé                                                                                                                                                                     | `/admin/engagement`                                                   | bruit (`n` de 1 à 5)                       | lu, pas ciblé, tant que `n` < 20                                |
+| **KPI-5** installation       | `install_invite{action:"accepted"}` / `{action:"shown"}`                                                                                                                                   | PostHog                                                               | non mesuré                                 | instrument d'abord                                              |
 
 Garde-fou lu avec KPI-3 : `push_optout` / `push_optin` sur la même période. Au-delà de 25 %, le
 lot 2 est suspect et se relit avant tout ajout d'audience (R-8).
@@ -356,16 +356,16 @@ Tout est mobile d'abord ; en RTL les icônes directionnelles se retournent (`rtl
 **La mesure**
 
 - **R-1** — La mémoire de visite vit **sur l'appareil** : `localStorage["na9ra.visit"] =
-  { first: "AAAA-MM-JJ", last: "AAAA-MM-JJ" }` (jour de Tunis, `appLocalDate`). Elle n'est jamais
+{ first: "AAAA-MM-JJ", last: "AAAA-MM-JJ" }` (jour de Tunis, `appLocalDate`). Elle n'est jamais
   envoyée. Stockage indisponible ⇒ aucun événement de visite (sens sûr : on sous-compte).
 - **R-2** — Au premier rendu client d'une session de navigation : mémoire absente ⇒ écrire
   `first = last = aujourd'hui` et émettre `visit_first{entry_surface, standalone}` ; mémoire
   présente et `last < aujourd'hui` ⇒ émettre `visit_returned{days_bucket, has_account, entry,
-  standalone}` puis `last = aujourd'hui`. Au plus un événement de visite par jour et par appareil.
+standalone}` puis `last = aujourd'hui`. Au plus un événement de visite par jour et par appareil.
 - **R-3** — `days_bucket` ∈ `"1" | "2-7" | "8-30" | "31+"` : jamais le nombre exact, jamais la
   date. `entry_surface` ∈ `chapitre | exercice | matiere | niveau | accueil | test | suivi |
-  compte | autre` (déduit du chemin, jamais l'URL). `entry` ∈ `pwa | push | resume_link | share |
-  direct` (paramètre `?src=` lu puis retiré de l'URL par `history.replaceState`). `has_account`
+compte | autre` (déduit du chemin, jamais l'URL). `entry` ∈ `pwa | push | resume_link | share |
+direct` (paramètre `?src=` lu puis retiré de l'URL par `history.replaceState`). `has_account`
   est un booléen de session.
 - **R-4** — Zéro donnée personnelle : aucune propriété ne porte d'identifiant de compte, de
   chapitre, de score ou de texte saisi. Le test de propriétés de é31 (liste blanche de types) est
@@ -402,7 +402,7 @@ Tout est mobile d'abord ; en RTL les icônes directionnelles se retournent (`rtl
   échec, jamais si l'application tourne déjà installée (`display-mode: standalone` ou
   `navigator.standalone`).
 - **R-12** — Mémoire commune des invitations : `localStorage["na9ra.nudge"] = { [kind]: { shown:
-  "AAAA-MM-JJ", dismissed: n } }`, `kind` ∈ `push | install | parent`. Règle unique : pas deux
+"AAAA-MM-JJ", dismissed: n } }`, `kind` ∈ `push | install | parent`. Règle unique : pas deux
   fois en 14 jours (7 pour `push`), deux refus ⇒ plus jamais, et **une seule invitation par
   écran** (ordre : rappel, installation, parent). Stockage indisponible ⇒ aucune invitation.
 - **R-13** — Android / Chromium : l'événement `beforeinstallprompt` est retenu à son passage ; la
@@ -512,10 +512,10 @@ patron de `comeback`.
 
 **Mémoire d'appareil** (aucune n'atteint le serveur) :
 
-| Clé | Contenu | Durée | Écrite par |
-| --- | --- | --- | --- |
-| `na9ra.visit` | `{ first, last }` — deux jours civils | sans limite ; effacée avec les données du site | lot 0 |
-| `na9ra.nudge` | `{ push?, install?, parent? }` — dernier affichage, nombre de refus | idem | lots 2, 3, 5 |
+| Clé           | Contenu                                                             | Durée                                          | Écrite par   |
+| ------------- | ------------------------------------------------------------------- | ---------------------------------------------- | ------------ |
+| `na9ra.visit` | `{ first, last }` — deux jours civils                               | sans limite ; effacée avec les données du site | lot 0        |
+| `na9ra.nudge` | `{ push?, install?, parent? }` — dernier affichage, nombre de refus | idem                                           | lots 2, 3, 5 |
 
 L'exécuteur du lot 0 décrit la « mémoire de visite » dans `docs/inventaire-traitements-inpdp.md`,
 à la suite du paragraphe qui décrit déjà la mémoire d'appareil du test de niveau (même statut :
@@ -587,12 +587,12 @@ le relevé hebdomadaire lise KPI-1 et KPI-5.
 Quatre événements entrent dans la liste fermée (`product-events.ts`), chacun avec son
 consommateur daté :
 
-| Événement | Propriétés | Consommateur |
-| --- | --- | --- |
-| `visit_first` | `entry_surface`, `standalone` | KPI-1 (dénominateur), dès le lot 0 |
-| `visit_returned` | `days_bucket`, `has_account`, `entry`, `standalone` | KPI-1 ; lecture par `entry` pour juger les lots 3, 4, 5 |
-| `install_invite` | `action` (`shown`/`accepted`/`dismissed`), `platform` (`native`/`ios`), `audience` (`student`/`parent`) | KPI-5, lot 3 |
-| `content_shared` | `intent` (`resume`/`success`/`parent`), `surface`, `method` | lots 4 et 5 ; rapproché de `visit_returned{entry}` |
+| Événement        | Propriétés                                                                                              | Consommateur                                            |
+| ---------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| `visit_first`    | `entry_surface`, `standalone`                                                                           | KPI-1 (dénominateur), dès le lot 0                      |
+| `visit_returned` | `days_bucket`, `has_account`, `entry`, `standalone`                                                     | KPI-1 ; lecture par `entry` pour juger les lots 3, 4, 5 |
+| `install_invite` | `action` (`shown`/`accepted`/`dismissed`), `platform` (`native`/`ios`), `audience` (`student`/`parent`) | KPI-5, lot 3                                            |
+| `content_shared` | `intent` (`resume`/`success`/`parent`), `surface`, `method`                                             | lots 4 et 5 ; rapproché de `visit_returned{entry}`      |
 
 `push_optin` gagne une propriété `moment` (`victory` / `hall` / `settings` / `parent`).
 Journal serveur : `Push cron complete` porte déjà `byTag` ; rien à ajouter.
@@ -633,15 +633,15 @@ Journal serveur : `Push cron complete` porte déjà `byTag` ; rien à ajouter.
 
 ## 4. Plan d'exécution en lots
 
-| lot | contenu (résumé) | fichiers/objets créés ou touchés | tests exigés | dépend de |
-| --- | --- | --- | --- | --- |
-| 0 | La mesure du retour : `visit_first` / `visit_returned`, `admin_return_overview`, bloc console, trois lignes au relevé | `visit-memory.ts`, `entry-source.ts`, `product-events.ts`, `__root.tsx`, migration A, `engagement.server.ts`, `engagement-admin.tsx`, script `reports:engagement`, inventaire INPDP | Vitest : classement des jours, un événement par jour, stockage absent, `?src=` hostile, zéro PII ; pgTAP : garde admin, cohortes, fenêtres non écoulées ; `db:check-chain` | — |
-| 1 | Le push se prouve : `push` dans `/api/health`, garde de build, assertion nocturne (le geste Vercel est le prérequis P-0, hors lot) | `src/server.ts` (santé), script de garde de build, workflow nocturne public, `docs/environment-variables.md` (le constat après coup) | Vitest : santé ; garde de build (échoue si la clé manque en production) | — |
-| 2 | Le rappel après une victoire, en gain ; singulier ; audience `first-quest` — **famille B** | `nudge-memory.ts`, `enable-push-card.tsx`, `use-push.ts` (`moment`), `quest-result-nudges.tsx`, `quest.$exerciseId.tsx`, `push-copy.ts`, `push-audience.ts`, migration B, i18n | Vitest : R-6 (quatre conditions), deux refus, R-9, priorité de `first-quest` ; pgTAP : J+1, J+3, jamais J+2 ni J+4, jamais un élève actif | 1 ; effet : P-0 |
-| 3 | L'invitation à installer après une réussite | `install-prompt.ts`, `install-invite.tsx`, `exercice.$exerciseId.tsx`, `quest.$exerciseId.tsx`, `suivi.tsx`, `_public.tsx`, `_authenticated.tsx`, `manifest.webmanifest`, `product-events.ts`, i18n | Vitest : modes native / ios / none, standalone, R-11, R-12 ; e2e `public-anon` : événement simulé ⇒ carte après réussite, absente après échec ; `build:check` + `smoke:shell` | 0 |
-| 4 | Le lien de reprise et le partage d'une réussite | `share-text.ts`, `keep-row.tsx`, `exercice.$exerciseId.tsx`, `lesson-reader.tsx`, `suivi.tsx`, `parent-report.tsx`, `placement-bilan.ts`, `product-events.ts`, i18n | Vitest : textes R-16 dans les trois langues, R-17, repli partage → WhatsApp → copie, non-régression des trois appelants ; e2e `public-anon` : lien ouvert ⇒ chapitre, `?src=` retiré de l'URL | 0 |
-| 5 | Le parent dans la boucle : « Inviter mon parent », installation sur `/suivi` | `parametrage.tsx`, `quest-result-nudges.tsx`, `quest.$exerciseId.tsx`, `suivi.tsx`, i18n | Vitest : R-19 (texte, lien), R-20 (lien actif ⇒ pas de carte), ordre R-12 ; e2e `authed` : le lien ouvre `/suivi` avec le bilan | 3, 4 |
-| 6 | *Gelé (doctrine verticale)* — un défi de la semaine visible avant le compte | — | — | Q-3 |
+| lot | contenu (résumé)                                                                                                                   | fichiers/objets créés ou touchés                                                                                                                                                                    | tests exigés                                                                                                                                                                                  | dépend de       |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| 0   | La mesure du retour : `visit_first` / `visit_returned`, `admin_return_overview`, bloc console, trois lignes au relevé              | `visit-memory.ts`, `entry-source.ts`, `product-events.ts`, `__root.tsx`, migration A, `engagement.server.ts`, `engagement-admin.tsx`, script `reports:engagement`, inventaire INPDP                 | Vitest : classement des jours, un événement par jour, stockage absent, `?src=` hostile, zéro PII ; pgTAP : garde admin, cohortes, fenêtres non écoulées ; `db:check-chain`                    | —               |
+| 1   | Le push se prouve : `push` dans `/api/health`, garde de build, assertion nocturne (le geste Vercel est le prérequis P-0, hors lot) | `src/server.ts` (santé), script de garde de build, workflow nocturne public, `docs/environment-variables.md` (le constat après coup)                                                                | Vitest : santé ; garde de build (échoue si la clé manque en production)                                                                                                                       | —               |
+| 2   | Le rappel après une victoire, en gain ; singulier ; audience `first-quest` — **famille B**                                         | `nudge-memory.ts`, `enable-push-card.tsx`, `use-push.ts` (`moment`), `quest-result-nudges.tsx`, `quest.$exerciseId.tsx`, `push-copy.ts`, `push-audience.ts`, migration B, i18n                      | Vitest : R-6 (quatre conditions), deux refus, R-9, priorité de `first-quest` ; pgTAP : J+1, J+3, jamais J+2 ni J+4, jamais un élève actif                                                     | 1 ; effet : P-0 |
+| 3   | L'invitation à installer après une réussite                                                                                        | `install-prompt.ts`, `install-invite.tsx`, `exercice.$exerciseId.tsx`, `quest.$exerciseId.tsx`, `suivi.tsx`, `_public.tsx`, `_authenticated.tsx`, `manifest.webmanifest`, `product-events.ts`, i18n | Vitest : modes native / ios / none, standalone, R-11, R-12 ; e2e `public-anon` : événement simulé ⇒ carte après réussite, absente après échec ; `build:check` + `smoke:shell`                 | 0               |
+| 4   | Le lien de reprise et le partage d'une réussite                                                                                    | `share-text.ts`, `keep-row.tsx`, `exercice.$exerciseId.tsx`, `lesson-reader.tsx`, `suivi.tsx`, `parent-report.tsx`, `placement-bilan.ts`, `product-events.ts`, i18n                                 | Vitest : textes R-16 dans les trois langues, R-17, repli partage → WhatsApp → copie, non-régression des trois appelants ; e2e `public-anon` : lien ouvert ⇒ chapitre, `?src=` retiré de l'URL | 0               |
+| 5   | Le parent dans la boucle : « Inviter mon parent », installation sur `/suivi`                                                       | `parametrage.tsx`, `quest-result-nudges.tsx`, `quest.$exerciseId.tsx`, `suivi.tsx`, i18n                                                                                                            | Vitest : R-19 (texte, lien), R-20 (lien actif ⇒ pas de carte), ordre R-12 ; e2e `authed` : le lien ouvre `/suivi` avec le bilan                                                               | 3, 4            |
+| 6   | _Gelé (doctrine verticale)_ — un défi de la semaine visible avant le compte                                                        | —                                                                                                                                                                                                   | —                                                                                                                                                                                             | Q-3             |
 
 #### Le prérequis P-0 — le geste Vercel (propriétaire, remonté le 2026-11-12)
 
@@ -670,11 +670,11 @@ Ce n'est pas un lot : aucune session du jour n'a l'accès à l'équipe Vercel (4
 
 #### Deux familles de lots
 
-| Famille | Lots | Ce qui les distingue |
-| --- | --- | --- |
-| **A — aucun geste du propriétaire** : exécutables et **utiles** dès la fusion de l'étude | **0** (mesure du retour) · **1** (sonde et gardes du push — elles disent « éteint » tant que P-0 n'est pas fait, et c'est leur rôle) · **3** (installation) · **4** (lien de reprise, partage) · **5** (inviter son parent) | rien n'y dépend d'une variable, d'un prestataire ni d'une question ouverte |
-| **B — attendent le push (P-0)** pour avoir un effet | **2** (rappel après une victoire, singulier, audience `first-quest`) | fusionnable avant P-0 sans risque — la carte reste masquée tant que la clé manque, l'audience ne trouve aucune souscription — mais **sans effet** ; ses critères en production ne se constatent qu'après P-0 |
-| **Gelé** | **6** (défi de la semaine avant le compte) | attend Q-3 — une ouverture de capacité ne se lance pas sans arbitrage (P-7) |
+| Famille                                                                                  | Lots                                                                                                                                                                                                                        | Ce qui les distingue                                                                                                                                                                                         |
+| ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **A — aucun geste du propriétaire** : exécutables et **utiles** dès la fusion de l'étude | **0** (mesure du retour) · **1** (sonde et gardes du push — elles disent « éteint » tant que P-0 n'est pas fait, et c'est leur rôle) · **3** (installation) · **4** (lien de reprise, partage) · **5** (inviter son parent) | rien n'y dépend d'une variable, d'un prestataire ni d'une question ouverte                                                                                                                                   |
+| **B — attendent le push (P-0)** pour avoir un effet                                      | **2** (rappel après une victoire, singulier, audience `first-quest`)                                                                                                                                                        | fusionnable avant P-0 sans risque — la carte reste masquée tant que la clé manque, l'audience ne trouve aucune souscription — mais **sans effet** ; ses critères en production ne se constatent qu'après P-0 |
+| **Gelé**                                                                                 | **6** (défi de la semaine avant le compte)                                                                                                                                                                                  | attend Q-3 — une ouverture de capacité ne se lance pas sans arbitrage (P-7)                                                                                                                                  |
 
 L'audience « compte créé, jamais joué » (`first-quest`, migration B) est de la famille B par son
 effet : elle ne joint que des élèves ayant accordé le push. Sa partie **mesure** — combien
@@ -702,14 +702,14 @@ touche `index.tsx`, `programme.tsx`,
 que `push-copy.ts` / `push-audience.ts`, et le lot 4 retouche `parent-report.tsx` (une ligne :
 l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
 
-- [ ] **Lot 0 — La mesure du retour.**
+- [x] **Lot 0 — La mesure du retour** (livré, moteur #1294).
       **Périmètre** : R-1 à R-4 ; migration A ; `getReturnOverview` ; bloc « Le retour » de
       `/admin/engagement` ; trois lignes au relevé hebdomadaire ; les quatre événements déclarés
       au catalogue — `visit_first` et `visit_returned` en `live: true`, `install_invite` et
       `content_shared` en `live: false` avec le lot qui les câblera ; ligne à l'inventaire INPDP.
       **Critères** (US-1) : première ouverture d'un navigateur neuf ⇒ un `visit_first`, aucun
       `visit_returned` ; réouverture le même jour ⇒ rien ; le lendemain ⇒ un `visit_returned
-      {days_bucket:"1"}` ; `localStorage` jeté ⇒ rien n'est émis et rien ne casse ;
+    {days_bucket:"1"}` ; `localStorage` jeté ⇒ rien n'est émis et rien ne casse ;
       `/?src=pwa` ⇒ `entry:"pwa"` et l'URL affichée redevient `/` ; `/admin/engagement` affiche
       huit cohortes avec « mesurable » distingué de « perdu » ; le relevé dit « première quête :
       x/y ». `index-` ne grossit pas de plus de 1 Ko.
@@ -874,3 +874,38 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
   projets Vercel et le plafond de déploiement atteint à 09:06 UTC (contrainte de livraison, §4),
   le volume sur quatorze jours (T-6), le relevé « première visite » et les trois événements déjà
   entrés au catalogue (T-5 bis).
+
+- **2026-11-12 — lot 0 livré (moteur #1294).** La mesure du retour. Côté appareil (R-1 à R-4) :
+  `visit-memory.ts` (`localStorage["na9ra.visit"] = { first, last }`, deux jours civils de Tunis,
+  jamais envoyés ; stockage indisponible, plein ou illisible ⇒ aucun événement), `entry-source.ts`
+  (`?src=` lu puis retiré de l'adresse ; surface d'arrivée déduite du chemin), `visit-beacon.ts`
+  importé dynamiquement après l'hydratation depuis `__root` — `visit_first{entry_surface,
+standalone}` ou `visit_returned{days_bucket, has_account, entry, standalone}`, au plus un par jour
+  et par appareil. Catalogue : quatre lignes ajoutées après les existantes, `visit_first` et
+  `visit_returned` câblés, `install_invite` (lot 3) et `content_shared` (lot 4) déclarés non câblés.
+  Côté comptes : migration `20261112160000_admin_return_overview` (fonction neuve, `SECURITY
+DEFINER`, garde `is_admin()`, séparée de `admin_engagement_overview`), `getReturnOverview`, le bloc
+  « Le retour » de `/admin/engagement` (« mesurable », « en attente » et « perdu » sont trois
+  colonnes), trois lignes au relevé hebdomadaire (première quête x/y, portée du push, jamais joué),
+  la mémoire de visite à l'inventaire INPDP. pgTAP 112 (25 assertions). Stop-point tenu : aucun écran
+  ne change hors la console admin.
+  **Vérifié en production le 2026-11-13 (00:22 UTC, production sur `995c372`)**, Chromium, Pixel 7
+  émulé, requêtes de mesure d'audience interceptées et bloquées par la sonde : un navigateur neuf
+  arrivant sur `/programme?src=pwa` voit son adresse redevenir `/programme`, écrit `na9ra.visit` au
+  jour de Tunis et émet un `visit_first`, un seul ; un rechargement n'émet rien ; la mémoire reculée
+  de trois jours, l'ouverture de `/` émet un `visit_returned`. La migration est appliquée
+  (`db-migrate-prod` vert sur le commit du lot, 20:30 UTC). **Non vérifié** : le bloc de la console
+  et les valeurs de `admin_return_overview()` en production — pas de compte administrateur en
+  session ; à la première lecture, attendre de l'ordre de 60 élèves, 36 sans aucun jour d'activité,
+  0 élève et 0 parent joignables par push, 2 liens parent actifs (agrégats du 2026-11-12).
+  Écarts acceptés : (a) le retrait de `?src=` passe par le `replaceState` NATIF et non par celui du
+  routeur, qui re-résolvait la page et émettait une seconde page vue ; (b) **un plafond du budget
+  runtime est relevé d'une unité** — `/programme`, 40 → 41 requêtes : `main` était à 40/40 avant le
+  lot, la requête de plus est le chunk différé `visit-beacon` (3,4 Ko, chargé après l'hydratation) ;
+  la ligne qui le justifie est dans `perf/runtime/budget.mjs`, aucun plafond d'octets ne bouge, et
+  une seconde requête a été évitée en faisant calculer le jour de Tunis par la racine ; `index-`
+  238,60 → 238,97 Ko (+0,37, pour 1 Ko permis) ; (c) la migration porte l'horodatage `160000` et non
+  `150000`, pris entre-temps par la révocation de sécurité (#1287) ; (d) l'exécuteur n'a pas pu lire
+  ni écrire ce dépôt (accès refusé à sa session) : il a travaillé sur les sections recopiées par la
+  session qui orchestre, et cette entrée est posée par elle.
+  Suite : les lots 3 et 4 se jugent sur `visit_returned{entry}` — ils partent un par un.
