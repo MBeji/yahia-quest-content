@@ -3,7 +3,9 @@
 > **Statut** : **brouillon** (2026-11-12) — rédigée depuis une session cloud, sur un relevé du jour :
 > code du moteur à `b25edd6` (#1257), bundle servi par `www.na9ranal3ab.tn`, base de production lue
 > en agrégats (lecture seule, aucune ligne nominative), parcours visiteur joué dans Chromium en
-> émulation Pixel 7. Cinq questions au propriétaire (§7). Deux familles de lots (§4) : 0, 1, 3, 4 et 5 ne dépendent
+> émulation Pixel 7. **Au 2026-11-13 : lots 0 à 5 livrés et en production ; seul reste le lot 6,
+> gelé sur Q-3** — le passage en « livrée » attend l'arbitrage du propriétaire (§8).
+> Cinq questions au propriétaire (§7). Deux familles de lots (§4) : 0, 1, 3, 4 et 5 ne dépendent
 > d'aucun geste du propriétaire ; le lot 2 attend, pour son effet, le geste Vercel (prérequis P-0).
 > **Priorité** : 40 · **Valeur** : 🔁 la commande du propriétaire, mot pour mot — « je veux que les
 > utilisateurs reviennent après une première visite ». Le relevé dit pourquoi ils ne reviennent
@@ -722,7 +724,7 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
       **Stop-point** : aucune carte, aucun bouton, aucun changement d'écran hors la console admin ;
       `resume_card_clicked`, `public_practice_started` et `public_gate_shown` ne sont ni
       redéclarés ni modifiés — le lot ajoute ses quatre lignes au catalogue tel qu'il le trouve.
-- [ ] **Lot 1 — Le push se prouve** (famille A).
+- [x] **Lot 1 — Le push se prouve** (livré, moteur #1314, complété par #1321).
       **Périmètre** : (a) `push` dans `/api/health` — `configured` si les quatre variables
       serveur sont présentes, aucune valeur rendue ; (b) une garde de build — `build:check`
       échoue quand `VERCEL_ENV=production` et que `VITE_VAPID_PUBLIC_KEY` est vide ; (c) une
@@ -741,7 +743,7 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
       production tant que P-0 n'est pas fait : elle se fusionne **après** P-0, ou en
       avertissement d'abord puis en échec — à l'exécuteur de constater l'état de P-0 avant de
       choisir, et de l'écrire dans sa PR.
-- [ ] **Lot 2 — Le rappel après une victoire** (famille B — effet après P-0).
+- [x] **Lot 2 — Le rappel après une victoire** (livré, moteur #1317).
       **Périmètre** : R-5 à R-10, R-12 pour `push` ; migration B ; `first-quest` dans
       `PUSH_PRIORITY` (avant-dernier) et `PUSH_COPY` (trois langues) ; `push_optin{moment}`.
       **Critères** (US-3, US-4) : quête réussie, permission jamais demandée ⇒ la carte paraît sous
@@ -1033,3 +1035,39 @@ DEFINER`, garde `is_admin()`, séparée de `admin_engagement_overview`), `getRet
   catalogue des événements en clair sort du module que toutes les pages chargent : `/` 256,5 Ko et
   `/programme` 261,7 Ko de JavaScript (−1,2 Ko chacune). Suite e2e connectée verte (run 112).
   **Non vérifié en production** : l'émission réelle de `parent_invite` (carte connectée, aucun compte).
+- **2026-11-13 — Lot 1 livré (moteur #1314, `c6f0ac9` ; suite #1321, `135e422`).** Livré :
+  `/api/health` rend `push: "configured" | "unconfigured"` (présence des quatre variables
+  serveur, jamais une valeur ; `status` n'en dépend pas) ; `scripts/check-push-env.mjs`, appelé
+  par `build-vercel.mjs`, fait échouer le build de production du projet qui sert `www` (désigné
+  par `VERCEL_PROJECT_PRODUCTION_URL`, apex ou `www`) si une des cinq variables manque, si la clé
+  du client diffère de celle du serveur, ou (#1321) si elle n'a pas la forme d'une clé VAPID
+  (`/^B[A-Za-z0-9_-]{86}$/`) ; job nocturne « Push armé en production »
+  (`scripts/ci/check-prod-push.mjs`, trois essais espacés de 15 s depuis #1321) ;
+  `docs/environment-variables.md` et le runbook de rollback disent les gardes. Écart à
+  l'étude : la garde de build vise le projet par son domaine de production, pas par
+  `VERCEL_ENV` seul — le dépôt alimentait deux projets Vercel (le second, sans domaine, est
+  supprimé par le propriétaire le 2026-11-13). **Vérifié en production** : `push:"configured"`
+  sur `/api/health`, `check-prod-push.mjs` vert. **Non vérifié** : le premier passage du job
+  nocturne (2026-11-14, 01:00 UTC).
+- **2026-11-13 — Lot 2 livré (moteur #1317, `5f27658`).** Livré : R-5 à R-10. La carte de rappel
+  est le premier candidat de `NudgeSlot` sur l'écran de résultat d'une quête réussie (rappel →
+  installation → parent), seulement si le navigateur n'a rien décidé ; « Plus tard » deux fois ⇒
+  plus jamais sur cet écran ; accordé ou refusé par le navigateur ⇒ plus jamais ; fenêtre
+  refermée ⇒ un refus. Texte en gain au hall et au paramétrage aussi (« danger » retiré).
+  `push_optin{moment}` : `victory`, `hall`, `settings`, `parent`. Singulier d'un jour (R-9) dans
+  les trois langues. Migration additive `20261113120000` : `push_daily_audiences` ré-émise avec
+  `first-quest` (inscrit la veille ou à J−3, jamais actif), avant-dernière dans
+  `PUSH_PRIORITY`. Écart à l'étude : `NudgeSlot` gagne un champ `pending` — l'état du push se
+  lit en asynchrone, et sans attente le rappel perdait toujours sa place au profit de
+  l'installation ; l'attente est bornée à 1,5 s (sans service worker, `serviceWorker.ready` ne
+  se résout jamais). Preuves : Vitest (carte, attente, mémoire, priorité, singulier, moment) ;
+  pgTAP `113_push_first_quest` ; suite pgTAP locale complète verte (120 fichiers, 1 782 tests) ;
+  budgets du bundle tenus (`i18n-fr` 61,89/64 Ko, `dashboard-` 36,85/37). **Vérifié en
+  production** : déploiement `d0ce55d` ; migration appliquée (`first-quest` présent dans la
+  fonction, toujours fermée à `anon` et `authenticated`). **Non vérifié** : la carte vue par un
+  compte connecté (aucun compte de test en production) ; 0 souscription à 16:45 UTC ; premier
+  envoi `first-quest` au cron du soir, s'il existe un inscrit de la veille ou de J−3 abonné.
+- **2026-11-13 — État de l'étude.** Lots 0 à 5 livrés et en production ; le lot 6 reste gelé
+  (Q-3). L'étude reste au statut `brouillon` tant que le propriétaire n'a pas tranché : la
+  déclarer `livrée` (déplacement dans `EtudeRealisé/`, lot 6 gelé consigné) ou la garder ouverte
+  pour le lot 6.
