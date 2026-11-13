@@ -15,18 +15,18 @@
         },
         {
           "id": "b",
-          "text": "R₀ est deux fois plus grande"
+          "text": "R₀ est √2 fois plus grande"
         },
         {
           "id": "c",
-          "text": "R₀ est quatre fois plus grande"
+          "text": "R₀ est deux fois plus grande"
         },
         {
           "id": "d",
-          "text": "R₀ est √2 fois plus grande"
+          "text": "R₀ est quatre fois plus grande"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "c",
       "explanation": "Les paliers valent G₀ = 12 dB et 6 dB, soit T₀ = 4 et 2 : la transmittance maximale est divisée par 2. Comme T₀ = R₁/R₀, R₀ est multipliée par 2 ✓, et la coupure N_h = 1/(2πR₁C) ne change pas, comme on le voit. Une résistance deux fois plus petite doublerait T₀. Une résistance quatre fois plus grande donnerait 12 − 12 = 0 dB. Une résistance √2 fois plus grande confond le rapport des gains avec le facteur 1/√2 des amplitudes à −3 dB.",
       "difficulty": 2
     },
@@ -83,22 +83,22 @@
       "options": [
         {
           "id": "a",
-          "text": "15 dB"
+          "text": "6,5 dB"
         },
         {
           "id": "b",
-          "text": "12 dB"
-        },
-        {
-          "id": "c",
           "text": "9 dB"
         },
         {
+          "id": "c",
+          "text": "12 dB"
+        },
+        {
           "id": "d",
-          "text": "6,5 dB"
+          "text": "15 dB"
         }
       ],
-      "correctOption": "c",
+      "correctOption": "b",
       "explanation": "T₀ = 1 + 3,0/1,0 = 4, donc G₀ = 20 log 4 = 12 dB. À N = 1/(2πR₀C), R₀Cω = 1 : c'est la coupure, où G = G₀ − 3 = 9 dB ✓. La valeur 6,5 dB utilise T₀ = R₁/R₂ = 3 de l'inverseur (9,5 dB) puis retire 3 dB. La valeur 12 dB est le palier. La valeur 15 dB ajoute 3 dB au lieu de les retirer.",
       "difficulty": 3
     },

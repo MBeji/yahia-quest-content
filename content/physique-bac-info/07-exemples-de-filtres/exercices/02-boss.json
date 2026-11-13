@@ -31,27 +31,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un passe-bas RC a une fréquence de coupure N_h = 1,6 kHz. On lui applique une tension de fréquence 3,2 kHz. Quel est son gain à cette fréquence ?",
+      "prompt": "Un passe-bas RC a une fréquence de coupure N_h = 1,6 kHz. On lui applique une tension de fréquence 4,0 kHz. Quel est son gain à cette fréquence ?",
       "options": [
         {
           "id": "a",
-          "text": "−3 dB"
+          "text": "−3,0 dB"
         },
         {
           "id": "b",
-          "text": "−6 dB"
+          "text": "−8,0 dB"
         },
         {
           "id": "c",
-          "text": "−7 dB"
+          "text": "−8,6 dB"
         },
         {
           "id": "d",
-          "text": "−14 dB"
+          "text": "−17 dB"
         }
       ],
       "correctOption": "c",
-      "explanation": "Ici x = N/N_h = 2 donc G = −10 log(1 + x²) = −10 log 5 ≈ −7 dB ✓. La valeur −6 dB est celle de l'asymptote de pente −6 dB par octave, qui ne s'applique bien qu'à N très grande devant N_h. La valeur −3 dB est le gain à la coupure même. La valeur −14 dB vient de −20 log(1 + x²) = −20 log 5 : le facteur 20 est appliqué sans la racine carrée.",
+      "explanation": "Ici x = N/N_h = 4,0/1,6 = 2,5 donc G = −10 log(1 + x²) = −10 log 7,25 ≈ −8,6 dB ✓. La valeur −8,0 dB est celle de l'asymptote −20 log x, qui ne s'applique bien qu'à N très grande devant N_h. La valeur −3,0 dB est le gain à la coupure même. La valeur −17 dB vient de −20 log(1 + x²) = −20 log 7,25 : le facteur 20 est appliqué sans la racine carrée.",
       "difficulty": 2
     },
     {
