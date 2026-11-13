@@ -49,7 +49,7 @@
         "tolerance": 0.02,
         "unit": "µF"
       },
-      "explanation": "Comme Q = 1/(R·C·ω₀), C = 1/(Q·R·ω₀) = 1 / (8,0 × 25 × 2π × 800) = 1 / (1,005 × 10⁶) ≈ 9,9 × 10⁻⁷ F, soit 0,995 µF ✓ (on trouve ensuite L = Q·R/ω₀ ≈ 40 mH).",
+      "explanation": "Comme Q = 1/(R·C·ω₀), C = 1/(Q·R·ω₀) = 1 / (8,0 × 25 × 2π × 800) = 1 / (1,005 × 10⁶) ≈ 9,95 × 10⁻⁷ F, soit 0,995 µF ✓ (on trouve ensuite L = Q·R/ω₀ ≈ 40 mH).",
       "difficulty": 3
     },
     {
@@ -90,11 +90,11 @@
         },
         {
           "id": "c",
-          "text": "Si Z = 100 Ω, la puissance moyenne vaut 0,50 W"
+          "text": "Si Z = 125 Ω, la puissance moyenne vaut 0,32 W"
         },
         {
           "id": "d",
-          "text": "Si Z = 100 Ω, la puissance moyenne vaut 1,0 W"
+          "text": "Si Z = 125 Ω, la puissance moyenne vaut 0,80 W"
         },
         {
           "id": "e",
@@ -104,7 +104,7 @@
       "answerKey": {
         "correct": ["a", "b", "c"]
       },
-      "explanation": "À N₀, Z = R et P₀ = U²/R = 100/50 = 2,0 W ✓ ; cos φ = 1 donne p = UI·(1 − cos 2ωt) ≥ 0 à tout instant ✓ ; si Z = 100 Ω, I = 10/100 = 0,10 A et P = R·I² = 50 × 0,010 = 0,50 W ✓. 1,0 W est la puissance apparente UI en V·A, sans le facteur cos φ = 0,50. Enfin p(t) oscille à la fréquence 2N, double de celle de u, donc avec la période T/2.",
+      "explanation": "À N₀, Z = R et P₀ = U²/R = 100/50 = 2,0 W ✓ ; cos φ = 1 donne p = UI·(1 − cos 2ωt) ≥ 0 à tout instant ✓ ; si Z = 125 Ω, I = 10/125 = 0,080 A et P = R·I² = 50 × 0,0064 = 0,32 W ✓. 0,80 W est la puissance apparente UI, en V·A, sans le facteur cos φ = R/Z = 0,40. Enfin p(t) oscille à la fréquence 2N, double de celle de u, donc avec la période T/2.",
       "difficulty": 3
     },
     {

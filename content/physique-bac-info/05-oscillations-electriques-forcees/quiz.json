@@ -38,7 +38,7 @@
         },
         {
           "id": "c",
-          "text": "81 Ω"
+          "text": "177 Ω"
         },
         {
           "id": "d",
@@ -46,7 +46,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Z = U/I = 4,5 / 0,018 = 250 Ω ✓ : le rapport est le même avec les valeurs efficaces qu'avec les valeurs maximales, puisque U_m = U√2 et I_m = I√2. 0,25 Ω divise 4,5 par 18 sans convertir les mA en A. 4,0 × 10⁻³ Ω est le quotient inversé I/U. 81 Ω est le produit 4,5 × 18, qui ne correspond à aucune loi.",
+      "explanation": "Z = U/I = 4,5 / 0,018 = 250 Ω ✓ : le rapport est le même avec les valeurs efficaces qu'avec les valeurs maximales, puisque U_m = U√2 et I_m = I√2. 0,25 Ω divise 4,5 par 18 sans convertir les mA en A. 4,0 × 10⁻³ Ω est le quotient inversé I/U. 177 Ω divise la valeur efficace U par la valeur maximale I_m = I√2 = 25,5 mA : on ne mélange pas valeurs efficaces et valeurs maximales.",
       "difficulty": 1
     },
     {
@@ -162,11 +162,11 @@
         },
         {
           "id": "d",
-          "text": "1,1 × 10⁴"
+          "text": "10"
         }
       ],
       "correctOption": "b",
-      "explanation": "Q = Lω₀/(R₀ + r) = 0,15 × 1000 / 75 = 150 / 75 = 2,0 ✓ : la résistance qui compte est R = R₀ + r. 2,5 oublie la résistance r de la bobine : 150/60. 0,50 est l'inverse (R/Lω₀). 1,1 × 10⁴ multiplie Lω₀ par R au lieu de le diviser.",
+      "explanation": "Q = Lω₀/(R₀ + r) = 0,15 × 1000 / 75 = 150 / 75 = 2,0 ✓ : la résistance qui compte est R = R₀ + r. 2,5 oublie la résistance r de la bobine : 150/60. 0,50 est l'inverse (R/Lω₀). 10 ne garde que la résistance r de la bobine : 150/15.",
       "difficulty": 2
     },
     {
@@ -174,7 +174,7 @@
       "options": [
         {
           "id": "a",
-          "text": "0,16"
+          "text": "0,20"
         },
         {
           "id": "b",
@@ -182,15 +182,15 @@
         },
         {
           "id": "c",
-          "text": "0,63"
+          "text": "0,80"
         },
         {
           "id": "d",
-          "text": "0,80"
+          "text": "2,5"
         }
       ],
       "correctOption": "b",
-      "explanation": "Comme P = UI·cos φ, cos φ = P/(UI) = 2,0 / (10 × 0,50) = 0,40 ✓. 0,80 vient de 2P/(UI), qui double P sans raison. 0,16 est le carré de 0,40 et 0,63 sa racine : la relation entre P et cos φ est linéaire, ni quadratique ni en racine.",
+      "explanation": "Comme P = UI·cos φ, cos φ = P/(UI) = 2,0 / (10 × 0,50) = 0,40 ✓. 0,80 applique P = ½·U_m·I_m·cos φ aux valeurs efficaces données, ce qui double cos φ. 0,20 calcule P/(2·U·I), comme si P valait 2·U·I·cos φ. 2,5 est l'inverse UI/P, impossible puisque cos φ ne dépasse jamais 1.",
       "difficulty": 2
     }
   ]

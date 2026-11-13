@@ -183,11 +183,11 @@ Sur la figure, les vecteurs Lω·I_m (vert) et I_m/(Cω) (bleu, décalé pour ê
 :::
 
 ::: verifie À toi : un autre circuit
-R = 80 Ω, Lω = 150 Ω et 1/(Cω) = 90 Ω, avec U_m = 5,0 V. Calculer Z, I_m et tg φ, puis préciser le caractère du circuit.
+R = 80 Ω, Lω = 90 Ω et 1/(Cω) = 150 Ω, avec U_m = 5,0 V. Calculer Z, I_m et tg φ, puis préciser le caractère du circuit.
 
 ---
 
-Lω − 1/(Cω) = 60 Ω, donc Z = √(80² + 60²) = 100 Ω et I_m = 5,0 / 100 = 50 mA. tg φ = (90 − 150) / 80 = −0,75 : φ est négative, i est en retard sur u et le circuit est inductif, puisque Lω > 1/(Cω).
+Lω − 1/(Cω) = −60 Ω, donc Z = √(80² + 60²) = 100 Ω et I_m = 5,0 / 100 = 50 mA. tg φ = (150 − 90) / 80 = +0,75 : φ est positive, i est en avance sur u et le circuit est capacitif, puisque Lω < 1/(Cω).
 :::
 
 ::: retenir
@@ -196,7 +196,7 @@ Fresnel compose les trois tensions comme des vecteurs : Z = √(R² + (Lω − 1
 
 ## 📈 La résonance d'intensité
 
-On garde U_m = 6,0 V et un circuit de L = 0,25 H et C = 1,0 µF. On balaie la fréquence du GBF en lisant I_m : elle monte, passe par un maximum net, puis redescend, comme lorsqu'on tourne le bouton d'une radio vers la bonne station.
+On garde L = 0,25 H et C = 1,0 µF, avec cette fois U_m = 6,0 V. On balaie la fréquence du GBF en lisant I_m : elle monte, passe par un maximum net, puis redescend, comme lorsqu'on tourne le bouton d'une radio vers la bonne station.
 Pour quelle fréquence ce maximum se produit-il, que vaut-il, et quel est le rôle de la résistance ?
 
 ::: definition
@@ -227,7 +227,7 @@ Sur la figure, la droite en pointillés repère N₀ : les deux maxima s'y align
 :::
 
 ::: propriete
-**Ce qui reste vrai** — À N = N₀ : Z = R est minimale, I_m0 = U_m / R est maximale et φ = 0. N₀ ne dépend pas de R : une résistance plus petite donne une résonance **aiguë** (pic haut et étroit), une résistance plus grande une résonance **floue** (pic bas et large). Applications : un poste radio cherche une résonance aiguë pour isoler une station, une chaîne haute fidélité une résonance floue, la plus aplatie possible, pour restituer tous les sons. Cas limite : pour R très grande, la courbe est presque plate.
+**Ce qui reste vrai** — À N = N₀ : Z = R est minimale, I_m0 = U_m / R est maximale et φ = 0. N₀ ne dépend pas de R : une résistance plus petite donne une résonance **aiguë** (pic haut et étroit), une résistance plus grande une résonance **floue** (pic bas et large). Applications : les oscillateurs à quartz (montres, horloges) et le haut-parleur ou le microphone électrodynamique exploitent la résonance ; un poste radio cherche une résonance aiguë pour isoler une station, une chaîne haute fidélité une résonance floue, la plus aplatie possible, pour restituer tous les sons. Cas limite : pour R très grande, la courbe est presque plate.
 :::
 
 ::: verifie À toi : un autre circuit
@@ -365,7 +365,7 @@ Le tableau est calculé pour P = 6,9 kW, U = 230 V et R_l = 0,20 Ω : plus cos �
 :::
 
 ::: piege
-**Erreur : calculer l'intensité par I = P / U, comme si cos φ valait 1.** Pour le second atelier, cela donnerait 6900 / 230 = 30 A au lieu des 60 A de l'étape 3, et des pertes de 180 W au lieu de 720 W. L'erreur tente parce que P = UI en courant continu. Mais ici, la ligne transporte une intensité de plus pour une même puissance active : c'est la puissance apparente UI, plus grande que P, qui détermine I.
+**Erreur : calculer l'intensité par I = P / U, comme si cos φ valait 1.** Pour le second atelier, cela donnerait 6900 / 230 = 30 A au lieu des 60 A de l'étape 3, et des pertes de 180 W au lieu de 720 W. L'erreur tente parce que P = UI en courant continu. Mais ici, la ligne transporte une intensité plus grande pour une même puissance active : c'est la puissance apparente UI, plus grande que P, qui détermine I.
 :::
 
 ::: propriete
