@@ -1,0 +1,111 @@
+{
+  "title": "Test de compréhension ⭐ : Établir le bilan",
+  "questions": [
+    {
+      "prompt": "Que montre la colonne de gauche d'un bilan comptable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ce que l'entreprise possède et utilise, ses actifs"
+        },
+        {
+          "id": "b",
+          "text": "Ce qui a financé ses biens, ses capitaux propres et passifs"
+        },
+        {
+          "id": "c",
+          "text": "Les opérations de la période, classées par date"
+        },
+        {
+          "id": "d",
+          "text": "Les encaissements et décaissements de la période"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La colonne de gauche regroupe les actifs : les biens que l'entreprise possède et utilise, ses emplois. Les sources de financement sont à droite, et l'ordre chronologique des opérations est celui du journal, pas du bilan.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une banque prête 80 000 D à une entreprise pour 5 ans. Dans quelle masse du bilan l'emprunt se range-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aux capitaux propres, car l'argent est entré dans l'entreprise"
+        },
+        {
+          "id": "b",
+          "text": "Aux actifs, car l'argent reçu est un emploi de l'entreprise"
+        },
+        {
+          "id": "c",
+          "text": "Aux passifs courants, car c'est une dette envers un tiers"
+        },
+        {
+          "id": "d",
+          "text": "Aux passifs non courants, car c'est une dette longue"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'emprunt est la source de l'argent reçu : c'est une ressource, donc à droite. Remboursable dans 5 ans, c'est une dette longue, un passif non courant. L'argent reçu, lui, s'ajoute à la banque, à l'actif.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Mme Rim démarre avec un local de 120 000 D, du matériel de 30 000 D et 10 000 D en banque. Elle doit encore 25 000 D au vendeur du matériel. Quel est son capital, en D ?",
+      "answerKey": {
+        "value": 135000,
+        "unit": "D"
+      },
+      "explanation": "Total des actifs : 120 000 + 30 000 + 10 000 = 160 000 D. Capital = 160 000 − 25 000 = 135 000 D ✓. Répondre 160 000 D oublierait la dette de 25 000 D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une entreprise paie par chèque une machine de 8 000 D. Comment évolue le total de son bilan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il baisse de 8 000 D, car la somme en banque diminue de ce montant"
+        },
+        {
+          "id": "b",
+          "text": "Il monte de 8 000 D, car la machine s'ajoute aux actifs de l'entreprise"
+        },
+        {
+          "id": "c",
+          "text": "Il ne change pas, la machine remplaçant la somme en banque"
+        },
+        {
+          "id": "d",
+          "text": "Il ne change pas, le capital baissant de 8 000 D"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La machine entre à l'actif (+8 000 D) et la banque baisse du même montant (−8 000 D) : deux lignes d'actif bougent en sens contraire, le total reste le même ✓. Le capital ne change pas, et ne compter que la hausse ou que la baisse déséquilibrerait le bilan.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une entreprise a 300 000 D de ressources stables et 240 000 D d'emplois stables. Que vaut son fonds de roulement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−60 000 D"
+        },
+        {
+          "id": "b",
+          "text": "60 000 D"
+        },
+        {
+          "id": "c",
+          "text": "240 000 D"
+        },
+        {
+          "id": "d",
+          "text": "540 000 D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "FDR = ressources stables − emplois stables = 300 000 − 240 000 = 60 000 D ✓, une marge positive. Répondre −60 000 D inverse la soustraction, et 540 000 D additionne au lieu de soustraire.",
+      "difficulty": 2
+    }
+  ]
+}

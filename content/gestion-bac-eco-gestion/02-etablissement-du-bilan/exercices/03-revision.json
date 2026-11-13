@@ -1,0 +1,185 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le bilan de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur à sa formule.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "FDR calculé par le haut du bilan"
+        },
+        {
+          "id": "l2",
+          "text": "FDR calculé par le bas du bilan"
+        },
+        {
+          "id": "l3",
+          "text": "BFR"
+        },
+        {
+          "id": "l4",
+          "text": "TN calculée à partir des trésoreries"
+        },
+        {
+          "id": "r1",
+          "text": "Ressources stables − emplois stables"
+        },
+        {
+          "id": "r2",
+          "text": "Actifs courants − passifs courants"
+        },
+        {
+          "id": "r3",
+          "text": "Actifs courants hors trésorerie − passifs courants hors trésorerie"
+        },
+        {
+          "id": "r4",
+          "text": "Trésorerie de l'actif − trésorerie du passif"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Par le haut, le FDR compare les ressources stables et les emplois stables ; par le bas, il compare les actifs courants et les passifs courants. Le BFR écarte la trésorerie des deux masses courantes. La TN se lit aussi directement : trésorerie de l'actif moins trésorerie du passif.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces postes, lesquels sont des emplois stables ? Sélectionne tous ceux qui conviennent.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un terrain"
+        },
+        {
+          "id": "b",
+          "text": "Une machine"
+        },
+        {
+          "id": "c",
+          "text": "Le stock de marchandises"
+        },
+        {
+          "id": "d",
+          "text": "Un emprunt à 5 ans"
+        },
+        {
+          "id": "e",
+          "text": "Les créances clients"
+        },
+        {
+          "id": "f",
+          "text": "Une construction"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "f"
+        ]
+      },
+      "explanation": "Le terrain, la machine et la construction sont des biens durables : ce sont des emplois stables. Le stock et les créances clients sont des actifs courants, et l'emprunt à 5 ans est une ressource stable, située à droite du bilan.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un bilan comporte : un terrain de 70 000 D ; un stock de 24 000 D ; des créances clients de 31 000 D ; 9 000 D en banque ; un matériel de transport acheté 50 000 D, avec 20 000 D d'amortissements. Quel est le total des actifs non courants, en D ?",
+      "answerKey": {
+        "value": 100000,
+        "unit": "D"
+      },
+      "explanation": "Le matériel figure pour sa valeur nette : 50 000 − 20 000 = 30 000 D. Actifs non courants = 70 000 + 30 000 = 100 000 D ✓. Le stock, les créances et la banque sont des actifs courants.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes pour établir un bilan de constitution.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lister les biens apportés ou acquis, avec leur valeur"
+        },
+        {
+          "id": "b",
+          "text": "Additionner ces valeurs pour obtenir le total des actifs"
+        },
+        {
+          "id": "c",
+          "text": "Retrancher les dettes du total des actifs pour obtenir le capital"
+        },
+        {
+          "id": "d",
+          "text": "Inscrire le capital et les dettes à droite, puis comparer les totaux"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Il faut connaître les biens avant de les additionner. Le capital se déduit ensuite du total des actifs moins les dettes. L'inscription à droite et la comparaison des totaux viennent en dernier, puisqu'elles dépendent du capital calculé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une entreprise règle par chèque une dette de 5 000 D envers un fournisseur. Quel effet cette opération a-t-elle sur le bilan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Banque −5 000 D et fournisseurs −5 000 D : le total baisse de 5 000 D"
+        },
+        {
+          "id": "b",
+          "text": "Banque −5 000 D et stock +5 000 D : le total ne change pas"
+        },
+        {
+          "id": "c",
+          "text": "Banque −5 000 D et capital social −5 000 D : le total baisse de 5 000 D"
+        },
+        {
+          "id": "d",
+          "text": "Fournisseurs −5 000 D et emprunt +5 000 D : le total ne change pas"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Payer par chèque fait baisser la banque (actif) de 5 000 D, et la dette envers le fournisseur (ressource) baisse du même montant : un actif et une ressource diminuent ensemble, le total baisse de 5 000 D ✓. Le capital ne bouge pas, et aucun nouveau bien ni nouvelle dette n'apparaît.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un bilan fonctionnel est équilibré. Ressources stables 410 000 D ; passifs courants 95 000 D ; emplois stables 300 000 D ; stocks 120 000 D ; liquidités 25 000 D ; les créances clients sont à déterminer. Quel est le montant des créances clients, en D ?",
+      "answerKey": {
+        "value": 60000,
+        "unit": "D"
+      },
+      "explanation": "Total des ressources : 410 000 + 95 000 = 505 000 D, donc les emplois totalisent aussi 505 000 D. Actifs courants = 505 000 − 300 000 = 205 000 D. Créances = 205 000 − 120 000 − 25 000 = 60 000 D ✓.",
+      "difficulty": 2
+    }
+  ]
+}

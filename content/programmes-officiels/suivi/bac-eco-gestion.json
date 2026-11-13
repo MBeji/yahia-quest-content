@@ -3,8 +3,8 @@
   "fiches": [
     {
       "matiere": "gestion",
-      "statut": "partielle",
-      "profondeur": "first-pass",
+      "statut": "validee-r7",
+      "profondeur": "generation",
       "sources": [
         {
           "code": "229464",
@@ -15,8 +15,8 @@
           "pagesTotal": 364,
           "pagesLues": [
             [
-              3,
-              9
+              1,
+              364
             ]
           ]
         }
@@ -25,11 +25,16 @@
         "gestion-bac-eco-gestion"
       ],
       "chapitresGeneration": [],
-      "r7": null,
+      "r7": {
+        "date": "2026-11-13",
+        "portee": "integrale",
+        "corrections": 46,
+        "verdict": "CONFORME. Lecture L1 (pdftotext -layout) de toutes les pages par 9 lecteurs sonnet avec sondage image 8-45 % selon la tranche ; R-7 par 4 auditeurs opus en contexte vierge : controle mecanique de 364/364 pages contre la couche texte (nombres, encadres, formules, totaux recomptes) et sondage image de 20-28 % des pages (94 sur 364 environ), 4 constats SUBSTANTIELS au total (un chiffre fantome issu d'un objet masque de la couche texte p.53-55, un total DEPS imprime incoherent p.50 non signale, une logique canal B/C p.174, une annuite manquante p.266) et une quarantaine de constats de forme, tous corriges ; taux < 1 substantiel pour 10 pages dans toutes les sections. Aucun corrige d'exercice dans le manuel : les recalculs sont etiquetes calcul redacteur. Anomalies imprimees conservees et signalees. Reserve : le manuel applique le programme de 2007, aucun guide enseignant au corpus."
+      },
       "sourcesLibres": [],
       "maj": "2026-11-13",
       "par": "claude/campagne-wqgvi1",
-      "notes": "A1 (2026-11-13) : sujet gestion-bac-eco-gestion, 29 chapitres codifiés d'après le sommaire du manuel 229464 (364 p., français, couche texte propre — barreau L1). Aucun guide enseignant au corpus : le manuel élève fait référence. Programme applicable depuis septembre 2007 (avant-propos). Corps du manuel non encore lu."
+      "notes": "Manuel 229464 (364 p., francais, couche texte propre, barreau L1) lu integralement, transcrit en fiche (§8), rapports R-7 en §9. Chapitrage : 29 sections du manuel codifiees (manifest/bac-eco-gestion.json). Piege : la couche texte du PDF contient des objets masques ; un chiffre incongru doit etre verifie a l'image avant d'etre note comme imprime. Reserve de programme : le manuel date de 2007, aucun guide au corpus."
     }
   ]
 }

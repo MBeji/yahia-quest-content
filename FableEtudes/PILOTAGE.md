@@ -40,7 +40,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Sciences de l'informatique | physique | `223471` | ✅ validée R-7 (2026-11-07) — 399 p., 13 chapitres, couche texte L1 + image | 7/13 (ch.01-03 condensateur, bobine, oscillations libres — 2026-11-07 ; ch.04-07 oscillations entretenues, forcées, généralités sur les filtres, exemples de filtres — 2026-11-13, merge ≠ publié tant que `apply-content` n'a pas tourné) | ch.08-09 sans référence (signaux non sinusoïdaux, conversion), ch.10-11 adaptés de `physique-bac-sciences-exp/07-08`, ch.12-13 sans référence ; ⏳ tenu par `claude/friendly-keller-d3ya0w` (choix de Mohamed du 2026-11-07) |
 | Sciences de l'informatique | chimie | `224471` | ❌ aucune | — | A1 |
 | Sciences de l'informatique | algorithmique, STI | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
-| Économie et gestion | gestion | `229464` | ❌ aucune | — | A1 |
+| Économie et gestion | gestion | `229464` | ✅ validée R-7 (2026-11-13) — 364 p., 29 sections, 4 substantiels corrigés | 0/29 chapitres | génération des 29 chapitres par tranches de 3 (`campagne` étape 4) ; missions d'examen : sujets et corrigés du Bac au Drive (PR #845) |
 | Économie et gestion | mathématiques | `222463` | ❌ aucune | — | A1 |
 | Économie et gestion | économie | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
 | Lettres | arabe | `201421` + `201422` | ❌ aucune | — | A1 |

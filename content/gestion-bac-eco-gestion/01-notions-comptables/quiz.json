@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Notions comptables",
+  "questions": [
+    {
+      "prompt": "Une menuiserie reçoit 40 planches de son fournisseur. Quelle est la nature du flux des planches ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flux financier sortant : un décaissement"
+        },
+        {
+          "id": "b",
+          "text": "Flux réel entrant : une entrée de biens"
+        },
+        {
+          "id": "c",
+          "text": "Flux financier entrant : un encaissement"
+        },
+        {
+          "id": "d",
+          "text": "Flux réel sortant : une sortie de biens"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les planches sont des biens : le flux est un flux réel, et comme elles entrent dans l'entreprise il est entrant ✓. Le paiement qui lui répond serait, lui, un flux financier sortant (un décaissement) : il ne faut pas le confondre avec le flux des planches. L'encaissement et la sortie de biens décrivent des opérations de vente, pas cet achat.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Selon le principe de la partie double, que doit-on constater dans l'enregistrement d'une opération ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Autant de comptes débités que de comptes crédités"
+        },
+        {
+          "id": "b",
+          "text": "Un seul compte débité, quel que soit le nombre de comptes crédités"
+        },
+        {
+          "id": "c",
+          "text": "Un total débité supérieur au total crédité du montant de la TVA"
+        },
+        {
+          "id": "d",
+          "text": "Un total des montants débités égal au total des montants crédités"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaque opération débite les emplois et crédite les ressources pour le même montant global : le total débité est égal au total crédité ✓. Le nombre de comptes n'a pas à être le même de chaque côté : un achat avec TVA débite deux comptes (achats et TVA déductible) et n'en crédite qu'un (fournisseur). La TVA entre dans le total débité, elle ne crée aucun écart.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Laquelle de ces opérations constitue un produit pour l'entreprise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paiement de la prime d'assurance du local"
+        },
+        {
+          "id": "b",
+          "text": "Achat de fournitures de bureau"
+        },
+        {
+          "id": "c",
+          "text": "Commissions reçues pour un service rendu"
+        },
+        {
+          "id": "d",
+          "text": "Achat d'un micro-ordinateur pour le bureau"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Des commissions reçues pour un service rendu sont une ressource définitive : un enrichissement enregistré au crédit d'un compte de la classe 7, donc un produit ✓. La prime d'assurance et les fournitures consommées sont des emplois définitifs, donc des charges (classe 6). Le micro-ordinateur est un bien durable qui reste dans l'entreprise : ce n'est ni un produit, ni une charge au sens de l'emploi définitif.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une entreprise vend des sacs et encaisse 400 D en espèces. Quelle est l'analyse du flux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Origine : Caisse ; destination : Ventes"
+        },
+        {
+          "id": "b",
+          "text": "Origine : Clients ; destination : Ventes"
+        },
+        {
+          "id": "c",
+          "text": "Origine : Ventes ; destination : Clients"
+        },
+        {
+          "id": "d",
+          "text": "Origine : Ventes ; destination : Caisse"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La valeur de 400 D vient de la vente (ressource : Ventes) et arrive dans la caisse, car le client paie tout de suite en espèces (emploi : Caisse) ✓. Le sens inverse échange l'origine et la destination. Le compte Clients n'intervient que si la vente est faite à crédit : ici le règlement est immédiat, il n'y a aucune créance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur une facture d'achat comportant une remise, quelle est la base de calcul de la TVA ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le montant brut"
+        },
+        {
+          "id": "b",
+          "text": "Le net commercial"
+        },
+        {
+          "id": "c",
+          "text": "Le net à payer TTC"
+        },
+        {
+          "id": "d",
+          "text": "Le net à payer diminué de la remise"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La TVA se calcule sur le net commercial, c'est-à-dire le brut diminué de la remise ✓. Prendre le brut ignorerait la remise et surévaluerait la TVA. Le net à payer TTC contient déjà la TVA : on ne peut pas la calculer sur elle-même. Diminuer le net à payer de la remise mélange les étapes : la remise se retranche du brut, avant la TVA.",
+      "difficulty": 2
+    }
+  ]
+}

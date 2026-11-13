@@ -1,0 +1,175 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve de l'architecte",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un P.D.G. dirige 5 fonctions. La production compte les ateliers A, B et C ; chacune des quatre autres fonctions compte 2 services. Combien de cases se trouvent au troisième niveau de l'organigramme ?",
+      "answerKey": {
+        "value": 11,
+        "unit": "cases"
+      },
+      "explanation": "Le troisième niveau regroupe les ateliers et les services : 3 + 4 × 2 = 11 ✓. Ajouter les 5 fonctions donnerait 16, et compter 8 services sans les ateliers donnerait 8.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une petite imprimerie, M. Anis dirige l'atelier et achète aussi le papier et l'encre, sans service dédié. Quelle affirmation décrit exactement la situation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'approvisionnement n'existe pas, car il n'y a pas de service d'achats"
+        },
+        {
+          "id": "b",
+          "text": "L'approvisionnement existe, mais M. Anis l'exerce avec la production"
+        },
+        {
+          "id": "c",
+          "text": "La production a disparu, car M. Anis s'occupe aussi des achats"
+        },
+        {
+          "id": "d",
+          "text": "Les achats sont une attribution de la production dans cette imprimerie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les activités d'approvisionnement, acheter et stocker, sont accomplies : la fonction existe. Dans une petite entreprise, elle n'est pas assumée par un service spécialisé et peut être exercée par la même personne que la production.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une entreprise de confection relève ses mouvements du mois. Lesquels sont des flux financiers pour elle ? Sélectionne tous ceux qui conviennent.",
+      "explanation": "Un paiement, des salaires et des commissions sont des sommes d'argent : ce sont des flux financiers. Le tissu reçu mais non réglé est un flux matériel, son paiement viendra plus tard ; la formation est un flux immatériel.",
+      "difficulty": 3,
+      "type": "multi",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le paiement des fournisseurs de tissu"
+        },
+        {
+          "id": "b",
+          "text": "Le versement des salaires aux couturières"
+        },
+        {
+          "id": "c",
+          "text": "Les commissions versées aux intermédiaires"
+        },
+        {
+          "id": "d",
+          "text": "120 bobines de fil reçues, facturées 900 D et non réglées"
+        },
+        {
+          "id": "e",
+          "text": "Une formation donnée par un expert interne"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces flux, lesquels la fonction production reçoit-elle des autres fonctions ou de la direction ? Sélectionne tous ceux qui conviennent.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les besoins des clients (fonction commerciale)"
+        },
+        {
+          "id": "b",
+          "text": "Les ressources (fonction financière)"
+        },
+        {
+          "id": "c",
+          "text": "Les produits finis (fonction commerciale)"
+        },
+        {
+          "id": "d",
+          "text": "Les besoins en qualifications (ressources humaines)"
+        },
+        {
+          "id": "e",
+          "text": "Le personnel (ressources humaines)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "La production reçoit les besoins des clients, les ressources financières et le personnel. Les produits finis et les besoins en qualifications sont ses flux de sortie : elle les envoie à la commerciale et aux ressources humaines.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre le parcours d'une commande de client à travers les fonctions.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La production adresse ses besoins en matières premières à l'approvisionnement"
+        },
+        {
+          "id": "b",
+          "text": "La fonction commerciale transmet à la production les besoins des clients"
+        },
+        {
+          "id": "c",
+          "text": "La fonction commerciale vend les produits finis aux clients"
+        },
+        {
+          "id": "d",
+          "text": "L'approvisionnement livre les matières à la production"
+        },
+        {
+          "id": "e",
+          "text": "La production fabrique et remet les produits finis à la commerciale"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "a",
+          "d",
+          "e",
+          "c"
+        ]
+      },
+      "explanation": "Le besoin des clients déclenche la chaîne. La production exprime ensuite ses besoins en matières, l'approvisionnement les livre, puis la production fabrique. La vente aux clients ne peut venir qu'une fois les produits finis remis à la commerciale.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La responsable sécurité fixe les horaires de port du casque pour tous les ateliers, sans être la cheffe d'aucun de leurs salariés. Quel lien l'unit aux services ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un lien fonctionnel, car il décide dans sa compétence"
+        },
+        {
+          "id": "b",
+          "text": "Un lien hiérarchique, car tous les services lui obéissent"
+        },
+        {
+          "id": "c",
+          "text": "Un lien de conseil, car il n'est le chef de personne"
+        },
+        {
+          "id": "d",
+          "text": "Un lien hiérarchique, car il fixe une règle commune"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sa décision s'applique à tous les services dans son centre de compétence, la sécurité : c'est un lien fonctionnel. Il n'est le chef de personne, donc aucun lien hiérarchique ; et imposer des horaires va au-delà d'un simple conseil.",
+      "difficulty": 3
+    }
+  ]
+}
