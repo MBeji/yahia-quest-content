@@ -38,7 +38,7 @@ Dans ce tableau, seule la dernière ligne décrit un circuit qui oscille sans in
 Cas limite : un bistable, laissé seul, reste indéfiniment dans le même état ; il ne produit aucune oscillation.
 :::
 
-::: verifie À toi : un cinquième cas
+::: verifie À toi : un autre dispositif
 Un circuit reste à 0 V. Une impulsion externe le fait passer à 5 V pendant 2 s, puis il revient seul à 0 V. De quelle catégorie est-il, et pourquoi n'est-il pas astable ?
 
 ---
