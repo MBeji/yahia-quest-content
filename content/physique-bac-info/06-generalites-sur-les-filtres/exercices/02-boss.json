@@ -55,7 +55,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un filtre a un gain maximal G₀ = 14 dB. Quelle transmittance T correspond à ses fréquences de coupure ? (log 5 = 0,70)",
+      "prompt": "Un filtre a un gain maximal G₀ = 16 dB. Quelle transmittance T correspond à ses fréquences de coupure ? (log 6,3 = 0,80)",
       "options": [
         {
           "id": "a",
@@ -63,19 +63,19 @@
         },
         {
           "id": "b",
-          "text": "2,5"
+          "text": "3,2"
         },
         {
           "id": "c",
-          "text": "3,5"
+          "text": "4,5"
         },
         {
           "id": "d",
-          "text": "5,0"
+          "text": "6,3"
         }
       ],
       "correctOption": "c",
-      "explanation": "G₀ = 14 dB donne log T₀ = 14/20 = 0,70, donc T₀ = 5,0. À la coupure, T = T₀/√2 = 5,0/1,41 ≈ 3,5 ✓ (on obtient la même valeur avec G₀ − 3 = 11 dB, soit T = 10^0,55 ≈ 3,5). 5,0 est le maximum lui-même, 2,5 la moitié de T₀ (ce qui retirerait 6 dB) et 1,4 le nombre √2 pris pour T.",
+      "explanation": "G₀ = 16 dB donne log T₀ = 16/20 = 0,80, donc T₀ = 6,3. À la coupure, T = T₀/√2 = 6,3/1,41 ≈ 4,5 ✓ (on obtient la même valeur avec G₀ − 3 = 13 dB, soit T = 10^0,65 ≈ 4,5). 6,3 est le maximum lui-même, 3,2 la moitié de T₀ (ce qui retirerait 6 dB) et 1,4 le nombre √2 pris pour T.",
       "difficulty": 3
     },
     {
@@ -107,7 +107,7 @@
       "options": [
         {
           "id": "a",
-          "text": "625 Hz ; +π/8 rad"
+          "text": "1250 Hz ; +π/4 rad"
         },
         {
           "id": "b",
@@ -115,7 +115,7 @@
         },
         {
           "id": "c",
-          "text": "1250 Hz ; +π/4 rad"
+          "text": "625 Hz ; +π/8 rad"
         },
         {
           "id": "d",
@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "b",
-      "explanation": "La période est de 8 div × 0,2 ms = 1,6 ms, donc N = 1/1,6·10⁻³ = 625 Hz. u_S coupe l'axe en montant 1 div = 0,2 ms avant u_E : elle est en avance, φ_S − φ_E = +2π × 0,2/1,6 = +π/4 rad ✓. −π/4 lit l'avance comme un retard ; +π/8 divise par 2 au lieu de multiplier par 2π ; 1250 Hz prend la demi-période (0,8 ms) pour la période.",
+      "explanation": "La période est de 8 div × 0,2 ms = 1,6 ms, donc N = 1/1,6·10⁻³ = 625 Hz. u_S coupe l'axe en montant 1 div = 0,2 ms avant u_E : elle est en avance, φ_S − φ_E = +2π × 0,2/1,6 = +π/4 rad ✓. −π/4 lit l'avance comme un retard ; +π/8 utilise π au lieu de 2π (π × 0,2/1,6) ; 1250 Hz prend la demi-période (0,8 ms) pour la période.",
       "difficulty": 3
     },
     {

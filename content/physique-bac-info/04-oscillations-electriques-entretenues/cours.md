@@ -105,11 +105,11 @@ Avec R₁ = R₂, le montage à A.O. est équivalent à un dipôle de tension u 
 
 ## 📈 La caractéristique en N : où le montage est vraiment une résistance négative
 
-Pour vérifier que le montage se comporte comme (−R′), on trace sa caractéristique u = f(i). Un générateur de tension triangulaire, en série avec un résistor R = 200 Ω, est branché entre A et M ; l'oscilloscope en mode XY donne u (voie verticale) en fonction de u′ = R·i, tension aux bornes de R en convention récepteur (voie horizontale). On augmente l'amplitude jusqu'à la saturation de l'A.O.
+Pour vérifier que le montage se comporte comme (−R′), on trace sa caractéristique u = f(i). Un générateur de tension triangulaire est branché entre A et un point B, et un résistor R = 200 Ω relie B à la masse M ; l'oscilloscope en mode XY donne u (voie verticale) en fonction de u′ = R·i, tension aux bornes de R en convention récepteur (voie horizontale). On augmente l'amplitude jusqu'à la saturation de l'A.O.
 Que voit-on, et quelle est la pente de la courbe ?
 
 ::: definition
-**Caractéristique en N** — La courbe u = f₁(u′) a la forme d'un N : un segment central de pente négative p, où le montage est équivalent à (−R′), encadré de deux branches montantes où l'A.O. est saturé. Le segment central est le **domaine linéaire**. Comme u′ = R·i, la courbe u = f(i) a la même forme. La voie Y₁ mesure u_BM = −u′ : on l'inverse pour afficher u′.
+**Caractéristique en N** — La courbe u = f₁(u′) a la forme d'un N : un segment central de pente négative p, où le montage est équivalent à (−R′), encadré de deux branches montantes où l'A.O. est saturé. Le segment central est le **domaine linéaire**. Comme u′ = R·i, la courbe u = f(i) a la même forme. La voie Y₁ mesure u_BM. Le courant i, entré en A, traverse R de M vers B, donc u′ = v_M − v_B = −u_BM : on inverse la voie Y₁ pour afficher u′ en abscisse.
 :::
 
 ::: figure Caractéristiques pour (a) R′ = 50 Ω et R₁ = R₂ = 1 kΩ, (b) R′ = 80 Ω et R₁ = R₂ = 1 kΩ, (c) R′ = 80 Ω et R₁ = R₂ = 2 kΩ ; mêmes échelles (1 V/div en abscisse, 0,5 V/div en ordonnée) ; les points de (a) repèrent (−2 ; +1) et (+2 ; −1) en divisions
@@ -228,7 +228,7 @@ R₀ = 100 Ω et r = 20 Ω, donc R = 120 Ω ; à un instant donné, i = 10 mA.
 > ⚠️ Piège classique : croire que R_t = 0 supprime l'échauffement. Les résistances R₀ et r chauffent toujours (12 mW dans l'exemple) : c'est le dipôle qui renvoie exactement la même puissance. Et seule la somme E est constante : E_C et E_L continuent de s'échanger.
 
 ::: propriete
-**Les quatre cas** — R′ < R : R_t > 0, dE/dt < 0, les oscillations sont amorties. R′ = R : R_t = 0, dE/dt = 0, E reste constante, la fréquence est N₀ : les oscillations sont auto-entretenues (en pratique R′ légèrement supérieure à R). R′ > R : R_t < 0, dE/dt > 0 : l'amplitude croît, c'est l'amorçage, jusqu'à ce que l'intensité atteigne la limite du domaine linéaire de l'A.O. ; elle se stabilise alors, d'autant plus grande que R′ est grande. R′ très supérieure à R : l'A.O. sature avant que |i| atteigne sa valeur maximale, il ne fonctionne plus en régime linéaire et les oscillations sont distordues et écrêtées. Cas limite : un générateur de tension u = k·i remplace D, alors R_t = R₀ + r + k et il faut k ≤ −(R₀ + r).
+**Les quatre cas** — R′ < R : R_t > 0, dE/dt < 0, les oscillations sont amorties. R′ = R : R_t = 0, dE/dt = 0, E reste constante, la fréquence est N₀ : les oscillations sont auto-entretenues (en pratique R′ légèrement supérieure à R). R′ > R : R_t < 0, dE/dt > 0 : l'amplitude croît, c'est l'amorçage. Elle ne croît pas indéfiniment : aux grandes amplitudes, le montage n'est plus exactement (−R′) et l'amplitude se stabilise (l'étude de cette stabilisation est hors programme). Dans certaines limites, l'amplitude stabilisée est d'autant plus grande que R′ est grande, et les oscillations restent quasi-sinusoïdales tant que l'A.O. fonctionne en régime linéaire. R′ très supérieure à R : l'A.O. sature avant que |i| atteigne sa valeur maximale, il ne fonctionne plus en régime linéaire et les oscillations sont distordues et écrêtées. Cas limite : un générateur de tension u = k·i remplace D, alors R_t = R₀ + r + k et il faut k ≤ −(R₀ + r).
 :::
 
 ::: verifie À toi : le signe de dE/dt
@@ -321,7 +321,7 @@ Circuit entretenu avec R = 120 Ω et i = 10 mA à un instant donné.
 :::
 
 ::: verifie À toi : l'origine de l'énergie
-Dans un RLC entretenu en régime permanent (R_t = 0), E reste constante alors que les résistances échauffent. D'où vient l'énergie qu'elles dissipent ?
+Dans un RLC entretenu en régime permanent (E constante), les résistances échauffent. D'où vient l'énergie qu'elles dissipent ?
 
 ---
 
