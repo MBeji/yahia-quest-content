@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers réflexes de filtrage",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Le filtrage est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un tri des signaux électriques selon leur fréquence"
+        },
+        {
+          "id": "b",
+          "text": "Un changement de la fréquence du signal d'entrée"
+        },
+        {
+          "id": "c",
+          "text": "Une amplification de la tension de tout signal reçu"
+        },
+        {
+          "id": "d",
+          "text": "Une conversion d'un signal alternatif en tension continue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le filtrage est le tri des signaux selon leur fréquence : le quadripôle restitue à sa sortie les signaux d'un domaine de fréquences, plus ou moins amplifiés ou atténués ✓. Il ne change pas la fréquence, n'amplifie pas tout (il atténue aussi) et ne redresse pas le signal.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un transformateur, un amplificateur de tension et un filtre ont un point commun. Lequel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ce sont tous des dipôles"
+        },
+        {
+          "id": "b",
+          "text": "Ce sont tous des filtres"
+        },
+        {
+          "id": "c",
+          "text": "Ce sont tous des quadripôles"
+        },
+        {
+          "id": "d",
+          "text": "Ils ne traitent que des tensions continues"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Chacun possède deux bornes d'entrée et deux bornes de sortie : ce sont des quadripôles ✓. Seul le filtre trie selon la fréquence : un transformateur ou un amplificateur ne sont pas des filtres, et tous traitent des tensions variables.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un générateur est branché entre l'entrée E et la masse M d'un filtre. Comment visualise-t-on la tension de sortie u_S à l'oscilloscope ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une voie sur E, la masse de l'oscilloscope étant reliée à S"
+        },
+        {
+          "id": "b",
+          "text": "Une voie sur S, la masse de l'oscilloscope étant reliée à M"
+        },
+        {
+          "id": "c",
+          "text": "Une voie entre E et S, sans masse"
+        },
+        {
+          "id": "d",
+          "text": "Une voie sur M, la masse de l'oscilloscope étant reliée à S"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La tension de sortie se lit entre S et M, M étant la masse commune à l'entrée et à la sortie : une voie sur S, masse de l'oscilloscope sur M (reliée d'office par le fil de terre du générateur) ✓. Une voie sur E donnerait u_E, et référencer la masse sur S ou lire entre E et S ne donne pas u_S.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un filtre a un gain G = −20 dB à une fréquence donnée. L'amplitude d'entrée est U_Em = 5,0 V. Quelle est l'amplitude de sortie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,050 V"
+        },
+        {
+          "id": "b",
+          "text": "0,25 V"
+        },
+        {
+          "id": "c",
+          "text": "0,50 V"
+        },
+        {
+          "id": "d",
+          "text": "50 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "De G = 20 log T, on tire log T = G/20 = −1, donc T = 10⁻¹ = 0,1 et U_Sm = T × U_Em = 0,1 × 5,0 = 0,50 V ✓. 0,050 V utilise 10^(G/10), 0,25 V divise U_Em par |G| = 20, et 50 V oublie le signe de G (T = 10).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un signal utile occupe les fréquences de 1 kHz à 5 kHz et il est perturbé par le secteur à 50 Hz. Que doit vérifier le filtre qu'on ajoute ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sa transmittance est supérieure à 1 à la fréquence de 50 Hz"
+        },
+        {
+          "id": "b",
+          "text": "Sa bande passante est centrée sur la fréquence du secteur"
+        },
+        {
+          "id": "c",
+          "text": "Il ramène le secteur à une fréquence supérieure à 5 kHz"
+        },
+        {
+          "id": "d",
+          "text": "Sa bande passante contient 1 kHz à 5 kHz, mais pas 50 Hz"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour garder le signal utile et écarter la perturbation, on place les fréquences utiles dans la bande passante et 50 Hz en dehors, où la sortie est atténuée ✓. Transmettre 50 Hz mieux que le reste ou centrer la bande dessus ferait l'inverse, et un filtre ne modifie jamais la fréquence d'un signal.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quels gains correspondent à une transmittance T = 0,2 puis à T = 5 ? (log 2 = 0,301)",
+      "options": [
+        {
+          "id": "a",
+          "text": "−14 dB puis +14 dB"
+        },
+        {
+          "id": "b",
+          "text": "+14 dB puis −14 dB"
+        },
+        {
+          "id": "c",
+          "text": "−7 dB puis +7 dB"
+        },
+        {
+          "id": "d",
+          "text": "−0,7 dB puis +0,7 dB"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "G(0,2) = 20 log(2/10) = 20 × (0,301 − 1) ≈ −14 dB (T < 1, atténuation) et G(5) = 20 log(10/2) = 20 × (1 − 0,301) ≈ +14 dB (T > 1, amplification) ✓. Les gains de signes inversés renversent atténuation et amplification, ±7 dB viennent d'un facteur 10 au lieu de 20, et ±0,7 dB oublient le facteur 20.",
+      "difficulty": 2
+    }
+  ]
+}
