@@ -1,0 +1,150 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les convertisseurs",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quels sont les signaux analogiques parmi les suivants ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La température d'un four au cours du temps"
+        },
+        {
+          "id": "b",
+          "text": "La pression de l'air dans un pneu qui se dégonfle"
+        },
+        {
+          "id": "c",
+          "text": "La tension de sortie d'une porte logique : 0 V ou 5 V"
+        },
+        {
+          "id": "d",
+          "text": "Le mot [1101] présent sur quatre fils"
+        },
+        {
+          "id": "e",
+          "text": "La vitesse d'un cycliste sur une route"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "La température, la pression et la vitesse varient de façon continue dans le temps : ce sont des grandeurs analogiques ✓. La tension d'une porte logique ne prend que 0 V ou 5 V : c'est un signal logique. Le mot [1101] est un signal numérique, formé de quatre signaux logiques.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le mot de 5 bits ci-dessous est présent sur les lignes a₄ … a₀ à un instant donné. Quel est son équivalent décimal N ?\n<svg viewBox=\"0 0 300 274\"><title>Les cinq lignes a₄, a₃, a₂, a₁, a₀ à un instant donné : niveaux 1, 0, 1, 0, 0 de haut en bas</title><line x1=\"58.0\" y1=\"18.0\" x2=\"58.0\" y2=\"242.0\" stroke=\"#94a3b8\" stroke-width=\"1.0\"/><line x1=\"278.0\" y1=\"18.0\" x2=\"278.0\" y2=\"242.0\" stroke=\"#94a3b8\" stroke-width=\"1.0\"/><text x=\"48.0\" y=\"45.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">a₄</text><polyline points=\"58.0,30.0 278.0,30.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"miter\"/><text x=\"286.0\" y=\"34.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"286.0\" y=\"56.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"89.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">a₃</text><polyline points=\"58.0,96.0 278.0,96.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"miter\"/><text x=\"286.0\" y=\"78.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"286.0\" y=\"100.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"133.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">a₂</text><polyline points=\"58.0,118.0 278.0,118.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"miter\"/><text x=\"286.0\" y=\"122.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"286.0\" y=\"144.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"177.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">a₁</text><polyline points=\"58.0,184.0 278.0,184.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"miter\"/><text x=\"286.0\" y=\"166.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"286.0\" y=\"188.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"221.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">a₀</text><polyline points=\"58.0,228.0 278.0,228.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linejoin=\"miter\"/><text x=\"286.0\" y=\"210.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"286.0\" y=\"232.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"58.0\" y=\"260.0\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#475569\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">niveau haut = 1 (5 V) ; niveau bas = 0 (0 V)</text></svg>",
+      "answerKey": {
+        "value": 20
+      },
+      "explanation": "Le mot se lit de haut en bas : a₄ = 1, a₃ = 0, a₂ = 1, a₁ = 0, a₀ = 0, soit [10100]. N = 2⁴ + 2² = 16 + 4 = 20 ✓.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel mot binaire à 5 bits représente le nombre décimal 26 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "01011"
+        },
+        {
+          "id": "b",
+          "text": "11001"
+        },
+        {
+          "id": "c",
+          "text": "11010"
+        },
+        {
+          "id": "d",
+          "text": "11011"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "26 = 16 + 8 + 2, donc a₄ = 1, a₃ = 1, a₂ = 0, a₁ = 1, a₀ = 0 et [N] = [11010] ✓. Le mot 01011 vaut 11 : c'est le mot lu à l'envers. Le mot 11001 vaut 25, car a₁ et a₀ sont échangés. Le mot 11011 vaut 27, car il ajoute le poids 1 en trop.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Lequel de ces appareils contient un C.A.N. à son entrée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une imprimante"
+        },
+        {
+          "id": "b",
+          "text": "Un scanner"
+        },
+        {
+          "id": "c",
+          "text": "Un synthétiseur musical"
+        },
+        {
+          "id": "d",
+          "text": "La sortie audio d'une carte son"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un scanner transforme la lumière reçue en tension, puis un C.A.N. la transforme en mots binaires ✓. L'imprimante, le synthétiseur et la sortie audio d'une carte son reçoivent des données numériques et les transforment en grandeurs analogiques : ils contiennent des C.N.A.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un C.N.A. à 4 bits à résistances pondérées (R, 2R, 4R, 8R) a R = 5,0 kΩ et U_ref = 10 V (valeur absolue). Pour le mot [0101], quelle est l'intensité i qui parvient au nœud de l'A.O. ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,63 mA"
+        },
+        {
+          "id": "b",
+          "text": "1,25 mA"
+        },
+        {
+          "id": "c",
+          "text": "2,5 mA"
+        },
+        {
+          "id": "d",
+          "text": "4,0 mA"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le mot [0101] ferme K₂ et K₀. La branche de a₂ contient 2R = 10 kΩ : I₂ = 10/10 000 = 1,0 mA. La branche de a₀ contient 8R = 40 kΩ : I₀ = 10/40 000 = 0,25 mA. Donc i = 1,0 + 0,25 = 1,25 mA ✓. La valeur 2,5 mA correspond aux poids inversés, a₃ et a₁ (2,0 + 0,5 mA). La valeur 4,0 mA prend toutes les résistances égales à R. La valeur 0,63 mA décale les résistances d'un rang dans l'autre sens (0,50 + 0,125 mA).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On double la tension de référence U_ref d'un C.N.A. à résistances pondérées, sans rien changer d'autre. Quelle grandeur reste inchangée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Son quantum q, pas entre deux paliers"
+        },
+        {
+          "id": "b",
+          "text": "Sa pleine échelle P.E., tension maximale"
+        },
+        {
+          "id": "c",
+          "text": "Sa résolution relative r"
+        },
+        {
+          "id": "d",
+          "text": "Sa constante k, pente de la droite"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La résolution relative r = 1/2ⁿ ne dépend que du nombre de bits n ✓. Les grandeurs k, q et P.E. sont proportionnelles à U_ref : elles doublent toutes les trois.",
+      "difficulty": 2
+    }
+  ]
+}
