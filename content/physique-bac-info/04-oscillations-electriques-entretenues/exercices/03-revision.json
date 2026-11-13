@@ -63,13 +63,13 @@
     },
     {
       "type": "numeric",
-      "prompt": "Un circuit RLC entretenu a un condensateur de capacité C = 2,5 µF ; on mesure la fréquence N = 250 Hz des oscillations. Calculer l'inductance L de la bobine, en H, arrondie au centième.",
+      "prompt": "Un oscillateur entretenu en régime permanent a une bobine d'inductance L = 0,40 H et une intensité d'amplitude I_m = 10 mA. Calculer son énergie totale E, en µJ, arrondie à l'unité.",
       "answerKey": {
-        "value": 0.162,
-        "tolerance": 0.006,
-        "unit": "H"
+        "value": 20,
+        "tolerance": 1,
+        "unit": "µJ"
       },
-      "explanation": "Comme N = N₀ = 1/(2π√(LC)), L = 1/(4π²·N²·C) = 1/(4π² × 250² × 2,5·10⁻⁶) ≈ 0,162 H, soit 0,16 H.",
+      "explanation": "Quand |i| est maximale, toute l'énergie est magnétique : E = ½·L·I_m² = ½ × 0,40 × (10·10⁻³)² = 2,0·10⁻⁵ J = 20 µJ, et E reste constante en régime permanent.",
       "difficulty": 2
     },
     {
