@@ -1,0 +1,141 @@
+{
+  "title": "⭐ Exercice : Les premiers pas du régime forcé",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans l'étude d'un circuit RLC série branché sur un GBF, quel dipôle joue le rôle de résonateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le GBF"
+        },
+        {
+          "id": "b",
+          "text": "La bobine seule"
+        },
+        {
+          "id": "c",
+          "text": "Le circuit RLC série"
+        },
+        {
+          "id": "d",
+          "text": "Le condensateur seul"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le résonateur est le circuit RLC série, contraint d'osciller à la fréquence imposée ✓. Le GBF est l'excitateur : c'est lui qui impose cette fréquence. La bobine seule et le condensateur seul ne sont que des éléments du résonateur : aucun des deux n'oscille isolément dans ce montage.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un RLC série d'impédance Z = 250 Ω est alimenté par une tension de valeur maximale U_m = 10 V. La voie Y2 de l'oscilloscope visualise la tension aux bornes d'un résistor R₀ = 50 Ω, avec une sensibilité de 0,50 V/div. Quelle est l'amplitude de cette tension, exprimée en divisions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,0 div"
+        },
+        {
+          "id": "b",
+          "text": "8,0 div"
+        },
+        {
+          "id": "c",
+          "text": "1,0 div"
+        },
+        {
+          "id": "d",
+          "text": "20 div"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "I_m = U_m / Z = 10 / 250 = 40 mA, donc U_R0m = R₀ I_m = 50 × 0,040 = 2,0 V, soit 2,0 / 0,50 = 4,0 div ✓. 8,0 div est l'écart crête à crête, double de l'amplitude. 1,0 div multiplie 2,0 V par la sensibilité 0,50 au lieu de diviser. 20 div divise U_m = 10 V par la sensibilité, sans passer par le rapport R₀ / Z.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un oscilloscope visualise une tension de fréquence N = 250 Hz, avec une base de temps de 0,50 ms/div. Combien de divisions horizontales une période occupe-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,0 div"
+        },
+        {
+          "id": "b",
+          "text": "8,0 div"
+        },
+        {
+          "id": "c",
+          "text": "2,0 div"
+        },
+        {
+          "id": "d",
+          "text": "0,125 div"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "T = 1/N = 1/250 = 4,0 ms, soit 4,0 / 0,50 = 8,0 div ✓. 4,0 div confond la période en millisecondes avec un nombre de divisions. 2,0 div multiplie T par la base de temps au lieu de la diviser. 0,125 div est le produit N × 0,50 ms, qui n'est pas une longueur d'écran.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un circuit RLC série est alimenté sous une tension de valeur maximale U_m = 8,0 V, à sa fréquence de résonance d'intensité. Il comprend un résistor de résistance R₀ = 35 Ω et une bobine de résistance r = 15 Ω. Calculer l'amplitude I_m0 de l'intensité, en mA.",
+      "answerKey": {
+        "value": 160,
+        "tolerance": 1,
+        "unit": "mA"
+      },
+      "explanation": "À la résonance, Z = R = R₀ + r = 35 + 15 = 50 Ω, donc I_m0 = U_m / R = 8,0 / 50 = 0,16 A = 160 mA ✓ (la résistance de la bobine compte dans R : avec R₀ seule, on trouverait 229 mA).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La tension u d'un GBF a une phase initiale nulle et φ désigne la phase initiale de i. Pour une fréquence N = N₀/2, quelle affirmation est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ < 0 ; i est en retard sur u"
+        },
+        {
+          "id": "b",
+          "text": "φ = 0 ; i est en phase avec u"
+        },
+        {
+          "id": "c",
+          "text": "φ = +π/2 exactement ; i est en quadrature avance sur u"
+        },
+        {
+          "id": "d",
+          "text": "φ > 0 ; i est en avance sur u"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour N = N₀/2 < N₀, 1/(Cω) > Lω : tan φ = (1/(Cω) − Lω)/R > 0, donc φ > 0 et i est en avance sur u ✓. Un φ négatif avec un retard décrit le cas N > N₀. φ = 0 n'a lieu qu'à N = N₀, pas à N₀/2. φ = +π/2 n'est atteint qu'à la limite N → 0, sans jamais être égal : à N₀/2, φ reste strictement inférieur à π/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un RLC série (R = 75 Ω, L = 0,15 H, C = 20 µF) est alimenté sous une tension de valeur maximale U_m = 15 V, à la pulsation ω = 1000 rad/s. Quelle est l'intensité maximale I_m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 mA"
+        },
+        {
+          "id": "b",
+          "text": "86 mA"
+        },
+        {
+          "id": "c",
+          "text": "120 mA"
+        },
+        {
+          "id": "d",
+          "text": "70 mA"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Lω = 0,15 × 1000 = 150 Ω et 1/(Cω) = 1 / (20 × 10⁻⁶ × 1000) = 50 Ω ; Z = √(75² + (150 − 50)²) = √15625 = 125 Ω, donc I_m = 15 / 125 = 120 mA ✓. 200 mA correspond à Z = R = 75 Ω, valeur de la résonance qui n'est pas atteinte ici. 86 mA vient de Z = 75 + 150 − 50 = 175 Ω, une somme arithmétique. 70 mA additionne les réactances au lieu de les soustraire : Z = √(75² + 200²) = 214 Ω.",
+      "difficulty": 2
+    }
+  ]
+}

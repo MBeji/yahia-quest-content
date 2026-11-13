@@ -143,11 +143,11 @@ registre `suivi/<niveau>.json` (statut, plages `pagesLues`, sondage) et
 encadrés et du chapitrage et ≥ 15 % des pages contre la source (R-7) avant le passage à `complete`.
 Une fiche se livre dans sa propre PR (étape 6), sans rien publier.
 
-Les **sujets des examens nationaux** du couple (concours de 6ᵉ, de 9ᵉ, Bac — corpus officiel, repris et
-cités) se lisent **dans la même passe** : transcription fidèle sous
-`content/programmes-officiels/examens-nationaux/<classe>/<matière>/<session>.md`, archive du Ministère
-d'abord (fiche `web-echoexam-edunet-tn`). Toutes les sessions publiées pour la matière ; le lecteur
-marque celles d'un programme ancien.
+Les **sujets des examens nationaux** du couple (concours de 6ᵉ, de 9ᵉ, Bac) **et leurs corrigés
+officiels** — corpus officiel, repris et cités (R-2) — se lisent **dans la même passe** : transcription
+fidèle sous `content/programmes-officiels/examens-nationaux/<classe>/<matière>/<session>.md`, le
+corrigé officiel dans le même fichier, archive du Ministère d'abord (fiche `web-echoexam-edunet-tn`).
+Toutes les sessions publiées pour la matière ; le lecteur marque celles d'un programme ancien.
 
 Une étape `A5.4` (déclarer les `sujets` d'une fiche) se fait sans lecture : éditer le registre avec
 des ids du manifeste du niveau, jamais inventés (`[]` + note si aucun).

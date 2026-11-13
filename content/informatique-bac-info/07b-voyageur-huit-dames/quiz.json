@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Voyageur de commerce, huit dames, retour sur trace",
+  "questions": [
+    {
+      "prompt": "Que demande le problème du voyageur de commerce ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un circuit passant une fois par chaque ville, avec retour au départ et longueur minimale"
+        },
+        {
+          "id": "b",
+          "text": "Le plus court chemin entre la ville de départ et une seule ville choisie comme arrivée"
+        },
+        {
+          "id": "c",
+          "text": "Un circuit qui repasse par les villes autant de fois qu'il le faut, sans retour au départ"
+        },
+        {
+          "id": "d",
+          "text": "Un circuit qui visite le plus grand nombre de villes possible pour une distance donnée"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le problème pose trois conditions : chaque ville une seule fois, retour à la ville de départ et longueur totale minimale ✓. Le plus court chemin vers une seule arrivée ne visite pas toutes les villes. Repasser plusieurs fois par une ville ou renoncer au retour sort de l'énoncé. Maximiser le nombre de villes ne minimise pas la distance.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À chaque étape, quelle ville la stratégie du cours choisit-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La ville non visitée dont le numéro est le plus petit"
+        },
+        {
+          "id": "b",
+          "text": "La ville non visitée la plus proche de la ville en cours"
+        },
+        {
+          "id": "c",
+          "text": "La ville non visitée la plus proche de la ville de départ"
+        },
+        {
+          "id": "d",
+          "text": "La ville déjà visitée la plus proche de la ville en cours"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La stratégie compare les distances depuis la ville où l'on se trouve et ne retient que les villes non visitées ✓. Prendre le plus petit numéro ignore les distances. Mesurer depuis la ville de départ oublie que l'on s'est déplacé. Une ville déjà visitée ne peut pas être reprise : le circuit passe une seule fois par chaque ville.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Cinq dames sont placées selon T = (1, 3, 5, 2, 4), où T[i] est la colonne de la dame de la ligne i. Dans quelle colonne se trouve la dame de la ligne 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "T[5] = 4 : la dame de la ligne 5 est dans la colonne 4 ✓. La valeur 1 est T[1], la colonne de la ligne 1. La valeur 2 est T[4]. La valeur 5 est T[3], et c'est aussi le numéro de la ligne demandée, d'où la confusion entre ligne et colonne.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour quatre dames, la ligne 3 n'a aucune case libre. Que fait le retour sur trace ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il conclut que le problème n'a aucune solution et arrête la recherche"
+        },
+        {
+          "id": "b",
+          "text": "Il efface tout le tableau T et recommence à la ligne 1, colonne 1"
+        },
+        {
+          "id": "c",
+          "text": "Il pose quand même une dame sur une case menacée de la ligne 3"
+        },
+        {
+          "id": "d",
+          "text": "Il revient à la ligne 2 pour y essayer la colonne libre suivante"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une impasse n'abandonne que la dernière décision : on revient à la ligne 2 et on essaie la colonne libre suivante, ou l'on remonte encore s'il n'y en a plus ✓. Conclure à l'absence de solution est faux, car d'autres branches restent à explorer. Recommencer à zéro refait un travail déjà fait. Poser une dame sur une case menacée violerait la contrainte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour laquelle de ces valeurs de n le problème des n dames n'a-t-il aucune solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 1"
+        },
+        {
+          "id": "b",
+          "text": "n = 3"
+        },
+        {
+          "id": "c",
+          "text": "n = 4"
+        },
+        {
+          "id": "d",
+          "text": "n = 5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour n = 3, toutes les branches échouent : aucune solution ✓. Pour n = 1, la dame unique est bien placée : 1 solution. Pour n = 4, il y en a 2 et pour n = 5, il y en a 10.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les suites qui s'appuient sur leur passé",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les instructions de Fibo_It1, la boucle Pour i de 3 à N Faire étant ici résumée par son corps et son initialisation.",
+      "options": [
+        {
+          "id": "a",
+          "text": "u2 ← F"
+        },
+        {
+          "id": "b",
+          "text": "F ← u1 + u2"
+        },
+        {
+          "id": "c",
+          "text": "u1 ← u2"
+        },
+        {
+          "id": "d",
+          "text": "u1 ← 1 et u2 ← 1"
+        }
+      ],
+      "answerKey": {
+        "order": ["d", "b", "c", "a"]
+      },
+      "explanation": "L'initialisation passe en premier, car la boucle a besoin de u1 et u2. Dans le corps, F ← u1 + u2 vient avant tout changement de u1 et u2. Ensuite u1 ← u2 doit précéder u2 ← F : sinon u2 reçoit F, et u1 ← u2 copierait F au lieu de l'ancien u2, ce qui donne u1 = u2 = F et des termes faux (1, 1, 2, 4, 8, …).",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un algorithme exécute S ← 0, u1 ← 1 et u2 ← 1, puis pour i de 1 à 10 :\nS ← S + u1\nt ← u1 + u2\nu1 ← u2\nu2 ← t\nQue vaut S à la fin ? Répondre par un nombre.",
+      "answerKey": {
+        "value": 143
+      },
+      "explanation": "À chaque passe, u1 prend les valeurs 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 : ce sont les dix premiers termes de Fibonacci. S les cumule : 1 + 1 + 2 + 3 + 5 + 8 + 13 + 21 + 34 + 55 = 143 ✓. Le cumul d'ordre 1 s'appuie ici sur une suite d'ordre 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le triangle de Pascal, la ligne 8 est 1 7 21 35 35 21 7 1. Quelle est la somme des éléments de la ligne 9 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "128"
+        },
+        {
+          "id": "b",
+          "text": "255"
+        },
+        {
+          "id": "c",
+          "text": "256"
+        },
+        {
+          "id": "d",
+          "text": "512"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La ligne 9 est 1 8 28 56 70 56 28 8 1, et sa somme vaut 1 + 8 + 28 + 56 + 70 + 56 + 28 + 8 + 1 = 256 ✓, le double des 128 de la ligne 8. Le nombre 128 est la somme de la ligne donnée, non de la suivante. Le nombre 255 oublie l'un des deux 1 des bords. Le nombre 512 est la somme de la ligne 10 : il double deux fois.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur Val_Triangle (col, lig), lesquelles sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Val_Triangle (4, 6) rend 10"
+        },
+        {
+          "id": "b",
+          "text": "Val_Triangle (5, 5) ne lance aucun appel récursif"
+        },
+        {
+          "id": "c",
+          "text": "Val_Triangle (1, 5) lance deux appels récursifs"
+        },
+        {
+          "id": "d",
+          "text": "Val_Triangle (5, 4) s'arrête et rend 1"
+        },
+        {
+          "id": "e",
+          "text": "Val_Triangle (3, 6) rend 15"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "La ligne 6 est 1 5 10 10 5 1 : la colonne 4 vaut 10 ✓, et la colonne 3 aussi, donc l'affirmation « (3, 6) rend 15 » est fausse. Le cas (5, 5) est un bord de la diagonale : il rend 1 sans appel ✓. Le cas (1, 5) est un bord de la colonne 1 : il rend 1 sans appel, il ne lance donc pas deux appels. Le cas (5, 4) est hors du triangle (col > lig) : aucun bord n'est atteint et l'appel ne s'arrête pas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La suite x0 = a, x(n+1) = 4 × x(n) × (1 − x(n)) est constante (x(n) = a pour tout n) pour une seule des valeurs de a suivantes. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25"
+        },
+        {
+          "id": "b",
+          "text": "0,5"
+        },
+        {
+          "id": "c",
+          "text": "0,75"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour a = 0,75 : x1 = 4 × 0,75 × 0,25 = 0,75 ✓, la suite ne bouge plus. Pour a = 0,25 : x1 = 4 × 0,25 × 0,75 = 0,75, donc x1 ≠ a (la suite devient ensuite stationnaire, mais n'est pas constante dès le départ). Pour a = 0,5 : x1 = 4 × 0,5 × 0,5 = 1. Pour a = 1 : x1 = 4 × 1 × 0 = 0.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La suite de Thue-Morse part de U0 = '0'. Le terme U4 vaut '0110100110010110'. Combien de fois la paire de caractères '11' apparaît-elle dans U5 ? Répondre par un nombre.",
+      "answerKey": {
+        "value": 5,
+        "unit": "paires"
+      },
+      "explanation": "U5 s'obtient en remplaçant chaque 0 de U4 par 01 et chaque 1 par 10 : 01101001100101101001011001101001, soit 32 caractères. La paire 11 y apparaît aux positions 2-3, 8-9, 14-15, 22-23 et 26-27 : 5 fois ✓. Aucun 1 ne figure trois fois de suite, donc les paires ne se chevauchent pas.",
+      "difficulty": 3
+    }
+  ]
+}

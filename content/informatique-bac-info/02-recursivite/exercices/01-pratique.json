@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers appels récursifs",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans une fonction F, on lit l'instruction F ← n * F (n - 1). Quel nom donne-t-on à cette récursivité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Récursivité directe : F s'appelle elle-même"
+        },
+        {
+          "id": "b",
+          "text": "Récursivité indirecte : F passe par une autre fonction"
+        },
+        {
+          "id": "c",
+          "text": "Récursivité croisée : deux fonctions s'appellent mutuellement"
+        },
+        {
+          "id": "d",
+          "text": "Procédé itératif : F répète une boucle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "F figure dans son propre corps, sans intermédiaire : c'est la récursivité directe ✓. La récursivité indirecte ferait passer l'appel par un autre sous-programme qui rappelle F. La récursivité croisée suppose plusieurs sous-programmes qui s'appellent entre eux. Un procédé itératif utilise une boucle, et il n'y en a aucune ici.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une fonction Produit (m) calcule 1 × 2 × … × m, avec Produit (m) = m * Produit (m - 1) pour m ≥ 1. Quelle valeur le cas particulier m = 0 doit-il rendre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0, car il n'y a plus de facteur à multiplier"
+        },
+        {
+          "id": "b",
+          "text": "1, car le produit de zéro facteur vaut toujours 1"
+        },
+        {
+          "id": "c",
+          "text": "2, car le premier facteur utile du produit est 2"
+        },
+        {
+          "id": "d",
+          "text": "Aucune valeur : un produit n'a pas de cas particulier"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le cas particulier donne le résultat correct du plus petit problème : un produit sans facteur vaut 1, et Produit (1) = 1 * Produit (0) = 1 ✓. Avec 0, tous les produits deviendraient nuls. Avec 2, Produit (1) vaudrait 2 au lieu de 1. Sans cas particulier, la suite des appels ne s'arrêterait jamais.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Combien d'appels (le premier compris) lance Factorielle (3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les paramètres successifs sont 3, 2, 1 et 0 : le cas particulier est lui aussi un appel, donc il y en a 4 ✓. Le nombre 3 oublie l'appel avec m = 0. Le nombre 5 compte un appel de trop. Le nombre 6 est la valeur de 3!, pas le nombre d'appels. Pour n quelconque, Factorielle (n) lance n + 1 appels.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la traduction Pascal de Factorielle ← n * Factorielle (n - 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Factorielle = n * Factorielle (n - 1)"
+        },
+        {
+          "id": "b",
+          "text": "Factorielle := n * (Factorielle (n) - 1)"
+        },
+        {
+          "id": "c",
+          "text": "Factorielle := n * Factorielle (n - 1)"
+        },
+        {
+          "id": "d",
+          "text": "Return n * Factorielle (n - 1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En Pascal, la valeur d'une fonction s'affecte avec := au nom de la fonction : Factorielle := n * Factorielle (n - 1) ✓. Le signe = compare au lieu d'affecter. Écrire Factorielle (n) - 1 déplace la parenthèse et change l'argument de l'appel. Return n'existe pas en Pascal.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que renvoie Copy ('radar', 2, 3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "'rada'"
+        },
+        {
+          "id": "b",
+          "text": "'adar'"
+        },
+        {
+          "id": "c",
+          "text": "'ada'"
+        },
+        {
+          "id": "d",
+          "text": "'ad'"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Copy (ch, p, k) extrait k caractères à partir de la position p : à partir de la position 2 de 'radar', trois caractères donnent 'ada' ✓. Avec 'adar', on a pris 4 caractères, jusqu'à la fin. Avec 'rada', on a commencé à la position 1. Avec 'ad', on a pris 2 caractères.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour chercher dans le tableau trié T[1..8], le premier appel est Dichotomique (1, 8, m, T). Quelle valeur prend milieu = (deb + fin) Div 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(1 + 8) Div 2 = 9 Div 2 = 4 ✓, car Div donne le quotient entier de la division. Le nombre 5 arrondit 4,5 vers le haut. Le nombre 3 vient de (8 − 1) Div 2. Le nombre 9 est la somme deb + fin, avant la division par 2.",
+      "difficulty": 2
+    }
+  ]
+}

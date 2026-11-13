@@ -1,0 +1,163 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les approximations dans tous leurs états",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les actions de Pi_Euler : l'initialisation, les trois instructions de la boucle, puis l'affichage final.",
+      "options": [
+        {
+          "id": "a",
+          "text": "i ← i + 1"
+        },
+        {
+          "id": "b",
+          "text": "S2 ← S1 + 1/Carré (i)"
+        },
+        {
+          "id": "c",
+          "text": "Afficher √(6 × S2)"
+        },
+        {
+          "id": "d",
+          "text": "S1 ← S2"
+        },
+        {
+          "id": "e",
+          "text": "S2 ← 1 et i ← 2"
+        }
+      ],
+      "answerKey": {
+        "order": ["e", "d", "b", "a", "c"]
+      },
+      "explanation": "L'initialisation passe en premier, car la boucle a besoin de S2 et de i. Dans la boucle, S1 ← S2 garde l'ancienne somme avant qu'elle change : placé après le calcul de S2, il rendrait S1 égal à S2, l'écart serait nul et la boucle s'arrêterait dès la première passe. Ensuite S2 ← S1 + 1/Carré (i) ajoute le terme courant, puis i ← i + 1 prépare le suivant : placé avant, il ferait ajouter 1/3² en sautant 1/2². L'affichage de √(6 × S2) vient après la sortie de boucle.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans le programme de Leibniz, S2 ← 1, n ← 0 et Signe ← 1 ; chaque passe exécute n ← n + 1, Signe ← −Signe et S2 ← S1 + Signe/(2n + 1), jusqu'à Abs (S2 − S1) < 0,01. À quelle passe numéro la boucle s'arrête-t-elle ?",
+      "answerKey": {
+        "value": 50
+      },
+      "explanation": "L'écart Abs (S2 − S1) vaut 1/(2n + 1). Pour n = 49, 1/99 ≈ 0,0101 reste supérieur à 0,01 : on continue. Pour n = 50, 1/101 ≈ 0,0099 est inférieur à 0,01 : arrêt à la passe 50 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec Const Epsilon = 1E-4, Pi_Euler affiche 3,131883. On remplace cette ligne par Const Epsilon = 10E-4. Que peut-on affirmer de l'affichage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il reste 3,131883, car 10E-4 et 1E-4 désignent le même nombre"
+        },
+        {
+          "id": "b",
+          "text": "Il se rapproche de π, car 10E-4 est plus petit que 1E-4"
+        },
+        {
+          "id": "c",
+          "text": "Le programme ne compile plus, car 10E-4 est mal écrit"
+        },
+        {
+          "id": "d",
+          "text": "Il s'éloigne de π : 10E-4 vaut 10⁻³, l'arrêt a lieu plus tôt"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La constante 10E-4 vaut 10 × 10⁻⁴ = 10⁻³, dix fois plus grande que 1E-4 : le seuil est plus lâche et la boucle s'arrête plus tôt, après 31 passes au lieu de 97, sur 3,112074 : l'affichage s'éloigne de π ✓. Il ne reste pas 3,131883, car 10E-4 et 1E-4 sont deux nombres différents. Il ne se rapproche pas de π, car un seuil plus grand n'est pas plus exigeant. Le programme compile sans problème : 10E-4 est une écriture légale de réel.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Soit f(x) = x² et la boucle xpre ← xact, xact ← f (xact). Lesquelles de ces affirmations sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depuis xact = 1,1, la suite se rapproche de 1"
+        },
+        {
+          "id": "b",
+          "text": "Depuis xact = 0,5, la suite se rapproche de 0"
+        },
+        {
+          "id": "c",
+          "text": "Les points fixes de f sont 0 et 2"
+        },
+        {
+          "id": "d",
+          "text": "Depuis xact = 1, la boucle s'arrête dès la première passe"
+        },
+        {
+          "id": "e",
+          "text": "Depuis xact = 2, les écarts grandissent : 2, 12, 240, …"
+        }
+      ],
+      "answerKey": {
+        "correct": ["b", "d", "e"]
+      },
+      "explanation": "Depuis 0,5, la suite vaut 0,25, 0,0625, … : elle tend vers 0, un point fixe ✓. Depuis 1, f(1) = 1 : xpre = xact et l'écart est nul, d'où l'arrêt dès la première passe ✓. Depuis 2, on obtient 4, 16, 256 : les écarts 2, 12 et 240 grandissent, la suite diverge ✓. Depuis 1,1, la suite vaut 1,21, 1,4641, … : elle s'éloigne de 1 au lieu de s'en rapprocher. Les points fixes vérifient x² = x : ce sont 0 et 1, et non 0 et 2 (2² = 4).",
+      "difficulty": 3
+    },
+    {
+      "type": "matching",
+      "prompt": "Pour f(x) = x² sur [0 ; 3] avec n = 3 (donc h = 1), associer chaque méthode à l'aire qu'elle calcule. L'aire exacte vaut 9.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Rectangles, point gauche"
+        },
+        {
+          "id": "l2",
+          "text": "Rectangles, point droit"
+        },
+        {
+          "id": "l3",
+          "text": "Rectangles, point milieu"
+        },
+        {
+          "id": "l4",
+          "text": "Trapèzes"
+        },
+        {
+          "id": "r1",
+          "text": "9,5"
+        },
+        {
+          "id": "r2",
+          "text": "5"
+        },
+        {
+          "id": "r3",
+          "text": "14"
+        },
+        {
+          "id": "r4",
+          "text": "8,75"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r3"],
+          ["l3", "r4"],
+          ["l4", "r1"]
+        ]
+      },
+      "explanation": "Point gauche : x = 0, 1, 2, donc (0 + 1 + 4) × 1 = 5. Point droit : x = 1, 2, 3, donc (1 + 4 + 9) × 1 = 14. Point milieu : x = 0,5, 1,5, 2,5, donc (0,25 + 2,25 + 6,25) × 1 = 8,75. Trapèzes : (0 + 1)/2 + (1 + 4)/2 + (4 + 9)/2 = 0,5 + 2,5 + 6,5 = 9,5. Pour cette fonction croissante, le point gauche sous-estime (5 < 9) et le point droit surestime (14 > 9).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Calculer par la méthode des trapèzes l'aire sous f(x) = 1/x sur [1 ; 3] avec n = 2, arrondie au millième.",
+      "answerKey": {
+        "value": 1.167,
+        "tolerance": 0.001
+      },
+      "explanation": "Ici h = (3 − 1)/2 = 1, avec f(1) = 1, f(2) = 0,5 et f(3) ≈ 0,3333. Les trapèzes valent (1 + 0,5)/2 = 0,75 et (0,5 + 0,3333)/2 ≈ 0,4167. L'aire est (0,75 + 0,4167) × 1 ≈ 1,1667, soit 1,167 ✓.",
+      "difficulty": 3
+    }
+  ]
+}

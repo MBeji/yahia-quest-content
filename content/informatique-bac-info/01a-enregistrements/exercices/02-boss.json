@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des fiches",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "On saisit N avec :\nREPEAT\n  Write('N : ');\n  ReadLn(N);\nUNTIL (N >= 2) AND (N <= 40);\nL'utilisateur tape successivement 1, 50, 0, 7, puis 12. Quelle est la valeur de N en sortie, et combien de fois le texte N : est-il affiché ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N = 1, affiché 1 fois"
+        },
+        {
+          "id": "b",
+          "text": "N = 7, affiché 3 fois"
+        },
+        {
+          "id": "c",
+          "text": "N = 7, affiché 4 fois"
+        },
+        {
+          "id": "d",
+          "text": "N = 12, affiché 5 fois"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les valeurs 1, 50 et 0 rendent la condition d'arrêt fausse (1 < 2, 50 > 40, 0 < 2) : on relit. La valeur 7 est comprise entre 2 et 40 : la boucle s'arrête avec N = 7, après 4 lectures donc 4 affichages ✓. La valeur 12 n'est jamais lue, la boucle étant déjà terminée. La réponse N = 1 oublie que 1 est refusé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "T contient 5 fiches (N = 5) :\nSana, annee 3, 12.5 ; Omar, annee 2, 9 ; Lina, annee 3, 14 ; Yassine, annee 4, 11.5 ; Amel, annee 3, 8.\nOn exécute nb := Compter(T, N, 3); p := nb * 100 / N; où Compter rend le nombre de fiches dont annee vaut son troisième paramètre. Quelle valeur contient p ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.6"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "40"
+        },
+        {
+          "id": "d",
+          "text": "60"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Trois fiches ont annee = 3 (Sana, Lina et Amel), donc nb = 3 et p = 3 × 100 / 5 = 60 ✓. La valeur 3 est le comptage nb, pas le pourcentage. La valeur 0.6 oublie de multiplier par 100. La valeur 40 est le pourcentage des deux autres joueurs (Omar et Yassine).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "TYPE Joueur = Record nom : String[10]; points : Integer; End;\nPROCEDURE Augmenter (j : Joueur);\nBEGIN\n  j.points := j.points + 5;\nEND;\nDans le programme principal, a est de type Joueur et a.points vaut 12.\nAugmenter(a);\nWriteLn(a.points);\nQu'affiche ce programme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        },
+        {
+          "id": "d",
+          "text": "Erreur de compilation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le paramètre j est passé sans Var : la procédure reçoit une copie de la fiche a et ajoute 5 au champ points de la copie. La fiche a n'est pas modifiée, le programme affiche 12 ✓. La valeur 17 supposerait un paramètre Var, qui travaille sur la fiche d'origine. La valeur 5 suppose que points repart de 0. Le programme compile : un enregistrement se passe en paramètre comme n'importe quelle variable.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "TYPE Joueur = Record nom : String[10]; points : Integer; End;\nVAR j, k : Joueur;\nj.points := 10;\nk.points := 3;\nWith j Do\nBegin\n  points := points + 1;\n  k.points := k.points + points;\nEnd;\nQue valent j.points et k.points à la fin ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 et 13"
+        },
+        {
+          "id": "b",
+          "text": "11 et 3"
+        },
+        {
+          "id": "c",
+          "text": "11 et 13"
+        },
+        {
+          "id": "d",
+          "text": "11 et 14"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sous With j Do, points est j.points : il passe de 10 à 11. Ensuite k.points := k.points + points lit k.points (3) et j.points (11), et range 14 dans le champ points de k ✓. La valeur 13 utilise l'ancien contenu 10 de j.points, alors que l'incrémentation est exécutée avant. La valeur 3 suppose que k ne peut pas être modifié dans ce bloc, mais le préfixe k. désigne bien la fiche k. Le couple 10 et 13 ignore la première instruction du bloc.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "N = 4 et T contient (nom, points) : Hedi, 8 ; Mona, 15 ; Ali, 15 ; Rim, 6.\nm := 1;\nFOR i := 2 TO N DO\n  IF T[i].points > T[m].points THEN m := i;\nWriteLn(T[m].nom);\nQuel nom est affiché ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hedi"
+        },
+        {
+          "id": "b",
+          "text": "Ali"
+        },
+        {
+          "id": "c",
+          "text": "Mona"
+        },
+        {
+          "id": "d",
+          "text": "Rim"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "m désigne la meilleure fiche rencontrée. Pour i = 2, 15 > 8 donc m = 2. Pour i = 3, 15 n'est pas strictement supérieur à 15 et m reste 2. Pour i = 4, 6 n'est pas supérieur à 15 et m reste 2 : Mona est affichée ✓. Ali serait affiché avec >= à la place de >. Hedi serait le résultat si m n'était jamais mis à jour, et Rim est la joueuse aux points les plus faibles.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "N = 5 et T contient (nom, points) : Sana, 12 ; Lina, 9 ; Omar, 14 ; Amel, 11 ; Omar, 7.\ni := 1;\nWHILE (i <= N) AND (T[i].nom <> 'Omar') DO\n  i := i + 1;\nWriteLn(i, ' et ', T[i].points);\nQu'affiche ce programme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 et 9"
+        },
+        {
+          "id": "b",
+          "text": "3 et 14"
+        },
+        {
+          "id": "c",
+          "text": "4 et 11"
+        },
+        {
+          "id": "d",
+          "text": "5 et 7"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La boucle avance tant que la fiche n'est pas celle d'Omar : T[1].nom (Sana) et T[2].nom (Lina) sont différents, i passe à 3, et T[3].nom est Omar : la condition devient fausse et la boucle s'arrête sur la première fiche rencontrée ✓. Le programme affiche donc i = 3 et T[3].points = 14. L'affichage 5 et 7 correspond à la dernière fiche d'Omar, que la boucle n'atteint jamais. L'affichage 2 et 9 s'arrête une fiche trop tôt, et 4 et 11 une fiche trop tard.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le noyau atomique",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Que traduit la relation d'Einstein E₀ = m·c² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'énergie cinétique d'une particule de masse m qui se déplace à la célérité c"
+        },
+        {
+          "id": "b",
+          "text": "La conservation de la masse totale lorsqu'un noyau est dissocié en nucléons"
+        },
+        {
+          "id": "c",
+          "text": "L'énergie qu'il faut fournir à un noyau de masse m pour le dissocier"
+        },
+        {
+          "id": "d",
+          "text": "Une équivalence entre masse et énergie : la masse est une forme d'énergie"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La relation d'Einstein donne l'énergie de masse E₀ d'une particule au repos : la masse est une forme d'énergie potentielle, et toute variation de masse Δm s'accompagne d'une variation d'énergie ΔE = Δm·c² ✓. Une particule au repos n'a pas d'énergie cinétique : E₀ ne dépend pas d'un mouvement. La masse totale ne se conserve pas lorsqu'on dissocie un noyau : elle augmente de Δm, ce qui correspond à l'énergie fournie. E₀ = m·c² est l'énergie de masse du noyau entier ; l'énergie à fournir pour le dissocier est son énergie de liaison E_ℓ = Δm·c², bien plus petite.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un neutron a pour masse 939,6 MeV·c⁻². Exprimer cette masse en u (1 u = 931,5 MeV·c⁻²), arrondie au dix-millième.",
+      "answerKey": {
+        "value": 1.0087,
+        "tolerance": 0.0002,
+        "unit": "u"
+      },
+      "explanation": "Une masse en MeV·c⁻² se convertit en u en divisant par 931,5 : m = 939,6 / 931,5 = 1,0087 u ✓, ce qui est bien la masse du neutron, 1,00867 u.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le noyau de soufre ³²₁₆S a une masse m = 31,96329 u. Quelle est son énergie de masse, en MeV, arrondie à l'unité ? (1 u = 931,5 MeV·c⁻²)",
+      "answerKey": {
+        "value": 29774,
+        "tolerance": 1,
+        "unit": "MeV"
+      },
+      "explanation": "E₀ = m × 931,5 = 31,96329 × 931,5 = 29 773,8 MeV, soit 29774 MeV ✓ (2,9774 × 10⁴ MeV). Une masse exprimée en u se convertit directement en énergie de masse en MeV avec le facteur 931,5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour dissocier un noyau au repos en nucléons isolés et au repos, il faut lui fournir 95 MeV. Quel est le défaut de masse de ce noyau ? (1 u = 931,5 MeV·c⁻²)",
+      "options": [
+        {
+          "id": "a",
+          "text": "8,85 × 10⁴ u"
+        },
+        {
+          "id": "b",
+          "text": "0,102 u"
+        },
+        {
+          "id": "c",
+          "text": "95,0 u"
+        },
+        {
+          "id": "d",
+          "text": "1,09 × 10⁻⁴ u"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'énergie fournie est l'énergie de liaison : E_ℓ = Δm·c². Avec Δm en u, Δm = E_ℓ / 931,5 = 95 / 931,5 = 0,102 u ✓. 8,85 × 10⁴ u multiplie par 931,5 au lieu de diviser. 95,0 u reprend la valeur en MeV comme si c'était une masse en u. 1,09 × 10⁻⁴ u divise deux fois par 931,5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces noyaux, lequel peut être stable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "⁵⁶₂₈Ni"
+        },
+        {
+          "id": "b",
+          "text": "⁵⁰₂₇Co"
+        },
+        {
+          "id": "c",
+          "text": "⁹⁰₄₀Zr"
+        },
+        {
+          "id": "d",
+          "text": "²¹⁰₈₄Po"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Au-delà de Z = 20, un noyau stable a un excès de neutrons (N > Z), et aucun noyau n'est stable au-delà de Z = 83. ⁹⁰₄₀Zr a N = 90 − 40 = 50 > 40 et Z ≤ 83 : il peut être stable ✓. ⁵⁶₂₈Ni a N = 28 = Z avec Z > 20 : pas d'excès de neutrons. ⁵⁰₂₇Co a N = 23 < Z = 27 : il manque des neutrons. ²¹⁰₈₄Po a bien un excès de neutrons (N = 126), mais Z = 84 dépasse 83.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le noyau de strontium ⁸⁸₃₈Sr a pour masse m = 87,88477 u. Calculer son énergie de liaison par nucléon, en MeV, arrondie au centième (m_p = 1,00728 u ; m_n = 1,00867 u ; 1 u = 931,5 MeV·c⁻²).",
+      "answerKey": {
+        "value": 8.74,
+        "tolerance": 0.01,
+        "unit": "MeV"
+      },
+      "explanation": "⁸⁸₃₈Sr compte 38 protons et 50 neutrons : 38 × 1,00728 + 50 × 1,00867 = 88,71014 u, donc Δm = 88,71014 − 87,88477 = 0,82537 u. Puis E_ℓ = 0,82537 × 931,5 = 768,8 MeV et E_ℓ/A = 768,8 / 88 = 8,74 MeV ✓.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "title": "⭐ Exercice : Premiers coups de pivot",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans Tri_Rapide (T, g, d), dans quel cas la procédure ne fait-elle rien ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quand g < d : le sous-tableau a au moins deux éléments"
+        },
+        {
+          "id": "b",
+          "text": "Quand T[g] = T[d] : premier et dernier éléments égaux"
+        },
+        {
+          "id": "c",
+          "text": "Quand le pivot est déjà à sa place définitive"
+        },
+        {
+          "id": "d",
+          "text": "Quand g ≥ d : le sous-tableau a zéro ou un élément"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le test If g < d protège le corps de la procédure : un sous-tableau de zéro ou un élément (g ≥ d) est déjà trié, et l'appel s'arrête ✓. Avec au moins deux éléments (g < d), la procédure partitionne puis s'appelle. Que le premier et le dernier éléments soient égaux ne dit rien sur la taille : [4, 9, 4] est partitionné. Un pivot déjà bien placé, comme 1 dans [1, 5, 3], n'évite pas les appels sur les côtés, car [5, 3] reste à trier.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Combien de déplacements au minimum faut-il pour résoudre les tours de Hanoï avec 12 disques ?",
+      "answerKey": {
+        "value": 4095,
+        "unit": "déplacements"
+      },
+      "explanation": "Le minimum est 2ⁿ − 1 : pour n = 12, 2¹² − 1 = 4096 − 1 = 4095 ✓. Chaque disque de plus double le travail précédent et ajoute un déplacement : le résultat est donc bien plus grand que 12 ou 24.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Trois disques de diamètres 1 < 2 < 3 sont chacun seul sur un piquet : le disque 3 sur A, le disque 2 sur B et le disque 1 sur C. Quel déplacement respecte les règles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le disque 3 de A vers B"
+        },
+        {
+          "id": "b",
+          "text": "Le disque 2 de B vers C"
+        },
+        {
+          "id": "c",
+          "text": "Le disque 1 de C vers B"
+        },
+        {
+          "id": "d",
+          "text": "Le disque 3 de A vers C"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un disque ne peut aller que sur un piquet vide ou sur un disque plus grand : le disque 1 peut se poser sur le disque 2 ✓. Le disque 3 sur B ou sur C serait posé sur un disque plus petit (2 ou 1), et le disque 2 sur C serait posé sur le disque 1, plus petit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le sous-tableau T[1..8] a pour pivot T[1] = 12. Parmi les 7 autres valeurs, 3 sont inférieures ou égales à 12. Dans quelle case la partition place-t-elle le pivot ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les 3 valeurs inférieures ou égales à 12 occupent les cases 1 à 3 après la partition, et le pivot se place juste après, en case 1 + 3 = 4 ✓. La case 3 ne laisserait que 2 cases à gauche pour 3 valeurs. La case 5 supposerait 4 valeurs inférieures ou égales, alors que 4 est le nombre de valeurs supérieures. La case 8 ne convient que si les 7 autres valeurs sont toutes inférieures ou égales au pivot.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On partitionne T = [8, 3, 12, 5, 9, 2] avec le pivot T[1] = 8. Quelles deux valeurs sont échangées en premier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 et 2"
+        },
+        {
+          "id": "b",
+          "text": "12 et 9"
+        },
+        {
+          "id": "c",
+          "text": "8 et 2"
+        },
+        {
+          "id": "d",
+          "text": "3 et 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "i avance sur 3 (inférieur à 8) et s'arrête sur 12, la première valeur supérieure à 8 ; j est déjà sur 2 en case 6, inférieur à 8 : on échange 12 et 2 ✓. Les valeurs 12 et 9 sont toutes deux supérieures à 8 : j ne s'arrête que sur une valeur inférieure ou égale au pivot, donc il ne s'arrête pas sur 9. Le pivot 8 ne bouge qu'à la fin de la partition. La valeur 3 est inférieure à 8 : elle est bien placée à gauche, et i ne s'arrête pas dessus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Après le décompte d'un tri comptage, occ[0..4] = [0, 3, 1, 0, 2]. Quel tableau la reconstruction écrit-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[0, 3, 1, 0, 2]"
+        },
+        {
+          "id": "b",
+          "text": "[1, 2, 4]"
+        },
+        {
+          "id": "c",
+          "text": "[1, 1, 1, 2, 4, 4]"
+        },
+        {
+          "id": "d",
+          "text": "[2, 2, 2, 3, 5, 5]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "occ[1] = 3, occ[2] = 1 et occ[4] = 2 : la valeur 1 est écrite trois fois, la valeur 2 une fois et la valeur 4 deux fois, soit [1, 1, 1, 2, 4, 4] ✓. Recopier occ donnerait [0, 3, 1, 0, 2] : ce sont les décomptes qui seraient écrits au lieu des valeurs. Le tableau [1, 2, 4] écrit chaque valeur une seule fois et perd les doublons. Le tableau [2, 2, 2, 3, 5, 5] décale tous les indices d'un cran, comme si la case 0 représentait la valeur 1.",
+      "difficulty": 2
+    }
+  ]
+}

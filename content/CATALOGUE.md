@@ -5,7 +5,7 @@
 > with `chapter.json`; a subject with 0 chapters is a ⚠ stub). Check here whether a subject /
 > grade already exists before creating one, and which slugs are taken.
 
-**101 subjects · 924 chapters · 4752 exercises · 6 themes · 0 stub(s)**
+**105 subjects · 953 chapters · 4868 exercises · 6 themes · 1 stub(s)**
 
 ## anglais
 
@@ -103,9 +103,13 @@
 | `svt` | العلوم الفيزيائية | 9eme-base | ar | 13 | 63 | 13 |
 | `english` | English | 9eme-base | en | 10 | 66 | 10 |
 | `sciences-vie-terre` | علوم الحياة والأرض | 9eme-base | ar | 21 | 172 | 21 |
+| `gestion-bac-eco-gestion` ⚠ stub | Gestion | bac-eco-gestion | fr | 0 | 0 | 0 |
 | `math-bac-info` | Mathématiques | bac-info | fr | 13 | 52 | 13 |
 | `physique-bac-info` | Physique | bac-info | fr | 7 | 28 | 7 |
+| `informatique-bac-info` | Informatique | bac-info | fr | 10 | 40 | 10 |
+| `philosophie-bac-lettres` | الفلسفة | bac-lettres | ar | 8 | 32 | 8 |
 | `math-bac-math` | Mathématiques | bac-math | fr | 19 | 133 | 19 |
+| `physique-bac-math` | Physique | bac-math | fr | 11 | 44 | 11 |
 | `math-bac-sciences-exp` | Mathématiques | bac-sciences-exp | fr | 17 | 68 | 17 |
 | `physique-bac-sciences-exp` | Physique | bac-sciences-exp | fr | 11 | 44 | 11 |
 | `math-bac-techniques` | Mathématiques | bac-techniques | fr | 16 | 64 | 16 |

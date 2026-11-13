@@ -1,0 +1,112 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les tris démasqués",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Quelle suite de pas le tri Shell utilise-t-il, dans l'ordre, pour un tableau de n = 130 éléments ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "121, 40, 13, 4, 1"
+        },
+        {
+          "id": "b",
+          "text": "364, 121, 40, 13, 4, 1"
+        },
+        {
+          "id": "c",
+          "text": "43, 14, 4, 1"
+        },
+        {
+          "id": "d",
+          "text": "65, 32, 16, 8, 4, 2, 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La montée donne p = 0, 1, 4, 13, 40, 121, 364 : elle s'arrête sur 364, qui n'est pas inférieur à 130. La descente donne 364 Div 3 = 121, puis 40, 13, 4 et 1 : les pas sont 121, 40, 13, 4, 1 ✓. La suite qui commence par 364 y ajoute la valeur d'arrêt de la montée, qui n'est jamais un pas. La suite 43, 14, 4, 1 divise n par 3 au lieu de partir de la suite 3p + 1. La suite 65, 32, 16, 8, 4, 2, 1 divise n par 2, ce qui n'est pas la suite de Shell.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un tableau de 9 valeurs distinctes est rangé en ordre décroissant ; on le trie en ordre croissant par insertion. Combien d'éléments sont décalés en tout, sur l'ensemble des itérations ?",
+      "answerKey": {
+        "value": 36,
+        "unit": "décalages"
+      },
+      "explanation": "Le tableau est dans le pire cas : à l'itération i, Tmp est plus petit que tous les éléments de T[1..i − 1], donc les i − 1 sont décalés. Pour i de 2 à 9, cela fait 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36 décalages ✓. Sur un tableau déjà trié, le même tri ne décalerait rien.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On fusionne deux tableaux triés de 6 et 4 éléments. Au plus, combien de comparaisons T1[c1] < T2[c2] la fusion peut-elle faire ?",
+      "answerKey": {
+        "value": 9,
+        "unit": "comparaisons"
+      },
+      "explanation": "Chaque comparaison fait recopier un élément. Quand il n'en reste qu'un à recopier, l'un des deux tableaux est épuisé et la boucle de comparaison s'arrête : il y a donc au plus 6 + 4 − 1 = 9 comparaisons ✓. Ce maximum est atteint pour T1 = [1, 3, 5, 7, 9, 11] et T2 = [2, 4, 6, 12] : le 12 reste seul et est recopié sans comparaison.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On applique à T = [9, 3, 7, 1, 8] un tri qui s'arrête après deux étapes (une étape = un passage pour les bulles, une itération pour l'insertion, une étape pour la sélection). On observe [3, 7, 9, 1, 8]. Quel tri a-t-on appliqué ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le tri par sélection"
+        },
+        {
+          "id": "b",
+          "text": "Le tri par insertion"
+        },
+        {
+          "id": "c",
+          "text": "Le tri à bulles"
+        },
+        {
+          "id": "d",
+          "text": "Le tri Shell (deux passages, de pas 4 puis 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le tri par insertion donne [3, 9, 7, 1, 8] à l'itération 2, puis [3, 7, 9, 1, 8] à l'itération 3 : le début est trié et le reste n'est pas touché ✓. Le tri par sélection donnerait [1, 3, 7, 9, 8] : il place d'abord le minimum 1 en tête. Le tri à bulles donnerait [3, 1, 7, 8, 9] : chaque passage envoie la plus grande valeur en fin. Le tri Shell, après ses passages de pas 4 puis 1, donnerait le tableau trié [1, 3, 7, 8, 9].",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On applique le tri par comptage (case 1 + nombre de valeurs strictement inférieures) à T = [7, 3, 7, 5] et l'on range chaque valeur dans un tableau R de 4 cases. Quelle case de R n'est jamais remplie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La case 2 de R"
+        },
+        {
+          "id": "b",
+          "text": "La case 3 de R"
+        },
+        {
+          "id": "c",
+          "text": "Aucune case : toutes sont remplies"
+        },
+        {
+          "id": "d",
+          "text": "La case 4 de R"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le 3 n'a aucune valeur inférieure : case 1. Le 5 en a une (le 3) : case 2. Chacun des deux 7 en a deux (3 et 5) : case 3, écrite deux fois. La case 4 n'est jamais remplie ✓. La case 2 reçoit le 5, et la case 3 reçoit les deux 7. Le comptage ne fonctionne que si les valeurs sont distinctes : avec des doublons, une case est écrasée et une autre reste vide.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le tri Shell (pas 4 puis pas 1) est appliqué à T = [40, 10, 35, 5, 30, 20, 25, 15]. Combien d'éléments sont décalés au total, les deux passages compris ?",
+      "answerKey": {
+        "value": 16,
+        "unit": "décalages"
+      },
+      "explanation": "Pas 4 : les sous-vecteurs (40, 30) et (35, 25) décalent chacun un élément, (10, 20) et (5, 15) aucun : 2 décalages, T = [30, 10, 25, 5, 40, 20, 35, 15]. Pas 1, itération par itération : 10 décale 30 (1), 25 décale 30 (1), 5 décale 30, 25 et 10 (3), 40 aucun, 20 décale 40, 30 et 25 (3), 35 décale 40 (1), 15 décale 40, 35, 30, 25 et 20 (5), soit 14. Total 2 + 14 = 16 décalages ✓.",
+      "difficulty": 3
+    }
+  ]
+}

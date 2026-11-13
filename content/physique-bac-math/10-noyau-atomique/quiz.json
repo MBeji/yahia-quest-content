@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Le noyau atomique",
+  "questions": [
+    {
+      "prompt": "Le noyau de cobalt ⁵⁹₂₇Co contient :",
+      "options": [
+        {
+          "id": "a",
+          "text": "27 protons et 59 neutrons"
+        },
+        {
+          "id": "b",
+          "text": "27 protons et 86 neutrons"
+        },
+        {
+          "id": "c",
+          "text": "27 protons et 32 neutrons"
+        },
+        {
+          "id": "d",
+          "text": "32 protons et 27 neutrons"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Z = 27 donne le nombre de protons, et N = A − Z = 59 − 27 = 32 neutrons ✓. Annoncer 59 neutrons confond A, nombre total de nucléons, avec N. Annoncer 86 neutrons additionne A et Z au lieu de les soustraire. Annoncer 32 protons et 27 neutrons inverse les rôles de Z et de N.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle paire est formée de noyaux isotopes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "³⁹₁₉K et ⁴¹₁₉K"
+        },
+        {
+          "id": "b",
+          "text": "²⁴₁₁Na et ²⁴₁₂Mg"
+        },
+        {
+          "id": "c",
+          "text": "¹⁹₉F et ²⁰₁₀Ne"
+        },
+        {
+          "id": "d",
+          "text": "¹⁶₈O et ³²₁₆S"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Des isotopes ont le même Z et des nombres de masse différents : ³⁹₁₉K et ⁴¹₁₉K ont Z = 19 et respectivement 20 et 22 neutrons ✓. ²⁴₁₁Na et ²⁴₁₂Mg ont le même A mais des Z différents (11 et 12). ¹⁹₉F et ²⁰₁₀Ne ont le même nombre de neutrons (10) et pas le même Z. ¹⁶₈O et ³²₁₆S ont des Z différents (8 et 16) : le rapport A/Z identique n'en fait pas des isotopes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelles sont la nature et la portée de l'interaction forte qui assure la cohésion du noyau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "attractive, de l'ordre de 10⁻¹⁰ m"
+        },
+        {
+          "id": "b",
+          "text": "répulsive, de l'ordre de 10⁻¹⁵ m"
+        },
+        {
+          "id": "c",
+          "text": "répulsive, de l'ordre de 10⁻¹⁰ m"
+        },
+        {
+          "id": "d",
+          "text": "attractive, de l'ordre de 10⁻¹⁵ m"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'interaction forte est attractive et de très courte portée, de l'ordre du fermi (1 fm = 10⁻¹⁵ m) ✓. Une portée de l'ordre de 10⁻¹⁰ m est la taille de l'atome, cent mille fois trop grande. Une force répulsive disloquerait le noyau : la répulsion entre protons est de nature électrique, et l'interaction forte la compense.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle expression donne le défaut de masse du noyau ³²₁₆S, de masse m_S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δm = 16·m_p + 32·m_n − m_S"
+        },
+        {
+          "id": "b",
+          "text": "Δm = 16·m_p + 16·m_n − m_S"
+        },
+        {
+          "id": "c",
+          "text": "Δm = m_S − (16·m_p + 16·m_n)"
+        },
+        {
+          "id": "d",
+          "text": "Δm = 32·m_p − m_S"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "³²₁₆S compte 16 protons et 32 − 16 = 16 neutrons : le défaut de masse est la masse de ces nucléons séparés moins celle du noyau ✓. Compter 32 neutrons oublie que 16 des 32 nucléons sont des protons. L'expression renversée donne une valeur négative, alors que Δm > 0. 32·m_p traite tous les nucléons comme des protons.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un noyau de 24 nucléons, dont 12 protons, a une énergie de liaison par nucléon E_ℓ/A = 8,23 MeV (1 u = 931,5 MeV·c⁻²). Quel est son défaut de masse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,2120 u"
+        },
+        {
+          "id": "b",
+          "text": "8,84 × 10⁻³ u"
+        },
+        {
+          "id": "c",
+          "text": "1,84 × 10⁵ u"
+        },
+        {
+          "id": "d",
+          "text": "0,1060 u"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "E_ℓ = (E_ℓ/A) × A = 8,23 × 24 = 197,5 MeV, puis Δm = E_ℓ / 931,5 = 197,5 / 931,5 = 0,2120 u ✓. 8,84 × 10⁻³ u divise E_ℓ/A par 931,5 sans multiplier par A. 1,84 × 10⁵ u multiplie E_ℓ par 931,5 au lieu de la diviser. 0,1060 u multiplie E_ℓ/A par le nombre de protons (12) au lieu du nombre de nucléons.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Trois noyaux ont pour nombre de masse et énergie de liaison : R (A = 48, E_ℓ = 420 MeV), S (A = 120, E_ℓ = 1 020 MeV) et T (A = 170, E_ℓ = 1 380 MeV). Quel est leur classement du plus stable au moins stable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T, S, R"
+        },
+        {
+          "id": "b",
+          "text": "R, S, T"
+        },
+        {
+          "id": "c",
+          "text": "S, R, T"
+        },
+        {
+          "id": "d",
+          "text": "R, T, S"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les nombres de masse diffèrent, donc on compare E_ℓ/A : R, 420 / 48 = 8,75 MeV ; S, 1 020 / 120 = 8,50 MeV ; T, 1 380 / 170 = 8,12 MeV. Le plus stable est celui de plus grande E_ℓ/A : R, puis S, puis T ✓. Le classement T, S, R suit les énergies de liaison décroissantes, qui croissent avec le nombre de nucléons. Les classements S, R, T et R, T, S échangent deux noyaux dont les E_ℓ/A ne sont pas dans cet ordre.",
+      "difficulty": 2
+    }
+  ]
+}

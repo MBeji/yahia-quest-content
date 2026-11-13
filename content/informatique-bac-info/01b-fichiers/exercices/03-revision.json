@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les fichiers",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quel traitement se fait naturellement en accès séquentiel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corriger le 800e élément sans lire les précédents"
+        },
+        {
+          "id": "b",
+          "text": "Lire l'élément dont on connaît le numéro d'ordre"
+        },
+        {
+          "id": "c",
+          "text": "Afficher tous les éléments, du premier au dernier"
+        },
+        {
+          "id": "d",
+          "text": "Remplacer le dernier élément sans parcourir le fichier"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Afficher tous les éléments exige de passer par chacun, dans l'ordre : l'accès séquentiel suffit et l'accès direct n'apporte rien ✓. Les trois autres traitements visent un élément précis dont on connaît le numéro, ce qui est le rôle de l'accès direct.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Ce programme doit créer le fichier scores seulement s'il n'existe pas :\nAssign(scores, 'C:/Club/scores.dat');\n{$I-}\nReset(scores);\nIf … Then Rewrite(scores);\n{$I+}\nQuelle condition remplace les points ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eof (scores)"
+        },
+        {
+          "id": "b",
+          "text": "FileSize (scores) = 0"
+        },
+        {
+          "id": "c",
+          "text": "IOResult = 0"
+        },
+        {
+          "id": "d",
+          "text": "IOResult <> 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec la directive {$I-}, Pascal ne s'arrête pas sur une erreur d'entrée-sortie. Si Reset échoue parce que le fichier est absent, IOResult est différent de 0 : Rewrite le crée ✓. La condition IOResult = 0 est vraie quand le fichier existe, et Rewrite effacerait alors ses données. Eof et FileSize (scores) = 0 supposent un fichier déjà ouvert, ce qui n'est pas le cas quand Reset a échoué.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un fichier doit stocker des couples (nom, points). Quelle déclaration est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Joueur = Record nom : String[20]; points : Integer End; F_Joueur = File Of Joueur;"
+        },
+        {
+          "id": "b",
+          "text": "F_Joueur = File Of (String[20], Integer);"
+        },
+        {
+          "id": "c",
+          "text": "Joueur = Record nom : String[20]; points : Integer End; F_Joueur = Array[1..100] Of Joueur;"
+        },
+        {
+          "id": "d",
+          "text": "Joueur = Record nom : String[20]; points : Integer End; F_Joueur = Text;"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les composants d'un fichier ont tous le même type : pour mêler un nom et des points, on les regroupe dans un enregistrement Joueur, puis on déclare File Of Joueur ✓. Une liste de deux types derrière File Of n'existe pas. Un tableau de Joueur reste en mémoire et n'est pas un fichier. Le type Text déclare un fichier de caractères, pas d'enregistrements.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un fichier de nom logique f, lié à 'a.dat', vient d'être utilisé. Quelle suite le renomme en 'saison1.dat' ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rename (f, 'saison1.dat') ; Close (f)"
+        },
+        {
+          "id": "b",
+          "text": "Close (f) ; Rename (f, 'saison1.dat')"
+        },
+        {
+          "id": "c",
+          "text": "Rewrite (f) ; Rename (f, 'saison1.dat')"
+        },
+        {
+          "id": "d",
+          "text": "Erase (f) ; Rename (f, 'saison1.dat')"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un fichier doit être fermé avant d'être renommé : Close puis Rename ✓. Renommer avant de fermer enfreint cette règle. Rewrite rouvre le fichier en effaçant ses données. Erase supprime le fichier, et il n'y a plus rien à renommer ensuite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un fichier texte f contient trois lignes et son pointeur est au début de la première. Que fait ReadLn (f, ligne) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il lit le premier caractère de la ligne 1 et avance d'une position"
+        },
+        {
+          "id": "b",
+          "text": "Il lit les trois lignes et place le pointeur en fin de fichier"
+        },
+        {
+          "id": "c",
+          "text": "Il lit la ligne 1 en entier et passe au début de la ligne 2"
+        },
+        {
+          "id": "d",
+          "text": "Il lit la ligne 1 en entier et reste au début de la ligne 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ReadLn lit le contenu d'une ligne entière, jusqu'à la marque de fin de ligne, puis pointe le début de la ligne suivante ✓. Lire un seul caractère est le rôle de Read sur une variable de type Char. Lire les trois lignes demanderait trois appels. Rester au début de la ligne 1 ferait relire indéfiniment la même ligne.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Laquelle de ces instructions ne s'applique pas à un fichier texte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lire_nl (f, ligne)"
+        },
+        {
+          "id": "b",
+          "text": "Position_fichier (f)"
+        },
+        {
+          "id": "c",
+          "text": "Ecrire_nl (f, ligne)"
+        },
+        {
+          "id": "d",
+          "text": "Fin_ligne (f)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Position_fichier, en Pascal FilePos, ne s'applique pas à un fichier texte ✓. Lire_nl lit une ligne, Ecrire_nl en écrit une et Fin_ligne teste la fin de la ligne courante : toutes trois valent pour un fichier texte.",
+      "difficulty": 2
+    }
+  ]
+}

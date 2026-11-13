@@ -1,0 +1,133 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des nombres",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "La relation récursive du PGCD par la différence est programmée sans optimisation. Combien d'appels (le premier compris) lance Pgcd (100, 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "99"
+        },
+        {
+          "id": "c",
+          "text": "100"
+        },
+        {
+          "id": "d",
+          "text": "101"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les couples successifs sont (100, 1), (99, 1), (98, 1), …, (1, 1) : a prend toutes les valeurs de 100 à 1, soit 100 appels, le dernier étant le cas particulier ✓. Le nombre 99 est le nombre de soustractions, un de moins que d'appels. Le nombre 101 ajoute un appel pour a = 0, qui n'a jamais lieu. Le nombre 1 suppose que le résultat se devine sans calcul, alors que le programme enchaîne les 100 appels.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Comb (n, p) vaut 1 si p = 0 ou p = n, sinon Comb (n - 1, p) + Comb (n - 1, p - 1). Combien de fois l'appel Comb (3, 1) a-t-il lieu pendant l'exécution de Comb (7, 3) ?",
+      "answerKey": {
+        "value": 6,
+        "unit": "appels"
+      },
+      "explanation": "Chaque chemin de Comb (7, 3) vers Comb (3, 1) fait 4 pas, de n = 7 à n = 3 : 2 pas baissent p de 3 à 1 (second appel) et 2 pas gardent p (premier appel). Il y a autant de chemins que de façons de placer 2 pas sur 4, soit C₄² = 6 ✓. Un comptage direct de l'exécution donne aussi 6 appels de Comb (3, 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pourquoi le test (2 * m) Mod 10 = 0 décide-t-il de la divisibilité de m par 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 × m est un multiple de 10 dès que m est un nombre pair"
+        },
+        {
+          "id": "b",
+          "text": "Mod 10 donne le chiffre des dizaines de 2 × m, et ce chiffre doit être nul"
+        },
+        {
+          "id": "c",
+          "text": "2 × m est un multiple de 10 exactement quand m est lui-même un multiple de 10"
+        },
+        {
+          "id": "d",
+          "text": "Le dernier chiffre de 2 × m vaut 0 exactement quand celui de m vaut 0 ou 5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Seul le chiffre des unités u de m compte : 2 × u vaut 0, 2, 4, …, 18 pour u de 0 à 9, et seuls 0 et 10 sont des multiples de 10, donc u = 0 ou u = 5 ✓. Il est faux que tout nombre pair convienne : pour m = 2, 2 × m = 4. Mod 10 donne le chiffre des unités, pas des dizaines : 2 × 13 = 26 donne 6. Et m n'a pas besoin d'être un multiple de 10 : m = 5 donne 2 × 5 = 10.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "La fonction Div_9 additionne Ord (ch[i]) au lieu de convertir chaque caractère avec Val, puis teste somme Mod 9 = 0 ; on rappelle que Ord ('0') = 48, Ord ('1') = 49, …, Ord ('9') = 57. Pour quelles chaînes ch ce programme donne-t-il un mauvais verdict ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "'12'"
+        },
+        {
+          "id": "b",
+          "text": "'27'"
+        },
+        {
+          "id": "c",
+          "text": "'125'"
+        },
+        {
+          "id": "d",
+          "text": "'405'"
+        },
+        {
+          "id": "e",
+          "text": "'999'"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "Ord d'un chiffre vaut 48 plus ce chiffre : pour k chiffres de somme S, le programme calcule 48 × k + S, et 48 ≡ 3 modulo 9. Pour '12' : 49 + 50 = 99, multiple de 9, alors que 12 ne l'est pas ✓. Pour '27' : 50 + 55 = 105 = 11 × 9 + 6, donc le programme dit non, alors que 27 = 3 × 9 ✓. Pour 3 chiffres, 48 × 3 = 144 est un multiple de 9 et le verdict reste exact : '125' (49 + 50 + 53 = 152, reste 8 : non), '405' (52 + 48 + 53 = 153 = 17 × 9 : oui) et '999' (3 × 57 = 171 = 19 × 9 : oui).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "n = m97u, où m est un chiffre de 1 à 9 et u un chiffre de 0 à 9. Pour combien de couples (m ; u) le nombre n est-il divisible à la fois par 5 et par 9 ?",
+      "answerKey": {
+        "value": 2,
+        "unit": "couples"
+      },
+      "explanation": "Divisible par 5 impose u = 0 ou u = 5. Divisible par 9 impose que la somme m + 9 + 7 + u = 16 + m + u soit un multiple de 9. Pour u = 0, 16 + m vaut 18 avec m = 2 (27 exigerait m = 11). Pour u = 5, 21 + m vaut 27 avec m = 6 (18 et 36 sont impossibles). Les deux nombres sont 2 970 = 45 × 66 et 6 975 = 45 × 155, donc 2 couples ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Que vaut C₆⁰ − C₆¹ + C₆² − C₆³ + C₆⁴ − C₆⁵ + C₆⁶ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−10"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "32"
+        },
+        {
+          "id": "d",
+          "text": "64"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les valeurs de C₆ᵏ pour k de 0 à 6 sont 1, 6, 15, 20, 15, 6, 1. La somme alternée vaut (1 − 6 + 15) − 20 + (15 − 6 + 1) = 10 − 20 + 10 = 0 ✓. Le nombre −10 s'arrête à C₆³ : 1 − 6 + 15 − 20 = −10. Le nombre 64 additionne tous les termes sans les signes. Le nombre 32 additionne seulement les termes précédés d'un signe + : 1 + 15 + 15 + 1.",
+      "difficulty": 3
+    }
+  ]
+}

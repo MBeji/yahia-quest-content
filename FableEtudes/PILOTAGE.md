@@ -30,7 +30,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Sciences techniques | mathématiques | `222451` | ✅ validée R-7 (2026-11-04) | 16/16 chapitres — matière complète (2026-11-05) | — (missions d'examen du Bac à ajouter dès que les sujets sont au Drive) |
 | Sciences techniques | physique | `223451` | ❌ aucune | — | A1 |
 | Mathématiques | mathématiques | `222445` + `222446` | ✅ validée R-7 | 19/19 | — (gisement possible) |
-| Mathématiques | physique | `223432` | ❌ aucune | — | A1 |
+| Mathématiques | physique | `223432` | ✅ validée R-7 (2026-11-08) | 11/11 chapitres — matière complète (2026-11-08) | fiche différentielle + adaptation de `physique-bac-sciences-exp` (même collection CNP) ; choix de Mohamed du 2026-11-06 |
 | Mathématiques | chimie | `224432` | ❌ aucune | — | A1 |
 | Sciences expérimentales | SVT | `225432` | 🔄 en cours (`claude/sciences-bac-sciences-exp`, 2026-11-05) — PDF de 13 Mo à récupérer | 0 chapitre | choix de Mohamed du 2026-11-05 (physique + chimie + SVT) |
 | Sciences expérimentales | mathématiques | `222433` + `222434` | ✅ validée R-7 (2026-11-05) | 17/17 chapitres — matière complète (2026-11-05) | fiche différentielle + adaptation des chapitres de `math-bac-math` / `math-bac-techniques` (décision de Mohamed du 2026-11-05 : même collection, version allégée) |
@@ -44,7 +44,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Économie et gestion | mathématiques | `222463` | ❌ aucune | — | A1 |
 | Économie et gestion | économie | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
 | Lettres | arabe | `201421` + `201422` | ❌ aucune | — | A1 |
-| Lettres | philosophie | `210422` + `210423` | ❌ aucune | — | A1 |
+| Lettres | philosophie | `210422` + `210423` | ✅ validée R-7 avec réserve (2026-11-08) | 8/8 chapitres — matière complète (2026-11-09), un chapitre par محور, audit opus + revérification, 0 clé fausse ; missions d'examen : aucun sujet d'examen Bac Lettres au corpus | ✅ publiée en prod le 2026-11-09 (`apply-content.yml`, run 331) ; parcours `concours-bac-lettres` déjà ouvert (`available`, migration du 2026-08-13) |
 
 Matières communes, au rang suivant : philosophie des sections scientifiques (`210402` ; fiche `bac-math`
 partielle 75 %, tenue par `feat/transcription-bac-philosophie-mabhath2`), arabe (`201403`), français

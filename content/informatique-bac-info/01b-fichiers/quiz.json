@@ -1,0 +1,173 @@
+{
+  "title": "Test de compréhension ⭐ : Les fichiers",
+  "questions": [
+    {
+      "prompt": "Un fichier contient 6 éléments. Quel numéro porte le premier élément ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les éléments d'un fichier sont numérotés à partir de 0 : le premier porte le numéro 0 et le dernier le numéro 5 ✓. La réponse « 1 » compte à partir de 1, comme dans la vie courante. La réponse « 5 » est le numéro du dernier élément, et « 6 » est la taille du fichier.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un programme doit lire l'élément de numéro 99 d'un fichier, en accès séquentiel. Que doit-il faire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Préciser le numéro 99 et lire cet élément seul"
+        },
+        {
+          "id": "b",
+          "text": "Recréer le fichier, puis relire la valeur 99 ensuite"
+        },
+        {
+          "id": "c",
+          "text": "Lire les 99 éléments qui précèdent, puis celui-ci"
+        },
+        {
+          "id": "d",
+          "text": "Lire les 98 éléments qui précèdent, puis celui-ci"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En accès séquentiel, pour lire une information particulière il faut lire toutes celles situées avant elle : ici les 99 éléments de numéros 0 à 98, puis l'élément 99 ✓. Préciser directement le numéro décrit l'accès direct. Recréer le fichier en efface le contenu. Lire seulement 98 éléments s'arrêterait un cran trop tôt : l'élément 99 est précédé des numéros 0 à 98, soit 99 éléments.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans l'instruction Assign (scores, 'C:/Club/scores.dat'), quel est le nom logique du fichier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C:/Club/scores.dat"
+        },
+        {
+          "id": "b",
+          "text": "Assign"
+        },
+        {
+          "id": "c",
+          "text": "dat"
+        },
+        {
+          "id": "d",
+          "text": "scores"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le nom logique est l'identificateur du fichier dans le programme : ici scores, que toutes les instructions suivantes utilisent ✓. Le chemin C:/Club/scores.dat est le nom physique, celui du disque. Assign est l'instruction qui relie les deux noms, et dat est l'extension du nom physique.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle instruction ouvre un fichier existant, sans effacer son contenu, et remet son pointeur à zéro ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rewrite (Recréer)"
+        },
+        {
+          "id": "b",
+          "text": "Reset (Ouvrir)"
+        },
+        {
+          "id": "c",
+          "text": "Assign (Associer)"
+        },
+        {
+          "id": "d",
+          "text": "Append (Ajouter)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Reset, ou Ouvrir en algorithmique, ouvre un fichier qui existe et remet le pointeur à 0 sans toucher aux données ✓. Rewrite, ou Recréer, ouvre en effaçant le contenu. Assign relie seulement le nom logique au nom physique, sans rien ouvrir. Append ouvre sans effacer, mais place le pointeur à la fin et ne vaut que pour un fichier texte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un fichier d'entiers peut être vide. Quelle boucle le parcourt sans erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tant que Non Fin_fichier (f) : lire v, puis traiter v"
+        },
+        {
+          "id": "b",
+          "text": "Répéter lire v, puis traiter v, jusqu'à Fin_fichier (f)"
+        },
+        {
+          "id": "c",
+          "text": "Tant que Fin_fichier (f) : lire v, puis traiter v"
+        },
+        {
+          "id": "d",
+          "text": "Pour i de 1 à 100 : lire v, puis traiter v"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le test Non Fin_fichier passe avant chaque lecture : sur un fichier vide la boucle ne s'exécute pas, et sur un autre elle s'arrête après le dernier élément ✓. La boucle Répéter lit d'abord, donc elle lit un élément inexistant dans un fichier vide. Tant que Fin_fichier n'entre jamais dans la boucle d'un fichier non vide. Une boucle de 100 tours dépasse la fin dès que le fichier a moins de 100 éléments.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un fichier f contient 10 éléments. Quelle instruction place le pointeur sur le quatrième élément ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pointer (f, 0)"
+        },
+        {
+          "id": "b",
+          "text": "Pointer (f, 3)"
+        },
+        {
+          "id": "c",
+          "text": "Pointer (f, 4)"
+        },
+        {
+          "id": "d",
+          "text": "Pointer (f, 10)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les numéros partent de 0 : le quatrième élément porte le numéro 3, donc Pointer (f, 3) ✓. Pointer (f, 4) désigne le cinquième élément, par un comptage à partir de 1. Pointer (f, 0) désigne le premier. Pointer (f, 10) désigne la fin du fichier, qui compte 10 éléments de numéros 0 à 9.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel type Pascal déclare un fichier fait de lignes de caractères, lisible dans un éditeur de texte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "File Of Integer"
+        },
+        {
+          "id": "b",
+          "text": "File Of Joueur"
+        },
+        {
+          "id": "c",
+          "text": "Text"
+        },
+        {
+          "id": "d",
+          "text": "Array Of Char"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le mot réservé Text déclare un fichier texte, suite de caractères organisée en lignes ✓. File Of Integer est un fichier de données dont les composants sont des entiers. File Of Joueur est un fichier d'enregistrements. Un tableau de caractères reste en mémoire et disparaît avec le programme.",
+      "difficulty": 2
+    }
+  ]
+}

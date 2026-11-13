@@ -1,0 +1,133 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Pivots et disques démasqués",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Parmi ces séries de données, laquelle peut être triée par tri comptage avec un tableau occ indicé de 0 à 20 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les températures de 15 jours, comprises entre −3 et 18 degrés"
+        },
+        {
+          "id": "b",
+          "text": "Les numéros d'inscription de 15 élèves, à six chiffres chacun"
+        },
+        {
+          "id": "c",
+          "text": "Les moyennes de 15 élèves, données au dixième, comme 12,7"
+        },
+        {
+          "id": "d",
+          "text": "Les âges de 15 élèves, tous compris entre 0 et 20 ans"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le tri comptage range chaque valeur à l'indice égal à cette valeur dans occ[0..20] : il faut des entiers de 0 à 20, ce qu'offrent les âges ✓, même avec des répétitions. Une température de −3 demanderait occ[−3], case qui n'existe pas. Un numéro à six chiffres dépasse 20 de plusieurs milliers : l'indice sortirait du tableau. Une moyenne comme 12,7 n'est pas un entier et ne peut pas servir d'indice.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Avec 30 disques, à raison d'un déplacement par seconde sans interruption, combien d'années faut-il, arrondi à l'unité, avec une année de 365 jours ?",
+      "answerKey": {
+        "value": 34,
+        "unit": "années"
+      },
+      "explanation": "Le minimum est 2³⁰ − 1 = 1 073 741 823 déplacements, donc 1 073 741 823 secondes. Une année de 365 jours compte 31 536 000 secondes : 1 073 741 823 ÷ 31 536 000 ≈ 34,05 années, soit 34 ✓. Un disque de plus doublerait la durée : 31 disques demanderaient déjà environ 68 ans.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Tri_Rapide, avec le premier élément pour pivot, trie un tableau de 5 valeurs. Pour quels tableaux fait-il le nombre maximal de partitions, soit 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[1, 2, 3, 4, 5]"
+        },
+        {
+          "id": "b",
+          "text": "[5, 4, 3, 2, 1]"
+        },
+        {
+          "id": "c",
+          "text": "[7, 7, 7, 7, 7]"
+        },
+        {
+          "id": "d",
+          "text": "[2, 1, 3, 4, 5]"
+        },
+        {
+          "id": "e",
+          "text": "[3, 1, 4, 2, 5]"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c"]
+      },
+      "explanation": "Le maximum est atteint quand chaque partition ne retire que son pivot, avec des sous-tableaux de 5, 4, 3 puis 2 éléments. C'est le cas de [1, 2, 3, 4, 5], où le pivot est toujours le plus petit ✓, de [5, 4, 3, 2, 1], où le pivot 5 va en fin puis le pivot 1 reste en tête, et ainsi de suite ✓, et de [7, 7, 7, 7, 7], où toutes les valeurs sont inférieures ou égales au pivot et vont à gauche ✓. Le tableau [2, 1, 3, 4, 5] est presque trié mais le pivot 2 laisse 1 élément à gauche et [3, 4, 5] à droite : 1 + 2 = 3 partitions. Le tableau [3, 1, 4, 2, 5] est coupé en deux côtés de 2 éléments : 3 partitions.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Parmi ces arrangements des valeurs de 1 à 7, lequel demande le moins de partitions au tri rapide avec le premier élément pour pivot ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[4, 3, 1, 2, 6, 7, 5]"
+        },
+        {
+          "id": "b",
+          "text": "[4, 2, 6, 1, 3, 5, 7]"
+        },
+        {
+          "id": "c",
+          "text": "[1, 2, 3, 4, 5, 6, 7]"
+        },
+        {
+          "id": "d",
+          "text": "[7, 6, 5, 4, 3, 2, 1]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'arrangement [4, 3, 1, 2, 6, 7, 5] fait 3 partitions : le pivot 4 donne [2, 3, 1, 4, 6, 7, 5], puis [2, 3, 1] devient [1, 2, 3] et [6, 7, 5] devient [5, 6, 7] en une partition chacun, après quoi il ne reste que des sous-tableaux d'un élément ✓. L'arrangement [4, 2, 6, 1, 3, 5, 7], qui ressemble à un arbre équilibré, fait 4 partitions : le pivot 4 donne [1, 2, 3, 4, 6, 5, 7], et le côté [1, 2, 3], déjà trié, coûte 2 partitions. Les tableaux triés, croissant ou décroissant, font 6 partitions, le maximum.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un compteur de type Integer de Turbo Pascal, de 16 bits et de valeur maximale 32 767, compte les déplacements de Hanoï. Pour quel plus grand nombre de disques n le compteur ne déborde-t-il pas ?",
+      "answerKey": {
+        "value": 15,
+        "unit": "disques"
+      },
+      "explanation": "Il faut 2ⁿ − 1 ≤ 32 767. Or 2¹⁵ − 1 = 32 768 − 1 = 32 767 : pour n = 15, le compteur atteint exactement son maximum sans déborder ✓. Pour n = 16, il faudrait 2¹⁶ − 1 = 65 535, au-delà de 32 767.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Hanoi (4, 1, 2, 3) affiche les déplacements les uns après les autres. Quelle est la 6e ligne affichée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disque du piquet 1 vers le piquet 3"
+        },
+        {
+          "id": "b",
+          "text": "Disque du piquet 2 vers le piquet 1"
+        },
+        {
+          "id": "c",
+          "text": "Disque du piquet 3 vers le piquet 2"
+        },
+        {
+          "id": "d",
+          "text": "Disque du piquet 2 vers le piquet 3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Hanoi (4, 1, 2, 3) affiche 15 lignes. Les huit premières sont 1 vers 3, 1 vers 2, 3 vers 2, 1 vers 3, 2 vers 1, 2 vers 3, 1 vers 3, puis 1 vers 2 pour le plus grand disque. La 6e ligne est donc 2 vers 3 ✓. Les autres propositions sont d'autres lignes de la même séquence : 3 vers 2 est la 3e, 1 vers 3 la 4e (et la 7e), 2 vers 1 la 5e.",
+      "difficulty": 3
+    }
+  ]
+}

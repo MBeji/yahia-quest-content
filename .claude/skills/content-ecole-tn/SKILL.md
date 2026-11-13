@@ -226,8 +226,10 @@ conventions. Exam-year grades (6ème/9ème/Bac) should reflect real exam (concou
 papers the Ministry publishes for the concours de 6ème, the concours de 9ème and the baccalauréat, every
 session, can be taken up faithfully and cited in `sources[]`, like a CNP manuel. The scope still comes
 from the programme in force: a notion an old paper tests and the programme has since dropped is
-flagged, not taught. Third-party corrigés, school devoirs and teachers' séries stay web sources
-(method, profile `source-web`: nothing is copied).
+flagged, not taught. The **official corrigé** the Ministry publishes for a paper is official corpus
+too (owner decision 2026-11-09): it is transcribed with the paper and is the reference for the
+explanations, still re-solved. Third-party corrigés, school devoirs and teachers' séries stay web
+sources (method, profile `source-web`: nothing is copied).
 **Taking up the pupil's own manuel** (exercises, figures, encadrés) has its own normative doctrine —
 closed taxonomy, exercise→format mapping, the three regimes, R-1→R-12 and the `manuel` traceability
 field: `content-engine/references/manuel-valorisation.md` (étude 21).
