@@ -1,0 +1,151 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des messagers",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un directeur reçoit chaque jour soixante rapports et n'en lit plus aucun. Quelle mesure corrige le défaut ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Doubler le nombre de rapports envoyés pour être sûr de tout couvrir"
+        },
+        {
+          "id": "b",
+          "text": "Lui transmettre une synthèse de l'utile à son niveau"
+        },
+        {
+          "id": "c",
+          "text": "Supprimer les rapports venant de l'extérieur"
+        },
+        {
+          "id": "d",
+          "text": "Remplacer les rapports écrits par des messages oraux"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le défaut est la surinformation : elle est aussi inefficace qu'un manque. On trie selon le niveau d'utilisation et on ne transmet à chacun que ce qui lui sert. Doubler les rapports aggrave le mal, et supprimer les sources externes ou changer de support n'en traite pas la cause.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un procès-verbal de réunion du personnel, rédigé par la direction, est classé selon la source, la nature et le domaine. Quelle classification est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Source interne, nature écrite, domaine social"
+        },
+        {
+          "id": "b",
+          "text": "Source externe, nature écrite, domaine social"
+        },
+        {
+          "id": "c",
+          "text": "Source interne, nature orale, domaine social"
+        },
+        {
+          "id": "d",
+          "text": "Source interne, nature écrite, domaine comptable"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le procès-verbal est rédigé par l'entreprise : source interne. Il est écrit, et il porte sur le personnel : domaine social. Une réunion à laquelle des délégués participent ne rend pas le document externe, et rédigé n'est pas oral.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles informations sont d'origine externe ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des statistiques publiées par une administration"
+        },
+        {
+          "id": "b",
+          "text": "La fiche technique d'un fabricant de machines"
+        },
+        {
+          "id": "c",
+          "text": "Le rapport du chef de production"
+        },
+        {
+          "id": "d",
+          "text": "Une banque de données privée de documentation"
+        },
+        {
+          "id": "e",
+          "text": "Les notes de service de la direction"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Les statistiques d'une administration, la fiche technique d'un fabricant et une banque de données privée viennent de l'extérieur. Le rapport du chef de production et les notes de service émanent de l'entreprise : ce sont des sources internes. Une banque de données reste externe même si l'entreprise y est abonnée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Mme Hela relève les ventes au comptoir et les saisit chaque soir ; un logiciel calcule les totaux par produit. Pourtant, le magasin découvre les ruptures trop tard. Quelle étape est défaillante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La collecte, car les ventes sont mal relevées au comptoir"
+        },
+        {
+          "id": "b",
+          "text": "La saisie, car elle n'est faite que le soir"
+        },
+        {
+          "id": "c",
+          "text": "Le traitement, car les totaux sont par produit"
+        },
+        {
+          "id": "d",
+          "text": "La diffusion : les totaux n'arrivent pas au magasin à temps"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les ventes sont relevées, saisies et traitées : trois étapes fonctionnent. Ce qui manque, c'est que les totaux arrivent au magasin au moment où il en a besoin : la diffusion est défaillante. Une information traitée mais non transmise n'aide personne.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un dirigeant affirme : « Notre comptabilité est parfaite, nous n'avons donc besoin d'aucune autre information. » Pourquoi ce raisonnement est-il insuffisant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que la comptabilité ne sert qu'aux partenaires extérieurs, jamais à la direction"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'elle ne renseigne ni sur les concurrents ni sur les règles publiques"
+        },
+        {
+          "id": "c",
+          "text": "Parce que la comptabilité ne produit que des informations de nature orale"
+        },
+        {
+          "id": "d",
+          "text": "Parce que les informations comptables ne peuvent pas être fiables"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La comptabilité est l'un des outils d'obtention de l'information et elle décrit surtout le fonctionnement interne. L'entreprise a aussi besoin d'informations externes sur son environnement : concurrents, règles publiques, marché. Elle sert à la fois la direction et les partenaires, et elle est écrite.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur 48 documents reçus, les trois huitièmes sont externes. Parmi les documents internes, un tiers est de domaine comptable. Combien de documents internes sont de domaine comptable ?",
+      "answerKey": {
+        "value": 10,
+        "unit": "documents"
+      },
+      "explanation": "Externes : 48 × 3/8 = 18. Internes : 48 − 18 = 30. Comptables : 30 ÷ 3 = 10 ✓. Prendre un tiers de 48 donnerait 16 : on oublierait de retirer d'abord les documents externes.",
+      "difficulty": 3
+    }
+  ]
+}

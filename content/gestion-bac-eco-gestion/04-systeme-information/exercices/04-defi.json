@@ -1,0 +1,170 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du grand messager",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une information coûte 25 minutes de traitement à la main. Un ordinateur ramène ce traitement à 5 minutes. L'entreprise traite 12 informations. Combien de minutes gagne-t-elle ?",
+      "answerKey": {
+        "value": 240,
+        "unit": "min"
+      },
+      "explanation": "Gain par information : 25 − 5 = 20 minutes. Pour 12 informations : 20 × 12 = 240 minutes ✓, soit 4 heures. Calculer 5 × 12 = 60 donnerait le temps restant, pas le temps gagné.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un client téléphone à un vendeur pour dire qu'un concurrent baisse ses prix. Quelle affirmation classe correctement cette information ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est externe et orale"
+        },
+        {
+          "id": "b",
+          "text": "Elle est externe et écrite"
+        },
+        {
+          "id": "c",
+          "text": "Elle est interne et orale, car le vendeur la rapporte"
+        },
+        {
+          "id": "d",
+          "text": "Elle est interne et écrite, car elle sera notée"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Elle vient d'un client, donc de l'extérieur : source externe. Elle est donnée de vive voix : nature orale. Le fait que le vendeur la rapporte ou qu'on la note ensuite ne change ni sa source ni sa nature d'origine.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Un prospect renvoie un bon portant « oui », son nom, son adresse et la référence d'un assortiment. Quelles affirmations sont justes ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'entreprise sait qui répond et quel produit est demandé"
+        },
+        {
+          "id": "b",
+          "text": "L'entreprise peut préparer la livraison"
+        },
+        {
+          "id": "c",
+          "text": "Cette information a la même nature qu'un simple « oui »"
+        },
+        {
+          "id": "d",
+          "text": "Cette information reste inexploitable sans appel supplémentaire"
+        },
+        {
+          "id": "e",
+          "text": "Cette information a une source externe"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Avec un nom, une adresse et une référence, l'entreprise sait qui et quoi : elle peut préparer la livraison, l'information est exploitable. Elle vient d'un prospect : source externe. Elle ne ressemble pas à un simple « oui », qui ne permet aucune action, et elle ne demande pas d'appel de plus.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Un directeur veut mieux maîtriser l'information de son entreprise. Quelles mesures vont dans le bon sens ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Envoyer à chaque niveau la synthèse dont il a besoin"
+        },
+        {
+          "id": "b",
+          "text": "Doubler le nombre de rapports diffusés"
+        },
+        {
+          "id": "c",
+          "text": "Vérifier l'origine des données avant de les diffuser"
+        },
+        {
+          "id": "d",
+          "text": "Afficher aux opérateurs des états simples plutôt qu'un long rapport"
+        },
+        {
+          "id": "e",
+          "text": "Supprimer toutes les informations venues de l'extérieur"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Une information maîtrisée est en bonne quantité, fiable et sur un support adapté. Trier par niveau d'utilisation, vérifier l'origine et adapter le support y contribuent. Doubler les rapports crée de la surinformation, et supprimer les sources externes prive l'entreprise de l'information sur son environnement.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un chauffeur de livraison note des horaires ; remettez dans l'ordre le parcours de cette information jusqu'à la décision.",
+      "options": [
+        {
+          "id": "s3",
+          "text": "Le logiciel compare les heures aux délais promis et calcule le taux de retards"
+        },
+        {
+          "id": "s1",
+          "text": "Le chauffeur note l'heure et l'état du colis à la porte du client"
+        },
+        {
+          "id": "s4",
+          "text": "Le responsable reçoit le tableau des retards pour décider d'une mesure"
+        },
+        {
+          "id": "s2",
+          "text": "Il reporte ces mentions sur la feuille de route informatisée en fin de tournée"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "explanation": "Le chauffeur recueille l'information sur place, puis la reporte sur la feuille de route. Le logiciel la traite en calculant le taux de retards, et le responsable la reçoit en dernier pour décider. L'ordre est celui des quatre étapes : collecte, saisie, traitement, diffusion.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un directeur affirme : « Nous avons acheté un logiciel de gestion, donc notre système d'information est en place. » Que répondre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est exact : un logiciel suffit à lui seul à engendrer des flux ordonnés"
+        },
+        {
+          "id": "b",
+          "text": "C'est incomplet : il manque les hommes et les procédures"
+        },
+        {
+          "id": "c",
+          "text": "C'est faux : un système d'information ne comprend que des personnes, jamais de machines"
+        },
+        {
+          "id": "d",
+          "text": "C'est faux : seules les sources externes comptent pour un système d'information"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le système d'information associe trois ingrédients : des hommes, des machines et des procédures. Le logiciel n'est que la machine. Sans personnes pour saisir et lire, et sans procédures qui disent qui transmet quoi à qui, il ne produit pas de flux ordonnés. Les sources, internes et externes, sont toutes deux concernées.",
+      "difficulty": 3
+    }
+  ]
+}

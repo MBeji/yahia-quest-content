@@ -1,0 +1,84 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du comptable des lots",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La Savonnerie Nour suit un article, le carton de savon : stock initial 300 cartons à 30 D ; sortie de 100 ; entrée de 400 cartons à 28 D ; sortie de 500 ; entrée de 300 cartons à 33 D ; sortie de 300 (dans cet ordre). Quel est le CUMP de fin de période, en D ?",
+      "answerKey": {
+        "value": 30.1,
+        "unit": "D"
+      },
+      "explanation": "Valeur cumulée : 300 × 30 + 400 × 28 + 300 × 33 = 9 000 + 11 200 + 9 900 = 30 100 D, pour 1 000 cartons. CUMP = 30 100 ÷ 1 000 = 30,1 D ✓. La moyenne simple des trois prix serait environ 30,33 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Savonnerie Nour suit un article, le carton de savon : stock initial 300 cartons à 30 D ; sortie de 100 ; entrée de 400 cartons à 28 D ; sortie de 500 ; entrée de 300 cartons à 33 D ; sortie de 300 (dans cet ordre). Selon le PEPS, quelle est la valeur totale des trois sorties, en D ?",
+      "answerKey": {
+        "value": 26800,
+        "unit": "D"
+      },
+      "explanation": "Sortie 1 : 100 × 30 = 3 000 D. Sortie 2 : 200 cartons à 30 D (6 000 D) puis 300 à 28 D (8 400 D) : 14 400 D. Sortie 3 : 100 cartons à 28 D (2 800 D) puis 200 à 33 D (6 600 D) : 9 400 D. Total : 3 000 + 14 400 + 9 400 = 26 800 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Savonnerie Nour suit un article, le carton de savon : stock initial 300 cartons à 30 D ; sortie de 100 ; entrée de 400 cartons à 28 D ; sortie de 500 ; entrée de 300 cartons à 33 D ; sortie de 300 (dans cet ordre). Selon le DEPS, quelle est la valeur de la deuxième sortie, celle de 500 cartons, en D ?",
+      "answerKey": {
+        "value": 14200,
+        "unit": "D"
+      },
+      "explanation": "Au moment de cette sortie, le stock compte 200 cartons à 30 D et le lot de 400 cartons à 28 D. Le lot récent part en premier : 400 × 28 = 11 200 D. Il reste 100 cartons à prendre sur le lot à 30 D : 3 000 D. Valeur : 11 200 + 3 000 = 14 200 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Savonnerie Nour suit un article, le carton de savon : stock initial 300 cartons à 30 D ; sortie de 100 ; entrée de 400 cartons à 28 D ; sortie de 500 ; entrée de 300 cartons à 33 D ; sortie de 300 (dans cet ordre). Les 900 cartons sortis sont tous vendus. De combien la marge calculée en PEPS dépasse-t-elle celle calculée en DEPS, en D ?",
+      "answerKey": {
+        "value": 300,
+        "unit": "D"
+      },
+      "explanation": "Les ventes sont les mêmes dans les deux cas : l'écart de marge est l'écart de valeur des sorties. DEPS : 3 000 + 14 200 + 300 × 33 = 3 000 + 14 200 + 9 900 = 27 100 D. PEPS : 26 800 D. Écart : 27 100 − 26 800 = 300 D ✓, en faveur du PEPS.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un dépôt de farine démarre le mois avec un stock initial de q sacs à 20 D le sac. Il reçoit 300 sacs à 26 D le sac. Le CUMP de fin de période est de 23 D. Combien de sacs le stock initial contenait-il ?",
+      "answerKey": {
+        "value": 300,
+        "unit": "D"
+      },
+      "explanation": "Le CUMP vaut (20q + 300 × 26) ÷ (q + 300) = 23. On obtient 20q + 7 800 = 23q + 6 900, donc 3q = 900 et q = 300 sacs ✓. Contrôle : (6 000 + 7 800) ÷ 600 = 23 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La Savonnerie Nour suit un article, le carton de savon : stock initial 300 cartons à 30 D ; sortie de 100 ; entrée de 400 cartons à 28 D ; sortie de 500 ; entrée de 300 cartons à 33 D ; sortie de 300 (dans cet ordre). Un employé a valorisé la sortie de 500 cartons à 15 000 D, selon le PEPS. Quelle est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a appliqué le DEPS aux dernières entrées"
+        },
+        {
+          "id": "b",
+          "text": "Il a tout valorisé à 30 D, sans changer de lot"
+        },
+        {
+          "id": "c",
+          "text": "Il a employé le CUMP de fin de période, soit 30,1 D"
+        },
+        {
+          "id": "d",
+          "text": "Il a pris le coût de la dernière entrée avant la sortie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "15 000 D = 500 × 30 D : l'employé a valorisé les 500 cartons au prix du lot le plus ancien, alors que ce lot n'en contient que 200 ; la valeur exacte est 200 × 30 + 300 × 28 = 14 400 D. Le DEPS aurait donné 14 200 D, le CUMP 500 × 30,1 = 15 050 D, et le coût de la dernière entrée 500 × 28 = 14 000 D.",
+      "difficulty": 3
+    }
+  ]
+}

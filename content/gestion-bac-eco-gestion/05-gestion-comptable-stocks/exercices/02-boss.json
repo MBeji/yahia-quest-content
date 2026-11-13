@@ -1,0 +1,105 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des lots",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Les Peintures Mourad suivent un article, le seau de peinture : stock initial 200 seaux à 40 D ; sortie de 100 seaux ; entrée de 200 seaux à 34 D ; sortie de 150 seaux ; entrée de 100 seaux à 28 D ; sortie de 100 seaux (dans cet ordre). Quel est le CUMP de fin de période, en D ?",
+      "answerKey": {
+        "value": 35.2,
+        "unit": "D"
+      },
+      "explanation": "Valeur cumulée : 200 × 40 + 200 × 34 + 100 × 28 = 8 000 + 6 800 + 2 800 = 17 600 D, pour 500 seaux. CUMP = 17 600 ÷ 500 = 35,2 D ✓. La moyenne simple (40 + 34 + 28) ÷ 3 = 34 D ignore les quantités.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les Peintures Mourad suivent un article, le seau de peinture : stock initial 200 seaux à 40 D ; sortie de 100 seaux ; entrée de 200 seaux à 34 D ; sortie de 150 seaux ; entrée de 100 seaux à 28 D ; sortie de 100 seaux (dans cet ordre). Selon le PEPS, quelle est la valeur totale des trois sorties, en D ?",
+      "answerKey": {
+        "value": 13100,
+        "unit": "D"
+      },
+      "explanation": "Sortie 1 : 100 × 40 = 4 000 D. Sortie 2 : les 100 seaux restants à 40 D (4 000 D) puis 50 seaux à 34 D (1 700 D) : 5 700 D. Sortie 3 : 100 seaux à 34 D : 3 400 D. Total : 4 000 + 5 700 + 3 400 = 13 100 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les Peintures Mourad suivent un article, le seau de peinture : stock initial 200 seaux à 40 D ; sortie de 100 seaux ; entrée de 200 seaux à 34 D ; sortie de 150 seaux ; entrée de 100 seaux à 28 D ; sortie de 100 seaux (dans cet ordre). Selon le CUMP après chaque entrée, quel est le coût unitaire du stock juste après la dernière entrée, en D ?",
+      "answerKey": {
+        "value": 32.8,
+        "unit": "D"
+      },
+      "explanation": "Après la deuxième sortie, il reste 150 seaux à 36 D (coût recalculé à la première entrée : (4 000 + 6 800) ÷ 300 = 36 D), soit 5 400 D. La dernière entrée ajoute 100 × 28 = 2 800 D : 8 200 D pour 250 seaux. Nouveau coût : 8 200 ÷ 250 = 32,8 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les Peintures Mourad suivent un article, le seau de peinture : stock initial 200 seaux à 40 D ; sortie de 100 seaux ; entrée de 200 seaux à 34 D ; sortie de 150 seaux ; entrée de 100 seaux à 28 D ; sortie de 100 seaux (dans cet ordre). Selon le DEPS, quelle est la valeur du stock final, en D ?",
+      "answerKey": {
+        "value": 5700,
+        "unit": "D"
+      },
+      "explanation": "Total valorisé : 17 600 D. Sorties en DEPS : 100 × 40 = 4 000 D ; 150 × 34 = 5 100 D ; 100 × 28 = 2 800 D ; soit 11 900 D. Stock final : 17 600 − 11 900 = 5 700 D ✓, qui correspond à 100 seaux à 40 D et 50 seaux à 34 D, les plus anciens.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les Peintures Mourad suivent un article, le seau de peinture : stock initial 200 seaux à 40 D ; sortie de 100 seaux ; entrée de 200 seaux à 34 D ; sortie de 150 seaux ; entrée de 100 seaux à 28 D ; sortie de 100 seaux (dans cet ordre). Les 350 seaux sortis sont vendus 50 D l'un. Quelle méthode donne la marge commerciale la plus élevée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le PEPS"
+        },
+        {
+          "id": "b",
+          "text": "Le CUMP de fin de période"
+        },
+        {
+          "id": "c",
+          "text": "Le DEPS"
+        },
+        {
+          "id": "d",
+          "text": "Le CUMP après chaque entrée"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ventes : 350 × 50 = 17 500 D. Les prix baissent : le DEPS sort les lots récents, les moins chers, et ses sorties valent 11 900 D, soit une marge de 5 600 D. Les autres donnent 5 180 D (CUMP de fin de période), 4 820 D (CUMP après chaque entrée) et 4 400 D (PEPS).",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Les prix d'achat baissent tout au long de la période. Coche toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le PEPS valorise les sorties aux coûts les plus hauts"
+        },
+        {
+          "id": "b",
+          "text": "Le PEPS donne le résultat le plus élevé des quatre méthodes"
+        },
+        {
+          "id": "c",
+          "text": "Le stock final en PEPS est valorisé aux coûts les plus bas"
+        },
+        {
+          "id": "d",
+          "text": "Le stock final en DEPS est valorisé aux coûts les plus anciens, donc les plus hauts"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "En baisse, les lots anciens sont les plus chers : le PEPS les sort en premier (sorties hautes) et garde les lots récents, les moins chers, en stock. Le DEPS garde au contraire les lots anciens, les plus chers. Le PEPS donne donc le résultat le plus faible, pas le plus élevé.",
+      "difficulty": 3
+    }
+  ]
+}

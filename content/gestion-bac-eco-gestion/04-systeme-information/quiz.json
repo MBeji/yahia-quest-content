@@ -1,0 +1,111 @@
+{
+  "title": "Test de compréhension ⭐ : Le système d'information",
+  "questions": [
+    {
+      "prompt": "Qu'est-ce qu'une information pour une entreprise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un renseignement utile à celui qui le reçoit pour décider"
+        },
+        {
+          "id": "b",
+          "text": "Toute donnée enregistrée, même sans lien avec une décision"
+        },
+        {
+          "id": "c",
+          "text": "Un chiffre inscrit dans un registre par un salarié"
+        },
+        {
+          "id": "d",
+          "text": "Un document qui vient obligatoirement de l'extérieur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une information est un renseignement utile à son destinataire : elle l'aide à décider et à effectuer ses opérations. Une donnée brute enregistrée sans lien avec une décision n'est pas encore une information, et l'origine du document (interne ou externe) ne la définit pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la gestion de l'information, quelle étape vient en dernier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La collecte"
+        },
+        {
+          "id": "b",
+          "text": "La saisie"
+        },
+        {
+          "id": "c",
+          "text": "Le traitement"
+        },
+        {
+          "id": "d",
+          "text": "La diffusion"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les quatre étapes s'enchaînent dans l'ordre collecte, saisie, traitement, diffusion. La diffusion clôt le parcours : l'information, traitée, est transmise à ceux qui en ont besoin.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un client signale par téléphone un défaut sur un produit. Selon quel critère classe-t-on cette information comme « orale » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Selon sa source"
+        },
+        {
+          "id": "b",
+          "text": "Selon sa nature"
+        },
+        {
+          "id": "c",
+          "text": "Selon son domaine"
+        },
+        {
+          "id": "d",
+          "text": "Selon son niveau d'utilisation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La nature distingue l'information écrite de l'information orale. La source dirait interne ou externe, le domaine dirait de quoi elle parle, et le niveau d'utilisation dirait qui s'en sert.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Laquelle de ces informations est d'origine externe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le rapport mensuel d'un responsable de service"
+        },
+        {
+          "id": "b",
+          "text": "Une étude de marché réalisée par le service commercial"
+        },
+        {
+          "id": "c",
+          "text": "Des statistiques publiées par un ministère"
+        },
+        {
+          "id": "d",
+          "text": "Un contrat signé par l'entreprise avec un client"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Des statistiques publiées par un ministère viennent d'un organisme public : source externe. Le rapport d'un responsable, une étude du service commercial et un contrat de l'entreprise émanent d'elle : ce sont des sources internes.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un responsable range 30 documents reçus ce mois-ci selon leur source. Il compte 12 rapports internes et 9 notes de service, toutes internes. Le reste vient de l'extérieur. Combien de documents sont externes ?",
+      "answerKey": {
+        "value": 9,
+        "unit": "documents"
+      },
+      "explanation": "Les documents internes sont 12 + 9 = 21. Il reste 30 − 21 = 9 documents externes ✓. Oublier les notes de service donnerait 18 externes, ce qui compterait des documents internes comme externes.",
+      "difficulty": 2
+    }
+  ]
+}
