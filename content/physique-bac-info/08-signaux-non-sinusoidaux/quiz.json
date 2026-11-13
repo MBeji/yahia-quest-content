@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Production de signaux non sinusoïdaux",
+  "questions": [
+    {
+      "prompt": "Un multivibrateur est un circuit constitué essentiellement de trois éléments. Lesquels ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un comparateur, un réservoir d'énergie et une source d'énergie autonome"
+        },
+        {
+          "id": "b",
+          "text": "Un comparateur, un réservoir d'énergie et un signal externe de déclenchement"
+        },
+        {
+          "id": "c",
+          "text": "Un amplificateur sinusoïdal, une bobine et une source d'énergie autonome"
+        },
+        {
+          "id": "d",
+          "text": "Un filtre, un réservoir d'énergie et une source d'énergie autonome"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un multivibrateur associe un comparateur, un réservoir d'énergie (un dipôle RC par exemple) et une source autonome d'énergie, c'est-à-dire les tensions d'alimentation ✓. Un signal externe de déclenchement n'est pas un constituant du montage : il commande le bistable et le monostable, et l'astable s'en passe. Un amplificateur sinusoïdal et une bobine évoquent un oscillateur harmonique, qui donne un sinus. Un filtre trie des fréquences, il ne bascule pas entre deux niveaux.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un trigger à A.O. reçoit u_E sur l'entrée E⁻ ; R₂ relie la sortie S à l'entrée E⁺ et R₁ relie E⁺ à la masse. On donne R₁ = 1,0 kΩ, R₂ = 4,0 kΩ et U_sat = 10 V. Quelle est la valeur du seuil U_HB ?\n<svg viewBox=\"0 0 370 250\"><title>Comparateur à amplificateur opérationnel : u_E est appliquée à l'entrée inverseuse E⁻ ; R₂ relie la sortie S à l'entrée non inverseuse E⁺ et R₁ relie E⁺ à la masse</title><polygon points=\"190,84 190,164 270,124\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"198.0\" y=\"105.0\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−</text><text x=\"198.0\" y=\"157.0\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+</text><line x1=\"30.0\" y1=\"232.0\" x2=\"330.0\" y2=\"232.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"30.0\" cy=\"232.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"30.0\" y=\"249.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><circle cx=\"330.0\" cy=\"232.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"330.0\" y=\"249.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><line x1=\"190.0\" y1=\"148.0\" x2=\"150.0\" y2=\"148.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150.0\" y1=\"148.0\" x2=\"150.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"150.0\" cy=\"185.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"150.0\" y2=\"194.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"142.0\" y=\"194.0\" width=\"16\" height=\"28\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"134.0\" y=\"212.0\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₁</text><line x1=\"150.0\" y1=\"222.0\" x2=\"150.0\" y2=\"232.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"215.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"215.0\" y=\"177.0\" width=\"56\" height=\"16\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"243.0\" y=\"171.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₂</text><line x1=\"271.0\" y1=\"185.0\" x2=\"290.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"290.0\" y1=\"185.0\" x2=\"290.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"290.0\" cy=\"124.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"270.0\" y1=\"124.0\" x2=\"330.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"330.0\" cy=\"124.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"330.0\" y=\"115.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S</text><line x1=\"352.0\" y1=\"226.0\" x2=\"352.0\" y2=\"140.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"352.0,140.0 355.5,147.0 348.5,147.0\" fill=\"#2563eb\"/><text x=\"352.0\" y=\"122.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_S</text><circle cx=\"30.0\" cy=\"100.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"30.0\" y=\"91.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><line x1=\"30.0\" y1=\"100.0\" x2=\"190.0\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"14.0\" y1=\"226.0\" x2=\"14.0\" y2=\"116.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"14.0,116.0 17.5,123.0 10.5,123.0\" fill=\"#2563eb\"/><text x=\"14.0\" y=\"98.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_E</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 V"
+        },
+        {
+          "id": "b",
+          "text": "8,0 V"
+        },
+        {
+          "id": "c",
+          "text": "2,5 V"
+        },
+        {
+          "id": "d",
+          "text": "2,0 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le seuil vaut U_HB = R₁/(R₁ + R₂)·U_sat = 1,0/(1,0 + 4,0) × 10 = 0,20 × 10 = 2,0 V ✓. La valeur 2,5 V vient de R₁/R₂·U_sat, qui oublie R₁ au dénominateur. La valeur 8,0 V échange les rôles : c'est R₂/(R₁ + R₂)·U_sat. La valeur 10 V est la tension de saturation elle-même, pas un seuil.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur l'oscillogramme ci-dessous, la trace nulle est au centre de l'écran. Quel est le rapport cyclique δ du signal u_S ?\n<svg viewBox=\"0 0 340 190\"><title>Oscillogramme de u_S : créneau à deux niveaux, +2 divisions et −2 divisions, qui monte à la 1re division et suit un cycle de 12 divisions ; 2 V par division et 0,2 ms par division</title><line x1=\"36.0\" y1=\"22.0\" x2=\"36.0\" y2=\"154.0\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"58.0\" y1=\"22.0\" x2=\"58.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"80.0\" y1=\"22.0\" x2=\"80.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"102.0\" y1=\"22.0\" x2=\"102.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"124.0\" y1=\"22.0\" x2=\"124.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"146.0\" y1=\"22.0\" x2=\"146.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"168.0\" y1=\"22.0\" x2=\"168.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"190.0\" y1=\"22.0\" x2=\"190.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"212.0\" y1=\"22.0\" x2=\"212.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"234.0\" y1=\"22.0\" x2=\"234.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"256.0\" y1=\"22.0\" x2=\"256.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"278.0\" y1=\"22.0\" x2=\"278.0\" y2=\"154.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"300.0\" y1=\"22.0\" x2=\"300.0\" y2=\"154.0\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"36.0\" y1=\"154.0\" x2=\"300.0\" y2=\"154.0\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"36.0\" y1=\"132.0\" x2=\"300.0\" y2=\"132.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"36.0\" y1=\"110.0\" x2=\"300.0\" y2=\"110.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"36.0\" y1=\"88.0\" x2=\"300.0\" y2=\"88.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"36.0\" y1=\"66.0\" x2=\"300.0\" y2=\"66.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"36.0\" y1=\"44.0\" x2=\"300.0\" y2=\"44.0\" stroke=\"#e2e8f0\" stroke-width=\"0.8\"/><line x1=\"36.0\" y1=\"22.0\" x2=\"300.0\" y2=\"22.0\" stroke=\"#94a3b8\" stroke-width=\"0.8\"/><line x1=\"36.0\" y1=\"88.0\" x2=\"300.0\" y2=\"88.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><polyline points=\"36.0,44.0 80.0,44.0 80.0,132.0 212.0,132.0 212.0,44.0 256.0,44.0 256.0,132.0 300.0,132.0\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><text x=\"36.0\" y=\"14.0\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_S ; 2 V/div ; balayage 0,2 ms/div ; la trace nulle est au centre</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 %"
+        },
+        {
+          "id": "b",
+          "text": "33 %"
+        },
+        {
+          "id": "c",
+          "text": "50 %"
+        },
+        {
+          "id": "d",
+          "text": "75 %"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le niveau haut dure 2 divisions et le niveau bas 6 divisions, soit une période de 8 divisions, ou 1,6 ms à 0,2 ms par division. Donc δ = T₁/T = 2/8 = 0,25, soit 25 % ✓. La valeur 33 % est le quotient T₁/T₂ = 2/6, qui ne se rapporte pas à la période entière. La valeur 75 % est T₂/T, la part du niveau bas. La valeur 50 % supposerait deux durées égales, ce que le tracé contredit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une porte inverseuse à hystérésis, alimentée sous U_DD = 9 V, a pour seuils U_BH = 4,5 V et U_HB = 6,75 V. Sa tension d'entrée part de 3 V et monte lentement jusqu'à 6 V. Que vaut alors la tension de sortie u_S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 V"
+        },
+        {
+          "id": "b",
+          "text": "4,5 V"
+        },
+        {
+          "id": "c",
+          "text": "6,75 V"
+        },
+        {
+          "id": "d",
+          "text": "9 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À 3 V, l'entrée est sous U_BH : la porte inverseuse a sa sortie au niveau haut, u_S = U_DD = 9 V. En montant, elle ne bascule qu'à U_HB = 6,75 V ; à 6 V ce seuil n'est pas atteint, donc u_S reste à 9 V ✓. La valeur 0 V supposerait un basculement dès 4,5 V, seuil qui ne joue que dans le sens de la descente. Les valeurs 4,5 V et 6,75 V sont des seuils d'entrée : la sortie ne vaut que 0 ou U_DD.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un condensateur à 3 V se charge à travers un résistor vers E_H = 15 V, avec une constante de temps τ = 2,0 ms. Au bout de quelle durée sa tension atteint-elle 11 V ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,3 ms"
+        },
+        {
+          "id": "b",
+          "text": "1,4 ms"
+        },
+        {
+          "id": "c",
+          "text": "2,2 ms"
+        },
+        {
+          "id": "d",
+          "text": "2,6 ms"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Δt = τ·Log((U_i − U_f)/(U_0 − U_f)) = 2,0 × Log((3 − 15)/(11 − 15)) = 2,0 × Log 3 ≈ 2,2 ms ✓. La valeur 1,3 ms traite la charge comme une droite : 2,0 × 8/12. La valeur 1,4 ms utilise Log 2, valable seulement si 11 V était au milieu de 3 V et 15 V. La valeur 2,6 ms oublie la valeur finale et calcule τ·Log(11/3).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un astable à A.O., on remplace le condensateur par un condensateur de capacité double, sans toucher aux résistors. Que deviennent la période T et le rapport cyclique δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T est doublée et δ vaut toujours 0,5"
+        },
+        {
+          "id": "b",
+          "text": "T est doublée et δ vaut 0,25"
+        },
+        {
+          "id": "c",
+          "text": "T est inchangée et δ vaut toujours 0,5"
+        },
+        {
+          "id": "d",
+          "text": "T est divisée par deux et δ vaut toujours 0,5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La période T = 2RC·Log(1 + 2R₁/R₂) est proportionnelle à C : elle double ✓. Les seuils sont fixés par R₁, R₂ et U_sat, et les deux phases durent autant : δ reste égale à 0,5. Dire que T est inchangée oublie la constante de temps RC. Dire que T est divisée par deux inverse la proportionnalité. Dire que δ change attribue à C un rôle qu'il n'a pas, puisque T₁ et T₂ doublent ensemble.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une porte inverseuse à hystérésis alimentée sous U_DD = 9 V a pour seuils U_BH = 3 V et U_HB = 6 V. Elle est utilisée dans un astable avec un résistor R et un condensateur C. Quel est le rapport cyclique δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "33 %"
+        },
+        {
+          "id": "b",
+          "text": "50 %"
+        },
+        {
+          "id": "c",
+          "text": "63 %"
+        },
+        {
+          "id": "d",
+          "text": "67 %"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "T₁ = RC·Log((3 − 9)/(6 − 9)) = RC·Log 2 et T₂ = RC·Log(6/3) = RC·Log 2 : les deux durées sont égales, donc δ = 50 % ✓. Cela vient de U_BH + U_HB = 3 + 6 = 9 = U_DD, seuils symétriques par rapport à U_DD/2. La valeur 63 % est celle des seuils ½·U_DD et ¾·U_DD du cours, qui ne s'applique pas ici. Les valeurs 33 % et 67 % sont U_BH/U_DD et U_HB/U_DD, des rapports de tensions et non de durées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans l'astable à deux portes inverseuses, avec U_DD = 10 V et un seuil de 5 V pour la porte (2), u_C vaut −5 V juste avant que u_S1 passe de 0 à U_DD. Que vaut u_E2 juste après ce basculement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5 V"
+        },
+        {
+          "id": "b",
+          "text": "5 V"
+        },
+        {
+          "id": "c",
+          "text": "10 V"
+        },
+        {
+          "id": "d",
+          "text": "15 V"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le condensateur ne varie pas brusquement : u_C reste égale à −5 V. La tension d'entrée de la porte (2) est u_E2 = u_S1 − u_C = 10 − (−5) = 15 V ✓. La valeur 10 V oublie u_C et prend u_E2 = u_S1. La valeur 5 V vient d'un signe faux (u_S1 + u_C) ou du seuil lui-même, qui n'est plus la valeur de u_E2. La valeur −5 V confond u_E2 avec u_C.",
+      "difficulty": 2
+    }
+  ]
+}
