@@ -762,7 +762,7 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
       **Tests** : ceux du tableau ; `smoke:shell` (le manifeste et la coquille changent).
       **Stop-point** : aucune ligne dans `sw.js` au-delà de ce que le lot 4 de é38 y fait ; aucun
       cache ; pas de `vite-plugin-pwa`.
-- [ ] **Lot 4 — Le lien de reprise et le partage d'une réussite.**
+- [x] **Lot 4 — Le lien de reprise et le partage d'une réussite** (livré, moteur #1301).
       **Périmètre** : R-15 à R-18 ; `content_shared` passe `live: true`.
       **Critères** (US-7, US-8) : fin de quiz anonyme ⇒ « M'envoyer la suite » ; réussite ⇒
       « Partager ma réussite » en plus ; échec ⇒ pas de partage de réussite ; le texte porte le
@@ -939,3 +939,37 @@ DEFINER`, garde `is_admin()`, séparée de `admin_engagement_overview`), `getRet
   française (préexistant, hors lot) ; instabilité du test `authed/responsive` sur iPhone SE
   (débordement de l'en-tête connecté, vert au deuxième essai) ; `perf:budget` compte en local 42
   requêtes sur `/programme` pour un plafond de 41, avec ou sans le lot, alors que la CI est verte.
+- **2026-11-13 — Lot 4 livré (moteur #1301, `ae350a5`).** Livré : R-15 à R-18. Rangée « Garder ce
+  chapitre » (`src/components/public/keep-row.tsx`) sur l'écran de résultat sans compte — entre les
+  actions et l'invitation à installer, le compte restant en dernier — et en bas d'un cours sans
+  compte : « M'envoyer la suite » / « M'envoyer ce cours » toujours, « Partager ma réussite » sur
+  réussite seulement. Geste unique `shareText` (`src/shared/lib/share-text.ts`) : feuille de
+  partage → `wa.me` sans destinataire → copie avec confirmation ; les trois appelants historiques
+  (`/suivi`, `/parent-report`, bilan du test de niveau) y passent, comportement fixé par test et
+  inchangé. Lien = URL canonique `www` du chapitre + `?src=resume_link|share`. `content_shared`
+  passe `live: true`.
+  Mesures : `content_shared{intent: resume|success, surface: practice|reader, method:
+  share|whatsapp|copy}` à l'envoi ; au retour `visit_returned{entry: resume_link|share}` (lot 0).
+  Ni titre, ni score, ni identifiant dans les événements.
+  Tests : Vitest (`share-text` par règle, états de la rangée, route, lecteur, geste des bilans),
+  e2e `public-anon` (3 scénarios), suite e2e connectée verte sur la branche (108 réussis, 2 sautés,
+  1 instable hors lot : `authed/responsive` sur iPhone SE).
+  **Vérifié en production** (`/api/health` = `ae350a5`, navigateur émulé, mesure d'audience et
+  WhatsApp coupés) : quiz raté ⇒ « M'envoyer la suite » seul ; quiz réussi 5/5 ⇒ les deux gestes ;
+  sans feuille de partage ⇒ `wa.me/?text=` avec les textes de R-16 et l'URL `www` du chapitre ; le
+  lien ouvert ailleurs ⇒ le chapitre, `?src=` retiré, `visit_returned{entry:"resume_link"}`.
+  **Non vérifié en production** : la feuille de partage native d'un vrai téléphone, le repli copie,
+  le rendu anglais et arabe, les deux bilans parent après leur passage à `shareText`, la carte
+  d'installation sous la rangée.
+  Écarts acceptés : (a) chaînes dans un catalogue à part (`i18n/keep`) plutôt que `public.keep.*` ;
+  (b) +0,09 Ko sur `index-` et +0,03 Ko sur `dashboard-` (noms de chunks) ; (c) le titre du
+  chapitre et le nom de la matière sont ceux du contenu (une seule langue en base), seul le gabarit
+  suit la langue de l'interface ; (d) « au quiz » figure aussi dans le texte d'une mission réussie
+  (gabarit de R-16 repris mot pour mot) ; (e) l'exécuteur n'a pas accès à ce dépôt : cette entrée
+  est son texte, posé par la session qui orchestre.
+  Dettes : une fenêtre WhatsApp bloquée par le navigateur n'est pas détectable (`noopener`) — le
+  repli copie ne joue que si `window.open` est absent ou lève ; `intent: parent` déclaré mais non
+  émis (le lot 5 l'émet) ; écran de résultat connecté sans rangée (US-8 dit « visiteur ou élève » :
+  question ouverte au propriétaire) ; une feuille de partage refermée n'ouvre rien d'autre, à
+  dessein.
+  Suite : le lot 5 (le parent dans la boucle) part seul ; il émet `content_shared{intent:"parent"}`.
