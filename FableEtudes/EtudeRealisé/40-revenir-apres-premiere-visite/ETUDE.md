@@ -1,6 +1,6 @@
 # Étude 40 — Revenir après la première visite : les fils de retour du visiteur, du nouvel élève et du parent
 
-> **Statut** : **brouillon** (2026-11-12) — rédigée depuis une session cloud, sur un relevé du jour :
+> **Statut** : **livrée** (2026-11-13, lots 0 à 5 ; lot 6 gelé sur Q-3, arbitrage du propriétaire) — rédigée depuis une session cloud, sur un relevé du jour :
 > code du moteur à `b25edd6` (#1257), bundle servi par `www.na9ranal3ab.tn`, base de production lue
 > en agrégats (lecture seule, aucune ligne nominative), parcours visiteur joué dans Chromium en
 > émulation Pixel 7. **Au 2026-11-13 : lots 0 à 5 livrés et en production ; seul reste le lot 6,
@@ -1071,3 +1071,10 @@ DEFINER`, garde `is_admin()`, séparée de `admin_engagement_overview`), `getRet
   (Q-3). L'étude reste au statut `brouillon` tant que le propriétaire n'a pas tranché : la
   déclarer `livrée` (déplacement dans `EtudeRealisé/`, lot 6 gelé consigné) ou la garder ouverte
   pour le lot 6.
+- **2026-11-13 — Étude livrée.** Arbitrage du propriétaire : l'étude est close sur ses lots 0 à 5,
+  tous en production ; le lot 6 (défi de la semaine visible avant le compte) reste gelé sur Q-3
+  et se rouvrira par une décision écrite. Le dossier passe dans `EtudeRealisé/`. Dernier constat :
+  le premier rappel du cron de 18:00 UTC n'a pas pu être lu (journaux Vercel gardés une heure sur
+  le plan gratuit) ; `push_subscriptions` et `push_consent_events` sont vides à 19:52 UTC — la
+  carte de rappel et l'audience `first-quest` n'ont encore personne à joindre. À relire au relevé
+  hebdomadaire (#962) : KPI-2 (première quête) et KPI-3 (portée du push).
