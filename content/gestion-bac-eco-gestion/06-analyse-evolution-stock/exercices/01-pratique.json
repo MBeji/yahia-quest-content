@@ -1,0 +1,152 @@
+{
+  "title": "⭐ Exercice : Premières armes — les ratios du magasin",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur à sa formule.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Stock moyen"
+        },
+        {
+          "id": "l2",
+          "text": "Achats consommés"
+        },
+        {
+          "id": "l3",
+          "text": "Coefficient de rotation"
+        },
+        {
+          "id": "l4",
+          "text": "Durée du stockage"
+        },
+        {
+          "id": "r1",
+          "text": "(stock initial + stock final) ÷ 2"
+        },
+        {
+          "id": "r2",
+          "text": "achats + stock initial − stock final"
+        },
+        {
+          "id": "r3",
+          "text": "achats consommés ÷ stock moyen"
+        },
+        {
+          "id": "r4",
+          "text": "360 ÷ coefficient de rotation"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le stock moyen est la moyenne des deux relevés de stock. Les achats consommés ajoutent le stock initial aux achats et retranchent le stock final. Le coefficient de rotation rapporte les achats consommés au stock moyen, et la durée partage les 360 jours de l'année par ce coefficient.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une quincaillerie a 27 000 D de stocks pour un total des actifs de 90 000 D. Quelle est la part de ses stocks dans l'actif, en % ?",
+      "answerKey": {
+        "value": 30,
+        "unit": "%"
+      },
+      "explanation": "Part des stocks = 27 000 ÷ 90 000 = 0,30, soit 30 % ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une papeterie avait 52 000 D de stock au début de l'année et 68 000 D à la fin. Quel est son stock moyen, en D ?",
+      "answerKey": {
+        "value": 60000,
+        "unit": "D"
+      },
+      "explanation": "Stock moyen = (52 000 + 68 000) ÷ 2 = 120 000 ÷ 2 = 60 000 D ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un magasin avait 12 000 D de stock au début de l'année, a acheté pour 95 000 D et termine avec 20 000 D de stock. Quel est le montant des achats consommés, en D ?",
+      "answerKey": {
+        "value": 87000,
+        "unit": "D"
+      },
+      "explanation": "Achats consommés = 95 000 + 12 000 − 20 000 = 87 000 D ✓. Le stock a augmenté de 8 000 D : il est sorti 8 000 D de moins que ce qui a été acheté.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les achats consommés d'une boutique sont de 135 000 D et son stock moyen de 30 000 D. Quel est son coefficient de rotation ?",
+      "answerKey": {
+        "value": 4.5,
+        "unit": "fois"
+      },
+      "explanation": "Coefficient de rotation = 135 000 ÷ 30 000 = 4,5 ✓ : le stock moyen se renouvelle 4,5 fois par an.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le coefficient de rotation d'un rayon est de 12. Quelle est la durée du stockage, en jours ?",
+      "answerKey": {
+        "value": 30,
+        "unit": "jours"
+      },
+      "explanation": "Durée du stockage = 360 ÷ 12 = 30 jours ✓. Plus la rotation est rapide, plus la durée est courte.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche qui mène de deux bilans à la durée du stockage.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relever le stock initial et le stock final aux deux bilans"
+        },
+        {
+          "id": "b",
+          "text": "Calculer le stock moyen et les achats consommés"
+        },
+        {
+          "id": "c",
+          "text": "Calculer le coefficient de rotation"
+        },
+        {
+          "id": "d",
+          "text": "Calculer la durée du stockage"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On part des relevés (stocks des bilans), dont on tire le stock moyen et les achats consommés. Le coefficient de rotation les rapporte l'un à l'autre, et la durée se déduit en dernier du coefficient : 360 ÷ r.",
+      "difficulty": 2
+    }
+  ]
+}

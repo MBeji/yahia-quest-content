@@ -1,0 +1,161 @@
+{
+  "title": "⭐ Exercice : Premières armes — le registre du magasin",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque méthode de valorisation à sa description.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "PEPS"
+        },
+        {
+          "id": "l2",
+          "text": "DEPS"
+        },
+        {
+          "id": "l3",
+          "text": "CUMP de fin de période"
+        },
+        {
+          "id": "l4",
+          "text": "CUMP après chaque entrée"
+        },
+        {
+          "id": "r1",
+          "text": "Les sorties partent aux coûts des entrées les plus anciennes"
+        },
+        {
+          "id": "r2",
+          "text": "Les sorties partent aux coûts des entrées les plus récentes"
+        },
+        {
+          "id": "r3",
+          "text": "Un seul coût moyen, calculé à la clôture de la période"
+        },
+        {
+          "id": "r4",
+          "text": "Un coût moyen recalculé à chaque nouvelle entrée"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le PEPS épuise les lots anciens en premier, le DEPS les lots récents. Le CUMP de fin de période se calcule une seule fois, à la clôture ; le CUMP après chaque entrée est remis à jour à chaque arrivage.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un lot de 200 unités est facturé 1 800 D. Le transport coûte 120 D, les emballages non récupérables 60 D, et la manutention à la réception, faite par le personnel, 40 D. Quel est le coût d'achat unitaire, en D ?",
+      "answerKey": {
+        "value": 10.1,
+        "unit": "D"
+      },
+      "explanation": "Coût d'achat du lot : 1 800 + 120 + 60 + 40 = 2 020 D (prix d'achat, frais externes, frais internes). Coût unitaire : 2 020 ÷ 200 = 10,1 D ✓. Diviser la seule facture donnerait 9 D.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fiche de stock démarre avec 80 unités. Il entre ensuite 120 puis 50 unités, et il sort 190 unités dans le mois. Quelle quantité reste-t-il en stock ?",
+      "answerKey": {
+        "value": 60,
+        "unit": "unités"
+      },
+      "explanation": "Stock final = stock initial + entrées − sorties = 80 + (120 + 50) − 190 = 250 − 190 = 60 unités ✓. Le stock initial compte avec les entrées dans le contrôle.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fiche affiche 100 unités à 10 D. Il sort 40 unités, puis il entre 60 unités à 13 D. Selon le CUMP après chaque entrée, quel est le nouveau coût unitaire après cette entrée, en D ?",
+      "answerKey": {
+        "value": 11.5,
+        "unit": "D"
+      },
+      "explanation": "Après la sortie, il reste 60 unités à 10 D, soit 600 D. L'entrée ajoute 60 × 13 = 780 D, d'où 1 380 D pour 120 unités. CUMP = 1 380 ÷ 120 = 11,5 D ✓. Oublier de retirer la sortie donnerait (1 000 + 780) ÷ 160 = 11,125 D.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Avec le PEPS, à quels coûts le stock restant en fin de période est-il valorisé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aux coûts des entrées les plus anciennes"
+        },
+        {
+          "id": "b",
+          "text": "Aux coûts des entrées les plus récentes"
+        },
+        {
+          "id": "c",
+          "text": "Au coût moyen de toutes les entrées"
+        },
+        {
+          "id": "d",
+          "text": "Au prix de la dernière facture reçue, sans les frais d'achat"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le PEPS sort d'abord les lots anciens : ce qui reste en magasin vient des dernières entrées et garde leurs coûts. Les coûts anciens restent au contraire en stock avec le DEPS.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de valorisation des sorties par le CUMP de fin de période.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contrôler le stock final : stock initial plus entrées moins sorties"
+        },
+        {
+          "id": "b",
+          "text": "Relever le stock initial et les entrées de la période"
+        },
+        {
+          "id": "c",
+          "text": "Multiplier chaque quantité sortie par le CUMP"
+        },
+        {
+          "id": "d",
+          "text": "Calculer la valeur totale et la quantité totale, stock initial inclus"
+        },
+        {
+          "id": "e",
+          "text": "Diviser la valeur totale par la quantité totale pour obtenir le CUMP"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "e",
+          "c",
+          "a"
+        ]
+      },
+      "explanation": "Il faut d'abord rassembler les données, puis les cumuler, avant de diviser ; le coût obtenu sert ensuite à valoriser les sorties, et le contrôle du stock final clôt le travail.",
+      "difficulty": 1
+    }
+  ]
+}

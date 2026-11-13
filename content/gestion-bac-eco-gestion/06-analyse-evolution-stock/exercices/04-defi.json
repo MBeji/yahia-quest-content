@@ -1,0 +1,84 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du directeur des stocks",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La menuiserie Jlassi avait 24 000 D de matières premières au début de l'année et 36 000 D à la fin ; ses achats de matières sont de 252 000 D. Quelle est la durée du stockage des matières, en jours ?",
+      "answerKey": {
+        "value": 45,
+        "unit": "jours"
+      },
+      "explanation": "Stock moyen = (24 000 + 36 000) ÷ 2 = 30 000 D. Matières consommées = 252 000 + 24 000 − 36 000 = 240 000 D. Coefficient = 240 000 ÷ 30 000 = 8, donc durée = 360 ÷ 8 = 45 jours ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les produits finis de la menuiserie Jlassi valaient 50 000 D en début d'année et 40 000 D en fin d'année ; le coût de production de la période est de 260 000 D. Quel est le coefficient de rotation des produits finis ?",
+      "answerKey": {
+        "value": 6,
+        "unit": "fois"
+      },
+      "explanation": "Coût de production des produits vendus = 260 000 + 50 000 − 40 000 = 270 000 D. Stock moyen = (50 000 + 40 000) ÷ 2 = 45 000 D. Coefficient = 270 000 ÷ 45 000 = 6 ✓. Rapporter le coût de production de la période, 260 000 D, au stock moyen donnerait 5,8, un résultat faux.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise consomme régulièrement 144 000 D de matières par an, commandées en 4 lots égaux. Quelle est la durée moyenne de stockage de ces matières, en jours ?",
+      "answerKey": {
+        "value": 45,
+        "unit": "jours"
+      },
+      "explanation": "Chaque lot vaut 144 000 ÷ 4 = 36 000 D ; stock moyen = 144 000 ÷ (2 × 4) = 18 000 D. Coefficient de rotation = 144 000 ÷ 18 000 = 8, donc durée = 360 ÷ 8 = 45 jours ✓. Autre lecture : avec N commandes, la rotation vaut 2 × N = 8.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le coût d'achat des marchandises vendues d'une enseigne est de 450 000 D par an. Elle vise une durée de stockage de 40 jours. Quel stock moyen maximal peut-elle détenir, en D ?",
+      "answerKey": {
+        "value": 50000,
+        "unit": "D"
+      },
+      "explanation": "Durée de 40 jours : coefficient de rotation = 360 ÷ 40 = 9. Comme r = A ÷ SM, stock moyen = A ÷ r = 450 000 ÷ 9 = 50 000 D ✓. Au-delà, la durée dépasserait 40 jours.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une entreprise voit ses stocks passer de 72 000 D en N-1 à 66 000 D en N, et son total des actifs de 400 000 D à 275 000 D. Son secteur est à 22 %. Que conclure sur la part des stocks ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle passe de 18 % à 16,5 %, diminue car les stocks baissent"
+        },
+        {
+          "id": "b",
+          "text": "Elle passe de 18 % à 24 % et dépasse le secteur : l'entreprise a acheté trop de marchandises"
+        },
+        {
+          "id": "c",
+          "text": "Elle passe de 18 % à 24 % et dépasse le secteur : le total des actifs baisse plus vite"
+        },
+        {
+          "id": "d",
+          "text": "Elle reste stable, car stocks et total des actifs baissent tous deux"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Part en N-1 = 72 000 ÷ 400 000 = 18 % ; en N = 66 000 ÷ 275 000 = 24 % : elle augmente, et 24 % dépasse les 22 % du secteur. Le stock a pourtant baissé, donc l'entreprise n'a pas acheté trop : c'est le total des actifs qui a baissé plus vite. Le taux de 16,5 % viendrait du mélange des deux années (66 000 ÷ 400 000).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le total des actifs d'une entreprise est de 400 000 D et ses stocks de 112 000 D, alors que le secteur est à 22 %. À total des actifs inchangé (la valeur libérée est placée en trésorerie), de combien de D faut-il réduire le stock pour atteindre la part du secteur ?",
+      "answerKey": {
+        "value": 24000,
+        "unit": "D"
+      },
+      "explanation": "Stock visé = 22 % de 400 000 = 88 000 D. Réduction = 112 000 − 88 000 = 24 000 D ✓. La part actuelle est 112 000 ÷ 400 000 = 28 %, soit 6 points au-dessus du secteur.",
+      "difficulty": 3
+    }
+  ]
+}

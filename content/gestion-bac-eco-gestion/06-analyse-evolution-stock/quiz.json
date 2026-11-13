@@ -1,0 +1,121 @@
+{
+  "title": "Test de compréhension ⭐ : L'analyse de l'évolution du stock",
+  "questions": [
+    {
+      "prompt": "Quel rapport mesure la part des stocks dans l'actif de l'entreprise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total des actifs ÷ Stocks"
+        },
+        {
+          "id": "b",
+          "text": "Stocks ÷ Chiffre d'affaires"
+        },
+        {
+          "id": "c",
+          "text": "Stocks ÷ Total des actifs"
+        },
+        {
+          "id": "d",
+          "text": "Stocks ÷ Capitaux propres"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La part des stocks rapporte le montant des stocks à l'ensemble des actifs : Stocks ÷ Total des actifs. Elle mesure le poids du stock dans le patrimoine ; le rapport inverse, ou un rapport au chiffre d'affaires ou aux capitaux propres, mesure autre chose.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Au 31/12, les stocks d'un libraire valent 18 000 D et l'ensemble de ses actifs 120 000 D. Quelle part du patrimoine les stocks représentent-ils, en % ?",
+      "answerKey": {
+        "value": 15,
+        "unit": "%"
+      },
+      "explanation": "Part des stocks = 18 000 ÷ 120 000 = 0,15, soit 15 % ✓. On rapporte le stock au total des actifs, pas au stock lui-même ni aux ventes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le stock d'un commerçant a augmenté pendant l'année. Par rapport aux achats de l'année, les achats consommés sont…",
+      "options": [
+        {
+          "id": "a",
+          "text": "supérieurs aux achats de l'année"
+        },
+        {
+          "id": "b",
+          "text": "inférieurs aux achats de l'année"
+        },
+        {
+          "id": "c",
+          "text": "égaux aux achats de l'année"
+        },
+        {
+          "id": "d",
+          "text": "impossibles à comparer sans connaître le stock moyen"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Achats consommés = Achats + stock initial − stock final. Quand le stock final dépasse le stock initial, on retranche plus qu'on n'ajoute : une partie des achats est restée en rayon, donc les achats consommés sont inférieurs aux achats. Le stock moyen ne sert pas ici : seul le sens de la variation SF − SI compte.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que mesure le coefficient de rotation du stock ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le nombre de jours pendant lesquels la marchandise reste en stock"
+        },
+        {
+          "id": "b",
+          "text": "La part du stock dans l'ensemble des actifs de l'entreprise"
+        },
+        {
+          "id": "c",
+          "text": "L'écart entre le stock final et le stock initial de l'année"
+        },
+        {
+          "id": "d",
+          "text": "Le nombre de renouvellements du stock moyen au cours de l'année"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le coefficient de rotation, A ÷ SM, indique combien de fois le stock moyen est vendu ou consommé dans l'année. Le nombre de jours est la durée du stockage (360 ÷ r), et la part dans l'actif est un autre ratio.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise a consommé 240 000 D de marchandises (au coût d'achat) dans l'année. Son stock initial est de 35 000 D et son stock final de 45 000 D. Quel est son coefficient de rotation ?",
+      "answerKey": {
+        "value": 6,
+        "unit": "fois"
+      },
+      "explanation": "Stock moyen = (35 000 + 45 000) ÷ 2 = 40 000 D. Coefficient de rotation = 240 000 ÷ 40 000 = 6 ✓ : le stock moyen se renouvelle 6 fois par an.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La durée de stockage d'une entreprise passe de 40 à 55 jours, alors que celle de son secteur est de 42 jours. Que peut-on dire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La rotation ralentit et l'entreprise garde ses stocks plus longtemps que le secteur"
+        },
+        {
+          "id": "b",
+          "text": "La rotation s'accélère et l'entreprise garde ses stocks moins longtemps que le secteur"
+        },
+        {
+          "id": "c",
+          "text": "La rotation ralentit mais l'entreprise reste plus rapide que le secteur"
+        },
+        {
+          "id": "d",
+          "text": "La rotation s'accélère mais l'entreprise reste plus lente que le secteur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une durée qui passe de 40 à 55 jours signifie que la rotation ralentit (360 ÷ 40 = 9 fois, puis 360 ÷ 55 ≈ 6,5 fois). Et 55 jours dépasse les 42 jours du secteur : l'entreprise garde ses stocks plus longtemps que ses concurrents.",
+      "difficulty": 2
+    }
+  ]
+}

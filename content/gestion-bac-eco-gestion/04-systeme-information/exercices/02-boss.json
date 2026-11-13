@@ -1,0 +1,151 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des messagers",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un chef d'atelier reçoit chaque jour l'export complet des ventes de 12 magasins et ne l'ouvre plus. Quelle mesure corrige le défaut ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ajouter à l'export un relevé détaillé des ventes de chaque rayon"
+        },
+        {
+          "id": "b",
+          "text": "Lui transmettre un résumé des seuls chiffres utiles à l'atelier"
+        },
+        {
+          "id": "c",
+          "text": "Remplacer l'export écrit par un compte rendu oral chaque matin"
+        },
+        {
+          "id": "d",
+          "text": "Faire contrôler l'origine des chiffres du fichier avant l'envoi"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le défaut est la surinformation : elle est aussi inefficace qu'un manque. On trie selon le niveau d'utilisation et on ne transmet à l'atelier que ce qui lui sert. Ajouter du détail aggrave le mal, et changer de support ou contrôler l'origine des chiffres n'en traite pas la cause : le fichier est déjà trop volumineux pour son destinataire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un catalogue de prix envoyé à l'entreprise par l'un de ses fournisseurs est classé selon la source, la nature et le domaine. Quelle classification est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Source interne, nature orale, domaine commercial"
+        },
+        {
+          "id": "b",
+          "text": "Source externe, nature écrite, domaine commercial"
+        },
+        {
+          "id": "c",
+          "text": "Source interne, nature écrite, domaine technique"
+        },
+        {
+          "id": "d",
+          "text": "Source externe, nature orale, domaine juridique et social"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le catalogue est établi par un fournisseur : source externe. Il est écrit, et il traite de prix de vente : domaine commercial. Chaque autre classification se trompe sur deux critères à la fois : l'une sur la source et la nature, une autre sur la source et le domaine, la dernière sur la nature et le domaine.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles informations sont d'origine externe ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un programme d'aides publié par la région"
+        },
+        {
+          "id": "b",
+          "text": "Le bilan comptable de l'exercice"
+        },
+        {
+          "id": "c",
+          "text": "La notice d'un logiciel acheté par l'entreprise"
+        },
+        {
+          "id": "d",
+          "text": "Le rapport du chef des ventes"
+        },
+        {
+          "id": "e",
+          "text": "Un article de journal sur le secteur"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Le programme d'aides de la région (collectivité territoriale), la notice d'un logiciel acheté (document spécialisé) et l'article de journal (média) viennent de l'extérieur. Le bilan comptable et le rapport du chef des ventes émanent de l'entreprise : ce sont des sources internes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Mme Hela relève les ventes au comptoir et les saisit aussitôt ; le logiciel compare chaque soir les sorties au stock et imprime la liste des produits sous le seuil. Cette liste reste dans le bureau de la comptable, et personne ne la porte au magasin. Pourtant le magasin découvre les ruptures trop tard. Quelle étape est défaillante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La collecte, car les ventes du comptoir sont mal relevées"
+        },
+        {
+          "id": "b",
+          "text": "La saisie, car les ventes sont enregistrées trop tard"
+        },
+        {
+          "id": "c",
+          "text": "Le traitement, car les ventes ne sont pas comparées au stock"
+        },
+        {
+          "id": "d",
+          "text": "La diffusion, car la liste n'est pas transmise au magasin"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les ventes sont relevées, saisies aussitôt et comparées au stock : les trois premières étapes fonctionnent, l'énoncé le dit. Ce qui manque, c'est que la liste parvienne au magasin, qui en a besoin : la diffusion est défaillante. Une information traitée mais non transmise n'aide personne.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le service du personnel rédige une note de synthèse sur une nouvelle loi du travail. Le gérant dit : « Elle vient de chez nous, donc elle ne peut rien m'apprendre sur la loi. » Pourquoi ce raisonnement est-il faux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce qu'une note de synthèse du service du personnel est une source externe, comme un journal officiel"
+        },
+        {
+          "id": "b",
+          "text": "Parce que le domaine d'une loi du travail est le domaine comptable de l'entreprise"
+        },
+        {
+          "id": "c",
+          "text": "Parce que l'origine interne de la note n'indique pas son sujet, qui peut être extérieur à l'entreprise"
+        },
+        {
+          "id": "d",
+          "text": "Parce que son niveau d'utilisation est celui des opérateurs de l'atelier de production"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La note est produite par un service de l'entreprise : c'est une source interne, même si elle porte sur une loi extérieure. L'origine de l'information et son sujet sont deux choses distinctes. Elle n'est donc pas externe, le domaine d'une loi du travail n'est pas comptable, et son niveau d'utilisation n'entre pas dans ce raisonnement.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur 48 documents reçus, les trois huitièmes sont externes. Parmi les documents internes, un tiers est de domaine comptable. Combien de documents internes sont de domaine comptable ?",
+      "answerKey": {
+        "value": 10,
+        "unit": "documents"
+      },
+      "explanation": "Externes : 48 × 3/8 = 18. Internes : 48 − 18 = 30. Comptables : 30 ÷ 3 = 10 ✓. Prendre un tiers de 48 donnerait 16 : on oublierait de retirer d'abord les documents externes.",
+      "difficulty": 3
+    }
+  ]
+}
