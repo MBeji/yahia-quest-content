@@ -709,7 +709,7 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
       `content_shared` en `live: false` avec le lot qui les câblera ; ligne à l'inventaire INPDP.
       **Critères** (US-1) : première ouverture d'un navigateur neuf ⇒ un `visit_first`, aucun
       `visit_returned` ; réouverture le même jour ⇒ rien ; le lendemain ⇒ un `visit_returned
-    {days_bucket:"1"}` ; `localStorage` jeté ⇒ rien n'est émis et rien ne casse ;
+  {days_bucket:"1"}` ; `localStorage` jeté ⇒ rien n'est émis et rien ne casse ;
       `/?src=pwa` ⇒ `entry:"pwa"` et l'URL affichée redevient `/` ; `/admin/engagement` affiche
       huit cohortes avec « mesurable » distingué de « perdu » ; le relevé dit « première quête :
       x/y ». `index-` ne grossit pas de plus de 1 Ko.
@@ -750,7 +750,7 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
       **Tests** : ceux du tableau, plus `enable-push-card.test.tsx` étendu au `moment`.
       **Stop-point** : pas de carte d'installation, pas de carte parent ; `quest-result-nudges`
       n'accueille que le rappel et **prévoit** les deux emplacements suivants sans les remplir.
-- [ ] **Lot 3 — L'invitation à installer.**
+- [x] **Lot 3 — L'invitation à installer** (livré, moteur #1298, #1299).
       **Périmètre** : R-11 à R-14 ; `install_invite` passe `live: true`.
       **Critères** (US-5, US-6, US-10) : Chromium Android, événement reçu, quiz anonyme réussi ⇒
       carte ; bouton ⇒ `prompt()` ; acceptation ⇒ `install_invite{action:"accepted"}` et la carte
@@ -909,3 +909,33 @@ DEFINER`, garde `is_admin()`, séparée de `admin_engagement_overview`), `getRet
   ni écrire ce dépôt (accès refusé à sa session) : il a travaillé sur les sections recopiées par la
   session qui orchestre, et cette entrée est posée par elle.
   Suite : les lots 3 et 4 se jugent sur `visit_returned{entry}` — ils partent un par un.
+- **2026-11-13 — lot 3 livré (moteur #1298, puis #1299 pour un test e2e).** Carte d'installation
+  après une réussite (résultat sans compte, résultat connecté) et sous le bilan de `/suivi` (texte
+  parent) ; mémoire commune `na9ra.nudge` (14 jours, 7 pour `push`, deux refus ⇒ jamais, une seule
+  invitation par écran, ordre rappel → installation → parent) ; `NudgeSlot` prêt pour les lots 2 et
+  5 ; manifeste `start_url: "/?src=pwa"`, `id: "/"` ; `install_invite` câblé. Aucune migration.
+  Mesures : `index-` 238,61 → 239,26 Ko (+0,65, pour 242) ; `i18n-fr`, `i18n-en`, `i18n-ar`,
+  `dashboard-` inchangés ; aucun plafond relevé ; décalage de mise en page de la carte nul (0,076
+  pendant le jeu, 0 après l'écran de résultat, identique avec et sans carte).
+  **Vérifié en production le 2026-11-13** (navigateur émulé, mesure d'audience bloquée et lue par la
+  sonde) : manifeste à jour ; Android avec l'événement simulé, mission réussie sans compte ⇒ carte,
+  bouton ⇒ `prompt()` appelé une fois, acceptation ⇒ carte disparue, `install_invite` `shown` puis
+  `accepted` `{native, student}` ; iPhone ⇒ deux gestes sans bouton, `shown {ios, student}` ; mission
+  ratée ⇒ rien, aucun événement. Recoupé par la session qui orchestre : le manifeste servi porte
+  `id: "/"` et `start_url: "/?src=pwa"`. **Non vérifié en production** : l'écran de résultat connecté
+  et `/suivi` (ni compte ni code de test) — tests unitaires seulement ; aucun appareil réel.
+  La suite e2e connectée, lancée sur la branche : 104 réussis et 1 échec au premier passage (un test
+  neuf du lot, « quiz raté ⇒ rien », délai dépassé), verte après #1299.
+  Écarts acceptés : (a) l'écouteur vit dans `install-signals.ts`, pas dans `install-prompt.ts` — seul
+  morceau du chunk d'entrée ; `isStandaloneDisplay` y a quitté `entry-source.ts` (lot 0) pour ne pas
+  ouvrir un chunk partagé ; (b) les chaînes sont dans un catalogue `i18n/install` chargé avec la
+  carte, pas sous `public.install.*` (budget `i18n-fr`) ; (c) une invitation acceptée s'écrit
+  `dismissed: 2` (forme de mémoire inchangée) ; (d) un événement d'installation arrivé APRÈS l'écran
+  de résultat n'y insère pas de carte (zéro décalage), sauf sous le bilan de `/suivi` ; (e) la carte
+  suit le sens de l'interface, pas celui du contenu ; (f) l'exécuteur n'a pas accès à ce dépôt :
+  cette entrée est son texte, posé par la session qui orchestre.
+  Dettes : pas d'essai sur appareil réel ; résultat connecté et `/suivi` non constatés en
+  production ; l'écran de résultat entier passe en RTL quand le contenu est arabe et l'interface
+  française (préexistant, hors lot) ; instabilité du test `authed/responsive` sur iPhone SE
+  (débordement de l'en-tête connecté, vert au deuxième essai) ; `perf:budget` compte en local 42
+  requêtes sur `/programme` pour un plafond de 41, avec ou sans le lot, alors que la CI est verte.
