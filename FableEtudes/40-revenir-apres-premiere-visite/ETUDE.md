@@ -777,7 +777,7 @@ l'appel à `shareText`) — à passer après la fusion de é08 lot 2.
       **Tests** : ceux du tableau.
       **Stop-point** : rien n'atteint le serveur ; aucun champ de saisie ; pas de page de résultat
       partagé.
-- [ ] **Lot 5 — Le parent dans la boucle.**
+- [x] **Lot 5 — Le parent dans la boucle** (livré, moteur #1303).
       **Périmètre** : R-19, R-20 ; troisième emplacement de `quest-result-nudges`.
       **Critères** (US-9) : paramétrage ⇒ « Inviter mon parent » à côté de « Copier » ; le message
       porte `/suivi?code=…&src=share` ; un élève avec lien parent actif ne voit pas la carte sur
@@ -989,3 +989,40 @@ DEFINER`, garde `is_admin()`, séparée de `admin_engagement_overview`), `getRet
   `/api/cron/notify` sans secret répond 401. **Reste à constater** : la carte au hall d'un compte
   connecté, une première ligne dans `push_subscriptions`, la réponse du cron de 18:00 UTC. Le
   projet `yahia-quest-arena` (sans domaine propre) n'a pas été touché.
+- **2026-11-13 — Lot 5 livré (moteur #1303, `ce42a2e`).** Livré : R-19, R-20. « Inviter mon parent »
+  au paramétrage (permanent, à côté de « Copier ») et en carte sur l'écran de résultat connecté (après
+  une réussite, élève sans lien parent actif, après l'installation dans l'ordre de R-12) ; message
+  FR/EN/AR portant `/suivi?code=…&src=share`, envoyé par le geste de partage commun (`shareText`) ;
+  lecture serveur booléenne `hasActiveParentLink` (RLS existante, même filtre que le digest, aucune
+  migration), en cours ou en échec ⇒ pas de carte ; « Plus tard » = refus, envoi = invitation
+  aboutie, feuille fermée = ni l'un ni l'autre.
+  Mesures : `content_shared{intent:"parent", surface: settings|result, method}`, ni code ni
+  identifiant ; chunk d'entrée 239,35 → 239,40 Ko, catalogues i18n inchangés, `perf:budget` de `/` et
+  `/programme` aux chiffres de `main` ; aucun plafond relevé.
+  Tests : Vitest (texte et lien dans les trois langues, lien actif ⇒ pas de carte, ordre R-12, `src`
+  retiré et `code` gardé à l'arrivée, aucune donnée personnelle) ; e2e `authed/invite-parent.spec.ts`
+  (le lien ouvre `/suivi` avec le bilan, sans compte, code proposé à la mémorisation) ; suite e2e
+  connectée verte sur la branche (run 110, avant le correctif de découpage, qui ne touche ni écran ni
+  comportement).
+  **Vérifié en production** (`/api/health` = `ce42a2e`, navigateur émulé, mesure d'audience coupée) :
+  `/suivi?code=<code bidon>&src=share` ⇒ `src` retiré, `code` gardé et pré-rempli, refus propre d'un
+  code inconnu, aucune erreur. **Non vérifié en production** : le bouton du paramétrage et la carte de
+  l'écran de résultat (aucun compte de production), l'émission réelle de `content_shared{intent:"parent"}`.
+  Écarts acceptés : (a) les chaînes ne sont pas sous `settings.*` mais dans un catalogue à part
+  (`i18n/invite`, patron `keep`/`install`) — dans le catalogue principal elles faisaient dépasser le
+  budget JavaScript de `/programme` ; (b) la première CI était rouge sur `perf:budget` (une valeur
+  importée d'`entry-source` en faisait un chunk chargé sur chaque page publique, plus les chaînes) :
+  import de type seul et catalogue à part, deuxième push avant fusion ; (c) le bouton du paramétrage
+  reste même quand un parent est déjà lié (second parent, nouvel appareil) ; (d) la session du lot,
+  arrêtée par la limite d'usage à 03:29, a repris sur un autre modèle ; un doublon de son correctif
+  préparé par l'orchestratrice (moteur #1309) a été fermé ; (e) l'exécuteur n'a pas accès à ce dépôt :
+  cette entrée est son texte, posé par la session qui orchestre.
+  Dettes : la carte dépend d'une lecture mise en cache pendant la quête — une quête finie plus vite
+  que la lecture ne montre pas de carte (sens sûr, invitation manquée, non mesuré) ; `use-parent-invite`
+  est un chunk partagé dont le nom entre dans la table de préchargement du chunk d'entrée (+0,05 Ko) :
+  `/programme` est à 262,9 Ko de JavaScript pour 263, le prochain module partagé entre deux routes
+  ne passera pas sans découpage.
+  Questions au propriétaire : le bouton du paramétrage doit-il disparaître une fois un parent lié ?
+  faut-il compter l'affichage de la carte, pour un taux « montrée → envoyée » ?
+  Suite : P-0 étant fait, le lot 1 (le push se prouve) puis le lot 2 (le rappel après une victoire)
+  ont désormais un effet ; lot 6 gelé (Q-3).
