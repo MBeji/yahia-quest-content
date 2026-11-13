@@ -1026,3 +1026,10 @@ DEFINER`, garde `is_admin()`, séparée de `admin_engagement_overview`), `getRet
   faut-il compter l'affichage de la carte, pour un taux « montrée → envoyée » ?
   Suite : P-0 étant fait, le lot 1 (le push se prouve) puis le lot 2 (le rappel après une victoire)
   ont désormais un effet ; lot 6 gelé (Q-3).
+- **2026-11-13 — Lot 5, complément (moteur #1311, `6a9f0ce`).** Sur décision du propriétaire : le
+  bouton du paramétrage reste tel quel (permanent, même avec un parent lié) ; l'affichage de la carte
+  se compte — `parent_invite{action: shown|dismissed}`, nouvel événement de la liste fermée, aucune
+  propriété sur l'élève, dénominateur de `content_shared{intent:"parent", surface:"result"}`. Le
+  catalogue des événements en clair sort du module que toutes les pages chargent : `/` 256,5 Ko et
+  `/programme` 261,7 Ko de JavaScript (−1,2 Ko chacune). Suite e2e connectée verte (run 112).
+  **Non vérifié en production** : l'émission réelle de `parent_invite` (carte connectée, aucun compte).
