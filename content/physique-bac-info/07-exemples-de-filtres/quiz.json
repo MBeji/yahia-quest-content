@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Exemples de filtres",
+  "questions": [
+    {
+      "prompt": "Quel critère donne l'ordre d'un filtre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La plus haute dérivée de u_S"
+        },
+        {
+          "id": "b",
+          "text": "Le nombre de composants"
+        },
+        {
+          "id": "c",
+          "text": "Le nombre de fréquences de coupure"
+        },
+        {
+          "id": "d",
+          "text": "La présence d'un A.O."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'ordre se lit dans l'équation différentielle : c'est l'ordre de la plus haute dérivée de u_S, 1 pour les filtres RC, CR et le passe-bas actif, 2 pour le passe-bande RLC ✓. Compter les composants donnerait 3 pour le RLC, qui est du second ordre. Le passe-bande a deux coupures, mais ce n'est pas ce qui fixe l'ordre. La présence d'un A.O. distingue un filtre actif d'un filtre passif, pas son ordre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un passe-bas RC et un passe-haut CR sont réalisés avec les mêmes R et C. Comment se comparent la coupure haute N_h du premier et la coupure basse N_b du second ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N_b = N_h/√2"
+        },
+        {
+          "id": "b",
+          "text": "N_b = N_h"
+        },
+        {
+          "id": "c",
+          "text": "N_b = √2·N_h"
+        },
+        {
+          "id": "d",
+          "text": "N_b = 2·N_h"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les deux coupures valent 1/(2πRC) : avec les mêmes composants, N_b = N_h ✓, et les deux courbes de gain se croisent à −3 dB à cette fréquence. Le facteur √2 concerne les amplitudes à la coupure, pas les fréquences. Un facteur 2 est un écart d'une octave, sans lien avec la permutation de R et C.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le quadripôle ci-dessous, la tension de sortie u_S est prélevée aux bornes du condensateur. De quel type de filtre s'agit-il ?\n<svg viewBox=\"0 0 350 160\"><title>Quadripôle RC : le résistor R est en série avec l'entrée E, la sortie S est prise aux bornes du condensateur C</title><line x1=\"40.0\" y1=\"45.0\" x2=\"300.0\" y2=\"45.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"40.0\" y1=\"125.0\" x2=\"300.0\" y2=\"125.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"40.0\" y1=\"45.0\" x2=\"100.0\" y2=\"45.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"100.0\" y=\"37.0\" width=\"60\" height=\"16\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"130.0\" y=\"31.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R</text><line x1=\"160.0\" y1=\"45.0\" x2=\"300.0\" y2=\"45.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"230.0\" y1=\"45.0\" x2=\"230.0\" y2=\"79.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"230.0\" y1=\"91.0\" x2=\"230.0\" y2=\"125.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"214.0\" y1=\"79.0\" x2=\"246.0\" y2=\"79.0\" stroke=\"#0f172a\" stroke-width=\"3\"/><line x1=\"214.0\" y1=\"91.0\" x2=\"246.0\" y2=\"91.0\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"254.0\" y=\"89.0\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><circle cx=\"230\" cy=\"45\" r=\"2.6\" fill=\"#0f172a\"/><circle cx=\"40.0\" cy=\"45.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"40.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E</text><circle cx=\"40.0\" cy=\"125.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"40.0\" y=\"142.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><circle cx=\"300.0\" cy=\"45.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"300.0\" y=\"36.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S</text><circle cx=\"300.0\" cy=\"125.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"300.0\" y=\"142.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><line x1=\"18.0\" y1=\"119.0\" x2=\"18.0\" y2=\"53.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"18.0,53.0 21.5,60.0 14.5,60.0\" fill=\"#2563eb\"/><text x=\"18.0\" y=\"43.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_E</text><line x1=\"324.0\" y1=\"119.0\" x2=\"324.0\" y2=\"53.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"324.0,53.0 327.5,60.0 320.5,60.0\" fill=\"#2563eb\"/><text x=\"324.0\" y=\"43.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_S</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Passe-bande passif"
+        },
+        {
+          "id": "b",
+          "text": "Passe-haut passif"
+        },
+        {
+          "id": "c",
+          "text": "Passe-bas actif"
+        },
+        {
+          "id": "d",
+          "text": "Passe-bas passif"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le condensateur est ouvert aux basses fréquences : le signal y arrive jusqu'à la sortie ; il devient un fil aux hautes fréquences et court-circuite la sortie. Le filtre laisse donc passer les basses fréquences, c'est un passe-bas, et il n'a que des composants passifs ✓. Un passe-haut aurait la sortie aux bornes du résistor. Un passe-bande exigerait une bobine. Un filtre actif contiendrait un amplificateur opérationnel.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un passe-bas RC est réalisé avec R = 2,2 kΩ et C = 47 nF. Quelle est sa fréquence de coupure N_h ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "61 kHz"
+        },
+        {
+          "id": "b",
+          "text": "9,7 kHz"
+        },
+        {
+          "id": "c",
+          "text": "1,5 kHz"
+        },
+        {
+          "id": "d",
+          "text": "0,15 kHz"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "N_h = 1/(2πRC) = 1/(2π × 2,2·10³ × 47·10⁻⁹) = 1/(6,50·10⁻⁴) ≈ 1,5 kHz ✓. La valeur 9,7 kHz oublie le facteur 2π. La valeur 61 kHz utilise 2π/(RC) au lieu de 1/(2πRC). La valeur 0,15 kHz vient d'une capacité prise égale à 0,47 µF.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour un filtre passe-bas RC en régime sinusoïdal permanent, que dit-on du déphasage Δφ = φ_S − φ_E ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δφ est compris entre −π/2 et 0 : u_S est en retard"
+        },
+        {
+          "id": "b",
+          "text": "Δφ est compris entre 0 et +π/2 : u_S est en avance"
+        },
+        {
+          "id": "c",
+          "text": "Δφ vaut −π/4 pour toutes les fréquences"
+        },
+        {
+          "id": "d",
+          "text": "Δφ est compris entre +π/2 et +π : u_S est en avance"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour le passe-bas RC, tg Δφ = −N/N_h est négatif et tend vers −∞ : Δφ reste entre −π/2 et 0 et u_S est toujours en retard sur u_E ✓. Un déphasage positif est celui du passe-haut CR. L'intervalle de +π/2 à +π est celui du passe-bas actif inverseur. La valeur −π/4 n'est atteinte qu'à la fréquence de coupure.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle propriété distingue un filtre actif d'un filtre passif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il ne contient aucun condensateur dans son montage"
+        },
+        {
+          "id": "b",
+          "text": "Sa transmittance est inférieure à 1 pour toutes les fréquences"
+        },
+        {
+          "id": "c",
+          "text": "Sa fréquence de coupure ne dépend d'aucun des composants du montage"
+        },
+        {
+          "id": "d",
+          "text": "Son gain maximal peut être positif : il peut amplifier"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un filtre actif contient un composant actif alimenté, l'amplificateur opérationnel : son gain maximal peut être positif et le signal peut être amplifié ✓. Avoir T < 1 pour toute fréquence est la propriété d'un filtre passif. La coupure dépend toujours des composants. Les passe-bas actifs étudiés contiennent un condensateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour des fréquences N très supérieures à N_h, de quelle valeur le gain d'un passe-bas RC varie-t-il quand N est multipliée par 10 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3 dB"
+        },
+        {
+          "id": "b",
+          "text": "−6 dB"
+        },
+        {
+          "id": "c",
+          "text": "−20 dB"
+        },
+        {
+          "id": "d",
+          "text": "−40 dB"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Aux hautes fréquences, la courbe tend vers une droite de pente −20 dB par décade : multiplier N par 10 retire 20 dB ✓. La valeur −6 dB est la pente par octave, c'est-à-dire pour N multipliée par 2. La valeur −3 dB est le niveau de la coupure. La valeur −40 dB est le double de la pente d'un filtre du premier ordre : aucun filtre du chapitre n'a cette pente.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La résistance totale R d'un filtre passe-bande RLC série diminue, L et C étant inchangées. Que deviennent la fréquence centrale N₀ et la largeur ΔN de la bande passante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N₀ ne change pas et ΔN diminue"
+        },
+        {
+          "id": "b",
+          "text": "N₀ ne change pas et ΔN augmente"
+        },
+        {
+          "id": "c",
+          "text": "N₀ diminue et ΔN diminue"
+        },
+        {
+          "id": "d",
+          "text": "N₀ augmente et ΔN augmente"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "N₀ = 1/(2π√(LC)) ne dépend que de L et de C, donc elle ne change pas. Quand R diminue, Q = Lω₀/R augmente, donc ΔN = N₀/Q diminue : le filtre est plus sélectif ✓. Une bande qui s'élargit correspond à une résistance plus grande. N₀ ne dépend pas de la résistance.",
+      "difficulty": 2
+    }
+  ]
+}
