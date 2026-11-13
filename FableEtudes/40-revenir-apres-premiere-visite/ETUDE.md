@@ -645,6 +645,10 @@ Journal serveur : `Push cron complete` porte déjà `byTag` ; rien à ajouter.
 
 #### Le prérequis P-0 — le geste Vercel (propriétaire, remonté le 2026-11-12)
 
+> ✅ **Fait le 2026-11-13** (accès Vercel accordé par le propriétaire à la session de l'étude) —
+> voir le journal §8. Les cinq variables sont posées dans le projet `na9ranal3ab` (celui qui sert
+> `www`) ; la production les sert depuis 09:13 UTC.
+
 Ce n'est pas un lot : aucune session du jour n'a l'accès à l'équipe Vercel (403), et
 `zero-intervention.md` range ce cas parmi les gestes qui restent au propriétaire. Il conditionne
 **l'effet** — pas la fusion — de tout ce qui repose sur le push.
@@ -973,3 +977,15 @@ DEFINER`, garde `is_admin()`, séparée de `admin_engagement_overview`), `getRet
   question ouverte au propriétaire) ; une feuille de partage refermée n'ouvre rien d'autre, à
   dessein.
   Suite : le lot 5 (le parent dans la boucle) part seul ; il émet `content_shared{intent:"parent"}`.
+- **2026-11-13 — prérequis P-0 fait.** Accès Vercel accordé par le propriétaire. Constat d'abord :
+  le projet `na9ranal3ab` (domaines `www.na9ranal3ab.tn`, apex et `*.vercel.app` en redirection)
+  n'avait **aucune** des cinq variables Web Push — ni la paire VAPID, ni `CRON_SECRET` : le cron
+  du soir répondait donc 401 depuis toujours, en plus de la clé absente du build. Fait : paire VAPID
+  P-256 générée (vérifiée par signature) ; `VITE_VAPID_PUBLIC_KEY` = `VAPID_PUBLIC_KEY` et
+  `VAPID_SUBJECT` = `mailto:contact@na9ranal3ab.tn` (l'adresse publique du site) en production et
+  prévisualisation ; `VAPID_PRIVATE_KEY` et `CRON_SECRET` en production seulement, type
+  « sensitive » ; aucune copie conservée hors de Vercel. Redéploiement de production depuis
+  `a1384de`. Constaté : `www` sert `enable-push-card-DMw7W6GB.js`, qui porte la clé publique ;
+  `/api/cron/notify` sans secret répond 401. **Reste à constater** : la carte au hall d'un compte
+  connecté, une première ligne dans `push_subscriptions`, la réponse du cron de 18:00 UTC. Le
+  projet `yahia-quest-arena` (sans domaine propre) n'a pas été touché.
