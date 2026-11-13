@@ -32,13 +32,13 @@
     },
     {
       "type": "numeric",
-      "prompt": "Un circuit RLC entretenu a un condensateur de capacité C = 20 µF ; on mesure la période T = 8,0 ms des oscillations quasi-sinusoïdales. Calculer l'inductance L, en mH, arrondie à l'unité.",
+      "prompt": "Un circuit RLC est fermé sur un dipôle (−R′) avec R₀ = 30 Ω, r = 15 Ω et R′ = 65 Ω. À un instant où i = 30 mA, quelle est la puissance dE/dt reçue par l'oscillateur, en mW ?",
       "answerKey": {
-        "value": 81,
-        "tolerance": 2,
-        "unit": "mH"
+        "value": 18,
+        "tolerance": 0.5,
+        "unit": "mW"
       },
-      "explanation": "T = T₀ = 2π√(LC) donne L = T²/(4π²·C) = (8,0·10⁻³)²/(4π² × 20·10⁻⁶) = 64·10⁻⁶/7,9·10⁻⁴ ≈ 0,081 H, soit 81 mH.",
+      "explanation": "R_t = R₀ + r − R′ = 30 + 15 − 65 = −20 Ω, donc dE/dt = −R_t·i² = 20 × (30·10⁻³)² = 18 mW : l'apport (65 × 9·10⁻⁴ ≈ 58 mW) dépasse les pertes (45 × 9·10⁻⁴ ≈ 41 mW) de 18 mW.",
       "difficulty": 2
     },
     {
@@ -125,7 +125,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Aucune oscillation : elles sont amorties"
+          "text": "Aucune oscillation entretenue : les oscillations naissantes sont amorties"
         },
         {
           "id": "b",
@@ -133,11 +133,11 @@
         },
         {
           "id": "c",
-          "text": "Des oscillations distordues et écrêtées de grande amplitude"
+          "text": "Des oscillations distordues et écrêtées, de très grande amplitude"
         },
         {
           "id": "d",
-          "text": "Des oscillations sinusoïdales dont l'amplitude croît sans limite"
+          "text": "Des oscillations sinusoïdales dont l'amplitude croît sans aucune limite"
         }
       ],
       "correctOption": "b",

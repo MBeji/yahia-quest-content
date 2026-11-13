@@ -10,18 +10,18 @@
         },
         {
           "id": "b",
-          "text": "Compenser l'énergie perdue par effet Joule"
-        },
-        {
-          "id": "c",
           "text": "Recharger le condensateur à chaque période"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Augmenter la résistance totale du circuit"
+        },
+        {
+          "id": "d",
+          "text": "Compenser l'énergie perdue par effet Joule"
         }
       ],
-      "correctOption": "b",
+      "correctOption": "d",
       "explanation": "Le dispositif d'entretien apporte à l'oscillateur l'énergie que la résistance dissipe par effet Joule, ce qui compense l'amortissement ✓. Il n'impose pas la fréquence, qui reste la fréquence propre. Il ne recharge pas le condensateur période après période, et augmenter la résistance totale accentuerait l'amortissement au lieu de le compenser.",
       "difficulty": 1
     },
@@ -126,11 +126,11 @@
       "options": [
         {
           "id": "a",
-          "text": "Elle diminue, car l'effet Joule l'emporte"
+          "text": "Elle diminue, car l'effet Joule l'emporte sur l'apport"
         },
         {
           "id": "b",
-          "text": "Elle reste constante, car R′ compense R₀ + r"
+          "text": "Elle reste constante, car R′ compense exactement R₀ + r"
         },
         {
           "id": "c",
@@ -138,7 +138,7 @@
         },
         {
           "id": "d",
-          "text": "Elle est nulle, car R_t est négative"
+          "text": "Elle est nulle, car la résistance R_t est négative"
         }
       ],
       "correctOption": "c",
@@ -174,22 +174,22 @@
       "options": [
         {
           "id": "a",
-          "text": "N inchangée, amplitude plus grande"
-        },
-        {
-          "id": "b",
           "text": "N plus grande, amplitude inchangée"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "N plus petite, amplitude plus grande"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "N inchangée, amplitude inchangée"
+        },
+        {
+          "id": "d",
+          "text": "N inchangée, amplitude plus grande"
         }
       ],
-      "correctOption": "a",
+      "correctOption": "d",
       "explanation": "La fréquence reste la fréquence propre N₀ = 1/(2π√(LC)), qui ne dépend ni de R′ ni du dispositif ; en revanche l'amplitude augmente avec R′ ✓. Une fréquence qui varie avec R′ ferait de l'A.O. le maître du rythme, ce qu'il n'est pas. Une amplitude inchangée contredit l'observation : plus R′ est grande, plus l'apport d'énergie est grand.",
       "difficulty": 2
     }
