@@ -39,7 +39,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Sciences de l'informatique | mathématiques | `222472` | ✅ validée R-7 (2026-11-05) — 304 p., 13 chapitres, couche texte L1 + image à 100 % | 13/13 chapitres — matière complète (ch.01-10 publiés les 2026-11-05/06 ; ch.11-13 systèmes linéaires, statistique à deux caractères, probabilités) | — (missions d'examen du Bac à ajouter dès que les sujets sont au Drive) ; adaptée de `math-bac-techniques` / `math-bac-sciences-exp` / `math-bac-math` selon la fiche **différentielle** (demande de Mohamed du 2026-11-05 : « utilise ce qui est fait sur la branche mathématique »), ch.11 écrit de zéro ; question ouverte pour l'humain : ch.04, ch.07 et ch.11 portent ~11-14 notions en 8 sections (un chapitre du manuel chacun, gardés entiers) |
 | Sciences de l'informatique | physique / chimie | `223471` / `224471` | ❌ aucune | — | A1 |
 | Sciences de l'informatique | algorithmique, STI | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
-| Économie et gestion | gestion | `229464` | ❌ aucune | — | A1 |
+| Économie et gestion | gestion | `229464` | ✅ validée R-7 (2026-11-13) — 364 p., 29 sections, 4 substantiels corrigés | 0/29 chapitres | génération des 29 chapitres par tranches de 3 (`campagne` étape 4) ; missions d'examen : sujets et corrigés du Bac au Drive (PR #845) |
 | Économie et gestion | mathématiques | `222463` | ❌ aucune | — | A1 |
 | Économie et gestion | économie | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
 | Lettres | arabe | `201421` + `201422` | ❌ aucune | — | A1 |

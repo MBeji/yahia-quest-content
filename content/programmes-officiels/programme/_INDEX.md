@@ -132,7 +132,7 @@
 
 | statut | matière | profondeur | sources (couverture calculée) | R-7 | maj | notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| 🚧 partielle — ⛔ génération interdite | **gestion** | first-pass | `229464` 2 % (manque p.1–2, p.10–364) | — | 2026-11-13 (claude/campagne-wqgvi1) | A1 (2026-11-13) : sujet gestion-bac-eco-gestion, 29 chapitres codifiés d'après le sommaire du manuel 229464 (364 p., français, couche texte propre — barreau L1). Aucun guide enseignant au corpus : le manuel élève fait référence. Programme applicable depuis septembre 2007 (avant-propos). Corps du manuel non encore lu. |
+| ✅ validée R-7 | **gestion** | generation | `229464` 100 % | 2026-11-13 (integrale, CONFORME. Lecture L1 (pdftotext -layout) de toutes les pages par 9 lecteurs sonnet avec sondage image 8-45 % selon la tranche ; R-7 par 4 auditeurs opus en contexte vierge : controle mecanique de 364/364 pages contre la couche texte (nombres, encadres, formules, totaux recomptes) et sondage image de 20-28 % des pages (94 sur 364 environ), 4 constats SUBSTANTIELS au total (un chiffre fantome issu d'un objet masque de la couche texte p.53-55, un total DEPS imprime incoherent p.50 non signale, une logique canal B/C p.174, une annuite manquante p.266) et une quarantaine de constats de forme, tous corriges ; taux < 1 substantiel pour 10 pages dans toutes les sections. Aucun corrige d'exercice dans le manuel : les recalculs sont etiquetes calcul redacteur. Anomalies imprimees conservees et signalees. Reserve : le manuel applique le programme de 2007, aucun guide enseignant au corpus., 46 corr.) | 2026-11-13 (claude/campagne-wqgvi1) | Manuel 229464 (364 p., francais, couche texte propre, barreau L1) lu integralement, transcrit en fiche (§8), rapports R-7 en §9. Chapitrage : 29 sections du manuel codifiees (manifest/bac-eco-gestion.json). Piege : la couche texte du PDF contient des objets masques ; un chiffre incongru doit etre verifie a l'image avant d'etre note comme imprime. Reserve de programme : le manuel date de 2007, aucun guide au corpus. |
 
 ## bac-info
 
@@ -198,4 +198,4 @@
 - **enrichissement** : 10 PDF
   - décisions en attente (`differee`) : `128703`, `128803`, `128903`, `228103`, `228233`, `228362`, `228363`, `228461`, `228462`
 
-**Totaux (calculés)** : 68 fiches suivies (37 partielle · 13 complete · 18 validee-r7) · 346 PDF au corpus · 122 œuvres principales restant à rattacher.
+**Totaux (calculés)** : 68 fiches suivies (36 partielle · 13 complete · 19 validee-r7) · 346 PDF au corpus · 122 œuvres principales restant à rattacher.
