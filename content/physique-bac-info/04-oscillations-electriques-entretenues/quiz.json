@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Oscillations électriques entretenues",
+  "questions": [
+    {
+      "prompt": "Un circuit RLC série libre voit son amplitude diminuer. Quel est le rôle d'un dispositif d'entretien inséré en série ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixer lui-même la fréquence des oscillations"
+        },
+        {
+          "id": "b",
+          "text": "Compenser l'énergie perdue par effet Joule"
+        },
+        {
+          "id": "c",
+          "text": "Recharger le condensateur à chaque période"
+        },
+        {
+          "id": "d",
+          "text": "Augmenter la résistance totale du circuit"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le dispositif d'entretien apporte à l'oscillateur l'énergie que la résistance dissipe par effet Joule, ce qui compense l'amortissement ✓. Il n'impose pas la fréquence, qui reste la fréquence propre. Il ne recharge pas le condensateur période après période, et augmenter la résistance totale accentuerait l'amortissement au lieu de le compenser.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un dipôle D à résistance négative (−R), avec R = 25 Ω, est parcouru par i = 40 mA, en convention récepteur. Quelle est sa tension u ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1,0 kV"
+        },
+        {
+          "id": "b",
+          "text": "−1,0 V"
+        },
+        {
+          "id": "c",
+          "text": "−0,63 V"
+        },
+        {
+          "id": "d",
+          "text": "+1,0 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "u = −R·i = −25 × 40·10⁻³ = −1,0 V ✓. Le résultat −1,0 kV vient de i = 40 prise en ampères au lieu de 40·10⁻³ A. La valeur −0,63 V correspond à 25/40, un quotient au lieu d'un produit, et +1,0 V oublie le signe moins, donc décrit un simple résistor.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "En régime linéaire, quelles propriétés caractérisent un amplificateur opérationnel idéal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ε = v⁺ − v⁻ = 0 ; i⁺ = i⁻ = 0"
+        },
+        {
+          "id": "b",
+          "text": "ε = v⁺ − v⁻ = 0 ; i⁺ = −i⁻ ≠ 0"
+        },
+        {
+          "id": "c",
+          "text": "ε = v⁺ − v⁻ ≠ 0 ; i⁺ = i⁻ = 0"
+        },
+        {
+          "id": "d",
+          "text": "v⁺ = v⁻ = 0 ; i⁺ = i⁻ = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En régime linéaire, les deux entrées sont au même potentiel (ε = 0) et aucun courant n'entre par elles (i⁺ = i⁻ = 0) ✓. Un courant d'entrée non nul n'est pas celui d'un A.O. idéal. ε ≠ 0 caractérise la saturation, non le régime linéaire. Enfin ε = 0 signifie v⁺ = v⁻, pas des potentiels nuls : leur valeur commune est quelconque.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le montage à A.O. du cours, R₁ relie E⁻ à la sortie S et R₂ relie S au point D. Quelle condition rend le dipôle AM équivalent à (−R′) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "R₁ = R′"
+        },
+        {
+          "id": "b",
+          "text": "R₁ = 2·R₂"
+        },
+        {
+          "id": "c",
+          "text": "R₁ = R₂"
+        },
+        {
+          "id": "d",
+          "text": "R₂ = R′"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le montage donne u = −(R₁/R₂)·R′·i : il vaut −R′·i seulement si R₁/R₂ = 1, donc R₁ = R₂ ✓. Imposer R₁ = R′ ou R₂ = R′ relie les résistors de réaction à R′, ce qui n'annule pas le rapport R₁/R₂. Avec R₁ = 2·R₂, le dipôle vaut −2·R′.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le montage à A.O. de la figure (idéal), R₁ = 2,0 kΩ, R₂ = 1,0 kΩ et R′ = 40 Ω. Le courant entrant en A est i = 10 mA. Quelle est la tension u = u_AM ?\n<svg viewBox=\"0 0 340 216\"><title>Montage à amplificateur opérationnel entre A et M : R₁ relie E⁻ à la sortie S, R₂ relie S au point D, D est relié à E⁺, R′ relie D à la masse M ; les courants i, i₁, i₂, i′ sont fléchés</title><polygon points=\"130,56 130,136 215,96\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"138.0\" y=\"77.0\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−</text><text x=\"138.0\" y=\"125.0\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+</text><text x=\"124.0\" y=\"88.0\" text-anchor=\"end\" font-size=\"9\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E⁻</text><text x=\"124.0\" y=\"114.0\" text-anchor=\"end\" font-size=\"9\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">E⁺</text><circle cx=\"40.0\" cy=\"72.0\" r=\"3.4\" fill=\"#0f172a\"/><text x=\"32.0\" y=\"66.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><circle cx=\"40.0\" cy=\"196.0\" r=\"3.4\" fill=\"#0f172a\"/><text x=\"32.0\" y=\"206.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><line x1=\"40.0\" y1=\"196.0\" x2=\"300.0\" y2=\"196.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"40.0\" y1=\"72.0\" x2=\"130.0\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52.0\" y1=\"72.0\" x2=\"92.0\" y2=\"72.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><polygon points=\"98.0,72.0 91.0,75.5 91.0,68.5\" fill=\"#0f6e56\"/><text x=\"75.0\" y=\"64.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i</text><line x1=\"54.0\" y1=\"60.0\" x2=\"54.0\" y2=\"60.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"16.0\" y1=\"190.0\" x2=\"16.0\" y2=\"84.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"16.0,78.0 19.5,85.0 12.5,85.0\" fill=\"#2563eb\"/><text x=\"12.0\" y=\"134.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u</text><line x1=\"130.0\" y1=\"120.0\" x2=\"80.0\" y2=\"120.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"80.0\" y1=\"120.0\" x2=\"80.0\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"80.0\" cy=\"156.0\" r=\"3.4\" fill=\"#0f172a\"/><text x=\"70.0\" y=\"152.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D</text><circle cx=\"90.0\" cy=\"72.0\" r=\"2.8\" fill=\"#0f172a\"/><line x1=\"90.0\" y1=\"72.0\" x2=\"90.0\" y2=\"28.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"90.0\" y1=\"28.0\" x2=\"150.0\" y2=\"28.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"150.0\" y=\"21.0\" width=\"40\" height=\"14\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"170.0\" y=\"16.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₁</text><line x1=\"190.0\" y1=\"28.0\" x2=\"262.0\" y2=\"28.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"262.0\" y1=\"28.0\" x2=\"262.0\" y2=\"96.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"215.0\" y1=\"96.0\" x2=\"262.0\" y2=\"96.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"262.0\" cy=\"96.0\" r=\"3.4\" fill=\"#0f172a\"/><text x=\"270.0\" y=\"92.0\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S</text><line x1=\"150.0\" y1=\"46.0\" x2=\"190.0\" y2=\"46.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><polygon points=\"196.0,46.0 189.0,49.5 189.0,42.5\" fill=\"#0f6e56\"/><text x=\"205.0\" y=\"50.0\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i₁</text><line x1=\"262.0\" y1=\"96.0\" x2=\"262.0\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"262.0\" y1=\"156.0\" x2=\"80.0\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"160.0\" y=\"149.0\" width=\"40\" height=\"14\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"180.0\" y=\"176.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₂</text><line x1=\"236.0\" y1=\"172.0\" x2=\"202.0\" y2=\"172.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><polygon points=\"196.0,172.0 203.0,168.5 203.0,175.5\" fill=\"#0f6e56\"/><text x=\"216.0\" y=\"184.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i₂</text><line x1=\"80.0\" y1=\"156.0\" x2=\"80.0\" y2=\"160.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"73.0\" y=\"160.0\" width=\"14\" height=\"26\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"96.0\" y=\"178.0\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R′</text><line x1=\"80.0\" y1=\"186.0\" x2=\"80.0\" y2=\"196.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"62.0\" y1=\"164.0\" x2=\"62.0\" y2=\"184.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\"/><polygon points=\"62.0,190.0 58.5,183.0 65.5,183.0\" fill=\"#0f6e56\"/><text x=\"54.0\" y=\"181.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">i′</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,80 V"
+        },
+        {
+          "id": "b",
+          "text": "−0,40 V"
+        },
+        {
+          "id": "c",
+          "text": "−0,20 V"
+        },
+        {
+          "id": "d",
+          "text": "+0,80 V"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a i₁ = i, puis i₂ = −(R₁/R₂)·i = −2i et i′ = i₂ : u = R′·i′ = 40 × (−2 × 10·10⁻³) = −0,80 V ✓. Prendre R₁ = R₂ donnerait −0,40 V. Inverser le rapport en R₂/R₁ donnerait −0,20 V, et le signe + oublie que le courant i′ est opposé à i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un circuit RLC série est fermé sur un dipôle (−R′) avec R₀ = 40 Ω, r = 15 Ω et R′ = 70 Ω. Que devient l'énergie totale E ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle diminue, car l'effet Joule l'emporte"
+        },
+        {
+          "id": "b",
+          "text": "Elle reste constante, car R′ compense R₀ + r"
+        },
+        {
+          "id": "c",
+          "text": "Elle augmente, car l'apport dépasse les pertes"
+        },
+        {
+          "id": "d",
+          "text": "Elle est nulle, car R_t est négative"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "R_t = R₀ + r − R′ = 40 + 15 − 70 = −15 Ω, donc dE/dt = −R_t·i² > 0 : l'énergie apportée dépasse l'énergie dissipée et E augmente ✓. Elle ne diminuerait que pour R′ < 55 Ω et resterait constante pour R′ = 55 Ω. Une résistance R_t négative ne rend pas l'énergie nulle : elle fait croître E.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un circuit RLC série de bobine L = 0,10 H et de condensateur C = 2,5 µF est entretenu par un dipôle (−R′) réglé juste au-dessus de R. Quelle est la période des oscillations quasi-sinusoïdales ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,10 ms"
+        },
+        {
+          "id": "b",
+          "text": "0,50 ms"
+        },
+        {
+          "id": "c",
+          "text": "1,6 ms"
+        },
+        {
+          "id": "d",
+          "text": "3,1 ms"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les oscillations entretenues ont la période propre : T = T₀ = 2π√(LC) = 2π√(0,10 × 2,5·10⁻⁶) = 2π × 5,0·10⁻⁴ ≈ 3,1 ms ✓. Oublier le facteur 2π donne 0,50 ms ; ne mettre que π donne 1,6 ms ; lire L = 0,10 mH au lieu de 0,10 H donne 0,10 ms.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un montage d'entretien donne des oscillations quasi-sinusoïdales de fréquence N pour R′ légèrement supérieure à R. On augmente R′ sans atteindre la distorsion. Comment évoluent N et l'amplitude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N inchangée, amplitude plus grande"
+        },
+        {
+          "id": "b",
+          "text": "N plus grande, amplitude inchangée"
+        },
+        {
+          "id": "c",
+          "text": "N plus petite, amplitude plus grande"
+        },
+        {
+          "id": "d",
+          "text": "N inchangée, amplitude inchangée"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fréquence reste la fréquence propre N₀ = 1/(2π√(LC)), qui ne dépend ni de R′ ni du dispositif ; en revanche l'amplitude augmente avec R′ ✓. Une fréquence qui varie avec R′ ferait de l'A.O. le maître du rythme, ce qu'il n'est pas. Une amplitude inchangée contredit l'observation : plus R′ est grande, plus l'apport d'énergie est grand.",
+      "difficulty": 2
+    }
+  ]
+}

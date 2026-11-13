@@ -1,0 +1,148 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Oscillations électriques entretenues",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle affirmation est juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'amplificateur opérationnel seul est un dipôle à résistance négative"
+        },
+        {
+          "id": "b",
+          "text": "Le montage à A.O. avec R₁ = R₂ se comporte comme un dipôle (−R′)"
+        },
+        {
+          "id": "c",
+          "text": "Un circuit LC réel oscille indéfiniment sans aucun entretien"
+        },
+        {
+          "id": "d",
+          "text": "Le dispositif d'entretien impose sa fréquence au circuit RLC"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le dipôle (−R′) est le montage complet de l'A.O. avec R₁ = R₂ et R′, en régime linéaire ✓. L'A.O. seul n'a pas cette propriété. Un circuit LC réel a toujours une petite résistance : il s'amortit sans entretien. Enfin le dispositif d'entretien compense les pertes mais n'impose pas la fréquence.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Un circuit RLC série est entretenu par un dipôle (−R′) et donne des oscillations quasi-sinusoïdales. Quelles affirmations sont justes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leur fréquence est égale à la fréquence propre de l'oscillateur."
+        },
+        {
+          "id": "b",
+          "text": "Leur amplitude augmente avec la valeur de R′."
+        },
+        {
+          "id": "c",
+          "text": "Elles n'apparaissent que si le condensateur est chargé au préalable."
+        },
+        {
+          "id": "d",
+          "text": "Elles existent pour toute valeur de R′ inférieure à R."
+        },
+        {
+          "id": "e",
+          "text": "Leur période dépend de la valeur de R′."
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "Justes : la fréquence est N₀ = 1/(2π√(LC)) ; l'amplitude croît avec R′ tant que l'A.O. ne sature pas. Fausses : l'amorçage se fait sans charge préalable du condensateur ; pour R′ < R, R_t > 0 et les oscillations sont amorties ; la période est T₀ et ne dépend pas de R′.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un circuit RLC entretenu a un condensateur de capacité C = 2,5 µF ; on mesure T = 4,0 ms. Calculer l'inductance L de la bobine, en H, arrondie au centième.",
+      "answerKey": {
+        "value": 0.162,
+        "tolerance": 0.006,
+        "unit": "H"
+      },
+      "explanation": "Comme T = T₀ = 2π√(LC), L = T²/(4π²·C) = (4,0·10⁻³)²/(4π² × 2,5·10⁻⁶) ≈ 0,162 H, soit 0,16 H.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur l'enregistrement ci-dessous (5 ms/div), quelle est la durée approximative de l'amorçage ?\n<svg viewBox=\"0 0 340 212\"><title>Oscillogramme de u₀ (5 ms/div ; 0,5 V/div) : l'amplitude croît puis reste constante</title><line x1=\"52.0\" y1=\"22.0\" x2=\"52.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"77.0\" y1=\"22.0\" x2=\"77.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"102.0\" y1=\"22.0\" x2=\"102.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"127.0\" y1=\"22.0\" x2=\"127.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"152.0\" y1=\"22.0\" x2=\"152.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"177.0\" y1=\"22.0\" x2=\"177.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"202.0\" y1=\"22.0\" x2=\"202.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"227.0\" y1=\"22.0\" x2=\"227.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"252.0\" y1=\"22.0\" x2=\"252.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"277.0\" y1=\"22.0\" x2=\"277.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"302.0\" y1=\"22.0\" x2=\"302.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"172.0\" x2=\"302.0\" y2=\"172.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"147.0\" x2=\"302.0\" y2=\"147.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"122.0\" x2=\"302.0\" y2=\"122.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"97.0\" x2=\"302.0\" y2=\"97.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"72.0\" x2=\"302.0\" y2=\"72.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"47.0\" x2=\"302.0\" y2=\"47.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"22.0\" x2=\"302.0\" y2=\"22.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"176.0\" x2=\"52.0\" y2=\"16.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52.0\" y1=\"97.0\" x2=\"308.0\" y2=\"97.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"312.0,97.0 305.0,100.5 305.0,93.5\" fill=\"#0f172a\"/><polygon points=\"52.0,12.0 55.5,19.0 48.5,19.0\" fill=\"#0f172a\"/><text x=\"52.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"77.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"102.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"127.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><text x=\"152.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"177.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><text x=\"202.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><text x=\"227.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">7</text><text x=\"252.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><text x=\"277.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">9</text><text x=\"302.0\" y=\"186.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"46.0\" y=\"175.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−3</text><text x=\"46.0\" y=\"150.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−2</text><text x=\"46.0\" y=\"125.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−1</text><text x=\"46.0\" y=\"100.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"46.0\" y=\"75.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"46.0\" y=\"50.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"46.0\" y=\"25.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><text x=\"314.0\" y=\"198.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (div)</text><text x=\"56.0\" y=\"10.0\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u₀ (div)</text><polyline points=\"52.0,97.0 52.4,96.9 52.7,96.8 53.1,96.7 53.4,96.6 53.8,96.4 54.1,96.3 54.5,96.2 54.9,96.1 55.2,96.0 55.6,95.9 55.9,95.8 56.3,95.7 56.6,95.6 57.0,95.6 57.4,95.5 57.7,95.4 58.1,95.4 58.4,95.4 58.8,95.4 59.1,95.4 59.5,95.4 59.9,95.4 60.2,95.4 60.6,95.5 60.9,95.6 61.3,95.6 61.6,95.7 62.0,95.9 62.4,96.0 62.7,96.1 63.1,96.3 63.4,96.4 63.8,96.6 64.1,96.8 64.5,97.0 64.9,97.2 65.2,97.4 65.6,97.6 65.9,97.8 66.3,98.0 66.6,98.3 67.0,98.5 67.4,98.7 67.7,98.9 68.1,99.1 68.4,99.2 68.8,99.4 69.1,99.5 69.5,99.7 69.9,99.8 70.2,99.9 70.6,100.0 70.9,100.0 71.3,100.1 71.6,100.1 72.0,100.0 72.4,100.0 72.7,99.9 73.1,99.8 73.4,99.7 73.8,99.5 74.1,99.3 74.5,99.1 74.9,98.9 75.2,98.6 75.6,98.3 75.9,98.0 76.3,97.7 76.6,97.4 77.0,97.0 77.4,96.6 77.7,96.2 78.1,95.8 78.4,95.5 78.8,95.1 79.1,94.7 79.5,94.3 79.9,93.9 80.2,93.5 80.6,93.2 80.9,92.8 81.3,92.5 81.6,92.2 82.0,92.0 82.4,91.8 82.7,91.6 83.1,91.4 83.4,91.3 83.8,91.3 84.1,91.3 84.5,91.3 84.9,91.4 85.2,91.6 85.6,91.7 85.9,92.0 86.3,92.3 86.6,92.6 87.0,93.0 87.4,93.5 87.7,94.0 88.1,94.5 88.4,95.1 88.8,95.7 89.1,96.3 89.5,97.0 89.9,97.7 90.2,98.4 90.6,99.2 90.9,99.9 91.3,100.6 91.6,101.4 92.0,102.1 92.4,102.8 92.7,103.5 93.1,104.2 93.4,104.8 93.8,105.4 94.1,105.9 94.5,106.4 94.9,106.8 95.2,107.1 95.6,107.4 95.9,107.6 96.3,107.7 96.6,107.7 97.0,107.6 97.4,107.4 97.7,107.2 98.1,106.8 98.4,106.4 98.8,105.8 99.1,105.2 99.5,104.4 99.9,103.6 100.2,102.7 100.6,101.7 100.9,100.6 101.3,99.5 101.6,98.3 102.0,97.0 102.4,95.7 102.7,94.3 103.1,93.0 103.4,91.6 103.8,90.2 104.1,88.8 104.5,87.5 104.9,86.1 105.2,84.8 105.6,83.6 105.9,82.4 106.3,81.4 106.6,80.4 107.0,79.5 107.4,78.7 107.7,78.1 108.1,77.6 108.4,77.3 108.8,77.1 109.1,77.0 109.5,77.2 109.9,77.5 110.2,78.0 110.6,78.6 110.9,79.5 111.3,80.5 111.6,81.7 112.0,83.1 112.4,84.7 112.7,86.4 113.1,88.2 113.4,90.3 113.8,92.4 114.1,94.6 114.5,97.0 114.9,99.4 115.2,102.0 115.6,104.5 115.9,107.1 116.3,109.7 116.6,112.3 117.0,114.8 117.4,117.3 117.7,119.7 118.1,122.0 118.4,124.2 118.8,126.2 119.1,128.0 119.5,129.7 119.9,131.1 120.2,132.3 120.6,133.2 120.9,133.9 121.3,134.2 121.6,134.3 122.0,134.0 122.4,133.5 122.7,132.5 123.1,131.3 123.4,129.7 123.8,127.8 124.1,125.5 124.5,122.9 124.9,120.0 125.2,116.8 125.6,113.4 125.9,109.6 126.3,105.6 126.6,101.4 127.0,97.0 127.4,92.5 127.7,88.1 128.1,83.7 128.4,79.4 128.8,75.3 129.1,71.4 129.5,67.6 129.9,64.1 130.2,60.9 130.6,57.9 130.9,55.3 131.3,53.0 131.6,51.0 132.0,49.4 132.4,48.3 132.7,47.5 133.1,47.1 133.4,47.1 133.8,47.5 134.1,48.3 134.5,49.4 134.9,51.0 135.2,53.0 135.6,55.3 135.9,57.9 136.3,60.9 136.6,64.1 137.0,67.6 137.4,71.4 137.7,75.3 138.1,79.4 138.4,83.7 138.8,88.1 139.1,92.5 139.5,97.0 139.9,101.5 140.2,105.9 140.6,110.3 140.9,114.6 141.3,118.7 141.6,122.6 142.0,126.4 142.4,129.9 142.7,133.1 143.1,136.1 143.4,138.7 143.8,141.0 144.1,143.0 144.5,144.6 144.9,145.7 145.2,146.5 145.6,146.9 145.9,146.9 146.3,146.5 146.6,145.7 147.0,144.6 147.4,143.0 147.7,141.0 148.1,138.7 148.4,136.1 148.8,133.1 149.1,129.9 149.5,126.4 149.9,122.6 150.2,118.7 150.6,114.6 150.9,110.3 151.3,105.9 151.6,101.5 152.0,97.0 152.4,92.5 152.7,88.1 153.1,83.7 153.4,79.4 153.8,75.3 154.1,71.4 154.5,67.6 154.9,64.1 155.2,60.9 155.6,57.9 155.9,55.3 156.3,53.0 156.6,51.0 157.0,49.4 157.4,48.3 157.7,47.5 158.1,47.1 158.4,47.1 158.8,47.5 159.1,48.3 159.5,49.4 159.9,51.0 160.2,53.0 160.6,55.3 160.9,57.9 161.3,60.9 161.6,64.1 162.0,67.6 162.4,71.4 162.7,75.3 163.1,79.4 163.4,83.7 163.8,88.1 164.1,92.5 164.5,97.0 164.9,101.5 165.2,105.9 165.6,110.3 165.9,114.6 166.3,118.7 166.6,122.6 167.0,126.4 167.4,129.9 167.7,133.1 168.1,136.1 168.4,138.7 168.8,141.0 169.1,143.0 169.5,144.6 169.9,145.7 170.2,146.5 170.6,146.9 170.9,146.9 171.3,146.5 171.6,145.7 172.0,144.6 172.4,143.0 172.7,141.0 173.1,138.7 173.4,136.1 173.8,133.1 174.1,129.9 174.5,126.4 174.9,122.6 175.2,118.7 175.6,114.6 175.9,110.3 176.3,105.9 176.6,101.5 177.0,97.0 177.4,92.5 177.7,88.1 178.1,83.7 178.4,79.4 178.8,75.3 179.1,71.4 179.5,67.6 179.9,64.1 180.2,60.9 180.6,57.9 180.9,55.3 181.3,53.0 181.6,51.0 182.0,49.4 182.4,48.3 182.7,47.5 183.1,47.1 183.4,47.1 183.8,47.5 184.1,48.3 184.5,49.4 184.9,51.0 185.2,53.0 185.6,55.3 185.9,57.9 186.3,60.9 186.6,64.1 187.0,67.6 187.4,71.4 187.7,75.3 188.1,79.4 188.4,83.7 188.8,88.1 189.1,92.5 189.5,97.0 189.9,101.5 190.2,105.9 190.6,110.3 190.9,114.6 191.3,118.7 191.6,122.6 192.0,126.4 192.4,129.9 192.7,133.1 193.1,136.1 193.4,138.7 193.8,141.0 194.1,143.0 194.5,144.6 194.9,145.7 195.2,146.5 195.6,146.9 195.9,146.9 196.3,146.5 196.6,145.7 197.0,144.6 197.4,143.0 197.7,141.0 198.1,138.7 198.4,136.1 198.8,133.1 199.1,129.9 199.5,126.4 199.9,122.6 200.2,118.7 200.6,114.6 200.9,110.3 201.3,105.9 201.6,101.5 202.0,97.0 202.4,92.5 202.7,88.1 203.1,83.7 203.4,79.4 203.8,75.3 204.1,71.4 204.5,67.6 204.9,64.1 205.2,60.9 205.6,57.9 205.9,55.3 206.3,53.0 206.6,51.0 207.0,49.4 207.4,48.3 207.7,47.5 208.1,47.1 208.4,47.1 208.8,47.5 209.1,48.3 209.5,49.4 209.9,51.0 210.2,53.0 210.6,55.3 210.9,57.9 211.3,60.9 211.6,64.1 212.0,67.6 212.4,71.4 212.7,75.3 213.1,79.4 213.4,83.7 213.8,88.1 214.1,92.5 214.5,97.0 214.9,101.5 215.2,105.9 215.6,110.3 215.9,114.6 216.3,118.7 216.6,122.6 217.0,126.4 217.4,129.9 217.7,133.1 218.1,136.1 218.4,138.7 218.8,141.0 219.1,143.0 219.5,144.6 219.9,145.7 220.2,146.5 220.6,146.9 220.9,146.9 221.3,146.5 221.6,145.7 222.0,144.6 222.4,143.0 222.7,141.0 223.1,138.7 223.4,136.1 223.8,133.1 224.1,129.9 224.5,126.4 224.9,122.6 225.2,118.7 225.6,114.6 225.9,110.3 226.3,105.9 226.6,101.5 227.0,97.0 227.4,92.5 227.7,88.1 228.1,83.7 228.4,79.4 228.8,75.3 229.1,71.4 229.5,67.6 229.9,64.1 230.2,60.9 230.6,57.9 230.9,55.3 231.3,53.0 231.6,51.0 232.0,49.4 232.4,48.3 232.7,47.5 233.1,47.1 233.4,47.1 233.8,47.5 234.1,48.3 234.5,49.4 234.9,51.0 235.2,53.0 235.6,55.3 235.9,57.9 236.3,60.9 236.6,64.1 237.0,67.6 237.4,71.4 237.7,75.3 238.1,79.4 238.4,83.7 238.8,88.1 239.1,92.5 239.5,97.0 239.9,101.5 240.2,105.9 240.6,110.3 240.9,114.6 241.3,118.7 241.6,122.6 242.0,126.4 242.4,129.9 242.7,133.1 243.1,136.1 243.4,138.7 243.8,141.0 244.1,143.0 244.5,144.6 244.9,145.7 245.2,146.5 245.6,146.9 245.9,146.9 246.3,146.5 246.6,145.7 247.0,144.6 247.4,143.0 247.7,141.0 248.1,138.7 248.4,136.1 248.8,133.1 249.1,129.9 249.5,126.4 249.9,122.6 250.2,118.7 250.6,114.6 250.9,110.3 251.3,105.9 251.6,101.5 252.0,97.0 252.4,92.5 252.7,88.1 253.1,83.7 253.4,79.4 253.8,75.3 254.1,71.4 254.5,67.6 254.9,64.1 255.2,60.9 255.6,57.9 255.9,55.3 256.3,53.0 256.6,51.0 257.0,49.4 257.4,48.3 257.7,47.5 258.1,47.1 258.4,47.1 258.8,47.5 259.1,48.3 259.5,49.4 259.9,51.0 260.2,53.0 260.6,55.3 260.9,57.9 261.3,60.9 261.6,64.1 262.0,67.6 262.4,71.4 262.7,75.3 263.1,79.4 263.4,83.7 263.8,88.1 264.1,92.5 264.5,97.0 264.9,101.5 265.2,105.9 265.6,110.3 265.9,114.6 266.3,118.7 266.6,122.6 267.0,126.4 267.4,129.9 267.7,133.1 268.1,136.1 268.4,138.7 268.8,141.0 269.1,143.0 269.5,144.6 269.9,145.7 270.2,146.5 270.6,146.9 270.9,146.9 271.3,146.5 271.6,145.7 272.0,144.6 272.4,143.0 272.7,141.0 273.1,138.7 273.4,136.1 273.8,133.1 274.1,129.9 274.5,126.4 274.9,122.6 275.2,118.7 275.6,114.6 275.9,110.3 276.3,105.9 276.6,101.5 277.0,97.0 277.4,92.5 277.7,88.1 278.1,83.7 278.4,79.4 278.8,75.3 279.1,71.4 279.5,67.6 279.9,64.1 280.2,60.9 280.6,57.9 280.9,55.3 281.3,53.0 281.6,51.0 282.0,49.4 282.4,48.3 282.7,47.5 283.1,47.1 283.4,47.1 283.8,47.5 284.1,48.3 284.5,49.4 284.9,51.0 285.2,53.0 285.6,55.3 285.9,57.9 286.3,60.9 286.6,64.1 287.0,67.6 287.4,71.4 287.7,75.3 288.1,79.4 288.4,83.7 288.8,88.1 289.1,92.5 289.5,97.0 289.9,101.5 290.2,105.9 290.6,110.3 290.9,114.6 291.3,118.7 291.6,122.6 292.0,126.4 292.4,129.9 292.7,133.1 293.1,136.1 293.4,138.7 293.8,141.0 294.1,143.0 294.5,144.6 294.9,145.7 295.2,146.5 295.6,146.9 295.9,146.9 296.3,146.5 296.6,145.7 297.0,144.6 297.4,143.0 297.7,141.0 298.1,138.7 298.4,136.1 298.8,133.1 299.1,129.9 299.5,126.4 299.9,122.6 300.2,118.7 300.6,114.6 300.9,110.3 301.3,105.9 301.6,101.5 302.0,97.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 ms"
+        },
+        {
+          "id": "b",
+          "text": "5 ms"
+        },
+        {
+          "id": "c",
+          "text": "15 ms"
+        },
+        {
+          "id": "d",
+          "text": "50 ms"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'amorçage est la phase d'amplitude croissante : elle dure 3 divisions, soit 3 × 5 = 15 ms, après quoi l'amplitude reste constante ✓. La valeur 3 ms lit des divisions comme des millisecondes ; 5 ms est la période ; 50 ms est la durée de tout l'enregistrement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'équation différentielle de la charge d'un circuit RLC série (R₀, bobine (L ; r), C) fermé sur un dipôle (−R′) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L·d²q/dt² + (R₀ + r − R′)·dq/dt + q/C = 0"
+        },
+        {
+          "id": "b",
+          "text": "L·d²q/dt² + (R₀ + r + R′)·dq/dt + q/C = 0"
+        },
+        {
+          "id": "c",
+          "text": "L·d²q/dt² + (R′ − R₀ − r)·dq/dt + q/C = 0"
+        },
+        {
+          "id": "d",
+          "text": "L·d²q/dt² + (R₀ + r)·dq/dt + q/C = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi des mailles donne q/C + L·di/dt + (R₀ + r)·i − R′·i = 0 ; avec i = dq/dt, cela s'écrit L·d²q/dt² + (R₀ + r − R′)·dq/dt + q/C = 0 ✓. Ajouter R′ la traiterait comme un résistor ordinaire ; (R′ − R₀ − r) inverse le signe de R_t ; (R₀ + r) seule est l'équation du circuit libre, sans dipôle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un générateur de tension u = k·i remplace le dipôle D dans un circuit RLC de résistance totale R = 20 Ω. Quelle condition sur k permet d'éviter que l'énergie totale diminue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "k ≤ −20 Ω"
+        },
+        {
+          "id": "b",
+          "text": "k ≥ −20 Ω"
+        },
+        {
+          "id": "c",
+          "text": "k ≤ +20 Ω"
+        },
+        {
+          "id": "d",
+          "text": "k ≥ +20 Ω"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici R_t = R + k et dE/dt = −R_t·i² : pour que E ne diminue pas, il faut R_t ≤ 0, donc k ≤ −20 Ω ✓. Avec k ≥ −20 Ω, R_t reste positive ou nulle seulement si k = −20 Ω, et E diminue sinon. Un k positif se comporte comme un résistor supplémentaire et amortit davantage.",
+      "difficulty": 3
+    }
+  ]
+}
