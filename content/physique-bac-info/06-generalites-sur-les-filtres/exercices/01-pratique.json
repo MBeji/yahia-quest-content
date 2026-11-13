@@ -103,7 +103,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Une tension utile de fréquence inférieure à 10 Hz est perturbée par le secteur à 50 Hz. Que doit vérifier le filtre qu'on ajoute ?",
+      "prompt": "Un signal utile occupe les fréquences de 1 kHz à 5 kHz et il est perturbé par le secteur à 50 Hz. Que doit vérifier le filtre qu'on ajoute ?",
       "options": [
         {
           "id": "a",
@@ -115,11 +115,11 @@
         },
         {
           "id": "c",
-          "text": "Il modifie la fréquence du secteur pour l'écarter du signal"
+          "text": "Il ramène le secteur à une fréquence supérieure à 5 kHz"
         },
         {
           "id": "d",
-          "text": "Sa bande passante contient les fréquences utiles, pas 50 Hz"
+          "text": "Sa bande passante contient 1 kHz à 5 kHz, mais pas 50 Hz"
         }
       ],
       "correctOption": "d",
@@ -127,27 +127,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Quels gains correspondent à une transmittance T = 0,5 puis à T = 2 ? (log 2 = 0,301)",
+      "prompt": "Quels gains correspondent à une transmittance T = 0,2 puis à T = 5 ? (log 2 = 0,301)",
       "options": [
         {
           "id": "a",
-          "text": "−6 dB puis +6 dB"
+          "text": "−14 dB puis +14 dB"
         },
         {
           "id": "b",
-          "text": "+6 dB puis −6 dB"
+          "text": "+14 dB puis −14 dB"
         },
         {
           "id": "c",
-          "text": "−3 dB puis +3 dB"
+          "text": "−7 dB puis +7 dB"
         },
         {
           "id": "d",
-          "text": "−0,3 dB puis +0,3 dB"
+          "text": "−0,7 dB puis +0,7 dB"
         }
       ],
       "correctOption": "a",
-      "explanation": "G(0,5) = 20 log 0,5 = −20 × 0,301 ≈ −6 dB (T < 1, atténuation) et G(2) = 20 × 0,301 ≈ +6 dB (T > 1, amplification) ✓. Les gains de signes inversés renversent atténuation et amplification, −3 dB et +3 dB viennent d'un facteur 10 au lieu de 20, et ±0,3 dB oublient le facteur 20.",
+      "explanation": "G(0,2) = 20 log(2/10) = 20 × (0,301 − 1) ≈ −14 dB (T < 1, atténuation) et G(5) = 20 log(10/2) = 20 × (1 − 0,301) ≈ +14 dB (T > 1, amplification) ✓. Les gains de signes inversés renversent atténuation et amplification, ±7 dB viennent d'un facteur 10 au lieu de 20, et ±0,7 dB oublient le facteur 20.",
       "difficulty": 2
     }
   ]

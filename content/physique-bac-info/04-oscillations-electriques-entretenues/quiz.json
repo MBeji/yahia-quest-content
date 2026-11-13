@@ -122,27 +122,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un circuit RLC série est fermé sur un dipôle (−R′) avec R₀ = 40 Ω, r = 15 Ω et R′ = 70 Ω. Que devient l'énergie totale E ?",
+      "prompt": "Un circuit RLC série est fermé sur un dipôle (−R′) avec R₀ = 40 Ω, r = 15 Ω et R′ = 70 Ω. Juste après la fermeture du circuit, que devient l'énergie totale E ?",
       "options": [
         {
           "id": "a",
-          "text": "Elle diminue, car l'effet Joule l'emporte sur l'apport"
+          "text": "Elle diminue, car l'effet Joule l'emporte sur l'énergie apportée"
         },
         {
           "id": "b",
-          "text": "Elle reste constante, car R′ compense exactement R₀ + r"
+          "text": "Elle reste constante, car R′ compense exactement R₀ + r dans R_t"
         },
         {
           "id": "c",
-          "text": "Elle augmente, car l'apport dépasse les pertes"
+          "text": "Elle augmente, car l'apport dépasse les pertes par effet Joule"
         },
         {
           "id": "d",
-          "text": "Elle est nulle, car la résistance R_t est négative"
+          "text": "Elle diminue, car R′ s'ajoute à R₀ + r comme le ferait un résistor"
         }
       ],
       "correctOption": "c",
-      "explanation": "R_t = R₀ + r − R′ = 40 + 15 − 70 = −15 Ω, donc dE/dt = −R_t·i² > 0 : l'énergie apportée dépasse l'énergie dissipée et E augmente ✓. Elle ne diminuerait que pour R′ < 55 Ω et resterait constante pour R′ = 55 Ω. Une résistance R_t négative ne rend pas l'énergie nulle : elle fait croître E.",
+      "explanation": "R_t = R₀ + r − R′ = 40 + 15 − 70 = −15 Ω, donc dE/dt = −R_t·i² > 0 : l'énergie apportée dépasse l'énergie dissipée et E augmente (amorçage) ✓. Elle ne diminuerait que pour R′ < 55 Ω et resterait constante pour R′ = 55 Ω. Additionner R′ à R₀ + r traiterait le dipôle comme un résistor, qui dissipe au lieu d'apporter de l'énergie.",
       "difficulty": 2
     },
     {

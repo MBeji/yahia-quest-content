@@ -2,51 +2,51 @@
   "title": "Test de compréhension ⭐ : Exemples de filtres",
   "questions": [
     {
-      "prompt": "Un filtre est alimenté par une tension sinusoïdale d'amplitude U_Em et délivre en sortie une tension d'amplitude U_Sm. Quelle expression définit sa transmittance T ?",
+      "prompt": "Quel critère donne l'ordre d'un filtre ?",
       "options": [
         {
           "id": "a",
-          "text": "U_Sm / U_Em"
+          "text": "La plus haute dérivée de u_S"
         },
         {
           "id": "b",
-          "text": "U_Em / U_Sm"
+          "text": "Le nombre de composants"
         },
         {
           "id": "c",
-          "text": "20 log (U_Sm / U_Em)"
+          "text": "Le nombre de fréquences de coupure"
         },
         {
           "id": "d",
-          "text": "U_Sm − U_Em"
+          "text": "La présence d'un A.O."
         }
       ],
       "correctOption": "a",
-      "explanation": "La transmittance est le rapport sans unité de l'amplitude de sortie à l'amplitude d'entrée : T = U_Sm/U_Em ✓. Le rapport inverse donnerait une valeur supérieure à 1 pour un filtre qui atténue. L'expression 20 log (U_Sm/U_Em) est le gain en décibels, pas la transmittance. Une différence de tensions n'est pas un rapport.",
+      "explanation": "L'ordre se lit dans l'équation différentielle : c'est l'ordre de la plus haute dérivée de u_S, 1 pour les filtres RC, CR et le passe-bas actif, 2 pour le passe-bande RLC ✓. Compter les composants donnerait 3 pour le RLC, qui est du second ordre. Le passe-bande a deux coupures, mais ce n'est pas ce qui fixe l'ordre. La présence d'un A.O. distingue un filtre actif d'un filtre passif, pas son ordre.",
       "difficulty": 1
     },
     {
-      "prompt": "Un filtre passe-bas a un gain maximal G₀ = 0 dB. Quelle valeur du gain G correspond à sa fréquence de coupure ?",
+      "prompt": "Un passe-bas RC et un passe-haut CR sont réalisés avec les mêmes R et C. Comment se comparent la coupure haute N_h du premier et la coupure basse N_b du second ?",
       "options": [
         {
           "id": "a",
-          "text": "−1 dB"
+          "text": "N_b = N_h/√2"
         },
         {
           "id": "b",
-          "text": "−3 dB"
+          "text": "N_b = N_h"
         },
         {
           "id": "c",
-          "text": "−6 dB"
+          "text": "N_b = √2·N_h"
         },
         {
           "id": "d",
-          "text": "−20 dB"
+          "text": "N_b = 2·N_h"
         }
       ],
       "correctOption": "b",
-      "explanation": "La coupure est définie par G = G₀ − 3 dB ; avec G₀ = 0 dB, elle se trouve à G = −3 dB, soit T = 1/√2 ✓. Les valeurs −6 dB et −20 dB sont des pertes de gain d'une octave et d'une décade aux hautes fréquences, pas le critère de coupure. La valeur −1 dB ne correspond à aucune définition du cours.",
+      "explanation": "Les deux coupures valent 1/(2πRC) : avec les mêmes composants, N_b = N_h ✓, et les deux courbes de gain se croisent à −3 dB à cette fréquence. Le facteur √2 concerne les amplitudes à la coupure, pas les fréquences. Un facteur 2 est un écart d'une octave, sans lien avec la permutation de R et C.",
       "difficulty": 1
     },
     {
@@ -74,27 +74,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Un passe-bas RC est réalisé avec R = 1,0 kΩ et C = 0,10 µF. Quelle est sa fréquence de coupure N_h ?",
+      "prompt": "Un passe-bas RC est réalisé avec R = 2,2 kΩ et C = 47 nF. Quelle est sa fréquence de coupure N_h ?",
       "options": [
         {
           "id": "a",
-          "text": "63 kHz"
+          "text": "61 kHz"
         },
         {
           "id": "b",
-          "text": "10 kHz"
+          "text": "9,7 kHz"
         },
         {
           "id": "c",
-          "text": "1,6 kHz"
+          "text": "1,5 kHz"
         },
         {
           "id": "d",
-          "text": "0,16 kHz"
+          "text": "0,15 kHz"
         }
       ],
       "correctOption": "c",
-      "explanation": "N_h = 1/(2πRC) = 1/(2π × 1,0·10³ × 0,10·10⁻⁶) = 1/(6,28·10⁻⁴) ≈ 1,6 kHz ✓. La valeur 10 kHz oublie le facteur 2π. La valeur 63 kHz utilise 2π/(RC) au lieu de 1/(2πRC). La valeur 0,16 kHz vient d'une capacité prise égale à 1 µF.",
+      "explanation": "N_h = 1/(2πRC) = 1/(2π × 2,2·10³ × 47·10⁻⁹) = 1/(6,50·10⁻⁴) ≈ 1,5 kHz ✓. La valeur 9,7 kHz oublie le facteur 2π. La valeur 61 kHz utilise 2π/(RC) au lieu de 1/(2πRC). La valeur 0,15 kHz vient d'une capacité prise égale à 0,47 µF.",
       "difficulty": 1
     },
     {
@@ -166,7 +166,7 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "Aux hautes fréquences, la courbe tend vers une droite de pente −20 dB par décade : multiplier N par 10 retire 20 dB ✓. La valeur −6 dB est la pente par octave, c'est-à-dire pour N multipliée par 2. La valeur −3 dB est le niveau de la coupure. La valeur −40 dB serait la pente d'un filtre du second ordre, hors du cours.",
+      "explanation": "Aux hautes fréquences, la courbe tend vers une droite de pente −20 dB par décade : multiplier N par 10 retire 20 dB ✓. La valeur −6 dB est la pente par octave, c'est-à-dire pour N multipliée par 2. La valeur −3 dB est le niveau de la coupure. La valeur −40 dB est le double de la pente d'un filtre du premier ordre : aucun filtre du chapitre n'a cette pente.",
       "difficulty": 2
     },
     {

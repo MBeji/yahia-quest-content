@@ -18,11 +18,11 @@
         },
         {
           "id": "d",
-          "text": "La valeur efficace"
+          "text": "La valeur à l'instant t = 0"
         }
       ],
       "correctOption": "b",
-      "explanation": "Un filtre trie les signaux selon leur fréquence mais ne la modifie pas : u_S(t) = U_Sm sin(2πNt + φ) a la même fréquence N que u_E ✓. L'amplitude U_Sm, la phase initiale φ et la valeur efficace U_S = U_Sm/√2 dépendent de N, donc changent d'un réglage à l'autre.",
+      "explanation": "Un filtre trie les signaux selon leur fréquence mais ne la modifie pas : u_S(t) = U_Sm sin(2πNt + φ) a la même fréquence N que u_E ✓. L'amplitude U_Sm et la phase initiale φ dépendent de N ; la valeur de u_S à l'instant t = 0 vaut U_Sm sin φ, elle change donc aussi d'un réglage à l'autre.",
       "difficulty": 1
     },
     {
@@ -62,15 +62,15 @@
         },
         {
           "id": "c",
-          "text": "1,33"
+          "text": "1,0"
         },
         {
           "id": "d",
-          "text": "12"
+          "text": "1,33"
         }
       ],
       "correctOption": "b",
-      "explanation": "T = U_Sm/U_Em = 3,0/4,0 = 0,75 ✓, sans unité : le signal est atténué (T < 1). 0,25 est l'écart (U_Em − U_Sm)/U_Em ; 1,33 inverse le rapport ; 12 est le produit des deux amplitudes.",
+      "explanation": "T = U_Sm/U_Em = 3,0/4,0 = 0,75 ✓, sans unité : le signal est atténué (T < 1). 0,25 est l'écart relatif (U_Em − U_Sm)/U_Em ; 1,0 est la différence des amplitudes (en volts), pas un rapport ; 1,33 inverse le rapport.",
       "difficulty": 1
     },
     {
@@ -122,27 +122,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Le gain maximal d'un filtre est G₀ = 8 dB. Quel niveau de gain délimite sa bande passante à −3 dB ?",
+      "prompt": "Le gain maximal d'un filtre est G₀ = 15 dB. Quel niveau de gain délimite sa bande passante à −3 dB ?",
       "options": [
         {
           "id": "a",
-          "text": "5 dB"
+          "text": "12 dB"
         },
         {
           "id": "b",
-          "text": "5,7 dB"
+          "text": "18 dB"
         },
         {
           "id": "c",
-          "text": "11 dB"
+          "text": "−3 dB"
         },
         {
           "id": "d",
-          "text": "−3 dB"
+          "text": "10,6 dB"
         }
       ],
       "correctOption": "a",
-      "explanation": "La bande passante est l'ensemble des fréquences où G ≥ G₀ − 3 dB = 8 − 3 = 5 dB ✓. −3 dB n'est le niveau de coupure que si G₀ = 0 ; 5,7 dB applique à G₀ le facteur 1/√2 qui s'applique à T ; 11 dB ajoute 3 dB au lieu de les retirer.",
+      "explanation": "La bande passante est l'ensemble des fréquences où G ≥ G₀ − 3 dB = 15 − 3 = 12 dB ✓. −3 dB n'est le niveau de coupure que si G₀ = 0 ; 10,6 dB applique à G₀ le facteur 1/√2 qui s'applique à T ; 18 dB ajoute 3 dB au lieu de les retirer.",
       "difficulty": 2
     },
     {
@@ -170,27 +170,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Sur un axe semi-logarithmique gradué en fréquence, quelle fréquence se place au milieu du segment qui joint 100 Hz à 1000 Hz ?",
+      "prompt": "Sur un axe semi-logarithmique gradué en fréquence, quelle fréquence se place au milieu du segment qui joint 10 Hz à 1000 Hz ?",
       "options": [
         {
           "id": "a",
-          "text": "316 Hz"
+          "text": "100 Hz"
         },
         {
           "id": "b",
-          "text": "500 Hz"
+          "text": "316 Hz"
         },
         {
           "id": "c",
-          "text": "550 Hz"
+          "text": "500 Hz"
         },
         {
           "id": "d",
-          "text": "900 Hz"
+          "text": "505 Hz"
         }
       ],
       "correctOption": "a",
-      "explanation": "La position d'une fréquence est proportionnelle à log N : le milieu correspond à log N = (2 + 3)/2 = 2,5, donc à N = 10^2,5 ≈ 316 Hz ✓. 550 Hz est la moyenne arithmétique, 500 Hz la moitié de 1000 Hz et 900 Hz la différence 1000 − 100 : ces trois valeurs supposent un axe linéaire.",
+      "explanation": "La position d'une fréquence est proportionnelle à log N : le milieu correspond à log N = (1 + 3)/2 = 2, donc à N = 10² = 100 Hz ✓. 505 Hz est la moyenne arithmétique, 500 Hz la moitié de 1000 Hz : ces deux valeurs supposent un axe linéaire ; 316 Hz est le milieu d'une seule décade (de 100 Hz à 1000 Hz), pas du segment entier.",
       "difficulty": 2
     }
   ]
