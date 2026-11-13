@@ -1,0 +1,165 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des filtres",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "On veut un passe-haut CR de fréquence de coupure N_b = 4,0 kHz avec un condensateur de capacité C = 15 nF. Quelle résistance R faut-il choisir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,27 kΩ"
+        },
+        {
+          "id": "b",
+          "text": "2,7 kΩ"
+        },
+        {
+          "id": "c",
+          "text": "17 kΩ"
+        },
+        {
+          "id": "d",
+          "text": "105 kΩ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "R = 1/(2π·N_b·C) = 1/(2π × 4,0·10³ × 15·10⁻⁹) = 1/(3,77·10⁻⁴) ≈ 2,7 kΩ ✓. La valeur 17 kΩ oublie le facteur 2π. La valeur 105 kΩ utilise 2π/(N_b·C). La valeur 0,27 kΩ vient d'une capacité prise égale à 150 nF.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les deux courbes ci-dessous sont les gains de deux passe-bas actifs de mêmes R₁ et C, qui ne diffèrent que par R₀. Comment se compare la résistance R₀ de la courbe (2) à celle de la courbe (1) ?\n<svg viewBox=\"0 0 340 225\"><title>Gains de deux passe-bas actifs : courbe (1) au palier de 12 dB, courbe (2) au palier de 6 dB, avec la même coupure</title><line x1=\"70.5\" y1=\"22.0\" x2=\"70.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"82.4\" y1=\"22.0\" x2=\"82.4\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"90.9\" y1=\"22.0\" x2=\"90.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"97.5\" y1=\"22.0\" x2=\"97.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"102.9\" y1=\"22.0\" x2=\"102.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"107.5\" y1=\"22.0\" x2=\"107.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"111.4\" y1=\"22.0\" x2=\"111.4\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"114.9\" y1=\"22.0\" x2=\"114.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"138.5\" y1=\"22.0\" x2=\"138.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"150.4\" y1=\"22.0\" x2=\"150.4\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"158.9\" y1=\"22.0\" x2=\"158.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"165.5\" y1=\"22.0\" x2=\"165.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"170.9\" y1=\"22.0\" x2=\"170.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"175.5\" y1=\"22.0\" x2=\"175.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"179.4\" y1=\"22.0\" x2=\"179.4\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"182.9\" y1=\"22.0\" x2=\"182.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"206.5\" y1=\"22.0\" x2=\"206.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"218.4\" y1=\"22.0\" x2=\"218.4\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"226.9\" y1=\"22.0\" x2=\"226.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"233.5\" y1=\"22.0\" x2=\"233.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"238.9\" y1=\"22.0\" x2=\"238.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"243.5\" y1=\"22.0\" x2=\"243.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"247.4\" y1=\"22.0\" x2=\"247.4\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"250.9\" y1=\"22.0\" x2=\"250.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"274.5\" y1=\"22.0\" x2=\"274.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"286.4\" y1=\"22.0\" x2=\"286.4\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"294.9\" y1=\"22.0\" x2=\"294.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"301.5\" y1=\"22.0\" x2=\"301.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"306.9\" y1=\"22.0\" x2=\"306.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"311.5\" y1=\"22.0\" x2=\"311.5\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"315.4\" y1=\"22.0\" x2=\"315.4\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"318.9\" y1=\"22.0\" x2=\"318.9\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"0.5\"/><line x1=\"50.0\" y1=\"22.0\" x2=\"50.0\" y2=\"185.0\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"118.0\" y1=\"22.0\" x2=\"118.0\" y2=\"185.0\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"186.0\" y1=\"22.0\" x2=\"186.0\" y2=\"185.0\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"254.0\" y1=\"22.0\" x2=\"254.0\" y2=\"185.0\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"322.0\" y1=\"22.0\" x2=\"322.0\" y2=\"185.0\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"50.0\" y1=\"185.0\" x2=\"322.0\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50.0\" y1=\"151.0\" x2=\"322.0\" y2=\"151.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50.0\" y1=\"117.1\" x2=\"322.0\" y2=\"117.1\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50.0\" y1=\"83.1\" x2=\"322.0\" y2=\"83.1\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50.0\" y1=\"49.2\" x2=\"322.0\" y2=\"49.2\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50.0\" y1=\"185.0\" x2=\"328.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"332.0,185.0 325.0,188.5 325.0,181.5\" fill=\"#0f172a\"/><line x1=\"50.0\" y1=\"189.0\" x2=\"50.0\" y2=\"16.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"50.0,12.0 53.5,19.0 46.5,19.0\" fill=\"#0f172a\"/><line x1=\"50.0\" y1=\"182.0\" x2=\"50.0\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><line x1=\"118.0\" y1=\"182.0\" x2=\"118.0\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"118.0\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">100</text><line x1=\"186.0\" y1=\"182.0\" x2=\"186.0\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"186.0\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10³</text><line x1=\"254.0\" y1=\"182.0\" x2=\"254.0\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"254.0\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10⁴</text><line x1=\"322.0\" y1=\"182.0\" x2=\"322.0\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"322.0\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10⁵</text><line x1=\"47.0\" y1=\"185.0\" x2=\"53.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"44.0\" y=\"188.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−30</text><line x1=\"47.0\" y1=\"151.0\" x2=\"53.0\" y2=\"151.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"44.0\" y=\"154.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−20</text><line x1=\"47.0\" y1=\"117.1\" x2=\"53.0\" y2=\"117.1\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"44.0\" y=\"120.6\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−10</text><line x1=\"47.0\" y1=\"83.1\" x2=\"53.0\" y2=\"83.1\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"44.0\" y=\"86.6\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"47.0\" y1=\"49.2\" x2=\"53.0\" y2=\"49.2\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"44.0\" y=\"52.7\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"334.0\" y=\"211.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">N (Hz)</text><text x=\"54.0\" y=\"10.0\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">G (dB)</text><polyline points=\"50.0,42.2 50.9,42.2 51.8,42.2 52.7,42.2 53.6,42.2 54.5,42.2 55.4,42.2 56.3,42.2 57.3,42.2 58.2,42.2 59.1,42.2 60.0,42.2 60.9,42.2 61.8,42.2 62.7,42.2 63.6,42.2 64.5,42.2 65.4,42.2 66.3,42.2 67.2,42.2 68.1,42.2 69.0,42.2 69.9,42.2 70.9,42.2 71.8,42.2 72.7,42.2 73.6,42.2 74.5,42.2 75.4,42.2 76.3,42.2 77.2,42.2 78.1,42.3 79.0,42.3 79.9,42.3 80.8,42.3 81.7,42.3 82.6,42.3 83.5,42.3 84.5,42.3 85.4,42.3 86.3,42.3 87.2,42.3 88.1,42.3 89.0,42.3 89.9,42.3 90.8,42.3 91.7,42.3 92.6,42.3 93.5,42.3 94.4,42.3 95.3,42.3 96.2,42.3 97.1,42.3 98.1,42.3 99.0,42.3 99.9,42.3 100.8,42.3 101.7,42.3 102.6,42.3 103.5,42.3 104.4,42.3 105.3,42.3 106.2,42.3 107.1,42.3 108.0,42.4 108.9,42.4 109.8,42.4 110.7,42.4 111.7,42.4 112.6,42.4 113.5,42.4 114.4,42.4 115.3,42.4 116.2,42.4 117.1,42.5 118.0,42.5 118.9,42.5 119.8,42.5 120.7,42.5 121.6,42.5 122.5,42.5 123.4,42.6 124.3,42.6 125.3,42.6 126.2,42.6 127.1,42.7 128.0,42.7 128.9,42.7 129.8,42.7 130.7,42.8 131.6,42.8 132.5,42.8 133.4,42.9 134.3,42.9 135.2,43.0 136.1,43.0 137.0,43.0 137.9,43.1 138.9,43.2 139.8,43.2 140.7,43.3 141.6,43.3 142.5,43.4 143.4,43.5 144.3,43.5 145.2,43.6 146.1,43.7 147.0,43.8 147.9,43.9 148.8,44.0 149.7,44.1 150.6,44.2 151.5,44.3 152.5,44.4 153.4,44.6 154.3,44.7 155.2,44.8 156.1,45.0 157.0,45.2 157.9,45.3 158.8,45.5 159.7,45.7 160.6,45.9 161.5,46.1 162.4,46.3 163.3,46.5 164.2,46.7 165.1,47.0 166.1,47.2 167.0,47.5 167.9,47.8 168.8,48.1 169.7,48.4 170.6,48.7 171.5,49.0 172.4,49.4 173.3,49.7 174.2,50.1 175.1,50.5 176.0,50.9 176.9,51.3 177.8,51.7 178.7,52.1 179.7,52.6 180.6,53.0 181.5,53.5 182.4,54.0 183.3,54.5 184.2,55.0 185.1,55.6 186.0,56.1 186.9,56.7 187.8,57.2 188.7,57.8 189.6,58.4 190.5,59.0 191.4,59.7 192.3,60.3 193.3,60.9 194.2,61.6 195.1,62.3 196.0,62.9 196.9,63.6 197.8,64.3 198.7,65.0 199.6,65.7 200.5,66.5 201.4,67.2 202.3,68.0 203.2,68.7 204.1,69.5 205.0,70.2 205.9,71.0 206.9,71.8 207.8,72.6 208.7,73.4 209.6,74.2 210.5,75.0 211.4,75.8 212.3,76.6 213.2,77.4 214.1,78.2 215.0,79.1 215.9,79.9 216.8,80.7 217.7,81.6 218.6,82.4 219.5,83.3 220.5,84.1 221.4,85.0 222.3,85.8 223.2,86.7 224.1,87.5 225.0,88.4 225.9,89.3 226.8,90.2 227.7,91.0 228.6,91.9 229.5,92.8 230.4,93.6 231.3,94.5 232.2,95.4 233.1,96.3 234.1,97.2 235.0,98.1 235.9,98.9 236.8,99.8 237.7,100.7 238.6,101.6 239.5,102.5 240.4,103.4 241.3,104.3 242.2,105.2 243.1,106.1 244.0,107.0 244.9,107.9 245.8,108.7 246.7,109.6 247.7,110.5 248.6,111.4 249.5,112.3 250.4,113.2 251.3,114.1 252.2,115.0 253.1,115.9 254.0,116.8 254.9,117.7 255.8,118.6 256.7,119.5 257.6,120.4 258.5,121.3 259.4,122.2 260.3,123.1 261.3,124.0 262.2,124.9 263.1,125.8 264.0,126.7 264.9,127.6 265.8,128.5 266.7,129.5 267.6,130.4 268.5,131.3 269.4,132.2 270.3,133.1 271.2,134.0 272.1,134.9 273.0,135.8 273.9,136.7 274.9,137.6 275.8,138.5 276.7,139.4 277.6,140.3 278.5,141.2 279.4,142.1 280.3,143.0 281.2,143.9 282.1,144.8 283.0,145.7 283.9,146.6 284.8,147.5 285.7,148.4 286.6,149.3 287.5,150.2 288.5,151.2 289.4,152.1 290.3,153.0 291.2,153.9 292.1,154.8 293.0,155.7 293.9,156.6 294.8,157.5 295.7,158.4 296.6,159.3 297.5,160.2 298.4,161.1 299.3,162.0 300.2,162.9 301.1,163.8 302.1,164.7 303.0,165.6 303.9,166.5 304.8,167.4 305.7,168.4 306.6,169.3 307.5,170.2 308.4,171.1 309.3,172.0 310.2,172.9 311.1,173.8 312.0,174.7 312.9,175.6 313.8,176.5 314.7,177.4 315.7,178.3 316.6,179.2 317.5,180.1 318.4,181.0 319.3,181.9 320.2,182.8 321.1,183.7 322.0,184.7\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><polyline points=\"50.0,62.7 50.9,62.7 51.8,62.7 52.7,62.7 53.6,62.7 54.5,62.7 55.4,62.7 56.3,62.7 57.3,62.7 58.2,62.7 59.1,62.7 60.0,62.7 60.9,62.7 61.8,62.7 62.7,62.7 63.6,62.7 64.5,62.7 65.4,62.7 66.3,62.7 67.2,62.7 68.1,62.7 69.0,62.7 69.9,62.7 70.9,62.7 71.8,62.7 72.7,62.7 73.6,62.7 74.5,62.7 75.4,62.7 76.3,62.7 77.2,62.7 78.1,62.7 79.0,62.7 79.9,62.7 80.8,62.7 81.7,62.7 82.6,62.7 83.5,62.7 84.5,62.7 85.4,62.7 86.3,62.7 87.2,62.7 88.1,62.7 89.0,62.7 89.9,62.7 90.8,62.7 91.7,62.7 92.6,62.7 93.5,62.7 94.4,62.7 95.3,62.7 96.2,62.7 97.1,62.7 98.1,62.7 99.0,62.7 99.9,62.7 100.8,62.8 101.7,62.8 102.6,62.8 103.5,62.8 104.4,62.8 105.3,62.8 106.2,62.8 107.1,62.8 108.0,62.8 108.9,62.8 109.8,62.8 110.7,62.8 111.7,62.8 112.6,62.8 113.5,62.8 114.4,62.9 115.3,62.9 116.2,62.9 117.1,62.9 118.0,62.9 118.9,62.9 119.8,62.9 120.7,63.0 121.6,63.0 122.5,63.0 123.4,63.0 124.3,63.0 125.3,63.1 126.2,63.1 127.1,63.1 128.0,63.1 128.9,63.2 129.8,63.2 130.7,63.2 131.6,63.2 132.5,63.3 133.4,63.3 134.3,63.4 135.2,63.4 136.1,63.4 137.0,63.5 137.9,63.5 138.9,63.6 139.8,63.7 140.7,63.7 141.6,63.8 142.5,63.8 143.4,63.9 144.3,64.0 145.2,64.1 146.1,64.2 147.0,64.2 147.9,64.3 148.8,64.4 149.7,64.5 150.6,64.6 151.5,64.8 152.5,64.9 153.4,65.0 154.3,65.1 155.2,65.3 156.1,65.4 157.0,65.6 157.9,65.8 158.8,65.9 159.7,66.1 160.6,66.3 161.5,66.5 162.4,66.7 163.3,67.0 164.2,67.2 165.1,67.4 166.1,67.7 167.0,68.0 167.9,68.2 168.8,68.5 169.7,68.8 170.6,69.1 171.5,69.5 172.4,69.8 173.3,70.2 174.2,70.5 175.1,70.9 176.0,71.3 176.9,71.7 177.8,72.1 178.7,72.6 179.7,73.0 180.6,73.5 181.5,74.0 182.4,74.5 183.3,75.0 184.2,75.5 185.1,76.0 186.0,76.6 186.9,77.1 187.8,77.7 188.7,78.3 189.6,78.9 190.5,79.5 191.4,80.1 192.3,80.7 193.3,81.4 194.2,82.0 195.1,82.7 196.0,83.4 196.9,84.1 197.8,84.8 198.7,85.5 199.6,86.2 200.5,86.9 201.4,87.7 202.3,88.4 203.2,89.1 204.1,89.9 205.0,90.7 205.9,91.4 206.9,92.2 207.8,93.0 208.7,93.8 209.6,94.6 210.5,95.4 211.4,96.2 212.3,97.0 213.2,97.9 214.1,98.7 215.0,99.5 215.9,100.3 216.8,101.2 217.7,102.0 218.6,102.9 219.5,103.7 220.5,104.6 221.4,105.4 222.3,106.3 223.2,107.1 224.1,108.0 225.0,108.9 225.9,109.7 226.8,110.6 227.7,111.5 228.6,112.3 229.5,113.2 230.4,114.1 231.3,115.0 232.2,115.9 233.1,116.7 234.1,117.6 235.0,118.5 235.9,119.4 236.8,120.3 237.7,121.2 238.6,122.0 239.5,122.9 240.4,123.8 241.3,124.7 242.2,125.6 243.1,126.5 244.0,127.4 244.9,128.3 245.8,129.2 246.7,130.1 247.7,131.0 248.6,131.9 249.5,132.8 250.4,133.7 251.3,134.6 252.2,135.5 253.1,136.4 254.0,137.3 254.9,138.2 255.8,139.1 256.7,140.0 257.6,140.9 258.5,141.8 259.4,142.7 260.3,143.6 261.3,144.5 262.2,145.4 263.1,146.3 264.0,147.2 264.9,148.1 265.8,149.0 266.7,149.9 267.6,150.8 268.5,151.7 269.4,152.6 270.3,153.5 271.2,154.4 272.1,155.3 273.0,156.2 273.9,157.1 274.9,158.0 275.8,158.9 276.7,159.8 277.6,160.7 278.5,161.6 279.4,162.6 280.3,163.5 281.2,164.4 282.1,165.3 283.0,166.2 283.9,167.1 284.8,168.0 285.7,168.9 286.6,169.8 287.5,170.7 288.5,171.6 289.4,172.5 290.3,173.4 291.2,174.3 292.1,175.2 293.0,176.1 293.9,177.0 294.8,177.9 295.7,178.8 296.6,179.7 297.5,180.7 298.4,181.6 299.3,182.5 300.2,183.4 301.1,184.3 302.1,185.2 303.0,186.1 303.9,187.0 304.8,187.9 305.7,188.8 306.6,189.7 307.5,190.6 308.4,191.5 309.3,192.4 310.2,193.3 311.1,194.2 312.0,195.1 312.9,196.0 313.8,196.9 314.7,197.9 315.7,198.8 316.6,199.7 317.5,200.6 318.4,201.5 319.3,202.4 320.2,203.3 321.1,204.2 322.0,205.1\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"55.4\" y=\"36.9\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">(1)</text><text x=\"55.4\" y=\"57.3\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#ea580c\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">(2)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "R₀ est la même, seule la fréquence change"
+        },
+        {
+          "id": "b",
+          "text": "R₀ est quatre fois plus grande"
+        },
+        {
+          "id": "c",
+          "text": "R₀ est deux fois plus grande"
+        },
+        {
+          "id": "d",
+          "text": "R₀ est deux fois plus petite"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les paliers valent G₀ = 12 dB et 6 dB, soit T₀ = 4 et 2 : la transmittance maximale est divisée par 2. Comme T₀ = R₁/R₀, R₀ est multipliée par 2 ✓, et la coupure N_h = 1/(2πR₁C) ne change pas, comme on le voit. Une résistance deux fois plus petite doublerait T₀. Une résistance quatre fois plus grande donnerait 12 − 12 = 0 dB. La coupure est identique : la fréquence ne change pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un passe-haut CR a pour coupure N_b = 1000 Hz. Il reçoit u_E(t) = 6,0 sin(2000πt), en volts. Quelle est l'expression de u_S(t) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,2 sin(2000πt + π/4)"
+        },
+        {
+          "id": "b",
+          "text": "4,2 sin(2000πt − π/4)"
+        },
+        {
+          "id": "c",
+          "text": "3,0 sin(2000πt + π/4)"
+        },
+        {
+          "id": "d",
+          "text": "6,0 sin(2000πt + π/4)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme 2000π = 2π × 1000, la fréquence de u_E est N = 1000 Hz = N_b : T = 1/√2, donc U_Sm = 6,0/1,41 ≈ 4,2 V, et Δφ = +π/4 (avance), donc u_S = 4,2 sin(2000πt + π/4) ✓. Le signe moins est celui du passe-bas RC. L'amplitude 3,0 V diviserait par 2. L'amplitude 6,0 V ignorerait l'atténuation de 3 dB à la coupure.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un passe-bas actif à A.O. non inverseur a pour transmittance T = T₀/√(1 + (R₀Cω)²) avec T₀ = 1 + R₁/R₂. Avec R₁ = 3,0 kΩ et R₂ = 1,0 kΩ, quel est son gain à la fréquence N = 1/(2πR₀C) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,5 dB"
+        },
+        {
+          "id": "b",
+          "text": "9 dB"
+        },
+        {
+          "id": "c",
+          "text": "12 dB"
+        },
+        {
+          "id": "d",
+          "text": "15 dB"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "T₀ = 1 + 3,0/1,0 = 4, donc G₀ = 20 log 4 = 12 dB. À N = 1/(2πR₀C), R₀Cω = 1 : c'est la coupure, où G = G₀ − 3 = 9 dB ✓. La valeur 6,5 dB utilise T₀ = R₁/R₂ = 3 de l'inverseur (9,5 dB) puis retire 3 dB. La valeur 12 dB est le palier. La valeur 15 dB ajoute 3 dB au lieu de les retirer.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On veut réaliser un passe-bande RLC série avec L = 0,10 H, centré sur N₀ = 1,0 kHz et de largeur ΔN = 50 Hz. Quelle résistance totale R faut-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12,6 kΩ"
+        },
+        {
+          "id": "b",
+          "text": "63 Ω"
+        },
+        {
+          "id": "c",
+          "text": "31 Ω"
+        },
+        {
+          "id": "d",
+          "text": "5,0 Ω"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Q = N₀/ΔN = 1000/50 = 20, et R = Lω₀/Q = 0,10 × 2π × 1000/20 = 628/20 ≈ 31 Ω ✓. La valeur 5,0 Ω oublie le facteur 2π dans ω₀. La valeur 63 Ω correspond à Q = 10, soit ΔN = N₀/(2Q) : demi-largeur confondue avec largeur. La valeur 12,6 kΩ utilise R = Lω₀ × Q.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sont vraies pour un passe-bande RLC série dont la sortie est aux bornes de R₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À N = N₀, u_S et u_E sont en phase"
+        },
+        {
+          "id": "b",
+          "text": "La transmittance maximale vaut T₀ = R₀/R, atteinte pour N = N₀"
+        },
+        {
+          "id": "c",
+          "text": "Pour Q ≫ 1, N_b ≈ N₀ − ΔN/2 et N_h ≈ N₀ + ΔN/2"
+        },
+        {
+          "id": "d",
+          "text": "À N = N_h, u_S est en avance de 45° sur u_E"
+        },
+        {
+          "id": "e",
+          "text": "Le filtre est d'autant plus sélectif que Q est petit"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "À N₀ le circuit est en résonance d'intensité : u_S = R₀·i est en phase avec u_E, et T = T₀ = R₀/R est maximale ✓. Pour Q ≫ 1 la courbe est étroite et presque symétrique : N_b ≈ N₀ − ΔN/2 et N_h ≈ N₀ + ΔN/2. À N_h le déphasage vaut −45° : u_S est en retard, pas en avance. La sélectivité augmente avec Q, donc elle diminue quand Q est petit.",
+      "difficulty": 3
+    }
+  ]
+}

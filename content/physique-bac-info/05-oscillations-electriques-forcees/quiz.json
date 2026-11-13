@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Les oscillations électriques forcées",
+  "questions": [
+    {
+      "prompt": "Un circuit RLC série, de fréquence propre N₀ = 280 Hz, est alimenté par un GBF réglé successivement sur 200 Hz puis sur 350 Hz. En régime permanent, quelles sont les fréquences de l'intensité i(t) dans les deux cas ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 Hz puis 350 Hz"
+        },
+        {
+          "id": "b",
+          "text": "280 Hz dans les deux cas"
+        },
+        {
+          "id": "c",
+          "text": "80 Hz puis 70 Hz"
+        },
+        {
+          "id": "d",
+          "text": "200 Hz puis 280 Hz"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En régime forcé permanent, i oscille à la fréquence N imposée par le GBF : 200 Hz dans le premier cas, 350 Hz dans le second ✓. La fréquence propre N₀ = 280 Hz ne se retrouve pas, car l'excitateur commande le résonateur. Les écarts N − N₀ (80 Hz puis 70 Hz) ne sont pas des fréquences du circuit. Mélanger N pour le premier réglage et N₀ pour le second n'a pas de sens : le régime est le même dans les deux cas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un circuit RLC série est soumis à une tension de valeur efficace U = 4,5 V ; il est parcouru par un courant de valeur efficace I = 18 mA. Quelle est son impédance Z à cette fréquence ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,0 × 10⁻³ Ω"
+        },
+        {
+          "id": "b",
+          "text": "0,25 Ω"
+        },
+        {
+          "id": "c",
+          "text": "81 Ω"
+        },
+        {
+          "id": "d",
+          "text": "250 Ω"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Z = U/I = 4,5 / 0,018 = 250 Ω ✓ : le rapport est le même avec les valeurs efficaces qu'avec les valeurs maximales, puisque U_m = U√2 et I_m = I√2. 0,25 Ω divise 4,5 par 18 sans convertir les mA en A. 4,0 × 10⁻³ Ω est le quotient inversé I/U. 81 Ω est le produit 4,5 × 18, qui ne correspond à aucune loi.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle particularité présente l'équation différentielle d'un circuit RLC série en régime forcé, par rapport au régime libre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Son second membre est nul, et la solution est sinusoïdale à la fréquence propre N₀"
+        },
+        {
+          "id": "b",
+          "text": "Son second membre est u(t), non nul, et la solution est sinusoïdale à la fréquence N"
+        },
+        {
+          "id": "c",
+          "text": "Son second membre est u(t), non nul, et la solution est amortie à la fréquence propre N₀"
+        },
+        {
+          "id": "d",
+          "text": "Son second membre est nul, et la solution est amortie à la fréquence N"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La loi des mailles donne u = R·i + L·di/dt + (1/C)·∫ i·dt : le second membre est la tension u(t) du GBF, non nulle, et la solution de régime permanent est i = I_m·sin(2πNt + φ), à la fréquence N imposée ✓. Un second membre nul est celui du régime libre. Une solution permanente amortie contredirait l'apport d'énergie du GBF, qui compense les pertes par effet Joule. La fréquence N₀ n'est jamais celle du régime permanent forcé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux tensions u₁ et u₂ de même période T = 12 ms sont en quadrature de phase. Quel décalage horaire Δt les sépare, et quel est le déphasage |Δφ| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δt = 3 ms ; |Δφ| = π/2 rad"
+        },
+        {
+          "id": "b",
+          "text": "Δt = 6 ms ; |Δφ| = π/2 rad"
+        },
+        {
+          "id": "c",
+          "text": "Δt = 3 ms ; |Δφ| = π rad"
+        },
+        {
+          "id": "d",
+          "text": "Δt = 6 ms ; |Δφ| = π rad"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La quadrature correspond à Δt = T/4 = 3 ms, soit |Δφ| = 2π × 3 / 12 = π/2 rad ✓. Δt = 6 ms = T/2 et |Δφ| = π rad décrivent l'opposition de phase. Les deux couples mixtes sont incohérents : un décalage de T/4 ne donne pas π rad, et un décalage de T/2 ne donne pas π/2 rad.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un RLC série a pour résistance totale R = 45 Ω ; à la pulsation du GBF, Lω = 100 Ω et 1/(Cω) = 40 Ω. La tension du GBF a pour valeur maximale U_m = 15 V. Quelle est l'intensité maximale I_m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "102 mA"
+        },
+        {
+          "id": "b",
+          "text": "143 mA"
+        },
+        {
+          "id": "c",
+          "text": "200 mA"
+        },
+        {
+          "id": "d",
+          "text": "333 mA"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Z = √(R² + (Lω − 1/(Cω))²) = √(45² + 60²) = 75 Ω, donc I_m = U_m/Z = 15 / 75 = 0,20 A = 200 mA ✓. 333 mA suppose Z = R = 45 Ω, valable seulement à la résonance. 143 mA additionne arithmétiquement R + Lω − 1/(Cω) = 105 Ω. 102 mA additionne Lω et 1/(Cω) au lieu de les soustraire : Z = √(45² + 140²) = 147 Ω.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un circuit RLC série est à la résonance d'intensité. Sans changer L, C ni U_m, on double sa résistance totale R. Que deviennent la fréquence de résonance N₀ et l'intensité maximale I_m0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N₀ inchangée ; I_m0 divisée par 2"
+        },
+        {
+          "id": "b",
+          "text": "N₀ doublée ; I_m0 inchangée"
+        },
+        {
+          "id": "c",
+          "text": "N₀ inchangée ; I_m0 doublée"
+        },
+        {
+          "id": "d",
+          "text": "N₀ divisée par 2 ; I_m0 divisée par 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "N₀ = 1/(2π√(LC)) ne contient pas R : elle reste la même ; et I_m0 = U_m/R est divisée par 2 quand R est doublée ✓. Une fréquence qui change avec R confondrait la hauteur du pic et sa position. Une intensité doublée ou inchangée oublierait que I_m0 est inversement proportionnelle à R.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À la résonance d'intensité, un circuit RLC série a pour résistor R₀ = 60 Ω, pour bobine (L = 0,15 H ; r = 15 Ω), et ω₀ = 1,0 × 10³ rad/s. Quel est son facteur de surtension Q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,50"
+        },
+        {
+          "id": "b",
+          "text": "2,0"
+        },
+        {
+          "id": "c",
+          "text": "2,5"
+        },
+        {
+          "id": "d",
+          "text": "1,1 × 10⁴"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Q = Lω₀/(R₀ + r) = 0,15 × 1000 / 75 = 150 / 75 = 2,0 ✓ : la résistance qui compte est R = R₀ + r. 2,5 oublie la résistance r de la bobine : 150/60. 0,50 est l'inverse (R/Lω₀). 1,1 × 10⁴ multiplie Lω₀ par R au lieu de le diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un RLC série reçoit une puissance moyenne P = 2,0 W sous une tension efficace U = 10 V, avec une intensité efficace I = 0,50 A. Quel est son facteur de puissance cos φ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,16"
+        },
+        {
+          "id": "b",
+          "text": "0,40"
+        },
+        {
+          "id": "c",
+          "text": "0,63"
+        },
+        {
+          "id": "d",
+          "text": "0,80"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme P = UI·cos φ, cos φ = P/(UI) = 2,0 / (10 × 0,50) = 0,40 ✓. 0,80 vient de 2P/(UI), qui double P sans raison. 0,16 est le carré de 0,40 et 0,63 sa racine : la relation entre P et cos φ est linéaire, ni quadratique ni en racine.",
+      "difficulty": 2
+    }
+  ]
+}
