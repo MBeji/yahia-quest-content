@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Conversion de signaux",
+  "questions": [
+    {
+      "prompt": "Parmi ces signaux, lequel est un signal logique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une pression qui passe de 1,0 bar à 1,2 bar en une minute"
+        },
+        {
+          "id": "b",
+          "text": "Une température qui monte de 20 °C à 25 °C en une heure"
+        },
+        {
+          "id": "c",
+          "text": "Une tension qui croît lentement de 0 V à 5 V en passant par toutes les valeurs intermédiaires"
+        },
+        {
+          "id": "d",
+          "text": "Une tension qui vaut 0 V ou 5 V et saute de l'une à l'autre"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un signal logique ne prend que deux valeurs, V_cc (état 1) et 0 V (état 0), et passe de l'une à l'autre ✓. La tension qui croît lentement, la pression et la température varient de façon continue : ce sont des signaux analogiques, malgré les valeurs de départ et d'arrivée qui paraissent aussi « bien définies ».",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est l'équivalent décimal du mot binaire [1011] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "11"
+        },
+        {
+          "id": "c",
+          "text": "13"
+        },
+        {
+          "id": "d",
+          "text": "22"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "N = 2³·1 + 2²·0 + 2¹·1 + 2⁰·1 = 8 + 2 + 1 = 11 ✓. La valeur 13 vient d'une lecture du mot de droite à gauche, soit [1101]. La valeur 3 compte seulement les bits égaux à 1. La valeur 22 décale tous les poids d'un rang, comme si le bit de poids faible valait 2 au lieu de 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un enregistreur numérique reçoit la tension d'un microphone. Quel convertisseur est nécessaire, et où se place-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un C.A.N., placé entre le microphone et la mémoire"
+        },
+        {
+          "id": "b",
+          "text": "Un C.A.N., placé entre la mémoire et le haut-parleur"
+        },
+        {
+          "id": "c",
+          "text": "Un C.N.A., placé entre le microphone et la mémoire"
+        },
+        {
+          "id": "d",
+          "text": "Un C.N.A., placé entre la mémoire et le haut-parleur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La tension du microphone est analogique et la mémoire ne stocke que des mots binaires : il faut un C.A.N. entre les deux ✓. Un C.N.A. entre la mémoire et le haut-parleur sert à la lecture, pas à l'enregistrement. Un C.N.A. placé après le microphone recevrait une tension alors qu'il attend un mot binaire. Un C.A.N. placé avant le haut-parleur lui livrerait un nombre au lieu d'une tension.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un C.A.N. qui fonctionne par comparaison, quelles tensions le comparateur confronte-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La tension à convertir u_E et la tension u_C d'un C.N.A. interne"
+        },
+        {
+          "id": "b",
+          "text": "La tension de saturation de l'A.O. et la tension de l'horloge du circuit"
+        },
+        {
+          "id": "c",
+          "text": "La tension du compteur et la tension de l'horloge de la boucle"
+        },
+        {
+          "id": "d",
+          "text": "La tension à convertir u_E et la tension de référence U_ref du C.N.A."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le principe consiste à comparer la tension à convertir u_E à la tension u_C que fournit un C.N.A. rebouclé sur le comparateur ✓. La tension de référence sert au C.N.A., pas à la comparaison avec u_E. La saturation de l'A.O. est une limite de fonctionnement, pas une entrée du comparateur. L'horloge et le compteur sont des blocs numériques, dont le comparateur ne reçoit pas de tension d'entrée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un C.N.A. à résistances pondérées à 5 bits, quelle résistance est reliée au bit de poids faible a₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "R"
+        },
+        {
+          "id": "b",
+          "text": "8R"
+        },
+        {
+          "id": "c",
+          "text": "16R"
+        },
+        {
+          "id": "d",
+          "text": "32R"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La résistance de la branche j vaut R_j = 2^(n−j−1)·R : pour n = 5 et j = 0, R₀ = 2⁴·R = 16R ✓. La résistance R est celle du bit de poids fort a₄. La valeur 8R est celle de la branche de a₁. La valeur 32R correspond à 2ⁿ·R : l'exposant est décalé d'un rang.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un C.N.A. à 8 bits a une pleine échelle de 5,10 V. Quelle tension délivre-t-il pour le mot [00001010] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,60 V"
+        },
+        {
+          "id": "b",
+          "text": "0,40 V"
+        },
+        {
+          "id": "c",
+          "text": "0,20 V"
+        },
+        {
+          "id": "d",
+          "text": "0,04 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le quantum vaut q = P.E./(2⁸ − 1) = 5,10/255 = 0,020 V, et [00001010] vaut N = 8 + 2 = 10 : u_S = q·N = 0,020 × 10 = 0,20 V ✓. La valeur 1,60 V lit le mot à l'envers, [01010000], soit N = 80. La valeur 0,40 V divise la pleine échelle par 2⁷ = 128 au lieu de 255. La valeur 0,04 V ne compte que les deux bits égaux à 1, N = 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La caractéristique de transfert ci-dessous est celle d'un C.N.A. à 3 bits, de N = 0 à N = 7. Quel est son quantum ?\n<svg viewBox=\"0 0 340 230\"><title>Caractéristique de transfert d'un C.N.A. à 3 bits : huit points alignés sur une droite passant par l'origine, le dernier point (N = 7) à 4,2 V</title><line x1=\"68.8\" y1=\"22.0\" x2=\"68.8\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"102.2\" y1=\"22.0\" x2=\"102.2\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"135.8\" y1=\"22.0\" x2=\"135.8\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"169.2\" y1=\"22.0\" x2=\"169.2\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"202.8\" y1=\"22.0\" x2=\"202.8\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"236.2\" y1=\"22.0\" x2=\"236.2\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"269.8\" y1=\"22.0\" x2=\"269.8\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"303.2\" y1=\"22.0\" x2=\"303.2\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"185.0\" x2=\"320.0\" y2=\"185.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"152.4\" x2=\"320.0\" y2=\"152.4\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"119.8\" x2=\"320.0\" y2=\"119.8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"87.2\" x2=\"320.0\" y2=\"87.2\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"54.6\" x2=\"320.0\" y2=\"54.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"52.0\" y1=\"22.0\" x2=\"320.0\" y2=\"22.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"68.8\" y1=\"189.0\" x2=\"68.8\" y2=\"16.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52.0\" y1=\"185.0\" x2=\"326.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"330.0,185.0 323.0,188.5 323.0,181.5\" fill=\"#0f172a\"/><polygon points=\"68.8,12.0 72.2,19.0 65.2,19.0\" fill=\"#0f172a\"/><line x1=\"68.8\" y1=\"182.0\" x2=\"68.8\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"68.8\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"102.2\" y1=\"182.0\" x2=\"102.2\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"102.2\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"135.8\" y1=\"182.0\" x2=\"135.8\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"135.8\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"169.2\" y1=\"182.0\" x2=\"169.2\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"169.2\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"202.8\" y1=\"182.0\" x2=\"202.8\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"202.8\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"236.2\" y1=\"182.0\" x2=\"236.2\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"236.2\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"269.8\" y1=\"182.0\" x2=\"269.8\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"269.8\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"303.2\" y1=\"182.0\" x2=\"303.2\" y2=\"188.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"303.2\" y=\"199.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">7</text><line x1=\"65.8\" y1=\"185.0\" x2=\"71.8\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"62.8\" y=\"188.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"65.8\" y1=\"152.4\" x2=\"71.8\" y2=\"152.4\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"62.8\" y=\"155.9\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"65.8\" y1=\"119.8\" x2=\"71.8\" y2=\"119.8\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"62.8\" y=\"123.3\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"65.8\" y1=\"87.2\" x2=\"71.8\" y2=\"87.2\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"62.8\" y=\"90.7\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"65.8\" y1=\"54.6\" x2=\"71.8\" y2=\"54.6\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"62.8\" y=\"58.1\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"65.8\" y1=\"22.0\" x2=\"71.8\" y2=\"22.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"62.8\" y=\"25.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><text x=\"332.0\" y=\"211.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">N</text><text x=\"72.8\" y=\"10.0\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_S (V)</text><polyline points=\"68.8,185.0 186.0,116.5 303.2,48.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-dasharray=\"4 4\"/><circle cx=\"68.8\" cy=\"185.0\" r=\"3.4\" fill=\"#ea580c\"/><circle cx=\"102.2\" cy=\"165.4\" r=\"3.4\" fill=\"#ea580c\"/><circle cx=\"135.8\" cy=\"145.9\" r=\"3.4\" fill=\"#ea580c\"/><circle cx=\"169.2\" cy=\"126.3\" r=\"3.4\" fill=\"#ea580c\"/><circle cx=\"202.8\" cy=\"106.8\" r=\"3.4\" fill=\"#ea580c\"/><circle cx=\"236.2\" cy=\"87.2\" r=\"3.4\" fill=\"#ea580c\"/><circle cx=\"269.8\" cy=\"67.6\" r=\"3.4\" fill=\"#ea580c\"/><circle cx=\"303.2\" cy=\"48.1\" r=\"3.4\" fill=\"#ea580c\"/><text x=\"303.2\" y=\"31.8\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4,2 V</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,53 V"
+        },
+        {
+          "id": "b",
+          "text": "0,60 V"
+        },
+        {
+          "id": "c",
+          "text": "1,0 V"
+        },
+        {
+          "id": "d",
+          "text": "4,2 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le dernier point, pour N = 7, donne la pleine échelle P.E. = 4,2 V : q = P.E./(2³ − 1) = 4,2/7 = 0,60 V, ce qui est aussi la pente de la droite ✓. La valeur 0,53 V divise par 8 au lieu de 7. La valeur 4,2 V est la pleine échelle, pas le pas entre deux points. La valeur 1,0 V est l'écart entre deux graduations de l'axe, sans lien avec les points.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un C.N.A. à réseau R-2R à 4 bits a R = 2,0 kΩ, R' = 4,0 kΩ et U_ref = −5,0 V. Quelle est la tension de sortie pour le mot [1100] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,9 V"
+        },
+        {
+          "id": "b",
+          "text": "7,5 V"
+        },
+        {
+          "id": "c",
+          "text": "9,4 V"
+        },
+        {
+          "id": "d",
+          "text": "15 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour un R-2R à 4 bits, u_S = −(R'·U_ref/16R)·N = −4,0 × (−5,0)/(16 × 2,0) × 12 = 0,625 × 12 = 7,5 V ✓, car [1100] vaut 8 + 4 = 12. La valeur 15 V emploie la constante du réseau pondéré, avec 8R au lieu de 16R. La valeur 9,4 V correspond au mot [1111], N = 15. La valeur 1,9 V lit le mot à l'envers, [0011], soit N = 3.",
+      "difficulty": 2
+    }
+  ]
+}
