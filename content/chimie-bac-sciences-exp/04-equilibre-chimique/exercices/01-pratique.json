@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas vers l'équilibre",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Pb²⁺ + 2 Cl⁻ → PbCl₂ (précipité). On mélange n(Pb²⁺) = 3,0·10⁻³ mol et n(Cl⁻) = 4,0·10⁻³ mol. Que vaut l'avancement maximal x_max ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5·10⁻³ mol"
+        },
+        {
+          "id": "b",
+          "text": "2,0·10⁻³ mol"
+        },
+        {
+          "id": "c",
+          "text": "3,0·10⁻³ mol"
+        },
+        {
+          "id": "d",
+          "text": "4,0·10⁻³ mol"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pb²⁺ s'épuise pour x = 3,0·10⁻³ mol, Cl⁻ pour x = 4,0·10⁻³/2 = 2,0·10⁻³ mol : le plus petit est atteint en premier, donc Cl⁻ est limitant et x_max = 2,0·10⁻³ mol ✓. La valeur 1,5·10⁻³ divise par 2 la quantité de l'autre réactif. La valeur 3,0·10⁻³ compare les quantités sans tenir compte des coefficients. La valeur 4,0·10⁻³ garde la plus grande quantité, celle du réactif en excès.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une solution a un pH égal à 2,50. Que vaut sa concentration en ions H₃O⁺, en mol·L⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,2·10²"
+        },
+        {
+          "id": "b",
+          "text": "2,5·10⁻²"
+        },
+        {
+          "id": "c",
+          "text": "3,2·10⁻³"
+        },
+        {
+          "id": "d",
+          "text": "2,5·10⁻³"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "[H₃O⁺] = 10^(−2,50) = 3,2·10⁻³ mol·L⁻¹ ✓ : le pH est l'opposé de l'exposant. La valeur 3,2·10² vient de 10^(+2,50), oubliant le signe moins. La valeur 2,5·10⁻² recopie les chiffres du pH avec un exposant entier. La valeur 2,5·10⁻³ recopie 2,5 avec l'exposant −3, au lieu de convertir le pH.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle affirmation sur une réaction et sa réaction inverse est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La réaction directe est toujours la plus rapide des deux réactions"
+        },
+        {
+          "id": "b",
+          "text": "En l'absence d'indication, l'équation se lit de droite à gauche"
+        },
+        {
+          "id": "c",
+          "text": "La réaction inverse est la réaction indirecte de la réaction directe"
+        },
+        {
+          "id": "d",
+          "text": "La réaction inverse suit le même chemin que la directe, à l'envers"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La réaction inverse reprend le même chemin que la réaction directe, parcouru à l'envers ✓. Une réaction indirecte ferait un détour par un autre itinéraire, ce qui est différent. Sans indication, on lit l'équation de gauche à droite, donc dans le sens direct. Enfin, rien n'impose que la réaction directe soit plus rapide : à l'équilibre, les deux vitesses sont égales.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle quantité de matière représente V = 23,0 mL d'éthanol pur (ρ = 0,79 g·mL⁻¹, M = 46 g·mol⁻¹) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,40 mol"
+        },
+        {
+          "id": "b",
+          "text": "0,50 mol"
+        },
+        {
+          "id": "c",
+          "text": "0,63 mol"
+        },
+        {
+          "id": "d",
+          "text": "1,6 mol"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "m = ρ·V = 0,79 × 23,0 ≈ 18,2 g, puis n = m/M = 18,2/46 ≈ 0,40 mol ✓. La valeur 0,50 mol oublie la masse volumique : 23,0/46. La valeur 0,63 mol divise le volume par ρ au lieu de le multiplier. La valeur 1,6 mol écrit ρ·M/V, une combinaison des mêmes données qui n'a pas la dimension d'une quantité de matière.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On mélange 0,100 mol d'acide et 0,400 mol d'alcool ; la réaction forme un ester, de l'eau, et à l'équilibre n(ester) = 0,093 mol. Que vaut n(alcool) à l'équilibre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,007 mol"
+        },
+        {
+          "id": "b",
+          "text": "0,093 mol"
+        },
+        {
+          "id": "c",
+          "text": "0,307 mol"
+        },
+        {
+          "id": "d",
+          "text": "0,493 mol"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le coefficient de l'alcool vaut 1 : n_f(alcool) = 0,400 − x_f = 0,400 − 0,093 = 0,307 mol ✓, puisque x_f = n(ester) = 0,093 mol. La valeur 0,007 mol est la quantité d'acide restant, 0,100 − 0,093. La valeur 0,093 mol est celle de l'ester. La valeur 0,493 mol ajoute x_f au lieu de le retrancher.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À un instant, v(1) = 2,0·10⁻⁴ et v(−1) = 5,5·10⁻⁴ mol·L⁻¹·min⁻¹. Que vaut la vitesse observée v = |v(1) − v(−1)|, en mol·L⁻¹·min⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "3,5·10⁻⁴"
+        },
+        {
+          "id": "c",
+          "text": "7,5·10⁻⁴"
+        },
+        {
+          "id": "d",
+          "text": "2,8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "v = |2,0·10⁻⁴ − 5,5·10⁻⁴| = 3,5·10⁻⁴ mol·L⁻¹·min⁻¹ ✓ : v(−1) dépasse v(1), le système évolue dans le sens inverse, et la valeur absolue donne une vitesse positive. La valeur 0 serait celle d'un équilibre, où les deux vitesses sont égales, ce qui n'est pas le cas ici. La valeur 7,5·10⁻⁴ additionne les vitesses au lieu de les soustraire. La valeur 2,8 est le quotient 5,5/2,0, sans signification.",
+      "difficulty": 2
+    }
+  ]
+}

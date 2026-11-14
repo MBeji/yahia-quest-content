@@ -1,0 +1,129 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les maîtres des leviers",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "La synthèse industrielle de l'ammoniac N₂(g) + 3 H₂(g) → 2 NH₃(g) est réalisée vers 450 °C avec un solide à base de fer. Quelle analyse est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le fer est un réactif consommé ; la température n'intervient pas dans la vitesse."
+        },
+        {
+          "id": "b",
+          "text": "Le fer est un catalyseur homogène ; la température élevée ralentit la réaction."
+        },
+        {
+          "id": "c",
+          "text": "Le fer est un catalyseur hétérogène ; la température accélère aussi la réaction."
+        },
+        {
+          "id": "d",
+          "text": "Le fer est un catalyseur enzymatique ; la température élevée accélère la réaction."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le fer solide fait face à des réactifs gazeux : deux phases, c'est un catalyseur hétérogène, et il ne figure pas dans l'équation. La température élevée est un second facteur cinétique : en général la vitesse croît quand la température croît ✓. Le fer n'est pas consommé, il ne figure pas dans l'équation. Il n'y a pas de catalyse homogène avec un solide et des gaz, et, en général, une température plus élevée accélère la réaction, elle ne la ralentit pas. Une enzyme est une molécule biologique, ce que n'est pas un solide à base de fer.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "À propos des catalyseurs, quelles affirmations sont exactes ? (Plusieurs réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un catalyseur est utilisé en faible proportion."
+        },
+        {
+          "id": "b",
+          "text": "Un catalyseur modifie la composition du système à la fin de la transformation."
+        },
+        {
+          "id": "c",
+          "text": "Un catalyseur accélère aussi la réaction inverse, quand elle est possible spontanément."
+        },
+        {
+          "id": "d",
+          "text": "Un catalyseur peut provoquer une transformation impossible spontanément."
+        },
+        {
+          "id": "e",
+          "text": "Dans un mécanisme catalysé, le catalyseur est consommé dans une étape puis régénéré dans une autre."
+        },
+        {
+          "id": "f",
+          "text": "Une enzyme catalyse n'importe quel type de réaction, quel que soit le réactif."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Exactes : un catalyseur est utilisé en faible proportion ; il accélère aussi la réaction inverse quand elle est possible spontanément ; dans un mécanisme catalysé, il est réactif dans une étape puis produit dans une autre, donc régénéré. Fausses : il ne modifie pas la composition finale, qui reste fixée par le réactif limitant ; il n'accélère qu'une réaction possible spontanément en son absence, il ne rend pas possible une transformation impossible ; une enzyme est spécifique, elle ne catalyse qu'un type de réaction sur un type de réactif.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On introduit 5,0 mL d'eau oxygénée à 0,80 mol·L⁻¹ dans un tube, avec quelques gouttes d'une solution d'ions Fe³⁺ : la décomposition 2 H₂O₂ → O₂ + 2 H₂O est totale. Calculer le volume de dioxygène finalement recueilli, en mL, dans des conditions où V_m = 24 L·mol⁻¹.",
+      "answerKey": {
+        "value": 48.0,
+        "tolerance": 0.5,
+        "unit": "mL"
+      },
+      "explanation": "n(H₂O₂) = 0,80 × 5,0·10⁻³ = 4,0·10⁻³ mol. Le coefficient de H₂O₂ vaut 2 : x_max = 4,0·10⁻³ / 2 = 2,0·10⁻³ mol, et n(O₂) = x_max = 2,0·10⁻³ mol (coefficient 1). Donc V(O₂) = 2,0·10⁻³ × 24 = 4,8·10⁻² L = 48 mL ✓. Le catalyseur accélère la décomposition mais ne change pas ce volume final, fixé par la quantité d'eau oxygénée.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La décomposition 2 H₂O₂ → 2 H₂O + O₂ est suivie à volume constant, en présence d'un catalyseur. La courbe [H₂O₂](t) est tracée ci-dessous ; la tangente à l'origine passe par A(0 ; 0,80 mol·L⁻¹) et B(4,0 min ; 0). Calculer la vitesse volumique de la réaction à t = 0, en mol·L⁻¹·min⁻¹.\n<svg viewBox=\"0 0 340 236\"><title>Courbe [H₂O₂](t) et tangente à l'origine passant par A et B</title><line x1=\"54.0\" y1=\"26.0\" x2=\"54.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"99.3\" y1=\"26.0\" x2=\"99.3\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"144.7\" y1=\"26.0\" x2=\"144.7\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"190.0\" y1=\"26.0\" x2=\"190.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"235.3\" y1=\"26.0\" x2=\"235.3\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"280.7\" y1=\"26.0\" x2=\"280.7\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326.0\" y1=\"26.0\" x2=\"326.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"190.0\" x2=\"326.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"157.2\" x2=\"326.0\" y2=\"157.2\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"124.4\" x2=\"326.0\" y2=\"124.4\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"91.6\" x2=\"326.0\" y2=\"91.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"58.8\" x2=\"326.0\" y2=\"58.8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"26.0\" x2=\"326.0\" y2=\"26.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"190.0\" x2=\"332.0\" y2=\"190.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54.0\" y1=\"190.0\" x2=\"54.0\" y2=\"18.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"54.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"99.3\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"144.7\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"190.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><text x=\"235.3\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><text x=\"280.7\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"326.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text><text x=\"48.0\" y=\"194.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"161.2\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,2</text><text x=\"48.0\" y=\"128.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,4</text><text x=\"48.0\" y=\"95.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,6</text><text x=\"48.0\" y=\"62.8\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,8</text><text x=\"48.0\" y=\"30.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"334.0\" y=\"218.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (min)</text><text x=\"60.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">[H₂O₂] (mol/L)</text><polyline points=\"54.0,58.8 57.4,63.6 60.8,68.3 64.2,72.8 67.6,77.1 71.0,81.2 74.4,85.2 77.8,89.1 81.2,92.8 84.6,96.4 88.0,99.8 91.4,103.1 94.8,106.3 98.2,109.4 101.6,112.4 105.0,115.2 108.4,118.0 111.8,120.6 115.2,123.2 118.6,125.7 122.0,128.0 125.4,130.3 128.8,132.5 132.2,134.6 135.6,136.7 139.0,138.6 142.4,140.5 145.8,142.3 149.2,144.1 152.6,145.8 156.0,147.4 159.4,149.0 162.8,150.5 166.2,151.9 169.6,153.3 173.0,154.7 176.4,156.0 179.8,157.2 183.2,158.4 186.6,159.6 190.0,160.7 193.4,161.8 196.8,162.8 200.2,163.8 203.6,164.8 207.0,165.7 210.4,166.6 213.8,167.5 217.2,168.3 220.6,169.1 224.0,169.9 227.4,170.6 230.8,171.3 234.2,172.0 237.6,172.7 241.0,173.3 244.4,173.9 247.8,174.5 251.2,175.1 254.6,175.6 258.0,176.2 261.4,176.7 264.8,177.2 268.2,177.6 271.6,178.1 275.0,178.5 278.4,179.0 281.8,179.4 285.2,179.8 288.6,180.1 292.0,180.5 295.4,180.8 298.8,181.2 302.2,181.5 305.6,181.8 309.0,182.1 312.4,182.4 315.8,182.7 319.2,183.0 322.6,183.2 326.0,183.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"54.0\" y1=\"58.8\" x2=\"144.7\" y2=\"190.0\" stroke=\"#b91c1c\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/><circle cx=\"54.0\" cy=\"58.8\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"144.7\" cy=\"190.0\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><text x=\"62.0\" y=\"50.8\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"144.7\" y=\"182.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text></svg>",
+      "answerKey": {
+        "value": 0.1,
+        "tolerance": 0.005,
+        "unit": "mol·L⁻¹·min⁻¹"
+      },
+      "explanation": "La pente de la tangente vaut (0 − 0,80)/(4,0 − 0) = −0,20 mol·L⁻¹·min⁻¹. Le coefficient de H₂O₂ vaut 2 et H₂O₂ est un réactif : v_vol(0) = −(1/2) × d[H₂O₂]/dt = −(1/2) × (−0,20) = 0,10 mol·L⁻¹·min⁻¹, soit 0,1 mol·L⁻¹·min⁻¹ (0,10 avec deux chiffres significatifs) ✓. La vitesse est positive, et on divise la pente par le coefficient 2.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un cube de catalyseur solide de 2,0 cm de côté est broyé en petits cubes de 0,10 cm de côté. Par quel facteur la surface totale du catalyseur est-elle multipliée ?",
+      "answerKey": {
+        "value": 20.0,
+        "unit": "sans unité"
+      },
+      "explanation": "Le gros cube a pour surface 6 × (2,0)² = 24 cm². On obtient (2,0/0,10)³ = 8000 petits cubes de surface 6 × (0,10)² = 0,060 cm² chacun, soit 8000 × 0,060 = 480 cm² au total. Le facteur est 480/24 = 20 ✓, c'est-à-dire le rapport des côtés 2,0/0,10 : diviser l'arête par k multiplie la surface par k.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Trois expériences sur 2 I⁻ + S₂O₈²⁻ → I₂ + 2 SO₄²⁻, avec I⁻ en large excès : X1 : [S₂O₈²⁻]₀ = 20 mmol·L⁻¹ à 30 °C ; X2 : [S₂O₈²⁻]₀ = 10 mmol·L⁻¹ à 30 °C ; X3 : [S₂O₈²⁻]₀ = 10 mmol·L⁻¹ à 50 °C. Les courbes [I₂](t) sont repérées (a), (b) et (c). Quelle attribution est correcte ?\n<svg viewBox=\"0 0 340 236\"><title>Trois courbes de [I₂] en fonction du temps, repérées (a), (b) et (c)</title><line x1=\"54.0\" y1=\"26.0\" x2=\"54.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"99.3\" y1=\"26.0\" x2=\"99.3\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"144.7\" y1=\"26.0\" x2=\"144.7\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"190.0\" y1=\"26.0\" x2=\"190.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"235.3\" y1=\"26.0\" x2=\"235.3\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"280.7\" y1=\"26.0\" x2=\"280.7\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326.0\" y1=\"26.0\" x2=\"326.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"190.0\" x2=\"326.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"155.8\" x2=\"326.0\" y2=\"155.8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"121.7\" x2=\"326.0\" y2=\"121.7\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"87.5\" x2=\"326.0\" y2=\"87.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"53.3\" x2=\"326.0\" y2=\"53.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54.0\" y1=\"190.0\" x2=\"332.0\" y2=\"190.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54.0\" y1=\"190.0\" x2=\"54.0\" y2=\"18.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"54.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"99.3\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><text x=\"144.7\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"190.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">15</text><text x=\"235.3\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"280.7\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">25</text><text x=\"326.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"48.0\" y=\"194.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"159.8\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><text x=\"48.0\" y=\"125.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"48.0\" y=\"91.5\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">15</text><text x=\"48.0\" y=\"57.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"334.0\" y=\"218.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (min)</text><text x=\"60.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">[I₂] (mmol/L)</text><polyline points=\"54.0,190.0 57.4,185.0 60.8,180.1 64.2,175.5 67.6,171.0 71.0,166.6 74.4,162.5 77.8,158.4 81.2,154.6 84.6,150.9 88.0,147.3 91.4,143.8 94.8,140.5 98.2,137.3 101.6,134.2 105.0,131.2 108.4,128.3 111.8,125.6 115.2,122.9 118.6,120.4 122.0,117.9 125.4,115.5 128.8,113.2 132.2,111.0 135.6,108.9 139.0,106.9 142.4,104.9 145.8,103.0 149.2,101.2 152.6,99.4 156.0,97.7 159.4,96.1 162.8,94.5 166.2,93.0 169.6,91.5 173.0,90.1 176.4,88.8 179.8,87.5 183.2,86.2 186.6,85.0 190.0,83.8 193.4,82.7 196.8,81.6 200.2,80.6 203.6,79.6 207.0,78.6 210.4,77.7 213.8,76.8 217.2,75.9 220.6,75.1 224.0,74.3 227.4,73.5 230.8,72.8 234.2,72.1 237.6,71.4 241.0,70.7 244.4,70.1 247.8,69.5 251.2,68.9 254.6,68.3 258.0,67.7 261.4,67.2 264.8,66.7 268.2,66.2 271.6,65.7 275.0,65.3 278.4,64.8 281.8,64.4 285.2,64.0 288.6,63.6 292.0,63.2 295.4,62.9 298.8,62.5 302.2,62.2 305.6,61.9 309.0,61.5 312.4,61.2 315.8,60.9 319.2,60.7 322.6,60.4 326.0,60.1\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"54.0,190.0 57.4,188.2 60.8,186.4 64.2,184.7 67.6,183.1 71.0,181.4 74.4,179.9 77.8,178.3 81.2,176.8 84.6,175.4 88.0,173.9 91.4,172.6 94.8,171.2 98.2,169.9 101.6,168.6 105.0,167.4 108.4,166.2 111.8,165.0 115.2,163.9 118.6,162.7 122.0,161.7 125.4,160.6 128.8,159.6 132.2,158.6 135.6,157.6 139.0,156.6 142.4,155.7 145.8,154.8 149.2,153.9 152.6,153.1 156.0,152.3 159.4,151.5 162.8,150.7 166.2,149.9 169.6,149.2 173.0,148.4 176.4,147.7 179.8,147.0 183.2,146.4 186.6,145.7 190.0,145.1 193.4,144.5 196.8,143.9 200.2,143.3 203.6,142.7 207.0,142.1 210.4,141.6 213.8,141.1 217.2,140.6 220.6,140.1 224.0,139.6 227.4,139.1 230.8,138.6 234.2,138.2 237.6,137.8 241.0,137.3 244.4,136.9 247.8,136.5 251.2,136.1 254.6,135.7 258.0,135.4 261.4,135.0 264.8,134.7 268.2,134.3 271.6,134.0 275.0,133.6 278.4,133.3 281.8,133.0 285.2,132.7 288.6,132.4 292.0,132.1 295.4,131.9 298.8,131.6 302.2,131.3 305.6,131.1 309.0,130.8 312.4,130.6 315.8,130.4 319.2,130.1 322.6,129.9 326.0,129.7\" fill=\"none\" stroke=\"#7e22ce\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"54.0,190.0 57.4,183.9 60.8,178.3 64.2,173.2 67.6,168.6 71.0,164.4 74.4,160.6 77.8,157.1 81.2,153.9 84.6,151.1 88.0,148.4 91.4,146.0 94.8,143.9 98.2,141.9 101.6,140.1 105.0,138.4 108.4,136.9 111.8,135.5 115.2,134.3 118.6,133.2 122.0,132.1 125.4,131.2 128.8,130.4 132.2,129.6 135.6,128.9 139.0,128.2 142.4,127.6 145.8,127.1 149.2,126.6 152.6,126.2 156.0,125.8 159.4,125.4 162.8,125.1 166.2,124.8 169.6,124.5 173.0,124.2 176.4,124.0 179.8,123.8 183.2,123.6 186.6,123.4 190.0,123.3 193.4,123.1 196.8,123.0 200.2,122.9 203.6,122.8 207.0,122.7 210.4,122.6 213.8,122.5 217.2,122.4 220.6,122.4 224.0,122.3 227.4,122.2 230.8,122.2 234.2,122.1 237.6,122.1 241.0,122.1 244.4,122.0 247.8,122.0 251.2,122.0 254.6,121.9 258.0,121.9 261.4,121.9 264.8,121.9 268.2,121.9 271.6,121.8 275.0,121.8 278.4,121.8 281.8,121.8 285.2,121.8 288.6,121.8 292.0,121.8 295.4,121.8 298.8,121.7 302.2,121.7 305.6,121.7 309.0,121.7 312.4,121.7 315.8,121.7 319.2,121.7 322.6,121.7 326.0,121.7\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"280.7\" y=\"56.6\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">(a)</text><text x=\"280.7\" y=\"151.1\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#7e22ce\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">(b)</text><text x=\"235.3\" y=\"114.1\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">(c)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) = X1, (b) = X3, (c) = X2"
+        },
+        {
+          "id": "b",
+          "text": "(a) = X1, (b) = X2, (c) = X3"
+        },
+        {
+          "id": "c",
+          "text": "(a) = X2, (b) = X1, (c) = X3"
+        },
+        {
+          "id": "d",
+          "text": "(a) = X3, (b) = X2, (c) = X1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec I⁻ en excès, le palier est [S₂O₈²⁻]₀ : la courbe qui tend vers 20 mmol·L⁻¹ est celle de X1, soit « a » ; les courbes « b » et « c » tendent vers 10 mmol·L⁻¹ : ce sont X2 et X3. Ces deux expériences ne diffèrent que par la température ; la plus raide au départ est la plus chaude : « c » = X3 et « b » = X2 ✓. Intervertir « b » et « c » attribue la courbe la plus lente à la température la plus élevée. Les deux autres attributions donnent à la courbe « a » un palier de 10 mmol·L⁻¹, ce que sa montée jusqu'à 20 mmol·L⁻¹ interdit.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les maîtres du temps",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "La vitesse volumique initiale de la même réaction vaut 0,45 mmol·L⁻¹·min⁻¹ dans le bécher rouge et 9,0·10⁻³ mol·m⁻³·s⁻¹ dans le bécher bleu. Dans quel bécher la réaction est-elle, au départ, la plus rapide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun : ces deux vitesses sont exprimées dans des unités différentes, donc incomparables."
+        },
+        {
+          "id": "b",
+          "text": "Le bleu : 9,0·10⁻³ mol·m⁻³·s⁻¹ = 0,54 mmol·L⁻¹·min⁻¹, supérieur à 0,45."
+        },
+        {
+          "id": "c",
+          "text": "Le rouge : 0,45 mmol·L⁻¹·min⁻¹ vaut 27 mol·m⁻³·s⁻¹, bien supérieur à 9,0·10⁻³."
+        },
+        {
+          "id": "d",
+          "text": "Le rouge : 9,0·10⁻³ mol·m⁻³·s⁻¹ ne vaut que 1,5·10⁻⁴ mmol·L⁻¹·min⁻¹."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Il faut comparer dans la même unité. 1 mol·m⁻³ = 1 mmol·L⁻¹ (car 1 m³ = 10³ L), donc 9,0·10⁻³ mol·m⁻³·s⁻¹ = 9,0·10⁻³ mmol·L⁻¹·s⁻¹ = 9,0·10⁻³ × 60 = 0,54 mmol·L⁻¹·min⁻¹, supérieur à 0,45 : la réaction est plus rapide dans le bécher bleu ✓. Les unités diffèrent, mais une conversion les rend comparables : renoncer à comparer est inutile (comparer 0,45 et 9,0·10⁻³ sans conversion serait tout aussi faux). Passer des minutes aux secondes en multipliant par 60 au lieu de diviser donne 27, ce qui est faux : 0,45 mol·m⁻³·min⁻¹ vaut 7,5·10⁻³ mol·m⁻³·s⁻¹. Dire que 9,0·10⁻³ mol·m⁻³·s⁻¹ ne vaut que 1,5·10⁻⁴ mmol·L⁻¹·min⁻¹ divise par 60 au lieu de multiplier : 9,0·10⁻³ / 60 = 1,5·10⁻⁴ mmol·L⁻¹·min⁻¹, ce qui est faux (passer de s⁻¹ à min⁻¹ multiplie par 60).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un bécher contenant de l'amidon, des ions iodure et de l'eau oxygénée en milieu acide en excès, on introduit à t = 0 le dernier réactif. À la burette, on verse 1,0 mL de thiosulfate de sodium à 0,10 mol·L⁻¹ ; le bleu apparaît à t₁ = 40 s. On en ajoute 1,0 mL de plus à chaque apparition du bleu, sans arrêter le chronomètre : le bleu revient à t₂ = 90 s, t₃ = 145 s et t₄ = 210 s. Quelle est la vitesse moyenne de la réaction entre t₂ et t₄, en mol·s⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8,3·10⁻⁷"
+        },
+        {
+          "id": "b",
+          "text": "4,2·10⁻⁷"
+        },
+        {
+          "id": "c",
+          "text": "9,5·10⁻⁷"
+        },
+        {
+          "id": "d",
+          "text": "1,1·10⁻⁶"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque ajout apporte n(S₂O₃²⁻) = 0,10 × 1,0·10⁻³ = 1,0·10⁻⁴ mol, qui consomme 5,0·10⁻⁵ mol de diiode : chaque apparition du bleu correspond à un avancement qui augmente de 5,0·10⁻⁵ mol. De t₂ à t₄, deux ajouts : Δx = 1,0·10⁻⁴ mol, Δt = 210 − 90 = 120 s, donc v_moy = 1,0·10⁻⁴/120 ≈ 8,3·10⁻⁷ mol·s⁻¹ ✓. La valeur 4,2·10⁻⁷ ne compte qu'un seul ajout (5,0·10⁻⁵/120). La valeur 9,5·10⁻⁷ est x(t₄)/t₄ = 2,0·10⁻⁴/210, la vitesse moyenne depuis l'origine. La valeur 1,1·10⁻⁶ divise Δx par t₂ = 90 s au lieu de la durée t₄ − t₂.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "À propos de la vitesse d'une réaction qui se déroule en une seule phase, à volume constant, quelles affirmations sont exactes ? (Plusieurs réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "À t = 0, la vitesse est nulle puisque l'avancement est nul."
+        },
+        {
+          "id": "b",
+          "text": "La vitesse instantanée est la limite de la vitesse moyenne quand l'intervalle de temps tend vers 0."
+        },
+        {
+          "id": "c",
+          "text": "La vitesse d'une réaction est négative lorsqu'on la déduit de la concentration d'un réactif."
+        },
+        {
+          "id": "d",
+          "text": "La vitesse volumique ne dépend pas du volume de la solution."
+        },
+        {
+          "id": "e",
+          "text": "La vitesse instantanée à t se lit sur la sécante joignant l'origine au point d'abscisse t."
+        },
+        {
+          "id": "f",
+          "text": "La vitesse volumique moyenne s'obtient en divisant la vitesse moyenne par le volume du mélange."
+        }
+      ],
+      "answerKey": {
+        "correct": ["b", "d", "f"]
+      },
+      "explanation": "Exactes : la vitesse instantanée est la limite de la vitesse moyenne quand t₂ tend vers t₁ ; la vitesse volumique ne dépend pas du volume, car deux prélèvements d'un même mélange ont les mêmes concentrations ; la vitesse volumique moyenne vaut v_moy/V. Fausses : à t = 0 la vitesse est au contraire maximale, car x(0) = 0 donne la hauteur de la courbe et non sa pente ; la vitesse d'une réaction est positive, c'est la dérivée de la concentration d'un réactif qui est négative et le signe moins de la relation qui le compense ; la sécante donne une vitesse moyenne, la vitesse instantanée se lit sur la tangente.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la réaction BrO₃⁻ + 5 Br⁻ + 6 H₃O⁺ → 3 Br₂ + 9 H₂O, menée à volume constant, la tangente à la courbe [Br₂](t) à un instant t a pour pente 6,0·10⁻³ mol·L⁻¹·s⁻¹. Quelle est, au même instant, la pente de la tangente à la courbe [Br⁻](t), en mol·L⁻¹·s⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6,0·10⁻³"
+        },
+        {
+          "id": "b",
+          "text": "−3,0·10⁻²"
+        },
+        {
+          "id": "c",
+          "text": "−1,0·10⁻²"
+        },
+        {
+          "id": "d",
+          "text": "+2,0·10⁻³"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le coefficient de Br₂ vaut 3 : v_vol = (1/3)·d[Br₂]/dt = 2,0·10⁻³ mol·L⁻¹·s⁻¹. Le coefficient de Br⁻ vaut 5 et c'est un réactif : d[Br⁻]/dt = −5·v_vol = −1,0·10⁻² mol·L⁻¹·s⁻¹ ✓. La valeur −6,0·10⁻³ suppose que les deux concentrations varient au même rythme, sans tenir compte des coefficients. La valeur −3,0·10⁻² multiplie directement la pente de Br₂ par 5, sans la diviser d'abord par 3. La valeur +2,0·10⁻³ est la vitesse volumique elle-même, pas la pente de la courbe [Br⁻](t).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un comprimé effervescent est plongé dans un bécher contenant V = 100 mL de solution ; le dioxyde de carbone dégagé (coefficient 1 dans l'équation, V_m = 24 L·mol⁻¹) est recueilli. Sur la courbe V(CO₂) = f(t), la tangente au point M d'abscisse 10 s passe par A(0 ; 22) et B(20 ; 118), les volumes étant en mL. Calculer la vitesse volumique de la réaction à t = 10 s, en 10⁻³ mol·L⁻¹·s⁻¹ (à 0,1 près).\n<svg viewBox=\"0 0 340 236\"><title>Courbe V(CO₂)(t) et tangente au point d'abscisse 10 s passant par A et B</title><line x1=\"54.0\" y1=\"26\" x2=\"54.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"108.4\" y1=\"26\" x2=\"108.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"162.8\" y1=\"26\" x2=\"162.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"217.2\" y1=\"26\" x2=\"217.2\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"271.6\" y1=\"26\" x2=\"271.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326.0\" y1=\"26\" x2=\"326.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190.0\" x2=\"326\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"157.2\" x2=\"326\" y2=\"157.2\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"124.4\" x2=\"326\" y2=\"124.4\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"91.6\" x2=\"326\" y2=\"91.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"58.8\" x2=\"326\" y2=\"58.8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"54.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"108.4\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"162.8\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"217.2\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"271.6\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><text x=\"326.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">50</text><text x=\"48.0\" y=\"194.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"161.2\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"48.0\" y=\"128.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">60</text><text x=\"48.0\" y=\"95.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">90</text><text x=\"48.0\" y=\"62.8\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">120</text><text x=\"334.0\" y=\"218.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (s)</text><text x=\"60.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">V(CO₂) (mL)</text><polyline points=\"54.0,190.0 57.0,184.2 60.0,178.7 63.1,173.3 66.1,168.1 69.1,163.2 72.1,158.4 75.2,153.8 78.2,149.4 81.2,145.2 84.2,141.1 87.2,137.1 90.3,133.4 93.3,129.7 96.3,126.2 99.3,122.8 102.4,119.6 105.4,116.5 108.4,113.5 111.4,110.6 114.4,107.8 117.5,105.1 120.5,102.5 123.5,100.1 126.5,97.7 129.6,95.4 132.6,93.2 135.6,91.1 138.6,89.0 141.6,87.0 144.7,85.1 147.7,83.3 150.7,81.6 153.7,79.9 156.8,78.3 159.8,76.7 162.8,75.2 165.8,73.8 168.8,72.4 171.9,71.0 174.9,69.7 177.9,68.5 180.9,67.3 184.0,66.2 187.0,65.1 190.0,64.0 193.0,63.0 196.0,62.0 199.1,61.0 202.1,60.1 205.1,59.3 208.1,58.4 211.2,57.6 214.2,56.8 217.2,56.1 220.2,55.3 223.2,54.6 226.3,54.0 229.3,53.3 232.3,52.7 235.3,52.1 238.4,51.5 241.4,51.0 244.4,50.5 247.4,50.0 250.4,49.5 253.5,49.0 256.5,48.5 259.5,48.1 262.5,47.7 265.6,47.3 268.6,46.9 271.6,46.5 274.6,46.1 277.6,45.8 280.7,45.5 283.7,45.1 286.7,44.8 289.7,44.5 292.8,44.2 295.8,44.0 298.8,43.7 301.8,43.4 304.8,43.2 307.9,43.0 310.9,42.7 313.9,42.5 316.9,42.3 320.0,42.1 323.0,41.9 326.0,41.7\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"54.0\" y1=\"165.9\" x2=\"190.0\" y2=\"34.7\" stroke=\"#c2410c\" stroke-width=\"2\"/><circle cx=\"54.0\" cy=\"165.9\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"162.8\" cy=\"61.0\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"108.4\" cy=\"113.5\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><text x=\"65.0\" y=\"179.9\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"152.8\" y=\"53.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"120.4\" y=\"127.5\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text></svg>",
+      "answerKey": {
+        "value": 2.0,
+        "tolerance": 0.05,
+        "unit": "10⁻³ mol·L⁻¹·s⁻¹"
+      },
+      "explanation": "La pente de la tangente vaut dV/dt = (118 − 22)/(20 − 0) = 4,8 mL·s⁻¹ = 4,8·10⁻³ L·s⁻¹. Le coefficient de CO₂ vaut 1 : dx/dt = (dV/dt)/V_m = 4,8·10⁻³/24 = 2,0·10⁻⁴ mol·s⁻¹. Puis v_vol = (dx/dt)/V = 2,0·10⁻⁴/0,100 = 2,0·10⁻³ mol·L⁻¹·s⁻¹, soit 2 en 10⁻³ mol·L⁻¹·s⁻¹ (2,0 à 0,1 près).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un mélange contient nᵢ(H₂O₂) = 2,4·10⁻³ mol et nᵢ(I⁻) = 4,0·10⁻³ mol, avec de l'acide en excès : H₂O₂ + 2 I⁻ + 2 H₃O⁺ → I₂ + 4 H₂O. Le temps de demi-réaction vaut t₁/₂ = 5,0 min. Quelle est la vitesse moyenne de la réaction entre t = 0 et t = t₁/₂, en mol·min⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,4·10⁻⁴"
+        },
+        {
+          "id": "b",
+          "text": "4,0·10⁻⁴"
+        },
+        {
+          "id": "c",
+          "text": "8,0·10⁻⁴"
+        },
+        {
+          "id": "d",
+          "text": "2,0·10⁻⁴"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Il faut d'abord le réactif limitant : H₂O₂ permettrait x = 2,4·10⁻³ mol, I⁻ seulement 4,0·10⁻³/2 = 2,0·10⁻³ mol. C'est donc I⁻ qui limite : x_max = 2,0·10⁻³ mol. À t₁/₂, x = x_max/2 = 1,0·10⁻³ mol, d'où v_moy = 1,0·10⁻³/5,0 = 2,0·10⁻⁴ mol·min⁻¹ ✓. La valeur 2,4·10⁻⁴ prend H₂O₂ pour réactif limitant (1,2·10⁻³/5,0). La valeur 4,0·10⁻⁴ divise x_max entier par t₁/₂, au lieu de la moitié atteinte à t₁/₂. La valeur 8,0·10⁻⁴ prend n(I⁻) pour x_max sans tenir compte du coefficient 2, et oublie aussi la moitié.",
+      "difficulty": 3
+    }
+  ]
+}
