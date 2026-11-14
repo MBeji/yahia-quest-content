@@ -51,7 +51,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "En AM, l'amplitude dépend du temps : 6 (2 + cos 400 t) multiplie cos(10⁶ t) ✓. La tension 5 cos(3·10⁵ t) est une porteuse non modulée. La tension 6 cos(10⁶ t + 2 cos 400 t) a une amplitude constante et une phase variable : c'est une FM. La tension 3 + 2 cos 400 t est un signal modulant avec son décalage.",
+      "explanation": "En AM, l'amplitude dépend du temps : 6 (2 + cos 400 t) multiplie cos(10⁶ t) ✓. La tension 5 cos(3·10⁵ t) est une porteuse non modulée. La tension 6 cos(10⁶ t + 2,5 cos 400 t) a une amplitude constante et une phase variable : c'est une FM. La tension 3 + 2 cos 400 t est un signal modulant avec son décalage.",
       "difficulty": 1
     },
     {
@@ -127,27 +127,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Une station AM émet une onde de longueur d'onde λ = 600 m (c = 3·10⁸ m·s⁻¹), modulée par un son de 5 kHz. Pour son détecteur d'enveloppe, R = 10 kΩ. Quelle valeur de C convient ?",
+      "prompt": "Une station AM émet une onde de longueur d'onde λ = 1500 m (c = 3·10⁸ m·s⁻¹), modulée par un son de 1 kHz. Pour son détecteur d'enveloppe, R = 15 kΩ. Quelle valeur de C convient ?",
       "options": [
         {
           "id": "a",
-          "text": "20 pF"
+          "text": "33 pF"
         },
         {
           "id": "b",
-          "text": "2 nF"
+          "text": "3,3 nF"
         },
         {
           "id": "c",
-          "text": "200 nF"
+          "text": "330 nF"
         },
         {
           "id": "d",
-          "text": "20 µF"
+          "text": "33 µF"
         }
       ],
       "correctOption": "b",
-      "explanation": "N_p = c/λ = 3·10⁸/600 = 500 kHz, donc T_p = 2 µs ; T = 1/5000 = 200 µs. Il faut 2 µs ≪ RC ≪ 200 µs, soit 0,2 nF ≪ C ≪ 20 nF ✓ : C = 2 nF donne RC = 20 µs. Avec 20 pF, RC = 0,2 µs < T_p. Avec 200 nF, RC = 2 ms > T, et avec 20 µF, RC = 0,2 s.",
+      "explanation": "N_p = c/λ = 3·10⁸/1500 = 200 kHz, donc T_p = 5 µs ; T = 1/1000 = 1 ms. Il faut 5 µs ≪ RC ≪ 1 ms, soit 0,33 nF ≪ C ≪ 67 nF ✓ : C = 3,3 nF donne RC = 50 µs, soit dix fois T_p et vingt fois moins que T. Avec 33 pF, RC = 0,5 µs < T_p. Avec 330 nF, RC = 5 ms > T, et avec 33 µF, RC = 0,5 s.",
       "difficulty": 3
     }
   ]

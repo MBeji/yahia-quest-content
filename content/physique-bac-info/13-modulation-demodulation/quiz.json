@@ -18,35 +18,35 @@
         },
         {
           "id": "d",
-          "text": "La valeur de la constante k"
+          "text": "La phase de la tension porteuse"
         }
       ],
       "correctOption": "a",
-      "explanation": "Le signal modulant fait varier l'amplitude de la porteuse, au rythme de sa propre fréquence N ✓. La fréquence de la porteuse reste N_p, et celle de la tension modulée aussi : c'est la FM, et non l'AM, qui fait varier une fréquence. La constante k = 0,1 V⁻¹ est celle du multiplieur et ne change pas.",
+      "explanation": "Le signal modulant fait varier l'amplitude de la porteuse, au rythme de sa propre fréquence N ✓. La fréquence de la porteuse reste N_p, et celle de la tension modulée aussi : c'est la FM, et non l'AM, qui fait varier une fréquence. La phase de la porteuse ne porte pas l'information en AM.",
       "difficulty": 1
     },
     {
-      "prompt": "Une station radio est annoncée sur 162 kHz. Que représente cette fréquence ?",
+      "prompt": "Sur quelle broche du multiplieur AD633JN branche-t-on la porteuse u_p ?",
       "options": [
         {
           "id": "a",
-          "text": "La fréquence de la porteuse de la station"
+          "text": "Broche 1"
         },
         {
           "id": "b",
-          "text": "La fréquence du son transmis par la station"
+          "text": "Broche 3"
         },
         {
           "id": "c",
-          "text": "La fréquence de coupure du récepteur"
+          "text": "Broche 5"
         },
         {
           "id": "d",
-          "text": "La largeur de bande occupée par la station"
+          "text": "Broche 7"
         }
       ],
-      "correctOption": "a",
-      "explanation": "La fréquence annoncée d'une station est celle de sa porteuse N_p ✓. Le son transmis a une fréquence N bien plus petite, de l'ordre de quelques kHz. La fréquence de coupure est celle d'un filtre du récepteur, et la largeur de bande vaut 2N.",
+      "correctOption": "b",
+      "explanation": "La porteuse se branche sur la broche 3, tandis que u(t) + U_0 va sur la broche 1 ✓. La broche 7 est la sortie, qui délivre u_S = k·u₁·u_p, et la broche 5 est l'alimentation à −15 V.",
       "difficulty": 1
     },
     {
@@ -146,31 +146,31 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un son de fréquence maximale 4 kHz module en amplitude une porteuse de 150 kHz. Quelle est la largeur de la bande de fréquences occupée ?",
+      "prompt": "Quel étage de la chaîne de démodulation supprime la composante continue due à la tension de décalage ?",
       "options": [
         {
           "id": "a",
-          "text": "4 kHz"
+          "text": "Le détecteur d'enveloppe"
         },
         {
           "id": "b",
-          "text": "8 kHz"
+          "text": "Le passe-bas R'C'"
         },
         {
           "id": "c",
-          "text": "154 kHz"
+          "text": "Le circuit d'accord LC"
         },
         {
           "id": "d",
-          "text": "300 kHz"
+          "text": "Le passe-haut R''C''"
         }
       ],
-      "correctOption": "b",
-      "explanation": "La bande a pour largeur ΔN = (N_p + N) − (N_p − N) = 2N = 8 kHz ✓. La valeur 4 kHz oublie le facteur 2. La valeur 154 kHz est la fréquence de la raie haute N_p + N, non une largeur. La valeur 300 kHz double la porteuse au lieu du signal modulant.",
+      "correctOption": "d",
+      "explanation": "Une tension continue a une fréquence nulle : seul un filtre passe-haut R''C'', avec R''C'' ≫ T, la supprime sans toucher au signal modulant ✓. Le passe-bas R'C' supprime au contraire les ondulations à la fréquence N_p. Le détecteur d'enveloppe conserve la composante continue, et le circuit d'accord sélectionne la porteuse de la station.",
       "difficulty": 2
     },
     {
-      "prompt": "Soit T la période du signal modulant et T_p celle de la porteuse. Quelle condition la constante de temps τ = RC d'un détecteur d'enveloppe doit-elle vérifier ?",
+      "prompt": "Avec T la période du signal modulant et T_p celle de la porteuse, quelle inégalité le produit RC doit-il vérifier pour un bon détecteur ?",
       "options": [
         {
           "id": "a",
