@@ -1,0 +1,84 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du directeur des achats",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un détaillant vend 1 500 pièces par an, achetées 30 D l'unité. Passer une commande lui coûte 200 D et garder 1 D de stock lui coûte 0,32 D par an. Quel nombre de commandes annuelles est optimal ?",
+      "answerKey": {
+        "value": 6,
+        "unit": "commandes"
+      },
+      "explanation": "C = 1 500 × 30 = 45 000 D. N* = √(45 000 × 0,32 ÷ 400) = √(14 400 ÷ 400) = √36 = 6 commandes ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour un détaillant qui vend 1 500 pièces par an à 30 D, avec 200 D par commande et 0,32 D de possession par dinar de stock, quel est le plus bas coût d'approvisionnement annuel possible, en D ?",
+      "answerKey": {
+        "value": 2400,
+        "unit": "D"
+      },
+      "explanation": "C = 45 000 D et N* = 6. Possession = 45 000 × 0,32 ÷ 12 = 1 200 D ; passation = 6 × 200 = 1 200 D. Total = 2 400 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise passe 4 commandes égales par an. Son coût total de possession est de 900 D, son taux de possession de 0,25 et le prix d'achat unitaire de 30 D. Quelle est sa consommation annuelle, en unités ?",
+      "answerKey": {
+        "value": 960,
+        "unit": "unités"
+      },
+      "explanation": "Coût de possession = C × i ÷ (2 × N), donc C = 900 × 8 ÷ 0,25 = 28 800 D. Quantité = 28 800 ÷ 30 = 960 unités ✓. Contrôle : 28 800 × 0,25 ÷ 8 = 900 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un grossiste achète pour 48 000 D par an et garde 1 D de stock pour 0,30 D par an. Le coût d'une commande passe de 200 D à 450 D. De combien de commandes son rythme optimal baisse-t-il ?",
+      "answerKey": {
+        "value": 2,
+        "unit": "commandes"
+      },
+      "explanation": "Avant : N* = √(48 000 × 0,30 ÷ 400) = √36 = 6. Après : N* = √(14 400 ÷ 900) = √16 = 4. Le nombre optimal diminue de 6 − 4 = 2 commandes ✓. Une commande plus chère à passer incite à en passer moins.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour 600 articles consommés par an à 75 D la pièce, avec un taux de possession de 0,10 et un coût de passation de 90 D, un élève calcule N* = √(600 × 0,10 ÷ 180) ≈ 0,58. Où est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a oublié de doubler le coût de passation au dénominateur de la formule de Wilson"
+        },
+        {
+          "id": "b",
+          "text": "Il a échangé le taux de possession et le coût de passation dans la formule de Wilson"
+        },
+        {
+          "id": "c",
+          "text": "Il a pris la quantité, 600 articles, au lieu de la valeur de la consommation"
+        },
+        {
+          "id": "d",
+          "text": "Il a conservé la racine carrée alors qu'il fallait l'enlever pour obtenir N*"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La formule de Wilson demande C, la valeur de la consommation : 600 × 75 = 45 000 D. On obtient N* = √(45 000 × 0,10 ÷ 180) = √25 = 5 commandes. Le dénominateur 180 contient bien le doublement de 90, les rôles de i et de p ne sont pas échangés, et la racine fait partie de la formule.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un magasin achète pour 20 000 D par an ; passer commande lui coûte 120 D et garder 1 D de stock 0,30 D par an. Il s'approvisionne 8 fois par an alors que son rythme optimal est différent. Quel surcoût annuel cela représente-t-il, en D ?",
+      "answerKey": {
+        "value": 135,
+        "unit": "D"
+      },
+      "explanation": "N* = √(20 000 × 0,30 ÷ 240) = √25 = 5 ; coût minimal = 20 000 × 0,30 ÷ 10 + 5 × 120 = 600 + 600 = 1 200 D. Avec 8 commandes : 6 000 ÷ 16 + 8 × 120 = 375 + 960 = 1 335 D. Surcoût = 1 335 − 1 200 = 135 D ✓.",
+      "difficulty": 3
+    }
+  ]
+}

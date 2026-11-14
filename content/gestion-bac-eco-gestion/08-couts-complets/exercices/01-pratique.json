@@ -1,0 +1,152 @@
+{
+  "title": "⭐ Exercice : Premières armes — la chaîne des coûts",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque notion à ce qui la caractérise.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Charge directe"
+        },
+        {
+          "id": "l2",
+          "text": "Charge indirecte"
+        },
+        {
+          "id": "l3",
+          "text": "Centre auxiliaire"
+        },
+        {
+          "id": "l4",
+          "text": "Centre principal"
+        },
+        {
+          "id": "r1",
+          "text": "S'affecte au coût d'un produit sans calcul intermédiaire"
+        },
+        {
+          "id": "r2",
+          "text": "Se répartit entre des centres puis s'impute aux coûts"
+        },
+        {
+          "id": "r3",
+          "text": "Travaille pour d'autres centres, hors fabrication directe"
+        },
+        {
+          "id": "r4",
+          "text": "Ses charges entrent dans les coûts par l'unité d'œuvre"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Une charge directe concerne un seul produit : on l'affecte telle quelle. Une charge indirecte en concerne plusieurs : on la répartit entre les centres d'analyse puis on l'impute aux coûts. Un centre auxiliaire rend service aux autres centres, ses charges sont donc transférées ensuite. Un centre principal voit ses charges imputées aux coûts grâce à son unité d'œuvre.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le loyer de l'atelier (5 000 D) a pour clé 40 % à l'Atelier, et l'assurance (3 000 D) 50 % à l'Atelier. Quel total de ces deux charges l'Atelier porte-t-il après la répartition primaire, en D ?",
+      "answerKey": {
+        "value": 3500,
+        "unit": "D"
+      },
+      "explanation": "Part du loyer = 5 000 × 40 % = 2 000 D. Part de l'assurance = 3 000 × 50 % = 1 500 D. Total de l'Atelier = 2 000 + 1 500 = 3 500 D ✓. Chaque clé s'applique à sa propre charge, puis on additionne.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une biscuiterie a affecté 12 600 D de charges, secondaire comprise, à sa Livraison, qui a expédié 1 400 colis. Combien coûte l'unité d'œuvre, en D par colis ?",
+      "answerKey": {
+        "value": 9,
+        "unit": "D par colis"
+      },
+      "explanation": "Coût de l'unité d'œuvre = 12 600 ÷ 1 400 = 9 D par colis expédié ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un produit a un chiffre d'affaires de 15 000 D et un coût de revient de 12 500 D. Quel est son résultat analytique, en D ?",
+      "answerKey": {
+        "value": 2500,
+        "unit": "D"
+      },
+      "explanation": "Résultat analytique = 15 000 − 12 500 = 2 500 D ✓ : le produit est bénéficiaire.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "La centrale Énergie d'un atelier de découpe (5 500 D) cède 20 % de ses charges au centre Découpe, déjà à 14 200 D. Que vaut le total de Découpe une fois la répartition secondaire faite, en D ?",
+      "answerKey": {
+        "value": 15300,
+        "unit": "D"
+      },
+      "explanation": "Part reçue de l'Énergie = 5 500 × 20 % = 1 100 D. Total de Découpe = 14 200 + 1 100 = 15 300 D ✓. Les 14 200 D de départ restent : on y ajoute la part reçue, on ne la substitue pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une boutique achète 250 articles à 6 D l'un. Le transporteur lui facture 50 D pour ce lot, et ses charges indirectes d'approvisionnement sont de 0,400 D par article acheté. Quel est son coût d'achat unitaire, en D par article ?",
+      "answerKey": {
+        "value": 6.6,
+        "unit": "D par article"
+      },
+      "explanation": "Prix d'achat = 250 × 6 = 1 500 D. Transport facturé à part = 50 D. Charges indirectes = 250 × 0,400 = 100 D. Coût d'achat = 1 650 D, soit 1 650 ÷ 250 = 6,600 D par article ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la chaîne de calcul qui mène des matières achetées au résultat d'un produit.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer le coût d'achat des matières"
+        },
+        {
+          "id": "b",
+          "text": "Calculer le coût de production des produits"
+        },
+        {
+          "id": "c",
+          "text": "Calculer le coût de revient des produits vendus"
+        },
+        {
+          "id": "d",
+          "text": "Calculer le résultat analytique du produit"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Chaque coût se bâtit sur le précédent : le coût d'achat valorise les matières, qui entrent dans le coût de production ; celui-ci, pour la part vendue, entre dans le coût de revient ; le résultat analytique compare enfin le chiffre d'affaires à ce coût de revient.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "title": "Test de compréhension ⭐ : La gestion prévisionnelle des stocks",
+  "questions": [
+    {
+      "prompt": "Que représente le stock minimum d'un article ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La quantité qui sera consommée pendant le délai d'approvisionnement"
+        },
+        {
+          "id": "b",
+          "text": "La quantité maximale à ne pas dépasser pour éviter le surstockage"
+        },
+        {
+          "id": "c",
+          "text": "La réserve gardée en plus pour se protéger d'un retard de livraison"
+        },
+        {
+          "id": "d",
+          "text": "Le niveau moyen du stock détenu en permanence par l'entreprise"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le stock minimum couvre la consommation pendant le délai d'approvisionnement : si l'on commande à ce niveau, la livraison arrive quand le stock est vide. La quantité à ne pas dépasser est le stock maximum, la réserve contre un retard est le stock de sécurité et le niveau moyen est le stock outil.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quand une entreprise passe davantage de commandes dans l'année, que devient son coût total de passation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il diminue, car chaque commande porte sur une quantité plus petite"
+        },
+        {
+          "id": "b",
+          "text": "Il reste identique, car la consommation annuelle ne change pas"
+        },
+        {
+          "id": "c",
+          "text": "Il augmente, car chaque commande entraîne ses propres frais"
+        },
+        {
+          "id": "d",
+          "text": "Il diminue, car le stock moyen détenu devient plus faible"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le coût de passation d'une commande (appels, courrier, vérification) est en général le même quelle que soit la quantité commandée. Le coût total de passation, N × p, croît donc avec le nombre de commandes N. C'est le coût de possession, et non celui de passation, qui baisse avec le stock moyen.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un magasin consomme régulièrement 8 articles par jour et son fournisseur livre 10 jours après la commande. Sa réserve de sécurité est de 30 articles. À partir de quel niveau de stock, en articles, doit-il déclencher sa commande ?",
+      "answerKey": {
+        "value": 110,
+        "unit": "articles"
+      },
+      "explanation": "Stock minimum = 8 × 10 = 80 articles. Stock d'alerte = 80 + 30 = 110 articles ✓. Avec une réserve de sécurité, la commande part au stock d'alerte ; l'envoyer à 80 articles laisserait la réserve sans effet en cas de retard.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un magasin s'approvisionne en 5 commandes égales pour une consommation annuelle de 30 000 D ; garder 1 D de stock lui coûte 0,15 D par an. Quel est son coût total de possession, en D ?",
+      "answerKey": {
+        "value": 450,
+        "unit": "D"
+      },
+      "explanation": "Coût total de possession = C × i ÷ (2 × N) = 30 000 × 0,15 ÷ 10 = 4 500 ÷ 10 = 450 D ✓. Oublier le facteur 2 donnerait 900 D : le stock moyen est la moitié de ce que l'on reçoit à chaque livraison.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "C est la valeur de la consommation annuelle, i le taux de possession et p le coût de passation d'une commande. Quelle écriture donne le nombre optimal de commandes N* ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N* = √(C × p ÷ (2 × i))"
+        },
+        {
+          "id": "b",
+          "text": "N* = C × i ÷ (2 × p)"
+        },
+        {
+          "id": "c",
+          "text": "N* = √(2 × C × i ÷ p)"
+        },
+        {
+          "id": "d",
+          "text": "N* = √(C × i ÷ (2 × p))"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La formule de Wilson est N* = √(C × i ÷ (2 × p)) : C et i au numérateur, 2 fois p au dénominateur, le tout sous la racine. Échanger i et p, ou déplacer le 2, donne un autre résultat ; sans la racine, on obtiendrait N*² et non N*.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un dépôt écoule 900 palettes par an et la formule de Wilson lui indique 5 commandes. Combien de palettes contient chaque commande ?",
+      "answerKey": {
+        "value": 180,
+        "unit": "palettes"
+      },
+      "explanation": "Lot économique q* = Q ÷ N* = 900 ÷ 5 = 180 palettes ✓. On divise la quantité annuelle, en unités, et non une valeur en dinars.",
+      "difficulty": 2
+    }
+  ]
+}

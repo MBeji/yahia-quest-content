@@ -1,0 +1,212 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La chaîne des coûts de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Une pâtisserie fabrique des baklavas et des makroud. Quelles charges sont directes ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La semoule achetée pour les seuls makroud"
+        },
+        {
+          "id": "b",
+          "text": "Le salaire du pâtissier qui ne fait que des baklavas"
+        },
+        {
+          "id": "c",
+          "text": "Le loyer du local, commun aux deux produits"
+        },
+        {
+          "id": "d",
+          "text": "La facture d'électricité du four commun"
+        },
+        {
+          "id": "e",
+          "text": "Les amandes achetées pour les seuls baklavas"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "La semoule des makroud, le salaire du pâtissier des baklavas et les amandes des baklavas concernent chacun un seul produit : ce sont des charges directes, affectées sans calcul. Le loyer et l'électricité du four commun servent les deux produits : ce sont des charges indirectes, à répartir puis imputer.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque coût à sa composition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Coût d'achat"
+        },
+        {
+          "id": "l2",
+          "text": "Coût de production"
+        },
+        {
+          "id": "l3",
+          "text": "Coût de revient"
+        },
+        {
+          "id": "l4",
+          "text": "Résultat analytique"
+        },
+        {
+          "id": "r1",
+          "text": "Prix d'achat + frais directs d'achat + frais indirects d'approvisionnement"
+        },
+        {
+          "id": "r2",
+          "text": "Matières consommées + main-d'œuvre directe + charges d'atelier imputées"
+        },
+        {
+          "id": "r3",
+          "text": "Coût de production des produits vendus + charges de distribution"
+        },
+        {
+          "id": "r4",
+          "text": "Chiffre d'affaires − coût de revient"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le coût d'achat valorise ce qui entre : prix d'achat et frais d'approvisionnement. Le coût de production ajoute les matières, la main-d'œuvre directe et les charges de l'atelier. Le coût de revient reprend le coût de production de ce qui est vendu et ajoute la distribution. Le résultat analytique compare le chiffre d'affaires à ce coût de revient.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une charge de personnel indirecte de 20 000 D est répartie ainsi : Entretien 15 %, Atelier 60 %, Distribution 25 %. L'Entretien envoie ensuite 50 % de ses charges à l'Atelier et 50 % à la Distribution. Quel est le total de la Distribution après la répartition secondaire, en D ?",
+      "answerKey": {
+        "value": 6500,
+        "unit": "D"
+      },
+      "explanation": "Répartition primaire : Entretien 3 000 D, Atelier 12 000 D, Distribution 5 000 D. L'Entretien envoie 50 % de 3 000 = 1 500 D à la Distribution. Total = 5 000 + 1 500 = 6 500 D ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la teinturerie Ben Slimane, le centre Teinture a reçu 9 900 D des centres auxiliaires lors de la répartition secondaire et affiche alors 42 900 D au total. Il a traité 3 300 kg de laine. Combien coûte son unité d'œuvre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 D par kg de laine"
+        },
+        {
+          "id": "b",
+          "text": "10 D par kg de laine"
+        },
+        {
+          "id": "c",
+          "text": "13 D par kg de laine"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'unité d'œuvre se calcule sur le total après la répartition secondaire : 42 900 ÷ 3 300 = 13 D par kg de laine ✓. 10 D divise le total d'avant la réception des auxiliaires (42 900 − 9 900 = 33 000, puis ÷ 3 300). 3 D ne divise que la part reçue (9 900 ÷ 3 300) et oublie les charges propres du centre.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'atelier d'une menuiserie a sorti 250 chaises ce mois-ci. On relève 4 750 D de bois (coût d'achat), 3 000 D de salaires directs, et l'atelier a tourné 400 heures à 6,500 D l'heure. Combien revient une chaise à la sortie de l'atelier, en D ?",
+      "answerKey": {
+        "value": 41.4,
+        "unit": "D"
+      },
+      "explanation": "Charges d'atelier imputées = 400 × 6,500 = 2 600 D. Coût de production = 4 750 + 3 000 + 2 600 = 10 350 D. Coût de production unitaire = 10 350 ÷ 250 = 41,400 D ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la méthode de traitement des charges indirectes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Répartir les charges indirectes entre tous les centres d'analyse"
+        },
+        {
+          "id": "b",
+          "text": "Transférer les charges des centres auxiliaires vers les centres principaux"
+        },
+        {
+          "id": "c",
+          "text": "Calculer le coût de l'unité d'œuvre de chaque centre principal"
+        },
+        {
+          "id": "d",
+          "text": "Imputer les charges des centres principaux aux coûts des produits"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "La répartition primaire place d'abord chaque charge dans un centre. La répartition secondaire solde ensuite les auxiliaires dans les principaux ; ce n'est qu'alors que le total de chaque centre principal est définitif et qu'on peut calculer le coût de son unité d'œuvre, avant de l'imputer aux produits.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "À propos de la répartition des charges indirectes, quelles affirmations sont vraies ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Après la répartition secondaire, les centres auxiliaires n'ont plus de charges"
+        },
+        {
+          "id": "b",
+          "text": "Le total des centres principaux, après répartition secondaire, égale le total des charges indirectes"
+        },
+        {
+          "id": "c",
+          "text": "Le coût de l'unité d'œuvre se calcule avant la répartition secondaire"
+        },
+        {
+          "id": "d",
+          "text": "Les clés d'une même charge totalisent 100 %"
+        },
+        {
+          "id": "e",
+          "text": "Les charges directes passent par les centres d'analyse"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Les centres auxiliaires sont soldés par la répartition secondaire, et leur total passe dans les centres principaux : la somme reste donc égale au total des charges indirectes. Les clés d'une charge partagent 100 % de celle-ci. Le coût de l'unité d'œuvre se calcule après la répartition secondaire, et les charges directes ne passent par aucun centre : elles sont affectées.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du directeur financier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans la biscuiterie Mansour, le produit X a consommé 6 000 D de matières (au coût d'achat), 9 000 D de main-d'œuvre directe et 1 200 heures-machine à 12,500 D l'heure. La distribution lui impute 3 600 D. Les 1 500 unités fabriquées sont toutes vendues 24 D l'une. Quel est son taux de marge bénéficiaire, en %, arrondi au dixième ?",
+      "answerKey": {
+        "value": 6.7,
+        "tolerance": 0.05,
+        "unit": "%"
+      },
+      "explanation": "Charges d'atelier = 1 200 × 12,500 = 15 000 D. Coût de production = 6 000 + 9 000 + 15 000 = 30 000 D. Coût de revient = 30 000 + 3 600 = 33 600 D. Chiffre d'affaires = 1 500 × 24 = 36 000 D. Résultat = 2 400 D. Taux de marge = 2 400 ÷ 36 000 × 100 ≈ 6,67 %, soit 6,7 % ✓. Le piège courant est de rapporter le résultat au coût de revient : on trouverait 7,1 %, ce qui n'est pas le taux de marge.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans la biscuiterie Mansour, l'Atelier porte 21 000 D et l'Entretien 3 600 D après la répartition primaire. L'Entretien envoie 75 % de ses charges à l'Atelier. L'Atelier a fonctionné 2 000 heures-machine, dont 800 pour le produit Y. Quelles charges d'atelier sont imputées à Y, en D ?",
+      "answerKey": {
+        "value": 9480,
+        "unit": "D"
+      },
+      "explanation": "Part reçue de l'Entretien = 3 600 × 75 % = 2 700 D. Total de l'Atelier = 21 000 + 2 700 = 23 700 D. Coût de l'unité d'œuvre = 23 700 ÷ 2 000 = 11,850 D. Charges imputées à Y = 800 × 11,850 = 9 480 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans l'imprimerie Zouari, deux services d'appui s'échangent des prestations. La Maintenance (6 000 D) en livre 50 % à la Logistique ; celle-ci (8 000 D) en rend 40 % à la Maintenance. En plus, 30 % de la Maintenance et 40 % de la Logistique vont à l'Atelier d'impression, déjà chargé de 15 000 D. Combien porte cet atelier une fois la répartition secondaire terminée, en D ?",
+      "answerKey": {
+        "value": 23950,
+        "unit": "D"
+      },
+      "explanation": "Soit M la Maintenance et L la Logistique : M = 6 000 + 0,4 × L et L = 8 000 + 0,5 × M. Donc M = 6 000 + 0,4 × (8 000 + 0,5 × M) = 9 200 + 0,2 × M, d'où M = 11 500 D et L = 13 750 D. L'Atelier reçoit 30 % de 11 500 = 3 450 D et 40 % de 13 750 = 5 500 D. Total de l'Atelier = 15 000 + 3 450 + 5 500 = 23 950 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise a fabriqué 4 000 articles à un coût de production unitaire de 9,500 D et en a vendu 3 200 à 14 D l'un. La distribution lui coûte 1,200 D par article vendu. Quel est son résultat analytique sur ces ventes, en D ?",
+      "answerKey": {
+        "value": 10560,
+        "unit": "D"
+      },
+      "explanation": "Coût de production des articles vendus = 3 200 × 9,500 = 30 400 D. Distribution = 3 200 × 1,200 = 3 840 D. Coût de revient = 34 240 D. Chiffre d'affaires = 3 200 × 14 = 44 800 D. Résultat = 44 800 − 34 240 = 10 560 D ✓. Avec toute la production à 9,500 D, on aurait trouvé 44 800 − 38 000 − 3 840 = 2 960 D, un résultat faux.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La conserverie Mahjoub a mis en boîte 6 000 pots de confiture, chacun revenant à 3,250 D en sortie d'atelier. Elle en écoule 5 400 ; l'expédition aux clients coûte 0,450 D par pot écoulé. Quel prix de vente par pot faut-il fixer pour dégager un résultat analytique de 8 100 D sur ces ventes, en D ?",
+      "answerKey": {
+        "value": 5.2,
+        "unit": "D"
+      },
+      "explanation": "Coût de production des pots écoulés = 5 400 × 3,250 = 17 550 D. Expédition = 5 400 × 0,450 = 2 430 D. Coût de revient = 19 980 D. Chiffre d'affaires visé = 19 980 + 8 100 = 28 080 D, soit 28 080 ÷ 5 400 = 5,200 D par pot ✓. Le piège courant est de compter les 6 000 pots mis en boîte : on trouverait 6 000 × 3,250 + 2 430 + 8 100 = 30 030 D, puis 5,561 D, un prix faux.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise a acheté 14 000 kg de matière à 2 D le kg. Un transporteur lui a facturé 1 400 D pour ce lot. Le centre Approvisionnement porte 5 600 D après la répartition secondaire, et son unité d'œuvre est le kilogramme acheté. Quel est le coût d'achat unitaire de la matière, en D par kg ?",
+      "answerKey": {
+        "value": 2.5,
+        "unit": "D par kg"
+      },
+      "explanation": "Prix d'achat = 14 000 × 2 = 28 000 D. Charge directe d'achat (transport) = 1 400 D. Charges indirectes = 5 600 D, imputées en entier aux 14 000 kg. Coût d'achat = 28 000 + 1 400 + 5 600 = 35 000 D. Coût d'achat unitaire = 35 000 ÷ 14 000 = 2,500 D par kg ✓.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "title": "⭐ Exercice : Premières armes — charges, marge et seuil",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque notion à ce qui la caractérise.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Charge fixe"
+        },
+        {
+          "id": "l2",
+          "text": "Charge variable"
+        },
+        {
+          "id": "l3",
+          "text": "Marge sur coût variable"
+        },
+        {
+          "id": "l4",
+          "text": "Seuil de rentabilité"
+        },
+        {
+          "id": "r1",
+          "text": "Évolue avec le niveau d'activité, souvent proportionnellement"
+        },
+        {
+          "id": "r2",
+          "text": "Reste inchangée quand l'activité varie, dans une structure donnée"
+        },
+        {
+          "id": "r3",
+          "text": "Chiffre d'affaires moins coût variable"
+        },
+        {
+          "id": "r4",
+          "text": "Chiffre d'affaires pour lequel le résultat est nul"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r1"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Une charge fixe reste la même quand l'activité varie, tant que la structure ne change pas ; une charge variable évolue avec l'activité. La marge sur coût variable est le chiffre d'affaires moins le coût variable. Le seuil de rentabilité est le chiffre d'affaires pour lequel le résultat est nul.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un atelier de couture utilise 6 000 D de tissu pour 400 robes. Le tissu est une charge variable proportionnelle aux robes. Combien coûte le tissu pour 650 robes, en D ?",
+      "answerKey": {
+        "value": 9750,
+        "unit": "D"
+      },
+      "explanation": "Tissu par robe = 6 000 ÷ 400 = 15 D. Pour 650 robes : 650 × 15 = 9 750 D ✓. Une charge variable proportionnelle se calcule à l'unité, puis se multiplie par la quantité.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un article se vend 45 D et son coût variable unitaire est de 28 D. Quelle est la marge sur coût variable unitaire, en D ?",
+      "answerKey": {
+        "value": 17,
+        "unit": "D"
+      },
+      "explanation": "Marge unitaire = prix de vente − coût variable unitaire = 45 − 28 = 17 D ✓. Chaque article vendu apporte 17 D pour couvrir les charges fixes.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "La boulangerie Dar El Khobz a dégagé 74 200 D de marge sur coût variable cette année, alors que son loyer et ses salaires administratifs forment 61 700 D de frais fixes. Quel bénéfice annuel en ressort, en D ?",
+      "answerKey": {
+        "value": 12500,
+        "unit": "D"
+      },
+      "explanation": "Bénéfice = marge sur coût variable − charges fixes = 74 200 − 61 700 = 12 500 D ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le salon de thé Yasmine encaisse 25 000 D sur le semestre et paie 18 000 D d'ingrédients et de boissons pour les servir. Sur chaque dinar encaissé, quelle part reste disponible pour couvrir le loyer et dégager un gain, en % ?",
+      "answerKey": {
+        "value": 28,
+        "unit": "%"
+      },
+      "explanation": "Marge sur coût variable = 25 000 − 18 000 = 7 000 D. Taux = 7 000 ÷ 25 000 × 100 = 28 % ✓. Le taux se rapporte au chiffre d'affaires, non aux achats.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes pour passer des charges au résultat d'exploitation.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Classer les charges en charges fixes et charges variables"
+        },
+        {
+          "id": "b",
+          "text": "Additionner les charges variables pour obtenir le coût variable"
+        },
+        {
+          "id": "c",
+          "text": "Calculer la marge sur coût variable : chiffre d'affaires − coût variable"
+        },
+        {
+          "id": "d",
+          "text": "Retrancher les charges fixes de la marge sur coût variable"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Il faut d'abord classer les charges, sans quoi on ne sait pas ce qui entre dans le coût variable. On calcule ensuite ce coût variable, puis la marge qui en découle ; les charges fixes ne se retranchent qu'à la fin, de la marge, pour donner le résultat.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un produit se vend 12 D, son coût variable unitaire est de 8 D et les charges fixes sont de 36 000 D. Combien d'unités faut-il vendre pour atteindre le seuil de rentabilité ?",
+      "answerKey": {
+        "value": 9000,
+        "unit": "unités"
+      },
+      "explanation": "Marge unitaire = 12 − 8 = 4 D. Seuil en quantité = charges fixes ÷ marge unitaire = 36 000 ÷ 4 = 9 000 unités ✓. Contrôle : 9 000 × 12 = 108 000 D de chiffre d'affaires.",
+      "difficulty": 2
+    }
+  ]
+}

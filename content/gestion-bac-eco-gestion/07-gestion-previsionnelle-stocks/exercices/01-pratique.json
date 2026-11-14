@@ -1,0 +1,166 @@
+{
+  "title": "⭐ Exercice : Premières armes — niveaux, coûts et dates",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque niveau de stock à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Stock maximum"
+        },
+        {
+          "id": "l2",
+          "text": "Stock minimum"
+        },
+        {
+          "id": "l3",
+          "text": "Stock de sécurité"
+        },
+        {
+          "id": "l4",
+          "text": "Stock d'alerte"
+        },
+        {
+          "id": "r1",
+          "text": "Quantité à ne pas dépasser pour éviter le surstockage"
+        },
+        {
+          "id": "r2",
+          "text": "Quantité consommée pendant le délai d'approvisionnement"
+        },
+        {
+          "id": "r3",
+          "text": "Réserve ajoutée contre un retard de livraison ou un afflux de demande"
+        },
+        {
+          "id": "r4",
+          "text": "Somme du stock minimum et du stock de sécurité"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le stock maximum est le plafond à ne pas dépasser. Le stock minimum couvre le délai d'approvisionnement. Le stock de sécurité est la réserve qui s'y ajoute contre l'imprévu, et le stock d'alerte est la somme des deux.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Au 1er mars, le magasin de Mme Hajer contient 140 cartouches. Il en reçoit 360 et en vend 410 pendant le mois. Combien en reste-t-il à la fin du mois ?",
+      "answerKey": {
+        "value": 90,
+        "unit": "cartouches"
+      },
+      "explanation": "État du stock = stock initial + entrées − sorties = 140 + 360 − 410 = 90 cartouches ✓. Les entrées s'ajoutent, les sorties se retranchent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une entreprise déclenche sa commande quand son stock atteint le stock minimum. Si la livraison arrive à la date prévue, que se passe-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le stock devient nul à l'arrivée de la livraison"
+        },
+        {
+          "id": "b",
+          "text": "Le stock dépasse le stock maximum dès la livraison"
+        },
+        {
+          "id": "c",
+          "text": "Le stock reste stable pendant tout le délai"
+        },
+        {
+          "id": "d",
+          "text": "Le stock est vide plusieurs jours avant la livraison"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le stock minimum couvre la consommation pendant le délai d'approvisionnement : le stock baisse jusqu'à zéro au moment précis où la livraison arrive. Il ne reste pas stable, car on consomme chaque jour, et il n'est pas vide avant la livraison, sauf retard du fournisseur.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le stock d'alerte d'un article est de 150 unités et son stock minimum de 110 unités. Quelle est la réserve de sécurité, en unités ?",
+      "answerKey": {
+        "value": 40,
+        "unit": "unités"
+      },
+      "explanation": "Stock d'alerte = stock minimum + stock de sécurité, donc stock de sécurité = 150 − 110 = 40 unités ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise passe 9 commandes dans l'année ; chacune lui coûte 85 D de frais (appels, courrier, vérification). Quel est son coût total de passation, en D ?",
+      "answerKey": {
+        "value": 765,
+        "unit": "D"
+      },
+      "explanation": "Coût total de passation = N × p = 9 × 85 = 765 D ✓. Le coût d'une commande est le même quelle que soit sa taille : on multiplie simplement par le nombre de commandes.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise achète pour 48 000 D de matières par an, en 6 livraisons égales reçues à stock vide. Quelle est la valeur de son stock moyen, en D ?",
+      "answerKey": {
+        "value": 4000,
+        "unit": "D"
+      },
+      "explanation": "Valeur du stock moyen = C ÷ (2 × N) = 48 000 ÷ 12 = 4 000 D ✓. Chaque livraison vaut 8 000 D et le stock descend de cette valeur à zéro : en moyenne la moitié, 4 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche qui mène de la consommation annuelle au lot économique.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer la valeur C de la consommation annuelle (quantité × prix unitaire)"
+        },
+        {
+          "id": "b",
+          "text": "Calculer le nombre optimal de commandes N* par la formule de Wilson"
+        },
+        {
+          "id": "c",
+          "text": "Calculer le lot économique q* = Q ÷ N*"
+        },
+        {
+          "id": "d",
+          "text": "Vérifier qu'à N* le coût de passation égale le coût de possession"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "La formule de Wilson demande C : on le calcule d'abord. N* en découle, puis le lot q* = Q ÷ N* qui en dépend. La vérification vient en dernier, car elle utilise le résultat : à N*, passation et possession doivent être égales.",
+      "difficulty": 2
+    }
+  ]
+}

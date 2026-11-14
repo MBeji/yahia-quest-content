@@ -1,0 +1,104 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le chef des approvisionnements",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "L'entreprise Papyrus achète chaque année pour 30 000 D de papier. Passer une commande lui coûte 150 D et garder 1 D de stock lui coûte 0,25 D par an. Quel nombre de commandes rend son approvisionnement le moins cher ?",
+      "answerKey": {
+        "value": 5,
+        "unit": "commandes"
+      },
+      "explanation": "N* = √(C × i ÷ (2 × p)) = √(30 000 × 0,25 ÷ 300) = √(7 500 ÷ 300) = √25 = 5 commandes ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise consomme 2 400 sacs de ciment par an, à 25 D le sac. Son taux de possession est de 0,30 et chaque commande lui coûte 250 D. Quel est son lot économique, en sacs ?",
+      "answerKey": {
+        "value": 400,
+        "unit": "sacs"
+      },
+      "explanation": "C = 2 400 × 25 = 60 000 D. N* = √(60 000 × 0,30 ÷ 500) = √36 = 6 commandes. Lot économique q* = 2 400 ÷ 6 = 400 sacs ✓. Mettre la quantité 2 400 sous la racine à la place de C donnerait un nombre de commandes sans rapport avec la réalité.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour l'année, une usine prévoit d'acheter pour 54 000 D de matières. Détenir 1 D de stock lui coûte 0,20 D par an et chaque commande revient à 150 D. Quel montant minimal son coût d'approvisionnement peut-il atteindre, en D ?",
+      "answerKey": {
+        "value": 1800,
+        "unit": "D"
+      },
+      "explanation": "N* = √(54 000 × 0,20 ÷ 300) = √36 = 6. Possession = 54 000 × 0,20 ÷ 12 = 900 D ; passation = 6 × 150 = 900 D. Total = 900 + 900 = 1 800 D ✓. Les deux coûts sont égaux au nombre optimal de commandes.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une entreprise consomme pour 72 000 D de marchandises par an, avec un taux de possession de 0,10 et un coût de passation de 100 D. Elle passe 12 commandes par an. Quel diagnostic est exact ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le choix est bon : le stock moyen est ainsi le plus faible possible, donc le coût total d'approvisionnement est le plus bas qui soit"
+        },
+        {
+          "id": "b",
+          "text": "Le coût de possession est trop élevé : il faudrait passer encore plus de commandes pour réduire le stock moyen"
+        },
+        {
+          "id": "c",
+          "text": "Le coût de passation baisse quand N augmente : 12 commandes coûtent donc moins cher à passer que 6 commandes"
+        },
+        {
+          "id": "d",
+          "text": "Les commandes sont trop nombreuses : passation 1 200 D contre 300 D de possession, soit 1 500 D au lieu de 1 200 D"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "N* = √(72 000 × 0,10 ÷ 200) = √36 = 6, et le coût total minimal vaut 600 + 600 = 1 200 D. Avec 12 commandes, la passation coûte 12 × 100 = 1 200 D et la possession 72 000 × 0,10 ÷ 24 = 300 D : total 1 500 D, soit 300 D de trop. Un stock moyen réduit n'est pas forcément le signe d'une saine gestion. Passer encore plus de commandes alourdirait la passation, qui croît avec N : le total s'éloignerait davantage du minimum.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le nombre optimal de commandes d'un atelier est de 4. Il achète pour 32 000 D par an et détenir 1 D de stock lui coûte 0,20 D. Combien lui coûte chaque commande passée, en D ?",
+      "answerKey": {
+        "value": 200,
+        "unit": "D"
+      },
+      "explanation": "À l'optimum, coût de possession = coût de passation. Possession = 32 000 × 0,20 ÷ 8 = 800 D, donc 4 × p = 800 et p = 200 D ✓. Contrôle par Wilson : √(6 400 ÷ 400) = √16 = 4 ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Les autres données restant inchangées, coche toutes les affirmations exactes sur le nombre optimal de commandes N*.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au nombre optimal de commandes, le coût de passation égale le coût de possession"
+        },
+        {
+          "id": "b",
+          "text": "Si le coût de passation d'une commande augmente, le nombre optimal de commandes diminue"
+        },
+        {
+          "id": "c",
+          "text": "Si le taux de possession augmente, le nombre optimal de commandes diminue"
+        },
+        {
+          "id": "d",
+          "text": "Au nombre optimal de commandes, le stock moyen est le plus faible possible"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "À N*, les deux coûts s'égalisent et le coût total est minimal. Une commande plus chère à passer pousse à en passer moins : p est au dénominateur de la formule, donc N* diminue. Si le taux de possession augmente, garder du stock coûte plus cher : i est au numérateur, donc N* augmente, et l'affirmation est fausse. Le stock moyen le plus faible s'obtient avec beaucoup de commandes, pas à N* : à l'optimum, on minimise le coût total, pas la possession seule.",
+      "difficulty": 3
+    }
+  ]
+}
