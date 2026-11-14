@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les multivibrateurs",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Lequel de ces dispositifs est un multivibrateur astable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une bascule mémoire qui garde 0 ou 1 jusqu'à la prochaine impulsion"
+        },
+        {
+          "id": "b",
+          "text": "Un circuit anti-rebond qui répond à chaque appui par une impulsion de 10 ms"
+        },
+        {
+          "id": "c",
+          "text": "Un générateur d'alarme qui émet des créneaux dès qu'il est alimenté"
+        },
+        {
+          "id": "d",
+          "text": "Un filtre RC passe-bas qui atténue les fréquences élevées"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un astable oscille seul entre deux états quasi-stables, sans aucun signal de déclenchement : le générateur d'alarme alimenté délivre des créneaux réguliers ✓. La bascule mémoire a deux états stables, qu'une impulsion change : c'est un bistable. Le circuit anti-rebond répond à une commande par une impulsion de durée fixée puis revient au repos : c'est un monostable. Un filtre atténue des fréquences, il ne produit aucun créneau.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un trigger inverseur à A.O. (U_sat = 12 V) a un cycle d'hystérésis de largeur U_HB − U_BH = 7,2 V. Que vaut le rapport R₁/(R₁ + R₂) de son pont ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,23"
+        },
+        {
+          "id": "b",
+          "text": "0,30"
+        },
+        {
+          "id": "c",
+          "text": "0,60"
+        },
+        {
+          "id": "d",
+          "text": "0,70"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La largeur du cycle vaut U_HB − U_BH = 2·R₁/(R₁ + R₂)·U_sat, donc R₁/(R₁ + R₂) = 7,2/(2 × 12) = 0,30 ✓. La valeur 0,60 oublie le facteur 2 : c'est 7,2/12. La valeur 0,70 échange les rôles et donne R₂/(R₁ + R₂). La valeur 0,23 vient de la formule fausse U_HB − U_BH = 2·(R₁/R₂)·U_sat : on trouve R₁/R₂ = 0,30, puis R₁/(R₁ + R₂) = 0,30/1,30 ≈ 0,23.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le cycle ci-dessous est relevé en mode XY sur un comparateur à A.O. Pour u_E = 0 V, quelle(s) valeur(s) peut prendre u_S ?\n<svg viewBox=\"0 0 340 215\"><title>Cycle u_S = f(u_E) relevé en mode XY : u_S vaut +12 V ou −12 V, avec des basculements à u_E = −4 V et u_E = +4 V</title><line x1=\"145.7\" y1=\"28.0\" x2=\"145.7\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214.3\" y1=\"28.0\" x2=\"214.3\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"60.0\" y1=\"166.2\" x2=\"300.0\" y2=\"166.2\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"60.0\" y1=\"51.8\" x2=\"300.0\" y2=\"51.8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"180.0\" y1=\"194.0\" x2=\"180.0\" y2=\"22.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"60.0\" y1=\"109.0\" x2=\"306.0\" y2=\"109.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"310.0,109.0 303.0,112.5 303.0,105.5\" fill=\"#0f172a\"/><polygon points=\"180.0,18.0 183.5,25.0 176.5,25.0\" fill=\"#0f172a\"/><line x1=\"145.7\" y1=\"106.0\" x2=\"145.7\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"214.3\" y1=\"106.0\" x2=\"214.3\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"141.4\" y=\"121.4\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−4</text><text x=\"218.6\" y=\"121.4\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><polyline points=\"60.0,51.8 214.3,51.8 214.3,166.2 145.7,166.2 145.7,51.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><polyline points=\"214.3,166.2 300.0,166.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><polygon points=\"111.4,51.8 103.4,55.8 103.4,47.8\" fill=\"#0f6e56\"/><polygon points=\"214.3,137.6 210.3,129.6 218.3,129.6\" fill=\"#0f6e56\"/><polygon points=\"248.6,166.2 256.6,162.2 256.6,170.2\" fill=\"#0f6e56\"/><polygon points=\"145.7,80.4 149.7,88.4 141.7,88.4\" fill=\"#0f6e56\"/><text x=\"185.1\" y=\"45.2\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text><text x=\"174.9\" y=\"175.7\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−12</text><text x=\"186.0\" y=\"24.0\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_S (V)</text><text x=\"302.0\" y=\"101.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_E (V)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "+12 V ou −12 V, selon l'historique de u_E"
+        },
+        {
+          "id": "b",
+          "text": "+12 V seulement, car 0 V est inférieur au seuil U_HB"
+        },
+        {
+          "id": "c",
+          "text": "−4 V ou +4 V, les deux seuils du cycle"
+        },
+        {
+          "id": "d",
+          "text": "0 V, car u_S est proportionnelle à u_E"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le cycle montre deux branches à l'abscisse u_E = 0 V : la branche haute (+12 V) et la branche basse (−12 V). Entre les seuils −4 V et +4 V, la valeur de u_S dépend du sens dans lequel u_E est arrivée ✓. Comparer 0 V au seul seuil U_HB oublie la branche basse. Les seuils sont des valeurs de u_E, pas de u_S, qui ne prend que ±12 V. Une sortie proportionnelle à u_E est impossible.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un astable reste 0,30 ms à l'état haut, puis 0,90 ms à l'état bas, et ainsi de suite. Quelle est la fréquence N de son signal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,44 kHz"
+        },
+        {
+          "id": "b",
+          "text": "3,33 kHz"
+        },
+        {
+          "id": "c",
+          "text": "1,11 kHz"
+        },
+        {
+          "id": "d",
+          "text": "0,83 kHz"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La période est T = T₁ + T₂ = 0,30 + 0,90 = 1,20 ms, donc N = 1/T = 1/(1,20·10⁻³) ≈ 833 Hz = 0,83 kHz ✓. La valeur 3,33 kHz est 1/T₁ et 1,11 kHz est 1/T₂ : chacune ne retient qu'un état. La valeur 4,44 kHz additionne ces deux inverses, alors qu'on additionne les durées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un condensateur à 8 V se décharge à travers un résistor vers 0 V, avec une constante de temps τ = 0,50 ms. Au bout de quelle durée sa tension tombe-t-elle à 2 V ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,35 ms"
+        },
+        {
+          "id": "b",
+          "text": "0,69 ms"
+        },
+        {
+          "id": "c",
+          "text": "1,4 ms"
+        },
+        {
+          "id": "d",
+          "text": "2,0 ms"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Δt = τ·Log((U_i − U_f)/(U_0 − U_f)) = 0,50 × Log((8 − 0)/(2 − 0)) = 0,50 × Log 4 ≈ 0,69 ms ✓. La valeur 1,4 ms oublie τ et ne garde que Log 4. La valeur 2,0 ms prend le rapport 4 × τ, sans logarithme. La valeur 0,35 ms utilise Log 2, valable pour une valeur située au milieu.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un astable à A.O. a R₁ = R₂, R = 6,8 kΩ et C = 22 nF. Quelle est sa période T ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,14 ms"
+        },
+        {
+          "id": "b",
+          "text": "0,16 ms"
+        },
+        {
+          "id": "c",
+          "text": "0,30 ms"
+        },
+        {
+          "id": "d",
+          "text": "0,33 ms"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour R₁ = R₂, T = 2RC·Log 3 = 2 × 6,8·10³ × 22·10⁻⁹ × 1,0986 ≈ 3,3·10⁻⁴ s = 0,33 ms ✓. La valeur 0,16 ms est la seule durée T₁ de l'état haut. La valeur 0,14 ms utilise le logarithme décimal, alors que Log est ici népérien. La valeur 0,30 ms est 2RC : elle oublie le facteur Log 3.",
+      "difficulty": 2
+    }
+  ]
+}

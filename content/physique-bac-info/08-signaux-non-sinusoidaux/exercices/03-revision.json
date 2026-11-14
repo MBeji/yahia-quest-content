@@ -1,0 +1,138 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Production de signaux non sinusoïdaux",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Qu'est-ce qui distingue une porte inverseuse à hystérésis d'une porte inverseuse simple ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle a deux seuils de basculement, l'un en montée, l'autre en descente"
+        },
+        {
+          "id": "b",
+          "text": "Elle ne bascule qu'à un seul seuil, voisin de U_DD/2, dans les deux sens"
+        },
+        {
+          "id": "c",
+          "text": "Elle fournit en sortie la même tension que son entrée, sans inversion"
+        },
+        {
+          "id": "d",
+          "text": "Elle délivre une tension intermédiaire quand l'entrée est entre ses seuils"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une porte à hystérésis bascule à U_HB quand l'entrée croît et à U_BH quand elle décroît : deux seuils, donc un cycle ✓. Le seuil unique voisin de U_DD/2 est celui de la porte simple. Une sortie égale à l'entrée serait une porte non inverseuse, ce qui n'a rien à voir avec l'hystérésis. La sortie reste toujours à 0 ou à U_DD, jamais intermédiaire.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un trigger à A.O. (u_E sur E⁻, R₂ entre S et E⁺, R₁ entre E⁺ et la masse) a R₁ = 10 kΩ et U_sat = 15 V. On veut U_HB = 5,0 V. Quelle valeur de R₂ faut-il, en kΩ ?",
+      "answerKey": {
+        "value": 20,
+        "tolerance": 0.2,
+        "unit": "kΩ"
+      },
+      "explanation": "U_HB = R₁/(R₁ + R₂)·U_sat donne R₁/(R₁ + R₂) = 5,0/15 = 1/3, donc R₁ + R₂ = 3R₁ et R₂ = 2R₁ = 20 kΩ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un condensateur à 5 V se charge vers E_H = 9 V, avec τ = 1,0 ms. On applique la formule Δt = τ·Log((U_i − U_f)/(U_0 − U_f)) pour U_0 = 10 V. Que donne-t-elle, et qu'en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Log(1/4) < 0 : 10 V a déjà été dépassée avant l'instant t = 0"
+        },
+        {
+          "id": "b",
+          "text": "Log 2 : 10 V est atteinte au bout de 0,69 ms"
+        },
+        {
+          "id": "c",
+          "text": "Log 4 : 10 V est atteinte au bout de 1,4 ms"
+        },
+        {
+          "id": "d",
+          "text": "Log(−4), impossible : 10 V n'est jamais atteinte"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec U_i = 5 V, U_f = 9 V et U_0 = 10 V, le quotient vaut (5 − 9)/(10 − 9) = −4 : le logarithme n'existe pas, et 10 V, au-delà de la valeur finale 9 V, n'est jamais atteinte ✓. La conclusion « 1,4 ms » prend le quotient en valeur absolue. La conclusion « 0,69 ms » oublie la valeur finale et calcule Log(10/5). La conclusion « dépassée avant t = 0 » inverse le quotient et ignore son signe : la tension ne dépasse jamais 9 V.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un astable à A.O. avec R₁ = R₂ et C = 100 nF doit osciller à N = 500 Hz. Quelle résistance R faut-il, en kΩ ? Arrondir au dixième.",
+      "answerKey": {
+        "value": 9.1,
+        "tolerance": 0.1,
+        "unit": "kΩ"
+      },
+      "explanation": "T = 1/N = 2,0 ms et, pour R₁ = R₂, T = 2RC·Log 3 donc R = T/(2C·Log 3) = 2,0·10⁻³/(2 × 100·10⁻⁹ × 1,0986) ≈ 9,1·10³ Ω = 9,1 kΩ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un astable à porte à hystérésis est alimenté sous U_DD = 10 V, avec U_BH = 2 V et U_HB = 7 V. Quel est son rapport cyclique δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "44 %"
+        },
+        {
+          "id": "b",
+          "text": "50 %"
+        },
+        {
+          "id": "c",
+          "text": "56 %"
+        },
+        {
+          "id": "d",
+          "text": "78 %"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "T₁ = RC·Log((2 − 10)/(7 − 10)) = RC·Log(8/3) ≈ 0,98 RC et T₂ = RC·Log(7/2) ≈ 1,25 RC, donc δ = T₁/(T₁ + T₂) ≈ 0,98/2,23 ≈ 0,44, soit 44 % ✓. La valeur 50 % suppose des seuils symétriques, ce qu'ils ne sont pas : 2 + 7 ≠ 10. La valeur 56 % est T₂/T, la part de l'état bas. La valeur 78 % est T₁/T₂, qui ne se rapporte pas à la période.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sont vraies pour les astables étudiés dans ce chapitre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans l'astable à A.O., la période ne dépend pas de la tension de saturation"
+        },
+        {
+          "id": "b",
+          "text": "Dans l'astable à deux portes de seuil U_DD/2, le rapport cyclique vaut 0,5"
+        },
+        {
+          "id": "c",
+          "text": "Dans l'astable à porte à hystérésis de seuils ½·U_DD et ¾·U_DD, le rapport cyclique vaut 0,5"
+        },
+        {
+          "id": "d",
+          "text": "Un astable convenablement réglé délivre une tension sinusoïdale"
+        },
+        {
+          "id": "e",
+          "text": "Doubler U_DD double la période de l'astable à porte à hystérésis"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Vraies : l'astable à A.O. a des seuils proportionnels à U_sat, qui disparaît du quotient de la formule de Δt ✓ ; l'astable à deux portes de seuil U_DD/2 a T₁ = T₂ = RC·Log 3, donc δ = 0,5 ✓. Fausse : avec les seuils ½ et ¾ de U_DD, δ = Log 2/Log 3 ≈ 0,63. Fausse aussi : un astable délivre des créneaux, jamais un sinus. Fausse enfin : les seuils sont des fractions de U_DD, donc U_DD disparaît du quotient de la formule de Δt et T ne change pas.",
+      "difficulty": 3
+    }
+  ]
+}
