@@ -11,23 +11,23 @@
       "options": [
         {
           "id": "a",
-          "text": "−9,0 V"
-        },
-        {
-          "id": "b",
           "text": "−4,5 V"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "−2,25 V"
+        },
+        {
+          "id": "c",
+          "text": "−1,5 V"
         },
         {
           "id": "d",
           "text": "+4,5 V"
         }
       ],
-      "correctOption": "b",
-      "explanation": "K₁ et K₀ sont fermés. I₁ = 4,0/4,0 kΩ = 1,0 mA et I₀ = 4,0/8,0 kΩ = 0,50 mA, donc i = 1,5 mA et u_S = −R'·i = −3,0 kΩ × 1,5 mA = −4,5 V ✓. Le signe + oublie l'inversion du montage. La valeur −9,0 V correspond au mot [110], les poids étant inversés (i = 3,0 mA). La valeur −2,25 V provient de la constante avec 2ⁿR au lieu de 2^(n−1)R, qui donne k = −0,75 V.",
+      "correctOption": "a",
+      "explanation": "K₁ et K₀ sont fermés. I₁ = 4,0/4,0 kΩ = 1,0 mA et I₀ = 4,0/8,0 kΩ = 0,50 mA, donc i = 1,5 mA et u_S = −R'·i = −3,0 kΩ × 1,5 mA = −4,5 V ✓. Le signe + oublie l'inversion du montage. La valeur −1,5 V ne garde que la branche de a₀ (I₀ = 0,50 mA). La valeur −2,25 V provient de la constante avec 2ⁿR au lieu de 2^(n−1)R, qui donne k = −0,75 V.",
       "difficulty": 2
     },
     {
@@ -36,7 +36,7 @@
       "options": [
         {
           "id": "a",
-          "text": "Quand les deux bits valent 1, le courant de la branche de a₃ est 8 fois celui de la branche de a₀"
+          "text": "Quand a₃ = a₀ = 1, le courant de la branche de a₃ est 8 fois celui de la branche de a₀"
         },
         {
           "id": "b",
@@ -44,7 +44,7 @@
         },
         {
           "id": "c",
-          "text": "Doubler R' double le quantum"
+          "text": "Remplacer U_ref par −U_ref ne change pas la pleine échelle"
         },
         {
           "id": "d",
@@ -62,7 +62,7 @@
           "c"
         ]
       },
-      "explanation": "Les branches R et 8R sous la même tension U_ref ont des courants dans le rapport 8 ✓. Le nœud d'entrée est maintenu à 0 V par l'A.O. : chaque courant ne dépend que de sa propre branche ✓. Comme |k| = R'|U_ref|/8R, doubler R' double |k| et donc q ✓. Doubler R divise |k| par 2 : la pleine échelle est divisée par 2, pas doublée. Le mot [1000] vaut N = 8, soit 8/15 de la pleine échelle, un peu plus que la moitié.",
+      "explanation": "Les branches R et 8R sous la même tension U_ref ont des courants dans le rapport 8 ✓. Le nœud d'entrée est maintenu à 0 V par l'A.O. : chaque courant ne dépend que de sa propre branche ✓. Changer le signe de U_ref change celui de k, pas |k| : la pleine échelle P.E. = |k|·15 reste la même ✓. Doubler R divise |k| par 2 : la pleine échelle est divisée par 2, pas doublée. Le mot [1000] vaut N = 8, soit 8/15 de la pleine échelle, un peu plus que la moitié.",
       "difficulty": 3
     },
     {

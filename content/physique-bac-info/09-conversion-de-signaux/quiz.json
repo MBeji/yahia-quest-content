@@ -6,22 +6,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Une tension qui vaut 0 V ou 5 V et saute de l'une à l'autre"
-        },
-        {
-          "id": "b",
           "text": "Une pression qui passe de 1,0 bar à 1,2 bar en une minute"
         },
         {
-          "id": "c",
+          "id": "b",
           "text": "Une température qui monte de 20 °C à 25 °C en une heure"
         },
         {
-          "id": "d",
+          "id": "c",
           "text": "Une tension qui croît lentement de 0 V à 5 V en passant par toutes les valeurs intermédiaires"
+        },
+        {
+          "id": "d",
+          "text": "Une tension qui vaut 0 V ou 5 V et saute de l'une à l'autre"
         }
       ],
-      "correctOption": "a",
+      "correctOption": "d",
       "explanation": "Un signal logique ne prend que deux valeurs, V_cc (état 1) et 0 V (état 0), et passe de l'une à l'autre ✓. La tension qui croît lentement, la pression et la température varient de façon continue : ce sont des signaux analogiques, malgré les valeurs de départ et d'arrivée qui paraissent aussi « bien définies ».",
       "difficulty": 1
     },
@@ -30,22 +30,22 @@
       "options": [
         {
           "id": "a",
-          "text": "22"
+          "text": "3"
         },
         {
           "id": "b",
-          "text": "13"
-        },
-        {
-          "id": "c",
           "text": "11"
         },
         {
+          "id": "c",
+          "text": "13"
+        },
+        {
           "id": "d",
-          "text": "3"
+          "text": "22"
         }
       ],
-      "correctOption": "c",
+      "correctOption": "b",
       "explanation": "N = 2³·1 + 2²·0 + 2¹·1 + 2⁰·1 = 8 + 2 + 1 = 11 ✓. La valeur 13 vient d'une lecture du mot de droite à gauche, soit [1101]. La valeur 3 compte seulement les bits égaux à 1. La valeur 22 décale tous les poids d'un rang, comme si le bit de poids faible valait 2 au lieu de 1.",
       "difficulty": 1
     },
@@ -54,22 +54,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Un C.A.N., placé entre la mémoire et le haut-parleur"
+          "text": "Un C.A.N., placé entre le microphone et la mémoire"
         },
         {
           "id": "b",
-          "text": "Un C.N.A., placé entre le microphone et la mémoire"
+          "text": "Un C.A.N., placé entre la mémoire et le haut-parleur"
         },
         {
           "id": "c",
-          "text": "Un C.N.A., placé entre la mémoire et le haut-parleur"
+          "text": "Un C.N.A., placé entre le microphone et la mémoire"
         },
         {
           "id": "d",
-          "text": "Un C.A.N., placé entre le microphone et la mémoire"
+          "text": "Un C.N.A., placé entre la mémoire et le haut-parleur"
         }
       ],
-      "correctOption": "d",
+      "correctOption": "a",
       "explanation": "La tension du microphone est analogique et la mémoire ne stocke que des mots binaires : il faut un C.A.N. entre les deux ✓. Un C.N.A. entre la mémoire et le haut-parleur sert à la lecture, pas à l'enregistrement. Un C.N.A. placé après le microphone recevrait une tension alors qu'il attend un mot binaire. Un C.A.N. placé avant le haut-parleur lui livrerait un nombre au lieu d'une tension.",
       "difficulty": 1
     },
@@ -122,27 +122,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un C.N.A. à 8 bits a un quantum de 20 mV. Quelle est sa pleine échelle ?",
+      "prompt": "Un C.N.A. à 8 bits a une pleine échelle de 5,10 V. Quelle tension délivre-t-il pour le mot [00001010] ?",
       "options": [
         {
           "id": "a",
-          "text": "0,16 V"
+          "text": "1,60 V"
         },
         {
           "id": "b",
-          "text": "2,56 V"
+          "text": "0,40 V"
         },
         {
           "id": "c",
-          "text": "5,10 V"
+          "text": "0,20 V"
         },
         {
           "id": "d",
-          "text": "5,12 V"
+          "text": "0,04 V"
         }
       ],
       "correctOption": "c",
-      "explanation": "La pleine échelle est atteinte pour N_max = 2⁸ − 1 = 255 : P.E. = q × N_max = 0,020 × 255 = 5,10 V ✓. La valeur 5,12 V utilise 256 = 2⁸ au lieu de 255. La valeur 2,56 V utilise 128 = 2⁷. La valeur 0,16 V multiplie q par le nombre de bits, 8.",
+      "explanation": "Le quantum vaut q = P.E./(2⁸ − 1) = 5,10/255 = 0,020 V, et [00001010] vaut N = 8 + 2 = 10 : u_S = q·N = 0,020 × 10 = 0,20 V ✓. La valeur 1,60 V lit le mot à l'envers, [01010000], soit N = 80. La valeur 0,40 V divise la pleine échelle par 2⁷ = 128 au lieu de 255. La valeur 0,04 V ne compte que les deux bits égaux à 1, N = 2.",
       "difficulty": 2
     },
     {

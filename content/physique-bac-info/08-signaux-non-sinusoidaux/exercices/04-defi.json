@@ -51,11 +51,11 @@
         }
       ],
       "correctOption": "c",
-      "explanation": "La figure donne T₂ = 1,0 ms : u_C décroît de U_HB = 6 V à U_BH = 3 V vers E_B = 0, donc T₂ = τ·Log(6/3) = τ·Log 2 et τ = 1,0/0,693 ≈ 1,4 ms ✓. La valeur 0,69 ms multiplie par Log 2 au lieu de diviser. La valeur 1,0 ms confond la durée T₂ avec τ. La valeur 2,5 ms utilise E_H comme valeur finale de la décharge, alors qu'elle vise E_B.",
+      "explanation": "La figure donne T₂ = 1,0 ms : u_C décroît de U_HB = 6 V à U_BH = 3 V vers E_B = 0, donc T₂ = τ·Log(6/3) = τ·Log 2 et τ = 1,0/0,693 ≈ 1,4 ms ✓. La valeur 0,69 ms multiplie par Log 2 au lieu de diviser. La valeur 1,0 ms confond la durée T₂ avec τ. La valeur 2,5 ms applique à T₂ le rapport de la phase de charge, (3 − 12)/(6 − 12) = 1,5 : τ = 1,0/Log 1,5.",
       "difficulty": 2
     },
     {
-      "prompt": "Dans l'astable à deux diodes de la figure, R₁ = R₂, R_A = 1,0 kΩ, R_B = 4,0 kΩ, C = 10 nF et U_sat = 12 V. À l'instant où u_S passe de +12 V à −12 V, u_C vaut +6 V. Quelle est alors la valeur de du_C/dt juste après le basculement ?\n<svg viewBox=\"0 0 370 250\"><title>Astable à A.O. avec deux diodes : la branche R_A et la diode D₁ conduit de S vers le condensateur, la branche R_B et la diode D₂ conduit du condensateur vers S ; R₂ et R₁ forment le pont sur E⁺</title><polygon points=\"190,84 190,164 270,124\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"198.0\" y=\"105.0\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−</text><text x=\"198.0\" y=\"157.0\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+</text><line x1=\"30.0\" y1=\"232.0\" x2=\"330.0\" y2=\"232.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"30.0\" cy=\"232.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"30.0\" y=\"249.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><circle cx=\"330.0\" cy=\"232.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"330.0\" y=\"249.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><line x1=\"190.0\" y1=\"148.0\" x2=\"150.0\" y2=\"148.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150.0\" y1=\"148.0\" x2=\"150.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"150.0\" cy=\"185.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"150.0\" y2=\"194.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"142.0\" y=\"194.0\" width=\"16\" height=\"28\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"134.0\" y=\"212.0\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₁</text><line x1=\"150.0\" y1=\"222.0\" x2=\"150.0\" y2=\"232.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"215.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"215.0\" y=\"177.0\" width=\"56\" height=\"16\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"243.0\" y=\"171.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₂</text><line x1=\"271.0\" y1=\"185.0\" x2=\"290.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"290.0\" y1=\"185.0\" x2=\"290.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"290.0\" cy=\"124.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"270.0\" y1=\"124.0\" x2=\"330.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"330.0\" cy=\"124.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"330.0\" y=\"115.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S</text><line x1=\"352.0\" y1=\"226.0\" x2=\"352.0\" y2=\"140.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"352.0,140.0 355.5,147.0 348.5,147.0\" fill=\"#2563eb\"/><text x=\"352.0\" y=\"122.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_S</text><line x1=\"100.0\" y1=\"100.0\" x2=\"190.0\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"100.0\" cy=\"100.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"100.0\" y1=\"100.0\" x2=\"100.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"84.0\" y1=\"154.0\" x2=\"116.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"3\"/><line x1=\"84.0\" y1=\"166.0\" x2=\"116.0\" y2=\"166.0\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"124.0\" y=\"164.0\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><line x1=\"100.0\" y1=\"166.0\" x2=\"100.0\" y2=\"232.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"100.0\" y1=\"100.0\" x2=\"100.0\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"100.0\" cy=\"62.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"290.0\" y1=\"24.0\" x2=\"290.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"290.0\" cy=\"62.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"100.0\" y1=\"24.0\" x2=\"120.0\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"120.0\" y=\"16.0\" width=\"56\" height=\"16\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"148.0\" y=\"10.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R_A</text><line x1=\"176.0\" y1=\"24.0\" x2=\"203.0\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"227.0,15.0 227.0,33.0 203.0,24.0\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"203.0\" y1=\"15.0\" x2=\"203.0\" y2=\"33.0\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><text x=\"215.0\" y=\"9.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D₁</text><line x1=\"227.0\" y1=\"24.0\" x2=\"290.0\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"100.0\" y1=\"62.0\" x2=\"120.0\" y2=\"62.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"120.0\" y=\"54.0\" width=\"56\" height=\"16\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"148.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R_B</text><line x1=\"176.0\" y1=\"62.0\" x2=\"203.0\" y2=\"62.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"203.0,53.0 203.0,71.0 227.0,62.0\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"227.0\" y1=\"53.0\" x2=\"227.0\" y2=\"71.0\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><text x=\"215.0\" y=\"47.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D₂</text><line x1=\"227.0\" y1=\"62.0\" x2=\"290.0\" y2=\"62.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"66.0\" y1=\"226.0\" x2=\"66.0\" y2=\"116.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"66.0,116.0 69.5,123.0 62.5,123.0\" fill=\"#2563eb\"/><text x=\"66.0\" y=\"98.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_C</text></svg>",
+      "prompt": "Dans l'astable à deux diodes de la figure, R₁ = R₂, R_A = 1,0 kΩ, R_B = 4,0 kΩ, C = 10 nF et U_sat = 12 V. À l'instant où u_S passe de +12 V à −12 V, u_C vaut +6 V. Quelle est alors la valeur de du_C/dt juste après le basculement ?\n<svg viewBox=\"0 0 370 250\"><title>Astable à A.O. avec deux diodes : la branche R_A et la diode D₁ conduit de S vers le condensateur, la branche R_B et la diode D₂ conduit du condensateur vers S ; R₂ et R₁ forment le pont sur E⁺</title><polygon points=\"190,84 190,164 270,124\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"198.0\" y=\"105.0\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−</text><text x=\"198.0\" y=\"157.0\" text-anchor=\"start\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">+</text><line x1=\"30.0\" y1=\"232.0\" x2=\"330.0\" y2=\"232.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"30.0\" cy=\"232.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"30.0\" y=\"249.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><circle cx=\"330.0\" cy=\"232.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"330.0\" y=\"249.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text><line x1=\"190.0\" y1=\"148.0\" x2=\"150.0\" y2=\"148.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150.0\" y1=\"148.0\" x2=\"150.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"150.0\" cy=\"185.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"150.0\" y2=\"194.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"142.0\" y=\"194.0\" width=\"16\" height=\"28\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"112.0\" y=\"212.0\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₁</text><line x1=\"150.0\" y1=\"222.0\" x2=\"150.0\" y2=\"232.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"150.0\" y1=\"185.0\" x2=\"215.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"215.0\" y=\"177.0\" width=\"56\" height=\"16\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"243.0\" y=\"171.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R₂</text><line x1=\"271.0\" y1=\"185.0\" x2=\"290.0\" y2=\"185.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"290.0\" y1=\"185.0\" x2=\"290.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"290.0\" cy=\"124.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"270.0\" y1=\"124.0\" x2=\"330.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"330.0\" cy=\"124.0\" r=\"3.2\" fill=\"#fff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"330.0\" y=\"115.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S</text><line x1=\"352.0\" y1=\"226.0\" x2=\"352.0\" y2=\"140.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"352.0,140.0 355.5,147.0 348.5,147.0\" fill=\"#2563eb\"/><text x=\"352.0\" y=\"122.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_S</text><line x1=\"100.0\" y1=\"100.0\" x2=\"190.0\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"100.0\" cy=\"100.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"100.0\" y1=\"100.0\" x2=\"100.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"84.0\" y1=\"154.0\" x2=\"116.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"3\"/><line x1=\"84.0\" y1=\"166.0\" x2=\"116.0\" y2=\"166.0\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"124.0\" y=\"164.0\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">C</text><line x1=\"100.0\" y1=\"166.0\" x2=\"100.0\" y2=\"232.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"100.0\" y1=\"100.0\" x2=\"100.0\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"100.0\" cy=\"62.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"290.0\" y1=\"24.0\" x2=\"290.0\" y2=\"124.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"290.0\" cy=\"62.0\" r=\"2.6\" fill=\"#0f172a\"/><line x1=\"100.0\" y1=\"24.0\" x2=\"120.0\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"120.0\" y=\"16.0\" width=\"56\" height=\"16\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"148.0\" y=\"10.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R_A</text><line x1=\"176.0\" y1=\"24.0\" x2=\"203.0\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"227.0,15.0 227.0,33.0 203.0,24.0\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"203.0\" y1=\"15.0\" x2=\"203.0\" y2=\"33.0\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><text x=\"215.0\" y=\"9.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D₁</text><line x1=\"227.0\" y1=\"24.0\" x2=\"290.0\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"100.0\" y1=\"62.0\" x2=\"120.0\" y2=\"62.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"120.0\" y=\"54.0\" width=\"56\" height=\"16\" fill=\"#fff7ed\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"148.0\" y=\"48.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R_B</text><line x1=\"176.0\" y1=\"62.0\" x2=\"203.0\" y2=\"62.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"203.0,53.0 203.0,71.0 227.0,62.0\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"227.0\" y1=\"53.0\" x2=\"227.0\" y2=\"71.0\" stroke=\"#0f172a\" stroke-width=\"2.4\"/><text x=\"215.0\" y=\"47.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">D₂</text><line x1=\"227.0\" y1=\"62.0\" x2=\"290.0\" y2=\"62.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"66.0\" y1=\"226.0\" x2=\"66.0\" y2=\"116.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polygon points=\"66.0,116.0 69.5,123.0 62.5,123.0\" fill=\"#2563eb\"/><text x=\"66.0\" y=\"98.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">u_C</text></svg>",
       "options": [
         {
           "id": "a",
@@ -79,86 +79,85 @@
       "difficulty": 3
     },
     {
-      "prompt": "Un trigger inverseur à A.O. (U_sat = 15 V, R₁ = 10 kΩ) reçoit un sinus d'amplitude 12 V. Pour quelle valeur limite de R₂ ce sinus atteint-il tout juste un seuil, le montage basculant pour R₂ supérieure à cette valeur ?",
+      "prompt": "Un trigger inverseur à A.O. (U_sat = 15 V, R₁ = 10 kΩ) reçoit un sinus d'amplitude 12 V. Pour quelles valeurs de R₂ la sortie bascule-t-elle ?",
       "options": [
         {
           "id": "a",
-          "text": "2,5 kΩ"
+          "text": "R₂ > 2,5 kΩ"
         },
         {
           "id": "b",
-          "text": "10 kΩ"
+          "text": "R₂ < 2,5 kΩ"
         },
         {
           "id": "c",
-          "text": "12,5 kΩ"
+          "text": "R₂ > 40 kΩ"
         },
         {
           "id": "d",
-          "text": "40 kΩ"
+          "text": "R₂ < 40 kΩ"
         }
       ],
       "correctOption": "a",
-      "explanation": "Le sinus bascule le montage si 12 V dépasse le seuil R₁/(R₁ + R₂)·15. À la limite, R₁/(R₁ + R₂) = 12/15 = 0,80, donc R₁ + R₂ = 12,5 kΩ et R₂ = 2,5 kΩ ✓. La valeur 40 kΩ échange les rôles, avec R₂/(R₁ + R₂) = 0,80. La valeur 12,5 kΩ prend R₁/R₂ = 0,80. La valeur 10 kΩ donne des seuils de ±7,5 V, bien inférieurs à 12 V : le montage bascule déjà, ce n'est pas la limite.",
+      "explanation": "Il faut que 12 V dépasse le seuil R₁/(R₁ + R₂)·15, soit R₁/(R₁ + R₂) < 12/15 = 0,80, donc R₁ + R₂ > 12,5 kΩ et R₂ > 2,5 kΩ ✓ : le seuil baisse quand R₂ croît. L'inégalité inverse oublie ce sens de variation. La valeur 40 kΩ vient de R₂/(R₁ + R₂) = 0,80, rôles échangés, et les deux inégalités associées en héritent.",
       "difficulty": 3
     },
     {
-      "prompt": "Un astable à porte à hystérésis a pour seuil haut U_HB = ¾·U_DD. Pour quelle valeur de U_BH son rapport cyclique vaut-il exactement 50 % ?",
+      "prompt": "Un astable à porte à hystérésis a U_DD = 12 V, U_HB = 9 V, R = 10 kΩ et C = 47 nF. On règle U_BH pour que le rapport cyclique soit exactement 50 %. Quelle est alors la fréquence N du signal ?",
       "options": [
         {
           "id": "a",
-          "text": "U_DD/2"
+          "text": "2,13 kHz"
         },
         {
           "id": "b",
-          "text": "3U_DD/8"
+          "text": "1,94 kHz"
         },
         {
           "id": "c",
-          "text": "U_DD/4"
+          "text": "1,54 kHz"
         },
         {
           "id": "d",
-          "text": "U_DD/8"
+          "text": "0,97 kHz"
         }
       ],
-      "correctOption": "c",
-      "explanation": "On a δ = 0,5 quand T₁ = T₂, ce qui exige U_BH + U_HB = U_DD, seuils symétriques par rapport à U_DD/2. Donc U_BH = U_DD − 3U_DD/4 = U_DD/4 ✓ : T₁ = T₂ = RC·Log 3. La valeur U_DD/2 est le choix du cours, qui donne δ ≈ 0,63. La valeur 3U_DD/8 est la moitié de U_HB. La valeur U_DD/8 est la moitié de la bonne réponse.",
+      "correctOption": "d",
+      "explanation": "On a δ = 0,5 quand T₁ = T₂, donc U_BH + U_HB = U_DD, soit U_BH = 3 V. Alors T₁ = RC·Log((3 − 12)/(9 − 12)) = RC·Log 3 = T₂ et T = 2RC·Log 3 = 2 × 0,47 × 1,0986 ≈ 1,03 ms, d'où N ≈ 0,97 kHz ✓. La valeur 1,94 kHz utilise T = RC·Log 3, formule des seuils ½ et ¾ de U_DD. La valeur 1,54 kHz utilise T = 2RC·Log 2, celle de l'exemple à seuils 4 V et 8 V. La valeur 2,13 kHz est 1/RC, qui oublie le logarithme.",
       "difficulty": 3
     },
     {
       "type": "multi",
-      "prompt": "Quelles affirmations sont vraies pour l'astable à deux portes inverseuses de seuil U_DD/2 ?",
+      "prompt": "Dans l'astable à deux portes inverseuses, on remplace la porte (2) par une porte de seuil U_DD/3, au lieu de U_DD/2 ; le reste est inchangé. Quelles affirmations sont vraies ?",
       "options": [
         {
           "id": "a",
-          "text": "La tension u_E2 dépasse U_DD pendant une partie de la période"
+          "text": "Juste après le basculement où u_S1 passe de 0 à U_DD, u_E2 vaut 4U_DD/3"
         },
         {
           "id": "b",
-          "text": "La tension u_C reste comprise entre −U_DD/2 et +U_DD/2"
+          "text": "La tension u_C oscille entre −U_DD/3 et +U_DD/3"
         },
         {
           "id": "c",
-          "text": "Les sorties u_S1 et u_S2 sont toujours égales"
+          "text": "Doubler R₁ double la période"
         },
         {
           "id": "d",
-          "text": "Les durées T₁ et T₂ sont égales"
+          "text": "La période vaut toujours 2RC·Log 3"
         },
         {
           "id": "e",
-          "text": "La période ne dépend pas de la capacité C"
+          "text": "La phase où u_S1 = U_DD dure plus longtemps que l'autre"
         }
       ],
       "answerKey": {
         "correct": [
           "a",
-          "b",
-          "d"
+          "e"
         ]
       },
-      "explanation": "Vraies : u_E2 = u_S1 − u_C atteint 3U_DD/2 juste après un basculement, donc dépasse U_DD ✓ ; la porte (2) bascule à u_E2 = U_DD/2, ce qui borne u_C entre −U_DD/2 et +U_DD/2 ✓ ; les deux phases durent RC·Log 3 chacune ✓. Fausses : u_S1 et u_S2 sont complémentaires, jamais égales ; et T = 2RC·Log 3 est proportionnelle à C.",
+      "explanation": "Vraies : pendant la phase u_S1 = 0, u_E2 = −u_C croît jusqu'au seuil U_DD/3, donc u_C = −U_DD/3 au basculement ; juste après, u_E2 = U_DD − (−U_DD/3) = 4U_DD/3 ✓. La phase u_S1 = U_DD dure RC·Log((U₁ + U₂)/U₂) = RC·Log 4, contre RC·Log((2U₁ − U₂)/(U₁ − U₂)) = RC·Log 2,5 pour l'autre ✓. Fausses : pendant la phase u_S1 = U_DD, u_E2 = U_DD − u_C décroît jusqu'à U_DD/3, donc u_C = 2U_DD/3 : u_C oscille entre −U_DD/3 et 2U_DD/3, pas entre ±U_DD/3 ; R₁ ne porte aucun courant et n'intervient pas dans la période ; et T = RC·Log 10 ≈ 2,30 RC, différente de 2RC·Log 3 ≈ 2,20 RC.",
       "difficulty": 3
     }
   ]

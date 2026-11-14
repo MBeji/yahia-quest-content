@@ -42,27 +42,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un condensateur à 5 V se charge vers E_H = 9 V, avec une constante de temps τ = 1,0 ms. Au bout de quelle durée sa tension atteint-elle 10 V ?",
+      "prompt": "Un condensateur à 5 V se charge vers E_H = 9 V, avec τ = 1,0 ms. On applique la formule Δt = τ·Log((U_i − U_f)/(U_0 − U_f)) pour U_0 = 10 V. Que donne-t-elle, et qu'en conclure ?",
       "options": [
         {
           "id": "a",
-          "text": "Au bout de 2,3 ms : Δt = τ·Log 10 ≈ 2,3 ms"
+          "text": "Log(1/4) < 0 : 10 V a déjà été dépassée avant l'instant t = 0"
         },
         {
           "id": "b",
-          "text": "Au bout de 0,69 ms : Δt = τ·Log 2 ≈ 0,69 ms"
+          "text": "Log 2 : 10 V est atteinte au bout de 0,69 ms"
         },
         {
           "id": "c",
-          "text": "Au bout de 1,4 ms : Δt = τ·Log 4 ≈ 1,4 ms"
+          "text": "Log 4 : 10 V est atteinte au bout de 1,4 ms"
         },
         {
           "id": "d",
-          "text": "Jamais : 10 V dépasse la valeur finale 9 V"
+          "text": "Log(−4), impossible : 10 V n'est jamais atteinte"
         }
       ],
       "correctOption": "d",
-      "explanation": "La tension tend vers E_H = 9 V sans pouvoir dépasser cette valeur finale : 10 V n'est jamais atteinte ✓. La formule donnerait Log((5 − 9)/(10 − 9)) = Log(−4), un logarithme qui n'existe pas pour un quotient négatif. Les durées proposées viennent d'un quotient pris en valeur absolue (4) ou d'un autre rapport (2 ou 10), alors que 10 V est inatteignable.",
+      "explanation": "Avec U_i = 5 V, U_f = 9 V et U_0 = 10 V, le quotient vaut (5 − 9)/(10 − 9) = −4 : le logarithme n'existe pas, et 10 V, au-delà de la valeur finale 9 V, n'est jamais atteinte ✓. La conclusion « 1,4 ms » prend le quotient en valeur absolue. La conclusion « 0,69 ms » oublie la valeur finale et calcule Log(10/5). La conclusion « dépassée avant t = 0 » inverse le quotient et ignore son signe : la tension ne dépasse jamais 9 V.",
       "difficulty": 2
     },
     {
@@ -122,17 +122,16 @@
         },
         {
           "id": "e",
-          "text": "Doubler R double la période dans chacun des trois astables"
+          "text": "Doubler U_DD double la période de l'astable à porte à hystérésis"
         }
       ],
       "answerKey": {
         "correct": [
           "a",
-          "b",
-          "e"
+          "b"
         ]
       },
-      "explanation": "Vraies : l'astable à A.O. a des seuils proportionnels à U_sat, qui disparaît du quotient de la formule de Δt ✓ ; l'astable à deux portes de seuil U_DD/2 a T₁ = T₂ = RC·Log 3, donc δ = 0,5 ✓ ; dans les trois montages T est proportionnelle à RC avec des seuils fixes, donc doubler R double T ✓. Fausse : avec les seuils ½ et ¾ de U_DD, δ = Log 2/Log 3 ≈ 0,63. Fausse aussi : un astable délivre des créneaux, jamais un sinus.",
+      "explanation": "Vraies : l'astable à A.O. a des seuils proportionnels à U_sat, qui disparaît du quotient de la formule de Δt ✓ ; l'astable à deux portes de seuil U_DD/2 a T₁ = T₂ = RC·Log 3, donc δ = 0,5 ✓. Fausse : avec les seuils ½ et ¾ de U_DD, δ = Log 2/Log 3 ≈ 0,63. Fausse aussi : un astable délivre des créneaux, jamais un sinus. Fausse enfin : les seuils sont des fractions de U_DD, donc U_DD disparaît du quotient de la formule de Δt et T ne change pas.",
       "difficulty": 3
     }
   ]

@@ -1,6 +1,6 @@
 # 🌊 Les ondes mécaniques progressives — la vibration qui voyage
 
-> 💡 « Au large, la houle traverse l'océan sur des milliers de kilomètres, et pourtant chaque goutte d'eau ne fait que monter et descendre. »
+> 💡 « Au large, la houle traverse l'océan sur des milliers de kilomètres, et pourtant chaque goutte d'eau reste sur place. »
 
 Jusqu'ici, les oscillations restaient sur place : un circuit, un ressort, un pendule. Ici la vibration se met en route. Une secousse imposée en un point d'une corde, d'un ressort, de l'eau ou de l'air gagne ses voisins et traverse tout le milieu. Huit notions te mènent de la secousse unique à l'onde entretenue : l'ébranlement, sa nature transversale ou longitudinale, sa célérité, la double périodicité, l'équation horaire d'un point, le déphasage, l'aspect de la corde à un instant donné et le stroboscope. On suppose connus la période, la fréquence et la pulsation d'une grandeur sinusoïdale : N = 1/T et ω = 2π/T.
 
@@ -13,7 +13,7 @@ Quand la ride atteint M, le flotteur bouge : est-il emporté vers le bord, et qu
 **Ébranlement** — Un **ébranlement** est une déformation de courte durée imposée localement à un **milieu élastique**, c'est-à-dire un milieu qui reprend de lui-même sa forme initiale après une déformation brève. Chaque point déformé entraîne son voisin, qui reproduit son mouvement avec un léger retard : l'ébranlement se transmet de proche en proche.
 :::
 
-::: figure La même ride aux dates t₁ < t₂ < t₃ : le cercle s'élargit autour de S pendant que le flotteur M monte et descend sur place ; le trait de plus en plus fin traduit l'affaiblissement de la ride (illustration, sans échelle)
+::: figure La même ride aux dates t₁ < t₂ < t₃ : le cercle s'élargit autour de S pendant que le flotteur M monte et descend sur place ; le trait de plus en plus fin traduit l'affaiblissement de la ride (illustration, sans échelle ; flèche orange : mouvement vertical, perpendiculaire à la surface)
 <svg viewBox="0 0 340 216"><title>Rides circulaires créées par une bille tombée en S, aux dates t₁, t₂ et t₃, et flotteur M qui oscille verticalement</title><circle cx="150" cy="108" r="28" fill="none" stroke="#0f6e56" stroke-width="3.2"/><circle cx="150" cy="108" r="56" fill="none" stroke="#0f6e56" stroke-width="2.4"/><circle cx="150" cy="108" r="84" fill="none" stroke="#0f6e56" stroke-width="1.7"/><circle cx="150" cy="108" r="4" fill="#0f172a" stroke="#0f172a" stroke-width="2"/><rect x="232" y="104" width="16" height="9" fill="#d97706" stroke="#0f172a" stroke-width="1.6"/><line x1="262" y1="82" x2="262" y2="134" stroke="#d97706" stroke-width="1.8"/><polygon points="262,134 258.4,127 265.6,127" fill="#d97706"/><polygon points="262,82 265.6,89 258.4,89" fill="#d97706"/><line x1="156" y1="108" x2="229" y2="108" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 3"/><g font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"><text x="141" y="128" text-anchor="middle" fill="#0f172a" font-size="14">S</text><text x="240" y="132" text-anchor="middle" fill="#d97706" font-size="14">M</text><text x="124.2" y="84.2" text-anchor="middle" fill="#0f6e56" font-size="12">t₁</text><text x="104.4" y="64.4" text-anchor="middle" fill="#0f6e56" font-size="12">t₂</text><text x="84.6" y="44.6" text-anchor="middle" fill="#0f6e56" font-size="12">t₃</text></g></svg>
 :::
 
@@ -33,7 +33,7 @@ Sur la figure, S est le point d'impact, les cercles verts sont la même ride à 
 :::
 
 ::: propriete
-**Ce qui reste vrai** — Un ébranlement se propage dans un milieu matériel élastique, qui peut être unidimensionnel (corde, ressort), bidimensionnel (surface d'un liquide) ou tridimensionnel (air ou tout autre fluide). La propagation d'un ébranlement n'a rien d'un déplacement de mobile, comme le résume le tableau ci-dessous. Cas limite : sous une cloche dont on retire l'air, la sonnerie d'un réveil devient inaudible alors qu'il fonctionne toujours, car un ébranlement mécanique ne se propage pas dans le vide. La houle, succession régulière de vagues créées par le vent, suit la même règle : elle transporte de l'énergie sur de grandes distances sans transporter l'eau.
+**Ce qui reste vrai** — Un ébranlement se propage dans un milieu matériel élastique, qui peut être unidimensionnel (corde, ressort), bidimensionnel (surface d'un liquide) ou tridimensionnel (air ou tout autre fluide). La propagation d'un ébranlement n'a rien d'un déplacement de mobile, comme le résume le tableau ci-dessous. Cas limite : sous une cloche dont on retire l'air, la sonnerie d'un réveil devient inaudible alors qu'il fonctionne toujours, car un ébranlement mécanique ne se propage pas dans le vide. La houle, succession régulière de vagues créées par le vent, suit la même règle : elle transporte de l'énergie sur de grandes distances sans transporter l'eau, dont les particules décrivent de petites trajectoires circulaires sur place.
 :::
 
 |               | Déplacement d'un mobile      | Propagation d'un ébranlement                          |
@@ -146,15 +146,15 @@ Dans le premier tableau, la durée est proportionnelle à la distance ; dans le 
 **Erreur : confondre la célérité avec la vitesse d'un point de la corde.** Au passage de la bosse, un point P monte puis redescend : sa vitesse change de sens et passe par zéro. L'erreur tente parce que les deux grandeurs s'expriment en m/s. Mais la célérité est celle de la bosse : 8,0 m/s tout le long de la corde A (étape 1), alors que P ne s'éloigne jamais de sa place.
 :::
 
-| Ébranlement                        | Célérité (m/s, ordre de grandeur) |
-| ---------------------------------- | --------------------------------- |
-| à la surface de l'eau              | 0,3                               |
-| le long d'une échelle de perroquet | 1                                 |
-| le long d'une corde                | 10                                |
-| son dans l'air à 20 °C             | 342                               |
-| son dans l'eau à 20 °C             | 1500                              |
-| son dans l'acier                   | 5000                              |
-| ébranlement sismique               | 8000                              |
+| Ébranlement                                                               | Célérité (m/s, ordre de grandeur) |
+| ------------------------------------------------------------------------- | --------------------------------- |
+| à la surface de l'eau                                                     | 0,3                               |
+| le long d'une échelle de perroquet (barreaux fixés sur un fil de torsion) | 1                                 |
+| le long d'une corde                                                       | 10                                |
+| son dans l'air à 20 °C                                                    | 342                               |
+| son dans l'eau à 20 °C                                                    | 1500                              |
+| son dans l'acier                                                          | 5000                              |
+| ébranlement sismique                                                      | 8000                              |
 
 ::: propriete
 **Ce qui reste vrai** — La célérité dépend de la nature du milieu et de ses propriétés : le long d'une corde, elle augmente avec la tension et diminue quand l'inertie augmente ; pour le son, elle est d'autant plus grande que le milieu est difficile à comprimer, donc plus grande dans les solides que dans les liquides et dans les liquides que dans les gaz. Elle ne dépend ni de l'amplitude, ni de l'énergie fournie par la source. Cas limite : l'amortissement affaiblit l'amplitude d'un ébranlement bien plus que sa célérité ; dans l'air, les sons de toutes les fréquences se propagent à la même célérité.
@@ -203,7 +203,7 @@ Sur la figure, la courbe de gauche donne l'élongation d'un seul point au cours 
 :::
 
 ::: propriete
-**Ce qui reste vrai** — T (et N) ne dépendent que de la source, v ne dépend que du milieu, et λ = v·T dépend des deux ; on en tire N = v/λ et v = λ·N. Cas limite : si l'on double N sur la même corde, λ est divisée par deux, puisque v ne bouge pas ; si l'on change de milieu à N fixée, λ varie dans le même rapport que v.
+**Ce qui reste vrai** — T (et N) ne dépendent que de la source, v ne dépend que du milieu, et λ = v·T dépend des deux ; on en tire N = v/λ et v = λ·N. Cas limite : si l'on double N sur la même corde, λ est divisée par deux, puisque v ne bouge pas ; si l'on change de milieu à N fixée, λ varie dans le même rapport que v. À la surface de l'eau, une pointe qui vibre crée des rides circulaires de centre S : tous les points d'un même cercle vibrent en phase, et sur un rayon deux crêtes consécutives sont distantes de λ ; une réglette crée des rides rectilignes parallèles, elles aussi distantes de λ. Le son émis par une petite source est une onde progressive sphérique, qui s'atténue en s'éloignant par dilution de l'énergie.
 :::
 
 ::: verifie À toi : un son dans l'air
@@ -373,7 +373,7 @@ n = 55/20 = 2,75, donc xf = v·t = 8,0 × 0,055 = 0,44 m = 2,75 λ. ωt = 100π 
 :::
 
 ::: retenir
-À l'instant t, y(x) = a sin(ωt − 2πx/λ) jusqu'au front xf = v·t = n·λ, corde au repos au-delà ; la période de cette courbe est λ, pas T.
+À l'instant t, yt(x) = a sin(2πx/λ − ωt + π) = a sin(ωt − 2πx/λ) jusqu'au front xf = v·t = n·λ, corde au repos au-delà ; la période de cette courbe est λ, pas T.
 :::
 
 ## 🔦 Le stroboscope : figer ou ralentir une onde

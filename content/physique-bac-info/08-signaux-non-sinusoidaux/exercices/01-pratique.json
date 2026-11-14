@@ -31,27 +31,27 @@
       "difficulty": 1
     },
     {
-      "prompt": "Un trigger à A.O. a u_E sur E⁻, R₂ entre S et E⁺ et R₁ entre E⁺ et la masse, avec R₁ = 3,0 kΩ, R₂ = 7,0 kΩ et U_sat = 12 V. Quelles sont ses valeurs de seuil U_BH et U_HB ?",
+      "prompt": "Un trigger inverseur à A.O. (U_sat = 12 V) a un cycle d'hystérésis de largeur U_HB − U_BH = 7,2 V. Que vaut le rapport R₁/(R₁ + R₂) de son pont ?",
       "options": [
         {
           "id": "a",
-          "text": "−3,6 V et +3,6 V"
+          "text": "0,23"
         },
         {
           "id": "b",
-          "text": "−5,1 V et +5,1 V"
+          "text": "0,30"
         },
         {
           "id": "c",
-          "text": "−8,4 V et +8,4 V"
+          "text": "0,60"
         },
         {
           "id": "d",
-          "text": "−12 V et +12 V"
+          "text": "0,70"
         }
       ],
-      "correctOption": "a",
-      "explanation": "Le rapport vaut R₁/(R₁ + R₂) = 3,0/10 = 0,30, donc U_HB = 0,30 × 12 = +3,6 V et U_BH = −3,6 V ✓. Les valeurs ±5,1 V viennent de R₁/R₂·U_sat = 3/7 × 12. Les valeurs ±8,4 V échangent les rôles : R₂/(R₁ + R₂)·U_sat. Les valeurs ±12 V sont les tensions de saturation, pas les seuils.",
+      "correctOption": "b",
+      "explanation": "La largeur du cycle vaut U_HB − U_BH = 2·R₁/(R₁ + R₂)·U_sat, donc R₁/(R₁ + R₂) = 7,2/(2 × 12) = 0,30 ✓. La valeur 0,60 oublie le facteur 2 : c'est 7,2/12. La valeur 0,70 échange les rôles et donne R₂/(R₁ + R₂). La valeur 0,23 vient de la formule fausse U_HB − U_BH = 2·(R₁/R₂)·U_sat : on trouve R₁/R₂ = 0,30, puis R₁/(R₁ + R₂) = 0,30/1,30 ≈ 0,23.",
       "difficulty": 1
     },
     {
@@ -59,23 +59,23 @@
       "options": [
         {
           "id": "a",
-          "text": "0 V, car u_S est proportionnelle à u_E"
+          "text": "+12 V ou −12 V, selon l'historique de u_E"
         },
         {
           "id": "b",
-          "text": "−12 V seulement, car 0 V est supérieur à U_BH"
+          "text": "+12 V seulement, car 0 V est inférieur au seuil U_HB"
         },
         {
           "id": "c",
-          "text": "+12 V seulement, car 0 V est inférieur à U_HB"
+          "text": "−4 V ou +4 V, les deux seuils du cycle"
         },
         {
           "id": "d",
-          "text": "+12 V ou −12 V, selon l'historique de u_E"
+          "text": "0 V, car u_S est proportionnelle à u_E"
         }
       ],
-      "correctOption": "d",
-      "explanation": "Le cycle montre deux branches au-dessus de u_E = 0 V : la branche haute (+12 V) et la branche basse (−12 V). Entre les seuils −4 V et +4 V, la valeur de u_S dépend du sens dans lequel u_E est arrivée ✓. Se contenter de comparer 0 V à U_HB, ou à U_BH, ne retient qu'un seul des deux seuils. Une sortie proportionnelle à u_E est impossible : u_S ne prend que ±U_sat.",
+      "correctOption": "a",
+      "explanation": "Le cycle montre deux branches à l'abscisse u_E = 0 V : la branche haute (+12 V) et la branche basse (−12 V). Entre les seuils −4 V et +4 V, la valeur de u_S dépend du sens dans lequel u_E est arrivée ✓. Comparer 0 V au seul seuil U_HB oublie la branche basse. Les seuils sont des valeurs de u_E, pas de u_S, qui ne prend que ±12 V. Une sortie proportionnelle à u_E est impossible.",
       "difficulty": 1
     },
     {
@@ -83,27 +83,27 @@
       "options": [
         {
           "id": "a",
-          "text": "0,83 kHz"
+          "text": "4,44 kHz"
         },
         {
           "id": "b",
-          "text": "1,10 kHz"
-        },
-        {
-          "id": "c",
           "text": "3,33 kHz"
         },
         {
+          "id": "c",
+          "text": "1,11 kHz"
+        },
+        {
           "id": "d",
-          "text": "4,44 kHz"
+          "text": "0,83 kHz"
         }
       ],
-      "correctOption": "a",
-      "explanation": "La période est T = T₁ + T₂ = 0,30 + 0,90 = 1,20 ms, donc N = 1/T = 1/(1,20·10⁻³) ≈ 833 Hz = 0,83 kHz ✓. La valeur 3,33 kHz est 1/T₁ et 1,10 kHz est 1/T₂ : chacune ne retient qu'un état. La valeur 4,44 kHz additionne ces deux inverses, alors qu'on additionne les durées.",
+      "correctOption": "d",
+      "explanation": "La période est T = T₁ + T₂ = 0,30 + 0,90 = 1,20 ms, donc N = 1/T = 1/(1,20·10⁻³) ≈ 833 Hz = 0,83 kHz ✓. La valeur 3,33 kHz est 1/T₁ et 1,11 kHz est 1/T₂ : chacune ne retient qu'un état. La valeur 4,44 kHz additionne ces deux inverses, alors qu'on additionne les durées.",
       "difficulty": 2
     },
     {
-      "prompt": "Un condensateur à 9 V se décharge à travers un résistor vers 0 V, avec une constante de temps τ = 0,50 ms. Au bout de quelle durée sa tension tombe-t-elle à 3 V ?",
+      "prompt": "Un condensateur à 8 V se décharge à travers un résistor vers 0 V, avec une constante de temps τ = 0,50 ms. Au bout de quelle durée sa tension tombe-t-elle à 2 V ?",
       "options": [
         {
           "id": "a",
@@ -111,19 +111,19 @@
         },
         {
           "id": "b",
-          "text": "0,55 ms"
+          "text": "0,69 ms"
         },
         {
           "id": "c",
-          "text": "1,1 ms"
+          "text": "1,4 ms"
         },
         {
           "id": "d",
-          "text": "1,5 ms"
+          "text": "2,0 ms"
         }
       ],
       "correctOption": "b",
-      "explanation": "Δt = τ·Log((U_i − U_f)/(U_0 − U_f)) = 0,50 × Log((9 − 0)/(3 − 0)) = 0,50 × Log 3 ≈ 0,55 ms ✓. La valeur 1,1 ms oublie τ et ne garde que Log 3. La valeur 1,5 ms oublie le logarithme et prend le rapport 9/3 × τ. La valeur 0,35 ms utilise Log 2, valable pour une valeur située au milieu.",
+      "explanation": "Δt = τ·Log((U_i − U_f)/(U_0 − U_f)) = 0,50 × Log((8 − 0)/(2 − 0)) = 0,50 × Log 4 ≈ 0,69 ms ✓. La valeur 1,4 ms oublie τ et ne garde que Log 4. La valeur 2,0 ms prend le rapport 4 × τ, sans logarithme. La valeur 0,35 ms utilise Log 2, valable pour une valeur située au milieu.",
       "difficulty": 2
     },
     {
@@ -139,15 +139,15 @@
         },
         {
           "id": "c",
-          "text": "0,33 ms"
+          "text": "0,30 ms"
         },
         {
           "id": "d",
-          "text": "0,66 ms"
+          "text": "0,33 ms"
         }
       ],
-      "correctOption": "c",
-      "explanation": "Pour R₁ = R₂, T = 2RC·Log 3 = 2 × 6,8·10³ × 22·10⁻⁹ × 1,0986 ≈ 3,3·10⁻⁴ s = 0,33 ms ✓. La valeur 0,16 ms est la seule durée T₁ de l'état haut. La valeur 0,14 ms utilise le logarithme décimal, alors que Log est ici népérien. La valeur 0,66 ms double la période une fois de trop.",
+      "correctOption": "d",
+      "explanation": "Pour R₁ = R₂, T = 2RC·Log 3 = 2 × 6,8·10³ × 22·10⁻⁹ × 1,0986 ≈ 3,3·10⁻⁴ s = 0,33 ms ✓. La valeur 0,16 ms est la seule durée T₁ de l'état haut. La valeur 0,14 ms utilise le logarithme décimal, alors que Log est ici népérien. La valeur 0,30 ms est 2RC : elle oublie le facteur Log 3.",
       "difficulty": 2
     }
   ]
