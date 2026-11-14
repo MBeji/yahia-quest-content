@@ -1,0 +1,122 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la fente",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une radiation a pour longueur d'onde 400 nm dans un verre d'indice n = 1,60. Quelle est sa longueur d'onde dans l'air, assimilé au vide, en nm ?",
+      "answerKey": {
+        "value": 640,
+        "tolerance": 2,
+        "unit": "nm"
+      },
+      "explanation": "La fréquence ne change pas à l'entrée dans le verre, et dans un milieu d'indice n, λ = λ₀/n. Donc λ₀ = n·λ = 1,60 × 400 = 640 nm ✓ : la longueur d'onde est plus grande dans l'air que dans le verre.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une corde AB de longueur 2,4 m est parcourue par un ébranlement de célérité 8,0 m/s. Il part de A, se réfléchit sur l'extrémité B et revient en A. Quelle est la durée de l'aller-retour, en ms ?",
+      "answerKey": {
+        "value": 600,
+        "tolerance": 5,
+        "unit": "ms"
+      },
+      "explanation": "L'ébranlement parcourt AB à l'aller puis AB au retour, à la même célérité : t = 2 × AB/v = 2 × 2,4/8,0 = 0,60 s = 600 ms ✓. Ne compter que l'aller donnerait 300 ms.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une cuve à ondes, une onde rectiligne passe d'une zone 1, où ses rides sont espacées de 2,0 cm, à une zone 2, où elles sont espacées de 1,2 cm, sous l'incidence i₁ = 30°. Quel est l'angle de réfraction i₂, en degrés ?",
+      "answerKey": {
+        "value": 17.5,
+        "tolerance": 0.3,
+        "unit": "°"
+      },
+      "explanation": "La relation λ₁ sin i₂ = λ₂ sin i₁ donne sin i₂ = (λ₂/λ₁) sin i₁ = (1,2/2,0) × sin 30° = 0,60 × 0,50 = 0,30, donc i₂ = 17,5° ✓. On vérifie que i₂ < i₁, comme λ₂ < λ₁.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La droite ci-dessous donne la largeur L de la tache centrale (en mm) en fonction de 1/a (en 10³ m⁻¹), a étant la largeur de la fente d'un laser, pour un écran placé à D = 3,0 m. Elle passe par l'origine et par le point repéré en pointillés. Quelle est la longueur d'onde du laser ?\n<svg viewBox=\"0 0 340 226\"><title>Droite L en fonction de 1/a passant par l'origine et par le point d'abscisse 8 (10³ m⁻¹) et d'ordonnée 24 mm</title><line x1=\"50\" y1=\"186\" x2=\"50\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"50\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"106\" y1=\"186\" x2=\"106\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"106\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"162\" y1=\"186\" x2=\"162\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"162\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"218\" y1=\"186\" x2=\"218\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"218\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"274\" y1=\"186\" x2=\"274\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"274\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><line x1=\"330\" y1=\"186\" x2=\"330\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"330\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><line x1=\"50\" y1=\"186\" x2=\"330\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"190\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"50\" y1=\"167.25\" x2=\"330\" y2=\"167.25\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"171.25\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"50\" y1=\"148.5\" x2=\"330\" y2=\"148.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"152.5\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><line x1=\"50\" y1=\"129.75\" x2=\"330\" y2=\"129.75\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"133.75\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text><line x1=\"50\" y1=\"111\" x2=\"330\" y2=\"111\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"115\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">16</text><line x1=\"50\" y1=\"92.25\" x2=\"330\" y2=\"92.25\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"96.25\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><line x1=\"50\" y1=\"73.5\" x2=\"330\" y2=\"73.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"77.5\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">24</text><line x1=\"50\" y1=\"54.75\" x2=\"330\" y2=\"54.75\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"58.75\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">28</text><line x1=\"50\" y1=\"36\" x2=\"330\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"40\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">32</text><line x1=\"50\" y1=\"186\" x2=\"336\" y2=\"186\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"50\" y1=\"186\" x2=\"50\" y2=\"28\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"190\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1/a (10³ m⁻¹)</text><text x=\"52\" y=\"24\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">L (mm)</text><line x1=\"50\" y1=\"186\" x2=\"330\" y2=\"45.38\" stroke=\"#c2410c\" stroke-width=\"2\"/><circle cx=\"274\" cy=\"73.5\" r=\"3.6\" fill=\"#c2410c\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"274\" y1=\"186\" x2=\"274\" y2=\"73.5\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/><line x1=\"50\" y1=\"73.5\" x2=\"274\" y2=\"73.5\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "250 nm"
+        },
+        {
+          "id": "b",
+          "text": "500 nm"
+        },
+        {
+          "id": "c",
+          "text": "1,00 µm"
+        },
+        {
+          "id": "d",
+          "text": "2,00 µm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le point repéré donne 1/a = 8,0 × 10³ m⁻¹ et L = 24 mm, donc L = k/a avec k = L·a = 24 × 10⁻³/(8,0 × 10³) = 3,0 × 10⁻⁶ m². Comme L = 2λD/a, on a k = 2λD et λ = k/(2D) = 3,0 × 10⁻⁶/(2 × 3,0) = 5,0 × 10⁻⁷ m = 500 nm ✓. Oublier le facteur 2 donnerait 1,00 µm.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur la dispersion, lesquelles sont exactes ? (plusieurs réponses possibles)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans un milieu dispersif, la célérité d'une onde dépend de sa fréquence"
+        },
+        {
+          "id": "b",
+          "text": "Si la célérité d'une onde change quand on change la profondeur d'eau d'une cuve, l'eau est dispersive"
+        },
+        {
+          "id": "c",
+          "text": "Dans le vide, toutes les radiations lumineuses ont la même célérité"
+        },
+        {
+          "id": "d",
+          "text": "Quand une radiation entre dans un verre, sa fréquence diminue"
+        },
+        {
+          "id": "e",
+          "text": "Dans un verre d'indice n, la longueur d'onde d'une radiation est plus petite que dans le vide"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "Un milieu est dispersif si la célérité y dépend de la fréquence ✓. Dans le vide, v = c pour toutes les radiations ✓. Dans un verre, n > 1 donc λ = λ₀/n est plus petite que λ₀ ✓. En revanche la fréquence ne change pas à l'entrée dans le verre, et un changement de célérité dû à la profondeur ne prouve rien : pour juger la dispersion, il faut garder le milieu et changer la fréquence.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un faisceau arrive au centre de la face plane d'un hémicylindre de verre sous l'incidence i = 50°. Pour une radiation donnée, le rayon émergent est dévié d'un angle D = 20° par rapport au rayon incident. Quel est l'indice du verre pour cette radiation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,24"
+        },
+        {
+          "id": "b",
+          "text": "1,67"
+        },
+        {
+          "id": "c",
+          "text": "1,53"
+        },
+        {
+          "id": "d",
+          "text": "1,19"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "D = i − r donne r = 50° − 20° = 30°, puis n = sin i/sin r = sin 50°/sin 30° = 0,766/0,500 = 1,53 ✓. Diviser les angles (50/30) donnerait 1,67, prendre r = D = 20° donnerait 2,24, et prendre r = 90° − i = 40° donnerait 1,19.",
+      "difficulty": 3
+    }
+  ]
+}

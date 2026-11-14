@@ -1,0 +1,165 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les interactions onde-matière",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Deux musiciens jouent en même temps une note grave et une note aiguë, et l'auditeur les entend simultanément. Que peut-on en conclure pour des ondes sonores dans l'air ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'air est dispersif : la note grave se propage plus vite que la note aiguë"
+        },
+        {
+          "id": "b",
+          "text": "L'air est dispersif : la note aiguë se propage plus vite que la note grave"
+        },
+        {
+          "id": "c",
+          "text": "L'air est non dispersif : les deux notes se propagent avec la même célérité"
+        },
+        {
+          "id": "d",
+          "text": "L'air est non dispersif : les deux notes ont exactement la même longueur d'onde"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si la note grave et la note aiguë, émises ensemble, arrivent ensemble, leurs célérités sont égales : l'air est non dispersif pour le son ✓. Leurs fréquences diffèrent, donc leurs longueurs d'onde λ = v/N diffèrent aussi, la célérité étant commune.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À quelle condition une onde sonore se réfléchit-elle sur un obstacle plan en suivant la loi i′ = i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les dimensions de l'obstacle sont très inférieures à la longueur d'onde"
+        },
+        {
+          "id": "b",
+          "text": "Les dimensions de l'obstacle sont très supérieures à la longueur d'onde"
+        },
+        {
+          "id": "c",
+          "text": "Les dimensions de l'obstacle sont de l'ordre de la longueur d'onde"
+        },
+        {
+          "id": "d",
+          "text": "Le son est de très basse fréquence, comme 20 Hz"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un obstacle réfléchit l'onde en suivant i′ = i quand ses dimensions sont très supérieures à λ ✓. S'il est de l'ordre de λ ou plus petit, l'onde le contourne : c'est la diffraction. Un son très grave a une grande longueur d'onde, donc il se diffracte plutôt.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque phénomène à ce que subit l'onde mécanique.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Diffraction par une fente"
+        },
+        {
+          "id": "l2",
+          "text": "Réflexion sur un obstacle plan"
+        },
+        {
+          "id": "l3",
+          "text": "Réfraction sous incidence oblique"
+        },
+        {
+          "id": "l4",
+          "text": "Transmission sous incidence normale"
+        },
+        {
+          "id": "r1",
+          "text": "Longueur d'onde conservée, plusieurs directions de propagation"
+        },
+        {
+          "id": "r2",
+          "text": "Longueur d'onde conservée, angle de réflexion égal à l'angle d'incidence"
+        },
+        {
+          "id": "r3",
+          "text": "Longueur d'onde modifiée, direction de propagation modifiée"
+        },
+        {
+          "id": "r4",
+          "text": "Longueur d'onde modifiée, direction de propagation conservée"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "La diffraction conserve λ et étale l'onde dans plusieurs directions ; la réflexion conserve λ avec i′ = i ; la réfraction sous incidence oblique change λ et la direction ; la transmission sous incidence normale change λ (et v) sans changer la direction ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La droite ci-dessous donne la largeur L de la tache centrale (en mm) en fonction de 1/a (en 10³ m⁻¹) pour un laser et un écran placé à D = 2 m. Un fil de diamètre d, éclairé par ce même laser avec le même écran, donne une tache centrale de largeur L = 15 mm. Quel est le diamètre d du fil, en µm ?\n<svg viewBox=\"0 0 340 226\"><title>Droite L en fonction de 1/a passant par l'origine, avec deux points de mesure à 1/a = 4 et 1/a = 10 (10³ m⁻¹)</title><line x1=\"50\" y1=\"186\" x2=\"50\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"50\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"106\" y1=\"186\" x2=\"106\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"106\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"162\" y1=\"186\" x2=\"162\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"162\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"218\" y1=\"186\" x2=\"218\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"218\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><line x1=\"274\" y1=\"186\" x2=\"274\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"274\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><line x1=\"330\" y1=\"186\" x2=\"330\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"330\" y=\"200\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><line x1=\"50\" y1=\"186\" x2=\"330\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"190\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"50\" y1=\"161\" x2=\"330\" y2=\"161\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"165\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"50\" y1=\"136\" x2=\"330\" y2=\"136\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"140\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><line x1=\"50\" y1=\"111\" x2=\"330\" y2=\"111\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"115\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">15</text><line x1=\"50\" y1=\"86\" x2=\"330\" y2=\"86\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"90\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><line x1=\"50\" y1=\"61\" x2=\"330\" y2=\"61\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"65\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">25</text><line x1=\"50\" y1=\"36\" x2=\"330\" y2=\"36\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"44\" y=\"40\" text-anchor=\"end\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><line x1=\"50\" y1=\"186\" x2=\"336\" y2=\"186\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"50\" y1=\"186\" x2=\"50\" y2=\"28\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"190\" y=\"216\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1/a (10³ m⁻¹)</text><text x=\"52\" y=\"24\" text-anchor=\"start\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">L (mm)</text><line x1=\"50\" y1=\"186\" x2=\"330\" y2=\"61\" stroke=\"#c2410c\" stroke-width=\"2\"/><circle cx=\"162\" cy=\"136\" r=\"3.6\" fill=\"#c2410c\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"330\" cy=\"61\" r=\"3.6\" fill=\"#c2410c\" stroke=\"#0f172a\" stroke-width=\"1\"/></svg>",
+      "answerKey": {
+        "value": 167,
+        "tolerance": 4,
+        "unit": "µm"
+      },
+      "explanation": "Un fil de diamètre d donne la même figure qu'une fente de largeur d. Sur la droite, L = 15 mm correspond à 1/d = 6,0 × 10³ m⁻¹, donc d = 1/(6,0 × 10³) = 1,67 × 10⁻⁴ m ≈ 167 µm ✓. Contrôle : la pente k = 2,5 × 10⁻⁶ m² donne d = k/L = 2,5 × 10⁻⁶/(15 × 10⁻³) = 1,67 × 10⁻⁴ m ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quatre radiations traversent un même prisme de verre ; leurs longueurs d'onde dans le vide sont proposées dans les réponses. Laquelle a la plus grande célérité dans le verre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "λ₀ = 0,45 µm"
+        },
+        {
+          "id": "b",
+          "text": "λ₀ = 0,55 µm"
+        },
+        {
+          "id": "c",
+          "text": "λ₀ = 0,65 µm"
+        },
+        {
+          "id": "d",
+          "text": "λ₀ = 0,75 µm"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Plus λ₀ est grande, plus la fréquence ν = c/λ₀ est petite, donc plus l'indice du verre est petit, donc plus la célérité v = c/n est grande ✓. La radiation de 0,75 µm est la plus rapide et la moins déviée ; celle de 0,45 µm est au contraire la plus lente et la plus déviée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une pièce vide, les murs réfléchissent le son et la pièce « résonne ». Quel changement diminue le plus cet effet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Garnir les murs de tentures épaisses qui absorbent le son"
+        },
+        {
+          "id": "b",
+          "text": "Recouvrir les murs de carrelage lisse qui réfléchit le son"
+        },
+        {
+          "id": "c",
+          "text": "Retirer le tapis pour que le sol nu renvoie moins le son"
+        },
+        {
+          "id": "d",
+          "text": "Parler sur un ton plus aigu pour que le son se diffracte moins"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les murs, très grands devant λ, réfléchissent le son. Des tentures épaisses, comme les tapis ou les tissus, absorbent une grande part de l'onde au lieu de la réfléchir ✓. Un carrelage lisse réfléchit davantage, un sol nu aussi, et un ton plus aigu ne change pas le fait que les murs soient très grands devant λ.",
+      "difficulty": 2
+    }
+  ]
+}

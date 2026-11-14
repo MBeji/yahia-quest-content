@@ -1,0 +1,206 @@
+{
+  "title": "⭐ Exercice : Premiers codes, premières porteuses",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Le chronogramme ci-dessous est un mot du code Morse numérisé : niveau haut pour un tiret, niveau bas pour un point, pointillés orange entre les lettres. On donne les mots binaires de quatre lettres : A = 01, E = 0, N = 10, T = 1. Quel mot est transmis ?\n<svg viewBox=\"0 0 340 152\"><title>Chronogramme d'un mot en code Morse numérisé : niveau haut pour un tiret, niveau bas pour un point, pointillés orange entre les lettres</title><line x1=\"62.0\" y1=\"34.0\" x2=\"62.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"98.0\" y1=\"34.0\" x2=\"98.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"134.0\" y1=\"34.0\" x2=\"134.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"170.0\" y1=\"34.0\" x2=\"170.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"206.0\" y1=\"34.0\" x2=\"206.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"242.0\" y1=\"34.0\" x2=\"242.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"56.0\" y1=\"112.0\" x2=\"256.0\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><polygon points=\"260.0,112.0 253.0,115.5 253.0,108.5\" fill=\"#0f172a\"/><text x=\"260.0\" y=\"128.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t</text><line x1=\"134.0\" y1=\"30.0\" x2=\"134.0\" y2=\"126.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/><line x1=\"206.0\" y1=\"30.0\" x2=\"206.0\" y2=\"126.0\" stroke=\"#ea580c\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/><polyline points=\"62.0,100.0 98.0,100.0 98.0,100.0 98.0,52.0 134.0,52.0 134.0,52.0 134.0,52.0 170.0,52.0 170.0,52.0 170.0,100.0 206.0,100.0 206.0,100.0 206.0,100.0 242.0,100.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><text x=\"54.0\" y=\"56.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">tiret</text><text x=\"54.0\" y=\"104.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">point</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ANE"
+        },
+        {
+          "id": "b",
+          "text": "ENA"
+        },
+        {
+          "id": "c",
+          "text": "NAE"
+        },
+        {
+          "id": "d",
+          "text": "NAT"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le premier groupe, bas puis haut, s'écrit 01 : la lettre A. Le deuxième, haut puis bas, s'écrit 10 : la lettre N. Le troisième, bas, s'écrit 0 : la lettre E. Le mot est ANE ✓. NAT vient de la lecture du niveau haut comme un point (0 et 1 échangés), NAE lit chaque groupe à l'envers, et ENA lit les groupes de droite à gauche.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sont exactes pour une onde électromagnétique ? (plusieurs réponses possibles)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est transversale"
+        },
+        {
+          "id": "b",
+          "text": "Elle peut se propager dans le vide"
+        },
+        {
+          "id": "c",
+          "text": "Elle a besoin d'un milieu matériel pour se propager"
+        },
+        {
+          "id": "d",
+          "text": "Ses champs E et B sont perpendiculaires entre eux"
+        },
+        {
+          "id": "e",
+          "text": "Sa célérité est plus grande dans le verre que dans l'air"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Une onde électromagnétique est transversale : ses champs E et B sont perpendiculaires entre eux et à la direction de propagation ✓, et elle se propage dans le vide ✓. Elle n'a donc pas besoin de milieu matériel, à la différence d'une onde mécanique. Dans le verre, v = c/n avec n > 1 : sa célérité y est plus petite que dans l'air.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Range, dans l'ordre où elles se produisent, les étapes de la transmission d'une émission de radio.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le circuit accordé du poste sélectionne la station"
+        },
+        {
+          "id": "b",
+          "text": "Un microphone transforme la voix en tension électrique"
+        },
+        {
+          "id": "c",
+          "text": "Le haut-parleur transforme la tension en son"
+        },
+        {
+          "id": "d",
+          "text": "L'antenne d'émission rayonne l'onde modulée"
+        },
+        {
+          "id": "e",
+          "text": "Le démodulateur sépare le signal de la porteuse"
+        },
+        {
+          "id": "f",
+          "text": "L'émetteur module la porteuse avec cette tension"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "f",
+          "d",
+          "a",
+          "e",
+          "c"
+        ]
+      },
+      "explanation": "Le microphone fournit d'abord la tension à transmettre. L'émetteur la confie à la porteuse par modulation, puis l'antenne rayonne l'onde modulée. À la réception, le circuit accordé choisit la station et le démodulateur sépare le signal de la porteuse ; le haut-parleur, dernier transducteur, rend le son.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un signal radio parcourt 1 500 km entre un émetteur et un récepteur, à la célérité c = 3,00 × 10⁸ m/s. Quelle est la durée du trajet, en millisecondes ?",
+      "answerKey": {
+        "value": 5.0,
+        "tolerance": 0.05,
+        "unit": "ms"
+      },
+      "explanation": "La durée est Δt = d/c = 1,5 × 10⁶/(3,00 × 10⁸) = 5,0 × 10⁻³ s = 5 ms ✓, avec d convertie en mètres. À cette échelle, la durée de propagation est faible mais mesurable.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour la radio sur la bande des petites ondes, les porteuses de deux stations voisines sont espacées de 9 kHz seulement. Quelle est la raison de cet espacement réduit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les petites ondes ont une célérité plus faible que les autres ondes radio"
+        },
+        {
+          "id": "b",
+          "text": "Les sons transmis restent nettement sous 10 kHz : le canal est plus étroit"
+        },
+        {
+          "id": "c",
+          "text": "La modulation d'amplitude demande moins de bande que la modulation de fréquence"
+        },
+        {
+          "id": "d",
+          "text": "Les stations en petites ondes émettent avec des puissances plus faibles que les autres"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'écart entre deux porteuses voisines doit être au moins égal à la largeur du canal. Les sons utiles à la radio restent nettement sous 10 kHz, donc le canal est bien plus étroit que les 40 kHz d'un son de haute qualité, et 9 kHz suffisent ✓. La célérité est celle de toute onde électromagnétique, c, et ne règle pas l'espacement ; la puissance non plus. Le type de modulation n'est pas ce qui fixe ici la largeur du canal.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque gamme d'ondes hertziennes à l'usage que lui attribue le tableau du cours.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "HF (3 à 30 MHz)"
+        },
+        {
+          "id": "l2",
+          "text": "MF (300 kHz à 3 MHz)"
+        },
+        {
+          "id": "l3",
+          "text": "VLF (10 à 30 kHz)"
+        },
+        {
+          "id": "l4",
+          "text": "EHF (30 à 300 GHz)"
+        },
+        {
+          "id": "r1",
+          "text": "Détresse en mer"
+        },
+        {
+          "id": "r2",
+          "text": "Radio à grande portée"
+        },
+        {
+          "id": "r3",
+          "text": "Radio-astronomie"
+        },
+        {
+          "id": "r4",
+          "text": "Radio en modulation d'amplitude"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l4",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Dans le tableau des gammes, la gamme HF (ondes courtes) sert à la radio à grande portée, la gamme MF (petites ondes) à la radio en modulation d'amplitude, la gamme VLF aux liaisons de détresse en mer et la gamme EHF à la radio-astronomie.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Généralités sur la transmission des signaux",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Que fait un modem, appareil qui relie un ordinateur à une ligne de transmission ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il amplifie la porteuse avant son rayonnement par l'antenne d'émission"
+        },
+        {
+          "id": "b",
+          "text": "Il convertit le son en tension électrique, comme le fait un microphone"
+        },
+        {
+          "id": "c",
+          "text": "Il filtre le canal d'une station parmi toutes les stations voisines"
+        },
+        {
+          "id": "d",
+          "text": "Il module les signaux à l'émission, puis les démodule à la réception"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le nom « modem » vient de modulateur et démodulateur : l'appareil module le signal avant de l'émettre et le démodule à la réception ✓. Convertir le son en tension est le rôle d'un transducteur, le filtrage du canal celui d'un filtre passe-bande, et l'amplification de la porteuse n'est pas ce que fait un modem.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une caméra de thermographie forme l'image des températures à la surface d'un corps. Quel est le support de l'information qu'elle reçoit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le rayonnement infrarouge émis par la surface du corps"
+        },
+        {
+          "id": "b",
+          "text": "L'onde sonore émise par la surface du corps en s'échauffant"
+        },
+        {
+          "id": "c",
+          "text": "La lumière visible renvoyée par la surface éclairée"
+        },
+        {
+          "id": "d",
+          "text": "Un signal radio émis par la caméra vers la surface"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque point d'un corps émet un rayonnement infrarouge qui dépend de sa température : c'est ce rayonnement, invisible, qui transporte l'information reçue par la caméra ✓. La lumière visible renvoyée par la surface renseignerait sur son aspect et non sur sa température, un corps ne produit pas de son qui varie avec sa température, et la caméra reçoit au lieu d'émettre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un pointeur laser vert émet une lumière de longueur d'onde 0,53 µm dans l'air. Quelle est sa fréquence (c = 3,00 × 10⁸ m/s) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,7 × 10⁸ Hz"
+        },
+        {
+          "id": "b",
+          "text": "5,7 × 10¹¹ Hz"
+        },
+        {
+          "id": "c",
+          "text": "5,7 × 10¹⁴ Hz"
+        },
+        {
+          "id": "d",
+          "text": "5,7 × 10¹⁷ Hz"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La fréquence est N = c/λ = 3,00 × 10⁸/(0,53 × 10⁻⁶) = 5,7 × 10¹⁴ Hz ✓, avec λ convertie en mètres. Les autres valeurs viennent d'une erreur d'unité sur λ : 5,7 × 10⁸ Hz oublie de convertir les micromètres (λ prise égale à 0,53 m), 5,7 × 10¹¹ Hz lit 0,53 µm comme 0,53 mm et 5,7 × 10¹⁷ Hz le lit comme 0,53 nm.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Range ces rayonnements par fréquence croissante.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lumière visible"
+        },
+        {
+          "id": "b",
+          "text": "Ondes hertziennes"
+        },
+        {
+          "id": "c",
+          "text": "Ultraviolet"
+        },
+        {
+          "id": "d",
+          "text": "Infrarouge"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Les ondes hertziennes ont les plus basses fréquences (de 10 kHz à 300 GHz). L'infrarouge vient ensuite, puis la lumière visible, puis l'ultraviolet, de longueurs d'onde de plus en plus courtes : comme λ = c/N, une longueur d'onde plus courte correspond à une fréquence plus grande.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi les satellites géostationnaires relaient-ils des ondes de la gamme SHF, de 3 à 30 GHz ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ces ondes sont réfléchies par l'ionosphère vers le satellite"
+        },
+        {
+          "id": "b",
+          "text": "Ces ondes traversent l'ionosphère et se propagent en ligne droite"
+        },
+        {
+          "id": "c",
+          "text": "Ces ondes ont une longueur d'onde assez grande pour contourner la Terre"
+        },
+        {
+          "id": "d",
+          "text": "Ces ondes ont une célérité plus grande que les autres ondes hertziennes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les ondes de fréquence supérieure à 30 MHz environ traversent l'ionosphère et se propagent en ligne droite : les SHF atteignent le satellite et en reviennent ✓. Si l'ionosphère les réfléchissait, elles ne parviendraient pas au satellite. Leur longueur d'onde est de 1 à 10 cm, trop petite pour contourner la Terre, et leur célérité est c comme celle de toute onde électromagnétique dans l'air : aucune n'est plus rapide.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans l'expérience de Hertz, le fréquencemètre (1) relié à la tige T₂ affiche la même fréquence que le fréquencemètre (2) du GBF, bien qu'aucun fil ne relie T₂ à T₁. Que conclut-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le courant du GBF passe dans l'air entre les deux tiges, sans fil"
+        },
+        {
+          "id": "b",
+          "text": "T₂ produit à son tour une onde, mais de fréquence différente de celle de (2)"
+        },
+        {
+          "id": "c",
+          "text": "Le fréquencemètre (1) mesure le son émis par la tige T₁ dans l'air"
+        },
+        {
+          "id": "d",
+          "text": "T₁ produit une onde de même fréquence que le courant, et T₂ la capte"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sans fil entre les tiges, c'est une onde électromagnétique qui transmet le signal de T₁ à T₂ : (1) affiche la fréquence du courant du GBF, preuve que l'onde produite par T₁ a la fréquence de ce courant et que T₂ la capte ✓. L'air n'est pas un conducteur de ce courant, la fréquence affichée n'est pas différente, et le fréquencemètre ne mesure pas un son.",
+      "difficulty": 2
+    }
+  ]
+}
