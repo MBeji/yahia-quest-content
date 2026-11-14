@@ -1,0 +1,84 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du directeur de production",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un atelier fabrique une pièce à raison de 4 pièces par appareil A (1 000 A par an) et de 8 par appareil B (500 B par an). La pièce revient à 5 D, chaque lancement coûte 40 D et le stockage 20 % de la valeur moyenne. Combien de lots lancer par an au rythme optimal ?",
+      "answerKey": {
+        "value": 10,
+        "unit": "lots"
+      },
+      "explanation": "Production annuelle de pièces : Q = 1 000 × 4 + 500 × 8 = 4 000 + 4 000 = 8 000. N* = √(8 000 × 5 × 0,20 ÷ (2 × 40)) = √(8 000 ÷ 80) = √100 = 10 lots ✓. Contrôle : stockage 8 000 × 5 × 0,20 ÷ 20 = 400 D = lancement 10 × 40 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une chocolaterie fabrique 6 400 tablettes par an à 5 D l'unité. Lancer une série coûte 50 D et stocker 20 % de la valeur moyenne. Dans une année de 360 jours, combien de jours séparent deux lancements successifs au rythme optimal ?",
+      "answerKey": {
+        "value": 45,
+        "unit": "jours"
+      },
+      "explanation": "N* = √(6 400 × 5 × 0,20 ÷ 100) = √(6 400 ÷ 100) = √64 = 8 lancements. Intervalle = 360 ÷ 8 = 45 jours ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fabrique de bougies produit 6 000 unités par an à 8 D l'unité. Un lancement coûte 240 D et son rythme optimal est de 5 lancements par an. Quel est le taux de stockage t, en % ?",
+      "answerKey": {
+        "value": 25,
+        "unit": "%"
+      },
+      "explanation": "N*² = Q × cu × i ÷ (2 × CL), donc i = N*² × 2 × CL ÷ (Q × cu) = 25 × 480 ÷ 48 000 = 0,25 soit 25 % ✓. Contrôle : √(48 000 × 0,25 ÷ 480) = √25 = 5.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une tannerie traite 7 200 peaux par an, valorisées 10 D chacune. Elle prépare actuellement 2 séries annuelles, chaque préparation coûtant 600 D, et son stockage revient à 15 % de la valeur moyenne. Combien économiserait-elle chaque année en passant au rythme optimal, en D ?",
+      "answerKey": {
+        "value": 300,
+        "unit": "D"
+      },
+      "explanation": "Avec 2 séries : 10 800 ÷ 4 + 2 × 600 = 2 700 + 1 200 = 3 900 D. N* = √(10 800 ÷ 1 200) = √9 = 3. Avec 3 séries : 10 800 ÷ 6 + 3 × 600 = 1 800 + 1 800 = 3 600 D. Économie = 3 900 − 3 600 = 300 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une fonderie ramène son coût de lancement de 400 D à 100 D par lot, les autres données (Q, cu, i) restant inchangées. Quel effet cela a-t-il sur N* et sur le lot économique q* ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N* est multiplié par 2 et le lot économique est divisé par 2"
+        },
+        {
+          "id": "b",
+          "text": "N* est divisé par 2 et le lot économique est multiplié par 2"
+        },
+        {
+          "id": "c",
+          "text": "N* est multiplié par 2 et le lot économique reste inchangé"
+        },
+        {
+          "id": "d",
+          "text": "N* est multiplié par 4 et le lot économique est divisé par 4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "CL est divisé par 4 et se trouve sous la racine : N* est multiplié par √4 = 2. Comme q* = Q ÷ N* avec Q fixe, le lot est divisé par 2. Des lancements moins coûteux incitent à lancer plus de séries, donc plus petites ; multiplier N* par 4 oublierait la racine.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une usine de roulements fabrique 1 600 pièces à 20 D en un an. Chaque série exige 200 D de réglages, et détenir du stock coûte 20 % par an. Une fois le nombre de séries optimal retenu, que vaut le stock moyen, en D ?",
+      "answerKey": {
+        "value": 4000,
+        "unit": "D"
+      },
+      "explanation": "N* = √(1 600 × 20 × 0,20 ÷ 400) = √(6 400 ÷ 400) = √16 = 4 lots. Valeur du stock moyen = 1 600 × 20 ÷ (2 × 4) = 32 000 ÷ 8 = 4 000 D ✓. Contrôle : stockage 4 000 × 0,20 = 800 D = lancement 4 × 200 D.",
+      "difficulty": 3
+    }
+  ]
+}

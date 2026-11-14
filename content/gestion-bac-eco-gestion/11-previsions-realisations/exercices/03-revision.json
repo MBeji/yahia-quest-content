@@ -1,0 +1,221 @@
+{
+  "title": "⭐⭐ Révision (type examen) : De la fiche préétablie à l'origine des écarts",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur l'écart global d'un élément de coût sont vraies ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il se calcule en retranchant le coût préétabli du coût réel"
+        },
+        {
+          "id": "b",
+          "text": "Il est positif quand le coût réel dépasse le coût préétabli"
+        },
+        {
+          "id": "c",
+          "text": "Un écart positif sur une charge est un écart favorable"
+        },
+        {
+          "id": "d",
+          "text": "Il suffit à lui seul pour localiser l'origine de l'écart"
+        },
+        {
+          "id": "e",
+          "text": "Il peut se calculer sur les matières, la main-d'œuvre ou les charges indirectes"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "L'écart global se calcule toujours réel − préétabli ; il est positif quand le réel dépasse la prévision, et il s'applique à chaque élément du coût de production. Un écart positif sur une charge est défavorable, et l'écart global seul ne dit pas si l'origine est un prix ou une consommation : il faut le décomposer.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur à sa formule.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Coût préétabli de la production réelle"
+        },
+        {
+          "id": "l2",
+          "text": "Écart global"
+        },
+        {
+          "id": "l3",
+          "text": "Écart sur coût"
+        },
+        {
+          "id": "l4",
+          "text": "Écart sur quantité"
+        },
+        {
+          "id": "r1",
+          "text": "Quantité préétablie × coût unitaire préétabli"
+        },
+        {
+          "id": "r2",
+          "text": "Quantité réelle × coût unitaire réel − quantité préétablie × coût unitaire préétabli"
+        },
+        {
+          "id": "r3",
+          "text": "(Coût unitaire réel − coût unitaire préétabli) × quantité réelle"
+        },
+        {
+          "id": "r4",
+          "text": "(Quantité réelle − quantité préétablie) × coût unitaire préétabli"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le coût préétabli multiplie la quantité préétablie par le coût unitaire de la fiche. L'écart global soustrait ce coût préétabli du coût réel. L'écart sur coût compare les prix sur la quantité réelle, l'écart sur quantité compare les quantités au prix de la fiche.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La fiche d'un atelier de décoration donne 31,500 D de coût préétabli par pièce. L'atelier a fabriqué 1 200 pièces pour un coût réel total de 38 640 D. Quel est l'écart global de production, en D (positif s'il est défavorable) ?",
+      "answerKey": {
+        "value": 840,
+        "unit": "D"
+      },
+      "explanation": "Coût préétabli = 31,5 × 1 200 = 37 800 D. Écart global = 38 640 − 37 800 = 840 D, positif : défavorable ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un atelier de montage constate un écart défavorable sur la quantité de main-d'œuvre. Quelle cause possible est cohérente avec cet écart ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une hausse du taux horaire accordée à l'ensemble des ouvriers pendant le mois"
+        },
+        {
+          "id": "b",
+          "text": "Un rendement des ouvriers inférieur à celui prévu, qui allonge le temps de fabrication"
+        },
+        {
+          "id": "c",
+          "text": "Le recours à des intérimaires payés plus cher à l'heure, avec le même rendement que les ouvriers habituels"
+        },
+        {
+          "id": "d",
+          "text": "Une revalorisation de la prime de transport versée à chaque salarié de l'entreprise"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'écart sur quantité porte sur le nombre d'heures : un rendement plus faible fait travailler plus longtemps pour la même production. La hausse du taux, les intérimaires mieux payés au même rendement et la prime de transport jouent sur le prix de l'heure, donc sur l'écart sur coût, et non sur la quantité d'heures.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La fiche d'une savonnerie autorise 3 kg d'huile par lot, à 4 D le kg. Elle a fabriqué 700 lots, consommé 2 030 kg d'huile et payé 4,300 D le kg. Quel est l'écart sur quantité, en D (négatif s'il est favorable) ?",
+      "answerKey": {
+        "value": -280,
+        "unit": "D"
+      },
+      "explanation": "Quantité préétablie = 3 × 700 = 2 100 kg. Écart sur quantité = (2 030 − 2 100) × 4 = −70 × 4 = −280 D, favorable ✓. Contrôle : écart sur coût = (4,3 − 4) × 2 030 = 609 D, écart global = 609 − 280 = 329 D = 2 030 × 4,3 − 2 100 × 4 ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour analyser l'écart sur un élément de coût, dans quel ordre procède-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer la quantité préétablie à partir de la production réelle"
+        },
+        {
+          "id": "b",
+          "text": "Calculer l'écart global : coût réel − coût préétabli"
+        },
+        {
+          "id": "c",
+          "text": "Décomposer cet écart global en écart sur coût et écart sur quantité"
+        },
+        {
+          "id": "d",
+          "text": "Vérifier que ces deux écarts s'additionnent à l'écart global"
+        },
+        {
+          "id": "e",
+          "text": "Conclure : écart favorable ou défavorable, et cause probable"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "Le coût préétabli ne se connaît qu'avec la quantité préétablie, et l'écart global ne se calcule qu'ensuite. La décomposition porte sur cet écart global, et la vérification de la somme n'a de sens qu'une fois les deux composantes obtenues. L'interprétation vient en dernier, car elle s'appuie sur les chiffres.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "À propos de la décomposition de l'écart global, quelles affirmations sont vraies ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'écart sur coût se calcule sur la quantité réellement consommée"
+        },
+        {
+          "id": "b",
+          "text": "L'écart sur quantité se valorise au coût unitaire préétabli"
+        },
+        {
+          "id": "c",
+          "text": "Un écart global nul prouve qu'il n'existe ni écart sur coût ni écart sur quantité"
+        },
+        {
+          "id": "d",
+          "text": "Un écart sur coût et un écart sur quantité de signes opposés peuvent se compenser"
+        },
+        {
+          "id": "e",
+          "text": "L'écart sur quantité se calcule avec la quantité préétablie et le coût unitaire réel"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "L'écart sur coût se calcule sur la quantité réelle, et l'écart sur quantité au coût préétabli : c'est ce qui assure que leur somme redonne l'écart global. Cette somme peut être nulle avec deux écarts non nuls de signes contraires. L'affirmation qui associe la quantité préétablie au coût unitaire réel mélange les deux formules. Un écart global nul ne prouve donc pas l'absence d'écarts sur coût et sur quantité.",
+      "difficulty": 2
+    }
+  ]
+}

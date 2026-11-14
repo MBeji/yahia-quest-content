@@ -1,0 +1,98 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur de production",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La verrerie Carthage fabrique des carafes et des verres. En plein emploi, l'atelier de soufflage vérifie 1,5 C + V = 2 600 et l'atelier de refroidissement 0,5 C + 1,5 V = 1 800 (C : carafes, V : verres, temps en heures). Quelle quantité de verres fabrique-t-on ?",
+      "answerKey": {
+        "value": 800,
+        "unit": "unités"
+      },
+      "explanation": "De la première : V = 2 600 − 1,5 C. Dans la seconde : 0,5 C + 1,5 (2 600 − 1,5 C) = 1 800, soit 0,5 C + 3 900 − 2,25 C = 1 800, d'où 1,75 C = 2 100 et C = 1 200. Alors V = 2 600 − 1,5 × 1 200 = 800. Contrôle : 0,5 × 1 200 + 1,5 × 800 = 600 + 1 200 = 1 800 ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une maroquinerie dispose de 1 500 heures d'atelier par mois. Un sac demande 90 minutes de travail et une ceinture 30 minutes. Elle fabrique 800 sacs. Combien de ceintures doit-elle fabriquer pour que l'atelier soit en plein emploi ?",
+      "answerKey": {
+        "value": 600,
+        "unit": "unités"
+      },
+      "explanation": "Capacité en minutes : 1 500 × 60 = 90 000 mn. Les sacs en absorbent 800 × 90 = 72 000 mn ; il reste 18 000 mn, soit 18 000 ÷ 30 = 600 ceintures ✓. Mélanger heures et minutes donnerait un résultat faux.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un fabricant de jouets exige une livraison avant le 24. À prix proches, il préfère le plus proche : parmi les offres livrées à temps, il garde celles dont le prix dépasse d'au plus 1 D le moins cher, puis retient la plus proche. Offres : A 9,400 D, le 27, à 8 km ; B 8,700 D, le 21, à 70 km ; C 8,900 D, le 23, à 45 km ; D 8,200 D, le 26, à 150 km. Quel sous-traitant retient-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On élimine d'abord A (le 27) et D (le 26), qui livrent après le 24. Restent B (8,700 D) et C (8,900 D) : l'écart de 0,200 D ne dépasse pas 1 D, donc on prend le plus proche, C à 45 km. B est le moins cher des deux mais plus éloigné ; A est le plus proche de tous mais hors délai.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les ateliers d'une menuiserie passent par la découpe (étagère 40 mn, bureau 1 h 30 mn ; capacité 1 500 h) puis la finition (étagère 20 mn, bureau 30 mn ; capacité 600 h). La marge est de 12 D par étagère et 25 D par bureau. Quelle est la valeur de Z au plein emploi, en D ?",
+      "answerKey": {
+        "value": 25800,
+        "unit": "D"
+      },
+      "explanation": "En minutes : 40 E + 90 B = 90 000 et 20 E + 30 B = 36 000. En doublant la seconde : 40 E + 60 B = 72 000 ; par soustraction, 30 B = 18 000, donc B = 600 et E = 900. Contrôle : 40 × 900 + 90 × 600 = 90 000 ✓ et 20 × 900 + 30 × 600 = 36 000 ✓. Z = 12 × 900 + 25 × 600 = 10 800 + 15 000 = 25 800 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fabrique Orient vend un coussin 38 D et envisage d'en sous-traiter 500. Le sous-traitant facture 9,500 D de main-d'œuvre et 14,200 D de frais par coussin ; Orient fournit 3 kg de laine à 4,800 D le kg plus 0,200 D de frais d'approvisionnement par kg, et paie 1,500 D de distribution par coussin. Quelle conclusion tirer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui : le coût de revient unitaire vaut 25,200 D, nettement sous le prix de vente"
+        },
+        {
+          "id": "b",
+          "text": "Non : le coût de revient unitaire vaut 40,200 D, au-dessus du prix de vente de 38 D"
+        },
+        {
+          "id": "c",
+          "text": "Oui : le coût de revient unitaire se limite à 23,700 D, la facture du sous-traitant"
+        },
+        {
+          "id": "d",
+          "text": "Non : le coût unitaire atteint 38,700 D, soit 0,700 D de plus que ce que rapporte une vente"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Matière fournie : 3 × (4,800 + 0,200) = 15,000 D. Coût de revient unitaire = 15,000 + 9,500 + 14,200 + 1,500 = 40,200 D, supérieur au prix de vente de 38 D : sous-traiter fait perdre 2,200 D par coussin. Oublier la matière donne 25,200 D, ne garder que la facture du sous-traitant 23,700 D, oublier la distribution 38,700 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La société Sahel fabrique en plein emploi 1 500 lampes et 2 000 suspensions. Un client réclame 2 650 suspensions. Elle sous-traite l'écart et exige une livraison avant le 20. Offres par suspension (main-d'œuvre + frais) : T1 11,800 D, livrée le 14 ; T2 11,100 D, le 16 ; T3 10,500 D, le 24. Quel montant paie-t-elle au sous-traitant retenu, en D ?",
+      "answerKey": {
+        "value": 7215,
+        "unit": "D"
+      },
+      "explanation": "Écart : 2 650 − 2 000 = 650 suspensions à sous-traiter. T3 (le 24) est éliminé ; entre T1 (11,800 D) et T2 (11,100 D), on retient T2, moins cher. Montant : 650 × 11,100 = 7 215 D ✓.",
+      "difficulty": 3
+    }
+  ]
+}

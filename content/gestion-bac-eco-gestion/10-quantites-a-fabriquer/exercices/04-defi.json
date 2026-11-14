@@ -1,0 +1,70 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du directeur de production",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La chocolaterie Dar Sweet fabrique des boîtes de luxe (L) et des sachets (S). Cacao : 3 kg par boîte, 1,5 kg par sachet, 3 000 kg disponibles par mois. Emballage : 20 minutes par boîte, 6 minutes par sachet, 280 heures disponibles. La marge est de 9 D par boîte et 4 D par sachet. Au plein emploi des deux contraintes, quelle est la valeur de Z, en D ?",
+      "answerKey": {
+        "value": 8600,
+        "unit": "D"
+      },
+      "explanation": "Cacao : 3 L + 1,5 S = 3 000. Emballage en heures : (20 ÷ 60) L + (6 ÷ 60) S = 280, soit en minutes 20 L + 6 S = 16 800. De la première : S = 2 000 − 2 L ; dans la seconde : 20 L + 12 000 − 12 L = 16 800, donc L = 600 et S = 800. Z = 9 × 600 + 4 × 800 = 5 400 + 3 200 = 8 600 D ✓. Contrôle : 3 × 600 + 1,5 × 800 = 3 000.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les ateliers d'un fabricant de sièges : montage (fauteuil 2 h, pouf 1 h ; 1 400 h) et garnissage (fauteuil 1 h, pouf 1 h 30 mn ; 1 300 h). Marge : 30 D par fauteuil, 22 D par pouf. Un hôtel commande 800 poufs, vendus 70 D l'un. Le surplus est sous-traité : le sous-traitant facture 9,000 D de main-d'œuvre et 21,500 D de frais par pouf ; le fabricant fournit 6 kg de mousse à 4,000 D le kg plus 0,150 D de frais par kg, et paie 3,000 D de distribution par pouf. Quel résultat total, en D, la fabrication au plein emploi et le surplus sous-traité rapportent-ils ?",
+      "answerKey": {
+        "value": 27520,
+        "unit": "D"
+      },
+      "explanation": "Plein emploi : 2 F + P = 1 400 et F + 1,5 P = 1 300, d'où F = 400 et P = 600 ; Z = 30 × 400 + 22 × 600 = 25 200 D. Surplus : 800 − 600 = 200 poufs. Coût de revient unitaire = 6 × 4,150 + 9,000 + 21,500 + 3,000 = 58,400 D ; résultat unitaire 70 − 58,400 = 11,600 D, soit 200 × 11,600 = 2 320 D. Total : 25 200 + 2 320 = 27 520 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un atelier de montage et un atelier de peinture produisent des vélos d'enfant (V) et des trottinettes (T). Montage : 4 h par vélo et 2 h 30 mn par trottinette, 14 000 h par mois ; peinture : 3 h par vélo, 2 h par trottinette, 10 800 h. Une trottinette se vend 21,240 D TTC (TVA 18 %). Au plein emploi, quel chiffre d'affaires mensuel hors TVA les trottinettes rapportent-elles, en D ?",
+      "answerKey": {
+        "value": 43200,
+        "unit": "D"
+      },
+      "explanation": "Montage : 4 V + 2,5 T = 14 000 ; peinture : 3 V + 2 T = 10 800. On multiplie la première par 2 et la seconde par 2,5 : 8 V + 5 T = 28 000 et 7,5 V + 5 T = 27 000. Par soustraction, 0,5 V = 1 000, donc V = 2 000 et T = (14 000 − 8 000) ÷ 2,5 = 2 400. Prix hors TVA : 21,240 ÷ 1,18 = 18 D. Chiffre d'affaires = 2 400 × 18 = 43 200 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise, dont l'activité est la même chaque mois de l'année, fabrique des pièces Alpha et Bêta. Découpe : 30 mn par Alpha, 45 mn par Bêta, 1 425 h par mois ; finition : 12 mn par Alpha, 20 mn par Bêta, 600 h par mois. Un client réclame 1 150 Bêta chaque mois. Combien de Bêta faut-il sous-traiter sur l'année ?",
+      "answerKey": {
+        "value": 3000,
+        "unit": "unités"
+      },
+      "explanation": "En minutes : 30 A + 45 B = 85 500 et 12 A + 20 B = 36 000. Multiplions la première par 2 et la seconde par 5 : 60 A + 90 B = 171 000 et 60 A + 100 B = 180 000 ; la soustraction donne 10 B = 9 000, soit B = 900 et A = 1 500. Écart mensuel : 1 150 − 900 = 250 ; sur 12 mois : 250 × 12 = 3 000 Bêta ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une maroquinerie produit des sacs (S) et des portefeuilles (W) ; marges de 16 D et 9 D. Avant extension : découpe 2 S + W ≤ 1 400 h et couture S + 2 W ≤ 1 600 h. Après extension, ces capacités passent à 1 700 h et 1 900 h, temps unitaires inchangés. De combien de dinars le plein emploi fait-il croître Z ?",
+      "answerKey": {
+        "value": 2500,
+        "unit": "D"
+      },
+      "explanation": "Avant : 2 S + W = 1 400 et S + 2 W = 1 600 donnent S = 400 et W = 600, Z = 16 × 400 + 9 × 600 = 11 800 D. Après : 2 S + W = 1 700 et S + 2 W = 1 900 donnent S = 500 et W = 700, Z = 8 000 + 6 300 = 14 300 D. Hausse : 14 300 − 11 800 = 2 500 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une confiserie sous-traite 500 boîtes et exige une livraison avant le 18. Elle retient, parmi les offres dont le prix unitaire dépasse d'au plus 0,500 D le plus bas parmi celles livrées à temps, la plus proche. Offres par boîte (main-d'œuvre + frais) : T1 6,900 D, le 12, à 150 km ; T2 6,200 D, le 20, à 30 km ; T3 7,300 D, le 15, à 20 km ; T4 7,000 D, le 16, à 90 km. Elle fournit 1,8 kg de sucre à 2,700 D le kg plus 0,050 D de frais par kg, et paie 0,900 D de distribution par boîte. Quel est le coût de revient total, en D ?",
+      "answerKey": {
+        "value": 6575,
+        "unit": "D"
+      },
+      "explanation": "T2 (le 20) est éliminée. Parmi T1, T3 et T4, le plus bas prix est 6,900 D ; T3 dépasse de 0,400 D et T4 de 0,100 D, tous deux dans la limite de 0,500 D : on retient le plus proche, T3 (20 km). Matière : 1,8 × 2,750 = 4,950 D. Coût unitaire = 4,950 + 7,300 + 0,900 = 13,150 D ; pour 500 boîtes : 6 575 D ✓.",
+      "difficulty": 3
+    }
+  ]
+}

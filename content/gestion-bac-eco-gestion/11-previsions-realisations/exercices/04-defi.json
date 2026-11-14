@@ -1,0 +1,70 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du directeur de production",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La fiche d'une sellerie prévoit par selle 4 kg de cuir à 6 D le kg. Pour 1 500 selles fabriquées, elle a consommé 6 180 kg de cuir à 5,800 D le kg. Quel est l'écart global sur le cuir, en D (négatif s'il est favorable) ?",
+      "answerKey": {
+        "value": -156,
+        "unit": "D"
+      },
+      "explanation": "Quantité préétablie = 4 × 1 500 = 6 000 kg ; coût préétabli = 6 000 × 6 = 36 000 D. Coût réel = 6 180 × 5,8 = 35 844 D. Écart global = 35 844 − 36 000 = −156 D, favorable ✓. Contrôle : écart sur coût (5,8 − 6) × 6 180 = −1 236 D, écart sur quantité (6 180 − 6 000) × 6 = 1 080 D, et −1 236 + 1 080 = −156 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une cimenterie a consommé 3 200 kg d'un additif. L'écart sur coût de cet additif est de +256 D, et son coût unitaire préétabli de 1,500 D le kg. Quel a été le coût unitaire réel, en D par kg ?",
+      "answerKey": {
+        "value": 1.58,
+        "unit": "D/kg"
+      },
+      "explanation": "Écart sur coût = (coût unitaire réel − coût unitaire préétabli) × quantité réelle, donc coût unitaire réel − 1,5 = 256 ÷ 3 200 = 0,08, soit un coût unitaire réel de 1,58 D ✓. Contrôle : (1,58 − 1,5) × 3 200 = 256 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une usine de pièces moulées a préétabli 20 000 D de métal pour sa production. Le métal a coûté 10 % de plus que prévu au kilo, et l'usine en a consommé 5 % de moins que la quantité préétablie. Quel est l'écart sur coût, en D ?",
+      "answerKey": {
+        "value": 1900,
+        "unit": "D"
+      },
+      "explanation": "Notons la quantité préétablie Q et le prix préétabli P, avec Q × P = 20 000 D. Quantité réelle = 0,95 Q ; prix réel = 1,10 P. Écart sur coût = (1,10 P − P) × 0,95 Q = 0,10 × 0,95 × 20 000 = 1900 D ✓. Contrôle : écart sur quantité = −0,05 × 20 000 = −1 000 D ; écart global = 1 900 − 1 000 = 900 D = 20 900 − 20 000 ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un atelier de vannerie avait établi son coût préétabli pour 500 paniers : 12 000 D, soit un coût préétabli de 24 D par panier. Il en a finalement fabriqué 560, pour un coût réel total de 13 720 D. Quel est l'écart global de production, en D (positif s'il est défavorable) ?",
+      "answerKey": {
+        "value": 280,
+        "unit": "D"
+      },
+      "explanation": "On compare au coût préétabli de la production réellement obtenue : 24 × 560 = 13 440 D. Écart global = 13 720 − 13 440 = 280 D, défavorable ✓. Comparer à 12 000 D donnerait 1 720 D, un chiffre qui mélange l'écart de volume et l'écart de coût.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour sa production réelle de 1 000 unités, une entreprise a un coût unitaire préétabli de 52 D. Ses écarts sont de +1 320 D sur les matières, de −640 D sur la main-d'œuvre et de −180 D sur les charges indirectes. Quel est le coût unitaire réel, en D ?",
+      "answerKey": {
+        "value": 52.5,
+        "unit": "D"
+      },
+      "explanation": "Écart de production = 1 320 − 640 − 180 = 500 D. Coût préétabli = 52 × 1 000 = 52 000 D, donc coût réel = 52 000 + 500 = 52 500 D. Coût unitaire réel = 52 500 ÷ 1 000 = 52,5 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour sa production de 2 400 unités, un atelier d'emballage a préétabli 0,25 h de main-d'œuvre par unité à 8 D l'heure. Il a réellement travaillé 640 h à 7,600 D l'heure. Quel est l'écart global sur la main-d'œuvre, en D (négatif s'il est favorable) ?",
+      "answerKey": {
+        "value": 64,
+        "unit": "D"
+      },
+      "explanation": "Quantité préétablie = 0,25 × 2 400 = 600 h ; coût préétabli = 600 × 8 = 4 800 D. Coût réel = 640 × 7,6 = 4 864 D. Écart global = 64 D, défavorable ✓. Les deux composantes sont de signes contraires : écart sur coût (7,6 − 8) × 640 = −256 D, écart sur quantité (640 − 600) × 8 = 320 D ; le taux favorable ne suffit pas à compenser les heures en trop.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "title": "⭐ Exercice : Premières armes — fiche, écarts et signes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque terme à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Coût préétabli"
+        },
+        {
+          "id": "l2",
+          "text": "Coût réel"
+        },
+        {
+          "id": "l3",
+          "text": "Écart sur coût"
+        },
+        {
+          "id": "l4",
+          "text": "Écart sur quantité"
+        },
+        {
+          "id": "l5",
+          "text": "Écart global"
+        },
+        {
+          "id": "r1",
+          "text": "Coût fixé à l'avance pour la production obtenue, d'après la fiche"
+        },
+        {
+          "id": "r2",
+          "text": "Coût constaté après la fabrication avec les quantités et les prix effectifs"
+        },
+        {
+          "id": "r3",
+          "text": "Part de l'écart qui vient d'un prix unitaire différent de la prévision"
+        },
+        {
+          "id": "r4",
+          "text": "Part de l'écart qui vient d'une consommation différente de la prévision"
+        },
+        {
+          "id": "r5",
+          "text": "Différence entre le coût réel et le coût préétabli d'un élément"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ],
+          [
+            "l5",
+            "r5"
+          ]
+        ]
+      },
+      "explanation": "Le coût préétabli est la référence fixée avant ; le coût réel est ce qu'on constate après. L'écart global est leur différence ; il se décompose en une part due aux prix (écart sur coût) et une part due aux consommations (écart sur quantité).",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fiche prévoit 2,5 m de câble pour chaque tableau électrique. L'atelier a fabriqué 640 tableaux. Quelle est la quantité préétablie de câble, en mètres ?",
+      "answerKey": {
+        "value": 1600,
+        "unit": "m"
+      },
+      "explanation": "Quantité préétablie = quantité de la fiche par unité × unités fabriquées = 2,5 × 640 = 1 600 m ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une menuiserie a utilisé 85 kg de colle, payés 6,200 D le kg. Quel est le coût réel de la colle, en D ?",
+      "answerKey": {
+        "value": 527,
+        "unit": "D"
+      },
+      "explanation": "Coût réel = quantité réelle × coût unitaire réel = 85 × 6,2 = 527 D ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "La fiche d'une conserverie prévoit pour sa production réelle 1 200 h de main-d'œuvre à 4 D l'heure. Elle a payé 1 150 h à 4,200 D l'heure. Quel est l'écart global, en D (positif s'il est défavorable) ?",
+      "answerKey": {
+        "value": 30,
+        "unit": "D"
+      },
+      "explanation": "Coût réel = 1 150 × 4,2 = 4 830 D. Coût préétabli = 1 200 × 4 = 4 800 D. Écart global = 4 830 − 4 800 = 30 D, positif : défavorable ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Dans quel ordre se déroule le contrôle de gestion à partir des coûts préétablis ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Établir la fiche de coût préétabli de chaque élément"
+        },
+        {
+          "id": "b",
+          "text": "Mesurer les résultats réellement obtenus"
+        },
+        {
+          "id": "c",
+          "text": "Identifier et vérifier les écarts entre prévisions et réalisations"
+        },
+        {
+          "id": "d",
+          "text": "Agir pour réduire les écarts défavorables"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "La fiche vient d'abord, car sans référence il n'y a rien à comparer. On mesure ensuite le réel, puis on le confronte à la fiche pour repérer les écarts ; on ne peut chercher à réduire les écarts défavorables qu'une fois qu'ils sont identifiés et vérifiés.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une plasturgie ne connaît ses charges indirectes que par un montant global : 8 000 D prévus, 8 400 D constatés. Quelle analyse peut-elle conduire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer un écart sur coût de 400 D et un écart sur quantité nul, puisque le prix a changé"
+        },
+        {
+          "id": "b",
+          "text": "Calculer un écart de −400 D, favorable, en retranchant le montant constaté du montant prévu"
+        },
+        {
+          "id": "c",
+          "text": "Ne rien calculer, car sans quantités ni prix aucune comparaison n'est possible"
+        },
+        {
+          "id": "d",
+          "text": "Calculer l'écart global de 400 D, défavorable, sans pouvoir le répartir entre prix et quantité"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un montant global se compare : 8 400 − 8 000 = 400 D, positif donc défavorable. Faute de quantité et de coût unitaire, on ne peut pas répartir ces 400 D entre prix et consommation : attribuer tout l'écart à l'un des deux serait inventer une information que l'on n'a pas. Retrancher le constaté du prévu inverse le signe et la conclusion.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une tannerie avait fixé le taux horaire d'un artisan à 5,500 D. Elle a employé 340 heures, payées 5,200 D l'heure, soit exactement les heures prévues. Quel est l'écart sur coût, en D (négatif s'il est favorable) ?",
+      "answerKey": {
+        "value": -102,
+        "unit": "D"
+      },
+      "explanation": "Écart sur coût = (5,2 − 5,5) × 340 = −0,3 × 340 = −102 D, favorable ✓. Les heures réelles étant égales aux heures prévues, l'écart sur quantité est nul et l'écart global vaut aussi −102 D.",
+      "difficulty": 2
+    }
+  ]
+}
