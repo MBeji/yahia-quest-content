@@ -123,7 +123,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "On a δ = 0,5 quand T₁ = T₂, donc U_BH + U_HB = U_DD, soit U_BH = 3 V. Alors T₁ = RC·Log((3 − 12)/(9 − 12)) = RC·Log 3 = T₂ et T = 2RC·Log 3 = 2 × 0,47 × 1,0986 ≈ 1,03 ms, d'où N ≈ 0,97 kHz ✓. La valeur 1,94 kHz utilise T = RC·Log 3, formule des seuils ½ et ¾ de U_DD. La valeur 1,54 kHz utilise T = 2RC·Log 2, celle de l'exemple à seuils 4 V et 8 V. La valeur 2,13 kHz est 1/RC, qui oublie le logarithme.",
+      "explanation": "On a δ = 0,5 quand T₁ = T₂, donc U_BH + U_HB = U_DD, soit U_BH = 3 V. Alors T₁ = RC·Log((3 − 12)/(9 − 12)) = RC·Log 3 = T₂ et T = 2RC·Log 3 = 2 × 0,47 × 1,0986 ≈ 1,03 ms, d'où N ≈ 0,97 kHz ✓. La valeur 1,94 kHz utilise T = RC·Log 3, formule des seuils ½ et ¾ de U_DD. La valeur 1,54 kHz utilise T = 2RC·Log 2, valable pour les seuils symétriques 4 V et 8 V de l'exercice « À toi », pas ici. La valeur 2,13 kHz est 1/RC, qui oublie le logarithme.",
       "difficulty": 3
     },
     {
@@ -152,10 +152,7 @@
         }
       ],
       "answerKey": {
-        "correct": [
-          "a",
-          "e"
-        ]
+        "correct": ["a", "e"]
       },
       "explanation": "Vraies : pendant la phase u_S1 = 0, u_E2 = −u_C croît jusqu'au seuil U_DD/3, donc u_C = −U_DD/3 au basculement ; juste après, u_E2 = U_DD − (−U_DD/3) = 4U_DD/3 ✓. La phase u_S1 = U_DD dure RC·Log((U₁ + U₂)/U₂) = RC·Log 4, contre RC·Log((2U₁ − U₂)/(U₁ − U₂)) = RC·Log 2,5 pour l'autre ✓. Fausses : pendant la phase u_S1 = U_DD, u_E2 = U_DD − u_C décroît jusqu'à U_DD/3, donc u_C = 2U_DD/3 : u_C oscille entre −U_DD/3 et 2U_DD/3, pas entre ±U_DD/3 ; R₁ ne porte aucun courant et n'intervient pas dans la période ; et T = RC·Log 10 ≈ 2,30 RC, différente de 2RC·Log 3 ≈ 2,20 RC.",
       "difficulty": 3
