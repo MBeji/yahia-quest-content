@@ -1,0 +1,151 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec la modulation",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la modulation d'amplitude par multiplieur sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La porteuse a une fréquence très supérieure à celle du signal modulant"
+        },
+        {
+          "id": "b",
+          "text": "La sortie du multiplieur vaut u_S = k·u₁·u_p, avec k = 0,1 V⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "La fréquence du signal modulé est celle du signal modulant"
+        },
+        {
+          "id": "d",
+          "text": "La tension u(t) + U_0 est appliquée à la broche 1 du multiplieur"
+        },
+        {
+          "id": "e",
+          "text": "L'information est portée par la fréquence N_p de la porteuse"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "La porteuse est la tension rapide (N_p ≫ N), la sortie du multiplieur est u_S = k·u₁·u_p, et u₁ = u(t) + U_0 entre sur la broche 1 ✓. Le signal modulé garde la fréquence N_p de la porteuse : sa fréquence n'est pas N. Enfin, c'est l'amplitude de la porteuse, non sa fréquence, qui porte l'information en AM.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une station diffuse en AM sur une porteuse de fréquence 200 kHz. Quelle est la longueur d'onde de cette porteuse, en mètres ? On donne c = 3·10⁸ m·s⁻¹.",
+      "answerKey": {
+        "value": 1500,
+        "unit": "m"
+      },
+      "explanation": "λ = c/N_p = 3·10⁸/(2·10⁵) = 1500 m ✓. La longueur d'onde est bien plus petite que les 300 km d'un son de 1 kHz, ce qui permet une antenne de taille raisonnable.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'oscillogramme ci-dessous est celui d'une tension modulée en amplitude, avec la graduation de l'écran (1 V par division verticale, 0,2 ms par division horizontale). Quelles sont les valeurs de U_Smax et de U_Smin ?\n<svg viewBox=\"0 0 178 224\"><title>Oscillogramme d'une tension modulée en amplitude, avec la graduation de l'écran : 1 V par division verticale et 0,2 ms par division horizontale</title><line x1=\"14\" y1=\"194\" x2=\"14\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"29\" y1=\"194\" x2=\"29\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"44\" y1=\"194\" x2=\"44\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"59\" y1=\"194\" x2=\"59\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"74\" y1=\"194\" x2=\"74\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"89\" y1=\"194\" x2=\"89\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"104\" y1=\"194\" x2=\"104\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"119\" y1=\"194\" x2=\"119\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"134\" y1=\"194\" x2=\"134\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"149\" y1=\"194\" x2=\"149\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"164\" y1=\"194\" x2=\"164\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"194\" x2=\"164\" y2=\"194\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"179\" x2=\"164\" y2=\"179\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"164\" x2=\"164\" y2=\"164\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"149\" x2=\"164\" y2=\"149\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"134\" x2=\"164\" y2=\"134\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"119\" x2=\"164\" y2=\"119\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"104\" x2=\"164\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"89\" x2=\"164\" y2=\"89\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"74\" x2=\"164\" y2=\"74\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"59\" x2=\"164\" y2=\"59\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"44\" x2=\"164\" y2=\"44\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"29\" x2=\"164\" y2=\"29\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"14\" x2=\"164\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><rect x=\"14\" y=\"14\" width=\"150\" height=\"180\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"14\" y1=\"104\" x2=\"164\" y2=\"104\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"101\" x2=\"14\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"29\" y1=\"101\" x2=\"29\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"44\" y1=\"101\" x2=\"44\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"59\" y1=\"101\" x2=\"59\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"74\" y1=\"101\" x2=\"74\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"89\" y1=\"101\" x2=\"89\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"104\" y1=\"101\" x2=\"104\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"119\" y1=\"101\" x2=\"119\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"134\" y1=\"101\" x2=\"134\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"149\" y1=\"101\" x2=\"149\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"164\" y1=\"101\" x2=\"164\" y2=\"107\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><polyline points=\"14,29 14.5,34.7 14.9,51 15.4,75.4 15.9,104 16.3,132.5 16.8,156.4 17.3,172.3 17.8,177.5 18.2,171.6 18.7,155.4 19.2,131.6 19.6,104 20.1,76.8 20.6,54.1 21,39.4 21.5,34.7 22,40.7 22.4,56 22.9,78.3 23.4,104 23.8,129 24.3,149.6 24.8,162.7 25.2,166.6 25.7,161 26.2,146.9 26.7,126.8 27.1,104 27.6,82 28.1,64.1 28.5,52.8 29,49.7 29.5,54.9 29.9,67.2 30.4,84.5 30.9,104 31.3,122.6 31.8,137.5 32.3,146.7 32.8,149 33.2,144.5 33.7,134.2 34.2,119.9 34.6,104 35.1,89 35.6,77.1 36,69.9 36.5,68.3 37,72 37.4,80.3 37.9,91.6 38.4,104 38.8,115.6 39.3,124.7 39.8,130.2 40.2,131.4 40.7,128.4 41.2,122 41.7,113.4 42.1,104 42.6,95.2 43.1,88.3 43.5,84.2 44,83.3 44.5,85.5 44.9,90.3 45.4,96.8 45.9,104 46.3,110.8 46.8,116.2 47.3,119.6 47.8,120.5 48.2,118.9 48.7,115.2 49.2,110 49.6,104 50.1,98.2 50.6,93.3 51,90.1 51.5,89 52,90.1 52.4,93.3 52.9,98.2 53.4,104 53.8,110 54.3,115.2 54.8,118.9 55.2,120.5 55.7,119.6 56.2,116.2 56.7,110.8 57.1,104 57.6,96.8 58.1,90.3 58.5,85.5 59,83.3 59.5,84.2 59.9,88.3 60.4,95.2 60.9,104 61.3,113.4 61.8,122 62.3,128.4 62.8,131.4 63.2,130.2 63.7,124.7 64.2,115.6 64.6,104 65.1,91.6 65.6,80.3 66,72 66.5,68.3 67,69.9 67.4,77.1 67.9,89 68.4,104 68.8,119.9 69.3,134.2 69.8,144.5 70.2,149 70.7,146.7 71.2,137.5 71.7,122.6 72.1,104 72.6,84.5 73.1,67.2 73.5,54.9 74,49.7 74.5,52.8 74.9,64.1 75.4,82 75.9,104 76.3,126.8 76.8,146.9 77.3,161 77.8,166.6 78.2,162.7 78.7,149.6 79.2,129 79.6,104 80.1,78.3 80.6,56 81,40.7 81.5,34.7 82,39.4 82.4,54.1 82.9,76.8 83.4,104 83.8,131.6 84.3,155.4 84.8,171.6 85.2,177.5 85.7,172.3 86.2,156.4 86.7,132.5 87.1,104 87.6,75.4 88.1,51 88.5,34.7 89,29 89.5,34.7 89.9,51 90.4,75.4 90.9,104 91.3,132.5 91.8,156.4 92.3,172.3 92.8,177.5 93.2,171.6 93.7,155.4 94.2,131.6 94.6,104 95.1,76.8 95.6,54.1 96,39.4 96.5,34.7 97,40.7 97.4,56 97.9,78.3 98.4,104 98.8,129 99.3,149.6 99.8,162.7 100.3,166.6 100.7,161 101.2,146.9 101.7,126.8 102.1,104 102.6,82 103.1,64.1 103.5,52.8 104,49.7 104.5,54.9 104.9,67.2 105.4,84.5 105.9,104 106.3,122.6 106.8,137.5 107.3,146.7 107.8,149 108.2,144.5 108.7,134.2 109.2,119.9 109.6,104 110.1,89 110.6,77.1 111,69.9 111.5,68.3 112,72 112.4,80.3 112.9,91.6 113.4,104 113.8,115.6 114.3,124.7 114.8,130.2 115.2,131.4 115.7,128.4 116.2,122 116.7,113.4 117.1,104 117.6,95.2 118.1,88.3 118.5,84.2 119,83.3 119.5,85.5 119.9,90.3 120.4,96.8 120.9,104 121.3,110.8 121.8,116.2 122.3,119.6 122.8,120.5 123.2,118.9 123.7,115.2 124.2,110 124.6,104 125.1,98.2 125.6,93.3 126,90.1 126.5,89 127,90.1 127.4,93.3 127.9,98.2 128.4,104 128.8,110 129.3,115.2 129.8,118.9 130.2,120.5 130.7,119.6 131.2,116.2 131.7,110.8 132.1,104 132.6,96.8 133.1,90.3 133.5,85.5 134,83.3 134.5,84.2 134.9,88.3 135.4,95.2 135.9,104 136.3,113.4 136.8,122 137.3,128.4 137.8,131.4 138.2,130.2 138.7,124.7 139.2,115.6 139.6,104 140.1,91.6 140.6,80.3 141,72 141.5,68.3 142,69.9 142.4,77.1 142.9,89 143.4,104 143.8,119.9 144.3,134.2 144.8,144.5 145.2,149 145.7,146.7 146.2,137.5 146.7,122.6 147.1,104 147.6,84.5 148.1,67.2 148.5,54.9 149,49.7 149.5,52.8 149.9,64.1 150.4,82 150.9,104 151.3,126.8 151.8,146.9 152.3,161 152.8,166.6 153.2,162.7 153.7,149.6 154.2,129 154.6,104 155.1,78.3 155.6,56 156,40.7 156.5,34.7 157,39.4 157.4,54.1 157.9,76.8 158.4,104 158.8,131.6 159.3,155.4 159.8,171.6 160.2,177.5 160.7,172.3 161.2,156.4 161.7,132.5 162.1,104 162.6,75.4 163.1,51 163.5,34.7 164,29\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"14\" y=\"210\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1 V/div · 0,2 ms/div</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 V et 2 V"
+        },
+        {
+          "id": "b",
+          "text": "5 V et 3 V"
+        },
+        {
+          "id": "c",
+          "text": "5 V et 1 V"
+        },
+        {
+          "id": "d",
+          "text": "3 V et 2 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les plus grandes crêtes atteignent 5 divisions, soit U_Smax = 5 V, et les plus petites 1 division, soit U_Smin = 1 V ✓. Le couple 10 V et 2 V lit les écarts crête à crête, deux fois trop grands. Le couple 3 V et 2 V mélange l'amplitude A de la porteuse non modulée et la profondeur de modulation. Le couple 5 V et 3 V prend A pour U_Smin.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le spectre ci-dessous est celui d'un signal modulé en amplitude. Quel est son taux de modulation, et la modulation est-elle correcte ?\n<svg viewBox=\"0 0 340 200\"><title>Spectre d'un signal modulé en amplitude : raies à 197 kHz et 203 kHz de hauteur 0,9 V et raie à 200 kHz de hauteur 1,5 V</title><line x1=\"48\" y1=\"150\" x2=\"48\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"81.5\" y1=\"150\" x2=\"81.5\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"115\" y1=\"150\" x2=\"115\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"148.5\" y1=\"150\" x2=\"148.5\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"182\" y1=\"150\" x2=\"182\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"215.5\" y1=\"150\" x2=\"215.5\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"249\" y1=\"150\" x2=\"249\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"282.5\" y1=\"150\" x2=\"282.5\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"316\" y1=\"150\" x2=\"316\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"48\" y1=\"150\" x2=\"316\" y2=\"150\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"48\" y1=\"129\" x2=\"316\" y2=\"129\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"48\" y1=\"108\" x2=\"316\" y2=\"108\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"48\" y1=\"87\" x2=\"316\" y2=\"87\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"48\" y1=\"66\" x2=\"316\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"48\" y1=\"45\" x2=\"316\" y2=\"45\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"48\" y1=\"24\" x2=\"316\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><rect x=\"48\" y=\"24\" width=\"268\" height=\"126\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"48\" y1=\"150\" x2=\"48\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"48\" y=\"165\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">196</text><line x1=\"81.5\" y1=\"150\" x2=\"81.5\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"81.5\" y=\"165\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">197</text><line x1=\"115\" y1=\"150\" x2=\"115\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"115\" y=\"165\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">198</text><line x1=\"148.5\" y1=\"150\" x2=\"148.5\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"148.5\" y=\"165\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">199</text><line x1=\"182\" y1=\"150\" x2=\"182\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"182\" y=\"165\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">200</text><line x1=\"215.5\" y1=\"150\" x2=\"215.5\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"215.5\" y=\"165\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">201</text><line x1=\"249\" y1=\"150\" x2=\"249\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"249\" y=\"165\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">202</text><line x1=\"282.5\" y1=\"150\" x2=\"282.5\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"282.5\" y=\"165\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">203</text><line x1=\"316\" y1=\"150\" x2=\"316\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"316\" y=\"165\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">204</text><line x1=\"44\" y1=\"150\" x2=\"48\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"41\" y=\"153.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"44\" y1=\"129\" x2=\"48\" y2=\"129\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"41\" y=\"132.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,3</text><line x1=\"44\" y1=\"108\" x2=\"48\" y2=\"108\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"41\" y=\"111.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,6</text><line x1=\"44\" y1=\"87\" x2=\"48\" y2=\"87\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"41\" y=\"90.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,9</text><line x1=\"44\" y1=\"66\" x2=\"48\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"41\" y=\"69.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,2</text><line x1=\"44\" y1=\"45\" x2=\"48\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"41\" y=\"48.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,5</text><line x1=\"44\" y1=\"24\" x2=\"48\" y2=\"24\" stroke=\"#0f172a\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"41\" y=\"27.5\" text-anchor=\"end\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,8</text><text x=\"316\" y=\"178\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">N (kHz)</text><text x=\"50\" y=\"18\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">amplitude (V)</text><line x1=\"81.5\" y1=\"150\" x2=\"81.5\" y2=\"87\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"butt\"/><circle cx=\"81.5\" cy=\"87\" r=\"3.2\" fill=\"#0f6e56\"/><line x1=\"182\" y1=\"150\" x2=\"182\" y2=\"45\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"butt\"/><circle cx=\"182\" cy=\"45\" r=\"3.2\" fill=\"#0f6e56\"/><line x1=\"282.5\" y1=\"150\" x2=\"282.5\" y2=\"87\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"butt\"/><circle cx=\"282.5\" cy=\"87\" r=\"3.2\" fill=\"#0f6e56\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = 0,60 : bonne modulation"
+        },
+        {
+          "id": "b",
+          "text": "m = 1,20 : surmodulation"
+        },
+        {
+          "id": "c",
+          "text": "m = 1,67 : surmodulation"
+        },
+        {
+          "id": "d",
+          "text": "m = 3,33 : surmodulation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "m = 2 × (hauteur latérale)/(hauteur centrale) = 2 × 0,9/1,5 = 1,20 ✓ ; comme m > 1, il y a surmodulation. La valeur 0,60 oublie le facteur 2. La valeur 1,67 est le rapport inversé 1,5/0,9. La valeur 3,33 double ce rapport inversé.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un poste AM, quel rôle joue le circuit d'accord, formé d'une bobine en parallèle avec un condensateur variable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il supprime la composante continue"
+        },
+        {
+          "id": "b",
+          "text": "Il supprime les ondulations de la porteuse"
+        },
+        {
+          "id": "c",
+          "text": "Il décharge le condensateur du détecteur"
+        },
+        {
+          "id": "d",
+          "text": "Il sélectionne la porteuse de la station"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le circuit d'accord est un résonateur : en réglant le condensateur variable, on amène sa fréquence propre 1/(2π√(LC)) à la valeur N_p de la station choisie ✓. La composante continue est supprimée par le passe-haut, les ondulations par le passe-bas, et la décharge du condensateur du détecteur se fait dans son résistor.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un modulateur de fréquence suit N_p(t) = N_0 + k·u(t), avec N_0 = 100 MHz et k = 5 kHz·V⁻¹. Le signal modulant est u(t) = 3 cos(2π × 2000 t), en volts. Quelle est la fréquence maximale atteinte par la porteuse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100,030 MHz"
+        },
+        {
+          "id": "b",
+          "text": "100,015 MHz"
+        },
+        {
+          "id": "c",
+          "text": "100,005 MHz"
+        },
+        {
+          "id": "d",
+          "text": "99,985 MHz"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'excursion crête vaut k·U_m = 5 × 3 = 15 kHz, donc N_pmax = 100 MHz + 15 kHz = 100,015 MHz ✓. La valeur 99,985 MHz est le minimum. La valeur 100,005 MHz oublie U_m (N_0 + k). La valeur 100,030 MHz double l'excursion, comme un écart crête à crête.",
+      "difficulty": 2
+    }
+  ]
+}

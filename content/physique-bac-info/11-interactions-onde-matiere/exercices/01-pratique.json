@@ -1,0 +1,147 @@
+{
+  "title": "⭐ Exercice : Premiers contacts entre l'onde et l'obstacle",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur la diffraction d'une onde mécanique par une fente, lesquelles sont exactes ? (plusieurs réponses possibles)",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'onde diffractée a la même longueur d'onde que l'onde incidente"
+        },
+        {
+          "id": "b",
+          "text": "Un obstacle de largeur a diffracte l'onde comme une fente de largeur a"
+        },
+        {
+          "id": "c",
+          "text": "La diffraction modifie la fréquence de l'onde"
+        },
+        {
+          "id": "d",
+          "text": "La diffraction est d'autant plus nette que a est grande devant λ"
+        },
+        {
+          "id": "e",
+          "text": "L'onde se propage après la fente dans plusieurs directions de part et d'autre de la direction d'incidence"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "La longueur d'onde est conservée par la diffraction ✓, un obstacle de largeur a donne le même phénomène qu'une fente de largeur a ✓, et l'onde diffractée se propage dans plusieurs directions autour de la direction d'incidence ✓. La fréquence est imposée par la source et ne change pas, et la diffraction est d'autant plus nette que a est petite devant λ, non grande.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Cette figure montre l'écran, vu de face, d'une fente verticale éclairée par un laser ; la graduation est en millimètres et les zones sombres sont les bandes noires. La largeur L de la tache centrale est la distance entre les milieux des deux bandes sombres qui l'encadrent. Que vaut L ?\n<svg viewBox=\"0 0 340 138\"><title>Écran vu de face, graduation en millimètres : une tache centrale rouge vif encadrée par des bandes sombres, puis des taches latérales plus pâles</title><rect x=\"10\" y=\"22\" width=\"320\" height=\"60\" fill=\"#111827\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><rect x=\"126.5\" y=\"23\" width=\"87\" height=\"58\" fill=\"#ef4444\" opacity=\"1.0\"/><rect x=\"216.5\" y=\"23\" width=\"42\" height=\"58\" fill=\"#ef4444\" opacity=\"0.55\"/><rect x=\"81.5\" y=\"23\" width=\"42\" height=\"58\" fill=\"#ef4444\" opacity=\"0.55\"/><rect x=\"261.5\" y=\"23\" width=\"42\" height=\"58\" fill=\"#ef4444\" opacity=\"0.4\"/><rect x=\"36.5\" y=\"23\" width=\"42\" height=\"58\" fill=\"#ef4444\" opacity=\"0.4\"/><rect x=\"306.5\" y=\"23\" width=\"22\" height=\"58\" fill=\"#ef4444\" opacity=\"0.3\"/><rect x=\"11.5\" y=\"23\" width=\"22\" height=\"58\" fill=\"#ef4444\" opacity=\"0.3\"/><line x1=\"10\" y1=\"98\" x2=\"330\" y2=\"98\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"98\" x2=\"26\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"35\" y1=\"98\" x2=\"35\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"35\" y=\"118\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−15</text><line x1=\"44\" y1=\"98\" x2=\"44\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"53\" y1=\"98\" x2=\"53\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"62\" y1=\"98\" x2=\"62\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"71\" y1=\"98\" x2=\"71\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"98\" x2=\"80\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"80\" y=\"118\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−10</text><line x1=\"89\" y1=\"98\" x2=\"89\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"98\" y1=\"98\" x2=\"98\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"107\" y1=\"98\" x2=\"107\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"116\" y1=\"98\" x2=\"116\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"125\" y1=\"98\" x2=\"125\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"125\" y=\"118\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−5</text><line x1=\"134\" y1=\"98\" x2=\"134\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"143\" y1=\"98\" x2=\"143\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"152\" y1=\"98\" x2=\"152\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"161\" y1=\"98\" x2=\"161\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"98\" x2=\"170\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"170\" y=\"118\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"179\" y1=\"98\" x2=\"179\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"188\" y1=\"98\" x2=\"188\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"197\" y1=\"98\" x2=\"197\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"206\" y1=\"98\" x2=\"206\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"215\" y1=\"98\" x2=\"215\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"215\" y=\"118\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"224\" y1=\"98\" x2=\"224\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"233\" y1=\"98\" x2=\"233\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"242\" y1=\"98\" x2=\"242\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"251\" y1=\"98\" x2=\"251\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"260\" y1=\"98\" x2=\"260\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"260\" y=\"118\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><line x1=\"269\" y1=\"98\" x2=\"269\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"278\" y1=\"98\" x2=\"278\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"287\" y1=\"98\" x2=\"287\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"296\" y1=\"98\" x2=\"296\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"305\" y1=\"98\" x2=\"305\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"305\" y=\"118\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"10\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">15</text><line x1=\"314\" y1=\"98\" x2=\"314\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"170\" y=\"134\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"11\" font-weight=\"600\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">position sur l'écran (mm)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 mm"
+        },
+        {
+          "id": "b",
+          "text": "10 mm"
+        },
+        {
+          "id": "c",
+          "text": "15 mm"
+        },
+        {
+          "id": "d",
+          "text": "20 mm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les bandes sombres qui encadrent la tache centrale sont centrées sur les graduations −5 mm et +5 mm : L = 10 mm ✓. 5 mm est la largeur d'une tache latérale (la moitié de L), 15 mm celle de la tache centrale plus une tache latérale, et 20 mm celle de trois taches voisines.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Ces fentes sont éclairées par le même laser (λ = 633 nm). Range-les de la diffraction la moins marquée à la plus marquée.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 0,10 mm"
+        },
+        {
+          "id": "b",
+          "text": "a = 2,0 mm"
+        },
+        {
+          "id": "c",
+          "text": "a = 0,020 mm"
+        },
+        {
+          "id": "d",
+          "text": "a = 0,50 mm"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "La diffraction est d'autant plus marquée que λ/a est grand, donc que a est petit. Les quotients valent 3,2 × 10⁻⁴ pour 2,0 mm, 1,3 × 10⁻³ pour 0,50 mm, 6,3 × 10⁻³ pour 0,10 mm et 3,2 × 10⁻² pour 0,020 mm : l'ordre de la moins à la plus marquée est celui des largeurs décroissantes.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un laser éclaire une fente ; l'écran est à D = 1,5 m de la fente. La tache centrale mesure L = 12 mm. Quelle est la demi-largeur angulaire θ de cette tache, en 10⁻³ rad ? (petits angles)",
+      "answerKey": {
+        "value": 4.0,
+        "tolerance": 0.05,
+        "unit": "10⁻³ rad"
+      },
+      "explanation": "θ ≈ L/(2D) = 12 × 10⁻³/(2 × 1,5) = 4,0 × 10⁻³ rad ✓, soit 4,0 en 10⁻³ rad. L est la largeur totale de la tache : l'angle θ d'un côté de l'axe correspond à L/2. Avec θ = L/D, on trouverait 8,0 × 10⁻³ rad.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une onde plane arrive sur un obstacle plan : sa direction de propagation fait un angle de 35° avec la surface de l'obstacle. Quel est l'angle de réflexion i′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "125°"
+        },
+        {
+          "id": "b",
+          "text": "70°"
+        },
+        {
+          "id": "c",
+          "text": "55°"
+        },
+        {
+          "id": "d",
+          "text": "35°"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'angle d'incidence se compte avec la normale : i = 90° − 35° = 55°, donc i′ = i = 55° ✓. Garder 35° revient à compter avec la surface ; 70° est le double de 35°, et 125° la somme 90° + 35°.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une onde de fréquence N = 15 Hz passe d'un milieu où sa célérité est v₁ = 0,30 m/s dans un milieu où elle vaut v₂ = 0,20 m/s. Quelle est sa longueur d'onde dans le milieu 2, en cm ?",
+      "answerKey": {
+        "value": 1.33,
+        "tolerance": 0.03,
+        "unit": "cm"
+      },
+      "explanation": "La fréquence ne change pas au passage : λ₂ = v₂/N = 0,20/15 = 0,0133 m = 1,33 cm ✓. Avec v₁ on aurait trouvé λ₁ = 2,0 cm, la longueur d'onde du milieu 1.",
+      "difficulty": 2
+    }
+  ]
+}

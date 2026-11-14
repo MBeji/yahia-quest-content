@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Modulation et démodulation des signaux",
+  "questions": [
+    {
+      "prompt": "En modulation d'amplitude, que modifie le signal à transmettre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'amplitude de la tension porteuse"
+        },
+        {
+          "id": "b",
+          "text": "La fréquence de la tension porteuse"
+        },
+        {
+          "id": "c",
+          "text": "La fréquence de la tension modulée"
+        },
+        {
+          "id": "d",
+          "text": "La valeur de la constante k"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le signal modulant fait varier l'amplitude de la porteuse, au rythme de sa propre fréquence N ✓. La fréquence de la porteuse reste N_p, et celle de la tension modulée aussi : c'est la FM, et non l'AM, qui fait varier une fréquence. La constante k = 0,1 V⁻¹ est celle du multiplieur et ne change pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une station radio est annoncée sur 162 kHz. Que représente cette fréquence ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fréquence de la porteuse de la station"
+        },
+        {
+          "id": "b",
+          "text": "La fréquence du son transmis par la station"
+        },
+        {
+          "id": "c",
+          "text": "La fréquence de coupure du récepteur"
+        },
+        {
+          "id": "d",
+          "text": "La largeur de bande occupée par la station"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fréquence annoncée d'une station est celle de sa porteuse N_p ✓. Le son transmis a une fréquence N bien plus petite, de l'ordre de quelques kHz. La fréquence de coupure est celle d'un filtre du récepteur, et la largeur de bande vaut 2N.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "En modulation de fréquence, la fréquence de la porteuse suit N_p(t) = N_0 + k·u(t). Que vaut N_p(t) à un instant où u(t) = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N_0 + k·U_m"
+        },
+        {
+          "id": "b",
+          "text": "k·U_m"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "N_0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Si u(t) = 0, le terme k·u(t) est nul et N_p(t) = N_0 ✓, la fréquence de la porteuse non modulée. La valeur N_0 + k·U_m est la fréquence maximale, atteinte quand u(t) = U_m. La valeur k·U_m est l'excursion crête, un écart et non une fréquence.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un multiplieur (k = 0,1 V⁻¹) reçoit la porteuse, d'amplitude U_pm = 6 V, et u₁ = U_0 + U_m cos 2πN t avec U_0 = 5 V et U_m = 2 V. Quelle est l'amplitude maximale U_Smax de la tension de sortie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,8 V"
+        },
+        {
+          "id": "b",
+          "text": "3,0 V"
+        },
+        {
+          "id": "c",
+          "text": "4,2 V"
+        },
+        {
+          "id": "d",
+          "text": "42 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "U_Smax = k·U_pm·(U_0 + U_m) = 0,1 × 6 × 7 = 4,2 V ✓. La valeur 1,8 V est le minimum, 0,6 × (5 − 2). La valeur 3,0 V est l'amplitude de la porteuse non modulée, 0,6 × 5. La valeur 42 V oublie le facteur k = 0,1 V⁻¹.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un signal modulé en amplitude a pour signal modulant U_m = 2 V et pour tension de décalage U_0 = 8 V. Quel est son taux de modulation m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,20"
+        },
+        {
+          "id": "b",
+          "text": "0,25"
+        },
+        {
+          "id": "c",
+          "text": "0,75"
+        },
+        {
+          "id": "d",
+          "text": "4,0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "m = U_m/U_0 = 2/8 = 0,25 ✓, sans unité. La valeur 0,20 divise U_m par la somme U_0 + U_m. La valeur 0,75 est le rapport (U_0 − U_m)/U_0. La valeur 4,0 est le rapport inversé U_0/U_m.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Avec U_m = 4 V, quel réglage de la tension de décalage U_0 produit une surmodulation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "U_0 = 2 V"
+        },
+        {
+          "id": "b",
+          "text": "U_0 = 4 V"
+        },
+        {
+          "id": "c",
+          "text": "U_0 = 6 V"
+        },
+        {
+          "id": "d",
+          "text": "U_0 = 8 V"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Il y a surmodulation quand m = U_m/U_0 > 1, donc U_0 < U_m : U_0 = 2 V donne m = 2 ✓. Avec U_0 = 4 V, m = 1, cas limite sans surmodulation. Avec 6 V et 8 V, m = 0,67 et 0,5 : la modulation est correcte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un son de fréquence maximale 4 kHz module en amplitude une porteuse de 150 kHz. Quelle est la largeur de la bande de fréquences occupée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 kHz"
+        },
+        {
+          "id": "b",
+          "text": "8 kHz"
+        },
+        {
+          "id": "c",
+          "text": "154 kHz"
+        },
+        {
+          "id": "d",
+          "text": "300 kHz"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La bande a pour largeur ΔN = (N_p + N) − (N_p − N) = 2N = 8 kHz ✓. La valeur 4 kHz oublie le facteur 2. La valeur 154 kHz est la fréquence de la raie haute N_p + N, non une largeur. La valeur 300 kHz double la porteuse au lieu du signal modulant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit T la période du signal modulant et T_p celle de la porteuse. Quelle condition la constante de temps τ = RC d'un détecteur d'enveloppe doit-elle vérifier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RC ≪ T_p ≪ T"
+        },
+        {
+          "id": "b",
+          "text": "T_p ≪ RC ≪ T"
+        },
+        {
+          "id": "c",
+          "text": "T_p ≪ T ≪ RC"
+        },
+        {
+          "id": "d",
+          "text": "T ≪ RC ≪ T_p"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Il faut T_p ≪ RC ≪ T ✓ : C ne se décharge presque pas entre deux crêtes de la porteuse, mais se décharge assez vite pour suivre la baisse de l'enveloppe. Avec RC ≪ T_p, la sortie suivrait la porteuse elle-même. Avec RC ≫ T, la sortie ne suivrait plus l'enveloppe. La dernière inégalité est impossible puisque T ≫ T_p.",
+      "difficulty": 2
+    }
+  ]
+}

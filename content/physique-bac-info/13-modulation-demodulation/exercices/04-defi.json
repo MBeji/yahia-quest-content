@@ -1,0 +1,151 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le maître des ondes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la chaîne de démodulation d'un signal modulé en amplitude sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le détecteur d'enveloppe suit les crêtes de u_S grâce à la diode et au condensateur"
+        },
+        {
+          "id": "b",
+          "text": "Le passe-bas de lissage vérifie T_p ≪ R'C' ≪ T"
+        },
+        {
+          "id": "c",
+          "text": "Le passe-haut R''C'' vérifie R''C'' ≪ T"
+        },
+        {
+          "id": "d",
+          "text": "Le passe-haut élimine les ondulations à la fréquence N_p"
+        },
+        {
+          "id": "e",
+          "text": "Une démodulation de qualité exige N_p ≫ N"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Le détecteur suit les crêtes (diode, C), le lissage vérifie T_p ≪ R'C' ≪ T, et la démodulation exige N_p ≫ N ✓. Le passe-haut doit au contraire vérifier R''C'' ≫ T pour laisser passer N, et il supprime la composante continue ; ce sont les ondulations à N_p que supprime le passe-bas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un signal modulé en fréquence a pour expression u(t) = 10 cos(4·10⁷ t + 8 cos 6000 t), en volts. Quelle est la fréquence N du signal modulant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,37 MHz"
+        },
+        {
+          "id": "b",
+          "text": "37,7 kHz"
+        },
+        {
+          "id": "c",
+          "text": "6,0 kHz"
+        },
+        {
+          "id": "d",
+          "text": "955 Hz"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La pulsation du modulant est ω = 6000 rad·s⁻¹, donc N = ω/2π = 6000/6,283 ≈ 955 Hz ✓. La valeur 6,0 kHz oublie la conversion en fréquence. La valeur 37,7 kHz multiplie par 2π au lieu de diviser. La valeur 6,37 MHz est la fréquence de la porteuse, 4·10⁷/2π.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Après détection, un lissage par passe-bas R'C' doit laisser passer le son (N = 2 kHz) et arrêter la porteuse (N_p = 300 kHz). Avec R' = 1,6 kΩ, quelle capacité C' convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 nF"
+        },
+        {
+          "id": "b",
+          "text": "10 nF"
+        },
+        {
+          "id": "c",
+          "text": "100 nF"
+        },
+        {
+          "id": "d",
+          "text": "1 µF"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Il faut T_p ≪ R'C' ≪ T avec T_p = 3,3 µs et T = 500 µs. C' = 10 nF donne R'C' = 16 µs, soit N_h = 1/(2π × 16 µs) ≈ 9,9 kHz, entre 2 kHz et 300 kHz ✓. Avec 1 nF, R'C' = 1,6 µs < T_p : la porteuse passerait. Avec 100 nF et 1 µF, R'C' = 160 µs et 1,6 ms, N_h ≈ 1,0 kHz et 0,1 kHz < N : le son serait atténué.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un modulateur de fréquence donne N_p = 88,000 MHz pour u(t) = 0 et N_p = 88,012 MHz pour u = +1,5 V, avec N_p(t) = N_0 + k·u(t). Le signal modulant est u(t) = 2 cos(2π × 4000 t), en volts. Quelle est la valeur de l'indice de modulation β ?",
+      "answerKey": {
+        "value": 4,
+        "tolerance": 0.05
+      },
+      "explanation": "Pour u = 1,5 V, k·u = 12 kHz, donc k = 8 kHz·V⁻¹. L'excursion crête vaut k·U_m = 8 × 2 = 16 kHz, et β = 16 kHz/4 kHz = 4 ✓, sans unité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le résonateur (L, C) d'un émetteur FM a pour fréquence propre 80 MHz quand u(t) = 0. Quand u(t) augmente, la capacité est divisée par 4, L restant constante. Quelle est alors la fréquence propre, sachant que N = 1/(2π√(LC)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 MHz"
+        },
+        {
+          "id": "b",
+          "text": "40 MHz"
+        },
+        {
+          "id": "c",
+          "text": "160 MHz"
+        },
+        {
+          "id": "d",
+          "text": "320 MHz"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec C' = C/4, √(L·C') = √(LC)/2, donc N' = 2N = 160 MHz ✓ : une capacité plus petite donne une fréquence plus élevée. La valeur 320 MHz oublie la racine carrée, 40 MHz et 20 MHz inversent le sens de variation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'oscillogramme ci-dessous (1 V par division verticale, 0,2 ms par division horizontale) est celui d'une tension modulée en amplitude. Les plus grandes oscillations atteignent 6,5 V ; au creux de l'enveloppe, le signal s'annule puis repart en sens inverse, avec des oscillations de 1,5 V. Quel est le taux de modulation, et que conclure ?\n<svg viewBox=\"0 0 178 254\"><title>Oscillogramme d'une tension modulée en amplitude dont l'enveloppe passe par zéro, avec la graduation de l'écran : 1 V par division verticale et 0,2 ms par division horizontale</title><line x1=\"14\" y1=\"224\" x2=\"14\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"29\" y1=\"224\" x2=\"29\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"44\" y1=\"224\" x2=\"44\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"59\" y1=\"224\" x2=\"59\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"74\" y1=\"224\" x2=\"74\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"89\" y1=\"224\" x2=\"89\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"104\" y1=\"224\" x2=\"104\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"119\" y1=\"224\" x2=\"119\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"134\" y1=\"224\" x2=\"134\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"149\" y1=\"224\" x2=\"149\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"164\" y1=\"224\" x2=\"164\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"224\" x2=\"164\" y2=\"224\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"209\" x2=\"164\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"194\" x2=\"164\" y2=\"194\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"179\" x2=\"164\" y2=\"179\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"164\" x2=\"164\" y2=\"164\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"149\" x2=\"164\" y2=\"149\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"134\" x2=\"164\" y2=\"134\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"119\" x2=\"164\" y2=\"119\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"104\" x2=\"164\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"89\" x2=\"164\" y2=\"89\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"74\" x2=\"164\" y2=\"74\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"59\" x2=\"164\" y2=\"59\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"44\" x2=\"164\" y2=\"44\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"29\" x2=\"164\" y2=\"29\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"14\" x2=\"164\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><rect x=\"14\" y=\"14\" width=\"150\" height=\"210\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"14\" y1=\"119\" x2=\"164\" y2=\"119\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"116\" x2=\"14\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"29\" y1=\"116\" x2=\"29\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"44\" y1=\"116\" x2=\"44\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"59\" y1=\"116\" x2=\"59\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"74\" y1=\"116\" x2=\"74\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"89\" y1=\"116\" x2=\"89\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"104\" y1=\"116\" x2=\"104\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"119\" y1=\"116\" x2=\"119\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"134\" y1=\"116\" x2=\"134\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"149\" y1=\"116\" x2=\"149\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"164\" y1=\"116\" x2=\"164\" y2=\"122\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><polyline points=\"14,21.5 14.5,29 14.9,50.2 15.4,81.8 15.9,119 16.3,155.9 16.8,186.8 17.3,207 17.8,213.6 18.2,205.7 18.7,184.7 19.2,154.2 19.6,119 20.1,84.6 20.6,56.3 21,38.3 21.5,33 22,40.8 22.4,60.2 22.9,87.8 23.4,119 23.8,148.9 24.3,173.1 24.8,188 25.2,191.8 25.7,184.4 26.2,167.7 26.7,144.6 27.1,119 27.6,95 28.1,76.2 28.5,65.2 29,63 29.5,69.3 29.9,82.6 30.4,100.2 30.9,119 31.3,136 31.8,148.8 32.3,155.8 32.8,156.5 33.2,151.5 33.7,142.2 34.2,130.7 34.6,119 35.1,109.1 35.6,102.4 36,99.4 36.5,100 37,103.5 37.4,108.7 37.9,114.3 38.4,119 38.8,122.1 39.3,123.3 39.8,122.8 40.2,121.2 40.7,119.3 41.2,118 41.7,117.8 42.1,119 42.6,121.5 43.1,124.7 43.5,127.9 44,130 44.5,130.4 44.9,128.7 45.4,124.7 45.9,119 46.3,112.5 46.8,106.3 47.3,101.6 47.8,99.4 48.2,100.3 48.7,104.3 49.2,110.8 49.6,119 50.1,127.5 50.6,134.8 51,139.7 51.5,141.5 52,139.7 52.4,134.8 52.9,127.5 53.4,119 53.8,110.8 54.3,104.3 54.8,100.3 55.2,99.4 55.7,101.6 56.2,106.3 56.7,112.5 57.1,119 57.6,124.7 58.1,128.7 58.5,130.4 59,130 59.5,127.9 59.9,124.7 60.4,121.5 60.9,119 61.3,117.8 61.8,118 62.3,119.3 62.8,121.2 63.2,122.8 63.7,123.3 64.2,122.1 64.6,119 65.1,114.3 65.6,108.7 66,103.5 66.5,100 67,99.4 67.4,102.4 67.9,109.1 68.4,119 68.8,130.7 69.3,142.2 69.8,151.5 70.2,156.5 70.7,155.8 71.2,148.8 71.7,136 72.1,119 72.6,100.2 73.1,82.6 73.5,69.3 74,63 74.5,65.2 74.9,76.2 75.4,95 75.9,119 76.3,144.6 76.8,167.7 77.3,184.4 77.8,191.8 78.2,188 78.7,173.1 79.2,148.9 79.6,119 80.1,87.8 80.6,60.2 81,40.8 81.5,33 82,38.3 82.4,56.3 82.9,84.6 83.4,119 83.8,154.2 84.3,184.7 84.8,205.7 85.2,213.6 85.7,207 86.2,186.8 86.7,155.9 87.1,119 87.6,81.8 88.1,50.2 88.5,29 89,21.5 89.5,29 89.9,50.2 90.4,81.8 90.9,119 91.3,155.9 91.8,186.8 92.3,207 92.8,213.6 93.2,205.7 93.7,184.7 94.2,154.2 94.6,119 95.1,84.6 95.6,56.3 96,38.3 96.5,33 97,40.8 97.4,60.2 97.9,87.8 98.4,119 98.8,148.9 99.3,173.1 99.8,188 100.3,191.8 100.7,184.4 101.2,167.7 101.7,144.6 102.1,119 102.6,95 103.1,76.2 103.5,65.2 104,63 104.5,69.3 104.9,82.6 105.4,100.2 105.9,119 106.3,136 106.8,148.8 107.3,155.8 107.8,156.5 108.2,151.5 108.7,142.2 109.2,130.7 109.6,119 110.1,109.1 110.6,102.4 111,99.4 111.5,100 112,103.5 112.4,108.7 112.9,114.3 113.4,119 113.8,122.1 114.3,123.3 114.8,122.8 115.2,121.2 115.7,119.3 116.2,118 116.7,117.8 117.1,119 117.6,121.5 118.1,124.7 118.5,127.9 119,130 119.5,130.4 119.9,128.7 120.4,124.7 120.9,119 121.3,112.5 121.8,106.3 122.3,101.6 122.8,99.4 123.2,100.3 123.7,104.3 124.2,110.8 124.6,119 125.1,127.5 125.6,134.8 126,139.7 126.5,141.5 127,139.7 127.4,134.8 127.9,127.5 128.4,119 128.8,110.8 129.3,104.3 129.8,100.3 130.2,99.4 130.7,101.6 131.2,106.3 131.7,112.5 132.1,119 132.6,124.7 133.1,128.7 133.5,130.4 134,130 134.5,127.9 134.9,124.7 135.4,121.5 135.9,119 136.3,117.8 136.8,118 137.3,119.3 137.8,121.2 138.2,122.8 138.7,123.3 139.2,122.1 139.6,119 140.1,114.3 140.6,108.7 141,103.5 141.5,100 142,99.4 142.4,102.4 142.9,109.1 143.4,119 143.8,130.7 144.3,142.2 144.8,151.5 145.2,156.5 145.7,155.8 146.2,148.8 146.7,136 147.1,119 147.6,100.2 148.1,82.6 148.5,69.3 149,63 149.5,65.2 149.9,76.2 150.4,95 150.9,119 151.3,144.6 151.8,167.7 152.3,184.4 152.8,191.8 153.2,188 153.7,173.1 154.2,148.9 154.6,119 155.1,87.8 155.6,60.2 156,40.8 156.5,33 157,38.3 157.4,56.3 157.9,84.6 158.4,119 158.8,154.2 159.3,184.7 159.8,205.7 160.2,213.6 160.7,207 161.2,186.8 161.7,155.9 162.1,119 162.6,81.8 163.1,50.2 163.5,29 164,21.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"14\" y=\"240\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1 V/div · 0,2 ms/div</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = 0,63 : bonne modulation"
+        },
+        {
+          "id": "b",
+          "text": "m = 1,00 : cas limite"
+        },
+        {
+          "id": "c",
+          "text": "m = 1,60 : surmodulation"
+        },
+        {
+          "id": "d",
+          "text": "m = 4,33 : surmodulation"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le signal repart en sens inverse : U_Smin est négative, U_Smin = −1,5 V. Alors m = (6,5 − (−1,5))/(6,5 + (−1,5)) = 8/5 = 1,60 > 1 ✓, c'est une surmodulation. La valeur 0,63 ignore le signe de U_Smin. La valeur 1,00 confond le passage par zéro avec le cas limite, qui n'est atteint que si U_Smin = 0 sans changement de sens. La valeur 4,33 est le rapport 6,5/1,5.",
+      "difficulty": 3
+    }
+  ]
+}

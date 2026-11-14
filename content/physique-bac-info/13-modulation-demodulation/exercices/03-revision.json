@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Modulation et démodulation",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle affirmation sur le spectre d'un signal modulé en amplitude est FAUSSE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il compte trois raies"
+        },
+        {
+          "id": "b",
+          "text": "La raie centrale est à la fréquence de la porteuse"
+        },
+        {
+          "id": "c",
+          "text": "Une de ses raies est à la fréquence N du modulant"
+        },
+        {
+          "id": "d",
+          "text": "Les raies latérales sont écartées de N de la raie centrale"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il n'y a aucune raie à la fréquence N du signal modulant : la modulation translate l'information au voisinage de N_p ✓. Les trois autres affirmations sont exactes : trois raies, N_p − N, N_p et N_p + N, la porteuse au centre et les raies latérales écartées de N.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Laquelle de ces tensions est modulée en amplitude ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u = 5 cos(3·10⁵ t)"
+        },
+        {
+          "id": "b",
+          "text": "u = 6 cos(10⁶ t + 2,5 cos(400 t))"
+        },
+        {
+          "id": "c",
+          "text": "u = 3 + 2 cos 400 t"
+        },
+        {
+          "id": "d",
+          "text": "u = 6 (2 + cos 400 t) cos(10⁶ t)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En AM, l'amplitude dépend du temps : 6 (2 + cos 400 t) multiplie cos(10⁶ t) ✓. La tension 5 cos(3·10⁵ t) est une porteuse non modulée. La tension 6 cos(10⁶ t + 2 cos 400 t) a une amplitude constante et une phase variable : c'est une FM. La tension 3 + 2 cos 400 t est un signal modulant avec son décalage.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un détecteur d'enveloppe, quel est le rôle du résistor R en parallèle avec le condensateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il bloque les alternances négatives de u_S"
+        },
+        {
+          "id": "b",
+          "text": "Il charge le condensateur jusqu'à la crête"
+        },
+        {
+          "id": "c",
+          "text": "Il décharge lentement le condensateur"
+        },
+        {
+          "id": "d",
+          "text": "Il supprime la composante continue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le résistor R laisse le condensateur se décharger lentement quand u_S redescend ✓, ce qui permet à la sortie de suivre la baisse de l'enveloppe. Les alternances négatives sont bloquées par la diode, qui assure aussi la charge, et la composante continue est supprimée par un passe-haut placé après le lissage.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'oscillogramme ci-dessous (2 V par division verticale, 0,25 ms par division horizontale) est celui d'une tension modulée en amplitude. Quel est le taux de modulation ?\n<svg viewBox=\"0 0 148 164\"><title>Oscillogramme d'une tension modulée en amplitude, avec la graduation de l'écran : 2 V par division verticale et 0,25 ms par division horizontale</title><line x1=\"14\" y1=\"134\" x2=\"14\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"29\" y1=\"134\" x2=\"29\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"44\" y1=\"134\" x2=\"44\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"59\" y1=\"134\" x2=\"59\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"74\" y1=\"134\" x2=\"74\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"89\" y1=\"134\" x2=\"89\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"104\" y1=\"134\" x2=\"104\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"119\" y1=\"134\" x2=\"119\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"134\" y1=\"134\" x2=\"134\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"134\" x2=\"134\" y2=\"134\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"119\" x2=\"134\" y2=\"119\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"104\" x2=\"134\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"89\" x2=\"134\" y2=\"89\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"74\" x2=\"134\" y2=\"74\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"59\" x2=\"134\" y2=\"59\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"44\" x2=\"134\" y2=\"44\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"29\" x2=\"134\" y2=\"29\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"14\" x2=\"134\" y2=\"14\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"butt\"/><rect x=\"14\" y=\"14\" width=\"120\" height=\"120\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><line x1=\"14\" y1=\"74\" x2=\"134\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"butt\"/><line x1=\"14\" y1=\"71\" x2=\"14\" y2=\"77\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"29\" y1=\"71\" x2=\"29\" y2=\"77\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"44\" y1=\"71\" x2=\"44\" y2=\"77\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"59\" y1=\"71\" x2=\"59\" y2=\"77\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"74\" y1=\"71\" x2=\"74\" y2=\"77\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"89\" y1=\"71\" x2=\"89\" y2=\"77\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"104\" y1=\"71\" x2=\"104\" y2=\"77\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"119\" y1=\"71\" x2=\"119\" y2=\"77\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><line x1=\"134\" y1=\"71\" x2=\"134\" y2=\"77\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\"/><polyline points=\"14,21.5 14.4,25.5 14.8,36.9 15.1,53.9 15.5,74 15.9,94 16.2,110.8 16.6,122 17,125.8 17.4,121.6 17.8,110.3 18.1,93.6 18.5,74 18.9,54.6 19.2,38.4 19.6,27.8 20,24.4 20.4,28.5 20.8,39.4 21.1,55.4 21.5,74 21.9,92.2 22.2,107.4 22.6,117.2 23,120.3 23.4,116.3 23.8,106.1 24.1,91.2 24.5,74 24.9,57.2 25.2,43.4 25.6,34.6 26,31.9 26.4,35.6 26.8,45 27.1,58.5 27.5,74 27.9,89 28.2,101.3 28.6,109.2 29,111.5 29.4,108.1 29.8,99.7 30.1,87.7 30.5,74 30.9,60.8 31.3,50 31.6,43.1 32,41.1 32.4,44.2 32.8,51.5 33.1,62.1 33.5,74 33.9,85.5 34.2,95 34.6,100.9 35,102.7 35.4,100.1 35.8,93.6 36.1,84.5 36.5,74 36.9,63.9 37.2,55.5 37.6,50.2 38,48.6 38.4,50.9 38.8,56.5 39.1,64.7 39.5,74 39.9,83.1 40.2,90.7 40.6,95.6 41,97.2 41.4,95.3 41.8,90.2 42.1,82.7 42.5,74 42.9,65.3 43.2,58.1 43.6,53.2 44,51.5 44.4,53.2 44.8,58.1 45.1,65.3 45.5,74 45.9,82.7 46.2,90.2 46.6,95.3 47,97.2 47.4,95.6 47.8,90.7 48.1,83.1 48.5,74 48.9,64.7 49.2,56.5 49.6,50.9 50,48.6 50.4,50.2 50.8,55.5 51.1,63.9 51.5,74 51.9,84.5 52.3,93.6 52.6,100.1 53,102.7 53.4,100.9 53.8,95 54.1,85.5 54.5,74 54.9,62.1 55.2,51.5 55.6,44.2 56,41.1 56.4,43.1 56.8,50 57.1,60.8 57.5,74 57.9,87.7 58.2,99.7 58.6,108.1 59,111.5 59.4,109.2 59.8,101.3 60.1,89 60.5,74 60.9,58.5 61.3,45 61.6,35.6 62,31.9 62.4,34.6 62.8,43.4 63.1,57.2 63.5,74 63.9,91.2 64.2,106.1 64.6,116.3 65,120.3 65.4,117.2 65.8,107.4 66.1,92.2 66.5,74 66.9,55.4 67.2,39.4 67.6,28.5 68,24.4 68.4,27.8 68.8,38.4 69.1,54.6 69.5,74 69.9,93.6 70.2,110.3 70.6,121.6 71,125.8 71.4,122 71.8,110.8 72.1,94 72.5,74 72.9,53.9 73.2,36.9 73.6,25.5 74,21.5 74.4,25.5 74.8,36.9 75.1,53.9 75.5,74 75.9,94 76.2,110.8 76.6,122 77,125.8 77.4,121.6 77.8,110.3 78.1,93.6 78.5,74 78.9,54.6 79.3,38.4 79.6,27.8 80,24.4 80.4,28.5 80.8,39.4 81.1,55.4 81.5,74 81.9,92.2 82.2,107.4 82.6,117.2 83,120.3 83.4,116.3 83.8,106.1 84.1,91.2 84.5,74 84.9,57.2 85.2,43.4 85.6,34.6 86,31.9 86.4,35.6 86.8,45 87.1,58.5 87.5,74 87.9,89 88.2,101.3 88.6,109.2 89,111.5 89.4,108.1 89.8,99.7 90.1,87.7 90.5,74 90.9,60.8 91.2,50 91.6,43.1 92,41.1 92.4,44.2 92.8,51.5 93.1,62.1 93.5,74 93.9,85.5 94.3,95 94.6,100.9 95,102.7 95.4,100.1 95.8,93.6 96.1,84.5 96.5,74 96.9,63.9 97.3,55.5 97.6,50.2 98,48.6 98.4,50.9 98.8,56.5 99.1,64.7 99.5,74 99.9,83.1 100.2,90.7 100.6,95.6 101,97.2 101.4,95.3 101.8,90.2 102.1,82.7 102.5,74 102.9,65.3 103.2,58.1 103.6,53.2 104,51.5 104.4,53.2 104.8,58.1 105.1,65.3 105.5,74 105.9,82.7 106.2,90.2 106.6,95.3 107,97.2 107.4,95.6 107.8,90.7 108.1,83.1 108.5,74 108.9,64.7 109.3,56.5 109.6,50.9 110,48.6 110.4,50.2 110.8,55.5 111.1,63.9 111.5,74 111.9,84.5 112.3,93.6 112.6,100.1 113,102.7 113.4,100.9 113.8,95 114.1,85.5 114.5,74 114.9,62.1 115.2,51.5 115.6,44.2 116,41.1 116.4,43.1 116.8,50 117.1,60.8 117.5,74 117.9,87.7 118.2,99.7 118.6,108.1 119,111.5 119.4,109.2 119.8,101.3 120.1,89 120.5,74 120.9,58.5 121.2,45 121.6,35.6 122,31.9 122.4,34.6 122.8,43.4 123.1,57.2 123.5,74 123.9,91.2 124.3,106.1 124.6,116.3 125,120.3 125.4,117.2 125.8,107.4 126.1,92.2 126.5,74 126.9,55.4 127.3,39.4 127.6,28.5 128,24.4 128.4,27.8 128.8,38.4 129.1,54.6 129.5,74 129.9,93.6 130.2,110.3 130.6,121.6 131,125.8 131.4,122 131.8,110.8 132.1,94 132.5,74 132.9,53.9 133.2,36.9 133.6,25.5 134,21.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"14\" y=\"150\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2 V/div · 0,25 ms/div</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,40"
+        },
+        {
+          "id": "b",
+          "text": "0,43"
+        },
+        {
+          "id": "c",
+          "text": "0,57"
+        },
+        {
+          "id": "d",
+          "text": "2,33"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les crêtes atteignent 3,5 divisions et 1,5 division, soit U_Smax = 7 V et U_Smin = 3 V ; m = (7 − 3)/(7 + 3) = 0,40 ✓. La valeur 0,43 est le rapport U_Smin/U_Smax. La valeur 0,57 divise la différence par U_Smax seul. La valeur 2,33 est le rapport U_Smax/U_Smin.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un ingénieur doit diffuser de la musique de haute fidélité dans une région riche en parasites électromagnétiques (éclairs, moteurs). Quelle modulation choisir, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'AM, car sa porteuse porte l'information"
+        },
+        {
+          "id": "b",
+          "text": "L'AM, car elle est très peu sensible aux parasites"
+        },
+        {
+          "id": "c",
+          "text": "La FM, car elle est peu sensible aux parasites"
+        },
+        {
+          "id": "d",
+          "text": "La FM, car son récepteur est le plus simple"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La FM est très peu sensible aux parasites et offre une haute fidélité ✓. L'AM y est au contraire sensible, et sa porteuse ne porte aucune information : l'information est dans les bandes latérales. Le récepteur FM est plus compliqué qu'un détecteur d'enveloppe : c'est un inconvénient de la FM.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une station AM émet une onde de longueur d'onde λ = 600 m (c = 3·10⁸ m·s⁻¹), modulée par un son de 5 kHz. Pour son détecteur d'enveloppe, R = 10 kΩ. Quelle valeur de C convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 pF"
+        },
+        {
+          "id": "b",
+          "text": "2 nF"
+        },
+        {
+          "id": "c",
+          "text": "200 nF"
+        },
+        {
+          "id": "d",
+          "text": "20 µF"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "N_p = c/λ = 3·10⁸/600 = 500 kHz, donc T_p = 2 µs ; T = 1/5000 = 200 µs. Il faut 2 µs ≪ RC ≪ 200 µs, soit 0,2 nF ≪ C ≪ 20 nF ✓ : C = 2 nF donne RC = 20 µs. Avec 20 pF, RC = 0,2 µs < T_p. Avec 200 nF, RC = 2 ms > T, et avec 20 µF, RC = 0,2 s.",
+      "difficulty": 3
+    }
+  ]
+}
