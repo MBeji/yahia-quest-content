@@ -406,13 +406,13 @@ Sur le schéma, le rayon blanc se sépare en rayons colorés qui ne sont pas dé
 
 Indices d'un verre pour cinq radiations (ν : fréquence, λ₀ : longueur d'onde dans le vide) :
 
-| Couleur     | ν (10¹⁴ Hz) | λ₀ (10⁻⁶ m) | Indice n |
-| ----------- | ----------- | ----------- | -------- |
+| Couleur      | ν (10¹⁴ Hz) | λ₀ (10⁻⁶ m) | Indice n |
+| ------------ | ----------- | ----------- | -------- |
 | rouge sombre | 3,91        | 0,767       | 1,511    |
-| rouge       | 4,57        | 0,656       | 1,514    |
-| jaune       | 5,10        | 0,588       | 1,517    |
-| bleu vert   | 6,18        | 0,485       | 1,520    |
-| bleu sombre | 6,92        | 0,433       | 1,528    |
+| rouge        | 4,57        | 0,656       | 1,514    |
+| jaune        | 5,10        | 0,588       | 1,517    |
+| bleu vert    | 6,18        | 0,485       | 1,520    |
+| bleu sombre  | 6,92        | 0,433       | 1,528    |
 
 Dans le tableau, l'indice n augmente quand la fréquence augmente, donc du rouge sombre au bleu sombre.
 
