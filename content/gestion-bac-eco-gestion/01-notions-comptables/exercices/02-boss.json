@@ -1,0 +1,137 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : La facture et son article",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Ce mois-ci, l'atelier de Sana a eu plusieurs opérations. Lesquelles constituent des charges (emplois définitifs) ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prime d'assurance du véhicule de 360 D payée"
+        },
+        {
+          "id": "b",
+          "text": "Achat de 40 m² de cuir pour fabriquer des sacs"
+        },
+        {
+          "id": "c",
+          "text": "Salaire de la secrétaire de 250 D payé"
+        },
+        {
+          "id": "d",
+          "text": "Achat d'une imprimante laser de 500 D"
+        },
+        {
+          "id": "e",
+          "text": "Vente de 12 sacs"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "L'assurance, le cuir destiné à la fabrication et le salaire sont des valeurs consommées par l'activité : des emplois définitifs, donc des charges de la classe 6 ✓. L'imprimante est un bien durable qui reste à l'atelier et sert pendant des années : son achat n'est pas une charge. La vente de sacs est une ressource définitive, donc un produit de la classe 7.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une facture d'achat indique : brut 7 500 D, remise 4 %, TVA 18 % calculée sur le net commercial. Quel est le net à payer TTC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 200 D"
+        },
+        {
+          "id": "b",
+          "text": "8 496 D"
+        },
+        {
+          "id": "c",
+          "text": "8 550 D"
+        },
+        {
+          "id": "d",
+          "text": "9 204 D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Remise : 7 500 × 4 % = 300 D, donc net commercial 7 200 D. TVA : 7 200 × 18 % = 1 296 D. Net à payer : 7 200 + 1 296 = 8 496 D ✓. Le résultat de 7 200 D oublie la TVA. Celui de 8 550 D calcule la TVA sur le brut (7 500 × 18 % = 1 350 D) au lieu du net commercial. Celui de 9 204 D ajoute la remise au brut au lieu de la retrancher.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une facture d'achat de matières premières porte la mention « Net à payer TTC : 7 670 D », avec une TVA de 18 %. Quel est le montant de la TVA déductible, en D ?",
+      "answerKey": {
+        "value": 1170,
+        "unit": "D"
+      },
+      "explanation": "Le TTC vaut le HT majoré de 18 % : HT = 7 670 ÷ 1,18 = 6 500 D. La TVA est la différence : 7 670 − 6 500 = 1 170 D ✓ (contrôle : 6 500 × 18 % = 1 170 D). Prendre 18 % du TTC donnerait 1 380,6 D, ce qui est faux car la TVA s'applique au HT.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Facture reçue : brut 5 000 D, remise 10 %, TVA 18 % sur le net commercial, règlement dans 45 jours. Quel article du journal l'enregistre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Débit 601 : 4 500 ; débit 4366 : 810 ; crédit 401 : 5 310"
+        },
+        {
+          "id": "b",
+          "text": "Débit 601 : 4 500 ; débit 4366 : 900 ; crédit 401 : 5 400"
+        },
+        {
+          "id": "c",
+          "text": "Débit 601 : 5 000 ; débit 4366 : 900 ; crédit 401 : 5 900"
+        },
+        {
+          "id": "d",
+          "text": "Débit 401 : 5 310 ; crédit 601 : 4 500 ; crédit 4366 : 810"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Remise 500 D, net commercial 4 500 D, TVA 4 500 × 18 % = 810 D, net à payer 5 310 D : on débite les emplois 601 (4 500) et 4366 (810) et on crédite la ressource 401 (5 310), total 5 310 des deux côtés ✓. L'article à 900 D de TVA calcule la TVA sur le brut. Celui à 5 000 D oublie en plus la remise sur le compte d'achats. Le dernier inverse les côtés : il crédite les emplois et débite la ressource.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une facture d'achat a été réglée : net à payer TTC 10 089 D. Elle comportait une remise de 5 % et une TVA de 18 % sur le net commercial. Quel était le montant brut, en D ?",
+      "answerKey": {
+        "value": 9000,
+        "unit": "D"
+      },
+      "explanation": "On remonte la facture à l'envers. Net commercial : 10 089 ÷ 1,18 = 8 550 D. Ce net est le brut diminué de 5 % : brut = 8 550 ÷ 0,95 = 9 000 D ✓ (contrôle : 9 000 − 450 = 8 550 ; 8 550 × 1,18 = 10 089). Le piège est de diviser par 1,05 ou d'ajouter 5 % au net, alors que la remise se calcule sur le brut.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une facture de brut 6 000 D, remise 10 %, TVA 18 % sur le net commercial, un stagiaire écrit : débit 601 : 6 000 ; débit 4366 : 972 ; crédit 401 : 6 972. Où est l'erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les comptes sont inversés : le compte 601 devait être crédité et le compte 401 débité"
+        },
+        {
+          "id": "b",
+          "text": "Le compte 601 est porté au brut au lieu du net commercial de 5 400 D"
+        },
+        {
+          "id": "c",
+          "text": "L'article n'est pas équilibré : le total débité ne correspond pas au total crédité"
+        },
+        {
+          "id": "d",
+          "text": "La TVA est mal calculée : le compte 4366 devait porter 1 080 D au lieu de 972 D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La remise de 600 D donne un net commercial de 5 400 D, qui est le montant de l'achat : 601 devait porter 5 400 D, et le net à payer devait être 5 400 + 972 = 6 372 D ✓. La TVA de 972 D est juste, car 5 400 × 18 % = 972. L'article est équilibré (6 000 + 972 = 6 972), ce qui montre qu'un article équilibré peut être faux. Les côtés débit et crédit sont corrects.",
+      "difficulty": 3
+    }
+  ]
+}

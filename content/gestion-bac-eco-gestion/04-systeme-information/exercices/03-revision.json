@@ -1,0 +1,195 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le système d'information de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Un associé de la pâtisserie veut connaître le bénéfice réalisé cette année. Quel outil d'obtention de l'information le renseigne ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La comptabilité"
+        },
+        {
+          "id": "b",
+          "text": "Les statistiques"
+        },
+        {
+          "id": "c",
+          "text": "Les mathématiques financières"
+        },
+        {
+          "id": "d",
+          "text": "L'informatique"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La comptabilité informe les partenaires de l'entreprise (associés, salariés, investisseurs) : elle garde les écritures d'où se tire le résultat de l'année. L'informatique traite les données, les statistiques résument des séries et les mathématiques financières calculent des emprunts ou des placements, mais aucune ne tient les comptes.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associez chaque critère de classement de l'information à la question qu'il pose.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Source"
+        },
+        {
+          "id": "l2",
+          "text": "Nature"
+        },
+        {
+          "id": "l3",
+          "text": "Domaine"
+        },
+        {
+          "id": "l4",
+          "text": "Niveau d'utilisation"
+        },
+        {
+          "id": "r1",
+          "text": "L'information est-elle commerciale, juridique, comptable… ?"
+        },
+        {
+          "id": "r2",
+          "text": "Qui s'en sert : cadres supérieurs, cadres moyens, opérateurs ?"
+        },
+        {
+          "id": "r3",
+          "text": "L'information vient-elle de l'intérieur ou de l'extérieur ?"
+        },
+        {
+          "id": "r4",
+          "text": "L'information est-elle écrite ou orale ?"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l4",
+            "r2"
+          ]
+        ]
+      },
+      "explanation": "La source donne l'origine interne ou externe, la nature le mode écrit ou oral, le domaine le sujet traité, et le niveau d'utilisation le public qui s'en sert. Les quatre critères sont indépendants.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un candidat envoie son CV ; remettez dans l'ordre le parcours de cette information au service du personnel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le service compare le CV au profil du poste à pourvoir"
+        },
+        {
+          "id": "b",
+          "text": "Une employée enregistre le CV dans le fichier des candidats"
+        },
+        {
+          "id": "c",
+          "text": "Le résultat de la comparaison est transmis au directeur"
+        },
+        {
+          "id": "d",
+          "text": "Le service reçoit le CV envoyé par le candidat"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "d",
+          "b",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Le CV est d'abord recueilli (collecte), puis enregistré (saisie). Il est ensuite comparé au profil (traitement), et le résultat est transmis au directeur (diffusion) : on ne diffuse qu'après avoir traité.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les ventes d'une pâtisserie passent de 240 boîtes en mars à 300 boîtes en avril. Le tableur calcule le taux d'évolution avant de le diffuser à la gérante. Quel taux diffuse-t-il, en % ?",
+      "answerKey": {
+        "value": 25,
+        "unit": "%"
+      },
+      "explanation": "Le tableur applique un outil statistique, l'évolution, à l'étape du traitement. La variation est 300 − 240 = 60 boîtes ; rapportée à la valeur de départ, 60 / 240 = 0,25, soit 25 % ✓. Diviser par la valeur d'arrivée donnerait 60 / 300 = 20 %, une mauvaise base.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels sont des outils d'obtention de l'information cités dans le cours ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La comptabilité"
+        },
+        {
+          "id": "b",
+          "text": "L'informatique"
+        },
+        {
+          "id": "c",
+          "text": "Les statistiques"
+        },
+        {
+          "id": "d",
+          "text": "La publicité"
+        },
+        {
+          "id": "e",
+          "text": "L'organigramme"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La comptabilité, l'informatique, les mathématiques financières et les statistiques sont les quatre outils principaux. La publicité sert à vendre et l'organigramme représente la structure de l'entreprise ; ni l'une ni l'autre ne figure parmi les quatre outils d'obtention de l'information.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi dit-on que l'informatique a transformé la manière de décider ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce qu'elle remplace la comptabilité comme moyen de preuve"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'elle supprime l'étape de la collecte"
+        },
+        {
+          "id": "c",
+          "text": "Parce qu'elle traite beaucoup de données en très peu de temps"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'elle vérifie l'origine des données avant de les saisir"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'informatique traite une grande quantité de données en très peu de temps, ce qui permet de décider avec des informations plus nombreuses et plus rapides. Elle ne remplace pas la comptabilité, elle laisse la collecte à faire et elle ne contrôle pas d'elle-même l'origine des données.",
+      "difficulty": 2
+    }
+  ]
+}

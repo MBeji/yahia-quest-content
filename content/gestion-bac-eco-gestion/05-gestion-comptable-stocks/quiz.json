@@ -1,0 +1,97 @@
+{
+  "title": "Test de compréhension ⭐ : La gestion comptable des stocks",
+  "questions": [
+    {
+      "prompt": "À quelle valeur une marchandise achetée entre-t-elle dans la fiche de stock ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au prix de vente que l'entreprise espère obtenir"
+        },
+        {
+          "id": "b",
+          "text": "Au coût d'achat : prix d'achat plus frais d'achat"
+        },
+        {
+          "id": "c",
+          "text": "Au seul prix figurant sur la facture du fournisseur"
+        },
+        {
+          "id": "d",
+          "text": "Au coût moyen pondéré du stock déjà en magasin"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une entrée se valorise au coût d'achat : prix d'achat, frais externes (transport, emballages non récupérables) et frais internes (réception, manutention). Le prix de vente n'est connu qu'à la sortie, et le prix facturé seul oublie les frais. Le CUMP sert à valoriser les sorties, pas les entrées.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un article démarre le mois avec 400 unités à 15 D l'une. Il entre ensuite 100 unités à 20 D l'une. Quel est le coût unitaire moyen pondéré de fin de période, en D ?",
+      "answerKey": {
+        "value": 16,
+        "unit": "D"
+      },
+      "explanation": "Valeur cumulée : 400 × 15 + 100 × 20 = 6 000 + 2 000 = 8 000 D, pour 500 unités. CUMP = 8 000 ÷ 500 = 16 D ✓. La moyenne simple des deux prix, 17,5 D, ignorerait que le premier lot est quatre fois plus gros.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle méthode valorise les sorties au coût des entrées les plus anciennes, lot après lot ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le CUMP de fin de période"
+        },
+        {
+          "id": "b",
+          "text": "Le CUMP après chaque entrée"
+        },
+        {
+          "id": "c",
+          "text": "Le dernier entré, premier sorti (DEPS)"
+        },
+        {
+          "id": "d",
+          "text": "Le premier entré, premier sorti (PEPS)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le PEPS épuise d'abord les lots les plus anciens et valorise donc les sorties à leurs coûts. Le DEPS fait l'inverse, et les deux CUMP appliquent un coût moyen, pas le coût d'un lot précis.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un stock compte 150 unités à 8 D. Une entrée de 100 unités à 9 D arrive, puis une sortie de 200 unités est servie selon le PEPS. Quelle est la valeur de cette sortie, en D ?",
+      "answerKey": {
+        "value": 1650,
+        "unit": "D"
+      },
+      "explanation": "Le lot ancien part en premier : 150 × 8 = 1 200 D. Il manque 50 unités, prélevées sur le lot à 9 D : 50 × 9 = 450 D. Valeur de la sortie : 1 200 + 450 = 1 650 D ✓. Valoriser les 200 unités à 8 D donnerait 1 600 D et oublierait le second lot.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les prix d'achat d'un article montent tout au long du mois. Que constate-t-on en comparant le PEPS et le DEPS ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le PEPS donne le résultat le plus élevé, car il sort les lots aux coûts les plus bas"
+        },
+        {
+          "id": "b",
+          "text": "Le PEPS donne le résultat le plus faible, car il sort d'abord les lots les plus chers"
+        },
+        {
+          "id": "c",
+          "text": "Les deux méthodes donnent le même résultat, car elles sortent le même nombre d'unités"
+        },
+        {
+          "id": "d",
+          "text": "Le PEPS donne le résultat le plus élevé, car il garde en stock les lots les plus anciens"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En hausse des prix, les lots anciens sont les moins chers. Le PEPS les sort en premier : les sorties coûtent peu, la marge et le résultat sont majorés. Le DEPS sort au contraire les lots récents, les plus chers, et minore le résultat ; les deux méthodes ne donnent donc pas le même résultat. Le PEPS garde en stock les lots récents, pas les anciens : c'est parce qu'il sort les lots anciens, les moins chers, que le résultat est majoré.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les ratios du stock de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque notion à ce qu'elle exprime.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Part des stocks dans l'actif"
+        },
+        {
+          "id": "l2",
+          "text": "Coefficient de rotation"
+        },
+        {
+          "id": "l3",
+          "text": "Durée du stockage"
+        },
+        {
+          "id": "l4",
+          "text": "Coût de possession"
+        },
+        {
+          "id": "r1",
+          "text": "Le poids du stock dans le patrimoine de l'entreprise"
+        },
+        {
+          "id": "r2",
+          "text": "Le nombre de renouvellements du stock moyen dans l'année"
+        },
+        {
+          "id": "r3",
+          "text": "Le nombre de jours moyen de détention de la marchandise"
+        },
+        {
+          "id": "r4",
+          "text": "Ce que coûte le fait de garder un stock : loyer, assurance, argent immobilisé"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La part des stocks rapporte le stock au total des actifs. Le coefficient de rotation compte les renouvellements du stock moyen dans l'année et la durée les convertit en jours (360 ÷ r). Le coût de possession regroupe les frais qu'entraîne la détention du stock.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels éléments sont des coûts de possession d'un stock ? Coche toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le loyer du local où l'on entrepose les marchandises"
+        },
+        {
+          "id": "b",
+          "text": "L'assurance des marchandises stockées"
+        },
+        {
+          "id": "c",
+          "text": "L'intérêt de l'argent immobilisé dans les rayons"
+        },
+        {
+          "id": "d",
+          "text": "Le prix d'achat facturé par le fournisseur"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le loyer du local, l'assurance et l'intérêt de l'argent immobilisé sont des frais engendrés par le fait de détenir le stock : ce sont des coûts de possession. Le prix d'achat facturé par le fournisseur est le coût d'acquisition des marchandises, pas un coût de leur détention.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un entrepôt consomme régulièrement 18 000 kg de sucre par an et passe 5 commandes égales. Quel est le stock moyen, en kg ?",
+      "answerKey": {
+        "value": 1800,
+        "unit": "kg"
+      },
+      "explanation": "Stock moyen = Q ÷ (2 × N) = 18 000 ÷ (2 × 5) = 18 000 ÷ 10 = 1 800 kg ✓. Chaque commande porte sur 3 600 kg, et le stock moyen en est la moitié.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Classe ces quatre entreprises de la durée de stockage la plus courte à la plus longue.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Achats consommés 180 000 D, stock moyen 20 000 D"
+        },
+        {
+          "id": "b",
+          "text": "Achats consommés 200 000 D, stock moyen 25 000 D"
+        },
+        {
+          "id": "c",
+          "text": "Achats consommés 240 000 D, stock moyen 40 000 D"
+        },
+        {
+          "id": "d",
+          "text": "Achats consommés 300 000 D, stock moyen 60 000 D"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Les coefficients de rotation sont 180 000 ÷ 20 000 = 9, 200 000 ÷ 25 000 = 8, 240 000 ÷ 40 000 = 6 et 300 000 ÷ 60 000 = 5, soit des durées de 40, 45, 60 et 72 jours. Plus la rotation est rapide, plus la durée est courte : on classe donc du coefficient le plus élevé au plus faible.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un magasin voit son stock passer de 70 000 D à 50 000 D pendant l'année ; ses achats s'élèvent à 210 000 D. Quel est le montant des achats consommés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "190 000 D"
+        },
+        {
+          "id": "b",
+          "text": "210 000 D"
+        },
+        {
+          "id": "c",
+          "text": "230 000 D"
+        },
+        {
+          "id": "d",
+          "text": "280 000 D"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Achats consommés = 210 000 + 70 000 − 50 000 = 230 000 D. Le stock a diminué de 20 000 D : il est sorti 20 000 D de plus que ce qui a été acheté. 190 000 D inverse les deux stocks, 210 000 D ignore les stocks et 280 000 D oublie de retrancher le stock final.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le bilan de la société Sahli Pneus affiche, à la clôture N, 45 000 D de stocks sur un actif total de 250 000 D ; un an plus tôt, c'était 36 000 D sur 160 000 D. Quel pourcentage de l'actif les stocks représentent-ils à la clôture N ?",
+      "answerKey": {
+        "value": 18,
+        "unit": "%"
+      },
+      "explanation": "Poids à la clôture N = 45 000 ÷ 250 000 = 0,18, soit 18 % ✓. Un an plus tôt : 36 000 ÷ 160 000 = 22,5 %. Les stocks ont augmenté en dinars (+ 9 000 D), mais l'actif a augmenté plus vite : leur poids a reculé.",
+      "difficulty": 2
+    }
+  ]
+}
