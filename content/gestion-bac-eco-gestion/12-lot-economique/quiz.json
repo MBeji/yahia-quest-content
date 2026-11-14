@@ -1,0 +1,107 @@
+{
+  "title": "Test de compréhension ⭐ : Le lot économique",
+  "questions": [
+    {
+      "prompt": "Un atelier fabrique sur stock. Pourquoi ne lance-t-il pas toute sa production annuelle en une seule série ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce qu'une grande série fait grimper le coût de lancement de chaque lot"
+        },
+        {
+          "id": "b",
+          "text": "Parce que le stock n'a un coût que lorsque les produits finissent par être vendus"
+        },
+        {
+          "id": "c",
+          "text": "Parce qu'une grande série gonfle le stock moyen, dont la détention coûte cher"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'une seule série obligerait à payer le coût de lancement à chaque unité fabriquée"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une grande série réduit le nombre de lancements, donc les frais de mise en route, mais elle gonfle le stock moyen : garder les produits fabriqués coûte, qu'ils soient vendus tôt ou tard. Le coût de lancement se paie une fois par série, pas une fois par unité fabriquée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le modèle du lot économique, que mesure SM = Q ÷ (2 × N) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le nombre moyen d'unités en stock durant l'année, avec une production régulière"
+        },
+        {
+          "id": "b",
+          "text": "Le nombre d'unités fabriquées dans chacun des N lots lancés dans l'année"
+        },
+        {
+          "id": "c",
+          "text": "Le nombre maximal d'unités en stock juste après l'arrivée d'un lot en magasin"
+        },
+        {
+          "id": "d",
+          "text": "Le nombre d'unités restant en stock à la fin de la dernière période de l'année"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand la production est régulière, le stock passe d'un lot entier à zéro : en moyenne, il vaut la moitié d'un lot, soit Q ÷ N ÷ 2 = Q ÷ (2 × N). Le nombre d'unités par lot est Q ÷ N, et c'est aussi le stock maximal, deux fois plus grand que le stock moyen.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fonderie répartit sa production annuelle de 7 200 pièces en 6 lots égaux, fabriqués à un rythme régulier. Quel est son stock moyen, en pièces ?",
+      "answerKey": {
+        "value": 600,
+        "unit": "pièces"
+      },
+      "explanation": "SM = Q ÷ (2 × N) = 7 200 ÷ (2 × 6) = 7 200 ÷ 12 = 600 pièces ✓. Contrôle : un lot compte 1 200 pièces et le stock moyen en vaut la moitié.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une savonnerie produit 3 000 pains par an, à 40 D l'unité, en 5 lots réguliers. Garder un stock lui coûte 9 % de sa valeur moyenne. Combien coûte le stockage sur l'année, en D ?",
+      "answerKey": {
+        "value": 1080,
+        "unit": "D"
+      },
+      "explanation": "Valeur du stock moyen = 3 000 × 40 ÷ (2 × 5) = 12 000 D. Stockage = 12 000 × 0,09 = 1 080 D ✓. Le taux se met sous la forme i = 9 ÷ 100 = 0,09.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une entreprise lance N lots dans l'année, chacun entraînant des frais CL. Quel est son coût de lancement annuel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CL ÷ N, car les frais se répartissent entre les lots"
+        },
+        {
+          "id": "b",
+          "text": "CL × Q, car chaque unité fabriquée supporte ces frais"
+        },
+        {
+          "id": "c",
+          "text": "CL × N ÷ 2, car on ne lance en moyenne que la moitié des lots"
+        },
+        {
+          "id": "d",
+          "text": "CL × N, car chaque lot lancé supporte les mêmes frais"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaque lancement coûte CL, quelle que soit la taille du lot : N lancements coûtent CL × N. Diviser par N ou par 2 reviendrait à faire payer moins de lancements qu'il n'y en a, et multiplier par Q compterait les frais une fois par unité alors qu'ils sont engagés une fois par lot.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une biscuiterie fabrique 2 400 paquets par an à 15 D l'unité ; chaque lancement coûte 400 D et le stockage 20 % de la valeur moyenne. Combien de lots lance-t-elle de façon optimale ?",
+      "answerKey": {
+        "value": 3,
+        "unit": "lots"
+      },
+      "explanation": "N* = √(Q × cu × i ÷ (2 × CL)) = √(2 400 × 15 × 0,20 ÷ 800) = √(7 200 ÷ 800) = √9 = 3 lots ✓.",
+      "difficulty": 2
+    }
+  ]
+}

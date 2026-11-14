@@ -1,0 +1,117 @@
+{
+  "title": "Test de compréhension ⭐ : Le choix des quantités à fabriquer",
+  "questions": [
+    {
+      "prompt": "Que signifie « plein emploi » pour les ateliers d'une entreprise industrielle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tous les habitants de la région trouvent un poste dans l'entreprise"
+        },
+        {
+          "id": "b",
+          "text": "L'entreprise ne lance que les fabrications déjà commandées par ses clients"
+        },
+        {
+          "id": "c",
+          "text": "L'entreprise vend uniquement ce qu'elle a déjà en stock, sans refabriquer"
+        },
+        {
+          "id": "d",
+          "text": "Chaque atelier est utilisé à toute sa capacité disponible sur la période"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le plein emploi est la situation où chaque atelier est utilisé à toute sa capacité : les inéquations de capacité deviennent alors des égalités. Il ne concerne ni l'emploi dans la région, ni le niveau des commandes, ni les stocks.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour la société Kalam, un robot de cuisine passe 45 minutes sur la perceuse automatique. Pour fabriquer 120 robots, combien d'heures de perceuse faut-il ?",
+      "answerKey": {
+        "value": 90,
+        "unit": "h"
+      },
+      "explanation": "45 mn = 45 ÷ 60 = 0,75 h par robot. Pour 120 robots : 120 × 0,75 = 90 h ✓. Contrôle : 120 × 45 = 5 400 mn, et 5 400 ÷ 60 = 90 h.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une teinturerie dispose de 1 800 heures de cuve par mois. Une pièce de lin y reste 3 heures. Si la teinturerie ne traitait que du lin, combien de pièces au maximum ?",
+      "answerKey": {
+        "value": 600,
+        "unit": "unités"
+      },
+      "explanation": "Extrémité du segment de capacité = capacité ÷ temps unitaire = 1 800 ÷ 3 = 600 pièces ✓. Contrôle : 600 × 3 = 1 800 h, la cuve est pleine.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'atelier de montage fournit 1 050 h par mois. Une unité X y demande 2,5 h et une unité Y 1,5 h. Quelle inéquation traduit cette contrainte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5 X + 1,5 Y ≥ 1 050"
+        },
+        {
+          "id": "b",
+          "text": "2,5 X + 1,5 Y ≤ 1 050"
+        },
+        {
+          "id": "c",
+          "text": "1,5 X + 2,5 Y ≤ 1 050"
+        },
+        {
+          "id": "d",
+          "text": "4 (X + Y) ≤ 1 050"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chaque quantité se multiplie par son propre temps unitaire (2,5 h pour X, 1,5 h pour Y) et le total ne doit pas dépasser la capacité de 1 050 h : 2,5 X + 1,5 Y ≤ 1 050. Inverser les coefficients ou additionner les temps pour chaque unité sans distinguer les produits fausse la contrainte.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une biscuiterie réalise 8 D de marge par paquet de sablés et 5 D par paquet de gaufrettes. Son plein emploi donne 30 paquets de sablés et 50 de gaufrettes. Que vaut la fonction objectif Z, en D ?",
+      "answerKey": {
+        "value": 490,
+        "unit": "D"
+      },
+      "explanation": "Z = 8 × 30 + 5 × 50 = 240 + 250 = 490 D ✓. On multiplie chaque marge unitaire par la quantité optimale du même produit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une chemiserie exige une livraison avant le 15. Offres par chemise : Menzel 9,800 D, livrée le 12 ; Sfax-Textile 8,900 D, livrée le 18 ; Ksar 9,100 D, livrée le 14. Quelle offre élimine-t-on en premier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Menzel, la plus chère des trois offres reçues"
+        },
+        {
+          "id": "b",
+          "text": "Sfax-Textile, livrée le 18, après la date limite"
+        },
+        {
+          "id": "c",
+          "text": "Ksar, livrée le 14, trop près de la date limite"
+        },
+        {
+          "id": "d",
+          "text": "Aucune : on garde d'abord la moins chère des offres"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une offre qui livre après la date exigée est éliminée avant toute comparaison de prix : Sfax-Textile (le 18) dépasse le 15, bien qu'elle soit la moins chère. Menzel et Ksar respectent le délai ; on compare ensuite leurs prix.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fabrique de meubles peut sortir 1 250 unités en plein emploi. Une centrale d'achat en commande 1 700. Combien d'unités faut-il sous-traiter ?",
+      "answerKey": {
+        "value": 450,
+        "unit": "unités"
+      },
+      "explanation": "Quantité à sous-traiter = demande − quantité de plein emploi = 1 700 − 1 250 = 450 unités ✓.",
+      "difficulty": 2
+    }
+  ]
+}
