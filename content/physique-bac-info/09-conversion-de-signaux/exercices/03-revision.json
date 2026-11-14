@@ -1,0 +1,154 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Conversion de signaux",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle affirmation sur les signaux est FAUSSE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un signal numérique est plus facile à stocker qu'un signal analogique"
+        },
+        {
+          "id": "b",
+          "text": "Un signal analogique se dégrade facilement, et la dégradation est difficile à corriger"
+        },
+        {
+          "id": "c",
+          "text": "Un signal logique ne prend que deux valeurs, alors qu'un signal analogique en prend une infinité"
+        },
+        {
+          "id": "d",
+          "text": "Un signal analogique résiste mieux aux parasites qu'un signal numérique"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "C'est l'inverse : un signal numérique supporte un bruit faible, tandis qu'un signal analogique y est sensible ✓. Les trois autres affirmations sont exactes : le numérique se stocke et se traite sans altération, l'analogique se dégrade facilement, et un signal logique n'a que deux valeurs, V_cc et 0 V.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel mot binaire représente le nombre décimal 37 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100100"
+        },
+        {
+          "id": "b",
+          "text": "100101"
+        },
+        {
+          "id": "c",
+          "text": "100110"
+        },
+        {
+          "id": "d",
+          "text": "101001"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "37 = 32 + 4 + 1, donc le mot à 6 bits est [100101] ✓. Le mot 100100 vaut 36 : il oublie le poids 1. Le mot 100110 vaut 38, car les poids 2 et 1 sont échangés. Le mot 101001 vaut 41, c'est le mot lu à l'envers.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un C.N.A. à sortie en tension a une constante k = 0,20 V. Quelle tension délivre-t-il pour le mot [0111] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,60 V"
+        },
+        {
+          "id": "b",
+          "text": "1,4 V"
+        },
+        {
+          "id": "c",
+          "text": "2,8 V"
+        },
+        {
+          "id": "d",
+          "text": "3,0 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le mot [0111] vaut N = 4 + 2 + 1 = 7, donc u_S = k·N = 0,20 × 7 = 1,4 V ✓. La valeur 0,60 V compte seulement les trois bits égaux à 1. La valeur 2,8 V lit le mot à l'envers, [1110], soit N = 14. La valeur 3,0 V correspond à N_max = 15.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un C.N.A. à résistances pondérées, quel est le rôle de l'A.O. ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il convertit le courant i en tension u_S et maintient le nœud d'entrée à 0 V"
+        },
+        {
+          "id": "b",
+          "text": "Il amplifie la tension de référence U_ref avant de la distribuer aux interrupteurs"
+        },
+        {
+          "id": "c",
+          "text": "Il commande les interrupteurs K_j à partir des bits a_j du mot d'entrée"
+        },
+        {
+          "id": "d",
+          "text": "Il transforme la tension u_S en mot binaire et mémorise ce mot"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'A.O. impose ε = 0 : le nœud d'entrée reste à 0 V, ce qui rend chaque courant indépendant des autres, et il convertit le courant total i en la tension u_S = −R'·i ✓. Il ne touche pas à U_ref, qui est une tension fixe. Les interrupteurs sont commandés par les bits eux-mêmes. Transformer une tension en mot est le travail d'un C.A.N., pas d'un C.N.A.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un C.N.A. pondéré à 8 bits a R' = R et |U_ref| = 6,00 V ; son A.O. sature à 12 V. Quelle est sa pleine échelle, et l'A.O. reste-t-il en régime linéaire pour le mot [11111111] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12,0 V : il atteint la saturation"
+        },
+        {
+          "id": "b",
+          "text": "11,95 V : il reste linéaire"
+        },
+        {
+          "id": "c",
+          "text": "5,98 V : il reste linéaire"
+        },
+        {
+          "id": "d",
+          "text": "0,047 V : il reste linéaire"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "P.E. = (2⁸ − 1)·R'|U_ref|/(2⁷·R) = 255 × 6,00/128 = 11,95 V, juste sous les 12 V : l'A.O. reste linéaire ✓. La valeur 12,0 V multiplie par 2⁸ = 256 au lieu de 255. La valeur 5,98 V divise par 2⁸·R au lieu de 2⁷·R. La valeur 0,047 V est le quantum, la tension du seul mot [00000001].",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un C.N.A. à 8 bits a une pleine échelle de 12,75 V. Quel mot binaire commande la tension de sortie 7,5 V ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "01001011"
+        },
+        {
+          "id": "b",
+          "text": "01101001"
+        },
+        {
+          "id": "c",
+          "text": "10010110"
+        },
+        {
+          "id": "d",
+          "text": "10010111"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le quantum est q = 12,75/255 = 0,050 V, donc N = 7,5/0,050 = 150 = 128 + 16 + 4 + 2, soit [10010110] ✓. Le mot 10010111 vaut 151 : il divise par 256 au lieu de 255. Le mot 01001011 vaut 75 : il divise par 128. Le mot 01101001 vaut 105, c'est le mot lu à l'envers.",
+      "difficulty": 3
+    }
+  ]
+}
