@@ -58,7 +58,7 @@
 | # | Action | Type | Temps |
 |---|---|---|---|
 | ~~B1~~ | ✅ **FAIT** — `www.na9ranal3ab.tn` sert l'app en **200**, l'apex redirige en 308. La propriété **Search Console était déjà vérifiée** (TXT `google-site-verification` sur l'apex) et le sitemap répond 200 à Googlebot. ⚠️ La zone DNS est chez **TuNet**, pas chez Vercel : tout enregistrement se pose dans l'espace client du registrar. Variantes `.com`/typos : à décider. | ✅ | — |
-| B2 | **Réserver les pseudos `@na9ranal3ab`** : Facebook · Instagram · TikTok | 🟦 | 15 min |
+| B2 | **Réserver les pseudos `@na9ranal3ab`** : Facebook · Instagram · TikTok. **Constat du 2026-11-14** : Facebook et Instagram sont pris (`na9ranal3ab`) ; TikTok non vérifié | 🟦 | 15 min |
 | B3 | **Check marque INNORPI** (pas de conflit) + recherche Google/FB | 🟦 | 20 min |
 | ~~B4~~ | ✅ **FAIT (2026-07-27)** — [checklist domaine/SMTP](./livrables/04-architecture-prod/checklist-domaine-smtp.md) déroulée : **Resend** sur le **sous-domaine d'envoi `send.na9ranal3ab.tn`** (Irlande/eu-west-1), DKIM + SPF + MX de return-path posés chez TuNet et **vérifiés au DNS**, MX Ooredoo de la racine intacts, SMTP branché sur Supabase Auth (`smtp.resend.com:465`), chaîne **prouvée de bout en bout**. Reste A11 (gabarits FR) et, plus tard, une adresse de contact `contact@`. | ✅ | — |
 
@@ -94,7 +94,7 @@
 
 | # | Action | Type | Temps | Note |
 |---|---|---|---|---|
-| **D1** | Créer la **page Facebook** « Na9ra Nal3ab » + **WhatsApp Business** | 🟦 | ~1 h | Le canal parent n° 1 en Tunisie. Rien ne le bloque — ni code, ni décision, ni budget. À faire en premier : c'est le seul des trois qui ne dépend de personne d'autre |
+| **D1** | Créer la **page Facebook** « Na9ra Nal3ab » + **WhatsApp Business** | 🟦 | ~1 h | Le canal parent n° 1 en Tunisie. Rien ne le bloque — ni code, ni décision, ni budget. À faire en premier : c'est le seul des trois qui ne dépend de personne d'autre. **Constat du 2026-11-14** : la Page existe (155 abonnés), le compte Instagram aussi (12 abonnés) ; WhatsApp Business non vérifié. La suite — présentation de la Page, second administrateur, publications — est dans le [dossier S4](./livrables/05-marketing/05-strategie-acquisition-2026-11/README.md) |
 | **D2** | **Pitcher l'école pilote** (la tienne) avec le [playbook](./livrables/05-marketing/02-plan-acquisition.md) | 🟦 | — | Canal **CAC ≈ 0** : un enseignant qui donne un chapitre en devoir apporte 30 élèves **et** 30 parents, avec une légitimité que la publicité n'achète pas (é28 M-3). ⛔ **PRÉCONDITION DURE (é28 D-5) : ne rien engager avant `GAP-024` livré** (suppression de compte + export/portabilité — **absents de `src/`**) **et `GAP-003` tranché**. Démarcher un établissement sans chemin de suppression des données d'un mineur est une faute, pas un raccourci — et c'est la première question d'un directeur |
 | **D3** | Recruter les **premiers beta-testeurs** (réseau perso) | 🟦 | — | 20-30 suffisent. Leur vraie valeur n'est pas le volume mais **la première mesure de rétention S(N)→S(N+1)** — le KPI-4 de é26, défini le 2026-07-19 et **jamais publié depuis**. Sans lui, « référence » reste une opinion |
 
