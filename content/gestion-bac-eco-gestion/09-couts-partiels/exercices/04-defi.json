@@ -1,0 +1,70 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du directeur de gestion",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La menuiserie Bouzid a supporté 148 000 D de charges dans l'année, classées ainsi : bois 60 000 D (100 % variable) ; main-d'œuvre 40 000 D (30 % variable) ; services extérieurs 20 000 D (50 % variable) ; amortissements 16 000 D (100 % fixes) ; impôts et taxes 12 000 D (25 % variables). Son chiffre d'affaires est de 170 000 D. Quel est son seuil de rentabilité, en D ?",
+      "answerKey": {
+        "value": 126000,
+        "unit": "D"
+      },
+      "explanation": "Coût variable = 60 000 + 12 000 + 10 000 + 0 + 3 000 = 85 000 D, donc charges fixes = 148 000 − 85 000 = 63 000 D. Marge = 170 000 − 85 000 = 85 000 D, soit 50 % du chiffre d'affaires. Seuil = 63 000 ÷ 0,50 = 126 000 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise vend deux produits. Produit P1 : chiffre d'affaires 150 000 D, coûts variables égaux à 60 % de ce chiffre. Produit P2 : chiffre d'affaires 90 000 D, coûts variables égaux à 40 %. Ses charges fixes globales sont de 57 000 D. Quel est son seuil de rentabilité global, en D ?",
+      "answerKey": {
+        "value": 120000,
+        "unit": "D"
+      },
+      "explanation": "Marge de P1 = 150 000 × 40 % = 60 000 D ; marge de P2 = 90 000 × 60 % = 54 000 D ; total 114 000 D pour 240 000 D de chiffre d'affaires, soit un taux global de 47,5 %. Seuil = 57 000 ÷ 0,475 = 120 000 D ✓. La moyenne simple des deux taux (50 %) donnerait un seuil faux, car les deux produits n'ont pas le même poids.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La conserverie Hajji réalise 400 000 D de chiffre d'affaires avec 240 000 D de coûts variables et 80 000 D de charges fixes. Elle étudie une machine de 175 000 D, amortie linéairement sur 5 ans, qui réduirait le coût variable de 10 %. À chiffre d'affaires inchangé, quelle serait sa marge de sécurité après investissement, en D ?",
+      "answerKey": {
+        "value": 150000,
+        "unit": "D"
+      },
+      "explanation": "Nouveau coût variable = 240 000 × 0,90 = 216 000 D ; marge = 400 000 − 216 000 = 184 000 D, soit 46 %. Amortissement ajouté = 175 000 ÷ 5 = 35 000 D, donc charges fixes = 80 000 + 35 000 = 115 000 D. Seuil = 115 000 ÷ 0,46 = 250 000 D. Marge de sécurité = 400 000 − 250 000 = 150 000 D ✓, contre 200 000 D avant la machine : l'investissement la réduit.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise vend 5 000 unités à 60 D ; ses coûts variables représentent 70 % du chiffre d'affaires et ses charges fixes sont de 63 000 D. Elle envisage de doubler ses ventes, au même prix : des matières plus chères feraient tomber son taux de marge sur coût variable à 25 % (marge sur coût variable rapportée au chiffre d'affaires), et un nouveau palier ferait croître les charges fixes de 30 %. Quel serait son résultat prévisionnel, en D ?",
+      "answerKey": {
+        "value": 68100,
+        "unit": "D"
+      },
+      "explanation": "Chiffre d'affaires prévu = 10 000 × 60 = 600 000 D. Marge = 600 000 × 25 % = 150 000 D. Charges fixes = 63 000 × 1,30 = 81 900 D. Résultat = 150 000 − 81 900 = 68 100 D ✓, contre 27 000 D aujourd'hui (300 000 × 30 % − 63 000).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un cinéma de quartier reste fermé 2 mois par an et fonctionne normalement le reste du temps. Ses recettes annuelles sont de 360 000 D, son taux de marge sur coût variable de 25 % et il termine l'année sur un bénéfice de 18 000 D. Après combien de mois d'ouverture ses recettes couvrent-elles toutes ses charges, en mois ?",
+      "answerKey": {
+        "value": 8,
+        "unit": "mois"
+      },
+      "explanation": "Marge = 360 000 × 25 % = 90 000 D. Charges fixes = 90 000 − 18 000 = 72 000 D. Seuil = 72 000 ÷ 0,25 = 288 000 D. Mois d'activité = 12 − 2 = 10. Point mort = 288 000 × 10 ÷ 360 000 = 8 mois ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une savonnerie vend son coffret 60 D. Chaque coffret exige 18 D de matières, 11 D de main-d'œuvre directe et des droits de licence reversés à hauteur de 15 % du prix. Les charges fixes annuelles s'élèvent à 61 600 D. Quelle quantité de coffrets doit-elle écouler pour équilibrer ses comptes ?",
+      "answerKey": {
+        "value": 2800,
+        "unit": "coffrets"
+      },
+      "explanation": "Licence = 60 × 15 % = 9 D. Coût variable unitaire = 18 + 11 + 9 = 38 D. Marge unitaire = 60 − 38 = 22 D. Seuil en quantité = 61 600 ÷ 22 = 2 800 coffrets ✓. Contrôle : 2 800 × 22 = 61 600 D.",
+      "difficulty": 3
+    }
+  ]
+}

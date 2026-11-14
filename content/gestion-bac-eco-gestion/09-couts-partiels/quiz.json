@@ -1,0 +1,117 @@
+{
+  "title": "Test de compréhension ⭐ : Les coûts partiels",
+  "questions": [
+    {
+      "prompt": "Une boulangerie fabrique du pain. Quelle charge est variable, c'est-à-dire évolue avec la quantité produite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'amortissement du four, réparti sur l'année"
+        },
+        {
+          "id": "b",
+          "text": "La farine consommée pour fabriquer le pain"
+        },
+        {
+          "id": "c",
+          "text": "L'assurance du local, payée chaque trimestre"
+        },
+        {
+          "id": "d",
+          "text": "Le loyer de la boutique, payé chaque mois"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La farine consommée suit la production : plus on fabrique de pain, plus on en utilise, c'est une charge variable. Le loyer, l'assurance et l'amortissement du four restent les mêmes tant que la structure de l'entreprise ne change pas : ce sont des charges fixes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle formule donne la marge sur coût variable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chiffre d'affaires − charges fixes"
+        },
+        {
+          "id": "b",
+          "text": "Chiffre d'affaires − coût variable"
+        },
+        {
+          "id": "c",
+          "text": "Chiffre d'affaires − coût variable − charges fixes"
+        },
+        {
+          "id": "d",
+          "text": "Coût variable − charges fixes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La marge sur coût variable est ce qui reste du chiffre d'affaires une fois payé le coût variable : elle doit ensuite couvrir les charges fixes. Retrancher aussi les charges fixes donnerait le résultat d'exploitation, pas la marge.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une papeterie a vendu pour 75 000 D de fournitures. Ses coûts variables sont de 48 000 D. Quelle est sa marge sur coût variable, en D ?",
+      "answerKey": {
+        "value": 27000,
+        "unit": "D"
+      },
+      "explanation": "Marge sur coût variable = chiffre d'affaires − coût variable = 75 000 − 48 000 = 27 000 D ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "La marge sur coût variable d'un atelier est de 45 000 D pour un chiffre d'affaires de 150 000 D. Quel est son taux de marge sur coût variable, en % ?",
+      "answerKey": {
+        "value": 30,
+        "unit": "%"
+      },
+      "explanation": "Taux de marge sur coût variable = marge ÷ chiffre d'affaires × 100 = 45 000 ÷ 150 000 × 100 = 30 % ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise a 21 000 D de charges fixes et un taux de marge sur coût variable de 35 %. Quel est son seuil de rentabilité, en D ?",
+      "answerKey": {
+        "value": 60000,
+        "unit": "D"
+      },
+      "explanation": "Seuil de rentabilité = charges fixes ÷ taux de marge sur coût variable = 21 000 ÷ 0,35 = 60 000 D ✓. Contrôle : 60 000 × 0,35 = 21 000 D, la marge couvre exactement les charges fixes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le chiffre d'affaires d'une entreprise est inférieur à son seuil de rentabilité. Que peut-on dire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est à l'équilibre : la marge sur coût variable égale les charges fixes"
+        },
+        {
+          "id": "b",
+          "text": "Elle réalise un bénéfice : la marge sur coût variable dépasse les charges fixes"
+        },
+        {
+          "id": "c",
+          "text": "Elle réalise un bénéfice, car ses charges variables sont bien couvertes par les ventes"
+        },
+        {
+          "id": "d",
+          "text": "Elle réalise une perte : la marge ne couvre pas les charges fixes"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Au-dessous du seuil de rentabilité, la marge sur coût variable est plus petite que les charges fixes : le résultat est négatif, c'est une perte. L'équilibre correspond à un chiffre d'affaires égal au seuil, et un bénéfice demande un chiffre d'affaires supérieur au seuil.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise dont l'activité est régulière sur les 12 mois a un seuil de rentabilité de 45 000 D et un chiffre d'affaires annuel de 180 000 D. Au bout de combien de mois atteint-elle son seuil (point mort), en mois ?",
+      "answerKey": {
+        "value": 3,
+        "unit": "mois"
+      },
+      "explanation": "Point mort = seuil de rentabilité × nombre de mois d'activité ÷ chiffre d'affaires = 45 000 × 12 ÷ 180 000 = 3 mois ✓.",
+      "difficulty": 2
+    }
+  ]
+}

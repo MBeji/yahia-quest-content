@@ -1,0 +1,84 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le contrôleur de gestion",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une laiterie réalise 250 000 D de chiffre d'affaires. Ses charges variables sont : lait 97 500 D, emballages 22 500 D, livraison 10 000 D. Ses charges fixes sont de 84 000 D. Quel est son résultat d'exploitation, en D ?",
+      "answerKey": {
+        "value": 36000,
+        "unit": "D"
+      },
+      "explanation": "Coût variable = 97 500 + 22 500 + 10 000 = 130 000 D. Marge sur coût variable = 250 000 − 130 000 = 120 000 D. Résultat = 120 000 − 84 000 = 36 000 D ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un produit rapporte 200 000 D de chiffre d'affaires pour 120 000 D de coûts variables, avec 48 000 D de charges fixes. Quel est son taux de marge sur coût variable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16 %"
+        },
+        {
+          "id": "b",
+          "text": "24 %"
+        },
+        {
+          "id": "c",
+          "text": "40 %"
+        },
+        {
+          "id": "d",
+          "text": "60 %"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Marge sur coût variable = 200 000 − 120 000 = 80 000 D, soit 80 000 ÷ 200 000 = 40 % du chiffre d'affaires. Les 60 % sont la part du coût variable, les 24 % la part des charges fixes et les 16 % celle du résultat (32 000 D) : aucun de ces trois n'est la marge.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un potier vend ses jarres 80 D pièce ; chacune lui revient à 56 D en argile, émail et cuisson. Ses frais de structure annuels sont de 36 000 D. Quel chiffre d'affaires doit-il atteindre pour équilibrer ses comptes, en D ?",
+      "answerKey": {
+        "value": 120000,
+        "unit": "D"
+      },
+      "explanation": "Marge par jarre = 80 − 56 = 24 D, soit 24 ÷ 80 = 30 % du prix. Seuil de rentabilité en valeur = 36 000 ÷ 0,30 = 120 000 D ✓. Contrôle : 120 000 × 0,30 = 36 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise vend deux produits. Produit A : 3 000 unités à 80 D, coût variable unitaire 52 D. Produit B : 5 000 unités à 40 D, coût variable unitaire 26 D. Ses charges fixes globales sont de 120 000 D. Quel est son résultat global, en D ?",
+      "answerKey": {
+        "value": 34000,
+        "unit": "D"
+      },
+      "explanation": "Marge de A = (80 − 52) × 3 000 = 84 000 D. Marge de B = (40 − 26) × 5 000 = 70 000 D. Marge totale = 154 000 D. Les charges fixes globales se retranchent une seule fois : 154 000 − 120 000 = 34 000 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les coûts variables d'une entreprise représentent 68 % de son chiffre d'affaires. Ses charges fixes sont de 81 600 D et son chiffre d'affaires de 340 000 D. Quelle est sa marge de sécurité, en D ?",
+      "answerKey": {
+        "value": 85000,
+        "unit": "D"
+      },
+      "explanation": "Taux de marge sur coût variable = 100 − 68 = 32 %. Seuil de rentabilité = 81 600 ÷ 0,32 = 255 000 D. Marge de sécurité = 340 000 − 255 000 = 85 000 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le camping Les Dunes n'accueille de clients que 8 mois par an, d'avril à novembre, avec une fréquentation régulière. Sa saison rapporte 210 000 D et son seuil de rentabilité est de 105 000 D. Au bout de combien de mois d'ouverture le camping couvre-t-il toutes ses charges, en mois ?",
+      "answerKey": {
+        "value": 4,
+        "unit": "mois"
+      },
+      "explanation": "Point mort = seuil de rentabilité × nombre de mois d'activité ÷ chiffre d'affaires = 105 000 × 8 ÷ 210 000 = 4 mois ✓. Le calcul porte sur 8 mois d'ouverture, non sur 12 : le camping est fermé le reste de l'année.",
+      "difficulty": 3
+    }
+  ]
+}

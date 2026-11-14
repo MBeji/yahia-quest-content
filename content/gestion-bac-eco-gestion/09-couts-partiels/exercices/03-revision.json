@@ -1,0 +1,228 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Du coût variable au seuil de rentabilité",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Un fabricant de meubles produit des tables. Quelles charges sont variables ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le bois consommé pour fabriquer les tables"
+        },
+        {
+          "id": "b",
+          "text": "Les commissions des vendeurs"
+        },
+        {
+          "id": "c",
+          "text": "Le loyer mensuel de l'atelier"
+        },
+        {
+          "id": "d",
+          "text": "La prime d'assurance annuelle de l'atelier"
+        },
+        {
+          "id": "e",
+          "text": "Le transport des tables livrées aux clients"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Le bois consommé, les commissions proportionnelles aux ventes et le transport des tables livrées augmentent avec l'activité : ce sont des charges variables. Le loyer et la prime d'assurance restent les mêmes quand l'activité varie, dans la même structure : ce sont des charges fixes.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque indicateur à sa formule.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Point mort en mois"
+        },
+        {
+          "id": "l2",
+          "text": "Taux de marge sur coût variable"
+        },
+        {
+          "id": "l3",
+          "text": "Seuil de rentabilité en valeur"
+        },
+        {
+          "id": "l4",
+          "text": "Seuil de rentabilité en quantité"
+        },
+        {
+          "id": "l5",
+          "text": "Marge de sécurité"
+        },
+        {
+          "id": "r1",
+          "text": "Seuil × mois d'activité ÷ chiffre d'affaires"
+        },
+        {
+          "id": "r2",
+          "text": "Marge sur coût variable ÷ chiffre d'affaires"
+        },
+        {
+          "id": "r3",
+          "text": "Charges fixes ÷ taux de marge sur coût variable"
+        },
+        {
+          "id": "r4",
+          "text": "Charges fixes ÷ marge sur coût variable unitaire"
+        },
+        {
+          "id": "r5",
+          "text": "Chiffre d'affaires − seuil de rentabilité"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ],
+          [
+            "l5",
+            "r5"
+          ]
+        ]
+      },
+      "explanation": "Le point mort en mois multiplie le seuil par les mois d'activité et divise par le chiffre d'affaires ; le taux de marge sur coût variable rapporte la marge au chiffre d'affaires. Le seuil en valeur divise les charges fixes par ce taux, le seuil en quantité les divise par la marge d'une unité. La marge de sécurité est l'écart entre le chiffre d'affaires réalisé et le seuil.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'atelier Zitouna Meubles a fabriqué et vendu 800 chaises à 95 D pièce. Chaque chaise coûte 60 D en matières et main-d'œuvre, et les charges de structure de l'année atteignent 17 500 D. Que vaut le résultat de l'atelier, en D ?",
+      "answerKey": {
+        "value": 10500,
+        "unit": "D"
+      },
+      "explanation": "Marge unitaire = 95 − 60 = 35 D. Marge sur coût variable = 35 × 800 = 28 000 D. Résultat = 28 000 − 17 500 = 10 500 D ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle affirmation sur la marge de sécurité est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle mesure la baisse de chiffre d'affaires supportable avant que la perte arrive"
+        },
+        {
+          "id": "b",
+          "text": "Elle est égale au résultat d'exploitation obtenu sur la période"
+        },
+        {
+          "id": "c",
+          "text": "Elle se calcule en retranchant les charges fixes du chiffre d'affaires réalisé"
+        },
+        {
+          "id": "d",
+          "text": "Elle se calcule en divisant les charges fixes par le taux de marge sur coût variable"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La marge de sécurité est l'écart entre le chiffre d'affaires et le seuil de rentabilité : c'est la baisse de chiffre d'affaires que l'entreprise peut encaisser avant d'être en perte. Elle diffère du résultat, ne se calcule pas avec les charges fixes seules, et la division des charges fixes par le taux donne le seuil, pas la marge de sécurité.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La société Sahel Plast a réalisé 480 000 D de ventes, dont 336 000 D de charges proportionnelles aux ventes, et supporte 63 000 D de charges de structure. Quel chiffre d'affaires minimal doit-elle réaliser pour ne pas perdre d'argent, en D ?",
+      "answerKey": {
+        "value": 210000,
+        "unit": "D"
+      },
+      "explanation": "Marge sur coût variable = 480 000 − 336 000 = 144 000 D, soit 144 000 ÷ 480 000 = 30 % des ventes. Seuil de rentabilité = 63 000 ÷ 0,30 = 210 000 D ✓. Contrôle : 210 000 × 0,30 = 63 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un gérant veut savoir combien d'unités vendre pour ne pas perdre d'argent. Dans quel ordre procède-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relever le prix de vente et le coût variable d'une unité"
+        },
+        {
+          "id": "b",
+          "text": "Soustraire le second du premier : c'est la marge dégagée par unité"
+        },
+        {
+          "id": "c",
+          "text": "Diviser le total des charges fixes par cette marge unitaire"
+        },
+        {
+          "id": "d",
+          "text": "Contrôler le résultat : quantité × prix de vente = seuil en valeur"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "La marge unitaire ne se connaît qu'une fois les deux montants relevés ; le quotient n'a de sens qu'avec cette marge au diviseur ; le contrôle ne porte que sur le résultat de la division. Chaque étape s'appuie sur la précédente.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quand une entreprise est exactement à son seuil de rentabilité, quelles affirmations sont vraies ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Son résultat d'exploitation est nul"
+        },
+        {
+          "id": "b",
+          "text": "La marge sur coût variable est égale aux charges fixes"
+        },
+        {
+          "id": "c",
+          "text": "Le chiffre d'affaires est égal aux charges fixes"
+        },
+        {
+          "id": "d",
+          "text": "Le coût variable est égal aux charges fixes"
+        },
+        {
+          "id": "e",
+          "text": "Le chiffre d'affaires multiplié par le taux de marge sur coût variable est égal aux charges fixes"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Au seuil, le résultat est nul parce que la marge sur coût variable couvre exactement les charges fixes ; comme la marge vaut le chiffre d'affaires multiplié par le taux de marge sur coût variable, cette égalité s'écrit aussi avec le taux. Le chiffre d'affaires et le coût variable n'ont aucune raison d'égaler les charges fixes.",
+      "difficulty": 2
+    }
+  ]
+}

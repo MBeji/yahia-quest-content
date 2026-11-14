@@ -1,0 +1,178 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La gestion prévisionnelle des stocks de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur à son écriture.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Coût total de possession"
+        },
+        {
+          "id": "l2",
+          "text": "Coût total de passation"
+        },
+        {
+          "id": "l3",
+          "text": "Lot économique"
+        },
+        {
+          "id": "l4",
+          "text": "Intervalle entre deux livraisons"
+        },
+        {
+          "id": "r1",
+          "text": "C × i ÷ (2 × N)"
+        },
+        {
+          "id": "r2",
+          "text": "N × p"
+        },
+        {
+          "id": "r3",
+          "text": "Q ÷ N"
+        },
+        {
+          "id": "r4",
+          "text": "12 ÷ N (en mois)"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le coût de possession se calcule sur le stock moyen C ÷ (2 × N), multiplié par le taux i. Le coût de passation multiplie le nombre de commandes par le coût d'une commande. Le lot économique partage la quantité annuelle entre les N commandes, et l'intervalle partage les 12 mois de l'année.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Coche tous les frais qui font partie du coût de possession du stock.",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'assurance contre l'incendie des marchandises stockées"
+        },
+        {
+          "id": "b",
+          "text": "Les frais de gardiennage du magasin"
+        },
+        {
+          "id": "c",
+          "text": "Les frais de négociation et de vérification engagés à chaque commande"
+        },
+        {
+          "id": "d",
+          "text": "Le vieillissement des articles qui restent longtemps en rayon"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "L'assurance, le gardiennage et le vieillissement des articles viennent du fait de détenir le stock : ce sont des coûts de possession. La négociation et la vérification sont engagées à chaque commande, quelle que soit la quantité détenue : elles relèvent du coût de passation.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour 5 commandes égales, le coût total d'approvisionnement d'un détaillant est de 2 200 D, et chaque commande coûte 200 D à passer. Quel est son coût total de possession, en D ?",
+      "answerKey": {
+        "value": 1200,
+        "unit": "D"
+      },
+      "explanation": "Coût total de passation = 5 × 200 = 1 000 D. Le coût total d'approvisionnement est la somme des deux coûts : possession = 2 200 − 1 000 = 1 200 D ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche du tableau qui cherche le nombre de commandes le moins coûteux.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choisir une série de valeurs du nombre de commandes N (1, 2, 3…)"
+        },
+        {
+          "id": "b",
+          "text": "Calculer, pour chaque N, le coût de possession et le coût de passation"
+        },
+        {
+          "id": "c",
+          "text": "Additionner les deux coûts pour obtenir le coût total d'approvisionnement"
+        },
+        {
+          "id": "d",
+          "text": "Repérer le N dont le coût total est le plus bas"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On fixe d'abord les valeurs de N à tester, puis on calcule pour chacune les deux coûts, que l'on additionne en coût total. On ne peut repérer le minimum qu'une fois tous les totaux connus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une entreprise consomme 1 500 unités par an et son nombre optimal de commandes est de 3. Quelle politique d'achat en découle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un lot de 500 unités tous les 3 mois"
+        },
+        {
+          "id": "b",
+          "text": "Un lot de 375 unités tous les 3 mois"
+        },
+        {
+          "id": "c",
+          "text": "Un lot de 500 unités tous les 4 mois"
+        },
+        {
+          "id": "d",
+          "text": "Un lot de 375 unités tous les 4 mois"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Lot économique = 1 500 ÷ 3 = 500 unités. Intervalle = 12 ÷ 3 = 4 mois ✓. Écrire « tous les 3 mois » revient à reprendre le nombre de commandes au lieu de diviser 12 par N* ; un lot de 375 unités viendrait d'une division par 4, l'intervalle pris pour le nombre de commandes.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise consomme pour 45 000 D par an, avec un taux de possession de 0,20 et un coût de passation de 180 D. Tous les combien de mois reçoit-elle une livraison, au dixième près ?",
+      "answerKey": {
+        "value": 2.4,
+        "unit": "mois",
+        "tolerance": 0.05
+      },
+      "explanation": "N* = √(45 000 × 0,20 ÷ 360) = √25 = 5 commandes. Intervalle = 12 ÷ 5 = 2,4 mois ✓.",
+      "difficulty": 2
+    }
+  ]
+}
