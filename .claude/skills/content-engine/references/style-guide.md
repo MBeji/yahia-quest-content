@@ -41,6 +41,23 @@ like a credible exam — no emojis, no slang.
 > (and `chapter.json` `title`) is the chapter's **epic title only, in the subject's language** — do
 > **not** prefix it with "Chapitre N" / "الفصل N" yourself, or it doubles up.
 
+## Line breaks — what the renderer does with them (since 2026-11-15)
+
+A source line is **not** a paragraph. Until that date the renderer made one paragraph of every
+line, so a sentence wrapped near 100 columns was shown cut into pieces (483 courses). It now
+rejoins what an author wrapped and keeps what an author set on its own line (engine,
+`src/shared/lib/markdown.ts`, `isWidthWrap`):
+
+- **A prose line of 75+ characters that does not end its sentence is continued by the next
+  line.** A paragraph hard-wrapped near 100 columns renders as ONE paragraph — wrap freely.
+- **A line that ends its sentence** (`.` `!` `?` `؟` `:` `…`, a closing quote or bracket) **or a
+  short line stays its own paragraph**: pairs of examples, one equality per line, dialogue turns.
+- To force a break after a long unfinished line: a blank line, or a trailing `\`.
+- **Under a list item, an indented line belongs to the item**: a wrapped continuation is
+  rejoined, an example or a sub-bullet (`  - …`) is shown on its own line inside the item.
+- `_« … »_`, `_"…"_`, `_(…)_` and `_**Certes**, …_` are italics. `~~struck~~` is **not** rendered
+  yet (the tildes show): say « jamais … » in words, or bold the correct form instead.
+
 ## resume.md skeleton (~7–10 lines)
 
 `# 📜 <Résumé / ملخّص>: <Title>` then a flat bullet list, one bullet per cours section: a bolded
