@@ -1,0 +1,171 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Financer ses investissements de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque terme du crédit-bail à son sens.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Période irrévocable"
+        },
+        {
+          "id": "l2",
+          "text": "Valeur résiduelle"
+        },
+        {
+          "id": "l3",
+          "text": "Redevance"
+        },
+        {
+          "id": "l4",
+          "text": "Société de crédit-bail"
+        },
+        {
+          "id": "r1",
+          "text": "Prix auquel le locataire peut acheter le bien à la fin"
+        },
+        {
+          "id": "r2",
+          "text": "Organisme qui achète le bien au fournisseur et le loue"
+        },
+        {
+          "id": "r3",
+          "text": "Durée pendant laquelle, en principe, le contrat ne se résilie pas"
+        },
+        {
+          "id": "r4",
+          "text": "Loyer payé périodiquement par le locataire"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r1"
+          ],
+          [
+            "l3",
+            "r4"
+          ],
+          [
+            "l4",
+            "r2"
+          ]
+        ]
+      },
+      "explanation": "La période irrévocable interdit en principe la résiliation ; la valeur résiduelle est le prix de rachat ; la redevance est le loyer ; la société de crédit-bail achète le bien chez le fournisseur et le loue au locataire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un hôtel prend en crédit-bail un groupe électrogène de 55 000 D ; la valeur résiduelle est fixée à 8 % de la valeur initiale. Quel prix paie-t-il s'il lève l'option d'achat ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "440 D"
+        },
+        {
+          "id": "b",
+          "text": "4 400 D"
+        },
+        {
+          "id": "c",
+          "text": "5 500 D"
+        },
+        {
+          "id": "d",
+          "text": "50 600 D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Valeur résiduelle = 55 000 × 8 % = 4 400 D. 50 600 D est ce qui reste après la valeur résiduelle, pas le prix de rachat ; 440 D vient d'un taux lu comme 0,8 % et 5 500 D d'un taux de 10 %.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une tannerie reçoit 25 000 D à 9 % l'an, à rendre avec les intérêts composés dans trois ans, en un seul versement. Combien rendra-t-elle ?",
+      "answerKey": {
+        "value": 32375.73,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Cn = 25 000 × (1,09)³ = 25 000 × 1,295029 = 32 375,73 D, arrondi au centime. Résultat : 32375,73 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un emprunt de 40 000 D est remboursé en 4 ans à 10 % par amortissements constants. Quel est le total des intérêts payés, en D ?",
+      "answerKey": {
+        "value": 10000,
+        "unit": "D"
+      },
+      "explanation": "Amortissement : 10 000 D par an. Intérêts : 4 000 (capital 40 000), 3 000 (30 000), 2 000 (20 000), 1 000 (10 000), soit 10 000 D au total. Résultat : 10000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes pour construire la première ligne d'un tableau à annuités constantes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retrancher cet amortissement du capital emprunté pour obtenir le capital dû en fin d'année 1"
+        },
+        {
+          "id": "b",
+          "text": "Lire dans la table V le facteur correspondant au taux et à la durée"
+        },
+        {
+          "id": "c",
+          "text": "Retrancher de cette annuité les intérêts de la 1re année (capital × taux) pour obtenir l'amortissement"
+        },
+        {
+          "id": "d",
+          "text": "Multiplier le capital emprunté par ce facteur pour obtenir l'annuité"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "c",
+          "a"
+        ]
+      },
+      "explanation": "Le facteur de la table sert à calculer l'annuité, qui est fixe. Les intérêts de l'année 1 (capital × taux) se retranchent de l'annuité pour donner l'amortissement ; celui-ci se retranche enfin du capital emprunté pour obtenir le capital dû en fin d'année 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une SARL augmente son capital de 50 000 D grâce à ses associés au lieu de contracter un emprunt de 50 000 D. Quelle différence principale en résulte pour sa situation financière ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun intérêt ni remboursement à prévoir, et sa capacité d'emprunt progresse"
+        },
+        {
+          "id": "b",
+          "text": "Elle doit rembourser 50 000 D aux associés à une date fixée, comme à une banque"
+        },
+        {
+          "id": "c",
+          "text": "Elle augmente son autofinancement de 50 000 D, comme sa CAF de l'exercice"
+        },
+        {
+          "id": "d",
+          "text": "Elle paie des intérêts chaque année jusqu'à la reprise du capital par les associés"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le capital apporté reste à la disposition de l'entreprise : pas de remboursement prévu, pas d'intérêts, et des capitaux propres plus élevés rassurent les banquiers. Un emprunt de même montant imposerait remboursement et intérêts. L'apport ne vient pas de l'activité : il n'augmente ni la CAF ni l'autofinancement.",
+      "difficulty": 2
+    }
+  ]
+}

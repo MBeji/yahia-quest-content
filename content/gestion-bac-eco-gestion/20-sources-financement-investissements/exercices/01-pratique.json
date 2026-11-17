@@ -1,0 +1,148 @@
+{
+  "title": "⭐ Exercice : Premiers pas — sources, CAF et emprunts",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "short_answer",
+      "prompt": "Comment nomme-t-on le contrat qui permet de louer un équipement avec une promesse de vente à la fin ?",
+      "answerKey": {
+        "text": "crédit-bail"
+      },
+      "explanation": "C'est le crédit-bail, ou leasing : une location de durée déterminée assortie d'une promesse de vente, conclue avec une société spécialisée.",
+      "difficulty": 1,
+      "acceptedAnswers": [
+        "le crédit-bail",
+        "leasing",
+        "le leasing"
+      ]
+    },
+    {
+      "prompt": "Pour équiper son laboratoire d'un nouveau four, la Pâtisserie Mellouli reçoit 40 000 D en numéraire de ses associés. Comment classer cette ressource ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Autofinancement, une source interne gardée sur les bénéfices de l'exercice"
+        },
+        {
+          "id": "b",
+          "text": "Emprunt bancaire, une source externe remboursable avec des intérêts annuels"
+        },
+        {
+          "id": "c",
+          "text": "Cession d'un actif immobilisé, une source interne tirée de la vente d'un bien"
+        },
+        {
+          "id": "d",
+          "text": "Augmentation de capital, une source externe qui accroît les capitaux propres"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les associés apportent de l'argent venu de l'extérieur de l'activité : c'est une augmentation de capital, source externe qui accroît les ressources stables. Il ne s'agit ni de bénéfices gardés, ni de la vente d'un bien, ni d'une dette envers une banque.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le Garage Hamdi achète une machine de 64 000 D TTC et un camion de 26 000 D TTC. Il finance ces achats avec 35 000 D d'apport des associés et 12 000 D tirés de la vente d'un vieux véhicule ; il emprunte le reste. Quel est le montant de l'emprunt, en D ?",
+      "answerKey": {
+        "value": 43000,
+        "unit": "D"
+      },
+      "explanation": "Besoin de financement : 64 000 + 26 000 = 90 000 D. Ressources déjà trouvées : 35 000 + 12 000 = 47 000 D. Emprunt : 90 000 − 47 000 = 43 000 D. Résultat : 43000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Verrerie Jebali obtient un crédit de 72 000 D remboursable par 6 fractions égales de capital, majorées des intérêts du capital restant dû, au taux de 9 %. Quelle est la première annuité, en D ?",
+      "answerKey": {
+        "value": 18480,
+        "unit": "D"
+      },
+      "explanation": "Amortissement constant : 72 000 ÷ 6 = 12 000 D. Intérêts de l'année 1 : 72 000 × 0,09 = 6 480 D. Première annuité : 12 000 + 6 480 = 18 480 D. Résultat : 18480 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur le crédit-bail sont exactes ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est une location de durée déterminée assortie d'une promesse de vente"
+        },
+        {
+          "id": "b",
+          "text": "Il laisse intactes les possibilités d'emprunt de l'entreprise"
+        },
+        {
+          "id": "c",
+          "text": "À la fin, le locataire peut restituer, renouveler ou acheter le bien"
+        },
+        {
+          "id": "d",
+          "text": "Il exige toujours un gros apport initial avant la livraison"
+        },
+        {
+          "id": "e",
+          "text": "Le locataire devient propriétaire dès la signature du contrat"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le crédit-bail est une location avec promesse de vente, qui préserve la capacité d'emprunt et laisse trois choix en fin de contrat. Il ne réclame pas d'apport initial, et le bien reste à la société de crédit-bail tant que l'option d'achat n'est pas levée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'entreprise Saïdane emprunte 36 000 D sur 4 ans à 10 %, en annuités constantes. La table financière donne le facteur 0,3154708 pour n = 4. Quelle est l'annuité, en D ?",
+      "answerKey": {
+        "value": 11356.95,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Annuité : a = Vo × i ÷ [1 − (1 + i)⁻ⁿ] = 36 000 × 0,3154708 = 11 356,95 D, à une unité près d'arrondi. Résultat : 11356,95 D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le tableau d'un emprunt à annuités constantes, comment évoluent les colonnes d'une année à l'autre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les intérêts montent, les amortissements baissent, et l'annuité reste fixe"
+        },
+        {
+          "id": "b",
+          "text": "Les intérêts baissent, les amortissements montent, et l'annuité reste fixe"
+        },
+        {
+          "id": "c",
+          "text": "Les intérêts et les amortissements restent fixes, l'annuité baisse"
+        },
+        {
+          "id": "d",
+          "text": "Les intérêts baissent, les amortissements restent fixes, l'annuité baisse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chaque année le capital restant dû diminue, donc les intérêts baissent ; l'annuité étant fixe, la part consacrée au capital augmente. Un amortissement fixe avec une annuité qui baisse décrit l'autre mode de remboursement.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour un emprunt de 90 000 D sur 5 ans à 8 %, remboursé par amortissements constants, quels sont les intérêts de la 3e année, en D ?",
+      "answerKey": {
+        "value": 4320,
+        "unit": "D"
+      },
+      "explanation": "Amortissement constant : 90 000 ÷ 5 = 18 000 D. Capital dû au début de l'année 3 : 90 000 − 2 × 18 000 = 54 000 D. Intérêts : 54 000 × 0,08 = 4 320 D. Résultat : 4320 D.",
+      "difficulty": 2
+    }
+  ]
+}

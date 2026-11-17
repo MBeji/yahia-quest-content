@@ -1,0 +1,111 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur financier",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une société a des produits encaissables de 410 000 D, des charges décaissables de 322 000 D et 26 000 D de dotations aux amortissements. Elle distribue 20 000 D de dividendes. Quel est son autofinancement, en D ?",
+      "answerKey": {
+        "value": 68000,
+        "unit": "D"
+      },
+      "explanation": "Résultat net : 410 000 − 322 000 − 26 000 = 62 000 D. CAF : 62 000 + 26 000 = 88 000 D, soit aussi 410 000 − 322 000. Autofinancement : 88 000 − 20 000 = 68 000 D. Résultat : 68000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur l'autofinancement sont exactes ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Autofinancement = CAF − dividendes"
+        },
+        {
+          "id": "b",
+          "text": "Il est dégagé par l'activité propre de l'entreprise"
+        },
+        {
+          "id": "c",
+          "text": "Il accroît les capitaux propres et donc la capacité d'emprunt"
+        },
+        {
+          "id": "d",
+          "text": "Il est égal au résultat net diminué des dividendes"
+        },
+        {
+          "id": "e",
+          "text": "C'est une ressource externe apportée par les associés"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "L'autofinancement est la CAF diminuée des dividendes : une ressource interne qui renforce les capitaux propres et donc la capacité d'emprunt. Partir du résultat net oublie d'ajouter les dotations, et un apport des associés est une source externe, pas de l'autofinancement.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Manufacture Arfaoui finance une construction de 120 000 D TTC et une machine de 45 000 D TTC : 100 000 D d'apport des associés, le reste par un emprunt remboursé en une fois dans 5 ans à 7 %. Quel montant d'intérêts supporte-t-elle, en D ?",
+      "answerKey": {
+        "value": 26165.86,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Emprunt : 120 000 + 45 000 − 100 000 = 65 000 D. À rembourser : 65 000 × (1,07)⁵ = 65 000 × 1,4025517 = 91 165,86 D. Intérêts : 91 165,86 − 65 000 = 26 165,86 D. Résultat : 26165,86 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un emprunt de 60 000 D sur 5 ans à 10 % peut se rembourser par amortissements constants ou par annuités constantes (facteur de la table : 0,2637975). Que constate-t-on pour la première année ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Annuités constantes : 18 000 D, contre 15 827,85 D en amortissements constants"
+        },
+        {
+          "id": "b",
+          "text": "Les deux modes demandent 12 000 D la première année"
+        },
+        {
+          "id": "c",
+          "text": "Amortissements constants : 12 000 D, contre 15 827,85 D en annuités constantes"
+        },
+        {
+          "id": "d",
+          "text": "Amortissements constants : 18 000 D, contre 15 827,85 D en annuités constantes"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Amortissements constants : 60 000 ÷ 5 = 12 000 D de capital plus 6 000 D d'intérêts, soit 18 000 D. Annuités constantes : 60 000 × 0,2637975 = 15 827,85 D. Le premier mode pèse davantage au début mais s'allège ensuite ; 12 000 D n'est que l'amortissement, sans les intérêts.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La société Cédrat emprunte 80 000 D sur 3 ans à 10 % en annuités constantes ; la table donne le facteur 0,4021148. Quel est l'amortissement de la 1re année, en D ?",
+      "answerKey": {
+        "value": 24169.18,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Annuité : 80 000 × 0,4021148 = 32 169,18 D. Intérêts de l'année 1 : 80 000 × 0,10 = 8 000 D. Amortissement : 32 169,18 − 8 000 = 24 169,18 D. Résultat : 24169,18 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une usine achète une chaîne de 52 000 D hors taxe, avec 3 000 D hors taxe d'installation, TVA de 18 %. Elle finance le montant TTC par la vente d'un ancien équipement (18 000 D), un emprunt (30 000 D) et le reste sur ses disponibilités. Quel prélèvement sur les disponibilités, en D ?",
+      "answerKey": {
+        "value": 16900,
+        "unit": "D"
+      },
+      "explanation": "Coût hors taxe : 52 000 + 3 000 = 55 000 D. Montant TTC : 55 000 × 1,18 = 64 900 D. Ressources déjà prévues : 18 000 + 30 000 = 48 000 D. Reste : 64 900 − 48 000 = 16 900 D. Résultat : 16900 D.",
+      "difficulty": 3
+    }
+  ]
+}

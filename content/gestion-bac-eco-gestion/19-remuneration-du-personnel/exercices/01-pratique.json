@@ -1,0 +1,185 @@
+{
+  "title": "⭐ Exercice : Premiers pas — bulletin, compléments et formes de salaire",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "short_answer",
+      "prompt": "Comment nomme-t-on la forme de paie calculée en multipliant le nombre d'heures de présence par le taux horaire ?",
+      "answerKey": {
+        "text": "salaire au temps"
+      },
+      "explanation": "Ici le salarié est payé selon le temps passé dans l'entreprise, et non selon sa production. C'est la première des trois modalités de rémunération du manuel ; les deux autres reposent sur la production ou sur un fixe complété d'une prime.",
+      "difficulty": 1,
+      "acceptedAnswers": [
+        "au temps",
+        "temps"
+      ]
+    },
+    {
+      "prompt": "Les chauffeurs d'une coopérative du Sahel reçoivent chaque mois un complément qui compense la dureté de leurs longs trajets sur des pistes non goudronnées. Quel complément est-ce ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une indemnité de pénibilité"
+        },
+        {
+          "id": "b",
+          "text": "Une prime de rendement"
+        },
+        {
+          "id": "c",
+          "text": "Un avantage en nature"
+        },
+        {
+          "id": "d",
+          "text": "Une majoration d'heures supplémentaires"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une indemnité compense des conditions de travail défavorables ou pénibles. Une prime de rendement récompense un résultat, un avantage en nature est un bien fourni (voiture, logement), et la majoration rémunère des heures faites en plus.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une entreprise soumise au régime de 48 heures par semaine, de combien est majorée une heure supplémentaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De 25 %"
+        },
+        {
+          "id": "b",
+          "text": "De 50 %"
+        },
+        {
+          "id": "c",
+          "text": "De 75 %"
+        },
+        {
+          "id": "d",
+          "text": "De 100 %"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Au régime de 48 heures, toute heure supplémentaire est majorée de 75 %, soit un coefficient de 1,75. Les taux de 25 % et de 50 % sont ceux du régime de 40 heures, qui ne s'applique pas ici ; 100 % n'est pas prévu par le manuel.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque retenue du bulletin de paie à sa description.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Cotisation sociale"
+        },
+        {
+          "id": "l2",
+          "text": "IRPP"
+        },
+        {
+          "id": "l3",
+          "text": "Acompte"
+        },
+        {
+          "id": "r1",
+          "text": "Calculée sur le brut, au taux de l'énoncé"
+        },
+        {
+          "id": "r2",
+          "text": "Retenue fiscale calculée selon un barème"
+        },
+        {
+          "id": "r3",
+          "text": "Retenue facultative : une avance déjà versée"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "La cotisation se calcule sur le brut ; l'IRPP est l'impôt retenu selon le barème ; l'acompte est une retenue facultative qui reprend une avance déjà versée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Au régime de 48 heures, un ouvrier de la Verrerie Cherif, payé 3,2 D l'heure, fait 15 heures supplémentaires. Quel montant s'ajoute à son salaire, en D ?",
+      "answerKey": {
+        "value": 84,
+        "unit": "D"
+      },
+      "explanation": "Heures supplémentaires = 15 × 3,2 × 1,75 = 84 D. Calculer seulement la majoration (× 0,75) donnerait 36 D, ce qui oublie l'heure elle-même.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une brodeuse travaillant à domicile pour l'atelier Lotus livre 380 pièces ce mois-ci, rémunérées 0,45 D la pièce. Quel est son salaire, en D ?",
+      "answerKey": {
+        "value": 171,
+        "unit": "D"
+      },
+      "explanation": "Au rendement, salaire = pièces × taux par pièce = 380 × 0,45 = 171 D. Le nombre d'heures passées n'intervient pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquels de ces éléments sont des compléments de salaire ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une prime d'ancienneté"
+        },
+        {
+          "id": "b",
+          "text": "Une indemnité de transport"
+        },
+        {
+          "id": "c",
+          "text": "Un logement fourni par l'entreprise"
+        },
+        {
+          "id": "d",
+          "text": "La cotisation sociale du salarié"
+        },
+        {
+          "id": "e",
+          "text": "L'IRPP retenu sur le salaire"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La prime d'ancienneté, l'indemnité de transport et le logement fourni (avantage en nature) viennent s'ajouter au salaire de base. La cotisation sociale et l'IRPP sont au contraire retranchés du salaire : ce ne sont pas des compléments.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les salaires bruts mensuels de la Fonderie Karim s'élèvent à 8 500 D au total. Les charges de l'employeur sont de 16,57 % pour la CNSS et de 2 % pour la TFP. Quel est le coût mensuel de la main-d'œuvre, en D ?",
+      "answerKey": {
+        "value": 10078.45,
+        "tolerance": 0.01,
+        "unit": "D"
+      },
+      "explanation": "Taux total des charges : 16,57 % + 2 % = 18,57 %. Charges : 8 500 × 0,1857 = 1 578,45 D. Coût de la main-d'œuvre : 8 500 + 1 578,45 = 10 078,45 D.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : La directrice des ressources humaines face aux chiffres",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le Comptoir Ennour emploie 6 techniciens à 900 D et 10 ouvriers à 500 D par mois et par personne. L'année suivante, tous les salaires augmentent de 3 % dès le 1er janvier. De plus, 2 ouvriers sont promus techniciens au 1er avril (ils touchent alors le salaire des techniciens), 1 technicien part à la retraite le 30 juin, et 3 ouvriers sont embauchés au 1er septembre. Quelle est la masse salariale brute de l'année suivante, en D ?",
+      "answerKey": {
+        "value": 136578,
+        "unit": "D"
+      },
+      "explanation": "Salaires majorés : techniciens 927 D, ouvriers 515 D. Techniciens : 6 × 927 × 3 + 8 × 927 × 3 + 7 × 927 × 6 = 16 686 + 22 248 + 38 934 = 77 868 D. Ouvriers : 10 × 515 × 3 + 8 × 515 × 5 + 11 × 515 × 4 = 15 450 + 20 600 + 22 660 = 58 710 D. Total : 77 868 + 58 710 = 136 578 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Société Hamdi emploie 15 salariés dont le brut moyen est de 620 D par mois. Ses charges d'employeur sont de 16,57 % (CNSS), 2 % (TFP) et 1 % (FOPROLOS). Quel est le coût annuel de la main-d'œuvre, en D ?",
+      "answerKey": {
+        "value": 133440.12,
+        "tolerance": 0.05,
+        "unit": "D"
+      },
+      "explanation": "Bruts annuels : 15 × 620 × 12 = 111 600 D. Taux total des charges : 16,57 + 2 + 1 = 19,57 %. Charges : 111 600 × 0,1957 = 21 840,12 D. Coût : 111 600 + 21 840,12 = 133 440,12 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "À la Coopérative Zitouna, un ouvrier a fabriqué 140, 155, 170, 150 et 190 pièces sur cinq jours de 8 heures. Au temps, il touche 3 D l'heure ; à la pièce, 0,12 D ; en mixte, son salaire au temps est complété de 0,05 D par pièce au-delà de 150 par jour. Quelle forme lui est la plus avantageuse, et pour quel montant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le temps, avec 120 D contre 96,60 D à la pièce"
+        },
+        {
+          "id": "b",
+          "text": "Le mixte, avec 160,25 D, devant 120 D au temps"
+        },
+        {
+          "id": "c",
+          "text": "Le mixte, avec 123,25 D, devant 120 D au temps"
+        },
+        {
+          "id": "d",
+          "text": "Le mixte, avec 125,25 D, devant 120 D au temps"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Au temps : 40 × 3 = 120 D. À la pièce : 805 × 0,12 = 96,60 D. En mixte : 120 D plus 0,05 D sur les pièces au-delà de 150, soit 5 + 20 + 0 + 40 = 65 pièces, donc 120 + 3,25 = 123,25 D. Le mixte l'emporte ; compter au-delà de 140 pièces donnerait à tort 125,25 D. Appliquer la prime aux 805 pièces donnerait à tort 160,25 D : elle ne porte que sur les pièces au-delà de 150 par jour.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une centrale d'achat accorde trois hausses successives : 1 % puis 1,5 % puis 2 %, chacune sur le salaire déjà majoré. Quelle est l'évolution totale du niveau des salaires, en % arrondi au centième ?",
+      "answerKey": {
+        "value": 4.57,
+        "tolerance": 0.005,
+        "unit": "%"
+      },
+      "explanation": "Les hausses se multiplient : 1,01 × 1,015 × 1,02 = 1,045653, soit +4,57 % après arrondi. La somme des taux, 4,5 %, sous-estime l'effet, car chaque hausse porte sur un salaire déjà plus haut.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Pharmacie Ibn Sina emploie 4 aides à 600 D et 2 préparateurs à 900 D par mois. L'année suivante, tous les salaires augmentent de 5 % au 1er juillet, et un préparateur part le 31 mars sans être remplacé. Quel est le taux de croissance de la masse salariale brute, en % arrondi au dixième ?",
+      "answerKey": {
+        "value": -14.1,
+        "tolerance": 0.05,
+        "unit": "%"
+      },
+      "explanation": "Année de base : (4 × 600 + 2 × 900) × 12 = 50 400 D. Aides : 4 × 600 × 6 + 4 × 630 × 6 = 29 520 D. Préparateurs : 2 × 900 × 3 + 900 × 3 + 945 × 6 = 5 400 + 2 700 + 5 670 = 13 770 D. Total : 43 290 D. Taux : (43 290 − 50 400) ÷ 50 400 × 100 = −14,1 %, une baisse.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chez Transports Salah, un chauffeur a un salaire brut de 820 D. La cotisation salariale est de 8,47 %, l'IRPP de 52,3 D, et il a déjà reçu un acompte de 100 D. Quel est son net à payer, en D ?",
+      "answerKey": {
+        "value": 598.246,
+        "tolerance": 0.005,
+        "unit": "D"
+      },
+      "explanation": "Cotisation : 820 × 0,0847 = 69,454 D, donc net imposable 750,546 D. On retranche ensuite l'IRPP et l'acompte : 750,546 − 52,3 − 100 = 598,246 D. Calculer la cotisation sur un montant déjà diminué de l'IRPP fausserait le résultat.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La rémunération du personnel de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque notion à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Rémunération globale"
+        },
+        {
+          "id": "l2",
+          "text": "Masse salariale"
+        },
+        {
+          "id": "l3",
+          "text": "Grille des salaires"
+        },
+        {
+          "id": "r1",
+          "text": "Salaire de base augmenté des compléments de salaire"
+        },
+        {
+          "id": "r2",
+          "text": "Rémunérations auxquelles s'ajoutent les charges sociales et fiscales de l'employeur"
+        },
+        {
+          "id": "r3",
+          "text": "Tableau qui fait correspondre postes de travail et rémunérations"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "La rémunération globale réunit le salaire de base et ses compléments ; la masse salariale ajoute les charges de l'employeur aux rémunérations ; la grille des salaires relie chaque poste à son niveau de paie et traduit la hiérarchie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces ensembles d'éléments, lequel représente des charges supportées par l'employeur en plus des salaires bruts ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La cotisation CNSS du salarié et l'IRPP retenu"
+        },
+        {
+          "id": "b",
+          "text": "Les acomptes versés et les avances remboursées"
+        },
+        {
+          "id": "c",
+          "text": "La CNSS patronale et la taxe de formation (TFP)"
+        },
+        {
+          "id": "d",
+          "text": "Les primes de rendement et les indemnités de transport"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les charges connexes sur salaires de l'employeur sont la CNSS patronale, la TFP et le FOPROLOS. La cotisation du salarié et l'IRPP sont retranchés de son brut ; les acomptes et avances sont des retenues facultatives ; les primes et indemnités font partie du brut.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La masse salariale brute des Ateliers Riadh passe de 52 600 D l'an dernier à 55 756 D cette année. Quel est le taux de croissance, en % ?",
+      "answerKey": {
+        "value": 6,
+        "tolerance": 0.01,
+        "unit": "%"
+      },
+      "explanation": "Variation : 55 756 − 52 600 = 3 156 D. Taux de croissance : 3 156 ÷ 52 600 × 100 = 6 %.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le service paie du Garage Lazhar a chiffré un coût mensuel de main-d'œuvre de 11 857 D, charges patronales comprises (CNSS 16,57 % et TFP 2 %). Quel est le total des salaires bruts, en D ?",
+      "answerKey": {
+        "value": 10000,
+        "tolerance": 0.01,
+        "unit": "D"
+      },
+      "explanation": "Le coût vaut le brut multiplié par 1 + 0,1657 + 0,02 = 1,1857. Le brut est donc 11 857 ÷ 1,1857 = 10 000 D. Retrancher 18,57 % de 11 857 D donnerait à tort environ 9 655 D, car les charges se calculent sur le brut.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche pour prévoir la masse salariale de l'an prochain quand le personnel change en cours d'année.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relever les dates des départs, des entrées et des promotions"
+        },
+        {
+          "id": "b",
+          "text": "Découper l'année en périodes pendant lesquelles l'effectif reste constant"
+        },
+        {
+          "id": "c",
+          "text": "Calculer effectif × salaire mensuel × nombre de mois pour chaque période"
+        },
+        {
+          "id": "d",
+          "text": "Additionner les périodes, puis comparer à l'année précédente"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Les dates viennent en premier, car elles fixent le découpage en périodes d'effectif constant. On calcule ensuite chaque période, puis on additionne ; la comparaison avec l'année précédente, qui donne le taux de croissance, ne peut se faire qu'une fois la masse obtenue.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une imprimerie de Nabeul embauche un opérateur payé 640 D par mois à partir du 1er août. Quelle somme ce recrutement ajoute-t-il à la masse salariale brute de cette année, hors charges, en D ?",
+      "answerKey": {
+        "value": 3200,
+        "unit": "D"
+      },
+      "explanation": "Le salarié est présent d'août à décembre, soit 5 mois : 640 × 5 = 3 200 D. Compter 12 mois (7 680 D) ignorerait la date d'entrée.",
+      "difficulty": 2
+    }
+  ]
+}

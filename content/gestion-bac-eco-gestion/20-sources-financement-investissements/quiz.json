@@ -1,0 +1,166 @@
+{
+  "title": "Test de compréhension ⭐ : Les sources de financement des investissements",
+  "questions": [
+    {
+      "prompt": "Une imprimerie de Sfax vend une presse devenue trop lente pour 12 000 D, afin d'en acheter une plus récente. De quelle nature est cette ressource ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une source externe : un apport nouveau des associés"
+        },
+        {
+          "id": "b",
+          "text": "Une source externe : un crédit accordé par une banque"
+        },
+        {
+          "id": "c",
+          "text": "Une source interne : la cession d'un actif immobilisé"
+        },
+        {
+          "id": "d",
+          "text": "Une source interne : l'autofinancement de l'exercice"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La presse appartenait déjà à l'imprimerie : en la vendant, elle transforme un actif immobilisé en liquidités, sans rien devoir à un tiers. C'est une source interne, la cession. L'autofinancement vient des bénéfices gardés, pas d'une vente de bien, et les apports ou crédits viennent de personnes extérieures.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pourquoi finance-t-on une immobilisation par des ressources stables plutôt que par des dettes à très court terme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que le bien reste des années dans l'entreprise, comme la ressource stable qui le paie"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'une ressource stable ne coûte jamais d'intérêts à l'entreprise qui l'utilise"
+        },
+        {
+          "id": "c",
+          "text": "Parce qu'une dette à court terme coûte toujours moins cher qu'une ressource stable"
+        },
+        {
+          "id": "d",
+          "text": "Parce que les dividendes doivent être versés avant tout remboursement de dette à court terme"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un bien qui reste des années à la disposition de l'entreprise doit être financé par une ressource qui reste elle aussi des années : sinon il faudrait rembourser avant que le bien ait produit. Le critère n'est pas le coût : une ressource stable a un coût, et une dette à court terme ne coûte pas toujours moins cher. Les dividendes ne passent pas avant le remboursement des dettes.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque terme à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Capacité d'autofinancement"
+        },
+        {
+          "id": "l2",
+          "text": "Autofinancement"
+        },
+        {
+          "id": "l3",
+          "text": "Annuité"
+        },
+        {
+          "id": "l4",
+          "text": "Valeur résiduelle"
+        },
+        {
+          "id": "r1",
+          "text": "Part de la CAF que l'entreprise conserve après les dividendes"
+        },
+        {
+          "id": "r2",
+          "text": "Prix de rachat du bien fixé par le contrat de crédit-bail"
+        },
+        {
+          "id": "r3",
+          "text": "Ressource dégagée par l'activité de l'exercice, avant toute distribution"
+        },
+        {
+          "id": "r4",
+          "text": "Versement périodique de l'emprunteur : amortissement et intérêts"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r1"
+          ],
+          [
+            "l3",
+            "r4"
+          ],
+          [
+            "l4",
+            "r2"
+          ]
+        ]
+      },
+      "explanation": "La CAF est la ressource dégagée par l'activité ; l'autofinancement en est la part gardée après les dividendes ; l'annuité regroupe amortissement et intérêts payés à chaque échéance ; la valeur résiduelle est le prix auquel le locataire peut acheter le bien du contrat de crédit-bail.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Menuiserie Zouari a un résultat net de 38 500 D et 21 400 D de dotations aux amortissements. Elle prévoit 15 000 D de dividendes. Quel est son autofinancement, en D ?",
+      "answerKey": {
+        "value": 44900,
+        "unit": "D"
+      },
+      "explanation": "CAF : 38 500 + 21 400 = 59 900 D. Autofinancement : 59 900 − 15 000 = 44 900 D. Le résultat net seul ne suffit pas : les dotations n'ont fait sortir aucun argent. Résultat : 44900 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Classe ces étapes du calcul d'une annuité, en mode amortissements constants, de la première à la dernière.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additionner la part de remboursement et ces intérêts : c'est la 2e annuité"
+        },
+        {
+          "id": "b",
+          "text": "Diviser le capital emprunté par le nombre d'années pour fixer la part de remboursement"
+        },
+        {
+          "id": "c",
+          "text": "Déduire cette part du capital emprunté : reste à payer en fin de première année"
+        },
+        {
+          "id": "d",
+          "text": "Multiplier ce reste à payer par le taux pour trouver les intérêts de l'année suivante"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "c",
+          "d",
+          "a"
+        ]
+      },
+      "explanation": "L'amortissement A se calcule d'abord ; on le retranche du capital pour trouver le capital dû, sur lequel portent les intérêts de la période suivante ; l'annuité vaut A plus ces intérêts.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La société Vitalis emprunte 15 000 D pour 5 ans à 6 %, remboursables en une seule fois à l'échéance, avec intérêts composés. Quel montant verse-t-elle à la fin, en D ?",
+      "answerKey": {
+        "value": 20073.38,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Cn = Co × (1 + i)ⁿ = 15 000 × (1,06)⁵ = 15 000 × 1,3382256 = 20 073,38 D. Calculer des intérêts simples (15 000 × 6 % × 5 = 4 500 D) donnerait 19 500 D, trop peu. Résultat : 20073,38 D.",
+      "difficulty": 2
+    }
+  ]
+}

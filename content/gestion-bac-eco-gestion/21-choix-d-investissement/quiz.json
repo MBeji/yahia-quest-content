@@ -1,0 +1,171 @@
+{
+  "title": "Test de compréhension ⭐ : Le choix d'investissement",
+  "questions": [
+    {
+      "prompt": "Une boulangerie de Monastir hésite à acheter un four coûteux, dont les gains s'étaleront sur plusieurs années. Que fait-elle en investissant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle échange une recette certaine contre une dépense incertaine à venir"
+        },
+        {
+          "id": "b",
+          "text": "Elle échange une dépense sans risque contre une recette immédiate"
+        },
+        {
+          "id": "c",
+          "text": "Elle échange une dépense certaine contre des recettes futures espérées"
+        },
+        {
+          "id": "d",
+          "text": "Elle échange une dette ancienne contre un capital remboursé à terme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Investir, c'est payer maintenant, avec certitude, pour des recettes que l'on espère plus tard : c'est un pari. Les autres formulations inversent l'ordre du certain et de l'incertain, ou parlent d'une dette, ce qui ne décrit pas un investissement.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pourquoi ajoute-t-on les dotations aux amortissements au résultat net d'impôts pour obtenir le flux net de trésorerie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce qu'elles forment un encaissement supplémentaire de l'année"
+        },
+        {
+          "id": "b",
+          "text": "Parce qu'elles ont réduit le résultat sans faire sortir d'argent"
+        },
+        {
+          "id": "c",
+          "text": "Parce qu'elles augmentent l'impôt à payer de l'année"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'elles remplacent la valeur résiduelle en fin de projet"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La dotation est une charge calculée : elle a diminué le résultat et l'impôt, mais aucun dinar n'a quitté la caisse. On la rajoute donc pour retrouver l'argent réellement disponible. Ce n'est pas un encaissement, elle réduit l'impôt au lieu de l'augmenter, et la valeur résiduelle est une autre notion.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Tannerie Dahmani investit 80 000 D, amortis en linéaire sur 5 ans. Le projet apporte 90 000 D de ventes en plus chaque année, avec 36 000 D de dépenses supplémentaires. L'impôt est de 30 %. Quel est le flux net annuel, en D ?",
+      "answerKey": {
+        "value": 42600,
+        "unit": "D"
+      },
+      "explanation": "Dotation : 80 000 ÷ 5 = 16 000 D. Résultat avant impôts : 90 000 − 36 000 − 16 000 = 38 000 D. Impôt : 38 000 × 0,30 = 11 400 D. Résultat net : 26 600 D. Flux net : 26 600 + 16 000 = 42 600 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque terme à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Valeur actualisée nette"
+        },
+        {
+          "id": "l2",
+          "text": "Délai de récupération"
+        },
+        {
+          "id": "l3",
+          "text": "Taux d'actualisation"
+        },
+        {
+          "id": "l4",
+          "text": "Valeur comptable nette"
+        },
+        {
+          "id": "r1",
+          "text": "Valeur créée par le projet, mesurée à la date de l'investissement"
+        },
+        {
+          "id": "r2",
+          "text": "Temps pour que les flux cumulés couvrent le coût, sans actualisation"
+        },
+        {
+          "id": "r3",
+          "text": "Taux qui ramène une somme future à sa valeur à la date zéro"
+        },
+        {
+          "id": "r4",
+          "text": "Coût initial diminué des amortissements déjà pratiqués"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La VAN mesure la valeur créée une fois tous les flux ramenés à la date de l'investissement. Le délai de récupération cherche le moment où le cumul des flux couvre le coût. Le taux d'actualisation sert à ramener l'avenir à aujourd'hui, et la VCN est ce qui reste à amortir.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes du calcul d'une VAN à flux variables.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Actualiser chaque flux avec le coefficient de son année"
+        },
+        {
+          "id": "b",
+          "text": "Calculer les flux nets annuels du projet"
+        },
+        {
+          "id": "c",
+          "text": "Additionner les flux actualisés"
+        },
+        {
+          "id": "d",
+          "text": "Retrancher l'investissement initial"
+        },
+        {
+          "id": "e",
+          "text": "Conclure d'après le signe de la VAN"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "a",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On calcule d'abord les flux nets, puis on actualise chacun à la date zéro, on additionne, on retranche le coût initial, et seulement alors on lit le signe de la VAN pour conclure.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un client de la Menuiserie Ouerghi s'engage à verser 6 000 D dans 3 ans. Au taux d'actualisation de 8 %, que vaut cette somme aujourd'hui, en D ? (précision de 1 D)",
+      "answerKey": {
+        "value": 4762.99,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Valeur actuelle : 6 000 × 1,08⁻³ = 6 000 × 0,793832 = 4 762,99 D. La somme reçue plus tard vaut moins que 6 000 D d'aujourd'hui.",
+      "difficulty": 2
+    }
+  ]
+}
