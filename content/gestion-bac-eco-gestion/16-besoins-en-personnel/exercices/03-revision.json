@@ -1,0 +1,181 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les besoins en personnel de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Une chaîne d'hôtels dresse l'inventaire de ses ressources en personnel. Quelle information relève de cet inventaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les effectifs par catégorie et leur pyramide des âges"
+        },
+        {
+          "id": "b",
+          "text": "Le nombre de postes à créer d'ici trois ans"
+        },
+        {
+          "id": "c",
+          "text": "Le chiffre d'affaires attendu pour l'an prochain"
+        },
+        {
+          "id": "d",
+          "text": "Les compétences nouvelles que devra posséder le personnel"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'inventaire décrit le personnel déjà disponible : effectifs par catégorie, pyramide des âges, mouvements de personnes. Les postes à créer et les compétences nouvelles sont des besoins, et le chiffre d'affaires attendu est une prévision qui sert à les établir.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une menuiserie de 150 salariés, 12 se trouvent dans la tranche des 55 à 60 ans. Si tous prennent leur retraite à 60 ans, quelle part de l'effectif partira dans les cinq ans, en pourcentage ?",
+      "answerKey": {
+        "value": 8,
+        "unit": "%"
+      },
+      "explanation": "Part = 12 ÷ 150 = 0,08, soit 8 % de l'effectif ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque situation observée à l'écart qu'elle révèle.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Une chaîne automatisée supprime plusieurs postes d'opérateurs"
+        },
+        {
+          "id": "l2",
+          "text": "Une nouvelle agence ouvre sans salariés pour la faire tourner"
+        },
+        {
+          "id": "l3",
+          "text": "Des ingénieurs occupent des postes de saisie"
+        },
+        {
+          "id": "l4",
+          "text": "Des opérateurs ne savent pas utiliser le nouveau logiciel"
+        },
+        {
+          "id": "r1",
+          "text": "Surplus de main-d'œuvre"
+        },
+        {
+          "id": "r2",
+          "text": "Manque de main-d'œuvre"
+        },
+        {
+          "id": "r3",
+          "text": "Personnel surqualifié"
+        },
+        {
+          "id": "r4",
+          "text": "Compétences absentes"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "Moins de postes que de personnes donne un surplus, un lieu sans personnel un manque : écarts quantitatifs. Des ingénieurs à la saisie sont surqualifiés, des opérateurs sans maîtrise du logiciel n'ont pas les compétences : écarts qualitatifs.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour les trois ans à venir, une plateforme logistique applique un taux de départ volontaire de 3 % à ses 300 manutentionnaires et prévoit en plus 5 retraites. Combien de départs au total ?",
+      "answerKey": {
+        "value": 14,
+        "unit": "personnes"
+      },
+      "explanation": "Départs volontaires : 300 × 0,03 = 9. Départs totaux : 9 + 5 = 14 manutentionnaires ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un grossiste de Sfax analyse une catégorie de son personnel. Remets dans l'ordre les opérations.",
+      "options": [
+        {
+          "id": "d",
+          "text": "Qualifier l'écart : quantitatif ou qualitatif"
+        },
+        {
+          "id": "a",
+          "text": "Relever l'effectif actuel de la catégorie"
+        },
+        {
+          "id": "e",
+          "text": "Choisir l'action adaptée à l'écart"
+        },
+        {
+          "id": "c",
+          "text": "Comparer l'effectif prévisionnel au besoin de la catégorie"
+        },
+        {
+          "id": "b",
+          "text": "Retirer les départs et tenir compte des promotions"
+        }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d", "e"]
+      },
+      "explanation": "On part de l'effectif actuel, on y applique départs et promotions pour obtenir l'effectif prévisionnel, puis on le compare au besoin. L'écart trouvé est alors qualifié, ce qui permet de choisir l'action : on n'agit qu'une fois le type d'écart établi.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un hôtel veut connaître le recrutement à prévoir dans une catégorie en sous-effectif. Quel calcul est correct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Effectif actuel − départs ± promotions − besoin"
+        },
+        {
+          "id": "b",
+          "text": "Besoin + départs de l'année + promotions de l'année"
+        },
+        {
+          "id": "c",
+          "text": "Effectif actuel − besoin − départs de l'année prochaine"
+        },
+        {
+          "id": "d",
+          "text": "Besoin − (effectif actuel − départs ± promotions)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le recrutement vaut le besoin moins l'effectif prévisionnel, lequel est l'effectif actuel moins les départs, plus ou moins les promotions. Le calcul inverse donne l'écart et non le recrutement, et les deux autres ignorent l'effectif prévisionnel.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une briqueterie aura encore 400 ouvriers dans deux ans, mais une nouvelle machine ramènera ses besoins à 340 ouvriers. Quelle action traite directement ce surplus ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un programme de recrutement externe de nouveaux ouvriers"
+        },
+        {
+          "id": "b",
+          "text": "Des départs en retraite anticipée proposés aux plus âgés"
+        },
+        {
+          "id": "c",
+          "text": "Un plan de perfectionnement pour l'ensemble des ouvriers"
+        },
+        {
+          "id": "d",
+          "text": "L'embauche de cadres supplémentaires pour encadrer la machine"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Il y a 60 ouvriers de trop : c'est un écart quantitatif par sur-effectif, que l'on réduit par des retraites anticipées ou des mises à pied. Recruter l'aggraverait, et le perfectionnement comme l'embauche de cadres ne diminuent pas le nombre d'ouvriers.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le recrutement de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque pratique à la catégorie de recrutement qu'elle illustre.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Une vendeuse est promue cheffe de rayon"
+        },
+        {
+          "id": "l2",
+          "text": "Une offre est publiée dans un quotidien"
+        },
+        {
+          "id": "l3",
+          "text": "L'entreprise tient un stand dans une faculté"
+        },
+        {
+          "id": "l4",
+          "text": "Un technicien écrit sans qu'aucune offre existe"
+        },
+        {
+          "id": "r1",
+          "text": "Mobilité interne par promotion"
+        },
+        {
+          "id": "r2",
+          "text": "Candidature suscitée par la presse"
+        },
+        {
+          "id": "r3",
+          "text": "Candidature suscitée par une université"
+        },
+        {
+          "id": "r4",
+          "text": "Candidature spontanée"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La promotion est une mobilité interne ; l'annonce dans la presse et le stand à la faculté sont des candidatures suscitées par l'entreprise, par deux voies différentes ; la lettre sans offre est une candidature spontanée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dirigeant affirme qu'un recrutement bâclé coûte moins cher qu'un recrutement bien fait, puisqu'on dépense moins au départ. Pourquoi cette idée est-elle fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un recrutement bâclé coûte plus cher, car il exige des entretiens plus longs"
+        },
+        {
+          "id": "b",
+          "text": "Un recrutement bâclé entraîne ensuite des coûts d'inadaptation et de remplacement"
+        },
+        {
+          "id": "c",
+          "text": "Un recrutement bâclé oblige à verser des salaires plus élevés à tous les salariés"
+        },
+        {
+          "id": "d",
+          "text": "Un recrutement bien fait est moins cher, car il évite les frais d'entretien"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un recrutement bien fait est coûteux, mais un recrutement bâclé l'est encore plus à long terme : mauvaise productivité, absentéisme, rotation, poste vacant à pourvoir de nouveau. Il faut mettre le coût en regard des effets d'une embauche réussie.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une pharmacie de Tunis reçoit 16 étudiants lors d'une journée à la faculté, qui lui coûte 250 D. Chaque étudiant a un premier entretien à 14 D ; 4 sont gardés et voient la gérante pour 45 D chacun. Quel est le coût global de cette opération, en D ?",
+      "answerKey": {
+        "value": 654,
+        "unit": "D"
+      },
+      "explanation": "Premiers entretiens : 14 × 16 = 224 D. Seconds entretiens : 45 × 4 = 180 D. Coût global : 250 + 224 + 180 = 654 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une quincaillerie recrute seule. Prospection : 3 100 D ; vacance : 2 400 D ; divers : 1 500 D. Son coût de revient total atteint 11 300 D. Quel est le coût de l'inadaptation, en D ?",
+      "answerKey": {
+        "value": 4300,
+        "unit": "D"
+      },
+      "explanation": "La somme des trois éléments connus vaut 3 100 + 2 400 + 1 500 = 7 000 D. Le coût d'inadaptation est le reste : 11 300 − 7 000 = 4 300 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de la notation pondérée de candidats.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixer les critères de sélection et leurs coefficients"
+        },
+        {
+          "id": "b",
+          "text": "Noter chaque candidat sur chaque critère"
+        },
+        {
+          "id": "c",
+          "text": "Multiplier chaque note par le coefficient du critère"
+        },
+        {
+          "id": "d",
+          "text": "Additionner les produits et retenir le plus fort total"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Il faut d'abord savoir ce qu'on note (critères et coefficients) avant de noter ; les produits ne se calculent qu'une fois les notes données ; le classement vient en dernier, une fois les totaux connus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un petit atelier de Kairouan au budget serré doit embaucher un manœuvre sans qualification particulière. Quel mode de recrutement est le plus adapté ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une candidature suscitée par le bureau d'emploi ou une annonce locale"
+        },
+        {
+          "id": "b",
+          "text": "Un cabinet de recrutement chargé d'une recherche nationale"
+        },
+        {
+          "id": "c",
+          "text": "Un forum dans une grande école d'ingénieurs"
+        },
+        {
+          "id": "d",
+          "text": "Une batterie de tests et une analyse graphologique pour chaque candidat"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le choix du mode dépend de la taille de l'entreprise, du budget et de la nature du poste : un petit budget et un poste peu qualifié appellent un canal peu coûteux, comme le bureau d'emploi ou l'annonce locale. Le cabinet, le forum d'école d'ingénieurs et la batterie de tests visent des postes plus qualifiés ou un budget plus large.",
+      "difficulty": 2
+    }
+  ]
+}

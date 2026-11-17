@@ -1,0 +1,148 @@
+{
+  "title": "Test de compréhension ⭐ : Les besoins en personnel",
+  "questions": [
+    {
+      "prompt": "Une conserverie de Bizerte prépare son plan à cinq ans. Quel est le but de la gestion prévisionnelle des emplois et des compétences (GPEC) qu'elle met en place ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixer la rémunération de chaque salarié selon son ancienneté"
+        },
+        {
+          "id": "b",
+          "text": "Adapter à l'avance les effectifs et les compétences aux besoins futurs"
+        },
+        {
+          "id": "c",
+          "text": "Attendre les départs puis recruter pour combler chaque poste vide"
+        },
+        {
+          "id": "d",
+          "text": "Recruter chaque année le même nombre de personnes, quels que soient les besoins"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La GPEC assure l'adéquation entre emplois et ressources en neutralisant les écarts avant qu'ils n'apparaissent. La rémunération est un autre volet de la gestion des ressources humaines, attendre les départs revient à réagir au lieu d'anticiper, et un recrutement identique chaque année ignore les besoins réels.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une pâtisserie de Nabeul emploie 80 personnes. Dans deux ans, 6 auront pris leur retraite et 4 auront démissionné ; personne ne sera promu. Combien de salariés compteront alors dans l'équipe ?",
+      "answerKey": {
+        "value": 70,
+        "unit": "personnes"
+      },
+      "explanation": "Seuls les départs font baisser l'effectif : 80 − 6 − 4 = 70 personnes ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Une entreprise de transport de Gafsa construit son plan d'effectifs. Remets dans l'ordre les étapes de la démarche.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Comparer besoins et ressources pour mesurer les écarts"
+        },
+        {
+          "id": "a",
+          "text": "Définir ses objectifs de développement"
+        },
+        {
+          "id": "d",
+          "text": "Choisir les actions qui comblent l'écart"
+        },
+        {
+          "id": "b",
+          "text": "Définir les besoins et dresser l'inventaire des ressources existantes"
+        }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "On part des objectifs de développement, qui fixent ce dont l'entreprise aura besoin. On définit alors les besoins et l'on dresse en parallèle l'inventaire des ressources. On les rapproche ensuite pour mesurer l'écart, et l'action vient en dernier, une fois l'écart établi.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque terme à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Sur-effectif"
+        },
+        {
+          "id": "l2",
+          "text": "Sous-effectif"
+        },
+        {
+          "id": "l3",
+          "text": "Écart qualitatif"
+        },
+        {
+          "id": "l4",
+          "text": "Pyramide des âges"
+        },
+        {
+          "id": "r1",
+          "text": "Salariés répartis par tranche d'âge"
+        },
+        {
+          "id": "r2",
+          "text": "Effectif prévu supérieur aux besoins"
+        },
+        {
+          "id": "r3",
+          "text": "Compétences du personnel inadaptées aux postes"
+        },
+        {
+          "id": "r4",
+          "text": "Effectif prévu inférieur aux besoins"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r2"],
+          ["l2", "r4"],
+          ["l3", "r3"],
+          ["l4", "r1"]
+        ]
+      },
+      "explanation": "Le sur-effectif est un effectif prévu supérieur aux besoins, le sous-effectif un effectif inférieur. L'écart qualitatif concerne les compétences et non le nombre. La pyramide des âges répartit les salariés par tranche d'âge.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un hypermarché de Sousse a exactement autant de caissiers que de postes de caisse, mais plusieurs d'entre eux sont titulaires d'un master de finance. De quel écart s'agit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un écart quantitatif, par manque de main-d'œuvre"
+        },
+        {
+          "id": "b",
+          "text": "Un écart quantitatif, par surplus de main-d'œuvre"
+        },
+        {
+          "id": "c",
+          "text": "Un écart qualitatif, par surqualification du personnel"
+        },
+        {
+          "id": "d",
+          "text": "Aucun écart, puisque l'effectif est égal au nombre de postes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le nombre de caissiers est correct : ni manque ni surplus. En revanche, des diplômés de master occupent des postes qui n'exigent pas ce niveau : le personnel est surqualifié, c'est un écart qualitatif. Dire qu'il n'y a aucun écart reviendrait à ne regarder que le nombre.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un cabinet comptable de Kairouan compte 70 salariés. D'ici trois ans, 8 partiront en retraite et 3 démissionneront. Son activité n'exigera alors que 52 personnes. De combien de personnes sera-t-il en sur-effectif ?",
+      "answerKey": {
+        "value": 7,
+        "unit": "personnes"
+      },
+      "explanation": "Effectif prévisionnel : 70 − 8 − 3 = 59. Écart : 59 − 52 = +7, soit un sur-effectif de 7 personnes ✓.",
+      "difficulty": 2
+    }
+  ]
+}

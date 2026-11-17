@@ -1,0 +1,109 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur de la formation",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La société Delta Transport arrête un plan en trois niveaux : 4 jours à 180 D par jour pour les chauffeurs, 3 jours à 120 D par jour pour le personnel de la logistique, 2 jours à 70 D par jour pour les autres services. Quel est le coût global du plan, en D ?",
+      "answerKey": {
+        "value": 1220,
+        "unit": "D"
+      },
+      "explanation": "Chauffeurs : 4 × 180 = 720 D. Logistique : 3 × 120 = 360 D. Autres services : 2 × 70 = 140 D. Coût global : 720 + 360 + 140 = 1 220 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un cabinet facture au garage Zeus la formation de 9 techniciens directement concernés (5 jours, 55 D par personne et par jour) et de 14 employés indirectement concernés (3 jours, 28 D par personne et par jour). Quel est le coût total de l'action, en D ?",
+      "answerKey": {
+        "value": 3651,
+        "unit": "D"
+      },
+      "explanation": "Techniciens : 9 × 5 × 55 = 2 475 D. Employés : 14 × 3 × 28 = 1 176 D. Total : 2 475 + 1 176 = 3 651 D. Le tarif est par personne et par jour : on multiplie par le nombre de personnes et par les jours.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un niveau de formation dure 6 jours, à raison de 5 heures par jour, et le cabinet facture 150 D par jour. Quel est le coût de ce niveau ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "180 D, soit 900 ÷ 5"
+        },
+        {
+          "id": "b",
+          "text": "750 D, soit 5 × 150"
+        },
+        {
+          "id": "c",
+          "text": "900 D, soit 6 × 150 D"
+        },
+        {
+          "id": "d",
+          "text": "4 500 D, soit 6 × 5 × 150"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le tarif est par jour : 6 × 150 = 900 D. Les 5 heures décrivent la journée et n'entrent pas dans le calcul. Les autres résultats viennent d'erreurs : multiplier aussi par les heures, prendre les heures à la place des jours, ou diviser par les heures.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Agro Cap, société agroalimentaire, a fait homologuer son programme. Niveau 1 : 8 jours, 210 D la journée, ristourne de 75 % ; niveau 2 : 4 jours, 160 D la journée, ristourne de 50 % ; niveau 3 : 2 jours, 90 D la journée, ristourne de 25 %. Combien l'entreprise paie-t-elle réellement, en D ?",
+      "answerKey": {
+        "value": 875,
+        "unit": "D"
+      },
+      "explanation": "Coûts : 8 × 210 = 1 680 D ; 4 × 160 = 640 D ; 2 × 90 = 180 D ; coût global 2 500 D. Ristournes : 1 680 × 0,75 = 1 260 D ; 640 × 0,50 = 320 D ; 180 × 0,25 = 45 D ; total 1 625 D. Coût réel : 2 500 − 1 625 = 875 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une usine de Monastir forme 12 ouvriers pendant 4 jours. Offre dans l'usine : 2 groupes de 6, à 230 D par jour et par groupe. Offre hors de l'usine : 45 D par personne et par jour. De combien l'offre hors de l'usine dépasse-t-elle l'offre dans l'usine, en D ?",
+      "answerKey": {
+        "value": 320,
+        "unit": "D"
+      },
+      "explanation": "Dans l'usine : 2 × 4 × 230 = 1 840 D. Hors de l'usine : 12 × 4 × 45 = 2 160 D. Écart : 2 160 − 1 840 = 320 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la ristourne sont exactes ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle n'est obtenue que si le programme de formation est homologué"
+        },
+        {
+          "id": "b",
+          "text": "Son taux peut varier d'un niveau de formation à l'autre"
+        },
+        {
+          "id": "c",
+          "text": "Le coût réel est égal au coût global moins la ristourne"
+        },
+        {
+          "id": "d",
+          "text": "On l'obtient en appliquant le taux du niveau 1 au coût global"
+        },
+        {
+          "id": "e",
+          "text": "Elle est versée aux stagiaires, et non à l'entreprise"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La ristourne suppose l'homologation du programme, son taux peut varier d'un niveau à l'autre, et le coût réel s'obtient en la retranchant du coût global. Chaque taux s'applique à son niveau, pas au coût global ; et c'est l'entreprise qui en bénéficie, pas les stagiaires.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur du recrutement",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le bureau Réussite propose : opération de sélection 1 450 D ; initiation théorique 5 200 D ; stage pratique 2 300 D ; encadreurs 95 D par stagiaire (12 stagiaires) ; bourse de 70 D par stagiaire, dont la moitié est à la charge de l'entreprise. Quel total reste à la charge de l'entreprise, en D ?",
+      "answerKey": {
+        "value": 10510,
+        "unit": "D"
+      },
+      "explanation": "Encadreurs : 95 × 12 = 1 140 D. Bourse : 70 × 12 = 840 D, dont la moitié, 420 D, est à la charge de l'entreprise. Total : 1 450 + 5 200 + 2 300 + 1 140 + 420 = 10 510 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un chantier naval publie une annonce à 520 D. Sur les 36 candidatures reçues, 14 candidats passent un test à 24 D chacun, puis 5 passent un entretien à 48 D chacun. Quel est le coût global de ce canal, en D ?",
+      "answerKey": {
+        "value": 1096,
+        "unit": "D"
+      },
+      "explanation": "Le test coûte 24 × 14 = 336 D (seuls les 14 candidats testés comptent, pas les 36 candidatures) ; l'entretien coûte 48 × 5 = 240 D. Coût global : 520 + 336 + 240 = 1 096 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un institut de formation tient un stand de 600 D à un forum d'emploi. Il fait passer 15 entretiens rapides à 12 D chacun, puis 6 entretiens finaux à 55 D chacun, et recrute 3 personnes. Quel est le coût par recrue, en D ?",
+      "answerKey": {
+        "value": 370,
+        "unit": "D"
+      },
+      "explanation": "Coût global : 600 + 12 × 15 + 55 × 6 = 600 + 180 + 330 = 1 110 D. Coût par recrue : 1 110 ÷ 3 = 370 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une clinique recrute une secrétaire médicale. Critères notés sur 10 : accueil (coefficient 4), informatique (coefficient 2), langues (coefficient 1). Rim a 8, 6 et 5 ; Hedi a 6, 9 et 9 ; Salma a 9, 5 et 6. Quel est le total pondéré du candidat à retenir ?",
+      "answerKey": {
+        "value": 52,
+        "unit": "points"
+      },
+      "explanation": "Rim : 8 × 4 + 6 × 2 + 5 = 49. Hedi : 6 × 4 + 9 × 2 + 9 = 51. Salma : 9 × 4 + 5 × 2 + 6 = 52. Le plus fort total est 52, celui de Salma. Sans coefficients, Hedi serait premier avec 24 points : c'est l'erreur à éviter.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une pâtisserie doit recruter 10 pâtissiers. Seule, elle dépenserait 2 900 D de prospection, 1 700 D de vacance, 3 600 D d'inadaptation et 1 100 D de divers. Le bureau Alpha demande : sélection 1 300 D, initiation 4 800 D, stage 1 900 D, encadreurs 1 000 D (forfait), bourse à la charge du bureau. Le bureau Beta demande : sélection 1 800 D, initiation 4 200 D, stage 2 400 D, encadreurs 110 D par stagiaire, bourse de 60 D par stagiaire dont la moitié à la charge de l'entreprise. Règle : on choisit un bureau seulement si son offre est inférieure ou égale à 8 800 D ; sinon on recrute seul. Quelle décision est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le bureau Alpha, car son offre de 9 000 D est la plus basse des deux"
+        },
+        {
+          "id": "b",
+          "text": "Le bureau Beta, car son offre de 9 800 D comprend les encadreurs et la bourse"
+        },
+        {
+          "id": "c",
+          "text": "Recruter seule, car aucune des deux offres n'est inférieure ou égale à 8 800 D"
+        },
+        {
+          "id": "d",
+          "text": "Le bureau Alpha, car son offre de 9 000 D est inférieure au coût propre de 9 300 D"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Coût propre : 2 900 + 1 700 + 3 600 + 1 100 = 9 300 D. Alpha : 1 300 + 4 800 + 1 900 + 1 000 = 9 000 D. Beta : 1 800 + 4 200 + 2 400 + 1 100 + 300 = 9 800 D. Les deux offres dépassent le seuil de 8 800 D : la règle ramène au recrutement par ses propres moyens. Choisir la moins chère, ou la comparer au coût propre au lieu du seuil, ignore la règle de décision.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur le choix d'un mode de recrutement sont exactes ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le choix dépend de la taille de l'entreprise, du budget et de la nature du poste"
+        },
+        {
+          "id": "b",
+          "text": "Un bon ouvrier peut devenir un mauvais contremaître, ce qui limite la promotion"
+        },
+        {
+          "id": "c",
+          "text": "La promotion complète les recrutements externes sans les remplacer"
+        },
+        {
+          "id": "d",
+          "text": "Un recrutement interne ne demande ni sélection ni période d'adaptation"
+        },
+        {
+          "id": "e",
+          "text": "Un recrutement externe coûte moins cher, car le cabinet prend tout à sa charge"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le choix selon la taille, le budget et la nature du poste, le risque de la promotion et son rôle complémentaire reprennent le manuel. Un recrutement interne a aussi ses coûts (sélection, adaptation), et aucun mode n'est toujours moins cher.",
+      "difficulty": 3
+    }
+  ]
+}

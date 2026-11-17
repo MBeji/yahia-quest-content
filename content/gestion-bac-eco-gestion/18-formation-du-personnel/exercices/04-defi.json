@@ -1,0 +1,133 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le DRH face aux offres des cabinets",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le Magasin Bahri forme 20 caissiers. Le cabinet A intervient dans le magasin : théorie de 2 jours pour 2 groupes de 10, à 380 D par groupe pour toute la durée ; pratique de 3 jours pour 4 groupes de 5, à 280 D par jour et par groupe. Quel est le coût de l'offre A, en D ?",
+      "answerKey": {
+        "value": 4120,
+        "unit": "D"
+      },
+      "explanation": "Théorie : 2 groupes × 380 = 760 D, le tarif couvrant toute la durée. Pratique : 4 groupes × 3 jours × 280 = 3 360 D. Total : 760 + 3 360 = 4 120 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour 20 vendeuses, la Parfumerie Nour étudie une offre en alternance : 3 jours de théorie chez le cabinet, facturés 55 D par vendeuse et par jour, puis 4 jours de pratique en boutique, facturés 190 D la journée pour l'ensemble du groupe. Combien coûte cette offre, en D ?",
+      "answerKey": {
+        "value": 4060,
+        "unit": "D"
+      },
+      "explanation": "Théorie : 20 × 3 × 55 = 3 300 D. Pratique : 4 × 190 = 760 D, le tarif couvrant tout le groupe. Total : 3 300 + 760 = 4 060 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan A de la société Sahel coûte 3 000 D au total avec 1 100 D de ristourne ; le plan B coûte 2 600 D avec 500 D de ristourne. Que conclure sur les coûts réels ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le plan B coûte 2 600 D en réel, contre 3 000 D pour le plan A"
+        },
+        {
+          "id": "b",
+          "text": "Le plan B coûte 3 100 D en réel, contre 4 100 D pour le plan A"
+        },
+        {
+          "id": "c",
+          "text": "Aucune comparaison n'est possible sans connaître les heures par jour"
+        },
+        {
+          "id": "d",
+          "text": "Le plan A coûte 1 900 D en coût réel, contre 2 100 D pour le plan B"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Plan A : 3 000 − 1 100 = 1 900 D. Plan B : 2 600 − 500 = 2 100 D. Le plan A est moins cher une fois la ristourne déduite, même si son coût global est plus élevé. Comparer les coûts globaux ou ajouter la ristourne conduit à de mauvaises conclusions, et les heures par jour n'entrent pas dans le calcul.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour un plan dont les trois niveaux coûtent 400 D, 600 D et 200 D, avec des ristournes de 75 %, 50 % et 25 %, un élève applique 75 % au total de 1 200 D et trouve un coût réel de 300 D. Où est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a oublié de retrancher la ristourne du coût global lors du calcul final"
+        },
+        {
+          "id": "b",
+          "text": "Il a appliqué un seul taux à l'ensemble, et non un taux par niveau"
+        },
+        {
+          "id": "c",
+          "text": "Il aurait dû ajouter la ristourne au coût global de la formation"
+        },
+        {
+          "id": "d",
+          "text": "Il a oublié que la ristourne ne concerne que le niveau 1 du plan"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chaque niveau a son taux : 400 × 0,75 = 300 D ; 600 × 0,50 = 300 D ; 200 × 0,25 = 50 D ; ristourne totale 650 D et coût réel 1 200 − 650 = 550 D, non 300 D. L'élève a bien retranché la ristourne, mais mal calculée.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "La société Nour envoie 4 vendeurs suivre un stage de 3 jours chez un cabinet à Tunis. Quels éléments entrent dans le coût de cette formation ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "La facture du cabinet"
+        },
+        {
+          "id": "b",
+          "text": "Les billets de train et les nuits d'hôtel des vendeurs"
+        },
+        {
+          "id": "c",
+          "text": "Les salaires des vendeurs pendant leurs 3 jours d'absence"
+        },
+        {
+          "id": "d",
+          "text": "La ristourne obtenue si le programme est homologué"
+        },
+        {
+          "id": "e",
+          "text": "Le salaire chargé d'un formateur employé par la société"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Une formation externe coûte la facture de l'organisme, le transport et l'hébergement des stagiaires, et leurs rémunérations pendant le stage, que l'on oublie souvent. La ristourne vient en déduction du coût ; aucun formateur salarié n'intervient ici.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un atelier de maroquinerie héberge un apprenti ; il y est présent 22 jours ce mois-ci. Chaque jour de présence, les encadreurs perdent 15 D de rendement, les machines restent sous-employées pour 7 D, la matière gâchée vaut 3 D et l'apprenti touche 2,5 D. Le superviseur reçoit en plus 150 D pour le mois. Que coûte ce mois à l'atelier, en D ?",
+      "answerKey": {
+        "value": 755,
+        "unit": "D"
+      },
+      "explanation": "Coût par jour : 15 + 7 + 3 + 2,5 = 27,5 D. Sur 22 jours : 27,5 × 22 = 605 D. Avec la prime : 605 + 150 = 755 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Programme homologué pour la société Océan. Action 1 : 220 D la journée pendant 5 jours, ristourne de 80 %. Action 2 : 130 D la journée pendant 6 jours, ristourne de 40 %. Action 3 : 75 D la journée pendant 4 jours, ristourne de 20 %. Quel montant l'entreprise supporte-t-elle finalement, en D ?",
+      "answerKey": {
+        "value": 928,
+        "unit": "D"
+      },
+      "explanation": "Coûts : 5 × 220 = 1 100 D ; 6 × 130 = 780 D ; 4 × 75 = 300 D ; coût global 2 180 D. Ristournes : 1 100 × 0,80 = 880 D ; 780 × 0,40 = 312 D ; 300 × 0,20 = 60 D ; total 1 252 D. Coût réel : 2 180 − 1 252 = 928 D.",
+      "difficulty": 3
+    }
+  ]
+}
