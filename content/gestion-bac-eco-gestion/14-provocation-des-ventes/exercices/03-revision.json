@@ -1,0 +1,181 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La provocation des ventes de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque notion à son calcul.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Taux de marge"
+        },
+        {
+          "id": "l2",
+          "text": "Taux de marque"
+        },
+        {
+          "id": "l3",
+          "text": "Prix de vente unitaire minimum"
+        },
+        {
+          "id": "l4",
+          "text": "Acheteurs potentiels (en %)"
+        },
+        {
+          "id": "r1",
+          "text": "(Prix de vente HT − coût) ÷ coût"
+        },
+        {
+          "id": "r2",
+          "text": "(Prix de vente HT − coût) ÷ prix de vente HT"
+        },
+        {
+          "id": "r3",
+          "text": "Charge variable unitaire + charges fixes ÷ quantité espérée"
+        },
+        {
+          "id": "r4",
+          "text": "100 − (D + G)"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Taux de marge et taux de marque ont la même marge au numérateur mais des dénominateurs différents (le coût, puis le prix de vente HT). Le prix minimum ajoute à la charge variable unitaire les charges fixes réparties sur la quantité espérée. Les acheteurs potentiels (méthode du chapitre 13) se calculent en retranchant D et G de 100.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le secteur des conserves totalisait 4 500 000 D de chiffre d'affaires en N, puis a progressé de 10 % en N+1. La conserverie Hajji y réalise 792 000 D en N+1. Quelle est sa part de marché en N+1 (en %) ?",
+      "answerKey": {
+        "value": 16,
+        "unit": "%"
+      },
+      "explanation": "Secteur N+1 = 4 500 000 × 1,10 = 4 950 000 D. Part de marché = 792 000 ÷ 4 950 000 × 100 = 16 % ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'atelier Yosr a une charge variable de 25 D par article et 33 000 D de charges fixes. Il pensait vendre 4 000 articles, mais n'en espère plus que 3 000. De combien son prix de vente unitaire minimum augmente-t-il (en D) ?",
+      "answerKey": {
+        "value": 2.75,
+        "unit": "D"
+      },
+      "explanation": "Avant : 25 + 33 000 ÷ 4 000 = 33,25 D. Après : 25 + 33 000 ÷ 3 000 = 36 D. Hausse = 36 − 33,25 = 2,75 D ✓ : moins on espère vendre, plus le plancher monte.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Le meilleur canal de distribution réalise un optimum entre deux impératifs souvent opposés. Coche ces deux impératifs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un maximum de services rendus au client"
+        },
+        {
+          "id": "b",
+          "text": "Un maximum de rentabilité pour l'entreprise"
+        },
+        {
+          "id": "c",
+          "text": "Un maximum de points de vente pour la marque"
+        },
+        {
+          "id": "d",
+          "text": "Un maximum d'intermédiaires entre producteur et client"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Le choix d'un canal cherche l'équilibre entre services rendus au client et rentabilité pour l'entreprise. Multiplier les points de vente ou les intermédiaires ne fait pas partie de ces deux impératifs.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche qui permet de trouver un prix d'acceptabilité.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recueillir pour chaque prix les réponses « trop cher » et « mauvaise qualité »"
+        },
+        {
+          "id": "b",
+          "text": "Cumuler les « trop cher » en croissant et les « mauvaise qualité » en décroissant"
+        },
+        {
+          "id": "c",
+          "text": "Exprimer chaque cumul en pourcentage de l'échantillon interrogé"
+        },
+        {
+          "id": "d",
+          "text": "Calculer pour chaque prix : acheteurs potentiels = 100 − (D + G)"
+        },
+        {
+          "id": "e",
+          "text": "Retenir le prix où le pourcentage d'acheteurs potentiels est le plus élevé"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On collecte d'abord les réponses, puis on les cumule dans le bon sens, on les convertit en pourcentages D et G, on calcule les acheteurs potentiels pour chaque prix, et on termine en retenant le maximum (méthode détaillée au chapitre 13) : on ne peut comparer les prix qu'une fois tous les pourcentages obtenus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les ventes d'un téléviseur à tube de la marque Sahara baissent depuis quatre ans, car des écrans plats plus performants sont apparus. Quelle décision commerciale est la plus cohérente avec sa phase du cycle de vie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se limiter à des relances ponctuelles et resserrer la distribution du produit"
+        },
+        {
+          "id": "b",
+          "text": "Multiplier les points de vente et gonfler le budget publicitaire pour relancer"
+        },
+        {
+          "id": "c",
+          "text": "Élargir la gamme vers de nouveaux segments face à une concurrence encore faible"
+        },
+        {
+          "id": "d",
+          "text": "Fixer un prix élevé pour financer la correction des défauts du produit"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Des ventes en recul face à des produits plus performants signalent le déclin : la distribution devient sélective et la communication se réduit à des opérations ponctuelles de relance. Multiplier points de vente et publicité correspond à la croissance ; élargir la gamme vers de nouveaux segments relève de la maturité, et des défauts à corriger face à une concurrence faible décrivent le lancement.",
+      "difficulty": 2
+    }
+  ]
+}

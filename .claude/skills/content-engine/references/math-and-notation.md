@@ -91,6 +91,13 @@ the precedent: Arabic prose around standard math. Never "arabize" the math itsel
   `√(المساحة)`. The radical symbol `√` only ever takes a numeric/symbolic radicand.
 - **Units & scientific symbols stay standard SI**: `cm`, `m²`, `kg`, `g/mol`, `%`, `°C`, `km/h` —
   never transliterated, in any language.
+- **A quantity is one left-to-right atom, in every language.** `1,5 kg`, `12 cm`, `60 km/h`,
+  `37 °C`, `2 h 30 min` — a number, ONE space, an SI unit in Latin letters — keeps that order
+  inside Arabic prose (engine, `QUANTITY` in `src/shared/lib/bidi.ts`, since 2026-11-15; before,
+  a bare quantity was drawn `kg 1,5` and `37 °C` came out `C° 37`). Write it the natural way, no
+  direction marks. The unit list is **closed** (SI prefix + base unit, `min`, `h`, `°C`, `bar`…):
+  an invented or transliterated unit is not recognised. Arabic-script units (`12 صم²`) are
+  untouched — see the bullet above on plain arithmetic.
 
 ## No LaTeX anywhere — the app has no math renderer
 

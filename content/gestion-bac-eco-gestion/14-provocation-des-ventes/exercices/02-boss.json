@@ -1,0 +1,104 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur commercial",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "L'huilerie Zitouna évalue un grossiste sur quatre critères d'importance 4,5 (part de marché), 2,5 (réputation), 1,5 (coût de distribution) et 3,0 (promotion). Les notes du grossiste sont 3,8 ; 4,2 ; 2,6 et 3,0. Quel est son score, par la méthode des scores (en points) ?",
+      "answerKey": {
+        "value": 40.5,
+        "unit": "points"
+      },
+      "explanation": "Score = 4,5×3,8 + 2,5×4,2 + 1,5×2,6 + 3,0×3,0 = 17,1 + 10,5 + 3,9 + 9 = 40,5 ✓. Chaque note est multipliée par l'importance de son critère avant d'additionner.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La verrerie Chaabane vend un vase 141,60 D TTC au public (TVA de 18 %). Le magasin applique un taux de marque de 30 % sur son prix de vente HT. Quel prix HT la verrerie facture-t-elle au magasin (en D) ?",
+      "answerKey": {
+        "value": 84,
+        "unit": "D"
+      },
+      "explanation": "Prix public HT = 141,60 ÷ 1,18 = 120 D. Le taux de marque porte sur ce prix : marge du magasin = 120 × 0,30 = 36 D, donc prix d'achat = 120 − 36 = 84 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La faïencerie Dar El Fen prévoit de vendre 1 500 lots de carreaux. La charge variable est de 52 D par lot et les charges fixes totales de 96 000 D. Quel est son prix de vente unitaire minimum HT (en D) ?",
+      "answerKey": {
+        "value": 116,
+        "unit": "D"
+      },
+      "explanation": "Prix minimum = 52 + 96 000 ÷ 1 500 = 52 + 64 = 116 D ✓. À ce prix la MCV totale, 64 × 1 500 = 96 000 D, couvre juste les charges fixes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les ventes annuelles d'un ventilateur de la marque Électro-Sud, en milliers de dinars, sont de 60, 66, 130, 170, 205, 207, 150 et 80 pour les années 1 à 8. Quelles années correspondent à la maturité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les années 1 et 2"
+        },
+        {
+          "id": "b",
+          "text": "Les années 3 et 4"
+        },
+        {
+          "id": "c",
+          "text": "Les années 5 et 6"
+        },
+        {
+          "id": "d",
+          "text": "Les années 7 et 8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les ventes plafonnent autour de 205 les années 5 et 6 : c'est la maturité. Les années 1 et 2 (60 puis 66) sont le lancement, les années 3 et 4 (130 puis 170) une forte croissance, et les années 7 et 8 (150 puis 80) le déclin.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur la politique commerciale, coche toutes celles qui sont exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour une même vente réalisée avec bénéfice, le taux de marque est inférieur au taux de marge"
+        },
+        {
+          "id": "b",
+          "text": "Le prix minimum du point mort dépend de la quantité que l'entreprise espère vendre"
+        },
+        {
+          "id": "c",
+          "text": "Le prix d'acceptabilité est le plus bas des prix testés auprès de l'échantillon"
+        },
+        {
+          "id": "d",
+          "text": "Une segmentation s'établit à partir de l'étude des produits plutôt que des clients"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Le taux de marque et le taux de marge ont la même marge au numérateur, mais le prix de vente HT est supérieur au coût : le taux de marque est donc le plus petit. Le prix minimum s'écrit charge variable unitaire + charges fixes ÷ quantité espérée : il dépend de la quantité. Le prix d'acceptabilité est celui qui maximise les acheteurs potentiels, pas le plus bas. La segmentation part des groupes de clientèle, non des produits.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un produit se vend au public 35,40 D TTC (TVA de 18 %), prix jugé acceptable par l'enquête. Les magasins y appliquent un taux de marque de 25 %. Le fabricant espère vendre 4 000 unités, avec une charge variable de 15 D par unité et 18 000 D de charges fixes. De combien le prix facturé aux magasins dépasse-t-il le prix minimum (en D) ?",
+      "answerKey": {
+        "value": 3,
+        "unit": "D"
+      },
+      "explanation": "Prix public HT = 35,40 ÷ 1,18 = 30 D ; prix facturé = 30 × (1 − 0,25) = 22,50 D. Prix minimum = 15 + 18 000 ÷ 4 000 = 19,50 D. Écart = 22,50 − 19,50 = 3 D ✓ : le prix accepté par la demande laisse une marge au-dessus du plancher.",
+      "difficulty": 3
+    }
+  ]
+}

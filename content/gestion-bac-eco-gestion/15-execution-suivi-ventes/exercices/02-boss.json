@@ -1,0 +1,84 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur du service client",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le vendeur de matelas Dormir+ offre la garantie à 40 D par unité vendue (1 200 unités), la livraison à domicile à 28 D par commande (950 commandes) et l'assistance à 10 D par client (520 clients). Quelles sont ses charges totales de suivi, en D ?",
+      "answerKey": {
+        "value": 79800,
+        "unit": "D"
+      },
+      "explanation": "Garantie : 40 × 1 200 = 48 000 D. Livraison : 28 × 950 = 26 600 D. Assistance : 10 × 520 = 5 200 D. Total : 48 000 + 26 600 + 5 200 = 79 800 D ✓. Chaque coût se multiplie par sa propre base.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La société Sotuvet réalise 2 400 000 D HT de chiffre d'affaires avec un taux de marque de 18 %, et supporte 214 000 D de charges de suivi. Quel est son résultat global, en D ?",
+      "answerKey": {
+        "value": 218000,
+        "unit": "D"
+      },
+      "explanation": "Marge = 2 400 000 × 0,18 = 432 000 D. Résultat global = 432 000 − 214 000 = 218 000 D ✓. Soustraire les charges du chiffre d'affaires donnerait 2 186 000 D : ce serait oublier de passer par la marge.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chez Soltani Équipement, la garantie coûte 50 D par unité vendue, l'installation 35 D par unité vendue, la livraison 25 D par commande et l'assistance 12 D par client. L'an prochain, les unités vendues passent de 1 200 à 1 500 ; commandes et clients ne changent pas. De combien les charges de suivi augmentent-elles, en D ?",
+      "answerKey": {
+        "value": 25500,
+        "unit": "D"
+      },
+      "explanation": "Seules la garantie et l'installation dépendent des unités vendues : (50 + 35) × (1 500 − 1 200) = 85 × 300 = 25 500 D ✓. Le piège courant est d'appliquer la hausse aussi à la livraison et à l'assistance, dont les bases (commandes, clients) n'ont pas bougé.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une enseigne de cuisines change de politique : ses anciennes charges de suivi valaient 31 000 D. Désormais elle assure l'installation à 22 D par unité (1 500 unités), la livraison à 17 D par commande (1 040 commandes) et la garantie à 38 D par unité (1 500 unités). De combien ses charges augmentent-elles, en D ?",
+      "answerKey": {
+        "value": 76680,
+        "unit": "D"
+      },
+      "explanation": "Installation : 22 × 1 500 = 33 000 D. Livraison : 17 × 1 040 = 17 680 D. Garantie : 38 × 1 500 = 57 000 D. Charges nouvelles : 33 000 + 17 680 + 57 000 = 107 680 D. Augmentation : 107 680 − 31 000 = 76 680 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une cellule de livraison coûte 5 400 D de loyer par an, trois salariés payés 850 D par mois chacun pendant douze mois, et 2 000 D de formation. Quel est le total de ses charges annuelles, en D ?",
+      "answerKey": {
+        "value": 38000,
+        "unit": "D"
+      },
+      "explanation": "Salaires : 3 × 850 × 12 = 30 600 D. Total : 5 400 + 30 600 + 2 000 = 38 000 D ✓. Oublier le facteur douze ou le nombre de salariés fausserait ce total.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La chaîne de vêtements Kenza adopte une nouvelle politique de suivi qui crée 46 500 D de charges supplémentaires. Ses ventes passent de 700 000 à 820 000 D HT, avec un taux de marque de 35 %. Que conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pertinente : le chiffre d'affaires gagne 120 000 D, bien plus que les 46 500 D de charges"
+        },
+        {
+          "id": "b",
+          "text": "Non pertinente : la marge supplémentaire de 42 000 D ne couvre pas les 46 500 D de charges"
+        },
+        {
+          "id": "c",
+          "text": "Pertinente : la marge totale de 287 000 D dépasse largement les 46 500 D de charges"
+        },
+        {
+          "id": "d",
+          "text": "Non pertinente : toute charge supplémentaire fait baisser le résultat, quelle que soit la hausse des ventes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Marge supplémentaire = (820 000 − 700 000) × 0,35 = 42 000 D, inférieure aux 46 500 D de charges : la politique fait perdre 4 500 D. Comparer les charges au chiffre d'affaires ou à la marge totale ne répond pas à la question : seule la marge ajoutée se compare aux charges ajoutées. Une charge ajoutée ne fait pas forcément baisser le résultat : tout dépend de la marge qu'elle rapporte.",
+      "difficulty": 3
+    }
+  ]
+}

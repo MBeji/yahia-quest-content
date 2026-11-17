@@ -1,0 +1,182 @@
+{
+  "title": "⭐⭐ Révision (type examen) : L'étude de marché de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque événement à la composante de l'environnement qu'il concerne.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Juridique"
+        },
+        {
+          "id": "l2",
+          "text": "Économique"
+        },
+        {
+          "id": "l3",
+          "text": "Socio-culturel"
+        },
+        {
+          "id": "l4",
+          "text": "Technologique"
+        },
+        {
+          "id": "r1",
+          "text": "Une loi impose un filtre antipollution aux ateliers"
+        },
+        {
+          "id": "r2",
+          "text": "Le taux de chômage de la région recule nettement"
+        },
+        {
+          "id": "r3",
+          "text": "Des associations de consommateurs organisent un boycott"
+        },
+        {
+          "id": "r4",
+          "text": "Une recherche en cours promet une machine bien plus économe"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La loi sur les filtres est juridique ; le chômage relève de la situation économique générale ; le boycott est une action de consommateurs, donc socio-culturelle ; la recherche sur une machine est technologique.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Coche toutes les situations qui sont des opportunités pour une entreprise.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une loi encourage les investissements dans la région"
+        },
+        {
+          "id": "b",
+          "text": "La main-d'œuvre qualifiée est abondante"
+        },
+        {
+          "id": "c",
+          "text": "Une pénurie de main-d'œuvre fait monter les salaires"
+        },
+        {
+          "id": "d",
+          "text": "Le coût de la main-d'œuvre est faible"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Une loi d'encouragement, une main-d'œuvre qualifiée abondante et un faible coût salarial favorisent l'entreprise : ce sont des opportunités. Une pénurie de main-d'œuvre qui renchérit les salaires est une contrainte.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une enquête sur 400 personnes, à un prix donné, 88 personnes au total jugent le produit trop cher (cumul croissant) et 52 personnes au total le jugent de mauvaise qualité (cumul décroissant). Quel pourcentage d'acheteurs potentiels obtient-on à ce prix, en % ?",
+      "answerKey": {
+        "value": 65,
+        "unit": "%"
+      },
+      "explanation": "Cumul croissant en % : 88 ÷ 400 = 22 %. Cumul décroissant en % : 52 ÷ 400 = 13 %. Acheteurs potentiels : 100 − (22 + 13) = 65 % ✓. En effectifs : 400 − (88 + 52) = 260 personnes, soit aussi 65 %.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fromagerie produit 4 000 kg de fromage frais à 5,000 D le kilo et 2 000 kg de fromage affiné à 8,000 D le kilo. Une taxe de 360 D sur ses déchets est répartie entre les deux fromages proportionnellement aux quantités. Quelle part de la taxe supporte le fromage affiné, en D ?",
+      "answerKey": {
+        "value": 120,
+        "unit": "D"
+      },
+      "explanation": "Quantité totale : 4 000 + 2 000 = 6 000 kg. Taxe par kilo : 360 ÷ 6 000 = 0,060 D. Part du fromage affiné : 2 000 × 0,060 = 120 D ✓. Le fromage frais en supporte 240 D, et 120 + 240 = 360 D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur le marché des yaourts, la consommation totale augmente de 12 % alors que les ventes d'une laiterie n'augmentent que de 5 %. Que devient la part de marché de la laiterie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle diminue, car ses ventes progressent moins vite que le marché"
+        },
+        {
+          "id": "b",
+          "text": "Elle augmente, car ses ventes progressent malgré tout"
+        },
+        {
+          "id": "c",
+          "text": "Elle reste stable, car ses ventes progressent elles aussi"
+        },
+        {
+          "id": "d",
+          "text": "Elle ne peut pas être connue sans les ventes de chaque concurrent"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La part est le rapport ventes ÷ marché total. Le numérateur est multiplié par 1,05 et le dénominateur par 1,12 : le rapport baisse. Il n'est pas nécessaire de connaître chaque concurrent, la hausse du marché total suffit.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre le calcul de la marge totale prévisionnelle d'une politique de distribution.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer la quantité de chaque canal : ventes prévues × pourcentage du canal"
+        },
+        {
+          "id": "b",
+          "text": "Multiplier chaque quantité par la marge unitaire du canal"
+        },
+        {
+          "id": "c",
+          "text": "Relever les ventes prévues totales et leur répartition en % entre les canaux"
+        },
+        {
+          "id": "d",
+          "text": "Additionner les marges des canaux pour obtenir la marge totale prévisionnelle"
+        },
+        {
+          "id": "e",
+          "text": "Classer les canaux par marge totale et juger la politique envisagée"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "a",
+          "b",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On part des données : total prévu et répartition. Les quantités par canal en découlent, puis les marges par canal, qu'on additionne. Le classement vient en dernier, car il compare des marges totales et non des marges unitaires.",
+      "difficulty": 2
+    }
+  ]
+}
