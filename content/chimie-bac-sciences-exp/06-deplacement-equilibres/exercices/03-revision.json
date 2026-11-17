@@ -1,0 +1,168 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Déplacement des équilibres",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associer chaque perturbation, appliquée seule à un système initialement en équilibre, à la réponse du système.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Hausse de pression à température constante"
+        },
+        {
+          "id": "l2",
+          "text": "Baisse de température à pression constante"
+        },
+        {
+          "id": "l3",
+          "text": "Ajout d'un produit à température et volume constants"
+        },
+        {
+          "id": "l4",
+          "text": "Ajout d'un catalyseur"
+        },
+        {
+          "id": "r1",
+          "text": "La réaction qui diminue la quantité de matière gazeuse"
+        },
+        {
+          "id": "r2",
+          "text": "La réaction exothermique"
+        },
+        {
+          "id": "r3",
+          "text": "La réaction qui consomme ce produit"
+        },
+        {
+          "id": "r4",
+          "text": "Aucun déplacement de l'équilibre"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Une hausse de pression fait se produire la réaction qui diminue n_g ; une baisse de température, la réaction exothermique, qui tend à élever la température ; l'ajout d'un produit, la réaction qui le consomme, donc la réaction inverse ; le catalyseur est un facteur cinétique : il n'y a aucun déplacement, l'équilibre est seulement atteint plus vite.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "La courbe donne le taux d'avancement final de la décomposition N₂O₄(g) ⇄ 2 NO₂(g), à pression constante, en fonction de la température.\n\n<svg viewBox=\"0 0 340 236\"><title>Taux d'avancement final de la décomposition de N₂O₄ en fonction de la température</title><line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"330\" y=\"206\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">θ (°C)</text><text x=\"60\" y=\"12\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">τ<tspan dy=\"3\" font-size=\"8\">f</tspan></text><line x1=\"108.4\" y1=\"26\" x2=\"108.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"108.4\" y=\"204\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">25</text><line x1=\"162.8\" y1=\"26\" x2=\"162.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"162.8\" y=\"204\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">50</text><line x1=\"217.2\" y1=\"26\" x2=\"217.2\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"217.2\" y=\"204\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">75</text><line x1=\"271.6\" y1=\"26\" x2=\"271.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"271.6\" y=\"204\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">100</text><line x1=\"54\" y1=\"157.2\" x2=\"326\" y2=\"157.2\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"161.2\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,2</text><line x1=\"54\" y1=\"124.4\" x2=\"326\" y2=\"124.4\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"128.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,4</text><line x1=\"54\" y1=\"91.6\" x2=\"326\" y2=\"91.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"95.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,6</text><line x1=\"54\" y1=\"58.8\" x2=\"326\" y2=\"58.8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"62.8\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,8</text><line x1=\"54\" y1=\"26\" x2=\"326\" y2=\"26\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"30\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1,0</text><polyline points=\"108.4,157.2 162.8,116.2 217.2,75.2 271.6,42.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"108.4\" cy=\"157.2\" r=\"3.5\" fill=\"#0f6e56\"/><circle cx=\"162.8\" cy=\"116.2\" r=\"3.5\" fill=\"#0f6e56\"/><circle cx=\"217.2\" cy=\"75.2\" r=\"3.5\" fill=\"#0f6e56\"/><circle cx=\"271.6\" cy=\"42.4\" r=\"3.5\" fill=\"#0f6e56\"/></svg>\n\nOn introduit 0,40 mol de N₂O₄ pur dans une enceinte fermée à 75 °C, sous la pression constante de la courbe. Calculer la quantité de NO₂ à l'équilibre, en mol (à 10⁻² près).",
+      "answerKey": {
+        "value": 0.56,
+        "tolerance": 0.03
+      },
+      "explanation": "On lit sur la courbe τ_f ≈ 0,70 à 75 °C. N₂O₄ est le seul réactif : x_max = 0,40 mol, donc x_f = τ_f × x_max = 0,70 × 0,40 = 0,28 mol. Le coefficient de NO₂ vaut 2 : n(NO₂) = 2·x_f = 0,56 mol ✓. Le résultat 0,28 oublie ce coefficient 2. La courbe croît avec la température : la décomposition est endothermique.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Après un ajout de réactif à température constante, le système en équilibre évolue dans le sens direct. Que vaut la fonction des concentrations Π quand le nouvel équilibre est atteint ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exactement K, la valeur qu'elle avait avant l'ajout"
+        },
+        {
+          "id": "b",
+          "text": "Une valeur inférieure à K, car l'ajout a fait baisser Π"
+        },
+        {
+          "id": "c",
+          "text": "Une valeur supérieure à K, car les produits sont plus nombreux"
+        },
+        {
+          "id": "d",
+          "text": "Une valeur qui dépend de la quantité de réactif ajouté"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "À un équilibre, Π est égale à K ; or K ne dépend que de la température, qui n'a pas changé : Π redevient exactement égale à la même valeur K qu'avant l'ajout ✓. Juste après l'ajout, Π était inférieure à K, ce qui expliquait le sens direct, mais l'évolution l'a ramenée à K. La composition du nouvel équilibre diffère de l'ancienne, la valeur de K non : elle ne dépend pas de la quantité ajoutée.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Pour A(g) ⇄ B(g) + C(g), quelles observations établissent que la réaction directe est endothermique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "K passe de 0,10 à 0,45 quand la température passe de 300 K à 400 K"
+        },
+        {
+          "id": "b",
+          "text": "τ_f passe de 0,40 à 0,25 quand la température augmente, à pression constante"
+        },
+        {
+          "id": "c",
+          "text": "En chauffant à pression constante, la quantité de B à l'équilibre augmente"
+        },
+        {
+          "id": "d",
+          "text": "Une hausse de pression à température constante fait diminuer la quantité de B"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Une constante K qui croît avec la température ✓ et une quantité de produit qui augmente quand on chauffe ✓ montrent que la hausse de température favorise la réaction directe : celle-ci est endothermique. Un τ_f qui diminue quand la température augmente indique l'inverse : réaction directe exothermique. L'effet d'une hausse de pression (ici la réaction inverse, 1 mol de gaz contre 2) renseigne sur n_g, pas sur le caractère énergétique.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une enceinte fermée contient 0,30 mol de COCl₂(g) pur, qui se décompose selon COCl₂ ⇄ CO + Cl₂. À l'équilibre, la quantité totale de gaz vaut 0,45 mol. Calculer la quantité de COCl₂ restant, en mol (à 10⁻² près).",
+      "answerKey": {
+        "value": 0.15,
+        "tolerance": 0.005
+      },
+      "explanation": "Au tableau d'avancement, n(COCl₂) = 0,30 − x_f et n(CO) = n(Cl₂) = x_f, donc la quantité totale de gaz vaut 0,30 + x_f. Avec 0,45 mol, x_f = 0,15 mol, puis n(COCl₂) = 0,30 − 0,15 = 0,15 mol ✓, ce qui correspond à τ_f = 0,15/0,30 = 0,50. Le résultat 0,30 oublie que COCl₂ a réagi, et 0,45 est la quantité totale de gaz, pas celle de COCl₂.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La synthèse industrielle de NH₃, exothermique dans le sens direct, se fait vers 450 °C alors qu'une température plus basse donnerait un meilleur taux d'avancement final. Quelle en est la raison ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aux basses températures, la réaction directe devient endothermique"
+        },
+        {
+          "id": "b",
+          "text": "Aux basses températures, la loi de modération ne s'applique plus"
+        },
+        {
+          "id": "c",
+          "text": "À 450 °C, le catalyseur fait augmenter le taux d'avancement final"
+        },
+        {
+          "id": "d",
+          "text": "Aux basses températures, l'équilibre est atteint trop lentement"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À basse température, la réaction est très lente : l'équilibre ne serait atteint qu'au bout d'un temps beaucoup trop long, d'où le compromis vers 450 °C avec un catalyseur ✓. Le caractère exothermique de la réaction directe ne dépend pas de la température choisie. La loi de modération s'applique à toute température, d'où l'avantage d'une basse température sur le rendement. Quant au catalyseur, il accélère la réaction sans changer le taux d'avancement final.",
+      "difficulty": 2
+    }
+  ]
+}

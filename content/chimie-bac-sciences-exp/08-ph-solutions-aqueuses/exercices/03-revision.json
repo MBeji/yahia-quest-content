@@ -1,0 +1,174 @@
+{
+  "title": "⭐⭐ Révision (type examen) : pH des solutions aqueuses",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associer chaque solution (à 25 °C, ions de l'eau négligeables) à la relation qui donne son pH.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Acide fort de concentration C"
+        },
+        {
+          "id": "l2",
+          "text": "Base forte de concentration C"
+        },
+        {
+          "id": "l3",
+          "text": "Acide faible faiblement ionisé"
+        },
+        {
+          "id": "l4",
+          "text": "Base faible faiblement ionisée"
+        },
+        {
+          "id": "r1",
+          "text": "pH = −log C"
+        },
+        {
+          "id": "r2",
+          "text": "pH = 14 + log C"
+        },
+        {
+          "id": "r3",
+          "text": "pH = ½ (pKₐ − log C)"
+        },
+        {
+          "id": "r4",
+          "text": "pH = ½ (14 + pKₐ + log C)"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Un acide fort donne [H₃O⁺] = C, donc pH = −log C. Une base forte donne [OH⁻] = C, d'où pH = 14 + log C. Un acide faible faiblement ionisé suit pH = ½ (pKₐ − log C). Une base faible faiblement ionisée suit pH = ½ (14 + pKₐ + log C), où pKₑ = 14 et où le pKₐ est celui de son acide conjugué.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un produit de nettoyage est une solution d'hydroxyde de sodium dont le pH, mesuré à 25 °C, est 11,60. Quelle est sa concentration C, en 10⁻³ mol·L⁻¹, arrondie au dixième ?",
+      "answerKey": {
+        "value": 4.0,
+        "tolerance": 0.1,
+        "unit": "10⁻³ mol·L⁻¹"
+      },
+      "explanation": "NaOH est une base forte et pH > 8 : C = [OH⁻] = 10^(pH − 14) = 10^(−2,40) = 10⁻³ × 10^(0,60) = 4,0·10⁻³ mol·L⁻¹, soit 4 en unités de 10⁻³ mol·L⁻¹ ✓. Utiliser C = 10⁻ᵖᴴ, formule de l'acide fort, donnerait 2,5·10⁻¹² mol·L⁻¹, valeur absurde pour une solution à ce pH.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À 25 °C, pour laquelle de ces solutions de concentration 1,0·10⁻² mol·L⁻¹ la relation pH = −log C est-elle valable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chlorure d'ammonium NH₄Cl"
+        },
+        {
+          "id": "b",
+          "text": "Acide éthanoïque CH₃CO₂H"
+        },
+        {
+          "id": "c",
+          "text": "Acide hypochloreux HClO"
+        },
+        {
+          "id": "d",
+          "text": "Acide chlorhydrique HCl"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Seul l'acide chlorhydrique, acide fort, réagit totalement avec l'eau : [H₃O⁺] = C, donc pH = −log C = 2,00 ✓. Les trois autres sont des acides faibles : leur réaction avec l'eau est limitée, [H₃O⁺] est inférieure à C et leur pH est supérieur à 2, ce qui interdit la relation pH = −log C.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À 25 °C, une solution de pH 6,8 est acide"
+        },
+        {
+          "id": "b",
+          "text": "À 60 °C (pKₑ = 13), une solution de pH 6,8 est basique"
+        },
+        {
+          "id": "c",
+          "text": "Une solution neutre a un pH égal à 7 à toute température"
+        },
+        {
+          "id": "d",
+          "text": "L'eau pure est neutre à toute température"
+        },
+        {
+          "id": "e",
+          "text": "À 60 °C, le pH de l'eau pure est supérieur à 7"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "À 25 °C le seuil est ½ pKₑ = 7 et 6,8 < 7 : acide ✓. À 60 °C le seuil est ½ pKₑ = 6,5 et 6,8 > 6,5 : basique ✓. L'eau pure vérifie [H₃O⁺] = [OH⁻] à toute température : elle est neutre ✓. Un pH égal à 7 n'est le critère de neutralité qu'à 25 °C. Le pH de l'eau pure à 60 °C vaut 6,5, inférieur à 7, car pKₑ y est plus petit.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "À 25 °C, on prépare une solution d'acide éthanoïque (pKₐ = 4,75) de concentration 5,0·10⁻² mol·L⁻¹. Calculer son pH, arrondi au centième, la relation étant supposée valable.",
+      "answerKey": {
+        "value": 3.03,
+        "tolerance": 0.02
+      },
+      "explanation": "L'acide éthanoïque est un acide faible : pH = ½ (pKₐ − log C) = ½ (4,75 + 1,30) = 3,03 ✓. Contrôle : τ_f = 10^(3,03 − 4,75) = 1,9·10⁻² < 0,05, la relation est valable. Avec pH = −log C on trouverait 1,30, valeur d'un acide fort de même concentration.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Trois solutions de même concentration, 1,0·10⁻² mol·L⁻¹, sont préparées à 25 °C : benzoate de sodium (pKₐ du couple acide/base : 4,2), éthanoate de sodium (4,75) et ammoniac (couple NH₄⁺/NH₃ : 9,25). Laquelle a le pH le plus élevé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le benzoate de sodium"
+        },
+        {
+          "id": "b",
+          "text": "L'éthanoate de sodium"
+        },
+        {
+          "id": "c",
+          "text": "La solution d'ammoniac NH₃"
+        },
+        {
+          "id": "d",
+          "text": "Aucune : même concentration, donc même pH"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour des bases faibles de même C, pH = ½ (14 + pKₐ + log C) augmente avec le pKₐ du couple : l'ammoniac (pKₐ = 9,25) donne environ 10,6, l'éthanoate (4,75) environ 8,4 et le benzoate (4,2) environ 8,1 ✓. La concentration seule ne fixe pas le pH : la force de la base compte aussi.",
+      "difficulty": 2
+    }
+  ]
+}

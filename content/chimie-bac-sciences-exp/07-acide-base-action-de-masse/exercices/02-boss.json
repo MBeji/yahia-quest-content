@@ -1,0 +1,123 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des acides et des bases",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Le couple HBr/Br⁻ a un pKₐ de −9 à 25 °C. Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "HBr est un acide fort et Br⁻ est une base forte"
+        },
+        {
+          "id": "b",
+          "text": "HBr est un acide fort et Br⁻ est une base inerte"
+        },
+        {
+          "id": "c",
+          "text": "HBr est un acide faible et Br⁻ est une base faible"
+        },
+        {
+          "id": "d",
+          "text": "HBr est un acide inerte et Br⁻ est une base forte"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme −9 < −1,74, HBr est plus fort que H₃O⁺ : c'est un acide fort. Son pK_b est 14 − (−9) = 23, supérieur à 15,74 : Br⁻ est une base inerte ✓. Un acide fort et une base forte ne peuvent pas former un couple, car Kₐ·K_b = Kₑ impose des forces qui varient en sens inverse. Un pKₐ aussi négatif exclut aussi « faible » et « inerte » pour l'acide.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour NH₄⁺ + CN⁻ ⇄ NH₃ + HCN, un mélange contient [NH₄⁺] = 0,40 ; [CN⁻] = 0,050 ; [NH₃] = 0,10 ; [HCN] = 0,010 (en mol·L⁻¹). Calculer la fonction des concentrations Π, sans unité.",
+      "answerKey": {
+        "value": 0.05,
+        "tolerance": 0.002
+      },
+      "explanation": "Π = [NH₃]·[HCN] / ([NH₄⁺]·[CN⁻]) = (0,10 × 0,010) / (0,40 × 0,050) = 1,0·10⁻³ / 2,0·10⁻² = 0,050, soit 0,05 ✓. L'eau, solvant, n'apparaît pas. Comparée à K = 10^(9,30 − 9,25) = 1,1, cette valeur est inférieure : le système évoluerait dans le sens direct.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "On donne à 25 °C : pKₐ(HNO₃/NO₃⁻) = −2 ; pKₐ(CH₃COOH/CH₃COO⁻) = 4,75 ; pKₐ(NH₄⁺/NH₃) = 9,25. Quelles affirmations sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CH₃COOH est un acide plus fort que NH₄⁺"
+        },
+        {
+          "id": "b",
+          "text": "NH₃ est une base plus forte que CH₃COO⁻"
+        },
+        {
+          "id": "c",
+          "text": "NO₃⁻ est une base forte"
+        },
+        {
+          "id": "d",
+          "text": "Le pK_b du couple NH₄⁺/NH₃ vaut 4,75"
+        },
+        {
+          "id": "e",
+          "text": "NH₄⁺ est un acide fort, car son pKₐ est positif"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "CH₃COOH a le plus petit pKₐ des deux : c'est l'acide le plus fort ✓. Le pKₐ de NH₄⁺ est plus grand que celui de CH₃COOH, donc NH₃ est la base la plus forte des deux ✓. pK_b = 14 − 9,25 = 4,75 ✓. NO₃⁻ est la base conjuguée d'un acide fort : son pK_b vaut 16, supérieur à 15,74, c'est une base inerte et non forte. Enfin un pKₐ positif ne suffit pas à rendre un acide fort : NH₄⁺, de pKₐ 9,25, est un acide faible.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une solution d'un acide HA, de concentration C = 5,0·10⁻² mol·L⁻¹, a un pH de 3,00 à 25 °C. En supposant [HA] ≈ C, calculer le pKₐ du couple HA/A⁻, arrondi au centième.",
+      "answerKey": {
+        "value": 4.7,
+        "tolerance": 0.03
+      },
+      "explanation": "[H₃O⁺] = 10⁻³ = 1,0·10⁻³ mol·L⁻¹ et [A⁻] = [H₃O⁺]. Kₐ = [H₃O⁺]·[A⁻] / [HA] ≈ (1,0·10⁻³)² / 5,0·10⁻² = 2,0·10⁻⁵, d'où pKₐ = −log(2,0·10⁻⁵) = 4,70, soit 4,7 ✓. Le taux d'avancement vaut 2 % : l'approximation [HA] ≈ C est justifiée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les pKₐ à 25 °C sont : HNO₂/NO₂⁻ 3,30 ; HClO/ClO⁻ 7,50 ; NH₄⁺/NH₃ 9,25 ; HCN/CN⁻ 9,30. À partir de quantités égales de réactifs, laquelle de ces réactions est pratiquement totale (K > 10⁴) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NH₄⁺ + CN⁻ ⇄ NH₃ + HCN"
+        },
+        {
+          "id": "b",
+          "text": "HClO + CN⁻ ⇄ ClO⁻ + HCN"
+        },
+        {
+          "id": "c",
+          "text": "HNO₂ + CN⁻ ⇄ NO₂⁻ + HCN"
+        },
+        {
+          "id": "d",
+          "text": "NH₄⁺ + ClO⁻ ⇄ NH₃ + HClO"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour HNO₂ + CN⁻ ⇄ NO₂⁻ + HCN, log K = pKₐ(HCN) − pKₐ(HNO₂) = 9,30 − 3,30 = 6,00, soit K = 10⁶ > 10⁴ ✓. Pour NH₄⁺ + CN⁻ ⇄ NH₃ + HCN, log K = 9,30 − 9,25 = 0,05 : K = 1,1, réaction moyennement limitée. Pour HClO + CN⁻ ⇄ ClO⁻ + HCN, log K = 9,30 − 7,50 = 1,80 : K = 63, supérieure à 1 mais trop faible pour une réaction pratiquement totale. Pour NH₄⁺ + ClO⁻ ⇄ NH₃ + HClO, log K = 7,50 − 9,25 = −1,75 : K = 0,018, la réaction directe est très limitée.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour HNO₂ + ClO⁻ ⇄ NO₂⁻ + HClO, on donne pKₐ(HNO₂/NO₂⁻) = 3,30 et pKₐ(HClO/ClO⁻) = 7,50 à 25 °C. On mélange HNO₂ et ClO⁻ de sorte que [HNO₂]₀ = [ClO⁻]₀ = 0,050 mol·L⁻¹. Calculer [HNO₂] à l'équilibre, en 10⁻⁴ mol·L⁻¹, à 0,1 près.",
+      "answerKey": {
+        "value": 3.9,
+        "tolerance": 0.15
+      },
+      "explanation": "log K = pKₐ(HClO) − pKₐ(HNO₂) = 7,50 − 3,30 = 4,20, donc K = 10⁴·²⁰ ≈ 1,6·10⁴ et √K ≈ 126. Les réactifs sont en quantités égales : [HNO₂] = [ClO⁻] = y et [NO₂⁻] = [HClO] = 0,050 − y. K = ((0,050 − y) / y)², d'où (0,050 − y) / y = 126 et y = 0,050 / 127 ≈ 3,9·10⁻⁴ mol·L⁻¹, soit 3,9 en 10⁻⁴ mol·L⁻¹ ✓. Avec l'approximation [NO₂⁻] ≈ 0,050, on trouve 4,0 : le résultat est le même à l'incertitude près.",
+      "difficulty": 3
+    }
+  ]
+}

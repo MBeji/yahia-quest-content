@@ -1,0 +1,111 @@
+{
+  "title": "Test de compréhension ⭐ : Réactions acide-base",
+  "questions": [
+    {
+      "prompt": "Dans la réaction H₂S + NH₃ ⇄ HS⁻ + NH₄⁺, quels sont les deux couples acide/base mis en jeu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "H₂S/HS⁻ et NH₄⁺/NH₃"
+        },
+        {
+          "id": "b",
+          "text": "H₂S/HS⁻ et H₃O⁺/H₂O"
+        },
+        {
+          "id": "c",
+          "text": "H₂S/NH₃ et HS⁻/NH₄⁺"
+        },
+        {
+          "id": "d",
+          "text": "H₂S/NH₄⁺ et HS⁻/NH₃"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "H₂S perd un ion H⁺ et devient HS⁻ : c'est le couple H₂S/HS⁻. NH₃ capte cet ion H⁺ et devient NH₄⁺ : c'est le couple NH₄⁺/NH₃ ✓. Un couple réunit deux entités qui ne diffèrent que d'un ion H⁺ : les groupements « H₂S avec NH₃ » ou « H₂S avec NH₄⁺ » mélangent des espèces de couples différents. Quant au couple H₃O⁺/H₂O, il n'intervient pas : l'équation ne contient aucune molécule d'eau.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À 25 °C, une solution a [H₃O⁺] = 2,0·10⁻⁹ mol·L⁻¹. Quelle est sa concentration en ions OH⁻ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,0·10⁻²³ mol·L⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "2,0·10⁻⁹ mol·L⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "5,0·10⁻⁶ mol·L⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "2,0·10⁻⁵ mol·L⁻¹"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À l'équilibre, [H₃O⁺]·[OH⁻] = Kₑ = 1,0·10⁻¹⁴ à 25 °C, donc [OH⁻] = 1,0·10⁻¹⁴ / 2,0·10⁻⁹ = 5,0·10⁻⁶ mol·L⁻¹ ✓. La valeur 2,0·10⁻²³ s'obtient en multipliant Kₑ par [H₃O⁺] au lieu de diviser. La valeur 2,0·10⁻⁹ suppose [OH⁻] = [H₃O⁺], ce qui n'est vrai que dans l'eau pure. Enfin 2,0·10⁻⁵ vient d'un calcul où l'on divise les puissances de 10 mais où l'on oublie d'inverser le coefficient 2,0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour HCOOH + NH₃ ⇄ HCOO⁻ + NH₄⁺, on donne K = 3,2·10⁵ à 25 °C. Un mélange contient [HCOOH] = [NH₃] = 0,10 mol·L⁻¹ et [HCOO⁻] = [NH₄⁺] = 0,20 mol·L⁻¹. Que se passe-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sens inverse, car Π = 4,0 est supérieure à 1"
+        },
+        {
+          "id": "b",
+          "text": "Sens inverse, car K est très grande"
+        },
+        {
+          "id": "c",
+          "text": "Sens direct, car les produits sont plus concentrés que les réactifs"
+        },
+        {
+          "id": "d",
+          "text": "Sens direct, car Π = 4,0 est inférieure à K"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Π = [HCOO⁻]·[NH₄⁺] / ([HCOOH]·[NH₃]) = (0,20 × 0,20) / (0,10 × 0,10) = 4,0. Comme Π < K = 3,2·10⁵, la réaction directe se produit ✓. Comparer Π à 1 n'a pas de sens : l'équilibre est atteint quand Π = K. Ni une valeur de K très grande ni des produits plus concentrés que les réactifs ne fixent à eux seuls le sens : seule la comparaison de Π et de K le fait.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le couple HCOOH/HCOO⁻ a un pKₐ de 3,75 à 25 °C. Quel est le pK_b de l'ion méthanoate HCOO⁻ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17,75"
+        },
+        {
+          "id": "b",
+          "text": "10,25"
+        },
+        {
+          "id": "c",
+          "text": "3,75"
+        },
+        {
+          "id": "d",
+          "text": "−3,75"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour un couple, pKₐ + pK_b = pKₑ = 14 à 25 °C, donc pK_b = 14 − 3,75 = 10,25 ✓. La valeur 17,75 vient d'une addition 14 + 3,75 au lieu d'une soustraction. La valeur 3,75 confond le pK_b de la base avec le pKₐ de son acide. La valeur −3,75 oublie la constante 14 et change simplement le signe.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour HCOOH + ClO⁻ ⇄ HCOO⁻ + HClO, on donne pKₐ(HCOOH/HCOO⁻) = 3,75 et pKₐ(HClO/ClO⁻) = 7,50 à 25 °C. Calculer la constante K de cette réaction, sans unité, arrondie à la centaine.",
+      "answerKey": {
+        "value": 5600,
+        "tolerance": 100
+      },
+      "explanation": "L'acide à gauche est HCOOH (pKₐ₁ = 3,75) et l'acide à droite est HClO (pKₐ₂ = 7,50). K = Kₐ₁ / Kₐ₂, donc log K = pKₐ₂ − pKₐ₁ = 7,50 − 3,75 = 3,75 et K = 10³·⁷⁵ ≈ 5,6·10³, soit 5600 à la centaine près ✓. L'inversion du rapport donnerait 10⁻³·⁷⁵ ≈ 1,8·10⁻⁴, ce qui placerait à tort l'acide le plus fort à droite.",
+      "difficulty": 2
+    }
+  ]
+}
