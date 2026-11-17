@@ -66,27 +66,27 @@
       "difficulty": 2
     },
     {
-      "prompt": "Pour régler à 100 MHz, au lieu de 80 MHz, la fréquence N_0 de l'oscillateur (L, C) d'un émetteur FM, L restant constante, par quel facteur faut-il multiplier C ? On donne N_0 = 1/(2π√(LC)).",
+      "prompt": "Dans l'oscillateur (L, C) d'un émetteur FM, la capacité de la diode varicap diminue quand la tension u(t) qui la commande augmente. Sachant que N_p = 1/(2π√(LC)), comment évolue la fréquence N_p quand u(t) passe de −U_m à +U_m ?",
       "options": [
         {
           "id": "a",
-          "text": "0,64"
+          "text": "Elle augmente, car N_p varie comme 1/√C"
         },
         {
           "id": "b",
-          "text": "0,80"
+          "text": "Elle diminue, car N_p varie comme √C"
         },
         {
           "id": "c",
-          "text": "1,25"
+          "text": "Elle reste égale à N_0 : seule l'amplitude varie"
         },
         {
           "id": "d",
-          "text": "1,56"
+          "text": "Elle varie entre N_0 − N et N_0 + N"
         }
       ],
       "correctOption": "a",
-      "explanation": "N_0 est proportionnelle à 1/√C, donc C est proportionnelle à 1/N_0² et C'/C = (80/100)² = 0,64 ✓ : une fréquence plus haute exige une capacité plus petite. La valeur 0,80 oublie le carré. Les valeurs 1,25 et 1,56 inversent le sens de variation.",
+      "explanation": "C diminue quand u(t) augmente, et N_p est proportionnelle à 1/√C : N_p augmente, de N_0 − k·U_m à N_0 + k·U_m ✓. Croire N_p proportionnelle à √C inverse le sens ; une amplitude qui varie décrit l'AM ; et l'excursion vaut k·U_m, non N, qui n'est que la vitesse d'oscillation de N_p.",
       "difficulty": 2
     },
     {
