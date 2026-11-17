@@ -1,0 +1,148 @@
+{
+  "title": "⭐ Exercice : Premiers pas — domaines, facteurs et calculs simples",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque notion à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Besoin"
+        },
+        {
+          "id": "l2",
+          "text": "Motivation"
+        },
+        {
+          "id": "l3",
+          "text": "Perception"
+        },
+        {
+          "id": "l4",
+          "text": "Prix psychologique"
+        },
+        {
+          "id": "r1",
+          "text": "Sentiment de manque lié à la nature ou à la vie sociale, qui crée une demande"
+        },
+        {
+          "id": "r2",
+          "text": "Énergie qui pousse l'individu à agir pour satisfaire un besoin"
+        },
+        {
+          "id": "r3",
+          "text": "Lecture des informations perçues, comme un prix pris pour un signe de qualité"
+        },
+        {
+          "id": "r4",
+          "text": "Prix accepté par le plus grand nombre de consommateurs potentiels"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le besoin est un manque qui crée une demande. La motivation est l'énergie qui pousse à agir. La perception lit les informations de l'environnement, notamment le prix. Le prix psychologique est celui que le plus grand nombre de consommateurs potentiels accepte.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "La boutique Dar Zitoun réalise 270 000 D de ventes, alors que l'ensemble du marché de son produit représente 1 500 000 D. Quelle part du marché détient-elle, en % ?",
+      "answerKey": {
+        "value": 18,
+        "unit": "%"
+      },
+      "explanation": "Le marché de 1 500 000 D comprend déjà les ventes de la boutique. Part de marché : 270 000 ÷ 1 500 000 = 0,18, soit 18 % ✓.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une jeune entreprise cherche les besoins à exploiter pour lancer un produit. Lesquels doit-elle retenir en priorité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ceux qui ne sont pas satisfaits et sont assez intenses pour pousser à agir"
+        },
+        {
+          "id": "b",
+          "text": "Ceux qui sont déjà bien satisfaits par plusieurs concurrents et peu intenses"
+        },
+        {
+          "id": "c",
+          "text": "Ceux qui sont déjà satisfaits mais assez intenses pour pousser à acheter encore"
+        },
+        {
+          "id": "d",
+          "text": "Ceux qui ne sont pas satisfaits mais trop faibles pour inciter à agir"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un besoin intéresse l'entreprise s'il présente deux caractéristiques : ne pas être satisfait et atteindre une intensité suffisante, car seuls les besoins les plus intenses incitent à l'action. Il manque l'une ou l'autre dans chacune des trois autres propositions.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle phrase distingue correctement un canal et un circuit de distribution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un canal est un chemin du producteur au consommateur ; un circuit rassemble plusieurs canaux"
+        },
+        {
+          "id": "b",
+          "text": "Un circuit est un chemin unique du producteur au consommateur ; un canal rassemble des circuits"
+        },
+        {
+          "id": "c",
+          "text": "Un canal désigne les concurrents d'un produit ; un circuit désigne ses consommateurs"
+        },
+        {
+          "id": "d",
+          "text": "Un canal est un magasin de détail ; un circuit est une chaîne de grossistes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le canal est le chemin que suit un produit du producteur au consommateur ; sa longueur est le nombre de ses intermédiaires. Le circuit est l'ensemble des canaux par lesquels s'écoule le bien. Concurrents et consommateurs relèvent d'autres domaines de l'étude.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un fabricant de ventilateurs écoule 320 appareils par un canal court, avec une marge de 14 D par appareil. Quelle marge totale ce canal rapporte-t-il, en D ?",
+      "answerKey": {
+        "value": 4480,
+        "unit": "D"
+      },
+      "explanation": "Marge totale du canal = marge unitaire × quantité vendue = 14 × 320 = 4 480 D ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une enquête auprès de 250 personnes porte sur le prix d'une chéchia. Pour chaque prix, réponses « trop cher » puis « mauvaise qualité » : 20 D : 0 et 100 ; 25 D : 15 et 80 ; 30 D : 35 et 45 ; 35 D : 70 et 25 ; 40 D : 130 et 0. Au prix de 35 D, combien de personnes n'achèteraient pas, par prix trop élevé ou par doute sur la qualité ?",
+      "answerKey": {
+        "value": 145,
+        "unit": "personnes"
+      },
+      "explanation": "Cumul croissant « trop cher » jusqu'à 35 D : 0 + 15 + 35 + 70 = 120. Cumul décroissant « mauvaise qualité » à partir de 35 D : 25 + 0 = 25. Refus : 120 + 25 = 145 ✓. Contrôle : il reste 250 − 145 = 105 acheteurs potentiels.",
+      "difficulty": 2
+    }
+  ]
+}

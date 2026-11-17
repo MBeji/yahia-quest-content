@@ -1,0 +1,86 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du directeur commercial",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Pour un lait aromatisé, une laiterie interroge 600 personnes. Prix en D : 1,200 ; 1,300 ; 1,400 ; 1,500 ; 1,600 ; 1,700 ; 1,800 ; 1,900. Réponses « trop cher » : 0, 6, 24, 60, 120, 180, 150, 60. Réponses « mauvaise qualité » : 180, 150, 110, 80, 50, 20, 10, 0. Quel pourcentage de l'échantillon accepte le prix psychologique (arrondi au centième) ?",
+      "answerKey": {
+        "value": 58.33,
+        "unit": "%",
+        "tolerance": 0.01
+      },
+      "explanation": "Cumuls croissants : 0, 6, 30, 90, 210, 390, 540, 600. Cumuls décroissants : 600, 420, 270, 160, 80, 30, 10, 0. Refus : 600, 426, 300, 250, 290, 420, 550, 600. Acheteurs potentiels : 0, 174, 300, 350, 310, 180, 50, 0. Le maximum, 350, est atteint à 1,500 D : 350 ÷ 600 = 58,33 % ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une marque de thé vend 150 000 D sur un marché total de 1 200 000 D, ses propres ventes comprises. L'année suivante, le marché total progresse de 8 % et les ventes de la marque de 20 %. Quelle est alors sa part de marché, en % (arrondie au centième) ?",
+      "answerKey": {
+        "value": 13.89,
+        "unit": "%",
+        "tolerance": 0.01
+      },
+      "explanation": "Ventes de la marque : 150 000 × 1,20 = 180 000 D. Marché total : 1 200 000 × 1,08 = 1 296 000 D. Part : 180 000 ÷ 1 296 000 = 0,13889, soit 13,89 % ✓. Elle passe de 12,5 % à 13,89 % : ses ventes progressent plus vite que le marché.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fabrique d'équipements écoule 700 appareils par an avec des marges unitaires de 62 D en canal court, 38 D en canal long et 30 D par réseau de revendeurs. Aujourd'hui la répartition est 80 %, 15 % et 5 %. La direction envisage 40 %, 20 % et 40 %. De combien la marge totale baisserait-elle, en D ?",
+      "answerKey": {
+        "value": 8680,
+        "unit": "D"
+      },
+      "explanation": "Répartition actuelle : 560 × 62 = 34 720 D ; 105 × 38 = 3 990 D ; 35 × 30 = 1 050 D ; total 39 760 D. Répartition envisagée : 280 × 62 = 17 360 D ; 140 × 38 = 5 320 D ; 280 × 30 = 8 400 D ; total 31 080 D. Baisse : 39 760 − 31 080 = 8 680 D ✓. La politique envisagée est défavorable.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur un marché de 4 000 000 D, ses propres ventes comprises, une marque détient 12,5 % de part. L'an prochain, le marché total progressera de 10 %. De combien la marque doit-elle augmenter ses ventes pour atteindre 15,5 % de part, en D ?",
+      "answerKey": {
+        "value": 182000,
+        "unit": "D"
+      },
+      "explanation": "Ventes actuelles : 4 000 000 × 0,125 = 500 000 D. Marché futur : 4 000 000 × 1,10 = 4 400 000 D. Ventes visées : 4 400 000 × 0,155 = 682 000 D. Hausse : 682 000 − 500 000 = 182 000 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une cristallerie vend 300 000 D, 330 000 D puis 360 000 D sur trois années, face à des marchés totaux de 2 000 000 D, 2 600 000 D puis 3 200 000 D. Quelle conclusion tire-t-on de ces chiffres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ses ventes montent mais sa position se dégrade, car le marché croît plus vite qu'elle"
+        },
+        {
+          "id": "b",
+          "text": "Sa position s'améliore, car ses ventes progressent chaque année"
+        },
+        {
+          "id": "c",
+          "text": "Sa position reste stable, car l'écart entre ses ventes d'une année à l'autre est régulier"
+        },
+        {
+          "id": "d",
+          "text": "Sa part augmente, car le marché total grandit chaque année"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Parts de marché : 300 000 ÷ 2 000 000 = 15 %, puis 330 000 ÷ 2 600 000 = 12,69 %, puis 360 000 ÷ 3 200 000 = 11,25 %. La part baisse chaque année alors que les ventes montent : le marché grandit plus vite que l'entreprise. L'augmentation des ventes seule ne mesure pas la position concurrentielle. La croissance du marché, sans hausse aussi forte des ventes, fait au contraire baisser la part.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une entreprise fabrique 9 000 articles A et 6 000 articles B. Après répartition d'une taxe au prorata des quantités, le coût définitif d'un article A est de 4,045 D, au lieu de 4,000 D auparavant. Quel est le montant de la taxe, en D ?",
+      "answerKey": {
+        "value": 675,
+        "unit": "D"
+      },
+      "explanation": "Taxe par article : 4,045 − 4,000 = 0,045 D. Quantité totale : 9 000 + 6 000 = 15 000 articles. Montant de la taxe : 0,045 × 15 000 = 675 D ✓. Contrôle : 675 ÷ 15 000 = 0,045.",
+      "difficulty": 3
+    }
+  ]
+}

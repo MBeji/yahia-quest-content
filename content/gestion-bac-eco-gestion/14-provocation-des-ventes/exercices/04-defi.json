@@ -1,0 +1,104 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du directeur commercial",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le fabricant de mobilier de jardin Dar Jlass a un coût de revient de 63 D HT par chaise. Il veut que sa marge représente 30 % du prix de vente HT. Quel prix de vente HT doit-il fixer (en D) ?",
+      "answerKey": {
+        "value": 90,
+        "unit": "D"
+      },
+      "explanation": "Prix = 63 + 0,30 × prix, donc 0,70 × prix = 63 et prix = 63 ÷ 0,70 = 90 D ✓. Contrôle : marge = 27 D et 27 ÷ 90 = 30 %. Calculer 63 × 1,30 = 81,90 D serait appliquer le pourcentage au coût.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les parfums Nesrine espèrent vendre 5 000 flacons. La charge variable est de 26 D par flacon. Les charges fixes sont de 56 000 D, auxquelles l'entreprise ajoute 14 000 D de publicité. Quel est le prix de vente unitaire minimum HT (en D) ?",
+      "answerKey": {
+        "value": 40,
+        "unit": "D"
+      },
+      "explanation": "Charges fixes = 56 000 + 14 000 = 70 000 D. Prix minimum = 26 + 70 000 ÷ 5 000 = 26 + 14 = 40 D ✓. Sans la publicité, il serait de 26 + 56 000 ÷ 5 000 = 37,20 D : l'effort publicitaire relève le plancher de 2,80 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un fabricant d'électroménager facture un four 117 D HT à un magasin, qui le vend 212,40 D TTC (TVA de 18 %). Quel est le taux de marque du magasin (en %) ?",
+      "answerKey": {
+        "value": 35,
+        "unit": "%"
+      },
+      "explanation": "Prix public HT = 212,40 ÷ 1,18 = 180 D. Marge du magasin = 180 − 117 = 63 D. Taux de marque = 63 ÷ 180 = 0,35, soit 35 % ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Trois canaux A, B et C sont notés de 1 à 5 sur la couverture (importance 4,5), l'animation (3,0) et le coût de distribution (2,0, où 5 signifie très bon). Couverture : A 4,0 ; B 4,4 ; C 3,0. Animation : A 3,0 ; B 3,4 ; C 4,8. Coût : A 5,0 ; B 1,5 ; C 4,0. Quel canal retiennent la méthode des critères, puis la méthode des scores ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Critères : A ; scores : A"
+        },
+        {
+          "id": "b",
+          "text": "Critères : B ; scores : A"
+        },
+        {
+          "id": "c",
+          "text": "Critères : B ; scores : C"
+        },
+        {
+          "id": "d",
+          "text": "Critères : C ; scores : C"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par les critères : sur la couverture, C est le moins bien noté et il est éliminé ; entre A et B, l'animation donne B (3,4 contre 3,0). Par les scores : A = 18 + 9 + 10 = 37 ; B = 19,8 + 10,2 + 3 = 33 ; C = 13,5 + 14,4 + 8 = 35,9, donc A. Les deux méthodes ne donnent pas toujours le même canal.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Coche toutes les affirmations exactes sur le prix de vente.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un taux de marque de 20 % sur un coût de 80 D donne un prix de 100 D"
+        },
+        {
+          "id": "b",
+          "text": "Un taux de marge de 20 % sur un coût de 80 D donne un prix de 100 D"
+        },
+        {
+          "id": "c",
+          "text": "Si les charges fixes baissent, le seuil de rentabilité baisse"
+        },
+        {
+          "id": "d",
+          "text": "Le prix minimum du point mort reste inchangé si la quantité espérée diminue"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Taux de marque de 20 % : prix = 80 ÷ 0,80 = 100 D. Taux de marge de 20 % : prix = 80 × 1,20 = 96 D, pas 100. Le seuil de rentabilité vaut charges fixes ÷ taux de MCV : si le numérateur baisse, le seuil baisse. Le prix minimum contient charges fixes ÷ quantité espérée : si la quantité diminue, ce terme augmente.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La chocolaterie Ennakhla vend une barre 12 D, avec 7,50 D de charge variable. Cette année : 120 000 barres vendues et 180 000 D de publicité, seules charges fixes. L'an prochain : ventes en quantités +7 %, prix inchangé, publicité majorée de 45 000 D. Quel est son résultat prévisionnel (en D) ?",
+      "answerKey": {
+        "value": 352800,
+        "unit": "D"
+      },
+      "explanation": "Quantité = 120 000 × 1,07 = 128 400 barres. MCV unitaire = 12 − 7,50 = 4,50 D ; MCV totale = 128 400 × 4,50 = 577 800 D. Charges fixes = 180 000 + 45 000 = 225 000 D. Résultat = 577 800 − 225 000 = 352 800 D ✓ (contre 360 000 D cette année : l'effort publicitaire ne se rentabilise pas tout à fait).",
+      "difficulty": 3
+    }
+  ]
+}

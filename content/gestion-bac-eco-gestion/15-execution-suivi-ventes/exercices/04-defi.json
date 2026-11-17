@@ -1,0 +1,123 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le contrôle de gestion commerciale",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Chez Tuniplast, l'année N compte 1 800 unités vendues, 1 200 commandes et 900 clients, pour 3 240 000 D HT de chiffre d'affaires et un taux de marque de 20 %. La garantie coûte 48 D par unité, l'installation 30 D par unité, la livraison 22 D par commande et l'assistance 14 D par client. Quel est le résultat global de l'année, en D ?",
+      "answerKey": {
+        "value": 468600,
+        "unit": "D"
+      },
+      "explanation": "Marge = 3 240 000 × 0,20 = 648 000 D. Charges : garantie 48 × 1 800 = 86 400 ; installation 30 × 1 800 = 54 000 ; livraison 22 × 1 200 = 26 400 ; assistance 14 × 900 = 12 600 ; total 179 400 D. Résultat = 648 000 − 179 400 = 468 600 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'enseigne Bahri applique un taux de marque de 24 %. En N-1 : chiffre d'affaires de 1 500 000 D HT, charges de suivi de 41 000 D. En N : 2 100 000 D HT et 163 000 D de charges. De combien le résultat global augmente-t-il, en D ?",
+      "answerKey": {
+        "value": 22000,
+        "unit": "D"
+      },
+      "explanation": "Résultat N-1 : 1 500 000 × 0,24 − 41 000 = 360 000 − 41 000 = 319 000 D. Résultat N : 2 100 000 × 0,24 − 163 000 = 504 000 − 163 000 = 341 000 D. Hausse : 341 000 − 319 000 = 22 000 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une enseigne dont le taux de marque est 28 %, une nouvelle politique ajoute 63 000 D de charges. De quelle hausse minimale de chiffre d'affaires HT a-t-elle besoin pour que la marge ajoutée couvre ces charges ?",
+      "options": [
+        {
+          "id": "b",
+          "text": "17 640 D, car 63 000 × 0,28"
+        },
+        {
+          "id": "a",
+          "text": "63 000 D, car la hausse égale les charges"
+        },
+        {
+          "id": "c",
+          "text": "80 640 D, car 63 000 × 1,28"
+        },
+        {
+          "id": "d",
+          "text": "225 000 D, car 63 000 ÷ 0,28"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La marge ajoutée vaut hausse × 0,28 et doit atteindre 63 000 D : hausse = 63 000 ÷ 0,28 = 225 000 D. Contrôle : 225 000 × 0,28 = 63 000 D. Les autres valeurs ignorent le taux, le multiplient au lieu de diviser, ou le traitent comme une majoration.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une cellule de préparation coûte 41 500 D par an. Les anomalies coûtaient 58 200 D en N-1 et coûtent 11 300 D en N. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non justifiée : les 41 500 D de charges dépassent les 11 300 D d'anomalies qui restent en N"
+        },
+        {
+          "id": "b",
+          "text": "Justifiée : l'économie de 46 900 D dépasse les 41 500 D de charges, soit un gain de 5 400 D"
+        },
+        {
+          "id": "c",
+          "text": "Justifiée : les anomalies de N-1, de 58 200 D, dépassent à elles seules les 41 500 D de charges"
+        },
+        {
+          "id": "d",
+          "text": "Justifiée : les anomalies cumulées des deux années, de 69 500 D, dépassent les 41 500 D de charges"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ce que la cellule fait gagner est la baisse du coût des anomalies : 58 200 − 11 300 = 46 900 D, supérieure aux 41 500 D de charges, d'où un gain de 5 400 D. Comparer les charges au coût des anomalies d'une seule année ou à leur cumul mélange des montants qui ne mesurent pas l'économie.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces raisonnements sur une politique de suivi, lesquels sont corrects ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une garantie dont le coût est donné par unité vendue se multiplie par ces unités"
+        },
+        {
+          "id": "b",
+          "text": "Une politique est pertinente si la marge ajoutée dépasse les charges ajoutées par elle"
+        },
+        {
+          "id": "c",
+          "text": "La marge d'une année se calcule avec le taux de marque et le chiffre d'affaires HT"
+        },
+        {
+          "id": "d",
+          "text": "Le résultat global se calcule en retranchant les charges de suivi du chiffre d'affaires"
+        },
+        {
+          "id": "e",
+          "text": "Une garantie à 25 D par unité vendue coûte au total la même somme quand les ventes doublent"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Sont exacts : multiplier une garantie donnée par unité vendue par ces unités ; juger la politique en comparant la marge ajoutée aux charges ajoutées ; calculer la marge comme CA HT × taux de marque. Le résultat global part de la marge, pas du chiffre d'affaires. Une garantie à 25 D par unité vendue double quand les ventes doublent.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une enseigne passe d'une garantie de six mois à 20 D par unité vendue à une garantie d'un an à 52 D par unité vendue. Elle a vendu 2 000 unités en N-1 et 3 100 en N. De combien les charges de garantie augmentent-elles, en D ?",
+      "answerKey": {
+        "value": 121200,
+        "unit": "D"
+      },
+      "explanation": "Charges N-1 : 20 × 2 000 = 40 000 D. Charges N : 52 × 3 100 = 161 200 D. Augmentation : 161 200 − 40 000 = 121 200 D ✓. Appliquer 52 D aux 2 000 unités de N-1 ne comparerait pas les deux politiques réelles.",
+      "difficulty": 3
+    }
+  ]
+}

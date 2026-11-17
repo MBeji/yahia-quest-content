@@ -1,0 +1,105 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur commercial",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une enquête auprès de 400 personnes donne, pour les prix 30, 35, 40, 45, 50, 55 et 60 D, les réponses « trop cher » : 0, 5, 15, 45, 100, 140 et 95 ; et les réponses « mauvaise qualité » : 120, 110, 80, 50, 30, 10 et 0. Quel est le prix psychologique, en D ?",
+      "answerKey": {
+        "value": 45,
+        "unit": "D"
+      },
+      "explanation": "Cumuls croissants : 0, 5, 20, 65, 165, 305, 400. Cumuls décroissants : 400, 280, 170, 90, 40, 10, 0. Refus : 400, 285, 190, 155, 205, 315, 400. Acheteurs potentiels : 0, 115, 210, 245, 195, 85, 0. Le maximum, 245 personnes (61,25 %), correspond à 45 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les concurrents d'une marque de lait vendent pour 3 100 000 D en N-1 puis 3 450 000 D en N ; la marque vend pour 400 000 D puis 500 000 D. De combien de points de pourcentage sa part de marché a-t-elle varié de N-1 à N (valeur positive, arrondie au centième) ?",
+      "answerKey": {
+        "value": 1.23,
+        "unit": "points",
+        "tolerance": 0.01
+      },
+      "explanation": "Part en N-1 : 400 000 ÷ 3 500 000 = 11,43 %. Part en N : 500 000 ÷ 3 950 000 = 12,66 %. Variation : 12,658 − 11,429 = 1,23 point ✓. Les ventes de la marque progressent de 25 %, le marché de 12,9 % : sa part augmente.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un fabricant de meubles écoule 300 pièces par un canal court avec 12 D de marge, 520 par un canal long avec 8 D et 700 par un réseau de revendeurs avec 5,5 D. Quel canal rapporte la plus forte marge totale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le canal court, car sa marge de 12 D par pièce est la plus forte"
+        },
+        {
+          "id": "b",
+          "text": "Le canal long, car 520 × 8 D donne le plus grand total"
+        },
+        {
+          "id": "c",
+          "text": "Le réseau de revendeurs, car ses 700 pièces font le plus gros volume"
+        },
+        {
+          "id": "d",
+          "text": "Aucun, car il faudrait connaître le prix de vente pour trancher"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Marges totales : canal court 300 × 12 = 3 600 D ; canal long 520 × 8 = 4 160 D ; revendeurs 700 × 5,5 = 3 850 D. Le canal long est le plus rentable ; ni la plus forte marge unitaire ni la plus grande quantité ne suffisent seules, et le prix de vente n'est pas nécessaire puisque les marges sont données.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Une enquête sur 200 personnes donne, pour 10, 12, 14 et 16 D, les réponses « trop cher » : 0, 20, 50 et 130 ; et « mauvaise qualité » : 100, 60, 40 et 0. Coche toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "À 12 D, 120 personnes n'achèteraient pas"
+        },
+        {
+          "id": "b",
+          "text": "À 14 D, 90 personnes accepteraient d'acheter"
+        },
+        {
+          "id": "c",
+          "text": "À 10 D, 100 personnes accepteraient d'acheter"
+        },
+        {
+          "id": "d",
+          "text": "Le prix psychologique est 12 D"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "À 12 D : cumul croissant 20, cumul décroissant 60 + 40 + 0 = 100, refus 120 : exact. À 14 D : cumul croissant 70, décroissant 40, refus 110, acheteurs 90 : exact. À 10 D : cumul croissant 0, décroissant 200, personne n'achèterait : faux. Les acheteurs potentiels valent 0, 80, 90 et 0 : le prix psychologique est 14 D, pas 12 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fabrique de machines à coudre prévoit 800 ventes l'an prochain : 55 % par un canal court (marge 120 D la machine), 15 % par un canal long (70 D) et 30 % par un réseau de revendeurs (45 D). Quelle marge totale prévisionnelle espère-t-elle, en D ?",
+      "answerKey": {
+        "value": 72000,
+        "unit": "D"
+      },
+      "explanation": "Quantités : 800 × 0,55 = 440 ; 800 × 0,15 = 120 ; 800 × 0,30 = 240. Marges : 440 × 120 = 52 800 D ; 120 × 70 = 8 400 D ; 240 × 45 = 10 800 D. Total : 52 800 + 8 400 + 10 800 = 72 000 D ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une usine de pâtes alimentaires fabrique en un mois 18 000 kg de couscous à 1,100 D le kilo et 12 000 kg de pâtes à 0,900 D le kilo. Une taxe de 900 D, répartie au prorata des quantités, s'y ajoute. Quel est le coût de production total du mois pour le couscous, taxe comprise, en D ?",
+      "answerKey": {
+        "value": 20340,
+        "unit": "D"
+      },
+      "explanation": "Quantité totale : 18 000 + 12 000 = 30 000 kg. Taxe par kilo : 900 ÷ 30 000 = 0,030 D. Part du couscous : 18 000 × 0,030 = 540 D. Coût total : 18 000 × 1,100 + 540 = 19 800 + 540 = 20 340 D ✓.",
+      "difficulty": 3
+    }
+  ]
+}
