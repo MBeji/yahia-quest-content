@@ -1,0 +1,167 @@
+{
+  "title": "Test de compréhension ⭐ : La formation du personnel",
+  "questions": [
+    {
+      "prompt": "Une employée de banque, embauchée depuis deux ans, suit un stage pour apprendre à utiliser un nouveau logiciel de crédit. De quelle formation s'agit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une formation initiale, acquise avant l'entrée dans l'entreprise"
+        },
+        {
+          "id": "b",
+          "text": "Une formation continue, suivie après son entrée dans la vie active"
+        },
+        {
+          "id": "c",
+          "text": "Une formation en alternance, partagée entre l'école et l'entreprise"
+        },
+        {
+          "id": "d",
+          "text": "Une formation initiale, puisqu'elle porte sur un outil que l'employée découvre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'employée est déjà en poste : sa formation vient compléter celle qu'elle a reçue avant d'entrer dans la vie professionnelle, c'est donc une formation continue. Le stage peut être donné par un organisme extérieur, ce qui ne change pas ce classement. Découvrir un outil nouveau ne fait pas d'une formation une formation initiale : tout dépend du moment où elle est suivie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pourquoi dit-on que la formation du personnel est un investissement humain ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle rapporte plus qu'elle ne coûte dès le jour où elle est payée"
+        },
+        {
+          "id": "b",
+          "text": "Elle ne profite qu'au salarié, qui peut ensuite quitter l'entreprise"
+        },
+        {
+          "id": "c",
+          "text": "Elle coûte aujourd'hui mais améliore l'efficacité et la compétitivité"
+        },
+        {
+          "id": "d",
+          "text": "C'est une charge imposée par la loi, sans contrepartie pour l'entreprise"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une dépense qui prépare des gains futurs est un investissement : la formation est coûteuse, mais elle améliore efficacité, qualité et compétitivité. Ses gains viennent plus tard que sa facture, et elle profite à l'entreprise, pas seulement à une obligation légale ni au seul salarié.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes pour calculer le coût réel d'un plan de formation homologué.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer le coût de chaque niveau : jours × coût par jour"
+        },
+        {
+          "id": "b",
+          "text": "Additionner les niveaux pour obtenir le coût global"
+        },
+        {
+          "id": "c",
+          "text": "Calculer la ristourne de chaque niveau avec son taux"
+        },
+        {
+          "id": "d",
+          "text": "Retrancher la ristourne totale du coût global"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On chiffre d'abord chaque niveau, puis le coût global ; la ristourne se calcule ensuite niveau par niveau, et le coût réel est obtenu en dernier, en retranchant la ristourne totale du coût global.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque terme à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Formation initiale"
+        },
+        {
+          "id": "l2",
+          "text": "Formation continue"
+        },
+        {
+          "id": "l3",
+          "text": "Ristourne"
+        },
+        {
+          "id": "r1",
+          "text": "Acquise avant l'entrée dans la vie professionnelle"
+        },
+        {
+          "id": "r2",
+          "text": "Droit de compléter sa formation après l'entrée dans la vie active"
+        },
+        {
+          "id": "r3",
+          "text": "Réduction obtenue quand le programme de formation est homologué"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "La formation initiale précède la vie professionnelle ; la formation continue la complète ensuite ; la ristourne est la réduction accordée à l'entreprise si son programme est homologué.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un menuisier d'une petite entreprise forme trois nouveaux ouvriers dans son atelier, avec ses propres outils. Quel élément entre dans le coût de cette formation interne ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La facture d'un centre de formation situé à l'extérieur"
+        },
+        {
+          "id": "b",
+          "text": "Le loyer d'une salle louée dans un centre de formation"
+        },
+        {
+          "id": "c",
+          "text": "La ristourne obtenue après homologation du plan"
+        },
+        {
+          "id": "d",
+          "text": "Le salaire et les charges du menuisier formateur"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dans une formation interne, on compte les rémunérations et charges des formateurs et des stagiaires, ainsi que le matériel et les locaux. La facture d'un centre extérieur et l'hébergement des stagiaires relèvent de la formation externe ; la ristourne vient en déduction du coût. Aucune salle n'est louée, puisque l'atelier sert de local.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une clinique confie à un cabinet un plan à deux niveaux : 4 jours à 90 D par jour pour le personnel soignant, 2 jours à 60 D par jour pour le personnel administratif. Quel est le coût global du plan, en D ?",
+      "answerKey": {
+        "value": 480,
+        "unit": "D"
+      },
+      "explanation": "Soignants : 4 × 90 = 360 D. Administratifs : 2 × 60 = 120 D. Coût global : 360 + 120 = 480 D.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le DRH sous contrainte de budget",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un cabinet d'ingénieurs recrute des débutants lors d'un forum d'école : stand 520 D ; 14 candidats passent chacun un entretien à 24 D ; 5 sont retenus et passent un entretien final à 38 D chacun ; un test d'aptitude demandé pour ces 5 coûte 150 D au total. Quel est le coût global du canal, en D ?",
+      "answerKey": {
+        "value": 1196,
+        "unit": "D"
+      },
+      "explanation": "Entretiens : 24 × 14 = 336 D. Entretien final : 38 × 5 = 190 D. Le test est déjà donné pour l'ensemble : 150 D. Coût global : 520 + 336 + 190 + 150 = 1 196 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une usine de textile étudie l'offre du bureau Atlas, qui facture : sélection 1 900 D, initiation 5 400 D, stage 1 600 D, encadreurs 85 D par stagiaire, bourse de 50 D par stagiaire dont la moitié à la charge de l'entreprise. Le seuil fixé est de 10 000 D : l'offre ne doit pas le dépasser. Combien de stagiaires au maximum peut-elle accueillir ?",
+      "answerKey": {
+        "value": 10,
+        "unit": "stagiaires"
+      },
+      "explanation": "Éléments fixes : 1 900 + 5 400 + 1 600 = 8 900 D. Coût par stagiaire à la charge de l'entreprise : 85 + 50 ÷ 2 = 110 D. Marge sous le seuil : 10 000 − 8 900 = 1 100 D. Nombre maximal : 1 100 ÷ 110 = 10 stagiaires, soit un total d'exactement 10 000 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un cabinet doit choisir un chef d'agence. Critères notés sur 20 : adaptabilité (coefficient 3), diplôme (coefficient 1), expérience (coefficient 2). Karim a 11, 20 et 15 ; Lilia a 16, 10 et 12 ; Wissem a 14, 12 et 15 ; Samar a 13, 14 et 13. Quel candidat est retenu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Karim, avec un total pondéré de 83 points"
+        },
+        {
+          "id": "b",
+          "text": "Lilia, avec un total pondéré de 82 points"
+        },
+        {
+          "id": "c",
+          "text": "Wissem, avec un total pondéré de 84 points"
+        },
+        {
+          "id": "d",
+          "text": "Samar, avec un total pondéré de 79 points"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Karim : 33 + 20 + 30 = 83. Lilia : 48 + 10 + 24 = 82. Wissem : 42 + 12 + 30 = 84. Samar : 39 + 14 + 26 = 79. Wissem est retenu avec 84. Sans coefficients, Karim passerait premier (46) ; Lilia a la meilleure note au critère le plus lourd, mais pas le plus fort total.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un dirigeant compare l'offre d'un cabinet, de 8 400 D tout compris, à ses dépenses visibles de 6 900 D (annonce, entretiens, déplacements). Il décide de recruter lui-même. Quelle objection est fondée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il devrait préférer le cabinet, car ses dépenses visibles dépassent déjà 6 000 D"
+        },
+        {
+          "id": "b",
+          "text": "Il oublie que l'offre du cabinet inclut déjà le coût de l'inadaptation du recruté"
+        },
+        {
+          "id": "c",
+          "text": "Il n'a pas ajouté la bourse des candidats, qui reste à la charge de l'entreprise"
+        },
+        {
+          "id": "d",
+          "text": "Il n'a pas compté la vacance du poste ni l'inadaptation éventuelle du recruté"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le coût de revient d'un recrutement fait seul comprend aussi le coût de vacance et celui de l'inadaptation, que l'on ne voit pas sur les factures : les 6 900 D visibles ne mesurent pas ce que coûte vraiment l'opération. L'offre d'un cabinet couvre la sélection et la formation, pas les coûts d'inadaptation. Aucune règle n'impose le cabinet à tout prix, les coûts cachés ne sont pas moindres par nature, et la bourse concerne les formations des bureaux.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels raisonnements sur le coût d'un recrutement par canal sont corrects ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une étape facturée par candidat se multiplie par le nombre de candidats qui la passent"
+        },
+        {
+          "id": "b",
+          "text": "Le coût global additionne le coût de toutes les étapes du canal"
+        },
+        {
+          "id": "c",
+          "text": "La base de calcul change d'une étape à l'autre, car des candidats sont écartés"
+        },
+        {
+          "id": "d",
+          "text": "Un entretien se multiplie par le nombre de candidatures reçues"
+        },
+        {
+          "id": "e",
+          "text": "Le coût par recrue s'obtient en multipliant le coût global par les recrues"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le coût d'une étape est un coût par candidat multiplié par les candidats qui la passent ; le global somme les étapes ; le nombre de candidats diminue avec les éliminations. Le nombre de candidatures reçues n'est pas la base d'une étape de sélection, et le coût par recrue se calcule par division, pas par multiplication.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Deux canaux sont comparés. Annonce : 560 D, test à 17 D pour chacun de 24 candidats, entretien à 46 D pour chacun de 8, 4 embauches. Forum : stand 400 D, entretien à 15 D pour chacun de 20 candidats, entretien final à 50 D pour chacun de 6, 2 embauches. De combien le coût par recrue du forum dépasse-t-il celui de l'annonce, en D ?",
+      "answerKey": {
+        "value": 166,
+        "unit": "D"
+      },
+      "explanation": "Annonce : 560 + 408 + 368 = 1 336 D, soit 1 336 ÷ 4 = 334 D par recrue. Forum : 400 + 15 × 20 + 50 × 6 = 400 + 300 + 300 = 1 000 D, soit 1 000 ÷ 2 = 500 D par recrue. Le forum coûte moins au global (1 000 contre 1 336) mais plus par recrue : 500 − 334 = 166 D.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur des ressources humaines",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Sur les trois prochaines années, une huilerie attend 8 % de démissions parmi ses 450 ouvriers non qualifiés et 4 % parmi ses 250 ouvriers qualifiés. Combien de démissions prévoit-elle au total ?",
+      "answerKey": {
+        "value": 46,
+        "unit": "personnes"
+      },
+      "explanation": "Non qualifiés : 450 × 0,08 = 36. Qualifiés : 250 × 0,04 = 10. Total : 36 + 10 = 46 démissions ✓. Chaque taux s'applique à l'effectif de sa propre catégorie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le directeur d'une usine de 300 salariés affirme : « 12 salariés seront promus d'ici trois ans, donc nous aurons 12 personnes de moins. » Que lui répondre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exact : chaque promu libère un poste qui disparaît avec lui"
+        },
+        {
+          "id": "b",
+          "text": "Faux : les promus s'ajoutent aux effectifs, qui montent de 12"
+        },
+        {
+          "id": "c",
+          "text": "Faux : une promotion déplace le salarié sans changer le total"
+        },
+        {
+          "id": "d",
+          "text": "Exact, sauf pour les promus qui restent dans le même atelier"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un salarié promu quitte une catégorie pour entrer dans la catégorie supérieure : il reste dans l'entreprise, donc le total ne change pas. Seuls les départs (retraites, démissions) le font baisser ; les promus ne s'ajoutent pas non plus, puisqu'ils étaient déjà comptés. Que le promu change d'atelier ou non, il reste salarié de l'usine.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une imprimerie compte 150 ouvriers qualifiés. Sur trois ans, 4 % démissionneront et 5 partiront à la retraite ; 8 seront promus à la maîtrise et 15 ouvriers non qualifiés deviendront qualifiés. Combien d'ouvriers qualifiés comptera-t-elle ?",
+      "answerKey": {
+        "value": 146,
+        "unit": "personnes"
+      },
+      "explanation": "Démissions : 150 × 0,04 = 6. Effectif prévisionnel = 150 − 6 − 5 − 8 + 15 = 146 ouvriers qualifiés ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un bureau d'études compte 85 techniciens. D'ici quatre ans, 7 partiront en retraite et 3 démissionneront ; 5 seront promus ingénieurs et 2 assistants deviendront techniciens. Il lui en faudra 90. Combien de techniciens doit-il recruter ?",
+      "answerKey": {
+        "value": 18,
+        "unit": "personnes"
+      },
+      "explanation": "Effectif prévisionnel : 85 − 7 − 3 − 5 + 2 = 72. Recrutement = besoin − prévisionnel = 90 − 72 = 18 techniciens ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un hôtel de Hammamet prévoit 34 serveurs pour 29 postes, et 12 chefs de rang pour 15 postes. Quelle lecture de ces écarts est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Serveurs en sur-effectif de 5, chefs de rang en sous-effectif de 3"
+        },
+        {
+          "id": "b",
+          "text": "Serveurs en sous-effectif, chefs de rang en sur-effectif"
+        },
+        {
+          "id": "c",
+          "text": "Serveurs en sur-effectif de 5, chefs de rang à l'équilibre"
+        },
+        {
+          "id": "d",
+          "text": "Serveurs et chefs de rang en sur-effectif, le total dépassant les postes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Serveurs : 34 − 29 = +5, sur-effectif. Chefs de rang : 12 − 15 = −3, sous-effectif. Les deux écarts sont quantitatifs et se jugent catégorie par catégorie : le total (46 contre 44) masque le manque de chefs de rang ; conclure sur le total revient à compenser entre catégories.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une coopérative oléicole prévoit 14 cadres pour 12 postes, 66 ouvriers qualifiés pour 75 postes et 120 ouvriers non qualifiés pour 100 postes. Elle ne recrute que dans les catégories en sous-effectif. Combien de personnes recrutera-t-elle ?",
+      "answerKey": {
+        "value": 9,
+        "unit": "personnes"
+      },
+      "explanation": "Cadres : 14 − 12 = +2, surplus. Qualifiés : 66 − 75 = −9, sous-effectif de 9. Non qualifiés : 120 − 100 = +20, surplus. Seule la catégorie déficitaire donne lieu à recrutement : 75 − 66 = 9 personnes ✓. Le surplus global de 13 ne compense pas ce manque.",
+      "difficulty": 3
+    }
+  ]
+}

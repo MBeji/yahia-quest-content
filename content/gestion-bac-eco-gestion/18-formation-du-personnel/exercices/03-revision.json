@@ -1,0 +1,158 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La formation du personnel de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque situation au type de formation correspondant.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Un comptable suit un stage de perfectionnement dans un centre agréé"
+        },
+        {
+          "id": "l2",
+          "text": "Le chef d'atelier forme lui-même les nouveaux ouvriers dans l'usine"
+        },
+        {
+          "id": "l3",
+          "text": "Un étudiant partage sa semaine entre son école et une entreprise d'accueil"
+        },
+        {
+          "id": "r1",
+          "text": "Formation externe"
+        },
+        {
+          "id": "r2",
+          "text": "Formation interne"
+        },
+        {
+          "id": "r3",
+          "text": "Formation en alternance"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Un centre extérieur assure une formation externe ; le chef d'atelier qui forme sur place assure une formation interne ; le temps partagé entre école et entreprise est la formation en alternance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi l'État accorde-t-il des ristournes aux entreprises dont le programme de formation est homologué ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour pousser les entreprises à dépenser davantage pour la formation"
+        },
+        {
+          "id": "b",
+          "text": "Pour dispenser les entreprises de la part de masse salariale due"
+        },
+        {
+          "id": "c",
+          "text": "Pour rembourser aux entreprises les salaires des formateurs internes"
+        },
+        {
+          "id": "d",
+          "text": "Pour remplacer la formation initiale des jeunes avant leur embauche"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La ristourne est un encouragement à investir dans la formation. Elle ne supprime pas l'obligation de consacrer une part de la masse salariale à la formation et ne remplace pas la formation initiale. Elle porte sur le coût du programme homologué, pas sur un remboursement des salaires.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une librairie accueille 3 apprentis pendant 2 ans. Chaque apprenti reçoit une bourse de 45 D par mois, 8 bons de repas par mois à 2 D l'un, et un abonnement de transport de 80 D par an. Quel est le coût global pour la librairie, en D ?",
+      "answerKey": {
+        "value": 4872,
+        "unit": "D"
+      },
+      "explanation": "Par mois : 45 + 8 × 2 = 61 D, soit 61 × 24 = 1 464 D sur 24 mois. Transport : 80 × 2 = 160 D. Par apprenti : 1 464 + 160 = 1 624 D. Pour 3 apprentis : 1 624 × 3 = 4 872 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Après homologation, un cabinet facture 6 journées à 150 D, avec 75 % de ristourne, puis 4 journées à 100 D, avec 50 %. Quelle somme reste à la charge de l'entreprise, en D ?",
+      "answerKey": {
+        "value": 425,
+        "unit": "D"
+      },
+      "explanation": "Coûts : 6 × 150 = 900 D et 4 × 100 = 400 D, soit 1 300 D. Ristournes : 900 × 0,75 = 675 D et 400 × 0,50 = 200 D, soit 875 D. Coût réel : 1 300 − 875 = 425 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche pour comparer deux offres de cabinets.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repérer pour chaque offre l'unité de facturation"
+        },
+        {
+          "id": "b",
+          "text": "Compter les groupes ou les personnes concernés"
+        },
+        {
+          "id": "c",
+          "text": "Calculer le coût de chaque offre"
+        },
+        {
+          "id": "d",
+          "text": "Comparer les coûts puis vérifier les autres critères avant de choisir"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On commence par repérer l'unité de facturation de chaque offre (par personne, par groupe, par jour), puis on compte les personnes ou les groupes concernés. Ces deux données permettent de calculer le coût de chaque offre, et seulement ensuite de comparer les coûts et de vérifier les autres critères avant de choisir.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un chef d'entreprise hésite entre deux cabinets dont l'un est moins cher. Pourquoi le seul calcul des coûts ne suffit-il pas pour décider ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il faut encore multiplier le coût par les heures de chaque jour"
+        },
+        {
+          "id": "b",
+          "text": "Le cabinet le moins cher doit être écarté par prudence"
+        },
+        {
+          "id": "c",
+          "text": "Une offre moins chère peut ne pas répondre au besoin réel"
+        },
+        {
+          "id": "d",
+          "text": "Le coût ne compte que si le programme est homologué"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le coût est un critère, mais le contenu, la durée et l'adaptation au besoin comptent aussi : une formation bon marché qui ne sert pas est de l'argent perdu. Les heures par jour n'entrent pas dans le calcul quand le tarif est donné par jour, et un prix bas n'est pas à lui seul une raison d'écarter un cabinet.",
+      "difficulty": 2
+    }
+  ]
+}

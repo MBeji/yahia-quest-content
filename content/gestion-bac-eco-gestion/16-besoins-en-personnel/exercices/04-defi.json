@@ -1,0 +1,101 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le plan d'effectifs complet",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Chez Atlas Textile, les 25 cadres subiront 2 retraites et 1 démission ; les 60 techniciens, 5 % de départs ; les 200 ouvriers qualifiés, 6 % de départs. Quatre techniciens deviendront cadres et dix ouvriers qualifiés deviendront techniciens. Besoins : 30 cadres, 61 techniciens, 170 ouvriers qualifiés. On ne recrute que dans les catégories en sous-effectif. Combien de personnes recruter ?",
+      "answerKey": {
+        "value": 4,
+        "unit": "personnes"
+      },
+      "explanation": "Cadres : 25 − 3 + 4 = 26. Techniciens : 60 − 3 − 4 + 10 = 63. Ouvriers qualifiés : 200 − 12 − 10 = 178. Écarts : cadres 26 − 30 = −4 ; techniciens +2 ; ouvriers qualifiés +8. Seuls les cadres manquent : recrutement de 4 personnes ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un centre d'appels compte 400 téléconseillers. Chaque année, il applique un taux de départ de 5 % à l'effectif présent au début de cette année, sans recrutement ni promotion. Combien de téléconseillers restera-t-il après deux ans ?",
+      "answerKey": {
+        "value": 361,
+        "unit": "personnes"
+      },
+      "explanation": "Après un an : 400 − 400 × 0,05 = 380. Après deux ans : 380 − 380 × 0,05 = 361 ✓. Le second taux s'applique à 380, non à 400 ; enlever 20 deux fois donnerait 360.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une société de maintenance prévoit 31 cadres pour 28 postes, 40 techniciens pour 46 postes et 105 qualifiés pour 105 postes. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seul le déficit global de 3 compte : recruter 3 personnes"
+        },
+        {
+          "id": "b",
+          "text": "Trois cadres en trop, six techniciens en moins : agir par catégorie"
+        },
+        {
+          "id": "c",
+          "text": "Aucune action : les qualifiés sont à l'équilibre et le déficit global est faible"
+        },
+        {
+          "id": "d",
+          "text": "Trois cadres manquent et six techniciens sont en trop : recruter des cadres"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Cadres : 31 − 28 = +3, sur-effectif. Techniciens : 40 − 46 = −6, sous-effectif. Les qualifiés sont à l'équilibre. Le déficit global de 3 (176 contre 179) cache deux écarts de sens contraire qui se traitent séparément. Inverser les signes ou conclure à l'absence d'action sont les erreurs tentantes.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles situations d'un grand magasin relèvent d'un écart qualitatif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des magasiniers ignorent la gestion des stocks sur le nouveau progiciel"
+        },
+        {
+          "id": "b",
+          "text": "Des diplômés d'ingénierie sont affectés à la manutention"
+        },
+        {
+          "id": "c",
+          "text": "Il manque 15 chauffeurs pour assurer les tournées"
+        },
+        {
+          "id": "d",
+          "text": "Trop d'emballeurs subsistent après l'automatisation du conditionnement"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "Des magasiniers sans maîtrise du progiciel n'ont pas les compétences requises, et des ingénieurs à la manutention sont surqualifiés : ce sont deux écarts qualitatifs. Un manque de chauffeurs et un trop-plein d'emballeurs portent sur le nombre : écarts quantitatifs.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fonderie emploie 280 personnes. D'ici trois ans, 35 partiront en retraite et 5 % de l'effectif actuel démissionnera ; 20 salariés seront promus d'une catégorie à l'autre. Les besoins s'élèveront à 260 personnes. Quel sera le déficit global de main-d'œuvre ?",
+      "answerKey": {
+        "value": 29,
+        "unit": "personnes"
+      },
+      "explanation": "Démissions : 280 × 0,05 = 14. Effectif prévisionnel : 280 − 35 − 14 = 231 ; les 20 promotions ne changent pas le total. Déficit global : 260 − 231 = 29 personnes ✓. Le recrutement se calcule ensuite catégorie par catégorie et peut dépasser ce chiffre.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une société de gardiennage compte 520 agents. D'ici quatre ans, 40 partiront en retraite et 18 démissionneront ; les besoins seront de 420 agents. Quel est le sur-effectif, en pourcentage des besoins ?",
+      "answerKey": {
+        "value": 10,
+        "unit": "%"
+      },
+      "explanation": "Effectif prévisionnel : 520 − 40 − 18 = 462. Sur-effectif : 462 − 420 = 42. En pourcentage des besoins : 42 ÷ 420 = 0,10, soit 10 % ✓.",
+      "difficulty": 3
+    }
+  ]
+}
