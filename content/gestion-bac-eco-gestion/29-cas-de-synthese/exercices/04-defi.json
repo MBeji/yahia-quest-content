@@ -1,0 +1,126 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le dossier complet de la Cartonnerie Ayari",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans la Cartonnerie Ayari, la caisse standard demande 30 mn de coupe et 90 mn d'assemblage, la caisse renforcée 60 mn de coupe et 30 mn d'assemblage. La coupe dispose de 420 h, l'assemblage de 480 h, utilisés à plein. Combien de caisses renforcées fabrique-t-on ?",
+      "answerKey": {
+        "value": 312,
+        "unit": "caisses"
+      },
+      "explanation": "En heures : 0,5x + y = 420 (coupe) et 1,5x + 0,5y = 480 (assemblage), x pour les caisses standard et y pour les renforcées. De la première, y = 420 − 0,5x ; dans la seconde : 1,5x + 210 − 0,25x = 480, soit 1,25x = 270 et x = 216. Alors y = 312. Contrôle : 108 + 312 = 420 et 324 + 156 = 480.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une autre semaine, la Cartonnerie Ayari fabrique 200 caisses standard (marge unitaire 3,20 D) et 320 caisses renforcées (marge unitaire 5 D). Quelle marge totale réalise-t-elle, en D ?",
+      "answerKey": {
+        "value": 2240,
+        "unit": "D",
+        "tolerance": 0.05
+      },
+      "explanation": "200 × 3,20 = 640 D ; 320 × 5 = 1 600 D ; total 2 240 D : c'est la fonction objectif Z du chapitre 10. Calculer avec le prix de vente au lieu de la marge unitaire fausserait Z.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Machine neuve de la Cartonnerie Ayari : 540 000 D HT, amortie en 6 ans. Par an : ventes de 800 000 D, charges décaissables de 560 000 D, impôt de 30 %. Facteur d'actualisation (9 %, 6 ans) : 4,4859. Quelle est la VAN, en D, à 50 D près ?",
+      "answerKey": {
+        "value": 334750,
+        "unit": "D",
+        "tolerance": 50
+      },
+      "explanation": "Dotation : 540 000 ÷ 6 = 90 000 D. Résultat avant impôt : 800 000 − 560 000 − 90 000 = 150 000 D ; impôt 45 000 D ; net 105 000 D. CAF = 105 000 + 90 000 = 195 000 D. VAN = 195 000 × 4,4859 − 540 000 ≈ 334 750 D. Oublier la dotation dans la CAF donnerait une VAN de −68 980 D environ.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Cartonnerie Ayari emprunte 300 000 D sur 4 ans à 10 % en annuités constantes de 94 641,24 D, payées en fin d'année. Quel est l'intérêt de la 2e année, en D ?",
+      "answerKey": {
+        "value": 23535.88,
+        "unit": "D",
+        "tolerance": 0.05
+      },
+      "explanation": "Année 1 : intérêt 300 000 × 0,10 = 30 000 D ; amortissement 94 641,24 − 30 000 = 64 641,24 D ; capital restant dû 235 358,76 D. Année 2 : intérêt ≈ 235 358,76 × 0,10 = 23 535,88 D. Garder 300 000 D comme base donnerait encore 30 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "En avril, la Cartonnerie Ayari fait 30 000 D de ventes hors taxe, encaissées pour moitié comptant et pour moitié à 30 jours ; ses ventes de mars, 29 500 D TTC, étaient encaissées selon la même règle. Elle paie en avril ses achats de mars (21 240 D TTC), 8 000 D de salaires, 2 150 D de charges diverses sans TVA et la TVA de mars (collectée sur 29 500 D TTC, déductible sur les achats TTC). Sa trésorerie initiale est de 1 500 D. Quelle est sa trésorerie finale d'avril, en D ?",
+      "answerKey": {
+        "value": 1300,
+        "unit": "D"
+      },
+      "explanation": "Ventes d'avril TTC : 30 000 × 1,18 = 35 400 D. Encaissements : 17 700 + 14 750 = 32 450 D. TVA de mars : 29 500 × 18 ÷ 118 − 21 240 × 18 ÷ 118 = 4 500 − 3 240 = 1 260 D. Décaissements : 21 240 + 8 000 + 2 150 + 1 260 = 32 650 D. Solde : −200 D ; trésorerie finale : 1 500 − 200 = 1 300 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le dossier de la Cartonnerie Ayari donne une VAN positive pour sa nouvelle machine, mais un budget de trésorerie négatif en février, à cause d'un paiement comptant. Quel conseil est le plus cohérent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Garder le projet, mais étaler le paiement ou prendre un crédit court pour le creux"
+        },
+        {
+          "id": "b",
+          "text": "Abandonner le projet, car une trésorerie négative prouve qu'il ne peut pas être rentable"
+        },
+        {
+          "id": "c",
+          "text": "Ignorer le budget de trésorerie, puisque la VAN positive garantit déjà la liquidité"
+        },
+        {
+          "id": "d",
+          "text": "Relever tous les prix de vente pour combler le creux avant même de revoir le financement"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un projet rentable (VAN positive) n'est pas automatiquement financé mois par mois : la rentabilité se mesure sur plusieurs années, la liquidité sur chaque mois. On garde donc le projet et l'on corrige le creux en jouant sur les délais de paiement ou le crédit à court terme. Abandonner le projet ou ignorer le budget confond les deux notions.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans l'étude de la Cartonnerie Ayari, quels calculs se font en montants hors taxe plutôt qu'en toutes taxes comprises ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le coût initial de la machine pour la VAN"
+        },
+        {
+          "id": "b",
+          "text": "La marge sur coût variable unitaire"
+        },
+        {
+          "id": "c",
+          "text": "Les encaissements des clients du budget de trésorerie"
+        },
+        {
+          "id": "d",
+          "text": "Le paiement de la TVA du mois précédent"
+        },
+        {
+          "id": "e",
+          "text": "Le coût de revient unitaire de la caisse"
+        },
+        {
+          "id": "f",
+          "text": "Le règlement d'un fournisseur à 30 jours dans le budget de trésorerie"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Les calculs d'investissement (coût initial), de rentabilité (marge) et de coûts (coût de revient) se font hors taxe. Le budget de trésorerie, lui, suit les sommes réellement encaissées ou payées : encaissements clients et règlements fournisseurs y figurent en TTC, et la TVA du mois précédent pour son montant net à décaisser.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le dossier de la directrice financière",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Au bilan d'une brasserie de Tozeur, 90 000 D de créances clients sont à recouvrer en janvier. Les ventes de janvier s'élèvent à 100 000 D hors taxe, TVA 18 %, réglées à 40 % comptant et le reste le mois suivant. Quel est l'encaissement total de janvier, en D ?",
+      "answerKey": {
+        "value": 137200,
+        "unit": "D"
+      },
+      "explanation": "Ventes TTC de janvier : 100 000 × 1,18 = 118 000 D, dont 40 % comptant, soit 47 200 D. On y ajoute les créances antérieures de 90 000 D : 90 000 + 47 200 = 137 200 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une société de bois de Jendouba prépare ses décaissements de janvier : 54 000 D de dettes fournisseurs du bilan, 12 000 D de salaires nets, 6 300 D de TVA de décembre, 2 000 D de loyer et 9 000 D de dotations aux amortissements. Quel est le total des décaissements de janvier, en D ?",
+      "answerKey": {
+        "value": 74300,
+        "unit": "D"
+      },
+      "explanation": "Seules les sorties réelles comptent : 54 000 + 12 000 + 6 300 + 2 000 = 74 300 D. Les 9 000 D d'amortissements sont une charge calculée, sans sortie d'argent.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un stagiaire d'une entreprise de Sousse inscrit 60 000 D de ventes comptant hors taxe en encaissements, alors que les décaissements sont de 66 000 D et la trésorerie initiale de 9 000 D. Quelle est la vraie trésorerie finale, TVA 18 % ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−8 880 D"
+        },
+        {
+          "id": "b",
+          "text": "3 000 D"
+        },
+        {
+          "id": "c",
+          "text": "4 800 D"
+        },
+        {
+          "id": "d",
+          "text": "13 800 D"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les encaissements s'inscrivent TTC : 60 000 × 1,18 = 70 800 D. Trésorerie finale = 9 000 + 70 800 − 66 000 = 13 800 D. Le chiffre 3 000 D est celui du stagiaire ; 4 800 D oublie la trésorerie initiale ; −8 880 D ajoute la TVA aux décaissements au lieu de l'ajouter aux encaissements.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une agence immobilière de Bizerte démarre avec 5 000 D. Ses encaissements mensuels sont 40 000, 38 000, 60 000 et 80 000 D ; ses décaissements 52 000, 61 000, 58 000 et 62 000 D. Quel est son besoin de financement maximal sur la période, c'est-à-dire la valeur absolue du solde final le plus bas, en D ?",
+      "answerKey": {
+        "value": 30000,
+        "unit": "D"
+      },
+      "explanation": "Soldes finaux : 5 000 + 40 000 − 52 000 = −7 000 ; −7 000 + 38 000 − 61 000 = −30 000 ; −30 000 + 60 000 − 58 000 = −28 000 ; −28 000 + 80 000 − 62 000 = −10 000. Le point le plus bas est −30 000 D : c'est le besoin maximal à couvrir.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une usine de Béja prévoit des ventes HT de 135 000 D, des achats HT de 64 000 D et un investissement HT de 45 000 D, TVA 18 % partout. Le crédit de TVA antérieur est de 2 000 D. Quelle TVA reste à décaisser, en D ?",
+      "answerKey": {
+        "value": 2680,
+        "unit": "D"
+      },
+      "explanation": "Collectée : 135 000 × 0,18 = 24 300 D. Déductible : achats 11 520 D et investissement 8 100 D. À décaisser : 24 300 − 11 520 − 8 100 − 2 000 = 2 680 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Une société de tapis de Kairouan prévoit une trésorerie initiale de 4 000 D en avril. Encaissements et décaissements : avril 31 000 D et 37 000 D ; mai 28 000 D et 30 000 D ; juin 52 000 D et 41 000 D. Quelles propositions sont justifiées ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avril et mai demandent un financement à court terme"
+        },
+        {
+          "id": "b",
+          "text": "Juin dégage un excédent de 7 000 D, que l'on peut placer"
+        },
+        {
+          "id": "c",
+          "text": "Le solde de mai est moins creusé que celui d'avril"
+        },
+        {
+          "id": "d",
+          "text": "La trésorerie initiale de juin est de −4 000 D"
+        },
+        {
+          "id": "e",
+          "text": "Juin se calcule seul et donne un solde de 11 000 D"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Avril : 4 000 + 31 000 − 37 000 = −2 000 D. Mai : −2 000 + 28 000 − 30 000 = −4 000 D. Juin : −4 000 + 52 000 − 41 000 = 7 000 D. Avril et mai appellent un financement, juin permet un placement, et la trésorerie initiale de juin est la finale de mai. Mai est plus creusé qu'avril, et ignorer le report donnerait 11 000 D à tort.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fabrique de tapis de Mahdia achète pour 40 000 D HT en février et 50 000 D HT en mars, TVA 18 %, réglés moitié comptant, moitié le mois suivant. En mars, elle verse aussi la TVA de février (collectée 15 300 D, déductible celle des achats de février), 9 000 D de salaires, et comptabilise 4 000 D de dotations aux amortissements. Quel total de décaissements prévoit-elle en mars, en D ?",
+      "answerKey": {
+        "value": 70200,
+        "unit": "D"
+      },
+      "explanation": "Achats TTC : février 47 200 D, mars 59 000 D. En mars : 50 % de février = 23 600 D et 50 % de mars = 29 500 D. TVA de février : 15 300 − 7 200 = 8 100 D, versée en mars. Salaires : 9 000 D. Les amortissements ne sont pas décaissés. Total : 23 600 + 29 500 + 8 100 + 9 000 = 70 200 D.",
+      "difficulty": 3
+    }
+  ]
+}

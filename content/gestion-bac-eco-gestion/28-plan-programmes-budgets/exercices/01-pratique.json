@@ -1,0 +1,218 @@
+{
+  "title": "⭐ Exercice : Premiers pas — démarche, budgets et TVA",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Que représente un budget pour la direction d'une entreprise de Nabeul ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le premier état à dresser, avant l'ensemble des budgets particuliers"
+        },
+        {
+          "id": "b",
+          "text": "Un état prévisionnel qui chiffre en dinars un programme d'action"
+        },
+        {
+          "id": "c",
+          "text": "Une orientation générale fixée pour le long terme"
+        },
+        {
+          "id": "d",
+          "text": "Une liste de quantités à produire, sans aucun montant en dinars"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un budget est un état prévisionnel : il traduit en dinars un programme d'action. Le budget de trésorerie, synthèse des autres, se construit en dernier et non en premier ; l'orientation de long terme est le plan ; les quantités seules forment le programme d'action.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur quelle durée approximative porte le plan d'une entreprise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un mois seulement"
+        },
+        {
+          "id": "b",
+          "text": "Un trimestre ou un semestre"
+        },
+        {
+          "id": "c",
+          "text": "Une année comptable"
+        },
+        {
+          "id": "d",
+          "text": "Cinq ans environ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le plan est une orientation à long terme, sur cinq ans environ. Le mois, le trimestre, le semestre ou l'année sont plutôt des périodes budgétaires.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque élément d'une entreprise de menuiserie au budget qui le chiffre.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Achat d'une camionnette de livraison"
+        },
+        {
+          "id": "l2",
+          "text": "Achat de bois en planches"
+        },
+        {
+          "id": "l3",
+          "text": "Ventes de meubles"
+        },
+        {
+          "id": "l4",
+          "text": "Loyer du local"
+        },
+        {
+          "id": "r1",
+          "text": "Budget des investissements"
+        },
+        {
+          "id": "r2",
+          "text": "Budget des approvisionnements"
+        },
+        {
+          "id": "r3",
+          "text": "Budget des ventes"
+        },
+        {
+          "id": "r4",
+          "text": "Budget des charges"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Un véhicule est un investissement. Le bois acheté relève des approvisionnements, les meubles vendus du budget des ventes, et le loyer des charges de fonctionnement.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un fabricant de meubles de Sfax doit acheter 450 planches à 32 D pièce, hors taxe. Quel est le montant de ces achats HT, en D ?",
+      "answerKey": {
+        "value": 14400,
+        "unit": "D"
+      },
+      "explanation": "Budget des approvisionnements : quantité × prix unitaire HT = 450 × 32 = 14 400 D. La TVA se calcule ensuite sur cette base hors taxe.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une quincaillerie de Gafsa achète pour 6 500 D de marchandises hors taxe, TVA 18 %. Quel est le montant de la TVA déductible, en D ?",
+      "answerKey": {
+        "value": 1170,
+        "unit": "D"
+      },
+      "explanation": "TVA déductible = base HT × 18 % = 6 500 × 0,18 = 1 170 D. L'achat TTC vaudrait 7 670 D.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un fleuriste de Tunis vend en mars pour 11 800 D toutes taxes comprises. Ses clients paient 25 % comptant et le reste le mois suivant. Quelle somme encaisse-t-il en avril sur ces ventes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 950 D"
+        },
+        {
+          "id": "b",
+          "text": "7 500 D"
+        },
+        {
+          "id": "c",
+          "text": "8 850 D"
+        },
+        {
+          "id": "d",
+          "text": "11 800 D"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En avril on encaisse le solde de 75 % : 11 800 × 0,75 = 8 850 D. La somme de 2 950 D est la part comptant de mars ; 11 800 D oublie l'échéancier ; 7 500 D applique 75 % à un montant hors taxe.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Une société de plomberie de Kasserine construit son budget de trésorerie. Classe les étapes dans l'ordre.",
+      "options": [
+        {
+          "id": "d",
+          "text": "Reporter ce solde comme trésorerie initiale du mois suivant"
+        },
+        {
+          "id": "b",
+          "text": "Bâtir les budgets des encaissements et des décaissements mois par mois"
+        },
+        {
+          "id": "a",
+          "text": "Relever la situation de départ : trésorerie initiale, créances, dettes"
+        },
+        {
+          "id": "c",
+          "text": "Calculer la trésorerie finale du premier mois"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On part de la situation du bilan, on construit les entrées et les sorties de chaque mois, puis on calcule le solde. Il ne reste qu'à le reporter : la finale d'un mois est l'initiale du suivant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le budget de trésorerie d'une imprimerie de Médenine fait apparaître un solde négatif en juillet. Que doit rechercher sa direction ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un placement à court terme pour fructifier l'excédent de caisse"
+        },
+        {
+          "id": "b",
+          "text": "Une baisse des dotations aux amortissements pour réduire le déficit"
+        },
+        {
+          "id": "c",
+          "text": "Un découvert, des reports de paiements ou des encaissements avancés"
+        },
+        {
+          "id": "d",
+          "text": "Un paiement anticipé des fournisseurs pour obtenir une remise"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une trésorerie négative signifie que les sorties dépassent les entrées : il faut financer l'écart, par un découvert, en différant des décaissements ou en avançant des encaissements. Placer un excédent suppose le contraire, et les amortissements ne touchent pas la caisse. Payer plus tôt creuserait encore le déficit.",
+      "difficulty": 1
+    }
+  ]
+}

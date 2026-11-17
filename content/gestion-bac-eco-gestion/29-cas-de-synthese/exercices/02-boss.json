@@ -1,0 +1,124 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le dossier à plusieurs étapes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Les pâtes artisanales de la maison Zouari se vendent 12 D le paquet. Coût réel par paquet : 1,5 kg de semoule à 2,40 D le kg ; 20 minutes de main-d'œuvre à 9 D l'heure ; emballage 0,500 D ; distribution égale à 6 % du prix de vente. Une commande de 4 000 paquets est livrée. Quel résultat réalise-t-elle, en D ?",
+      "answerKey": {
+        "value": 16720,
+        "unit": "D"
+      },
+      "explanation": "Matières : 1,5 × 2,40 = 3,600 D ; main-d'œuvre : 20 ÷ 60 × 9 = 3,000 D ; emballage 0,500 D ; coût de production 7,100 D. Distribution : 6 % × 12 = 0,720 D. Coût de revient : 7,820 D. Résultat = 4 000 × (12 − 7,82) = 16 720 D. Oublier la distribution donnerait 19 600 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un atelier de tricot devait fabriquer 3 000 pièces à 0,5 h de main-d'œuvre chacune, à 8 D l'heure. Il a consommé 1 740 h payées 9 D l'heure. Quel est l'écart global sur la main-d'œuvre, en D ?",
+      "answerKey": {
+        "value": 3660,
+        "unit": "D"
+      },
+      "explanation": "Coût réel : 1 740 × 9 = 15 660 D. Coût préétabli de la production réelle : 3 000 × 0,5 × 8 = 12 000 D. Écart global = +3 660 D, défavorable. Vérification par décomposition : écart sur quantité (1 740 − 1 500) × 8 = 1 920 D et écart sur coût (9 − 8) × 1 740 = 1 740 D, soit 3 660 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une savonnerie fabrique en un an 20 000 savons répartis en trois qualités : 60 % de la qualité courante (marge unitaire 4 D), 25 % de la qualité fine (2,50 D) et 15 % de la qualité luxe (1,20 D). Ses charges fixes sont de 38 000 D. Quel est son résultat d'exploitation, en D ?",
+      "answerKey": {
+        "value": 26100,
+        "unit": "D"
+      },
+      "explanation": "Quantités : 12 000, 5 000 et 3 000 unités. Marges : 12 000 × 4 = 48 000 D ; 5 000 × 2,50 = 12 500 D ; 3 000 × 1,20 = 3 600 D ; total 64 100 D. Résultat = 64 100 − 38 000 = 26 100 D. Utiliser la marge de la seule qualité courante pour tout le volume serait une erreur.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'imprimerie Chaabane achète une presse à 360 000 D hors taxe, installation comprise, sur 5 ans en amortissement linéaire. Elle attend 560 000 D de chiffre d'affaires et 390 000 D de charges décaissables par an, avec un impôt de 30 %. Au taux de 9 %, le facteur d'actualisation sur 5 ans vaut 3,8897. Quelle est la VAN, en D (arrondie à l'unité) ?",
+      "answerKey": {
+        "value": 186892,
+        "unit": "D",
+        "tolerance": 30
+      },
+      "explanation": "Dotation : 360 000 ÷ 5 = 72 000 D. Résultat avant impôt : 560 000 − 390 000 − 72 000 = 98 000 D ; impôt 29 400 D ; net 68 600 D. CAF = 68 600 + 72 000 = 140 600 D. VAN = 140 600 × 3,8897 − 360 000 ≈ 186 892 D. Prendre le résultat net comme flux donnerait une VAN négative.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La coopérative Mejri emprunte 480 000 D sur 6 ans à 9,5 %, avec des amortissements constants payés en fin d'année. Quel est l'intérêt de la 3e année, en D ?",
+      "answerKey": {
+        "value": 30400,
+        "unit": "D"
+      },
+      "explanation": "Amortissement annuel : 480 000 ÷ 6 = 80 000 D. Capital restant dû au début de la 3e année : 480 000 − 2 × 80 000 = 320 000 D. Intérêt = 320 000 × 0,095 = 30 400 D. Utiliser 480 000 D comme base donnerait 45 600 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un négoce de matériel a vendu ce mois-ci pour 47 200 D TTC. Il a acheté pour 25 000 D hors taxe, et il dispose d'un crédit de TVA antérieur de 1 000 D. Quelle TVA doit-il décaisser, avec une TVA de 18 % ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "700 D"
+        },
+        {
+          "id": "b",
+          "text": "1 700 D"
+        },
+        {
+          "id": "c",
+          "text": "2 700 D"
+        },
+        {
+          "id": "d",
+          "text": "3 700 D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "TVA collectée : 47 200 × 18 ÷ 118 = 7 200 D. TVA déductible : 25 000 × 0,18 = 4 500 D. TVA à décaisser : 7 200 − 4 500 − 1 000 = 1 700 D. Oublier le crédit donne 2 700 D, l'ajouter 3 700 D, et le retrancher deux fois 700 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Le budget prévisionnel d'une quincaillerie montre une trésorerie négative en mars. Quelles mesures peuvent corriger ce creux ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Négocier un délai de paiement plus long avec les fournisseurs"
+        },
+        {
+          "id": "b",
+          "text": "Escompter des effets de commerce reçus des clients"
+        },
+        {
+          "id": "c",
+          "text": "Régler comptant des stocks supplémentaires non prévus"
+        },
+        {
+          "id": "d",
+          "text": "Obtenir un découvert bancaire pour le mois concerné"
+        },
+        {
+          "id": "e",
+          "text": "Raccourcir à 15 jours le délai accordé par les fournisseurs"
+        },
+        {
+          "id": "f",
+          "text": "Avancer d'un mois le paiement des salaires"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Retarder une sortie d'argent (délai fournisseurs plus long), avancer une rentrée (escompte d'effets) ou financer le creux par un découvert améliorent la trésorerie du mois. Payer comptant des stocks, réduire le délai des fournisseurs ou avancer les salaires font sortir l'argent plus tôt et aggravent le déficit.",
+      "difficulty": 2
+    }
+  ]
+}

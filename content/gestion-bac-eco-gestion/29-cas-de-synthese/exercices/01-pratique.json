@@ -1,0 +1,157 @@
+{
+  "title": "⭐ Exercice : Premiers pas — un outil par question",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Une question demande de suivre la part de marché de l'entreprise sur trois années. Quelles données faut-il relever dans l'énoncé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le chiffre d'affaires de l'entreprise chaque année, et celui du secteur pour la dernière année seulement"
+        },
+        {
+          "id": "b",
+          "text": "Le résultat de l'entreprise et le nombre de ses concurrents sur le marché local"
+        },
+        {
+          "id": "c",
+          "text": "Le prix de vente unitaire et le coût variable unitaire de chaque produit vendu"
+        },
+        {
+          "id": "d",
+          "text": "Le chiffre d'affaires de l'entreprise et celui du secteur, pour chacune des années"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une part de marché est un rapport entre deux chiffres d'affaires de la même année : celui de l'entreprise et celui de tout le secteur. Un seul chiffre d'affaires du secteur ne donne la part que d'une année ; le chiffre d'affaires de l'entreprise seul, le résultat, le nombre de concurrents ou les coûts unitaires ne permettent pas de former ce rapport.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le chiffre d'affaires d'une imprimerie passe de 750 000 D l'an dernier à 870 000 D cette année. Quel est son taux de croissance, en % ?",
+      "answerKey": {
+        "value": 16,
+        "unit": "%"
+      },
+      "explanation": "(870 000 − 750 000) × 100 ÷ 750 000 = 16 %. La base est l'année précédente : diviser par 870 000 donnerait environ 13,8 %, ce qui serait une erreur.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fabrique de pâtes vend à 20 D l'unité. Coûts unitaires : matières 6,20 D, main-d'œuvre 4,30 D, autres charges de fabrication 2 D ; frais de distribution égaux à 8 % du prix de vente. Quel est le coût de revient unitaire, en D ?",
+      "answerKey": {
+        "value": 14.1,
+        "unit": "D"
+      },
+      "explanation": "Coût de production : 6,20 + 4,30 + 2 = 12,50 D. Frais de distribution : 8 % × 20 = 1,60 D. Coût de revient = 12,50 + 1,60 = 14,10 D. Oublier la distribution ramènerait à 12,50 D.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour deux machines, on trouve une VAN de 52 000 D pour un projet de 400 000 D et de 61 000 D pour un projet de 650 000 D. Que retient-on d'après le critère de la VAN ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le premier projet, car il demande le moins de capitaux au départ"
+        },
+        {
+          "id": "b",
+          "text": "Le second projet, car sa VAN est la plus élevée des deux projets"
+        },
+        {
+          "id": "c",
+          "text": "Les deux projets à la fois, puisque les deux VAN sont positives"
+        },
+        {
+          "id": "d",
+          "text": "Le premier projet, car sa VAN rapportée au coût est la plus forte (13 % contre 9,4 %)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Entre deux projets rentables, le critère de la VAN retient celui dont la VAN est la plus élevée : ici 61 000 D. Le montant du coût initial n'entre pas dans cette règle de choix, et deux VAN positives ne dispensent pas de choisir quand on doit en retenir une seule. Rapporter la VAN au coût initial est un autre calcul : ce n'est pas le critère de la VAN.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un atelier a fabriqué 1 200 unités, chacune devant consommer 2 kg de matière préétablie à 3 D le kg. Il a en réalité utilisé 2 500 kg payés 3,20 D le kg. Quel est l'écart global sur la matière, en D (positif si défavorable) ?",
+      "answerKey": {
+        "value": 800,
+        "unit": "D"
+      },
+      "explanation": "Coût réel : 2 500 × 3,20 = 8 000 D. Coût préétabli de la production réelle : 1 200 × 2 × 3 = 7 200 D. Écart global = 8 000 − 7 200 = +800 D, défavorable. Prendre la quantité de la fiche sans la multiplier par la production réelle fausserait la base.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Pour une entreprise de textile, quelles opérations figurent parmi les décaissements de janvier dans son budget de trésorerie ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Achats de décembre réglés à 30 jours, payés en janvier"
+        },
+        {
+          "id": "b",
+          "text": "TVA à décaisser de décembre, versée en janvier"
+        },
+        {
+          "id": "c",
+          "text": "Dotation aux amortissements de la période"
+        },
+        {
+          "id": "d",
+          "text": "Métier à tisser acheté en janvier et payé comptant"
+        },
+        {
+          "id": "e",
+          "text": "Ventes de janvier à encaisser dans 30 jours"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Les achats de décembre payés à 30 jours, la TVA de décembre versée en janvier et le métier payé comptant sont de vraies sorties d'argent de janvier. La dotation aux amortissements n'est pas une dépense de caisse, et des ventes à encaisser plus tard sont des encaissements futurs, pas des décaissements.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un atelier, l'unité P demande 1 h de montage et 3 h de contrôle ; l'unité Q demande 2 h de montage et 1 h de contrôle. Après une panne, le montage ne dispose plus que de 80 % de ses 1 250 h et le contrôle de 80 % de ses 1 000 h, tous deux utilisés à plein. Combien d'unités Q fabrique-t-on ?",
+      "answerKey": {
+        "value": 440,
+        "unit": "unités"
+      },
+      "explanation": "Capacités réduites : 1 250 × 0,8 = 1 000 h et 1 000 × 0,8 = 800 h. Les égalités s'écrivent : x + 2y = 1 000 (montage, avec x unités P et y unités Q) et 3x + y = 800. Alors y = 800 − 3x, puis x + 1 600 − 6x = 1 000, donc x = 120 et y = 440. Contrôle : 120 + 880 = 1 000 et 360 + 440 = 800.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un dirigeant constate que la VAN d'un projet est exactement nulle au taux de 9 %. Que peut-il en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le projet ne rapporte rien du tout et fait perdre le coût initial entier"
+        },
+        {
+          "id": "b",
+          "text": "Le projet est très rentable, car ses flux sont égaux à son coût initial"
+        },
+        {
+          "id": "c",
+          "text": "Le projet rapporte plus de 9 %, puisque la VAN n'est pas négative"
+        },
+        {
+          "id": "d",
+          "text": "Le projet rapporte exactement les 9 % exigés, sans gain additionnel"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une VAN nulle signifie que les flux actualisés compensent exactement le coût initial : l'entreprise récupère ses fonds et la rémunération de 9 % exigée, sans plus. Ce n'est ni une perte totale ni un gain supplémentaire.",
+      "difficulty": 1
+    }
+  ]
+}

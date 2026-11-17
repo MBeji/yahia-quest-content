@@ -1,0 +1,165 @@
+{
+  "title": "Test de compréhension ⭐ : Les cas de synthèse",
+  "questions": [
+    {
+      "prompt": "Un énoncé de cas comporte trois dossiers et deux annexes à remplir. Que faire avant tout calcul ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remplir en premier l'annexe la plus longue, qui contient le plus de points à gagner"
+        },
+        {
+          "id": "b",
+          "text": "Calculer d'abord la VAN, car cet outil figure presque toujours dans le dernier dossier"
+        },
+        {
+          "id": "c",
+          "text": "Lire tout l'énoncé et les annexes, puis chercher l'outil de chaque question posée"
+        },
+        {
+          "id": "d",
+          "text": "Recopier les formules du cours en marge, puis chercher dans quel dossier les employer"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un cas se lit en entier avant qu'on calcule : une donnée utile (taux de TVA, panne, délai de règlement) peut se trouver plus bas, et le mot-clé de chaque question désigne l'outil à employer. Commencer par l'annexe la plus longue, par la VAN ou par les formules ne repose sur aucune lecture de l'énoncé.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associez chaque question de cas à l'outil qui y répond.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Quelles quantités occupent entièrement les deux ateliers ?"
+        },
+        {
+          "id": "l2",
+          "text": "Que dire de l'écart entre les coûts prévus et ceux de la fabrication ?"
+        },
+        {
+          "id": "l3",
+          "text": "Quelle machine choisir entre deux propositions ?"
+        },
+        {
+          "id": "l4",
+          "text": "Quel sera le solde de caisse à la fin du trimestre ?"
+        },
+        {
+          "id": "r3",
+          "text": "Comparaison des VAN, coût initial hors taxe"
+        },
+        {
+          "id": "r1",
+          "text": "Un système de deux égalités de capacité"
+        },
+        {
+          "id": "r4",
+          "text": "Encaissements et décaissements en toutes taxes comprises"
+        },
+        {
+          "id": "r2",
+          "text": "Réel moins préétabli, décomposé en coût et quantité"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le plein emploi se traduit par une égalité de capacité par atelier. Un écart se calcule toujours en retranchant le préétabli du réel. Un choix de machine s'appuie sur la VAN, avec un coût initial hors taxe. Un solde de caisse se tire d'un budget de trésorerie en toutes taxes comprises.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans l'atelier de la menuiserie Gharbi, un bureau demande 3 h de coupe et 2 h de finition, une étagère 1 h de coupe et 2 h de finition. La coupe dispose de 600 h et la finition de 500 h, toutes deux utilisées à plein. Combien de bureaux fabrique-t-on ?",
+      "answerKey": {
+        "value": 175,
+        "unit": "bureaux"
+      },
+      "explanation": "Égalités de plein emploi : 3x + y = 600 pour la coupe et 2x + 2y = 500, soit x + y = 250, pour la finition. En retranchant : 2x = 350, donc x = 175 bureaux et y = 75 étagères. Contrôle : 3 × 175 + 75 = 600 et 2 × 175 + 2 × 75 = 500.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La biscuiterie Karray a vendu pour 1 260 000 D sur un marché de 9 000 000 D, ses propres ventes comprises. Quelle est sa part de marché, en % ?",
+      "answerKey": {
+        "value": 14,
+        "unit": "%"
+      },
+      "explanation": "Part de marché = 1 260 000 ÷ 9 000 000 × 100 = 14 %. Le chiffre d'affaires du secteur contient déjà celui de l'entreprise : il ne faut pas l'ajouter de nouveau au dénominateur.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettez dans l'ordre les étapes de construction d'un budget de trésorerie mensuel.",
+      "options": [
+        {
+          "id": "s3",
+          "text": "Totaliser les encaissements et les décaissements de chaque mois"
+        },
+        {
+          "id": "s1",
+          "text": "Passer les ventes et les achats hors taxe en montants toutes taxes comprises"
+        },
+        {
+          "id": "s4",
+          "text": "Ajouter le solde du mois à la trésorerie du début de mois"
+        },
+        {
+          "id": "s2",
+          "text": "Répartir chaque montant TTC selon les délais de règlement, mois par mois"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "explanation": "On commence par les montants TTC, puisque le budget suit les sommes réellement payées ou reçues. On les répartit ensuite dans le temps selon les délais, on totalise par mois, et c'est seulement alors qu'on peut ajouter le solde à la trésorerie initiale.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un atelier a consommé 20 kg de matière de moins que prévu, mais l'a payée plus cher : écart sur quantité de −300 D, écart sur coût de +420 D. Que conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'écart global est de +120 D, défavorable : le prix a dépassé l'économie de matière"
+        },
+        {
+          "id": "b",
+          "text": "L'écart global est de −120 D, favorable : la matière économisée compense le prix"
+        },
+        {
+          "id": "c",
+          "text": "L'écart global est de +720 D, défavorable : les deux écarts s'additionnent en valeur"
+        },
+        {
+          "id": "d",
+          "text": "L'écart global est nul, car l'économie de matière annule exactement la hausse de prix"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'écart global est la somme algébrique des deux écarts : −300 + 420 = +120 D. Positif sur une charge, il est défavorable. Le problème vient du prix, pas de la consommation. Additionner les valeurs absolues ou donner le signe inverse revient à mal appliquer la règle « réel moins préétabli ».",
+      "difficulty": 2
+    }
+  ]
+}

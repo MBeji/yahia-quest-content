@@ -1,0 +1,170 @@
+{
+  "title": "⭐⭐ Révision (type examen) : ventes, TVA et trésorerie",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un négociant en boissons de Sidi Bouzid budgétise pour février 950 caisses à 45 D pièce, prix hors taxe ; la TVA est de 18 %. Combien facturera-t-il taxe comprise, en D ?",
+      "answerKey": {
+        "value": 50445,
+        "unit": "D"
+      },
+      "explanation": "Facturation HT : 950 × 45 = 42 750 D. Ventes TTC : 42 750 × 1,18 = 50 445 D, dont 7 695 D de TVA.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une entreprise de Zaghouan achète en mai pour 24 780 D toutes taxes comprises, TVA 18 %. Quelle TVA déductible inscrit-elle au budget de TVA de mai ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 890 D"
+        },
+        {
+          "id": "b",
+          "text": "3 780 D"
+        },
+        {
+          "id": "c",
+          "text": "4 460,40 D"
+        },
+        {
+          "id": "d",
+          "text": "21 000 D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La base de 18 % est le hors taxe : 24 780 ÷ 1,18 = 21 000 D HT, d'où une TVA de 21 000 × 0,18 = 3 780 D (soit 24 780 × 18 ÷ 118). Le montant 4 460,40 D applique 18 % au TTC, 21 000 D est la base HT, et 1 890 D prend la moitié de la TVA comme si elle suivait l'échéancier de paiement.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un expert-comptable de Monastir établit le budget de TVA d'un client. Classe les étapes dans l'ordre.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Retrancher de la collectée la déductible et le crédit antérieur"
+        },
+        {
+          "id": "a",
+          "text": "Établir les budgets des ventes et des achats hors taxe du mois"
+        },
+        {
+          "id": "b",
+          "text": "En tirer la TVA collectée et la TVA déductible du mois"
+        },
+        {
+          "id": "d",
+          "text": "Inscrire la somme due au budget des décaissements du mois suivant, ou reporter le crédit"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Les montants HT des budgets des ventes et des achats donnent la TVA collectée et la TVA déductible. On en tire la TVA due (collectée − déductible − crédit antérieur). Seul ce résultat peut être inscrit aux décaissements du mois suivant, ou reporté comme crédit.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Le budget de trésorerie d'une société de transport de Gafsa est négatif en août. Associe chaque mesure à son mécanisme.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Découvert bancaire"
+        },
+        {
+          "id": "l2",
+          "text": "Report du paiement d'un investissement"
+        },
+        {
+          "id": "l3",
+          "text": "Escompte d'effets de commerce"
+        },
+        {
+          "id": "l4",
+          "text": "Placement à court terme"
+        },
+        {
+          "id": "r1",
+          "text": "Emprunter à la banque à très court terme"
+        },
+        {
+          "id": "r2",
+          "text": "Différer un décaissement"
+        },
+        {
+          "id": "r3",
+          "text": "Anticiper un encaissement"
+        },
+        {
+          "id": "r4",
+          "text": "Employer un excédent de trésorerie"
+        }
+      ],
+      "explanation": "Le découvert est un emprunt de très court terme, le report d'investissement recule une sortie et l'escompte avance une entrée : trois façons de couvrir une insuffisance. Le placement, lui, emploie un excédent : il suppose une caisse positive.",
+      "difficulty": 2,
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      }
+    },
+    {
+      "prompt": "Une agence de voyages de Hammamet prévoit en avril : trésorerie initiale 3 000 D, encaissements 21 500 D, décaissements 13 500 D. Que conclut le gestionnaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un excédent de 8 000 D, à placer à court terme"
+        },
+        {
+          "id": "b",
+          "text": "Un excédent de 11 000 D, à placer à court terme"
+        },
+        {
+          "id": "c",
+          "text": "Une insuffisance de 5 000 D, à couvrir par un découvert"
+        },
+        {
+          "id": "d",
+          "text": "Un excédent de 11 000 D, à couvrir par un découvert"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Trésorerie finale = 3 000 + 21 500 − 13 500 = 11 000 D : un excédent, que l'on peut placer. Un excédent de 8 000 D oublie la trésorerie initiale ; une insuffisance de 5 000 D inverse encaissements et décaissements ; couvrir un excédent par un découvert n'a pas de sens, malgré un calcul juste.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une conserverie de Nabeul démarre le mois avec 6 200 D. Elle encaisse 31 400 D de ventes et 20 000 D d'un emprunt, et décaisse 44 900 D. Quelle est sa trésorerie finale, en D ?",
+      "answerKey": {
+        "value": 12700,
+        "unit": "D"
+      },
+      "explanation": "Les encaissements comptent aussi l'emprunt obtenu : 31 400 + 20 000 = 51 400 D. Trésorerie finale = 6 200 + 51 400 − 44 900 = 12 700 D.",
+      "difficulty": 2
+    }
+  ]
+}
