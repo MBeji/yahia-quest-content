@@ -1,0 +1,149 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les maîtres des amides",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Un élève nomme « N-butyléthanamide » l'amide de formule suivante. Quel est son nom correct ?\nCH₃–CH₂–CH₂–CO–NH–CH₂–CH₃",
+      "options": [
+        {
+          "id": "a",
+          "text": "N-butyléthanamide"
+        },
+        {
+          "id": "b",
+          "text": "N-éthylbutanamide"
+        },
+        {
+          "id": "c",
+          "text": "N-éthylpropanamide"
+        },
+        {
+          "id": "d",
+          "text": "hexanamide"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La chaîne CH₃–CH₂–CH₂–CO compte 4 carbones, celui du C=O compris : c'est la base butanamide. Le groupe éthyle fixé sur l'azote s'écrit en préfixe : N-éthylbutanamide ✓. N-butyléthanamide échange les rôles : c'est le nom de CH₃–CO–NH–CH₂–CH₂–CH₂–CH₃. N-éthylpropanamide oublie le carbone du C=O. Hexanamide ignore l'azote, qui sépare la molécule en deux parties et n'appartient pas à la chaîne carbonée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un amide aliphatique saturé CₙH₂ₙ₊₁ON contient 13,9 % d'azote en masse (N : 14 g·mol⁻¹). Quelle est la valeur de n, nombre entier ?",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "La molécule ne contient qu'un seul azote, donc M = 14/0,139 ≈ 101 g·mol⁻¹. Or M = 14n + 31, d'où n = (101 − 31)/14 = 5 ✓ (n est entier, 4,98 est arrondi à 5) : l'amide est C₅H₁₁ON, qui contient bien 14/101 = 13,9 % d'azote.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On fait réagir 0,250 mol de HOOC–(CH₂)₃–COOH et 0,250 mol de H₂N–(CH₂)₄–NH₂ pour former un polyamide ; on admet que tous les groupes –COOH et –NH₂ réagissent. Quelle masse d'eau est libérée, en g, arrondie au dixième ? (M(H₂O) = 18,0 g·mol⁻¹)",
+      "answerKey": {
+        "value": 9.0,
+        "tolerance": 0.1,
+        "unit": "g"
+      },
+      "explanation": "Chaque molécule de diacide porte 2 groupes –COOH : 0,250 mol de diacide apporte 0,500 mol de –COOH, qui réagissent avec 0,500 mol de –NH₂ (0,250 mol de diamine × 2). Il se forme donc 0,500 mol de groupes amide, soit 0,500 mol d'eau, de masse 0,500 × 18,0 = 9,0 g ✓. Ne compter qu'une molécule d'eau par motif (0,250 mol) donnerait seulement 4,5 g.",
+      "difficulty": 3
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque observation expérimentale à son interprétation.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Un papier pH humide vire au bleu au-dessus d'éthanamide chauffé avec de la soude"
+        },
+        {
+          "id": "l2",
+          "text": "Un papier pH humide vire au rouge au-dessus d'éthanamide chauffé avec de l'acide sulfurique"
+        },
+        {
+          "id": "l3",
+          "text": "Un dépôt blanc apparaît sur les parois hautes d'un tube où l'on chauffe de l'éthanoate d'ammonium"
+        },
+        {
+          "id": "l4",
+          "text": "Un film se forme à l'interface entre du chlorure d'adipyle dans le cyclohexane et une solution aqueuse d'hexaméthylène diamine"
+        },
+        {
+          "id": "r1",
+          "text": "Le dégagement d'ammoniac NH₃"
+        },
+        {
+          "id": "r2",
+          "text": "Les vapeurs d'acide éthanoïque"
+        },
+        {
+          "id": "r3",
+          "text": "L'éthanamide solide formé par déshydratation"
+        },
+        {
+          "id": "r4",
+          "text": "Le nylon 6,6, un polyamide"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "En milieu basique, l'hydrolyse de l'éthanamide libère de l'ammoniac, gaz basique qui fait virer le papier au bleu. En milieu acide, le produit est l'acide éthanoïque, dont les vapeurs font virer le papier au rouge. Le chauffage de l'éthanoate d'ammonium le déshydrate en éthanamide, solide au-dessous de 82 °C, qui se dépose sur les parois plus froides. À l'interface entre le dichlorure du diacide et la diamine, il se forme le polyamide nylon 6,6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un amide N-monosubstitué A, de masse molaire 129 g·mol⁻¹, est hydrolysé en milieu acide : on obtient l'acide propanoïque et un ion alkylammonium dont l'amine a une chaîne linéaire. Quel est l'amide A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N-butylpropanamide"
+        },
+        {
+          "id": "b",
+          "text": "N-propylbutanamide"
+        },
+        {
+          "id": "c",
+          "text": "N-éthylpentanamide"
+        },
+        {
+          "id": "d",
+          "text": "N-méthylhexanamide"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "M = 129 donne n = (129 − 31)/14 = 7 : C₇H₁₅ON, formule des quatre candidats. L'acide obtenu est l'acide propanoïque : la chaîne acyle compte 3 carbones, et il en reste 4 sur l'azote, en chaîne linéaire : CH₃–CH₂–CO–NH–CH₂–CH₂–CH₂–CH₃, le N-butylpropanamide ✓. Le N-propylbutanamide donnerait l'acide butanoïque, le N-éthylpentanamide l'acide pentanoïque, et le N-méthylhexanamide donnerait l'acide hexanoïque.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un mélange contient 4,35 g de N-éthyléthanamide, CH₃–CO–NH–C₂H₅, et 40,0 mL de soude à 1,00 mol·L⁻¹. L'hydrolyse se poursuit jusqu'à la disparition du réactif limitant. Donner la masse maximale d'éthanoate de sodium CH₃–CO₂Na formé, en g, arrondie au centième (C 12, H 1, N 14, O 16, Na 23 g·mol⁻¹).",
+      "answerKey": {
+        "value": 3.28,
+        "tolerance": 0.02,
+        "unit": "g"
+      },
+      "explanation": "La formule de l'amide est C₄H₉ON, de masse molaire 48 + 9 + 14 + 16 = 87 g·mol⁻¹, d'où n(amide) = 4,35/87 = 0,0500 mol. Les ions hydroxyde valent 0,0400 L × 1,00 = 0,0400 mol. Comme CH₃–CO–NH–C₂H₅ + OH⁻ ⟶ CH₃–CO₂⁻ + C₂H₅–NH₂ a des coefficients égaux à 1, les ions hydroxyde sont le réactif limitant : 0,0400 mol d'éthanoate se forme. M(CH₃–CO₂Na) = 24 + 3 + 32 + 23 = 82 g·mol⁻¹, donc m = 0,0400 × 82 = 3,28 g ✓. Partir des 0,0500 mol d'amide donnerait 4,10 g, valeur inatteignable.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les maîtres de la pile",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Trois piles du type Daniell, à concentrations égales, donnent : Cu | Cu²⁺ || Ni²⁺ | Ni avec E < 0 ; Ni | Ni²⁺ || Zn²⁺ | Zn avec E < 0 ; Zn | Zn²⁺ || Mg²⁺ | Mg avec E < 0. Quel est le classement par pouvoir réducteur croissant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cu < Ni < Zn < Mg"
+        },
+        {
+          "id": "b",
+          "text": "Mg < Zn < Ni < Cu"
+        },
+        {
+          "id": "c",
+          "text": "Cu < Zn < Ni < Mg"
+        },
+        {
+          "id": "d",
+          "text": "Ni < Cu < Zn < Mg"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "E < 0 signifie borne + à gauche et oxydation du métal de droite : dans chaque pile, le métal de droite est donc le plus réducteur. On lit Ni > Cu, Zn > Ni et Mg > Zn, d'où Cu < Ni < Zn < Mg ✓. Le classement inverse lit trois fois E > 0. Permuter Ni et Zn, ou Cu et Ni, revient à lire à l'envers le signe d'une seule des piles.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi les couples suivants, cocher tous ceux qui permettent de réaliser avec le couple Zn²⁺/Zn une pile du type pile Daniell telle qu'étudiée dans ce chapitre (deux métaux attaquables, ions de même charge).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fe²⁺/Fe"
+        },
+        {
+          "id": "b",
+          "text": "Fe³⁺/Fe²⁺"
+        },
+        {
+          "id": "c",
+          "text": "Pb²⁺/Pb"
+        },
+        {
+          "id": "d",
+          "text": "Ag⁺/Ag"
+        },
+        {
+          "id": "e",
+          "text": "Ni²⁺/Ni"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Une pile du type Daniell associe deux métaux attaquables dont les ions ont la même charge que Zn²⁺, soit 2+ : Fe²⁺/Fe, Pb²⁺/Pb et Ni²⁺/Ni conviennent ✓. Fe³⁺/Fe²⁺ n'a pas d'électrode métallique attaquable : l'espèce réduite est un ion. Ag⁺/Ag porte un ion de charge 1+ : une pile zinc-argent existe, mais elle sort du cadre n = m de ce chapitre.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La pile Ni | Ni²⁺ (0,10 mol·L⁻¹) || Zn²⁺ (0,10 mol·L⁻¹) | Zn a une f.é.m. E = −0,53 V. On la réécrit avec le zinc à gauche et le nickel à droite, mêmes solutions. Quelle affirmation est exacte pour ce second schéma ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E = +0,53 V, la réaction s'inverse et le zinc devient la borne +"
+        },
+        {
+          "id": "b",
+          "text": "E = +0,53 V, la même réaction a lieu et le zinc reste la borne −"
+        },
+        {
+          "id": "c",
+          "text": "E = −0,53 V, car la valeur mesurée ne dépend pas du schéma"
+        },
+        {
+          "id": "d",
+          "text": "E = +0,53 V, la même réaction a lieu mais le nickel devient la borne −"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans le premier schéma, E < 0 : la borne + est à gauche (nickel), le zinc est la borne − et s'oxyde, Zn + Ni²⁺ → Zn²⁺ + Ni. Permuter les demi-piles ne change ni la réaction ni la polarité : le zinc reste la borne − ✓. Seul E = V_D − V_G change de signe : E = V_Ni − V_Zn = +0,53 V. Dire que la réaction s'inverse, que le nickel devient la borne −, ou que E garde son signe oublie que le signe de E dépend du schéma.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Sur une tôle de fer, une goutte d'eau salée forme une micropile en court-circuit. Cocher toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "À l'anode, le fer s'oxyde en ions Fe²⁺."
+        },
+        {
+          "id": "b",
+          "text": "À la cathode, le dioxygène dissous est réduit."
+        },
+        {
+          "id": "c",
+          "text": "La cathode est le pôle négatif de la micropile."
+        },
+        {
+          "id": "d",
+          "text": "Les électrons traversent la goutte d'eau salée de l'anode à la cathode."
+        },
+        {
+          "id": "e",
+          "text": "L'eau salée joue le rôle d'électrolyte, conducteur ionique."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "À l'anode, Fe → Fe²⁺ + 2 e⁻ : le fer s'oxyde ✓. À la cathode, O₂ + 2 H₂O + 4 e⁻ → 4 OH⁻ : le dioxygène dissous est réduit ✓. L'eau salée est le conducteur ionique, l'électrolyte de la micropile ✓. La cathode, siège de la réduction, est le pôle + et non le pôle négatif. Les électrons ne circulent que dans le métal, qui fait office de fil en court-circuit ; dans la goutte, le courant est porté par les ions.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans une micropile de corrosion, on observe à l'anode Fe → Fe²⁺ + 2 e⁻ et à la cathode O₂ + 2 H₂O + 4 e⁻ → 4 OH⁻. Quelle est l'équation bilan de la réaction ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fe + O₂ + 2 H₂O → Fe²⁺ + 4 OH⁻"
+        },
+        {
+          "id": "b",
+          "text": "2 Fe + O₂ + 2 H₂O + 4 e⁻ → 2 Fe²⁺ + 4 OH⁻"
+        },
+        {
+          "id": "c",
+          "text": "2 Fe + O₂ + 2 H₂O → 2 Fe²⁺ + 4 OH⁻"
+        },
+        {
+          "id": "d",
+          "text": "4 Fe + O₂ + 2 H₂O → 4 Fe²⁺ + 4 OH⁻"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La cathode capte 4 électrons, l'anode n'en cède que 2 par atome de fer : il faut doubler la demi-équation du fer. En additionnant 2 Fe → 2 Fe²⁺ + 4 e⁻ et O₂ + 2 H₂O + 4 e⁻ → 4 OH⁻, les 4 électrons disparaissent : 2 Fe + O₂ + 2 H₂O → 2 Fe²⁺ + 4 OH⁻, avec 0 de charge de chaque côté ✓. Avec un seul fer, la charge à droite vaut 2− et non 0. Avec 4 Fe elle vaut 4+. Laisser 4 e⁻ dans le bilan ne s'écrit jamais, car les électrons s'annulent.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "À concentrations égales, on donne pour chaque pile le signe de sa f.é.m. Cocher toutes les affirmations exactes sur la réaction qui a lieu quand la pile débite.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fe | Fe²⁺ || Cu²⁺ | Cu, E > 0 : Fe + Cu²⁺ → Fe²⁺ + Cu"
+        },
+        {
+          "id": "b",
+          "text": "Cu | Cu²⁺ || Pb²⁺ | Pb, E < 0 : Cu + Pb²⁺ → Cu²⁺ + Pb"
+        },
+        {
+          "id": "c",
+          "text": "Zn | Zn²⁺ || Ni²⁺ | Ni, E > 0 : Zn + Ni²⁺ → Zn²⁺ + Ni"
+        },
+        {
+          "id": "d",
+          "text": "Cu | Cu²⁺ || Zn²⁺ | Zn, E < 0 : Zn + Cu²⁺ → Zn²⁺ + Cu"
+        },
+        {
+          "id": "e",
+          "text": "Ni | Ni²⁺ || Cu²⁺ | Cu, E > 0 : Cu + Ni²⁺ → Cu²⁺ + Ni"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "E > 0 donne la réaction directe de l'équation associée (a, c) et E < 0 la réaction inverse (d) ✓. Pour b, E < 0 impose Pb + Cu²⁺ → Pb²⁺ + Cu, et non la réaction directe Cu + Pb²⁺ → Cu²⁺ + Pb. Pour e, E > 0 impose Ni + Cu²⁺ → Ni²⁺ + Cu, et non la réaction écrite.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les maîtres de l'échelle des potentiels",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Une lame de métal M plongée dans une solution d'ions M′²⁺ à 1,0 mol·L⁻¹ ne montre aucun dépôt après une heure, alors que E°(M′²⁺/M′) > E°(M²⁺/M). Quelle conclusion est la plus rigoureuse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La réaction est possible mais si lente qu'on ne l'observe pas"
+        },
+        {
+          "id": "b",
+          "text": "La réaction est impossible : ce qu'on n'observe pas ne se produit pas"
+        },
+        {
+          "id": "c",
+          "text": "La réaction est possible, donc elle doit se produire en quelques minutes"
+        },
+        {
+          "id": "d",
+          "text": "La réaction a lieu seulement si un catalyseur la rend spontanée"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "E°(M′²⁺/M′) > E°(M²⁺/M) donne K > 1 : la réaction est spontanée, mais le potentiel ne renseigne pas sur sa vitesse ; une vitesse pratiquement nulle donne un équilibre métastable ✓. Conclure à l'impossibilité parce qu'on n'observe rien confond absence d'observation et impossibilité. Attendre une réaction rapide dès qu'elle est possible confond spontanéité et vitesse. Un catalyseur n'agit que sur la vitesse : il ne rend pas spontanée une réaction qui ne l'est pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la pile Al | Al³⁺ || M³⁺ | M, les deux ions ont la charge 3+. On donne E°(Al³⁺/Al) = −1,66 V et E°(M³⁺/M) = −0,74 V. Quelle est la valeur de log K pour l'équation associée à 25 °C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15,3"
+        },
+        {
+          "id": "b",
+          "text": "30,7"
+        },
+        {
+          "id": "c",
+          "text": "46,0"
+        },
+        {
+          "id": "d",
+          "text": "92,0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La f.é.m. standard est E° = −0,74 − (−1,66) = +0,92 V. Avec n = 3 : log K = nE°/0,06 = 3 × 0,92/0,06 = 46,0 ✓. La valeur 15,3 oublie le facteur n (0,92/0,06). La valeur 30,7 applique n = 2 par habitude. La valeur 92,0 emploie 0,03 au lieu de 0,06, le coefficient du cas n = 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le schéma donne les potentiels standards de trois couples fictifs A²⁺/A, B²⁺/B et C²⁺/C (ions de même charge) et celui de H₃O⁺/H₂. On réalise six expériences, toutes avec des solutions à 1,0 mol·L⁻¹ : A dans B²⁺, A dans C²⁺, B dans C²⁺, C dans B²⁺, B dans H₃O⁺ et C dans H₃O⁺. Combien d'entre elles donnent une réaction spontanée ?\n<svg viewBox=\"0 0 300 200\"><title>Potentiels standards de trois couples fictifs et du couple H₃O⁺/H₂</title>\n<line x1=\"110\" y1=\"14\" x2=\"110\" y2=\"188\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<line x1=\"100\" y1=\"43.2\" x2=\"120\" y2=\"43.2\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<text x=\"128\" y=\"46.7\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">C²⁺/C  E° = +0,25 V</text>\n<line x1=\"100\" y1=\"81.8\" x2=\"120\" y2=\"81.8\" stroke=\"#b45309\" stroke-width=\"1.8\"/>\n<text x=\"128\" y=\"85.3\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#b45309\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">H₃O⁺/H₂  E° = 0,00 V</text>\n<line x1=\"100\" y1=\"112.7\" x2=\"120\" y2=\"112.7\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<text x=\"128\" y=\"116.2\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">B²⁺/B  E° = −0,20 V</text>\n<line x1=\"100\" y1=\"166.8\" x2=\"120\" y2=\"166.8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<text x=\"128\" y=\"170.3\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">A²⁺/A  E° = −0,55 V</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un métal est oxydé si son couple a un E° inférieur à celui de l'oxydant. A (−0,55 V) réduit B²⁺ (−0,20 V) et C²⁺ (+0,25 V) ✓✓. B (−0,20 V) réduit C²⁺ ✓ et il est attaqué par H₃O⁺ (0,00 V) ✓. En revanche C (+0,25 V) ne réduit ni B²⁺ ni H₃O⁺. Il y a donc 4 réactions. Répondre 3 oublie l'attaque de B par l'acide ; répondre 5 compte à tort C dans B²⁺ ; répondre 6 compte toutes les expériences sans comparer les potentiels.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une pile Zn | Zn²⁺ || Fe²⁺ | Fe, épuisée, contient à 25 °C [Zn²⁺] = 0,50 mol·L⁻¹ et [Fe²⁺] = 1,1 × 10⁻¹¹ mol·L⁻¹. Déterminer E° de cette pile, en volts, au centième.",
+      "answerKey": {
+        "value": 0.32,
+        "tolerance": 0.005,
+        "unit": "V"
+      },
+      "explanation": "À l'équilibre, E = 0 et Π = K, donc E° = (0,06/n) log K avec n = 2. Π = [Zn²⁺]/[Fe²⁺] = 0,50/(1,1 × 10⁻¹¹) ≈ 4,5 × 10¹⁰, donc log K ≈ 10,66 et E° = 0,03 × 10,66 ≈ 0,32 V ✓. On retrouve E°(Fe²⁺/Fe) − E°(Zn²⁺/Zn) = −0,44 − (−0,76) = 0,32 V, la valeur donnée par les potentiels standards.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "La pile Fe | Fe²⁺ (2,0 mol·L⁻¹) || Ni²⁺ (1,0 × 10⁻⁸ mol·L⁻¹) | Ni a pour f.é.m. standard E° = +0,18 V et pour constante K = 10⁶ à 25 °C. Cocher toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Π est supérieure à K."
+        },
+        {
+          "id": "b",
+          "text": "La f.é.m. E est négative."
+        },
+        {
+          "id": "c",
+          "text": "La borne + est du côté de la lame de fer."
+        },
+        {
+          "id": "d",
+          "text": "La lame de fer s'amincit."
+        },
+        {
+          "id": "e",
+          "text": "La f.é.m. standard de cette pile est négative."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Π = [Fe²⁺]/[Ni²⁺] = 2,0/(1,0 × 10⁻⁸) = 2 × 10⁸, supérieur à K = 10⁶ ✓. Alors E = 0,18 − 0,03 × log(2 × 10⁸) = 0,18 − 0,25 ≈ −0,07 V, négative ✓ ; la borne + est à gauche, côté fer ✓, et c'est la réaction inverse qui a lieu : Fe²⁺ + Ni → Fe + Ni²⁺. Le fer se dépose donc au lieu de s'amincir. Quant à E°, il vaut +0,18 V et ne dépend pas des concentrations.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans la pile M | M²⁺ (1,0 mol·L⁻¹) || Cu²⁺ (1,0 mol·L⁻¹) | Cu, on mesure E = +0,47 V à 25 °C. On donne E°(Cu²⁺/Cu) = +0,34 V. Quelle est la valeur de E°(M²⁺/M) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+0,81 V"
+        },
+        {
+          "id": "b",
+          "text": "+0,13 V"
+        },
+        {
+          "id": "c",
+          "text": "−0,13 V"
+        },
+        {
+          "id": "d",
+          "text": "−0,81 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les concentrations valent 1,0 mol·L⁻¹ : Π = 1, donc E = E° = 0,47 V. Avec E° = E°_D − E°_G, 0,47 = 0,34 − E°(M²⁺/M), d'où E°(M²⁺/M) = 0,34 − 0,47 = −0,13 V ✓ : le métal est le plomb. La valeur +0,13 V soustrait dans le mauvais sens (0,47 − 0,34). La valeur +0,81 V additionne les deux nombres (0,47 + 0,34). La valeur −0,81 V est l'opposé de cette somme.",
+      "difficulty": 3
+    }
+  ]
+}

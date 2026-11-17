@@ -1,0 +1,125 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des courbes de dosage",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "On dose 20,0 mL de méthylamine CH₃NH₂ à 5,0·10⁻² mol·L⁻¹ par de l'acide chlorhydrique à 5,0·10⁻² mol·L⁻¹ ; pKₐ(CH₃NH₃⁺/CH₃NH₂) = 10,7. Calculer le pH à l'équivalence à 25 °C, arrondi au centième.",
+      "answerKey": {
+        "value": 6.15,
+        "tolerance": 0.03
+      },
+      "explanation": "L'équivalence est atteinte pour V_E = C_B·V_B/C_A = 20,0 mL. La solution équivaut à du chlorure de méthylammonium dissous dans 20,0 + 20,0 = 40,0 mL : C_E = 5,0·10⁻² × 20,0/40,0 = 2,5·10⁻² mol·L⁻¹. L'ion CH₃NH₃⁺ est un acide faible : pH_E = ½ (pKₐ − log C_E) = ½ (10,7 + 1,60) = 6,15 ✓. Employer la formule d'une base faible, ½ (14 + pKₐ + log C_E), donnerait 11,55, valeur basique, impossible pour une solution acide.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux acides faibles HA₁ et HA₂, de même concentration, sont dosés à volumes égaux par la même soude. Les pH à la demi-équivalence valent 3,8 pour HA₁ et 4,9 pour HA₂. Quel acide a le pH à l'équivalence le plus élevé, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "HA₁, car son pH à la demi-équivalence est le plus bas"
+        },
+        {
+          "id": "b",
+          "text": "HA₁, car c'est l'acide le plus fort"
+        },
+        {
+          "id": "c",
+          "text": "HA₂, car sa base conjuguée est la plus faible"
+        },
+        {
+          "id": "d",
+          "text": "HA₂, car sa base conjuguée est la plus forte"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À la demi-équivalence pH = pKₐ : pKₐ(HA₁) = 3,8 et pKₐ(HA₂) = 4,9, donc HA₂ est l'acide le plus faible et sa base conjuguée A₂⁻ la plus forte. À l'équivalence, les concentrations C_E sont égales et pH_E = ½ (14 + pKₐ + log C_E) croît avec le pKₐ : HA₂ a le pH_E le plus élevé ✓. Un pH de demi-équivalence plus bas ou un acide plus fort, comme HA₁, donnent au contraire un pH_E plus bas. Une base conjuguée plus faible correspond à un acide plus fort, donc à HA₁.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un produit de nettoyage à l'ammoniac est dilué 20 fois. On dose 20,0 mL de la solution diluée par de l'acide chlorhydrique à 0,100 mol·L⁻¹ ; l'équivalence est atteinte pour V_E = 14,6 mL. Calculer la concentration massique en ammoniac du produit d'origine, en g·L⁻¹, arrondie au dixième ; M(NH₃) = 17,0 g·mol⁻¹.",
+      "answerKey": {
+        "value": 24.8,
+        "tolerance": 0.2,
+        "unit": "g·L⁻¹"
+      },
+      "explanation": "À l'équivalence C_B·V_B = C_A·V_E : C_dil = 0,100 × 14,6/20,0 = 7,30·10⁻² mol·L⁻¹. Le produit d'origine est 20 fois plus concentré : C₀ = 20 × 7,30·10⁻² = 1,46 mol·L⁻¹. Alors C_m = C₀·M = 1,46 × 17,0 = 24,8 g·L⁻¹ ✓. Oublier le facteur de dilution donnerait 7,30·10⁻² × 17,0 = 1,24 g·L⁻¹, valeur vingt fois trop petite.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "On dose 20,0 mL d'une solution d'acide faible par de la soude. Avant le dosage, on ajoute 30,0 mL d'eau dans le bécher. Quelles affirmations sont exactes à 25 °C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le volume équivalent V_E est inchangé"
+        },
+        {
+          "id": "b",
+          "text": "Le pH à la demi-équivalence est inchangé"
+        },
+        {
+          "id": "c",
+          "text": "Le pH initial est inchangé"
+        },
+        {
+          "id": "d",
+          "text": "Le pH à l'équivalence diminue"
+        },
+        {
+          "id": "e",
+          "text": "Le volume équivalent est multiplié par 2,5"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "L'eau ajoutée ne change pas la quantité d'acide à doser : V_E reste le même ✓ et il n'est pas multiplié par 2,5. À la demi-équivalence [acide] = [base] quels que soient les volumes : pH = pKₐ, inchangé ✓. À l'équivalence, la concentration C_E du sel est plus petite, donc log C_E et pH_E = ½ (14 + pKₐ + log C_E) diminuent ✓. Le pH initial, lui, n'est pas inchangé : pH = ½ (pKₐ − log C) augmente d'environ ½ log 2,5 = 0,20 quand C est divisée par 2,5.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On dose 20,0 mL d'une solution de base faible B par de l'acide chlorhydrique à 0,100 mol·L⁻¹ ; la courbe pH = f(V_A) est donnée ci-dessous. Calculer la concentration C_B de la base, exprimée en 10⁻² mol·L⁻¹, arrondie au dixième.\n<svg viewBox=\"0 0 340 236\"><title>Courbe de dosage d'une base faible par un acide fort</title><line x1=\"108.4\" y1=\"190\" x2=\"108.4\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"162.8\" y1=\"190\" x2=\"162.8\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"217.2\" y1=\"190\" x2=\"217.2\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"271.6\" y1=\"190\" x2=\"271.6\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"326\" y1=\"190\" x2=\"326\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"166\" x2=\"326\" y2=\"166\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"142\" x2=\"326\" y2=\"142\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"118\" x2=\"326\" y2=\"118\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"94\" x2=\"326\" y2=\"94\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"70\" x2=\"326\" y2=\"70\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"46\" x2=\"326\" y2=\"46\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"22\" x2=\"326\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/>\n<polygon points=\"54,12 50,20 58,20\" fill=\"#0f172a\"/>\n<line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"54\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text>\n<line x1=\"108.4\" y1=\"190\" x2=\"108.4\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"108.4\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text>\n<line x1=\"162.8\" y1=\"190\" x2=\"162.8\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"162.8\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text>\n<line x1=\"217.2\" y1=\"190\" x2=\"217.2\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"217.2\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">15</text>\n<line x1=\"271.6\" y1=\"190\" x2=\"271.6\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"271.6\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text>\n<line x1=\"326\" y1=\"190\" x2=\"326\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"326\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">25</text>\n<line x1=\"50\" y1=\"190\" x2=\"54\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"194\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text>\n<line x1=\"50\" y1=\"166\" x2=\"54\" y2=\"166\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"170\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text>\n<line x1=\"50\" y1=\"142\" x2=\"54\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"146\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text>\n<line x1=\"50\" y1=\"118\" x2=\"54\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"122\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text>\n<line x1=\"50\" y1=\"94\" x2=\"54\" y2=\"94\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"98\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text>\n<line x1=\"50\" y1=\"70\" x2=\"54\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"74\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text>\n<line x1=\"50\" y1=\"46\" x2=\"54\" y2=\"46\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"50\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text>\n<line x1=\"50\" y1=\"22\" x2=\"54\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"26\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">14</text>\n<text x=\"326\" y=\"221\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">V_A (mL)</text>\n<text x=\"60\" y=\"10\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">pH</text>\n<polyline points=\"54,54.51 56,55.78 58,56.99 60,58.12 62,59.15 64,60.08 66,60.93 68,61.7 70,62.41 72,63.07 74,63.68 76,64.26 78,64.8 80,65.32 82,65.81 84,66.29 86,66.74 88,67.19 90,67.62 92,68.04 94,68.45 96,68.85 98,69.24 100,69.63 102,70.02 104,70.4 106,70.78 108,71.16 110,71.55 112,71.93 114,72.31 116,72.7 118,73.09 120,73.49 122,73.89 124,74.3 126,74.72 128,75.16 130,75.6 132,76.06 134,76.55 136,77.05 138,77.58 140,78.14 142,78.73 144,79.38 146,80.08 148,80.85 149.74,81.6 150,81.72 150.83,82.11 151.92,82.67 152,82.71 153.01,83.27 154,83.88 154.1,83.94 155.18,84.69 156,85.33 156.27,85.55 157.36,86.56 158,87.24 158.45,87.78 159.54,89.33 160,90.15 160.62,91.5 161.17,93.02 161.3,93.48 161.44,93.98 161.58,94.54 161.71,95.16 161.85,95.86 161.98,96.67 162,96.78 162.12,97.63 162.26,98.8 162.39,100.3 162.53,102.42 162.66,106.03 162.8,121.74 162.94,137.45 163.07,141.05 163.21,143.16 163.34,144.65 163.48,145.81 163.62,146.76 163.75,147.56 163.89,148.26 164,148.77 164.02,148.87 164.16,149.42 164.3,149.91 164.43,150.36 164.98,151.85 166,153.85 166.06,153.95 167.15,155.43 168,156.34 168.24,156.58 169.33,157.51 170,158.01 170.42,158.3 171.5,158.97 172,159.26 172.59,159.57 173.68,160.1 174,160.25 174.77,160.58 175.86,161.02 176,161.08 178,161.78 180,162.39 182,162.94 184,163.42 186,163.86 188,164.26 190,164.63 192,164.97 194,165.29 196,165.58 198,165.86 200,166.12 202,166.36 204,166.59 206,166.81 208,167.02 210,167.22 212,167.41 214,167.59 216,167.76 218,167.92 220,168.08 222,168.23 224,168.38 226,168.52 228,168.66 230,168.79 232,168.91 234,169.04 236,169.15 238,169.27 240,169.38 242,169.49 244,169.59 246,169.69 248,169.79 250,169.89 252,169.98 254,170.07 256,170.16 258,170.24 260,170.33 262,170.41 264,170.49 266,170.57 268,170.64 270,170.72 272,170.79 274,170.86 276,170.93 278,171 280,171.06 282,171.13 284,171.19 286,171.25 288,171.31 290,171.37 292,171.43 294,171.49 296,171.55 298,171.6 300,171.65 302,171.71 304,171.76 306,171.81 308,171.86 310,171.91 312,171.96 314,172.01 316,172.05 318,172.1 320,172.14 322,172.19 324,172.23 326,172.27\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>",
+      "answerKey": {
+        "value": 5.0,
+        "tolerance": 0.4,
+        "unit": "10⁻² mol·L⁻¹"
+      },
+      "explanation": "L'équivalence se lit au saut de pH, à V_E = 10,0 mL. Alors C_B·V_B = C_A·V_E donne C_B = 0,100 × 10,0/20,0 = 5,0·10⁻² mol·L⁻¹, soit 5 en unités de 10⁻² mol·L⁻¹ ✓. Le volume de base est 20,0 mL, celui du bécher, et non V_E : confondre les deux donnerait 1,0·10⁻¹ mol·L⁻¹, valeur double.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On prépare une solution tampon de pH 4,9 à 0,05 près, avec de l'acide éthanoïque (pKₐ = 4,75) et de l'éthanoate de sodium, deux solutions à 0,10 mol·L⁻¹. Quel mélange convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "28,0 mL d'acide et 20,0 mL d'éthanoate"
+        },
+        {
+          "id": "b",
+          "text": "20,0 mL d'acide et 28,0 mL d'éthanoate"
+        },
+        {
+          "id": "c",
+          "text": "20,0 mL d'acide et 20,0 mL d'éthanoate"
+        },
+        {
+          "id": "d",
+          "text": "20,0 mL d'acide et 50,0 mL d'éthanoate"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les deux solutions ont la même concentration : le rapport [base]/[acide] est le rapport des volumes. Pour pH = 4,9, log ([base]/[acide]) = 4,9 − 4,75 = 0,15, soit un rapport de 1,4 : 20,0 mL d'acide et 28,0 mL d'éthanoate donnent pH = 4,75 + log 1,4 = 4,90 ✓. Le mélange inversé donne 4,75 − 0,15 = 4,60. Des volumes égaux donnent pH = pKₐ = 4,75. Le rapport 2,5 donne pH = 4,75 + 0,40 = 5,15.",
+      "difficulty": 3
+    }
+  ]
+}

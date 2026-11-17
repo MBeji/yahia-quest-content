@@ -1,0 +1,137 @@
+{
+  "title": "⭐ Exercice : premiers pas avec la f.é.m. et le potentiel standard",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Pile Co | Co²⁺ (0,10 mol·L⁻¹) || Pb²⁺ (0,010 mol·L⁻¹) | Pb. Calculer la valeur de la fonction usuelle des concentrations Π de son équation chimique associée (nombre sans unité).",
+      "answerKey": {
+        "value": 10
+      },
+      "explanation": "L'équation associée est Co + Pb²⁺ ⇄ Co²⁺ + Pb. Les métaux solides n'entrent pas dans Π : Π = [Co²⁺]/[Pb²⁺] = 0,10/0,010 = 10 ✓. L'inverse, [Pb²⁺]/[Co²⁺], donnerait 0,10 : c'est l'écriture à l'envers.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une pile Co | Co²⁺ || Cu²⁺ | Cu, de f.é.m. standard E° = 0,62 V, est montée avec [Co²⁺] = [Cu²⁺] = 0,25 mol·L⁻¹. Que mesure un voltmètre à ses bornes à 25 °C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,24 V"
+        },
+        {
+          "id": "b",
+          "text": "0,64 V"
+        },
+        {
+          "id": "c",
+          "text": "0,62 V"
+        },
+        {
+          "id": "d",
+          "text": "0 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les deux concentrations sont égales : Π = 0,25/0,25 = 1, donc log Π = 0 et E = E° = 0,62 V ✓. La valeur 0 V est celle d'une pile usée, pas d'une pile dont Π vaut 1. La valeur 0,64 V vient d'un logarithme calculé sur une seule concentration (log 0,25 ≈ −0,60). La valeur 1,24 V double E° sans raison : dans la loi de la f.é.m., n n'intervient que dans le coefficient 0,06/n de log Π.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans l'électrode normale à hydrogène, le dihydrogène est sous la pression de 1 atm. Quelle est cette pression exprimée en pascals ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9,81 × 10⁴ Pa"
+        },
+        {
+          "id": "b",
+          "text": "7,60 × 10² Pa"
+        },
+        {
+          "id": "c",
+          "text": "1,013 × 10³ Pa"
+        },
+        {
+          "id": "d",
+          "text": "1,013 × 10⁵ Pa"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une atmosphère vaut 1,013 × 10⁵ Pa, soit aussi 760 mmHg ✓. La valeur 7,60 × 10² Pa prend les 760 mmHg pour des pascals. La valeur 1,013 × 10³ Pa perd deux puissances de dix, en prenant 1 013 hPa pour des pascals. La valeur 9,81 × 10⁴ Pa confond l'atmosphère avec le kilogramme-force par cm² (atmosphère technique).",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans la pile Fe | Fe²⁺ (1,0 mol·L⁻¹) || Cu²⁺ (0,010 mol·L⁻¹) | Cu, E° vaut 0,78 V. Quelle f.é.m. indique-t-elle à 25 °C ? Répondre en volts, au centième.",
+      "answerKey": {
+        "value": 0.72,
+        "tolerance": 0.005,
+        "unit": "V"
+      },
+      "explanation": "L'équation associée est Fe + Cu²⁺ ⇄ Fe²⁺ + Cu, avec n = 2 : Π = 1,0/0,010 = 100, donc log Π = 2. E = 0,78 − 0,03 × 2 = 0,72 V ✓ : Π > 1, donc E est inférieure à E°.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la pile Zn | Zn²⁺ || Cu²⁺ | Cu qui débite, la f.é.m. diminue peu à peu. Quelle explication est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Π augmente, car [Zn²⁺] croît et [Cu²⁺] décroît"
+        },
+        {
+          "id": "b",
+          "text": "Π diminue, car [Zn²⁺] décroît et [Cu²⁺] croît"
+        },
+        {
+          "id": "c",
+          "text": "Π reste constante, car Zn et Cu sont des solides"
+        },
+        {
+          "id": "d",
+          "text": "E° diminue, car les lames s'usent peu à peu"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La réaction Zn + Cu²⁺ → Zn²⁺ + Cu produit des ions Zn²⁺ et consomme des ions Cu²⁺ : Π = [Zn²⁺]/[Cu²⁺] augmente, et E = E° − 0,03 log Π diminue ✓. Dire que Π diminue inverse le sens d'évolution des deux concentrations. Dire que Π est constante oublie que les concentrations ioniques, elles, varient. Dire que E° diminue est faux : E° ne dépend que des couples et de la température.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "À propos de la loi E = E° − (0,06/n) log Π d'une pile du type Daniell à 25 °C, cocher toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "À température fixée, E est une fonction affine de log Π."
+        },
+        {
+          "id": "b",
+          "text": "Pour n = 2, le coefficient de log Π vaut 0,03 V."
+        },
+        {
+          "id": "c",
+          "text": "E° est la valeur de E quand Π = 1."
+        },
+        {
+          "id": "d",
+          "text": "E est proportionnelle à Π."
+        },
+        {
+          "id": "e",
+          "text": "Le coefficient 0,06 est valable à toute température."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "E est affine en log Π ✓ : la droite E = f(log Π) a pour pente −0,06/n. Pour n = 2, 0,06/2 = 0,03 V ✓. E° est l'ordonnée à l'origine, la valeur de E quand Π = 1 ✓. E n'est pas proportionnelle à Π : c'est son logarithme qui intervient, avec une ordonnée à l'origine E°. Et le coefficient 0,06 n'est valable qu'à 25 °C.",
+      "difficulty": 2
+    }
+  ]
+}
