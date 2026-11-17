@@ -1,0 +1,113 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : La directrice financière",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans une usine de jus de fruits, les matières restent 25 jours en stock, la fabrication prend 35 jours, les produits finis attendent 20 jours, les clients paient à 60 jours et le fournisseur à 90 jours. Un jour de CA HT représente 380 D. Quel est le montant du BFR, en D (durées exprimées en jours de CA HT) ?",
+      "answerKey": {
+        "value": 19000,
+        "unit": "D"
+      },
+      "explanation": "BFR en jours : 25 + 35 + 20 + 60 − 90 = 50 jours. Montant : 50 × 380 = 19 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Une entreprise veut alléger son BFR. Quelles décisions vont dans ce sens ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Raccourcir les délais de paiement accordés aux clients"
+        },
+        {
+          "id": "b",
+          "text": "Établir les factures au moment de la livraison"
+        },
+        {
+          "id": "c",
+          "text": "Acheter de grandes quantités pour ne jamais manquer de stock"
+        },
+        {
+          "id": "d",
+          "text": "Limiter le stock à ce que les ventes permettent d'écouler"
+        },
+        {
+          "id": "e",
+          "text": "Allonger le crédit accordé aux clients pour séduire de nouveaux acheteurs"
+        },
+        {
+          "id": "f",
+          "text": "Payer ses fournisseurs comptant pour obtenir un escompte"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Des délais clients plus courts, une facturation à la livraison et un stock proportionné aux ventes réduisent les besoins. Les achats excessifs et les délais plus longs aux clients immobilisent davantage d'argent : le BFR augmente. Payer comptant supprime le crédit fournisseurs, une ressource : le BFR augmente aussi.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le BFR de la Menuiserie Karray est de 31 000 D. Ses stocks valent 54 000 D, ses créances clients 41 000 D, ses autres créances 3 000 D, et ses autres dettes 12 500 D. Quelles sont ses dettes fournisseurs, en D ?",
+      "answerKey": {
+        "value": 54500,
+        "unit": "D"
+      },
+      "explanation": "Besoins : 54 000 + 41 000 + 3 000 = 98 000 D. Comme BFR = besoins − ressources, les ressources valent 98 000 − 31 000 = 67 000 D. Dettes fournisseurs : 67 000 − 12 500 = 54 500 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fabrique de matelas a un BFR de 40 jours de CA HT (durées exprimées en jours de CA HT). Elle stocke 20 jours, produit 30 jours, garde les produits finis 15 jours et accorde 45 jours de crédit aux clients. Quelle durée de crédit lui accorde son fournisseur, en jours ?",
+      "answerKey": {
+        "value": 70,
+        "unit": "jours"
+      },
+      "explanation": "Les besoins totalisent 20 + 30 + 15 + 45 = 110 jours. Comme BFR = besoins − crédit fournisseur, le crédit fournisseur vaut 110 − 40 = 70 jours.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Deux commerces : la Mercerie Ayari a un BFR de 52 jours et réalise 200 D de CA HT par jour ; la Droguerie Tlili a un BFR de 38 jours et réalise 300 D de CA HT par jour. Laquelle doit financer le plus gros montant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La Mercerie, car son nombre de jours est le plus élevé"
+        },
+        {
+          "id": "b",
+          "text": "Les deux autant, car l'écart en jours s'annule grâce au CA"
+        },
+        {
+          "id": "c",
+          "text": "La Droguerie, qui finance 1 400 D de plus (14 jours × 100 D)"
+        },
+        {
+          "id": "d",
+          "text": "La Droguerie, qui finance 1 000 D de plus que la Mercerie"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Mercerie : 52 × 200 = 10 400 D. Droguerie : 38 × 300 = 11 400 D. La Droguerie finance donc 1 000 D de plus malgré moins de jours. Multiplier les écarts (14 jours × 100 D = 1 400 D) ne donne pas la différence des montants : il faut calculer chaque montant, puis comparer.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'Huilerie Gharbi ramène son stockage de 30 à 18 jours et obtient de son fournisseur 40 jours de crédit au lieu de 30. Un jour de CA HT représente 450 D. De combien son BFR baisse-t-il, en D ?",
+      "answerKey": {
+        "value": 9900,
+        "unit": "D"
+      },
+      "explanation": "Le stockage plus court retire 30 − 18 = 12 jours ; le crédit fournisseur plus long retire 40 − 30 = 10 jours. Total : 22 jours, soit 22 × 450 = 9 900 D.",
+      "difficulty": 3
+    }
+  ]
+}

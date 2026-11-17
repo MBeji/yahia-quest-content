@@ -1,0 +1,114 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'audit du BFR",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La Quincaillerie Rezgui immobilise 27 000 D dans son exploitation et vend 450 D par jour hors taxes. Ses clients paient à 70 jours, son grossiste l'attend 35 jours. Combien de jours garde-t-elle ses marchandises en rayon ?",
+      "answerKey": {
+        "value": 25,
+        "unit": "jours"
+      },
+      "explanation": "BFR en jours : 27 000 ÷ 450 = 60 jours. Entreprise commerciale : stockage + 70 − 35 = 60, donc stockage = 60 − 70 + 35 = 25 jours.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Fabrique de Sièges Dridi réalise 2 160 000 D de CA HT sur une année de 360 jours. Elle stocke ses matières 18 jours, fabrique pendant 12 jours, garde ses produits finis 20 jours, accorde 55 jours aux clients et obtient 45 jours de ses fournisseurs (durées exprimées en jours de CA HT). Quel est le montant de son BFR, en D ?",
+      "answerKey": {
+        "value": 360000,
+        "unit": "D"
+      },
+      "explanation": "CA HT d'un jour : 2 160 000 ÷ 360 = 6 000 D. BFR en jours : 18 + 12 + 20 + 55 − 45 = 60 jours. Montant : 60 × 6 000 = 360 000 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le BFR en jours d'un fabricant de meubles passe de 42 à 57 jours, sans changement de son CA HT par jour. Laquelle de ces évolutions, qui combinent deux changements, explique cette hausse de 15 jours ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ses clients paient 20 jours plus tard, et ses stocks baissent de 5 jours"
+        },
+        {
+          "id": "b",
+          "text": "Ses clients paient 20 jours plus tard, et ses fournisseurs accordent 5 jours de moins"
+        },
+        {
+          "id": "c",
+          "text": "Ses clients paient 5 jours plus tôt, et ses fournisseurs accordent 20 jours de plus"
+        },
+        {
+          "id": "d",
+          "text": "Ses clients paient 20 jours plus tôt, et ses stocks montent de 5 jours"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Des clients 20 jours plus lents ajoutent 20 jours de besoin et un stock réduit de 5 jours en retire 5 : la hausse nette est de 15 jours. Les autres combinaisons donnent +25, −25 et −15 jours.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une usine de céramique avait un BFR de 38 jours pour un CA HT quotidien de 520 D. L'année suivante, son BFR est de 41 jours pour un CA HT quotidien de 610 D. De combien le montant du BFR a-t-il augmenté, en D ?",
+      "answerKey": {
+        "value": 5250,
+        "unit": "D"
+      },
+      "explanation": "Avant : 38 × 520 = 19 760 D. Après : 41 × 610 = 25 010 D. Hausse : 25 010 − 19 760 = 5 250 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le montant du BFR d'une chaîne de montage atteint 36 000 D, pour 600 D de CA HT quotidien. Côté délais : 22 jours de matières en stock, 18 jours de fabrication, 20 jours de produits finis en attente, et 40 jours de crédit auprès des fournisseurs (durées exprimées en jours de CA HT). Pendant combien de jours les clients sont-ils attendus ?",
+      "answerKey": {
+        "value": 40,
+        "unit": "jours"
+      },
+      "explanation": "BFR en jours : 36 000 ÷ 600 = 60 jours. Besoins hors clients : 22 + 18 + 20 = 60 jours. L'équation 60 + crédit clients − 40 = 60 donne un crédit clients de 40 jours.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Verrerie Souissi réduit son stock de 20 à 14 jours et le crédit accordé aux clients de 60 à 50 jours, mais ses fournisseurs ramènent leur crédit de 45 à 40 jours. Un jour de CA HT représente 275 D. De combien son BFR baisse-t-il, en D ?",
+      "answerKey": {
+        "value": 3025,
+        "unit": "D"
+      },
+      "explanation": "Stock : 6 jours de moins ; clients : 10 jours de moins ; fournisseurs : 5 jours de ressource en moins, donc 5 jours de besoin en plus. Variation nette : 6 + 10 − 5 = 11 jours, soit 11 × 275 = 3 025 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur le BFR, lesquelles sont exactes ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le BFR en jours ne dépend que des délais, pas de la nature de l'activité"
+        },
+        {
+          "id": "b",
+          "text": "Une dette envers un fournisseur vient en déduction des besoins"
+        },
+        {
+          "id": "c",
+          "text": "Le solde du compte bancaire fait partie des actifs retenus dans le BFR"
+        },
+        {
+          "id": "d",
+          "text": "Un client qui paie plus tard augmente le besoin de financement"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Une dette envers un fournisseur est une ressource qui se déduit, et un client qui paie plus tard allonge le décalage. En revanche le BFR en jours dépend aussi de la nature de l'activité (un commerce n'a pas de production), et le solde bancaire, trésorerie, est exclu du BFR.",
+      "difficulty": 3
+    }
+  ]
+}

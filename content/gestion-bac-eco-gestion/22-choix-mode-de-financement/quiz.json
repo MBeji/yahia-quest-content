@@ -1,0 +1,170 @@
+{
+  "title": "Test de compréhension ⭐ : Le choix du mode de financement",
+  "questions": [
+    {
+      "prompt": "Une brasserie de Nabeul compare deux montages : fonds propres, coût net −198 500 D ; location, coût net −205 300 D. Quel mode retient-elle, et avec quel avantage en valeur actuelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La location, moins coûteuse de 6 800 D"
+        },
+        {
+          "id": "b",
+          "text": "Les fonds propres, moins coûteux de 6 800 D"
+        },
+        {
+          "id": "c",
+          "text": "Les fonds propres, moins coûteux de 403 800 D"
+        },
+        {
+          "id": "d",
+          "text": "La location, car le coût le plus négatif signale le gain le plus fort"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "−198 500 est plus proche de zéro : les fonds propres coûtent 205 300 − 198 500 = 6 800 D de moins. Additionner les deux coûts (403 800) n'a pas de sens, et un coût net plus négatif est un coût plus lourd, pas un gain.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pourquoi suppose-t-on la société bénéficiaire quand on compte les économies d'impôt d'un montage de financement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que les bénéfices servent d'abord à rembourser plus vite l'emprunt"
+        },
+        {
+          "id": "b",
+          "text": "Parce que seule une société bénéficiaire peut obtenir un prêt auprès d'une banque"
+        },
+        {
+          "id": "c",
+          "text": "Parce que sans bénéfice, une charge déductible ne réduit aucun impôt à payer"
+        },
+        {
+          "id": "d",
+          "text": "Parce qu'un coût net ne se calcule que sur un bénéfice net positif"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une économie d'impôt naît d'une charge déductible qui diminue l'impôt dû. Si la société n'avait pas de bénéfice, il n'y aurait pas d'impôt à réduire et aucune économie à encaisser. L'accès au crédit bancaire et le remboursement de l'emprunt n'ont aucun rapport avec cette hypothèse.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un cabinet de radiologie de Gafsa finance sur fonds propres un scanner de 150 000 D, amorti en linéaire sur 5 ans. L'impôt est de 30 %. Quelle économie d'impôt annuelle l'amortissement lui procure-t-il, en D ?",
+      "answerKey": {
+        "value": 9000,
+        "unit": "D"
+      },
+      "explanation": "Dotation annuelle : 150 000 ÷ 5 = 30 000 D. Économie d'impôt : 30 000 × 0,30 = 9 000 D par an, un encaissement chaque année.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque terme à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Économie d'impôt"
+        },
+        {
+          "id": "l2",
+          "text": "Flux net de trésorerie"
+        },
+        {
+          "id": "l3",
+          "text": "Époque 0"
+        },
+        {
+          "id": "l4",
+          "text": "Taux de rentabilité exigé"
+        },
+        {
+          "id": "r1",
+          "text": "Impôt évité grâce à une charge déductible, compté en encaissement"
+        },
+        {
+          "id": "r2",
+          "text": "Encaissements moins décaissements d'une année"
+        },
+        {
+          "id": "r3",
+          "text": "Date de l'achat, dont le flux n'est pas actualisé"
+        },
+        {
+          "id": "r4",
+          "text": "Taux auquel on actualise tous les modes"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "L'économie d'impôt vient d'une charge déductible et s'encaisse. Le flux net est la différence entre encaissements et décaissements d'une année. Le flux de l'époque 0 est pris tel quel, sans actualisation. Le taux de rentabilité exigé sert à actualiser tous les modes.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de comparaison de deux modes de financement.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Poser, année par année, les décaissements et les encaissements de chaque mode"
+        },
+        {
+          "id": "b",
+          "text": "Calculer le flux net de chaque année pour chaque mode"
+        },
+        {
+          "id": "c",
+          "text": "Actualiser chaque flux net au taux exigé par l'entreprise"
+        },
+        {
+          "id": "d",
+          "text": "Additionner les flux actualisés pour obtenir le coût net de chaque mode"
+        },
+        {
+          "id": "e",
+          "text": "Retenir le mode dont le coût net est le moins négatif"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On liste d'abord ce qui sort et ce qui rentre, puis on en tire le flux net de chaque année. On actualise ensuite à la même date, on additionne pour obtenir le coût net, et seulement alors on peut comparer les modes et choisir le moins coûteux.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une clinique de Sousse loue un appareil d'échographie contre un loyer annuel de 54 000 D. Quel est le coût annuel de ce loyer une fois l'économie d'impôt déduite (impôt de 30 %), en D ?",
+      "answerKey": {
+        "value": 37800,
+        "unit": "D"
+      },
+      "explanation": "Économie d'impôt : 54 000 × 0,30 = 16 200 D. Coût réel du loyer : 54 000 − 16 200 = 37 800 D, soit 54 000 × (1 − 0,30).",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "title": "⭐ Exercice : Premiers pas — flux, économies d'impôt et coût net",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "short_answer",
+      "prompt": "Comment nomme-t-on la somme des flux nets de trésorerie actualisés d'un mode de financement ?",
+      "answerKey": {
+        "text": "coût net du financement"
+      },
+      "explanation": "C'est le chiffre qui résume un montage : on actualise chaque flux net au taux exigé par l'entreprise, puis on additionne, et on retient le mode pour lequel ce chiffre est le moins négatif.",
+      "difficulty": 1,
+      "acceptedAnswers": [
+        "coût net",
+        "le coût net",
+        "coût net du mode de financement",
+        "coût net actualisé",
+        "le coût net du financement"
+      ]
+    },
+    {
+      "prompt": "Pourquoi une société qui loue sa machine ne compte-t-elle aucune économie d'impôt sur amortissement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que les loyers versés ne sont pas déductibles du résultat"
+        },
+        {
+          "id": "b",
+          "text": "Parce que l'amortissement ne concerne que les biens payés en espèces"
+        },
+        {
+          "id": "c",
+          "text": "Parce que la machine appartient au bailleur, qui seul peut l'amortir"
+        },
+        {
+          "id": "d",
+          "text": "Parce que l'économie sur les loyers remplace celle sur les dotations"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Amortir suppose d'être propriétaire du bien. Le locataire n'en est pas propriétaire : il ne peut pas pratiquer de dotation. Il garde en revanche l'économie sur les loyers, qui sont déductibles ; ce n'est pas un remplacement, c'est une autre charge.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Biscuiterie Dridi emprunte 120 000 D sur 4 ans à 8 %, avec une annuité constante de 36 230,50 D. Quelle part de capital la première annuité rembourse-t-elle, en D ? (précision de 1 D)",
+      "answerKey": {
+        "value": 26630.5,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Intérêts de la première année : 120 000 × 0,08 = 9 600 D. Part de capital : annuité − intérêts = 36 230,50 − 9 600 = 26 630,50 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une pharmacie d'Ariana emprunte 150 000 D à 11 % ; les intérêts de la première année sont payés en fin d'année. Quelle économie d'impôt ces intérêts lui procurent-ils (impôt de 30 %), en D ?",
+      "answerKey": {
+        "value": 4950,
+        "unit": "D"
+      },
+      "explanation": "Intérêts de la première année : 150 000 × 0,11 = 16 500 D. Économie d'impôt : 16 500 × 0,30 = 4 950 D, encaissée parce que les intérêts sont déductibles.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les Ateliers Mabrouk paient comptant une presse de 360 000 D, amortie en linéaire sur 5 ans. Impôt de 30 %, taux de rentabilité exigé de 12 % (coefficient de la série sur 5 ans : 3,604776). Quel est le coût net de ce financement, en D ? (précision de 2 D)",
+      "answerKey": {
+        "value": -282136.84,
+        "unit": "D",
+        "tolerance": 2
+      },
+      "explanation": "Économie annuelle : 360 000 ÷ 5 × 0,30 = 21 600 D. Flux actualisés : 21 600 × 3,604776 = 77 863,16 D. Coût net : 77 863,16 − 360 000 = −282 136,84 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces éléments, lesquels sont des encaissements dans le tableau d'un financement par emprunt ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le montant de l'emprunt reçu"
+        },
+        {
+          "id": "b",
+          "text": "L'économie d'impôt sur les amortissements du bien"
+        },
+        {
+          "id": "c",
+          "text": "L'économie d'impôt sur les intérêts"
+        },
+        {
+          "id": "d",
+          "text": "Le paiement des intérêts"
+        },
+        {
+          "id": "e",
+          "text": "Le remboursement du capital"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le montant emprunté est de l'argent reçu ; les deux économies d'impôt laissent de l'argent en caisse, ce sont des encaissements. Les intérêts payés et le capital remboursé sont des sommes qui sortent : ce sont des décaissements.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une société compare un emprunt à 9 % et des fonds propres, son taux de rentabilité exigé étant de 10 %. À quel taux actualise-t-elle les flux nets de chaque mode ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À 9 %, le taux de l'emprunt, pour les flux du mode emprunt"
+        },
+        {
+          "id": "b",
+          "text": "À 9 % pour l'emprunt et à 10 % pour les fonds propres, chacun à son coût"
+        },
+        {
+          "id": "c",
+          "text": "À 10 %, le taux de rentabilité exigé, pour tous les modes comparés"
+        },
+        {
+          "id": "d",
+          "text": "À 6,3 %, le taux de l'emprunt net d'impôt, pour tous les modes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Tous les flux sont ramenés à la même date avec le taux de rentabilité exigé par l'entreprise, ici 10 %. Le taux de l'emprunt sert à calculer les intérêts, le taux d'impôt les économies : aucun ne sert à actualiser, et un taux propre à chaque mode fausserait la comparaison.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'hôtel Tej Palace prend en location un groupe frigorifique : 5 loyers annuels de 48 000 D à terme échu. Impôt de 30 %, taux exigé de 10 % (coefficient de la série sur 5 ans : 3,790787). Quel est le coût net de la location, en D ? (précision de 2 D)",
+      "answerKey": {
+        "value": -127370.44,
+        "unit": "D",
+        "tolerance": 2
+      },
+      "explanation": "Flux net annuel : −48 000 × (1 − 0,30) = −33 600 D. Coût net : −33 600 × 3,790787 = −127 370,44 D. Pas d'amortissement : le bien appartient au bailleur.",
+      "difficulty": 2
+    }
+  ]
+}

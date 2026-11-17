@@ -1,0 +1,150 @@
+{
+  "title": "⭐ Exercice : Premiers pas — besoins, ressources et BFR",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "short_answer",
+      "prompt": "Comment appelle-t-on la différence entre les actifs courants et les passifs courants, trésorerie exclue ?",
+      "answerKey": {
+        "text": "besoin en fonds de roulement"
+      },
+      "explanation": "Cette différence mesure le besoin de financement du cycle d'exploitation. On l'exprime en dinars, ou en nombre de jours de chiffre d'affaires hors taxes, et on la désigne par un sigle de trois lettres.",
+      "difficulty": 1,
+      "acceptedAnswers": [
+        "BFR",
+        "le BFR",
+        "le besoin en fonds de roulement",
+        "besoin de fonds de roulement",
+        "besoin de financement de l'exploitation",
+        "BFE"
+      ]
+    },
+    {
+      "prompt": "La Conserverie Mejri accorde 30 jours de crédit à ses clients et règle ses achats de tomates à son fournisseur au bout de 10 jours. Pourquoi un besoin de financement apparaît-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que les boîtes sont vendues avec bénéfice"
+        },
+        {
+          "id": "b",
+          "text": "Parce que l'entreprise encaisse plus tard qu'elle ne paie"
+        },
+        {
+          "id": "c",
+          "text": "Parce que le fournisseur est payé à une date fixe du mois"
+        },
+        {
+          "id": "d",
+          "text": "Parce que les clients commandent de petites quantités"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'entreprise sort l'argent des achats avant que les clients ne paient : ce décalage doit être financé. Le bénéfice, la date de paiement du fournisseur ou la taille des commandes ne créent pas le besoin par eux-mêmes.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour une fonderie de Gafsa, le stockage des matières dure 15 jours, la production 20 jours, le stockage des produits finis 10 jours ; les clients paient après 50 jours et le fournisseur est réglé après 40 jours. Quel est le BFR, en jours de CA HT (durées exprimées en jours de CA HT) ?",
+      "answerKey": {
+        "value": 55,
+        "unit": "jours"
+      },
+      "explanation": "Entreprise industrielle : 15 + 20 + 10 + 50 − 40 = 55 jours. Le crédit fournisseur de 40 jours est une ressource : on le retranche.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une biscuiterie de Béja a un BFR de 48 jours de chiffre d'affaires hors taxes, et un jour de CA HT y représente 250 D. Quel est le montant de son BFR, en D ?",
+      "answerKey": {
+        "value": 12000,
+        "unit": "D"
+      },
+      "explanation": "Montant = BFR en jours × CA HT d'un jour = 48 × 250 = 12 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Une pharmacie de Nabeul dresse la liste de ses postes. Lesquels entrent dans le calcul de son BFR ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les médicaments en stock"
+        },
+        {
+          "id": "b",
+          "text": "Les remboursements d'ordonnances que les caisses doivent encore à la pharmacie"
+        },
+        {
+          "id": "c",
+          "text": "Les factures dues au laboratoire fournisseur"
+        },
+        {
+          "id": "d",
+          "text": "Le solde du compte bancaire"
+        },
+        {
+          "id": "e",
+          "text": "Le découvert accordé par la banque"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le stock et les créances sont des besoins ; les dettes envers le laboratoire sont une ressource : ces trois postes entrent dans le BFR. Le solde bancaire et le découvert relèvent de la trésorerie, que le BFR exclut.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le bilan d'un atelier de reliure, à Tunis, indique : stocks 120 000 D ; créances clients 95 000 D ; autres créances 5 000 D ; dettes fournisseurs 140 000 D ; autres dettes 22 000 D. Quel est son BFR, en D ?",
+      "answerKey": {
+        "value": 58000,
+        "unit": "D"
+      },
+      "explanation": "Besoins : 120 000 + 95 000 + 5 000 = 220 000 D. Ressources : 140 000 + 22 000 = 162 000 D. BFR = 220 000 − 162 000 = 58 000 D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une scierie de Jendouba double son chiffre d'affaires quotidien sans modifier aucun de ses délais de stockage ni de paiement. Que devient le montant de son BFR ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il reste identique, car le nombre de jours ne varie pas"
+        },
+        {
+          "id": "b",
+          "text": "Il diminue de moitié, car les délais pèsent moins"
+        },
+        {
+          "id": "c",
+          "text": "Il double, car chaque jour de CA HT vaut deux fois plus"
+        },
+        {
+          "id": "d",
+          "text": "Il augmente un peu, car seuls les stocks suivent l'activité"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Montant = jours × CA HT d'un jour : les jours sont inchangés, le CA par jour double, donc le montant double. Les délais étant inchangés, tous les postes (stocks, clients, fournisseurs) suivent l'activité. Croire qu'il reste identique oublie le facteur activité ; une baisse n'a aucune raison d'être.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une conserverie de Kasserine accordait 60 jours de crédit à ses clients et passe à 45 jours, tandis que son fournisseur allonge son crédit de 30 à 35 jours ; un jour de CA HT représente 320 D. De combien son BFR diminue-t-il, en D ?",
+      "answerKey": {
+        "value": 6400,
+        "unit": "D"
+      },
+      "explanation": "Clients : 60 − 45 = 15 jours de moins ; fournisseur : 35 − 30 = 5 jours de ressource en plus. Gain : 15 + 5 = 20 jours, soit 20 × 320 = 6 400 D de BFR en moins.",
+      "difficulty": 2
+    }
+  ]
+}

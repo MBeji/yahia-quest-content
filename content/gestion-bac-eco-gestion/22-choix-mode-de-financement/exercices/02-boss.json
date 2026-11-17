@@ -1,0 +1,113 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur financier",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Pour le locataire d'un équipement, quels énoncés sur le traitement des loyers et du bien sont justes ? (Coche toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les loyers sont déductibles et créent une économie d'impôt"
+        },
+        {
+          "id": "b",
+          "text": "Le prix de rachat d'une option d'achat est un encaissement"
+        },
+        {
+          "id": "c",
+          "text": "Le locataire ne peut pas amortir le bien loué"
+        },
+        {
+          "id": "d",
+          "text": "Le locataire profite d'une économie d'impôt sur la dotation du bien"
+        },
+        {
+          "id": "e",
+          "text": "Des loyers payés d'avance tombent aux époques 0 à n − 1"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Sans propriété, pas d'amortissement. Les loyers sont une charge déductible, d'où l'économie d'impôt. Payés d'avance, ils tombent au début de chaque période, donc aux époques 0 à n − 1. Le prix de rachat sort de la caisse : c'est un décaissement, et l'économie sur dotation n'existe pas pour un bien loué.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Fonderie Sassi finance une installation de 300 000 D, amortie en linéaire sur 5 ans : 100 000 D de fonds propres et 200 000 D d'emprunt à 10 %, remboursé par 5 annuités constantes de 52 759,50 D. Impôt de 30 %, taux exigé de 9 % (coefficients : 0,917431 ; 0,841680 ; 0,772183 ; 0,708425 ; 0,649931). Quel est le coût net, en D ? (précision de 15 D)",
+      "answerKey": {
+        "value": -219554.17,
+        "unit": "D",
+        "tolerance": 15
+      },
+      "explanation": "Intérêts : 20 000 ; 16 724,05 ; 13 120,50 ; 9 156,61 ; 4 796,32 D. Économie sur dotation : 60 000 × 0,30 = 18 000 D par an. Flux : −100 000 à l'époque 0, puis −28 759,50 ; −29 742,29 ; −30 823,35 ; −32 012,52 ; −33 320,61 D. Actualisés à 9 %, leur somme vaut −119 554,17 D. Coût net : −100 000 − 119 554,17 = −219 554,17 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le Cabinet Gharbi prend un équipement en crédit-bail : 4 loyers de 80 000 D payables d'avance (époques 0 à 3). L'économie d'impôt de 30 % est encaissée à la même date que chaque loyer. Taux exigé de 10 % (coefficients des époques 0 à 3 : 1 ; 0,909091 ; 0,826446 ; 0,751315). Quel est le coût net, en D ? (précision de 2 D)",
+      "answerKey": {
+        "value": -195263.71,
+        "unit": "D",
+        "tolerance": 2
+      },
+      "explanation": "Flux net de chaque loyer : −80 000 × (1 − 0,30) = −56 000 D, aux époques 0, 1, 2 et 3. Somme des coefficients : 1 + 0,909091 + 0,826446 + 0,751315 = 3,486852. Coût net : −56 000 × 3,486852 = −195 263,71 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une menuiserie de Kairouan prend une machine en crédit-bail : 4 loyers de 60 000 D payés d'avance (époques 0 à 3), puis lève l'option d'achat de 20 000 D à l'époque 4. Elle amortit ce prix en totalité sur la 5e année, d'où une économie d'impôt à l'époque 5. Impôt de 30 %, taux exigé de 10 % (coefficients des époques 0 à 5 : 1 ; 0,909091 ; 0,826446 ; 0,751315 ; 0,683013 ; 0,620921). Quel est le coût net, en D ? (précision de 5 D)",
+      "answerKey": {
+        "value": -156382.51,
+        "unit": "D",
+        "tolerance": 5
+      },
+      "explanation": "Loyers nets d'impôt : −60 000 × 0,70 = −42 000 D aux époques 0 à 3, soit −42 000 × 3,486852 = −146 447,78 D. Option d'achat : −20 000 × 0,683013 = −13 660,26 D. Économie sur le prix amorti : 20 000 × 0,30 = 6 000 D, actualisés : 6 000 × 0,620921 = 3 725,53 D. Coût net : −146 447,78 − 13 660,26 + 3 725,53 = −156 382,51 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une société bénéficiaire finance une machine sur fonds propres. À hypothèses égales par ailleurs, son taux d'impôt passe de 30 % à 40 %. Que devient le coût de ce financement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il augmente, car l'entreprise paie un impôt plus lourd chaque année"
+        },
+        {
+          "id": "b",
+          "text": "Il reste identique, car le décaissement de l'époque 0 ne change pas"
+        },
+        {
+          "id": "c",
+          "text": "Il diminue, car les économies d'impôt sur l'amortissement croissent"
+        },
+        {
+          "id": "d",
+          "text": "Il devient positif, car l'impôt se transforme en encaissement net"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec un taux plus élevé, chaque dotation évite davantage d'impôt : les encaissements annuels augmentent et le coût net se rapproche de zéro, donc le financement coûte moins. Le décaissement initial ne change pas, mais il n'est pas seul en cause ; le coût net ne devient pas positif pour autant, car les économies restent inférieures au coût payé.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Société Jaziri emprunte 90 000 D sur 3 ans à 12 %, en annuités constantes calculées avec le facteur 0,416349. Quelle économie d'impôt totale les intérêts des trois années lui procurent-ils (impôt de 30 %), en D ? (précision de 2 D)",
+      "answerKey": {
+        "value": 6724.27,
+        "unit": "D",
+        "tolerance": 2
+      },
+      "explanation": "Annuité : 90 000 × 0,416349 = 37 471,41 D. Total versé : 3 × 37 471,41 = 112 414,23 D. Intérêts totaux : 112 414,23 − 90 000 = 22 414,23 D. Économie : 22 414,23 × 0,30 = 6 724,27 D.",
+      "difficulty": 3
+    }
+  ]
+}

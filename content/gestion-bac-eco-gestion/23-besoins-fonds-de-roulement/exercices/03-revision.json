@@ -1,0 +1,197 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Du cycle au BFR",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque situation à son effet sur le BFR d'une entreprise.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Les marchandises restent plus longtemps en rayon"
+        },
+        {
+          "id": "l2",
+          "text": "Le fournisseur accorde un délai de règlement plus long"
+        },
+        {
+          "id": "l3",
+          "text": "Les ventes par jour doublent, les délais restant les mêmes"
+        },
+        {
+          "id": "l4",
+          "text": "Un chef de caisse dépose en banque les espèces du coffre"
+        },
+        {
+          "id": "r1",
+          "text": "Le nombre de jours de BFR augmente"
+        },
+        {
+          "id": "r2",
+          "text": "Le nombre de jours de BFR diminue"
+        },
+        {
+          "id": "r3",
+          "text": "Le montant augmente dans la même proportion, le nombre de jours est inchangé"
+        },
+        {
+          "id": "r4",
+          "text": "Le BFR ne change pas, c'est un mouvement de trésorerie"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Un stockage plus long ajoute des jours de besoin. Un crédit fournisseur plus long retranche des jours. Si l'activité double à durées égales, seul le montant double. Un dépôt en banque déplace de la trésorerie vers de la trésorerie : le BFR n'en est pas affecté.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une quincaillerie d'Ariana indique : stocks 63 000 D ; créances clients 81 400 D ; autres créances 4 600 D ; dettes fournisseurs 72 500 D ; autres dettes 11 500 D. Calcule son BFR, en D.",
+      "answerKey": {
+        "value": 65000,
+        "unit": "D"
+      },
+      "explanation": "Besoins : 63 000 + 81 400 + 4 600 = 149 000 D. Ressources : 72 500 + 11 500 = 84 000 D. BFR = 149 000 − 84 000 = 65 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un magasin de tissus stocke 34 jours, accorde 45 jours à ses clients et règle ses fournisseurs à 30 jours. Combien de jours de CA HT son exploitation doit-elle financer (durées exprimées en jours de CA HT) ?",
+      "answerKey": {
+        "value": 49,
+        "unit": "jours"
+      },
+      "explanation": "Entreprise commerciale : 34 + 45 − 30 = 49 jours.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche qui permet d'estimer le montant du BFR d'une entreprise.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retrancher le crédit obtenu des fournisseurs"
+        },
+        {
+          "id": "b",
+          "text": "Relever les durées de stockage, de production et de crédit aux clients"
+        },
+        {
+          "id": "c",
+          "text": "Multiplier le résultat par le CA HT d'un jour"
+        },
+        {
+          "id": "d",
+          "text": "Additionner ces durées pour obtenir les besoins en jours"
+        },
+        {
+          "id": "e",
+          "text": "Identifier le type d'entreprise (industrielle ou commerciale)"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "e",
+          "b",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "On identifie d'abord le type d'entreprise, car il décide des durées à retenir ; puis on relève ces durées, on additionne les besoins, on retranche la ressource pour obtenir le BFR en jours, et on le convertit en dinars par le CA d'un jour.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur une année de 360 jours, une tannerie de Monastir réalise 50 400 D de CA HT. Son BFR représente 62 jours. À combien de dinars s'élève-t-il ?",
+      "answerKey": {
+        "value": 8680,
+        "unit": "D"
+      },
+      "explanation": "CA HT d'un jour : 50 400 ÷ 360 = 140 D. Montant : 62 × 140 = 8 680 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur à son mode de calcul.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "BFR en valeur"
+        },
+        {
+          "id": "l2",
+          "text": "BFR en jours d'une entreprise industrielle"
+        },
+        {
+          "id": "l3",
+          "text": "BFR en jours d'une entreprise commerciale"
+        },
+        {
+          "id": "l4",
+          "text": "Montant du BFR estimé à partir des jours"
+        },
+        {
+          "id": "r1",
+          "text": "(stocks + créances clients + autres créances) − (dettes fournisseurs + autres dettes)"
+        },
+        {
+          "id": "r2",
+          "text": "stockage des matières + production + stockage des produits finis + crédit clients − crédit fournisseurs"
+        },
+        {
+          "id": "r3",
+          "text": "stockage des marchandises + crédit clients − crédit fournisseurs"
+        },
+        {
+          "id": "r4",
+          "text": "BFR en jours × CA HT d'un jour"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le BFR en valeur oppose les postes du bilan, trésorerie exclue. Le BFR en jours industriel contient en plus la production et le stockage des produits finis ; le commercial n'a que le stockage des marchandises. Le montant s'obtient en multipliant les jours par le CA HT d'un jour.",
+      "difficulty": 2
+    }
+  ]
+}
