@@ -114,7 +114,7 @@
       "prompt": "0,030 mol de HF et 0,045 mol de C₂O₄²⁻ réagissent selon HF + C₂O₄²⁻ ⇄ F⁻ + HC₂O₄⁻, de constante K = 10 (une phase, volume constant). Calculer le taux d'avancement final τ_f, à 10⁻² près.",
       "answerKey": {
         "value": 0.88,
-        "tolerance": 0.005
+        "tolerance": 0.01
       },
       "explanation": "Au départ Π = 0 < K : sens direct. Avec x : K = x² / ((0,030 − x)(0,045 − x)) = 10, soit 9x² − 0,75x + 0,0135 = 0. Le discriminant vaut 0,5625 − 0,486 = 0,0765, de racine 0,2766 : x = (0,75 − 0,2766)/18 = 0,0263 mol, ou x = 0,0570 mol. HF est limitant : x_max = 0,030 mol, donc on rejette 0,0570. τ_f = 0,0263 / 0,030 ≈ 0,88.",
       "difficulty": 3

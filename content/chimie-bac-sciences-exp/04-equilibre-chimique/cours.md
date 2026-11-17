@@ -244,7 +244,7 @@ Pour une réaction limitée, τ_f dépend de la composition initiale : il augmen
 Si rien ne change à notre échelle, que font les deux réactions à l'échelle moléculaire ?
 
 ::: definition
-**Équilibre dynamique** — On note v(1) la vitesse de la réaction directe et v(−1) celle de la réaction inverse, à l'échelle moléculaire. À l'équilibre, v(1) = v(−1) ≠ 0 : un équilibre chimique est un équilibre dynamique. La vitesse observée à notre échelle est v = |v(1) − v(−1)| (vitesses volumiques, en mol·L⁻¹·s⁻¹).
+**Équilibre dynamique** — On note v(1) la vitesse de la réaction directe et v(−1) celle de la réaction inverse, à l'échelle moléculaire. À l'équilibre, v(1) = v(−1) ≠ 0 : un équilibre chimique est un équilibre dynamique. La vitesse observée à notre échelle est v = |v(1) − v(−1)| (vitesses volumiques, en mol·L⁻¹·s⁻¹ ou en mol·L⁻¹·min⁻¹).
 :::
 
 ::: figure Allure schématique (sans échelle) : v(1) diminue, v(−1) augmente, et les deux courbes se rejoignent sur un palier commun non nul
@@ -261,7 +261,7 @@ Les valeurs suivantes (en 10⁻⁵ mol·L⁻¹·s⁻¹) sont choisies pour illus
 2. Plus tard, l'acide a diminué et les ions se sont formés : v(1) = 3,5 et v(−1) = 2,5, donc v = |3,5 − 2,5| = 1,0, plus faible : la réaction continue d'avancer, plus lentement.
 3. À l'équilibre, v(1) = v(−1) = 3,0, donc v = |3,0 − 3,0| = 0 : la composition n'évolue plus.
 4. Les deux vitesses valent encore 3,0, pas 0 : par seconde, la réaction directe fournit autant d'ions que la réaction inverse en consomme.
-5. Sur une courbe x(t), la vitesse de la réaction dx/dt (divisée par V, elle devient une vitesse volumique, comparable à v(1) et v(−1)) est la pente de la tangente, calculée sur deux points A et B de cette tangente : v = (x_B − x_A)/(t_B − t_A). Avec A(0 ; 1,0) et B(40 ; 3,0) en mmol et min, v = 2,0/40 = 0,050 mmol·min⁻¹ ; au palier, la tangente est horizontale et la vitesse est nulle.
+5. Sur une courbe x(t), la vitesse de la réaction dx/dt (divisée par V, elle devient une vitesse volumique, comparable à v(1) et v(−1)) est la pente de la tangente, calculée sur deux points A et B de cette tangente : dx/dt ≈ (x_B − x_A)/(t_B − t_A). Avec A(0 ; 1,0) et B(40 ; 3,0) en mmol et min, dx/dt ≈ 2,0/40 = 0,050 mmol·min⁻¹ ; au palier, la tangente est horizontale et la vitesse est nulle.
 
 :::
 
