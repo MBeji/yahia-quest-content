@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : potentiel standard d'un couple redox",
+  "questions": [
+    {
+      "prompt": "Pile Fe | Fe²⁺ || Cu²⁺ | Cu. Quelle est l'expression de la fonction usuelle des concentrations Π de son équation chimique associée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[Fe²⁺] / [Cu²⁺]"
+        },
+        {
+          "id": "b",
+          "text": "[Cu²⁺] / [Fe²⁺]"
+        },
+        {
+          "id": "c",
+          "text": "[Fe²⁺] × [Cu²⁺]"
+        },
+        {
+          "id": "d",
+          "text": "[Fe²⁺] × [Cu] / ([Cu²⁺] × [Fe])"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équation associée est Fe + Cu²⁺ ⇄ Fe²⁺ + Cu, avec le réducteur Fe du même côté que dans le symbole. Π se lit produits sur réactifs, sans les solides : Π = [Fe²⁺]/[Cu²⁺] ✓. Écrire [Cu²⁺]/[Fe²⁺] inverse le rapport. Multiplier les deux concentrations n'est pas un rapport produits sur réactifs. Garder Fe et Cu au rapport fait figurer des solides, qui n'entrent pas dans la fonction usuelle.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La pile Co | Co²⁺ (0,010 mol·L⁻¹) || Sn²⁺ (1,0 mol·L⁻¹) | Sn a pour f.é.m. standard E° = 0,14 V. Quelle est sa f.é.m. à 25 °C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,26 V"
+        },
+        {
+          "id": "b",
+          "text": "0,20 V"
+        },
+        {
+          "id": "c",
+          "text": "0,08 V"
+        },
+        {
+          "id": "d",
+          "text": "0,02 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'équation associée est Co + Sn²⁺ ⇄ Co²⁺ + Sn, avec n = 2 : Π = 0,010/1,0 = 0,010, donc log Π = −2 et E = 0,14 − 0,03 × (−2) = 0,14 + 0,06 = 0,20 V ✓. La valeur 0,08 V inverse Π (Π = 100, E = 0,14 − 0,06). La valeur 0,26 V emploie le coefficient 0,06 sans diviser par n. La valeur 0,02 V cumule les deux erreurs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une pile Daniell a débité jusqu'à ce que le courant s'annule. Quelle description de son état est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Π est revenue à 1 : la f.é.m. est égale à E°"
+        },
+        {
+          "id": "b",
+          "text": "Π est devenue nulle : la f.é.m. est maximale"
+        },
+        {
+          "id": "c",
+          "text": "Π a dépassé K : la f.é.m. est négative et la pile débite en sens inverse"
+        },
+        {
+          "id": "d",
+          "text": "Π a atteint K : la f.é.m. est nulle et le courant s'annule"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une pile usée est un système à l'équilibre : Π = K, donc E = E° − (0,06/n) log K = 0 et le courant est nul ✓. Dire que Π est revenue à 1 confond E° (valeur de E pour Π = 1) avec l'état final. Dire que Π est devenue nulle suppose qu'un des produits a disparu, alors que Π augmente pendant le fonctionnement. Dire que Π a dépassé K décrit un mélange qui évolue en sens inverse, pas une pile qui s'est arrêtée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On donne E°(Fe²⁺/Fe) = −0,44 V et E°(Pb²⁺/Pb) = −0,13 V. Quelle est la f.é.m. standard de la pile Fe | Fe²⁺ || Pb²⁺ | Pb ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+0,57 V"
+        },
+        {
+          "id": "b",
+          "text": "+0,31 V"
+        },
+        {
+          "id": "c",
+          "text": "−0,31 V"
+        },
+        {
+          "id": "d",
+          "text": "−0,57 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E° = E°_D − E°_G = −0,13 − (−0,44) = +0,31 V ✓. Soustraire dans l'autre sens donne −0,31 V. Additionner les deux potentiels donne −0,57 V ; additionner leurs valeurs absolues donne +0,57 V.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On donne E°(Zn²⁺/Zn) = −0,76 V, E°(H₃O⁺/H₂) = 0,00 V et E°(Cu²⁺/Cu) = +0,34 V. Quel classement range ces oxydants par pouvoir oxydant croissant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zn²⁺ < H₃O⁺ < Cu²⁺"
+        },
+        {
+          "id": "b",
+          "text": "Cu²⁺ < H₃O⁺ < Zn²⁺"
+        },
+        {
+          "id": "c",
+          "text": "H₃O⁺ < Cu²⁺ < Zn²⁺"
+        },
+        {
+          "id": "d",
+          "text": "Zn²⁺ < Cu²⁺ < H₃O⁺"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Plus E° est élevé, plus l'oxydant est fort : −0,76 V < 0,00 V < +0,34 V donne Zn²⁺ < H₃O⁺ < Cu²⁺ ✓. L'ordre inverse range les réducteurs, pas les oxydants. Le rang H₃O⁺ < Cu²⁺ < Zn²⁺ classe les valeurs absolues de E°, en ignorant le signe. Placer H₃O⁺ en dernier fait de la référence un oxydant plus fort que Cu²⁺, alors que E°(H₃O⁺/H₂) est inférieur à E°(Cu²⁺/Cu).",
+      "difficulty": 2
+    }
+  ]
+}

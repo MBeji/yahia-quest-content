@@ -1,0 +1,128 @@
+{
+  "title": "⭐ Exercice : Premiers pas dans un dosage acide-base",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quatre réactions acide-base ont des constantes K différentes. Laquelle peut servir de réaction de dosage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "K = 2·10⁻⁵"
+        },
+        {
+          "id": "b",
+          "text": "K = 8·10²"
+        },
+        {
+          "id": "c",
+          "text": "K = 4·10⁹"
+        },
+        {
+          "id": "d",
+          "text": "K = 3·10⁻¹⁰"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une réaction de dosage doit être pratiquement totale, ce qui demande K > 10⁴ ; seule K = 4·10⁹ y répond ✓. La valeur 8·10² dépasse 1 mais reste sous 10⁴ : le réactif limitant ne serait pas entièrement consommé. Les valeurs 2·10⁻⁵ et 3·10⁻¹⁰ sont très inférieures à 1 : la réaction avance à peine.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "On dose 20,0 mL d'une solution d'acide nitrique par de la soude à 0,100 mol·L⁻¹ ; l'équivalence est atteinte pour V_E = 16,0 mL. Calculer la concentration C_A de l'acide, exprimée en 10⁻² mol·L⁻¹, arrondie au centième.",
+      "answerKey": {
+        "value": 8.0,
+        "tolerance": 0.05,
+        "unit": "10⁻² mol·L⁻¹"
+      },
+      "explanation": "À l'équivalence, C_A·V_A = C_B·V_E : C_A = 0,100 × 16,0/20,0 = 8,00·10⁻² mol·L⁻¹, soit 8 en unités de 10⁻² mol·L⁻¹ ✓. Le volume de l'acide à placer au dénominateur est 20,0 mL, celui du bécher, et non 16,0 mL, celui de la burette.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le dosage de l'acide chlorhydrique par la soude, on verse un volume de soude supérieur à V_E. Quelle espèce impose alors le pH du mélange ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les ions OH⁻ en excès"
+        },
+        {
+          "id": "b",
+          "text": "Les ions H₃O⁺ restants"
+        },
+        {
+          "id": "c",
+          "text": "Les ions Na⁺ ajoutés"
+        },
+        {
+          "id": "d",
+          "text": "Les ions Cl⁻ présents"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Après l'équivalence, tout l'acide est consommé et la soude versée en plus reste en excès : les ions OH⁻ imposent un pH basique ✓. Les ions H₃O⁺ ont été consommés par la réaction H₃O⁺ + OH⁻ → 2 H₂O. Les ions Na⁺ et Cl⁻ sont inertes : ils sont présents avant comme après l'équivalence et ne modifient pas le pH.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La courbe ci-dessous donne le pH au cours du dosage de 20,0 mL d'une solution d'acide méthanoïque (acide faible) par de la soude de même concentration ; quatre points sont repérés. Quel point permet de lire le pKₐ du couple ?\n<svg viewBox=\"0 0 340 236\"><title>Courbe de dosage d'un acide faible par une base forte, quatre points repérés</title><line x1=\"144.67\" y1=\"190\" x2=\"144.67\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"235.33\" y1=\"190\" x2=\"235.33\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"326\" y1=\"190\" x2=\"326\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"166\" x2=\"326\" y2=\"166\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"142\" x2=\"326\" y2=\"142\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"118\" x2=\"326\" y2=\"118\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"94\" x2=\"326\" y2=\"94\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"70\" x2=\"326\" y2=\"70\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"46\" x2=\"326\" y2=\"46\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"22\" x2=\"326\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/>\n<polygon points=\"54,12 50,20 58,20\" fill=\"#0f172a\"/>\n<line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"54\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text>\n<line x1=\"144.67\" y1=\"190\" x2=\"144.67\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"144.67\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text>\n<line x1=\"235.33\" y1=\"190\" x2=\"235.33\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"235.33\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text>\n<line x1=\"326\" y1=\"190\" x2=\"326\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"326\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text>\n<line x1=\"50\" y1=\"190\" x2=\"54\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"194\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text>\n<line x1=\"50\" y1=\"166\" x2=\"54\" y2=\"166\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"170\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text>\n<line x1=\"50\" y1=\"142\" x2=\"54\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"146\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text>\n<line x1=\"50\" y1=\"118\" x2=\"54\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"122\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text>\n<line x1=\"50\" y1=\"94\" x2=\"54\" y2=\"94\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"98\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text>\n<line x1=\"50\" y1=\"70\" x2=\"54\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"74\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text>\n<line x1=\"50\" y1=\"46\" x2=\"54\" y2=\"46\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"50\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text>\n<line x1=\"50\" y1=\"22\" x2=\"54\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"26\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">14</text>\n<text x=\"326\" y=\"221\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">V_B (mL)</text>\n<text x=\"60\" y=\"10\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">pH</text>\n<polyline points=\"54,157.06 56,156.7 58,156.33 60,155.97 62,155.62 64,155.27 66,154.92 68,154.58 70,154.24 72,153.91 74,153.58 76,153.26 78,152.95 80,152.64 82,152.34 84,152.05 86,151.76 88,151.47 90,151.19 92,150.92 94,150.65 96,150.39 98,150.13 100,149.87 102,149.62 104,149.37 106,149.12 108,148.88 110,148.64 112,148.4 114,148.17 116,147.93 118,147.7 120,147.47 122,147.25 124,147.02 126,146.8 128,146.57 130,146.35 132,146.13 134,145.91 136,145.69 138,145.47 140,145.25 142,145.03 144,144.81 146,144.59 148,144.37 150,144.14 152,143.92 154,143.7 156,143.47 158,143.24 160,143.01 162,142.78 164,142.55 166,142.31 168,142.07 170,141.83 172,141.58 174,141.33 176,141.08 178,140.82 180,140.55 182,140.28 184,140.01 186,139.72 188,139.43 190,139.13 192,138.83 194,138.51 196,138.18 198,137.84 200,137.48 202,137.11 204,136.72 206,136.31 208,135.87 210,135.41 212,134.92 214,134.39 216,133.81 218,133.18 220,132.48 221.73,131.8 222,131.69 222.87,131.32 224,130.79 225.13,130.2 226,129.71 226.27,129.56 227.4,128.83 228,128.4 228.53,127.99 229.67,127.01 230,126.68 230.8,125.81 231.93,124.28 232,124.17 233.07,122.14 233.52,120.96 233.67,120.5 233.82,120 233.97,119.45 234,119.35 234.12,118.83 234.2,118.49 234.28,118.13 234.43,117.32 234.58,116.37 234.73,115.2 234.88,113.7 235.03,111.58 235.18,108.01 235.33,95.45 235.48,82.9 235.64,79.34 235.79,77.23 235.94,75.73 236,75.22 236.09,74.57 236.24,73.62 236.39,72.82 236.47,72.46 236.54,72.13 236.69,71.52 236.84,70.97 237,70.48 237.15,70.03 237.6,68.87 238,68.03 238.73,66.77 239.87,65.29 240,65.14 241,64.14 242,63.31 242.13,63.21 243.27,62.42 244,61.97 244.4,61.74 245.53,61.14 246,60.92 246.67,60.61 247.8,60.13 248,60.05 248.93,59.69 250,59.31 252,58.67 254,58.11 256,57.61 258,57.15 260,56.74 262,56.36 264,56.01 266,55.68 268,55.38 270,55.1 272,54.83 274,54.58 276,54.34 278,54.12 280,53.91 282,53.7 284,53.51 286,53.33 288,53.15 290,52.98 292,52.82 294,52.66 296,52.51 298,52.37 300,52.23 302,52.09 304,51.96 306,51.84 308,51.72 310,51.6 312,51.49 314,51.38 316,51.27 318,51.16 320,51.06 322,50.96 324,50.87 326,50.78\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"54\" cy=\"157.06\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><text x=\"64\" y=\"149.06\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">P</text><circle cx=\"144.67\" cy=\"144.74\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><text x=\"153.67\" y=\"158.74\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Q</text><circle cx=\"235.33\" cy=\"95.45\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><text x=\"225.33\" y=\"87.45\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">R</text><circle cx=\"326\" cy=\"50.78\" r=\"4\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><text x=\"318\" y=\"66.78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point P"
+        },
+        {
+          "id": "b",
+          "text": "Le point Q"
+        },
+        {
+          "id": "c",
+          "text": "Le point R"
+        },
+        {
+          "id": "d",
+          "text": "Le point S"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'équivalence a lieu au saut de pH, vers 20 mL ; la demi-équivalence est donc à 10 mL, et c'est là que pH = pKₐ ✓. Ce point est Q, d'ordonnée voisine de 3,75 : c'est le pKₐ du couple HCOOH/HCOO⁻. Le point P est le départ, où la solution ne contient que l'acide. Le point R est l'équivalence, de pH supérieur à 7. Le point S est après l'équivalence, avec de la soude en excès.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On dose 25,0 mL d'une solution d'un acide faible AH par de la soude à 5,0·10⁻² mol·L⁻¹ ; l'équivalence est atteinte pour V_E = 18,0 mL. Le pH mesuré après versement de 9,0 mL de soude est 3,90. Calculer la constante d'acidité Kₐ du couple AH/A⁻, exprimée en 10⁻⁴, arrondie au centième.",
+      "answerKey": {
+        "value": 1.26,
+        "tolerance": 0.02,
+        "unit": "10⁻⁴"
+      },
+      "explanation": "Le volume versé, 9,0 mL, est V_E/2 : c'est la demi-équivalence, où pH = pKₐ = 3,90 ✓. Alors Kₐ = 10^(−3,90) = 10⁻⁴ × 10^(0,10) = 1,26·10⁻⁴, soit 1,26 en unités de 10⁻⁴. Prendre pour pKₐ le pH à l'équivalence, que l'on ne connaît d'ailleurs pas ici, serait faux : le pKₐ se lit à la demi-équivalence.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On dose l'acide éthanoïque par de la soude, avec du bleu de bromothymol (zone de virage 6,0 à 7,6), alors que pH_E ≈ 8,55. Où se produit le virage de l'indicateur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Après l'équivalence, car l'indicateur vire quand la soude est en excès"
+        },
+        {
+          "id": "b",
+          "text": "À l'équivalence exacte, car la zone de virage est voisine de 7"
+        },
+        {
+          "id": "c",
+          "text": "Il ne vire pas, car la zone de virage n'est pas atteinte"
+        },
+        {
+          "id": "d",
+          "text": "Avant l'équivalence, car la zone de virage est sous pH_E"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le pH monte au cours du dosage : il atteint la zone 6,0 à 7,6 avant d'arriver à pH_E = 8,55, donc l'indicateur vire avant l'équivalence, quand il reste un peu d'acide ✓. Le virage n'attend pas l'excès de soude : il a lieu dès que le pH atteint la zone 6,0 à 7,6. Un pH voisin de 7 ne fait pas de ce virage celui de l'équivalence, qui est à 8,55. Enfin le pH traverse bien la zone de virage : l'indicateur vire.",
+      "difficulty": 2
+    }
+  ]
+}

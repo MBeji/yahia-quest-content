@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Équilibre chimique",
+  "questions": [
+    {
+      "prompt": "Pour une réaction, x_max = 8,0 mmol et x_f = 2,0 mmol. Que vaut le taux d'avancement final τ_f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25"
+        },
+        {
+          "id": "b",
+          "text": "0,75"
+        },
+        {
+          "id": "c",
+          "text": "4,0"
+        },
+        {
+          "id": "d",
+          "text": "6,0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le taux d'avancement final est τ_f = x_f/x_max = 2,0/8,0 = 0,25 ✓, inférieur à 1 : la réaction est limitée. Le résultat 0,75 est 1 − τ_f, la part de l'avancement maximal non atteinte. Le résultat 4,0 est le quotient inverse x_max/x_f. Le résultat 6,0 est la différence x_max − x_f en mmol, qui n'est pas un taux.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle observation caractérise un système en état d'équilibre chimique, en dehors de toute intervention extérieure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les quantités de réactifs et de produits sont toutes égales entre elles"
+        },
+        {
+          "id": "b",
+          "text": "Le réactif limitant a entièrement disparu et les quantités ne changent plus"
+        },
+        {
+          "id": "c",
+          "text": "Les réactifs et les produits sont présents, avec des quantités constantes"
+        },
+        {
+          "id": "d",
+          "text": "Les quantités de produits augmentent encore, mais plus lentement qu'au début"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un système est en équilibre chimique lorsque les réactifs et les produits sont tous présents et que leurs quantités ne changent pas au cours du temps ✓. Des quantités égales entre elles ne sont pas exigées : l'estérification équimolaire donne 0,050 mol d'acide pour 0,100 mol d'ester. La disparition du réactif limitant caractérise un équilibre statique (τ_f = 1), pas un équilibre chimique. Des quantités qui évoluent encore, même lentement, excluent l'équilibre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que traduit la double flèche dans l'équation CH₃COOH + H₂O ⇄ CH₃COO⁻ + H₃O⁺ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La réaction est totale dans le sens direct"
+        },
+        {
+          "id": "b",
+          "text": "La réaction directe se produit d'abord, puis l'inverse prend le relais"
+        },
+        {
+          "id": "c",
+          "text": "L'équation doit se lire ici de droite à gauche"
+        },
+        {
+          "id": "d",
+          "text": "Les réactions directe et inverse se produisent en même temps"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La double flèche signifie que la réaction directe et la réaction inverse se produisent simultanément et se limitent mutuellement ✓. Une réaction totale s'écrit avec une flèche simple. Les deux réactions ne se succèdent pas : elles ont lieu en même temps. Sans indication contraire, on lit l'équation de gauche à droite, donc dans le sens direct.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À l'équilibre chimique, que peut-on dire des vitesses v(1) et v(−1) des réactions directe et inverse, à l'échelle moléculaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La vitesse v(1) est supérieure à la vitesse v(−1)"
+        },
+        {
+          "id": "b",
+          "text": "Elles sont égales entre elles et ne sont pas nulles"
+        },
+        {
+          "id": "c",
+          "text": "Elles sont égales entre elles et toutes deux nulles"
+        },
+        {
+          "id": "d",
+          "text": "La vitesse v(1) est inférieure à la vitesse v(−1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À l'équilibre, v(1) = v(−1) ≠ 0 : les deux réactions se poursuivent à vitesses égales, c'est un équilibre dynamique ✓. Des vitesses égales mais nulles confondent l'échelle moléculaire avec l'échelle macroscopique, où la vitesse observée v = |v(1) − v(−1)| est nulle. Si l'une des vitesses dépassait l'autre, la composition évoluerait encore dans un sens, et le système ne serait pas à l'équilibre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On dissout un acide dans l'eau pour obtenir V = 2,0 L de solution de pH = 3,00. Que vaut la quantité x_f d'ions H₃O⁺ formés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,0·10⁻⁴ mol"
+        },
+        {
+          "id": "b",
+          "text": "1,0·10⁻³ mol"
+        },
+        {
+          "id": "c",
+          "text": "2,0·10⁻³ mol"
+        },
+        {
+          "id": "d",
+          "text": "6,0 mol"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "[H₃O⁺] = 10^(−3,00) = 1,0·10⁻³ mol·L⁻¹, donc x_f = n(H₃O⁺) = 1,0·10⁻³ × 2,0 = 2,0·10⁻³ mol ✓. La valeur 1,0·10⁻³ oublie de multiplier par le volume : c'est une concentration, pas une quantité. La valeur 5,0·10⁻⁴ divise par V au lieu de multiplier. La valeur 6,0 multiplie le pH lui-même par le volume.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour une réaction limitée, on part d'un mélange équimolaire, puis on recommence en mettant l'un des réactifs en excès, l'autre gardant la même quantité. Que devient τ_f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il diminue, car le réactif en excès gêne la réaction"
+        },
+        {
+          "id": "b",
+          "text": "Il augmente, mais il reste inférieur à 1"
+        },
+        {
+          "id": "c",
+          "text": "Il ne change pas, car il ne dépend que de la nature de la réaction"
+        },
+        {
+          "id": "d",
+          "text": "Il devient égal à 1 dès qu'un réactif est en excès"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La composition à l'équilibre dépend de la composition initiale : un excès de l'un des réactifs, par rapport au mélange équimolaire, fait augmenter τ_f, sans l'amener à 1 tant que la réaction reste limitée ✓. Dire qu'il diminue inverse le constat. Dire qu'il ne change pas oublie que la composition finale dépend des quantités de départ. Dire qu'il atteint 1 confond un excès, qui rapproche de 1, avec une réaction totale.",
+      "difficulty": 2
+    }
+  ]
+}

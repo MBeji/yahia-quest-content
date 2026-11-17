@@ -1,0 +1,175 @@
+{
+  "title": "⭐⭐ Révision (type examen) : potentiel standard d'un couple redox",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "On donne E°(Zn²⁺/Zn) = −0,76 V, E°(Fe²⁺/Fe) = −0,44 V, E°(Ni²⁺/Ni) = −0,26 V et E°(Cu²⁺/Cu) = +0,34 V. Quel métal est le réducteur le plus fort ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cu"
+        },
+        {
+          "id": "b",
+          "text": "Ni"
+        },
+        {
+          "id": "c",
+          "text": "Fe"
+        },
+        {
+          "id": "d",
+          "text": "Zn"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Plus E° est bas, plus l'oxydant est faible et plus le réducteur conjugué est fort : le zinc, de E° = −0,76 V, est le réducteur le plus fort ✓. Le cuivre, de E° = +0,34 V, est au contraire le réducteur le plus faible : choisir le plus haut potentiel confond oxydant fort et réducteur fort. Le fer et le nickel sont intermédiaires.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque élément à sa description.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "L'E.N.H."
+        },
+        {
+          "id": "l2",
+          "text": "Le platine platiné"
+        },
+        {
+          "id": "l3",
+          "text": "Le potentiel standard E° d'un couple"
+        },
+        {
+          "id": "l4",
+          "text": "E°(H₃O⁺/H₂)"
+        },
+        {
+          "id": "r1",
+          "text": "0 V, car la pile de deux E.N.H. est symétrique"
+        },
+        {
+          "id": "r2",
+          "text": "f.é.m. de la pile E.N.H. à gauche et couple à droite, pour Π = 1"
+        },
+        {
+          "id": "r3",
+          "text": "demi-pile H₃O⁺/H₂ sous 1 atm avec [H₃O⁺] = 1 mol·L⁻¹"
+        },
+        {
+          "id": "r4",
+          "text": "lame inattaquable à surface poreuse qui fixe le dihydrogène"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r2"
+          ],
+          [
+            "l4",
+            "r1"
+          ]
+        ]
+      },
+      "explanation": "L'E.N.H. est la demi-pile H₃O⁺/H₂ dans les conditions normales : 1 atm et [H₃O⁺] = 1 mol·L⁻¹. Le platine platiné est la lame de cette demi-pile : inattaquable, poreuse, elle fixe le dihydrogène. Le potentiel standard d'un couple est la f.é.m. de la pile formée de l'E.N.H. à gauche et du couple à droite, pour Π = 1. Quant au couple H₃O⁺/H₂, lui-même placé face à l'E.N.H., il donne une pile symétrique : sa f.é.m. est nulle, donc E° = 0 V.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "On donne E°(Co²⁺/Co) = −0,28 V et E°(Pb²⁺/Pb) = −0,13 V. Calculer la f.é.m. standard de la pile Co | Co²⁺ || Pb²⁺ | Pb, en volts.",
+      "answerKey": {
+        "value": 0.15,
+        "tolerance": 0.005,
+        "unit": "V"
+      },
+      "explanation": "La f.é.m. standard est la droite moins la gauche : E° = E°(Pb²⁺/Pb) − E°(Co²⁺/Co) = −0,13 − (−0,28) = +0,15 V ✓. Pb²⁺ est donc un oxydant plus fort que Co²⁺. L'inverse, −0,28 − (−0,13) = −0,15 V, serait la valeur de la pile écrite avec les demi-piles échangées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La pile Fe | Fe²⁺ || Sn²⁺ | Sn est associée à l'équation Fe + Sn²⁺ ⇄ Fe²⁺ + Sn, de constante K = 10¹⁰ à 25 °C. On écrit aussi l'équation 2 Fe + 2 Sn²⁺ ⇄ 2 Fe²⁺ + 2 Sn, de constante K′ = K². Quelle est la f.é.m. standard de la pile ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,15 V"
+        },
+        {
+          "id": "b",
+          "text": "0,30 V"
+        },
+        {
+          "id": "c",
+          "text": "0,60 V"
+        },
+        {
+          "id": "d",
+          "text": "1,20 V"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec la seconde écriture, n = 4 et log K′ = 20 : E° = (0,06/4) × 20 = 0,30 V ✓. Avec la première, n = 2 et log K = 10 : E° = (0,06/2) × 10 = 0,30 V, la même valeur, car E° ne dépend pas de l'écriture de l'équation. La valeur 0,15 V oublie que K′ = K² (log K = 10 au lieu de 20). La valeur 0,60 V garde n = 2. La valeur 1,20 V oublie de diviser par n.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "On donne E°(Mg²⁺/Mg) = −2,37 V, E°(Zn²⁺/Zn) = −0,76 V, E°(Co²⁺/Co) = −0,28 V, E°(H₃O⁺/H₂) = 0,00 V et E°(Cu²⁺/Cu) = +0,34 V. Dans quelles expériences, avec des solutions à 1,0 mol·L⁻¹, une réaction se produit-elle spontanément ? Cocher toutes les réponses exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une lame de magnésium dans une solution de Zn²⁺"
+        },
+        {
+          "id": "b",
+          "text": "Une lame de cuivre dans une solution de Zn²⁺"
+        },
+        {
+          "id": "c",
+          "text": "Une lame de cobalt dans une solution de Cu²⁺"
+        },
+        {
+          "id": "d",
+          "text": "Une lame de cuivre dans une solution d'acide (H₃O⁺)"
+        },
+        {
+          "id": "e",
+          "text": "Une lame de cobalt dans une solution d'acide (H₃O⁺)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Un oxydant réagit avec un réducteur dont le couple a un E° plus bas. Le magnésium (−2,37 V) réduit Zn²⁺ (−0,76 V) ✓. Le cobalt (−0,28 V) réduit Cu²⁺ (+0,34 V) ✓, et il est attaqué par les ions H₃O⁺ (0,00 V) ✓. Le cuivre n'agit ni sur Zn²⁺ (E° plus bas) ni sur H₃O⁺ : son couple a un potentiel supérieur à ceux de ces oxydants.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La pile Fe | Fe²⁺ (0,10 mol·L⁻¹) || Co²⁺ (0,10 mol·L⁻¹) | Co, de f.é.m. standard E° = 0,16 V à 25 °C, débite jusqu'à être usée ; les deux compartiments ont le même volume. Calculer la concentration finale en Fe²⁺, en mol·L⁻¹, arrondie au centième.",
+      "answerKey": {
+        "value": 0.2,
+        "tolerance": 0.005,
+        "unit": "mol·L⁻¹"
+      },
+      "explanation": "Avec n = 2, log K = 2 × 0,16/0,06 = 5,33, soit K ≈ 2 × 10⁵, très supérieur à 1 : la réaction Fe + Co²⁺ → Fe²⁺ + Co est pratiquement totale. Presque tous les ions Co²⁺ disparaissent (0,10 mol·L⁻¹), et autant d'ions Fe²⁺ apparaissent dans l'autre compartiment : [Fe²⁺] = 0,10 + 0,10 = 0,2 mol·L⁻¹, soit 0,20 au centième ✓, avec [Co²⁺] ≈ 1 × 10⁻⁶ mol·L⁻¹ pour que Π = K.",
+      "difficulty": 2
+    }
+  ]
+}

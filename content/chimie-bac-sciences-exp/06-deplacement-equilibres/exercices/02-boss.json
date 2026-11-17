@@ -1,0 +1,132 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître de la modération",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "La réaction CO(g) + H₂O(g) ⇄ CO₂(g) + H₂(g) est exothermique dans le sens direct. Quelle perturbation, appliquée seule à un système à l'équilibre, fait augmenter la quantité de CO₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une hausse de température à pression constante, dans un système fermé"
+        },
+        {
+          "id": "b",
+          "text": "Le retrait d'une partie du dihydrogène, à température constante"
+        },
+        {
+          "id": "c",
+          "text": "Une hausse de pression à température constante, dans un système fermé"
+        },
+        {
+          "id": "d",
+          "text": "L'ajout d'un catalyseur, à température et pression constantes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le retrait d'une partie de H₂ fait diminuer [H₂] : la réponse est la réaction qui forme H₂, la réaction directe, donc la quantité de CO₂ augmente ✓. Une hausse de température fait se produire la réaction endothermique, ici l'inverse. Une hausse de pression ne déplace pas cet équilibre : 2 mol de gaz de chaque côté. Le catalyseur ne déplace pas l'équilibre.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour N₂(g) + 3 H₂(g) ⇄ 2 NH₃(g), la fonction des concentrations est Π = [NH₃]² / ([N₂]·[H₂]³). À température constante, on divise par 2 le volume du système à l'équilibre. Par quel facteur Π est-elle multipliée juste après la compression, avant toute évolution ? (nombre sans unité)",
+      "answerKey": {
+        "value": 0.25,
+        "tolerance": 0.01
+      },
+      "explanation": "Les quantités de matière n'ont pas changé : toutes les concentrations sont multipliées par 2. Le numérateur [NH₃]² est multiplié par 2² = 4, le dénominateur [N₂]·[H₂]³ par 2 × 2³ = 16. Π est donc multipliée par 4/16 = 0,25 ✓. Comme Π = K à l'équilibre, on a maintenant Π < K : le système évolue dans le sens direct, celui qui diminue n_g (4 mol de gaz remplacées par 2), comme le prévoit la loi de modération pour une hausse de pression.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Pour 2 NO(g) + O₂(g) ⇄ 2 NO₂(g), exothermique dans le sens direct, quelles perturbations, appliquées seules à un système à l'équilibre, font augmenter la quantité de NO₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une compression à température constante"
+        },
+        {
+          "id": "b",
+          "text": "Une élévation de température à pression constante"
+        },
+        {
+          "id": "c",
+          "text": "L'ajout de dioxygène à température et volume constants"
+        },
+        {
+          "id": "d",
+          "text": "L'ajout d'un catalyseur"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "La compression favorise la réaction qui diminue n_g : 3 mol de gaz à gauche, 2 à droite, donc la réaction directe, qui forme NO₂ ✓. L'ajout de O₂ fait se produire la réaction qui le consomme, la réaction directe ✓. L'élévation de température fait se produire la réaction endothermique, ici l'inverse, qui consomme NO₂. Le catalyseur accélère les deux réactions sans déplacer l'équilibre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On enferme du dioxyde d'azote et du tétraoxyde de diazote dans un récipient fermé : 2 NO₂(g) ⇄ N₂O₄(g), réaction directe exothermique. À l'équilibre, à l'instant t₁, une perturbation unique est appliquée ; les courbes donnent les concentrations des deux gaz.\n\n<svg viewBox=\"0 0 340 236\"><title>Concentrations en NO₂ et N₂O₄ avant et après la perturbation à t₁</title><line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"330\" y=\"206\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t</text><text x=\"60\" y=\"12\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">c (mol·L⁻¹)</text><line x1=\"54\" y1=\"143.1\" x2=\"326\" y2=\"143.1\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"147.1\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,01</text><line x1=\"54\" y1=\"96.3\" x2=\"326\" y2=\"96.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"100.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,02</text><line x1=\"54\" y1=\"49.4\" x2=\"326\" y2=\"49.4\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"53.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,03</text><line x1=\"120\" y1=\"190\" x2=\"120\" y2=\"26\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"3 4\"/><text x=\"120\" y=\"206\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t₁</text><polyline points=\"54,143.1 120,143.1 120,49.4 126,61 132,70.9 138,79.5 144,86.8 150,93.2 156,98.6 162,103.3 168,107.4 174,110.9 180,113.9 186,116.4 192,118.7 198,120.6 204,122.2 210,123.6 216,124.8 222,125.9 228,126.8 234,127.6 240,128.2 246,128.8 252,129.3 258,129.7 264,130.1 270,130.4 276,130.7 282,130.9 288,131.1 294,131.3 300,131.4 306,131.6 312,131.7 318,131.8 324,131.9\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polyline points=\"54,110.3 120,110.3 126,104.6 132,99.7 138,95.4 144,91.7 150,88.6 156,85.9 162,83.5 168,81.5 174,79.8 180,78.3 186,77 192,75.9 198,75 204,74.2 210,73.5 216,72.8 222,72.3 228,71.9 234,71.5 240,71.2 246,70.9 252,70.6 258,70.4 264,70.2 270,70.1 276,69.9 282,69.8 288,69.7 294,69.6 300,69.6 306,69.5 312,69.4 318,69.4 324,69.4\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><text x=\"318\" y=\"148.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">[NO₂]</text><text x=\"318\" y=\"61.1\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">[N₂O₄]</text></svg>\n\nQuelle perturbation a été appliquée en t₁ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une compression à température constante"
+        },
+        {
+          "id": "b",
+          "text": "Un ajout de N₂O₄ sans variation notable du volume"
+        },
+        {
+          "id": "c",
+          "text": "Un ajout de NO₂ sans variation notable du volume"
+        },
+        {
+          "id": "d",
+          "text": "Une élévation de température à pression constante"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En t₁, [NO₂] saute de 0,010 à 0,030 mol·L⁻¹ alors que [N₂O₄] reste à 0,017 mol·L⁻¹ : une seule concentration est modifiée, c'est un ajout de NO₂ ✓. La réaction directe consomme ensuite NO₂ : [NO₂] retombe à environ 0,012 mol·L⁻¹, au-dessus de la valeur initiale, tandis que [N₂O₄] monte à environ 0,026 mol·L⁻¹. Une compression ferait sauter les deux courbes en même temps. Un chauffage ne ferait pas de saut et déplacerait l'équilibre dans le sens inverse, avec [NO₂] qui augmente. Un ajout de N₂O₄ ferait sauter la courbe de N₂O₄.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une enceinte fermée de volume et de température constants, l'équilibre H₂(g) + I₂(g) ⇄ 2 HI(g) contient 0,10 mol de H₂, 0,10 mol de I₂ et 0,70 mol de HI. On ajoute 0,10 mol de H₂. Au nouvel équilibre, il reste 0,070 mol de I₂. Calculer la quantité de HI, en mol (à 10⁻² près).",
+      "answerKey": {
+        "value": 0.76,
+        "tolerance": 0.006
+      },
+      "explanation": "Après l'ajout, la composition est 0,20 mol de H₂, 0,10 mol de I₂ et 0,70 mol de HI. Au départ K = 0,70² / (0,10 × 0,10) = 49 ; juste après l'ajout, Π = 0,70² / (0,20 × 0,10) = 24,5 < K : réaction directe, qui consomme I₂. Il en reste 0,070 mol, donc x = 0,10 − 0,070 = 0,030 mol et n(HI) = 0,70 + 2x = 0,76 mol ✓. Contrôle : Π = 0,76² / (0,17 × 0,070) ≈ 48,5, voisin de K. Le résultat 0,73 oublie le coefficient 2 de HI.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Co(H₂O)₆²⁺ (rose) + 4 Cl⁻ ⇄ CoCl₄²⁻ (bleu) + 6 H₂O, endothermique dans le sens direct, est étudié dans un tube à essai, en équilibre. Dans quel cas la loi de modération permet-elle de prévoir la teinte obtenue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On ajoute 10 mL d'eau distillée à 2 mL de solution à l'équilibre"
+        },
+        {
+          "id": "b",
+          "text": "On plonge le tube à l'équilibre dans un bain de glace"
+        },
+        {
+          "id": "c",
+          "text": "On chauffe la solution tout en y versant de l'acide chlorhydrique concentré"
+        },
+        {
+          "id": "d",
+          "text": "On ajoute de l'acide chlorhydrique concentré à un mélange dont la teinte évolue encore"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le bain de glace ne change que la température, à pression constante, sur un système en équilibre : la réponse est la réaction exothermique, ici l'inverse, car la réaction directe est endothermique, et la solution rosit ✓. L'ajout de 10 mL d'eau dilue toutes les espèces à la fois : il faut comparer Π et K. Chauffer en versant de l'acide change deux facteurs en même temps : les deux réponses peuvent s'opposer. Si la teinte évolue encore, le système n'est pas initialement en équilibre : la loi ne s'applique pas.",
+      "difficulty": 3
+    }
+  ]
+}

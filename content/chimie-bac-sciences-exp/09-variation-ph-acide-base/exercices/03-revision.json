@@ -1,0 +1,174 @@
+{
+  "title": "⭐⭐ Révision (type examen) : variation du pH dans un dosage acide-base",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associer chaque situation, à 25 °C, à ce que l'on observe.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Acide fort dosé par une base forte, à l'équivalence"
+        },
+        {
+          "id": "l2",
+          "text": "Acide faible dosé par une base forte, à l'équivalence"
+        },
+        {
+          "id": "l3",
+          "text": "Base faible dosée par un acide fort, à l'équivalence"
+        },
+        {
+          "id": "l4",
+          "text": "Acide faible dosé par une base forte, à la demi-équivalence"
+        },
+        {
+          "id": "r1",
+          "text": "pH = 7"
+        },
+        {
+          "id": "r2",
+          "text": "pH > 7"
+        },
+        {
+          "id": "r3",
+          "text": "pH < 7"
+        },
+        {
+          "id": "r4",
+          "text": "pH = pKₐ du couple"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "À l'équivalence d'un acide fort par une base forte, le sel ne contient que des ions inertes : pH = 7. Avec un acide faible, le sel contient une base faible : pH > 7. Avec une base faible, il contient un acide faible : pH < 7. À la demi-équivalence, [acide] = [base] : pH = pKₐ du couple.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "On dose 50,0 mL d'une boisson contenant de l'acide sorbique (monoacide faible, M = 112 g·mol⁻¹) par de la soude à 1,00·10⁻² mol·L⁻¹ ; l'équivalence est atteinte pour V_E = 7,90 mL. Calculer la concentration massique en acide sorbique de la boisson, en mg·L⁻¹, arrondie à l'unité.",
+      "answerKey": {
+        "value": 177,
+        "tolerance": 2,
+        "unit": "mg·L⁻¹"
+      },
+      "explanation": "À l'équivalence, C_A·V_A = C_B·V_E : C_A = 1,00·10⁻² × 7,90/50,0 = 1,58·10⁻³ mol·L⁻¹. Alors C_m = C_A·M = 1,58·10⁻³ × 112 = 0,177 g·L⁻¹, soit 177 mg·L⁻¹ ✓. Oublier de convertir les grammes en milligrammes laisserait 0,177, valeur mille fois trop petite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les courbes ci-dessous représentent le dosage de 20,0 mL d'acide chlorhydrique par de la soude de même concentration que l'acide, pour deux concentrations différentes. Quelle affirmation est exacte ?\n<svg viewBox=\"0 0 340 236\"><title>Deux courbes de dosage de l'acide chlorhydrique par la soude</title><line x1=\"122\" y1=\"190\" x2=\"122\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"190\" y1=\"190\" x2=\"190\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"258\" y1=\"190\" x2=\"258\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"326\" y1=\"190\" x2=\"326\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"166\" x2=\"326\" y2=\"166\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"142\" x2=\"326\" y2=\"142\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"118\" x2=\"326\" y2=\"118\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"94\" x2=\"326\" y2=\"94\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"70\" x2=\"326\" y2=\"70\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"46\" x2=\"326\" y2=\"46\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"22\" x2=\"326\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"16\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/>\n<polygon points=\"54,12 50,20 58,20\" fill=\"#0f172a\"/>\n<line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"54\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text>\n<line x1=\"122\" y1=\"190\" x2=\"122\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"122\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text>\n<line x1=\"190\" y1=\"190\" x2=\"190\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"190\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text>\n<line x1=\"258\" y1=\"190\" x2=\"258\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"258\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text>\n<line x1=\"326\" y1=\"190\" x2=\"326\" y2=\"194\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"326\" y=\"206\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text>\n<line x1=\"50\" y1=\"190\" x2=\"54\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"194\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text>\n<line x1=\"50\" y1=\"166\" x2=\"54\" y2=\"166\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"170\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text>\n<line x1=\"50\" y1=\"142\" x2=\"54\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"146\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text>\n<line x1=\"50\" y1=\"118\" x2=\"54\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"122\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text>\n<line x1=\"50\" y1=\"94\" x2=\"54\" y2=\"94\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"98\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text>\n<line x1=\"50\" y1=\"70\" x2=\"54\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"74\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text>\n<line x1=\"50\" y1=\"46\" x2=\"54\" y2=\"46\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"50\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text>\n<line x1=\"50\" y1=\"22\" x2=\"54\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"46\" y=\"26\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">14</text>\n<text x=\"326\" y=\"221\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">V_B (mL)</text>\n<text x=\"60\" y=\"10\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">pH</text>\n<polyline points=\"54,178 56,177.85 58,177.69 60,177.54 62,177.39 64,177.23 66,177.08 68,176.92 70,176.77 72,176.61 74,176.46 76,176.3 78,176.14 80,175.98 82,175.82 84,175.66 86,175.5 88,175.34 90,175.17 92,175.01 94,174.84 96,174.67 98,174.5 100,174.33 102,174.16 104,173.98 106,173.8 108,173.62 110,173.44 112,173.25 114,173.06 116,172.87 118,172.68 120,172.48 122,172.27 124,172.07 126,171.86 128,171.64 130,171.42 132,171.2 134,170.96 136,170.73 138,170.48 140,170.23 142,169.97 144,169.7 146,169.43 148,169.14 150,168.84 152,168.53 154,168.2 156,167.86 158,167.5 160,167.12 162,166.72 164,166.29 166,165.83 168,165.33 170,164.8 172,164.21 174,163.55 176,162.81 178,161.97 179.8,161.09 180,160.98 180.65,160.62 181.5,160.1 182,159.78 182.35,159.54 183.2,158.91 184,158.24 184.05,158.19 184.9,157.37 185.75,156.41 186,156.09 186.6,155.23 187.45,153.71 188,152.44 188.3,151.58 188.98,148.91 189.06,148.45 189.15,147.95 189.23,147.4 189.32,146.79 189.41,146.09 189.49,145.29 189.57,144.33 189.66,143.17 189.74,141.67 189.83,139.55 189.92,135.94 190,106 190.08,76.06 190.17,72.45 190.26,70.34 190.34,68.84 190.43,67.68 190.51,66.73 190.59,65.93 190.68,65.24 190.77,64.63 190.85,64.08 190.94,63.58 191.02,63.13 191.7,60.48 192,59.64 192.55,58.38 193.4,56.9 194,56.07 194.25,55.75 195.1,54.82 195.95,54.03 196,53.99 196.8,53.35 197.65,52.76 198,52.53 198.5,52.22 199.35,51.74 200,51.4 200.2,51.3 202,50.49 204,49.72 206,49.06 208,48.49 210,47.97 212,47.51 214,47.09 216,46.71 218,46.36 220,46.03 222,45.73 224,45.45 226,45.19 228,44.94 230,44.71 232,44.48 234,44.27 236,44.08 238,43.89 240,43.71 242,43.53 244,43.37 246,43.21 248,43.06 250,42.92 252,42.78 254,42.64 256,42.51 258,42.39 260,42.27 262,42.15 264,42.04 266,41.93 268,41.82 270,41.72 272,41.62 274,41.53 276,41.43 278,41.34 280,41.25 282,41.17 284,41.08 286,41 288,40.92 290,40.85 292,40.77 294,40.7 296,40.63 298,40.56 300,40.49 302,40.42 304,40.36 306,40.29 308,40.23 310,40.17 312,40.11 314,40.05 316,39.99 318,39.94 320,39.88 322,39.83 324,39.78\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.3\" stroke-linejoin=\"round\"/>\n<polyline points=\"54,154 56,153.85 58,153.69 60,153.54 62,153.39 64,153.23 66,153.08 68,152.92 70,152.77 72,152.61 74,152.46 76,152.3 78,152.14 80,151.98 82,151.82 84,151.66 86,151.5 88,151.34 90,151.17 92,151.01 94,150.84 96,150.67 98,150.5 100,150.33 102,150.16 104,149.98 106,149.8 108,149.62 110,149.44 112,149.25 114,149.06 116,148.87 118,148.68 120,148.48 122,148.27 124,148.07 126,147.86 128,147.64 130,147.42 132,147.2 134,146.96 136,146.73 138,146.48 140,146.23 142,145.97 144,145.7 146,145.43 148,145.14 150,144.84 152,144.53 154,144.2 156,143.86 158,143.5 160,143.12 162,142.72 164,142.29 166,141.83 168,141.33 170,140.8 172,140.21 174,139.55 176,138.81 178,137.97 179.8,137.09 180,136.98 180.65,136.62 181.5,136.1 182,135.78 182.35,135.54 183.2,134.91 184,134.24 184.05,134.19 184.9,133.37 185.75,132.41 186,132.09 186.6,131.23 187.45,129.71 188,128.44 188.3,127.58 188.98,124.91 189.06,124.46 189.15,123.96 189.23,123.41 189.32,122.8 189.41,122.1 189.49,121.3 189.57,120.36 189.66,119.2 189.74,117.73 189.83,115.68 189.92,112.41 190,106 190.08,99.6 190.17,96.32 190.26,94.28 190.34,92.81 190.43,91.66 190.51,90.72 190.59,89.92 190.68,89.23 190.77,88.62 190.85,88.07 190.94,87.58 191.02,87.13 191.7,84.48 192,83.64 192.55,82.38 193.4,80.9 194,80.07 194.25,79.75 195.1,78.82 195.95,78.03 196,77.99 196.8,77.35 197.65,76.76 198,76.53 198.5,76.22 199.35,75.74 200,75.4 200.2,75.3 202,74.49 204,73.72 206,73.06 208,72.49 210,71.97 212,71.51 214,71.09 216,70.71 218,70.36 220,70.03 222,69.73 224,69.45 226,69.19 228,68.94 230,68.71 232,68.48 234,68.27 236,68.08 238,67.89 240,67.71 242,67.53 244,67.37 246,67.21 248,67.06 250,66.92 252,66.78 254,66.64 256,66.51 258,66.39 260,66.27 262,66.15 264,66.04 266,65.93 268,65.82 270,65.72 272,65.62 274,65.53 276,65.43 278,65.34 280,65.25 282,65.17 284,65.08 286,65 288,64.92 290,64.85 292,64.77 294,64.7 296,64.63 298,64.56 300,64.49 302,64.42 304,64.36 306,64.29 308,64.23 310,64.17 312,64.11 314,64.05 316,63.99 318,63.94 320,63.88 322,63.83 324,63.78\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.3\" stroke-linejoin=\"round\"/>\n<text x=\"108.4\" y=\"165.58\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"108.4\" y=\"141.58\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le saut de pH est plus grand pour la courbe 2"
+        },
+        {
+          "id": "b",
+          "text": "La courbe 1 correspond à la solution la plus concentrée"
+        },
+        {
+          "id": "c",
+          "text": "Le pH à l'équivalence est plus bas pour la courbe 1"
+        },
+        {
+          "id": "d",
+          "text": "La courbe 2 correspond à la solution la plus concentrée"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Au départ, la courbe 1 est à pH 1 et la courbe 2 à pH 3 : [H₃O⁺] est cent fois plus grande pour la courbe 1, qui correspond à la solution la plus concentrée ✓. Son saut est aussi le plus grand, entre 19 et 21 mL, de 2,6 à 11,4 environ contre 4,6 à 9,4. Les deux courbes ont le même pH à l'équivalence, égal à 7 : le pH à l'équivalence ne dépend pas de la concentration pour un acide fort et une base forte.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur les indicateurs colorés sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un indicateur coloré est un acide faible dont la teinte diffère de celle de sa base conjuguée"
+        },
+        {
+          "id": "b",
+          "text": "Un indicateur est convenable si sa zone de virage contient le pH à l'équivalence"
+        },
+        {
+          "id": "c",
+          "text": "La teinte sensible est la teinte prise par l'indicateur dans sa zone de virage"
+        },
+        {
+          "id": "d",
+          "text": "Le bleu de bromothymol convient à tous les dosages, car sa zone de virage est voisine de 7"
+        },
+        {
+          "id": "e",
+          "text": "On introduit une grande quantité d'indicateur pour que le virage soit net"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "L'indicateur est un couple acide faible/base conjuguée de teintes différentes ✓. Il est convenable si sa zone de virage contient pH_E ✓. La teinte sensible est celle de la zone de virage, où les deux formes coexistent ✓. Le bleu de bromothymol ne convient qu'aux dosages de pH_E voisin de 7, soit un acide fort par une base forte. Enfin l'indicateur est lui-même un acide faible : on en met quelques gouttes, car une grande quantité réagirait avec la solution dosée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On mélange 30,0 mL d'acide éthanoïque à 0,10 mol·L⁻¹ et 10,0 mL de soude à 0,10 mol·L⁻¹ ; pKₐ(CH₃CO₂H/CH₃CO₂⁻) = 4,75. Calculer le pH du mélange, arrondi au centième.",
+      "answerKey": {
+        "value": 4.45,
+        "tolerance": 0.02
+      },
+      "explanation": "La réaction CH₃CO₂H + OH⁻ → CH₃CO₂⁻ + H₂O est totale. n(acide) = 3,0·10⁻³ mol et n(OH⁻) = 1,0·10⁻³ mol : il reste 2,0·10⁻³ mol d'acide et il se forme 1,0·10⁻³ mol d'éthanoate. Le mélange est un tampon : pH = pKₐ + log (n(base)/n(acide)) = 4,75 + log (1,0/2,0) = 4,75 − 0,30 = 4,45 ✓. Prendre pH = pKₐ supposerait des quantités égales, ce qui n'est pas le cas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À l'équivalence du dosage de l'ammoniac par l'acide chlorhydrique, la solution équivaut à du chlorure d'ammonium dissous dans l'eau. Que peut-on dire de cette solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neutre, car les ions Cl⁻ sont inertes"
+        },
+        {
+          "id": "b",
+          "text": "Basique, car l'ammoniac est une base"
+        },
+        {
+          "id": "c",
+          "text": "Acide, car l'ion NH₄⁺ est un acide faible"
+        },
+        {
+          "id": "d",
+          "text": "Basique, car il reste de l'ammoniac en excès"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les ions Cl⁻ sont inertes, mais l'ion NH₄⁺ est un acide faible : NH₄⁺ + H₂O ⇄ NH₃ + H₃O⁺ produit des ions H₃O⁺, donc pH < 7 ✓. La solution n'est pas neutre : un ion inerte ne suffit pas, il faut que tous les ions le soient. Elle ne contient plus d'ammoniac en excès, car à l'équivalence l'ammoniac a été entièrement transformé en NH₄⁺. L'ammoniac, base, n'est plus l'espèce qui domine : c'est l'acide qui impose le pH.",
+      "difficulty": 2
+    }
+  ]
+}
