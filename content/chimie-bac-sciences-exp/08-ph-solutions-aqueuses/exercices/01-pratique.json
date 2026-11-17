@@ -1,0 +1,127 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec le pH",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle phrase définit correctement le pH d'une solution aqueuse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pH = log [H₃O⁺], nombre sans unité"
+        },
+        {
+          "id": "b",
+          "text": "pH = −log [H₃O⁺], exprimé en mol·L⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "pH = −log [H₃O⁺], nombre sans unité"
+        },
+        {
+          "id": "d",
+          "text": "pH = log [H₃O⁺], exprimé en mol·L⁻¹"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le pH est défini par pH = −log [H₃O⁺] : [H₃O⁺] s'exprime en mol·L⁻¹, mais son logarithme est un nombre sans unité ✓. Sans le signe moins, les solutions usuelles auraient un pH négatif ; l'unité mol·L⁻¹ est celle de la concentration, pas celle du pH ; et pH = log [H₃O⁺] cumule l'oubli du signe moins et une unité erronée.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "À 25 °C, une solution a pour concentration [OH⁻] = 2,5·10⁻⁴ mol·L⁻¹. Calculer son pH, arrondi au centième.",
+      "answerKey": {
+        "value": 10.4,
+        "tolerance": 0.02
+      },
+      "explanation": "Le pH se définit avec [H₃O⁺] : [H₃O⁺] = Kₑ / [OH⁻] = 10⁻¹⁴ / 2,5·10⁻⁴ = 4,0·10⁻¹¹ mol·L⁻¹, puis pH = −log (4,0·10⁻¹¹) = 11 − 0,60 = 10,4, soit 10,40 au centième ✓. La solution est basique, ce qui confirme la valeur supérieure à 7 ; le calcul −log [OH⁻] donnerait 3,60, valeur d'un acide.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À 25 °C, une solution d'acide chlorhydrique a pour concentration C = 2,5·10⁻³ mol·L⁻¹. Quel est son pH ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2,60"
+        },
+        {
+          "id": "b",
+          "text": "2,60"
+        },
+        {
+          "id": "c",
+          "text": "3,00"
+        },
+        {
+          "id": "d",
+          "text": "3,40"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'acide chlorhydrique est fort : pH = −log C = −log (2,5·10⁻³) = 3 − 0,40 = 2,60 ✓. La valeur −2,60 oublie le signe moins de la définition ; 3,00 ignore le facteur 2,5 ; 3,40 ajoute log 2,5 au lieu de le retrancher (3 + 0,40).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une solution A a pour pH 3,0 et une solution B a pour pH 5,0. Combien de fois [H₃O⁺] est-elle plus grande dans A que dans B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1,7"
+        },
+        {
+          "id": "d",
+          "text": "0,01"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "[H₃O⁺] vaut 10⁻³ mol·L⁻¹ dans A et 10⁻⁵ mol·L⁻¹ dans B : le rapport est 10⁻³ / 10⁻⁵ = 10² = 100 ✓. Un écart de 2 unités de pH correspond à un facteur 10², pas à un facteur 2 ; le rapport 5/3 ≈ 1,7 compare les pH, non les concentrations ; 0,01 est le rapport inverse, celui de B à A.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À 60 °C, où pKₑ = 13, une seule de ces solutions est basique. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pH = 6,2"
+        },
+        {
+          "id": "b",
+          "text": "pH = 6,4"
+        },
+        {
+          "id": "c",
+          "text": "pH = 6,5"
+        },
+        {
+          "id": "d",
+          "text": "pH = 6,8"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À 60 °C, la solution neutre a pour pH ½ pKₑ = 6,5 ; une solution basique a un pH supérieur à 6,5, ce qui ne convient qu'à 6,8 ✓. La solution de pH 6,5 est neutre ; celles de pH 6,2 et 6,4 sont acides, bien que leur pH soit proche de 7.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "À 25 °C, l'eau d'une piscine a pour pH 7,3. Calculer sa concentration [OH⁻], exprimée en 10⁻⁷ mol·L⁻¹, arrondie au dixième.",
+      "answerKey": {
+        "value": 2.0,
+        "tolerance": 0.1,
+        "unit": "10⁻⁷ mol·L⁻¹"
+      },
+      "explanation": "[OH⁻] = 10^(pH − 14) = 10^(−6,7) = 10⁻⁷ × 10^(0,3) = 2,0·10⁻⁷ mol·L⁻¹, soit 2 en unités de 10⁻⁷ mol·L⁻¹ ✓. Vérification par Kₑ : [H₃O⁺] = 10^(−7,3) = 5,0·10⁻⁸ mol·L⁻¹ et 10⁻¹⁴ / 5,0·10⁻⁸ = 2,0·10⁻⁷ mol·L⁻¹.",
+      "difficulty": 2
+    }
+  ]
+}

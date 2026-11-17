@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Vitesse d'une réaction chimique",
+  "questions": [
+    {
+      "prompt": "Deux mélanges A et B contiennent la même quantité de thiosulfate de sodium. Dans une expérience d'horloge iodométrique, la couleur bleue apparaît après 50 s dans A et après 32 s dans B. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A est la plus rapide : le bleu met plus de temps à apparaître dans le mélange A."
+        },
+        {
+          "id": "b",
+          "text": "Elles sont aussi rapides : elles forment au final la même quantité de diiode."
+        },
+        {
+          "id": "c",
+          "text": "B est la plus rapide : elle atteint le même avancement en moins de temps."
+        },
+        {
+          "id": "d",
+          "text": "On ne peut pas conclure : les deux durées ne sont pas égales entre elles."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La même quantité de thiosulfate impose le même avancement à l'apparition du bleu dans les deux mélanges. Ce même avancement est atteint en 32 s dans B contre 50 s dans A : à avancement égal, la durée la plus courte désigne la transformation la plus rapide ✓. Conclure que A est la plus rapide inverse la règle. Conclure à une rapidité identique confond l'avancement atteint avec le temps mis pour l'atteindre. Dire qu'on ne peut pas conclure exigerait des durées égales, alors que comparer à avancement égal est tout aussi valable.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la réaction 2 H₂O₂ → 2 H₂O + O₂, on part de nᵢ(H₂O₂) = 4,0·10⁻² mol. À l'instant t, n(O₂) = 6,0·10⁻³ mol. Quelle quantité de H₂O₂ reste-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,8·10⁻² mol"
+        },
+        {
+          "id": "b",
+          "text": "3,4·10⁻² mol"
+        },
+        {
+          "id": "c",
+          "text": "3,7·10⁻² mol"
+        },
+        {
+          "id": "d",
+          "text": "4,6·10⁻² mol"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le coefficient de O₂ vaut 1 et O₂ est absent au départ : x = n(O₂) = 6,0·10⁻³ mol. H₂O₂ a pour coefficient 2, donc n(H₂O₂) = 4,0·10⁻² − 2x = 4,0·10⁻² − 1,2·10⁻² = 2,8·10⁻² mol ✓. La valeur 3,4·10⁻² mol retranche x au lieu de 2x. La valeur 3,7·10⁻² mol retranche x/2 : elle divise par 2 au lieu de multiplier. La valeur 4,6·10⁻² mol ajoute 2x au lieu de le retrancher, alors que H₂O₂ est un réactif.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On mesure l'avancement d'une réaction : x = 1,6 mmol à t₁ = 4 min et x = 3,6 mmol à t₂ = 12 min. Quelle est la vitesse moyenne de la réaction entre t₁ et t₂, en mmol·min⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,17"
+        },
+        {
+          "id": "b",
+          "text": "0,30"
+        },
+        {
+          "id": "c",
+          "text": "0,40"
+        },
+        {
+          "id": "d",
+          "text": "0,25"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La vitesse moyenne vaut Δx/Δt = (3,6 − 1,6)/(12 − 4) = 2,0/8 = 0,25 mmol·min⁻¹ ✓. La valeur 0,30 divise x(t₂) par t₂ (3,6/12) : elle compte l'avancement gagné avant t₁. La valeur 0,40 divise x(t₁) par t₁ (1,6/4) : elle ne regarde qu'un seul point. La valeur 0,17 divise Δx par t₂ (2,0/12) au lieu de la durée Δt de l'intervalle.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On suit l'avancement x d'une réaction au cours du temps. La tangente à la courbe au point M d'abscisse 15 min passe par A(0 ; 0,9) et B(30 ; 5,1), avec x en mmol. Quelle est la vitesse de la réaction à t = 15 min, en mmol·min⁻¹ ?\n<svg viewBox=\"0 0 340 236\"><title>Courbe x(t) et tangente au point M d'abscisse 15 min, passant par A et B</title><line x1=\"54.0\" y1=\"26\" x2=\"54.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"26\" x2=\"114.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"174.9\" y1=\"26\" x2=\"174.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"235.3\" y1=\"26\" x2=\"235.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"295.8\" y1=\"26\" x2=\"295.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190.0\" x2=\"326\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"166.6\" x2=\"326\" y2=\"166.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"143.1\" x2=\"326\" y2=\"143.1\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"119.7\" x2=\"326\" y2=\"119.7\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"96.3\" x2=\"326\" y2=\"96.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"72.9\" x2=\"326\" y2=\"72.9\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"49.4\" x2=\"326\" y2=\"49.4\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"54.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"114.4\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"174.9\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"235.3\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"295.8\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><text x=\"48.0\" y=\"194.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"170.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"48.0\" y=\"147.1\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"48.0\" y=\"123.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><text x=\"48.0\" y=\"100.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"48.0\" y=\"76.9\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><text x=\"48.0\" y=\"53.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><text x=\"334.0\" y=\"218.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (min)</text><text x=\"60.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x (mmol)</text><polyline points=\"54.0,190.0 57.0,186.8 60.0,183.7 63.1,180.6 66.1,177.6 69.1,174.7 72.1,171.8 75.2,169.0 78.2,166.3 81.2,163.6 84.2,161.0 87.2,158.5 90.3,156.0 93.3,153.5 96.3,151.2 99.3,148.8 102.4,146.6 105.4,144.3 108.4,142.2 111.4,140.1 114.4,138.0 117.5,136.0 120.5,134.0 123.5,132.1 126.5,130.2 129.6,128.3 132.6,126.5 135.6,124.8 138.6,123.0 141.6,121.4 144.7,119.7 147.7,118.1 150.7,116.5 153.7,115.0 156.8,113.5 159.8,112.0 162.8,110.6 165.8,109.2 168.8,107.9 171.9,106.5 174.9,105.2 177.9,103.9 180.9,102.7 184.0,101.5 187.0,100.3 190.0,99.1 193.0,98.0 196.0,96.9 199.1,95.8 202.1,94.7 205.1,93.7 208.1,92.7 211.2,91.7 214.2,90.7 217.2,89.8 220.2,88.9 223.2,88.0 226.3,87.1 229.3,86.2 232.3,85.4 235.3,84.6 238.4,83.8 241.4,83.0 244.4,82.2 247.4,81.5 250.4,80.7 253.5,80.0 256.5,79.3 259.5,78.6 262.5,78.0 265.6,77.3 268.6,76.7 271.6,76.1 274.6,75.5 277.6,74.9 280.7,74.3 283.7,73.7 286.7,73.2 289.7,72.6 292.8,72.1 295.8,71.6 298.8,71.1 301.8,70.6 304.8,70.1 307.9,69.6 310.9,69.2 313.9,68.7 316.9,68.3 320.0,67.8 323.0,67.4 326.0,67.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"54.0\" y1=\"168.9\" x2=\"253.5\" y2=\"60.7\" stroke=\"#c2410c\" stroke-width=\"2\"/><circle cx=\"54.0\" cy=\"168.9\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"235.3\" cy=\"70.5\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"144.7\" cy=\"119.7\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><text x=\"65.0\" y=\"182.9\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"231.3\" y=\"88.5\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"156.7\" y=\"133.7\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,17"
+        },
+        {
+          "id": "b",
+          "text": "0,14"
+        },
+        {
+          "id": "c",
+          "text": "0,20"
+        },
+        {
+          "id": "d",
+          "text": "0,28"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La vitesse instantanée est le coefficient directeur de la tangente : (5,1 − 0,9)/(30 − 0) = 4,2/30 = 0,14 mmol·min⁻¹ ✓. La valeur 0,17 divise l'ordonnée de B par son abscisse (5,1/30) : c'est la pente de la droite passant par l'origine et B, pas celle de la tangente. La valeur 0,20 divise x(15) = 3,0 par 15 : c'est la pente de la droite passant par l'origine et M, une sécante. La valeur 0,28 divise Δx = 4,2 par 15 alors que A et B sont séparés de 30 min.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la réaction Zn + 2 H₃O⁺ → Zn²⁺ + H₂(g) + 2 H₂O, menée dans une solution de volume constant, on mesure à un instant d[H₃O⁺]/dt = −6,0·10⁻³ mol·L⁻¹·min⁻¹. Quelle est la vitesse volumique de la réaction à cet instant, en mol·L⁻¹·min⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5·10⁻³"
+        },
+        {
+          "id": "b",
+          "text": "6,0·10⁻³"
+        },
+        {
+          "id": "c",
+          "text": "3,0·10⁻³"
+        },
+        {
+          "id": "d",
+          "text": "1,2·10⁻²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le coefficient de H₃O⁺ vaut 2 : v_vol = −(1/2)·d[H₃O⁺]/dt = −(1/2) × (−6,0·10⁻³) = 3,0·10⁻³ mol·L⁻¹·min⁻¹ ✓. La valeur 1,5·10⁻³ applique le facteur 1/2 deux fois. La valeur 6,0·10⁻³ oublie le coefficient. La valeur 1,2·10⁻² multiplie par 2 au lieu de diviser par 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La courbe x(t) d'une transformation totale part de l'origine, monte puis s'aplatit vers un palier (figure). Que peut-on dire de la vitesse de la réaction à t = 0 ?\n<svg viewBox=\"0 0 340 236\"><title>Courbe x(t) qui part de l'origine puis s'aplatit vers un palier</title><line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"334.0\" y=\"218.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t</text><text x=\"60.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x</text><polyline points=\"54.0,190.0 57.0,184.6 60.0,179.4 63.1,174.4 66.1,169.6 69.1,165.0 72.1,160.6 75.2,156.3 78.2,152.2 81.2,148.2 84.2,144.4 87.2,140.8 90.3,137.2 93.3,133.8 96.3,130.6 99.3,127.4 102.4,124.4 105.4,121.5 108.4,118.7 111.4,116.0 114.4,113.4 117.5,110.9 120.5,108.5 123.5,106.2 126.5,104.0 129.6,101.8 132.6,99.8 135.6,97.8 138.6,95.9 141.6,94.1 144.7,92.3 147.7,90.6 150.7,89.0 153.7,87.4 156.8,85.9 159.8,84.4 162.8,83.0 165.8,81.7 168.8,80.4 171.9,79.2 174.9,78.0 177.9,76.8 180.9,75.7 184.0,74.6 187.0,73.6 190.0,72.6 193.0,71.6 196.0,70.7 199.1,69.9 202.1,69.0 205.1,68.2 208.1,67.4 211.2,66.6 214.2,65.9 217.2,65.2 220.2,64.5 223.2,63.9 226.3,63.3 229.3,62.7 232.3,62.1 235.3,61.5 238.4,61.0 241.4,60.5 244.4,60.0 247.4,59.5 250.4,59.1 253.5,58.6 256.5,58.2 259.5,57.8 262.5,57.4 265.6,57.0 268.6,56.7 271.6,56.3 274.6,56.0 277.6,55.6 280.7,55.3 283.7,55.0 286.7,54.7 289.7,54.5 292.8,54.2 295.8,53.9 298.8,53.7 301.8,53.5 304.8,53.2 307.9,53.0 310.9,52.8 313.9,52.6 316.9,52.4 320.0,52.2 323.0,52.0 326.0,51.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"54.0\" cy=\"190.0\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est nulle : l'avancement vaut 0 à cet instant, donc la courbe n'a pas de pente."
+        },
+        {
+          "id": "b",
+          "text": "Elle est maximale : la tangente à l'origine est la plus pentue de toute la courbe."
+        },
+        {
+          "id": "c",
+          "text": "Elle n'est pas définie : aucune durée ne s'est encore écoulée depuis le départ."
+        },
+        {
+          "id": "d",
+          "text": "Elle est égale à la vitesse moyenne sur toute la durée de la réaction, du début à la fin."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La vitesse est la pente de la tangente à x(t), pas la hauteur de la courbe : à l'origine la courbe est à sa pente la plus forte, donc la vitesse y est maximale ✓. Dire qu'elle est nulle parce que x(0) = 0 confond la valeur de x avec sa pente. Dire qu'elle n'est pas définie oublie que la vitesse instantanée est une limite, qui existe aussi en t = 0. Dire qu'elle égale la vitesse moyenne sur toute la durée est faux : la pente décroît, la valeur initiale dépasse la moyenne.",
+      "difficulty": 2
+    }
+  ]
+}

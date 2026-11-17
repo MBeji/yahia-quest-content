@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Loi d'action de masse",
+  "questions": [
+    {
+      "prompt": "Quelle est la fonction des concentrations Π de l'équation Cu²⁺ + 4 NH₃ ⇄ Cu(NH₃)₄²⁺ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[Cu²⁺][NH₃]⁴ / [Cu(NH₃)₄²⁺]"
+        },
+        {
+          "id": "b",
+          "text": "[Cu(NH₃)₄²⁺] / ([Cu²⁺][NH₃])"
+        },
+        {
+          "id": "c",
+          "text": "[Cu(NH₃)₄²⁺] / ([Cu²⁺]·4[NH₃])"
+        },
+        {
+          "id": "d",
+          "text": "[Cu(NH₃)₄²⁺] / ([Cu²⁺][NH₃]⁴)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les entités de droite vont au numérateur, celles de gauche au dénominateur, et chaque coefficient devient un exposant : Π = [Cu(NH₃)₄²⁺] / ([Cu²⁺][NH₃]⁴) ✓. L'expression avec [Cu²⁺][NH₃]⁴ au numérateur est l'inverse, celle de l'équation écrite dans l'autre sens. Oublier l'exposant 4 revient à compter une seule molécule d'ammoniac. Écrire 4[NH₃] met le coefficient en facteur, alors qu'il compte des entités qui apportent chacune un facteur [NH₃].",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'eau pure à 25 °C a pour masse volumique ρ = 997 g·L⁻¹ et pour masse molaire M = 18,0 g·mol⁻¹. Quelle est sa concentration molaire [H₂O] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "997 mol·L⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "55,4 mol·L⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "18,0 mol·L⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "0,0181 mol·L⁻¹"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un litre d'eau contient n = m/M = 997/18,0 ≈ 55,4 mol, donc [H₂O] = ρ/M ≈ 55,4 mol·L⁻¹ ✓. Le nombre 997 est la masse d'un litre en grammes, pas une quantité de matière. Le nombre 18,0 est la masse d'une mole, pas le nombre de moles par litre. Le nombre 0,0181 vient du quotient inversé M/ρ, qui n'a pas la dimension d'une concentration.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un erlenmeyer contient 0,20 mol d'acide éthanoïque, 0,10 mol d'éthanol, 0,30 mol d'éthanoate d'éthyle et 0,20 mol d'eau, en une seule phase. Quelle est la valeur de Π pour l'équation d'estérification ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,33"
+        },
+        {
+          "id": "b",
+          "text": "1,7"
+        },
+        {
+          "id": "c",
+          "text": "3,0"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La somme des coefficients est la même des deux côtés, donc V se simplifie : Π = (0,30 × 0,20) / (0,20 × 0,10) = 0,060 / 0,020 = 3,0 ✓. Le résultat 0,33 est l'inverse, obtenu en renversant numérateur et dénominateur. Le résultat 1,7 vient de sommes (0,30 + 0,20)/(0,20 + 0,10) au lieu de produits. Le résultat 15 oublie l'eau et calcule 0,30 / (0,20 × 0,10).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle affirmation sur la constante d'équilibre K d'une équation est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À température donnée, Π prend à l'équilibre la même valeur K, quel que soit le mélange de départ"
+        },
+        {
+          "id": "b",
+          "text": "Π est égale à K dès que le mélange est préparé, puis elle ne varie plus au cours du temps"
+        },
+        {
+          "id": "c",
+          "text": "K dépend des quantités de réactifs introduites au départ dans le mélange à étudier"
+        },
+        {
+          "id": "d",
+          "text": "K est égale au rapport entre les quantités de produits et de réactifs présentes au départ dans l'erlenmeyer"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La loi d'action de masse dit qu'à température donnée Π vaut K à l'équilibre, quelle que soit la composition initiale ✓. Π n'est pas égale à K à tout instant : elle varie de 0 à K au cours de l'évolution d'un mélange sans produit. K ne dépend pas des quantités introduites. K n'est pas un rapport initial : c'est la valeur de Π à l'équilibre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'estérification a pour constante K = 4 à 80 °C. Un mélange a pour fonction Π = 0,60 à cette température. Dans quel sens évolue-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans le sens inverse (hydrolyse de l'ester), car Π est inférieure à K"
+        },
+        {
+          "id": "b",
+          "text": "Dans le sens direct (estérification), car Π est inférieure à K"
+        },
+        {
+          "id": "c",
+          "text": "Il ne change pas, car il est à l'équilibre dynamique"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut pas conclure sans connaître le volume du mélange"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Π = 0,60 est inférieure à K = 4 : la réaction qui rapproche Π de K est la réaction directe, l'estérification ✓. Dire « sens inverse » lit la comparaison à l'envers. L'équilibre dynamique exige Π = K, ce qui n'est pas le cas. Le volume ne sert pas : pour l'estérification, il se simplifie dans Π.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À 25 °C, une réaction a pour constante K = 6,0·10⁻⁷. Que peut-on affirmer sans calcul ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est très lente, car une constante aussi petite correspond à une faible vitesse"
+        },
+        {
+          "id": "b",
+          "text": "Elle ne se produit pas, car aucun produit ne se forme quand K est inférieure à 1"
+        },
+        {
+          "id": "c",
+          "text": "Elle est limitée : son taux d'avancement final est nettement inférieur à 1"
+        },
+        {
+          "id": "d",
+          "text": "Elle est pratiquement totale, car 6,0·10⁻⁷ est inférieure au seuil de 10⁴"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une constante inférieure à 10⁴ correspond à une réaction limitée, de taux d'avancement final inférieur à 1 ; ici K = 6,0·10⁻⁷ est très petite : peu de produits se forment ✓. La constante ne renseigne jamais sur la rapidité. Une constante inférieure à 1 n'interdit pas la réaction, par exemple K = 0,25 pour l'hydrolyse d'un ester. C'est une valeur supérieure à 10⁴ qui donne une réaction pratiquement totale.",
+      "difficulty": 2
+    }
+  ]
+}

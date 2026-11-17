@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Avancement d'une réaction chimique",
+  "questions": [
+    {
+      "prompt": "Parmi ces évolutions d'un système, laquelle est une transformation chimique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un glaçon fond dans un verre d'eau"
+        },
+        {
+          "id": "b",
+          "text": "Un clou de fer rouille dans de l'eau salée"
+        },
+        {
+          "id": "c",
+          "text": "Une tige métallique se dilate quand on la chauffe"
+        },
+        {
+          "id": "d",
+          "text": "De l'air est comprimé dans une seringue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Seule la rouille crée de nouvelles entités : le fer et le dioxygène disparaissent et un oxyde de fer apparaît. La fusion de la glace est un changement d'état, l'eau reste H₂O ; la dilatation et la compression ne modifient que la taille ou le volume. Aucune de ces trois évolutions ne crée d'entité nouvelle, donc aucune n'est une transformation chimique.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que représente l'avancement x d'une réaction chimique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La durée écoulée depuis l'état initial"
+        },
+        {
+          "id": "b",
+          "text": "La masse totale des produits formés"
+        },
+        {
+          "id": "c",
+          "text": "La quantité de matière du réactif en excès"
+        },
+        {
+          "id": "d",
+          "text": "Le nombre de fois que la réaction a eu lieu"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'avancement x compte combien de fois la réaction a eu lieu depuis l'état initial, et il s'exprime en mol. Ce n'est pas une durée, car le temps se note t. Ce n'est pas une masse, ni la quantité d'un constituant : x caractérise la réaction entière.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "En quelle unité s'exprime l'avancement volumique y = x / V d'une réaction qui se déroule à volume constant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "mol·L⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "mol"
+        },
+        {
+          "id": "c",
+          "text": "L·mol⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "sans unité"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'avancement x est en mol et le volume V en L, donc y = x / V s'exprime en mol·L⁻¹, comme une concentration. L'unité mol est celle de x seul ; L·mol⁻¹ correspondrait à V / x, le quotient inversé ; une grandeur sans unité n'est pas obtenue en divisant des moles par des litres.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On étudie la réaction d'équation :\nH₂O₂ + 2 I⁻ + 2 H₃O⁺ → 4 H₂O + I₂\nAu cours de la transformation, 0,030 mol de H₃O⁺ ont disparu. Quelle est la valeur de l'avancement x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,060 mol"
+        },
+        {
+          "id": "b",
+          "text": "0,030 mol"
+        },
+        {
+          "id": "c",
+          "text": "0,015 mol"
+        },
+        {
+          "id": "d",
+          "text": "0,0060 mol"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "H₃O⁺ est un réactif de coefficient 2 : la quantité disparue vaut 2 × x, donc x = 0,030 / 2 = 0,015 mol. Prendre 0,030 mol revient à oublier le coefficient ; 0,060 mol multiplie au lieu de diviser ; 0,0060 mol divise par la somme des coefficients des réactifs (1 + 2 + 2), ce qui n'a aucun sens pour un seul constituant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On mélange 0,10 mol de A et 0,18 mol de B. La réaction A + 2 B → C est totale. Quelle est la valeur de x_max ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,6×10⁻¹ mol"
+        },
+        {
+          "id": "b",
+          "text": "1,8×10⁻¹ mol"
+        },
+        {
+          "id": "c",
+          "text": "1,0×10⁻¹ mol"
+        },
+        {
+          "id": "d",
+          "text": "9,0×10⁻² mol"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On compare n_i / coefficient : 0,10 / 1 = 0,10 mol pour A et 0,18 / 2 = 0,090 mol pour B. La plus petite borne donne x_max = 0,090 mol = 9,0×10⁻² mol, et B est limitant bien qu'il soit présent en plus grande quantité. Retenir 0,10 mol revient à prendre la plus petite quantité initiale ; 0,18 mol oublie le coefficient 2 ; 0,36 mol le multiplie au lieu de diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une transformation s'achève à t_f = 50 min. Son avancement final est x_f = 6,0×10⁻³ mol, et la courbe donne x = 3,0×10⁻³ mol à t = 12 min. Quelle est la valeur de t₁/₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 min"
+        },
+        {
+          "id": "b",
+          "text": "24 min"
+        },
+        {
+          "id": "c",
+          "text": "25 min"
+        },
+        {
+          "id": "d",
+          "text": "50 min"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le temps de demi-réaction est la durée pour atteindre x_f / 2 = 3,0×10⁻³ mol : la courbe donne cette valeur à 12 min, donc t₁/₂ = 12 min. Doubler cette durée (24 min), prendre la moitié de la durée totale (25 min) ou la durée totale elle-même (50 min) confond t₁/₂ avec une autre date.",
+      "difficulty": 2
+    }
+  ]
+}

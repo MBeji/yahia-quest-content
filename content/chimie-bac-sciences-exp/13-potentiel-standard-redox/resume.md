@@ -1,0 +1,9 @@
+# 📜 Résumé : potentiel standard d'un couple redox
+
+- **Loi de la f.é.m.** : à 25 °C, E = E° − (0,06/n) log Π pour la pile M₂ | M₂ⁿ⁺ || M₁ⁿ⁺ | M₁, avec Π = [M₂ⁿ⁺]/[M₁ⁿ⁺] (solides exclus) ; E est affine en log Π, vaut E° pour Π = 1, et diminue quand la pile débite. Pente −0,03 V pour n = 2.
+- **Pile usée** : courant nul, E = 0, Π = K ; d'où E° = (0,06/n) log K, soit K = 10^(nE°/0,06), du même signe que E° (Daniell : E° = 1,10 V, K ≈ 4,6 × 10³⁶). Une pile usée n'a pas E = E° ; à volumes égaux, les ions formés d'un côté égalent les ions consommés de l'autre.
+- **Comparer deux oxydants** : pile Red₂ | Ox₂ || Ox₁ | Red₁ ; E° > 0 (K > 1) : Ox₁ plus fort que Ox₂ ; E° < 0 (K < 1) : l'inverse. Pour un mélange donné, E > 0 équivaut à Π < K : réaction directe ; E < 0 à Π > K : réaction inverse ; un E° négatif n'interdit pas toute réaction.
+- **Électrode normale à hydrogène** : demi-pile H₃O⁺/H₂ à lame de platine platiné inattaquable et poreuse, avec P(H₂) = 1 atm = 1,013 × 10⁵ Pa et [H₃O⁺] = 1 mol·L⁻¹ ; référence commune de tous les couples.
+- **Potentiel d'électrode et potentiel standard** : f.é.m. de la pile E.N.H. (gauche) | couple (droite) ; standard pour Π = 1 ou [Mⁿ⁺] = 1 mol·L⁻¹ ; E°(H₃O⁺/H₂) = 0 V (pile symétrique) ; E° > 0 : Ox plus fort que H₃O⁺. Ce n'est pas le potentiel électrique d'une lame.
+- **f.é.m. standard** : E° = E°_D − E°_G, la droite moins la gauche du schéma (Fe | Ni : −0,26 − (−0,44) = +0,18 V) ; le signe change si l'on échange les demi-piles ; E° est inchangé si l'on double l'équation (n et log K doublent).
+- **Classement électrochimique** : plus E° est élevé, plus l'oxydant est fort et le réducteur faible ; à concentrations voisines de 1 mol·L⁻¹, un oxydant peut réagir avec les réducteurs situés sous lui sur l'échelle ; H₃O⁺/H₂ à 0 V sépare les métaux attaqués par les acides (E° < 0) des autres ; une réaction possible peut être trop lente (équilibre métastable).

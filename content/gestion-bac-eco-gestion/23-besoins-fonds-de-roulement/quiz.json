@@ -1,0 +1,175 @@
+{
+  "title": "Test de compréhension ⭐ : Les besoins en fonds de roulement",
+  "questions": [
+    {
+      "prompt": "La Cartonnerie Belhadj de Bizerte achète du carton en rouleaux, le transforme en boîtes, les livre, puis attend le règlement de ses clients. Quelle durée forme son cycle d'exploitation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le temps qui sépare l'achat du carton de l'encaissement des factures clients"
+        },
+        {
+          "id": "b",
+          "text": "Le temps qui sépare l'achat du carton de la livraison des boîtes aux clients"
+        },
+        {
+          "id": "c",
+          "text": "Le temps qui sépare la fabrication des boîtes de leur livraison aux clients"
+        },
+        {
+          "id": "d",
+          "text": "Le temps qui sépare l'ouverture de l'exercice de sa clôture comptable"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le cycle commence quand les matières entrent dans l'entreprise et s'achève à l'encaissement : tant que le client n'a pas payé, l'argent n'est pas revenu. S'arrêter à la livraison oublie le crédit accordé ; la fabrication seule n'est qu'une étape ; l'exercice comptable est une autre notion.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces éléments du bilan d'un fabricant de pâtes alimentaires, lequel constitue un besoin d'exploitation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les dettes envers les fournisseurs de farine"
+        },
+        {
+          "id": "b",
+          "text": "Le solde créditeur d'un découvert bancaire"
+        },
+        {
+          "id": "c",
+          "text": "Les salaires du mois qui restent à verser au personnel"
+        },
+        {
+          "id": "d",
+          "text": "Les ventes facturées que les clients n'ont pas payées"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une créance client est de l'argent que l'entreprise a avancé et n'a pas encore récupéré : c'est un besoin. Les dettes fournisseurs et les salaires à payer sont des ressources, car l'entreprise garde son argent plus longtemps. Un découvert est de la trésorerie, exclue du calcul.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les relevés de l'Atelier Chaabane font apparaître : stocks 38 500 D ; créances clients 47 200 D ; autres créances 2 300 D ; dettes fournisseurs 44 100 D ; autres dettes 7 900 D. Quel est son besoin en fonds de roulement, en D ?",
+      "answerKey": {
+        "value": 36000,
+        "unit": "D"
+      },
+      "explanation": "Besoins : 38 500 + 47 200 + 2 300 = 88 000 D. Ressources : 44 100 + 7 900 = 52 000 D. BFR = 88 000 − 52 000 = 36 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque terme à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Cycle d'exploitation"
+        },
+        {
+          "id": "l2",
+          "text": "Crédit fournisseurs"
+        },
+        {
+          "id": "l3",
+          "text": "Créance client"
+        },
+        {
+          "id": "l4",
+          "text": "Besoin en fonds de roulement"
+        },
+        {
+          "id": "r1",
+          "text": "Opérations de l'achat des matières jusqu'à l'encaissement des ventes"
+        },
+        {
+          "id": "r2",
+          "text": "Délai de paiement obtenu, qui retarde une sortie d'argent"
+        },
+        {
+          "id": "r3",
+          "text": "Somme due à l'entreprise pour une vente non encore réglée"
+        },
+        {
+          "id": "r4",
+          "text": "Montant à financer, né du décalage entre sorties et entrées d'argent"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le cycle d'exploitation est la suite d'opérations de l'achat à l'encaissement. Le crédit fournisseurs est un délai obtenu : il retarde le paiement. La créance est la vente non encore payée. Le BFR mesure le besoin de financement qui découle du décalage entre décaissements et encaissements.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Une usine d'embouteillage suit son cycle d'exploitation, de la commande de matières au règlement client. Classe ces six moments dans leur ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fabrication des produits"
+        },
+        {
+          "id": "b",
+          "text": "Achat des matières premières"
+        },
+        {
+          "id": "c",
+          "text": "Stockage des produits finis"
+        },
+        {
+          "id": "d",
+          "text": "Stockage des matières"
+        },
+        {
+          "id": "e",
+          "text": "Vente aux clients"
+        },
+        {
+          "id": "f",
+          "text": "Encaissement des créances"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "a",
+          "c",
+          "e",
+          "f"
+        ]
+      },
+      "explanation": "On achète d'abord les matières et on les stocke, puis on fabrique, on stocke les produits terminés, on vend, et le cycle ne se termine qu'à l'encaissement du client. La fabrication ne peut pas précéder l'achat des matières.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un négociant sfaxien d'huile d'olive garde ses bidons 28 jours avant de les vendre ; ses clients règlent à 40 jours, son fournisseur est réglé à 35 jours. Exprime son BFR en jours (durées exprimées en jours de CA HT).",
+      "answerKey": {
+        "value": 33,
+        "unit": "jours"
+      },
+      "explanation": "Entreprise commerciale : stockage 28 + crédit clients 40 − crédit fournisseur 35 = 33 jours.",
+      "difficulty": 2
+    }
+  ]
+}

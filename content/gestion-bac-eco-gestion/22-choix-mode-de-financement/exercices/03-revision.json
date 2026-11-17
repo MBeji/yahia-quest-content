@@ -1,0 +1,164 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Du tableau de l'emprunt au coût net",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur à la formule qui la donne.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Économie d'impôt sur les amortissements"
+        },
+        {
+          "id": "l2",
+          "text": "Économie d'impôt sur les intérêts"
+        },
+        {
+          "id": "l3",
+          "text": "Économie d'impôt sur les loyers"
+        },
+        {
+          "id": "l4",
+          "text": "Intérêts d'une année d'emprunt"
+        },
+        {
+          "id": "r1",
+          "text": "Dotation annuelle × taux d'impôt"
+        },
+        {
+          "id": "r2",
+          "text": "Intérêts de l'année × taux d'impôt"
+        },
+        {
+          "id": "r3",
+          "text": "Loyer de l'année × taux d'impôt"
+        },
+        {
+          "id": "r4",
+          "text": "Capital restant dû en début d'année × taux d'intérêt"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Les trois économies ont la même forme : une charge déductible multipliée par le taux d'impôt, la charge étant la dotation, les intérêts ou les loyers. Les intérêts d'une année se calculent sur le capital restant dû au début de cette année.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La SARL Zitouna achète une chaîne de 150 000 D (amortie sur 4 ans) avec 30 000 D de fonds propres et un emprunt de 120 000 D à 12 % sur 4 ans, dont l'annuité est de 39 508,13 D. Impôt de 30 %. Quel est le flux net de l'année 1, en D ? (précision de 1 D)",
+      "answerKey": {
+        "value": -23938.13,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Intérêts : 120 000 × 0,12 = 14 400 D. Dotation : 150 000 ÷ 4 = 37 500 D. Économies d'impôt : (37 500 + 14 400) × 0,30 = 15 570 D. Flux net : −39 508,13 + 15 570 = −23 938,13 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un emprunt de 100 000 D sur 3 ans à 10 % a pour annuité 40 211,48 D. Quelle économie d'impôt (impôt de 30 %) les intérêts de la 2e année procurent-ils, en D ? (précision de 1 D)",
+      "answerKey": {
+        "value": 2093.66,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Intérêts de l'année 1 : 10 000 D ; amortissement : 40 211,48 − 10 000 = 30 211,48 D ; capital restant dû : 69 788,52 D. Intérêts de l'année 2 : 69 788,52 × 0,10 = 6 978,85 D. Économie : 6 978,85 × 0,30 = 2 093,66 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Classe les étapes de calcul des flux d'un financement mixte avec emprunt à annuités constantes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer l'annuité constante de l'emprunt"
+        },
+        {
+          "id": "b",
+          "text": "Dresser le tableau d'amortissement : intérêts et amortissement de chaque année"
+        },
+        {
+          "id": "c",
+          "text": "Calculer les économies d'impôt sur la dotation du bien et sur les intérêts"
+        },
+        {
+          "id": "d",
+          "text": "Obtenir le flux net de chaque année : moins l'annuité, plus les économies d'impôt"
+        },
+        {
+          "id": "e",
+          "text": "Actualiser les flux, les additionner et retrancher l'apport de l'époque 0"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "L'annuité est nécessaire pour dresser le tableau ; le tableau fournit les intérêts qui servent aux économies d'impôt ; les économies et l'annuité donnent le flux net de chaque année ; l'actualisation et la somme donnent enfin le coût net.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une société finance 80 % d'un investissement par emprunt. Quelle conséquence directe cela a-t-il sur son autonomie financière ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle progresse, car les prêteurs apportent leur expertise à l'entreprise"
+        },
+        {
+          "id": "b",
+          "text": "Elle reste stable, car l'emprunt est amorti sur la durée du projet"
+        },
+        {
+          "id": "c",
+          "text": "Elle recule, car l'entreprise devient redevable envers ses prêteurs"
+        },
+        {
+          "id": "d",
+          "text": "Elle disparaît, car l'emprunt interdit toute décision de gestion"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'autonomie financière est la capacité de décider sans dépendre de créanciers. En empruntant, l'entreprise devient redevable envers ses prêteurs : cette autonomie diminue, sans pour autant disparaître, et l'emprunt entraîne en plus des charges d'intérêts.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Cimenterie Ouni finance à 100 % une machine de 250 000 D, amortie sur 4 ans, par un emprunt de 250 000 D à 8 % : intérêts payés à chaque fin d'année, capital remboursé en une fois à la fin de la 4e année. Impôt de 30 %, taux exigé de 10 % (coefficients : 0,909091 ; 0,826446 ; 0,751315 ; 0,683013). Quel est le coût net, en D ? (précision de 2 D)",
+      "answerKey": {
+        "value": -155696.39,
+        "unit": "D",
+        "tolerance": 2
+      },
+      "explanation": "Époque 0 : −250 000 + 250 000 = 0. Chaque année : intérêts 20 000 D, économies d'impôt (62 500 + 20 000) × 0,30 = 24 750 D, flux de +4 750 D ; en année 4, on retranche en plus le capital : −245 250 D. Actualisés : 4 750 × 2,486852 = 11 812,04 D et −245 250 × 0,683013 = −167 508,43 D. Coût net : −155 696,39 D.",
+      "difficulty": 3
+    }
+  ]
+}

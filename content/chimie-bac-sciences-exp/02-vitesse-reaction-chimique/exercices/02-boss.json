@@ -1,0 +1,154 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du chronomètre",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Dans une horloge iodométrique, on introduit 2,5 mL de thiosulfate de sodium à 2,0·10⁻² mol·L⁻¹ ; le bleu apparaît à t = 25 s, quand tout le thiosulfate est consommé par I₂ + 2 S₂O₃²⁻ → S₄O₆²⁻ + 2 I⁻. Le diiode vient de H₂O₂ + 2 I⁻ + 2 H₃O⁺ → I₂ + 4 H₂O. Quelle est la vitesse moyenne de cette dernière réaction entre 0 et 25 s, en mol·s⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,0·10⁻⁶"
+        },
+        {
+          "id": "b",
+          "text": "2,5·10⁻⁵"
+        },
+        {
+          "id": "c",
+          "text": "1,0·10⁻⁶"
+        },
+        {
+          "id": "d",
+          "text": "1,0·10⁻³"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "n(S₂O₃²⁻) = 2,0·10⁻² × 2,5·10⁻³ = 5,0·10⁻⁵ mol. Il en faut 2 mol par mole de I₂ : n(I₂) = 2,5·10⁻⁵ mol, et comme le coefficient de I₂ vaut 1, x = 2,5·10⁻⁵ mol à t = 25 s. Donc v_moy = 2,5·10⁻⁵/25 = 1,0·10⁻⁶ mol·s⁻¹ ✓. La valeur 2,0·10⁻⁶ prend x égal à n(S₂O₃²⁻), sans tenir compte des 2 mol de thiosulfate par mole de diiode. La valeur 2,5·10⁻⁵ est l'avancement lui-même, non divisé par la durée. La valeur 1,0·10⁻³ calcule n(S₂O₃²⁻) avec le volume en millilitres, mille fois trop grand.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La décomposition 2 H₂O₂ → 2 H₂O + O₂ a lieu en solution de volume constant. La concentration [H₂O₂] passe de 0,50 mol·L⁻¹ à 0,30 mol·L⁻¹ entre t = 0 et t = 25 min. Quelle est la vitesse volumique moyenne de la réaction sur cet intervalle, en mol·L⁻¹·min⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2,0·10⁻³"
+        },
+        {
+          "id": "b",
+          "text": "4,0·10⁻³"
+        },
+        {
+          "id": "c",
+          "text": "8,0·10⁻³"
+        },
+        {
+          "id": "d",
+          "text": "1,6·10⁻²"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Δ[H₂O₂] = 0,30 − 0,50 = −0,20 mol·L⁻¹ sur 25 min. Le coefficient de H₂O₂ vaut 2 : v_volmoy = −(1/2) × (−0,20/25) = 4,0·10⁻³ mol·L⁻¹·min⁻¹ ✓. La valeur −2,0·10⁻³ garde le signe de la pente d'un réactif et divise deux fois par le coefficient 2 : or la vitesse est positive. La valeur 8,0·10⁻³ oublie de diviser par le coefficient 2. La valeur 1,6·10⁻² multiplie par 2 au lieu de diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On place 0,65 g de zinc (M = 65 g·mol⁻¹) dans V = 60,0 mL d'acide chlorhydrique à 0,50 mol·L⁻¹ : Zn + 2 H₃O⁺ → Zn²⁺ + H₂(g) + 2 H₂O. À l'instant t, le dihydrogène recueilli occupe 72 mL (V_m = 24 L·mol⁻¹). Quelle est alors la concentration en ions H₃O⁺, en mol·L⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,40"
+        },
+        {
+          "id": "b",
+          "text": "0,10"
+        },
+        {
+          "id": "c",
+          "text": "0,30"
+        },
+        {
+          "id": "d",
+          "text": "0,45"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "x = n(H₂) = 72·10⁻³/24 = 3,0·10⁻³ mol. Au départ n(H₃O⁺) = 0,50 × 0,0600 = 3,0·10⁻² mol. Chaque unité d'avancement consomme 2 H₃O⁺ : n = 3,0·10⁻² − 2 × 3,0·10⁻³ = 2,4·10⁻² mol, soit 2,4·10⁻²/0,0600 = 0,40 mol·L⁻¹ ✓. La valeur 0,45 retranche x au lieu de 2x. La valeur 0,30 retranche 4x : le coefficient 2 est appliqué deux fois. La valeur 0,10 est la quantité consommée divisée par le volume (6,0·10⁻³/0,0600), pas la quantité restante.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'avancement x (en 10⁻⁴ mol) d'une réaction est tracé en fonction de t. La tangente T₀ en t = 0 passe par O(0 ; 0) et P(10 ; 8,0). La tangente T₁₆ en t = 16 min passe par A(8 ; 5,3) et B(24 ; 8,5). Quel est le rapport v(0)/v(16) des vitesses aux deux instants ?\n<svg viewBox=\"0 0 340 236\"><title>Courbe x(t) avec deux tangentes, en t = 0 et en t = 16 min</title><line x1=\"54.0\" y1=\"26\" x2=\"54.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"122.0\" y1=\"26\" x2=\"122.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"190.0\" y1=\"26\" x2=\"190.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"258.0\" y1=\"26\" x2=\"258.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"326.0\" y1=\"26\" x2=\"326.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190.0\" x2=\"326\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"158.8\" x2=\"326\" y2=\"158.8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"127.5\" x2=\"326\" y2=\"127.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"96.3\" x2=\"326\" y2=\"96.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"65.0\" x2=\"326\" y2=\"65.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"33.8\" x2=\"326\" y2=\"33.8\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"54.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"122.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"190.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"258.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"326.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><text x=\"48.0\" y=\"194.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"162.8\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"48.0\" y=\"131.5\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"48.0\" y=\"100.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><text x=\"48.0\" y=\"69.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">8</text><text x=\"48.0\" y=\"37.8\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"334.0\" y=\"218.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (min)</text><text x=\"60.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x (10⁻⁴ mol)</text><polyline points=\"54.0,190.0 57.0,184.6 60.0,179.3 63.1,174.3 66.1,169.4 69.1,164.8 72.1,160.3 75.2,155.9 78.2,151.8 81.2,147.8 84.2,143.9 87.2,140.2 90.3,136.7 93.3,133.2 96.3,129.9 99.3,126.7 102.4,123.7 105.4,120.7 108.4,117.9 111.4,115.2 114.4,112.6 117.5,110.1 120.5,107.6 123.5,105.3 126.5,103.0 129.6,100.9 132.6,98.8 135.6,96.8 138.6,94.9 141.6,93.0 144.7,91.2 147.7,89.5 150.7,87.9 153.7,86.3 156.8,84.8 159.8,83.3 162.8,81.9 165.8,80.5 168.8,79.2 171.9,77.9 174.9,76.7 177.9,75.6 180.9,74.4 184.0,73.4 187.0,72.3 190.0,71.3 193.0,70.4 196.0,69.4 199.1,68.5 202.1,67.7 205.1,66.9 208.1,66.1 211.2,65.3 214.2,64.6 217.2,63.9 220.2,63.2 223.2,62.5 226.3,61.9 229.3,61.3 232.3,60.7 235.3,60.1 238.4,59.6 241.4,59.1 244.4,58.6 247.4,58.1 250.4,57.6 253.5,57.2 256.5,56.8 259.5,56.3 262.5,55.9 265.6,55.6 268.6,55.2 271.6,54.8 274.6,54.5 277.6,54.2 280.7,53.9 283.7,53.6 286.7,53.3 289.7,53.0 292.8,52.7 295.8,52.5 298.8,52.2 301.8,52.0 304.8,51.7 307.9,51.5 310.9,51.3 313.9,51.1 316.9,50.9 320.0,50.7 323.0,50.5 326.0,50.3\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"54.0\" y1=\"190.0\" x2=\"128.8\" y2=\"52.6\" stroke=\"#c2410c\" stroke-width=\"2\"/><line x1=\"94.8\" y1=\"113.5\" x2=\"230.8\" y2=\"51.0\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><circle cx=\"54.0\" cy=\"190.0\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"122.0\" cy=\"65.0\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"108.4\" cy=\"107.2\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"217.2\" cy=\"57.2\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><text x=\"46.0\" y=\"204.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">O</text><text x=\"132.0\" y=\"59.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">P</text><text x=\"104.4\" y=\"125.2\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"215.2\" y=\"75.2\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"116.8\" y=\"46.6\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">T₀</text><text x=\"238.8\" y=\"45.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">T₁₆</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25"
+        },
+        {
+          "id": "b",
+          "text": "0,94"
+        },
+        {
+          "id": "c",
+          "text": "2,3"
+        },
+        {
+          "id": "d",
+          "text": "4,0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "v(0) = (8,0 − 0)/(10 − 0) = 0,80 et v(16) = (8,5 − 5,3)/(24 − 8) = 3,2/16 = 0,20, en 10⁻⁴ mol·min⁻¹ : le rapport vaut 0,80/0,20 = 4,0 ✓, la vitesse a été divisée par 4. La valeur 0,25 est le rapport inverse v(16)/v(0). La valeur 0,94 compare les ordonnées 8,0 et 8,5 de P et B au lieu des pentes. La valeur 2,3 prend pour v(16) l'ordonnée de B divisée par son abscisse (8,5/24 ≈ 0,35), c'est-à-dire la pente d'une droite passant par l'origine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La concentration en ions hypochlorite est suivie dans la réaction 3 ClO⁻ → ClO₃⁻ + 2 Cl⁻, à volume constant. La tangente à la courbe [ClO⁻](t) au point d'abscisse 10 min passe par A(0 ; 0,58) et B(30 ; 0,13), les concentrations étant en mol·L⁻¹. Quelle est la vitesse volumique de la réaction à t = 10 min, en mol·L⁻¹·min⁻¹ ?\n<svg viewBox=\"0 0 340 236\"><title>Courbe [ClO⁻](t) et tangente au point d'abscisse 10 min passant par A et B</title><line x1=\"54.0\" y1=\"26\" x2=\"54.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"26\" x2=\"114.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"174.9\" y1=\"26\" x2=\"174.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"235.3\" y1=\"26\" x2=\"235.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"295.8\" y1=\"26\" x2=\"295.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190.0\" x2=\"326\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"166.6\" x2=\"326\" y2=\"166.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"143.1\" x2=\"326\" y2=\"143.1\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"119.7\" x2=\"326\" y2=\"119.7\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"96.3\" x2=\"326\" y2=\"96.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"72.9\" x2=\"326\" y2=\"72.9\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"49.4\" x2=\"326\" y2=\"49.4\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"54.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"114.4\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"174.9\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"235.3\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"295.8\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><text x=\"48.0\" y=\"194.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,0</text><text x=\"48.0\" y=\"170.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,1</text><text x=\"48.0\" y=\"147.1\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,2</text><text x=\"48.0\" y=\"123.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,3</text><text x=\"48.0\" y=\"100.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,4</text><text x=\"48.0\" y=\"76.9\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,5</text><text x=\"48.0\" y=\"53.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0,6</text><text x=\"334.0\" y=\"218.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (min)</text><text x=\"60.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">[ClO⁻] (mol·L⁻¹)</text><polyline points=\"54.0,49.4 57.0,51.8 60.0,54.2 63.1,56.5 66.1,58.8 69.1,61.1 72.1,63.3 75.2,65.5 78.2,67.6 81.2,69.7 84.2,71.8 87.2,73.8 90.3,75.8 93.3,77.8 96.3,79.7 99.3,81.6 102.4,83.5 105.4,85.3 108.4,87.1 111.4,88.9 114.4,90.6 117.5,92.3 120.5,94.0 123.5,95.6 126.5,97.3 129.6,98.9 132.6,100.4 135.6,102.0 138.6,103.5 141.6,105.0 144.7,106.4 147.7,107.9 150.7,109.3 153.7,110.6 156.8,112.0 159.8,113.4 162.8,114.7 165.8,116.0 168.8,117.2 171.9,118.5 174.9,119.7 177.9,120.9 180.9,122.1 184.0,123.3 187.0,124.4 190.0,125.5 193.0,126.7 196.0,127.7 199.1,128.8 202.1,129.9 205.1,130.9 208.1,131.9 211.2,132.9 214.2,133.9 217.2,134.9 220.2,135.8 223.2,136.7 226.3,137.6 229.3,138.5 232.3,139.4 235.3,140.3 238.4,141.2 241.4,142.0 244.4,142.8 247.4,143.6 250.4,144.4 253.5,145.2 256.5,146.0 259.5,146.7 262.5,147.5 265.6,148.2 268.6,148.9 271.6,149.6 274.6,150.3 277.6,151.0 280.7,151.7 283.7,152.3 286.7,153.0 289.7,153.6 292.8,154.2 295.8,154.9 298.8,155.5 301.8,156.1 304.8,156.6 307.9,157.2 310.9,157.8 313.9,158.3 316.9,158.9 320.0,159.4 323.0,159.9 326.0,160.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"54.0\" y1=\"54.1\" x2=\"253.5\" y2=\"170.1\" stroke=\"#c2410c\" stroke-width=\"2\"/><circle cx=\"54.0\" cy=\"54.1\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"235.3\" cy=\"159.5\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"114.4\" cy=\"89.3\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><text x=\"65.0\" y=\"46.1\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"225.3\" y=\"151.5\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"102.4\" y=\"81.3\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1,7·10⁻³"
+        },
+        {
+          "id": "b",
+          "text": "5,0·10⁻³"
+        },
+        {
+          "id": "c",
+          "text": "1,5·10⁻²"
+        },
+        {
+          "id": "d",
+          "text": "4,5·10⁻²"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La pente de la tangente vaut (0,13 − 0,58)/(30 − 0) = −0,45/30 = −1,5·10⁻² mol·L⁻¹·min⁻¹. Le coefficient de ClO⁻ vaut 3 : v_vol = −(1/3) × (−1,5·10⁻²) = 5,0·10⁻³ mol·L⁻¹·min⁻¹ ✓. La valeur −1,7·10⁻³ garde le signe de la pente et divise deux fois par 3 : or la vitesse est positive. La valeur 1,5·10⁻² est la pente changée de signe, sans division par 3. La valeur 4,5·10⁻² multiplie par 3 au lieu de diviser.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un mélange de volume 200 mL a, à l'instant t, une vitesse volumique de 3,0·10⁻³ mol·L⁻¹·min⁻¹. On en prélève 50 mL, dont les concentrations sont celles du mélange à cet instant. Quelle est la vitesse v de la réaction dans le prélèvement, en mol·min⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,5·10⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "3,0·10⁻³"
+        },
+        {
+          "id": "c",
+          "text": "1,5·10⁻⁴"
+        },
+        {
+          "id": "d",
+          "text": "6,0·10⁻⁴"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le prélèvement a les mêmes concentrations que le mélange : sa vitesse volumique est la même, 3,0·10⁻³ mol·L⁻¹·min⁻¹. Sa vitesse vaut v = V·v_vol = 0,050 × 3,0·10⁻³ = 1,5·10⁻⁴ mol·min⁻¹ ✓. La valeur 3,0·10⁻³ est la vitesse volumique elle-même, non multipliée par le volume. La valeur 6,0·10⁻⁴ utilise 0,200 L, le volume du mélange entier. La valeur 1,5·10⁻¹ garde les 50 mL sans les convertir en litres.",
+      "difficulty": 3
+    }
+  ]
+}

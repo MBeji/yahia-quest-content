@@ -1,0 +1,173 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le grand arbitrage de financement",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque situation à sa conséquence.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Deux montages ont été actualisés, l'un à 9 %, l'autre à 10 %"
+        },
+        {
+          "id": "l2",
+          "text": "Le loyer annuel d'une location passe de 40 000 à 50 000 D, le reste inchangé"
+        },
+        {
+          "id": "l3",
+          "text": "La société loue le bien au lieu de l'acheter"
+        },
+        {
+          "id": "l4",
+          "text": "Le taux de rentabilité exigé monte, les flux futurs restant les mêmes"
+        },
+        {
+          "id": "r1",
+          "text": "La comparaison est faussée : tout recalculer au taux exigé"
+        },
+        {
+          "id": "r2",
+          "text": "Le coût net de la location devient plus négatif"
+        },
+        {
+          "id": "r3",
+          "text": "Elle perd l'économie sur dotation mais gagne celle sur les loyers"
+        },
+        {
+          "id": "r4",
+          "text": "Les flux futurs valent moins aujourd'hui, les coefficients diminuent"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Des montages actualisés à des taux différents ne se comparent pas : on recalcule tout au taux exigé. Un loyer plus lourd accroît les décaissements de la location. Le locataire ne peut pas amortir le bien, mais ses loyers sont déductibles. Un taux d'actualisation plus élevé réduit la valeur actuelle de chaque flux futur.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Acheter sur fonds propres un équipement de 500 000 D (dotations linéaires sur 5 ans) revient à −386 276 D en coût net, avec un impôt de 30 % et une actualisation à 10 %. Quel loyer, versé en fin d'année pendant 5 ans, égalerait ce coût ? On donne 3,790787 pour la série quinquennale. (précision de 20 D)",
+      "answerKey": {
+        "value": 145569.47,
+        "unit": "D",
+        "tolerance": 20
+      },
+      "explanation": "On cherche L tel que −L × (1 − 0,30) × 3,790787 = −386 276. Donc L = 386 276 ÷ (0,70 × 3,790787) = 386 276 ÷ 2,6535509 ≈ 145 569,47 D. Au-dessus de ce loyer, la location coûte plus cher que les fonds propres ; en dessous, elle coûte moins.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un montage, l'emprunt (9 %) revient moins cher que les fonds propres, le taux exigé étant de 10 % et l'impôt de 30 %. Quelle explication tient ici ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les remboursements étalés, actualisés à 10 %, valent moins que le capital perçu"
+        },
+        {
+          "id": "b",
+          "text": "L'emprunt supprime tout décaissement à l'époque 0, ce qui annule l'actualisation"
+        },
+        {
+          "id": "c",
+          "text": "Les intérêts payés constituent un encaissement qui s'ajoute aux économies d'impôt"
+        },
+        {
+          "id": "d",
+          "text": "L'emprunt dispense d'amortir le bien, ce qui réduit l'impôt effectivement payé"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'entreprise encaisse la somme empruntée à l'époque 0 et la rembourse plus tard, avec des intérêts à 9 %, dont une part revient en économie d'impôt : ce coût reste inférieur aux 10 % d'actualisation. Les autres explications sont fausses : il reste un apport à l'époque 0, les intérêts sont des décaissements, et le bien emprunté s'amortit tout de même.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une société finance un équipement de 420 000 D (amorti sur 5 ans) : 120 000 D de fonds propres et un emprunt de 300 000 D à 10 %, en 5 annuités constantes de 79 139,25 D. Impôt de 30 %, taux exigé de 8 % (coefficients : 0,925926 ; 0,857339 ; 0,793832 ; 0,735030 ; 0,680583). De combien ce financement mixte est-il moins coûteux que le financement à 100 % sur fonds propres, en D ? (précision de 15 D)",
+      "answerKey": {
+        "value": 7990.01,
+        "unit": "D",
+        "tolerance": 15
+      },
+      "explanation": "Fonds propres seuls : économie de 420 000 ÷ 5 × 0,30 = 25 200 D par an, soit 25 200 × 3,99271 = 100 616,29 D ; coût net −319 383,71 D. Mixte : intérêts 30 000 ; 25 086,08 ; 19 680,76 ; 13 734,91 ; 7 194,47 D. Flux (−79 139,25 + 25 200 + intérêts × 0,30) : −44 939,25 ; −46 413,43 ; −48 035,02 ; −49 818,78 ; −51 780,91 D. Actualisés à 8 % : −191 393,70 D. Coût net : −120 000 − 191 393,70 = −311 393,70 D. Écart : 319 383,71 − 311 393,70 = 7 990,01 D en faveur du mixte.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une société finance sur fonds propres un matériel de 400 000 D, amorti en linéaire sur 5 ans, taux exigé de 10 % (coefficient de la série sur 5 ans : 3,790787). Son taux d'impôt passe de 30 % à 40 %. De combien ce financement devient-il moins coûteux, en D ? (précision de 2 D)",
+      "answerKey": {
+        "value": 30326.3,
+        "unit": "D",
+        "tolerance": 2
+      },
+      "explanation": "Dotation annuelle : 400 000 ÷ 5 = 80 000 D. L'économie annuelle augmente de 80 000 × (0,40 − 0,30) = 8 000 D. Actualisée : 8 000 × 3,790787 = 30 326,30 D. Le coût net, moins négatif, recule d'autant.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un traiteur de Hammamet loue un four mixte : 3 loyers de 45 000 D. Quel écart de coût net sépare un paiement en début de chaque année (époques 0, 1, 2) d'un paiement en fin d'année (époques 1, 2, 3) ? Impôt de 30 %, taux exigé de 10 %, coefficients de l'époque 0 à 3 : 1 ; 0,909091 ; 0,826446 ; 0,751315. (précision de 2 D)",
+      "answerKey": {
+        "value": 7833.58,
+        "unit": "D",
+        "tolerance": 2
+      },
+      "explanation": "Loyer net d'impôt : 45 000 × 0,70 = 31 500 D. Paiement d'avance : 31 500 × (1 + 0,909091 + 0,826446) = 86 169,42 D. Paiement à terme échu : 31 500 × (0,909091 + 0,826446 + 0,751315) = 78 335,84 D. Écart : 86 169,42 − 78 335,84 = 7 833,58 D, soit 31 500 × (1 − 0,751315). Payer plus tôt coûte plus cher en valeur actuelle.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sont exactes quand on compare une location et un achat sur fonds propres, la société étant bénéficiaire ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chaque montage procure des économies d'impôt, sur loyers pour l'un et sur dotations pour l'autre"
+        },
+        {
+          "id": "b",
+          "text": "Seul l'achat comporte un décaissement du coût du bien à l'époque 0"
+        },
+        {
+          "id": "c",
+          "text": "Les deux coûts nets doivent être actualisés avec le même taux"
+        },
+        {
+          "id": "d",
+          "text": "La location est toujours la moins coûteuse puisqu'elle évite l'amortissement"
+        },
+        {
+          "id": "e",
+          "text": "L'économie sur loyers s'ajoute à une économie sur la dotation du bien loué"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Les deux montages ont une charge déductible (loyers ou dotations). L'achat paie le bien à l'époque 0, alors que la location ne paie que des loyers. Pour comparer, le taux est le même. La location n'est pas toujours la moins coûteuse : tout dépend du loyer, des taux et de la durée. Et un bien loué ne s'amortit pas chez le locataire.",
+      "difficulty": 3
+    }
+  ]
+}
