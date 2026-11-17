@@ -1,0 +1,176 @@
+{
+  "title": "⭐ Exercice : Premières armes — lancement, stockage et lots",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque notion à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Coût de lancement"
+        },
+        {
+          "id": "l2",
+          "text": "Coût de stockage"
+        },
+        {
+          "id": "l3",
+          "text": "Stock moyen"
+        },
+        {
+          "id": "l4",
+          "text": "Lot économique"
+        },
+        {
+          "id": "r1",
+          "text": "Frais engagés à chaque série : documents, mise en route, réglage"
+        },
+        {
+          "id": "r2",
+          "text": "Frais de détention des produits, obtenus par un taux sur la valeur moyenne"
+        },
+        {
+          "id": "r3",
+          "text": "Nombre moyen d'unités détenues, égal à Q ÷ (2 × N)"
+        },
+        {
+          "id": "r4",
+          "text": "Quantité par série qui rend le coût global le plus bas"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le lancement se paie une fois par série. Le stockage se calcule sur la valeur moyenne du stock avec un taux. Le stock moyen vaut la moitié d'un lot, et le lot économique est la taille de série qui minimise la somme des deux coûts.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le stockage d'un produit coûte 14 % de la valeur du stock moyen. Quelle valeur donne-t-on au taux de possession i dans les formules ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "i = 14, le pourcentage tel qu'il est écrit"
+        },
+        {
+          "id": "b",
+          "text": "i = 0,14, le pourcentage divisé par cent"
+        },
+        {
+          "id": "c",
+          "text": "i = 1,4, le pourcentage divisé par dix"
+        },
+        {
+          "id": "d",
+          "text": "i = 0,014, le pourcentage divisé par mille"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le taux de possession est i = t ÷ 100 avec t = 14, soit 0,14 par dinar de stock. Garder 14 reviendrait à dire que le stockage coûte quatorze fois la valeur du stock ; 1,4 est dix fois trop grand et 0,014 dix fois trop petit.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chaque série lancée par un atelier de couture coûte 320 D de préparation. Combien coûtent les lancements d'une année comportant 7 séries, en D ?",
+      "answerKey": {
+        "value": 2240,
+        "unit": "D"
+      },
+      "explanation": "Coût de lancement annuel = CL × N = 320 × 7 = 2 240 D ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un brasseur fabrique 9 000 bouteilles par an, à 12 D l'unité, en 3 lots réguliers. Quelle est la valeur de son stock moyen, en D ?",
+      "answerKey": {
+        "value": 18000,
+        "unit": "D"
+      },
+      "explanation": "Valeur du stock moyen = Q × cu ÷ (2 × N) = 9 000 × 12 ÷ 6 = 108 000 ÷ 6 = 18 000 D ✓. Contrôle : stock moyen en bouteilles = 9 000 ÷ 6 = 1 500, et 1 500 × 12 = 18 000 D.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une laiterie lance 8 séries identiques pour fabriquer 14 400 yaourts dans l'année. Quelle est la taille de chaque série, en yaourts ?",
+      "answerKey": {
+        "value": 1800,
+        "unit": "yaourts"
+      },
+      "explanation": "Taille d'une série = Q ÷ N = 14 400 ÷ 8 = 1 800 yaourts ✓. Contrôle : 8 × 1 800 = 14 400.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur une année, une imprimerie sort 1 600 cahiers valorisés 30 D pièce, répartis en 4 tirages réguliers. Préparer un tirage revient à 150 D ; détenir les cahiers coûte 15 % de leur valeur moyenne. Calcule le total des deux frais annuels, en D.",
+      "answerKey": {
+        "value": 1500,
+        "unit": "D"
+      },
+      "explanation": "Stockage = 1 600 × 30 × 0,15 ÷ (2 × 4) = 7 200 ÷ 8 = 900 D. Lancement = 150 × 4 = 600 D. Coût global = 900 + 600 = 1 500 D ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche qui mène des données de l'atelier au lot économique.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer le nombre optimal de lots N* par la formule de Wilson"
+        },
+        {
+          "id": "b",
+          "text": "Contrôler que N* lots de q* unités redonnent bien la production annuelle Q"
+        },
+        {
+          "id": "c",
+          "text": "Écrire le coût global : stockage annuel plus lancement annuel, en fonction de N"
+        },
+        {
+          "id": "d",
+          "text": "Calculer la taille du lot économique q* = Q ÷ N*"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "a",
+          "d",
+          "b"
+        ]
+      },
+      "explanation": "On pose d'abord le coût global, qui dépend de N. La formule de Wilson donne N*, d'où l'on tire la taille du lot q* = Q ÷ N*. On contrôle enfin que N* × q* redonne Q.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un atelier de jouets commence le trimestre avec 60 articles en stock, doit en garder au moins 40 en fin de trimestre et en livrer 90 sur la période. Il fabrique par lots de 25 articles. Combien de lots doit-il lancer au minimum ?",
+      "answerKey": {
+        "value": 3,
+        "unit": "lots"
+      },
+      "explanation": "Il faut 60 + P − 90 ≥ 40, donc P ≥ 70 articles. Deux lots donnent 50 articles, insuffisant : il en faut 3, soit 75 articles, et le stock final vaut 60 + 75 − 90 = 45 ✓. On arrondit vers le haut.",
+      "difficulty": 2
+    }
+  ]
+}

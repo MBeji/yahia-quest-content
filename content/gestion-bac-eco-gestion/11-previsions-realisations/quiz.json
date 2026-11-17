@@ -1,0 +1,117 @@
+{
+  "title": "Test de compréhension ⭐ : Prévisions et réalisations",
+  "questions": [
+    {
+      "prompt": "Qu'est-ce qu'un coût préétabli ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un coût constaté après la fabrication, d'après les factures et les relevés d'heures du mois"
+        },
+        {
+          "id": "b",
+          "text": "Un prix de vente promis au client avant de commencer la commande qu'il a passée"
+        },
+        {
+          "id": "c",
+          "text": "Un coût calculé après la fabrication, en divisant le coût réel par les unités prévues"
+        },
+        {
+          "id": "d",
+          "text": "Un coût fixé avant la fabrication, d'après une fiche de quantités et de prix unitaires"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le coût préétabli est une référence fixée à l'avance : il vient d'une fiche qui donne, pour une unité, les quantités et les prix de chaque élément. Un coût constaté après coup est un coût réel, et un prix de vente est une tout autre notion.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour une commande de coussins, le coût réel est inférieur au coût préétabli. Comment décrit-on l'écart global, calculé comme coût réel − coût préétabli ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est négatif et défavorable"
+        },
+        {
+          "id": "b",
+          "text": "Il est négatif et favorable"
+        },
+        {
+          "id": "c",
+          "text": "Il est positif et favorable"
+        },
+        {
+          "id": "d",
+          "text": "Il est positif et défavorable"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le coût réel est plus bas que la prévision : en retranchant le préétabli du réel on obtient un nombre négatif, et l'entreprise a dépensé moins que prévu, ce qui est favorable. Un écart positif signifierait au contraire une dépense supérieure à la prévision.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une confiserie a fixé 0,40 kg de sucre à 2,500 D le kg par boîte de nougat. Elle a fabriqué 3 000 boîtes. Quel est le coût préétabli du sucre, en D ?",
+      "answerKey": {
+        "value": 3000,
+        "unit": "D"
+      },
+      "explanation": "Quantité préétablie = 0,4 × 3 000 = 1 200 kg. Coût préétabli = 1 200 × 2,5 = 3 000 D ✓.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une imprimerie avait préétabli 15 000 feuilles de papier à 0,080 D pièce pour un tirage. Elle en a réellement utilisé 15 800, à 0,075 D pièce. Quel est l'écart global sur le papier, en D (négatif s'il est favorable) ?",
+      "answerKey": {
+        "value": -15,
+        "unit": "D"
+      },
+      "explanation": "Coût réel = 15 800 × 0,075 = 1 185 D. Coût préétabli = 15 000 × 0,08 = 1 200 D. Écart global = 1 185 − 1 200 = −15 D, favorable ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour la soupe du jour, un restaurant universitaire a payé 540 kg de tomates à 0,950 D le kg, alors que la fiche indique 0,800 D le kg pour une quantité préétablie de 500 kg. Quel est l'écart sur coût, en D ?",
+      "answerKey": {
+        "value": 81,
+        "unit": "D"
+      },
+      "explanation": "Écart sur coût = (coût unitaire réel − coût unitaire préétabli) × quantité réelle = (0,95 − 0,8) × 540 = 0,15 × 540 = 81 D, défavorable ✓. Avec la quantité préétablie on obtiendrait 75 D, ce qui est faux.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fonderie a consommé 2 150 kg d'aluminium au lieu des 2 000 kg autorisés. L'aluminium était préétabli à 3,600 D le kg et il a été payé 3,400 D le kg. Quel est l'écart sur quantité, en D ?",
+      "answerKey": {
+        "value": 540,
+        "unit": "D"
+      },
+      "explanation": "Écart sur quantité = (quantité réelle − quantité préétablie) × coût unitaire préétabli = (2 150 − 2 000) × 3,6 = 150 × 3,6 = 540 D, défavorable ✓. Le prix payé n'intervient pas ici : il appartient à l'écart sur coût.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un comptable calcule l'écart sur quantité de la main-d'œuvre. Quelle opération effectue-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(heures réelles − heures préétablies) × taux horaire réellement payé"
+        },
+        {
+          "id": "b",
+          "text": "(taux horaire réel − taux horaire préétabli) × heures préétablies"
+        },
+        {
+          "id": "c",
+          "text": "(heures réelles − heures préétablies) × taux horaire préétabli"
+        },
+        {
+          "id": "d",
+          "text": "(heures préétablies − heures réelles) × taux horaire réellement payé"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'écart sur quantité compare des nombres d'heures et les valorise au taux de la fiche, pour ne pas y mêler l'effet du prix. Valoriser au taux payé, ou comparer les taux, revient à mesurer autre chose.",
+      "difficulty": 2
+    }
+  ]
+}

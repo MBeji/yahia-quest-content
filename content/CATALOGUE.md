@@ -103,7 +103,7 @@
 | `svt` | العلوم الفيزيائية | 9eme-base | ar | 13 | 63 | 13 |
 | `english` | English | 9eme-base | en | 10 | 66 | 10 |
 | `sciences-vie-terre` | علوم الحياة والأرض | 9eme-base | ar | 21 | 172 | 21 |
-| `gestion-bac-eco-gestion` | Gestion | bac-eco-gestion | fr | 9 | 36 | 9 |
+| `gestion-bac-eco-gestion` | Gestion | bac-eco-gestion | fr | 12 | 48 | 12 |
 | `math-bac-info` | Mathématiques | bac-info | fr | 13 | 52 | 13 |
 | `physique-bac-info` | Physique | bac-info | fr | 13 | 52 | 13 |
 | `informatique-bac-info` | Informatique | bac-info | fr | 10 | 40 | 10 |

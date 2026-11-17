@@ -1,0 +1,220 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Du plein emploi à la sous-traitance",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Pour écrire l'inéquation de capacité d'un atelier dont la capacité est exprimée en heures, quelles informations utilise-t-on ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le temps de passage d'une unité de chaque produit dans l'atelier"
+        },
+        {
+          "id": "b",
+          "text": "La capacité mensuelle de l'atelier, en heures"
+        },
+        {
+          "id": "c",
+          "text": "La marge bénéficiaire unitaire de chaque produit"
+        },
+        {
+          "id": "d",
+          "text": "Le prix de vente unitaire de chaque produit"
+        },
+        {
+          "id": "e",
+          "text": "Les frais de distribution d'une unité vendue"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "On multiplie le temps de passage de chaque produit par sa quantité, et la somme ne doit pas dépasser la capacité de l'atelier en heures. Le prix de vente et la marge servent à la fonction objectif Z, les frais de distribution au coût de revient.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque donnée d'un énoncé à son rôle dans la résolution.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Capacité mensuelle de l'atelier"
+        },
+        {
+          "id": "l2",
+          "text": "Temps unitaire de passage"
+        },
+        {
+          "id": "l3",
+          "text": "Marge bénéficiaire unitaire"
+        },
+        {
+          "id": "l4",
+          "text": "Capacité ÷ temps unitaire"
+        },
+        {
+          "id": "r1",
+          "text": "Membre de droite de l'inéquation"
+        },
+        {
+          "id": "r2",
+          "text": "Coefficient de la quantité du produit dans l'inéquation"
+        },
+        {
+          "id": "r3",
+          "text": "Coefficient de la quantité dans la fonction objectif Z"
+        },
+        {
+          "id": "r4",
+          "text": "Extrémité du segment de capacité sur l'axe d'un produit"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La capacité est la limite à droite de l'inéquation ; le temps unitaire multiplie la quantité du produit à gauche. La marge unitaire multiplie la quantité dans Z. Diviser la capacité par le temps unitaire donne la quantité maximale si l'on ne fabriquait que ce produit : une extrémité du segment.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chaque mois, la savonnerie Zeitoun reçoit 4 200 kg d'huile d'olive, et chaque savon en consomme 0,6 kg. Quel nombre maximal de savons sortirait si l'huile était la seule limite ?",
+      "answerKey": {
+        "value": 7000,
+        "unit": "unités"
+      },
+      "explanation": "Quantité maximale = matière disponible ÷ consommation unitaire = 4 200 ÷ 0,6 = 7 000 savons ✓. Contrôle : 7 000 × 0,6 = 4 200 kg.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux machines imposent 2 A + 3 B = 1 300 (machine X) et 4 A + B = 1 400 (machine Y). Quel couple (A ; B) assure le plein emploi des deux machines ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(290 ; 240)"
+        },
+        {
+          "id": "b",
+          "text": "(260 ; 260)"
+        },
+        {
+          "id": "c",
+          "text": "(240 ; 290)"
+        },
+        {
+          "id": "d",
+          "text": "(350 ; 0)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "De la seconde : B = 1 400 − 4 A ; dans la première : 2 A + 4 200 − 12 A = 1 300, donc A = 290 et B = 240. Contrôle : 2 × 290 + 3 × 240 = 1 300 et 4 × 290 + 240 = 1 400. Le couple (260 ; 260) remplit X mais pas Y (1 300 h au lieu de 1 400), (350 ; 0) remplit Y mais pas X (700 h au lieu de 1 300), et (240 ; 290) inverse les quantités.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une usine de gilets sous-traite 300 pièces. La matière fournie : 1,2 kg à 4,000 D le kg, avec 0,250 D de frais d'approvisionnement par kg. Le sous-traitant facture 2,400 D de main-d'œuvre et 6,350 D de frais par gilet ; la distribution coûte 0,900 D par gilet. Quel est le coût de revient unitaire, en D ?",
+      "answerKey": {
+        "value": 14.75,
+        "unit": "D"
+      },
+      "explanation": "Matière : 1,2 × (4,000 + 0,250) = 1,2 × 4,250 = 5,100 D. Coût unitaire = 5,100 + 2,400 + 6,350 + 0,900 = 14,750 D ✓. Pour les 300 gilets : 4 425 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de la recherche des quantités optimales par la méthode algébrique.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Écrire une inéquation de capacité pour chaque atelier"
+        },
+        {
+          "id": "b",
+          "text": "Remplacer chaque ≤ par = pour traduire le plein emploi"
+        },
+        {
+          "id": "c",
+          "text": "Résoudre le système formé par les égalités"
+        },
+        {
+          "id": "d",
+          "text": "Remplacer les quantités trouvées dans chaque contrainte pour les contrôler"
+        },
+        {
+          "id": "e",
+          "text": "Calculer Z avec les marges unitaires"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On pose d'abord les contraintes, puis on les transforme en égalités de plein emploi et on résout le système. On contrôle le résultat dans chaque contrainte avant de s'en servir, et le calcul de Z termine la démarche puisqu'il exige les quantités optimales.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans quels cas une entreprise peut-elle décider de sous-traiter une partie de sa production ? Sélectionnez toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ses ateliers sont saturés par une commande qui dépasse sa capacité"
+        },
+        {
+          "id": "b",
+          "text": "Ses coûts de fabrication ne sont pas compétitifs"
+        },
+        {
+          "id": "c",
+          "text": "Elle refuse d'acheter un équipement pour une quantité qui dépasse son potentiel productif"
+        },
+        {
+          "id": "d",
+          "text": "Ses ateliers tournent à moins de la moitié de leur capacité"
+        },
+        {
+          "id": "e",
+          "text": "Elle souhaite que le sous-traitant fixe lui-même les normes de qualité"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Saturation, coûts non compétitifs et refus d'investir dans un équipement pour un dépassement de capacité sont des raisons de faire faire. Des ateliers à moitié vides n'ont aucune raison de déléguer, et le sous-traitant n'impose pas les normes : le donneur d'ordre les fixe dans le cahier des charges.",
+      "difficulty": 2
+    }
+  ]
+}

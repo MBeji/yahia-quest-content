@@ -1,0 +1,84 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le contrôleur de gestion",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Pour chaque fromage de 1 kg, la fromagerie Dar Jben prévoit 8 litres de lait à 0,900 D le litre. Elle a fabriqué 450 fromages, consommé 3 700 litres de lait et payé 0,860 D le litre. Quel est l'écart global sur le lait, en D (négatif s'il est favorable) ?",
+      "answerKey": {
+        "value": -58,
+        "unit": "D"
+      },
+      "explanation": "Quantité préétablie = 8 × 450 = 3 600 L ; coût préétabli = 3 600 × 0,9 = 3 240 D. Coût réel = 3 700 × 0,86 = 3 182 D. Écart global = 3 182 − 3 240 = −58 D, favorable ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur la peinture d'un chantier, le rapport donne un écart global de +90 D, composé d'un écart sur coût de −110 D et d'un écart sur quantité de +200 D. Quelle lecture est juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le prix d'achat plus élevé que prévu explique à lui seul l'écart défavorable"
+        },
+        {
+          "id": "b",
+          "text": "La consommation a été inférieure à la prévision, ce qui explique l'écart défavorable"
+        },
+        {
+          "id": "c",
+          "text": "Les deux écarts sont défavorables et se cumulent pour atteindre 90 D"
+        },
+        {
+          "id": "d",
+          "text": "La surconsommation a pesé plus lourd que l'économie réalisée sur le prix d'achat"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'écart sur quantité positif signale une consommation supérieure à la fiche ; l'écart sur coût négatif signale un prix inférieur à la prévision. Les deux jouent en sens contraire, et le premier l'emporte : 200 − 110 = 90 D. Le prix n'est donc pas en cause, et la consommation n'a pas été inférieure à la fiche. Un gaspillage est une cause possible de cette surconsommation, à vérifier sur le chantier.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour chacun des 1 400 appareils d'une chaîne de montage, la fiche prévoit 2 h de main-d'œuvre à 3,500 D l'heure. Les ouvriers ont réellement travaillé 2 940 h à 3,650 D l'heure. Quel est l'écart sur coût, en D ?",
+      "answerKey": {
+        "value": 441,
+        "unit": "D"
+      },
+      "explanation": "Écart sur coût = (3,65 − 3,5) × 2 940 = 0,15 × 2 940 = 441 D, défavorable ✓. Contrôle : quantité préétablie 2 × 1 400 = 2 800 h, écart sur quantité (2 940 − 2 800) × 3,5 = 490 D, et 441 + 490 = 931 D = 2 940 × 3,65 − 2 800 × 3,5 ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une verrerie fabrique 5 000 bouteilles ; la fiche autorise 0,6 kg de sable par bouteille à 0,250 D le kg. Elle a consommé 3 180 kg de sable à 0,240 D le kg. Quel est l'écart sur quantité, en D ?",
+      "answerKey": {
+        "value": 45,
+        "unit": "D"
+      },
+      "explanation": "Quantité préétablie = 0,6 × 5 000 = 3 000 kg. Écart sur quantité = (3 180 − 3 000) × 0,25 = 180 × 0,25 = 45 D, défavorable ✓. Contrôle : écart sur coût = (0,24 − 0,25) × 3 180 = −31,8 D ; −31,8 + 45 = 13,2 D = 3 180 × 0,24 − 3 000 × 0,25 ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans le rapport d'un atelier de reliure, l'écart global sur le papier est de −150 D et l'écart sur coût de −420 D. Quel est l'écart sur quantité, en D ?",
+      "answerKey": {
+        "value": 270,
+        "unit": "D"
+      },
+      "explanation": "Écart global = écart sur coût + écart sur quantité, donc écart sur quantité = −150 − (−420) = 270 D ✓. Il est positif : défavorable, l'atelier a consommé plus de papier que prévu, mais son prix d'achat plus bas a plus que compensé.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une biscuiterie compare ses coûts préétablis et réels. Matières : 8 000 D préétablis, 4 200 kg consommés à 1,900 D le kg. Main-d'œuvre : 3 600 D préétablis, 910 h à 4,200 D l'heure. Charges indirectes : 3 500 D préétablis, 3 380 D constatés. Quel est l'écart sur le coût de production, en D (positif s'il est défavorable) ?",
+      "answerKey": {
+        "value": 82,
+        "unit": "D"
+      },
+      "explanation": "Matières : 4 200 × 1,9 = 7 980 D, écart 7 980 − 8 000 = −20 D. Main-d'œuvre : 910 × 4,2 = 3 822 D, écart 3 822 − 3 600 = 222 D. Charges indirectes : 3 380 − 3 500 = −120 D. Total : −20 + 222 − 120 = 82 D ✓, défavorable. Contrôle : coût réel 7 980 + 3 822 + 3 380 = 15 182 D, coût préétabli 15 100 D.",
+      "difficulty": 3
+    }
+  ]
+}

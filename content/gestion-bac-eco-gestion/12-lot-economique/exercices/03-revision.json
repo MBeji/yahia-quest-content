@@ -1,0 +1,177 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le lot économique de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque grandeur à son écriture.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Nombre optimal de lots N*"
+        },
+        {
+          "id": "l2",
+          "text": "Coût de lancement annuel"
+        },
+        {
+          "id": "l3",
+          "text": "Coût de stockage annuel"
+        },
+        {
+          "id": "l4",
+          "text": "Taux de possession i, pour un taux t en %"
+        },
+        {
+          "id": "r1",
+          "text": "√(Q × cu × i ÷ (2 × CL))"
+        },
+        {
+          "id": "r2",
+          "text": "CL × N"
+        },
+        {
+          "id": "r3",
+          "text": "Q × cu × i ÷ (2 × N)"
+        },
+        {
+          "id": "r4",
+          "text": "t ÷ 100"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La formule de Wilson donne N* comme la racine carrée de Q × cu × i ÷ (2 × CL). Le lancement se paie N fois. Le stockage applique le taux i à la valeur du stock moyen, Q × cu ÷ (2 × N). Un taux en pourcentage t devient i en le divisant par cent.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Coche toutes les dépenses qui entrent dans le coût de lancement d'une série.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le temps de réglage de la machine avant la série"
+        },
+        {
+          "id": "b",
+          "text": "L'établissement des documents de fabrication"
+        },
+        {
+          "id": "c",
+          "text": "Le loyer du magasin où dorment les produits finis"
+        },
+        {
+          "id": "d",
+          "text": "Le temps de mise en route de la chaîne"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Les documents, le réglage et la mise en route sont engagés à chaque série, quelle que soit sa taille : ce sont des frais de lancement. Le loyer du magasin est lié au fait de détenir du stock, donc au coût de stockage.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fabrique de gaines produit régulièrement 21 600 mètres par an, à un coût de production de 2,5 D le mètre. Chaque lancement coûte 202,50 D et le stockage 12 % de la valeur moyenne. Quel est le nombre optimal de lots ?",
+      "answerKey": {
+        "value": 4,
+        "unit": "lots"
+      },
+      "explanation": "N* = √(21 600 × 2,5 × 0,12 ÷ (2 × 202,5)) = √(6 480 ÷ 405) = √16 = 4 lots ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une verrerie produit 7 300 vases par an. Son lot économique est de 1 460 vases et l'année compte 365 jours. Tous les combien de jours lance-t-elle une série ?",
+      "answerKey": {
+        "value": 73,
+        "unit": "jours"
+      },
+      "explanation": "N* = Q ÷ q* = 7 300 ÷ 1 460 = 5 lots. Intervalle = 365 ÷ 5 = 73 jours ✓. Contrôle : 5 × 73 = 365.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une usine de visserie fabrique 5 000 boîtes par an à 8 D l'unité, avec 150 D par lancement et un stockage à 12 %. Un élève obtient N* = 40 lots, alors que le résultat attendu est proche de 4. Quelle est l'origine la plus probable de l'écart ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a utilisé la quantité Q seule à la place de la valeur Q × cu"
+        },
+        {
+          "id": "b",
+          "text": "Il a écrit le taux 12 au lieu de 0,12 dans la formule"
+        },
+        {
+          "id": "c",
+          "text": "Il a oublié le facteur 2 du dénominateur de la formule"
+        },
+        {
+          "id": "d",
+          "text": "Il a oublié la racine carrée et gardé le résultat de la fraction"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec i = 12, il calcule √(5 000 × 8 × 12 ÷ 300) = √1 600 = 40. Avec i = 0,12, N* = √(4 800 ÷ 300) = √16 = 4. Utiliser Q seule donnerait √2 environ ; oublier le facteur 2 multiplierait N* par √2 seulement ; garder la fraction sans racine donnerait 16. Aucune de ces erreurs ne produit 40.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la démarche qui mène à la formule de Wilson à partir du coût global.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Annuler la dérivée : − Q × cu × i ÷ (2 × N²) + CL = 0"
+        },
+        {
+          "id": "b",
+          "text": "Dériver CG par rapport à N"
+        },
+        {
+          "id": "c",
+          "text": "Isoler N², puis prendre la racine carrée pour obtenir N*"
+        },
+        {
+          "id": "d",
+          "text": "Écrire le coût global CG(N) = Q × cu × i ÷ (2 × N) + CL × N"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "d",
+          "b",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "On part de la fonction à minimiser, on la dérive, on annule la dérivée pour trouver le minimum, puis on isole N² et on extrait la racine : N* = √(Q × cu × i ÷ (2 × CL)).",
+      "difficulty": 2
+    }
+  ]
+}
