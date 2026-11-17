@@ -1,0 +1,140 @@
+{
+  "title": "⭐ Exercice : Premiers pas avec les acides et les bases",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans la réaction HCOOH + CO₃²⁻ ⇄ HCOO⁻ + HCO₃⁻, quels sont les deux couples acide/base mis en jeu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "HCOOH/CO₃²⁻ et HCO₃⁻/HCOO⁻"
+        },
+        {
+          "id": "b",
+          "text": "HCOOH/HCOO⁻ et HCO₃⁻/CO₃²⁻"
+        },
+        {
+          "id": "c",
+          "text": "HCOOH/HCO₃⁻ et HCOO⁻/CO₃²⁻"
+        },
+        {
+          "id": "d",
+          "text": "HCOOH/HCOO⁻ et H₃O⁺/H₂O"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "HCOOH perd un ion H⁺ et devient HCOO⁻ : couple HCOOH/HCOO⁻. CO₃²⁻ capte un ion H⁺ et devient HCO₃⁻ : couple HCO₃⁻/CO₃²⁻ ✓. Dans les trois autres propositions, on associe deux espèces qui ne diffèrent pas d'un seul ion H⁺, ou l'on fait intervenir H₃O⁺/H₂O alors qu'aucune molécule d'eau n'apparaît dans l'équation.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À 60 °C, Kₑ = 1,0·10⁻¹³. Une solution a [H₃O⁺] = 2,0·10⁻⁶ mol·L⁻¹. Quelle est [OH⁻] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,0·10⁻¹⁹ mol·L⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "5,0·10⁻⁹ mol·L⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "5,0·10⁻⁸ mol·L⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "2,0·10⁻⁶ mol·L⁻¹"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À l'équilibre, [OH⁻] = Kₑ / [H₃O⁺] = 1,0·10⁻¹³ / 2,0·10⁻⁶ = 5,0·10⁻⁸ mol·L⁻¹ ✓. La valeur 2,0·10⁻¹⁹ résulte d'un produit au lieu d'un quotient. La valeur 5,0·10⁻⁹ utilise Kₑ = 1,0·10⁻¹⁴, valable seulement à 25 °C. La valeur 2,0·10⁻⁶ suppose [OH⁻] = [H₃O⁺], ce qui n'est vrai que pour l'eau pure.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une solution d'acide HA de concentration C = 1,0·10⁻² mol·L⁻¹ a un pH de 3,00 à 25 °C. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "HA est un acide faible, car τ_f = 0,10 est inférieur à 1"
+        },
+        {
+          "id": "b",
+          "text": "HA est un acide fort, car le pH est inférieur à 7"
+        },
+        {
+          "id": "c",
+          "text": "HA est un acide fort, car τ_f = C / [H₃O⁺] = 10 est supérieur à 1"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut rien conclure sans connaître le pKₐ de HA"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "[H₃O⁺]_f = 10⁻³ = 1,0·10⁻³ mol·L⁻¹, donc τ_f = [H₃O⁺]_f / C = 1,0·10⁻³ / 1,0·10⁻² = 0,10 ✓. Comme τ_f < 1, la réaction avec l'eau est limitée : HA est un acide faible. Un pH inférieur à 7 prouve seulement que la solution est acide, pas que l'acide est fort. Le rapport C / [H₃O⁺] = 10 est l'inverse de τ_f. Quant au pKₐ, il n'est pas nécessaire : la mesure du pH et la concentration suffisent pour conclure.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une base faible, de concentration C = 5,0·10⁻³ mol·L⁻¹, donne une solution de pH 10,40 à 25 °C. Calculer le taux d'avancement final τ_f de sa réaction avec l'eau, sans unité, arrondi à 10⁻³ près.",
+      "answerKey": {
+        "value": 0.05,
+        "tolerance": 0.003
+      },
+      "explanation": "[H₃O⁺]_f = 10⁻¹⁰·⁴⁰ = 4,0·10⁻¹¹ mol·L⁻¹, donc [OH⁻]_f = Kₑ / [H₃O⁺]_f = 1,0·10⁻¹⁴ / 4,0·10⁻¹¹ = 2,5·10⁻⁴ mol·L⁻¹. Pour une base, τ_f = [OH⁻]_f / C = 2,5·10⁻⁴ / 5,0·10⁻³ = 0,050, soit 0,05 ✓. Cette valeur inférieure à 1 montre que la base est faible, ionisée à 5 % seulement. Prendre [H₃O⁺] au lieu de [OH⁻] donnerait un taux de 10⁻⁸, absurde.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour HClO + CH₃COO⁻ ⇄ ClO⁻ + CH₃COOH, quelle est l'expression de K en fonction des constantes d'acidité Kₐ(HClO) et Kₐ(CH₃COOH) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "K = Kₐ(CH₃COOH) / Kₐ(HClO)"
+        },
+        {
+          "id": "b",
+          "text": "K = Kₐ(HClO) × Kₐ(CH₃COOH)"
+        },
+        {
+          "id": "c",
+          "text": "K = Kₐ(HClO) / Kₑ"
+        },
+        {
+          "id": "d",
+          "text": "K = Kₐ(HClO) / Kₐ(CH₃COOH)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour Acide₁ + Base₂ ⇄ Acide₂ + Base₁, K = Kₐ₁ / Kₐ₂, avec Acide₁ = HClO à gauche et Acide₂ = CH₃COOH à droite : K = Kₐ(HClO) / Kₐ(CH₃COOH) ✓. Le rapport inversé place l'acide produit au numérateur. Le produit des deux constantes n'a aucun lien avec cette réaction. Kₑ n'intervient que si l'un des couples est H₂O/OH⁻, ce qui n'est pas le cas ici.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour Cl⁻ + CH₃COOH ⇄ HCl + CH₃COO⁻, on donne K = 1,8·10⁻¹². On mélange Cl⁻ et CH₃COOH en quantités égales, à 0,10 mol·L⁻¹ chacun. Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La réaction directe est pratiquement totale"
+        },
+        {
+          "id": "b",
+          "text": "La réaction directe est très lente, à cause de la faible valeur de K"
+        },
+        {
+          "id": "c",
+          "text": "La réaction directe est moyennement limitée, car K est inférieure à 1"
+        },
+        {
+          "id": "d",
+          "text": "La réaction directe est extrêmement limitée : peu de HCl se forme"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "K = 1,8·10⁻¹² est extrêmement faible : la réaction directe est extrêmement limitée. Avec [HCl] = [CH₃COO⁻] = z et les réactifs voisins de 0,10 mol·L⁻¹, z = 0,10 × √(1,8·10⁻¹²) ≈ 1,3·10⁻⁷ mol·L⁻¹, soit un millionième de l'acide initial ✓. La réaction n'est donc pas totale. Elle n'est pas pour autant lente : K ne renseigne pas sur la vitesse, et les réactions acide-base sont instantanées. Enfin « moyennement limitée » demande une K moyenne, pas simplement inférieure à 1.",
+      "difficulty": 2
+    }
+  ]
+}

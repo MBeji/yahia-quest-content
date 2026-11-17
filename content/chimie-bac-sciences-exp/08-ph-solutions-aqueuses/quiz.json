@@ -1,0 +1,112 @@
+{
+  "title": "Test de compréhension ⭐ : pH des solutions aqueuses",
+  "questions": [
+    {
+      "prompt": "À 25 °C, une solution a pour concentration [H₃O⁺] = 2,0·10⁻⁵ mol·L⁻¹. Quel est son pH ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,70"
+        },
+        {
+          "id": "b",
+          "text": "5,00"
+        },
+        {
+          "id": "c",
+          "text": "5,30"
+        },
+        {
+          "id": "d",
+          "text": "9,30"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "pH = −log (2,0·10⁻⁵) = −(log 2,0 − 5) = 5 − 0,30 = 4,70 ✓. La valeur 5,00 oublie le facteur 2,0 ; la valeur 5,30 ajoute log 2,0 au lieu de le retrancher ; la valeur 9,30 est 14 − 4,70, soit −log [OH⁻] et non le pH.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces relations, laquelle caractérise une solution neutre quelle que soit la température ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pH = 7"
+        },
+        {
+          "id": "b",
+          "text": "pH = ½ pKₑ"
+        },
+        {
+          "id": "c",
+          "text": "pH = pKₑ − 7"
+        },
+        {
+          "id": "d",
+          "text": "pH = pKₑ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une solution neutre vérifie [H₃O⁺] = [OH⁻], donc [H₃O⁺] = √Kₑ et pH = ½ pKₑ ✓, à toute température. La relation pH = 7 n'est vraie qu'à 25 °C, où pKₑ = 14. La relation pH = pKₑ − 7 redonne 7 à 25 °C mais 6 à 60 °C (pKₑ = 13), alors que l'eau pure y a pour pH 6,5. Enfin pH = pKₑ vaudrait 14 à 25 °C, valeur d'une solution très basique.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une solution d'acide chlorhydrique (acide fort) a pour pH 3,60 à 25 °C. Calculer sa concentration C, exprimée en 10⁻⁴ mol·L⁻¹, arrondie au dixième.",
+      "answerKey": {
+        "value": 2.5,
+        "tolerance": 0.1,
+        "unit": "10⁻⁴ mol·L⁻¹"
+      },
+      "explanation": "L'acide est fort et pH < 6 : C = 10⁻ᵖᴴ = 10^(−3,60) = 10⁻⁴ × 10^(0,40) = 2,5·10⁻⁴ mol·L⁻¹, soit 2,5 en unités de 10⁻⁴ mol·L⁻¹ ✓. On ne peut pas écrire 10^(−3,60) = 10⁻³ × 10^(0,60) : la partie décimale se retranche, ce qui donnerait 4,0·10⁻³, valeur seize fois trop grande.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une solution de soude (hydroxyde de sodium, base forte) a pour concentration 2,0·10⁻³ mol·L⁻¹ à 25 °C. Quel est son pH ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,70"
+        },
+        {
+          "id": "b",
+          "text": "10,70"
+        },
+        {
+          "id": "c",
+          "text": "11,00"
+        },
+        {
+          "id": "d",
+          "text": "11,30"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La soude est une base forte : [OH⁻] = C, donc pH = 14 + log C = 14 + log (2,0·10⁻³) = 14 − 2,70 = 11,30 ✓. La valeur 2,70 est −log C, relation de l'acide fort ; 10,70 retranche log 2,0 au lieu de l'ajouter ; 11,00 ignore le facteur 2,0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une solution d'acide éthanoïque (acide faible) et une solution d'acide chlorhydrique ont la même concentration, 1,0·10⁻² mol·L⁻¹. Laquelle a le pH le plus élevé, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'acide chlorhydrique : [H₃O⁺] y est plus grande, donc son pH est plus grand"
+        },
+        {
+          "id": "b",
+          "text": "Aucune : même quantité d'acide dans le même volume, donc même pH"
+        },
+        {
+          "id": "c",
+          "text": "L'acide éthanoïque : sa réaction avec l'eau est limitée, donc [H₃O⁺] y est inférieure à C"
+        },
+        {
+          "id": "d",
+          "text": "L'acide chlorhydrique : sa réaction avec l'eau est totale, donc il reste moins d'acide et le pH est plus grand"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Seul HCl réagit pratiquement totalement avec l'eau : [H₃O⁺] = C = 10⁻² mol·L⁻¹ et pH = 2,00. L'acide éthanoïque, acide faible, ne réagit qu'en partie : [H₃O⁺] < C, donc son pH est plus élevé (3,40 à la mesure) ✓. Une concentration [H₃O⁺] plus grande donne un pH plus petit, non plus grand. À concentration égale, le pH dépend aussi de la force de l'acide, pas seulement de la quantité dissoute. Enfin, une réaction totale ne rend pas l'acide moins acide : plus elle est avancée, plus il se forme d'ions H₃O⁺ et plus le pH est bas.",
+      "difficulty": 2
+    }
+  ]
+}

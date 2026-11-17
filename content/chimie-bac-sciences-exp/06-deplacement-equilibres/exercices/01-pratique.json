@@ -1,0 +1,140 @@
+{
+  "title": "⭐ Exercice : Premiers déplacements d'équilibre",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "À température constante, on augmente la pression d'un système gazeux fermé à l'équilibre. Pour lequel de ces équilibres cela ne déplace-t-il PAS l'équilibre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PCl₃(g) + Cl₂(g) ⇄ PCl₅(g)"
+        },
+        {
+          "id": "b",
+          "text": "N₂(g) + 3 H₂(g) ⇄ 2 NH₃(g)"
+        },
+        {
+          "id": "c",
+          "text": "CO(g) + H₂O(g) ⇄ CO₂(g) + H₂(g)"
+        },
+        {
+          "id": "d",
+          "text": "CH₄(g) + H₂O(g) ⇄ CO(g) + 3 H₂(g)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La pression ne déplace un équilibre que si la quantité de matière gazeuse n_g change dans la réaction. Pour CO + H₂O ⇄ CO₂ + H₂, il y a 2 mol de gaz de chaque côté : aucun déplacement ✓. Les trois autres équilibres comptent 2 mol puis 1 mol (formation de PCl₅), 4 mol puis 2 mol (formation de NH₃), 2 mol puis 4 mol (formation de CO et H₂) : la pression en déplace chacun, dans le sens qui diminue n_g.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On ajoute un catalyseur à un système fermé en équilibre chimique. Quel est son effet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il augmente le taux d'avancement final de la réaction directe"
+        },
+        {
+          "id": "b",
+          "text": "Il accélère les deux réactions sans modifier la composition"
+        },
+        {
+          "id": "c",
+          "text": "Il favorise la réaction directe, la seule à être accélérée"
+        },
+        {
+          "id": "d",
+          "text": "Il rend la réaction totale en supprimant la réaction inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un catalyseur accélère les deux réactions de la même façon : l'équilibre est atteint plus vite, avec la même composition et le même τ_f ✓. C'est un facteur cinétique, pas un facteur d'équilibre. Il n'augmente donc pas τ_f, ne favorise pas un sens plutôt que l'autre, et ne supprime pas la réaction inverse : une réaction limitée le reste.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une transformation endothermique est une transformation qui",
+      "options": [
+        {
+          "id": "a",
+          "text": "tend à augmenter la température du système où elle se produit"
+        },
+        {
+          "id": "b",
+          "text": "tend à diminuer la pression du système où elle se produit"
+        },
+        {
+          "id": "c",
+          "text": "ne modifie pas la température du système où elle se produit"
+        },
+        {
+          "id": "d",
+          "text": "tend à abaisser la température du système où elle se produit"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une transformation endothermique absorbe de la chaleur : elle tend à abaisser la température du système où elle se produit ✓. C'est la transformation exothermique qui tend à l'élever. Aucune des deux ne laisse la température indifférente, et la définition ne porte pas sur la pression.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "En solution aqueuse, l'équilibre I₂ + I⁻ ⇄ I₃⁻ est établi. On ajoute du thiosulfate de sodium, qui consomme le diiode I₂ par une autre réaction. Comment évolue la quantité d'ions I₃⁻ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle diminue : la réaction inverse est favorisée"
+        },
+        {
+          "id": "b",
+          "text": "Elle augmente : la réaction directe est favorisée"
+        },
+        {
+          "id": "c",
+          "text": "Elle reste constante : les ions thiosulfate ne figurent pas dans l'équation"
+        },
+        {
+          "id": "d",
+          "text": "Elle diminue puis revient à sa valeur initiale : le système annule la perturbation"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le thiosulfate fait disparaître I₂ par une réaction annexe : [I₂] diminue, et le système répond par la réaction qui forme I₂, la réaction inverse I₃⁻ → I₂ + I⁻. La quantité de I₃⁻ diminue ✓. La réaction directe consommerait encore I₂. Un constituant absent de l'équation agit quand même, par la réaction annexe. Enfin la réponse modère la variation sans l'annuler : I₃⁻ ne revient pas à sa quantité initiale.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On introduit 0,40 mol de N₂O₄(g) dans une enceinte fermée, à pression constante. À 60 °C, l'équilibre N₂O₄ ⇄ 2 NO₂ contient 0,44 mol de NO₂. Calculer le taux d'avancement final τ_f (sans unité, à 10⁻² près).",
+      "answerKey": {
+        "value": 0.55,
+        "tolerance": 0.005
+      },
+      "explanation": "Le coefficient de NO₂ vaut 2 : n(NO₂) = 2·x_f, donc x_f = 0,44/2 = 0,22 mol. N₂O₄ est le seul réactif : x_max = 0,40 mol. Donc τ_f = x_f / x_max = 0,22/0,40 = 0,55 ✓. Le résultat 1,1 vient de n(NO₂)/n₀ sans tenir compte du coefficient 2 ; la réaction est limitée, τ_f étant inférieur à 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour CO(g) + H₂O(g) ⇄ CO₂(g) + H₂(g), la constante K vaut 9,0 à 700 K et 1,4 à 1000 K. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Endothermique, car K diminue quand la température augmente"
+        },
+        {
+          "id": "b",
+          "text": "Athermique, car la quantité de gaz est la même des deux côtés"
+        },
+        {
+          "id": "c",
+          "text": "Aucune conclusion : la température n'est pas un facteur d'équilibre"
+        },
+        {
+          "id": "d",
+          "text": "Exothermique, car K diminue quand la température augmente"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "K diminue quand la température augmente : la hausse de température défavorise la réaction directe. Or une hausse de température fait se produire la réaction endothermique, donc la réaction directe est exothermique ✓. Conclure « endothermique » inverse le lien entre le sens de variation de K et le sens favorisé. Le même nombre de moles de gaz de chaque côté supprime l'effet de la pression, pas celui de la température ; et la variation de K montre justement que la température déplace cet équilibre.",
+      "difficulty": 2
+    }
+  ]
+}

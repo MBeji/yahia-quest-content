@@ -1,0 +1,132 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les stratèges de l'équilibre",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "L'estérification, athermique, est réalisée en chauffant le mélange. Quelle est la raison de ce chauffage ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Augmenter la constante d'équilibre K, donc le taux d'avancement final"
+        },
+        {
+          "id": "b",
+          "text": "Rendre la réaction totale en supprimant l'hydrolyse"
+        },
+        {
+          "id": "c",
+          "text": "Accélérer la réaction sans modifier le taux d'avancement final"
+        },
+        {
+          "id": "d",
+          "text": "Faire baisser la pression, ce qui favorise la formation de l'ester"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une réaction athermique ne fait pas varier la température : la température n'est pas un facteur d'équilibre et ne modifie pas τ_f ; elle ne modifie que la vitesse. On chauffe donc pour atteindre plus vite le même équilibre ✓. K ne dépend pas de la température pour une réaction athermique, la réaction reste limitée parce que l'hydrolyse se produit toujours, et la pression ne joue pas : le système ne contient pas de gaz.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On mélange 10,0 mL de solution de Fe³⁺ à 4,0·10⁻³ mol·L⁻¹ et 10,0 mL de solution de SCN⁻ à 4,0·10⁻³ mol·L⁻¹. À l'équilibre Fe³⁺ + SCN⁻ ⇄ FeSCN²⁺, on mesure [FeSCN²⁺] = 8,0·10⁻⁴ mol·L⁻¹. Calculer la constante K de l'équilibre, sans unité, avec deux chiffres significatifs.",
+      "answerKey": {
+        "value": 560,
+        "tolerance": 10
+      },
+      "explanation": "Chaque réactif : n = 4,0·10⁻³ × 10,0·10⁻³ = 4,0·10⁻⁵ mol, dans V = 20,0 mL. À l'équilibre, x_f = [FeSCN²⁺]·V = 8,0·10⁻⁴ × 20,0·10⁻³ = 1,6·10⁻⁵ mol. Il reste 4,0·10⁻⁵ − 1,6·10⁻⁵ = 2,4·10⁻⁵ mol de chaque réactif, soit [Fe³⁺] = [SCN⁻] = 1,2·10⁻³ mol·L⁻¹. K = 8,0·10⁻⁴ / (1,2·10⁻³)² = 8,0·10⁻⁴ / 1,44·10⁻⁶ ≈ 5,6·10², soit 560 ✓. Le résultat 78 s'obtient en oubliant que le mélange divise par 2 les concentrations initiales : 4,0·10⁻³ − 8,0·10⁻⁴ = 3,2·10⁻³ donnerait 8,0·10⁻⁴ / (3,2·10⁻³)² ≈ 78.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Pour la synthèse CO(g) + 2 H₂(g) ⇄ CH₃OH(g), on donne des valeurs fictives de τ_f, à partir d'un mélange stœchiométrique : 0,62 à 250 °C et 50 atm ; 0,78 à 250 °C et 100 atm ; 0,35 à 350 °C et 50 atm ; 0,52 à 350 °C et 100 atm. Quelles conclusions le tableau permet-il de tirer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La réaction directe est exothermique"
+        },
+        {
+          "id": "b",
+          "text": "Une hausse de pression favorise la réaction directe"
+        },
+        {
+          "id": "c",
+          "text": "Un catalyseur augmente le taux d'avancement final"
+        },
+        {
+          "id": "d",
+          "text": "La réaction directe est endothermique"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "À pression fixée, τ_f diminue quand la température augmente (0,62 puis 0,35 à 50 atm) : la réaction directe est exothermique ✓. À température fixée, τ_f augmente avec la pression (0,62 puis 0,78 à 250 °C) : la hausse de pression favorise la réaction directe ✓, ce qui concorde avec les 3 mol de gaz à gauche et 1 mol à droite. Le tableau ne comporte aucun catalyseur, qui de toute façon ne change pas τ_f. La conclusion « endothermique » est l'inverse de ce que montre la baisse de τ_f.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour Br₂(g) ⇄ 2 Br(g), endothermique dans le sens direct, on chauffe du dibrome à volume constant et l'on mesure τ_f = 0,30 à la température θ₁. On change la température et l'on mesure τ_f = 0,21 à la température θ₂. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "θ₂ est inférieure à θ₁"
+        },
+        {
+          "id": "b",
+          "text": "θ₂ est supérieure à θ₁"
+        },
+        {
+          "id": "c",
+          "text": "On ne peut rien dire sans connaître la quantité initiale de dibrome"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut rien dire sans connaître la pression"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La réaction directe est endothermique : sa hausse de température la favorise, donc τ_f croît avec la température. Un τ_f plus faible en θ₂ qu'en θ₁ signifie que θ₂ est inférieure à θ₁ ✓. L'inégalité inverse correspondrait à une réaction exothermique. La quantité initiale ne change pas le sens de variation de τ_f avec la température. Quant à la pression, elle ne sert pas ici : le volume est constant et la comparaison ne porte que sur la température.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour CO(g) + H₂O(g) ⇄ CO₂(g) + H₂(g), la constante vaut K = 4,0 à 800 K. On part de 1,00 mol de CO et de 1,00 mol de H₂O, sans produit. Calculer le taux d'avancement final τ_f, à 10⁻² près.",
+      "answerKey": {
+        "value": 0.67,
+        "tolerance": 0.005
+      },
+      "explanation": "Les coefficients valent 1 et il y a autant de moles de gaz de chaque côté : le volume se simplifie dans Π. Au tableau d'avancement, n(CO₂) = n(H₂) = x et n(CO) = n(H₂O) = 1,00 − x, donc K = x² / (1,00 − x)² = 4,0. En prenant la racine carrée, x / (1,00 − x) = 2,0, donc x = 2,0/3,0 = 0,667 mol. Comme x_max = 1,00 mol, τ_f = 0,67 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une réaction directe exothermique, on chauffe une solution aqueuse en équilibre, de volume pratiquement inchangé. Juste après le chauffage, avant toute évolution de la composition, comment se comparent la fonction des concentrations Π et la constante K ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Π < K"
+        },
+        {
+          "id": "b",
+          "text": "Π = K"
+        },
+        {
+          "id": "c",
+          "text": "Π > K"
+        },
+        {
+          "id": "d",
+          "text": "K n'a pas de valeur tant que le système n'a pas retrouvé l'équilibre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Juste après le chauffage, ni la composition ni le volume n'ont changé : les concentrations, donc Π, gardent leur valeur d'avant, égale à l'ancienne K. Mais K dépend de la température et, pour une réaction directe exothermique, elle a diminué : Π > K ✓. Le système évolue donc dans le sens inverse, celui de la réaction endothermique, ce que la loi de modération prévoit aussi. L'égalité Π = K vaut à l'équilibre, pas ici. Quant à K, elle est définie à toute température : seule sa valeur change.",
+      "difficulty": 3
+    }
+  ]
+}
