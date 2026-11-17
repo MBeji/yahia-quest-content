@@ -1,0 +1,112 @@
+{
+  "title": "Test de compréhension ⭐ : variation du pH au cours d'une réaction acide-base",
+  "questions": [
+    {
+      "prompt": "On dose de l'acide éthanoïque par de la soude à 25 °C. Quelle est la valeur du pH à l'équivalence ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "égal à 7"
+        },
+        {
+          "id": "b",
+          "text": "supérieur à 7"
+        },
+        {
+          "id": "c",
+          "text": "inférieur à 7"
+        },
+        {
+          "id": "d",
+          "text": "égal au pKₐ du couple"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À l'équivalence, la solution équivaut à de l'éthanoate de sodium dissous : l'ion Na⁺ est inerte et l'ion CH₃CO₂⁻ est une base faible, qui produit des ions OH⁻ avec l'eau, donc pH > 7 à 25 °C ✓. Le pH égal à 7 est celui d'un acide fort dosé par une base forte, dont le sel ne contient que des ions inertes. Le pH inférieur à 7 est celui d'une base faible dosée par un acide fort. Le pH égal au pKₐ se lit à la demi-équivalence, et non à l'équivalence.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le dosage d'une base faible par un acide fort, où lit-on le pKₐ du couple acide/base sur la courbe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "au pH mesuré à l'équivalence"
+        },
+        {
+          "id": "b",
+          "text": "au pH mesuré juste après l'équivalence"
+        },
+        {
+          "id": "c",
+          "text": "au pH mesuré à la demi-équivalence"
+        },
+        {
+          "id": "d",
+          "text": "au pH mesuré avant tout ajout d'acide"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "À la demi-équivalence, [base] = [acide conjugué], donc [H₃O⁺] = Kₐ et pH = pKₐ ✓. À l'équivalence, il ne reste plus de base : la solution est celle de l'acide faible formé, de pH inférieur à 7. Après l'équivalence, l'acide fort en excès impose le pH. Avant tout ajout, la solution ne contient que la base faible : son pH dépend de sa concentration et de son pKₐ, mais n'est pas égal au pKₐ.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "On dose 10,0 mL d'acide chlorhydrique à 0,100 mol·L⁻¹ par de la soude à 2,00·10⁻² mol·L⁻¹. Calculer le volume V_E de soude versé à l'équivalence, en mL, arrondi au dixième.",
+      "answerKey": {
+        "value": 50.0,
+        "tolerance": 0.1,
+        "unit": "mL"
+      },
+      "explanation": "À l'équivalence, n_A = n_B, soit C_A·V_A = C_B·V_E : V_E = C_A·V_A/C_B = 0,100 × 10,0/2,00·10⁻² = 50 mL, soit 50,0 mL au dixième ✓. La soude est cinq fois moins concentrée que l'acide : il en faut cinq fois plus que le volume d'acide. Inverser le rapport des concentrations donnerait 2,0 mL, volume cinq fois trop petit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On dose de l'acide nitrique (acide fort) par de la soude. Zones de virage : bleu de bromophénol 3,0 à 4,6 ; bleu de bromothymol 6,0 à 7,6 ; phénolphtaléine 8,2 à 10,0 ; rouge de méthyle 4,8 à 6,0. Quel indicateur est convenable ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bleu de bromothymol"
+        },
+        {
+          "id": "b",
+          "text": "Bleu de bromophénol"
+        },
+        {
+          "id": "c",
+          "text": "Phénolphtaléine"
+        },
+        {
+          "id": "d",
+          "text": "Rouge de méthyle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour un acide fort dosé par une base forte, pH_E = 7 à 25 °C : l'indicateur convenable a une zone de virage qui contient 7, ce qui est le cas du bleu de bromothymol (6,0 à 7,6) ✓. Le bleu de bromophénol (3,0 à 4,6) et le rouge de méthyle (4,8 à 6,0) ont fini de virer avant l'équivalence. La phénolphtaléine (8,2 à 10,0) ne vire qu'après l'équivalence, quand la soude est en excès.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel mélange, réalisé avec des quantités de matière du même ordre dans un même volume d'eau, est une solution tampon ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acide chlorhydrique et chlorure d'ammonium"
+        },
+        {
+          "id": "b",
+          "text": "Soude et éthanoate de sodium"
+        },
+        {
+          "id": "c",
+          "text": "Ammoniac et chlorure de sodium"
+        },
+        {
+          "id": "d",
+          "text": "Acide éthanoïque et éthanoate de sodium"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une solution tampon associe un acide faible et sa base conjuguée : l'acide éthanoïque et l'ion éthanoate du sel (le sodium est inerte) forment le couple CH₃CO₂H/CH₃CO₂⁻ ✓. L'acide chlorhydrique est un acide fort : avec NH₄⁺, acide faible, il n'y a aucun couple acide faible/base conjuguée. La soude est une base forte et l'éthanoate une base : il manque l'acide du couple. L'ammoniac est une base faible, mais le chlorure de sodium n'apporte pas son acide conjugué NH₄⁺.",
+      "difficulty": 2
+    }
+  ]
+}

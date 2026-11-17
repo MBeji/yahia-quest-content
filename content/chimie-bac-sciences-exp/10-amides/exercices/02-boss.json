@@ -1,0 +1,139 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des amides",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "On chauffe du N-méthylbutanamide, CH₃–CH₂–CH₂–CO–NH–CH₃, avec de l'acide sulfurique dilué. Quels produits obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'acide butanoïque et l'ion méthylammonium CH₃–NH₃⁺"
+        },
+        {
+          "id": "b",
+          "text": "L'ion butanoate et la méthylamine CH₃–NH₂"
+        },
+        {
+          "id": "c",
+          "text": "L'acide butanoïque et l'ion ammonium NH₄⁺"
+        },
+        {
+          "id": "d",
+          "text": "L'acide méthanoïque et l'ion butylammonium C₄H₉–NH₃⁺"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En milieu acide, un amide N-substitué donne l'acide carboxylique de même chaîne acyle et l'ion alkylammonium du groupe porté par l'azote : CH₃–CH₂–CH₂–CO–NH–CH₃ + H₃O⁺ ⟶ CH₃–CH₂–CH₂–CO₂H + CH₃–NH₃⁺ ✓. L'ion butanoate et la méthylamine sont les produits du milieu basique. L'ion ammonium NH₄⁺ correspond à un amide non substitué. Enfin l'acide méthanoïque et l'ion butylammonium échangent les rôles : ils viendraient d'un amide de chaîne acyle à un carbone, le N-butylméthanamide.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On veut préparer le 3-méthylbutanamide par chauffage d'un sel. Quel sel faut-il choisir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le 2-méthylbutanoate d'ammonium, CH₃–CH₂–CH(CH₃)–COO⁻,NH₄⁺"
+        },
+        {
+          "id": "b",
+          "text": "Le 3-méthylbutanoate de méthylammonium, (CH₃)₂CH–CH₂–COO⁻,CH₃NH₃⁺"
+        },
+        {
+          "id": "c",
+          "text": "Le 2-méthylbutanoate de méthylammonium, CH₃–CH₂–CH(CH₃)–COO⁻,CH₃NH₃⁺"
+        },
+        {
+          "id": "d",
+          "text": "Le 3-méthylbutanoate d'ammonium, (CH₃)₂CH–CH₂–COO⁻,NH₄⁺"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'amide non substitué se prépare en chauffant le carboxylate d'ammonium de même chaîne : (CH₃)₂CH–CH₂–COO⁻,NH₄⁺ ⟶ (CH₃)₂CH–CH₂–CO–NH₂ + H₂O ✓. Le 2-méthylbutanoate d'ammonium a le groupe méthyle sur un autre carbone et donnerait le 2-méthylbutanamide. Le sel de méthylammonium porte un groupe méthyle sur l'azote : il ne peut pas conduire à l'amide non substitué R–CO–NH₂, que seul le sel d'ammonium NH₄⁺ permet de préparer dans ce chapitre. Le 2-méthylbutanoate de méthylammonium cumule les deux erreurs : méthyle sur le mauvais carbone et groupe méthyle sur l'azote.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un amide aliphatique saturé, de formule CₙH₂ₙ₊₁ON, a pour masse molaire 101 g·mol⁻¹ (C 12, H 1, N 14, O 16 g·mol⁻¹). Calculer son pourcentage massique de carbone, en %, arrondi au dixième.",
+      "answerKey": {
+        "value": 59.4,
+        "tolerance": 0.1,
+        "unit": "%"
+      },
+      "explanation": "La masse molaire vaut M = 14n + 31, donc n = (101 − 31)/14 = 5 : l'amide est C₅H₁₁ON. Le carbone représente 5 × 12 = 60 g sur 101 g, soit 60/101 = 0,594, donc 59,4 % ✓. Contrôle : 60 + 11 + 16 + 14 = 101.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels composés sont des amides de formule brute C₄H₉ON ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CH₃–CH₂–CH₂–CO–NH₂"
+        },
+        {
+          "id": "b",
+          "text": "CH₃–CO–N(CH₃)–CH₃"
+        },
+        {
+          "id": "c",
+          "text": "CH₃–CH₂–CO–NH–CH₃"
+        },
+        {
+          "id": "d",
+          "text": "CH₃–CH₂–CO–N(CH₃)–CH₃"
+        },
+        {
+          "id": "e",
+          "text": "CH₃–CH₂–CH₂–COO⁻,NH₄⁺"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "CH₃–CH₂–CH₂–CO–NH₂ a 4 carbones et 9 hydrogènes ✓, et son C=O est lié à l'azote. CH₃–CO–N(CH₃)–CH₃ (2 + 2 carbones, 3 + 6 hydrogènes) ✓. CH₃–CH₂–CO–NH–CH₃ (3 + 1 carbones, 5 + 1 + 3 hydrogènes) ✓. CH₃–CH₂–CO–N(CH₃)–CH₃ est bien un amide, mais il a 5 carbones : C₅H₁₁ON. Le butanoate d'ammonium a 4 carbones mais pour formule C₄H₁₁O₂N ; c'est un sel, sans C=O lié à un azote.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un amide N-monosubstitué A a pour masse molaire 73 g·mol⁻¹. Son hydrolyse basique à chaud libère la méthylamine CH₃–NH₂ et un carboxylate. Quel est l'amide A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N-éthylméthanamide"
+        },
+        {
+          "id": "b",
+          "text": "N-méthyléthanamide"
+        },
+        {
+          "id": "c",
+          "text": "Propanamide"
+        },
+        {
+          "id": "d",
+          "text": "N-méthylpropanamide"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "M = 73 donne n = (73 − 31)/14 = 3, soit C₃H₇ON, formule que portent trois des composés proposés. L'amine libérée est CH₃–NH₂ : le groupe porté par l'azote est un méthyle, et il reste 2 carbones pour la chaîne acyle, soit CH₃–CO–NH–CH₃, le N-méthyléthanamide ✓ (CH₃–CO–NH–CH₃ + OH⁻ ⟶ CH₃–CO₂⁻ + CH₃–NH₂). Le N-éthylméthanamide libérerait l'éthylamine, le propanamide libérerait de l'ammoniac. Le N-méthylpropanamide libère aussi la méthylamine, mais sa masse molaire vaut 87 g·mol⁻¹, pas 73.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une hydrolyse basique, supposée totale, transforme entièrement 3,65 g de N-méthyléthanamide, CH₃–CO–NH–CH₃. Calculer la masse de méthylamine CH₃–NH₂ (M = 31 g·mol⁻¹) qui apparaît, en g, arrondie au centième (C 12, H 1, N 14, O 16 g·mol⁻¹).",
+      "answerKey": {
+        "value": 1.55,
+        "tolerance": 0.01,
+        "unit": "g"
+      },
+      "explanation": "La formule de l'amide est C₃H₇ON, de masse molaire 3 × 12 + 7 + 14 + 16 = 73 g·mol⁻¹. La quantité d'amide vaut 3,65/73 = 0,0500 mol. L'équation CH₃–CO–NH–CH₃ + OH⁻ ⟶ CH₃–CO₂⁻ + CH₃–NH₂ a tous ses coefficients égaux à 1 : il se forme 0,0500 mol de méthylamine, de masse 0,0500 × 31 = 1,55 g ✓.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : étude de la pile Daniell",
+  "questions": [
+    {
+      "prompt": "Dans la pile Daniell qui débite, que devient la lame de zinc ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sa masse diminue : le zinc s'oxyde en Zn²⁺"
+        },
+        {
+          "id": "b",
+          "text": "Sa masse augmente : le zinc se dépose"
+        },
+        {
+          "id": "c",
+          "text": "Sa masse reste constante : elle ne réagit pas"
+        },
+        {
+          "id": "d",
+          "text": "Elle se recouvre de cuivre : Cu²⁺ se réduit dessus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "À l'anode, Zn → Zn²⁺ + 2 e⁻ : le zinc passe en solution et sa lame s'amincit ✓. Un dépôt de zinc supposerait une réduction de Zn²⁺, qui n'a pas lieu à cette électrode. La lame n'est pas inerte : elle fournit les électrons de la pile. Le dépôt de cuivre sur le zinc est celui d'un transfert direct ; dans la pile, les électrons passent par le fil et le cuivre se dépose sur la lame de cuivre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle affirmation décrit correctement le courant et les électrons dans le fil d'une pile qui débite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le courant va de la borne − vers la borne +, les électrons font de même"
+        },
+        {
+          "id": "b",
+          "text": "Le courant va de la borne + vers la borne −, les électrons font l'inverse"
+        },
+        {
+          "id": "c",
+          "text": "Le courant et les électrons vont tous deux de la borne + vers la borne −"
+        },
+        {
+          "id": "d",
+          "text": "Le courant va de la borne − vers la borne +, les électrons font l'inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par convention, le courant sort de la pile par la borne + et rentre par la borne −, alors que les électrons, de charge négative, partent de la borne − (l'anode) vers la borne + (la cathode) : les deux sens sont opposés ✓. Dire que le courant va de la borne − vers la borne + oublie que le courant sort par le pôle +. Faire circuler les électrons de la borne + vers la borne − les ferait partir de la cathode, où ils sont consommés.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est le rôle du pont salin d'une pile ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "transporter les électrons d'une demi-pile à l'autre"
+        },
+        {
+          "id": "b",
+          "text": "apporter l'énergie qui fait débiter la pile"
+        },
+        {
+          "id": "c",
+          "text": "oxyder le métal d'une des deux électrodes"
+        },
+        {
+          "id": "d",
+          "text": "laisser passer les ions d'un compartiment à l'autre"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le pont salin est un conducteur ionique : K⁺ et Cl⁻ y migrent d'un compartiment à l'autre, ce qui ferme le circuit et garde chaque solution neutre ✓. Les électrons ne circulent que dans les fils et les électrodes, jamais dans le pont. L'énergie provient de la réaction redox spontanée, non du pont. Le pont n'apporte aucun couple redox et n'attaque aucune électrode.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On donne le symbole Co | Co²⁺ || Fe²⁺ | Fe. Quelle est l'équation associée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Co + Fe²⁺ ⇄ Co²⁺ + Fe"
+        },
+        {
+          "id": "b",
+          "text": "Fe + Co²⁺ ⇄ Fe²⁺ + Co"
+        },
+        {
+          "id": "c",
+          "text": "Co²⁺ + Fe²⁺ ⇄ Co + Fe"
+        },
+        {
+          "id": "d",
+          "text": "Co + Fe ⇄ Co²⁺ + Fe²⁺"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le symbole se lit de gauche à droite : le réducteur de la demi-pile de gauche, Co, et l'oxydant de celle de droite, Fe²⁺, forment les réactifs ; on obtient Co + Fe²⁺ ⇄ Co²⁺ + Fe ✓. Fe + Co²⁺ ⇄ Fe²⁺ + Co est écrite dans l'autre sens, ce qui contredit la convention de l'équation associée. Co²⁺ + Fe²⁺ ⇄ Co + Fe fait réagir deux oxydants entre eux et Co + Fe ⇄ Co²⁺ + Fe²⁺ deux réducteurs : c'est impossible.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour la pile Zn | Zn²⁺ || Cu²⁺ | Cu, le voltmètre dont la borne COM touche le zinc affiche +1,10 V. Quelle affirmation est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le zinc est la borne +, et la réaction directe a lieu"
+        },
+        {
+          "id": "b",
+          "text": "Le cuivre est la borne +, et la réaction inverse a lieu"
+        },
+        {
+          "id": "c",
+          "text": "Le cuivre est la borne +, et la réaction directe a lieu"
+        },
+        {
+          "id": "d",
+          "text": "Le zinc est la borne +, et la réaction inverse a lieu"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "COM est sur la borne de gauche : E = V_Cu − V_Zn = +1,10 V > 0, donc V_Cu > V_Zn ✓ : le cuivre est la borne +, et E > 0 correspond à la réaction directe de l'équation associée, Zn + Cu²⁺ → Zn²⁺ + Cu. Placer la borne + sur le zinc reviendrait à lire E < 0. Une réaction inverse irait de pair avec un E négatif.",
+      "difficulty": 2
+    }
+  ]
+}
