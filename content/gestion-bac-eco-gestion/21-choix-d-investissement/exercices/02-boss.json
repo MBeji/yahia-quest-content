@@ -1,0 +1,112 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur des investissements",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La Briqueterie Chérif obtient un flux net constant de 62 000 D par an sur 5 ans, pour un investissement de 200 000 D. Taux de 9 % ; coefficient d'actualisation de la série : 3,889651. Quelle VAN, en D ? (précision de 2 D)",
+      "answerKey": {
+        "value": 41158.36,
+        "unit": "D",
+        "tolerance": 2
+      },
+      "explanation": "Flux actualisés : 62 000 × 3,889651 = 241 158,36 D. VAN : 241 158,36 − 200 000 = 41 158,36 D, positive : projet rentable.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur le délai de récupération sont exactes ? (Coche les bonnes réponses, il peut y en avoir plusieurs.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il se calcule sans actualiser les flux nets"
+        },
+        {
+          "id": "b",
+          "text": "Un projet dépassant la norme de l'entreprise est rejeté"
+        },
+        {
+          "id": "c",
+          "text": "Entre deux projets, on préfère le délai le plus long"
+        },
+        {
+          "id": "d",
+          "text": "À cash-flow constant, on divise le coût par le cash-flow"
+        },
+        {
+          "id": "e",
+          "text": "Il tient compte des flux postérieurs à la récupération"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Le délai se calcule sans actualisation, sert de critère de rejet quand il dépasse la norme et se calcule par une simple division à cash-flow constant. On choisit le plus court, pas le plus long, et les flux qui suivent la récupération ne comptent pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une tannerie de Moknine installe un séchoir de 360 000 D hors taxe, amorti en linéaire sur 6 ans ; le projet dure 6 ans, sans valeur de revente. Il apporte 210 000 D de ventes supplémentaires par an, avec des dépenses supplémentaires égales à 40 % de ce chiffre. Impôt de 30 %, taux de 8 % ; coefficient de la série sur 6 ans : 4,622880. Quelle VAN, en D ? (précision de 5 D)",
+      "answerKey": {
+        "value": 130949.86,
+        "unit": "D",
+        "tolerance": 5
+      },
+      "explanation": "Dotation : 360 000 ÷ 6 = 60 000 D. Dépenses : 210 000 × 0,40 = 84 000 D. Résultat avant impôts : 210 000 − 84 000 − 60 000 = 66 000 D ; impôt : 19 800 D ; résultat net : 46 200 D. Flux net : 46 200 + 60 000 = 106 200 D. Flux actualisés : 106 200 × 4,622880 = 490 949,86 D. VAN : 490 949,86 − 360 000 = 130 949,86 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un tour acheté 96 000 D hors taxe, amorti en linéaire sur 12 ans, est utilisé 4 ans puis revendu à sa valeur comptable nette. Il rapporte 30 000 D nets par an pendant ces 4 ans. À 10 % (coefficient de la série : 3,169865 ; 1,10⁻⁴ = 0,683013), quelle VAN, en D ? (précision de 2 D)",
+      "answerKey": {
+        "value": 42808.78,
+        "unit": "D",
+        "tolerance": 2
+      },
+      "explanation": "Dotation : 96 000 ÷ 12 = 8 000 D ; valeur résiduelle : 96 000 − 4 × 8 000 = 64 000 D. Flux actualisés : 30 000 × 3,169865 = 95 095,95 D. Revente actualisée : 64 000 × 0,683013 = 43 712,83 D. VAN : 95 095,95 + 43 712,83 − 96 000 = 42 808,78 D, positive : projet rentable.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Deux projets coûtent 100 000 D chacun. Projet P : flux de 60 000, 50 000 puis 5 000 D. Projet Q : 30 000, 30 000, 30 000, 40 000 puis 80 000 D. Que retient le critère du délai, et que néglige-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Q, à 3 ans et 90 jours contre 1 an et 288 jours ; il ignore les flux qui suivent la récupération"
+        },
+        {
+          "id": "b",
+          "text": "P, à 1 an et 288 jours contre 3 ans et 90 jours ; il ignore les flux suivant la récupération"
+        },
+        {
+          "id": "c",
+          "text": "P, à 1 an et 288 jours contre 3 ans et 90 jours ; il tient déjà compte de l'actualisation"
+        },
+        {
+          "id": "d",
+          "text": "Q, à 3 ans et 90 jours contre 1 an et 288 jours ; il tient déjà compte de l'actualisation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour P : le cumul de 60 000 D après un an laisse 40 000 D à couvrir, soit 40 000 × 360 ÷ 50 000 = 288 jours. Pour Q : le cumul atteint 90 000 D en 3 ans, puis 10 000 × 360 ÷ 40 000 = 90 jours. P est plus court. Le critère retient le délai le plus court, mais il n'actualise pas et ne regarde pas les flux suivant la récupération.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une conserverie de Tabarka investit 210 000 D. Flux annuels prévus : 52 000, 61 000, 68 000, 72 000 puis 90 000 D. Combien de jours de la quatrième année faut-il pour couvrir le coût, en comptant 360 jours par an ?",
+      "answerKey": {
+        "value": 145,
+        "unit": "jours"
+      },
+      "explanation": "Cumul après 3 ans : 52 000 + 61 000 + 68 000 = 181 000 D. Reste à couvrir : 210 000 − 181 000 = 29 000 D. Jours : 29 000 × 360 ÷ 72 000 = 145. Le délai est de 3 ans et 145 jours.",
+      "difficulty": 3
+    }
+  ]
+}

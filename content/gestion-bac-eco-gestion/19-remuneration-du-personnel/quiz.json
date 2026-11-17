@@ -1,0 +1,154 @@
+{
+  "title": "Test de compréhension ⭐ : La rémunération du personnel",
+  "questions": [
+    {
+      "prompt": "Chez un fabricant de meubles de Mahdia, la paie du mois figure parmi les dépenses. Que représente la rémunération du personnel pour l'entreprise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un simple revenu, source de satisfactions pour elle"
+        },
+        {
+          "id": "b",
+          "text": "Une charge importante, mais aussi un outil stratégique"
+        },
+        {
+          "id": "c",
+          "text": "Une dépense facultative, sans effet sur la productivité"
+        },
+        {
+          "id": "d",
+          "text": "Une charge pure, à réduire au plus bas, sans rôle de motivation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour l'entreprise, la rémunération pèse sur les coûts (de 30 % à 70 % selon le manuel) et sert aussi à motiver et à garder le personnel. Le revenu source de satisfactions est le point de vue du salarié ; elle n'est pas facultative, et la voir comme une charge pure oublie son rôle d'outil stratégique.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de lecture d'un bulletin de paie, du haut vers le bas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additionner tous les éléments de la paie : on obtient le brut"
+        },
+        {
+          "id": "b",
+          "text": "Enlever la part sociale du salarié : on obtient le net imposable"
+        },
+        {
+          "id": "c",
+          "text": "Ôter l'impôt retenu selon le barème, l'IRPP"
+        },
+        {
+          "id": "d",
+          "text": "Ôter les retenues facultatives : reste le net à payer"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Le brut se forme d'abord par addition. La cotisation sociale, calculée sur le brut, donne le net imposable ; c'est sur ce net que l'on retranche ensuite l'IRPP, puis les retenues facultatives, ce qui donne le net à payer.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque forme de salaire à la situation qui lui correspond.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Salaire au temps"
+        },
+        {
+          "id": "l2",
+          "text": "Salaire au rendement"
+        },
+        {
+          "id": "l3",
+          "text": "Salaire mixte"
+        },
+        {
+          "id": "r1",
+          "text": "Un caissier payé selon ses heures de présence"
+        },
+        {
+          "id": "r2",
+          "text": "Une couturière à domicile payée à la pièce livrée"
+        },
+        {
+          "id": "r3",
+          "text": "Un vendeur avec un fixe et une commission sur ses ventes"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Le caissier est payé au temps (heures × taux horaire) ; la couturière au rendement (pièces × taux par pièce) ; le vendeur au mixte, qui combine un fixe et une part liée aux résultats.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Pâtisserie Mabrouk verse à une employée un salaire de base de 640 D, une prime de rendement de 55 D, une indemnité de panier de 24 D et 61 D d'heures supplémentaires. Quel est son salaire brut, en D ?",
+      "answerKey": {
+        "value": 780,
+        "unit": "D"
+      },
+      "explanation": "Le brut additionne la base, les heures supplémentaires, les primes et les indemnités : 640 + 61 + 55 + 24 = 780 D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quels éléments entrent dans la masse salariale d'une entreprise ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les salaires nets versés aux salariés, sans charge en plus"
+        },
+        {
+          "id": "b",
+          "text": "Les salaires bruts seuls, les charges de l'employeur étant exclues"
+        },
+        {
+          "id": "c",
+          "text": "Les salaires nets, plus l'IRPP retenu sur les salariés"
+        },
+        {
+          "id": "d",
+          "text": "Les bruts plus les charges patronales sociales et fiscales"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La masse salariale, ou coût de la main-d'œuvre, additionne les rémunérations brutes et les charges (CNSS, TFP, FOPROLOS) que l'employeur supporte en plus. Les nets omettent les cotisations et l'impôt déjà compris dans le brut ; les bruts seuls omettent les charges patronales.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans l'atelier de reliure de M. Hédi, un compagnon a un salaire brut de 900 D et la cotisation salariale est de 8,47 %. Quel est son salaire net imposable, en D ?",
+      "answerKey": {
+        "value": 823.77,
+        "tolerance": 0.01,
+        "unit": "D"
+      },
+      "explanation": "La cotisation se calcule sur le brut : 900 × 0,0847 = 76,23 D. Net imposable : 900 − 76,23 = 823,77 D.",
+      "difficulty": 2
+    }
+  ]
+}

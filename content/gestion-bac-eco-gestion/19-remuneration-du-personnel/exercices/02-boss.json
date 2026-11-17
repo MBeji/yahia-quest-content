@@ -1,0 +1,111 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur de la paie",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un chef de rayon de la Supérette Amel a un salaire brut de 760 D. La cotisation salariale est de 8,47 %, l'IRPP de 45,5 D, et un prêt est remboursé par une retenue de 70 D. Quel est son net à payer, en D ?",
+      "answerKey": {
+        "value": 580.128,
+        "tolerance": 0.005,
+        "unit": "D"
+      },
+      "explanation": "Cotisation : 760 × 0,0847 = 64,372 D, donc net imposable 695,628 D. Puis 695,628 − 45,5 − 70 = 580,128 D à payer.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un commercial de Pharma-Sahloul perçoit un fixe de 400 D et 3 % de son chiffre d'affaires. Si la commission dépasse 600 D, il reçoit en plus une prime égale à 10 % de cette commission. Ce mois-ci, son chiffre d'affaires est de 25 000 D. Quel est son salaire brut, en D ?",
+      "answerKey": {
+        "value": 1225,
+        "unit": "D"
+      },
+      "explanation": "Commission : 25 000 × 0,03 = 750 D, supérieure à 600 D, donc une prime de 750 × 0,10 = 75 D. Salaire brut : 400 + 750 + 75 = 1 225 D. La prime porte ici sur toute la commission, comme l'énoncé le précise.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "À la Brasserie du Cap Bon, un ouvrier fait 160 heures à 2,5 D l'heure. Il touche 2 D d'indemnité d'assiduité par jour de présence, sur 22 jours, et une prime d'ancienneté égale à 3 % de son salaire de base. Quel est son salaire brut, en D ?",
+      "answerKey": {
+        "value": 456,
+        "unit": "D"
+      },
+      "explanation": "Base : 160 × 2,5 = 400 D. Assiduité : 22 × 2 = 44 D. Ancienneté : 400 × 0,03 = 12 D. Salaire brut : 400 + 44 + 12 = 456 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour 14 heures supplémentaires au régime de 48 heures, avec un taux horaire de 2,8 D, une élève écrit 14 × 2,8 × 0,75 = 29,4 D. Quelle est son erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle n'a compté que la majoration, sans l'heure elle-même"
+        },
+        {
+          "id": "b",
+          "text": "Elle a employé le régime de 40 heures au lieu de celui de 48"
+        },
+        {
+          "id": "c",
+          "text": "Elle a oublié de retrancher la cotisation salariale du brut"
+        },
+        {
+          "id": "d",
+          "text": "Elle a oublié d'ajouter la prime d'ancienneté du salarié"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une heure supplémentaire est payée en entier plus sa majoration de 75 % : le coefficient est 1,75, d'où 14 × 2,8 × 1,75 = 68,6 D. Le coefficient 0,75 ne donne que la majoration. Les cotisations et les primes n'ont rien à voir avec ce calcul.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les salaires de janvier de la Cartonnerie Wafa s'élèvent à 3 200 D par mois. Une hausse de 1,8 % intervient au 1er avril, puis une de 2,5 % au 1er septembre, calculée sur le salaire alors en vigueur. Quelle est la masse salariale brute de l'année, en D ?",
+      "answerKey": {
+        "value": 39244.16,
+        "tolerance": 0.05,
+        "unit": "D"
+      },
+      "explanation": "Janvier à mars : 3 200 × 3 = 9 600 D. Avril à août : 3 257,6 × 5 = 16 288 D. Septembre à décembre : 3 257,6 × 1,025 = 3 339,04 D, soit × 4 = 13 356,16 D. Total : 9 600 + 16 288 + 13 356,16 = 39 244,16 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la masse salariale d'une année sont exactes ? (Sélectionne toutes les bonnes réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une hausse accordée au 1er juillet ne pèse que sur 6 mois de l'année"
+        },
+        {
+          "id": "b",
+          "text": "Une promotion augmente la masse à partir de sa date d'effet"
+        },
+        {
+          "id": "c",
+          "text": "Un départ à la retraite remplacé par une recrue moins payée fait baisser la masse"
+        },
+        {
+          "id": "d",
+          "text": "Deux hausses successives de 2 % puis 1 % font exactement +3 % sur le niveau des salaires"
+        },
+        {
+          "id": "e",
+          "text": "Une embauche au 1er juillet compte pour 12 mois de salaire"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Une hausse du 1er juillet vaut pour juillet à décembre seulement, soit 6 mois ; une promotion compte à partir de sa date ; remplacer un salaire élevé par un plus bas réduit la masse. Une embauche du 1er juillet ne peut pas compter sur 12 mois, puisqu'elle n'existe pas avant juillet. Deux hausses successives se multiplient : 1,02 × 1,01 = 1,0302, soit +3,02 % et non 3 %.",
+      "difficulty": 3
+    }
+  ]
+}

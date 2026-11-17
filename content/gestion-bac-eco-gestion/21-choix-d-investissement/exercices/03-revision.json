@@ -1,0 +1,163 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Investir, de la CAF à la décision",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque symbole ou terme de la formule de la VAN à sa signification.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "I₀"
+        },
+        {
+          "id": "l2",
+          "text": "i"
+        },
+        {
+          "id": "l3",
+          "text": "p"
+        },
+        {
+          "id": "l4",
+          "text": "Flux net"
+        },
+        {
+          "id": "r1",
+          "text": "Investissement initial, versé à la date zéro"
+        },
+        {
+          "id": "r2",
+          "text": "Taux d'actualisation retenu par l'entreprise"
+        },
+        {
+          "id": "r3",
+          "text": "Durée du projet exprimée en années"
+        },
+        {
+          "id": "r4",
+          "text": "Résultat net d'impôts augmenté des dotations"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "I₀ est la dépense initiale, i le taux qui permet d'actualiser, p le nombre d'années du projet. Le flux net de chaque année est le résultat net d'impôts auquel on rajoute les dotations.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une scierie de Jendouba achète une scie à 150 000 D hors taxe, amortie en linéaire sur 10 ans, et la revend à sa valeur comptable nette après 6 ans de service. Quelle valeur de revente, en D ?",
+      "answerKey": {
+        "value": 60000,
+        "unit": "D"
+      },
+      "explanation": "Dotation annuelle : 150 000 ÷ 10 = 15 000 D. Amortissements pratiqués en 6 ans : 90 000 D. Valeur comptable nette : 150 000 − 90 000 = 60 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une société paie 240 000 D de matériel ; chaque année, le même cash-flow de 64 000 D s'ajoute à sa trésorerie. Après combien de mois a-t-elle récupéré le coût ?",
+      "answerKey": {
+        "value": 45,
+        "unit": "mois",
+        "tolerance": 0.5
+      },
+      "explanation": "DRCI = 240 000 ÷ 64 000 = 3,75 ans, soit 3,75 × 12 = 45 mois (3 ans et 9 mois).",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes du calcul d'un délai de récupération à cash-flow variable.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repérer l'année P dont le cumul reste sous le coût, la suivante le dépassant"
+        },
+        {
+          "id": "b",
+          "text": "Calculer les flux cumulés année après année"
+        },
+        {
+          "id": "c",
+          "text": "Multiplier cet écart par 360, puis diviser par le flux de l'année suivante"
+        },
+        {
+          "id": "d",
+          "text": "Calculer l'écart entre le coût et le cumul de l'année P"
+        },
+        {
+          "id": "e",
+          "text": "Ajouter les jours obtenus à P années pour exprimer le délai"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "a",
+          "d",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "On cumule les flux, on repère l'année où le coût est franchi, on mesure ce qui manque au cumul de l'année précédente, on convertit cet écart en jours avec le flux de l'année suivante, puis on l'ajoute aux années pleines.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi actualise-t-on les flux avant de les comparer au coût initial ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce qu'un flux lointain doit être majoré pour compenser l'attente"
+        },
+        {
+          "id": "b",
+          "text": "Pour obtenir le délai de récupération du capital investi"
+        },
+        {
+          "id": "c",
+          "text": "Parce qu'un dinar reçu plus tard vaut moins qu'un dinar immédiat"
+        },
+        {
+          "id": "d",
+          "text": "Parce que les recettes futures sont certaines, contrairement au coût"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les flux tombent à des dates différentes de celle de l'achat : tant qu'ils ne sont pas ramenés à la même date, on ne peut ni les additionner ni les comparer au coût. L'actualisation diminue les flux lointains, elle ne les majore pas ; le délai de récupération se calcule justement sans actualiser ; et ce sont les recettes qui sont incertaines, pas le coût.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un projet de 50 000 D rapportera 30 000 D dans un an puis 28 000 D dans deux ans. Au taux de 12 %, quelle est la VAN, en D ? (précision de 1 D)",
+      "answerKey": {
+        "value": -892.86,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Premier flux : 30 000 × 1,12⁻¹ = 26 785,71 D. Second flux : 28 000 × 1,12⁻² = 22 321,43 D. Total actualisé : 49 107,14 D. VAN : 49 107,14 − 50 000 = −892,86 D, négative : projet non rentable.",
+      "difficulty": 2
+    }
+  ]
+}

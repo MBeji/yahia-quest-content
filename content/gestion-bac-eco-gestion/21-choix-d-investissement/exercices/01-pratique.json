@@ -1,0 +1,152 @@
+{
+  "title": "⭐ Exercice : Premiers pas — flux, actualisation et délai",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "short_answer",
+      "prompt": "Comment appelle-t-on le temps au bout duquel les flux nets cumulés, non actualisés, couvrent le coût d'un projet ?",
+      "answerKey": {
+        "text": "délai de récupération"
+      },
+      "explanation": "C'est le délai de récupération du capital investi (DRCI) : on cherche à quel moment les flux nets cumulés couvrent le coût de l'investissement, sans les actualiser.",
+      "difficulty": 1,
+      "acceptedAnswers": [
+        "le délai de récupération",
+        "DRCI",
+        "le DRCI",
+        "délai de récupération du capital investi",
+        "durée de récupération",
+        "délai de récupération du capital"
+      ]
+    },
+    {
+      "prompt": "Une société de Nabeul remplace ses presses usées par des modèles identiques, sans produire davantage. Quel objectif poursuit cet investissement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accroître sa capacité de production"
+        },
+        {
+          "id": "b",
+          "text": "Améliorer sa productivité grâce à une technique nouvelle"
+        },
+        {
+          "id": "c",
+          "text": "Gagner de nouvelles parts de marché à l'export"
+        },
+        {
+          "id": "d",
+          "text": "Renouveler ses équipements"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Des machines identiques qui remplacent des machines usées ne changent ni la capacité ni la technique : c'est un investissement de renouvellement. On accroît la capacité quand on produit plus, on améliore la productivité quand on produit mieux avec les mêmes moyens.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une usine de Kasserine achète une presse à 128 000 D hors taxe, plus 8 000 D hors taxe d'installation, avec une TVA de 18 %. Amortissement linéaire sur 8 ans. Quelle dotation annuelle, en D ?",
+      "answerKey": {
+        "value": 17000,
+        "unit": "D"
+      },
+      "explanation": "Le coût retenu est hors taxe, installation comprise : 128 000 + 8 000 = 136 000 D. Dotation : 136 000 ÷ 8 = 17 000 D. La TVA n'entre pas dans le coût amortissable.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'Imprimerie Gasmi acquiert un équipement de 240 000 D, amorti en linéaire sur 6 ans. Il génère 150 000 D de ventes supplémentaires par an et 60 000 D de charges décaissables en plus. Impôt de 30 %. Quel flux net annuel, en D ?",
+      "answerKey": {
+        "value": 75000,
+        "unit": "D"
+      },
+      "explanation": "Dotation : 240 000 ÷ 6 = 40 000 D. Résultat avant impôts : 150 000 − 60 000 − 40 000 = 50 000 D. Impôt : 15 000 D. Résultat net : 35 000 D. Flux net : 35 000 + 40 000 = 75 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur le calcul des flux nets de trésorerie sont exactes ? (Coche chaque affirmation exacte.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le résultat avant impôts s'obtient après avoir retranché les dotations"
+        },
+        {
+          "id": "b",
+          "text": "L'impôt supplémentaire se calcule sur le résultat avant impôts"
+        },
+        {
+          "id": "c",
+          "text": "Les dotations aux amortissements sont un décaissement de l'année"
+        },
+        {
+          "id": "d",
+          "text": "Les dotations s'ajoutent avant le calcul de l'impôt"
+        },
+        {
+          "id": "e",
+          "text": "Le flux net est le résultat net d'impôts augmenté des dotations"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "On retranche les dotations pour calculer le résultat avant impôts, sur lequel porte l'impôt ; on les rajoute ensuite au résultat net, car elles n'ont fait sortir aucun argent. Ce ne sont donc ni un décaissement, ni un élément qu'on ajoute avant l'impôt.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un contrat garantit 18 000 D à la Fonderie Hajji dans 4 ans. Au taux de 10 %, quelle est la valeur actuelle de cette somme, en D ? (précision de 1 D)",
+      "answerKey": {
+        "value": 12294.24,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Valeur actuelle : 18 000 × 1,10⁻⁴ = 18 000 × 0,683013 = 12 294,24 D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La VAN du projet de la Papeterie Tlili vaut 0 D au taux de 9 %. Que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les flux actualisés couvrent juste le coût : le projet rapporte exactement 9 %"
+        },
+        {
+          "id": "b",
+          "text": "Les flux actualisés dépassent le coût : le projet crée de la valeur"
+        },
+        {
+          "id": "c",
+          "text": "Les flux actualisés restent sous le coût : l'entreprise perd de l'argent sur ce projet"
+        },
+        {
+          "id": "d",
+          "text": "Le projet ne rapporte rien : son rendement est de 0 %"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une VAN nulle signifie que les flux actualisés couvrent exactement la dépense : le projet ne crée ni ne détruit de valeur et rapporte juste le taux d'actualisation, 9 % ici. Une VAN positive dépasserait le coût, une VAN négative resterait en dessous ; et un rendement de 9 % n'est pas un rendement nul.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Biscuiterie Hamdi dépense 330 000 D pour une chaîne qui lui laisse 75 000 D de trésorerie nette par an, toujours la même. En combien d'années, décimales comprises, récupère-t-elle sa mise ?",
+      "answerKey": {
+        "value": 4.4,
+        "unit": "années",
+        "tolerance": 0.01
+      },
+      "explanation": "Cash-flow constant, sans actualisation : DRCI = 330 000 ÷ 75 000 = 4,4 ans, soit 4 ans et environ 5 mois.",
+      "difficulty": 2
+    }
+  ]
+}

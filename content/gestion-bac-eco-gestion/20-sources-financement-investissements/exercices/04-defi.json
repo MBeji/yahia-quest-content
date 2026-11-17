@@ -1,0 +1,160 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le grand montage financier",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque situation à la source de financement correspondante.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Vente d'une camionnette devenue inutile"
+        },
+        {
+          "id": "l2",
+          "text": "Bénéfices de l'exercice non distribués"
+        },
+        {
+          "id": "l3",
+          "text": "Entrée de nouveaux actionnaires dans la société"
+        },
+        {
+          "id": "l4",
+          "text": "Location d'un équipement avec promesse de vente"
+        },
+        {
+          "id": "r1",
+          "text": "Autofinancement"
+        },
+        {
+          "id": "r2",
+          "text": "Crédit-bail"
+        },
+        {
+          "id": "r3",
+          "text": "Cession d'un actif immobilisé"
+        },
+        {
+          "id": "r4",
+          "text": "Augmentation de capital"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r1"
+          ],
+          [
+            "l3",
+            "r4"
+          ],
+          [
+            "l4",
+            "r2"
+          ]
+        ]
+      },
+      "explanation": "La vente d'un bien est une cession ; les bénéfices gardés forment l'autofinancement ; de nouveaux actionnaires apportent du capital ; une location avec promesse de vente est un crédit-bail.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une PME déficitaire depuis deux exercices envisage le crédit-bail pour un four. Quel inconvénient doit-elle examiner avant de signer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il lui interdit de racheter le four à la fin du contrat, quelle que soit la valeur résiduelle"
+        },
+        {
+          "id": "b",
+          "text": "Il lui coûtera plus cher qu'un crédit classique, faute d'économies d'impôts sur les loyers"
+        },
+        {
+          "id": "c",
+          "text": "Il fait entrer le prix complet du four dans le total de ses dettes bancaires dès la signature"
+        },
+        {
+          "id": "d",
+          "text": "Il lui impose un apport initial, avant la livraison, égal à une partie du prix du four"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une entreprise déficitaire ne paie pas d'impôt : les loyers déductibles ne lui font rien économiser, et le crédit-bail devient plus coûteux qu'un crédit classique. Au contraire, il permet d'acheter à la valeur résiduelle, laisse intactes les possibilités d'emprunt et ne demande pas d'apport initial.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'entreprise Sfax Plast achète une machine de 140 000 D hors taxe avec 6 000 D hors taxe d'installation, TVA de 18 %. Elle finance le TTC ainsi : cession d'une ancienne machine (25 000 D), apport des associés égal à 30 % du coût hors taxe, emprunt de 60 000 D, le reste sur les disponibilités. Quel prélèvement sur les disponibilités, en D ?",
+      "answerKey": {
+        "value": 43480,
+        "unit": "D"
+      },
+      "explanation": "Coût hors taxe : 140 000 + 6 000 = 146 000 D. TTC : 146 000 × 1,18 = 172 280 D. Apport : 146 000 × 0,30 = 43 800 D. Reste : 172 280 − 25 000 − 43 800 − 60 000 = 43 480 D. Résultat : 43480 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le Chantier Naval Rekik emprunte 120 000 D sur 5 ans à 7 % par amortissements constants. Quelle est l'annuité de la 4e année, en D ?",
+      "answerKey": {
+        "value": 27360,
+        "unit": "D"
+      },
+      "explanation": "Amortissement constant : 120 000 ÷ 5 = 24 000 D. Capital dû au début de l'année 4 : 120 000 − 3 × 24 000 = 48 000 D. Intérêts : 48 000 × 0,07 = 3 360 D. Annuité : 24 000 + 3 360 = 27 360 D. Résultat : 27360 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "M. Ayari a placé 12 000 D pendant 4 ans à 10 %. La valeur acquise finance une partie d'une machine de 30 000 D TTC ; il emprunte le reste à 8 %, remboursable en une fois dans 3 ans. Que rembourse-t-il à l'échéance, en D ?",
+      "answerKey": {
+        "value": 15659.23,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Valeur acquise : 12 000 × (1,10)⁴ = 12 000 × 1,4641 = 17 569,20 D. Emprunt : 30 000 − 17 569,20 = 12 430,80 D. À rembourser : 12 430,80 × (1,08)³ = 12 430,80 × 1,259712 = 15 659,23 D. Résultat : 15659,23 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un emprunt de 90 000 D sur 3 ans à 10 % est remboursé soit par amortissements constants, soit par annuités constantes (facteur de la table : 0,4021148). Quel mode coûte le moins d'intérêts au total ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Annuités constantes : 18 000 D contre 18 571 D en amortissements constants"
+        },
+        {
+          "id": "b",
+          "text": "Les deux modes coûtent exactement 18 000 D d'intérêts au total"
+        },
+        {
+          "id": "c",
+          "text": "Amortissements constants : 18 000 D contre 18 571 D en annuités constantes"
+        },
+        {
+          "id": "d",
+          "text": "Annuités constantes : 9 000 D d'intérêts contre 18 000 D en amortissements constants"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Amortissements constants : 9 000 + 6 000 + 3 000 = 18 000 D d'intérêts. Annuités constantes : 3 × 36 190,33 − 90 000 = 18 571 D environ. Le capital se rembourse plus vite dans le premier mode, d'où moins d'intérêts. 9 000 D n'est que l'intérêt de la 1re année.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le tableau d'amortissement de la société Gmati, à annuités constantes de 20 105,74 D et taux de 10 %, donne pour l'année 1 : capital dû en début 50 000 D, intérêts 5 000 D. Quels sont les intérêts de l'année 2, en D ?",
+      "answerKey": {
+        "value": 3489.43,
+        "unit": "D",
+        "tolerance": 1
+      },
+      "explanation": "Amortissement de l'année 1 : 20 105,74 − 5 000 = 15 105,74 D. Capital dû en début d'année 2 : 50 000 − 15 105,74 = 34 894,26 D. Intérêts de l'année 2 : 34 894,26 × 0,10 = 3 489,43 D. Résultat : 3489,43 D.",
+      "difficulty": 3
+    }
+  ]
+}
