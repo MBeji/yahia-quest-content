@@ -1,0 +1,119 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur financier",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "La 1re partie du tableau d'une imprimerie de Gabès montre un FDR en hausse de 25 000 D. Quel total A + B affichera la 2e partie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+25 000 D, le même signe que dans la 1re partie"
+        },
+        {
+          "id": "b",
+          "text": "−50 000 D, la variation étant comptée dans chaque partie"
+        },
+        {
+          "id": "c",
+          "text": "+25 000 D en solde A seul, la 2e partie ne retraçant que le BFR"
+        },
+        {
+          "id": "d",
+          "text": "−25 000 D, le même montant mais de signe opposé"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "A + B = −ΔBFR − ΔTN = −ΔFDR : le total de la 2e partie a le même montant que celui de la 1re, avec le signe opposé, soit −25 000 D. Doubler le montant, garder le même signe ou ne retenir que le solde A n'a pas de sens : les deux parties expliquent la même variation.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La biscuiterie Mabrouk avait un FDR de 140 000 D au 31/12/N-1. Pendant N : acquisitions 310 000 D, remboursement d'emprunt 55 000 D, dividendes 40 000 D, CAF 270 000 D, emprunt nouveau 90 000 D, cession d'un four pour 25 000 D. Quel est son FDR au 31/12/N, en D ?",
+      "answerKey": {
+        "value": 120000,
+        "unit": "D"
+      },
+      "explanation": "Emplois : 310 000 + 55 000 + 40 000 = 405 000 D. Ressources : 270 000 + 90 000 + 25 000 = 385 000 D. ΔFDR = 385 000 − 405 000 = −20 000 D (emploi net). FDR(N) = 140 000 − 20 000 = 120 000 D. Le piège courant : soustraire dans le mauvais sens (+20 000 D) et annoncer un FDR de 160 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "À l'ouverture, les immobilisations corporelles de l'entreprise Hamrouni sont inscrites pour 620 000 D en valeur brute ; à la clôture, 700 000 D. Pendant l'année, elle a vendu 35 000 D un matériel dont la valeur d'origine était de 90 000 D. Quelles sont ses acquisitions, en D ?",
+      "answerKey": {
+        "value": 170000,
+        "unit": "D"
+      },
+      "explanation": "Acquisitions = 700 000 − 620 000 + 90 000 = 170 000 D. On ajoute la valeur d'origine du matériel sorti (90 000), pas son prix de cession (35 000), qui est une ressource à part.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chez un fabricant de tissus de Monastir, le tableau de financement affiche 520 000 D d'emplois et un emploi net de 60 000 D. Hors CAF, les ressources se limitent à 45 000 D d'apports, 110 000 D d'emprunts et 30 000 D de cessions. Que vaut la CAF, en D ?",
+      "answerKey": {
+        "value": 275000,
+        "unit": "D"
+      },
+      "explanation": "FDR en baisse de 60 000 D : les ressources valent 520 000 − 60 000 = 460 000 D. Hors CAF, elles font 45 000 + 110 000 + 30 000 = 185 000 D. CAF = 460 000 − 185 000 = 275 000 D. Le piège courant : ajouter l'emploi net (520 000 + 60 000) au lieu de le retrancher, d'où une CAF fausse de 395 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chez le sellier Ferchichi, les stocks passent de 120 000 à 150 000 D, les clients de 200 000 à 185 000 D, les autres actifs courants de 20 000 à 26 000 D, les fournisseurs de 110 000 à 90 000 D et les autres passifs courants de 40 000 à 52 000 D. De combien le BFR augmente-t-il, en D ?",
+      "answerKey": {
+        "value": 29000,
+        "unit": "D"
+      },
+      "explanation": "Besoins : stocks 30 000 ; autres actifs 6 000 ; baisse des fournisseurs 20 000, soit 56 000 D. Dégagements : clients 15 000 ; autres passifs 12 000, soit 27 000 D. Solde −29 000 D : le BFR augmente de 29 000 D. Contrôle : BFR(N-1) = 340 000 − 150 000 = 190 000 ; BFR(N) = 361 000 − 142 000 = 219 000. Le piège courant : ranger la baisse des fournisseurs en dégagement ; on conclurait à tort à une baisse du BFR de 11 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une laiterie de Béja voit son FDR baisser de 38 000 D (emploi net) tandis que son BFR baisse de 12 000 D. De combien sa trésorerie nette a-t-elle baissé, en D ?",
+      "answerKey": {
+        "value": 26000,
+        "unit": "D"
+      },
+      "explanation": "ΔTN = ΔFDR − ΔBFR = −38 000 − (−12 000) = −26 000 D : la trésorerie nette baisse de 26 000 D. Contrôle : −12 000 − 26 000 = −38 000 D. Le piège courant : écrire ΔTN = ΔFDR + ΔBFR, soit −50 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Le tableau d'une fonderie montre : CAF 150 000 D, emprunts nouveaux 120 000 D ; acquisitions 330 000 D, remboursements 30 000 D, dividendes 20 000 D. Quelles lectures sont exactes ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le fonds de roulement baisse de 110 000 D (emploi net)"
+        },
+        {
+          "id": "b",
+          "text": "La CAF représente plus de la moitié des ressources nouvelles"
+        },
+        {
+          "id": "c",
+          "text": "La CAF suffit à elle seule à financer les acquisitions"
+        },
+        {
+          "id": "d",
+          "text": "Les dividendes versés constituent une ressource nouvelle"
+        },
+        {
+          "id": "e",
+          "text": "La 2e partie devra afficher un total A + B de +110 000 D"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Ressources : 270 000 D ; emplois : 380 000 D ; ΔFDR = −110 000 D (emploi net). La CAF pèse 150 000 ÷ 270 000, soit environ 56 %. Elle ne couvre pas les 330 000 D d'acquisitions, les dividendes sont un emploi, et A + B = −ΔFDR = +110 000 D.",
+      "difficulty": 3
+    }
+  ]
+}

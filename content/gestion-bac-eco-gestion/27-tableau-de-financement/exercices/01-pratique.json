@@ -1,0 +1,161 @@
+{
+  "title": "⭐ Exercice : Premiers pas — emplois, ressources et variation du FDR",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Parmi ces opérations d'une fabrique de meubles, laquelle constitue une ressource stable nouvelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'achat d'un brevet d'exploitation payé comptant à un inventeur"
+        },
+        {
+          "id": "b",
+          "text": "La vente d'un terrain inutilisé encaissée auprès d'un promoteur"
+        },
+        {
+          "id": "c",
+          "text": "Le versement des dividendes de l'année aux associés de la société"
+        },
+        {
+          "id": "d",
+          "text": "Le règlement d'une échéance de l'emprunt bancaire contracté en N-3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le prix encaissé lors d'une cession d'immobilisation apporte des fonds durables : c'est une ressource. L'achat du brevet, les dividendes et l'échéance d'emprunt consomment ou réduisent des ressources stables : ce sont des emplois.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une minoterie encaisse 30 000 D au titre d'un prêt qu'elle avait accordé à une filiale. Où cette opération figure-t-elle dans le tableau de financement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En emploi stable nouveau, car l'opération porte sur un prêt"
+        },
+        {
+          "id": "b",
+          "text": "En dégagement de la 2e partie, car elle fait entrer de la trésorerie"
+        },
+        {
+          "id": "c",
+          "text": "En ressource stable nouvelle, car elle réduit un emploi stable antérieur"
+        },
+        {
+          "id": "d",
+          "text": "Nulle part, car le prêt avait été accordé au cours d'un exercice antérieur"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le remboursement d'un prêt accordé est une diminution d'emploi : il apporte des fonds durables, c'est une ressource stable nouvelle de 30 000 D. L'emploi, c'est l'octroi d'un nouveau prêt. L'opération relève du haut du bilan, pas de la 2e partie, et c'est l'encaissement de l'exercice qui compte, quelle que soit la date du prêt.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fonderie de Bizerte a acquis des immobilisations pour 120 000 D, remboursé 35 000 D d'emprunt et versé 15 000 D de dividendes. Quel est le total de ses emplois stables nouveaux, en D ?",
+      "answerKey": {
+        "value": 170000,
+        "unit": "D"
+      },
+      "explanation": "Les trois flux sont des emplois : 120 000 + 35 000 + 15 000 = 170 000 D.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une conserverie de Kélibia a engagé 410 000 D d'emplois stables et son fonds de roulement a progressé de 30 000 D. Ses autres ressources sont 60 000 D de capital, 100 000 D d'emprunts et 20 000 D de cessions. Quelle est sa CAF, en D ?",
+      "answerKey": {
+        "value": 260000,
+        "unit": "D"
+      },
+      "explanation": "Si le FDR augmente de 30 000 D, les ressources totales valent 410 000 + 30 000 = 440 000 D. On retire les ressources connues : 440 000 − (60 000 + 100 000 + 20 000) = 260 000 D de CAF.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les machines d'une cartonnerie de Sousse valent 150 000 D en valeur brute à l'ouverture et 210 000 D à la clôture. Une machine d'origine 25 000 D a été cédée pendant l'année. Quelles sont les acquisitions de l'année, en D ?",
+      "answerKey": {
+        "value": 85000,
+        "unit": "D"
+      },
+      "explanation": "Acquisitions = valeur brute N − valeur brute N-1 + valeur brute des sorties = 210 000 − 150 000 + 25 000 = 85 000 D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les dettes fournisseurs d'une laiterie du Kef passent de 80 000 D à 95 000 D. Quel est l'effet de cette hausse sur son besoin en fonds de roulement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un besoin supplémentaire de 15 000 D, car la dette a grossi"
+        },
+        {
+          "id": "b",
+          "text": "Un dégagement de 95 000 D, égal à la nouvelle valeur de la dette"
+        },
+        {
+          "id": "c",
+          "text": "Un dégagement de 15 000 D, car une dette qui monte finance l'activité"
+        },
+        {
+          "id": "d",
+          "text": "Aucun effet sur le BFR, seule la trésorerie de l'entreprise étant touchée"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une hausse d'un passif courant est un dégagement : la variation (95 000 − 80 000 = 15 000) est du crédit supplémentaire obtenu, qui diminue le BFR. On retient la variation, pas la valeur finale, et les dettes fournisseurs font partie du BFR.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans la 2e partie du tableau de financement d'une entreprise de transport, lesquelles de ces variations sont des besoins ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une hausse des stocks de pièces détachées"
+        },
+        {
+          "id": "b",
+          "text": "Une baisse des dettes envers les fournisseurs"
+        },
+        {
+          "id": "c",
+          "text": "Une hausse des créances sur les clients"
+        },
+        {
+          "id": "d",
+          "text": "Une hausse des dettes envers les fournisseurs"
+        },
+        {
+          "id": "e",
+          "text": "Une baisse des créances sur les clients"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Un besoin augmente le BFR : hausse d'un actif courant (stocks, clients) ou baisse d'un passif courant (fournisseurs). Les deux variations inverses, hausse des dettes et baisse des créances, libèrent des fonds : ce sont des dégagements.",
+      "difficulty": 2
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Quel nom donne-t-on au solde de la 1re partie quand les ressources stables nouvelles dépassent les emplois stables nouveaux ?",
+      "answerKey": {
+        "text": "ressource nette"
+      },
+      "explanation": "Quand ressources > emplois, le FDR augmente : le solde est une ressource nette. Dans le cas inverse, on parle d'emploi net.",
+      "difficulty": 1,
+      "acceptedAnswers": [
+        "une ressource nette",
+        "une ressource nette de fonds de roulement",
+        "la ressource nette"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Parties 1 et 2, signes et soldes",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle relation, valable à chaque date, permet de relier les variations du FDR, du BFR et de la trésorerie nette ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TN = FDR − BFR, donc ΔFDR = ΔBFR + ΔTN"
+        },
+        {
+          "id": "b",
+          "text": "TN = BFR − FDR, donc ΔFDR = ΔBFR − ΔTN"
+        },
+        {
+          "id": "c",
+          "text": "TN = FDR − BFR, donc ΔFDR = ΔBFR − ΔTN"
+        },
+        {
+          "id": "d",
+          "text": "BFR = FDR + TN, donc ΔTN = ΔFDR + ΔBFR"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "TN = FDR − BFR donne FDR = BFR + TN à chaque date, puis ΔFDR = ΔBFR + ΔTN : on additionne. Le piège courant est de garder la bonne relation et de soustraire ΔTN, ou d'inverser FDR et BFR dans la définition de la trésorerie.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une coopérative d'olives a des ressources stables nouvelles de 240 000 D, dont une CAF de 72 000 D, de l'augmentation de capital et des emprunts. Quelle part de ces ressources la CAF représente-t-elle, en % ?",
+      "answerKey": {
+        "value": 30,
+        "unit": "%"
+      },
+      "explanation": "Part de la CAF = 72 000 ÷ 240 000 = 0,30, soit 30 %. Le reste, 70 %, vient de ressources externes.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une verrerie de Tunis totalise 215 000 D de ressources stables nouvelles et 248 000 D d'emplois stables nouveaux. Quel est le montant de l'emploi net, en D ?",
+      "answerKey": {
+        "value": 33000,
+        "unit": "D"
+      },
+      "explanation": "ΔFDR = 215 000 − 248 000 = −33 000 D : les emplois dépassent les ressources, c'est un emploi net de 33 000 D et le fonds de roulement baisse.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Une société de négoce de Sfax établit la 2e partie de son tableau. Classe ces quatre étapes dans leur ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Placer chaque variation dans la colonne des besoins ou celle des dégagements"
+        },
+        {
+          "id": "b",
+          "text": "Additionner les deux soldes pour contrôler la variation du fonds de roulement"
+        },
+        {
+          "id": "c",
+          "text": "Comparer, en valeurs brutes, chaque actif et passif courant entre N-1 et N"
+        },
+        {
+          "id": "d",
+          "text": "Calculer le solde de la variation nette du BFR, puis celui de la trésorerie"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "a",
+          "d",
+          "b"
+        ]
+      },
+      "explanation": "On calcule d'abord les variations brutes poste par poste, on les classe, on dégage les deux soldes (BFR puis trésorerie) et on les additionne : la somme doit être l'opposé de la variation donnée par la 1re partie.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque donnée à la rubrique où elle prend place.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Prix encaissé pour la vente d'un camion"
+        },
+        {
+          "id": "l2",
+          "text": "Dividendes versés aux associés"
+        },
+        {
+          "id": "l3",
+          "text": "Baisse des dettes fournisseurs"
+        },
+        {
+          "id": "l4",
+          "text": "Baisse des stocks"
+        },
+        {
+          "id": "r1",
+          "text": "Ressource stable nouvelle"
+        },
+        {
+          "id": "r2",
+          "text": "Emploi stable nouveau"
+        },
+        {
+          "id": "r3",
+          "text": "Besoin de l'exercice"
+        },
+        {
+          "id": "r4",
+          "text": "Dégagement de l'exercice"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Un prix de cession apporte des fonds durables (ressource) ; des dividendes en consomment (emploi). Dans la 2e partie, la baisse d'un passif courant comme les dettes fournisseurs est un besoin, et la baisse d'un actif courant comme les stocks est un dégagement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour retrouver les achats de machines d'une année, un élève calcule seulement valeur brute N moins valeur brute N-1, alors qu'une machine a été vendue. Pourquoi son résultat est-il faux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il doit travailler en valeurs nettes d'amortissements plutôt qu'en valeurs brutes"
+        },
+        {
+          "id": "b",
+          "text": "Il oublie d'ajouter la valeur d'origine du bien sorti, qui a fait baisser le brut"
+        },
+        {
+          "id": "c",
+          "text": "Il doit soustraire le prix de cession encaissé, qui figure dans les ressources"
+        },
+        {
+          "id": "d",
+          "text": "Il doit retrancher les amortissements de l'exercice, qui diminuent la valeur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le bien sorti a retiré sa valeur d'origine de la valeur brute : la simple différence sous-estime les achats. Il faut l'ajouter. Les valeurs nettes et les amortissements sont à écarter, et le prix de cession est un flux distinct de la valeur d'origine.",
+      "difficulty": 2
+    }
+  ]
+}

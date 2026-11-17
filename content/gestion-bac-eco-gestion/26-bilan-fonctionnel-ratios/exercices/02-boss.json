@@ -1,0 +1,110 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le directeur financier",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La Fabrique de Stores Ayari a produit pour 1 245 000 D de stores dans l'année. Son stock de produits finis valait 100 000 D au départ et 70 000 D à la fin. Combien de jours, en moyenne, un produit fini reste-t-il en stock ?",
+      "answerKey": {
+        "value": 24,
+        "unit": "jours"
+      },
+      "explanation": "Coût de production des produits vendus : 1 245 000 + (100 000 − 70 000) = 1 275 000 D. Stock moyen : (100 000 + 70 000) ÷ 2 = 85 000 D. Coefficient : 1 275 000 ÷ 85 000 = 15. Durée : 360 ÷ 15 = 24 jours.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Une société de transport de Sfax calcule ses ratios de structure. Parmi ces affirmations, lesquelles sont exactes ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le ratio d'investissement rapporte les emplois stables au total des emplois"
+        },
+        {
+          "id": "b",
+          "text": "Le ratio d'endettement rapporte les ressources propres aux dettes financières"
+        },
+        {
+          "id": "c",
+          "text": "Le ratio d'autonomie financière rapporte les ressources propres aux ressources stables"
+        },
+        {
+          "id": "d",
+          "text": "Le ratio de financement des emplois stables rapporte les emplois stables aux ressources stables"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c"]
+      },
+      "explanation": "L'investissement divise bien les emplois stables par le total des emplois, et l'autonomie divise bien les ressources propres par les ressources stables. L'endettement et le financement des emplois stables sont à l'inverse dans les deux autres propositions : dettes financières au numérateur pour l'un, ressources stables au numérateur pour l'autre.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le Comptoir Lahmar réalise 800 000 D de chiffre d'affaires hors taxes (TVA 18 %). Ses clients lui doivent 84 000 D et il détient 34 000 D d'effets à l'encaissement. Quelle est la durée moyenne de ses crédits clients, en jours ?",
+      "answerKey": {
+        "value": 45,
+        "unit": "jours"
+      },
+      "explanation": "CA TTC : 800 000 × 1,18 = 944 000 D. Créances à retenir : 84 000 + 34 000 = 118 000 D, effets compris. Durée : 118 000 × 360 ÷ 944 000 = 45 jours.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les Tissages Bouhlel achètent pour 600 000 D hors taxes de fils sur l'année (TVA 18 %) et doivent 118 000 D à leurs fournisseurs. Combien de jours de crédit en moyenne obtiennent-ils ?",
+      "answerKey": {
+        "value": 60,
+        "unit": "jours"
+      },
+      "explanation": "Achats TTC : 600 000 × 1,18 = 708 000 D. Durée : 118 000 × 360 ÷ 708 000 = 60 jours. La dette fournisseurs contient la TVA, donc le dénominateur aussi.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Au bilan fonctionnel de la Laiterie Dhaouadi, les stocks valent 180 000 D, les créances 220 000 D, les autres actifs courants 20 000 D et la trésorerie de l'actif 60 000 D. Côté passifs courants : fournisseurs 270 000 D, autres dettes 90 000 D, trésorerie du passif 40 000 D. Quel est son ratio de liquidité réduite, au centième ?",
+      "answerKey": {
+        "value": 0.75
+      },
+      "explanation": "Actifs courants : 180 000 + 220 000 + 20 000 + 60 000 = 480 000 D. Passifs courants : 270 000 + 90 000 + 40 000 = 400 000 D. Liquidité réduite : (480 000 − 180 000) ÷ 400 000 = 300 000 ÷ 400 000 = 0,75.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une entreprise textile voit son ratio de financement des emplois stables passer de 1,30 à 1,05 et son autonomie financière de 62 % à 48 %. Le secteur affiche 1,20 et 60 %. Quel diagnostic est le plus juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Situation en amélioration : le ratio reste supérieur à 1, l'entreprise peut encore s'endetter sereinement"
+        },
+        {
+          "id": "b",
+          "text": "Situation en dégradation : emplois moins couverts, autonomie sous 50 %, capitaux propres à renforcer"
+        },
+        {
+          "id": "c",
+          "text": "Situation stable : les deux ratios varient en sens contraire et se compensent exactement"
+        },
+        {
+          "id": "d",
+          "text": "Situation sans enseignement : on ne peut rien conclure sans connaître la rotation des stocks de l'année"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le financement des emplois stables baisse et passe sous le secteur ; l'autonomie tombe sous 50 % et sous le secteur : la capacité d'emprunt est saturée, il faut augmenter les capitaux propres. Rester au-dessus de 1 ne suffit pas à parler d'amélioration, et les deux ratios ne se compensent pas : ils reculent ensemble.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Savonnerie Triki a acheté 410 000 D de matières premières dans l'année. Son stock de matières valait 70 000 D au début et 30 000 D à la fin. Quel est son coefficient de rotation des matières premières ?",
+      "answerKey": {
+        "value": 9,
+        "unit": "fois par an"
+      },
+      "explanation": "Matières consommées : 410 000 + (70 000 − 30 000) = 450 000 D. Stock moyen : (70 000 + 30 000) ÷ 2 = 50 000 D. Coefficient : 450 000 ÷ 50 000 = 9.",
+      "difficulty": 3
+    }
+  ]
+}

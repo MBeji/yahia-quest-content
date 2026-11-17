@@ -1,0 +1,165 @@
+{
+  "title": "Test de compréhension ⭐ : Le tableau de financement",
+  "questions": [
+    {
+      "prompt": "Le directeur d'une société de transport de Sfax veut savoir d'où sont venus et où sont partis les fonds durables de l'année N. Quel document lui donne cette lecture ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le bilan fonctionnel du 31/12/N, qui classe les ressources et les emplois stables"
+        },
+        {
+          "id": "b",
+          "text": "Le tableau de financement, bâti sur les deux bilans de N-1 et de N"
+        },
+        {
+          "id": "c",
+          "text": "Le compte de résultat de N, qui regroupe les charges et les produits"
+        },
+        {
+          "id": "d",
+          "text": "La balance de vérification de N, qui contrôle l'égalité des soldes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un flux se mesure par une différence entre deux dates : le tableau de financement compare le bilan avant répartition de N-1 à celui de N et explique l'évolution des fonds durables. Un bilan, même fonctionnel, donne un instantané à une date ; le compte de résultat et la balance ne rendent pas compte des emplois et ressources stables.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une usine de plastique de Sfax rembourse 40 000 D d'un emprunt contracté trois ans plus tôt. Comment cette opération figure-t-elle dans la 1re partie du tableau de financement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En ressource stable, car elle concerne une ligne d'emprunt du bilan"
+        },
+        {
+          "id": "b",
+          "text": "En variation du besoin en fonds de roulement, car elle touche une dette"
+        },
+        {
+          "id": "c",
+          "text": "Elle n'y figure pas, car elle ne modifie aucun résultat de l'exercice"
+        },
+        {
+          "id": "d",
+          "text": "En emploi stable, car elle réduit une ressource stable de l'entreprise"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Rembourser un emprunt fait perdre une ressource stable : c'est un emploi stable nouveau. Une dette financière est une ressource durable, donc l'opération relève de la 1re partie et non du BFR ; et le tableau retrace des flux, pas seulement des opérations de résultat.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur un exercice, une savonnerie de Sfax a obtenu 340 000 D de ressources stables nouvelles et consommé 295 000 D d'emplois stables nouveaux. De combien son fonds de roulement a-t-il augmenté, en D ?",
+      "answerKey": {
+        "value": 45000,
+        "unit": "D"
+      },
+      "explanation": "ΔFDR = ressources stables nouvelles − emplois stables nouveaux = 340 000 − 295 000 = 45 000 D. Les ressources dépassent les emplois : c'est une ressource nette.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Entre deux bilans, une brasserie de Tozeur voit ses stocks passer de 48 000 à 61 000 D, ses créances clients de 33 000 à 27 000 D et ses dettes fournisseurs de 40 000 à 52 000 D. De combien le BFR a-t-il baissé, en D ?",
+      "answerKey": {
+        "value": 5000,
+        "unit": "D"
+      },
+      "explanation": "Hausse des stocks : besoin de 13 000. Baisse des clients : dégagement de 6 000. Hausse des fournisseurs : dégagement de 12 000. Besoins 13 000 ; dégagements 18 000 ; solde +5 000, donc le BFR baisse de 5 000 D. Contrôle : BFR(N-1) = 81 000 − 40 000 = 41 000 ; BFR(N) = 88 000 − 52 000 = 36 000.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque notion à sa description.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Première partie"
+        },
+        {
+          "id": "l2",
+          "text": "Deuxième partie"
+        },
+        {
+          "id": "l3",
+          "text": "Besoin"
+        },
+        {
+          "id": "l4",
+          "text": "Dégagement"
+        },
+        {
+          "id": "r1",
+          "text": "Explique la variation du fonds de roulement par le haut du bilan"
+        },
+        {
+          "id": "r2",
+          "text": "Explique la variation du fonds de roulement par le bas du bilan"
+        },
+        {
+          "id": "r3",
+          "text": "Hausse d'un actif courant ou baisse d'un passif courant"
+        },
+        {
+          "id": "r4",
+          "text": "Baisse d'un actif courant ou hausse d'un passif courant"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La 1re partie rapproche ressources et emplois stables (haut du bilan) ; la 2e partie analyse les actifs et passifs courants (bas du bilan). Un besoin augmente le BFR, un dégagement le diminue.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un cabinet comptable de Nabeul établit la 1re partie du tableau de financement d'un client. Classe ces étapes dans leur ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ranger chaque opération parmi les emplois ou parmi les ressources"
+        },
+        {
+          "id": "b",
+          "text": "Retrancher les emplois des ressources pour obtenir la variation du FDR"
+        },
+        {
+          "id": "c",
+          "text": "Relever les opérations durables de l'exercice à partir des deux bilans"
+        },
+        {
+          "id": "d",
+          "text": "Totaliser séparément la colonne des emplois et celle des ressources"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "a",
+          "d",
+          "b"
+        ]
+      },
+      "explanation": "On relève d'abord les flux, puis on les range, puis on totalise chaque colonne, et seulement alors on calcule la différence qui donne la variation du fonds de roulement.",
+      "difficulty": 2
+    }
+  ]
+}

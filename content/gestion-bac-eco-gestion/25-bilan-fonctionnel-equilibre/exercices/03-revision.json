@@ -1,0 +1,194 @@
+{
+  "title": "⭐⭐ Révision (type examen) : De la masse à la TN",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque situation financière à la lecture qui lui correspond.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Un FDR de 60 000 D face à un BFR de 45 000 D"
+        },
+        {
+          "id": "l2",
+          "text": "Un FDR de 45 000 D face à un BFR de 60 000 D"
+        },
+        {
+          "id": "l3",
+          "text": "Un FDR de −10 000 D"
+        },
+        {
+          "id": "l4",
+          "text": "Un FDR exactement égal au BFR"
+        },
+        {
+          "id": "r1",
+          "text": "Le FDR finance tout le BFR et laisse un excédent de liquidités"
+        },
+        {
+          "id": "r2",
+          "text": "Le FDR ne finance qu'une partie du BFR, un découvert complète"
+        },
+        {
+          "id": "r3",
+          "text": "Des emplois stables sont financés par des dettes à court terme"
+        },
+        {
+          "id": "r4",
+          "text": "La TN est nulle : ni excédent de liquidités, ni découvert"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Avec 60 000 D de FDR pour 45 000 D de BFR, la TN vaut +15 000 D : un excédent de liquidités. Avec 45 000 D pour 60 000 D, la TN vaut −15 000 D : un crédit de trésorerie couvre l'écart. Un FDR négatif signifie que les ressources stables ne couvrent pas les emplois stables. Un FDR égal au BFR donne une TN nulle.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les masses de la Tôlerie Mansour sont : actifs courants 530 000 D, dont 70 000 D de trésorerie ; passifs courants 340 000 D, dont 35 000 D de trésorerie. Calcule son BFR, en D.",
+      "answerKey": {
+        "value": 155000,
+        "unit": "D"
+      },
+      "explanation": "Actifs courants hors trésorerie : 530 000 − 70 000 = 460 000 D. Passifs courants hors trésorerie : 340 000 − 35 000 = 305 000 D. BFR = 460 000 − 305 000 = 155 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une cartonnerie de Sfax a un FDR de 210 000 D et un BFR de 190 000 D en N−1, puis un FDR de 245 000 D et un BFR de 265 000 D en N. Quelle est la variation de sa TN entre les deux exercices, en D ?",
+      "answerKey": {
+        "value": -40000,
+        "unit": "D"
+      },
+      "explanation": "TN en N−1 : 210 000 − 190 000 = 20 000 D ; en N : 245 000 − 265 000 = −20 000 D. Variation = N − (N−1) = −20 000 − 20 000 = −40 000 D. Contrôle : +35 000 − 75 000 = −40 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le comptable de la Pâtisserie Louati trouve un FDR de 95 000 D, mais il a laissé dans les passifs courants 30 000 D dus à un fournisseur d'immobilisations. Quel est le FDR après reclassement de cette dette, en D ?",
+      "answerKey": {
+        "value": 125000,
+        "unit": "D"
+      },
+      "explanation": "Le reclassement augmente les ressources stables de 30 000 D et diminue les passifs courants du même montant : le FDR gagne 30 000 D, soit 95 000 + 30 000 = 125 000 D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour améliorer sa trésorerie nette, la Biscuiterie Karoui veut agir sur le BFR et non sur le FDR. Quelle décision prend-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faire entrer de nouveaux associés qui apporteront du capital"
+        },
+        {
+          "id": "b",
+          "text": "Obtenir de son fournisseur quinze jours de crédit de plus"
+        },
+        {
+          "id": "c",
+          "text": "Vendre un terrain inutilisé pour en encaisser le prix"
+        },
+        {
+          "id": "d",
+          "text": "Souscrire un emprunt bancaire remboursable en huit ans"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un crédit fournisseur plus long augmente les passifs courants d'exploitation et diminue le BFR. Un apport de capital, un emprunt de huit ans et la cession d'un terrain agissent sur le FDR : ils augmentent les ressources stables ou diminuent les emplois stables.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Menuiserie Hajji détient 48 000 D en banque et 3 000 D en caisse ; elle doit 17 000 D de découvert bancaire et 2 000 D d'intérêts courus non échus. Quelle est sa trésorerie nette, en D ?",
+      "answerKey": {
+        "value": 34000,
+        "unit": "D"
+      },
+      "explanation": "Trésorerie de l'actif : 48 000 + 3 000 = 51 000 D. Trésorerie du passif : le découvert seul, 17 000 D ; les intérêts courus sont des autres passifs financiers, hors trésorerie. TN = 51 000 − 17 000 = 34 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque poste du bilan comptable à son traitement dans le bilan fonctionnel.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Les amortissements de l'actif"
+        },
+        {
+          "id": "l2",
+          "text": "Les effets escomptés non échus"
+        },
+        {
+          "id": "l3",
+          "text": "L'échéance à moins d'un an sur un emprunt à long terme"
+        },
+        {
+          "id": "l4",
+          "text": "Une dette envers le fournisseur d'un équipement"
+        },
+        {
+          "id": "r1",
+          "text": "Ajouter aux ressources propres, comme financement interne"
+        },
+        {
+          "id": "r2",
+          "text": "Ajouter aux créances et à la trésorerie du passif"
+        },
+        {
+          "id": "r3",
+          "text": "Sortir des autres passifs financiers courants pour intégrer les dettes financières"
+        },
+        {
+          "id": "r4",
+          "text": "Sortir des fournisseurs courants pour intégrer les ressources stables"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Les amortissements financent l'entreprise de l'intérieur. Les effets escomptés sont un financement bancaire à court terme qui augmente créances et trésorerie du passif. L'échéance à moins d'un an reste une dette financière, donc une ressource stable. La dette d'équipement finance un investissement et rejoint aussi les ressources stables.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le plan de redressement",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Les actifs courants de la Verrerie Cherif valent 750 000 D pour 600 000 D de passifs courants. Elle veut une liquidité générale de 1,5 sans toucher à ses actifs courants, en remboursant des dettes à court terme par un emprunt à long terme. De combien doit-elle réduire ses passifs courants, en D ?",
+      "answerKey": {
+        "value": 100000,
+        "unit": "D"
+      },
+      "explanation": "Pour une liquidité de 1,5 avec 750 000 D d'actifs courants, les passifs courants doivent valoir 750 000 ÷ 1,5 = 500 000 D. Réduction : 600 000 − 500 000 = 100 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La société Mabrouk compte 390 000 D de ressources propres et 510 000 D de dettes financières. Pour passer à 50 % d'autonomie financière, elle augmente son capital par un apport en argent. Quel apport faut-il, en D ?",
+      "answerKey": {
+        "value": 120000,
+        "unit": "D"
+      },
+      "explanation": "Ressources stables actuelles : 390 000 + 510 000 = 900 000 D. Avec un apport x, l'autonomie devient (390 000 + x) ÷ (900 000 + x) = 0,5, soit 0,5x = 60 000 et x = 120 000 D. Vérification : (390 000 + 120 000) ÷ (900 000 + 120 000) = 510 000 ÷ 1 020 000 = 0,50.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un supermarché affiche une liquidité générale de 2,1, une liquidité réduite de 0,6 et une liquidité immédiate de 0,05. Quelle lecture est la plus pertinente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'écart entre les ratios vient surtout de créances clients trop élevées, à recouvrer plus vite"
+        },
+        {
+          "id": "b",
+          "text": "Sa liquidité est satisfaisante, car son ratio de liquidité générale dépasse nettement 1 et rassure les banques"
+        },
+        {
+          "id": "c",
+          "text": "Il est insolvable à court terme, car sa trésorerie ne couvre que 5 % de ses passifs courants"
+        },
+        {
+          "id": "d",
+          "text": "Son actif courant repose surtout sur des stocks, que la rotation des ventes doit transformer en argent"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'écart entre 2,1 et 0,6 vient des stocks : ils pèsent lourd dans l'actif courant. Un supermarché peut vivre avec peu de trésorerie si ses stocks tournent vite et si le découvert existe. Conclure à une liquidité satisfaisante ou à l'insolvabilité lit un seul ratio, et les créances ne sont pas en cause : le calcul sans stocks les conserve.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour la Biscuiterie Naceur (600 000 D de CA hors taxes, TVA 18 %), le délai moyen des crédits clients ressort à 75 jours, avec 100 000 D de créances clients. Quel montant d'effets est inclus dans ce calcul, en D ?",
+      "answerKey": {
+        "value": 47500,
+        "unit": "D"
+      },
+      "explanation": "CA TTC : 600 000 × 1,18 = 708 000 D. Créances et effets au total : 75 × 708 000 ÷ 360 = 147 500 D. Effets : 147 500 − 100 000 = 47 500 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Cristallerie Ounissi doit 118 000 D à ses fournisseurs pour 500 000 D d'achats hors taxes (TVA 18 %), et ses clients lui doivent 106 200 D pour 400 000 D de chiffre d'affaires hors taxes, sans effets. De combien de jours ses clients paient-ils plus tard qu'elle ne règle ses fournisseurs ?",
+      "answerKey": {
+        "value": 9,
+        "unit": "jours"
+      },
+      "explanation": "Délai fournisseurs : 118 000 × 360 ÷ (500 000 × 1,18) = 118 000 × 360 ÷ 590 000 = 72 jours. Délai clients : 106 200 × 360 ÷ (400 000 × 1,18) = 106 200 × 360 ÷ 472 000 = 81 jours. Écart : 81 − 72 = 9 jours, en défaveur de l'entreprise.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour 720 000 D de coût d'achat des marchandises vendues par an, la durée de stockage d'une entreprise de négoce passe de 36 à 45 jours. De combien son stock moyen augmente-t-il, en D ?",
+      "answerKey": {
+        "value": 18000,
+        "unit": "D"
+      },
+      "explanation": "Stock moyen = coût × durée ÷ 360 (car d = 360 × SM ÷ A). Avant : 720 000 × 36 ÷ 360 = 72 000 D. Après : 720 000 × 45 ÷ 360 = 90 000 D. Hausse : 90 000 − 72 000 = 18 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Une entreprise veut relever sa liquidité immédiate sans que ses passifs courants augmentent. Quelles opérations y contribuent ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Encaisser des créances clients arrivées à échéance"
+        },
+        {
+          "id": "b",
+          "text": "Vendre du stock contre paiement comptant"
+        },
+        {
+          "id": "c",
+          "text": "Acheter des marchandises et les payer comptant"
+        },
+        {
+          "id": "d",
+          "text": "Acheter des marchandises à crédit auprès d'un fournisseur"
+        },
+        {
+          "id": "e",
+          "text": "Encaisser en banque un emprunt remboursable à cinq ans"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "Encaisser une créance, vendre au comptant et encaisser un emprunt à long terme augmentent la trésorerie de l'actif sans toucher aux passifs courants. Payer comptant des achats fait baisser la trésorerie ; acheter à crédit ajoute une dette courante sans trésorerie nouvelle.",
+      "difficulty": 3
+    }
+  ]
+}

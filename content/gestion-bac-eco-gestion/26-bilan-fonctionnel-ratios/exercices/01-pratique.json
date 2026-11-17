@@ -1,0 +1,143 @@
+{
+  "title": "⭐ Exercice : Premiers pas — formules et seuils des ratios",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "short_answer",
+      "prompt": "Quel ratio rapporte uniquement la trésorerie de l'actif aux passifs courants ?",
+      "answerKey": {
+        "text": "liquidité immédiate"
+      },
+      "explanation": "Ce ratio de liquidité ne retient au numérateur que l'argent disponible, sans stocks ni créances. Il mesure la capacité de régler les dettes à court terme avec la seule trésorerie, et sa valeur est souvent faible.",
+      "difficulty": 1,
+      "acceptedAnswers": [
+        "ratio de liquidité immédiate",
+        "le ratio de liquidité immédiate",
+        "la liquidité immédiate"
+      ]
+    },
+    {
+      "prompt": "Selon la règle de l'endettement limite, jusqu'où une société peut-elle porter ses dettes financières à moyen et long terme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au plus au niveau de ses emplois stables"
+        },
+        {
+          "id": "b",
+          "text": "Au plus à la moitié de ses ressources propres"
+        },
+        {
+          "id": "c",
+          "text": "Au plus au double de ses ressources propres"
+        },
+        {
+          "id": "d",
+          "text": "Au plus au niveau de ses ressources propres"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'endettement ne doit pas dépasser les capitaux propres : le ratio dettes financières ÷ ressources propres reste donc au plus à 100 %. Au-delà, les banques refusent généralement de prêter. Les autres plafonds proposés ne figurent pas dans la règle.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le magasin de meubles Hamdi a 360 000 D de dettes financières et 450 000 D de ressources propres. Quel est son ratio d'endettement, en % ?",
+      "answerKey": {
+        "value": 80,
+        "unit": "%"
+      },
+      "explanation": "Endettement = dettes financières ÷ ressources propres = 360 000 ÷ 450 000 = 0,80, soit 80 %. Il reste sous la limite de 100 %.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Quincaillerie Mrad achète 372 000 D de marchandises sur l'année, avec un stock de 24 000 D au 1er janvier et de 36 000 D au 31 décembre. Quel est son coefficient de rotation des marchandises ?",
+      "answerKey": {
+        "value": 12,
+        "unit": "fois par an"
+      },
+      "explanation": "Coût d'achat des marchandises vendues : 372 000 − (36 000 − 24 000) = 360 000 D. Stock moyen : (24 000 + 36 000) ÷ 2 = 30 000 D. Coefficient : 360 000 ÷ 30 000 = 12 renouvellements par an.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Un analyste relève ces ratios dans plusieurs entreprises. Lesquels respectent les repères habituels du cours ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un ratio de financement des emplois stables de 1,15"
+        },
+        {
+          "id": "b",
+          "text": "Un ratio d'endettement de 130 %"
+        },
+        {
+          "id": "c",
+          "text": "Une liquidité générale de 1,4"
+        },
+        {
+          "id": "d",
+          "text": "Un ratio d'autonomie financière de 35 %"
+        },
+        {
+          "id": "e",
+          "text": "Un ratio d'endettement de 90 %"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "1,15 dépasse 1 : les immobilisations sont couvertes. 1,4 est supérieur à 1 : marge de sécurité à court terme. 90 % reste sous la limite de 100 %. En revanche 130 % dépasse l'endettement limite, et 35 % place l'autonomie sous 50 % : la capacité d'emprunt est saturée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'atelier de confection Slim a 59 000 D de créances clients pour un chiffre d'affaires de 500 000 D hors taxes, TVA 18 %. Quel est son délai moyen de crédit clients, en jours ?",
+      "answerKey": {
+        "value": 36,
+        "unit": "jours"
+      },
+      "explanation": "CA TTC : 500 000 × 1,18 = 590 000 D. Délai : 59 000 × 360 ÷ 590 000 = 36 jours. Le chiffre d'affaires est pris TTC, comme la créance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une usine de plastique accorde 40 jours à ses clients et obtient 55 jours de ses fournisseurs. Que peut-on dire de ces délais ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Situation neutre : seule la rotation des stocks compte pour juger"
+        },
+        {
+          "id": "b",
+          "text": "Situation défavorable : elle paie ses fournisseurs avant d'avoir encaissé"
+        },
+        {
+          "id": "c",
+          "text": "Situation favorable : les fournisseurs financent l'attente des clients"
+        },
+        {
+          "id": "d",
+          "text": "Situation défavorable : elle accorde un crédit trop long à ses clients"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un délai fournisseurs de 55 jours supérieur au délai clients de 40 jours signifie que l'entreprise encaisse avant de payer : c'est la situation recherchée. Les clients paient en moyenne 15 jours avant le règlement des fournisseurs.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La parfumerie Zghal a 36 000 D en caisse et en banque, pour 480 000 D de passifs courants. Quel est son ratio de liquidité immédiate, en % ?",
+      "answerKey": {
+        "value": 7.5,
+        "unit": "%"
+      },
+      "explanation": "Liquidité immédiate = trésorerie de l'actif ÷ passifs courants = 36 000 ÷ 480 000 = 0,075, soit 7,5 %. Valeur faible, mais acceptable si l'entreprise peut recourir au découvert bancaire.",
+      "difficulty": 2
+    }
+  ]
+}

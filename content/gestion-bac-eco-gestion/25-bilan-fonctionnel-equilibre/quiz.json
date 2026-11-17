@@ -1,0 +1,165 @@
+{
+  "title": "Test de compréhension ⭐ : Le bilan fonctionnel et l'équilibre financier",
+  "questions": [
+    {
+      "prompt": "Le comptable de la Laiterie Chebbi, à Béja, veut juger l'équilibre financier de son entreprise. Que met en évidence le bilan fonctionnel, que le bilan comptable ne montre pas ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La valeur de revente de chaque bien si l'entreprise cessait son activité"
+        },
+        {
+          "id": "b",
+          "text": "Le bénéfice que les associés pourront se partager à la clôture"
+        },
+        {
+          "id": "c",
+          "text": "La répartition des postes entre cycles longs et cycle court d'exploitation"
+        },
+        {
+          "id": "d",
+          "text": "La valeur nette de chaque immobilisation après déduction de ses amortissements"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le bilan fonctionnel regroupe les postes selon le cycle auquel ils servent : investissement et financement d'un côté, exploitation de l'autre. La valeur de revente relève d'une logique de liquidation, que l'optique fonctionnelle écarte ; le bénéfice distribuable ne dépend pas du classement des postes ; la valeur nette est celle du bilan comptable, alors que le bilan fonctionnel retient les valeurs brutes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pourquoi l'Imprimerie Cherif, à Sousse, inscrit-elle ses presses à leur valeur brute dans son bilan fonctionnel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle rappelle le coût d'acquisition, donc l'effort d'investissement décidé"
+        },
+        {
+          "id": "b",
+          "text": "Elle donne la somme qu'un acheteur paierait aujourd'hui pour du matériel d'occasion"
+        },
+        {
+          "id": "c",
+          "text": "Elle montre la part du matériel déjà consommée depuis son achat"
+        },
+        {
+          "id": "d",
+          "text": "Elle permet d'écarter du bilan les machines entièrement amorties"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La valeur brute est la valeur d'entrée : elle garde la trace de la décision d'investissement, et les amortissements, qui sont un financement interne, rejoignent les ressources stables. Le prix d'occasion relève d'une approche patrimoniale ; la part consommée est justement ce que les amortissements mesurent ; les machines amorties restent au bilan tant qu'elles servent.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Au 31 décembre, la Tannerie Ouerghi, à Ksar Hellal, a 410 000 D d'actifs courants et 245 000 D de passifs courants. Quel est son fonds de roulement, en D ?",
+      "answerKey": {
+        "value": 165000,
+        "unit": "D"
+      },
+      "explanation": "Par le bas du bilan, FDR = actifs courants − passifs courants = 410 000 − 245 000 = 165 000 D. Le résultat est positif : une marge de sécurité existe.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque élément du bilan d'une entreprise à la masse du bilan fonctionnel où il se range.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Une machine de production achetée pour durer"
+        },
+        {
+          "id": "l2",
+          "text": "Le capital apporté par les associés"
+        },
+        {
+          "id": "l3",
+          "text": "Les ventes facturées que les clients n'ont pas encore payées"
+        },
+        {
+          "id": "l4",
+          "text": "La dette envers le fournisseur de matières, payable à 30 jours"
+        },
+        {
+          "id": "r1",
+          "text": "Emplois stables"
+        },
+        {
+          "id": "r2",
+          "text": "Ressources stables"
+        },
+        {
+          "id": "r3",
+          "text": "Actifs courants"
+        },
+        {
+          "id": "r4",
+          "text": "Passifs courants"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La machine est un investissement durable : emploi stable. Le capital est un financement durable : ressource stable. Les créances clients appartiennent au cycle d'exploitation : actif courant. La dette fournisseur se règle à court terme : passif courant.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un comptable construit le bilan fonctionnel de la Cartonnerie Selmi à partir du bilan comptable. Remets les étapes de son travail dans l'ordre.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Calculer le FDR, le BFR et la TN"
+        },
+        {
+          "id": "a",
+          "text": "Regrouper les postes en quatre masses"
+        },
+        {
+          "id": "d",
+          "text": "Relever tous les postes du bilan comptable"
+        },
+        {
+          "id": "b",
+          "text": "Retraiter les postes : valeurs brutes (amortissements et provisions versés aux ressources stables), effets escomptés, échéances à moins d'un an, fournisseurs d'immobilisations"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "d",
+          "b",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "On part des postes du bilan comptable, on les retraite pour que chacun rejoigne le cycle auquel il sert, puis on les regroupe en quatre masses. Les indicateurs se calculent sur ces masses, donc en dernier.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le FDR de la Verrerie Tlili est de 92 000 D et son BFR de 118 000 D. Quelle est sa trésorerie nette, en D, avec son signe ?",
+      "answerKey": {
+        "value": -26000,
+        "unit": "D"
+      },
+      "explanation": "TN = FDR − BFR = 92 000 − 118 000 = −26 000 D. La TN est négative : le FDR ne finance qu'une partie du BFR, le reste vient de crédits de trésorerie.",
+      "difficulty": 2
+    }
+  ]
+}
