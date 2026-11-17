@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Les premiers coups de chronomètre",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Deux comprimés effervescents identiques, A et B, sont plongés au même instant dans deux verres. Après 40 s, A a dégagé 18 mL de dioxyde de carbone ; après 80 s, B en a dégagé 30 mL (mêmes conditions). Lequel a la plus grande vitesse moyenne depuis le début ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "B : il a dégagé plus de gaz (30 mL contre 18 mL), donc il est plus rapide."
+        },
+        {
+          "id": "b",
+          "text": "A : 18 mL en 40 s représentent plus que 30 mL en 80 s."
+        },
+        {
+          "id": "c",
+          "text": "B : il a réagi plus longtemps, donc sa vitesse est plus grande."
+        },
+        {
+          "id": "d",
+          "text": "Aucun : les durées diffèrent, donc la comparaison est impossible."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le gaz formé mesure l'avancement : v_moy est proportionnelle à V/Δt. Pour A : 18/40 = 0,45 mL·s⁻¹ ; pour B : 30/80 = 0,375 mL·s⁻¹. A a la plus grande vitesse moyenne ✓. Dire que B est plus rapide parce qu'il a dégagé plus de gaz oublie que sa durée est deux fois plus longue. Dire qu'il a réagi plus longtemps ne prouve rien : une durée plus longue abaisse la vitesse moyenne à avancement donné. Dire que la comparaison est impossible ignore que le quotient Δx/Δt la rend possible dès que les deux durées sont connues.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un mélange de volume V = 0,150 L, l'avancement de la réaction vaut x = 3,0·10⁻³ mol. Quel est l'avancement volumique y = x/V ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,0·10⁻² mol·L⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "2,0·10⁻⁵ mol·L⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "4,5·10⁻⁴ mol·L⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "5,0·10¹ mol·L⁻¹"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'avancement volumique est y = x/V = 3,0·10⁻³ / 0,150 = 2,0·10⁻² mol·L⁻¹ ✓. La valeur 2,0·10⁻⁵ divise par 150 : elle garde le volume en millilitres au lieu de litres. La valeur 4,5·10⁻⁴ multiplie x par V au lieu de le diviser. La valeur 5,0·10¹ divise V par x : le quotient est inversé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'avancement d'une réaction vaut 0 à t = 0, 1,8·10⁻³ mol à 20 s, 3,0·10⁻³ mol à 40 s et 3,8·10⁻³ mol à 60 s. Quelle est la vitesse moyenne entre 20 s et 60 s, en mol·s⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,0·10⁻⁵"
+        },
+        {
+          "id": "b",
+          "text": "6,0·10⁻⁵"
+        },
+        {
+          "id": "c",
+          "text": "5,0·10⁻⁵"
+        },
+        {
+          "id": "d",
+          "text": "6,3·10⁻⁵"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Entre 20 s et 60 s, Δx = 3,8·10⁻³ − 1,8·10⁻³ = 2,0·10⁻³ mol et Δt = 40 s, donc v_moy = 2,0·10⁻³/40 = 5,0·10⁻⁵ mol·s⁻¹ ✓. La valeur 6,3·10⁻⁵ divise x(60) par 60 : elle compte l'avancement gagné avant 20 s. La valeur 6,0·10⁻⁵ est la vitesse moyenne sur l'intervalle de 20 s à 40 s, et 4,0·10⁻⁵ celle de 40 s à 60 s : ce sont deux autres intervalles que celui demandé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La vitesse moyenne d'une réaction vaut v_moy = 3,0·10⁻⁵ mol·s⁻¹ dans un mélange de volume 150 mL. Quelle est sa vitesse volumique moyenne, en mol·L⁻¹·s⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,0·10⁻⁴"
+        },
+        {
+          "id": "b",
+          "text": "4,5·10⁻⁶"
+        },
+        {
+          "id": "c",
+          "text": "2,0·10⁻⁷"
+        },
+        {
+          "id": "d",
+          "text": "4,5·10⁻³"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La vitesse volumique moyenne est v_moy/V avec V = 0,150 L : 3,0·10⁻⁵ / 0,150 = 2,0·10⁻⁴ mol·L⁻¹·s⁻¹ ✓. La valeur 4,5·10⁻⁶ multiplie par 0,150 au lieu de diviser. La valeur 2,0·10⁻⁷ divise par 150, le volume non converti en litres. La valeur 4,5·10⁻³ multiplie par 150 : le volume est à la fois non converti et placé au numérateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On suit la formation du diiode I₂ (coefficient 1, absent au départ) dans un volume constant : [I₂] est tracée en mmol·L⁻¹ en fonction de t en min. La tangente à la courbe au point M d'abscisse 10 min passe par A(0 ; 0,9) et B(20 ; 5,1). Quelle est la vitesse volumique de la réaction à t = 10 min, en mol·L⁻¹·s⁻¹ ?\n<svg viewBox=\"0 0 340 236\"><title>Courbe [I₂](t) et tangente au point d'abscisse 10 min passant par A et B</title><line x1=\"54.0\" y1=\"26\" x2=\"54.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"26\" x2=\"114.4\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"174.9\" y1=\"26\" x2=\"174.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"235.3\" y1=\"26\" x2=\"235.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"295.8\" y1=\"26\" x2=\"295.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190.0\" x2=\"326\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"166.6\" x2=\"326\" y2=\"166.6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"143.1\" x2=\"326\" y2=\"143.1\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"119.7\" x2=\"326\" y2=\"119.7\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"96.3\" x2=\"326\" y2=\"96.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"72.9\" x2=\"326\" y2=\"72.9\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"49.4\" x2=\"326\" y2=\"49.4\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"54.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"114.4\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10</text><text x=\"174.9\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">20</text><text x=\"235.3\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"295.8\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">40</text><text x=\"48.0\" y=\"194.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"170.6\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"48.0\" y=\"147.1\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"48.0\" y=\"123.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><text x=\"48.0\" y=\"100.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"48.0\" y=\"76.9\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><text x=\"48.0\" y=\"53.4\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><text x=\"334.0\" y=\"218.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (min)</text><text x=\"60.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">[I₂] (mmol·L⁻¹)</text><polyline points=\"54.0,190.0 57.0,185.2 60.0,180.6 63.1,176.1 66.1,171.8 69.1,167.6 72.1,163.6 75.2,159.7 78.2,156.0 81.2,152.3 84.2,148.8 87.2,145.4 90.3,142.2 93.3,139.0 96.3,136.0 99.3,133.0 102.4,130.2 105.4,127.4 108.4,124.8 111.4,122.2 114.4,119.7 117.5,117.3 120.5,115.0 123.5,112.8 126.5,110.6 129.6,108.5 132.6,106.5 135.6,104.6 138.6,102.7 141.6,100.9 144.7,99.1 147.7,97.4 150.7,95.8 153.7,94.2 156.8,92.7 159.8,91.2 162.8,89.8 165.8,88.4 168.8,87.1 171.9,85.8 174.9,84.6 177.9,83.4 180.9,82.2 184.0,81.1 187.0,80.0 190.0,79.0 193.0,78.0 196.0,77.0 199.1,76.1 202.1,75.2 205.1,74.3 208.1,73.4 211.2,72.6 214.2,71.8 217.2,71.1 220.2,70.3 223.2,69.6 226.3,68.9 229.3,68.3 232.3,67.6 235.3,67.0 238.4,66.4 241.4,65.8 244.4,65.3 247.4,64.7 250.4,64.2 253.5,63.7 256.5,63.2 259.5,62.7 262.5,62.3 265.6,61.9 268.6,61.4 271.6,61.0 274.6,60.6 277.6,60.2 280.7,59.9 283.7,59.5 286.7,59.2 289.7,58.8 292.8,58.5 295.8,58.2 298.8,57.9 301.8,57.6 304.8,57.3 307.9,57.1 310.9,56.8 313.9,56.6 316.9,56.3 320.0,56.1 323.0,55.9 326.0,55.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"54.0\" y1=\"168.9\" x2=\"199.1\" y2=\"50.8\" stroke=\"#c2410c\" stroke-width=\"2\"/><circle cx=\"54.0\" cy=\"168.9\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"174.9\" cy=\"70.5\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"114.4\" cy=\"119.7\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><text x=\"65.0\" y=\"182.9\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">A</text><text x=\"180.9\" y=\"88.5\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">B</text><text x=\"126.4\" y=\"133.7\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">M</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,1·10⁻⁴"
+        },
+        {
+          "id": "b",
+          "text": "3,5·10⁻³"
+        },
+        {
+          "id": "c",
+          "text": "1,3·10⁻²"
+        },
+        {
+          "id": "d",
+          "text": "3,5·10⁻⁶"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme I₂ a pour coefficient 1 et est absent au départ, [I₂] = y et v_vol = d[I₂]/dt, pente de la tangente : (5,1 − 0,9)/20 = 0,21 mmol·L⁻¹·min⁻¹ = 2,1·10⁻⁴ mol·L⁻¹·min⁻¹. En secondes : 2,1·10⁻⁴/60 = 3,5·10⁻⁶ mol·L⁻¹·s⁻¹ ✓. La valeur 2,1·10⁻⁴ reste en minutes. La valeur 3,5·10⁻³ divise 0,21 par 60 sans convertir les millimoles en moles. La valeur 1,3·10⁻² multiplie par 60 au lieu de diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la réaction S₂O₈²⁻ + 2 I⁻ → I₂ + 2 SO₄²⁻, menée à volume constant, la vitesse volumique vaut 1,5·10⁻³ mol·L⁻¹·min⁻¹ à un instant donné. Que vaut d[SO₄²⁻]/dt à cet instant, en mol·L⁻¹·min⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6,0·10⁻³"
+        },
+        {
+          "id": "b",
+          "text": "+3,0·10⁻³"
+        },
+        {
+          "id": "c",
+          "text": "+1,5·10⁻³"
+        },
+        {
+          "id": "d",
+          "text": "+7,5·10⁻⁴"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le coefficient de SO₄²⁻ vaut 2 et SO₄²⁻ est un produit : v_vol = (1/2)·d[SO₄²⁻]/dt, donc d[SO₄²⁻]/dt = 2·v_vol = +3,0·10⁻³ mol·L⁻¹·min⁻¹ ✓. La valeur −6,0·10⁻³ traite SO₄²⁻ comme un réactif (signe moins) et applique le coefficient 2 deux fois : le signe et le facteur sont faux. La valeur +1,5·10⁻³ oublie le coefficient. La valeur +7,5·10⁻⁴ divise par 2 au lieu de multiplier.",
+      "difficulty": 2
+    }
+  ]
+}

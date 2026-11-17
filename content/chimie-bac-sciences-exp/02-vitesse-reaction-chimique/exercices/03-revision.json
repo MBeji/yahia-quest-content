@@ -1,0 +1,141 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Vitesse d'une réaction chimique",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle est l'unité de la vitesse moyenne d'une réaction chimique dans le système international ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "mol·L⁻¹·s⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "mol·s⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "mol·s"
+        },
+        {
+          "id": "d",
+          "text": "L·mol⁻¹·s⁻¹"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La vitesse moyenne est un avancement (en mol) divisé par une durée (en s) : Δx/Δt s'exprime en mol·s⁻¹ ✓. L'unité mol·L⁻¹·s⁻¹ est celle de la vitesse volumique, obtenue en divisant encore par le volume. L'unité mol·s multiplie l'avancement par la durée au lieu de le diviser. L'unité L·mol⁻¹·s⁻¹ inverse le rôle de la quantité de matière et du volume.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour obtenir la vitesse instantanée d'une réaction à l'instant t₁ à partir de la courbe x = f(t), que doit-on mesurer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La pente de la droite joignant l'origine au point d'abscisse t₁."
+        },
+        {
+          "id": "b",
+          "text": "La valeur de x(t₁) lue sur l'axe des ordonnées."
+        },
+        {
+          "id": "c",
+          "text": "L'aire sous la courbe entre 0 et t₁."
+        },
+        {
+          "id": "d",
+          "text": "La pente de la tangente à la courbe au point d'abscisse t₁."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La vitesse instantanée est la limite de la vitesse moyenne quand l'intervalle se resserre : c'est la pente de la tangente au point d'abscisse t₁ ✓. La droite joignant l'origine à ce point est une sécante, qui donne la vitesse moyenne entre 0 et t₁. La valeur de x(t₁) est un avancement, pas une vitesse. L'aire sous la courbe n'a pas de lien avec la vitesse : c'est la pente qui en a un.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On relève l'avancement x (en 10⁻⁴ mol) d'une réaction : x = 0 à t = 0 ; 1,9 à t = 10 s ; 3,4 à t = 20 s ; 4,5 à t = 30 s ; 5,3 à t = 40 s. Calculer la vitesse moyenne entre t = 10 s et t = 30 s, en 10⁻⁵ mol·s⁻¹ (à 0,1 près).",
+      "answerKey": {
+        "value": 1.3,
+        "tolerance": 0.05,
+        "unit": "10⁻⁵ mol·s⁻¹"
+      },
+      "explanation": "Entre 10 s et 30 s, Δx = 4,5·10⁻⁴ − 1,9·10⁻⁴ = 2,6·10⁻⁴ mol et Δt = 20 s, donc v_moy = 2,6·10⁻⁴/20 = 1,3·10⁻⁵ mol·s⁻¹, soit 1,3 en 10⁻⁵ mol·s⁻¹. Le résultat est à comparer avec la vitesse moyenne entre 0 et 10 s, 1,9·10⁻⁵ mol·s⁻¹, plus grande : la vitesse diminue.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La décomposition 2 H₂O₂ → 2 H₂O + O₂(g) a lieu dans V = 100 mL de solution ; le dioxygène est recueilli (V_m = 24 L·mol⁻¹). À l'instant t₁, la tangente à la courbe V(O₂) = f(t) a pour pente 0,60 mL·s⁻¹. Quelle est la vitesse volumique de la réaction à t₁, en mol·L⁻¹·s⁻¹ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,5·10⁻⁴"
+        },
+        {
+          "id": "b",
+          "text": "2,5·10⁻⁵"
+        },
+        {
+          "id": "c",
+          "text": "6,0·10⁻³"
+        },
+        {
+          "id": "d",
+          "text": "2,5·10⁻¹"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le coefficient de O₂ vaut 1 : dx/dt = (1/V_m)·dV/dt = 6,0·10⁻⁴ L·s⁻¹ / 24 L·mol⁻¹ = 2,5·10⁻⁵ mol·s⁻¹. Puis v_vol = (dx/dt)/V = 2,5·10⁻⁵/0,100 = 2,5·10⁻⁴ mol·L⁻¹·s⁻¹ ✓. La valeur 2,5·10⁻⁵ est la vitesse v, non divisée par le volume de la solution. La valeur 6,0·10⁻³ oublie le volume molaire. La valeur 2,5·10⁻¹ garde la pente en millilitres par seconde.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'avancement x d'une transformation totale est tracé en mmol (figure). La vitesse moyenne entre t = 0 et le point N d'abscisse 36 min, où x = 4,4 mmol, est la pente de la sécante en pointillés. Soit t* l'instant où la vitesse instantanée égale cette vitesse moyenne. Où se situe t* ?\n<svg viewBox=\"0 0 340 236\"><title>Courbe x(t) et sécante entre t = 0 et t = 36 min</title><line x1=\"54.0\" y1=\"26\" x2=\"54.0\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"90.3\" y1=\"26\" x2=\"90.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"126.5\" y1=\"26\" x2=\"126.5\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"162.8\" y1=\"26\" x2=\"162.8\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"199.1\" y1=\"26\" x2=\"199.1\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"235.3\" y1=\"26\" x2=\"235.3\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"271.6\" y1=\"26\" x2=\"271.6\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"307.9\" y1=\"26\" x2=\"307.9\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190.0\" x2=\"326\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"162.7\" x2=\"326\" y2=\"162.7\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"135.3\" x2=\"326\" y2=\"135.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"108.0\" x2=\"326\" y2=\"108.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"80.7\" x2=\"326\" y2=\"80.7\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"53.3\" x2=\"326\" y2=\"53.3\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><text x=\"54.0\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"90.3\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><text x=\"126.5\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">12</text><text x=\"162.8\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">18</text><text x=\"199.1\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">24</text><text x=\"235.3\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">30</text><text x=\"271.6\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">36</text><text x=\"307.9\" y=\"204.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">42</text><text x=\"48.0\" y=\"194.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><text x=\"48.0\" y=\"166.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><text x=\"48.0\" y=\"139.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><text x=\"48.0\" y=\"112.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><text x=\"48.0\" y=\"84.7\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"48.0\" y=\"57.3\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><text x=\"334.0\" y=\"218.0\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">t (min)</text><text x=\"60.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">x (mmol)</text><polyline points=\"54.0,190.0 57.0,186.1 60.0,182.3 63.1,178.7 66.1,175.1 69.1,171.6 72.1,168.3 75.2,165.0 78.2,161.8 81.2,158.7 84.2,155.7 87.2,152.8 90.3,150.0 93.3,147.2 96.3,144.5 99.3,142.0 102.4,139.4 105.4,137.0 108.4,134.6 111.4,132.3 114.4,130.0 117.5,127.9 120.5,125.7 123.5,123.7 126.5,121.7 129.6,119.7 132.6,117.8 135.6,116.0 138.6,114.2 141.6,112.5 144.7,110.8 147.7,109.2 150.7,107.6 153.7,106.0 156.8,104.5 159.8,103.1 162.8,101.7 165.8,100.3 168.8,98.9 171.9,97.6 174.9,96.4 177.9,95.2 180.9,94.0 184.0,92.8 187.0,91.7 190.0,90.6 193.0,89.5 196.0,88.5 199.1,87.5 202.1,86.5 205.1,85.6 208.1,84.7 211.2,83.8 214.2,82.9 217.2,82.1 220.2,81.2 223.2,80.5 226.3,79.7 229.3,78.9 232.3,78.2 235.3,77.5 238.4,76.8 241.4,76.1 244.4,75.5 247.4,74.9 250.4,74.2 253.5,73.6 256.5,73.1 259.5,72.5 262.5,72.0 265.6,71.4 268.6,70.9 271.6,70.4 274.6,69.9 277.6,69.5 280.7,69.0 283.7,68.6 286.7,68.1 289.7,67.7 292.8,67.3 295.8,66.9 298.8,66.5 301.8,66.1 304.8,65.8 307.9,65.4 310.9,65.1 313.9,64.7 316.9,64.4 320.0,64.1 323.0,63.8 326.0,63.5\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"54.0\" y1=\"190.0\" x2=\"271.6\" y2=\"70.4\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/><circle cx=\"54.0\" cy=\"190.0\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><circle cx=\"271.6\" cy=\"70.4\" r=\"3.6\" fill=\"#0f172a\" stroke=\"#ffffff\" stroke-width=\"1\"/><text x=\"273.6\" y=\"90.4\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">N</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avant 18 min : au milieu de l'intervalle, la vitesse est déjà passée sous la moyenne."
+        },
+        {
+          "id": "b",
+          "text": "Exactement à 18 min : au milieu de l'intervalle, la vitesse vaut la moyenne."
+        },
+        {
+          "id": "c",
+          "text": "À 36 min : la courbe y rejoint la sécante, donc leurs pentes sont égales."
+        },
+        {
+          "id": "d",
+          "text": "Après 18 min : la vitesse ne baisse sous la moyenne que dans la seconde moitié de l'intervalle."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La vitesse moyenne vaut 4,4/36 ≈ 0,12 mmol·min⁻¹. La vitesse décroît, et plus vite au début : à t = 0 la courbe est bien plus raide que la sécante (≈ 0,29 mmol·min⁻¹), et au milieu de l'intervalle, à 18 min, elle est déjà moins raide qu'elle (pente ≈ 0,10 mmol·min⁻¹ si l'on y trace la tangente). L'égalité a donc lieu avant 18 min ✓ (vers 15 min). Placer t* exactement à 18 min suppose une vitesse qui baisse régulièrement, ce qui n'est pas le cas de cette courbe. Placer t* à 36 min confond le point où la courbe rejoint la sécante avec celui où leurs pentes sont égales. Placer t* après 18 min supposerait qu'à 18 min la courbe soit encore plus raide que la sécante, ce que la figure dément.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans V = 80,0 mL, la réaction S₂O₈²⁻ + 2 I⁻ → I₂ + 2 SO₄²⁻ part de nᵢ(I⁻) = 2,4·10⁻³ mol. Entre t = 0 et t = 200 s, la vitesse volumique moyenne vaut 2,5·10⁻⁵ mol·L⁻¹·s⁻¹. Quelle quantité d'ions I⁻ reste-t-il à t = 200 s ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,0·10⁻³ mol"
+        },
+        {
+          "id": "b",
+          "text": "8,0·10⁻⁴ mol"
+        },
+        {
+          "id": "c",
+          "text": "1,6·10⁻³ mol"
+        },
+        {
+          "id": "d",
+          "text": "2,8·10⁻³ mol"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'avancement gagné vaut x = v_volmoy × V × Δt = 2,5·10⁻⁵ × 0,0800 × 200 = 4,0·10⁻⁴ mol. I⁻ a pour coefficient 2 : n(I⁻) = 2,4·10⁻³ − 2 × 4,0·10⁻⁴ = 1,6·10⁻³ mol ✓. La valeur 2,0·10⁻³ retranche x au lieu de 2x. La valeur 8,0·10⁻⁴ est la quantité d'ions I⁻ consommée, pas celle qui reste. La valeur 2,8·10⁻³ ajoute 2x au lieu de le retrancher.",
+      "difficulty": 3
+    }
+  ]
+}
