@@ -1,0 +1,147 @@
+{
+  "title": "⭐ Exercice : Les premiers calculs de Π",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle est la fonction des concentrations Π de l'équation 2 Fe³⁺ + 3 I⁻ ⇄ 2 Fe²⁺ + I₃⁻ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[Fe²⁺][I₃⁻] / ([Fe³⁺][I⁻])"
+        },
+        {
+          "id": "b",
+          "text": "[Fe³⁺]²[I⁻]³ / ([Fe²⁺]²[I₃⁻])"
+        },
+        {
+          "id": "c",
+          "text": "[Fe²⁺]²[I₃⁻] / ([Fe³⁺]²[I⁻]²)"
+        },
+        {
+          "id": "d",
+          "text": "[Fe²⁺]²[I₃⁻] / ([Fe³⁺]²[I⁻]³)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les entités de droite, Fe²⁺ (coefficient 2) et I₃⁻ (coefficient 1), vont au numérateur ; celles de gauche, Fe³⁺ (coefficient 2) et I⁻ (coefficient 3), au dénominateur ; chaque coefficient devient un exposant : Π = [Fe²⁺]²[I₃⁻] / ([Fe³⁺]²[I⁻]³) ✓. Sans exposants, on oublie les coefficients. Avec Fe³⁺ et I⁻ au numérateur, on écrit l'inverse. Avec [I⁻]² au dénominateur, on recopie l'exposant de l'ion voisin au lieu du coefficient 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un système ne contient que de l'acide éthanoïque et de l'éthanol, sans ester ni eau. Que vaut Π pour l'équation d'estérification ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Π = 0"
+        },
+        {
+          "id": "b",
+          "text": "Π = 1"
+        },
+        {
+          "id": "c",
+          "text": "Π = K"
+        },
+        {
+          "id": "d",
+          "text": "Π est infiniment grande"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le numérateur de Π contient [ester][eau], qui est nul puisqu'il n'y a ni ester ni eau : Π = 0 ✓. La valeur 1 n'est pas imposée par la composition. La valeur K n'est atteinte qu'à l'équilibre. Une valeur infinie correspond au cas inverse, où un réactif est absent et le dénominateur est nul.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles entités figurent dans la fonction usuelle Π de CH₃COOH + H₂O ⇄ CH₃COO⁻ + H₃O⁺, en solution aqueuse diluée ? (Plusieurs réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "CH₃COOH"
+        },
+        {
+          "id": "b",
+          "text": "CH₃COO⁻"
+        },
+        {
+          "id": "c",
+          "text": "H₃O⁺"
+        },
+        {
+          "id": "d",
+          "text": "H₂O"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La fonction usuelle est Π = [CH₃COO⁻][H₃O⁺] / [CH₃COOH] : l'acide, sa base conjuguée et les ions H₃O⁺ y figurent. L'eau n'y figure pas : c'est le solvant d'une solution aqueuse diluée, sa concentration (≈ 55,4 mol·L⁻¹) est constante et n'est pas écrite.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans V = 0,250 L, on a n(Fe³⁺) = 4,0·10⁻³ mol, n(SCN⁻) = 2,0·10⁻³ mol et n(Fe(SCN)²⁺) = 3,0·10⁻³ mol, pour l'équation Fe³⁺ + SCN⁻ ⇄ Fe(SCN)²⁺. Calculer Π (sans unité, à l'unité près).",
+      "answerKey": {
+        "value": 93.75,
+        "tolerance": 1.0
+      },
+      "explanation": "Les coefficients ne s'équilibrent pas (deux entités à gauche, une à droite) : V ne se simplifie pas, il faut les concentrations. [Fe³⁺] = 4,0·10⁻³/0,250 = 0,016 ; [SCN⁻] = 2,0·10⁻³/0,250 = 0,0080 ; [Fe(SCN)²⁺] = 3,0·10⁻³/0,250 = 0,012 mol·L⁻¹. Π = 0,012 / (0,016 × 0,0080) = 0,012 / 1,28·10⁻⁴ ≈ 93,75, soit environ 94. Avec les quantités de matière, on trouverait 375, ce qui est faux.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une solution aqueuse diluée à 25 °C, [H₃O⁺] = 2,0·10⁻⁴ mol·L⁻¹ et [OH⁻] = 5,0·10⁻¹¹ mol·L⁻¹. Quelle est la valeur de la fonction usuelle Π de 2 H₂O ⇄ H₃O⁺ + OH⁻ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,3·10⁻¹⁸"
+        },
+        {
+          "id": "b",
+          "text": "1,0·10⁻¹⁴"
+        },
+        {
+          "id": "c",
+          "text": "2,0·10⁻⁴"
+        },
+        {
+          "id": "d",
+          "text": "4,0·10⁶"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La fonction usuelle de l'ionisation de l'eau est Π = [H₃O⁺][OH⁻] = 2,0·10⁻⁴ × 5,0·10⁻¹¹ = 1,0·10⁻¹⁴ ✓. Le résultat 3,3·10⁻¹⁸ garde [H₂O]² = 55,4² au dénominateur, alors que l'eau solvant est omise. Le résultat 2,0·10⁻⁴ vient d'une somme des concentrations. Le résultat 4,0·10⁶ est le quotient [H₃O⁺]/[OH⁻] au lieu du produit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un mélange contient 0,30 mol d'acide éthanoïque, 0,30 mol d'éthanol, 0 mol d'ester et 0,20 mol d'eau. Après un avancement x = 0,10 mol de l'estérification, quelle est la valeur de Π ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25"
+        },
+        {
+          "id": "b",
+          "text": "0,33"
+        },
+        {
+          "id": "c",
+          "text": "0,75"
+        },
+        {
+          "id": "d",
+          "text": "1,3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Après x = 0,10 mol, il reste 0,20 mol d'acide et d'alcool, il s'est formé 0,10 mol d'ester et l'eau passe à 0,20 + 0,10 = 0,30 mol. Π = (0,10 × 0,30) / (0,20 × 0,20) = 0,030 / 0,040 = 0,75 ✓. Le résultat 0,25 oublie l'eau déjà présente et prend n(eau) = 0,10. Le résultat 0,33 garde les réactifs à leur valeur initiale 0,30. Le résultat 1,3 est l'inverse.",
+      "difficulty": 2
+    }
+  ]
+}

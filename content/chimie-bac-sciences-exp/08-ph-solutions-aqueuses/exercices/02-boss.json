@@ -1,0 +1,120 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des pH",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une solution d'un acide HA, de concentration 1,0·10⁻² mol·L⁻¹, a pour pH 3,6 à 25 °C. En négligeant les ions de l'eau, calculer le taux d'avancement final τ_f de la réaction de HA avec l'eau, en pourcentage, arrondi au dixième.",
+      "answerKey": {
+        "value": 2.5,
+        "tolerance": 0.1,
+        "unit": "%"
+      },
+      "explanation": "En négligeant les ions de l'eau, [H₃O⁺] = τ_f·C. Ici [H₃O⁺] = 10^(−3,6) = 2,5·10⁻⁴ mol·L⁻¹, donc τ_f = 2,5·10⁻⁴ / 1,0·10⁻² = 2,5·10⁻², soit 2,5 % ✓. Un acide fort aurait τ_f = 100 % : HA est un acide faible, et il est faiblement ionisé puisque 2,5 % < 5 %.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux solutions S₁ et S₂ d'acides HA₁ et HA₂ ont pour pH 2,6 et 3,4. Après dilution au centième, leurs pH sont 4,6 et 4,4. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "HA₁ est faible et HA₂ est fort : ΔpH = 2 pour S₁ et 1 pour S₂"
+        },
+        {
+          "id": "b",
+          "text": "HA₁ est fort et HA₂ est faible : ΔpH = 2 pour S₁ et 1 pour S₂"
+        },
+        {
+          "id": "c",
+          "text": "HA₁ et HA₂ sont faibles : ΔpH = 2 pour S₁ et 1 pour S₂"
+        },
+        {
+          "id": "d",
+          "text": "HA₁ et HA₂ sont forts : ΔpH = 2 pour S₁ et 1 pour S₂"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dilution au centième : n = 100 et log n = 2. Le pH d'un acide fort augmente de log n = 2 (c'est le cas de S₁), celui d'un acide faible de ½ log n = 1 (c'est le cas de S₂) : HA₁ est fort et HA₂ est faible ✓. Attribuer l'écart de 2 à un acide faible est impossible, car son pH ne varie que de 1 ; deux acides faibles auraient chacun un écart de 1, deux acides forts chacun un écart de 2.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'acide benzoïque a pour constante d'acidité Kₐ = 6,3·10⁻⁵. Calculer à 25 °C le pH d'une solution d'acide benzoïque de concentration 5,0·10⁻² mol·L⁻¹, arrondi au centième, après avoir contrôlé l'approximation utilisée.",
+      "answerKey": {
+        "value": 2.75,
+        "tolerance": 0.02
+      },
+      "explanation": "pKₐ = −log (6,3·10⁻⁵) = 4,20. Pour un acide faible, pH = ½ (pKₐ − log C) = ½ (4,20 + 1,30) = 2,75 ✓. Contrôle : τ_f = 10^(pH − pKₐ) = 10^(2,75 − 4,20) = 3,5·10⁻² < 0,05 et pH < 6, donc la relation est utilisable. Avec le signe de log C inversé, on trouverait ½ (4,20 − 1,30) = 1,45 ; avec pH = −log C, on trouverait 1,30.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "On dissout du chlorure d'ammonium NH₄Cl dans l'eau, à 25 °C, avec C = 1,0·10⁻² mol·L⁻¹ ; pKₐ(NH₄⁺/NH₃) = 9,25. Quelles affirmations sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'ion chlorure est inerte : il ne réagit pas avec l'eau"
+        },
+        {
+          "id": "b",
+          "text": "L'ion ammonium réagit avec l'eau : NH₄⁺ + H₂O ⇄ NH₃ + H₃O⁺"
+        },
+        {
+          "id": "c",
+          "text": "La solution est basique, car elle contient de l'ammoniac NH₃"
+        },
+        {
+          "id": "d",
+          "text": "Le pH se calcule par ½ (pKₐ − log C), après contrôle de τ_f < 0,05 et de pH < 6"
+        },
+        {
+          "id": "e",
+          "text": "Le pH vaut −log C, comme pour tout acide de concentration connue"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "d"]
+      },
+      "explanation": "L'ion chlorure, base conjuguée d'un acide fort, est inerte ✓. L'ion ammonium est un acide faible : il réagit avec l'eau en formant NH₃ et H₃O⁺ ✓, et le pH se calcule par ½ (pKₐ − log C) = ½ (9,25 + 2) = 5,6, avec τ_f = 10^(5,6 − 9,25) = 2,2·10⁻⁴ < 0,05 et pH < 6 ✓. La solution n'est pas basique : NH₃ se forme en très faible quantité et la réaction produit des ions H₃O⁺, donc le pH est inférieur à 7. La relation pH = −log C suppose un acide fort, ce que n'est pas NH₄⁺.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une solution de base faible B, de concentration 2,0·10⁻² mol·L⁻¹, a pour pH 10,8 à 25 °C. Calculer le pKₐ du couple BH⁺/B, arrondi au dixième, après contrôle de l'approximation utilisée.",
+      "answerKey": {
+        "value": 9.3,
+        "tolerance": 0.1
+      },
+      "explanation": "Pour une base faible faiblement ionisée, pH = ½ (14 + pKₐ + log C), donc pKₐ = 2 pH − 14 − log C = 21,6 − 14 + 1,70 = 9,3 ✓. Contrôle : τ_f = 10^(pKₐ − pH) = 10^(9,3 − 10,8) = 3,2·10⁻² < 0,05 et pH > 8, donc la relation est valable. Oublier le terme −log C donnerait 7,6 ; le prendre avec le mauvais signe donnerait 5,9.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "<svg viewBox=\"0 0 340 236\"><title>Droite pH en fonction de −log C d'une solution d'acide faible, passant par deux points mesurés</title><line x1=\"54\" y1=\"190\" x2=\"332\" y2=\"190\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"190\" x2=\"54\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"336,190 328,186 328,194\" fill=\"#0f172a\"/><polygon points=\"54,14 50,22 58,22\" fill=\"#0f172a\"/><line x1=\"119\" y1=\"190\" x2=\"119\" y2=\"195\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"119\" y=\"207\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"184\" y1=\"190\" x2=\"184\" y2=\"195\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"184\" y=\"207\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"249\" y1=\"190\" x2=\"249\" y2=\"195\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"249\" y=\"207\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"314\" y1=\"190\" x2=\"314\" y2=\"195\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"314\" y=\"207\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><text x=\"48\" y=\"207\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">0</text><line x1=\"49\" y1=\"163.333\" x2=\"54\" y2=\"163.333\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"167.333\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">1</text><line x1=\"49\" y1=\"136.667\" x2=\"54\" y2=\"136.667\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"140.667\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">2</text><line x1=\"49\" y1=\"110\" x2=\"54\" y2=\"110\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"114\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3</text><line x1=\"49\" y1=\"83.3333\" x2=\"54\" y2=\"83.3333\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"87.3333\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4</text><line x1=\"49\" y1=\"56.6667\" x2=\"54\" y2=\"56.6667\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"60.6667\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">5</text><line x1=\"49\" y1=\"30\" x2=\"54\" y2=\"30\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"34\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">6</text><text x=\"330\" y=\"220\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">−log C</text><text x=\"60\" y=\"12\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">pH</text><polyline points=\"86.5,100.7 281.5,60.7\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><line x1=\"54\" y1=\"94\" x2=\"119\" y2=\"94\" stroke=\"#64748b\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/><line x1=\"119\" y1=\"94\" x2=\"119\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/><circle cx=\"119\" cy=\"94\" r=\"4\" fill=\"#0f6e56\"/><line x1=\"54\" y1=\"67.3333\" x2=\"249\" y2=\"67.3333\" stroke=\"#64748b\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/><line x1=\"249\" y1=\"67.3333\" x2=\"249\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.1\" stroke-dasharray=\"4 4\"/><circle cx=\"249\" cy=\"67.3\" r=\"4\" fill=\"#0f6e56\"/><text x=\"62\" y=\"88\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">3,6</text><text x=\"62\" y=\"61.3333\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">4,6</text></svg>La droite ci-dessus donne le pH de solutions successives d'un acide faible HA, en fonction de −log C. Les ions de l'eau sont négligés et τ_f < 0,05 sur tout le domaine tracé. Quel est le pKₐ du couple HA/A⁻ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,1"
+        },
+        {
+          "id": "b",
+          "text": "3,6"
+        },
+        {
+          "id": "c",
+          "text": "6,2"
+        },
+        {
+          "id": "d",
+          "text": "7,2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour un acide faible, pH = ½ (pKₐ − log C) = ½ pKₐ + ½ (−log C) : la droite a pour pente ½, ce que confirme le tracé (pH de 3,6 à 4,6 quand −log C passe de 1 à 3). En un point : pKₐ = 2 pH − (−log C) = 2 × 3,6 − 1 = 6,2, et au second point 2 × 4,6 − 3 = 6,2 ✓. La valeur 3,1 est l'ordonnée à l'origine ½ pKₐ, non pKₐ ; 3,6 est une simple lecture du pH ; 7,2 vaut 2 × 3,6 sans retrancher −log C.",
+      "difficulty": 3
+    }
+  ]
+}

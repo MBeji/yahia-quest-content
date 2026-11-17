@@ -1,0 +1,123 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Loi d'action de masse",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle est l'unité de la fonction des concentrations Π ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle s'exprime en mol·L⁻¹, comme une concentration molaire"
+        },
+        {
+          "id": "b",
+          "text": "Elle s'exprime sans unité : [X] y est la valeur numérique en mol·L⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "Elle s'exprime en mol, comme une quantité de matière dissoute"
+        },
+        {
+          "id": "d",
+          "text": "Elle s'exprime en L·mol⁻¹, comme l'inverse d'une concentration"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Π est sans dimension : dans son expression, [X] représente la valeur numérique de la concentration de X en mol·L⁻¹, donc Π est un nombre sans unité ✓. Elle ne s'exprime pas en mol·L⁻¹ : ce n'est pas une concentration. Elle ne s'exprime pas en mol : ce n'est pas une quantité de matière. Elle ne s'exprime pas en L·mol⁻¹ : l'inverse d'une concentration n'est pas non plus ce que calcule Π.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "On mélange 0,30 mol d'un acide et 0,50 mol d'un alcool, en une seule phase. À l'équilibre, le mélange contient 0,24 mol d'ester. Calculer la constante K de l'estérification, à 0,1 près.",
+      "answerKey": {
+        "value": 3.69,
+        "tolerance": 0.06
+      },
+      "explanation": "À l'équilibre, x_f = n(ester) = n(eau) = 0,24 mol ; il reste 0,30 − 0,24 = 0,06 mol d'acide et 0,50 − 0,24 = 0,26 mol d'alcool. K = Π = (0,24 × 0,24) / (0,06 × 0,26) = 0,0576 / 0,0156 ≈ 3,69, soit environ 3,7. V se simplifie, car la somme des coefficients est la même des deux côtés.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur Π et K sont exactes ? (Plusieurs réponses.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "K ne dépend que de la température, pour une équation écrite donnée."
+        },
+        {
+          "id": "b",
+          "text": "Π peut prendre n'importe quelle valeur de 0 à l'infini."
+        },
+        {
+          "id": "c",
+          "text": "À l'équilibre dynamique, Π est égale à K."
+        },
+        {
+          "id": "d",
+          "text": "K dépend de la composition initiale du mélange."
+        },
+        {
+          "id": "e",
+          "text": "Π reste constante pendant toute l'évolution du système."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Exactes : K ne dépend que de la température ; Π parcourt toutes les valeurs de 0 à l'infini selon la composition ; à l'équilibre dynamique Π = K. Fausses : K ne dépend pas de la composition initiale, c'est l'énoncé de la loi d'action de masse ; Π varie au cours de l'évolution jusqu'à rejoindre K, elle n'est constante qu'une fois l'équilibre atteint.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "À 25 °C, l'estérification HCOOH + (CH₃)₂CHOH ⇄ HCOOCH(CH₃)₂ + H₂O a pour constante K = 2,25. Calculer la constante K' de l'hydrolyse de l'ester, à 10⁻³ près.",
+      "answerKey": {
+        "value": 0.444,
+        "tolerance": 0.002
+      },
+      "explanation": "L'hydrolyse est la réaction inverse de l'estérification : sa fonction est l'inverse de Π, donc K' = 1/K = 1/2,25 ≈ 0,444. On ne soustrait pas et on ne change pas de signe : on prend l'inverse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un système d'estérification est à l'équilibre, à température constante. On y ajoute de l'eau. Que se passe-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Π diminue et devient inférieure à K : la réaction directe se produit"
+        },
+        {
+          "id": "b",
+          "text": "Π augmente et devient supérieure à K : la réaction directe se produit"
+        },
+        {
+          "id": "c",
+          "text": "Π augmente et devient supérieure à K : la réaction inverse se produit"
+        },
+        {
+          "id": "d",
+          "text": "Π ne change pas, car le volume se simplifie dans son expression"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'eau figure au numérateur de Π = [ester][eau] / ([acide][alcool]) : en ajouter fait monter Π au-dessus de K, et la réaction qui la ramène vers K est la réaction inverse, l'hydrolyse ✓. Une diminution de Π supposerait d'ajouter un réactif. Un excès de Π ne donne jamais la réaction directe. Le volume se simplifie dans le rapport, mais la quantité d'eau, elle, a changé.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "0,030 mol de HF et 0,045 mol de C₂O₄²⁻ réagissent selon HF + C₂O₄²⁻ ⇄ F⁻ + HC₂O₄⁻, de constante K = 10 (une phase, volume constant). Calculer le taux d'avancement final τ_f, à 10⁻² près.",
+      "answerKey": {
+        "value": 0.88,
+        "tolerance": 0.005
+      },
+      "explanation": "Au départ Π = 0 < K : sens direct. Avec x : K = x² / ((0,030 − x)(0,045 − x)) = 10, soit 9x² − 0,75x + 0,0135 = 0. Le discriminant vaut 0,5625 − 0,486 = 0,0765, de racine 0,2766 : x = (0,75 − 0,2766)/18 = 0,0263 mol, ou x = 0,0570 mol. HF est limitant : x_max = 0,030 mol, donc on rejette 0,0570. τ_f = 0,0263 / 0,030 ≈ 0,88.",
+      "difficulty": 3
+    }
+  ]
+}

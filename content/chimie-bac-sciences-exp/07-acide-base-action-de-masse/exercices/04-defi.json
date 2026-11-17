@@ -1,0 +1,132 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les stratèges des acides et des bases",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Laquelle de ces transformations est une réaction acide-base ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fe(s) + 2 H₃O⁺ → Fe²⁺ + H₂ + 2 H₂O"
+        },
+        {
+          "id": "b",
+          "text": "Ag⁺ + Cl⁻ → AgCl(s)"
+        },
+        {
+          "id": "c",
+          "text": "CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O"
+        },
+        {
+          "id": "d",
+          "text": "2 I⁻ + Cl₂ → I₂ + 2 Cl⁻"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "CH₃COOH perd un ion H⁺, que capte OH⁻ : le transfert d'ion H⁺ entre les couples CH₃COOH/CH₃COO⁻ et H₂O/OH⁻ en fait une réaction acide-base ✓. Pour Fe(s) + 2 H₃O⁺, H₃O⁺ figure bien parmi les réactifs, mais le fer cède des électrons : c'est une réaction d'oxydoréduction. Ag⁺ + Cl⁻ → AgCl(s) est une précipitation, sans transfert d'ion H⁺. 2 I⁻ + Cl₂ → I₂ + 2 Cl⁻ est aussi une oxydoréduction, avec transfert d'électrons.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On donne pKₐ(HCOOH/HCOO⁻) = 3,75 et Kₑ = 1,0·10⁻¹⁴ à 25 °C. Calculer log K pour la réaction HCOOH + OH⁻ ⇄ HCOO⁻ + H₂O, au centième près.",
+      "answerKey": {
+        "value": 10.25,
+        "tolerance": 0.02
+      },
+      "explanation": "La réaction est la somme de HCOOH + H₂O ⇄ HCOO⁻ + H₃O⁺ (constante Kₐ) et de H₃O⁺ + OH⁻ ⇄ 2 H₂O (constante 1/Kₑ). Donc K = Kₐ / Kₑ, soit log K = pKₑ − pKₐ = 14 − 3,75 = 10,25 ✓, et K ≈ 1,8·10¹⁰. C'est Kₑ qui intervient ici, non le Kₐ du couple H₂O/OH⁻ : utiliser pKₐ = 15,74 donnerait log K = 11,99, erroné.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Pour HNO₂ + NH₃ ⇄ NO₂⁻ + NH₄⁺, on donne pKₐ(HNO₂/NO₂⁻) = 3,30 et pKₐ(NH₄⁺/NH₃) = 9,25 à 25 °C. La figure place Π, sur une échelle logarithmique, pour quatre états du système. Dans quels états la réaction directe se produit-elle spontanément ?\n\n<svg viewBox=\"0 0 340 100\"><title>Π sur échelle logarithmique pour quatre états</title><line x1=\"24.0\" y1=\"60.0\" x2=\"314.0\" y2=\"60.0\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"320,60 312,56 312,64\" fill=\"#0f172a\"/><line x1=\"30.0\" y1=\"56.0\" x2=\"30.0\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"30\" y=\"77\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10³</text><line x1=\"84.0\" y1=\"56.0\" x2=\"84.0\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"84\" y=\"77\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10⁴</text><line x1=\"138.0\" y1=\"56.0\" x2=\"138.0\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"138\" y=\"77\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10⁵</text><line x1=\"192.0\" y1=\"56.0\" x2=\"192.0\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"192\" y=\"77\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10⁶</text><line x1=\"246.0\" y1=\"56.0\" x2=\"246.0\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"246\" y=\"77\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10⁷</text><line x1=\"300.0\" y1=\"56.0\" x2=\"300.0\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"300\" y=\"77\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">10⁸</text><text x=\"322\" y=\"52\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">Π</text><circle cx=\"84.0\" cy=\"60\" r=\"5\" fill=\"#2563eb\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"84\" y=\"48\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S₁</text><circle cx=\"165.0\" cy=\"60\" r=\"5\" fill=\"#2563eb\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"165\" y=\"48\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S₂</text><circle cx=\"208.2\" cy=\"60\" r=\"5\" fill=\"#2563eb\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"208.2\" y=\"48\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S₃</text><circle cx=\"273.0\" cy=\"60\" r=\"5\" fill=\"#2563eb\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"273\" y=\"48\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.5\" stroke-linejoin=\"round\">S₄</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'état S₁"
+        },
+        {
+          "id": "b",
+          "text": "L'état S₂"
+        },
+        {
+          "id": "c",
+          "text": "L'état S₃"
+        },
+        {
+          "id": "d",
+          "text": "L'état S₄"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "log K = pKₐ(NH₄⁺) − pKₐ(HNO₂) = 9,25 − 3,30 = 5,95, donc K ≈ 8,9·10⁵. La réaction directe se produit quand Π < K, c'est-à-dire quand log Π < 5,95. Sur la figure, les états dont log Π vaut 4,0 et 5,5 vérifient cette inégalité ✓. Les états dont log Π vaut 6,3 et 7,5 ont Π > K : la réaction inverse s'y produit. L'état S₂ est le plus délicat : il est proche de K, mais reste en dessous.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Fiche expérimentale à 25 °C. Première solution : acide éthanoïque, C = 1,0·10⁻² mol·L⁻¹, pH = 3,38. Seconde solution : éthanoate de sodium, C′ = 1,0·10⁻² mol·L⁻¹, pH = 8,37. On confond [CH₃COOH] avec C dans la première, et [CH₃COO⁻] avec C′ dans la seconde. Calculer le produit Kₐ·K_b du couple CH₃COOH/CH₃COO⁻, en 10⁻¹⁵, à 0,1 près.",
+      "answerKey": {
+        "value": 9.6,
+        "tolerance": 0.4
+      },
+      "explanation": "Première solution : [H₃O⁺] = [CH₃COO⁻] = 10⁻³·³⁸ = 4,2·10⁻⁴ mol·L⁻¹, donc Kₐ ≈ (4,2·10⁻⁴)² / 1,0·10⁻² = 1,7·10⁻⁵. Seconde solution : [H₃O⁺] = 10⁻⁸·³⁷ = 4,3·10⁻⁹ mol·L⁻¹, donc [OH⁻] = 1,0·10⁻¹⁴ / 4,3·10⁻⁹ = 2,3·10⁻⁶ mol·L⁻¹, égale à [CH₃COOH], et K_b ≈ (2,3·10⁻⁶)² / 1,0·10⁻² = 5,5·10⁻¹⁰. Le produit vaut Kₐ·K_b ≈ 1,7·10⁻⁵ × 5,5·10⁻¹⁰ = 9,6·10⁻¹⁵ ✓, soit 9,6 en 10⁻¹⁵ : à l'incertitude des mesures près, on retrouve Kₑ = 1,0·10⁻¹⁴, conformément à Kₐ·K_b = Kₑ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la valeur du pKₐ du couple H₂O/OH⁻ à 25 °C, et comment l'obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15,74, car Kₐ = Kₑ / [H₂O] (l'eau est l'acide du couple), [H₂O] = 55,35 mol·L⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "14,00, car Kₐ = Kₑ puisque l'eau, solvant, n'apparaît pas dans l'expression de Π"
+        },
+        {
+          "id": "c",
+          "text": "7,00, car c'est le pH de l'eau pure à 25 °C, où [H₃O⁺] = [OH⁻] = 10⁻⁷ mol·L⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "12,26, car c'est la somme de pKₑ et du pKₐ du couple H₃O⁺/H₂O, soit 14 − 1,74"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour le couple H₂O/OH⁻, la réaction à considérer est H₂O + H₂O ⇄ H₃O⁺ + OH⁻, où une molécule d'eau est l'acide du couple étudié (H₂O/OH⁻), l'autre la base H₂O du couple de référence H₃O⁺/H₂O : Kₐ = [H₃O⁺]·[OH⁻] / [H₂O] = Kₑ / [H₂O] = 1,0·10⁻¹⁴ / 55,35 = 1,8·10⁻¹⁶, soit pKₐ = 15,74 ✓. La valeur 14,00 applique la règle du solvant à un couple dont l'eau est elle-même l'acide : par convention, [H₂O] = 55,35 mol·L⁻¹ figure alors dans Kₐ. La valeur 7,00 est un pH, non un pKₐ. Enfin 14 + (−1,74) = 12,26 additionne deux grandeurs qui n'ont aucun rapport pour ce couple.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'eau pure à 80 °C, où Kₑ = 2,5·10⁻¹³, contient autant d'ions H₃O⁺ que d'ions OH⁻. Que valent [H₃O⁺] et [OH⁻] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[H₃O⁺] = [OH⁻] = 1,0·10⁻⁷ mol·L⁻¹"
+        },
+        {
+          "id": "b",
+          "text": "[H₃O⁺] = 5,0·10⁻⁷ mol·L⁻¹ et [OH⁻] = 2,0·10⁻⁸ mol·L⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "[H₃O⁺] = [OH⁻] = 2,5·10⁻¹³ mol·L⁻¹"
+        },
+        {
+          "id": "d",
+          "text": "[H₃O⁺] = [OH⁻] = 5,0·10⁻⁷ mol·L⁻¹"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme [H₃O⁺] = [OH⁻], Kₑ = [H₃O⁺]², donc [H₃O⁺] = [OH⁻] = √(2,5·10⁻¹³) = 5,0·10⁻⁷ mol·L⁻¹ ✓. La proposition à 1,0·10⁻⁷ utilise Kₑ à 25 °C. Celle qui donne [OH⁻] = 2,0·10⁻⁸ calcule [OH⁻] avec 1,0·10⁻¹⁴ et oublie que les deux concentrations sont égales. Celle à 2,5·10⁻¹³ mol·L⁻¹ prend Kₑ pour une concentration.",
+      "difficulty": 2
+    }
+  ]
+}

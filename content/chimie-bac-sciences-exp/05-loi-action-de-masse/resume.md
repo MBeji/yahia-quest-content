@@ -1,0 +1,10 @@
+# 📜 Résumé : Loi d'action de masse
+
+- **Fonction des concentrations Π** : pour aA + bB ⇄ cC + dD en une seule phase liquide, Π = [C]ᶜ[D]ᵈ / ([A]ᵃ[B]ᵇ) ; produits au numérateur, réactifs au dénominateur, coefficients en exposants (jamais en facteurs). Π est sans dimension et attachée à l'équation écrite : l'équation inverse a la fonction 1/Π.
+- **Eau solvant et fonction usuelle** : dans une solution aqueuse diluée, [H₂O] ≈ ρ/M ≈ 55,4 mol·L⁻¹ est constante et n'entre pas dans Π (ionisation de l'eau : Π = [H₃O⁺][OH⁻]). Quand l'eau est un constituant du mélange, comme dans l'estérification, elle figure dans Π.
+- **Calcul de Π** : [X] = n(X)/V. Quand la somme des coefficients est la même à droite et à gauche (estérification), V se simplifie et Π se calcule avec les quantités de matière, en fonction de l'avancement x ; sinon il faut les concentrations. Π vaut 0 sans produit et devient infinie si un réactif est absent.
+- **Loi d'action de masse** : à température donnée, un système est en équilibre quand sa composition est invariante et telle que Π = K, constante indépendante de la composition initiale. L'égalité Π = K n'est vraie qu'à l'équilibre ; K ne dépend que de la température, et les concentrations interviennent, non les masses.
+- **Inverse et somme** : la réaction inverse a pour constante K' = 1/K ; si l'équation (3) est la somme de (1) et (2), alors K₃ = K₁·K₂ (et non K₁ + K₂).
+- **Valeur de K** : si K > 10⁴, la réaction est pratiquement totale (τ_f voisin de 1) ; si K < 10⁴, elle est limitée (τ_f < 1). K renseigne sur la composition finale, jamais sur la rapidité.
+- **Évolution spontanée** : la réaction possible spontanément rapproche Π de K. Π < K : réaction directe ; Π > K : réaction inverse ; Π = K : équilibre dynamique. On compare Π à K, pas les quantités de produits et de réactifs entre elles ; ajouter un constituant déplace Π et relance l'évolution.
+- **Composition à l'équilibre** : sens par Π et K, tableau en x, équation K = Π(x_f) du second degré, racine gardée entre 0 et x_max (réactif limitant), puis τ_f = x_f / x_max. À l'envers, un palier x_f lu sur une courbe donne K = Π(x_f).
