@@ -1,0 +1,141 @@
+{
+  "title": "⭐ Exercice : Les trois leviers",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quatre mélanges iodure–peroxodisulfate sont préparés avec la même quantité de S₂O₈²⁻. M1 : [I⁻]₀ = 0,20 mol·L⁻¹, 20 °C, sans catalyseur. M2 : [I⁻]₀ = 0,10 mol·L⁻¹, 20 °C, sans catalyseur. M3 : [I⁻]₀ = 0,10 mol·L⁻¹, 40 °C, sans catalyseur. M4 : [I⁻]₀ = 0,10 mol·L⁻¹, 40 °C, avec des ions Fe²⁺. Quelle comparaison met en évidence l'effet de la température seule ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M1 et M2"
+        },
+        {
+          "id": "b",
+          "text": "M1 et M3"
+        },
+        {
+          "id": "c",
+          "text": "M2 et M3"
+        },
+        {
+          "id": "d",
+          "text": "M3 et M4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour isoler un facteur, on compare deux mélanges qui ne diffèrent que par lui. M2 et M3 ont les mêmes concentrations et aucun catalyseur : seule la température change, de 20 °C à 40 °C ✓. M1 et M2 ne diffèrent que par la concentration en ions iodure. M1 et M3 diffèrent à la fois par la concentration et par la température : on ne peut pas attribuer l'écart à la température. M3 et M4 ne diffèrent que par le catalyseur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Trois béchers contiennent le même volume de peroxodisulfate et la même quantité de thiosulfate. Seule la concentration en ions iodure diffère : 0,10 mol·L⁻¹ dans X, 0,20 mol·L⁻¹ dans Y, 0,40 mol·L⁻¹ dans Z. Dans quel ordre le bleu de l'amidon apparaît-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Z, puis Y, puis X"
+        },
+        {
+          "id": "b",
+          "text": "X, puis Y, puis Z"
+        },
+        {
+          "id": "c",
+          "text": "Les trois béchers bleuissent ensemble"
+        },
+        {
+          "id": "d",
+          "text": "Z, puis X et Y ensemble"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec la même quantité de thiosulfate, le bleu apparaît pour le même avancement dans les trois béchers : la durée mesure la vitesse. En général la vitesse croît avec la concentration des réactifs : Z, le plus concentré, bleuit le premier, puis Y, puis X ✓. L'ordre inverse prend la durée la plus longue pour la réaction la plus rapide. Dire que les trois bleuissent ensemble confond la même quantité de thiosulfate avec la même durée. Dire que seule la plus forte concentration accélère ignore que Y est plus rapide que X.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux échantillons de même masse du même solide réagissent avec le même volume du même acide, à la même température : l'un en un seul morceau, l'autre en poudre fine. Lequel réagit le plus vite, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le morceau entier, car la matière y est plus concentrée en un seul bloc."
+        },
+        {
+          "id": "b",
+          "text": "Les deux à la même vitesse, car la masse de solide est exactement la même."
+        },
+        {
+          "id": "c",
+          "text": "La poudre, car la quantité de matière de solide y est plus grande."
+        },
+        {
+          "id": "d",
+          "text": "La poudre, car sa surface de contact avec l'acide est plus grande."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La réaction a lieu à l'interface solide-liquide : elle est d'autant plus rapide que l'interface est grande, et la poudre offre une surface bien plus grande que le morceau ✓. La matière n'est pas « plus concentrée » dans le morceau : la vitesse dépend de la surface exposée. La même masse ne donne pas la même vitesse, car la masse ne fixe pas la surface. Enfin la quantité de matière de solide est la même dans les deux échantillons.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La catalyse est dite homogène lorsque…",
+      "options": [
+        {
+          "id": "a",
+          "text": "le catalyseur est un liquide ou une solution"
+        },
+        {
+          "id": "b",
+          "text": "le catalyseur et les réactifs appartiennent à la même phase"
+        },
+        {
+          "id": "c",
+          "text": "le catalyseur et les réactifs sont une seule et même espèce"
+        },
+        {
+          "id": "d",
+          "text": "le catalyseur est introduit en quantité égale à celle des réactifs"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La catalyse est homogène lorsque le catalyseur et les réactifs appartiennent à une même phase ✓. Un catalyseur liquide dans un réactif gazeux, par exemple, donnerait deux phases. Le critère est la phase, pas l'identité chimique : le catalyseur et le réactif sont des espèces différentes. Enfin un catalyseur est utilisé en faible proportion, jamais en quantité égale à celle des réactifs.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un prélèvement de 5,0 mL d'un mélange où [I₂] = 4,0·10⁻² mol·L⁻¹ est versé dans 45,0 mL d'eau glacée pour une trempe. Quelle est la concentration en diiode juste après, en mmol·L⁻¹ ?",
+      "answerKey": {
+        "value": 4.0,
+        "tolerance": 0.05,
+        "unit": "mmol·L⁻¹"
+      },
+      "explanation": "Le prélèvement contient n(I₂) = 4,0·10⁻² × 5,0·10⁻³ = 2,0·10⁻⁴ mol. Cette quantité se retrouve dans 5,0 + 45,0 = 50,0 mL : [I₂] = 2,0·10⁻⁴ / 50,0·10⁻³ = 4,0·10⁻³ mol·L⁻¹, soit 4 mmol·L⁻¹ (4,0 avec deux chiffres significatifs) ✓. La concentration est divisée par 10 : l'eau glacée dilue (concentration) en même temps qu'elle refroidit (température).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans lequel de ces exemples la catalyse est-elle enzymatique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les ions H₃O⁺ accélèrent l'hydrolyse du butanoate d'éthyle."
+        },
+        {
+          "id": "b",
+          "text": "Le cuivre chauffé accélère l'oxydation de l'éthanol par l'air."
+        },
+        {
+          "id": "c",
+          "text": "La catalase du foie accélère la décomposition de l'eau oxygénée."
+        },
+        {
+          "id": "d",
+          "text": "Le fer solide accélère la synthèse de l'ammoniac à partir de N₂ et H₂."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La catalase est une enzyme, un catalyseur biologique : sa catalyse est enzymatique ✓. Les ions H₃O⁺ sont dissous avec les réactifs : c'est une catalyse homogène. Le cuivre et le fer sont des solides face à des réactifs gazeux : ce sont des catalyses hétérogènes.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du réactif limitant",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "On mélange 30,0 mL de H₂O₂ à 0,20 mol·L⁻¹ et 50,0 mL de KI à 0,10 mol·L⁻¹, avec un large excès d'acide. L'équation de la réaction totale est :\nH₂O₂ + 2 I⁻ + 2 H₃O⁺ → 4 H₂O + I₂\nQuelle est la valeur de x_max ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,0×10⁻³ mol"
+        },
+        {
+          "id": "b",
+          "text": "5,0×10⁻³ mol"
+        },
+        {
+          "id": "c",
+          "text": "3,0×10⁻³ mol"
+        },
+        {
+          "id": "d",
+          "text": "2,5×10⁻³ mol"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "n_i(H₂O₂) = 0,20 × 30,0×10⁻³ = 6,0×10⁻³ mol et n_i(I⁻) = 0,10 × 50,0×10⁻³ = 5,0×10⁻³ mol. Les bornes valent 6,0×10⁻³ / 1 pour H₂O₂ et 5,0×10⁻³ / 2 = 2,5×10⁻³ pour I⁻ : x_max = 2,5×10⁻³ mol, et I⁻ est limitant. La valeur 6,0×10⁻³ est la quantité de H₂O₂ ; 5,0×10⁻³ oublie le coefficient 2 de I⁻ ; 3,0×10⁻³ divise la quantité de H₂O₂ par le coefficient d'un autre réactif.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On mélange 20,0 mL de K₂Cr₂O₇ à 0,050 mol·L⁻¹ et 30,0 mL de KI à 0,40 mol·L⁻¹, en milieu acide. L'équation de la réaction totale est :\nCr₂O₇²⁻ + 6 I⁻ + 14 H₃O⁺ → 2 Cr³⁺ + 3 I₂ + 21 H₂O\nDonner la concentration finale en ions Cr³⁺, en mol·L⁻¹ (nombre décimal).",
+      "answerKey": {
+        "value": 0.04,
+        "tolerance": 0.002,
+        "unit": "mol·L⁻¹"
+      },
+      "explanation": "n_i(Cr₂O₇²⁻) = 1,0×10⁻³ mol et n_i(I⁻) = 1,2×10⁻² mol ; les bornes valent 1,0×10⁻³ et 1,2×10⁻² / 6 = 2,0×10⁻³, donc x_max = 1,0×10⁻³ mol et Cr₂O₇²⁻ est limitant. Cr³⁺ est un produit de coefficient 2 : n(Cr³⁺) = 2 × x_max = 2,0×10⁻³ mol. Le volume du mélange est 0,0500 L, donc [Cr³⁺] = 2,0×10⁻³ / 0,0500 = 4,0×10⁻² mol·L⁻¹, soit 0,04 mol·L⁻¹.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Du zinc en excès est plongé dans 500 mL d'acide chlorhydrique, à volume constant. L'équation de la réaction est :\nZn + 2 H₃O⁺ → Zn²⁺ + H₂ + 2 H₂O\nLe pH passe de 2,00 à 3,00. Quelle est la valeur de l'avancement x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,50×10⁻¹ mol"
+        },
+        {
+          "id": "b",
+          "text": "4,50×10⁻³ mol"
+        },
+        {
+          "id": "c",
+          "text": "2,25×10⁻³ mol"
+        },
+        {
+          "id": "d",
+          "text": "2,50×10⁻⁴ mol"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "[H₃O⁺] passe de 10⁻² à 10⁻³ mol·L⁻¹, soit n de 5,0×10⁻³ à 5,0×10⁻⁴ mol dans 0,500 L. Il a disparu 4,5×10⁻³ mol de H₃O⁺, de coefficient 2 : x = 4,5×10⁻³ / 2 = 2,25×10⁻³ mol. La valeur 4,50×10⁻³ oublie la division par 2 ; 2,50×10⁻⁴ ne garde que la quantité finale divisée par 2 ; 2,50×10⁻¹ traite la différence de pH comme une concentration.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans la réaction S₂O₈²⁻ + 2 I⁻ → 2 SO₄²⁻ + I₂, on prélève aussitôt 5,0 mL d'un mélange de 100,0 mL et on y dose le diiode par du thiosulfate à 0,020 mol·L⁻¹, selon :\nI₂ + 2 S₂O₃²⁻ → S₄O₆²⁻ + 2 I⁻\nL'équivalence est à 7,5 mL. Quelle est la valeur de l'avancement dans le mélange entier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,0×10⁻³ mol"
+        },
+        {
+          "id": "b",
+          "text": "1,5×10⁻³ mol"
+        },
+        {
+          "id": "c",
+          "text": "1,5×10⁻⁴ mol"
+        },
+        {
+          "id": "d",
+          "text": "7,5×10⁻⁵ mol"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "n(S₂O₃²⁻) = 0,020 × 7,5×10⁻³ = 1,5×10⁻⁴ mol ; à l'équivalence n(I₂) = 1,5×10⁻⁴ / 2 = 7,5×10⁻⁵ mol dans la prise. Le mélange est 20 fois plus grand que la prise : n(I₂) = 1,5×10⁻³ mol, et comme le coefficient de I₂ vaut 1, x = 1,5×10⁻³ mol. La valeur 3,0×10⁻³ oublie la division par 2 ; 1,5×10⁻⁴ confond la quantité de thiosulfate avec celle du mélange ; 7,5×10⁻⁵ oublie le facteur 20.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On mélange 40,0 mL de KI à 0,20 mol·L⁻¹ et 10,0 mL de K₂S₂O₈ à 0,040 mol·L⁻¹ ; la réaction S₂O₈²⁻ + 2 I⁻ → 2 SO₄²⁻ + I₂ est totale. La concentration en diiode est suivie 30 minutes (courbe ci-dessous). Quelle est la valeur de t₁/₂ ?\n<svg viewBox=\"0 0 340 240\"><title>Concentration en diiode en fonction du temps, suivie pendant 30 minutes</title><line x1=\"52\" y1=\"200\" x2=\"52\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"106\" y1=\"200\" x2=\"106\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"160\" y1=\"200\" x2=\"160\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"214\" y1=\"200\" x2=\"214\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"268\" y1=\"200\" x2=\"268\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"322\" y1=\"200\" x2=\"322\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"52\" y1=\"200\" x2=\"322\" y2=\"200\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"52\" y1=\"164.4\" x2=\"322\" y2=\"164.4\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"52\" y1=\"128.8\" x2=\"322\" y2=\"128.8\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"52\" y1=\"93.2\" x2=\"322\" y2=\"93.2\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"52\" y1=\"57.6\" x2=\"322\" y2=\"57.6\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"52\" y1=\"22\" x2=\"322\" y2=\"22\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/><line x1=\"52\" y1=\"200\" x2=\"332\" y2=\"200\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"52\" y1=\"200\" x2=\"52\" y2=\"12\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"332,200 324,196 324,204\" fill=\"#0f172a\"/><polygon points=\"52,10 48,18 56,18\" fill=\"#0f172a\"/><line x1=\"52\" y1=\"200\" x2=\"52\" y2=\"204\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"52\" y=\"216\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">0</text><line x1=\"106\" y1=\"200\" x2=\"106\" y2=\"204\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"106\" y=\"216\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">6</text><line x1=\"160\" y1=\"200\" x2=\"160\" y2=\"204\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"160\" y=\"216\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">12</text><line x1=\"214\" y1=\"200\" x2=\"214\" y2=\"204\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"214\" y=\"216\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">18</text><line x1=\"268\" y1=\"200\" x2=\"268\" y2=\"204\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"268\" y=\"216\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">24</text><line x1=\"322\" y1=\"200\" x2=\"322\" y2=\"204\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"322\" y=\"216\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">30</text><line x1=\"48\" y1=\"200\" x2=\"52\" y2=\"200\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"204\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">0</text><line x1=\"48\" y1=\"164.4\" x2=\"52\" y2=\"164.4\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"168.4\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">2</text><line x1=\"48\" y1=\"128.8\" x2=\"52\" y2=\"128.8\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"132.8\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">4</text><line x1=\"48\" y1=\"93.2\" x2=\"52\" y2=\"93.2\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"97.2\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">6</text><line x1=\"48\" y1=\"57.6\" x2=\"52\" y2=\"57.6\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"61.6\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">8</text><line x1=\"48\" y1=\"22\" x2=\"52\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"45\" y=\"26\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">10</text><text x=\"326\" y=\"232\" text-anchor=\"end\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">t (min)</text><text x=\"58\" y=\"12\" text-anchor=\"start\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">[I₂] (mmol·L⁻¹)</text><polyline points=\"52,200 54.2,198 56.5,195.9 58.8,194 61,192 63.2,190.1 65.5,188.2 67.8,186.3 70,184.5 72.2,182.6 74.5,180.9 76.8,179.1 79,177.3 81.2,175.6 83.5,173.9 85.8,172.3 88,170.6 90.2,169 92.5,167.4 94.8,165.8 97,164.3 99.2,162.8 101.5,161.2 103.8,159.8 106,158.3 108.2,156.8 110.5,155.4 112.8,154 115,152.6 117.2,151.3 119.5,149.9 121.8,148.6 124,147.3 126.2,146 128.5,144.8 130.8,143.5 133,142.3 135.2,141.1 137.5,139.9 139.8,138.7 142,137.5 144.2,136.4 146.5,135.2 148.8,134.1 151,133 153.2,132 155.5,130.9 157.8,129.8 160,128.8 162.2,127.8 164.5,126.8 166.8,125.8 169,124.8 171.2,123.8 173.5,122.9 175.8,122 178,121 180.2,120.1 182.5,119.2 184.8,118.3 187,117.5 189.2,116.6 191.5,115.8 193.8,114.9 196,114.1 198.2,113.3 200.5,112.5 202.8,111.7 205,110.9 207.2,110.2 209.5,109.4 211.8,108.7 214,107.9 216.2,107.2 218.5,106.5 220.8,105.8 223,105.1 225.2,104.4 227.5,103.8 229.8,103.1 232,102.5 234.2,101.8 236.5,101.2 238.8,100.6 241,99.9 243.2,99.3 245.5,98.7 247.8,98.1 250,97.6 252.2,97 254.5,96.4 256.8,95.9 259,95.3 261.2,94.8 263.5,94.2 265.8,93.7 268,93.2 270.2,92.7 272.5,92.2 274.8,91.7 277,91.2 279.2,90.7 281.5,90.2 283.8,89.8 286,89.3 288.2,88.9 290.5,88.4 292.8,88 295,87.5 297.2,87.1 299.5,86.7 301.8,86.3 304,85.9 306.2,85.5 308.5,85.1 310.8,84.7 313,84.3 315.2,83.9 317.5,83.5 319.8,83.1 322,82.8\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9 min"
+        },
+        {
+          "id": "b",
+          "text": "12 min"
+        },
+        {
+          "id": "c",
+          "text": "24 min"
+        },
+        {
+          "id": "d",
+          "text": "30 min"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "n_i(I⁻) = 8,0×10⁻³ mol et n_i(S₂O₈²⁻) = 4,0×10⁻⁴ mol : les bornes valent 4,0×10⁻³ et 4,0×10⁻⁴, donc x_f = x_max = 4,0×10⁻⁴ mol. Le volume est 0,050 L, donc [I₂]_f = 8,0 mmol·L⁻¹ : la courbe n'a pas encore atteint ce plateau à 30 min. La moitié, 4,0 mmol·L⁻¹, est lue à 12 min, d'où t₁/₂ = 12 min. Prendre la moitié de la dernière valeur tracée donne environ 9 min ; 24 min est le double de t₁/₂ ; 30 min est la durée du suivi.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On mélange 50,0 mL de nitrate de plomb Pb(NO₃)₂, de concentration C inconnue, et 50,0 mL de KI à 0,20 mol·L⁻¹. L'équation de la réaction totale est :\nPb²⁺ + 2 I⁻ → PbI₂(s)\nÀ l'état final, il se trouve 3,0×10⁻³ mol de PbI₂ et il reste des ions I⁻. Calculer C, en mol·L⁻¹ (nombre décimal).",
+      "answerKey": {
+        "value": 0.06,
+        "tolerance": 0.003,
+        "unit": "mol·L⁻¹"
+      },
+      "explanation": "PbI₂ est un produit de coefficient 1 : x_f = 3,0×10⁻³ mol. Il reste des ions I⁻ : ce n'est donc pas I⁻ le réactif limitant, c'est Pb²⁺ (n_i(I⁻) = 0,20 × 50,0×10⁻³ = 1,0×10⁻² mol, dont 2 × x_f = 6,0×10⁻³ mol ont réagi). Pb²⁺ a disparu entièrement : n_i(Pb²⁺) = 1 × x_f = 3,0×10⁻³ mol, d'où C = 3,0×10⁻³ / 50,0×10⁻³ = 6,0×10⁻² mol·L⁻¹, soit 0,06 mol·L⁻¹.",
+      "difficulty": 3
+    }
+  ]
+}
