@@ -1,0 +1,151 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la pile",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un clou de fer et une pièce de cuivre sont enfoncés dans un citron et reliés à un milliampèremètre : le courant circule dans le fil de la pièce de cuivre vers le clou. Quelle est la réaction spontanée à l'origine de ce courant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cu + 2 H₃O⁺ → Cu²⁺ + H₂ + 2 H₂O"
+        },
+        {
+          "id": "b",
+          "text": "Fe²⁺ + H₂ + 2 H₂O → Fe + 2 H₃O⁺"
+        },
+        {
+          "id": "c",
+          "text": "Fe + Cu²⁺ → Fe²⁺ + Cu"
+        },
+        {
+          "id": "d",
+          "text": "Fe + 2 H₃O⁺ → Fe²⁺ + H₂ + 2 H₂O"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le courant va de la pièce de cuivre vers le clou : le cuivre est la borne +, le fer la borne − et l'anode ✓. Le fer s'oxyde, Fe → Fe²⁺ + 2 e⁻, et ces électrons réduisent les ions H₃O⁺ du côté du cuivre : Fe + 2 H₃O⁺ → Fe²⁺ + H₂ + 2 H₂O. Faire réagir le cuivre revient à lui attribuer la borne −. La réaction inverse ne peut pas être spontanée ici. Enfin Fe + Cu²⁺ → Fe²⁺ + Cu suppose des ions Cu²⁺, absents du citron.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le cuivre ne réagit pas avec l'acide chlorhydrique, le fer s'y dissout en dégageant du dihydrogène, et dans la pile Fe | Fe²⁺ || Cu²⁺ | Cu c'est le fer qui s'amincit. Quel classement par pouvoir réducteur croissant en découle pour Cu, H₂ et Fe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cu < H₂ < Fe"
+        },
+        {
+          "id": "b",
+          "text": "Fe < H₂ < Cu"
+        },
+        {
+          "id": "c",
+          "text": "H₂ < Cu < Fe"
+        },
+        {
+          "id": "d",
+          "text": "Cu < Fe < H₂"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le cuivre ne réduit pas H₃O⁺ : il est moins réducteur que H₂. Le fer réduit H₃O⁺ en H₂ : il est plus réducteur que H₂. D'où Cu < H₂ < Fe ✓, ce que la pile confirme, puisque le fer, plus réducteur que le cuivre, s'y oxyde. Placer H₂ avant le cuivre ignore l'inertie du cuivre en milieu acide ; placer H₂ en dernier ignore l'attaque du fer ; inverser tout l'ordre confond réducteur fort et réducteur faible.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans la pile Mg | Mg²⁺ (0,10 mol·L⁻¹) || Zn²⁺ (0,10 mol·L⁻¹) | Zn qui débite, la lame de magnésium s'amincit. Cocher toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La lame de magnésium est l'anode de la pile."
+        },
+        {
+          "id": "b",
+          "text": "Dans le fil, les électrons vont de la lame de zinc vers la lame de magnésium."
+        },
+        {
+          "id": "c",
+          "text": "Dans le fil, le courant va de la lame de zinc vers la lame de magnésium."
+        },
+        {
+          "id": "d",
+          "text": "Du zinc se dépose sur la lame de zinc."
+        },
+        {
+          "id": "e",
+          "text": "Avec ce schéma, la f.é.m. E est négative."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Le magnésium s'oxyde : c'est l'anode, donc la borne −, et le zinc est la cathode, la borne + ✓. Dans le fil, les électrons vont du magnésium vers le zinc ; le courant, de sens opposé, va du zinc vers le magnésium ✓. Les ions Zn²⁺ sont réduits : le zinc se dépose sur sa lame ✓. L'affirmation sur le sens des électrons de la lame de zinc vers la lame de magnésium est fausse, car elle inverse ce sens. Avec le zinc à droite, la borne + est à droite : E = V_Zn − V_Mg > 0, donc E n'est pas négative.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On dispose des couples Zn²⁺/Zn, Fe²⁺/Fe, Pb²⁺/Pb, Al³⁺/Al, Cr³⁺/Cr, Ag⁺/Ag, H₃O⁺/H₂ et Fe³⁺/Fe²⁺, avec des lames métalliques quand c'est possible. Combien de piles distinctes du type pile Daniell (deux métaux attaquables, ions de même charge) peut-on construire ?",
+      "answerKey": {
+        "value": 4,
+        "unit": "piles"
+      },
+      "explanation": "Les couples H₃O⁺/H₂ et Fe³⁺/Fe²⁺ n'ont pas de métal attaquable, et Ag⁺/Ag (charge 1+) n'a aucun partenaire de même charge. Pour la charge 2+ : Zn, Fe et Pb donnent 3 × 2 ÷ 2 = 3 piles. Pour la charge 3+ : Al et Cr donnent 1 pile. Au total 3 + 1 = 4 piles ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour la pile Cu | Cu²⁺ (0,10 mol·L⁻¹) || Ni²⁺ (0,10 mol·L⁻¹) | Ni, le voltmètre dont la borne COM touche le cuivre indique −0,57 V. Quelle réaction se produit quand la pile débite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cu + Ni²⁺ → Cu²⁺ + Ni"
+        },
+        {
+          "id": "b",
+          "text": "Ni + Cu²⁺ → Ni²⁺ + Cu"
+        },
+        {
+          "id": "c",
+          "text": "Cu²⁺ + 2 e⁻ → Cu"
+        },
+        {
+          "id": "d",
+          "text": "Cu + Ni²⁺ ⇄ Cu²⁺ + Ni, sans réaction nette"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "COM est sur la borne de gauche : E = V_Ni − V_Cu = −0,57 V < 0, donc la borne + est à gauche, sur le cuivre, et c'est la réaction inverse de l'équation associée Cu + Ni²⁺ ⇄ Cu²⁺ + Ni qui a lieu : Ni + Cu²⁺ → Ni²⁺ + Cu ✓. Écrire Cu + Ni²⁺ → Cu²⁺ + Ni applique la réaction directe sans tenir compte du signe de E. Cu²⁺ + 2 e⁻ → Cu n'est qu'une demi-équation : sans oxydation associée, il n'y a pas de réaction. Conclure à l'absence de réaction confond E < 0 avec E = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour la pile Fe | Fe²⁺ (0,10 mol·L⁻¹) || Cu²⁺ (0,10 mol·L⁻¹) | Cu, un élève branche la borne COM du voltmètre sur la lame de cuivre et lit −0,78 V. Quelle est la borne + et que vaut E ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "borne de cuivre ; E = −0,78 V"
+        },
+        {
+          "id": "b",
+          "text": "borne de fer ; E = −0,78 V"
+        },
+        {
+          "id": "c",
+          "text": "borne de cuivre ; E = +0,78 V"
+        },
+        {
+          "id": "d",
+          "text": "borne de fer ; E = +0,78 V"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "COM est sur la borne de droite : l'afficheur donne V_Fe − V_Cu = V_G − V_D = −E. Il indique −0,78 V, donc V_Cu > V_Fe : le cuivre est la borne +, et E = V_D − V_G = +0,78 V ✓. Prendre la lecture pour E reviendrait à supposer COM à gauche et placerait la borne + sur le fer : c'est le piège de la borne COM. Une lecture négative ne peut pas aller avec une borne + au fer, puisque V_Fe − V_Cu < 0 place le fer au potentiel le plus bas.",
+      "difficulty": 3
+    }
+  ]
+}

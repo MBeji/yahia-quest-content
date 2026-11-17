@@ -1,0 +1,139 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des passages",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Quels réactifs, en proportions convenables, donnent le N-propyléthanamide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le chlorure d'éthanoyle et le propan-1-ol"
+        },
+        {
+          "id": "b",
+          "text": "Le chlorure de propanoyle et l'ammoniac"
+        },
+        {
+          "id": "c",
+          "text": "Le chlorure d'éthanoyle et la propylamine"
+        },
+        {
+          "id": "d",
+          "text": "Le chlorure de propanoyle et l'éthylamine"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le nom donne la chaîne acyle, éthanoyle CH₃–CO–, et le groupe de l'azote, propyle : il faut le chlorure d'éthanoyle et la propylamine CH₃–CH₂–CH₂–NH₂, amine primaire, en deux équivalents ✓. Le propan-1-ol donnerait un ester, l'éthanoate de propyle ; le chlorure de propanoyle et l'ammoniac donneraient le propanamide, amide non substitué ; et le chlorure de propanoyle avec l'éthylamine, qui échange les deux chaînes, le N-éthylpropanamide, un isomère.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un ester saturé CₙH₂ₙO₂ a pour masse molaire 130 g·mol⁻¹. Quel est le nombre n d'atomes de carbone de sa molécule ?",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "La masse molaire d'un ester saturé vaut M = 14n + 32, d'où n = (130 − 32)/14 = 7 ✓, soit C₇H₁₄O₂ (84 + 14 + 32 = 130).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On verse goutte à goutte du chlorure de propanoyle sur du méthanol, sous la hotte. Un papier pH humide placé à l'orifice du récipient vire au rouge. Quelle est l'interprétation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De l'acide propanoïque se forme, se vaporise et rougit le papier"
+        },
+        {
+          "id": "b",
+          "text": "Du chlorure d'hydrogène se dégage et acidifie le papier"
+        },
+        {
+          "id": "c",
+          "text": "De la vapeur d'eau, produit de la réaction, rougit le papier"
+        },
+        {
+          "id": "d",
+          "text": "Le méthanol en excès se vaporise et rougit le papier"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le second produit de la réaction est le chlorure d'hydrogène HCl : il se dissout dans l'eau du papier et la rend acide, d'où le rouge ✓. Avec un alcool, il ne se forme pas d'acide propanoïque : le chlore part en HCl. La vapeur d'eau est neutre, et aucune eau ne se forme ici. Les vapeurs de méthanol sont neutres elles aussi.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On verse 0,060 mol de chlorure de propanoyle sur 0,090 mol d'éthylamine. Quelle quantité maximale de N-éthylpropanamide peut-on former ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,030 mol"
+        },
+        {
+          "id": "b",
+          "text": "0,060 mol"
+        },
+        {
+          "id": "c",
+          "text": "0,090 mol"
+        },
+        {
+          "id": "d",
+          "text": "0,045 mol"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Il faut deux amines par chlorure d'acyle : avec 0,090 mol d'éthylamine on peut former au plus 0,090/2 = 0,045 mol d'amide, alors que le chlorure en permettrait 0,060 mol ; l'amine est limitante, xmax = min(0,060 ; 0,045) = 0,045 mol ✓. Diviser la quantité de chlorure par 2 donne 0,030 mol ; ignorer le second équivalent donne 0,060 mol ; et 0,090 mol est la quantité d'amine, non celle d'amide.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On fait réagir 10,2 g d'anhydride éthanoïque (M = 102 g·mol⁻¹) avec 0,250 mol de méthylamine, puis on isole 5,11 g de N-méthyléthanamide (M = 73 g·mol⁻¹). Quel est le taux d'avancement final τf ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,28"
+        },
+        {
+          "id": "b",
+          "text": "0,50"
+        },
+        {
+          "id": "c",
+          "text": "0,56"
+        },
+        {
+          "id": "d",
+          "text": "0,70"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Il y a n(anhydride) = 10,2/102 = 0,100 mol, et la méthylamine en permettrait 0,250/2 = 0,125 mol : l'anhydride est limitant, xmax = 0,100 mol. On isole n = 5,11/73 = 0,0700 mol, d'où τf = 0,0700/0,100 = 0,70 ✓. Prendre l'amine comme limitante donne 0,0700/0,125 = 0,56 ; oublier le coefficient 2 donne 0,0700/0,250 = 0,28 ; et comparer les masses 5,11/10,2 donne 0,50, ce qui ignore les masses molaires.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un ester saturé CₙH₂ₙO₂ contient 36,4 % d'oxygène en masse (O : 16 g·mol⁻¹). Il est obtenu par action du chlorure d'éthanoyle sur un alcool. Quel est cet alcool ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'éthanol CH₃–CH₂–OH"
+        },
+        {
+          "id": "b",
+          "text": "Le butan-1-ol CH₃–(CH₂)₃–OH"
+        },
+        {
+          "id": "c",
+          "text": "Le propan-1-ol CH₃–CH₂–CH₂–OH"
+        },
+        {
+          "id": "d",
+          "text": "Le méthanol CH₃–OH"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La molécule contient 2 atomes d'oxygène, donc M = 32/0,364 ≈ 88 g·mol⁻¹ et n = (88 − 32)/14 = 4 : l'ester a 4 carbones. La chaîne acyle du chlorure d'éthanoyle en fournit 2, celui du C=O compris, il en reste 2 pour l'alcool : l'éthanol, et l'ester est l'éthanoate d'éthyle ✓. Le butan-1-ol attribue les 4 carbones à l'alcool ; le propan-1-ol oublie le carbone du C=O dans la chaîne acyle ; le méthanol supposerait une chaîne acyle de 3 carbones, celle du chlorure de propanoyle et non de l'éthanoyle.",
+      "difficulty": 3
+    }
+  ]
+}

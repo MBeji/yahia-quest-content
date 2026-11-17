@@ -1,0 +1,187 @@
+{
+  "title": "⭐⭐ Révision (type examen) : la pile Daniell",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle est la définition d'un oxydant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "une entité qui peut gagner des électrons"
+        },
+        {
+          "id": "b",
+          "text": "une entité qui peut perdre des électrons"
+        },
+        {
+          "id": "c",
+          "text": "une entité qui peut capter un proton"
+        },
+        {
+          "id": "d",
+          "text": "une entité qui peut céder un proton"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un oxydant est une entité chimique qui peut gagner des électrons, comme Cu²⁺ qui se réduit en Cu ✓. L'entité qui peut perdre des électrons est un réducteur, comme Zn. Capter ou céder un proton relève des couples acide-base et non des couples redox.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle expérience illustre un transfert direct d'électrons ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "une pile Daniell reliée à un résistor"
+        },
+        {
+          "id": "b",
+          "text": "deux demi-piles Zn²⁺/Zn et Pb²⁺/Pb reliées par un pont salin et un fil"
+        },
+        {
+          "id": "c",
+          "text": "un clou de fer plongé dans du sulfate de cuivre (II)"
+        },
+        {
+          "id": "d",
+          "text": "une pile fer-cuivre qui alimente une lampe"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans le clou de fer plongé dans la solution, le fer et les ions Cu²⁺ sont au contact : les électrons passent directement de l'un à l'autre ✓. Dans la pile Daniell, la pile zinc-plomb et la pile qui alimente une lampe, chaque couple occupe sa demi-pile : le réducteur et l'oxydant sont séparés et les électrons passent par le circuit extérieur, le transfert est indirect.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque signe d'écriture à ce qu'il représente.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Le trait vertical simple |"
+        },
+        {
+          "id": "l2",
+          "text": "Le double trait ||"
+        },
+        {
+          "id": "l3",
+          "text": "Le trait incliné /"
+        },
+        {
+          "id": "l4",
+          "text": "La double flèche ⇄ entre réactifs et produits de deux couples"
+        },
+        {
+          "id": "r1",
+          "text": "la séparation entre deux phases"
+        },
+        {
+          "id": "r2",
+          "text": "la jonction entre deux demi-piles"
+        },
+        {
+          "id": "r3",
+          "text": "le symbole d'un couple redox Ox/Red"
+        },
+        {
+          "id": "r4",
+          "text": "l'équation chimique associée à une pile"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le trait vertical simple sépare deux phases, par exemple le métal et sa solution. Le double trait représente la jonction, pont salin ou paroi poreuse, entre les deux demi-piles. Le trait incliné s'emploie dans le symbole Ox/Red d'un couple, et il ne faut pas le confondre avec les traits de la pile. La double flèche, placée entre les réactifs et les produits de deux couples, est celle de l'équation chimique associée à une pile, écrite par convention.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On dispose de cinq lames métalliques (zinc, fer, nickel, cuivre, plomb) et des solutions de leurs ions à charge 2+. Combien de piles distinctes du type pile Daniell peut-on construire en associant deux de ces métaux ?",
+      "answerKey": {
+        "value": 10,
+        "unit": "piles"
+      },
+      "explanation": "Chaque pile associe deux couples différents parmi cinq : 5 × 4 ÷ 2 = 10 piles ✓. Écrire un couple d'abord ou ensuite donne la même pile sous un autre schéma, et ne compte donc pas deux fois.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la corrosion du fer en eau salée, quelle demi-équation se produit dans la zone cathodique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fe → Fe²⁺ + 2 e⁻"
+        },
+        {
+          "id": "b",
+          "text": "O₂ + 2 H₂O + 4 e⁻ → 4 OH⁻"
+        },
+        {
+          "id": "c",
+          "text": "O₂ + 2 H₂O → 4 OH⁻ + 4 e⁻"
+        },
+        {
+          "id": "d",
+          "text": "Fe²⁺ + 2 e⁻ → Fe"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La cathode est le siège d'une réduction : le dioxygène dissous capte des électrons, O₂ + 2 H₂O + 4 e⁻ → 4 OH⁻ ✓. Fe → Fe²⁺ + 2 e⁻ est l'oxydation du fer, qui a lieu à l'anode. Avec les électrons à droite, l'écriture O₂ + 2 H₂O → 4 OH⁻ + 4 e⁻ ne conserve pas la charge (0 contre 8−). Fe²⁺ + 2 e⁻ → Fe serait une réduction, mais Fe²⁺ est le produit de la corrosion et non un oxydant du milieu.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi les affirmations suivantes sur l'équation chimique associée à une pile, cocher toutes les affirmations exactes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle place chaque réducteur du même côté que dans le symbole de la pile."
+        },
+        {
+          "id": "b",
+          "text": "Elle indique toujours la réaction qui se produit quand la pile débite."
+        },
+        {
+          "id": "c",
+          "text": "Si E > 0, c'est la réaction directe de cette équation qui a lieu."
+        },
+        {
+          "id": "d",
+          "text": "Changer le schéma de la pile change la réaction qui se produit."
+        },
+        {
+          "id": "e",
+          "text": "Si E < 0, c'est la réaction inverse de cette équation qui a lieu."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "L'équation associée suit une convention : chaque réducteur du côté où il figure dans le symbole ✓. Si E > 0, la borne + est à droite et la réaction directe a lieu ✓ ; si E < 0, la borne + est à gauche et c'est la réaction inverse qui a lieu ✓. L'équation ne désigne pas toujours la réaction réelle : elle n'en est que l'écriture de référence. Changer le schéma modifie le signe de E, mais la réaction spontanée et la polarité restent les mêmes.",
+      "difficulty": 2
+    }
+  ]
+}

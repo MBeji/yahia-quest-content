@@ -1,0 +1,140 @@
+{
+  "title": "⭐ Exercice : premiers pas avec la pile Daniell",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans la réaction Mg + Ni²⁺ → Mg²⁺ + Ni, quelle espèce est le réducteur qui cède les électrons ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ni²⁺"
+        },
+        {
+          "id": "b",
+          "text": "Mg²⁺"
+        },
+        {
+          "id": "c",
+          "text": "Mg"
+        },
+        {
+          "id": "d",
+          "text": "Ni"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le magnésium perd 2 électrons pour donner Mg²⁺ : c'est le réducteur qui réagit, celui du couple Mg²⁺/Mg ✓. L'ion Ni²⁺ capte ces électrons : c'est l'oxydant. L'ion Mg²⁺ est la forme oxydée du couple, formée par la réaction. Le nickel Ni est un produit : il est la forme réduite de l'autre couple et ne cède rien ici.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle demi-équation traduit la réduction des ions Ni²⁺ en nickel ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ni²⁺ + 2 e⁻ → Ni"
+        },
+        {
+          "id": "b",
+          "text": "Ni → Ni²⁺ + 2 e⁻"
+        },
+        {
+          "id": "c",
+          "text": "Ni²⁺ → Ni + 2 e⁻"
+        },
+        {
+          "id": "d",
+          "text": "Ni²⁺ + e⁻ → Ni"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une réduction est un gain d'électrons : Ni²⁺ + 2 e⁻ → Ni, et la charge est conservée (2+ à gauche, 0 à droite) ✓. L'écriture Ni → Ni²⁺ + 2 e⁻ décrit l'oxydation. Dans Ni²⁺ → Ni + 2 e⁻, les électrons sont du mauvais côté et la charge ne se conserve pas (2+ contre 2−). Avec un seul électron, Ni²⁺ + e⁻ → Ni donnerait 1+ à gauche et 0 à droite.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle association constitue la demi-pile du couple Pb²⁺/Pb ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "une lame de plomb dans une solution d'ions Zn²⁺"
+        },
+        {
+          "id": "b",
+          "text": "une lame de zinc dans une solution d'ions Pb²⁺"
+        },
+        {
+          "id": "c",
+          "text": "une lame de plomb dans de l'eau distillée"
+        },
+        {
+          "id": "d",
+          "text": "une lame de plomb dans une solution d'ions Pb²⁺"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une demi-pile associe un conducteur électronique, la lame, et un conducteur ionique, la solution, qui contiennent les deux formes d'un même couple : ici Pb et Pb²⁺ ✓. Le plomb et les ions Zn²⁺ ne forment aucun couple, pas plus que le zinc et les ions Pb²⁺. L'eau distillée ne contient pas d'ions Pb²⁺ : le couple serait incomplet.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans la pile Ni | Ni²⁺ || Cu²⁺ | Cu qui débite, la lame de nickel s'amincit. Quelle est la borne négative ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la lame de nickel, qui est la cathode"
+        },
+        {
+          "id": "b",
+          "text": "la lame de nickel, qui est l'anode"
+        },
+        {
+          "id": "c",
+          "text": "la lame de cuivre, qui est l'anode"
+        },
+        {
+          "id": "d",
+          "text": "la lame de cuivre, qui est la cathode"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La lame de nickel s'amincit : Ni → Ni²⁺ + 2 e⁻ est une oxydation, donc le nickel est l'anode, et l'anode est la borne − d'une pile qui débite ✓. Appeler le nickel cathode contredit l'oxydation observée. Le cuivre est bien la cathode, siège de la réduction de Cu²⁺, mais c'est la borne + : cathode ne veut pas dire pôle négatif.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La pile Fe | Fe²⁺ (0,10 mol·L⁻¹) || Pb²⁺ (0,10 mol·L⁻¹) | Pb a une f.é.m. E = +0,31 V. On construit la même pile en plaçant le plomb à gauche et le fer à droite, avec les mêmes solutions. Donner sa nouvelle f.é.m. en volts, signe compris.",
+      "answerKey": {
+        "value": -0.31,
+        "unit": "V"
+      },
+      "explanation": "La polarité de la pile ne change pas, mais E = V_D − V_G change de sens avec le schéma : E' = V_Fe − V_Pb = −(V_Pb − V_Fe) = −0,31 V ✓. La valeur absolue reste 0,31 V ; le signe moins indique que la borne + (le plomb) est désormais à gauche.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la pile Ni | Ni²⁺ || Cu²⁺ | Cu, la lame de nickel s'amincit. Quelle migration d'ions a lieu dans le pont salin de chlorure de potassium ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "K⁺ migre vers le compartiment du cuivre, Cl⁻ vers celui du nickel"
+        },
+        {
+          "id": "b",
+          "text": "K⁺ migre vers le compartiment du nickel, Cl⁻ vers celui du cuivre"
+        },
+        {
+          "id": "c",
+          "text": "K⁺ et Cl⁻ migrent tous deux vers le compartiment du cuivre"
+        },
+        {
+          "id": "d",
+          "text": "K⁺ et Cl⁻ migrent tous deux vers le compartiment du nickel"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le nickel s'oxyde : des ions Ni²⁺ apparaissent dans son compartiment, et les ions Cl⁻ y migrent pour compenser leur charge ✓. Dans le compartiment du cuivre, les ions Cu²⁺ disparaissent et K⁺ y migre pour remplacer cette charge positive. Les deux ions ne vont pas du même côté : chaque compartiment a un besoin de charge opposé, et le courant ionique va du nickel vers le cuivre.",
+      "difficulty": 2
+    }
+  ]
+}

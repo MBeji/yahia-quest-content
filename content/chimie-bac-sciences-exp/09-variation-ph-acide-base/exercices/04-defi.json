@@ -1,0 +1,151 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les maîtres du dosage",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Un logiciel superpose à la courbe pH = f(V) sa courbe dérivée dpH/dV. Comment repère-t-on le volume équivalent sur la courbe dérivée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À l'abscisse où la dérivée est égale à 7"
+        },
+        {
+          "id": "b",
+          "text": "À l'abscisse où la dérivée s'annule"
+        },
+        {
+          "id": "c",
+          "text": "À l'abscisse de l'extremum de la courbe dérivée"
+        },
+        {
+          "id": "d",
+          "text": "À l'abscisse où la dérivée vaut la moitié de son maximum"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Au point d'inflexion du saut de pH, la pente de la courbe passe par un extremum : maximum si le pH croît, minimum s'il décroît. V_E est l'abscisse de cet extremum ✓. La dérivée est une pente en unités de pH par mL et non un pH : elle ne vaut pas 7. Elle ne s'annule pas au saut, où la pente est au contraire la plus forte. Enfin la moitié du maximum ne correspond à aucun repère du dosage.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On dose 20,0 mL d'une solution d'acide faible AH par de la soude à 0,100 mol·L⁻¹. Le tableau donne le pH mesuré en fonction du volume V_B de soude versé : V_B = 0 mL, pH 2,71 ; 1,5 mL, 3,41 ; 3,0 mL, 3,87 ; 4,5 mL, 4,34 ; 5,5 mL, 4,90 ; 5,9 mL, 5,63 ; 6,0 mL, 8,11 ; 6,1 mL, 10,58 ; 6,5 mL, 11,28 ; 8,0 mL, 11,85. Déterminer la constante d'acidité Kₐ du couple AH/A⁻, exprimée en 10⁻⁴, arrondie au centième.",
+      "answerKey": {
+        "value": 1.35,
+        "tolerance": 0.04,
+        "unit": "10⁻⁴"
+      },
+      "explanation": "Le pH augmente brusquement entre 5,9 mL et 6,1 mL : V_E ≈ 6,0 mL. La demi-équivalence est à V_E/2 = 3,0 mL, où le tableau donne pH = 3,87 = pKₐ ✓. Alors Kₐ = 10^(−3,87) = 10⁻⁴ × 10^(0,13) = 1,35·10⁻⁴, soit 1,35 en unités de 10⁻⁴. Lire le pH à V_E, vers 8,1, ou le pH initial, 2,71, donnerait un Kₐ sans rapport avec le couple.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une solution de 25,0 mL d'une amine R–NH₂ à 4,0·10⁻² mol·L⁻¹ est dosée par de l'acide chlorhydrique à 0,100 mol·L⁻¹ ; le pH mesuré à l'équivalence vaut 5,80. Calculer le pKₐ du couple RNH₃⁺/RNH₂, arrondi au centième.",
+      "answerKey": {
+        "value": 10.06,
+        "tolerance": 0.03
+      },
+      "explanation": "L'équivalence est atteinte pour V_E = C_B·V_B/C_A = 4,0·10⁻² × 25,0/0,100 = 10,0 mL. La solution équivaut à du sel RNH₃⁺, Cl⁻ dissous dans 25,0 + 10,0 = 35,0 mL, avec C_E = 4,0·10⁻² × 25,0/35,0 = 2,86·10⁻² mol·L⁻¹ et log C_E = −1,54. L'ion RNH₃⁺ est un acide faible : pH_E = ½ (pKₐ − log C_E), donc pKₐ = 2 pH_E + log C_E = 11,60 − 1,54 = 10,06 ✓. Prendre C_E = 4,0·10⁻² mol·L⁻¹, sans tenir compte du volume versé, donnerait pKₐ = 10,2, valeur trop haute.",
+      "difficulty": 3
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque dosage, réalisé à volumes et concentrations égaux (0,10 mol·L⁻¹) à 25 °C, à l'indicateur convenable.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Acide chlorhydrique dosé par de la soude"
+        },
+        {
+          "id": "l2",
+          "text": "Acide faible de pKₐ = 4,2 dosé par de la soude"
+        },
+        {
+          "id": "l3",
+          "text": "Base faible de pKₐ = 9,25 dosée par de l'acide chlorhydrique"
+        },
+        {
+          "id": "r1",
+          "text": "Bleu de bromothymol (6,0 à 7,6)"
+        },
+        {
+          "id": "r2",
+          "text": "Phénolphtaléine (8,2 à 10,0)"
+        },
+        {
+          "id": "r3",
+          "text": "Rouge de méthyle (4,8 à 6,0)"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "À volumes et concentrations égaux, C_E = 0,050 mol·L⁻¹ et log C_E = −1,30. L'acide fort et la base forte donnent pH_E = 7 : bleu de bromothymol. L'acide faible donne pH_E = ½ (14 + 4,2 − 1,30) = 8,45 : phénolphtaléine, dont la zone contient 8,45. La base faible donne pH_E = ½ (9,25 + 1,30) = 5,28 : rouge de méthyle, dont la zone contient 5,28.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On verse 5,0 mL d'acide chlorhydrique à 0,10 mol·L⁻¹ dans 100,0 mL d'un tampon obtenu en mélangeant 50,0 mL d'acide éthanoïque à 0,10 mol·L⁻¹ et 50,0 mL d'éthanoate de sodium à 0,10 mol·L⁻¹ (pKₐ = 4,75). Quel est le pH du mélange ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,84"
+        },
+        {
+          "id": "b",
+          "text": "4,75"
+        },
+        {
+          "id": "c",
+          "text": "2,32"
+        },
+        {
+          "id": "d",
+          "text": "4,66"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avant l'ajout, n(acide) = n(base) = 5,0·10⁻³ mol. Les ions H₃O⁺ ajoutés, 5,0·10⁻⁴ mol, réagissent avec la base : n(base) = 4,5·10⁻³ mol et n(acide) = 5,5·10⁻³ mol. Alors pH = 4,75 + log (4,5/5,5) = 4,75 − 0,09 = 4,66 ✓. La valeur 4,75 ignorerait l'ajout. La valeur 4,84 inverse le rapport des quantités, comme si l'on avait ajouté de la base. La valeur 2,32 est celle de l'acide chlorhydrique seul dilué, sans effet tampon.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On dose 20,0 mL de phénolate de sodium C₆H₅ONa à 0,100 mol·L⁻¹ par de l'acide chlorhydrique à 0,100 mol·L⁻¹ ; pKₐ(C₆H₅OH/C₆H₅O⁻) = 10,0. Quel est le pH à l'équivalence ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5,65"
+        },
+        {
+          "id": "b",
+          "text": "10,00"
+        },
+        {
+          "id": "c",
+          "text": "7,00"
+        },
+        {
+          "id": "d",
+          "text": "11,35"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'ion Na⁺ est inerte et l'ion phénolate est une base faible : on dose une base faible par un acide fort. À l'équivalence V_E = 20,0 mL, la solution contient le phénol formé, un acide faible, à C_E = 0,100 × 20,0/40,0 = 5,0·10⁻² mol·L⁻¹ : pH_E = ½ (pKₐ − log C_E) = ½ (10,0 + 1,30) = 5,65 ✓. La valeur 11,35 emploie la formule d'une base faible et oublie que le sel est devenu un acide. La valeur 10,00 est le pH de la demi-équivalence. La valeur 7,00 serait celle d'un acide fort dosé par une base forte.",
+      "difficulty": 3
+    }
+  ]
+}
