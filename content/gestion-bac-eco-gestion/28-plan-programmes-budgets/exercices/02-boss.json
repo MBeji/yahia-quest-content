@@ -1,0 +1,158 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : La directrice financière",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque donnée budgétaire à son mode de calcul.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "TVA collectée"
+        },
+        {
+          "id": "l2",
+          "text": "Ventes TTC"
+        },
+        {
+          "id": "l3",
+          "text": "Trésorerie finale"
+        },
+        {
+          "id": "l4",
+          "text": "TVA à décaisser"
+        },
+        {
+          "id": "r1",
+          "text": "Montant des ventes HT multiplié par 18 %"
+        },
+        {
+          "id": "r2",
+          "text": "Montant des ventes HT multiplié par 1,18"
+        },
+        {
+          "id": "r3",
+          "text": "Trésorerie initiale plus encaissements moins décaissements"
+        },
+        {
+          "id": "r4",
+          "text": "TVA collectée moins TVA déductible moins crédit antérieur"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La TVA collectée est la taxe appliquée aux ventes HT ; les ventes TTC valent HT × 1,18. La trésorerie finale s'obtient en ajoutant les entrées et en retranchant les sorties. La TVA à décaisser est le solde de la collectée après déductions et crédit antérieur.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une société de matelas de Sfax vend 1 500 matelas en janvier et 1 800 en février à 120 D hors taxe pièce, TVA 18 %. Les clients règlent 35 % comptant et le solde le mois suivant. Quel montant encaisse-t-elle en février, en D ?",
+      "answerKey": {
+        "value": 227268,
+        "unit": "D"
+      },
+      "explanation": "Ventes TTC : janvier 1 500 × 120 × 1,18 = 212 400 D ; février 1 800 × 120 × 1,18 = 254 880 D. Février encaisse 35 % de février, soit 89 208 D, et 65 % de janvier, soit 138 060 D. Total : 227 268 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fonderie de Bizerte achète pour 30 000 D HT en novembre, 36 000 D HT en décembre et 42 000 D HT en janvier, TVA 18 %. Elle paie 20 % le mois même, 30 % le mois suivant et 50 % deux mois après. Quel décaissement doit-elle prévoir en janvier, en D ?",
+      "answerKey": {
+        "value": 40356,
+        "unit": "D"
+      },
+      "explanation": "Achats TTC : novembre 35 400 D, décembre 42 480 D, janvier 49 560 D. En janvier on règle 20 % de janvier (9 912 D), 30 % de décembre (12 744 D) et 50 % de novembre (17 700 D). Total : 40 356 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans le budget de TVA d'une usine de Gabès, la TVA collectée du mois est de 18 400 D. La TVA déductible est de 9 200 D sur les achats et de 6 300 D sur un investissement. Le crédit de TVA antérieur est de 1 800 D. Quelle TVA reste à décaisser, en D ?",
+      "answerKey": {
+        "value": 1100,
+        "unit": "D"
+      },
+      "explanation": "TVA à décaisser = collectée − déductible (achats et investissement) − crédit antérieur = 18 400 − 9 200 − 6 300 − 1 800 = 1 100 D. Le crédit antérieur diminue la somme à verser.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une jardinerie de Nabeul entame son semestre avec un découvert de 4 000 D, c'est-à-dire une trésorerie initiale de −4 000 D. Elle prévoit 52 000 D d'encaissements et 47 500 D de décaissements le premier mois, puis 38 000 D et 41 200 D le second. Quelle est sa trésorerie finale à la fin du second mois ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3 200 D"
+        },
+        {
+          "id": "b",
+          "text": "−2 700 D"
+        },
+        {
+          "id": "c",
+          "text": "1 300 D"
+        },
+        {
+          "id": "d",
+          "text": "5 300 D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Premier mois : −4 000 + 52 000 − 47 500 = 500 D. Second mois : 500 + 38 000 − 41 200 = −2 700 D. Le résultat −3 200 D oublie le solde reporté de 500 D ; 1 300 D oublie le découvert de départ ; 5 300 D l'ajoute au lieu de le soustraire.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une menuiserie de Tozeur démarre avec 15 000 D. Ses encaissements prévus sont 60 000, 52 000 et 70 000 D pour les trois mois du trimestre ; ses décaissements 68 000, 71 000 et 64 000 D. Quelle est sa trésorerie finale à la fin du troisième mois, en D ?",
+      "answerKey": {
+        "value": -6000,
+        "unit": "D"
+      },
+      "explanation": "Premier mois : 15 000 + 60 000 − 68 000 = 7 000 D. Deuxième : 7 000 + 52 000 − 71 000 = −12 000 D. Troisième : −12 000 + 70 000 − 64 000 = −6 000 D. Le solde final est encore négatif : un financement reste nécessaire.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "En mars, le budget de TVA d'une entreprise de Sidi Bouzid indique une TVA collectée de 7 200 D, une TVA déductible de 9 450 D et aucun crédit antérieur. Quelle conclusion tire-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une TVA de 2 250 D à décaisser dès mars"
+        },
+        {
+          "id": "b",
+          "text": "Un crédit de TVA de 2 250 D reporté sur avril"
+        },
+        {
+          "id": "c",
+          "text": "Une TVA de 2 250 D à décaisser au cours d'avril"
+        },
+        {
+          "id": "d",
+          "text": "Ni TVA à verser ni crédit à reporter : le mois est soldé"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La déductible dépasse la collectée : 7 200 − 9 450 = −2 250 D. L'entreprise ne verse rien et reporte un crédit de 2 250 D sur le mois suivant. Un résultat négatif n'est pas nul : il devient un crédit déduit le mois suivant.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Marché, VAN, marges et trésorerie",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Les ventes d'un fabricant de meubles ont augmenté de 10 % cette année, exactement comme le chiffre d'affaires de tout le secteur, entreprise comprise. Que devient sa part de marché ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle monte, puisque le chiffre d'affaires de l'entreprise augmente de 10 %"
+        },
+        {
+          "id": "b",
+          "text": "Elle reste stable, car les deux grandeurs progressent au même rythme"
+        },
+        {
+          "id": "c",
+          "text": "Elle baisse, car le secteur inclut aussi les ventes des concurrents"
+        },
+        {
+          "id": "d",
+          "text": "Elle ne peut pas se juger sans connaître la marge réalisée par l'entreprise"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le numérateur et le dénominateur sont tous deux multipliés par 1,10 : le rapport ne change pas. Une hausse des ventes ne suffit pas à faire monter la part ; la marge n'entre pas dans ce rapport.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le chiffre d'affaires d'un grossiste a été de 1 400 000 D puis de 1 568 000 D. Il vise l'année suivante un taux de croissance supérieur de 5 points à celui qu'il vient de réaliser. Quel chiffre d'affaires prévoit-il, en D ?",
+      "answerKey": {
+        "value": 1834560,
+        "unit": "D"
+      },
+      "explanation": "(1 568 000 − 1 400 000) × 100 ÷ 1 400 000 = 12 % ; visé 17 % ; 1 568 000 × 1,17 = 1 834 560 D. Appliquer 5 % donnerait 1 646 400 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettez dans l'ordre les étapes de calcul de la VAN d'une machine dont les flux annuels sont constants.",
+      "options": [
+        {
+          "id": "s3",
+          "text": "Calculer le résultat, l'impôt, puis la CAF en ajoutant la dotation"
+        },
+        {
+          "id": "s1",
+          "text": "Additionner le prix d'acquisition et les frais d'installation hors taxe"
+        },
+        {
+          "id": "s4",
+          "text": "Multiplier la CAF par le facteur d'actualisation et retrancher le coût initial"
+        },
+        {
+          "id": "s2",
+          "text": "Diviser ce coût initial par la durée de vie pour obtenir la dotation"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "explanation": "Le coût initial vient d'abord, car il fixe la dotation. La dotation entre dans le résultat avant impôt, puis dans la CAF, qui n'existe qu'une fois l'impôt déduit. La VAN se calcule en dernier, en actualisant la CAF et en retranchant le coût initial.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associez chaque grandeur à son mode de calcul.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Taux de croissance du chiffre d'affaires"
+        },
+        {
+          "id": "l2",
+          "text": "Marge sur coût variable unitaire"
+        },
+        {
+          "id": "l3",
+          "text": "Écart sur quantité"
+        },
+        {
+          "id": "l4",
+          "text": "Annuité constante d'un emprunt"
+        },
+        {
+          "id": "r3",
+          "text": "(Quantité réelle − quantité préétablie) × coût unitaire préétabli"
+        },
+        {
+          "id": "r1",
+          "text": "Variation du chiffre d'affaires × 100 ÷ chiffre d'affaires précédent"
+        },
+        {
+          "id": "r4",
+          "text": "Capital × taux ÷ [1 − (1 + taux)⁻ⁿ]"
+        },
+        {
+          "id": "r2",
+          "text": "Prix de vente unitaire − coût variable unitaire"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le taux de croissance a pour base l'année précédente. La marge unitaire se calcule au prix de vente moins le coût variable. L'écart sur quantité se chiffre au coût préétabli. L'annuité constante est donnée par le capital multiplié par le taux, divisé par un facteur d'actualisation.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une confiserie vend 10 000 articles à 50 D, pour un coût variable de 35 D l'unité et 90 000 D de charges fixes. Si elle baisse son prix de 4 %, elle espère vendre 14 000 unités. Quel serait alors son résultat, en D ?",
+      "answerKey": {
+        "value": 92000,
+        "unit": "D"
+      },
+      "explanation": "Nouveau prix : 50 × 0,96 = 48 D ; marge unitaire : 48 − 35 = 13 D. Marge totale : 13 × 14 000 = 182 000 D. Résultat = 182 000 − 90 000 = 92 000 D, contre 60 000 D aujourd'hui (15 × 10 000 − 90 000). Garder l'ancienne marge de 15 D donnerait 120 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La minoterie Tlili a vendu pour 36 000 D TTC en février et 40 000 D TTC en mars, encaissés à 45 % comptant et à 55 % un mois plus tard. Ses décaissements de mars atteignent 31 500 D et sa trésorerie de début mars est de 4 200 D. Quelle est sa trésorerie de fin mars, en D ?",
+      "answerKey": {
+        "value": 10500,
+        "unit": "D"
+      },
+      "explanation": "Encaissements de mars : 45 % × 40 000 = 18 000 D, plus 55 % × 36 000 = 19 800 D, soit 37 800 D. Solde du mois : 37 800 − 31 500 = +6 300 D. Trésorerie finale : 4 200 + 6 300 = 10 500 D. Inverser les pourcentages (55 % de mars, 45 % de février) donnerait 22 000 + 16 200 = 38 200 D d'encaissements, et 10 900 D au lieu de 10 500 D.",
+      "difficulty": 2
+    }
+  ]
+}
