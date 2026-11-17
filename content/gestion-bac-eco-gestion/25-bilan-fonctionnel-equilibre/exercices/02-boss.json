@@ -1,0 +1,109 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : L'analyste financier",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "L'Atelier Gharsalli, à Bizerte, a escompté 14 000 D d'effets de commerce non échus, absents de son bilan comptable. Après retraitement, quelles affirmations sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les créances augmentent de 14 000 D"
+        },
+        {
+          "id": "b",
+          "text": "La trésorerie du passif augmente de 14 000 D"
+        },
+        {
+          "id": "c",
+          "text": "Le fonds de roulement reste inchangé"
+        },
+        {
+          "id": "d",
+          "text": "Le besoin en fonds de roulement reste inchangé"
+        },
+        {
+          "id": "e",
+          "text": "Le total du bilan fonctionnel reste inchangé"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Les 14 000 D s'ajoutent aux créances et à la trésorerie du passif. Le FDR (actifs courants − passifs courants) ne bouge pas, puisque les deux masses augmentent du même montant. En revanche le BFR monte de 14 000 D (la trésorerie du passif est exclue de son calcul), la TN baisse de 14 000 D et le total du bilan augmente de 14 000 D de chaque côté.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Chocolaterie Ben Salah, à Tunis, fournit : immobilisations brutes 760 000 D ; capitaux propres 480 000 D ; amortissements 240 000 D ; provisions de l'actif 35 000 D ; emprunts non courants 150 000 D ; échéance à moins d'un an sur ces emprunts 30 000 D, classée en passifs financiers courants. Quel est son fonds de roulement par le haut du bilan, en D ?",
+      "answerKey": {
+        "value": 175000,
+        "unit": "D"
+      },
+      "explanation": "Ressources stables : 480 000 + 240 000 + 35 000 + 150 000 + 30 000 = 935 000 D (l'échéance à moins d'un an rejoint les dettes financières). Emplois stables : 760 000 D, valeur brute. FDR = 935 000 − 760 000 = 175 000 D. Le piège courant : oublier les 30 000 D d'échéance et trouver 145 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Avant retraitement, la Papeterie Bouaziz, à Gafsa, a 52 000 D en banque et 24 000 D de découvert bancaire. Elle a aussi escompté 19 000 D d'effets non échus. Quelle est sa trésorerie nette après retraitement, en D ?",
+      "answerKey": {
+        "value": 9000,
+        "unit": "D"
+      },
+      "explanation": "Les effets escomptés non échus s'ajoutent à la trésorerie du passif : 24 000 + 19 000 = 43 000 D. TN = trésorerie de l'actif − trésorerie du passif = 52 000 − 43 000 = 9 000 D, au lieu de 28 000 D sans retraitement.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le bilan fonctionnel de la Minoterie Dhaouadi donne : ressources stables 910 000 D, emplois stables 780 000 D, trésorerie de l'actif 64 000 D, trésorerie du passif 23 000 D. Quel est son BFR, en D ?",
+      "answerKey": {
+        "value": 89000,
+        "unit": "D"
+      },
+      "explanation": "FDR = 910 000 − 780 000 = 130 000 D. TN = 64 000 − 23 000 = 41 000 D. L'équation FDR = BFR + TN donne BFR = 130 000 − 41 000 = 89 000 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Entre deux exercices, le FDR d'une usine de textile passe de 100 000 D à 130 000 D et son BFR de 80 000 D à 140 000 D. Comment lire cette évolution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La trésorerie s'améliore, puisque le FDR a augmenté"
+        },
+        {
+          "id": "b",
+          "text": "La situation reste saine, puisque le FDR est positif aux deux dates"
+        },
+        {
+          "id": "c",
+          "text": "La TN devient négative, le FDR ne couvrant plus qu'une part du BFR"
+        },
+        {
+          "id": "d",
+          "text": "Le BFR a progressé, ce qui montre un gain de marge de sécurité"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "TN en N−1 : 100 000 − 80 000 = 20 000 D ; en N : 130 000 − 140 000 = −10 000 D. Le BFR a augmenté de 60 000 D, plus que le FDR (+30 000 D) : la TN passe sous zéro et un crédit de trésorerie complète le financement. Regarder le seul FDR, ou croire qu'un BFR plus lourd est un atout, mène à des conclusions fausses.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans le bilan fonctionnel de la Conserverie Hamrouni : emplois stables 1 250 000 D, ressources stables 1 480 000 D, stocks 520 000 D, liquidités 85 000 D, passifs courants 710 000 D. Le seul autre actif courant est le poste clients, qui comprend 40 000 D d'effets escomptés non échus ajoutés lors du retraitement. Quel montant brut de clients figurait au bilan comptable, en D ?",
+      "answerKey": {
+        "value": 295000,
+        "unit": "D"
+      },
+      "explanation": "Total des ressources : 1 480 000 + 710 000 = 2 190 000 D, égal au total des emplois. Actifs courants : 2 190 000 − 1 250 000 = 940 000 D. Clients fonctionnels : 940 000 − 520 000 − 85 000 = 335 000 D. On retire les effets escomptés ajoutés au retraitement : 335 000 − 40 000 = 295 000 D. Le piège : répondre 335 000 D.",
+      "difficulty": 3
+    }
+  ]
+}

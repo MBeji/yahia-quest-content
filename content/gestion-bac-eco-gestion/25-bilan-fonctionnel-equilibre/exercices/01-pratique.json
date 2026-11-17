@@ -1,0 +1,149 @@
+{
+  "title": "⭐ Exercice : Premiers pas — masses, FDR et TN",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "short_answer",
+      "prompt": "Comment appelle-t-on l'excédent des ressources stables sur les emplois stables d'une entreprise ?",
+      "answerKey": {
+        "text": "fonds de roulement"
+      },
+      "explanation": "Cet excédent finance une partie des actifs courants. Il se calcule par le haut du bilan, comme une différence entre deux masses, ou par le bas, comme actifs courants moins passifs courants ; on le désigne par un sigle de trois lettres.",
+      "difficulty": 1,
+      "acceptedAnswers": [
+        "FDR",
+        "FRNG",
+        "fonds de roulement net global"
+      ]
+    },
+    {
+      "type": "short_answer",
+      "prompt": "Quel nom porte le solde entre la trésorerie de l'actif et la trésorerie du passif ?",
+      "answerKey": {
+        "text": "trésorerie nette"
+      },
+      "explanation": "Ce solde est aussi l'écart entre le FDR et le BFR. Positif, il traduit un excédent de liquidités ; négatif, il signale le recours à des crédits de trésorerie comme le découvert. On le note par un sigle de deux lettres.",
+      "difficulty": 1,
+      "acceptedAnswers": [
+        "TN"
+      ]
+    },
+    {
+      "prompt": "Un atelier de couture de Monastir achète une machine de 36 000 D, payée par un emprunt remboursable sur cinq ans. Comment l'emprunt est-il rangé dans le bilan fonctionnel, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Passif courant, car toute dette envers une banque se rembourse vite"
+        },
+        {
+          "id": "b",
+          "text": "Actif courant, car l'argent emprunté est d'abord déposé en banque"
+        },
+        {
+          "id": "c",
+          "text": "Emploi stable, car il alourdit durablement les charges de l'atelier"
+        },
+        {
+          "id": "d",
+          "text": "Ressource stable, car il finance l'entreprise sur plusieurs années"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un emprunt à cinq ans est un financement durable : ressource stable, qui finance la machine, emploi stable. Le mot « dette » ne suffit pas à en faire un passif courant ; l'argent emprunté a servi à acheter la machine, il ne reste pas en banque ; une dette est toujours une ressource, jamais un emploi.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le stock de la Conserverie Naceur est inscrit au bilan comptable pour 63 000 D, après une provision de 9 000 D. Quelle valeur figure au bilan fonctionnel, en D ?",
+      "answerKey": {
+        "value": 72000,
+        "unit": "D"
+      },
+      "explanation": "Le bilan fonctionnel retient la valeur brute : 63 000 + 9 000 = 72 000 D. Les 9 000 D de provision rejoignent les ressources stables.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La Plâtrerie Bahri a 260 000 D de capitaux propres, 75 000 D d'amortissements, 15 000 D de provisions sur l'actif et 120 000 D de dettes financières à long terme. Quel est le total de ses ressources stables, en D ?",
+      "answerKey": {
+        "value": 470000,
+        "unit": "D"
+      },
+      "explanation": "Les ressources stables regroupent capitaux propres, amortissements et provisions, dettes financières : 260 000 + 75 000 + 15 000 + 120 000 = 470 000 D.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi les postes d'une imprimerie de Sousse, lesquels appartiennent aux ressources stables ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le capital social"
+        },
+        {
+          "id": "b",
+          "text": "La facture de papier à régler sous 30 jours"
+        },
+        {
+          "id": "c",
+          "text": "Les amortissements du matériel d'impression"
+        },
+        {
+          "id": "d",
+          "text": "Un emprunt bancaire remboursable sur sept ans"
+        },
+        {
+          "id": "e",
+          "text": "Le découvert bancaire du mois"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Le capital et l'emprunt à sept ans sont des financements durables ; les amortissements sont un financement interne versé aux ressources stables. La facture de papier est un passif courant (crédit fournisseur) et le découvert est de la trésorerie du passif, donc aussi un passif courant.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fabrique de jus de Nabeul a un BFR de 63 000 D et une trésorerie nette de 12 000 D. Quel est son fonds de roulement, en D ?",
+      "answerKey": {
+        "value": 75000,
+        "unit": "D"
+      },
+      "explanation": "L'équation de l'équilibre donne FDR = BFR + TN = 63 000 + 12 000 = 75 000 D.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une entreprise de bâtiment trouve un FDR de −12 000 D, mais elle a oublié de reclasser 20 000 D d'échéance à moins d'un an sur un emprunt non courant, laissés dans les passifs courants. Que devient son diagnostic ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FDR de −32 000 D : l'échéance s'ajoute aux dettes à court terme et aggrave le déséquilibre"
+        },
+        {
+          "id": "b",
+          "text": "FDR de +8 000 D : les emplois stables sont désormais couverts par les ressources stables"
+        },
+        {
+          "id": "c",
+          "text": "FDR de −12 000 D : un reclassement change la présentation des dettes, pas le fonds de roulement"
+        },
+        {
+          "id": "d",
+          "text": "FDR de −12 000 D : seules les dettes envers les fournisseurs d'immobilisations rejoignent les ressources stables"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'échéance à moins d'un an reste une dette financière : elle rejoint les ressources stables, qui augmentent de 20 000 D. FDR = −12 000 + 20 000 = +8 000 D. Un reclassement déplace la dette d'une masse à l'autre, donc il change bien le FDR, et il l'améliore ici au lieu de l'aggraver. La règle vaut pour les échéances d'emprunt comme pour les dettes d'équipement.",
+      "difficulty": 2
+    }
+  ]
+}

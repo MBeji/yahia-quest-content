@@ -1,0 +1,162 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Seuils, formules et délais",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque ratio au signal que son niveau envoie.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Financement des emplois stables"
+        },
+        {
+          "id": "l2",
+          "text": "Endettement"
+        },
+        {
+          "id": "l3",
+          "text": "Autonomie financière"
+        },
+        {
+          "id": "l4",
+          "text": "Liquidité générale"
+        },
+        {
+          "id": "r1",
+          "text": "Inférieur à 1 : des immobilisations dépendent de dettes à court terme"
+        },
+        {
+          "id": "r2",
+          "text": "Au-dessus de 100 % : les banques refusent généralement de prêter"
+        },
+        {
+          "id": "r3",
+          "text": "Sous 50 % : la capacité d'emprunt est saturée"
+        },
+        {
+          "id": "r4",
+          "text": "Proche de 1 : aucune marge de sécurité à court terme"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "Un financement des emplois stables inférieur à 1 signifie que des immobilisations reposent sur du court terme. Un endettement supérieur à 100 % dépasse la règle de l'endettement limite. Une autonomie sous 50 % sature la capacité d'emprunt. Une liquidité générale proche de 1 laisse l'entreprise sans marge de sécurité.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un cabinet d'ingénierie de Tunis a 1 260 000 D d'emplois stables pour 1 800 000 D de total des emplois. Quel est son ratio d'investissement, en % ?",
+      "answerKey": {
+        "value": 70,
+        "unit": "%"
+      },
+      "explanation": "Investissement = emplois stables ÷ total des emplois = 1 260 000 ÷ 1 800 000 = 0,70, soit 70 % des emplois sont immobilisés.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'Épicerie Fine Ghribi facture 250 000 D hors taxes avec une TVA de 18 % ; ses clients lui doivent 73 750 D, sans effets. Quel est son délai clients, en jours ?",
+      "answerKey": {
+        "value": 90,
+        "unit": "jours"
+      },
+      "explanation": "CA TTC : 250 000 × 1,18 = 295 000 D. Délai : 73 750 × 360 ÷ 295 000 = 90 jours.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Un conseiller commente les ratios de délais d'une entreprise de Kairouan. Classe ces quatre étapes dans l'ordre d'une analyse.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comparer chaque ratio à l'année précédente et au secteur"
+        },
+        {
+          "id": "b",
+          "text": "Calculer chaque ratio pour les deux années"
+        },
+        {
+          "id": "c",
+          "text": "Conclure : situation favorable ou défavorable, avec la raison"
+        },
+        {
+          "id": "d",
+          "text": "Proposer une action corrective"
+        }
+      ],
+      "answerKey": {
+        "order": ["b", "a", "c", "d"]
+      },
+      "explanation": "On calcule d'abord, puis on compare au passé et au secteur ; la comparaison fonde la conclusion, et l'action ne se propose qu'une fois la conclusion posée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une clinique privée de Sousse détient 300 000 D de stocks, 580 000 D de créances et 80 000 D en trésorerie ; elle doit 640 000 D à court terme. Calcule le rapport entre ses actifs courants et ses passifs courants, au centième.",
+      "answerKey": {
+        "value": 1.5
+      },
+      "explanation": "Actifs courants : 300 000 + 580 000 + 80 000 = 960 000 D. Liquidité générale : 960 000 ÷ 640 000 = 1,5.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque ratio de rotation à sa formule.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Rotation des stocks de marchandises"
+        },
+        {
+          "id": "l2",
+          "text": "Durée moyenne des crédits clients"
+        },
+        {
+          "id": "l3",
+          "text": "Durée moyenne des crédits fournisseurs"
+        },
+        {
+          "id": "l4",
+          "text": "Stock moyen"
+        },
+        {
+          "id": "r1",
+          "text": "Coût d'achat des marchandises vendues ÷ stock moyen"
+        },
+        {
+          "id": "r2",
+          "text": "(Clients + effets) ÷ CA TTC × 360"
+        },
+        {
+          "id": "r3",
+          "text": "Fournisseurs ÷ achats TTC × 360"
+        },
+        {
+          "id": "r4",
+          "text": "(Stock initial + stock final) ÷ 2"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "La rotation divise le coût des marchandises vendues par le stock moyen. Les deux durées rapportent une créance ou une dette à un montant TTC et multiplient par 360. Le stock moyen est la moyenne du stock de début et du stock de fin.",
+      "difficulty": 2
+    }
+  ]
+}

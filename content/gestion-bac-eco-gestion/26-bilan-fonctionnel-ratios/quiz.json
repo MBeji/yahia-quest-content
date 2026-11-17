@@ -1,0 +1,159 @@
+{
+  "title": "Test de compréhension ⭐ : Les ratios du bilan fonctionnel",
+  "questions": [
+    {
+      "prompt": "Le gérant d'une conserverie de Bizerte vient de calculer un ratio de 15 %. Qu'est-ce qui lui permet d'en tirer un jugement sur sa situation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le comparer au seuil de 1, qui sert de repère pour juger tous les ratios"
+        },
+        {
+          "id": "b",
+          "text": "Le multiplier par 360 pour l'exprimer en nombre de jours d'activité de l'année"
+        },
+        {
+          "id": "c",
+          "text": "Le rapprocher de ses ratios des années passées et de ceux du secteur"
+        },
+        {
+          "id": "d",
+          "text": "Le recalculer en hors taxes avant de pouvoir le lire correctement"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un ratio n'a de sens que rapproché de valeurs de référence : l'évolution dans le temps et la position face aux concurrents. Le × 360 ne concerne que les durées ; il n'existe pas de seuil universel, ni 1 ni 100 % ; et la distinction hors taxes ou TTC dépend du ratio, pas de sa lecture.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une imprimerie de Sousse affiche un ratio de financement des emplois stables de 0,85. Que traduit ce chiffre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ses ressources stables dépassent confortablement la totalité de ses emplois stables"
+        },
+        {
+          "id": "b",
+          "text": "Une partie de ses immobilisations est financée par des dettes à court terme"
+        },
+        {
+          "id": "c",
+          "text": "Ses capitaux propres couvrent moins de la moitié de ses ressources stables"
+        },
+        {
+          "id": "d",
+          "text": "Ses stocks se renouvellent moins d'une fois par an en moyenne"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ressources stables ÷ emplois stables égale 0,85, donc inférieur à 1 : les ressources durables ne couvrent pas tout l'investissement, le reste dépend de dettes à court terme. Un ratio supérieur à 1 aurait exprimé une marge ; l'autonomie et la rotation sont d'autres ratios, non mesurés ici.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les ressources stables d'une conserverie atteignent 750 000 D, dont 450 000 D de ressources propres. Quel est son ratio d'autonomie financière, en % ?",
+      "answerKey": {
+        "value": 60,
+        "unit": "%"
+      },
+      "explanation": "Autonomie financière = ressources propres ÷ ressources stables = 450 000 ÷ 750 000 = 0,60, soit 60 %. Ce niveau dépasse le seuil de 50 % sous lequel la capacité d'emprunt serait saturée.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque ratio à sa formule.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Financement des emplois stables"
+        },
+        {
+          "id": "l2",
+          "text": "Endettement"
+        },
+        {
+          "id": "l3",
+          "text": "Liquidité réduite"
+        },
+        {
+          "id": "l4",
+          "text": "Liquidité immédiate"
+        },
+        {
+          "id": "r1",
+          "text": "Ressources stables ÷ emplois stables"
+        },
+        {
+          "id": "r2",
+          "text": "Dettes financières ÷ ressources propres"
+        },
+        {
+          "id": "r3",
+          "text": "(Actifs courants − stocks) ÷ passifs courants"
+        },
+        {
+          "id": "r4",
+          "text": "Trésorerie de l'actif ÷ passifs courants"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "Le financement des emplois stables rapporte les ressources durables aux immobilisations. L'endettement rapporte les dettes financières aux ressources propres. La liquidité réduite retire les stocks des actifs courants avant de diviser par les passifs courants. La liquidité immédiate ne garde que la trésorerie de l'actif au numérateur.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque ratio à sa famille.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Autonomie financière"
+        },
+        {
+          "id": "l2",
+          "text": "Durée moyenne des crédits clients"
+        },
+        {
+          "id": "l3",
+          "text": "Liquidité immédiate"
+        },
+        {
+          "id": "r1",
+          "text": "Structure : équilibre financier"
+        },
+        {
+          "id": "r2",
+          "text": "Rotation : formation du BFR"
+        },
+        {
+          "id": "r3",
+          "text": "Liquidité : paiement des dettes à court terme"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"]
+        ]
+      },
+      "explanation": "L'autonomie financière compare les ressources propres aux ressources stables : elle relève de la structure, qui juge l'équilibre financier. La durée des crédits clients est un délai de rotation, qui explique la formation du BFR. La liquidité immédiate rapporte la trésorerie aux passifs courants : elle mesure la capacité à payer les dettes à court terme.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Au 31 décembre, une jardinerie de Nabeul compte 210 000 D de stocks, 270 000 D de créances et 60 000 D de trésorerie à l'actif ; ses dettes à moins d'un an s'élèvent à 300 000 D. Quel est son ratio de liquidité réduite, au centième ?",
+      "answerKey": {
+        "value": 1.1
+      },
+      "explanation": "Les actifs courants valent 330 000 + 210 000 = 540 000 D. Liquidité réduite = (540 000 − 210 000) ÷ 300 000 = 330 000 ÷ 300 000 = 1,1. On retire les stocks seulement du numérateur.",
+      "difficulty": 2
+    }
+  ]
+}

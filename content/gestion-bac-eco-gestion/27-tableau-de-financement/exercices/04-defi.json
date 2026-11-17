@@ -1,0 +1,119 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le dossier de la SAFA Emballages",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Les dettes financières de la SAFA Emballages sont de 200 000 D au 31/12/N-1 et de 310 000 D au 31/12/N ; elle a remboursé 60 000 D au cours de N. Quel est le montant de l'emprunt nouveau contracté en N, en D ?",
+      "answerKey": {
+        "value": 170000,
+        "unit": "D"
+      },
+      "explanation": "Les dettes ont augmenté de 110 000 D malgré 60 000 D de remboursements : l'emprunt nouveau vaut 310 000 − 200 000 + 60 000 = 170 000 D. Le piège courant : prendre la seule variation des dettes (110 000 D), qui est nette des remboursements.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La SAFA Emballages détenait des machines pour 900 000 D de valeur d'origine (amortissements cumulés 380 000 D) à l'ouverture et pour 1 060 000 D (amortissements cumulés 420 000 D) à la clôture. Elle a cédé pour 40 000 D des matériels d'origine 140 000 D. Quelles sont ses acquisitions de l'exercice, en D ?",
+      "answerKey": {
+        "value": 300000,
+        "unit": "D"
+      },
+      "explanation": "Acquisitions = 1 060 000 − 900 000 + 140 000 = 300 000 D : la hausse de 160 000 D ne montre que le solde entre achats et sorties. On n'utilise ni les valeurs nettes (520 000 → 640 000) ni le prix de cession (40 000 D, une ressource à part).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour son exercice N, la SAFA Emballages présente : CAF 210 000 D, emprunt nouveau 170 000 D, cessions 40 000 D, acquisitions 300 000 D, remboursements 60 000 D, dividendes 25 000 D. Son FDR de N-1 valait 90 000 D. Quel est son FDR au 31/12/N, en D ?",
+      "answerKey": {
+        "value": 125000,
+        "unit": "D"
+      },
+      "explanation": "Ressources : 210 000 + 170 000 + 40 000 = 420 000 D ; emplois : 300 000 + 60 000 + 25 000 = 385 000 D. ΔFDR = +35 000 D (ressource nette). FDR(N) = 90 000 + 35 000 = 125 000 D. Le piège courant : compter le remboursement de 60 000 D en ressource, ce qui donnerait un FDR de 245 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans les comptes de la SAFA Emballages, les stocks passent de 70 000 à 95 000 D, les clients de 110 000 à 128 000 D, les fournisseurs de 85 000 à 98 000 D et les autres passifs courants de 30 000 à 28 000 D. De combien le BFR varie-t-il (en hausse), en D ?",
+      "answerKey": {
+        "value": 32000,
+        "unit": "D"
+      },
+      "explanation": "Besoins : stocks 25 000 ; clients 18 000 ; baisse des autres passifs 2 000, soit 45 000 D. Dégagement : fournisseurs 13 000 D. Solde = 13 000 − 45 000 = −32 000 D : le BFR augmente de 32 000 D. Le piège courant : compter la baisse des autres passifs courants en dégagement, ce qui donnerait 28 000 D.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour la SAFA Emballages, le FDR progresse de 35 000 D et le BFR de 32 000 D en N, avec une trésorerie nette de 25 000 D à l'ouverture. Quelle est sa trésorerie nette au 31/12/N, en D ?",
+      "answerKey": {
+        "value": 28000,
+        "unit": "D"
+      },
+      "explanation": "ΔTN = ΔFDR − ΔBFR = 35 000 − 32 000 = +3 000 D. TN(N) = 25 000 + 3 000 = 28 000 D. Le piège courant : écrire ΔTN = ΔFDR + ΔBFR = 67 000 D, d'où une TN de 92 000 D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La SAFA Emballages a reçu 420 000 D de ressources (CAF 210 000 D, emprunt 170 000 D, cessions 40 000 D) pour 385 000 D d'emplois. Quel commentaire est le plus juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le FDR augmente de 35 000 D ; la CAF fournit la moitié des ressources, complétée surtout par l'emprunt"
+        },
+        {
+          "id": "b",
+          "text": "Le FDR diminue de 35 000 D ; la CAF fournit l'essentiel des ressources, sans recours à l'emprunt"
+        },
+        {
+          "id": "c",
+          "text": "Le FDR augmente de 35 000 D ; l'entreprise dépend surtout de l'emprunt, la CAF ne jouant qu'un rôle d'appoint"
+        },
+        {
+          "id": "d",
+          "text": "Le FDR diminue de 35 000 D ; les emprunts et les cessions financent seuls les emplois durables"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "420 000 − 385 000 = +35 000 D : ressource nette, le FDR augmente. La CAF pèse 210 000 ÷ 420 000 = 50 % des ressources ; l'emprunt (environ 40 %) et les cessions (environ 10 %) complètent. Les autres lectures se trompent sur le sens de la variation ou sur la part de la CAF.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Pour la SAFA Emballages, reprends tes résultats : variations du FDR, du BFR et de la trésorerie nette. Lesquelles de ces affirmations sont exactes ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ΔFDR = ΔBFR + ΔTN, soit 32 000 + 3 000 = 35 000 D"
+        },
+        {
+          "id": "b",
+          "text": "Le solde A de la 2e partie vaut −32 000 D"
+        },
+        {
+          "id": "c",
+          "text": "Le total A + B de la 2e partie vaut +35 000 D"
+        },
+        {
+          "id": "d",
+          "text": "La trésorerie nette de l'entreprise diminue sur l'exercice"
+        },
+        {
+          "id": "e",
+          "text": "La hausse du FDR couvre la hausse du BFR, avec un excédent"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "32 000 + 3 000 = 35 000 : la relation est vérifiée. Solde A = −ΔBFR = −32 000 D. Le total A + B vaut −35 000 D (et non +35 000), la trésorerie nette augmente de 3 000 D, et le FDR (+35 000) couvre le BFR (+32 000) avec 3 000 D d'excédent.",
+      "difficulty": 3
+    }
+  ]
+}
