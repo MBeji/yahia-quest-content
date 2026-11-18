@@ -1,0 +1,189 @@
+{
+  "title": "⭐ Exercice : Les premiers pas de l'intégrale",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Pour une imprimerie, le coût marginal est Cm(q) = 0,6q + 3 dinars par ramette. Calculer, en dinars, le supplément de coût pour passer de 10 à 20 ramettes.",
+      "answerKey": {
+        "value": 120,
+        "unit": "dinars"
+      },
+      "explanation": "Une primitive de Cm est F(q) = 0,3q² + 3q ; F(20) = 120 + 60 = 180 et F(10) = 30 + 30 = 60, donc ∫₁₀²⁰ Cm(q)dq = 180 − 60 = 120 dinars. Contrôle : Cm est affine, sa valeur moyenne est celle du milieu, Cm(15) = 12 dinars, et 12 × 10 ramettes = 120.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque intégrale à sa valeur.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "∫₀³ 4 dx"
+        },
+        {
+          "id": "l2",
+          "text": "∫₁² x² dx"
+        },
+        {
+          "id": "l3",
+          "text": "∫₀¹ eˣ dx"
+        },
+        {
+          "id": "l4",
+          "text": "∫₁ᵉ dx/x"
+        },
+        {
+          "id": "r1",
+          "text": "12"
+        },
+        {
+          "id": "r2",
+          "text": "7/3"
+        },
+        {
+          "id": "r3",
+          "text": "e − 1"
+        },
+        {
+          "id": "r4",
+          "text": "1"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Une primitive de 4 est 4x : 12 − 0 = 12. Une primitive de x² est x³/3 : 8/3 − 1/3 = 7/3. Une primitive de eˣ est eˣ : e − 1. Une primitive de 1/x sur ]0 ; +∞[ est ln x : ln e − ln 1 = 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour une fonction f continue sur [0 ; 10], quelle égalité est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "∫₀¹⁰ f = ∫₀⁴ f + ∫₄¹⁰ f"
+        },
+        {
+          "id": "b",
+          "text": "∫₀¹⁰ f = ∫₀⁴ f − ∫₄¹⁰ f"
+        },
+        {
+          "id": "c",
+          "text": "∫₀¹⁰ f = ∫₀⁴ f × ∫₄¹⁰ f"
+        },
+        {
+          "id": "d",
+          "text": "∫₀¹⁰ f = ∫₄⁰ f + ∫₄¹⁰ f"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est la relation de Chasles : on découpe [0 ; 10] en [0 ; 4] et [4 ; 10] et on additionne. La différence ne convient pas : elle donnerait ∫₀⁴ f − ∫₄¹⁰ f, qui ignore le sens des bornes ; un produit d'intégrales n'a pas de sens géométrique ici ; et ∫₄⁰ f = −∫₀⁴ f changerait le signe du premier morceau.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les étapes du calcul de ∫ₐᵇ f(x)dx lorsqu'on connaît f.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Déterminer une primitive F de f sur cet intervalle"
+        },
+        {
+          "id": "b",
+          "text": "Effectuer la différence F(b) − F(a)"
+        },
+        {
+          "id": "c",
+          "text": "Vérifier que f est continue sur un intervalle contenant a et b"
+        },
+        {
+          "id": "d",
+          "text": "Contrôler le résultat par son signe ou son ordre de grandeur"
+        },
+        {
+          "id": "e",
+          "text": "Calculer F(b), puis F(a)"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "a",
+          "e",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "On vérifie d'abord la continuité : sans elle la définition ne s'applique pas. On cherche ensuite une primitive F, on calcule ses valeurs aux deux bornes, puis on retranche F(a) à F(b), dans cet ordre. Le contrôle vient en dernier : le signe de l'intégrale doit être celui de f quand f garde un signe constant, et l'ordre de grandeur doit rester plausible.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut ∫₁² dt/t² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln 2"
+        },
+        {
+          "id": "b",
+          "text": "−1/2"
+        },
+        {
+          "id": "c",
+          "text": "1/4"
+        },
+        {
+          "id": "d",
+          "text": "1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sur [1 ; 2], 1/t² = t⁻² a pour primitive −1/t : ∫₁² dt/t² = −1/2 − (−1) = 1/2. La valeur ln 2 vient de la primitive de 1/t, qui n'est pas celle de 1/t² ; −1/2 est F(2) seul, sans retrancher F(1) ; 1/4 est la valeur de f en 2, qui n'est pas une intégrale.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour calculer ∫₀² 2x dx, Léa prend la primitive F(x) = x² et Omar la primitive G(x) = x² + 7. Que peut-on dire de leurs résultats ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Léa trouve 4 et Omar 11"
+        },
+        {
+          "id": "b",
+          "text": "Léa et Omar trouvent tous deux 4"
+        },
+        {
+          "id": "c",
+          "text": "Léa trouve 4 et Omar 7"
+        },
+        {
+          "id": "d",
+          "text": "Seule Léa a raison, car la primitive doit s'annuler en 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "G(2) − G(0) = 11 − 7 = 4 et F(2) − F(0) = 4 − 0 = 4 : la constante 7 se simplifie dans la différence, donc le résultat ne dépend pas de la primitive choisie. Dire qu'Omar trouve 11 ou 7 revient à n'évaluer qu'une borne ; et aucune condition n'oblige la primitive à s'annuler en 0.",
+      "difficulty": 2
+    }
+  ]
+}

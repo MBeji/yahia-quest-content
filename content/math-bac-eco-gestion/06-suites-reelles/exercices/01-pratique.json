@@ -1,0 +1,184 @@
+{
+  "title": "⭐ Exercice : Les premiers pas des suites",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Des pêcheurs déposent 4 500 dinars rémunérés à 3,2 % par an en intérêts simples. Quel capital détiennent-ils après 6 ans ?",
+      "answerKey": {
+        "value": 5364,
+        "unit": "dinars"
+      },
+      "explanation": "À intérêts simples, l'intérêt annuel est toujours 4 500 × 0,032 = 144 dinars : le capital forme une suite arithmétique de raison 144. Donc C₆ = 4 500 + 6 × 144 = 4 500 + 864 = 5 364 dinars.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque suite à sa nature et à sa raison.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "uₙ = 7 − 3n"
+        },
+        {
+          "id": "l2",
+          "text": "uₙ = 5 × 2ⁿ"
+        },
+        {
+          "id": "l3",
+          "text": "u₀ = 3 et uₙ₊₁ = 1,5uₙ"
+        },
+        {
+          "id": "l4",
+          "text": "uₙ = 12 + 0,5n"
+        },
+        {
+          "id": "r3",
+          "text": "géométrique de raison 1,5"
+        },
+        {
+          "id": "r1",
+          "text": "arithmétique de raison −3"
+        },
+        {
+          "id": "r4",
+          "text": "arithmétique de raison 0,5"
+        },
+        {
+          "id": "r2",
+          "text": "géométrique de raison 2"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "uₙ = 7 − 3n est de la forme u₀ + n·r avec r = −3. uₙ = 5 × 2ⁿ est de la forme u₀ · qⁿ avec q = 2. La relation uₙ₊₁ = 1,5uₙ multiplie toujours par 1,5. Enfin 12 + 0,5n est de la forme u₀ + n·r avec r = 0,5.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une suite géométrique a pour premier terme u₁ = 6 et pour raison 2. Que vaut u₅ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "192"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "96"
+        },
+        {
+          "id": "d",
+          "text": "7 776"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La suite commence au rang 1, donc uₙ = u₁ × qⁿ⁻¹ et u₅ = 6 × 2⁴ = 96. Le résultat 192 utilise l'exposant 5, qui compterait u₁ comme u₀ ; 14 additionne 6 + 4 × 2, ce qui serait une suite arithmétique ; 7 776 est 6⁵ : on a élevé le premier terme à la puissance au lieu de la raison.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour prouver que la suite définie par uₙ = 4n + 7 est arithmétique, remettre les étapes dans l'ordre.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Constater que le résultat, 4, ne dépend pas de n"
+        },
+        {
+          "id": "a",
+          "text": "Écrire le terme suivant : uₙ₊₁ = 4(n + 1) + 7 = 4n + 11"
+        },
+        {
+          "id": "d",
+          "text": "Conclure : la suite est arithmétique de raison 4"
+        },
+        {
+          "id": "b",
+          "text": "Former la différence uₙ₊₁ − uₙ = (4n + 11) − (4n + 7)"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On exprime d'abord uₙ₊₁ en remplaçant n par n + 1, puis on forme la différence avec uₙ. Elle se simplifie en 4, un nombre indépendant de n : c'est exactement la définition d'une suite arithmétique, dont la raison est cette constante.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les déchets d'un site industriel, en tonnes, vérifient dₙ = 3 × 0,9ⁿ après n mois. Que peut-on dire de cette suite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est convergente, de limite 0"
+        },
+        {
+          "id": "b",
+          "text": "Elle est divergente, de limite +∞, car 3 > 1"
+        },
+        {
+          "id": "c",
+          "text": "Elle est convergente, de limite 3"
+        },
+        {
+          "id": "d",
+          "text": "Elle est divergente, car elle n'a pas de limite"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est une suite géométrique de raison 0,9, comprise entre −1 et 1 : 0,9ⁿ tend vers 0 et dₙ aussi, donc la suite converge vers 0. Le facteur 3 est le premier terme, pas la raison, donc il ne décide pas de la limite ; 3 est la valeur de d₀, pas la limite ; une raison positive inférieure à 1 donne bien une limite.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un fonds reçoit 40 dinars de plus chaque mois et vaut fₙ = 100 + 40n après n mois. Quelle affirmation est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bornée, entre 100 et 4 100"
+        },
+        {
+          "id": "b",
+          "text": "Majorée par 100, mais non minorée"
+        },
+        {
+          "id": "c",
+          "text": "Ni minorée ni majorée"
+        },
+        {
+          "id": "d",
+          "text": "Minorée par 100, mais non majorée"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La suite est arithmétique de raison 40 > 0 : elle est croissante, donc minorée par f₀ = 100, mais elle dépasse tout nombre fixé et n'est pas majorée. Elle ne peut pas être bornée ; elle n'est pas majorée par 100, valeur de son premier terme ; et elle est bien minorée.",
+      "difficulty": 2
+    }
+  ]
+}

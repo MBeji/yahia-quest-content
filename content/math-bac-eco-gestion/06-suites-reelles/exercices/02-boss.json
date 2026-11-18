@@ -1,0 +1,114 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des suites",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une mutuelle investit 12 000 dinars à 4,5 % par an, les intérêts étant capitalisés chaque année. De combien la somme obtenue au bout de 8 ans dépasse-t-elle celle qu'auraient donnée des intérêts simples au même taux (arrondi au dinar) ?",
+      "answerKey": {
+        "value": 745,
+        "tolerance": 0.5,
+        "unit": "dinars"
+      },
+      "explanation": "Chaque année, le capital est multiplié par 1,045 : C₈ = 12 000 × 1,045⁸ ≈ 12 000 × 1,42210 ≈ 17 065,21 dinars. À intérêts simples, on aurait 12 000 + 8 × 540 = 16 320 dinars. L'écart est 17 065,21 − 16 320 = 745,21, soit 745 dinars : ce sont les intérêts sur les intérêts.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un artisan épargne 150 dinars le premier mois, puis 12 dinars de plus chaque mois que le précédent. Quelle somme totale aura-t-il épargnée au bout de 24 mois ?",
+      "answerKey": {
+        "value": 6912,
+        "unit": "dinars"
+      },
+      "explanation": "Les versements forment une suite arithmétique de premier terme 150 et de raison 12. Le dernier versement vaut 150 + 23 × 12 = 426 dinars. La somme est 24 × (150 + 426) / 2 = 12 × 576 = 6 912 dinars. Le piège est de prendre 150 + 24 × 12 = 438 comme dernier terme : le 24-ième terme est u₁ + 23r, pas u₁ + 24r.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le solde mensuel d'une boutique, en centaines de dinars, est sₙ = n² − 10n + 3 après n mois. À partir de quel rang la suite est-elle croissante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dès n = 0"
+        },
+        {
+          "id": "b",
+          "text": "À partir de n = 5"
+        },
+        {
+          "id": "c",
+          "text": "À partir de n = 4"
+        },
+        {
+          "id": "d",
+          "text": "À partir de n = 10"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "sₙ₊₁ − sₙ = (2n + 1) − 10 = 2n − 9, négatif pour n ≤ 4 et positif pour n ≥ 5. Donc s₄ = −21 > s₅ = −22 puis s₅ < s₆ = −21 : la suite décroît jusqu'à n = 5 et croît ensuite. Le rang 0 oublie la descente initiale ; le rang 4 se trompe d'un cran, puisque s₄ > s₅ ; le rang 10 retient la racine de n(n − 10) qui n'a rien à voir avec la variation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un rapport de rentabilité entre deux gammes de produits s'écrit, pour tout n,\nuₙ = (7ⁿ − 3ⁿ)/(2 × 7ⁿ + 4ⁿ).\nQuelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Forme ∞/∞ : on factorise 7ⁿ, ce qui donne uₙ = (1 − (3/7)ⁿ)/(2 + (4/7)ⁿ). Comme (3/7)ⁿ et (4/7)ⁿ tendent vers 0, la limite est 1/2. La valeur 1/3 prend (4/7)ⁿ pour 1 au lieu de 0 ; 1 oublie le facteur 2 du dénominateur ; +∞ ne retient que le fait que le numérateur tend vers +∞.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une salle d'escalade perd chaque année 20 % de ses abonnés et en recrute 120 nouveaux : uₙ₊₁ = 0,8uₙ + 120, avec u₀ = 350. Calculer, arrondi à l'unité, le nombre d'abonnés u₁₀.",
+      "answerKey": {
+        "value": 573,
+        "tolerance": 0.5,
+        "unit": "abonnés"
+      },
+      "explanation": "Le point fixe vérifie ℓ = 0,8ℓ + 120, donc ℓ = 600. Avec vₙ = uₙ − 600, on a vₙ₊₁ = 0,8vₙ et v₀ = −250, d'où uₙ = 600 − 250 × 0,8ⁿ. Ainsi u₁₀ = 600 − 250 × 0,10737 ≈ 573,2, soit 573 abonnés. Contrôle : u₁ = 0,8 × 350 + 120 = 400 = 600 − 200.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le taux de rendement uₙ d'un fonds vérifie uₙ > 2 pour tout n (en pourcentage) et la suite converge vers ℓ. Que peut-on affirmer sur ℓ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℓ ≥ 2"
+        },
+        {
+          "id": "b",
+          "text": "ℓ > 2"
+        },
+        {
+          "id": "c",
+          "text": "ℓ = 2"
+        },
+        {
+          "id": "d",
+          "text": "ℓ ≤ 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Passer à la limite conserve seulement les inégalités larges : de uₙ − 2 > 0, on déduit ℓ − 2 ≥ 0. L'inégalité stricte ne survit pas, comme le montre uₙ = 2 + 1/n, strictement supérieur à 2 mais de limite exactement 2 ; ℓ = 2 est possible mais non imposé, car uₙ = 3 + 1/n convient aussi ; ℓ ≤ 2 contredit uₙ = 3 + 1/n.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les huit pas du logarithme",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associer chaque limite à sa valeur.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "la limite de ln x quand x tend vers 0⁺"
+        },
+        {
+          "id": "l2",
+          "text": "la limite de eˣ/x quand x tend vers +∞"
+        },
+        {
+          "id": "l3",
+          "text": "la limite de x eˣ quand x tend vers −∞"
+        },
+        {
+          "id": "l4",
+          "text": "la limite de (eˣ − 1)/x quand x tend vers 0"
+        },
+        {
+          "id": "r1",
+          "text": "−∞"
+        },
+        {
+          "id": "r2",
+          "text": "+∞"
+        },
+        {
+          "id": "r3",
+          "text": "0"
+        },
+        {
+          "id": "r4",
+          "text": "1"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "En 0⁺, ln x tend vers −∞. En +∞, l'exponentielle l'emporte sur x : eˣ/x tend vers +∞. En −∞, x eˣ tend vers 0 par croissances comparées. La dernière limite est le nombre dérivé de eˣ en 0, qui vaut e⁰ = 1.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Calculer la valeur exacte de ln(e⁵) − 2 ln(e³) + e^(ln 4).",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "On applique ln(eⁿ) = n : ln(e⁵) = 5 et 2 ln(e³) = 2 × 3 = 6. Puis e^(ln 4) = 4, valable car 4 > 0. Le total est 5 − 6 + 4 = 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la dérivée de la fonction f définie sur ℝ par f(x) = e^(x² − 3x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = e^(x² − 3x)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = e^(2x − 3)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = (2x − 3) e^(x² − 3x)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (x² − 3x) e^(x² − 3x − 1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec u(x) = x² − 3x, u′(x) = 2x − 3 et la dérivée de e^u est u′ e^u : f′(x) = (2x − 3) e^(x² − 3x). La réponse e^(x² − 3x) oublie u′ ; la réponse e^(2x − 3) dérive l'exposant sans garder l'exponentielle ; la dernière applique la règle des puissances à une exponentielle. Contrôle : f′ s'annule en x = 3/2, abscisse du sommet de la parabole x² − 3x.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le chiffre d'affaires d'une boulangerie en ligne est multiplié par 1,35 chaque trimestre. Au bout de combien de trimestres, en nombre réel arrondi au dixième, sera-t-il multiplié par 4 ?",
+      "answerKey": {
+        "value": 4.6,
+        "tolerance": 0.05,
+        "unit": "trimestres"
+      },
+      "explanation": "On résout 1,35ˣ = 4 : x ln 1,35 = ln 4, donc x = ln 4/ln 1,35 ≈ 1,386/0,300 = 4,6 trimestres. Contrôle : 1,35⁴ ≈ 3,32 et 1,35⁵ ≈ 4,48, donc le multiplicateur 4 est atteint entre 4 et 5 trimestres, plus près de 5.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La demande d'un modèle de casque est D(p) = 250 e^(−0,04p), où p est le prix en dinars. Calculer la demande pour p = 25, arrondie à l'unité.",
+      "answerKey": {
+        "value": 92,
+        "tolerance": 0.5,
+        "unit": "unités"
+      },
+      "explanation": "Pour p = 25, l'exposant vaut −0,04 × 25 = −1, donc D(25) = 250 e^(−1) = 250/e ≈ 250 × 0,3679 = 91,97, soit 92 unités. Contrôle : la demande est plus faible que D(0) = 250, ce qui est cohérent avec une fonction décroissante du prix.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces équations à résoudre dans ℝ, lesquelles n'ont aucune solution ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "eˣ = −0,5"
+        },
+        {
+          "id": "b",
+          "text": "ln x = −3"
+        },
+        {
+          "id": "c",
+          "text": "e^(x² + 1) = 1"
+        },
+        {
+          "id": "d",
+          "text": "2ˣ = 0"
+        },
+        {
+          "id": "e",
+          "text": "ln(x² + 1) = 0"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Sans solution : eˣ = −0,5 et 2ˣ = 0, car une exponentielle est toujours strictement positive ; et e^(x² + 1) = 1 équivaudrait à x² + 1 = 0, impossible dans ℝ. Avec solution : ln x = −3 donne x = e^(−3) ≈ 0,05 ; et ln(x² + 1) = 0 donne x² + 1 = 1, donc x = 0.",
+      "difficulty": 2
+    }
+  ]
+}

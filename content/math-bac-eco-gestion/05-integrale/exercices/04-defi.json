@@ -1,0 +1,125 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du cumul",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un projet génère un flux de trésorerie f(t) = t²e^(−t) milliers de dinars par an, t étant le temps en années. Calculer, en milliers de dinars et arrondi au millième, le flux cumulé pendant la première année, ∫₀¹ f(t)dt.",
+      "answerKey": {
+        "value": 0.161,
+        "tolerance": 0.0005,
+        "unit": "milliers de dinars"
+      },
+      "explanation": "Première intégration par parties, avec u′(t) = e^(−t), u(t) = −e^(−t) et v(t) = t² : ∫₀¹ t²e^(−t)dt = [−t²e^(−t)]₀¹ + 2∫₀¹ te^(−t)dt = −1/e + 2∫₀¹ te^(−t)dt. Seconde, avec v(t) = t : ∫₀¹ te^(−t)dt = [−te^(−t)]₀¹ + ∫₀¹ e^(−t)dt = −1/e + (1 − 1/e) = 1 − 2/e. D'où I = −1/e + 2 − 4/e = 2 − 5/e ≈ 0,1606, soit 0,161 milliers de dinars.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les courbes de f(x) = x² et g(x) = x + 6 se coupent en deux points et délimitent un domaine fermé. Quelle est son aire, en unités d'aire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "27/2"
+        },
+        {
+          "id": "b",
+          "text": "157/6"
+        },
+        {
+          "id": "c",
+          "text": "125/6"
+        },
+        {
+          "id": "d",
+          "text": "65/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(x) = g(x) équivaut à x² − x − 6 = (x − 3)(x + 2) = 0, donc x = −2 ou x = 3. Sur [−2 ; 3], g ≥ f, donc l'aire est ∫₋₂³ (x + 6 − x²)dx = [x²/2 + 6x − x³/3]₋₂³ = 27/2 − (−22/3) = 125/6 ≈ 20,83. La valeur 27/2 vient d'une borne gauche prise égale à 0 au lieu de −2 ; 157/6 d'une erreur de signe sur (−2)³ = −8 ; 65/2 est l'aire sous la droite seule, sans retrancher celle sous la parabole.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un atelier a pour coût marginal Cm(x) = x². La valeur moyenne de Cm sur [0 ; a], avec a > 0, est égale à 12. Que vaut a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "2√3"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "∫₀ᵃ x²dx = a³/3, donc la valeur moyenne sur [0 ; a] est (1/a) × a³/3 = a²/3. Elle vaut 12 si a² = 36, donc a = 6 puisque a > 0. On trouve 36 en s'arrêtant à a², 4 en divisant 12 par 3 au lieu de résoudre a²/3 = 12, et 2√3 en oubliant le facteur 1/3.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour calculer ∫₀² (3 − x)eˣ dx par parties, remettre les étapes dans l'ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Poser u′(x) = eˣ et v(x) = 3 − x, d'où u(x) = eˣ et v′(x) = −1"
+        },
+        {
+          "id": "b",
+          "text": "Évaluer le crochet [(3 − x)eˣ] entre 0 et 2, qui vaut e² − 3"
+        },
+        {
+          "id": "c",
+          "text": "Reconnaître un produit de la forme u′(x)v(x), dont un facteur a une primitive connue"
+        },
+        {
+          "id": "d",
+          "text": "Calculer l'intégrale restante ∫₀² eˣdx = e² − 1 et additionner : 2e² − 4"
+        },
+        {
+          "id": "e",
+          "text": "Écrire ∫₀² (3 − x)eˣdx = [(3 − x)eˣ]₀² − ∫₀² eˣ × (−1)dx"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "a",
+          "e",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "On reconnaît d'abord la forme u′v, puis on choisit u′ = eˣ (facile à primitiver) et v = 3 − x (qui se simplifie en la dérivant). On applique alors la formule, on évalue le crochet (1 × e² − 3 × 1 = e² − 3), puis l'intégrale restante : −∫ uv′ = −∫₀² eˣ × (−1)dx = +(e² − 1). La somme donne 2e² − 4 ≈ 10,78.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le tracé de f(x) = x² − 2x − 3, qui rencontre (Ox) en −1 et en 3, est fait avec 1 cm par unité en x et 3 cm par unité en y. Quelle surface, en cm², est enfermée entre cette courbe, (Ox) et les verticales x = −2 et x = 4 ?",
+      "answerKey": {
+        "value": 46,
+        "unit": "cm²"
+      },
+      "explanation": "f ≥ 0 sur [−2 ; −1] et sur [3 ; 4], f ≤ 0 sur [−1 ; 3] : il faut couper en deux changements de signe. Avec F(x) = x³/3 − x² − 3x, ∫₋₂⁻¹ f = 7/3, ∫₋₁³ |f| = −(F(3) − F(−1)) = 32/3 et ∫₃⁴ f = 7/3. L'aire est 7/3 + 32/3 + 7/3 = 46/3 unités d'aire, soit (46/3) × 3 = 46 cm², car une unité d'aire mesure 1 × 3 cm². L'intégrale algébrique ∫₋₂⁴ f vaut 7/3 − 32/3 + 7/3 = −6 : ce n'est pas une aire.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La valeur moyenne d'une fonction continue f est 7 sur [0 ; 2] et 4 sur [2 ; 8]. Quelle est sa valeur moyenne sur [0 ; 8], sous forme décimale ?",
+      "answerKey": {
+        "value": 4.75
+      },
+      "explanation": "Sur [0 ; 2], ∫₀² f = 7 × 2 = 14 ; sur [2 ; 8], ∫₂⁸ f = 4 × 6 = 24. Par Chasles, ∫₀⁸ f = 38, donc la moyenne sur [0 ; 8] est 38/8 = 4,75. La moyenne simple des deux moyennes, (7 + 4)/2 = 5,5, ignore que le second intervalle est trois fois plus long.",
+      "difficulty": 3
+    }
+  ]
+}

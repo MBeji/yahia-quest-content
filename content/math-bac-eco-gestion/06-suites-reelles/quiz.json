@@ -1,0 +1,173 @@
+{
+  "title": "Test de compréhension ⭐ : Suites réelles",
+  "questions": [
+    {
+      "prompt": "Un loueur de vélos compte 240 locations en janvier (rang 0) et en ajoute 18 de plus chaque mois. Combien en prévoit-il pour juin ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "348 locations"
+        },
+        {
+          "id": "b",
+          "text": "330 locations"
+        },
+        {
+          "id": "c",
+          "text": "549 locations"
+        },
+        {
+          "id": "d",
+          "text": "90 locations"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Janvier correspond au rang 0, donc juin au rang 5 : u₅ = 240 + 5 × 18 = 330. Le résultat 348 compte juin comme le rang 6, alors que u₀ est déjà janvier ; 549 traite la hausse de 18 comme un coefficient multiplicatif (240 × 1,18⁵) ; 90 ne garde que les 5 × 18 ajoutés, sans le point de départ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une presse d'imprimerie achetée 20 000 dinars perd 15 % de sa valeur chaque année. Que vaut-elle au bout de 3 ans ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11 000 dinars"
+        },
+        {
+          "id": "b",
+          "text": "10 440,13 dinars"
+        },
+        {
+          "id": "c",
+          "text": "67,50 dinars"
+        },
+        {
+          "id": "d",
+          "text": "12 282,50 dinars"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Perdre 15 % revient à multiplier par 0,85 : u₃ = 20 000 × 0,85³ = 12 282,50 dinars. Le résultat 11 000 retire 3 000 dinars (15 % de 20 000) chaque année, comme si la perte était arithmétique ; 10 440,13 utilise l'exposant 4 au lieu de 3 ; 67,50 prend 0,15 pour raison au lieu de 0,85.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une suite est définie par\nuₙ = 4 − 3/(n + 1).\nQuel encadrement est vrai pour tous les entiers n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 ≤ uₙ ≤ 4"
+        },
+        {
+          "id": "b",
+          "text": "1 ≤ uₙ ≤ 3"
+        },
+        {
+          "id": "c",
+          "text": "uₙ ≥ 4"
+        },
+        {
+          "id": "d",
+          "text": "0 ≤ uₙ ≤ 3,5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour tout n ≥ 0, 0 < 3/(n + 1) ≤ 3, donc 1 ≤ uₙ < 4. La borne 3 est dépassée dès u₃ = 3,25 ; uₙ ≥ 4 est faux dès u₀ = 1 ; la borne 3,5 est dépassée à partir de u₆ = 4 − 3/7 ≈ 3,57. Vérifier quelques premiers termes ne suffit pas à prouver un plafond.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les résultats nets d'une jeune pousse, en milliers de dinars, suivent uₙ = −5 × 1,2ⁿ. Quel est le sens de variation de la suite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Croissante, car 1,2 > 1"
+        },
+        {
+          "id": "b",
+          "text": "Constante, car la raison est fixe"
+        },
+        {
+          "id": "c",
+          "text": "Décroissante, car uₙ₊₁ − uₙ < 0"
+        },
+        {
+          "id": "d",
+          "text": "Non monotone, car le signe change"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ici uₙ₊₁ − uₙ = uₙ(q − 1) = −5 × 1,2ⁿ × 0,2 < 0 : la suite est décroissante (u₀ = −5, u₁ = −6, u₂ = −7,2). Dire « croissante » applique le critère q > 1 qui vaut seulement pour des termes positifs ; une raison fixe ne rend pas la suite constante ; le signe ne change pas, car la raison est positive.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le coût moyen d'un lot d'un atelier, en centaines de dinars, pour n lots produits, s'écrit\ncₙ = (4n² − 3n + 1)/(2n² + 5).\nVers quelle valeur tend-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "1/5"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les deux termes sont de degré 2 : cₙ = (4 − 3/n + 1/n²)/(2 + 5/n²), qui tend vers 4/2 = 2. La réponse +∞ ne regarde que le numérateur ; 1/5 compare les constantes seules ; 0 suppose à tort que le dénominateur l'emporte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On sait que\n5 − 2/n ≤ uₙ ≤ 5 + 3/n²\npour tout n ≥ 1, où uₙ est le délai moyen de livraison d'un entrepôt, en jours. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La suite n'a pas de limite"
+        },
+        {
+          "id": "b",
+          "text": "La suite converge vers 8"
+        },
+        {
+          "id": "c",
+          "text": "La suite converge vers 0"
+        },
+        {
+          "id": "d",
+          "text": "La suite converge vers 5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les deux bornes 5 − 2/n et 5 + 3/n² tendent vers 5 ; par encadrement, uₙ tend vers 5. Des bornes différentes à chaque rang ne bloquent pas la conclusion, seule compte leur limite commune ; 8 est la valeur de la borne haute au rang 1 ; 0 est la limite de 2/n et de 3/n², pas de la suite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une suite vérifie\nu₀ = 10 et uₙ₊₁ = 0,4uₙ + 3.\nVers quelle valeur tend-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "−5"
+        },
+        {
+          "id": "c",
+          "text": "7,5"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le point fixe vérifie ℓ = 0,4ℓ + 3, soit ℓ = 3/(1 − 0,4) = 5 ; le coefficient 0,4 est compris entre −1 et 1, donc uₙ tend vers 5 (u₁ = 7, u₂ = 5,8, u₃ = 5,32). La valeur −5 vient de la division par a − 1 au lieu de 1 − a ; 7,5 vient de b/a = 3/0,4 ; 10 est le premier terme u₀, que la suite quitte dès le rang 1.",
+      "difficulty": 2
+    }
+  ]
+}

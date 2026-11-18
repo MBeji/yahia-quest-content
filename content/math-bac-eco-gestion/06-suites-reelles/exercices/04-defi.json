@@ -1,0 +1,128 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du long terme",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Chaque 1er janvier, Salma verse 2 000 dinars sur un compte à intérêts composés au taux annuel de 5 %, les intérêts étant ajoutés le 31 décembre. Calculer, arrondi au dinar, le capital disponible juste après son sixième versement.",
+      "answerKey": {
+        "value": 13604,
+        "tolerance": 0.5,
+        "unit": "dinars"
+      },
+      "explanation": "Le premier versement a produit des intérêts pendant 5 ans, le deuxième pendant 4 ans, et ainsi de suite jusqu'au sixième, qui n'a encore rien rapporté. Le capital vaut 2 000 × (1,05⁵ + 1,05⁴ + 1,05³ + 1,05² + 1,05 + 1), somme géométrique de raison 1,05 : 2 000 × (1,05⁶ − 1)/0,05 ≈ 2 000 × 6,80191 ≈ 13 603,8, soit 13 604 dinars.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit\nu₀ = 2 et uₙ₊₁ = (5uₙ + 4)/(uₙ + 2).\nOn pose vₙ = (uₙ − 4)/(uₙ + 1). Quelle est la raison de la suite v, et quelle est la limite de u ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Raison 1/6 et limite −1"
+        },
+        {
+          "id": "b",
+          "text": "Raison −1/6 et limite 4"
+        },
+        {
+          "id": "c",
+          "text": "Raison 1/6 et limite 4"
+        },
+        {
+          "id": "d",
+          "text": "Raison −1/6 et limite −1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les points fixes de x(x + 2) = 5x + 4 sont 4 et −1. Alors vₙ₊₁ = ((5uₙ + 4) − 4(uₙ + 2))/((5uₙ + 4) + (uₙ + 2)) = (uₙ − 4)/(6uₙ + 6) = vₙ/6. Comme v₀ = −2/3 et vₙ tend vers 0, uₙ = (4 + vₙ)/(1 − vₙ) tend vers 4 ; l'autre point fixe −1 est exclu, car uₙ > −1 à tout rang. Contrôle : v₁ = −1/9 = −2/3 × 1/6. La raison −1/6 vient d'une erreur de signe au numérateur ; la limite −1 retient l'autre point fixe, exclu puisque uₙ > −1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Que vaut la limite de\nuₙ = (6ⁿ + (−4)ⁿ)/(6ⁿ + 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "Aucune limite, car (−4)ⁿ n'en a pas"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On factorise 6ⁿ : uₙ = (1 + (−2/3)ⁿ)/(1 + 2 × (1/6)ⁿ). Comme −1 < −2/3 < 1 et 0 < 1/6 < 1, les deux puissances tendent vers 0 et uₙ tend vers 1/1 = 1. La limite 0 ne regarde que le terme 1/6ⁿ ; +∞ retient seulement que le numérateur grandit ; et l'absence de limite de (−4)ⁿ est sans effet, car après division par 6ⁿ ce terme devient (−2/3)ⁿ, qui tend vers 0.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour étudier la suite définie par\nu₀ = 4 et uₙ₊₁ = 0,75uₙ + 5,\nremettre les étapes dans l'ordre.",
+      "options": [
+        {
+          "id": "d",
+          "text": "Revenir à uₙ = 20 − 16 × 0,75ⁿ"
+        },
+        {
+          "id": "a",
+          "text": "Résoudre ℓ = 0,75ℓ + 5 pour obtenir le point fixe ℓ = 20"
+        },
+        {
+          "id": "e",
+          "text": "Conclure que uₙ tend vers 20, car 0,75ⁿ tend vers 0"
+        },
+        {
+          "id": "b",
+          "text": "Poser vₙ = uₙ − 20 et vérifier que vₙ₊₁ = 0,75vₙ, avec v₀ = −16"
+        },
+        {
+          "id": "c",
+          "text": "En déduire vₙ = −16 × 0,75ⁿ"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On cherche d'abord le point fixe, qui sert à définir la suite auxiliaire. On montre alors qu'elle est géométrique de raison 0,75, ce qui donne son terme général, puis celui de u. La limite se lit en dernier. Contrôle : u₁ = 0,75 × 4 + 5 = 8 = 20 − 16 × 0,75.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un site de vente en ligne réalise 2 400 dinars de ventes le premier mois, puis ses ventes baissent de 10 % chaque mois. Calculer, arrondi au dinar, le total des ventes des 12 premiers mois.",
+      "answerKey": {
+        "value": 17222,
+        "tolerance": 0.5,
+        "unit": "dinars"
+      },
+      "explanation": "Les ventes mensuelles forment une suite géométrique de premier terme 2 400 et de raison 0,9. La somme de 12 termes vaut 2 400 × (1 − 0,9¹²)/(1 − 0,9) = 24 000 × (1 − 0,28243) ≈ 17 221,7, soit 17 222 dinars. L'erreur classique est de calculer 12 × 2 400 × 0,9, qui traite la baisse comme une perte unique.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le prix d'un produit suit, d'une année à l'autre,\nPₙ₊₁ = −0,5Pₙ + 90, avec P₀ = 100 dinars.\nCalculer, arrondi au centième, le prix P₁₂ au bout de 12 ans.",
+      "answerKey": {
+        "value": 60.01,
+        "tolerance": 0.005,
+        "unit": "dinars"
+      },
+      "explanation": "Le point fixe vérifie ℓ = −0,5ℓ + 90, donc ℓ = 60. Avec vₙ = Pₙ − 60, on a vₙ₊₁ = −0,5vₙ et v₀ = 40, d'où Pₙ = 60 + 40 × (−0,5)ⁿ. Pour n = 12, l'exposant est pair : P₁₂ = 60 + 40/4096 ≈ 60,0098, soit 60,01 dinars. Contrôle : P₁ = 40, P₂ = 70, P₃ = 55, des valeurs qui oscillent autour de 60.",
+      "difficulty": 3
+    }
+  ]
+}
