@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Dérivation et primitives",
+  "questions": [
+    {
+      "prompt": "Pour un atelier de tapis, le coût total C (en dinars) vérifie C(20) = 340 et C′(20) = 12. Quelle est l'équation de la tangente à la courbe de C au point d'abscisse 20 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 12x − 580"
+        },
+        {
+          "id": "b",
+          "text": "y = 12x + 100"
+        },
+        {
+          "id": "c",
+          "text": "y = 12x + 340"
+        },
+        {
+          "id": "d",
+          "text": "y = 12x + 580"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La tangente est y = C′(20)(x − 20) + C(20) = 12(x − 20) + 340 = 12x + 100 ; elle passe bien par (20 ; 340), car 12 × 20 + 100 = 340. La droite y = 12x + 340 vient de la formule fausse y = C′(20)x + C(20), la droite y = 12x + 580 d'un décalage x + 20 au lieu de x − 20, et la droite y = 12x − 580 d'un signe moins devant C(20) : 12(x − 20) − 340.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un opérateur de téléphonie facture T(x) = 0,5x dinars jusqu'à 8 Go, puis T(x) = x − 4 dinars au-delà de 8 Go. Que peut-on dire de T en x = 8 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T est dérivable en 8, car elle y est continue"
+        },
+        {
+          "id": "b",
+          "text": "T est dérivable en 8, avec T′(8) = 1, car la formule x − 4 est elle-même dérivable"
+        },
+        {
+          "id": "c",
+          "text": "T est continue en 8 sans y être dérivable : les pentes 0,5 et 1 diffèrent"
+        },
+        {
+          "id": "d",
+          "text": "T n'est ni continue ni dérivable en 8, car T(8) n'existe que d'un côté"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "T(8) = 0,5 × 8 = 4 et 8 − 4 = 4 : T est continue en 8. À gauche, le taux vaut 0,5 : T′g(8) = 0,5. À droite, (x − 4 − 4)/(x − 8) = 1 : T′d(8) = 1. Les deux nombres dérivés diffèrent, donc T n'est pas dérivable en 8 (point anguleux). Être continue ne suffit pas à être dérivable ; la formule x − 4 ne donne que le nombre dérivé à droite, pas T′(8) ; et T(8) = 4 est bien défini, avec un raccord des deux formules.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour une boulangerie, le coût total est C(x) = x² + 25x + 36 dinars et le coût moyen CM(x) = C(x)/x, pour x > 0. Que vaut CM′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 − 36/x²"
+        },
+        {
+          "id": "b",
+          "text": "2x + 25"
+        },
+        {
+          "id": "c",
+          "text": "1 − 36/x"
+        },
+        {
+          "id": "d",
+          "text": "1 + 36/x²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "CM(x) = x + 25 + 36/x, donc CM′(x) = 1 − 36/x². Par le quotient : ((2x + 25)x − (x² + 25x + 36))/x² = (x² − 36)/x². La réponse 2x + 25 est le coût marginal C′(x), dérivée du coût total et non du coût moyen ; 1 − 36/x oublie le carré du dénominateur ; 1 + 36/x² se trompe de signe pour la dérivée de 36/x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la dérivée de f(x) = (3x − 5)⁴ sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4(3x − 5)³"
+        },
+        {
+          "id": "b",
+          "text": "12(3x − 5)⁴"
+        },
+        {
+          "id": "c",
+          "text": "3(3x − 5)⁴"
+        },
+        {
+          "id": "d",
+          "text": "12(3x − 5)³"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec u(x) = 3x − 5 et n = 4, f′ = n u′ uⁿ⁻¹ = 4 × 3 × (3x − 5)³ = 12(3x − 5)³. On trouve 4(3x − 5)³ en oubliant la dérivée de l'intérieur, 12(3x − 5)⁴ en ne baissant pas l'exposant, et 3(3x − 5)⁴ en ne gardant que la dérivée de l'intérieur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le bénéfice B(x), en milliers de dinars, d'une fabrique de meubles vérifie B′(x) = 12 − 3x² pour x dans [0 ; 5]. Quelle production x rend le bénéfice maximal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "B′(x) = 12 − 3x² = 3(2 − x)(2 + x) s'annule en x = 2 sur [0 ; 5] ; elle est positive avant 2 et négative après : B croît puis décroît, donc le maximum est en x = 2. x = 0 est la borne gauche, où B′(0) = 12 > 0 : B y croît, c'est un minimum et non un maximum ; x = 4 vient de la résolution fausse de 12 − 3x = 0 ; x = 5 est la borne, où B′(5) = −63 < 0 : B décroît encore.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une primitive F de f(x) = 3x² − 4x sur ℝ vérifie F(1) = 2. Que vaut F(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x³ − 2x²"
+        },
+        {
+          "id": "b",
+          "text": "6x − 4"
+        },
+        {
+          "id": "c",
+          "text": "x³ − 2x² + 3"
+        },
+        {
+          "id": "d",
+          "text": "x³ − 2x² + 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les primitives de f sont F(x) = x³ − 2x² + k. La condition F(1) = 2 donne 1 − 2 + k = 2, donc k = 3 : F(x) = x³ − 2x² + 3. Sans constante, x³ − 2x² vaut −1 en 1 ; x³ − 2x² + 2 prend la valeur de F(1) pour k ; et 6x − 4 est la dérivée de f, pas une primitive.",
+      "difficulty": 2
+    }
+  ]
+}

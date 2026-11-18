@@ -133,7 +133,11 @@
 | statut | matière | profondeur | sources (couverture calculée) | R-7 | maj | notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | ✅ validée R-7 | **gestion** | generation | `229464` 100 % | 2026-11-13 (integrale, CONFORME. Lecture L1 (pdftotext -layout) de toutes les pages par 9 lecteurs sonnet avec sondage image 8-45 % selon la tranche ; R-7 par 4 auditeurs opus en contexte vierge : controle mecanique de 364/364 pages contre la couche texte (nombres, encadres, formules, totaux recomptes) et sondage image de 20-28 % des pages (94 sur 364 environ), 4 constats SUBSTANTIELS au total (un chiffre fantome issu d'un objet masque de la couche texte p.53-55, un total DEPS imprime incoherent p.50 non signale, une logique canal B/C p.174, une annuite manquante p.266) et une quarantaine de constats de forme, tous corriges ; taux < 1 substantiel pour 10 pages dans toutes les sections. Aucun corrige d'exercice dans le manuel : les recalculs sont etiquetes calcul redacteur. Anomalies imprimees conservees et signalees. Reserve : le manuel applique le programme de 2007, aucun guide enseignant au corpus., 46 corr.) | 2026-11-13 (claude/campagne-wqgvi1) | Manuel 229464 (364 p., francais, couche texte propre, barreau L1) lu integralement, transcrit en fiche (§8), rapports R-7 en §9. Chapitrage : 29 sections du manuel codifiees (manifest/bac-eco-gestion.json). Piege : la couche texte du PDF contient des objets masques ; un chiffre incongru doit etre verifie a l'image avant d'etre note comme imprime. Reserve de programme : le manuel date de 2007, aucun guide au corpus. |
+<<<<<<< HEAD
 | ✅ validée R-7 | **mathematiques** | generation | `222463` 100 % | 2026-11-18 (integrale, CONFORME AVEC RESERVE. Lecture texte + image des 302 pages par 10 lecteurs sonnet ; R-7 par 4 auditeurs opus en contexte vierge : presence controlee 297/297 pages, sondage image 204/297 pages (69 %), 17 constats SUBSTANTIELS (lectures de figures fausses, bornes d'integrale, valeur absolue, arcs de graphes, coquilles imputees a tort au manuel) et 28 de forme, tous corriges. Deux sections sous la barre avant correction (exercices du ch.II p.54-62 et cours II du ch.X p.278-285), relues en entier a l'image. Taux global 0,57 substantiel pour 10 pages. RESERVE : figures des exercices de graphes (ch.X) non transcrites arete par arete ; les auteurs ecrivent leurs propres graphes sans s'appuyer sur ces figures., 59 corr.) | 2026-11-18 (claude/campagne-wqgvi1) | Manuel 222463 (302 p., francais) lu integralement au texte et a l'image ; transcription en §8, rapports R-7 en §9. Le manuel ne donne aucun corrige ; nombreuses coquilles imprimees signalees (voir § Notes de chaque chapitre), a ne jamais reprendre telles quelles dans le contenu. Meme collection CNP que les maths des autres sections du Bac. |
+=======
+| 🚧 partielle — ⛔ génération interdite | **mathematiques** | first-pass | `222463` 2 % (manque p.6–301) | — | 2026-11-18 (claude/campagne-wqgvi1) | A1 (2026-11-18) : sujet math-bac-eco-gestion, 10 chapitres codifiés d'après le sommaire (p.302) du manuel 222463 (302 p., français, couche texte propre mais formules dégradées : lecture texte + image de chaque page). Aucun guide enseignant au corpus. Même collection CNP que les manuels de maths des autres sections (math-bac-info, math-bac-techniques, math-bac-sciences-exp, math-bac-math). |
+>>>>>>> origin/main
 
 ## bac-info
 
@@ -200,4 +204,8 @@
 - **enrichissement** : 10 PDF
   - décisions en attente (`differee`) : `128703`, `128803`, `128903`, `228103`, `228233`, `228362`, `228363`, `228461`, `228462`
 
+<<<<<<< HEAD
 **Totaux (calculés)** : 70 fiches suivies (36 partielle · 13 complete · 21 validee-r7) · 346 PDF au corpus · 120 œuvres principales restant à rattacher.
+=======
+**Totaux (calculés)** : 70 fiches suivies (37 partielle · 13 complete · 20 validee-r7) · 346 PDF au corpus · 120 œuvres principales restant à rattacher.
+>>>>>>> origin/main

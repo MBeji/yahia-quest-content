@@ -1,0 +1,157 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les six pas de la pente",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associer chaque grandeur économique à son expression, pour un coût total C(x) et un prix unitaire p(x).",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Coût marginal"
+        },
+        {
+          "id": "l2",
+          "text": "Coût moyen"
+        },
+        {
+          "id": "l3",
+          "text": "Recette"
+        },
+        {
+          "id": "l4",
+          "text": "Bénéfice"
+        },
+        {
+          "id": "r1",
+          "text": "C′(x)"
+        },
+        {
+          "id": "r2",
+          "text": "C(x)/x"
+        },
+        {
+          "id": "r3",
+          "text": "x × p(x)"
+        },
+        {
+          "id": "r4",
+          "text": "x × p(x) − C(x)"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le coût marginal est la dérivée du coût total : C′(x). Le coût moyen est le coût par unité : C(x)/x. La recette est le prix unitaire multiplié par la quantité : x × p(x). Le bénéfice est la recette moins le coût : x × p(x) − C(x).",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur les primitives et les accroissements finis, lesquelles sont vraies ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une fonction continue sur un intervalle y admet au moins une primitive"
+        },
+        {
+          "id": "b",
+          "text": "Une fonction qui admet une primitive sur un intervalle n'en admet qu'une seule"
+        },
+        {
+          "id": "c",
+          "text": "Deux primitives d'une même fonction sur un intervalle diffèrent d'une constante"
+        },
+        {
+          "id": "d",
+          "text": "Si f′ s'annule en x₀, la courbe de f a un point d'inflexion d'abscisse x₀"
+        },
+        {
+          "id": "e",
+          "text": "Si f est continue sur [a ; b] et dérivable sur ]a ; b[, une tangente à la courbe est parallèle à la corde reliant les points d'abscisses a et b"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Sont vraies : toute fonction continue sur un intervalle y admet une primitive (théorème admis) ; deux primitives de f sur un intervalle diffèrent d'une constante, car leur différence a une dérivée nulle ; et le théorème des accroissements finis donne une tangente parallèle à la corde. Sont fausses : si F est une primitive, F + 1 en est une autre, donc il y en a une infinité ; et un point d'inflexion se détecte par f″ qui change de signe, pas par f′ qui s'annule (pour x ↦ x² + 1, f′(0) = 0 mais f″ = 2 reste positive : aucun point d'inflexion).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La fonction f(x) = x³ + 3x est une bijection de ℝ sur ℝ, et f⁻¹ est sa réciproque. Que vaut (f⁻¹)′(14) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/591"
+        },
+        {
+          "id": "b",
+          "text": "1/15"
+        },
+        {
+          "id": "c",
+          "text": "1/14"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On cherche l'antécédent de 14 : f(2) = 8 + 6 = 14, donc x₀ = 2. Comme f′(x) = 3x² + 3, f′(2) = 15, non nul, donc (f⁻¹)′(14) = 1/f′(2) = 1/15. La valeur 15 est f′(2) sans prendre l'inverse, 1/591 évalue f′ en 14 au lieu de l'antécédent 2 (f′(14) = 591), et 1/14 prend l'inverse de f(2) au lieu de celui de f′(2).",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La courbe de f(x) = 2x² − 5x + 1 admet une tangente au point d'abscisse 3. Quelle valeur cette tangente prend-elle en x = 0 ?",
+      "answerKey": {
+        "value": -17
+      },
+      "explanation": "f(3) = 18 − 15 + 1 = 4 et f′(x) = 4x − 5, donc f′(3) = 7. La tangente est y = 7(x − 3) + 4 = 7x − 17 ; elle coupe l'axe des ordonnées en x = 0, à l'ordonnée −17. Écrire y = 7x + 4 donnerait 4, à tort.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La courbe de f(x) = x³ − 6x² + 5x admet un point d'inflexion. Quelle est l'ordonnée de ce point ?",
+      "answerKey": {
+        "value": -6
+      },
+      "explanation": "f′(x) = 3x² − 12x + 5 et f″(x) = 6x − 12, qui s'annule en x = 2 en passant du négatif au positif : c'est l'abscisse du point d'inflexion. Son ordonnée est f(2) = 8 − 24 + 10 = −6.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit f(x) = x³ + x sur [1 ; 4]. Le théorème des accroissements finis garantit un réel c de ]1 ; 4[ tel que f′(c) soit égale au taux moyen de f entre 1 et 4. Calculer c, arrondi au centième.",
+      "answerKey": {
+        "value": 2.65,
+        "tolerance": 0.005
+      },
+      "explanation": "f est polynomiale : continue sur [1 ; 4] et dérivable sur ]1 ; 4[. Le taux moyen est (f(4) − f(1))/(4 − 1) = (68 − 2)/3 = 22. L'équation f′(c) = 3c² + 1 = 22 donne c² = 7, donc c = √7 ≈ 2,65, qui appartient à ]1 ; 4[ (la racine −√7 est exclue).",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "title": "⭐ Exercice : Les premiers pas vers le col",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Pour un atelier de reliure, le coût moyen en dinars de x dizaines de cahiers est CM(x) = 2x + 12 + 90/x, avec x > 0. Quelle est la limite de CM à droite de 0, et que signifie-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 : le coût moyen se stabilise quand x est petit"
+        },
+        {
+          "id": "b",
+          "text": "0 : sans production, il n'y a plus de coût"
+        },
+        {
+          "id": "c",
+          "text": "90 : le coût moyen vaut les frais fixes"
+        },
+        {
+          "id": "d",
+          "text": "+∞ : les frais fixes pèsent sur très peu d'unités"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Quand x tend vers 0 par valeurs positives, 2x + 12 tend vers 12 mais 90/x tend vers +∞ : lim x→0⁺ CM(x) = +∞. Les 90 de frais fixes sont partagés entre très peu de cahiers, donc chacun coûte très cher. Les valeurs 12 et 90 oublient que 90/x n'est pas borné, et 0 confond limite et absence de production.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un indicateur de coût d'une usine de jouets s'écrit g(x) = (x² − 16)/(x − 4) pour x ≠ 4. Quelle est la limite de g en 4 ? (valeur exacte)",
+      "answerKey": {
+        "value": 8
+      },
+      "explanation": "En 4, numérateur et dénominateur tendent vers 0 : on factorise x² − 16 = (x − 4)(x + 4). Pour x ≠ 4, g(x) = x + 4, qui tend vers 8. Donc lim x→4 g(x) = 8, même si g(4) n'existe pas.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque limite à sa valeur.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "lim x→+∞ (5x² − 3x + 1)/(2x² + 7)"
+        },
+        {
+          "id": "l2",
+          "text": "lim x→+∞ (3x + 1)/(x² − 4)"
+        },
+        {
+          "id": "l3",
+          "text": "lim x→−∞ (2x³ + x)/(x² + 1)"
+        },
+        {
+          "id": "l4",
+          "text": "lim x→3⁺ 1/(x − 3)"
+        },
+        {
+          "id": "r1",
+          "text": "5/2"
+        },
+        {
+          "id": "r2",
+          "text": "0"
+        },
+        {
+          "id": "r3",
+          "text": "−∞"
+        },
+        {
+          "id": "r4",
+          "text": "+∞"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Dans (5x² − 3x + 1)/(2x² + 7), les degrés sont égaux : quotient des coefficients 5/2. Dans (3x + 1)/(x² − 4), le numérateur est de degré 1 contre 2 au dénominateur : limite 0. Dans (2x³ + x)/(x² + 1), 2x³/x² = 2x tend vers −∞ quand x tend vers −∞. Enfin x − 3 tend vers 0 par valeurs positives en 3⁺, donc 1/(x − 3) tend vers +∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut lim x→4⁻ (3x − 2)/(x − 4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le numérateur tend vers 3 × 4 − 2 = 10, positif. À gauche de 4, x − 4 est négatif et tend vers 0 : on note 0⁻. Un nombre proche de 10 divisé par un très petit négatif est très grand et négatif : la limite est −∞. Oublier le signe du dénominateur donne +∞, et 10 est la limite du seul numérateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout x ≥ 5, une fonction f vérifie f(x) ≥ 3 − 20/x. Que peut-on en conclure sur sa limite en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "elle vaut 3, comme la borne 3 − 20/x"
+        },
+        {
+          "id": "b",
+          "text": "elle vaut 20, le numérateur de la borne"
+        },
+        {
+          "id": "c",
+          "text": "rien : une seule borne ne suffit pas"
+        },
+        {
+          "id": "d",
+          "text": "elle vaut +∞ puisque f est plus grande"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une minoration par une fonction de limite 3 ne fixe pas la limite : f(x) = x vérifie l'inégalité et tend vers +∞, alors que f(x) = 3 la vérifie aussi et tend vers 3. Il faudrait une majoration de même limite pour appliquer l'encadrement.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "On veut calculer lim x→+∞ √((4x + 1)/(x + 3)). Remettre dans l'ordre les étapes du raisonnement.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Observer que √y a pour limite √4 = 2 quand y tend vers 4"
+        },
+        {
+          "id": "b",
+          "text": "Poser u(x) = (4x + 1)/(x + 3) et g(y) = √y, de sorte que la fonction est g∘u"
+        },
+        {
+          "id": "c",
+          "text": "Conclure : la limite de g∘u en +∞ vaut 2"
+        },
+        {
+          "id": "d",
+          "text": "Calculer lim x→+∞ u(x) : le quotient des termes de plus haut degré vaut 4"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "On identifie d'abord la composée, car c'est elle qui indique quelles limites calculer. On calcule ensuite la limite de la fonction intérieure u, qui donne la valeur 4. Il faut cette valeur pour étudier la fonction extérieure g en 4. Ce n'est qu'après ces deux limites qu'on conclut par le théorème de la composée : 2.",
+      "difficulty": 2
+    }
+  ]
+}

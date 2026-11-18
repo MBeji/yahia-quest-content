@@ -4,8 +4,13 @@
 > manuel élève `222463P00.pdf` — « Mathématiques, 4ème année de l'enseignement secondaire,
 > Économie et gestion », **302 pages** (page PDF = page imprimée), auteurs H. Sbika, A. Chenini,
 > M. N. Dalhoumi, N. Ben Ali ; évaluateurs N. Affi, O. Ferjani. **Langue** : `fr`. **gradeSlug** :
+<<<<<<< HEAD
 > `bac-eco-gestion`. **subject id** : `math-bac-eco-gestion`. **Statut** : `validee-r7` (avec réserve) / `generation`
 > — transcription complète (texte + image de chaque page), R-7 passée (§9) ; réserve : figures des exercices de graphes (ch. X) non transcrites arête par arête. **Transcrit le** : 2026-11-18 (A1).
+=======
+> `bac-eco-gestion`. **subject id** : `math-bac-eco-gestion`. **Statut** : `partielle` / `first-pass`
+> — ossature (titre, préface, sommaire), génération interdite (R-5). **Transcrit le** : 2026-11-18 (A1).
+>>>>>>> origin/main
 >
 > Couche texte propre (Times, Arial) mais les formules, tableaux de variations et graphiques s'y
 > dégradent : chaque page est lue au texte ET à l'image.
@@ -36,6 +41,7 @@ et **Math culture**.
 ## 6. Incertitudes / à trancher
 
 - Les chapitres IV, VII et IX sont longs (30 à 36 pages) : un chapitre ne dépassera pas 8 notions.
+<<<<<<< HEAD
 
 ## 8. Transcription par chapitre (texte + image, corrigée par la R-7)
 > Pages = pages PDF = pages imprimées. Les marques `[R7 : …]` signalent les passages corrigés par l'audit. Le manuel ne donne aucun corrigé : tout recalcul est étiqueté comme tel. Les coquilles imprimées sont reproduites et signalées, jamais corrigées en silence.
@@ -5502,3 +5508,5 @@ Coquilles du manuel vérifiées comme réellement imprimées (non imputées à t
 - **m08** : au-dessus de la barre. Ses 4 constats substantiels sont des coquilles imputées à tort dans les § Notes ; aucune donnée ni formule n'est fausse.
 - **m09** : au-dessus de la barre, sans aucun constat substantiel.
 - **m10** : **sous la barre pour la section Cours II (pp.278-285)**, avec 4 constats substantiels pour 8 pages : 3 orientations d'arcs fausses et 1 coquille imputée à tort. Cette section a été relue en entier à l'image et les 4 écarts sont corrigés. Les figures des exercices de graphes restent [?].
+=======
+>>>>>>> origin/main

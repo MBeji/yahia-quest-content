@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Étude de fonctions",
+  "questions": [
+    {
+      "prompt": "Une cave coopérative a un coût moyen CM(x) = (2x² + 90)/(x − 1) dinars par bouteille, pour x > 1 milliers de bouteilles. Que devient la courbe de CM quand x tend vers 1 par valeurs supérieures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite x = 1 est asymptote verticale, car CM(x) tend vers +∞"
+        },
+        {
+          "id": "b",
+          "text": "La droite y = 92 est asymptote horizontale, car CM(x) tend vers 92"
+        },
+        {
+          "id": "c",
+          "text": "Il n'y a pas d'asymptote, car le numérateur ne s'annule jamais"
+        },
+        {
+          "id": "d",
+          "text": "La droite x = 1 est asymptote verticale, car CM(x) tend vers −∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand x tend vers 1⁺, le numérateur tend vers 92 > 0 et le dénominateur vers 0⁺, donc CM(x) tend vers +∞ : la droite x = 1 est asymptote verticale. Un numérateur non nul ne supprime pas la limite infinie, il la provoque ; CM ne tend pas vers 92, car seul le numérateur tend vers 92 et le quotient explose ; et le numérateur et le dénominateur sont positifs, donc la limite est +∞, pas −∞.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le taux de remplissage d'un entrepôt, en pourcentage, vaut T(n) = (90n + 30)/(n + 5) après n semaines, n ≥ 0. Quelle est l'équation de l'asymptote horizontale de la courbe de T en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 18"
+        },
+        {
+          "id": "b",
+          "text": "y = 6"
+        },
+        {
+          "id": "c",
+          "text": "y = 120"
+        },
+        {
+          "id": "d",
+          "text": "y = 90"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En factorisant par n, T(n) = (90 + 30/n)/(1 + 5/n) tend vers 90 : la droite y = 90 est asymptote horizontale. La valeur 18 divise 90 par la constante 5 du dénominateur, la valeur 6 divise 30 par 5 (quotient des constantes), et la valeur 120 ajoute 30 à 90 : aucune ne donne la limite, qui est le quotient des coefficients de n.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = x⁴ − 5x² + 2 définie sur ℝ. Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Impaire, car tous les exposants de x sont des nombres pairs, 4 et 2"
+        },
+        {
+          "id": "b",
+          "text": "Ni paire ni impaire, car les exposants 4 et 2 sont différents"
+        },
+        {
+          "id": "c",
+          "text": "Impaire, car (−x)⁴ = −x⁴ et (−x)² = −x²"
+        },
+        {
+          "id": "d",
+          "text": "Paire, car f(−x) = f(x), donc symétrique par rapport à (Oy)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(−x) = (−x)⁴ − 5(−x)² + 2 = x⁴ − 5x² + 2 = f(x), sur un domaine ℝ symétrique par rapport à 0 : f est paire et sa courbe est symétrique par rapport à l'axe des ordonnées. Des exposants tous pairs donnent une fonction paire et non impaire ; des exposants différents n'empêchent pas la parité tant qu'ils sont pairs (la constante 2 est de degré 0) ; et (−x)⁴ = x⁴, pas −x⁴ : l'imparité exigerait f(−x) = −f(x).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un fabricant estime son coût de production à h(x) = 6x + 4√x milliers de dinars pour x milliers d'unités. Quelle est la branche infinie de la courbe de h en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asymptote oblique y = 6x, car h(x)/x tend vers 6"
+        },
+        {
+          "id": "b",
+          "text": "Branche parabolique de direction la droite y = 6x"
+        },
+        {
+          "id": "c",
+          "text": "Branche parabolique de direction l'axe des abscisses"
+        },
+        {
+          "id": "d",
+          "text": "Branche parabolique de direction l'axe des ordonnées"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "h tend vers +∞. Le quotient h(x)/x = 6 + 4/√x tend vers 6, puis h(x) − 6x = 4√x tend vers +∞ : la courbe a une branche parabolique de direction la droite y = 6x. Conclure à une asymptote oblique oublie de calculer h(x) − 6x ; la direction de l'axe des abscisses exigerait un quotient tendant vers 0, et celle de l'axe des ordonnées un quotient tendant vers l'infini.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = (4x − 3)/(x − 1) sur ℝ \\ {1}, que l'on peut écrire f(x) = 4 + 1/(x − 1). Quel point est centre de symétrie de sa courbe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I(1 ; 4)"
+        },
+        {
+          "id": "b",
+          "text": "I(4 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "I(1 ; 3)"
+        },
+        {
+          "id": "d",
+          "text": "I(1 ; −3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(2 − x) = 4 + 1/(1 − x) = 4 − 1/(x − 1) = 8 − f(x), donc f(2a − x) = 2b − f(x) avec a = 1 et b = 4 : le centre est I(1 ; 4). Le point I(4 ; 1) échange abscisse et ordonnée ; I(1 ; 3) reprend f(0) = 3, une simple valeur de f qui n'est pas la hauteur du centre ; et I(1 ; −3) reprend la constante du numérateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x² − 9. Que peut-on dire de la courbe de |f| au point d'abscisse 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "|f| est dérivable en 3, avec un nombre dérivé nul, car f(3) = 0"
+        },
+        {
+          "id": "b",
+          "text": "|f| n'est pas dérivable en 3 : demi-tangentes de pentes −6 à gauche et 6 à droite"
+        },
+        {
+          "id": "c",
+          "text": "|f| n'est pas dérivable en 3 : demi-tangentes de pentes 6 à gauche et −6 à droite"
+        },
+        {
+          "id": "d",
+          "text": "|f| est dérivable en 3, avec le même nombre dérivé 6 que f"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(3) = 0 et f′(3) = 6 ≠ 0 : f traverse l'axe des abscisses en 3. À gauche, f est négative donc |f| = −f et la pente vaut −f′(3) = −6 ; à droite, |f| = f et la pente vaut 6. Deux pentes différentes : point anguleux. Un nombre dérivé nul confond f(3) = 0 avec f′(3) = 0 ; les pentes 6 puis −6 oublient que f est négative à gauche de 3 ; et garder 6 ignore le repliement.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la courbe",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le coût moyen d'une usine de verre est CM(x) = (3x² + mx − 5)/(x − 2) pour x > 2, où m est un réel. Sa courbe admet pour asymptote oblique la droite y = 3x + 7. Quelle est la valeur de m ?",
+      "answerKey": {
+        "value": 1
+      },
+      "explanation": "L'asymptote y = 3x + 7 impose que CM(x) − (3x + 7) tende vers 0. Or CM(x) − (3x + 7) = (3x² + mx − 5 − (3x² + x − 14))/(x − 2) = ((m − 1)x + 9)/(x − 2), qui tend vers m − 1 en +∞. Cet écart doit tendre vers 0, donc m = 1. Contrôle : CM(x) = 3x + 7 + 9/(x − 2), et 9/(x − 2) tend bien vers 0.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une imprimerie produit x milliers de livres (0 ≤ x ≤ 12) pour un coût C(x) = x³ − 15x² + 80x milliers de dinars et vend le millier au prix p, en milliers de dinars. Pour quelle valeur de p le bénéfice B(x) = px − C(x) est-il maximal en x = 9 ?",
+      "answerKey": {
+        "value": 53,
+        "unit": "milliers de dinars"
+      },
+      "explanation": "En x = 9, un maximum exige B′(9) = p − C′(9) = 0, donc p = C′(9) = 3 × 81 − 30 × 9 + 80 = 243 − 270 + 80 = 53. Contrôle : avec p = 53, B′(x) = −3x² + 30x − 27 = −3(x − 1)(x − 9) passe de positif à négatif en 9, c'est bien un maximum (B(9) = 243), alors que x = 1 est un minimum local.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur un marché, au prix x en dinars, l'offre est O(x) = 2x + 6 et la demande D(x) = 98/(x + 3), en milliers de pièces. Quel est le prix d'équilibre, en dinars ?",
+      "answerKey": {
+        "value": 4,
+        "unit": "dinars"
+      },
+      "explanation": "La fonction O − D a pour dérivée 2 + 98/(x + 3)² > 0, elle est strictement croissante, négative en 0 (6 − 98/3 < 0) et positive plus loin : l'équilibre est unique. L'équation (2x + 6)(x + 3) = 98 s'écrit 2(x + 3)² = 98, donc (x + 3)² = 49 et x = 4. Le prix d'équilibre est donc 4 dinars ; contrôle : O(4) = 14 et D(4) = 98/7 = 14.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = √(x² + 4x) définie sur [0 ; +∞[. Quelle droite est asymptote oblique à la courbe de f en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = x"
+        },
+        {
+          "id": "b",
+          "text": "y = x + 4"
+        },
+        {
+          "id": "c",
+          "text": "y = x − 2"
+        },
+        {
+          "id": "d",
+          "text": "y = x + 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le quotient f(x)/x = √(1 + 4/x) tend vers 1 : a = 1. Puis f(x) − x = (x² + 4x − x²)/(f(x) + x) = 4x/(f(x) + x) = 4/(√(1 + 4/x) + 1) tend vers 4/2 = 2 : b = 2, et la droite est y = x + 2. La droite y = x s'arrête au calcul de a ; y = x + 4 oublie le dénominateur qui tend vers 2 ; et y = x − 2 se trompe de signe, car f(x) − x est positif.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x³ − 3x + 2 = (x − 1)²(x + 2). Combien de points anguleux la courbe de |f| possède-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun : f est dérivable sur ℝ, donc |f| l'est aussi"
+        },
+        {
+          "id": "b",
+          "text": "Un seul, d'abscisse 1 : c'est là que la tangente est horizontale"
+        },
+        {
+          "id": "c",
+          "text": "Un seul, d'abscisse −2 : f y change de signe et f′(−2) = 9 ≠ 0"
+        },
+        {
+          "id": "d",
+          "text": "Deux, d'abscisses −2 et 1 : f s'annule en ces deux points"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f′(x) = 3x² − 3. En −2, f s'annule en changeant de signe (négative avant, positive après) avec f′(−2) = 9 ≠ 0 : |f| a deux demi-tangentes de pentes opposées, un point anguleux. En 1, f s'annule mais reste positive de part et d'autre, car (x − 1)² ≥ 0 et x + 2 > 0 : |f| = f près de 1, donc dérivable, sans point anguleux. La dérivabilité de f ne se transmet pas à |f| aux zéros qui traversent l'axe ; la tangente horizontale en 1 n'est pas un angle ; et s'annuler ne suffit pas.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur les branches infinies et les symétries, lesquelles sont vraies ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si f(2a − x) = f(x) sur un domaine symétrique par rapport à a, la droite x = a est un axe de symétrie"
+        },
+        {
+          "id": "b",
+          "text": "Si f(x)/x tend vers 2 en +∞, la droite y = 2x est forcément asymptote oblique"
+        },
+        {
+          "id": "c",
+          "text": "Une courbe peut avoir une asymptote horizontale en −∞ et une asymptote oblique en +∞"
+        },
+        {
+          "id": "d",
+          "text": "Si le dénominateur d'une fraction s'annule en a, la droite x = a est forcément asymptote verticale"
+        },
+        {
+          "id": "e",
+          "text": "La courbe de |f| se déduit de celle de f par une translation"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Sont vraies : f(2a − x) = f(x) est la définition d'un axe de symétrie ; et les deux côtés se traitent séparément, comme pour f(x) = x + √(x² + 1), qui tend vers 0 en −∞ et se rapproche de y = 2x en +∞. Sont fausses : un quotient qui tend vers 2 donne seulement la pente, il faut encore f(x) − 2x (pour 2x + √x l'écart tend vers +∞) ; un dénominateur nul sans numérateur nul peut cacher un trou, comme (x² − 4)/(x − 2) en 2 ; et |f| s'obtient par repliement des arcs sous l'axe, non par translation.",
+      "difficulty": 3
+    }
+  ]
+}
