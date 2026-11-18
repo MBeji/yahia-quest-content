@@ -1,0 +1,96 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des réseaux",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Quatre agences V1 à V4 d'une banque sont reliées par des liaisons réseau ; la matrice associée est A = (0 1 1 0 ; 1 0 1 1 ; 1 1 0 1 ; 0 1 1 0). Combien de chaînes de longueur 3 relient V2 à V3 ?",
+      "answerKey": {
+        "value": 5
+      },
+      "explanation": "On calcule A² : la ligne 2 de A est (1 0 1 1), donc la ligne 2 de A² vaut la somme des lignes 1, 3 et 4 de A, soit (1 3 2 1). Le coefficient (2, 3) de A³ = A² × A est cette ligne multipliée par la colonne 3 de A, (1 1 0 1) : 1 + 3 + 0 + 1 = 5. Il y a 5 chaînes de longueur 3.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un grossiste livre son client K depuis l'entrepôt D sur un réseau dont les routes ont pour distances, en km : D-E 6, D-F 3, E-F 2, E-G 5, F-H 9, G-H 1, G-K 7 et H-K 4. Quelle est la distance minimale, en km, de D à K ?",
+      "answerKey": {
+        "value": 15,
+        "unit": "km"
+      },
+      "explanation": "Dijkstra depuis D : on retient F (3), puis E (5, par D-F-E, car 5 < 6), puis G (10, par E) ; H reçoit 9 + 3 = 12 par F mais 10 + 1 = 11 par G, donc 11 ; K reçoit 10 + 7 = 17 par G mais 11 + 4 = 15 par H. La plus courte chaîne est D-F-E-G-H-K, de poids 3 + 2 + 5 + 1 + 4 = 15 km.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un robot d'entrepôt peut emprunter huit couloirs à sens unique entre quatre postes : P vers Q, P vers S, Q vers P, Q vers R, Q vers S, S vers P, S vers R et R vers Q. Il veut traverser chaque couloir exactement une fois. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un tel parcours existe, il part de Q et finit en R"
+        },
+        {
+          "id": "b",
+          "text": "Un tel parcours existe, il part de R et finit en Q"
+        },
+        {
+          "id": "c",
+          "text": "Un tel parcours existe et revient à son poste de départ"
+        },
+        {
+          "id": "d",
+          "text": "Aucun parcours de ce type n'existe"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les arcs sortants et entrants valent P : 2 et 2, Q : 3 et 2, R : 1 et 2, S : 2 et 2, et le graphe est connexe. Seuls Q et R sont déséquilibrés, avec d⁺(Q) = d⁻(Q) + 1 et d⁻(R) = d⁺(R) + 1 : il y a une chaîne orientée eulérienne de Q vers R, sans cycle. Inverser les extrémités donne un parcours impossible, un retour au départ exigerait d⁺ = d⁻ partout, et l'absence de tout parcours est exclue, puisque le critère est satisfait avec Q et R.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Six dépôts numérotés de 1 à 6 sont reliés par les routes 1-2, 2-3, 3-4, 4-5, 5-6 et 2-4. Quel est le diamètre de ce réseau ?",
+      "answerKey": {
+        "value": 4
+      },
+      "explanation": "Il s'agit de la plus grande des distances entre deux dépôts. La route 2-4 raccourcit le passage de 2 à 4, mais le dépôt 1 reste un cul-de-sac relié seulement à 2 et le dépôt 6 un cul-de-sac relié seulement à 5. La plus courte chaîne de 1 à 6 est 1-2-4-5-6, de longueur 4, et aucune autre paire n'est plus éloignée : le diamètre vaut 4.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur une plateforme de streaming, 90 % des clients actifs un mois le sont encore le mois suivant, et 20 % des clients inactifs redeviennent actifs. Au mois 0, 30 % des clients sont actifs. Quelle proportion de clients actifs au bout de trois mois, arrondie au millième ?",
+      "answerKey": {
+        "value": 0.541,
+        "tolerance": 0.0005
+      },
+      "explanation": "Avec M = (0,9 0,1 ; 0,2 0,8) et p₀ = (0,3 0,7), on calcule la première composante de chaque état, la seconde valant 1 moins elle : pour p₁, 0,3 × 0,9 + 0,7 × 0,2 = 0,41, d'où p₁ = (0,41 0,59) ; pour p₂, 0,41 × 0,9 + 0,59 × 0,2 = 0,487, d'où p₂ = (0,487 0,513) ; pour p₃, 0,487 × 0,9 + 0,513 × 0,2 = 0,5409, d'où p₃ = (0,5409 0,4591). La proportion de clients actifs est 0,5409, soit 0,541 au millième.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour deux transporteurs A et B, la matrice de transition mensuelle des parts de marché est M = (0,85 0,15 ; 0,6 0,4). Vers quel état stable les parts convergent-elles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,85 0,15)"
+        },
+        {
+          "id": "b",
+          "text": "(0,8 0,2)"
+        },
+        {
+          "id": "c",
+          "text": "(0,2 0,8)"
+        },
+        {
+          "id": "d",
+          "text": "(0,5 0,5)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'état stable (x y) vérifie (x y) × M = (x y) avec x + y = 1. La première équation donne x = 0,85x + 0,6y, soit 0,15x = 0,6y et x = 4y ; avec x + y = 1, on obtient y = 0,2 et x = 0,8. Contrôle : 0,15 × 0,8 + 0,4 × 0,2 = 0,2. La proposition (0,85 0,15) recopie la première ligne de M, (0,2 0,8) échange les deux parts et (0,5 0,5) suppose les deux transporteurs à égalité.",
+      "difficulty": 3
+    }
+  ]
+}

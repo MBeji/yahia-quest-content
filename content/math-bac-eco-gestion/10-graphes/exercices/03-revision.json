@@ -1,0 +1,152 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les graphes de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associer chaque situation à l'outil qui la traite.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Parcourir chaque ruelle d'un marché une seule fois et revenir au point de départ"
+        },
+        {
+          "id": "l2",
+          "text": "Répartir des conférences sans qu'un inscrit ait deux conférences en même temps"
+        },
+        {
+          "id": "l3",
+          "text": "Trouver l'itinéraire de moindre coût entre deux entrepôts"
+        },
+        {
+          "id": "l4",
+          "text": "Prévoir la répartition des clients entre deux enseignes après plusieurs mois"
+        },
+        {
+          "id": "r1",
+          "text": "Cycle eulérien"
+        },
+        {
+          "id": "r2",
+          "text": "Coloration du graphe"
+        },
+        {
+          "id": "r3",
+          "text": "Algorithme de Dijkstra"
+        },
+        {
+          "id": "r4",
+          "text": "Matrice de transition"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le parcours qui reprend chaque ruelle une fois et revient est un cycle eulérien ; les conférences incompatibles se répartissent en colorant le graphe des conflits ; le coût minimal entre deux entrepôts se cherche par Dijkstra sur un graphe pondéré ; l'évolution d'une répartition d'un mois à l'autre se calcule avec la matrice de transition.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Un graphe non orienté de cinq sommets, sans boucle ni arête multiple, a pour matrice associée A. Quelles affirmations sont toujours vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A est symétrique par rapport à sa diagonale"
+        },
+        {
+          "id": "b",
+          "text": "La somme des coefficients de A est égale à la somme des degrés"
+        },
+        {
+          "id": "c",
+          "text": "La somme des coefficients de A est égale au nombre d'arêtes"
+        },
+        {
+          "id": "d",
+          "text": "Tous les coefficients de la diagonale valent 1"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Une arête entre Si et Sj place un 1 en (i, j) et en (j, i) : A est symétrique. Chaque arête est donc comptée deux fois dans la somme des coefficients, qui égale la somme des degrés. Cette somme est le double du nombre d'arêtes, pas ce nombre, et sans boucle la diagonale ne contient que des 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour le réseau de six sites d'une chaîne hôtelière, de matrice associée A, le coefficient de la ligne 1 et de la colonne 4 est nul dans A et dans A², et vaut 2 dans A³. Quelle est la distance entre les sites 1 et 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "Elle est infinie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La distance est le plus petit exposant n pour lequel le coefficient (1, 4) de Aⁿ n'est pas nul : il est nul pour n = 1 et n = 2, et vaut 2 pour n = 3, donc la distance est 3. Le nombre 2 est la valeur du coefficient, c'est-à-dire le nombre de chaînes et non une longueur ; 4 est le numéro de la colonne lue, pas une longueur ; une distance infinie supposerait un coefficient nul pour tous les exposants.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un centre de données, des serveurs sont reliés par des liaisons directes : six serveurs ont 3 liaisons chacun et les autres 4 liaisons chacun. Le centre compte 13 liaisons. Combien de serveurs ont 4 liaisons ?",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "La somme des degrés vaut 2 × 13 = 26, puisque chaque liaison est comptée par ses deux extrémités. Les six premiers serveurs en apportent 6 × 3 = 18, il reste 26 − 18 = 8 pour les autres, soit 8 ÷ 4 = 2 serveurs.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une application de covoiturage relie trois villes U, V, W, rangées dans cet ordre, par des trajets à sens unique de matrice associée A = (0 1 1 ; 0 0 1 ; 1 0 0). Combien de chemins de longueur 3 partent de U, toutes destinations confondues ?",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "On calcule A² = (1 0 1 ; 1 0 0 ; 0 1 1), puis A³ = A² × A = (1 1 1 ; 0 1 1 ; 1 0 1). La ligne U de A³ est (1 1 1) : un chemin vers chacune des trois villes, soit 1 + 1 + 1 = 3 chemins de longueur 3 partant de U.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une salle de sport, 75 % des abonnés réguliers le restent le mois suivant, et la moitié des abonnés occasionnels deviennent réguliers. Au départ, 20 % des abonnés sont réguliers. Quelle proportion d'abonnés occasionnels y a-t-il au bout de deux mois ? Donner un nombre décimal.",
+      "answerKey": {
+        "value": 0.3625,
+        "tolerance": 0.0001
+      },
+      "explanation": "La matrice de transition est M = (0,75 0,25 ; 0,5 0,5), avec p₀ = (0,2 0,8). La première composante de p₁ vaut 0,2 × 0,75 + 0,8 × 0,5 = 0,55 et la seconde 0,2 × 0,25 + 0,8 × 0,5 = 0,45, d'où p₁ = (0,55 0,45). Pour p₂, la première composante vaut 0,55 × 0,75 + 0,45 × 0,5 = 0,6375 et la seconde 0,55 × 0,25 + 0,45 × 0,5 = 0,3625, d'où p₂ = (0,6375 0,3625). La proportion d'occasionnels est 0,3625.",
+      "difficulty": 2
+    }
+  ]
+}
