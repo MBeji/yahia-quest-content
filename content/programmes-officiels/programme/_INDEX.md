@@ -133,6 +133,7 @@
 | statut | matière | profondeur | sources (couverture calculée) | R-7 | maj | notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | ✅ validée R-7 | **gestion** | generation | `229464` 100 % | 2026-11-13 (integrale, CONFORME. Lecture L1 (pdftotext -layout) de toutes les pages par 9 lecteurs sonnet avec sondage image 8-45 % selon la tranche ; R-7 par 4 auditeurs opus en contexte vierge : controle mecanique de 364/364 pages contre la couche texte (nombres, encadres, formules, totaux recomptes) et sondage image de 20-28 % des pages (94 sur 364 environ), 4 constats SUBSTANTIELS au total (un chiffre fantome issu d'un objet masque de la couche texte p.53-55, un total DEPS imprime incoherent p.50 non signale, une logique canal B/C p.174, une annuite manquante p.266) et une quarantaine de constats de forme, tous corriges ; taux < 1 substantiel pour 10 pages dans toutes les sections. Aucun corrige d'exercice dans le manuel : les recalculs sont etiquetes calcul redacteur. Anomalies imprimees conservees et signalees. Reserve : le manuel applique le programme de 2007, aucun guide enseignant au corpus., 46 corr.) | 2026-11-13 (claude/campagne-wqgvi1) | Manuel 229464 (364 p., francais, couche texte propre, barreau L1) lu integralement, transcrit en fiche (§8), rapports R-7 en §9. Chapitrage : 29 sections du manuel codifiees (manifest/bac-eco-gestion.json). Piege : la couche texte du PDF contient des objets masques ; un chiffre incongru doit etre verifie a l'image avant d'etre note comme imprime. Reserve de programme : le manuel date de 2007, aucun guide au corpus. |
+| 🚧 partielle — ⛔ génération interdite | **mathematiques** | first-pass | `222463` 2 % (manque p.6–301) | — | 2026-11-18 (claude/campagne-wqgvi1) | A1 (2026-11-18) : sujet math-bac-eco-gestion, 10 chapitres codifiés d'après le sommaire (p.302) du manuel 222463 (302 p., français, couche texte propre mais formules dégradées : lecture texte + image de chaque page). Aucun guide enseignant au corpus. Même collection CNP que les manuels de maths des autres sections (math-bac-info, math-bac-techniques, math-bac-sciences-exp, math-bac-math). |
 
 ## bac-info
 
@@ -189,7 +190,7 @@
 - **1ere-sec** : **arabe** (`201104`) · **islamique-civique** (`211105`, `211107`) · **maths** (`222105`)
 - **2eme-sec** : **arabe** (`201281`) · **chimie** (`224231`, `224271`) · **eco-gestion** (`229262`) · **geographie** (`206203`, `206271`) · **histoire** (`207202`, `207271`) · **islamique-civique** (`211203`, `211204`) · **maths** (`222221`, `222261`, `222281`) · **sciences-physiques** (`223231`, `223272`) · **svt** (`225202`, `225232`, `225281`)
 - **3eme-sec** : **arabe** (`201302`, `201321`, `201381`) · **chimie** (`224332`, `224333`, `224351`, `224371`) · **eco-gestion** (`229364`) · **francais** (`221302`, `221321`) · **geographie** (`206321`, `206331`) · **histoire** (`207321`, `207331`) · **islamique-civique** (`211306`, `211321`, `211322`) · **maths** (`222322`, `222333`, `222334`, `222343`, `222344`, `222351`, `222362`, `222371`, `222381`) · **philosophie** (`210301`, `210322`) · **sciences-physiques** (`223332`, `223333`, `223351`, `223371`) · **svt** (`225321`, `225333`, `225342`, `225381`)
-- **bac** : **arabe** (`201403`, `201421`, `201422`, `201481`) · **chimie** (`224432`, `224451`, `224471`) · **francais** (`221421`) · **geographie** (`206422`) · **histoire** (`207422`) · **islamique-civique** (`211421`) · **maths** (`222422`, `222463`, `222481`) · **sciences-physiques** (`223451`) · **svt** (`225421`, `225432`, `225441`, `225481`)
+- **bac** : **arabe** (`201403`, `201421`, `201422`, `201481`) · **chimie** (`224432`, `224451`, `224471`) · **francais** (`221421`) · **geographie** (`206422`) · **histoire** (`207422`) · **islamique-civique** (`211421`) · **maths** (`222422`, `222481`) · **sciences-physiques** (`223451`) · **svt** (`225421`, `225432`, `225441`, `225481`)
 
 ## Corpus hors transcription (classé, exhaustif)
 
@@ -199,4 +200,4 @@
 - **enrichissement** : 10 PDF
   - décisions en attente (`differee`) : `128703`, `128803`, `128903`, `228103`, `228233`, `228362`, `228363`, `228461`, `228462`
 
-**Totaux (calculés)** : 69 fiches suivies (36 partielle · 13 complete · 20 validee-r7) · 346 PDF au corpus · 121 œuvres principales restant à rattacher.
+**Totaux (calculés)** : 70 fiches suivies (37 partielle · 13 complete · 20 validee-r7) · 346 PDF au corpus · 120 œuvres principales restant à rattacher.
