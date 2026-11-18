@@ -55,8 +55,23 @@ rejoins what an author wrapped and keeps what an author set on its own line (eng
 - To force a break after a long unfinished line: a blank line, or a trailing `\`.
 - **Under a list item, an indented line belongs to the item**: a wrapped continuation is
   rejoined, an example or a sub-bullet (`  - …`) is shown on its own line inside the item.
-- `_« … »_`, `_"…"_`, `_(…)_` and `_**Certes**, …_` are italics. `~~struck~~` is **not** rendered
-  yet (the tildes show): say « jamais … » in words, or bold the correct form instead.
+- `_« … »_`, `_"…"_`, `_(…)_` and `_**Certes**, …_` are italics.
+
+## Strikethrough and numbered lists — what the renderer shows (since 2026-11-18)
+
+- **`~~wrong form~~` is shown struck through, in red, still readable.** Use it for ONE thing: a
+  form you are refusing (`jamais ~~tu parle~~`, `not ~~I was knowing~~`) — that is how all 274 pairs
+  in the corpus use it, and what a learner will read it as. It nests with italics both ways
+  (`_~~je lui ai lu~~_`, `~~_a powerful argument_~~`), works in a table cell, and needs a
+  non-space character against both pairs of tildes: `~3 °C` (« about ») and `~~ ~~` close nothing.
+- **A numbered list shows the numbers you wrote**, in a badge, not a recount. Write them
+  honestly: a list resumed after a paragraph that starts at `5.` shows `5`, and `1.`, `5.`, `9.`
+  shows `1`, `5`, `9`. Do not rely on « always starts at 1 ».
+- **A number at the start of a line that is NOT a list item** (a sentence opening on « 1. » inside
+  a summary bullet, a year) is written `1\.` : the backslash is dropped, the number stays text.
+  A summary card whose body starts with « 1. » is already handled by the engine.
+- **Italic inside bold works**: `**_gras italique_**` is bold italic, not bold with two underscores.
+- Known, not fixed: an italic that opens on a dash (`_-ment_`) still shows its underscores.
 
 ## resume.md skeleton (~7–10 lines)
 
