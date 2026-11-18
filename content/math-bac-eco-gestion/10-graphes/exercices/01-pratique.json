@@ -1,0 +1,169 @@
+{
+  "title": "⭐ Exercice : Premiers pas dans le réseau",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans un parking, six allées relient les places de recharge notées A à E : AB, AC, AD, BC, CD et DE. Quel est le degré de la place D ?",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "Les allées qui touchent D sont AD, CD et DE : D a donc 3 arêtes issues de lui, soit un degré de 3. Contrôle sur les degrés : A 3, B 2, C 3, D 3, E 1, dont la somme 12 est bien le double des 6 allées.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque terme à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Ordre d'un graphe"
+        },
+        {
+          "id": "l2",
+          "text": "Degré d'un sommet"
+        },
+        {
+          "id": "l3",
+          "text": "Graphe connexe"
+        },
+        {
+          "id": "l4",
+          "text": "Cycle"
+        },
+        {
+          "id": "r1",
+          "text": "Nombre de sommets du graphe"
+        },
+        {
+          "id": "r2",
+          "text": "Nombre d'arêtes qui partent du sommet"
+        },
+        {
+          "id": "r3",
+          "text": "Deux sommets quelconques sont reliés par une chaîne"
+        },
+        {
+          "id": "r4",
+          "text": "Chaîne fermée dont les arêtes sont toutes distinctes"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "L'ordre compte les sommets du graphe entier ; le degré compte les arêtes qui partent d'un seul sommet ; la connexité demande qu'une chaîne relie deux sommets quelconques ; un cycle est une chaîne qui revient à son départ sans reprendre d'arête.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un forum de recrutement place cinq stands P, Q, R, S, T. Deux stands qui partagent des candidats ne peuvent pas ouvrir au même créneau : P-Q, Q-R, R-P, R-S et S-T sont dans ce cas. Quel est le nombre minimal de créneaux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les stands P, Q, R sont deux à deux concernés : ils exigent trois créneaux différents, donc au moins 3. On colore P en 1, Q en 2, R en 3, S en 1 puis T en 2, ce qui montre que 3 suffisent. Le résultat 4 est la borne Δ + 1 avec Δ = 3, non atteinte ; 2 ignore le triangle ; 5 donne un créneau par stand, sans économie.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Le graphe des rues d'un quartier est connexe. Pour savoir si l'on peut parcourir chaque rue une seule fois, et comment, remettre les étapes dans l'ordre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculer le degré de chaque sommet"
+        },
+        {
+          "id": "b",
+          "text": "Compter les sommets de degré impair"
+        },
+        {
+          "id": "c",
+          "text": "Conclure : 0 impair donne un cycle, 2 une chaîne, plus de 2 aucun parcours"
+        },
+        {
+          "id": "d",
+          "text": "S'il existe une chaîne non fermée, la construire en partant d'un des deux sommets impairs"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Les degrés se calculent d'abord, puisque le critère porte sur eux ; on compte ensuite ceux qui sont impairs ; la conclusion s'appuie sur ce décompte ; et ce n'est qu'une fois l'existence établie qu'on construit le parcours, en partant d'un sommet impair quand il y en a deux. La connexité, donnée dans l'énoncé, est la condition sans laquelle ce critère ne dit rien.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un service de coursiers à vélo relie trois dépôts S1, S2, S3 par des rues à sens unique : S1 vers S2, S2 vers S3, S3 vers S1, et une boucle en S2 autour d'un rond-point. Quelle est la matrice associée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0 0 1 ; 1 1 0 ; 0 1 0)"
+        },
+        {
+          "id": "b",
+          "text": "(0 1 0 ; 0 1 1 ; 1 0 0)"
+        },
+        {
+          "id": "c",
+          "text": "(0 1 0 ; 0 0 1 ; 1 0 0)"
+        },
+        {
+          "id": "d",
+          "text": "(1 1 0 ; 0 0 1 ; 1 0 0)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La ligne désigne l'origine et la colonne l'extrémité : S1 vers S2 place un 1 en (1, 2), S2 vers S3 en (2, 3), S3 vers S1 en (3, 1), et la boucle un 1 sur la diagonale en (2, 2), d'où la matrice (0 1 0 ; 0 1 1 ; 1 0 0). La première proposée est la transposée, lue à l'envers ; la troisième oublie la boucle ; la dernière place la boucle en S1 au lieu de S2.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chaque semaine, 70 % des élèves qui ont déjeuné à la cantine y retournent la semaine suivante, et 40 % de ceux qui n'y ont pas déjeuné s'y inscrivent. Au départ, 60 % des élèves déjeunent à la cantine. Quelle proportion y déjeune une semaine plus tard ? Donner un nombre décimal.",
+      "answerKey": {
+        "value": 0.58,
+        "tolerance": 0.0005
+      },
+      "explanation": "La matrice de transition est M = (0,7 0,3 ; 0,4 0,6) et l'état initial p₀ = (0,6 0,4). Le premier terme de p₁ = p₀ × M vaut 0,6 × 0,7 + 0,4 × 0,4 = 0,42 + 0,16 = 0,58, soit 58 % ; l'autre vaut 0,6 × 0,3 + 0,4 × 0,6 = 0,42, de somme 1 avec 0,58.",
+      "difficulty": 2
+    }
+  ]
+}

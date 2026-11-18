@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Graphes",
+  "questions": [
+    {
+      "prompt": "Le plan d'un parc de loisirs est un graphe à 5 sommets dont les degrés sont 4, 3, 2, 2 et 1. Combien d'arêtes ce graphe a-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "24"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La somme des degrés vaut 4 + 3 + 2 + 2 + 1 = 12, et chaque arête est comptée deux fois, une fois par extrémité : il y a 12 ÷ 2 = 6 arêtes. Le résultat 12 est la somme des degrés elle-même, sans la diviser ; 5 est l'ordre du graphe, donc un nombre de sommets ; 24 double la somme au lieu de la partager.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un analyste relève les degrés des quatre sommets d'un graphe de collaborations entre services. Quel relevé est impossible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 ; 3 ; 2 ; 2"
+        },
+        {
+          "id": "b",
+          "text": "3 ; 1 ; 1 ; 1"
+        },
+        {
+          "id": "c",
+          "text": "3 ; 2 ; 2 ; 2"
+        },
+        {
+          "id": "d",
+          "text": "2 ; 2 ; 2 ; 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La somme des degrés est le double du nombre d'arêtes, donc elle est paire. Le relevé 3 ; 2 ; 2 ; 2 donne 9, un nombre impair : il est impossible, puisqu'un graphe a un nombre pair de sommets de degré impair. Les autres sommes valent 10, 6 et 8, et chaque relevé se dessine : un carré avec une diagonale pour le premier, une étoile à trois branches pour le deuxième, un carré pour le dernier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le graphe connexe des allées d'un salon, six stands ont pour degrés 2, 2, 3, 3, 4 et 2. Un visiteur peut-il emprunter chaque allée une seule fois ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, et il revient à son point de départ"
+        },
+        {
+          "id": "b",
+          "text": "Non, aucun parcours de ce type n'existe"
+        },
+        {
+          "id": "c",
+          "text": "Oui, mais seulement depuis un stand de degré 2"
+        },
+        {
+          "id": "d",
+          "text": "Oui, en allant d'un stand de degré 3 à l'autre"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le graphe est connexe et exactement deux stands sont de degré impair, ceux de degré 3 : il possède une chaîne eulérienne non fermée, dont ces deux stands sont les extrémités. Un retour au point de départ exigerait des degrés tous pairs ; l'absence de tout parcours demanderait plus de deux degrés impairs ; et un départ d'un stand de degré 2 ne mène jamais à un parcours complet.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un tournoi de jeux vidéo réunit 6 équipes, et chacune doit affronter chacune des autres exactement une fois. On représente chaque rencontre par une arête. Combien de rencontres ce tournoi comporte-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "30"
+        },
+        {
+          "id": "c",
+          "text": "36"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le graphe est complet d'ordre 6 : il compte 6 × 5/2 = 15 arêtes, car chaque équipe en rencontre 5 autres et chaque rencontre est comptée deux fois. Le résultat 30 oublie la division par 2 ; 36 est 6 × 6, qui compterait aussi un match d'une équipe contre elle-même ; 21 vient de la formule 6 × 7/2, décalée d'un cran.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un graphe de planning contient trois sommets deux à deux adjacents. Laquelle de ces valeurs ne peut pas être son nombre chromatique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Trois sommets deux à deux adjacents forment un sous-graphe complet d'ordre 3, qui exige trois couleurs différentes : le nombre chromatique est au moins 3, donc il ne peut pas valoir 2. Les valeurs 3, 4 et 5 restent possibles selon le reste du graphe et son plus grand degré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un réseau de livraison à trois dépôts S1, S2, S3 et à sens uniques, la matrice associée est A = (0 2 1 ; 1 0 0 ; 1 1 0). Combien d'arcs sortent de S1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La ligne indique l'origine : les arcs sortant de S1 sont lus en ligne 1, soit 0 + 2 + 1 = 3. Le résultat 2 est la somme de la colonne 1, qui donne les arcs entrant en S1 ; 1 est un seul coefficient de la ligne, celui de S1 vers S3 ; 6 est la somme de tous les coefficients, soit le nombre total d'arcs du graphe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une enseigne suit trois états de ses clients : actif, endormi, perdu. Laquelle de ces lignes peut décrire les probabilités de passage depuis un même état vers les trois états ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0,5 0,3 0,1)"
+        },
+        {
+          "id": "b",
+          "text": "(0,4 0,4 0,4)"
+        },
+        {
+          "id": "c",
+          "text": "(0,6 0,6 −0,2)"
+        },
+        {
+          "id": "d",
+          "text": "(0,3 0,5 0,2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dans une matrice de transition, chaque ligne est composée de probabilités, donc de nombres positifs, dont la somme vaut 1 : 0,3 + 0,5 + 0,2 = 1. La première ligne proposée somme à 0,9, la deuxième à 1,2, et la troisième somme bien à 1 mais contient −0,2, qui n'est pas une probabilité.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour un graphe de six sites, le coefficient de la ligne 2 et de la colonne 5 de la matrice A³ vaut 4. Que signifie ce nombre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 chaînes de longueur 3 relient le site 2 au site 5"
+        },
+        {
+          "id": "b",
+          "text": "Le site 5 est à distance 4 du site 2"
+        },
+        {
+          "id": "c",
+          "text": "3 chaînes de longueur 4 relient le site 2 au site 5"
+        },
+        {
+          "id": "d",
+          "text": "4 arêtes relient directement le site 2 au site 5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le coefficient (i, j) de Aⁿ est le nombre de chaînes de longueur n de i à j : ici n = 3, i = 2, j = 5, et le coefficient 4 est le nombre de ces chaînes. Une distance se lit sur le premier exposant non nul et non sur la valeur du coefficient ; échanger n et le coefficient donne la troisième lecture ; et des arêtes directes se liraient dans A, pas dans A³.",
+      "difficulty": 2
+    }
+  ]
+}
