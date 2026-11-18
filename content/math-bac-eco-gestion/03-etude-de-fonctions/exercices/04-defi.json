@@ -1,0 +1,124 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve des courbes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Soit g(x) = (x² − 4x + 13)/(x − 2) sur ]2 ; +∞[. Quelle est la valeur du minimum de g sur cet intervalle ?",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "Par division, x² − 4x + 13 = (x − 2)² + 9, donc g(x) = x − 2 + 9/(x − 2). Puis g′(x) = 1 − 9/(x − 2)² = ((x − 2)² − 9)/(x − 2)² = (x − 5)(x + 1)/(x − 2)². Sur ]2 ; +∞[, x + 1 > 0, donc g′ est négative avant 5 et positive après : le minimum est g(5) = 3 + 9/3 = 6.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = (x² − 6x + 10)/(x² − 6x + 8), définie sur ℝ \\ {2 ; 4}. Quelle droite est un axe de symétrie de sa courbe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 6"
+        },
+        {
+          "id": "b",
+          "text": "x = 3"
+        },
+        {
+          "id": "c",
+          "text": "x = −3"
+        },
+        {
+          "id": "d",
+          "text": "x = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En posant t = x − 3, le numérateur vaut t² + 1 et le dénominateur t² − 1 : g(3 + t) = (t² + 1)/(t² − 1) = g(3 − t). Le domaine ℝ \\ {2 ; 4} est symétrique par rapport à 3 : l'axe est x = 3. La droite x = 6 prend la somme 2 + 4 des valeurs interdites au lieu de leur milieu ; x = −3 se trompe de signe ; x = 0 supposerait une fonction paire, or g(1) = 5/3 et g(−1) = 17/15 diffèrent.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (1 − x)/(x − 2)², définie sur ℝ \\ {2}. Que valent les limites de f en 2 à gauche et en 2 à droite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞ à gauche et +∞ à droite"
+        },
+        {
+          "id": "b",
+          "text": "+∞ à gauche et +∞ à droite"
+        },
+        {
+          "id": "c",
+          "text": "+∞ à gauche et −∞ à droite"
+        },
+        {
+          "id": "d",
+          "text": "−∞ à gauche et −∞ à droite"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Près de 2, le numérateur 1 − x tend vers −1 < 0 et le dénominateur (x − 2)² tend vers 0 par valeurs positives des deux côtés, car c'est un carré : le quotient tend vers −∞ des deux côtés, donc x = 2 est asymptote verticale, courbe sous l'axe. Un changement de signe supposerait un dénominateur à puissance impaire ; et +∞ oublierait le signe négatif du numérateur.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour une usine qui vend à prix constant p, remettre dans l'ordre les étapes de la recherche du bénéfice maximal sur [0 ; a].",
+      "options": [
+        {
+          "id": "d",
+          "text": "Comparer le maximum local aux valeurs de B aux deux bornes du domaine"
+        },
+        {
+          "id": "b",
+          "text": "Calculer B′(x) = p − C′(x) et la factoriser"
+        },
+        {
+          "id": "e",
+          "text": "Conclure : production optimale et bénéfice maximal"
+        },
+        {
+          "id": "a",
+          "text": "Écrire B(x) = px − C(x) sur le domaine [0 ; a]"
+        },
+        {
+          "id": "c",
+          "text": "Étudier le signe de B′ et dresser le tableau de variation"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On exprime d'abord le bénéfice, puis on le dérive : B′ = p − C′ se factorise pour lire son signe. Le tableau de variation désigne le candidat. On le compare ensuite aux bornes, car un maximum sur un domaine fermé peut s'y trouver. La conclusion donne enfin la production et le bénéfice.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = x² − 4x − 5. Combien de réels x vérifient |f(x)| = 5 ?",
+      "answerKey": {
+        "value": 4
+      },
+      "explanation": "|f(x)| = 5 équivaut à f(x) = 5 ou f(x) = −5. L'équation x² − 4x − 10 = 0 a pour discriminant 56 > 0 : deux solutions, 2 ± √14. L'équation x² − 4x = 0 donne x = 0 et x = 4. Ces quatre valeurs sont distinctes. Graphiquement, 5 est inférieur au maximum 9 de |f| entre les zéros −1 et 5, donc la droite y = 5 coupe la courbe de |f| en quatre points.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le prix d'équilibre d'un produit est l'unique solution de O(x) = D(x), avec O(x) = x³ + x et D(x) = 10 − 2x en milliers de pièces, x étant le prix en dinars sur [0 ; 3]. Donner ce prix à 0,01 près.",
+      "answerKey": {
+        "value": 1.7,
+        "unit": "dinars",
+        "tolerance": 0.01
+      },
+      "explanation": "On pose p(x) = O(x) − D(x) = x³ + 3x − 10, de dérivée 3x² + 3 > 0 : p est strictement croissante, p(0) = −10 < 0 et p(3) = 26 > 0, donc la solution est unique. Par encadrement, p(1,69) ≈ −0,103 < 0 et p(1,70) ≈ 0,013 > 0 : la solution est entre 1,69 et 1,70, soit environ 1,7 (1,70 à 0,01 près).",
+      "difficulty": 3
+    }
+  ]
+}

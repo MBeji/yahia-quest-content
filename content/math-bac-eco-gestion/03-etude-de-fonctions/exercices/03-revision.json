@@ -1,0 +1,158 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les sept pas de l'étude",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associer chaque propriété d'une courbe à sa traduction par une formule.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "f est paire"
+        },
+        {
+          "id": "l2",
+          "text": "La droite x = a est un axe de symétrie"
+        },
+        {
+          "id": "l3",
+          "text": "Le point I(a ; b) est un centre de symétrie"
+        },
+        {
+          "id": "l4",
+          "text": "La courbe de g est celle de f translatée de k i"
+        },
+        {
+          "id": "r1",
+          "text": "f(−x) = f(x)"
+        },
+        {
+          "id": "r2",
+          "text": "f(2a − x) = f(x)"
+        },
+        {
+          "id": "r3",
+          "text": "f(2a − x) = 2b − f(x)"
+        },
+        {
+          "id": "r4",
+          "text": "g(x) = f(x − k)"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La parité se traduit par f(−x) = f(x). Un axe x = a se traduit par f(2a − x) = f(x), un centre I(a ; b) par f(2a − x) = 2b − f(x). Une translation de vecteur k i remplace x par x − k : g(x) = f(x − k).",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le résultat net d'un salon de thé est f(x) = x² − 6x milliers de dinars, dont le minimum vaut −9 en x = 3. On modifie le calendrier et la charge : g(x) = f(x + 1) − 2. Pour quelle valeur de x le minimum de g est-il atteint ?",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "La courbe de g est l'image de celle de f par la translation de vecteur −i − 2 j. Le minimum (3 ; −9) de f devient (2 ; −11). Contrôle : g(x) = x² − 4x − 7 = (x − 2)² − 11, minimal en 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La satisfaction d'un client est S(x) = −3x² + 30x pour x dizaines de dinars dépensés, 0 ≤ x ≤ 10, et la fonction envie est E = S′. Où y a-t-il envie, où y a-t-il rejet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rejet sur [0 ; 5[ et envie sur ]5 ; 10]"
+        },
+        {
+          "id": "b",
+          "text": "Envie sur tout [0 ; 10], car S(x) reste positive"
+        },
+        {
+          "id": "c",
+          "text": "Envie sur [0 ; 5[ et rejet sur ]5 ; 10]"
+        },
+        {
+          "id": "d",
+          "text": "Rejet sur tout [0 ; 10], car le coefficient de x² est négatif"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E(x) = S′(x) = −6x + 30 est positive pour x < 5 et négative pour x > 5 : il y a envie (S croît) sur [0 ; 5[ et rejet (S décroît) sur ]5 ; 10], la satisfaction maximale S(5) = 75 étant atteinte en 5. Les rôles inversés prennent E pour S ; S(x) ≥ 0 n'implique pas E > 0 ; et le coefficient négatif de x² donne le signe de S″, non celui de S′ partout.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le coût d'un chantier est f(x) = x³ − 6x² + 15x + 8 centaines de dinars pour x dizaines de mètres. Sa courbe a un centre de symétrie I(2 ; b), qui est son point d'inflexion. Calculer b.",
+      "answerKey": {
+        "value": 22
+      },
+      "explanation": "f″(x) = 6x − 12 s'annule en 2 en changeant de signe : le point d'inflexion et centre de symétrie est d'abscisse 2, et b = f(2) = 8 − 24 + 30 + 8 = 22. Contrôle : f(1) + f(3) = 18 + 26 = 44 = 2b, car 1 et 3 sont symétriques par rapport à 2. Ce coût croît bien : f′(x) = 3x² − 12x + 15 a un discriminant négatif.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une usine, la fonction envie d'un employé est E(x) = 45/(x + 3)², où x ≥ 0 est son salaire annuel en milliers de dinars, et sa satisfaction S vérifie S(0) = 0. Quel salaire minimal, en milliers de dinars, donne S(x) ≥ 12 ?",
+      "answerKey": {
+        "value": 12,
+        "unit": "milliers de dinars"
+      },
+      "explanation": "Une primitive de E est S(x) = −45/(x + 3) + k, et S(0) = 0 donne k = 15 : S(x) = 15 − 45/(x + 3). L'inégalité S(x) ≥ 12 équivaut à 45/(x + 3) ≤ 3, soit x + 3 ≥ 15 et x ≥ 12. Contrôle : S(12) = 15 − 45/15 = 12.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Soit f(x) = √(x² − 6x + 13). Parmi ces affirmations, lesquelles sont vraies ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est définie sur ℝ, car x² − 6x + 13 = (x − 3)² + 4 est strictement positif"
+        },
+        {
+          "id": "b",
+          "text": "La droite x = 3 est un axe de symétrie de la courbe de f"
+        },
+        {
+          "id": "c",
+          "text": "Pour x grand, la courbe de f passe au-dessus de la droite y = x − 3"
+        },
+        {
+          "id": "d",
+          "text": "La droite y = x − 3 est asymptote oblique en −∞"
+        },
+        {
+          "id": "e",
+          "text": "La droite y = x − 3 est asymptote oblique en +∞"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Sont vraies : (x − 3)² + 4 > 0 donne le domaine ℝ ; l'expression ne dépend que de (x − 3)², d'où l'axe x = 3 ; f(x) − (x − 3) = 4/(f(x) + x − 3) tend vers 0 en +∞, ce qui donne l'asymptote oblique, et ce quotient est positif pour x grand, donc la courbe est au-dessus de la droite. Est fausse l'asymptote y = x − 3 en −∞ : f(x) − (x − 3) y tend vers +∞, et l'asymptote en −∞ est y = −x + 3, symétrique de la précédente par rapport à x = 3.",
+      "difficulty": 2
+    }
+  ]
+}

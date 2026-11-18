@@ -1,0 +1,223 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les sept pas du col",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Sur quels intervalles la fonction f(x) = (2x + 1)/(x² − 9) est-elle continue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "sur ]−∞ ; −3[, ]−3 ; 3[ et ]3 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "sur ℝ privé de −3 et de 3, d'un seul bloc"
+        },
+        {
+          "id": "c",
+          "text": "sur ]−∞ ; 3[ et sur ]3 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "sur ]−∞ ; −1/2[ et sur ]−1/2 ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "x² − 9 = (x − 3)(x + 3) s'annule en 3 et en −3 : f est définie sur ℝ privé de {−3 ; 3}, et rationnelle, donc continue sur chacun des trois intervalles ]−∞ ; −3[, ]−3 ; 3[ et ]3 ; +∞[. ℝ privé de deux points n'est pas un intervalle ; −3 ne peut pas être oublié ; et −1/2 annule le numérateur, pas le dénominateur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le point A(2 ; 5) est sur la courbe d'une fonction f bijective de I sur J, dans un repère orthonormé. Quelle est l'ordonnée du point de la courbe de f⁻¹ dont l'abscisse est 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2"
+        },
+        {
+          "id": "b",
+          "text": "1/5"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si f(2) = 5, alors f⁻¹(5) = 2 : le point (5 ; 2) est sur la courbe de f⁻¹, symétrique de A par rapport à la droite y = x, et son ordonnée est 2. La valeur 5 garderait l'ordonnée de A ; −2 vient d'une symétrie par rapport à l'origine ; 1/5 confond réciproque et inverse des nombres.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut lim x→0⁺ (√x)/x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "n'existe pas"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour x > 0, √x/x = 1/√x, qui tend vers +∞ quand x tend vers 0⁺. Le numérateur tend vers 0, mais le quotient avec un dénominateur qui tend aussi vers 0 est du type 0/0 : il se transforme, il ne vaut pas 0. Il a bien une limite, infinie, et ne vaut pas 1.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces fonctions, lesquelles sont continues sur ℝ ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ |x − 2| + x²"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ 1/(x² + 1)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ 1/(x² − 1)"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ x² si x < 1 ; 3x − 2 si x ≥ 1"
+        },
+        {
+          "id": "e",
+          "text": "x ↦ √(x² − 4)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "x ↦ |x − 2| + x² est une somme de fonctions continues. x ↦ 1/(x² + 1) est rationnelle, avec un dénominateur x² + 1 ≥ 1 qui ne s'annule jamais. La fonction définie par morceaux se raccorde en 1 : à gauche x² tend vers 1, à droite 3x − 2 tend vers 1, et la valeur en 1 est 1. En revanche 1/(x² − 1) n'existe pas en ±1, et √(x² − 4) n'existe pas pour x entre −2 et 2.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit f(x) = x³ + 2x − 9, continue et strictement croissante sur [1 ; 2], avec f(1) = −6 et f(2) = 3. On applique trois fois la dichotomie à partir de [1 ; 2], en gardant chaque fois la moitié où f change de signe. Quelle est la borne supérieure de l'intervalle obtenu ?",
+      "answerKey": {
+        "value": 1.875
+      },
+      "explanation": "Premier milieu 1,5 : f(1,5) = 3,375 + 3 − 9 = −2,625 < 0, on garde [1,5 ; 2]. Deuxième milieu 1,75 : f(1,75) = 5,359375 + 3,5 − 9 = −0,140625 < 0, on garde [1,75 ; 2]. Troisième milieu 1,875 : f(1,875) = 6,591796875 + 3,75 − 9 = 1,341796875 > 0, on garde [1,75 ; 1,875]. La borne supérieure est 1,875.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque fonction et son intervalle à l'image de cet intervalle.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "f(x) = 2x − 3 sur [1 ; 4]"
+        },
+        {
+          "id": "l2",
+          "text": "g(x) = 6 − 2x sur [1 ; 4]"
+        },
+        {
+          "id": "l3",
+          "text": "h(x) = 1/x sur [1 ; +∞["
+        },
+        {
+          "id": "l4",
+          "text": "k(x) = x² sur ]−1 ; 2]"
+        },
+        {
+          "id": "r1",
+          "text": "[−1 ; 5]"
+        },
+        {
+          "id": "r2",
+          "text": "[−2 ; 4]"
+        },
+        {
+          "id": "r3",
+          "text": "]0 ; 1]"
+        },
+        {
+          "id": "r4",
+          "text": "[0 ; 4]"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "f croît de f(1) = −1 à f(4) = 5 : [−1 ; 5]. g décroît de g(1) = 4 à g(4) = −2, bornes échangées : [−2 ; 4]. h décroît de h(1) = 1 vers 0 sans l'atteindre : ]0 ; 1]. k n'est pas monotone sur ]−1 ; 2] : son minimum 0 est atteint en 0 et son maximum k(2) = 4 en 2, d'où [0 ; 4].",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "On applique la dichotomie à une fonction f continue et strictement monotone sur [a ; b]. Remettre dans l'ordre les étapes de la méthode.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Garder la moitié [a ; c] ou [c ; b] où f change de signe"
+        },
+        {
+          "id": "b",
+          "text": "Vérifier que f(a) × f(b) < 0 pour partir d'un intervalle contenant la solution"
+        },
+        {
+          "id": "c",
+          "text": "Recommencer sur la moitié gardée"
+        },
+        {
+          "id": "d",
+          "text": "Calculer le milieu c = (a + b)/2 et la valeur f(c)"
+        },
+        {
+          "id": "e",
+          "text": "S'arrêter quand l'amplitude de l'intervalle est inférieure à la précision voulue"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "On part d'un intervalle où le changement de signe garantit une solution. À chaque tour, on coupe en deux (milieu et valeur en ce point), on garde la moitié qui contient encore le changement de signe, puis on recommence. L'arrêt vient en dernier : il compare l'amplitude, qui diminue de moitié à chaque tour, à la précision demandée.",
+      "difficulty": 2
+    }
+  ]
+}

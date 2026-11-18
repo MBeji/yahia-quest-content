@@ -1,0 +1,136 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve du col",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un entrepôt facture son stockage C(q) = 4q + 50 dinars pour q ≤ 80 palettes, C(q) = 3q + 200 dinars pour 80 < q ≤ 150, puis C(q) = 2,5q + 300 dinars pour q > 150 (une allée supplémentaire est louée à chaque seuil). Quelle est la somme des deux sauts de coût, en q = 80 et en q = 150 ? (en dinars)",
+      "answerKey": {
+        "value": 95,
+        "unit": "dinars"
+      },
+      "explanation": "En 80 : à gauche la limite est 4 × 80 + 50 = 370, à droite 3 × 80 + 200 = 440, donc un saut de 70 dinars. En 150 : à gauche 3 × 150 + 200 = 650, à droite 2,5 × 150 + 300 = 675, donc un saut de 25 dinars. C n'est pas continue en 80 ni en 150, et la somme des deux sauts vaut 70 + 25 = 95 dinars.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la limite de √(x² + x) + x quand x tend vers −∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "−1/2"
+        },
+        {
+          "id": "c",
+          "text": "−1/4"
+        },
+        {
+          "id": "d",
+          "text": "1/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Forme ∞ − ∞. Avec la quantité conjuguée : √(x² + x) + x = x/(√(x² + x) − x). Pour x < 0, √(x² + x) = −x√(1 + 1/x), donc le dénominateur vaut −x(√(1 + 1/x) + 1) et le quotient −1/(√(1 + 1/x) + 1), qui tend vers −1/2. Écrire √(x²) = x au lieu de |x| = −x donne x(√(1 + 1/x) + 1), qui tend vers −∞ : c'est l'erreur du signe. La valeur 1/2 est la limite de √(x² + x) − x en +∞, pas celle-ci, et −1/4 divise une seconde fois par 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la limite de (2x + cos x)/(x + 3) quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "n'existe pas, car cos x oscille"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On divise numérateur et dénominateur par x > 0 : (2 + (cos x)/x)/(1 + 3/x). Par encadrement, −1/x ≤ (cos x)/x ≤ 1/x donne lim (cos x)/x = 0, et 3/x tend vers 0. La limite vaut 2/1 = 2. Le cosinus oscille, mais divisé par x il disparaît ; 0 et +∞ ignorent les termes de plus haut degré 2x et x.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour quel couple (a ; b) la fonction f définie par f(x) = −x si x < −1, f(x) = ax + b si −1 ≤ x ≤ 2 et f(x) = x² − 1 si x > 2 est-elle continue sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2/3 ; 5/3)"
+        },
+        {
+          "id": "b",
+          "text": "(4/3 ; 1/3)"
+        },
+        {
+          "id": "c",
+          "text": "(1 ; 2)"
+        },
+        {
+          "id": "d",
+          "text": "(2 ; −1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En −1 : la limite à gauche de −x vaut 1, donc −a + b = 1. En 2 : la limite à droite de x² − 1 vaut 3, donc 2a + b = 3. En soustrayant, 3a = 2, d'où a = 2/3 et b = 5/3. Chacun des autres couples ne vérifie qu'une des deux conditions : (1 ; 2) raccorde en −1 (−1 + 2 = 1) mais pas en 2 (2 + 2 = 4 ≠ 3) ; (4/3 ; 1/3) et (2 ; −1) raccordent en 2 (8/3 + 1/3 = 3 ; 4 − 1 = 3) mais pas en −1 (−4/3 + 1/3 = −1 ≠ 1 ; −2 − 1 = −3 ≠ 1).",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Soit f continue sur [0 ; 6] avec f(0) = −2, f(2) = 5 et f(6) = −1 ; on ne sait rien d'autre sur ses variations. Parmi ces affirmations, lesquelles sont garanties ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = 0 a au moins une solution dans ]0 ; 2["
+        },
+        {
+          "id": "b",
+          "text": "f(x) = 0 a au moins une solution dans ]2 ; 6["
+        },
+        {
+          "id": "c",
+          "text": "f(x) = 0 a exactement deux solutions dans [0 ; 6]"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = 4 a au moins une solution dans [0 ; 2]"
+        },
+        {
+          "id": "e",
+          "text": "f(x) = 4 a une seule solution dans [0 ; 2]"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Sur [0 ; 2], f passe de −2 à 5 : elle prend les valeurs 0 et 4 au moins une fois. Sur [2 ; 6], elle passe de 5 à −1 : elle s'annule au moins une fois. Mais « exactement deux » et « une seule » exigeraient de connaître les variations : une courbe continue peut croiser plusieurs fois la même hauteur.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La fonction f(x) = (2x + 1)/(x − 1) est une bijection de ]1 ; +∞[ sur ]2 ; +∞[. Calculer f⁻¹(7), valeur exacte, en écriture décimale.",
+      "answerKey": {
+        "value": 1.6
+      },
+      "explanation": "On cherche x > 1 tel que f(x) = 7 : 2x + 1 = 7(x − 1), soit 5x = 8 et x = 8/5 = 1,6. Vérification : f(1,6) = 4,2/0,6 = 7. Comme 1,6 est dans ]1 ; +∞[, c'est bien f⁻¹(7).",
+      "difficulty": 3
+    }
+  ]
+}

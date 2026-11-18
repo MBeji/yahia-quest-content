@@ -1,0 +1,111 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du bénéfice",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une fonderie produit x tonnes (1 ≤ x ≤ 30) pour un coût total C(x) = 3x² + 12x + 192 milliers de dinars. Quel est le coût moyen minimal CM(x) = C(x)/x, en milliers de dinars par tonne ?",
+      "answerKey": {
+        "value": 60,
+        "unit": "milliers de dinars par tonne"
+      },
+      "explanation": "CM(x) = 3x + 12 + 192/x, donc CM′(x) = 3 − 192/x² = 3(x² − 64)/x² : négatif avant 8, positif après. Le minimum est atteint en x = 8 : CM(8) = 24 + 12 + 24 = 60 milliers de dinars par tonne. Contrôle : Cm(8) = C′(8) = 6 × 8 + 12 = 60, égal au coût moyen en son minimum.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La demande d'un produit est q = 500/(p + 2) unités pour un prix p ≥ 0 en dinars. La fonction f : p ↦ 500/(p + 2) est continue et strictement décroissante sur [0 ; +∞[ : c'est une bijection sur ]0 ; 250]. On note g la fonction réciproque, qui donne le prix p = g(q) en fonction de la quantité. Calculer g′(100), sous forme décimale.",
+      "answerKey": {
+        "value": -0.05
+      },
+      "explanation": "q = 100 correspond à p + 2 = 5, donc p = 3. Avec f(p) = 500/(p + 2), f′(p) = −500/(p + 2)², donc f′(3) = −500/25 = −20. Alors g′(100) = 1/f′(3) = −1/20 = −0,05. Contrôle direct : g(q) = 500/q − 2, g′(q) = −500/q², et g′(100) = −0,05.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Combien la courbe de h(x) = (x − 1)⁴ + 2x admet-elle de points d'inflexion, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun, car h″(x) = 12(x − 1)² ne change jamais de signe"
+        },
+        {
+          "id": "b",
+          "text": "Un seul, d'abscisse 1, car h″(1) = 0"
+        },
+        {
+          "id": "c",
+          "text": "Un seul, là où h′ s'annule, car la tangente y est horizontale"
+        },
+        {
+          "id": "d",
+          "text": "Deux, car 12(x − 1)² a une racine double"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "h′(x) = 4(x − 1)³ + 2 et h″(x) = 12(x − 1)². Cette expression s'annule en x = 1 mais reste positive de part et d'autre : h″ ne change pas de signe, donc la courbe n'a aucun point d'inflexion (la pente h′ ne fait que croître). L'annulation de h″ ne suffit pas ; une tangente horizontale relève de h′ et non de h″ ; et une racine double n'est pas un changement de signe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x³ + 2x sur [0 ; 2]. Quel encadrement de f(2) − f(0) l'inégalité des accroissements finis fournit-elle directement, avec les meilleures bornes de f′ sur ]0 ; 2[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 ≤ f(2) − f(0) ≤ 7"
+        },
+        {
+          "id": "b",
+          "text": "2 ≤ f(2) − f(0) ≤ 14"
+        },
+        {
+          "id": "c",
+          "text": "4 ≤ f(2) − f(0) ≤ 14"
+        },
+        {
+          "id": "d",
+          "text": "4 ≤ f(2) − f(0) ≤ 28"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sur ]0 ; 2[, f′(x) = 3x² + 2 est croissante, donc 2 < f′(x) < 14 : m = 2 et M = 14. L'inégalité donne 2 ≤ (f(2) − f(0))/(2 − 0) ≤ 14 ; en multipliant par b − a = 2, on obtient 4 ≤ f(2) − f(0) ≤ 28 (la valeur exacte est 12). Les bornes 2 et 14 encadrent le taux moyen, pas la différence ; diviser par 2 au lieu de multiplier donne 1 et 7 ; et multiplier seulement la borne basse laisse 14 comme borne haute.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une carrière vend sa production 33 milliers de dinars la tonne. Pour x tonnes (0 ≤ x ≤ 10), le coût total est C(x) = x³ − 12x² + 54x + 25 milliers de dinars. Quel est le bénéfice maximal, en milliers de dinars ?",
+      "answerKey": {
+        "value": 73,
+        "unit": "milliers de dinars"
+      },
+      "explanation": "B(x) = 33x − C(x) = −x³ + 12x² − 21x − 25, donc B′(x) = −3x² + 24x − 21 = −3(x − 1)(x − 7). B décroît sur [0 ; 1], croît sur [1 ; 7], décroît sur [7 ; 10] : le maximum est en x = 7, avec B(7) = −343 + 588 − 147 − 25 = 73. Les bords donnent B(0) = −25 et B(10) = −35, plus petits. Contrôle : C′(7) = 147 − 168 + 54 = 33, le coût marginal égale le prix.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (x² − 2x + 4)/(x − 1)² sur ]1 ; +∞[ et F la primitive de f telle que F(2) = 4. Que vaut F(3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,5"
+        },
+        {
+          "id": "b",
+          "text": "5,5"
+        },
+        {
+          "id": "c",
+          "text": "3,5"
+        },
+        {
+          "id": "d",
+          "text": "1,5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "x² − 2x + 4 = (x − 1)² + 3, donc f(x) = 1 + 3/(x − 1)² et F(x) = x − 3/(x − 1) + k. La condition F(2) = 4 donne 2 − 3 + k = 4, donc k = 5, puis F(3) = 3 − 3/2 + 5 = 6,5. On trouve 1,5 en oubliant la constante, 5,5 en prenant k = 4 (la valeur de F(2)), et 3,5 en primitivant 3/(x − 1)² en +3/(x − 1) au lieu de −3/(x − 1).",
+      "difficulty": 3
+    }
+  ]
+}

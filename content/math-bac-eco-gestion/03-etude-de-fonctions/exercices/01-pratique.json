@@ -1,0 +1,178 @@
+{
+  "title": "⭐ Exercice : Les premières asymptotes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une jardinerie a un coût moyen CM(x) = (2x² + 5x + 4)/(x + 1) centaines de dinars pour x centaines de pots. Sa courbe admet une asymptote oblique d'équation y = ax + b. Calculer b.",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "Par division, 2x² + 5x + 4 = (x + 1)(2x + 3) + 1, donc CM(x) = 2x + 3 + 1/(x + 1). L'écart 1/(x + 1) tend vers 0 : l'asymptote est y = 2x + 3, donc a = 2 et b = 3. Le nombre 2 est la limite de CM(x)/x et 1 est le reste de la division : aucun des deux n'est l'ordonnée à l'origine de la droite.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque résultat de limite à son interprétation graphique.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "lim x→+∞ f(x) = 3"
+        },
+        {
+          "id": "l2",
+          "text": "lim x→2⁺ f(x) = −∞"
+        },
+        {
+          "id": "l3",
+          "text": "f(x) → +∞ et lim x→+∞ f(x)/x = 0"
+        },
+        {
+          "id": "l4",
+          "text": "lim x→+∞ [f(x) − (2x + 1)] = 0"
+        },
+        {
+          "id": "r1",
+          "text": "asymptote horizontale y = 3"
+        },
+        {
+          "id": "r2",
+          "text": "asymptote verticale x = 2"
+        },
+        {
+          "id": "r3",
+          "text": "branche parabolique de direction l'axe des abscisses"
+        },
+        {
+          "id": "r4",
+          "text": "asymptote oblique y = 2x + 1"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Une limite réelle en l'infini donne une asymptote horizontale. Une limite infinie en une valeur finie a donne l'asymptote verticale x = a. Une limite infinie en l'infini avec un quotient f(x)/x nul donne une branche parabolique de direction l'axe des abscisses. Un écart f(x) − (2x + 1) qui tend vers 0 donne l'asymptote oblique correspondante.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = x² + 2 définie sur [−4 ; 4[. Que peut-on dire de la parité de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paire, car x² + 2 ne change pas quand x devient −x"
+        },
+        {
+          "id": "b",
+          "text": "Impaire, car l'intervalle contient des valeurs négatives et positives"
+        },
+        {
+          "id": "c",
+          "text": "Ni paire ni impaire, car −4 est dans [−4 ; 4[ mais pas 4"
+        },
+        {
+          "id": "d",
+          "text": "Paire, car f(−3) = f(3) = 11 suffit à le prouver"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une fonction n'est paire ou impaire que sur un domaine symétrique par rapport à 0 : 4 manque dans [−4 ; 4[ alors que −4 y est, donc f n'est ni paire ni impaire. Le calcul f(−x) = f(x) ne suffit pas sans cette condition ; un domaine qui contient des valeurs des deux signes ne rend pas une fonction impaire ; et une égalité en un seul point ne prouve rien.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les étapes de l'étude d'une fonction, selon la méthode du cours.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Calculer les limites aux bornes et en déduire asymptotes et branches infinies"
+        },
+        {
+          "id": "e",
+          "text": "Dresser le tableau de variation avec limites et valeurs remarquables"
+        },
+        {
+          "id": "a",
+          "text": "Déterminer le domaine de définition et vérifier la dérivabilité"
+        },
+        {
+          "id": "f",
+          "text": "Tracer la courbe avec ses asymptotes et ses points particuliers"
+        },
+        {
+          "id": "b",
+          "text": "Chercher parité, périodicité, axe ou centre de symétrie"
+        },
+        {
+          "id": "d",
+          "text": "Calculer la dérivée, la factoriser et étudier son signe"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      },
+      "explanation": "On commence par le domaine, car on ne calcule des limites et des dérivées que là où la fonction est définie. Les symétries viennent ensuite, car elles réduisent le domaine d'étude. Les limites donnent les asymptotes, la dérivée donne les variations, le tableau les rassemble, et le tracé s'appuie sur tout ce qui précède (le manuel permute parfois limites et dérivée ; la méthode du cours fixe cet ordre).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On trace la courbe de f(x) = √x. La courbe de g(x) = √(x + 3) est l'image de celle de f par quelle translation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Translation de vecteur 3 i, soit 3 unités vers la droite"
+        },
+        {
+          "id": "b",
+          "text": "Translation de vecteur −3 i, soit 3 unités à gauche"
+        },
+        {
+          "id": "c",
+          "text": "Translation de vecteur 3 j, soit 3 unités vers le haut"
+        },
+        {
+          "id": "d",
+          "text": "Translation de vecteur −3 j, soit 3 unités vers le bas"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "g(x) = f(x + 3) = f(x − (−3)) : la courbe est translatée de −3 i. Contrôle : le point de départ (0 ; 0) de la courbe de f devient (−3 ; 0), car g(−3) = f(0) = 0. Le vecteur 3 i oublie que le signe dans f(x − k) est opposé au déplacement ; les vecteurs 3 j et −3 j correspondraient à f(x) + 3 et f(x) − 3, où l'on ajoute hors de la racine.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le rendement d'une machine, en pièces par minute, vaut r(t) = (6t² − t + 7)/(2t² + 3t − 1) pour t grand. Vers quelle valeur tend r(t) quand t tend vers +∞ ?",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "On factorise t² : r(t) = (6 − 1/t + 7/t²)/(2 + 3/t − 1/t²), qui tend vers 6/2 = 3 : la courbe a l'asymptote horizontale y = 3. Le quotient des termes constants 7/(−1) = −7 ou la somme des coefficients ne donnent pas la limite en l'infini, qui est celle des termes de plus haut degré.",
+      "difficulty": 2
+    }
+  ]
+}
