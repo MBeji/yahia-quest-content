@@ -40,7 +40,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Sciences de l'informatique | physique / chimie | `223471` / `224471` | ❌ aucune | — | A1 |
 | Sciences de l'informatique | algorithmique, STI | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
 | Économie et gestion | gestion | `229464` | ✅ validée R-7 (2026-11-13) — 364 p., 29 sections, 4 substantiels corrigés | 29/29 chapitres — matière complète (2026-11-17), un chapitre par section du manuel ; audit opus à l'aveugle (calculs refaits au script) + revérification par chapitre ; ch.01-27 publiés | missions d'examen du Bac à ajouter (sujets et corrigés au Drive, PR #845) |
-| Économie et gestion | mathématiques | `222463` | ❌ aucune | — | A1 |
+| Économie et gestion | mathématiques | `222463` | ✅ validée R-7 avec réserve (2026-11-18) — 302 p., 10 chapitres, lecture texte + image à 100 %, 17 substantiels corrigés | 0/10 chapitres | génération des 10 chapitres (tranches de 3) ; réserve : figures des exercices de graphes (ch. X) |
 | Économie et gestion | économie | ⚠️ **aucun manuel au Drive** | — | — | source à fournir |
 | Lettres | arabe | `201421` + `201422` | ❌ aucune | — | A1 |
 | Lettres | philosophie | `210422` + `210423` | ✅ validée R-7 avec réserve (2026-11-08) | 8/8 chapitres — matière complète (2026-11-09), un chapitre par محور, audit opus + revérification, 0 clé fausse ; missions d'examen : aucun sujet d'examen Bac Lettres au corpus | ✅ publiée en prod le 2026-11-09 (`apply-content.yml`, run 331) ; parcours `concours-bac-lettres` déjà ouvert (`available`, migration du 2026-08-13) |
