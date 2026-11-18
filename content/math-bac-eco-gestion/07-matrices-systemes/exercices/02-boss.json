@@ -1,0 +1,97 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des matrices",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un lycée professionnel commande des fournitures pour deux ateliers. R = (120 80 40 ; 60 100 90) donne les quantités (lignes = ateliers, colonnes = crayons, gommes, règles). Les deux fournisseurs affichent P = (0,35 0,4 ; 0,9 0,8 ; 1,2 1,1) en dinars (lignes = articles, colonnes = fournisseurs). Combien l'atelier 2 paie-t-il chez le fournisseur 2, en dinars ?",
+      "answerKey": {
+        "value": 203,
+        "unit": "dinars"
+      },
+      "explanation": "On cherche le coefficient de la ligne 2 et de la colonne 2 de R × P : c'est la ligne (60 100 90) fois la colonne (0,4 ; 0,8 ; 1,1), soit 60 × 0,4 + 100 × 0,8 + 90 × 1,1 = 24 + 80 + 99 = 203 dinars. Le produit existe, car R a 3 colonnes et P a 3 lignes ; il est d'ordre 2 × 2.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Calculer le déterminant de la matrice suivante, par un développement par rapport à la première colonne :\n(3 −1 2 ; 0 4 1 ; 2 5 −3)",
+      "answerKey": {
+        "value": -69
+      },
+      "explanation": "Avec les signes + − + : 3 × |4 1 ; 5 −3| − 0 × |−1 2 ; 5 −3| + 2 × |−1 2 ; 4 1|. On obtient 3 × (−12 − 5) − 0 + 2 × (−1 − 8) = −51 − 18 = −69. Le développement par la première ligne donne le même résultat : −51 + (−2) − 16 = −69.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour quelles valeurs du réel m le système suivant n'a-t-il pas de solution unique ?\nm x + 4y = 10\n9x + m y = 3",
+      "options": [
+        {
+          "id": "a",
+          "text": "m = 36 ou m = −36"
+        },
+        {
+          "id": "b",
+          "text": "m = 6 ou m = −6"
+        },
+        {
+          "id": "c",
+          "text": "m = 2 ou m = −2"
+        },
+        {
+          "id": "d",
+          "text": "m = 6 seulement"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le système a une solution unique si et seulement si dét(m 4 ; 9 m) ≠ 0. Or dét = m × m − 4 × 9 = m² − 36, qui s'annule pour m = 6 et pour m = −6. Prendre 36 et −36 oublie de passer à la racine ; m = 2 ou m = −2 ne retient que le coefficient 4 et oublie le 9, alors que le produit en croix vaut 4 × 9 ; m = 6 seul oublie la racine négative.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "M et N sont deux matrices carrées d'ordre 3 vérifiant M × N = I₃. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M et N sont toutes deux égales à I₃"
+        },
+        {
+          "id": "b",
+          "text": "M est inversible, et son inverse est N = M⁻¹"
+        },
+        {
+          "id": "c",
+          "text": "M = N, car I₃ est l'élément neutre"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut conclure qu'après avoir vérifié aussi N × M = I₃"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour des matrices carrées, il suffit de trouver une matrice N avec M × N = Iₙ (ou N × M = Iₙ) pour affirmer que M est inversible et que N est son inverse : on n'a pas à calculer N × M en plus. Les matrices M et N ne sont pas forcément égales à I₃, ni égales entre elles : leur produit seul vaut I₃.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Trois clients achètent des fruits secs chez un grossiste. Les prix du kilo d'amandes, de dattes et de figues, en dinars, sont x, y et z ; les factures donnent le système suivant :\n2x + 3y = 40\n3x + 2z = 39\n3x + y + z = 42\nOn donne l'inverse de la matrice du système : A⁻¹ = (1/5) × (−2 −3 6 ; 3 2 −4 ; 3 7 −9). Quel est le prix du kilo de figues, en dinars ?",
+      "answerKey": {
+        "value": 3,
+        "unit": "dinars"
+      },
+      "explanation": "Le système s'écrit A × X = B avec A = (2 3 0 ; 3 0 2 ; 3 1 1) et B = (40 ; 39 ; 42), donc X = A⁻¹ × B. La ligne 3 de A⁻¹ donne z = (3 × 40 + 7 × 39 − 9 × 42) / 5 = (120 + 273 − 378) / 5 = 15 / 5 = 3 dinars. Les deux autres lignes donnent x = 11 et y = 6, qui vérifient 2 × 11 + 3 × 6 = 40.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une salle de 150 places est pleine un soir. Les places à tarif réduit coûtent 5 dinars, celles à plein tarif 8 dinars, et la recette est de 1 020 dinars. En écrivant le problème sous la forme A × X = B, combien de places à tarif réduit ont été vendues ?",
+      "explanation": "Avec x places réduites et y places à plein tarif : x + y = 150 et 5x + 8y = 1020. Donc A = (1 1 ; 5 8), B = (150 ; 1020), dét(A) = 8 − 5 = 3 et A⁻¹ = (1/3) × (8 −1 ; −5 1). Alors x = (8 × 150 − 1020) / 3 = 180 / 3 = 60 et y = 90. Contrôle : 5 × 60 + 8 × 90 = 300 + 720 = 1020.",
+      "difficulty": 3,
+      "type": "numeric",
+      "answerKey": {
+        "value": 60,
+        "unit": "places"
+      }
+    }
+  ]
+}

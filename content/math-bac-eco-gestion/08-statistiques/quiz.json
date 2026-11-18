@@ -1,0 +1,173 @@
+{
+  "title": "Test de compréhension ⭐ : Statistiques",
+  "questions": [
+    {
+      "prompt": "Un garage relève, sur quatre semaines, le nombre d'annonces diffusées x : 3 ; 5 ; 6 ; 10, et le nombre de rendez-vous obtenus y : 8 ; 12 ; 15 ; 21. Quelles sont les coordonnées du point moyen G ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(24 ; 56)"
+        },
+        {
+          "id": "b",
+          "text": "G(5,5 ; 13,5)"
+        },
+        {
+          "id": "c",
+          "text": "G(6 ; 14)"
+        },
+        {
+          "id": "d",
+          "text": "G(14 ; 6)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On additionne puis on divise par n = 4 : x̄ = (3 + 5 + 6 + 10)/4 = 6 et ȳ = (8 + 12 + 15 + 21)/4 = 14. Le couple (24 ; 56) donne les sommes, sans diviser par le nombre de semaines ; (5,5 ; 13,5) donne les médianes, pas les moyennes ; (14 ; 6) inverse les deux coordonnées.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle phrase décrit correctement la covariance de deux variables x et y observées sur n individus ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le produit des moyennes de x et de y, diminué de la moyenne des produits xᵢyᵢ"
+        },
+        {
+          "id": "b",
+          "text": "La moyenne des produits xᵢyᵢ, diminuée du produit des moyennes de x et de y"
+        },
+        {
+          "id": "c",
+          "text": "La moyenne des produits xᵢyᵢ, divisée par le produit des moyennes de x et de y"
+        },
+        {
+          "id": "d",
+          "text": "La somme des produits xᵢyᵢ, diminuée du produit des moyennes de x et de y"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La covariance est la moyenne des produits xᵢyᵢ moins le produit des moyennes x̄ × ȳ. Inverser la soustraction changerait le signe du résultat ; diviser au lieu de soustraire donne un quotient sans rapport avec un écart ; garder la somme des produits au lieu de leur moyenne oublie la division par n.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur six commandes, un traiteur trouve que Σ xᵢyᵢ = 252, avec x̄ = 4 et ȳ = 9 pour les moyennes de x et de y. Quelle est la covariance de x et y ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "42"
+        },
+        {
+          "id": "b",
+          "text": "216"
+        },
+        {
+          "id": "c",
+          "text": "−6"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La moyenne des produits vaut 252/6 = 42 et le produit des moyennes 4 × 9 = 36, donc cov(x ; y) = 42 − 36 = 6. Le résultat 42 oublie de retrancher x̄ × ȳ ; 216 retranche 36 à la somme 252 sans diviser par n ; −6 soustrait dans l'ordre inverse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel point appartient toujours à la fois aux deux droites de régression et à la droite de Mayer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le premier point relevé, d'abscisse la plus petite"
+        },
+        {
+          "id": "b",
+          "text": "Le point moyen G, de coordonnées (x̄ ; ȳ)"
+        },
+        {
+          "id": "c",
+          "text": "L'origine O du repère, de coordonnées (0 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "Le point formé des deux médianes de x et de y"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le point moyen G(x̄ ; ȳ) appartient aux deux droites de régression, dont l'équation y = a(x − x̄) + ȳ le fixe, et à la droite de Mayer, qui joint G₁ et G₂ dont G est le point moyen pondéré par les effectifs. Aucun point relevé n'est imposé ; l'origine n'est sur ces droites que par hasard ; les médianes n'interviennent pas dans le calcul.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un ajustement affine donne un coefficient de corrélation r = −0,82. Que peut-on dire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La corrélation est faible, car le signe de r est négatif"
+        },
+        {
+          "id": "b",
+          "text": "La corrélation est très forte, car |r| dépasse 0,70"
+        },
+        {
+          "id": "c",
+          "text": "La corrélation est forte, de sens contraire pour x et y"
+        },
+        {
+          "id": "d",
+          "text": "La corrélation est faible, car |r| est inférieur à 0,95"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme 0,70 < |−0,82| ≤ 0,95, la corrélation est forte, et le signe négatif indique que x et y varient en sens contraire. Parler de corrélation faible à cause du signe confond signe et intensité ; « très forte » exigerait |r| > 0,95 ; enfin 0,95 est le seuil de « très forte », pas celui de « forte » : |r| = 0,82 dépasse 0,70, donc la corrélation n'est pas faible.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un cabinet exprime les ventes en centaines de dinars en posant y′ = y/100, et décale les années en posant x′ = x − 2020. Sachant que cov(x ; y) = 4 500, que vaut cov(x′ ; y′) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 500"
+        },
+        {
+          "id": "b",
+          "text": "2 480"
+        },
+        {
+          "id": "c",
+          "text": "450 000"
+        },
+        {
+          "id": "d",
+          "text": "45"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le décalage de x ne change pas la covariance ; seul le facteur 1/100 sur y compte : cov(x′ ; y′) = 1 × 0,01 × 4 500 = 45. Le résultat 4 500 ignore le changement d'échelle ; 450 000 multiplie par 100 au lieu de diviser ; 2 480 retranche 2 020 à 4 500, comme si le décalage agissait sur la covariance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une étude relève r = 0,97 entre le nombre de parapluies vendus chaque mois et la consommation de chauffage d'une ville. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'achat de parapluies provoque une hausse de la consommation de chauffage"
+        },
+        {
+          "id": "b",
+          "text": "La consommation de chauffage provoque une hausse des achats de parapluies"
+        },
+        {
+          "id": "c",
+          "text": "Elles varient ensemble, sans preuve qu'une des deux cause l'autre"
+        },
+        {
+          "id": "d",
+          "text": "Les deux séries sont indépendantes, puisque r reste inférieur à 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un coefficient de corrélation élevé dit que les deux séries varient presque ensemble, pas que l'une cause l'autre : ici une cause commune, la saison pluvieuse et froide, fait monter les deux. Les deux affirmations de causalité prennent la corrélation pour une preuve, et r = 0,97 indique au contraire un lien affine très fort, pas l'indépendance.",
+      "difficulty": 2
+    }
+  ]
+}

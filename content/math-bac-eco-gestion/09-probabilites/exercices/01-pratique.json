@@ -1,0 +1,168 @@
+{
+  "title": "⭐ Exercice : Premiers calculs sous incertitude",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans un cinéma de quartier, 150 spectateurs d'une soirée ont été recensés : 90 ont payé le tarif réduit, et 63 de ces 90 spectateurs ont acheté du pop-corn. On interroge un spectateur à tarif réduit. Quelle est la probabilité qu'il ait acheté du pop-corn ? Donner un nombre décimal.",
+      "answerKey": {
+        "value": 0.7
+      },
+      "explanation": "Savoir que le spectateur a le tarif réduit restreint le monde aux 90 spectateurs concernés, dont 63 ont acheté du pop-corn : 63/90 = 0,7. Par la définition, p(pop-corn ∩ réduit) = 63/150 = 0,42 et p(réduit) = 90/150 = 0,6, d'où 0,42/0,6 = 0,7.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque nom à sa formule.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Probabilité conditionnelle"
+        },
+        {
+          "id": "l2",
+          "text": "Probabilités composées"
+        },
+        {
+          "id": "l3",
+          "text": "Indépendance de A et B"
+        },
+        {
+          "id": "l4",
+          "text": "Probabilités totales"
+        },
+        {
+          "id": "r1",
+          "text": "p(B/A) = p(A ∩ B) / p(A)"
+        },
+        {
+          "id": "r2",
+          "text": "p(A ∩ B) = p(A) × p(B/A)"
+        },
+        {
+          "id": "r3",
+          "text": "p(A ∩ B) = p(A) × p(B)"
+        },
+        {
+          "id": "r4",
+          "text": "p(B) = p(B/A) × p(A) + p(B/Ā) × p(Ā)"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La probabilité conditionnelle divise l'intersection par la probabilité de l'événement connu ; les composées en sont la forme multipliée, p(A ∩ B) = p(A) × p(B/A) ; l'indépendance exige que l'intersection soit le simple produit des probabilités ; les probabilités totales additionnent les deux chemins de l'arbre qui aboutissent à B.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans l'arbre pondéré d'une enquête de satisfaction, trois branches partent d'un même nœud, avec les probabilités 0,25 ; 0,45 et x. Quelle est la valeur de x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,70"
+        },
+        {
+          "id": "b",
+          "text": "0,11"
+        },
+        {
+          "id": "c",
+          "text": "0,30"
+        },
+        {
+          "id": "d",
+          "text": "0,35"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les probabilités des branches issues d'un même nœud ont pour somme 1, donc x = 1 − 0,25 − 0,45 = 0,30. Le résultat 0,70 est la somme des deux branches connues, pas leur complément ; 0,11 ≈ 0,25 × 0,45 multiplie des branches du même nœud, alors qu'on ne multiplie que le long d'un chemin ; 0,35 est la moyenne des deux branches.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les étapes pour calculer la probabilité d'un événement B avec un arbre pondéré, quand les causes possibles forment une partition.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Multiplier les probabilités le long de chaque chemin qui aboutit à B"
+        },
+        {
+          "id": "a",
+          "text": "Repérer la partition formée par les causes possibles de B"
+        },
+        {
+          "id": "d",
+          "text": "Additionner les probabilités de ces chemins pour obtenir p(B)"
+        },
+        {
+          "id": "b",
+          "text": "Pondérer chaque branche, conditionnellement au chemin parcouru à partir du second niveau"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On commence par identifier la partition, car elle fixe les branches du premier niveau. On pondère ensuite chaque branche pour avoir les nombres à multiplier, puis on multiplie le long de chaque chemin qui aboutit à B ; l'addition vient en dernier, car elle porte sur ces produits déjà calculés.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un lycée de commerce, 30 % des élèves suivent la section comptabilité et 60 % la section marketing, un élève ne pouvant suivre qu'une seule de ces deux sections. Quelle est la probabilité qu'un élève choisi au hasard suive l'une ou l'autre de ces sections ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,18"
+        },
+        {
+          "id": "b",
+          "text": "0,72"
+        },
+        {
+          "id": "c",
+          "text": "0,45"
+        },
+        {
+          "id": "d",
+          "text": "0,90"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les deux événements sont incompatibles, donc p(A ∪ B) = p(A) + p(B) = 0,30 + 0,60 = 0,90. Le résultat 0,18 est le produit, qui ne sert que pour des événements indépendants ; 0,72 retranche à la somme le produit 0,18, ce qui suppose l'indépendance ; 0,45 est la moyenne des deux pourcentages.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un restaurant, le nombre X de desserts commandés par table vaut 0, 1 ou 2, avec les probabilités 0,4 ; 0,35 et 0,25. Calculer l'espérance E(X).",
+      "answerKey": {
+        "value": 0.85
+      },
+      "explanation": "E(X) = 0 × 0,4 + 1 × 0,35 + 2 × 0,25 = 0 + 0,35 + 0,5 = 0,85 dessert par table : chaque valeur est pondérée par sa probabilité, et la valeur 0 ne contribue pas.",
+      "difficulty": 2
+    }
+  ]
+}

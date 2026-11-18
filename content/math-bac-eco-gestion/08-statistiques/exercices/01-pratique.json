@@ -1,0 +1,184 @@
+{
+  "title": "⭐ Exercice : Les premiers relevés",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Pour 20 séances de formation, la durée x (en minutes) est répartie ainsi : 5 séances dans [0 ; 10[, 8 dans [10 ; 20[, 7 dans [20 ; 40[. Quelle est l'abscisse x̄ du point moyen ?",
+      "answerKey": {
+        "value": 17.75,
+        "unit": "minutes"
+      },
+      "explanation": "Centres 5, 15 et 30 : x̄ = (5 × 5 + 8 × 15 + 7 × 30)/20 = 355/20 = 17,75 minutes.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque notion à sa description.",
+      "options": [
+        {
+          "id": "l3",
+          "text": "Droite de Mayer"
+        },
+        {
+          "id": "l1",
+          "text": "Point moyen"
+        },
+        {
+          "id": "l4",
+          "text": "Coefficient de corrélation linéaire"
+        },
+        {
+          "id": "l2",
+          "text": "Résidu"
+        },
+        {
+          "id": "r4",
+          "text": "Quotient de la covariance par le produit des écarts types"
+        },
+        {
+          "id": "r2",
+          "text": "Écart vertical entre un point du nuage et la droite"
+        },
+        {
+          "id": "r1",
+          "text": "Point de coordonnées (x̄ ; ȳ)"
+        },
+        {
+          "id": "r3",
+          "text": "Droite passant par les points moyens de deux groupes de points"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le point moyen est formé des deux moyennes ; le résidu est l'écart vertical yᵢ − (axᵢ + b) entre un point et la droite ; la droite de Mayer joint les points moyens de deux groupes de points ; le coefficient de corrélation divise la covariance par σx σy.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur un marché de primeurs, les quantités vendues d'une pastèque baissent quand son prix augmente. Quel est le signe de la covariance entre le prix x et les quantités y ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Positif : prix et quantités sont des nombres positifs"
+        },
+        {
+          "id": "b",
+          "text": "Négatif : quand x monte, y a tendance à baisser"
+        },
+        {
+          "id": "c",
+          "text": "Positif : une covariance, comme une variance, est toujours positive"
+        },
+        {
+          "id": "d",
+          "text": "Nul : prix et quantités ne sont pas liés"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand le prix monte, les quantités vendues tendent à baisser : les deux variables varient en sens contraire, donc la covariance est négative. Que les nombres soient positifs ne fixe pas son signe, qui porte sur les écarts à la moyenne ; seule la variance, cov(x ; x), est toujours positive, la covariance peut être négative ; « nul » supposerait l'absence de lien alors que la baisse est nette.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les étapes du calcul de la covariance par sa définition (écarts à la moyenne).",
+      "options": [
+        {
+          "id": "c",
+          "text": "Multiplier ces deux écarts, puis faire la moyenne des n produits"
+        },
+        {
+          "id": "a",
+          "text": "Calculer les moyennes x̄ et ȳ"
+        },
+        {
+          "id": "d",
+          "text": "Lire le signe du résultat pour interpréter le sens de variation commun"
+        },
+        {
+          "id": "b",
+          "text": "Calculer pour chaque individu les écarts xᵢ − x̄ et yᵢ − ȳ"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "La définition exige d'abord les moyennes x̄ et ȳ, puis les écarts de chaque individu à ces moyennes ; on multiplie ensuite les deux écarts et on fait la moyenne des n produits, ce qui donne la covariance, dont on lit le signe en dernier pour interpréter le sens de variation commun.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tracer la droite de Mayer d'un nuage de 11 points, quel partage faut-il faire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ranger par ordonnées croissantes, puis former un groupe de 8 points et un groupe de 3"
+        },
+        {
+          "id": "b",
+          "text": "Écarter le point du milieu, puis former deux groupes de 5 points chacun"
+        },
+        {
+          "id": "c",
+          "text": "Garder l'ordre du tableau et couper après le deuxième point, sans ranger"
+        },
+        {
+          "id": "d",
+          "text": "Ranger par abscisses croissantes, puis former un groupe de 6 points et un groupe de 5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La méthode de Mayer range d'abord les points par abscisses croissantes, puis les partage en deux groupes dont les effectifs diffèrent d'au plus un : ici 6 et 5, le premier groupe prenant le point en plus. Un partage selon les ordonnées en 8 et 3 déséquilibre les groupes ; écarter un point perd une donnée ; couper dans l'ordre du tableau sans ranger par x ne sépare pas les petites valeurs de x des grandes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une série double a pour point moyen G(5 ; 12), et la droite de régression de y en x a pour coefficient directeur a = 1,5. Quelle est son équation réduite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 1,5x + 10,5"
+        },
+        {
+          "id": "b",
+          "text": "y = 1,5x + 12"
+        },
+        {
+          "id": "c",
+          "text": "y = 1,5x + 4,5"
+        },
+        {
+          "id": "d",
+          "text": "y = 1,5x + 19,5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La droite passe par G : y = 1,5(x − 5) + 12 = 1,5x − 7,5 + 12, soit y = 1,5x + 4,5. L'ordonnée 10,5 retranche 1,5 au lieu de 1,5 × 5 ; 12 prend l'ordonnée du point moyen pour ordonnée à l'origine ; 19,5 additionne 7,5 au lieu de le retrancher.",
+      "difficulty": 2
+    }
+  ]
+}

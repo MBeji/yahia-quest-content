@@ -1,0 +1,111 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de l'incertitude",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une chaîne de pharmacies reçoit ses lots de trois grossistes : le grossiste G1 en fournit 45 %, G2 en fournit 35 % et G3 en fournit 20 %. Les produits périmés représentent 1 % des lots de G1, 2 % de ceux de G2 et 4 % de ceux de G3. Quelle est la probabilité qu'un produit pris au hasard soit périmé ? Donner un nombre décimal.",
+      "answerKey": {
+        "value": 0.0195,
+        "tolerance": 0.0001
+      },
+      "explanation": "Les trois grossistes forment une partition, donc p(périmé) = 0,45 × 0,01 + 0,35 × 0,02 + 0,20 × 0,04 = 0,0045 + 0,0070 + 0,0080 = 0,0195, soit 1,95 %.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Parmi les colis d'un transporteur, 15 % sont en express. Un colis express arrive en retard dans 8 % des cas, un colis standard dans 30 % des cas. Un colis arrive en retard : quelle est, arrondie au millième, la probabilité qu'il soit un colis express ?",
+      "answerKey": {
+        "value": 0.045,
+        "tolerance": 0.0005
+      },
+      "explanation": "On calcule p(express ∩ retard) = 0,15 × 0,08 = 0,012 et p(standard ∩ retard) = 0,85 × 0,30 = 0,255, donc p(retard) = 0,267. Par Bayes, p(express/retard) = 0,012/0,267 ≈ 0,0449, soit 0,045 au millième.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un cabinet d'audit répond à deux appels d'offres, indépendamment l'un de l'autre. Il gagne le premier avec la probabilité 0,4, et la probabilité de gagner au moins l'un des deux est 0,7. Quelle est la probabilité de gagner le second ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,5"
+        },
+        {
+          "id": "b",
+          "text": "0,3"
+        },
+        {
+          "id": "c",
+          "text": "0,25"
+        },
+        {
+          "id": "d",
+          "text": "0,75"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec p(A) = 0,4 et p(B) = x, l'indépendance donne p(A ∪ B) = 0,4 + x − 0,4x = 0,4 + 0,6x = 0,7, donc x = 0,5. Le résultat 0,3 suppose des événements incompatibles (0,7 − 0,4) ; 0,25 vient de 1 − 0,7 = 0,4 × (1 − x), qui met p(A) à la place de p(Ā) = 0,6 dans p(Ā ∩ B̄) = p(Ā) × p(B̄) ; 0,75 est la valeur de 1 − x dans ce même calcul faux, rendue comme p(B).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un lot de 12 cartouches d'encre en contient 3 défectueuses. On les teste l'une après l'autre, sans remise, jusqu'à la première défectueuse. Quelle est la probabilité que cette première défectueuse apparaisse au troisième test ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9/64"
+        },
+        {
+          "id": "b",
+          "text": "9/55"
+        },
+        {
+          "id": "c",
+          "text": "3/10"
+        },
+        {
+          "id": "d",
+          "text": "21/55"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Il faut deux cartouches correctes puis une défectueuse, avec des probabilités conditionnelles : 9/12 × 8/11 × 3/10 = 216/1320 = 9/55. Le résultat 9/64 suppose des tirages avec remise ; 3/10 ne retient que le dernier facteur ; 21/55 = 9/12 × 8/11 × 7/10 est la probabilité que les trois premières soient correctes.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le gain trimestriel X d'une start-up, en milliers de dinars, vaut −2 avec la probabilité 0,2, vaut 0 avec la probabilité 0,5 et vaut 3 avec la probabilité 0,3. Calculer la variance V(X).",
+      "answerKey": {
+        "value": 3.25
+      },
+      "explanation": "On a E(X) = −0,4 + 0 + 0,9 = 0,5 et E(X²) = 4 × 0,2 + 0 + 9 × 0,3 = 0,8 + 2,7 = 3,5. Donc V(X) = 3,5 − 0,5² = 3,25, en milliers de dinars au carré ; l'écart type est √3,25 ≈ 1,80.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un commercial visite 8 clients, indépendamment les uns des autres ; chaque client signe un contrat avec la probabilité 0,25. Quelle est, arrondie au millième, la probabilité qu'il obtienne au moins une signature ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,100"
+        },
+        {
+          "id": "b",
+          "text": "0,267"
+        },
+        {
+          "id": "c",
+          "text": "0,633"
+        },
+        {
+          "id": "d",
+          "text": "0,900"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'événement contraire de « au moins une » est « aucune » : p = 1 − 0,75⁸ ≈ 1 − 0,100 = 0,900. Le résultat 0,100 est la probabilité d'aucune signature ; 0,267 = 8 × 0,25 × 0,75⁷ est celle d'exactement une signature ; 0,633 = 1 − 0,100 − 0,267 est la probabilité d'au moins deux signatures.",
+      "difficulty": 3
+    }
+  ]
+}

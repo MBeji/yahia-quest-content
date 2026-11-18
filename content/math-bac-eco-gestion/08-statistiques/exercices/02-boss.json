@@ -1,0 +1,111 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du nuage",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un atelier de couture suit le nombre d'heures de formation x de cinq apprentis : 2 ; 3 ; 5 ; 6 ; 9, et le nombre de pièces terminées par jour y : 11 ; 12 ; 17 ; 18 ; 22. Calculer cov(x ; y).",
+      "answerKey": {
+        "value": 9.8
+      },
+      "explanation": "Les moyennes valent x̄ = 25/5 = 5 et ȳ = 80/5 = 16. Les produits 22 + 36 + 85 + 108 + 198 donnent 449, de moyenne 89,8. Donc cov(x ; y) = 89,8 − 5 × 16 = 9,8. Contrôle par les écarts : (−3)(−5) + (−2)(−4) + 0 × 1 + 1 × 2 + 4 × 6 = 49, et 49/5 = 9,8.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour une chaîne de lavage automobile, le nombre moyen d'heures d'ouverture quotidiennes est x̄ = 7 et la recette moyenne ȳ = 40 (en centaines de dinars) ; on a V(x) = 4 et cov(x ; y) = 10. Quelle recette prévoit la droite de régression de y en x pour 10 heures d'ouverture ?",
+      "answerKey": {
+        "value": 47.5,
+        "unit": "centaines de dinars"
+      },
+      "explanation": "Le coefficient directeur est a = cov(x ; y)/V(x) = 10/4 = 2,5. La droite passe par G(7 ; 40) : y = 2,5(x − 7) + 40. Pour x = 10 : y = 2,5 × 3 + 40 = 47,5 centaines de dinars.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour un loueur de salles, la durée de location x (en heures) et le budget y de l'événement (en centaines de dinars) donnent G(10 ; 50), V(x) = 16, V(y) = 100 et cov(x ; y) = 30. Pour un budget de 65, quelle durée prévoit-on avec la droite adaptée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18 heures"
+        },
+        {
+          "id": "b",
+          "text": "38,1 heures"
+        },
+        {
+          "id": "c",
+          "text": "14,5 heures"
+        },
+        {
+          "id": "d",
+          "text": "5,5 heures"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On cherche x à partir de y : il faut la droite de x en y, de coefficient a′ = cov/V(y) = 30/100 = 0,3. Alors x = 10 + 0,3 × (65 − 50) = 14,5 heures. Retourner la droite de y en x (a = 30/16 = 1,875) donne 18 heures ; appliquer 1,875 à l'écart en y donne 38,1 heures ; inverser l'écart (50 − 65) donne 5,5 heures.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une série double, cov(x ; y) = −38, V(x) = 25 et V(y) = 64. Quelle affirmation est juste ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "r = −0,95 : corrélation très forte, de sens contraire"
+        },
+        {
+          "id": "b",
+          "text": "r = −0,59 : corrélation faible, de sens contraire"
+        },
+        {
+          "id": "c",
+          "text": "r = 0,95 : corrélation forte, de même sens"
+        },
+        {
+          "id": "d",
+          "text": "r = −0,95 : corrélation forte, de sens contraire"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a σx = √25 = 5 et σy = √64 = 8, donc r = −38/(5 × 8) = −0,95. Comme |r| = 0,95 appartient à ]0,70 ; 0,95], la corrélation est forte et non très forte : la borne 0,95 est incluse dans « forte ». Le résultat −0,59 vient de −38/64, une division par V(y), qui donne la pente de la droite de x en y ; 0,95 oublie le signe de la covariance.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une plateforme de livraison classe six zones par nombre de commerces partenaires x (en dizaines) : 1 ; 2 ; 3 ; 6 ; 7 ; 8, et relève le nombre de colis y (en centaines) : 6 ; 9 ; 12 ; 18 ; 24 ; 27. Avec la droite de Mayer, formée des trois premiers puis des trois derniers points, quelle valeur de y prévoit-on pour x = 10 ?",
+      "answerKey": {
+        "value": 31.4,
+        "unit": "centaines de colis"
+      },
+      "explanation": "Les groupes sont formés des zones x = 1, 2, 3 puis x = 6, 7, 8 : G₁ = (2 ; 9) et G₂ = (7 ; 23). Le coefficient directeur de (G₁G₂) est (23 − 9)/(7 − 2) = 2,8, donc y = 9 + 2,8(x − 2). Pour x = 10 : y = 9 + 2,8 × 8 = 31,4 centaines de colis. Contrôle : la droite passe par G(4,5 ; 16), car 9 + 2,8 × 2,5 = 16.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une société remplace x par x′ = 3x − 5 et y par y′ = 0,5y + 10. Sachant que cov(x ; y) = −12, quelle est la valeur de cov(x′ ; y′) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−36"
+        },
+        {
+          "id": "b",
+          "text": "−6"
+        },
+        {
+          "id": "c",
+          "text": "−7"
+        },
+        {
+          "id": "d",
+          "text": "−18"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le décalage de −5 sur x et de +10 sur y n'agit pas ; seuls les facteurs d'échelle comptent : cov(x′ ; y′) = 3 × 0,5 × (−12) = −18. Le résultat −36 oublie le facteur 0,5 ; −6 oublie le facteur 3 ; −7 ajoute les constantes −5 et +10 à −12, alors que la covariance les ignore.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "title": "Test de compréhension ⭐ : Probabilités",
+  "questions": [
+    {
+      "prompt": "Parmi les 200 abonnés d'une salle de sport, 80 suivent le cours de yoga, et 50 de ces 80 suivent aussi la natation. On choisit au hasard un abonné qui suit le yoga. Quelle est la probabilité qu'il suive aussi la natation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "3/8"
+        },
+        {
+          "id": "c",
+          "text": "5/8"
+        },
+        {
+          "id": "d",
+          "text": "2/5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Savoir que l'abonné suit le yoga restreint le monde aux 80 yogis, dont 50 suivent la natation : 50/80 = 5/8. Le résultat 1/4 = 50/200 divise par l'effectif total au lieu de l'effectif du yoga ; 3/8 = 30/80 est la part des yogis qui ne font pas de natation ; 2/5 = 80/200 est la probabilité de suivre le yoga, sans rapport avec la question.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une boulangerie reçoit 30 % de ses commandes en ligne, et 20 % des commandes en ligne sont livrées en retard. Quelle est la probabilité qu'une commande soit à la fois en ligne et livrée en retard ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,06"
+        },
+        {
+          "id": "b",
+          "text": "0,24"
+        },
+        {
+          "id": "c",
+          "text": "0,50"
+        },
+        {
+          "id": "d",
+          "text": "0,20"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On multiplie le long du chemin : p(en ligne ∩ retard) = 0,30 × 0,20 = 0,06, car 0,20 est une probabilité conditionnelle. Le résultat 0,24 = 0,30 × 0,80 décrit les commandes en ligne livrées à l'heure ; 0,50 additionne les deux pourcentages au lieu de les composer ; 0,20 est la probabilité du retard sachant la commande en ligne, pas celle de l'intersection.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour un site marchand, A est l'événement « la visite se fait sur mobile » et B l'événement « la visite aboutit à un achat », avec p(A) = 0,6, p(B) = 0,25 et p(A ∩ B) = 0,15. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A et B sont dépendants, car p(A/B) = 0,6 est différent de p(B) = 0,25"
+        },
+        {
+          "id": "b",
+          "text": "A et B sont indépendants, car 0,6 × 0,25 = 0,15"
+        },
+        {
+          "id": "c",
+          "text": "A et B sont dépendants, car l'intersection n'est pas vide"
+        },
+        {
+          "id": "d",
+          "text": "A et B sont dépendants, car p(A) + p(B) ≠ 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le test d'indépendance compare l'intersection au produit : 0,6 × 0,25 = 0,15 = p(A ∩ B), donc A et B sont indépendants. p(A/B) = 0,15/0,25 = 0,6 se compare à p(A) = 0,6, et non à p(B) : l'égalité confirme l'indépendance ; une intersection non vide n'empêche pas l'indépendance ; la somme p(A) + p(B) ne dit rien de l'indépendance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une usine fabrique 60 % de ses vis sur la machine M1, avec 2 % de défauts, et 40 % sur la machine M2, avec 5 % de défauts. Quelle est la probabilité qu'une vis tirée au hasard soit défectueuse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,032"
+        },
+        {
+          "id": "b",
+          "text": "0,035"
+        },
+        {
+          "id": "c",
+          "text": "0,038"
+        },
+        {
+          "id": "d",
+          "text": "0,070"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les deux machines forment une partition : p(défaut) = 0,60 × 0,02 + 0,40 × 0,05 = 0,012 + 0,020 = 0,032. Le résultat 0,035 est la moyenne simple des taux 2 % et 5 %, sans pondération ; 0,038 pondère chaque taux par la part de l'autre machine ; 0,070 additionne les taux au lieu de les pondérer.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une banque constate que 4 % des virements sont frauduleux. Son alerte se déclenche pour 95 % des virements frauduleux et pour 5 % des virements légitimes. Une alerte se déclenche : quelle est, arrondie au centième, la probabilité que le virement soit frauduleux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,95"
+        },
+        {
+          "id": "b",
+          "text": "0,79"
+        },
+        {
+          "id": "c",
+          "text": "0,44"
+        },
+        {
+          "id": "d",
+          "text": "0,04"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On calcule p(fraude ∩ alerte) = 0,04 × 0,95 = 0,038 et p(légitime ∩ alerte) = 0,96 × 0,05 = 0,048, donc p(alerte) = 0,086 et p(fraude/alerte) = 0,038/0,086 ≈ 0,44. Le nombre 0,95 est p(alerte/fraude), le conditionnement dans l'autre sens ; 0,79 ≈ 0,038/0,048 oublie les alertes justifiées au dénominateur ; 0,04 est la probabilité de fraude avant l'alerte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une tombola d'association propose un gain algébrique X, en dinars : X vaut −2 avec la probabilité 0,5, vaut 1 avec la probabilité 0,3 et vaut 4 avec la probabilité 0,2. Quelle est l'espérance E(X), en dinars ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "1,1"
+        },
+        {
+          "id": "c",
+          "text": "2,1"
+        },
+        {
+          "id": "d",
+          "text": "0,1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "E(X) = (−2) × 0,5 + 1 × 0,3 + 4 × 0,2 = −1 + 0,3 + 0,8 = 0,1 dinar. Le résultat 1 est la moyenne simple des trois valeurs, sans pondération ; 1,1 oublie la valeur négative ; 2,1 compte la valeur −2 comme si elle était positive.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le nombre X d'ordinateurs vendus un jour dans une boutique vaut 1 ou 3, chaque valeur avec la probabilité 1/2. Quelle est la variance de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a E(X) = 1 × 1/2 + 3 × 1/2 = 2 et E(X²) = 1 × 1/2 + 9 × 1/2 = 5, donc V(X) = 5 − 2² = 1. Le résultat 5 est E(X²) sans retrancher le carré de l'espérance ; 4 est [E(X)]² ; 3 retranche E(X) = 2 au lieu de son carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un conseiller appelle 5 clients, de façon indépendante ; chacun accepte une offre avec la probabilité 0,3. Quelle est, arrondie au millième, la probabilité qu'exactement 2 clients acceptent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,031"
+        },
+        {
+          "id": "b",
+          "text": "0,309"
+        },
+        {
+          "id": "c",
+          "text": "0,441"
+        },
+        {
+          "id": "d",
+          "text": "0,132"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "X suit la loi binomiale (5 ; 0,3) : p(X = 2) = C(5 ; 2) × 0,3² × 0,7³ = 10 × 0,09 × 0,343 ≈ 0,309. Le résultat 0,031 oublie le facteur C(5 ; 2) = 10 ; 0,441 met l'exposant 2 sur la probabilité d'échec au lieu de 3 ; 0,132 échange les exposants des deux probabilités.",
+      "difficulty": 2
+    }
+  ]
+}

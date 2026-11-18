@@ -1,0 +1,135 @@
+{
+  "title": "Test de compréhension ⭐ : Matrices et systèmes",
+  "questions": [
+    {
+      "prompt": "Un grossiste en fournitures note, pour quatre dépôts et trois articles, le nombre de cartons livrés :\nM = (14 9 6 ; 8 12 5 ; 11 7 10 ; 3 15 4)\nLes lignes sont les dépôts, les colonnes les articles. Que vaut le coefficient a₃₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le premier indice est la ligne et le second la colonne : a₃₂ est à la ligne 3 (troisième dépôt) et à la colonne 2 (deuxième article), soit 7. Le nombre 5 est a₂₃, lu en inversant les deux indices ; 11 est le coefficient de la même ligne dans la première colonne ; 10 celui de la troisième colonne.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit A une matrice d'ordre 3 × 2 et B une matrice d'ordre 2 × 5. Quelle affirmation est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A × B n'existe pas, car les deux ordres sont différents"
+        },
+        {
+          "id": "b",
+          "text": "A × B existe, d'ordre 2 × 2"
+        },
+        {
+          "id": "c",
+          "text": "A × B existe, d'ordre 3 × 5 ; B × A n'existe pas"
+        },
+        {
+          "id": "d",
+          "text": "A × B et B × A existent toutes deux"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "A a 2 colonnes et B a 2 lignes : le produit A × B existe et son ordre est 3 × 5 (lignes de A, colonnes de B). Pour B × A, B a 5 colonnes mais A n'a que 3 lignes : le produit n'existe pas. Dire que les ordres doivent être égaux confond produit et somme ; l'ordre 2 × 2 serait celui des dimensions « intérieures », qui disparaissent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut le déterminant |4 −3 ; 2 5| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "26"
+        },
+        {
+          "id": "c",
+          "text": "−26"
+        },
+        {
+          "id": "d",
+          "text": "23"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On applique ad − bc : 4 × 5 − (−3) × 2 = 20 + 6 = 26. Le résultat 14 oublie que soustraire −6 revient à ajouter 6 ; −26 inverse les deux produits (bc − ad) ; 23 calcule 4 × 2 + 3 × 5, c'est-à-dire ac − bd, en croisant mal les coefficients.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une crêperie a vendu, à deux services, des crêpes sucrées et salées : Q = (40 25 ; 30 50), lignes = services, colonnes = (sucrées, salées). Les prix en dinars forment la colonne P = (2,5 ; 4). Quelle est la recette du second service, en dinars ?",
+      "answerKey": {
+        "value": 275,
+        "unit": "dinars"
+      },
+      "explanation": "La recette du second service est la ligne 2 de Q multipliée par la colonne P : 30 × 2,5 + 50 × 4 = 75 + 200 = 275 dinars. Le produit Q × P vaut (200 ; 275) : le premier coefficient, 40 × 2,5 + 25 × 4 = 200, est la recette du premier service.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'inverse de M = (5 2 ; 3 2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/2 −1/2 ; −3/4 5/4)"
+        },
+        {
+          "id": "b",
+          "text": "(2 −2 ; −3 5)"
+        },
+        {
+          "id": "c",
+          "text": "(5/4 −1/2 ; −3/4 1/2)"
+        },
+        {
+          "id": "d",
+          "text": "(1/2 1/2 ; 3/4 5/4)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "dét(M) = 5 × 2 − 2 × 3 = 4. On échange 5 et 2, on change le signe de 2 et de 3, puis on multiplie par 1/4 : M⁻¹ = (1/2 −1/2 ; −3/4 5/4). La matrice (2 −2 ; −3 5) oublie le facteur 1/4 ; (5/4 −1/2 ; −3/4 1/2) n'échange pas les termes de la diagonale ; (1/2 1/2 ; 3/4 5/4) garde les signes de 2 et de 3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Combien de solutions possède le système 2x + y = 5 ; 6x + 3y = 15 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune : le déterminant est nul"
+        },
+        {
+          "id": "b",
+          "text": "Une seule : X = A⁻¹ × B"
+        },
+        {
+          "id": "c",
+          "text": "Une infinité, car L₂ = 3L₁"
+        },
+        {
+          "id": "d",
+          "text": "Une seule : x = 2,5 et y = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le déterminant de (2 1 ; 6 3) vaut 6 − 6 = 0 : il n'y a pas de solution unique. Reste à éliminer : L₂ − 3L₁ donne 0 = 15 − 15, soit 0 = 0, donc toute solution de 2x + y = 5 convient et il y en a une infinité. Dire « aucune » parce que dét = 0 oublie le cas où les seconds membres suivent la même proportion ; X = A⁻¹ × B suppose A inversible. Le couple (2,5 ; 0) est une solution parmi une infinité, comme (1 ; 3), et non l'unique.",
+      "difficulty": 2
+    }
+  ]
+}
