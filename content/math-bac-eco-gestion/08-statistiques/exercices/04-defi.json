@@ -1,0 +1,127 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve de la prévision",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un site de vente suit, sur six mois, le nombre de commandes y (en centaines) : 22 ; 25 ; 31 ; 32 ; 38 ; 41, aux rangs x = 1 à 6. À l'aide de la droite de régression de y en x, quel nombre de commandes (en centaines) prévoit-on au rang 8, arrondi au centième ?",
+      "answerKey": {
+        "value": 48.86,
+        "tolerance": 0.03,
+        "unit": "centaines de commandes"
+      },
+      "explanation": "On a x̄ = 3,5 et ȳ = 31,5. Les produits xᵢyᵢ somment à 729, de moyenne 121,5, donc cov = 121,5 − 3,5 × 31,5 = 11,25. Aussi V(x) = 91/6 − 3,5² = 35/12. Alors a = 11,25 × 12/35 = 27/7 ≈ 3,857 et b = 31,5 − (27/7) × 3,5 = 18. Au rang 8 : y = (27/7) × 8 + 18 ≈ 48,86 centaines de commandes ; c'est une extrapolation de deux rangs au-delà des données.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une série double, les deux droites de régression ont pour coefficients directeurs a = 1,2 (y en x) et a′ = 0,6 (x en y). Quelle est la valeur de r (arrondie au centième) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "r = 0,85"
+        },
+        {
+          "id": "b",
+          "text": "r = 0,72"
+        },
+        {
+          "id": "c",
+          "text": "r = 0,90"
+        },
+        {
+          "id": "d",
+          "text": "r = 0,50"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le produit des deux coefficients vaut cov²/(V(x)V(y)) = r², donc r² = 1,2 × 0,6 = 0,72 et |r| = √0,72 ≈ 0,85. Les deux coefficients sont positifs, donc cov(x ; y) > 0 et r = +0,85. Le résultat 0,72 oublie la racine ; 0,90 prend la moyenne des deux pentes ; 0,50 est le quotient a′/a.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un modèle logarithmique est établi : en posant X = ln q, la droite de régression de la recette R (en milliers de dinars) en X est R = 25X + 12. Pour quelle quantité q la recette atteint-elle 100 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "q ≈ 54,6"
+        },
+        {
+          "id": "b",
+          "text": "q ≈ 3,5"
+        },
+        {
+          "id": "c",
+          "text": "q ≈ 33,8"
+        },
+        {
+          "id": "d",
+          "text": "q ≈ 88,2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On résout 25 ln q + 12 = 100 : ln q = 88/25 = 3,52, donc q = e^(3,52) ≈ 33,8. Le résultat 3,5 s'arrête à ln q sans revenir à q ; 54,6 oublie de retrancher 12 (ln q = 100/25 = 4) ; 88,2 ajoute 12 au lieu de le retrancher (ln q = 112/25 = 4,48).",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour ajuster une demande qui décroît en s'aplatissant, remettre dans l'ordre les étapes de la méthode exponentielle.",
+      "options": [
+        {
+          "id": "d",
+          "text": "Calculer la droite des moindres carrés z = ax + b"
+        },
+        {
+          "id": "a",
+          "text": "Constater que le nuage de (x ; y) est courbé"
+        },
+        {
+          "id": "e",
+          "text": "Revenir à y = e^(ax + b) pour prévoir y à partir de x"
+        },
+        {
+          "id": "b",
+          "text": "Poser z = ln y et calculer z pour chaque observation"
+        },
+        {
+          "id": "c",
+          "text": "Vérifier sur le nuage (x ; z) que |r| est proche de 1, ce qui autorise l'ajustement affine"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On repère d'abord la courbure, puis on pose z = ln y, on vérifie que le nuage (x ; z) est allongé, on calcule alors la droite des moindres carrés, et on revient enfin à y = e^(ax + b) pour prévoir : calculer la droite avant d'avoir contrôlé l'alignement, ou prévoir avant le retour à y, mènerait à des conclusions fausses.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour un produit, la demande et l'offre sont données par\nf(x) = 9e^(−0,4x)\ng(x) = 0,6x + 1\noù x est le prix en dinars et f(x), g(x) sont des quantités en milliers d'unités. Quel est le prix d'équilibre, arrondi au dixième ?",
+      "answerKey": {
+        "value": 2.9,
+        "tolerance": 0.05,
+        "unit": "dinars"
+      },
+      "explanation": "Posons h = f − g : f décroît et g croît, donc h décroît strictement et h(x) = 0 a une seule solution. Or h(2,9) = 9e^(−1,16) − 2,74 ≈ 2,82 − 2,74 > 0 et h(3) = 9e^(−1,2) − 2,8 ≈ 2,71 − 2,80 < 0, donc x₀ est entre 2,9 et 3, avec x₀ ≈ 2,947. Arrondi au dixième, le prix d'équilibre vaut 2,9 dinars.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un nuage de six points : (1 ; 4), (2 ; 5), (3 ; 9), (4 ; 8), (5 ; 12), (6 ; 13). S désigne, pour la droite de régression de y en x, la somme des carrés des résidus ; S′ la même somme pour la droite de Mayer (groupes des trois premiers puis des trois derniers points). Calculer S′ − S, arrondi au centième.",
+      "answerKey": {
+        "value": 0.63,
+        "tolerance": 0.01
+      },
+      "explanation": "Régression : x̄ = 3,5, ȳ = 8,5, V(x) = 35/12 et cov = 211/6 − 29,75 = 65/12, d'où a = 13/7 et b = 2 ; les résidus valent environ 0,14 ; −0,71 ; 1,43 ; −1,43 ; 0,71 ; −0,14, et S = 36/7 ≈ 5,143. Mayer : G₁ = (2 ; 6) et G₂ = (5 ; 11), donc y = 6 + (5/3)(x − 2) ; les résidus valent −1/3 ; −1 ; 4/3 ; −4/3 ; 1 ; 1/3, et S′ = 52/9 ≈ 5,778. Ainsi S′ − S = 52/9 − 36/7 = 40/63 ≈ 0,63, positif comme l'impose la minimalité de la droite de régression.",
+      "difficulty": 3
+    }
+  ]
+}

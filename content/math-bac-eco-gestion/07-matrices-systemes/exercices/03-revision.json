@@ -1,0 +1,158 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les huit pas des matrices",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associer chaque déterminant à sa valeur.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "|2 3 ; 1 4|"
+        },
+        {
+          "id": "l2",
+          "text": "|3 6 ; 1 2|"
+        },
+        {
+          "id": "l3",
+          "text": "|5 −2 ; 3 1|"
+        },
+        {
+          "id": "l4",
+          "text": "dét(I₃)"
+        },
+        {
+          "id": "r1",
+          "text": "5"
+        },
+        {
+          "id": "r2",
+          "text": "0"
+        },
+        {
+          "id": "r3",
+          "text": "11"
+        },
+        {
+          "id": "r4",
+          "text": "1"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "On applique ad − bc : 2 × 4 − 3 × 1 = 5 ; 3 × 2 − 6 × 1 = 0 ; 5 × 1 − (−2) × 3 = 5 + 6 = 11. Quant à la matrice unité, son déterminant vaut 1, quel que soit son ordre.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur des matrices A, B, C, lesquelles sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A × (B + C) = A × B + A × C, quand les produits existent"
+        },
+        {
+          "id": "b",
+          "text": "A × B = B × A pour deux matrices carrées de même ordre"
+        },
+        {
+          "id": "c",
+          "text": "(A × B) × C = A × (B × C), quand les produits existent"
+        },
+        {
+          "id": "d",
+          "text": "Iₙ × M = M × Iₙ = M pour toute matrice carrée M d'ordre n"
+        },
+        {
+          "id": "e",
+          "text": "A + B existe pour A d'ordre 2 × 3 et B d'ordre 3 × 2"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Le produit est distributif sur la somme, associatif, et admet Iₙ pour élément neutre : trois propriétés exactes. Il n'est pas commutatif en général, comme le montre A × B ≠ B × A sur de petits exemples. Et la somme exige le même ordre : 2 × 3 et 3 × 2 ne s'additionnent pas, même avec six coefficients chacune.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces matrices, laquelle est inversible ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2 −4 ; −1 2)"
+        },
+        {
+          "id": "b",
+          "text": "(6 3 ; 4 2)"
+        },
+        {
+          "id": "c",
+          "text": "(2 5 ; 1 3)"
+        },
+        {
+          "id": "d",
+          "text": "(3 9 ; 1 3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une matrice d'ordre 2 est inversible si et seulement si son déterminant est non nul. dét(2 5 ; 1 3) = 6 − 5 = 1 : elle est inversible. Les trois autres ont un déterminant nul : 4 − 4 = 0, 12 − 12 = 0 et 9 − 9 = 0, leurs lignes étant proportionnelles.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit M = (4 1 ; 3 2). Quel est le coefficient de la ligne 2 et de la colonne 1 de M⁻¹ ? (donner la valeur décimale)",
+      "answerKey": {
+        "value": -0.6
+      },
+      "explanation": "dét(M) = 4 × 2 − 1 × 3 = 5. La formule donne M⁻¹ = (1/5) × (2 −1 ; −3 4) : le coefficient de la ligne 2 et de la colonne 1 est −3/5 = −0,6. Garder le signe + devant 3, ou oublier la division par 5, donnerait 3/5 ou −3.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une imprimerie facture des lots : 4 affiches et 3 dépliants coûtent 55 dinars, 2 affiches et 5 dépliants coûtent 59 dinars. Avec la matrice inverse de (4 3 ; 2 5), quel est le prix d'un dépliant, en dinars ?",
+      "answerKey": {
+        "value": 9,
+        "unit": "dinars"
+      },
+      "explanation": "Le système 4x + 3y = 55 ; 2x + 5y = 59 s'écrit A × X = B avec dét(A) = 20 − 6 = 14. Donc A⁻¹ = (1/14) × (5 −3 ; −2 4) et X = A⁻¹ × B : la ligne 2 donne y = (−2 × 55 + 4 × 59) / 14 = 126 / 14 = 9 dinars. La ligne 1 donne x = (275 − 177) / 14 = 7 ; on contrôle 4 × 7 + 3 × 9 = 55.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le coût total, en milliers de dinars, de q centaines d'unités s'écrit C(q) = aq² + bq + c. On relève C(0) = 10, C(1) = 15 et C(2) = 24. Quel est le coût de 5 centaines d'unités, en milliers de dinars ?",
+      "answerKey": {
+        "value": 75,
+        "unit": "milliers de dinars"
+      },
+      "explanation": "Chaque valeur relevée donne une équation : c = 10 ; a + b + c = 15 ; 4a + 2b + c = 24. On en tire a + b = 5 et 4a + 2b = 14, donc 2a = 4, soit a = 2 et b = 3. Alors C(5) = 2 × 25 + 3 × 5 + 10 = 75 milliers de dinars.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les huit étapes du nuage",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associer chaque valeur du coefficient de corrélation à sa qualification.",
+      "options": [
+        {
+          "id": "l2",
+          "text": "r = −0,74"
+        },
+        {
+          "id": "l4",
+          "text": "r = −1"
+        },
+        {
+          "id": "l1",
+          "text": "r = 0,12"
+        },
+        {
+          "id": "l3",
+          "text": "r = 0,98"
+        },
+        {
+          "id": "r3",
+          "text": "Corrélation très forte"
+        },
+        {
+          "id": "r1",
+          "text": "Corrélation faible"
+        },
+        {
+          "id": "r4",
+          "text": "Dépendance totale : points alignés"
+        },
+        {
+          "id": "r2",
+          "text": "Corrélation forte"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Une corrélation faible correspond à |r| ≤ 0,70 (ici 0,12) ; forte à 0,70 < |r| ≤ 0,95 (ici −0,74, le signe n'intervenant pas) ; très forte au-delà de 0,95 (ici 0,98) ; et r = −1 traduit des points exactement alignés, donc une dépendance totale ; r = −1 est aussi très forte, c'est le cas extrême.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la droite de régression de y en x sont vraies ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle passe par le point moyen G"
+        },
+        {
+          "id": "b",
+          "text": "Son coefficient directeur est cov(x ; y)/V(x)"
+        },
+        {
+          "id": "c",
+          "text": "Elle minimise la somme des carrés des écarts horizontaux"
+        },
+        {
+          "id": "d",
+          "text": "Elle coïncide avec la droite de régression de x en y dès que r > 0"
+        },
+        {
+          "id": "e",
+          "text": "Son coefficient directeur a le même signe que la covariance"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "La droite de y en x passe par G, a pour coefficient cov(x ; y)/V(x) et, V(x) étant positive, ce coefficient a le signe de la covariance. Elle minimise les écarts verticaux, pas horizontaux, et ne coïncide avec la droite de x en y que si |r| = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La droite y = 3x + 40 a été établie pour x entre 20 et 60. Quelle prévision est une extrapolation, et que vaut-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "45 lots : y = 175"
+        },
+        {
+          "id": "b",
+          "text": "58 lots : y = 214"
+        },
+        {
+          "id": "c",
+          "text": "90 lots : y = 310"
+        },
+        {
+          "id": "d",
+          "text": "90 lots : y = 270"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une prévision est une extrapolation quand x sort de l'intervalle observé [20 ; 60] : c'est le cas de 90 lots, avec y = 3 × 90 + 40 = 310. Les valeurs 45 et 58 sont à l'intérieur : ce sont des interpolations ; 270 oublie la constante 40.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un éditeur ajuste le nombre d'abonnés y (en centaines) d'un magazine par un modèle exponentiel : en posant z = ln y, la droite des moindres carrés est z = 0,25x + 1,2, où x est le rang du trimestre. À partir de quel rang entier le nombre d'abonnés dépasse-t-il 20 centaines ?",
+      "answerKey": {
+        "value": 8,
+        "unit": "rang"
+      },
+      "explanation": "e^(0,25x + 1,2) > 20 ⟺ 0,25x + 1,2 > ln 20 ≈ 3,00 ⟺ x > 7,18. Le premier rang entier est donc 8 (contrôle : e^(2,95) ≈ 19,1 < 20 et e^(3,2) ≈ 24,5 > 20).",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour huit relevés, un bureau d'études a trouvé Σ yᵢ = 96 et Σ yᵢ² = 1 260, ainsi que cov(x ; y) = 18. Quel est le coefficient directeur a′ de la droite de régression de x en y, arrondi au centième ?",
+      "answerKey": {
+        "value": 1.33,
+        "tolerance": 0.005
+      },
+      "explanation": "V(y) = 1 260/8 − (96/8)² = 157,5 − 144 = 13,5. Alors a′ = cov(x ; y)/V(y) = 18/13,5 ≈ 1,33. Le dénominateur de a′ est la variance de y, variable placée en ordonnée.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour une série double, r = 0,9, σx = 2 et σy = 5, avec le point moyen G(10 ; 30). Quelle valeur de y prévoit la droite de régression de y en x pour x = 14 ?",
+      "answerKey": {
+        "value": 39
+      },
+      "explanation": "Comme cov(x ; y) = r σx σy, le coefficient de y en x vaut a = cov/V(x) = r σy/σx = 0,9 × 5/2 = 2,25. La droite passe par G : y = 30 + 2,25(x − 10), donc pour x = 14 : y = 30 + 2,25 × 4 = 39.",
+      "difficulty": 3
+    }
+  ]
+}

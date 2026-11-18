@@ -1,0 +1,118 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'épreuve de la décision",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un abonné d'une plateforme de streaming a renouvelé son abonnement le mois 0. Chaque mois suivant, il renouvelle avec la probabilité 0,85 s'il a renouvelé le mois précédent, et avec la probabilité 0,3 s'il ne l'avait pas fait. Quelle est la probabilité qu'il renouvelle au mois 3 ? Donner un nombre décimal.",
+      "answerKey": {
+        "value": 0.7221,
+        "tolerance": 0.0001
+      },
+      "explanation": "Au mois 1, il renouvelle avec la probabilité 0,85. Au mois 2, la partition est « renouvelé au mois 1 » ou non : p₂ = 0,85 × 0,85 + 0,15 × 0,30 = 0,7225 + 0,045 = 0,7675. Au mois 3, on applique le même raisonnement à p₂ : p₃ = 0,85 × 0,7675 + 0,2325 × 0,30 = 0,652375 + 0,06975 = 0,722125 ≈ 0,7221.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Trois fournisseurs livrent respectivement 40 %, 35 % et 25 % des composants d'un atelier, avec des taux de défaut de 1 %, 2 % et 6 %. Un composant est défectueux : quelle est la probabilité qu'il vienne du troisième fournisseur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,58"
+        },
+        {
+          "id": "b",
+          "text": "0,25"
+        },
+        {
+          "id": "c",
+          "text": "0,06"
+        },
+        {
+          "id": "d",
+          "text": "0,67"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a p(défaut) = 0,40 × 0,01 + 0,35 × 0,02 + 0,25 × 0,06 = 0,004 + 0,007 + 0,015 = 0,026, et p(F3 ∩ défaut) = 0,015, donc p(F3/défaut) = 0,015/0,026 = 15/26 ≈ 0,58. Le nombre 0,25 est la part du troisième fournisseur avant l'observation ; 0,06 est son taux de défaut, le conditionnement inverse ; 0,67 ≈ 0,06/0,09 compare les taux sans les pondérer par les parts.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une variable aléatoire X, un élève trouve E(X) = 0,6 et E(X²) = 0,3, puis annonce V(X) = −0,06. Que peut-on dire de ce résultat ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est juste : une variance négative traduit des valeurs très concentrées autour de l'espérance"
+        },
+        {
+          "id": "b",
+          "text": "Il est juste après correction : on remplace −0,06 par sa valeur absolue 0,06"
+        },
+        {
+          "id": "c",
+          "text": "Il est faux : une variance n'est jamais négative, donc E(X²) doit dépasser [E(X)]²"
+        },
+        {
+          "id": "d",
+          "text": "Il est faux : la bonne formule est V(X) = [E(X)]² − E(X²), qui donne 0,06"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme V(X) = E(X²) − [E(X)]² est une moyenne de carrés d'écarts, elle est positive ou nulle ; ici [E(X)]² = 0,36 dépasse E(X²) = 0,3, donc l'un des deux calculs de départ est erroné. Une dispersion faible donne une variance proche de 0, jamais négative ; prendre la valeur absolue masque l'erreur sans la corriger ; la formule avec les termes échangés donnerait 0,06 mais n'est pas la variance.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "On cherche la probabilité d'une cause A sachant qu'un effet B a été observé ; on connaît p(A), p(B/A) et p(B/Ā). Remettre dans l'ordre les étapes de la méthode.",
+      "options": [
+        {
+          "id": "d",
+          "text": "Additionner les deux chemins pour obtenir p(B) par les probabilités totales"
+        },
+        {
+          "id": "a",
+          "text": "Nommer la cause A et l'effet B, puis lire p(A), p(B/A) et p(B/Ā) dans l'énoncé"
+        },
+        {
+          "id": "e",
+          "text": "Diviser p(A ∩ B) par p(B) pour obtenir p(A/B)"
+        },
+        {
+          "id": "b",
+          "text": "Calculer les deux chemins qui aboutissent à B : p(A ∩ B) = p(A) × p(B/A) et p(Ā ∩ B) = p(Ā) × p(B/Ā)"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "La lecture des données vient d'abord, car tout le reste s'y appuie. On calcule ensuite les deux chemins qui aboutissent à B, puis on les additionne pour obtenir p(B) : ce total est le dénominateur de Bayes. La division par p(B) clôt la méthode, car elle a besoin à la fois du numérateur p(A ∩ B) et de ce dénominateur.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une société de transport voit chaque livraison arriver en retard avec la probabilité 0,1, indépendamment des autres. Quel est le plus petit nombre n de livraisons pour que la probabilité d'avoir au moins un retard soit supérieure ou égale à 0,95 ? (Le logarithme népérien est autorisé.)",
+      "answerKey": {
+        "value": 29
+      },
+      "explanation": "Avec n livraisons, p(au moins un retard) = 1 − 0,9ⁿ. On veut 1 − 0,9ⁿ ≥ 0,95, soit 0,9ⁿ ≤ 0,05, donc n ≥ ln 0,05 / ln 0,9 ≈ 28,4 (le sens s'inverse en divisant par ln 0,9 < 0). Contrôle : 0,9²⁸ ≈ 0,0523 est trop grand et 0,9²⁹ ≈ 0,0471 convient : n = 29.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une chaîne d'emballage de biscuits produit des paquets non conformes avec la probabilité 0,1, indépendamment les uns des autres. On prélève 40 paquets et on note X le nombre de paquets non conformes. Un test valide la chaîne si X appartient à l'intervalle [E(X) − 2σ(X) ; E(X) + 2σ(X)]. Quel est le plus grand nombre entier de paquets non conformes que le test accepte ?",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "X suit la loi binomiale (40 ; 0,1) : E(X) = 4 et V(X) = 40 × 0,1 × 0,9 = 3,6, donc σ(X) = √3,6 ≈ 1,897. L'intervalle est [4 − 3,79 ; 4 + 3,79] ≈ [0,21 ; 7,79] : le plus grand entier accepté est 7.",
+      "difficulty": 3
+    }
+  ]
+}

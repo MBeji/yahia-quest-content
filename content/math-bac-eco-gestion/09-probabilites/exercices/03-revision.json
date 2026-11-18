@@ -1,0 +1,157 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Probabilités de A à Z",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associer chaque situation à l'outil qui permet de la traiter.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Calculer le taux global de défaut d'un produit livré par plusieurs fournisseurs"
+        },
+        {
+          "id": "l2",
+          "text": "Retrouver le fournisseur le plus probable d'un produit défectueux"
+        },
+        {
+          "id": "l3",
+          "text": "Probabilité de sortir successivement deux jetons sans remise"
+        },
+        {
+          "id": "l4",
+          "text": "Nombre de clients qui répondent parmi vingt appelés indépendamment"
+        },
+        {
+          "id": "r1",
+          "text": "Formule des probabilités totales"
+        },
+        {
+          "id": "r2",
+          "text": "Formule de Bayes"
+        },
+        {
+          "id": "r3",
+          "text": "Formule des probabilités composées"
+        },
+        {
+          "id": "r4",
+          "text": "Loi binomiale"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Un taux global s'obtient en additionnant les chemins de l'arbre, c'est-à-dire par les probabilités totales ; remonter de l'effet à la cause est le rôle de Bayes ; deux tirages sans remise se composent avec p(A) × p(B/A) ; un nombre de succès sur des épreuves identiques et indépendantes suit la loi binomiale.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Une enseigne observe deux événements A et B indépendants, de probabilités non nulles. Quelles affirmations sont vraies ? Cocher toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(A ∩ B) = p(A) × p(B)"
+        },
+        {
+          "id": "b",
+          "text": "p(B/A) = p(B)"
+        },
+        {
+          "id": "c",
+          "text": "A et B sont incompatibles"
+        },
+        {
+          "id": "d",
+          "text": "p(A ∪ B) = p(A) + p(B)"
+        },
+        {
+          "id": "e",
+          "text": "p(A/B) = p(A)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "L'égalité p(A ∩ B) = p(A) × p(B) est la définition de l'indépendance, et elle équivaut à p(B/A) = p(B) comme à p(A/B) = p(A) quand les probabilités sont non nulles. Deux événements indépendants de probabilités non nulles ne sont pas incompatibles, car leur intersection a pour probabilité p(A) × p(B) > 0 ; par conséquent p(A ∪ B) = p(A) + p(B) − p(A) × p(B), et non la simple somme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les gains X d'un jeu sont exprimés en dinars. Dans quelles unités s'expriment la variance V(X) et l'écart type σ(X) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "V(X) en dinars, σ(X) en dinars au carré"
+        },
+        {
+          "id": "b",
+          "text": "V(X) en dinars au carré, σ(X) en dinars"
+        },
+        {
+          "id": "c",
+          "text": "V(X) et σ(X) tous deux en dinars"
+        },
+        {
+          "id": "d",
+          "text": "V(X) en dinars au carré, σ(X) sans unité"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La variance est une moyenne de carrés d'écarts exprimés en dinars : elle s'exprime en dinars au carré. L'écart type en est la racine carrée, donc il revient aux dinars, comme les valeurs de X. Les autres combinaisons inversent les deux unités, les confondent, ou font disparaître l'unité alors qu'une racine carrée ne supprime pas une grandeur.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un hôtel, 35 % des clients sont des clients d'affaires ; 60 % d'entre eux restent plus de deux nuits, contre 20 % des autres clients. Quelle est la probabilité qu'un client pris au hasard reste plus de deux nuits ? Donner un nombre décimal.",
+      "answerKey": {
+        "value": 0.34
+      },
+      "explanation": "Les clients d'affaires et les autres forment une partition : p = 0,35 × 0,60 + 0,65 × 0,20 = 0,21 + 0,13 = 0,34.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour une mise de 4 DT, un stand verse 20 DT avec la probabilité 0,1, verse 6 DT avec la probabilité 0,2, et ne verse rien sinon. Calculer, en dinars, l'espérance du gain algébrique du joueur.",
+      "answerKey": {
+        "value": -0.8
+      },
+      "explanation": "Le gain algébrique soustrait la mise : il vaut 16 avec la probabilité 0,1, vaut 2 avec la probabilité 0,2 et vaut −4 avec la probabilité 0,7. Donc E = 1,6 + 0,4 − 2,8 = −0,8 : le jeu est défavorable, le joueur perd 0,80 DT en moyenne par partie.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une production, 10 % des composants sont défectueux, indépendamment les uns des autres. On prélève 5 composants et on note X le nombre de composants défectueux. Calculer, arrondie au millième, la probabilité p(X ≥ 2).",
+      "answerKey": {
+        "value": 0.081,
+        "tolerance": 0.0005
+      },
+      "explanation": "X suit la loi binomiale (5 ; 0,1). On passe au contraire : p(X ≥ 2) = 1 − p(X = 0) − p(X = 1) = 1 − 0,9⁵ − 5 × 0,1 × 0,9⁴ = 1 − 0,59049 − 0,32805 = 0,08146 ≈ 0,081.",
+      "difficulty": 3
+    }
+  ]
+}
