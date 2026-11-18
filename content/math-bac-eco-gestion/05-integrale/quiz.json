@@ -1,0 +1,173 @@
+{
+  "title": "Test de compréhension ⭐ : Intégrale d'une fonction continue",
+  "questions": [
+    {
+      "prompt": "Une savonnerie a pour coût marginal Cm(x) = 4x + 6 dinars par caisse. Quel supplément de coût représente le passage de 2 à 5 caisses ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80 dinars"
+        },
+        {
+          "id": "b",
+          "text": "60 dinars"
+        },
+        {
+          "id": "c",
+          "text": "−60 dinars"
+        },
+        {
+          "id": "d",
+          "text": "12 dinars"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une primitive de Cm est F(x) = 2x² + 6x ; F(5) = 80 et F(2) = 20, donc ∫₂⁵ Cm(x)dx = F(5) − F(2) = 60 dinars. Le résultat 80 est F(5) seul, sans retrancher F(2) ; −60 vient de l'ordre inversé F(2) − F(5) ; 12 est l'écart Cm(5) − Cm(2) = 26 − 14 des deux coûts marginaux, qui ne cumule rien.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La fonction f mesure la variation instantanée du stock d'une coopérative, en tonnes par jour. On sait que ∫₂⁵ f(t)dt = 9 et ∫₅⁸ f(t)dt = −4. Que vaut ∫₈² f(t)dt ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "13"
+        },
+        {
+          "id": "c",
+          "text": "−5"
+        },
+        {
+          "id": "d",
+          "text": "−13"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Par Chasles, ∫₂⁸ f = ∫₂⁵ f + ∫₅⁸ f = 9 + (−4) = 5. En inversant les bornes, ∫₈² f = −∫₂⁸ f = −5. La valeur 5 oublie l'inversion ; 13 vient de 9 − (−4), une soustraction au lieu de la somme ; −13 cumule ce dernier oubli avec l'inversion.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une fonction g est continue sur [0 ; 5] et ∫₀⁵ g(x)dx = 8. Un comptable calcule ∫₀⁵ (2g(x) + 3)dx. Quel résultat doit-il trouver ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "19"
+        },
+        {
+          "id": "b",
+          "text": "23"
+        },
+        {
+          "id": "c",
+          "text": "22"
+        },
+        {
+          "id": "d",
+          "text": "31"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par linéarité, ∫₀⁵ (2g + 3) = 2 × 8 + ∫₀⁵ 3 dx = 16 + 3 × 5 = 31 : la constante 3 s'intègre sur toute la longueur 5 de l'intervalle. On obtient 19 en ajoutant 3 sans multiplier par 5, 23 en ne doublant pas l'intégrale de g (8 + 15), et 22 en doublant aussi la constante, 2 × (8 + 3).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le coût marginal Cm(x) d'un atelier, en dinars par unité, vérifie 0,5 ≤ Cm(x) ≤ 2 pour x de 2 à 6 unités. Quel encadrement du coût supplémentaire I = ∫₂⁶ Cm(x)dx est garanti ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 ≤ I ≤ 8"
+        },
+        {
+          "id": "b",
+          "text": "0,5 ≤ I ≤ 2"
+        },
+        {
+          "id": "c",
+          "text": "3 ≤ I ≤ 12"
+        },
+        {
+          "id": "d",
+          "text": "1 ≤ I ≤ 4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si m ≤ Cm ≤ M sur [a ; b], alors m(b − a) ≤ I ≤ M(b − a). Ici b − a = 4, donc 0,5 × 4 = 2 ≤ I ≤ 2 × 4 = 8. L'encadrement 0,5 ≤ I ≤ 2 recopie celui de Cm sans multiplier par la longueur ; 3 ≤ I ≤ 12 multiplie par b = 6 au lieu de b − a ; 1 ≤ I ≤ 4 multiplie par a = 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À l'aide d'une intégration par parties, que vaut ∫₀¹ (x + 2)eˣ dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3e − 2"
+        },
+        {
+          "id": "b",
+          "text": "4e − 3"
+        },
+        {
+          "id": "c",
+          "text": "2e − 1"
+        },
+        {
+          "id": "d",
+          "text": "e − 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec u′(x) = eˣ, u(x) = eˣ et v(x) = x + 2, v′(x) = 1 : I = [(x + 2)eˣ]₀¹ − ∫₀¹ eˣdx = (3e − 2) − (e − 1) = 2e − 1 ≈ 4,44. On trouve 3e − 2 en oubliant l'intégrale restante, 4e − 3 en l'ajoutant au lieu de la soustraire, et e − 1 en ne gardant que cette intégrale restante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'aire, en unités d'aire, du domaine limité par la courbe de f(x) = x² − 9, l'axe des abscisses et les droites x = 0 et x = 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "27"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur [0 ; 3], x² − 9 ≤ 0 : la courbe est sous l'axe, donc l'aire vaut ∫₀³ |f| = ∫₀³ (9 − x²)dx = 27 − 9 = 18. La valeur 36 ajoute ∫₀³ x²dx au lieu de le retrancher (le signe de x² est mal lu) ; l'intégrale ∫₀³ f = −18 est négative, donc ce n'est pas une aire ; 9 est ∫₀³ x²dx seul ; 27 est ∫₀³ 9dx seul.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le prix d'offre d'une denrée est p(q) = q² + 1 dinars pour q dans [1 ; 3] tonnes. Quel est le prix d'offre moyen sur [1 ; 3] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16/3"
+        },
+        {
+          "id": "b",
+          "text": "32/3"
+        },
+        {
+          "id": "c",
+          "text": "6"
+        },
+        {
+          "id": "d",
+          "text": "32/9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "∫₁³ (q² + 1)dq = [q³/3 + q]₁³ = 12 − 4/3 = 32/3, puis on divise par b − a = 2 : p̄ = 16/3 ≈ 5,33. La valeur 32/3 est l'intégrale sans la division ; 6 est la moyenne des valeurs aux bornes, (2 + 10)/2, qui ne représente pas la moyenne d'une courbe ; 32/9 divise par b = 3 au lieu de b − a.",
+      "difficulty": 2
+    }
+  ]
+}

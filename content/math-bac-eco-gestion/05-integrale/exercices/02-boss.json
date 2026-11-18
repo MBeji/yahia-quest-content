@@ -1,0 +1,112 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des bornes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le chiffre d'affaires instantané d'un café, en dinars par heure, est r(t) = −3t² + 18t + 12 pour t dans [0 ; 6], t étant le nombre d'heures écoulées depuis l'ouverture. Calculer le chiffre d'affaires moyen par heure sur ces 6 heures, en dinars par heure.",
+      "answerKey": {
+        "value": 30,
+        "unit": "dinars par heure"
+      },
+      "explanation": "Une primitive de r est R(t) = −t³ + 9t² + 12t ; R(6) = −216 + 324 + 72 = 180 et R(0) = 0, donc ∫₀⁶ r = 180 dinars. La valeur moyenne est 180/(6 − 0) = 30 dinars par heure. Elle n'est ni la moyenne des valeurs aux bornes, (12 + 12)/2 = 12, ni la valeur r(3) = 39 au milieu.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un graphique utilise 2 cm par unité sur chaque axe. Sur [0 ; 3], la parabole d'équation y = 5x − x² surplombe la droite y = 2x. Quelle surface, en cm², est comprise entre elles ?",
+      "answerKey": {
+        "value": 18,
+        "unit": "cm²"
+      },
+      "explanation": "f(x) − g(x) = 3x − x² ≥ 0 sur [0 ; 3], donc l'aire vaut ∫₀³ (3x − x²)dx = [3x²/2 − x³/3]₀³ = 27/2 − 9 = 9/2 unités d'aire. Une unité d'aire mesure 2 × 2 = 4 cm², donc l'aire est (9/2) × 4 = 18 cm².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que vaut ∫₁ᵉ (2x − 1) ln x dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e² − e"
+        },
+        {
+          "id": "b",
+          "text": "3e²/2 − 2e + 1/2"
+        },
+        {
+          "id": "c",
+          "text": "e²/2 − e + 1/2"
+        },
+        {
+          "id": "d",
+          "text": "e²/2 − 1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec u′(x) = 2x − 1, u(x) = x² − x et v(x) = ln x : I = [(x² − x)ln x]₁ᵉ − ∫₁ᵉ (x − 1)dx. Le crochet vaut e² − e (car ln 1 = 0) et ∫₁ᵉ (x − 1)dx = e²/2 − e + 1/2, donc I = e² − e − e²/2 + e − 1/2 = e²/2 − 1/2 ≈ 3,19. On trouve e² − e en oubliant l'intégrale restante, e²/2 − e + 1/2 en ne gardant qu'elle, et 3e²/2 − 2e + 1/2 en l'ajoutant au lieu de la retrancher.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une fonction f est continue sur [0 ; 2] et ∫₀² f(x)dx = −1. Laquelle de ces conclusions est certaine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est négative ou nulle en chaque point de l'intervalle [0 ; 2]"
+        },
+        {
+          "id": "b",
+          "text": "f(1) est négatif, car 1 est le milieu de l'intervalle [0 ; 2]"
+        },
+        {
+          "id": "c",
+          "text": "f prend au moins une valeur strictement négative sur [0 ; 2]"
+        },
+        {
+          "id": "d",
+          "text": "L'aire du domaine entre la courbe et l'axe des abscisses vaut −1 unité d'aire"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si f était positive ou nulle sur tout [0 ; 2], la positivité de l'intégrale donnerait ∫₀² f ≥ 0, ce qui contredit −1 : f prend donc au moins une valeur strictement négative. Rien n'impose que f soit négative partout (une partie positive peut être compensée), ni que ce soit au milieu ; et une aire est toujours positive, alors que −1 est une intégrale algébrique.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une verrerie a pour coût marginal Cm(q) = 0,6q² − 3q + 5, exprimé en dizaines de dinars par tonne, et des coûts fixes de 150 dinars. Calculer, en dinars, le coût total de production de 5 tonnes.",
+      "answerKey": {
+        "value": 275,
+        "unit": "dinars"
+      },
+      "explanation": "Le coût variable est ∫₀⁵ Cm(q)dq = [0,2q³ − 1,5q² + 5q]₀⁵ = 25 − 37,5 + 25 = 12,5 dizaines de dinars, soit 125 dinars. Il faut convertir avant d'ajouter les coûts fixes : C(5) = 150 + 125 = 275 dinars. Additionner 150 et 12,5 sans convertir donnerait 162,5, qui mélange des dizaines de dinars et des dinars.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe de f(x) = x³ − x coupe l'axe des abscisses en −1, 0 et 1. Quelle est l'aire de la région fermée qu'elle forme avec cet axe, entre x = −1 et x = 1, en unités d'aire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1/4"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f est impaire : f ≥ 0 sur [−1 ; 0] et f ≤ 0 sur [0 ; 1], avec deux morceaux de même aire. Sur [0 ; 1], ∫₀¹ (x − x³)dx = 1/2 − 1/4 = 1/4 ; l'aire totale est 2 × 1/4 = 1/2. L'intégrale ∫₋₁¹ f vaut bien 0, mais c'est une valeur algébrique où les deux morceaux se compensent ; 1/4 ne compte qu'un morceau ; 1 compte deux fois chaque morceau.",
+      "difficulty": 3
+    }
+  ]
+}

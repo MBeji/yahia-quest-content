@@ -1,0 +1,149 @@
+{
+  "title": "Test de compréhension ⭐ : Logarithme et exponentielles",
+  "questions": [
+    {
+      "prompt": "Quel est l'ensemble de définition de la fonction f définie par f(x) = ln(6 − 2x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; 3]"
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; 3["
+        },
+        {
+          "id": "c",
+          "text": "]3 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]0 ; 3["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le logarithme n'existe que pour un nombre strictement positif : 6 − 2x > 0 équivaut à x < 3, avec la borne 3 exclue puisque ln(0) n'existe pas. L'intervalle fermé en 3 oublie cette exclusion ; l'intervalle ]3 ; +∞[ vient d'un sens d'inégalité non inversé en divisant par −2 ; et la condition x > 0 concernerait ln x, pas ln(6 − 2x). Le domaine est donc ]−∞ ; 3[.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Écrire ln 9 + ln 4 − ln 6 à l'aide d'un seul logarithme.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln 6"
+        },
+        {
+          "id": "b",
+          "text": "ln 7"
+        },
+        {
+          "id": "c",
+          "text": "ln 30"
+        },
+        {
+          "id": "d",
+          "text": "ln 216"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La somme devient un produit et la différence un quotient : ln 9 + ln 4 − ln 6 = ln(9 × 4/6) = ln 6. Le résultat ln 7 vient de 9 + 4 − 6, le résultat ln 30 de 9 × 4 − 6, et ln 216 de 9 × 4 × 6 : ces trois calculs ignorent que le signe moins divise.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour tout réel x, on pose f(x) = ln(x² + 4). Quelle est la dérivée de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 1/(x² + 4)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 2x"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 2x/(x² + 4)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (x² + 4)/(2x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec u(x) = x² + 4, on a u′(x) = 2x et la dérivée de ln(u) est u′/u : f′(x) = 2x/(x² + 4). La réponse 1/(x² + 4) oublie de multiplier par u′ ; la réponse 2x oublie de diviser par u ; la dernière inverse le quotient. Contrôle en x = 0 : la pente est 0, ce que donne bien 0/4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la solution de l'équation ln(x − 1) = 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 3"
+        },
+        {
+          "id": "b",
+          "text": "x = e² − 1"
+        },
+        {
+          "id": "c",
+          "text": "x = e²"
+        },
+        {
+          "id": "d",
+          "text": "x = 1 + e²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On applique l'exponentielle aux deux membres : x − 1 = e², donc x = 1 + e² ≈ 8,39. Contrôle : ln(8,39 − 1) = ln(7,39) ≈ 2 ✓. La solution x = 3 confond ln avec l'identité ; x = e² oublie d'ajouter 1 ; x = e² − 1 soustrait au lieu d'ajouter.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour un réel a > 0, à quoi est égale l'expression ln(a³) − ln a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(a³ − a)"
+        },
+        {
+          "id": "b",
+          "text": "2 ln a"
+        },
+        {
+          "id": "c",
+          "text": "(ln a)²"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On applique ln(aⁿ) = n ln a puis on regroupe : ln(a³) − ln a = 3 ln a − ln a = 2 ln a. Contrôle avec a = e : ln(e³) − ln e = 3 − 1 = 2 = 2 ln e ✓. L'écriture ln(a³ − a) transforme à tort une différence de logarithmes en logarithme d'une différence ; (ln a)² ne correspond à aucune règle : ln(a³) vaut 3 ln a, pas une puissance de ln a ; 3 confond la différence ln(a³) − ln a avec le quotient ln(a³)/ln a.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La fonction x ↦ (2/3)ˣ est définie sur ℝ. Quel est son sens de variation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "strictement croissante sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "strictement décroissante sur ℝ"
+        },
+        {
+          "id": "c",
+          "text": "décroissante sur ]−∞ ; 0] puis croissante"
+        },
+        {
+          "id": "d",
+          "text": "croissante sur ]−∞ ; 0] puis décroissante"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit (2/3)ˣ = e^(x ln(2/3)) et sa dérivée est ln(2/3) × (2/3)ˣ. Comme 2/3 < 1, ln(2/3) ≈ −0,405 est négatif, et (2/3)ˣ > 0 : la dérivée est négative partout, donc la fonction est strictement décroissante sur ℝ. Test : (2/3)⁰ = 1 puis (2/3)¹ ≈ 0,667 puis (2/3)² = 4/9 ≈ 0,444. Aucun changement de sens n'apparaît, car la dérivée ne s'annule jamais.",
+      "difficulty": 2
+    }
+  ]
+}

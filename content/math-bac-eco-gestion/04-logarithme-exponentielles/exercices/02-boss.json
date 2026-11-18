@@ -1,0 +1,124 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de l'exponentielle",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une imprimerie réalise un bénéfice B(x) = 15 ln x − 2x − 10, en milliers de dinars, quand elle produit x centaines de cartons (x > 0). Quelle est la valeur maximale de ce bénéfice, en milliers de dinars, arrondie au centième ?",
+      "answerKey": {
+        "value": 5.22,
+        "tolerance": 0.01,
+        "unit": "milliers de dinars"
+      },
+      "explanation": "La dérivée est B′(x) = 15/x − 2 = (15 − 2x)/x : positive avant 7,5, négative après, donc le maximum est atteint en x = 7,5. Sa valeur est B(7,5) = 15 ln 7,5 − 15 − 10 ≈ 30,224 − 25 = 5,22 milliers de dinars. Le piège est d'annuler B au lieu de B′ ou de donner x = 7,5 au lieu de B(7,5) : la question demande la valeur du bénéfice, pas la production.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un capital de 15 000 DT est placé à 3,5 % par an, intérêts composés. Quel est le plus petit nombre entier d'années au bout duquel la valeur acquise atteint au moins 20 000 DT ?",
+      "answerKey": {
+        "value": 9,
+        "unit": "années"
+      },
+      "explanation": "On cherche n tel que 15 000 × 1,035ⁿ ≥ 20 000, soit 1,035ⁿ ≥ 4/3, donc n ≥ ln(4/3)/ln(1,035) ≈ 0,2877/0,0344 = 8,36. Le plus petit entier est donc 9. Contrôle : au bout de 8 ans, 15 000 × 1,035⁸ ≈ 19 752 < 20 000, alors qu'au bout de 9 ans on obtient 20 443 > 20 000. Arrondir 8,36 à 8 serait l'erreur.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un taux annuel de 7,5 % est composé chaque mois. Quel est le taux mensuel équivalent, en pourcentage, arrondi au centième ?",
+      "answerKey": {
+        "value": 0.6,
+        "tolerance": 0.005,
+        "unit": "%"
+      },
+      "explanation": "Le taux mensuel t′ vérifie (1 + t′)¹² = 1,075, donc 1 + t′ = 1,075^(1/12) = e^(ln(1,075)/12) = e^(0,0723/12) ≈ 1,006045. Le taux mensuel équivalent est donc environ 0,6 % (0,6045 avant arrondi, soit 0,60 au centième). Diviser 7,5 par 12 donnerait 0,625 %, qui ignore la composition des intérêts : 1,00625¹² ≈ 1,0776, soit 7,76 % sur l'année.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La fonction f définie sur ]0 ; +∞[ par f(x) = x ln x − x donne l'écart de stock d'un entrepôt par rapport à un seuil, x en milliers d'unités. Quelle est la nature de la branche infinie de sa courbe en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "asymptote oblique d'équation y = x"
+        },
+        {
+          "id": "b",
+          "text": "branche parabolique de direction la droite y = x"
+        },
+        {
+          "id": "c",
+          "text": "branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "d",
+          "text": "branche parabolique de direction l'axe des abscisses"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a f(x) = x(ln x − 1), qui tend vers +∞, et f(x)/x = ln x − 1 tend vers +∞ : la branche est parabolique de direction l'axe des ordonnées. Pour une direction y = x, il faudrait que f(x)/x tende vers 1 ; pour l'axe des abscisses, que f(x)/x tende vers 0 ; et sans limite finie de f(x)/x, il ne peut y avoir d'asymptote oblique.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour étudier le coût d'une machine, on doit résoudre dans ℝ l'équation e^(2x) − 5eˣ − 14 = 0. Quel est l'ensemble des solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = {ln 5 − ln 14}"
+        },
+        {
+          "id": "b",
+          "text": "S = {−2 ; 7}"
+        },
+        {
+          "id": "c",
+          "text": "S = {ln 7}"
+        },
+        {
+          "id": "d",
+          "text": "S = {ln 2 ; ln 7}"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose X = eˣ avec X > 0 : X² − 5X − 14 = (X − 7)(X + 2) = 0, donc X = 7 ou X = −2. La racine −2 est impossible, car eˣ est strictement positif ; il reste eˣ = 7, donc x = ln 7. Contrôle : e^(2 ln 7) − 5 × 7 − 14 = 49 − 35 − 14 = 0 ✓. L'ensemble {−2 ; 7} oublie de revenir à x ; {ln 2 ; ln 7} transforme la racine impossible X = −2 en X = 2 au lieu de la rejeter ; la première écriture prend le logarithme terme à terme.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur ln, exp et les croissances comparées, lesquelles sont vraies ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ln x tend vers 0 quand x tend vers 0 par valeurs positives"
+        },
+        {
+          "id": "b",
+          "text": "ln(eˣ) = x pour tout réel x"
+        },
+        {
+          "id": "c",
+          "text": "ln(x²) = 2 ln x pour tout réel x non nul"
+        },
+        {
+          "id": "d",
+          "text": "e^(ln x) = x pour tout réel x"
+        },
+        {
+          "id": "e",
+          "text": "e^(a + b) = eᵃ + eᵇ pour tous réels a et b"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Sont vraies : x ln x tend vers 0 en 0⁺, car la puissance de x l'emporte sur la croissance infinie de ln ; et ln(eˣ) = x pour tout réel x, puisque exp est la réciproque de ln. Sont fausses : ln(x²) = 2 ln|x|, et pour x = −3 le nombre ln(−3) n'existe pas alors que ln 9 ≈ 2,197 existe ; e^(ln x) n'existe que pour x > 0 ; et e^(a + b) = eᵃ × eᵇ, non une somme : pour a = b = 0, on aurait 1 = 2.",
+      "difficulty": 3
+    }
+  ]
+}
