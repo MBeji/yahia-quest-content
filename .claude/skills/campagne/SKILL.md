@@ -149,7 +149,7 @@ fidèle sous `content/programmes-officiels/examens-nationaux/<classe>/<matière>
 corrigé officiel dans le même fichier, archive du Ministère d'abord (fiche `web-echoexam-edunet-tn`).
 Toutes les sessions publiées pour la matière ; le lecteur marque celles d'un programme ancien.
 
-**Bac : les PDF sont au Drive**, dossier `cnp-officiel/examens-nationaux/bac/` (déposé le 2026-11-13 ;
+**Bac : les PDF sont au Drive**, dossier `cnp-officiel/examens-nationaux/bac/` (récoltés le 2026-11-13, déposés le 2026-11-20 ;
 le portail du Ministère ne répond pas depuis le cloud). Lire d'abord son `index.csv` : une ligne par
 document et par section (année, session, `sujet`/`corrige`, ZIP qui le contient, empreinte, URL
 d'origine) ; puis `download_file_content` du ou des ZIP (≤ 2,9 Mo chacun, limite d'un appel du connecteur ;
