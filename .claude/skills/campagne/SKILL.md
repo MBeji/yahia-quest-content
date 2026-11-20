@@ -152,8 +152,9 @@ Toutes les sessions publiées pour la matière ; le lecteur marque celles d'un p
 **Bac : les PDF sont au Drive**, dossier `cnp-officiel/examens-nationaux/bac/` (déposé le 2026-11-13 ;
 le portail du Ministère ne répond pas depuis le cloud). Lire d'abord son `index.csv` : une ligne par
 document et par section (année, session, `sujet`/`corrige`, ZIP qui le contient, empreinte, URL
-d'origine) ; puis `download_file_content` du ZIP (≤ 9,5 Mo, limite d'envoi du Drive), `unzip` dans
-`~/.cache/yqa-examens/` (hors git). Les fichiers viennent de `devoir.tn`, qui ré-héberge
+d'origine) ; puis `download_file_content` du ou des ZIP (≤ 2,9 Mo chacun, limite d'un appel du connecteur),
+`unzip` dans `~/.cache/yqa-examens/` (hors git) ; un PDF de plus de 2,9 Mo y est en morceaux d'octets
+(`<nom>.pdf.part01`…), recollés par `cat` et vérifiés par l'empreinte de l'index. Les fichiers viennent de `devoir.tn`, qui ré-héberge
 (fiche `web-devoir-tn` § 9) : un **sujet** est du corpus officiel quand le lecteur constate l'en-tête
 du Ministère ; un **corrigé** est marqué `corrige-origine-a-etablir` — il reste une source tierce
 (R-2 : origine douteuse ⇒ tiers) tant que son identité avec le corrigé publié par le Ministère n'est

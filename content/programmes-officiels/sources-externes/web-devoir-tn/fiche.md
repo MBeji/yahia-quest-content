@@ -117,7 +117,8 @@ que Q-2 n'est pas arbitrée, pas de T2 : le site ré-héberge des œuvres d'ense
 - **Récolte du 2026-11-13.** 1 890 PDF listés (7 sections, sessions 2009 à 2024 ; 2009-2019 presque
   complètes, 2020-2024 partielles, 2025-2026 absentes), 1 889 retenus — `Mathématiques/Mathématiques/
   pdfannatator.pdf` est une archive RAR, écartée. 788 corrigés. Déposés au Drive
-  `cnp-officiel/examens-nationaux/bac/` : ZIP ≤ 9,5 Mo par section × matière × années, `index.csv`
+  `cnp-officiel/examens-nationaux/bac/` : 582 ZIP ≤ 2,9 Mo par section × matière × années (un PDF
+  plus gros est coupé en morceaux d'octets, recollés par `cat`), `index.csv`
   (URL d'origine et SHA-256 de chaque fichier), `README.md`. La page « Économie » de la section
   économie-gestion sert aussi les sujets de gestion 2009-2010 (rangés sous `gestion`) ; les épreuves
   communes à plusieurs sections (même empreinte) ne sont rangées qu'une fois.
