@@ -102,6 +102,12 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 | anglais (`english-6eme`) | ✅ `validee-r7`, 100 % ; guide 541608 (manuel élève absent du corpus CNP, D1) ; 6ᵉ = **3ᵉ année d'anglais** (D7, corrigé) | ✅ armé le 2026-10-18 (7 ch., section « Let's pronounce » au 07) | ✅ patron entier étiqueté (51–65 % des distracteurs selon le chapitre, muets à raison, E7) ; 19 étiquettes neuves `english.*`, 6 élargies | ✅ 4 lots audités à l'aveugle (opus), corrigés, re-vérifiés | ✅ 17 sessions du concours lues (2008–2026 ; 2011 et 2014 introuvables) : **19 missions** d'examen ; 2 missions de devoirs en salle blanche (9 devoirs lus) | rapports dans `FableEtudes/campagnes/anglais-6eme/` — **publiés** le 2026-10-18 (privé#720 ; registre : 21 missions `publiee`) |
 | français 6ᵉ (`french-6eme`) | ✅ `validee-r7`, 100 % (5 sources CNP, 927 p.) | ✅ armé le 2026-10-19 : 8 chapitres écrits de zéro au patron (1 par module), audités à l'aveugle (opus), corrigés, re-vérifiés | ✅ 44 étiquettes `fr.*` neuves, 10 élargies | ✅ | ✅ 17 sujets du concours lus (2008–2026 ; 2011 et 2014 introuvables) : **27 missions** d'examen ; 9 devoirs lus (D06 écarté, plafond par auteur), 6 missions en salle blanche ; pas de vague 2 (28 % de signatures neuves) — 538 questions au total | décisions F1–F9, E1–E8 dans `FableEtudes/campagnes/francais-6eme/` ; F1 (faits du seul Fichier-classe non enseignés) reste révisable par le propriétaire — publiés le 2026-10-19 (privé#730 ; registre : 33 missions `publiee`) |
 
+### Lycée hors Bac
+
+| Couple | Fiche / manuel | Contenu | En cours · prochaine action |
+| --- | --- | --- | --- |
+| 2ème sec Sciences / TI — maths (`math-2eme-sec-sciences-info`, compilé vers `math-2eme-sec-sciences` et `math-2eme-sec-info`) | ✅ fiche intégrale le 2026-11-20 : tome 2 ch.4–10 (`222232` p.48–199) lu par 4 lecteurs opus (texte + image, sondage 21 p., 0 écart), R-7 opus sur ces sections (115/115 encadrés, 70 p. hors sondage, 13 corr.) ; statut `partielle` maintenu (tome 1 sans R-7), génération ouverte aux 19 chapitres | 12/19 en prod (ch.01–12) | `claude/compassionate-brown-858x22` (2026-11-20) : écrire les ch.13–19 (fonctions de référence, trigonométrie, géométrie analytique, espace ×3, statistiques) |
+
 ## 3. File d'attente (ordre arbitré par le propriétaire : la 9ᵉ finie avant tout, puis la 6ᵉ)
 
 1. ~~**Arabe 9ᵉ — finir et publier le patron**~~ livré le 2026-10-12 : A4 (07–08), vocabulaire A + B fusionné et
