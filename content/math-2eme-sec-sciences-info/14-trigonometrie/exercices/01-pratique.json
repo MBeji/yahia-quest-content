@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : Lignes trigonométriques et premières mesures",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Que vaut sin(π/2) + cos(π) + cos(0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "−1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les trois valeurs se lisent sur le demi-cercle : sin(π/2) = 1 (M = B), cos(π) = −1 (M = A′) et cos(0) = 1 (M = A). La somme vaut 1 + (−1) + 1 = 1 ✓. La valeur 3 prend cos(π) pour 1 au lieu de −1. La valeur 0 échange abscisse et ordonnée : chaque terme devient alors nul. La valeur −1 prend cos(0) pour −1, en confondant A et A′.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour un angle α de ]π/2 ; π[, quels sont les signes de cos α et de sin α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "cos α < 0 et sin α > 0"
+        },
+        {
+          "id": "b",
+          "text": "cos α > 0 et sin α > 0"
+        },
+        {
+          "id": "c",
+          "text": "cos α < 0 et sin α < 0"
+        },
+        {
+          "id": "d",
+          "text": "cos α > 0 et sin α < 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour un angle obtus, M est à gauche de l'axe des ordonnées, donc son abscisse cos α est négative, et il reste au-dessus de l'axe des abscisses, donc son ordonnée sin α est positive ✓. Un sinus négatif est impossible sur [0 ; π] puisque M est sur le demi-cercle supérieur, et un cosinus positif ne convient qu'aux angles aigus.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que vaut sin(π/4) × cos(π/4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "√2/2"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "√2/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les deux facteurs valent √2/2, donc le produit est (√2/2) × (√2/2) = (√2 × √2)/(2 × 2) = 2/4 = 1/2 ✓. La valeur √2/4 oublie que √2 × √2 = 2. La valeur √2/2 ne garde qu'un seul des deux facteurs. La valeur 1 oublie les dénominateurs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le triangle ABC ci-dessous, rectangle en A, on a BC = 8 et B̂ = π/3. Quelle est la longueur AC ?\n<svg viewBox=\"0 0 342 202\"><path d=\"M127.7 176 L214.3 176 L127.7 26 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M127.7 176 L214.3 176 L127.7 26 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"127.7\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"214.3\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"127.7\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><path d=\"M203.3 156.9 A22 22 0 0 0 192.3 176\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137.7 176 L137.7 166 L127.7 166\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"119.7\" y=\"194.9\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">A</text><text x=\"226.4\" y=\"191.5\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">B</text><text x=\"123.3\" y=\"15.6\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">C</text><text x=\"183.1\" y=\"99\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">8</text><text x=\"179.7\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" fill=\"#b45309\">π/3</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "4√2"
+        },
+        {
+          "id": "c",
+          "text": "4√3"
+        },
+        {
+          "id": "d",
+          "text": "16√3/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "AC est le côté opposé à B̂ et BC est l'hypoténuse, donc AC = BC × sin π/3 = 8 × √3/2 = 4√3 ✓, soit environ 6,93. La valeur 4 est 8 × cos π/3, c'est-à-dire le côté adjacent AB. La valeur 4√2 utilise sin π/4 au lieu de sin π/3. La valeur 16√3/3 vient de 8 / sin π/3 : on a divisé au lieu de multiplier.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un angle x de [0 ; π/2] vérifie cos x = 8/17. Que vaut sin x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−15/17"
+        },
+        {
+          "id": "b",
+          "text": "9/17"
+        },
+        {
+          "id": "c",
+          "text": "225/289"
+        },
+        {
+          "id": "d",
+          "text": "15/17"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a sin²x = 1 − cos²x = 1 − 64/289 = 225/289, et sin x est positif, donc sin x = 15/17 ✓. La valeur 225/289 est sin²x : la racine n'a pas été prise. La valeur 9/17 vient de 1 − 8/17, sans élever au carré. La valeur −15/17 est l'autre racine, exclue puisque le sinus d'un angle de [0 ; π] n'est jamais négatif.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un triangle ABC a pour côtés AB = 6 et AC = 8, et pour angle Â = π/6. Quelle est son aire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24√3"
+        },
+        {
+          "id": "b",
+          "text": "24"
+        },
+        {
+          "id": "c",
+          "text": "12√3"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'angle Â est compris entre AB et AC, donc S = ½ × 6 × 8 × sin π/6 = 24 × 1/2 = 12 ✓. La valeur 24 oublie le facteur ½. La valeur 12√3 utilise cos π/6 au lieu de sin π/6. La valeur 24√3 cumule les deux erreurs.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "title": "⭐ Exercice : Solides, plans et premières positions",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Combien d'arêtes possède la pyramide SABCD de base carrée représentée ci-dessous, arêtes cachées comprises ?\n<svg viewBox=\"0 20 340 230\"><path d=\"M297.8 169.6 L95.4 169.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 225 L95.4 169.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M95.4 169.6 L168.9 38.9\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 225 L242.4 225\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M242.4 225 L297.8 169.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 225 L168.9 38.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M242.4 225 L168.9 38.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M297.8 169.6 L168.9 38.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"225\" r=\"3.8\"/><circle cx=\"242.4\" cy=\"225\" r=\"3.8\"/><circle cx=\"297.8\" cy=\"169.6\" r=\"3.8\"/><circle cx=\"95.4\" cy=\"169.6\" r=\"3.8\"/><circle cx=\"168.9\" cy=\"38.9\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"253.4\" y=\"239\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"310.8\" y=\"173.6\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"84.4\" y=\"167.6\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"168.9\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\">S</text></g></svg>",
+      "answerKey": {
+        "value": 8
+      },
+      "explanation": "La base ABCD a 4 arêtes : [AB], [BC], [CD] et [DA]. Les 4 arêtes latérales [SA], [SB], [SC] et [SD] partent du sommet S. Le total est 4 + 4 = 8 arêtes ✓, dont 3 sont cachées sur le dessin.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Lequel de ces solides a exactement 5 faces ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cube"
+        },
+        {
+          "id": "b",
+          "text": "Le tétraèdre"
+        },
+        {
+          "id": "c",
+          "text": "La pyramide à base carrée"
+        },
+        {
+          "id": "d",
+          "text": "Le parallélépipède rectangle"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La pyramide à base carrée a une base et quatre faces triangulaires : 1 + 4 = 5 faces ✓. Le cube et le parallélépipède rectangle ont chacun 6 faces, et le tétraèdre en a 4.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel ensemble de points détermine toujours un plan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trois points quelconques"
+        },
+        {
+          "id": "b",
+          "text": "Deux points distincts"
+        },
+        {
+          "id": "c",
+          "text": "Quatre points quelconques"
+        },
+        {
+          "id": "d",
+          "text": "Trois points non alignés"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par trois points non alignés passe un plan et un seul (axiome 1) ✓. Trois points quelconques peuvent être alignés, et alors une infinité de plans conviennent ; deux points distincts laissent le plan pivoter autour de leur droite ; quatre points quelconques ne sont pas toujours coplanaires.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces données, laquelle NE DÉTERMINE PAS un plan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trois points non alignés A, B, C"
+        },
+        {
+          "id": "b",
+          "text": "Une droite D et un point A de D"
+        },
+        {
+          "id": "c",
+          "text": "Deux droites sécantes D et D′"
+        },
+        {
+          "id": "d",
+          "text": "Une droite D et un point A hors de D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une droite et un point qui est sur cette droite ne fixent rien de plus que la droite : une infinité de plans la contiennent, comme la porte qui pivote autour de ses charnières ✓. Les trois autres données sont les trois façons de déterminer un plan : trois points non alignés, deux droites sécantes, une droite et un point hors d'elle.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le tétraèdre ABCD, I est un point de [AB] et K un point de [AC], distincts des extrémités. Lequel de ces quadruplets est formé de points coplanaires ?\n<svg viewBox=\"44 27 256 224\"><path d=\"M274 225 L211.1 165.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70 225 L211.1 165.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M211.1 165.5 L231.5 53.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70 225 L274 225\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M274 225 L231.5 53.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M70 225 L231.5 53.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"225\" r=\"3.8\"/><circle cx=\"274\" cy=\"225\" r=\"3.8\"/><circle cx=\"211.1\" cy=\"165.5\" r=\"3.8\"/><circle cx=\"231.5\" cy=\"53.3\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"151.6\" cy=\"225\" r=\"4.2\"/><circle cx=\"147.6\" cy=\"192.3\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"59\" y=\"237\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"285\" y=\"239\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"199.1\" y=\"161.5\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"231.5\" y=\"43.3\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"151.6\" y=\"242\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"135.6\" y=\"195.3\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "A, I, K et D"
+        },
+        {
+          "id": "b",
+          "text": "I, K, B et D"
+        },
+        {
+          "id": "c",
+          "text": "K, B, C et D"
+        },
+        {
+          "id": "d",
+          "text": "A, I, B et D"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "A, I et B sont alignés, car I est sur (AB) : trois points alignés et un quatrième point D sont toujours dans un même plan, ici (ABD) ✓. Dans chacune des trois autres propositions, D s'ajoute à trois points non alignés du plan (ABC), qui ne contient pas D, puisque D est un sommet du tétraèdre : les quatre points ne sont pas coplanaires.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le cube ci-dessous, quelle est la position relative de la droite (AA′) et du plan (ABC) ?\n<svg viewBox=\"0 5 300 240\"><path d=\"M223.6 177.4 L87.6 177.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 225 L87.6 177.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M87.6 177.4 L87.6 41.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 225 L176 225\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M176 225 L223.6 177.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 89 L176 89\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M176 89 L223.6 41.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M223.6 41.4 L87.6 41.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 89 L87.6 41.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M176 225 L176 89\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 225 L40 89\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M223.6 177.4 L223.6 41.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"225\" r=\"3.8\"/><circle cx=\"176\" cy=\"225\" r=\"3.8\"/><circle cx=\"223.6\" cy=\"177.4\" r=\"3.8\"/><circle cx=\"87.6\" cy=\"177.4\" r=\"3.8\"/><circle cx=\"40\" cy=\"89\" r=\"3.8\"/><circle cx=\"176\" cy=\"89\" r=\"3.8\"/><circle cx=\"223.6\" cy=\"41.4\" r=\"3.8\"/><circle cx=\"87.6\" cy=\"41.4\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"237\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"187\" y=\"239\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"236.6\" y=\"181.4\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"76.6\" y=\"175.4\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"28\" y=\"87\" text-anchor=\"middle\" fill=\"#0f172a\">A′</text><text x=\"180\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\">B′</text><text x=\"236.6\" y=\"36.4\" text-anchor=\"middle\" fill=\"#0f172a\">C′</text><text x=\"83.6\" y=\"31.4\" text-anchor=\"middle\" fill=\"#0f172a\">D′</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle perce le plan (ABC) au sommet A"
+        },
+        {
+          "id": "b",
+          "text": "Elle est contenue dans le plan (ABC)"
+        },
+        {
+          "id": "c",
+          "text": "Elle perce le plan (ABC) en un autre point que A"
+        },
+        {
+          "id": "d",
+          "text": "Elle n'a aucun point commun avec le plan (ABC)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le point A est sur (AA′) et dans le plan (ABC) : c'est un point commun. Mais A′ n'est pas dans la base, donc (AA′) n'est pas contenue dans (ABC) : le point commun est unique et la droite perce le plan en A ✓. La droite n'est pas contenue dans le plan, elle a bien un point commun avec lui, et ce point ne peut pas être un autre que A.",
+      "difficulty": 2
+    }
+  ]
+}

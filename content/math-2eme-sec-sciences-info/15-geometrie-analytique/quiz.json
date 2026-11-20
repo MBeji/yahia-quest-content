@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Géométrie analytique",
+  "questions": [
+    {
+      "prompt": "Quel est le barycentre G des points pondérés (A, 1) et (B, 3), avec A(2 ; −1) et B(6 ; 3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "(4 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(5 ; 2)"
+        },
+        {
+          "id": "d",
+          "text": "(10 ; 4)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La somme des coefficients vaut 1 + 3 = 4 : on divise par 4. xG = (1 × 2 + 3 × 6)/4 = 20/4 = 5 et yG = (1 × (−1) + 3 × 3)/4 = 8/4 = 2, donc G(5 ; 2). Le point (4 ; 1) est le milieu de [AB], qui suppose des coefficients égaux ; le point (10 ; 4) divise par 2 au lieu de 4 ; le point (3 ; 0) échange les deux coefficients et se place près de A au lieu de B.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces points, lequel appartient à la droite D : 2x − y + 3 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "(1 ; 5)"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "(5 ; 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On remplace x et y dans 2x − y + 3. Pour (1 ; 5) : 2 × 1 − 5 + 3 = 0, donc ce point est sur D. Le point (1 ; 2) donne 2 − 2 + 3 = 3 : il vérifie 2x − y = 0 mais le terme +3 est oublié. Le point (2 ; 1) donne 4 − 1 + 3 = 6 : il vérifie 2x − y − 3 = 0, avec le signe de 3 changé. Le point (5 ; 1) donne 10 − 1 + 3 = 12 : il échange les coordonnées de (1 ; 5).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est un vecteur directeur de la droite D : 3x + 2y − 5 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 ; 3)"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; 3)"
+        },
+        {
+          "id": "c",
+          "text": "(3 ; −2)"
+        },
+        {
+          "id": "d",
+          "text": "(3 ; 2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour ax + by + c = 0, le vecteur (−b ; a) dirige la droite : ici a = 3 et b = 2, donc (−2 ; 3). Contrôle : les points (1 ; 1) et (−1 ; 4) sont sur D (3 + 2 − 5 = 0 et −3 + 8 − 5 = 0) et le vecteur qui les joint a pour composantes (−2 ; 3). Le vecteur (3 ; 2) est le couple (a ; b), le vecteur (2 ; 3) est le couple (b ; a) et le vecteur (3 ; −2) est le couple (a ; −b) : aucun n'est colinéaire à (−2 ; 3).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un repère orthonormé, quelle est l'équation du cercle de centre I(−2 ; 3) et de rayon 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − 2)² + (y + 3)² = 16"
+        },
+        {
+          "id": "b",
+          "text": "(x + 2)² + (y − 3)² = 4"
+        },
+        {
+          "id": "c",
+          "text": "(x + 2)² + (y − 3)² = 8"
+        },
+        {
+          "id": "d",
+          "text": "(x + 2)² + (y − 3)² = 16"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le cercle de centre I(a ; b) et de rayon R a pour équation (x − a)² + (y − b)² = R². Avec a = −2, b = 3 et R = 4 : (x + 2)² + (y − 3)² = 16. L'équation (x − 2)² + (y + 3)² = 16 lit le centre avec les signes écrits au lieu de les changer ; les seconds membres 4 et 8 prennent R ou 2R au lieu de R² = 16.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un repère orthonormé, laquelle de ces droites est perpendiculaire à D : 2x + 3y − 1 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x − 3y + 1 = 0"
+        },
+        {
+          "id": "b",
+          "text": "3x − 2y + 5 = 0"
+        },
+        {
+          "id": "c",
+          "text": "3x + 2y − 4 = 0"
+        },
+        {
+          "id": "d",
+          "text": "4x + 6y + 1 = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux droites ax + by + c = 0 et a′x + b′y + c′ = 0 sont perpendiculaires si et seulement si aa′ + bb′ = 0. Pour 3x − 2y + 5 = 0 : 2 × 3 + 3 × (−2) = 0, donc elle convient. Les autres échouent : 2 × 2 + 3 × (−3) = −5 pour 2x − 3y + 1 = 0, et 2 × 3 + 3 × 2 = 12 pour 3x + 2y − 4 = 0. La droite 4x + 6y + 1 = 0 donne 2 × 4 + 3 × 6 = 26, et elle est parallèle à D, puisque 2 × 6 − 4 × 3 = 0.",
+      "difficulty": 2
+    }
+  ]
+}

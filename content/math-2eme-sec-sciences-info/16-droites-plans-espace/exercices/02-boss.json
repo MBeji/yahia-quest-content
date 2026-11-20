@@ -1,0 +1,155 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Mesurer, prouver, construire dans le tétraèdre",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un pavé a pour dimensions 2 cm, 3 cm et 6 cm. Quelle est la longueur de sa grande diagonale, en cm ?",
+      "answerKey": {
+        "value": 7,
+        "unit": "cm"
+      },
+      "explanation": "La grande diagonale d'un pavé vaut √(a² + b² + c²) avec les trois dimensions : 2² + 3² + 6² = 4 + 9 + 36 = 49, donc la diagonale vaut √49 = 7 cm ✓. On peut le vérifier en deux temps : la diagonale de la base vaut √(4 + 9) = √13, puis 13 + 36 = 49.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un cube a pour volume 125 cm³. Quelle est son aire latérale, en cm² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25",
+          "misconceptionTag": "math.mes.solide-une-seule-face-comptee"
+        },
+        {
+          "id": "b",
+          "text": "100"
+        },
+        {
+          "id": "c",
+          "text": "125",
+          "misconceptionTag": "math.mes.volume-utilise-comme-aire"
+        },
+        {
+          "id": "d",
+          "text": "150",
+          "misconceptionTag": "math.mes.aire-laterale-et-totale-confondues"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le volume a³ = 125 donne a = 5 cm. L'aire latérale vaut 4 × a² = 4 × 25 = 100 cm² ✓. Le nombre 25 est l'aire d'une seule face ; 125 est le volume, qui ne s'exprime pas en cm² ; 150 est l'aire totale, qui ajoute les deux bases à l'aire latérale (100 + 2 × 25).",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans le tétraèdre ABCD, K est un point de [AD] et L un point de [BC], distincts des extrémités. Cochez tous les quadruplets de points coplanaires.\n<svg viewBox=\"44 27 256 224\"><path d=\"M274 225 L211.1 165.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70 225 L211.1 165.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M211.1 165.5 L231.5 53.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70 225 L274 225\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M274 225 L231.5 53.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M70 225 L231.5 53.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"225\" r=\"3.8\"/><circle cx=\"274\" cy=\"225\" r=\"3.8\"/><circle cx=\"211.1\" cy=\"165.5\" r=\"3.8\"/><circle cx=\"231.5\" cy=\"53.3\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"134.6\" cy=\"156.3\" r=\"4.2\"/><circle cx=\"245.7\" cy=\"198.2\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"59\" y=\"237\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"285\" y=\"239\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"199.1\" y=\"161.5\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"231.5\" y=\"43.3\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"121.6\" y=\"159.3\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"258.7\" y=\"200.2\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "K, A, D et L"
+        },
+        {
+          "id": "b",
+          "text": "K, L, B et C"
+        },
+        {
+          "id": "c",
+          "text": "K, L, A et B"
+        },
+        {
+          "id": "d",
+          "text": "K, L, C et D"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "K, A et D sont alignés, car K est sur (AD) : avec un quatrième point L, ils sont coplanaires ✓. De même L, B et C sont alignés, donc K, L, B et C sont coplanaires ✓. Pour K, L, A et B : A, B et L déterminent le plan (ABC), qui ne contient pas K (sinon D y serait aussi). Pour K, L, C et D : C, D et L déterminent le plan (BCD), qui ne contient pas K, sinon A y serait aussi : ces deux quadruplets ne sont pas coplanaires.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le tétraèdre ABCD, I est le milieu de [AB] et K est le point de [AD] tel que AK = (1/3) AD. Le point où la droite (IK) perce le plan (BCD) est le point commun à (IK) et à quelle droite ?\n<svg viewBox=\"44 27 256 224\"><path d=\"M274 225 L211.1 165.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70 225 L211.1 165.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M211.1 165.5 L231.5 53.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70 225 L274 225\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M274 225 L231.5 53.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M70 225 L231.5 53.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M172 225 L123.8 167.8\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"225\" r=\"3.8\"/><circle cx=\"274\" cy=\"225\" r=\"3.8\"/><circle cx=\"211.1\" cy=\"165.5\" r=\"3.8\"/><circle cx=\"231.5\" cy=\"53.3\" r=\"3.8\"/></g><g fill=\"#b45309\"><circle cx=\"172\" cy=\"225\" r=\"4.2\"/><circle cx=\"123.8\" cy=\"167.8\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"59\" y=\"237\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"285\" y=\"239\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"199.1\" y=\"161.5\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"231.5\" y=\"43.3\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"172\" y=\"242\" text-anchor=\"middle\" fill=\"#b45309\">I</text><text x=\"110.8\" y=\"170.8\" text-anchor=\"middle\" fill=\"#b45309\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AC)"
+        },
+        {
+          "id": "b",
+          "text": "(BC)"
+        },
+        {
+          "id": "c",
+          "text": "(BD)"
+        },
+        {
+          "id": "d",
+          "text": "(CD)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il faut une droite du plan (BCD) qui soit dans un même plan que (IK). Les points I, K, B et D sont dans le plan (ABD) : (IK) et (BD) sont coplanaires, et (BD) ⊂ (BCD) ✓. Comme AI/AB = 1/2 et AK/AD = 1/3 sont différents, (IK) coupe (BD) en un point, qui est le point cherché. Les droites (BC) et (CD) sont bien dans (BCD), mais aucune n'est dans un même plan que (IK) ; la droite (AC) n'est même pas dans (BCD).",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans le tétraèdre ABCD, E, F et G sont des points de [AB], [AC] et [AD], distincts des extrémités, H est le milieu de [BC], (EF) coupe (BC) en L et (FG) coupe (CD) en M. Cochez tous les points qui appartiennent à la fois aux plans (BCD) et (EFG).\n<svg viewBox=\"24 6 313 267\"><path d=\"M172.4 230 L218.2 188.5 L125.4 130.8 Z\" fill=\"#b45309\" opacity=\"0.14\"/><path d=\"M50 230 L274.3 174.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M50 230 L254 230\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M254 230 L274.3 174.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M254 230 L200.8 31.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 230 L200.8 31.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M274.3 174.7 L200.8 31.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M172.4 230 L261.5 149.3\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M261.5 149.3 L294.6 119.3\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M218.2 188.5 L259.6 214.2\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M259.6 214.2 L311.1 246.2\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M172.4 230 L125.4 130.8\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M218.2 188.5 L125.4 130.8\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M274.3 174.7 L294.6 119.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M274.3 174.7 L311.1 246.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"230\" r=\"3.8\"/><circle cx=\"254\" cy=\"230\" r=\"3.8\"/><circle cx=\"274.3\" cy=\"174.7\" r=\"3.8\"/><circle cx=\"200.8\" cy=\"31.6\" r=\"3.8\"/></g><g fill=\"#b45309\"><circle cx=\"172.4\" cy=\"230\" r=\"4.0\"/><circle cx=\"218.2\" cy=\"188.5\" r=\"4.0\"/><circle cx=\"125.4\" cy=\"130.8\" r=\"4.0\"/></g><g fill=\"#0f172a\"><circle cx=\"294.6\" cy=\"119.3\" r=\"4.4\"/><circle cx=\"311.1\" cy=\"246.2\" r=\"4.4\"/><circle cx=\"264.2\" cy=\"202.3\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"39\" y=\"242\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"265\" y=\"244\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"287.3\" y=\"178.7\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"200.8\" y=\"21.6\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"172.4\" y=\"247\" text-anchor=\"middle\" fill=\"#b45309\">E</text><text x=\"205.2\" y=\"192.5\" text-anchor=\"middle\" fill=\"#b45309\">F</text><text x=\"112.4\" y=\"130.8\" text-anchor=\"middle\" fill=\"#b45309\">G</text><text x=\"294.6\" y=\"136.3\" text-anchor=\"middle\" fill=\"#0f172a\">L</text><text x=\"323.1\" y=\"238.2\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"279.2\" y=\"210.3\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "L"
+        },
+        {
+          "id": "b",
+          "text": "M"
+        },
+        {
+          "id": "c",
+          "text": "H"
+        },
+        {
+          "id": "d",
+          "text": "F"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Le point L est sur (EF), contenue dans (EFG), et sur (BC), contenue dans (BCD) : il est dans les deux plans ✓. De même M est sur (FG) ⊂ (EFG) et sur (CD) ⊂ (BCD) ✓. Le point H est dans (BCD) mais pas dans (EFG), car (BC) ne rencontre (EFG) qu'en L et H est distinct de L, qui est hors de [BC]. Le point F est dans (EFG) mais pas dans (BCD), puisque F est sur (AC) sans être C.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le tétraèdre ABCD, I, J, K sont des points de [DA], [DB], [DC], distincts des extrémités. La droite (JK) coupe (BC) en L, (KI) coupe (CA) en M et (IJ) coupe (AB) en N. Pourquoi les points L, M et N sont-ils alignés ?\n<svg viewBox=\"-57 49 323 260\"><path d=\"M85.1 194.9 L200.2 154.8 L154.8 142.3 Z\" fill=\"#b45309\" opacity=\"0.14\"/><path d=\"M240 235 L151.1 187.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M60 235 L151.1 187.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M151.1 187.4 L160.4 74.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M60 235 L240 235\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 235 L160.4 74.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 235 L160.4 74.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M200.2 154.8 L123.6 133.7\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M123.6 133.7 L-26.8 92.3\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M154.8 142.3 L85.1 194.9\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M85.1 194.9 L-31.1 282.6\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85.1 194.9 L-30 235\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.0\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M-26.8 92.3 L-31.1 282.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M151.1 187.4 L-26.8 92.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M60 235 L-31.1 282.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M60 235 L-30 235\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"235\" r=\"3.8\"/><circle cx=\"240\" cy=\"235\" r=\"3.8\"/><circle cx=\"151.1\" cy=\"187.4\" r=\"3.8\"/><circle cx=\"160.4\" cy=\"74.6\" r=\"3.8\"/></g><g fill=\"#b45309\"><circle cx=\"85.1\" cy=\"194.9\" r=\"3.8\"/><circle cx=\"200.2\" cy=\"154.8\" r=\"3.8\"/><circle cx=\"154.8\" cy=\"142.3\" r=\"3.8\"/></g><g fill=\"#0f172a\"><circle cx=\"-26.8\" cy=\"92.3\" r=\"4.2\"/><circle cx=\"-31.1\" cy=\"282.6\" r=\"4.2\"/><circle cx=\"-30\" cy=\"235\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"49\" y=\"247\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"251\" y=\"249\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"139.1\" y=\"183.4\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"160.4\" y=\"64.6\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"72.1\" y=\"196.9\" text-anchor=\"middle\" fill=\"#b45309\">I</text><text x=\"213.2\" y=\"151.8\" text-anchor=\"middle\" fill=\"#b45309\">J</text><text x=\"152.8\" y=\"159.3\" text-anchor=\"middle\" fill=\"#b45309\">K</text><text x=\"-26.8\" y=\"82.3\" text-anchor=\"middle\" fill=\"#0f172a\">L</text><text x=\"-43.1\" y=\"286.6\" text-anchor=\"middle\" fill=\"#0f172a\">M</text><text x=\"-32\" y=\"252\" text-anchor=\"middle\" fill=\"#0f172a\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils sont tous les trois dans le plan (ABC), et trois points d'un plan sont alignés"
+        },
+        {
+          "id": "b",
+          "text": "Ils sont chacun sur une arête du tétraèdre, donc sur une même droite"
+        },
+        {
+          "id": "c",
+          "text": "Ils sont communs aux plans (ABC) et (IJK), qui se coupent suivant une droite"
+        },
+        {
+          "id": "d",
+          "text": "Ils sont communs aux plans (ABC) et (IJK), qui sont donc confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le point L est sur (JK) ⊂ (IJK) et sur (BC) ⊂ (ABC) ; de même M est sur (KI) et (CA), et N sur (IJ) et (AB) : les trois points sont communs aux plans (ABC) et (IJK). Ces plans sont distincts : si I, qui est sur (DA) sans être A, était dans (ABC), D y serait aussi. Ils se coupent donc suivant une droite, qui contient L, M et N ✓. Trois points d'un plan ne sont pas alignés en général ; les arêtes du tétraèdre ne sont pas portées par une même droite ; et des plans distincts ne sont pas confondus.",
+      "difficulty": 3
+    }
+  ]
+}

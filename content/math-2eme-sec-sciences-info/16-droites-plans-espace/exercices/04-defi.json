@@ -1,0 +1,111 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Preuves et dénombrements dans l'espace",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un cube en bois est peint sur ses six faces, puis découpé par des traits de scie parallèles à ses faces en 1000 petits cubes identiques. Combien de petits cubes ont au moins une face peinte ?",
+      "answerKey": {
+        "value": 488
+      },
+      "explanation": "Les 1000 petits cubes forment un cube de 10 sur 10 sur 10. Ceux qui n'ont aucune face peinte forment le cube intérieur de 8 sur 8 sur 8, soit 8³ = 512 petits cubes. Il y en a donc 1000 − 512 = 488 avec au moins une face peinte ✓. Le piège est de compter les cubes peints face par face, 6 × 100 = 600 : les cubes des arêtes et des coins seraient alors comptés plusieurs fois.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'aire latérale d'un cube est 144 cm². Quelle est la longueur de sa grande diagonale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6√2 cm",
+          "misconceptionTag": "math.esp.diagonale-du-pave-en-deux-dimensions"
+        },
+        {
+          "id": "b",
+          "text": "6√3 cm"
+        },
+        {
+          "id": "c",
+          "text": "12√3 cm",
+          "misconceptionTag": "math.mes.solide-une-seule-face-comptee"
+        },
+        {
+          "id": "d",
+          "text": "36√3 cm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'aire latérale vaut 4a² = 144, donc a² = 36 et a = 6 cm. La grande diagonale d'un cube d'arête a vaut a√3 = 6√3 cm, soit environ 10,39 cm ✓. La valeur 6√2 est celle de la petite diagonale d'une face ; 12√3 vient de a = 12, en prenant 144 pour l'aire d'une seule face ; 36√3 vient de a = 36, en oubliant la racine carrée de 36.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le pavé ABCDA′B′C′D′, on a AB = 4, AD = 3 et AA′ = 12. Un élève calcule la grande diagonale [AC′] :\nLigne 1 : AC² = AB² + AD² = 16 + 9 = 25, donc AC = 5.\nLigne 2 : le triangle ACC′ est rectangle en C, donc AC′² = AC² + CC′².\nLigne 3 : AC′² = 5 + 144 = 149.\nLigne 4 : AC′ = √149, soit environ 12,2.\nQuelle est la première ligne fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ligne 1"
+        },
+        {
+          "id": "b",
+          "text": "Ligne 2"
+        },
+        {
+          "id": "c",
+          "text": "Ligne 3"
+        },
+        {
+          "id": "d",
+          "text": "Ligne 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La ligne 3 additionne AC = 5 au lieu de AC² = 25 : on doit écrire AC′² = 25 + 144 = 169, donc AC′ = 13 ✓. La ligne 1 est exacte (AC² = 25), la ligne 2 aussi (triangle rectangle en C, avec CC′ = AA′ = 12). La ligne 4 applique correctement la racine à un résultat déjà faux : elle n'est pas la première erreur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Laquelle de ces affirmations est FAUSSE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trois points distincts alignés sont contenus dans une infinité de plans"
+        },
+        {
+          "id": "b",
+          "text": "Une droite qui a deux points communs avec un plan est contenue dans ce plan"
+        },
+        {
+          "id": "c",
+          "text": "Deux droites de l'espace sans aucun point commun sont toujours parallèles"
+        },
+        {
+          "id": "d",
+          "text": "Une droite peut percer un plan en un point extérieur à la face dessinée"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux droites de l'espace sans point commun ne sont parallèles que si elles sont dans un même plan : elles peuvent être non coplanaires, comme (AB) et (CC′) dans un cube, et l'affirmation est fausse ✓. Les trois autres sont vraies : une infinité de plans contiennent une droite donnée ; deux points communs d'une droite avec un plan l'y enferment (axiome 2) ; et le plan étant illimité, le point de percée peut être hors du triangle ou du rectangle dessiné.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un cube d'arête 13 a pour volume 2197. On veut écrire ce volume comme la différence des volumes de deux parallélépipèdes rectangles de dimensions (a, a, 1) et (b, b, 1), où a et b sont des entiers naturels avec a > b, donc a² − b² = 2197. Quelle est la plus petite valeur possible de a ? On rappelle que a² − b² = (a − b)(a + b).",
+      "answerKey": {
+        "value": 91
+      },
+      "explanation": "Comme 2197 = 13³, ses diviseurs sont 1, 13, 169 et 2197. On écrit (a − b)(a + b) = 2197 avec a − b < a + b. Si a − b = 1 et a + b = 2197, alors a = 1099 et b = 1098. Si a − b = 13 et a + b = 169, alors a = 91 et b = 78. La plus petite valeur est a = 91 ✓. Contrôle : 91² − 78² = 8281 − 6084 = 2197.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une pyramide SABCD a pour base un carré ABCD. Combien de plans distincts contiennent chacun trois de ses cinq sommets ?\n<svg viewBox=\"0 20 340 230\"><path d=\"M297.8 169.6 L95.4 169.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 225 L95.4 169.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M95.4 169.6 L168.9 38.9\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 225 L242.4 225\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M242.4 225 L297.8 169.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 225 L168.9 38.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M242.4 225 L168.9 38.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M297.8 169.6 L168.9 38.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"225\" r=\"3.8\"/><circle cx=\"242.4\" cy=\"225\" r=\"3.8\"/><circle cx=\"297.8\" cy=\"169.6\" r=\"3.8\"/><circle cx=\"95.4\" cy=\"169.6\" r=\"3.8\"/><circle cx=\"168.9\" cy=\"38.9\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"253.4\" y=\"239\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"310.8\" y=\"173.6\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"84.4\" y=\"167.6\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"168.9\" y=\"28.9\" text-anchor=\"middle\" fill=\"#0f172a\">S</text></g></svg>",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "Il y a 10 triplets de sommets, tous non alignés. Les 4 triplets de la base (ABC, ABD, ACD, BCD) déterminent un seul plan : celui de la base. Les 6 triplets qui contiennent S, un par paire de sommets de la base, donnent 6 plans distincts, car chacun ne contient que deux sommets de la base. Le total est 6 + 1 = 7 plans ✓. Compter 10 plans oublie que les quatre sommets de la base sont coplanaires.",
+      "difficulty": 3
+    }
+  ]
+}
